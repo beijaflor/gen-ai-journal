@@ -26,3 +26,6 @@ Not user facing contents like prompt instruction should be in English.
 
 - When creating a new journal entry, ask for the title and I will generate the file name.
 - Maintain a professional and informative tone in all writing.
+
+# Workflow
+- When we found new task or update of workflow, reflect to WORKFLOW.md.
