@@ -20,6 +20,7 @@ Not user facing contents like prompt instruction should be in English.
 ## Preferred Tools & Libraries
 
 - Use standard Markdown for all journal entries.
+- Use `python3` for scripts.
 - No specific libraries are required at this time.
 
 ## General Instructions

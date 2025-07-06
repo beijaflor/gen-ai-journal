@@ -1,8 +1,8 @@
 # Journal Creation Workflow
 
-1.  **Start from a GitHub Issue:** Identify the relevant GitHub issue containing the list of source URLs for the weekly journal.
+1.  **Start from a GitHub Issue and Prepare Sources:** See `WORKFLOW_STEP1.md` for details.
 
-2.  **Create a Temporary Working File:** Create a temporary markdown file (e.g., `temp_journal_sources.md`) to aggregate the summaries.
+2.  **Create a Temporary Working File:** Create a temporary markdown file (e.g., `workdesk/temp_journal_sources.md`) to aggregate the summaries.
 
 3.  **Process Each Source URL:** For each URL from the issue:
     a. Fetch the content of the URL.
