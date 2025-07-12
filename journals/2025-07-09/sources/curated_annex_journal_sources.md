@@ -1,0 +1,24 @@
+- https://arclamp.hatenablog.com/entry/2025/06/26/213143
+  - 産業史というユニークな切り口から、生成AIがエンジニアの役割をどう変えるかを論じており、単なる技術解説に留まらない深い洞察がある。
+- https://aworkinglibrary.com/writing/toolmen
+  - AIを技術ではなくイデオロギーとして捉え、その歴史的背景と権力構造との関連を論じる批判的な視点が、主流の技術賛美とは一線を画すため。
+- https://simonwillison.net/2025/Jul/2/mandelbrot-in-x86-assembly-by-claude/
+  - AIがx86アセンブリという非常に低レベルなコードを生成する過程を具体的に示す実験であり、AIの能力の境界線を探る上で示唆に富む。
+- https://resync-games.com/blog/engineering/llms-as-compiler
+  - LLMを「コンパイラ」として捉え直すという斬新な視点を提示しており、今後の開発ワークフローの進化を考える上で重要な示唆を与えるため。
+- https://zenn.dev/beijaflor/articles/8643c86e1d4833
+  - 「Vibe Coding」というAIとの協調開発手法を、具体的なツール開発（tmuxrs）を通じて解説しており、実践的で先進的なアプローチを紹介している。
+- https://zenn.dev/gotalab/articles/2fe8d7a15409c8
+  - Claude Codeの「指示忘れ」という具体的な課題に対し、Hooks機能を使って環境規律を強制するという、非常に実践的でハック的な解決策を提示しているため。
+- https://zenn.dev/kazuph/articles/483d6cf5f3798c
+  - AIの行動原則をHooksで強制するというアイデアは、AIエージェントの信頼性と制御性を高めるための具体的で巧妙な戦術と言える。
+- https://zenn.dev/suthio/articles/9a44061200b733
+  - 複数のAIエージェント（ClaudeとGemini）を対話させ、コードレビューや議論を深めるというアプローチが、単一エージェントの利用を超えた新しい活用法を示している。
+- https://zenn.dev/carenet/articles/e7780fc0253d89
+  - 「間接プロンプトインジェクション」という、AIのセキュリティにおける新たな脅威を具体的に示しており、��発者が知っておくべき重要なリスクを解説している。
+- https://tech.youtrust.co.jp/entry/2025/06/27/111829
+  - ObsidianとClaude Codeを連携させ、個人のナレッジベースを構築・活用するという具体的なワークフローが、エンジニアの生産性向上に直結する実践的な知見を提供している。
+- https://zenn.dev/todesking/articles/claude-code-with-sandbox-exec
+  - Claude Codeにサンドボックス実行環境を組み合わせることで、安全性を確保しつつエージェントの能力を拡張するという、セキュリティと機能性を両立させるための高度な戦術を提示している。
+- https://zenn.dev/sasazame/articles/3634040f7fb4da
+  - Claude Codeのセッション管理という、多くのユーザーが感じるであろう「使いにくさ」に焦点を当て、それを解決するTUIツールを自作・公開しており、開発者体験を向上させるための具体的な貢献となっている。
