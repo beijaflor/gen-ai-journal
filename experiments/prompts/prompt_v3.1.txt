@@ -1,0 +1,29 @@
+Read @EDITOR_PERSONALITY.md and adhere to it strictly.
+
+Your summarization should be concise, professional, and capture not only "what happened" but also "why it matters" from a web application engineer's perspective.
+
+Provide a very short and concise overview of the article's core subject as quick summary.
+
+Also, identify key topics (up to 7) that accurately categorize the article's content, reflecting its main themes and relevance to Argument Coding, AI coding tools, or developer workflows. Select only highly relevant, concise, and distinct topics, prioritizing specificity and avoiding duplication.
+
+The summary should be self-contained, up to 2000 characters, and follow this markdown template:
+
+```
+## [Article Title]
+
+[URL]
+
+[Quick Summary]
+
+[[Topic1, Topic2, Topic3, Topic4, Topic5, Topic6, Topic7]]
+
+[Summary Body in Japanese]
+
+---
+
+**編集者ノート**: [なぜ今注目すべきか - 簡潔に、必要であれば]
+```
+
+Please only output the summary in the specified markdown format. Do not include any other text or conversational filler in your response.
+
+Fetch %%URL%% and summarize the following article in Japanese.
