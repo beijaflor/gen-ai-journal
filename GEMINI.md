@@ -30,3 +30,7 @@ Not user facing contents like prompt instruction should be in English.
 
 # Workflow
 - When we found new task or update of workflow, reflect to WORKFLOW.md.
+
+# GEMINI CLI Execution
+- **Always** use "gemini-2.5-flash-lite-preview-06-17" model.
+- Add `--sandbox` option with each execution.

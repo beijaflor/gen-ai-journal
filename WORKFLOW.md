@@ -1,31 +1,29 @@
 # Journal Creation Workflow
 
-1.  **Start from a GitHub Issue and Prepare Sources:** See `WORKFLOW_STEP1.md` for details.
+1.  **Step 1: Prepare Initial Source List**
+    - See `WORKFLOW_STEP1.md`.
+    - **Result:** `workdesk/sources.md` is created with the initial list of URLs.
 
-2.  **Create a Temporary Working File:** Create a temporary markdown file (e.g., `workdesk/temp_journal_sources.md`) to aggregate the summaries.
+2.  **Step 1.5: Curate Sources & Prepare Journal Directory**
+    - See `WORKFLOW_STEP1.5.md`.
+    - **Result:**
+        - A `journals/YYYY-MM-DD/` directory is created.
+        - Curated source lists are created within it: `curated_journal_sources.md`, `curated_annex_journal_sources.md`, and `omitted_sources.md`.
+        - Empty journal files are created: `weekly_journal_YYYY_MM_DD.md` and `annex_journal_YYYY_MM_DD.md`.
+        - `workdesk/sources.md` is now empty.
 
-3.  **Process Each Source URL:** For each URL from the issue:
-    a. Fetch the content of the URL.
-    b. Generate a summary in Japanese, adhering to the persona defined in `EDITOR_PERSONALITY.md`.
-    c. Structure the summary using the following template:
+3.  **Step 2: Summarize All Curated Sources**
+    - See `SUMMARIZE_STEP.md`. This step uses the curated source lists from the `journals/YYYY-MM-DD/` directory.
+    - **Result:**
+        - Individual summaries are created in `journals/YYYY-MM-DD/summaries/`.
+        - A unified summary file (e.g., `z_unified_summaries.md`) is created in the same directory for review.
 
-        ```markdown
-        ## [Article Title](URL)
+4.  **Step 3: Review and Refine Summaries**
+    - Review the aggregated content in the unified summary file (e.g., `z_unified_summaries.md`).
+    - Make final edits to the summaries directly in this file.
 
-        **Catchy Headline in Japanese**
+5.  **Step 4: Assemble Final Journals**
+    - Use the refined content from the unified summary file to write the introductory sections and structure the final content within `weekly_journal_YYYY_MM_DD.md` and `annex_journal_YYYY_MM_DD.md`.
 
-        (Summary Body in Japanese)
-
-        **注目すべき理由 (Why it matters):**
-
-        (Explanation of why the topic is important for developers, in Japanese)
-        ```
-    d. Append the formatted summary to the temporary working file.
-
-4.  **Review and Refine:** Once all sources are summarized, review the collected content for consistency and quality.
-
-5.  **Define the Journal Title:** Based on the collected content, decide on a final title for the journal entry.
-
-6.  **Create the Final Journal File:** Create the final journal markdown file in the `journals/` directory with the format `YYYY-MM-DD-journal-title.md`.
-
-7.  **Cleanup:** Delete the temporary working file.
+6.  **Step 5: Final Cleanup**
+    - Clean up any remaining temporary files from the `workdesk/` directory. All final artifacts are already in their correct `journals/YYYY-MM-DD/` location.
