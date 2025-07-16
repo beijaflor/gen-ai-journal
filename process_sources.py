@@ -18,27 +18,53 @@ def sanitize_url(url):
     return sanitized_url
 
 def process_sources_file(file_path):
-    """Reads links from a file, sanitizes them, removes duplicates, and writes back."""
+    """Reads links from a structured file, sanitizes them, removes duplicates, assigns IDs, and writes back."""
     with open(file_path, 'r') as f:
         content = f.read()
 
     lines = content.splitlines()
     processed_lines = []
     seen_sanitized_urls = set()
+    link_counter = 1
     
     for line in lines:
-        # Corrected regex to correctly capture the URL by using non-greedy match
-        match = re.match(r'^(- \[([ x])\]\s*)(https?://.*)', line)
-        if match:
-            prefix = match.group(1)
-            original_url = match.group(3).strip() # This should now correctly capture the URL
+        # Check if line is a section header (starts with ##)
+        if line.strip().startswith('##'):
+            processed_lines.append(line)
+            continue
+            
+        # Check for numbered checkbox links: - [ ] 001. https://...
+        numbered_match = re.match(r'^(- \[([ x])\]\s*)(\d+\.\s*)(https?://.*)', line)
+        if numbered_match:
+            checkbox_prefix = numbered_match.group(1)
+            original_url = numbered_match.group(4).strip()
             sanitized_url = sanitize_url(original_url)
             
             if sanitized_url not in seen_sanitized_urls:
                 seen_sanitized_urls.add(sanitized_url)
-                processed_lines.append(f"{prefix}{sanitized_url}")
-        else:
-            processed_lines.append(line) # Keep non-link lines as is
+                # Assign new sequential ID
+                new_id = f"{link_counter:03d}."
+                processed_lines.append(f"{checkbox_prefix}{new_id} {sanitized_url}")
+                link_counter += 1
+            continue
+            
+        # Check for unnumbered checkbox links: - [ ] https://...
+        unnumbered_match = re.match(r'^(- \[([ x])\]\s*)(https?://.*)', line)
+        if unnumbered_match:
+            checkbox_prefix = unnumbered_match.group(1)
+            original_url = unnumbered_match.group(3).strip()
+            sanitized_url = sanitize_url(original_url)
+            
+            if sanitized_url not in seen_sanitized_urls:
+                seen_sanitized_urls.add(sanitized_url)
+                # Assign new sequential ID
+                new_id = f"{link_counter:03d}."
+                processed_lines.append(f"{checkbox_prefix}{new_id} {sanitized_url}")
+                link_counter += 1
+            continue
+            
+        # Keep non-link lines as is (empty lines, other content)
+        processed_lines.append(line)
 
     new_content = "\n".join(processed_lines)
 
@@ -46,6 +72,7 @@ def process_sources_file(file_path):
         f.write(new_content)
     
     print(f"Processed and updated: {file_path}")
+    print(f"Assigned IDs to {link_counter - 1} unique links")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

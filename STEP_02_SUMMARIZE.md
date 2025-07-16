@@ -2,62 +2,44 @@
 
 This step generates summaries for ALL sources before curation, allowing informed selection decisions.
 
-## Setup
+## Overview
 
-- [ ] Ensure `workdesk/sources.md` exists with sanitized URLs
-- [ ] Create the `workdesk/summaries/` directory if it doesn't exist:
-  ```bash
-  mkdir -p workdesk/summaries
-  ```
+This step has been split into two complementary processes:
 
-## Process
+### 1. Orchestration Process
+**File:** [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md)
 
-### For Each URL in `workdesk/sources.md`:
+Manages the overall batch summarization process:
+- Setup and directory preparation
+- Batch processing coordination
+- Progress tracking and quality control
+- Aggregation of all summaries
+- Final output generation
 
-1. **Generate Prompt File**
-   
-   Replace `YOUR_ARTICLE_URL_HERE` with the target URL:
-   ```bash
-   sed 's|%%URL%%|YOUR_ARTICLE_URL_HERE|g; s|%%FILENAME%%|workdesk/temp_summary.md|g' \
-   /Users/shootani/Dropbox/github/gen-ai-journal/prompt.txt > \
-   /Users/shootani/Dropbox/github/gen-ai-journal/workdesk/generated_prompt.txt
-   ```
+### 2. Individual Summarization Process
+**File:** [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md)
 
-2. **Run Gemini CLI**
-   
-   Execute the summarization with the specified model:
-   ```bash
-   cat workdesk/generated_prompt.txt | gemini -m "gemini-2.5-flash-lite-preview-06-17" --sandbox
-   ```
-   
-   **Note:** This process takes time. Wait for completion. If it fails with no summary, retry.
+Details the process for summarizing a single URL:
+- Prompt generation for specific URLs
+- Gemini CLI execution with `gemini-2.5-flash` model
+- Summary file creation with `[number]_[sanitized_url].md` naming convention
+- Progress marking
+- Error handling and retry logic
 
-3. **Save Summary**
-   
-   - Capture the stdout output from the Gemini command
-   - Save to `workdesk/summaries/[sanitized_filename].md`
-   - Filename should be derived from the URL (e.g., `example_com_article_title.md`)
+## Workflow
 
-4. **Mark Complete**
-   
-   - Update the checkbox in `workdesk/sources.md` from `- [ ]` to `- [x]`
-
-## Automation Note
-
-A script typically orchestrates this process, iterating through all unchecked URLs automatically.
-
-## Aggregation
-
-After all sources are processed:
-
-- [ ] Aggregate all summaries into a unified file:
-  ```bash
-  awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
-  ```
+1. **Start with Orchestration:** Follow [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md) to set up and manage the overall process
+2. **Individual Processing:** The orchestration process calls [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md) for each URL
+3. **Completion:** Return to orchestration for final aggregation and output
 
 ## Output
 
-- **Directory Created:** `workdesk/summaries/` containing individual summary files
+- **Directory Created:** `workdesk/summaries/` containing individual summary files with `[number]_[sanitized_url].md` naming
 - **File Created:** `workdesk/unified_summaries.md` (aggregated summaries)
-- **File Updated:** `workdesk/sources.md` (with completed checkboxes)
+- **File Updated:** `workdesk/sources.md` (with `[x]` for successful summaries, `[!]` for failed URLs)
 - **Next Step:** [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md)
+
+## Key Updates
+
+- **Model:** Use `gemini-2.5-flash` (not `gemini-2.5-flash-lite-preview-06-17`)
+- **Naming:** Summary files now include link numbers: `001_domain_com_article.md`

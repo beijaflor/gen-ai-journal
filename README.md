@@ -19,7 +19,7 @@ graph LR
 
 ## Workflow Steps
 
-1. **[Gather Sources](STEP_01_GATHER_SOURCES.md)** - Collect URLs from GitHub issue
+1. **[Gather Sources](STEP_01_GATHER_SOURCES.md)** - Collect URLs from structured GitHub issue with numbered IDs
 2. **[Summarize](STEP_02_SUMMARIZE.md)** - Generate summaries for ALL sources
 3. **[Prepare Journal](STEP_03_PREPARE_JOURNAL.md)** - Set up directory structure
 4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select primary articles using summaries
@@ -30,7 +30,7 @@ graph LR
 
 ## Quick Start Checklist
 
-- [ ] GitHub issue with source URLs identified
+- [ ] GitHub issue with structured source URLs identified (Main List, Slides, Might Be Hype, Better to be Omitted)
 - [ ] Python environment ready (for `process_sources.py`)
 - [ ] Gemini CLI configured (`gemini` command available)
 - [ ] Git repository up to date
@@ -42,7 +42,7 @@ graph LR
 - **[Annex Journal Criteria](criteria/annex_curation_criteria.md)** - Selection standards for annex journal
 
 ### Scripts
-- `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates)
+- `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
 - `process_omitted_summaries.py` - Processes omitted article summaries
 
 ### Output Structure
