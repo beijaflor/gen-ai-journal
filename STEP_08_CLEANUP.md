@@ -30,10 +30,12 @@ Before cleaning up, confirm final outputs are complete in workdesk:
 
 ### 2. Move Completed Files to Archive
 
-- [ ] Move completed journal files:
+- [ ] Move completed journal files with number prefixes:
   ```bash
-  cp workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
-  cp workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
+  cp workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/00_weekly_journal_YYYY_MM_DD.md
+  cp workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/01_annex_journal_YYYY_MM_DD.md
+  cp workdesk/omitted_summaries_unified.md journals/YYYY-MM-DD/02_omitted_summaries.md
+  cp workdesk/unified_summaries.md journals/YYYY-MM-DD/99_unified_summaries.md
   ```
 
 - [ ] Move working files to archive:
@@ -43,7 +45,6 @@ Before cleaning up, confirm final outputs are complete in workdesk:
   cp workdesk/curated_annex_journal_sources.md journals/YYYY-MM-DD/sources/
   cp workdesk/omitted_sources.md journals/YYYY-MM-DD/sources/
   cp workdesk/summaries/*.md journals/YYYY-MM-DD/summaries/
-  cp workdesk/unified_summaries.md journals/YYYY-MM-DD/
   ```
 
 ## Cleanup Tasks
@@ -54,12 +55,15 @@ Remove temporary files:
 
 - [ ] Remove `workdesk/sources.md` (now archived in journal directory)
 - [ ] Remove `workdesk/summaries/*.md` (now archived in journal directory)
-- [ ] Remove `workdesk/unified_summaries.md` (now archived in journal directory)
+- [ ] Remove `workdesk/unified_summaries.md` (now archived as 99_unified_summaries.md)
+- [ ] Remove `workdesk/omitted_summaries_unified.md` (now archived as 02_omitted_summaries.md)
 - [ ] Remove `workdesk/curated_journal_sources.md` (now archived)
 - [ ] Remove `workdesk/curated_annex_journal_sources.md` (now archived)
 - [ ] Remove `workdesk/omitted_sources.md` (now archived)
-- [ ] Remove `workdesk/weekly_journal_YYYY_MM_DD.md` (now archived)
-- [ ] Remove `workdesk/annex_journal_YYYY_MM_DD.md` (now archived)
+- [ ] Remove `workdesk/weekly_journal_YYYY_MM_DD.md` (now archived as 00_weekly_journal_YYYY_MM_DD.md)
+- [ ] Remove `workdesk/annex_journal_YYYY_MM_DD.md` (now archived as 01_annex_journal_YYYY_MM_DD.md)
+- [ ] Remove `workdesk/missing_summaries.md` (temporary file)
+- [ ] Remove `workdesk/omitted_urls.md` (temporary file)
 - [ ] Remove `workdesk/generated_prompt*.txt` (temporary files)
 - [ ] Remove any other temporary files created during process
 
@@ -81,16 +85,17 @@ rm -rf workdesk/*
 - [ ] Verify journal directory structure is complete:
   ```
   journals/YYYY-MM-DD/
-  ├── weekly_journal_YYYY_MM_DD.md    ✓
-  ├── annex_journal_YYYY_MM_DD.md     ✓
+  ├── 00_weekly_journal_YYYY_MM_DD.md    ✓
+  ├── 01_annex_journal_YYYY_MM_DD.md     ✓
+  ├── 02_omitted_summaries.md            ✓
+  ├── 99_unified_summaries.md            ✓
   ├── sources/
-  │   ├── sources.md                   ✓
-  │   ├── curated_journal_sources.md   ✓
+  │   ├── sources.md                     ✓
+  │   ├── curated_journal_sources.md     ✓
   │   ├── curated_annex_journal_sources.md ✓
-  │   └── omitted_sources.md           ✓
+  │   └── omitted_sources.md             ✓
   └── summaries/
-      ├── [individual summaries]       ✓
-      └── unified_summaries.md         ✓
+      └── [individual summaries]         ✓
   ```
 
 ## Final Verification

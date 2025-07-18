@@ -71,7 +71,16 @@ Edit `workdesk/annex_journal_YYYY_MM_DD.md`:
   - Include both the summary AND the editorial comment
   - Maintain the "B-side" character
 
-### 3. Format and Polish
+### 3. Generate Omitted Summaries
+
+- [ ] **Create Omitted Summaries Document:**
+  ```bash
+  python3 scripts/unite_summaries.py workdesk/omitted_sources.md workdesk/summaries workdesk/omitted_summaries_unified.md
+  ```
+  - This creates a unified document of all summaries for omitted articles
+  - Will be archived as `02_omitted_summaries.md` in Step 8
+
+### 4. Format and Polish
 
 - [ ] **Consistent Formatting:**
   - Uniform heading levels
@@ -101,6 +110,7 @@ Ensure final journals:
 - **Completed Files:**
   - `workdesk/weekly_journal_YYYY_MM_DD.md` (main journal)
   - `workdesk/annex_journal_YYYY_MM_DD.md` (annex journal)
+  - `workdesk/omitted_summaries_unified.md` (omitted article summaries)
 
 ## Next Step
 
