@@ -8,18 +8,19 @@ Transform the selected summaries into complete, publication-ready journal docume
 
 ## Input Files
 
-- **Reviewed Summaries:** From previous step
-- **Main Journal List:** `journals/YYYY-MM-DD/sources/curated_journal_sources.md`
-- **Annex Journal List:** `journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md`
+- **Reviewed Main Summaries:** `workdesk/unified_summaries_main.md` (or `workdesk/reviewed_main_summaries.md` if created)
+- **Reviewed Annex Summaries:** `workdesk/unified_summaries_annex.md` (or `workdesk/reviewed_annex_summaries.md` if created)
+- **Main Journal List:** `workdesk/curated_journal_sources.md`
+- **Annex Journal List:** `workdesk/curated_annex_journal_sources.md`
 - **Empty Journal Files:**
-  - `journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md`
-  - `journals/YYYY-MM-DD/annex_journal_YYYY_MM_DD.md`
+  - `workdesk/weekly_journal_YYYY_MM_DD.md`
+  - `workdesk/annex_journal_YYYY_MM_DD.md`
 
 ## Assembly Process
 
 ### 1. Main Journal Assembly
 
-Edit `journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md`:
+Edit `workdesk/weekly_journal_YYYY_MM_DD.md`:
 
 - [ ] **Add Header Section:**
   ```markdown
@@ -48,7 +49,7 @@ Edit `journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md`:
 
 ### 2. Annex Journal Assembly
 
-Edit `journals/YYYY-MM-DD/annex_journal_YYYY_MM_DD.md`:
+Edit `workdesk/annex_journal_YYYY_MM_DD.md`:
 
 - [ ] **Add Header Section:**
   ```markdown
@@ -98,8 +99,8 @@ Ensure final journals:
 ## Output
 
 - **Completed Files:**
-  - `journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md` (main journal)
-  - `journals/YYYY-MM-DD/annex_journal_YYYY_MM_DD.md` (annex journal)
+  - `workdesk/weekly_journal_YYYY_MM_DD.md` (main journal)
+  - `workdesk/annex_journal_YYYY_MM_DD.md` (annex journal)
 
 ## Next Step
 

@@ -12,8 +12,8 @@ Find articles that provide:
 
 ## Input Files
 
-- **Source Pool:** `journals/YYYY-MM-DD/sources/omitted_sources.md` (rejected from main)
-- **Summaries:** `journals/YYYY-MM-DD/unified_summaries.md` (for review)
+- **Source Pool:** `workdesk/omitted_sources.md` (rejected from main)
+- **Summaries:** `workdesk/unified_summaries.md` (for review)
 - **Criteria:** `criteria/annex_curation_criteria.md`
 
 ## Curation Process
@@ -31,7 +31,7 @@ For each URL in `omitted_sources.md`, reconsider with annex criteria:
 
 For articles that meet annex criteria:
 
-- [ ] Add to `journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md`
+- [ ] Add to `workdesk/curated_annex_journal_sources.md`
 - [ ] **Include editorial comment** explaining why it's valuable for the annex
 
 Example format:
@@ -63,7 +63,7 @@ It IS for:
 
 Create or update:
 
-- [ ] `journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md`
+- [ ] `workdesk/curated_annex_journal_sources.md`
   - Must include brief Japanese comments explaining each selection
   - Comments should highlight what makes each article annex-worthy
 
@@ -75,4 +75,4 @@ Create or update:
 
 ## Next Step
 
-[STEP_06_REVIEW.md](STEP_06_REVIEW.md) - Review and refine all selected summaries
+[STEP_05B_CREATE_FOCUSED_SUMMARIES.md](STEP_05B_CREATE_FOCUSED_SUMMARIES.md) - Create focused summary collections for each journal

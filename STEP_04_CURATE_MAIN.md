@@ -8,8 +8,8 @@ Select articles that provide essential insights, significant developments, and h
 
 ## Input Files
 
-- **Source List:** `journals/YYYY-MM-DD/sources/sources.md` (all URLs)
-- **Summaries:** `journals/YYYY-MM-DD/unified_summaries.md` (for review)
+- **Source List:** `workdesk/sources.md` (all URLs with checkboxes)
+- **Summaries:** `workdesk/unified_summaries.md` (for review)
 - **Criteria:** `criteria/curation_criteria.md`
 
 ## Curation Process
@@ -27,10 +27,10 @@ For each URL in the source list, review its summary and evaluate against the mai
 ### 2. Make Selection Decisions
 
 - **✅ Accept:** Article meets the criteria for main journal
-  - Add URL to `journals/YYYY-MM-DD/sources/curated_journal_sources.md`
+  - Add URL to `workdesk/curated_journal_sources.md`
   
 - **❌ Reject:** Article doesn't meet main journal standards
-  - Add URL to `journals/YYYY-MM-DD/sources/omitted_sources.md`
+  - Add URL to `workdesk/omitted_sources.md`
 
 ### 3. Avoid Common Pitfalls
 
@@ -44,7 +44,7 @@ Do NOT include:
 
 Create or update:
 
-- [ ] `journals/YYYY-MM-DD/sources/curated_journal_sources.md`
+- [ ] `workdesk/curated_journal_sources.md`
   ```markdown
   # Curated Main Journal Sources
   
@@ -52,7 +52,7 @@ Create or update:
   - [ ] https://example.com/significant-development-2
   ```
 
-- [ ] `journals/YYYY-MM-DD/sources/omitted_sources.md`
+- [ ] `workdesk/omitted_sources.md`
   ```markdown
   # Omitted Sources
   

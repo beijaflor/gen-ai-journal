@@ -11,23 +11,56 @@ This step cleans up the workspace and archives temporary files after successful 
 
 ## Pre-Cleanup Verification
 
-Before cleaning up, confirm final outputs are complete:
+Before cleaning up, confirm final outputs are complete in workdesk:
 
-- [ ] `journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md` exists and is complete
-- [ ] `journals/YYYY-MM-DD/annex_journal_YYYY_MM_DD.md` exists and is complete
-- [ ] All source files are properly saved in `journals/YYYY-MM-DD/sources/`
-- [ ] All summaries are saved in `journals/YYYY-MM-DD/summaries/`
+- [ ] `workdesk/weekly_journal_YYYY_MM_DD.md` exists and is complete
+- [ ] `workdesk/annex_journal_YYYY_MM_DD.md` exists and is complete
+- [ ] All working files are properly saved in workdesk
+
+## Archive to Journal Directory
+
+### 1. Create Final Journal Directory
+
+- [ ] Create the final archive directory:
+  ```bash
+  mkdir -p journals/YYYY-MM-DD
+  mkdir -p journals/YYYY-MM-DD/sources
+  mkdir -p journals/YYYY-MM-DD/summaries
+  ```
+
+### 2. Move Completed Files to Archive
+
+- [ ] Move completed journal files:
+  ```bash
+  cp workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
+  cp workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
+  ```
+
+- [ ] Move working files to archive:
+  ```bash
+  cp workdesk/sources.md journals/YYYY-MM-DD/sources/
+  cp workdesk/curated_journal_sources.md journals/YYYY-MM-DD/sources/
+  cp workdesk/curated_annex_journal_sources.md journals/YYYY-MM-DD/sources/
+  cp workdesk/omitted_sources.md journals/YYYY-MM-DD/sources/
+  cp workdesk/summaries/*.md journals/YYYY-MM-DD/summaries/
+  cp workdesk/unified_summaries.md journals/YYYY-MM-DD/
+  ```
 
 ## Cleanup Tasks
 
-### 1. Clean Workdesk Directory
+### 3. Clean Workdesk Directory
 
 Remove temporary files:
 
-- [ ] Remove or archive `workdesk/sources.md` (content now in journal directory)
-- [ ] Remove `workdesk/summaries/*.md` (content now in journal directory)
-- [ ] Remove `workdesk/unified_summaries.md` (content now in journal directory)
-- [ ] Remove `workdesk/generated_prompt.txt` (temporary file)
+- [ ] Remove `workdesk/sources.md` (now archived in journal directory)
+- [ ] Remove `workdesk/summaries/*.md` (now archived in journal directory)
+- [ ] Remove `workdesk/unified_summaries.md` (now archived in journal directory)
+- [ ] Remove `workdesk/curated_journal_sources.md` (now archived)
+- [ ] Remove `workdesk/curated_annex_journal_sources.md` (now archived)
+- [ ] Remove `workdesk/omitted_sources.md` (now archived)
+- [ ] Remove `workdesk/weekly_journal_YYYY_MM_DD.md` (now archived)
+- [ ] Remove `workdesk/annex_journal_YYYY_MM_DD.md` (now archived)
+- [ ] Remove `workdesk/generated_prompt*.txt` (temporary files)
 - [ ] Remove any other temporary files created during process
 
 ### 2. Optional Archive

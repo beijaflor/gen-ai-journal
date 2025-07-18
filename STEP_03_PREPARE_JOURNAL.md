@@ -1,62 +1,38 @@
-# Step 3: Prepare Journal Directory
+# Step 3: Prepare Working Journal Files
 
-This step sets up the directory structure for the journal. No editorial decisions are made here - this is purely mechanical setup.
+This step prepares the working journal files in the workdesk directory for editing. No editorial decisions are made here - this is purely mechanical setup. All files remain in workdesk during the editing process.
 
 ## Tasks
 
-### 1. Create Journal Directory
+### 1. Create Working Journal Files
 
-- [ ] Create a new directory under `journals/` with format `YYYY-MM-DD`:
+- [ ] Create the main journal file in workdesk:
   ```bash
-  mkdir -p journals/YYYY-MM-DD
-  mkdir -p journals/YYYY-MM-DD/sources
-  mkdir -p journals/YYYY-MM-DD/summaries
+  touch workdesk/weekly_journal_YYYY_MM_DD.md
+  ```
+
+- [ ] Create the annex journal file in workdesk:
+  ```bash
+  touch workdesk/annex_journal_YYYY_MM_DD.md
   ```
   
-  Replace `YYYY-MM-DD` with the actual date (e.g., `2025-07-09`)
+  Replace `YYYY-MM-DD` with the actual date (e.g., `2025-07-16`)
 
-### 2. Create Empty Journal Files
+### 2. Verify Working Files
 
-- [ ] Create the main journal file:
-  ```bash
-  touch journals/YYYY-MM-DD/weekly_journal_YYYY_MM_DD.md
-  ```
-
-- [ ] Create the annex journal file:
-  ```bash
-  touch journals/YYYY-MM-DD/annex_journal_YYYY_MM_DD.md
-  ```
-
-### 3. Move Sources and Summaries
-
-- [ ] Move the source list from workdesk to the journal directory:
-  ```bash
-  cp workdesk/sources.md journals/YYYY-MM-DD/sources/sources.md
-  ```
-
-- [ ] Move all summaries to the journal directory:
-  ```bash
-  cp workdesk/summaries/*.md journals/YYYY-MM-DD/summaries/
-  cp workdesk/unified_summaries.md journals/YYYY-MM-DD/
-  ```
-
-## Verification
-
-- [ ] Confirm directory structure:
-  ```
-  journals/YYYY-MM-DD/
-  ├── weekly_journal_YYYY_MM_DD.md (empty)
-  ├── annex_journal_YYYY_MM_DD.md (empty)
-  ├── sources/
-  │   └── sources.md
-  ├── summaries/
-  │   └── [individual summary files]
-  └── unified_summaries.md
-  ```
+- [ ] Confirm all required files exist in workdesk:
+  - `workdesk/sources.md` (with completed checkboxes)
+  - `workdesk/summaries/` directory with individual summary files
+  - `workdesk/unified_summaries.md` (aggregated summaries)
+  - `workdesk/weekly_journal_YYYY_MM_DD.md` (empty, ready for editing)
+  - `workdesk/annex_journal_YYYY_MM_DD.md` (empty, ready for editing)
 
 ## Output
 
-- **Directory Created:** `journals/YYYY-MM-DD/` with subdirectories
-- **Files Created:** Empty journal markdown files
-- **Files Moved:** Sources and summaries from workdesk to journal directory
+- **Files Created:** Empty journal files in workdesk for editing
+- **Working Directory:** All files remain in workdesk for active editing workflow
 - **Next Step:** [STEP_04_CURATE_MAIN.md](STEP_04_CURATE_MAIN.md)
+
+## Note
+
+Files will only be moved to the final `journals/YYYY-MM-DD/` directory structure in STEP_08 after all editing is complete. This keeps the active editing workflow contained in workdesk.

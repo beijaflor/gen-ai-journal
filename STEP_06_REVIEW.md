@@ -12,28 +12,34 @@ Ensure all selected summaries are:
 
 ## Input Files
 
-- **Main Journal Sources:** `journals/YYYY-MM-DD/sources/curated_journal_sources.md`
-- **Annex Journal Sources:** `journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md`
-- **All Summaries:** `journals/YYYY-MM-DD/summaries/*.md`
-- **Unified Summary:** `journals/YYYY-MM-DD/unified_summaries.md`
+- **Main Journal Sources:** `workdesk/curated_journal_sources.md`
+- **Annex Journal Sources:** `workdesk/curated_annex_journal_sources.md`
+- **Main Journal Summaries:** `workdesk/unified_summaries_main.md`
+- **Annex Journal Summaries:** `workdesk/unified_summaries_annex.md`
+- **Individual Summaries:** `workdesk/summaries/*.md` (for reference if needed)
 
 ## Review Process
 
-### 1. Filter Selected Summaries
+### 1. Review Main Journal Summaries
 
-- [ ] Identify which summaries correspond to curated articles
-- [ ] Focus review only on summaries that will be included in journals
+- [ ] Review all summaries in `workdesk/unified_summaries_main.md`
+- [ ] These are pre-filtered to include only main journal content
 
-### 2. Review Each Selected Summary
+### 2. Review Annex Journal Summaries
 
-Check for:
+- [ ] Review all summaries in `workdesk/unified_summaries_annex.md`
+- [ ] These are pre-filtered to include only annex journal content
+
+### 3. Review Criteria
+
+Check each summary for:
 - **Accuracy:** Does the summary accurately represent the article?
 - **Clarity:** Is the Japanese clear and well-structured?
 - **Tone:** Does it match the editorial voice (see `EDITOR_PERSONALITY.md`)?
 - **Length:** Is it appropriately concise yet informative?
 - **Format:** Are links, titles, and sections properly formatted?
 
-### 3. Edit and Refine
+### 4. Edit and Refine
 
 Make improvements to:
 - [ ] Fix any grammatical or stylistic issues
@@ -42,11 +48,11 @@ Make improvements to:
 - [ ] Remove redundant information
 - [ ] Verify all links work correctly
 
-### 4. Organize for Assembly
+### 5. Organize for Assembly
 
 Consider creating working files:
-- [ ] `journals/YYYY-MM-DD/reviewed_main_summaries.md` (optional)
-- [ ] `journals/YYYY-MM-DD/reviewed_annex_summaries.md` (optional)
+- [ ] `workdesk/reviewed_main_summaries.md` (optional)
+- [ ] `workdesk/reviewed_annex_summaries.md` (optional)
 
 Or work directly with the unified summary file, marking which summaries are for which journal.
 
