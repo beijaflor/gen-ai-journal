@@ -73,9 +73,11 @@ Edit `workdesk/annex_journal_YYYY_MM_DD.md`:
 
 ### 3. Generate Omitted Summaries
 
+Follow the detailed process in [STEP_07A_OMITTED_SUMMARIES.md](STEP_07A_OMITTED_SUMMARIES.md):
+
 - [ ] **Create Omitted Summaries Document:**
   ```bash
-  python3 scripts/unite_summaries.py workdesk/omitted_sources.md workdesk/summaries workdesk/omitted_summaries_unified.md
+  python3 scripts/unite_summaries.py workdesk/omitted_urls.md workdesk/summaries workdesk/omitted_summaries_unified.md
   ```
   - This creates a unified document of all summaries for omitted articles
   - Will be archived as `02_omitted_summaries.md` in Step 8

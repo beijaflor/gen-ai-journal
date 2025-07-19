@@ -1,4 +1,4 @@
-# Annex Journal URL Verification Workflow
+# Step 6A: Verify Main Journal URLs
 
 ## Overview
 
@@ -8,13 +8,13 @@ This workflow verifies that all URLs in the weekly journal are properly sourced 
 
 ### 1. Read the Weekly Journal
 
-- **Input**: `workdesk/annex_journal_2025_07_12.md`
+- **Input**: `workdesk/weekly_journal_2025_07_12.md`
 - **Action**: Read the entire journal content to access all URLs
 - **Tool**: Read tool
 
 ### 2. Read the Sources List
 
-- **Input**: `workdesk/omitted_urls.md`
+- **Input**: `workdesk/sources.md`
 - **Action**: Read the master list of curated sources
 - **Tool**: Read tool
 
@@ -27,28 +27,28 @@ This workflow verifies that all URLs in the weekly journal are properly sourced 
 
 ### 4. Cross-Reference URLs
 
-- **Action**: Check each journal URL against omitted_urls.md
+- **Action**: Check each journal URL against sources.md
 - **Method**: Use Task tool to systematically verify each URL
-- **Result**: All URLs found in omitted_urls.md with their entry numbers
+- **Result**: All URLs found in sources.md with their entry numbers
 
 ### 5. Generate Report
 
 - **Output**: Verification summary showing:
   - ✅ All URLs that were found (with entry numbers)
   - ❌ Any URLs not found in sources
-- **Result**: 100% match - all journal URLs are from omitted_urls.md
+- **Result**: 100% match - all journal URLs are from sources.md
 
 ### 6. Export Curated URLs
 
-- **Output**: `workdesk/curated_annex_journal_sources.md`
+- **Output**: `workdesk/curated_journal_sources.md`
 - **Content**: Clean list of all URLs used in the journal
 - **Tool**: Write tool
 
 ## Verification Results
 
-- **Total URLs in annex journal**
-- **URLs found in omitted_urls.md**
-- **URLs not in omitted_urls.md**:
+- **Total URLs in journal**
+- **URLs found in sources.md**
+- **URLs not in sources.md**:
 - **Verification status**:
 
 ## Benefits

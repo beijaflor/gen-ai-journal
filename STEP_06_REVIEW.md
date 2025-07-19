@@ -64,9 +64,19 @@ Or work directly with the unified summary file, marking which summaries are for 
 - [ ] No broken links or formatting issues
 - [ ] Each summary provides clear value to readers
 
+## Quality Control Sub-Steps
+
+After reviewing summaries, perform URL verification:
+
+- **6A. [Verify Main URLs](STEP_06A_VERIFY_MAIN_URLS.md)** - Verify main journal URLs against sources.md
+- **6B. [Verify Annex URLs](STEP_06B_VERIFY_ANNEX_URLS.md)** - Verify annex journal URLs against omitted sources
+
 ## Output
 
 - **Updated Files:** Refined summary files ready for journal assembly
+- **Verification Files:** 
+  - `workdesk/curated_journal_sources.md` (from URL verification)
+  - `workdesk/curated_annex_journal_sources.md` (from URL verification)
 - **Status:** All content ready for final journal creation
 
 ## Next Step

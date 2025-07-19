@@ -30,7 +30,7 @@ For each URL in the source list, review its summary and evaluate against the mai
   - Add URL to `workdesk/curated_journal_sources.md`
   
 - **❌ Reject:** Article doesn't meet main journal standards
-  - Add URL to `workdesk/omitted_sources.md`
+  - Add URL to `workdesk/non_main_sources.md` (candidates for annex journal)
 
 ### 3. Avoid Common Pitfalls
 
@@ -52,9 +52,9 @@ Create or update:
   - [ ] https://example.com/significant-development-2
   ```
 
-- [ ] `workdesk/omitted_sources.md`
+- [ ] `workdesk/non_main_sources.md`
   ```markdown
-  # Omitted Sources
+  # Non-Main Journal Sources (Annex Candidates)
   
   - [ ] https://example.com/basic-tutorial
   - [ ] https://example.com/marketing-piece
@@ -64,8 +64,8 @@ Create or update:
 
 - [ ] Confirm main journal sources represent the week's most important content
 - [ ] Verify no duplicate topics in curated list
-- [ ] Ensure omitted sources are saved for annex consideration
+- [ ] Ensure non-main sources are saved for annex consideration
 
 ## Next Step
 
-[STEP_05_CURATE_ANNEX.md](STEP_05_CURATE_ANNEX.md) - Review omitted sources for annex journal
+[STEP_05_CURATE_ANNEX.md](STEP_05_CURATE_ANNEX.md) - Review non-main sources for annex journal

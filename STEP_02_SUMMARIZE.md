@@ -7,7 +7,7 @@ This step generates summaries for ALL sources before curation, allowing informed
 This step has been split into two complementary processes:
 
 ### 1. Orchestration Process
-**File:** [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md)
+**File:** [STEP_02A_ORCHESTRATION.md](STEP_02A_ORCHESTRATION.md)
 
 Manages the overall batch summarization process:
 - Setup and directory preparation
@@ -17,7 +17,7 @@ Manages the overall batch summarization process:
 - Final output generation
 
 ### 2. Individual Summarization Process
-**File:** [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md)
+**File:** [STEP_02B_INDIVIDUAL_SUMMARIZE.md](STEP_02B_INDIVIDUAL_SUMMARIZE.md)
 
 Details the process for summarizing a single URL:
 - Prompt generation for specific URLs
@@ -28,8 +28,8 @@ Details the process for summarizing a single URL:
 
 ## Workflow
 
-1. **Start with Orchestration:** Follow [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md) to set up and manage the overall process
-2. **Individual Processing:** The orchestration process calls [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md) for each URL
+1. **Start with Orchestration:** Follow [STEP_02A_ORCHESTRATION.md](STEP_02A_ORCHESTRATION.md) to set up and manage the overall process
+2. **Individual Processing:** The orchestration process calls [STEP_02B_INDIVIDUAL_SUMMARIZE.md](STEP_02B_INDIVIDUAL_SUMMARIZE.md) for each URL
 3. **Completion:** Return to orchestration for final aggregation and output
 
 ## Output

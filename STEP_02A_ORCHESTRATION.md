@@ -17,7 +17,7 @@ This step orchestrates the batch summarization of all sources, managing the over
 A script typically orchestrates this process, iterating through all unchecked URLs automatically. The script should:
 
 - Read all unchecked URLs from `workdesk/sources.md`
-- For each URL, follow the individual summarization process (see [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md))
+- For each URL, follow the individual summarization process (see [STEP_02B_INDIVIDUAL_SUMMARIZE.md](STEP_02B_INDIVIDUAL_SUMMARIZE.md))
 - Use `gemini-2.5-flash` model for summarization
 - Generate summary files with naming convention: `[number]_[sanitized_url].md`
 - Track progress by updating checkboxes in `workdesk/sources.md` (`[x]` for success, `[!]` for failure)

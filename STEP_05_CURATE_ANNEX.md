@@ -1,6 +1,6 @@
 # Step 5: Curate Annex Journal
 
-This step selects unique, non-obvious articles from the omitted sources for the annex journal - the "B-side" collection.
+This step selects unique, non-obvious articles from the non-main sources for the annex journal - the "B-side" collection.
 
 ## Objective
 
@@ -12,15 +12,15 @@ Find articles that provide:
 
 ## Input Files
 
-- **Source Pool:** `workdesk/omitted_sources.md` (rejected from main)
+- **Source Pool:** `workdesk/non_main_sources.md` (rejected from main, candidates for annex)
 - **Summaries:** `workdesk/unified_summaries.md` (for review)
 - **Criteria:** `criteria/annex_curation_criteria.md`
 
 ## Curation Process
 
-### 1. Review Omitted Sources
+### 1. Review Non-Main Sources
 
-For each URL in `omitted_sources.md`, reconsider with annex criteria:
+For each URL in `non_main_sources.md`, reconsider with annex criteria:
 
 - **Originality:** Does it offer a unique perspective or novel knowledge?
 - **Practical Value:** Does it provide actionable insights for experienced practitioners?
@@ -59,7 +59,7 @@ It IS for:
 - Well-reasoned contrarian viewpoints
 - Deep technical explorations
 
-## Output File
+## Output Files
 
 Create or update:
 
@@ -67,11 +67,16 @@ Create or update:
   - Must include brief Japanese comments explaining each selection
   - Comments should highlight what makes each article annex-worthy
 
+- [ ] `workdesk/omitted_sources.md` 
+  - Sources truly omitted from both main and annex journals
+  - Final list of unused sources
+
 ## Verification
 
 - [ ] Each selected article has a clear editorial comment
 - [ ] Selected articles offer genuine "B-side" value
 - [ ] No overlap with main journal selections
+- [ ] Sources not selected for annex are moved to final omitted_sources.md
 
 ## Next Step
 
