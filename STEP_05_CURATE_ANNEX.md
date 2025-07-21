@@ -13,7 +13,7 @@ Find articles that provide:
 ## Input Files
 
 - **Source Pool:** `workdesk/non_main_sources.md` (rejected from main, candidates for annex)
-- **Summaries:** `workdesk/unified_summaries.md` (for review)
+- **Summaries:** `workdesk/non_main_unified_summaries.md` (for review)
 - **Criteria:** `criteria/annex_curation_criteria.md`
 
 ## Curation Process
@@ -39,10 +39,7 @@ Example format:
 # Curated Annex Journal Sources
 
 - [ ] https://example.com/unconventional-approach
-  - 従来のベストプラクティスに挑戦する斬新なアプローチ。実装の複雑さとトレードオフを詳細に解説
-
 - [ ] https://example.com/niche-deep-dive
-  - ニッチだが重要な技術領域への深い洞察。メインストリームでは見過ごされがちな視点を提供
 ```
 
 ### 3. Maintain High Standards
@@ -66,10 +63,6 @@ Create or update:
 - [ ] `workdesk/curated_annex_journal_sources.md`
   - Must include brief Japanese comments explaining each selection
   - Comments should highlight what makes each article annex-worthy
-
-- [ ] `workdesk/omitted_sources.md` 
-  - Sources truly omitted from both main and annex journals
-  - Final list of unused sources
 
 ## Verification
 

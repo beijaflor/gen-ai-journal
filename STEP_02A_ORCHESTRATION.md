@@ -23,6 +23,14 @@ A script typically orchestrates this process, iterating through all unchecked UR
 - Track progress by updating checkboxes in `workdesk/sources.md` (`[x]` for success, `[!]` for failure)
 - Handle failures gracefully with retry logic
 
+**IMPORTANT PROCESSING RESTRICTION:** The summarization process MUST process URLs one by one sequentially, not in parallel. Although this takes significantly more time, it is required to avoid rate limiting and ensure reliable processing. Do not attempt to parallelize or batch multiple URLs simultaneously.
+
+**Note:** A shell script `scripts/summarize-url.sh` is provided for one-shot summarization:
+```bash
+./scripts/summarize-url.sh "https://example.com/article"
+```
+This outputs the summary to stdout for automated parsing and saving.
+
 ### 2. Progress Tracking
 
 - [ ] Monitor completion status in `workdesk/sources.md`
@@ -45,7 +53,7 @@ After all sources are processed:
 
 - [ ] Aggregate all summaries into a unified file:
   ```bash
-  awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
+  python3 scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md
   ```
 
 ## Output

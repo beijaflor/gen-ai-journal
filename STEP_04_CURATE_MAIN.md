@@ -14,6 +14,15 @@ Select articles that provide essential insights, significant developments, and h
 
 ## Curation Process
 
+**IMPORTANT** Read entire sources and pick from them and **NEVER** make up falsy URL.
+
+### 0. Prepare
+
+- [ ] Read and adopt the editorial persona from `EDITOR_PERSONALITY.md`
+  - Adopt the role of a **technical web application engineer** with startup mindset
+  - Focus on "why it matters" beyond just "what happened"
+  - Apply editorial judgment that is **visionary but grounded**
+
 ### 1. Review Each Article
 
 For each URL in the source list, review its summary and evaluate against the main journal criteria:
@@ -28,13 +37,12 @@ For each URL in the source list, review its summary and evaluate against the mai
 
 - **✅ Accept:** Article meets the criteria for main journal
   - Add URL to `workdesk/curated_journal_sources.md`
-  
-- **❌ Reject:** Article doesn't meet main journal standards
-  - Add URL to `workdesk/non_main_sources.md` (candidates for annex journal)
+- Selection should be counted from 18 to 25.
 
 ### 3. Avoid Common Pitfalls
 
 Do NOT include:
+
 - Surface-level tutorials or "getting started" guides
 - Pure marketing content or hype pieces
 - Duplicate coverage of the same topic
@@ -45,26 +53,18 @@ Do NOT include:
 Create or update:
 
 - [ ] `workdesk/curated_journal_sources.md`
+
   ```markdown
   # Curated Main Journal Sources
-  
+
   - [ ] https://example.com/important-article-1
   - [ ] https://example.com/significant-development-2
-  ```
-
-- [ ] `workdesk/non_main_sources.md`
-  ```markdown
-  # Non-Main Journal Sources (Annex Candidates)
-  
-  - [ ] https://example.com/basic-tutorial
-  - [ ] https://example.com/marketing-piece
   ```
 
 ## Verification
 
 - [ ] Confirm main journal sources represent the week's most important content
 - [ ] Verify no duplicate topics in curated list
-- [ ] Ensure non-main sources are saved for annex consideration
 
 ## Next Step
 

@@ -80,7 +80,7 @@ Follow the detailed process in [STEP_07A_OMITTED_SUMMARIES.md](STEP_07A_OMITTED_
   python3 scripts/unite_summaries.py workdesk/omitted_urls.md workdesk/summaries workdesk/omitted_summaries_unified.md
   ```
   - This creates a unified document of all summaries for omitted articles
-  - Will be archived as `02_omitted_summaries.md` in Step 8
+  - Will be archived as `02_omitted_summaries.md` in Step 9
 
 ### 4. Format and Polish
 
@@ -116,4 +116,4 @@ Ensure final journals:
 
 ## Next Step
 
-[STEP_08_CLEANUP.md](STEP_08_CLEANUP.md) - Clean up workspace and archive files
+[STEP_08A_VERIFY_MAIN_URLS.md](STEP_08A_VERIFY_MAIN_URLS.md) - Verify URLs after assembly

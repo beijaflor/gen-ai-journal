@@ -17,12 +17,13 @@ graph LR
     D --> E[5. Curate Annex]
     E --> F[5B. Create Focused Summaries]
     F --> G[6. Review]
-    G --> G1[6A. Verify Main URLs]
-    G --> G2[6B. Verify Annex URLs]
-    G1 --> H[7. Assemble]
-    G2 --> H
+    G --> H[7. Assemble]
     H --> H1[7A. Create Omitted Summaries]
-    H1 --> I[8. Cleanup]
+    H1 --> I[8. Verify URLs]
+    I --> I1[8A. Verify Main URLs]
+    I --> I2[8B. Verify Annex URLs]
+    I1 --> J[9. Cleanup]
+    I2 --> J
 ```
 
 ## Workflow Steps
@@ -36,11 +37,12 @@ graph LR
 5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles from non-main sources
    - 5B. **[Create Focused Summaries](STEP_05B_CREATE_FOCUSED_SUMMARIES.md)** - Generate separate unified summaries for each journal
 6. **[Review Summaries](STEP_06_REVIEW.md)** - Edit and refine selected summaries
-   - 6A. **[Verify Main URLs](STEP_06A_VERIFY_MAIN_URLS.md)** - Verify main journal URLs against sources
-   - 6B. **[Verify Annex URLs](STEP_06B_VERIFY_ANNEX_URLS.md)** - Verify annex journal URLs against curated annex sources
 7. **[Assemble Journals](STEP_07_ASSEMBLE.md)** - Create final journal documents
    - 7A. **[Create Omitted Summaries](STEP_07A_OMITTED_SUMMARIES.md)** - Generate unified summaries for omitted articles
-8. **[Cleanup](STEP_08_CLEANUP.md)** - Archive to journals/ directory and clean workspace
+8. **Verify URLs** - Quality control checks after assembly
+   - 8A. **[Verify Main URLs](STEP_08A_VERIFY_MAIN_URLS.md)** - Verify main journal URLs against sources
+   - 8B. **[Verify Annex URLs](STEP_08B_VERIFY_ANNEX_URLS.md)** - Verify annex journal URLs against curated annex sources
+9. **[Cleanup](STEP_09_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 
 ## Quick Start Checklist
 
@@ -57,7 +59,7 @@ graph LR
 
 ### Scripts
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
-- `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
+- `scripts/unite_summaries.py` - Gathers summaries from a list of URLs (used in Step 2 to create unified_summaries.md)
 
 ### Output Structure
 ```

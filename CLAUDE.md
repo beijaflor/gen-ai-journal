@@ -34,6 +34,9 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 # Process and sanitize source URLs
 python3 process_sources.py workdesk/sources.md
 
+# One-shot URL summarization
+./scripts/summarize-url.sh "https://example.com/article"
+
 # Aggregate summaries
 awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
 
