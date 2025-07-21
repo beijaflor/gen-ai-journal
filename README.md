@@ -8,41 +8,29 @@ This project follows a systematic workflow to create weekly journals:
 
 ```mermaid
 graph LR
-    A[1. Gather Sources] --> B[2. Summarize ALL]
-    B --> B1[2A. Orchestration]
-    B --> B2[2B. Individual Summarize]
-    B1 --> C[3. Prepare Journal]
-    B2 --> C
-    C --> D[4. Curate Main]
-    D --> E[5. Curate Annex]
-    E --> F[5B. Create Focused Summaries]
-    F --> G[6. Review]
-    G --> H[7. Assemble]
-    H --> H1[7A. Create Omitted Summaries]
-    H1 --> I[8. Verify URLs]
-    I --> I1[8A. Verify Main URLs]
-    I --> I2[8B. Verify Annex URLs]
-    I1 --> J[9. Cleanup]
-    I2 --> J
+    A[1. Gather Sources] --> B[2. Summarize All Sources]
+    B --> C[3. Prepare Working Files]
+    C --> D[4. Curate Main Journal]
+    D --> E[5. Curate Annex Journal]
+    E --> F[6. Create Focused Summaries]
+    F --> G[7. Review & Refine]
+    G --> H[8. Assemble Final Journals]
+    H --> I[9. Verify URLs & Quality]
+    I --> J[10. Archive & Cleanup]
 ```
 
 ## Workflow Steps
 
 1. **[Gather Sources](STEP_01_GATHER_SOURCES.md)** - Collect URLs from structured GitHub issue with numbered IDs
-2. **[Summarize](STEP_02_SUMMARIZE.md)** - Generate summaries for ALL sources
-   - 2A. **[Orchestration](STEP_02A_ORCHESTRATION.md)** - Manage batch summarization process
-   - 2B. **[Individual Summarize](STEP_02B_INDIVIDUAL_SUMMARIZE.md)** - Process single URL summaries
-3. **[Prepare Journal](STEP_03_PREPARE_JOURNAL.md)** - Set up working files in workdesk
-4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select primary articles using summaries
-5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles from non-main sources
-   - 5B. **[Create Focused Summaries](STEP_05B_CREATE_FOCUSED_SUMMARIES.md)** - Generate separate unified summaries for each journal
-6. **[Review Summaries](STEP_06_REVIEW.md)** - Edit and refine selected summaries
-7. **[Assemble Journals](STEP_07_ASSEMBLE.md)** - Create final journal documents
-   - 7A. **[Create Omitted Summaries](STEP_07A_OMITTED_SUMMARIES.md)** - Generate unified summaries for omitted articles
-8. **Verify URLs** - Quality control checks after assembly
-   - 8A. **[Verify Main URLs](STEP_08A_VERIFY_MAIN_URLS.md)** - Verify main journal URLs against sources
-   - 8B. **[Verify Annex URLs](STEP_08B_VERIFY_ANNEX_URLS.md)** - Verify annex journal URLs against curated annex sources
-9. **[Cleanup](STEP_09_CLEANUP.md)** - Archive to journals/ directory and clean workspace
+2. **[Summarize All Sources](STEP_02_SUMMARIZE.md)** - Generate summaries for ALL sources using orchestrated batch processing
+3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
+4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 primary articles based on editorial criteria
+5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
+6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
+7. **[Review & Refine](STEP_07_REVIEW.md)** - Edit and polish selected summaries with editorial voice
+8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
+9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
+10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 
 ## Quick Start Checklist
 

@@ -73,4 +73,4 @@ Create or update:
 
 ## Next Step
 
-[STEP_05B_CREATE_FOCUSED_SUMMARIES.md](STEP_05B_CREATE_FOCUSED_SUMMARIES.md) - Create focused summary collections for each journal
+[STEP_06_CREATE_FOCUSED_SUMMARIES.md](STEP_06_CREATE_FOCUSED_SUMMARIES.md) - Create focused summary collections for each journal
