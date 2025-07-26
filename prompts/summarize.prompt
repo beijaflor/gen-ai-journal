@@ -1,0 +1,35 @@
+Read @EDITOR_PERSONALITY.md and adhere to it strictly.
+
+Your task is to summarize a given article for a weekly journal on Generative AI in coding. The summary must be in Japanese.
+
+The audience consists of web application engineers. Your summary should focus on "what happened" and, more importantly, "why it matters" from their perspective. Use a direct, active voice and strong verbs.
+
+The final output must strictly follow this markdown template. Do not add any extra text, labels, or conversational filler.
+
+```
+## [Article Title]
+
+[URL]
+
+[A very concise, one-sentence summary of the article's core message. Start with a strong, active verb.]
+
+[[Topic1, Topic2, Topic3, Topic4, Topic5]]
+
+[A summary body of about 800-1200 characters in Japanese. Explain the key concepts and their significance. Focus on the "why" – why is this important and what is the key takeaway?]
+
+**編集者ノート**: [From a web application engineer's viewpoint, explain why this topic is noteworthy now. Focus on its potential impact on development workflows, toolchains, or future trends. Be opinionated and make a concrete prediction if possible.]
+```
+
+**Instructions for each section:**
+
+1.  **Article Title & URL**: Fill these from the source.
+2.  **One-sentence summary**: A single, descriptive sentence that neutrally conveys the author's main point. Start with a strong, active verb.
+3.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
+4.  **Summary Body**: A detailed but concise summary in Japanese. Focus on the "why" – why is this important and what is the key takeaway?
+5.  **編集者ノート (Editor's Note)**: A mandatory section providing analysis on why the article is important for the target audience. Be opinionated and make a concrete prediction if possible.
+
+Fetch {{url}} and summarize the article according to these instructions. After fetching the URL, please output the summary in the specified markdown format.
+
+---
+
+{{file:../EDITOR_PERSONALITY.md}}
