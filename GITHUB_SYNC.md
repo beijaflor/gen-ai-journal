@@ -1,6 +1,6 @@
 # GitHub Issue Sync Workflow
 
-This document describes how to sync `workdesk/sources.md` to GitHub issues for progress tracking.
+This document describes how to sync `workdesk/sources.md` to GitHub issues for progress tracking using Claude Code's MCP GitHub integration.
 
 ## Overview
 
@@ -12,31 +12,35 @@ The sync workflow creates/updates a weekly GitHub issue that tracks:
 
 ## Usage
 
-### 1. Generate Issue Content
+### MCP-Based Sync Process
 
-```bash
-./scripts/sync_to_github.sh
+Claude Code can directly sync `workdesk/sources.md` to GitHub issues using its built-in MCP server integration:
+
+1. **Automated Analysis**: Claude Code analyzes `workdesk/sources.md` to:
+   - Count total links and categorize by section
+   - Determine processing status (checked vs unchecked)
+   - Calculate completion percentage
+   - Generate appropriate week identifier
+
+2. **GitHub Integration**: Using MCP server, Claude Code will:
+   - Search for existing weekly issue by title pattern
+   - Create new issue if none exists, or update existing issue
+   - Apply appropriate labels automatically
+   - Format content with proper markdown structure
+
+### Simple Command
+
+To sync sources to GitHub issue, simply ask Claude Code:
+
+```
+"Sync workdesk/sources.md to GitHub issue"
 ```
 
-This will output:
-- Issue title (e.g., "Weekly Journal Sources - Week of 2025-07-21")
-- Suggested labels (e.g., "weekly-sources,journal-2025-07-21")
-- Formatted issue body with progress summary
-
-### 2. Create/Update GitHub Issue
-
-Use Claude Code's GitHub integration to:
-
-1. **Search for existing issue**:
-   - Look for title containing the week identifier (e.g., "Week of 2025-07-21")
-   
-2. **If issue exists**:
-   - Update the issue body with new content
-   - Progress tracking will be automatically updated
-   
-3. **If no issue exists**:
-   - Create new issue with the generated title and body
-   - Add suggested labels for organization
+Claude Code will handle:
+- Issue title generation (e.g., "Weekly Journal Sources - Week of 2025-07-21")
+- Label assignment (e.g., "weekly-sources,journal-2025-07-21")
+- Content formatting and progress tracking
+- Issue creation or updates
 
 ## Issue Structure
 
@@ -59,15 +63,21 @@ The generated GitHub issue includes:
 
 ## Automation
 
-The sync can be run at any time to update progress:
-- After adding new links
-- After completing summaries
-- Before starting curation
+The MCP-based sync can be triggered at any time to update progress:
+- After adding new links to `workdesk/sources.md`
+- After completing summaries (marked with [x])
+- Before starting curation process
 - At end of weekly collection period
+
+Simply request: `"Sync workdesk/sources.md to GitHub issue"` and Claude Code handles the rest.
 
 ## Benefits
 
+- **Simplified Workflow**: No manual script execution required
+- **Intelligent Updates**: Claude Code determines whether to create or update issues
+- **Consistent Formatting**: Automated markdown structure and labeling
+- **Real-time Analysis**: Dynamic progress calculation and status tracking
 - **Visibility**: Team/collaborators can see current progress
 - **Planning**: Clear overview of collected sources
 - **History**: Weekly issues serve as archive of collection periods
-- **Integration**: Links to broader GitHub project management
+- **Integration**: Seamless GitHub project management integration

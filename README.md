@@ -4,23 +4,26 @@ A weekly curated journal of AI and coding developments, featuring high-impact ar
 
 ## Workflow Overview
 
-This project follows a systematic workflow to create weekly journals:
+This project follows a systematic workflow to create weekly journals using branch-based development:
 
 ```mermaid
 graph LR
-    A[1. Add Links] --> B[2. Review & Categorize]
-    B --> C[3. Prepare Working Files]
-    C --> D[4. Curate Main Journal]
-    D --> E[5. Curate Annex Journal]
-    E --> F[6. Create Focused Summaries]
-    F --> G[7. Review & Refine]
-    G --> H[8. Assemble Final Journals]
-    H --> I[9. Verify URLs & Quality]
-    I --> J[10. Archive & Cleanup]
+    A[0. Create Branch] --> B[1. Add Links]
+    B --> C[2. Review & Categorize]
+    C --> D[3. Prepare Working Files]
+    D --> E[4. Curate Main Journal]
+    E --> F[5. Curate Annex Journal]
+    F --> G[6. Create Focused Summaries]
+    G --> H[7. Review & Refine]
+    H --> I[8. Assemble Final Journals]
+    I --> J[9. Verify URLs & Quality]
+    J --> K[10. Archive & Cleanup]
+    K --> L[11. Merge to Main]
 ```
 
 ## Workflow Steps
 
+0. **[Create Branch](STEP_00_CREATE_BRANCH.md)** - Create dedicated branch for journal week
 1. **[Add Links Individually](STEP_01_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
 2. **[Summarization](STEP_02_SUMMARIZE.md)** - Now integrated into link addition (documentation for special cases)
 3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
@@ -31,6 +34,7 @@ graph LR
 8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
 9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
+11. **[Merge to Main](STEP_11_MERGE.md)** - Create PR and merge completed journal to main branch
 
 ## Quick Start
 
@@ -46,12 +50,14 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 ```
 
 ### Syncing to GitHub Issues
-```bash
-# Generate GitHub issue content for current week
-./scripts/sync_to_github.sh
+```
+# Simply ask Claude Code to sync sources to GitHub issue
+"Sync workdesk/sources.md to GitHub issue"
 
-# The script will output formatted issue title and body
-# Use this with Claude Code's GitHub integration to create/update issues
+# Claude Code will automatically:
+# - Analyze current sources and progress
+# - Create or update weekly GitHub issue
+# - Apply appropriate labels and formatting
 ```
 
 ### Prerequisites
@@ -59,7 +65,7 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 - [ ] Gemini CLI configured (`gemini` command available)
 - [ ] Git repository initialized
 - [ ] `prompt.txt` file present in project root
-- [ ] Claude Code with GitHub integration (for issue sync)
+- [ ] Claude Code with MCP GitHub integration (for automated issue sync)
 
 ## Key Files
 
@@ -69,8 +75,6 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 
 ### Scripts
 - `scripts/check_link.py` - Check if a URL is valid and unique before adding
-- `scripts/sync_sources_to_issue.py` - Generate GitHub issue content from workdesk/sources.md
-- `scripts/sync_to_github.sh` - Helper script for GitHub sync workflow
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
 - `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
 - `scripts/summarize-url.sh` - One-shot URL summarization using Gemini
