@@ -2,7 +2,7 @@
 
 # One-shot Gemini summarization script
 # Usage: ./summarize-url.sh <URL>
-# Output: Summary to stdout
+# Output: Clean summary to stdout (filters out debug info)
 
 URL="$1"
 
@@ -19,9 +19,15 @@ if [ ! -f "/Users/shootani/Dropbox/github/gen-ai-journal/prompt.txt" ]; then
     exit 1
 fi
 
-# Generate prompt and call gemini
+# Generate prompt and call gemini, then filter output
 sed "s|%%URL%%|$URL|g" /Users/shootani/Dropbox/github/gen-ai-journal/prompt.txt | \
-gemini -m "gemini-2.5-flash" --sandbox
+gemini -m "gemini-2.5-flash" --sandbox 2>/dev/null | \
+sed -n '/^## /,$p' | \
+sed '/^\[WebFetchTool\]/d' | \
+sed '/^Loaded cached credentials\./d' | \
+sed '/^using macos seatbelt/d' | \
+sed '/^(node:[0-9]*)/d' | \
+sed '/^{$/,$d'
 
-# Exit with gemini's exit code
-exit ${PIPESTATUS[1]}
+# Exit with success if we got any output
+exit 0

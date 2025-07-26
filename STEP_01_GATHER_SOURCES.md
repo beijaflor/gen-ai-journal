@@ -1,59 +1,80 @@
-# Step 1: Gather Sources
+# Step 1: Gather and Add Links
 
-This step creates the initial list of source URLs for the week in the `workdesk` directory.
+This step describes how to collect and add links to the journal workflow.
 
-## Tasks
+## Overview
 
-### 1. Gather Sources from GitHub Issue
+The new workflow involves:
+1. Check if a link is valid and unique
+2. Manually add links to sources.md
+3. Generate summaries using the one-shot script
 
-- [ ] Identify the GitHub issue containing the list of source URLs for the weekly journal
-- [ ] Use the `get_issue` tool to retrieve its content (if using automated tools)
-- [ ] Copy all links into `workdesk/sources.md` in structured format with numbered IDs:
-  ```markdown
-  ## Main List
-  - [ ] 001. https://example.com/article1
-  - [ ] 002. https://example.com/article2
-  
-  ## Slides
-  - [ ] 003. https://example.com/slide1
-  
-  ## Might Be Hype
-  - [ ] 004. https://example.com/hype1
-  
-  ## Better to be Omitted
-  - [ ] 005. https://example.com/omitted1
-  ```
+## Checking Links Before Adding
 
-**Important Notes:**
-- Preserve the section structure from the GitHub issue
-- Assign sequential numbered IDs (001, 002, etc.) to each link for easy tracking
-- Include all sections even if some are empty
-- Maintain checkbox format for progress tracking
+### Command Usage
 
-### 2. Process and Sanitize Sources
+```bash
+python3 scripts/check_link.py <URL>
+```
 
-- [ ] Run the source processing script:
-  ```bash
-  python3 process_sources.py workdesk/sources.md
-  ```
-  
-  This script performs:
-  - Removes UTM parameters from URLs
-  - Removes duplicate links within and across sections
-  - Maintains structured format with section headers
-  - Preserves numbered IDs and checklist format
+Example:
+```bash
+python3 scripts/check_link.py https://example.com/article-about-ai-coding
+```
 
-### 3. Verify Results
+### What the Check Script Does
 
-- [ ] Confirm that `workdesk/sources.md` contains:
-  - Sanitized URLs (no tracking parameters)
-  - No duplicate entries within or across sections
-  - Proper structured format with section headers
-  - Sequential numbered IDs for all links (001, 002, etc.)
-  - Proper checklist format for tracking progress
+1. **Sanitizes the URL** - Removes UTM parameters and fragments
+2. **Checks for duplicates** - Searches in both sources.md and summaries
+3. **Reports status** - Tells you if the URL is unique and ready to add
 
-## Output
+## Manual Link Addition Process
 
-- **File Created/Updated:** `workdesk/sources.md`
-- **Format:** Structured markdown with section headers, numbered IDs, and checklists of unique, sanitized URLs
-- **Next Step:** [STEP_02_SUMMARIZE.md](STEP_02_SUMMARIZE.md)
+After checking a link is unique:
+
+1. **Add to sources.md** - Manually edit `workdesk/sources.md` and add the link with an ID
+   ```markdown
+   ## Main List
+   - [ ] 001. https://example.com/article1
+   ```
+
+2. **Generate Summary** - Use the one-shot script:
+   ```bash
+   ./scripts/summarize-url.sh "https://example.com/article1" > workdesk/summaries/001_example_com_article1.md
+   ```
+
+3. **Mark as Processed** - Update the checkbox in sources.md:
+   ```markdown
+   ## Main List
+   - [x] 001. https://example.com/article1
+   ```
+
+## Managing Categories
+
+After adding links, you can manually edit `workdesk/sources.md` to move links between categories:
+- **Main List** - Primary articles for the main journal
+- **Slides** - Presentation materials
+- **Might Be Hype** - Articles that need careful evaluation
+- **Better to be Omitted** - Articles to exclude from journals
+
+## Continuous Addition
+
+You can check and add links throughout the week as you discover them:
+
+1. **Check the link**:
+   ```bash
+   python3 scripts/check_link.py https://blog.example.com/ai-agents-2025
+   ```
+
+2. **If unique, add to sources.md and generate summary**:
+   ```bash
+   # Add to sources.md manually, then:
+   ./scripts/summarize-url.sh "https://blog.example.com/ai-agents-2025" > workdesk/summaries/001_blog_example_com_ai_agents_2025.md
+   ```
+
+## Next Steps
+
+Once you have added sufficient links (typically 30-50 for a weekly journal):
+- Review and categorize links in `workdesk/sources.md`
+- Continue to [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md) for journal preparation
+- Note: STEP_02 (bulk summarization) is now integrated into the add_link process

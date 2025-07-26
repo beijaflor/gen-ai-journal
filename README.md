@@ -8,7 +8,7 @@ This project follows a systematic workflow to create weekly journals:
 
 ```mermaid
 graph LR
-    A[1. Gather Sources] --> B[2. Summarize All Sources]
+    A[1. Add Links] --> B[2. Review & Categorize]
     B --> C[3. Prepare Working Files]
     C --> D[4. Curate Main Journal]
     D --> E[5. Curate Annex Journal]
@@ -21,8 +21,8 @@ graph LR
 
 ## Workflow Steps
 
-1. **[Gather Sources](STEP_01_GATHER_SOURCES.md)** - Collect URLs from structured GitHub issue with numbered IDs
-2. **[Summarize All Sources](STEP_02_SUMMARIZE.md)** - Generate summaries for ALL sources using orchestrated batch processing
+1. **[Add Links Individually](STEP_01_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
+2. **[Summarization](STEP_02_SUMMARIZE.md)** - Now integrated into link addition (documentation for special cases)
 3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
 4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 primary articles based on editorial criteria
 5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
@@ -32,12 +32,24 @@ graph LR
 9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 
-## Quick Start Checklist
+## Quick Start
 
-- [ ] GitHub issue with structured source URLs identified (Main List, Slides, Might Be Hype, Better to be Omitted)
-- [ ] Python environment ready (for `process_sources.py`)
+### Checking Links Before Adding
+```bash
+# Check if a link is valid and unique before adding
+python3 scripts/check_link.py "https://example.com/article-about-ai"
+
+# The script will:
+# 1. Sanitize the URL (remove tracking params)
+# 2. Check for duplicates in sources and summaries
+# 3. Report if the URL is ready to be added
+```
+
+### Prerequisites
+- [ ] Python 3.x installed
 - [ ] Gemini CLI configured (`gemini` command available)
-- [ ] Git repository up to date
+- [ ] Git repository initialized
+- [ ] `prompt.txt` file present in project root
 
 ## Key Files
 
@@ -46,8 +58,10 @@ graph LR
 - **[Annex Journal Criteria](criteria/annex_curation_criteria.md)** - Selection standards for annex journal
 
 ### Scripts
+- `scripts/check_link.py` - Check if a URL is valid and unique before adding
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
-- `scripts/unite_summaries.py` - Gathers summaries from a list of URLs (used in Step 2 to create unified_summaries.md)
+- `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
+- `scripts/summarize-url.sh` - One-shot URL summarization using Gemini
 
 ### Output Structure
 ```
