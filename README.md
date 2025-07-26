@@ -45,11 +45,21 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 # 3. Report if the URL is ready to be added
 ```
 
+### Syncing to GitHub Issues
+```bash
+# Generate GitHub issue content for current week
+./scripts/sync_to_github.sh
+
+# The script will output formatted issue title and body
+# Use this with Claude Code's GitHub integration to create/update issues
+```
+
 ### Prerequisites
 - [ ] Python 3.x installed
 - [ ] Gemini CLI configured (`gemini` command available)
 - [ ] Git repository initialized
 - [ ] `prompt.txt` file present in project root
+- [ ] Claude Code with GitHub integration (for issue sync)
 
 ## Key Files
 
@@ -59,6 +69,8 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 
 ### Scripts
 - `scripts/check_link.py` - Check if a URL is valid and unique before adding
+- `scripts/sync_sources_to_issue.py` - Generate GitHub issue content from workdesk/sources.md
+- `scripts/sync_to_github.sh` - Helper script for GitHub sync workflow
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
 - `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
 - `scripts/summarize-url.sh` - One-shot URL summarization using Gemini
