@@ -1,3 +1,11 @@
+# **Goal**
+
+Summarize the article according to instructions below. Output the summary in the specified markdown format.
+
+Article contents is very last of prompt.
+
+# **Instructions**
+
 Adhere to the editorial persona defined at the end of this prompt.
 
 Your task is to summarize a given article for a weekly journal on Generative AI in coding. The summary must be in Japanese.
@@ -34,8 +42,6 @@ The final output must strictly follow this markdown template. Do not add any ext
 5.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
 6.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" – why is this important and what is the key takeaway?
 
-Fetch {{url}} and summarize the article according to these instructions. After fetching the URL, please output the summary in the specified markdown format.
-
 ---
 
 # Content Type Framework
@@ -50,3 +56,9 @@ Fetch {{url}} and summarize the article according to these instructions. After f
 
 # Editorial Persona
 {{file:../EDITOR_PERSONALITY.md}}
+
+---
+
+# Article Content
+
+{{fetch:"{{url}}"}}

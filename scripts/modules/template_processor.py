@@ -3,18 +3,20 @@ import os
 from typing import Dict, Any
 
 
-def process_template(text: str, replacements: Dict[str, Any], base_path: str = None) -> str:
+def process_template(text: str, replacements: Dict[str, Any], base_path: str = None, fetch_function=None) -> str:
     """
     Process template text with variable and file replacements.
     
     Supports:
     - {{variable}} - string replacement
     - {{file:path}} - file content inclusion (relative paths relative to base_path)
+    - {{fetch:"URL"}} - fetch URL content (requires fetch_function)
     
     Args:
         text: Template text to process
         replacements: Dictionary of variable replacements
         base_path: Base directory for relative file paths (defaults to current working directory)
+        fetch_function: Optional function to fetch URL content, signature: fetch_function(url: str) -> str
         
     Returns:
         Processed text with all substitutions made
@@ -55,6 +57,19 @@ def process_template(text: str, replacements: Dict[str, Any], base_path: str = N
             raise ValueError(f"Error reading file {file_path}: {str(e)}")
     
     processed_text = re.sub(file_pattern, replace_file, processed_text)
+    
+    # Phase 3: Replace URL fetch {{fetch:"URL"}}
+    if fetch_function:
+        fetch_pattern = r'\{\{fetch:"([^"]+)"\}\}'
+        
+        def replace_fetch(match):
+            url = match.group(1).strip()
+            try:
+                return fetch_function(url)
+            except Exception as e:
+                raise ValueError(f"Error fetching URL {url}: {str(e)}")
+        
+        processed_text = re.sub(fetch_pattern, replace_fetch, processed_text)
     
     return processed_text
 
