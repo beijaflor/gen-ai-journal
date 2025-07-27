@@ -22,7 +22,7 @@ This repository creates weekly curated journals about Generative AI in coding, f
 - Follow consistent heading hierarchy (# ## ###)
 
 ## Scripts & Commands
-- Use `python3` for processing scripts
+- Use `uv run` for processing scripts
 - Key scripts: `process_sources.py`, `scripts/unite_summaries.py`
 - Always use absolute paths when referencing files
 
@@ -32,10 +32,10 @@ This repository creates weekly curated journals about Generative AI in coding, f
 mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 
 # Process and sanitize source URLs
-python3 process_sources.py workdesk/sources.md
+uv run process_sources.py workdesk/sources.md
 
 # One-shot URL summarization
-./scripts/summarize-url.sh "https://example.com/article"
+uv run scripts/call-gemini.py --url "https://example.com/article"
 
 # Aggregate summaries
 awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
@@ -44,7 +44,7 @@ awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk
 grep -l "YOUR_URL_HERE" **/*.md
 
 # Sanitize URL (remove tracking params and fragments)
-python3 scripts/sanitize_url.py "URL_HERE"
+uv run scripts/sanitize_url.py "URL_HERE"
 ```
 
 # Workflow Management

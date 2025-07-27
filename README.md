@@ -77,7 +77,7 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 - `scripts/check_link.py` - Check if a URL is valid and unique before adding
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
 - `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
-- `scripts/summarize-url.sh` - One-shot URL summarization using Gemini
+- `scripts/call-gemini.py` - One-shot URL summarization using Gemini
 
 ### Output Structure
 ```
