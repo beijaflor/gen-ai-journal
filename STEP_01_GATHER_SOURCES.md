@@ -72,9 +72,33 @@ You can check and add links throughout the week as you discover them:
    ./scripts/summarize-url.sh "https://blog.example.com/ai-agents-2025" > workdesk/summaries/001_blog_example_com_ai_agents_2025.md
    ```
 
+## Progress Tracking with GitHub Issues
+
+You can sync your sources to GitHub for progress tracking at any time:
+
+### GitHub Sync Command
+```
+"Sync workdesk/sources.md to GitHub issue"
+```
+
+### What the Sync Does
+- Creates or updates a weekly GitHub issue with current progress
+- Shows total links, processing status, and completion percentage
+- Includes complete source list with checkboxes for team visibility
+- Auto-generates appropriate labels and formatting
+
+### When to Sync
+- After adding new links to maintain visibility
+- After completing summaries (checking boxes)
+- Before starting curation process
+- At end of weekly collection period
+
+For detailed sync workflow, see [GITHUB_SYNC.md](GITHUB_SYNC.md).
+
 ## Next Steps
 
 Once you have added sufficient links (typically 30-50 for a weekly journal):
 - Review and categorize links in `workdesk/sources.md`
+- Sync to GitHub issue for progress tracking
 - Continue to [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md) for journal preparation
 - Note: STEP_02 (bulk summarization) is now integrated into the add_link process
