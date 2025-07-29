@@ -12,14 +12,14 @@ Your task is to summarize a given article for a weekly journal on Generative AI 
 
 The audience consists of web application engineers. Your summary should focus on "what happened" and, more importantly, "why it matters" from their perspective. Use a direct, active voice and strong verbs.
 
-**IMPORTANT**: First classify the article using the content type framework and then score it using the scoring framework defined at the end of this prompt.
+First classify the article using the content type framework and then score it using the scoring framework defined at the end of this prompt.
 
 The final output must strictly follow this markdown template. Do not add any extra text, labels, or conversational filler.
 
 ```
 ## [Article Title]
 
-[URL]
+{{url}}
 
 [A very concise, one-sentence summary of the article's core message. Start with a strong, active verb.]
 
@@ -35,12 +35,12 @@ The final output must strictly follow this markdown template. Do not add any ext
 
 **Instructions for each section:**
 
-1.  **Article Title & URL**: Fill these from the source.
+1.  **Article Title & URL**: Use the exact original URL as provided in the input. DO NOT modify, shorten, clean, or sanitize the URL in any way. Keep it exactly as given in the {{url}} parameter.
 2.  **Content Type**: Classify using the content type framework below. Use the decision framework and definitions provided.
 3.  **Scores**: Apply the scoring framework below to evaluate each dimension (0-5 scale), then calculate composite scores based on content type weightings.
 4.  **One-sentence summary**: A single, descriptive sentence that neutrally conveys the author's main point. Start with a strong, active verb.
 5.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
-6.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" – why is this important and what is the key takeaway?
+6.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" – why is this important and what is the key takeaway? For technical articles (tools, workflows, agent techniques), be specific and concrete about the techniques described. Avoid abstract generalizations - provide concrete details that distinguish this approach from others in the field.
 
 ---
 
