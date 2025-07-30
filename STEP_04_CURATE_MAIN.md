@@ -61,10 +61,24 @@ Create or update:
   - [ ] https://example.com/significant-development-2
   ```
 
+### 4. Generate Non-Main Sources List
+
+After main journal curation is complete, generate the list of remaining sources for annex consideration:
+
+```bash
+uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
+```
+
+This command:
+1. Extracts URLs from the curated main journal sources
+2. Removes those URLs from the complete source list
+3. Creates `workdesk/non_main_sources.md` with remaining URLs for annex review
+
 ## Verification
 
 - [ ] Confirm main journal sources represent the week's most important content
 - [ ] Verify no duplicate topics in curated list
+- [ ] Verify `workdesk/non_main_sources.md` contains remaining sources (should be ~121 URLs)
 
 ## Next Step
 

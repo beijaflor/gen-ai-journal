@@ -18,6 +18,14 @@ Find articles that provide:
 
 ## Curation Process
 
+### 0. Generate Unified Summaries for Non-Main Sources
+
+First, create the unified summaries file for easier review:
+
+```bash
+uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/non_main_unified_summaries.md
+```
+
 ### 1. Review Non-Main Sources
 
 For each URL in `non_main_sources.md`, reconsider with annex criteria:

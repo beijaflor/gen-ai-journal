@@ -78,6 +78,8 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 - `process_sources.py` - Sanitizes URLs (removes UTM parameters, duplicates) and assigns numbered IDs
 - `scripts/unite_summaries.py` - Gathers summaries from a list of URLs
 - `scripts/call-gemini.py` - One-shot URL summarization using Gemini
+- `scripts/list_urls.py` - Extract URLs from markdown files
+- `scripts/remove_urls.py` - Remove specific URLs from files (used with list_urls.py for workflow management)
 
 ### Output Structure
 ```

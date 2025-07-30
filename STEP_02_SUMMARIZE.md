@@ -49,7 +49,7 @@ After adding all your links, create a unified summary file for easier review:
 
 ```bash
 # Combine all summaries into one file
-awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
+uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md
 ```
 
 ## Summary Quality Control
