@@ -1,6 +1,6 @@
 # Step 5: Curate Annex Journal
 
-This step selects unique, non-obvious articles from the omitted sources for the annex journal - the "B-side" collection.
+This step selects unique, non-obvious articles from the non-main sources for the annex journal - the "B-side" collection.
 
 ## Objective
 
@@ -12,15 +12,23 @@ Find articles that provide:
 
 ## Input Files
 
-- **Source Pool:** `workdesk/omitted_sources.md` (rejected from main)
-- **Summaries:** `workdesk/unified_summaries.md` (for review)
+- **Source Pool:** `workdesk/non_main_sources.md` (rejected from main, candidates for annex)
+- **Summaries:** `workdesk/non_main_unified_summaries.md` (for review)
 - **Criteria:** `criteria/annex_curation_criteria.md`
 
 ## Curation Process
 
-### 1. Review Omitted Sources
+### 0. Generate Unified Summaries for Non-Main Sources
 
-For each URL in `omitted_sources.md`, reconsider with annex criteria:
+First, create the unified summaries file for easier review:
+
+```bash
+uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/non_main_unified_summaries.md
+```
+
+### 1. Review Non-Main Sources
+
+For each URL in `non_main_sources.md`, reconsider with annex criteria:
 
 - **Originality:** Does it offer a unique perspective or novel knowledge?
 - **Practical Value:** Does it provide actionable insights for experienced practitioners?
@@ -39,10 +47,7 @@ Example format:
 # Curated Annex Journal Sources
 
 - [ ] https://example.com/unconventional-approach
-  - 従来のベストプラクティスに挑戦する斬新なアプローチ。実装の複雑さとトレードオフを詳細に解説
-
 - [ ] https://example.com/niche-deep-dive
-  - ニッチだが重要な技術領域への深い洞察。メインストリームでは見過ごされがちな視点を提供
 ```
 
 ### 3. Maintain High Standards
@@ -59,7 +64,7 @@ It IS for:
 - Well-reasoned contrarian viewpoints
 - Deep technical explorations
 
-## Output File
+## Output Files
 
 Create or update:
 
@@ -72,7 +77,8 @@ Create or update:
 - [ ] Each selected article has a clear editorial comment
 - [ ] Selected articles offer genuine "B-side" value
 - [ ] No overlap with main journal selections
+- [ ] Sources not selected for annex are moved to final omitted_sources.md
 
 ## Next Step
 
-[STEP_05B_CREATE_FOCUSED_SUMMARIES.md](STEP_05B_CREATE_FOCUSED_SUMMARIES.md) - Create focused summary collections for each journal
+[STEP_06_CREATE_FOCUSED_SUMMARIES.md](STEP_06_CREATE_FOCUSED_SUMMARIES.md) - Create focused summary collections for each journal

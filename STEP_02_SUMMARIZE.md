@@ -1,45 +1,82 @@
-# Step 2: Summarize All Sources
-
-This step generates summaries for ALL sources before curation, allowing informed selection decisions.
+# Step 2: Summarization
 
 ## Overview
 
-This step has been split into two complementary processes:
+Summarization is now a manual process after checking links with `check_link.py`. This step documents how to generate summaries for your links.
 
-### 1. Orchestration Process
-**File:** [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md)
+## How to Generate Summaries
 
-Manages the overall batch summarization process:
-- Setup and directory preparation
-- Batch processing coordination
-- Progress tracking and quality control
-- Aggregation of all summaries
-- Final output generation
+After checking a link with `check_link.py` and adding it to `sources.md`:
 
-### 2. Individual Summarization Process
-**File:** [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md)
+1. **Use the One-Shot Script**:
+   ```bash
+   uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+   ```
 
-Details the process for summarizing a single URL:
-- Prompt generation for specific URLs
-- Gemini CLI execution with `gemini-2.5-flash` model
-- Summary file creation with `[number]_[sanitized_url].md` naming convention
-- Progress marking
-- Error handling and retry logic
+2. **How It Works**:
+   - Uses the @prompts/summarize.prompt template
+   - Calls Gemini API to generate the summary
+   - Outputs the summary to stdout (redirect to save)
 
-## Workflow
+3. **Update Progress** - Mark the link as processed in `workdesk/sources.md`
 
-1. **Start with Orchestration:** Follow [STEP_02_ORCHESTRATION.md](STEP_02_ORCHESTRATION.md) to set up and manage the overall process
-2. **Individual Processing:** The orchestration process calls [STEP_02_INDIVIDUAL_SUMMARIZE.md](STEP_02_INDIVIDUAL_SUMMARIZE.md) for each URL
-3. **Completion:** Return to orchestration for final aggregation and output
+## Manual Summarization (If Needed)
 
-## Output
+If you need to re-summarize a link or summarize without the full workflow:
 
-- **Directory Created:** `workdesk/summaries/` containing individual summary files with `[number]_[sanitized_url].md` naming
-- **File Created:** `workdesk/unified_summaries.md` (aggregated summaries)
-- **File Updated:** `workdesk/sources.md` (with `[x]` for successful summaries, `[!]` for failed URLs)
-- **Next Step:** [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md)
+```bash
+uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+```
 
-## Key Updates
+## Batch Processing Multiple Links
 
-- **Model:** Use `gemini-2.5-flash` (not `gemini-2.5-flash-lite-preview-06-17`)
-- **Naming:** Summary files now include link numbers: `001_domain_com_article.md`
+If you have multiple links in `workdesk/sources.md` that need summarization:
+
+### Option 1: Process One by One
+```bash
+# For each unchecked link in sources.md
+uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+```
+
+### Option 2: Use Batch Process
+Follow the batch processing workflow in:
+- [STEP_02A_ORCHESTRATION.md](STEP_02A_ORCHESTRATION.md) - For orchestrating batch summaries
+- [STEP_02B_INDIVIDUAL_SUMMARIZE.md](STEP_02B_INDIVIDUAL_SUMMARIZE.md) - For individual processing
+
+## Creating Unified Summaries
+
+After adding all your links, create a unified summary file for easier review:
+
+```bash
+# Combine all summaries into one file
+uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md
+```
+
+## Summary Quality Control
+
+Check your summaries for:
+- **Completeness** - Each summary should capture key points
+- **Language** - Summaries should be in Japanese (as per editorial guidelines)
+- **Structure** - Title, source URL, and main content should be present
+- **Relevance** - Summary should relate to GenAI/coding topics
+
+## Troubleshooting
+
+### If Summarization Fails
+1. Check internet connectivity
+2. Verify Gemini CLI is configured: `gemini --help`
+3. Check if the URL is accessible
+4. Review error messages in the console
+
+### Re-summarizing a Link
+1. Delete the existing summary file
+2. Run the summarize script again:
+   ```bash
+   uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+   ```
+
+## Next Steps
+
+Once all links are added and summarized:
+- Review `workdesk/unified_summaries.md` for overview
+- Continue to [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md)

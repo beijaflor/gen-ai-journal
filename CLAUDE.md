@@ -22,7 +22,7 @@ This repository creates weekly curated journals about Generative AI in coding, f
 - Follow consistent heading hierarchy (# ## ###)
 
 ## Scripts & Commands
-- Use `python3` for processing scripts
+- Use `uv run` for processing scripts
 - Key scripts: `process_sources.py`, `scripts/unite_summaries.py`
 - Always use absolute paths when referencing files
 
@@ -32,16 +32,25 @@ This repository creates weekly curated journals about Generative AI in coding, f
 mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 
 # Process and sanitize source URLs
-python3 process_sources.py workdesk/sources.md
+uv run process_sources.py workdesk/sources.md
+
+# One-shot URL summarization
+uv run scripts/call-gemini.py --url "https://example.com/article"
 
 # Aggregate summaries
-awk 'FNR==1 && NR!=1 {print "\n\n---\n\n"} 1' workdesk/summaries/*.md > workdesk/unified_summaries.md
+uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md
+
+# Generate non-main sources after main journal curation (STEP_04)
+uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
+
+# Generate unified summaries for non-main sources (STEP_05)
+uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/non_main_unified_summaries.md
 
 # Search for URL in markdown files
 grep -l "YOUR_URL_HERE" **/*.md
 
 # Sanitize URL (remove tracking params and fragments)
-python3 scripts/sanitize_url.py "URL_HERE"
+uv run scripts/sanitize_url.py "URL_HERE"
 ```
 
 # Workflow Management

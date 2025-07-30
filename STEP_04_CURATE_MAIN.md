@@ -14,6 +14,15 @@ Select articles that provide essential insights, significant developments, and h
 
 ## Curation Process
 
+**IMPORTANT** Read entire sources and pick from them and **NEVER** make up falsy URL.
+
+### 0. Prepare
+
+- [ ] Read and adopt the editorial persona from `EDITOR_PERSONALITY.md`
+  - Adopt the role of a **technical web application engineer** with startup mindset
+  - Focus on "why it matters" beyond just "what happened"
+  - Apply editorial judgment that is **visionary but grounded**
+
 ### 1. Review Each Article
 
 For each URL in the source list, review its summary and evaluate against the main journal criteria:
@@ -28,13 +37,12 @@ For each URL in the source list, review its summary and evaluate against the mai
 
 - **✅ Accept:** Article meets the criteria for main journal
   - Add URL to `workdesk/curated_journal_sources.md`
-  
-- **❌ Reject:** Article doesn't meet main journal standards
-  - Add URL to `workdesk/omitted_sources.md`
+- Selection should be counted from 18 to 25.
 
 ### 3. Avoid Common Pitfalls
 
 Do NOT include:
+
 - Surface-level tutorials or "getting started" guides
 - Pure marketing content or hype pieces
 - Duplicate coverage of the same topic
@@ -45,27 +53,33 @@ Do NOT include:
 Create or update:
 
 - [ ] `workdesk/curated_journal_sources.md`
+
   ```markdown
   # Curated Main Journal Sources
-  
+
   - [ ] https://example.com/important-article-1
   - [ ] https://example.com/significant-development-2
   ```
 
-- [ ] `workdesk/omitted_sources.md`
-  ```markdown
-  # Omitted Sources
-  
-  - [ ] https://example.com/basic-tutorial
-  - [ ] https://example.com/marketing-piece
-  ```
+### 4. Generate Non-Main Sources List
+
+After main journal curation is complete, generate the list of remaining sources for annex consideration:
+
+```bash
+uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
+```
+
+This command:
+1. Extracts URLs from the curated main journal sources
+2. Removes those URLs from the complete source list
+3. Creates `workdesk/non_main_sources.md` with remaining URLs for annex review
 
 ## Verification
 
 - [ ] Confirm main journal sources represent the week's most important content
 - [ ] Verify no duplicate topics in curated list
-- [ ] Ensure omitted sources are saved for annex consideration
+- [ ] Verify `workdesk/non_main_sources.md` contains remaining sources (should be ~121 URLs)
 
 ## Next Step
 
-[STEP_05_CURATE_ANNEX.md](STEP_05_CURATE_ANNEX.md) - Review omitted sources for annex journal
+[STEP_05_CURATE_ANNEX.md](STEP_05_CURATE_ANNEX.md) - Review non-main sources for annex journal
