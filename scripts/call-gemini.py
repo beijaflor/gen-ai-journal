@@ -149,6 +149,7 @@ def main():
                        help='Enable verbose logging')
     parser.add_argument('--no-cache', action='store_true',
                        help='Disable context caching for this request')
+    parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
     
     args = parser.parse_args()
     
@@ -243,7 +244,20 @@ def main():
     logging.debug(f"Final prompt being sent to Gemini:\n{'-'*60}\n{prompt}\n{'-'*60}")
     
     response = call_gemini(prompt, args.model, args.clean, args.no_cache)
-    print(response)
+    
+    # Output to file or stdout
+    if args.output:
+        try:
+            logging.info(f"Writing output to file: {args.output}")
+            with open(args.output, 'w', encoding='utf-8') as f:
+                f.write(response)
+            logging.info(f"Successfully wrote {len(response)} characters to {args.output}")
+        except IOError as e:
+            logging.error(f"Error writing to file {args.output}: {str(e)}")
+            print(f"Error writing to file {args.output}: {str(e)}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        print(response)
 
 if __name__ == '__main__':
     main()

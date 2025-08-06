@@ -13,12 +13,16 @@ from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 from pathlib import Path
 
 def sanitize_url(url):
-    """Removes UTM parameters and fragments from a URL."""
+    """Removes tracking parameters and fragments from a URL."""
     parsed_url = urlparse(url)
     query_params = parse_qs(parsed_url.query)
     
-    # Remove UTM parameters
-    sanitized_params = {k: v for k, v in query_params.items() if not k.startswith('utm_')}
+    # Remove common tracking parameters
+    tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source']
+    sanitized_params = {
+        k: v for k, v in query_params.items() 
+        if not any(k.startswith(prefix) for prefix in tracking_params)
+    }
     
     # Reconstruct the query string
     sanitized_query = urlencode(sanitized_params, doseq=True)
@@ -74,7 +78,7 @@ def main():
     print(f"Sanitized URL: {sanitized_url}")
     
     if url != sanitized_url:
-        print("Note: URL was modified (removed UTM params/fragments)")
+        print("Note: URL was modified (removed tracking params/fragments)")
     
     # Step 3: Check for duplicates
     duplicates = check_duplicate(sanitized_url)

@@ -35,7 +35,7 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 uv run process_sources.py workdesk/sources.md
 
 # One-shot URL summarization
-uv run scripts/call-gemini.py --url "https://example.com/article"
+uv run scripts/call-gemini.py --url "https://example.com/article" --output summary.md
 
 # Aggregate summaries
 uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md

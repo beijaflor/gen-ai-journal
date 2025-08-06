@@ -10,7 +10,7 @@ After checking a link with `check_link.py` and adding it to `sources.md`:
 
 1. **Use the One-Shot Script**:
    ```bash
-   uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+   uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/001_example_com_article.md
    ```
 
 2. **How It Works**:
@@ -25,7 +25,7 @@ After checking a link with `check_link.py` and adding it to `sources.md`:
 If you need to re-summarize a link or summarize without the full workflow:
 
 ```bash
-uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/001_example_com_article.md
 ```
 
 ## Batch Processing Multiple Links
@@ -35,7 +35,7 @@ If you have multiple links in `workdesk/sources.md` that need summarization:
 ### Option 1: Process One by One
 ```bash
 # For each unchecked link in sources.md
-uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/001_example_com_article.md
 ```
 
 ### Option 2: Use Batch Process
@@ -72,7 +72,7 @@ Check your summaries for:
 1. Delete the existing summary file
 2. Run the summarize script again:
    ```bash
-   uv run scripts/call-gemini.py --url "https://example.com/article" > workdesk/summaries/001_example_com_article.md
+   uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/001_example_com_article.md
    ```
 
 ## Next Steps
