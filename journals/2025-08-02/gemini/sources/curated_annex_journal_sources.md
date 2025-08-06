@@ -1,0 +1,96 @@
+# Curated Annex Journal Sources
+
+- [ ] https://zenn.dev/socialplus/articles/ai-powered-codemod-refactoring
+  - AIに`codemod`を生成させるという、大規模リファクタリングにおける実用的でユニークなアプローチ。
+- [ ] https://zenn.dev/loglass/articles/44800f230874f4
+  - AIプロダクト開発における「Day 1からの評価」の重要性を実体験に基づき解説。
+- [ ] https://note.com/suthio/n/n45a179642d7d
+  - AI導入による生産性向上のボトルネックが「レビュー」にあると指摘し、制約理論で解説。
+- [ ] https://zenn.dev/sunagaku/articles/02248660f4e33e
+  - AI駆動開発でのレビュー負荷を低減するための「設計の重要性」を説く、実践的な提言。
+- [ ] https://zenn.dev/spacemarket/articles/52dda5aaeecc65
+  - ジュニアエンジニア向けに、AI駆動開発での「出戻り」を防ぐための具体的な設計手法を解説。
+- [ ] https://zenn.dev/mizutani/articles/secmon-warren
+  - 生成AIを活用した新しいセキュリティ監視システム「Warren」の紹介。
+- [ ] https://zenn.dev/knowledgework/articles/ai-dev-enablement
+  - 開発組織でAI活用を推進した3ヶ月間の具体的な取り組みと成果。
+- [ ] https://zenn.dev/ml0_1337/articles/012da05fa06b9e
+  - Claude Codeのコンテキスト残量を常に表示させるための、非公式だが実用的なハック。
+- [ ] https://zenn.dev/mtdeity/articles/bf357a38f27faf
+  - 上記記事とは対照的に、Claude Codeのコンテキスト使用量を「公式機能」で表示する方法を解説。
+- [ ] https://zenn.dev/satoshissss/articles/0f720bfa4ac82d
+  - LLMの出力から構造化データを安定的に抽出するPythonライブラリ「LLM-Parser」の紹介。
+- [ ] https://zenn.dev/sc30gsw/articles/ff81891959aaef
+  - Claude Codeを10倍賢くすると謳う無料ツール「Serena」の紹介とトークン効率化術。
+- [ ] https://zenn.dev/uniformnext/articles/tsumiki-claude-code
+  - Claude Code向けのAI駆動TDDフレームワーク「Tsumiki」の実践的な紹介。
+- [ ] https://zenn.dev/aldagram_tech/articles/3099d55dabd6ac
+  - 生成AIを用いたテスト設計の精度を最大化するための3つの「勘所」を解説。
+- [ ] https://zenn.dev/snaga/articles/2025-07-26-kiro-gemini
+  - Kiroのようなスペック駆動開発をGemini-CLIで実践するユニークな試み。
+- [ ] https://zenn.dev/oikon/articles/kiro-and-aitools
+  - Kiroの登場を機に、AIコーディングツールの潮流と開発規模に応じた活用戦略を考察。
+- [ ] https://zenn.dev/mixi/articles/5310ae6203511e
+  - Kiroの計画能力とClaude Codeの実装能力を組み合わせる、ハイブリッドなAI活用法。
+- [ ] https://zenn.dev/daichi_nakano/articles/d746a925fe5e4e
+  - Claude CodeとGit Worktreeを組み合わせ、複数のIssueを並行してこなす自動化ワークフロー。
+- [ ] https://zenn.dev/tacoms/articles/552140c84aaefa
+  - Claude CodeのSub agents機能でコンテキスト枯渇問題を解決する実践的なアプローチ。
+- [ ] https://zenn.dev/moritalous/items/274ea58bce3ccef1589b
+  - Sub agentsを使い、モノリシックなコードを関心事に基づいて分割するリファクタリング手法。
+- [ ] https://qiita.com/y-kas_atmark/items/79cbf16c2055942009db
+  - Sub agentsにPRレビューをさせるという、コードレビュー自動化の具体的な実践例。
+- [ ] https://qiita.com/makishy/items/b1ffe49e36be4c68d40e
+  - Sub agentsにReactコンポーネントの設計レビューをさせる、ニッチだが強力な活用法。
+- [ ] https://qiita.com/take-yoda/items/9281e3e58739ebc1bed7
+  - Sub agentsによるテストコードの自動生成という、開発効率を劇的に向上させる可能性を秘めたテーマ。
+- [ ] https://qiita.com/HERUESTA/items/1c79678edbd371662cdb
+  - Sub agentsを使い、仕様書からテスト項目を自動生成するという、上流工程の自動化アプローチ。
+- [ ] https://qiita.com/kashiwazaki_kimio/items/cff2ded83a0952442b26
+  - Sub agentsとMermaid.jsで、テーブル定義書からER図を自動生成する、ドキュメント作成の自動化。
+- [ ] https://qiita.com/zazen_inu/items/cf5f4b42fafd190257e0
+  - Sub agentsとMermaid.jsで、コードや仕様書からシーケンス図を自動生成する、システム理解の促進。
+- [ ] https://qiita.com/Yu_NO/items/fe5a1036e31bf8c38ab2
+  - Sub agentsとMermaid.jsで、仕様書やコードから状態遷移図を自動生成する、複雑な状態管理の可視化。
+- [ ] https://qiita.com/Nana_777/items/84e3d2fd3ee793ac0083
+  - Sub agentsとMermaid.jsで、ソースコードからクラス図を自動生成する、OOP設計の可視化。
+- [ ] https://qiita.com/hirokiii27/items/d3d1ac5995ea08a40787
+  - Sub agentsとMermaid.jsで、IaCコードからインフラ構成図を自動生成する、クラウドアーキテクチャの可視化。
+- [ ] https://zenn.dev/dress_code/articles/be0aaf9be396a4
+  - Sub agentsを使い、曖昧な要求から構造化された要件定義書を自動生成する、開発上流工程の効率化。
+- [ ] https://techblog.zozo.com/entry/technologies-supporting-company-wide-use-of-gemini-cli
+  - 全社的なGemini CLI活用を支えるための、認証・認可、コスト管理などを解決する内製プロキシサーバーの構築事例。
+- [ ] https://voluntas.ghost.io/review-system-with-claude-code-action-after-one-month/
+  - Claude Code Actionによるレビューシステムを1ヶ月運用した、具体的なメリット・デメリットのレポート。
+- [ ] https://www.m3tech.blog/entry/2025/07/27/110745
+  - Devinを2ヶ月間チーム導入した、具体的な成果と得意・不得意領域の詳細な報告。
+- [ ] https://tech-blog.tabelog.com/entry/using-cursor-to-prevent-document-corruption
+  - Cursorによるドキュメント破損を防ぐための、`.cursor-ignore`と`.cursor-rules`の具体的な活用法。
+- [ ] https://tech-blog.abeja.asia/entry/declarative-ai-coding-202507
+  - AIコーディングのパラダイムシフトとして、「宣言的AIコーディング」を提唱。
+- [ ] https://www.yasuhisay.info/entry/2025/07/26/142358
+  - Claude Codeのフックを書きやすくする自作ツール`cchook`の紹介。
+- [ ] https://dev.classmethod.jp/articles/claude-code-grafana-mcp-sample-dashboard/
+  - GrafanaのMCPサーバーをClaude Codeから利用し、自然言語でダッシュボードを操作するデモ。
+- [ ] https://note.com/npaka/n/n6baefe7dd1d5
+  - Claude Codeを強化するCLIツール「Superclaude」の紹介。
+- [ ] https://dev.classmethod.jp/articles/claude-code-superclaude/
+  - Superclaudeの具体的な使用感と、開発ワークフローへの統合方法。
+- [ ] https://blog.sentry.io/evals-are-just-tests-so-why-arent-engineers-writing-them/
+  - AIモデルの評価（Evals）を、開発者が書くべき「テスト」として再定義する提言。
+- [ ] https://www.publickey1.jp/blog/25/aidell_ai_code_assistant.html
+  - AWS特化のAIコーディングアシスタント「AIDell」の登場。
+- [ ] https://www.publickey1.jp/blog/25/devinwindsurf_devin_meetup_tokyo_2025.html
+  - 自律型AIエージェント「Devin」の競合、「DevinWindsurf」の登場。
+- [ ] https://prtimes.jp/main/html/rd/p/000000167.000043114.html
+  - サーバーワークスによる「AIDell」のプレスリリース。
+- [ ] https://zenn.dev/smartshopping/articles/b3d6804e932565
+  - DifyとClaude3を連携させ、ECサイトのレビュー分析を自動化する事例。
+- [ ] https://gigazine.net/news/20250731-tsunami-warning-ai/
+  - AIを活用した津波警報の精度向上に関する研究。
+- [ ] https://acro-engineer.hatenablog.com/entry/2025/08/01/120000
+  - Claude CodeのSubAgent機能を活用した具体的な開発効率化の事例。
+- [ ] https://zenn.dev/rakushaking/articles/0abc3127206049
+  - Claude CodeのSubAgent機能を用いて、タスク管理を自動化する試み。
+- [ ] https://zenn.dev/satoshissss/articles/0f720bfa4ac82d
+  - LLMの出力から構造化データを抽出するライブラリ「LLM-Parser」の紹介。

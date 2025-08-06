@@ -1,0 +1,27 @@
+# Curated Main Journal Sources
+
+- [ ] https://syu-m-5151.hatenablog.com/entry/2025/07/29/195608
+- [ ] https://research.eye.security/how-we-rooted-copilot/
+- [ ] https://zenn.dev/mizchi/articles/opencode-with-kimi-k2
+- [ ] https://www.wired.com/story/anthropic-revokes-openais-access-to-claude/
+- [ ] https://developers.cyberagent.co.jp/blog/archives/58276/
+- [ ] https://zenn.dev/mizchi/articles/smoke-review-for-filtering-context
+- [ ] https://www.suffsyed.com/futurememo/why-im-leaving-design
+- [ ] https://hi120ki.github.io/ja/blog/posts/20250728/
+- [ ] https://zenn.dev/studio/articles/00c3002e93adb1
+- [ ] https://blog.sentry.io/smarter-debugging-sentry-mcp-cursor/
+- [ ] https://socket.dev/blog/introducing-socket-mcp-for-claude-desktop
+- [ ] https://vercel.com/blog/ai-sdk-5
+- [ ] https://uxdesign.cc/claudes-search-for-an-accessible-color-triad-e07f7d8aab2e
+- [ ] https://www.lukew.com/ff/entry.asp?2112
+- [ ] https://linear.app/developers/aig
+- [*] https://voltagent.dev/blog/claude-code-subagents/
+- [ ] https://arnon.dk/the-14-pains-of-billing-ai-agents/
+- [ ] https://www.henrypray.com/writings/the-three-layers-of-roi-for-ai-agents
+- [ ] https://angadh.com/contradictions-1
+- [ ] https://zenn.dev/furunag/articles/claude-code-quality-regression-analysis
+- [ ] https://zenn.dev/himara2/articles/c2835dd77bd743
+- [ ] https://kakehashi-dev.hatenablog.com/entry/2025/07/29/140000
+- [ ] https://zenn.dev/mkj/articles/ad09e127e72b6d
+- [ ] https://pdelboca.me/writings/2025/08/01/vibe-coding-fast-fashion.html
+- [ ] https://vibeinsecurity.com/

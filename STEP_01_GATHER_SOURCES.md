@@ -40,7 +40,7 @@ After checking a link is unique:
 
 2. **Generate Summary** - Use the one-shot script:
    ```bash
-   uv run scripts/call-gemini.py --url "https://example.com/article1" > workdesk/summaries/001_example_com_article1.md
+   uv run scripts/call-gemini.py --url "https://example.com/article1" --output workdesk/summaries/001_example_com_article1.md
    ```
 
 3. **Mark as Processed** - Update the checkbox in sources.md:
@@ -69,7 +69,7 @@ You can check and add links throughout the week as you discover them:
 2. **If unique, add to sources.md and generate summary**:
    ```bash
    # Add to sources.md manually, then:
-   uv run scripts/call-gemini.py --url "https://blog.example.com/ai-agents-2025" > workdesk/summaries/001_blog_example_com_ai_agents_2025.md
+   uv run scripts/call-gemini.py --url "https://blog.example.com/ai-agents-2025" --output workdesk/summaries/001_blog_example_com_ai_agents_2025.md
    ```
 
 ## Progress Tracking with GitHub Issues
