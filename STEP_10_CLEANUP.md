@@ -33,9 +33,9 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 Move completed journal files:
 
 ```bash
-# Archive main and annex journals
-mv workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
-mv workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/
+# Archive main and annex journals with proper naming
+mv workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/00_weekly_journal_YYYY_MM_DD.md
+mv workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/01_annex_journal_YYYY_MM_DD.md
 ```
 
 ### 3. Archive Source Materials
@@ -62,13 +62,9 @@ Move summary files and create archive summaries:
 # Archive all individual summaries
 mv workdesk/summaries/* journals/YYYY-MM-DD/summaries/
 
-# Archive unified summaries with clear naming
-if [ -f workdesk/unified_summaries_main.md ]; then
-    mv workdesk/unified_summaries_main.md journals/YYYY-MM-DD/01_main_summaries.md
-fi
-
-if [ -f workdesk/unified_summaries_annex.md ]; then
-    mv workdesk/unified_summaries_annex.md journals/YYYY-MM-DD/01_annex_summaries.md
+# Archive unified summaries (complete reference)
+if [ -f workdesk/unified_summaries.md ]; then
+    mv workdesk/unified_summaries.md journals/YYYY-MM-DD/99_unified_summaries.md
 fi
 
 if [ -f workdesk/omitted_summaries_unified.md ]; then
@@ -83,6 +79,8 @@ Remove temporary and working files:
 ```bash
 # Clean workdesk of completed work
 rm -f workdesk/unified_summaries.md
+rm -f workdesk/unified_summaries_main.md
+rm -f workdesk/unified_summaries_annex.md
 rm -f workdesk/reviewed_*.md
 rm -f workdesk/*.md
 
@@ -98,11 +96,10 @@ The completed archive should look like:
 
 ```
 journals/YYYY-MM-DD/
-├── weekly_journal_YYYY_MM_DD.md      # Main journal (publication-ready)
-├── annex_journal_YYYY_MM_DD.md       # Annex journal (publication-ready)
-├── 01_main_summaries.md              # Unified summaries for main journal
-├── 01_annex_summaries.md             # Unified summaries for annex journal
+├── 00_weekly_journal_YYYY_MM_DD.md   # Main journal (publication-ready)
+├── 01_annex_journal_YYYY_MM_DD.md    # Annex journal (publication-ready)
 ├── 02_omitted_summaries.md           # Summaries of omitted articles
+├── 99_unified_summaries.md           # All unified summaries (complete reference)
 ├── sources/
 │   ├── original_sources.md           # Original source list with all URLs
 │   ├── curated_journal_sources.md    # Main journal selected URLs

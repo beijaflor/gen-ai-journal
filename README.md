@@ -85,14 +85,16 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 ```
 journals/
 └── YYYY-MM-DD/
-    ├── weekly_journal_YYYY_MM_DD.md    # Main journal
-    ├── annex_journal_YYYY_MM_DD.md     # Annex journal
+    ├── 00_weekly_journal_YYYY_MM_DD.md # Main journal
+    ├── 01_annex_journal_YYYY_MM_DD.md  # Annex journal
+    ├── 02_omitted_summaries.md         # Summaries of omitted articles
+    ├── 99_unified_summaries.md         # All unified summaries (complete reference)
     ├── sources/
-    │   ├── curated_journal_sources.md
-    │   ├── curated_annex_journal_sources.md
-    │   ├── non_main_sources.md          # Sources not in main (annex candidates)
-    │   └── omitted_sources.md           # Sources truly omitted from both journals
+    │   ├── original_sources.md         # Original source list with all URLs
+    │   ├── curated_journal_sources.md  # Main journal selected URLs
+    │   ├── curated_annex_journal_sources.md # Annex journal selected URLs
+    │   └── omitted_sources.md          # Sources truly omitted from both journals
     └── summaries/
-        └── [individual summary files]
+        └── [individual summary files]   # All individual AI-generated summaries
 ```
 
