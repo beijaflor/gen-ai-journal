@@ -50,7 +50,7 @@ mv workdesk/omitted_urls.md journals/YYYY-MM-DD/sources/omitted_sources.md
 
 # Archive original sources if available
 if [ -f workdesk/sources.md ]; then
-    cp workdesk/sources.md journals/YYYY-MM-DD/sources/original_sources.md
+    cp workdesk/sources.md journals/YYYY-MM-DD/sources/sources.md
 fi
 ```
 
@@ -101,7 +101,7 @@ journals/YYYY-MM-DD/
 ├── 02_omitted_summaries.md           # Summaries of omitted articles
 ├── 99_unified_summaries.md           # All unified summaries (complete reference)
 ├── sources/
-│   ├── original_sources.md           # Original source list with all URLs
+│   ├── sources.md                    # Original source list with all URLs
 │   ├── curated_journal_sources.md    # Main journal selected URLs
 │   ├── curated_annex_journal_sources.md  # Annex journal selected URLs
 │   └── omitted_sources.md            # URLs not included in either journal

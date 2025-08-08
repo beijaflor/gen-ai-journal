@@ -8,31 +8,31 @@ This project follows a systematic workflow to create weekly journals using branc
 
 ```mermaid
 graph LR
-    A[0. Create Branch] --> B[1. Add Links]
-    B --> C[2. Review & Categorize]
-    C --> D[3. Prepare Working Files]
-    D --> E[4. Curate Main Journal]
-    E --> F[5. Curate Annex Journal]
-    F --> G[6. Create Focused Summaries]
-    G --> H[7. Review & Refine]
-    H --> I[8. Assemble Final Journals]
-    I --> J[9. Verify URLs & Quality]
+    A[00. Create Branch] --> B[01. Add Links]
+    B --> C[02. Summarization]
+    C --> D[03. Prepare Working Files]
+    D --> E[04. Curate Main Journal]
+    E --> F[05. Curate Annex Journal]
+    F --> G[06. Create Focused Summaries]
+    G --> H[07. Review & Refine]
+    H --> I[08. Assemble Final Journals]
+    I --> J[09. Verify URLs & Quality]
     J --> K[10. Archive & Cleanup]
     K --> L[11. Merge to Main]
 ```
 
 ## Workflow Steps
 
-0. **[Create Branch](STEP_00_CREATE_BRANCH.md)** - Create dedicated branch for journal week
-1. **[Add Links Individually](STEP_01_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
-2. **[Summarization](STEP_02_SUMMARIZE.md)** - Now integrated into link addition (documentation for special cases)
-3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
-4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 primary articles based on editorial criteria
-5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
-6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
-7. **[Review & Refine](STEP_07_REVIEW.md)** - Edit and polish selected summaries with editorial voice
-8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
-9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
+00. **[Create Branch](STEP_00_CREATE_BRANCH.md)** - Create dedicated branch for journal week
+01. **[Add Links Individually](STEP_01_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
+02. **[Summarization](STEP_02_SUMMARIZE.md)** - Now integrated into link addition (documentation for special cases)
+03. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
+04. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 primary articles based on editorial criteria
+05. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
+06. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
+07. **[Review & Refine](STEP_07_REVIEW.md)** - Edit and polish selected summaries with editorial voice
+08. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
+09. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 11. **[Merge to Main](STEP_11_MERGE.md)** - Create PR and merge completed journal to main branch
 
@@ -90,7 +90,7 @@ journals/
     ├── 02_omitted_summaries.md         # Summaries of omitted articles
     ├── 99_unified_summaries.md         # All unified summaries (complete reference)
     ├── sources/
-    │   ├── original_sources.md         # Original source list with all URLs
+    │   ├── sources.md                   # Original source list with all URLs
     │   ├── curated_journal_sources.md  # Main journal selected URLs
     │   ├── curated_annex_journal_sources.md # Annex journal selected URLs
     │   └── omitted_sources.md          # Sources truly omitted from both journals

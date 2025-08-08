@@ -1,8 +1,10 @@
-# Step 2: Summarization
+# Step 2: Summarization (Legacy - Now Integrated into Step 1)
+
+**Note: As of the current workflow, summarization is now integrated into STEP_01_GATHER_SOURCES.md. This document is maintained for reference and special cases.**
 
 ## Overview
 
-Summarization is now a manual process after checking links with `check_link.py`. This step documents how to generate summaries for your links.
+Summarization is now a manual process after checking links with `check_link.py`. This step documents how to generate summaries for your links when the automated process in Step 1 needs manual intervention.
 
 ## How to Generate Summaries
 
@@ -39,9 +41,7 @@ uv run scripts/call-gemini.py --url "https://example.com/article" --output workd
 ```
 
 ### Option 2: Use Batch Process
-Follow the batch processing workflow in:
-- [STEP_02A_ORCHESTRATION.md](STEP_02A_ORCHESTRATION.md) - For orchestrating batch summaries
-- [STEP_02B_INDIVIDUAL_SUMMARIZE.md](STEP_02B_INDIVIDUAL_SUMMARIZE.md) - For individual processing
+For batch processing multiple links, repeat Option 1 for each link, or use the main workflow in STEP_01_GATHER_SOURCES.md.
 
 ## Creating Unified Summaries
 
