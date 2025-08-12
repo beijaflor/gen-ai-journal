@@ -1,0 +1,26 @@
+# Curated Main Journal Sources
+
+- [ ] https://simonwillison.net/2025/Aug/5/gpt-oss/
+- [ ] https://openai.com/ja-JP/index/introducing-gpt-oss/
+- [ ] https://github.com/openai/harmony
+- [ ] https://vercel.com/changelog/claude-4-1-opus-is-now-supported-in-vercel-ai-gateway
+- [ ] https://bufferings.hatenablog.com/entry/2025/08/03/221719
+- [ ] https://malwaretech.com/2025/08/every-reason-why-i-hate-ai.html
+- [ ] https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/
+- [ ] https://blog.shibayu36.org/entry/2025/08/04/173000
+- [ ] https://ashtom.github.io/developers-reinvented
+- [ ] https://www.devroom.io/2025/08/08/programming-with-ai-youre-probably-doing-it-wrong/
+- [ ] https://hvpandya.com/super-ic
+- [ ] https://vercel.com/blog/v0-vibe-coding-securely
+- [ ] https://www.mitsue.co.jp/knowledge/column/20250808.html
+- [ ] https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives
+- [ ] https://www.anthropic.com/research/persona-vectors
+- [ ] https://glthr.com/model-collapse-and-the-need-for-human-generated-training-data
+- [ ] https://web.archive.org/web/20250808050953/https://prtimes.jp/main/html/rd/p/000000002.000113283.html
+- [ ] https://zenn.dev/contrea/articles/d18ee9447a9366
+- [ ] https://ca-srg.dev/2404358b43f78112b154d25022a199d3
+- [ ] https://github.blog/ai-and-ml/generative-ai/automate-your-project-with-github-models-in-actions/
+- [ ] https://zenn.dev/yumemi_inc/articles/e4ff61a38adebc
+- [ ] https://qiita.com/nagasunari/items/6934369c178bb8c15474
+- [ ] https://qiita.com/hisaho/items/06e69e1966ca17cb1602
+- [ ] https://note.com/genkaijokyo/n/n2b476e6bf485
