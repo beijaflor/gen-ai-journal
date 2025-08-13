@@ -1,6 +1,6 @@
 # Project Overview
 
-This repository creates weekly curated journals about Generative AI in coding, following a systematic 8-step workflow.
+This repository creates weekly curated journals about Generative AI in coding, following a systematic 12-step workflow.
 
 # Editorial Guidelines
 
@@ -11,7 +11,7 @@ This repository creates weekly curated journals about Generative AI in coding, f
 
 ## File Organization
 - Journal entries: `journals/YYYY-MM-DD/` directory structure
-- Workflow steps: `STEP_01_*.md` through `STEP_08_*.md` files
+- Workflow steps: `STEP_00_*.md` through `STEP_11_*.md` files
 - Curation criteria: `criteria/` directory
 
 # Code Style & Tools
@@ -44,7 +44,7 @@ uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdes
 uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
 
 # Generate unified summaries for non-main sources (STEP_05)
-uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/non_main_unified_summaries.md
+uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/unified_summaries_annex.md
 
 # Search for URL in markdown files
 grep -l "YOUR_URL_HERE" **/*.md
@@ -56,7 +56,7 @@ uv run scripts/sanitize_url.py "URL_HERE"
 # Workflow Management
 
 ## Step Execution
-- Follow workflow steps sequentially: STEP_01 → STEP_08
+- Follow workflow steps sequentially: STEP_00 → STEP_11
 - Update TodoWrite frequently to track progress
 - Mark steps complete only when fully finished
 
