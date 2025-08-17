@@ -1,0 +1,34 @@
+# Curated Annex Journal Sources
+
+- [ ] https://www.instantdb.com/essays/gpt_5_vs_opus_4
+  - コメント: GPT-5とOpus 4.1という最新モデルを、Vibe Codingという具体的なユースケースで直接比較しており、単なるベンチマークではない実践的な性能差がわかる。特に両モデルの「探索的」対「厳格」という挙動の違いは、ツール選定の参考になる。
+- [ ] https://honneylab.hatenablog.jp/entry/2025/08/12/140752
+  - コメント: AIを使い、未知のバイナリフォーマットを対話形式で解析・プログラムを生成する過程は、リバースエンジニアリングというニッチだが奥深い領域でのAI活用の可能性を示す好例。開発者の試行錯誤をAIがどう支援するかが具体的にわかる。
+- [ ] https://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid
+  - コメント: AIによる生産性向上の裏で、開発者がいかに思考停止に陥り、セキュリティ意識が低下するかを実体験に基づき赤裸々に語る。主流のAI礼賛とは一線を画す、重要な自己批判的視点を提供する。
+- [ ] https://www.baka-ke.com/2025/08/11/javascript-and-llm/
+  - コメント: 主要LLMがJavaScriptで動的に生成されたコンテンツを読めないという実験結果は、SPAが主流の現代Web開発において、AI連携を考える上で極めて重要な技術的制約を明らかにしており、実践的価値が高い。
+- [ ] https://middlelayer.substack.com/p/i-claude-is-the-drug-cursor-is-the
+  - コメント: AIアプリのビジネスモデルを「ドラッグの売人」に喩える独自の視点で、基盤モデルへの依存という構造的脆弱性を鋭く指摘。技術者が見落としがちな、AIエコシステムの経済的力学を理解する上で示唆に富む。
+- [ ] https://www.joshbeckman.org/blog/practicing/ui-vs-api-vs-uai
+  - コメント: UI、APIに続く第三のインターフェースとして「UAI (User Agent Interface)」を提唱。AIエージェント時代のアプリケーション設計において、開発者が持つべき新しい設計思想と抽象化の重要性を提示している。
+- [ ] https://dwyer.co.za/static/claude-code-is-all-you-need.html
+  - コメント: 「vibe coding」という手法を提唱し、Claude Codeを自律型エージェントとして活用した具体的な成功・失敗事例を詳細に報告。ツールの限界とポテンシャルを深く探求しており、上級者向けの示唆に富む。
+- [ ] https://policykahani.substack.com/p/a-chatgpt-pro-subscription-costs
+  - コメント: AIツールの価格が、低所得国では数年分の収入に相当するというデータに基づき、「AIアクセス格差」というグローバルな問題を提起。技術中心の議論から離れ、AIの社会経済的影響を考える重要な視点。
+- [ ] https://zenn.dev/rgbkids/articles/6773cb8f146f15
+  - コメント: READMEに情報を詰め込む従来の手法を批判し、AIエージェントが読みやすいようにドキュメントを構造化し、カスタムコマンドで連携させる「Viable Coding」という新しい開発フローを提案。AI時代のプロジェクト管理術として独創的。
+- [ ] https://zenn.dev/bita/articles/df3e289155005d
+  - コメント: AI生成コードの品質課題に対し、AI Readyなリンター「Ultracite」を導入し、AI自身にルールを遵守させるという解決策が極めて実践的。AI開発における品質管理の新しいアプローチを提示している。
+- [ ] https://p-shirokuma.hatenadiary.com/entry/20250811/1754914431
+  - コメント: 「#keep4o」騒動を社会学的な「面目行為」の観点から分析し、AIの社会普及には人間的なコミュニケーションプロトコルが不可欠だと論じる。技術的性能だけでなく、AIの「人格」の重要性を深く考察したユニークな視点。
+- [ ] https://nowokay.hatenablog.com/entry/2025/08/11/152751
+  - コメント: GPT-5とSonnet 4のコーディング能力を比較しつつ、モデル性能とは別に「ChatGPTというサービスがツールとして使い物にならない」具体的な理由を列挙。モデルとツールのUXを切り分けて評価する、開発者ならではの鋭い批判。
+- [ ] https://github.com/anthropics/claude-code/issues/3382
+  - コメント: GitHubのIssueという一次情報源から、Claude Codeがデバッグにおいて根本原因を無視しがちであるという、AIの具体的な限界を指摘。ツールの弱点を理解し、批判的に利用する上で非常に価値がある。
+- [ ] https://zenn.dev/yuma_prog/articles/deisui-vibecoding
+  - コメント: 「泥酔バイブコーディング」という一見奇抜な試みから、「酔っていても使えるUIこそ真のUI」というAIツールのUI/UXに関する本質的な洞察を引き出している。常識にとらわれない発想から価値を見出す好例。
+- [ ] https://zenn.dev/socialdog/articles/claude-code-with-git-grep
+  - コメント: `git grep`という古典的なCLIツールと最新AIを組み合わせ、大規模コードベースでのコンテキスト注入問題を解決する。新旧技術を融合させた、極めて実践的で効果的な「ハック」。
+- [ ] https://zenn.dev/oikon/articles/obsidian-claude-code
+  - コメント: Obsidianに蓄積した断片的なメモを、Claude Codeを使って構造化されたドキュメントに昇華させるという、個人のナレッジマネジメントを革新する具体的なワークフローを提示。多くの開発者が直面する課題への実践的な解決策。

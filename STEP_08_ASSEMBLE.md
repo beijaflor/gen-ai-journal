@@ -40,9 +40,12 @@ Edit `workdesk/weekly_journal_YYYY_MM_DD.md`:
 
 - [ ] **Add Article Sections:**
   - Include each refined summary from main summaries
+  - **Verify all URLs from `workdesk/curated_journal_sources.md` are covered**
+  - Cross-reference summaries with source list to ensure complete coverage
   - Organize by theme, importance, or logical flow
   - Add section headers as needed
   - Ensure smooth transitions between articles
+  - **Add source links for each article/section referencing the original URLs**
 
 - [ ] **Add Closing Section:**
   - Brief wrap-up or forward-looking perspective
@@ -70,11 +73,37 @@ Edit `workdesk/annex_journal_YYYY_MM_DD.md`:
 
 - [ ] **Add Article Sections:**
   - Include refined summaries from annex summaries
+  - **Verify all URLs from `workdesk/curated_annex_journal_sources.md` are covered**
+  - Cross-reference summaries with annex source list to ensure complete coverage
   - Maintain the "B-side" experimental character
   - Include editorial comments explaining selection rationale
   - Highlight contrarian viewpoints or emerging trends
+  - **Add source links for each article/section referencing the original URLs**
 
-### 3. Format and Polish
+### 3. Source Coverage Verification
+
+- [ ] **Main Journal Coverage Check:**
+  ```bash
+  # Compare curated sources with journal content
+  grep -o 'https://[^)]*' workdesk/curated_journal_sources.md > main_sources.txt
+  grep -o 'https://[^)]*' workdesk/weekly_journal_YYYY_MM_DD.md > main_journal_urls.txt
+  # Verify all sources are covered
+  ```
+
+- [ ] **Annex Journal Coverage Check:**
+  ```bash
+  # Compare annex sources with annex journal content
+  grep -o 'https://[^)]*' workdesk/curated_annex_journal_sources.md > annex_sources.txt
+  grep -o 'https://[^)]*' workdesk/annex_journal_YYYY_MM_DD.md > annex_journal_urls.txt
+  # Verify all sources are covered
+  ```
+
+- [ ] **Missing Source Identification:**
+  - Identify any URLs in source lists not referenced in journals
+  - Add missing article summaries or ensure intentional omission
+  - Document reasons for any intentionally omitted sources
+
+### 4. Format and Polish
 
 - [ ] **Consistent Formatting:**
   - Uniform heading levels (# ## ###)
@@ -102,6 +131,9 @@ Final journals must:
 - [ ] Provide value beyond simple article summaries
 - [ ] Be ready for publication without further editing
 - [ ] Include working links and proper formatting
+- [ ] **Cover ALL URLs from corresponding source lists (main: `curated_journal_sources.md`, annex: `curated_annex_journal_sources.md`)**
+- [ ] **Include source references for each article/section**
+- [ ] **Verify no source URLs are missing from the final journals**
 
 ## Output Files
 

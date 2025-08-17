@@ -18,7 +18,8 @@ graph LR
     H --> I[08. Assemble Final Journals]
     I --> J[09. Verify URLs & Quality]
     J --> K[10. Archive & Cleanup]
-    K --> L[11. Merge to Main]
+    K --> L[11. Create Pull Request]
+    L --> M[12. Tag & Publish]
 ```
 
 ## Workflow Steps
@@ -34,7 +35,8 @@ graph LR
 08. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
 09. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
-11. **[Merge to Main](STEP_11_MERGE.md)** - Create PR and merge completed journal to main branch
+11. **[Create Pull Request](STEP_11_PULL_REQUEST.md)** - Create PR for completed journal (human handles merge)
+12. **[Tag & Publish](STEP_12_TAG_PUBLISH.md)** - Tag release and publish journal after merge
 
 ## Quick Start
 
