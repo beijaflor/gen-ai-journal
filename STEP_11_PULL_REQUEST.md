@@ -1,9 +1,9 @@
-# Step 11: Merge to Main
+# Step 11: Create Pull Request
 
 ## Overview
-Create a pull request and merge the completed journal to the main branch after final review.
+Create a pull request for the completed journal. The human reviewer will handle the merge to main branch after review.
 
-## Pre-merge Checklist
+## Pre-PR Checklist
 - [ ] All journal files are in `journals/YYYY-MM-DD/` directory
 - [ ] Workdesk is cleaned up (sources and summaries archived)
 - [ ] URLs verified and working
@@ -51,29 +51,14 @@ EOF
 )"
 ```
 
-### Merge and cleanup
-```bash
-# After PR approval, merge and cleanup
-gh pr merge --squash
-git checkout main
-git pull origin main
-git branch -d journal/YYYY-MM-DD
-```
+## What Happens Next
 
-## Alternative: Direct merge (if no review needed)
-```bash
-git checkout main
-git merge journal/YYYY-MM-DD
-git push origin main
-git branch -d journal/YYYY-MM-DD
-```
-
-## Post-merge Tasks
-- [ ] Verify journal appears correctly on main branch
-- [ ] Clean up any remaining local branches
-- [ ] Update tracking/status files if needed
+After creating the pull request:
+1. **Human Review**: The human reviewer will examine the journal content and quality
+2. **Merge Decision**: Human will merge the PR when ready to publish
+3. **Publication**: After merge, proceed to [STEP_12_TAG_PUBLISH.md](STEP_12_TAG_PUBLISH.md) for tagging and publication
 
 ## Notes
-- Use pull request for quality review and team collaboration
-- Squash merge keeps clean history on main branch
-- Branch deletion prevents accumulation of stale branches
+- Pull request enables quality review and collaborative editing
+- Human retains control over publication timing
+- Branch will be cleaned up in STEP_12 after successful publication
