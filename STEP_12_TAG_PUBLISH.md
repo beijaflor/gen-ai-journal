@@ -26,7 +26,7 @@ ls -la journals/YYYY-MM-DD/
 ### 3. Create Release Tag
 ```bash
 # Create semantic version tag based on journal date
-git tag -a "2025.08.16" -m "Weekly GenAI Journal - August 16, 2025
+git tag -a "2025-08-16" -m "Weekly GenAI Journal - August 16, 2025
 
 ## Summary
 - Main journal: X high-impact articles
@@ -41,7 +41,7 @@ git tag -a "2025.08.16" -m "Weekly GenAI Journal - August 16, 2025
 Co-Authored-By: Claude <noreply@anthropic.com>"
 
 # Push the tag to remote
-git push origin 2025.08.16
+git push origin 2025-08-16
 ```
 
 ### 4. Cleanup Feature Branch
@@ -54,7 +54,7 @@ git push origin --delete journal/YYYY-MM-DD
 ### 5. Optional: Create GitHub Release
 ```bash
 # Create a GitHub release from the tag (optional)
-gh release create 2025.08.16 \
+gh release create 2025-08-16 \
   --title "GenAI Weekly Journal - August 16, 2025" \
   --notes "Weekly curated journal of AI and coding developments. See journals/2025-08-16/ for full content."
 ```
@@ -73,20 +73,20 @@ gh release create 2025.08.16 \
 
 ## Tag Naming Convention
 
-Use semantic versioning based on journal date:
-- Format: `vYYYY.MM.DD`
+Use date-based versioning for journal releases:
+- Format: `YYYY-MM-DD`
 - Examples:
-  - `2025.08.16` for August 16, 2025 journal
-  - `2025.08.23` for August 23, 2025 journal
-  - `2025.12.31` for December 31, 2025 journal
+  - `2025-08-16` for August 16, 2025 journal
+  - `2025-08-23` for August 23, 2025 journal
+  - `2025-12-31` for December 31, 2025 journal
 
 ## Alternative Publication Methods
 
 ### Direct Publication (No GitHub Release)
 ```bash
 # Minimal publication - just tag and cleanup
-git tag -a "2025.08.16" -m "Weekly journal for 2025-08-16"
-git push origin 2025.08.16
+git tag -a "2025-08-16" -m "Weekly journal for 2025-08-16"
+git push origin 2025-08-16
 git branch -d journal/YYYY-MM-DD
 ```
 
