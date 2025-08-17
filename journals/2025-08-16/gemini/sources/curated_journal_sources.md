@@ -1,0 +1,24 @@
+# Curated Main Journal Sources
+
+- [ ] https://blog.tolki.dev/posts/2025/08-07-llms/
+- [ ] https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b
+- [ ] https://queue.acm.org/detail.cfm?id=3746223
+- [ ] https://nibblestew.blogspot.com/2025/08/lets-properly-analyze-ai-article-for.html
+- [ ] https://azukiazusa.dev/blog/mcp-ui/
+- [ ] https://zenn.dev/sakupanda/articles/bfc84e54f97504
+- [ ] https://zenn.dev/karaage0703/articles/c3fbb190687b7a
+- [ ] https://toshi-a.hatenablog.com/entry/2025/08/09/223230
+- [ ] https://note.com/xcloche/n/n55938e706986
+- [ ] https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff
+- [ ] https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the
+- [ ] https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/gpt-5_prompting_guide.ipynb
+- [ ] https://github.com/microsoft/poml
+- [ ] https://blog.lqhl.me/exploring-ai-memory-architectures-part-2-memos-framework
+- [ ] https://www.sonarsource.com/blog/the-coding-personalities-of-leading-llms/
+- [ ] https://zenn.dev/kmizu/articles/8c12550ad3e1d3
+- [ ] https://www.sbbit.jp/article/cont1/169763
+- [ ] https://qiita.com/magicant/items/7095f78f6897808597ab
+- [ ] https://zenn.dev/smartshopping/articles/refactor-fat-claude-md
+- [ ] https://gigazine.net/news/20250813-ai-eroded-doctors-skills-colonoscopy/
+- [ ] https://lucalp.dev/bitter-lesson-tokenization-and-blt/
+- [ ] https://latentintent.substack.com/p/model-intelligence-is-no-longer-the

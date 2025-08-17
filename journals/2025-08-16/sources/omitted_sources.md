@@ -1,0 +1,210 @@
+# Sources for Journal 2025-08-16
+
+<!-- This file collects all source URLs for the weekly journal -->
+<!-- Each URL will be automatically processed and summarized -->
+<!-- URLs are assigned numbered IDs for reference tracking -->
+
+## Instructions
+- Add one URL per line in the format: `[descriptive title](URL)`
+- URLs will be sanitized automatically (UTM parameters removed)
+- Summaries will be generated automatically for each URL
+- Use `python3 scripts/check_link.py "URL"` to verify before adding
+
+## Main List
+
+- [x] 009. https://www.instantdb.com/essays/gpt_5_vs_opus_4
+- [x] 013. https://qiita.com/Syoitu/items/e841fd50d54b772ed405
+- [x] 014. https://qiita.com/neruneruo/items/572e3007e5376cc08613
+- [x] 015. https://qiita.com/sh_fk2/items/cff66119c3f2145282c1
+- [x] 016. https://qiita.com/sukimaengineer/items/845ad14a3ec2d3c39930
+- [x] 019. https://zenn.dev/soramarjr/articles/c0210f128a4d2a
+- [x] 020. https://zenn.dev/mohy_nyapan/articles/599947173622cd
+- [x] 022. https://zenn.dev/rimon/articles/be34c4ee9fd4bf
+- [x] 023. https://zenn.dev/carenet/articles/4b3dcec9d408de
+- [x] 024. https://zenn.dev/beagle/articles/99e0a0f3f0db4b
+- [x] 027. https://zenn.dev/acntechjp/articles/fd6df75cda97ba
+- [x] 028. https://www.itmedia.co.jp/aiplus/articles/2508/09/news031.html
+- [x] 029. https://forbesjapan.com/articles/detail/81094
+- [x] 030. https://xtech.nikkei.com/atcl/nxt/column/18/00989/080300184/
+- [x] 031. https://gazlog.jp/entry/chatgpt-5-200k-gpu-power-consumption/
+- [x] 032. https://toshi-a.hatenablog.com/entry/2025/08/09/223230
+- [x] 033. https://moltsinc.co.jp/media/process/38309/
+- [x] 034. http://www.gadget2ch.com/archives/post-257474.html
+- [x] 035. https://gigazine.net/news/20250809-training-reduction/
+- [x] 036. https://tech.layerx.co.jp/entry/2025/08/08/110339
+- [x] 037. https://type.jp/et/feature/29020/
+- [x] 038. https://dlit.hatenadiary.com/entry/2025/08/08/162843
+- [x] 040. https://note.com/xcloche/n/n55938e706986
+- [x] 041. https://xenospectrum.com/openai-gpt5-user-dissatisfaction-gpt4o-return/
+- [x] 045. https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the
+- [x] 046. https://github.com/mendableai/open-lovable
+- [x] 049. https://qiita.com/Sicut_study/items/f0e7503e18c76e2441d9
+- [x] 050. https://qiita.com/hoshi7_n/items/25d5419eb92255cb52be
+- [x] 051. https://qiita.com/mare13137/items/1443e2810da7fb94e1b6
+- [x] 052. https://qiita.com/tomada/items/f3c10524c05ad5631a76
+- [x] 053. https://qiita.com/peka2/items/2114875985d6b8cd1908
+- [x] 054. https://qiita.com/Yh_Taguchi/items/0306097b98c500db02d8
+- [x] 055. https://zenn.dev/okazuki/articles/drink-vive-coding-try-and-error
+- [x] 056. https://zenn.dev/yuhei_fujita/articles/all-you-need-is-booze-for-vibe-coding
+- [x] 057. https://zenn.dev/yuma_prog/articles/deisui-vibecoding
+- [x] 058. https://zenn.dev/service/articles/2464a141c2ddaa
+- [x] 059. https://zenn.dev/y_ta/articles/gpt-oss-opencode-vibe-kanban-tutorial
+- [x] 061. https://zenn.dev/bita/articles/df3e289155005d
+- [x] 062. https://forbesjapan.com/articles/detail/81227
+- [x] 063. https://note.com/npaka/n/n6311c26ae5d5
+- [x] 065. https://aws.amazon.com/jp/blogs/news/pricing-waitlist-updates/
+- [x] 066. https://blog.g-gen.co.jp/entry/next-tokyo-25-product-development-with-gemini-cli
+- [x] 067. https://gihyo.jp/article/2025/08/gemini-cli-github-actions
+- [x] 069. https://www.techno-edge.net/article/2025/08/10/4525.html
+- [x] 070. https://jp.reuters.com/world/us/I237YDQDBZJQVDFVBCTN7JNROM-2025-08-08/
+- [x] 071. https://smhn.info/202508-4o-gpt5-openai
+- [x] 072. https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/gpt-5_prompting_guide.ipynb
+- [x] 073. https://anond.hatelabo.jp/20250810001443
+- [x] 074. https://note.com/npaka/n/nd4591ba3f278 ⭐️
+- [x] 076. https://www.smashingmagazine.com/2025/08/designing-with-ai-practical-techniques-product-design/
+- [x] 077. https://www.baldurbjarnason.com/2025/disingenuous-discourse/
+- [x] 079. https://max.engineer/failover-to-hi
+- [x] 081. https://www.joshbeckman.org/blog/practicing/ui-vs-api-vs-uai
+- [x] 083. https://policykahani.substack.com/p/a-chatgpt-pro-subscription-costs
+- [x] 084. https://qiita.com/tomada/items/ee39d4ca1a5e31939add
+- [x] 085. https://zenn.dev/rgbkids/articles/6773cb8f146f15
+- [x] 086. https://zenn.dev/sakupanda/articles/ecb4ae7e9a240e
+- [x] 087. https://speakerdeck.com/yuu26/20250808-yurusre?slide=8
+- [x] 088. https://zenn.dev/sexygo/articles/claude-code-monitoring-dashboard
+- [x] 089. https://developers.cyberagent.co.jp/blog/archives/58574/
+- [x] 090. https://togetter.com/li/2587892?page=2
+- [x] 091. https://github.com/microsoft/poml ⭐️
+- [x] 092. https://note.com/simplearchitect/n/na43d5b84fdf1
+- [x] 093. https://www.gizmodo.jp/2025/08/gpt-5-idontknow.html
+- [x] 094. https://www.lifehacker.jp/article/2508-matome-ai-tips-play-and-learn/
+- [x] 095. https://elm200.hatenablog.com/entry/2025/08/11/044429
+- [x] 096. https://zenn.dev/knowledgesense/articles/06daa8f19a6805
+- [x] 097. https://note.com/tacyan/n/n97dfaddf952a
+- [x] 098. https://note.com/suthio/n/n38efcbd10147
+- [x] 099. https://note.com/maha0525/n/nce310530ce40
+- [x] 100. https://p-shirokuma.hatenadiary.com/entry/20250811/1754914431
+- [x] 101. https://nowokay.hatenablog.com/entry/2025/08/11/152751
+- [x] 102. https://www.itmedia.co.jp/news/articles/2508/12/news050.html
+- [x] 103. https://www.watch.impress.co.jp/docs/series/nishida/2038398.html
+- [x] 104. https://recruit.gmo.jp/engineer/jisedai/blog/langextract/
+- [x] 105. https://honeylab.hatenablog.jp/entry/2025/08/12/140752
+- [x] 106. https://zenn.dev/yamitake/articles/google-analytics-mcp-setup
+- [x] 107. https://www.nikkei.com/article/DGXZQOUC1012P0Q5A810C2000000/
+- [x] 108. https://smhn.info/202508-github-ms
+- [x] 109. https://www.gizmodo.jp/2025/08/regulating-ai-based-mental-health-advice.html
+- [x] 110. https://zenn.dev/yourstand_blog/articles/codex-cli-by-claude-code-user
+- [x] 111. https://zenn.dev/sunagaku/articles/e4c2ef701a11c2
+- [x] 112. https://zenn.dev/kameoncloud/articles/6144b8d0fcc38d
+- [x] 113. https://zenn.dev/gmomedia/articles/e428a8e951a581
+- [x] 114. https://zenn.dev/nstock/articles/2c1ea72861f87c
+- [x] 115. https://qiita.com/autotaker1984/items/09ed543579db1b97ea78
+- [x] 116. https://qiita.com/Nakamura-Kaito/items/11da91612a0fbe673f7c
+- [x] 118. https://blog.lqhl.me/exploring-ai-memory-architectures-part-2-memos-framework
+- [x] 119. https://every.to/vibe-check/vibe-check-claude-sonnet-4-now-has-a-1-million-token-context-window
+- [x] 120. https://ethanding.substack.com/p/openai-burns-the-boats
+- [x] 122. https://www.apollographql.com/blog/mcp-server-builder-drop-july-highlights-from-san-francisco-and-new-york
+- [x] 125. https://www.figma.com/community/make?resource_type=mixed&editor_type=all&price=all&sort_by=all_time&creators=all
+- [x] 126. https://voltagent.dev/blog/fine-tuning-llm/
+- [x] 127. https://vercel.com/changelog/vercel-botid-now-leverages-vercels-verified-bot-directory
+- [x] 128. https://vercel.com/changelog/vercels-bot-verification-now-supports-web-bot-auth
+- [x] 129. https://techblog.lycorp.co.jp/ja/20250812a
+- [x] 130. https://note.com/akikito/n/n2c22f5b4dc27
+- [x] 131. https://gigazine.net/news/20250811-university-ai-knowledge/
+- [x] 132. https://cloud.google.com/blog/ja/topics/developers-practitioners/introducing-gemini-cli-github-actions/?hl=ja
+- [x] 133. https://vercel.com/blog/the-three-types-of-ai-bot-traffic-and-how-to-handle-them
+- [x] 134. https://vercel.com/changelog/claude-sonnet-4-now-supports-1m-token-context-in-vercel-ai-gateway
+- [x] 135. https://uxdesign.cc/how-to-be-the-designer-in-the-ai-loop-e14a5fb8c375
+- [x] 136. https://www.sonarsource.com/blog/the-coding-personalities-of-leading-llms/
+- [x] 137. https://github.com/editor-code-assistant/eca
+- [x] 138. https://github.com/Zipstack/rubberduck
+- [x] 139. https://www.independent.co.uk/news/world/americas/artificial-intelligence-replacing-jobs-report-b2800709.html
+- [x] 140. https://stackbench.ai/
+- [x] 141. https://github.com/anthropics/claude-code/issues/3382
+- [x] 143. https://qiita.com/kabechiyo13/items/9f65c2c5976923e3fea0
+- [x] 144. https://qiita.com/kankigyo2/items/ad23246a4642e10c9d4b
+- [x] 145. https://qiita.com/KentaKashima/items/a33655e4c2156fd34b54
+- [x] 146. https://qiita.com/chomado/items/968eca2a96873ccad938
+- [x] 147. https://qiita.com/chomado/items/3008e4c17ead41be1501
+- [x] 148. https://qiita.com/akira_papa_AI/items/bd63f381d3e5827a3c1a
+- [x] 149. https://zenn.dev/socialdog/articles/claude-code-with-git-grep
+- [x] 150. https://zenn.dev/kg_motors_mibot/articles/f46c6927c409fc
+- [x] 151. https://zenn.dev/kmizu/articles/8c12550ad3e1d3
+- [x] 152. https://zenn.dev/karaage0703/articles/76f2a1b20cd6c1
+- [x] 153. https://www.lifehacker.jp/article/2508-gemini-google-calendar/
+- [x] 154. https://pc.watch.impress.co.jp/docs/news/2038783.html
+- [x] 155. https://www.itmedia.co.jp/aiplus/articles/2508/13/news099.html
+- [x] 156. https://note.com/naro143/n/n567573af6335
+- [x] 158. https://github.com/omnara-ai/omnara
+- [x] 159. https://cchistory.mariozechner.at/
+- [x] 160. https://www.itmedia.co.jp/enterprise/articles/2508/12/news051.html
+- [x] 161. https://careers.mercari.com/mercan/articles/53708/
+- [x] 162. https://tech-blog.rakus.co.jp/entry/20250813/codereview
+- [x] 163. https://forest.watch.impress.co.jp/docs/news/2038528.html
+- [x] 164. https://note.com/shi3zblog/n/ne192f302c651
+- [x] 165. https://www.sbbit.jp/article/cont1/169763
+- [x] 166. https://note.com/viorazu/n/nbd8f44c83488
+- [x] 168. https://github.blog/ai-and-ml/generative-ai/gpt-5-in-github-copilot-how-i-built-a-game-in-60-seconds/
+- [x] 170. https://github.com/facebookresearch/dinov3
+- [x] 171. https://edition.cnn.com/2025/08/14/business/chatgpt-rollout-problems
+- [x] 172. https://github.com/NineSunsInc/mighty-security
+- [x] 173. https://www.seangoedecke.com/real-reasoning/
+- [x] 175. https://qiita.com/Martim500/items/5e6bed380b470f273b86
+- [x] 176. https://qiita.com/magicant/items/7095f78f6897808597ab
+- [x] 177. https://qiita.com/youtoy/items/dc8818981b7baff5dc08
+- [x] 178. https://zenn.dev/smartshopping/articles/refactor-fat-claude-md
+- [x] 179. https://zenn.dev/google_cloud_jp/articles/5410925dc984b1
+- [x] 180. https://zenn.dev/gotalab/articles/b361e77b7739ed
+- [x] 181. https://zenn.dev/aki_think/articles/c4f5b2a75ff4d4
+- [x] 182. https://www.businessinsider.jp/article/2508-openais-strategic-shift2025/
+- [x] 183. https://www.nikkei.com/article/DGXZQOGM1488A0U5A810C2000000/
+- [x] 184. https://techtarget.itmedia.co.jp/tt/news/2508/14/news05.html
+- [x] 185. https://gigazine.net/news/20250814-ffmpeg-whisper-transcription/
+- [x] 186. https://togetter.com/li/2589425
+- [x] 187. https://www.yasuhisay.info/entry/2025/08/14/181053
+- [x] 188. https://github.com/seiichi3141/kokkai_giji_mcp
+- [x] 189. https://anond.hatelabo.jp/20250814173040
+- [x] 190. https://nowokay.hatenablog.com/entry/2025/08/13/235311
+- [x] 191. https://gigazine.net/news/20250814-building-web-search-engine-3-billion-neural-embeddings/
+- [x] 192. https://creators-note.chatwork.com/entry/subagent_for_qa
+- [x] 193. https://developers.cyberagent.co.jp/blog/archives/58667/
+- [x] 194. https://gigazine.net/news/20250813-ai-eroded-doctors-skills-colonoscopy/
+- [x] 195. https://creators.oisixradaichi.co.jp/entry/2025/08/13/103607
+- [x] 196. https://speakerdeck.com/vaaaaanquish/sheng-cheng-ainiyorusohutoueakai-fa-noshou-shu-di-dian-hack-fes-2025
+- [x] 197. https://forbesjapan.com/articles/detail/81251
+- [x] 198. https://developers.freee.co.jp/entry/jittest_intro
+- [x] 199. https://bencallahan.com/outcomes-over-output-design-systems-and-ai
+- [x] 200. https://lucalp.dev/bitter-lesson-tokenization-and-blt/
+- [x] 201. https://vercel.com/changelog/botid-deep-analysis-model-improved-for-fake-hardware-detection
+- [x] 202. https://uxdesign.cc/what-gpt-5-could-have-learned-from-apples-missing-headphone-jack-2ea01fa70aad
+- [x] 203. https://semaphore.io/blog/gpt-oss
+- [x] 206. https://overbring.com/blog/2025-08-13-writing-an-elixir-nif-with-genai/
+- [x] 207. https://mattsayar.com/letting-inmates-run-the-asylum-using-ai-to-secure-ai/
+- [x] 208. https://jenson.org/timmy/
+- [x] 209. https://news.ycombinator.com/item?id=44911538
+- [x] 210. https://qiita.com/kokamoto01/items/1f1fc39af9cd72a365b0
+- [x] 211. https://qiita.com/wooooo/items/d7b9c108769e9342e62f
+- [x] 212. https://zenn.dev/furedea/articles/53b5117b389454
+- [x] 214. https://zenn.dev/dalance/articles/6463b2fcae7130
+- [x] 215. https://zenn.dev/microsoft/articles/493e35659c59d6
+- [x] 216. https://zenn.dev/oikon/articles/obsidian-claude-code
+- [x] 217. https://zenn.dev/naizo01/articles/15cbe0b1145ef9
+- [x] 218. https://www.baka-ke.com/2025/08/16/about-service/
+- [x] 219. https://note.com/dify_base/n/n5482b8ef9a32
+- [x] 220. https://note.com/npaka/n/n014544347f52
+- [x] 221. https://zenn.dev/xtm_blog/articles/d8085c176f0040
+- [x] 222. https://www.gizmodo.jp/2025/08/307151.html
+- [x] 223. https://xenospectrum.com/gpt-5-energy-consumption-crisis-openai-transparency/
+- [x] 224. https://atmarkit.itmedia.co.jp/ait/articles/2508/14/news076.html
+- [x] 225. https://gigazine.net/news/20250815-google-gemma-3-270m/
+- [x] 226. https://gigazine.net/news/20250814-sycophantic-ai-chatbot-teenagers-narcissism/
+- [x] 227. https://gigazine.net/news/20250815-meta-ai-chatbot-rules/
+- [x] 228. https://www.watch.impress.co.jp/docs/topic/2038206.html
+- [x] 229. https://note.com/npaka/n/nd2d39c0428cc
+- [x] 230. https://news.yahoo.co.jp/articles/11f6948e73700b4a9e699b1792772c987dc3d53d
+- [x] 231. https://dev.classmethod.jp/articles/technical-problems-with-gemini/
+
+## Slides
+
+## Might Be Hype
+
+## Better to be Omitted
