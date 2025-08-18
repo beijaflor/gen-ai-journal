@@ -1,0 +1,47 @@
+{
+  "name": "genai-journal-website",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Static website for GenAI Journal - Weekly curated AI and coding developments",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "clean": "rm -rf dist .astro",
+    "astro": "astro",
+    "check": "npm run type-check && npm run lint",
+    "check:fix": "npm run format && npm run lint:fix && npm run type-check",
+    "type-check": "astro check",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply .",
+    "format": "prettier --write . && biome format --write .",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "astro": "^4.15.0",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/rss": "^4.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.5.4"
+  },
+  "keywords": [
+    "astro",
+    "blog",
+    "journal",
+    "ai",
+    "coding",
+    "japanese",
+    "static-site"
+  ],
+  "author": "GenAI Journal",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
