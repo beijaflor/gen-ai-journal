@@ -3,13 +3,13 @@
 ## Technology Stack
 
 ### Core Framework
-- **Astro 4.x**: Static site generator with island architecture
-- **TypeScript 5.x**: Type-safe development and build-time checking
+- **Astro 5.x**: Static site generator with island architecture
+- **TypeScript 5.9**: Type-safe development and build-time checking
 - **Node.js 18+**: Runtime environment for build tools and development
 
 ### Development Tools
-- **Biome**: Fast linter and formatter for TypeScript/JavaScript
-- **Prettier**: Code formatting for Astro, CSS, and Markdown files
+- **Biome 2.2**: Fast linter and formatter for TypeScript/JavaScript
+- **Prettier 3.6**: Code formatting for Astro, CSS, and Markdown files
 - **Git**: Version control and collaboration
 
 ### Deployment
