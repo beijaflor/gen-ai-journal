@@ -1,0 +1,276 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import '@/styles/global.css';
+
+const title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル';
+const description = 'AI開発ツールとコーディングの最新動向を週刊でお届けする、厳選されたジャーナル';
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="hero-section">
+    <h1 class="hero-title">GenAI週刊</h1>
+    <p class="hero-subtitle">AI・コーディング関連の週刊ジャーナル</p>
+    <p class="hero-description">
+      AI開発ツールとコーディングの最新動向を厳選してお届けします。
+      毎週、技術の本質を見極めた記事とユニークな視点の情報をキュレーションしています。
+    </p>
+  </div>
+
+  <section class="latest-section">
+    <h2>最新号</h2>
+    <div class="journal-card">
+      <div class="card-header">
+        <h3>2025年08月16日号</h3>
+        <span class="card-status">最新</span>
+      </div>
+      <div class="card-content">
+        <h4>今週のハイライト</h4>
+        <p>
+          AI開発ツールの実用性と限界が鮮明に浮き彫りになった重要な週でした。
+          低コストAI活用ワークフローによる開発効率革命、LLM駆動開発の現実的評価、
+          そして次世代プログラミング言語「Universalis」の提案が、
+          AI時代の開発パラダイムシフトを示しています。
+        </p>
+        <div class="card-actions">
+          <a href="/journals/2025-08-16/main/" class="btn btn-primary">メインジャーナル</a>
+          <a href="/journals/2025-08-16/annex/" class="btn btn-secondary">アネックス</a>
+          <a href="/journals/2025-08-16/summaries/" class="btn btn-outline">全サマリー</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <h2>ジャーナルの特徴</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>🎯 厳選されたコンテンツ</h3>
+        <p>週に200以上の記事から18-25の重要な記事を厳選してお届けします。</p>
+      </div>
+      <div class="feature-card">
+        <h3>📝 日本語でのキュレーション</h3>
+        <p>海外の技術記事も日本語で要約・解説。理解しやすい形でお届けします。</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔍 個別サマリーアクセス</h3>
+        <p>メインジャーナルだけでなく、すべての個別サマリーにもアクセス可能です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="archive-section">
+    <h2>アーカイブ</h2>
+    <p>過去のジャーナルをすべて閲覧できます。</p>
+    <a href="/archive/" class="btn btn-primary">アーカイブを見る</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    color: #374151;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .latest-section, 
+  .features-section, 
+  .archive-section {
+    margin-bottom: 4rem;
+  }
+
+  .latest-section h2,
+  .features-section h2,
+  .archive-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .journal-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.2s;
+  }
+
+  .journal-card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .card-header h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin: 0;
+  }
+
+  .card-status {
+    background: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .card-content h4 {
+    color: #374151;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-content p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-secondary {
+    background-color: #64748b;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #475569;
+    text-decoration: none;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+  }
+
+  .feature-card h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .feature-card p {
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .archive-section {
+    text-align: center;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+  }
+
+  .archive-section p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+    
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .card-actions {
+      flex-direction: column;
+    }
+    
+    .btn {
+      justify-content: center;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>
