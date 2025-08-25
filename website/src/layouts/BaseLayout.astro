@@ -1,0 +1,207 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { 
+  title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル',
+  description = 'AI開発ツールとコーディングの最新動向を週刊でお届けする、厳選されたジャーナル',
+  ogImage = '/og-image.jpg'
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, Astro.url)} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav class="navbar">
+          <div class="nav-container">
+            <a href="/" class="nav-brand">GenAI週刊</a>
+            <div class="nav-menu">
+              <a href="/" class="nav-link">ホーム</a>
+              <a href="/archive/" class="nav-link">アーカイブ</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <slot />
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2025 GenAI週刊. All rights reserved.</p>
+          <p>AI・コーディング関連の週刊ジャーナル</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+  :root {
+    --color-primary: #2563eb;
+    --color-secondary: #64748b;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-background: #ffffff;
+    --color-surface: #f8fafc;
+    --color-border: #e5e7eb;
+    
+    --font-family-sans: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, 'Yu Gothic', 'Noto Sans CJK JP', sans-serif;
+    --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    
+    --border-radius: 0.5rem;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: var(--font-family-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Navigation */
+  .navbar {
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md) 0;
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+  }
+
+  .nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  /* Main content */
+  .main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) var(--spacing-md);
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-xl) 0;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .footer-container p + p {
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+    
+    .main-content {
+      padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .nav-menu {
+      gap: var(--spacing-md);
+    }
+  }
+</style>
