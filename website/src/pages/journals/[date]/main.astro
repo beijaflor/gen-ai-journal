@@ -1,0 +1,386 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { parseJournalByDate, getAllJournalDates } from '@/utils/content-parser';
+import '@/styles/global.css';
+
+export async function getStaticPaths() {
+  const dates = getAllJournalDates();
+  
+  // Only generate pages for dates that have main journals
+  return dates
+    .map(date => {
+      const journalData = parseJournalByDate(date);
+      return journalData && journalData.mainJournal ? { params: { date } } : null;
+    })
+    .filter(path => path !== null);
+}
+
+const { date } = Astro.params;
+
+if (!date || typeof date !== 'string') {
+  throw new Error('Invalid date parameter');
+}
+
+const journalData = parseJournalByDate(date);
+
+// This should not happen due to filtering in getStaticPaths
+if (!journalData || !journalData.mainJournal) {
+  throw new Error(`Main journal not found for date: ${date}`);
+}
+
+const journal = journalData.mainJournal;
+const title = `${journal.title} - GenAI週刊`;
+const description = journal.excerpt;
+
+// Format date for display
+const displayDate = new Date(date).toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Convert markdown to HTML (simple conversion for now)
+const htmlContent = journal.content
+  .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+  .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+  .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  .replace(/\*(.+?)\*/g, '<em>$1</em>')
+  .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>')
+  .replace(/^---$/gm, '<hr>')
+  .replace(/\n\n/g, '</p><p>')
+  .replace(/^(.+)$/gm, '<p>$1</p>')
+  .replace(/<p><h([1-6])>/g, '<h$1>')
+  .replace(/<\/h([1-6])><\/p>/g, '</h$1>')
+  .replace(/<p><hr><\/p>/g, '<hr>');
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="journal-article">
+    <header class="article-header">
+      <div class="header-meta">
+        <nav class="breadcrumb">
+          <a href="/">ホーム</a>
+          <span class="separator">›</span>
+          <a href="/archive/">アーカイブ</a>
+          <span class="separator">›</span>
+          <a href={`/journals/${date}/`}>{displayDate}</a>
+          <span class="separator">›</span>
+          <span class="current">メインジャーナル</span>
+        </nav>
+        
+        <div class="journal-meta">
+          <time datetime={date} class="publish-date">
+            {displayDate}
+          </time>
+          <span class="journal-type type-main">メインジャーナル</span>
+          <div class="reading-info">
+            <span class="reading-time">{journal.readingTime}分で読めます</span>
+            <span class="word-count">{journal.wordCount.toLocaleString()}文字</span>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="article-title">{journal.title}</h1>
+      
+      <div class="article-actions">
+        <a href={`/journals/${date}/`} class="btn btn-outline">週の概要</a>
+        {journalData.annexJournal && (
+          <a href={`/journals/${date}/annex/`} class="btn btn-outline">アネックス</a>
+        )}
+        <a href={`/journals/${date}/summaries/`} class="btn btn-outline">
+          全サマリー ({journalData.stats.totalSummaries})
+        </a>
+      </div>
+    </header>
+
+    <div class="article-content" set:html={htmlContent} />
+
+    <footer class="article-footer">
+      <div class="article-stats">
+        <div class="stats-item">
+          <span class="stats-label">総サマリー数</span>
+          <span class="stats-value">{journalData.stats.totalSummaries}件</span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">文字数</span>
+          <span class="stats-value">{journal.wordCount.toLocaleString()}文字</span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">読了時間</span>
+          <span class="stats-value">{journal.readingTime}分</span>
+        </div>
+      </div>
+
+      <div class="navigation-links">
+        <a href={`/journals/${date}/`} class="nav-link">
+          ← 週の概要に戻る
+        </a>
+        {journalData.annexJournal && (
+          <a href={`/journals/${date}/annex/`} class="nav-link">
+            アネックスジャーナル →
+          </a>
+        )}
+      </div>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .journal-article {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: #9ca3af;
+  }
+
+  .current {
+    color: #374151;
+    font-weight: 500;
+  }
+
+  .journal-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .publish-date {
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .journal-type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .type-main {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .reading-info {
+    display: flex;
+    gap: 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+  .article-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 3rem;
+  }
+
+  .article-content :global(h1) {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 2rem 0 1rem 0;
+    line-height: 1.3;
+  }
+
+  .article-content :global(h2) {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 1.75rem 0 1rem 0;
+    line-height: 1.4;
+  }
+
+  .article-content :global(h3) {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 1.5rem 0 0.75rem 0;
+    line-height: 1.4;
+  }
+
+  .article-content :global(p) {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .article-content :global(a) {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  .article-content :global(a:hover) {
+    border-bottom-color: #2563eb;
+  }
+
+  .article-content :global(strong) {
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .article-content :global(hr) {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 3rem 0;
+  }
+
+  .article-footer {
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .article-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+  }
+
+  .stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stats-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .stats-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .navigation-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .journal-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .reading-info {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .article-title {
+      font-size: 2rem;
+    }
+
+    .article-actions {
+      flex-direction: column;
+    }
+
+    .btn {
+      justify-content: center;
+    }
+
+    .article-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .navigation-links {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .article-content {
+      font-size: 1rem;
+    }
+  }
+</style>
