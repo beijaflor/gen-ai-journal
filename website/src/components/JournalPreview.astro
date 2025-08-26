@@ -1,5 +1,6 @@
 ---
 import type { JournalEntry } from '@/utils/content-parser';
+import { withBase } from '@/utils/base-path';
 
 export interface Props {
   journal: JournalEntry;
@@ -36,7 +37,7 @@ const typeClass = journal.type === 'main' ? 'type-main' : 'type-annex';
   <header class="preview-header">
     <div class="header-main">
       <h3 class="journal-title">
-        <a href={`/journals/${journal.date}/${journal.type}/`}>
+        <a href={withBase(`/journals/${journal.date}/${journal.type}/`)}>
           {journal.title}
         </a>
       </h3>
@@ -69,14 +70,14 @@ const typeClass = journal.type === 'main' ? 'type-main' : 'type-annex';
   {showActions && (
     <footer class="preview-actions">
       <div class="action-buttons">
-        <a href={`/journals/${journal.date}/${journal.type}/`} class="btn btn-primary">
+        <a href={withBase(`/journals/${journal.date}/${journal.type}/`)} class="btn btn-primary">
           記事を読む
         </a>
-        <a href={`/journals/${journal.date}/`} class="btn btn-outline">
+        <a href={withBase(`/journals/${journal.date}/`)} class="btn btn-outline">
           週の概要
         </a>
         {summaryCount > 0 && (
-          <a href={`/journals/${journal.date}/summaries/`} class="btn btn-outline">
+          <a href={withBase(`/journals/${journal.date}/summaries/`)} class="btn btn-outline">
             全サマリー ({summaryCount})
           </a>
         )}

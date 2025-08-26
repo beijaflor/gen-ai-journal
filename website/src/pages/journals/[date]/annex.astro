@@ -7,11 +7,11 @@ import '@/styles/global.css';
 export async function getStaticPaths() {
   const dates = getAllJournalDates();
   
-  // Only generate pages for dates that have main journals
+  // Only generate pages for dates that have annex journals
   return dates
     .map(date => {
       const journalData = parseJournalByDate(date);
-      return journalData && journalData.mainJournal ? { params: { date } } : null;
+      return journalData && journalData.annexJournal ? { params: { date } } : null;
     })
     .filter(path => path !== null);
 }
@@ -25,11 +25,11 @@ if (!date || typeof date !== 'string') {
 const journalData = parseJournalByDate(date);
 
 // This should not happen due to filtering in getStaticPaths
-if (!journalData || !journalData.mainJournal) {
-  throw new Error(`Main journal not found for date: ${date}`);
+if (!journalData || !journalData.annexJournal) {
+  throw new Error(`Annex journal not found for date: ${date}`);
 }
 
-const journal = journalData.mainJournal;
+const journal = journalData.annexJournal;
 const title = `${journal.title} - GenAI週刊`;
 const description = journal.excerpt;
 
@@ -67,14 +67,14 @@ const htmlContent = journal.content
           <span class="separator">›</span>
           <a href={withBase(`/journals/${date}/`)}>{displayDate}</a>
           <span class="separator">›</span>
-          <span class="current">メインジャーナル</span>
+          <span class="current">アネックス</span>
         </nav>
         
         <div class="journal-meta">
           <time datetime={date} class="publish-date">
             {displayDate}
           </time>
-          <span class="journal-type type-main">メインジャーナル</span>
+          <span class="journal-type type-annex">アネックスジャーナル</span>
           <div class="reading-info">
             <span class="reading-time">{journal.readingTime}分で読めます</span>
             <span class="word-count">{journal.wordCount.toLocaleString()}文字</span>
@@ -86,8 +86,8 @@ const htmlContent = journal.content
       
       <div class="article-actions">
         <a href={withBase(`/journals/${date}/`)} class="btn btn-outline">週の概要</a>
-        {journalData.annexJournal && (
-          <a href={withBase(`/journals/${date}/annex/`)} class="btn btn-outline">アネックス</a>
+        {journalData.mainJournal && (
+          <a href={withBase(`/journals/${date}/main/`)} class="btn btn-outline">メインジャーナル</a>
         )}
         <a href={withBase(`/journals/${date}/summaries/`)} class="btn btn-outline">
           全サマリー ({journalData.stats.totalSummaries})
@@ -117,9 +117,9 @@ const htmlContent = journal.content
         <a href={withBase(`/journals/${date}/`)} class="nav-link">
           ← 週の概要に戻る
         </a>
-        {journalData.annexJournal && (
-          <a href={withBase(`/journals/${date}/annex/`)} class="nav-link">
-            アネックスジャーナル →
+        {journalData.mainJournal && (
+          <a href={withBase(`/journals/${date}/main/`)} class="nav-link">
+            メインジャーナル →
           </a>
         )}
       </div>
@@ -186,9 +186,9 @@ const htmlContent = journal.content
     letter-spacing: 0.05em;
   }
 
-  .type-main {
-    background: #dbeafe;
-    color: #1e40af;
+  .type-annex {
+    background: #fef3c7;
+    color: #92400e;
   }
 
   .reading-info {

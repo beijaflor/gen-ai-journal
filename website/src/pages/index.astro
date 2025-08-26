@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import JournalPreview from '@/components/JournalPreview.astro';
 import { getLatestJournal, getAllJournalDates } from '@/utils/content-parser';
+import { withBase } from '@/utils/base-path';
 import '@/styles/global.css';
 
 const title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル';
@@ -74,7 +75,7 @@ const allDates = getAllJournalDates();
         <p>最新: {allDates[0]} / 最古: {allDates[allDates.length - 1]}</p>
       </div>
     )}
-    <a href="/archive/" class="btn btn-primary">アーカイブを見る</a>
+    <a href={withBase('/archive/')} class="btn btn-primary">アーカイブを見る</a>
   </section>
 </BaseLayout>
 
