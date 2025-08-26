@@ -1,9 +1,15 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import JournalPreview from '@/components/JournalPreview.astro';
+import { getLatestJournal, getAllJournalDates } from '@/utils/content-parser';
 import '@/styles/global.css';
 
 const title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル';
 const description = 'AI開発ツールとコーディングの最新動向を週刊でお届けする、厳選されたジャーナル';
+
+// Get latest journal data
+const latestJournal = getLatestJournal();
+const allDates = getAllJournalDates();
 ---
 
 <BaseLayout title={title} description={description}>
@@ -18,26 +24,27 @@ const description = 'AI開発ツールとコーディングの最新動向を週
 
   <section class="latest-section">
     <h2>最新号</h2>
-    <div class="journal-card">
-      <div class="card-header">
-        <h3>2025年08月16日号</h3>
-        <span class="card-status">最新</span>
+    {latestJournal ? (
+      <div class="journal-previews">
+        {latestJournal.mainJournal && (
+          <JournalPreview 
+            journal={latestJournal.mainJournal} 
+            summaryCount={latestJournal.stats.totalSummaries}
+          />
+        )}
+        {latestJournal.annexJournal && (
+          <JournalPreview 
+            journal={latestJournal.annexJournal} 
+            summaryCount={latestJournal.stats.totalSummaries}
+          />
+        )}
       </div>
-      <div class="card-content">
-        <h4>今週のハイライト</h4>
-        <p>
-          AI開発ツールの実用性と限界が鮮明に浮き彫りになった重要な週でした。
-          低コストAI活用ワークフローによる開発効率革命、LLM駆動開発の現実的評価、
-          そして次世代プログラミング言語「Universalis」の提案が、
-          AI時代の開発パラダイムシフトを示しています。
-        </p>
-        <div class="card-actions">
-          <a href="/journals/2025-08-16/main/" class="btn btn-primary">メインジャーナル</a>
-          <a href="/journals/2025-08-16/annex/" class="btn btn-secondary">アネックス</a>
-          <a href="/journals/2025-08-16/summaries/" class="btn btn-outline">全サマリー</a>
-        </div>
+    ) : (
+      <div class="no-content">
+        <p>最新のジャーナルを読み込めませんでした。</p>
+        <p>ジャーナルデータが正しく配置されているか確認してください。</p>
       </div>
-    </div>
+    )}
   </section>
 
   <section class="features-section">
@@ -61,6 +68,12 @@ const description = 'AI開発ツールとコーディングの最新動向を週
   <section class="archive-section">
     <h2>アーカイブ</h2>
     <p>過去のジャーナルをすべて閲覧できます。</p>
+    {allDates.length > 0 && (
+      <div class="archive-stats">
+        <p><strong>{allDates.length}</strong>週分のジャーナルが利用可能です</p>
+        <p>最新: {allDates[0]} / 最古: {allDates[allDates.length - 1]}</p>
+      </div>
+    )}
     <a href="/archive/" class="btn btn-primary">アーカイブを見る</a>
   </section>
 </BaseLayout>
@@ -111,56 +124,37 @@ const description = 'AI開発ツールとコーディングの最新動向を週
     border-bottom: 2px solid #e5e7eb;
   }
 
-  .journal-card {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
+  .journal-previews {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .no-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9fafb;
     border-radius: 0.75rem;
-    padding: 1.5rem;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-    transition: box-shadow 0.2s;
+    border: 1px solid #e5e7eb;
   }
 
-  .journal-card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  }
-
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .card-header h3 {
-    font-size: 1.5rem;
-    color: #1f2937;
-    margin: 0;
-  }
-
-  .card-status {
-    background: #dc2626;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-
-  .card-content h4 {
-    color: #374151;
-    margin-bottom: 0.75rem;
-  }
-
-  .card-content p {
+  .no-content p {
     color: #6b7280;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
+    margin: 0.5rem 0;
   }
 
-  .card-actions {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
+  .archive-stats {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f0f9ff;
+    border-radius: 0.5rem;
+    border: 1px solid #bae6fd;
+  }
+
+  .archive-stats p {
+    margin: 0.25rem 0;
+    color: #0c4a6e;
+    font-size: 0.875rem;
   }
 
   .btn {
@@ -254,18 +248,8 @@ const description = 'AI開発ツールとコーディングの最新動向を週
       font-size: 1.125rem;
     }
     
-    .card-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-    
-    .card-actions {
-      flex-direction: column;
-    }
-    
-    .btn {
-      justify-content: center;
+    .journal-previews {
+      gap: 1.5rem;
     }
     
     .features-grid {
