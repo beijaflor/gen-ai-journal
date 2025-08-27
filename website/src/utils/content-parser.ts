@@ -46,6 +46,21 @@ export interface JournalArchive {
   };
 }
 
+export interface JournalParsingConfig {
+  titleOverride?: {
+    main?: string;
+    annex?: string;
+  };
+  excerptOverride?: {
+    main?: string;
+    annex?: string;
+  };
+  contentStructure?: {
+    titlePattern?: string; // Custom regex pattern for title extraction
+    excerptSection?: string; // Specific section to use for excerpt
+  };
+}
+
 export interface JournalMetadata {
   date: string;
   totalSummaries: number;
@@ -54,11 +69,32 @@ export interface JournalMetadata {
     annexSummaries: number;
     omittedSummaries: number;
   };
+  parsing?: JournalParsingConfig; // Optional parsing configuration
 }
 
 // Utility functions
-function extractTitleFromMarkdown(content: string): string {
-  // Try to find first heading
+function extractTitleFromMarkdown(
+  content: string, 
+  config?: JournalParsingConfig,
+  journalType?: 'main' | 'annex'
+): string {
+  // Check for override first
+  if (config?.titleOverride && journalType) {
+    const override = config.titleOverride[journalType];
+    if (override) {
+      return override;
+    }
+  }
+
+  // Use custom pattern if specified
+  if (config?.contentStructure?.titlePattern) {
+    const customMatch = content.match(new RegExp(config.contentStructure.titlePattern, 'm'));
+    if (customMatch && customMatch[1]) {
+      return customMatch[1].trim();
+    }
+  }
+
+  // Default: try to find first heading
   const titleMatch = content.match(/^#\s+(.+)$/m);
   if (titleMatch) {
     return titleMatch[1].trim();
@@ -76,8 +112,32 @@ function extractTitleFromMarkdown(content: string): string {
   return 'Untitled';
 }
 
-function extractExcerpt(content: string, maxLength: number = 200): string {
-  // Remove markdown headers and get first paragraph
+function extractExcerpt(
+  content: string, 
+  maxLength: number = 200,
+  config?: JournalParsingConfig,
+  journalType?: 'main' | 'annex'
+): string {
+  // Check for override first
+  if (config?.excerptOverride && journalType) {
+    const override = config.excerptOverride[journalType];
+    if (override) {
+      return override;
+    }
+  }
+
+  // Use specific section if specified
+  if (config?.contentStructure?.excerptSection) {
+    const sectionMatch = content.match(
+      new RegExp(`#{1,6}\\s+${config.contentStructure.excerptSection}[\\s\\S]*?\\n([\\s\\S]*?)(?=\\n#{1,6}|$)`, 'i')
+    );
+    if (sectionMatch && sectionMatch[1]) {
+      const sectionContent = sectionMatch[1].trim();
+      return sectionContent.length > maxLength ? `${sectionContent.substring(0, maxLength)}...` : sectionContent;
+    }
+  }
+
+  // Default: remove markdown headers and get first paragraph
   const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
   const paragraphs = withoutHeaders.split('\n\n');
 
@@ -119,7 +179,8 @@ function generateSlug(title: string): string {
 function parseJournalFile(
   filePath: string,
   type: 'main' | 'annex',
-  date: string
+  date: string,
+  parsingConfig?: JournalParsingConfig
 ): JournalEntry | null {
   try {
     if (!existsSync(filePath)) {
@@ -127,10 +188,10 @@ function parseJournalFile(
     }
 
     const content = readFileSync(filePath, 'utf-8');
-    const title = extractTitleFromMarkdown(content);
+    const title = extractTitleFromMarkdown(content, parsingConfig, type);
     const wordCount = countWords(content);
     const readingTime = calculateReadingTime(wordCount);
-    const excerpt = extractExcerpt(content);
+    const excerpt = extractExcerpt(content, 200, parsingConfig, type);
     const slug = generateSlug(title);
 
     return {
@@ -298,10 +359,13 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     // Try both naming conventions for main journal
     const dateFormatted = date.replace(/-/g, '_');
+    const parsingConfig = metadata.parsing;
+    
     let mainJournal = parseJournalFile(
       join(journalDir, `00_weekly_journal_${dateFormatted}.md`),
       'main',
-      date
+      date,
+      parsingConfig
     );
 
     // Fallback to older naming convention if not found
@@ -309,7 +373,8 @@ export function parseJournalByDate(date: string): JournalArchive | null {
       mainJournal = parseJournalFile(
         join(journalDir, `weekly_journal_${dateFormatted}.md`),
         'main',
-        date
+        date,
+        parsingConfig
       );
     }
 
@@ -317,7 +382,8 @@ export function parseJournalByDate(date: string): JournalArchive | null {
     let annexJournal = parseJournalFile(
       join(journalDir, `01_annex_journal_${dateFormatted}.md`),
       'annex',
-      date
+      date,
+      parsingConfig
     );
 
     // Fallback to older naming convention if not found
@@ -325,7 +391,8 @@ export function parseJournalByDate(date: string): JournalArchive | null {
       annexJournal = parseJournalFile(
         join(journalDir, `annex_journal_${dateFormatted}.md`),
         'annex',
-        date
+        date,
+        parsingConfig
       );
     }
 
