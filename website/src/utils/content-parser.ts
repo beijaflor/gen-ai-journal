@@ -223,8 +223,8 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
 
 // Main parsing functions
 export function getJournalsPath(): string {
-  // Go up two levels from website/src/utils to reach journals/
-  return join(process.cwd(), '../journals');
+  // Point to the actual journals directory in the production repository
+  return join(process.cwd(), '../../gen-ai-journal/journals');
 }
 
 export function getAllJournalDates(): string[] {
