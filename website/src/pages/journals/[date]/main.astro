@@ -1,19 +1,19 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { parseJournalByDate, getAllJournalDates } from '@/utils/content-parser';
 import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
 import '@/styles/global.css';
 
 export async function getStaticPaths() {
   const dates = getAllJournalDates();
-  
+
   // Only generate pages for dates that have main journals
   return dates
-    .map(date => {
+    .map((date) => {
       const journalData = parseJournalByDate(date);
-      return journalData && journalData.mainJournal ? { params: { date } } : null;
+      return journalData?.mainJournal ? { params: { date } } : null;
     })
-    .filter(path => path !== null);
+    .filter((path) => path !== null);
 }
 
 const { date } = Astro.params;

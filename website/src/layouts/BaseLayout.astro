@@ -5,10 +5,10 @@ export interface Props {
   ogImage?: string;
 }
 
-const { 
+const {
   title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル',
   description = 'AI開発ツールとコーディングの最新動向を週刊でお届けする、厳選されたジャーナル',
-  ogImage = '/og-image.jpg'
+  ogImage = '/og-image.jpg',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);

@@ -1,17 +1,17 @@
-import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 // Base types for journal content
 export interface JournalEntry {
-  date: string;           // YYYY-MM-DD
+  date: string; // YYYY-MM-DD
   type: 'main' | 'annex'; // Journal type
-  title: string;          // Extracted from markdown
-  content: string;        // Full markdown content
-  slug: string;           // URL slug
-  wordCount: number;      // Word count
-  readingTime: number;    // Minutes
-  excerpt: string;        // First paragraph or summary
-  summaryCount: number;   // Associated summaries count
+  title: string; // Extracted from markdown
+  content: string; // Full markdown content
+  slug: string; // URL slug
+  wordCount: number; // Word count
+  readingTime: number; // Minutes
+  excerpt: string; // First paragraph or summary
+  summaryCount: number; // Associated summaries count
   metadata: {
     publishedAt: Date;
     tags?: string[];
@@ -19,22 +19,22 @@ export interface JournalEntry {
 }
 
 export interface SummaryEntry {
-  id: string;            // 3-digit ID
-  date: string;          // Parent journal date
-  filename: string;      // Original filename
-  sourceUrl: string;     // Reconstructed URL
-  domain: string;        // Source domain
-  title: string;         // Extracted title
-  content: string;       // Markdown content
+  id: string; // 3-digit ID
+  date: string; // Parent journal date
+  filename: string; // Original filename
+  sourceUrl: string; // Reconstructed URL
+  domain: string; // Source domain
+  title: string; // Extracted title
+  content: string; // Markdown content
   status: 'main' | 'annex' | 'omitted'; // Inclusion status
-  slug: string;          // URL slug
-  wordCount: number;     // Word count
-  readingTime: number;   // Minutes
-  excerpt: string;       // Brief summary
+  slug: string; // URL slug
+  wordCount: number; // Word count
+  readingTime: number; // Minutes
+  excerpt: string; // Brief summary
 }
 
 export interface JournalArchive {
-  date: string;          // YYYY-MM-DD
+  date: string; // YYYY-MM-DD
   mainJournal: JournalEntry | null;
   annexJournal: JournalEntry | null;
   summaries: SummaryEntry[];
@@ -53,7 +53,7 @@ function extractTitleFromMarkdown(content: string): string {
   if (titleMatch) {
     return titleMatch[1].trim();
   }
-  
+
   // Fallback to first non-empty line
   const lines = content.split('\n');
   for (const line of lines) {
@@ -62,7 +62,7 @@ function extractTitleFromMarkdown(content: string): string {
       return trimmed.substring(0, 100); // Limit length
     }
   }
-  
+
   return 'Untitled';
 }
 
@@ -70,24 +70,22 @@ function extractExcerpt(content: string, maxLength: number = 200): string {
   // Remove markdown headers and get first paragraph
   const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
   const paragraphs = withoutHeaders.split('\n\n');
-  
+
   for (const paragraph of paragraphs) {
     const trimmed = paragraph.trim();
     if (trimmed && trimmed.length > 10) {
-      return trimmed.length > maxLength 
-        ? trimmed.substring(0, maxLength) + '...'
-        : trimmed;
+      return trimmed.length > maxLength ? `${trimmed.substring(0, maxLength)}...` : trimmed;
     }
   }
-  
-  return content.substring(0, maxLength) + '...';
+
+  return `${content.substring(0, maxLength)}...`;
 }
 
 function countWords(text: string): number {
   // Count both Japanese characters and English words
   const japaneseChars = (text.match(/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/g) || []).length;
   const englishWords = (text.match(/\b[A-Za-z]+\b/g) || []).length;
-  
+
   // Approximate: 1 Japanese character ≈ 0.5 words
   return Math.round(japaneseChars * 0.5 + englishWords);
 }
@@ -108,7 +106,11 @@ function generateSlug(title: string): string {
 }
 
 // File parsing functions
-function parseJournalFile(filePath: string, type: 'main' | 'annex', date: string): JournalEntry | null {
+function parseJournalFile(
+  filePath: string,
+  type: 'main' | 'annex',
+  date: string
+): JournalEntry | null {
   try {
     if (!existsSync(filePath)) {
       return null;
@@ -151,27 +153,27 @@ function parseSummaryFilename(filename: string): {
   try {
     // Remove .md extension
     const nameWithoutExt = filename.replace(/\.md$/, '');
-    
+
     // Extract ID (first 3 digits)
     const idMatch = nameWithoutExt.match(/^(\d{3})_(.+)$/);
     if (!idMatch) {
       return null;
     }
-    
+
     const [, id, urlPart] = idMatch;
-    
+
     // Parse domain and path
     const parts = urlPart.split('_');
     if (parts.length < 1) {
       return null;
     }
-    
+
     const domain = parts[0].replace(/_/g, '.');
     const path = parts.slice(1).join('/');
-    
+
     // Reconstruct URL
-    const url = `https://${domain}${path ? '/' + path : ''}`;
-    
+    const url = `https://${domain}${path ? `/${path}` : ''}`;
+
     return { id, domain, path, url };
   } catch (error) {
     console.warn(`Failed to parse summary filename ${filename}:`, error);
@@ -187,7 +189,7 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
 
     const filename = filePath.split('/').pop() || '';
     const parsedFilename = parseSummaryFilename(filename);
-    
+
     if (!parsedFilename) {
       return null;
     }
@@ -227,7 +229,7 @@ export function getJournalsPath(): string {
 
 export function getAllJournalDates(): string[] {
   const journalsPath = getJournalsPath();
-  
+
   try {
     if (!existsSync(journalsPath)) {
       console.warn(`Journals directory not found: ${journalsPath}`);
@@ -235,9 +237,9 @@ export function getAllJournalDates(): string[] {
     }
 
     const entries = readdirSync(journalsPath);
-    
+
     return entries
-      .filter(entry => {
+      .filter((entry) => {
         const fullPath = join(journalsPath, entry);
         return statSync(fullPath).isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry);
       })
@@ -265,7 +267,7 @@ export function parseJournalByDate(date: string): JournalArchive | null {
       'main',
       date
     );
-    
+
     // Fallback to older naming convention if not found
     if (!mainJournal) {
       mainJournal = parseJournalFile(
@@ -274,14 +276,14 @@ export function parseJournalByDate(date: string): JournalArchive | null {
         date
       );
     }
-    
+
     // Try both naming conventions for annex journal
     let annexJournal = parseJournalFile(
       join(journalDir, `01_annex_journal_${dateFormatted}.md`),
       'annex',
       date
     );
-    
+
     // Fallback to older naming convention if not found
     if (!annexJournal) {
       annexJournal = parseJournalFile(
@@ -297,20 +299,20 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     if (existsSync(summariesDir)) {
       const summaryFiles = readdirSync(summariesDir)
-        .filter(file => file.endsWith('.md'))
+        .filter((file) => file.endsWith('.md'))
         .sort();
 
       summaries = summaryFiles
-        .map(file => parseSummaryFile(join(summariesDir, file), date))
+        .map((file) => parseSummaryFile(join(summariesDir, file), date))
         .filter((summary): summary is SummaryEntry => summary !== null);
     }
 
     // Calculate stats
     const stats = {
       totalSummaries: summaries.length,
-      mainSummaries: summaries.filter(s => s.status === 'main').length,
-      annexSummaries: summaries.filter(s => s.status === 'annex').length,
-      omittedSummaries: summaries.filter(s => s.status === 'omitted').length,
+      mainSummaries: summaries.filter((s) => s.status === 'main').length,
+      annexSummaries: summaries.filter((s) => s.status === 'annex').length,
+      omittedSummaries: summaries.filter((s) => s.status === 'omitted').length,
     };
 
     // Update summary counts in journals
@@ -339,14 +341,14 @@ export function getLatestJournal(): JournalArchive | null {
   if (dates.length === 0) {
     return null;
   }
-  
+
   return parseJournalByDate(dates[0]);
 }
 
 export function getAllJournals(): JournalArchive[] {
   const dates = getAllJournalDates();
-  
+
   return dates
-    .map(date => parseJournalByDate(date))
+    .map((date) => parseJournalByDate(date))
     .filter((journal): journal is JournalArchive => journal !== null);
 }

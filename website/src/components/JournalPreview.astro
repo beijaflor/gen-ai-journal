@@ -1,6 +1,6 @@
 ---
-import type { JournalEntry } from '@/utils/content-parser';
 import { withBase } from '@/utils/base-path';
+import type { JournalEntry } from '@/utils/content-parser';
 
 export interface Props {
   journal: JournalEntry;
@@ -9,17 +9,16 @@ export interface Props {
   showActions?: boolean;
 }
 
-const { 
+const {
   journal,
   summaryCount = journal.summaryCount,
   showExcerpt = true,
-  showActions = true
+  showActions = true,
 } = Astro.props;
 
 // Format reading time
-const readingTimeText = journal.readingTime === 1 
-  ? '1分で読めます'
-  : `${journal.readingTime}分で読めます`;
+const readingTimeText =
+  journal.readingTime === 1 ? '1分で読めます' : `${journal.readingTime}分で読めます`;
 
 // Format date for display
 const displayDate = new Date(journal.date).toLocaleDateString('ja-JP', {
