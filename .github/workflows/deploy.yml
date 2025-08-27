@@ -46,7 +46,7 @@ jobs:
         working-directory: ./website
 
       - name: Run type check
-        run: npm run typecheck
+        run: npm run type-check
         working-directory: ./website
 
       - name: Run linting
