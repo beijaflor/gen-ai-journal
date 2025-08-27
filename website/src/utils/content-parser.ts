@@ -46,6 +46,16 @@ export interface JournalArchive {
   };
 }
 
+export interface JournalMetadata {
+  date: string;
+  totalSummaries: number;
+  statistics: {
+    mainSummaries: number;
+    annexSummaries: number;
+    omittedSummaries: number;
+  };
+}
+
 // Utility functions
 function extractTitleFromMarkdown(content: string): string {
   // Try to find first heading
@@ -221,6 +231,29 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
   }
 }
 
+// Metadata loading functions
+function loadJournalMetadata(journalDir: string): JournalMetadata {
+  const metadataPath = join(journalDir, 'journal-metadata.json');
+  
+  if (!existsSync(metadataPath)) {
+    throw new Error(`Missing required journal-metadata.json in ${journalDir}`);
+  }
+
+  try {
+    const metadataContent = readFileSync(metadataPath, 'utf-8');
+    const metadata: JournalMetadata = JSON.parse(metadataContent);
+    
+    // Validate metadata structure
+    if (!metadata.date || !metadata.statistics) {
+      throw new Error(`Invalid metadata structure in ${metadataPath}`);
+    }
+    
+    return metadata;
+  } catch (error) {
+    throw new Error(`Failed to parse metadata from ${metadataPath}: ${error}`);
+  }
+}
+
 // Main parsing functions
 export function getJournalsPath(): string {
   // Point to the actual journals directory in the production repository
@@ -260,6 +293,9 @@ export function parseJournalByDate(date: string): JournalArchive | null {
   }
 
   try {
+    // Load required metadata
+    const metadata = loadJournalMetadata(journalDir);
+
     // Try both naming conventions for main journal
     const dateFormatted = date.replace(/-/g, '_');
     let mainJournal = parseJournalFile(
@@ -293,7 +329,7 @@ export function parseJournalByDate(date: string): JournalArchive | null {
       );
     }
 
-    // Parse summaries
+    // Parse summaries (but assign status based on metadata)
     const summariesDir = join(journalDir, 'summaries');
     let summaries: SummaryEntry[] = [];
 
@@ -303,16 +339,29 @@ export function parseJournalByDate(date: string): JournalArchive | null {
         .sort();
 
       summaries = summaryFiles
-        .map((file) => parseSummaryFile(join(summariesDir, file), date))
+        .map((file, index) => {
+          const summary = parseSummaryFile(join(summariesDir, file), date);
+          if (summary) {
+            // Assign status based on metadata counts and order
+            if (index < metadata.statistics.mainSummaries) {
+              summary.status = 'main';
+            } else if (index < metadata.statistics.mainSummaries + metadata.statistics.annexSummaries) {
+              summary.status = 'annex';
+            } else {
+              summary.status = 'omitted';
+            }
+          }
+          return summary;
+        })
         .filter((summary): summary is SummaryEntry => summary !== null);
     }
 
-    // Calculate stats
+    // Use metadata statistics directly
     const stats = {
-      totalSummaries: summaries.length,
-      mainSummaries: summaries.filter((s) => s.status === 'main').length,
-      annexSummaries: summaries.filter((s) => s.status === 'annex').length,
-      omittedSummaries: summaries.filter((s) => s.status === 'omitted').length,
+      totalSummaries: metadata.totalSummaries,
+      mainSummaries: metadata.statistics.mainSummaries,
+      annexSummaries: metadata.statistics.annexSummaries,
+      omittedSummaries: metadata.statistics.omittedSummaries,
     };
 
     // Update summary counts in journals
