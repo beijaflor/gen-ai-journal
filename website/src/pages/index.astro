@@ -37,24 +37,6 @@ const allDates = getAllJournalDates();
     )}
   </section>
 
-  <section class="features-section">
-    <h2>ジャーナルの特徴</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>🎯 厳選されたコンテンツ</h3>
-        <p>週に200以上の記事から18-25の重要な記事を厳選してお届けします。</p>
-      </div>
-      <div class="feature-card">
-        <h3>📝 日本語でのキュレーション</h3>
-        <p>海外の技術記事も日本語で要約・解説。理解しやすい形でお届けします。</p>
-      </div>
-      <div class="feature-card">
-        <h3>🔍 個別サマリーアクセス</h3>
-        <p>メインジャーナルだけでなく、すべての個別サマリーにもアクセス可能です。</p>
-      </div>
-    </div>
-  </section>
-
   <section class="archive-section">
     <h2>アーカイブ</h2>
     <p>過去のジャーナルをすべて閲覧できます。</p>
@@ -99,13 +81,11 @@ const allDates = getAllJournalDates();
   }
 
   .latest-section, 
-  .features-section, 
   .archive-section {
     margin-bottom: 4rem;
   }
 
   .latest-section h2,
-  .features-section h2,
   .archive-section h2 {
     font-size: 2rem;
     color: #1f2937;
@@ -190,30 +170,6 @@ const allDates = getAllJournalDates();
     text-decoration: none;
   }
 
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  .feature-card {
-    padding: 1.5rem;
-    background: #f8fafc;
-    border-radius: 0.75rem;
-    border: 1px solid #e2e8f0;
-  }
-
-  .feature-card h3 {
-    color: #1f2937;
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
-  }
-
-  .feature-card p {
-    color: #64748b;
-    line-height: 1.6;
-  }
 
   .archive-section {
     text-align: center;
@@ -239,11 +195,6 @@ const allDates = getAllJournalDates();
     
     .weekly-journal-container {
       /* No additional styles needed for mobile */
-    }
-    
-    .features-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
     }
   }
 </style>
