@@ -256,8 +256,8 @@ function loadJournalMetadata(journalDir: string): JournalMetadata {
 
 // Main parsing functions
 export function getJournalsPath(): string {
-  // Point to the actual journals directory in the production repository
-  return join(process.cwd(), '../../gen-ai-journal/journals');
+  // Point to the journals directory in the current repository
+  return join(process.cwd(), '../journals');
 }
 
 export function getAllJournalDates(): string[] {
