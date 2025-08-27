@@ -6,6 +6,11 @@ on:
     paths:
       - 'website/**'
       - 'journals/**'
+  pull_request:
+    types: [labeled, synchronize]
+    paths:
+      - 'website/**'
+      - 'journals/**'
   workflow_dispatch:
 
 permissions:
@@ -20,6 +25,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'deploy-preview'))
     steps:
       - name: Checkout
         uses: actions/checkout@v4
