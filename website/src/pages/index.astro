@@ -1,5 +1,5 @@
 ---
-import JournalPreview from '@/components/JournalPreview.astro';
+import WeeklyJournalCard from '@/components/WeeklyJournalCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, getLatestJournal } from '@/utils/content-parser';
@@ -26,19 +26,8 @@ const allDates = getAllJournalDates();
   <section class="latest-section">
     <h2>最新号</h2>
     {latestJournal ? (
-      <div class="journal-previews">
-        {latestJournal.mainJournal && (
-          <JournalPreview 
-            journal={latestJournal.mainJournal} 
-            summaryCount={latestJournal.stats.totalSummaries}
-          />
-        )}
-        {latestJournal.annexJournal && (
-          <JournalPreview 
-            journal={latestJournal.annexJournal} 
-            summaryCount={latestJournal.stats.totalSummaries}
-          />
-        )}
+      <div class="weekly-journal-container">
+        <WeeklyJournalCard journalData={latestJournal} />
       </div>
     ) : (
       <div class="no-content">
@@ -125,10 +114,9 @@ const allDates = getAllJournalDates();
     border-bottom: 2px solid #e5e7eb;
   }
 
-  .journal-previews {
+  .weekly-journal-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
 
   .no-content {
@@ -249,8 +237,8 @@ const allDates = getAllJournalDates();
       font-size: 1.125rem;
     }
     
-    .journal-previews {
-      gap: 1.5rem;
+    .weekly-journal-container {
+      /* No additional styles needed for mobile */
     }
     
     .features-grid {
