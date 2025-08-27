@@ -53,4 +53,14 @@ The site uses the `withBase()` utility function to handle GitHub Pages base path
 
 Deployment is triggered by:
 - Pushes to `main` or `development` branches that modify files in `website/` or `journals/`
+- Pull requests with the `deploy-preview` label that modify files in `website/` or `journals/`
 - Manual workflow dispatch from the Actions tab
+
+#### Pull Request Deployments
+
+To deploy a preview of your changes in a pull request:
+1. Create a pull request with changes to `website/` or `journals/`
+2. Add the `deploy-preview` label to the pull request
+3. The workflow will automatically build and deploy the preview
+
+Note: PR deployments will overwrite the main site temporarily. Remove the `deploy-preview` label if you want to stop deployments for that PR.
