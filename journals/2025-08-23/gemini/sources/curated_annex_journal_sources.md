@@ -1,0 +1,30 @@
+- https://a16z.com/specialized-app-gen-platforms/
+  - AIアプリ生成プラットフォームの市場が専門化していくという洞察は、今後の技術選定において重要な視点となる。
+- https://mark---lawrence.blogspot.com/2025/08/the-ai-vs-authors-results-part-2.html
+  - AIが人間を超える創造性を発揮する可能性を示唆するユニークな実験。AIの能力の限界と可能性を考える上で興味深い。
+- https://playtechnique.io/blog/ai-doesnt-lighten-the-burden-of-mastery.html
+  - AIが開発者のスキル向上を阻害する可能性を指摘する、重要な警鐘。AIとの健全な付き合い方を考える上で必読。
+- https://news.ycombinator.com/item?id=44930581
+  - OpenAIのモデル分離が破られている可能性を示唆する報告。AIの信頼性とセキュリティを考える上で見過ごせない。
+- https://danfabulich.medium.com/llms-tell-bad-jokes-because-they-avoid-surprises-7f111aac4f96
+  - LLMが「驚き」を避けるように設計されているという指摘は、AIの創造性の限界を理解する上で本質的。
+- https://aimode.substack.com/p/ai-apps-are-like-music
+  - AIアプリのビジネスモデルを音楽業界に例えるアナロジーが秀逸。AIアプリ開発者は一読の価値あり。
+- https://www.antirez.com/news/155
+  - Redisの作者による、AIがもたらす長期的な経済的インパクトについての考察。短期的な視点に陥りがちな我々への警鐘。
+- https://zenn.dev/horiyuki42/articles/aa18f3c9448494
+  - 「サブリミナル学習」という現象は、AIのファインチューニングにおける未知のリスクを示唆しており、非常に重要。
+- https://zenn.dev/turing_motors/articles/bfbc91eeb94d64
+  - 自動運転というニッチな分野の技術動向だが、VLAモデルの進化は他の分野にも応用可能な知見を含んでいる。
+- https://www.suzukikenichi.com/blog/seo-has-become-irreplaceable-thanks-to-openais-gpt-5/
+  - AI時代にSEOは不要になるという一般的な見方に一石を投じる、逆張りの論考。
+- https://tonyalicea.dev/blog/cascade-methodology/
+  - AI時代の新しい開発手法「Cascade Methodology」の提案。アジャイルとウォーターフォールのハイブリッドという発想が面白い。
+- https://www.nngroup.com/articles/ai-changing-search-behaviors/
+  - AIがユーザーの検索行動をどう変えているのか、具体的な調査に基づいて分析しており、示唆に富む。
+- https://www.smashingmagazine.com/2025/08/beyond-hype-what-ai-can-do-product-design/
+  - プロダクトデザインの現場でAIをどう活用するか、地に足の着いた実践的な知見が満載。
+- https://zenn.dev/knowledgesense/articles/0712abdd04a4f6
+  - RAGシステムの出典判定精度を向上させる「LoDIT」は、AIの信頼性を高めるための重要な技術。
+- https://www.asahi.com/articles/AST873K4HT87UTIL043M.html
+  - AIと「結婚」した男性の物語は、人間とAIの関係性の未来を考えさせられる、味わい深い一品。
