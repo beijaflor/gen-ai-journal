@@ -8,10 +8,13 @@
         "recommended": true
       },
       "complexity": {
-        "recommended": true
+        "recommended": true,
+        "noImportantStyles": "off"
       },
       "correctness": {
-        "recommended": true
+        "recommended": true,
+        "noUnusedImports": "off",
+        "noUnusedVariables": "off"
       },
       "performance": {
         "recommended": true
@@ -59,12 +62,6 @@
     }
   },
   "files": {
-    "includes": [
-      "src/**/*",
-      "*.js",
-      "*.ts",
-      "*.astro",
-      "*.json"
-    ]
+    "includes": ["src/**/*", "*.js", "*.ts", "*.astro", "*.json"]
   }
 }

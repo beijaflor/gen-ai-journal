@@ -1,19 +1,19 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
 import JournalPreview from '@/components/JournalPreview.astro';
-import { parseJournalByDate, getAllJournalDates } from '@/utils/content-parser';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
 import '@/styles/global.css';
 
 export async function getStaticPaths() {
   const dates = getAllJournalDates();
-  
+
   return dates
-    .map(date => {
+    .map((date) => {
       const journalData = parseJournalByDate(date);
       return journalData ? { params: { date } } : null;
     })
-    .filter(path => path !== null);
+    .filter((path) => path !== null);
 }
 
 const { date } = Astro.params;
@@ -33,7 +33,7 @@ const displayDate = new Date(date).toLocaleDateString('ja-JP', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
-  weekday: 'long'
+  weekday: 'long',
 });
 
 const title = `${displayDate}号 - GenAI週刊`;

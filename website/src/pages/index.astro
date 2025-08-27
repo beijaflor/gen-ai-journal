@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
 import JournalPreview from '@/components/JournalPreview.astro';
-import { getLatestJournal, getAllJournalDates } from '@/utils/content-parser';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, getLatestJournal } from '@/utils/content-parser';
 import '@/styles/global.css';
 
 const title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル';

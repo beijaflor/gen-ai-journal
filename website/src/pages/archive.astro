@@ -1,36 +1,43 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getAllJournals } from '@/utils/content-parser';
 import { withBase } from '@/utils/base-path';
+import { getAllJournals } from '@/utils/content-parser';
 import '@/styles/global.css';
 
 const journals = getAllJournals();
 
 const title = 'アーカイブ - GenAI週刊';
-const description = 'GenAI週刊の過去のジャーナル一覧。メインジャーナル、アネックス、サマリーなど各週の記事をご覧いただけます。';
+const description =
+  'GenAI週刊の過去のジャーナル一覧。メインジャーナル、アネックス、サマリーなど各週の記事をご覧いただけます。';
 
 // Calculate total statistics
-const totalStats = journals.reduce((acc, journal) => ({
-  totalJournals: acc.totalJournals + 1,
-  totalMainJournals: acc.totalMainJournals + (journal.mainJournal ? 1 : 0),
-  totalAnnexJournals: acc.totalAnnexJournals + (journal.annexJournal ? 1 : 0),
-  totalSummaries: acc.totalSummaries + journal.stats.totalSummaries,
-}), {
-  totalJournals: 0,
-  totalMainJournals: 0,
-  totalAnnexJournals: 0,
-  totalSummaries: 0,
-});
+const totalStats = journals.reduce(
+  (acc, journal) => ({
+    totalJournals: acc.totalJournals + 1,
+    totalMainJournals: acc.totalMainJournals + (journal.mainJournal ? 1 : 0),
+    totalAnnexJournals: acc.totalAnnexJournals + (journal.annexJournal ? 1 : 0),
+    totalSummaries: acc.totalSummaries + journal.stats.totalSummaries,
+  }),
+  {
+    totalJournals: 0,
+    totalMainJournals: 0,
+    totalAnnexJournals: 0,
+    totalSummaries: 0,
+  }
+);
 
 // Format journals by year for better organization
-const journalsByYear = journals.reduce((acc, journal) => {
-  const year = journal.date.substring(0, 4);
-  if (!acc[year]) {
-    acc[year] = [];
-  }
-  acc[year].push(journal);
-  return acc;
-}, {} as Record<string, typeof journals>);
+const journalsByYear = journals.reduce(
+  (acc, journal) => {
+    const year = journal.date.substring(0, 4);
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(journal);
+    return acc;
+  },
+  {} as Record<string, typeof journals>
+);
 
 const years = Object.keys(journalsByYear).sort().reverse();
 ---
