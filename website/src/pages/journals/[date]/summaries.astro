@@ -38,19 +38,19 @@ const displayDate = new Date(date).toLocaleDateString('ja-JP', {
 const title = `${displayDate}号 サマリー一覧 - GenAI週刊`;
 const description = `${displayDate}号のGenAI週刊に関連する全サマリー一覧。メイン掲載、アネックス掲載、未掲載サマリーをすべてご覧いただけます。`;
 
-// Group summaries by status for better organization
+// Group summaries by status
 const summariesByStatus = {
   main: journalData.summaries.filter((s) => s.status === 'main'),
   annex: journalData.summaries.filter((s) => s.status === 'annex'),
   omitted: journalData.summaries.filter((s) => s.status === 'omitted'),
 };
 
-// Status display configuration
-const statusConfig = {
-  main: { label: 'メインジャーナル掲載', class: 'status-main', icon: '📰' },
-  annex: { label: 'アネックス掲載', class: 'status-annex', icon: '📄' },
-  omitted: { label: '未掲載サマリー', class: 'status-omitted', icon: '📋' },
-};
+// Pagination for omitted summaries to handle large pages
+const OMITTED_PAGE_SIZE = 50;
+const omittedSummaries = summariesByStatus.omitted;
+const omittedFirstPage = omittedSummaries.slice(0, OMITTED_PAGE_SIZE);
+const hasMoreOmitted = omittedSummaries.length > OMITTED_PAGE_SIZE;
+
 ---
 
 <BaseLayout title={title} description={description}>
@@ -65,7 +65,7 @@ const statusConfig = {
         <span class="separator">›</span>
         <span class="current">サマリー一覧</span>
       </nav>
-
+      
       <h1 class="page-title">
         {displayDate}号 サマリー一覧
       </h1>
@@ -77,121 +77,235 @@ const statusConfig = {
             <div class="stat-label">総サマリー数</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value">{journalData.stats.mainSummaries}</div>
+            <div class="stat-value">{summariesByStatus.main.length}</div>
             <div class="stat-label">メイン掲載</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value">{journalData.stats.annexSummaries}</div>
+            <div class="stat-value">{summariesByStatus.annex.length}</div>
             <div class="stat-label">アネックス掲載</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value">{journalData.stats.omittedSummaries}</div>
+            <div class="stat-value">{summariesByStatus.omitted.length}</div>
             <div class="stat-label">未掲載</div>
           </div>
         </div>
-
+        
         <div class="quick-nav">
           <h3>クイックナビゲーション</h3>
           <div class="nav-links">
-            <a href="#main-summaries" class="nav-link nav-main">
-              📰 メイン掲載 ({journalData.stats.mainSummaries})
-            </a>
-            <a href="#annex-summaries" class="nav-link nav-annex">
-              📄 アネックス掲載 ({journalData.stats.annexSummaries})
-            </a>
-            <a href="#omitted-summaries" class="nav-link nav-omitted">
-              📋 未掲載 ({journalData.stats.omittedSummaries})
-            </a>
+            {summariesByStatus.main.length > 0 && (
+              <a href="#main-summaries" class="nav-link nav-main">
+                📰 メイン掲載 ({summariesByStatus.main.length})
+              </a>
+            )}
+            {summariesByStatus.annex.length > 0 && (
+              <a href="#annex-summaries" class="nav-link nav-annex">
+                📄 アネックス掲載 ({summariesByStatus.annex.length})
+              </a>
+            )}
+            {summariesByStatus.omitted.length > 0 && (
+              <a href="#omitted-summaries" class="nav-link nav-omitted">
+                📋 未掲載 ({summariesByStatus.omitted.length})
+              </a>
+            )}
           </div>
         </div>
       </div>
     </header>
 
     <main class="summaries-content">
-      {Object.entries(summariesByStatus).map(([status, summaries]) => {
-        const config = statusConfig[status as keyof typeof statusConfig];
-        
-        if (summaries.length === 0) return null;
-        
-        return (
-          <section class="status-section" id={`${status}-summaries`}>
-            <header class="section-header">
-              <h2 class="section-title">
-                <span class="section-icon">{config.icon}</span>
-                {config.label}
-                <span class="section-count">({summaries.length}件)</span>
-              </h2>
-              
-              {status === 'main' && journalData.mainJournal && (
-                <a href={withBase(`/journals/${date}/main/`)} class="section-link">
-                  メインジャーナルを読む →
-                </a>
-              )}
-              
-              {status === 'annex' && journalData.annexJournal && (
-                <a href={withBase(`/journals/${date}/annex/`)} class="section-link">
-                  アネックスを読む →
-                </a>
-              )}
-            </header>
+      <!-- Main summaries section -->
+      {summariesByStatus.main.length > 0 && (
+        <section class="status-section" id="main-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📰</span>
+              メインジャーナル掲載
+              <span class="section-count">({summariesByStatus.main.length}件)</span>
+            </h2>
+            {journalData.mainJournal && (
+              <a href={withBase(`/journals/${date}/main/`)} class="section-link">
+                メインジャーナルを読む →
+              </a>
+            )}
+          </header>
 
-            <div class="summaries-grid">
-              {summaries.map(summary => (
-                <article class="summary-card">
-                  <header class="summary-header">
-                    <div class="summary-id">#{summary.id}</div>
-                    <div class="summary-domain">
-                      <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-                        {summary.domain}
-                      </a>
-                    </div>
-                  </header>
-
-                  <div class="summary-content">
-                    <h3 class="summary-title">{summary.title}</h3>
-                    <p class="summary-excerpt">{summary.excerpt}</p>
-                    
-                    <div class="summary-meta">
-                      <span class={`summary-status ${config.class}`}>
-                        {config.label}
-                      </span>
-                      <span class="summary-stats">
-                        {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
-                      </span>
-                    </div>
-                  </div>
-
-                  <footer class="summary-actions">
-                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                      元記事を読む
+          <div class="summaries-grid">
+            {summariesByStatus.main.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
                     </a>
-                    <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
-                      詳細を見る
-                    </button>
-                  </footer>
-
-                  <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
-                    <div class="content-divider"></div>
-                    <div class="full-content-text" set:html={
-                      summary.content
-                        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-                        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-                        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-                        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                        .replace(/\n\n/g, '</p><p>')
-                        .replace(/^(.+)$/gm, '<p>$1</p>')
-                        .replace(/<p><h([1-6])>/g, '<h$1>')
-                        .replace(/<\/h([1-6])><\/p>/g, '</h$1>')
-                    } />
                   </div>
-                </article>
-              ))}
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+                  
+                  <div class="summary-meta">
+                    <span class="summary-status status-main">
+                      メインジャーナル掲載
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <div class="full-content-text" set:html={summary.content} />
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Annex summaries section -->
+      {summariesByStatus.annex.length > 0 && (
+        <section class="status-section" id="annex-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📄</span>
+              アネックスジャーナル掲載
+              <span class="section-count">({summariesByStatus.annex.length}件)</span>
+            </h2>
+            {journalData.annexJournal && (
+              <a href={withBase(`/journals/${date}/annex/`)} class="section-link">
+                アネックスを読む →
+              </a>
+            )}
+          </header>
+
+          <div class="summaries-grid">
+            {summariesByStatus.annex.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
+                    </a>
+                  </div>
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+                  
+                  <div class="summary-meta">
+                    <span class="summary-status status-annex">
+                      アネックスジャーナル掲載
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <div class="full-content-text" set:html={summary.content} />
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Omitted summaries section with pagination -->
+      {omittedSummaries.length > 0 && (
+        <section class="status-section" id="omitted-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📋</span>
+              未掲載サマリー
+              <span class="section-count">({omittedSummaries.length}件)</span>
+            </h2>
+          </header>
+
+          <div class="summaries-grid" id="omitted-summaries-grid">
+            {omittedFirstPage.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
+                    </a>
+                  </div>
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+                  
+                  <div class="summary-meta">
+                    <span class="summary-status status-omitted">
+                      未掲載サマリー
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <div class="full-content-text" set:html={summary.content} />
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {hasMoreOmitted && (
+            <div class="pagination-controls">
+              <button id="load-more-omitted" class="btn btn-outline load-more-btn" 
+                      data-current-page="1"
+                      data-total-summaries={omittedSummaries.length}
+                      data-page-size={OMITTED_PAGE_SIZE}>
+                さらに{Math.min(OMITTED_PAGE_SIZE, omittedSummaries.length - OMITTED_PAGE_SIZE)}件を表示 
+                ({OMITTED_PAGE_SIZE + 1}〜{Math.min(OMITTED_PAGE_SIZE * 2, omittedSummaries.length)})
+              </button>
+              <div class="pagination-info">
+                表示中: 1〜{Math.min(OMITTED_PAGE_SIZE, omittedSummaries.length)} / 全{omittedSummaries.length}件
+              </div>
             </div>
-          </section>
-        );
-      })}
+          )}
+        </section>
+      )}
       
       {journalData.summaries.length === 0 && (
         <div class="empty-state">
@@ -210,18 +324,23 @@ const statusConfig = {
   </div>
 </BaseLayout>
 
-<script>
+<!-- Embedded JSON data for pagination -->
+<script type="application/json" id="omitted-summaries-data" is:inline>
+  {JSON.stringify(omittedSummaries)}
+</script>
+
+<script is:inline>
   // Toggle summary content visibility
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggleButtons = document.querySelectorAll('.toggle-content');
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggleButtons = document.querySelectorAll('.toggle-content');
     
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const summaryId = button.getAttribute('data-summary-id');
-        const contentDiv = document.getElementById(`content-${summaryId}`);
+    toggleButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var summaryId = button.getAttribute('data-summary-id');
+        var contentDiv = document.getElementById('content-' + summaryId);
         
         if (contentDiv) {
-          const isVisible = contentDiv.style.display !== 'none';
+          var isVisible = contentDiv.style.display !== 'none';
           
           if (isVisible) {
             contentDiv.style.display = 'none';
@@ -233,6 +352,103 @@ const statusConfig = {
         }
       });
     });
+
+    // Pagination for omitted summaries
+    var loadMoreBtn = document.getElementById('load-more-omitted');
+    if (loadMoreBtn) {
+      var dataElement = document.getElementById('omitted-summaries-data');
+      if (!dataElement) return;
+      
+      var summariesData = JSON.parse(dataElement.textContent || '[]');
+      
+      loadMoreBtn.addEventListener('click', function() {
+        var currentPage = parseInt(loadMoreBtn.dataset.currentPage || '0');
+        var pageSize = parseInt(loadMoreBtn.dataset.pageSize || '50');
+        var totalSummaries = parseInt(loadMoreBtn.dataset.totalSummaries || '0');
+        
+        var startIndex = currentPage * pageSize;
+        var endIndex = Math.min(startIndex + pageSize, totalSummaries);
+        var nextPageData = summariesData.slice(startIndex, endIndex);
+        
+        // Add next page summaries to the grid
+        var grid = document.getElementById('omitted-summaries-grid');
+        if (!grid) return;
+        
+        nextPageData.forEach(function(summary) {
+          var article = document.createElement('article');
+          article.className = 'summary-card';
+          article.innerHTML = 
+            '<header class="summary-header">' +
+              '<div class="summary-id">#' + summary.id + '</div>' +
+              '<div class="summary-domain">' +
+                '<a href="' + summary.sourceUrl + '" target="_blank" rel="noopener noreferrer">' +
+                  summary.domain +
+                '</a>' +
+              '</div>' +
+            '</header>' +
+            '<div class="summary-content">' +
+              '<h3 class="summary-title">' + summary.title + '</h3>' +
+              '<p class="summary-excerpt">' + summary.excerpt + '</p>' +
+              '<div class="summary-meta">' +
+                '<span class="summary-status status-omitted">未掲載サマリー</span>' +
+                '<span class="summary-stats">' + summary.wordCount.toLocaleString() + '文字 • ' + summary.readingTime + '分</span>' +
+              '</div>' +
+            '</div>' +
+            '<footer class="summary-actions">' +
+              '<a href="' + summary.sourceUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary">元記事を読む</a>' +
+              '<button class="btn btn-outline toggle-content" data-summary-id="' + summary.id + '">詳細を見る</button>' +
+            '</footer>' +
+            '<div class="summary-full-content" id="content-' + summary.id + '" style="display: none;">' +
+              '<div class="content-divider"></div>' +
+              '<div class="full-content-text">' + summary.content + '</div>' +
+            '</div>';
+          
+          // Add toggle functionality for new cards
+          var toggleBtn = article.querySelector('.toggle-content');
+          if (toggleBtn) {
+            toggleBtn.addEventListener('click', function() {
+              var summaryId = toggleBtn.getAttribute('data-summary-id');
+              var contentDiv = document.getElementById('content-' + summaryId);
+              
+              if (contentDiv) {
+                var isVisible = contentDiv.style.display !== 'none';
+                
+                if (isVisible) {
+                  contentDiv.style.display = 'none';
+                  toggleBtn.textContent = '詳細を見る';
+                } else {
+                  contentDiv.style.display = 'block';
+                  toggleBtn.textContent = '詳細を隠す';
+                }
+              }
+            });
+          }
+          
+          grid.appendChild(article);
+        });
+        
+        // Update button state
+        var newCurrentPage = currentPage + 1;
+        loadMoreBtn.dataset.currentPage = newCurrentPage.toString();
+        
+        var remainingItems = totalSummaries - endIndex;
+        if (remainingItems <= 0) {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          var nextStartIndex = endIndex + 1;
+          var nextEndIndex = Math.min(endIndex + pageSize, totalSummaries);
+          loadMoreBtn.innerHTML = 
+            'さらに' + Math.min(pageSize, remainingItems) + '件を表示 (' + 
+            nextStartIndex + '〜' + nextEndIndex + ')';
+        }
+        
+        // Update pagination info
+        var paginationInfo = document.querySelector('.pagination-info');
+        if (paginationInfo) {
+          paginationInfo.textContent = '表示中: 1〜' + endIndex + ' / 全' + totalSummaries + '件';
+        }
+      });
+    }
   });
 </script>
 
@@ -282,30 +498,28 @@ const statusConfig = {
   }
 
   .summaries-overview {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
   }
 
   .overview-stats {
-    display: flex;
-    justify-content: space-around;
-    background: #f8fafc;
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    border: 1px solid #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   .stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .stat-value {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #2563eb;
     line-height: 1;
@@ -320,33 +534,35 @@ const statusConfig = {
 
   .quick-nav h3 {
     font-size: 1.125rem;
-    font-weight: 600;
-    color: #1f2937;
+    color: #374151;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
   .nav-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    padding: 0.75rem;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
     text-decoration: none;
-    color: #374151;
+    font-size: 0.875rem;
     font-weight: 500;
+    color: #374151;
     transition: all 0.2s ease;
   }
 
   .nav-link:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    text-decoration: none;
   }
 
   .summaries-content {
@@ -356,27 +572,25 @@ const statusConfig = {
   }
 
   .status-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    /* Section styling */
   }
 
   .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #e5e7eb;
   }
 
   .section-title {
+    font-size: 1.875rem;
+    color: #1f2937;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-size: 1.875rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin: 0;
   }
 
   .section-icon {
@@ -384,9 +598,8 @@ const statusConfig = {
   }
 
   .section-count {
-    font-size: 1rem;
     color: #6b7280;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .section-link {
@@ -394,29 +607,30 @@ const statusConfig = {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.875rem;
+    transition: color 0.2s ease;
   }
 
   .section-link:hover {
+    color: #1d4ed8;
     text-decoration: underline;
   }
 
   .summaries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
   }
 
   .summary-card {
-    background: #ffffff;
+    background: white;
     border: 1px solid #e5e7eb;
     border-radius: 0.75rem;
-    padding: 1.5rem;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    overflow: hidden;
     transition: all 0.2s ease;
   }
 
   .summary-card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-color: #d1d5db;
   }
 
@@ -424,15 +638,15 @@ const statusConfig = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .summary-id {
     font-weight: 700;
     color: #6b7280;
     font-size: 0.875rem;
-    flex-shrink: 0;
   }
 
   .summary-domain a {
@@ -447,39 +661,44 @@ const statusConfig = {
   }
 
   .summary-content {
-    margin-bottom: 1.5rem;
+    padding: 1.5rem;
   }
 
   .summary-title {
     font-size: 1.125rem;
     font-weight: 600;
     color: #1f2937;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .summary-excerpt {
     color: #4b5563;
     line-height: 1.6;
     margin: 0 0 1rem 0;
-    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .summary-meta {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    font-size: 0.75rem;
     flex-wrap: wrap;
   }
 
   .summary-status {
     padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.625rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.75rem;
   }
 
   .status-main {
@@ -499,14 +718,16 @@ const statusConfig = {
 
   .summary-stats {
     color: #6b7280;
-    font-size: 0.75rem;
     font-weight: 500;
   }
 
   .summary-actions {
     display: flex;
+    justify-content: space-between;
     gap: 0.75rem;
-    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
   }
 
   .btn {
@@ -521,7 +742,8 @@ const statusConfig = {
     border: 1px solid transparent;
     cursor: pointer;
     background: none;
-    font-family: inherit;
+    text-align: center;
+    justify-content: center;
   }
 
   .btn-primary {
@@ -547,40 +769,73 @@ const statusConfig = {
   }
 
   .summary-full-content {
-    margin-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    background: #fafafa;
   }
 
   .content-divider {
     height: 1px;
     background: #e5e7eb;
-    margin-bottom: 1.5rem;
+    margin: 0;
   }
 
   .full-content-text {
-    font-size: 0.95rem;
+    padding: 1.5rem;
     line-height: 1.7;
     color: #374151;
   }
 
-  .full-content-text :global(h1),
-  .full-content-text :global(h2),
-  .full-content-text :global(h3) {
+  .full-content-text h1,
+  .full-content-text h2,
+  .full-content-text h3 {
     color: #1f2937;
     font-weight: 600;
-    margin: 1.5rem 0 0.75rem 0;
+    margin: 1rem 0 0.5rem 0;
   }
 
-  .full-content-text :global(p) {
-    margin: 0 0 1rem 0;
+  .full-content-text h1 {
+    font-size: 1.5rem;
   }
 
-  .full-content-text :global(a) {
-    color: #2563eb;
-    text-decoration: none;
+  .full-content-text h2 {
+    font-size: 1.25rem;
   }
 
-  .full-content-text :global(a:hover) {
-    text-decoration: underline;
+  .full-content-text h3 {
+    font-size: 1.125rem;
+  }
+
+  .full-content-text p {
+    margin: 0.75rem 0;
+  }
+
+  .pagination-controls {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+  }
+
+  .load-more-btn {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+  }
+
+  .pagination-info {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
   }
 
   .summaries-footer {
@@ -595,51 +850,24 @@ const statusConfig = {
     gap: 1rem;
   }
 
-  .empty-state {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: #6b7280;
-  }
-
-  .empty-state p {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-  }
-
   /* Responsive design */
   @media (max-width: 768px) {
-    .page-title {
-      font-size: 2rem;
-    }
-
-    .summaries-overview {
+    .summaries-grid {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
 
-    .overview-stats {
-      flex-direction: column;
-      gap: 1rem;
-      text-align: center;
+    .page-title {
+      font-size: 2rem;
     }
 
-    .summaries-grid {
-      grid-template-columns: 1fr;
+    .overview-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .section-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-
-    .summary-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-
-    .summary-meta {
       flex-direction: column;
       align-items: flex-start;
       gap: 0.5rem;
@@ -647,10 +875,6 @@ const statusConfig = {
 
     .summary-actions {
       flex-direction: column;
-    }
-
-    .btn {
-      justify-content: center;
     }
 
     .footer-actions {
