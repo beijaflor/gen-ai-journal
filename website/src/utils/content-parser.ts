@@ -402,25 +402,48 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     if (existsSync(summariesDir)) {
       const summaryFiles = readdirSync(summariesDir)
-        .filter((file) => file.endsWith('.md'))
-        .sort();
+        .filter((file) => file.endsWith('.md'));
 
-      summaries = summaryFiles
-        .map((file, index) => {
+      // Parse and sort by numeric ID from filename
+      const summariesWithIds = summaryFiles
+        .map((file) => {
           const summary = parseSummaryFile(join(summariesDir, file), date);
           if (summary) {
-            // Assign status based on metadata counts and order
-            if (index < metadata.statistics.mainSummaries) {
-              summary.status = 'main';
-            } else if (index < metadata.statistics.mainSummaries + metadata.statistics.annexSummaries) {
-              summary.status = 'annex';
-            } else {
-              summary.status = 'omitted';
-            }
+            // Extract numeric ID from filename for proper sorting
+            const numericId = parseInt(summary.id, 10);
+            return { summary, numericId, filename: file };
           }
-          return summary;
+          return null;
         })
-        .filter((summary): summary is SummaryEntry => summary !== null);
+        .filter((item): item is { summary: SummaryEntry; numericId: number; filename: string } => item !== null);
+
+      // Sort by numeric ID, then by filename for consistent ordering of duplicates
+      summariesWithIds.sort((a, b) => {
+        if (a.numericId !== b.numericId) {
+          return a.numericId - b.numericId;
+        }
+        // For duplicate IDs, sort alphabetically by filename
+        return a.filename.localeCompare(b.filename);
+      });
+
+      // Assign status based on metadata counts and sorted position
+      summaries = summariesWithIds.map(({ summary }, sortedIndex) => {
+        if (sortedIndex < metadata.statistics.mainSummaries) {
+          summary.status = 'main';
+        } else if (sortedIndex < metadata.statistics.mainSummaries + metadata.statistics.annexSummaries) {
+          summary.status = 'annex';
+        } else {
+          summary.status = 'omitted';
+        }
+        return summary;
+      });
+
+      // Validate that we have the expected number of summaries
+      if (summaries.length !== metadata.totalSummaries) {
+        console.warn(
+          `Summary count mismatch for ${date}: found ${summaries.length} files, expected ${metadata.totalSummaries}`
+        );
+      }
     }
 
     // Use metadata statistics directly
