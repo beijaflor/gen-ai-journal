@@ -325,9 +325,7 @@ const hasMoreOmitted = omittedSummaries.length > OMITTED_PAGE_SIZE;
 </BaseLayout>
 
 <!-- Embedded JSON data for pagination -->
-<script type="application/json" id="omitted-summaries-data" is:inline>
-  {JSON.stringify(omittedSummaries)}
-</script>
+<script type="application/json" id="omitted-summaries-data" set:html={JSON.stringify(omittedSummaries)}></script>
 
 <script is:inline>
   // Toggle summary content visibility
