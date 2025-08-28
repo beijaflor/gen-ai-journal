@@ -4,8 +4,8 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   // GitHub Pages configuration
-  site: 'https://shootani.github.io',
-  base: process.env.ASTRO_BASE || '/gen-ai-journal-dev',
+  site: 'https://beijaflor.github.io',
+  base: process.env.ASTRO_BASE || '/gen-ai-journal',
   
   // Output configuration
   output: 'static',
