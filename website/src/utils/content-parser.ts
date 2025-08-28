@@ -225,22 +225,42 @@ function parseSummaryFilename(filename: string): {
     // Remove .md extension
     const nameWithoutExt = filename.replace(/\.md$/, '');
 
-    // Extract ID (first 3 digits)
-    const idMatch = nameWithoutExt.match(/^(\d{3})_(.+)$/);
-    if (!idMatch) {
-      return null;
+    // Try new format first: 001_domain_com_path.md
+    const newFormatMatch = nameWithoutExt.match(/^(\d{3})_(.+)$/);
+    if (newFormatMatch) {
+      const [, id, urlPart] = newFormatMatch;
+
+      // Parse domain and path
+      const parts = urlPart.split('_');
+      if (parts.length < 1) {
+        return null;
+      }
+
+      const domain = parts[0].replace(/_/g, '.');
+      const path = parts.slice(1).join('/');
+
+      // Reconstruct URL
+      const url = `https://${domain}${path ? `/${path}` : ''}`;
+
+      return { id, domain, path, url };
     }
 
-    const [, id, urlPart] = idMatch;
-
-    // Parse domain and path
-    const parts = urlPart.split('_');
+    // Try old format: domain_com_path.md (without numeric prefix)
+    // Generate sequential ID based on alphabetical order
+    const parts = nameWithoutExt.split('_');
     if (parts.length < 1) {
       return null;
     }
 
     const domain = parts[0].replace(/_/g, '.');
     const path = parts.slice(1).join('/');
+    
+    // Generate a hash-based ID for consistent ordering
+    let hash = 0;
+    for (let i = 0; i < nameWithoutExt.length; i++) {
+      hash = ((hash << 5) - hash + nameWithoutExt.charCodeAt(i)) & 0xffffff;
+    }
+    const id = String(Math.abs(hash % 1000)).padStart(3, '0');
 
     // Reconstruct URL
     const url = `https://${domain}${path ? `/${path}` : ''}`;
@@ -397,17 +417,25 @@ export function parseJournalByDate(date: string): JournalArchive | null {
     }
 
     // Parse summaries (but assign status based on metadata)
-    const summariesDir = join(journalDir, 'summaries');
+    // Try both 'summaries' and 'sources' directories for backward compatibility
+    let summariesDir = join(journalDir, 'summaries');
     let summaries: SummaryEntry[] = [];
 
+    // Fallback to 'sources' directory for older journal structure
+    if (!existsSync(summariesDir)) {
+      summariesDir = join(journalDir, 'sources');
+    }
+
     if (existsSync(summariesDir)) {
-      const summaryFiles = readdirSync(summariesDir)
-        .filter((file) => file.endsWith('.md'));
+      const allFiles = readdirSync(summariesDir);
+      const summaryFiles = allFiles.filter((file) => file.endsWith('.md'));
 
       // Parse and sort by numeric ID from filename
       const summariesWithIds = summaryFiles
         .map((file) => {
-          const summary = parseSummaryFile(join(summariesDir, file), date);
+          const filePath = join(summariesDir, file);
+          const summary = parseSummaryFile(filePath, date);
+          
           if (summary) {
             // Extract numeric ID from filename for proper sorting
             const numericId = parseInt(summary.id, 10);
