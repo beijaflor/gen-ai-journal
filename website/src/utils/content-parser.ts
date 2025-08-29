@@ -428,7 +428,11 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     if (existsSync(summariesDir)) {
       const allFiles = readdirSync(summariesDir);
-      const summaryFiles = allFiles.filter((file) => file.endsWith('.md'));
+      const summaryFiles = allFiles.filter((file) => 
+        file.endsWith('.md') && 
+        !file.includes('sources.md') && 
+        !file.includes('omitted_sources.md')
+      );
 
       // Parse and sort by numeric ID from filename
       const summariesWithIds = summaryFiles
@@ -474,12 +478,16 @@ export function parseJournalByDate(date: string): JournalArchive | null {
       }
     }
 
-    // Use metadata statistics directly
+    // Use actual parsed summaries count as single source of truth
+    const mainCount = summaries.filter(s => s.status === 'main').length;
+    const annexCount = summaries.filter(s => s.status === 'annex').length;
+    const omittedCount = summaries.filter(s => s.status === 'omitted').length;
+    
     const stats = {
-      totalSummaries: metadata.totalSummaries,
-      mainSummaries: metadata.statistics.mainSummaries,
-      annexSummaries: metadata.statistics.annexSummaries,
-      omittedSummaries: metadata.statistics.omittedSummaries,
+      totalSummaries: summaries.length,
+      mainSummaries: mainCount,
+      annexSummaries: annexCount,
+      omittedSummaries: omittedCount,
     };
 
     // Update summary counts in journals
