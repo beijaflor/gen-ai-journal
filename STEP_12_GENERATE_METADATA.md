@@ -12,7 +12,9 @@ This step creates the mandatory `journal-metadata.json` file containing summary 
    ```
 
 2. **Count summary statistics**
-   - Count total summaries: `ls -1 summaries/*.md | wc -l`
+   - Count total summaries: 
+     - New structure: `ls -1 summaries/*.md | wc -l`
+     - Old structure: `ls -1 sources/*.md | grep -v "sources.md" | wc -l`
    - Count main journal URLs: `grep -c "https://" sources/curated_journal_sources.md` 
    - Count annex journal URLs: `grep -c "https://" sources/curated_annex_journal_sources.md`
    - Calculate omitted: total - main - annex
@@ -63,7 +65,18 @@ For journal `2025-08-23`:
 #!/bin/bash
 # Generate metadata for current directory
 
-TOTAL=$(ls -1 summaries/*.md 2>/dev/null | wc -l)
+# Determine which directory structure is used and count summaries
+if [ -d "summaries" ]; then
+  # New structure: count all .md files in summaries/
+  TOTAL=$(ls -1 summaries/*.md 2>/dev/null | wc -l)
+elif [ -d "sources" ]; then
+  # Old structure: count all .md files in sources/ excluding sources.md files
+  TOTAL=$(ls -1 sources/*.md 2>/dev/null | grep -v "sources.md" | wc -l)
+else
+  echo "Error: Neither summaries/ nor sources/ directory found"
+  exit 1
+fi
+
 MAIN=$(grep -c "https://" sources/curated_journal_sources.md 2>/dev/null || echo 0)
 ANNEX=$(grep -c "https://" sources/curated_annex_journal_sources.md 2>/dev/null || echo 0)
 OMITTED=$((TOTAL - MAIN - ANNEX))
