@@ -39,13 +39,5 @@ export function registerMarkdownRenderer() {
   registerComponent('markdown-renderer', MarkdownRenderer);
 }
 
-// Auto-register all components when this module is imported
-// (Remove this if you prefer manual registration)
-if (typeof window !== 'undefined') {
-  // Ensure DOM is ready before registering
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', registerAllComponents);
-  } else {
-    registerAllComponents();
-  }
-}
+// Note: Auto-registration removed to prevent duplicate registrations.
+// Components are now registered explicitly from the consuming pages.
