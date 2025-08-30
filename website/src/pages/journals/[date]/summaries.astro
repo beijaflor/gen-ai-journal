@@ -3,6 +3,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
 import '@/styles/global.css';
+import DOMPurify from 'dompurify';
+import { JSDOM } from 'jsdom';
 
 export async function getStaticPaths() {
   const dates = getAllJournalDates();
@@ -38,11 +40,29 @@ const displayDate = new Date(date).toLocaleDateString('ja-JP', {
 const title = `${displayDate}号 サマリー一覧 - GenAI週刊`;
 const description = `${displayDate}号のGenAI週刊に関連する全サマリー一覧。メイン掲載、アネックス掲載、未掲載サマリーをすべてご覧いただけます。`;
 
-// Group summaries by status
+// Server-side sanitization function
+const window = new JSDOM('').window;
+const purify = DOMPurify(window);
+
+function sanitizeContent(content: string): string {
+  // Sanitize the markdown content to prevent XSS
+  return purify.sanitize(content);
+}
+
+// Group summaries by status with sanitized content
 const summariesByStatus = {
-  main: journalData.summaries.filter((s) => s.status === 'main'),
-  annex: journalData.summaries.filter((s) => s.status === 'annex'),
-  omitted: journalData.summaries.filter((s) => s.status === 'omitted'),
+  main: journalData.summaries.filter((s) => s.status === 'main').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
+  annex: journalData.summaries.filter((s) => s.status === 'annex').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
+  omitted: journalData.summaries.filter((s) => s.status === 'omitted').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
 };
 
 ---
@@ -161,7 +181,7 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text">{summary.content}</div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
                 </div>
               </article>
             ))}
@@ -222,7 +242,7 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text">{summary.content}</div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
                 </div>
               </article>
             ))}
@@ -278,7 +298,7 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text">{summary.content}</div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
                 </div>
               </article>
             ))}
@@ -329,6 +349,15 @@ const summariesByStatus = {
     });
 
   });
+</script>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/marked@16.2.1/marked.min.js"></script>
+<script type="module">
+  // Import and register web components
+  import { registerMarkdownRenderer } from '@/components/web-components/index.js';
+  
+  // Register the markdown renderer component
+  registerMarkdownRenderer();
 </script>
 
 <style>
