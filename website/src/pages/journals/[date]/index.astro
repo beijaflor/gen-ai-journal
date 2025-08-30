@@ -1,0 +1,529 @@
+---
+import JournalPreview from '@/components/JournalPreview.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
+import '@/styles/global.css';
+
+export async function getStaticPaths() {
+  const dates = getAllJournalDates();
+
+  return dates
+    .map((date) => {
+      const journalData = parseJournalByDate(date);
+      return journalData ? { params: { date } } : null;
+    })
+    .filter((path) => path !== null);
+}
+
+const { date } = Astro.params;
+
+if (!date || typeof date !== 'string') {
+  throw new Error('Invalid date parameter');
+}
+
+const journalData = parseJournalByDate(date);
+
+if (!journalData) {
+  throw new Error(`Journal not found for date: ${date}`);
+}
+
+// Format date for display
+const displayDate = new Date(date).toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  weekday: 'long',
+});
+
+const title = `${displayDate}号 - GenAI週刊`;
+const description = `${displayDate}号のGenAI週刊ジャーナル概要。メインジャーナル、アネックス、サマリー一覧をご覧いただけます。`;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="journal-overview">
+    <header class="overview-header">
+      <nav class="breadcrumb">
+        <a href={withBase('/')}>ホーム</a>
+        <span class="separator">›</span>
+        <a href={withBase('/archive/')}>アーカイブ</a>
+        <span class="separator">›</span>
+        <span class="current">{displayDate}号</span>
+      </nav>
+      
+      <h1 class="page-title">GenAI週刊 {displayDate}号</h1>
+      
+      <div class="overview-stats">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">{journalData.stats.totalSummaries}</div>
+            <div class="stat-label">総サマリー数</div>
+          </div>
+          {journalData.mainJournal && (
+            <div class="stat-item">
+              <div class="stat-value">{journalData.mainJournal.readingTime}分</div>
+              <div class="stat-label">メイン読了時間</div>
+            </div>
+          )}
+          {journalData.annexJournal && (
+            <div class="stat-item">
+              <div class="stat-value">{journalData.annexJournal.readingTime}分</div>
+              <div class="stat-label">アネックス読了時間</div>
+            </div>
+          )}
+          <div class="stat-item">
+            <div class="stat-value">{journalData.stats.omittedSummaries}</div>
+            <div class="stat-label">未掲載サマリー</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="overview-content">
+      <section class="journals-section">
+        <h2>この週のジャーナル</h2>
+        
+        <div class="journal-previews">
+          {journalData.mainJournal && (
+            <div class="journal-preview-wrapper">
+              <JournalPreview 
+                journal={journalData.mainJournal} 
+                summaryCount={journalData.stats.totalSummaries}
+                showExcerpt={true}
+                showActions={true}
+              />
+            </div>
+          )}
+          
+          {journalData.annexJournal && (
+            <div class="journal-preview-wrapper">
+              <JournalPreview 
+                journal={journalData.annexJournal} 
+                summaryCount={journalData.stats.totalSummaries}
+                showExcerpt={true}
+                showActions={true}
+              />
+            </div>
+          )}
+        </div>
+        
+        {!journalData.mainJournal && !journalData.annexJournal && (
+          <div class="no-journals">
+            <p>この週のジャーナルは利用できません。</p>
+          </div>
+        )}
+      </section>
+
+      {journalData.summaries.length > 0 && (
+        <section class="summaries-section">
+          <div class="section-header">
+            <h2>サマリー一覧</h2>
+            <a href={withBase(`/journals/${date}/summaries/`)} class="view-all-link">
+              すべて見る ({journalData.stats.totalSummaries}件) →
+            </a>
+          </div>
+          
+          <div class="summaries-preview">
+            <div class="summaries-stats">
+              <div class="stats-row">
+                <div class="stat">
+                  <span class="stat-number">{journalData.stats.mainSummaries}</span>
+                  <span class="stat-text">メインに掲載</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">{journalData.stats.annexSummaries}</span>
+                  <span class="stat-text">アネックスに掲載</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">{journalData.stats.omittedSummaries}</span>
+                  <span class="stat-text">未掲載</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="summary-samples">
+              {journalData.summaries.slice(0, 3).map(summary => (
+                <div class="summary-sample">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-info">
+                    <h4 class="summary-title">{summary.title}</h4>
+                    <div class="summary-meta">
+                      <span class="summary-domain">{summary.domain}</span>
+                      <span class="summary-words">{summary.wordCount}文字</span>
+                      <span class={`summary-status status-${summary.status}`}>
+                        {summary.status === 'main' ? 'メイン' : summary.status === 'annex' ? 'アネックス' : '未掲載'}
+                      </span>
+                    </div>
+                    <p class="summary-excerpt">{summary.excerpt}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </main>
+
+    <footer class="overview-footer">
+      <div class="navigation-actions">
+        <a href={withBase('/archive/')} class="btn btn-outline">
+          ← アーカイブに戻る
+        </a>
+        {journalData.summaries.length > 0 && (
+          <a href={withBase(`/journals/${date}/summaries/`)} class="btn btn-primary">
+            全サマリーを見る →
+          </a>
+        )}
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style>
+  .journal-overview {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .overview-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: #9ca3af;
+  }
+
+  .current {
+    color: #374151;
+    font-weight: 500;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  .overview-stats {
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .overview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .journals-section h2,
+  .summaries-section h2 {
+    font-size: 1.875rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .journal-previews {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .journal-preview-wrapper {
+    /* Wrapper for consistent spacing */
+  }
+
+  .no-journals {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .view-all-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+  }
+
+  .view-all-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+
+  .summaries-preview {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .summaries-stats {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .stats-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .stat-text {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+  }
+
+  .summary-samples {
+    padding: 1.5rem;
+  }
+
+  .summary-sample {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .summary-sample:last-child {
+    border-bottom: none;
+  }
+
+  .summary-id {
+    font-weight: 700;
+    color: #6b7280;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    width: 3rem;
+  }
+
+  .summary-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .summary-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+  }
+
+  .summary-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .summary-domain {
+    color: #2563eb;
+    font-weight: 500;
+  }
+
+  .summary-words {
+    color: #6b7280;
+  }
+
+  .summary-status {
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+  }
+
+  .status-main {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .status-annex {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .status-omitted {
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+
+  .summary-excerpt {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .overview-footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .navigation-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .journal-previews {
+      gap: 1.5rem;
+    }
+
+    .stats-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .summary-sample {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .summary-id {
+      width: auto;
+    }
+
+    .navigation-actions {
+      flex-direction: column;
+    }
+
+    .btn {
+      justify-content: center;
+    }
+  }
+</style>
