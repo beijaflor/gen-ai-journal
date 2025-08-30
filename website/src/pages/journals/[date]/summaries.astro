@@ -59,11 +59,11 @@ const summariesByStatus = {
         <span class="separator">›</span>
         <span class="current">サマリー一覧</span>
       </nav>
-      
+
       <h1 class="page-title">
         {displayDate}号 サマリー一覧
       </h1>
-      
+
       <div class="summaries-overview">
         <div class="overview-stats">
           <div class="stat-item">
@@ -83,7 +83,7 @@ const summariesByStatus = {
             <div class="stat-label">未掲載</div>
           </div>
         </div>
-        
+
         <div class="quick-nav">
           <h3>クイックナビゲーション</h3>
           <div class="nav-links">
@@ -139,7 +139,7 @@ const summariesByStatus = {
                 <div class="summary-content">
                   <h3 class="summary-title">{summary.title}</h3>
                   <p class="summary-excerpt">{summary.excerpt}</p>
-                  
+
                   <div class="summary-meta">
                     <span class="summary-status status-main">
                       メインジャーナル掲載
@@ -161,7 +161,7 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text" set:html={summary.content} />
+                  <div class="full-content-text">{summary.content}</div>
                 </div>
               </article>
             ))}
@@ -200,7 +200,7 @@ const summariesByStatus = {
                 <div class="summary-content">
                   <h3 class="summary-title">{summary.title}</h3>
                   <p class="summary-excerpt">{summary.excerpt}</p>
-                  
+
                   <div class="summary-meta">
                     <span class="summary-status status-annex">
                       アネックスジャーナル掲載
@@ -222,7 +222,7 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text" set:html={summary.content} />
+                  <div class="full-content-text">{summary.content}</div>
                 </div>
               </article>
             ))}
@@ -256,7 +256,7 @@ const summariesByStatus = {
                 <div class="summary-content">
                   <h3 class="summary-title">{summary.title}</h3>
                   <p class="summary-excerpt">{summary.excerpt}</p>
-                  
+
                   <div class="summary-meta">
                     <span class="summary-status status-omitted">
                       未掲載サマリー
@@ -278,14 +278,14 @@ const summariesByStatus = {
 
                 <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
                   <div class="content-divider"></div>
-                  <div class="full-content-text" set:html={summary.content} />
+                  <div class="full-content-text">{summary.content}</div>
                 </div>
               </article>
             ))}
           </div>
         </section>
       )}
-      
+
       {journalData.summaries.length === 0 && (
         <div class="empty-state">
           <p>この週にはサマリーがありません。</p>
@@ -308,15 +308,15 @@ const summariesByStatus = {
   // Toggle summary content visibility
   document.addEventListener('DOMContentLoaded', function() {
     var toggleButtons = document.querySelectorAll('.toggle-content');
-    
+
     toggleButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         var summaryId = button.getAttribute('data-summary-id');
         var contentDiv = document.getElementById('content-' + summaryId);
-        
+
         if (contentDiv) {
           var isVisible = contentDiv.style.display !== 'none';
-          
+
           if (isVisible) {
             contentDiv.style.display = 'none';
             button.textContent = '詳細を見る';
