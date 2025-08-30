@@ -351,13 +351,22 @@ const summariesByStatus = {
   });
 </script>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/marked@16.2.1/marked.min.js"></script>
-<script type="module">
-  // Import and register web components
-  import { registerMarkdownRenderer } from '@/components/web-components/index.js';
-  
-  // Register the markdown renderer component
-  registerMarkdownRenderer();
+<script>
+  // Ensure DOM is ready, then dynamically import and register web components
+  async function initializeComponents() {
+    try {
+      const { registerMarkdownRenderer } = await import('../../components/web-components/index.js');
+      registerMarkdownRenderer();
+    } catch (error) {
+      console.error('Failed to register web components:', error);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeComponents);
+  } else {
+    initializeComponents();
+  }
 </script>
 
 <style>
