@@ -351,14 +351,17 @@ const summariesByStatus = {
   });
 </script>
 
-<script>
+<script type="module">
   // Ensure DOM is ready, then dynamically import and register web components
   async function initializeComponents() {
     try {
-      const { registerMarkdownRenderer } = await import('../../components/web-components/index.js');
+      // Use the proper client-side import path that matches Vite's resolution
+      const module = await import('../../components/web-components/index.js');
+      const { registerMarkdownRenderer } = module;
       registerMarkdownRenderer();
+      console.log('✅ Markdown renderer component registered successfully');
     } catch (error) {
-      console.error('Failed to register web components:', error);
+      console.error('❌ Failed to register web components:', error);
     }
   }
 
