@@ -223,13 +223,35 @@ class MarkdownRenderer extends HTMLElement {
   }
 
   async initializeMarked() {
-    // For now, use basic markdown processing without marked library
-    // This is to get the web component working first
-    this.marked = {
-      parse: (content) => {
-        return this.basicMarkdownToHtml(content);
-      }
-    };
+    try {
+      // Import micromark and GFM extension
+      const { micromark } = await import('micromark');
+      const { gfm, gfmHtml } = await import('micromark-extension-gfm');
+      
+      // Configure micromark with GFM extensions
+      this.marked = {
+        parse: (content) => {
+          return micromark(content, {
+            extensions: [gfm()],
+            htmlExtensions: [gfmHtml()]
+          });
+        },
+        setOptions: () => {
+          // Compatibility method - micromark doesn't need this
+          // but keeping for API consistency
+        }
+      };
+    } catch (importError) {
+      console.warn('Failed to import micromark, falling back to basic parser:', importError);
+      
+      // Fallback to basic markdown parsing if micromark fails to load
+      this.marked = {
+        parse: (content) => {
+          return this.basicMarkdownToHtml(content);
+        },
+        setOptions: () => {}
+      };
+    }
   }
 
   basicMarkdownToHtml(markdown) {
