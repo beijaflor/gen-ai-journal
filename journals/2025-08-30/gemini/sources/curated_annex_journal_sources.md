@@ -1,0 +1,42 @@
+# Curated Annex Journal Sources
+
+- [ ] https://coppolaemilio.com/entries/what-could-have-been/
+  - なぜ別館なのか：既存のソフトウェアを改善するのではなく、AIにリソースを浪費する技術業界への痛烈な批判。これは主流から外れた、しかし重要な視点だ。
+- [ ] https://news.ycombinator.com/item?id=44959069
+  - なぜ別館なのか：「Vibe Coding」という概念に対する懐疑的な議論。AIによるコード生成の誇大広告に疑問を投げかけ、レビューなしのリスクに焦点を当てている。
+- [ ] https://steipete.me/posts/2025/essential-reading-august-2025
+  - なぜ別館なのか：AIがソフトウェア開発に与える多角的な影響を深く分析し、主流の物語よりもニュアンスのある批判的な視点を提供している。
+- [ ] https://uxdesign.cc/three-hours-of-vibe-design-01fb78349142
+  - なぜ別館なのか：「Vibe Coding」との興味深いパラレル。AIではないアプローチによる迅速なプロトタイピングを探求し、人間の直感と創造性の価値を強調している。
+- [ ] https://www.suzukikenichi.com/blog/evidence-shows-that-structured-data-doesnt-help-with-ai/
+  - なぜ別館なのか：構造化データとAIに関する一般的な仮定に挑戦する、データに基づいた逆張りの見解。開発者にとって価値ある視点だ。
+- [ ] https://edition.cnn.com/2025/08/22/business/ai-vibe-shift-nightcap
+  - なぜ別館なのか：AIの誇大広告サイクルが冷え込んでいることに関する主流メディアの見解。開発者中心の議論に、より広い経済的文脈を提供する。
+- [ ] https://reflexions.florianernotte.be/post/ai-transparency/
+  - なぜ別館なのか：コンテンツ作成におけるAI利用の開示倫理について、思慮深くニュアンスのある探求。単純な「常に開示せよ」という議論を超えている。
+- [ ] https://sethops1.net/post/asking-three-llms-a-simple-question/
+  - なぜ別館なのか：LLMが事実情報に関して信頼できないことを示す、シンプルだが効果的なデモンストレーション。開発者にとって現実的な注意喚起となる。
+- [ ] https://www.businessinsider.jp/article/2508-ai-coding-tools-may-decrease-productivity-experienced-software-engineers-study/
+  - なぜ別館なのか：「AIは常に生産性を向上させる」という物語に挑戦する直感に反する調査結果。チームリーダーやエンジニアリングマネージャーにとって重要な視点だ。
+- [ ] https://www.itmedia.co.jp/enterprise/articles/2508/21/news034.html
+  - なぜ別館なのか：Gartnerのレポートは、AIの誇大広告サイクルについて構造化された批判的な見方を提供しており、戦略的計画や未熟な技術への過剰投資を避ける上で価値がある。
+- [ ] https://www.nikkei.com/article/DGXZQOUB215ER0R20C25A8000000/
+  - なぜ別館なのか：AIがSaaSビジネスモデルに与える潜在的な破壊的影響について論じており、ウェブアプリケーションエンジニアにとって重要な長期的考察だ。
+- [ ] https://blog.stuartspence.ca/2025-08-declining-ai-slop-mr.html
+  - なぜ別館なのか：経験豊富なエンジニアによる、AI生成コードの品質低下に関する強力な意見記事。切実に必要とされている現実的な視点を提供している。
+- [ ] https://www.wheresyoured.at/ai-bubble-2027/
+  - なぜ別館なのか：AIバブルの崩壊について、十分に論証された逆張りの予測。長期的なキャリアやプロジェクト計画を考える上で価値ある視点だ。
+- [ ] https://news.ycombinator.com/item?id=45039228
+  - なぜ別館なのか：AIツールのマーケティングと誇大広告に関する批判的な議論。開発者が流行語の裏側を見て、ツールをより批判的に評価するのに役立つ。
+- [ ] https://www.theatlantic.com/technology/archive/2025/08/youtube-shorts-ai-upscaling/683946/
+  - なぜ別館なのか：AIによるコンテンツ改変とプラットフォームの透明性欠如に関する重要な倫理的問題を提起しており、ますます重要になっているトピックだ。
+- [ ] https://news.ycombinator.com/item?id=45049265
+  - なぜ別館なのか：AGIの定義そのものとそれを取り巻く誇大広告に関する批判的な議論。AIの能力について、より地に足の着いた現実的な見方を促す。
+- [ ] https://whatwelost.substack.com/p/people-are-the-point
+  - なぜ別館なのか：AIの過剰使用と過信に対する強力な哲学的議論。切実に必要とされている人間中心の視点を提供している。
+- [ ] https://www.bbc.com/news/articles/ckgyk2p55g8o
+  - なぜ別館なのか：ビジネスコンテキストにおけるAIの失敗という実世界の例。AIの盲目的な導入に対する警告として機能する。
+- [ ] https://news.ycombinator.com/item?id=45069361
+  - なぜ別館なのか：法執行におけるAI利用の倫理的影響に関する議論。ニッチだが、AIの社会的影響に触れる重要なトピックだ。
+- [ ] https://www.teruza.com/info-hub/how-to-stop-google-from-ai-summarising-your-website
+  - なぜ別館なのか：開発者がAIの過剰なリーチと見なすものに対抗するための実践的なガイド。エンパワーメントと型にはまらない視点を提供する。
