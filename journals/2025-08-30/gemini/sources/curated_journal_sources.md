@@ -1,0 +1,27 @@
+# Curated Main Journal Sources
+
+- [ ] https://betweentheprompts.com/design-partner/
+- [ ] https://brave.com/blog/comet-prompt-injection/
+- [ ] https://www.vincirufus.com/posts/agi-is-engineering-problem/
+- [ ] https://medium.com/commbank-technology/the-evolution-of-ai-software-engineering-75a8a5a02c14
+- [ ] https://qiita.com/mikannotishiryou/items/095b373379ce086d033a
+- [ ] https://qiita.com/yugoes1021/items/009e96ab31bf3dbb8943
+- [ ] https://www.anthropic.com/news/claude-for-chrome
+- [ ] https://github.com/Sideko-Inc/sideko/tree/main/releases/determinism-plus-llms
+- [ ] https://joshcollinsworth.com/blog/titles-matter
+- [ ] https://www.fastcompany.com/91382025/ai-isnt-designs-biggest-problem
+- [ ] https://www.itmedia.co.jp/news/articles/2508/27/news069.html
+- [ ] https://techblog.zozo.com/entry/db-design-review-bot
+- [ ] https://gigazine.net/news/20250827-anthropic-settles-ai-book/
+- [ ] https://www.itmedia.co.jp/aiplus/articles/2508/27/news072.html
+- [ ] https://www.smashingmagazine.com/2025/08/prompting-design-act-brief-guide-iterate-ai/
+- [ ] https://bencallahan.com/where-ai-is-failing-design-systems
+- [ ] https://www.ssp.sh/brain/will-ai-replace-humans/
+- [ ] https://martinfowler.com/articles/202508-ai-thoughts.html
+- [ ] https://martinfowler.com/articles/build-own-coding-agent.html
+- [ ] https://www.cnbc.com/2025/08/28/generative-ai-reshapes-us-job-market-stanford-study-shows-entry-level-young-workers.html
+- [ ] https://cloudsquid.substack.com/p/ocr-is-legacy-tech
+- [ ] https://martinalderson.com/posts/are-openai-and-anthropic-really-losing-money-on-inference/
+- [ ] https://blog.jeffschomay.com/rendering-a-game-in-real-time-with-ai
+- [ ] https://www.evai.ai/en/post/disinformation-the-deepseek-hype-was-all-made-up-how-fake-accounts-managed-a-market-frenzy
+- [ ] https://agilejourney.uzabase.com/entry/2025/08/29/103000
