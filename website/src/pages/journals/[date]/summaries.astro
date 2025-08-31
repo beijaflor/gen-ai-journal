@@ -355,13 +355,30 @@ const summariesByStatus = {
   // Ensure DOM is ready, then dynamically import and register web components
   async function initializeComponents() {
     try {
-      // Use the proper client-side import path that matches Vite's resolution
-      const module = await import('../../components/web-components/index.js');
+      // Use absolute import path for better Vite resolution
+      const module = await import('@/components/web-components/index.js');
       const { registerMarkdownRenderer } = module;
       registerMarkdownRenderer();
       console.log('✅ Markdown renderer component registered successfully');
     } catch (error) {
-      console.error('❌ Failed to register web components:', error);
+      console.warn('⚠️ Web components failed to load, content will display as raw text:', error);
+      
+      // Fallback: convert markdown-renderer elements to show content directly
+      const markdownElements = document.querySelectorAll('markdown-renderer');
+      markdownElements.forEach(element => {
+        const content = element.textContent || '';
+        if (content.trim()) {
+          element.innerHTML = `<div style="
+            padding: 1rem;
+            background-color: #f8fafc;
+            border-left: 4px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-family: inherit;
+            line-height: 1.6;
+            white-space: pre-wrap;
+          ">${content}</div>`;
+        }
+      });
     }
   }
 

@@ -4,9 +4,8 @@
  * Renders markdown content as HTML using the marked library
  */
 
-// HTML template for the component
-const template = document.createElement('template');
-template.innerHTML = `
+// Template HTML string (to avoid document access during SSR)
+const templateHTML = `
   <style>
     :host {
       display: block;
@@ -164,27 +163,37 @@ class MarkdownRenderer extends HTMLElement {
   constructor() {
     super();
     
-    // Create shadow DOM with declarative shadow DOM support
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
-    
-    // Get references to elements
-    this.loadingEl = this.shadowRoot.querySelector('.loading');
-    this.renderedEl = this.shadowRoot.querySelector('.rendered-content');
-    this.errorEl = this.shadowRoot.querySelector('.error');
+    // Only create DOM elements when in browser environment
+    if (typeof document !== 'undefined') {
+      // Create template and shadow DOM
+      const template = document.createElement('template');
+      template.innerHTML = templateHTML;
+      
+      this.attachShadow({ mode: 'open' });
+      this.shadowRoot.appendChild(template.content.cloneNode(true));
+      
+      // Get references to elements
+      this.loadingEl = this.shadowRoot.querySelector('.loading');
+      this.renderedEl = this.shadowRoot.querySelector('.rendered-content');
+      this.errorEl = this.shadowRoot.querySelector('.error');
+    }
     
     // Initialize marked library reference
     this.marked = null;
   }
 
   async connectedCallback() {
+    // Skip if not in browser environment
+    if (typeof document === 'undefined') return;
+    
     // Get the markdown content from the slot (text content)
     const markdownContent = this.textContent || '';
     
     if (markdownContent.trim()) {
       await this.renderMarkdown(markdownContent);
     } else {
-      this.showError('マークダウンコンテンツが見つかりません。');
+      // If no content, show as plain text instead of error
+      this.innerHTML = '<div style="color: #6b7280; font-style: italic;">コンテンツが見つかりません</div>';
     }
   }
 
@@ -211,14 +220,24 @@ class MarkdownRenderer extends HTMLElement {
         // Render the content
         this.showContent(htmlContent);
       } else {
-        throw new Error('Marked library not available');
+        console.warn('Markdown library not available, using fallback parser');
+        this.fallbackRender(content);
       }
     } catch (error) {
       console.warn('Failed to parse markdown:', error);
-      this.showError('マークダウンの変換に失敗しました。');
       
-      // Fallback rendering
+      // Always try fallback rendering first
       this.fallbackRender(content);
+      
+      // Only show error if fallback also fails
+      if (!this.renderedEl || this.renderedEl.innerHTML.trim() === '') {
+        this.showError('マークダウンの変換に失敗しました。元のテキストを表示します。');
+        // Show raw content as last resort
+        if (this.renderedEl) {
+          this.renderedEl.innerHTML = `<pre style="white-space: pre-wrap; font-family: inherit;">${this.escapeHtml(content)}</pre>`;
+          this.showContent(this.renderedEl.innerHTML);
+        }
+      }
     }
   }
 
@@ -279,13 +298,24 @@ class MarkdownRenderer extends HTMLElement {
       .replace(/(<\/h[1-6]>)<\/p>/g, '$1');
   }
 
+  escapeHtml(unsafe) {
+    return unsafe
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
   showLoading() {
+    if (!this.loadingEl || !this.renderedEl || !this.errorEl) return;
     this.loadingEl.style.display = 'block';
     this.renderedEl.style.display = 'none';
     this.errorEl.style.display = 'none';
   }
 
   showContent(htmlContent) {
+    if (!this.loadingEl || !this.renderedEl || !this.errorEl) return;
     this.loadingEl.style.display = 'none';
     this.renderedEl.style.display = 'block';
     this.errorEl.style.display = 'none';
@@ -293,6 +323,7 @@ class MarkdownRenderer extends HTMLElement {
   }
 
   showError(message) {
+    if (!this.loadingEl || !this.renderedEl || !this.errorEl) return;
     this.loadingEl.style.display = 'none';
     this.renderedEl.style.display = 'none';
     this.errorEl.style.display = 'block';

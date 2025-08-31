@@ -39,8 +39,21 @@ export default defineConfig({
           assetFileNames: 'assets/[name].[hash][extname]',
           chunkFileNames: 'chunks/[name].[hash].js',
           entryFileNames: 'entry/[name].[hash].js',
+          // Ensure web component modules are properly chunked
+          manualChunks: (id) => {
+            if (id.includes('web-components')) {
+              return 'web-components';
+            }
+            if (id.includes('micromark')) {
+              return 'micromark';
+            }
+          },
         },
       },
+    },
+    optimizeDeps: {
+      // Ensure micromark dependencies are included in client build
+      include: ['micromark', 'micromark-extension-gfm'],
     },
     resolve: {
       alias: {
