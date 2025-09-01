@@ -352,14 +352,51 @@ const summariesByStatus = {
 </script>
 
 <script type="module">
-  // Ensure DOM is ready, then dynamically import and register web components
+  // Ensure DOM is ready, then load and register web components
   async function initializeComponents() {
     try {
-      // Use absolute import path for better Vite resolution
-      const module = await import('@/components/web-components/index.js');
-      const { registerMarkdownRenderer } = module;
-      registerMarkdownRenderer();
-      console.log('✅ Markdown renderer component registered successfully');
+      // Use relative path from summaries page to web components
+      // Summaries page is at: /gen-ai-journal/journals/YYYY-MM-DD/summaries/
+      // Web components is at: /gen-ai-journal/js/web-components.js
+      const webComponentsUrl = '../../../js/web-components.js';
+      
+      // First try to import as module
+      try {
+        const module = await import(webComponentsUrl);
+        if (module.registerMarkdownRenderer) {
+          module.registerMarkdownRenderer();
+        } else if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+        }
+        console.log('✅ Markdown renderer component registered successfully via module import');
+      } catch (moduleError) {
+        // Fallback: load as script and use global
+        console.warn('Module import failed, trying script tag approach:', moduleError);
+        
+        // Check if already loaded globally
+        if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+          console.log('✅ Markdown renderer component registered successfully via global');
+        } else {
+          // Load via script tag
+          const script = document.createElement('script');
+          script.src = webComponentsUrl;
+          script.type = 'module';
+          
+          script.onload = () => {
+            if (window.WebComponents?.registerMarkdownRenderer) {
+              window.WebComponents.registerMarkdownRenderer();
+              console.log('✅ Markdown renderer component registered successfully via script load');
+            }
+          };
+          
+          script.onerror = () => {
+            throw new Error('Failed to load web components script');
+          };
+          
+          document.head.appendChild(script);
+        }
+      }
     } catch (error) {
       console.warn('⚠️ Web components failed to load, content will display as raw text:', error);
       
