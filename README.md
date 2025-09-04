@@ -2,6 +2,19 @@
 
 A weekly curated journal of AI and coding developments, featuring high-impact articles in the main journal and unique perspectives in the annex journal.
 
+## 📖 Read the Latest Journals
+
+**Live Publication**: [https://beijaflor.github.io/gen-ai-journal/](https://beijaflor.github.io/gen-ai-journal/)
+
+Browse our weekly curated collections of AI coding developments:
+- **Main Journal**: 18-25 high-impact articles with essential industry insights
+- **Annex Journal**: Unique perspectives and emerging trends worth following
+- **Archives**: Complete collection of past weeks organized by date
+
+*The site is automatically updated when new journals are published.*
+
+---
+
 ## Workflow Overview
 
 This project follows a systematic workflow to create weekly journals using branch-based development:
