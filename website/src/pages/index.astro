@@ -1,0 +1,200 @@
+---
+import WeeklyJournalCard from '@/components/WeeklyJournalCard.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, getLatestJournal } from '@/utils/content-parser';
+import '@/styles/global.css';
+
+const title = 'GenAI週刊 - AI・コーディング関連の週刊ジャーナル';
+const description = 'AI開発ツールとコーディングの最新動向を週刊でお届けする、厳選されたジャーナル';
+
+// Get latest journal data
+const latestJournal = getLatestJournal();
+const allDates = getAllJournalDates();
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="hero-section">
+    <h1 class="hero-title">GenAI週刊</h1>
+    <p class="hero-subtitle">AI・コーディング関連の週刊ジャーナル</p>
+    <p class="hero-description">
+      AI開発ツールとコーディングの最新動向を厳選してお届けします。
+      毎週、技術の本質を見極めた記事とユニークな視点の情報をキュレーションしています。
+    </p>
+  </div>
+
+  <section class="latest-section">
+    <h2>最新号</h2>
+    {latestJournal ? (
+      <div class="weekly-journal-container">
+        <WeeklyJournalCard journalData={latestJournal} />
+      </div>
+    ) : (
+      <div class="no-content">
+        <p>最新のジャーナルを読み込めませんでした。</p>
+        <p>ジャーナルデータが正しく配置されているか確認してください。</p>
+      </div>
+    )}
+  </section>
+
+  <section class="archive-section">
+    <h2>アーカイブ</h2>
+    <p>過去のジャーナルをすべて閲覧できます。</p>
+    {allDates.length > 0 && (
+      <div class="archive-stats">
+        <p><strong>{allDates.length}</strong>週分のジャーナルが利用可能です</p>
+        <p>最新: {allDates[0]} / 最古: {allDates[allDates.length - 1]}</p>
+      </div>
+    )}
+    <a href={withBase('/archive/')} class="btn btn-primary">アーカイブを見る</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    color: #374151;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .latest-section, 
+  .archive-section {
+    margin-bottom: 4rem;
+  }
+
+  .latest-section h2,
+  .archive-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .weekly-journal-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+  }
+
+  .no-content p {
+    color: #6b7280;
+    margin: 0.5rem 0;
+  }
+
+  .archive-stats {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f0f9ff;
+    border-radius: 0.5rem;
+    border: 1px solid #bae6fd;
+  }
+
+  .archive-stats p {
+    margin: 0.25rem 0;
+    color: #0c4a6e;
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-secondary {
+    background-color: #64748b;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #475569;
+    text-decoration: none;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .archive-section {
+    text-align: center;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+  }
+
+  .archive-section p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+    
+    .weekly-journal-container {
+      /* No additional styles needed for mobile */
+    }
+  }
+</style>

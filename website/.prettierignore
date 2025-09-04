@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+.output/
+
+# Generated files
+coverage/
+
+# Configuration files that should maintain their formatting
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Documentation that should maintain specific formatting
+CHANGELOG.md
+LICENSE
+
+# Environment files
+.env*

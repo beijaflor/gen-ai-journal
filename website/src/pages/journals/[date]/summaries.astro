@@ -1,0 +1,839 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
+import '@/styles/global.css';
+import DOMPurify from 'dompurify';
+import { JSDOM } from 'jsdom';
+
+export async function getStaticPaths() {
+  const dates = getAllJournalDates();
+
+  return dates
+    .map((date) => {
+      const journalData = parseJournalByDate(date);
+      return journalData ? { params: { date } } : null;
+    })
+    .filter((path) => path !== null);
+}
+
+const { date } = Astro.params;
+
+if (!date || typeof date !== 'string') {
+  throw new Error('Invalid date parameter');
+}
+
+const journalData = parseJournalByDate(date);
+
+if (!journalData) {
+  throw new Error(`Journal data not found for date: ${date}`);
+}
+
+// Format date for display
+const displayDate = new Date(date).toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  weekday: 'long',
+});
+
+const title = `${displayDate}号 サマリー一覧 - GenAI週刊`;
+const description = `${displayDate}号のGenAI週刊に関連する全サマリー一覧。メイン掲載、アネックス掲載、未掲載サマリーをすべてご覧いただけます。`;
+
+// Server-side sanitization function
+const window = new JSDOM('').window;
+const purify = DOMPurify(window);
+
+function sanitizeContent(content: string): string {
+  // Sanitize the markdown content to prevent XSS
+  return purify.sanitize(content);
+}
+
+// Group summaries by status with sanitized content
+const summariesByStatus = {
+  main: journalData.summaries.filter((s) => s.status === 'main').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
+  annex: journalData.summaries.filter((s) => s.status === 'annex').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
+  omitted: journalData.summaries.filter((s) => s.status === 'omitted').map(s => ({
+    ...s,
+    content: sanitizeContent(s.content)
+  })),
+};
+
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="summaries-page">
+    <header class="summaries-header">
+      <nav class="breadcrumb">
+        <a href={withBase('/')}>ホーム</a>
+        <span class="separator">›</span>
+        <a href={withBase('/archive/')}>アーカイブ</a>
+        <span class="separator">›</span>
+        <a href={withBase(`/journals/${date}/`)}>{displayDate}号</a>
+        <span class="separator">›</span>
+        <span class="current">サマリー一覧</span>
+      </nav>
+
+      <h1 class="page-title">
+        {displayDate}号 サマリー一覧
+      </h1>
+
+      <div class="summaries-overview">
+        <div class="overview-stats">
+          <div class="stat-item">
+            <div class="stat-value">{journalData.stats.totalSummaries}</div>
+            <div class="stat-label">総サマリー数</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{summariesByStatus.main.length}</div>
+            <div class="stat-label">メイン掲載</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{summariesByStatus.annex.length}</div>
+            <div class="stat-label">アネックス掲載</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{summariesByStatus.omitted.length}</div>
+            <div class="stat-label">未掲載</div>
+          </div>
+        </div>
+
+        <div class="quick-nav">
+          <h3>クイックナビゲーション</h3>
+          <div class="nav-links">
+            {summariesByStatus.main.length > 0 && (
+              <a href="#main-summaries" class="nav-link nav-main">
+                📰 メイン掲載 ({summariesByStatus.main.length})
+              </a>
+            )}
+            {summariesByStatus.annex.length > 0 && (
+              <a href="#annex-summaries" class="nav-link nav-annex">
+                📄 アネックス掲載 ({summariesByStatus.annex.length})
+              </a>
+            )}
+            {summariesByStatus.omitted.length > 0 && (
+              <a href="#omitted-summaries" class="nav-link nav-omitted">
+                📋 未掲載 ({summariesByStatus.omitted.length})
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="summaries-content">
+      <!-- Main summaries section -->
+      {summariesByStatus.main.length > 0 && (
+        <section class="status-section" id="main-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📰</span>
+              メインジャーナル掲載
+              <span class="section-count">({summariesByStatus.main.length}件)</span>
+            </h2>
+            {journalData.mainJournal && (
+              <a href={withBase(`/journals/${date}/main/`)} class="section-link">
+                メインジャーナルを読む →
+              </a>
+            )}
+          </header>
+
+          <div class="summaries-grid">
+            {summariesByStatus.main.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
+                    </a>
+                  </div>
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+
+                  <div class="summary-meta">
+                    <span class="summary-status status-main">
+                      メインジャーナル掲載
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Annex summaries section -->
+      {summariesByStatus.annex.length > 0 && (
+        <section class="status-section" id="annex-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📄</span>
+              アネックスジャーナル掲載
+              <span class="section-count">({summariesByStatus.annex.length}件)</span>
+            </h2>
+            {journalData.annexJournal && (
+              <a href={withBase(`/journals/${date}/annex/`)} class="section-link">
+                アネックスを読む →
+              </a>
+            )}
+          </header>
+
+          <div class="summaries-grid">
+            {summariesByStatus.annex.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
+                    </a>
+                  </div>
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+
+                  <div class="summary-meta">
+                    <span class="summary-status status-annex">
+                      アネックスジャーナル掲載
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Omitted summaries section -->
+      {summariesByStatus.omitted.length > 0 && (
+        <section class="status-section" id="omitted-summaries">
+          <header class="section-header">
+            <h2 class="section-title">
+              <span class="section-icon">📋</span>
+              未掲載サマリー
+              <span class="section-count">({summariesByStatus.omitted.length}件)</span>
+            </h2>
+          </header>
+
+          <div class="summaries-grid">
+            {summariesByStatus.omitted.map(summary => (
+              <article class="summary-card">
+                <header class="summary-header">
+                  <div class="summary-id">#{summary.id}</div>
+                  <div class="summary-domain">
+                    <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {summary.domain}
+                    </a>
+                  </div>
+                </header>
+
+                <div class="summary-content">
+                  <h3 class="summary-title">{summary.title}</h3>
+                  <p class="summary-excerpt">{summary.excerpt}</p>
+
+                  <div class="summary-meta">
+                    <span class="summary-status status-omitted">
+                      未掲載サマリー
+                    </span>
+                    <span class="summary-stats">
+                      {summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分
+                    </span>
+                  </div>
+                </div>
+
+                <footer class="summary-actions">
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    元記事を読む
+                  </a>
+                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
+                    詳細を見る
+                  </button>
+                </footer>
+
+                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
+                  <div class="content-divider"></div>
+                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {journalData.summaries.length === 0 && (
+        <div class="empty-state">
+          <p>この週にはサマリーがありません。</p>
+          <a href={withBase(`/journals/${date}/`)} class="btn btn-primary">週の概要に戻る</a>
+        </div>
+      )}
+    </main>
+
+    <footer class="summaries-footer">
+      <div class="footer-actions">
+        <a href={withBase(`/journals/${date}/`)} class="btn btn-outline">← 週の概要に戻る</a>
+        <a href={withBase('/archive/')} class="btn btn-outline">アーカイブ一覧</a>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+
+<script is:inline>
+  // Toggle summary content visibility
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggleButtons = document.querySelectorAll('.toggle-content');
+
+    toggleButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var summaryId = button.getAttribute('data-summary-id');
+        var contentDiv = document.getElementById('content-' + summaryId);
+
+        if (contentDiv) {
+          var isVisible = contentDiv.style.display !== 'none';
+
+          if (isVisible) {
+            contentDiv.style.display = 'none';
+            button.textContent = '詳細を見る';
+          } else {
+            contentDiv.style.display = 'block';
+            button.textContent = '詳細を隠す';
+          }
+        }
+      });
+    });
+
+  });
+</script>
+
+<script type="module">
+  // Ensure DOM is ready, then load and register web components
+  async function initializeComponents() {
+    try {
+      // Use relative path from summaries page to web components
+      // Summaries page is at: /gen-ai-journal/journals/YYYY-MM-DD/summaries/
+      // Web components is at: /gen-ai-journal/js/web-components.js
+      const webComponentsUrl = '../../../js/web-components.js';
+      
+      // First try to import as module
+      try {
+        const module = await import(webComponentsUrl);
+        if (module.registerMarkdownRenderer) {
+          module.registerMarkdownRenderer();
+        } else if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+        }
+        console.log('✅ Markdown renderer component registered successfully via module import');
+      } catch (moduleError) {
+        // Fallback: load as script and use global
+        console.warn('Module import failed, trying script tag approach:', moduleError);
+        
+        // Check if already loaded globally
+        if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+          console.log('✅ Markdown renderer component registered successfully via global');
+        } else {
+          // Load via script tag
+          const script = document.createElement('script');
+          script.src = webComponentsUrl;
+          script.type = 'module';
+          
+          script.onload = () => {
+            if (window.WebComponents?.registerMarkdownRenderer) {
+              window.WebComponents.registerMarkdownRenderer();
+              console.log('✅ Markdown renderer component registered successfully via script load');
+            }
+          };
+          
+          script.onerror = () => {
+            throw new Error('Failed to load web components script');
+          };
+          
+          document.head.appendChild(script);
+        }
+      }
+    } catch (error) {
+      console.warn('⚠️ Web components failed to load, content will display as raw text:', error);
+      
+      // Fallback: convert markdown-renderer elements to show content directly
+      const markdownElements = document.querySelectorAll('markdown-renderer');
+      markdownElements.forEach(element => {
+        const content = element.textContent || '';
+        if (content.trim()) {
+          element.innerHTML = `<div style="
+            padding: 1rem;
+            background-color: #f8fafc;
+            border-left: 4px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-family: inherit;
+            line-height: 1.6;
+            white-space: pre-wrap;
+          ">${content}</div>`;
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeComponents);
+  } else {
+    initializeComponents();
+  }
+</script>
+
+<style>
+  .summaries-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .summaries-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: #9ca3af;
+  }
+
+  .current {
+    color: #374151;
+    font-weight: 500;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  .summaries-overview {
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+  }
+
+  .overview-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .quick-nav h3 {
+    font-size: 1.125rem;
+    color: #374151;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s ease;
+  }
+
+  .nav-link:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    text-decoration: none;
+  }
+
+  .summaries-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .status-section {
+    /* Section styling */
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+    color: #1f2937;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .section-icon {
+    font-size: 1.5rem;
+  }
+
+  .section-count {
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .section-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+  }
+
+  .section-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+
+  .summaries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+
+  .summary-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .summary-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: #d1d5db;
+  }
+
+  .summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .summary-id {
+    font-weight: 700;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .summary-domain a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .summary-domain a:hover {
+    text-decoration: underline;
+  }
+
+  .summary-content {
+    padding: 1.5rem;
+  }
+
+  .summary-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .summary-excerpt {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .summary-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .summary-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+
+  .status-main {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .status-annex {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .status-omitted {
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+
+  .summary-stats {
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .summary-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+  .summary-full-content {
+    border-top: 1px solid #e5e7eb;
+    background: #fafafa;
+  }
+
+  .content-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 0;
+  }
+
+  .full-content-text {
+    padding: 1.5rem;
+    line-height: 1.7;
+    color: #374151;
+  }
+
+  .full-content-text h1,
+  .full-content-text h2,
+  .full-content-text h3 {
+    color: #1f2937;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .full-content-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .full-content-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .full-content-text h3 {
+    font-size: 1.125rem;
+  }
+
+  .full-content-text p {
+    margin: 0.75rem 0;
+  }
+
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
+  }
+
+  .summaries-footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .footer-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .summaries-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .page-title {
+      font-size: 2rem;
+    }
+
+    .overview-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .summary-actions {
+      flex-direction: column;
+    }
+
+    .footer-actions {
+      flex-direction: column;
+    }
+  }
+</style>
