@@ -1,0 +1,313 @@
+---
+import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
+
+// Get all workdesk summaries
+const workdeskSummaries = getAllWorkdeskSummaries();
+
+// Helper function to format date
+function formatDate(date: Date): string {
+  const now = new Date();
+  const diffMs = now.getTime() - date.getTime();
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  
+  if (diffDays === 0) {
+    return '今日';
+  } else if (diffDays === 1) {
+    return '昨日';
+  } else if (diffDays < 7) {
+    return `${diffDays}日前`;
+  } else if (diffDays < 30) {
+    const weeks = Math.floor(diffDays / 7);
+    return `${weeks}週間前`;
+  } else {
+    return date.toLocaleDateString('ja-JP', { 
+      month: 'short', 
+      day: 'numeric' 
+    });
+  }
+}
+
+// Helper function to get domain display name
+function getDomainDisplay(domain: string): string {
+  // Remove common prefixes and show cleaner domain names
+  return domain.replace(/^www\./, '');
+}
+---
+
+<aside class="workdesk-sidebar">
+  <div class="sidebar-header">
+    <h2>ワークデスク サマリー</h2>
+    <span class="summary-count">{workdeskSummaries.length}件</span>
+  </div>
+  
+  <div class="summaries-container">
+    {workdeskSummaries.length === 0 ? (
+      <div class="no-summaries">
+        <p>ワークデスクにサマリーがありません</p>
+      </div>
+    ) : (
+      <div class="summaries-list">
+        {workdeskSummaries.map((summary) => (
+          <article class="summary-item">
+            <div class="summary-header">
+              <h3 class="summary-title">
+                <a href={summary.url} target="_blank" rel="noopener noreferrer">
+                  {summary.title}
+                </a>
+              </h3>
+              <div class="summary-meta">
+                <span class="summary-domain">{getDomainDisplay(summary.domain)}</span>
+                <time class="summary-date">{formatDate(summary.modifiedAt)}</time>
+              </div>
+            </div>
+            
+            <p class="summary-excerpt">{summary.excerpt}</p>
+            
+            {summary.scores && (
+              <div class="summary-scores">
+                {summary.scores.overall && (
+                  <span class="score overall">総合: {summary.scores.overall}/100</span>
+                )}
+                {summary.scores.signal && (
+                  <span class="score signal">シグナル: {summary.scores.signal}/5</span>
+                )}
+              </div>
+            )}
+            
+            {summary.topics && summary.topics.length > 0 && (
+              <div class="summary-topics">
+                {summary.topics.slice(0, 3).map((topic) => (
+                  <span class="topic-tag">{topic}</span>
+                ))}
+                {summary.topics.length > 3 && (
+                  <span class="topic-more">+{summary.topics.length - 3}</span>
+                )}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    )}
+  </div>
+</aside>
+
+<style>
+  .workdesk-sidebar {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    height: fit-content;
+    max-height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .sidebar-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+
+  .summary-count {
+    background: #e0e7ff;
+    color: #3730a3;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+  }
+
+  .summaries-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summaries-list {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 0.25rem;
+  }
+
+  /* Custom scrollbar */
+  .summaries-list::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .summaries-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .summaries-list::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 2px;
+  }
+
+  .summaries-list::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  .summary-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .summary-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .summary-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .summary-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .summary-title a {
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .summary-title a:hover {
+    color: #2563eb;
+  }
+
+  .summary-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .summary-domain {
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: #eff6ff;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .summary-date {
+    color: #6b7280;
+    font-size: 0.75rem;
+  }
+
+  .summary-excerpt {
+    color: #4b5563;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    margin: 0 0 0.75rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .summary-scores {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .score {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+  }
+
+  .score.overall {
+    background: #f3e8ff;
+    color: #6b21a8;
+  }
+
+  .score.signal {
+    background: #ecfdf5;
+    color: #047857;
+  }
+
+  .summary-topics {
+    display: flex;
+    gap: 0.375rem;
+    flex-wrap: wrap;
+  }
+
+  .topic-tag {
+    font-size: 0.6875rem;
+    color: #374151;
+    background: #f3f4f6;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    border: 1px solid #d1d5db;
+  }
+
+  .topic-more {
+    font-size: 0.6875rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .no-summaries {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #6b7280;
+  }
+
+  .no-summaries p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .workdesk-sidebar {
+      position: static;
+      max-height: 400px;
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .workdesk-sidebar {
+      padding: 1rem;
+      max-height: 300px;
+    }
+
+    .sidebar-header h2 {
+      font-size: 1.125rem;
+    }
+
+    .summary-title {
+      font-size: 0.8125rem;
+    }
+
+    .summary-excerpt {
+      font-size: 0.75rem;
+      -webkit-line-clamp: 2;
+    }
+  }
+</style>
