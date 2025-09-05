@@ -6,6 +6,7 @@ export interface WorkdeskSummary {
   filename: string; // Original filename
   title: string; // Extracted from markdown
   excerpt: string; // Brief summary
+  fullContent: string; // Full markdown content body
   url: string; // Reconstructed URL
   domain: string; // Source domain
   modifiedAt: Date; // File modification time
@@ -133,6 +134,56 @@ function extractTopics(content: string): string[] {
   return [];
 }
 
+function extractFullContent(content: string): string {
+  // Find the end of the metadata section (after **Topics** line)
+  // The main content body starts after the empty line following topics
+  const lines = content.split('\n');
+  let contentStartIndex = -1;
+  
+  // Find the topics line
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].match(/\*\*Topics\*\*:/)) {
+      // Look for the next non-empty line after topics (skip empty lines)
+      for (let j = i + 1; j < lines.length; j++) {
+        if (lines[j].trim() !== '') {
+          contentStartIndex = j;
+          break;
+        }
+      }
+      break;
+    }
+  }
+  
+  // If topics line not found, look for content after URL and basic metadata
+  if (contentStartIndex === -1) {
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      // Skip title, URL, content type, scores lines
+      if (line.startsWith('##') || 
+          line.match(/^https?:\/\//) ||
+          line.match(/\*\*Content Type\*\*:/) ||
+          line.match(/\*\*Scores\*\*:/) ||
+          line.match(/\*\*Main Journal\*\*:/) ||
+          line.match(/\*\*Topics\*\*:/) ||
+          line.trim() === '') {
+        continue;
+      }
+      
+      // Found first content line
+      contentStartIndex = i;
+      break;
+    }
+  }
+  
+  if (contentStartIndex === -1) {
+    return '';
+  }
+  
+  // Extract content from the start index to the end
+  const contentLines = lines.slice(contentStartIndex);
+  return contentLines.join('\n').trim();
+}
+
 function parseSummaryFilename(filename: string): {
   id: string;
   domain: string;
@@ -198,6 +249,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
     
     const title = extractTitleFromMarkdown(content);
     const excerpt = extractExcerpt(content);
+    const fullContent = extractFullContent(content);
     const url = extractUrlFromContent(content) || parsedFilename.url;
     const wordCount = countWords(content);
     const scores = extractScores(content);
@@ -208,6 +260,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
       filename,
       title,
       excerpt,
+      fullContent,
       url,
       domain: parsedFilename.domain,
       modifiedAt: stats.mtime,

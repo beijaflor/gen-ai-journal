@@ -70,7 +70,7 @@ if (isNextJournalDate(date)) {
     summary = {
       id: workdeskSummary.id,
       title: workdeskSummary.title,
-      content: sanitizeContent(workdeskSummary.topics?.join('\n\n') || ''),
+      content: sanitizeContent(workdeskSummary.fullContent || ''),
       excerpt: workdeskSummary.excerpt,
       sourceUrl: workdeskSummary.url,
       domain: workdeskSummary.domain,
