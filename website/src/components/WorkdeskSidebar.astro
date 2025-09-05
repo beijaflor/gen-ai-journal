@@ -1,8 +1,11 @@
 ---
 import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
+import { getNextJournalDate } from '@/utils/journal-date';
+import { withBase } from '@/utils/base-path';
 
-// Get all workdesk summaries
+// Get all workdesk summaries and next journal date
 const workdeskSummaries = getAllWorkdeskSummaries();
+const nextJournalDate = getNextJournalDate();
 
 // Helper function to format date
 function formatDate(date: Date): string {
@@ -51,7 +54,7 @@ function getDomainDisplay(domain: string): string {
           <article class="summary-item">
             <div class="summary-header">
               <h3 class="summary-title">
-                <a href={summary.url} target="_blank" rel="noopener noreferrer">
+                <a href={withBase(`/journals/${nextJournalDate}/${summary.id}/`)}>
                   {summary.title}
                 </a>
               </h3>
@@ -84,6 +87,15 @@ function getDomainDisplay(domain: string): string {
                 )}
               </div>
             )}
+            
+            <div class="summary-actions">
+              <a href={withBase(`/journals/${nextJournalDate}/${summary.id}/`)} class="btn btn-primary">
+                詳細を見る
+              </a>
+              <a href={summary.url} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                元記事を読む
+              </a>
+            </div>
           </article>
         ))}
       </div>
@@ -269,6 +281,49 @@ function getDomainDisplay(domain: string): string {
     font-size: 0.6875rem;
     color: #6b7280;
     font-weight: 500;
+  }
+
+  .summary-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-secondary {
+    background-color: #64748b;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #475569;
+    text-decoration: none;
   }
 
   .no-summaries {

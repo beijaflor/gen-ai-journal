@@ -171,18 +171,13 @@ const summariesByStatus = {
                 </div>
 
                 <footer class="summary-actions">
-                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <a href={withBase(`/journals/${date}/${summary.id}/`)} class="btn btn-primary">
+                    詳細ページへ
+                  </a>
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                     元記事を読む
                   </a>
-                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
-                    詳細を見る
-                  </button>
                 </footer>
-
-                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
-                  <div class="content-divider"></div>
-                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
-                </div>
               </article>
             ))}
           </div>
@@ -232,18 +227,13 @@ const summariesByStatus = {
                 </div>
 
                 <footer class="summary-actions">
-                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <a href={withBase(`/journals/${date}/${summary.id}/`)} class="btn btn-primary">
+                    詳細ページへ
+                  </a>
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                     元記事を読む
                   </a>
-                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
-                    詳細を見る
-                  </button>
                 </footer>
-
-                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
-                  <div class="content-divider"></div>
-                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
-                </div>
               </article>
             ))}
           </div>
@@ -288,18 +278,13 @@ const summariesByStatus = {
                 </div>
 
                 <footer class="summary-actions">
-                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <a href={withBase(`/journals/${date}/${summary.id}/`)} class="btn btn-primary">
+                    詳細ページへ
+                  </a>
+                  <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                     元記事を読む
                   </a>
-                  <button class="btn btn-outline toggle-content" data-summary-id={summary.id}>
-                    詳細を見る
-                  </button>
                 </footer>
-
-                <div class="summary-full-content" id={`content-${summary.id}`} style="display: none;">
-                  <div class="content-divider"></div>
-                  <markdown-renderer class="full-content-text">{summary.content}</markdown-renderer>
-                </div>
               </article>
             ))}
           </div>
@@ -324,34 +309,8 @@ const summariesByStatus = {
 </BaseLayout>
 
 
-<script is:inline>
-  // Toggle summary content visibility
-  document.addEventListener('DOMContentLoaded', function() {
-    var toggleButtons = document.querySelectorAll('.toggle-content');
 
-    toggleButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        var summaryId = button.getAttribute('data-summary-id');
-        var contentDiv = document.getElementById('content-' + summaryId);
-
-        if (contentDiv) {
-          var isVisible = contentDiv.style.display !== 'none';
-
-          if (isVisible) {
-            contentDiv.style.display = 'none';
-            button.textContent = '詳細を見る';
-          } else {
-            contentDiv.style.display = 'block';
-            button.textContent = '詳細を隠す';
-          }
-        }
-      });
-    });
-
-  });
-</script>
-
-<script type="module">
+<script type="module" is:inline>
   // Ensure DOM is ready, then load and register web components
   async function initializeComponents() {
     try {
@@ -742,46 +701,6 @@ const summariesByStatus = {
     text-decoration: none;
   }
 
-  .summary-full-content {
-    border-top: 1px solid #e5e7eb;
-    background: #fafafa;
-  }
-
-  .content-divider {
-    height: 1px;
-    background: #e5e7eb;
-    margin: 0;
-  }
-
-  .full-content-text {
-    padding: 1.5rem;
-    line-height: 1.7;
-    color: #374151;
-  }
-
-  .full-content-text h1,
-  .full-content-text h2,
-  .full-content-text h3 {
-    color: #1f2937;
-    font-weight: 600;
-    margin: 1rem 0 0.5rem 0;
-  }
-
-  .full-content-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .full-content-text h2 {
-    font-size: 1.25rem;
-  }
-
-  .full-content-text h3 {
-    font-size: 1.125rem;
-  }
-
-  .full-content-text p {
-    margin: 0.75rem 0;
-  }
 
 
   .empty-state {

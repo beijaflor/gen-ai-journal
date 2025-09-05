@@ -1,0 +1,752 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/base-path';
+import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
+import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
+import { getNextJournalDate, isNextJournalDate, getJournalStatusLabel, formatJapaneseDateDisplay } from '@/utils/journal-date';
+import '@/styles/global.css';
+import DOMPurify from 'dompurify';
+import { JSDOM } from 'jsdom';
+
+export async function getStaticPaths() {
+  const paths: Array<{params: {date: string; id: string}}> = [];
+
+  // Generate paths for published journal summaries
+  const journalDates = getAllJournalDates();
+  for (const date of journalDates) {
+    const journalData = parseJournalByDate(date);
+    if (journalData) {
+      journalData.summaries.forEach(summary => {
+        paths.push({
+          params: { date, id: summary.id }
+        });
+      });
+    }
+  }
+
+  // Generate paths for workdesk summaries (next journal issue)
+  try {
+    const nextDate = getNextJournalDate();
+    const workdeskSummaries = getAllWorkdeskSummaries();
+    
+    workdeskSummaries.forEach(summary => {
+      paths.push({
+        params: { date: nextDate, id: summary.id }
+      });
+    });
+  } catch (error) {
+    console.warn('Failed to generate workdesk summary paths:', error);
+  }
+
+  return paths;
+}
+
+const { date, id } = Astro.params;
+
+if (!date || !id || typeof date !== 'string' || typeof id !== 'string') {
+  throw new Error('Invalid date or id parameter');
+}
+
+// Server-side sanitization
+const window = new JSDOM('').window;
+const purify = DOMPurify(window);
+
+function sanitizeContent(content: string): string {
+  return purify.sanitize(content);
+}
+
+let summary;
+let journalContext;
+let isWorkdeskSummary = false;
+let status: 'published' | 'draft' = 'published'; // Default to published
+
+// Determine if this is a workdesk (next journal) or published journal summary
+if (isNextJournalDate(date)) {
+  // Handle workdesk summary for next journal issue
+  const workdeskSummaries = getAllWorkdeskSummaries();
+  const workdeskSummary = workdeskSummaries.find(s => s.id === id);
+  
+  if (workdeskSummary) {
+    summary = {
+      id: workdeskSummary.id,
+      title: workdeskSummary.title,
+      content: sanitizeContent(workdeskSummary.topics?.join('\n\n') || ''),
+      excerpt: workdeskSummary.excerpt,
+      sourceUrl: workdeskSummary.url,
+      domain: workdeskSummary.domain,
+      wordCount: workdeskSummary.wordCount,
+      readingTime: Math.max(1, Math.ceil(workdeskSummary.wordCount / 200)),
+      slug: workdeskSummary.filename.replace('.md', ''),
+      date: date,
+      filename: workdeskSummary.filename,
+      status: 'omitted' as const,
+      modifiedAt: workdeskSummary.modifiedAt,
+      scores: workdeskSummary.scores,
+      topics: workdeskSummary.topics
+    };
+    isWorkdeskSummary = true;
+    status = 'draft';
+    journalContext = null;
+  }
+} else {
+  // Handle published journal summary
+  const journalData = parseJournalByDate(date);
+  if (journalData) {
+    const journalSummary = journalData.summaries.find(s => s.id === id);
+    if (journalSummary) {
+      summary = {
+        ...journalSummary,
+        content: sanitizeContent(journalSummary.content)
+      };
+      status = 'published';
+      journalContext = journalData;
+    }
+  }
+}
+
+if (!summary) {
+  throw new Error(`Summary not found: ${date}/${id}`);
+}
+
+// Page metadata
+const displayDate = formatJapaneseDateDisplay(date);
+const statusLabel = getJournalStatusLabel(date);
+const title = `${summary.title} - GenAI週刊`;
+const description = summary.excerpt;
+
+// Navigation data
+const allWorkdeskSummaries = isWorkdeskSummary ? getAllWorkdeskSummaries() : [];
+const currentIndex = isWorkdeskSummary 
+  ? allWorkdeskSummaries.findIndex(s => s.id === id)
+  : journalContext?.summaries.findIndex(s => s.id === id) ?? -1;
+
+const prevSummary = currentIndex > 0 
+  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex - 1] : journalContext?.summaries[currentIndex - 1])
+  : null;
+
+const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? allWorkdeskSummaries.length - 1 : (journalContext?.summaries.length ?? 0) - 1)
+  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex + 1] : journalContext?.summaries[currentIndex + 1])
+  : null;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="summary-detail">
+    <header class="summary-header">
+      <nav class="breadcrumb">
+        <a href={withBase('/')}>ホーム</a>
+        <span class="separator">›</span>
+        {isWorkdeskSummary ? (
+          <>
+            <a href={withBase('/')}>ワークデスク</a>
+            <span class="separator">›</span>
+            <span class="current">{summary.title}</span>
+          </>
+        ) : (
+          <>
+            <a href={withBase('/archive/')}>アーカイブ</a>
+            <span class="separator">›</span>
+            <a href={withBase(`/journals/${date}/`)}>{displayDate}号</a>
+            <span class="separator">›</span>
+            <span class="current">{summary.title}</span>
+          </>
+        )}
+      </nav>
+
+      <div class="summary-meta">
+        <div class="status-badge" class:list={[`status-${status}`]}>
+          {statusLabel}
+        </div>
+        <div class="summary-info">
+          <span class="summary-id">#{summary.id}</span>
+          <span class="summary-stats">{summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分</span>
+        </div>
+      </div>
+
+      <h1 class="summary-title">{summary.title}</h1>
+
+      <div class="source-info">
+        <div class="domain-badge">
+          <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+            {summary.domain}
+          </a>
+        </div>
+        {isWorkdeskSummary && 'modifiedAt' in summary && (
+          <time class="modified-date">
+            更新: {new Date(summary.modifiedAt).toLocaleDateString('ja-JP')}
+          </time>
+        )}
+      </div>
+
+      {!isWorkdeskSummary && journalContext && (
+        <div class="journal-context">
+          <h3>掲載情報</h3>
+          <div class="context-info">
+            <span class="journal-issue">
+              <a href={withBase(`/journals/${date}/`)}>
+                {displayDate}号
+              </a>
+            </span>
+            <span class="journal-section" class:list={[`section-${summary.status}`]}>
+              {summary.status === 'main' && 'メインジャーナル掲載'}
+              {summary.status === 'annex' && 'アネックス掲載'}
+              {summary.status === 'omitted' && '未掲載'}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {isWorkdeskSummary && 'scores' in summary && summary.scores && (
+        <div class="scores-section">
+          <h3>評価スコア</h3>
+          <div class="scores-grid">
+            {summary.scores.overall && (
+              <div class="score-item overall">
+                <span class="score-label">総合</span>
+                <span class="score-value">{summary.scores.overall}/100</span>
+              </div>
+            )}
+            {summary.scores.signal && (
+              <div class="score-item">
+                <span class="score-label">シグナル</span>
+                <span class="score-value">{summary.scores.signal}/5</span>
+              </div>
+            )}
+            {summary.scores.depth && (
+              <div class="score-item">
+                <span class="score-label">深度</span>
+                <span class="score-value">{summary.scores.depth}/5</span>
+              </div>
+            )}
+            {summary.scores.unique && (
+              <div class="score-item">
+                <span class="score-label">独自性</span>
+                <span class="score-value">{summary.scores.unique}/5</span>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {isWorkdeskSummary && 'topics' in summary && summary.topics && summary.topics.length > 0 && (
+        <div class="topics-section">
+          <h3>関連トピック</h3>
+          <div class="topics-list">
+            {summary.topics.map(topic => (
+              <span class="topic-tag">{topic}</span>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
+
+    <main class="summary-content">
+      <div class="content-excerpt">
+        <h2>概要</h2>
+        <p>{summary.excerpt}</p>
+      </div>
+
+      <div class="content-body">
+        <h2>詳細内容</h2>
+        <div class="content-text">
+          <markdown-renderer>{summary.content}</markdown-renderer>
+        </div>
+      </div>
+
+      <div class="actions-section">
+        <a 
+          href={summary.sourceUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-primary"
+        >
+          元記事を読む
+        </a>
+        {!isWorkdeskSummary && journalContext && (
+          <a 
+            href={withBase(`/journals/${date}/summaries/`)} 
+            class="btn btn-outline"
+          >
+            他のサマリーを見る
+          </a>
+        )}
+      </div>
+    </main>
+
+    <nav class="summary-navigation">
+      {prevSummary && (
+        <a href={withBase(`/journals/${date}/${prevSummary.id}/`)} class="nav-link nav-prev">
+          <div class="nav-direction">← 前のサマリー</div>
+          <div class="nav-title">{prevSummary.title}</div>
+        </a>
+      )}
+      {nextSummary && (
+        <a href={withBase(`/journals/${date}/${nextSummary.id}/`)} class="nav-link nav-next">
+          <div class="nav-direction">次のサマリー →</div>
+          <div class="nav-title">{nextSummary.title}</div>
+        </a>
+      )}
+    </nav>
+
+    <footer class="summary-footer">
+      <div class="footer-actions">
+        {isWorkdeskSummary ? (
+          <a href={withBase('/')} class="btn btn-outline">← ホームに戻る</a>
+        ) : (
+          <>
+            <a href={withBase(`/journals/${date}/`)} class="btn btn-outline">← {displayDate}号の概要</a>
+            <a href={withBase('/archive/')} class="btn btn-outline">アーカイブ一覧</a>
+          </>
+        )}
+      </div>
+    </footer>
+  </article>
+</BaseLayout>
+
+<script type="module" is:inline>
+  // Load web components for markdown rendering
+  async function initializeComponents() {
+    try {
+      const webComponentsUrl = '../../../js/web-components.js';
+      
+      try {
+        const module = await import(webComponentsUrl);
+        if (module.registerMarkdownRenderer) {
+          module.registerMarkdownRenderer();
+        } else if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+        }
+        console.log('✅ Markdown renderer registered successfully');
+      } catch (moduleError) {
+        console.warn('Module import failed, trying global approach:', moduleError);
+        
+        if (window.WebComponents?.registerMarkdownRenderer) {
+          window.WebComponents.registerMarkdownRenderer();
+          console.log('✅ Markdown renderer registered via global');
+        } else {
+          const script = document.createElement('script');
+          script.src = webComponentsUrl;
+          script.type = 'module';
+          
+          script.onload = () => {
+            if (window.WebComponents?.registerMarkdownRenderer) {
+              window.WebComponents.registerMarkdownRenderer();
+              console.log('✅ Markdown renderer registered via script load');
+            }
+          };
+          
+          document.head.appendChild(script);
+        }
+      }
+    } catch (error) {
+      console.warn('⚠️ Web components failed to load:', error);
+      
+      // Fallback for markdown-renderer elements
+      const markdownElements = document.querySelectorAll('markdown-renderer');
+      markdownElements.forEach(element => {
+        const content = element.textContent || '';
+        if (content.trim()) {
+          element.innerHTML = `<div class="markdown-fallback">${content}</div>`;
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeComponents);
+  } else {
+    initializeComponents();
+  }
+</script>
+
+<style>
+  .summary-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  /* Header styles */
+  .summary-header {
+    margin-bottom: 3rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: #9ca3af;
+  }
+
+  .current {
+    color: #374151;
+    font-weight: 500;
+  }
+
+  .summary-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .status-published {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .status-draft {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .summary-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .summary-id {
+    font-weight: 600;
+  }
+
+  .summary-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .source-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .domain-badge a {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .domain-badge a:hover {
+    background: #dbeafe;
+  }
+
+  .modified-date {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  /* Context sections */
+  .journal-context,
+  .scores-section,
+  .topics-section {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .journal-context h3,
+  .scores-section h3,
+  .topics-section h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 1rem 0;
+  }
+
+  .context-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .journal-issue a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .journal-section {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .section-main {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .section-annex {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .section-omitted {
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+
+  .scores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .score-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+
+  .score-item.overall {
+    border-color: #8b5cf6;
+    background: #faf5ff;
+  }
+
+  .score-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+
+  .score-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .overall .score-value {
+    color: #8b5cf6;
+  }
+
+  .topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .topic-tag {
+    background: white;
+    color: #374151;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 0.875rem;
+  }
+
+  /* Content styles */
+  .summary-content {
+    margin-bottom: 3rem;
+  }
+
+  .content-excerpt,
+  .content-body {
+    margin-bottom: 2rem;
+  }
+
+  .content-excerpt h2,
+  .content-body h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .content-excerpt p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #374151;
+  }
+
+  .content-text {
+    line-height: 1.7;
+    color: #374151;
+  }
+
+  .markdown-fallback {
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-left: 4px solid #e5e7eb;
+    border-radius: 0.5rem;
+    white-space: pre-wrap;
+  }
+
+  .actions-section {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Navigation styles */
+  .summary-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .nav-link:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  .nav-prev {
+    text-align: left;
+  }
+
+  .nav-next {
+    text-align: right;
+  }
+
+  .nav-direction {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-title {
+    color: #1f2937;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .summary-footer {
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .footer-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .summary-detail {
+      padding: 1rem;
+    }
+
+    .summary-title {
+      font-size: 1.5rem;
+    }
+
+    .summary-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .source-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .scores-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary-navigation {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-actions {
+      flex-direction: column;
+    }
+  }
+</style>
