@@ -1,5 +1,6 @@
 ---
 import WeeklyJournalCard from '@/components/WeeklyJournalCard.astro';
+import WorkdeskSidebar from '@/components/WorkdeskSidebar.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, getLatestJournal } from '@/utils/content-parser';
@@ -14,43 +15,85 @@ const allDates = getAllJournalDates();
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class="hero-section">
-    <h1 class="hero-title">GenAI週刊</h1>
-    <p class="hero-subtitle">AI・コーディング関連の週刊ジャーナル</p>
-    <p class="hero-description">
-      AI開発ツールとコーディングの最新動向を厳選してお届けします。
-      毎週、技術の本質を見極めた記事とユニークな視点の情報をキュレーションしています。
-    </p>
+  <div class="homepage-container">
+    <div class="main-content">
+      <div class="hero-section">
+        <h1 class="hero-title">GenAI週刊</h1>
+        <p class="hero-subtitle">AI・コーディング関連の週刊ジャーナル</p>
+        <p class="hero-description">
+          AI開発ツールとコーディングの最新動向を厳選してお届けします。
+          毎週、技術の本質を見極めた記事とユニークな視点の情報をキュレーションしています。
+        </p>
+      </div>
+
+      <section class="latest-section">
+        <h2>最新号</h2>
+        {latestJournal ? (
+          <div class="weekly-journal-container">
+            <WeeklyJournalCard journalData={latestJournal} />
+          </div>
+        ) : (
+          <div class="no-content">
+            <p>最新のジャーナルを読み込めませんでした。</p>
+            <p>ジャーナルデータが正しく配置されているか確認してください。</p>
+          </div>
+        )}
+      </section>
+
+      <section class="archive-section">
+        <h2>アーカイブ</h2>
+        <p>過去のジャーナルをすべて閲覧できます。</p>
+        {allDates.length > 0 && (
+          <div class="archive-stats">
+            <p><strong>{allDates.length}</strong>週分のジャーナルが利用可能です</p>
+            <p>最新: {allDates[0]} / 最古: {allDates[allDates.length - 1]}</p>
+          </div>
+        )}
+        <a href={withBase('/archive/')} class="btn btn-primary">アーカイブを見る</a>
+      </section>
+    </div>
+
+    <div class="sidebar-content">
+      <WorkdeskSidebar />
+    </div>
   </div>
-
-  <section class="latest-section">
-    <h2>最新号</h2>
-    {latestJournal ? (
-      <div class="weekly-journal-container">
-        <WeeklyJournalCard journalData={latestJournal} />
-      </div>
-    ) : (
-      <div class="no-content">
-        <p>最新のジャーナルを読み込めませんでした。</p>
-        <p>ジャーナルデータが正しく配置されているか確認してください。</p>
-      </div>
-    )}
-  </section>
-
-  <section class="archive-section">
-    <h2>アーカイブ</h2>
-    <p>過去のジャーナルをすべて閲覧できます。</p>
-    {allDates.length > 0 && (
-      <div class="archive-stats">
-        <p><strong>{allDates.length}</strong>週分のジャーナルが利用可能です</p>
-        <p>最新: {allDates[0]} / 最古: {allDates[allDates.length - 1]}</p>
-      </div>
-    )}
-    <a href={withBase('/archive/')} class="btn btn-primary">アーカイブを見る</a>
-  </section>
 </BaseLayout>
 
 <style>
+  /* Homepage Container Layout */
+  .homepage-container {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .main-content {
+    min-width: 0; /* Prevents grid overflow */
+  }
+
+  .sidebar-content {
+    /* Sidebar styling handled in WorkdeskSidebar component */
+  }
+
+  /* Responsive layout */
+  @media (max-width: 1200px) {
+    .homepage-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .sidebar-content {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .homepage-container {
+      gap: 1.5rem;
+    }
+  }
+
   .hero-section {
     text-align: center;
     padding: 3rem 0 4rem;

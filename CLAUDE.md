@@ -55,6 +55,40 @@ uv run scripts/sanitize_url.py "URL_HERE"
 
 # Workflow Management
 
+## Next Journal Date Management
+
+### **Date Source**: 
+Next journal date is determined by the title in `workdesk/sources.md`:
+```
+# Sources for Journal 2025-09-07
+```
+
+### **URL Structure**:
+- **Workdesk summaries** (before publication): `/journals/2025-09-07/001/`
+- **Published summaries** (after publication): `/journals/2025-09-07/001/`
+- **URLs remain stable** throughout editorial workflow
+
+### **Editorial Workflow**:
+1. **Start new week**: Update `workdesk/sources.md` title with next journal date
+2. **Content accumulation**: Summaries accessible via `/journals/YYYY-MM-DD/xxx/`
+3. **Journal publication**: Same URLs now serve published content
+4. **No URL migration**: Links shared during development remain valid
+
+### **Summary Detail Pages**:
+- **Workdesk summaries**: Link to `/journals/[next-date]/[id]/` from homepage sidebar
+- **Journal summaries**: Link to `/journals/[date]/[id]/` from summaries pages
+- **Single route**: `src/pages/journals/[date]/[id].astro` handles both types
+- **Content detection**: Automatically serves workdesk or published content based on date
+
+### **Commands**:
+```bash
+# Check next journal date
+grep "^# Sources for Journal" workdesk/sources.md
+
+# Start new journal week (update sources.md title)
+# Manual: Edit "# Sources for Journal YYYY-MM-DD" in workdesk/sources.md
+```
+
 ## Step Execution
 - Follow workflow steps sequentially: STEP_00 → STEP_11
 - Update TodoWrite frequently to track progress
