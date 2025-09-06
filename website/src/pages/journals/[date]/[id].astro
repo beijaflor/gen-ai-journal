@@ -130,176 +130,183 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
 ---
 
 <BaseLayout title={title} description={description}>
-  <article class="summary-detail">
-    <header class="summary-header">
-      <nav class="breadcrumb">
-        <a href={withBase('/')}>ホーム</a>
-        <span class="separator">›</span>
-        {isWorkdeskSummary ? (
-          <>
-            <a href={withBase('/')}>ワークデスク</a>
-            <span class="separator">›</span>
-            <span class="current">{summary.title}</span>
-          </>
-        ) : (
-          <>
-            <a href={withBase('/archive/')}>アーカイブ</a>
-            <span class="separator">›</span>
-            <a href={withBase(`/journals/${date}/`)}>{displayDate}号</a>
-            <span class="separator">›</span>
-            <span class="current">{summary.title}</span>
-          </>
+  <div class="summary-detail-container">
+    <article class="summary-detail">
+      <header class="summary-header">
+        <nav class="breadcrumb">
+          <a href={withBase('/')}>ホーム</a>
+          <span class="separator">›</span>
+          {isWorkdeskSummary ? (
+            <>
+              <a href={withBase('/')}>ワークデスク</a>
+              <span class="separator">›</span>
+              <span class="current">{summary.title}</span>
+            </>
+          ) : (
+            <>
+              <a href={withBase('/archive/')}>アーカイブ</a>
+              <span class="separator">›</span>
+              <a href={withBase(`/journals/${date}/`)}>{displayDate}号</a>
+              <span class="separator">›</span>
+              <span class="current">{summary.title}</span>
+            </>
+          )}
+        </nav>
+
+        <div class="summary-meta">
+          <div class="status-badge" class:list={[`status-${status}`]}>
+            {statusLabel}
+          </div>
+          <div class="summary-info">
+            <span class="summary-id">#{summary.id}</span>
+            <span class="summary-stats">{summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分</span>
+          </div>
+        </div>
+
+        <h1 class="summary-title">{summary.title}</h1>
+
+        <div class="source-info">
+          <div class="domain-badge">
+            <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+              {summary.domain}
+            </a>
+          </div>
+          {isWorkdeskSummary && 'modifiedAt' in summary && (
+            <time class="modified-date">
+              更新: {new Date(summary.modifiedAt).toLocaleDateString('ja-JP')}
+            </time>
+          )}
+        </div>
+
+        {!isWorkdeskSummary && journalContext && (
+          <div class="journal-context">
+            <h3>掲載情報</h3>
+            <div class="context-info">
+              <span class="journal-issue">
+                <a href={withBase(`/journals/${date}/`)}>
+                  {displayDate}号
+                </a>
+              </span>
+              <span class="journal-section" class:list={[`section-${summary.status}`]}>
+                {summary.status === 'main' && 'メインジャーナル掲載'}
+                {summary.status === 'annex' && 'アネックス掲載'}
+                {summary.status === 'omitted' && '未掲載'}
+              </span>
+            </div>
+          </div>
+        )}
+      </header>
+
+      <main class="summary-content">
+        <div class="content-excerpt">
+          <h2>概要</h2>
+          <p>{summary.excerpt}</p>
+        </div>
+
+        <div class="content-body">
+          <h2>詳細内容</h2>
+          <div class="content-text">
+            <markdown-renderer>{summary.content}</markdown-renderer>
+          </div>
+        </div>
+
+        <div class="actions-section">
+          <a 
+            href={summary.sourceUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-primary"
+          >
+            元記事を読む
+          </a>
+          {!isWorkdeskSummary && journalContext && (
+            <a 
+              href={withBase(`/journals/${date}/summaries/`)} 
+              class="btn btn-outline"
+            >
+              他のサマリーを見る
+            </a>
+          )}
+        </div>
+      </main>
+
+      <nav class="summary-navigation">
+        {prevSummary && (
+          <a href={withBase(`/journals/${date}/${prevSummary.id}/`)} class="nav-link nav-prev">
+            <div class="nav-direction">← 前のサマリー</div>
+            <div class="nav-title">{prevSummary.title}</div>
+          </a>
+        )}
+        {nextSummary && (
+          <a href={withBase(`/journals/${date}/${nextSummary.id}/`)} class="nav-link nav-next">
+            <div class="nav-direction">次のサマリー →</div>
+            <div class="nav-title">{nextSummary.title}</div>
+          </a>
         )}
       </nav>
 
-      <div class="summary-meta">
-        <div class="status-badge" class:list={[`status-${status}`]}>
-          {statusLabel}
+      <footer class="summary-footer">
+        <div class="footer-actions">
+          {isWorkdeskSummary ? (
+            <a href={withBase('/')} class="btn btn-outline">← ホームに戻る</a>
+          ) : (
+            <>
+              <a href={withBase(`/journals/${date}/`)} class="btn btn-outline">← {displayDate}号の概要</a>
+              <a href={withBase('/archive/')} class="btn btn-outline">アーカイブ一覧</a>
+            </>
+          )}
         </div>
-        <div class="summary-info">
-          <span class="summary-id">#{summary.id}</span>
-          <span class="summary-stats">{summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分</span>
-        </div>
-      </div>
+      </footer>
+    </article>
 
-      <h1 class="summary-title">{summary.title}</h1>
-
-      <div class="source-info">
-        <div class="domain-badge">
-          <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-            {summary.domain}
-          </a>
-        </div>
-        {isWorkdeskSummary && 'modifiedAt' in summary && (
-          <time class="modified-date">
-            更新: {new Date(summary.modifiedAt).toLocaleDateString('ja-JP')}
-          </time>
-        )}
-      </div>
-
-      {!isWorkdeskSummary && journalContext && (
-        <div class="journal-context">
-          <h3>掲載情報</h3>
-          <div class="context-info">
-            <span class="journal-issue">
-              <a href={withBase(`/journals/${date}/`)}>
-                {displayDate}号
-              </a>
-            </span>
-            <span class="journal-section" class:list={[`section-${summary.status}`]}>
-              {summary.status === 'main' && 'メインジャーナル掲載'}
-              {summary.status === 'annex' && 'アネックス掲載'}
-              {summary.status === 'omitted' && '未掲載'}
-            </span>
+    {/* Metadata sidebar for workdesk summaries */}
+    {isWorkdeskSummary && (
+      <aside class="summary-metadata">
+        {'scores' in summary && summary.scores && (
+          <div class="scores-section">
+            <h3>評価スコア</h3>
+            <div class="scores-grid">
+              {summary.scores.overall && (
+                <div class="score-item overall">
+                  <span class="score-label">総合</span>
+                  <span class="score-value">{summary.scores.overall}/100</span>
+                </div>
+              )}
+              {summary.scores.signal && (
+                <div class="score-item">
+                  <span class="score-label">シグナル</span>
+                  <span class="score-value">{summary.scores.signal}/5</span>
+                </div>
+              )}
+              {summary.scores.depth && (
+                <div class="score-item">
+                  <span class="score-label">深度</span>
+                  <span class="score-value">{summary.scores.depth}/5</span>
+                </div>
+              )}
+              {summary.scores.unique && (
+                <div class="score-item">
+                  <span class="score-label">独自性</span>
+                  <span class="score-value">{summary.scores.unique}/5</span>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      )}
-
-      {isWorkdeskSummary && 'scores' in summary && summary.scores && (
-        <div class="scores-section">
-          <h3>評価スコア</h3>
-          <div class="scores-grid">
-            {summary.scores.overall && (
-              <div class="score-item overall">
-                <span class="score-label">総合</span>
-                <span class="score-value">{summary.scores.overall}/100</span>
-              </div>
-            )}
-            {summary.scores.signal && (
-              <div class="score-item">
-                <span class="score-label">シグナル</span>
-                <span class="score-value">{summary.scores.signal}/5</span>
-              </div>
-            )}
-            {summary.scores.depth && (
-              <div class="score-item">
-                <span class="score-label">深度</span>
-                <span class="score-value">{summary.scores.depth}/5</span>
-              </div>
-            )}
-            {summary.scores.unique && (
-              <div class="score-item">
-                <span class="score-label">独自性</span>
-                <span class="score-value">{summary.scores.unique}/5</span>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
-      {isWorkdeskSummary && 'topics' in summary && summary.topics && summary.topics.length > 0 && (
-        <div class="topics-section">
-          <h3>関連トピック</h3>
-          <div class="topics-list">
-            {summary.topics.map(topic => (
-              <span class="topic-tag">{topic}</span>
-            ))}
-          </div>
-        </div>
-      )}
-    </header>
-
-    <main class="summary-content">
-      <div class="content-excerpt">
-        <h2>概要</h2>
-        <p>{summary.excerpt}</p>
-      </div>
-
-      <div class="content-body">
-        <h2>詳細内容</h2>
-        <div class="content-text">
-          <markdown-renderer>{summary.content}</markdown-renderer>
-        </div>
-      </div>
-
-      <div class="actions-section">
-        <a 
-          href={summary.sourceUrl} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn btn-primary"
-        >
-          元記事を読む
-        </a>
-        {!isWorkdeskSummary && journalContext && (
-          <a 
-            href={withBase(`/journals/${date}/summaries/`)} 
-            class="btn btn-outline"
-          >
-            他のサマリーを見る
-          </a>
         )}
-      </div>
-    </main>
 
-    <nav class="summary-navigation">
-      {prevSummary && (
-        <a href={withBase(`/journals/${date}/${prevSummary.id}/`)} class="nav-link nav-prev">
-          <div class="nav-direction">← 前のサマリー</div>
-          <div class="nav-title">{prevSummary.title}</div>
-        </a>
-      )}
-      {nextSummary && (
-        <a href={withBase(`/journals/${date}/${nextSummary.id}/`)} class="nav-link nav-next">
-          <div class="nav-direction">次のサマリー →</div>
-          <div class="nav-title">{nextSummary.title}</div>
-        </a>
-      )}
-    </nav>
-
-    <footer class="summary-footer">
-      <div class="footer-actions">
-        {isWorkdeskSummary ? (
-          <a href={withBase('/')} class="btn btn-outline">← ホームに戻る</a>
-        ) : (
-          <>
-            <a href={withBase(`/journals/${date}/`)} class="btn btn-outline">← {displayDate}号の概要</a>
-            <a href={withBase('/archive/')} class="btn btn-outline">アーカイブ一覧</a>
-          </>
+        {'topics' in summary && summary.topics && summary.topics.length > 0 && (
+          <div class="topics-section">
+            <h3>関連トピック</h3>
+            <div class="topics-list">
+              {summary.topics.map(topic => (
+                <span class="topic-tag">{topic}</span>
+              ))}
+            </div>
+          </div>
         )}
-      </div>
-    </footer>
-  </article>
+      </aside>
+    )}
+  </div>
 </BaseLayout>
 
 <script type="module" is:inline>
@@ -359,10 +366,24 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
 </script>
 
 <style>
-  .summary-detail {
-    max-width: 800px;
+  .summary-detail-container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .summary-detail {
+    min-width: 0; /* Prevent grid overflow */
+  }
+
+  .summary-metadata {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
   }
 
   /* Header styles */
@@ -469,9 +490,7 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
   }
 
   /* Context sections */
-  .journal-context,
-  .scores-section,
-  .topics-section {
+  .journal-context {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 0.75rem;
@@ -479,13 +498,36 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
     margin-bottom: 2rem;
   }
 
-  .journal-context h3,
-  .scores-section h3,
-  .topics-section h3 {
+  .journal-context h3 {
     font-size: 1.125rem;
     font-weight: 600;
     color: #374151;
     margin: 0 0 1rem 0;
+  }
+
+  /* Sidebar metadata sections */
+  .summary-metadata .scores-section,
+  .summary-metadata .topics-section {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .summary-metadata .scores-section:last-child,
+  .summary-metadata .topics-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .summary-metadata h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .context-info {
@@ -718,8 +760,30 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
   }
 
   /* Responsive design */
+  @media (max-width: 1024px) {
+    .summary-detail-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 800px;
+    }
+
+    .summary-metadata {
+      position: static;
+      order: -1; /* Show metadata before main content on mobile */
+    }
+
+    .summary-metadata .scores-section,
+    .summary-metadata .topics-section {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
-    .summary-detail {
+    .summary-detail-container {
       padding: 1rem;
     }
 
