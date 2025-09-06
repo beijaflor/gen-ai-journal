@@ -118,7 +118,7 @@ const description = summary.excerpt;
 const allWorkdeskSummaries = isWorkdeskSummary ? getAllWorkdeskSummaries() : [];
 const currentIndex = isWorkdeskSummary 
   ? allWorkdeskSummaries.findIndex(s => s.id === id)
-  : journalContext?.summaries.findIndex(s => s.id === id) ?? -1;
+  : journalContext?.summaries.findIndex((s: any) => s.id === id) ?? -1;
 
 const prevSummary = currentIndex > 0 
   ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex - 1] : journalContext?.summaries[currentIndex - 1])
@@ -298,7 +298,7 @@ const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? all
           <div class="topics-section">
             <h3>関連トピック</h3>
             <div class="topics-list">
-              {summary.topics.map(topic => (
+              {summary.topics.map((topic: string) => (
                 <span class="topic-tag">{topic}</span>
               ))}
             </div>
