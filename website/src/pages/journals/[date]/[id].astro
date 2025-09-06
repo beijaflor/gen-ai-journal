@@ -55,8 +55,8 @@ function sanitizeContent(content: string): string {
   return purify.sanitize(content);
 }
 
-let summary;
-let journalContext;
+let summary: any = null;
+let journalContext: any = null;
 let isWorkdeskSummary = false;
 let status: 'published' | 'draft' = 'published'; // Default to published
 

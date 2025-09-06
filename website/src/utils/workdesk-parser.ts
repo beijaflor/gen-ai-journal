@@ -76,7 +76,7 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
     }
   }
 
-  return content.substring(0, maxLength) + '...';
+  return `${content.substring(0, maxLength)}...`;
 }
 
 function extractUrlFromContent(content: string): string {
@@ -206,7 +206,7 @@ function parseSummaryFilename(filename: string): {
       }
 
       // Reconstruct domain (replace first underscore back to dot)
-      const domain = parts[0] + '.' + parts[1];
+      const domain = `${parts[0]}.${parts[1]}`;
       const path = parts.slice(2).join('/');
 
       // Reconstruct URL

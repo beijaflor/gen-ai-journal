@@ -20,7 +20,7 @@ export function getNextJournalDate(): string {
     // Match title pattern: "# Sources for Journal 2025-08-30"
     const titleMatch = content.match(/^#\s+Sources for Journal\s+(\d{4}-\d{2}-\d{2})/m);
     
-    if (titleMatch && titleMatch[1]) {
+    if (titleMatch?.[1]) {
       const date = titleMatch[1];
       
       // Validate date format

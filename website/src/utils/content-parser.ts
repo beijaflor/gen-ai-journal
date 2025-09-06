@@ -89,7 +89,7 @@ function extractTitleFromMarkdown(
   // Use custom pattern if specified
   if (config?.contentStructure?.titlePattern) {
     const customMatch = content.match(new RegExp(config.contentStructure.titlePattern, 'm'));
-    if (customMatch && customMatch[1]) {
+    if (customMatch?.[1]) {
       return customMatch[1].trim();
     }
   }
@@ -131,7 +131,7 @@ function extractExcerpt(
     const sectionMatch = content.match(
       new RegExp(`#{1,6}\\s+${config.contentStructure.excerptSection}[\\s\\S]*?\\n([\\s\\S]*?)(?=\\n#{1,6}|$)`, 'i')
     );
-    if (sectionMatch && sectionMatch[1]) {
+    if (sectionMatch?.[1]) {
       const sectionContent = sectionMatch[1].trim();
       return sectionContent.length > maxLength ? `${sectionContent.substring(0, maxLength)}...` : sectionContent;
     }
