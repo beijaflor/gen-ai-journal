@@ -18,51 +18,47 @@
 - `sources/curated_journal_sources.md`: メインジャーナル選出25記事
 - `sources/curated_annex_journal_sources.md`: Annex選出15記事
 
-### 要約データ
-- `unified_summaries_main.md`: メイン記事統合要約
-- `unified_summaries_annex.md`: Annex記事統合要約  
-- `summaries/`: 個別記事要約ファイル (218件)
+### 要約アーカイブ
+- `99_unified_summaries.md`: 全218件の統合要約 (673,558 bytes)
+- `02_omitted_summaries.md`: 不採用記事の要約 (583,070 bytes)
 
-## 編集テーマ分析
+### 個別要約 (summaries/)
+218件の個別記事要約を格納
 
-### メインジャーナル (5テーマ)
+## 今週の主要テーマ
+
 1. **ローカルAI開発革命** (6記事)
    - Cline + LM Studio統合
-   - Claude Code UIカスタマイズ
-   - Mastra Agent作成チュートリアル
+   - Snifflyによるローカル環境統合
+   - プライバシー保護とコスト削減
 
-2. **エージェントアーキテクチャの進化** (5記事)  
-   - OpenAI Codex CLI
-   - 専用仮想マシン提案
-   - マルチエージェント設計原則
+2. **エージェントアーキテクチャ進化** (6記事)
+   - マルチエージェント vs 統合エージェント
+   - AI仮想マシンアプローチ
+   - Vibeカンバン管理手法
 
-3. **MCP統合とツール連携** (3記事)
-   - Hatago MCP Hub
+3. **MCP & ツール統合** (5記事)
+   - Hatago MCP Hub (日本発)
+   - Elixir MCP実装
+   - Mastraフレームワーク活用
+
+4. **高度な開発ワークフロー** (5記事)
+   - OpenAI Codex CLI公式リリース
+   - Claude Code UI改善
+   - 日本語対応の最適化
+
+5. **デザイン & UX革新** (3記事)
+   - OKLCHカラーシステム
+   - AI背景除去技術
    - カスタムスラッシュコマンド
-   - 高度なワークフロー設計
 
-4. **高度なワークフローと実装** (3記事)
-   - Sun Asterisk実装事例  
-   - SonicMoov開発体験
-   - 実用的開発手法
+## 統計情報
 
-5. **デザインと UX の進化** (2記事)
-   - OKLCH + ChatGPT連携
-   - コーディングエージェント管理UI
+- **処理済み要約**: 216件
+- **メインジャーナル採用**: 25件 (11.6%)
+- **Annexジャーナル採用**: 15件 (6.9%)
+- **不採用**: 176件 (81.5%)
 
-### Annexジャーナル (B-side視点)
-- ベテラン開発者の現実的AI評価
-- Meta社内AI導入の混乱実態
-- Anthropic個人利用規約変更の影響
-- 実装現場での課題と制約
+## アーカイブ意義
 
-## 品質指標
-- **Japanese文字数**: メイン 14,371文字、Annex 5,309文字
-- **URL検証**: 全27件アクセス可能確認済み
-- **編集ボイス**: Codex Editor persona適用
-- **構造整合性**: Markdown形式、階層構造適切
-
-## 次回への引き継�え
-- `workdesk/sources.md`と`workdesk/summaries/`は保持
-- 新規情報収集は週明けから開始
-- 編集基準とテーマ分類手法は継続適用
+このアーカイブは、2025年9月第1週のGenAI・コーディング分野の包括的記録として、将来の技術トレンド分析や開発戦略立案の参考資料となることを想定しています。
