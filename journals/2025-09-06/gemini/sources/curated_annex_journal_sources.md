@@ -1,0 +1,38 @@
+# Curated Annex Journal Sources
+
+- [ ] https://www.trappedinside.ai/
+  - AIの「意識」や「主体性」といった、まだ明確な定義がない領域への考察を促し、人間とAIの関係性について再考を迫る、哲学的で示唆に富んだ記事。
+- [ ] https://www.vincirufus.com/posts/ai-next-evolution-of-computers/
+  - AIをコンピュータ進化の歴史の中に位置づけ、人間とコンピュータの相互作用の未来を考察する、大局的な視点を提供する記事。
+- [ ] https://ian.mccowan.space/2024/07/22/ai/
+  - 「AI」という言葉の誇大広告性を批判し、LLMの限界やデータ倫理の問題に切り込む、健全な懐疑主義を提供する記事。
+- [ ] https://gigazine.net/news/20250829-ai-induced-dehumanization-dark-side-effect/
+  - AIの進化がもたらす予期せぬ心理的影響に警鐘を鳴らす、重要な倫理的考察。
+- [ ] https://www.thecairoreview.com/essays/gaza-israels-ai-human-laboratory/
+  - AI兵器と監視システムがもたらす深刻な倫理的・人道的問題を告発し、技術者の社会的責任を問う、重いテーマの記事。
+- [ ] https://gist.github.com/breadchris/5877d1ab8381526bb81b551ffd5d1768
+  - 料理を「コンパイル」と捉えるユニークな視点から、LLMによるドメイン固有言語設計の民主化を論じる、発想の転換を促す記事。
+- [ ] https://uxdesign.cc/musk-thinks-ux-and-coding-are-the-same-this-absurdity-leads-to-chaos-27a2e38df95c
+  - 技術と人間社会の不可分性を哲学的に論じ、UXの専門性を擁護する、示唆に富んだ論考。
+- [ ] https://www.wheresyoured.at/why-everybody-is-losing-money-on-ai/
+  - AI業界の経済的な持続可能性に疑問を投げかけ、その構造的な問題を鋭く指摘する、必読の批判的分析。
+- [ ] https://yamdas.hatenablog.com/entry/20250901/wirelsswire-followups
+  - AIのハイプサイクルを冷静に分析し、その未来を「普通の技術」として捉え直す、地に足の着いた視点。
+- [ ] https://taylorgordonlunt.substack.com/p/my-ai-predictions-for-2027
+  - LLMのアーキテクチャ的な限界からAIの未来を予測し、超知能への過剰な期待を戒める、技術的洞察に裏打ちされた論考。
+- [ ] https://zenn.dev/enjapan/articles/9df195c403730b
+  - AI時代におけるQAエンジニアの真の価値を「アート」として再定義する、勇気づけられる独自の視点。
+- [ ] https://anond.hatelabo.jp/20250905152914
+  - AIが構築する仮想世界が人間の根源的な欲求を満たす未来を予測し、社会のあり方を問う、思索的な記事。
+- [ ] https://www.asahi.com/articles/AST8V2J69T8VULFA00TM.html
+  - AIスタートアップの闇をえぐる衝撃的なニュース。技術だけでなく、その周辺のビジネスや倫理についても考えさせられる。
+- [ ] https://www.itmedia.co.jp/aiplus/articles/2509/04/news107.html
+  - 生成AIによる商標権侵害のリスクという、実務上非常に重要な法的・倫理的課題を提示する記事。
+- [ ] https://www.itmedia.co.jp/news/articles/2509/03/news111.html
+  - 生成AIが悪用されることで、既存のデジタル文書の脆弱性が露呈したことを示す、セキュリティ意識を高める記事。
+- [ ] https://www.techno-edge.net/article/2025/09/02/4565.html
+  - LLMの評価指標の限界を暴き、AIの「知性」の本質を問う、非常に重要な研究。
+- [ ] https://qiita.com/makotosaekit/items/472a74da335df64a2f09
+  - AIのハルシネーションを哲学的な視点から深く考察し、その本質的な限界と向き合うための思索を提供する。
+- [ ] https://qiita.com/Sakaguchi_0725/items/af492b4c1024dede1f80
+  - AIへの過度な依存が人間の思考力を低下させるリスクに警鐘を鳴らし、健全な付き合い方を提唱する、自己啓発的な論考。
