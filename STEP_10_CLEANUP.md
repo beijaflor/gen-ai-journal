@@ -62,14 +62,59 @@ Move summary files and create archive summaries:
 # Archive all individual summaries
 mv workdesk/summaries/* journals/YYYY-MM-DD/summaries/
 
-# Archive unified summaries (complete reference)
-if [ -f workdesk/unified_summaries.md ]; then
-    mv workdesk/unified_summaries.md journals/YYYY-MM-DD/99_unified_summaries.md
-fi
+# Create comprehensive unified summaries (ALL summaries from the week)
+# CRITICAL: 99_unified_summaries.md must contain ALL summaries, not just selected ones
+echo "# 全記事要約 YYYY年MM月DD日号
 
-if [ -f workdesk/omitted_summaries_unified.md ]; then
-    mv workdesk/omitted_summaries_unified.md journals/YYYY-MM-DD/02_omitted_summaries.md
-fi
+この週に収集・要約された全記事の完全なアーカイブです。
+
+---" > journals/YYYY-MM-DD/99_unified_summaries.md
+
+# Append all summaries
+for file in journals/YYYY-MM-DD/summaries/*.md; do
+    if [ -f "$file" ]; then
+        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        echo "## $(basename "$file" .md)" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        cat "$file" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        echo "---" >> journals/YYYY-MM-DD/99_unified_summaries.md
+    fi
+done
+
+# Create omitted summaries (articles NOT in either journal)
+# This requires matching against curated source files to identify selected vs omitted
+echo "# 非掲載記事要約 YYYY年MM月DD日号
+
+メインジャーナルおよびAnnexジャーナルに掲載されなかった記事の要約集です。
+
+---" > journals/YYYY-MM-DD/02_omitted_summaries.md
+
+# Extract selected URLs from curated files
+grep -o 'https://[^[:space:]]*' journals/YYYY-MM-DD/sources/curated_journal_sources.md > temp_selected.txt
+grep -o 'https://[^[:space:]]*' journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md >> temp_selected.txt
+
+# Add omitted summaries
+for file in journals/YYYY-MM-DD/summaries/*.md; do
+    if [ -f "$file" ]; then
+        filename=$(basename "$file" .md)
+        file_number=$(echo "$filename" | grep -o '^[0-9]*' | head -1)
+        if [ -n "$file_number" ]; then
+            source_url=$(grep "^- \[.\] ${file_number}\." journals/YYYY-MM-DD/sources/sources.md | grep -o 'https://[^[:space:]]*' | head -1)
+            if [ -n "$source_url" ] && ! grep -Fq "$source_url" temp_selected.txt; then
+                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                echo "## $filename" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                cat "$file" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                echo "---" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+            fi
+        fi
+    fi
+done
+
+# Clean up temporary files
+rm -f temp_selected.txt
 ```
 
 ### 5. Clean Workspace
@@ -111,9 +156,30 @@ journals/YYYY-MM-DD/
 
 ## Quality Verification
 
-- [ ] **Archive Complete:** All expected files moved to journals/YYYY-MM-DD/
-- [ ] **File Naming:** Consistent naming convention followed
-- [ ] **Structure:** Proper directory organization
+**CRITICAL: All files must follow exact naming conventions**
+
+- [ ] **File Naming Convention:**
+  - `00_weekly_journal_YYYY_MM_DD.md` (NOT `main_journal.md`)
+  - `01_annex_journal_YYYY_MM_DD.md` (NOT `annex_journal.md`)
+  - `02_omitted_summaries.md` (articles NOT selected for either journal)
+  - `99_unified_summaries.md` (ALL summaries from the week, not just selected)
+
+- [ ] **Required Files Present:**
+  - Both numbered journal files (00_, 01_)
+  - Comprehensive unified summaries (99_) with ALL summaries
+  - Omitted summaries (02_) with non-selected articles only
+  - Sources directory with all curation files
+
+- [ ] **Content Verification:**
+  - `99_unified_summaries.md` contains ALL weekly summaries (not split files)
+  - `02_omitted_summaries.md` contains only non-selected article summaries
+  - No `unified_summaries_main.md` or `unified_summaries_annex.md` files
+  
+- [ ] **Structure Consistency:**
+  - Main directory follows standard pattern
+  - Gemini edition (if exists) follows same naming pattern
+  - All directories have proper organization
+
 - [ ] **Clean Workspace:** workdesk cleaned but preserved for next cycle
 - [ ] **Access:** Archived files readable and properly formatted
 
