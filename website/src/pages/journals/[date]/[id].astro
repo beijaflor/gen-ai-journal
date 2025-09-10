@@ -120,12 +120,12 @@ const currentIndex = isWorkdeskSummary
   ? allWorkdeskSummaries.findIndex(s => s.id === id)
   : journalContext?.summaries.findIndex((s: any) => s.id === id) ?? -1;
 
-const prevSummary = currentIndex > 0 
-  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex - 1] : journalContext?.summaries[currentIndex - 1])
+const prevSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? allWorkdeskSummaries.length - 1 : (journalContext?.summaries.length ?? 0) - 1)
+  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex + 1] : journalContext?.summaries[currentIndex + 1])
   : null;
 
-const nextSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? allWorkdeskSummaries.length - 1 : (journalContext?.summaries.length ?? 0) - 1)
-  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex + 1] : journalContext?.summaries[currentIndex + 1])
+const nextSummary = currentIndex > 0 
+  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex - 1] : journalContext?.summaries[currentIndex - 1])
   : null;
 ---
 

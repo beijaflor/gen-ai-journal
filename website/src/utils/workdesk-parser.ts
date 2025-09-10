@@ -302,8 +302,8 @@ export function getAllWorkdeskSummaries(): WorkdeskSummary[] {
       })
       .filter((summary): summary is WorkdeskSummary => summary !== null);
 
-    // Sort by modification time (latest first)
-    summaries.sort((a, b) => b.modifiedAt.getTime() - a.modifiedAt.getTime());
+    // Sort by ID number (descending order: 122, 121, 120...)
+    summaries.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
     return summaries;
   } catch (error) {

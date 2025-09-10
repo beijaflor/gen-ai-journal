@@ -54,6 +54,7 @@ function getDomainDisplay(domain: string): string {
           <article class="summary-item">
             <div class="summary-header">
               <h3 class="summary-title">
+                <span class="summary-number">#{summary.id}</span>
                 <a href={withBase(`/journals/${nextJournalDate}/${summary.id}/`)}>
                   {summary.title}
                 </a>
@@ -204,6 +205,18 @@ function getDomainDisplay(domain: string): string {
 
   .summary-title a:hover {
     color: #2563eb;
+  }
+
+  .summary-number {
+    display: inline-block;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.375rem;
+    background: #f3f4f6;
+    border-radius: 0.25rem;
+    border: 1px solid #d1d5db;
   }
 
   .summary-meta {
