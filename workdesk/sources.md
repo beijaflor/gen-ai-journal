@@ -102,6 +102,28 @@
 - [x] 098. https://gigazine.net/news/20250907-neural-pong/
 - [x] 099. https://note.com/npaka/n/nd1258df2853c
 - [x] 100. https://nowokay.hatenablog.com/entry/2025/09/05/083257
+- [x] 101. https://spyglass.org/cynical-read-on-anthropics-book-settlement/
+- [x] 102. https://www.m3tech.blog/entry/2025/09/09/171850
+- [x] 103. https://varunraghu.com/all-vibe-coding-tools-are-selling-a-get-rich-quick-scheme/
+- [x] 104. https://sophiebits.com/2025/09/09/ai-agents-security
+- [x] 105. https://shellcast.tv/
+- [x] 106. https://www.anthropic.com/news/anthropic-is-endorsing-sb-53
+- [x] 107. https://news.bloomberglaw.com/ip-law/anthropic-judge-blasts-copyright-pact-as-nowhere-close-to-done
+- [x] 108. https://www.theverge.com/apple-event/774963/apple-september-launch-event-ai-apple-intelligence
+- [x] 109. https://aidarwinawards.org/index.html
+- [x] 110. https://www.aiengineering.report/p/devs-cancel-claude-code-en-masse
+- [x] 111. https://www.anthropic.com/news/create-files
+- [x] 112. https://ghuntley.com/cursed/
+- [x] 113. https://github.com/leochlon/hallbayes
+- [x] 114. https://www.xipu.li/posts/the-last-programmers
+- [x] 115. https://qiita.com/makotosaekit/items/eba767a0a95bbc7b25b3
+- [x] 116. https://qiita.com/Doc-Tanukichi/items/c757569c687f181008cd
+- [x] 117. https://zenn.dev/watany/articles/46f7a8006eb054
+- [x] 118. https://zenn.dev/kou_pg_0131/articles/mmcp-introduction
+- [x] 119. https://zenn.dev/cloud_ace/articles/59452ca3e1dfc8
+- [x] 120. https://blog.shibayu36.org/entry/2025/09/09/193000
+- [x] 121. https://zenn.dev/knowledgesense/articles/2895f9adc8d802
+- [x] 122. https://japan.cnet.com/article/35237693/
 
 ## Slides
 
