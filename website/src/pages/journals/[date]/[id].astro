@@ -4,6 +4,7 @@ import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
 import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
 import { getNextJournalDate, isNextJournalDate, getJournalStatusLabel, formatJapaneseDateDisplay } from '@/utils/journal-date';
+import { formatDomainDisplay } from '@/utils/domain-display';
 import '@/styles/global.css';
 import DOMPurify from 'dompurify';
 import { JSDOM } from 'jsdom';
@@ -168,7 +169,7 @@ const nextSummary = currentIndex > 0
         <div class="source-info">
           <div class="domain-badge">
             <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-              {summary.domain}
+              {formatDomainDisplay(summary.sourceUrl)}
             </a>
           </div>
           {isWorkdeskSummary && 'modifiedAt' in summary && (

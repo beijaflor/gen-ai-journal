@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
+import { formatDomainDisplay } from '@/utils/domain-display';
 import '@/styles/global.css';
 import DOMPurify from 'dompurify';
 import { JSDOM } from 'jsdom';
@@ -151,7 +152,7 @@ const summariesByStatus = {
                   <div class="summary-id">#{summary.id}</div>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-                      {summary.domain}
+                      {formatDomainDisplay(summary.sourceUrl)}
                     </a>
                   </div>
                 </header>
@@ -207,7 +208,7 @@ const summariesByStatus = {
                   <div class="summary-id">#{summary.id}</div>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-                      {summary.domain}
+                      {formatDomainDisplay(summary.sourceUrl)}
                     </a>
                   </div>
                 </header>
@@ -258,7 +259,7 @@ const summariesByStatus = {
                   <div class="summary-id">#{summary.id}</div>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-                      {summary.domain}
+                      {formatDomainDisplay(summary.sourceUrl)}
                     </a>
                   </div>
                 </header>
