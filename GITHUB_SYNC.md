@@ -25,6 +25,8 @@ Claude Code can directly sync `workdesk/sources.md` to GitHub issues using its b
 2. **GitHub Integration**: Using MCP server, Claude Code will:
    - Search for existing weekly issue by title pattern
    - Create new issue if none exists, or update existing issue
+   - For pull requests: only update open PRs or create new ones (never update closed PRs)
+   - Commit any pending summaries to the branch before updating PR
    - Apply appropriate labels automatically
    - Format content with proper markdown structure
 
@@ -70,6 +72,23 @@ The MCP-based sync can be triggered at any time to update progress:
 - At end of weekly collection period
 
 Simply request: `"Sync workdesk/sources.md to GitHub issue"` and Claude Code handles the rest.
+
+## Pull Request Guidelines
+
+When working with pull requests:
+- **Open PRs**: Update existing open pull requests with current progress
+- **Closed PRs**: Never attempt to update closed pull requests
+- **New PRs**: Create new pull requests if no open PR exists for the current work
+- **Status Check**: Always verify PR status before attempting updates
+- **Commit Task**: Always commit pending changes (especially new summaries) before updating PR content
+
+## Commit Workflow
+
+Before updating GitHub issues and PRs:
+1. **Check Git Status**: Verify any uncommitted changes in workdesk/summaries/
+2. **Commit Changes**: Add and commit new summary files with descriptive message
+3. **Push to Branch**: Ensure all changes are pushed to the feature branch
+4. **Update PR**: Then proceed with PR title/description updates
 
 ## Benefits
 
