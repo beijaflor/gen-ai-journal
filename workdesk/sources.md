@@ -201,6 +201,7 @@
 - [x] 197. https://wisewolfmedia.substack.com/p/the-rise-of-ai-cults-truth-terminal
 - [x] 198. https://github.com/CursorTouch/Windows-Use
 - [x] 199. https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list
+- [x] 200. https://news.ycombinator.com/item?id=45221423
 - [x] 201. https://tech.layerx.co.jp/entry/config-code-generation-with-claude-code-base-action
 - [x] 202. https://qiita.com/SunSunTech/items/91d06597a0bc4af72a5c
 - [x] 203. https://qiita.com/kanako_kodera_16/items/1543dc81e85c18bb4009
@@ -234,5 +235,3 @@
 ## Might Be Hype
 
 ## Better to be Omitted
-
-- [ ] 200. https://www.wsj.com/business/entrepreneurship/artificial-intelligence-startup-founders-bc730406 (Paywall - HTTP 401 error)

@@ -1,4 +1,4 @@
-## Qwen
+## Alibaba Cloud オープンソースQwenシリーズ：商用可能な7B/1.8BとマルチモーダルVLモデルを公開
 
 https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list
 
