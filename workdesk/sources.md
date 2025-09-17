@@ -46,6 +46,18 @@
 - [x] 041. https://blog.lai.so/ai-browser/
 - [x] 042. https://guga2023.notion.site/AI-25d568a8e68780889f86fa9cd8977eb8
 - [x] 043. https://www.nikkei.com/article/DGXZQOUD284Q40Y5A720C2000000/
+- [x] 044. https://github.blog/ai-and-ml/github-copilot/meet-the-github-mcp-registry-the-fastest-way-to-discover-mcp-servers/
+- [x] 045. https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3
+- [x] 046. https://developer.chrome.com/blog/ai-challenge-2025
+- [x] 047. https://developer.chrome.com/blog/ai-demos
+- [x] 048. https://www.theverge.com/report/778641/microsoft-visual-studio-code-anthropic-claude-4
+- [x] 049. https://simonwillison.net/2025/Sep/15/gpt-5-codex/
+- [x] 050. https://openai.com/index/introducing-upgrades-to-codex/
+- [x] 051. https://github.com/tekaratzas/RustGPT
+- [x] 052. https://www.earlence.com/blog.html
+- [x] 053. https://tech.layerx.co.jp/entry/snowflake-ai-observability
+- [x] 054. https://qiita.com/relu/items/ee152b0ba96d1e013ceb
+- [x] 055. https://zenn.dev/mizchi/articles/codex-mcp-config-settings
 
 ## Slides
 
