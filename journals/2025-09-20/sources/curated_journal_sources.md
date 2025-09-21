@@ -1,0 +1,26 @@
+# Curated Main Journal Sources
+
+- [ ] https://techcrunch.com/2025/09/14/vibe-coding-has-turned-senior-devs-into-ai-babysitters-but-they-say-its-worth-it/
+- [ ] https://vercel.com/blog/the-second-wave-of-mcp-building-for-llms-not-developers
+- [ ] https://www.anthropic.com/engineering/writing-tools-for-agents
+- [ ] https://github.blog/ai-and-ml/github-copilot/5-ways-to-integrate-github-copilot-coding-agent-into-your-workflow/
+- [ ] https://vercel.com/blog/what-you-need-to-know-about-vibe-coding
+- [ ] https://geohot.github.io//blog/jekyll/update/2025/09/12/ai-coding.html
+- [ ] https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/
+- [ ] https://simonwillison.net/2025/Sep/9/claude-code-interpreter/
+- [ ] https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/
+- [ ] https://github.blog/ai-and-ml/github-copilot/meet-the-github-mcp-registry-the-fastest-way-to-discover-mcp-servers/
+- [ ] https://vercel.com/changelog/ai-code-reviews-by-vercel-agent-now-in-beta
+- [ ] https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+- [ ] https://openai.com/index/introducing-upgrades-to-codex/
+- [ ] https://azukiazusa.dev/blog/natural-language-ci-cd-with-agentic-workflows/
+- [ ] https://www.timeplus.com/post/ai-chess-hallucination-detection
+- [ ] https://tech.layerx.co.jp/entry/claude-code-sdk-101
+- [ ] https://zenn.dev/mizchi/articles/codex-mcp-config-settings
+- [ ] https://workos.com/blog/best-practices-securing-mcp-model-agent-interactions
+- [ ] https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3
+- [ ] https://developer.chrome.com/blog/ai-challenge-2025
+- [ ] https://nymag.com/intelligencer/article/ai-scraping-free-for-all-by-openai-google-meta-ending.html
+- [ ] https://joincolossus.com/article/ai-will-not-make-you-rich/
+- [ ] https://www.ubicloud.com/blog/ai-coding-a-sober-review
+- [ ] https://zenn.dev/meijin/articles/ddd-ai-agent-architecture
