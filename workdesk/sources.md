@@ -169,9 +169,12 @@
 - [x] 163. https://qiita.com/Fujiwo/items/741f7de1255b1e9aefc2
 - [x] 164. https://github.com/obsidianmd/obsidian-importer/issues/421
 - [x] 165. https://techblog.lycorp.co.jp/ja/20250917b
-- [x] 166. https://www.washingtonpost.com/technology/2025/09/16/deepseek-ai-security/
 - [x] 167. https://www.ubicloud.com/blog/ai-coding-a-sober-review
 - [x] 168. https://www.semafor.com/article/09/17/2025/anthropic-irks-white-house-with-limits-on-models-uswhite-house-with-limits-on-models-use
+- [x] 169. https://news.ycombinator.com/item?id=45236927
+- [x] 170. https://wiki.gentoo.org/wiki/Project:Council/AI_policy
+- [x] 171. https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
+- [x] 172. https://chezo.uno/post/2025-09-19-review-fatigue/
 ## Slides
 
 ## Might Be Hype
