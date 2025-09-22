@@ -1,0 +1,27 @@
+# Curated Main Journal Sources
+
+- https://vercel.com/blog/the-second-wave-of-mcp-building-for-llms-not-developers
+- https://github.com/mcp
+- https://github.blog/ai-and-ml/github-copilot/meet-the-github-mcp-registry-the-fastest-way-to-discover-mcp-servers/
+- https://simonwillison.net/2025/Sep/9/claude-code-interpreter/
+- https://openai.com/index/introducing-upgrades-to-codex/
+- https://gigazine.net/news/20250916-openai-gpt-5-codex/
+- https://www.theverge.com/report/778641/microsoft-visual-studio-code-anthropic-claude-4
+- https://geohot.github.io//blog/jekyll/update/2025/09/12/ai-coding.html
+- https://techcrunch.com/2025/09/14/vibe-coding-has-turned-senior-devs-into-ai-babysitters-but-they-say-its-worth-it/
+- https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/
+- https://qiita.com/RepKuririn/items/0716d679538de000956b
+- https://www.anthropic.com/engineering/writing-tools-for-agents
+- https://qiita.com/relu/items/ee152b0ba96d1e013ceb
+- https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+- https://xenospectrum.com/thinking-machines-lab-llm-nondeterminism-batch-invariance/
+- https://theconversation.com/why-openais-solution-to-ai-hallucinations-would-kill-chatgpt-tomorrow-265107
+- https://news.ycombinator.com/item?id=45236927
+- https://blog.angular.dev/beyond-the-horizon-how-angular-is-embracing-ai-for-next-gen-apps-7a7ed706e1a3
+- https://github.com/cloudflare/playwright-mcp
+- https://qiita.com/rairaii/items/a37972388eac6a8d55b3
+- https://qiita.com/cozyupk/items/198ac104df5177abd936
+- https://wiki.gentoo.org/wiki/Project:Council/AI_policy
+- https://codezine.jp/article/detail/22101
+- https://zenn.dev/knowledgework/articles/6efdcfe3b6809f
+- https://tech.findy.co.jp/entry/2025/09/16/070000
