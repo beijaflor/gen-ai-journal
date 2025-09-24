@@ -77,6 +77,23 @@
 - [x] 077. https://qiita.com/yuji-arakawa/items/66faad2b0818b6f70e64
 - [x] 078. https://zenn.dev/chiji/articles/57cb52773391ab
 - [x] 079. https://gigazine.net/news/20250922-generative-ai-design-bacteriophages-genome/
+- [x] 080. https://note.com/suthio/n/n89f393fd73c2
+- [x] 081. https://developer.chrome.com/blog/chrome-devtools-mcp
+- [x] 082. https://blog.nginx.org/blog/using-nginx-as-an-ai-proxy
+- [x] 083. https://blog.sentry.io/sentry-ai-code-review-now-in-beta-break-production-less/
+- [x] 084. https://blog.cloudflare.com/cloudflare-confidence-scorecards-making-ai-safer-for-the-internet/
+- [x] 085. https://blog.cloudflare.com/deploy-your-own-ai-vibe-coding-platform/
+- [x] 086. https://blog.cloudflare.com/per-customer-bot-defenses/
+- [x] 087. https://blog.cloudflare.com/x402/
+- [x] 088. https://blog.cloudflare.com/ai-crawl-control-for-project-galileo/
+- [x] 089. https://aifoc.us/interception/
+- [x] 090. https://www.smashingmagazine.com/2025/09/psychology-trust-ai-guide-measuring-designing-user-confidence/
+- [x] 091. https://azukiazusa.dev/blog/yaml-file-defined-ai-agent-cagent/
+- [x] 092. https://tech.layerx.co.jp/entry/2025/09/23/081316
+- [x] 093. https://manus.im/ja/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+- [x] 094. https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list
+- [x] 095. https://leejo.github.io/2025/09/23/gaps/
+- [x] 096. https://zenn.dev/knowledgesense/articles/68089e123a636b
 
 ## Slides
 - [x] 042. https://speakerdeck.com/syumai/practical-ai-chat-bot-ui-implementation
