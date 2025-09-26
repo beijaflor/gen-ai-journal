@@ -99,6 +99,50 @@
 - [x] 099. https://www.x402.org/
 - [x] 100. https://verialabs.com/blog/from-mcp-to-shell/
 - [x] 101. https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md
+- [x] 102. https://www.smashingmagazine.com/2025/09/intent-prototyping-pure-vibe-coding-enterprise-ux/
+- [x] 103. https://blog.cloudflare.com/sovereign-ai-and-choice/
+- [x] 104. https://blog.cloudflare.com/building-a-better-internet-with-responsible-ai-bot-principles/
+- [x] 105. https://github.blog/news-insights/product-news/copilot-new-embedding-model-vs-code/
+- [x] 106. https://github.blog/open-source/social-impact/using-ai-to-map-hope-for-refugees-with-unhcr-the-un-refugee-agency/
+- [x] 107. https://osmarks.net/aic/
+- [x] 108. https://uxdesign.cc/dont-make-me-blush-are-machines-truly-capable-of-emotion-ab38b3d80f73
+- [x] 109. https://uxdesign.cc/vibe-code-straight-from-your-website-ce52eef25d95
+- [x] 110. https://uxdesign.cc/from-products-to-systems-the-agentic-ai-shift-eaf6a7180c43
+- [x] 111. https://blog.btrax.com/jp/ux-in-ai/
+- [x] 112. https://ca-srg.dev/26d4358b43f7815ea874ce0480014d93
+- [x] 113. https://ollama.com/blog/web-search
+- [x] 114. https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/
+- [x] 116. https://vb.lk/
+- [x] 117. https://spectrum.ieee.org/top-programming-languages-2025
+- [x] 118. https://tech.layerx.co.jp/entry/2025/09/25/213844
+- [x] 119. https://tech.layerx.co.jp/entry/2025/09/25/150000
+- [x] 120. https://tech.layerx.co.jp/entry/2025/09/24/202536
+- [x] 121. https://qiita.com/makotosaekit/items/2e5c7d3b4504aeccf456
+- [x] 122. https://qiita.com/stachibana/items/51b294f55d3a292151b2
+- [x] 123. https://qiita.com/yuudee/items/54e2c7ad8548fa2ac911
+- [x] 124. https://qiita.com/masakinihirota/items/a925a2b68ab8374c7fd0
+- [x] 125. https://qiita.com/youtoy/items/075ddb8c09eaa0e98b4b
+- [x] 126. https://zenn.dev/kaiwa_jun/articles/943912278952c6
+- [x] 127. https://zenn.dev/wataryooou/articles/9e55e5130c6602
+- [x] 128. https://zenn.dev/explaza/articles/0f690ff367d6e4
+- [x] 129. https://zenn.dev/takkuhiro/articles/ejan-hackathon
+- [x] 130. https://zenn.dev/shintaro/articles/164e4a57412e72
+- [x] 131. https://zenn.dev/name_less/articles/34dd1b8ae5cf27
+- [x] 132. https://zenn.dev/google_cloud_jp/articles/04cdf10fb5cd70
+- [x] 133. https://zenn.dev/robustonian/articles/local_qwen3_omni
+- [x] 134. https://zenn.dev/cybozu_frontend/articles/e17267112d7816
+- [x] 136. https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/
+- [x] 137. https://tech.speee.jp/entry/reformdx-ai-dev-overview
+- [x] 138. https://iret.media/169031
+- [x] 139. https://coliss.com/articles/build-websites/operation/work/cursor-official-docs.html#google_vignette
+- [x] 140. https://blog.samaltman.com/abundant-intelligence
+- [x] 141. https://ascii.jp/elem/000/004/321/4321647/
+- [x] 142. https://www.sakura.ad.jp/corporate/information/newsreleases/2025/09/24/1968221046/
+- [x] 143. https://www.itmedia.co.jp/aiplus/articles/2509/24/news056.html
+- [x] 144. https://www.techno-edge.net/article/2025/09/24/4608.html
+- [x] 145. https://tacoms-inc.hatenablog.com/entry/2025/09/24/121821
+- [x] 146. https://cookbook.openai.com/examples/gpt-5-codex_prompting_guide
+- [x] 147. https://www.bloomberg.co.jp/news/articles/2025-09-23/T311TWGP493D00
 
 ## Slides
 - [x] 042. https://speakerdeck.com/syumai/practical-ai-chat-bot-ui-implementation
@@ -108,3 +152,4 @@
 ## Might Be Hype
 
 ## Better to be Omitted
+- [ ] 115. https://www.npmjs.com/package/@mcpjam/cli (403 Forbidden error)
