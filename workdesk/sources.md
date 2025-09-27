@@ -168,6 +168,7 @@
 - [x] 169. https://www.sbbit.jp/article/cont1/171952
 - [x] 170. https://techblog.zozo.com/entry/llm-slackbot
 - [x] 171. https://zenn.dev/knowledgework/articles/9b82d0c0a34ab4
+- [x] 172. https://blog.cloudflare.com/ja-jp/sovereign-ai-and-choice/
 
 ## Slides
 - [x] 042. https://speakerdeck.com/syumai/practical-ai-chat-bot-ui-implementation
