@@ -112,6 +112,7 @@
 - [x] 112. https://ca-srg.dev/26d4358b43f7815ea874ce0480014d93
 - [x] 113. https://ollama.com/blog/web-search
 - [x] 114. https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/
+- [x] 115. https://www.npmjs.com/package/@mcpjam/cli
 - [x] 116. https://vb.lk/
 - [x] 117. https://spectrum.ieee.org/top-programming-languages-2025
 - [x] 118. https://tech.layerx.co.jp/entry/2025/09/25/213844
@@ -143,6 +144,30 @@
 - [x] 145. https://tacoms-inc.hatenablog.com/entry/2025/09/24/121821
 - [x] 146. https://cookbook.openai.com/examples/gpt-5-codex_prompting_guide
 - [x] 147. https://www.bloomberg.co.jp/news/articles/2025-09-23/T311TWGP493D00
+- [x] 148. https://www.smashingmagazine.com/2025/09/from-prompt-to-partner-designing-custom-ai-assistant/
+- [x] 149. https://blog.cloudflare.com/an-ai-index-for-all-our-customers/
+- [x] 150. https://blog.cloudflare.com/code-mode/
+- [x] 151. https://uxdesign.cc/failing-fast-with-ai-e30887321ef5
+- [x] 152. https://sharif.io/28-ideas-2025
+- [x] 153. https://moondream.ai/blog/moondream-3-preview
+- [x] 154. https://research.ibm.com/blog/why-von-neumann-architecture-is-impeding-the-power-of-ai-computing
+- [x] 155. https://www.economist.com/leaders/2025/09/25/how-to-stop-ais-lethal-trifecta
+- [x] 156. https://tech.layerx.co.jp/entry/2025/09/26/235627
+- [x] 157. https://qiita.com/7mpy/items/6200677472d65cefe54c
+- [x] 158. https://qiita.com/Syoitu/items/65fda40c75dd467b5cd7
+- [x] 159. https://qiita.com/yseki1985/items/53eccd3ede7e92d98efa
+- [x] 160. https://zenn.dev/tmasuyama1114/articles/claude_code_commands
+- [x] 161. https://zenn.dev/thirdlf/articles/36-zenn-github-copilot-cli
+- [x] 162. https://zenn.dev/satto_workspace/articles/a92f09afd49673
+- [x] 163. https://zenn.dev/10q89s/articles/a7114a16db7031
+- [x] 164. https://thebridge.jp/2025/09/ai-value-intelligence-salescore-middle-management-role
+- [x] 165. https://www.itmedia.co.jp/aiplus/articles/2509/26/news088.html
+- [x] 166. https://xenospectrum.com/harvard-study-reveals-emotional-manipulation-in-ai-companion-apps/
+- [x] 167. https://gigazine.net/news/20250926-google-gemini-2-5-flash-lite-update/
+- [x] 168. https://prtimes.jp/main/html/rd/p/000000009.000169148.html
+- [x] 169. https://www.sbbit.jp/article/cont1/171952
+- [x] 170. https://techblog.zozo.com/entry/llm-slackbot
+- [x] 171. https://zenn.dev/knowledgework/articles/9b82d0c0a34ab4
 
 ## Slides
 - [x] 042. https://speakerdeck.com/syumai/practical-ai-chat-bot-ui-implementation
@@ -152,4 +177,3 @@
 ## Might Be Hype
 
 ## Better to be Omitted
-- [ ] 115. https://www.npmjs.com/package/@mcpjam/cli (403 Forbidden error)
