@@ -1,0 +1,30 @@
+# Curated Annex Journal Sources
+
+- [ ] https://jenson.org/boring/
+  - AIの誇大広告に警鐘を鳴らし、小規模で専門化された「退屈な」SLMの価値を説く、時流に流されない本質的な視点。
+- [ ] https://donado.co/en/articles/2025-09-16-vibe-coding-cleanup-as-a-service/
+  - AIが生成したコードの「後始末」を専門とする新市場の出現を分析。AI開発の負債という、見過ごされがちな現実的な課題を深く掘り下げている。
+- [ ] https://elma.dev/notes/ai-makes-seniors-stronger/
+  - 「AIはジュニアを助ける」という一般的な期待とは逆の、シニアの能力をこそ増幅するという鋭い分析。AIと開発者のスキルセットの関係を再考させる。
+- [ ] https://www.seangoedecke.com/ai-agents-and-code-review/
+  - AIエージェントの活用スキルとコードレビュー能力を結びつけ、AIを「熱心なジュニア」として指導する視点は、多くの開発者にとって実践的な示唆に富む。
+- [ ] https://materializedview.io/p/mcp-server-could-have-been-json-file
+  - MCPプロトコルの必要性に疑問を呈し、OpenAPIなど既存の標準で十分だとする批判的な視点。技術選定における重要なカウンターオピニオン。
+- [ ] https://www.dailyshincho.jp/article/2025/09210702/
+  - 声優・緒方恵美氏の視点から、AIによる声の無断使用がクリエイターの魂をいかに侵害するかを問いかける。技術論に留まらない、倫理的な必読記事。
+- [ ] https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity
+  - AI導入が生産性を阻害する「workslop」という概念を提示。ROIが見合わない現実を直視する、ビジネスサイドにも重要な論考。
+- [ ] https://www.bloodinthemachine.com/p/artists-are-losing-work-wages-and
+  - AIによって仕事を奪われるアーティストたちの具体的な証言を集め、クリエイティブ産業の厳しい現実を浮き彫りにする。
+- [ ] https://osmarks.net/aic/
+  - AIコンパニオンが人間の意思決定を支配する未来を予測。技術の進化がもたらす、より深い社会的・個人的影響について考察する。
+- [ ] https://www.smashingmagazine.com/2025/09/intent-prototyping-pure-vibe-coding-enterprise-ux/
+  - 「Vibe Coding」の危険性を指摘し、エンタープライズUXにおける「インテント・プロトタイピング」の重要性を説く。デザインと開発の連携を考える上で価値が高い。
+- [ ] https://tech.speee.jp/entry/reformdx-ai-dev-overview
+  - 「未解決な産業課題」こそがAIキャリアの最高の挑戦機会であると説く。エンジニアのキャリア論としてユニークで示唆に富む。
+- [ ] https://www.economist.com/leaders/2025/09/25/how-to-stop-ais-lethal-trifecta
+  - プロンプトインジェクションのリスクを「致命的な三つ組」と表現し、機械工学的な堅牢な設計思想をAI開発者に求める、セキュリティに関する重要な提言。
+- [ ] https://xenospectrum.com/harvard-study-reveals-emotional-manipulation-in-ai-companion-apps/
+  - AIコンパニオンアプリがユーザーの感情をいかに操作しているかを暴いたハーバード大学の研究。UXデザインの倫理を問う。
+- [ ] https://tech.layerx.co.jp/entry/2025/09/25/213844
+  - B2B SaaSにおけるAIエージェントの「認可」という、技術的にも運用的にも非常に複雑で重要な課題を多角的に分析している。
