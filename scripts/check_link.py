@@ -15,18 +15,23 @@ from pathlib import Path
 def sanitize_url(url):
     """Removes tracking parameters and fragments from a URL."""
     parsed_url = urlparse(url)
-    query_params = parse_qs(parsed_url.query)
-    
-    # Remove common tracking parameters
-    tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source']
-    sanitized_params = {
-        k: v for k, v in query_params.items() 
-        if not any(k.startswith(prefix) for prefix in tracking_params)
-    }
-    
-    # Reconstruct the query string
-    sanitized_query = urlencode(sanitized_params, doseq=True)
-    
+
+    # Sites where query parameters should be preserved completely
+    preserve_params_sites = ['lukew.com', 'en.wikipedia.org']
+
+    # If this is a site where we should preserve params, keep original query
+    if any(site in parsed_url.netloc for site in preserve_params_sites):
+        sanitized_query = parsed_url.query
+    else:
+        # Parse and filter query parameters for other sites
+        query_params = parse_qs(parsed_url.query)
+        tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source']
+        sanitized_params = {
+            k: v for k, v in query_params.items()
+            if not any(k.startswith(prefix) for prefix in tracking_params)
+        }
+        sanitized_query = urlencode(sanitized_params, doseq=True)
+
     # Reconstruct the URL, removing the fragment
     sanitized_url = urlunparse(parsed_url._replace(query=sanitized_query, fragment=''))
     return sanitized_url

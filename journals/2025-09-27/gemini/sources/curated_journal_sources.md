@@ -1,0 +1,27 @@
+# Curated Main Journal Sources
+
+- [ ] https://verialabs.com/blog/from-mcp-to-shell/
+- [ ] https://ammar.io/blog/httpjail
+- [ ] https://blog.cloudflare.com/code-mode/
+- [ ] https://manus.im/ja/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+- [ ] https://qiita.com/cozyupk/items/8c3a0a7e8fdab025c10c
+- [ ] https://quesma.com/blog/introducing-compilebench/
+- [ ] https://leejo.github.io/2025/09/23/gaps/
+- [ ] https://arxiv.org/abs/2509.06917
+- [ ] https://arxiv.org/abs/2509.00997
+- [ ] https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef
+- [ ] https://speakerdeck.com/rockname/ai-receipt-scan-practice
+- [ ] https://qiita.com/makotosaekit/items/2e5c7d3b4504aeccf456
+- [ ] https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md
+- [ ] https://tech.layerx.co.jp/entry/2025/09/22/105439
+- [ ] https://speakerdeck.com/jyoshise/aigakodoshu-kisugiwen-ti-nihaaideli-tixiang-kae
+- [ ] https://zenn.dev/hiraoku/articles/957b24a944cb89
+- [ ] https://developer.chrome.com/blog/chrome-devtools-mcp
+- [ ] https://blog.cloudflare.com/deploy-your-own-ai-vibe-coding-platform/
+- [ ] https://ollama.com/blog/web-search
+- [ ] https://blog.google/technology/developers/dora-report-2025/
+- [ ] https://zenn.dev/wataryooou/articles/9e55e5130c6602
+- [ ] https://econ101.jp/noah-smith_ai-and-employment/
+- [ ] https://www.itmedia.co.jp/aiplus/articles/2509/24/news056.html
+- [ ] https://coliss.com/articles/build-websites/operation/work/cursor-official-docs.html#google_vignette
+- [ ] https://pc.watch.impress.co.jp/docs/news/2049067.html
