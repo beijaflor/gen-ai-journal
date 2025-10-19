@@ -129,6 +129,11 @@ rm -f workdesk/unified_summaries_annex.md
 rm -f workdesk/reviewed_*.md
 rm -f workdesk/*.md
 
+# CRITICAL: Remove sources.md to prevent build errors
+# The sources.md file is archived in journals/YYYY-MM-DD/sources/
+# Keeping it causes the website build to generate pages for workdesk summaries
+rm -f workdesk/sources.md
+
 # Remove empty summaries directory
 rmdir workdesk/summaries 2>/dev/null || true
 
