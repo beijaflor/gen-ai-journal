@@ -3,6 +3,7 @@ import JournalPreview from '@/components/JournalPreview.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
 import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
+import { formatDomainDisplay } from '@/utils/domain-display';
 import '@/styles/global.css';
 
 export async function getStaticPaths() {
@@ -148,7 +149,7 @@ const description = `${displayDate}号のGenAI週刊ジャーナル概要。メ�
                   <div class="summary-info">
                     <h4 class="summary-title">{summary.title}</h4>
                     <div class="summary-meta">
-                      <span class="summary-domain">{summary.domain}</span>
+                      <span class="summary-domain">{formatDomainDisplay(summary.sourceUrl)}</span>
                       <span class="summary-words">{summary.wordCount}文字</span>
                       <span class={`summary-status status-${summary.status}`}>
                         {summary.status === 'main' ? 'メイン' : summary.status === 'annex' ? 'アネックス' : '未掲載'}
