@@ -22,6 +22,8 @@ export interface WorkdeskSummary {
     overall?: number;
   };
   topics?: string[];
+  language?: 'ja' | 'en' | 'other'; // Source language
+  originalTitle?: string; // Original title (for non-Japanese articles)
 }
 
 function extractTitleFromMarkdown(content: string): string {
@@ -130,8 +132,18 @@ function extractTopics(content: string): string[] {
   if (topicsMatch) {
     return topicsMatch[1].split(',').map(topic => topic.trim());
   }
-  
+
   return [];
+}
+
+function extractLanguage(content: string): 'ja' | 'en' | 'other' | undefined {
+  const match = content.match(/\*\*Language\*\*:\s*(ja|en|other)/);
+  return match ? (match[1] as 'ja' | 'en' | 'other') : undefined;
+}
+
+function extractOriginalTitle(content: string): string | undefined {
+  const match = content.match(/\*\*Original Title\*\*:\s*(.+)$/m);
+  return match ? match[1].trim() : undefined;
 }
 
 function extractFullContent(content: string): string {
@@ -246,7 +258,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
 
     const content = readFileSync(filePath, 'utf-8');
     const stats = statSync(filePath);
-    
+
     const title = extractTitleFromMarkdown(content);
     const excerpt = extractExcerpt(content);
     const fullContent = extractFullContent(content);
@@ -254,6 +266,8 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
     const wordCount = countWords(content);
     const scores = extractScores(content);
     const topics = extractTopics(content);
+    const language = extractLanguage(content);
+    const originalTitle = extractOriginalTitle(content);
 
     return {
       id: parsedFilename.id,
@@ -267,6 +281,8 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
       wordCount,
       scores,
       topics,
+      language,
+      originalTitle,
     };
   } catch (error) {
     console.warn(`Failed to parse workdesk summary file ${filePath}:`, error);
