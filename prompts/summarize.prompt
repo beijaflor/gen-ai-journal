@@ -30,9 +30,11 @@ First classify the article using the content type framework and then score it us
 The final output must strictly follow this markdown template. Do not add any extra text, labels, or conversational filler.
 
 ```
-## [Article Title]
+## [Article Title in Japanese]
 
 {{url}}
+
+**Original Title**: [Original title in source language - only include this line if language is NOT Japanese]
 
 [A very concise, one-sentence summary of the article's core message. Start with a strong, active verb.]
 
@@ -57,9 +59,9 @@ Do not pad short content to meet character counts. Match the summary length to t
 1.  **Article Title & URL**:
     - **URL**: Use the exact original URL as provided in the input. DO NOT modify, shorten, clean, or sanitize the URL in any way. Keep it exactly as given in the {{url}} parameter.
     - **Title**:
-      - If the article language is **Japanese**: Use the original Japanese title as-is.
-      - If the article language is **English**: Translate the title to Japanese.
-      - If the article language is **other**: Translate the title to Japanese.
+      - If the article language is **Japanese**: Use the original Japanese title as-is. Do NOT include the "Original Title" line.
+      - If the article language is **English**: Translate the title to Japanese for the main heading. Include the "**Original Title**: [English title]" line immediately after the URL.
+      - If the article language is **other**: Translate the title to Japanese for the main heading. Include the "**Original Title**: [Original title in source language]" line immediately after the URL.
 2.  **Content Type**: Classify using the content type framework below. Use the decision framework and definitions provided.
 3.  **Language**: Detect and declare the primary language of the source article (ja/en/other).
 4.  **Scores**: Apply the scoring framework below to evaluate each dimension (0-5 scale), then calculate composite scores based on content type weightings.
