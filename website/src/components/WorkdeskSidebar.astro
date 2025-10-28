@@ -2,6 +2,7 @@
 import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
 import { getNextJournalDate } from '@/utils/journal-date';
 import { withBase } from '@/utils/base-path';
+import { formatDomainDisplay } from '@/utils/domain-display';
 
 // Get all workdesk summaries and next journal date
 const workdeskSummaries = getAllWorkdeskSummaries();
@@ -30,11 +31,6 @@ function formatDate(date: Date): string {
   }
 }
 
-// Helper function to get domain display name
-function getDomainDisplay(domain: string): string {
-  // Remove common prefixes and show cleaner domain names
-  return domain.replace(/^www\./, '');
-}
 ---
 
 <aside class="workdesk-sidebar">
@@ -68,7 +64,7 @@ function getDomainDisplay(domain: string): string {
                     {summary.language.toUpperCase()}
                   </span>
                 )}
-                <span class="summary-domain">{getDomainDisplay(summary.domain)}</span>
+                <span class="summary-domain">{formatDomainDisplay(summary.url)}</span>
                 <time class="summary-date">{formatDate(summary.modifiedAt)}</time>
               </div>
             </div>
