@@ -64,7 +64,6 @@
 - [x] 060. https://simonwillison.net/2025/Oct/16/claude-skills/
 - [x] 061. https://tech.findy.co.jp/entry/2025/10/16/070000
 - [x] 062. https://www.ryuzee.com/contents/blog/14605
-- [x] 063. https://techfeed.io/entries/68f16216bf99ab1d80efbf81
 - [x] 064. https://levtech.jp/media/article/interview/detail_737/
 - [x] 065. https://note.com/rk611/n/n5941016f5cc0
 - [x] 066. https://www.businessinsider.jp/article/venturecapital-ai-agent-meta/
