@@ -83,7 +83,9 @@ if (isNextJournalDate(date)) {
       status: 'omitted' as const,
       modifiedAt: workdeskSummary.modifiedAt,
       scores: workdeskSummary.scores,
-      topics: workdeskSummary.topics
+      topics: workdeskSummary.topics,
+      language: workdeskSummary.language,
+      originalTitle: workdeskSummary.originalTitle
     };
     isWorkdeskSummary = true;
     status = 'draft';
@@ -165,6 +167,18 @@ const nextSummary = currentIndex > 0
         </div>
 
         <h1 class="summary-title">{summary.title}</h1>
+
+        {summary.originalTitle && (
+          <p class="original-title">
+            <span class="label">原題:</span> {summary.originalTitle}
+          </p>
+        )}
+
+        {summary.language && (
+          <span class="language-badge" class:list={[`lang-${summary.language}`]}>
+            {summary.language === 'ja' ? '日本語' : summary.language === 'en' ? '英語' : '他言語'}
+          </span>
+        )}
 
         <div class="source-info">
           <div class="domain-badge">
@@ -460,7 +474,46 @@ const nextSummary = currentIndex > 0
     font-weight: 700;
     color: #1f2937;
     line-height: 1.3;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .original-title {
+    font-size: 1.125rem;
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .original-title .label {
+    font-weight: 600;
+    color: #9ca3af;
+    font-style: normal;
+    margin-right: 0.5rem;
+  }
+
+  .language-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .lang-ja {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+
+  .lang-en {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .lang-other {
+    background: #f3f4f6;
+    color: #6b7280;
   }
 
   .source-info {

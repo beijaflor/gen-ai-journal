@@ -4,6 +4,19 @@ Summarize the article according to instructions below. Output the summary in the
 
 Article contents is very last of prompt.
 
+# **Content Validation**
+
+Before summarizing, check if article content was successfully fetched:
+- If content is empty, missing, or fetch failed → Output error message using this template:
+
+```
+## ERROR: Unable to fetch content
+
+{{url}}
+
+**Error**: No content available to summarize.
+```
+
 # **Instructions**
 
 Adhere to the editorial persona defined at the end of this prompt.
@@ -17,30 +30,45 @@ First classify the article using the content type framework and then score it us
 The final output must strictly follow this markdown template. Do not add any extra text, labels, or conversational filler.
 
 ```
-## [Article Title]
+## [Article Title in Japanese]
 
 {{url}}
+
+**Original Title**: [Original title in source language - only include this line if language is NOT Japanese]
 
 [A very concise, one-sentence summary of the article's core message. Start with a strong, active verb.]
 
 **Content Type**: [Select one of the 9 types from the content type framework with name]
+**Language**: [ja/en/other]
 
 **Scores**: Signal:X/5 | Depth:X/5 | Unique:X/5 | Practical:X/5 | Anti-Hype:X/5
 **Main Journal**: X/100 | **Annex Potential**: X/100 | **Overall**: X/100
 
 **Topics**: [[Topic1, Topic2, Topic3, Topic4, Topic5]]
 
-[A summary body of about 800-1200 characters in Japanese. Explain the key concepts and their significance. Focus on the "why" – why is this important and what is the key takeaway?]
+[A summary body in Japanese, with length proportional to the source article:
+- **Short articles** (brief announcements, simple updates with minimal substance): 200+ characters minimum
+- **Medium articles** (typical blog posts, standard analysis): 800-1200 characters
+- **Default to Medium**: When uncertain about article length classification, treat as Medium and use 800-1200 characters.
+
+Do not pad short content to meet character counts. Match the summary length to the substance available in the source. Explain the key concepts and their significance. Focus on the "why" **as explained by the author** – why the author believes this is important and what the author presents as the key takeaway.]
 ```
 
 **Instructions for each section:**
 
-1.  **Article Title & URL**: Use the exact original URL as provided in the input. DO NOT modify, shorten, clean, or sanitize the URL in any way. Keep it exactly as given in the {{url}} parameter.
+1.  **Article Title & URL**:
+    - **URL**: Use the exact original URL as provided in the input. DO NOT modify, shorten, clean, or sanitize the URL in any way. Keep it exactly as given in the {{url}} parameter.
+    - **Title**:
+      - If the article language is **Japanese**: Use the original Japanese title as-is. Do NOT include the "Original Title" line.
+      - If the article language is **English**: Translate the title to Japanese for the main heading. Include the "**Original Title**: [English title]" line immediately after the URL.
+      - If the article language is **other**: Translate the title to Japanese for the main heading. Include the "**Original Title**: [Original title in source language]" line immediately after the URL.
 2.  **Content Type**: Classify using the content type framework below. Use the decision framework and definitions provided.
-3.  **Scores**: Apply the scoring framework below to evaluate each dimension (0-5 scale), then calculate composite scores based on content type weightings.
-4.  **One-sentence summary**: A single, descriptive sentence that neutrally conveys the author's main point. Start with a strong, active verb.
-5.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
-6.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" – why is this important and what is the key takeaway? For technical articles (tools, workflows, agent techniques), be specific and concrete about the techniques described. Avoid abstract generalizations - provide concrete details that distinguish this approach from others in the field.
+3.  **Language**: Detect and declare the primary language of the source article (ja/en/other).
+4.  **Scores**: Apply the scoring framework below to evaluate each dimension (0-5 scale), then calculate composite scores based on content type weightings.
+5.  **One-sentence summary**: A single, descriptive sentence that neutrally conveys the author's main point. Start with a strong, active verb.
+6.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
+7.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" **as stated by the author** – report the author's explanation of importance and key takeaways. Do not add your own opinions or interpretations. For technical articles (tools, workflows, agent techniques), be specific and concrete about the techniques described. Avoid abstract generalizations - provide concrete details that distinguish this approach from others in the field.
+8.  **Objectivity**: Summarize based only on the article content. Report the author's arguments, opinions, and claims without adding your own interpretation. If the author states an opinion, attribute it clearly to the author (e.g., "著者は〜と主張している", "筆者によれば〜").
 
 ---
 
