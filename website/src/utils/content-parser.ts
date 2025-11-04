@@ -31,6 +31,8 @@ export interface SummaryEntry {
   wordCount: number; // Word count
   readingTime: number; // Minutes
   excerpt: string; // Brief summary
+  language?: 'ja' | 'en' | 'other'; // Source language
+  originalTitle?: string; // Original title (for non-Japanese articles)
 }
 
 export interface JournalArchive {
@@ -175,6 +177,16 @@ function generateSlug(title: string): string {
     .trim();
 }
 
+function extractLanguage(content: string): 'ja' | 'en' | 'other' | undefined {
+  const match = content.match(/\*\*Language\*\*:\s*(ja|en|other)/);
+  return match ? (match[1] as 'ja' | 'en' | 'other') : undefined;
+}
+
+function extractOriginalTitle(content: string): string | undefined {
+  const match = content.match(/\*\*Original Title\*\*:\s*(.+)$/m);
+  return match ? match[1].trim() : undefined;
+}
+
 // File parsing functions
 function parseJournalFile(
   filePath: string,
@@ -291,6 +303,8 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
     const readingTime = calculateReadingTime(wordCount);
     const excerpt = extractExcerpt(content, 150);
     const slug = generateSlug(title);
+    const language = extractLanguage(content);
+    const originalTitle = extractOriginalTitle(content);
 
     return {
       id: parsedFilename.id,
@@ -305,6 +319,8 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
       wordCount,
       readingTime,
       excerpt,
+      language,
+      originalTitle,
     };
   } catch (error) {
     console.warn(`Failed to parse summary file ${filePath}:`, error);
