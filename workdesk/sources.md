@@ -1,8 +1,79 @@
 # Sources for Journal 2025-11-08
 
 ## Instructions
+
 - Add URLs below with checkbox format: `- [ ] URL`
 - Use `uv run process_sources.py workdesk/sources.md` to process and generate summaries
 - One-shot summarization: `uv run scripts/call-gemini.py --url "URL" --output workdesk/summaries/NNN_filename.md`
 
-## Source Links
+## Main List
+
+- [ ] 001. https://blog.1password.com/closing-the-credential-risk-gap-for-browser-use-ai-agents/
+- [ ] 002. https://www.cubic.dev/blog/the-real-problem-with-ai-coding
+- [ ] 003. https://uxpilot.ai/ja-JP
+- [ ] 004. https://www.wired.com/ai-issue/
+- [ ] 005. https://yusufaytas.com/ai-broke-interviews/
+- [ ] 006. https://uxdesign.cc/how-ai-writing-tools-fail-to-speak-to-writers-1bab97d0fa98
+- [ ] 007. https://www.trevorlasn.com/blog/superpowers-claude-code-skills
+- [ ] 008. https://www.trevorlasn.com/blog/context7-mcp
+- [ ] 009. https://cfo.economictimes.indiatimes.com/news/74-of-ceos-worry-ai-failures-could-cost-them-their-jobs-report/118923383
+- [ ] 010. https://www.eff.org/deeplinks/2025/02/ai-and-copyright-expanding-copyright-hurts-everyone-heres-what-do-instead
+- [ ] 011. https://rameerez.com/send-this-article-to-your-friend-who-still-thinks-the-cloud-is-a-good-idea/
+- [ ] 012. https://piunikaweb.com/2025/11/04/youtube-ai-error-terminates-enderman-channel/
+- [ ] 013. https://news.ycombinator.com/item?id=45805540
+- [ ] 014. https://www.wreflection.com/p/ai-dial-up-era
+- [ ] 015. https://blog.redplanetlabs.com/2025/11/03/introducing-agent-o-rama-build-trace-evaluate-and-monitor-stateful-llm-agents-in-java-or-clojure/
+- [ ] 016. https://www.theverge.com/news/812376/google-removes-gemma-senator-blackburn-hallucination
+- [ ] 017. https://www.nytimes.com/2025/11/03/technology/openai-amazon-cloud-computing.html
+- [ ] 018. https://againstdata.com/blog/stop-ai
+- [ ] 019. https://chrisloy.dev/post/2025/08/03/context-engineering
+- [ ] 020. https://words.filippo.io/claude-debugging/
+- [ ] 021. https://thezvi.substack.com/p/openai-moves-to-complete-potentially
+- [ ] 022. https://news.ycombinator.com/item?id=45778214
+- [ ] 023. https://openai.com/ja-JP/policies/usage-policies/
+- [ ] 024. https://azukiazusa.dev/blog/claude-code-sandbox-feature/
+- [ ] 025. https://www.publickey1.jp/blog/25/openaiamdaiethernet_for_scale-up_networking_esun.html
+- [ ] 026. https://www.publickey1.jp/blog/25/aiuiokjetbrainsmatter.html
+- [ ] 027. https://qiita.com/morimune/items/3d07e4e0062598093b3e
+- [ ] 028. https://qiita.com/moritalous/items/23eb08b569910171748e
+- [ ] 029. https://qiita.com/Shin_unity3dcg/items/2da1c76d0f733678b1d3
+- [ ] 030. https://qiita.com/tomoasleep/items/6b185799f203564161ed
+- [ ] 031. https://zenn.dev/levtech/articles/a5a3204ffed86c
+- [ ] 032. https://zenn.dev/aun_phonogram/articles/44d298f8d9d0fd
+- [ ] 033. https://zenn.dev/little_hand_s/articles/dbd5fc27f5a2f0
+- [ ] 034. https://zenn.dev/mn329/articles/95a755391542c6
+- [ ] 035. https://zenn.dev/masa_oka108/articles/27705aa0f83294
+- [ ] 036. https://zenn.dev/tmasuyama1114/articles/claude-code-real-dev
+- [ ] 037. https://zenn.dev/hy20191108/articles/d88bc7f5ccb0cc
+- [ ] 038. https://zenn.dev/pivotmedia/articles/ai-driven-development-qa-challenge
+- [ ] 039. https://zenn.dev/stellarcreate/articles/git-worktree-parallel-development-with-cursor
+- [ ] 040. https://zenn.dev/oikon/articles/claude-code-web-sandbox
+- [ ] 041. https://zenn.dev/neoai/articles/48ecdf48c51470
+- [ ] 042. https://zenn.dev/srefin/articles/17ba278f402b5d
+- [ ] 043. https://zenn.dev/mohupor03/articles/58a37e9b56066a
+- [ ] 044. https://zenn.dev/beagle/articles/bc6ef88dd68615
+- [ ] 045. https://gigazine.net/news/20251104-openai-sora-2-coda/
+- [ ] 046. https://www.businessinsider.jp/article/2510-oxford-warns-ai-making-teens-faster-but-shallower-thinkers/
+- [ ] 047. https://jbpress.ismedia.jp/articles/-/91476
+- [ ] 048. https://www.gizmodo.jp/2025/11/vulnerability-discovered-in-chatgpt-atlas.html
+- [ ] 049. https://forest.watch.impress.co.jp/docs/news/2060040.html
+- [ ] 050. https://www.techno-edge.net/article/2025/11/04/4700.html
+- [ ] 051. https://tech.speee.jp/entry/AIplanner
+- [ ] 052. https://orangestar2.hatenadiary.com/entry/2025/11/04/111727
+- [ ] 053. https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure
+- [ ] 054. https://www.technologyreview.jp/s/371418/i-tried-openais-new-atlas-browser-but-i-still-dont-know-what-its-for/
+- [ ] 055. https://note.com/keisuke_shibata/n/n3996ab043797
+- [ ] 056. https://codezine.jp/article/detail/22261
+- [ ] 057. https://www.makeuseof.com/perplexity-ai-features-you-might-have-overlooked/
+- [ ] 058. https://www.gizmodo.jp/2025/11/this-professor-let-half-his-class-use-ai-heres-what-happened.html
+- [ ] 059. https://www.makeuseof.com/gistr-chrome-extension-notebooklm/
+- [ ] 060. https://blog.google/outreach-initiatives/education/google-skills/
+- [ ] 061. https://blog.sshh.io/p/how-i-use-every-claude-code-feature
+- [ ] 062. https://note.com/shi3zblog/n/n99bb0c642f1e
+- [ ] 063. https://www.techno-edge.net/article/2025/11/01/4699.html
+- [ ] 064. https://speakerdeck.com/shunsock/local-env-as-a-code-with-nix
+- [ ] 065. https://k-tai.watch.impress.co.jp/docs/news/2059010.html
+- [ ] 066. https://aba.hatenablog.com/entry/2025/11/01/124339
+- [ ] 067. https://anond.hatelabo.jp/20251101061208
+- [ ] 068. https://zenn.dev/olemi/articles/2ae97d8ce4fe2a
+- [ ] 069. https://speakerdeck.com/iwiwi/zhan-eruaiezientonozuo-rifang
