@@ -23,8 +23,8 @@
 - [ ] 013. https://news.ycombinator.com/item?id=45805540
 - [ ] 014. https://www.wreflection.com/p/ai-dial-up-era
 - [ ] 015. https://blog.redplanetlabs.com/2025/11/03/introducing-agent-o-rama-build-trace-evaluate-and-monitor-stateful-llm-agents-in-java-or-clojure/
-- [ ] 016. https://www.theverge.com/news/812376/google-removes-gemma-senator-blackburn-hallucination
-- [ ] 017. https://www.nytimes.com/2025/11/03/technology/openai-amazon-cloud-computing.html
+- [ ] 016. https://news.ycombinator.com/item?id=45800688
+- [ ] 017. https://news.ycombinator.com/item?id=45799211
 - [ ] 018. https://againstdata.com/blog/stop-ai
 - [ ] 019. https://chrisloy.dev/post/2025/08/03/context-engineering
 - [ ] 020. https://words.filippo.io/claude-debugging/
@@ -116,3 +116,62 @@
 - [ ] 106. https://zenn.dev/td3p/articles/73636e105901e0
 - [ ] 107. https://zenn.dev/knowledgesense/articles/3bd20780949e58
 - [ ] 108. https://zenn.dev/nttdata_tech/articles/2ea5821c65fc06
+- [x] 109. https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/
+- [x] 110. https://github.blog/developer-skills/programming-languages-and-frameworks/typescripts-rise-in-the-ai-era-insights-from-lead-architect-anders-hejlsberg/
+- [x] 111. https://vercel.com/blog/what-we-learned-building-agents-at-vercel
+- [x] 112. https://uxdesign.cc/we-wanted-superman-level-ai-instead-we-got-bizarro-ce6d4ba04f64
+- [x] 113. https://semaphore.io/blog/build-mcp-server
+- [x] 114. https://arxiv.org/abs/2510.18147
+- [x] 115. https://garymarcus.substack.com/p/if-you-thought-the-2008-bank-bailout
+- [ ] 116. https://moonshotai.github.io/Kimi-K2/thinking.html
+- [x] 117. https://devansh.bearblog.dev/ai-slop/
+- [x] 118. https://qiita.com/ktst79/items/92c127d321f9430c0622
+- [x] 119. https://qiita.com/autotaker1984/items/c30eafd8ab6a5e52cf9d
+- [x] 120. https://qiita.com/stachibana/items/dfc911a48a0d474515e4
+- [x] 121. https://zenn.dev/pivotmedia/articles/pivot-notion-to-github-projects
+- [x] 122. https://www.afpbb.com/articles/-/3607429
+- [x] 123. https://www.lany.co.jp/lany-llmo-lab/rewrite-aioverviews
+- [x] 124. https://gihyo.jp/book/2025/978-4-297-15327-4
+- [x] 125. https://gigazine.net/news/20251106-sesameop-backdoor-openai-assistants-api/
+- [x] 126. https://www.itmedia.co.jp/aiplus/articles/2511/06/news032.html
+- [x] 127. https://note.com/seyanote/n/n7c02a7ed65b1
+- [x] 128. https://www.bloomberg.co.jp/news/articles/2025-11-05/T59PCUGP493600
+- [x] 129. https://news.yahoo.co.jp/expert/articles/3eb843de018d5c6bc98bba10a987c59fcaf7ffd6
+- [x] 130. https://note.com/ono_shunsuke/n/n8f872e58ed69
+- [x] 131. https://vercel.com/blog/how-nous-research-used-botid-to-block-automated-abuse-at-scale
+- [x] 132. https://vercel.com/blog/how-ai-gateway-runs-on-fluid-compute
+- [x] 133. https://www.nngroup.com/articles/ai-prototyping/
+- [x] 134. https://christianheilmann.com/2025/10/30/ai-is-dunning-kruger-as-a-service/
+- [x] 135. https://edition.cnn.com/2025/11/06/us/openai-chatgpt-suicide-lawsuit-invs-vis
+- [x] 136. https://myhsu.xyz/llvm-machine-scheduler-2/
+- [x] 137. https://martinfowler.com/articles/llm-learning-loop.html
+- [x] 138. https://qiita.com/y-mae/items/cc3246ec6bc5b1aa7de7
+- [x] 139. https://qiita.com/GIFCat/items/540abc290ca5d8c3ef12
+- [x] 140. https://zenn.dev/layerx/articles/91321c52241600
+- [x] 141. https://zenn.dev/hulk510/articles/my-first-service-mikke
+- [x] 142. https://zenn.dev/tmasuyama1114/articles/anthropic_mcp_workflow
+- [x] 143. https://zenn.dev/flinters_blog/articles/25ffbe3c511967
+- [x] 144. https://zenn.dev/monox_dev/articles/7f5b8bb1423cbf
+- [x] 145. https://zenn.dev/himara2/articles/ae362b516e9e52
+- [x] 146. https://zenn.dev/sun_asterisk/articles/ai-driven-mental-model
+- [x] 147. https://zenn.dev/coji/scraps/c890994e6d42b4
+- [x] 148. https://tech-blog.rakus.co.jp/entry/20251107/productivity-hacks
+- [x] 149. https://www.docswell.com/s/2625216247/ZX6764-2025-11-06-190151
+- [x] 150. https://k-tai.watch.impress.co.jp/docs/news/2061396.html
+- [x] 151. https://www.bloomberg.co.jp/news/articles/2025-11-06/T5ARLMGQ1YQV00
+- [x] 152. https://fly.io/blog/everyone-write-an-agent/
+- [x] 153. https://hatenanews.com/articles/2025/11/07/103000
+- [x] 154. https://qiita.com/yushibats/items/80fde659be7425872a8f
+- [x] 155. https://webtan.impress.co.jp/e/2025/11/06/50280
+- [x] 156. https://k-tai.watch.impress.co.jp/docs/news/2060997.html
+- [x] 157. https://dev.classmethod.jp/articles/nextjs-devtools-mcp-aidd/
+- [x] 158. https://speakerdeck.com/azukiazusa1/mcp-sabanoji-chu-karashi-jian-reberunozhi-shi-made
+- [x] 159. https://www.m3tech.blog/entry/2025/11/06/110000
+- [x] 160. https://zenn.dev/yasaidev/articles/2cb87a5a2d072e
+- [x] 161. https://secon.dev/entry/2025/10/31/100000-open-provence-release/
+- [x] 162. https://zenn.dev/testkun08080/articles/python-yfinance-4c4331412bc50f
+- [x] 163. https://azukiazusa.dev/blog/claude-skills-custom-skills-for-claude/
+- [x] 164. https://tech.findy.co.jp/entry/2025/10/27/070000
+- [x] 165. https://anond.hatelabo.jp/20251029191331
+- [x] 166. https://www.publickey1.jp/blog/25/vs_codecopilotplan.html
+- [x] 167. https://note.com/npaka/n/n9c5ebcc5a897
