@@ -8,114 +8,114 @@
 
 ## Main List
 
-- [ ] 001. https://blog.1password.com/closing-the-credential-risk-gap-for-browser-use-ai-agents/
-- [ ] 002. https://www.cubic.dev/blog/the-real-problem-with-ai-coding
-- [ ] 003. https://uxpilot.ai/ja-JP
-- [ ] 004. https://www.wired.com/ai-issue/
-- [ ] 005. https://yusufaytas.com/ai-broke-interviews/
-- [ ] 006. https://uxdesign.cc/how-ai-writing-tools-fail-to-speak-to-writers-1bab97d0fa98
-- [ ] 007. https://www.trevorlasn.com/blog/superpowers-claude-code-skills
-- [ ] 008. https://www.trevorlasn.com/blog/context7-mcp
-- [ ] 009. https://cfo.economictimes.indiatimes.com/news/74-of-ceos-worry-ai-failures-could-cost-them-their-jobs-report/118923383
-- [ ] 010. https://www.eff.org/deeplinks/2025/02/ai-and-copyright-expanding-copyright-hurts-everyone-heres-what-do-instead
+- [x] 001. https://blog.1password.com/closing-the-credential-risk-gap-for-browser-use-ai-agents/
+- [x] 002. https://www.cubic.dev/blog/the-real-problem-with-ai-coding
+- [x] 003. https://uxpilot.ai/ja-JP
+- [x] 004. https://www.wired.com/ai-issue/
+- [x] 005. https://yusufaytas.com/ai-broke-interviews/
+- [x] 006. https://uxdesign.cc/how-ai-writing-tools-fail-to-speak-to-writers-1bab97d0fa98
+- [x] 007. https://www.trevorlasn.com/blog/superpowers-claude-code-skills
+- [x] 008. https://www.trevorlasn.com/blog/context7-mcp
+- [x] 009. https://cfo.economictimes.indiatimes.com/news/74-of-ceos-worry-ai-failures-could-cost-them-their-jobs-report/118923383
+- [x] 010. https://www.eff.org/deeplinks/2025/02/ai-and-copyright-expanding-copyright-hurts-everyone-heres-what-do-instead
 - [ ] 011. https://rameerez.com/send-this-article-to-your-friend-who-still-thinks-the-cloud-is-a-good-idea/
-- [ ] 012. https://piunikaweb.com/2025/11/04/youtube-ai-error-terminates-enderman-channel/
-- [ ] 013. https://news.ycombinator.com/item?id=45805540
-- [ ] 014. https://www.wreflection.com/p/ai-dial-up-era
-- [ ] 015. https://blog.redplanetlabs.com/2025/11/03/introducing-agent-o-rama-build-trace-evaluate-and-monitor-stateful-llm-agents-in-java-or-clojure/
-- [ ] 016. https://news.ycombinator.com/item?id=45800688
-- [ ] 017. https://news.ycombinator.com/item?id=45799211
-- [ ] 018. https://againstdata.com/blog/stop-ai
-- [ ] 019. https://chrisloy.dev/post/2025/08/03/context-engineering
-- [ ] 020. https://words.filippo.io/claude-debugging/
-- [ ] 021. https://thezvi.substack.com/p/openai-moves-to-complete-potentially
-- [ ] 022. https://news.ycombinator.com/item?id=45778214
-- [ ] 023. https://openai.com/ja-JP/policies/usage-policies/
-- [ ] 024. https://azukiazusa.dev/blog/claude-code-sandbox-feature/
-- [ ] 025. https://www.publickey1.jp/blog/25/openaiamdaiethernet_for_scale-up_networking_esun.html
-- [ ] 026. https://www.publickey1.jp/blog/25/aiuiokjetbrainsmatter.html
-- [ ] 027. https://qiita.com/morimune/items/3d07e4e0062598093b3e
-- [ ] 028. https://qiita.com/moritalous/items/23eb08b569910171748e
-- [ ] 029. https://qiita.com/Shin_unity3dcg/items/2da1c76d0f733678b1d3
-- [ ] 030. https://qiita.com/tomoasleep/items/6b185799f203564161ed
-- [ ] 031. https://zenn.dev/levtech/articles/a5a3204ffed86c
-- [ ] 032. https://zenn.dev/aun_phonogram/articles/44d298f8d9d0fd
-- [ ] 033. https://zenn.dev/little_hand_s/articles/dbd5fc27f5a2f0
-- [ ] 034. https://zenn.dev/mn329/articles/95a755391542c6
-- [ ] 035. https://zenn.dev/masa_oka108/articles/27705aa0f83294
-- [ ] 036. https://zenn.dev/tmasuyama1114/articles/claude-code-real-dev
-- [ ] 037. https://zenn.dev/hy20191108/articles/d88bc7f5ccb0cc
-- [ ] 038. https://zenn.dev/pivotmedia/articles/ai-driven-development-qa-challenge
-- [ ] 039. https://zenn.dev/stellarcreate/articles/git-worktree-parallel-development-with-cursor
-- [ ] 040. https://zenn.dev/oikon/articles/claude-code-web-sandbox
-- [ ] 041. https://zenn.dev/neoai/articles/48ecdf48c51470
-- [ ] 042. https://zenn.dev/srefin/articles/17ba278f402b5d
-- [ ] 043. https://zenn.dev/mohupor03/articles/58a37e9b56066a
-- [ ] 044. https://zenn.dev/beagle/articles/bc6ef88dd68615
-- [ ] 045. https://gigazine.net/news/20251104-openai-sora-2-coda/
-- [ ] 046. https://www.businessinsider.jp/article/2510-oxford-warns-ai-making-teens-faster-but-shallower-thinkers/
-- [ ] 047. https://jbpress.ismedia.jp/articles/-/91476
-- [ ] 048. https://www.gizmodo.jp/2025/11/vulnerability-discovered-in-chatgpt-atlas.html
-- [ ] 049. https://forest.watch.impress.co.jp/docs/news/2060040.html
-- [ ] 050. https://www.techno-edge.net/article/2025/11/04/4700.html
-- [ ] 051. https://tech.speee.jp/entry/AIplanner
-- [ ] 052. https://orangestar2.hatenadiary.com/entry/2025/11/04/111727
-- [ ] 053. https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure
-- [ ] 054. https://www.technologyreview.jp/s/371418/i-tried-openais-new-atlas-browser-but-i-still-dont-know-what-its-for/
-- [ ] 055. https://note.com/keisuke_shibata/n/n3996ab043797
-- [ ] 056. https://codezine.jp/article/detail/22261
-- [ ] 057. https://www.makeuseof.com/perplexity-ai-features-you-might-have-overlooked/
-- [ ] 058. https://www.gizmodo.jp/2025/11/this-professor-let-half-his-class-use-ai-heres-what-happened.html
-- [ ] 059. https://www.makeuseof.com/gistr-chrome-extension-notebooklm/
-- [ ] 060. https://blog.google/outreach-initiatives/education/google-skills/
-- [ ] 061. https://blog.sshh.io/p/how-i-use-every-claude-code-feature
-- [ ] 062. https://note.com/shi3zblog/n/n99bb0c642f1e
-- [ ] 063. https://www.techno-edge.net/article/2025/11/01/4699.html
-- [ ] 064. https://speakerdeck.com/shunsock/local-env-as-a-code-with-nix
-- [ ] 065. https://k-tai.watch.impress.co.jp/docs/news/2059010.html
-- [ ] 066. https://aba.hatenablog.com/entry/2025/11/01/124339
-- [ ] 067. https://anond.hatelabo.jp/20251101061208
-- [ ] 068. https://zenn.dev/olemi/articles/2ae97d8ce4fe2a
-- [ ] 069. https://speakerdeck.com/iwiwi/zhan-eruaiezientonozuo-rifang
-- [ ] 070. https://www.anildash.com/2025/10/17/the-majority-ai-view/
-- [ ] 071. https://www.antonsten.com/articles/how-to-stand-out-when-anyone-can-build-anything/
-- [ ] 072. https://github.blog/ai-and-ml/github-copilot/a-developers-guide-to-writing-debugging-reviewing-and-shipping-code-faster-with-github-copilot/
-- [ ] 073. https://vercel.com/changelog/free-botid-deep-analysis
-- [ ] 074. https://blog.btrax.com/jp/listenlabs/
-- [ ] 075. https://blog.google/products/chrome/ai-mode-in-chrome-ios-android/
-- [ ] 076. https://tech.legalforce.co.jp/entry/ai-event-announcement
-- [ ] 077. https://socket.dev/blog/how-enterprise-security-is-adapting-to-ai-accelerated-threats
-- [ ] 078. https://1password.com/blog/holiday-phishing-scams
-- [ ] 079. https://www.theguardian.com/business/2025/nov/05/global-stock-markets-fall-sharply-over-ai-bubble-fears
-- [ ] 080. https://www.augmentcode.com/blog/developers-are-choosing-older-ai-models-and-16b-tokens-of-data-explain-why
-- [ ] 081. https://tech.layerx.co.jp/entry/2025/11/06/080000
-- [ ] 082. https://www.publickey1.jp/blog/25/mcpapikong_insomnia_12.html
-- [ ] 083. https://qiita.com/mamoru-ngy/items/a73607a1a0392b5d2c6c
-- [ ] 084. https://qiita.com/Chappie_00_1/items/bb3814be48a3617317ff
-- [ ] 085. https://qiita.com/ntaka329/items/0c0c2cb719103b38facf
-- [ ] 086. https://qiita.com/imamu123/items/e7105ab0e0a6292f0937
-- [ ] 087. https://zenn.dev/nextbeat/articles/819c2ace67e8ef
-- [ ] 088. https://zenn.dev/tsuboi/articles/da19549dbdc6de
-- [ ] 089. https://zenn.dev/aws_japan/articles/7363e961534462
-- [ ] 090. https://note.com/taku_yeah/n/n6bbf141ae54b
-- [ ] 091. https://www.itmedia.co.jp/news/articles/2511/05/news051.html
-- [ ] 092. https://applech2.com/archives/20251105-soundcore-work-ai-voice-recorder.html
-- [ ] 093. https://www.nikkei.com/article/DGXZQOGN04BH40U5A101C2000000/
-- [ ] 094. https://xenospectrum.com/ai-learning-using-chatgpt-only-produces-shallow-understanding/
-- [ ] 095. https://www.smartwatchlife.jp/59860/
-- [ ] 096. https://gigazine.net/news/20251105-amazon-threats-perplexity/
-- [ ] 097. https://group.softbank/news/press/20251105
-- [ ] 098. https://www.anthropic.com/engineering/code-execution-with-mcp
-- [ ] 099. https://xenospectrum.com/openai-atlas-browser-avoids-lawsuit-media-analysis/
-- [ ] 100. https://speakerdeck.com/ivry_presentationmaterials/llm-apiwo2nian-jian-ben-fan-yun-yong-siteku-lao-sitahua
-- [ ] 101. https://www.itmedia.co.jp/business/articles/2511/05/news011.html
-- [ ] 102. https://www.smartwatchlife.jp/59850/
-- [ ] 103. https://gigazine.net/news/20251105-common-crawl-web-scraping/
-- [ ] 104. https://codezine.jp/article/detail/22162
-- [ ] 105. https://www.nikkei.com/article/DGXZQOGM2873R0Y5A021C2000000/
-- [ ] 106. https://zenn.dev/td3p/articles/73636e105901e0
-- [ ] 107. https://zenn.dev/knowledgesense/articles/3bd20780949e58
-- [ ] 108. https://zenn.dev/nttdata_tech/articles/2ea5821c65fc06
+- [x] 012. https://piunikaweb.com/2025/11/04/youtube-ai-error-terminates-enderman-channel/
+- [x] 013. https://news.ycombinator.com/item?id=45805540
+- [x] 014. https://www.wreflection.com/p/ai-dial-up-era
+- [x] 015. https://blog.redplanetlabs.com/2025/11/03/introducing-agent-o-rama-build-trace-evaluate-and-monitor-stateful-llm-agents-in-java-or-clojure/
+- [x] 016. https://news.ycombinator.com/item?id=45800688
+- [x] 017. https://news.ycombinator.com/item?id=45799211
+- [x] 018. https://againstdata.com/blog/stop-ai
+- [x] 019. https://chrisloy.dev/post/2025/08/03/context-engineering
+- [x] 020. https://words.filippo.io/claude-debugging/
+- [x] 021. https://thezvi.substack.com/p/openai-moves-to-complete-potentially
+- [x] 022. https://news.ycombinator.com/item?id=45778214
+- [x] 023. https://openai.com/ja-JP/policies/usage-policies/
+- [x] 024. https://azukiazusa.dev/blog/claude-code-sandbox-feature/
+- [x] 025. https://www.publickey1.jp/blog/25/openaiamdaiethernet_for_scale-up_networking_esun.html
+- [x] 026. https://www.publickey1.jp/blog/25/aiuiokjetbrainsmatter.html
+- [x] 027. https://qiita.com/morimune/items/3d07e4e0062598093b3e
+- [x] 028. https://qiita.com/moritalous/items/23eb08b569910171748e
+- [x] 029. https://qiita.com/Shin_unity3dcg/items/2da1c76d0f733678b1d3
+- [x] 030. https://qiita.com/tomoasleep/items/6b185799f203564161ed
+- [x] 031. https://zenn.dev/levtech/articles/a5a3204ffed86c
+- [x] 032. https://zenn.dev/aun_phonogram/articles/44d298f8d9d0fd
+- [x] 033. https://zenn.dev/little_hand_s/articles/dbd5fc27f5a2f0
+- [x] 034. https://zenn.dev/mn329/articles/95a755391542c6
+- [x] 035. https://zenn.dev/masa_oka108/articles/27705aa0f83294
+- [x] 036. https://zenn.dev/tmasuyama1114/articles/claude-code-real-dev
+- [x] 037. https://zenn.dev/hy20191108/articles/d88bc7f5ccb0cc
+- [x] 038. https://zenn.dev/pivotmedia/articles/ai-driven-development-qa-challenge
+- [x] 039. https://zenn.dev/stellarcreate/articles/git-worktree-parallel-development-with-cursor
+- [x] 040. https://zenn.dev/oikon/articles/claude-code-web-sandbox
+- [x] 041. https://zenn.dev/neoai/articles/48ecdf48c51470
+- [x] 042. https://zenn.dev/srefin/articles/17ba278f402b5d
+- [x] 043. https://zenn.dev/mohupor03/articles/58a37e9b56066a
+- [x] 044. https://zenn.dev/beagle/articles/bc6ef88dd68615
+- [x] 045. https://gigazine.net/news/20251104-openai-sora-2-coda/
+- [x] 046. https://www.businessinsider.jp/article/2510-oxford-warns-ai-making-teens-faster-but-shallower-thinkers/
+- [x] 047. https://jbpress.ismedia.jp/articles/-/91476
+- [x] 048. https://www.gizmodo.jp/2025/11/vulnerability-discovered-in-chatgpt-atlas.html
+- [x] 049. https://forest.watch.impress.co.jp/docs/news/2060040.html
+- [x] 050. https://www.techno-edge.net/article/2025/11/04/4700.html
+- [x] 051. https://tech.speee.jp/entry/AIplanner
+- [x] 052. https://orangestar2.hatenadiary.com/entry/2025/11/04/111727
+- [x] 053. https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure
+- [x] 054. https://www.technologyreview.jp/s/371418/i-tried-openais-new-atlas-browser-but-i-still-dont-know-what-its-for/
+- [x] 055. https://note.com/keisuke_shibata/n/n3996ab043797
+- [x] 056. https://codezine.jp/article/detail/22261
+- [x] 057. https://www.makeuseof.com/perplexity-ai-features-you-might-have-overlooked/
+- [x] 058. https://www.gizmodo.jp/2025/11/this-professor-let-half-his-class-use-ai-heres-what-happened.html
+- [x] 059. https://www.makeuseof.com/gistr-chrome-extension-notebooklm/
+- [x] 060. https://blog.google/outreach-initiatives/education/google-skills/
+- [x] 061. https://blog.sshh.io/p/how-i-use-every-claude-code-feature
+- [x] 062. https://note.com/shi3zblog/n/n99bb0c642f1e
+- [x] 063. https://www.techno-edge.net/article/2025/11/01/4699.html
+- [x] 064. https://speakerdeck.com/shunsock/local-env-as-a-code-with-nix
+- [x] 065. https://k-tai.watch.impress.co.jp/docs/news/2059010.html
+- [x] 066. https://aba.hatenablog.com/entry/2025/11/01/124339
+- [x] 067. https://anond.hatelabo.jp/20251101061208
+- [x] 068. https://zenn.dev/olemi/articles/2ae97d8ce4fe2a
+- [x] 069. https://speakerdeck.com/iwiwi/zhan-eruaiezientonozuo-rifang
+- [x] 070. https://www.anildash.com/2025/10/17/the-majority-ai-view/
+- [x] 071. https://www.antonsten.com/articles/how-to-stand-out-when-anyone-can-build-anything/
+- [x] 072. https://github.blog/ai-and-ml/github-copilot/a-developers-guide-to-writing-debugging-reviewing-and-shipping-code-faster-with-github-copilot/
+- [x] 073. https://vercel.com/changelog/free-botid-deep-analysis
+- [x] 074. https://blog.btrax.com/jp/listenlabs/
+- [x] 075. https://blog.google/products/chrome/ai-mode-in-chrome-ios-android/
+- [x] 076. https://tech.legalforce.co.jp/entry/ai-event-announcement
+- [x] 077. https://socket.dev/blog/how-enterprise-security-is-adapting-to-ai-accelerated-threats
+- [x] 078. https://1password.com/blog/holiday-phishing-scams
+- [x] 079. https://www.theguardian.com/business/2025/nov/05/global-stock-markets-fall-sharply-over-ai-bubble-fears
+- [x] 080. https://www.augmentcode.com/blog/developers-are-choosing-older-ai-models-and-16b-tokens-of-data-explain-why
+- [x] 081. https://tech.layerx.co.jp/entry/2025/11/06/080000
+- [x] 082. https://www.publickey1.jp/blog/25/mcpapikong_insomnia_12.html
+- [x] 083. https://qiita.com/mamoru-ngy/items/a73607a1a0392b5d2c6c
+- [x] 084. https://qiita.com/Chappie_00_1/items/bb3814be48a3617317ff
+- [x] 085. https://qiita.com/ntaka329/items/0c0c2cb719103b38facf
+- [x] 086. https://qiita.com/imamu123/items/e7105ab0e0a6292f0937
+- [x] 087. https://zenn.dev/nextbeat/articles/819c2ace67e8ef
+- [x] 088. https://zenn.dev/tsuboi/articles/da19549dbdc6de
+- [x] 089. https://zenn.dev/aws_japan/articles/7363e961534462
+- [x] 090. https://note.com/taku_yeah/n/n6bbf141ae54b
+- [x] 091. https://www.itmedia.co.jp/news/articles/2511/05/news051.html
+- [x] 092. https://applech2.com/archives/20251105-soundcore-work-ai-voice-recorder.html
+- [x] 093. https://www.nikkei.com/article/DGXZQOGN04BH40U5A101C2000000/
+- [x] 094. https://xenospectrum.com/ai-learning-using-chatgpt-only-produces-shallow-understanding/
+- [x] 095. https://www.smartwatchlife.jp/59860/
+- [x] 096. https://gigazine.net/news/20251105-amazon-threats-perplexity/
+- [x] 097. https://group.softbank/news/press/20251105
+- [x] 098. https://www.anthropic.com/engineering/code-execution-with-mcp
+- [x] 099. https://xenospectrum.com/openai-atlas-browser-avoids-lawsuit-media-analysis/
+- [x] 100. https://speakerdeck.com/ivry_presentationmaterials/llm-apiwo2nian-jian-ben-fan-yun-yong-siteku-lao-sitahua
+- [x] 101. https://www.itmedia.co.jp/business/articles/2511/05/news011.html
+- [x] 102. https://www.smartwatchlife.jp/59850/
+- [x] 103. https://gigazine.net/news/20251105-common-crawl-web-scraping/
+- [x] 104. https://codezine.jp/article/detail/22162
+- [x] 105. https://www.nikkei.com/article/DGXZQOGM2873R0Y5A021C2000000/
+- [x] 106. https://zenn.dev/td3p/articles/73636e105901e0
+- [x] 107. https://zenn.dev/knowledgesense/articles/3bd20780949e58
+- [x] 108. https://zenn.dev/nttdata_tech/articles/2ea5821c65fc06
 - [x] 109. https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/
 - [x] 110. https://github.blog/developer-skills/programming-languages-and-frameworks/typescripts-rise-in-the-ai-era-insights-from-lead-architect-anders-hejlsberg/
 - [x] 111. https://vercel.com/blog/what-we-learned-building-agents-at-vercel
@@ -123,7 +123,7 @@
 - [x] 113. https://semaphore.io/blog/build-mcp-server
 - [x] 114. https://arxiv.org/abs/2510.18147
 - [x] 115. https://garymarcus.substack.com/p/if-you-thought-the-2008-bank-bailout
-- [ ] 116. https://moonshotai.github.io/Kimi-K2/thinking.html
+- [x] 116. https://moonshotai.github.io/Kimi-K2/thinking.html
 - [x] 117. https://devansh.bearblog.dev/ai-slop/
 - [x] 118. https://qiita.com/ktst79/items/92c127d321f9430c0622
 - [x] 119. https://qiita.com/autotaker1984/items/c30eafd8ab6a5e52cf9d
