@@ -26,7 +26,7 @@ uv run scripts/add_url.py "https://example.com/article" workdesk/sources.md
 - [x] 011. https://store.gamersnexus.net/ai-dystopia
 - [x] 012. https://latenitesoft.com/blog/evaluating-frontier-ai-image-generation-models/
 - [x] 013. https://techxplore.com/news/2025-11-ai-tons-annually.html
-- [x] 014. https://www.reuters.com/world/german-court-sides-with-plaintiff-copyright-case-against-openai-2025-11-11/
+- [x] 014. https://news.ycombinator.com/item?id=45886131
 - [x] 015. https://news.ycombinator.com/item?id=45884169
 - [x] 016. https://duarteocarmo.com/blog/tts-still-sucks
 - [x] 017. https://bytesauna.com/post/dunning-kruger
