@@ -180,3 +180,7 @@ uv run scripts/add_url.py "https://example.com/article" workdesk/sources.md
 - [x] 165. https://zenn.dev/nexta_/articles/google-chrome-mcp-server
 - [x] 166. https://posfie.com/@okazuhagohan919/p/KrdCMEG
 - [x] 167. https://www.publickey1.jp/blog/25/geminipdfwordexcelfile_search_in_gemini_apirag.html
+- [x] 168. https://lukew.com/ff/entry.asp?2133
+- [x] 169. https://workos.com/blog/api-keys-vs-m2m-applications
+- [x] 170. https://davegriffith.substack.com/p/software-development-in-the-time
+- [x] 171. https://den.dev/blog/full-stack-person/
