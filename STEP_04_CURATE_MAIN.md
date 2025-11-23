@@ -78,7 +78,7 @@ This command:
 
 - [ ] Confirm main journal sources represent the week's most important content
 - [ ] Verify no duplicate topics in curated list
-- [ ] Verify `workdesk/non_main_sources.md` contains remaining sources (should be ~121 URLs)
+- [ ] Verify `workdesk/non_main_sources.md` contains remaining sources
 
 ## Next Step
 

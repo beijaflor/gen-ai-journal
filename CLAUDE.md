@@ -1,6 +1,6 @@
 # Project Overview
 
-This repository creates weekly curated journals about Generative AI in coding, following a systematic 12-step workflow.
+This repository creates weekly curated journals about Generative AI in coding, following a systematic 13-step workflow.
 
 # Editorial Guidelines
 
@@ -11,7 +11,7 @@ This repository creates weekly curated journals about Generative AI in coding, f
 
 ## File Organization
 - Journal entries: `journals/YYYY-MM-DD/` directory structure
-- Workflow steps: `STEP_00_*.md` through `STEP_11_*.md` files
+- Workflow steps: `STEP_01_*.md` through `STEP_13_*.md` files
 - Curation criteria: `criteria/` directory
 
 # Code Style & Tools
@@ -90,7 +90,7 @@ grep "^# Sources for Journal" workdesk/sources.md
 ```
 
 ## Step Execution
-- Follow workflow steps sequentially: STEP_00 → STEP_11
+- Follow workflow steps sequentially: STEP_01 → STEP_13
 - Update TodoWrite frequently to track progress
 - Mark steps complete only when fully finished
 

@@ -1,6 +1,4 @@
-# STEP_12_GENERATE_METADATA.md
-
-## Generate Journal Metadata
+# Step 11: Generate Journal Metadata
 
 This step creates the mandatory `journal-metadata.json` file containing summary statistics for the journal. This file is **required** for the website to build correctly.
 
@@ -99,6 +97,10 @@ echo "Generated metadata: Total=$TOTAL, Main=$MAIN, Annex=$ANNEX, Omitted=$OMITT
 
 ### Integration
 
-- **When to run**: After STEP_11 (final review) and before publishing
+- **When to run**: After STEP_10 (archive & cleanup) and before creating pull request
 - **Requirement**: This file is mandatory - the website will not build without it
-- **Workflow**: This becomes the final step before journal publication
+- **Workflow**: Generate metadata before pull request so it's included in the PR
+
+## Next Step
+
+Proceed to [STEP_12_PULL_REQUEST.md](STEP_12_PULL_REQUEST.md) to create the pull request for review.

@@ -1,4 +1,4 @@
-# Step 1: Gather and Add Links
+# Step 2: Gather and Add Links
 
 This step describes how to collect and add links to the journal workflow.
 
@@ -101,4 +101,3 @@ Once you have added sufficient links (typically 30-50 for a weekly journal):
 - Review and categorize links in `workdesk/sources.md`
 - Sync to GitHub issue for progress tracking
 - Continue to [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md) for journal preparation
-- Note: STEP_02 (bulk summarization) is now integrated into the add_link process

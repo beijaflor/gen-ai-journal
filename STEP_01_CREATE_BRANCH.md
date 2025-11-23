@@ -1,4 +1,4 @@
-# Step 0: Create Branch
+# Step 1: Create Branch
 
 ## Overview
 Create a dedicated feature branch for the weekly journal to enable isolated development and clean merge process.
@@ -21,7 +21,7 @@ git status
 - Example: `journal/2025-07-26`
 
 ## Next Steps
-- Proceed to [Step 1: Add Links](STEP_01_GATHER_SOURCES.md)
+- Proceed to [Step 2: Add Links](STEP_02_GATHER_SOURCES.md)
 - All development work happens on this branch
 - Main branch remains clean until final merge
 

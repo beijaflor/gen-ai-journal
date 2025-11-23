@@ -20,7 +20,7 @@ Create focused, unified summary documents that contain only the summaries for ar
 Generate a unified summary file containing only the main journal articles:
 
 ```bash
-python3 scripts/unite_summaries.py workdesk/curated_journal_sources.md workdesk/summaries workdesk/unified_summaries_main.md
+uv run scripts/unite_summaries.py workdesk/curated_journal_sources.md workdesk/summaries workdesk/unified_summaries_main.md
 ```
 
 ### 2. Create Annex Journal Focused Summaries
@@ -28,7 +28,7 @@ python3 scripts/unite_summaries.py workdesk/curated_journal_sources.md workdesk/
 Generate a unified summary file containing only the annex journal articles:
 
 ```bash
-python3 scripts/unite_summaries.py workdesk/curated_annex_journal_sources.md workdesk/summaries workdesk/unified_summaries_annex.md
+uv run scripts/unite_summaries.py workdesk/curated_annex_journal_sources.md workdesk/summaries workdesk/unified_summaries_annex.md
 ```
 
 ### 3. Create Omitted Sources List
@@ -39,7 +39,7 @@ Generate a list of URLs that were not selected for either journal:
 - [ ] Create `workdesk/omitted_urls.md` with unselected URLs
 - [ ] Generate omitted summaries:
   ```bash
-  python3 scripts/unite_summaries.py workdesk/omitted_urls.md workdesk/summaries workdesk/omitted_summaries_unified.md
+  uv run scripts/unite_summaries.py workdesk/omitted_urls.md workdesk/summaries workdesk/omitted_summaries_unified.md
   ```
 
 ## Quality Checks

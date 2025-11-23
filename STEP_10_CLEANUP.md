@@ -214,6 +214,6 @@ After cleanup, the workspace is ready for the next weekly cycle:
 - Git repository updated with new journal
 - Ready to start Step 1 for next week
 
-## Next Cycle
+## Next Step
 
-Begin the next weekly journal cycle with [STEP_01_GATHER_SOURCES.md](STEP_01_GATHER_SOURCES.md).
+Proceed to [STEP_11_GENERATE_METADATA.md](STEP_11_GENERATE_METADATA.md) to generate the mandatory metadata file before creating the pull request.
