@@ -1,4 +1,4 @@
-# Step 11: Create Pull Request
+# Step 12: Create Pull Request
 
 ## Overview
 Create a pull request for the completed journal. In the modern workflow, pull requests are typically created early in the process (after Step 3 or when significant work begins) to enable collaborative editing and continuous review.
@@ -116,23 +116,23 @@ EOF
 ### For Complete Journal:
 1. **Human Review**: The human reviewer will examine the journal content and quality
 2. **Merge Decision**: Human will merge the PR when ready to publish
-3. **Publication**: After merge, proceed to [STEP_12_TAG_PUBLISH.md](STEP_12_TAG_PUBLISH.md) for tagging and publication
+3. **Publication**: After merge, proceed to [STEP_13_TAG_PUBLISH.md](STEP_13_TAG_PUBLISH.md) for tagging and publication
 
 ## Workflow Integration
 
 **Modern Recommended Flow:**
 ```
-Step 00 → Step 01 → Step 02 → Step 03 → CREATE DRAFT PR → Steps 04-10 → CONVERT TO READY → Human Review → Merge → Step 12
+Step 01 → Step 02 → Step 03 → CREATE DRAFT PR → Steps 04-11 → CONVERT TO READY → Human Review → Merge → Step 13
 ```
 
 **Legacy Flow:**
 ```
-Steps 00-10 → CREATE PR → Human Review → Merge → Step 12
+Steps 01-11 → CREATE PR → Human Review → Merge → Step 13
 ```
 
 ## Notes
 - **Early PR Creation** enables better collaboration and continuous feedback
 - **Draft PRs** keep development visible without requesting immediate review
 - **Human retains control** over publication timing regardless of PR creation method
-- **Branch cleanup** happens in STEP_12 after successful publication
+- **Branch cleanup** happens in STEP_13 after successful publication
 - **Continuous commits** during development help track progress and enable rollback if needed

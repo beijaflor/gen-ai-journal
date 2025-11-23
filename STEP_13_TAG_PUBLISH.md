@@ -1,10 +1,10 @@
-# Step 12: Tag & Publish
+# Step 13: Tag & Publish
 
 ## Overview
 After the pull request has been merged by human review, tag the release and perform any publication tasks. This final step completes the journal publication workflow.
 
 ## Prerequisites
-- [ ] Pull request from STEP_11 has been merged to main branch by human reviewer
+- [ ] Pull request from STEP_12 has been merged to main branch by human reviewer
 - [ ] Journal files are now on main branch in `journals/YYYY-MM-DD/` directory
 - [ ] Ready to publish and tag the journal release
 
@@ -26,7 +26,7 @@ ls -la journals/YYYY-MM-DD/
 ### 3. Create Release Tag
 ```bash
 # Create semantic version tag based on journal date
-git tag -a "2025-08-16" -m "Weekly GenAI Journal - August 16, 2025
+git tag -a "YYYY-MM-DD" -m "Weekly GenAI Journal - [Month Day, Year]
 
 ## Summary
 - Main journal: X high-impact articles
@@ -41,7 +41,7 @@ git tag -a "2025-08-16" -m "Weekly GenAI Journal - August 16, 2025
 Co-Authored-By: Claude <noreply@anthropic.com>"
 
 # Push the tag to remote
-git push origin 2025-08-16
+git push origin YYYY-MM-DD
 ```
 
 ### 4. Cleanup Feature Branch
@@ -54,9 +54,9 @@ git push origin --delete journal/YYYY-MM-DD
 ### 5. Optional: Create GitHub Release
 ```bash
 # Create a GitHub release from the tag (optional)
-gh release create 2025-08-16 \
-  --title "GenAI Weekly Journal - August 16, 2025" \
-  --notes "Weekly curated journal of AI and coding developments. See journals/2025-08-16/ for full content."
+gh release create YYYY-MM-DD \
+  --title "GenAI Weekly Journal - [Month Day, Year]" \
+  --notes "Weekly curated journal of AI and coding developments. See journals/YYYY-MM-DD/ for full content."
 ```
 
 ## Post-Publication Tasks
@@ -85,8 +85,8 @@ Use date-based versioning for journal releases:
 ### Direct Publication (No GitHub Release)
 ```bash
 # Minimal publication - just tag and cleanup
-git tag -a "2025-08-16" -m "Weekly journal for 2025-08-16"
-git push origin 2025-08-16
+git tag -a "YYYY-MM-DD" -m "Weekly journal for YYYY-MM-DD"
+git push origin YYYY-MM-DD
 git branch -d journal/YYYY-MM-DD
 ```
 
@@ -102,11 +102,11 @@ git branch -d journal/YYYY-MM-DD
 
 After successful publication:
 1. **Ready for Next Week**: Workspace is prepared for new journal cycle
-2. **Start Fresh**: Begin next journal with [STEP_00_CREATE_BRANCH.md](STEP_00_CREATE_BRANCH.md)
+2. **Start Fresh**: Begin next journal with [STEP_01_CREATE_BRANCH.md](STEP_01_CREATE_BRANCH.md)
 3. **Continuous Cycle**: The workflow continues weekly
 
 ## Notes
-- Human controls the merge timing in STEP_11
+- Human controls the merge timing in STEP_12
 - This step handles the technical publication aspects
 - Tags provide permanent references to journal releases
 - Branch cleanup prevents repository bloat
