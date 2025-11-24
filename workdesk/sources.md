@@ -34,7 +34,6 @@
 - [x] 031. https://www.pcgamer.com/software/ai/usd1-billion-ai-company-co-founder-admits-that-its-usd100-a-month-transcription-service-was-originally-two-guys-surviving-on-pizza-and-typing-out-notes-by-hand/
 - [x] 032. https://blog.helix.ml/p/technical-deep-dive-on-streaming
 - [x] 033. https://djnn.sh/posts/anthropic-s-paper-smells-like-bullshit/
-- [x] 034. https://www.sminez.dev/match-it-again-sam/
 - [x] 035. https://medium.com/@anwarzaid76/is-perplexity-the-first-ai-unicorn-to-fail-eb0e827b5e7e
 - [x] 036. https://www.tomshardware.com/tech-industry/cryptomining/major-bitcoin-mining-firm-pivoting-to-ai-plans-to-fully-abandon-crypto-mining-by-2027-bitfarm-to-leverage-341-megawatt-capacity-for-ai-following-usd46-million-q3-loss
 - [x] 037. https://andymasley.substack.com/p/the-ai-water-issue-is-fake
