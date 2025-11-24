@@ -5,7 +5,6 @@
 - [x] 001. https://www.smashingmagazine.com/2025/11/simplifying-server-management-ai-automation/
 - [ ] 002. https://blogs.windows.com/msedgedev/2025/11/18/edge-for-business-presents-the-worlds-first-secure-enterprise-ai-browser/
 - [x] 003. https://blog.sentry.io/the-dawn-of-the-10x-team/
-- [x] 004. https://zenn.dev/appbrew/articles/e2f38677f6a0ce
 - [x] 005. https://gigazine.net/news/20251114-web-tweeks-ai/
 - [x] 006. https://www.chrbutler.com/what-ai-is-really-for
 - [x] 007. https://semaphore.io/blog/self-healing-ci
@@ -148,7 +147,6 @@
 - [x] 144. https://1password.com/blog/securing-mcp-servers-with-1password-stop-credential-exposure-in-your-agent
 - [x] 145. https://firebase.blog/posts/2025/11/gemini-3-firebase-ai-logic/
 - [x] 146. https://scatterarrow.com/content/en/all-your-coworkers-are-probabilistic.html
-- [x] 147. https://chrisloy.dev/post/2025/09/28/the-ai-coding-trap
 - [x] 148. https://kaishaku01.hatenablog.com/entry/2025/11/21/172357
 - [x] 149. https://speakerdeck.com/gotalab555/shi-yang-qu-dong-kai-fa-noli-xiang-toxian-shi-sositexiang-kihe-ifang
 - [x] 150. https://aba.hatenablog.com/entry/2025/11/19/183058
