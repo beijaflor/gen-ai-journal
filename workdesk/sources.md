@@ -136,7 +136,6 @@
 - [x] 134. https://github.blog/ai-and-ml/github-copilot/evolving-github-copilots-next-edit-suggestions-through-custom-model-training/
 - [x] 135. https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/
 - [x] 136. https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/
-- [x] 137. https://github.blog/enterprise-software/collaboration/level-up-design-to-code-collaboration-with-githubs-open-source-annotation-toolkit/
 - [x] 138. https://goodpatch.com/blog/2025-11-aipatch
 - [x] 139. https://uxdesign.cc/the-salt-in-the-ai-cake-seven-emerging-jobs-no-one-is-preparing-for-8c2664a452a3
 - [x] 140. https://uxdesign.cc/dear-llm-heres-how-my-design-system-works-b59fb9a342b7
