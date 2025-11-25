@@ -3,44 +3,44 @@
 ## URLs
 
 - [x] 001. https://www.smashingmagazine.com/2025/11/simplifying-server-management-ai-automation/
-- [ ] 002. https://blogs.windows.com/msedgedev/2025/11/18/edge-for-business-presents-the-worlds-first-secure-enterprise-ai-browser/
+- [x] 002. https://blogs.windows.com/msedgedev/2025/11/18/edge-for-business-presents-the-worlds-first-secure-enterprise-ai-browser/
 - [x] 003. https://blog.sentry.io/the-dawn-of-the-10x-team/
 - [x] 005. https://gigazine.net/news/20251114-web-tweeks-ai/
 - [x] 006. https://www.chrbutler.com/what-ai-is-really-for
 - [x] 007. https://semaphore.io/blog/self-healing-ci
 - [x] 008. https://www.wreflection.com/p/command-lines-ai-coding
 - [x] 009. https://www.astralcodexten.com/p/the-new-ai-consciousness-paper
-- [ ] 010. https://adrs-ucb.notion.site/autocomp
+- [x] 010. https://adrs-ucb.notion.site/autocomp
 - [x] 011. https://blog.google/technology/ai/nano-banana-pro/
 - [x] 012. https://himanshusinghbisht.substack.com/p/the-learned-helplessness-of-ai
 - [x] 013. https://blog.mozilla.ai/control-llm-spend-and-access-with-any-llm-gateway/
 - [x] 014. https://verdikapuku.com/posts/i-am-just-so-sick-of-ai-prediction-content/
 - [x] 015. https://openai.com/index/gpt-5-1-codex-max/
 - [x] 016. https://blog.kagi.com/llms
-- [ ] 017. https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf
-- [ ] 018. https://news.ycombinator.com/item?id=45971601
+- [x] 017. https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf
+- [x] 018. https://news.ycombinator.com/item?id=45971601
 - [x] 019. https://www.bbc.com/news/articles/cwy7vrd8k4eo
 - [x] 020. https://arstechnica.com/ai/2025/11/googles-sundar-pichai-warns-of-irrationality-in-trillion-dollar-ai-investment-boom/
 - [x] 021. https://arxiv.org/abs/2511.09030
 - [x] 022. https://developers.googleblog.com/en/5-things-to-try-with-gemini-3-pro-in-gemini-cli/
 - [x] 023. https://blog.google/products/search/gemini-3-search-ai-mode/
-- [ ] 024. https://antigravity.google/blog/introducing-google-antigravity
+- [x] 024. https://antigravity.google/blog/introducing-google-antigravity
 - [x] 025. https://blog.google/technology/developers/gemini-3-developers/
 - [x] 026. https://blog.google/products/gemini/gemini-3/
 - [x] 027. https://news.ycombinator.com/item?id=45967814
-- [ ] 028. https://news.ycombinator.com/item?id=45953883
-- [ ] 029. https://news.ycombinator.com/item?id=45947434
-- [ ] 030. https://hiddenlayer.com/innovation-hub/mcp-model-context-pitfalls-in-an-agentic-world/
+- [x] 028. https://news.ycombinator.com/item?id=45953883
+- [x] 029. https://news.ycombinator.com/item?id=45947434
+- [x] 030. https://hiddenlayer.com/innovation-hub/mcp-model-context-pitfalls-in-an-agentic-world/
 - [x] 031. https://www.pcgamer.com/software/ai/usd1-billion-ai-company-co-founder-admits-that-its-usd100-a-month-transcription-service-was-originally-two-guys-surviving-on-pizza-and-typing-out-notes-by-hand/
 - [x] 032. https://blog.helix.ml/p/technical-deep-dive-on-streaming
 - [x] 033. https://djnn.sh/posts/anthropic-s-paper-smells-like-bullshit/
 - [x] 035. https://medium.com/@anwarzaid76/is-perplexity-the-first-ai-unicorn-to-fail-eb0e827b5e7e
 - [x] 036. https://www.tomshardware.com/tech-industry/cryptomining/major-bitcoin-mining-firm-pivoting-to-ai-plans-to-fully-abandon-crypto-mining-by-2027-bitfarm-to-leverage-341-megawatt-capacity-for-ai-following-usd46-million-q3-loss
 - [x] 037. https://andymasley.substack.com/p/the-ai-water-issue-is-fake
-- [ ] 038. https://news.ycombinator.com/item?id=45948477
+- [x] 038. https://news.ycombinator.com/item?id=45948477
 - [x] 039. https://news.ycombinator.com/item?id=45958005
 - [x] 040. https://tech.layerx.co.jp/entry/2025/11/19/133143
-- [ ] 041. https://blogs.windows.com/windowsdeveloper/2025/11/18/ignite-2025-furthering-windows-as-the-premier-platform-for-developers-governed-by-security/
+- [x] 041. https://blogs.windows.com/windowsdeveloper/2025/11/18/ignite-2025-furthering-windows-as-the-premier-platform-for-developers-governed-by-security/
 - [x] 042. https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/
 - [x] 043. https://qiita.com/GIFCat/items/4a8be8e2906833c5874e
 - [x] 044. https://qiita.com/kentaro_kawamura/items/d2b858d9d6e091855757
@@ -103,7 +103,7 @@
 - [x] 101. https://speakerdeck.com/legalontechnologies/aiagent-introduction
 - [x] 102. https://www.itmedia.co.jp/news/articles/2511/21/news041.html
 - [x] 103. https://developers.freee.co.jp/entry/product-design-created-with-AI
-- [ ] 104. https://www.aidemos.meta.com/
+- [x] 104. https://www.aidemos.meta.com/
 - [x] 105. https://forbesjapan.com/articles/detail/85349
 - [x] 106. https://levtech.jp/media/article/column/detail_759/
 - [x] 107. https://japan.zdnet.com/article/35240680/
@@ -112,7 +112,7 @@
 - [x] 110. https://www.cnn.co.jp/tech/35240689.html
 - [x] 111. https://news.yahoo.co.jp/articles/73094e8bc7a9a7c6a4e92ac15670cdb91e6269c3
 - [x] 112. https://gerireid.com/blog/can-ai-write-accessibility-specs/
-- [ ] 113. https://speakerdeck.com/kikuchikakeru/ge-ren-karaxun-ruaipi-retozu-zhi-tositedekirukoto-aipi-rewohututobase-enzinianoaipi-rezhi-liao-fa-siyotosetusiyon
+- [x] 113. https://speakerdeck.com/kikuchikakeru/ge-ren-karaxun-ruaipi-retozu-zhi-tositedekirukoto-aipi-rewohututobase-enzinianoaipi-rezhi-liao-fa-siyotosetusiyon
 - [x] 114. https://atmarkit.itmedia.co.jp/ait/articles/2511/19/news051.html
 - [x] 115. https://kakuyomu.jp/info/entry/geneai_tag
 - [x] 116. https://blog.lai.so/antigravity/
