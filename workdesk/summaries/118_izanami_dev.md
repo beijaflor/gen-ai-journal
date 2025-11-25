@@ -1,6 +1,6 @@
 ## Claude の Skills、Prompts、Projects、Subagents、MCP の違いと使い分け
 
-https://izanami.dev/post/2cf1d4a-7999-45e9-bd02-e424f9c97b49
+https://izanami.dev/post/2cf1d74a-7999-45e9-bd02-e424f9c97b49
 
 ClaudeのAIエージェント機能を最大限に活用するため、中心となる5つの構成要素（Skills, Prompts, Projects, Subagents, MCP）の役割、使い分け、そして効果的な連携方法を詳細に解説する。
 

@@ -1,6 +1,6 @@
 ## 基本無料のAIチャットリリースで確信したGPT-OSSこそ真のゲームチェンジャーといえる理由
 
-https://zenn.dev/collections/articles/ada3a7f0af8bf
+https://zenn.dev/collections/articles/ada3a73f0af8bf
 
 著者によって基本無料のAIチャットボット「nidomi」がリリースされ、複数のクラウドベンダーが提供するGPT-OSSモデルの無料枠を連携させることで、AI導入のコスト障壁を劇的に下げ、真のゲームチェンジャーとしてのGPT-OSSエコシステムの可能性を提示する。
 

@@ -1,6 +1,6 @@
 ## Strands Agents でマルチエージェントシステムを組む方法4選
 
-https://zenn.dev/aws_japan/articles/8a086b40dea242
+https://zenn.dev/aws_japan/articles/8a0863b7dea242
 
 Strands Agentsフレームワークが提供するマルチエージェントシステム構築の4つの主要パターンを、具体的なコード例と共に詳解し、複雑なタスク自動化への道筋を示します。
 
