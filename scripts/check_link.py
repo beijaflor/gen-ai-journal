@@ -40,8 +40,8 @@ def sanitize_url(url):
 def check_duplicate(sanitized_url):
     """Check if URL already exists in sources or summaries."""
     duplicate_locations = []
-    
-    # Check in sources.md
+
+    # Check in workdesk/sources.md
     sources_file = Path("workdesk/sources.md")
     if sources_file.exists():
         try:
@@ -51,8 +51,8 @@ def check_duplicate(sanitized_url):
                     duplicate_locations.append("workdesk/sources.md")
         except:
             pass
-    
-    # Check in summaries directory
+
+    # Check in workdesk/summaries directory
     summaries_dir = Path("workdesk/summaries")
     if summaries_dir.exists():
         for file in summaries_dir.glob("*.md"):
@@ -63,7 +63,19 @@ def check_duplicate(sanitized_url):
                         duplicate_locations.append(f"workdesk/summaries/{file.name}")
             except:
                 continue
-    
+
+    # Check in published journals (journals/*/sources/*.md)
+    journals_dir = Path("journals")
+    if journals_dir.exists():
+        for sources_file in journals_dir.glob("*/sources/*.md"):
+            try:
+                with open(sources_file, 'r') as f:
+                    content = f.read()
+                    if sanitized_url in content:
+                        duplicate_locations.append(str(sources_file))
+            except:
+                continue
+
     return duplicate_locations if duplicate_locations else None
 
 
