@@ -4,13 +4,16 @@ Check a link before adding to the GenAI journal workflow.
 This script:
 1. Accepts a URL as input
 2. Sanitizes the URL (removes UTM params and fragments)
-3. Checks for duplicates in existing summaries
+3. Follows HTTP redirects to get the final destination URL
+4. Checks for duplicates in existing summaries (both original and final URLs)
 """
 
 import sys
 import re
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 from pathlib import Path
+import requests
+from requests.exceptions import RequestException
 
 def sanitize_url(url):
     """Removes tracking parameters and fragments from a URL."""
@@ -37,9 +40,67 @@ def sanitize_url(url):
     return sanitized_url
 
 
-def check_duplicate(sanitized_url):
-    """Check if URL already exists in sources or summaries."""
+def follow_redirects(url, timeout=10):
+    """
+    Follow HTTP redirects and return the final destination URL.
+    Returns (final_url, redirect_chain) or (None, None) if unable to follow.
+    """
+    try:
+        # Make HEAD request to avoid downloading content
+        response = requests.head(
+            url,
+            allow_redirects=True,
+            timeout=timeout,
+            headers={'User-Agent': 'Mozilla/5.0 (GenAI Journal Link Checker)'}
+        )
+
+        final_url = response.url
+
+        # Build redirect chain
+        redirect_chain = []
+        if response.history:
+            for resp in response.history:
+                redirect_chain.append(resp.url)
+            redirect_chain.append(final_url)
+
+        return final_url, redirect_chain
+    except RequestException as e:
+        # If HEAD fails, try GET (some servers don't support HEAD)
+        try:
+            response = requests.get(
+                url,
+                allow_redirects=True,
+                timeout=timeout,
+                stream=True,  # Don't download content
+                headers={'User-Agent': 'Mozilla/5.0 (GenAI Journal Link Checker)'}
+            )
+            response.close()
+
+            final_url = response.url
+            redirect_chain = []
+            if response.history:
+                for resp in response.history:
+                    redirect_chain.append(resp.url)
+                redirect_chain.append(final_url)
+
+            return final_url, redirect_chain
+        except RequestException:
+            # Unable to follow redirects
+            return None, None
+
+
+def check_duplicate(sanitized_url, final_url=None):
+    """
+    Check if URL already exists in sources or summaries.
+    Checks both the sanitized URL and final URL (if different after redirects).
+    Returns (is_duplicate, duplicate_locations) tuple.
+    """
     duplicate_locations = []
+    urls_to_check = [sanitized_url]
+
+    # If we have a final URL from redirects and it's different, check both
+    if final_url and final_url != sanitized_url:
+        urls_to_check.append(final_url)
 
     # Check in workdesk/sources.md
     sources_file = Path("workdesk/sources.md")
@@ -47,8 +108,9 @@ def check_duplicate(sanitized_url):
         try:
             with open(sources_file, 'r') as f:
                 content = f.read()
-                if sanitized_url in content:
-                    duplicate_locations.append("workdesk/sources.md")
+                for url in urls_to_check:
+                    if url in content:
+                        duplicate_locations.append(("workdesk/sources.md", url))
         except:
             pass
 
@@ -59,8 +121,9 @@ def check_duplicate(sanitized_url):
             try:
                 with open(file, 'r') as f:
                     content = f.read()
-                    if sanitized_url in content:
-                        duplicate_locations.append(f"workdesk/summaries/{file.name}")
+                    for url in urls_to_check:
+                        if url in content:
+                            duplicate_locations.append((f"workdesk/summaries/{file.name}", url))
             except:
                 continue
 
@@ -71,12 +134,13 @@ def check_duplicate(sanitized_url):
             try:
                 with open(sources_file, 'r') as f:
                     content = f.read()
-                    if sanitized_url in content:
-                        duplicate_locations.append(str(sources_file))
+                    for url in urls_to_check:
+                        if url in content:
+                            duplicate_locations.append((str(sources_file), url))
             except:
                 continue
 
-    return duplicate_locations if duplicate_locations else None
+    return (True, duplicate_locations) if duplicate_locations else (False, None)
 
 
 def main():
@@ -84,28 +148,52 @@ def main():
         print("Usage: python3 scripts/check_link.py <URL>")
         print("Example: python3 scripts/check_link.py https://example.com/article")
         sys.exit(1)
-    
+
     url = sys.argv[1]
-    
+
     # Step 1: Accept URL as input
     print(f"Original URL: {url}")
-    
+
     # Step 2: Sanitize URL
     sanitized_url = sanitize_url(url)
     print(f"Sanitized URL: {sanitized_url}")
-    
+
     if url != sanitized_url:
         print("Note: URL was modified (removed tracking params/fragments)")
-    
-    # Step 3: Check for duplicates
-    duplicates = check_duplicate(sanitized_url)
-    if duplicates:
-        print(f"\nError: URL already exists in:")
-        for location in duplicates:
-            print(f"  - {location}")
+
+    # Step 3: Follow redirects
+    print("\nFollowing redirects...")
+    final_url, redirect_chain = follow_redirects(sanitized_url)
+
+    if final_url:
+        if redirect_chain:
+            print(f"Final URL (after redirects): {final_url}")
+            print(f"Redirect chain ({len(redirect_chain)} hops):")
+            for i, redirect_url in enumerate(redirect_chain, 1):
+                print(f"  {i}. {redirect_url}")
+        else:
+            print(f"No redirects detected")
+            final_url = sanitized_url
+    else:
+        print("Warning: Unable to follow redirects (network error or timeout)")
+        print("Will check for duplicates using sanitized URL only")
+        final_url = None
+
+    # Step 4: Check for duplicates (both sanitized and final URLs)
+    is_duplicate, duplicates = check_duplicate(sanitized_url, final_url)
+
+    if is_duplicate:
+        print(f"\n❌ Error: URL already exists!")
+        print("\nDuplicates found:")
+        for location, matched_url in duplicates:
+            if matched_url != sanitized_url:
+                print(f"  - {location}")
+                print(f"    Matched via redirect: {matched_url}")
+            else:
+                print(f"  - {location}")
         sys.exit(1)
     else:
-        print("\nURL is unique and ready to be added")
+        print("\n✅ URL is unique and ready to be added")
 
 if __name__ == "__main__":
     main()

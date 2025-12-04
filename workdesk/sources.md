@@ -22,7 +22,6 @@
 - [x] 018. https://tech.unifa-e.com/entry/2025/11/28/180000
 - [x] 019. https://zenn.dev/loglass/articles/caefd045367a1a
 - [x] 020. https://techblog.recochoku.jp/12234
-- [x] 021. https://zenn.dev/yumemi_inc/articles/20251124_doccomment
 - [x] 022. https://developers.cyberagent.co.jp/blog/archives/59930/
 - [x] 023. https://techblog.goinc.jp/entry/2025/11/28/121713
 - [x] 024. https://bitmovin.com/blog/hackathon-debugging-ai-tools-llms/
