@@ -104,47 +104,48 @@
 - [ ] 097. https://stratechery.com/2025/google-nvidia-and-openai/
 - [ ] 098. https://allenpike.com/2025/why-is-chatgpt-so-good-claude
 - [ ] 099. https://huggingface.co/deepseek-ai/DeepSeek-Math-V2
-- [ ] 100. https://gpt3experiments.substack.com/p/dont-push-ai-down-our-throats
-- [ ] 101. https://llvm-mos.org/wiki/Welcome
-- [ ] 102. https://indianexpress.com/article/technology/tech-news-technology/google-ceo-sundar-pichai-says-vibe-coding-has-made-software-development-so-much-more-enjoyable-10393752/
-- [ ] 103. https://unherd.com/2025/11/europes-new-war-on-privacy/
-- [ ] 104. https://www.nature.com/articles/d41586-025-03506-6
-- [ ] 105. https://petewarden.com/2025/11/29/i-know-were-in-an-ai-bubble-because-nobody-wants-me-%f0%9f%98%ad/
-- [ ] 106. https://tech.layerx.co.jp/entry/2025/12/01/161913
-- [ ] 107. https://azukiazusa.dev/blog/claude-code-plan-mode-improved/
-- [ ] 108. https://azukiazusa.dev/blog/trying-claude-tool-finder/
-- [ ] 109. https://qiita.com/WdknWdkn/items/c67c90d75e7ec942e60c
-- [ ] 110. https://qiita.com/nyarlathotep/items/2506e32613fb8ca52006
-- [ ] 111. https://qiita.com/Xudev/items/4b7df3f703c7e9da38e7
-- [ ] 112. https://qiita.com/YuyaSaito/items/370070be6f2872ab21d3
-- [ ] 113. https://qiita.com/teramika/items/baa17a9901448cc0072a
-- [ ] 114. https://qiita.com/ussy_k/items/0f48fb0fb6cbe0aedb3c
-- [ ] 115. https://qiita.com/nobu34/items/2d90303e2d0f96fb7f12
-- [ ] 116. https://qiita.com/GIFCat/items/6614aff389a90950a8ed
-- [ ] 117. https://qiita.com/the_haigo/items/5d4dbb63ee5595ced33a
-- [ ] 118. https://qiita.com/hayuse/items/28d8716a8b5fd6ac91fe
-- [ ] 119. https://qiita.com/kenta_sat0/items/15a50c8a41cc57f2a7f9
-- [ ] 120. https://qiita.com/Syoitu/items/7cf7e8b437fefc803052
-- [ ] 121. https://zenn.dev/aws_japan/articles/235df74854bad6
-- [ ] 122. https://zenn.dev/dress_code/articles/89a5ceaa6eac37
-- [ ] 123. https://zenn.dev/jigjp_engineer/articles/dac17dcfdcb858
-- [ ] 124. https://zenn.dev/leverages/articles/github-zenn-linkage-20251201-1
-- [ ] 125. https://zenn.dev/layerx/articles/60b46a2e9ac94e
-- [ ] 126. https://zenn.dev/loglass/articles/c356dbc3062137
-- [ ] 127. https://zenn.dev/ageonsen/articles/fa6646e4c62307
-- [ ] 128. https://zenn.dev/gaudiy_blog/articles/03f029c82099cf
-- [ ] 129. https://zenn.dev/shintaroamaike/articles/d53921404e4c09
-- [ ] 130. https://zenn.dev/pksha/articles/82d7ebc8496c32
-- [ ] 131. https://zenn.dev/oligin/articles/7691926a83936a
-- [ ] 132. https://zenn.dev/91works/articles/1f725ab39c31c2
-- [ ] 133. https://engineer.crowdworks.jp/entry/agentic_coding_introduction
-- [ ] 134. https://speakerdeck.com/jaxx2104/freeeniokeruhuankusiyonwochao-eta-qi-tong-guan-denoaihuo-yong
-- [ ] 135. https://tech.iimon.co.jp/entry/2025/12/04
-- [ ] 136. https://www.itmedia.co.jp/news/articles/2512/03/news058.html
-- [ ] 137. https://blog.google/intl/ja-jp/feed/gemini/
-- [ ] 138. https://gigazine.net/news/20251202-deepseek-v3-2/
-- [ ] 139. https://speakerdeck.com/flatt_security/pss-number-2-takumi-session
-- [ ] 140. https://www.itmedia.co.jp/aiplus/articles/2512/02/news066.html
+- [x] 100. https://gpt3experiments.substack.com/p/dont-push-ai-down-our-throats
+- [x] 101. https://llvm-mos.org/wiki/Welcome
+- [x] 102. https://indianexpress.com/article/technology/tech-news-technology/google-ceo-sundar-pichai-says-vibe-coding-has-made-software-development-so-much-more-enjoyable-10393752/
+- [x] 103. https://unherd.com/2025/11/europes-new-war-on-privacy/
+- [x] 104. https://www.nature.com/articles/d41586-025-03506-6
+- [x] 105. https://petewarden.com/2025/11/29/i-know-were-in-an-ai-bubble-because-nobody-wants-me-%f0%9f%98%ad/
+- [x] 106. https://tech.layerx.co.jp/entry/2025/12/01/161913
+- [x] 107. https://azukiazusa.dev/blog/claude-code-plan-mode-improved/
+- [x] 108. https://azukiazusa.dev/blog/trying-claude-tool-finder/
+- [x] 109. https://qiita.com/WdknWdkn/items/c67c90d75e7ec942e60c
+- [x] 110. https://qiita.com/nyarlathotep/items/2506e32613fb8ca52006
+- [x] 111. https://qiita.com/Xudev/items/4b7df3f703c7e9da38e7
+- [x] 112. https://qiita.com/YuyaSaito/items/370070be6f2872ab21d3
+- [x] 113. https://qiita.com/teramika/items/baa17a9901448cc0072a
+- [x] 114. https://qiita.com/ussy_k/items/0f48fb0fb6cbe0aedb3c
+- [x] 115. https://qiita.com/nobu34/items/2d90303e2d0f96fb7f12
+- [x] 116. https://qiita.com/GIFCat/items/6614aff389a90950a8ed
+- [x] 117. https://qiita.com/the_haigo/items/5d4dbb63ee5595ced33a
+- [x] 118. https://qiita.com/hayuse/items/28d8716a8b5fd6ac91fe
+- [x] 119. https://qiita.com/kenta_sat0/items/15a50c8a41cc57f2a7f9
+- [x] 120. https://qiita.com/Syoitu/items/7cf7e8b437fefc803052
+- [x] 121. https://zenn.dev/aws_japan/articles/235df74854bad6
+- [x] 122. https://zenn.dev/dress_code/articles/89a5ceaa6eac37
+- [x] 123. https://zenn.dev/jigjp_engineer/articles/dac17dcfdcb858
+- [x] 124. https://zenn.dev/leverages/articles/github-zenn-linkage-20251201-1
+- [x] 125. https://zenn.dev/layerx/articles/60b46a2e9ac94e
+- [x] 126. https://zenn.dev/loglass/articles/c356dbc3062137
+- [x] 127. https://zenn.dev/ageonsen/articles/fa6646e4c62307
+- [x] 128. https://zenn.dev/gaudiy_blog/articles/03f029c82099cf
+- [x] 129. https://zenn.dev/shintaroamaike/articles/d53921404e4c09
+- [x] 130. https://zenn.dev/pksha/articles/82d7ebc8496c32
+- [x] 131. https://zenn.dev/oligin/articles/7691926a83936a
+- [x] 132. https://zenn.dev/91works/articles/1f725ab39c31c2
+- [x] 133. https://engineer.crowdworks.jp/entry/agentic_coding_introduction
+- [x] 134. https://speakerdeck.com/jaxx2104/freeeniokeruhuankusiyonwochao-eta-qi-tong-guan-denoaihuo-yong
+- [x] 135. https://tech.iimon.co.jp/entry/2025/12/04
+- [x] 136. https://www.itmedia.co.jp/news/articles/2512/03/news058.html
+- [x] 137. https://blog.google/intl/ja-jp/feed/gemini/
+- [x] 138. https://gigazine.net/news/20251202-deepseek-v3-2/
+- [x] 139. https://speakerdeck.com/flatt_security/pss-number-2-takumi-session
+- [x] 140. https://www.itmedia.co.jp/aiplus/articles/2512/02/news066.html
+- [x] 141. https://openai.com/ja-JP/index/chatgpt-for-teachers/
 
 
 ## Slides
