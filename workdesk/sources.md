@@ -91,7 +91,7 @@
 - [ ] 085. https://news.ycombinator.com/item?id=46130798
 - [ ] 086. https://spectrum.ieee.org/ai-agents-safety
 - [ ] 087. https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document
-- [ ] 088. https://constanttime.notion.site/Worlds-first-Ai-generated-font-using-nano-banana-2ba6f8e15af18012864bdb760fa9c9ba
+- [x] 088. https://constanttime.notion.site/Worlds-first-Ai-generated-font-using-nano-banana-2ba6f8e15af18012864bdb760fa9c9ba
 - [ ] 089. https://the-decoder.com/qwen3-vl-can-scan-two-hour-videos-and-pinpoint-nearly-every-detail/
 - [ ] 090. https://simonwillison.net/2025/Dec/2/claude-soul-document/
 - [ ] 091. https://www.theverge.com/news/836212/openai-code-red-chatgpt
