@@ -40,7 +40,6 @@
 - [ ] 033. https://forest.watch.impress.co.jp/docs/special/2066475.html
 - [ ] 034. https://note.com/yusuke_algomatic/n/n712bdff8a5b5
 - [ ] 035. https://www.wantedly.com/companies/wantedly/post_articles/1026657
-- [ ] 036. https://www.bloomberg.com/jp/news/articles/2025-12-02/T6NL73KGIFUL00
 - [ ] 037. https://www.gizmodo.jp/2025/12/question_gemini_over_chatgpt.html
 - [ ] 038. https://tech.iimon.co.jp/entry/2025/12/02
 - [ ] 039. https://zenn.dev/acntechjp/articles/411bbb4fe65022
@@ -156,3 +155,5 @@
 ## Omitted
 
 <!-- URLs that won't be included in this journal -->
+
+- 036. https://www.bloomberg.com/jp/news/articles/2025-12-02/T6NL73KGIFUL00 (Duplicate - covered by English article #091)
