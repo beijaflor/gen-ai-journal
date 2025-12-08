@@ -77,14 +77,14 @@
 - [ ] 071. https://zenn.dev/headwaters/articles/93d374474304f1
 - [ ] 072. https://zenn.dev/loglass/articles/86bc784d955478
 - [ ] 073. https://tech.smarthr.jp/entry/2025/12/04/081310
-- [ ] 074. https://air.dev/
+- [x] 074. https://air.dev/
 - [ ] 075. https://www.huy.rocks/everyday/12-01-2025-ai-teaching-an-llm-a-niche-diagraming-language
 - [ ] 076. https://news.ycombinator.com/item?id=46132531
 - [ ] 077. https://jonready.com/blog/posts/everyone-in-seattle-hates-ai.html
 - [ ] 078. https://martinalderson.com/posts/are-we-really-repeating-the-telecoms-crash-with-ai-datacenters/
 - [ ] 079. https://finance.yahoo.com/news/microsoft-lowers-ai-software-sales-141531121.html
 - [ ] 080. https://vechron.com/2025/12/anthropic-hires-wilson-sonsini-ipo-2026-openai-race/
-- [ ] 081. https://eleganthack.com/ux-is-your-moat-and-youre-ignoring-it/
+- [x] 081. https://eleganthack.com/ux-is-your-moat-and-youre-ignoring-it/
 - [ ] 082. https://cloud.flect.co.jp/entry/2025/11/27/151039
 - [ ] 083. https://blogs.bing.com/webmaster/November-2025/How-AI-Search-Is-Changing%E2%80%AFthe%E2%80%AFWay%E2%80%AFConversions%E2%80%AFare-Measured
 - [ ] 084. https://www.mizdra.net/entry/2025/12/01/121805
