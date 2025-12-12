@@ -7,7 +7,6 @@
 
 - [x] 001. https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/
 - [x] 002. https://github.blog/ai-and-ml/generative-ai/speed-is-nothing-without-control-how-to-keep-quality-high-in-the-ai-era/
-- [x] 003. https://vercel.com/blog/inside-workflow-devkit-how-framework-integrations-work
 - [x] 004. https://uxdesign.cc/productionizing-design-prototypes-addressing-the-design-engineering-gap-with-ai-coding-tools-fb3924f83da1
 - [x] 005. https://www.figma.com/blog/updates-to-ai-credits-in-figma/
 - [x] 006. https://anandsanwal.me/ai-education-death-spiral/
