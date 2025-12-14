@@ -113,7 +113,6 @@
 - [x] 108. https://boston.conman.org/2025/12/02.1
 - [x] 109. https://browsewithnook.com/
 - [x] 110. https://www.ynetnews.com/tech-and-digital/article/bj1qbwcklg
-- [x] 111. https://social.growyourown.services/@FediTips/115668457530054406
 - [x] 112. https://azukiazusa.dev/blog/try-tanstack-ai/
 - [x] 113. https://azukiazusa.dev/blog/claude-programmatic-tool-calling/
 - [x] 114. https://www.publickey1.jp/blog/25/aiacpagent_client_protocoljetbrainszeddocker.html
