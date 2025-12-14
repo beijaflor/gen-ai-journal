@@ -47,7 +47,6 @@
 - [x] 041. https://qiita.com/t_narita/items/bdeb84347ffc5c789a16
 - [x] 042. https://qiita.com/s_w_high/items/9767925d550f1c00e40e
 - [x] 043. https://qiita.com/numekudi/items/30f60e53164dcc883d20
-- [x] 044. https://qiita.com/yurikashiwagi/items/657e8645fe316942022d
 - [x] 045. https://qiita.com/ural/items/fd002f730d143180b227
 - [x] 046. https://qiita.com/namatya/items/78e6583a3980a1f8ad37
 - [x] 047. https://zenn.dev/ekusiadadus/articles/ek-transcript-stepfunctions-1dollar
