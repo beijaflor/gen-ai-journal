@@ -23,7 +23,8 @@ This project follows a systematic workflow to create weekly journals using branc
 graph LR
     A[01. Create Branch] --> B[02. Add Links]
     B --> C[03. Prepare Working Files]
-    C --> D[04. Curate Main Journal]
+    C --> C2[Create Draft PR - Optional]
+    C2 --> D[04. Curate Main Journal]
     D --> E[05. Curate Annex Journal]
     E --> F[06. Create Focused Summaries]
     F --> G[07. Review & Refine]
@@ -31,9 +32,11 @@ graph LR
     H --> I[09. Verify URLs & Quality]
     I --> J[10. Archive & Cleanup]
     J --> K[11. Generate Metadata]
-    K --> L[12. Create Pull Request]
+    K --> L[12. PR Ready for Review]
     L --> M[13. Tag & Publish]
 ```
+
+**Modern Workflow**: Create a draft PR after Step 03 (optional but recommended) to enable collaborative editing throughout the process. Convert to "Ready for review" at Step 12.
 
 ## Workflow Steps
 
@@ -48,7 +51,7 @@ graph LR
 9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 11. **[Generate Metadata](STEP_11_GENERATE_METADATA.md)** - Create mandatory journal-metadata.json with summary statistics
-12. **[Create Pull Request](STEP_12_PULL_REQUEST.md)** - Create PR for completed journal (human handles merge)
+12. **[Create Pull Request](STEP_12_PULL_REQUEST.md)** - Convert draft PR to ready for review, or create new PR if not created early (human handles merge)
 13. **[Tag & Publish](STEP_13_TAG_PUBLISH.md)** - Tag release and publish journal after merge
 
 ## Quick Start

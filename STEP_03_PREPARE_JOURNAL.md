@@ -36,3 +36,36 @@ This step prepares the working journal files in the workdesk directory for editi
 ## Note
 
 Files will only be moved to the final `journals/YYYY-MM-DD/` directory structure in STEP_08 after all editing is complete. This keeps the active editing workflow contained in workdesk.
+
+## Optional: Create Early Draft PR (Recommended)
+
+After completing this step, you can optionally create a draft pull request to enable collaborative editing throughout the workflow:
+
+```bash
+# Commit initial journal structure
+git add workdesk/weekly_journal_YYYY_MM_DD.md workdesk/annex_journal_YYYY_MM_DD.md
+git commit -m "Initialize journal structure for YYYY-MM-DD
+
+- Created empty journal files in workdesk
+- Ready for content development (STEP_03 complete)
+- N sources collected and summarized
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+
+# Push to remote
+git push origin journal/YYYY-MM-DD
+
+# Create draft PR (using GitHub MCP or gh CLI)
+# See STEP_12_PULL_REQUEST.md for detailed PR creation instructions
+```
+
+**Benefits of Early PR Creation:**
+- Continuous visibility into journal development
+- Enable collaborative editing throughout workflow
+- Track progress through commits
+- Keep PR in draft status until STEP_11 complete
+- Convert to "Ready for review" before final merge
+
+See [GITHUB_SYNC.md](GITHUB_SYNC.md) for detailed pull request workflow.
