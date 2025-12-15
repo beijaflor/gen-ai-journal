@@ -204,7 +204,6 @@
 - [x] 203. https://fujii-yuji.net/2025/12/12/085414
 - [x] 204. https://speakerdeck.com/yuya4/building-trusted-ai-systems
 - [x] 205. https://nowokay.hatenablog.com/entry/2025/12/12/063351
-- [x] 206. https://www.docswell.com/s/fumiya-kume/KVMD2Q-2025-12-11-195653
 
 
 ## Slides
