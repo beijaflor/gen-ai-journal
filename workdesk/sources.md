@@ -145,7 +145,6 @@
 - [x] 141. https://zenn.dev/ubie_dev/articles/032144e69f19a7
 - [x] 142. https://creators.bengo4.com/entry/2025/12/11/000000
 - [x] 143. https://tech-blog.yayoi-kk.co.jp/entry/2025/12/11/070100
-- [x] 144. https://techblog.hacomono.jp/entry/2025/12/11/000000
 - [x] 145. https://www.oaktreecapital.com/insights/memo/is-it-a-bubble
 - [x] 146. https://finance.yahoo.com/news/china-deepseek-uses-banned-nvidia-131207746.html
 - [x] 147. https://qwen.ai/blog?id=qwen3-omni-flash-20251201
