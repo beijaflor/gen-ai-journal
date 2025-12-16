@@ -73,12 +73,42 @@ The MCP-based sync can be triggered at any time to update progress:
 
 Simply request: `"Sync workdesk/sources.md to GitHub issue"` and Claude Code handles the rest.
 
-## Pull Request Guidelines
+## Pull Request Workflow
+
+### Early Draft PR Creation (Recommended)
+
+**Modern Workflow**: Create a draft PR early in the process (after STEP_03) to enable collaborative editing:
+
+1. **After STEP_03 (Prepare Journal)**:
+   - Commit initial journal structure (empty journal files)
+   - Push to feature branch
+   - Create **draft pull request** with WIP status
+   - Include progress checklist in PR description
+
+2. **During Development (STEP_04-11)**:
+   - Continue committing progress regularly
+   - PR remains in draft status
+   - Provides visibility without requesting immediate review
+   - Enables collaborative editing throughout workflow
+
+3. **Before Final Review**:
+   - Complete all workflow steps (STEP_04-11)
+   - Convert PR from draft to "Ready for review"
+   - Human reviewer can then approve and merge
+
+**Benefits**:
+- Continuous visibility into journal development
+- Early feedback opportunities
+- Progress tracking through PR commits
+- Clean separation between draft and final review
+
+### Pull Request Guidelines
 
 When working with pull requests:
+- **Draft PRs**: Create early (after STEP_03) and keep as draft during development
+- **Ready for Review**: Convert from draft only when journal is complete (after STEP_11)
 - **Open PRs**: Update existing open pull requests with current progress
 - **Closed PRs**: Never attempt to update closed pull requests
-- **New PRs**: Create new pull requests if no open PR exists for the current work
 - **Status Check**: Always verify PR status before attempting updates
 - **Commit Task**: Always commit pending changes (especially new summaries) before updating PR content
 
