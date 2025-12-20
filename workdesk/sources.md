@@ -186,3 +186,5 @@
 - [x] 182. https://agentskills.io/home
 - [x] 183. https://engineering.dena.com/blog/2025/12/legacy-code-migration-using-devin/
 - [x] 184. https://dev.classmethod.jp/articles/claude-code-custom-slash-commands-routine-tasks/
+- [x] 185. https://friendlybit.com/python/writing-justhtml-with-coding-agents/
+- [x] 186. https://forest.watch.impress.co.jp/docs/serial/aidev/2071380.html
