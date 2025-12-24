@@ -34,8 +34,14 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 # Process and sanitize source URLs
 uv run process_sources.py workdesk/sources.md
 
-# One-shot URL summarization
+# One-shot URL summarization (context caching enabled by default)
 uv run scripts/call-gemini.py --url "https://example.com/article" --output summary.md
+
+# Batch process all unchecked URLs (context caching enabled by default)
+uv run scripts/batch_process_summaries.py
+
+# Disable caching if needed (not recommended, higher costs)
+uv run scripts/batch_process_summaries.py --disable-cache
 
 # Aggregate summaries
 uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md

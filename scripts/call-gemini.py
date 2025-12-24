@@ -92,41 +92,81 @@ def clean_gemini_output(text: str) -> str:
     
     return '\n'.join(cleaned_lines).strip()
 
-def call_gemini(prompt: str, model: Optional[str] = None, clean_output: bool = False, disable_cache: bool = False) -> str:
-    """Call Gemini AI with the given prompt."""
+def call_gemini(prompt: str, model: Optional[str] = None, clean_output: bool = False, disable_cache: bool = False, enable_context_cache: bool = False, static_content: Optional[str] = None) -> str:
+    """Call Gemini AI with the given prompt.
+
+    Args:
+        prompt: The full prompt or dynamic content to send
+        model: Model name to use
+        clean_output: Whether to clean the output
+        disable_cache: Disable implicit caching
+        enable_context_cache: Enable explicit context caching (for repeated static content)
+        static_content: Static content to cache (used with enable_context_cache)
+    """
     try:
         logging.info(f"Using model: {model or 'gemini-pro'}")
         logging.info(f"Prompt length: {len(prompt)} characters")
         logging.debug(f"Full prompt:\n{'-'*50}\n{prompt}\n{'-'*50}")
-        
+
         if model:
             gemini_model = genai.GenerativeModel(model)
         else:
             gemini_model = setup_gemini()
-        
+
         logging.info("Sending request to Gemini...")
-        
+
         # Configure generation parameters
         generation_config = {}
-        if disable_cache:
-            logging.info("Context caching disabled")
-            generation_config['cached_content'] = None
-        
-        response = gemini_model.generate_content(
-            prompt,
-            generation_config=genai.GenerationConfig(**generation_config) if generation_config else None
-        )
+
+        # Handle explicit context caching
+        if enable_context_cache and static_content and not disable_cache:
+            try:
+                logging.info("Using explicit context caching")
+                logging.info(f"Static content size: {len(static_content)} characters")
+
+                # Create cached content with static part
+                import datetime
+                cache = genai.caching.CachedContent.create(
+                    model=model or 'gemini-pro',
+                    contents=[static_content],
+                    ttl=datetime.timedelta(hours=1),  # Cache for 1 hour (enough for batch processing)
+                )
+                logging.info(f"Created cache with name: {cache.name}")
+
+                # Use the cached model for generation
+                cached_model = genai.GenerativeModel.from_cached_content(cache)
+                response = cached_model.generate_content(prompt)
+
+                # Clean up cache after use
+                cache.delete()
+                logging.info("Cache deleted after use")
+
+            except Exception as cache_error:
+                logging.warning(f"Context caching failed, falling back to normal mode: {cache_error}")
+                # Fall back to normal generation
+                response = gemini_model.generate_content(prompt)
+        else:
+            # Normal generation (with implicit caching if not disabled)
+            if disable_cache:
+                logging.info("Context caching disabled")
+                generation_config['cached_content'] = None
+
+            response = gemini_model.generate_content(
+                prompt,
+                generation_config=genai.GenerationConfig(**generation_config) if generation_config else None
+            )
+
         logging.info("Received response from Gemini")
-        
+
         result = response.text
         logging.info(f"Response length: {len(result)} characters")
-        
+
         if clean_output:
             logging.info("Cleaning output...")
             original_length = len(result)
             result = clean_gemini_output(result)
             logging.info(f"Cleaned output: {original_length} -> {len(result)} characters")
-        
+
         return result
     except Exception as e:
         logging.error(f"Error calling Gemini: {str(e)}")
@@ -135,8 +175,8 @@ def call_gemini(prompt: str, model: Optional[str] = None, clean_output: bool = F
 def main():
     parser = argparse.ArgumentParser(description='Call Gemini AI with a prompt')
     parser.add_argument('prompt', nargs='?', help='The prompt to send to Gemini (or read from stdin if not provided)')
-    parser.add_argument('--model', '-m', default='gemini-2.0-flash-lite', 
-                       help='Gemini model to use (default: gemini-2.0-flash-lite)')
+    parser.add_argument('--model', '-m', default='gemini-2.5-flash-lite',
+                       help='Gemini model to use (default: gemini-2.5-flash-lite)')
     parser.add_argument('--file', '-f', help='Read prompt from file instead')
     parser.add_argument('--replace', action='append', default=[], 
                        help='Template replacements in key=value format (can be used multiple times)')
@@ -149,6 +189,10 @@ def main():
                        help='Enable verbose logging')
     parser.add_argument('--no-cache', action='store_true',
                        help='Disable context caching for this request')
+    parser.add_argument('--enable-context-cache', action='store_true', default=True,
+                       help='Enable explicit context caching (caches static prompt content for cost savings, enabled by default)')
+    parser.add_argument('--disable-context-cache', action='store_true',
+                       help='Disable explicit context caching')
     parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
     
     args = parser.parse_args()
@@ -194,7 +238,7 @@ def main():
             logging.info(f"Final prompt length: {len(prompt)} characters")
             
             # args.clean = True  # Auto-enable cleaning for URL summarization
-            args.model = 'gemini-2.5-flash'  # Use better model for URL summarization
+            args.model = 'gemini-3-flash-preview'  # Use latest model for URL summarization
             logging.info(f"Using model: {args.model} with clean output enabled")
             
         except FileNotFoundError:
@@ -242,8 +286,35 @@ def main():
     
     # Final debug log showing the complete prompt before API call
     logging.debug(f"Final prompt being sent to Gemini:\n{'-'*60}\n{prompt}\n{'-'*60}")
-    
-    response = call_gemini(prompt, args.model, args.clean, args.no_cache)
+
+    # For URL mode with context caching enabled, separate static from dynamic content
+    static_content = None
+    dynamic_prompt = prompt
+
+    # Determine if context caching should be enabled
+    enable_caching = args.enable_context_cache and not args.disable_context_cache
+
+    if enable_caching and args.url:
+        # Split prompt into static (template) and dynamic (article) parts
+        # The marker "# Article Content" indicates where dynamic content starts
+        if "# Article Content" in prompt:
+            parts = prompt.split("# Article Content", 1)
+            static_content = parts[0].strip()
+            dynamic_prompt = "# Article Content" + parts[1]
+            logging.info(f"Context caching enabled: static={len(static_content)} chars, dynamic={len(dynamic_prompt)} chars")
+        else:
+            logging.warning("Could not find '# Article Content' marker, using full prompt without caching")
+    elif args.disable_context_cache:
+        logging.info("Context caching explicitly disabled")
+
+    response = call_gemini(
+        dynamic_prompt,
+        args.model,
+        args.clean,
+        args.no_cache,
+        enable_context_cache=enable_caching,
+        static_content=static_content
+    )
     
     # Output to file or stdout
     if args.output:
