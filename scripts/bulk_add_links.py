@@ -71,7 +71,7 @@ def check_url(url: str) -> Tuple[bool, str, str]:
         output = result.stdout
 
         # Parse check_link.py output
-        is_unique = 'UNIQUE' in output or 'Ready to add' in output
+        is_unique = 'unique' in output.lower() and 'ready to be added' in output.lower()
 
         # Extract sanitized URL
         sanitized_url = url
