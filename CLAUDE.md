@@ -23,8 +23,13 @@ This repository creates weekly curated journals about Generative AI in coding, f
 
 ## Scripts & Commands
 - Use `uv run` for processing scripts
-- Key scripts: `process_sources.py`, `scripts/unite_summaries.py`
+- Key scripts: `process_sources.py`, `scripts/unite_summaries.py`, `scripts/bulk_add_links.py`
 - Always use absolute paths when referencing files
+
+## Agent Skills
+- **add-link skill**: Automatically processes URLs - validates, adds to sources.md, generates summaries
+  - Invoked automatically when user provides links or mentions "add to journal"
+  - Can also be used programmatically via `uv run scripts/bulk_add_links.py`
 
 ## Frequently Used Commands
 ```bash
@@ -33,6 +38,10 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 
 # Process and sanitize source URLs
 uv run process_sources.py workdesk/sources.md
+
+# Bulk add links and generate summaries (STEP_02)
+uv run scripts/bulk_add_links.py urls.txt
+# Or from stdin: cat urls.txt | uv run scripts/bulk_add_links.py
 
 # One-shot URL summarization (context caching enabled by default)
 uv run scripts/call-gemini.py --url "https://example.com/article" --output summary.md
