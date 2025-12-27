@@ -45,7 +45,6 @@
 - [x] 110. https://github.com/hkjarral/Asterisk-AI-Voice-Agent
 - [x] 109. https://www.suzukikenichi.com/blog/ai-search-and-seo-what-changes-and-what-stays-the-same/
 - [x] 108. https://thomwolf.substack.com/p/what-jobs-are-made-of
-- [x] 107. http://localhost:5173/
 - [x] 106. https://techblog.insightedge.jp/entry/personnel-evaluation-by-ai
 - [x] 105. https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
 - [x] 104. https://fullswing.dena.com/archives/100181/
