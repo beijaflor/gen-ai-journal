@@ -2,6 +2,7 @@
 
 ## Main List
 
+- [x] 159. https://forest.watch.impress.co.jp/docs/news/2073473.html
 - [x] 158. https://zenn.dev/dress_code/articles/b085b7826f1c56
 - [x] 157. https://fullswing.dena.com/pdf/AI_100tips_slide.pdf
 - [x] 156. https://findy-tools.io/articles/ai-review2025/179

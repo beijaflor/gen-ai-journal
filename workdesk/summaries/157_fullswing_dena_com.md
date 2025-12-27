@@ -1,23 +1,35 @@
-Error calling Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count, limit: 1000000, model: gemini-3-flash
-Please retry in 48.593451582s. [links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
-  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-3-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 1000000
-}
-, retry_delay {
-  seconds: 48
-}
-]
+# DeNA社員のAI活用100本ノック - 現場の実践知を可視化した全100事例スライド
+
+## 概要
+
+DeNAが2025年12月23日に公開した、社員のAI活用事例を100件まとめた無料スライド資料。エンジニア、ビジネス、クリエイターまで職種横断で、現場で実際に使われているAI活用のリアルな実践例を1スライド1事例形式で紹介している。
+
+## 主なポイント
+
+### プロジェクトの経緯
+- **2025年7月開始**: 南場智子会長の「AIオールイン」宣言を受け、社内で収集した約200のAI活用事例から厳選してX（旧Twitter）で1日1事例の発信を開始
+- **継続的な情報収集**: 事例のストックが減ると部署別勉強会で徹底的にヒアリングを実施。ニッチな用途や職種特有の使い方を発掘し、全100事例を達成
+- **完全無料公開**: PDFスライドをユーザー登録なしでダウンロード可能にすることで、社外への知見共有を実現
+
+### 資料の特徴
+- **1スライド1事例形式**: 各事例を「課題」「解決策」「結果」「利用者の声」の4項目で構造化
+- **多様な職種をカバー**: エンジニアリング、ビジネス職、デザイナー、クリエイターなど幅広い職種の活用例を網羅
+- **実務直結の内容**: 議事録削減、ファイル名自動リネーム、アンケート調査のテストパターン自動生成など、すぐに応用できる実例が中心
+
+### 掲載事例の例
+- 会議の議事録作成時間の削減
+- ファイル名の自動リネーム処理
+- アンケート調査におけるテストパターンの自動生成
+- その他、日常業務の効率化に直結する多様な用途
+
+## なぜ注目すべきか
+
+**「AIオールイン」を掛け声で終わらせない組織文化の具現化**: DeNAはトップダウンの宣言だけでなく、現場レベルでの実践を可視化し、社外にも惜しみなく公開することで、AI活用の民主化と組織全体の学習サイクルを加速させている。特に「事例が尽きたら現場に聞きに行く」という泥臭い情報収集プロセスは、形骸化しがちなAI推進活動に対する実効性の高いアプローチとして示唆に富む。
+
+**職種横断の知見集約による学習効果**: エンジニアだけでなくビジネス職やクリエイターの事例も含めることで、「自分の職種でもこう使えるのか」という気づきを促進。100事例という量と多様性が、読者にとって「自分ごと化」しやすい構成になっている点が秀逸。
+
+## ソース
+- [掛け声だけではない「AIオールイン」の実態。「現場のAI活用」発信とDeNAの2025年AI振り返り | フルスイング by DeNA](https://fullswing.dena.com/archives/100181/)
+- [職場でのAI活用事例を100個まとめたスライド、DeNAが無料公開で絶賛の声多数【やじうまWatch】 - INTERNET Watch](https://internet.watch.impress.co.jp/docs/yajiuma/2074241.html)
+- [【AIオールイン！100本ノック】生成AIを「有能な軍師」に変えるDeNA流・活用メソッド｜DiSAのnote](https://note.com/disa_pr/n/nbfd7eaa5f492)
+- [DeNA、AI活用事例を100件まとめた資料を無料公開 エンジニアからクリエイターまで幅広に](https://www.itmedia.co.jp/aiplus/articles/2512/24/news130.html)
