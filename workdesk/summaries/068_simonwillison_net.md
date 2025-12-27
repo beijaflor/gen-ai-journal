@@ -1,25 +1,25 @@
-This article, titled **"Cooking with Claude,"** is a blog post by Simon Willison (dated December 2025) exploring how Large Language Models (LLMs) can be used to coordinate complex culinary tasks through "vibe-coding" and vision capabilities.
+## Claudeで料理する：LLMによる「バイブ・コーディング」の実践
 
-Here is a summary of the key points:
+https://simonwillison.net/2025/Dec/23/cooking-with-claude/
 
-### 1. The "Two-Recipe" Challenge
-Willison frequently cooks meal kits (Green Chef) for four people, which requires preparing two different two-portion recipes simultaneously. This usually results in a chaotic "mad flurry" of trying to synchronize different timers and cooking steps.
+**Original Title**: Cooking with Claude
 
-### 2. The Experiment: Building a Custom App
-To solve this, Willison used **Claude (specifically "Opus 4.5")** to automate the planning:
-*   **Vision Task:** He took a single photo of two different recipe cards. Claude successfully extracted the detailed instructions from the image, despite the small text.
-*   **Vibe-Coding:** He prompted Claude to build a custom, mobile-friendly, interactive web application (an "Artifact") to manage the workflow.
-*   **App Features:** The app included a persistent start timer (using `localStorage`), countdowns for upcoming steps, and a combined timeline showing exactly when to start each task so both meals would finish at the same time.
-*   **The Result:** Willison hosted the code himself and followed it to the minute. Both meals were served perfectly in 44 minutes.
+LLMのビジョン機能とコード生成を活用し、複雑な調理工程を同期管理するカスタムWebアプリを即座に構築してその実用性を証明する。
 
-### 3. General Cooking with LLMs
-Beyond complex timing, the author uses LLMs for:
-*   **Ingredient Identification:** Taking photos of unknown ingredients (like dried beans at a market) and asking for recipe ideas.
-*   **"Hype-man" Mode:** Using prompts like "Get me excited about cooking with these!" to generate creative inspiration.
-*   **The "Mean" Recipe Theory:** Willison suggests that LLMs are excellent at providing the "average" version of a dish—essentially a reliable baseline synthesized from thousands of internet recipes.
-*   **Iterative Refinement:** He uses the models to handle substitutions (e.g., "make it vegan") or to improve flavors (e.g., repeatedly asking the model to "make it tastier").
+**Content Type**: ⚙️ Tools
+**Language**: en
 
-### 4. Key Takeaways
-*   **Pushing Boundaries:** The author argues that the best way to learn LLM capabilities is to give them tasks that seem slightly beyond their abilities.
-*   **The "Vibe-Coding" Success:** He was impressed that a "chaotic" approach—relying on the LLM to extract data and write code without heavy manual oversight—resulted in a functional, error-free utility.
-*   **Future Benchmarking:** He proposes a "cooking benchmark" for LLMs, where different models are judged on the actual taste and success of the recipes they generate.
+**Scores**: Signal:5/5 | Depth:3/5 | Unique:4/5 | Practical:4/5 | Anti-Hype:4/5
+**Main Journal**: 79/100 | **Annex Potential**: 79/100 | **Overall**: 80/100
+
+**Topics**: [[Vibe Coding, Claude Opus, Vision LLMs, Artifacts, Web Development]]
+
+Simon Willison氏によるこの記事は、LLM（Claude 4.5 Opus）を料理という日常的かつ複雑なマルチタスクの解決に適用した実験レポートである。筆者は、2種類の異なるミールキットを同時に調理し、かつ同時に完成させるという課題に対し、Claudeを用いて専用のタイミング管理アプリを「バイブ・コーディング（Vibe-coding）」によって構築した。
+
+特筆すべきは、レシピカードの写真を1枚撮影してClaudeに読み込ませるだけで、ビジョン機能による正確な手順抽出から、カウントダウンタイマーを備えたインタラクティブなWebアプリの生成までを一気通貫で行わせた点である。筆者は、フレームワークを使用しない（No React）構成や、モバイルフレンドリーなUI、さらにページの再読み込みに耐えるためのlocalStorageによる状態保持機能など、具体的な技術要件をプロンプトで指示し、数分で実用的なツール（Artifact）を手に入れた。
+
+このアプローチがエンジニアにとって示唆に富むのは、従来のような設計・開発サイクルを経ることなく、LLMとの対話を通じて「特定の文脈に特化した使い捨ての道具」を即座に生み出せることを示している点だ。筆者は、AIが手順を誤認したり幻覚を見たりするリスクを承知の上でこの「カオス」な手法を試したが、結果として一度の遅延もなく44分間で完璧に料理を完成させることに成功した。
+
+また、記事後半ではレシピ生成におけるLLMの活用についても触れている。筆者は、LLMが生成するレシピを「学習データに基づいた平均的なレシピ」と定義しており、特定の食材の代替案を求めたり「もっと美味しくして」といった抽象的な要求を繰り返したりすることで、料理のバリエーションを探索する創造的なパートナーとしてLLMが機能することを強調している。
+
+エンジニアの視点で見れば、この記事の本質は料理の効率化にあるのではなく、LLMのビジョン機能とコード生成能力を組み合わせることで、非定型なデータ（レシピ写真）から構造化されたインタラクティブな体験（タイマーアプリ）へと変換する、そのスピードと柔軟性にある。これは、日常のワークフローにおけるアドホックなスクリプト作成や、一時的なツール開発における新しいパラダイムを提示している。

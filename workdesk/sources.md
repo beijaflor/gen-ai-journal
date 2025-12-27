@@ -2,6 +2,50 @@
 
 ## Main List
 
+- [ ] 150. https://dev.classmethod.jp/articles/aidd-practice-classmethod/
+- [ ] 149. https://forest.watch.impress.co.jp/docs/special/2073746.html
+- [ ] 148. https://www.wantedly.com/companies/wantedly/post_articles/1032201
+- [ ] 147. https://note.com/y_matsuwitter/n/n155ed35ee44d
+- [ ] 146. https://www.nikkei.com/article/DGXZQOUC05AXO0V00C25A6000000/
+- [ ] 145. https://automaton-media.com/articles/newsjp/20251226-390466/
+- [ ] 144. https://blog.szk.cc/2025/12/25/thinking-with-ai-part2/
+- [ ] 143. https://zenn.dev/oikon/articles/cc-advent-calendar
+- [ ] 142. https://zenn.dev/openjny/articles/264b7b02b406f0
+- [ ] 141. https://zenn.dev/mkj/articles/868e0723efa060
+- [ ] 140. https://qiita.com/keni_w/items/6bc871716cc8ab1b6619
+- [ ] 139. https://qiita.com/YuzukiShinohara/items/bee759a91187498e7232
+- [ ] 138. https://qiita.com/shichi343/items/27c5a04cdaeb19a0d071
+- [ ] 137. https://digital-gov.note.jp/n/n51ee316bc2d9
+- [ ] 136. https://github.com/PwnFunction/sandbox
+- [ ] 135. https://lwn.net/Articles/1049886/
+- [ ] 134. https://build.ms/2025/12/22/codex-vs-claude-code-today/
+- [ ] 133. https://community.openai.com/t/timestamps-for-chats-in-chatgpt/440107/43?page=3
+- [ ] 132. https://www.sqlite.ai/
+- [ ] 131. https://simonwillison.net/2025/Dec/26/slop-acts-of-kindness/
+- [ ] 130. https://simonwillison.net/2025/Dec/25/claude-code-transcripts/
+- [ ] 129. https://developers.cyberagent.co.jp/blog/archives/60944/
+- [ ] 128. https://tech.legalforce.co.jp/entry/ai-engineering-summit-tokyo-2025-report
+- [ ] 127. https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/
+- [ ] 126. https://tidyfirst.substack.com/p/party-of-one-for-code-review
+- [ ] 125. https://medium.com/design-bootcamp/the-designers-playbook-for-ai-products-4549c3d1b648
+- [ ] 124. https://techblog.lycorp.co.jp/ja/20251224a
+- [ ] 123. https://note.com/drillan/n/n7379c02632c9
+- [ ] 122. https://tech.findy.co.jp/entry/2025/12/25/070000
+- [ ] 121. https://www.cell.com/patterns/fulltext/S2666-3899(25)00299-5
+- [ ] 120. https://note.com/spicagraph/n/nff6b66491219
+- [ ] 119. https://nealle-dev.hatenablog.com/entry/2025/12/25/122620
+- [ ] 118. https://zenn.dev/yumemi_inc/articles/ebc6e634fa57a1
+- [ ] 117. https://zenn.dev/ourly_tech_blog/articles/9301cc0acdd09c
+- [ ] 116. https://zenn.dev/knowledgesense/articles/c2baff28b7b2fa
+- [ ] 115. https://qiita.com/simdroid/items/236886451b6aef7162b5
+- [ ] 114. https://qiita.com/ym-kb/items/4201021ee1933f65f995
+- [ ] 113. https://qiita.com/WdknWdkn/items/9b7dea889fec59194df5
+- [ ] 112. https://qiita.com/Michinosuke/items/9bc84aa2fc84d692a922
+- [ ] 111. https://fi-le.net/asymptotics/
+- [ ] 110. https://github.com/hkjarral/Asterisk-AI-Voice-Agent
+- [ ] 109. https://www.suzukikenichi.com/blog/ai-search-and-seo-what-changes-and-what-stays-the-same/
+- [ ] 108. https://thomwolf.substack.com/p/what-jobs-are-made-of
+- [ ] 107. http://localhost:5173/
 - [x] 106. https://techblog.insightedge.jp/entry/personnel-evaluation-by-ai
 - [x] 105. https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
 - [x] 104. https://fullswing.dena.com/archives/100181/
