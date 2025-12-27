@@ -2,6 +2,24 @@
 
 ## Main List
 
+- [x] 106. https://techblog.insightedge.jp/entry/personnel-evaluation-by-ai
+- [x] 105. https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251224
+- [x] 104. https://fullswing.dena.com/archives/100181/
+- [x] 103. https://zenn.dev/ymd/articles/084336a54fb6d5
+- [x] 102. https://qwen.ai/blog?id=qwen-image-edit-2511
+- [x] 101. https://ledge.ai/articles/intelligence_explosion_10_years_warning
+- [x] 100. https://zenn.dev/google_cloud_jp/articles/vector-search-2-0-intro
+- [x] 099. https://zenn.dev/ohtaman/articles/opt-mcp-and-demo
+- [x] 098. https://qiita.com/dekenbu/items/27bae39274436c68dc80
+- [x] 097. https://www.thealgorithmicbridge.com/p/the-shape-of-artificial-intelligence
+- [x] 096. https://tech.layerx.co.jp/entry/2025/12/24/114143
+- [x] 095. https://medium.com/@tj.ruesch/a-local-first-reversible-pii-scrubber-for-ai-workflows-using-onnx-and-regex-e9850a7531fc
+- [x] 094. https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale
+- [x] 093. https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html
+- [x] 092. https://github.com/VibiumDev/vibium
+- [x] 091. https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview
+- [x] 090. https://www.suzukikenichi.com/blog/openai-is-developing-an-advertising-strategy-for-chatgpt/
+- [x] 089. https://socket.dev/blog/engineering-with-ai-podcast-the-promise-of-ai-first-development
 - [x] 088. https://speakerdeck.com/zerebom/pu-duan-shi-tuteruclaude-skillsnoshao-jie-by-notebooklm
 - [x] 087. https://techblog.insightedge.jp/entry/llm-persona-estimation
 - [x] 086. https://zenn.dev/acntechjp/articles/b2f8969bc97e94
