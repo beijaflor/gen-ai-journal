@@ -10,10 +10,52 @@ This script:
 
 import sys
 import re
+import ipaddress
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 from pathlib import Path
 import requests
 from requests.exceptions import RequestException
+
+def validate_url(url):
+    """
+    Validate that the URL is a public URL and not localhost or private IP.
+    Returns (is_valid, error_message) tuple.
+    """
+    parsed = urlparse(url)
+    hostname = parsed.hostname
+
+    if not hostname:
+        return False, "Invalid URL: no hostname found"
+
+    # Check for localhost
+    localhost_patterns = ['localhost', '127.', '0.0.0.0', '::1']
+    if any(hostname.startswith(pattern) for pattern in localhost_patterns):
+        return False, "localhost URLs are not allowed"
+
+    # Check if hostname is an IP address
+    try:
+        ip = ipaddress.ip_address(hostname)
+
+        # Check if it's a private IP address
+        if ip.is_private:
+            return False, f"Private IP address not allowed: {hostname}"
+
+        # Check if it's a loopback address
+        if ip.is_loopback:
+            return False, f"Loopback IP address not allowed: {hostname}"
+
+        # Check if it's link-local
+        if ip.is_link_local:
+            return False, f"Link-local IP address not allowed: {hostname}"
+
+        # Public IP addresses are discouraged (prefer domain names)
+        print(f"Warning: Using IP address {hostname} instead of domain name")
+
+    except ValueError:
+        # Not an IP address, which is good - it's a domain name
+        pass
+
+    return True, None
 
 def sanitize_url(url):
     """Removes tracking parameters and fragments from a URL."""
@@ -153,6 +195,18 @@ def main():
 
     # Step 1: Accept URL as input
     print(f"Original URL: {url}")
+
+    # Step 1.5: Validate URL (reject localhost and private IPs)
+    is_valid, error_message = validate_url(url)
+    if not is_valid:
+        print(f"\n❌ Error: {error_message}")
+        print("\nOnly public URLs with domain names are allowed.")
+        print("Examples of rejected URLs:")
+        print("  - http://localhost:3000")
+        print("  - http://127.0.0.1:8080")
+        print("  - http://192.168.1.1")
+        print("  - http://10.0.0.1")
+        sys.exit(1)
 
     # Step 2: Sanitize URL
     sanitized_url = sanitize_url(url)
