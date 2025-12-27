@@ -2,6 +2,14 @@
 
 ## Main List
 
+- [x] 158. https://zenn.dev/dress_code/articles/b085b7826f1c56
+- [x] 157. https://fullswing.dena.com/pdf/AI_100tips_slide.pdf
+- [x] 156. https://findy-tools.io/articles/ai-review2025/179
+- [x] 155. https://note.com/kenichiota0711/n/n71a6aea5d44c
+- [x] 154. https://blog.shibayu36.org/entry/2025/12/17/173000
+- [x] 153. https://blog.usize-tech.com/antigravity-gemini3-app-development/
+- [x] 152. https://ascii.jp/elem/000/004/361/4361720/
+- [x] 151. https://note.com/kondo_toshiya/n/n6c14c7eef4b4
 - [x] 150. https://dev.classmethod.jp/articles/aidd-practice-classmethod/
 - [x] 149. https://forest.watch.impress.co.jp/docs/special/2073746.html
 - [x] 148. https://www.wantedly.com/companies/wantedly/post_articles/1032201
