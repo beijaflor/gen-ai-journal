@@ -23,13 +23,20 @@ This repository creates weekly curated journals about Generative AI in coding, f
 
 ## Scripts & Commands
 - Use `uv run` for processing scripts
-- Key scripts: `process_sources.py`, `scripts/unite_summaries.py`, `scripts/bulk_add_links.py`
+- Key scripts: `process_sources.py`, `scripts/unite_summaries.py`, `scripts/bulk_summarize.py`
 - Always use absolute paths when referencing files
 
 ## Agent Skills
-- **add-link skill**: Automatically processes URLs - validates, adds to sources.md, generates summaries
+- **add-url skill**: Validates and adds URLs to workdesk/sources.md one-by-one
   - Invoked automatically when user provides links or mentions "add to journal"
-  - Can also be used programmatically via `uv run scripts/bulk_add_links.py`
+  - Performs duplication checking but does NOT generate summaries
+  - URLs are added as unchecked entries: `- [ ] XXX. https://...`
+
+- **summarize-source skill**: Generates summaries for unchecked sources
+  - Invoked when user wants to "summarize sources" or "generate summaries"
+  - Can process single URL by ID or batch-process all unchecked URLs
+  - Uses `uv run scripts/bulk_summarize.py` for batch operations
+  - Marks URLs as checked after successful summary generation
 
 ## Frequently Used Commands
 ```bash
@@ -39,18 +46,22 @@ mkdir -p journals/YYYY-MM-DD/{sources,summaries}
 # Process and sanitize source URLs
 uv run process_sources.py workdesk/sources.md
 
-# Bulk add links and generate summaries (STEP_02)
-uv run scripts/bulk_add_links.py urls.txt
-# Or from stdin: cat urls.txt | uv run scripts/bulk_add_links.py
+# STEP_01 & STEP_02: Add URLs and Generate Summaries
 
-# One-shot URL summarization (context caching enabled by default)
-uv run scripts/call-gemini.py --url "https://example.com/article" --output summary.md
+# Add URLs one-by-one (via add-url skill - recommended for interactive use)
+# The skill validates, checks duplicates, and adds to sources.md as unchecked
 
-# Batch process all unchecked URLs (context caching enabled by default)
-uv run scripts/batch_process_summaries.py
+# Batch generate summaries for all unchecked URLs (STEP_02)
+uv run scripts/bulk_summarize.py
 
-# Disable caching if needed (not recommended, higher costs)
-uv run scripts/batch_process_summaries.py --disable-cache
+# Dry run to see what would be processed
+uv run scripts/bulk_summarize.py --dry-run
+
+# One-shot URL summarization (for single URL)
+uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/XXX_domain.md
+
+# DEPRECATED: Old combined workflow (kept for reference)
+# uv run scripts/bulk_add_links.py urls.txt
 
 # Aggregate summaries
 uv run scripts/unite_summaries.py workdesk/sources.md workdesk/summaries workdesk/unified_summaries.md
