@@ -1,99 +1,99 @@
 # Sources for Journal 2026-01-06
 
 ## Main List
-  - [ ] 001. https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update
-  - [ ] 002. https://simonwillison.net/2025/Dec/31/the-year-in-llms/
-  - [ ] 003. https://www.wsj.com/tech/ai/openai-is-paying-employees-more-than-any-major-tech-startup-in-history-23472527
-  - [ ] 004. https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power
-  - [ ] 005. https://opal.google/landing/
-  - [ ] 006. https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026
-  - [ ] 007. https://www.axios.com/2025/12/29/groq-alex-davis-data-center-concerns
-  - [ ] 008. https://rishi.monster/posts/time-intelligence-economy-part-1-the-ai-noise/
-  - [ ] 009. https://alec.is/posts/ai-employees-dont-pay-taxes/
-  - [ ] 010. https://manus.im/ja/blog/manus-joins-meta-for-next-era-of-innovation
-  - [ ] 011. https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code
-  - [ ] 012. https://teodordyakov.github.io/brainfuck-agi/
-  - [ ] 013. https://gist.github.com/richhickey/ea94e3741ff0a4e3af55b9fe6287887f
-  - [ ] 014. https://www.npr.org/2025/12/28/nx-s1-5656190/ai-chips-memory-prices-ram
-  - [ ] 015. https://news.ycombinator.com/item?id=46403073
-  - [ ] 016. https://www.eff.org/deeplinks/2025/12/ai-police-reports-year-review
-  - [ ] 017. https://semaphore.io/blog/mcp-server-docs
-  - [ ] 018. https://uxdesign.cc/ai-will-kill-most-startups-and-thats-a-good-thing-73dbd8198825
-  - [ ] 019. https://uxdesign.cc/velocity-over-speed-why-the-ai-race-has-already-failed-b92cf520b75f
-  - [ ] 020. https://www.implications.com/p/12-outlooks-for-the-future-2026
-  - [ ] 021. https://balajmarius.com/writings/vibe-coding-a-bookshelf-with-claude-code/
-  - [ ] 022. https://note.com/namahoge_f/n/nb757230fd013
-  - [ ] 023. https://world.hey.com/jorge/back-to-the-starting-line-b9a3a1c1
-  - [ ] 024. https://zenn.dev/google_cloud_jp/articles/e699bda0a298d6
-  - [ ] 025. https://nowokay.hatenablog.com/entry/2025/12/28/045145
-  - [ ] 026. https://note.com/cyberagent_ai/n/n111eaa3b772c
-  - [ ] 027. https://theconversation.com/the-doorman-fallacy-why-careless-adoption-of-ai-backfires-so-easily-268380
-  - [ ] 028. https://syu-m-5151.hatenablog.com/entry/2025/12/27/140231
-  - [ ] 029. https://note.com/manusai_jp/n/n3ceacf089164
-  - [ ] 030. https://fortune.com/2025/12/25/cursor-ceo-michael-truell-vibe-coding-warning-generative-ai-assistant/
-  - [ ] 031. https://azukiazusa.dev/blog/enable-claude-code-tool-search-to-reduce-mcp-token-usage/
-  - [ ] 032. https://qiita.com/minorun365/items/3711c0de2e2558adb7c8
-  - [ ] 033. https://qiita.com/riiiii/items/b642f039c30d4e9c1bec
-  - [ ] 034. https://qiita.com/motoya0118/items/da163b7f7b53fc445f63
-  - [ ] 035. https://qiita.com/masayan1126/items/cb980c8a2890dd34c4d5
-  - [ ] 036. https://qiita.com/rinfo4080/items/1d36c56604aac6ed007c
-  - [ ] 037. https://qiita.com/k-ysd/items/8f6fb441d1ec0f75ede2
-  - [ ] 038. https://qiita.com/masayan1126/items/168fb1f8550265cc42aa
-  - [ ] 039. https://qiita.com/mamoru-ngy/items/9dfe470c3d679929d5b6
-  - [ ] 040. https://qiita.com/qwer123123/items/2f1db6bd52f2e05eb524
-  - [ ] 041. https://qiita.com/masayan1126/items/16fb957274d7f7c4447d
-  - [ ] 042. https://qiita.com/moritalous/items/bd4e1cdfadb80b04065a
-  - [ ] 043. https://qiita.com/masayan1126/items/ca430dbf342c5cefecbf
-  - [ ] 044. https://qiita.com/masayan1126/items/20fa457b8ba6994b6d0d
-  - [ ] 045. https://qiita.com/hiiragi_en17/items/58c102e08cc3010c3080
-  - [ ] 046. https://qiita.com/shohei_yamamoto/items/411fb286dfe017fc8960
-  - [ ] 047. https://qiita.com/Takashi_Masumori/items/fc66212f700a889741a8
-  - [ ] 048. https://zenn.dev/oharu121/articles/efd3d038afc6da
-  - [ ] 049. https://zenn.dev/kasada/articles/e1509a71272f62
-  - [ ] 050. https://zenn.dev/teba_eleven/articles/68955053ed75be
-  - [ ] 051. https://zenn.dev/watany/articles/98c3a597886261
-  - [ ] 052. https://zenn.dev/idapan/articles/660420a0733a87
-  - [ ] 053. https://zenn.dev/nuits_jp/articles/2025-12-30-interpretation-of-agent-skills
-  - [ ] 054. https://zenn.dev/pivotmedia/articles/ai-era-code-review
-  - [ ] 055. https://zenn.dev/dsgarage/articles/ai-mcp-unity-relationship
-  - [ ] 056. https://zenn.dev/sunagaku/articles/ai-development-best-practices-2025
-  - [ ] 057. https://zenn.dev/ncdc/articles/c1d65b6e939185
-  - [ ] 058. https://zenn.dev/sogawa_yk/books/fa26457ee975f0
-  - [ ] 059. https://zenn.dev/tmasuyama1114/articles/ai_era_engineer_tech_lead
-  - [ ] 060. https://www.techno-edge.net/article/2026/01/02/4806.html
-  - [ ] 061. https://note.com/enomotod/n/n83e1219edad0
-  - [ ] 062. https://togetter.com/li/2646149
-  - [ ] 063. https://newsdig.tbs.co.jp/articles/-/2349530?page=7
-  - [ ] 064. https://www.businessinsider.jp/article/researchers-ai-bots-social-media-network-experiment-toxic-a/
-  - [ ] 065. https://qiita.com/tatsuoNakano/items/17e702f0fd1407882ad8
-  - [ ] 066. https://zenn.dev/duo3/articles/6516058c60385b
-  - [ ] 067. https://www.businessinsider.jp/article/2512-how-ai-is-changing-consulting-talent-at-mckinsey-pwc-deloitte/
-  - [ ] 068. https://toyokeizai.net/articles/-/926049
-  - [ ] 069. https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering
-  - [ ] 070. https://xenospectrum.com/mit-study-scientific-ai-convergence-universal-matter-representation/
-  - [ ] 071. https://github.com/timescale/pg-aiguide
-  - [ ] 072. https://zenn.dev/kun432/scraps/684a4538655341
-  - [ ] 073. https://techblog.kayac.com/2025/12/24/100000
-  - [ ] 074. https://togetter.com/li/2644909
-  - [ ] 075. https://www.deeeet.com/writing/exe-dev
-  - [ ] 076. https://uepon.hatenadiary.com/entry/2025/12/29/234207
-  - [ ] 077. https://zenn.dev/beef_and_rice/articles/7d061e2b95a062
-  - [ ] 078. https://zenn.dev/safubuki/articles/turtle-20251224-gpt2gpt
-  - [ ] 079. https://tdx.treasuredata.com/guide/td-skills.html
-  - [ ] 080. https://www.cnn.co.jp/tech/35241544.html
-  - [ ] 081. https://github.com/MarkShawn2020/lovcode
-  - [ ] 082. https://zenn.dev/tmasuyama1114/books/claude_code_basic/viewer/claude-code-vs-cursor
-  - [ ] 083. https://zenn.dev/openjny/articles/43e010c65faa9a
-  - [ ] 084. https://note.com/makaneko_ai/n/n3cefcec49e2d
-  - [ ] 085. https://www.itmedia.co.jp/aiplus/articles/2512/29/news040.html
-  - [ ] 086. https://github.com/breaking-brake/cc-wf-studio
-  - [ ] 087. https://studyhacker.net/ai-thinking
-  - [ ] 088. https://takagi-hiromitsu.jp/diary/20251227.html
-  - [ ] 089. https://www.lifehacker.jp/article/2512new-gemini-ai-photo-editing-tools/
-  - [ ] 090. https://blog.lai.so/agents-in-2025/
-  - [ ] 091. https://speakerdeck.com/knishioka/claude-codewoshi-tutaqing-bao-zheng-li-shu
-  - [ ] 092. https://speakerdeck.com/nakamasato/2025-12-27-claude-codedeprrebiyudui-ying-woxiao-lu-hua-suru-at-ji-jie-xue-xi-she-hui-shi-zhuang-mian-qiang-hui-di-54hui
-  - [ ] 093. https://zenn.dev/horiyuki42/articles/535fcf5544bc3c
-  - [ ] 094. https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/
-  - [ ] 095. https://news.yahoo.co.jp/articles/59b3d3976892e88249fe008b9cdd97eacb8b5706
-  - [ ] 096. https://ascii.jp/elem/000/004/363/4363610/
+  - [x] 001. https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update
+  - [x] 002. https://simonwillison.net/2025/Dec/31/the-year-in-llms/
+  - [x] 003. https://www.wsj.com/tech/ai/openai-is-paying-employees-more-than-any-major-tech-startup-in-history-23472527
+  - [x] 004. https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power
+  - [x] 005. https://opal.google/landing/
+  - [x] 006. https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026
+  - [x] 007. https://www.axios.com/2025/12/29/groq-alex-davis-data-center-concerns
+  - [x] 008. https://rishi.monster/posts/time-intelligence-economy-part-1-the-ai-noise/
+  - [x] 009. https://alec.is/posts/ai-employees-dont-pay-taxes/
+  - [x] 010. https://manus.im/ja/blog/manus-joins-meta-for-next-era-of-innovation
+  - [x] 011. https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code
+  - [x] 012. https://teodordyakov.github.io/brainfuck-agi/
+  - [x] 013. https://gist.github.com/richhickey/ea94e3741ff0a4e3af55b9fe6287887f
+  - [x] 014. https://www.npr.org/2025/12/28/nx-s1-5656190/ai-chips-memory-prices-ram
+  - [x] 015. https://news.ycombinator.com/item?id=46403073
+  - [x] 016. https://www.eff.org/deeplinks/2025/12/ai-police-reports-year-review
+  - [x] 017. https://semaphore.io/blog/mcp-server-docs
+  - [x] 018. https://uxdesign.cc/ai-will-kill-most-startups-and-thats-a-good-thing-73dbd8198825
+  - [x] 019. https://uxdesign.cc/velocity-over-speed-why-the-ai-race-has-already-failed-b92cf520b75f
+  - [x] 020. https://www.implications.com/p/12-outlooks-for-the-future-2026
+  - [x] 021. https://balajmarius.com/writings/vibe-coding-a-bookshelf-with-claude-code/
+  - [x] 022. https://note.com/namahoge_f/n/nb757230fd013
+  - [x] 023. https://world.hey.com/jorge/back-to-the-starting-line-b9a3a1c1
+  - [x] 024. https://zenn.dev/google_cloud_jp/articles/e699bda0a298d6
+  - [x] 025. https://nowokay.hatenablog.com/entry/2025/12/28/045145
+  - [x] 026. https://note.com/cyberagent_ai/n/n111eaa3b772c
+  - [x] 027. https://theconversation.com/the-doorman-fallacy-why-careless-adoption-of-ai-backfires-so-easily-268380
+  - [x] 028. https://syu-m-5151.hatenablog.com/entry/2025/12/27/140231
+  - [x] 029. https://note.com/manusai_jp/n/n3ceacf089164
+  - [x] 030. https://fortune.com/2025/12/25/cursor-ceo-michael-truell-vibe-coding-warning-generative-ai-assistant/
+  - [x] 031. https://azukiazusa.dev/blog/enable-claude-code-tool-search-to-reduce-mcp-token-usage/
+  - [x] 032. https://qiita.com/minorun365/items/3711c0de2e2558adb7c8
+  - [x] 033. https://qiita.com/riiiii/items/b642f039c30d4e9c1bec
+  - [x] 034. https://qiita.com/motoya0118/items/da163b7f7b53fc445f63
+  - [x] 035. https://qiita.com/masayan1126/items/cb980c8a2890dd34c4d5
+  - [x] 036. https://qiita.com/rinfo4080/items/1d36c56604aac6ed007c
+  - [x] 037. https://qiita.com/k-ysd/items/8f6fb441d1ec0f75ede2
+  - [x] 038. https://qiita.com/masayan1126/items/168fb1f8550265cc42aa
+  - [x] 039. https://qiita.com/mamoru-ngy/items/9dfe470c3d679929d5b6
+  - [x] 040. https://qiita.com/qwer123123/items/2f1db6bd52f2e05eb524
+  - [x] 041. https://qiita.com/masayan1126/items/16fb957274d7f7c4447d
+  - [x] 042. https://qiita.com/moritalous/items/bd4e1cdfadb80b04065a
+  - [x] 043. https://qiita.com/masayan1126/items/ca430dbf342c5cefecbf
+  - [x] 044. https://qiita.com/masayan1126/items/20fa457b8ba6994b6d0d
+  - [x] 045. https://qiita.com/hiiragi_en17/items/58c102e08cc3010c3080
+  - [x] 046. https://qiita.com/shohei_yamamoto/items/411fb286dfe017fc8960
+  - [x] 047. https://qiita.com/Takashi_Masumori/items/fc66212f700a889741a8
+  - [x] 048. https://zenn.dev/oharu121/articles/efd3d038afc6da
+  - [x] 049. https://zenn.dev/kasada/articles/e1509a71272f62
+  - [x] 050. https://zenn.dev/teba_eleven/articles/68955053ed75be
+  - [x] 051. https://zenn.dev/watany/articles/98c3a597886261
+  - [x] 052. https://zenn.dev/idapan/articles/660420a0733a87
+  - [x] 053. https://zenn.dev/nuits_jp/articles/2025-12-30-interpretation-of-agent-skills
+  - [x] 054. https://zenn.dev/pivotmedia/articles/ai-era-code-review
+  - [x] 055. https://zenn.dev/dsgarage/articles/ai-mcp-unity-relationship
+  - [x] 056. https://zenn.dev/sunagaku/articles/ai-development-best-practices-2025
+  - [x] 057. https://zenn.dev/ncdc/articles/c1d65b6e939185
+  - [x] 058. https://zenn.dev/sogawa_yk/books/fa26457ee975f0
+  - [x] 059. https://zenn.dev/tmasuyama1114/articles/ai_era_engineer_tech_lead
+  - [x] 060. https://www.techno-edge.net/article/2026/01/02/4806.html
+  - [x] 061. https://note.com/enomotod/n/n83e1219edad0
+  - [x] 062. https://togetter.com/li/2646149
+  - [x] 063. https://newsdig.tbs.co.jp/articles/-/2349530?page=7
+  - [x] 064. https://www.businessinsider.jp/article/researchers-ai-bots-social-media-network-experiment-toxic-a/
+  - [x] 065. https://qiita.com/tatsuoNakano/items/17e702f0fd1407882ad8
+  - [x] 066. https://zenn.dev/duo3/articles/6516058c60385b
+  - [x] 067. https://www.businessinsider.jp/article/2512-how-ai-is-changing-consulting-talent-at-mckinsey-pwc-deloitte/
+  - [x] 068. https://toyokeizai.net/articles/-/926049
+  - [x] 069. https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering
+  - [x] 070. https://xenospectrum.com/mit-study-scientific-ai-convergence-universal-matter-representation/
+  - [x] 071. https://github.com/timescale/pg-aiguide
+  - [x] 072. https://zenn.dev/kun432/scraps/684a4538655341
+  - [x] 073. https://techblog.kayac.com/2025/12/24/100000
+  - [x] 074. https://togetter.com/li/2644909
+  - [x] 075. https://www.deeeet.com/writing/exe-dev
+  - [x] 076. https://uepon.hatenadiary.com/entry/2025/12/29/234207
+  - [x] 077. https://zenn.dev/beef_and_rice/articles/7d061e2b95a062
+  - [x] 078. https://zenn.dev/safubuki/articles/turtle-20251224-gpt2gpt
+  - [x] 079. https://tdx.treasuredata.com/guide/td-skills.html
+  - [x] 080. https://www.cnn.co.jp/tech/35241544.html
+  - [x] 081. https://github.com/MarkShawn2020/lovcode
+  - [x] 082. https://zenn.dev/tmasuyama1114/books/claude_code_basic/viewer/claude-code-vs-cursor
+  - [x] 083. https://zenn.dev/openjny/articles/43e010c65faa9a
+  - [x] 084. https://note.com/makaneko_ai/n/n3cefcec49e2d
+  - [x] 085. https://www.itmedia.co.jp/aiplus/articles/2512/29/news040.html
+  - [x] 086. https://github.com/breaking-brake/cc-wf-studio
+  - [x] 087. https://studyhacker.net/ai-thinking
+  - [x] 088. https://takagi-hiromitsu.jp/diary/20251227.html
+  - [x] 089. https://www.lifehacker.jp/article/2512new-gemini-ai-photo-editing-tools/
+  - [x] 090. https://blog.lai.so/agents-in-2025/
+  - [x] 091. https://speakerdeck.com/knishioka/claude-codewoshi-tutaqing-bao-zheng-li-shu
+  - [x] 092. https://speakerdeck.com/nakamasato/2025-12-27-claude-codedeprrebiyudui-ying-woxiao-lu-hua-suru-at-ji-jie-xue-xi-she-hui-shi-zhuang-mian-qiang-hui-di-54hui
+  - [x] 093. https://zenn.dev/horiyuki42/articles/535fcf5544bc3c
+  - [x] 094. https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/
+  - [x] 095. https://news.yahoo.co.jp/articles/59b3d3976892e88249fe008b9cdd97eacb8b5706
+  - [x] 096. https://ascii.jp/elem/000/004/363/4363610/
