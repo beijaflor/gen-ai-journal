@@ -97,3 +97,26 @@
   - [x] 094. https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/
   - [x] 095. https://news.yahoo.co.jp/articles/59b3d3976892e88249fe008b9cdd97eacb8b5706
   - [x] 096. https://ascii.jp/elem/000/004/363/4363610/
+  - [x] 097. https://zenn.dev/tmasuyama1114/articles/cc_sdd_whole_flow
+  - [x] 098. https://zenn.dev/govtechtokyo/articles/493cda92ae44fc
+  - [x] 099. https://zenn.dev/govtechtokyo/articles/f86d033408b007
+  - [x] 100. https://chrisloy.dev/post/2025/12/30/the-rise-of-industrial-software
+  - [x] 101. https://rocketedge.com/2025/12/29/vibe-coding-for-ctos-the-real-cost-of-100-lines-of-code-ai-agents-vs-human-developers-without-losing-control/
+  - [x] 102. https://www.nytimes.com/2026/01/02/briefing/why-do-americans-hate-ai.html
+  - [x] 103. https://ischemist.com/writings/long-form/how-vibe-coding-killed-cursor
+  - [x] 104. https://github.com/nicolasahar/morphic-programming
+  - [x] 105. https://qiita.com/icoxfog417/items/247ab6dbe90b124589f4
+  - [x] 106. https://qiita.com/retore/items/2d6f903483e7f43bef87
+  - [x] 107. https://qiita.com/kexi/items/65e6786bd9519698c401
+  - [x] 108. https://zenn.dev/nossa/articles/8d90efd840934f
+  - [x] 109. https://zenn.dev/tesla/articles/545165ed6334c7
+  - [x] 110. https://qwen.ai/blog?id=qwen-image-2512
+  - [x] 111. https://kuxumarin.hatenablog.com/entry/2026/01/02/231412
+  - [x] 112. https://news.aibase.com/ja/news/24128
+  - [x] 113. https://note.com/make_a_change/n/ncd3791d6a01d
+  - [x] 114. https://hidari-lab.hatenablog.com/entry/2026/01/02/174617
+  - [x] 115. https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/
+  - [x] 116. https://note.com/uemura_hr/n/n6e775ec0cc0b
+  - [x] 117. https://zenn.dev/oikon/articles/claude-code-2025
+  - [x] 118. https://speakerdeck.com/yuu551/2025nian-amazon-bedrock-agentcorematome
+  - [x] 119. https://zenn.dev/ryo369/articles/d02561ddaacc62
