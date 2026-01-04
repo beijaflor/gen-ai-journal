@@ -5,7 +5,7 @@
   - [x] 002. https://simonwillison.net/2025/Dec/31/the-year-in-llms/
   - [x] 003. https://news.ycombinator.com/item?id=46444367
   - [x] 004. https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power
-  - [x] 005. https://opal.google/landing/
+  - [x] 005. https://developers.googleblog.com/introducing-opal/
   - [x] 006. https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026
   - [x] 007. https://www.axios.com/2025/12/29/groq-alex-davis-data-center-concerns
   - [x] 008. https://rishi.monster/posts/time-intelligence-economy-part-1-the-ai-noise/
