@@ -3,7 +3,7 @@
 ## Main List
   - [x] 001. https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update
   - [x] 002. https://simonwillison.net/2025/Dec/31/the-year-in-llms/
-  - [x] 003. https://www.wsj.com/tech/ai/openai-is-paying-employees-more-than-any-major-tech-startup-in-history-23472527
+  - [x] 003. https://news.ycombinator.com/item?id=46444367
   - [x] 004. https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power
   - [x] 005. https://opal.google/landing/
   - [x] 006. https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026
