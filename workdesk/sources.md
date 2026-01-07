@@ -102,7 +102,7 @@
   - [x] 099. https://zenn.dev/govtechtokyo/articles/f86d033408b007
   - [x] 100. https://chrisloy.dev/post/2025/12/30/the-rise-of-industrial-software
   - [x] 101. https://rocketedge.com/2025/12/29/vibe-coding-for-ctos-the-real-cost-of-100-lines-of-code-ai-agents-vs-human-developers-without-losing-control/
-  - [x] 102. https://www.nytimes.com/2026/01/02/briefing/why-do-americans-hate-ai.html
+  - [x] 102. https://news.ycombinator.com/item?id=46433234
   - [x] 103. https://ischemist.com/writings/long-form/how-vibe-coding-killed-cursor
   - [x] 104. https://github.com/nicolasahar/morphic-programming
   - [x] 105. https://qiita.com/icoxfog417/items/247ab6dbe90b124589f4
