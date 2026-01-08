@@ -8,11 +8,12 @@ Create publication-ready journals that match the format of published examples (s
 
 ## Input Files
 
+- **Editorial Plan:** `workdesk/editorial_plan_YYYY_MM_DD.md` (APPROVED from STEP_03b)
 - **Refined Summaries:**
-  - `workdesk/unified_summaries_main.md` (23 articles)
-  - `workdesk/unified_summaries_annex.md` (29 articles)
+  - `workdesk/unified_summaries_main.md` (18-25 articles)
+  - `workdesk/unified_summaries_annex.md` (remaining articles)
 - **Source Lists:**
-  - `workdesk/curated_journal_sources.md`
+  - `workdesk/curated_journal_sources.md` (theme-organized from STEP_04)
   - `workdesk/curated_annex_journal_sources.md`
 - **Empty Templates:**
   - `workdesk/weekly_journal_YYYY_MM_DD.md`
@@ -28,46 +29,46 @@ STEP_08 is a **manual editorial process** split into 3 sub-steps:
 
 ---
 
-## STEP_08a: Organize Content & Create Structure
+## STEP_08a: Verify Structure & Refine Plan
 
-### 1. Read and Analyze Unified Summaries
+**Note:** Theme organization was completed in STEP_03b and STEP_04. This step verifies and refines the approved plan.
 
+### 1. Review Editorial Plan and Refined Summaries
+
+- [ ] Read `workdesk/editorial_plan_YYYY_MM_DD.md` (approved themes and structure)
 - [ ] Read `workdesk/unified_summaries_main.md` completely
 - [ ] Read `workdesk/unified_summaries_annex.md` completely
-- [ ] Identify emerging themes and patterns across articles
+- [ ] Verify themes still make sense with final article selection
 
-### 2. Plan Thematic Organization
+### 2. Verify Thematic Organization
 
-**For Main Journal** (target: 6-7 sections):
-- [ ] Group the 23 articles into thematic sections
-- [ ] Create descriptive Japanese section titles
-- [ ] Order sections for logical flow and narrative arc
+**For Main Journal** (already organized in STEP_04):
+- [ ] Review theme-organized `workdesk/curated_journal_sources.md`
+- [ ] Confirm 6-7 thematic sections from editorial plan
+- [ ] Verify article distribution within themes is balanced
+- [ ] Check logical flow and narrative arc
 
-**Common themes to consider**:
-- Critical AI Perspectives & Industry Analysis
-- Real-World Implementation & Case Studies
-- New Tools & Platform Updates
-- Developer Experience & Methodology
-- Security & Compliance
-- Context Engineering & Architecture
-- Business & Economic Impact
+**Note:** Theme organization was completed in STEP_04 based on the approved editorial plan. If adjustments are needed:
+- [ ] Document rationale for changes
+- [ ] Update editorial plan if themes evolved significantly during curation
 
 **For Annex Journal** (target: 5-6 sections):
-- [ ] Group the 29 articles emphasizing B-side character
+- [ ] Group articles emphasizing B-side character
 - [ ] Create descriptive Japanese section titles
+- [ ] Common annex themes:
+  - Advanced Tactics & Unconventional Wisdom
+  - Substantive Critique & Contrarian Views
+  - Niche Explorations & Deep Dives
+  - Failed Experiments & Cautionary Tales
+  - Security Risks & Technical Debt
 
-**Common annex themes**:
-- Advanced Tactics & Unconventional Wisdom
-- Substantive Critique & Contrarian Views
-- Niche Explorations & Deep Dives
-- Failed Experiments & Cautionary Tales
-- Security Risks & Technical Debt
+### 3. Refine Meta-Commentary
 
-### 3. Plan Meta-Commentary
-
-- [ ] Draft key points for "今週のハイライト" (3-4 paragraphs analyzing week's trends)
+- [ ] Review "今週のハイライト" outline from editorial plan
+- [ ] Polish to final form (3-4 paragraphs)
+- [ ] Ensure it reflects actual curated articles (not just planned ones)
 - [ ] Plan "おわりに" conclusion themes
-- [ ] Note cross-cutting insights that tie articles together
+- [ ] Note cross-cutting insights from editorial plan
 
 ---
 
@@ -86,22 +87,25 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
 
 ## 今週のハイライト
 
-[Write 3-4 paragraphs of meta-analysis covering:
-- Week's main narrative arc and themes
+[Use polished version from editorial_plan_YYYY_MM_DD.md - 3-4 paragraphs covering:
+- Week's main narrative arc and themes (from planning document)
 - Contradictions or tensions between developments
 - Significant shifts in industry thinking
-- Why this week matters to developers
-Example tone: "2025年も年末に差し掛かり、AI業界は大きな転換点を迎えています..."]
+- Why this week matters to developers]
 
 ---
 ```
 
 #### 2. Thematic Sections
 
-For each thematic section:
+**For each theme from `workdesk/curated_journal_sources.md` (theme-organized format):**
 
 ```markdown
-## [Sequential Number]. [Descriptive Japanese Section Title]
+## [Sequential Number]. [Theme Title from Editorial Plan]
+
+[Optional: Theme introduction paragraph from editorial_plan_YYYY_MM_DD.md
+ - Use the 2-3 sentence introduction if it helps readers understand the section
+ - Omit if the theme title is self-explanatory and articles speak for themselves]
 
 ### [Article Japanese Title]
 
@@ -113,14 +117,19 @@ For each thematic section:
 
 ---
 
-### [Next Article...]
+### [Next Article in Same Theme...]
 ```
 
+**Theme Section Order:**
+- [ ] Use the sequence from editorial plan OR
+- [ ] Reorder for better narrative flow (document why in editorial notes)
+
 **Critical transformation rules**:
-- **Include**: Japanese title (##見出し from unified summary), URL, polished summary
+- **Include**: Theme title from plan, Japanese article title (##見出し from unified summary), URL, polished summary
 - **Exclude**: Original Title, Content Type, Language, Scores, Topics tags, metadata
 - **Edit**: Refine summary for editorial voice (see EDITOR_PERSONALITY.md)
 - **Format**: Use `---` separator between articles
+- **Theme Intro**: Optional - use from editorial plan if it adds value
 
 #### 3. Conclusion
 

@@ -79,6 +79,47 @@ grep -l "YOUR_URL_HERE" **/*.md
 uv run scripts/sanitize_url.py "URL_HERE"
 ```
 
+## Editorial Planning Workflow (STEP_03b)
+
+After gathering and summarizing sources, identify editorial themes BEFORE curation:
+
+```bash
+# STEP_03b: Plan Editorial Themes (AI-assisted with human review)
+
+# 1. AI analyzes all summaries
+#    - Read workdesk/unified_summaries.md
+#    - Identify 5-8 cohesive themes
+#    - Map articles to themes
+#    - Draft theme introductions (Japanese, 2-3 sentences)
+#    - Draft "今週のハイライト" outline (3-4 paragraphs)
+#    - Create workdesk/editorial_plan_YYYY_MM_DD.md
+
+# 2. Human reviews and approves (MANDATORY REVIEW GATE)
+#    - Review themes for coherence
+#    - Edit titles, introductions, article mappings
+#    - Refine highlight outline
+#    - Check ✅ APPROVED in planning document
+#    - Commit approved plan to git
+
+# 3. Proceed to STEP_04 with theme-driven curation
+#    - Curate articles that fit approved themes
+#    - Organize curated_journal_sources.md by themes
+#    - Use planning document as blueprint for STEP_08 (Assembly)
+```
+
+**Planning Document Structure:**
+- 5-8 theme titles (Japanese)
+- Article-to-theme mappings (article IDs)
+- Theme introductions (2-3 sentences each)
+- "今週のハイライト" draft (meta-analysis)
+- Theme coverage summary
+
+**Benefits:**
+- Theme-driven curation (not article-driven)
+- Transparent editorial decisions
+- Faster assembly (themes pre-planned)
+- Human review gate ensures quality
+
 # Workflow Management
 
 ## Next Journal Date Management
@@ -116,8 +157,9 @@ grep "^# Sources for Journal" workdesk/sources.md
 ```
 
 ## Step Execution
-- Follow workflow steps sequentially: STEP_01 → STEP_14
-- **Modern workflow**: Create draft PR after STEP_03 (recommended) for collaborative editing
+- Follow workflow steps sequentially: STEP_01 → STEP_03 → **STEP_03b** → STEP_04 → STEP_14
+- **STEP_03b (NEW)**: Plan editorial themes with mandatory human review gate before curation
+- **Modern workflow**: Create draft PR after STEP_03 or STEP_03b (recommended) for collaborative editing
 - Update TodoWrite frequently to track progress
 - Mark steps complete only when fully finished
 - Convert draft PR to "Ready for review" at STEP_12
