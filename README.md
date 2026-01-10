@@ -23,8 +23,10 @@ This project follows a systematic workflow to create weekly journals using branc
 graph LR
     A[01. Create Branch] --> B[02. Add Links]
     B --> C[03. Prepare Working Files]
-    C --> C2[Create Draft PR - Optional]
-    C2 --> D[04. Curate Main Journal]
+    C --> C1[03b. Plan Editorial Themes]
+    C1 --> C2[Human Review Gate]
+    C2 --> C3[Create Draft PR - Optional]
+    C3 --> D[04. Curate Main - Theme-Driven]
     D --> E[05. Curate Annex Journal]
     E --> F[06. Create Focused Summaries]
     F --> G[07. Review & Refine]
@@ -36,18 +38,19 @@ graph LR
     L --> M[13. Tag & Publish]
 ```
 
-**Modern Workflow**: Create a draft PR after Step 03 (optional but recommended) to enable collaborative editing throughout the process. Convert to "Ready for review" at Step 12.
+**Modern Workflow**: After Step 03, use Step 03b to identify editorial themes with mandatory human review. Create a draft PR (optional but recommended) to enable collaborative editing throughout the process. Convert to "Ready for review" at Step 12.
 
 ## Workflow Steps
 
 1. **[Create Branch](STEP_01_CREATE_BRANCH.md)** - Create dedicated branch for journal week
 2. **[Add Links Individually](STEP_02_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
 3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
-4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 primary articles based on editorial criteria
+3b. **[Plan Editorial Themes](STEP_03b_PLAN_THEMES.md)** - Identify 5-8 themes, map articles to themes, create editorial roadmap with human review gate
+4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 articles using theme-driven approach from approved editorial plan
 5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
 6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
 7. **[Review & Refine](STEP_07_REVIEW.md)** - Edit and polish selected summaries with editorial voice
-8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready main and annex journals
+8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready journals using pre-planned themes
 9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
 11. **[Generate Metadata](STEP_11_GENERATE_METADATA.md)** - Create mandatory journal-metadata.json with summary statistics
