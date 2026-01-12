@@ -1,0 +1,210 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/utils/base-path';
+---
+
+<BaseLayout title="Sign In | GenAI Journal">
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Sign In</h1>
+      <p>Admin access for journal curation</p>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="your-email@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="current-password"
+            placeholder="••••••••"
+          />
+        </div>
+
+        <div id="error-message" class="error-message" style="display: none;"></div>
+
+        <button type="submit" id="submit-btn">Sign In</button>
+      </form>
+
+      <div class="login-footer">
+        <a href={withBase('/')}>← Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { signIn } from '@/lib/supabase';
+
+    const form = document.getElementById('login-form') as HTMLFormElement;
+    const emailInput = document.getElementById('email') as HTMLInputElement;
+    const passwordInput = document.getElementById('password') as HTMLInputElement;
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+    const errorMessage = document.getElementById('error-message') as HTMLDivElement;
+
+    function showError(message: string) {
+      errorMessage.textContent = message;
+      errorMessage.style.display = 'block';
+    }
+
+    function hideError() {
+      errorMessage.style.display = 'none';
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideError();
+
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+
+      if (!email || !password) {
+        showError('Please enter both email and password');
+        return;
+      }
+
+      // Disable form during submission
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Signing in...';
+
+      try {
+        const { data, error } = await signIn(email, password);
+
+        if (error) {
+          showError(error.message || 'Failed to sign in');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Sign In';
+          return;
+        }
+
+        if (data.user) {
+          // Success! Redirect to home
+          window.location.href = '/';
+        }
+      } catch (err) {
+        console.error('Login error:', err);
+        showError('An unexpected error occurred');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign In';
+      }
+    });
+  </script>
+
+  <style>
+    .login-container {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .login-card {
+      background: white;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .login-card h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.75rem;
+      color: #24292e;
+    }
+
+    .login-card p {
+      margin: 0 0 1.5rem 0;
+      color: #586069;
+      font-size: 0.9rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #24292e;
+      font-size: 0.9rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.625rem;
+      border: 1px solid #d1d5da;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #0366d6;
+      box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+    }
+
+    .error-message {
+      background: #ffeef0;
+      border: 1px solid #f97583;
+      border-radius: 4px;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      color: #d73a49;
+      font-size: 0.875rem;
+    }
+
+    button[type='submit'] {
+      width: 100%;
+      padding: 0.75rem;
+      background: #2ea44f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button[type='submit']:hover:not(:disabled) {
+      background: #2c974b;
+    }
+
+    button[type='submit']:disabled {
+      background: #94d3a2;
+      cursor: not-allowed;
+    }
+
+    .login-footer {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .login-footer a {
+      color: #0366d6;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</BaseLayout>

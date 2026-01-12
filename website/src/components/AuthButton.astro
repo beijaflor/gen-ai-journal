@@ -1,0 +1,96 @@
+---
+import { withBase } from '@/utils/base-path';
+---
+
+<div id="auth-button" class="auth-button">
+  <!-- Will be populated by client-side script -->
+  <span class="auth-loading">...</span>
+</div>
+
+<script>
+  import { isAuthenticated, signOut } from '@/lib/supabase';
+  import { withBase } from '@/utils/base-path';
+
+  const authButton = document.getElementById('auth-button');
+
+  async function updateAuthButton() {
+    if (!authButton) return;
+
+    const authenticated = await isAuthenticated();
+
+    if (authenticated) {
+      // Show sign out button
+      authButton.innerHTML = `
+        <button id="sign-out-btn" class="auth-btn sign-out-btn">
+          Sign Out
+        </button>
+      `;
+
+      const signOutBtn = document.getElementById('sign-out-btn');
+      signOutBtn?.addEventListener('click', async () => {
+        await signOut();
+        window.location.reload();
+      });
+    } else {
+      // Show sign in link
+      authButton.innerHTML = `
+        <a href="${withBase('/auth/login')}" class="auth-btn sign-in-btn">
+          Sign In
+        </a>
+      `;
+    }
+  }
+
+  // Update button on page load
+  updateAuthButton();
+
+  // Listen for auth state changes
+  import('@/lib/supabase').then(({ supabase }) => {
+    supabase.auth.onAuthStateChange((event, session) => {
+      updateAuthButton();
+    });
+  });
+</script>
+
+<style>
+  .auth-button {
+    display: inline-block;
+  }
+
+  .auth-loading {
+    color: #586069;
+    font-size: 0.875rem;
+  }
+
+  .auth-btn {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .sign-in-btn {
+    background: #2ea44f;
+    color: white;
+    border: 1px solid #2ea44f;
+  }
+
+  .sign-in-btn:hover {
+    background: #2c974b;
+  }
+
+  .sign-out-btn {
+    background: white;
+    color: #586069;
+    border: 1px solid #d1d5da;
+  }
+
+  .sign-out-btn:hover {
+    background: #f6f8fa;
+    border-color: #c3c8cc;
+  }
+</style>
