@@ -1,7 +1,7 @@
 # Sources for Journal 2026-01-13
 
 Add your source URLs here. Use the add-url skill or manually add them in this format:
-- [x] 001. https://example.com/article
+- [ ] XXX. https://example.com/article
 
 ## Main List
 
@@ -37,7 +37,7 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 030. https://zenn.dev/hiraoku/scraps/e3dc6c573a82ac
 - [x] 031. https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/
 - [x] 032. https://embd.cc/llm-problems-observed-in-humans
-- [x] 033. https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160
+- [x] 033. https://news.ycombinator.com/item?id=46528389
 - [x] 034. https://openai.com/ja-JP/index/introducing-chatgpt-health/
 - [x] 035. https://vibeandscribe.xyz/posts/2026-01-07-emergent-behavior.html
 - [x] 036. https://surgehq.ai/blog/lmarena-is-a-plague-on-ai
@@ -56,7 +56,7 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 049. https://nowokay.hatenablog.com/entry/2026/01/05/110344
 - [x] 050. https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html
 - [x] 051. https://nowokay.hatenablog.com/entry/2026/01/06/235844
-- [x] 052. https://www.nytimes.com/2026/01/02/world/asia/china-ai-cancer-pancreatic.html
+- [x] 052. https://news.ycombinator.com/item?id=46462457
 - [x] 053. https://gigazine.net/news/20260107-lfm2-5-on-device-ai/
 - [x] 054. https://note.com/tably/n/nd1b87eed618d
 - [x] 055. https://www.itmedia.co.jp/news/articles/2601/07/news074.html
@@ -80,7 +80,6 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 073. https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/
 - [x] 074. https://github.com/firasd/vibesbench/blob/main/docs/ai-sycophancy-panic.md
 - [x] 075. https://qiita.com/ntaka329/items/fdeee736f9af06640647
-- [x] 076. https://qiita.com/dancingedamame/items/4408cf28e0e0fe65f008
 - [x] 077. https://qiita.com/Free_Akito9120/items/f41f80af8eed80a9044f
 - [x] 078. https://qiita.com/hiropon122/items/02241d6468270e427c7d
 - [x] 079. https://qiita.com/YShiba92/items/dc73bab7a2db7ebb0257
@@ -126,7 +125,7 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 119. https://news.ycombinator.com/item?id=46562867
 - [x] 120. https://qiita.com/kei1-dev/items/edc6e5a8d02cb31c17c0
 - [x] 121. https://qiita.com/ryu-ki/items/45b925ddbad7698edeb6
-- [x] 122. https://www.wsj.com/tech/ai/china-is-worried-ai-threatens-party-ruleand-is-trying-to-tame-it-bfdcda2d
+- [x] 122. https://news.ycombinator.com/item?id=46378747
 - [x] 123. https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
 - [x] 124. https://ampmedia.jp/2026/01/07/anti-ai-marketing/
 - [x] 125. https://zenn.dev/pwrengineer/articles/export_chatgpt_to_md
