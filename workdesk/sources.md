@@ -197,4 +197,5 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 191. https://meatlog.de10.moe/entry/character_creator_prompt
 - [x] 192. https://note.com/chaen_channel/n/n170fbfcd94bf
 - [x] 193. https://zenn.dev/manimoto/articles/1c3b1379cc5ef0
+- [x] 194. https://www.oreilly.com/radar/signals-for-2026/
 
