@@ -54,7 +54,7 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 047. https://zenn.dev/saka1/articles/647a177cc5f7b8
 - [x] 048. https://qiita.com/segfo/items/ed8343e036a9f973c77d
 - [x] 049. https://nowokay.hatenablog.com/entry/2026/01/05/110344
-- [ ] 050. https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html
+- [x] 050. https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html
 - [x] 051. https://nowokay.hatenablog.com/entry/2026/01/06/235844
 - [x] 052. https://www.nytimes.com/2026/01/02/world/asia/china-ai-cancer-pancreatic.html
 - [x] 053. https://gigazine.net/news/20260107-lfm2-5-on-device-ai/
@@ -65,7 +65,7 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 058. https://zenn.dev/jambo_dev/articles/11e009c8ab4fde
 - [x] 059. https://note.com/google_gemini/n/n0744c2d70b27
 - [x] 060. https://www.luiscardoso.dev/blog/sandboxes-for-ai
-- [ ] 061. https://qiita.com/minorun365/items/0b4a980f2f4bb073a9e0
+- [x] 061. https://qiita.com/minorun365/items/0b4a980f2f4bb073a9e0
 - [x] 062. https://webtan.impress.co.jp/e/2026/01/06/51803
 - [x] 063. https://www.gizmodo.jp/2026/01/microsofts-push-for-copilot-plus-pcs-could-stall-laptop-sales.html
 - [x] 064. https://www.suzukikenichi.com/blog/from-glue-pizza-to-medical-hazards-the-divided-verdict-on-google-ai/
@@ -77,21 +77,21 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 070. https://github.com/13point5/torch.ts
 - [x] 071. https://arstechnica.com/ai/2026/01/no-grok-cant-really-apologize-for-posting-non-consensual-sexual-images/
 - [x] 072. https://www.siliconcontinent.com/p/a-new-years-letter-to-a-young-person
-- [ ] 073. https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/
+- [x] 073. https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/
 - [x] 074. https://github.com/firasd/vibesbench/blob/main/docs/ai-sycophancy-panic.md
-- [ ] 075. https://qiita.com/ntaka329/items/fdeee736f9af06640647
-- [ ] 076. https://qiita.com/dancingedamame/items/4408cf28e0e0fe65f008
-- [ ] 077. https://qiita.com/Free_Akito9120/items/f41f80af8eed80a9044f
-- [ ] 078. https://qiita.com/hiropon122/items/02241d6468270e427c7d
-- [ ] 079. https://qiita.com/YShiba92/items/dc73bab7a2db7ebb0257
-- [ ] 080. https://qiita.com/tms-ducvu/items/252ca8e062c0d0dbc02d
-- [ ] 081. https://zenn.dev/h_shinaoka/articles/fcba75dc2e00a0
-- [ ] 082. https://zenn.dev/mkj/articles/nemo-series_20251230
+- [x] 075. https://qiita.com/ntaka329/items/fdeee736f9af06640647
+- [x] 076. https://qiita.com/dancingedamame/items/4408cf28e0e0fe65f008
+- [x] 077. https://qiita.com/Free_Akito9120/items/f41f80af8eed80a9044f
+- [x] 078. https://qiita.com/hiropon122/items/02241d6468270e427c7d
+- [x] 079. https://qiita.com/YShiba92/items/dc73bab7a2db7ebb0257
+- [x] 080. https://qiita.com/tms-ducvu/items/252ca8e062c0d0dbc02d
+- [x] 081. https://zenn.dev/h_shinaoka/articles/fcba75dc2e00a0
+- [x] 082. https://zenn.dev/mkj/articles/nemo-series_20251230
 - [x] 083. https://zenn.dev/acompany/articles/c642c09bd167a6
 - [x] 084. https://zenn.dev/reality_tech/articles/1d6df6811715fb
 - [x] 085. https://zenn.dev/oikon/articles/claude-code-web-gh-cli
 - [x] 086. https://zenn.dev/kok1eeeee/articles/claude-code-zed-terminal-workflow
-- [ ] 087. https://zenn.dev/teramotodaiki/articles/react18-migration-with-devin
+- [x] 087. https://zenn.dev/teramotodaiki/articles/react18-migration-with-devin
 - [x] 088. https://zenn.dev/tokium_dev/articles/vibe-coding-understanding-matters
 - [x] 089. https://zenn.dev/ktg/articles/518c880823ad4a
 - [x] 090. https://addyosmani.com/blog/coding-agents-manager/
@@ -124,8 +124,8 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 117. https://matthewrocklin.com/ai-zealotry/
 - [x] 118. https://www.getseer.dev/blogs/pre-commit-linting-vibe-coding
 - [x] 119. https://news.ycombinator.com/item?id=46562867
-- [ ] 120. https://qiita.com/kei1-dev/items/edc6e5a8d02cb31c17c0
-- [ ] 121. https://qiita.com/ryu-ki/items/45b925ddbad7698edeb6
+- [x] 120. https://qiita.com/kei1-dev/items/edc6e5a8d02cb31c17c0
+- [x] 121. https://qiita.com/ryu-ki/items/45b925ddbad7698edeb6
 - [x] 122. https://www.wsj.com/tech/ai/china-is-worried-ai-threatens-party-ruleand-is-trying-to-tame-it-bfdcda2d
 - [x] 123. https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
 - [x] 124. https://ampmedia.jp/2026/01/07/anti-ai-marketing/
