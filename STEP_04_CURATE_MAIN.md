@@ -23,6 +23,25 @@ Select articles that provide essential insights, significant developments, and h
   - Focus on "why it matters" beyond just "what happened"
   - Apply editorial judgment that is **visionary but grounded**
 
+### Optional: Export Admin Flags
+
+If you used the Supabase admin system in STEP_03, export flagged summaries to assist with curation:
+
+```bash
+# Export admin-flagged summaries to markdown files
+uv run scripts/export_curation_flags.py
+```
+
+This creates:
+- **`workdesk/curated_annex_journal_sources.md`**: Summaries flagged for annex (with ⭐/👍/👎 markers)
+- **`workdesk/omitted_sources.md`**: Summaries flagged for omission
+
+**Note:** These are suggestions based on initial admin review, not final decisions. Apply editorial judgment and curation criteria when making final selections.
+
+See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for details.
+
+---
+
 ### 1. Review Each Article
 
 For each URL in the source list, review its summary and evaluate against the main journal criteria:
