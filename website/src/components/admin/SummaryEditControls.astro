@@ -1,0 +1,443 @@
+---
+import type { WorkdeskSummary } from '@/utils/workdesk-parser';
+
+interface Props {
+  summary: WorkdeskSummary;
+}
+
+const { summary } = Astro.props;
+---
+
+<div
+  class="summary-edit-controls"
+  data-summary-id={summary.id}
+  data-url={summary.url}
+  data-ai-scores={JSON.stringify(summary.scores || {})}
+>
+  <!-- Will be populated by client-side script based on auth status -->
+  <div class="edit-container">
+    <div class="auth-check">Checking authentication...</div>
+  </div>
+</div>
+
+<script>
+  import {
+    isAuthenticated,
+    getSummaryMetadata,
+    upsertSummaryMetadata,
+    type SummaryMetadata,
+    type AiScores,
+  } from '@/lib/supabase';
+
+  interface EditState {
+    isEditing: boolean;
+    isSaving: boolean;
+    metadata: SummaryMetadata | null;
+  }
+
+  class SummaryEditor {
+    private container: HTMLElement;
+    private summaryId: string;
+    private url: string;
+    private aiScores: AiScores;
+    private state: EditState = {
+      isEditing: false,
+      isSaving: false,
+      metadata: null,
+    };
+
+    constructor(container: HTMLElement) {
+      this.container = container;
+      this.summaryId = container.dataset.summaryId || '';
+      this.url = container.dataset.url || '';
+      this.aiScores = JSON.parse(container.dataset.aiScores || '{}');
+
+      this.init();
+    }
+
+    async init() {
+      const authenticated = await isAuthenticated();
+
+      if (!authenticated) {
+        // Hide the controls if not authenticated
+        this.container.style.display = 'none';
+        return;
+      }
+
+      // Show edit button
+      this.renderEditButton();
+    }
+
+    private renderEditButton() {
+      const editContainer = this.container.querySelector('.edit-container');
+      if (!editContainer) return;
+
+      editContainer.innerHTML = `
+        <button class="edit-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25a1.75 1.75 0 0 1 .445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.25.25 0 0 0-.064.108l-.558 1.953 1.953-.558a.249.249 0 0 0 .108-.064Z"></path>
+          </svg>
+          Edit Curation
+        </button>
+      `;
+
+      const editBtn = editContainer.querySelector('.edit-btn');
+      editBtn?.addEventListener('click', () => this.startEditing());
+    }
+
+    private async startEditing() {
+      if (this.state.isEditing) return;
+
+      this.state.isEditing = true;
+
+      // Load or create metadata
+      let metadata = await getSummaryMetadata(this.summaryId, this.url);
+
+      if (!metadata) {
+        // Create new record with AI scores
+        metadata = await upsertSummaryMetadata({
+          summary_id: this.summaryId,
+          url: this.url,
+          journal_date: null, // Workdesk
+          annex_flag: false,
+          standout_flag: false,
+          omit_flag: false,
+          upvote_flag: false,
+          downvote_flag: false,
+          ai_scores: this.aiScores,
+        });
+      }
+
+      this.state.metadata = metadata;
+      this.renderEditForm();
+    }
+
+    private renderEditForm() {
+      const editContainer = this.container.querySelector('.edit-container');
+      if (!editContainer || !this.state.metadata) return;
+
+      const meta = this.state.metadata;
+
+      editContainer.innerHTML = `
+        <div class="edit-form">
+          <div class="edit-header">
+            <h4>Curation Controls</h4>
+            <button class="close-btn">×</button>
+          </div>
+
+          <div class="flags-section">
+            <h5>Flags</h5>
+            <div class="flag-group">
+              <label class="flag-checkbox">
+                <input type="checkbox" name="annex_flag" ${meta.annex_flag ? 'checked' : ''}>
+                <span>Annex Journal</span>
+              </label>
+              <label class="flag-checkbox">
+                <input type="checkbox" name="standout_flag" ${meta.standout_flag ? 'checked' : ''}>
+                <span>Stand Out</span>
+              </label>
+              <label class="flag-checkbox">
+                <input type="checkbox" name="omit_flag" ${meta.omit_flag ? 'checked' : ''}>
+                <span>Omit</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="votes-section">
+            <h5>Vote</h5>
+            <div class="flag-group">
+              <label class="flag-checkbox">
+                <input type="checkbox" name="upvote_flag" ${meta.upvote_flag ? 'checked' : ''}>
+                <span>👍 Upvote</span>
+              </label>
+              <label class="flag-checkbox">
+                <input type="checkbox" name="downvote_flag" ${meta.downvote_flag ? 'checked' : ''}>
+                <span>👎 Downvote</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="scores-section">
+            <h5>AI Scores (Read-only)</h5>
+            <div class="score-grid">
+              ${this.renderScoreDisplay('Signal', meta.ai_scores?.signal)}
+              ${this.renderScoreDisplay('Depth', meta.ai_scores?.depth)}
+              ${this.renderScoreDisplay('Unique', meta.ai_scores?.unique)}
+              ${this.renderScoreDisplay('Practical', meta.ai_scores?.practical)}
+              ${this.renderScoreDisplay('Anti-Hype', meta.ai_scores?.antiHype)}
+            </div>
+            <div class="score-grid">
+              ${this.renderScoreDisplay('Main', meta.ai_scores?.mainJournal, 100)}
+              ${this.renderScoreDisplay('Annex', meta.ai_scores?.annexPotential, 100)}
+              ${this.renderScoreDisplay('Overall', meta.ai_scores?.overall, 100)}
+            </div>
+          </div>
+
+          <div class="save-status">
+            <span class="status-text"></span>
+          </div>
+        </div>
+      `;
+
+      // Attach event listeners
+      const closeBtn = editContainer.querySelector('.close-btn');
+      closeBtn?.addEventListener('click', () => this.cancelEditing());
+
+      const inputs = editContainer.querySelectorAll('input, textarea');
+      inputs.forEach((input) => {
+        input.addEventListener('change', () => this.saveChanges());
+      });
+    }
+
+    private renderScoreDisplay(label: string, value: number | undefined, max: number = 5): string {
+      return `
+        <div class="score-item">
+          <span class="score-label">${label}:</span>
+          <span class="score-value">${value !== undefined ? `${value}/${max}` : 'N/A'}</span>
+        </div>
+      `;
+    }
+
+    private async saveChanges() {
+      if (this.state.isSaving || !this.state.metadata) return;
+
+      this.state.isSaving = true;
+      this.showStatus('Saving...');
+
+      const form = this.container.querySelector('.edit-form');
+      if (!form) return;
+
+      // Get form values
+      const annexFlag = (form.querySelector('[name="annex_flag"]') as HTMLInputElement)?.checked || false;
+      const standoutFlag = (form.querySelector('[name="standout_flag"]') as HTMLInputElement)?.checked || false;
+      const omitFlag = (form.querySelector('[name="omit_flag"]') as HTMLInputElement)?.checked || false;
+      const upvoteFlag = (form.querySelector('[name="upvote_flag"]') as HTMLInputElement)?.checked || false;
+      const downvoteFlag = (form.querySelector('[name="downvote_flag"]') as HTMLInputElement)?.checked || false;
+
+      // Save to Supabase
+      const updated = await upsertSummaryMetadata({
+        summary_id: this.summaryId,
+        url: this.url,
+        annex_flag: annexFlag,
+        standout_flag: standoutFlag,
+        omit_flag: omitFlag,
+        upvote_flag: upvoteFlag,
+        downvote_flag: downvoteFlag,
+      });
+
+      if (updated) {
+        this.state.metadata = updated;
+        this.showStatus('✓ Saved');
+        setTimeout(() => this.hideStatus(), 2000);
+      } else {
+        this.showStatus('✗ Save failed');
+      }
+
+      this.state.isSaving = false;
+    }
+
+    private showStatus(message: string) {
+      const statusText = this.container.querySelector('.status-text');
+      if (statusText) {
+        statusText.textContent = message;
+      }
+    }
+
+    private hideStatus() {
+      const statusText = this.container.querySelector('.status-text');
+      if (statusText) {
+        statusText.textContent = '';
+      }
+    }
+
+    private cancelEditing() {
+      this.state.isEditing = false;
+      this.renderEditButton();
+    }
+  }
+
+  // Initialize all summary editors on the page
+  document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.summary-edit-controls');
+    containers.forEach((container) => {
+      new SummaryEditor(container as HTMLElement);
+    });
+  });
+</script>
+
+<style>
+  .summary-edit-controls {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+  }
+
+  .auth-check {
+    color: #586069;
+    font-size: 0.875rem;
+  }
+
+  .edit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #24292e;
+    transition: all 0.2s;
+  }
+
+  .edit-btn:hover {
+    background: #f3f4f6;
+    border-color: #c3c8cc;
+  }
+
+  .edit-form {
+    background: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .edit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e1e4e8;
+  }
+
+  .edit-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #24292e;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #586069;
+    cursor: pointer;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+
+  .close-btn:hover {
+    background: #f6f8fa;
+  }
+
+  .flags-section,
+  .votes-section,
+  .scores-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .flags-section h5,
+  .votes-section h5,
+  .scores-section h5 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #24292e;
+  }
+
+  .flag-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .flag-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+
+  .flag-checkbox input[type='checkbox'] {
+    cursor: pointer;
+  }
+
+  .score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .score-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .score-label {
+    font-weight: 500;
+    color: #586069;
+  }
+
+  .score-value {
+    color: #24292e;
+    font-weight: 600;
+  }
+
+  .score-item label {
+    font-weight: 500;
+    color: #586069;
+    white-space: nowrap;
+  }
+
+  .score-item input[type='number'] {
+    width: 60px;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }
+
+  .score-max {
+    color: #586069;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.875rem;
+    resize: vertical;
+  }
+
+  textarea:focus {
+    outline: none;
+    border-color: #0366d6;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+  }
+
+  .save-status {
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .status-text {
+    font-size: 0.875rem;
+    color: #586069;
+  }
+</style>
