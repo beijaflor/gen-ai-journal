@@ -31,6 +31,25 @@ Select 18-25 articles that fit the approved themes, providing essential insights
   - Understand the week's narrative arc
   - Review planned article distribution (18-25 articles across 6-7 themes)
 
+### Optional: Export Admin Flags
+
+If you used the Supabase admin system in STEP_03, export flagged summaries to assist with curation:
+
+```bash
+# Export admin-flagged summaries to markdown files
+uv run scripts/export_curation_flags.py
+```
+
+This creates:
+- **`workdesk/curated_annex_journal_sources.md`**: Summaries flagged for annex (with ⭐/👍/👎 markers)
+- **`workdesk/omitted_sources.md`**: Summaries flagged for omission
+
+**Note:** These are suggestions based on initial admin review, not final decisions. Apply editorial judgment and curation criteria when making final selections.
+
+See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for details.
+
+---
+
 ### 1. Theme-Based Article Selection
 
 **For each theme in the editorial plan:**

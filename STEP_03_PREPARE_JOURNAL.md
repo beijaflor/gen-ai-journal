@@ -27,6 +27,36 @@ This step prepares the working journal files in the workdesk directory for editi
   - `workdesk/weekly_journal_YYYY_MM_DD.md` (empty, ready for editing)
   - `workdesk/annex_journal_YYYY_MM_DD.md` (empty, ready for editing)
 
+### 3. Admin Review & Flagging (Optional with Supabase)
+
+If using the Supabase admin system, you can now review and flag summaries before curation:
+
+- [ ] Start development server:
+  ```bash
+  cd website && npm run dev
+  ```
+
+- [ ] Sign in at http://localhost:4321/auth/login with admin credentials
+
+- [ ] Review workdesk summaries (accessible from homepage sidebar)
+
+- [ ] For each summary, click "Edit Curation" and set flags:
+  - **Annex flag**: Consider for annex journal (unique perspectives)
+  - **Standout flag**: Exceptional content worth highlighting
+  - **Omit flag**: Too specialized or low quality
+  - **Upvote/Downvote**: Editorial endorsement or concerns
+
+- [ ] Flags auto-save to Supabase database
+
+**Benefits:**
+- Pre-flag promising content before detailed curation
+- Track editorial decisions with audit trail
+- Export flagged summaries as curation starting points
+
+**Note:** This is supplementary to the editorial workflow. Final curation decisions in STEP_04/STEP_05 remain manual based on established criteria.
+
+See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for complete admin system documentation.
+
 ## Output
 
 - **Files Created:** Empty journal files in workdesk for editing
