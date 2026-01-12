@@ -1,5 +1,201 @@
 # Sources for Journal 2026-01-13
 
 Add your source URLs here. Use the add-url skill or manually add them in this format:
-- [ ] 001. https://example.com/article
+- [x] 001. https://example.com/article
+
+## Main List
+
+- [x] 001. https://vercel.com/changelog/vercel-agent-code-reviews-now-follow-your-code-guidelines
+- [x] 002. https://goodpatch.com/blog/2026-01-ai-strategy
+- [x] 003. https://www.sanity.io/blog/the-quiet-reshape-of-content-operations
+- [x] 004. https://steipete.me/posts/2025/shipping-at-inference-speed
+- [x] 005. https://burkeholland.github.io/posts/opus-4-5-change-everything/
+- [x] 006. https://substack.com/home/post/p-182047799
+- [x] 007. https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/
+- [x] 008. https://qiita.com/takurot/items/473dd7b3dd5d5c3f6d05
+- [x] 009. https://qiita.com/Muraishi0121/items/23ad9612270b6587cc6e
+- [x] 010. https://qiita.com/yuji-arakawa/items/fee7b58641ae4c15f062
+- [x] 011. https://zenn.dev/r_kaga/articles/54698ed22fbfe9
+- [x] 012. https://zenn.dev/genda_jp/articles/b268146f3d5392
+- [x] 013. https://zenn.dev/silverbirder/articles/5bba8251cea74a
+- [x] 014. https://zenn.dev/tettuan/articles/2026-01-5a46d0ecc2b66c
+- [x] 015. https://zenn.dev/knowledgesense/articles/dc593ea029356f
+- [x] 016. https://www.quantamagazine.org/the-polyglot-neuroscientist-resolving-how-the-brain-parses-language-20251205/
+- [x] 017. https://www.makeuseof.com/google-gemini-dynamic-view-goal-tracking-dashboard/
+- [x] 018. https://k-tai.watch.impress.co.jp/docs/news/2075937.html
+- [x] 019. https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/
+- [x] 020. https://tech.nri-net.com/entry/verbalization_of_text
+- [x] 021. https://levtech.jp/media/article/column/detail_779/
+- [x] 022. https://zenn.dev/mitsuo119/articles/5e6cbda8ada83d
+- [x] 023. https://addyosmani.com/blog/code-review-ai/
+- [x] 024. https://www.oreilly.com/radar/ai-and-the-next-economy/
+- [x] 025. https://vercel.com/blog/how-we-made-v0-an-effective-coding-agent
+- [x] 026. https://davekiss.com/blog/ideas-are-cheap-execution-is-cheaper/
+- [x] 027. https://jarango.com/2026/01/06/the-moylan-arrow-ia-lessons-for-ai-powered-systems/
+- [x] 028. https://www.suzukikenichi.com/blog/how-ai-is-changing-google-search-behavior-and-query-structure/
+- [x] 029. https://muratbuffalo.blogspot.com/2026/01/the-agentic-self-parallels-between-ai.html
+- [x] 030. https://zenn.dev/hiraoku/scraps/e3dc6c573a82ac
+- [x] 031. https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/
+- [x] 032. https://embd.cc/llm-problems-observed-in-humans
+- [x] 033. https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160
+- [x] 034. https://openai.com/ja-JP/index/introducing-chatgpt-health/
+- [x] 035. https://vibeandscribe.xyz/posts/2026-01-07-emergent-behavior.html
+- [x] 036. https://surgehq.ai/blog/lmarena-is-a-plague-on-ai
+- [x] 037. https://arpitbhayani.me/blogs/qkv-matrices/
+- [x] 038. https://www.sakura.ad.jp/corporate/information/announcements/2025/12/25/1968222725/
+- [x] 039. https://qiita.com/moritalous/items/5c06306baff550e7b5a9
+- [x] 040. https://qiita.com/quan_le/items/091f7b3a976816b96145
+- [x] 041. https://qiita.com/hisaho/items/61a52b7a0be08f4bbaa5
+- [x] 042. https://qiita.com/noguchi1000/items/013cac1d441b57748e28
+- [x] 043. https://zenn.dev/dyoshikawa/articles/zed-devcontainers-copilot-claudecode
+- [x] 044. https://zenn.dev/modokkin/articles/zenn-2026-01-06-claude-code-plugins-update
+- [x] 045. https://zenn.dev/aun_phonogram/articles/4be2f4745726fb
+- [x] 046. https://zenn.dev/tsuboi/articles/fbce183f930fc0
+- [x] 047. https://zenn.dev/saka1/articles/647a177cc5f7b8
+- [x] 048. https://qiita.com/segfo/items/ed8343e036a9f973c77d
+- [x] 049. https://nowokay.hatenablog.com/entry/2026/01/05/110344
+- [ ] 050. https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html
+- [x] 051. https://nowokay.hatenablog.com/entry/2026/01/06/235844
+- [x] 052. https://www.nytimes.com/2026/01/02/world/asia/china-ai-cancer-pancreatic.html
+- [x] 053. https://gigazine.net/news/20260107-lfm2-5-on-device-ai/
+- [x] 054. https://note.com/tably/n/nd1b87eed618d
+- [x] 055. https://www.itmedia.co.jp/news/articles/2601/07/news074.html
+- [x] 056. https://togetter.com/li/2648757
+- [x] 057. https://www.itmedia.co.jp/news/articles/2601/07/news099.html
+- [x] 058. https://zenn.dev/jambo_dev/articles/11e009c8ab4fde
+- [x] 059. https://note.com/google_gemini/n/n0744c2d70b27
+- [x] 060. https://www.luiscardoso.dev/blog/sandboxes-for-ai
+- [ ] 061. https://qiita.com/minorun365/items/0b4a980f2f4bb073a9e0
+- [x] 062. https://webtan.impress.co.jp/e/2026/01/06/51803
+- [x] 063. https://www.gizmodo.jp/2026/01/microsofts-push-for-copilot-plus-pcs-could-stall-laptop-sales.html
+- [x] 064. https://www.suzukikenichi.com/blog/from-glue-pizza-to-medical-hazards-the-divided-verdict-on-google-ai/
+- [x] 065. https://github.com/IQuestLab/IQuest-Coder-V1/blob/main/papers/IQuest_Coder_Technical_Report.pdf
+- [x] 066. https://ahrefs.com/blog/ai-vs-made-up-brand-experiment/
+- [x] 067. https://news.ycombinator.com/item?id=46478740
+- [x] 068. https://jhurliman.org/post/804323197731373056/experiments-with-ableton-mcp-dec-2025
+- [x] 069. https://nik.art/the-suck-is-why-were-here/
+- [x] 070. https://github.com/13point5/torch.ts
+- [x] 071. https://arstechnica.com/ai/2026/01/no-grok-cant-really-apologize-for-posting-non-consensual-sexual-images/
+- [x] 072. https://www.siliconcontinent.com/p/a-new-years-letter-to-a-young-person
+- [ ] 073. https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/
+- [x] 074. https://github.com/firasd/vibesbench/blob/main/docs/ai-sycophancy-panic.md
+- [ ] 075. https://qiita.com/ntaka329/items/fdeee736f9af06640647
+- [ ] 076. https://qiita.com/dancingedamame/items/4408cf28e0e0fe65f008
+- [ ] 077. https://qiita.com/Free_Akito9120/items/f41f80af8eed80a9044f
+- [ ] 078. https://qiita.com/hiropon122/items/02241d6468270e427c7d
+- [ ] 079. https://qiita.com/YShiba92/items/dc73bab7a2db7ebb0257
+- [ ] 080. https://qiita.com/tms-ducvu/items/252ca8e062c0d0dbc02d
+- [ ] 081. https://zenn.dev/h_shinaoka/articles/fcba75dc2e00a0
+- [ ] 082. https://zenn.dev/mkj/articles/nemo-series_20251230
+- [x] 083. https://zenn.dev/acompany/articles/c642c09bd167a6
+- [x] 084. https://zenn.dev/reality_tech/articles/1d6df6811715fb
+- [x] 085. https://zenn.dev/oikon/articles/claude-code-web-gh-cli
+- [x] 086. https://zenn.dev/kok1eeeee/articles/claude-code-zed-terminal-workflow
+- [ ] 087. https://zenn.dev/teramotodaiki/articles/react18-migration-with-devin
+- [x] 088. https://zenn.dev/tokium_dev/articles/vibe-coding-understanding-matters
+- [x] 089. https://zenn.dev/ktg/articles/518c880823ad4a
+- [x] 090. https://addyosmani.com/blog/coding-agents-manager/
+- [x] 091. https://1password.com/blog/ai-is-changing-the-ide-with-1password-security-keeps-up
+- [x] 092. https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/
+- [x] 093. https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/
+- [x] 094. https://adonisjs.com/blog/frameworks-in-the-era-of-ai
+- [x] 095. https://azukiazusa.dev/blog/claude-code-ccstatusline/
+- [x] 096. https://traceformer.io/
+- [x] 097. https://www.pentestpartners.com/security-blog/eurostar-ai-vulnerability-when-a-chatbot-goes-off-the-rails/
+- [x] 098. https://granda.org/en/2026/01/02/claude-code-on-the-go/
+- [x] 099. https://github.com/nibzard/awesome-agentic-patterns
+- [x] 100. https://techblog.lycorp.co.jp/ja/20260108a
+- [x] 101. https://tomtunguz.com/coding-kanban/
+- [x] 102. https://www.aidesignfieldguide.com/articles/barron-webster
+- [x] 103. https://mikefisher.substack.com/p/more-efficiency-more-demand
+- [x] 104. https://www.tool-ui.com/
+- [x] 105. https://draganbabic.com/blog/steam-steel-and-infinite-minds-by-ivan-zhao/
+- [x] 106. https://uxdesign.cc/figma-make-prompts-with-real-examples-2ece15d0fce6
+- [x] 107. https://vercel.com/blog/how-to-build-agents-with-filesystems-and-bash
+- [x] 108. https://blog.mozilla.org/en/mozilla/mozilla-open-source-ai-strategy/
+- [x] 109. https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/
+- [x] 110. https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/
+- [x] 111. https://spectrum.ieee.org/ai-coding-degrades
+- [x] 112. https://epoch.ai/data-insights/us-vs-china-eci
+- [x] 113. https://news.ycombinator.com/item?id=46545056
+- [x] 114. https://www.mihaileric.com/The-Emperor-Has-No-Clothes/
+- [x] 115. https://tombedor.dev/mcp-is-a-fad/
+- [x] 116. https://github.com/Hiepler/EuConform
+- [x] 117. https://matthewrocklin.com/ai-zealotry/
+- [x] 118. https://www.getseer.dev/blogs/pre-commit-linting-vibe-coding
+- [x] 119. https://news.ycombinator.com/item?id=46562867
+- [ ] 120. https://qiita.com/kei1-dev/items/edc6e5a8d02cb31c17c0
+- [ ] 121. https://qiita.com/ryu-ki/items/45b925ddbad7698edeb6
+- [x] 122. https://www.wsj.com/tech/ai/china-is-worried-ai-threatens-party-ruleand-is-trying-to-tame-it-bfdcda2d
+- [x] 123. https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
+- [x] 124. https://ampmedia.jp/2026/01/07/anti-ai-marketing/
+- [x] 125. https://zenn.dev/pwrengineer/articles/export_chatgpt_to_md
+- [x] 126. https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+- [x] 127. https://zenn.dev/pepabo/articles/ffb79b5279f6ee
+- [x] 128. https://dev.classmethod.jp/articles/burikaigi-2026-claude-code-practice/
+- [x] 129. https://cocolog-nifty.hatenablog.com/entry/2026/01/09/102400
+- [x] 130. https://izanami.dev/post/bb9d5d5b-0b1d-4d39-a2ba-2a770e116c3d
+- [x] 131. https://speakerdeck.com/takaking22/toward-agile-teams-in-the-age-of-ai
+- [x] 132. https://gihyo.jp/article/2026/01/daily-linux-260109
+- [x] 133. https://p-shirokuma.hatenadiary.com/entry/20260109/1767926234
+- [x] 134. https://anond.hatelabo.jp/20260109125514
+- [x] 135. https://www.itmedia.co.jp/news/articles/2601/09/news065.html
+- [x] 136. https://github.com/shikajiro/claude-code-skill-example
+- [x] 137. https://note.com/fladdict/n/na45a57c572c8
+- [x] 138. https://cloud.google.com/blog/products-ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/?hl=en
+- [x] 139. https://ledge.ai/articles/jdla_new_year_message_2026
+- [x] 140. https://www.technologyreview.jp/s/375407/what-even-is-the-ai-bubble/
+- [x] 141. https://tet-yahara.hatenablog.com/entry/2026/01/04/232251
+- [x] 142. https://www.megamouth.info/entry/2026/01/04/163213
+- [x] 143. https://azukiazusa.dev/blog/using-figma-mcp-to-provide-design-system-for-ai-coding-agents/
+- [x] 144. https://qiita.com/furugen/items/7f71c3a9559d4a4c060d
+- [x] 145. https://qiita.com/Yadon987/items/fb1325fe2dfc4918e9b7
+- [x] 146. https://qiita.com/nakazax/items/496ea7412cf1c3b1955d
+- [x] 147. https://qiita.com/okaru/items/320d1df398de25c25662
+- [x] 148. https://qiita.com/motoya0118/items/bd5266a987d082caea16
+- [x] 149. https://qiita.com/nAotO01_03/items/cfc2013f38ca95578652
+- [x] 150. https://qiita.com/yakumo_09/items/00ac034571fec150351a
+- [x] 151. https://qiita.com/dirbato-tetsushiyamada/items/90d92b777760baeb846e
+- [x] 152. https://qiita.com/JuniEngin/items/8fe55b9edf32a867f005
+- [x] 153. https://zenn.dev/explaza/articles/a387d2bf1cb448
+- [x] 154. https://zenn.dev/him0/articles/8b6c82e592e30b
+- [x] 155. https://zenn.dev/dsgarage/articles/vibe-coding-what-is-it
+- [x] 156. https://zenn.dev/yuki_koike0626/articles/dev-character-discussion
+- [x] 157. https://zenn.dev/ka888aa/articles/b7fcb48a3b3fa9
+- [x] 158. https://zenn.dev/ncdc/articles/206fbad44d1dba
+- [x] 159. https://ledge.ai/articles/prompt_repetition_improves_llm_accuracy
+- [x] 160. https://note.com/ai_driven/n/nce437c34242f
+- [x] 161. https://cgworld.jp/flashnews/01-202601-SHARP.html
+- [x] 162. https://iphone-mania.jp/apple-599566/
+- [x] 163. https://zenn.dev/m_keiichi/articles/8c34a538979b99
+- [x] 164. https://adocomplete.com/advent-of-claude-2025/
+- [x] 165. https://note.com/old_pgmrs_will/n/n29acdc402464
+- [x] 166. https://note.com/mizkun/n/nc4dbb6ed60c1
+- [x] 167. https://qiita.com/Tyamamoto1007/items/9a1844b9a0a51a0e882e
+- [x] 168. https://tbpgr.hatenablog.com/entry/2025/12/20/025353
+- [x] 169. https://www.wheresyoured.at/the-enshittifinancial-crisis/
+- [x] 170. https://www.robinsloan.com/winter-garden/agi-is-here/
+- [x] 171. https://officechai.com/ai/llms-are-currently-not-helpful-at-all-for-math-research-give-garbage-answers-mathematician-joel-david-hamkins/
+- [x] 172. https://news.ycombinator.com/item?id=46465866
+- [x] 173. https://idiallo.com/blog/all-ai-videos-are-harmful
+- [x] 174. https://calnewport.com/why-didnt-ai-join-the-workforce-in-2025/
+- [x] 175. https://qiita.com/take-yoda/items/bafb7b921bf8d16187ba
+- [x] 176. https://qiita.com/ota-tsutomu/items/5a78e9f6b838db1f119c
+- [x] 177. https://qiita.com/ntaka329/items/7b05cd44897d9347c149
+- [x] 178. https://zenn.dev/mohy_nyapan/articles/a07975837386f7
+- [x] 179. https://zenn.dev/yamadashy/articles/claude-code-agent-skills-agent-memory
+- [x] 180. https://zenn.dev/livetoon/articles/get-start-opencode
+- [x] 181. https://tongyi-mai.github.io/MAI-UI-blog/
+- [x] 182. https://www.watch.impress.co.jp/docs/series/nishida/2075331.html
+- [x] 183. https://tech.findy.co.jp/entry/2026/01/05/070000
+- [x] 184. https://atmarkit.itmedia.co.jp/ait/articles/2601/04/news010.html
+- [x] 185. https://zenn.dev/mkj/articles/re-entry-attention_20251209
+- [x] 186. https://www.huffingtonpost.jp/entry/story_jp_693fbd8ee4b0775c5077e079
+- [x] 187. https://zenn.dev/mzmt/articles/my-ai-coding-2025
+- [x] 188. https://pc.watch.impress.co.jp/docs/column/nishikawa/2076696.html
+- [x] 189. https://nowokay.hatenablog.com/entry/2026/01/07/111410
+- [x] 190. https://note.com/fladdict/n/n445f34e6a714
+- [x] 191. https://meatlog.de10.moe/entry/character_creator_prompt
+- [x] 192. https://note.com/chaen_channel/n/n170fbfcd94bf
+- [x] 193. https://zenn.dev/manimoto/articles/1c3b1379cc5ef0
 
