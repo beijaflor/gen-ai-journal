@@ -5,6 +5,7 @@ import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
 import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
 import { getNextJournalDate, isNextJournalDate, getJournalStatusLabel, formatJapaneseDateDisplay } from '@/utils/journal-date';
 import { formatDomainDisplay } from '@/utils/domain-display';
+import SummaryEditControls from '@/components/admin/SummaryEditControls.astro';
 import '@/styles/global.css';
 import DOMPurify from 'dompurify';
 import { JSDOM } from 'jsdom';
@@ -319,6 +320,9 @@ const nextSummary = currentIndex > 0
             </div>
           </div>
         )}
+
+        {/* Admin edit controls (only visible when authenticated) */}
+        <SummaryEditControls summary={getAllWorkdeskSummaries().find(s => s.id === id)!} />
       </aside>
     )}
   </div>
