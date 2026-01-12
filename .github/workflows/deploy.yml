@@ -52,6 +52,8 @@ jobs:
         working-directory: ./website
         env:
           ASTRO_BASE: ${{ steps.pages.outputs.base_path }}
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
