@@ -198,4 +198,10 @@ Add your source URLs here. Use the add-url skill or manually add them in this fo
 - [x] 192. https://note.com/chaen_channel/n/n170fbfcd94bf
 - [x] 193. https://zenn.dev/manimoto/articles/1c3b1379cc5ef0
 - [x] 194. https://www.oreilly.com/radar/signals-for-2026/
+- [x] 195. https://vercel.com/changelog/introducing-bash-tool-for-filesystem-based-context-retrieval
+- [x] 196. https://zenn.dev/tmasuyama1114/articles/claude_code_extension_guide
+- [x] 197. https://note.com/hatti8/n/n3c0f2e8beb4a
+- [x] 198. https://developers.googleblog.com/a-developers-guide-to-debugging-jax-on-cloud-tpus-essential-tools-and-techniques/
+- [x] 199. https://www.figma.com/blog/designer-framework-for-better-ai-prompts/
+- [x] 200. https://zenn.dev/terurou/articles/55ffe7c6e5c96e
 
