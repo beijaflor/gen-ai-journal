@@ -1,43 +1,25 @@
-This article details a cybersecurity threat dubbed **"Prompt Poaching,"** where browser extensions are used to stealthily exfiltrate conversations from AI platforms like ChatGPT and DeepSeek.
+## 90万人以上のユーザーからChatGPTやDeepSeekの対話データを盗む2つのChrome拡張機能が発覚
 
-Here is a summary of the key findings, the extensions involved, and the recommended actions.
+https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html
 
-### **The Malicious Extensions**
-Two specific extensions, which collectively have over **900,000 users**, were found impersonating legitimate AI tools to steal data. They exfiltrate conversation content and every URL visited by the user to a remote server every 30 minutes.
+**Original Title**: Two Chrome Extensions Caught Stealing ChatGPT and DeepSeek Chats from 900,000 Users
 
-1.  **Chat GPT for Chrome with GPT-5, Claude Sonnet & DeepSeek AI**
-    *   **ID:** `fnmihdojmnkclgjpcoonokmkhjpjechg`
-    *   **User Count:** 600,000+
-2.  **AI Sidebar with Deepseek, ChatGPT, Claude, and more**
-    *   **ID:** `inhcgfpbfdjbjogdfjbclgolkmhnooop`
-    *   **User Count:** 300,000+
+悪質なChrome拡張機能が90万人以上のユーザーからLLMとの対話データを窃取し、AI利用における「プロンプト密猟」という新たなセキュリティ脅威の実態を露呈させている。
 
-*Note: These extensions were designed to mimic a popular legitimate extension from "AITOPIA" to gain user trust.*
+**Content Type**: 📰 News & Announcements
+**Language**: en
 
-### **What is "Prompt Poaching"?**
-Coined by researchers at **Secure Annex**, Prompt Poaching is the tactic of using browser extensions to capture sensitive AI chatbot interactions. 
+**Scores**: Signal:5/5 | Depth:3/5 | Unique:4/5 | Practical:5/5 | Anti-Hype:5/5
+**Main Journal**: 94/100 | **Annex Potential**: 90/100 | **Overall**: 88/100
 
-**How it works:**
-*   **Deceptive Consent:** The extensions ask for permission to collect "anonymous, non-identifiable analytics." 
-*   **DOM Scraping:** Once installed, they look for specific elements within the web page (Document Object Model) to scrape the actual text of chat messages.
-*   **Infrastructure Obfuscation:** Attackers use AI-powered web development platforms (like Lovable) to host privacy policies and C2 (Command and Control) servers to make their activities look like legitimate traffic.
+**Topics**: [[Chrome拡張機能, ChatGPT, セキュリティ, 機密情報漏洩, Prompt Poaching]]
 
-### **"Legitimate" Extensions Joining the Trend**
-The report highlights a concerning trend: established, popular extensions are also beginning to collect AI prompt data, often by updating their Terms of Service.
-*   **Similarweb (1M+ users):** Updated its policy in early 2026 to explicitly state it collects prompts, queries, and uploaded files to analyze traffic metrics.
-*   **Stayfocusd (600k users):** Also identified as engaging in prompt data collection.
+サイバーセキュリティ研究者の調査により、Chromeウェブストアで配布されていた2つのAI関連拡張機能が、ChatGPTおよびDeepSeekにおけるユーザーの対話内容や閲覧中のURLを窃取し、外部サーバーへ送信していたことが判明した。対象となったのは「Chat GPT for Chrome with GPT-5, Claude Sonnet & DeepSeek AI」および「AI Sidebar with Deepseek, ChatGPT, Claude, and more.」で、これらは合計90万人以上のユーザーにインストールされていた。
 
-These extensions may use more sophisticated methods, such as hijacking browser APIs (`fetch()` and `XMLHttpRequest`), to gather data from ChatGPT, Claude, Gemini, and Perplexity.
+これらの拡張機能は、インストール時に「匿名のアナリティクスデータ」の収集に対する同意を装いながら、実際にはブラウザのDOM（Document Object Model）を操作してLLMとの対話メッセージを直接抽出し、30分ごとに攻撃者の制御下にあるサーバーへ送信する仕組みを持っていた。OX Securityの研究者によれば、これらの拡張機能は「Chat with all AI models」という100万人規模の人気拡張機能を巧妙に偽装しており、インフラの隠蔽のために「Lovable」というAI搭載の開発プラットフォームを悪用してプライバシーポリシーをホストするなど、発覚を免れるための巧妙な工作も確認されている。
 
-### **Risks to Users and Organizations**
-The stolen data often contains highly sensitive information, including:
-*   **Intellectual Property:** Proprietary code or business strategies pasted into AI tools.
-*   **Corporate Espionage:** Exposure of internal URLs and confidential project names.
-*   **Identity Theft:** Personal details shared during casual AI use.
-*   **Phishing:** Data can be sold on underground forums to create highly targeted phishing campaigns.
+著者は、このようにブラウザ拡張機能を通じてAIのプロンプトを隠密に収集する手法を「Prompt Poaching（プロンプト密猟）」と定義し、これが企業スパイや知的財産窃盗の新たな強力な武器になると強く警告している。特にエンジニアや従業員が開発コードや社外秘のビジネス情報をLLMに投入する際、ブラウザ拡張機能がその全内容を傍受できる点は、組織にとって極めて深刻なセキュリティホールとなる。
 
-### **Recommended Actions**
-1.  **Immediate Removal:** Check your browser extensions (Chrome/Edge/Brave). If you have either of the two malicious IDs listed above, **remove them immediately.**
-2.  **Audit Permissions:** Review the permissions of any "AI Sidebar" or "Chatbot Assistant" extensions. Be wary of those requesting access to "all websites" or "browsing history."
-3.  **Check Privacy Policies:** For legitimate tools like Similarweb, review the latest privacy policy updates to see if they are now collecting your AI inputs.
-4.  **Enterprise Policy:** Organizations should consider implementing policies that restrict the use of third-party AI extensions on company hardware to prevent "Shadow AI" data leaks.
+また、この問題は悪意のあるマルウェアだけに留まらない。SimilarwebやStayfocusdといった数百万人のユーザーを抱える正規の拡張機能も、AIツールへの入力をトラフィック分析目的で収集し始めていることが報告されている。Similarwebの最新のプライバシーポリシーでは、AIに入力されたプロンプトやアップロードされたファイルが収集対象であることが明記されており、収益化を狙う企業による「データの合法的な搾取」が一般化しつつある。
+
+筆者によれば、これはプロンプト密猟というトレンドの始まりに過ぎず、今後より多くの企業が同様の手法を採用することが予想される。ウェブアプリケーションエンジニアは、個人および組織のレベルで拡張機能の利用を厳格に管理し、たとえ「おすすめ（Featured）」バッジが付いているものであっても、ブラウザに不要な権限を与えないよう細心の注意を払うべきである。
