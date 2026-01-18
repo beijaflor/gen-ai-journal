@@ -1,29 +1,23 @@
-This Hacker News thread discusses a proposed modification to the standard MIT License, dubbed the **"MIT Non-AI License."** The proposal aims to prevent software and documentation from being used to train, fine-tune, or validate artificial intelligence models without explicit permission.
+## MITライセンスに「AI学習禁止」条項を追加する動きと、オープンソースの定義を巡る論争
 
-The discussion highlights several legal, philosophical, and practical challenges regarding AI and open-source software:
+https://news.ycombinator.com/item?id=46562867
 
-### 1. The Definition of "Open Source"
-*   **The Conflict:** Critics argue that adding restrictions on *how* software is used means it is no longer "Open Source" according to the Open Source Definition (OSD). Permissive licenses like MIT are designed to be unrestricted.
-*   **Naming Issues:** Commenters suggested that calling it an "MIT License" is misleading. If it restricts usage (even for AI), it becomes a "source-available" or "proprietary" license rather than a truly open one.
+**Original Title**: MIT Non-AI License
 
-### 2. Legal Enforceability and "Fair Use"
-*   **The US Perspective:** In the United States, AI companies often claim that training models on public data constitutes **Fair Use**. If a court agrees, then license restrictions are irrelevant because Fair Use bypasses copyright limitations. 
-*   **Is Training "Copying"?:** Some participants argued that since LLMs "compress" information rather than making literal copies, training might not even trigger copyright law, making it difficult to enforce a license against it.
+議論する：開発者の著作権をAI学習から保護するために、MITライセンスに禁止条項を組み込んだ「MIT Non-AI License」の是非について。
 
-### 3. The European Landscape (EU AI Act)
-*   **Opt-outs:** The thread notes that the EU’s legal framework is different. The **EU AI Act** and the **Digital Single Market (DSM) Directive** require AI providers to respect "machine-readable opt-outs" for Text and Data Mining (TDM).
-*   **Strictness:** Unlike the US, the EU does not have a broad "Fair Use" doctrine. This suggests that a "Non-AI" license might be significantly more enforceable in Europe than in the US.
+**Content Type**: 💭 Opinion & Commentary
+**Language**: en
 
-### 4. Practicality and "Bad Actors"
-*   **VC-funded Startups:** Users pointed out that well-funded AI startups often follow a "move fast and break things" ethos, likely ignoring such licenses until they are large enough to handle the legal fallout.
-*   **The "Good Actor" Paradox:** Respectful researchers and non-profits—the very people developers might *want* to help—would likely be the only ones to actually follow the restriction, while large corporations would ignore it.
+**Scores**: Signal:4/5 | Depth:3/5 | Unique:5/5 | Practical:2/5 | Anti-Hype:5/5
+**Main Journal**: 80/100 | **Annex Potential**: 84/100 | **Overall**: 78/100
 
-### 5. Alternative Solutions
-*   **Copyleft (GPL):** Some suggested using the GPL (General Public License). While it doesn't explicitly ban AI training, the "derivative work" clause creates a legal quagmire that might scare AI companies away from using the code.
-*   **Poison Pills:** Instead of legal text, some suggested technical "poisoning" (like Nightshade or Glaze) to make data unusable or damaging to a model’s training process.
-*   **New Frameworks:** Some suggested moving away from "Open Source" entirely toward "Fair Source" or "Ethical Source" models that explicitly address modern issues like AI scraping.
+**Topics**: [[Open Source License, AI Training, Copyright Law, EU AI Act, Developer Rights]]
 
-### Philosophical Divide
-The thread reveals a split in the developer community: 
-*   **The Pragmatists:** View their code being in an AI as a form of digital "immortality" or a way to help the tools they use every day. 
-*   **The Protectionists:** View AI training as "theft" of years of human labor and intellectual property, used to create commercial products that may eventually replace the original creators.
+Hacker Newsで話題となっているこのスレッドは、広く普及しているMITライセンスに「著作権者の事前の許可なく、AIモデルのトレーニング、ファインチューニング、または検証のために本ソフトウェアを使用してはならない」という制限条項を追加した「MIT Non-AI License」の提案を発端としている。投稿者は、開発者が長年費やしてきた成果が無断でAIに供給され、最終的に非公開の商用AIによってオープンソースプロジェクトが「レガシー」化され、代替されてしまう未来への危機感を表明している。この動きは、オープンソースがテック企業の利益追求のための「無料の学習素材」として搾取されているという、現在の開発者コミュニティに広がる不満を象徴している。
+
+議論の焦点は、まず「オープンソースの定義」にある。多くのエンジニアは、特定の目的（この場合はAI学習）を制限するライセンスは、オープンソース定義（OSD）の「利用分野に対する差別の禁止」に違反すると指摘している。そのため、「MIT」という名称を冠したまま制限を加えることは、ライセンスの透明性を損ない、法的な混乱を招く「プロプライエタリなライセンス」への変質であると批判されている。
+
+さらに、法的な実効性についても深い議論が交わされている。米国における「フェアユース」の解釈や、欧州の「AI法（AI Act）」および「デジタル単一市場（DSM）指令」におけるテキスト・データマイニング（TDM）のオプトアウト規定など、法域によってライセンスの強制力が異なる可能性が示唆された。特にEU圏では、機械読み取り可能な形式で権利を留保することがAIプロバイダーへの対抗手段になり得るとの分析がある。一方で、AI学習が既存の著作権法における「複製」に当たるのかという根本的な問いや、学習されたモデルからのコード生成が「二次的著作物」と見なされるかという法的グレーゾーンが、このライセンスの強制を困難にしている。
+
+エンジニアにとってこの議論が重要なのは、単なる法律論に留まらず、AI時代のソフトウェア開発における「社会契約」の崩壊を浮き彫りにしているからだ。名前を残す（アトリビューション）というMITライセンスの最小限の要求すら、LLMの重みの中に埋没してしまう現状に対し、開発者がどのようにして自分のコードの価値を守り、持続可能なエコシステムを維持すべきかという本質的な問いを投げかけている。
