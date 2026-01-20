@@ -36,6 +36,9 @@ Move completed journal files:
 # Archive main and annex journals with proper naming
 mv workdesk/weekly_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/00_weekly_journal_YYYY_MM_DD.md
 mv workdesk/annex_journal_YYYY_MM_DD.md journals/YYYY-MM-DD/01_annex_journal_YYYY_MM_DD.md
+
+# Archive editorial plan
+mv workdesk/editorial_plan_YYYY_MM_DD.md journals/YYYY-MM-DD/50_editorial_plan_YYYY_MM_DD.md
 ```
 
 ### 3. Archive Source Materials
@@ -149,6 +152,7 @@ journals/YYYY-MM-DD/
 ├── 00_weekly_journal_YYYY_MM_DD.md   # Main journal (publication-ready)
 ├── 01_annex_journal_YYYY_MM_DD.md    # Annex journal (publication-ready)
 ├── 02_omitted_summaries.md           # Summaries of omitted articles
+├── 50_editorial_plan_YYYY_MM_DD.md   # Editorial theme planning document
 ├── 99_unified_summaries.md           # All unified summaries (complete reference)
 ├── sources/
 │   ├── sources.md                    # Original source list with all URLs
