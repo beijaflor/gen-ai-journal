@@ -137,6 +137,7 @@ export async function upsertSummaryMetadata(
 
   const { data, error } = await supabase
     .from('summary_metadata')
+    // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue with complex generic types
     .upsert(upsertPayload as any, {
       onConflict: 'summary_id,url',
     })

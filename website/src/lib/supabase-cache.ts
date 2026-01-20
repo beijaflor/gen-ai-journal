@@ -13,7 +13,7 @@ type CacheKey = string; // Format: "{summary_id}:{url}"
 type MetadataCache = Map<CacheKey, SummaryMetadata>;
 
 // Global cache (persists during entire build)
-let journalCache: Map<string, MetadataCache> = new Map();
+const journalCache: Map<string, MetadataCache> = new Map();
 let workdeskCache: MetadataCache | null = null;
 let isWorkdeskCacheLoaded = false;
 
