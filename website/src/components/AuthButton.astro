@@ -1,5 +1,4 @@
 ---
-import { withBase } from '@/utils/base-path';
 ---
 
 <div id="auth-button" class="auth-button">
@@ -46,7 +45,7 @@ import { withBase } from '@/utils/base-path';
 
   // Listen for auth state changes
   import('@/lib/supabase').then(({ supabase }) => {
-    supabase.auth.onAuthStateChange((event, session) => {
+    supabase.auth.onAuthStateChange((_event, _session) => {
       updateAuthButton();
     });
   });

@@ -1,5 +1,4 @@
 import {
-  supabase,
   type SummaryMetadata,
   getJournalMetadata,
   getWorkdeskMetadata,

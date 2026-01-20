@@ -121,18 +121,25 @@ export async function upsertSummaryMetadata(
 ): Promise<SummaryMetadata | null> {
   const user = await getCurrentUser();
 
+  // Build upsert payload, excluding fields that shouldn't be manually set
+  const upsertPayload = {
+    summary_id: metadata.summary_id,
+    url: metadata.url,
+    journal_date: metadata.journal_date ?? null,
+    annex_flag: metadata.annex_flag ?? false,
+    standout_flag: metadata.standout_flag ?? false,
+    omit_flag: metadata.omit_flag ?? false,
+    upvote_flag: metadata.upvote_flag ?? false,
+    downvote_flag: metadata.downvote_flag ?? false,
+    ai_scores: metadata.ai_scores ?? null,
+    updated_by: user?.id || null,
+  };
+
   const { data, error } = await supabase
     .from('summary_metadata')
-    .upsert(
-      {
-        ...metadata,
-        updated_at: new Date().toISOString(),
-        updated_by: user?.id || null,
-      },
-      {
-        onConflict: 'summary_id,url',
-      }
-    )
+    .upsert(upsertPayload as any, {
+      onConflict: 'summary_id,url',
+    })
     .select()
     .single();
 
