@@ -1,19 +1,21 @@
-# MetaBrainzブログ記事の要約
+## AI スクレイパーによるサービス障害への対応
 
-## 主な問題
-MetaBrainzチームがAI企業による悪質なデータスクレイピングと戦っています。これらの企業は「robots.txtを無視して」MusicBrainzのページを一つずつ読み込んでいます。
+https://blog.metabrainz.org/2025/12/11/we-cant-have-nice-things-because-of-ai-scrapers/
 
-## AI スクレイパーが引き起こす主な課題
+**Original Title**: We can't have nice things… because of AI scrapers
 
-1. **サーバー過負荷**: 数百年かかるペースでのページ単位アクセスがサーバーを圧倒
-2. **正規ユーザーへの影響**: 合法的なアクセス利用者がサイトにアクセスできなくなる
-3. **ListenBrainz への拡大**: APIエンドポイントも標的に
+MetaBrainz財団がAI企業による過度なウェブスクレイピングからのサービス保護のため、複数のAPI endpoint へのアクセス制限を実施しました。
 
-## 対策と含意
+**Content Type**: 📢 News & Announcements
+**Language**: en
 
-MetaBrainzは以下の制限を導入:
-- メタデータ検索APIに認証トークン要求
-- ListenBrainz Labs APIエンドポイント削除
-- LB Radioにログイン要求
+**Scores**: Signal:4/5 | Depth:3/5 | Unique:4/5 | Practical:4/5 | Anti-Hype:5/5
+**Main Journal**: 72/100 | **Annex Potential**: 65/100 | **Overall**: 70/100
 
-この状況は、オープンなインターネットサービスの持続可能性に対する脅威を示しており、利用者体験と無制限アクセスの間の緊張関係を浮き彫りにしています。
+**Topics**: [[AI スクレイピング, API セキュリティ, サービス過負荷対策, robots.txt 無視問題, ListenBrainz 保護]]
+
+MetaBrainz 財団は、AI 企業による無分別なウェブスクレイピング攻撃に対抗するため、ListenBrainz の複数 API endpoint に認証要件を追加しました。同財団は「robots.txt を無視」し、1 ページずつ読み込むAIスクレイパーが「何百年かかる」ような非効率な方法でサーバーを過負荷にしていると説明しています。
+
+具体的な対応として、メタデータ検索 API は Authorization トークンの送信を必須化し、Labs API 端点を廃止、LB Radio 機能をログイン必須に変更しました。この急な変更は「サービスを許容可能なレベルで維持する」ために必要だったと述べられています。
+
+このケースは、AI 開発企業の多くが公開データセットを見落とし、自動化された低効率なスクレイピングに頼る傾向を浮き彫りにしています。コミュニティからは「公開データベースのダウンロードを推奨する robots.txt 標準」や「ポイズニング手法」など、防御手段についての提案も寄せられています。
