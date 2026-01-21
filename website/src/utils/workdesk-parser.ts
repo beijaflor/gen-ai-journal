@@ -319,7 +319,7 @@ export function getAllWorkdeskSummaries(): WorkdeskSummary[] {
       .filter((summary): summary is WorkdeskSummary => summary !== null);
 
     // Sort by ID number (descending order: 122, 121, 120...)
-    summaries.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+    summaries.sort((a, b) => parseInt(b.id, 10) - parseInt(a.id, 10));
 
     return summaries;
   } catch (error) {

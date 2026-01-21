@@ -143,6 +143,42 @@ rmdir workdesk/summaries 2>/dev/null || true
 # Keep workdesk directory for next cycle
 ```
 
+### 6. Mark Summaries as Published (Supabase)
+
+If using the Supabase admin system, mark workdesk summaries as published:
+
+```bash
+# Mark all workdesk summaries as published with the journal date
+uv run scripts/mark_published.py YYYY-MM-DD
+```
+
+**What this does:**
+- Updates `journal_date` field in Supabase for all workdesk summaries
+- Transitions summaries from draft (workdesk) to published state
+- Enables public read access via Row Level Security (RLS) policy
+- Preserves summary URLs: `/journals/YYYY-MM-DD/001/` remains valid
+
+**When to run:**
+- After archiving journals to `journals/YYYY-MM-DD/`
+- Before creating pull request (STEP_12)
+- Only run once per journal publication
+
+**Example:**
+```bash
+uv run scripts/mark_published.py 2025-12-27
+# Prompts: "Mark 42 workdesk summaries as published for 2025-12-27? [y/N]"
+# Type: y
+# Output: "✅ Marked 42 summaries as published"
+```
+
+**Prerequisites:**
+- `scripts/.env` configured with `SUPABASE_URL` and `SUPABASE_SERVICE_KEY`
+- Python dependencies installed: `pip install -r requirements.txt`
+
+See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for troubleshooting.
+
+---
+
 ## Final Archive Structure
 
 The completed archive should look like:

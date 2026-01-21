@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { withBase } from '@/utils/base-path';
-import { getAllJournalDates, parseJournalByDate } from '@/utils/content-parser';
-import { getAllWorkdeskSummaries } from '@/utils/workdesk-parser';
+import { getAllJournalDates, parseJournalByDate, type JournalArchive, type SummaryEntry } from '@/utils/content-parser';
+import { getAllWorkdeskSummaries, type WorkdeskSummary } from '@/utils/workdesk-parser';
 import { getNextJournalDate, isNextJournalDate, getJournalStatusLabel, formatJapaneseDateDisplay } from '@/utils/journal-date';
 import { formatDomainDisplay } from '@/utils/domain-display';
+import SummaryEditControls from '@/components/admin/SummaryEditControls.astro';
 import '@/styles/global.css';
 import DOMPurify from 'dompurify';
 import { JSDOM } from 'jsdom';
@@ -56,8 +57,29 @@ function sanitizeContent(content: string): string {
   return purify.sanitize(content);
 }
 
-let summary: any = null;
-let journalContext: any = null;
+// Union type for both published and workdesk summaries
+type UnifiedSummary = SummaryEntry | (WorkdeskSummary & {
+  id: string;
+  title: string;
+  content: string;
+  excerpt: string;
+  sourceUrl: string;
+  domain: string;
+  wordCount: number;
+  readingTime: number;
+  slug: string;
+  date: string;
+  filename: string;
+  status: 'omitted';
+  modifiedAt?: Date;
+  scores?: Record<string, number>;
+  topics?: string[];
+  language?: 'ja' | 'en' | 'other';
+  originalTitle?: string;
+});
+
+let summary: UnifiedSummary | null = null;
+let journalContext: JournalArchive | null = null;
 let isWorkdeskSummary = false;
 let status: 'published' | 'draft' = 'published'; // Default to published
 
@@ -119,9 +141,9 @@ const description = summary.excerpt;
 
 // Navigation data
 const allWorkdeskSummaries = isWorkdeskSummary ? getAllWorkdeskSummaries() : [];
-const currentIndex = isWorkdeskSummary 
+const currentIndex = isWorkdeskSummary
   ? allWorkdeskSummaries.findIndex(s => s.id === id)
-  : journalContext?.summaries.findIndex((s: any) => s.id === id) ?? -1;
+  : journalContext?.summaries.findIndex((s: SummaryEntry) => s.id === id) ?? -1;
 
 const prevSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? allWorkdeskSummaries.length - 1 : (journalContext?.summaries.length ?? 0) - 1)
   ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex + 1] : journalContext?.summaries[currentIndex + 1])
@@ -319,6 +341,9 @@ const nextSummary = currentIndex > 0
             </div>
           </div>
         )}
+
+        {/* Admin edit controls (only visible when authenticated) */}
+        <SummaryEditControls summary={getAllWorkdeskSummaries().find(s => s.id === id)!} />
       </aside>
     )}
   </div>
