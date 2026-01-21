@@ -34,186 +34,186 @@
 - [x] 028. https://claude.com/blog/cowork-research-preview
 - [x] 029. https://geospy.ai/blog/locating-a-photo-of-a-vehicle-in-30-seconds-with-geospy
 - [x] 030. https://qiita.com/Blacpans/items/4c65053a3db0e3bb6ecb
-- [ ] 031. https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/
-- [ ] 032. https://www.publickey1.jp/blog/26/ecaiuniversal_commerce_protocolucp.html
-- [ ] 033. https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/
-- [ ] 034. https://www.oreilly.com/radar/mcp-sampling-when-your-tools-need-to-think/
-- [ ] 035. https://www.nngroup.com/articles/humanizing-ai/
-- [ ] 036. https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/
-- [ ] 037. https://vercel.com/blog/how-mux-shipped-durable-video-workflows-with-their-mux-ai-sdk
-- [ ] 038. https://vercel.com/changelog/streamdown-v2
-- [ ] 039. https://uxdesign.cc/a-green-book-for-ai-apps-7d32cc173eb0
-- [ ] 040. https://www.dbreunig.com/2026/01/08/a-software-library-with-no-code.html
-- [ ] 041. https://simonwillison.net/2026/Jan/12/claude-cowork/
-- [ ] 042. https://consciousdigital.org/chatgpt-health-is-a-marketplace-guess-who-is-the-product/
-- [ ] 043. https://cameron.stream/blog/econ-seminar/
-- [ ] 044. https://dri.es/ai-is-a-business-model-stress-test
-- [ ] 045. https://hollisrobbinsanecdotal.substack.com/p/llm-poetry-and-the-greatness-question
-- [ ] 046. https://www.theregister.com/2026/01/11/industry_insiders_seek_to_poison/
-- [ ] 047. https://www.lesswrong.com/posts/u6Lacc7wx4yYkBQ3r/insights-into-claude-opus-4-5-from-pokemon
-- [ ] 048. https://github.com/ImJasonH/ImJasonH/blob/main/articles/llm-programming-language.md
-- [ ] 049. https://xcancel.com/tobi/status/2010438500609663110
-- [ ] 050. https://archaeologist.dev/artifacts/anthropic
-- [ ] 051. https://github.com/haykgrigo3/TimeCapsuleLLM
-- [ ] 052. https://news.ycombinator.com/item?id=46591100
-- [ ] 053. https://cy.md/opencode-rce/
-- [ ] 054. https://www.promptarmor.com/resources/superhuman-ai-exfiltrates-emails
-- [ ] 055. https://www.nature.com/articles/d41586-025-04150-w
-- [ ] 056. https://azukiazusa.dev/blog/agent-browser-for-ai-agents/
-- [ ] 057. https://qiita.com/har1101/items/f9a12f86ff642f8920c3
-- [ ] 058. https://qiita.com/imp555sti/items/249aa797e0c884d04d81
-- [ ] 059. https://qiita.com/mellowlaunch/items/a08b3caf76a05310c5ab
-- [ ] 060. https://qiita.com/yuki_2020/items/1cf0721b201896d87ec3
-- [ ] 061. https://qiita.com/yoshiwatanabe/items/3c8feaaa1ac4d7288b09
-- [ ] 062. https://qiita.com/sadabon444/items/811175c3695a5971b09d
-- [ ] 063. https://qiita.com/kousueke/items/22092fb43022162c0f5e
-- [ ] 064. https://qiita.com/NaokiIshimura/items/e2291914bcba94ada6b2
-- [ ] 065. https://qiita.com/Takenoko4594/items/4387782ff8310427048e
-- [ ] 066. https://qiita.com/CookieBox26/items/bdbfb3e00b181203788f
-- [ ] 067. https://zenn.dev/tkithrta/articles/6e36550369a65e
-- [ ] 068. https://zenn.dev/kok1eeeee/articles/lfm25-local-llm-trial
-- [ ] 069. https://zenn.dev/datum_studio/articles/66433cc3e99c7e
-- [ ] 070. https://zenn.dev/nuits_jp/articles/2026-01-11-opencode-third-party-provider
-- [ ] 071. https://zenn.dev/hjpotter1/articles/5614c3d33de1f3
-- [ ] 072. https://zenn.dev/moneyforward/articles/c43cc7eff468a7
-- [ ] 073. https://zenn.dev/zenhance/articles/oh-my-opencode-intro
-- [ ] 074. https://vibium.com/
-- [ ] 075. https://www.youtube.com/watch?v=D8GOeCFFby4
-- [ ] 076. https://github.com/vercel-labs/agent-browser
-- [ ] 077. https://www.nikkei.com/article/DGXZQOGN060HL0W6A100C2000000/
-- [ ] 078. https://toyokeizai.net/articles/-/924998?display=b
-- [ ] 079. https://newswitch.jp/p/48020
-- [ ] 080. https://news.web.nhk/newsweb/na/na-k10015022901000
-- [ ] 081. https://k5trismegistus.me/entry/2025/12/31/084034
-- [ ] 082. https://anond.hatelabo.jp/20260109180913
-- [ ] 083. https://gigazine.net/news/20260109-wan-video-ai-ios-android/
-- [ ] 084. https://www.oreilly.com/radar/the-problem-with-ai-artists/
-- [ ] 085. https://github.blog/security/community-powered-security-with-ai-an-open-source-framework-for-security-research/
-- [ ] 086. https://vercel.com/changelog/ai-voice-elements
-- [ ] 087. https://workos.com/blog/beyond-request-response-mcp
-- [ ] 088. https://json-render.dev/
-- [ ] 089. https://www.jeffgeerling.com/blog/2026/raspberry-pi-ai-hat-2/
-- [ ] 090. https://github.com/tldraw/tldraw/issues/7695
-- [ ] 091. https://tech.legalforce.co.jp/entry/building-an-ai-native-engineering-team
-- [ ] 092. https://developers.cyberagent.co.jp/blog/archives/61630/
-- [ ] 093. https://www.sanity.io/blog/content-agent-days-of-work-in-one-conversation
-- [ ] 094. https://firebase.blog/posts/2026/01/continuous-improvement/
-- [ ] 095. https://addyosmani.com/blog/good-spec/
-- [ ] 096. https://www.joinformal.com/blog/using-proxies-to-hide-secrets-from-claude-code/
-- [ ] 097. https://blog.vllm.ai/2025/12/17/large-scale-serving.html
-- [ ] 098. https://builders.ramp.com/post/why-we-built-our-background-agent
-- [ ] 099. https://news.ycombinator.com/item?id=46611348
-- [ ] 100. https://rys.io/en/181.html
-- [ ] 101. https://tomrenner.com/posts/400-year-confidence-trick/
-- [ ] 102. https://thoughtfuleng.substack.com/p/junior-developers-in-the-age-of-ai
-- [ ] 103. https://spencerdailey.com/2026/01/14/openais-sora-sits-at-71-in-the-us-app-store-and-100-on-play-store-what-just-happened/
-- [ ] 104. https://harmonynotetaker.ai/
-- [ ] 105. https://news.ycombinator.com/item?id=46620990
-- [ ] 106. https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files
-- [ ] 107. https://carette.xyz/posts/influentists/
-- [ ] 108. https://tech.layerx.co.jp/entry/2026/01/14/125350
-- [ ] 109. https://qiita.com/yniji/items/a287336353a0a582bfb5
-- [ ] 110. https://qiita.com/fujisho1216/items/90b34ef9abd910deb6ac
-- [ ] 111. https://qiita.com/hiropon122/items/c130168ca3fc0f1f6aaa
-- [ ] 112. https://qiita.com/araidon/items/a82e6ee4b530684035b8
-- [ ] 113. https://zenn.dev/lnest_knowledge/articles/0b763e2ccf1bd8
-- [ ] 114. https://zenn.dev/innovation/articles/ce0f4b638fd86c
-- [ ] 115. https://zenn.dev/plusone/articles/8255b1f428232c
-- [ ] 116. https://zenn.dev/microsoft/articles/github_copilot_advanced
-- [ ] 117. https://www.businessinsider.jp/article/2601-ai-tools-are-deskilling-workers-philosophy-professor/
-- [ ] 118. https://www.reddit.com/r/singularity/comments/1q6vaxj/how_we_used_gpt52_to_solve_an_erdos_problem/?show=original
-- [ ] 119. https://www.lifehacker.jp/article/2601-matome-chatgpt-gemini/
-- [ ] 120. https://k-tai.watch.impress.co.jp/docs/news/2077924.html
-- [ ] 121. https://pc.watch.impress.co.jp/docs/news/2077704.html
-- [ ] 122. https://clubberia.com/ja/news/11907-Bandcamp-AI/
-- [ ] 123. https://atmarkit.itmedia.co.jp/ait/articles/2601/15/news016.html
-- [ ] 124. https://zenn.dev/cureapp/articles/c5016035a7d53d
-- [ ] 125. https://zenn.dev/sijiaoh/articles/377abc8cc28f92
-- [ ] 126. https://zenn.dev/hololab/articles/28f84cfcdfea9d
-- [ ] 127. https://spyglass.org/vocal-computing-ai/
-- [ ] 128. https://intelligence-curse.ai/
-- [ ] 129. https://github.blog/ai-and-ml/github-copilot/building-an-agentic-memory-system-for-github-copilot/
-- [ ] 130. https://vercel.com/changelog/on-demand-vercel-agent-code-reviews
-- [ ] 131. https://goodpatch.com/blog/2026-01-satto-memo
-- [ ] 132. https://geohot.github.io//blog/jekyll/update/2026/01/15/anthropic-huge-mistake.html
-- [ ] 133. https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/
-- [ ] 134. https://news.ycombinator.com/item?id=46626639
-- [ ] 135. https://github.com/eigent-ai/eigent
-- [ ] 136. https://aitoolarchive.com/
-- [ ] 137. https://www.approachwithalacrity.com/claude-ne/
-- [ ] 138. https://arstechnica.com/tech-policy/2026/01/chatgpt-wrote-goodnight-moon-suicide-lullaby-for-man-who-later-killed-himself/
-- [ ] 139. https://qiita.com/ittan555/items/eaf304b3ce0b1703e9a3
-- [ ] 140. https://zenn.dev/hataluck/articles/d347a5011cf71e
-- [ ] 141. https://zenn.dev/hideyuki_toyama/articles/horizontal-guard-rails
-- [ ] 142. https://zenn.dev/akino/articles/4e1b949594b6ca
-- [ ] 143. https://zenn.dev/medirom_tech/articles/b12ba64c57d413
-- [ ] 144. https://zenn.dev/ttks/articles/1ff66cc3f89d2a
-- [ ] 145. https://zenn.dev/owayo/articles/63d325934ba0de
-- [ ] 146. https://zenn.dev/hiropon22/articles/599e0d5a7517b3
-- [ ] 147. https://zenn.dev/aws_japan/articles/3753f8eb32cca7
-- [ ] 148. https://www.varonis.com/blog/reprompt
-- [ ] 149. https://speakerdeck.com/izumin5210/ai-agents-in-production-1
-- [ ] 150. https://zenn.dev/ryuzaburo/articles/412aa18cff58bc
-- [ ] 151. https://codezine.jp/news/detail/22977
-- [ ] 152. https://github.blog/changelog/2026-01-14-copilot-sdk-in-technical-preview/
-- [ ] 153. https://www.technologyreview.jp/s/375765/meet-the-new-biologists-treating-llms-like-aliens/
-- [ ] 154. https://note.com/timakin/n/n943a6e1d5216
-- [ ] 155. https://japan.cnet.com/article/35242717/
-- [ ] 156. https://github.com/cosinusalpha/webctl
-- [ ] 157. https://github.com/vercel-labs/agent-skills
-- [ ] 158. https://www.itmedia.co.jp/aiplus/articles/2601/14/news113.html
-- [ ] 159. https://zenn.dev/ichi_h/articles/9b66a6af67c697
-- [ ] 160. https://i9wa4.github.io/blog/2026-01-08-why-dotfiles-still-matters-to-me.html
-- [ ] 161. https://helentech.jp/news-80791/
-- [ ] 162. https://www.nikkei.com/article/DGXZQOUC144FO0U6A110C2000000/
-- [ ] 163. https://developers.googleblog.com/a-guide-to-fine-tuning-functiongemma/
-- [ ] 164. https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-aurimas-griciunas-on-ai-teams-and-reliable-ai-systems/
-- [ ] 165. https://staticmade.com/2026/01/14/humanity-as-differentiator/
-- [ ] 166. https://uxdesign.cc/designers-as-agent-orchestrators-what-i-learnt-shipping-with-ai-in-2025-3b1bf30048a3
-- [ ] 167. https://tante.cc/2026/01/15/software-as-fast-fashion/
-- [ ] 168. https://uxdesign.cc/beyond-chat-8-core-user-intents-driving-ai-interaction-4f573685938a
-- [ ] 169. https://simonwillison.net/2026/Jan/15/open-responses/
-- [ ] 170. https://simonwillison.net/2026/Jan/16/chatgpt-ads/
-- [ ] 171. https://www.uafsunstar.com/news/student-eats-ai-art-in-uaf-gallery-protest-arrested
-- [ ] 172. https://xtech.nikkei.com/atcl/nxt/column/18/00001/11413/
-- [ ] 173. https://zenn.dev/elyza/articles/f9dd010e895a34
-- [ ] 174. https://zenn.dev/aws_japan/articles/003-bedrock-agentcore-policy-fgac
-- [ ] 175. https://qiita.com/nakamasato/items/42750ee5dfa0f138a337
-- [ ] 176. https://qiita.com/RioooJackpot/items/fee34d0e7dc119ed01a0
-- [ ] 177. https://qiita.com/GeneLab_999/items/c32b31733ecb21edc1d8
-- [ ] 178. https://qiita.com/k2a_Y4a/items/b46a545a96e9150c457f
-- [ ] 179. https://qiita.com/moritalous/items/062b06bed7b4a08f5fad
-- [ ] 180. https://qiita.com/kiura30/items/9aa5033ff691487475e8
-- [ ] 181. https://qiita.com/araom/items/cbdcda9c0251d66f252c
-- [ ] 182. https://www.mintlify.com/blog/install-md-standard-for-llm-executable-installation
-- [ ] 183. https://anond.hatelabo.jp/20260116152714
-- [ ] 184. https://www.itmedia.co.jp/aiplus/articles/2601/16/news073.html
-- [ ] 185. https://japan.cnet.com/article/35242792/
-- [ ] 186. https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
-- [ ] 187. https://chatgpt.com/ja-JP/translate/
-- [ ] 188. https://iret.media/182841
-- [ ] 189. https://iret.media/182536
-- [ ] 190. https://www.openresponses.org/
-- [ ] 191. https://www.itmedia.co.jp/aiplus/articles/2601/16/news067.html
-- [ ] 192. https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/
-- [ ] 193. https://vercel.com/blog/use-perplexity-web-search-with-vercel-ai-gateway
-- [ ] 194. https://simonwillison.net/2026/Jan/15/the-design-implementation-of-sprites/
-- [ ] 195. https://agentultra.com/blog/how-i-learned-everything-i-know/index.html
-- [ ] 196. https://nowokay.hatenablog.com/entry/2026/01/10/174213
-- [ ] 197. https://dev.classmethod.jp/articles/mp3gain-resuscitation-mp3rgain/
-- [ ] 198. https://nealle-dev.hatenablog.com/entry/2026/01/08/103135
-- [ ] 199. https://gigazine.net/news/20260111-vibium/
-- [ ] 200. https://youmind.com/ja-JP/nano-banana-pro-prompts
-- [ ] 201. https://marioottmann.com/articles/claude-code-customization-guide
-- [ ] 202. https://izanami.dev/post/47b08b5a-6e1c-4fb0-8342-06b8e627450a
-- [ ] 203. https://zenn.dev/tonkotsuboy_com/scraps/01b829b7e7c157
-- [ ] 204. https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard
-- [ ] 205. https://www.cnbc.com/2026/01/16/open-ai-chatgpt-ads-us.html
-- [ ] 206. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5870623
-- [ ] 207. https://news.yahoo.co.jp/articles/8a433d6194f0d5cddf8939f62bb08561646ccb62
-- [ ] 208. https://note.com/kodai_maehata744/n/n7f135b700b72
-- [ ] 209. https://zenn.dev/shinpr_p/articles/d0e6b387558e97
-- [ ] 210. https://note.com/uezo/n/n364a8c0e0bfd
-- [ ] 211. https://www.theguardian.com/business/2026/jan/14/mckinsey-graduates-ai-chatbot-recruitment-consultancy
-- [ ] 212. https://www.nature.com/articles/s41591-025-04133-4
+- [x] 031. https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/
+- [x] 032. https://www.publickey1.jp/blog/26/ecaiuniversal_commerce_protocolucp.html
+- [x] 033. https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/
+- [x] 034. https://www.oreilly.com/radar/mcp-sampling-when-your-tools-need-to-think/
+- [x] 035. https://www.nngroup.com/articles/humanizing-ai/
+- [x] 036. https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/
+- [x] 037. https://vercel.com/blog/how-mux-shipped-durable-video-workflows-with-their-mux-ai-sdk
+- [x] 038. https://vercel.com/changelog/streamdown-v2
+- [x] 039. https://uxdesign.cc/a-green-book-for-ai-apps-7d32cc173eb0
+- [x] 040. https://www.dbreunig.com/2026/01/08/a-software-library-with-no-code.html
+- [x] 041. https://simonwillison.net/2026/Jan/12/claude-cowork/
+- [x] 042. https://consciousdigital.org/chatgpt-health-is-a-marketplace-guess-who-is-the-product/
+- [x] 043. https://cameron.stream/blog/econ-seminar/
+- [x] 044. https://dri.es/ai-is-a-business-model-stress-test
+- [x] 045. https://hollisrobbinsanecdotal.substack.com/p/llm-poetry-and-the-greatness-question
+- [x] 046. https://www.theregister.com/2026/01/11/industry_insiders_seek_to_poison/
+- [x] 047. https://www.lesswrong.com/posts/u6Lacc7wx4yYkBQ3r/insights-into-claude-opus-4-5-from-pokemon
+- [x] 048. https://github.com/ImJasonH/ImJasonH/blob/main/articles/llm-programming-language.md
+- [x] 049. https://xcancel.com/tobi/status/2010438500609663110
+- [x] 050. https://archaeologist.dev/artifacts/anthropic
+- [x] 051. https://github.com/haykgrigo3/TimeCapsuleLLM
+- [x] 052. https://news.ycombinator.com/item?id=46591100
+- [x] 053. https://cy.md/opencode-rce/
+- [x] 054. https://www.promptarmor.com/resources/superhuman-ai-exfiltrates-emails
+- [x] 055. https://www.nature.com/articles/d41586-025-04150-w
+- [x] 056. https://azukiazusa.dev/blog/agent-browser-for-ai-agents/
+- [x] 057. https://qiita.com/har1101/items/f9a12f86ff642f8920c3
+- [x] 058. https://qiita.com/imp555sti/items/249aa797e0c884d04d81
+- [x] 059. https://qiita.com/mellowlaunch/items/a08b3caf76a05310c5ab
+- [x] 060. https://qiita.com/yuki_2020/items/1cf0721b201896d87ec3
+- [x] 061. https://qiita.com/yoshiwatanabe/items/3c8feaaa1ac4d7288b09
+- [x] 062. https://qiita.com/sadabon444/items/811175c3695a5971b09d
+- [x] 063. https://qiita.com/kousueke/items/22092fb43022162c0f5e
+- [x] 064. https://qiita.com/NaokiIshimura/items/e2291914bcba94ada6b2
+- [x] 065. https://qiita.com/Takenoko4594/items/4387782ff8310427048e
+- [x] 066. https://qiita.com/CookieBox26/items/bdbfb3e00b181203788f
+- [x] 067. https://zenn.dev/tkithrta/articles/6e36550369a65e
+- [x] 068. https://zenn.dev/kok1eeeee/articles/lfm25-local-llm-trial
+- [x] 069. https://zenn.dev/datum_studio/articles/66433cc3e99c7e
+- [x] 070. https://zenn.dev/nuits_jp/articles/2026-01-11-opencode-third-party-provider
+- [x] 071. https://zenn.dev/hjpotter1/articles/5614c3d33de1f3
+- [x] 072. https://zenn.dev/moneyforward/articles/c43cc7eff468a7
+- [x] 073. https://zenn.dev/zenhance/articles/oh-my-opencode-intro
+- [x] 074. https://vibium.com/
+- [x] 075. https://www.youtube.com/watch?v=D8GOeCFFby4
+- [x] 076. https://github.com/vercel-labs/agent-browser
+- [x] 077. https://www.nikkei.com/article/DGXZQOGN060HL0W6A100C2000000/
+- [x] 078. https://toyokeizai.net/articles/-/924998?display=b
+- [x] 079. https://newswitch.jp/p/48020
+- [x] 080. https://news.web.nhk/newsweb/na/na-k10015022901000
+- [x] 081. https://k5trismegistus.me/entry/2025/12/31/084034
+- [x] 082. https://anond.hatelabo.jp/20260109180913
+- [x] 083. https://gigazine.net/news/20260109-wan-video-ai-ios-android/
+- [x] 084. https://www.oreilly.com/radar/the-problem-with-ai-artists/
+- [x] 085. https://github.blog/security/community-powered-security-with-ai-an-open-source-framework-for-security-research/
+- [x] 086. https://vercel.com/changelog/ai-voice-elements
+- [x] 087. https://workos.com/blog/beyond-request-response-mcp
+- [x] 088. https://json-render.dev/
+- [x] 089. https://www.jeffgeerling.com/blog/2026/raspberry-pi-ai-hat-2/
+- [x] 090. https://github.com/tldraw/tldraw/issues/7695
+- [x] 091. https://tech.legalforce.co.jp/entry/building-an-ai-native-engineering-team
+- [x] 092. https://developers.cyberagent.co.jp/blog/archives/61630/
+- [x] 093. https://www.sanity.io/blog/content-agent-days-of-work-in-one-conversation
+- [x] 094. https://firebase.blog/posts/2026/01/continuous-improvement/
+- [x] 095. https://addyosmani.com/blog/good-spec/
+- [x] 096. https://www.joinformal.com/blog/using-proxies-to-hide-secrets-from-claude-code/
+- [x] 097. https://blog.vllm.ai/2025/12/17/large-scale-serving.html
+- [x] 098. https://builders.ramp.com/post/why-we-built-our-background-agent
+- [x] 099. https://news.ycombinator.com/item?id=46611348
+- [x] 100. https://rys.io/en/181.html
+- [x] 101. https://tomrenner.com/posts/400-year-confidence-trick/
+- [x] 102. https://thoughtfuleng.substack.com/p/junior-developers-in-the-age-of-ai
+- [x] 103. https://spencerdailey.com/2026/01/14/openais-sora-sits-at-71-in-the-us-app-store-and-100-on-play-store-what-just-happened/
+- [x] 104. https://harmonynotetaker.ai/
+- [x] 105. https://news.ycombinator.com/item?id=46620990
+- [x] 106. https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files
+- [x] 107. https://carette.xyz/posts/influentists/
+- [x] 108. https://tech.layerx.co.jp/entry/2026/01/14/125350
+- [x] 109. https://qiita.com/yniji/items/a287336353a0a582bfb5
+- [x] 110. https://qiita.com/fujisho1216/items/90b34ef9abd910deb6ac
+- [x] 111. https://qiita.com/hiropon122/items/c130168ca3fc0f1f6aaa
+- [x] 112. https://qiita.com/araidon/items/a82e6ee4b530684035b8
+- [x] 113. https://zenn.dev/lnest_knowledge/articles/0b763e2ccf1bd8
+- [x] 114. https://zenn.dev/innovation/articles/ce0f4b638fd86c
+- [x] 115. https://zenn.dev/plusone/articles/8255b1f428232c
+- [x] 116. https://zenn.dev/microsoft/articles/github_copilot_advanced
+- [x] 117. https://www.businessinsider.jp/article/2601-ai-tools-are-deskilling-workers-philosophy-professor/
+- [x] 118. https://www.reddit.com/r/singularity/comments/1q6vaxj/how_we_used_gpt52_to_solve_an_erdos_problem/?show=original
+- [x] 119. https://www.lifehacker.jp/article/2601-matome-chatgpt-gemini/
+- [x] 120. https://k-tai.watch.impress.co.jp/docs/news/2077924.html
+- [x] 121. https://pc.watch.impress.co.jp/docs/news/2077704.html
+- [x] 122. https://clubberia.com/ja/news/11907-Bandcamp-AI/
+- [x] 123. https://atmarkit.itmedia.co.jp/ait/articles/2601/15/news016.html
+- [x] 124. https://zenn.dev/cureapp/articles/c5016035a7d53d
+- [x] 125. https://zenn.dev/sijiaoh/articles/377abc8cc28f92
+- [x] 126. https://zenn.dev/hololab/articles/28f84cfcdfea9d
+- [x] 127. https://spyglass.org/vocal-computing-ai/
+- [x] 128. https://intelligence-curse.ai/
+- [x] 129. https://github.blog/ai-and-ml/github-copilot/building-an-agentic-memory-system-for-github-copilot/
+- [x] 130. https://vercel.com/changelog/on-demand-vercel-agent-code-reviews
+- [x] 131. https://goodpatch.com/blog/2026-01-satto-memo
+- [x] 132. https://geohot.github.io//blog/jekyll/update/2026/01/15/anthropic-huge-mistake.html
+- [x] 133. https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/
+- [x] 134. https://news.ycombinator.com/item?id=46626639
+- [x] 135. https://github.com/eigent-ai/eigent
+- [x] 136. https://aitoolarchive.com/
+- [x] 137. https://www.approachwithalacrity.com/claude-ne/
+- [x] 138. https://arstechnica.com/tech-policy/2026/01/chatgpt-wrote-goodnight-moon-suicide-lullaby-for-man-who-later-killed-himself/
+- [x] 139. https://qiita.com/ittan555/items/eaf304b3ce0b1703e9a3
+- [x] 140. https://zenn.dev/hataluck/articles/d347a5011cf71e
+- [x] 141. https://zenn.dev/hideyuki_toyama/articles/horizontal-guard-rails
+- [x] 142. https://zenn.dev/akino/articles/4e1b949594b6ca
+- [x] 143. https://zenn.dev/medirom_tech/articles/b12ba64c57d413
+- [x] 144. https://zenn.dev/ttks/articles/1ff66cc3f89d2a
+- [x] 145. https://zenn.dev/owayo/articles/63d325934ba0de
+- [x] 146. https://zenn.dev/hiropon22/articles/599e0d5a7517b3
+- [x] 147. https://zenn.dev/aws_japan/articles/3753f8eb32cca7
+- [x] 148. https://www.varonis.com/blog/reprompt
+- [x] 149. https://speakerdeck.com/izumin5210/ai-agents-in-production-1
+- [x] 150. https://zenn.dev/ryuzaburo/articles/412aa18cff58bc
+- [x] 151. https://codezine.jp/news/detail/22977
+- [x] 152. https://github.blog/changelog/2026-01-14-copilot-sdk-in-technical-preview/
+- [x] 153. https://www.technologyreview.jp/s/375765/meet-the-new-biologists-treating-llms-like-aliens/
+- [x] 154. https://note.com/timakin/n/n943a6e1d5216
+- [x] 155. https://japan.cnet.com/article/35242717/
+- [x] 156. https://github.com/cosinusalpha/webctl
+- [x] 157. https://github.com/vercel-labs/agent-skills
+- [x] 158. https://www.itmedia.co.jp/aiplus/articles/2601/14/news113.html
+- [x] 159. https://zenn.dev/ichi_h/articles/9b66a6af67c697
+- [x] 160. https://i9wa4.github.io/blog/2026-01-08-why-dotfiles-still-matters-to-me.html
+- [x] 161. https://helentech.jp/news-80791/
+- [x] 162. https://www.nikkei.com/article/DGXZQOUC144FO0U6A110C2000000/
+- [x] 163. https://developers.googleblog.com/a-guide-to-fine-tuning-functiongemma/
+- [x] 164. https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-aurimas-griciunas-on-ai-teams-and-reliable-ai-systems/
+- [x] 165. https://staticmade.com/2026/01/14/humanity-as-differentiator/
+- [x] 166. https://uxdesign.cc/designers-as-agent-orchestrators-what-i-learnt-shipping-with-ai-in-2025-3b1bf30048a3
+- [x] 167. https://tante.cc/2026/01/15/software-as-fast-fashion/
+- [x] 168. https://uxdesign.cc/beyond-chat-8-core-user-intents-driving-ai-interaction-4f573685938a
+- [x] 169. https://simonwillison.net/2026/Jan/15/open-responses/
+- [x] 170. https://simonwillison.net/2026/Jan/16/chatgpt-ads/
+- [x] 171. https://www.uafsunstar.com/news/student-eats-ai-art-in-uaf-gallery-protest-arrested
+- [x] 172. https://xtech.nikkei.com/atcl/nxt/column/18/00001/11413/
+- [x] 173. https://zenn.dev/elyza/articles/f9dd010e895a34
+- [x] 174. https://zenn.dev/aws_japan/articles/003-bedrock-agentcore-policy-fgac
+- [x] 175. https://qiita.com/nakamasato/items/42750ee5dfa0f138a337
+- [x] 176. https://qiita.com/RioooJackpot/items/fee34d0e7dc119ed01a0
+- [x] 177. https://qiita.com/GeneLab_999/items/c32b31733ecb21edc1d8
+- [x] 178. https://qiita.com/k2a_Y4a/items/b46a545a96e9150c457f
+- [x] 179. https://qiita.com/moritalous/items/062b06bed7b4a08f5fad
+- [x] 180. https://qiita.com/kiura30/items/9aa5033ff691487475e8
+- [x] 181. https://qiita.com/araom/items/cbdcda9c0251d66f252c
+- [x] 182. https://www.mintlify.com/blog/install-md-standard-for-llm-executable-installation
+- [x] 183. https://anond.hatelabo.jp/20260116152714
+- [x] 184. https://www.itmedia.co.jp/aiplus/articles/2601/16/news073.html
+- [x] 185. https://japan.cnet.com/article/35242792/
+- [x] 186. https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+- [x] 187. https://chatgpt.com/ja-JP/translate/
+- [x] 188. https://iret.media/182841
+- [x] 189. https://iret.media/182536
+- [x] 190. https://www.openresponses.org/
+- [x] 191. https://www.itmedia.co.jp/aiplus/articles/2601/16/news067.html
+- [x] 192. https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/
+- [x] 193. https://vercel.com/blog/use-perplexity-web-search-with-vercel-ai-gateway
+- [x] 194. https://simonwillison.net/2026/Jan/15/the-design-implementation-of-sprites/
+- [x] 195. https://agentultra.com/blog/how-i-learned-everything-i-know/index.html
+- [x] 196. https://nowokay.hatenablog.com/entry/2026/01/10/174213
+- [x] 197. https://dev.classmethod.jp/articles/mp3gain-resuscitation-mp3rgain/
+- [x] 198. https://nealle-dev.hatenablog.com/entry/2026/01/08/103135
+- [x] 199. https://gigazine.net/news/20260111-vibium/
+- [x] 200. https://youmind.com/ja-JP/nano-banana-pro-prompts
+- [x] 201. https://marioottmann.com/articles/claude-code-customization-guide
+- [x] 202. https://izanami.dev/post/47b08b5a-6e1c-4fb0-8342-06b8e627450a
+- [x] 203. https://zenn.dev/tonkotsuboy_com/scraps/01b829b7e7c157
+- [x] 204. https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard
+- [x] 205. https://www.cnbc.com/2026/01/16/open-ai-chatgpt-ads-us.html
+- [x] 206. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5870623
+- [x] 207. https://news.yahoo.co.jp/articles/8a433d6194f0d5cddf8939f62bb08561646ccb62
+- [x] 208. https://note.com/kodai_maehata744/n/n7f135b700b72
+- [x] 209. https://zenn.dev/shinpr_p/articles/d0e6b387558e97
+- [x] 210. https://note.com/uezo/n/n364a8c0e0bfd
+- [x] 211. https://www.theguardian.com/business/2026/jan/14/mckinsey-graduates-ai-chatbot-recruitment-consultancy
+- [x] 212. https://www.nature.com/articles/s41591-025-04133-4
 
