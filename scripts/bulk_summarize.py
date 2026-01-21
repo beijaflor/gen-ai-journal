@@ -100,6 +100,32 @@ def mark_as_checked(sources_file: Path, url_id: int) -> bool:
         print(f"ERROR marking as checked: {e}")
         return False
 
+def get_existing_summary_ids(summaries_dir: Path) -> set[int]:
+    """Get set of IDs for which summary files exist."""
+    summary_files = summaries_dir.glob('[0-9][0-9][0-9]_*.md')
+    return {int(f.stem[:3]) for f in summary_files}
+
+def sync_checkboxes_for_existing_summaries(sources_file: Path, summaries_dir: Path) -> int:
+    """Mark all URLs as checked if their summary files exist."""
+    existing_ids = get_existing_summary_ids(summaries_dir)
+    updated_count = 0
+
+    with open(sources_file, 'r') as f:
+        content = f.read()
+
+    for url_id in sorted(existing_ids):
+        pattern = rf'-\s*\[\s*\]\s*{url_id:03d}\.'
+        replacement = f'- [x] {url_id:03d}.'
+
+        if re.search(pattern, content):
+            content = re.sub(pattern, replacement, content)
+            updated_count += 1
+
+    with open(sources_file, 'w') as f:
+        f.write(content)
+
+    return updated_count
+
 def main():
     parser = argparse.ArgumentParser(
         description='Bulk generate summaries for unchecked URLs in sources.md'
@@ -114,6 +140,11 @@ def main():
         action='store_true',
         help='Verbose output'
     )
+    parser.add_argument(
+        '--sync-checkboxes',
+        action='store_true',
+        help='Sync checkbox state with existing summary files'
+    )
 
     args = parser.parse_args()
 
@@ -122,6 +153,22 @@ def main():
     sources_file = base_dir / 'workdesk' / 'sources.md'
     summaries_dir = base_dir / 'workdesk' / 'summaries'
     summaries_dir.mkdir(exist_ok=True, parents=True)
+
+    # Handle --sync-checkboxes mode
+    if args.sync_checkboxes:
+        print("=" * 60)
+        print("SYNCING CHECKBOXES WITH EXISTING SUMMARIES")
+        print("=" * 60)
+
+        existing_ids = get_existing_summary_ids(summaries_dir)
+        print(f"\nFound {len(existing_ids)} existing summary files")
+        if existing_ids:
+            print(f"ID range: {min(existing_ids):03d} - {max(existing_ids):03d}\n")
+
+        updated_count = sync_checkboxes_for_existing_summaries(sources_file, summaries_dir)
+
+        print(f"✓ Marked {updated_count} URLs as checked\n")
+        sys.exit(0)
 
     # Find unchecked URLs
     print("Scanning workdesk/sources.md for unchecked URLs...")
