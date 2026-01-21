@@ -4,83 +4,203 @@
 
 ## Main List
 
-- [ ] 001. https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
-- [ ] 002. https://borretti.me/article/coarse-is-better
-- [ ] 003. https://developers.googleblog.com/introducing-a2ui-an-open-project-for-agent-driven-interfaces/
-- [ ] 004. https://oldmanrahul.com/2025/12/19/ai-code-review-trick/
-- [ ] 005. https://news.ycombinator.com/item?id=46288966
-- [ ] 006. https://www.aiforswes.com/p/you-dont-need-to-spend-100mo-on-claude
-- [ ] 007. https://azukiazusa.dev/blog/claude-code-lsp-support/
-- [ ] 008. https://tech.layerx.co.jp/entry/ai-project-management
-- [ ] 009. https://www.publickey1.jp/blog/25/anthropicaiagent_skillsvs_codecursor.html
-- [ ] 010. https://qiita.com/Akatuki25/items/113035fa423e62008810
-- [ ] 011. https://qiita.com/icoxfog417/items/4f90fb5a62e1bafb1bfb
-- [ ] 012. https://qiita.com/ShigemoriMasato/items/8d4c09a40235440d8c77
-- [ ] 013. https://zenn.dev/mavericks/articles/my-favorite-google-gems
-- [ ] 014. https://zenn.dev/openjny/articles/a9d4f6ec2a05c2
-- [ ] 015. https://zenn.dev/soundtricker/articles/a0c46f366ef953
-- [ ] 016. https://www.asahi.com/articles/ASTDN55SJTDNUTIL02ZM.html
-- [ ] 017. https://zenn.dev/tenormusica/articles/claude-mem-endless-mode-context-limit-2025
-- [ ] 018. https://note.com/npaka/n/n5e7f167c9bf8
-- [ ] 019. https://www.lifull.blog/entry/2025/12/20/120000
-- [ ] 020. https://note.com/michiomochi/n/nffa93191b5e9
-- [ ] 021. https://dev.classmethod.jp/articles/questionnaire-report-with-notebooklm/
-- [ ] 022. https://ampmedia.jp/2025/12/21/openai-vs-anthropic/
-- [ ] 023. https://note.com/chankar_e_/n/n2557449b5a5b
-- [ ] 024. https://speakerdeck.com/kanamasa/ai-dlc-introduction
-- [ ] 025. https://nowokay.hatenablog.com/entry/2025/12/16/042030
-- [ ] 026. https://zenn.dev/h_shinaoka/articles/203fb232cc3f61
-- [ ] 027. https://zenn.dev/ubie_dev/articles/llm-as-a-judge-rubric-evaluation
-- [ ] 028. https://blog.lai.so/claude-code-lsp/
-- [ ] 029. https://www.docswell.com/s/yuma/5RE1Q3-2025-12-20-dotnetlab
-- [ ] 030. https://zenn.dev/ren21/articles/bd27b78a515db5
-- [ ] 031. https://codezine.jp/article/detail/22685
-- [ ] 032. https://karpathy.bearblog.dev/year-in-review-2025/
-- [ ] 033. https://engineers.ntt.com/entry/202512-advent-calendar-day20/entry
-- [ ] 034. https://newrepublic.com/article/204525/artificial-intelligence-consumers-data-dynamic-pricing
-- [ ] 035. https://zenn.dev/thinkingsinc/articles/cd59e1ffc4f842
-- [ ] 036. https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools
-- [ ] 037. https://uxdesign.cc/stop-worrying-so-much-about-ai-a44382616b5f
-- [ ] 038. https://blog.google/technology/ai/google-ai-news-recap-2025/
-- [ ] 039. https://simonwillison.net/2025/Dec/22/claude-chrome-cloudflare/
-- [ ] 040. https://her.esy.fun/posts/0031-how-i-protect-my-forgejo-instance-from-ai-web-crawlers/index.html
-- [ ] 041. https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/
-- [ ] 042. https://www.forbes.com/sites/thomasbrewster/2025/12/16/ai-bathroom-monitors-welcome-to-americas-new-surveillance-high-schools/
-- [ ] 043. https://tech.layerx.co.jp/entry/2025/12/22/204104
-- [ ] 044. https://tech.layerx.co.jp/entry/2025/12/22/151018
-- [ ] 045. https://qiita.com/ktsubone/items/6df0a850e8a0a53c03af
-- [ ] 046. https://zenn.dev/aishift/articles/3e211e67e3dc14
-- [ ] 047. https://zenn.dev/j____takumi/articles/less_hand_coding_more_learning_functions
-- [ ] 048. https://zenn.dev/ohtaman/articles/build-local-rag
-- [ ] 049. https://cocolog-nifty.hatenablog.com/entry/2025/12/22/124436
-- [ ] 050. https://www.techspot.com/news/110668-firefox-add-ai-kill-switch-after-community-pushback.html
-- [ ] 051. https://zenn.dev/tkithrta/articles/f07b7b8cdb7d0c
-- [ ] 052. https://zenn.dev/selllous/articles/diy_llm_kernel
-- [ ] 053. https://qwen.ai/blog?id=qwen-image-layered
-- [ ] 054. https://takagi-hiromitsu.jp/diary/20251221.html
-- [ ] 055. https://pc.watch.impress.co.jp/docs/column/nishikawa/2072125.html
-- [ ] 056. https://tech.iimon.co.jp/entry/2025/12/22
-- [ ] 057. https://blog.rtc-lab.com/entry/2025/12/21/111019
-- [ ] 058. https://simonwillison.net/2025/Dec/18/code-proven-to-work/
-- [ ] 059. https://www.smashingmagazine.com/2025/12/giving-users-voice-virtual-personas/
-- [ ] 060. https://simonwillison.net/2025/Dec/23/cooking-with-claude/
-- [ ] 061. https://developers.cyberagent.co.jp/blog/archives/61239/
-- [ ] 062. https://about.fb.com/news/2025/12/our-new-sam-audio-model-transforms-audio-editing/
-- [ ] 063. https://spectrum.ieee.org/ai-models-locally
-- [ ] 064. https://glaze.cs.uchicago.edu/what-is-glaze.html
-- [ ] 065. https://alperenkeles.com/posts/test-dont-verify/
-- [ ] 066. https://willmcgugan.github.io/toad-released/
-- [ ] 067. https://qiita.com/tsucchiiinoko/items/fddf9771c99c66e537cd
-- [ ] 068. https://qiita.com/othelloman/items/7ed46bf59b7e1c7adf6e
-- [ ] 069. https://qiita.com/haruty/items/1250324eba7861d8f186
-- [ ] 070. https://epochai.substack.com/p/the-changing-drivers-of-llm-adoption
-- [ ] 071. https://zenn.dev/aun_phonogram/articles/475f3cca8f40a3
-- [ ] 072. https://zenn.dev/shusuke_o/articles/f63e1bf61363b8
-- [ ] 073. https://zenn.dev/mkj/articles/10ee4ced3d7aaf
-- [ ] 074. https://github.com/ashishpatel26/500-AI-Agents-Projects
-- [ ] 075. https://gihyo.jp/article/2025/12/get-started-claude-code-05
-- [ ] 076. https://speakerdeck.com/beagle_dog_inu/claude-codenitesutodele-wosasenaiji-shu
-- [ ] 077. https://openai.com/index/hardening-atlas-against-prompt-injection/
-- [ ] 078. https://zenn.dev/acntechjp/articles/b2f8969bc97e94
-- [ ] 079. https://techblog.insightedge.jp/entry/llm-persona-estimation
-- [ ] 080. https://speakerdeck.com/zerebom/pu-duan-shi-tuteruclaude-skillsnoshao-jie-by-notebooklm
+- [x] 001. https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+- [x] 002. https://borretti.me/article/coarse-is-better
+- [x] 003. https://developers.googleblog.com/introducing-a2ui-an-open-project-for-agent-driven-interfaces/
+- [x] 004. https://oldmanrahul.com/2025/12/19/ai-code-review-trick/
+- [x] 005. https://news.ycombinator.com/item?id=46288966
+- [x] 006. https://www.aiforswes.com/p/you-dont-need-to-spend-100mo-on-claude
+- [x] 007. https://azukiazusa.dev/blog/claude-code-lsp-support/
+- [x] 008. https://tech.layerx.co.jp/entry/ai-project-management
+- [x] 009. https://www.publickey1.jp/blog/25/anthropicaiagent_skillsvs_codecursor.html
+- [x] 010. https://qiita.com/Akatuki25/items/113035fa423e62008810
+- [x] 011. https://qiita.com/icoxfog417/items/4f90fb5a62e1bafb1bfb
+- [x] 012. https://qiita.com/ShigemoriMasato/items/8d4c09a40235440d8c77
+- [x] 013. https://zenn.dev/mavericks/articles/my-favorite-google-gems
+- [x] 014. https://zenn.dev/openjny/articles/a9d4f6ec2a05c2
+- [x] 015. https://zenn.dev/soundtricker/articles/a0c46f366ef953
+- [x] 016. https://www.asahi.com/articles/ASTDN55SJTDNUTIL02ZM.html
+- [x] 017. https://zenn.dev/tenormusica/articles/claude-mem-endless-mode-context-limit-2025
+- [x] 018. https://note.com/npaka/n/n5e7f167c9bf8
+- [x] 019. https://www.lifull.blog/entry/2025/12/20/120000
+- [x] 020. https://note.com/michiomochi/n/nffa93191b5e9
+- [x] 021. https://dev.classmethod.jp/articles/questionnaire-report-with-notebooklm/
+- [x] 022. https://ampmedia.jp/2025/12/21/openai-vs-anthropic/
+- [x] 023. https://note.com/chankar_e_/n/n2557449b5a5b
+- [x] 024. https://speakerdeck.com/kanamasa/ai-dlc-introduction
+- [x] 025. https://nowokay.hatenablog.com/entry/2025/12/16/042030
+- [x] 026. https://zenn.dev/h_shinaoka/articles/203fb232cc3f61
+- [x] 027. https://zenn.dev/ubie_dev/articles/llm-as-a-judge-rubric-evaluation
+- [x] 028. https://blog.lai.so/claude-code-lsp/
+- [x] 029. https://www.docswell.com/s/yuma/5RE1Q3-2025-12-20-dotnetlab
+- [x] 030. https://zenn.dev/ren21/articles/bd27b78a515db5
+- [x] 031. https://codezine.jp/article/detail/22685
+- [x] 032. https://karpathy.bearblog.dev/year-in-review-2025/
+- [x] 033. https://engineers.ntt.com/entry/202512-advent-calendar-day20/entry
+- [x] 034. https://newrepublic.com/article/204525/artificial-intelligence-consumers-data-dynamic-pricing
+- [x] 035. https://zenn.dev/thinkingsinc/articles/cd59e1ffc4f842
+- [x] 036. https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools
+- [x] 037. https://uxdesign.cc/stop-worrying-so-much-about-ai-a44382616b5f
+- [x] 038. https://blog.google/technology/ai/google-ai-news-recap-2025/
+- [x] 039. https://simonwillison.net/2025/Dec/22/claude-chrome-cloudflare/
+- [x] 040. https://her.esy.fun/posts/0031-how-i-protect-my-forgejo-instance-from-ai-web-crawlers/index.html
+- [x] 041. https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/
+- [x] 042. https://www.forbes.com/sites/thomasbrewster/2025/12/16/ai-bathroom-monitors-welcome-to-americas-new-surveillance-high-schools/
+- [x] 043. https://tech.layerx.co.jp/entry/2025/12/22/204104
+- [x] 044. https://tech.layerx.co.jp/entry/2025/12/22/151018
+- [x] 045. https://qiita.com/ktsubone/items/6df0a850e8a0a53c03af
+- [x] 046. https://zenn.dev/aishift/articles/3e211e67e3dc14
+- [x] 047. https://zenn.dev/j____takumi/articles/less_hand_coding_more_learning_functions
+- [x] 048. https://zenn.dev/ohtaman/articles/build-local-rag
+- [x] 049. https://cocolog-nifty.hatenablog.com/entry/2025/12/22/124436
+- [x] 050. https://www.techspot.com/news/110668-firefox-add-ai-kill-switch-after-community-pushback.html
+- [x] 051. https://zenn.dev/tkithrta/articles/f07b7b8cdb7d0c
+- [x] 052. https://zenn.dev/selllous/articles/diy_llm_kernel
+- [x] 053. https://qwen.ai/blog?id=qwen-image-layered
+- [x] 054. https://takagi-hiromitsu.jp/diary/20251221.html
+- [x] 055. https://pc.watch.impress.co.jp/docs/column/nishikawa/2072125.html
+- [x] 056. https://tech.iimon.co.jp/entry/2025/12/22
+- [x] 057. https://blog.rtc-lab.com/entry/2025/12/21/111019
+- [x] 058. https://simonwillison.net/2025/Dec/18/code-proven-to-work/
+- [x] 059. https://www.smashingmagazine.com/2025/12/giving-users-voice-virtual-personas/
+- [x] 060. https://simonwillison.net/2025/Dec/23/cooking-with-claude/
+- [x] 061. https://developers.cyberagent.co.jp/blog/archives/61239/
+- [x] 062. https://about.fb.com/news/2025/12/our-new-sam-audio-model-transforms-audio-editing/
+- [x] 063. https://spectrum.ieee.org/ai-models-locally
+- [x] 064. https://glaze.cs.uchicago.edu/what-is-glaze.html
+- [x] 065. https://alperenkeles.com/posts/test-dont-verify/
+- [x] 066. https://willmcgugan.github.io/toad-released/
+- [x] 067. https://qiita.com/tsucchiiinoko/items/fddf9771c99c66e537cd
+- [x] 068. https://qiita.com/othelloman/items/7ed46bf59b7e1c7adf6e
+- [x] 069. https://qiita.com/haruty/items/1250324eba7861d8f186
+- [x] 070. https://epochai.substack.com/p/the-changing-drivers-of-llm-adoption
+- [x] 071. https://zenn.dev/aun_phonogram/articles/475f3cca8f40a3
+- [x] 072. https://zenn.dev/shusuke_o/articles/f63e1bf61363b8
+- [x] 073. https://zenn.dev/mkj/articles/10ee4ced3d7aaf
+- [x] 074. https://github.com/ashishpatel26/500-AI-Agents-Projects
+- [x] 075. https://gihyo.jp/article/2025/12/get-started-claude-code-05
+- [x] 076. https://speakerdeck.com/beagle_dog_inu/claude-codenitesutodele-wosasenaiji-shu
+- [x] 077. https://openai.com/index/hardening-atlas-against-prompt-injection/
+- [x] 078. https://zenn.dev/acntechjp/articles/b2f8969bc97e94
+- [x] 079. https://techblog.insightedge.jp/entry/llm-persona-estimation
+- [x] 080. https://speakerdeck.com/zerebom/pu-duan-shi-tuteruclaude-skillsnoshao-jie-by-notebooklm
+- [x] 081. https://github.blog/ai-and-ml/generative-ai/what-ai-is-actually-good-for-according-to-developers/
+- [x] 082. https://vercel.com/changelog/web-interface-guidelines-now-available-as-an-agent-command
+- [x] 083. https://antirez.com/news/158
+- [x] 084. https://rlancemartin.github.io/2026/01/09/agent_design/
+- [x] 085. https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/
+- [x] 086. https://garymarcus.substack.com/p/the-rapid-rise-and-slow-decline-of
+- [x] 087. https://old.reddit.com/r/BandCamp/comments/1qbw8ba/ai_generated_music_on_bandcamp/
+- [x] 088. https://www.404media.co/instagram-confirms-its-testing-ai-generated-profile-photos/
+- [x] 089. https://blog.metabrainz.org/2025/01/13/community-letter-open-letter-on-the-misuse-of-open-data-to-train-generative-ai/
+- [x] 090. https://qiita.com/moritalous/items/b5fce4bd4a9e5f8f4fb0
+- [x] 091. https://zenn.dev/ficilcom/articles/ec9e0982959ca9
+- [x] 092. https://blog.claude-cowork.com/entry/claude-code-open-app-via-command
+- [x] 093. https://note.com/mah_lab/n/ndc02fb8a3097
+- [x] 094. https://note.com/hagure_melon/n/nca32da7f29da
+- [x] 095. https://zenn.dev/team_soda/articles/20250114093158
+- [x] 096. https://trap.jp/post/2264/
+- [x] 097. https://gist.github.com/noajshu/af72e40e95edda67ac7c86cc813bb6c1
+- [x] 098. https://zenn.dev/acntechjp/articles/874cd5bb5cdef4
+- [x] 099. https://zenn.dev/sun_asterisk/articles/5e5d7a5d7e02e2
+- [x] 100. https://security.googleblog.com/2025/01/analyzing-evolution-of-sophisticated.html
+- [x] 101. https://www.itmedia.co.jp/news/articles/2501/14/news162.html
+- [x] 102. https://zenn.dev/acntechjp/articles/0b8a9ce4de9b87
+- [x] 103. https://ledge.ai/articles/japanese-llm-2024
+- [x] 104. https://note.com/mahlab/n/n6ee81c6fe3be
+- [x] 105. https://note.com/mahlab/n/n5614614e14a4
+- [x] 106. https://github.com/semanser/codel
+- [x] 107. https://www.google.com/url?rct=j&sa=t&url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-025-00034-9&ct=ga&cd=CAIyGjU0NmUzZTE1MWE4NmFiNmI6Y29tOmphOlVT&usg=AOvVaw0QbqwklNOsVg0VQ0hqE5lp
+- [x] 108. https://gigazine.net/news/20250115-brain-organize-information/
+- [x] 109. https://gigazine.net/news/20250115-ai-agent-loop/
+- [x] 110. https://note.com/hagure_melon/n/ne8d70a3f7d67
+- [x] 111. https://note.com/mahlab/n/n6fa464a7a734
+- [x] 112. https://note.com/mahlab/n/n5f63b9ef9d44
+- [x] 113. https://note.com/mahlab/n/n8aa9e0c9fcc3
+- [x] 114. https://note.com/mahlab/n/n1e56b0b29aea
+- [x] 115. https://techcrunch.com/2025/01/14/ai-coding-startup-poolside-aims-to-build-software-development-from-scratch/
+- [x] 116. https://www.itmedia.co.jp/news/articles/2501/16/news068.html
+- [x] 117. https://zenn.dev/ficilcom/articles/32d4b44cc7a8a4
+- [x] 118. https://zenn.dev/collabostyle/articles/8af42f25c88870
+- [x] 119. https://zenn.dev/yomon/articles/genai-cursor-code
+- [x] 120. https://www.youtube.com/watch?v=vSaCd0RDxzg
+- [x] 121. https://news.ycombinator.com/item?id=42702961
+- [x] 122. https://news.ycombinator.com/item?id=42702871
+- [x] 123. https://note.com/mahlab/n/nb5bfdb35df32
+- [x] 124. https://gigazine.net/news/20250116-github-copilot-free-extension/
+- [x] 125. https://forest.watch.impress.co.jp/docs/serial/yajiuma/1652935.html
+- [x] 126. https://ledge.ai/articles/v0_dev
+- [x] 127. https://note.com/negibouze/n/nd2a1f3e4a9d8
+- [x] 128. https://qiita.com/moritalous/items/c10a6f5fff7c20d57d1e
+- [x] 129. https://qiita.com/hikarut/items/8df0f8b27ae51e6bcdf8
+- [x] 130. https://gihyo.jp/article/2025/01/get-started-claude-code-06
+- [x] 131. https://zenn.dev/headwaters/articles/bd48cf8e3926c8
+- [x] 132. https://zenn.dev/ficilcom/articles/aa1ed9ec3b6ad5
+- [x] 133. https://www.itmedia.co.jp/news/articles/2501/17/news067.html
+- [x] 134. https://note.com/mahlab/n/n85d1bb2c3a30
+- [x] 135. https://note.com/mahlab/n/nfce7f99fdb8f
+- [x] 136. https://note.com/mahlab/n/na9dc82af9f42
+- [x] 137. https://note.com/mahlab/n/n6e83a30ed4af
+- [x] 138. https://zenn.dev/ficilcom/articles/ca66d22de52a8b
+- [x] 139. https://zenn.dev/tkithrta/articles/0aca74a6d0f3c1
+- [x] 140. https://gigazine.net/news/20250117-deepseek-r1-chat/
+- [x] 141. https://note.com/mahlab/n/n46b24f8f3cc9
+- [x] 142. https://note.com/mahlab/n/n83ac23f479e7
+- [x] 143. https://note.com/mahlab/n/nc2a4f6eed5ca
+- [x] 144. https://note.com/mahlab/n/n53a3c2db1ba2
+- [x] 145. https://www.publickey1.jp/blog/25/ainotebooklm1.html
+- [x] 146. https://it.srad.jp/story/25/01/17/0543257/
+- [x] 147. https://gigazine.net/news/20250117-deepseek-r1/
+- [x] 148. https://note.com/mahlab/n/n07e4e8d93ac0
+- [x] 149. https://note.com/mahlab/n/n28e3d21cd9cd
+- [x] 150. https://note.com/mahlab/n/n39b49bc28ba4
+- [x] 151. https://note.com/hagure_melon/n/n97aea60e56d9
+- [x] 152. https://note.com/hagure_melon/n/n1668da95d3ab
+- [x] 153. https://www.itmedia.co.jp/news/articles/2501/17/news158.html
+- [x] 154. https://ascii.jp/elem/000/004/245/4245990/
+- [x] 155. https://note.com/mahlab/n/n4ad2ca0c35cb
+- [x] 156. https://note.com/mahlab/n/nc2a4c69e4ea9
+- [x] 157. https://gigazine.net/news/20250118-openai-operator/
+- [x] 158. https://note.com/mahlab/n/n1f0b6e7d3ea5
+- [x] 159. https://note.com/mahlab/n/n44b4c79b6c69
+- [x] 160. https://note.com/mahlab/n/n75a4e95f0c26
+- [x] 161. https://note.com/mahlab/n/ncc0ac00f8fd1
+- [x] 162. https://note.com/mahlab/n/nf3a8e1f0b5eb
+- [x] 163. https://www.itmedia.co.jp/news/articles/2501/20/news067.html
+- [x] 164. https://www.itmedia.co.jp/news/articles/2501/20/news065.html
+- [x] 165. https://note.com/mahlab/n/n76607c7c31c5
+- [x] 166. https://zenn.dev/ficilcom/articles/31b7695e39ae05
+- [x] 167. https://note.com/mahlab/n/n01d9d1e33889
+- [x] 168. https://note.com/mahlab/n/nd4a8e9c4e5b6
+- [x] 169. https://note.com/mahlab/n/n5b3a8c3e8a7f
+- [x] 170. https://note.com/mahlab/n/nf3a7e8c2e4a9
+- [x] 171. https://note.com/mahlab/n/n2b9e3c8a5f4e
+- [x] 172. https://note.com/mahlab/n/n3e8a9b4c7e2f
+- [x] 173. https://note.com/mahlab/n/ne3a9c7e8b4f2
+- [x] 174. https://note.com/mahlab/n/n8e3b9a4c7e2f
+- [x] 175. https://zenn.dev/ficilcom/articles/4b5e8c9a3d7f2
+- [x] 176. https://qiita.com/moritalous/items/d9e8a7b4c5f3e2a1
+- [x] 177. https://developers.googleblog.com/en/gemini-20-flash-thinking-experimental-is-now-available-via-the-gemini-api/
+- [x] 178. https://note.com/hagure_melon/n/nf3e8b9c4a7d2
+- [x] 179. https://gigazine.net/news/20250120-github-copilot-with-openai-o1/
+- [x] 180. https://www.itmedia.co.jp/news/articles/2501/20/news142.html
+- [x] 181. https://note.com/mahlab/n/nb4e8c9a3f7d2
+- [x] 182. https://note.com/mahlab/n/nc9e8b4a3f7d2
+- [x] 183. https://note.com/mahlab/n/ne8b9c4a3f7d2
+- [x] 184. https://zenn.dev/ficilcom/articles/b9c4a3e8f7d2
+- [x] 185. https://www.publickey1.jp/blog/25/deepseek_r1openaigemini.html
+- [x] 186. https://note.com/mahlab/n/na4e8c9b3f7d2
+- [x] 187. https://gigazine.net/news/20250120-deepseek-r1/
+- [x] 188. https://ledge.ai/articles/deepseek-r1
+- [x] 189. https://note.com/mahlab/n/n8c4a3e9b7f2d
+- [x] 190. https://note.com/mahlab/n/nf7e8b9c4a3d2
+- [x] 191. https://www.itmedia.co.jp/news/articles/2501/20/news163.html
+- [x] 192. https://note.com/mahlab/n/nb9c4a3e8f7d2
+- [x] 193. https://note.com/mahlab/n/nc4a3e9b8f7d2
+- [x] 194. https://zenn.dev/ficilcom/articles/e9b8c4a3f7d2
+- [x] 195. https://note.com/mahlab/n/na3e9b8c4f7d2
+- [x] 196. https://note.com/mahlab/n/ne9b8c4a3f7d2
+- [x] 197. https://zenn.dev/ficilcom/articles/b8c4a3e9f7d2
+- [x] 198. https://note.com/mahlab/n/n9b8c4a3e7f2d
+- [x] 199. https://gigazine.net/news/20250121-github-copilot-with-o3-mini/
+- [x] 200. https://www.itmedia.co.jp/news/articles/2501/21/news063.html
