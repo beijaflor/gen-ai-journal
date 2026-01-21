@@ -1,5 +1,14 @@
-## ERROR: Unable to fetch content
+# YouTube動画 - AI/コーディング関連コンテンツ
 
-https://www.youtube.com/watch?v=D8GOeCFFby4
+## 概要
+動画コンテンツのため、自動要約は利用できません。
 
-**Error**: No content available to summarize.
+**URL**: https://www.youtube.com/watch?v=D8GOeCFFby4
+
+## メモ
+- YouTube動画は直接テキスト抽出ができないため、手動レビューが必要
+- 動画のタイトル、説明、トランスクリプトを確認して内容を評価してください
+- AI/生成AI/コーディングに関連する可能性が高い動画
+
+## 推奨アクション
+キュレーション時に動画を視聴し、ジャーナルに含める価値があるか判断してください。

@@ -1,5 +1,16 @@
-## ERROR: Unable to fetch content
+# NHKニュース記事 - アクセス不可
 
-https://news.web.nhk/newsweb/na/na-k10015022901000
+## 状況
+NHKのニュースウェブサイトの記事ですが、コンテンツを取得できませんでした。
 
-**Error**: No content available to summarize.
+**URL**: https://news.web.nhk/newsweb/na/na-k10015022901000
+
+## 考えられる理由
+- 記事が削除または移動された
+- URLが期限切れ
+- アクセス制限がかかっている
+
+## 推奨アクション
+- NHKニュースサイトで関連記事を検索
+- アーカイブサービス（Internet Archive等）で確認
+- 同じトピックを扱う別のソースを検討

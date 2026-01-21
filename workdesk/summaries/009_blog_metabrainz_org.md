@@ -1,5 +1,19 @@
-## ERROR: Unable to fetch content
+# MetaBrainzブログ記事の要約
 
-https://blog.metabrainz.org/2025/12/11/we-cant-have-nice-things-because-of-ai-scrapers/
+## 主な問題
+MetaBrainzチームがAI企業による悪質なデータスクレイピングと戦っています。これらの企業は「robots.txtを無視して」MusicBrainzのページを一つずつ読み込んでいます。
 
-**Error**: No content available to summarize.
+## AI スクレイパーが引き起こす主な課題
+
+1. **サーバー過負荷**: 数百年かかるペースでのページ単位アクセスがサーバーを圧倒
+2. **正規ユーザーへの影響**: 合法的なアクセス利用者がサイトにアクセスできなくなる
+3. **ListenBrainz への拡大**: APIエンドポイントも標的に
+
+## 対策と含意
+
+MetaBrainzは以下の制限を導入:
+- メタデータ検索APIに認証トークン要求
+- ListenBrainz Labs APIエンドポイント削除
+- LB Radioにログイン要求
+
+この状況は、オープンなインターネットサービスの持続可能性に対する脅威を示しており、利用者体験と無制限アクセスの間の緊張関係を浮き彫りにしています。
