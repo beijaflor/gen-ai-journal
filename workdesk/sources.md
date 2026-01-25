@@ -217,4 +217,5 @@
 - [x] 211. https://www.theguardian.com/business/2026/jan/14/mckinsey-graduates-ai-chatbot-recruitment-consultancy
 - [x] 212. https://www.nature.com/articles/s41591-025-04133-4
 - [x] 213. https://designlab.com/advanced/vibe-coding-course
+- [x] 214. https://zenn.dev/neoai/articles/segmentation
 
