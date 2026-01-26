@@ -52,7 +52,6 @@
 - [x] 046. https://www.theregister.com/2026/01/11/industry_insiders_seek_to_poison/
 - [x] 047. https://www.lesswrong.com/posts/u6Lacc7wx4yYkBQ3r/insights-into-claude-opus-4-5-from-pokemon
 - [x] 048. https://github.com/ImJasonH/ImJasonH/blob/main/articles/llm-programming-language.md
-- [x] 049. https://xcancel.com/tobi/status/2010438500609663110
 - [x] 050. https://archaeologist.dev/artifacts/anthropic
 - [x] 051. https://github.com/haykgrigo3/TimeCapsuleLLM
 - [x] 052. https://news.ycombinator.com/item?id=46591100
