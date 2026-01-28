@@ -8,7 +8,7 @@ A weekly curated journal of AI and coding developments, featuring high-impact ar
 
 Browse our weekly curated collections of AI coding developments:
 - **Main Journal**: 18-25 high-impact articles with essential industry insights
-- **Annex Journal**: Unique perspectives and emerging trends worth following
+- **Annex Journal**: Catalog of unique perspectives - compact entries (80-120 words) for quick scanning
 - **Archives**: Complete collection of past weeks organized by date
 
 *The site is automatically updated when new journals are published.*
@@ -118,4 +118,35 @@ journals/
     └── summaries/
         └── [individual summary files]   # All individual AI-generated summaries
 ```
+
+### Annex Journal Format
+
+The **Annex Journal** uses a **catalog format** designed for quick scanning and decision-making:
+
+**Key Characteristics**:
+- **Compact entries**: 80-120 words per article (vs. 300+ words in main journal)
+- **Integrated narrative**: Core insight + critical takeaway woven naturally together
+- **Decision-focused**: Answers "Should I read this?" not "What does it say?"
+- **Original titles**: English articles show 原題 for searchability
+- **Selective categories**: Only used when they add non-obvious context (30-40% of entries)
+
+**Format Structure**:
+```markdown
+### [Japanese Title]
+**原題**: [Original English Title] (if applicable)
+**カテゴリー**: [Category] (optional - omit if redundant)
+**URL**: https://example.com/article
+
+[3-4 sentences: problem/context + key insight + critical takeaway integrated]
+
+---
+```
+
+**Why Catalog Format?**
+- Readers can quickly scan 20-30 articles in minutes
+- Unique/controversial angles are immediately visible
+- Reduces decision fatigue - helps readers prioritize deep reading
+- Complements main journal's comprehensive coverage
+
+See [STEP_08_ASSEMBLE.md](STEP_08_ASSEMBLE.md#annex-journal-assembly-catalog-format) for detailed guidelines.
 

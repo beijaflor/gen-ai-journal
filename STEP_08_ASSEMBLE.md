@@ -147,48 +147,206 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
 🤖 本記事は [Claude Code](https://claude.com/claude-code) を使用して編集されました。
 ```
 
-### Annex Journal Assembly
+### Annex Journal Assembly (Catalog Format)
 
-#### 1. Header & Annex Philosophy
+**Philosophy**: The annex journal is a **catalog of unique perspectives**, not comprehensive summaries. Each entry is an ultra-concise 80-120 word narrative that helps readers decide "Should I read this?"
+
+#### 1. Header & Catalog Philosophy
 
 Create `workdesk/annex_journal_YYYY_MM_DD.md` with:
 
 ```markdown
 # GenAI週刊 Annex YYYY年MM月DD日号
 
-メインジャーナルからは漏れたものの、独自の価値を持つ記事の特集です。
+メインジャーナルからは漏れたものの、独自の価値を持つ記事のカタログです。
 
 ## Annexについて
 
 このAnnexジャーナルは、単なる"残り物"ではなく、ユニークな視点、実験的な試み、批判的思考、そしてニッチな深堀りを提供する厳選された「B面」コレクションです。
+
+各記事は**カタログ形式**で紹介されています。80-120語の簡潔な要約で、記事の核心と注目すべき視点を統合的に提示します。読むべきかを素早く判断できる構成です。
 
 [Explain this week's B-side character: experimental insights, critical perspectives, niche technical dives]
 
 ---
 ```
 
-#### 2. Thematic Sections
+#### 2. Catalog Entry Structure
 
-Same format as main journal, but:
-- Emphasize critical/contrarian perspectives
-- Highlight experimental/failed attempts
-- Include technical details too niche for main
-- Note security warnings and business realities
+**Format for each article**:
 
-#### 3. Annex Conclusion
+```markdown
+### [Japanese Title]
+**原題**: [Original English Title] (omit if article is in Japanese or title not translated)
+**カテゴリー**: [Category] (OPTIONAL - include only when adds non-obvious context)
+**URL**: https://example.com/article
+
+[3-4 sentences integrating: problem/context + key insight + critical takeaway. 80-120 words total. The most compelling point (former 注目ポイント) should be woven naturally into the narrative - either as a powerful closing sentence or integrated throughout. Make the unique/controversial angle prominent.]
+
+---
+```
+
+#### 3. Category Taxonomy (8 Core Categories)
+
+Use categories **only when they add non-obvious value** (aim: 30-40% of entries):
+
+1. **ツール・実験** - New/experimental tools, DIY projects, tool comparisons
+2. **セキュリティ・リスク** - Vulnerabilities, attack vectors, security practices
+3. **批判的分析** - Contrarian views, hype critiques, industry criticism
+4. **アーキテクチャ・設計** - System design, trade-offs, technical patterns
+5. **パフォーマンス・最適化** - Speed, efficiency, resource management
+6. **ビジネス・戦略** - Industry dynamics, investment trends, organizational impact
+7. **ニッチ・深堀り** - Specialized topics, edge cases, forgotten histories
+8. **教育・学習** - Teaching methods, learning approaches, skill development
+
+**When to include category**:
+- Article's topic is non-obvious from title
+- Category provides important context (e.g., "セキュリティ・リスク" when security is buried in content)
+- Reader would benefit from filtering signal
+
+**When to omit category**:
+- Title clearly indicates topic
+- URL domain signals content type
+- Category would be redundant
+- **Default**: When uncertain, omit for cleaner format
+
+#### 4. Catalog Writing Guidelines
+
+**Length Target**: 80-120 words (3-4 sentences)
+
+**Content Structure**:
+1. **Opening sentence(s)**: Establish problem/context - "What question does this answer?"
+2. **Middle sentence(s)**: Convey key insight - "What's the core finding/argument?"
+3. **Closing sentence(s)**: Deliver critical takeaway - "Why does this matter?" / unique angle
+
+**Key Principles**:
+- **Ultra-concise**: Every word earns its place
+- **Decision-focused**: Answers "Should I read this?" not "What does it say?"
+- **Integrated storytelling**: Critical takeaway woven into narrative, not separate
+- **Original title transparency**: English articles show 原題 for searchability
+- **No filler**: Remove redundant phrases, meta-commentary, editorial notes
+
+**Transformation Rules**:
+- **From**: 300+ word comprehensive summary with separate 注目ポイント
+- **To**: 80-120 word integrated narrative with compelling angle prominent
+- **Exclude**: Editor's notes, meta-commentary, "なぜ重要か" headers
+- **Include**: Core insight + most controversial/unique perspective naturally integrated
+
+#### 5. Edge Case Handling
+
+**Complex Articles** (resist 80-120 word summary):
+→ Focus on SINGLE most important insight, state WHAT it proves (not HOW)
+→ Use final sentence to deliver the powerful takeaway
+
+**Multiple Key Points**:
+→ Choose most UNIQUE/CONTROVERSIAL point for emphasis in closing
+→ If equally important, weave both into narrative; combine max 2 points naturally
+
+**Highly Technical Articles**:
+→ Lead with result/capability enabled
+→ Name specific technologies for searchability
+→ Reserve technical details for closing emphasis
+
+**Opinion/Essay Articles**:
+→ State thesis clearly in opening
+→ Include one strongest supporting evidence in middle
+→ Close with most provocative claim
+
+**Category Ambiguity**:
+→ Decision matrix: What makes readers most interested? Which annex pillar?
+→ Default: Omit category unless it adds non-obvious context
+→ When must choose: 批判的分析 > ツール・実験 > セキュリティ・リスク > ニッチ・深堀り > others
+
+#### 6. Example Transformation
+
+**BEFORE (Current Format - 300+ words)**:
+```markdown
+### Silaute Code: 実践して見えたAIエージェントの限界
+
+https://qiita.com/Yu_yukk_Y/items/0a61b4f1a6784981f2a9
+
+著者がCursor AIの代替として「Silaute Code」という新興AIエージェントツールを試用した結果、期待とは裏腹に実用レベルに達していないという率直な評価を報告しています。
+
+試用の結果、コード生成の精度が低く、プロジェクトの文脈理解が不十分で、生成されたコードが実際には動作しないケースが頻発しました。特に、既存のコードベースとの整合性を保ちながら新機能を追加するタスクでは、エラーが多発し、手動での修正に多くの時間を費やす結果となりました。
+
+著者は、この失敗体験から重要な教訓を導き出しています。AIツールの宣伝文句を鵜呑みにせず、自社のユースケースで実際に検証することの重要性、そして、成熟したツール(CursorやGitHub Copilot)の安定性と精度の高さを改めて評価する機会となったと述べています。
+
+失敗事例の共有は、成功事例よりも貴重な学びを提供します。この記事は、新しいAIツールを導入する際の慎重さと、現実的な期待値設定の重要性を思い出させてくれます。
+```
+
+**AFTER (New Catalog Format - 98 words, integrated)**:
+```markdown
+### Silaute Code実践レビュー：AIエージェントの失敗から学ぶ教訓
+**原題**: Silaute Code: Practical Lessons from AI Agent Failure
+**カテゴリー**: ツール・実験
+**URL**: https://qiita.com/Yu_yukk_Y/items/0a61b4f1a6784981f2a9
+
+Cursor AIの代替として新興AIエージェント「Silaute Code」を実践検証したが、コード生成精度が低く文脈理解が不十分で実用レベルに未達。既存コードベースとの整合性を保つタスクでエラーが頻発し、手動修正に多大な時間を要した結果、開発効率が大幅に低下。AIツール導入時は宣伝を鵜呑みにせず、自社の実際のユースケースで徹底的に検証することが不可欠という教訓を提示。失敗事例の共有こそが成功事例より貴重な学び――成熟ツール(Cursor、GitHub Copilot)の真価を再認識させる実践レポート。
+
+---
+```
+
+#### 7. Thematic Sections (5-6 Sections)
+
+Group articles by annex themes (target: 5-6 sections):
+- Advanced Tactics & Unconventional Wisdom
+- Substantive Critique & Contrarian Views
+- Niche Explorations & Deep Dives
+- Failed Experiments & Cautionary Tales
+- Security Risks & Technical Debt
+
+**Format**:
+```markdown
+## [Sequential Number]. [Theme Title in Japanese]
+
+[Optional: 1-2 sentence theme introduction if needed for context]
+
+### [Article 1 in Catalog Format]
+...
+
+---
+
+### [Article 2 in Catalog Format]
+...
+
+---
+```
+
+#### 8. Annex Conclusion
 
 ```markdown
 ## 編集後記
 
 [Write 2-3 paragraphs reflecting on:
 - Why these B-side perspectives matter
-- Complementary value to main journal
-- Encouragement for deeper exploration]
+- Complementary value to main journal (catalog format enables quick scanning)
+- Encouragement for deeper exploration based on reader interests]
 
 ---
 
 🤖 本記事は [Claude Code](https://claude.com/claude-code) を使用して編集されました。
 ```
+
+#### 9. Quality Verification Checklist
+
+**Per Entry**:
+- [ ] Integrated summary: 80-120 words (3-4 sentences)
+- [ ] Original title (原題) included for English articles
+- [ ] Category included only when adds non-obvious context
+- [ ] First sentences establish: "What problem/question?"
+- [ ] Middle sentences convey: "What's the key insight?"
+- [ ] Final sentence(s) deliver: "Why this matters" / unique angle
+- [ ] No filler words or redundant phrases
+- [ ] Critical takeaway woven naturally into narrative (not separate)
+- [ ] Most compelling/controversial point is prominent
+
+**Complete Annex**:
+- [ ] 5-6 thematic sections maintained
+- [ ] All curated_annex_journal_sources.md articles included
+- [ ] No overlap with main journal
+- [ ] Catalog philosophy explained in header
+- [ ] 編集後記 reflects catalog format
+- [ ] Consistent format throughout
 
 ---
 
