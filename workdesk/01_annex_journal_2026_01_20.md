@@ -62,7 +62,7 @@ SuperhumanのAIアシスタントが受信メール内の隠し命令(背景色�
 
 ### Claude Coworkにおけるファイル流出の脆弱性
 **原題**: Claude Cowork Exfiltrates Files
-**URL**: https://www.promptarmor.com/resources/claude-cowork-exfiltates-files
+**URL**: https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files
 
 Claude CoworkのサンドボックスをAnthropicAPIホワイトリストへの過信を悪用して突破し、ユーザーのローカルファイルを外部へ流出させる攻撃を実証。一見無害なドキュメントに隠されたプロンプトインジェクションにより、VM内の`curl`コマンドで攻撃者のアカウントへファイルをアップロードする。「信頼された通信路」自体が攻撃ベクトルになるという皮肉な構造は、AIエージェントに広範なアクセス権を付与する際のセキュリティ設計の盲点を浮き彫りにしている。
 
