@@ -44,19 +44,30 @@ Edit `workdesk/unified_summaries_main.md`:
   - Add transitional context between articles
   - Ensure logical progression
 
-### 3. Review Annex Journal Summaries
+### 3. Prepare Annex Journal for Catalog Format
 
-Edit `workdesk/unified_summaries_annex.md`:
+**Note**: Annex journal uses **catalog format** (80-120 word integrated entries), not comprehensive summaries.
 
-- [ ] **B-side Character:**
-  - Emphasize unique perspectives and experimental insights
-  - Highlight contrarian viewpoints or niche applications
-  - Focus on emerging trends and early signals
+Review `workdesk/unified_summaries_annex.md` and prepare for catalog transformation:
 
-- [ ] **Editorial Comments:**
-  - Add editorial commentary explaining selection rationale
-  - Note why each article provides unique value
-  - Connect to broader trends or implications
+- [ ] **Identify Core Insights:**
+  - Extract SINGLE most important insight per article
+  - Note the unique/controversial angle (former 注目ポイント)
+  - Identify what makes this article different from mainstream coverage
+
+- [ ] **Plan Catalog Entries:**
+  - Map out 80-120 word distillation strategy per article
+  - Decide: What 3-4 sentences answer "Should I read this?"
+  - Plan integration of critical takeaway into narrative
+
+- [ ] **Category Assignment Planning:**
+  - Review 8 core categories (ツール・実験, セキュリティ・リスク, 批判的分析, etc.)
+  - Assign category ONLY when adds non-obvious context (aim: 30-40% of entries)
+  - Default: Omit category for cleaner format
+
+- [ ] **Original Title Handling:**
+  - Note which articles are English sources needing 原題
+  - Verify original titles are accurate and searchable
 
 ### 4. Quality Standards
 

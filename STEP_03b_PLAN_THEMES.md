@@ -57,6 +57,55 @@ Analyze all collected summaries, identify 5-8 cohesive themes, and create an edi
   - Experimental & Failed Attempts (Annex-focused)
   - Contrarian Views & Substantive Critique (Annex-focused)
 
+**Theme Title Guidelines - Be Concrete, Not Generic:**
+
+Theme titles should be **specific, provocative, and attention-grabbing** rather than generic category labels.
+
+✅ **GOOD (Concrete):**
+- "コンテキスト爆発への処方箋：段階的開示とマルチエージェント構成"
+- "Tailwind解雇75%の衝撃：AIがもたらすビジネスモデルの破壊"
+- "プロンプトインジェクションとゼロクリック攻撃：自律性とセキュリティのトレードオフ"
+- "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
+
+❌ **BAD (Generic):**
+- "AIエージェントの実装戦略" → Too abstract
+- "開発ツールとワークフロー" → Too broad
+- "セキュリティ問題" → Too vague
+- "ビジネスへの影響" → Too general
+
+**Four Principles for Concrete Titles:**
+
+1. **Name Specific Technologies/Events**
+   - Bad: "新しいプロトコル"
+   - Good: "UCPとMCPサンプリングが描くWebの再定義"
+
+2. **Include Shocking Facts/Numbers**
+   - Bad: "AIの雇用影響"
+   - Good: "Tailwind解雇75%の衝撃：価値のシフト"
+
+3. **Highlight Contradictions/Tensions**
+   - Bad: "AIへの批判"
+   - Good: "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
+
+4. **Pose Provocative Questions**
+   - Bad: "開発者体験の管理"
+   - Good: "認知負荷の科学的管理：開発者は「考える係」に徹するべきか"
+
+**Title Structure Patterns:**
+
+- **[Problem]: [Solution]** - "コンテキスト爆発への処方箋：段階的開示とマルチエージェント構成"
+- **[Shocking Event]: [Implication]** - "Tailwind解雇75%の衝撃：ビジネスモデルの破壊"
+- **[Contradiction]: [Examples]** - "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
+- **[Specific Tech]: [Broader Impact]** - "UCPとMCPサンプリングが描くWebの再定義"
+- **[Topic]: [Provocative Question]** - "認知負荷の科学的管理：開発者は「考える係」に徹するべきか"
+
+**Why Concrete Titles Matter:**
+- Immediately communicate the theme's value proposition
+- Create curiosity and reading motivation
+- Make the narrative arc visible at a glance
+- Differentiate from generic tech news aggregation
+- Reflect the "visionary but grounded" editorial persona
+
 #### 4. Map Articles to Themes
 
 - [ ] For each proposed theme, list candidate article IDs
@@ -112,6 +161,9 @@ For each theme:
 - [ ] Do themes tell a cohesive weekly story?
 - [ ] Are contradictions and tensions highlighted?
 - [ ] Does the plan reflect EDITOR_PERSONALITY.md voice?
+- [ ] Are theme titles concrete and specific (not generic category labels)?
+  - Check: Do titles name specific technologies, events, or numbers?
+  - Check: Do titles highlight contradictions or pose questions?
 - [ ] Are theme introductions engaging and insightful?
 - [ ] Is the article distribution appropriate (18-25 main, rest annex)?
 - [ ] Do themes align with curation_criteria.md principles?
@@ -159,7 +211,12 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 
 ## Identified Themes
 
-### Theme 1: [Japanese Theme Title]
+**Reminder: Theme titles should be concrete, specific, and attention-grabbing**
+- ✅ Name specific technologies, events, numbers
+- ✅ Highlight contradictions or pose questions
+- ❌ Avoid generic category labels
+
+### Theme 1: [Concrete Japanese Theme Title]
 
 **Articles (IDs):** 007, 012, 023, 034
 
