@@ -46,12 +46,20 @@ The final output must strictly follow this markdown template. Do not add any ext
 
 **Topics**: [[Topic1, Topic2, Topic3, Topic4, Topic5]]
 
-[A summary body in Japanese, with length proportional to the source article:
-- **Short articles** (brief announcements, simple updates with minimal substance): 200+ characters minimum
-- **Medium articles** (typical blog posts, standard analysis): 800-1200 characters
-- **Default to Medium**: When uncertain about article length classification, treat as Medium and use 800-1200 characters.
+[A summary body in Japanese, with length varying by content type and article substance:
 
-Do not pad short content to meet character counts. Match the summary length to the substance available in the source. Explain the key concepts and their significance. Focus on the "why" **as explained by the author** – why the author believes this is important and what the author presents as the key takeaway.]
+**Summary length should vary by content type:**
+- **Short announcements/news**: 300-450 characters
+  - Brief product launches, simple updates, single-topic news
+- **Standard articles**: 450-650 characters (DEFAULT)
+  - Typical blog posts, tool introductions, standard analysis
+  - Most articles fall into this category
+- **Deep technical/multi-faceted**: 650-800 characters
+  - Technical references with multiple concepts
+  - Opinion pieces with significant community debate
+  - Tools with complex architecture or multiple integration points
+
+Prioritize clarity and decision-making value over hitting exact character counts.]
 ```
 
 **Instructions for each section:**
@@ -67,7 +75,43 @@ Do not pad short content to meet character counts. Match the summary length to t
 4.  **Scores**: Apply the scoring framework below to evaluate each dimension (0-5 scale), then calculate composite scores based on content type weightings.
 5.  **One-sentence summary**: A single, descriptive sentence that neutrally conveys the author's main point. Start with a strong, active verb.
 6.  **Topics**: Provide up to 5 key topics relevant to AI coding, development tools, or workflows. Topics should be specific and distinct.
-7.  **Summary Body**: A detailed but concise summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on the "why" **as stated by the author** – report the author's explanation of importance and key takeaways. Do not add your own opinions or interpretations. For technical articles (tools, workflows, agent techniques), be specific and concrete about the techniques described. Avoid abstract generalizations - provide concrete details that distinguish this approach from others in the field.
+7.  **Summary Body**: A concise, decision-focused summary in Japanese. Apply content-type specific treatment as defined in the framework below. Focus on **what readers will learn** and **who should read this**. Provide a factual overview of content coverage, key insights, and specific takeaways without extensive editorial interpretation. Your goal is to help readers decide whether to invest time reading, not to replace reading the article.
+
+    **Summary Body Structure:**
+    Use this mental model when writing summaries:
+
+    1. **What's covered** (2-3 sentences): Core topic and scope with concrete details
+    2. **Key insights/takeaways** (2-4 sentences): Main points, specific tools/techniques, practical learnings
+    3. **Who should read** (1 sentence): Clear target audience and decision trigger
+
+    **Writing Guidelines:**
+
+    **Concrete terminology emphasis:**
+    - Use **bold** for specific tool names, technical terms, and key concepts
+    - Examples: **Microsoft Presidio**, **Role Consistency**, **DeepSeek Sparse Attention (DSA)**, **EDoS**
+    - Bold helps readers scan for relevant technologies and techniques
+    - Inline highlighting preferred over separate bullet lists
+
+    **Content-type specific approach:**
+    - **Tools/Technical**: Emphasize specific features, integration points (HuggingFace, vLLM), technical capabilities
+    - **Opinion pieces**: Highlight main argument and notable counter-arguments/community perspectives
+    - **Tutorials/Guides**: List concrete techniques and methodologies covered
+    - **Research/Analysis**: Emphasize key findings, data points, novel insights
+
+    **Decision-focused details:**
+    - Be specific about what readers will gain (concrete techniques, insights, data)
+    - Mention actual tool names, not just categories ("Cursor" not "AI coding tools")
+    - For techniques: describe the actual method with its proper name
+    - State clear use cases: "RAGやエージェント機能を実装する開発者" not "開発者全般"
+
+    **What to avoid:**
+    - Don't add extensive "why it matters" editorial (scores handle importance)
+    - Don't add historical context the article doesn't provide
+    - Don't interpret beyond what the article states
+    - Minimize ecosystem connections unless article makes them
+    - No padding with generic statements
+
+    For technical articles (tools, workflows, agent techniques), be specific and concrete about the techniques described. Avoid abstract generalizations - provide concrete details that distinguish this approach from others in the field.
 8.  **Objectivity**: Summarize based only on the article content. Report the author's arguments, opinions, and claims without adding your own interpretation. If the author states an opinion, attribute it clearly to the author (e.g., "著者は〜と主張している", "筆者によれば〜").
 
 ---
