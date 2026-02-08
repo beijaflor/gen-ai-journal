@@ -82,48 +82,54 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
   return `${content.substring(0, maxLength)}...`;
 }
 
+function shouldSkipLine(line: string): boolean {
+  const trimmed = line.trim();
+  if (!trimmed) return true;
+  if (trimmed.startsWith('#')) return true;
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return true;
+  if (trimmed.startsWith('**')) return true;
+  if (trimmed.startsWith('[[')) return true;
+  return false;
+}
+
 function extractFullFirstParagraph(content: string): string {
-  // Extract complete first paragraph without character truncation
-  const lines = content.split('\n');
-  let foundUrl = false;
+  // Strategy 1: Paragraph-based extraction
+  const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
+  const paragraphs = withoutHeaders.split('\n\n');
 
-  for (const line of lines) {
-    const trimmed = line.trim();
-
-    // Skip until after URL and metadata
-    if (trimmed.startsWith('https://')) {
-      foundUrl = true;
-      continue;
-    }
-
-    if (trimmed.startsWith('**') || trimmed.startsWith('[[')) {
-      continue;
-    }
-
-    // Look for substantial Japanese content
-    if (foundUrl && trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
-      return trimmed;
-    }
-  }
-
-  // Fallback: get first paragraph with Japanese characters
-  const paragraphs = content.split('\n\n');
   for (const paragraph of paragraphs) {
     const trimmed = paragraph.trim();
-    if (trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
+    if (trimmed.length < 15) continue;
+
+    const firstLine = trimmed.split('\n')[0];
+    if (shouldSkipLine(firstLine)) continue;
+
+    // Accept if contains Japanese or is substantial English
+    if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
+      return trimmed;
+    }
+    if (trimmed.length > 30) {
       return trimmed;
     }
   }
 
-  // Final fallback: return first non-empty line
+  // Strategy 2: Line-by-line fallback
+  const lines = content.split('\n');
+  const contentLines: string[] = [];
+
   for (const line of lines) {
+    if (shouldSkipLine(line)) continue;
+
     const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('##') && !trimmed.startsWith('https://')) {
-      return trimmed;
+    if (trimmed.length > 10) {
+      contentLines.push(trimmed);
+      if (contentLines.join(' ').length > 50) {
+        return contentLines.join(' ');
+      }
     }
   }
 
-  return '';
+  return contentLines.join(' ') || '';
 }
 
 function extractUrlFromContent(content: string): string {
