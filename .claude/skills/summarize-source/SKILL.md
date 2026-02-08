@@ -170,6 +170,7 @@ Examples:
 - **JSON schema**: `schema/summary-v1-schema.json`
 - **Batch script**: `scripts/bulk_summarize.py`
 - **Single script**: `scripts/call-gemini.py`
+- **Validation script**: `scripts/validate_summaries.py`
 - **JSON prompt**: `prompts/summarize-json.prompt`
 - **Markdown prompt**: `prompts/summarize.prompt`
 - **Workflow docs**: `workflow/STEP_02_GENERATE_SUMMARIES.md`
@@ -187,6 +188,30 @@ When using JSON format (default), summaries are automatically validated against 
 - ✓ String length constraints (title: 1-200, summaryBody: 100-1200, etc.)
 
 **If validation fails**: Script exits with error message, URL remains unchecked, no file written.
+
+### Manual Validation
+
+To validate existing JSON summaries:
+
+```bash
+# Validate all summaries in workdesk
+uv run scripts/validate_summaries.py workdesk/summaries
+
+# Validate specific file
+uv run scripts/validate_summaries.py workdesk/summaries/001_example.json
+
+# Verbose mode (show all files)
+uv run scripts/validate_summaries.py workdesk/summaries --verbose
+
+# Quiet mode (only summary)
+uv run scripts/validate_summaries.py workdesk/summaries --quiet
+```
+
+**Use cases**:
+- Verify summaries after batch generation
+- Check integrity before committing
+- Validate after manual edits
+- CI/CD pipeline integration
 
 ## Error Handling
 
