@@ -6,9 +6,11 @@ import argparse
 import re
 import logging
 import requests
+import json
+from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 import google.generativeai as genai
-from typing import Optional
+from typing import Optional, Dict, Any, Tuple
 from modules.template_processor import process_template, parse_replacements
 
 def fetch_url_content(url: str, timeout: int = 30) -> str:
@@ -91,6 +93,155 @@ def clean_gemini_output(text: str) -> str:
             cleaned_lines.append(line)
     
     return '\n'.join(cleaned_lines).strip()
+
+def validate_json_summary(data: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
+    """Validate JSON summary structure against v1.0 schema.
+
+    Returns:
+        (success: bool, error_message: Optional[str])
+    """
+    try:
+        # Check required top-level fields
+        if 'metadata' not in data or 'content' not in data:
+            return False, "Missing required top-level fields: metadata or content"
+
+        metadata = data['metadata']
+        content = data['content']
+
+        # Validate metadata
+        if metadata.get('version') != '1.0':
+            return False, f"Invalid version: {metadata.get('version')}, expected '1.0'"
+
+        if not metadata.get('generatedAt'):
+            return False, "Missing generatedAt in metadata"
+
+        if not metadata.get('generatedBy'):
+            return False, "Missing generatedBy in metadata"
+
+        # Validate content required fields
+        required_content_fields = [
+            'title', 'url', 'language', 'contentType',
+            'oneSentenceSummary', 'summaryBody', 'topics', 'scores'
+        ]
+
+        for field in required_content_fields:
+            if field not in content:
+                return False, f"Missing required content field: {field}"
+
+        # Validate scores structure
+        scores = content['scores']
+        required_score_fields = [
+            'signal', 'depth', 'uniqueness', 'practical', 'antiHype',
+            'mainJournal', 'annexPotential', 'overall'
+        ]
+
+        for field in required_score_fields:
+            if field not in scores:
+                return False, f"Missing required score field: {field}"
+
+        # Validate score ranges
+        dimension_scores = [
+            scores['signal'], scores['depth'], scores['uniqueness'],
+            scores['practical'], scores['antiHype']
+        ]
+
+        for score in dimension_scores:
+            if not isinstance(score, int) or score < 0 or score > 5:
+                return False, f"Dimension score out of range (0-5): {score}"
+
+        composite_scores = [
+            scores['mainJournal'], scores['annexPotential'], scores['overall']
+        ]
+
+        for score in composite_scores:
+            if not isinstance(score, int) or score < 0 or score > 100:
+                return False, f"Composite score out of range (0-100): {score}"
+
+        # Validate topics array
+        topics = content['topics']
+        if not isinstance(topics, list):
+            return False, "Topics must be an array"
+
+        if len(topics) < 1 or len(topics) > 5:
+            return False, f"Topics array must have 1-5 elements, got {len(topics)}"
+
+        # Validate string lengths
+        if len(content['title']) < 1 or len(content['title']) > 200:
+            return False, f"Title length out of range (1-200): {len(content['title'])}"
+
+        if len(content['oneSentenceSummary']) < 10 or len(content['oneSentenceSummary']) > 300:
+            return False, f"One sentence summary length out of range (10-300): {len(content['oneSentenceSummary'])}"
+
+        if len(content['summaryBody']) < 100 or len(content['summaryBody']) > 1200:
+            return False, f"Summary body length out of range (100-1200): {len(content['summaryBody'])}"
+
+        return True, None
+
+    except Exception as e:
+        return False, f"Validation error: {str(e)}"
+
+
+def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[str] = None) -> Dict[str, Any]:
+    """Call Gemini AI with structured output using response_schema.
+
+    Args:
+        prompt: The prompt to send
+        schema: JSON schema for structured output
+        model: Model name to use
+
+    Returns:
+        Parsed JSON response
+    """
+    try:
+        logging.info(f"Using model: {model or 'gemini-pro'} with structured output")
+        logging.info(f"Prompt length: {len(prompt)} characters")
+        logging.debug(f"Full prompt:\n{'-'*50}\n{prompt}\n{'-'*50}")
+
+        if model:
+            gemini_model = genai.GenerativeModel(model)
+        else:
+            gemini_model = setup_gemini()
+
+        logging.info("Sending structured output request to Gemini...")
+
+        # Configure generation with schema
+        generation_config = genai.GenerationConfig(
+            response_mime_type="application/json",
+            response_schema=schema
+        )
+
+        response = gemini_model.generate_content(
+            prompt,
+            generation_config=generation_config
+        )
+
+        logging.info("Received response from Gemini")
+
+        # Parse JSON response
+        result_text = response.text
+        logging.info(f"Response length: {len(result_text)} characters")
+        logging.debug(f"Raw response:\n{'-'*50}\n{result_text}\n{'-'*50}")
+
+        # Parse and add metadata
+        result_data = json.loads(result_text)
+
+        # Ensure metadata fields are populated (in case Gemini doesn't include them)
+        if 'metadata' not in result_data:
+            result_data['metadata'] = {}
+
+        result_data['metadata']['version'] = '1.0'
+        result_data['metadata']['generatedAt'] = datetime.now(timezone.utc).isoformat()
+        result_data['metadata']['generatedBy'] = model or 'gemini-pro'
+
+        return result_data
+
+    except json.JSONDecodeError as e:
+        logging.error(f"Failed to parse JSON response: {str(e)}")
+        raise ValueError(f"Invalid JSON response from Gemini: {str(e)}")
+    except Exception as e:
+        logging.error(f"Error calling Gemini with structured output: {str(e)}")
+        raise
+
 
 def call_gemini(prompt: str, model: Optional[str] = None, clean_output: bool = False, disable_cache: bool = False, enable_context_cache: bool = False, static_content: Optional[str] = None) -> str:
     """Call Gemini AI with the given prompt.
@@ -194,9 +345,15 @@ def main():
     parser.add_argument('--disable-context-cache', action='store_true',
                        help='Disable explicit context caching')
     parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
-    
+    parser.add_argument('--format', choices=['markdown', 'json'], default='markdown',
+                       help='Output format: markdown (default) or json (structured output)')
+    parser.add_argument('--json-schema', help='Path to JSON schema file (default: ../schema/summary-v1-schema.json)')
+
     args = parser.parse_args()
-    
+
+    # Get script directory (needed for relative paths)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
     # Setup logging
     if args.debug:
         logging.basicConfig(level=logging.DEBUG, format='[DEBUG] %(message)s', stream=sys.stderr)
@@ -207,9 +364,14 @@ def main():
     
     # Handle URL summarization
     if args.url:
-        logging.info(f"URL summarization mode for: {args.url}")
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
+        logging.info(f"URL summarization mode for: {args.url} (format: {args.format})")
+
+        # Select prompt file based on format
+        if args.format == 'json':
+            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
+        else:
+            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
+
         logging.debug(f"Looking for prompt file: {prompt_file}")
         
         if not os.path.exists(prompt_file):
@@ -274,7 +436,6 @@ def main():
         try:
             logging.info(f"Processing template with replacements: {args.replace}")
             # Use script's directory as base path for relative file paths
-            script_dir = os.path.dirname(os.path.abspath(__file__))
             replacements = parse_replacements(args.replace, script_dir)
             logging.debug(f"Parsed replacements: {replacements}")
             prompt = process_template(prompt, replacements, script_dir, fetch_function=fetch_url_content)
@@ -307,15 +468,65 @@ def main():
     elif args.disable_context_cache:
         logging.info("Context caching explicitly disabled")
 
-    response = call_gemini(
-        dynamic_prompt,
-        args.model,
-        args.clean,
-        args.no_cache,
-        enable_context_cache=enable_caching,
-        static_content=static_content
-    )
-    
+    # Handle structured JSON output or regular text output
+    if args.format == 'json':
+        # Load JSON schema
+        if args.json_schema:
+            schema_path = args.json_schema
+        else:
+            schema_path = os.path.join(script_dir, '..', 'schema', 'summary-v1-schema.json')
+
+        logging.info(f"Loading JSON schema from: {schema_path}")
+
+        try:
+            with open(schema_path, 'r', encoding='utf-8') as f:
+                schema = json.load(f)
+        except FileNotFoundError:
+            logging.error(f"JSON schema file not found: {schema_path}")
+            print(f"Error: JSON schema file not found: {schema_path}", file=sys.stderr)
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            logging.error(f"Invalid JSON schema: {e}")
+            print(f"Error: Invalid JSON schema: {e}", file=sys.stderr)
+            sys.exit(1)
+
+        # Call Gemini with structured output
+        try:
+            response_data = call_gemini_structured(
+                dynamic_prompt,
+                schema,
+                args.model
+            )
+
+            # Validate JSON structure
+            logging.info("Validating JSON structure...")
+            is_valid, error_msg = validate_json_summary(response_data)
+
+            if not is_valid:
+                logging.error(f"JSON validation failed: {error_msg}")
+                print(f"Error: JSON validation failed: {error_msg}", file=sys.stderr)
+                sys.exit(1)
+
+            logging.info("JSON validation passed")
+
+            # Convert to formatted JSON string
+            response = json.dumps(response_data, ensure_ascii=False, indent=2)
+
+        except Exception as e:
+            logging.error(f"Failed to generate structured JSON: {e}")
+            print(f"Error: Failed to generate structured JSON: {e}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        # Regular markdown output
+        response = call_gemini(
+            dynamic_prompt,
+            args.model,
+            args.clean,
+            args.no_cache,
+            enable_context_cache=enable_caching,
+            static_content=static_content
+        )
+
     # Output to file or stdout
     if args.output:
         try:

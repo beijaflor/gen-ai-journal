@@ -48,24 +48,42 @@ def find_unchecked_urls(sources_file: Path) -> List[Tuple[int, str]]:
 
     return unchecked
 
-def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, str]:
-    """Generate summary for URL."""
+def generate_summary(url: str, url_id: int, summaries_dir: Path, format: str = 'json') -> Tuple[bool, str]:
+    """Generate summary for URL.
+
+    Args:
+        url: URL to summarize
+        url_id: Numeric ID for the summary
+        summaries_dir: Directory to save summary
+        format: Output format ('json' or 'markdown')
+
+    Returns:
+        (success: bool, message: str)
+    """
     try:
         # Create filename from URL
         parsed = urlparse(url)
         domain = parsed.netloc.replace('www.', '').replace('.', '_')
 
-        # Simple filename: ID_domain.md
-        filename = f"{url_id:03d}_{domain}.md"
+        # Filename extension based on format
+        ext = '.json' if format == 'json' else '.md'
+        filename = f"{url_id:03d}_{domain}{ext}"
         output_path = summaries_dir / filename
 
         # Check if summary already exists (skip if so)
         if output_path.exists():
             return True, f"Summary already exists: {output_path}"
 
-        # Generate summary
+        # Generate summary with specified format
+        cmd = [
+            'uv', 'run', 'scripts/call-gemini.py',
+            '--url', url,
+            '--format', format,
+            '--output', str(output_path)
+        ]
+
         result = subprocess.run(
-            ['uv', 'run', 'scripts/call-gemini.py', '--url', url, '--output', str(output_path)],
+            cmd,
             capture_output=True,
             text=True,
             timeout=120
@@ -101,9 +119,20 @@ def mark_as_checked(sources_file: Path, url_id: int) -> bool:
         return False
 
 def get_existing_summary_ids(summaries_dir: Path) -> set[int]:
-    """Get set of IDs for which summary files exist."""
-    summary_files = summaries_dir.glob('[0-9][0-9][0-9]_*.md')
-    return {int(f.stem[:3]) for f in summary_files}
+    """Get set of IDs for which summary files exist (both .md and .json)."""
+    md_files = summaries_dir.glob('[0-9][0-9][0-9]_*.md')
+    json_files = summaries_dir.glob('[0-9][0-9][0-9]_*.json')
+
+    # Extract IDs from both markdown and JSON files
+    ids = set()
+    for f in list(md_files) + list(json_files):
+        # Extract 3-digit ID from filename (e.g., "001_domain.md" -> 1)
+        try:
+            ids.add(int(f.name[:3]))
+        except ValueError:
+            pass
+
+    return ids
 
 def sync_checkboxes_for_existing_summaries(sources_file: Path, summaries_dir: Path) -> int:
     """Mark all URLs as checked if their summary files exist."""
@@ -144,6 +173,12 @@ def main():
         '--sync-checkboxes',
         action='store_true',
         help='Sync checkbox state with existing summary files'
+    )
+    parser.add_argument(
+        '--format',
+        choices=['markdown', 'json'],
+        default='json',
+        help='Output format for summaries: json (default) or markdown'
     )
 
     args = parser.parse_args()
@@ -200,7 +235,7 @@ def main():
     for url_id, url in unchecked_urls:
         print(f"\n[{url_id:03d}] Processing: {url}")
 
-        success, result = generate_summary(url, url_id, summaries_dir)
+        success, result = generate_summary(url, url_id, summaries_dir, args.format)
 
         if success:
             print(f"✓ Summary generated: {result}")
