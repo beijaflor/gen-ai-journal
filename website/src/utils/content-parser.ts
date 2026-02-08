@@ -159,7 +159,8 @@ function shouldSkipLine(line: string): boolean {
   if (!trimmed) return true;
   if (trimmed.startsWith('#')) return true;
   if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return true;
-  if (trimmed.startsWith('**')) return true;
+  // Skip metadata lines like **Content Type**: but not summary lines like **分析する**：
+  if (/^\*\*[A-Za-z\s]+\*\*:/.test(trimmed)) return true;
   if (trimmed.startsWith('[[')) return true;
   return false;
 }
