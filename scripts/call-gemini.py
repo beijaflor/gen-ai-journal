@@ -181,40 +181,169 @@ def validate_json_summary(data: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
         return False, f"Validation error: {str(e)}"
 
 
-def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[str] = None) -> Dict[str, Any]:
-    """Call Gemini AI with structured output.
+def get_gemini_schema():
+    """Get Gemini-compatible schema for structured output.
+
+    Converts our JSON schema to Gemini's schema format using their Type system.
+    Based on: https://ai.google.dev/gemini-api/docs/structured-output
+    """
+    from google.ai.generativelanguage_v1beta.types import Schema, Type
+
+    return Schema(
+        type=Type.OBJECT,
+        required=["metadata", "content"],
+        properties={
+            "metadata": Schema(
+                type=Type.OBJECT,
+                required=["version", "generatedAt", "generatedBy"],
+                properties={
+                    "version": Schema(
+                        type=Type.STRING,
+                        description="Schema version (always '1.0')"
+                    ),
+                    "generatedAt": Schema(
+                        type=Type.STRING,
+                        description="ISO 8601 timestamp of generation"
+                    ),
+                    "generatedBy": Schema(
+                        type=Type.STRING,
+                        description="Model identifier (e.g., gemini-3-flash-preview)"
+                    )
+                }
+            ),
+            "content": Schema(
+                type=Type.OBJECT,
+                required=[
+                    "title", "url", "language", "contentType",
+                    "oneSentenceSummary", "summaryBody", "topics", "scores"
+                ],
+                properties={
+                    "title": Schema(
+                        type=Type.STRING,
+                        description="Article title in Japanese (1-200 chars)"
+                    ),
+                    "originalTitle": Schema(
+                        type=Type.STRING,
+                        description="Original title if article is in non-Japanese language",
+                        nullable=True
+                    ),
+                    "url": Schema(
+                        type=Type.STRING,
+                        description="Article URL"
+                    ),
+                    "language": Schema(
+                        type=Type.STRING,
+                        enum=["ja", "en", "zh", "ko", "other"],
+                        description="Article language code"
+                    ),
+                    "contentType": Schema(
+                        type=Type.STRING,
+                        enum=[
+                            "🚀 Product Launch (製品発表)",
+                            "🔬 Research & Analysis (研究・分析)",
+                            "💡 Tutorial & How-to (チュートリアル)",
+                            "🎯 Opinion & Commentary (意見・論評)",
+                            "📊 Industry News (業界ニュース)",
+                            "🛠️ Tools & Resources (ツール・リソース)",
+                            "🎓 Learning & Education (学習・教育)",
+                            "🌐 Community & Events (コミュニティ・イベント)"
+                        ],
+                        description="Content category"
+                    ),
+                    "oneSentenceSummary": Schema(
+                        type=Type.STRING,
+                        description="One sentence summary in Japanese (10-300 chars)"
+                    ),
+                    "summaryBody": Schema(
+                        type=Type.STRING,
+                        description="Full summary body in markdown format (100-1200 chars)"
+                    ),
+                    "topics": Schema(
+                        type=Type.ARRAY,
+                        description="Topic tags (1-5 tags)",
+                        items=Schema(
+                            type=Type.STRING,
+                            description="Topic tag (1-50 chars)"
+                        )
+                    ),
+                    "scores": Schema(
+                        type=Type.OBJECT,
+                        required=[
+                            "signal", "depth", "uniqueness", "practical", "antiHype",
+                            "mainJournal", "annexPotential", "overall"
+                        ],
+                        properties={
+                            "signal": Schema(
+                                type=Type.INTEGER,
+                                description="Signal-to-noise ratio (0-5)"
+                            ),
+                            "depth": Schema(
+                                type=Type.INTEGER,
+                                description="Content depth (0-5)"
+                            ),
+                            "uniqueness": Schema(
+                                type=Type.INTEGER,
+                                description="Perspective uniqueness (0-5)"
+                            ),
+                            "practical": Schema(
+                                type=Type.INTEGER,
+                                description="Practical applicability (0-5)"
+                            ),
+                            "antiHype": Schema(
+                                type=Type.INTEGER,
+                                description="Anti-hype factor (0-5)"
+                            ),
+                            "mainJournal": Schema(
+                                type=Type.INTEGER,
+                                description="Main journal fit score (0-100)"
+                            ),
+                            "annexPotential": Schema(
+                                type=Type.INTEGER,
+                                description="Annex journal potential score (0-100)"
+                            ),
+                            "overall": Schema(
+                                type=Type.INTEGER,
+                                description="Overall quality score (0-100)"
+                            )
+                        }
+                    )
+                }
+            )
+        }
+    )
+
+
+def call_gemini_structured(prompt: str, model: Optional[str] = None) -> Dict[str, Any]:
+    """Call Gemini AI with structured output using native schema support.
 
     Args:
-        prompt: The prompt to send (should instruct JSON output)
-        schema: JSON schema for validation (not passed to API, used for validation only)
+        prompt: The prompt to send
         model: Model name to use
 
     Returns:
-        Parsed JSON response
+        Parsed JSON response matching v1.0 schema
     """
     try:
-        logging.info(f"Using model: {model or 'gemini-pro'} with structured output")
+        logging.info(f"Using model: {model or 'gemini-pro'} with native structured output")
         logging.info(f"Prompt length: {len(prompt)} characters")
         logging.debug(f"Full prompt:\n{'-'*50}\n{prompt}\n{'-'*50}")
 
-        if model:
-            gemini_model = genai.GenerativeModel(model)
-        else:
-            gemini_model = setup_gemini()
+        # Get Gemini schema
+        schema = get_gemini_schema()
+        logging.info("Using native Gemini schema for structured output")
+
+        # Create model with schema configuration
+        gemini_model = genai.GenerativeModel(
+            model_name=model or 'gemini-pro',
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json",
+                response_schema=schema
+            )
+        )
 
         logging.info("Sending structured output request to Gemini...")
 
-        # Configure generation for JSON output
-        # Note: We rely on prompt instructions for structure, not response_schema
-        # This is more flexible and gives better error messages from our validation
-        generation_config = genai.GenerationConfig(
-            response_mime_type="application/json"
-        )
-
-        response = gemini_model.generate_content(
-            prompt,
-            generation_config=generation_config
-        )
+        response = gemini_model.generate_content(prompt)
 
         logging.info("Received response from Gemini")
 
@@ -223,44 +352,13 @@ def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[
         logging.info(f"Response length: {len(result_text)} characters")
         logging.debug(f"Raw response:\n{'-'*50}\n{result_text}\n{'-'*50}")
 
-        # Save raw response to temp file for debugging
-        import tempfile
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, prefix='gemini_raw_') as f:
-            f.write(result_text)
-            logging.info(f"Raw response saved to: {f.name}")
-
-        # Parse and add metadata
+        # Parse JSON
         result_data = json.loads(result_text)
 
-        # Handle case where Gemini returns a list instead of object
-        if isinstance(result_data, list):
-            logging.warning(f"Gemini returned a list with {len(result_data)} elements, taking first element")
-            if len(result_data) > 0:
-                result_data = result_data[0]
-            else:
-                raise ValueError("Gemini returned empty list")
-
-        # Ensure we have a dict
-        if not isinstance(result_data, dict):
-            logging.error(f"Unexpected response type: {type(result_data)}")
-            logging.error(f"Response preview: {str(result_data)[:500]}")
-            raise ValueError(f"Expected dict, got {type(result_data)}")
-
-        # Log the keys for debugging
-        logging.debug(f"Result data keys: {list(result_data.keys()) if isinstance(result_data, dict) else 'not a dict'}")
-
-        # Ensure metadata fields are populated (in case Gemini doesn't include them)
+        # Gemini's structured output should already match our schema,
+        # but we still add/verify metadata fields for consistency
         if 'metadata' not in result_data:
             result_data['metadata'] = {}
-
-        # Ensure content field exists
-        if 'content' not in result_data:
-            # Gemini might have returned flat structure, try to wrap it
-            logging.warning("Response missing 'content' field, attempting to restructure")
-            result_data = {
-                'metadata': result_data.get('metadata', {}),
-                'content': result_data
-            }
 
         result_data['metadata']['version'] = '1.0'
         result_data['metadata']['generatedAt'] = datetime.now(timezone.utc).isoformat()
@@ -380,8 +478,7 @@ def main():
                        help='Disable explicit context caching')
     parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
     parser.add_argument('--format', choices=['markdown', 'json'], default='markdown',
-                       help='Output format: markdown (default) or json (structured output)')
-    parser.add_argument('--json-schema', help='Path to JSON schema file (default: ../schema/summary-v1-schema.json)')
+                       help='Output format: markdown (default) or json (structured output with native Gemini schema)')
 
     args = parser.parse_args()
 
@@ -400,11 +497,14 @@ def main():
     if args.url:
         logging.info(f"URL summarization mode for: {args.url} (format: {args.format})")
 
-        # Always use markdown prompt (for JSON, we convert markdown to JSON afterwards)
-        prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
+        # Use JSON prompt for JSON format, markdown prompt for markdown format
+        if args.format == 'json':
+            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
+        else:
+            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
 
         logging.debug(f"Looking for prompt file: {prompt_file}")
-        
+
         if not os.path.exists(prompt_file):
             logging.error(f"Prompt file not found: {prompt_file}")
             print(f"Error: {prompt_file} not found", file=sys.stderr)
@@ -501,28 +601,17 @@ def main():
 
     # Handle structured JSON output or regular text output
     if args.format == 'json':
-        # For JSON format: Generate markdown first, then convert to JSON
-        # This approach is more reliable than trying to get Gemini to follow complex schemas
-        logging.info("JSON format: generating markdown first, then converting to JSON")
+        # Use native Gemini structured output with schema
+        logging.info("JSON format: using native Gemini structured output")
 
-        # Generate markdown response
-        markdown_response = call_gemini(
-            dynamic_prompt,
-            args.model,
-            args.clean,
-            args.no_cache,
-            enable_context_cache=enable_caching,
-            static_content=static_content
-        )
-
-        # Convert markdown to JSON
         try:
-            from markdown_to_json import parse_markdown_summary
+            # Call Gemini with structured output
+            response_data = call_gemini_structured(
+                dynamic_prompt,
+                args.model
+            )
 
-            logging.info("Converting markdown to JSON v1.0 format...")
-            response_data = parse_markdown_summary(markdown_response, args.url or "")
-
-            # Validate JSON structure
+            # Validate JSON structure (safety check - Gemini should already match schema)
             logging.info("Validating JSON structure...")
             is_valid, error_msg = validate_json_summary(response_data)
 
@@ -537,8 +626,8 @@ def main():
             response = json.dumps(response_data, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            logging.error(f"Failed to convert markdown to JSON: {e}")
-            print(f"Error: Failed to convert markdown to JSON: {e}", file=sys.stderr)
+            logging.error(f"Failed to generate structured JSON: {e}")
+            print(f"Error: Failed to generate structured JSON: {e}", file=sys.stderr)
             sys.exit(1)
     else:
         # Regular markdown output
