@@ -31,7 +31,6 @@ export interface SummaryEntry {
   wordCount: number; // Word count
   readingTime: number; // Minutes
   excerpt: string; // Brief summary
-  fullExcerpt?: string; // Full first paragraph (no truncation)
   language?: 'ja' | 'en' | 'other'; // Source language
   originalTitle?: string; // Original title (for non-Japanese articles)
 }
@@ -116,7 +115,7 @@ function extractTitleFromMarkdown(
 }
 
 function extractExcerpt(
-  content: string,
+  content: string, 
   maxLength: number = 200,
   config?: JournalParsingConfig,
   journalType?: 'main' | 'annex'
@@ -152,31 +151,6 @@ function extractExcerpt(
   }
 
   return `${content.substring(0, maxLength)}...`;
-}
-
-function extractFullFirstParagraph(content: string): string {
-  // Extract complete first paragraph without character truncation
-  // Remove markdown headers and get first substantial paragraph
-  const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
-  const paragraphs = withoutHeaders.split('\n\n');
-
-  for (const paragraph of paragraphs) {
-    const trimmed = paragraph.trim();
-    if (trimmed && trimmed.length > 10) {
-      return trimmed;
-    }
-  }
-
-  // Fallback: return first non-empty line
-  const lines = content.split('\n');
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('#')) {
-      return trimmed;
-    }
-  }
-
-  return '';
 }
 
 function countWords(text: string): number {
@@ -328,7 +302,6 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
     const wordCount = countWords(content);
     const readingTime = calculateReadingTime(wordCount);
     const excerpt = extractExcerpt(content, 150);
-    const fullExcerpt = extractFullFirstParagraph(content);
     const slug = generateSlug(title);
     const language = extractLanguage(content);
     const originalTitle = extractOriginalTitle(content);
@@ -346,7 +319,6 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
       wordCount,
       readingTime,
       excerpt,
-      fullExcerpt,
       language,
       originalTitle,
     };

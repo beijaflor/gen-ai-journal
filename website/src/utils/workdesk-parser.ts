@@ -6,7 +6,6 @@ export interface WorkdeskSummary {
   filename: string; // Original filename
   title: string; // Extracted from markdown
   excerpt: string; // Brief summary
-  fullExcerpt?: string; // Full first paragraph (no truncation)
   fullContent: string; // Full markdown content body
   url: string; // Reconstructed URL
   domain: string; // Source domain
@@ -50,20 +49,20 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
   // Find the main Japanese summary paragraph (usually after the first URL)
   const lines = content.split('\n');
   let foundUrl = false;
-
+  
   for (const line of lines) {
     const trimmed = line.trim();
-
+    
     // Skip until after URL and metadata
     if (trimmed.startsWith('https://')) {
       foundUrl = true;
       continue;
     }
-
+    
     if (trimmed.startsWith('**') || trimmed.startsWith('[[')) {
       continue;
     }
-
+    
     // Look for substantial Japanese content
     if (foundUrl && trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
       return trimmed.length > maxLength ? `${trimmed.substring(0, maxLength)}...` : trimmed;
@@ -80,50 +79,6 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
   }
 
   return `${content.substring(0, maxLength)}...`;
-}
-
-function extractFullFirstParagraph(content: string): string {
-  // Extract complete first paragraph without character truncation
-  const lines = content.split('\n');
-  let foundUrl = false;
-
-  for (const line of lines) {
-    const trimmed = line.trim();
-
-    // Skip until after URL and metadata
-    if (trimmed.startsWith('https://')) {
-      foundUrl = true;
-      continue;
-    }
-
-    if (trimmed.startsWith('**') || trimmed.startsWith('[[')) {
-      continue;
-    }
-
-    // Look for substantial Japanese content
-    if (foundUrl && trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
-      return trimmed;
-    }
-  }
-
-  // Fallback: get first paragraph with Japanese characters
-  const paragraphs = content.split('\n\n');
-  for (const paragraph of paragraphs) {
-    const trimmed = paragraph.trim();
-    if (trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
-      return trimmed;
-    }
-  }
-
-  // Final fallback: return first non-empty line
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (trimmed && !trimmed.startsWith('##') && !trimmed.startsWith('https://')) {
-      return trimmed;
-    }
-  }
-
-  return '';
 }
 
 function extractUrlFromContent(content: string): string {
@@ -306,7 +261,6 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
 
     const title = extractTitleFromMarkdown(content);
     const excerpt = extractExcerpt(content);
-    const fullExcerpt = extractFullFirstParagraph(content);
     const fullContent = extractFullContent(content);
     const url = extractUrlFromContent(content) || parsedFilename.url;
     const wordCount = countWords(content);
@@ -320,7 +274,6 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
       filename,
       title,
       excerpt,
-      fullExcerpt,
       fullContent,
       url,
       domain: parsedFilename.domain,
