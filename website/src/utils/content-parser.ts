@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { summaryParsers } from './summary-parser';
 
 // Base types for journal content
 export interface JournalEntry {
@@ -33,6 +34,27 @@ export interface SummaryEntry {
   excerpt: string; // Brief summary
   language?: 'ja' | 'en' | 'other'; // Source language
   originalTitle?: string; // Original title (for non-Japanese articles)
+
+  // JSON-specific metadata (optional, only present for JSON summaries)
+  contentType?: string; // Content category (e.g., "🔬 Research & Analysis")
+  oneSentence?: string; // One sentence summary
+  topics?: string[]; // Topic tags (1-5 tags)
+  scores?: {
+    signal: number;
+    depth: number;
+    uniqueness: number;
+    practical: number;
+    antiHype: number;
+    mainJournal: number;
+    annexPotential: number;
+    overall: number;
+  };
+  metadata?: {
+    version: string;
+    generatedAt: string;
+    generatedBy: string;
+    format: 'json' | 'markdown';
+  };
 }
 
 export interface JournalArchive {
@@ -290,38 +312,10 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
       return null;
     }
 
-    const filename = filePath.split('/').pop() || '';
-    const parsedFilename = parseSummaryFilename(filename);
-
-    if (!parsedFilename) {
-      return null;
-    }
-
     const content = readFileSync(filePath, 'utf-8');
-    const title = extractTitleFromMarkdown(content);
-    const wordCount = countWords(content);
-    const readingTime = calculateReadingTime(wordCount);
-    const excerpt = extractExcerpt(content, 150);
-    const slug = generateSlug(title);
-    const language = extractLanguage(content);
-    const originalTitle = extractOriginalTitle(content);
 
-    return {
-      id: parsedFilename.id,
-      date,
-      filename,
-      sourceUrl: parsedFilename.url,
-      domain: parsedFilename.domain,
-      title,
-      content,
-      status: 'omitted', // Will be determined later
-      slug,
-      wordCount,
-      readingTime,
-      excerpt,
-      language,
-      originalTitle,
-    };
+    // Use parser registry to handle both JSON and markdown formats
+    return summaryParsers.parseSummary(filePath, date, content);
   } catch (error) {
     console.warn(`Failed to parse summary file ${filePath}:`, error);
     return null;
@@ -444,9 +438,9 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     if (existsSync(summariesDir)) {
       const allFiles = readdirSync(summariesDir);
-      const summaryFiles = allFiles.filter((file) => 
-        file.endsWith('.md') && 
-        !file.includes('sources.md') && 
+      const summaryFiles = allFiles.filter((file) =>
+        (file.endsWith('.md') || file.endsWith('.json')) &&
+        !file.includes('sources.md') &&
         !file.includes('omitted_sources.md')
       );
 

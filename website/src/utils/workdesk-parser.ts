@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { summaryParsers } from './summary-parser';
 
 export interface WorkdeskSummary {
   id: string; // 3-digit ID from filename
@@ -249,15 +250,52 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
       return null;
     }
 
+    const content = readFileSync(filePath, 'utf-8');
+    const stats = statSync(filePath);
+
+    // Detect format and parse accordingly
+    if (filePath.endsWith('.json')) {
+      // Use parser registry for JSON format
+      const parsed = summaryParsers.parseSummary(filePath, 'workdesk', content);
+
+      if (!parsed) {
+        return null;
+      }
+
+      // Convert to WorkdeskSummary format
+      return {
+        id: parsed.id,
+        filename: parsed.filename,
+        title: parsed.title,
+        excerpt: parsed.excerpt || parsed.oneSentence || '',
+        fullContent: parsed.content,
+        url: parsed.sourceUrl,
+        domain: parsed.domain,
+        modifiedAt: stats.mtime,
+        wordCount: parsed.wordCount,
+        scores: parsed.scores ? {
+          signal: parsed.scores.signal,
+          depth: parsed.scores.depth,
+          unique: parsed.scores.uniqueness,
+          practical: parsed.scores.practical,
+          antiHype: parsed.scores.antiHype,
+          mainJournal: parsed.scores.mainJournal,
+          annexPotential: parsed.scores.annexPotential,
+          overall: parsed.scores.overall
+        } : undefined,
+        topics: parsed.topics,
+        language: parsed.language,
+        originalTitle: parsed.originalTitle,
+      };
+    }
+
+    // Legacy markdown parsing (keep existing logic for backward compatibility)
     const filename = filePath.split('/').pop() || '';
     const parsedFilename = parseSummaryFilename(filename);
 
     if (!parsedFilename) {
       return null;
     }
-
-    const content = readFileSync(filePath, 'utf-8');
-    const stats = statSync(filePath);
 
     const title = extractTitleFromMarkdown(content);
     const excerpt = extractExcerpt(content);
@@ -306,8 +344,8 @@ export function getAllWorkdeskSummaries(): WorkdeskSummary[] {
     }
 
     const files = readdirSync(summariesPath);
-    const summaryFiles = files.filter(file => 
-      file.endsWith('.md') && 
+    const summaryFiles = files.filter(file =>
+      (file.endsWith('.md') || file.endsWith('.json')) &&
       /^\d{3}_/.test(file) // Only files starting with 3-digit ID
     );
 
