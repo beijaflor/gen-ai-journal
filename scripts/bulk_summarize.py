@@ -48,14 +48,13 @@ def find_unchecked_urls(sources_file: Path) -> List[Tuple[int, str]]:
 
     return unchecked
 
-def generate_summary(url: str, url_id: int, summaries_dir: Path, format: str = 'json') -> Tuple[bool, str]:
+def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, str]:
     """Generate summary for URL.
 
     Args:
         url: URL to summarize
         url_id: Numeric ID for the summary
         summaries_dir: Directory to save summary
-        format: Output format ('json' or 'markdown')
 
     Returns:
         (success: bool, message: str)
@@ -65,20 +64,18 @@ def generate_summary(url: str, url_id: int, summaries_dir: Path, format: str = '
         parsed = urlparse(url)
         domain = parsed.netloc.replace('www.', '').replace('.', '_')
 
-        # Filename extension based on format
-        ext = '.json' if format == 'json' else '.md'
-        filename = f"{url_id:03d}_{domain}{ext}"
+        # Always use JSON format
+        filename = f"{url_id:03d}_{domain}.json"
         output_path = summaries_dir / filename
 
         # Check if summary already exists (skip if so)
         if output_path.exists():
             return True, f"Summary already exists: {output_path}"
 
-        # Generate summary with specified format
+        # Generate summary (always JSON)
         cmd = [
             'uv', 'run', 'scripts/call-gemini.py',
             '--url', url,
-            '--format', format,
             '--output', str(output_path)
         ]
 
@@ -174,12 +171,6 @@ def main():
         action='store_true',
         help='Sync checkbox state with existing summary files'
     )
-    parser.add_argument(
-        '--format',
-        choices=['markdown', 'json'],
-        default='json',
-        help='Output format for summaries: json (default) or markdown'
-    )
 
     args = parser.parse_args()
 
@@ -235,7 +226,7 @@ def main():
     for url_id, url in unchecked_urls:
         print(f"\n[{url_id:03d}] Processing: {url}")
 
-        success, result = generate_summary(url, url_id, summaries_dir, args.format)
+        success, result = generate_summary(url, url_id, summaries_dir)
 
         if success:
             print(f"✓ Summary generated: {result}")

@@ -477,8 +477,6 @@ def main():
     parser.add_argument('--disable-context-cache', action='store_true',
                        help='Disable explicit context caching')
     parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
-    parser.add_argument('--format', choices=['markdown', 'json'], default='markdown',
-                       help='Output format: markdown (default) or json (structured output with native Gemini schema)')
 
     args = parser.parse_args()
 
@@ -495,13 +493,10 @@ def main():
     
     # Handle URL summarization
     if args.url:
-        logging.info(f"URL summarization mode for: {args.url} (format: {args.format})")
+        logging.info(f"URL summarization mode for: {args.url}")
 
-        # Use JSON prompt for JSON format, markdown prompt for markdown format
-        if args.format == 'json':
-            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
-        else:
-            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
+        # Always use JSON prompt for URL summarization
+        prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
 
         logging.debug(f"Looking for prompt file: {prompt_file}")
 
@@ -599,10 +594,10 @@ def main():
     elif args.disable_context_cache:
         logging.info("Context caching explicitly disabled")
 
-    # Handle structured JSON output or regular text output
-    if args.format == 'json':
-        # Use native Gemini structured output with schema
-        logging.info("JSON format: using native Gemini structured output")
+    # Generate output based on mode
+    if args.url:
+        # URL summarization: Always use structured JSON output
+        logging.info("Using native Gemini structured output for URL summary")
 
         try:
             # Call Gemini with structured output
@@ -630,7 +625,7 @@ def main():
             print(f"Error: Failed to generate structured JSON: {e}", file=sys.stderr)
             sys.exit(1)
     else:
-        # Regular markdown output
+        # Non-URL prompts: Regular text output
         response = call_gemini(
             dynamic_prompt,
             args.model,
