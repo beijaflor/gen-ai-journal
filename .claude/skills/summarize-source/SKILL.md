@@ -24,9 +24,9 @@ Use this skill when:
 cd /Users/shootani/Dropbox/github/gen-ai-journal
 ```
 
-### Option 1: Batch Process All Unchecked URLs
+### Option 1: Batch Process All Unchecked URLs (JSON Format - Default)
 
-This is the most common workflow for processing multiple unchecked sources.
+This is the most common workflow for processing multiple unchecked sources. **Now generates structured JSON summaries by default.**
 
 ```bash
 uv run scripts/bulk_summarize.py
@@ -35,11 +35,21 @@ uv run scripts/bulk_summarize.py
 **What it does**:
 1. Scans `workdesk/sources.md` for unchecked entries `- [ ] XXX. URL`
 2. For each unchecked URL:
-   - Generates summary using Gemini AI
-   - Saves to `workdesk/summaries/XXX_domain.md`
+   - Generates **structured JSON summary** using Gemini AI with schema validation
+   - Validates against JSON v1.0 schema (scores, topics, metadata)
+   - Saves to `workdesk/summaries/XXX_domain.json`
    - Marks as checked `- [x]` in sources.md
 3. Uses context caching for efficiency (automatic)
 4. Provides progress updates and final summary
+
+**Format options**:
+```bash
+# JSON format (default, recommended)
+uv run scripts/bulk_summarize.py
+
+# Markdown format (legacy)
+uv run scripts/bulk_summarize.py --format markdown
+```
 
 **When to use**: Processing 2+ unchecked URLs at once
 
@@ -56,12 +66,22 @@ For processing a specific URL when you need more control.
 
 2. **Extract the URL** from the output
 
-3. **Generate summary**:
+3. **Generate summary** (JSON format):
    ```bash
-   uv run scripts/call-gemini.py --url "URL_HERE" --output workdesk/summaries/089_domain_name.md
+   uv run scripts/call-gemini.py --url "URL_HERE" --format json --output workdesk/summaries/089_domain_name.json
    ```
 
-4. **Mark as checked** in sources.md:
+   Or markdown format (legacy):
+   ```bash
+   uv run scripts/call-gemini.py --url "URL_HERE" --format markdown --output workdesk/summaries/089_domain_name.md
+   ```
+
+4. **Validate JSON** (automatic for --format json):
+   - Schema validation happens automatically
+   - Script exits with error if validation fails
+   - Check stderr for validation error details
+
+5. **Mark as checked** in sources.md:
    - Use Edit tool to change `- [ ] 089.` to `- [x] 089.`
 
 **When to use**:
@@ -96,25 +116,30 @@ For batch operations:
 Summaries are saved to `workdesk/summaries/` with this pattern:
 
 ```
-XXX_domain_name.md
+XXX_domain_name.json  (JSON format - default)
+XXX_domain_name.md    (Markdown format - legacy)
 ```
 
 Where:
 - `XXX` = 3-digit ID (001, 002, 089, etc.)
 - `domain_name` = simplified domain (example_com, github_com, etc.)
+- Extension = `.json` or `.md` based on format
 
 Examples:
-- `089_example_com.md`
-- `090_github_com.md`
-- `091_qiita_com.md`
+- `089_example_com.json` (structured JSON with scores and topics)
+- `090_github_com.json` (JSON format)
+- `091_qiita_com.md` (markdown format, if explicitly requested)
 
 ## What This Skill Does
 
-- ✅ Generates Japanese summaries for URLs
+- ✅ Generates structured JSON summaries for URLs (default)
+- ✅ Validates JSON against v1.0 schema (scores, topics, metadata)
+- ✅ Generates Japanese summaries using Gemini AI
 - ✅ Marks URLs as checked/processed after successful summary
 - ✅ Handles batch processing efficiently with context caching
 - ✅ Reports progress and errors
-- ✅ Creates summary files in workdesk/summaries/
+- ✅ Creates summary files in workdesk/summaries/ (.json or .md)
+- ✅ Supports both JSON (structured) and markdown (legacy) formats
 
 ## What This Skill Does NOT Do
 
@@ -141,10 +166,27 @@ Examples:
 ## File Locations
 
 - **Sources list**: `workdesk/sources.md`
-- **Summaries**: `workdesk/summaries/XXX_filename.md`
+- **Summaries**: `workdesk/summaries/XXX_filename.json` (or `.md` for legacy)
+- **JSON schema**: `schema/summary-v1-schema.json`
 - **Batch script**: `scripts/bulk_summarize.py`
 - **Single script**: `scripts/call-gemini.py`
+- **JSON prompt**: `prompts/summarize-json.prompt`
+- **Markdown prompt**: `prompts/summarize.prompt`
 - **Workflow docs**: `workflow/STEP_02_GENERATE_SUMMARIES.md`
+
+## JSON Validation
+
+When using JSON format (default), summaries are automatically validated against the v1.0 schema:
+
+**Validation checks**:
+- ✓ Required fields present (title, url, scores, topics, etc.)
+- ✓ Version = "1.0"
+- ✓ Dimension scores in range 0-5 (signal, depth, uniqueness, practical, antiHype)
+- ✓ Composite scores in range 0-100 (mainJournal, annexPotential, overall)
+- ✓ Topics array has 1-5 elements
+- ✓ String length constraints (title: 1-200, summaryBody: 100-1200, etc.)
+
+**If validation fails**: Script exits with error message, URL remains unchecked, no file written.
 
 ## Error Handling
 
@@ -156,27 +198,29 @@ Examples:
 
 ## Examples
 
-### Example 1: Batch Process All Unchecked
+### Example 1: Batch Process All Unchecked (JSON Format)
 
 **User says**: "Generate summaries for all unchecked sources"
 
 **Skill activates and**:
-1. ✓ Runs `uv run scripts/bulk_summarize.py`
+1. ✓ Runs `uv run scripts/bulk_summarize.py` (defaults to JSON format)
 2. ✓ Script finds 15 unchecked URLs
-3. ✓ Generates 15 summaries (progress shown)
-4. ✓ Marks all 15 as checked
-5. ✓ Reports: "Generated 15 summaries successfully"
+3. ✓ Generates 15 JSON summaries with validation (progress shown)
+4. ✓ All 15 summaries pass schema validation
+5. ✓ Marks all 15 as checked
+6. ✓ Reports: "Generated 15 JSON summaries successfully"
 
-### Example 2: Single URL
+### Example 2: Single URL with JSON
 
 **User says**: "Generate summary for ID 089"
 
 **Skill activates and**:
 1. ✓ Finds URL in sources.md for ID 089
-2. ✓ Runs call-gemini.py with that URL
-3. ✓ Saves summary to workdesk/summaries/089_example_com.md
-4. ✓ Marks ID 089 as checked in sources.md
-5. ✓ Reports: "Generated summary for ID 089"
+2. ✓ Runs call-gemini.py with --format json
+3. ✓ Validates JSON structure against v1.0 schema
+4. ✓ Saves summary to workdesk/summaries/089_example_com.json
+5. ✓ Marks ID 089 as checked in sources.md
+6. ✓ Reports: "Generated JSON summary for ID 089"
 
 ### Example 3: After Using add-url Skill
 
@@ -184,8 +228,9 @@ Examples:
 1. User adds 5 URLs with `add-url` skill → IDs 089-093 (unchecked)
 2. User says "now summarize them"
 3. `summarize-source` skill activates
-4. Runs bulk_summarize.py → generates 5 summaries
-5. All 5 IDs now checked in sources.md
+4. Runs bulk_summarize.py → generates 5 JSON summaries
+5. All 5 summaries validated and saved as .json files
+6. All 5 IDs now checked in sources.md
 
 ## Performance Notes
 
@@ -205,11 +250,20 @@ Examples:
 **Issue**: Summary file created but not marked as checked
 **Solution**: Manually mark as checked using Edit tool
 
+**Issue**: JSON validation fails
+**Solution**:
+1. Check error message for specific validation failure
+2. Common issues: score out of range, topics array wrong size, missing required field
+3. Re-run generation - Gemini will try again with schema enforcement
+
 **Issue**: Want to re-generate a summary
 **Solution**:
 1. Uncheck the URL in sources.md
-2. Delete the old summary file
+2. Delete the old summary file (.json or .md)
 3. Run bulk_summarize.py or call-gemini.py
+
+**Issue**: Need markdown format instead of JSON
+**Solution**: Use `--format markdown` flag explicitly
 
 ## Relationship to Other Skills
 
