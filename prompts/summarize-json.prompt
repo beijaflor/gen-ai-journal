@@ -4,7 +4,39 @@ Summarize the article according to instructions below. Output the summary as str
 
 Article contents is very last of prompt.
 
-**IMPORTANT**: Your output will be validated against a JSON schema. The schema is enforced programmatically via `response_schema` parameter, so you must follow the exact field names and types specified.
+**IMPORTANT**: Your output MUST use this exact nested structure:
+
+```json
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-08T14:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Japanese title here",
+    "originalTitle": "Original English title" or null,
+    "url": "https://...",
+    "language": "ja" or "en" or "other",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "One sentence in Japanese",
+    "summaryBody": "Full summary body in markdown format",
+    "topics": ["topic1", "topic2", "topic3"],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 80,
+      "overall": 78
+    }
+  }
+}
+```
+
+**You must output ONLY this JSON structure. Do not add any other fields at the root level.**
 
 # **Content Validation**
 

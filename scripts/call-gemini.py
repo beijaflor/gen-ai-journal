@@ -182,11 +182,11 @@ def validate_json_summary(data: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
 
 
 def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[str] = None) -> Dict[str, Any]:
-    """Call Gemini AI with structured output using response_schema.
+    """Call Gemini AI with structured output.
 
     Args:
-        prompt: The prompt to send
-        schema: JSON schema for structured output
+        prompt: The prompt to send (should instruct JSON output)
+        schema: JSON schema for validation (not passed to API, used for validation only)
         model: Model name to use
 
     Returns:
@@ -204,10 +204,11 @@ def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[
 
         logging.info("Sending structured output request to Gemini...")
 
-        # Configure generation with schema
+        # Configure generation for JSON output
+        # Note: We rely on prompt instructions for structure, not response_schema
+        # This is more flexible and gives better error messages from our validation
         generation_config = genai.GenerationConfig(
-            response_mime_type="application/json",
-            response_schema=schema
+            response_mime_type="application/json"
         )
 
         response = gemini_model.generate_content(
@@ -222,12 +223,44 @@ def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[
         logging.info(f"Response length: {len(result_text)} characters")
         logging.debug(f"Raw response:\n{'-'*50}\n{result_text}\n{'-'*50}")
 
+        # Save raw response to temp file for debugging
+        import tempfile
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, prefix='gemini_raw_') as f:
+            f.write(result_text)
+            logging.info(f"Raw response saved to: {f.name}")
+
         # Parse and add metadata
         result_data = json.loads(result_text)
+
+        # Handle case where Gemini returns a list instead of object
+        if isinstance(result_data, list):
+            logging.warning(f"Gemini returned a list with {len(result_data)} elements, taking first element")
+            if len(result_data) > 0:
+                result_data = result_data[0]
+            else:
+                raise ValueError("Gemini returned empty list")
+
+        # Ensure we have a dict
+        if not isinstance(result_data, dict):
+            logging.error(f"Unexpected response type: {type(result_data)}")
+            logging.error(f"Response preview: {str(result_data)[:500]}")
+            raise ValueError(f"Expected dict, got {type(result_data)}")
+
+        # Log the keys for debugging
+        logging.debug(f"Result data keys: {list(result_data.keys()) if isinstance(result_data, dict) else 'not a dict'}")
 
         # Ensure metadata fields are populated (in case Gemini doesn't include them)
         if 'metadata' not in result_data:
             result_data['metadata'] = {}
+
+        # Ensure content field exists
+        if 'content' not in result_data:
+            # Gemini might have returned flat structure, try to wrap it
+            logging.warning("Response missing 'content' field, attempting to restructure")
+            result_data = {
+                'metadata': result_data.get('metadata', {}),
+                'content': result_data
+            }
 
         result_data['metadata']['version'] = '1.0'
         result_data['metadata']['generatedAt'] = datetime.now(timezone.utc).isoformat()
@@ -237,6 +270,7 @@ def call_gemini_structured(prompt: str, schema: Dict[str, Any], model: Optional[
 
     except json.JSONDecodeError as e:
         logging.error(f"Failed to parse JSON response: {str(e)}")
+        logging.error(f"Response text: {result_text[:1000]}")
         raise ValueError(f"Invalid JSON response from Gemini: {str(e)}")
     except Exception as e:
         logging.error(f"Error calling Gemini with structured output: {str(e)}")
@@ -366,11 +400,8 @@ def main():
     if args.url:
         logging.info(f"URL summarization mode for: {args.url} (format: {args.format})")
 
-        # Select prompt file based on format
-        if args.format == 'json':
-            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
-        else:
-            prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
+        # Always use markdown prompt (for JSON, we convert markdown to JSON afterwards)
+        prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize.prompt')
 
         logging.debug(f"Looking for prompt file: {prompt_file}")
         
@@ -470,33 +501,26 @@ def main():
 
     # Handle structured JSON output or regular text output
     if args.format == 'json':
-        # Load JSON schema
-        if args.json_schema:
-            schema_path = args.json_schema
-        else:
-            schema_path = os.path.join(script_dir, '..', 'schema', 'summary-v1-schema.json')
+        # For JSON format: Generate markdown first, then convert to JSON
+        # This approach is more reliable than trying to get Gemini to follow complex schemas
+        logging.info("JSON format: generating markdown first, then converting to JSON")
 
-        logging.info(f"Loading JSON schema from: {schema_path}")
+        # Generate markdown response
+        markdown_response = call_gemini(
+            dynamic_prompt,
+            args.model,
+            args.clean,
+            args.no_cache,
+            enable_context_cache=enable_caching,
+            static_content=static_content
+        )
 
+        # Convert markdown to JSON
         try:
-            with open(schema_path, 'r', encoding='utf-8') as f:
-                schema = json.load(f)
-        except FileNotFoundError:
-            logging.error(f"JSON schema file not found: {schema_path}")
-            print(f"Error: JSON schema file not found: {schema_path}", file=sys.stderr)
-            sys.exit(1)
-        except json.JSONDecodeError as e:
-            logging.error(f"Invalid JSON schema: {e}")
-            print(f"Error: Invalid JSON schema: {e}", file=sys.stderr)
-            sys.exit(1)
+            from markdown_to_json import parse_markdown_summary
 
-        # Call Gemini with structured output
-        try:
-            response_data = call_gemini_structured(
-                dynamic_prompt,
-                schema,
-                args.model
-            )
+            logging.info("Converting markdown to JSON v1.0 format...")
+            response_data = parse_markdown_summary(markdown_response, args.url or "")
 
             # Validate JSON structure
             logging.info("Validating JSON structure...")
@@ -513,8 +537,8 @@ def main():
             response = json.dumps(response_data, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            logging.error(f"Failed to generate structured JSON: {e}")
-            print(f"Error: Failed to generate structured JSON: {e}", file=sys.stderr)
+            logging.error(f"Failed to convert markdown to JSON: {e}")
+            print(f"Error: Failed to convert markdown to JSON: {e}", file=sys.stderr)
             sys.exit(1)
     else:
         # Regular markdown output
