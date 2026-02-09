@@ -7,6 +7,7 @@ export interface WorkdeskSummary {
   filename: string; // Original filename
   title: string; // Extracted from markdown
   excerpt: string; // Brief summary
+  fullExcerpt?: string; // Full first paragraph (no truncation)
   fullContent: string; // Full markdown content body
   url: string; // Reconstructed URL
   domain: string; // Source domain
@@ -50,20 +51,20 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
   // Find the main Japanese summary paragraph (usually after the first URL)
   const lines = content.split('\n');
   let foundUrl = false;
-  
+
   for (const line of lines) {
     const trimmed = line.trim();
-    
+
     // Skip until after URL and metadata
     if (trimmed.startsWith('https://')) {
       foundUrl = true;
       continue;
     }
-    
+
     if (trimmed.startsWith('**') || trimmed.startsWith('[[')) {
       continue;
     }
-    
+
     // Look for substantial Japanese content
     if (foundUrl && trimmed.length > 20 && /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
       return trimmed.length > maxLength ? `${trimmed.substring(0, maxLength)}...` : trimmed;
@@ -80,6 +81,57 @@ function extractExcerpt(content: string, maxLength: number = 150): string {
   }
 
   return `${content.substring(0, maxLength)}...`;
+}
+
+function shouldSkipLine(line: string): boolean {
+  const trimmed = line.trim();
+  if (!trimmed) return true;
+  if (trimmed.startsWith('#')) return true;
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return true;
+  // Skip metadata lines like **Content Type**: but not summary lines like **分析する**：
+  if (/^\*\*[A-Za-z\s]+\*\*:/.test(trimmed)) return true;
+  if (trimmed.startsWith('[[')) return true;
+  return false;
+}
+
+function extractFullFirstParagraph(content: string): string {
+  // Strategy 1: Paragraph-based extraction
+  const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
+  const paragraphs = withoutHeaders.split('\n\n');
+
+  for (const paragraph of paragraphs) {
+    const trimmed = paragraph.trim();
+    if (trimmed.length < 15) continue;
+
+    const firstLine = trimmed.split('\n')[0];
+    if (shouldSkipLine(firstLine)) continue;
+
+    // Accept if contains Japanese or is substantial English
+    if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
+      return trimmed;
+    }
+    if (trimmed.length > 30) {
+      return trimmed;
+    }
+  }
+
+  // Strategy 2: Line-by-line fallback
+  const lines = content.split('\n');
+  const contentLines: string[] = [];
+
+  for (const line of lines) {
+    if (shouldSkipLine(line)) continue;
+
+    const trimmed = line.trim();
+    if (trimmed.length > 10) {
+      contentLines.push(trimmed);
+      if (contentLines.join(' ').length > 50) {
+        return contentLines.join(' ');
+      }
+    }
+  }
+
+  return contentLines.join(' ') || '';
 }
 
 function extractUrlFromContent(content: string): string {
@@ -299,6 +351,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
 
     const title = extractTitleFromMarkdown(content);
     const excerpt = extractExcerpt(content);
+    const fullExcerpt = extractFullFirstParagraph(content);
     const fullContent = extractFullContent(content);
     const url = extractUrlFromContent(content) || parsedFilename.url;
     const wordCount = countWords(content);
@@ -312,6 +365,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
       filename,
       title,
       excerpt,
+      fullExcerpt,
       fullContent,
       url,
       domain: parsedFilename.domain,
