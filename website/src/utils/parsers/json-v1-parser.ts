@@ -154,7 +154,8 @@ export class JsonV1Parser implements SummaryParser {
       const wordCount = this.countWords(markdownBody);
       const readingTime = this.calculateReadingTime(wordCount);
       const slug = this.generateSlug(json.content.title);
-      const excerpt = this.extractExcerpt(markdownBody, 150);
+      // Use oneSentenceSummary directly for excerpt instead of extracting from markdown
+      const excerpt = json.content.oneSentenceSummary;
 
       // Build SummaryEntry with JSON-specific metadata
       const entry: SummaryEntry = {
@@ -170,6 +171,7 @@ export class JsonV1Parser implements SummaryParser {
         wordCount,
         readingTime,
         excerpt,
+        fullExcerpt: json.content.oneSentenceSummary, // Also set fullExcerpt to oneSentenceSummary
 
         // Standard optional fields
         language: json.content.language as 'ja' | 'en' | 'other',
@@ -266,22 +268,6 @@ export class JsonV1Parser implements SummaryParser {
       .trim();
   }
 
-  /**
-   * Extract excerpt from markdown content
-   */
-  private extractExcerpt(content: string, maxLength: number = 200): string {
-    const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
-    const paragraphs = withoutHeaders.split('\n\n');
-
-    for (const paragraph of paragraphs) {
-      const trimmed = paragraph.trim();
-      if (trimmed && trimmed.length > 10) {
-        return trimmed.length > maxLength ? `${trimmed.substring(0, maxLength)}...` : trimmed;
-      }
-    }
-
-    return `${content.substring(0, maxLength)}...`;
-  }
 
   /**
    * Convert JSON content to markdown-compatible string
