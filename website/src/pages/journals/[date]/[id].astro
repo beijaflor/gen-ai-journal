@@ -110,7 +110,7 @@ if (isNextJournalDate(date)) {
       topics: workdeskSummary.topics,
       language: workdeskSummary.language,
       originalTitle: workdeskSummary.originalTitle
-    };
+    } as UnifiedSummary;
     isWorkdeskSummary = true;
     status = 'draft';
     journalContext = null;
