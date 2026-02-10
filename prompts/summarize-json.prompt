@@ -1,0 +1,226 @@
+# **Goal**
+
+Summarize the article according to instructions below. Output the summary as structured JSON matching the v1.0 schema.
+
+Article contents is very last of prompt.
+
+**IMPORTANT**: Your output MUST use this exact nested structure:
+
+```json
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-08T14:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Japanese title here",
+    "originalTitle": "Original English title" or null,
+    "url": "https://...",
+    "language": "ja" or "en" or "other",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "One sentence in Japanese",
+    "summaryBody": "Full summary body in markdown format",
+    "topics": ["topic1", "topic2", "topic3"],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 80,
+      "overall": 78
+    }
+  }
+}
+```
+
+**You must output ONLY this JSON structure. Do not add any other fields at the root level.**
+
+# **Content Validation**
+
+Before summarizing, check if article content was successfully fetched:
+- If content is empty, missing, or fetch failed → Return JSON with error indicator:
+
+```json
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "[ISO 8601 timestamp]",
+    "generatedBy": "[model name]"
+  },
+  "content": {
+    "title": "ERROR: Unable to fetch content",
+    "url": "[provided URL]",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Content fetch failed.",
+    "summaryBody": "No content available to summarize.",
+    "topics": ["Error"],
+    "scores": {
+      "signal": 0,
+      "depth": 0,
+      "uniqueness": 0,
+      "practical": 0,
+      "antiHype": 0,
+      "mainJournal": 0,
+      "annexPotential": 0,
+      "overall": 0
+    }
+  }
+}
+```
+
+# **Instructions**
+
+Adhere to the editorial persona defined at the end of this prompt.
+
+Your task is to summarize a given article for a weekly journal on Generative AI in coding. The summary must be in Japanese.
+
+The audience consists of web application engineers. Your summary should focus on "what happened" and, more importantly, "why it matters" from their perspective. Use a direct, active voice and strong verbs.
+
+First classify the article using the content type framework and then score it using the scoring framework defined at the end of this prompt.
+
+The final output must be valid JSON matching this structure:
+
+```json
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "[ISO 8601 timestamp]",
+    "generatedBy": "[model identifier]"
+  },
+  "content": {
+    "title": "[Article title in Japanese]",
+    "originalTitle": "[Original title in source language - only if non-Japanese, otherwise null]",
+    "url": "[Exact original URL - DO NOT modify]",
+    "language": "[ja/en/other]",
+    "contentType": "[One of 8 types from content type framework]",
+    "oneSentenceSummary": "[One sentence in Japanese]",
+    "summaryBody": "[Full summary in markdown format]",
+    "topics": ["[topic1]", "[topic2]", "[topic3]"],
+    "scores": {
+      "signal": 0-5,
+      "depth": 0-5,
+      "uniqueness": 0-5,
+      "practical": 0-5,
+      "antiHype": 0-5,
+      "mainJournal": 0-100,
+      "annexPotential": 0-100,
+      "overall": 0-100
+    }
+  }
+}
+```
+
+**Instructions for each field:**
+
+## metadata object
+
+- **version**: Always "1.0" (string literal)
+- **generatedAt**: Current timestamp in ISO 8601 format (e.g., "2026-02-08T14:30:00Z")
+- **generatedBy**: Model identifier (e.g., "gemini-3-flash-preview")
+
+## content object
+
+1.  **title** (string, required):
+    - If article language is **Japanese**: Use original Japanese title as-is
+    - If article language is **English**: Translate title to Japanese
+    - If article language is **other**: Translate title to Japanese
+    - Length: 1-200 characters
+
+2.  **originalTitle** (string or null, required):
+    - If article language is **Japanese**: Set to `null`
+    - If article language is **English**: Original English title
+    - If article language is **other**: Original title in source language
+    - Length: 1-300 characters (if not null)
+
+3.  **url** (string, required):
+    - Use the exact original URL as provided in input
+    - DO NOT modify, shorten, clean, or sanitize the URL
+    - Must be valid URI format
+
+4.  **language** (string, required):
+    - Detect primary language of source article
+    - Must be one of: "ja", "en", "other"
+
+5.  **contentType** (string, required):
+    - Classify using content type framework below
+    - Must be one of 8 defined types (see framework)
+    - Include both emoji and bilingual label (e.g., "🔬 Research & Analysis (研究・分析)")
+
+6.  **oneSentenceSummary** (string, required):
+    - Single descriptive sentence in Japanese
+    - Neutrally conveys author's main point
+    - Start with strong, active verb
+    - Length: 10-300 characters
+
+7.  **summaryBody** (string, required):
+    - Full summary in **markdown format** (not plain text)
+    - Written in Japanese
+    - Length: 100-1200 characters (typical: 300-800)
+    - **Use markdown formatting**: Bold for tool names (**Microsoft Presidio**), headings if needed
+
+    **Length variation by content type:**
+    - **Short announcements/news**: 300-450 characters
+    - **Standard articles**: 450-650 characters (DEFAULT)
+    - **Deep technical/multi-faceted**: 650-800 characters
+
+    **Summary Body Structure:**
+    1. **What's covered** (2-3 sentences): Core topic and scope with concrete details
+    2. **Key insights/takeaways** (2-4 sentences): Main points, specific tools/techniques, practical learnings
+    3. **Who should read** (1 sentence): Clear target audience and decision trigger
+
+    **Writing Guidelines:**
+    - Use **bold** for specific tool names and technical terms
+    - Be concrete about techniques and methodologies
+    - Focus on decision-making value
+    - Avoid generic padding or excessive interpretation
+    - For technical articles, be specific about the techniques described
+
+8.  **topics** (array of strings, required):
+    - Provide 1-5 key topics
+    - Relevant to AI coding, development tools, or workflows
+    - Specific and distinct
+    - Each topic: 1-50 characters
+    - Example: ["Prompt Engineering", "コード生成", "Developer Experience"]
+
+9.  **scores** (object, required):
+    - Apply scoring framework (see below)
+    - All 8 fields are required
+
+    **Dimension scores (0-5 scale):**
+    - **signal**: Signal-to-noise ratio
+    - **depth**: Content depth and substance
+    - **uniqueness**: Perspective uniqueness
+    - **practical**: Practical applicability
+    - **antiHype**: Anti-hype factor (grounded vs hyperbolic)
+
+    **Composite scores (0-100 scale):**
+    - **mainJournal**: Main journal fit score (calculated per content type)
+    - **annexPotential**: Annex journal potential score
+    - **overall**: Overall quality score
+
+10. **Objectivity**: Summarize based only on article content. Report author's arguments without adding your own interpretation. If author states opinion, attribute clearly.
+
+---
+
+# Content Type Framework
+{{file:../criteria/content_types.md}}
+
+---
+
+# Scoring Framework
+{{file:../criteria/scoring_framework.md}}
+
+---
+
+# Editorial Persona
+{{file:../EDITOR_PERSONALITY.md}}
+
+---
+
+# Article Content
+
+{{fetch:"{{url}}"}}

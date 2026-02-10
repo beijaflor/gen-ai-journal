@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { summaryParsers } from './summary-parser';
 
 // Base types for journal content
 export interface JournalEntry {
@@ -34,6 +35,27 @@ export interface SummaryEntry {
   fullExcerpt?: string; // Full first paragraph (no truncation)
   language?: 'ja' | 'en' | 'other'; // Source language
   originalTitle?: string; // Original title (for non-Japanese articles)
+
+  // JSON-specific metadata (optional, only present for JSON summaries)
+  contentType?: string; // Content category (e.g., "🔬 Research & Analysis")
+  oneSentence?: string; // One sentence summary
+  topics?: string[]; // Topic tags (1-5 tags)
+  scores?: {
+    signal: number;
+    depth: number;
+    uniqueness: number;
+    practical: number;
+    antiHype: number;
+    mainJournal: number;
+    annexPotential: number;
+    overall: number;
+  };
+  metadata?: {
+    version: string;
+    generatedAt: string;
+    generatedBy: string;
+    format: 'json' | 'markdown';
+  };
 }
 
 export interface JournalArchive {
@@ -154,56 +176,7 @@ function extractExcerpt(
   return `${content.substring(0, maxLength)}...`;
 }
 
-function shouldSkipLine(line: string): boolean {
-  const trimmed = line.trim();
-  if (!trimmed) return true;
-  if (trimmed.startsWith('#')) return true;
-  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return true;
-  // Skip metadata lines like **Content Type**: but not summary lines like **分析する**：
-  if (/^\*\*[A-Za-z\s]+\*\*:/.test(trimmed)) return true;
-  if (trimmed.startsWith('[[')) return true;
-  return false;
-}
 
-function extractFullFirstParagraph(content: string): string {
-  // Strategy 1: Paragraph-based extraction
-  const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
-  const paragraphs = withoutHeaders.split('\n\n');
-
-  for (const paragraph of paragraphs) {
-    const trimmed = paragraph.trim();
-    if (trimmed.length < 15) continue;
-
-    const firstLine = trimmed.split('\n')[0];
-    if (shouldSkipLine(firstLine)) continue;
-
-    // Accept if contains Japanese or is substantial English
-    if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
-      return trimmed;
-    }
-    if (trimmed.length > 30) {
-      return trimmed;
-    }
-  }
-
-  // Strategy 2: Line-by-line fallback
-  const lines = content.split('\n');
-  const contentLines: string[] = [];
-
-  for (const line of lines) {
-    if (shouldSkipLine(line)) continue;
-
-    const trimmed = line.trim();
-    if (trimmed.length > 10) {
-      contentLines.push(trimmed);
-      if (contentLines.join(' ').length > 50) {
-        return contentLines.join(' ');
-      }
-    }
-  }
-
-  return contentLines.join(' ') || '';
-}
 
 function countWords(text: string): number {
   // Count both Japanese characters and English words
@@ -229,15 +202,6 @@ function generateSlug(title: string): string {
     .trim();
 }
 
-function extractLanguage(content: string): 'ja' | 'en' | 'other' | undefined {
-  const match = content.match(/\*\*Language\*\*:\s*(ja|en|other)/);
-  return match ? (match[1] as 'ja' | 'en' | 'other') : undefined;
-}
-
-function extractOriginalTitle(content: string): string | undefined {
-  const match = content.match(/\*\*Original Title\*\*:\s*(.+)$/m);
-  return match ? match[1].trim() : undefined;
-}
 
 // File parsing functions
 function parseJournalFile(
@@ -279,62 +243,6 @@ function parseJournalFile(
   }
 }
 
-function parseSummaryFilename(filename: string): {
-  id: string;
-  domain: string;
-  path: string;
-  url: string;
-} | null {
-  try {
-    // Remove .md extension
-    const nameWithoutExt = filename.replace(/\.md$/, '');
-
-    // Try new format first: 001_domain_com_path.md
-    const newFormatMatch = nameWithoutExt.match(/^(\d{3})_(.+)$/);
-    if (newFormatMatch) {
-      const [, id, urlPart] = newFormatMatch;
-
-      // Parse domain and path
-      const parts = urlPart.split('_');
-      if (parts.length < 1) {
-        return null;
-      }
-
-      const domain = parts[0].replace(/_/g, '.');
-      const path = parts.slice(1).join('/');
-
-      // Reconstruct URL
-      const url = `https://${domain}${path ? `/${path}` : ''}`;
-
-      return { id, domain, path, url };
-    }
-
-    // Try old format: domain_com_path.md (without numeric prefix)
-    // Generate sequential ID based on alphabetical order
-    const parts = nameWithoutExt.split('_');
-    if (parts.length < 1) {
-      return null;
-    }
-
-    const domain = parts[0].replace(/_/g, '.');
-    const path = parts.slice(1).join('/');
-    
-    // Generate a hash-based ID for consistent ordering
-    let hash = 0;
-    for (let i = 0; i < nameWithoutExt.length; i++) {
-      hash = ((hash << 5) - hash + nameWithoutExt.charCodeAt(i)) & 0xffffff;
-    }
-    const id = String(Math.abs(hash % 1000)).padStart(3, '0');
-
-    // Reconstruct URL
-    const url = `https://${domain}${path ? `/${path}` : ''}`;
-
-    return { id, domain, path, url };
-  } catch (error) {
-    console.warn(`Failed to parse summary filename ${filename}:`, error);
-    return null;
-  }
-}
 
 function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
   try {
@@ -342,40 +250,10 @@ function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
       return null;
     }
 
-    const filename = filePath.split('/').pop() || '';
-    const parsedFilename = parseSummaryFilename(filename);
-
-    if (!parsedFilename) {
-      return null;
-    }
-
     const content = readFileSync(filePath, 'utf-8');
-    const title = extractTitleFromMarkdown(content);
-    const wordCount = countWords(content);
-    const readingTime = calculateReadingTime(wordCount);
-    const excerpt = extractExcerpt(content, 150);
-    const fullExcerpt = extractFullFirstParagraph(content);
-    const slug = generateSlug(title);
-    const language = extractLanguage(content);
-    const originalTitle = extractOriginalTitle(content);
 
-    return {
-      id: parsedFilename.id,
-      date,
-      filename,
-      sourceUrl: parsedFilename.url,
-      domain: parsedFilename.domain,
-      title,
-      content,
-      status: 'omitted', // Will be determined later
-      slug,
-      wordCount,
-      readingTime,
-      excerpt,
-      fullExcerpt,
-      language,
-      originalTitle,
-    };
+    // Use parser registry to handle both JSON and markdown formats
+    return summaryParsers.parseSummary(filePath, date, content);
   } catch (error) {
     console.warn(`Failed to parse summary file ${filePath}:`, error);
     return null;
@@ -498,9 +376,9 @@ export function parseJournalByDate(date: string): JournalArchive | null {
 
     if (existsSync(summariesDir)) {
       const allFiles = readdirSync(summariesDir);
-      const summaryFiles = allFiles.filter((file) => 
-        file.endsWith('.md') && 
-        !file.includes('sources.md') && 
+      const summaryFiles = allFiles.filter((file) =>
+        (file.endsWith('.md') || file.endsWith('.json')) &&
+        !file.includes('sources.md') &&
         !file.includes('omitted_sources.md')
       );
 
