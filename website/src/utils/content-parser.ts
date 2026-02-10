@@ -176,56 +176,7 @@ function extractExcerpt(
   return `${content.substring(0, maxLength)}...`;
 }
 
-function shouldSkipLine(line: string): boolean {
-  const trimmed = line.trim();
-  if (!trimmed) return true;
-  if (trimmed.startsWith('#')) return true;
-  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return true;
-  // Skip metadata lines like **Content Type**: but not summary lines like **分析する**：
-  if (/^\*\*[A-Za-z\s]+\*\*:/.test(trimmed)) return true;
-  if (trimmed.startsWith('[[')) return true;
-  return false;
-}
 
-function extractFullFirstParagraph(content: string): string {
-  // Strategy 1: Paragraph-based extraction
-  const withoutHeaders = content.replace(/^#{1,6}\s+.+$/gm, '');
-  const paragraphs = withoutHeaders.split('\n\n');
-
-  for (const paragraph of paragraphs) {
-    const trimmed = paragraph.trim();
-    if (trimmed.length < 15) continue;
-
-    const firstLine = trimmed.split('\n')[0];
-    if (shouldSkipLine(firstLine)) continue;
-
-    // Accept if contains Japanese or is substantial English
-    if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(trimmed)) {
-      return trimmed;
-    }
-    if (trimmed.length > 30) {
-      return trimmed;
-    }
-  }
-
-  // Strategy 2: Line-by-line fallback
-  const lines = content.split('\n');
-  const contentLines: string[] = [];
-
-  for (const line of lines) {
-    if (shouldSkipLine(line)) continue;
-
-    const trimmed = line.trim();
-    if (trimmed.length > 10) {
-      contentLines.push(trimmed);
-      if (contentLines.join(' ').length > 50) {
-        return contentLines.join(' ');
-      }
-    }
-  }
-
-  return contentLines.join(' ') || '';
-}
 
 function countWords(text: string): number {
   // Count both Japanese characters and English words
@@ -251,15 +202,6 @@ function generateSlug(title: string): string {
     .trim();
 }
 
-function extractLanguage(content: string): 'ja' | 'en' | 'other' | undefined {
-  const match = content.match(/\*\*Language\*\*:\s*(ja|en|other)/);
-  return match ? (match[1] as 'ja' | 'en' | 'other') : undefined;
-}
-
-function extractOriginalTitle(content: string): string | undefined {
-  const match = content.match(/\*\*Original Title\*\*:\s*(.+)$/m);
-  return match ? match[1].trim() : undefined;
-}
 
 // File parsing functions
 function parseJournalFile(
@@ -301,62 +243,6 @@ function parseJournalFile(
   }
 }
 
-function parseSummaryFilename(filename: string): {
-  id: string;
-  domain: string;
-  path: string;
-  url: string;
-} | null {
-  try {
-    // Remove .md extension
-    const nameWithoutExt = filename.replace(/\.md$/, '');
-
-    // Try new format first: 001_domain_com_path.md
-    const newFormatMatch = nameWithoutExt.match(/^(\d{3})_(.+)$/);
-    if (newFormatMatch) {
-      const [, id, urlPart] = newFormatMatch;
-
-      // Parse domain and path
-      const parts = urlPart.split('_');
-      if (parts.length < 1) {
-        return null;
-      }
-
-      const domain = parts[0].replace(/_/g, '.');
-      const path = parts.slice(1).join('/');
-
-      // Reconstruct URL
-      const url = `https://${domain}${path ? `/${path}` : ''}`;
-
-      return { id, domain, path, url };
-    }
-
-    // Try old format: domain_com_path.md (without numeric prefix)
-    // Generate sequential ID based on alphabetical order
-    const parts = nameWithoutExt.split('_');
-    if (parts.length < 1) {
-      return null;
-    }
-
-    const domain = parts[0].replace(/_/g, '.');
-    const path = parts.slice(1).join('/');
-    
-    // Generate a hash-based ID for consistent ordering
-    let hash = 0;
-    for (let i = 0; i < nameWithoutExt.length; i++) {
-      hash = ((hash << 5) - hash + nameWithoutExt.charCodeAt(i)) & 0xffffff;
-    }
-    const id = String(Math.abs(hash % 1000)).padStart(3, '0');
-
-    // Reconstruct URL
-    const url = `https://${domain}${path ? `/${path}` : ''}`;
-
-    return { id, domain, path, url };
-  } catch (error) {
-    console.warn(`Failed to parse summary filename ${filename}:`, error);
-    return null;
-  }
-}
 
 function parseSummaryFile(filePath: string, date: string): SummaryEntry | null {
   try {

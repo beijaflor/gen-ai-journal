@@ -323,10 +323,10 @@ const nextSummary = currentIndex > 0
                   <span class="score-value">{summary.scores.depth}/5</span>
                 </div>
               )}
-              {summary.scores.unique && (
+              {(summary.scores.unique || summary.scores.uniqueness) && (
                 <div class="score-item">
                   <span class="score-label">独自性</span>
-                  <span class="score-value">{summary.scores.unique}/5</span>
+                  <span class="score-value">{summary.scores.unique || summary.scores.uniqueness}/5</span>
                 </div>
               )}
             </div>
