@@ -30,7 +30,6 @@ const { summary } = Astro.props;
   } from '@/lib/supabase';
 
   interface EditState {
-    isEditing: boolean;
     isSaving: boolean;
     metadata: SummaryMetadata | null;
   }
@@ -41,7 +40,6 @@ const { summary } = Astro.props;
     private url: string;
     private aiScores: AiScores;
     private state: EditState = {
-      isEditing: false,
       isSaving: false,
       metadata: null,
     };
@@ -64,31 +62,16 @@ const { summary } = Astro.props;
         return;
       }
 
-      // Show edit button
-      this.renderEditButton();
+      // Load metadata and show form immediately
+      await this.loadAndRenderForm();
     }
 
-    private renderEditButton() {
+    private async loadAndRenderForm() {
       const editContainer = this.container.querySelector('.edit-container');
       if (!editContainer) return;
 
-      editContainer.innerHTML = `
-        <button class="edit-btn">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25a1.75 1.75 0 0 1 .445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.25.25 0 0 0-.064.108l-.558 1.953 1.953-.558a.249.249 0 0 0 .108-.064Z"></path>
-          </svg>
-          Edit Curation
-        </button>
-      `;
-
-      const editBtn = editContainer.querySelector('.edit-btn');
-      editBtn?.addEventListener('click', () => this.startEditing());
-    }
-
-    private async startEditing() {
-      if (this.state.isEditing) return;
-
-      this.state.isEditing = true;
+      // Show loading state
+      editContainer.innerHTML = '<div class="auth-check">Loading metadata...</div>';
 
       // Load or create metadata
       let metadata = await getSummaryMetadata(this.summaryId, this.url);
@@ -122,7 +105,6 @@ const { summary } = Astro.props;
         <div class="edit-form">
           <div class="edit-header">
             <h4>Curation Controls</h4>
-            <button class="close-btn">×</button>
           </div>
 
           <div class="flags-section">
@@ -180,9 +162,6 @@ const { summary } = Astro.props;
       `;
 
       // Attach event listeners
-      const closeBtn = editContainer.querySelector('.close-btn');
-      closeBtn?.addEventListener('click', () => this.cancelEditing());
-
       const inputs = editContainer.querySelectorAll('input, textarea');
       inputs.forEach((input) => {
         input.addEventListener('change', () => this.saveChanges());
@@ -249,11 +228,6 @@ const { summary } = Astro.props;
         statusText.textContent = '';
       }
     }
-
-    private cancelEditing() {
-      this.state.isEditing = false;
-      this.renderEditButton();
-    }
   }
 
   // Initialize all summary editors on the page
@@ -279,25 +253,6 @@ const { summary } = Astro.props;
     font-size: 0.875rem;
   }
 
-  .edit-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid #d1d5da;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.875rem;
-    color: #24292e;
-    transition: all 0.2s;
-  }
-
-  .edit-btn:hover {
-    background: #f3f4f6;
-    border-color: #c3c8cc;
-  }
-
   .edit-form {
     background: white;
     border: 1px solid #e1e4e8;
@@ -307,7 +262,7 @@ const { summary } = Astro.props;
 
   .edit-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;
     padding-bottom: 0.75rem;
@@ -318,25 +273,6 @@ const { summary } = Astro.props;
     margin: 0;
     font-size: 1rem;
     color: #24292e;
-  }
-
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #586069;
-    cursor: pointer;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-  }
-
-  .close-btn:hover {
-    background: #f6f8fa;
   }
 
   .flags-section,
