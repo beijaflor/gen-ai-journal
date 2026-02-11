@@ -34,8 +34,9 @@ with open(input_file, 'r', encoding='utf-8') as f:
 # Build URL to content mapping from summaries
 url_to_content = {}
 for filename in os.listdir(summaries_dir):
+    filepath = os.path.join(summaries_dir, filename)
+
     if filename.endswith('.md'):
-        filepath = os.path.join(summaries_dir, filename)
         with open(filepath, 'r', encoding='utf-8') as f:
             summary_content = f.read()
             # Find URL in the summary content
@@ -44,6 +45,26 @@ for filename in os.listdir(summaries_dir):
                 # Take the first URL found (each summary should have only one)
                 url = urls[0]
                 url_to_content[url] = summary_content
+
+    elif filename.endswith('.json'):
+        import json
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            url = data.get('content', {}).get('url')
+            if url:
+                # Convert JSON to markdown format for unified display
+                title = data.get('content', {}).get('title', 'Untitled')
+                original_title = data.get('content', {}).get('originalTitle')
+                one_sentence = data.get('content', {}).get('oneSentenceSummary', '')
+                summary_body = data.get('content', {}).get('summaryBody', '')
+
+                # Format as markdown
+                markdown = f"## {title}\n\n{url}\n\n"
+                if original_title:
+                    markdown += f"**Original Title**: {original_title}\n\n"
+                markdown += f"{one_sentence}\n\n{summary_body}"
+
+                url_to_content[url] = markdown
 
 # Process input URLs
 found_summaries = []
