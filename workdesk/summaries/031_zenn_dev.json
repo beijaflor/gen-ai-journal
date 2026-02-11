@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:56:42.135415+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "3,980円のカメラでClaude Codeに「身体」を与えてみた",
+    "url": "https://zenn.dev/nextbeat/articles/embodied-claude",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "3,980円のWi-FiカメラとMCPサーバーを活用し、Claude Codeに視覚、可動性、聴覚、長期記憶、発話能力といった「身体的」機能を実装した実験的な試みの紹介。",
+    "summaryBody": "著者の水島氏は、LLMがテキスト入出力に限定されている現状を「目も耳もない脳」と捉え、安価なWi-Fiカメラ（TP-Link Tapo）をClaude Codeに接続することで、AIに実世界とのI/O（身体性）を与えるプロジェクトを公開しました。Model Context Protocol (MCP) を基盤とし、カメラのパン・チルト操作（首振り）、画像キャプチャ（視覚）、Whisperによる音声認識（聴覚）、ChromaDBによる長期記憶、ElevenLabsによる発話機能を統合。AIが自ら見たい方向にカメラを動かして周囲を探索する「能動的」な動作や、鏡に映る自分を認識するような哲学的エピソードを交えつつ、Tapoカメラのローカル連携設定や技術スタックについて詳細に解説しています。",
+    "topics": [
+      "Claude Code",
+      "Model Context Protocol (MCP)",
+      "IoT",
+      "AIエージェント",
+      "TP-Link Tapo"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

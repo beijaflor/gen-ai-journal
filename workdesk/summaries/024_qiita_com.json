@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:55:09.940492+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 2.1.33のmemory frontmatterによるサブエージェントの記憶保持",
+    "url": "https://qiita.com/Aochan0604/items/example",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code 2.1.33で導入されたmemory frontmatter機能を使用し、サブエージェントがセッションを跨いで知識を蓄積・活用する仕組みを解説した記事。",
+    "summaryBody": "Claude Code 2.1.33にて追加された「memory frontmatter」機能の解説記事です。この機能により、サブエージェントやスキルのYAMLフロントマターに1行追加するだけで、エージェントが学習した知識を永続的に保持できるようになります。\n\n主な特徴は以下の通りです：\n- **3つのスコープ**: 全プロジェクト共通の`user`、Git管理可能なプロジェクト固有の`project`、個人用の`local`を選択可能。\n- **動作の仕組み**: `MEMORY.md`の先頭200行が自動的にシステムプロンプトへ注入されます。ただし、メモリへの書き込みは自動ではなく、エージェントがツールを使用して行うため、プロンプトで「メモリを更新して」と指示する必要があります。\n- **実践的な進化**: 記事内ではコードレビューエージェントの例を挙げ、1回目のレビューで見つけたパターンを記憶させることで、2回目にはプロジェクト全体の傾向分析（複数ファイルで再発する問題の特定など）まで自動化できることを示しています。\n\nCLAUDE.mdとの使い分けとして、全体方針はCLAUDE.md、エージェント固有の経験学習はmemory frontmatterという併用スタイルが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "LLM",
+      "memory frontmatter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "【Claude Code 2.1.33】memory frontmatterでサブエージェントに\"記憶\"を持たせてみた"
+  }
+}

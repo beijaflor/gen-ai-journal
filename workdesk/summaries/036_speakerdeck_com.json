@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:58:40.394881+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIスライドデザインを生成する仕組みを社内共有する",
+    "url": "https://speakerdeck.com/kenichiota0711/aisuraidodezainwosheng-chengsurushi-jie-miwoshe-nei-gong-you-suru",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NotebookLMとGeminiを組み合わせ、デザインルールを「型」として定義することで、社内メンバーが容易に高品質なスライドデザインを生成できる仕組みを解説した資料。",
+    "summaryBody": "本資料は、社内の誰もが一定の品質でスライドデザインを生成できるようにするための具体的な設計思想と運用方法を解説しています。主なアプローチとして、サービス資料特有の「固定情報」とAIで生成する「カスタマイズ領域」を分離し、NotebookLMを知識基盤として活用する手法を提案しています。設計のポイントとして、AIの混乱を避けるために参照ソースを3つ以下に絞ることや、Geminiのカスタム指示（Gem）を用いて情報の優先度（コンテンツ・構成・デザインシステム）を定義する方法を紹介。さらに、3カラム構成、カード型、プロセス、比較図など、具体的かつ実用的な9種類の「スライドの型」をプロンプトとして定義し、それらをNotionで社内共有するプロセスまでを網羅しています。デザイン生成における「AIへの指示の具体化」と「運用の標準化」に焦点を当てた、非常に実践的なガイドです。",
+    "topics": [
+      "生成AI",
+      "スライドデザイン",
+      "プロンプトエンジニアリング",
+      "NotebookLM",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
