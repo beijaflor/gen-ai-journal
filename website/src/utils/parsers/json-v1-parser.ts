@@ -276,8 +276,8 @@ export class JsonV1Parser implements SummaryParser {
    * without modification. The summaryBody is already in markdown format.
    */
   private toMarkdownCompatible(content: JsonV1Content): string {
-    // summaryBody is already markdown, just return it
-    // Additional formatting could be added here if needed
-    return content.summaryBody;
+    // Unescape literal \\n sequences to actual newlines
+    // This handles cases where JSON contains double-escaped newlines
+    return content.summaryBody.replace(/\\n/g, '\n');
   }
 }
