@@ -15,7 +15,6 @@
 - [x] 012. https://www.brendangregg.com/blog/2026-02-07/why-i-joined-openai.html
 - [x] 013. https://github.com/Deso-PK/make-trust-irrelevant
 - [x] 014. https://news.ycombinator.com/item?id=46922969
-- [x] 015. https://spillhistorie.no/2026/02/06/interview-with-sierra-veteran-al-lowe/
 - [x] 016. https://federicopereiro.com/llm-high/
 - [x] 017. https://haskellforall.com/2026/02/beyond-agentic-coding
 - [x] 018. https://cyber-omelette.com/posts/the-abstraction-rises.html
