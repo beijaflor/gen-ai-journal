@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:17:17.404018+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Agent Teams を使って、Agent Teams の記事を書いてみた",
+    "url": "https://zenn.dev/aun_phonogram/articles/agent-teams-meta-article",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの新機能「Agent Teams」を活用し、リサーチャー・ライター・レビュアーの3つのAIエージェントを連携させて技術記事を自動生成する実験的な試みと、その具体的な構成・コスト・注意点を解説しています。",
+    "summaryBody": "### 概要\nClaude Code v2.1.32でリリースされた実験的機能「Agent Teams」を使い、マルチエージェント体制で技術記事を執筆した実践レポートです。エージェントが自律的に連携する様子や、実際のトークン消費量まで詳細に公開されています。\n\n### 主なポイント\n- **Agent Teamsの仕組み**: 複数の独立したClaude Codeインスタンスが「チーム」を組み、共有タスクリストとメッセージングを通じて並行作業を行う。既存の「サブエージェント」との違いは、メンバー間での直接的なコミュニケーションと自己調整が可能な点にあります。\n- **実践ワークフロー**: リサーチャー（調査）、ライター（執筆）、レビュアー（校閲）の3人を生成。タスク間に依存関係を設定し、調査結果を元に執筆し、別視点でレビューを行うという人間のようなプロセスを再現しています。\n- **コストと運用知見**: 今回の試行では約1,600万トークン（Opus換算で約$17.64相当）を消費。プロンプトキャッシングが94%以上機能しているものの、チーム人数に比例するコスト増には注意が必要です。\n\n### 結論\n調査と執筆の分離や、独立した視点によるレビューなど、並列化と多角的な視点が必要なタスクにおいて強力な効果を発揮します。一方、ファイル競合や会話履歴の非共有といった実験的機能ゆえの制限を理解した使い分けが求められます。",
+    "topics": [
+      "Claude Code",
+      "Agent Teams",
+      "AIエージェント",
+      "マルチエージェント",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

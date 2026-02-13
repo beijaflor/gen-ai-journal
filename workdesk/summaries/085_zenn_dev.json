@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:16:48.179218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeがベクトル検索を採用しなくなった理由：Agentic Searchへの移行とその背景",
+    "url": "https://zenn.dev/knowledge_sense/articles/a77a9354278440",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeが従来のベクトル検索を廃止し、GlobやGrepをツールとして用いるAgentic Searchへ移行した技術的理由と、コード探索におけるRAGの課題を解説しています。",
+    "summaryBody": "Claude Codeの初期開発段階ではベクトル検索（RAG）が検討されていましたが、最終的にはLLMが自律的に検索ツールを操作する「Agentic Search」が採用されました。本記事ではその理由として、(1)コードの変更頻度に対するインデックス更新コストの高さ、(2)意味的な類似性よりも正規表現やファイル名一致による検索の方がコード探索においては確実性が高いこと、(3)コードベース特有の「参照関係の追跡」がベクトル検索よりも効率的であることを挙げています。また、セキュリティや情報の鮮度管理の観点からも、事前準備を必要とするベクトルDBよりも、その場でファイルを読み書きするエージェント型のアプローチが優れていると結論付けています。",
+    "topics": [
+      "Claude Code",
+      "Agentic RAG",
+      "ベクトル検索",
+      "LLMエージェント",
+      "コード探索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

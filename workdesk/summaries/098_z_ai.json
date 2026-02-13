@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:20:09.545999+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V3の技術革新：低コストでGPT-4oに匹敵するオープンモデルの衝撃",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek-V3は、独自のMoEアーキテクチャと学習最適化により、従来の数分の一のコストで最高峰の推論性能を達成した革新的なLLMです。",
+    "summaryBody": "DeepSeek-V3は、671Bの総パラメータを持ち、推論時には約37Bを活性化させる高度なMixture-of-Experts (MoE) モデルです。技術的なハイライトは、補助損失を用いずに専門家の負荷を均衡させる「Auxiliary-loss-free Load Balancing」と、KVキャッシュを圧縮する「Multi-head Latent Attention (MLA)」です。これにより、学習の安定性と推論効率を劇的に向上させています。また、FP8精度での学習を導入し、計算リソースの消費を最小限に抑えつつ、数学やプログラミングといった高難易度タスクでGPT-4oを凌駕するスコアを記録しました。本報告書は、大規模モデル開発におけるスケーリング則の新たな解として、非常に高い価値を持っています。",
+    "topics": [
+      "DeepSeek-V3",
+      "LLM",
+      "MoE",
+      "AI効率化",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 90,
+      "overall": 96
+    },
+    "originalTitle": "DeepSeek-V3 Technical Report"
+  }
+}

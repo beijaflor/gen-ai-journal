@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:16:23.298588+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMの始め方とモデルサイズの選び方",
+    "url": "https://zenn.dev/takaha4k/articles/how-to-start-local-llm",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "初心者向けに、Ollama等のツールを用いたローカルLLMの導入方法や、マシンスペックに合わせたモデルサイズ（1B〜8B）の選び方、性能指標の読み方を解説したガイド。",
+    "summaryBody": "自分のPCでLLMを動作させる「ローカルLLM」の入門記事です。導入の第一歩としてOllamaやLM Studioといったツールの活用を推奨し、コマンド一つで実行可能な手軽さを紹介しています。モデル選びの基準として、パラメータ数（1B、3B、8B等）と体感速度、メモリ消費量の関係を整理しており、特に一般的なPC環境では4-bit量子化された8B以下のモデルが実用的であると述べています。また、性能評価に役立つGSM8KやMMLUなどのベンチマークの紹介や、軽量モデルの能力を引き出す「Multi-agent Debate」といった手法にも触れており、単なる導入に留まらない実践的な知見を提供しています。",
+    "topics": [
+      "ローカルLLM",
+      "Ollama",
+      "LM Studio",
+      "ベンチマーク",
+      "AI活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:26:14.390437+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT5.3-codex vs Opus4.6 をセンサーフュージョンシミュレーション課題で比較",
+    "url": "https://zenn.dev/cybernetics/articles/1344b91f2af117",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年の想定設定に基づき、GPT5.3-codexとOpus4.6を用いてドローンの位置推定（ESKF）実装を比較し、理論的正確性と出力の利便性の違いを分析した検証記事。",
+    "summaryBody": "本記事は、次世代AIモデルとされるOpenAIのGPT5.3-codexとAnthropicのOpus4.6を、ロボティクス分野の高度なタスク「誤差状態カルマンフィルタ（ESKF）によるセンサーフュージョン」で比較検証した結果をまとめたものである。検証の結果、Opus4.6は可視化の美しさやアニメーション作成、人間への説明において卓越した能力を見せたが、数学的な整合性（共分散のリセット不足や遅延補正のインデックスミス）に課題が残った。一方、GPT5.3-codexは可視化のセンスには欠けるものの、理論的な正確さとコード構造の堅牢性で勝り、両者による相互評価でもCodexのロジックが支持された。著者は、数理的な設計や論理検証はCodex、実装やドキュメント作成はOpusという具体的な使い分け戦略を提案している。",
+    "topics": [
+      "LLM比較",
+      "カルマンフィルタ",
+      "ロボティクス",
+      "ベンチマーク",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

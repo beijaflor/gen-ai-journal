@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:06:42.705612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、AIエージェント向けにHTMLをMarkdownへ自動変換する機能を発表",
+    "url": "https://blog.cloudflare.com/markdown-for-agents/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントがWebを効率的に巡回できるよう、HTMLコンテンツをリアルタイムでMarkdownに変換して配信する「Markdown for Agents」をリリースしました。",
+    "summaryBody": "Webコンテンツの消費者が人間からAIエージェントへシフトする中、Cloudflareは新しい配信最適化機能「Markdown for Agents」を発表しました。従来のHTMLは構造が複雑でトークン消費量が多く、AIにとって非効率です。本機能はHTTPのコンテントネゴシエーションを利用し、クライアントが「Accept: text/markdown」ヘッダーを送信すると、CloudflareのエッジネットワークがオリジンのHTMLをオンザフライでMarkdownに変換して返します。ブログ記事の例では、HTML版の16,180トークンに対しMarkdown版は3,150トークンと、約80%の削減を実現しています。これにより、AI開発者はAPIコストを抑えつつコンテキストウィンドウを有効活用できるようになります。また、コンテンツの二次利用に関する意思表示を行う「Content Signals」とも連携しており、適切なデータ利用を促進します。",
+    "topics": [
+      "Cloudflare",
+      "AI Agents",
+      "Markdown",
+      "Token Optimization",
+      "Web Scraping"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Markdown for Agents"
+  }
+}

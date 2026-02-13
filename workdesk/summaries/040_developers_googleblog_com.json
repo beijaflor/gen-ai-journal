@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:05:47.641978+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini CLIの拡張機能設定が改善：インストール時の自動構成とセキュアな管理が可能に",
+    "url": "https://developers.googleblog.com/en/making-gemini-cli-extensions-easier-to-use/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemini CLI v0.28.0以降、拡張機能のインストール時に対話形式でAPIキーや環境設定を構成できる新機能が追加され、利便性とセキュリティが向上しました。",
+    "summaryBody": "GoogleはGemini CLIにおいて、拡張機能の導入を簡素化する「拡張機能設定（Extension Settings）」をリリースしました。従来、APIキーやプロジェクトIDなどの構成情報は環境変数を手動で設定する必要があり、エラーの原因になりがちでした。新機能では、拡張機能の作者がマニフェストファイル（gemini-extension.json）に設定項目を定義することで、ユーザーはインストール時にプロンプトに従うだけでセットアップを完了できます。機密情報はプレーンテキストではなくシステムキーチェーンに安全に保存され、新しい『gemini extensions config』コマンドを使用して、グローバルまたはプロジェクト単位（ワークスペーススコープ）で設定を簡単に管理・変更できるようになりました。AlloyDBなどのデータ関連拡張機能において、特に複雑な接続設定の簡素化に寄与します。",
+    "topics": [
+      "Gemini CLI",
+      "Google Cloud",
+      "Developer Tools",
+      "MCP",
+      "Configuration Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Making Gemini CLI extensions easier to use"
+  }
+}

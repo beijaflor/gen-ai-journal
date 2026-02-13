@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:22:55.410687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "半年間、Cursorを\"半分\"しか使えていなかった─コンテキスト自動化で変わった非エンジニアのAI Nativeな働き方",
+    "url": "https://note.com/taiga_ex/n/nf62f767852c2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "非エンジニアのビジネス職がCursorを使い、API連携やディレクトリ設計を通じてコンテキストを自動集約させることで、業務をエージェント化し劇的な効率化を実現した実践記録。",
+    "summaryBody": "本記事は、スタートアップでBizDevを担う著者が、AIコードエディタ「Cursor」をビジネス業務にフル活用するまでの転換点を描いたドキュメントです。当初、手動で情報をコピペしていた「なんちゃってユーザー」だった著者は、「API連携の設定すらAIに丸投げする」という発想の転換により、Slack、Googleカレンダー、MTGの文字起こしデータなどを自動でCursorに集約する仕組みを構築しました。\n\n主な実践内容として、以下の4点が挙げられています：\n1. **コンテキストの自動同期**: GitHub ActionsやPythonスクリプトを用い、外部ツールの情報を常に最新状態でCursorに反映。\n2. **ディレクトリ設計の最適化**: AIが情報を探し出しやすいよう、目的別にフォルダを構造化しREADMEを配置。\n3. **SkillsとCommandsによる言語化**: 自分の思考プロセスや型を「skill」として定義し、イベント企画などの複雑なワークフローを自動実行。\n4. **HITL（Human in the Loop）**: AIにまず「発散」させ、人間が最終的な判断と修正を行う役割分担。\n\n「AIの方が賢い」という前提に立ち、AIが働きやすい環境を整える「コンテキストエンジニアリング」の重要性が、非エンジニアの視点から非常に具体的に解説されています。",
+    "topics": [
+      "Cursor",
+      "AI Native",
+      "コンテキストエンジニアリング",
+      "業務自動化",
+      "非エンジニアAI活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
