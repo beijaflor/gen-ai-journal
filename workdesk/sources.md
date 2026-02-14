@@ -161,7 +161,7 @@
 - [x] 161. https://tidyfirst.substack.com/p/genie-session-codex-for-macgpusortedmap
 - [x] 162. https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/
 - [x] 163. https://blog.mozilla.org/en/mozilla/india-ai-impact-summit/
-- [ ] 164. https://nickbostrom.com/optimal.pdf
+- [x] 164. https://nickbostrom.com/optimal.pdf
 - [x] 166. https://www.jitbit.com/alexblog/323-i-asked-claude-code-to-remove-jquery-it-failed-miserably/
 - [x] 167. https://mahadk.com/posts/4o
 - [x] 168. https://github.com/nearai/ironclaw
