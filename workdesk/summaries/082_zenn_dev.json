@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:16:09.566122+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "カンリー社内 Claude Code 勉強会資料：AI駆動開発を最大化する実践ガイド",
+    "url": "https://zenn.dev/canly/articles/claude-code-internal-study-material",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "株式会社カンリーが全エンジニア向けに実施したClaude Code勉強会の資料で、基礎からコンテキスト運用、拡張機能、仕様駆動開発（SDD）までを網羅した実践的な活用術を解説しています。",
+    "summaryBody": "本記事は、AnthropicのAIコーディングエージェント「Claude Code」を組織的に使いこなすための包括的な学習資料です。単なる操作解説に留まらず、以下の高度な運用トピックを詳説しています：\n\n1. **設定とルール**: `CLAUDE.md`や`.claude/rules/`を活用し、プロジェクト固有の規約をAIに守らせる方法。特に、コンテキスト消費を抑えるための`paths`指定の重要性について触れています。\n2. **コンテキスト運用**: トークンの「雪だるま式」増加による精度低下を防ぐため、`/compact`、`/clear`、`Planモード`を駆使した作業記憶の最適化術。\n3. **拡張機能の使い分け**: スラッシュコマンド、スキル、サブエージェント、Hooks、MCP、GitHub Actionsなどのカスタマイズ手段を、用途別のフローチャート付きで整理。\n4. **フィードバックループとSDD**: 「バイブコーディング（雰囲気での指示）」から脱却し、仕様（Spec）を定義してから実装する「仕様駆動開発（SDD）」への移行と、AIとのやり取りを組織の資産（ルール）へ昇華させる4段階の改善プロセス。\n\n「人間がコードを書く時代」から「AIを運用する時代」への転換期における、エンジニアの新しい標準スキルセットがまとめられています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "LLM",
+      "エンジニアリングマネジメント",
+      "SDD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

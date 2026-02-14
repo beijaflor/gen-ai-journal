@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:15:54.517765+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【完全ガイド】Claude Code Hooks で開発ワークフローを自動化する ── 全14イベント徹底解説",
+    "url": "https://qiita.com/nogataka/items/f07c7336f322306d863e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの全14種類のフックイベントを網羅し、シェルコマンドやLLMを用いた開発プロセスの自動化・制御手法を具体例とともに解説した包括的ガイド。",
+    "summaryBody": "本記事は、Claude Codeのライフサイクル中に特定の処理を自動実行できる「Hooks」機能の仕組みと活用法を解説しています。設定ファイルの3階層構造（イベント、マッチャー、ハンドラー）や、Exit Code（特に実行を阻止するコード2）による制御フローの基礎から始まり、SessionStart、PreToolUse、Stop、TaskCompletedといった全14種類のイベントを詳述。危険なコマンドの実行ブロック、ファイル編集後のPrettier/ESLint自動実行、テスト通過までの自動修正継続など、実用的なJSON設定例が豊富に掲載されています。また、セキュリティ上の注意点やJSONパースエラー等のハマりやすいポイントについても言及されており、Claude Codeを高度にカスタマイズしたいエンジニアにとって極めて実践的な内容です。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "自動化",
+      "開発効率化",
+      "Git"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:48:44.241049+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "IronClaw: プライバシーとセキュリティを重視したRust製パーソナルAIアシスタント",
+    "url": "https://github.com/nearai/ironclaw",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "IronClawは、ローカルデータ管理、WASMサンドボックス、高度なセキュリティ機能を備えた、Rust実装のパーソナルAIアシスタント基盤です。",
+    "summaryBody": "IronClawは、OpenClawにインスパイアされたRust製のオープンソースプロジェクトで、ユーザーのプライバシーとセキュリティを最優先に設計されています。主な特徴は以下の通りです：\n\n1. **強力なセキュリティモデル**: 信頼できないツールをWASM（WebAssembly）サンドボックス内で実行し、機能ベースの権限管理、資格情報の保護、プロンプトインジェクション対策、通信先ホワイトリスト制などを導入しています。\n2. **ローカルファーストの設計**: すべてのデータはローカルのPostgreSQL（pgvector）に保存され、暗号化されます。テレメトリや外部へのデータ送信はありません。\n3. **拡張性と自動化**: 動的なツール構築機能、Model Context Protocol (MCP) のサポート、およびcronやイベントトリガーによるルーチン（自動化タスク）の実行が可能です。\n4. **マルチチャネル対応**: REPL、HTTP、Telegram、Slackなど、多様なインターフェースからアクセス可能です。\n\n既存のTypeScript実装（OpenClaw）と比較して、Rustによるメモリ安全性とパフォーマンスの向上、およびDockerに依存しない軽量なWASMサンドボックスによる分離が技術的な差別化要因となっています。",
+    "topics": [
+      "Rust",
+      "AI Agent",
+      "WASM",
+      "Privacy",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "IronClaw: OpenClaw inspired implementation in Rust focused on privacy and security"
+  }
+}

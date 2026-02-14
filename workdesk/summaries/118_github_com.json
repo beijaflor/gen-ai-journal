@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:25:29.550707+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Matchlock: AIエージェント実行のためのセキュアなLinuxマイクロVMサンドボックス",
+    "url": "https://github.com/jingkaihe/matchlock",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが安全にコードを実行できるよう、ネットワーク制限と独自のシークレット注入機能を備えた軽量なLinuxマイクロVM環境を提供するツール。",
+    "summaryBody": "Matchlockは、AIエージェントのワークロードを分離・保護するために設計されたCLIツールおよびSDKです。Linux（Firecracker）やmacOS（Virtualization.framework）上で、1秒未満で起動する使い捨てのマイクロVMを提供します。最大の特徴は、独自のネットワーク制御とセキュリティ機構です。ホワイトリストによる通信制限に加え、MITM（中間者）プロキシを利用してシークレットを通信経路で動的に注入する仕組みを採用しています。これにより、APIキーなどの機密情報をVM内の環境変数やファイルに直接保持させることなく、安全に外部APIを利用させることが可能です。各サンドボックスはCopy-on-Writeのファイルシステムで動作し、終了時に完全に破棄されます。GoおよびPython SDKが提供されており、既存のアプリケーションへセキュアな実行環境を容易に組み込めます。",
+    "topics": [
+      "AI Agent",
+      "Sandboxing",
+      "MicroVM",
+      "Security",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Matchlock: Matchlock secures AI agent workloads with a Linux-based sandbox."
+  }
+}

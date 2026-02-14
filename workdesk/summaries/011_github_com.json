@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:51:52.283161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-slack: AIエージェント向けSlack操作CLI (TypeScript/Bun)",
+    "url": "https://github.com/stablyai/agent-slack",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMが消費するトークン量を節約する設計とゼロ設定の認証機能を備えた、AIエージェントによるSlack操作のためのTypeScript製CLIツール。",
+    "summaryBody": "agent-slackは、AIエージェントが効率的にSlackを操作できるように設計されたCLIツールです。最大の特長は「トークン効率」で、JSON出力からNULLや空のフィールドを積極的に削除することで、LLMのコンテキスト消費コストを最小限に抑えます。認証面では、SlackデスクトップアプリやChromeのデータから自動的に認証情報を取得する仕組みを備えており、複雑な設定なしですぐに利用可能です。主な機能として、メッセージやスレッドの取得、添付ファイルのローカル自動保存、検索、SlackキャンバスのMarkdown変換、メッセージ送信・リアクション付与などを提供します。Claude CodeやCursor、MCPなどの開発ツールとの統合を想定した「エージェントスキル」としても配布されています。",
+    "topics": [
+      "Slack API",
+      "AI Agents",
+      "TypeScript",
+      "LLM Optimization",
+      "CLI Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "agent-slack: Slack automation CLI for AI agents"
+  }
+}

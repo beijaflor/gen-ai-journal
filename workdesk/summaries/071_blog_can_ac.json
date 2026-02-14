@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:13:31.987714+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのコーディング能力を劇的に改善する「ハーネス」の最適化：新手法「hashline」の提案",
+    "url": "https://can.ac/blog/software-engineering/i-improved-15-llms-at-coding-in-one-afternoon-only-the-harness-changed/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMのコーディング失敗の多くは知能不足ではなくツール境界（ハーネス）の設計不備にあり、行ハッシュを用いた新手法「hashline」により、モデルを書き換えることなく最大10倍の精度向上を実証した。",
+    "summaryBody": "セキュリティ研究者のCan Bölük氏による本記事は、AIコーディングエージェントにおける「ハーネス（モデルとエディタを繋ぐインターフェース）」の重要性を説いています。著者は、既存の`apply_patch`（diff形式）や`str_replace`（文字列置換）が、LLMにとって構文的・空間的な負担が大きく、失敗の主因になっていると指摘します。これに対する解決策として、各行に短いハッシュIDを付与して編集箇所を特定する「hashline」手法を提案しました。16種類のモデルを用いたベンチマークの結果、Gemini 1.5 Flashで成功率が5ポイント向上、Grok Code Fast 1に至っては6.7%から68.3%へと飛躍的な改善が見られました。また、出力トークン数も大幅に削減されることが確認されています。記事の後半では、研究目的での利用を制限するGoogleやAnthropicなどのAIベンダーの閉鎖的な姿勢を批判し、モデルそのものよりもツールの境界（ハーネス）におけるオープンなエンジニアリングこそが、実用的なAIコーディングの鍵であると主張しています。",
+    "topics": [
+      "AI Coding Agents",
+      "LLM Benchmarking",
+      "Software Engineering",
+      "Prompt Engineering",
+      "Open Source Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed."
+  }
+}

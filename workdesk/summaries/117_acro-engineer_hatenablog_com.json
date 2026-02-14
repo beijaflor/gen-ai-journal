@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:25:17.283000+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのUXを進化させる「A2UI」でアプリを構築",
+    "url": "https://tech-blog.acroquest.com/entry/2026/02/10/120000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleが発表したAIエージェント用UIプロトコル「A2UI」を用いて、会話の流れに応じた動的なUIを生成・表示するアプリの実装方法を解説した記事です。",
+    "summaryBody": "Googleが2025年12月に公開したエージェント用UIプロトコル「A2UI（Agent to UI）」の概要と、それを利用したアプリケーションの構築手順を具体的に解説しています。A2UIは、エージェントが会話の文脈に応じてUIを「宣言的なJSONデータ」として生成し、フロントエンドで安全にレンダリングするための仕様です。従来のテキストチャットが抱えていた「質問のラリーが多くなる」という課題を、フォームやカード、動画などの直感的なUIを差し込むことで解決します。\n\n記事内では、AngularレンダラーとStrands Agents、A2Aプロトコルを組み合わせた「クイズ作成エージェント」の実装例が紹介されています。特に重要なポイントとして、エージェントに正確なJSONを出力させるためのプロンプト設計、メッセージシーケンス（beginRendering, surfaceUpdate等）の役割、そしてUI作成を効率化する「CopilotKit A2UI Widget Builder」の活用方法について詳しく触れています。最後に、ギフト選定や動画指導など、テキストのみの体験を一段引き上げるユースケースを提示し、A2UIがもたらす新しいUXの可能性をまとめています。",
+    "topics": [
+      "A2UI",
+      "AIエージェント",
+      "生成AI",
+      "Google",
+      "Angular"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

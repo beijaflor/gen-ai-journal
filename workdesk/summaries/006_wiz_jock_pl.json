@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:50:43.075033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの耐プロンプト注入耐性をテストする「Agent Arena」: 10種類の隠された攻撃ベクトル",
+    "url": "https://ref.jock.pl/modern-web",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Webページを閲覧するAIエージェントが、HTML内に隠されたプロンプト注入攻撃（プロンプト・インジェクション）をどれだけ検出し回避できるかを判定するベンチマークツール。",
+    "summaryBody": "「Agent Arena」は、AIエージェントの脆弱性を診断するための実験的プラットフォームです。人間には見えないがLLMが読み取ってしまう、10段階（BasicからExpertまで）の攻撃ベクトルが含まれたテスト用ページを提供します。具体的な攻撃手法には、HTMLコメント、背景と同色のテキスト、表示されないdiv要素、微小な文字、ARIA属性の悪用、ゼロ幅文字によるエンコード、画像の代替テキスト（alt）への命令埋め込みなどが含まれます。ユーザーは自社のエージェントに指定のURLを要約させ、その回答をサイト上のスコアカードに貼り付けることで、どの注入攻撃に屈したかを即座に可視化できます。また、テキストベースではなくスクリーンショットでWebを解析するエージェントがこれらの攻撃を完全に回避できるといった興味深い知見も共有されています。",
+    "topics": [
+      "プロンプトインジェクション",
+      "AIエージェント",
+      "LLMセキュリティ",
+      "ベンチマーク",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "AGENT ARENA: How manipulation-proof is your AI agent?"
+  }
+}

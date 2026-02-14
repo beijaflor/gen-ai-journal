@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:55:39.411006+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自分のコードをAIに攻撃させたら\"守り\"が全部ザルだった",
+    "url": "https://zenn.dev/zima/articles/shannon-ai-security",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自律型AIハッカー「shannon」を用いて自身のWebアプリをテストした結果、従来の対策では防げなかったIDORなどの深刻な脆弱性が多数発見された体験から、攻撃者視点の重要性を説く。",
+    "summaryBody": "標準的なセキュリティ対策（SQLインジェクション、XSS、CSRF対策等）を講じていたNext.js + Prisma構成の自作アプリに対し、自律型AI脆弱性スキャナー「shannon」を導入した際の記録。攻撃の結果、15個のエンドポイントのうち11個で、他人のデータにアクセス可能なIDOR（不適切な直接オブジェクト参照）が発覚した。これは静的解析（SAST）やチェックリスト重視の防御視点だけでは見落としがちな論理的欠陥である。著者は、個別の修正に留まらず、認可処理のミドルウェア化やZodによるバリデーションといった「構造的な防御」の必要性を強調。AIを「執拗で網羅的な攻撃者」として開発プロセスに組み込むことで、開発者の思考回路が「守り」から「攻め」の視点を備えたものへ進化することを提唱している。",
+    "topics": [
+      "AISecurity",
+      "Vulnerability",
+      "Next.js",
+      "shannon",
+      "IDOR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

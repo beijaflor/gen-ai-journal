@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:23:41.161993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HalluHard: 高難度のマルチターン・ハルシネーション評価ベンチマーク",
+    "url": "https://arxiv.org/abs/2602.01031",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "HalluHardは、法務や医療などの専門領域においてマルチターン対話を通じてLLMのハルシネーションを厳格に評価する、既存指標より遥かに難易度の高いベンチマークです。",
+    "summaryBody": "本研究は、既存のハルシネーション評価指標が飽和しつつある現状を打破するため、より困難で実戦的なベンチマーク「HalluHard」を提案しています。法務、研究、医療、コーディングの4つの専門ドメインを対象に、ユーザー役のLLMが生成するフォローアップ質問を含む3ターンの対話を評価します。検証プロセスは、単なる引用文献の有無だけでなく、PDFを含むフルテキストを解析して主張の内容が実際に根拠に基づいているかをチェックする厳格なものです。分析の結果、GPT-5.2やClaude-Opusなどの最新モデルでも約30%のハルシネーションが発生しており、特に「セルフコンディショニング」による誤りの増幅や、推論能力の向上が必ずしも正確性に直結しないといった、LLMの信頼性における新たな課題が浮き彫りになりました。",
+    "topics": [
+      "ハルシネーション",
+      "LLM評価",
+      "ベンチマーク",
+      "マルチターン対話",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "HalluHard: A Hard Multi-Turn Hallucination Benchmark"
+  }
+}

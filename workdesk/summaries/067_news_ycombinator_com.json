@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:12:36.666469+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントがREST APIを通じてSimCityをプレイする「Hallucinating Splines」",
+    "url": "https://hallucinatingsplines.com",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "オープンソースのSimCityエンジンにREST APIを統合し、AIエージェントが市長として都市を構築・管理できる実験的なプラットフォーム。",
+    "summaryBody": "### プロジェクトの概要\nAndrew Dunn氏（aed）によって公開された「Hallucinating Splines」は、SimCityのオープンソース版エンジン「Micropolis」をヘッドレス化し、REST APIおよびMCP（Model Context Protocol）サーバー経由で操作可能にしたプロジェクトです。AIエージェント（LLM）を「市長」として、プログラムから都市開発を行わせることができます。\n\n### 技術的特徴\n* **バックエンド**: 各都市はCloudflare Durable Objects上で個別のインスタンスとして稼働しています。\n* **AIとの統合**: REST APIやMCPサーバーを通じて、Claude CodeやCursorといったツールから直接都市の建設を指示できます。\n* **空間推論の課題**: 現状のLLMは空間把握が苦手であり、建物や電線をランダムに配置してしまうなど、「幼児に市長を任せるような」独特の挙動を観察できるのが特徴です。\n\n### コミュニティの反応と発展\nHacker Newsの議論では、元Maxisの開発者Don Hopkins氏も参加し、Micropolisの歴史や過去の強化学習研究（フラクタルニューラルネットワーク）との比較、商標に関する注意喚起など、深い技術的・歴史的背景が共有されています。また、パラメータを遺伝的アルゴリズムで最適化するエージェントの実験や、文明（Civilization）などの他ゲームへの応用、マルチプレイヤー化の構想についても活発に議論されています。",
+    "topics": [
+      "AI Agents",
+      "SimCity",
+      "Micropolis",
+      "LLM Benchmarking",
+      "REST API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Show HN: AI agents play SimCity through a REST API | Hacker News"
+  }
+}

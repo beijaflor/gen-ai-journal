@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:26:29.365200+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間は意図、AIは実装：Codexが導く「要件を伝えるだけ」のAI駆動開発ワークフロー",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/50338/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIを単なるコード補完ではなく開発パートナーとして定義し、人間が意図（Why/What）を伝え、AIが実装（How）を担うための構造的なワークフローとプロンプト術を具体的に解説したガイド。",
+    "summaryBody": "OpenAIのCodex等の大規模コードコンテキストを理解するモデルを最大限に活用するための、AI駆動開発（AI-Driven Development）の実践的手法を紹介しています。本ワークフローでは、プロジェクト構想から実装までを6つのフェーズに分け、人間が要件を定義しAIが最適なルートを提案する「Google Mapsのような体験」を目指します。特に、AIの長期記憶として機能する「AGENTS.md」や、各機能実装の進捗と依存関係を記録する「context.json」を用いたコンテキスト管理手法が特徴的です。Next.jsやSupabaseを用いたWebアプリ開発を例に、要件ベースのプロンプト設計、アスキーアートとMermaid図によるUI設計、ドメインモデルから技術選定、自動セットアップまで、AIに「パスを指定せずルールを参照させる」ことで一貫したコード生成を実現する具体的な手順が詳述されています。",
+    "topics": [
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "Codex",
+      "Next.js",
+      "仕様駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

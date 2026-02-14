@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:19:16.635804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "学術論文の図表生成を自動化するマルチエージェントAI「PaperBanana」",
+    "url": "https://arxiv.org/abs/2502.08332",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "VLMと画像生成モデルを組み合わせた5つのエージェントが、論文本文から高品質な手法図や統計グラフを自動生成・洗練するフレームワーク。",
+    "summaryBody": "北京大学とGoogle Cloud AI Researchの研究チームは、AI研究者が直面する「出版レベルの図表作成」という労働集約的な課題を解決するため、自動化フレームワーク『PaperBanana』を提案しました。このシステムは、情報の検索(Retriever)、構成の立案(Planner)、スタイルの定義(Stylist)、可視化(Visualizer)、そして自己批判(Critic)を行う5つの専門エージェントで構成されています。また、NeurIPS 2025の論文から収集した292個のテストケースを含むベンチマーク『PaperBananaBench』を構築し評価を行った結果、従来手法よりも忠実度、簡潔さ、可読性、審美性のすべてにおいて優れた成果を示しました。特に統計グラフの生成において、画像生成モデルは見た目の美しさで優れる一方、数値の忠実度（ハルシネーション）には課題があるといった興味深い分析も含まれています。",
+    "topics": [
+      "AI Scientist",
+      "Multi-agent System",
+      "Vision-Language Models",
+      "Automated Illustration",
+      "Academic Publishing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "PaperBanana: Automating Academic Illustration for AI Scientists"
+  }
+}

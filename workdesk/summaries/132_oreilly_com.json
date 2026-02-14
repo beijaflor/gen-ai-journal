@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:26:34.935688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "効果的なマルチエージェント・アーキテクチャの設計：モデルからシステムへの転換",
+    "url": "https://www.oreilly.com/radar/designing-effective-multi-agent-architectures/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "プロンプトの微調整に頼る「プロンプトの誤謬」を排し、組織設計のようなアーキテクチャ的アプローチでマルチエージェント・システムの性能を最大化する方法を解説する。",
+    "summaryBody": "マルチエージェント・システム（MAS）の研究が急増する一方で、本番環境での失敗も目立っています。本記事では、システムレベルの調整不全をプロンプトの改善だけで解決しようとする考え方を「プロンプトの誤謬（Prompting Fallacy）」と定義し、これを克服するためのアーキテクチャ設計の重要性を説いています。主な内容は以下の通りです。\n\n1. **コラボレーション・パターン**: Supervisor（中央管理）、Blackboard（共有メモリ）、Peer-to-peer、Swarms（並列探索）といったパターンの利点と欠点を解説し、タスクの性質（創造的か、定型的か）に応じた選択を推奨しています。\n2. **エージェントの「採用」**: モデルを単なるツールではなく「チームメンバー」と見なし、Encoder-only（分析）、Decoder-only（生成）、Reasoningモデル（思考）など、各アーキテクチャの強みに基づいた役割分担を提唱しています。\n3. **スケーリングの科学**: 単一モデルの性能向上とは異なり、エージェントを増やすほど通信コストやノイズが増大する「共同スケーリング（Collaborative Scaling）」の課題を指摘し、トポロジー設計が成否を分けるとしています。\n\n結論として、エージェントのパフォーマンスは指示の内容ではなく、いかにレジリエントな協力構造を構築できるかという、システム設計の結果であると強調しています。",
+    "topics": [
+      "マルチエージェントシステム",
+      "AIアーキテクチャ",
+      "LLM",
+      "システム設計",
+      "スケーリング法則"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Designing Effective Multi-Agent Architectures"
+  }
+}

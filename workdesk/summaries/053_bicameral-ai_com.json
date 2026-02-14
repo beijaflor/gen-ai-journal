@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:08:58.708876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「プロンプトを改善せよ」が通用しない理由：コーディングAIが技術的制約の発見を妨げるメカニズム",
+    "url": "https://bicameral.com/blog/why-just-prompt-better-doesnt-work",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる実装の高速化が、本来開発プロセスで自然に行われていた「技術的制約の発見」をスキップさせ、結果として深刻な手戻りとコミュニケーションコストを増大させている実態を報告しています。",
+    "summaryBody": "この記事は、Bicameral社が実施した調査に基づき、コーディングAIの導入が開発者のレビューや修正時間を増大させている根本原因を分析しています。最大の発見は、実装フェーズが単なる「コード書き」ではなく、実は「技術的制約を発見するプロセス」として機能していたという点です。AIはこのプロセスをバイパスしてコードを生成するため、本来実装中に気づくべき矛盾が解消されないまま放置され、後工程でのコストを押し上げています。\n\n主な分析ポイントは以下の通りです：\n1. **コミュニケーションの断絶**: 技術的制約の70%は非技術職に伝える必要がありますが、AIは人間のように「この仕様は技術的に難しい」と反論（Productive Conflict）をすることができません。\n2. **発見の遅延**: 制約の50%は実装を始めてから初めて明らかになります。「プロンプトを改善すれば済む」という意見は、制約が事前に既知であることを前提としており、現実の反復的な発見プロセスを無視しています。\n3. **解決策への示唆**: AIが実装を担うなら、人間は計画フェーズにおいてより意識的に「制約の発見」と「クロスファンクショナルな合意形成」を行うためのツールと体制を持つ必要があります。",
+    "topics": [
+      "AI Coding Assistants",
+      "Software Development Lifecycle",
+      "Developer Productivity",
+      "Technical Constraints",
+      "Cross-functional Communication"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Why \"just prompt better\" doesn't work: How coding assistants get in the way of constraints discovery"
+  }
+}

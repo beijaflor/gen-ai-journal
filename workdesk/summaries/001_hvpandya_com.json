@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T18:53:29.138305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを使いこなす「最強プロンプト」：自動化、並列処理、視覚的検証の実現方法",
+    "url": "https://hardikpandya.com/notes/power-prompts-in-claude-code/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのマルチエージェント並列処理、MCPによる視覚的検証、自動ドキュメント化を1つのプロンプトで完結させる高度な活用術の紹介。",
+    "summaryBody": "この記事では、AIエンジニアリングツール「Claude Code」の真価を引き出す高度なプロンプト活用術を紹介しています。著者のHardik Pandya氏は、自身のWebサイトの最適化（パフォーマンス、アクセシビリティ、SEO、コード品質）という複雑な工程を、たった一つのプロンプトで自動化した体験を解説しています。\n\nプロンプトが引き出す主な機能は以下の5点です：\n1. **MCP（Model Context Protocol）連携**: Playwright MCPを使用して、修正前のサイトを複数のデバイスサイズで自動撮影し、ベースラインを作成します。\n2. **マルチエージェント並列実行**: 「パフォーマンス」「アクセシビリティ」「SEO」「コード整理」の各タスクに4つのエージェントを同時に割り当て、作業時間を大幅に短縮します。\n3. **視覚的回帰テスト**: 修正後に再度スクリーンショットを撮影し、ベースラインと比較することで意図しないデザイン崩れがないかを自動で検証します。\n4. **CLAUDE.mdの自動更新**: 変更内容をプロジェクトのコンテキストファイルに記録し、次回のセッションへ情報を引き継ぎます。\n5. **スキルの再利用化**: 一連のワークフローを「スキル」として保存し、次回以降は簡単なコマンドで同じ手順を実行可能にします。\n\n単なるコード生成を超え、AIを自律的な開発パートナーとして活用するための実践的な手法が示されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "MCP",
+      "Web最適化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Power Prompts in Claude Code"
+  }
+}

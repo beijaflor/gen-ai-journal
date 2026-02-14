@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T13:40:53.351105+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの新機能「Agent Teams」の仕組みとマルチエージェント協調の実践ガイド",
+    "url": "https://laiso.com/p/claude-code-agent-teams",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの実験的機能「Agent Teams」を使い、複数のエージェントを独立プロセスとして並列稼働させ、複雑な開発課題を自律的に解決させる手法を解説した技術記事。",
+    "summaryBody": "2026年2月にリリースされたClaude Codeの実験的機能「Agent Teams」のアーキテクチャと活用方法についての解説です。Agent Teamsは、従来のSubagentsをステートフルな独立プロセスへと拡張し、ファイルシステム（~/.claude/teams/配下のJSON）を介したメッセージングによるエージェント間の双方向通信を実現します。記事では、tmuxモードを用いたマルチプロセス並列実行のセットアップ、トークン消費を抑えるためのHaiku/Sonnet等の軽量モデルへのプロンプト誘導、そして実際のGitHub Issue解決に向けたArchitectやExecutorといった役割別エージェントのチーム編成（SOTAチーム）の実例が紹介されています。単一スレッド的なSubagentsに対し、Agent Teamsは『OSのプロセスモデルにおけるIPC協調』に近い挙動を示し、セッションを跨いだ文脈保持と自律的な意思決定を可能にしています。",
+    "topics": [
+      "Claude Code",
+      "Multi-Agent Systems",
+      "LLM Ops",
+      "AIエージェント",
+      "ソフトウェア開発自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Claude Code Agent Teamsのあそびかた"
+  }
+}

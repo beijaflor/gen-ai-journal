@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:32:04.436396+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-OCR（LLM）と Tesseract を同じ画像で比較してわかったこと",
+    "url": "https://zenn.dev/toma/articles/ocr-comparison-glm-tesseract",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMベースのGLM-OCRと従来型Tesseractを4冊の書籍画像で比較し、複雑なレイアウトへの対応力と、LLM特有の繰り返し問題という対照的な特性を明らかにしています。",
+    "summaryBody": "本記事は、ビジョン言語モデル（VLM）であるGLM-OCRと、オープンソースOCRの定番Tesseractを実際の書籍データを用いて比較検証した記録です。検証の結果、GLM-OCRは図表・吹き出し・装飾文字といった複雑なレイアウトにおいて圧倒的な認識性能を示す一方、出力の約34%で同じフレーズを繰り返す「ループ現象」が発生し、実用的な文字数上限が2,000〜4,000文字程度に制限されるという課題が浮き彫りになりました。対してTesseractは、レイアウト解析には弱いものの、小説のような均一な長文テキストでは出力制限がなく安定した動作を見せました。筆者は、図表解析にはLLM、長文の書き起こしにはTesseractという使い分けや、LLM利用時の画像分割といった具体的な実運用上のベストプラクティスを提案しています。",
+    "topics": [
+      "OCR",
+      "LLM",
+      "GLM-OCR",
+      "Tesseract",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

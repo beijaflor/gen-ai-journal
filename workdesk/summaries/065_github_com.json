@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:12:01.601516+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-OCR: 高精度・高速・包括的なドキュメント解析を実現する0.9BパラメータのオープンソースOCRモデル",
+    "url": "https://github.com/zai-org/GLM-OCR",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GLM-Vアーキテクチャをベースにした、複雑なレイアウトや数式・表を高精度かつ高速に処理できる0.9Bパラメータの次世代マルチモーダルOCRモデル。",
+    "summaryBody": "GLM-OCRは、Zhipu AIのGLM-Vエンコーダー・デコーダー構造を採用したドキュメント理解のためのマルチモーダルOCRモデルです。主な特徴として、以下の点が挙げられます。\\n\\n1. **圧倒的な性能**: OmniDocBench V1.5でスコア94.62を獲得し、数式、表、情報抽出など主要ベンチマークでSOTAを記録。\\n2. **軽量かつ高速**: わずか0.9Bパラメータながら、Multi-Token Prediction (MTP)の導入により、vLLMやSGLangを用いた効率的な推論が可能です。\\n3. **実用的なパイプライン**: PP-DocLayout-V3によるレイアウト解析と並列認識を組み合わせ、複雑なビジネス文書やコード、印影などを含む実世界のデータに最適化されています。\\n4. **柔軟なデプロイ**: クラウドAPIの利用に加え、セルフホスト（vLLM, SGLang, Ollama, MLX）にも対応したSDKが提供されています。\\n\\n開発者向けに包括的なツールチェーンが公開されており、MarkdownやJSON形式での構造化出力が容易に行えます。",
+    "topics": [
+      "OCR",
+      "Multimodal LLM",
+      "Document Intelligence",
+      "Open Source",
+      "GLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GLM-OCR: Accurate × Fast × Comprehensive"
+  }
+}

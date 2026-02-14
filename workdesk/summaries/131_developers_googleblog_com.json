@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:26:16.032599+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Data Commons Hosted MCP: AI向け公開統計データへのゼロインストール・アクセスを実現",
+    "url": "https://developers.googleblog.com/en/data-commons-hosted-mcp-zero-install-public-data-for-ai/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントがData Commonsの膨大な統計データにアクセスするためのMCPサーバーをGoogle Cloud上のホスト型サービスとして公開し、ローカル環境構築不要で利用可能にした。",
+    "summaryBody": "Googleは、信頼性の高い公開統計データベース「Data Commons」をAIエージェントから利用するための「Model Context Protocol (MCP)」サーバーを、Google Cloud上でホストされるマネージドサービスとして提供開始しました。従来、Data Commons MCPを利用するにはローカルでのPython環境構築が必要でしたが、ホスト型の登場により、セキュリティ制限の厳しい環境でも利用可能になり、スケーラビリティも向上しました。開発者は無料のAPIキーを取得し、指定のエンドポイント（https://api.datacommons.org/mcp）を構成に追加するだけで、GeminiなどのLLMを通じて「特定の国のGDPランキング」や「失業率と肥満率の相関」といった複雑なデータ分析を自然言語で行えるようになります。既存のGemini CLI拡張機能ユーザーには自動的にアップデートが適用されます。",
+    "topics": [
+      "Data Commons",
+      "MCP (Model Context Protocol)",
+      "AI Agents",
+      "Google Cloud",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Data Commons Hosted MCP: Zero-Install Public Data for AI"
+  }
+}

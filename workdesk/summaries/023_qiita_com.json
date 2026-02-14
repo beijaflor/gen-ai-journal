@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:54:55.438053+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "考え続けるコンテキストエンジニアリング：DMNを実装する",
+    "url": "https://qiita.com/zazen_inu/items/e8310c1f10c14c5b3644",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに「デフォルトモードネットワーク（DMN）」のような非同期的な思考プロセスを実装し、指示される前から背景コンテキストを自動構築・深化させる設計思想とその実践報告。",
+    "summaryBody": "AIが指示を受けたときのみ動作する「同期的」な性質を脱却し、人間の脳が安静時にも記憶の整理や問い直しを行う「デフォルトモードネットワーク（DMN）」をAIエージェントに実装する試みです。実装の核は「パルス（拍動）」と呼ばれるバックグラウンド処理で、AIがタスク管理上のノートを定期的かつ非同期的に深掘り（思考ノートの更新）します。これにより、指示される前からAIが前提の検証やタスク間の矛盾・接続を発見でき、ユーザーが朝セッションを開いた際には「既に考えが深まった状態」から対話を始められるようになります。ObsidianとClaude Codeを組み合わせ、コンテキストエンジニアリングにおける「時間軸」の重要性を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "コンテキストエンジニアリング",
+      "Claude Code",
+      "Obsidian",
+      "デフォルトモードネットワーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

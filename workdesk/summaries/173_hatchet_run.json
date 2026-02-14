@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:50:10.288478+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Building a TUI is easy now - HatchetのTUI開発事例とモダンな開発スタック",
+    "url": "https://hatchet.run/blog/building-a-tui-is-easy-now",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Hatchetの開発者が、Claude CodeとCharm stackを活用し、わずか2日間で実用的なTUI（ターミナルUI）を構築した手法と、その開発者体験の価値を解説しています。",
+    "summaryBody": "Hatchetの共同創業者が、ワークフロー管理のためのTUIを短期間で構築した経験を共有しています。主なポイントは以下の通りです：\n\n1. **TUIの価値**: Web UIよりも高速に感じられ、IDEでのコード編集とシームレスに繋がる「情報密度の高い」体験を提供できる点。\n2. **技術スタック**: Go言語向けの「Charm stack」（Bubble Tea, Lip Gloss, Huh）を採用。これらはドキュメントが豊富で、洗練されたUIを容易に構築可能です。\n3. **AI駆動開発 (Claude Code)**: ターミナルベースのAIエージェントであるClaude Codeを活用。特にtmuxの`capture-pane`を利用してAIに描画結果を確認させながらテストを回す手法が、開発サイクルを劇的に加速させました。\n4. **難所の克服**: 複雑なDAG（有向非巡回グラフ）の描画も、既存のライブラリ（mermaid-ascii）をAIに参照させることで解決しました。\n\n結論として、適切なツールとAIを組み合わせることで、従来は手間がかかったTUI開発が、現在では非常に現実的でコストパフォーマンスの高い選択肢になったと述べています。",
+    "topics": [
+      "TUI",
+      "Charm stack",
+      "Claude Code",
+      "Go",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Building a TUI is easy now"
+  }
+}

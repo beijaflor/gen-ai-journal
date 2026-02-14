@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:51:40.633104+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにコードジェネレーターを作らせるのがとても良かった",
+    "url": "https://zenn.dev/happyelements/articles/8677c77f0a8c23",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを活用し、GoやSQLの定義から多言語のボイラープレートを生成する「独自ジェネレーター」をAIに構築させることで、開発の柔軟性と生産性を向上させた事例紹介。",
+    "summaryBody": "従来のOpenAPI等のスキーマ定義を最上流とする開発フローから脱却し、Claude Codeを用いて「Goの構造体やSQL定義を元に多言語コードを生成するツール自体」をAIに作成させる新しいパラダイムを提案しています。この手法の利点として、OpenAPIの仕様制限に縛られない柔軟な表現、AST（抽象構文木）に関する深い知識が不要になること、そして仕様変更時にジェネレーター自体の修正をAIに任せられる保守性の高さが挙げられます。実際にValueObjectやDB関連、Redis Stream等の通信処理を`make gen`で一括生成するパイプラインを構築しており、開発者がより本質的なロジック設計に集中できる環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "コード生成",
+      "開発プロセス",
+      "Go",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

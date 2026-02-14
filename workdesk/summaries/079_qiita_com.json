@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:15:27.859686+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLIでもできた！PlaywrightMCPと同じ動き＋トークン90%削減 #AI",
+    "url": "https://qiita.com/Aochan0604/items/playwright-mcp-token-reduction",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeでPlaywright MCPを使用する際の膨大なトークン消費を、独自のHTTP APIとCLIスクリプト構成に置き換えることで90%以上削減する手法の解説。",
+    "summaryBody": "AIによるブラウザ操作自動化において、標準的なPlaywright MCPは1操作ごとにページ全体の情報を送るため、大量のトークンを消費しコスト高や文脈の欠落を招きます。この記事では、ブラウザ操作を管理するステートフルなHTTP APIサーバーをTypeScriptで構築し、Claude CodeのBashツールから呼び出す代替案を提案しています。必要な情報（操作結果や最小限のスナップショット）のみをJSONで返すことで、1回のログイン操作フローにおけるトークン消費を実測値で約93.8%削減することに成功。AIが画面の状態を確認しながら自律的に操作する能力を維持しつつ、実運用に耐えうる低コストな自動化環境の作り方を詳説しています。",
+    "topics": [
+      "Playwright",
+      "Claude Code",
+      "MCP",
+      "AIテスト自動化",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

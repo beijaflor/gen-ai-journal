@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:55:51.109215+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agent 「yagi」の紹介：Goのインタプリタを活用した拡張性の高いCLIエージェント",
+    "url": "https://github.com/yagi-agent/yagi",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Go言語のインタプリタYaegiを採用し、スクリプト感覚でツールを自作・拡張できる15種類以上のプロバイダに対応した高性能CLIチャットクライアント「yagi」が登場。",
+    "summaryBody": "Go言語の著名開発者mattn氏により、新しいAIエージェント「yagi」が公開されました。このツールはCLIベースのチャットクライアントであり、最大の特徴はGoのインタプリタ『Yaegi』を用いたプラグインシステムです。ユーザーは~/.config/yagi/tools/にGoのソースファイルを置くだけで、コンパイル不要で即座にAIの「ツール（Function Calling）」を拡張できます。主要な15種以上のLLMプロバイダ（OpenAI, Gemini, Anthropic, DeepSeek等）に対応し、対話モードのほか、パイプ入力を利用したワンショットモードでのシェル芸的な運用も可能です。また、MCP（Model Context Protocol）クライアント機能や、Vimから直接利用できるプラグイン、アイデンティティやスキルを定義できるプロファイル管理機能も備えており、シンプルさと極めて高い拡張性を両立した設計となっています。",
+    "topics": [
+      "AI Agent",
+      "Go (Golang)",
+      "Yaegi",
+      "CLI Tools",
+      "LLM Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 95
+    },
+    "originalTitle": "AI Agent yagi を作った"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:17:35.901473+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GTIG AI脅威トラッカー：攻撃者によるAI活用の蒸留、実験、および継続的な統合",
+    "url": "https://cloud.google.com/blog/products/identity-security/gtig-ai-threat-tracker-adversarial-use-ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Threat Intelligence Group (GTIG)は、2025年後半に観測された「モデル抽出攻撃」の増加や、Gemini APIを動的に呼び出す新種マルウェア「HONESTCUE」など、攻撃者による高度なAI悪用の最新動向を報告しました。",
+    "summaryBody": "Google Threat Intelligence Group (GTIG) は、2025年第4四半期における攻撃者のAI活用状況をまとめたレポートを公開しました。本レポートでは、攻撃者がAIを攻撃サイクル全体に統合し、特に偵察、ソーシャルエンジニアリング、マルウェア開発の効率を向上させている現状が詳述されています。\n\n主なトピックは以下の通りです：\n1. **モデル抽出攻撃（蒸留攻撃）の台頭**: 商用モデルの知的財産や推論ロジックを盗む目的で、APIを介してモデルの挙動を模倣する「知識蒸留」を悪用した攻撃が急増しています。Googleはこれらをリアルタイムで検知し、緩和策を講じています。\n2. **AI統合型マルウェア**: Gemini APIを呼び出してC#コードを生成し、第2段階のペイロードをメモリ上で実行する「HONESTCUE」や、AIツールで生成された高度なフィッシングキット「COINBAIT」が確認されました。これらは静的分析を回避するように設計されています。\n3. **APTグループによる活用**: 中国(APT31/41)、北朝鮮(UNC2970)、イラン(APT42)などの国家背景を持つグループが、標的の調査、多言語フィッシング、脆弱性分析、コードのデバッグにAIを積極的に利用しています。\n4. **アンダーグラウンドの動向**: 「Xanthorox」のように、商用APIを不正に統合して「独自のサイバー攻撃用AI」と偽るサービスの出現や、AI APIキーの窃取・再販市場の拡大が警告されています。\n\nGoogleは、Secure AI Framework (SAIF) や、脆弱性を自動発見するAIエージェント「Big Sleep」などを通じて、AIを防御側の優位性（Defensive Advantage）に繋げる取り組みを継続しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "生成AI",
+      "マルウェア",
+      "モデル抽出攻撃",
+      "Google Threat Intelligence Group"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use"
+  }
+}

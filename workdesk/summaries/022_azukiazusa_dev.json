@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:54:42.141488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のオーケストレーション機能であるエージェントチームを試してみた",
+    "url": "https://azukiazusa.dev/blog/claude-code-agent-teams-recap/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code の実験的機能「エージェントチーム」を使い、複数の AI インスタンスが役割分担して並列にタスクを遂行する仕組みと実践的な運用方法を解説した記事。",
+    "summaryBody": "Claude Code の新機能「エージェントチーム」の仕様と使用感を検証したレポートです。本機能は従来のサブエージェントとは異なり、各メンバーが独立したコンテキストを持ち、リーダーを介さず相互通信が可能な点が特徴です。記事では、環境変数 `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS` による有効化から、`TaskCreate` や `TeamCreate` を用いたタスク管理、リーダーを調整役に専念させる `delegate` モード、作業前にプラン承認を挟む `plan` モードなどの高度な設定を解説しています。また、並列作業によるファイル競合の防止やトークン消費の増大といった、実用上の注意点についても深く掘り下げられています。大規模開発におけるオーケストレーションの有効性と、コンテキスト管理の重要性が示されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "オーケストレーション",
+      "LLM",
+      "ソフトウェア開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

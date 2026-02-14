@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:20:59.435137+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと新時代を切り拓く。これからのSREとメルカリIBISの挑戦",
+    "url": "https://speakerdeck.com/ktykogm/ai-to-xin-shi-dai-wo-qie-ri-tuo-ku-korekarano-sreto-merukari-ibis-false-tiao-zhan",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "メルカリのインシデント対応AIエージェント「IBIS」の失敗と改善、およびマルチエージェントによるAI駆動開発を用いたSREの次世代戦略を解説した資料。",
+    "summaryBody": "本資料は、メルカリにおけるインシデント対応支援AIエージェント「IBIS」の開発と運用から得られた知見をまとめたものです。開発当初の「受動的なツールは使われない」という失敗から、プロアクティブな提案を行うSuggestion Botへの転換や、MCP（Model Context Protocol）を活用した管理情報のレビュー機能の実装など、実務的な進化が語られています。技術面では、Claude CodeやCursor、マルチエージェントを駆使したAI駆動開発プロセス、コンテキストエンジニアリングによる属人化の排除、さらにはベクトル検索に頼らないPageIndex等の次世代RAG戦略について言及されています。また、大量の過去データを分析するためのバルク分析ツールでは、適応的スロットリングを用いた並列処理により、APIレートリミットを回避しつつ4倍の高速化を実現した手法が紹介されており、AI-NativeなSREへの具体的な道筋を示しています。",
+    "topics": [
+      "SRE",
+      "AI Agent",
+      "RAG",
+      "LLMOps",
+      "AI-driven development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

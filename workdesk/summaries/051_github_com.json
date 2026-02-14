@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:08:27.082588+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RustによるMistral Voxtral Mini 4Bのリアルタイム音声認識実装 (voxtral-mini-realtime-rs)",
+    "url": "https://github.com/TrevorS/voxtral-mini-realtime-rs",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MistralのVoxtral Mini 4B RealtimeモデルをBurnフレームワークを用いてRustで実装し、ネイティブおよびブラウザ（WASM/WebGPU）での高速な音声認識を実現。",
+    "summaryBody": "このプロジェクトは、Mistralの最新音声認識モデル「Voxtral Mini 4B Realtime」を、Rust製ディープラーニングフレームワーク「Burn」を用いて純粋なRustで実装したリポジトリです。ネイティブ環境だけでなく、WASMとWebGPUを活用することでWebブラウザ上でも完全クライアントサイドで動作するのが最大の特徴です。Q4 GGUF量子化により、モデルサイズを約9GBから2.5GBに削減。ネイティブQ4実行時でRTF 0.416（音声時間の半分以下で処理完了）という高いパフォーマンスを実現しています。ブラウザ実行における2GBメモリ制限や4GBアドレス空間、同期待機不可といった制約を、メモリのシャーディング、独自のWGSL計算シェーダー、非同期データ読み出し、CubeCLへのパッチ適用などにより技術的に解決しています。",
+    "topics": [
+      "Rust",
+      "ASR",
+      "WebGPU",
+      "Mistral",
+      "WASM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - TrevorS/voxtral-mini-realtime-rs: Streaming speech recognition running natively and in the browser. A pure Rust implementation of Mistral's Voxtral Mini 4B Realtime model using the Burn ML framework."
+  }
+}

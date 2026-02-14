@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:10:43.567819+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けスキル共有基盤「ClawHub」を巡るセキュリティと実用性の議論",
+    "url": "https://news.ycombinator.com/item?id=43297379",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェント(Claude Code等)の拡張スキルを共有するClawHubに対し、Hacker Newsでは検証されていないコードの実行に伴う深刻なセキュリティリスクや、スキルの実用性について懐疑的な意見が噴出している。",
+    "summaryBody": "ClawHubは、AIエージェントが特定のタスクを実行するための「スキル（命令セットやスクリプト）」を共有・発見するためのプラットフォームとして公開されました。しかし、Hacker Newsのコミュニティでは以下の懸念が中心的な議論となっています。\n\n- **深刻なセキュリティリスク**: 検証されていないサードパーティ製のスクリプト（BashやPythonを含む）を、機密情報にアクセス可能なAIエージェントに読み込ませることの危険性が強調されています。プロンプトインジェクションや、意図しないAPIキーの漏洩、マルウェア混入の可能性が指摘されています。\n- **スキルの価値に対する疑問**: 多くのスキルが単純なCLIツールのラッパーに過ぎず、LLMに直接ドキュメントを読み込ませたり、その場でスキルを生成させたりする方が、最新かつ安全であるという意見が目立ちます。\n- **信頼性の欠如**: UIの不備（アイテムが動いてクリックしにくい等）や、作者による不透明な自演宣伝、スター数の操作可能性など、プラットフォーム自体の信頼性を疑問視する声も上がっています。\n\n総じて、AIエージェントの利便性と引き換えに、システムやデータの安全性をどこまで犠牲にできるのかという、現代のAI活用における本質的な課題が浮き彫りになっています。",
+    "topics": [
+      "AI Agents",
+      "Claude Code",
+      "Cybersecurity",
+      "Open Source",
+      "Marketplace"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 30,
+      "annexPotential": 85,
+      "overall": 68
+    },
+    "originalTitle": "ClawHub | Hacker News"
+  }
+}

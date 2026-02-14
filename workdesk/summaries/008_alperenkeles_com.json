@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:51:09.580899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはコンパイラになり得るが、そうあるべきではない：仕様定義の重要性と抽象化の代償",
+    "url": "https://alperen.com/posts/llms-could-be-but-shouldnt-be-compilers/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMをコンパイラと見なす際の真の危うさは、ハルシネーションよりもむしろ、自然言語の曖昧さによって設計上の重要な決定がAIに委ねられ、開発者が「仕様不足」を許容してしまう点にある。",
+    "summaryBody": "LLMを「自然言語をコードに変換する次世代のコンパイラ」と見なす議論に対し、エンジニアのAlperen Keles氏が警鐘を鳴らす論考。従来のコンパイラは、メモリ管理などの低レイヤーの「制御」を放棄する代わりに、厳密に定義されたセマンティクス（意味論）を提供することで、プログラマの認知的負荷を下げてきた。対照的に、自然言語には厳密なセマンティクスが存在しないため、LLMによるコーディングは「機能的な仕様不足（underspecification）」を本質的に抱えることになる。これにより、エッジケースやパフォーマンス上の判断が、開発者の意図ではなくモデルの「推測」に委ねられてしまう。著者は、たとえハルシネーションが解消されたとしても、この「仕様定義の放棄」という精神的な怠惰が、中身を理解していないソフトウェアを量産する危険性があると指摘。今後のソフトウェアエンジニアリングにおいては、コード記述そのものよりも、厳密な仕様の策定と検証（Verification）が核心的なスキルになると結論付けている。",
+    "topics": [
+      "LLM",
+      "Compiler Theory",
+      "Software Engineering",
+      "Specification",
+      "Abstraction"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "LLMs could be, but shouldn't be compilers"
+  }
+}

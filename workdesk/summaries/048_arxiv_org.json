@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:07:46.065423+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ファイルネイティブなAIエージェントのための構造化コンテキスト設計：スキーマ精度、形式、大規模ナビゲーションの評価",
+    "url": "https://arxiv.org/abs/2602.05447",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "9,649件の実験を通じて、LLMエージェントが大規模データを扱う際のコンテキスト形式や検索手法の有効性がモデルの能力層によって大きく異なることを明らかにした実証的な研究。",
+    "summaryBody": "本論文は、LLMエージェントがSQL生成などのプログラム操作を行う際のコンテキスト設計について、11種類のモデルと4つのデータ形式（YAML、Markdown、JSON、TOON）を用いて9,649件の実験を行い、その効果を体系的に評価した研究です。主な発見として、ファイルベースのコンテキスト取得は最先端モデル（Claude, GPT, Gemini）では精度を向上させる一方、オープンソースモデルでは逆に精度を低下させる傾向があることが示されました。また、記述形式そのものは全体の精度に有意な影響を与えませんが、個別のモデルレベルでは特定の形式への感受性が存在します。最も重要な要因はモデル自体の能力（最先端とOSモデルで21%の性能差）であり、さらにドメイン分割されたスキーマを用いることで10,000テーブル規模までナビゲーション精度を維持できることを証明しています。実務家は『万能なベストプラクティス』を求めるのではなく、採用するモデルの特性に合わせてアーキテクチャを選択すべきであると結論付けています。",
+    "topics": [
+      "LLM Agents",
+      "Context Engineering",
+      "SQL Generation",
+      "Benchmark",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Structured Context Engineering for File-Native Agentic Systems: Evaluating Schema Accuracy, Format Effectiveness, and Multi-File Navigation at Scale"
+  }
+}
