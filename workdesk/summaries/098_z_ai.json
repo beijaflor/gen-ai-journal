@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-02-13T12:20:09.545999+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-02-14T11:59:00+00:00",
+    "generatedBy": "claude-sonnet-4-5-20250929"
   },
   "content": {
-    "title": "DeepSeek-V3の技術革新：低コストでGPT-4oに匹敵するオープンモデルの衝撃",
-    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
-    "language": "ja",
-    "contentType": "🔬 Research & Analysis (研究・分析)",
-    "oneSentenceSummary": "DeepSeek-V3は、独自のMoEアーキテクチャと学習最適化により、従来の数分の一のコストで最高峰の推論性能を達成した革新的なLLMです。",
-    "summaryBody": "DeepSeek-V3は、671Bの総パラメータを持ち、推論時には約37Bを活性化させる高度なMixture-of-Experts (MoE) モデルです。技術的なハイライトは、補助損失を用いずに専門家の負荷を均衡させる「Auxiliary-loss-free Load Balancing」と、KVキャッシュを圧縮する「Multi-head Latent Attention (MLA)」です。これにより、学習の安定性と推論効率を劇的に向上させています。また、FP8精度での学習を導入し、計算リソースの消費を最小限に抑えつつ、数学やプログラミングといった高難易度タスクでGPT-4oを凌駕するスコアを記録しました。本報告書は、大規模モデル開発におけるスケーリング則の新たな解として、非常に高い価値を持っています。",
+    "title": "GLM-5: Vibe CodingからAgentic Engineeringへ - 744Bパラメータの次世代LLM",
+    "originalTitle": "GLM-5: From Vibe Coding to Agentic Engineering",
+    "url": "https://z.ai/blog/glm-5",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Z.aiが、複雑なシステムエンジニアリングと長期的なエージェントタスクに特化した744Bパラメータ（40B active）のオープンソースLLM「GLM-5」を発表し、コーディング・推論・エージェント性能で最高水準を達成しました。",
+    "summaryBody": "GLM-5は、GLM-4.5から大幅にスケールアップし（355B→744Bパラメータ、32B→40B active）、事前学習データも23Tから28.5Tトークンに増強されています。**DeepSeek Sparse Attention (DSA)** を統合することで、長文脈処理能力を維持しながらデプロイコストを大幅削減しました。\n\n強化学習基盤として、新開発の **slime（非同期RL基盤）** により学習効率が飛躍的に向上し、きめ細かいポストトレーニングを実現。SWE-bench Verified（77.8%）、Terminal-Bench 2.0（56.2%）、Vending Bench 2（$4,432の最終残高でオープンソース1位）など、実践的なベンチマークで最高クラスの性能を記録しました。\n\nMITライセンスでHugging FaceおよびModelScopeで公開され、**Claude Code、OpenCode、Cline** などの主要コーディングエージェントと互換性があります。また、Z.aiのAgent modeでは、テキストから直接 **.docx / .pdf / .xlsx** ファイルを生成する機能を提供し、「チャット」から「実務ツール」への移行を加速しています。",
     "topics": [
-      "DeepSeek-V3",
+      "GLM-5",
       "LLM",
-      "MoE",
-      "AI効率化",
-      "オープンソース"
+      "Agentic AI",
+      "Coding Agents",
+      "Open Source"
     ],
     "scores": {
       "signal": 5,
-      "depth": 5,
-      "uniqueness": 5,
-      "practical": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
       "antiHype": 4,
-      "mainJournal": 98,
-      "annexPotential": 90,
-      "overall": 96
-    },
-    "originalTitle": "DeepSeek-V3 Technical Report"
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    }
   }
 }
