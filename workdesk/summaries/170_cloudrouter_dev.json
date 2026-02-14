@@ -1,27 +1,27 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-02-14T10:49:27.494302+00:00",
+    "generatedAt": "2026-02-14T13:35:28.373830+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "cloudrouter — AIエージェントにクラウドVM/GPU操作・ブラウザ自動化能力を付与するツール",
-    "url": "https://github.com/manaflow-ai/cloudrouter",
+    "title": "cloudrouter: Claude CodeやCodexからクラウドVM・GPUを自在に操るAIエージェント向けスキル",
+    "url": "https://manaflow.ai/cloudrouter",
     "language": "ja",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "Claude Code等のAIエージェントが、CLIを通じてクラウドVMやGPUを即座に構築し、ブラウザ操作やファイル同期、コード実行を自律的に行うためのオープンソースツール。",
-    "summaryBody": "### 概要 cloudrouterは、Claude CodeやCodex、CursorといったAIコーディングエージェントに、クラウド上のサンドボックス環境（VMやGPU）を操作する能力（スキル）を付与するツールです。CLIを通じて、環境の構築、コマンド実行、ファイル転送、そしてヘッドレスブラウザの自動操作を一元的に行えます。 ### 主な機能 1. インスタントサンドボックス: ローカルディレクトリやGitリポジトリから、Docker対応のVMやH100/A100などの高性能GPU環境を即座に起動できます。 2. ブラウザ自動化: Chrome CDP統合により、アクセシビリティツリーを用いた要素操作やスクリーンショット撮影が可能です。 3. ファイル同期とアクセス: 双方向のファイル転送、VS Code (Browser)、Jupyter Lab、VNCデスクトップ、インタラクティブターミナルを通じたアクセスをサポートします。 4. エージェント最適化: AIエージェントが迷わずに操作できるよう設計された、詳細なコマンド体系とセキュリティプロトコルを備えています。 ### 活用シーン モデルの学習や推論、複雑なWebスクレイピング、依存関係の多い開発環境の分離など、ローカルマシンのリソース制限を超えたタスクをAIエージェントに自律的に実行させることができます。",
+    "oneSentenceSummary": "Claude CodeなどのAIエージェントが、CLI経由でクラウドVMの起動、GPUの利用、ブラウザ自動操作を実行できるようにする強力な拡張スキルが登場。",
+    "summaryBody": "cloudrouterは、Claude Code、Cursor、Codexといった次世代のAIコーディングエージェントに、安全な実行環境（サンドボックス）を提供するCLIツールおよび「スキル」です。`npx skills add manaflow-ai/cloudrouter`で導入でき、エージェントは自律的にクラウドVMを構築、コマンド実行、ファイル同期、GPU（T4から最新のB200まで）の割り当てを行えるようになります。さらに、Chrome CDP統合によるブラウザ自動操作機能も備えており、アクセシビリティツリーを用いた要素特定やスクリーンショット取得が可能です。E2BやModalといったプロバイダーをバックエンドに採用し、VS CodeやJupyter Lab、VNCデスクトップを通じた人間による直接操作もサポートしています。AIエージェントに「手足」と「演算能力」を与える、開発プロセスの自動化を加速させるツールです。",
     "topics": [
+      "Claude Code",
       "AIエージェント",
-      "クラウド開発環境",
       "GPU",
-      "ブラウザ自動化",
-      "オープンソース"
+      "サンドボックス",
+      "自動化"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 4,
+      "uniqueness": 5,
       "practical": 5,
       "antiHype": 4,
       "mainJournal": 85,
