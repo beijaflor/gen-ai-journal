@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:30:26.731054+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google SRE が Gemini CLI を使用して実際の障害を解決している方法",
+    "url": "https://cloud.google.com/blog/ja/products/devops-sre/how-google-sre-is-using-gemini-cli-to-solve-real-world-outages",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GoogleのSREチームが、Gemini 3とGemini CLIを活用してインシデント対応の各フェーズを自動化・高速化し、平均緩和時間（MTTM）を短縮する具体的なワークフローを紹介しています。",
+    "summaryBody": "Googleのサイト信頼性エンジニアリング（SRE）において、Gemini CLIと最新モデルGemini 3を導入し、障害対応の「トイル（手作業）」を削減する手法が解説されています。具体的には、アラート発生時の初期調査から、定義済みハンドブックに基づく自動緩和策の提案、Model Context Protocol (MCP) を介したツール実行、ソースコード分析による根本原因の特定、そしてポストモーテム（事後分析）の自動生成までの一連の流れをAIエージェントが支援します。人間が最終的な意思決定を行う「人間参加型（Human-in-the-loop）」の安全性を維持しつつ、AIがターミナル上で副操縦士として機能することで、平均緩和時間（MTTM）を劇的に短縮する実戦的なAI活用事例です。また、生成されたポストモーテムを次のトレーニングデータとして活用する自己改善のサイクルについても言及されています。",
+    "topics": [
+      "SRE",
+      "Gemini CLI",
+      "インシデント管理",
+      "AIエージェント",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "How Google SRE is using Gemini CLI to solve real-world outages"
+  }
+}

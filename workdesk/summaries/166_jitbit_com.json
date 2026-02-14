@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:48:15.217140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにjQueryの削除を依頼したが、無惨にも失敗した話",
+    "url": "https://www.jitbit.com/alexblog/claude-code-jquery-fail/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Code (Opus 4.6) を用いた jQuery から Vanilla JS への移行作業が、基本的事項の無視や既存コードへの理解不足により失敗した経験を綴った批判的なレビュー。",
+    "summaryBody": "JitbitのAlex Yumashev氏による、AIエージェント「Claude Code」を用いたレガシーコード刷新の失敗談。筆者は67ファイルに及ぶjQueryからVanilla JSへの移行を自動化しようとしたが、詳細な指示書（CLAUDE.md）や独自のヘルパー関数を提供したにもかかわらず、AIは致命的なミスを連発。具体的には、モジュール内での`currentScript`の使用、DOMに存在しない要素への自信満々な参照、数字から始まる無効なIDセレクターの使用、非同期スクリプトの実行順序の誤認などが挙げられている。筆者は、AIは「更地（グリーンフィールド）」での開発には魔法のような力を発揮するが、既存の複雑なプロジェクト（ブラウンフィールド）では「文脈の腐敗（Context Rot）」が起きやすく、指示を無視した「人工的な自信」に基づいた誤解答を生成すると指摘。現時点のAIエージェントは宣伝されているような自律的なタスク遂行には程遠く、依然として人間のエンジニアによる監視と修正が不可欠であると結論づけている。",
+    "topics": [
+      "Claude Code",
+      "jQuery",
+      "JavaScript Migration",
+      "AI Coding Agents",
+      "Legacy Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "I asked Claude Code to remove Jquery. It failed miserably."
+  }
+}

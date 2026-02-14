@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:29:38.425958+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent TeamsとHooksの統合で分かったこと",
+    "url": "https://zenn.dev/taroimo/articles/claude-code-agent-teams-hooks",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの実験的機能『Agent Teams』とHooks APIを組み合わせ、LLM任せの挙動に確定的なフロー保証やコスト制御、状態の永続化を付与する検証記録。",
+    "summaryBody": "Claude Code v2.1.32で追加されたマルチエージェント機能「Agent Teams」を、Hooks APIで高度に制御する手法を検証した記事です。主な発見として、チームメイトの実行は同一プロセス内のシリアライズされたツール呼び出しであり、既存のHookで捕捉可能であることや、`TaskCompleted`や`TeammateIdle`など専用Hookの存在を明らかにしています。特に、Hookタイプごとに「exitコードによるブロック」と「stdoutのJSON decisionによるブロック」が混在している仕様の落とし穴を詳述。これらを活用し、依存タスク未完了時のタスク終了拒否、ツール実行回数制限によるコスト管理、セッション終了時の状態スナップショットと次セッションでの復旧手順注入といった、実用的な自律エージェント制御のアーキテクチャを提案しています。",
+    "topics": [
+      "Claude Code",
+      "Agent Teams",
+      "Hooks API",
+      "Multi-agent Systems",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Agent TeamsとHooksの統合で分かったこと"
+  }
+}

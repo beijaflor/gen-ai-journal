@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:53:09.839083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SDD（仕様駆動開発）のスラッシュコマンドを自分で作って運用している",
+    "url": "https://shibayu36.hatenablog.com/entry/2026/02/12/173000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "既存のSDDツールの生成量過多という課題に対し、自身の得意不得意に合わせてClaude Codeのカスタムスラッシュコマンドを自作し、要件定義と実装計画の効率を改善した事例紹介。",
+    "summaryBody": "AI駆動開発におけるSDD（仕様駆動開発）のアプローチとして、既存ツール（cc-sdd等）では生成される仕様が膨大になりすぎてレビューが困難になるという課題を指摘。著者は自身の「設計は得意だが、要件定義は補強が必要」という特性に基づき、Claude Code用のカスタムスラッシュコマンドを2種類自作しました。\n\n1. `/create-requirements`: 技術的詳細を一切排除し、「何を作るか」のヒアリングと要件定義書作成に特化。\n2. `/create-implement-plan`: 既存コード調査からフェーズ・コミット単位の分解までを壁打ちしながら作成。\n\nこの改善により、従来1時間以上かかっていたプロセスが約15分に短縮され、自分の注力したい部分にメリハリをつけた開発が可能になったと述べています。プロンプトの全文も公開されており、実用性の高い内容です。",
+    "topics": [
+      "SDD",
+      "Claude Code",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "仕様駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

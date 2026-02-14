@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:32:47.229928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「アンチパターン」と呼ばれるEAVを、あえて採用した話 ── 数十万件の属性、数十億件の値と向き合って",
+    "url": "https://zenn.dev/yesod_blog/articles/f326a0b721869e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "一般的にSQLアンチパターンとされるEAV（Entity-Attribute-Value）を、大規模な財務データやID管理システムで合理的かつ効果的に活用するための設計手法と実践知見を解説した記事。",
+    "summaryBody": "リレーショナルデータベース設計において忌避されがちなEAVパターンを、数十万件の属性や数十億件のデータを扱う大規模SaaS（SpeedaおよびYESOD）で採用した実例に基づく技術解説です。筆者は、EAVがアンチパターンとされる理由（SQLの複雑化、型安全性の欠如、パフォーマンス劣化等）を認めた上で、属性が動的に変化し、かつスパース（疎）なデータ構造を持つ場合には非常に有力な選択肢であることを示しています。具体的には、会計期間（period_id）の導入による時間軸の管理、エンティティ間の参照整合性を保つためのreference_idの追加、さらにKotlinを用いたバイナリシリアライズによる型安全性の確保といった、従来のEAVの欠点を克服するための実戦的な工夫が詳しく述べられています。",
+    "topics": [
+      "データベース設計",
+      "EAV",
+      "SQLアンチパターン",
+      "システムアーキテクチャ",
+      "バックエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

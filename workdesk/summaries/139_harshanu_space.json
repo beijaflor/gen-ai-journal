@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:28:45.411717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CCC vs GCC: AIが作成したCコンパイラの性能と限界を徹底検証",
+    "url": "https://harshanu.com/ccc-vs-gcc/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAIが開発したCコンパイラ「CCC」をGCCと比較検証し、カーネルコンパイルの正確性と実行性能の著しい課題を明らかにした。",
+    "summaryBody": "# 検証内容と結果\\nAnthropicがClaude（Opus 4.6）を用いて開発したCコンパイラ「CCC（Claude's C Compiler）」を、業界標準のGCC 14.2と比較した詳細なベンチマーク結果が報告されました。CCCはRustで記述され、人間がテストケースを書く以外は100% AIによって実装されたコンパイラです。\\n\\n## 主な成果\\n- **高い正確性**: Linux 6.9カーネルの全2,844個のCファイルをエラーなしでコンパイルすることに成功しました。\\n- **SQLiteの互換性**: 全クエリで正確な実行結果を確認し、エッジケースやクラッシュテストもパスしています。\\n\\n## 課題と限界\\n- **劇的な実行速度の低下**: 生成バイナリの実行速度はGCCに対し、SQLiteベンチマークで737倍〜15万倍以上遅いことが判明。\\n- **レジスタ割り当ての不備**: 効率的なレジスタ利用ができず、すべての演算を低速なメモリ経由で行う「レジスタ・スピリング」が致命的なボトルネックとなっています。\\n- **リンクとデバッグの欠如**: 再配置情報のミスによりカーネルの最終バイナリ生成には失敗し、シンボルテーブルやDWARF情報も未実装です。\\n\\n## 結論\\nAIによる複雑なシステム開発の可能性を証明した一方、実用的なコード生成効率や最適化においては依然として既存コンパイラに遠く及ばないのが現状です。",
+    "topics": [
+      "Claude",
+      "Cコンパイラ",
+      "ベンチマーク",
+      "AI開発",
+      "コンパイラ最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "CCC vs GCC"
+  }
+}

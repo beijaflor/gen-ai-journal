@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:49:27.494302+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cloudrouter — AIエージェントにクラウドVM/GPU操作・ブラウザ自動化能力を付与するツール",
+    "url": "https://github.com/manaflow-ai/cloudrouter",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code等のAIエージェントが、CLIを通じてクラウドVMやGPUを即座に構築し、ブラウザ操作やファイル同期、コード実行を自律的に行うためのオープンソースツール。",
+    "summaryBody": "### 概要 cloudrouterは、Claude CodeやCodex、CursorといったAIコーディングエージェントに、クラウド上のサンドボックス環境（VMやGPU）を操作する能力（スキル）を付与するツールです。CLIを通じて、環境の構築、コマンド実行、ファイル転送、そしてヘッドレスブラウザの自動操作を一元的に行えます。 ### 主な機能 1. インスタントサンドボックス: ローカルディレクトリやGitリポジトリから、Docker対応のVMやH100/A100などの高性能GPU環境を即座に起動できます。 2. ブラウザ自動化: Chrome CDP統合により、アクセシビリティツリーを用いた要素操作やスクリーンショット撮影が可能です。 3. ファイル同期とアクセス: 双方向のファイル転送、VS Code (Browser)、Jupyter Lab、VNCデスクトップ、インタラクティブターミナルを通じたアクセスをサポートします。 4. エージェント最適化: AIエージェントが迷わずに操作できるよう設計された、詳細なコマンド体系とセキュリティプロトコルを備えています。 ### 活用シーン モデルの学習や推論、複雑なWebスクレイピング、依存関係の多い開発環境の分離など、ローカルマシンのリソース制限を超えたタスクをAIエージェントに自律的に実行させることができます。",
+    "topics": [
+      "AIエージェント",
+      "クラウド開発環境",
+      "GPU",
+      "ブラウザ自動化",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "cloudrouter — Cloud VMs/GPUs for Claude Code/Codex"
+  }
+}

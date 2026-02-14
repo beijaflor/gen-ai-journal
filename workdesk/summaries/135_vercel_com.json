@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:27:24.831947+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント向けAEO（AIエンジン最適化）追跡システムの構築",
+    "url": "https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelが、開発ワークフローに組み込まれたコーディングエージェントによる自社ブランド情報の参照状況を可視化するために構築した、サンドボックス環境を活用したAEO追跡システムの仕組みを紹介しています。",
+    "summaryBody": "Vercelは、AIが情報を検索・要約する手法の変化に対応するため、AIエンジン最適化（AEO）を測定するシステムを構築しました。従来のモデルとは異なり、IDEやターミナルで動作するコーディングエージェントは独自の実行環境を必要とするため、Vercel Sandbox（Linux MicroVM）を使用して実行を隔離し、AI Gatewayを通じてLLM呼び出しを制御・記録する手法を採用しています。最大のアプローチは、Claude CodeやOpenAI Codexなど、出力形式が異なる各エージェントのトランスクリプト（実行ログ）を、4段階（取得、パース、拡張、要約・ブランド抽出）の正規化レイヤーを通して共通イベント形式に変換する仕組みです。これにより、エージェントがいつWeb検索を行い、どのようなツールやライブラリを推奨したかを統計的に把握可能になりました。初期検証では、コーディングエージェントの約20%がプロンプトに対してWeb検索を実行していることが判明し、開発者向けのコンテンツ最適化の重要性が浮き彫りになっています。今後、本システムをオープンソースとして公開する計画も発表されました。",
+    "topics": [
+      "AEO",
+      "AIエージェント",
+      "Vercel Sandbox",
+      "LLMオブザーバビリティ",
+      "AI Gateway"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 90
+    },
+    "originalTitle": "How we built AEO tracking for coding agents"
+  }
+}
