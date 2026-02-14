@@ -26,9 +26,9 @@ def sanitize_url(url):
     query_params = parse_qs(parsed_url.query)
     
     # Remove common tracking parameters
-    tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source']
+    tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source', 'hl']
     sanitized_params = {
-        k: v for k, v in query_params.items() 
+        k: v for k, v in query_params.items()
         if not any(k.startswith(prefix) for prefix in tracking_params)
     }
     

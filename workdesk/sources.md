@@ -145,7 +145,6 @@
 - [x] 143. https://zenn.dev/tarouimo/articles/9aace19fa1c271
 - [x] 144. https://zenn.dev/pwrengineer/articles/opus-4-6vsopus-4-5
 - [x] 145. https://zenn.dev/yamitake/articles/inertia-rails-llms-txt-great-example
-- [x] 146. https://cloud.google.com/blog/ja/topics/developers-practitioners/how-google-sres-use-gemini-cli-to-solve-real-world-outages/?hl=ja
 - [x] 147. https://sizu.me/ushironoko/posts/1t256hfucxc6
 - [x] 148. https://dev.classmethod.jp/articles/less-than-greater-than-claude-code/
 - [x] 149. https://lucumr.pocoo.org/2026/2/9/a-language-for-agents/
