@@ -186,6 +186,9 @@
 - [x] 187. https://openai.com/ja-JP/index/introducing-gpt-5-3-codex-spark/
 - [x] 188. https://anond.hatelabo.jp/20260213105936
 - [x] 189. https://developers.freee.co.jp/entry/coding-agent-context-refactor
+- [x] 190. https://blog.lai.so/agent-teams/
+- [x] 191. https://bufferings.hatenablog.com/entry/2026/02/12/224302
+- [x] 192. https://nowokay.hatenablog.com/entry/2026/02/12/005151
 
 ## Slides
 
