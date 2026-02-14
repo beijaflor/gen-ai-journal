@@ -153,7 +153,6 @@
 - [x] 152. https://zenn.dev/tktomaru/articles/glm-ocr-vs-tesseract-comparison
 - [x] 153. https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface
 - [x] 154. https://zenn.dev/smartvain/articles/ai-finds-96pct-vulns-why-learn-security
-- [x] 155. https://zenn.dev/yesodco/articles/f047e05bf9b656
 - [x] 156. https://campedersen.com/singularity
 - [x] 157. https://developers.googleblog.com/conductor-update-introducing-automated-reviews/
 - [x] 158. https://www.oreilly.com/radar/conductors-to-orchestrators-the-future-of-agentic-coding/
