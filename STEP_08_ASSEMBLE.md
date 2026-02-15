@@ -8,8 +8,14 @@ Create publication-ready journals that match the format of published examples (s
 
 ## Input Files
 
-- **Editorial Plan:** `workdesk/editorial_plan_YYYY_MM_DD.md` (APPROVED from STEP_03b)
-- **Refined Summaries:**
+- **Editorial Plan with Assembly Strategies:** `workdesk/editorial_plan_YYYY_MM_DD.md`
+  - ✅ APPROVED themes and structure (from STEP_03b)
+  - 📋 Assembly strategies for each theme (from STEP_07)
+    - Pattern selections and rationales
+    - Article order and connection points
+    - Narrative strategies and writing prompts
+- **Pattern Library:** `patterns/assembly/*.md` (reference for assembly strategies)
+- **Article Summaries:**
   - `workdesk/unified_summaries_main.md` (18-25 articles)
   - `workdesk/unified_summaries_annex.md` (remaining articles)
 - **Source Lists:**
@@ -29,28 +35,47 @@ STEP_08 is a **manual editorial process** split into 3 sub-steps:
 
 ---
 
-## STEP_08a: Verify Structure & Refine Plan
+## STEP_08a: Review Assembly Strategies & Prepare
 
-**Note:** Theme organization was completed in STEP_03b and STEP_04. This step verifies and refines the approved plan.
+**Note:** Theme organization (STEP_03b/STEP_04) and assembly planning (STEP_07) are complete. This step prepares for actual writing by reviewing strategies.
 
-### 1. Review Editorial Plan and Refined Summaries
+### 1. Read Assembly Strategies from STEP_07
 
-- [ ] Read `workdesk/editorial_plan_YYYY_MM_DD.md` (approved themes and structure)
-- [ ] Read `workdesk/unified_summaries_main.md` completely
-- [ ] Read `workdesk/unified_summaries_annex.md` completely
-- [ ] Verify themes still make sense with final article selection
+- [ ] Read `workdesk/editorial_plan_YYYY_MM_DD.md` completely, focusing on:
+  - **Assembly Strategy sections** for each theme (added in STEP_07)
+  - Pattern names and rationales
+  - Article order and why
+  - Narrative strategies
+  - Connection points between articles
+  - Writing prompts for assembly
 
-### 2. Verify Thematic Organization
+- [ ] Read corresponding pattern definitions from `patterns/assembly/`:
+  - For each theme's selected pattern, review pattern guidelines
+  - Understand transition strategies for that pattern
+  - Review narrative flow recommendations
+  - Check example from past journals
 
-**For Main Journal** (already organized in STEP_04):
-- [ ] Review theme-organized `workdesk/curated_journal_sources.md`
-- [ ] Confirm 6-7 thematic sections from editorial plan
-- [ ] Verify article distribution within themes is balanced
-- [ ] Check logical flow and narrative arc
+- [ ] Read all article summaries
+  - [ ] Read `workdesk/unified_summaries_main.md` completely
+  - [ ] Read `workdesk/unified_summaries_annex.md` completely
+  - Familiarize yourself with article content before assembly
 
-**Note:** Theme organization was completed in STEP_04 based on the approved editorial plan. If adjustments are needed:
-- [ ] Document rationale for changes
-- [ ] Update editorial plan if themes evolved significantly during curation
+### 2. Verify Assembly Strategies Make Sense
+
+**For Main Journal** (6-7 themes with assembly strategies):
+
+- [ ] Review each theme's assembly strategy in editorial plan:
+  - Does the pattern choice still make sense?
+  - Is the article order logical?
+  - Are connection points clear?
+  - Are transition strategies actionable?
+
+- [ ] If adjustments needed:
+  - [ ] Document what changed and why
+  - [ ] Update assembly strategy in editorial plan
+  - [ ] Re-review pattern guidelines if switching patterns
+
+**Note:** Only make changes if articles or understanding has evolved since STEP_07. Assembly strategies should be mostly final.
 
 **For Annex Journal** (target: 5-6 sections):
 - [ ] Group articles emphasizing B-side character
@@ -72,9 +97,9 @@ STEP_08 is a **manual editorial process** split into 3 sub-steps:
 
 ---
 
-## STEP_08b: Generate Journal Draft
+## STEP_08b: Assemble Journal Following Strategies
 
-### Main Journal Assembly
+### Main Journal Assembly (Theme-by-Theme Following STEP_07 Strategies)
 
 #### 1. Header & Introduction
 
@@ -96,9 +121,20 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
 ---
 ```
 
-#### 2. Thematic Sections
+#### 2. Assemble Each Theme Section
 
-**For each theme from `workdesk/curated_journal_sources.md` (theme-organized format):**
+**IMPORTANT:** For each theme, follow the assembly strategy documented in STEP_07.
+
+**Process for each theme:**
+
+1. **Read the theme's assembly strategy** from editorial plan
+   - Review pattern name, article order, connection points
+   - Read the pattern's guidelines from `patterns/assembly/[pattern-name].md`
+   - Understand transition strategies and writing prompts
+
+2. **Assemble theme section** following the strategy:
+
+**For each theme from editorial plan (following assembly strategy):**
 
 ```markdown
 ## [Sequential Number]. [Theme Title from Editorial Plan]
@@ -120,18 +156,54 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
 ### [Next Article in Same Theme...]
 ```
 
-**Theme Section Order:**
-- [ ] Use the sequence from editorial plan OR
-- [ ] Reorder for better narrative flow (document why in editorial notes)
+**Theme Assembly Guidance:**
+
+- **Article order**: Use the sequence from STEP_07 assembly strategy
+  - Order was determined based on pattern guidelines
+  - Only reorder if you discover a better flow (document why in comments)
+
+- **Transitions**: Follow the transition strategies from selected pattern
+  - **Progressive Sequence**: "Building on this..." / "Taking this further..."
+  - **Multi-Perspective**: "From another angle..." / "Contrasting with this..."
+  - **Single-Focus**: "In response to this..." / "Analyzing this further..."
+  - **Debate-Contrast**: "However, critics argue..." / "On the other hand..."
+
+- **Narrative arc**: Answer the writing prompts from assembly strategy
+  - What question does this theme answer?
+  - What synthesis emerges from these articles together?
+  - What should readers take away?
+
+- **Connection points**: Use the documented connections between articles
+  - Explicitly link Article A → Article B where noted
+  - Highlight complementary vs. contrasting viewpoints
 
 **Critical transformation rules**:
 - **Include**: Theme title from plan, Japanese article title (##見出し from unified summary), URL, polished summary
 - **Exclude**: Original Title, Content Type, Language, Scores, Topics tags, metadata
-- **Edit**: Refine summary for editorial voice (see EDITOR_PERSONALITY.md)
+- **Edit**: Refine summary for editorial voice (see EDITOR_PERSONALITY.md) AND pattern narrative flow
 - **Format**: Use `---` separator between articles
-- **Theme Intro**: Optional - use from editorial plan if it adds value
+- **Theme Intro**: Use introduction from editorial plan (refined in STEP_07 if pattern-specific intro needed)
 
-#### 3. Conclusion
+#### 3. Verify Assembly Strategy Execution
+
+After assembling each theme section, verify:
+
+- [ ] **Pattern adherence**: Does the section follow the selected pattern's structure?
+- [ ] **Article order**: Are articles in the documented sequence (or changes justified)?
+- [ ] **Transitions**: Do transitions use the pattern's recommended strategies?
+- [ ] **Writing prompts**: Have the assembly prompts been addressed?
+  - Core question answered?
+  - Synthesis present?
+  - Reader takeaway clear?
+- [ ] **Connection points**: Are documented article connections explicit in text?
+- [ ] **Narrative flow**: Does the theme section read as coherent narrative (not list)?
+
+**If pattern doesn't feel right during assembly:**
+- Note what's not working in editorial notes
+- Consider if different pattern would work better
+- Update pattern library with insights for future journals
+
+#### 4. Conclusion
 
 ```markdown
 ## おわりに
