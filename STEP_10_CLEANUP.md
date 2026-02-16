@@ -124,15 +124,27 @@ echo "# 全記事要約 YYYY年MM月DD日号
 
 ---" > journals/YYYY-MM-DD/99_unified_summaries.md
 
-# Append all summaries
-for file in journals/YYYY-MM-DD/summaries/*.md; do
+# Append all summaries (handling JSON format)
+# CRITICAL: Summaries are stored as .json files, not .md files
+for file in journals/YYYY-MM-DD/summaries/*.json; do
     if [ -f "$file" ]; then
-        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
-        echo "## $(basename "$file" .md)" >> journals/YYYY-MM-DD/99_unified_summaries.md
-        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
-        cat "$file" >> journals/YYYY-MM-DD/99_unified_summaries.md
-        echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
-        echo "---" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        filename=$(basename "$file" .json)
+        title=$(jq -r '.content.title' "$file" 2>/dev/null)
+        url=$(jq -r '.content.url' "$file" 2>/dev/null)
+        summary=$(jq -r '.content.summaryBody' "$file" 2>/dev/null)
+
+        if [ -n "$title" ] && [ "$title" != "null" ]; then
+            echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "## $filename" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "**$title**" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "出典: $url" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "$summary" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "" >> journals/YYYY-MM-DD/99_unified_summaries.md
+            echo "---" >> journals/YYYY-MM-DD/99_unified_summaries.md
+        fi
     fi
 done
 
@@ -148,20 +160,32 @@ echo "# 非掲載記事要約 YYYY年MM月DD日号
 grep -o 'https://[^[:space:]]*' journals/YYYY-MM-DD/sources/curated_journal_sources.md > temp_selected.txt
 grep -o 'https://[^[:space:]]*' journals/YYYY-MM-DD/sources/curated_annex_journal_sources.md >> temp_selected.txt
 
-# Add omitted summaries
-for file in journals/YYYY-MM-DD/summaries/*.md; do
+# Add omitted summaries (handling JSON format)
+# CRITICAL: Summaries are stored as .json files, not .md files
+for file in journals/YYYY-MM-DD/summaries/*.json; do
     if [ -f "$file" ]; then
-        filename=$(basename "$file" .md)
+        filename=$(basename "$file" .json)
         file_number=$(echo "$filename" | grep -o '^[0-9]*' | head -1)
         if [ -n "$file_number" ]; then
             source_url=$(grep "^- \[.\] ${file_number}\." journals/YYYY-MM-DD/sources/sources.md | grep -o 'https://[^[:space:]]*' | head -1)
             if [ -n "$source_url" ] && ! grep -Fq "$source_url" temp_selected.txt; then
-                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
-                echo "## $filename" >> journals/YYYY-MM-DD/02_omitted_summaries.md
-                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
-                cat "$file" >> journals/YYYY-MM-DD/02_omitted_summaries.md
-                echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
-                echo "---" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                # Extract data from JSON using jq
+                title=$(jq -r '.content.title' "$file" 2>/dev/null)
+                url=$(jq -r '.content.url' "$file" 2>/dev/null)
+                summary=$(jq -r '.content.summaryBody' "$file" 2>/dev/null)
+
+                if [ -n "$title" ] && [ "$title" != "null" ]; then
+                    echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "## $filename" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "**$title**" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "出典: $url" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "$summary" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                    echo "---" >> journals/YYYY-MM-DD/02_omitted_summaries.md
+                fi
             fi
         fi
     fi
@@ -351,8 +375,20 @@ journals/YYYY-MM-DD/
 - [ ] **Content Verification:**
   - `99_unified_summaries.md` contains ALL weekly summaries (not split files)
   - `02_omitted_summaries.md` contains only non-selected article summaries
+  - **CRITICAL**: Verify `02_omitted_summaries.md` actually has content (not just header) ⭐
   - No `unified_summaries_main.md` or `unified_summaries_annex.md` files
   - Sources directory includes `non_main_sources.md` (if applicable) ⭐
+
+**Validation Commands:**
+```bash
+# Verify omitted summaries has actual content (should be >100 lines)
+wc -l journals/YYYY-MM-DD/02_omitted_summaries.md
+# Should show significant line count (e.g., 1000+ lines), not just 5-6 lines
+
+# Verify it contains article entries (should be >0)
+grep -c '^## ' journals/YYYY-MM-DD/02_omitted_summaries.md
+# Should show number of omitted articles (e.g., 100-150)
+```
 
 - [ ] **Workdesk Cleanup Verification:** ⭐
   - No STEP_07 working files remain (`STEP_07_*.md`)
