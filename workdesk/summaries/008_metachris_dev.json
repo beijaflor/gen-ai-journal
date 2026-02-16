@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:36:42.962564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LibvirtとVirshを使用してLLMエージェントを仮想マシンで安全に実行する方法（Safe Yolo Mode）",
+    "url": "https://chrishager.me/safe-yolo-mode-llm-agents-vms-libvirt/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Linuxサーバー上でLibvirtとVirshを用いて仮想マシンを構築し、LLMエージェントを隔離された環境で安全に自動実行（Yoloモード）させるための実践的ガイド。",
+    "summaryBody": "この記事は、LLMエージェントに広範な権限を与える「Yoloモード（自動承認モード）」において、ホストシステムを破壊的操作や機密情報へのアクセスから守るための仮想化技術の活用法を解説しています。Linuxの標準的な仮想化APIであるLibvirtとコマンドラインツールVirshを使用し、Ubuntuのクラウドイメージを用いた迅速なVM構築、SSHやTailscaleによるリモートアクセス管理、Tmuxを用いたセッションの永続化、さらにはスナップショットによる状態保存と復元まで、エージェント実行に特化した一連の手順が網羅されています。Claude Code、Gemini CLI、Codex CLIといった主要なAIツールのインストール手順も含まれており、開発者が安全にエージェントを試作・運用するための具体的なリファレンスとなっています。また、デスクトップ向けのLimaとの比較や、サーバー用途におけるLibvirtの優位性についても触れられています。",
+    "topics": [
+      "LLM Agents",
+      "Libvirt",
+      "Virtualization",
+      "Security",
+      "Linux"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Safe Yolo Mode: Running LLM Agents in VMs with Libvirt and Virsh"
+  }
+}

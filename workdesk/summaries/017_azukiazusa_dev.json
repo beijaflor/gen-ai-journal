@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:38:47.468429+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントのセッションを Git 互換のデータベースに保存する Entire CLI",
+    "url": "https://azukiazusa.dev/blog/entire-cli-ai-agent-session-git-compatible-database/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Entire CLIは、AIエージェントとの対話履歴や推論プロセスをGit互換のチェックポイントとして保存し、AI開発におけるコンテキストの喪失を防ぐツールです。",
+    "summaryBody": "AIコーディングアシスタントの普及により、開発者はAIを管理するマネージャーのような役割を担うようになりましたが、従来のソフトウェア開発ライフサイクルはAIを前提としておらず、セッションごとのコンテキストが失われやすいという課題があります。Entire CLIはこの問題を解決するため、AIエージェント（Claude CodeやGemini CLI）のプロンプト、応答、ツールの使用履歴などを「チェックポイント」としてGitリポジトリ内に永続化します。これにより、AIが「なぜそのコードを書いたのか」という意図を追跡可能にし、マルチエージェント間でのコンテキスト共有や、トークン使用量の可視化、AIと人間のコード貢献比率の確認などを実現します。記事では、CLIのインストールから、`entire enable`による設定、Gitコミットと連携したセッション保存のデモンストレーション、さらに専用ダッシュボードでの履歴確認方法まで詳しく解説されています。",
+    "topics": [
+      "Entire CLI",
+      "AIエージェント",
+      "Claude Code",
+      "Git",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
