@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:13:16.212313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "40億パラメータの小規模モデルがCRMタスクで巨大モデルを凌駕：Neurometricによる微調整の実験結果",
+    "url": "https://neurometric.substack.com/p/training-a-small-language-model-to",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Neurometric社が、Qwen3-4Bなどの小規模言語モデルをCRM-Arenaベンチマーク向けに微調整し、特定の業務タスクにおいて巨大なフロンティアモデルを上回る精度を達成した手法を公開しました。",
+    "summaryBody": "Neurometricの研究チームは、Salesforceのリード評価などの実務を模したベンチマーク「CRM-Arena」を用い、60億パラメータ未満の小規模言語モデル（SLM）の性能限界に挑みました。実験は2段階で行われ、フェーズ1ではSQL生成に焦点を当て、LoRAを用いた微調整によりLlama 3.2 3BやGPT-OSSを上回るスコアを記録。フェーズ2では戦略を「最終回答の直接生成」に転換し、BANTフレームワークを用いた制約付き回答生成とGRPOによる最適化を実施しました。その結果、Qwen3-4Bが0.825という高スコアを叩き出し、汎用的な巨大モデルよりも高い専門性を示しました。本報告は、適切なデータセットと微調整手法があれば、エッジでも動作可能なSLMがエンタープライズ領域で極めて有効であることを証明しています。また、合成データの質がモデルの性能に与える影響や、回答空間の制約が精度向上に寄与する重要性についても考察されています。",
+    "topics": [
+      "Small Language Models (SLM)",
+      "Fine-tuning",
+      "CRM-Arena",
+      "Qwen3",
+      "GRPO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "Training A Small Language Model To Outperform Frontier Models On CRM-Arena"
+  }
+}

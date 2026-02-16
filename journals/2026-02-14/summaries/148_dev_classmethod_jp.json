@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:31:10.730982+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code で常時コンテキスト使用量を把握できるようにしてみた",
+    "url": "https://dev.classmethod.jp/articles/claude-code-statusline-customization/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの`/statusline`機能を活用し、トークン消費量や残量、推定枯渇時間などをリアルタイムで監視するためのシェルスクリプトと設定方法を紹介。",
+    "summaryBody": "この記事では、Claude Codeのコンテキスト利用状況をリアルタイムで把握するためのカスタマイズ手法が解説されています。標準機能の`/statusline`とシェルスクリプト、`jq`を組み合わせることで、ターミナルの最下部に詳細なステータス情報を常時表示します。表示される情報には、モデル名、トークン使用率（視覚的なプログレスバー付き）、入力・出力トークンの内訳、残りのコンテキスト容量、現在の消費速度（バーンレート）に基づく推定枯渇時間、過去の統計（日次・週次・月次）などが含まれます。特に、使用率に応じて「Good」「Caution」「Warning」「Critical」と色が変化するパフォーマンスゾーン機能により、コンテキスト圧縮（`/compact`）が必要なタイミングを直感的に判断できる点が実用的です。設定手順はスクリプトの配置とJSONの編集のみで、約15分で完了する内容となっており、Claude Codeをヘビーに利用する開発者にとって非常に有用なツールカスタマイズ記事です。",
+    "topics": [
+      "Claude Code",
+      "生成AI",
+      "LLM",
+      "開発ツール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

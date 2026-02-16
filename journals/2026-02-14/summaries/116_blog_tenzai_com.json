@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:25:00.626569+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントのセキュリティ比較：Cursor, Claude Code, Devin等の脆弱性調査",
+    "url": "https://blog.tenzai.com/bad-vibes-comparing-the-secure-coding-capabilities-of-popular-coding-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CursorやClaude Codeなどの主要なAIコーディングエージェント5種を比較した調査により、全てのツールが認可制御やビジネスロジック、CSRF対策などの重要なセキュリティ設計において深刻な欠陥を持つことが判明しました。",
+    "summaryBody": "Tenzai社が実施したベンチマーク調査では、Cursor、Claude Code、OpenAI Codex、Replit、Devinの5つのAIエージェントを用いて同一のアプリケーションを作成し、そのコードに含まれる脆弱性を分析しました。全15個のアプリから計69件の脆弱性が発見され、以下の傾向が明らかになりました。\n\n- **得意分野**: SQLインジェクション（SQLi）やクロスサイトスクリプティング（XSS）など、モダンなフレームワークが標準で対策を提供している「解決済み」の脆弱性は、適切に回避される傾向にあります。\n- **苦手分野**: 複雑な認可ロジック（認証後の所有権確認漏れ）、ビジネスロジック（負の数量注文の許可）、SSRF（未検証のURLフェッチ）など、文脈判断が必要な領域では軒並み失敗しています。\n- **最大の懸念**: CSRF対策、CSPなどのセキュリティヘッダー、ログインのレート制限といった、明示的に指示されない限り実装されない「包括的なセキュリティ制御」が、ほぼすべてのエージェントで欠落していました。\n\n比較結果として、CursorとReplitが脆弱性数において最も少ない（13件）結果となりましたが、依然として安全とは言えず、開発者はAIが生成したコードに対して能動的なセキュリティテストを組み合わせることが不可欠です。",
+    "topics": [
+      "AI Coding Agents",
+      "Software Security",
+      "Vulnerability Management",
+      "Secure Coding",
+      "Benchmark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Bad Vibes: Comparing the Secure Coding Capabilities of Popular Coding Agents"
+  }
+}

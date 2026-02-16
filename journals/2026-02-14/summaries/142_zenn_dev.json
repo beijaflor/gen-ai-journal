@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:29:26.155413+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pencil × Claude Code でデザインを Pixel Perfect に再現させるまで粘った話",
+    "url": "https://zenn.dev/saqoosha/articles/pencil-claude-code-pixel-perfect",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIデザインツール「Pencil」と「Claude Code」を使い、ピクセル単位の画像差分解析をフィードバックループに組み込むことで、デザインをコードで極限まで再現する手法の検証記録。",
+    "summaryBody": "この記事では、新しいAIネイティブなデザインツール「Pencil」と、AnthropicのCLIツール「Claude Code」を組み合わせたUI実装の試行錯誤が紹介されています。\n\n主な流れと成果は以下の通りです：\n- **自動生成から実装へ**: Pencilで生成したダッシュボードデザインを、Claude Code（React + Tailwind CSS）を用いてブラウザ上で動くコードに変換。\n- **ピクセル単位の検証**: Claudeが主張する「Pixel Perfect」を疑い、Playwrightでのスクショ撮影とPython(PIL)によるヒートマップ解析をClaude自身に実行させ、0px単位の差分を可視化。\n- **執拗なフィードバックループ**: 19回にわたる修正（v19）を経て、マージン、角丸（cornerRadius）、フォントサイズ、シャドウの強さなどをミリ単位で調整。\n- **結論**: 最終的に背景・レイアウトの一致率99.8%を達成。残りの差異はデザインツールとブラウザのフォントレンダリングエンジンの違いに起因するものであることを突き止め、AIによるUI再現の限界と可能性を提示しました。\n\nデザイン画像を正解（Ground Truth）としてAIに自己検収させる「画像デフ・フィードバック」の有効性が示されています。",
+    "topics": [
+      "Claude Code",
+      "Pencil",
+      "AIデザイン",
+      "React",
+      "Tailwind CSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Pencil × Claude Code でデザインを Pixel Perfect に再現させるまで粘った話"
+  }
+}

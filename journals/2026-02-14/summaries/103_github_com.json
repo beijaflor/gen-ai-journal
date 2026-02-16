@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:21:26.378784+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Dashyard: AIネイティブなPrometheusダッシュボード生成・運用ツール",
+    "url": "https://github.com/tokuhirom/dashyard",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Prometheusのメトリクス情報をAIに読み込ませてダッシュボードYAMLを自動生成し、Git管理と単一バイナリで運用できるダッシュボードツール。",
+    "summaryBody": "Dashyardは、AIを活用してPrometheusダッシュボードの作成を効率化するツールです。`gen-prompt`コマンドでPrometheusからメトリクス情報をスキャンし、ClaudeやChatGPT向けの最適化されたプロンプトを出力します。ユーザーはこのプロンプトをLLMに与えるだけで、本番環境レベルのダッシュボード（YAML）を数分で生成可能です。ダッシュボードはGitで管理可能な「Dashboards as Code」の形態をとり、データベース不要のステートレスなGoバイナリとして動作します。主な機能として、グラフやMarkdownパネル、テンプレート変数、リピート行、GitHub OAuth認証、単一バイナリによる簡単デプロイ、そして環境変数の展開による安全な設定管理などを備えています。Grafanaのような既存ツールに代わる、AI時代の軽量で管理しやすいモニタリング環境を提供します。",
+    "topics": [
+      "Prometheus",
+      "LLM",
+      "GitOps",
+      "Dashboard",
+      "Go"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - tokuhirom/dashyard: An AI-native Prometheus dashboard."
+  }
+}

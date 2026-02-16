@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:18:36.305140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AIのPRはレビューが大変」の正体を分解してラクになる",
+    "url": "https://inside.estie.co.jp/entry/2026/02/12/ai-pr-review",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成するプルリクエストのレビュー負荷を下げるため、意図の明文化、適切な分割、既存流儀の遵守をAIに再要求する運用の勘所を解説。",
+    "summaryBody": "AIによるコード生成が普及する中で、レビュー担当者の負担増が課題となっています。本書では、その原因を「意図の欠如」「不適切な分割」「既存流儀の無視」の3点に分解し、対策を提案しています。 1. **意図の明文化**: 説明文やコメントに「何のため」の変更かをAIに書かせる。 2. **適切な分割**: 複数のテーマが混ざった巨大なPRは、レビューする前にAIに分割を指示する。 3. **再実施の割り切り**: 複雑すぎる実装や既存コードの再発明に対しては、人間が修正するのではなくAIに再指示を出してやり直させる。 AIは「やり直し」のコストが極めて低いため、人間を相手にする時とは異なり、早い段階で「レビュー可能な状態」まで突き返すことが、チーム全体の生産性向上に繋がると結論づけています。",
+    "topics": [
+      "AI Coding",
+      "Code Review",
+      "Software Engineering",
+      "GitHub",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T10:54:06.866969+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coding Agent が言うことを聞かないときどうする？ - ミクロなコンテキストエンジニアリング",
+    "url": "https://developers.freee.co.jp/entry/micro-context-engineering",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeなどのCoding Agentが指示を無視する原因を、LLM特有の「構造化された命令集合」としての解釈プロセスから分析し、精度を向上させる記述法を解説。",
+    "summaryBody": "freee株式会社におけるClaude Codeの導入事例をベースに、Coding Agentを正しく動かすための「ミクロなコンテキストエンジニアリング」の手法を紹介した記事です。GitHubプルリクエストのマイルストーン付与指示が無視された実例を分析し、人間には理解できる「〜の場合」という条件付きの文章が、LLMにとっては「特定の条件下以外はスキップして良いブロック」と誤認されるリスクを指摘しています。解決策として、Markdownの構造を意識し、「〜すること」という命令形を用いた明確な構造化を行うことで、エージェントの挙動が劇的に改善したプロセスを解説。SKILL.md等のマクロな設定以前に、個別の命令文をLLMがどう解釈するかという基礎に立ち返る重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "Coding Agent",
+      "コンテキストエンジニアリング",
+      "プロンプトエンジニアリング",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:27:39.497525+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント構築は誰でもできるが、運用にはプラットフォームが必要である",
+    "url": "https://vercel.com/blog/anyone-can-build-agents-it-takes-a-platform-to-run-them",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントの構築が容易になった現代において、本番環境での信頼性、安全なコード実行、コスト効率を実現するプラットフォームとしてのVercelの価値を提唱しています。",
+    "summaryBody": "AIモデルの進化により、プロトタイプとしてのエージェント構築は民主化されましたが、実運用におけるセキュリティ、オブザーバビリティ、コスト最適化などの課題は依然として高く、これらを解決するプラットフォームの重要性が増しています。Vercelは、エージェント向けのインフラストラクチャとして以下の主要機能を提供しています。\n\n- **Sandboxes**: 隔離されたVM環境でエージェントが生成したコードを安全に実行。\n- **Fluid Compute**: AI特有の予測不可能なワークロードに対し、使用した分だけ課金されるサーバーレスな演算リソース。\n- **AI Gateway**: 複数モデルへの統合アクセスと、レート制限や予算管理、フェイルオーバー機能。\n- **Workflows**: 複雑な多段階処理を確実に実行するためのリトライと状態管理。\n\n記事では自社開発のデータ分析エージェント「d0」の事例を挙げ、これらのプリミティブを組み合わせることで、少人数のリソースでも高度な社内AIスタックを運用可能であることを示しています。",
+    "topics": [
+      "AI Agents",
+      "Vercel",
+      "LLM Ops",
+      "Cloud Infrastructure",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Anyone can build agents, but it takes a platform to run them"
+  }
+}

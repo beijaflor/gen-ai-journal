@@ -120,6 +120,47 @@ After gathering and summarizing sources, identify editorial themes BEFORE curati
 - Faster assembly (themes pre-planned)
 - Human review gate ensures quality
 
+## Assembly Pattern Library (STEP_07)
+
+After editorial planning (STEP_03b) and before final assembly (STEP_08), use the **Assembly Pattern Library** to plan HOW each theme should be assembled.
+
+**Pattern Library Location:** `patterns/assembly/`
+
+**Available Patterns:**
+1. **Single-Focus** - One major topic with multiple reactions/analyses
+2. **Multi-Perspective** - Multiple equal viewpoints on same topic
+3. **Progressive-Sequence** - Articles building on each other (problem→solution, simple→advanced)
+4. **Debate-Contrast** - Opposing viewpoints creating productive tension
+
+**STEP_07 Process:**
+```bash
+# 1. AI reviews pattern library
+# 2. For each theme, AI proposes pattern match with rationale
+# 3. Human reviews and approves/customizes pattern selection
+# 4. Document assembly strategy in editorial_plan_YYYY_MM_DD.md:
+#    - Pattern name and rationale
+#    - Article order with specific roles
+#    - Transition strategies (Japanese phrases)
+#    - Narrative arc and synthesis points
+#    - Assembly prompts for STEP_08
+# 5. Repeat for all themes
+```
+
+**Assembly Strategy Template:**
+See `templates/editorial_plan_assembly_strategy_template.md` for detailed structure
+
+**Pattern Evolution:**
+- New patterns can be created during STEP_07 if existing patterns don't fit
+- After each journal, update patterns with examples and insights
+- Pattern library grows progressively with institutional knowledge
+
+**Benefits:**
+- Codifies best practices from successful past journals
+- Makes assembly decisions explicit and reviewable
+- Speeds up STEP_08 with clear narrative direction
+- Improves consistency across themes and journals
+- Enables pattern reuse and refinement over time
+
 # Workflow Management
 
 ## Next Journal Date Management
@@ -157,8 +198,9 @@ grep "^# Sources for Journal" workdesk/sources.md
 ```
 
 ## Step Execution
-- Follow workflow steps sequentially: STEP_01 → STEP_03 → **STEP_03b** → STEP_04 → STEP_14
-- **STEP_03b (NEW)**: Plan editorial themes with mandatory human review gate before curation
+- Follow workflow steps sequentially: STEP_01 → STEP_03 → **STEP_03b** → STEP_04 → **STEP_07** → STEP_08 → STEP_14
+- **STEP_03b**: Plan editorial themes with mandatory human review gate before curation
+- **STEP_07 (UPDATED)**: Assembly planning with pattern selection (replaced old "Review & Refine")
 - **Modern workflow**: Create draft PR after STEP_03 or STEP_03b (recommended) for collaborative editing
 - Update TodoWrite frequently to track progress
 - Mark steps complete only when fully finished

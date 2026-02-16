@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:56:15.438589+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.6によるパワポ生成の裏側：PptxGenJSとマルチモーダルQAを組み合わせた高度なAgenticワークフロー",
+    "url": "https://zenn.dev/microsoft/articles/claude-opus-4-6-pptx-generation",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.6がPPTXを生成する際、Node.jsライブラリの実行、画像化による視覚的セルフチェック、およびエージェント的なスキルロードを組み合わせた詳細な内部プロセスを解説しています。",
+    "summaryBody": "2026年2月にリリースされた（という設定の）Claude Opus 4.6のPPTX生成機能の技術的背景を調査した記事です。主なプロセスは、(1)Factを確認するAgentic Search、(2)Anthropic公式のSkillによるPptxGenJS知識の動的ロード、(3)Node.jsスクリプトの生成とサンドボックスでの実行、(4)LibreOfficeとpdftoppmを用いたスライドの画像化、(5)マルチモーダル機能による画像ベースのレイアウト検証（リフレクション）という5つの主要ステップで構成されています。単にコードを書くだけでなく、実際の描画結果をAI自身が視覚的に確認し、必要に応じて自動修正を行うワークフローが、これまでのモデルと一線を画す高品質な資料生成の鍵となっていることを解き明かしています。",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "PptxGenJS",
+      "AIエージェント",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:23:06.633496+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic Workflows - Markdownで定義するGitHub Actions用AIエージェント自動化ツール",
+    "url": "https://githubnext.com/projects/agentic-workflows",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Nextが発表した、Markdown形式の指示によりAIエージェントをGitHub Actions上で安全に実行し、リポジトリの改善や管理を自動化するツール。",
+    "summaryBody": "GitHub Agentic Workflowsは、GitHub NextとMicrosoft Researchが開発したAIエージェント実行用フレームワークです。従来のリポジトリ自動化は複雑なYAMLやコードが必要でしたが、本ツールはMarkdownファイルに自然言語で指示を記述するだけで、GitHub Copilot、Claude、OpenAIなどのLLMを用いたエージェントをGitHub Actions上で動作させることができます。Issueの自動トリアージ、CI失敗の解析、ドキュメント維持、テストの拡充といったタスクを「Continuous AI（継続的AI）」として実現します。セキュリティを最優先に設計されており、デフォルトでは読み取り専用権限で動作し、書き込み操作は明示的な許可（ホワイトリスト）とサンドボックス環境での実行に制限されるため、安全にリポジトリのメンテナンスをAIに任せることが可能です。",
+    "topics": [
+      "GitHub",
+      "AIエージェント",
+      "GitHub Actions",
+      "LLM",
+      "オートメーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "GitHub Agentic Workflows"
+  }
+}

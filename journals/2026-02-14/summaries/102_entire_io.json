@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T12:05:00+00:00",
+    "generatedBy": "claude-sonnet-4-5-20250929"
+  },
+  "content": {
+    "title": "元GitHub CEO、エージェント時代の開発プラットフォーム「Entire」を発表 - 6000万ドル調達",
+    "originalTitle": "Hello Entire World",
+    "url": "https://entire.io/blog/hello-entire-world/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "元GitHub CEOのThomas Dohmkeが、AI時代の開発ワークフロー刷新を目指す新会社Entireを発表し、エージェントのコンテキストをGitで管理する「Checkpoints」をオープンソースで公開しました。",
+    "summaryBody": "### 課題認識\n現代の開発ツール（Git、PR、Issue）は人間同士の協働のために設計されており、エージェントが大量のコードを生成する時代には対応できていません。エージェントセッションは揮発性で、プロンプトや推論の過程がコミット時に失われ、エージェント間の協調やコンテキスト継承が困難です。\n\n### Entireのビジョン\n**3つの基幹コンポーネント**で構成される次世代開発プラットフォーム：(1) Git互換データベース（コード・意図・制約・推論を統合）、(2) ユニバーサル・セマンティック推論レイヤー（マルチエージェント協調）、(3) AI-nativeソフトウェア開発ライフサイクル。$60M資金調達（Felicisリード）。\n\n### 初回プロダクト：Checkpoints\nエージェントが生成したコミットに対し、セッション全体（トランスクリプト、プロンプト、ファイル、トークン使用量、ツール呼び出し）をGitのメタデータとして自動保存。`entire/checkpoints/v1`ブランチに追記専用ログを作成し、「なぜ変更したか」をdiffと共に追跡可能に。**Claude Code、Gemini CLI対応**（Cursor等も追加予定）。オープンソースで公開。",
+    "topics": [
+      "Developer Platform",
+      "Agentic Workflow",
+      "Git",
+      "Thomas Dohmke",
+      "Entire"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    }
+  }
+}

@@ -320,6 +320,7 @@ function parseWorkdeskSummaryFile(filePath: string): WorkdeskSummary | null {
         filename: parsed.filename,
         title: parsed.title,
         excerpt: parsed.excerpt || parsed.oneSentence || '',
+        fullExcerpt: parsed.fullExcerpt || parsed.oneSentence || '', // Use fullExcerpt or oneSentence
         fullContent: parsed.content,
         url: parsed.sourceUrl,
         domain: parsed.domain,

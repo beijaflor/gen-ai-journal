@@ -2,10 +2,15 @@
 
 Summarize the article according to instructions below. Output the summary as structured JSON matching the v1.0 schema.
 
+**IMPORTANT**: Before generating JSON, detect the article language:
+- If language is **Japanese** (ja): **DO NOT** include the `originalTitle` field in your JSON output
+- If language is **English/other** (en/other): **MUST** include the `originalTitle` field with the original title
+
 Article contents is very last of prompt.
 
 **IMPORTANT**: Your output MUST use this exact nested structure:
 
+**For Japanese articles (DO NOT include originalTitle field):**
 ```json
 {
   "metadata": {
@@ -14,10 +19,40 @@ Article contents is very last of prompt.
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Japanese title here",
-    "originalTitle": "Original English title" or null,
+    "title": "日本語の記事タイトルをそのまま使用",
     "url": "https://...",
-    "language": "ja" or "en" or "other",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "One sentence in Japanese",
+    "summaryBody": "Full summary body in markdown format",
+    "topics": ["topic1", "topic2", "topic3"],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 80,
+      "overall": 78
+    }
+  }
+}
+```
+
+**For English/other language articles (INCLUDE originalTitle field):**
+```json
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-08T14:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日本語に翻訳されたタイトル",
+    "originalTitle": "Original English Title from the Page",
+    "url": "https://...",
+    "language": "en",
     "contentType": "🔬 Research & Analysis (研究・分析)",
     "oneSentenceSummary": "One sentence in Japanese",
     "summaryBody": "Full summary body in markdown format",
@@ -93,7 +128,7 @@ The final output must be valid JSON matching this structure:
   },
   "content": {
     "title": "[Article title in Japanese]",
-    "originalTitle": "[Original title in source language - only if non-Japanese, otherwise null]",
+    "originalTitle": "[Original title in source language - ONLY for non-Japanese articles, omit for Japanese]",
     "url": "[Exact original URL - DO NOT modify]",
     "language": "[ja/en/other]",
     "contentType": "[One of 8 types from content type framework]",
@@ -124,17 +159,25 @@ The final output must be valid JSON matching this structure:
 
 ## content object
 
+**CRITICAL**: The `originalTitle` field behavior depends on article language:
+- **Japanese articles**: Omit the `originalTitle` field entirely (do not include it in the JSON)
+- **Non-Japanese articles**: Include the `originalTitle` field with the original title
+
 1.  **title** (string, required):
     - If article language is **Japanese**: Use original Japanese title as-is
     - If article language is **English**: Translate title to Japanese
     - If article language is **other**: Translate title to Japanese
     - Length: 1-200 characters
 
-2.  **originalTitle** (string or null, required):
-    - If article language is **Japanese**: Set to `null`
-    - If article language is **English**: Original English title
-    - If article language is **other**: Original title in source language
-    - Length: 1-300 characters (if not null)
+2.  **originalTitle** (string, optional):
+    - **ONLY include this field for non-Japanese articles**
+    - If article language is **Japanese**: **DO NOT include this field in the JSON output** (omit entirely, do not set to null)
+    - If article language is **English**: Include with original English title from the page
+    - If article language is **other**: Include with original title in source language
+    - Length: 1-300 characters
+    - **Title selection rule**:
+      - For non-Japanese pages: Use translated Japanese title for `title` field, preserve original in `originalTitle`
+      - For Japanese pages: Use page title as-is for `title` field (no translation/modification)
 
 3.  **url** (string, required):
     - Use the exact original URL as provided in input

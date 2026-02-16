@@ -70,7 +70,7 @@ def sanitize_url(url):
     else:
         # Parse and filter query parameters for other sites
         query_params = parse_qs(parsed_url.query)
-        tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source']
+        tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source', 'hl']
         sanitized_params = {
             k: v for k, v in query_params.items()
             if not any(k.startswith(prefix) for prefix in tracking_params)

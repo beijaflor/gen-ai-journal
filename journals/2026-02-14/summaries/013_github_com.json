@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:52:20.497366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型AIの安全性を「信頼」ではなく「カーネルによる権限制限」で解決する：ゲーマー的視点からの提言",
+    "url": "https://github.com/Deso-PK/make-trust-irrelevant",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの安全性をモデルの善意や調整に頼るのではなく、OSカーネル層で権限を厳格に制限するメカニズムによって「信頼を不要にする」設計思想を提案するリポジトリ。",
+    "summaryBody": "本リポジトリの著者は、自律型AIエージェント（Agentic AI）の安全性が失敗しているのは、エージェントを「信頼」できるようにしようとしているからだと主張しています。セキュリティの本質は、意図を制御することではなく、物理的なメカニズム（権限）を制御することにあります。\\n\\n主な論点は以下の3点です。\\n1. **「信頼」は安全策ではない**: プロンプト注入や誤動作は、エージェントに広範な権限（Ambient Authority）を与えすぎた結果生じる「Confused Deputy（混同された代理人）」問題であり、ソフトな制約（プロンプトやポリシー）では解決できません。\\n2. **KERNHELMという概念**: プランニング（AI）と権限承認（カーネル）を分離するアーキテクチャを提案。権限は「減らすことしかできない（Reduce-only）」性質を持ち、AIが自ら権限を生成することを物理的に防ぎます。\\n3. **ゲーム開発の教訓**: オンラインゲームと同様に「プレイヤー（AI）を信じるな、ルール（OS）で縛れ」という、エンジニアリングに基づいた硬派なアプローチを強調しています。\\n\\nモデルの『アライメント』という曖昧な概念を、カーネルレベルの権限管理という明確な計算機科学の問題へと再定義する挑戦的な内容です。",
+    "topics": [
+      "AI Safety",
+      "Kernel Security",
+      "Agentic AI",
+      "Capability-based Security",
+      "Confused Deputy Problem"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Make Trust Irrelevant: A Gamer’s Take on Agentic AI Safety"
+  }
+}

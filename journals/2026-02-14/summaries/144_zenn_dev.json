@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T17:29:51.351078+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで検証：Opus 4.6/4.5の差は“品質”に出た",
+    "url": "https://zenn.dev/pwr/articles/claude-code-opus-comparison",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "同一仕様のWebアプリ開発をClaude Codeで行い、Opus 4.6と4.5の設計品質、堅牢性、UX、実行速度の差異を実証比較したレポート。",
+    "summaryBody": "Claude CodeのPlan modeを用い、同一の仕様書からWebアプリを生成してOpus 4.6と4.5を比較検証。機能要件（DoD）は両モデルとも完遂したが、非機能要件（品質・堅牢性・UX）において4.6が圧倒的に優位であった。具体的には、4.6はバリデーションの集約、エラーハンドリングの共通化、セキュリティ対策（パストラバーサル防止）、UXの細かな作り込み（非ブロッキング表示等）で高い品質を示した。一方で、4.6は公式の「より慎重な計画」という説明通り、実装完了までの所要時間が4.5より長く、速度・コストとのトレードオフが存在する。堅牢なプロダクションコード開発には4.6、スピード重視のMVP開発には4.5という使い分けが推奨される結論となっている。",
+    "topics": [
+      "Claude Code",
+      "Claude 3.5 Opus",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "LLM比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-10T19:56:29.361759+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Agent Teamsと自作ツールtaktの共存・連携：npx takt export-ccの紹介",
+    "url": "https://zenn.dev/nrs/articles/takt-agent-teams",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Codeの新機能「Agent Teams」に対し、自作ツール「takt」のワークフローをスキルとしてエクスポートして連携させる手法と、それぞれの使い分けを解説した記事です。",
+    "summaryBody": "Claude Codeに待望のマルチエージェント機能「Agent Teams」が搭載されたことを受け、著者が開発するAIエージェントオーケストレーションツール「takt」との共存戦略を提案しています。新機能`npx takt export-cc`を使用することで、taktで蓄積したYAML形式のワークフロー資産をClaude Codeのスキルとして即座に変換・利用可能になります。記事では、標準機能と比較した際のtaktの優位性として「GitHub統合の深さ」「200時間以上の実戦投入に基づく指示の精度」「AIの気分に左右されない確実なワークフロー実行」を挙げています。結論として、IssueからPR作成までを自動化し放置するタスクはtakt、対話的な細かい修正はClaude Code（takt経由）という使い分けが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "takt",
+      "AIエージェント",
+      "マルチエージェント",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code Agent Teamsが来た！さっそく使い倒して自前のOSSを滅ぼそうと思ったら……？"
+  }
+}

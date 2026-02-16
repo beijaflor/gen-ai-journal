@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:15:13.442216+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Web アプリケーションをツール化する WebMCP",
+    "url": "https://azukiazusa.dev/blog/webmcp-recap/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "WebMCPは、Webアプリケーションの機能をJavaScript APIやHTML属性を介してAIエージェントから呼び出し可能な「ツール」として公開するための新しいブラウザインターフェースです。",
+    "summaryBody": "WebMCPは、Model Context Protocol (MCP) をWebブラウザ上で実現するための提案仕様であり、Web開発者がアプリケーションの機能を構造化されたツールとしてAIエージェントに提供できるようにします。これにより、AIは画面解析に頼らず、直接的な関数呼び出しを通じてWeb操作を正確に実行できます。実装には、`window.navigator.modelContext.provideContext` を用いる命令的な手法と、`<form>`要素に`toolname`等の属性を付与する宣言的な手法の2種類が用意されています。現在はChrome 146以降の試験的フラグで動作し、ツールの呼び出しに合わせたCSS疑似クラスによるビジュアルフィードバックや、AIによるフォーム送信を識別する`agentInvoked`プロパティなども含まれています。Web開発者がAIエージェントに対して「操作可能なインターフェース」を定義するための強力な手段となります。",
+    "topics": [
+      "WebMCP",
+      "Model Context Protocol",
+      "Chrome API",
+      "AI Agents",
+      "JavaScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Web アプリケーションをツール化する WebMCP"
+  }
+}

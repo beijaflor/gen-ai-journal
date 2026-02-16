@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-14T13:35:28.373830+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cloudrouter: Claude CodeやCodexからクラウドVM・GPUを自在に操るAIエージェント向けスキル",
+    "url": "https://manaflow.ai/cloudrouter",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeなどのAIエージェントが、CLI経由でクラウドVMの起動、GPUの利用、ブラウザ自動操作を実行できるようにする強力な拡張スキルが登場。",
+    "summaryBody": "cloudrouterは、Claude Code、Cursor、Codexといった次世代のAIコーディングエージェントに、安全な実行環境（サンドボックス）を提供するCLIツールおよび「スキル」です。`npx skills add manaflow-ai/cloudrouter`で導入でき、エージェントは自律的にクラウドVMを構築、コマンド実行、ファイル同期、GPU（T4から最新のB200まで）の割り当てを行えるようになります。さらに、Chrome CDP統合によるブラウザ自動操作機能も備えており、アクセシビリティツリーを用いた要素特定やスクリーンショット取得が可能です。E2BやModalといったプロバイダーをバックエンドに採用し、VS CodeやJupyter Lab、VNCデスクトップを通じた人間による直接操作もサポートしています。AIエージェントに「手足」と「演算能力」を与える、開発プロセスの自動化を加速させるツールです。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "GPU",
+      "サンドボックス",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "cloudrouter — Cloud VMs/GPUs for Claude Code/Codex"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-13T12:10:28.058564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClioAI/kw-sdk: 知識労働（調査・分析・執筆）に特化した自己検証型AIエージェント構築用Python SDK",
+    "url": "https://github.com/ClioAI/kw-sdk",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ルーブリック（評価指標）を用いた自己検証ループにより、調査や分析といった正解が多義的な「知識労働」を高度に自動化するPython SDK。",
+    "summaryBody": "kw-sdkは、リサーチ、分析、執筆、意思決定といった「知識労働」をAIエージェントに実行させるためのPython SDKです。コード生成のような明確な正解がないタスクに対し、エージェントが自ら実行前に「ルーブリック（採点基準）」を策定し、出力結果をその基準で自己採点・改善する『自己検証ループ』を中核機能としています。主な機能として、Web検索、ファイルシステム操作、Python REPLによるコード実行、ユーザーへの追加質問（ask_user）などが含まれます。Gemini、OpenAI、Anthropicの最新モデルをサポートし、複数の視点を提示する『Exploreモード』や、フィードバックに基づいて洗練させる『Iterateモード』など、実務的なワークフローが組み込まれています。知識労働における検証のボトルネックを解消することを目的にオープンソースで公開されました。",
+    "topics": [
+      "AIエージェント",
+      "知識労働 (Knowledge Work)",
+      "自己検証 (Self-Verification)",
+      "Python SDK",
+      "LLMオーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - ClioAI/kw-sdk: Knowledge work sdk"
+  }
+}
