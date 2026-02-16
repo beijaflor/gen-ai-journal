@@ -29,7 +29,7 @@ graph LR
     C3 --> D[04. Curate Main - Theme-Driven]
     D --> E[05. Curate Annex Journal]
     E --> F[06. Create Focused Summaries]
-    F --> G[07. Review & Refine]
+    F --> G[07. Assembly Planning]
     G --> H[08. Assemble Final Journals]
     H --> I[09. Verify URLs & Quality]
     I --> J[10. Archive & Cleanup]
@@ -49,7 +49,7 @@ graph LR
 4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 articles using theme-driven approach from approved editorial plan
 5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
 6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
-7. **[Review & Refine](STEP_07_REVIEW.md)** - Edit and polish selected summaries with editorial voice
+7. **[Assembly Planning](STEP_07_ASSEMBLY_PLANNING.md)** - Select assembly patterns and plan narrative structure for each theme
 8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready journals using pre-planned themes
 9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
 10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
