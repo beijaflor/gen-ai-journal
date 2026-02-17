@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:23:52.193898+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "わずか40行のコードで構築するサーバーレスOCR：DeepSeek OCRとModalの活用法",
+    "url": "https://ckrapu.github.io/2026/01/14/serverless-ocr.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ModalとDeepSeek OCRを組み合わせ、数式を含む技術書を安価かつ高速にMarkdown形式へ変換するサーバーレスOCRの構築ガイド。",
+    "summaryBody": "この記事では、数式を多用する統計学の専門書（Gelmanの『Bayesian Data Analysis』）を検索可能にするため、サーバーレス環境で独自のOCRシステムを構築する方法を紹介しています。\n\n### 主な技術構成\n1. **Modal**: GPUリソースを必要な時だけ利用し、秒単位で課金されるサーバーレスプラットフォーム。インフラ管理の手間を省きつつ、高性能なA100 GPUなどを即座に利用可能です。\n2. **DeepSeek OCR**: 数式の再現性に定評のあるDeepSeekの最新オープンOCRモデルを採用。既存の高価なOCRサービスと比較して、コスト効率と精度のバランスに優れています。\n\n### 実装のポイント\n- **FastAPIによるバックエンド**: OCRモデルをコンテナ化し、APIエンドポイントとしてデプロイ。モデルの読み込みを1回に抑え、リクエストを並列処理します。\n- **バッチ処理**: 画像をバッチ単位で推論させることで、スループットを向上させています。\n- **解像度調整**: PDFのレンダリング時に解像度を2倍に上げることで、添字などの細かい文字の認識精度を向上させる工夫がなされています。\n\n約600ページの専門書を約45分、わずか2ドル程度のコストで、数式を含む高品質なMarkdown形式へ変換することに成功しており、AIエージェント向けの知識ベース構築に最適な手法です。",
+    "topics": [
+      "OCR",
+      "DeepSeek",
+      "Modal",
+      "Serverless",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Rolling your own serverless OCR in 40 lines of code"
+  }
+}

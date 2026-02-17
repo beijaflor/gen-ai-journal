@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:59:02.139400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "わずか243行で書かれたGPT実装『microgpt』が話題に — Python標準ライブラリのみで記述、GPTの動作理解に最適",
+    "url": "https://techfeed.io/entries/67ad5b8e4e7e9b001d000000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Andrej Karpathy氏が、Pythonの標準ライブラリのみを使用してGPTの学習と推論をわずか243行で実装した「microgpt」を公開し、教育用コードとして注目を集めています。",
+    "summaryBody": "元OpenAIのAndrej Karpathy氏が、GPTの内部構造を極限までシンプルに理解するためのリポジトリ（Gist）「microgpt」を公開しました。最大の特徴は、PyTorchやNumPyといった外部ライブラリを一切使用せず、Pythonの標準ライブラリ（mathやrandomなど）のみで記述されている点です。わずか243行のコードの中に、Transformerアーキテクチャ、フォワードパス、バックプロパゲーション（自動微分）、および学習ループのすべてが含まれています。大規模なGPUを必要とせず、CPU上で動作を追跡できるため、大規模言語モデルの数学的基盤を学びたいエンジニアにとって「究極の教材」となっています。",
+    "topics": [
+      "GPT",
+      "LLM",
+      "Python",
+      "Andrej Karpathy",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 98,
+      "overall": 95
+    },
+    "originalTitle": "microgpt · GitHub"
+  }
+}

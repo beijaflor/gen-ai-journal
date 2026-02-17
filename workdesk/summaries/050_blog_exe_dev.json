@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:23:08.573816+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMエージェントのコスト曲線：コンテキスト増大に伴う二次関数的な費用の罠",
+    "url": "https://exe.dev/blog/expensively-quadratic-the-llm-agent-cost-curve",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントのループ構造において、コンテキスト長とターン数が増えるにつれ「キャッシュ読み取り」費用が二次関数的に増大し、総コストの80%以上を占めるようになる構造的課題を指摘しています。",
+    "summaryBody": "コーディングエージェント（Shelley等）の動作は「ユーザー入力→LLM→ツール実行→結果をコンテキストに追加して再試行」というループに基づいています。現在のAnthropic等の料金体系では、入力、キャッシュ書き込み、出力に加え「キャッシュ読み取り」が課金対象となります。このループ構造では、ターンを重ねるごとに「過去の全コンテキストを読み出す」コストが累積するため、コンテキストが長くなるほどコストが二次関数的に増加します。実際の分析では、コンテキストが5万トークンに達するとはるかに安価なはずのキャッシュ読み取りが総コストの半分を占め、最終的には87%に達した事例が示されています。著者はこの対策として、ツール実行を細切れにせず一括で行うこと、サブエージェントによるコンテキストの分離、あるいは定期的な会話のリセットといったオーケストレーションの重要性を説いています。",
+    "topics": [
+      "LLMエージェント",
+      "コスト最適化",
+      "コンテキストウィンドウ",
+      "キャッシュエンジニアリング",
+      "AIエージェントオーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Expensively Quadratic: the LLM Agent Cost Curve"
+  }
+}

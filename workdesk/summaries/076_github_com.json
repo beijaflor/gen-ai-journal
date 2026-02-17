@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:50:42.521167+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "On-Device Browser Agent: WebLLMによる完全ローカル・プライバシー重視のブラウザ自動化ツール",
+    "url": "https://github.com/RunanywhereAI/on-device-browser-agent",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "WebLLMとWebGPUを活用し、クラウドAPIや外部サーバーを一切介さずにブラウザ内で完結するAIエージェントによる自動化ツールです。",
+    "summaryBody": "このGitHubリポジトリは、WebLLMを使用してブラウザ上で直接LLMを動作させ、ブラウザ操作を自動化するChrome拡張機能のソースコードを公開しています。WebGPUアクセラレーションを利用することで、プライバシーを完全に保護しながら高速な推論が可能です。システムは戦略を練る「Planner Agent」と実行を担う「Navigator Agent」の2段階構成になっており、ユーザーの指示に基づいてDOM解析、クリック、入力、データ抽出などのアクションを自律的に行います。Qwen2.5-1.5Bなどのモデルをブラウザにキャッシュするため、初回セットアップ後はオフラインでの利用も可能です。現在はPoC段階であり、テキストベースの解析に限定されていますが、ローカル環境でのAIエージェント活用の実用的な構成を示しています。",
+    "topics": [
+      "WebLLM",
+      "WebGPU",
+      "AIエージェント",
+      "ブラウザ自動化",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    },
+    "originalTitle": "on-device-browser-agent: On-device AI browser automation using WebLLM"
+  }
+}

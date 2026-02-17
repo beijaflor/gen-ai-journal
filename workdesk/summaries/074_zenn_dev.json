@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:48:43.811058+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "技術負債も理解負債も生まないAIコーディング手法（2026年2月現在）",
+    "url": "https://zenn.dev/keitakn/articles/ai-coding-methodology-2026-02",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeでの実装とCodex CLIでのレビューを組み合わせ、設計段階にリソースを集中させることでAI開発特有の負債を最小化する実践的ワークフロー。",
+    "summaryBody": "2026年時点でのAIコーディングにおける最適解として、技術負債（コード品質低下）と理解負債（開発者の理解不足）を防ぐためのプロセスを詳説しています。手法の核心は「実装計画の作成」に労力の9割を割くことにあり、具体的にはClaude Codeの推論能力を活用した詳細な設計書の生成、Codex CLIによる相互AIレビュー、そして人間によるビジネスロジックの最終確認という多層的なフローを提唱しています。また、MCP（Model Context Protocol）を用いた外部情報の参照や、コンテキストの肥大化を防ぐためのセッション管理、CodeRabbitによるプルリクエストレビューの自動化など、複数のAIツールを適材適所で使い分ける高度な自動化戦略が紹介されています。単なるコード生成を超えた、設計と検証を重視するAIネイティブな開発スタイルが学べる内容です。",
+    "topics": [
+      "AIコーディング",
+      "Claude Code",
+      "Codex CLI",
+      "技術負債",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

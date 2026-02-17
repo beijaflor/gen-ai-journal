@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:17:07.954697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エンジニア2人 × AI で回すプロダクト開発 — “開発プロセスの半分以上をAIが主導的に行う” 体制の実践",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/54248/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "サイバーエージェントにて、エンジニア2名で6名分の出力を実現するためにAIを開発プロセスの「主導者」に据え、要件定義から実装、レビューまでを自律的に完遂させるAI駆動開発基盤の実践事例。",
+    "summaryBody": "サイバーエージェントの25新卒エンジニアが、少人数体制で高出力を維持するために構築した「AI主導型」の開発フローを詳説しています。AIを単なる補助ツールではなく、自律的な「チームメンバー」として扱い、人間は「意思決定」と「確認」に徹する監督役へとシフトしました。Claude Codeを核に、37個のSkill（振る舞い定義）と24個のSubAgent（専門エージェント）を使い分け、要件定義、技術設計、タスク分割、TDD実装、コードレビュー、GitHub上での自動修正ループまでを自動化しています。特に「ファイルをインターフェースにしたタスク分割」と「git worktreeによる並列実装」により、人間が別の作業をしている間にAIが複数のプルリクエストを完遂させる体制を構築。成功の要諦として、暗黙知を徹底的にドキュメント化してAIにコンテキストを供給する重要性と、AIが自ら不明点を質問する仕組み（AskUserQuestion）の活用を挙げています。",
+    "topics": [
+      "AI駆動開発 (AI-Driven Development)",
+      "Claude Code",
+      "AIエージェント",
+      "GitHub Actions",
+      "エンジニアリング生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

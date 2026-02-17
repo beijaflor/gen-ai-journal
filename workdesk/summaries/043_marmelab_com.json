@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:18:50.022002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP（Model Context Protocol）のセキュリティ脆弱性とプロンプトインジェクションの分析",
+    "url": "https://marmelab.com/blog/2026/02/16/mcp-security-vulnerabilities.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPサーバーを通じたAIエージェントへの攻撃手法として、外部からのインジェクション、ツール記述の改ざん、およびツール間ハイジャックの3つの脆弱性を技術的に実証・解説した記事。",
+    "summaryBody": "Model Context Protocol (MCP) はAIエージェントの生産性を高めますが、同時に新たなセキュリティリスクも導入します。本記事では、著者がClaude 3.5/4.5などの最新モデルを用いて実証した3つの主要な脆弱性を紹介しています。\n\n1. **外部プロンプトインジェクション**: ウェブページ上の隠しテキストなどを通じて、MCPが読み取った内容に悪意ある指示を混入させる手法。最新モデルでは検知精度が向上しています。\n2. **ツールプロンプトインジェクション**: MCPツールの「説明（description）」自体に悪意ある指示を埋め込み、.envファイル等の機密情報を盗み出させる手法。\n3. **クロスツール・ハイジャック**: 悪意あるツールの説明文がLLMのコンテキスト内で他の正当なツールの動作を汚染し、例えばメール送信ツールにBCCを追加させるといった攻撃です。\n\n対策として、エージェントの動作を盲信しないこと、「常に許可（Always Allow）」設定を避けること、そして信頼できないサードパーティ製MCPサーバーの導入を慎重に検討することが推奨されています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "LLMエージェント",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "MCP Security: Understanding Vulnerabilities in Model Context Protocol"
+  }
+}
