@@ -83,6 +83,8 @@
 - [x] 079. https://dev.classmethod.jp/articles/claude-code-and-ccmanager/
 - [x] 080. https://note.com/ichigonme/n/n9e29af7808e9
 - [x] 081. https://uxdesign.cc/the-blind-spots-of-inclusive-ai-3a66373d80f1
+- [x] 082. https://uxdesign.cc/useful-ads-7899e1711157
+- [x] 083. https://socket.dev/blog/openclaw-skill-marketplace-emerges-as-active-malware-vector
 
 ## Slides
 <!-- Presentation materials -->
