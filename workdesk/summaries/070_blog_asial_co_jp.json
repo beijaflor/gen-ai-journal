@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:41:42.916152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClineによるAIエージェント開発入門: 実践で学んだ便利な点と注意点",
+    "url": "https://blog.asial.co.jp/3932",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "VSCode拡張機能「Cline」を活用したAIエージェント開発の実践を通じ、プロジェクト理解の高さや自動化の恩恵、API料金やコンテキスト制限といった運用上の注意点を詳しく解説しています。",
+    "summaryBody": "本記事は、VSCodeで動作するAIエージェント拡張機能「Cline（旧Claude-dev）」の導入と実践報告です。既存のNuxt.js/NestJSプロジェクトへの適用事例を通じ、以下のポイントをまとめています。\n\n1. **Clineの利点**: Claude、GPT、Geminiなど任意のモデルを選択可能で、プロジェクト全体のコードやドキュメントを読み込み、高度な理解に基づいたコード生成やターミナル操作（Docker/MySQL確認など）を自律的に行います。\n2. **直面した課題**: API従量課金によるコスト増、トークン上限（Context Limit）によるエラー、AIが「修正した」と主張しても実際にはファイルが更新されないループ現象など、実践的な落とし穴が紹介されています。\n3. **運用のコツ**: 精度と安全性を担保するために「必ずテストコードを書かせる」「非機能要件（パフォーマンス等）を思考に組み込ませる」「タスクを細分化してトークンを節約する」といった具体的なTIPSを提示しています。\n\n単なるツールの紹介に留まらず、AIと共生する開発プロセスの変化と向き合い方が強調されています。",
+    "topics": [
+      "Cline",
+      "AIエージェント",
+      "VSCode",
+      "ソフトウェア開発",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

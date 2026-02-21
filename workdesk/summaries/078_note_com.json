@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:51:12.420746+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "パワポ作成が多いので、Opus4.6とGPT5.3 codexを使って精度を上げた。",
+    "url": "https://note.com/coffee_soko/n/n20260213",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code (Opus 4.6)とGPT-5.3 Codexを組み合わせ、独自の「読みやすいスライド」基準をSkill化して組み込むことで、高品質なPowerPoint資料を自動生成する高度なAIワークフロー。",
+    "summaryBody": "著者は、AIによるスライド生成の精度を高めるため、Claude Codeの/pptx機能とGPT-5.3 Codexを連携させた分担制の仕組みを構築しました。Gitを「セーブポイント」として利用し、Codexが構成案と修正指示（司令塔）を出し、Claude Codeが実際の実装（作業者）を担います。最大の特徴は、自身のスライド制作のこだわり（レイアウトの大原則、1枚1メッセージ、配色の意味付け等）を言語化し、Claude Codeの「Skill」としてMarkdown形式で定義・共有している点です。これにより、AIが陥りがちな凡ミスを防ぎつつ、プロフェッショナルな品質の資料作成を効率化しています。医療系スライド（症例報告）の型などもSkill化する応用例も紹介されています。",
+    "topics": [
+      "Claude Code",
+      "GPT-5.3 Codex",
+      "PowerPoint",
+      "AIワークフロー",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "パワポ作成が多いので、Opus4.6とGPT5.3 codexを使って精度を上げた。"
+  }
+}

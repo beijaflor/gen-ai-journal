@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:37:53.926597+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM推論高速化の2つの異なる手法：AnthropicとOpenAIの技術的アプローチを比較する",
+    "url": "https://seangoedecke.com/fast-inference-tricks/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの低バッチ処理による既存モデルの高速化と、OpenAIのCerebrasチップを活用した軽量蒸留モデルによる超高速化、それぞれの技術的背景とトレードオフを解説した記事。",
+    "summaryBody": "AnthropicとOpenAIが提供を開始した「ファストモード」の裏側にある技術的アプローチの違いを深掘りしています。Anthropicは、GPUのバッチサイズを最小化（バスを待たずに出発させる運用）することで、モデルの精度を維持したまま2.5倍の高速化を実現しました。一方、OpenAIはCerebras社の巨大な半導体（WSE）を採用。モデル全体を広大なSRAM上に配置することで、15倍（1000 tokens/sec以上）という圧倒的な速度を達成していますが、代わりに「Spark」と呼ばれる精度が一段劣る蒸留モデルを使用しています。筆者は、推論速度の向上は重要であるものの、エラーの修正に要する時間を考慮すると、精度を犠牲にした高速化はエージェントの利便性を損なう可能性があると指摘しています。",
+    "topics": [
+      "LLM推論",
+      "Cerebras",
+      "Anthropic",
+      "OpenAI",
+      "バッチ処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Two different tricks for fast LLM inference"
+  }
+}

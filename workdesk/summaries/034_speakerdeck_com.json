@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:07:47.881010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIプロダクトの品質をどう守る？ - Langfuseによる「評価」とrunnによる「テスト」の実践",
+    "url": "https://speakerdeck.com/matsu802/aipurodakutofalsepin-zhi-wodoushou-ru",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI特有の不確実性に対し、期待値・精度・システム品質の3軸で品質を定義し、runnとLangfuseを使い分けて継続的な改善サイクルを回すQA手法の解説。",
+    "summaryBody": "LayerX社の「バクラク勤怠」におけるAI機能（就業規則からの自動設定案作成）を例に、AIプロダクトの品質保証の実践方法を紹介しています。AIの品質を「期待値（UX調整）」「精度（評価基準）」「システム品質（信頼性）」の3軸で捉え、100%の正解がない中での受け入れ基準の作り方を提示。技術スタックとして、APIテストツール「runn」を用いたシステム全体のデグレ防止（結合テスト）と、LLM監視プラットフォーム「Langfuse」を用いたプロンプト単位の精度向上（ユニットテスト）を組み合わせています。特に、本番環境でのユーザーフィードバックや失敗ケースをLangfuseのデータセットに還元し、GitHub Actionsで自動評価する継続的改善のパイプラインは非常に実用的です。",
+    "topics": [
+      "AI品質保証",
+      "LLMOps",
+      "Langfuse",
+      "runn",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:38:35.017650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "klaw.sh: AIエージェントのためのkubectl風オーケストレーションツール",
+    "url": "https://github.com/klawsh/klaw.sh",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの管理・監視・スケーリングを、Kubernetesのkubectlに似たコマンド体系で実現するエンタープライズ向け運用プラットフォーム。",
+    "summaryBody": "klaw.shは、AIエージェントの運用（LLMOps）を効率化するためのオープンソースプロジェクトです。最大の特徴は、Kubernetesの操作感（kubectl）をAIエージェント管理に持ち込んでいる点にあります。`klaw get agents`での状態確認、`klaw logs`でのリアルタイム監視、`klaw cron`による定期実行のスケジューリングなど、使い慣れたCLIインターフェースでエージェントを制御できます。また、名前空間（Namespace）による秘匿情報やツール権限の分離、Slackからのエージェント操作、分散ノードによるスケーリングなど、エンタープライズ利用に必要な機能を単一のGoバイナリで提供しています。LangChainなどの構築フレームワークとは異なり、エージェントを「運用・管理」するためのインフラ基盤として位置づけられています。",
+    "topics": [
+      "AI Agents",
+      "Orchestration",
+      "LLMOps",
+      "Kubernetes",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "klaw.sh: kubectl for AI Agents"
+  }
+}

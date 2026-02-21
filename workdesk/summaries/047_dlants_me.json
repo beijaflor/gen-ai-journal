@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:20:45.812351+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGI（汎用人工知能）がすぐには実現しないと考える理由：認知プリミティブとアーキテクチャの壁",
+    "url": "https://example.com/why-agi-is-not-imminent",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "現行のLLMは身体的経験に基づく認知基盤や本質的な推論アーキテクチャを欠いており、単なるスケーリングや推論時の計算量拡大だけでは真のAGI到達は困難であると論じた記事。",
+    "summaryBody": "この記事は、OpenAIやAnthropicのCEOらが主張する「AGI（汎用人工知能）の即時到来」に対し、技術的な視点から慎重な異を唱えています。筆者は主な論点として2つの問題を挙げています。第一に「認知プリミティブと身体性」の問題です。人間は進化の過程で、物体永続性や因果関係、空間ナビゲーションといった知覚と行動に結びついた基礎能力（プリミティブ）をハードウェアとして備えていますが、テキストやビデオの受動的な学習に頼るLLMにはこれが欠けています。第二に「アーキテクチャ」の問題です。Transformerは本質的に順伝播型であり、計算量的な制約（TC⁰階層）が存在します。Chain of Thought（CoT）や推論時計算の導入によりARC-AGIベンチマークのスコアは向上していますが、それは「外部的なスキャフォールディング（足場）」による探索の結果であり、モデル内部の知能構造が根本的に進化したわけではないと指摘しています。結論として、AGIの実現には数十年単位の基礎研究と、知覚・行動が統合された新しい学習パラダイムが必要であると主張しています。",
+    "topics": [
+      "AGI",
+      "Transformer",
+      "認知科学",
+      "ARC-AGI",
+      "推論時計算"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "Why I don't think AGI is imminent"
+  }
+}

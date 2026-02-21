@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:35:09.838547+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとGoogle Search Consoleを連携：SEO診断から修正までを自動化するMCPツールの活用法",
+    "url": "https://www.trevorlasn.com/blog/google-search-console-mcp-claude-code",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeにGoogle Search Consoleのデータを統合し、SEOの問題特定からコードの修正までを一つの対話内で行う方法を解説。",
+    "summaryBody": "この記事では、Google Search Console (GSC) のデータをClaude Codeから直接操作可能にするMCPサーバー「mcp-gsc」の活用方法を詳しく解説しています。従来、SEOの改善作業はGSCのダッシュボード、分析用のスプレッドシート、そしてコードエディタの3つを行き来する必要がありましたが、このツールを用いることで、データ取得から原因特定、コード修正までをClaudeとの一つの対話内で完結させることが可能になります。具体例として、著者の運営するサイトでの「robots.txtによるクロール拒否の発見と即時修正」「検索意図に基づいたメタタイトルの動的改善」「モバイルとデスクトップ間のCTR格差の是正」といった実践的なユースケースが紹介されています。セットアップにはGoogle Cloud ConsoleでのAPI有効化とOAuth 2.0クライアントIDの設定が必要ですが、一度設定すれば19種類のツールを介して、インデックス状況のバッチ確認や期間比較などの高度なSEO分析をAIに任せられるようになります。",
+    "topics": [
+      "Claude Code",
+      "MCP",
+      "Google Search Console",
+      "SEO",
+      "Development Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Google Search Console MCP for Claude Code"
+  }
+}

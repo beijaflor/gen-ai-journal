@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:10:43.840157+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エラーのスタックトレースをAIにコピペする時代を終わらせるツール「DevSonar」",
+    "url": "https://github.com/otomachiiii/DevSonar",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ランタイムエラーを自動検知し、Claude Codeと連携してソースコードを自動修正する開発ツール「DevSonar」の紹介。",
+    "summaryBody": "DevSonarは、エンジニアがエラーのスタックトレースを手動でAIにコピペし、修正コードを反映させるという繰り返しの作業を自動化するOSSツールです。Node.js、Python、Go、Ruby、Java、Rustの6言語に対応しており、CLIでコマンドをラップするだけで導入可能です。特にTurborepoなどのモノレポ環境において、フロントエンドとバックエンドを跨ぐエラーの相関関係をAI（Claude Code）に理解させ、プロジェクト全体のコンテキストに基づいた正確な修正を可能にします。リレーサーバーを介したデバウンスや重複排除機能により、APIコールの無駄を抑えつつ、効率的な自律デバッグを実現しています。",
+    "topics": [
+      "DevSonar",
+      "Claude Code",
+      "AIプログラミング",
+      "エラーハンドリング",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

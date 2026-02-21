@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:36:10.574458+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "宣言的 Skill Loader としての agent-skills-nix",
+    "url": "https://zenn.dev/kyure_a/articles/agent-skills-nix-declarative",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Nixを活用してAIエージェントのスキル管理を宣言的に行い、依存関係の同梱やバージョン固定を容易にするツール「agent-skills-nix」の進化と活用方法を紹介。",
+    "summaryBody": "AIエージェント（Claude Code, Cursor等）の機能を拡張する『Skills』を、Nixを用いて宣言的に管理するツール『agent-skills-nix』のアップデート解説記事です。既存のスキルローダーが抱える「バージョン管理の難しさ」や「実行環境への依存」という課題を、Nixの特性を活かして解決します。主な追加機能として、Gemini CLIやGitHub Copilotなど対応エージェントの拡大、特定スキルの除外設定、jqやcurl等のバイナリ依存関係をスキルに同梱するカスタマイズ機能、そしてflake.nixを用いたプロジェクトローカルへの導入方法が紹介されています。設定の再現性を高め、エージェント環境をコードとして管理したい開発者にとって非常に有用なリソースです。",
+    "topics": [
+      "Nix",
+      "AIエージェント",
+      "Claude Code",
+      "Cursor",
+      "Infrastructure as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

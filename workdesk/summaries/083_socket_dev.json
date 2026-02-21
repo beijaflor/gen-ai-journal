@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-19T04:49:27.462669+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント「OpenClaw」のスキル市場がマルウェア配布の温床に：自然言語による新たな攻撃手法",
+    "url": "https://socket.dev/blog/openclaw-skill-marketplace-malware-vector",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIエージェントプラットフォーム「OpenClaw」にて、スキルの指示書（Markdown）を悪用してマルウェアをダウンロード・実行させる新しいタイプのサプライチェーン攻撃が急増している。",
+    "summaryBody": "セキュリティ研究機関のVirusTotal等は、AIエージェントプラットフォーム「OpenClaw」のスキル市場において、情報窃取型マルウェアを配布する数百件の悪意あるスキルを確認した。これらの攻撃は、従来の実行ファイルではなく、`SKILL.md`等のMarkdownファイル内に記載された「自然言語の指示」を悪用するのが特徴である。具体的には、ユーザーにBase64エンコードされたコマンドの実行を促したり、外部から不正なバイナリをフェッチさせるようエージェントを誘導したりする。この「ワークフロー自体がマルウェアとして機能する」性質により、従来のウイルス対策ソフトでの検知が極めて困難となっている。OpenClawはVirusTotalとの提携によりスキャン機能を導入したが、研究者は「一度信頼されたスキルが後から悪意ある外部依存先を参照するリスク」など、AIエージェント特有のサプライチェーン攻撃に対する抜本的な対策の必要性を指摘している。",
+    "topics": [
+      "AIエージェント",
+      "サプライチェーン攻撃",
+      "サイバーセキュリティ",
+      "OpenClaw",
+      "マルウェア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "OpenClaw Skill Marketplace Emerges as Active Malware Vector"
+  }
+}

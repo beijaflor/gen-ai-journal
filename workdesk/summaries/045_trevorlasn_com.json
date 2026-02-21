@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:20:16.999996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel BotIDを活用したAuthエンドポイントのボット対策",
+    "url": "https://www.trevorlasn.com/blog/vercel-botid-bot-protection-nextjs",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Next.js 16とVercel BotIDを組み合わせ、認証エンドポイントへのボット攻撃をサーバーサイドの検証とプロキシによって効果的に遮断する実装ガイド。",
+    "summaryBody": "本記事では、Next.js 16環境において、ログインフォームやマジックリンクなどの認証エンドポイントをボットから守るためにVercel BotIDを導入する方法を解説しています。主な課題として、BotIDの検証用関数がミドルウェア内で動作しない点があり、筆者は「薄いルートハンドラー」を橋渡し役にするアーキテクチャを採用しています。クライアントサイドでの自動チャレンジ実行、`instrumentation-client.ts`による設定、サーバー側での`checkBotId()`を用いた検証、そしてバックエンド（Rust）へのプロキシ処理までをコード例付きで詳述。また、ChatGPT Operatorなどの「検証済みボット」を識別して許可する方法や、コスト面でのメリットについても触れています。",
+    "topics": [
+      "Next.js",
+      "Vercel BotID",
+      "セキュリティ",
+      "ボット対策",
+      "認証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How I Use Vercel BotID to Stop Bots on Auth Endpoints"
+  }
+}
