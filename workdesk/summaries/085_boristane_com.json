@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-19T23:59:22.088495+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを使いこなすための究極のワークフロー：調査、計画、実行の分離",
+    "url": "https://boristane.com/blog/how-i-use-claude-code/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIにいきなりコードを書かせず、Markdownベースの「調査」と「アノテーション付き計画」を挟むことで、人間の意図を正確に反映させつつ大規模な実装を完遂させる実践的な手法。",
+    "summaryBody": "本記事は、著者が9ヶ月間にわたりClaude Codeを使用して確立した、独自かつ強力な開発ワークフローを解説しています。核となる原則は「計画をレビューし承認するまで、Claudeにコードを一行も書かせない」という計画と実行の完全な分離です。\n\nワークフローは以下の3段階で構成されます：\n1. **調査フェーズ**: `research.md`を作成させ、コードベースの特定箇所を深く読み込ませます。表面的な理解を防ぐため、文書化を必須とします。\n2. **計画（アノテーション・サイクル）**: `plan.md`を作成させ、開発者がエディタで直接インライン注釈（アノテーション）を加えて修正を繰り返します。これにより、AIが知らないドメイン知識や設計判断を注入します。\n3. **実装フェーズ**: 詳細なTodoリストを作成させた後、一気に実行させます。開発者はアーキテクトから監督者へと役割を変え、微調整に専念します。\n\nチャットでの指示ではなく、共有されたMarkdownファイルを「共有されたミュータブルな状態」として扱う点が非常にユニークであり、AIが勝手な推論でコードを書き進めて破綻するのを防ぐ極めて実用的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "AIコーディング",
+      "開発プロセス",
+      "プロンプトエンジニアリング",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "How I Use Claude Code | Boris Tane"
+  }
+}

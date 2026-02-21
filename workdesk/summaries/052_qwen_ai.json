@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-02-17T05:23:36.063816+00:00",
+    "generatedAt": "2026-02-21T04:31:01.668098+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Qwen: アリババ・クラウドが放つ高性能なオープンソース大規模言語モデル",
-    "url": "https://github.com/QwenLM/Qwen",
-    "language": "en",
+    "title": "Qwen3.5: ネイティブ・マルチモーダル・エージェントの実現に向けて",
+    "url": "https://qwen.ai/blog?id=qwen3.5",
+    "language": "ja",
     "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "アリババ・クラウドが開発したQwenは、高度な推論、コーディング能力、多言語対応を備えた世界最高峰のオープンソースLLMシリーズです。",
-    "summaryBody": "Qwen（通義千問）は、アリババ・クラウドが提供する強力な大規模言語モデル（LLM）のシリーズです。最新のQwen2.5を含むこれらのモデルは、膨大なデータセットでトレーニングされており、数学的推論、コード生成、多言語理解において極めて高い性能を誇ります。特に、Llama 3等の競合モデルと比較しても、ベンチマークスコアで同等以上の数値を記録することが多く、オープンソース界隈で非常に注目されています。ベースモデルから命令調整済みモデル（Chat）、さらには画像や音声に対応したマルチモーダルモデルまで、幅広いラインナップが提供されており、研究から実商用まで多様なユースケースに対応可能です。",
+    "oneSentenceSummary": "アリババは、397BパラメータのハイブリッドMoEアーキテクチャを採用し、高度な推論・エージェント機能と201言語対応を実現したネイティブ・マルチモーダルモデル「Qwen3.5」を発表しました。",
+    "summaryBody": "アリババは、Qwen3シリーズの最新進化版となる「Qwen3.5-397B-A17B」をオープンウェイトでリリースしました。本モデルは、線形アテンション（Gated Delta Networks）とスパースMixture-of-Experts (MoE)を組み合わせた革新的なアーキテクチャを採用しており、全3970億パラメータのうち、推論時に活性化されるのは170億パラメータのみという高い効率性を実現しています。ベンチマーク評価では、GPT-5.2やClaude 4.5 Opusなどの最先端モデルに対し、特にエージェント実行、コーディング、STEM、マルチモーダル理解の分野で匹敵または凌駕する性能を示しました。主な特徴として、ネイティブな視覚・言語融合、100万トークンのコンテキストウィンドウ、201の多言語対応、そして強化学習（RL）のスケールアップによる汎用エージェント機能の強化が挙げられます。推論スループットは前世代のQwen3-Maxと比較して最大19倍に向上しており、Alibaba Cloud ModelStudioを通じて実用的な統合が可能です。",
     "topics": [
-      "Qwen",
-      "Alibaba Cloud",
-      "LLM",
-      "Open Source",
-      "Artificial Intelligence"
+      "Qwen3.5",
+      "マルチモーダルLLM",
+      "Mixture of Experts",
+      "AIエージェント",
+      "Alibaba Cloud"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
       "uniqueness": 4,
       "practical": 5,
-      "antiHype": 4,
-      "mainJournal": 90,
-      "annexPotential": 80,
-      "overall": 92
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 93
     },
-    "originalTitle": "Qwen: A Powerful Open-Source Large Language Model by Alibaba Cloud"
+    "originalTitle": "Qwen3.5: Towards Native Multimodal Agents"
   }
 }

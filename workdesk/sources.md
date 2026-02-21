@@ -85,6 +85,8 @@
 - [x] 081. https://uxdesign.cc/the-blind-spots-of-inclusive-ai-3a66373d80f1
 - [x] 082. https://uxdesign.cc/useful-ads-7899e1711157
 - [x] 083. https://socket.dev/blog/openclaw-skill-marketplace-emerges-as-active-malware-vector
+- [x] 084. https://www.jernesto.com/articles/thinking_hard
+- [x] 085. https://boristane.com/blog/how-i-use-claude-code/
 
 ## Slides
 <!-- Presentation materials -->
