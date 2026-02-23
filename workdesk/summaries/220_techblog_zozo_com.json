@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:47:03.027727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude × Devinで実現するAI駆動開発ワークフロー",
+    "url": "https://techblog.zozo.com/entry/claude-devin-ai-workflow",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claudeによる意思決定とDevinによる実装を組み合わせ、GitHub Actions上でレビュー待ち時間の解消とCIエラーの自動修正を実現するAI駆動開発ワークフローの解説。",
+    "summaryBody": "ZOZOのマネジメントポータルブロックが導入した、Claude（判断・レビュー）とDevin（実装・修正）を連携させた次世代の開発フローを紹介しています。本ワークフローは、GitHub Actionsを中核に『AI Task Implementation（Issueからの自動実装）』と『AI Review Orchestrator（PRレビュー・修正ループ）』の2つで構成されています。特に、PRの変更内容を分析して適切なレビュー観点（Perspective）を自動選択する仕組みや、CI失敗時のDevinによる自動修正、さらにはPRコメントから開発ガイドラインを週次で自動更新する『コンテキストの自動育成』など、AIを単なるツールではなく自律的なチームメンバーとして組み込むための高度なアーキテクチャが詳説されています。",
+    "topics": [
+      "AI駆動開発",
+      "Claude",
+      "Devin",
+      "GitHub Actions",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

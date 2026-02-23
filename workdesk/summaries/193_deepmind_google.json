@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:40:30.160919+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini 3.1 Pro モデルカード：Google DeepMindの次世代マルチモーダル推論モデル",
+    "url": "https://deepmind.google/technologies/gemini/model-card/gemini-3-1-pro",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemini 3.1 Proは、100万トークンのコンテキスト窓を備え、抽象的推論ベンチマークARC-AGI-2で77.1%を記録するなど、推論とエージェント能力が大幅に強化されたGoogleの最先端モデルです。",
+    "summaryBody": "Google DeepMindが公開したGemini 3.1 Proのモデルカードは、Gemini 3シリーズの最新の進化を詳細に示しています。このモデルはネイティブ・マルチモーダル推論モデルであり、テキスト、画像、音声、動画に加え、コードリポジトリ全体を処理可能です。最大100万トークンの入力コンテキストをサポートし、64Kトークンの出力が可能です。\n\n特筆すべきはベンチマーク性能の飛躍的向上です。抽象的推論を評価するARC-AGI-2において、Gemini 3 Proの31.1%から77.1%へと劇的な進化を遂げ、GPT-5.3-CodexやSonnet 4.6などの競合モデルを圧倒しています。また、エージェント機能（MCP Atlas）や長期的な専門タスク（APEX-Agents）においても高いスコアを記録しました。\n\n安全性に関しては、Frontier Safety Frameworkに基づきCBRN、サイバー、不正操作、AI開発、位置認識等の多角的な評価が実施されました。サイバー能力において一部警告閾値に達しているものの、重大な危害をもたらす「クリティカル・キャパシティ・レベル（CCL）」には到達しておらず、適切な緩和策が講じられています。モデルはGoogle AI StudioやVertex AI等を通じて提供されます。",
+    "topics": [
+      "Gemini 3.1 Pro",
+      "マルチモーダルAI",
+      "推論能力",
+      "ARC-AGI-2",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Gemini 3.1 Pro - Model Card — Google DeepMind"
+  }
+}

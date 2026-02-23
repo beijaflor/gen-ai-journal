@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:43:56.081653+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自社サービスの知識をClaude Codeに覚えさせたかったのでMCPサーバーを作ってみた",
+    "url": "https://dev.classmethod.jp/articles/mcp-server-for-growthpack-context/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeに自社プロダクトの専門知識を連携させるため、GitHubリポジトリからドキュメントを動的取得するMCPサーバーを構築し、営業提案や機能比較を自動化する事例の紹介。",
+    "summaryBody": "この記事では、Model Context Protocol (MCP) を用いて自社サービス「グロースパック for LINE」の知識をClaude Codeに統合する方法を解説しています。具体的には、GitHubのプライベートリポジトリに配置したMarkdown形式のドキュメントとメタデータを、MCPサーバー経由でClaudeから参照可能にしました。実装のポイントとして、ドキュメントの動的取得により再ビルド不要で情報を更新できる点や、JSON形式のメタデータを用いた高精度な機能マッチング・フィルタリング機能が紹介されています。これにより、顧客の業種や課題に合わせた最適な機能提案、事例検索、複数機能の比較表生成などがClaude上で対話的に実行可能となり、営業支援やプロトタイプ制作の効率化が実現されています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "GitHub API",
+      "LLM",
+      "ナレッジ管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

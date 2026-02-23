@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:46:13.447722+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPをAgent Skillsのように軽量化する新手法、MCP Lightの紹介",
+    "url": "https://gyakuse.com/blog/mcp-light-introduction",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPサーバーの冗長なdescriptionを1行に圧縮し、詳細な指示をAgent Skillとして遅延ロードさせることでコンテキスト消費を劇的に削減する新手法「MCP Light」の提案。",
+    "summaryBody": "本記事では、Model Context Protocol (MCP) が抱える「コンテキストウィンドウの圧迫」という課題に対し、Agent Skillsの仕組みを応用した解決策「MCP Light」を提案しています。MCPサーバーを接続すると全ツールの詳細なdescriptionが読み込まれるため、数万トークンを消費するケースがあります。MCP Lightは、descriptionを『判断用の1行』と『実行用の詳細（ベストプラクティス）』に分離し、前者を軽量版MCPサーバーに、後者をAgent Skill（Markdownファイル）として外出しします。これにより、エージェントが実際にツールを必要とした瞬間のみ詳細情報がロードされる「Progressive Disclosure（段階的開示）」を実現します。Notion MCPサーバーでの実測では、descriptionを83.5%、ツール定義全体で44%削減することに成功しました。また、仕様やクライアントの変更なしに導入可能で、Markdown化したベストプラクティスをユーザーが自由にfork・カスタマイズできるという副次的なメリットも強調されています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Agent Skills",
+      "Token Optimization",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

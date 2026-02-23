@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:42:41.651571+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PRレビューのボトルネックをAIで解消する：GMOペパボの自動化事例",
+    "url": "https://zenn.dev/pepabo/articles/claude-pr-review-automation",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによるPR生成の急増に対し、AIによるサイズ判定・自動レビュー・特定条件下の自動マージを組み合わせることでレビューのボトルネックを解消する取り組み。",
+    "summaryBody": "AIエージェント（Claude Code等）の普及によりPR生成速度が劇的に向上した一方で、人間によるレビューがボトルネックとなる課題に対し、GMOペパボが導入した3段階の自動化パイプラインを紹介しています。まず、AIが差分行数ではなく「影響範囲」に基づいてPRにサイズラベル（XS〜XL）を付与。次に、AIがコード品質やバグの有無をレビューし、問題がなければApproveを提出。最後に、リスクの極めて低い「size/XS」かつ「AI Approve済み」のPRに限り、GitHub Actionsで自動マージを実行する仕組みを構築しました。これにより、typo修正や依存関係更新などの軽微なPRから人間を解放し、重要な設計変更のレビューに集中できる環境を実現しています。ブランチ保護ルールの調整や、レビュー基準のMarkdown管理など、運用の透明性と安全性を両立させる設計思想が特徴です。",
+    "topics": [
+      "GitHub Actions",
+      "Claude Code",
+      "コードレビュー",
+      "AIエージェント",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "PRのレビューが追いつかない！もう人間がボトルネックなので、気合いではなく仕組みで少しずつなんとかしていく"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T04:53:54.009792+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIは曖昧さを嫌う：確率分布から理解するプロンプトエンジニアリングの極意",
+    "url": "https://frontendmasters.com/blog/ai-hates-ambiguity-a-guide-to-probability/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMの出力が確率分布に基づいていることを理解し、適切な制約を与えることで「チュートリアルレベル」のコードから「プロダクション品質」のコードへ昇華させる手法を解説したガイド。",
+    "summaryBody": "LLM（大規模言語モデル）を「魔法のチャットボックス」ではなく、入力トークンに基づき次のトークンを予測する「確率分布の操作対象」として捉えるべきだと主張する記事です。曖昧な指示（Hostile Prompt）は、モデルを学習データに最も多い「単純なチュートリアル風の回答」へと誘導してしまいます。これを防ぎ、堅牢なコードを引き出すための3つの戦略を紹介しています。\n\n1. **ペルソナ交渉**: システムプロンプト等で「シニアエンジニア」の役割を与え、品質基準を定義する。\n2. **フォーマット交渉**: TypeScriptの厳格な型指定や不要な解説の排除など、出力を構造的に制約する。\n3. **ロジックのアンカー（思考の連鎖）**: 実装前にプランや想定される失敗モードを言語化させることで、その後のコード生成において適切な実装（AbortControllerの使用など）が選ばれる確率を劇的に高める。\n\n記事では、単なるfetch処理の依頼が、エラーハンドリングやレースコンディション対策を備えたプロ品質のカスタムフックへと改善される実例が示されています。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "LLM",
+      "フロントエンド開発",
+      "確率分布",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "AI Hates Ambiguity: A Guide to Probability"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:45:57.916522+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのようなAI エージェントにEC2を安全に調査させるSSMガードレールの設計",
+    "url": "https://zenn.dev/applibot/articles/05309320875e53",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントによるEC2内部調査を安全に行うため、SSM Documentのパラメータ検証とIAMポリシーを組み合わせた読み取り専用のガードレール設計を提案しています。",
+    "summaryBody": "AIエージェント（Claude Code等）にEC2の調査権限を安全に付与するための設計手法を解説した記事です。任意のコマンド実行を可能にする「AWS-RunShellScript」をIAMで明示的に拒否した上で、許可リスト型のカスタムSSM Documentを導入するアプローチを紹介しています。具体的には、SSM DocumentのallowedValuesで操作を限定し、allowedPatternで入力値を検証することで、シェルメタ文字の注入や不正なアクセスをAPIレベルで遮断します。また、シェルスクリプト内でのrealpathによるパストラバーサル防止や、タグベースのターゲット制限など、多層的な防御策をTerraformの実装例と共に提示しています。これにより、SREの工数を削減しつつ、開発者が安全に自律的な調査を行える環境を構築できます。",
+    "topics": [
+      "AWS",
+      "Systems Manager",
+      "AIエージェント",
+      "Terraform",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

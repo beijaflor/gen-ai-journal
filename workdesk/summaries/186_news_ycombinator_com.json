@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:38:32.972755+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicがサードパーティ製ツールでのサブスクリプション認証利用を正式に禁止",
+    "url": "https://news.ycombinator.com/item?id=47069299",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicがClaudeの個人サブスクリプション枠をサードパーティ製ツールやSDKで利用することを規約で禁止し、APIキーによる従量課金を義務付けたことが論争を呼んでいる。",
+    "summaryBody": "Anthropicは利用規約を更新し、Claude.ai、公式モバイル/デスクトップアプリ、およびClaude Codeといった公式製品以外で、ProやMaxプランのサブスクリプション認証（OAuth）を使用することを明示的に禁止した。これにより、OpenCodeやOpenClawといったサードパーティ製ツールで定額サブスクリプション枠を「流用」して安価に推論を行う回避策が封じられ、Agent SDKを含むすべての外部利用においてAPIキーによる従量課金が必須となる。Hacker Newsの議論では、サブスクリプションが実質的に「逆ザヤ」状態（推論コストが月額料金を上回る）であるための経済的合理性への理解がある一方で、囲い込みを強めるエコシステムへの不満や、外部利用を一部容認するOpenAIとの戦略的な対比、さらには公式ツールの使い勝手の悪さによる開発者体験の低下などが指摘されている。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "API料金",
+      "開発者エコシステム",
+      "利用規約"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "Anthropic officially bans using subscription auth for third party use | Hacker News"
+  }
+}

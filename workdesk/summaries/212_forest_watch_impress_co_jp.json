@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:45:14.845232+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "『NPU対応ソフトなのにNPUを使ってくれない』のはなぜか？ - 使ってわかるCopilot+ PC",
+    "url": "https://forest.watch.impress.co.jp/docs/serial/copilotpluspc/1663470.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NPU対応ソフトが特定の環境で動作しない原因はCPUメーカーごとの開発キットやアーキテクチャの互換性の欠如にあり、その見極め方を解説している。",
+    "summaryBody": "Copilot+ PC等で「NPU対応」と謳われるソフトが、実際にはNPUを使用せずCPUで動作してしまう問題の背景を解説。原因はIntel（OpenVINO）、AMD（Ryzen AI）、Qualcomm（QNN）というメーカーごとに異なる独自の開発キット（SDK）とアーキテクチャの断片化にある。Microsoftが主導するONNX Runtimeを利用している場合でも、ソフト側が特定のExecution Provider（EP）にしか対応していなければ、他社のNPUは活用されない。記事では、DirectMLの現状やタスクマネージャーを用いた確認方法、自分のPC環境に合ったソフトを見分けるためのキーワード（Intel AI Boost、XDNA、Hexagon等）を整理し、ユーザーが混乱しやすいNPU対応の現状を明らかにしている。",
+    "topics": [
+      "NPU",
+      "Copilot+ PC",
+      "OpenVINO",
+      "Ryzen AI",
+      "ONNX Runtime"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

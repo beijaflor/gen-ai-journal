@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:34:50.291446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けの効果的な仕様書の書き方：開発効率を最大化する5つの原則",
+    "url": "https://www.oreilly.com/radar/how-to-write-a-good-spec-for-ai-agents/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントに丸投げするのではなく、構造化された仕様書（Spec）を「生きたドキュメント」として活用し、モジュール化された指示と境界条件の設定によって精度を高めるための実践的ガイド。",
+    "summaryBody": "GoogleのAddy Osmani氏による、AIエージェント（Claude CodeやGemini CLI等）を使いこなすための仕様書作成フレームワークです。主要な5つの原則として、1. 高レベルなビジョンを提示し詳細をAIにドラフトさせる「計画優先」のアプローチ、2. コマンド・テスト・構造・スタイル・Gitフロー・境界条件の6項目を網羅した構造化（PRD形式）、3. 「指示の呪い」を避けるためのタスクとコンテキストのモジュール化、4. 「常に実行・要確認・禁止」の3段階による境界設定と自己チェック機能の組み込み、5. テストとフィードバックに基づいた継続的な仕様の更新を挙げています。AIを「優秀だが管理が必要なデジタルインターン」と定義し、場当たり的なコーディング（Vibe Coding）から、規律あるAI支援エンジニアリングへの移行を推奨しています。特に、仕様書を「実行可能な成果物」としてCI/CDやGitワークフローに統合する手法は、大規模な開発におけるAIの迷走を防ぐ鍵となります。",
+    "topics": [
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "ソフトウェアエンジニアリング",
+      "LLM",
+      "生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How to Write a Good Spec for AI Agents"
+  }
+}

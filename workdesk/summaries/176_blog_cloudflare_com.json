@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:36:03.691724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Code Mode: 1,000トークンで全APIをAIエージェントに提供するCloudflareの新手法",
+    "url": "https://blog.cloudflare.com/code-mode-give-agents-an-entire-api-in-1000-tokens/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントのコンテキスト消費を劇的に抑えつつ膨大なAPI操作を可能にする「Code Mode」技術を用いた新しいMCPサーバーを公開しました。",
+    "summaryBody": "AIエージェントがツールを利用する際、多数のAPIエンドポイントを個別のツールとして定義するとコンテキストウィンドウを過剰に消費する課題があります。Cloudflareはこの解決策として、エージェントが型定義されたSDKに対してJavaScriptコードを書き、それをサーバー側のサンドボックスで実行する「Code Mode」を導入しました。この手法により、2,500以上のエンドポイントを持つCloudflare API全体を、わずか2つのツール（searchとexecute）と約1,000トークンの消費で利用可能にしました。これは従来の方式に比べトークン使用量を99.9%削減する画期的なアプローチです。実行環境はWorkersのアイソレート技術で保護されており、安全かつ高度なチェーン操作を実現します。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Cloudflare API",
+      "AI Agents",
+      "LLM Context Optimization",
+      "Cloudflare Workers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Code Mode: give agents an entire API in 1,000 tokens"
+  }
+}

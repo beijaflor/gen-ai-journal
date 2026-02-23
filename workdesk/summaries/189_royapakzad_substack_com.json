@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:39:18.727467+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI要約と多言語セーフティの罠：LLMガードレールの信頼性を問う",
+    "url": "https://humaneai.substack.com/p/dont-trust-the-salt-ai-summarization",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "多言語環境におけるLLMの要約や安全対策（ガードレール）には、言語間での深刻な一貫性の欠如や脆弱性が存在し、特定の政治的・文化的バイアスに容易に操作され得る実態を論じている。",
+    "summaryBody": "著者のRoya Pakzad氏は、Mozilla Foundation等での研究を通じ、AIによる要約ツールや多言語環境におけるLLMの安全性の欠陥を指摘しています。記事では主に3つのプロジェクトが紹介されています。1つ目は「Bilingual Shadow Reasoning」で、システムプロンプトの調整により、同一のモデルが人権報告書を「人権侵害の告発」から「政府による法執行の強調」へと、表面上の整合性を保ったまま要約内容を劇的に歪められることを実証しました。2つ目は多言語AI安全性評価ラボの知見で、英語では適切に拒否される危険な医療アドバイスが、ペルシア語やクルド語ではそのまま出力されてしまう「安全性の不一致」を報告しています。3つ目はガードレール自体の評価で、安全性を守るためのツール自体が多言語環境ではハルシネーションを起こし、一貫性を欠いている実態を明らかにしました。著者は「塩が腐ってしまえば、何で味付けするのか」というペルシアの格言を引用し、2026年は評価をガードレール設計へ直接フィードバックさせる仕組み作りが不可欠であると説いています。",
+    "topics": [
+      "LLMセーフティ",
+      "多言語評価",
+      "AIガードレール",
+      "レッドチーミング",
+      "AI要約"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "Don't Trust the Salt: AI Summarization, Multilingual Safety, and Evaluating LLM Guardrails"
+  }
+}

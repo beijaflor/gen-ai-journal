@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:44:40.646571+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モノレポでClaude Codeのスキルをチームごとに出し分けたい ― direnvと環境変数で30行で解決した話",
+    "url": "https://tech.wh-plus.com/entry/2026/02/20/172449",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "direnvと環境変数を組み合わせ、Claude Codeのスキル定義を「全体・チーム・個人」の3レイヤーで自動配布・管理する軽量な仕組みを紹介しています。",
+    "summaryBody": "Claude Codeの機能拡張である「スキル」をモノレポで運用する際の、チーム間での設定競合や不要なスキルのロードといった課題を解決する手法の解説です。リポジトリ内の`agent-skills/`配下に「共通(all)」「チーム別」「個人(local)」のディレクトリを作成し、`direnv`の`.envrc`から30行程度のスクリプトで`.claude/skills/`へ自動コピーする仕組みを構築。所属チームを環境変数で切り替えることで、開発者に最適なコンテキストを提供しつつ、スキルを個人からチーム、全体へと段階的に共有・発展させるナレッジ共有のパスを実現しています。",
+    "topics": [
+      "Claude Code",
+      "direnv",
+      "モノレポ",
+      "AIエージェント",
+      "開発環境改善"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

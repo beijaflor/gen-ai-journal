@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:42:55.070949+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人開発のAIエージェントに『Bun + Hono + Drizzle + SQLite』が最強な理由",
+    "url": "https://zenn.dev/kazuki_okura/articles/ai-agent-tech-stack-2026",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェント開発の本質がLLMのオーケストレーションへ移行する中、TypeScriptスタックが型安全・高速・低コストな開発の最適解である理由を説く。",
+    "summaryBody": "2026年現在のAI開発は「LLM APIをどう繋ぎ、状態を管理するか」というオーケストレーションが中心であり、重厚なPython環境よりも、軽量で型安全なTypeScript環境が適していると著者は主張します。具体的には、Native TypeScript実行環境である「Bun」による開発サイクルの高速化、RPCモードでフロントエンドまで型を貫通させる「Hono」、そしてサーバーレス・低コストで永続化を実現する「Drizzle ORM + SQLite」の組み合わせが、個人開発において最強のガードレールと機動力になると解説しています。特定のPythonライブラリを直接叩く必要がない限り、このスタックこそが開発効率とROIを最大化する選択肢です。",
+    "topics": [
+      "AIエージェント",
+      "TypeScript",
+      "Bun",
+      "Hono",
+      "Drizzle ORM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
