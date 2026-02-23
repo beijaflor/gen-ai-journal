@@ -145,7 +145,6 @@
 - [x] 142. https://azukiazusa.dev/blog/claude-code-to-figma/
 - [x] 143. https://qiita.com/natume_nat/items/c3d904ff5f898ad243f3
 - [x] 144. https://qiita.com/dai_chi/items/252fb5ef031127784757
-- [x] 145. https://zenn.dev/optiverse_now/articles/28d5a30f240b8e
 - [x] 146. https://zenn.dev/kiakiraki/articles/e35b4c63ac77f7
 - [x] 147. https://zenn.dev/knowledgesense/articles/b01609ba4f8d96
 - [x] 148. https://pc.watch.impress.co.jp/docs/column/nishikawa/2086975.html
