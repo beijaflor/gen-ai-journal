@@ -102,7 +102,7 @@
 - [x] 099. https://commaok.xyz/ai/just-in-time-software/
 - [x] 100. https://sonarly.com/
 - [x] 101. https://mage-bench.com/
-- [ ] 102. https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf
+- [x] 102. https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf
 - [x] 103. https://www.anthropic.com/news/claude-sonnet-4-6
 - [x] 104. https://news.ycombinator.com/item?id=47051866
 - [x] 105. https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/

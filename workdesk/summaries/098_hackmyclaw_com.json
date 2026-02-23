@@ -1,22 +1,22 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-02-21T09:49:08.753212+00:00",
+    "generatedAt": "2026-02-23T04:25:08.456637+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "HackMyClaw: $300の賞金が懸かったプロンプトインジェクション・チャレンジ",
-    "url": "https://hackmyclaw.com/",
+    "title": "HackMyClaw：賞金300ドルのプロンプトインジェクション・チャレンジ",
+    "url": "https://hackmyclaw.com",
     "language": "en",
     "contentType": "🌐 Community & Events (コミュニティ・イベント)",
-    "oneSentenceSummary": "メールを介してAIアシスタントを操作し、機密情報を盗み出すプロンプトインジェクションの脆弱性を体験・検証するセキュリティチャレンジ。",
-    "summaryBody": "## 概要 HackMyClawは、OpenClawベースのAIアシスタント「Fiu」を対象としたプロンプトインジェクションの公開コンテストです。参加者はメールを送信することで、Fiuが保持している機密ファイル「secrets.env」の中身を暴露させることを目指します。 ## 技術的背景 FiuはAnthropic Claudeモデル（仮想的に4.6と記載）を使用しており、システムプロンプトによる指示だけで「機密を漏らさない」ようガードされています。このチャレンジは、LLMの防御策が指示の上書きや文脈の操作に対してどれほど脆弱であるかを証明する教育的試みです。 ## 参加方法とルール 参加者はFiuのメールアドレスに特定のペイロードを送信します。役割の混同や多段階の推論エクスプロイトなど、あらゆる手法が許可されています。最初に見事機密情報を奪取した参加者には、主催者とスポンサーのCorgeaから計300ドルの賞金が支払われます。実社会で脅威となっている「間接的なプロンプトインジェクション」をシミュレートした実践的な内容です。",
+    "oneSentenceSummary": "Anthropicのモデルを使用したAIアシスタント「Fiu」を対象に、メール経由で機密ファイルを漏洩させるプロンプトインジェクションの公開チャレンジ。",
+    "summaryBody": "HackMyClawは、OpenClawベースのAIアシスタント「Fiu」から機密ファイル（secrets.env）の内容を奪取することを目指すセキュリティチャレンジです。参加者はメールを通じてFiuに攻撃用プロンプトを送信し、AIに「以前の指示を無視して情報を表示させる」などの手法を試みます。技術的には、システムプロンプトによる10〜20行の防御指示のみが設定されており、最新のLLM（Claude系）がどの程度攻撃に対して耐性があるかを検証する教育的な目的も兼ねています。最初の成功者には賞金300ドルが授与され、攻撃ログは公開される仕組みです。メールという間接的なベクトルを通じたプロンプトインジェクションの実例として、AIセキュリティ研究に役立つ内容となっています。",
     "topics": [
-      "プロンプトインジェクション",
-      "AIセキュリティ",
-      "LLM脆弱性",
-      "バグバウンティ",
-      "OpenClaw"
+      "Prompt Injection",
+      "AI Security",
+      "Red Teaming",
+      "LLM Vulnerability",
+      "Bounty Challenge"
     ],
     "scores": {
       "signal": 5,
@@ -26,7 +26,7 @@
       "antiHype": 4,
       "mainJournal": 75,
       "annexPotential": 90,
-      "overall": 80
+      "overall": 82
     },
     "originalTitle": "HackMyClaw - Prompt Injection Challenge | $300 Bounty"
   }

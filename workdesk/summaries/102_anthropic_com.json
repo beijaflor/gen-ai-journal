@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T00:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic、最新LLM「Claude Sonnet 4.6」を発表：性能と安全性の向上を詳細に解説",
+    "originalTitle": "Claude Sonnet 4.6 System Card",
+    "url": "https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは最新の大規模言語モデル「Claude Sonnet 4.6」を発表し、コード生成、推論、マルチモーダル能力など多岐にわたる能力で前モデルを大幅に上回り、安全性も向上していることを詳細な評価結果とともに示しました。",
+    "summaryBody": "Anthropicは、最新の大規模言語モデル（LLM）である「Claude Sonnet 4.6」を発表しました。このシステムカードでは、モデルの能力と安全性に関する詳細な評価結果が示されています。\n\n**主な評価結果と特徴：**\n\n*   **能力の向上**: Sonnet 4.6は、前モデルであるSonnet 4.5と比較して、コード生成（SWE-benchで79.6%）、推論、数学、マルチモーダル能力、コンピューター操作（OSWorld-Verifiedで72.5%）など、広範な分野で大幅な性能向上を達成しました。特に、一部の評価では最先端モデルであるClaude Opus 4.6に匹​​たり、あるいはそれを超える結果を示しています。\n*   **安全性**: 安全性評価においても、Sonnet 4.6は前モデルから改善が見られ、多くの指標でClaude Opus 4.6と同等かそれ以上の高いアライメント（整合性）を示しました。特に、ユーザーの不正利用への協力、悪意のあるプロンプトへの対応、制約の無視、全体的な不整合行動などの分野で、過去最高の安全性能を記録しています。\n*   **長文コンテキスト**: 長文コンテキストの理解と処理能力も向上しており、MRCR v2（8-needles）の評価では64kコンテキストで90.6%を達成しました。\n*   **多言語性能**: GMMLUおよびMILUベンチマークにおいて、多言語、特に低リソース言語での性能がSonnet 4.5から改善されました。ただし、アフリカの低リソース言語では更なる改善の余地があります。\n*   **リリース方針**: これらの評価結果に基づき、Sonnet 4.6はAI Safety Level 3（ASL-3）の標準の下でリリースされました。\n\nこのモデルは、以前のモデルと比較して、より高度な推論能力と安全性を備えており、開発者にとって、より複雑なタスクや安全性が求められるアプリケーションでの活用が期待されます。",
+    "topics": [
+      "Claude Sonnet 4.6",
+      "大規模言語モデル",
+      "LLM性能評価",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 78,
+      "annexPotential": 75,
+      "overall": 77
+    }
+  }
+}
