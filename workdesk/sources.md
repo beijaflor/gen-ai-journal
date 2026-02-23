@@ -152,7 +152,6 @@
 - [x] 150. https://zenn.dev/nexta_/articles/f001c370c7df1d
 - [x] 151. https://note.com/timakin/n/nf497d32c2d35
 - [x] 153. https://speakerdeck.com/cyberagentdevelopers/research-and-application-of-generative-ai
-- [x] 154. https://speakerdeck.com/chck/social-implementation-anti-patterns-in-ai-lab
 - [x] 155. https://atmarkit.itmedia.co.jp/ait/articles/2602/18/news054.html
 - [x] 156. https://www.nikkei.com/article/DGXZQOCB105XU0Q6A210C2000000/
 - [x] 157. https://www.hageatama.org/20260218/1771412465
