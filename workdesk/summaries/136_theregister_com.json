@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:59:16.137033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成のパスワードは「根本的に脆弱」、セキュリティ専門家が警告",
+    "url": "https://www.theregister.com/2026/02/18/llm_generated_passwords_vulnerable/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIセキュリティ企業Irregularの調査により、ChatGPTやClaude等のLLMが生成するパスワードは予測可能なパターンを持ち、数時間で解読可能なほど脆弱であることが明らかになった。",
+    "summaryBody": "AIセキュリティ企業Irregularの調査チームは、Claude、ChatGPT、Geminiといった主要な生成AIツールが作成するパスワードの安全性を検証し、それらが「根本的に脆弱」であると結論付けた。LLMは統計的に「もっともらしい」出力を生成するように訓練されているため、生成されるパスワードには人間にはランダムに見えても攻撃者には予測可能な共通のパターン（開始・終了文字の偏りや特定の文字配列など）が生じる。\n\n実験では、Claude (Opus 4.6) に50回パスワードを生成させた際、ユニークなものは30個しかなく、18個が全く同じ文字列だった。また、エントロピー（乱雑さ）を測定したところ、真にランダムなパスワードが120ビット程度であるのに対し、LLM生成のものは20〜27ビット程度と極めて低かった。このため、古いコンピュータであっても数時間で総当たり攻撃（ブルートフォース）が可能になる。既存のオンラインパスワード強度チェッカーは、こうしたLLM特有のパターンを認識できないため「強力」と誤判定する。専門家は、LLMをパスワード生成に使用せず、専用のパスワードマネージャーを利用することを強く推奨している。",
+    "topics": [
+      "LLM",
+      "パスワードセキュリティ",
+      "サイバーセキュリティ",
+      "生成AI",
+      "脆弱性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "LLM-generated passwords 'fundamentally weak,' experts say • The Register"
+  }
+}

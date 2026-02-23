@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:03:11.917178+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「SkillsBench」から学ぶAIエージェントのスキル設計：人間によるキュレーションが不可欠な理由",
+    "url": "https://arxiv.org/abs/2502.12151",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに与える手続き的知識（スキル）の効果を測定したSkillsBenchに基づき、人間による適切な設計が成功率を16.2%向上させる一方で、AIによる自己生成は逆効果になる現状を解説しています。",
+    "summaryBody": "本記事は、AIエージェントの手続き的知識（Agent Skills）の有効性を評価するベンチマーク「SkillsBench」の結果を詳しく分析しています。調査の結果、人間が作成したスキル（Curated Skills）はタスク成功率を平均16.2ポイント改善するのに対し、AIが自ら生成したスキル（Self-Generated Skills）は-1.3ポイントと、むしろ性能を低下させることが判明しました。特に医療（+51.9pp）や製造業（+41.9pp）などの専門性が高い領域でスキルの効果が顕著です。設計の最適解として、モジュール数を2〜3個に絞り、網羅性よりも「具体的かつ段階的な手順」と「少なくとも1つの動作例」を含めることが推奨されています。情報過多はコンテキスト負荷を高め、意思決定を阻害する「Comprehensive（網羅的）の罠」についても警告しており、実務的なスキル構築のガイドラインを提供しています。",
+    "topics": [
+      "AIエージェント",
+      "SkillsBench",
+      "プロンプトエンジニアリング",
+      "LLM",
+      "手続き的知識"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks"
+  }
+}

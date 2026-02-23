@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:52:04.840066+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skills for Firebase の導入：AIエージェントによる開発の効率化とトークン削減",
+    "url": "https://firebase.blog/posts/2026/02/agent-skills-for-firebase",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントがFirebaseの最新ドキュメントや最適な実装手法を、トークンを節約しながら効率的に利用できる新機能「Agent Skills for Firebase」が公開されました。",
+    "summaryBody": "Firebaseは、AIエージェント（Gemini CLI、Claude Code、Cursor等）に特化した指示セットと文脈を提供する「Agent Skills for Firebase」をリリースしました。従来、AIエージェントは古い学習データに頼るか、大量のドキュメントを読み込ませることでトークンを浪費していましたが、本機能は「段階的開示（Progressive Disclosure）」を採用。タスクに必要な情報だけを動的に抽出することで、コストを抑えつつ正確なコード生成を実現します。初期リリースではAuth、Firestore、セキュリティルール、App HostingなどのフルスタックWeb開発に最適化されており、Model Context Protocol (MCP) と併用することで、AIが自律的にFirebase CLIを操作して環境構築からデプロイまでを完遂できるようになります。`npx skills add firebase/agent-skills`コマンドで導入可能です。",
+    "topics": [
+      "Firebase",
+      "AI Agents",
+      "LLM",
+      "Model Context Protocol",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Better code, fewer tokens: Introducing Agent Skills for Firebase"
+  }
+}

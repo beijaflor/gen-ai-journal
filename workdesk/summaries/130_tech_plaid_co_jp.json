@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:57:39.753997+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PR数4倍でも破綻しない、Claude Codeをチーム運用する仕組み",
+    "url": "https://tech.plaid.co.jp/claude-code-team-operation",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PLAID社の開発チームがClaude Codeを導入し、AGENTS.mdやHooks、Skillsを活用した標準化によって月間PR数を150から600へ4倍にスケールさせた実践的な運用ノウハウ。",
+    "summaryBody": "KARTE Journey開発チームにおけるClaude Codeの大規模運用の詳細な解説です。AIエージェントの導入による「レビュー負荷の爆発」や「属人化」といった課題に対し、同チームは「意図・制約・成果」をリポジトリ内に構造化して管理するアプローチを採用しました。\n\n主な構成要素は以下の3点です：\n1. **コンテキスト設計**: `AGENTS.md`（全体構成）、`rules`（ディレクトリ別規約）、`docs`（詳細知識）をリポジトリにコミットし、AIと人間が同一の情報を参照。 \n2. **ガードレールの自動化**: `Permission`機能と`Hooks`（Pre/PostToolUse）を用い、シークレット検知、自動フォーマット、特定操作の制限を機械的に強制。\n3. **プロセスの定型化**: `Skills`や`Subagents`を活用し、PR作成、TDD、Sentryのエラートリアージといった複雑なワークフローを再現可能な形で定義。\n\nこの仕組みにより、エンジニアは実装の細部ではなく「何を実現するか」という設計と意図の管理に集中できる環境を構築しています。",
+    "topics": [
+      "Claude Code",
+      "AI Coding Agent",
+      "DevOps",
+      "GitHub Operations",
+      "Team Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

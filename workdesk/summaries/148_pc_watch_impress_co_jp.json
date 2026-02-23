@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:02:27.494577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間なら半日の作業が2時間に。ローカルLLM「Qwen3 Coder Next」で爆速開発",
+    "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/1663188.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの外部モデル連携機能を活用し、ローカル環境で動作するQwen3 Coder NextをvLLMで高速化することで、コーディング作業を劇的に効率化する実践手法を紹介。",
+    "summaryBody": "西川和久氏による不定期コラム。DGX Spark互換機「AI TOP ATOM」を用いて、最新のコーディング特化型ローカルLLM「Qwen3 Coder Next (80B)」を、推論フレームワーク「vLLM」上で動かす検証を行っている。主なトピックは以下の通り。  \n1. **vLLMによる並列リクエストの最適化**: 従来のLM Studioでは難しかった並列処理を、vLLMのPagedAttention等の機能を活用することで4並列時に100tok/s超のスループットを実現。  \n2. **Claude Codeとの連携**: 環境変数を設定することで、Claude Codeの推論エンジンとして外部のローカルLLMエンドポイントを指定。  \n3. **実案件での比較検証**: 音楽生成API「ACE Step 1.5」のUI作成を題材に、最新の「Claude 4.6 Opus」と「Qwen3 Coder Next」を比較。Opusが8分で完了した一方、Qwen3は試行錯誤を含め2時間を要したが、それでも人間が手作業で行う（半日程度）より遥かに高速であることを実証。  \nローカルLLM特有の「指示への忠実さ」や「実装の癖」についても言及されており、実用的な開発環境構築の参考になる内容となっている。",
+    "topics": [
+      "Qwen3 Coder Next",
+      "Claude Code",
+      "vLLM",
+      "ローカルLLM",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

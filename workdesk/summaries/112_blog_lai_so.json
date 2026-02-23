@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:53:09.326661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawの何が特別なのか？",
+    "url": "https://laiso.substack.com/p/openclaw",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenClawは、高いOS権限と「HEARTBEAT」による常時起動を備えた自律型AIエージェントOSSであり、ハッカー的な拡張性と深刻なセキュリティリスクが共存する特異なプロジェクトです。",
+    "summaryBody": "OpenClawは、著名なiOSエンジニアPeter Steinberger（steipete）が開発したオープンソースの自律型AIエージェントです。最大の特徴は、ユーザーが指示を出すのを待つのではなく、30〜60分間隔で自律的に推論と実行を繰り返す「HEARTBEAT」機能にあります。これにより、メールやカレンダーの監視、バックグラウンドでのコード修正、定期的な記憶の整理が可能となります。アーキテクチャ面では、最小限のランタイム「Pi」を核とし、Markdown形式のファイルで人格や機能を定義する「Agent Skills」というプロンプト拡張の仕組みを採用しています。\n\n一方で、急速な普及に伴う負の側面も目立ちます。スキルレジストリ「ClawHub」では登録スキルの約12%にマルウェアが混入しているという調査結果があり、APIキーの平文保存などセキュリティ境界の扱いが極めて粗いことが指摘されています。また、エージェント専用SNS「Moltbook」のような実験的な試みが「AIごっこ（AI theater）」と揶揄されるなど、利便性と安全性のバランスが崩れた「ハッカーのおもちゃ箱」としての性質が強調されています。steipete氏のOpenAI加入によりOSS財団へ移管されましたが、自律型エージェントの可能性と「逸脱の常態化」によるリスクを象徴するプロジェクトと言えます。",
+    "topics": [
+      "OpenClaw",
+      "AIエージェント",
+      "自律型AI",
+      "サイバーセキュリティ",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

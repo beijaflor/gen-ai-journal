@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:02:12.710606+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGで「ベクトル検索」が要る時、要らない時",
+    "url": "https://zenn.dev/knowledgesense/articles/rag-vector-search-is-needed-or-not",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ベクトルデータベースを使わずにLLMエージェントとキーワード検索ツールのみでRAGと同等の性能を目指す手法と、その使い分けの指針を解説した記事。",
+    "summaryBody": "AWSの研究者らによる論文「Keyword search is all you need」をベースに、ベクトル検索を使わないRAGの可能性を検証しています。従来、RAGにはベクトルDBの運用コストや権限管理の複雑さという課題がありました。本手法「Agentic Keyword Search」では、事前にベクトル化を行わず、LLMエージェントがコマンドラインツール（rga等）を用いて直接ドキュメントをキーワード検索します。実験の結果、多くのデータセットでベクトル検索を用いたRAGの90%前後の性能を達成しました。しかし、キーワード検索は抽象的な表現や表記ゆれに弱く、また回答速度も低下する傾向があります。結論として、固有名詞主体の検索や頻繁なデータ更新がある場合はキーワード検索、抽象的な質問やレスポンス速度が重視される場合はベクトル検索という、適材適所の設計が重要であると述べています。",
+    "topics": [
+      "RAG",
+      "ベクトル検索",
+      "LLMエージェント",
+      "キーワード検索",
+      "ベクトルデータベース"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 85
+    },
+    "originalTitle": "Keyword search is all you need: Achieving RAG-level performance without vector databases using agentic tool use"
+  }
+}

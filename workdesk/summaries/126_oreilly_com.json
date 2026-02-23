@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:56:40.788587+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはライブラリではない：非決定論的な依存関係を前提とした設計",
+    "url": "https://www.oreilly.com/radar/ai-is-not-a-library-designing-for-nondeterministic-dependencies/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（LLM）を従来の決定論的なライブラリとして扱うのではなく、出力の変動を前提とした「非決定論的な依存関係」としてシステム設計を再構築すべきだと提言する記事。",
+    "summaryBody": "ソフトウェア開発は長らく「同じ入力に対して同じ出力を返す」という決定論的な前提の上に築かれてきましたが、AI（特にLLM）はこの前提を根本から覆します。著者のGuruprasad Rao氏は、AIを単なるスマートなAPIやライブラリとして扱うのは誤りであり、本質的に「非決定論的なコラボレーター」として捉えるべきだと主張しています。\n\n具体的には、以下の3つの領域で従来の常識が通用しなくなると指摘しています。まず「リトライ」は、決定論的システムでは安全ですが、AIでは異なる（あるいは悪化した）出力を生む可能性があります。次に「テスト」において、厳密な正解を定義することが難しく、モデルの微細な変化がテスト失敗を招くため、「正しさ」から「許容範囲」への評価の移行が必要です。そして「観測性」については、従来のインフラメトリクス（エラー率や遅延）では検知できない「もっともらしいが誤った回答」を監視する新しい手法が求められます。\n\n結論として、エンジニアはAIの変動を排除しようとするのではなく、ガードレール（影響範囲の限定）の設置、フォールバックの設計、人間によるチェックといった手法を通じて、不確実性を管理・隔離するアーキテクチャを構築すべきであると説いています。",
+    "topics": [
+      "AIアーキテクチャ",
+      "LLM",
+      "ソフトウェアエンジニアリング",
+      "非決定性",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "AI Is Not a Library: Designing for Nondeterministic Dependencies"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:00:53.856561+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code to Figma を使ってコードから Figma デザインを生成する",
+    "url": "https://azukiazusa.dev/blog/claude-code-to-figma-generate-design/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとFigma MCPサーバーの「generate_figma_design」機能を活用し、ローカル開発中のコードから直接Figmaデザインを生成・同期する高度な連携手法を解説します。",
+    "summaryBody": "Figma MCPサーバーに新たに追加された「generate_figma_design」ツールについて解説したチュートリアル記事です。このツールはClaude Codeでのみ利用可能で、ローカルで立ち上げた開発サーバーのURLを指定することで、そのUIをAuto Layoutが適用された編集可能なFigmaデザインとして自動生成できます。記事では、MCPサーバーのセットアップ手順から、新しいFigmaファイルの作成、既存ファイルへの要素追加、CSSセレクタを用いた特定パーツのキャプチャ方法まで具体的に紹介。デザインシステムとしての構築には制限があるものの、開発者とデザイナー間のフィードバックループを高速化し、実装ベースでのデザイン確認を容易にする強力なワークフローを提案しています。",
+    "topics": [
+      "Figma",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "フロントエンド開発",
+      "デザイン・コード連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

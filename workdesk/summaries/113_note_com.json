@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:53:24.007804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スライド作成を自動化するClaude「skills」の作り方",
+    "url": "https://note.com/tarosegawa/n/nf6243862678c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "既存のPowerPointテンプレートをClaudeの「Skills」として組み込み、用途に応じたスライドの自動選択・構成・テキスト編集を実現するための具体的な実装ガイド。",
+    "summaryBody": "この記事では、Claudeのカスタムスキル機能を活用して、組織の既存PPTXテンプレートから最適なプレゼン資料を自動生成する「スライドジェネレーター」の構築方法を解説しています。主な特徴は、pptxgenjsによる新規生成ではなく、既存のXML構造を維持したままスライドを抽出・置換する手法をとっている点です。構成要素として、スライドのメタデータを管理するJSONカタログ、実行フローを定義するSKILL.md、そしてスライド選択を制御するPythonスクリプトの3点について、具体的なコードとプロンプト例が提示されています。デザイン品質を保つための「ゼロからの生成禁止」ルールや、テンプレート探索の優先順位など、実運用におけるトラブルシューティングも詳細に記述されています。",
+    "topics": [
+      "Claude Skills",
+      "PowerPoint自動化",
+      "業務効率化",
+      "AIエージェント",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

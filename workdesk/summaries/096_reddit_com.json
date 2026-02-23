@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:48:28.309676+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにおける他ユーザーのセッション応答流出の可能性に関するユーザー報告",
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1izl4v1/claude_code_leaked_me_someone_elses_response_i/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Claude Codeの利用中に、別のユーザーのものと思われる無関係な応答が表示され、意図しないトークン消費が発生したというセキュリティ上の懸念がRedditで報告されました。",
+    "summaryBody": "Redditのr/ClaudeCodeコミュニティにて、AnthropicのCLIツール「Claude Code」を使用しているユーザーから、他人のセッション内容が流出した可能性を指摘する報告がありました。投稿者によると、MacBookをスリープから復帰させた後にツールを再開したところ、自身の文脈とは全く無関係な「Exodus」という単語を含む応答が生成され、キャンセルするまでに約1万トークンが消費されたとのことです。これが事実であれば、大規模言語モデルツールのセッション管理における重大なプライバシーおよびセキュリティ上の問題を示唆しており、現時点では個別のバグかシステム全体の問題かは不明ですが、コミュニティ内で注目を集めています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "セキュリティ脆弱性",
+      "プライバシー",
+      "セッション管理"
+    ],
+    "scores": {
+      "signal": 3,
+      "depth": 2,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 55,
+      "annexPotential": 85,
+      "overall": 60
+    },
+    "originalTitle": "Claude Code leaked me someone else's response (I believe)"
+  }
+}

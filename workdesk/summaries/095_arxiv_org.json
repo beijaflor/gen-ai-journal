@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:48:11.087001+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGENTS.mdの評価：リポジトリレベルのコンテキストファイルはコーディングエージェントに役立つのか？",
+    "url": "https://arxiv.org/abs/2602.11988",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントにリポジトリの文脈を伝えるためのAGENTS.mdファイルが、実際にはタスク成功率を低下させ、推論コストを20%以上増加させる傾向があることを示した研究。",
+    "summaryBody": "ソフトウェア開発において、LLMベースのコーディングエージェントに特定の指示や文脈を与えるため「AGENTS.md」などのファイルをリポジトリに置く手法が推奨されていますが、本論文はその実効性に疑問を投げかけています。SWE-bench等のタスクを用いた広範な評価の結果、LLM生成および人間作成のコンテキストファイルは、いずれもタスクの成功率を向上させるどころか、むしろ悪化させることが判明しました。これらのファイルはエージェントに広範な探索（過剰なテストやファイル走査）を促し、結果として不要な要件に縛られることでタスクを難化させ、推論コストを20%以上押し上げています。著者は、人間がコンテキストファイルを記述する場合は、指示を最小限に留めるべきであると結論付けています。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "Context Management",
+      "LLM Evaluation",
+      "AGENTS.md"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"
+  }
+}

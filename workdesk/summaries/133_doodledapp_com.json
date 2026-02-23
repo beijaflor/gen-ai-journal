@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:58:30.800048+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIテストが全パスしてもコードは間違っていた：Doodledappが直面した「グラウンドトゥルース」の罠",
+    "url": "https://doodledapp.com/feed/ai-made-every-test-pass",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIにテスト生成を任せると既存コードの挙動を無批判に正当化してしまう問題に対し、AST比較とAIによる差分分析を組み合わせた高精度な検証手法を提案する。",
+    "summaryBody": "Doodledapp開発チームが、ビジュアルフローからSolidityへ変換するコンバーターの検証においてAIを活用した際の教訓を共有しています。当初、AIにテスト生成を依頼したところ、17件の主要なスマートコントラクトで全テストが即座にパスしましたが、これはAIが「実装されたコードそのもの」を正解（仕様）としてテストを生成したため、既存のバグを検知できなかったことが判明しました。\n\nこの「グラウンドトゥルース（真実の基準）」問題を解決するため、チームは検証アプローチを根本から刷新しました。単なるコード文字列の比較ではなく、元のコントラクトと変換後のコードをそれぞれAST（抽象構文木）に変換し、その構造的な差異をAIに分析させる手法を採用。これにより、修飾子の欠落や演算の優先順位エラー、複雑なループ境界の誤りなど、人間が見落としがちな論理的バグを確実に特定できるようになりました。AIを検証ツールとして使う際は、コードではなく独立した「正解の基準」を比較対象として与えることが不可欠であると結論付けています。",
+    "topics": [
+      "AI Generated Tests",
+      "Solidity",
+      "AST (Abstract Syntax Tree)",
+      "Software Testing",
+      "Ground Truth Problem"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "AI made every test pass. The code was still wrong."
+  }
+}

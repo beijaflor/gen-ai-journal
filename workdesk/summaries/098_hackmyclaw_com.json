@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:49:08.753212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HackMyClaw: $300の賞金が懸かったプロンプトインジェクション・チャレンジ",
+    "url": "https://hackmyclaw.com/",
+    "language": "en",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "メールを介してAIアシスタントを操作し、機密情報を盗み出すプロンプトインジェクションの脆弱性を体験・検証するセキュリティチャレンジ。",
+    "summaryBody": "## 概要 HackMyClawは、OpenClawベースのAIアシスタント「Fiu」を対象としたプロンプトインジェクションの公開コンテストです。参加者はメールを送信することで、Fiuが保持している機密ファイル「secrets.env」の中身を暴露させることを目指します。 ## 技術的背景 FiuはAnthropic Claudeモデル（仮想的に4.6と記載）を使用しており、システムプロンプトによる指示だけで「機密を漏らさない」ようガードされています。このチャレンジは、LLMの防御策が指示の上書きや文脈の操作に対してどれほど脆弱であるかを証明する教育的試みです。 ## 参加方法とルール 参加者はFiuのメールアドレスに特定のペイロードを送信します。役割の混同や多段階の推論エクスプロイトなど、あらゆる手法が許可されています。最初に見事機密情報を奪取した参加者には、主催者とスポンサーのCorgeaから計300ドルの賞金が支払われます。実社会で脅威となっている「間接的なプロンプトインジェクション」をシミュレートした実践的な内容です。",
+    "topics": [
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "LLM脆弱性",
+      "バグバウンティ",
+      "OpenClaw"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 80
+    },
+    "originalTitle": "HackMyClaw - Prompt Injection Challenge | $300 Bounty"
+  }
+}

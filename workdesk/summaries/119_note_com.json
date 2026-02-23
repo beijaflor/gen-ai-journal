@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:54:57.854844+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawとClaude Codeを組み合わせた自律型AI開発のアーキテクチャ設計",
+    "url": "https://note.com/fladdict/n/nb613589b9d31",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenClawを戦略マネージャー、Claude Codeを実装エンジニアとして分離し、TODO.mdとREPORT.mdを介して自律的な開発ループを回すための構成案。",
+    "summaryBody": "深津貴之氏による、OpenClawとClaude Codeを連携させた完全自律型AIコーディングのコンセプトメモ。OpenClawが「戦略と進行管理」を担い、Claude Codeが「サンドボックスでの実装」に専念する「プランナー・エグゼキューターモデル」を採用しています。具体的には、TODO.md（未来の計画）とREPORT.md（実行ログ）という2つのテキストファイルを状態管理のハブとし、Claude CodeのHooks機能による高速な実行サイクルと、OpenClawのCron機能によるプロセス再起動（自己修復）を組み合わせたハイブリッドな実行フローを提案しています。開発環境の隔離や、無限予算・無限パーミッションに伴うリスクについても言及されています。",
+    "topics": [
+      "OpenClaw",
+      "Claude Code",
+      "AI Agent",
+      "自律型開発",
+      "Vibe Coding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

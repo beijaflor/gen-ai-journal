@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:01:42.078852+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex v0.102 Multi-Agent 動作検証",
+    "url": "https://zenn.dev/snoopy/articles/codex-v0-102-multi-agent",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codex v0.102で導入されたマルチエージェント機能を検証し、調査・修正の分業によるコード修正品質の向上と、ハブ&スポーク型の内部連携メカニズムを明らかにした。",
+    "summaryBody": "Codex 0.102のマルチエージェント機能を実地検証したレポートです。主要な構成は以下の通り：1. **セットアップ**: config.tomlで`multi_agent = true`を有効化し、explorer（調査）やworker（修正）といった役割別エージェントを定義。 2. **検証結果**: 調査のみ、修正のみ、そして「調査→修正」の連携パターンの3種を比較。特に連携パターンでは、単体実行時には見落とされたセキュリティ脆弱性（トークン署名検証の欠如やユーザー列挙対策）が包括的に修正され、テストコードも自動追加されるなど、顕著な品質向上が確認されました。 3. **内部動作**: JSONLログの解析により、オーケストレータが`spawn_agent`、`wait`、`close_agent`ツールを介してサブエージェントを制御するハブ&スポーク型の通信モデルを採用していることが判明。80%以上の高いキャッシュ率により、トークン消費を抑えつつ高度なタスク実行が可能になっています。",
+    "topics": [
+      "Codex",
+      "Multi-Agent",
+      "LLM",
+      "AIエージェント",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
