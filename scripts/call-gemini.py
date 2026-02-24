@@ -617,6 +617,15 @@ def main():
 
             logging.info("JSON validation passed")
 
+            # URL enforcement: Gemini sometimes writes a different URL in the JSON output field
+            # even though it fetched content from the correct URL. Force the URL to match args.url.
+            if 'content' in response_data:
+                generated_url = response_data['content'].get('url', '')
+                if generated_url != args.url:
+                    logging.warning(f"URL mismatch corrected: '{generated_url}' → '{args.url}'")
+                    print(f"Warning: URL mismatch corrected ('{generated_url}' → '{args.url}')", file=sys.stderr)
+                    response_data['content']['url'] = args.url
+
             # Convert to formatted JSON string
             response = json.dumps(response_data, ensure_ascii=False, indent=2)
 
