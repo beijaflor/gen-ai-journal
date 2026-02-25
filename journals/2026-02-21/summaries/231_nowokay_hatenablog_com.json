@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:49:41.765416+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザがGPUメモリを使いすぎるので、サブGPUのRTX3050を使わせる",
+    "url": "https://nowokay.hatenablog.com/entry/2026/02/21/175505",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ローカルLLM実行時にメインGPUのVRAMを確保するため、Windowsの設定を用いてブラウザの描画処理をサブGPU（RTX 3050）へオフロードする方法の紹介。",
+    "summaryBody": "30BクラスのローカルLLMをRTX 4060 Ti (16GB)で運用する際、ブラウザが数GBのVRAMを占有してメモリ不足を招く課題を解決する手法。Windowsの「システム > ディスプレイ > グラフィック」設定から、Firefox等のブラウザ実行GPUをサブカードのRTX 3050に手動で割り当てることで、メインGPUのVRAMをLLM専用に開放できる。これにより、LLM使用時にブラウザを終了させる必要がなくなり、マルチGPU環境における効率的なリソース分配が可能になる。実用的なVRAM管理のテクニックとして有用である。",
+    "topics": [
+      "ローカルLLM",
+      "VRAM",
+      "マルチGPU",
+      "RTX 3050",
+      "Windows設定"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 95,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

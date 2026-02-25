@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:47:29.507743+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「1行もコードを書いてない」AI製アプリMoltbookの150万APIキー漏洩事件に学ぶセキュリティの教訓",
+    "url": "https://zenn.dev/helloworld/articles/5c69b2981d5199",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIのみで開発されたSNS「Moltbook」が、SupabaseのRLS設定漏れにより150万件のAPIキーを流出させた事件を振り返り、Vibe Codingの危うさを解説する記事です。",
+    "summaryBody": "「1行もコードを書かずにAIが開発した」として話題になったSNS「Moltbook」が、ローンチわずか3日後に深刻な脆弱性を露呈した事例を解説しています。セキュリティ企業Wizの報告によると、SupabaseのRow Level Security (RLS) が有効化されておらず、認証なしでデータベース内の150万件のAPIキーやプライベートDM、メールアドレスが誰でも取得可能な状態でした。AIは「動くコード」を生成するものの、デフォルトでセキュリティを完備するわけではないため、開発者が知識を持ち、AIに対して別途セキュリティレビューを依頼するなどの対策が必要であることを強調しています。",
+    "topics": [
+      "AI Security",
+      "Supabase",
+      "Vibe Coding",
+      "情報漏洩",
+      "Moltbook"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

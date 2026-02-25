@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:23:20.625342+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのUI変更（ファイル操作の非表示）に対し開発者が猛反発",
+    "url": "https://www.theregister.com/2026/02/16/anthropic_claude_ai_edits/",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicがAIコーディングツール「Claude Code」のファイル操作ログをデフォルトで非表示にしたところ、透明性やコスト管理を重視する開発者から批判が殺到している。",
+    "summaryBody": "Anthropicが提供するCLIベースのAIコーディングツール「Claude Code」の最新アップデート（バージョン2.1.20）において、ツールが読み書き・編集しているファイル名をデフォルトで折りたたむUI変更が行われました。開発チームの責任者であるBoris Cherny氏は、出力を簡素化し、差分（diff）や実行結果に集中してもらうための「ノイズ削減」であると説明しています。しかし、これに対し開発者コミュニティからは強い反発が起きています。批判の主な理由は、AIが適切なコンテキストを読み込んでいるか確認できなくなること、誤った方向へ進んでいる場合に早期中断してトークン消費を抑えることが困難になること、そしてセキュリティ上の監査が難しくなることです。Anthropicは「verboseモード」の調整で対応を試みていますが、開発者側は「情報を隠すことはAIへの信頼を損なう」として、以前の透明性の高い挙動を求めて議論が続いています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIコーディングツール",
+      "ユーザーエクスペリエンス",
+      "トークン最適化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "Anthropic tries to hide Claude's AI actions. Devs hate it"
+  }
+}

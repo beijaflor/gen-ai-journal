@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:36:47.746172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google の AI 搭載検索とマルチモーダルモデルの進化",
+    "url": "https://www.suzukikenichi.com/blog/evolution-of-googles-ai-powered-search-and-multimodal-models/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GoogleのJeff Dean氏が、AI検索をスケールさせるためのハイブリッドな検索アーキテクチャ、モデル蒸留、ハードウェアの協調設計、およびネイティブなマルチモーダル性の重要性について明かしました。",
+    "summaryBody": "GoogleのチーフAIサイエンティストであるJeff Dean氏のインタビューに基づき、AI検索の内部構造と進化の方向性が解説されています。主な技術的ポイントは以下の6点です。1. **ハイブリッド・ファネル**: 従来のインデックスで絞り込んだ後、LLMが情報を合成する階層アプローチ。2. **セマンティックな意図理解**: キーワード一致から深い意図（エンベッディング）の把握への転換。3. **モデル蒸留**: Gemini Ultraのような巨大モデルの知識を、Flashのような軽量モデルに継承させ、低コスト・低遅延を実現。4. **ハードウェアの最適化**: データの移動コストを抑えるTPUやメモリ配置の設計。5. **コンテキストウィンドウの拡張**: 数百万トークンの処理による、長尺動画や大規模資料の高度な分析。6. **ネイティブ・マルチモーダル**: 翻訳や音声認識を別個に行わず、単一モデルで多様なメディアを直接処理するGeminiの優位性。SEO観点では、キーワード対策から意味と構造の最適化、そしてマルチモーダル対応へのシフトが求められています。",
+    "topics": [
+      "Google 検索",
+      "Jeff Dean",
+      "Gemini",
+      "セマンティック検索",
+      "モデル蒸留"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

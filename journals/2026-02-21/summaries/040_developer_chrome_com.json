@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:15:32.040675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Designing DevTools: AIアシスタントにおける効率的なトークン使用の設計",
+    "url": "https://developer.chrome.com/blog/designing-devtools-efficient-token-usage",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Chrome DevToolsのAIアシスタントが、巨大なパフォーマンス・トレースデータをLLMの限られたコンテキスト窓に収めるために採用した、データ削減とシリアライズの最適化技術について解説しています。",
+    "summaryBody": "Chrome DevToolsに搭載されたGeminiベースのAIアシスタントは、数メガバイトにも及ぶパフォーマンス・トレース・データを扱う必要があります。LLMのコンテキスト窓には制限があるため、生のJSONデータを送信することは不可能です。この課題に対し、エンジニアリングチームは3つの主要なアプローチを導入しました。第一に「コンテキストの最適化」で、ユーザーのデバッグ作業（LCPの調査やネットワーク要求の分析など）に関連するデータのみをスライスして送信します。第二に「関数呼び出し（Tool Use）」の活用です。エージェントが必要に応じて特定のイベント詳細やソースコードを動的に取得できるツール群を定義しました。第三に「独自のデータシリアライズ」です。冗長なJSONキーを排除し、幅優先探索（BFS）による再インデックス化で子ノードをID範囲として表現する独自のフォーマットを開発しました。これらの最適化により、トークン消費を劇的に抑えつつ、長期間の対話と正確な分析を可能にしています。",
+    "topics": [
+      "Chrome DevTools",
+      "LLM Optimization",
+      "Gemini",
+      "Web Performance",
+      "Token Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Designing DevTools: Efficient token usage in AI assistance"
+  }
+}

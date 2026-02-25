@@ -172,6 +172,22 @@ When using JSON format (default), summaries are automatically validated against 
 
 **If validation fails**: Script exits with error message, URL remains unchecked, no file written.
 
+## URL Validation
+
+After JSON generation, `call-gemini.py` validates that the `content.url` field in the generated JSON **exactly matches** the input URL passed via `--url`. Gemini sometimes resolves redirects or hallucinates different URLs, which can indicate the wrong page was fetched and the summary content may be incorrect.
+
+**Validation behavior**:
+- ✓ After schema validation, `content.url` is compared against the input URL
+- If mismatch detected: summarization is **automatically retried once** (warning printed to stderr)
+- If retry also mismatches: script exits with error code 1 (URL mismatch persists after retry)
+- Entry remains unchecked for manual intervention if retry fails
+
+**If URL mismatch occurs**:
+1. Check stderr for "Warning: URL mismatch, retrying summarization..."
+2. If retry resolves it: continues normally (info logged)
+3. If retry fails: "Error: URL mismatch after retry. Expected '...', got '...'"
+4. Re-run generation manually or investigate if the URL has redirects/paywall
+
 ### Manual Validation
 
 To validate existing JSON summaries:

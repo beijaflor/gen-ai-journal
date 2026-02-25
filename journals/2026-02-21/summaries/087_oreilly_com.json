@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:45:45.782032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント間通信の普及と「ガバナンスの溝」：A2A・ACP時代の組織戦略",
+    "url": "https://www.oreilly.com/radar/ai-a2a-and-the-governance-gap/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント同士の相互運用を可能にするプロトコルが進化する一方で、組織の統制や説明責任が追いつかない「ガバナンスの溝」が、企業の新たなリスクとなっている。",
+    "summaryBody": "AIエージェント間の通信規格（A2A、ACP、MCP）の発展により、システムの統合コストは激減しましたが、それは同時に「ガバナンスの議論」というブレーキを失わせる結果を招いています。本記事では、この現状を「ガバナンスの溝」と呼び、技術的な接続性が組織の制御能力を追い越している現状を警告しています。具体的には、MCP（ツール接続）、ACP（文脈共有）、A2A（交渉・委譲）からなる3層のエージェントスタックを解説。その上で、ポリシーの乖離、機密情報の過剰共有、モデル更新に伴う非決定的な「サイレント障害」などのリスクを指摘しています。筆者は、従来の文書ベースのガバナンスではなく、コードとしてポリシーを定義し実行する「エージェント条約（Agent Treaty）」レイヤーの構築を提言し、自律型ワークフローを「インフラ」ではなく「ポリシーがエンコードされたトラフィック」として扱うべきだと主張しています。",
+    "topics": [
+      "AI Agent",
+      "A2A (Agent-to-Agent)",
+      "Governance",
+      "MCP (Model Context Protocol)",
+      "Risk Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "AI, A2A, and the Governance Gap"
+  }
+}

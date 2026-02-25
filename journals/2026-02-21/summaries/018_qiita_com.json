@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:39:01.551186+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の実装から読み解く Agent Teams の設計思想",
+    "url": "https://qiita.com/Dinn/items/6c0dd5107d4ce6c4b300",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの「Agent Teams」機能を題材に、独立したコンテキストを持つ複数エージェントがファイルシステムを介して自律的に協調する設計思想とその実装構造を解説する。",
+    "summaryBody": "この記事は、Claude Codeに導入された「Agent Teams」機能の核心にある設計思想を、Anthropicの技術公開資料と実際の実装から詳細に分析しています。Agent Teamsは、単なる並列実行ツールではなく、Orchestrator-Workers、Parallelization、Evaluator-Optimizerという3つのパターンを統合した仕組みです。技術的な特徴として、共有メモリやDBを使わずにローカルのファイルシステムとファイルロックのみでタスク管理と同期を行う「UNIX哲学」的なアプローチ、およびTeammate同士が直接対話できる「Mailbox」システムの存在が挙げられます。従来のSubagent（主従関係・関数的）との比較を通じて、より自律的で多角的な検証が可能な「分散型・チーム会議型」への進化の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "マルチエージェントシステム",
+      "システム設計思想"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

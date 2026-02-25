@@ -10,11 +10,14 @@ This step creates the mandatory `journal-metadata.json` file containing summary 
    ```
 
 2. **Count summary statistics**
-   - Count total summaries: 
-     - New structure: `ls -1 summaries/*.md | wc -l`
+   - Count total summaries:
+     - New structure: `find summaries -name "*.json" | wc -l`
      - Old structure: `ls -1 sources/*.md | grep -v "sources.md" | wc -l`
-   - Count main journal URLs: `grep -c "https://" sources/curated_journal_sources.md` 
-   - Count annex journal URLs: `grep -c "https://" sources/curated_annex_journal_sources.md`
+   - Count main journal articles: `grep -c "^### " 00_weekly_journal_YYYY_MM_DD.md`
+     - **Use the assembled journal file**, not curated_journal_sources.md
+   - Count annex journal articles: `grep -c "^### " 01_annex_journal_YYYY_MM_DD.md`
+     - **Use the assembled journal file**, not curated_annex_journal_sources.md
+     - ⚠️ **Important**: If the user filtered the annex journal (e.g. from 48 curated → 24 published), the source file will NOT reflect this. Always count from the actual journal file.
    - Calculate omitted: total - main - annex
 
 3. **Create metadata file**
@@ -75,8 +78,9 @@ else
   exit 1
 fi
 
-MAIN=$(grep -c "https://" sources/curated_journal_sources.md 2>/dev/null || echo 0)
-ANNEX=$(grep -c "https://" sources/curated_annex_journal_sources.md 2>/dev/null || echo 0)
+# Count from the assembled journal files (reflects user filtering, e.g. annex curation)
+MAIN=$(grep -c "^### " 00_weekly_journal_${DATE}.md 2>/dev/null || echo 0)
+ANNEX=$(grep -c "^### " 01_annex_journal_${DATE}.md 2>/dev/null || echo 0)
 OMITTED=$((TOTAL - MAIN - ANNEX))
 DATE=$(basename $(pwd))
 

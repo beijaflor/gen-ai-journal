@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:41:04.725543+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGENTS.mdを自動で育てる仕組みを作った",
+    "url": "https://nyosegawa.github.io/posts/agents-md-generator/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントへの指示書「AGENTS.md」を、リポジトリ作成時に自動生成し、情報の鮮度を保ちながら最適化し続けるためのツールと設計手法の紹介。",
+    "summaryBody": "AIコーディングエージェント（Claude Code, Cursor等）向けの標準フォーマット「AGENTS.md」を、プロジェクト開始時に自動でシードし、かつ「生きたドキュメント」として維持するための仕組みについて解説しています。筆者は、LLMの指示追従性能を落とさないために「指示は20〜30行以内に収める」という制約を提唱し、不要なプレースホルダーの削除や情報の刈り込みをエージェント自身に行わせる設計を導入しました。具体的には、gitやghqのシェルラッパーを用いて空のリポジトリ作成時にテンプレートを自動生成する「agents-md-generator」を公開しています。ドキュメントを単なる設定ファイルではなく、コードから推測できない固有の判断基準やコマンドを最小限に記述する「動的なコンテキスト管理」の重要性を説いています。",
+    "topics": [
+      "AGENTS.md",
+      "Claude Code",
+      "Coding Agent",
+      "Automation",
+      "LLM context optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

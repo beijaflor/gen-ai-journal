@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:52:18.997192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リアーキテクチャでClaude Codeを8ヶ月使い込んで分かった「任せること」と「握ること」の境界線",
+    "url": "https://zenn.dev/yusuke_shiya/articles/claude-code-team-adoption",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "5名のフロントエンドチームが8ヶ月間Claude Codeを運用した経験に基づき、AIに詳細実装を任せつつも全体設計と説明責任を人間が保持する「境界線」の重要性を説く。",
+    "summaryBody": "5名のフロントエンドチームによるVue2からReactへのリアーキテクチャプロジェクトにおいて、Claude Codeを8ヶ月間活用した実証記録です。AI導入により開発速度が劇的に向上（1日のタスクが2時間に短縮）し、実装を見てから判断するスタイルへ移行しました。一方で、全体設計をAIに委ねたことで「機能の肥大化」や「不自然な依存関係」を招く失敗も経験。教訓として、アーキテクチャ設計は人間が主導すべきであること、そして「理解負債（動くが仕組みを把握していないコード）」を防ぐために日次の同期レビュー会「マージの儀」が不可欠であることを示しています。具体的な活用ノウハウとして、CLAUDE.mdによる規約の自動適用、MCPによる精度向上、.tmpディレクトリを利用したセッション管理なども紹介されており、AIエージェントと共存する現代のチーム開発における「責任の所在」と「品質担保」の具体的なガイドラインとなっています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "リアーキテクチャ",
+      "フロントエンド",
+      "チーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": null
+  }
+}

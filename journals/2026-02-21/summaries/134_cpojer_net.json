@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:58:45.777981+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間とAIのための最速フロントエンド開発ツール（2026年版）",
+    "url": "https://cpojer.net/posts/fastest-frontend-tooling",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeScriptのGo言語版やRust製のOxcツール群を活用し、人間とAIの両方が最高のパフォーマンスを発揮できる超高速な開発環境を構築する方法を解説しています。",
+    "summaryBody": "Christoph Nakazawa氏による、2026年のフロントエンド開発における「最速」を追求した技術スタックの紹介記事です。主な内容は以下の通りです。\n\n1. **TypeScript Go (tsgo)**: JavaScript実装より約10倍高速な型チェックを実現。既存のtscから容易に移行可能で、大規模プロジェクトでも劇的な速度向上をもたらします。\n2. **Oxcエコシステム (Oxfmt & Oxlint)**: PrettierやESLintに代わるRust製の高速ツール。既存のプラグイン資産を活用しつつ、フォーマットとリントを圧倒的な速さで実行します。AIがより良いコードを書けるよう、警告を排除した厳格な設定（@nkzw/oxlint-config）が推奨されています。\n3. **開発者体験 (DevX) の最適化**: `npm-run-all2`による並列実行や、`ts-node`+`swc`+`nodemon`を組み合わせたNode.js環境の高速再起動など、ミリ秒単位のフィードバックループを構築する手法を提案しています。\n\n著者は、高速なフィードバックループと厳格なガードレールが、人間の開発者だけでなくLLM（大規模言語モデル）の精度をも高める鍵であると強調しています。",
+    "topics": [
+      "Frontend",
+      "TypeScript",
+      "Oxc",
+      "Developer Experience",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Fastest Frontend Tooling for Humans & AI"
+  }
+}

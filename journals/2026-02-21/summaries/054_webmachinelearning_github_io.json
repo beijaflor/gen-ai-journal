@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:59:05.782091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCP: Webアプリケーションの機能をAIエージェントに公開するためのAPI仕様",
+    "url": "https://webmachinelearning.github.io/webmcp/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "WebMCPは、Webアプリ上のJavaScript関数を自然言語の説明付きでAIエージェントに「ツール」として提供し、ブラウザ経由でのAI操作を可能にする新しいAPI規格です。",
+    "summaryBody": "WebMCP (Model Context Protocol for Web) は、Webアプリケーションの機能をAIエージェント（ブラウザ内蔵AIや外部LLMなど）が実行可能な「ツール」として公開するためのJavaScriptインターフェースです。開発者は、自然言語の説明とJSON Schemaによる入力定義を付与したJavaScript関数を `navigator.modelContext` を通じて登録できます。\n\n主な特徴とコンポーネント：\n- **クライアントサイドMCPサーバー**: 従来のバックエンドベースのMCPを、Webブラウザ上のJavaScriptロジックで直接実現します。\n- **ModelContext API**: `registerTool` や `provideContext` を使用して、アプリケーション固有の機能を動的に登録・削除可能です。\n- **ModelContextClient**: ツール実行中に「ユーザーの確認」などの対話をリクエストする仕組みを提供し、AIの自律的な動作に対する安全性を確保します。\n- **ユースケース**: ユーザーとAIエージェントが同じWebインターフェース内で既存のアプリロジックを共有し、協力して作業するワークフローを想定しています。",
+    "topics": [
+      "WebMCP",
+      "Model Context Protocol",
+      "AI Agents",
+      "W3C",
+      "Web API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "WebMCP Draft Community Group Report, 12 February 2026"
+  }
+}

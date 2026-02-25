@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T06:07:09.120491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × ccmanager で並行開発が捗りすぎた話",
+    "url": "https://dev.classmethod.jp/articles/claude-code-and-ccmanager/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Git worktreeを活用してClaude Codeの複数セッションを管理し、会話コンテキストを維持したまま並行開発を可能にするCLIツール「ccmanager」の導入メリットと使い方を解説。",
+    "summaryBody": "Claude Codeを用いた開発において、フロントエンドとバックエンドの並行作業など、複数のタスクを同時に進める際のセッション管理を容易にするツール「ccmanager」を紹介しています。ccmanagerはGit worktreeを利用して複数のAIセッションを独立して立ち上げることができ、各セッションのステータス（Idle/Busy/Waiting）を一覧でリアルタイムに把握可能です。最大の特徴は、新しいworktree作成時に既存のClaude Codeの会話コンテキスト（.claudeディレクトリ）をコピーして引き継げる機能で、ブランチを切り替えても「最初から説明し直す」手間を省けます。tmuxなどの外部ツールに依存せず、独自のUIで直感的に操作できるため、AI駆動開発の生産性を大幅に向上させます。",
+    "topics": [
+      "Claude Code",
+      "ccmanager",
+      "Git worktree",
+      "AI駆動開発",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

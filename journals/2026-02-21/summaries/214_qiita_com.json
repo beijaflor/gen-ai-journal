@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:45:45.135921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code・Copilot・Codex・Gemini・Cursorが同じスキルを読める時代──Agent Skills標準の実装を徹底比較",
+    "url": "https://qiita.com/nogataka/items/7476eb9dfc8bca4e0bb8",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Anthropicが提唱したAIエージェントの指示共通規格「Agent Skills」について、主要5ツール（Claude Code, Copilot, Codex, Gemini, Cursor）の対応状況と実装の差異を技術的に比較・解説した記事。",
+    "summaryBody": "2025年12月にAnthropicが公開した「Agent Skills」は、SKILL.mdというMarkdownファイルを用いてAIエージェントに手続き的な知識を渡すためのオープン標準です。本記事では、主要な5つのコーディングエージェントにおける実装を比較しています。各ツールは「Progressive Disclosure（段階的開示）」という、必要になるまで詳細な指示をロードしない仕組みを共通して採用しており、これにより多数のスキルを登録してもコンテキストウィンドウを圧迫しません。実装の差異として、Claude Codeはサブエージェント実行などの高度な拡張機能を持ち、GitHub CopilotやCursorは他ツールのディレクトリ（.claude/skills/等）も読み込む高い後方互換性を備えている点が挙げられます。現状では「.claude/skills/」に標準的なMarkdownで記述することが、最もポータビリティの高いスキル構築方法であると結論付けています。",
+    "topics": [
+      "Agent Skills",
+      "AIコーディングエージェント",
+      "Anthropic",
+      "GitHub Copilot",
+      "Cursor"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

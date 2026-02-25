@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:51:33.911975+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Edge-Veda: Flutter向けオンデバイスAI実行環境（テキスト・視覚・音声・画像生成・RAG対応）",
+    "url": "https://github.com/ramanujammv1988/edge-veda",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Flutterアプリでテキスト、画像生成、音声認識、RAGなどのAI機能を、クラウド不要かつデバイスの熱やメモリ制約を動的に管理しながら安定して実行できるオンデバイス・ランタイム。",
+    "summaryBody": "Edge-Vedaは、Flutterアプリケーション向けに設計された包括的なオンデバイスAIランタイムです。単にAIモデルを動かすだけでなく、スマートフォンの熱、メモリ、バッテリーの制限をリアルタイムで監視し、それらに応じて推論のクオリティを動的に調整する「ランタイム・スーパーバイザー」機能を備えている点が最大の特徴です。llama.cpp、whisper.cpp、stable-diffusion.cppなどの定評あるエンジンを統合し、Dart FFIとIsolateを活用することでUIをブロックしない高速な処理を実現しています。テキスト生成（Llama 3.2等）、視覚解析（SmolVLM2）、音声認識（Whisper）、画像生成（Stable Diffusion）、そしてベクトル検索（HNSW）を用いたRAGパイプラインまでを、完全にオフラインかつプライバシーを維持した状態で構築可能です。",
+    "topics": [
+      "Flutter",
+      "On-device AI",
+      "LLM",
+      "RAG",
+      "Stable Diffusion"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Edge-Veda: A managed on-device AI runtime for Flutter"
+  }
+}

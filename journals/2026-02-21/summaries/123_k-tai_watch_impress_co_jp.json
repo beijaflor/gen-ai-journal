@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:55:58.719551+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの作業完了をスマホに通知する方法：ntfyとフック機能を活用した効率化術",
+    "url": "https://k-tai.watch.impress.co.jp/docs/column/minna/2086232.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「フック」機能と通知ツール「ntfy」を組み合わせることで、AIの作業完了や確認待ちの状態をスマホやスマートウォッチに即座にプッシュ通知する設定方法を解説しています。",
+    "summaryBody": "AIプログラミングツール「Claude Code」を用いた開発をより効率化するためのテクニックを紹介。開発者が作業をAIに任せている間に他のタスクに集中できるよう、作業完了時やユーザーへの確認が必要になったタイミングでスマホへプッシュ通知を送る仕組みを構築します。具体的には、ターミナル版Claude Codeの「フック（hooks）」機能を利用し、作業フォルダ内の `settings.json` でシェルスクリプト（notify.sh）を実行するよう設定。通知ツール「ntfy」を介してスマホアプリにメッセージを飛ばすことで、PCから離れていてもスマートウォッチ等で進行状況を把握できるようになります。記事内ではWindows（bash環境）での具体的な設定ファイルの内容も提供されています。",
+    "topics": [
+      "Claude Code",
+      "AIコーディング",
+      "ntfy",
+      "生産性向上",
+      "プッシュ通知"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

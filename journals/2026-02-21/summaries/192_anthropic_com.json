@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:40:13.492937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの自律性の実態を測定：Anthropicによる大規模調査",
+    "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、実際の利用データに基づき、AIエージェントの自律性が向上している実態と、熟練ユーザーが「個別承認」から「継続的監視」へ oversight 戦略を移行させていることを明らかにした。",
+    "summaryBody": "Anthropicは、Claude Codeと公開APIを通じた数百万件のインタラクションを分析し、AIエージェントの自律性に関する実証的調査結果を発表しました。主な発見として、Claude Codeの自律稼働時間は3ヶ月で倍増し（45分超）、熟練ユーザーほど個別のツール実行を承認するのではなく、AIを自律的に走らせつつ必要に応じて介入するスタイルをとることが判明しました。また、複雑なタスクにおいて、AIは人間が介入するよりも高い頻度で自ら確認を求める傾向があり、AIによる自己の不確実性の認識が重要な安全策として機能しています。現在、エージェント利用の約50%がソフトウェア開発に集中していますが、医療や金融などの高リスク領域への拡大も始まっており、事前評価だけでなく、デプロイ後のリアルタイム監視と、人間とAIが協調してリスクを管理する新しいUI/UXの構築が必要不可欠であると結論付けています。",
+    "topics": [
+      "AIエージェント",
+      "自律性",
+      "Anthropic",
+      "Claude Code",
+      "デプロイ後モニタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    },
+    "originalTitle": "Measuring AI agent autonomy in practice"
+  }
+}

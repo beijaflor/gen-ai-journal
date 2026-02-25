@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T10:06:30.974579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Slack、AIエージェント用MCPサーバとリアルタイム検索APIを公開",
+    "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SlackはLLM向けのModel Context Protocol (MCP) サーバと、外部保存不要なReal-time Search APIを発表し、AIとの親和性を大幅に強化しました。",
+    "summaryBody": "SlackはAIエージェントおよびLLMによるワークスペースデータの利活用を促進する2つの主要機能をリリースしました。\n\n1. **Slack MCP (Model Context Protocol) サーバ**: LLMが自然言語ベースの記述を通じてツールを探索・実行できる仕組みを提供します。従来のAPIとは異なり、LLMが理解しやすい形式でレスポンスを返すように設計されています。\n2. **Real-time Search (RTS) API**: 従来のData Access APIが進化し、サードパーティアプリがSlackデータを自社サーバに保存することなく、セキュアな検索インターフェース経由で必要な情報のみを取得できるようになりました。\n\nまた、これに併せて `assistant.search.context` メソッドの権限（スコープ）が細分化され、パブリック/プライベートチャンネルやDMなど、アクセス範囲をより厳密に制御できるようになっています。",
+    "topics": [
+      "Slack API",
+      "MCP (Model Context Protocol)",
+      "LLM",
+      "AI Agents",
+      "Data Privacy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Announcing the Slack MCP server and Real-time Search API"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:55:30.926778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Agent Skillsを活用したTECH BLOGレビュー ── AIで推進するレビュー自動化",
+    "url": "https://techblog.zozo.com/entry/agent-skills-for-techblog-review",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ZOZOにおいて、Claude CodeのAgent Skillsを利用してテックブログの校正・レビュー工程を自動化し、属人化の解消と品質向上を実現した事例。",
+    "summaryBody": "ZOZOのDeveloper Engagementブロックでは、年間約100本のテックブログ記事を少人数でレビューしており、工数増加と属人化が課題となっていた。この解決策として、ターミナル上で動作するAIツール「Claude Code」のAgent Skillsを活用した自動レビュー環境を構築。過去3年間のレビュー履歴をGitHub CLIで収集し、AIに分析させることで独自のレビュールール（rules.md）を明文化した。構築されたスキルは、記事本文（entry.md）の読み込み、ルールに基づく文体・表現のチェック、WebFetchによるリンク切れ確認を一括で実行する。導入の結果、従来の人間による指摘の約75%をAIがカバー可能と推定され、レビュアーの負担軽減とともに、執筆者によるセルフレビューによる品質の底上げも期待されている。",
+    "topics": [
+      "Claude Code",
+      "Agent Skills",
+      "AIレビュー",
+      "技術広報",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

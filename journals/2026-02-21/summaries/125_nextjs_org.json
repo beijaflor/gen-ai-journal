@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:56:26.118540+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントとの協調を前提としたNext.jsの設計思想と進化",
+    "url": "https://nextjs.org/blog/agentic-future",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントを「第一級の利用者」と定義し、MCP連携や専用ドキュメント提供を通じてエージェントがランタイム状態を把握し、自律的にデバッグ・開発できる環境の構築を進めています。",
+    "summaryBody": "Next.js開発チームは、AIエージェントがブラウザの状態やランタイムエラーを把握できないという課題を解決するため、開発者体験（DX）をエージェント視点で再構築しています。初期の実験的な内蔵エージェント「Vector」の知見を活かし、現在はMCP（Model Context Protocol）を通じてエラー、ルート、レンダリングセグメントなどの内部状態を外部のコーディングエージェントに公開。さらに、LLM向けの圧縮インデックス「agents.md」の提供や、ブラウザエラーのターミナル転送、Server Actionのログ強化などを実施しています。最終的には、設定なしでエージェントが最適な開発コンテキストを自動取得できる「next dev」への統合を目指しています。",
+    "topics": [
+      "Next.js",
+      "AI Agents",
+      "MCP",
+      "LLM Context",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Building Next.js for an agentic future"
+  }
+}

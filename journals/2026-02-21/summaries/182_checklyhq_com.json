@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:37:30.723923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けコンテンツ・ネゴシエーションの現状（2026年2月）",
+    "url": "https://www.checklyhq.com/blog/state-of-ai-agent-content-negotation/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによるトークン消費を削減するため、HTTPのContent Negotiationを利用してMarkdownを配信する手法の有効性と、主要エージェントの対応状況を調査したレポート。",
+    "summaryBody": "ウェブサイトをAIエージェントが読み取る際、従来のHTML構造はLLMにとってノイズとなり、コンテキストウィンドウとコストを浪費します。本記事では、HTTPの`Accept`ヘッダーを利用した「コンテンツ・ネゴシエーション」を通じて、HTMLの代わりに軽量なMarkdownを配信する手法を提案しています。Checklyのドキュメントでの検証では、HTMLからMarkdownへの切り替えによりトークン数が99.7%削減されました。\n\n記事後半では、2026年2月時点の主要エージェントの対応状況を実測しています。Claude Code、Cursor、OpenCodeは`text/markdown`を要求するヘッダーを送信していますが、OpenAI CodexやGemini CLIなどは未だ対応していません。また、`llms.txt`の活用や「Agent Skills」といった、エージェントに最適化された新しいドキュメント提供の形態についても言及されており、開発者はAIを「次の顧客」として扱うべきだと主張しています。",
+    "topics": [
+      "AI Agents",
+      "Content Negotiation",
+      "Markdown",
+      "LLM Optimization",
+      "Web Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "The Current State of Content Negotiation for AI Agents (Feb 2026)"
+  }
+}

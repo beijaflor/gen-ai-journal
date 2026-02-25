@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:47:19.626777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜ我々は(ほとんどの)MCPツールを削除したのか：NxにおけるAIエージェント戦略の転換点",
+    "url": "https://nx.dev/blog/why-we-deleted-most-of-our-mcp-tools",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Nx開発チームが、AIエージェントの対話モデルを「MCPツールによるコンテキスト提供」から「ドメイン知識を教え込むスキルベース」へ移行した理由と、その効果を解説。",
+    "summaryBody": "Nx開発チームは、AIエージェント向けのMCP（Model Context Protocol）ツールを大幅に削減し、新たに「スキル」ベースのアプローチに移行した経緯を公開しました。かつてMCPはLLMにプロジェクトのコンテキストを与える有力な手段でしたが、Claude Codeに代表される自律型エージェントの台頭により、エージェント自身がCLI（nxコマンド）を直接実行して情報を取得・加工する「計画と実行」モデルが主流となりました。従来のMCPツールは大量のJSONデータをコンテキストに流し込むためトークン消費が激しく、最新のエージェントにとっては過剰な設計（オーバーエンジニア）となるケースが増えています。Nxは、ツールの使用タイミングやワークスペースの規約、検証手順を教え込む「Nx AI Agent Skills」を導入し、ベンチマークの結果、特に小規模・中規模モデルにおいてタスクの成功率と信頼性が大幅に向上することを確認しました。今後の役割分担として、認証が必要なAPI連携や実行プロセスとの通信にはMCPを、開発手順の知識伝達にはスキルを活用する戦略を提唱しています。",
+    "topics": [
+      "MCP",
+      "Nx",
+      "AI Agents",
+      "Monorepo",
+      "Token Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": "Why we deleted (most of) our MCP tools"
+  }
+}

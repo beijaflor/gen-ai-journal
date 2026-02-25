@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:51:50.724607+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントには認証だけでなく認可が必要 — AIエージェント時代のIAM設計",
+    "url": "https://workos.com/blog/agents-need-authorization-not-just-authentication",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの普及に伴い、従来の認証モデルでは防げない「混乱した代理人」問題などのリスクに対し、階層型で動的なきめ細やかな認可（FGA）の必要性を説く技術論説。",
+    "summaryBody": "AIエージェントが企業インフラ内で自律的に活動するようになり、従来のIAM（ID・アクセス管理）モデルは限界を迎えています。エージェントは人間や単純なサービスアカウントとは異なり、「自ら意図を生成する」「必要なスコープを事前に予測できない」という特性を持ちます。そのため、従来のフラットなRBAC（役割ベースのアクセス制御）では、権限不足で動かないか、管理不能な「神権限（God Mode）」を与えるかの二択に陥りがちです。\n\n本記事では、この課題の解決策としてFine-Grained Authorization (FGA)を提案しています。FGAはリソースの階層構造を活用し、エージェントが現在実行しているタスクに必要な範囲（ブランチやフォルダ単位など）にのみ動的に権限を絞り込む「スコープ減衰」を可能にします。また、人間を代行するOBO（On-Behalf-Of）型と自律型の両パターンにおける認可設計、MCPやSCIMといった標準プロトコルとの連携、さらには「Just-in-Time（JIT）認可」や「意図ベースのアクセス制御（IBAC）」といった次世代のセキュリティーパラダイムについても深く考察しています。",
+    "topics": [
+      "AIエージェント",
+      "IAM (ID・アクセス管理)",
+      "認可 (Authorization)",
+      "FGA (Fine-Grained Authorization)",
+      "サイバーセキュリティー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Agents need Authorization, not just Authentication"
+  }
+}

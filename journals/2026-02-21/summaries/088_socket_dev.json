@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-21T09:46:00.985521+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Socketがskills.shに対応：AIエージェントのスキルにおけるサプライチェーン攻撃を防止",
+    "url": "https://socket.dev/blog/socket-brings-supply-chain-security-to-skills",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SocketはVercelのskills.shと提携し、AIエージェント用スキルのセキュリティスキャンを開始。分散型リポジトリに潜む悪意のあるコードを、多言語対応の解析エンジンとLLMで検知します。",
+    "summaryBody": "Socketは、AIエージェント（Cursor、Claude Code、GitHub Copilot、Windsurfなど）の機能を拡張する「スキル」の安全性を確保するため、Vercelが運営するスキルディレクトリ「skills.sh」との統合を発表しました。現在、skills.shには60,000以上のスキルがインデックスされていますが、これらは分散型で管理されているため、従来のパッケージエコシステムと同様に、悪意のあるパッケージやタイポスクワッティング、メンテナの乗っ取りといったサプライチェーンリスクに晒されています。\n\nSocketのソリューションは、スキルの定義ファイル（Markdown）から呼び出されるPython、JavaScript、シェルスクリプトなどのコードを、言語を問わず横断的にスキャンします。従来の静的解析に加え、LLMを活用した検知を組み合わせることで、98.7%という高い再現率（Recall）と94.5%の適合率（Precision）を達成。開発者がエージェントスキルをインストールする前に、OSコマンドの実行や外部への不審な通信といった脅威を事前に特定し、安全なAIエージェントの活用を支援します。",
+    "topics": [
+      "サプライチェーンセキュリティ",
+      "AIエージェント",
+      "Socket",
+      "skills.sh",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Socket Brings Supply Chain Security to skills.sh"
+  }
+}

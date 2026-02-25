@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:44:07.314418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで実践する仕様(スペック)駆動開発入門",
+    "url": "https://yoshidashingo.com/entry/sdd-with-claude_code",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI時代における「バイブコーディング」の弊害を避け、仕様を唯一の情報源（SSoT）として開発プロセスを制御する「仕様駆動開発」をClaude Codeで実践する手法を解説した記事。",
+    "summaryBody": "Andrej Karpathyが提唱した直感頼みの「バイブコーディング」は、プロトタイプ開発には有効ですが、プロダクション開発では検証負債の蓄積やデバッグ困難なコードを招くリスクがあります。本記事では、これに対抗する手法として「仕様駆動開発（Spec-driven Development）」を提唱。Claude Codeにおいて、仕様（何を作るか）をSSoTとしつつ、プロセス（どう作るか）をルールブックで駆動する重要性を説いています。具体的には、CLAUDE.mdを利用した基本的なステアリングから、より高度な『AI-DLCワークフロー』を用いたステージ制の管理、承認ゲートの設置、監査証跡（audit.md）の保存といった実践的なアプローチを比較・解説。最終的に、ステアリングの設計とはプロンプトの精度をどの層で定義するかの設計であると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "仕様駆動開発",
+      "AI-DLC",
+      "バイブコーディング",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

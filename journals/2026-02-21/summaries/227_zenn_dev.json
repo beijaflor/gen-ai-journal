@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:48:42.166471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ごく個人的なClaude Codeプラクティス集",
+    "url": "https://zenn.dev/hawkymisc/articles/2cace1f599cc06",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを使い倒す筆者が、TDDの徹底、CLAUDE.mdによる指示、GitHub連携、そして短縮コマンドを用いた効率的な開発フローを公開。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」を日常的に利用しているエンジニアによる、実戦的なプラクティス集です。主な内容は以下の5点に集約されます。\n1. **運用とプラン**: Claude Proを基本に、制限時はz.aiのAPIへ切り替えて継続。基本は「バイブコーディング（雑な指示）」だが、Planモードでの事前確認は丁寧に行う。\n2. **入力の効率化**: `y`や`pls`といった短縮入力の活用や、並列稼働による開発速度の向上。\n3. **CLAUDE.mdとルールの設定**: TDD（テスト駆動開発）を強制し、RED/GREEN/REFACTORのサイクルを確実に回すよう詳細なガイドラインを記述。\n4. **エコシステム連携**: `gh`コマンドによるPR作成やGitHub Issueへの作業ログ残し、さらにCodex CLIと組み合わせたAI相互レビュー体制の構築。\n5. **柔軟な姿勢**: 完璧な仕様を求めすぎず、手戻りを許容するアジャイルな思想でのAIエージェント活用を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "TDD",
+      "GitHub CLI",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:38:46.637428+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが調査して人が判断する障害対応：Slackで人と協働するAIエージェントの設計",
+    "url": "https://tech-blog.tabelog.com/entry/slack-ai-agent-for-incident-response",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "食べログが、障害対応の初動を迅速化するため、Slack上でログ分析や手順提案を自動で行い人間と協働するAIエージェントを構築・導入した事例。",
+    "summaryBody": "食べログの検索システムにおける障害対応の課題（初動のタイムラグ、属人化、心理的負担）を解決するために開発されたAIエージェントの設計と実装に関する解説記事です。このエージェントは、アラート通知をトリガーに自律的に起動し、BigQueryによるログ分析、Confluence内の社内ナレッジ検索、Web検索を組み合わせて状況を整理し、対応手順をSlackスレッドへ提案します。技術スタックにはGoogle CloudのVertex AI Agent Engineを採用し、Slackの新機能である「chat_stream」を用いたストリーミング出力や、進捗のリアルタイム表示など、対応者が安心して利用できるUXが追求されています。AIはあくまで提案に留め、最終的な判断と実行を人間が行う「Human-in-the-Loop」の設計により、安全性を担保しつつ復旧までの時間を短縮しています。",
+    "topics": [
+      "AIエージェント",
+      "Slack",
+      "障害対応 (SRE)",
+      "Vertex AI",
+      "Human-in-the-Loop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

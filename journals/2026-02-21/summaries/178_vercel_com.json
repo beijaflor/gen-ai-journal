@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:36:34.127289+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skills Night: AIエージェントを賢くする「Skills」エコシステムの急成長とセキュリティ強化の展望",
+    "url": "https://vercel.com/blog/skills-night-69000-ways-agents-are-getting-smarter",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Vercelが推進するAIエージェント向け知識パッケージ管理「skills.sh」は、6.9万個のスキル突破とセキュリティ監査の導入により、エージェントのコンテキスト不足を解消する重要なインフラとなりつつある。",
+    "summaryBody": "Vercel主催の「Skills Night」にて、AIエージェントの知識を拡張するオープンエコシステム `skills.sh` の現状が共有されました。当初はReactの知見をまとめたMarkdown群から始まったこのプロジェクトは、現在では6.9万以上のスキルと200万回以上のCLIインストールを記録する「エージェント・コンテキストのパッケージマネージャー」へと進化しています。\n\n主な進展として、以下の4点が挙げられます。\n1. **コンテキスト供給の簡略化**: `npx skills` コマンドにより、CursorやClaude Codeといった主要なAIエージェントに最新のフレームワーク知識を即座に注入可能になりました。\n2. **セキュリティの強化**: Socket、Gen、Snykとの提携により、悪意のあるコードを含むスキルの自動監査を開始。信頼性スコアを可視化するAuditsリーダーボードが提供されます。\n3. **トレーニングカットオフの克服**: モデルが未学習の最新API（Svelteなど）でも、スキル経由でコンテキストを与えることで正確な実装が可能になることが実証されました。\n4. **活用の広がり**: ExpoによるiOSアプリのクラッシュ自動修正や、Mintlifyによるドキュメントからのスキル自動生成など、スキルを開発インフラの基本単位として扱う事例が増加しています。\n\nVercelは、スキルを通じてエージェントの推論精度を高め、トークン効率を向上させることで、AI時代の開発品質を底上げすることを目指しています。",
+    "topics": [
+      "Vercel",
+      "AI Agents",
+      "skills.sh",
+      "Developer Tools",
+      "LLM Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Skills Night: 69,000+ ways agents are getting smarter"
+  }
+}

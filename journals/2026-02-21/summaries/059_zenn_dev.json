@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:32:42.447349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClaw+さくらのAI Engine無料枠でAIエージェントを構築する",
+    "url": "https://zenn.dev/yskst/articles/3309f73a813d1a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「OpenClaw」を、さくらのAI Engineの無料枠（月3000リクエスト）で提供されるQwen3-Coderモデルを用いて低コストで運用する設定ガイド。",
+    "summaryBody": "この記事では、トークン消費の激しいAIエージェント「OpenClaw」の運用コストを削減するため、さくらのAI Engineの無料枠を活用する方法を解説しています。VPS環境へのインストール手順から、Custom ProviderとしてQwen3-Coder-480B-A35B-Instruct-FP8を接続する際の設定（EndpointやAPI Keyの指定）について詳述されています。特に、デフォルト設定では応答が返らない問題への対策として、設定ファイル（openclaw.json）のcontextWindowを128k、maxTokensを64kへ手動で拡張する重要なTipsが含まれており、実運用に即した内容となっています。",
+    "topics": [
+      "OpenClaw",
+      "さくらのAI Engine",
+      "Qwen3-Coder",
+      "AIエージェント",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:28:25.751638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用したN64デコンパイルの「ロングテール」問題：Snowboard Kids 2プロジェクトの進化",
+    "url": "https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Nintendo 64のデコンパイル作業が停滞する「ロングテール」段階において、LLMエージェントの精度を向上させるための類似関数検索や専用ツールの統合、ワークフローの自動化手法を解説している。",
+    "summaryBody": "本記事は、Nintendo 64用ソフト『スノーボードキッズ2』のデコンパイルプロジェクトにおいて、Claude等のLLMを活用した手法が直面した課題とその解決策を詳述しています。初期の成功後、進捗が鈍化したため、著者は関数の類似性（ベクトル埋め込みやCoddog）を用いた優先順位付け、F3Dex2マイクロコード解析用のカスタムスキルの導入、パーミューターによる力任せの修正の排除など、ワークフローを大幅に改善しました。また、エージェントの暴走を防ぐためのフック機能や、タスク管理ツール「Nigel」、コスト削減のための代替モデル「Glaude」の運用についても触れています。最終的に、巨大な関数や複雑な数学ロジックにおけるLLMの限界を指摘しつつ、自動化と人間によるクリーンアップの調和の重要性を説いています。",
+    "topics": [
+      "デコンパイル",
+      "LLM",
+      "Nintendo 64",
+      "Claude",
+      "リバースエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "The Long Tail of LLM-Assisted Decompilation"
+  }
+}

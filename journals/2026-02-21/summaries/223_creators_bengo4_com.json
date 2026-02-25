@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:47:46.999660+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "問い合わせ対応の全工程の自動化を AI で実現 - CRE による MCP から Agent Skills 移行の記録",
+    "url": "https://creators.bengo4.com/entry/2026/02/18/080000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "弁護士ドットコムのCREチームが、MCPからAgent Skillsへの移行により、調査・回答作成・レビューまでの問い合わせ対応全工程をAIエージェントで自動化した実践記録。",
+    "summaryBody": "弁護士ドットコムのCRE（Customer Reliability Engineer）チームによる、AIエージェントを活用した業務自動化の進化についての解説です。従来はMCP（Model Context Protocol）を利用してツール接続を標準化していましたが、「ツールの使い方（手順やドメイン知識）」を共有・管理することに課題がありました。これを解決するため、AIエージェントに手順書（SKILL.md）やスクリプトをパッケージ化して渡せる「Agent Skills」へ移行しました。\n\n具体的には、JiraチケットのURLを1つ貼るだけで、AIがSlack、ログ、esa、GitHubなどを横断調査し、回答案を作成。さらに5つの「サブエージェント」が独立したプロセスで品質レビューを行う仕組みを構築しました。これにより、セキュリティチェックシート作成や障害状況整理などの定型業務が大幅に効率化され、人間が最終確認と本質的な課題解決に集中できる体制を実現しています。",
+    "topics": [
+      "CRE",
+      "Agent Skills",
+      "AIエージェント",
+      "MCP",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 93
+    },
+    "originalTitle": null
+  }
+}

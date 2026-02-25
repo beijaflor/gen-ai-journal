@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:48:58.720478+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのチャット履歴をObsidianに保存するカスタムコマンドの設定方法",
+    "url": "https://zenn.dev/togo_asai/articles/0b5bbd51f2a7cc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのカスタムコマンド機能を使い、対話履歴を構造化されたMarkdownとしてObsidian Vaultへワンクリックで保存する設定手順。",
+    "summaryBody": "Claude Codeの拡張機能であるカスタムコマンドを利用して、CLIでの対話内容を直接Obsidian Vaultへ出力する方法を解説した記事です。`.claude/commands/obsidian.md`ファイルを作成し、出力先のパス、日時を含むファイル名規則、フロントマターを含むMarkdownフォーマットを定義します。特筆すべきは、AIへの指示によりBash実行ログやファイル読み込みなどのツール呼び出し詳細を自動で除外し、会話の本質的な内容のみを抽出して保存する点にあります。これにより、AIとの技術的な議論を個人のナレッジベースへ効率的に統合することが可能になります。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "CLI",
+      "Markdown",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

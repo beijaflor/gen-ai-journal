@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-16T16:41:18.660974+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawを支える極小AIエージェント「pi-coding-agent」の設計思想と技術的深淵",
+    "url": "https://zenn.dev/masahide/articles/ab93620ca9353e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "肥大化する既存AIツールの「宇宙船化」を拒絶し、1000トークン以下のプロンプトと最小限のプリミティブで極限の制御性を実現したAIエージェント「pi-coding-agent」の技術設計を詳解する。",
+    "summaryBody": "本記事は、OpenClawの基盤コンポーネントである極小AIコーディングエージェント「pi-coding-agent」の設計哲学と実装詳細を解説しています。開発者のMario Zechner氏による「自分が必要としない機能は作られない」という徹底したミニマリズムに基づき、システムプロンプトとツール定義を合計1000トークン以下に抑えることで、モデル本来の推論能力を阻害しない設計を実現しています。\n\n技術面では、15以上のプロバイダーを統合しモデル間での思考プロセス（Thinking trace）の引き継ぎを可能にする「pi-ai」、差分レンダリング（Differential Rendering）によってターミナル上でのチラつきを排除した独自のUIフレームワーク「pi-tui」などの構成要素を紹介。さらに、MCP（Model Context Protocol）の不採用や、サブエージェントの排除、デフォルトのYOLOモード（実行前承認の撤廃）といった、従来の「便利だがブラックボックスな機能」をあえて捨て去る「No List」の判断基準が、プロフェッショナルな開発者にとっての透明性と信頼性にいかに寄与するかが論じられています。道具に支配されるのではなく、コンテキストエンジニアリングを完全に掌握するための「ハーネス（馬具）」としてのエージェント像を提示する、極めて濃密な技術論評です。",
+    "topics": [
+      "AIエージェント",
+      "pi-coding-agent",
+      "OpenClaw",
+      "ソフトウェアアーキテクチャ",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

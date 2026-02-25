@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-17T05:06:34.890394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのAgent Teamでトークン消費を半分以下にする方法：子インスタンスをGLM-5に委譲する",
+    "url": "https://zenn.dev/sh1ma/articles/b6719fa5fec00c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの環境変数を利用して子インスタンスの起動コマンドを差し替え、実作業をGLM-5にオフロードすることで、精度を保ちつつトークン消費量を50%以上削減する手法。",
+    "summaryBody": "Claude Codeの「Agent Team」機能におけるトークン消費（レートリミット）の重さを解決するための高度なハックが紹介されています。ポイントは、隠しオプションである環境変数 `CLAUDE_CODE_TEAMMATE_COMMAND` を活用することです。これにより、司令塔となるLead（親インスタンス）にはClaude 3.5 Opus等の高品質モデルを維持させつつ、具体的な作業を行うTeammate（子インスタンス）のみをGLM-5等の他社モデルへ委譲（オフロード）することが可能になります。記事では、Z.AI経由でGLM-5を呼び出すためのラッパースクリプトの作成方法から、実際の適用手順までが具体的に解説されています。",
+    "topics": [
+      "Claude Code",
+      "Agent Team",
+      "GLM-5",
+      "コスト削減",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

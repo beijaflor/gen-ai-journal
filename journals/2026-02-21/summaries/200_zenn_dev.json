@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-23T15:42:12.266564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントのワークフローをスキルで自動化する ― Just Do It!",
+    "url": "https://zenn.dev/kenfdev/articles/e27d49b8dc12e4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのスキル機能、YAMLによる定義、そしてbashのループ（Ralph Loop）を組み合わせ、AIエージェントに自律的なタスク実行をさせるワークフロー自動化の手法。",
+    "summaryBody": "Claude Codeを用いた開発やブログ執筆における繰り返しの作業を自動化するための「just-do-it」スキルの実装例が解説されています。本手法は、YAML形式でステップ（計画・実装・レビュー等）と遷移条件を定義し、bashのwhileループで`claude -p`を繰り返し実行する「Ralph Loop」を中核に据えています。各ステップごとにコンテキストをリセットすることで、エージェントの精度を維持しながら、タスクタイトルのプレフィックスを用いた状態管理によって、一連のワークフローを自律的に進めることが可能です。また、人間の介入が必要なステップ（human: true）での一時停止や、分岐・ループ構造にも対応しており、柔軟なプロセス構築を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "YAML",
+      "プログラミング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
