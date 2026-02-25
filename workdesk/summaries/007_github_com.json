@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:41:50.575658+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 2.1.1でトークン消費が4倍以上に急増するバグ報告",
+    "url": "https://github.com/anthropics/claude-code/issues/16856",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」のバージョン2.1.1において、従来より4倍以上の速度でトークンを消費し利用上限に達する深刻なバグが報告されています。",
+    "summaryBody": "GitHubのIssue #16856にて、Anthropic社のエンジニア向けCLIツール「Claude Code」の最新バージョン(v2.1.1)に関する異常なトークン消費の報告がありました。ユーザーの報告によると、同じプロジェクトやワークフローで作業しているにもかかわらず、以前のバージョンと比較して4倍以上の速度でクォータ（利用制限）を使い切る事態が発生しています。特に、Opusモデルを使用する「plan mode」では、大規模なデータ読み取りを行っていないにもかかわらず、短時間でクォータの10%を消費する現象が確認されています。一方で、Haikuモデルはこの影響を受けていない可能性が示唆されています。エラーログにはマルチプロセス環境下でのロック取得失敗などが記録されており、内部的な処理の非効率性やループが原因である懸念があります。利用者はコストと制限の観点から注意が必要です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Token Consumption",
+      "LLM Cost",
+      "Bug Report"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 70,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": "[Bug] Excessive token usage in Claude Code 2.1.1 - 4x+ faster rate consumption than previous versions · Issue #16856 · anthropics/claude-code"
+  }
+}

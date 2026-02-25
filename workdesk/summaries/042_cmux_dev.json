@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:50:46.785341+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cmux - AIエージェントとマルチタスクに最適化されたmacOSネイティブ・ターミナル",
+    "url": "https://www.cmux.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "libghosttyをエンジンに採用し、AIエージェントの監視や高度なマルチタスク機能を備えた、macOS専用の高速な次世代ターミナルアプリ。",
+    "summaryBody": "cmuxは、Mitchell Hashimoto氏の開発したlibghosttyをレンダリングエンジンとして利用し、SwiftとAppKitで構築されたmacOS専用のターミナルです。Electronを使用しないネイティブ実装により、高速かつ軽量な動作を実現しています。特にAIエージェント（Claude Code、Aider、Cline等）との併用を意識しており、エージェントがユーザーの注意を必要とする際にペインを光らせる「通知リング」や、Gitブランチ・ポート情報を表示する垂直タブ、スクリプト操作可能な内蔵ブラウザを特徴としています。tmuxのようなマルチプレクサ機能をGUIで直感的に扱えるようにしつつ、ソケットAPIによる自動化やGPU加速によるスムーズな描画をサポートしています。複数のプロジェクトやエージェントを同時に走らせる現代的な開発ワークフローに最適なツールです。",
+    "topics": [
+      "Terminal",
+      "AI Agents",
+      "macOS",
+      "Ghostty",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "cmux — The terminal built for multitasking"
+  }
+}

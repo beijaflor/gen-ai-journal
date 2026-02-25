@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:47:39.514296+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェント時代のReactコード診断ツール「React Doctor」",
+    "url": "https://zenn.dev/my_vision/articles/34a92a674a7c47",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントにReactのベストプラクティスを「スキル」として組み込み、コード品質を自動で診断・改善できるツール「React Doctor」の解説記事です。",
+    "summaryBody": "React Doctorは、Million.jsの作者Aiden Bai氏によるReactプロジェクト向け診断CLIツールです。プロジェクトをスキャンしてアクセシビリティ、パフォーマンス、アーキテクチャのアンチパターン（不要なuseEffectやprop drilling等）を検出し、0〜100のスコアで可視化します。最大の特徴は『Agent Skills』仕様に対応している点で、Claude CodeやCursor等のAIエージェントに本ツールのルールを直接学習させることが可能です。これにより、エージェントが生成段階からベストプラクティスを遵守し、指摘に対して自律的に修正を行う「AI時代の新しい開発ワークフロー」を実現します。npxによる即時実行や、差分スキャン機能、CI/CD連携など、実用性の高い機能が揃っています。",
+    "topics": [
+      "React",
+      "AIコーディングエージェント",
+      "静的解析",
+      "Agent Skills",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "AIコーディングエージェント時代のReactコード診断ツール「React Doctor」"
+  }
+}

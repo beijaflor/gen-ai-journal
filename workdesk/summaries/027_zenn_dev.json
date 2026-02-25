@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:47:10.853189+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードを理解する超軽量MCPを作った — トークン70%削減、1分でセットアップ",
+    "url": "https://zenn.dev/badmonster/articles/92338955317115",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AST解析とRust製エンジンによるインクリメンタル更新を組み合わせ、AIエージェントのトークン消費を70%削減しつつコードベース理解を劇的に向上させるMCPツールの紹介。",
+    "summaryBody": "大規模なリポジトリにおいてAIエージェントが直面する「コンテキストウィンドウの枯渇」や「ハルシネーション」を解決するために開発された、ASTベースの超軽量MCP（Model Context Protocol）ツール「cocoindex-code」の解説記事です。このツールは、Tree-sitterによるコード構造解析とRustベースのインクリメンタルインデックスエンジンを組み合わせることで、必要なコード断片のみを特定してエージェントに提供します。\n\n主な特徴は以下の通りです：\n1. **トークン効率の向上**: ファイル全体ではなく、意味のあるコードチャンクのみを渡すことで、トークン消費を約70%削減。\n2. **高速な同期**: 変更があったファイルのみを再解析するため、大規模なRust/Python/TSプロジェクトでも待ち時間がほぼゼロ。\n3. **ローカル完結型**: デフォルトでローカルの埋め込みモデルを使用するため、追加のAPIコストやセキュリティ懸念が少ない。\n4. **簡単導入**: `uv`コマンドを用いた約1分のセットアップで、ClaudeやCursorといったMCP対応ツールにセマンティック検索機能を統合可能。\n\n既存の「重いコードRAG」とは異なり、ローカルで完結する開発体験の向上に特化した実用的なツールとなっています。",
+    "topics": [
+      "MCP",
+      "LLM",
+      "Rust",
+      "CocoIndex",
+      "AST"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

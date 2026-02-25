@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T12:11:30.576022+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "愛犬に「バイブ・コーディング」でゲームを作らせる：Claude Codeと自動フィードバックループの活用術",
+    "url": "https://www.calebleak.com/posts/dog-game/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "著者の愛犬によるランダムなキーボード入力をClaude Codeに「天才デザイナーの暗号」として解釈させ、高度な自動検証ツールと組み合わせることで実際に遊べるGodotゲームを制作した実験的プロジェクトの記録。",
+    "summaryBody": "ソフトウェアエンジニアのCaleb Leak氏が、愛犬Momoのキーボード入力からゲームを生成するシステムを構築した。このプロジェクトの核心は、単なるプロンプトエンジニアリングではなく、AI（Claude Code）が自律的に開発を完結できる「フィードバックループ」の構築にある。システム構成は、Raspberry Pi経由でBluetoothキーボード入力を受け取り、特定文字数に達すると自動給餌器でおやつを出すハードウェア層と、Claude Codeが動作するソフトウェア層からなる。Claudeには「奇抜な天才デザイナーの暗号を解読する開発者」という役割を与え、ランダム入力をゲーム仕様へと変換させている。特筆すべきは、AIにスクリーンショット撮影や自動プレイテスト、GodotのシーンファイルやシェーダーのLinterといったツールを与えた点だ。これにより、AI自らがバグを発見し、修正し、ビルドを完了させる環境を実現した。結果として、リズムゲームや羊飼いゲームなど複数の実動するタイトルが誕生した。著者は、AI開発のボトルネックはアイデアの質ではなく、いかに質の高いフィードバックを与えられるかにあると結論付けている。",
+    "topics": [
+      "Claude Code",
+      "Godot Engine",
+      "AI Agents",
+      "Prompt Engineering",
+      "Hardware Hacking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I Taught My Dog to Vibe Code Games"
+  }
+}

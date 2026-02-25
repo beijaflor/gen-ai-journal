@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:49:32.343640+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング - エージェントファーストの世界で Codex を活用する",
+    "url": "https://note.com/npaka/n/nb4c5488e82fd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人間がコードを一切書かず、AIエージェントが100万行のコードを生成・維持する「エージェントファースト」な開発手法とその知見。",
+    "summaryBody": "OpenAIのチームが5ヶ月間行った「手書きコードを一切含まない」ソフトウェア開発の実験記録です。エンジニアの役割はコードを書くことから、エージェントが効率的に動作するための環境を設計し、フィードバックループを構築する「ハーネスエンジニアリング」へとシフトしました。具体的には、AIが迷わないための「マップ」としてのドキュメント管理（AGENTS.md）、エージェントが自らバグを再現・修正するための可観測性ツールの提供、そしてカスタムリンターを用いた厳格なアーキテクチャ制約の自動適用などが挙げられます。このアプローチにより、わずか数名のエンジニアで100万行に及ぶコードベースを構築し、人間の注意力をコード記述ではなくシステムの意図と品質管理に集中させることに成功しています。",
+    "topics": [
+      "AIエージェント",
+      "Codex",
+      "ソフトウェアエンジニアリング",
+      "GPT-5",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Harness engineering: leveraging Codex in an agent-first world"
+  }
+}

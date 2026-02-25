@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:56:00.013625+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自律型AIのためのコントロールプレーン：ガバナンスをシステム内部へ移行すべき理由",
+    "url": "https://www.oreilly.com/radar/control-planes-for-autonomous-ai-why-governance-has-to-move-inside-the-system/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIがツールから自律的なエージェントへと進化するにつれ、ガバナンスは外部からの事後監査ではなく、システム内部でリアルタイムに動作する制御アーキテクチャ（コントロールプレーン）へと転換する必要がある。",
+    "summaryBody": "AIシステムが自律性を強める中、従来の外部的なポリシーレビューや事後監査といったガバナンス手法は限界を迎えています。自律型AIの失敗はバグではなく「行動」として現れるため、従来の監視では検知が困難です。この記事では、ネットワークやクラウドインフラが辿った歴史と同様に、AIシステムにおいても「実行（Execution）」と「権限（Authority）」を分離する「コントロールプレーン」の導入を提唱しています。ガバナンスを静的なチェックリストから、推論・検索・実行の各プロセスをリアルタイムに監視・介入する動的なフィードバックシステムとして再設計することで、スケールする自律型AIの安全性と透明性を確保できると論じています。",
+    "topics": [
+      "AIガバナンス",
+      "自律型エージェント",
+      "システムアーキテクチャ",
+      "コントロールプレーン",
+      "AI安全"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Control Planes for Autonomous AI: Why Governance Has to Move Inside the System"
+  }
+}
