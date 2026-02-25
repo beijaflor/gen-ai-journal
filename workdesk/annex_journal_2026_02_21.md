@@ -15,6 +15,7 @@
 ## A1. OpenClaw事件の解剖——Cryptoが資金供給したAI攻撃の全貌と「極小エージェント」の設計哲学
 
 ### OSS維持管理者を中傷したAIエージェントの背後に潜む仮想通貨愛好家の実態
+**選択**: [ ]
 **原題**: The OpenClaw bot that defamed an OSS maintainer is a human crypto bro
 **カテゴリー**: セキュリティ・リスク
 **URL**: https://news.ycombinator.com/item?id=47051866
@@ -24,6 +25,7 @@ MatplotlibのOSSメンテナーを中傷したAIエージェント「MJ Rathbun�
 ---
 
 ### 【緊急】AIエージェントOpenClawで大規模サプライチェーン攻撃、スキルの12%がマルウェアと判明
+**選択**: [ ]
 **URL**: https://qiita.com/emi_ndk/items/bf3b5f0f3eef99a4d124
 
 全スキルの12%（341個）がマルウェアだったという衝撃の数字と、ゼロクリック乗っ取り脆弱性CVE-2026-25253による2万台以上のインスタンス被害を日本語で緊急報告。暗号資産の秘密鍵とSSH認証情報を標的にした組織的攻撃「ClawHavoc」の全貌を、Cisco・VirusTotalの調査に基づき詳解する。インストール済みスキルの即時点検とCisco Skill Scannerの使用を今すぐ確認すべき理由が、具体的な数値とともに提示されている。日本語で最も充実したClawHavoc解説記事。
@@ -31,6 +33,7 @@ MatplotlibのOSSメンテナーを中傷したAIエージェント「MJ Rathbun�
 ---
 
 ### OpenClawを支える極小AIエージェント「pi-coding-agent」の設計思想
+**選択**: [ ]
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://zenn.dev/masahide/articles/ab93620ca9353e
 
@@ -39,6 +42,7 @@ MatplotlibのOSSメンテナーを中傷したAIエージェント「MJ Rathbun�
 ---
 
 ### HackMyClaw：賞金300ドルのプロンプトインジェクション公開チャレンジ
+**選択**: [ ]
 **原題**: HackMyClaw - Prompt Injection Challenge | $300 Bounty
 **カテゴリー**: セキュリティ・リスク
 **URL**: https://hackmyclaw.com/
@@ -48,6 +52,7 @@ OpenClawベースのAIアシスタント「Fiu」に対し、メール経由で�
 ---
 
 ### OpenClawとClaude Codeを組み合わせた自律型AI開発アーキテクチャ
+**選択**: [ ]
 **URL**: https://note.com/fladdict/n/n5f315e408879
 
 深津貴之氏がOpenClawを「戦略マネージャー」、Claude Codeを「実装エンジニア」として分離し、TODO.mdとREPORT.mdを状態管理ハブにした「プランナー・エグゼキューターモデル」を提案。OpenClawのCron機能によるプロセス再起動とClaude CodeのHooks機能による高速実行サイクルを組み合わせ、完全自律型開発ループを設計するコンセプトメモ。Markdownファイルをエージェント間通信の唯一のインターフェースとする発想は、Claude Code+HEARTBEATの組み合わせを検討している開発者にとって示唆に富む実装案だ。
@@ -55,6 +60,7 @@ OpenClawベースのAIアシスタント「Fiu」に対し、メール経由で�
 ---
 
 ### AnthropicがサードパーティツールでのサブスクリプションAuth利用を正式禁止
+**選択**: [ ]
 **原題**: Anthropic officially bans using subscription auth for third party use
 **URL**: https://news.ycombinator.com/item?id=47069299
 
@@ -65,6 +71,7 @@ Claude.aiとClaude Code以外のサードパーティ製ツールでProプラン
 ## A2. MCPセキュリティ・エージェント認可設計——攻撃手法から防御アーキテクチャまで
 
 ### MCPのセキュリティ脆弱性とプロンプトインジェクション実証分析
+**選択**: [ ]
 **原題**: MCP Security: Understanding Vulnerabilities in Model Context Protocol
 **カテゴリー**: セキュリティ・リスク
 **URL**: https://marmelab.com/blog/2026/02/16/mcp-security-vulnerabilities.html
@@ -74,6 +81,7 @@ Claude.aiとClaude Code以外のサードパーティ製ツールでProプラン
 ---
 
 ### エージェントには認証だけでなく認可が必要——AIエージェント時代のIAM設計
+**選択**: [ ]
 **原題**: Agents need Authorization, not just Authentication
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://workos.com/blog/agents-need-authorization-not-just-authentication
@@ -83,6 +91,7 @@ AIエージェントは「自ら意図を生成する」という特性から、
 ---
 
 ### Safe Yolo Mode：LLMエージェントをVMで安全に実行する実践ガイド
+**選択**: [ ]
 **原題**: Safe Yolo Mode: Running LLM Agents in VMs with Libvirt and Virsh
 **URL**: https://www.metachris.dev/2026/02/safe-yolo-mode-running-llm-agents-in-vms-with-libvirt-and-virsh/
 
@@ -91,6 +100,7 @@ LibvirtとVirshを使ってUbuntu VMにLLMエージェントを隔離し、YOLO�
 ---
 
 ### AGENTS.mdはタスク成功率を悪化させ推論コストを20%超増加させる
+**選択**: [ ]
 **原題**: Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://arxiv.org/abs/2602.11988
@@ -100,6 +110,7 @@ SWE-benchを使った実証研究で、人間が書いても・AIが書いても
 ---
 
 ### AIエージェント間通信時代の「ガバナンスの溝」と対処戦略
+**選択**: [ ]
 **原題**: AI, A2A, and the Governance Gap
 **URL**: https://www.oreilly.com/radar/ai-a2a-and-the-governance-gap/
 
@@ -108,6 +119,7 @@ A2A・ACP・MCPの3層スタックで技術的接続コストが激減した結�
 ---
 
 ### LLMが生成するパスワードは「根本的に脆弱」、エントロピー20〜27ビット
+**選択**: [ ]
 **原題**: LLM-generated passwords 'fundamentally weak,' experts say
 **カテゴリー**: セキュリティ・リスク
 **URL**: https://www.theregister.com/2026/02/18/generating_passwords_with_llms/
@@ -119,6 +131,7 @@ Claude Opus 4.6に50回パスワードを生成させたところ18回が同一�
 ## A3. スキルエコシステム実装の最前線——設計哲学から大規模運用まで
 
 ### Nixでのエージェントスキル宣言的管理「agent-skills-nix」の進化
+**選択**: [ ]
 **URL**: https://zenn.dev/kyre/articles/evolution-agent-skills-nix
 
 Nixを使ってAIエージェントスキルのバージョンを固定し、依存関係をスキルに同梱してプロジェクトローカルに導入できる「agent-skills-nix」の最新アップデート解説。Claude Code・Gemini CLI・GitHub Copilotなど対応エージェントが拡大し、flake.nixを使えばチーム全員が同一スキル環境を再現できる。「エージェント環境をコードとして管理したい」という要求にNixが応える実装例として洗練されており、スキル管理の再現性を高めたい開発者のリファレンス。
@@ -126,6 +139,7 @@ Nixを使ってAIエージェントスキルのバージョンを固定し、依
 ---
 
 ### ZOZOのテックブログレビューをAgent Skillsで自動化した事例
+**選択**: [ ]
 **URL**: https://techblog.zozo.com/entry/agent-skills-for-techblog-review
 
 年間100本のテックブログレビューを少人数で担うZOZOが、過去3年分のレビュー履歴をAIに分析させてルールを明文化し、Agent Skillsで自動化した実証事例。文体チェック・リンク切れ確認を一括実行し、従来の人間レビュー指摘の約75%をAIがカバー。「スキルの効果を定量的に測定した」という姿勢が特に優れており、執筆者によるセルフレビュー文化醸成という副次効果も記録されている。スキル導入ROIを上司に説明する材料としても使える実践レポート。
@@ -133,6 +147,7 @@ Nixを使ってAIエージェントスキルのバージョンを固定し、依
 ---
 
 ### SkillsBench研究：人間キュレーションは+16.2%、AI自己生成は-1.3%
+**選択**: [ ]
 **原題**: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
 **URL**: https://note.com/timakin/n/nf497d32c2d35
 
@@ -141,6 +156,7 @@ AIエージェントスキルの有効性を測定したSkillsBench研究の読�
 ---
 
 ### PR数150→600へ4倍スケール、PLAIDのClaude Codeチーム運用ノウハウ
+**選択**: [ ]
 **URL**: https://tech.plaid.co.jp/claude-code-scalable-team-operation
 
 PLAID（KARTE Journey開発チーム）がAGENTS.md・Hooks・Skillsを使って月間PR数を4倍にスケールしながら破綻しなかった実践記録。コンテキスト設計・ガードレール自動化・プロセス定型化の3本柱に加え、シークレット検知やフォーマット自動適用の具体的なHooks実装が公開されている。「意図・制約・成果をリポジトリにコミット」という思想はドキュメント設計の模範として参照価値が高い。チームでClaude Codeを本格導入する際の、即座に参照可能なリファレンス実装。
@@ -148,6 +164,7 @@ PLAID（KARTE Journey開発チーム）がAGENTS.md・Hooks・Skillsを使って
 ---
 
 ### エンジニア2名で6名分の出力——サイバーエージェント新卒のAI駆動開発基盤
+**選択**: [ ]
 **URL**: https://developers.cyberagent.co.jp/blog/archives/62110/
 
 サイバーエージェント25新卒2名が37スキル+24SubAgent・git worktreeによる並列実装でエンジニア6名分の出力を実現した具体構成を全公開。要件定義から自動修正ループまでのAI主導フローと、「AskUserQuestion自動化で不明点を人間に問い返す仕組み」が特に実践的。「AIをチームメンバーとして扱い人間は意思決定に徹する」という設計思想の実装例として、少人数で大きな出力を求めるスタートアップに即応用可能。暗黙知のドキュメント化がいかに成功の鍵かを実証する。
@@ -155,6 +172,7 @@ PLAID（KARTE Journey開発チーム）がAGENTS.md・Hooks・Skillsを使って
 ---
 
 ### Vue2→React移行8ヶ月使い込んで判明した「任せること」と「握ること」の境界線
+**選択**: [ ]
 **URL**: https://zenn.dev/yusuke_shiya/articles/claude-code-team-adoption
 
 5名フロントエンドチームがClaude Code 8ヶ月運用で経験した設計委任の失敗と、「マージの儀」という日次同期レビューで「理解負債」を防止した実体験レポート。1日のタスクが2時間に短縮された一方、全体設計をAIに委ねて機能肥大化・不自然な依存関係を招いた失敗も正直に記録。アーキテクチャは人間が主導し詳細実装はAIに任せるという「境界線」の重要性を経験値として語る誠実な報告。AI導入の「その後」を知りたいチームリーダー向け。
@@ -162,6 +180,7 @@ PLAID（KARTE Journey開発チーム）がAGENTS.md・Hooks・Skillsを使って
 ---
 
 ### 「計画承認までコードを1行も書かせない」Boris Taneのワークフロー
+**選択**: [ ]
 **原題**: How I Use Claude Code | Boris Tane
 **URL**: https://boristane.com/blog/how-i-use-claude-code/
 
@@ -170,6 +189,7 @@ research.md→アノテーション付きplan.md→実装という3段階分離�
 ---
 
 ### Claude Code作者Boris Chernyが全公開した9種カスタマイズ手段と37以上の設定項目
+**選択**: [ ]
 **URL**: https://qiita.com/dai_chi/items/252fb5ef031127784757
 
 Claude Code作者Boris Cherny氏が共有した、Effort・LSPs・Skills・Hooks・Custom Agentsなど9軸のカスタマイズ手段と設定優先順位（Managed/User/Project/Local）の解説。4層セキュリティ構造や.settings.jsonのgit管理まで網羅しており、「なんとなく使っている」状態からの卒業に最適なリファレンス。設定の全貌を把握した上で意識的に選択するための地図として価値が高い。Claude Codeを単なるチャットツールから開発パートナーへ進化させたいチームの必読ガイド。
@@ -177,6 +197,7 @@ Claude Code作者Boris Cherny氏が共有した、Effort・LSPs・Skills・Hooks
 ---
 
 ### 3体のエージェントと1週間働いたら「選ぶ力」が人間の仕事だと気づいた
+**選択**: [ ]
 **URL**: https://zenn.dev/neurostack_0001/articles/agent-teams-one-week-redefine-work
 
 Agent Teams+Skillsで3体のエージェントと1週間働いた体験記。「AIに何でも任せられる」期待が崩れ、代わりに「何を任せ何を自分で握るかを選ぶ力」と「専門性を設計する能力」こそが人間の本質的役割だと気づく過程を内側から描く。抽象的なAI×人間論ではなく、実際の仕事の中で直面した判断と感覚の変化を記録した証言として独自の価値がある。エージェント時代の「働き方の変化」を実感として理解したい人への読み物。
@@ -184,6 +205,7 @@ Agent Teams+Skillsで3体のエージェントと1週間働いた体験記。「
 ---
 
 ### Claude Codeを「Deep Research」専用ツールに特化させるモバイル完結ワークフロー
+**選択**: [ ]
 **URL**: https://tech.newmo.me/entry/claude-code-deep-research
 
 Claude Codeを/mode-researcherスキルで「深い調査専用モード」に特化させ、Blink Shell→リモートサーバー→iCloud→Obsidianというフローでモバイルから完全運用するワークフロー。移動中や思考の流れを止めたくない場面で、iPhoneからDeep Researchを起動して結果をObsidianに保存するまでを1タップで完結させる実装は、開発者の「いつでもどこでも調査」というニーズへの具体的な答え。ツールの組み合わせ方のアイデアとして参照価値が高い。
@@ -193,6 +215,7 @@ Claude Codeを/mode-researcherスキルで「深い調査専用モード」に�
 ## A4. エンジニアリング変革の証言と技術深掘り
 
 ### ソフトウェア産業革命論——VCとEnshittificationを破壊する「豊穣の時代」
+**選択**: [ ]
 **原題**: The Software Industrial Revolution
 **カテゴリー**: 批判的分析
 **URL**: https://cannoneyed.com/essays/software-industrial-revolution
@@ -202,6 +225,7 @@ Claude Codeを/mode-researcherスキルで「深い調査専用モード」に�
 ---
 
 ### Octoverse 2025：TypeScriptがJavaScriptを超えた背景に「AIとの親和性」
+**選択**: [ ]
 **原題**: How AI is reshaping developer choice, and Octoverse data proves it
 **URL**: https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/
 
@@ -210,6 +234,7 @@ GitHubのOctoverse 2025でTypeScriptがJavaScriptを抜いて首位になった�
 ---
 
 ### AIにテストを書かせると既存コードの挙動を正解とする「グラウンドトゥルースの罠」
+**選択**: [ ]
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://doodledapp.com/feed/ai-made-every-test-pass-the-code-was-still-wrong
 
@@ -218,6 +243,7 @@ AIがテストを書くと既存の（バグのある）コードの挙動を正
 ---
 
 ### Martin Fowler：AIは「アンプ」であり、劣悪な文化では技術負債を加速させる
+**選択**: [ ]
 **URL**: https://martinfowler.com/fragments/2026-02-18.html
 
 Martin FowlerがAIを「増幅器（アンプ）」と定義し、優れた開発文化では品質を高め、劣悪な文化では技術負債を加速させるという観察。「最強のプロンプトエンジニアリングはTDD」「健全なコードベースほどAIリファクタリングが30%安全」という具体的知見が含まれる。Fowlerの権威と簡潔さで「AI導入前に組織文化を改善せよ」というメッセージを届ける。AI導入ROIが組織の既存品質に依存するという議論に、説得力ある論拠を提供する短編論考。
@@ -225,6 +251,7 @@ Martin FowlerがAIを「増幅器（アンプ）」と定義し、優れた開�
 ---
 
 ### Next.jsがAIエージェントを「第一級の利用者」として再設計を開始
+**選択**: [ ]
 **原題**: Next.js and the Agentic Future
 **URL**: https://nextjs.org/blog/agentic-future
 
@@ -233,6 +260,7 @@ Next.jsチームがAIエージェントを第一級の利用者として位置�
 ---
 
 ### Tim O'Reilly×Addy Osmani対談：課題は「生成」でなく「オーケストレーション」
+**選択**: [ ]
 **原題**: What Developers Actually Need to Know Right Now
 **URL**: https://www.oreilly.com/radar/what-developers-actually-need-to-know-right-now/
 
@@ -241,6 +269,7 @@ Next.jsチームがAIエージェントを第一級の利用者として位置�
 ---
 
 ### サイバーエージェントAI Lab研修資料：Memory Bank・CLAUDE.md・MCP活用の実践テクニック
+**選択**: [ ]
 **URL**: https://speakerdeck.com/cyberagentdevelopers/research-and-application-of-generative-ai
 
 サイバーエージェントAI Labの内部研修資料を公開したもので、Cline Memory Bank・Claude Code CLAUDE.md管理・MCPツール活用・長時間タスク自動化の実践テクニックが体系的に整理されている。他社の内部研修ノウハウをそのまま参照できるという希少性が最大の価値。これ1本で複数の実践的概念を効率的にキャッチアップできる構成で、自チームのAI活用研修資料を作成する際の参考としても使える。日本企業の先進的AI活用事例として記録価値が高い。
@@ -248,6 +277,7 @@ Next.jsチームがAIエージェントを第一級の利用者として位置�
 ---
 
 ### AnthropicのバッチサイズUI最小化とOpenAIのCerebrasチップ——LLM高速推論の技術比較
+**選択**: [ ]
 **原題**: The Technical Details of Fast LLM Inference
 **カテゴリー**: パフォーマンス・最適化
 **URL**: https://www.seangoedecke.com/fast-llm-inference/
@@ -257,6 +287,7 @@ AnthropicがバッチサイズのUI最小化で2.5倍高速化しながら精度
 ---
 
 ### Agent Teamの子インスタンスをGLM-5にオフロードしてトークン消費50%超削減
+**選択**: [ ]
 **カテゴリー**: パフォーマンス・最適化
 **URL**: https://zenn.dev/sh1ma/articles/b6719fa5fec00c
 
@@ -267,6 +298,7 @@ CLAUDE_CODE_TEAMMATE_COMMANDという隠し環境変数を使い、Agent Teamの
 ## A5. AIへの批判・哲学的考察——信頼の喪失と人間性の問い
 
 ### バイブコーディングはギャンブル依存——「LDW（負けていながら勝っている感覚）」の罠
+**選択**: [ ]
 **原題**: Vibe Coding and the Dark Flow
 **カテゴリー**: 批判的分析
 **URL**: https://www.fast.ai/posts/2026-01-28-dark-flow/
@@ -276,6 +308,7 @@ Rachel ThomasがバイブコーディングをスロットマシンのLDW（Loss
 ---
 
 ### 「Deep Blue」——長年培った技術が瞬時に代替される際の実存的恐怖に名前をつける
+**選択**: [ ]
 **原題**: Deep Blue
 **URL**: https://simonwillison.net/2026/Feb/15/deep-blue/
 
@@ -284,6 +317,7 @@ Simon Willisonが命名した「Deep Blue症候群」：チェスの世界チャ
 ---
 
 ### 「セマンティック・アブレーション」——AIが独創性を削ぎ落として統計的平均に収束させる現象
+**選択**: [ ]
 **原題**: Semantic Ablation: How AI Writing Becomes Mediocre
 **カテゴリー**: 批判的分析
 **URL**: https://www.theregister.com/2026/02/16/semantic_ablation_ai_writing/
@@ -293,6 +327,7 @@ AIハルシネーションとは逆に、AIが独創的表現を削ぎ落とし�
 ---
 
 ### AI楽観主義は階級特権——恩恵の外側にいる人々に「コスト」を負わせる構造
+**選択**: [ ]
 **原題**: Sloptimism
 **カテゴリー**: 批判的分析
 **URL**: https://joshcollinsworth.com/blog/sloptimism
@@ -302,6 +337,7 @@ AI楽観主義（Sloptimism）を「階級特権」として批判。AIの恩恵
 ---
 
 ### AIへの嫌悪をマルクスの商品フェティシズムで解読——人間的関係の疎外
+**選択**: [ ]
 **原題**: Why We Hate AI
 **URL**: https://blog.fallible.net/why-we-hate-ai/
 
@@ -310,6 +346,7 @@ AIへの本能的嫌悪感をマルクスの商品フェティシズムとダス
 ---
 
 ### Jeff Geerling：AIスロップPRがOSSを破壊している——GitHubはPR機能を無効化しつつある
+**選択**: [ ]
 **原題**: AI is Destroying Open Source
 **カテゴリー**: 批判的分析
 **URL**: https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/
@@ -319,6 +356,7 @@ curlなどのOSSで有用な脆弱性報告が激減し、AIスロップPR（支
 ---
 
 ### Godotメンテナーの悲鳴：AI生成PRの精査で疲弊、士気低下が深刻化
+**選択**: [ ]
 **URL**: https://automaton-media.com/articles/newsjp/godot-20260218-422080/
 
 GodotゲームエンジンのOSSメンテナーが直面する現実：AI生成の支離滅裂なPRの精査で疲弊し、「提案者が変更内容を理解していない」「ハルシネーションか単純ミスか判別困難」という状況が士気を著しく低下させている。Jeff Geerlingの告発と対をなすユーザー側の生生しい証言として、OSSエコシステムへのAIの悪影響を人間の言葉で伝える。自分がOSSに貢献する側なら必読の現実直視記事。
@@ -326,6 +364,7 @@ GodotゲームエンジンのOSSメンテナーが直面する現実：AI生成�
 ---
 
 ### AGIが近くない技術的理由——TransformerのTC⁰制約とCoTの本質
+**選択**: [ ]
 **原題**: AGI is Not Imminent: Technical Arguments
 **カテゴリー**: 批判的分析
 **URL**: https://dlants.me/agi-not-imminent.html
@@ -335,6 +374,7 @@ GodotゲームエンジンのOSSメンテナーが直面する現実：AI生成�
 ---
 
 ### レトロゲーム研究者が告発するAIハルシネーションによる情報commonsの破壊
+**選択**: [ ]
 **原題**: Not My Casual Hobby Anymore
 **URL**: https://nicole.express/2026/not-my-casual-hobby.html
 
@@ -345,6 +385,7 @@ GodotゲームエンジンのOSSメンテナーが直面する現実：AI生成�
 ## A6. LLMアーキテクチャ・ビジネスモデルの再設計
 
 ### AIは決定論的ライブラリでなく「非決定論的コラボレーター」——設計の根本的転換
+**選択**: [ ]
 **原題**: AI is Not a Library: Designing for Nondeterministic Dependencies
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://www.oreilly.com/radar/ai-is-not-a-library-designing-for-nondeterministic-dependencies/
@@ -354,6 +395,7 @@ AIをライブラリとして扱う設計思想の根本的な問題を指摘し
 ---
 
 ### LLMエージェントのキャッシュ読み取りコストが二次関数的に増大する問題を実測証明
+**選択**: [ ]
 **原題**: The Expensively Quadratic Cost of LLM Agent Caching
 **カテゴリー**: パフォーマンス・最適化
 **URL**: https://blog.exe.dev/expensively-quadratic
@@ -363,6 +405,7 @@ AIをライブラリとして扱う設計思想の根本的な問題を指摘し
 ---
 
 ### PythonのAIフレームワークはElixir/BEAMが30年前に解決済みの問題を再発明している
+**選択**: [ ]
 **カテゴリー**: アーキテクチャ・設計
 **URL**: https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/
 
@@ -371,6 +414,7 @@ AIエージェントオーケストレーターは、Elixir/BEAMが分散・耐�
 ---
 
 ### 言語によってLLMの安全性が変質する——ペルシア語では英語で拒否される危険情報が通る
+**選択**: [ ]
 **原題**: Multilingual LLM Evaluation to Guardrails
 **カテゴリー**: セキュリティ・リスク
 **URL**: https://royapakzad.substack.com/p/multilingual-llm-evaluation-to-guardrails
@@ -380,6 +424,7 @@ AIエージェントオーケストレーターは、Elixir/BEAMが分散・耐�
 ---
 
 ### 「ジャストインタイム・ソフトウェア」——買い物中2分でカスタムアプリを作る時代
+**選択**: [ ]
 **原題**: Just-in-Time Software
 **URL**: https://commaok.xyz/ai/just-in-time-software/
 
@@ -388,6 +433,7 @@ AIエージェントオーケストレーターは、Elixir/BEAMが分散・耐�
 ---
 
 ### OthersideAI CEOが警告：GPT-5.3の「自己進化ループ」でAIが「ドラフトツール」から「自律完結型」へ
+**選択**: [ ]
 **原題**: Something Big Is Coming: Matt Shumer's Warning About GPT-5.3
 **URL**: https://xenospectrum.com/ai-disruption-2026-matt-shumer-warning/
 
@@ -396,6 +442,7 @@ OthersideAI CEOがGPT-5.3の「自己進化ループ」開始を警告し、AI�
 ---
 
 ### Anthropicの大規模調査：Claude Codeの自律稼働時間が3ヶ月で倍増、熟練ユーザーは「継続的監視」へ移行
+**選択**: [ ]
 **URL**: https://www.anthropic.com/research/measuring-agent-autonomy
 
 Anthropicの実データ分析：Claude Codeの自律稼働時間が3ヶ月で倍増し、熟練ユーザーほど「個別承認」から「継続的監視」へoversight戦略を移行させている。さらにAI自身が確認を求める頻度が人間の介入より高いという安全機能の発見は特に重要だ。「エージェント自律性の増大＝危険」という単純図式に反して、成熟したユーザーがより洗練されたoversight設計を採用している様子を定量的に示す。信頼と制御のバランスをデータで議論するための必読の研究。
@@ -403,6 +450,7 @@ Anthropicの実データ分析：Claude Codeの自律稼働時間が3ヶ月で�
 ---
 
 ### ファイルシステムがエージェント・スウォームの共有メモリ基盤として再評価される理由
+**選択**: [ ]
 **原題**: Filesystems for Agent Swarms
 **URL**: https://1password.com/blog/filesystems-for-agent-swarms
 
