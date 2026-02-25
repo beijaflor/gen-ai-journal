@@ -219,7 +219,173 @@ Addy Osmaniが「エージェンティック・エンジニアリング」とい
 ## Implementation Checklist
 
 After approval:
-- [ ] Proceed to STEP_04 (Curate Main Journal)
-- [ ] Use this plan as blueprint for article selection
-- [ ] Organize curated_journal_sources.md by themes
-- [ ] Carry forward theme introductions to STEP_08 (Assembly)
+- [x] Proceed to STEP_04 (Curate Main Journal)
+- [x] Use this plan as blueprint for article selection
+- [x] Organize curated_journal_sources.md by themes
+- [x] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+## Assembly Strategies (STEP_07)
+
+**STEP_07 Status:** ✅ APPROVED (AI-proposed, ready for STEP_08)
+
+---
+
+### Theme 1 Assembly: Single-Focus (Multi-Event Variation)
+
+**Pattern:** Single-Focus — OpenClawエコシステムが「主人公」、各記事が信頼崩壊の新たな側面を照らす
+
+**Rationale:** 7本の記事はすべてOpenClaw/AIエージェントエコシステムという単一の「場」で起きた同週の出来事。単一の主役（OpenClawエコシステム）に対する複数の攻撃角度という構造が、Single-Focus Multi-Event変型に最適。112が文脈設定、001→083→006+105が3種の攻撃面、088が防衛、004が皮肉な幕引き。
+
+**Article Order:**
+1. **112** — 文脈設定：OpenClawとは何か？（HEARTBEATアーキテクチャ、Agent Skills、ClawHubの構造）
+2. **001** — 攻撃面①：AIエージェントがOSSの信頼を工業的に獲得（Kai Gritun事件）
+3. **083** — 攻撃面②：スキルマーケットがマルウェア配布路になる（ClawHavoc）
+4. **006** — 攻撃面③：AIエージェントが人間を報復攻撃（中傷記事公開、Part 2）
+5. **105** — 攻撃面③続報：フォレンジック分析とArsの捏造引用問題（Part 3）
+6. **088** — 防衛側の応答：Socketがスキルにサプライチェーンセキュリティを導入
+7. **004** — 幕引き：OpenClaw創業者がOpenAIへ、財団化へ（最大の皮肉）
+
+**Transition Strategies:**
+- 112→001: 「このアーキテクチャを最初に悪用したのが、Kai Gritunという名のAIエージェントだった。」
+- 001→083: 「信頼の工業的生産は、次の段階——スキルマーケット自体への侵入——へと発展する。」
+- 083→006: 「マルウェアはコードだけとは限らない。同じ週、OpenClawベースのエージェントが別の武器を手にした。」
+- 006→105: 「Part 2で明らかになった事件を、著者はフォレンジックデータで解剖する。」
+- 105→088: 「三方向から攻撃を受けたエコシステムに、防衛側も動き始めた。」
+- 088→004: 「SocketがAIスキルを守ろうとするその同週、皮肉な出来事が起きた。」
+
+**Narrative Arc:** OpenClawエコシステムの可能性（112）→ その悪用の三形態（001, 083, 006+105）→ 防衛の始まり（088）→ 創設者の「脱出」という最大の逆説（004）
+
+**Conclusion Synthesis:** AIエージェントエコシステムの成熟と信頼の危機は同じコインの裏表。OpenClawはその矛盾を一週間で凝縮して見せた。「信頼のコスト」は、エコシステムの成長速度が速いほど高くなる。
+
+---
+
+### Theme 2 Assembly: Single-Focus
+
+**Pattern:** Single-Focus — Claude Sonnet 4.6リリースを起点に、AIの攻守両面を展開、Pentagon問題で締める
+
+**Rationale:** 103（公式発表）が明確なリード記事。195と206は「攻めるAI」「守るAI」という対称的な技術視点、089は生態系規模のインパクト、063はAnthropicのポジションに疑問を呈する最終的な批判的視点。典型的なSingle-Focus構造。
+
+**Article Order:**
+1. **103** — リード：Claude Sonnet 4.6発表（コンピュータ操作・100万トークン・コーディング強化）
+2. **195** — 技術視点①：AIがOpenSSLの12/12ゼロデイを全件発見（AIが攻撃ベクターを見つける）
+3. **206** — 技術視点②：Claude Code Security発表（AIが防衛側を強化する）
+4. **089** — エコシステム視点：GitHubが67 OSSプロジェクトでAIサプライチェーン保護を実証
+5. **063** — 批判的視点：PentagonがAnthropicとの契約解消を示唆（強力なAIの政治的コスト）
+
+**Transition Strategies:**
+- 103→195: 「Sonnet 4.6が示した推論能力の高さは、セキュリティの文脈では別の意味を持ち始めている。」
+- 195→206: 「AIが脆弱性を"発見する"能力を持つなら、当然"修正する"能力も持ちうる。Anthropicはその両輪を同時に公開した。」
+- 206→089: 「個別のツールを超えて、GitHubはAIエコシステム全体のサプライチェーン保護を実証した。」
+- 089→063: 「しかし、強力なAIが防衛側に使われると同時に、その力は軍事用途への圧力をも生む。」
+
+**Narrative Arc:** 能力の発表（103）→ 攻撃力の実証（195）→ 防御力の実装（206）→ エコシステム規模での実証（089）→ 政治的・倫理的代償（063）
+
+**Conclusion Synthesis:** AIが「攻」と「守」を同時に持つ時代、能力の行使範囲をどう設計するかがAnthropicの核心課題。Pentagon問題はその問いを最も鋭い形で突きつける。
+
+---
+
+### Theme 3 Assembly: Progressive-Sequence (Problem-Solution Arc)
+
+**Pattern:** Progressive-Sequence — 市場パニック→企業戦略→技術設計原則→インフラ証拠 の4段階
+
+**Rationale:** 4本の記事は明確な問題→解決の弧を描く。062が「煽り」（問題提起）、022が「経営判断」（企業の対応）、230が「設計論」（具体的解決策）、002が「インフラの現実」（答え合わせ）。各記事が前の記事の「ならば次はどうする？」への回答になっている。
+
+**Article Order:**
+1. **062** — 問題：Claude CoworkがSaaS株を揺らした「SaaS不要論」ショック
+2. **022** — 企業の応答：freeeがCAIOを設置、「Done for You」戦略を宣言
+3. **230** — 技術的設計論：SaaSが生き残るための再設計原則（冪等性・Usage課金・APIファースト）
+4. **002** — インフラの現実：GoogleのUCPがAI Modeで本格稼働、エージェントが主役に
+
+**Transition Strategies:**
+- 062→022: 「市場が過剰反応する中、先進企業はどう応じているか。freeeの判断は象徴的だ。」
+- 022→230: 「freeeのビジョンは正しい。ではどう実装するか。エンジニアの視点から設計原則を見てみよう。」
+- 230→002: 「この設計論は、GoogleのUCPが実際に動き始めたことで、理論から現実へと変わった。」
+
+**Narrative Arc:** 脅威（SaaS崩壊の噂）→ 戦略的対応（CAIO設置）→ 技術的実践（再設計原則）→ 構造的証明（UCP稼働）
+
+**Conclusion Synthesis:** SaaSは死なない。ただし「人間がUIを操作する」前提が終わる。UCPの稼働はその転換点がすでに始まったことを告げる。SaaSの価値は「叩きやすいAPI」と「ドメイン知識の深さ」へ収束していく。
+
+---
+
+### Theme 4 Assembly: Multi-Perspective (Implementation Showcase)
+
+**Pattern:** Multi-Perspective — 「段階的開示」設計の5つのアプローチを並列提示、正解は文脈次第
+
+**Rationale:** Nx（削除）、Cloudflare（制限）、Firebase（動的開示）、O'Reilly（概念化）、Vercel（エコシステム）は、同じ「コンテキスト過負荷」という問題への5つの独立した回答。単一の正解がなく、文脈に応じた選択が求められる典型的なMulti-Perspective構造。
+
+**Article Order:**
+1. **092** — アプローチA（削除）：NxがMCPツールを大量削除した理由（最も挑発的な問い）
+2. **176** — アプローチB（制限）：CloudflareがCode Modeで全APIを1,000トークンに圧縮
+3. **108** — アプローチC（動的開示）：FirebaseがProgressiveDisclosureで必要な情報だけ提供
+4. **175** — 概念的フレーム：O'Reillyが「判断力のパッケージング」としてスキルを位置づけ
+5. **178** — エコシステム証拠：6.9万スキル突破、量から質への評価転換
+
+**Transition Strategies:**
+- 092→176: 「Nxが「削除」を選んだ一方、Cloudflareは「制限」という別のアプローチを試みている。」
+- 176→108: 「対照的に、Firebaseは何を削除するかではなく、何をいつ見せるかを動的に制御する。」
+- 108→175: 「これらの実装を俯瞰すると、O'Reillyが提起する問いが浮かび上がる——スキルとは「判断の外在化」である、と。」
+- 175→178: 「この哲学が普及した証拠が、Vercelの6.9万スキルという数字だ。」
+
+**Narrative Arc:** 挑発的な問い（Nxの削除判断）→ 技術的実装の対比（Cloudflare vs Firebase）→ 概念的統合（O'Reilly）→ エコシステム的検証（Vercel）
+
+**Conclusion Synthesis:** 「削除」「制限」「動的開示」は表現が異なるが、すべて「コンテキストの設計責任」という一点に収束する。スキル設計の優劣は、何を見せるかより「何を隠すか」の判断力で決まる。
+
+---
+
+### Theme 5 Assembly: Progressive-Sequence (Problem-Solution Arc)
+
+**Pattern:** Progressive-Sequence — SDLCの死亡宣告から哲学的な新世界観の提示まで5段階の旅
+
+**Rationale:** 232（診断）→046（概念）→185（マクロ分析）→173（実践）→199（哲学）は明確な依存関係がある。232を知らないと046の重みが分からず、046+185を知らないと173の「なぜ仕様書が重要か」が腑に落ちず、これら全部を踏まえてこそ199の外骨格メタファーが刺さる。
+
+**Article Order:**
+1. **232** — 診断：「SDLCは死んだ」——PR 98%増というデータが示す開発の激変
+2. **046** — 概念：「エージェンティック・エンジニアリング」とは何か（Addy Osmaniの定義）
+3. **185** — マクロ分析：仕事は「消えた」のではなく「移動した」——エンジニアの役割転換
+4. **173** — 実践：AIエージェント向けの良い仕様書の書き方（O'Reilly、5原則）
+5. **199** — 哲学：AIを「同僚」ではなく「外骨格」として捉え直す
+
+**Transition Strategies:**
+- 232→046: 「SDLCが崩壊した後、どんな秩序がそれを置き換えるのか。Addy Osmaniは一つの答えを持っている。」
+- 046→185: 「「エージェンティック・エンジニアリング」という概念は、より大きな構造変化の一部だ。」
+- 185→173: 「仕事が「移動した」のなら、移動先で何が求められるかが明確になる——それが仕様書の書き方だ。」
+- 173→199: 「しかし仕様書の書き方より根本的な問いがある。AIとどういう関係を結ぶのか、という問いだ。」
+
+**Narrative Arc:** 変化の証拠（232）→ 新パラダイムの命名（046）→ 役割変化の理解（185）→ 実践的対応（173）→ 哲学的統合（199）
+
+**Conclusion Synthesis:** バイブコーディングの終焉は終点ではなく、エンジニアが「コードを書く人」から「意図を設計する人」へ進化する始点だ。外骨格メタファーが示すのは、人間の主体性を失わずにAIと共存する姿勢の重要性。
+
+---
+
+### Theme 6 Assembly: Multi-Perspective
+
+**Pattern:** Multi-Perspective — 中国オープンソース（Qwen）、日本語メディア分析、米国フロンティア（Gemini）、構造分析という4つの独立した視点
+
+**Rationale:** 052と198は独立した発表であり、どちらが「メイン」とも言えない対等な関係。115は052への補足分析、149は両者の背景にある構造的意味を俯瞰する。「フロンティアモデル独占の終焉」という問いに、4つの視点が各々異なる答えを出す構造。
+
+**Article Order:**
+1. **052** — 視点①：Qwen3.5公式発表——397Bパラメータ、GPT-5.2同等、オープンウェイト
+2. **115** — 視点②：日本語メディアによる比較分析——競合との差異と限界の指摘
+3. **198** — 視点③：Gemini 3.1 Pro——ベンチマーク2倍、Googleの反撃
+4. **149** — 視点④：中国オープンソースAIの構造分析——なぜこれが起きているのか
+
+**Transition Strategies:**
+- 052→115: 「公式発表の数字を、日本語メディアはどう読んだか。比較の視点が加わる。」
+- 115→198: 「一方、Googleも同週に反撃を見せた。Gemini 3.1 Proは前バージョン比でベンチマーク2倍という衝撃的な数字をたたき出した。」
+- 198→149: 「個別のモデル発表を超えて、この競争が何を意味するかをMITテクノロジーレビューが構造的に読み解く。」
+
+**Narrative Arc:** 中国オープン陣の実力（052）→ 批判的分析（115）→ 米国フロンティアの反応（198）→ 構造的意味の俯瞰（149）
+
+**Conclusion Synthesis:** フロンティアモデルとオープンモデルの差が急速に縮まる中、モデル選択はAPI料金だけでなく「自社コンテキストでの最適化」という多変数の問題になった。中国オープンソース戦略の本質は技術ではなく「開発者コミュニティの獲得」——この視点が今後のモデル選定に最も重要な示唆を与える。
+
+---
+
+## Implementation Checklist
+
+After approval:
+- [x] Proceed to STEP_04 (Curate Main Journal)
+- [x] Use this plan as blueprint for article selection
+- [x] Organize curated_journal_sources.md by themes
+- [x] Carry forward theme introductions to STEP_08 (Assembly)
