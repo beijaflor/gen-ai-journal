@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-01T04:48:51.898396+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-03-02T02:30:00.000000+00:00",
+    "generatedBy": "claude-sonnet-4-6"
   },
   "content": {
-    "title": "qwibitai/nanoclaw: AI向け高速リポジトリ・データ収集ツール",
+    "title": "コードベースのトークン数をREADMEバッジで可視化するGitHub Action「repo-tokens」",
+    "originalTitle": "qwibitai/nanoclaw: repo-tokens",
     "url": "https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens",
     "language": "en",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "AIエージェントやLLMの学習・推論に不可欠なデータをGitHubなどのリポジトリから高速に抽出・管理するためのクローリングフレームワークです。",
-    "summaryBody": "qwibitaiが公開している`nanoclaw`は、AI開発におけるデータ収集パイプラインを最適化するためのオープンソースプロジェクトです。特にリポジトリ内のメタデータやソースコードを効率的に取得することに特化しており、GitHubのAPIレート制限を回避するためのトークン管理機能（`repo-tokens`）などが含まれています。1.6万件を超えるスター数を獲得しており、AIコミュニティにおけるデータエンジニアリングの分野で非常に高い注目を集めています。大量のリポジトリから自動的にコンテキストを集約し、LLMに供給可能な形式に整える作業を劇的に高速化します。",
+    "oneSentenceSummary": "コードベースのトークン数をtiktokenで計測し、LLMのコンテキストウィンドウに対する占有率をREADMEバッジで表示するGitHub Action。",
+    "summaryBody": "AIエージェントによるコーディングでは、コードベース全体がLLMのコンテキストに収まるほど作業効率が上がる。この事実に着目したGitHub Action「repo-tokens」は、tiktokenを使ってコードベースのトークン数を計測し、その結果をREADMEバッジとして自動更新する。\n\nバッジ色はLLMコンテキストウィンドウ（デフォルト200k＝Claude Opusサイズ）に対する占有率を反映：30%未満は緑、30〜50%は黄緑、50〜70%は黄、70%超は赤。Pythonコードはわずか60行、実行時間は約10秒のコンポジットアクション。\n\n「コードベースの肥大化を防ぐ視覚的リマインダー」という設計思想がユニーク。エージェント時代において「コンテキストに収まる小さなコードベース」が競争優位になるという実践的な洞察を体現したツール。",
     "topics": [
-      "GitHub",
-      "Web Crawling",
-      "AI Data Engineering",
-      "Open Source",
-      "LLM Infrastructure"
+      "GitHub Actions",
+      "AI coding agents",
+      "Tokenization",
+      "Developer tools",
+      "LLM context window"
     ],
     "scores": {
       "signal": 4,
       "depth": 3,
-      "uniqueness": 4,
+      "uniqueness": 5,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 75,
-      "annexPotential": 90,
-      "overall": 82
-    },
-    "originalTitle": "qwibitai/nanoclaw: repo-tokens"
+      "mainJournal": 68,
+      "annexPotential": 82,
+      "overall": 73
+    }
   }
 }

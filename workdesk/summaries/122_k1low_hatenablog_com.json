@@ -1,31 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-01T04:41:48.066272+00:00",
+    "generatedAt": "2026-03-01T09:50:00.000000+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "[エラー] コンテンツ取得失敗: 429 Too Many Requests",
+    "title": "tmuxのウィンドウで動かしているコーディングエージェントのステータスを確認できるtcmuxを作った",
     "url": "https://k1low.hatenablog.com/entry/2026/02/14/144858",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "HTTP 429エラーにより、指定されたURLから記事コンテンツを正常に取得・解析することができませんでした。",
-    "summaryBody": "指定された記事（https://k1low.hatenablog.com/entry/2026/02/14/144858）の解析を試みましたが、アクセス時にサーバーより「429 Too Many Requests」エラーが返されたため、本文データを取得することができませんでした。このエラーは、短期間に制限を超えるリクエストが送信された際に発生するものです。k1low氏のブログは技術的に価値の高いツールやエンジニアリングに関する知見が共有されることが多いですが、現時点では元データが欠落しているため、詳細な要約や評価スコアの算出は不可能です。再度時間を空けてからのアクセスを推奨します。",
+    "contentType": "🔧 Tool & Library (ツール・ライブラリ)",
+    "oneSentenceSummary": "tmux上で複数のClaude CodeやGitHub Copilot CLIを並行稼働させる際に、各エージェントのステータス（処理中・入力待ち・許可待ち）をtmuxのウィンドウ/セッション一覧に直接表示するGo製CLIツール「tcmux」の紹介。",
+    "summaryBody": "著者のk1lowは、複数のtmuxウィンドウでClaude Codeを同時稼働させるワークフローにおいて「どのウィンドウのエージェントが今どういう状態か、切り替えないとわからない」という問題に直面した。特に許可待ちで止まっているClaude Codeを見逃すケースが課題だった。\n\nその解決策として開発されたtcmux（terminal coding agent viewer）は、tmuxの`list-windows`や`list-sessions`コマンドを拡張し、各ウィンドウのコーディングエージェントのステータスをtmux UIに直接付加して表示するCLIツールだ。\n\n`lsw`コマンドでClaude Codeが起動しているウィンドウ一覧を表示し、`ls`コマンドでセッション一覧をステータス集計つきで確認できる。表示フォーマットはtmux標準オプションと互換性があり自由にカスタマイズ可能。また、Claude CodeだけでなくGitHub Copilot CLIにも対応し、Idle/Running/Waitingの3ステータスをアイコン付きで識別できる。\n\n実際に使用した結果、複数エージェントの状態把握が容易になり、とくに「許可待ちで止まっているClaude Codeに気づかない」問題が解消されたとのこと。GitHubリポジトリ: https://github.com/k1LoW/tcmux",
     "topics": [
-      "HTTP 429",
-      "Fetch Error",
-      "Technical Analysis Failed"
+      "Claude Code",
+      "tmux",
+      "コーディングエージェント",
+      "開発者ツール",
+      "Go"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": null
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 65,
+      "annexPotential": 72,
+      "overall": 66
+    }
   }
 }
