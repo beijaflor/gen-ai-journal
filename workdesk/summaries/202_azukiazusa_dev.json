@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:02:47.171538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プラットフォームごとの Chat ボットの実装を抽象化する Chat SDK",
+    "url": "https://azukiazusa.dev/blog/chat-bot-implementation-chat-sdk/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "VercelのChat SDKを使用して、TypeScriptによる単一のコードベースからSlackやDiscordなど複数のチャットプラットフォームに対応したボットを開発する手法の解説。",
+    "summaryBody": "Vercelからリリースされた「Chat SDK」を利用して、複数のチャットプラットフォーム（Slack, Discord, Teams等）に対応するボットを効率的に開発する方法を紹介しています。このSDKはイベント駆動型アーキテクチャを採用しており、メンションやメッセージなどのイベントを型安全にハンドリングできます。記事ではHonoを用いたSlackボットの最小実装から、JSXを用いたボタンやカードなどのインタラクティブなUIの構築、さらにはAI SDK（Anthropic）と連携したレスポンスのストリーミング処理まで、具体的なコード例とともに詳しく解説されています。プラットフォームごとに異なるAPI仕様を抽象化し、一貫した開発体験を提供することがこのライブラリの大きな特徴です。",
+    "topics": [
+      "Chat SDK",
+      "TypeScript",
+      "Slack Bot",
+      "Vercel",
+      "AI SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

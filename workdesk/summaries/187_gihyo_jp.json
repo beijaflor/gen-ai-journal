@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:58:38.074750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "draw.io、Claude Code向けスキルを公開 — 編集可能な図面ファイルを直接生成",
+    "url": "https://gihyo.jp/article/2026/02/drawio-skill-for-claude-code",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "draw.ioがClaude Code向けの「Draw.io Skill」を公開し、AIとの対話のみで編集可能な.drawioファイルの直接生成や画像への出力が可能になった。",
+    "summaryBody": "draw.io（jgraph）は、AnthropicのコマンドラインAIエージェント「Claude Code」で利用可能な専用スキル「Draw.io Skill」を公開しました。このスキルを導入することで、MCPサーバーを別途立ち上げることなく、Claude Codeの標準ツール（Bash/Write）のみでネイティブの.drawio形式（mxGraphModel XML）を直接生成できるようになります。\n\n主な特徴は、Mermaidなどの他形式からの変換ではなく、Claudeが直接エディタで編集可能なXMLを生成する点にあります。また、draw.io DesktopのCLIと連携することで、生成した図面をPNG、SVG、PDF形式へ出力することも可能です。出力ファイルには図面のソースXMLが埋め込まれるため、後からdraw.ioで開いて再編集できる利便性を備えています。\n\nあわせて、チャット内で図面をプレビューできる「MCP App Server」や、ブラウザ版Claude.aiのProjectsで利用可能な「Project Instructions」も提供されており、CLIからブラウザまで幅広い環境での図面作成ワークフローが強化されました。",
+    "topics": [
+      "draw.io",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "AI Agent",
+      "Diagramming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

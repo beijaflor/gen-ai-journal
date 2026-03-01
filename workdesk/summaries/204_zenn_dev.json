@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T06:39:27.579729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "devcontainer + git worktree で並列開発するぞ！",
+    "url": "https://zenn.dev/kenfdev/articles/222fe622d42f0d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "devcontainer環境でgit worktreeを用いた並列開発を実現するために、ポート衝突やパス解決、DB分離などの課題をTraefikやスクリプトで解決するテンプレート「devcontainer-wt」の紹介。",
+    "summaryBody": "AIエージェントによる並列開発が普及する中、devcontainer環境でgit worktreeを併用する際の「パスの不整合」「ポート衝突」「DB管理」といった技術的課題を解決する手法を解説しています。著者が作成したテンプレートリポジトリ「devcontainer-wt」では、以下の工夫がなされています：\n1. シンボリックリンクによる解決: コンテナ内のパスとホストの絶対パスの差異を吸収し、gitコマンドを正常化。\n2. Traefikによるリバースプロキシ: ポートマッピングを廃止し、サブドメイン（localhost）で各worktreeへルーティングすることで衝突を回避。\n3. 論理的なDB分離: 共有DBサーバー内でworktreeごとにDBを作成・自動初期化するスクリプトを整備。\n4. AIエージェント統合: Claude Code等のツールをコンテナ内で動作させ、環境の隔離性と利便性を両立。\nCLIツールによる抽象化ではなく、プロジェクトごとにカスタマイズ可能な「テンプレート」という形をとることで、柔軟な開発環境構築を提案しています。",
+    "topics": [
+      "devcontainer",
+      "git worktree",
+      "Docker",
+      "Traefik",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

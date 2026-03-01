@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:01:28.014087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeからの応答をデスクトップマスコットに喋らせる",
+    "url": "https://qiita.com/kazakago/items/287f91082ab59f581c09",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのログをリアルタイム監視し、VRMモデルと音声合成を用いてデスクトップマスコットに喋らせるElectronアプリの実装解説。",
+    "summaryBody": "この記事では、AIコーディングエージェント「Claude Code」の応答を視覚的・聴覚的に演出するためのデスクトップマスコット開発手法を解説しています。技術スタックにはElectron、React、Three.js（@pixiv/three-vrm）を採用。`chokidar`を用いて`~/.claude/projects/`配下のJSONLログを監視し、差分を抽出してAivisSpeechやVOICEVOXで音声合成を行います。テキスト解析による感情推論に基づいた表情制御、VRMAによるアニメーション、音量に連動したリップシンク、さらにはClaude CodeのSkill（プラグイン）を利用したセッション制御など、実用的な実装の詳細がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "Electron",
+      "React",
+      "Three.js",
+      "VRM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

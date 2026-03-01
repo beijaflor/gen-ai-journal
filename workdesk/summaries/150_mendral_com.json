@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:49:06.099704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用したCIログ解析：数テラバイトのデータをSQLで自在に検索するAIエージェントの舞台裏",
+    "url": "https://www.mendral.com/blog/llms-are-good-at-sql",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mendral社は、膨大なCIログをClickHouseに集約し、AIエージェントに直接SQLを生成・実行させることで、複雑なテスト失敗の根本原因を数秒で特定するシステムを構築した。",
+    "summaryBody": "Mendral（YC W26）が開発したAI DevOpsエンジニアの内部構造に関する技術解説です。週に15億行、数テラバイトに及ぶCIログを解析するため、同社はあらかじめ定義されたAPIツールではなく、LLMに直接SQLを記述させClickHouseをクエリする手法を採用しています。\n\n主な技術的特徴は以下の通りです：\n1. **デノマライズによる高速化**: ログ1行ごとに48列のメタデータを付与してデノマライズしていますが、ClickHouseの列指向圧縮により35:1という高い圧縮率を実現し、ストレージ効率と検索速度を両立しています。\n2. **段階的な探索プロセス**: エージェントは最初にジョブのメタデータを広範囲に検索して傾向を掴み、その後特定のログ行へドリルダウンしてスタックトレースを解析する、人間のような調査ステップを自動で実行します。\n3. **レート制限と耐久性**: GitHub APIのレート制限に対処するため、Inngestを利用した「Durable Execution」を導入。制限に達した際は実行状態をチェックポイントとして保存し、再開可能な設計にしています。\n\nこのアプローチにより、数週間前の依存関係の変更が原因で発生した剥離テスト（Flaky test）の追跡など、従来の監視ツールでは困難だった調査が数秒で完了するようになります。",
+    "topics": [
+      "LLM",
+      "ClickHouse",
+      "SQL Generation",
+      "CI/CD",
+      "Durable Execution"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "LLMs Are Good at SQL. We Gave Ours Terabytes of CI Logs."
+  }
+}

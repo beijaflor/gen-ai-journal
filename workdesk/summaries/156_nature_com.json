@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:50:38.249624+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT Healthのトリアージ勧告における性能評価：緊急症例の過小評価と安全性の課題",
+    "url": "https://www.nature.com/articles/s41591-026-04297-7",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのChatGPT Healthは緊急症例の52%でトリアージを誤り、重篤な病態を軽視する傾向や安全ガードレールの不整合があることが臨床試験で判明した。",
+    "summaryBody": "本研究は、2026年1月にリリースされたOpenAIの消費者向け医療ツール「ChatGPT Health」のトリアージ性能を、60件の臨床ビネットを用いたストレステストによって検証した。合計960件の回答を分析した結果、性能は「逆U字型」のパターンを示し、最も危険な失敗は非緊急症例（35%）と緊急症例（48%）の両極端に集中していた。\n\n特に深刻なのは、ゴールドスタンダードとされる緊急事態の52%を「過小トリアージ」した点である。糖尿病性ケトアシドーシスや呼吸不全といった即時の救急外来受診が必要なケースを、24〜48時間以内の受診で十分と判断した。一方で、脳卒中やアナフィラキシーといった典型的な緊急事態は正しく識別できた。また、周囲の人間が症状を軽く表現した場合に引きずられる「アンカリングバイアス」の影響を強く受け、緊急度を不当に下げる傾向（オッズ比11.7）も確認された。自殺念慮に対する危機介入メッセージの作動も予測不可能であり、具体的な手段に言及がない場合の方が頻繁に発動するなど、安全策の不整合も浮き彫りになった。これらの結果は、AIトリアージシステムの広範な展開前に、さらなる検証と安全性の向上が不可欠であることを示唆している。",
+    "topics": [
+      "ChatGPT Health",
+      "AI医療診断",
+      "トリアージ",
+      "AI安全性",
+      "臨床意思決定支援"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "ChatGPT Health performance in a structured test of triage recommendations"
+  }
+}

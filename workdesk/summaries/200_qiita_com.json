@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:01:54.694202+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "少人数チームでもできる——LLMエージェントによるCVE自動トリアージの実践",
+    "url": "https://qiita.com/strategy_and_partner_inc/items/a531ff915396a2ac2afc",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "攻撃側のAI活用による脆弱性エクスプロイトの高速化に対抗するため、LLMとSBOMを組み合わせてCVEの影響判定から対策提案までを自動化し、少人数チームでのセキュリティ運用を効率化した事例。",
+    "summaryBody": "AIエージェントの台頭により、脆弱性（CVE）の公開から攻撃開始までのタイムラインが劇的に短縮されている現状を受け、少人数の開発チームが構築した自動トリアージシステムの詳解です。本システムは、NVDから取得したCVE情報を、自社サービスのSBOM（ソフトウェア部品構成表）や仕様書と照らし合わせ、LLMを用いて「自社に影響があるか」を自動判定します。コスト抑制と精度向上のため、軽量LLMによるスクリーニングと詳細LLMによるフルトリアージの2段階構成を採用。また、通知ノイズを減らすため、影響なしの案件は1日2回の日次サマリとして集約し、影響ありの案件のみ即時メンション通知を行う設計になっています。この仕組みにより、APIコストを月額数ドルに抑えつつ、専任のセキュリティ担当者がいない環境でも迅速かつ正確な脆弱性対応を可能にしています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "CVE",
+      "セキュリティ",
+      "SBOM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

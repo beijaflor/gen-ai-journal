@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:43:21.898756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bring Your Own Agent (BYOA)：AIエージェントを自前で構築すべき理由",
+    "url": "https://blog.val.town/byoa",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ベンダー提供のブラックボックスなAIツールに依存せず、Val Townなどの自由度の高いプラットフォームで自作エージェント（BYOA）を構築し、コントロールを取り戻すことの重要性を説く。",
+    "summaryBody": "AIの進化速度は極めて速く、VercelのSDKのように公式フレームワークですら数日でレガシー化する現状がある。多くのSaaSベンダーが月額500〜1000ドルで高価かつカスタマイズ不能な「ブラックボックス」のAIエージェントを提供しているが、これらは柔軟性に欠け、改善のレバーがユーザーに提供されない。筆者は、自身のコードをどこにでも移行できる「確信を持って退出できる（credible exit）」環境での『Bring Your Own Agent (BYOA)』を提唱する。Val Townを例に挙げ、デプロイの手間を省きつつ、標準的なWeb技術（Deno、SQLite、npm）を用いることで、ロックインを回避しながら迅速にエージェントを構築・運用できる利点を説明している。Kilo Code社がSaaSのサポートボットを自作エージェントに置き換えた事例では、わずか89分で構築が完了し、ツールを自社で完全にコントロールできるようになったことが強調されている。",
+    "topics": [
+      "AI Agent",
+      "BYOA",
+      "Val Town",
+      "Vercel AI SDK",
+      "Build vs Buy"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Bring Your Own Agent (BYOA) | Val Town Blog"
+  }
+}

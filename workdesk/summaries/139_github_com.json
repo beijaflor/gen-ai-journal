@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:45:59.457421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "just-bash: AIエージェント向けに設計されたTypeScript製のサンドボックス型Bash環境",
+    "url": "https://github.com/vercel-labs/just-bash",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercel Labsによる、AIエージェントが安全かつ柔軟にコマンドを実行できる、メモリ内仮想ファイルシステムを備えたTypeScript実装のBashシミュレータです。",
+    "summaryBody": "just-bashは、AIエージェントに安全なコード実行環境を提供するために開発された、TypeScript製のBashエミュレータです。OSレベルの隔離ではなく、JavaScriptランタイム上のメモリ内仮想ファイルシステムで動作するため、極めて軽量かつセキュアなサンドボックスを構築できます。\n\n主な特徴は以下の通りです：\n1. **強力なサンドボックス機能**: デフォルトでネットワークアクセスを制限し、URLのホワイトリスト制御が可能。無限ループや過度な再帰からの保護機能も備えています。\n2. **柔軟なファイルシステム**: メモリ内のみの操作のほか、ホストOSのディレクトリを読み取り専用で重ねるOverlayFsや、マウント可能なMountableFsをサポートしています。\n3. **拡張性と統合**: TypeScriptで独自のカスタムコマンドを定義でき、jqやsqlite3、さらにはPyodideによるPython実行（オプトイン）にも対応しています。\n4. **AI SDKとの親和性**: Vercel AI SDK向けの`bash-tool`が提供されており、エージェントへの組み込みが容易です。また、Vercel Sandbox APIと互換性があるため、将来的にフルVM環境への移行もスムーズに行えます。\n\nエージェントに直接シェルを触らせる際のリスクを最小限に抑えつつ、データ処理やファイル操作の能力を与えたい開発者にとって最適なツールです。",
+    "topics": [
+      "AIエージェント",
+      "Bash",
+      "TypeScript",
+      "サンドボックス",
+      "Vercel"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - vercel-labs/just-bash: Bash for Agents"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:55:38.831399+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NDLOCRLite Web: ブラウザ完結型の高精度日本語OCRツール",
+    "url": "https://github.com/yuta1984/ndlocrlite-web",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "国立国会図書館のOCRモデルをブラウザ内で実行し、外部サーバーへのデータ送信なしで高精度な日本語認識を可能にするオープンソースツールです。",
+    "summaryBody": "国立国会図書館（NDL）が開発・公開している「NDLOCR-Lite」を、Webブラウザのみで完結して動作するように移植・再実装したプロジェクトです。ONNX Runtime Webを活用することで、画像やPDFの解析をすべてクライアントサイドのWASM CPUバックエンドで実行するため、機密性の高い文書も安全に処理できます。技術的には、DEIMv2モデルによるレイアウト検出と、文字数に応じて3種類のPARSeqモデルを使い分けるカスケード文字認識を組み合わせ、精度の最適化を図っています。複数ページのPDF対応、フォルダごとのバッチ処理、IndexedDBによるモデルと結果のキャッシュ機能など、実用的な機能を備えています。Vite + React 19 + TypeScriptで構築されており、OSSとして公開されています。",
+    "topics": [
+      "OCR",
+      "WebAssembly",
+      "NDLOCR-Lite",
+      "TypeScript",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "NDLOCRLite Web: ブラウザ完結型日本語OCRツール（ONNX Web Runtime使用）"
+  }
+}

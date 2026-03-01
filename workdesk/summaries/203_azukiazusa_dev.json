@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T06:39:14.920144+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code デスクトップで Worktree を作成するとき .worktreeinclude で .gitignore で除外されているファイルを含める",
+    "url": "https://azukiazusa.dev/blog/claude-code-worktree-worktreeinclude-gitignore/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeデスクトップ版で導入された`.worktreeinclude`を用いて、Git Worktree作成時に`.gitignore`対象の`.env`等を自動コピーする方法を解説。",
+    "summaryBody": "Claude Codeのデスクトップ版において、Git Worktreeを利用した並行開発を効率化する新しい設定ファイル`.worktreeinclude`の使い方が解説されています。通常、Worktree作成時には`.gitignore`で指定された`.env`などのファイルはコピーされませんが、本ファイルに記述することで自動的に引き継ぐことが可能になります。なお、コピーの条件として「`.worktreeinclude`と`.gitignore`の両方に一致する」必要がある点に注意が必要です。記事執筆時点（v2.1.50）で未対応のCLI版については、`hooks.WorktreeCreate`を利用して手動でコピー処理を実装する代替案も紹介されており、AIエージェントによる開発環境構築の自動化に役立つ内容です。",
+    "topics": [
+      "Claude Code",
+      "Git Worktree",
+      ".worktreeinclude",
+      "AIコーディングエージェント",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

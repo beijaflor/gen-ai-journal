@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:00:30.045027+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeからシークレットが漏れる前に守る——sensitive-canary",
+    "url": "https://zenn.dev/chataclaw/articles/dcb866d5d10d02",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Codeの使用中にAPIキーや機密情報がAnthropicのサーバーへ送信されるのを未然に防ぐ、ローカル完結型のセキュリティプラグイン「sensitive-canary」の紹介。",
+    "summaryBody": "Claude Codeは利便性が高い反面、自律的なファイル読み込み機能によって意図せず機密情報をコンテキストに含めてしまうリスクがあります。「sensitive-canary」は、プロンプト送信時（UserPromptSubmit）とツール実行前（PreToolUse）の2段階でフックを差し込み、29種類のシークレットや個人情報を検出・ブロックするプラグインです。外部通信を行わず、gitleaksやTruffleHogのルールをベースにした検知をローカルで完結させるため、プライバシーを保ちながら安全にClaude Codeを利用できます。インストールは2コマンドで完了し、特定のプロンプトで意図的に情報を許可するタグ機能も備えています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "LLM",
+      "シークレット検知",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:46:52.117010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mission Control：AIエージェント時代のためのオープンソース・タスク管理プラットフォーム",
+    "url": "https://github.com/MeisnerDan/mission-control",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のAIエージェントにタスクを委任し、アイゼンハワーマトリックスやカンバンで進捗を管理できる、ソロプレナー向けのローカル完結型タスク管理ツール。",
+    "summaryBody": "Mission Controlは、Claude CodeやCursorといったAIエージェントを作業者として指揮するための「コマンドセンター」です。複数のエージェントが並行して動く際の混乱を避けるため、役割分担、インボックス、報告プロトコルを構造化します。特徴として、優先順位を整理するアイゼンハワーマトリックス、タスクの進捗を追うカンバンボード、そしてエージェント用のトークン最適化済みAPIを備えています。特にClaude Codeとの親和性が高く、ワンクリックでタスクを実行させたり、デーモンによるバックグラウンド自動実行も可能です。データはすべてローカルのJSONファイルで管理されるため、クラウド依存がなくプライバシー面でも優れています。193以上のテストスイートを含む堅牢な設計で、エージェントがループに陥った際の検知機能など、実用的な運用機能が凝縮されています。",
+    "topics": [
+      "AI Agents",
+      "Task Management",
+      "Open Source",
+      "Claude Code",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Mission Control: Open-source task management for the agentic era."
+  }
+}

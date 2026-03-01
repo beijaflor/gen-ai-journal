@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:37:34.021104+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェントシステムに「メモリエンジニアリング」が必要な理由",
+    "url": "https://www.oreilly.com/radar/why-multi-agent-systems-need-memory-engineering/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチエージェントAIの失敗の多くは通信ではなく状態共有の欠如に起因しており、持続的で一貫した「共有メモリ」の構築が実用化の鍵である。",
+    "summaryBody": "従来のマルチエージェントシステムは、エージェント間のメッセージパッシングに依存しているが、複雑なワークフローでは各エージェントのコンテキストが乖離し、計算コストの増大やエラーの連鎖を招いている。本記事では、単なるコンテキスト管理を超えた「メモリエンジニアリング」の重要性を提唱。メモリを「ワーキングメモリ」「エピソードメモリ」「意味メモリ」「手続きメモリ」「共有メモリ」の5つの柱で体系化し、データベースをインフラとして活用することで、異種混合のエージェントチームが一貫性を保ちながら効率的に動作する基盤を構築すべきだと論じている。特に、状態の一貫性、永続性、効率的な検索、そしてコスト管理の観点から、エージェント固有のコンテキストウィンドウに頼る限界を指摘し、外部ストレージによる「記憶の階層化」がAIエージェントのエンタープライズ展開における必須要件であることを詳説している。",
+    "topics": [
+      "マルチエージェントシステム",
+      "メモリエンジニアリング",
+      "LLMアーキテクチャ",
+      "状態管理",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Why Multi-Agent Systems Need Memory Engineering"
+  }
+}

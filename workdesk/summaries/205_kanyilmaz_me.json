@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:40:50.524250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPのトークン消費を94%削減する方法：JSON Schemaの代わりにCLIを活用する最適化手法",
+    "url": "https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCPサーバーの全ツール定義をコンテキストに読み込む代わりに、CLI化してオンデマンドで情報を取得することで、LLMのトークンコストを劇的に削減する手法の提案。",
+    "summaryBody": "従来のModel Context Protocol (MCP)は、セッション開始時にすべてのツールのJSON Schemaをコンテキストに投入するため、ツール数が増えるほどトークン消費が肥大化するという課題があります。本記事では、MCPサーバーをCLI（コマンドラインインターフェース）に変換し、エージェントが必要な時にだけ`--help`コマンド等を通じてツールの詳細を取得する「遅延読み込み」アプローチを提案しています。\n\n具体的には、84個のツールを使用する構成において、標準的なMCPでは開始時に約15,500トークンを消費するのに対し、CLI方式ではわずか300トークン程度に抑えられ、全体で約94%のコスト削減が可能です。これはAnthropicが提供する『Tool Search』機能よりも高い削減率（対Tool Searchでさらに70%以上の節約）を示しており、かつ特定のモデルに依存しない汎用的な手法です。著者はこの変換を容易にするオープンソースツール『CLIHub』を公開しています。",
+    "topics": [
+      "MCP",
+      "LLM",
+      "Token Optimization",
+      "CLI",
+      "CLIHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I Made MCP 94% Cheaper (And It Only Took One Command)"
+  }
+}

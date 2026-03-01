@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:00:43.527367+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "@vercel/agent-evalでCLAUDE.mdの効果を検証する",
+    "url": "https://zenn.dev/edash_tech_blog/articles/84f0cd8567646b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercel Labsが公開した「@vercel/agent-eval」を用いて、CLAUDE.mdなどのコーディングエージェント用指示書が生成AIの出力精度に与える影響を定量的に検証する手法の紹介。",
+    "summaryBody": "コーディングエージェント（Claude CodeやCursor等）の挙動を制御する「CLAUDE.md」や「Agent Skills」の改善を、感覚ではなく数字で評価するためのツール「@vercel/agent-eval」の解説記事です。\n\nこのツールは、Dockerコンテナ内のサンドボックス環境でエージェントを動かし、生成されたコードをvitestで自動検証する「AIエージェントのテストランナー」として機能します。特徴的なのは、エージェント実行前に検証用コード（EVAL.ts）を除外することで「カンニング」を防止し、純粋なプロンプトと環境による成果を測定できる点です。\n\n記事内では、Next.jsの特定のコーディング規約（font/googleの使用やServer Actionsの利用）を記述したCLAUDE.mdがある場合とない場合での比較実験を行い、モデル（Claude 3.5 Haiku）のパス率が大幅に向上（20%から80%）した結果を報告しています。これにより、チーム開発におけるAIエージェント指示書の継続的な改善と、デグレ防止のためのCI組み込みの有用性が示されています。",
+    "topics": [
+      "AI Agent",
+      "Vercel",
+      "Claude Code",
+      "LLM Evals",
+      "Testing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

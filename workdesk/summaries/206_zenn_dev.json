@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:41:02.338704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「全エンジニアが Claude Code を 100% 活用する」を目指してダッシュボードを作った",
+    "url": "https://zenn.dev/dinii/articles/28c8fcd041837d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの利用状況を可視化するため、トランスクリプト解析による独自の分析ダッシュボードを構築し、社内での活用促進と知見の共有をデータに基づき実現した事例。",
+    "summaryBody": "株式会社ダイニーが、エンジニア全員のClaude Code活用度を最大化するために構築した分析システムの開発記。個々人の活用法が見えにくいという課題を解決するため、Claude Codeのトランスクリプト（JSONLログ）を解析してBigQueryへ送信する独自プラグインを開発。ダッシュボードでは、ユーザー別ランキング、スキル・MCP・サブエージェントの利用内訳、トークンコスト、GeminiによるAIインサイトなどを可視化している。OpenTelemetryでは捕捉できない「どのスキルを使ったか」といった粒度のデータを収集可能にし、高スコアユーザーの行動パターンを可視化することで、属人化していたスキルの共有やチーム全体の底上げに成功。100%の導入率を達成し、データに基づいたAI活用の改善サイクルを回している。",
+    "topics": [
+      "Claude Code",
+      "LLM生産性",
+      "データエンジニアリング",
+      "エンジニア組織",
+      "BigQuery"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
