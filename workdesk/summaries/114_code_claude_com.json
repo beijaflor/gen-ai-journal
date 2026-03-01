@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:39:36.851831+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのリモートコントロール機能：ローカル環境をモバイルやブラウザから操作",
+    "url": "https://code.claude.com/docs/en/remote-control",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのRemote Control機能により、ローカル環境を維持したままスマートフォンや別デバイスから開発セッションを継続・同期できます。",
+    "summaryBody": "Anthropicが提供するClaude Codeの「Remote Control」機能に関する技術ドキュメントです。この機能は、ローカルマシンで実行中のClaude Codeセッションを、claude.ai/codeやiOS/Androidアプリから遠隔操作することを可能にします。最大の特徴は、コード実行やファイルアクセスが依然としてユーザーのローカルマシン上で行われることで、ローカルのMCPサーバーやプロジェクト設定、ツールをそのまま利用できる点にあります。セッションは`claude remote-control`コマンドや`/rc`コマンドで開始でき、QRコードやURLを介して別デバイスと同期します。クラウドインフラで動作するWeb版Claude Codeとは異なり、ローカル環境への「窓」として機能するため、外出先からの進捗確認や急な修正に最適です。利用にはMaxプランのサブスクリプションが必要で、セキュリティ面ではインバウンドポートを開放しないアウトバウンドHTTPS通信が採用されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Remote Control",
+      "MCP (Model Context Protocol)",
+      "開発者ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Continue local sessions from any device with Remote Control - Claude Code Docs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:54:03.156152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic公式「マルチエージェントリサーチシステムの作り方」を読み解く──プロトタイプから本番までの教訓",
+    "url": "https://qiita.com/nogataka/items/c1d382dab8454d434d7e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが公開したClaudeのリサーチ機能を支えるマルチエージェントシステムの設計思想、実装上の課題、および評価手法を詳しく解説した技術記事。",
+    "summaryBody": "Anthropicのエンジニアリングブログの内容を基に、Claudeの「Research」機能で採用されているオーケストレーター・ワーカーパターンの詳細を紐解いています。単体モデルと比較して90.2%の性能向上を達成した背景には、並列探索やコンテキスト分離といった戦略があり、記事ではプロトタイプ段階で発生した「エージェントの暴走」や「無限検索」といった失敗談から得られた実戦的な教訓を共有しています。特に、LLMにツールの説明文を自動改善させることでタスク完了時間を40%短縮した事例や、20件程度の少数ケースから始める評価手法、トークン消費量とパフォーマンスの相関など、AIエージェントを本番運用に載せるための具体的なエンジニアリング手法が網羅されています。開発者が直面する「ラストマイル」の課題に対する具体的な解決策が提示されており、MCPサーバー運用者やエージェント開発者にとって極めて価値の高い内容です。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "AIエージェント",
+      "マルチエージェント",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "How we built our multi-agent research system"
+  }
+}

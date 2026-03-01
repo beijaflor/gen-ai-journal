@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:41:25.968227+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのコンテキスト圧縮による情報喪失を防ぐ「外科的データ復旧」機能の提案",
+    "url": "https://github.com/anthropics/claude-code/issues/26771",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの自動要約で失われる詳細データを、ローカルのログへのインデックス参照によって必要時にのみ最小トークンで復元する新手法の提案。",
+    "summaryBody": "Claude Codeの「自動コンテキスト圧縮（Auto-compaction）」が、過去に提供された大規模なDOMやコード等の詳細データを要約のみに変換してしまい、その後の作業でモデルが情報を参照できなくなる問題を解決するための技術提案です。この提案では、要約プロセスを完全に「損失あり」にするのではなく、ローカルディスク（~/.claude/projects/）に存在する既存の対話ログに対する「行番号インデックス（例: [transcript:lines 847-1023]）」を付与します。Claudeが必要に応じて特定のデータ範囲のみを「外科的」に再読み込みする仕組みを導入することで、インフラを追加することなく、最小限のトークン消費で情報の完全性を維持できるとしています。これは既存の多くの「記憶喪失」関連のバグを根本から解決するアプローチです。",
+    "topics": [
+      "Claude Code",
+      "LLM Context Management",
+      "Context Compaction",
+      "Developer Tools",
+      "Memory Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "[FEATURE] Indexed transcript references in compaction summaries for surgical context recovery · Issue #26771 · anthropics/claude-code · GitHub"
+  }
+}

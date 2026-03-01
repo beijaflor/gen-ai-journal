@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:38:34.354552+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型エンジニアリング：AIによる「線形コード・ウォークスルー」の自動生成",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントとShowboatツールを使い、バイブ・コーディング（雰囲気実装）したコードや未知のコードベースの構造を正確に解説するドキュメントを自動生成する手法。",
+    "summaryBody": "Simon Willison氏が提唱する「エージェント型エンジニアリング・パターン」の一つ。AIによって詳細を把握せぬまま実装されたコード（バイブ・コーディング）や、新規に扱うプロジェクトを理解するための「線形ウォークスルー」の生成方法を解説している。具体的には、Claude Codeのようなコーディングエージェントに、筆者自作の『Showboat』というツールを使わせることで、実行結果や実際のコード断片（sedやcatによる出力）をドキュメントに直接埋め込ませる。これにより、AIのハルシネーションを防ぎながら、正確かつ順を追った解説資料（walkthrough.md）を構築する。このプロセスを通じて、開発者はAI任せにすることなく、新しいプログラミング言語やフレームワーク（例：SwiftUI）の知識を能動的に吸収し、学習速度を向上させることができる。",
+    "topics": [
+      "AIエージェント",
+      "コーディング手法",
+      "ドキュメンテーション",
+      "Showboat",
+      "プログラミング学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Linear walkthroughs - Agentic Engineering Patterns"
+  }
+}

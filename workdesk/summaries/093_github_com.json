@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T12:04:21.329868+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hugging Face Skills: AIエージェント向け機械学習タスク自動化ライブラリ",
+    "url": "https://github.com/huggingface/skills",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Hugging Faceが公開した、AIコーディングエージェントがデータセット作成、モデル訓練、評価などのMLタスクを自律実行するための標準化されたスキルセット群。",
+    "summaryBody": "Hugging Face Skillsは、AIエージェント（Claude Code、Cursor、Gemini CLI、OpenAI Codex等）が機械学習のワークフローを直接実行できるようにするための、標準化された命令セットとスクリプトのリポジトリです。各「スキル」は独立したディレクトリに配置され、`SKILL.md`ファイルを通じてエージェントに具体的な指示、例、および制約を提供します。\n\n主な特徴は以下の通りです：\n1. **広範なMLタスク**: TRLを使用したLLMのファインチューニング（SFT, DPO, GRPO）、Gradioアプリの構築、Hugging Face Hub上でのデータセット管理、評価（lighteval/vLLM）、さらには論文の公開まで多岐にわたります。\n2. **マルチツール対応**: AnthropicのMCP（Model Context Protocol）をサポートしており、Cursorなどのエディタや、Claude Codeから直接プラグインとしてインストール可能です。\n3. **拡張性**: ユーザーが独自のスキルを作成し、共通のフォーマットで公開・共有できる仕組みが整っています。\n\n開発者は「HFモデル訓練スキルを使って、70Bモデルに必要なGPUメモリを推定して」といった自然言語の指示だけで、複雑なMLエンジニアリング作業をエージェントに任せることが可能になります。",
+    "topics": [
+      "Hugging Face",
+      "AI Agents",
+      "LLM Training",
+      "Machine Learning Ops",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Hugging Face Skills"
+  }
+}

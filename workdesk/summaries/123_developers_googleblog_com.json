@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:42:00.589299+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GoogleのAIエージェント開発キット「ADK」が大幅拡張：GitHubやStripe、Notionなど多様な外部ツールと連携可能に",
+    "url": "https://developers.googleblog.com/supercharge-your-ai-agents-adk-integrations-ecosystem/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleがオープンソースで提供するAgent Development Kit (ADK) に大規模なエコシステムが導入され、開発、プロジェクト管理、決済、データベースなどの外部サービスを数行のコードでAIエージェントに統合可能になりました。",
+    "summaryBody": "Googleは、AIエージェント開発用フレームワーク「Agent Development Kit (ADK)」の統合エコシステムを大幅に拡張したことを発表しました。ADKはエージェントに「思考」だけでなく「実行」の能力を与えることを目的としており、今回のアップデートにより、GitHubやGitLabによるコード管理、NotionやJiraによるプロジェクト管理、StripeやPayPalによる決済処理、さらにMongoDBやPineconeといったデータベースとの連携が容易になりました。技術的には、`McpToolset`プリミティブやプラグインアーキテクチャを採用することで、エージェントのコアロジックをツールの実装から分離しており、最小限のコード設定でこれらのサードパーティ製ツールを導入できるのが特徴です。また、AgentOpsやWeights & Biasesを用いた生産環境での可観測性（Observability）の向上や、Google Cloudサービス（BigQuery, Spanner等）とのネイティブな連携も強化されています。",
+    "topics": [
+      "Agent Development Kit (ADK)",
+      "AI Agents",
+      "Large Language Models",
+      "Google Cloud",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Supercharge your AI agents: The New ADK Integrations Ecosystem"
+  }
+}

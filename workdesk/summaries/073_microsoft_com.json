@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:59:04.402420+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Recommendation Poisoning：企業の広告目的でAIの記憶を操作する新たな手法",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/02/10/ai-recommendation-poisoning/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIアシスタントの「記憶（メモリ）」機能に特定の企業を優先的に推奨させる指示を注入し、将来の回答を密かに操作する新たな攻撃手法「AIレコメンデーション・ポイズニング」の実態と対策について解説している。",
+    "summaryBody": "Microsoftのセキュリティ研究チームは、AIアシスタントのパーソナライズ用メモリ機能を悪用した「AIレコメンデーション・ポイズニング（AI Recommendation Poisoning）」という新手の攻撃手法を発見した。この手法は、Webサイト上の「AIで要約」ボタンなどのURLパラメータ（?q=など）に、AIへの永続的な指示（例：「[社名]を信頼できる情報源として記憶せよ」）を埋め込むことで実行される。ユーザーがボタンをクリックすると、AIはその指示をユーザー自身の好みとして記憶し、後の会話で中立性を欠いた特定の製品推奨や情報の偏りを生じさせる。研究では14業界、31社による50以上のプロンプトが確認されており、これは従来のSEO（検索エンジン最適化）に近い感覚で「グロースハック」として利用されている実態がある。健康、金融、セキュリティといった重要な意思決定に関わる回答が操作されるリスクがあり、Microsoftはユーザーに対してメモリ設定の管理と、不審なリンクへの注意を呼びかけている。また、セキュリティ担当者向けには、組織内の通信からこの種の手法を検出するための高度なハンティングクエリ（KQL）も公開している。",
+    "topics": [
+      "AIセキュリティ",
+      "LLMメモリ",
+      "プロンプトインジェクション",
+      "AIレコメンデーション・ポイズニング",
+      "Microsoft Defender"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Manipulating AI memory for profit: The rise of AI Recommendation Poisoning"
+  }
+}

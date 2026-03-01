@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:41:03.916844+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cord: AIエージェントによるタスクツリーの動的な調整と自動構築",
+    "url": "https://www.june.kim/cord",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "エージェント自身がタスクを動的に分解し、依存関係を持つツリー構造を構築・実行する新しいマルチエージェント・プロトコル「Cord」が登場。",
+    "summaryBody": "既存のマルチエージェント・フレームワーク（LangGraphやCrewAIなど）は、開発者が事前にワークフローや役割を固定する必要がありました。Cordは、現在の高度なLLMの計画能力を活かし、実行時にエージェント自らがタスクを分解し、並列化や依存関係を定義したツリー構造を構築することを可能にします。特徴的なのは「spawn（独立した子タスク）」と「fork（文脈を継承する子タスク）」というコンテキスト制御の概念で、これにより効率的なリソース利用と深いコンテキスト理解を両立させます。Claude Code CLIとMCP（Model Context Protocol）を活用し、人間への質問もツリーのノードとして統合。エージェントが自律的にタスクを管理・修正しながら目標達成へと導く、柔軟な協調プロトコルを提案しています。",
+    "topics": [
+      "AIエージェント",
+      "マルチエージェント・オーケストレーション",
+      "Claude",
+      "MCP (Model Context Protocol)",
+      "タスク自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "Cord: Coordinating Trees of AI Agents"
+  }
+}

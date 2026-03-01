@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T06:04:01.458993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicによる蒸留攻撃（Distillation Attacks）の検出と防止に関する報告",
+    "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、中国のAIラボ3社（DeepSeek, Moonshot, MiniMax）がClaudeの能力を不正に抽出する大規模な「蒸留攻撃」を行っていたことを特定し、その手法と対策を公開しました。",
+    "summaryBody": "Anthropicは、特定のAIモデルの出力を利用して別のモデルを訓練する「蒸留（Distillation）」手法を悪用し、Claudeの推論やコーディング能力を不正に抽出する組織的なキャンペーンを特定しました。報告によると、DeepSeek、Moonshot AI、MiniMaxの3社が計1,600万回以上のやり取りを数万の不正アカウントを通じて実施。これらの攻撃はプロキシサービスを利用して地理的制限を回避し、思考プロセス（Chain-of-Thought）の抽出や、検閲回避のための学習データ生成を目的としていました。Anthropicは、これが米国の輸出管理や安全保障上のガードレールを無効化するリスクがあるとし、行動指針の強化や業界内での情報共有、検知システムの構築を進めるとしています。",
+    "topics": [
+      "Distillation Attacks",
+      "AI Security",
+      "Anthropic",
+      "DeepSeek",
+      "Model Extraction"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Detecting and preventing distillation attacks"
+  }
+}

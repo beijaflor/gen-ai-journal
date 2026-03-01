@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:44:44.376912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとZellijを使った開発環境作成の自動化",
+    "url": "https://tacoms-inc.hatenablog.com/entry/2026/02/24/114912",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Issueにラベルを貼るだけで、Claude CodeとZellijが連携してgit worktreeの作成からAIによるタスク立案までを自動完結させる仕組みの解説。",
+    "summaryBody": "GitHub Issueのステータス変更（ラベル付与）をトリガーに、開発環境のセットアップを自動化する高度なワークフローを紹介しています。ローカルで動作する監視スクリプトがClaude Codeのカスタムスキルを呼び出し、git worktreeの作成、Zellijによるターミナルペインの分割、そしてAIによるIssue内容の分析（planモード）までを一気通貫で実行します。開発者がPCを開いた時には既に環境構築とAIの提案が済んでいる状態を作り出すことで、開発のスイッチングコストを大幅に削減する実践的な手法です。具体的なBashスクリプトやClaude Codeのスキル定義も公開されています。",
+    "topics": [
+      "Claude Code",
+      "Zellij",
+      "git worktree",
+      "GitHub CLI",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

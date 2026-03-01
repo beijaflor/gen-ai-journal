@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:00:08.344815+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawでUnity自律開発を試したが、正直まだ厳しいと感じた話",
+    "url": "https://zenn.dev/omori432/articles/open-claw-unity-hackathon-2026",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ハッカソンでOpenClawを用いたUnityの自律開発に挑戦した著者が、並行PR生成の可能性と、フィードバックループの遅さやブラックボックス性による実戦投入の難しさを率直に評価している。",
+    "summaryBody": "著者はハッカソンにて、自律型AIエージェント「OpenClaw」を用いてUnityでのゲーム開発（サバイバーズ系）を自動化する実験を行いました。OpenClawは複数のサブエージェントを使い分け、13件ものPRを並行して生成するなど高い開発能力を見せましたが、最終的に出力されたゲームはシーン上にオブジェクトが配置されておらず動作しない状態でした。Unity開発特有の「実行して初めて判明するバグ」に対して、OpenClawのフィードバックループが非常に長く、進捗がブラックボックス化している点がボトルネックとなりました。現状ではClaude Codeを人間が直接操作・オーケストレーションする方が速度・精度ともに勝ると結論づけつつ、将来的なUnity Editorとの統合や可視化の改善に期待を寄せています。",
+    "topics": [
+      "OpenClaw",
+      "Unity",
+      "AIエージェント",
+      "Claude Code",
+      "自律開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

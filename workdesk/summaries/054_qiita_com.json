@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:53:47.413269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「サブエージェント」と「Agent Teams」は何が違うのか──設計レイヤで理解する使い分け",
+    "url": "https://qiita.com/nogataka/items/df6c43496b2da9d41311",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおける「実行」を担うサブエージェントと「議論」を担うAgent Teamsの構造的な違いを解説し、効率的なハイブリッド設計の指針を提示する記事です。",
+    "summaryBody": "この記事では、Claude Codeの並列処理機能である「サブエージェント」と「Agent Teams」の違いを、設計レイヤの観点から明確に定義しています。サブエージェントはFork-Joinモデルに基づき、親エージェントが仕事を切り分けて配る「実行レイヤ（働くエージェント）」であり、低コストで独立したタスクの並列実行に適しています。対してAgent Teamsは、複数の独立したインスタンスがP2Pで直接通信する「認知レイヤ（議論するエージェント）」であり、合意形成や多角的なレビュー、動的なタスク調整が必要な複雑なプロジェクトに向いています。また、戦略的な議論をAgent Teamsで行い、重い実装作業をサブエージェントに委譲するといった『ハイブリッド設計パターン』についても詳述されており、トークン効率とアウトプットの品質を両立させるための実戦的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "マルチエージェント",
+      "Anthropic",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

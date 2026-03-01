@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:42:07.581718+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Passport: AIエージェントのためのOAuth風ID検証プロトコル",
+    "url": "https://news.ycombinator.com/item?id=47096131",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが自身の身元を暗号学的に証明し、開発者がその信頼性を評価・制御できるようにするオープンソースのID検証プロトコル。",
+    "summaryBody": "Agent Passportは、AIエージェントが自身の正当性を証明するためのオープンソースの認証・認可レイヤーです。「Sign in with Google」のAIエージェント版を目指しており、Ed25519チャレンジ・レスポンス認証、JWTトークン、および0-100のリスク評価エンジンを提供します。Hacker Newsの議論では、SPIFFE/SPIREのような既存のワークロードID体系との比較や、JWTのベアラートークンとしての脆弱性（盗難リスクやConfused Deputy問題）について鋭い指摘がなされました。開発者はこれらに対し、DPoP（Proof-of-Possession）やオーディエンス制限の導入をロードマップとして示しています。また、単なる暗号学的証明だけでなく、GitHubやWorldcoinを通じた「人間による検証」をバックボーンに据えることで、信頼の起点（Root of Trust）を確保するアプローチをとっている点が特徴です。",
+    "topics": [
+      "AI Agents",
+      "Authentication",
+      "Cybersecurity",
+      "Open Source",
+      "OAuth"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Show HN: Agent Passport – OAuth-like identity verification for AI agents"
+  }
+}

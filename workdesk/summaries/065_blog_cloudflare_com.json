@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:56:40.192525+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用してNext.jsを1週間で再構築した方法",
+    "url": "https://blog.cloudflare.com/vinext/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareのエンジニアがAI（Claude）を用いて、Next.jsのAPIをVite上で再実装した高速な代替フレームワーク「vinext」を1週間で開発しました。",
+    "summaryBody": "Cloudflareは、Next.jsのAPIサーフェスをVite上にクリーンに再実装したドロップイン代替フレームワーク「vinext」を発表しました。一人のエンジニアがClaude（AI）を指揮する手法により、わずか1週間、トークン費用約1,100ドルで開発されました。ベンチマークではNext.js 16と比較してビルド速度が最大4.4倍高速化し、クライアントバンドルサイズは57%削減されています。Cloudflare Workersに最適化されており、App Router、RSC、Server Actions、Middlewareなどをサポート。さらに、トラフィック解析に基づき頻繁にアクセスされるページのみを事前生成する「Traffic-aware Pre-Rendering (TPR)」機能を搭載しています。現在は実験的な段階ですが、AIによるソフトウェア開発の新たな可能性を示しています。",
+    "topics": [
+      "Next.js",
+      "Cloudflare Workers",
+      "Vite",
+      "Generative AI",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "How we rebuilt Next.js with AI in one week"
+  }
+}

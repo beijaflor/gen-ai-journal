@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:50:33.405076+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMの検索ツールとして Gemini 2.5 Flash-Lite を試す",
+    "url": "https://note.com/npaka/n/ne2bd91159e32",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ローカルLLMの知識不足を補うため、Gemini 2.5 Flash-Liteのグラウンディング機能を検索ツールとして統合し、ハルシネーションを抑制する構成を提案する。",
+    "summaryBody": "10B以下の軽量なローカルLLM（Qwen3 8B等）は知識量に限界があり、従来の検索MCP（Brave SearchやTavily等）では検索結果のノイズによるハルシネーションが課題となっていた。本記事では、Googleの最新軽量モデル「Gemini 2.5 Flash-Lite」のGrounding（検索）機能を検索ツールとして利用し、Ollama上で動くQwen3に最新情報を提供するハイブリッド構成を解説している。AI（Codex）を活用したPython CLIアプリの実装コードが公開されており、実際に「まどか☆マギカ」の人気投票など最新のウェブ情報が必要な質問に対して、正確なソース提示を伴う回答が可能であることを実証している。速度・正確性・カスタマイズ性の観点から、クラウドLLMをツールとして使う有効性が示されている。",
+    "topics": [
+      "ローカルLLM",
+      "Gemini 2.5 Flash-Lite",
+      "Ollama",
+      "Qwen3",
+      "Grounding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

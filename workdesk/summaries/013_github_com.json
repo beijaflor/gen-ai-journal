@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:43:22.742308+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "zclaw: ESP32で動作する超軽量（888KiB以下）パーソナルAIアシスタント",
+    "url": "https://github.com/tnm/zclaw",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ESP32マイコン上で動作し、GPIO操作やスケジュール実行、外部LLM連携をわずか888KiBのファームウェアサイズで実現する超軽量AIアシスタント。",
+    "summaryBody": "zclawは、ESP32シリーズ（C3, S3, C6など）に最適化された、極めてフットプリントの小さいパーソナルAIアシスタントです。主な特徴として、ファームウェア全体のサイズを888KiB以下（アプリロジックは約25KB）に抑えつつ、Wi-Fi、TLS暗号化、ネットワーキングスタックをすべて統合しています。自然言語によるGPIOの読み書き、cron形式のタスクスケジューリング、再起動後も保持される永続メモリ、カスタムツールの作成に対応しています。LLMバックエンドはOpenAI、Anthropic、OpenRouterに加え、ローカルのOllamaもサポート。Telegramボットや専用のWebリレーを介してチャット形式で操作可能です。フラッシュ暗号化による認証情報の保護も考慮されており、実用的なエッジAIエージェントの構築が可能です。",
+    "topics": [
+      "ESP32",
+      "Edge AI",
+      "IoT",
+      "Embedded Systems",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - tnm/zclaw: Your personal AI assistant at all-in 888KiB (~25KB in app code). Running on an ESP32. GPIO, cron, custom tools, memory, and more."
+  }
+}

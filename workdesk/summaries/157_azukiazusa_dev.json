@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:50:49.668268+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントを通じてコードとキャンバスを接続するデザインツール Paper を試してみた",
+    "url": "https://azukiazusa.dev/blog/ai-agent-design-tool-paper/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントとMCPを介して、デザインの生成・コード化・同期を双方向に行えるデザインツール「Paper」の連携ワークフローの解説。",
+    "summaryBody": "Paperは、AIエージェント（Claude Code等）とMCP（Model Context Protocol）を通じて接続し、キャンバスとコードを双方向に操作できるデザインツールです。本記事では、デスクトップ版PaperのMCPサーバーをClaude Codeに登録し、自然言語プロンプトからポートフォリオサイトのデザインを自動生成する方法を紹介しています。AIは`write_html`などのツールを使用してHTML/CSSの知識をキャンバスに直接反映でき、さらに生成されたデザインをNext.jsとTailwind CSSのコードへ変換、あるいはコード側の変更をキャンバス側のスタイルに再反映する「デザインとコードの同期」が可能です。開発者が本番コードに近い状態でデザインを維持できる、次世代のフロントエンド開発体験を提供しています。",
+    "topics": [
+      "Paper",
+      "AI Agent",
+      "Claude Code",
+      "MCP",
+      "Design-to-Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI エージェントを通じてコードとキャンバスを接続するデザインツール Paper を試してみた"
+  }
+}

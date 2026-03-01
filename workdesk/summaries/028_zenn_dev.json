@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:47:25.320527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデル評価をClaude Code x Agent Skillsを使って完全自動運転した話",
+    "url": "https://zenn.dev/sakasegawa/articles/374e19d1fabb06",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSkill機能を活用し、モデルの調査からクラウドGPUでのベンチマーク、レポート生成までを自律的に完結させる「agentic-bench」の開発記録。",
+    "summaryBody": "著者の逆瀬川氏が、Claude Codeの新機能「Agent Skills」を用いてAIモデルの評価プロセスを完全自動化した取り組みを紹介しています。開発された「agentic-bench」は、/agentic-benchコマンドにモデルURLを渡すだけで、モデルのスペック調査、評価計画の策定、ModalやHugging Face等のクラウドGPUを用いた推論テスト、そして最終的なHTMLレポート生成までを自律的に行います。記事内ではGLM-OCRを例に、ライブラリのバグ修正や環境設定をAgentが自己解決しながら進むプロセスが詳細なログと共に示されており、実運用におけるTranscript（実行ログ）評価の重要性や、Agentの自由度を阻害しない設計思想についても述べられています。成果物はMITライセンスでGitHubに公開されています。",
+    "topics": [
+      "Claude Code",
+      "Agent Skills",
+      "AI Agent",
+      "Model Evaluation",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

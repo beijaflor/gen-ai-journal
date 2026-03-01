@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:49:59.927868+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【検証】AIへの「アクセシビリティ指示」でデザインシステムの実装品質はどう変わるか",
+    "url": "https://toranoana-lab.hatenablog.com/entry/2026/02/19/130000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのSkills機能を用い、AIへのアクセシビリティ指示がデザインの実装品質に与える影響を、Lighthouseスコアや実測コントラスト比で定量的に検証したレポート。",
+    "summaryBody": "この記事では、Claude Codeを使用してモダンなLiquid Glass風デザインシステムを構築する際、「アクセシビリティ指示」の有無によって成果物がどう変化するかを実験しています。デジタル庁のガイドブックをベースにした具体的な指示を加えることで、メディアクエリ（prefers-reduced-motion等）への対応やフォーカスリングの視認性は向上しましたが、一方でLighthouseスコアだけでは検出できないコントラスト比の不足や、HTMLセマンティクスの実装漏れといった課題も明らかになりました。特に、AIへの指示ファイル（SKILL.md）が長すぎると後半の指示が読み飛ばされる傾向があり、ファイルを分割・構造化する運用の重要性を指摘しています。AIによる自動生成の限界と、最終的な「人の目によるチェック」の必要性を実証する内容です。",
+    "topics": [
+      "Claude Code",
+      "アクセシビリティ",
+      "AIコーディング",
+      "デザインシステム",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

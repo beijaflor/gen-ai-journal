@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:54:16.874161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini CLIのフック機能によるワークフローのカスタマイズ",
+    "url": "https://developers.googleblog.com/tailor-gemini-cli-to-your-workflow-with-hooks/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemini CLIにフック機能が導入され、開発者はソースコードを直接変更することなく、AIエージェントのライフサイクルに独自のロジックを統合して動作をカスタマイズできるようになりました。",
+    "summaryBody": "Googleは、Gemini CLI v0.26.0以降で利用可能な新しいカスタマイズ機能「フック（Hooks）」を発表しました。フックはエージェントのライフサイクルにおける特定のポイントで実行される「ミドルウェア」として機能し、追加のコンテキスト（gitコミット履歴やドキュメントなど）の注入、ツールの実行前検証、組織ポリシーの適用、通知の送信などが可能です。記事内では、ファイル書き込み前にAPIキーなどの機密情報を自動検知してブロックする「BeforeTool」フックのシェルスクリプト例や、タスクが完了するまで自律的に試行を繰り返す「Ralph loop」手法を用いた拡張機能への応用が紹介されています。これにより、汎用的なAIエージェントを、個別のプロジェクトやセキュリティ要件に合わせて最適化された専用ツールへと進化させることができます。フックは既存のGemini CLI拡張機能とも互換性があり、共有や導入も容易です。",
+    "topics": [
+      "Gemini CLI",
+      "LLM Agents",
+      "Developer Tools",
+      "Security",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Tailor Gemini CLI to your workflow with hooks"
+  }
+}

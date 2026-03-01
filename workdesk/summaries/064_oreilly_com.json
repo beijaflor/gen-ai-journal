@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:56:12.686553+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型AIの失敗に潜む隠れたコスト：マルチエージェント・システムは確率論的なパイプラインである",
+    "url": "https://www.oreilly.com/radar/the-hidden-cost-of-agentic-failure/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチエージェント・システムにおけるエラーの連鎖的な増幅を「確率論的パイプライン」として捉え、バリデーション・ゲートやテスト時計算、強化学習を用いて信頼性を設計する方法を解説する。",
+    "summaryBody": "LLMを基盤としたマルチエージェント・システム（MAS）の普及に伴い、単体のモデル精度ではなく「構成」に起因する信頼性の欠如が大きな課題となっています。本記事では、MASを「確率論的なパイプライン」と定義し、検証なしにエージェントを連結するとエラー確率が指数関数的に増大する（ルーサーの法則）ことを指摘しています。この「アーキテクチャ上の負債」を回避するために、3つのステップが提案されています。第一に、PydanticやInstructorを用いた厳格なバリデーション・ゲートの導入により、エラーの伝播を遮断し信頼性を増幅させること。第二に、Best-of-NサンプリングやRULERのような「テスト時計算」を活用し、単発の実行から探索ベースのプロセスへ移行すること。そして第三に、GRPO（Group Relative Policy Optimization）などの強化学習手法を用いて、成功した推論パスをモデルのポリシーに内面化させる「償却された知性」の実現です。MASの構築は確率的な期待に頼るのではなく、決定論的なエンジニアリングによって設計されるべきであると結論付けています。",
+    "topics": [
+      "AI Agents",
+      "Multi-Agent Systems",
+      "Reliability Engineering",
+      "LLM Ops",
+      "Reinforcement Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "The Hidden Cost of Agentic Failure"
+  }
+}
