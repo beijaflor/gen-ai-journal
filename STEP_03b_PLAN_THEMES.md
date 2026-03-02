@@ -166,6 +166,7 @@ For each theme:
   - Check: Do titles highlight contradictions or pose questions?
 - [ ] Are theme introductions engaging and insightful?
 - [ ] Is the article distribution appropriate (18-25 main, rest annex)?
+- [ ] If any theme has fewer than 3 articles, is there documented justification? (Single-article themes are permitted for truly exceptional content — see STEP_04 Section 4 for criteria.)
 - [ ] Do themes align with curation_criteria.md principles?
 
 #### 9. Mark Plan as Approved
@@ -280,6 +281,8 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 - Theme 5: 3 articles
 - Theme 6: 3 articles
 - [etc.]
+
+*Note: A theme with 1 article is permitted for truly exceptional content. Document justification in the theme's Editorial Notes. Default target remains 3-5 per theme.*
 
 **Total Planned for Main:** XX articles
 **Remaining for Annex:** YY articles

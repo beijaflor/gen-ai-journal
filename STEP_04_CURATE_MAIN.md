@@ -71,6 +71,7 @@ See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for det
 - [ ] Ensure thematic coherence across all selected articles
 - [ ] Check for unintentional duplicates or redundancy within and across themes
 - [ ] Confirm each theme has adequate coverage (typically 3-5 articles per theme)
+  - **Exception:** A theme MAY contain just 1 article if that article is truly exceptional — see Section 4 below.
 
 ### 3. Avoid Common Pitfalls
 
@@ -81,6 +82,19 @@ Do NOT include:
 - Duplicate coverage of the same topic
 - Personal diary-style blog posts without broader insights
 - Articles that don't fit the approved themes (save for annex consideration)
+
+### 4. Single-Article Theme Exception
+
+Themes typically contain 3-5 articles, but **a theme MAY contain just 1 article** when all of the following criteria are met:
+
+1. **Exceptional depth or importance**: The article is a primary, definitive source — e.g., a landmark research paper, a comprehensive long-form analysis, or an announcement with no peer coverage of comparable quality.
+2. **No dilution from weaker articles**: Candidate supporting articles for this theme are genuinely weaker and would dilute the narrative. Do NOT pad a single-article theme to meet a count target.
+3. **Thematically distinct**: The article cannot be naturally absorbed as a supporting piece into another theme. A standalone theme is only justified when its angle is distinct enough to stand alone.
+4. **Documented justification**: Note WHY this is a single-article theme in the editorial plan or as a curation deviation note.
+
+**Assembly note (STEP_08):** Use the editor's voice more heavily to provide surrounding analysis and context that multiple articles would normally provide. The article is evidence; the editor voice is the structure.
+
+**This is NOT the default.** Use sparingly — 0-1 instances per journal at most.
 
 ## Output Files
 
@@ -140,7 +154,7 @@ This command:
 - [ ] All articles align with approved themes from STEP_03b
 - [ ] Theme organization in curated_journal_sources.md matches editorial plan
 - [ ] No duplicate topics within same theme or across themes
-- [ ] Each theme has adequate coverage (typically 3-5 articles)
+- [ ] Each theme has adequate coverage (typically 3-5 articles; single-article themes require documented justification — see Section 4 above)
 - [ ] Verify `workdesk/non_main_sources.md` contains remaining sources
 - [ ] Document any deviations from editorial plan (see below)
 
