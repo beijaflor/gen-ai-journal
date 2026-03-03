@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:43:23.803855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を活用した電子カルテの外部連携仕様書メンテナンス自動化の取り組み",
+    "url": "https://dev.henry.jp/entry/2026/03/02/120532",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのマルチエージェント機能を活用し、電子カルテのソースコードから外部連携仕様書を自動生成・更新し、CIで整合性を担保するワークフローの構築事例。",
+    "summaryBody": "株式会社ヘンリーにおける、Claude Codeを用いた外部連携仕様書のメンテナンス自動化に関する技術ブログです。電子カルテは多種多様な外部システムと連携するため仕様書の維持が不可欠ですが、手動更新は負荷が高く齟齬が生じやすいという課題がありました。本取り組みでは、CI上で変更を検知する「spec-change-check」と、コードベースを探索して仕様書を生成・検証する「generate-integration-spec」の2つのSkillを構築しました。特に生成スキルは、探索・生成・レビューの3つの専門エージェントによるマルチエージェント構成を採用しており、設定ファイル駆動で汎用性を高めつつ、コードベースの事実に基づいた正確なドキュメント出力を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ドキュメンテーション",
+      "LLM",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

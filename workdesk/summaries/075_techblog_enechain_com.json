@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:43:47.162103+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PdMがClaude Codeを使い始めて変わったこと",
+    "url": "https://techblog.enechain.com/entry/pdm-claude-code-impact",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "enechainのPdMが、Claude Codeを用いた仕様書作成・レビューの自動化パイプライン構築や業務ツールの内製化により、プロダクトマネジメント業務を劇的に効率化した実践事例。",
+    "summaryBody": "enechain所属のPdMによる、Claude Codeを実務に組み込んだ詳細な活用レポートです。最大の特徴は、`.claude/agents/`を用いて「仕様書作成（spec-author）」と「レビュー（spec-critic）」の2つの役割を分離し、AI同士で品質を高める自動化パイプラインを構築している点にあります。この仕組みにより、致命的な欠陥がないことを確認した上でNotionへ自動投稿するワークフローを実現しています。他にも、HTMLモックの生成、リリースノートの自動化、Hooksを利用したiTerm2への通知設定など、開発環境に近いツールならではの高度なカスタマイズが紹介されています。著者は、AIに「作業」を移譲することで、人間がドメイン知識に基づいた「判断」と「検証」に集中できるようになったと述べています。",
+    "topics": [
+      "Claude Code",
+      "Product Management",
+      "AI Agent",
+      "enechain",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

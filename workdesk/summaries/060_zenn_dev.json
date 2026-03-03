@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:40:28.712868+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "冪等（べきとう）性という名の技術的負債 ── AIコーディングで陥った「エラー隠蔽」の罠",
+    "url": "https://zenn.dev/heybombon/articles/be7b28840cd580",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIが提案する「冪等性の確保」という対症療法が、設計上の冗長性や真のエラー原因を隠蔽する技術的負債になり得るリスクを、Flutter開発の実例から解説する。",
+    "summaryBody": "Flutterアプリ開発において、同一処理が2つの経路（Signal購読とWidgetライフサイクル）から同時に呼ばれ、DB競合エラーが発生。AIはフラグ管理による「冪等性の確保」でエラーを抑制する修正を提案したが、これは根本的な解決ではなく、真の問題を隠蔽するものだった。著者はドメイン知識に基づき、呼び出し経路を1箇所に制限することで、防御コード（冪等性チェック）自体を不要にする設計へとリファクタリングした。AIの「処理を継続させる」バイアスを理解し、安易なガードコードの追加よりも、入口を減らすシンプルな設計と既存コードの再検証が重要であると説いている。",
+    "topics": [
+      "Flutter",
+      "AIコーディング",
+      "リファクタリング",
+      "冪等性",
+      "技術的負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

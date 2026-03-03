@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:29:26.638644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのコンテキスト消費を98%削減するMCPサーバー「Context Mode」",
+    "url": "https://mksg.lu/blog/context-mode",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCPツールの生出力をサンドボックスで処理・要約することで、Claude Codeのコンテキスト消費を劇的に抑え、セッション時間を最大6倍に延ばすオープンソースツール。",
+    "summaryBody": "Claude CodeなどのAIエージェントがMCP（Model Context Protocol）ツールを使用する際、PlaywrightのスナップショットやGitHubのIssueリストといった膨大な生データがコンテキストウィンドウを即座に埋め尽くす課題があります。本記事で紹介される『Context Mode』は、エージェントとツールの間に位置するMCPサーバーであり、出力をサンドボックス内で処理して最小限の有用なデータのみをAIに返すことで、コンテキスト消費を平均98%削減します。\n\n主な機能として、10種類の言語ランタイムに対応した分離実行環境（サンドボックス）、SQLite FTS5とBM25ランキングを活用した全文検索可能なローカル知識ベース、URLからコンテンツを抽出・索引化する機能を備えています。ベンチマークでは、315KBの生データが5.4KBまで圧縮され、通常30分で限界に達するセッションを3時間まで継続可能にすることが示されています。Cloudflareが提唱したツール定義の圧縮に対し、本ツールはツールの「出力側」の圧縮に特化しており、開発者の生産性を直接的に向上させます。",
+    "topics": [
+      "MCP",
+      "Claude Code",
+      "LLM Context Optimization",
+      "AI Agents",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Stop Burning Your Context Window — We Built Context Mode"
+  }
+}

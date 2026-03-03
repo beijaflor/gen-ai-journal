@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:39:01.391604+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdの防御は本当に効くのか？ — 10種の攻撃で検証してみた",
+    "url": "https://qiita.com/kenimo49/items/3273fd4406bf0aa03acf",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CLAUDE.mdにセキュリティ防御策を記述する効果を10種の攻撃手法で検証し、ブロック率が66%から100%へ大幅に改善することを実証した技術記事。",
+    "summaryBody": "CLAUDE.mdにセキュリティ対策を記述することで、プロンプトインジェクション攻撃をどの程度防げるかを検証した実験レポートです。Claude 3 Haikuを対象に、防御設定の有無によるブロック率を比較。10種類の攻撃パターン（ロールプレイ、多段攻撃、デバッグモード詐称等）を用いて各3回、計60回のテストを実施しました。実験の結果、防御なしではブロック率66.7%だったのに対し、防御ありでは100%まで向上しました。特にロールプレイ攻撃は防御なしでは100%突破されましたが、特定の禁止パターンを定義することで完全に阻止可能となりました。LLMは確率的に動作するため完璧な防御は困難ですが、CLAUDE.mdに数行のセキュリティセクションを加えるだけで攻撃耐性が大幅に向上することが確認されました。記事では自環境で検証するためのスクリプト例も公開されており、エンジニアが実効性を確認するための有用なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "CLAUDE.md",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
