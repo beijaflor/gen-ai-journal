@@ -87,21 +87,28 @@ EOF
 - [02_omitted_summaries.md](https://github.com/beijaflor/gen-ai-journal/blob/2025-12-27/journals/2025-12-27/02_omitted_summaries.md)
 ```
 
-### 6. Create GitHub Release
+### 6. Create Draft GitHub Release
+
+Create the release as a **draft** so the human can review before it goes public.
 
 ```bash
-# Create GitHub release with the generated description
+# Create draft GitHub release (NOT yet published)
 gh release create YYYY-MM-DD \
   --title "YYYY-MM-DD" \
-  --notes-file /tmp/release_notes_YYYY-MM-DD.md
-
-# Or create manually through GitHub UI:
-# 1. Go to https://github.com/[owner]/gen-ai-journal/releases/new
-# 2. Choose tag: YYYY-MM-DD
-# 3. Release title: YYYY-MM-DD
-# 4. Paste the release description from above
-# 5. Click "Publish release"
+  --notes-file /tmp/release_notes_YYYY-MM-DD.md \
+  --draft
 ```
+
+### 7. ⚠️ HUMAN REVIEW GATE — Review and Publish Draft Release
+
+**STOP. Do not proceed until the human has reviewed and published the draft release.**
+
+- [ ] Open the draft release on GitHub: `https://github.com/beijaflor/gen-ai-journal/releases`
+- [ ] Verify website links are correct for the journal date
+- [ ] Verify the journal files linked are correct
+- [ ] Click **"Publish release"** when satisfied
+
+Only after the human publishes the release should the workflow be considered complete.
 
 ## Post-Publication Tasks
 
@@ -109,7 +116,9 @@ gh release create YYYY-MM-DD \
 - [ ] **Tag Created**: Verify tag exists with `git tag -l`
 - [ ] **Branch Cleaned**: Confirm feature branch is deleted
 - [ ] **Files Accessible**: Check journal files are accessible on main branch
-- [ ] **Release Published**: Verify GitHub release (if created)
+- [ ] **Draft Release Created**: Verify draft release exists on GitHub
+- [ ] **Human Review**: Human has reviewed draft release content
+- [ ] **Release Published**: Human has clicked "Publish release" on GitHub
 
 ### Workspace Preparation
 - [ ] **Workdesk Ready**: Confirm workdesk is clean for next cycle
@@ -128,7 +137,7 @@ Use date-based versioning for journal releases:
 
 ### Direct Publication (No GitHub Release)
 ```bash
-# Minimal publication - just tag and cleanup
+# Minimal publication - just tag and cleanup (skips draft release step)
 git tag -a "YYYY-MM-DD" -m "Weekly journal for YYYY-MM-DD"
 git push origin YYYY-MM-DD
 git branch -d journal/YYYY-MM-DD
