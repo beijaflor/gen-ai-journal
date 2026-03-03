@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:41:13.481474+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "もうポート番号は覚えない ── Docker Compose のポート競合を消す CLI「tug」を作った",
+    "url": "https://zenn.dev/mickamy/articles/e4bb206db564a5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Docker Composeのポート競合問題を、Traefikによる自動URL割り当てとハッシュベースのTCPポート固定によって解決するCLIツール「tug」の紹介。",
+    "summaryBody": "Docker Composeを利用する開発環境、特にgit worktreeで同一プロジェクトを複数同時に立ち上げる際に発生する「ポート競合」を自動解決するツール「tug」の解説記事です。tugは既存のcompose.yamlを編集することなく、HTTPサービスにはTraefikを介してプロジェクト名に基づいた「*.localhost」URLを付与し、TCPサービス（DB等）にはプロジェクト名やサービス名から算出される決定論的なポート番号を自動で割り振ります。内部的には.tug/override.yamlを自動生成してdocker composeをラップして実行する仕組みで、ポート管理の手間を完全に排除することを目指しています。",
+    "topics": [
+      "Docker",
+      "Docker Compose",
+      "Traefik",
+      "Go",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

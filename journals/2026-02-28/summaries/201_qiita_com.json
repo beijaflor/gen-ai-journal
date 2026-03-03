@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:02:06.235911+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにRemote Controlが追加されたのでPCの睡眠を邪魔するcaffeinateプラグインを作った #macOS",
+    "url": "https://qiita.com/hiropon122/items/1ced6e70fb43744e586b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのRemote Control機能利用時にPCがスリープして操作不能になるのを防ぐ、自動終了フック付きのmacOS用caffeinateプラグインの開発と導入方法の解説。",
+    "summaryBody": "Claude Codeに追加されたRemote Control機能（外出先等からローカルセッションを操作できる機能）の弱点である、ホストPCのスリープによる接続断を解決する記事です。macOS標準の`caffeinate`コマンドをClaude Code内から制御するプラグインを作成。単なる実行スキルではなく、`plugin.json`の`SessionEnd`フックを利用することで、セッション終了時に自動でスリープ防止を解除し、停止忘れを防ぐ仕組みを実現しています。インストール手順や、Remote Controlの常時有効化設定との併用についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "macOS",
+      "caffeinate",
+      "Remote Control",
+      "Agent Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

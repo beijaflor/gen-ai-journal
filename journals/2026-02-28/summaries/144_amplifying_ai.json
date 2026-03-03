@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:47:10.623622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの開発ツール選定調査：AIエージェントは「購入」より「自作」を好む傾向",
+    "url": "https://amplifying.ai/research/claude-code-picks",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2,430回のリポジトリ操作を分析した結果、Claude Codeは多くのカテゴリで既存サービスよりカスタム実装を優先し、ツール選定ではGitHub ActionsやVercelを圧倒的に支持していることが判明した。",
+    "summaryBody": "Claude Code（v2.1.39）の挙動を2,430件の試行から分析した調査レポートによると、AIエージェントは多くの開発カテゴリで外部ツールの導入よりも「自作（DIY）」を提案する傾向があります。例えば、認証機能ではAuth0等を使わずJWTとbcryptでの実装を、機能フラグではLaunchDarkly等を使わず環境変数ベースの仕組みを構築します。一方でツールを選ぶ際の「デフォルトスタック」は明確で、GitHub Actions(94%)、Stripe(91%)、Vercel(JSデプロイ100%)などが高い支持を得ています。モデル間では、Sonnet 4.5がPrisma等の定番を好むのに対し、最新のOpus 4.6はDrizzleへの移行や、より積極的な自作コード採用といった「モダンかつミニマル」な傾向を示しています。対照的に、Redux、Express、AWS、GCPなどは推奨候補から外れる「Invisible（不可視）」な存在になりつつあります。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ツール選定",
+      "LLMベンチマーク",
+      "ソフトウェア開発スタック"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "What Claude Code Actually Chooses"
+  }
+}

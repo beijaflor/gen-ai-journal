@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T06:38:58.844869+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TerraformをClaude Codeで書く技術：WezTerm連携とHooksによるガードレール設定",
+    "url": "https://www.docswell.com/s/mozumasu/KEY6MD-2026-02-25-claude-code-terraform",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "WezTermでのセッション管理や、Claude CodeのHooks機能を用いたTerraform実行の自動ガードレール構築手法を解説する技術資料。",
+    "summaryBody": "Claude Codeを活用してTerraformコードを効率的かつ安全に開発するための実践的なテクニックが紹介されています。主な内容は、WezTermを用いたAIセッション管理のカスタマイズ、`CLAUDE.md`とLinter（tflint, trivy等）の使い分けによるコンテキスト最適化、そしてHooks機能を利用した`terraform apply`や`git push`などの禁止コマンド制御です。特に、Docker環境下でのコマンド実行制御や、編集後の自動フォーマット・バリデーションなど、開発現場での事故を防ぎつつ生産性を向上させるための具体的な設定（LuaスクリプトやPythonによるフック実装）に重点が置かれています。",
+    "topics": [
+      "Terraform",
+      "Claude Code",
+      "Infrastructure as Code",
+      "WezTerm",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

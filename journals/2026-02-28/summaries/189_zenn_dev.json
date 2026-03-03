@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:58:59.649152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "portless が便利なら、Docker Compose には Traefik がある",
+    "url": "https://zenn.dev/mickamy/articles/9a251e7cf51b9c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TraefikのdefaultRuleを活用し、Docker Compose環境で各サービスを自動的に名前付きURL（localhost）へマッピングする手法の紹介。",
+    "summaryBody": "Vercel Labsが公開した「portless」はローカル開発のポート番号を名前付きURLに変換する便利なツールですが、Docker Compose環境ではそのまま利用できません。この記事では、リバースプロキシのTraefikが持つ`defaultRule`という機能を使い、各コンテナへのラベル記述なしで自動的に「サービス名.プロジェクト名.localhost」というURLを割り当てる手法を解説しています。Docker Composeが自動付与する内部ラベルをGoテンプレートで参照する点がポイントです。この構成は`git worktree`と非常に相性が良く、ブランチごとに作成されたディレクトリ（プロジェクト名）に応じてURLが自動的に分離されるため、複数ブランチを並行して開発する際のリソース衝突やポート管理のストレスを解消できます。",
+    "topics": [
+      "Docker Compose",
+      "Traefik",
+      "portless",
+      "git worktree",
+      "ローカル開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

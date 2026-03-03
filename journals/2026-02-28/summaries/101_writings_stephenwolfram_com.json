@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T12:07:46.582720+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Wolfram技術をLLM向け「基盤ツール」として提供：CAGによる高精度計算の統合",
+    "url": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Stephen Wolframは、LLMの不正確さを補うためにWolfram Languageを「基盤ツール」と位置づけ、計算によって情報を生成・注入する新手法「CAG」と関連APIを発表した。",
+    "summaryBody": "Stephen Wolfram氏は、LLM（大規模言語モデル）には「精密さ」や「深い計算能力」が欠けていると指摘し、それを補完する「Foundation Tool（基盤ツール）」としてWolframテクノロジーを統合する新たな展開を発表しました。本記事の核心は、従来のRAG（検索補完生成）を拡張した「CAG (Computation-Augmented Generation：計算補完生成)」という概念です。CAGは既存の文書を検索するのではなく、Wolframの計算エンジンを用いてリアルタイムに正確な知識や計算結果を生成し、LLMに注入します。\n\n具体的には以下の3つのアクセス手段が公開されました：\n1. **MCP (Model Context Protocol) サービス**: 業界標準のMCPを介して、Claude Desktop等の対応システムから即座にWolfram Engineを利用可能にする。\n2. **Agent One API**: LLMとWolframツールを統合した「ユニバーサル・エージェント」で、既存のLLM APIの代替として機能する。\n3. **CAG Component APIs**: 大規模システム向けの細粒度な統合API。\n\nこれにより、LLMが「計算的に考え、推論する」ための強力な武器が標準的なプロトコルで提供されることになります。",
+    "topics": [
+      "Wolfram Language",
+      "LLM",
+      "CAG (Computation-Augmented Generation)",
+      "MCP (Model Context Protocol)",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Making Wolfram Tech Available as a Foundation Tool for LLM Systems"
+  }
+}

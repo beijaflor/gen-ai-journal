@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:40:06.462977+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを用いた大規模なオンライン匿名解除：匿名投稿から実名を特定する新たな脅威",
+    "url": "https://simonlermen.substack.com/p/large-scale-online-deanonymization",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMエージェントが、RedditやHacker Newsなどの匿名投稿に含まれる断片的な情報から個人を特定し、数万人規模の候補者の中から高精度で実名を同定できることを示した研究。",
+    "summaryBody": "LLM（大規模言語モデル）の推論能力を利用して、匿名化されたオンライン活動から実名を特定する「匿名解除（Deanonymization）」の実現可能性を検証した研究報告です。従来、非構造化データからの個人特定には人間による膨大な調査が必要でしたが、LLMエージェントを用いることで、投稿内容から居住地や職業、興味関心を推論し、外部の公開プロフィール（LinkedIn等）と照合するプロセスを自動化・大規模化できることが示されました。\n\n具体的には、Hacker Newsの投稿とLinkedInプロフィールの紐付けや、Redditの投稿履歴の断片化されたデータからの同一人物判定において、従来手法を大幅に上回る精度を達成しています。また、Anthropicが公開した科学者への匿名インタビューデータからも、実在の人物を特定することに成功しました。この結果は、AIによる大規模な監視やプライバシー侵害のコストが劇的に低下していることを示唆しており、プラットフォームによるAPI制限や、ユーザー側のセキュアな情報発信の重要性を強調しています。",
+    "topics": [
+      "LLM",
+      "プライバシー",
+      "サイバーセキュリティ",
+      "匿名解除",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Large-Scale Online Deanonymization with LLMs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:55:00.357262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント設定ファイル「AGENTS.md」の自動生成（/init）を止めるべき理由：最新研究が示す弊害",
+    "url": "https://addyosmani.com/blog/agents-md/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント用のAGENTS.md（またはCLAUDE.md）を自動生成することは、情報の冗長化によりコストを20%増大させ精度を低下させるため、手動で非発見的な情報のみを記述すべきである。",
+    "summaryBody": "Addy Osmani氏は、開発者がAIコーディングエージェント向けに作成する「AGENTS.md」の現状の慣習に異を唱えています。2026年の最新研究（Lulla et al. や ETH Zurich）を引用し、`/init`コマンドによる自動生成ファイルがエージェントのパフォーマンスに与える悪影響を詳説しています。\n\n主な論点は以下の4点です：\n1. **冗長性のコスト**: エージェントはコードを読み取ることでディレクトリ構造やスタックを自力で把握できます。自動生成された重複情報は「ノイズ」となり、トークン消費を20%以上増加させ、タスク成功率を数%低下させます。\n2. **アンカリング効果**: AGENTS.mdに記載された古い情報や特定のパターンは、タスクに関係なくエージェントの注意を固定（アンカー）させ、柔軟な推論を妨げます。\n3. **記述すべき情報の選別**: `uv`のような特定のツール利用、標準外のパターン、ディレクトリの非自明な落とし穴など、「コードを読んでも推論できない情報」のみが記述に値します。\n4. **リファクタリングの契機**: エージェントが迷う箇所を文書で補填するのではなく、コード構造自体を修正すべきです。AGENTS.mdは「未解決のコードの臭い（Code Smell）」のリストとして扱うのが健全なメンタルモデルです。\n\n結論として、静的で巨大なファイルよりも、タスクに応じて動的にコンテキストをロードする階層的なアーキテクチャへの移行を推奨しています。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "LLM Context Management",
+      "AGENTS.md",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": "Stop Using /init for AGENTS.md"
+  }
+}

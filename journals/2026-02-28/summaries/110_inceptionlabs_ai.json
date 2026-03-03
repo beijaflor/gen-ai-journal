@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:38:45.960732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Inceptionが「Mercury 2」を発表：拡散モデルベースの超高速推論LLM",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "拡散モデル（Diffusion）を採用し、従来の自己回帰型モデルの限界を打破することで、毎秒1,000トークンを超える超高速な推論を実現した次世代LLM「Mercury 2」が登場しました。",
+    "summaryBody": "Inception社が発表した「Mercury 2」は、テキスト生成に拡散モデル（Diffusion-based reasoning）を導入した画期的なLLMです。従来の自己回帰型モデルのようにトークンを一つずつ逐次的に生成するのではなく、並列的なリファインメントプロセスを通じて生成を行うため、NVIDIA Blackwell GPU上で毎秒1,009トークンという圧倒的なスピードを達成しています。これにより、エージェントのマルチステップ処理、リアルタイム音声対話、複雑なRAGパイプラインにおける遅延（レイテンシ）の蓄積という課題を根本から解決します。コスト面でも100万出力トークンあたり0.75ドルと非常に安価で、128Kのコンテキスト窓やネイティブなツール利用機能を備え、OpenAI APIとの互換性も保持しています。",
+    "topics": [
+      "LLM",
+      "Diffusion Model",
+      "Inference Optimization",
+      "AI Agents",
+      "Real-time AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Mercury 2 – Inception Introducing Mercury 2, the fastest reasoning LLM"
+  }
+}

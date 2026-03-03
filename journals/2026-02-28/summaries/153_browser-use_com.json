@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:49:51.710212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セキュアでスケーラブルなAIエージェント用サンドボックス基盤の構築：Browser Useの事例",
+    "url": "https://browser-use.com/posts/two-ways-to-sandbox-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Browser Useが、機密情報を一切持たないエージェントをUnikraftマイクロVM上で実行し、コントロールプレーン経由で外部接続する高度なサンドボックス構成を解説。",
+    "summaryBody": "Browser Use社が、数百万件のウェブエージェントを安全かつ大規模に実行するために構築したインフラ基盤の技術解説です。当初はバックエンドでエージェントを動かし、コード実行ツールのみを隔離する手法をとっていましたが、セキュリティとスケーラビリティを究極まで高めるため「エージェント自体を完全に隔離し、ステートレスにする」アーキテクチャ（Pattern 2）へと移行しました。\n\n本番環境ではUnikraftのマイクロVMを採用し、起動1秒未満という高速性と、アイドル時の自動サスペンドによるコスト最適化を実現しています。サンドボックス内ではPythonソースを削除してコンパイル済みバイトコードのみを実行、さらに特権解除や環境変数の除去といった徹底したハードニングが施されています。エージェントの外部通信はすべて「コントロールプレーン」というプロキシを介し、LLMへのリクエストやS3へのファイル保存（事前署名URLを利用）をこのプレーン側で管理。サンドボックス側には一切のAPIキーや認証情報を持たせないことで、侵害時の被害を最小限に抑えつつ、独立した柔軟なスケーリングを可能にしています。",
+    "topics": [
+      "AI Agents",
+      "Sandboxing",
+      "Unikraft",
+      "Micro-VMs",
+      "Cloud Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "How We Built Secure, Scalable Agent Sandbox Infrastructure"
+  }
+}

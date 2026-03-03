@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T06:08:28.655922+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Webを10並列で回す！超並列LLMコーディングを実現する「ハーネスエンジニアリング」の実践",
+    "url": "https://note.com/jujunjun110/n/n66306cab294a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code Webを最大10並列で稼働させ、厳格なアーキテクチャ設計と自動化されたガードレールによって開発速度と品質を両立させる「ハーネスエンジニアリング」の手法。",
+    "summaryBody": "Claude Code Webを用いた超並列LLMコーディングの実践事例を紹介しています。開発速度を10倍以上に高めるため、DDDやレイヤードアーキテクチャに基づいた厳格なディレクトリ構成を採用し、AIが修正するファイルを機能・レイヤー単位で完全に分離。具体的なワークフローとして、カスタムコマンド「/plan」による設計ドキュメント作成とレビュー、並列実行、PRマージのサイクルを構築しています。品質維持の「ガードレール」として、dependency-cruiserによる依存関係の機械的チェック、Git Push時の自動型チェック、レイヤー別のテスト戦略を導入。AIエージェントが正しく力を発揮できるように情報やルールを整える「ハーネスエンジニアリング」の重要性と、LLM時代におけるソフトウェア設計スキルの有用性を説いています。",
+    "topics": [
+      "Claude Code",
+      "LLMコーディング",
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

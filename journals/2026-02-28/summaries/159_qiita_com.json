@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:51:18.097504+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMの脆弱性があるんか？〜CVE-2024-50050から学ぶ「自分だけで使ってるから安全」の落とし穴〜",
+    "url": "https://qiita.com/GeneLab_999/items/08873f6569a2b96a276c",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Ollamaやllama.cppなどのローカルLLM環境における、RCEやサプライチェーン攻撃といった深刻な脆弱性の実態と、具体的な防御策を網羅的に解説した記事。",
+    "summaryBody": "この記事は、ローカルLLM環境における「自分だけで使っているから安全」という誤解を解き、CVE-2024-50050やCVE-2024-37032といった実際の脆弱性事例を通じてリスクを明らかにしています。攻撃経路を「API経由（ネットワーク）」「モデルファイル経由（サプライチェーン）」「フロントエンド/UI経由」の3つに分類。特に、PythonのPickleデシリアライズに伴うRCE（リモートコード実行）のリスクや、DNS Rebindingによるローカル環境への外部侵入を指摘しています。後半では、利用形態（完全ローカル、LAN、インターネット公開）ごとのリスク判定フローチャートに加え、Nginxのリバースプロキシ設定、Dockerのセキュアなデプロイ方法、そしてPythonによる環境診断スクリプトを提供しており、開発者がすぐに実践できる対策を提案しています。",
+    "topics": [
+      "LLM",
+      "セキュリティ",
+      "Ollama",
+      "脆弱性",
+      "CVE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

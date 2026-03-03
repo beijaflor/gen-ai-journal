@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:45:35.471259+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはバイナリからバックドアを見つけられるか？40MBの実行ファイルを用いたAIエージェントのベンチマーク調査",
+    "url": "https://quesma.com/blog/introducing-binaryaudit/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがGhidra等のツールを用いて、ソースコードのないバイナリから隠されたバックドアを検出できるかを検証したベンチマーク結果の報告。",
+    "summaryBody": "Quesmaの研究チームは、AIエージェントがバイナリ解析を通じてマルウェアを特定できるかを評価するベンチマーク「BinaryAudit」を公開しました。この調査では、Claude 4.6やGemini 3 Proなどの最新モデルに対し、GhidraやRadare2といったリバースエンジニアリングツールを操作させて、lighttpdやdnsmasqなどの実行ファイルに注入されたバックドアの検出能力を検証しました。\n\n結果として、最高精度のClaude 4.6でも検出成功率は49%に留まり、クリーンなバイナリを不正と見なす誤検知率も28%と高い数値を示しました。AIは、特定の不審なパターンを見つけることは得意ですが、バックドアを「正当な機能」として誤って解釈（合理化）してしまう傾向や、巨大なバイナリ内のノイズに惑わされるといった限界が浮き彫りになりました。一方で、専門知識のないエンジニアがバイナリの初期解析を行う補助ツールとしての可能性は示されており、今後のコンテキストエンジニアリングや商用ツールとの統合による改善が期待されています。",
+    "topics": [
+      "AIエージェント",
+      "リバースエンジニアリング",
+      "サイバーセキュリティ",
+      "バックドア検出",
+      "LLMベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:47:55.986192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント設計の三層モデル：規範・記憶・記録による持続可能な開発フレームワーク",
+    "url": "https://zenn.dev/chillnn_tech/articles/agent-design",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの振る舞いを「規範・記憶・記録」の3層とそれらを管理する「更新」プロセスとして定義し、持続可能なエージェント設計の指針を提案する。",
+    "summaryBody": "株式会社CHILLNNのCTOである永田氏が、Claude CodeやOpenClawなどの開発経験から導き出したAIエージェントの設計フレームワークを紹介しています。筆者は、エージェントの本質的な差異はLLMの性能ではなく「コンテキストの設計」に収束すると指摘。コンテキストを、1.絶対に守るべき制約である「規範」、2.個人の好みや振る舞いを定義する「記憶」、3.外部世界の状態を保持する「記録」の3層に分離して管理する手法を提唱しています。特に常駐型エージェントにおいて、これらの情報の「更新権限（ガバナンス）」を定義することが、システムの破綻を防ぎ、人間からの信頼を構築する鍵であると論じています。具体的なセールス業務への適用例も交え、実用的な設計指針が示されています。",
+    "topics": [
+      "AIエージェント",
+      "システム設計",
+      "認知アーキテクチャ",
+      "LLMガバナンス",
+      "コンテキスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

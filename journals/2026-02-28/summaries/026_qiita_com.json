@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:46:56.440661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic WorkflowsでIssue作成を自動化してみた",
+    "url": "https://qiita.com/railgun-0402/items/6b9362e1d78f3e26cf49",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Markdown（自然言語）でAIエージェントの動作を定義し、リポジトリの未トリアージIssueや停滞PRを自動集計してIssue投稿するGitHub Agentic Workflowsの導入手順を解説。",
+    "summaryBody": "GitHub Agentic Workflowsは、GitHub Actions上で動作するAIエージェントにリポジトリ作業を任せるための仕組みです。最大の特徴は、複雑なYAMLを書く代わりにMarkdownで「何を達成したいか」というゴールを自然言語で記述できる点にあります。本記事では、GitHub CLI拡張「gh-aw」を使用した環境構築から、日次のトリアージレポートを自動生成するハンズオン形式のプロセスを紹介しています。AIがリポジトリの状況（Issue、PR、CIの結果）を自ら判断して優先度（P0/P1/P2）を付けたIssueを自動作成する実例を示しており、大規模プロジェクトのメンテナンスコスト削減に寄与します。実行にはLLMのAPI費用とGitHub Actionsの実行時間が必要となる点も補足されています。",
+    "topics": [
+      "GitHub Agentic Workflows",
+      "GitHub Actions",
+      "AI Agent",
+      "DevOps",
+      "GitHub CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

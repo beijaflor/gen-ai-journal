@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:59:55.506033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最初にテストを実行する - エージェンティック・エンジニアリング・パターン",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントにコードを書かせる際、最初に既存のテストを実行させることで、エージェントにコードベースを理解させ、テストを重視するマインドセットを定着させる手法を解説。",
+    "summaryBody": "Simon Willison氏が提唱する「エージェンティック・エンジニアリング・パターン」の一つ。AIエージェントによるコード生成において、自動テストはもはや必須です。AIがテストを数分で生成・修正できるようになった今、「時間がかかる」という言い訳は通用しません。セッションの冒頭で『テストを実行せよ』と命じることには、以下の大きな利点があります：\\n1. **エージェントに実行環境を特定させる**: 自力でテスト実行方法を探らせることで、将来の変更時にも自発的にテストを行う確率が高まる。\\n2. **プロジェクトの文脈理解**: テスト結果からコードの規模や複雑さを推論させ、テストコード自体を学習リソースとして活用させる。\\n3. **エンジニアリングの規律**: TDD（テスト駆動開発）のような規律をモデルに内蔵された知識から引き出し、品質を維持する。\\nAIにただ指示を出すのではなく、適切な動作確認のステップを強制することで、生成物の信頼性を劇的に向上させる手法です。",
+    "topics": [
+      "AIエージェント",
+      "テスト自動化",
+      "LLM",
+      "TDD",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "First run the tests - Agentic Engineering Patterns"
+  }
+}

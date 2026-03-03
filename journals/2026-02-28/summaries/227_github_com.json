@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:59:03.730062+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Wallfacer: Claude Codeをカンバンで管理する並列タスク実行ツール",
+    "url": "https://github.com/changkun/wallfacer",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのタスクをカンバンボードで視覚化し、DockerコンテナとGit Worktreeを用いて安全かつ並列に自律実行・管理できるオーケストレーター。",
+    "summaryBody": "Wallfacerは、AnthropicのCLIツール「Claude Code」のワークフローを効率化するために開発されたオープンソースのタスクランナーです。Web UI上のカンバンボードでタスク（カード）を作成し、「In Progress」へドラッグすることで、独立したPodman/Dockerコンテナ内でClaude Codeが自動的にコード修正を開始します。最大の特徴はGit Worktreeを活用した作業の分離にあり、複数のタスクを異なるブランチで同時に実行しても競合が発生しません。実行中にClaudeからの質問が必要な場合は「Waiting」状態になり、ユーザーがUIからフィードバックを送ることで作業を再開できるヒューマン・イン・ザ・ループの仕組みも備えています。コスト追跡、差分ビューア、マルチワークスペース対応など、AIエージェントによる開発を実用レベルでスケールさせるための機能が凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Kanban",
+      "Git Worktree",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "changkun/wallfacer: 🧠 Kanban-based Multi-Clauding Orchestration"
+  }
+}

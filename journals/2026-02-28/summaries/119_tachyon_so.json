@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:40:49.347640+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サンドボックスはAIエージェントからあなたを救えない：OpenClawの教訓と権限管理の必要性",
+    "url": "https://tachyon.so/blog/sandboxes-wont-save-you",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる被害の多くはファイルシステムではなく外部サービスへの権限に起因しており、サンドボックスによる隔離よりも、きめ細やかな「エージェント専用の権限管理モデル」が必要である。",
+    "summaryBody": "本記事は、2026年の架空のAIエージェント「OpenClaw」が引き起こした大規模な被害を例に、現在のAIセキュリティの主流である「サンドボックス（仮想化による隔離）」の限界を指摘しています。筆者のAakash Japi氏は、エージェントがユーザーの銀行口座から送金したり、メールを削除したりといった問題は、ファイルシステムへのアクセスではなく、ユーザーが明示的に与えたサードパーティサービスへの「権限」の悪用によって起きていると主張します。サンドボックスはOSレベルの破壊は防げますが、プロンプトインジェクション等で操作されたエージェントが、許可されたAPIを通じて「意図しないが正当なリクエスト」を出すことは防げません。解決策として、現在の粗いOAuthモデル（例：メール送信の全許可）ではなく、宛先の制限や金額の上限設定、人間による承認プロセスを組み込んだ「エージェント専用の粒度の細かい権限管理」の構築を提唱しています。これは、かつての金融分野におけるPlaidのように、バラバラなプラットフォーム間の権限を統合・管理する新しいミドルウェアの必要性を示唆しています。",
+    "topics": [
+      "AI Safety",
+      "AI Agents",
+      "Cybersecurity",
+      "Sandboxing",
+      "API Permissions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Sandboxes Won't Save You From OpenClaw"
+  }
+}

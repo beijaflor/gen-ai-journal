@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:56:58.798156+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェント・ワークフローの信頼性を高める3つの設計パターン：GitHubによる実践ガイド",
+    "url": "https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHubが提唱する、マルチエージェントAIシステムを「対話」ではなく「分散システム」として捉え、型定義やMCPを用いて堅牢にするための設計手法。",
+    "summaryBody": "GitHubは、マルチエージェント・ワークフローが失敗する主要な原因は、モデルの能力不足ではなく「構造の欠如」にあると指摘しています。エージェントが複雑なタスクを分担する際、明示的な命令がないと状態や順序に関する暗黙の仮定が生まれ、エラーに繋がります。本記事では、信頼性を向上させる3つのエンジニアリングパターンを解説しています。1つ目は「型定義スキーマ」の活用で、エージェント間のデータ交換に厳密な型を設けて検証可能にします。2つ目は「アクションスキーマ」による意図の明確化で、エージェントの行動を定義済みのセットに制限します。3つ目は「Model Context Protocol (MCP)」の導入で、ツール利用の境界で制約を強制し、不正な状態の発生を防ぎます。最終的に、エージェントを単なるチャットインターフェースではなく、コードと同様のコントラクト（契約）を持つシステムコンポーネントとして扱うべきであると強調しています。",
+    "topics": [
+      "Multi-agent Systems",
+      "AI Engineering",
+      "Model Context Protocol (MCP)",
+      "GitHub Copilot",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 50,
+      "overall": 90
+    },
+    "originalTitle": "Multi-agent workflows often fail. Here’s how to engineer ones that don’t."
+  }
+}

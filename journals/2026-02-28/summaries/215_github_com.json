@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:43:19.133134+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-workspace: AIエージェント専用の分離・構築された開発環境を提供するCLIツール",
+    "url": "https://github.com/hiragram/agent-workspace",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Docker、git worktree、Zellijを組み合わせ、Claude Code等のAIエージェントを分離されたセキュアな環境で即座に実行可能にするCLIツール。",
+    "summaryBody": "agent-workspace（awコマンド）は、AIエージェント、特にClaude Codeを用いた開発ワークフローを最適化・安全にするためのツールです。主な特徴は、git worktreeを利用してメインブランチとは別に作業環境を自動構築し、さらにDockerコンテナ内でエージェントを動かすことでホスト環境の汚染を防ぐ点にあります。設定ファイル（.agent-workspace.yml）により、コンテナ環境、ホスト環境、Zellijセッションの組み合わせを自由に定義できます。初回起動時に必要なDockerイメージのビルドやOAuth認証の同期、設定ファイルの永続化も自動で処理されるため、開発者は複雑な環境構築を意識せずに、AIエージェントとの協調作業に集中できます。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Docker",
+      "Git Worktree",
+      "Zellij"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "hiragram/agent-workspace"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:01:16.480453+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIをいつでもどこでも動かそうとしたら、気づけば自宅インフラ沼にはまっていた話 【ミニPC/Proxmox/Tailscale】",
+    "url": "https://qiita.com/endo-ly/items/167c80b277b4850c4869",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの常時稼働環境を求めて、ミニPCとProxmox、Tailscaleを組み合わせたセキュアな個人用クラウドを構築した記録。",
+    "summaryBody": "本記事は、外出先でもClaude CodeなどのAIエージェントを快適に利用するため、Intel N100搭載のミニPCをベースに自宅インフラを構築した過程をまとめたものです。仮想化基盤としてProxmox VEを採用し、軽量なLXCコンテナで開発環境、ネットワーク管理（Tailscale/AdGuard Home）、AI実行環境を分離。TailscaleのSubnet RouterとExit Node機能を活用することで、外出先のフリーWi-Fiからでも自宅経由の安全な通信と広告ブロック環境を実現しています。また、Syncthingを用いてObsidianのメモをデバイス間で同期し、AIエージェントが常に最新のコンテキストを参照できる仕組みを整えました。低コストながら、Mac miniなどの高価な機材に頼らずに「自分専用のAI拡張頭脳」を手に入れるための実践的なスタックが紹介されています。",
+    "topics": [
+      "Proxmox",
+      "Tailscale",
+      "AIエージェント",
+      "ミニPC",
+      "LXC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

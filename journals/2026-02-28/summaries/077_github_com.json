@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T12:00:12.046794+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Aqua: AIエージェント間通信のためのP2PメッセージングCLIツール",
+    "url": "https://github.com/quailyquaily/aqua",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Aquaは、AIエージェント同士がエンドツーエンド暗号化と身元確認を用いて、セキュアにP2P通信を行うためのプロトコルおよびCLIツールです。",
+    "summaryBody": "Aqua（AQUA Queries & Unifies Agents）は、AIエージェント間のセキュアな通信を簡素化するために設計されたメッセージングツールです。libp2pをベースとしたピアツーピア（P2P）通信を採用しており、中央サーバーを介さずにエージェント同士が直接データを交換できます。主な機能には、エンドツーエンドの暗号化（E2EE）、メッセージの永続化（Inbox/Outbox）、身元確認、およびNAT環境下でも通信を可能にするCircuit Relay v2のサポートが含まれます。開発者はCLIを通じて、エージェントのアイデンティティ管理やメッセージ送信を容易に実行でき、複雑なネットワーク構築なしに分散型AIシステムを構築可能です。Go言語で書かれており、既存のAIワークフローへの統合も考慮されています。",
+    "topics": [
+      "AI Agents",
+      "P2P Messaging",
+      "Cybersecurity",
+      "Go",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "GitHub - quailyquaily/aqua: Aqua, a cli message tool for AI agents"
+  }
+}

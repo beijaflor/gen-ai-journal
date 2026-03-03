@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:42:35.359364+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "llmfit - ハードウェア性能に基づき最適なローカルLLMを提案するCLIツール",
+    "url": "https://github.com/AlexsJones/llmfit",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PCのCPU、RAM、GPU性能を自動検出し、490種類以上のモデルから実行可能なLLMをランク付けして提案・管理できるターミナルツール。",
+    "summaryBody": "llmfitは、ユーザーのハードウェア環境（NVIDIA、AMD、Intel、Apple Silicon等）をスキャンし、各LLMが「実際に動作するか」を判定する実用的なCLIツールです。497のモデルと133のプロバイダーに対応しており、量子化レベル（Q8_0〜Q2_K）を考慮したメモリ見積もりや、MoE（混合専門家）アーキテクチャ特有のメモリ要件を自動計算します。対話的なTUI（Terminal UI）モードでは、スコア、速度、メモリ使用率に基づいてモデルを検索・フィルタリングでき、Ollamaやllama.cppなどのランタイムと連携してその場でモデルをダウンロードすることも可能です。ローカルLLMの導入において、スペック不足による起動エラーを防ぎ、環境に最適なモデル選びを効率化します。",
+    "topics": [
+      "LLM",
+      "CLI Tool",
+      "Hardware Optimization",
+      "Local LLM",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "AlexsJones/llmfit: 497 models. 133 providers. One command to find what runs on your hardware."
+  }
+}

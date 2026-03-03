@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:58:48.505313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex CLI で音声入力を試す：スペースキー操作による文字起こし機能の解説",
+    "url": "https://zenn.dev/schroneko/articles/codex-cli-voice-input",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Codex CLI v0.105.0で導入された音声入力機能「Voice Transcription」の設定方法、操作感、およびRustによる内部実装の仕組みについて解説しています。",
+    "summaryBody": "OpenAI製のターミナル用AIツール「Codex CLI」に、音声でプロンプトを入力できる新機能が追加されました。本記事では、機能を有効化するためのコマンド操作や、スペースキーの長押しによる直感的な録音インターフェースについて紹介しています。技術面では、Rustのオーディオライブラリであるcpalとhoundを使用した実装の詳細や、認証方式ごとに異なるAPIエンドポイント（gpt-4o-transcribe等）の挙動についても触れています。現在はmacOSで動作が確認されており、Linuxは未対応であるといったプラットフォーム上の注意点もまとめられています。",
+    "topics": [
+      "Codex CLI",
+      "OpenAI",
+      "Rust",
+      "Voice Transcription",
+      "Terminal Tools"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

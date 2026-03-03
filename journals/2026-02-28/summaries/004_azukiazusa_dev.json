@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:40:51.278563+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デスクトップ版 Claude Code の Preview 機能で UI を直接確認・デバッグする方法",
+    "url": "https://azukiazusa.dev/blog/claude-code-preview/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code デスクトップアプリの新機能「Preview」を活用し、UI 操作、ログ確認、コード修正をシームレスに行うワークフローを解説しています。",
+    "summaryBody": "Claude Code のデスクトップアプリに追加された「Preview」機能の導入ガイドです。この機能により、Claude がアプリケーションを起動し、その UI を直接操作しながら動作確認やデバッグを行うことが可能になりました。主なポイントは以下の通りです。まず、`.claude/launch.json` ファイルを作成して起動コマンドやポート設定を定義することで、Claude が自動的にプレビュー環境をセットアップします。次に、プレビュー画面上での操作履歴やサーバーログに基づき、Claude が自律的にバグを特定し修正するプロセスが紹介されています。さらに、「Select element」機能を使うと、プレビュー上の特定の UI 要素を選択して「この部分の色を変えて」といった視覚的な指示をプロンプトに組み込むことができます。これにより、開発者はブラウザを行き来することなく、AI と対話しながら UI 開発を完結させることが可能になります。",
+    "topics": [
+      "Claude Code",
+      "AIコーディング",
+      "デバッグ",
+      "Anthropic",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "デスクトップ Claude Code の Preview 機能で UI を直接確認する"
+  }
+}

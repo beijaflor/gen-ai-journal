@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:46:25.879629+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenCode の技術を徹底解剖 - 10 の設計要素 -",
+    "url": "https://qiita.com/cvusk/items/cb879d6168a0bf7bb307",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模なオープンソースAIコーディングエージェント「OpenCode」の内部アーキテクチャや独自TUI、ツールシステムなど10個の核心的な設計要素を詳説した技術解説記事。",
+    "summaryBody": "この記事では、GitHubで高い評価を得ているAIコーディングエージェント「OpenCode」の設計思想と実装技術を深く掘り下げています。主な解説項目として、HTTP/SSEを利用したクライアント・サーバー分離、LLMプロバイダー間の差異を吸収する抽象化レイヤー、Zigと言語を跨いだ高性能な独自TUIフレームワーク（OpenTUI）の仕組みが挙げられます。また、14種類のビルトインツール、LSPやMCPを通じた外部エコシステムとの統合、コンテキストウィンドウを維持するための段階的なプルーニングと要約（コンパクション）のロジックについても詳述。さらに、データベースの整合性を保つ「Database.effect」パターンや、20以上のフックを持つプラグインシステムなど、信頼性の高いエージェント構築に必要なエンジニアリングの粋が網羅されています。",
+    "topics": [
+      "AIエージェント",
+      "コーディングエージェント",
+      "ソフトウェアアーキテクチャ",
+      "TypeScript",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "OpenCode の技術を徹底解剖 - 10 の設計要素 -"
+  }
+}

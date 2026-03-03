@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:54:30.215668+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数レポに一気通貫でAIにコンテキストを渡し開発する——Cursor Workspace × Obsidian",
+    "url": "https://qiita.com/Katsu30/items/003469076c1a0356d5cd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cursorのマルチワークスペース機能とGit連携したObsidianを組み合わせ、複数リポジトリと設計ドキュメントをAIの単一コンテキストとして統合する開発手法。",
+    "summaryBody": "複数のリポジトリ（Backend、Frontend等）を跨ぐ開発における「エディタ切り替えの手間」と「AIへのコンテキスト共有の断絶」を解決するワークフローを解説しています。Cursorのマルチルートワークスペース機能を用いて複数レポを1ウィンドウに集約し、さらにGitで同期されたObsidianのドキュメントフォルダをそのワークスペースに追加することで、AI（Chat/Composer）が設計書を直接参照しながら実装を行う環境を構築します。Obsidian Gitプラグインによるドキュメントの自動同期、Mermaidを用いた図解作成の自動化、GitHub MCPによるPR説明文の生成など、設計から実装までを一気通貫で効率化する具体的なTipsが網羅されています。",
+    "topics": [
+      "Cursor",
+      "Obsidian",
+      "AI開発",
+      "生産性向上",
+      "Git"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

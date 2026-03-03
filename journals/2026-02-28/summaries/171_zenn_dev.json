@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:54:32.603543+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのOSS版 OpenCodeの内部挙動を理解する",
+    "url": "https://zenn.dev/epicai_techblog/articles/20b78066cac63f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeScript製のAIコーディングエージェント「OpenCode」のソースコードを解読し、二重ループ、Vercel AI SDKを用いたマルチプロバイダー対応、高度なコンテキスト管理、およびツール実行の設計を詳説した技術記事。",
+    "summaryBody": "本記事は、GitHubスター数10万を超えるOSSのAIコーディングツール「OpenCode」の内部実装を詳細に分析した技術リポートである。主な特徴は、Vercel AI SDKを基盤としたマルチLLMプロバイダー対応と、外側のセッションループと内側のストリーミングループからなる「二重ループ」設計にある。\n\n技術的ハイライトとして、以下の点が挙げられる：\n1. **システムプロンプトの動的構築**: Claude、GPT-4o、Geminiなどモデルごとの特性に合わせたプロンプトの出し分けと、環境情報の自動注入。\n2. **高度なツール設計**: `edit` ツールにおける9段階のフォールバック置換戦略（レーベンシュタイン距離等を使用）や、`bash` ツールでのAST解析によるセキュリティ制御。\n3. **コンテキスト管理**: トランケーション、プルーニング、およびCompactionエージェントによる自動要約の3段階でトークン消費を制御する高度なロジック。\n4. **サブエージェント構造**: `task` ツールを介して独立したセッションを持つサブエージェントを動的に生成し、複雑なタスクを委譲・並列実行する仕組み。\n\nまた、MCP（Model Context Protocol）による外部ツール統合のパイプラインについても言及されており、AIエージェントの実装レベルの設計を学びたい開発者にとって極めて価値の高い内容となっている。",
+    "topics": [
+      "AI Agent",
+      "OpenCode",
+      "TypeScript",
+      "LLM",
+      "Vercel AI SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

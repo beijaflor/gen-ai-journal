@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:59:13.453747+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentワークフローで人間がボトルネックにならないためのSkill設計",
+    "url": "https://nyosegawa.github.io/posts/claude-code-verify-command/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code等のAgentが人間に確認を求めて停止するボトルネックを、発話直前に自律行動を促すSkillを自動ロードさせることで解消する設計手法の提案。",
+    "summaryBody": "Coding Agent（Claude Code等）が「pushしていいか」や「次はどうするか」を人間に確認する際に生じる数分間の待機時間を排除するための、具体的なSkill設計手法を解説しています。解決策の核心は、Skillのdescriptionに「人間に質問する直前（BEFORE asking）」をトリガー条件として記述することです。これにより、Agentが自律性を失いかけた瞬間に「自分で判断し、検証せよ」という指示をコンテキストに注入できます。自己検証の手段としてchrome MCPを用いたブラウザ確認などを活用し、Ralph loop（反復実行ループ）と組み合わせることで、外側の状態管理と内側の行動原則の両面から自律性を高める構造を提案しています。人間を介在させるのは物理的な認証などAgentに不可能な作業のみに限定し、その際も認知負荷を最小化する設計を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Autonomous Workflow",
+      "MCP",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

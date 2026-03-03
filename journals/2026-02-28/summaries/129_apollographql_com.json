@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:43:33.748662+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apollo MCP Serverを使用してAIエージェントをGraphQL APIに型安全に接続する方法",
+    "url": "https://www.apollographql.com/blog/connect-ai-agents-to-your-graphql-api-using-mcp-and-type-safe-tool-configuration",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Apollo MCP Serverを活用し、GraphQLの型システムを通じてAIエージェントにAPI操作を安全かつ効率的に提供するための3つの実装パターンを解説したガイド。",
+    "summaryBody": "Apollo MCP Serverは、GraphQL APIをModel Context Protocol (MCP) ツールとしてAIエージェントに公開するためのフレームワークです。本記事では、1. ローカルファイルでの事前定義、2. GraphOSの永続クエリ利用、3. 動的なイントロスペクションによる探索の3つのパターンを紹介しています。GraphQLの強力な型システムを利用することで、実行前のバリデーション、クエリコスト制限による負荷管理、およびミューテーション実行の制限（セキュリティ）が容易になります。また、AIにGraphQLの最適な利用法を学習させる「Apollo Skills」についても言及されており、開発者が安全にAIエージェントを既存のグラフに統合するための実践的なアプローチを提供しています。",
+    "topics": [
+      "Apollo MCP Server",
+      "Model Context Protocol (MCP)",
+      "GraphQL",
+      "AI Agents",
+      "API Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Connect AI Agents to Your GraphQL API Using MCP and Type-Safe Tool Configuration"
+  }
+}

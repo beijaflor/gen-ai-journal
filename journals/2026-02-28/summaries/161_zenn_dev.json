@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:51:48.503041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "git-wtとbareリポジトリの組み合わせがClaudeCodeに馴染む",
+    "url": "https://zenn.dev/maruloop/articles/acdd949906a4d7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ClaudeCode等のAIエージェント利用時に便利なgit worktree管理を、bareリポジトリとgit-wtを組み合わせて効率化・クリーン化する方法の紹介。",
+    "summaryBody": "ClaudeCodeなどのCoding Agentを使用する際、複数のブランチで並行して作業するために `git worktree` が有効ですが、ディレクトリ管理が煩雑になる課題があります。本記事では、`git-wt` を用いてリポジトリ内に worktree を作成しつつ、本体を bare リポジトリ化することで、main ブランチを含むすべての作業ディレクトリを並列に配置する構成を提案しています。これにより、linter や ClaudeCode がサブディレクトリ（他の worktree）を誤って走査する問題を回避できます。また、設定ファイルを最新の worktree から同期するスクリプトや便利な Git エイリアスも紹介されており、AI 駆動開発のワークフローをより洗練させる実践的な内容となっています。",
+    "topics": [
+      "git",
+      "ClaudeCode",
+      "git-wt",
+      "worktree",
+      "bare-repository"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

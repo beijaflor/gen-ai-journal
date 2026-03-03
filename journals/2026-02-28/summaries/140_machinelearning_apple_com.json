@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:46:11.223095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ferret-UI Lite: 小型オンデバイスGUIエージェント構築における知見",
+    "url": "https://machinelearning.apple.com/research/ferret-ui",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Appleは、モバイルやPC画面を理解し操作する3Bパラメータの軽量なオンデバイスGUIエージェント「Ferret-UI Lite」を発表しました。",
+    "summaryBody": "Appleの研究チームは、モバイル、Web、デスクトップなどの多様なプラットフォームに対応した小型GUIエージェント「Ferret-UI Lite」を開発しました。30億（3B）パラメータというオンデバイス動作に適した規模でありながら、リアルデータと合成データを組み合わせた学習、Chain-of-Thought（思考の連鎖）推論、視覚ツールの活用、そして報酬設計に基づく強化学習などの手法を駆使しています。GUIグラウンディングにおいてScreenSpot-V2で91.6%のスコアを記録し、AndroidWorldやOSWorldといった複雑な操作タスクでも高い成功率を達成しました。本研究は、プライバシーや遅延の観点から重要なオンデバイスAIエージェントの実現可能性を大きく広げるものです。",
+    "topics": [
+      "GUI Agent",
+      "On-device AI",
+      "Multimodal LLM",
+      "Reinforcement Learning",
+      "Apple ML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Ferret-UI Lite: Lessons from Building Small On-Device GUI Agents"
+  }
+}

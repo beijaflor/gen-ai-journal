@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:49:03.198757+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawでTelegramを使ってトレーディング戦略を構築してみた",
+    "url": "https://recruit.group.gmo/engineer/jisedai/blog/openclaw_stock_trading/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自律型AIエージェントOpenClawをVPS上に構築し、Telegramを通じて株式投資の市場分析やトレーディング戦略の立案を自動化する実践的な検証記録。",
+    "summaryBody": "2026年2月にGitHubで注目を集めているオープンソースの自律型AIエージェント「OpenClaw」（旧称：Clawdbot、Moltbot）の解説記事です。OpenClawは、SlackやTelegramなどのメッセージアプリから指示を受け、ローカル環境でコマンド実行やブラウザ操作を行うエージェントです。本記事では、セキュリティを考慮しVPS（Hostinger）上にDockerを用いて環境を構築し、Claude APIやBrave Searchと連携させる手順を詳しく紹介しています。具体例として、AIエージェントに『Trady』というアイデンティティを与え、米国・日本株のカタリストスキャンやペーパートレードの記録、戦略のPDCAサイクルをTelegramチャット経由で回す手法を検証しています。AGENTS.mdやSOUL.mdなどのMarkdownファイルを用いてAIの行動規範や性格、記憶を管理する独自のアーキテクチャについても深く掘り下げています。",
+    "topics": [
+      "OpenClaw",
+      "自律型AIエージェント",
+      "AIトレーディング",
+      "Claude",
+      "Telegram"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

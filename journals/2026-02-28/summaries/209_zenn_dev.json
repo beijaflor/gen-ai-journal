@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T05:41:42.523774+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Cursor と組み合わせるデザインツール「Pencil」は何者か",
+    "url": "https://zenn.dev/hsylife/articles/531cd4423fd861",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "IDE中心の開発フローにデザインを統合し、.pen形式（JSON）とMCP連携によってAI駆動のUI設計を実現する新世代ツール「Pencil」の概要と導入メリットの解説。",
+    "summaryBody": "# AI時代の「Design as Code」を実現するPencilの正体\n\nPencilは、デザインデータを画像や専用バイナリではなく、`.pen`というJSONベースのテキスト形式で管理することを最大の特徴とするデザインツールです。これにより、Gitでの差分管理やブランチ運用が容易になり、開発フローに完全に統合されます。\n\n### 注目すべき3つのポイント\n1. **AIツールとの強力な親和性**: MCP（Model Context Protocol）サーバーを介して、Claude CodeやCursorといったAIエージェントが直接デザインを読み書き・編集することが可能です。\n2. **Code to Designの思想**: 既存のコード（React, SwiftUI, Flutter等）からUIを再構成するワークフローを提唱しており、実装とデザインの乖離を防ぎます。\n3. **開発者向けの設計**: 共同編集よりもGitベースの協業を優先し、IDEの文脈でデザインを扱う「Design as Code」を体現しています。\n\n### 現状の評価と注意点\n現在は無料公開中で、可能性は非常に高いものの、オートセーブ未提供や共同編集機能の欠如、エクスポートのズレといった発展途上の面も明確です。デザイン変更をプルリクエストで管理したい、AIを活用してUI試作を高速化したいフロントエンド/アプリエンジニアにとって、検証価値の高いツールといえます。",
+    "topics": [
+      "Pencil",
+      "Claude Code",
+      "Cursor",
+      "MCP",
+      "UI/UX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 89
+    },
+    "originalTitle": null
+  }
+}

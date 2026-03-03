@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:49:37.710781+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "急成長中のAIエージェント「OpenClaw」を安全に利用する方法：メイン端末を避け、SkyPilotでクラウド環境に隔離する",
+    "url": "https://blog.skypilot.co/openclaw-on-skypilot/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "強力なシステム権限を持つAIエージェント「OpenClaw」のセキュリティリスクを解説し、SkyPilotを用いてクラウド上の隔離環境で安全かつ安価に運用する具体的手法を提案しています。",
+    "summaryBody": "### OpenClawの強力な機能と潜むリスク\nOpenClawは、WhatsAppやSlackなどのチャットツールからシェル実行、ブラウザ自動操作、ファイル操作が可能なセルフホスト型AIエージェントです。その強力な権限ゆえに、プロンプト・インジェクション攻撃を受けるとSSHキーの窃取や悪意のあるコード実行を許す「セキュリティの悪夢」になる可能性があります。アンドレ・カーパシー氏らも、メイン端末での実行に警鐘を鳴らしています。\n\n### クラウドVMによる隔離の重要性\n記事では、Dockerや専用ハードウェアよりも「クラウドVM」での運用を推奨しています。個人データから完全に分離された環境を構築することで、万が一の侵害時も被害範囲を限定（ブラスト・ラジアスを制限）できるためです。\n\n### SkyPilotによる運用の自動化と効率化\nオープンソースのフレームワーク「SkyPilot」を利用することで、AWSやGCPなど複数のクラウド間で最適なインスタンスを自動選定し、OpenClaw環境を1コマンドで構築できます。特徴は以下の通りです：\n- **SSHトンネルによる保護**: WebUIを公開せず、安全なトンネル経由でアクセスすることで外部攻撃を防ぎます。\n- **コスト管理**: `sky stop`を活用し、使用していない間の計算機コストを抑えつつ状態を保持できます。\n- **永続性**: S3やrsyncを用いたデータのバックアップ手順も整備されており、VMの破棄と再構築が容易です。",
+    "topics": [
+      "OpenClaw",
+      "SkyPilot",
+      "AIエージェント",
+      "セキュリティ",
+      "クラウドコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Don't Run OpenClaw on Your Main Machine | SkyPilot Blog"
+  }
+}

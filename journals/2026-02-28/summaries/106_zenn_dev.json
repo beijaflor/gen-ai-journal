@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:37:58.035604+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント × knipで無駄コードを簡単に掃除",
+    "url": "https://zenn.dev/knowledgework/articles/knip-with-ai-agent",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに静的解析ツール「knip」の導入と実行を任せることで、プロジェクト内の未使用コードや依存パッケージを自動で効率的に削減する手法を紹介しています。",
+    "summaryBody": "JavaScript/TypeScriptプロジェクトの不要なコードや未使用パッケージを検出するツール「knip」と、Claude CodeなどのAIエージェントを組み合わせた開発ワークフローを提案しています。AIエージェントにknipの導入とクリーンアップを指示することで、人間が気づきにくい不要なexportや依存関係を自動で特定・削除させることが可能です。また、pre-commitやCIにknipを組み込むことで、AIがエラーを自己修正しながらコミットする「自走ループ」を構築し、コードベースを最小限かつクリーンに保つ具体的なメリットと実例（170行のコード削減など）が解説されています。",
+    "topics": [
+      "knip",
+      "AIエージェント",
+      "TypeScript",
+      "リファクタリング",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

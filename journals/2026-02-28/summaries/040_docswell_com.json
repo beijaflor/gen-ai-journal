@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:50:17.915671+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のGo開発2026 爆速開発のためのガードレール",
+    "url": "https://www.docswell.com/s/r4mimu/ZQXGNY-2026-02-21-102435",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIコーディングツールの普及に伴うコード品質の低下を防ぐため、Goの言語機能やCI/CDを活用した「ハード制約」による開発ガードレールの構築を提案する資料。",
+    "summaryBody": "AI（CursorやClaude Code等）による実装の高速化が当たり前となった2026年において、単なる実装速度よりも、変化に強い「コードの治安（秩序）」をどう維持するかが焦点となっている。本スライドでは、自然言語による指示（ソフト制約）の限界を指摘し、機械的にバイパスできない「ハード制約」の重要性を説く。具体的には、Goの`internal`パッケージによる依存制御、`depguard`を用いたアーキテクチャの強制、Fuzzingや実DBを用いたテストによるAIのハック防止策を紹介。最終的に、優れた開発者体験（DX）はAIエージェントにとっての体験（AX）と一致することを強調し、標準機能が豊富なGoがAI時代に非常に適していると結論付けている。",
+    "topics": [
+      "Go",
+      "AIコーディング",
+      "アーキテクチャ",
+      "CI/CD",
+      "開発者体験"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

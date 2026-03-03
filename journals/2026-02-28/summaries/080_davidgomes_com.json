@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T12:00:55.001048+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエンジニアが語る、Cursorの「Debug Mode」が最強の機能である理由",
+    "url": "https://davidgomes.com/cursor-debug-mode/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "CursorのDebug Modeは、AIがコードにログを自動挿入して実行パスを追跡する仕組みにより、言語を問わず高度なバグ修正を可能にする画期的な機能です。",
+    "summaryBody": "Cursorのエキサイティングな機能の一つである「Debug Mode」について、その仕組みと有用性が解説されています。この機能の核心は、AIがバグの原因を仮定し、それを検証するためのログ出力コード（インストルメンテーション）を自動で挿入することにあります。LSPなどの複雑なデバッガ機能に頼らず、テキストベースのログをHTTPサーバーで収集するというシンプルで汎用的なアプローチをとっているため、あらゆるプログラミング言語や環境で動作します。\n\n主なポイントは以下の通りです：\n- **実行時の特性把握**: AIが実際の実行パスや変数の値を「聴取」することで、静的解析だけでは不可能な高精度の修正案を提示できる。\n- **Human-in-the-loop**: ユーザーがバグを再現するプロセスをAIが監視し、修正後は自動でログを削除するため、ワークフローを阻害しない。\n- **将来の展望**: 著者は、AIエージェントが常にバックグラウンドでコードを計測し続ける仕組みや、デバッグ行動を学習したモデルの登場が、ソフトウェア開発を次のレベルへ引き上げると主張しています。",
+    "topics": [
+      "Cursor",
+      "AI Agent",
+      "Debugging",
+      "LLM",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Cursor's Debug Mode Is Arguably Its Best Feature"
+  }
+}

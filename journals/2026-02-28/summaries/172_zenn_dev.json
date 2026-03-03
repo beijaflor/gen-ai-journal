@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:54:43.928544+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "202602個人的claude code設定",
+    "url": "https://zenn.dev/kawarimidoll/articles/7da5fd40f19fb1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを自走させつつ、安全性（cageによる隔離）と効率性（hooksやrtkによる制限）を両立させるための高度なカスタマイズ設定集。",
+    "summaryBody": "Claude Codeを「bypass-permissions」で自律動作させることを前提に、開発環境を保護しつつ生産性を高めるための実践的な設定が紹介されています。主な内容は、1. `cage`を用いたファイルシステムへのアクセス制限（サンドボックス化）、2. Bashツール実行時の`hooks`を利用した特定コマンド（git pushやawkなど）の禁止・代替指示、3. `rtk`による出力のトークン削減、4. スマホ通知やステータスラインによる進捗管理、5. `agent-browser`を併用したフロントエンドの自動確認などです。さらに、`/review`や`/address`といった独自のスラッシュコマンドを作成して、レビューから修正までを半自動化する運用術も解説されています。AIエージェントに自律的な作業を任せる際のセキュリティリスクとトークンコストの両面に対処するための、非常に具体的な知見が詰まっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM",
+      "開発効率化",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

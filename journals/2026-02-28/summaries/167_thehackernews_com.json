@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:53:33.665565+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに深刻な脆弱性：リモートコード実行やAPIキー流出の恐れ",
+    "url": "https://thehackernews.com/2026/02/claude-code-flaws-allow-remote-code.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAIコーディングツール「Claude Code」において、信頼できないリポジトリを開くだけでRCEやAPIキー奪取が可能になる複数の脆弱性がCheck Pointによって報告された。",
+    "summaryBody": "Check Pointの研究者らが、AnthropicのAIコーディングアシスタント「Claude Code」に潜む複数の深刻な脆弱性を公開した。これらは、特定のHooks、Model Context Protocol (MCP) サーバー、環境変数を悪用することで、ユーザーが信頼できないリポジトリをクローンして開いた際に任意のシェルコマンドを実行したり、Anthropic APIキーを外部に流出させたりするものである。主な脆弱性は3種類で、(1)ディレクトリ開始時のフックによるコード注入、(2)MCPサーバー設定を悪用した自動コマンド実行（CVE-2025-59536）、(3)APIベースURLの設定を攻撃者側に向けさせることによる認証情報窃取（CVE-2026-21852）となっている。これらは2025年9月から2026年1月にかけて順次修正されているが、AIツールの設定ファイルが事実上の「実行レイヤー」となっており、プロジェクトを開くこと自体がサプライチェーン攻撃のリスクになるという、AI時代特有の脅威モデルの変容を指摘している。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "サイバーセキュリティ",
+      "脆弱性",
+      "サプライチェーン攻撃"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code Flaws Allow Remote Code Execution and API Key Exfiltration"
+  }
+}

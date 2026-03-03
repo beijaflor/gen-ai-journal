@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:43:49.550935+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "汎用AI Agentにおけるテストの難しさと観点整理",
+    "url": "https://tech.legalforce.co.jp/entry/ai-agent-test-strategy",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LegalOn TechnologiesのSETが、ブラウザ操作も可能な汎用AIエージェント特有のテストの難しさを整理し、リスク評価に基づくHITLの自動判定や具体的なテスト観点を提案する。",
+    "summaryBody": "本記事は、外部サービス連携やブラウザ操作を行う汎用的なAI Agent開発におけるテスト戦略をまとめたものです。AI Agentはアクション空間が広く、非決定的な動作を伴うため、従来のWebテストとは異なるアプローチが必要です。筆者はまず「ガードレール設計」として、操作のホワイトリスト化や責任分界の明確化を提言。次に、ハザード分析を通じて「起きてほしくないこと」を洗い出し、操作の可逆性や影響の大きさに基づいたリスクスコアリング手法を導入しています。このスコアに基づき、Human-in-the-loop（人間の介入）の必要性を自動判定する仕組みを構築しました。さらに、精度テスト、分離性テスト、セキュリティ（プロンプトインジェクション対策）など、AI Agent固有のテスト分類を詳細に定義しています。最終的に、これらの観点は網羅性よりも実戦的な方向性を示す「叩き台」として、今後のAI開発における品質保証の指針を示しています。",
+    "topics": [
+      "AI Agent",
+      "QA/SET",
+      "Human-in-the-loop",
+      "リスク分析",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

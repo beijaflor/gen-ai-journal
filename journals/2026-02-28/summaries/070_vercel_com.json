@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:57:54.426151+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel SandboxにおけるHTTPヘッダーへの認証情報注入機能の提供開始",
+    "url": "https://vercel.com/changelog/safely-inject-credentials-in-http-headers-with-vercel-sandbox",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel Sandboxが、サンドボックス外からHTTPヘッダーに認証情報を自動注入する機能を発表し、機密情報をVM内に露出させない安全なAIエージェント実行環境を実現しました。",
+    "summaryBody": "Vercelは、コード実行環境「Vercel Sandbox」において、送信リクエストのHTTPヘッダーに認証情報を安全に注入する新機能をリリースしました。この機能により、APIキーやトークンをサンドボックスVMの境界外に保持したまま、認証が必要なサービスとの通信が可能になります。設定は`networkPolicy`内の`transform`フィールドで行われ、特定のドメインへのHTTPSリクエストに対してファイアウォール層でヘッダーを付与します。これにより、プロンプトインジェクション等でAIエージェントが侵害された場合でも、VM内に認証情報が存在しないため流出のリスクを最小化できます。また、実行中のサンドボックスに対して動的にポリシーを更新できるため、セットアップ時のみ認証を許可し、実行時には遮断するといったセキュアなワークフローが構築可能です。",
+    "topics": [
+      "Vercel Sandbox",
+      "AI Security",
+      "Network Policy",
+      "Credential Management",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Safely inject credentials in HTTP headers with Vercel Sandbox"
+  }
+}

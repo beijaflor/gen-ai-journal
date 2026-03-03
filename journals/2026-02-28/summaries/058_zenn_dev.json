@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-02-25T11:54:44.147237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3-Swallow & GPT-OSS-Swallow のリリースと技術解説：Reasoning能力とFP8学習の導入",
+    "url": "https://zenn.dev/tokyotech_lm/articles/fa56f10e51fd7d",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "東京科学大学のSwallow LLM Projectが、高度な思考（Reasoning）能力を備えた新モデル「Qwen3-Swallow-v0.2」と「GPT-OSS-Swallow-v0.1」をApache-2.0ライセンスで公開しました。",
+    "summaryBody": "東京科学大学のSwallow LLM Projectは、AlibabaのQwen3およびOpenAIのGPT-OSSをベースに、継続事前学習（CPT）と独自のPost-Training（Reasoning SFT & RLVR）を施した新世代の日本語LLMをリリースしました。最大の特徴は、Test Time Scalingパラダイムに対応した深い思考（Reasoning）能力の獲得です。技術的には、NVIDIA Hopper世代のGPUを活用した「Blockwise FP8」学習を導入し、モデル性能を維持したまま約20%の演算効率向上を実現しました。Megatron-LMやNeMo Framework、slime等のライブラリを駆使し、SFT時のゼロ除算問題の解消や分散学習設定の最適化など、アカデミックな枠組みを超えた高度なエンジニアリングの詳細が公開されています。ライセンスはApache-2.0となり、商用・研究用途での自由度が向上しています。",
+    "topics": [
+      "大規模言語モデル (LLM)",
+      "Swallow LLM",
+      "Reasoning (推論)",
+      "分散学習",
+      "FP8 (低精度学習)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 65,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

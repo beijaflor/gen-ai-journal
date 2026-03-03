@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-01T04:49:22.480201+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI開発プラットフォーム「Lovable」で構築されたアプリ、1.8万人のユーザーデータを流出",
+    "url": "https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "「Vibe coding」プラットフォームLovableでAIが生成したコードに致命的な欠陥があり、学生や教育機関を含む1.8万人以上のデータが露出した。",
+    "summaryBody": "プロンプトのみでアプリを作成する『Vibe coding』のLovableにて、公開されていた教育用アプリに16件の脆弱性が発見されました。セキュリティ研究者のTaimur Khan氏の報告によると、AIが生成したバックエンド（Supabase）の認証ロジックに重大な誤りがあり、認証済みユーザーをブロックする一方で未認証ユーザーに全アクセスを許可する「論理反転」が生じていました。この影響で、UCバークレーやUCデイビスの学生を含む約18,000人のメールアドレスや個人情報が誰でも閲覧可能な状態となっていました。Lovable側は、公開前にセキュリティスキャンによる警告を出しており、最終的な修正はユーザーの責任であるとの立場を示しています。この事件は、AIが『動くコード』を優先するあまり、人間なら数秒で気づくような基本的なセキュリティ要件を無視するリスクを浮き彫りにしました。",
+    "topics": [
+      "Vibe Coding",
+      "AIセキュリティ",
+      "LLM",
+      "データ漏洩",
+      "Supabase"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "AI-built app on Lovable exposed 18K users, researcher claims"
+  }
+}

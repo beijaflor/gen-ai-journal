@@ -43,6 +43,8 @@ Each pattern provides:
 3. **[progressive-sequence.md](./progressive-sequence.md)**: Articles that build on each other
 4. **[debate-contrast.md](./debate-contrast.md)**: Opposing viewpoints creating tension
 
+**Single-Article Theme (Special Case):** When a theme has exactly 1 article (see STEP_04 Section 4 for justification criteria), none of the above patterns applies. In STEP_08, the editor provides surrounding analysis and context directly — the article is evidence; the editor voice is the structure. No formal pattern is required; document the assembly approach freeform in the editorial plan.
+
 ## Creating New Patterns
 
 When existing patterns don't fit:
