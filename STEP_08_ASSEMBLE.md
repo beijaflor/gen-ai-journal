@@ -139,22 +139,48 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
 ```markdown
 ## [Sequential Number]. [Theme Title from Editorial Plan]
 
-[Optional: Theme introduction paragraph from editorial_plan_YYYY_MM_DD.md
- - Use the 2-3 sentence introduction if it helps readers understand the section
- - Omit if the theme title is self-explanatory and articles speak for themselves]
+[Theme introduction from editorial_plan_YYYY_MM_DD.md — ALWAYS include.
+ Use the 2-3 sentence introduction verbatim or polished. This is the entry
+ point that orients readers to what follows and why it matters.]
 
-### [Article Japanese Title]
+### [Lead Article Japanese Title]
 
 [Article URL - plain text, not markdown link]
 
-[Clean article summary - 300-600 words in Japanese]
-[Include: technical concepts, business context, why it matters]
-[Exclude: metadata, scores, content type, language, topics tags]
+[400-600 words — full editorial treatment. This is the primary source for
+ this theme. Establish the problem, explain the core argument, provide
+ technical depth. The reader should understand the theme from this alone.]
 
 ---
 
-### [Next Article in Same Theme...]
+### [Supporting Article Japanese Title]
+
+[Article URL - plain text, not markdown link]
+
+[150-250 words — focused treatment. Open with a transition sentence that
+ explicitly connects this article to the previous one (e.g., "この問題を別の
+ 角度から..." or "前述のアプローチを実践した例として..."). Convey this article's
+ unique contribution to the theme; do not repeat what the lead article covered.]
+
+---
+
+### [Synthesis/Final Article Japanese Title]  ← if theme has one
+
+[Article URL - plain text, not markdown link]
+
+[200-300 words — synthesis emphasis. Draw together the thread from preceding
+ articles. Close with the theme's key takeaway or unresolved tension.]
+
+---
+
+#### 参考リンク
+
+- [Japanese Title of Lead Article](/journals/YYYY-MM-DD/NNN/)
+- [Japanese Title of Supporting Article](/journals/YYYY-MM-DD/NNN/)
+- [Japanese Title of Final Article](/journals/YYYY-MM-DD/NNN/)
 ```
+
+*Note: `NNN` = 3-digit zero-padded article ID from `curated_journal_sources.md` (e.g., `112`, `046`, `003`). Use the date from `workdesk/sources.md` header (e.g., `2026-02-28`).*
 
 **Theme Assembly Guidance:**
 
@@ -162,27 +188,40 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
   - Order was determined based on pattern guidelines
   - Only reorder if you discover a better flow (document why in comments)
 
-- **Transitions**: Follow the transition strategies from selected pattern
-  - **Progressive Sequence**: "Building on this..." / "Taking this further..."
-  - **Multi-Perspective**: "From another angle..." / "Contrasting with this..."
-  - **Single-Focus**: "In response to this..." / "Analyzing this further..."
-  - **Debate-Contrast**: "However, critics argue..." / "On the other hand..."
+- **Article weight** — vary length by role assigned in STEP_07:
+  - **Lead / Primary source**: 400-600 words. Full treatment. Establish the theme.
+  - **Supporting articles**: 150-250 words. Focused. Open with explicit transition from previous.
+  - **Synthesis / Contrarian / Final**: 200-300 words. Draw threads together; close with takeaway.
+  - Single-article themes: 400-600 words + strong editorial voice (no reference links needed)
 
-- **Narrative arc**: Answer the writing prompts from assembly strategy
+- **Transitions** — every supporting article opens with a sentence connecting it to what came before:
+  - Progressive Sequence: "この基礎を踏まえて..." / "さらに一段上の抽象化として..."
+  - Multi-Perspective: "別の角度から見ると..." / "対照的に..."
+  - Single-Focus: "この発表を受けて..." / "一方で技術的側面からは..."
+  - Debate-Contrast: "しかしこれに真っ向から異を唱えるのが..." / "両者の議論が交わる点として..."
+
+- **Narrative arc**: Answer the writing prompts from STEP_07 assembly strategy
   - What question does this theme answer?
   - What synthesis emerges from these articles together?
   - What should readers take away?
 
 - **Connection points**: Use the documented connections between articles
-  - Explicitly link Article A → Article B where noted
+  - Explicitly link Article A → Article B where noted in STEP_07
   - Highlight complementary vs. contrasting viewpoints
 
+- **Reference links**: Append `#### 参考リンク` after the last article in every theme
+  - List each article as: `- [Japanese Title](/journals/YYYY-MM-DD/NNN/)`
+  - NNN = 3-digit zero-padded article ID (from `curated_journal_sources.md`)
+  - Date = journal date from `workdesk/sources.md` header
+  - These link to internal summary detail pages, not external source URLs
+  - Source URLs remain as plain text in each article body (unchanged)
+
 **Critical transformation rules**:
-- **Include**: Theme title from plan, Japanese article title (##見出し from unified summary), URL, polished summary
+- **Include**: Theme title, REQUIRED theme intro (2-3 sentences), Japanese article title, URL, polished summary, `#### 参考リンク` section
 - **Exclude**: Original Title, Content Type, Language, Scores, Topics tags, metadata
-- **Edit**: Refine summary for editorial voice (see EDITOR_PERSONALITY.md) AND pattern narrative flow
-- **Format**: Use `---` separator between articles
-- **Theme Intro**: Use introduction from editorial plan (refined in STEP_07 if pattern-specific intro needed)
+- **Edit**: Vary summary length by article role (lead: 400-600w / supporting: 150-250w / synthesis: 200-300w); refine for editorial voice AND pattern narrative flow
+- **Format**: Use `---` separator between articles within a theme; `#### 参考リンク` comes after last `---` before the next `##` theme
+- **Theme Intro**: REQUIRED — always include, never omit even when theme title is self-explanatory
 
 #### 3. Verify Assembly Strategy Execution
 
@@ -468,6 +507,10 @@ rm temp_annex_journal_urls.txt temp_annex_sources.txt
 - [ ] Clean markdown syntax
 - [ ] All URLs are plain text (not markdown links)
 - [ ] No metadata remnants (scores, tags, content type)
+- [ ] Every theme has a `#### 参考リンク` section after the final article
+- [ ] Reference link URLs use format `/journals/YYYY-MM-DD/NNN/` (internal paths, not source URLs)
+- [ ] Theme introductions present in all sections (not omitted)
+- [ ] Article weight varies within themes: lead articles are noticeably fuller than supporting articles
 
 ### 4. Final Quality Check
 
@@ -537,6 +580,8 @@ Final journals must:
 - [ ] Organize articles into 5-7 thematic sections
 - [ ] Maintain consistent editorial voice throughout
 - [ ] Be ready for direct publication
+- [ ] Each theme section has `#### 参考リンク` with all theme articles listed
+- [ ] Lead article in each theme receives fuller treatment (400-600 words) than supporting articles
 
 ## Next Step
 
