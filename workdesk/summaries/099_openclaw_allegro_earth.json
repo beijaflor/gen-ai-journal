@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-04T16:55:46.071175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClaw Exposure Watchboard: セキュリティリスクのある公開インスタンスの追跡",
+    "url": "https://openclaw.allegro.earth/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "インターネット上に無防備に公開されている25万件以上のOpenClawインスタンスを特定し、セキュリティ対策と認証の有効化を促す監視ダッシュボード。",
+    "summaryBody": "OpenClaw Exposure Watchboardは、外部から直接アクセス可能なOpenClaw（AIエージェントフレームワーク）のインスタンスをリスト化し、防御意識を高めるためのサイトです。2026年3月時点で、約25万件以上の露出したインスタンスが確認されており、その多くがAlibaba Cloudなどのクラウドサービス上で稼働しています。ダッシュボードでは、IPアドレス（一部マスク済）、認証の有無、資格情報の漏洩状況、および関連するAPT（持続的標的型攻撃）グループや既知の脆弱性（CVE）リストを表示しています。特定のインスタンスにはAPT28やLazarus Groupなどの著名な攻撃グループとの関連性や、数百件に及ぶCVEが紐付けられており、極めて高いセキュリティリスクが示唆されています。管理者に対しては、認証の有効化、パブリックアクセスの制限、最新パッチの適用に加え、VivgridなどのセキュアなAIゲートウェイの利用が推奨されています。",
+    "topics": [
+      "OpenClaw",
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "脆弱性管理",
+      "APT攻撃グループ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 82,
+      "annexPotential": 90,
+      "overall": 86
+    },
+    "originalTitle": "OpenClaw Exposure Watchboard"
+  }
+}
