@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:03:06.132037+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIとテセウスの船：AIによるコード再実装とオープンソースライセンスの崩壊",
+    "url": "https://lucumr.pocoo.org/2026/3/5/theseus/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIを用いてAPIとテストスイートから既存ソフトウェアを再実装することで、ライセンス制約を回避し permissive なライセンスへ転換する手法が、著作権とオープンソースのあり方を根本から変えようとしている。",
+    "summaryBody": "Flaskの作者として知られるArmin Ronacher氏による、AI時代のソフトウェア再実装に関する考察です。AIエージェントを活用し、既存のコードを直接参照せず、API定義とテストスイートのみを「ガイド」として別言語や別実装へ移植・再実装する手法が容易になっています。具体例として、LGPLライセンスの`chardet`ライブラリが、テストスイートを元にAIで再実装されMITライセンスとして公開されたことで起きた騒動を挙げています。これは「テセウスの船」の議論に似ており、振る舞いが同じでも実装が完全に書き換えられた場合、それは「二次的著作物」ではなく「新規の著作物」とみなされる可能性が高いと指摘しています。この動きは、著作権の保護に依存するGPLなどのコピーレフト・ライセンスを無効化する可能性があり、将来的にソフトウェアの価値はライセンスや著作権よりも、商標（名前）の保持へとシフトしていくのではないかと予測しています。",
+    "topics": [
+      "AI",
+      "Open Source License",
+      "Copyright Law",
+      "Software Architecture",
+      "GPL vs MIT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": "AI And The Ship of Theseus"
+  }
+}

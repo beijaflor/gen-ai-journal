@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:57:06.534687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによるテストコード生成とレビューのガイドライン",
+    "url": "https://techblog.zozo.com/entry/ai-test-code-review-guideline-for-engineers",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ZOZOが公開した、GitHub Copilot等のAIによって生成されたテストコードを適切にレビューするための実践的なガイドライン。",
+    "summaryBody": "### 概要 ZOZOのエンジニアリング組織において策定された、AI生成テストコードのレビュー方針に関する解説記事です。AIによるテスト生成は生産性を向上させる一方で、ハルシネーションによる不正確なコードを生むリスクがあるため、人間による質の高いレビューが不可欠です。 ### 鍵となるポイント 記事では、AI生成特有の注意点として以下の3点を挙げています。1. **モックとスタブの整合性**: AIが生成した外部依存関係の模倣が、実際の振る舞いと一致しているか厳格に確認すること。2. **テストの意図とアサーション**: テストが単にパスするだけでなく、期待される仕様を正しく検証しているか。3. **ハルシネーションへの対策**: 存在しないメソッドの呼び出しや、論理的な矛盾を見逃さないこと。 ### 結論 AIを単なる自動化ツールとしてではなく、エンジニアが品質に責任を持つための『下書き』として捉え、レビューの観点を標準化することの重要性を説いています。",
+    "topics": [
+      "AI",
+      "ユニットテスト",
+      "コードレビュー",
+      "GitHub Copilot",
+      "ZOZO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

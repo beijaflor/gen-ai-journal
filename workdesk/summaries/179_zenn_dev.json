@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:03:35.181506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント基盤をOSのように設計する：cekernelによる並列開発の自動化",
+    "url": "https://zenn.dev/r_kawaiimura/articles/addf6348bf064b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OSのプロセス管理モデル（生成、通信、信号、隔離）を応用し、Claude Codeを用いたAIエージェントの並列処理基盤「cekernel」を開発・実践した技術報告。",
+    "summaryBody": "### 概要\nClaude Code（AIコーディングエージェント）を基盤とした並列実行環境「cekernel」の設計と実装に関する解説記事。複数のGitHub issueを並列で処理させるため、OSのカーネルが担ってきたプロセス管理の概念をAIエージェントのライフサイクル管理に持ち込んでいます。\n\n### OS概念との対応\n- **プロセス管理**: Orchestratorがinit/schedulerとして機能し、Workerをspawnする。\n- **リソース隔離**: `git worktree`を各issueごとのアドレス空間（隔離環境）として利用。\n- **プロセス間通信 (IPC)**: 名前付きパイプ (FIFO) を用いた高速かつシンプルな通知機能。\n- **シグナル**: LLMのターンベース動作に合わせ、ファイルベースの「Cooperative Signal」で安全な停止や一時停止を実現。\n\n### 実装と成果\nbashとgitのみという最小限の依存関係で構築され、メンテナンスコストを抑制。WezTermやtmuxなどのマルチバックエンドに対応し、開発者のローカル環境からヘッドレスな環境まで柔軟に動作します。実際にSelf-hosting（cekernelの開発をcekernelで行う）により、年間コミット数が倍増するなど圧倒的な開発速度の向上が確認されています。今後はスケジューリングの自動化により、人間が「何を解くか」に集中できる環境を目指しています。",
+    "topics": [
+      "AIエージェント",
+      "OS設計",
+      "Claude Code",
+      "並列処理",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "AI エージェント基盤を、OS を作るように設計する"
+  }
+}

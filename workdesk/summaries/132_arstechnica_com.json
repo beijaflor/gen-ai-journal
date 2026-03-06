@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:52:26.762242+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMが大規模かつ驚くべき精度で匿名ユーザーの正体を暴く：研究報告",
+    "url": "https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMを用いてSNSの投稿内容などの非構造化データを分析することで、従来のアルゴリズムを遥かに凌駕する精度で匿名ユーザーの身元を特定できることが最新の研究で示された。",
+    "summaryBody": "大規模言語モデル（LLM）が、インターネット上の匿名性（擬似匿名性）を事実上無効化する可能性を示す研究結果が発表されました。研究者らは、LLMエージェントが自由形式のテキスト（SNSの投稿やインタビューの書き起こし等）から個人の特徴的な「信号」を抽出し、Web検索や推論を組み合わせて実在の個人と結びつける手法を検証しました。従来の手法は構造化されたデータセットを必要としましたが、LLMは人間のような推論を用いることで、Hacker NewsやRedditの投稿から高精度にユーザーを特定しました。例えば、Redditで10本以上の映画について語ったユーザーの約48%が、90%という高い精度で特定されました。この研究は、匿名のアカウントによるプライバシー保護という従来の前提がLLMによって崩壊しつつあることを警告しており、プラットフォーム側のデータ保護策やLLMの利用制限の必要性を説いています。",
+    "topics": [
+      "LLM",
+      "プライバシー",
+      "匿名性解除",
+      "サイバーセキュリティ",
+      "AI倫理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "LLMs can unmask pseudonymous users at scale with surprising accuracy"
+  }
+}
