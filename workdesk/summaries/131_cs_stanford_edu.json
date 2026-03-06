@@ -1,33 +1,34 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-06T04:52:10.971909+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-03-07T00:00:00.000000+00:00",
+    "generatedBy": "claude-sonnet-4-6"
   },
   "content": {
-    "title": "クロード・サイクル（Claude Cycles）：反復的な自己改善プロセスによる推論能力の進化",
+    "title": "クロードのサイクル — Claude Opus 4.6による未解決グラフ理論問題の解決",
     "url": "https://cs.stanford.edu/~knuth/papers/claude-cycles.pdf",
     "language": "en",
     "contentType": "🔬 Research & Analysis (研究・分析)",
-    "oneSentenceSummary": "Claudeの推論能力を最大限に引き出すため、自己批判と修正のプロセスをループ化し、コード生成や数学的推論の精度を大幅に向上させる「Claude Cycles」フレームワークの解説。",
-    "summaryBody": "Anthropicによって提唱された「Claude Cycles」は、AIモデルの出力を段階的に改善するための体系的な反復フレームワークです。本資料では、単一の指示で回答を出す「シングルショット」アプローチの限界を指摘し、モデル自身に「思考（Think）」「行動（Act）」「検証（Verify）」「修正（Refine）」のサイクルを実行させることで、出力品質を向上させる手法を詳述しています。\n\n主なポイントは以下の通りです：\n1. **自己修正ループ**: モデルが生成した初期回答に対し、自ら論理的矛盾やバグを検出し、次のサイクルで修正を行うプロセスを定義。\n2. **ベンチマーク性能の向上**: ソフトウェア開発（SWE-bench）や数学的推論において、このサイクルを適用することで正答率が劇的に向上することを実証。\n3. **計算コストの最適化**: サイクルを繰り返すことによる推論コストの増加と、得られる精度の向上のバランス（トレードオフ）についての定量的分析。\n4. **エージェント的振る舞い**: 単なるチャットボットを超え、自律的にゴールへ向かって試行錯誤する「エージェント型AI」への道筋を示しています。",
+    "oneSentenceSummary": "Donald Knuthが数週間取り組んでいた有向ハミルトン閉路分解の未解決問題を、Claude Opus 4.6が約1時間・31回の探索で解決した経緯を、Knuth自身が論文として記録した驚愕のドキュメント。",
+    "summaryBody": "コンピュータ科学の巨人Donald Knuth（スタンフォード大学）が2026年2月28日に発表した論文。Knuthが『The Art of Computer Programming』新巻のために研究していた未解決問題——m³頂点を持つ特定有向グラフのアークを3本のm³-サイクルに分解する問題——をClaude Opus 4.6が解決したことへの「衝撃」を記している。Filip Stappersが丁寧なコーチング（毎探索後に進捗をplan.mdへ記録させる指示）のもとClaude Opus 4.6にセッションを実施。Claudeはファイバー座標の再定式化、DFS、シミュレーテッドアニーリング、2D/3Dサーペンタインパターンなど31回の探索を経て、奇数mすべてに対する完全な構成を発見した。Knuthはこの結果を厳密に証明し「Claude-like分解」として体系化、奇数m向けに760通りの有効解が存在することを示した。偶数mの完全解は未解決のまま。人間の丁寧なコーチングが問題解決速度を劇的に左右した点も重要な知見。",
     "topics": [
-      "Anthropic",
-      "Claude 3",
-      "Iterative Refinement",
-      "AI Agents",
-      "Reasoning"
+      "Claude Opus 4.6",
+      "数学的推論",
+      "グラフ理論",
+      "Donald Knuth",
+      "AIエージェント",
+      "未解決問題"
     ],
     "scores": {
       "signal": 5,
       "depth": 5,
-      "uniqueness": 4,
-      "practical": 5,
-      "antiHype": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
       "mainJournal": 95,
-      "annexPotential": 30,
-      "overall": 94
+      "annexPotential": 55,
+      "overall": 96
     },
-    "originalTitle": "Claude Cycles: Enhancing Model Performance via Iterative Feedback Loops"
+    "originalTitle": "Claude's Cycles"
   }
 }
