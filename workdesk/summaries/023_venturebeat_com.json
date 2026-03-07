@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:30:13.266074+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アリババがQwen3.5-Mediumシリーズを公開：ローカル環境でSonnet 4.5級の性能を実現",
+    "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "アリババは、消費者向けGPUで動作しつつAnthropicのClaude Sonnet 4.5を凌駕する性能を持つ、オープンソースのQwen3.5-Mediumモデル群をリリースしました。",
+    "summaryBody": "アリババのQwenチームは、最新のオープンソースLLM「Qwen3.5-Medium」シリーズ（27B、35B、122B）を公開しました。特にQwen3.5-35B-A3Bは、Mixture-of-Experts（MoE）とGated Delta Networksを組み合わせたハイブリッド・アーキテクチャを採用し、推論時に活性化するパラメータを30億に抑えつつ、ベンチマークでClaude Sonnet 4.5やGPT-5-miniを上回る性能を発揮します。また、4ビット量子化技術により、32GB VRAMの一般向けGPUでも100万トークンのコンテキストウィンドウを処理可能です。デフォルトで「Thinking Mode」を搭載し、複雑な論理推論を内部で行うほか、API提供されるQwen3.5-Flashは競合他社を圧倒する低価格設定となっています。これにより、高度なAI機能をクラウドに依存せず、セキュアなオンプレミス環境で利用できる道が拓かれました。",
+    "topics": [
+      "Qwen3.5",
+      "LLM",
+      "オープンソース",
+      "エッジAI",
+      "Alibaba"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Alibaba's new open source Qwen3.5-Medium models offer Sonnet 4.5 performance on local computers"
+  }
+}

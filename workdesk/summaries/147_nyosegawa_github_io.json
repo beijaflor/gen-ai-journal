@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:55:51.258722+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "skill-creatorから学ぶSkill設計と、Orchestration Skillの作り方",
+    "url": "https://nyosegawa.github.io/posts/skill-creator-and-orchestration-skill/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropic公式のskill-creatorを分析し、大規模エージェントスキルの設計手法やオーケストレーション（Sub-agent型 vs Skill Chain型）の戦略を解説した技術ガイド。",
+    "summaryBody": "本記事は、Anthropicが公開した「スキルを作るためのスキル」であるskill-creatorの内部構造を解剖し、高度なAgent Skillsを設計するためのベストプラクティスを抽出しています。設計の核心として、情報を段階的に開示するProgressive Disclosureをスキル内部にも適用し、メインのSKILL.mdを制御（オーケストレーター）に徹させ、専門的な評価や分析はサブエージェントに、決定論的な計算はスクリプトに委譲する手法を推奨しています。また、JSONスキーマによる出力の安定化や、命令の意図を説明するWhy-driven Prompt Designの重要性を強調。さらに、並列処理に適したSub-agent型と、独立したスキルを直列に繋ぐSkill Chain型という2つのオーケストレーション戦略を比較し、タスクの性質に応じたアーキテクチャ選定の指針を提示しています。最終的に、エージェントスキルを「プロンプトの束」ではなく、MVC的な責務分離を持つ「小さなソフトウェア」として捉えるべきだという展望を述べています。",
+    "topics": [
+      "Agent Skills",
+      "Claude",
+      "Prompt Engineering",
+      "Orchestration",
+      "LLM Apps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 93
+    },
+    "originalTitle": "skill-creatorから学ぶSkill設計と、Orchestration Skillの作り方"
+  }
+}

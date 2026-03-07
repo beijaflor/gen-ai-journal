@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:39:13.638508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIで情報漏えいが増える本当の理由",
+    "url": "https://qiita.com/mhamadajp/items/e44c38f59ec03dea96e1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "生成AIが「検索者」となることで情報の探索範囲と拡散速度が劇的に拡大するリスクを指摘し、RAGやエージェント環境で守るべき3つのデータ層と対策の3本柱を解説する記事。",
+    "summaryBody": "生成AIの普及により、従来の人間による情報探索とは異なり、AIが高速かつ横断的に機密情報を「発見」し再構成してしまうという新しい脅威モデルが提示されています。ガートナーの調査に基づき、情報漏えいリスクの本質を「検索者のAI化」による探索上限の消失と定義。対策として、守るべき対象を元データだけでなく「RAG用の加工データ」や「生成結果」まで広げる必要性を説いています。具体的な防御策として、SaaS評価の拡張、ユースケース（広範活用か限定分析か）に応じたコンテンツ保護、そして現場の判断力を養うアウェアネス向上の3本柱を提唱。明日から取り組めるフェーズ別の実装チェックリストも完備されており、技術者がAIセキュリティを設計に落とし込むための実践的なガイドとなっています。",
+    "topics": [
+      "生成AI",
+      "セキュリティ",
+      "RAG",
+      "情報漏えい",
+      "ガートナー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

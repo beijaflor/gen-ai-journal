@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:04:51.461898+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPはなぜCLIに負けたのか —— 経緯と構造を整理する",
+    "url": "https://zenn.dev/hiraly/articles/3409b886607274",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "モデルの推論能力向上が「補助輪」としてのMCPを不要にし、トークン効率と汎用性に勝るCLIが再び主役となった2026年までの技術史的変遷を解説する。",
+    "summaryBody": "2024年にAnthropicが発表したModel Context Protocol（MCP）が、2026年現在なぜ衰退したのかを分析する論考。当初、モデルがツールを理解するためのJSON-RPC層として期待されたMCPだが、Opus 4.6等の次世代モデルがmanページやヘルプを自力で理解・実行可能になったことで、その存在意義が揺らぎ始めた。決定打となったのはトークン効率の差で、MCPが数万トークンを消費するのに対し、CLIは数百トークンのREADMEで同等の制御が可能。Anthropic自身がスケーリング限界を認め回避策を導入した経緯や、認証・プロセス管理の不備を突く「MCP is dead」論争を経て、AIツールチェーンにおける標準化とモデル進化の速度差という構造的な教訓を提示している。",
+    "topics": [
+      "MCP",
+      "LLM",
+      "CLI",
+      "Anthropic",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

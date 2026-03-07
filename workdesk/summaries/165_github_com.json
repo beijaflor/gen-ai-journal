@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:00:25.964546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Workspace CLI (gws) - 全サービスを網羅するAI親和性の高いコマンドラインツール",
+    "url": "https://github.com/googleworkspace/cli",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Google Discovery Serviceからコマンドを動的に生成し、DriveやGmailなどの全APIをJSON形式で操作できるAIエージェント対応の次世代CLIツール。",
+    "summaryBody": "googleworkspace/cli (gws) は、Google Drive、Gmail、Calendar、Sheets、Docs、Chatなど、Google Workspaceの膨大なAPI群を単一のコマンドで操作可能にするツールです。最大の特徴は、コマンド体系が固定されておらず、Google Discovery Serviceから実行時に動的に構築されるため、APIの更新に自動で追従できる点にあります。すべてのレスポンスは構造化JSONで出力され、AIエージェントがプログラムから解釈しやすい設計となっています。また、Model Context Protocol (MCP) サーバーとしての動作や、Gemini CLI / OpenClaw向けの100種類以上の『AI Agent Skills』を搭載しており、LLMによるWorkspace操作の自動化を強力に支援します。認証はOAuth 2.0、サービスアカウント、既存トークンに対応し、ローカル開発からCI/CD環境まで幅広く活用可能です。",
+    "topics": [
+      "Google Workspace",
+      "CLI",
+      "AI Agent",
+      "MCP",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - googleworkspace/cli: Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills."
+  }
+}
