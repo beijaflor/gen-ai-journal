@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-07T01:25:12.660916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skillsで実現する軽量パーソナルRAG",
+    "url": "https://zenn.dev/karaage0703/articles/d7eaf62437185d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "SQLiteと軽量モデルを活用し、AIエージェントの「Skills」規格に準拠したセットアップが極めて容易な個人向けRAGシステムの構築手法を紹介。",
+    "summaryBody": "以前公開したPostgreSQL/DockerベースのMCPサーバーによるRAG構成を改良し、より軽量で導入が容易な「Skills」ベースのRAGシステムの実装を解説しています。データベースにSQLite、埋め込みモデルにintfloat/multilingual-e5-smallを採用することで、uvコマンド一つで環境構築が完了するポータビリティを実現。AIエージェント（Claude Code等）が自律的にコマンドを実行できるSkill形式にすることで、常駐プロセスの管理を不要にしています。また、検索速度向上のための常駐HTTPサーバー化や、検索結果に関連度スコアを付与するR²AG（EMNLP 2024）の簡易実装など、個人の開発環境に最適化された実用的な工夫が詳細に述べられています。",
+    "topics": [
+      "RAG",
+      "Claude Code",
+      "AIエージェント",
+      "SQLite",
+      "Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

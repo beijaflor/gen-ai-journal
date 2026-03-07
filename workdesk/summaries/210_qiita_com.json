@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-07T01:20:50.164432+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントだけでスクラムを回してみた #GitHubCopilot",
+    "url": "https://qiita.com/shyamagu/items/0ff827a1c2deef68ba9a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotのカスタムエージェント機能を使い、5体のAIにスクラムの役割を割り当ててアプリ開発を自律的に行わせた実験の全容と、その可能性と課題を解説している。",
+    "summaryBody": "この記事は、GitHub Copilotのカスタムエージェント機能を活用し、5体のAI（Opus 4.6やGPT-5.3-Codex等）に「顧客」「プロダクトオーナー」「スクラムマスター」「開発者」のロールを割り当て、スクラムガイド2020に準拠した開発プロセスを自律的に実行させた実験の記録です。人間は最初の「おしゃれなカンバンを作って」という曖昧な指示のみを与え、AIたちは要件定義、バックログ作成、スプリントプランニング、コーディング、スプリントレビュー、レトロスペクティブまでを約2時間で完結させました。技術スタックとしてSvelteKit、Express、SQLiteを用いたチケット管理システムが実際に構築され、ドラッグ＆ドロップ機能やExcel/PPTでの報告書作成まで実施されています。筆者は、AIによる自律的な協業の可能性を高く評価する一方で、実行時間やコスト、AIに適した指標の必要性、人間による品質保証の責任の所在といった今後の課題についても考察しています。",
+    "topics": [
+      "AIエージェント",
+      "スクラム開発",
+      "GitHub Copilot",
+      "自律開発",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
