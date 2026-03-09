@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:33:43.005379+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを駆使して4日間でSchemeコンパイラを構築：Puppy Schemeの開発記録",
+    "url": "https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI（Claude）の支援により、わずか4日間でWASM GCやWASI 2に対応しセルフホスティングも可能なSchemeコンパイラを開発した事例。",
+    "summaryBody": "個人開発者がAIを活用して、短期間で高度な言語処理系「Puppy Scheme」を構築したプロセスを報告しています。このコンパイラはWebAssembly（WASM）をターゲットとし、WASM GC、WASI 2、コンポーネントモデルをサポート。驚くべきことに、AIにパフォーマンス最適化を指示するだけでビルド時間を3分半から11秒へ短縮するなど、AI時代の超速プロトタイピングを具現化しています。R5RS/R7RSの約73%をサポートし、すでに自らのソースコードをコンパイルできるセルフホスティングを達成しており、小規模ながら実用的なバイナリ生成とデッドコード削除機能を備えています。",
+    "topics": [
+      "Scheme",
+      "WebAssembly",
+      "AI Coding",
+      "Compiler",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "I Built a Scheme Compiler with AI in 4 Days"
+  }
+}

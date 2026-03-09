@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:32:00.191646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "microgpt: 200行のPythonでLLMの全貌を理解する",
+    "url": "https://karpathy.github.io/2026/02/12/microgpt/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Andrej Karpathy氏が公開したmicrogptは、依存関係なしの純粋なPython 200行でGPTの訓練から推論までの全工程を実装し、LLMの数学的・アルゴリズム的本質を極限まで簡略化して提示しています。",
+    "summaryBody": "### プロジェクトの概要\\nAndrej Karpathy氏による「microgpt」は、外部ライブラリ（PyTorch等）を一切使わず、単一のPythonファイルでGPTモデルを構築・訓練・推論する教育的プロジェクトです。これは同氏の過去のプロジェクト（micrograd、nanogpt等）の集大成であり、LLMの仕組みを最小限のコードで透明化しています。\\n\\n### 実装の内容\\n1. **Autograd（自動微分）**: microgradをベースにしたスカラー値演算による逆伝播の実装。\\n2. **Tokenizer**: 文字単位のシンプルなトークナイザー。\\n3. **Transformer**: GPT-2の構造を踏襲しつつ、RMSNormやReLU、KVキャッシュを採用したアーキテクチャ。\\n4. **Training**: 名前データセット（names.txt）を用い、Cross-Entropy損失とAdamオプティマイザで学習。\\n5. **Inference**: 学習したパラメータを固定し、統計的に妥当な新しい名前を生成（幻覚）します。\\n\\n### 結論\\nこのコードは、現代の巨大なLLMが内部で行っている「次のトークンの予測」というシンプルな数学的プロセスの核心を突いています。エンジニアや学習者がLLMの魔法を剥ぎ取り、原理を深く理解するための究極の資料です。",
+    "topics": [
+      "LLM",
+      "Python",
+      "Transformer",
+      "機械学習",
+      "教育"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 75,
+      "overall": 98
+    },
+    "originalTitle": "microgpt"
+  }
+}

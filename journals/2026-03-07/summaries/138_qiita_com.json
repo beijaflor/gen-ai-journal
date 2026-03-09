@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:53:47.228007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセッション記憶喪失問題を解決し続けたら、開発が劇的に変わった話",
+    "url": "https://qiita.com/ProgrammingForEver/items/ee68fc621f7d1c53ffe1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code等のAIツールで発生するセッション間の文脈消失を、3つの管理ファイルと仕様駆動開発（SDD）を組み合わせた独自の運用フレームワークと自動化スキルで解決する手法の解説。",
+    "summaryBody": "Claude Code利用者が直面する「新しいセッションでの記憶喪失」問題を根本から解決する実践的なワークフローが紹介されています。筆者は、人間が記述する不変のルール「AGENTS.md」、AIが記録する経験知「MEMORY.md」、セッション間の詳細な引き継ぎを行う「HANDOFF.md」の3ファイル体制を提案。特にMEMORY.mdの200行制限対策や、マルチPC・マルチLLM環境を考慮した`.agent/`ディレクトリによる中立設計が特徴的です。さらに、曖昧な指示による品質低下を防ぐため、PLAN/SPEC/TODO/KNOWLEDGEの4ファイルを用いる「仕様駆動開発（SDD）」を統合。この記事の白眉は、これら複雑な環境構築を一発で完了させるClaude Code用の自動化「スキル」ファイルが全文公開されている点にあり、導入後すぐに「AIと何を作るか」という本質的な作業に集中できる環境を構築可能です。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "AI開発環境",
+      "仕様駆動開発",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Claude Codeのセッション記憶喪失問題を解決し続けたら、開発が劇的に変わった話 #ClaudeCode"
+  }
+}

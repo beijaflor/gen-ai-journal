@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:55:12.115187+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.5の小規模モデル(4B / 2B / 0.8B)がいろいろ使えてすごい",
+    "url": "https://nowokay.hatenablog.com/entry/2026/03/03/112320",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.5の小規模モデル（0.8B/2B/4B）を実機検証し、画像認識や指示追従における高い実用性と知識面の限界を明らかにしています。",
+    "summaryBody": "Qwen3.5シリーズの小規模モデル（0.8B、2B、4B）について、LM Studioを用いた詳細な検証結果をまとめています。画像認識（OCR）性能は非常に高く、2B以上のモデルではCO2測定器の数値読み取りや有価証券報告書の図表解析で実用的な精度を発揮します。指示追従性はモデルサイズに比例して向上し、4BであればJSON出力や安定したツール呼び出し（Function Calling）が可能です。一方で、Javaの複雑なコーディング能力は前世代より低下した印象があり、日本国内の細かい知識問題では誤回答が目立つため、用途を絞ったエッジ環境やRAGのフロントエンドとしての活用が推奨されています。",
+    "topics": [
+      "Qwen3.5",
+      "エッジAI",
+      "ローカルLLM",
+      "画像認識",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

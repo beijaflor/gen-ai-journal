@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:59:56.884473+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント体験(AX)は新しい開発者体験(DX)である：NxによるAIエージェント最適化の原則",
+    "url": "https://nx.dev/blog/making-nx-agent-ready",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントが開発ツールを操作する時代に合わせ、NxがCLIをJSON出力や等冪性の確保といった「エージェント体験（AX）」に最適化した背景と原則を詳説。",
+    "summaryBody": "AIエージェントが開発者の代わりにコードを書き、ツールを操作する「エージェント中心」の時代が到来しています。ビルドツールのNxは、従来の人間向けの開発者体験（DX）に加え、AIエージェントにとっての使いやすさである「Agentic Experience（AX）」を重視したCLIのアップデートを発表しました。\n\n主な改善点と原則は以下の4点です：\n1. **コンテキストの提供**: エージェントが迷わないよう、`--help`の充実やドキュメントへの誘導を強化。\n2. **構造化されたフィードバック**: エージェントを検知すると、対話型プロンプトの代わりに解析しやすいJSONを出力。\n3. **等冪性（Idempotency）**: 必要な入力が不足して再実行する際、以前の作業を壊さず安全にリトライ可能に。\n4. **指示的ではなく情報的に**: モデルに特定の行動を強制するのではなく、判断材料となる情報を構造的に提供。\n\nNxはこの取り組みを通じて、エージェントによる自動オンボーディングやCIパイプラインの自律的な構築を可能にすることを目指しています。",
+    "topics": [
+      "Agentic Experience (AX)",
+      "Nx",
+      "AI Agents",
+      "CLI Design",
+      "Developer Experience (DX)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Agentic Experience Is the New Developer Experience | Nx Blog"
+  }
+}

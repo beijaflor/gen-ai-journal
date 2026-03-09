@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:54:32.614738+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdに本当は何を書くべきなのか",
+    "url": "https://zenn.dev/cureapp/articles/65b9a99d22ce2b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのCLAUDE.mdはSystem PromptではなくUser Messageとして注入されるため、永続的なルールは.claude/rules/に、プロジェクト概要はCLAUDE.mdに書くべきという最適な構成を解説しています。",
+    "summaryBody": "Claude CodeにおけるCLAUDE.mdの技術的な仕様と、それに基づいた効率的なプロジェクト管理手法を提案する記事です。著者は、CLAUDE.mdが「最初のユーザーメッセージ」として扱われ、会話が進むにつれて影響力が低下する（コンテキスト内で古くなる）という性質を指摘しています。このため、CLAUDE.mdは「Session Start Hook」としてプロジェクト概要やモジュール構成、開始手順のみを記述する場所とし、コーディング規約やテスト方針などの永続的なルールは、必要な時に注入される`.claude/rules/`（Conditional Rules）に記述すべきであると述べています。Before/Afterの具体例を通じて、AIへの指示の精度を最大化するための使い分けを明確化しています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "AIプログラミング",
+      "プロンプトエンジニアリング",
+      "開発ベストプラクティス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

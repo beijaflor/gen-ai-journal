@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:46:40.675016+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ついにローカルLLMで安心して仕事が出来る！― Qwen3.5-27B 採用レポート (2026/02/27)",
+    "url": "https://zenn.dev/rna4219/articles/b945d175cde87c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 3090で動作するQwen3.5-27Bが、ベンチマークと実用性の両面でo3-pro等のクラウドモデルを凌駕し、ローカルLLMの新たな基準点となったことを報告するレポート。",
+    "summaryBody": "2026年2月にリリースされたQwen3.5-27Bの検証レポート。RTX 3090（VRAM 24GB）環境での5bit量子化動作において、上位の35B-A3BモデルやOpenAIのo3-proを上回るベンチマークスコア（Artificial Analysis Intelligence Index）を記録している。実際のコーディング試験（TypeScript/Canvasによるゲーム制作）では、1ショットでPongやテトリスを生成可能であり、コードの一貫性、長文タスクの完遂能力、プロンプトへの柔軟な対応において旧世代の大型モデルを凌駕する実用性を示した。線形Attentionと標準Attentionのハイブリッド構造や強化学習（RL）の成果により、ローカル環境でも「中堅フロンティア帯」の性能を安定して享受できる「世代交代」を強調。電気代ベースのコスト比較や導入ガイドも含み、ローカルLLM常用への現実的な道筋を提示している。",
+    "topics": [
+      "Qwen3.5",
+      "ローカルLLM",
+      "RTX 3090",
+      "AIコーディング",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 88,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

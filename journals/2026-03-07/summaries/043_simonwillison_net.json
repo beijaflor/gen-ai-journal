@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:36:11.924581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントによるコード理解を深める「インタラクティブな解説」の活用",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが生成した複雑なコードの仕組みを理解するために、アニメーションや操作可能なツールを自ら作成させ、認知負荷を軽減する「インタラクティブな解説」手法を紹介。",
+    "summaryBody": "Simon Willison氏は、AIエージェントによる開発で生じる「認知的な負債（コードの動作がブラックボックス化すること）」を解消する手法を提案しています。開発者がコードの細部を理解できなくなると、新機能の計画や保守が困難になります。この対策として、AIにコードそのものだけでなく、その動作原理を可視化する「インタラクティブな説明ツール」を作成させることが有効です。\n\n具体例として、Rustで実装された複雑なワードクラウド生成アルゴリズムの仕組みを理解するため、Claudeを使用してアルゴリズムの挙動（アルキメデス螺旋を用いた配置プロセスなど）をアニメーション化するWebツールを生成させた事例を紹介。開発者は静的なコード解説だけでなく、AIにインタラクティブなシミュレータを作らせることで、アルゴリズムの内部挙動を直感的に把握し、確信を持って開発を継続できるようになります。このアプローチは、AIとの協働における「Agentic Engineering Patterns」の重要な一環として位置付けられています。",
+    "topics": [
+      "AI Coding Agents",
+      "Agentic Engineering",
+      "Cognitive Debt",
+      "Interactive Explanations",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Interactive explanations - Agentic Engineering Patterns - Simon Willison's Weblog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:40:03.968916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "非エンジニアの vibe-coding に「理解」を足す Claude Code プラグインを作った",
+    "url": "https://zenn.dev/ramenumaiwhy/articles/178406388fced6",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeでの設計内容を非エンジニア向けに自動翻訳・HTML化し、スマホでの確認を強制することで「理解を伴う開発」を実現するプラグイン「plan-viewer」の紹介。",
+    "summaryBody": "非エンジニアがAI指示のみで開発を行う「vibe-coding」において、設計内容を理解せずに進めてしまうブラックボックス化問題を解決するためのClaude Code用プラグイン「plan-viewer」が開発されました。このツールは、Claude Codeが提示する設計計画（plan）を専門用語の解説や「なぜ必要か」という理由を添えてHTMLに自動変換します。最大の特徴は、PreToolUse hookを利用して「HTMLでの翻訳・確認」を完了させなければ設計の確定を出せないようにする「強制力」を持たせている点です。これにより、物理的にターミナルから離れて「読解モード」に切り替える習慣を作り、開発者が内容を概念レベルで把握した上で判断を下せるように支援します。さらに、スマホ上で分からない箇所に注釈を入れ、後にClaudeへフィードバックする機能や、AIを活用したセキュリティ監査などの実践的な知見も共有されています。",
+    "topics": [
+      "Claude Code",
+      "Vibe Coding",
+      "AIエージェント",
+      "OSS",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

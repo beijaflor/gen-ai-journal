@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-07T02:24:32.330963+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GodotはAIコーディングエージェントでのゲーム開発に向いている",
+    "url": "https://aba.hatenablog.com/entry/2026/03/01/140039",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Godotエンジンのテキストベースなファイル構造と強力なCLI機能が、AIコーディングエージェントによる自動開発ループと極めて相性が良い理由を解説した実践記事。",
+    "summaryBody": "ABA氏による、AIエージェント（Claude Code等）を用いたゲーム開発におけるGodotエンジンの優位性の検証。主な理由は、1)公式CLIによるヘッドレスビルドが容易で1コマンドでWeb出力が可能なこと、2)シーンファイル（.tscn）がプレーンテキストでありエージェントが直接編集しても参照が壊れにくいこと、3)MCPサーバー等の複雑な設定なしで開発ループを構築できることの3点。実際にWSL2環境でAIのみを用いてゲームを作成した体験から、エージェントへの視覚的フィードバック（スクリーンショット）の重要性や、ヘッドレス環境特有のサンドボックス制約の回避策についても触れている。最終的に、知識ゼロの状態からでもAIとGodotの組み合わせでゲーム制作が可能であることを示し、エージェント向けの更新用スキルも公開している。",
+    "topics": [
+      "Godot",
+      "AIコーディングエージェント",
+      "ゲーム開発",
+      "GDScript",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

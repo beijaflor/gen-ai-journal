@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-04T16:54:52.569771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステムをLLMに公開する：AIコーディングでの一貫性を維持する手法",
+    "url": "https://hvpandya.com/llm-design-systems",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングによるデザインの不整合を防ぐため、デザインシステムをMarkdown仕様書、トークン層、自動監査スクリプトとしてLLMに提供し、機械的に一貫性を強制する手法を解説。",
+    "summaryBody": "LLMを用いた「バイブ・コーディング」では、AIがトークン名を捏造したり、セッションを跨ぐと以前の決定を忘れたりすることで、デザインの不整合（ドリフト）が発生します。本記事では、この課題を解決するためにデザインシステムを『LLMが読み取り可能な形式』に変換する3つのアプローチを提案しています。1つ目は、コンポーネントの用法やレイアウト規則を記した構造化Markdown（仕様書）の作成。2つ目は、ハードコードを排除しCSS変数で制御する3層構造のトークン層の構築。3つ目は、CIで動作し生の数値を検出してトークン利用を促す監査スクリプトの導入です。AtlassianのAtlaskitを用いた実践例では、400箇所以上のハードコードを排除し、64の仕様書ファイルを生成することで、AIエージェントが常に正確なデザイン決定を下せる環境を構築しました。これにより、10回目のAIセッションでも初回と同じ視覚的品質を維持することが可能になります。",
+    "topics": [
+      "Design Systems",
+      "LLM",
+      "AI-driven Development",
+      "Frontend Architecture",
+      "CSS Tokens"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Expose Your Design System to LLMs"
+  }
+}

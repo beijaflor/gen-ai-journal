@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:40:47.183745+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3-TTSで10秒の音声で自分の声をクローン",
+    "url": "https://zenn.dev/karaage0703/articles/97f8a01cbb9c49",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Alibaba Cloudの最新モデルQwen3-TTSを使用し、わずか10秒の音声サンプルから高精度なボイスクローンを作成する環境構築と実装の手順を解説。",
+    "summaryBody": "### 概要\\nAlibaba Cloud（Qwenチーム）が開発した最新の音声合成モデル「Qwen3-TTS」の1.7B Baseモデルを用い、個人の音声を複製する方法を紹介しています。わずか3〜10秒の音声データで実用的なクローンが作成可能です。\\n\\n### 主な内容\\n- **技術的特徴**: 日本語を含む多言語対応、Apache 2.0ライセンスによる商用利用可能性。\\n- **環境構築**: `uv`を活用した効率的なPython環境構築（Python 3.12、CUDA 13.0対応）。\\n- **ワークフロー**: 音声サンプルの準備、Whisperによる自動文字起こし（ref_text作成）、Qwen3-TTSによる推論実行。\\n- **最適化**: NVIDIA DGX Spark環境におけるメモリアロケータの設定（CUDA OOM回避策）など、実戦的なチューニング。\\n\\n### 結論\\n短時間のサンプルから驚くほど高い精度で音声を再現できるため、音声配信や動画制作への応用が期待される一方、その利便性と表裏一体の技術的インパクトを強調しています。",
+    "topics": [
+      "Qwen3-TTS",
+      "ボイスクローン",
+      "音声合成",
+      "Python",
+      "DGX Spark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

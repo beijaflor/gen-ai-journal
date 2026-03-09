@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:25:00.418096+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜキャパシティプランニングが再評価されているのか：AI時代のインフラ制約と戦略的必要性",
+    "url": "https://www.oreilly.com/radar/why-capacity-planning-is-back/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIワークロードがGPUや電力といった物理的制約に直面する中、クラウドの「無限の弾力性」という前提が崩れ、戦略的なキャパシティプランニングが不可欠になっています。",
+    "summaryBody": "この記事では、AIがエンタープライズインフラの基本原則をいかに変容させているかを論じています。これまでのクラウドコンピューティングは「リソースは無限に拡張可能」という前提に立っていましたが、GPUなどのAIアクセラレータは希少で物理的な電力・冷却能力に縛られており、この前提が通用しなくなっています。AIの実行は単なるリクエストではなく、検索や推論が連鎖する複雑なパイプラインであり、リソース消費が非線形に増大します。その結果、クラウドは「自由な拡張」から「厳格な割り当て（アロケーション）」のシステムへと移行しつつあります。エンジニアリングチームは、クォータ管理や優先順位付け、負荷に応じた段階的な機能縮小（Graceful Degradation）をアーキテクチャ設計に組み込むことが求められます。キャパシティはもはや運用の細部ではなく、プロダクトの信頼性とコストを左右する第一級の設計変数として復活しています。",
+    "topics": [
+      "AIインフラ",
+      "GPU",
+      "キャパシティプランニング",
+      "クラウドコンピューティング",
+      "システムアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Why Capacity Planning Is Back"
+  }
+}
