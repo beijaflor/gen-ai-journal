@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:13:21.923832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "3分で学ぶ GitHub Copilot CLI の基本とベストプラクティス",
+    "url": "https://blog.inorinrinrin.com/entry/2026/03/07/180419",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIの主要コマンド（init, delegate, plan, research等）の概要と、複数リポジトリ管理や非同期タスク委任などの実用的なベストプラクティスを解説する記事。",
+    "summaryBody": "2026年2月にGAされたGitHub Copilot CLIの基本機能と活用法を、実際のライブラリ修正作業を例に解説しています。記事では、リポジトリ固有のルールを定義する`/init`、非同期でDraft PRを作成しタスクを委任する`/delegate`、実装前に計画を立てる`/plan`、そしてWebやGitHub内を深掘り調査する`/research`といった強力なコマンド群を紹介しています。また、`/add-dir`によるマルチリポジトリ対応や、`/fleet`によるサブエージェントへの並列タスク実行など、高度なワークフローも網羅。GitHubのエコシステムを最大限に活かした機能群により、Claude CodeやGemini CLIといった競合ツールと比較しても、特にコードベースの調査やレビューにおいて高い有用性があることを示唆しています。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "AIエージェント",
+      "開発ツール",
+      "GitHub",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

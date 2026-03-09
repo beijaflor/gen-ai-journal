@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:15:55.436422+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スマホからも PC からも使えるプライベート LLM 環境 (Qwen 3.5-4B) を AWS に構築してみた",
+    "url": "https://dev.classmethod.jp/articles/qwen-3-5-4b-aws-gpu-private-llm-ollama-tailscale/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWSのGPUスポットインスタンスとTailscaleを組み合わせ、最新の軽量LLM「Qwen 3.5-4B」を安価かつ安全にスマホ・PCから利用可能にするプライベート環境の構築手法。",
+    "summaryBody": "クラウドLLMの障害対策として、AWS EC2（g4dn.xlarge）上にQwen 3.5-4Bをセルフホストする手順を解説しています。Terraformによるインフラ自動化、Tailscaleを用いたセキュアなリモート接続、Docker/Ollama/Open WebUIによるチャット環境の統合が特徴です。特にコスト最適化に注力しており、スポットインスタンスの利用に加え、conntrackコマンドでTCP接続を監視し、1時間アイドルが続くと自動でインスタンスを停止するスクリプトを導入しています。記事後半ではQwen 3.5の「thinkingモード」による高い推論能力（C言語の最適化提案など）を確認する一方、特定の知識領域での思考ループやハルシネーションといった実運用上の課題についても率直にレビューしています。",
+    "topics": [
+      "AWS",
+      "LLM",
+      "Terraform",
+      "Tailscale",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:16:49.623846+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにバックドア入りOSSを渡したら、何の疑いもなく実装した",
+    "url": "https://qiita.com/NF0000/items/66510f959b1c22f011a7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeは、直接的な悪意ある指示は検知し拒否するものの、クローンしたOSSに最初から含まれているバックドア（悪意あるコード）は「既存の実装」として信頼し、機能追加時にそのまま踏襲してしまうことが検証で判明した。",
+    "summaryBody": "本記事は、Anthropic社のAIコーディングツール「Claude Code」におけるセキュリティ境界線を実証した検証レポートです。検証の結果、AIは`CLAUDE.md`などによる直接的なバックドア作成指示には「機密情報の漏洩リスクがある」として100%の確率で拒否反応を示しました。しかし、悪意あるパッケージ（環境変数を外部送信する偽ロガーなど）が既に組み込まれたOSSプロジェクトをクローンし、「既存のパターンに従って機能追加して」と依頼した場合、AIは既存のコードを盲目的に信頼し、バックドアを維持・拡大したコードを生成することが確認されました。\n\n著者は、コードの内容を深く理解せずにAIに開発を任せる「Vibe Coding」の広まりに対し、AIがプロジェクトの善悪を完全に判断できない以上、人間によるコードレビューや依存関係のチェック（`npm audit`や`socket.dev`の活用）といった基礎的なリテラシーがこれまで以上に重要であると警鐘を鳴らしています。",
+    "topics": [
+      "Claude Code",
+      "AI Security",
+      "Vibe Coding",
+      "サプライチェーン攻撃",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 42,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

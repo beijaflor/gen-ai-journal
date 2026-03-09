@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:12:43.350117+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AntigravityとClaude Code/Codexの使い分け指針",
+    "url": "https://note.com/tasty_dunlin998/n/ne414fd7d60a2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GoogleのAntigravityとClaude Code/Codexの設計思想を比較し、軽量なSkill設計と重厚なエージェント運用の実務的な使い分け指針を解説した記事。",
+    "summaryBody": "AIエージェントの選定において、モデルの賢さ以上に重要な「情報の与え方と基盤の重心」について解説しています。AntigravityはArtifactsによる可視化と`SKILL.md`による軽量・オンデマンドな手順注入に強みがあり、定型的な繰り返し作業に適しています。一方でClaude CodeやCodexは、SubagentsやAgent Teamsを用いた文脈分離、並列探索、厳格な権限制御を特徴とし、大規模で複雑な仮説検証を伴う開発に向いています。記事内では、業務を「常時ルール」「Skill」「MCP/Hook」「Subagent/Team」の4層に分類する設計指針や、診断用プロンプト、`SKILL.md`の最小構成例が提示されており、エージェント導入時の保守コストを抑えるための具体的なアプローチがまとめられています。",
+    "topics": [
+      "AIエージェント",
+      "Antigravity",
+      "Claude Code",
+      "Codex",
+      "Agent Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

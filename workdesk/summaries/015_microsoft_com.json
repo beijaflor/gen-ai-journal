@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:04:36.934531+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Phi-4-reasoning-vision：マルチモーダル推論モデルのトレーニングにおける教訓と成果",
+    "url": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Microsoft Researchが、150億パラメータで数学・科学推論やGUI操作に優れた軽量マルチモーダルモデル「Phi-4-reasoning-vision」を発表し、効率的な学習手法と推論/非推論の混合制御について公開しました。",
+    "summaryBody": "Microsoftが、高い推論能力と効率性を両立した150億パラメータのオープンウェイトモデル「Phi-4-reasoning-vision-15B」をリリースしました。本モデルは、従来のモデルと比較して大幅に少ない学習データ（2000億トークン）を用いながら、数学、科学、およびコンピュータのユーザーインターフェース（GUI）の理解において優れた性能を発揮します。\n\n技術的なハイライトは以下の通りです：\n- **アーキテクチャ**: SigLIP-2 Naflexエンコーダを用いたミッドフュージョン構成を採用し、動的解像度による高解像度画像処理を最適化。\n- **ハイブリッド学習**: 推論が必要なタスクには思考プロセス（Chain-of-Thought）を、知覚タスクには直接回答を行う「推論/非推論の混合モード」を導入し、遅延と精度のバランスを制御。\n- **データ戦略**: オープンソースデータの徹底的なフィルタリングに加え、高品質な合成データとドメイン特化データを活用。\n- **パフォーマンス**: 10倍以上の計算資源を投じた他社モデルに匹敵する精度を、はるかに低い推論コストで実現。計算効率と精度のトレードオフにおけるパレート限界を押し広げました。\n\n本モデルはHugging FaceやGitHubで公開されており、リソース制約のある環境での高度な視覚推論や、自律的なコンピュータ操作エージェントの開発への応用が期待されます。",
+    "topics": [
+      "Phi-4",
+      "Multimodal AI",
+      "Vision-Language Model",
+      "Mathematical Reasoning",
+      "GUI Grounding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model"
+  }
+}

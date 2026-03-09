@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:07:37.866816+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "手動でのコーディングをやめていく際のメモ",
+    "url": "https://zenn.dev/koyo_k0/articles/c4f90b2ff722e0",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Opus 4.6とClaude Codeの登場を受け、実装作業をAIエージェントに全面的に委ね、人間は設計と意思決定に専念する開発スタイルへの移行記録。",
+    "summaryBody": "エンジニアのアイデンティティであった「自らコードを書くこと」を手放し、Claude Codeを中心としたAIエージェントとの協業へシフトした実践メモです。著者は、エージェントのコンテキスト維持のためにあらゆる業務をドキュメント化（/docs）し、人間（要件定義・ドメイン設計・成果物の責任）とエージェント（実装・デプロイ・環境整備）の役割分担を明確に定義しました。実際の運用では、Claude Codeを主軸に、CLI操作やPR作成をスキルとして自動化。結果として、1日のプルリクエスト作成数が従来の1-2件から3-4件へ倍増し、コード品質を維持しつつ開発速度を大幅に向上させています。エージェントへの情報伝達が「退屈で疲れる」といった人間側の新たな課題も吐露されており、AI時代のエンジニア像の変遷をリアルに記述しています。",
+    "topics": [
+      "AI Coding Agent",
+      "Claude Code",
+      "ソフトウェア設計",
+      "LLM",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:08:26.364461+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとGit Aliasを組み合わせてコミットメッセージの作成を自動化する方法",
+    "url": "https://zenn.dev/hfm/articles/commit-message-generated-by-ai",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "git aliasとClaude Codeを連携させ、ステージング済みの差分から最適なコミットメッセージを自動生成・編集する効率的なワークフローを紹介しています。",
+    "summaryBody": "この記事では、Gitのエイリアス機能とClaude Code CLIを組み合わせることで、コミットメッセージの作成を自動化するテクニックを解説しています。`git diff --cached`の結果をClaudeに渡し、命令形（Imperative mood）の1行サマリーを生成させるシェル関数をaliasとして定義します。特に、`--no-session-persistence`フラグを使用して不要なセッション履歴を残さない工夫や、`git commit -e`フラグを用いてAIが生成したメッセージを最終的に人間が微調整できる実用的な構成になっています。「Add foobar」のような不明瞭なメッセージを減らし、開発効率を高めるための具体的な設定コードが提供されています。",
+    "topics": [
+      "Git",
+      "Claude Code",
+      "AI自動化",
+      "生産性向上",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

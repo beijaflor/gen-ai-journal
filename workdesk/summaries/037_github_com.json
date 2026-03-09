@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:09:47.186493+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "autoresearch: Andrej KarpathyによるAIエージェント自律研究システム",
+    "url": "https://github.com/karpathy/autoresearch",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが5分間のトレーニングとコード改変を自律的に繰り返し、LLMのアーキテクチャや最適化手法を自動で改善していく研究用フレームワーク。",
+    "summaryBody": "Andrej Karpathy氏が公開した本プロジェクトは、人間がコードを直接書くのではなく、「AIエージェントに研究を行わせるための指示（program.md）」を記述することで、LLMのトレーニングプロセスを自動化する実験的な試みです。システムは5分間という固定の時間枠でトレーニングを実行し、検証データのbits-per-byte (bpb) を指標にモデルの性能を評価します。エージェントは `train.py` 内のモデル構造、ハイパーパラメータ、オプティマイザ（MuonやAdamW）などを自由に改変し、改善が見られればその変更を保持、失敗すれば破棄するというサイクルを繰り返します。これにより、特定のハードウェア環境において最適なモデル構成を人間が介在せずに「進化」させることが可能になります。現在は単一のNVIDIA GPU環境を対象としていますが、コミュニティによってMacOSやWindowsへの移植も進んでいます。",
+    "topics": [
+      "AI Agents",
+      "LLM Training",
+      "AutoML",
+      "Andrej Karpathy",
+      "PyTorch"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - karpathy/autoresearch: AI agents running research on single-GPU nanochat training automatically"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:11:31.175524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGを構築しなくてもGeminiのGoogle Workspace連携で社内ドキュメント検索が実現できた話",
+    "url": "https://dev.classmethod.jp/articles/gemini-workspace-search-instead-of-rag/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google WorkspaceとGeminiの連携機能を活用することで、複雑なRAGシステムを構築することなく、Google Drive上の社内ドキュメントを対象とした高精度なAI検索・要約環境を即座に実現できる。",
+    "summaryBody": "クラスメソッドにおいて、GeminiのGoogle Workspace連携機能を試行した結果、インフラ構築やデータ同期の工数がかかる従来のRAG（Retrieval-Augmented Generation）を代替できる可能性が示された。設定はGeminiのアドオン連携から「Google Workspace」を有効化するのみで完了し、`@workspace`を用いた質問によりGoogle Drive内のドキュメントを検索・要約・引用付きで回答できる。情報の鮮度管理や権限管理もGoogle Workspace側に依存するため運用コストが極めて低く、ドキュメントがDriveに集約されている組織にとっては、自社でRAGを開発する前の有力な選択肢となる。",
+    "topics": [
+      "Gemini",
+      "Google Workspace",
+      "RAG",
+      "Google Drive",
+      "ナレッジ管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

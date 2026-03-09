@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:10:29.919275+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント7体でパープルチーム演習を回してみた",
+    "url": "https://zenn.dev/microsoft/articles/ai-purple-team-exercise",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotカスタムエージェント7体を活用し、攻撃・防御・統制の全プロセスを自律的に実行させるパープルチーム演習の実証実験レポート。",
+    "summaryBody": "従来のパープルチーム演習における「高い専門性」「調整コスト」「再現性の低さ」を解決するため、7体のAIエージェント（統制、攻撃、偵察、防御、ノイズ生成）を用いた自動化フレームワークを構築。実験はラボ環境で行われ、第2ラウンドではKerberoastingによるパスワードクラック、横展開、RCE（リモートコード実行）といった現実的なサイバー攻撃チェーンをAIが完走しました。結果として、Defender XDRの自動防御機能が約9分でアカウントを封じ込めるなど、セキュリティ製品の性能を定量的に評価することに成功。一方で、防御側のAIエージェントが自動防御に依存してしまう課題や、AIによるノイズ生成の品質向上（v2への移行）の必要性が明らかになりました。半日で演習サイクルを回し、改善アクションまで策定できるAIマルチエージェント活用の圧倒的なスピードと可能性を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "GitHub Copilot",
+      "Microsoft Defender",
+      "パープルチーム演習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

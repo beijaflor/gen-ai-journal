@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:14:56.329397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「.env見るな」は通じない－AI時代のシークレット管理術",
+    "url": "https://zenn.dev/76hata/articles/d6d9de62d001a8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントによるプロンプトインジェクションを通じた機密情報漏洩を防ぐため、システムプロンプトによる禁止ではなく設計レベルでのシークレット管理の刷新を説く。",
+    "summaryBody": "Claude Code等のAIエージェント利用時におけるセキュリティリスクを解説した記事です。LLMはシステム指示と外部入力を完全に区別できないため、「.envを読むな」という指示は巧妙なプロンプトインジェクションによって突破される可能性があります。筆者は解決策として、1. AWS Secrets Manager等の利用による.env自体の撤廃、2. .claudeignoreの設定やauto-acceptの無効化、3. Dockerサンドボックス内での実行、という3段階の対策を提示。最終的には「AIに読まれないようにする」のではなく「漏洩しても被害が出ない短命トークン等の設計（漏洩前提の設計）」への転換が不可欠であると結論づけています。",
+    "topics": [
+      "AI Security",
+      "Claude Code",
+      "DevOps",
+      "Secret Management",
+      "Prompt Injection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

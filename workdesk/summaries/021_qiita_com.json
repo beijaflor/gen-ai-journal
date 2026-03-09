@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:06:13.675286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのスケジュールタスクで定期作業を自動化する方法",
+    "url": "https://qiita.com/nogataka/items/23884e80a1716234f068",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeに追加された`/loop`コマンドとDesktop版のスケジュール機能を活用し、監視やレビューなどの繰り返し作業を自動化する具体的な手法を解説しています。",
+    "summaryBody": "Claude Codeに新たに実装された「スケジュールタスク機能」の解説記事です。CLI版で利用可能な`/loop`コマンドは、セッション中に指定した間隔（分、時間、日など）でプロンプトを繰り返し実行でき、デプロイ監視やテストの自動実行に最適です。一方、Desktop版ではGUIを通じて、より永続的で高度なスケジュール設定（週次・日次・平日限定など）が可能です。記事では、内部的に動作するcronツールの詳細、API負荷を分散するためのジッター（オフセット）の仕組み、CLI版とDesktop版、GitHub Actionsの使い分けまで詳しくまとめられています。特に「3回成功したら停止する」といった条件付きの運用や、PRレビューの自動化といった実践的な活用パターンが示されており、AIエージェントを作業プロセスに組み込むための有益なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "AI",
+      "自動化",
+      "CLI",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Claude Codeのスケジュールタスクで定期作業を自動化する方法 #AI - Qiita"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:05:33.839810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Safehouse: ローカルAIエージェントのためのmacOSネイティブ・サンドボックス",
+    "url": "https://agent-safehouse.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "macOSのカーネルレベル保護機能を使用し、ローカルAIエージェントによるファイルの誤削除や重要データへのアクセスを防止するオープンソースのサンドボックス環境。",
+    "summaryBody": "Agent Safehouseは、Claude CodeやAider、Aiderなどの強力なAIエージェントをmacOS上で安全に実行するためのツールです。macOS固有の『sandbox-exec』メカニズムを利用してカーネルレベルでファイルアクセスを制御し、エージェントがプロジェクト外の重要ファイル（SSHキーや個人用ディレクトリなど）を閲覧・破壊することを物理的に阻止します。依存関係のない単一のBashスクリプトで導入でき、デフォルトで『拒否ベース』のセキュリティモデルを採用しているのが特徴です。また、LLMを活用して各ユーザーの環境に最適な最小権限のサンドボックスプロファイルを生成する機能も備えており、エージェントの利便性を維持しつつリスクを最小化します。",
+    "topics": [
+      "AI Agents",
+      "macOS Security",
+      "Sandboxing",
+      "Developer Tools",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Agent Safehouse"
+  }
+}
