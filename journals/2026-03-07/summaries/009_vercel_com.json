@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:26:51.411704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel CLIがAIエージェントによるMarketplace統合の自動化に対応",
+    "url": "https://vercel.com/changelog/vercel-cli-for-marketplace-integrations-optimized-for-agents",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel CLIにAIエージェント向けの最適化が施され、Marketplace統合の検索・インストール・設定ガイドの取得を自律的に行える新コマンドが追加されました。",
+    "summaryBody": "Vercelは、AIエージェントがデータベース、認証、ロギングなどのMarketplace統合を自律的に構築・設定できるように、Vercel CLIを大幅にアップデートしました。今回追加された `discover`、`add`、`guide` コマンドは、AIエージェントによる処理を前提に設計されています。具体的には、`--format=json` フラグによる構造化データの出力や、エージェントがパースしやすいMarkdown形式でのセットアップ手順の提供が含まれます。これにより、エージェントは必要なサービスを探索し、依存関係を解決して、コードスニペットをプロジェクトに適用するまでを一貫して実行可能です。また、利用規約の同意などの重要な局面では人間の入力を促すハイブリッドワークフローもサポートしており、開発自動化の新たなスタンダードを提示しています。",
+    "topics": [
+      "Vercel",
+      "AI Agents",
+      "CLI",
+      "Marketplace",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Vercel CLI for Marketplace integrations optimized for agents"
+  }
+}

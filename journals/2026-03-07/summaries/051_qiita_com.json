@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:38:24.973349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の会話を全自動で Obsidian に記録する、または、車輪の再発明について",
+    "url": "https://qiita.com/delphinus/items/9325c8dd750c85bac944",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの会話履歴を自動でObsidianに保存するツール「claude-code-hooks」の開発経緯と、AI時代の「車輪の再発明」に関する考察。",
+    "summaryBody": "著者は、異なる端末間でのClaude Codeセッション共有の不便さを解消するため、会話内容を自動的にObsidianへMarkdown形式で記録するGo製ツール「claude-code-hooks」を開発した。既存の類似ツールは手動保存が主だったが、本ツールはHook機能を利用して全自動で記録し、セッション間のリンクやAIによる要約・リネーム機能も備える。開発過程では、複雑化したBashスクリプトをClaude Code自身に依頼してGoへリファクタリングした。また、AIによって開発コストが激減した現代において、あえて既存ツールを調べず自分専用のツールを作る「車輪の再発明」の意義や、フォークが容易になることによる今後のOSS文化の変容についても論じている。",
+    "topics": [
+      "ClaudeCode",
+      "Obsidian",
+      "Go",
+      "OSS",
+      "生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

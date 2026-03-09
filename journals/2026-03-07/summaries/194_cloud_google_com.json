@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:06:45.944976+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coruna: 強力なiOSエクスプロイトキットの謎めいた軌跡",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/coruna-powerful-ios-exploit-kit/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "iOS 13から17.2.1を標的とする23個のエクスプロイトを含む高度なキット「Coruna」が、監視ベンダーから国家背景のハッカー、金銭目的の攻撃者へと拡散した経緯を詳述する報告書。",
+    "summaryBody": "Google Threat Intelligence Group (GTIG) は、iOS 13.0から17.2.1までを標的とする強力なエクスプロイトキット「Coruna」を特定しました。このキットは5つの完全な攻撃チェーンと23のエクスプロイトで構成され、高度なPACバイパスやPPLバイパス技術を含んでいます。当初は監視ベンダーの顧客によって使用されていましたが、その後、ウクライナを標的とするロシア系諜報グループ(UNC6353)、さらには中国を拠点とする金銭目的の攻撃者(UNC6691)へと「中古」のゼロデイが拡散していく様子が確認されました。最終ペイロード「PlasmaLoader (PLASMAGRID)」は、MetaMaskやTrust Walletといった多数の仮想通貨ウォレットからの情報窃取に特化しており、中国語のログやLLM生成を疑わせるコードコメントが含まれています。Googleは、これらの脅威から保護するためにiOSを最新バージョンに更新することを強く推奨しています。",
+    "topics": [
+      "Coruna",
+      "iOS Exploit Kit",
+      "PlasmaLoader",
+      "UNC6691",
+      "Zero-day Proliferation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Coruna: The Mysterious Journey of a Powerful iOS Exploit Kit"
+  }
+}

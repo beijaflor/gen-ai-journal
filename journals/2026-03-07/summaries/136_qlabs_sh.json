@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:53:19.676771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NanoGPT Slowrun: 限定されたデータと無限の計算資源による言語モデリングへの挑戦",
+    "url": "https://qlabs.sh/slowrun",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Q Labsが主導する「NanoGPT Slowrun」は、データ供給のボトルネックを解消するため、限られたデータ量で計算資源を最大限活用し、学習効率を極限まで高める新しいアルゴリズムの探求プロジェクトである。",
+    "summaryBody": "現在のスケーリング則はデータと計算資源の比例的な増加を前提としているが、ロボティクスやバイオロジーといった分野ではデータ収集がボトルネックとなっている。これに対し、Q Labsは「NanoGPT Slowrun」を通じて、100Mトークンという固定されたデータセット内で計算資源を無制限に投入し、いかに効率的に学習できるかを追求している。従来の「学習速度」を競うベンチマークとは対照的に、計算コストの高い2次最適化手法や強力な正則化を許容するのが特徴。現在の成果として、Muonオプティマイザ、マルチエポック学習、SwiGLUの採用、モデルアンサンブル等を組み合わせることで、標準的なベースラインと比較して5.5倍のデータ効率を達成した。今後、2次最適化手法やカリキュラム学習、拡散モデルの応用などを通じて、年内に100倍の効率化を目指している。",
+    "topics": [
+      "データ効率",
+      "スケーリング則",
+      "最適化アルゴリズム",
+      "NanoGPT",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "NanoGPT Slowrun - Q Language Modeling with Limited Data, Infinite Compute"
+  }
+}

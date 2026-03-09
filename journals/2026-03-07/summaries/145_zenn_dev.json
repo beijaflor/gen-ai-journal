@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T04:55:21.745734+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの/usageの内容をStatusBarに表示する方法",
+    "url": "https://zenn.dev/suthio/articles/f832922e18f994",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのステータスラインをカスタマイズし、API利用率やレートリミット、コンテキスト使用状況を視覚的に表示するための設定手順を紹介。",
+    "summaryBody": "この記事では、AnthropicのCLIツール「Claude Code」のステータスラインに詳細な利用状況を表示する方法を解説しています。具体的には、macOSのキーチェーンからOAuthトークンを取得してAnthropic APIを呼び出し、5時間および7日間のレートリミットをプログレスバー形式で表示するシェルスクリプトの実装を提案しています。モデル名、コンテキスト使用率、Gitブランチ、変更行数などの情報を、ANSIカラーを用いた視覚的に分かりやすい3行構成でターミナル下部に常時表示するための設定ガイドです。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "カスタマイズ",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

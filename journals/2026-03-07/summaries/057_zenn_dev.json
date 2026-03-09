@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:39:52.716949+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PRを送るだけでリポジトリを「乗っ取れる」？GitHub Actionsの危ない書き方を実際に検証してみた (hackerbot-claw)",
+    "url": "https://zenn.dev/aeyesec/articles/417578718dcced",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント「hackerbot-claw」による自動攻撃事例を元に、GitHub Actionsの記述ミスが招くリポジトリ乗っ取りのリスクと、安全な実装方法を実証的に解説しています。",
+    "summaryBody": "2026年2月に発生した、AI（Claude-Opus-4.5）搭載の自律型セキュリティ調査エージェント「hackerbot-claw」によるGitHubへの自動攻撃キャンペーンを題材に、CI/CDパイプラインの脆弱性を検証したレポートです。記事では、PRタイトルやブランチ名を通じたコマンドインジェクション、`pull_request_target`下での不正コード実行、そしてAIへのプロンプトインジェクションという3つの主要な脆弱性パターンを解説しています。著者は、`${{ }}`による直接展開がいかに容易に悪用され、GitHubトークン等の機密情報を流出させるかを実機で再現し、その対策として「データの命令からの分離（環境変数の利用）」や「権限の最小化」の重要性を説いています。AIが24時間体制で脆弱性をスキャンする現代における、開発者が守るべき鉄則がまとめられています。",
+    "topics": [
+      "GitHub Actions",
+      "セキュリティ脆弱性",
+      "CI/CD",
+      "コマンドインジェクション",
+      "hackerbot-claw"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

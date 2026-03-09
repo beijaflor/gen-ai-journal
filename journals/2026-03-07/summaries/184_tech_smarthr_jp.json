@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-06T05:04:38.113200+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バックエンドエンジニアがフロントエンドをLLMに頼って実装した反省点",
+    "url": "https://tech.smarthr.jp/entry/2026/03/05/091302",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "不慣れなフロントエンド開発でLLMを過信した結果、状態管理やHTML構造、非同期処理の考慮不足といった品質上の課題に直面したバックエンドエンジニアによる内省的記録。",
+    "summaryBody": "SmartHRのバックエンドエンジニアが、TypeScriptとReactの実装においてLLM（Claude等）を活用した際に生じた3つの具体的な反省点を解説しています。1つ目は、フォームで代替可能な箇所に不要な`useState`を多用し再レンダリングや複雑性を招いたこと。2つ目は、API実行時のローディング状態やエラー処理といったフロントエンド特有の非同期状態の網羅を怠ったこと。3つ目は、Figmaの見た目を再現することに固執し、アクセシビリティや保守性に直結する正しいHTML構造を軽視したことです。著者は、LLMの出力が「良さそう」に見えても、それを評価するドメイン知識が欠如していると品質に責任を持てないことを強調し、人間が伝えるべきコンテキストと理想の定義の重要性を説いています。",
+    "topics": [
+      "LLM",
+      "フロントエンド開発",
+      "React",
+      "エンジニアリング",
+      "AI活用"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

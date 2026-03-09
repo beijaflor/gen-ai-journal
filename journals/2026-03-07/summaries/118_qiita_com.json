@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-04T17:00:43.050131+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで「第二の脳」を作り、最終的にAIが自律運用するようになった話",
+    "url": "https://qiita.com/yamapiiii/items/cc2450f410b64329d275",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとGitを組み合わせ、14のカスタムコマンドと13のエージェントを活用して、知識管理からプロジェクト遂行までをAIに自律運用させる高度な「第二の脳」の構築事例。",
+    "summaryBody": "この記事では、NotionやObsidianといった既存のツールではなく、GitリポジトリとClaude Codeを用いて「第二の脳」を構築した手法が詳説されています。主な特徴は、Claude Codeを単なるコード補助ではなく「思考パートナー」として定義したCLAUDE.mdの設計と、14種類のカスタムコマンド、13体のペルソナエージェントによる運用です。\n\nシステムは3層の自律アーキテクチャ（実行層・判断層・常時稼働層）で構成されており、特に「PM Layer」によるプロジェクト管理の自動介入や、`/orchestrate`コマンドによる優先度スコアリングに基づいたタスクの自動実行が画期的です。Gitベースにすることで、AIによる直接的なファイル操作、詳細な履歴管理、GitHub Actionsによるバックグラウンド処理が可能になり、最終的に人間が介入せずにInboxの整理やタスクの進行が行われる仕組みを実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "セカンドブレイン",
+      "プロジェクト管理",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": "Claude Codeで「第二の脳」を作り、最終的にAIが自律運用するようになった話 #AIエージェント - Qiita"
+  }
+}

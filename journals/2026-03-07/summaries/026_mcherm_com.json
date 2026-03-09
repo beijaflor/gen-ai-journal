@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:31:30.570394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを用いた決定論的なプログラミング：エージェントに「ルールを強制するツール」を作らせる手法",
+    "url": "https://www.mcherm.com/deterministic-programming-with-llms.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの確率的な挙動（非決定性）によるミスを防ぐため、規約の遵守をLLMに直接委ねるのではなく、規約を自動検証する決定論的なツールをLLMに作成させるべきだという提案。",
+    "summaryBody": "LLMはコード生成において高い能力を発揮するが、本質的に確率的（ストカスティック）であり、セキュリティ対策や命名規約といった重要なポリシーを常に100%遵守することは期待できない。この記事では、数学界でLLMが証明の概略を作り、Leanなどの形式検証システムが厳密性を担保している手法を例に挙げ、ソフトウェア開発への応用を論じている。開発者はLLMに対して「ルールを守る」よう促すのではなく、LLMを使ってリンターやユニットテスト、あるいは型システムによる制約などの「決定論的なガードレール」を構築し、それをビルドプロセスに組み込むべきである。これにより、人間の不注意やLLMのゆらぎに依存しない、堅牢な開発プロセスが実現できる。",
+    "topics": [
+      "LLM",
+      "Software Engineering",
+      "Code Agents",
+      "Quality Assurance",
+      "Deterministic Programming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Deterministic Programming with LLMs - Dragons in the Algorithm"
+  }
+}

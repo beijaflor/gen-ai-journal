@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:44:43.421912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DevinとClaude Code、SREの現場で使い倒してみた件",
+    "url": "https://speakerdeck.com/karia/devintoclaude-code-srenoxian-chang-deshi-idao-sitemitajian",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Filmarksの開発チームにおけるDevinやClaude CodeといったAIコーディングエージェントの具体的なSRE業務活用事例と導入の勘所を紹介。",
+    "summaryBody": "Filmarks開発チームのSRE業務において、自律型AIエージェント「Devin」とローカル環境で動作する「Claude Code」を導入・活用した知見をまとめた資料です。導入当初の『使い所がわからない』という課題に対し、空リポジトリへのCI/CDセットアップ、GitHub CLIを用いたPR作成の自動化、定期タスク用Issueの自動作成、既存AWSリソースのTerraform化（IaC化）、Locustを用いた負荷試験シナリオの実装、そしてesa上のドキュメントをMCP経由で読み取ったスクリプト化など、具体的かつ多岐にわたる実践例が示されています。各事例ごとに『実践してみて』の振り返りがあり、エージェントごとの特性の使い分けや、CLAUDE.mdによるガードレール設置の重要性など、現場視点のノウハウが凝縮されています。",
+    "topics": [
+      "SRE",
+      "Claude Code",
+      "Devin",
+      "AIコーディングエージェント",
+      "Terraform"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

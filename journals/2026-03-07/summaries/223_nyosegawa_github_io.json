@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-07T01:23:56.271261+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "作ったAgent Skill、ちゃんと動いていますか？監査用のSkill、skill-auditorを作った話",
+    "url": "https://nyosegawa.github.io/posts/skill-auditor/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "個別のAgent Skill最適化を超え、スキル間のAttention競合やポートフォリオ全体のルーティング精度を実ログから自動監査するツール「skill-auditor」の設計思想と有用性の解説。",
+    "summaryBody": "本記事は、複数のAgent Skillを運用する際に生じる『Attention競合』や『もぐらたたき問題（あるスキルの改善が他へ悪影響を与える現象）』を解決するための監査ツール「skill-auditor」を解説しています。主な特徴は、実セッションログを基にAgent-as-a-Judgeパターンでルーティング精度を多次元的に評価し、指示密度（Attention Budget）を可視化する点にあります。設計面では、複雑な推論をサブエージェントに、確定的な集計をスクリプトに分担させるハイブリッドアーキテクチャを採用。単なる最終結果の正否だけでなく、ユーザーの意図とモデルの行動軌跡（Trajectory）を分析することで、高度なカスケードチェックを伴う修正パッチの提案を可能にしています。これは最新のAgent評価研究の流れを実用的な開発ワークフローに落とし込んだものであり、大規模なエージェント・ポートフォリオを維持管理するための重要な指針を提示しています。",
+    "topics": [
+      "Agent Skills",
+      "Claude Code",
+      "LLM-as-a-Judge",
+      "Prompt Engineering",
+      "Agent Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

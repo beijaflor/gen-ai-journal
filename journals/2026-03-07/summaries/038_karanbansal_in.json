@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-03T08:34:56.949872+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを劇的に高速化・高精度化する隠れた設定「LSP」の有効化ガイド",
+    "url": "https://karanbansal.in/blog/claude-code-lsp/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeでLSP（Language Server Protocol）を有効化し、コード解析をGrepベースからセマンティック解析へ切り替えることで、応答速度をミリ秒単位にまで高速化する手法の解説。",
+    "summaryBody": "Claude Codeのデフォルト設定では、コードの検索にGrep（テキスト検索）が使用されており、大規模なコードベースでは速度低下や精度の欠如が課題となっています。本記事では、非公開のフラグ`ENABLE_LSP_TOOL`を有効にすることで、Language Server Protocol（LSP）を利用可能にする方法を紹介しています。\n\nLSPを導入することで、シンボル定義への移動、参照の検索、型情報の取得が数秒からミリ秒単位（約50ms）に短縮され、精度も100%に向上します。さらに、Claudeがコードを編集した直後にLSPがエラーを検知し、自律的に修正を行う「セルフコレクト」が可能になるため、開発の反復回数を大幅に削減できます。\n\nセットアップには以下のステップが含まれます：\n1. `settings.json`での環境変数設定。\n2. 各言語（Python, TypeScript, Go等）の言語サーババイナリのインストール。\n3. Claudeプラグインのインストールと有効化。\n4. ClaudeがLSPを優先的に使用するように指示する`CLAUDE.md`の作成。\n\nAIアシスタントに「テキスト」ではなく「構造」を理解させることで、開発体験が劇的に改善します。",
+    "topics": [
+      "Claude Code",
+      "LSP",
+      "AIプログラミング",
+      "開発ツール",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "The 2-Minute Claude Code Upgrade You're Probably Missing: LSP"
+  }
+}
