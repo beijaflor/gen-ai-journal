@@ -181,6 +181,16 @@ def validate_json_summary(data: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
         return False, f"Validation error: {str(e)}"
 
 
+def sanitize_html_in_text(text: str) -> str:
+    """Encode HTML angle brackets to entity references.
+
+    Prevents raw HTML tags in AI-generated text from being
+    stripped by DOMPurify during rendering. Only encodes
+    < and > to avoid double-encoding existing entities like &amp;.
+    """
+    return text.replace('<', '&lt;').replace('>', '&gt;')
+
+
 def get_gemini_schema():
     """Get Gemini-compatible schema for structured output.
 
@@ -616,6 +626,14 @@ def main():
                 sys.exit(1)
 
             logging.info("JSON validation passed")
+
+            # Sanitize HTML in text fields to prevent raw tags from being stripped by DOMPurify
+            if 'content' in response_data:
+                content = response_data['content']
+                for field in ('summaryBody', 'oneSentenceSummary', 'title'):
+                    if field in content and isinstance(content[field], str):
+                        content[field] = sanitize_html_in_text(content[field])
+                logging.info("HTML sanitization applied to text fields")
 
             # URL enforcement: Gemini sometimes writes a different URL in the JSON output field
             # even though it fetched content from the correct URL. Force the URL to match args.url.
