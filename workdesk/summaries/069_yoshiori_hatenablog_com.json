@@ -1,20 +1,20 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-09T09:17:45.018470+00:00",
+    "generatedAt": "2026-03-11T02:00:39.163682+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "エラー：記事を取得できませんでした (429 Too Many Requests)",
+    "title": "記事取得エラー: 429 Client Error (yoshiori.hatenablog.com)",
     "url": "https://yoshiori.hatenablog.com/entry/2026/03/04/002852",
     "language": "ja",
     "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "URLアクセス時にサーバー制限（HTTP 429）が発生したため、記事の解析ができませんでした。",
-    "summaryBody": "指定されたURL（https://yoshiori.hatenablog.com/entry/2026/03/04/002852）へアクセスを試みましたが、はてなブログのサーバーより429 Too Many Requests（リクエスト過多）エラーが返されました。このため、記事の本文データを正常に取得できず、内容に基づいた詳細な要約や評価を行うことが不可能な状態です。本レポートは便宜上のエラー通知として生成されており、スコアはすべて最低値に設定されています。内容の解析が必要な場合は、時間をおいてから再度お試しください。",
+    "oneSentenceSummary": "指定されたURLのブログ記事取得中にHTTP 429エラーが発生し、コンテンツの解析ができませんでした。",
+    "summaryBody": "本件は、はてなブログ上の特定の記事（https://yoshiori.hatenablog.com/entry/2026/03/04/002852）へアクセスを試みた際に発生したHTTP 429エラー（Too Many Requests）に関する報告である。このエラーはサーバー側のレートリミットに抵触したことを示しており、結果としてブログの本文やメタデータを正常に取得し解析することができなかった。URLの日付形式（2026年3月4日）が未来を示している点も特筆すべきだが、内容が不明なため、技術的な評価や要約は提供不可となっている。",
     "topics": [
       "HTTP 429",
-      "エラー",
-      "アクセス制限"
+      "Access Error",
+      "Hatenablog"
     ],
     "scores": {
       "signal": 0,

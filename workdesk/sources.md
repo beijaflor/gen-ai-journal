@@ -61,7 +61,6 @@
 - [x] 062. https://note.com/fromdusktildawn/n/n36b18b002010
 - [x] 063. https://dev.classmethod.jp/articles/qwen-3-5-4b-aws-gpu-private-llm-ollama-tailscale/
 - [x] 064. https://posfie.com/@cu6gane/p/WV7AhV9
-- [x] 065. https://www.cnbc.com/2026/03/04/amazon-bahrain-data-centers-targeted-iran-drone-strike.html
 - [x] 066. https://note.com/simplearchitect/n/nf00d38494ac3
 - [x] 067. https://qiita.com/NF0000/items/66510f959b1c22f011a7
 - [x] 068. https://zenn.dev/dassimen/articles/fb7c9c893479ee
