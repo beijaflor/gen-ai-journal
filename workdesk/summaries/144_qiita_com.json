@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T10:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CLIでトークンを節約するためのモデル設定方法",
+    "url": "https://qiita.com/Y-Y-dev/items/92db4cf5039af261e473",
+    "language": "ja",
+    "contentType": "⚙️ Tools (ツール)",
+    "oneSentenceSummary": "Claude CLIのトークン消費を抑えるため、利用シーンに応じてhaiku、sonnet、opusといったモデルを使い分ける設定方法と実務上の運用について解説しています。",
+    "summaryBody": "本記事では、Claude CLI利用時にトークン消費を抑えるためのモデル設定方法を解説します。\n\n**概要と背景**:\nClaude CLIでは、トークン上限に達しやすく、追加課金が発生する可能性があります。GUIと異なり、利用状況や契約形態がコストに影響しやすいため、日常的にトークン消費を意識することが重要です。複雑な推論が不要な作業では、より軽量なモデルへ切り替えることで、無駄な消費を削減できます。\n\n**モデル設定の考え方**:\nClaude CLIでは、モデルエイリアス（default, sonnet, opus, haiku）またはフルモデル名でモデルを指定できます。基本方針として、軽い処理にはhaiku、通常の実装や調査にはsonnet、複雑な設計や推論にはopusを選択します。\n\n**トークン消費を抑える基本方針**:\n- **軽いモデル系統への切り替え**: opus → sonnet、sonnet → haikuのように、推論が不要な場面でモデルを軽量化します。\n- **フルモデル名での固定**: エイリアスは最新世代を指すため、特定バージョンで固定したい場合はフルモデル名を使用します。\n\n**設定方法**:\n1.  **CLI起動時のデフォルト設定**: `--model` オプションを使用します（例: `claude --model haiku`）。シェルのエイリアス設定も有効です。\n2.  **セッション中のモデル変更**: `/model` コマンドで、実行中のセッションのモデルを一時的に変更できます。これは最優先されます。\n3.  **グローバル設定**: `~/.claude/settings.json` ファイルの `model` フィールドで、すべてのプロジェクト共通のデフォルトモデルを設定できます。\n4.  **環境変数**: `ANTHROPIC_MODEL` 環境変数でもモデルを設定でき、`settings.json` より優先されます。\n\n**モデル確認方法**:\n`/status` コマンドで現在使用中のモデルを確認できます。\n\n**モデル設定の優先順位**:\n`/model` > `claude --model ...` > `ANTHROPIC_MODEL` > `settings.json` の順で適用されます。\n\n**実務でのおすすめ運用**:\n普段はhaikuかsonnetをデフォルトにし、重い作業時のみ一時的にsonnetやopusに切り替える運用を推奨します。haikuはログ確認や単純修正、sonnetは通常実装、opusは複雑な設計判断に適しています。\n\n**結論**:\n常時高負荷モデルを使用せず、必要に応じてモデルを使い分けることで、トークン消費を効果的に抑えられます。普段のデフォルト設定は `settings.json` で、セッション開始時は `--model`、作業途中の変更は `/model`、確認は `/status` を活用しましょう。",
+    "topics": [
+      "Claude CLI",
+      "トークン節約",
+      "モデル設定",
+      "開発効率"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 70,
+      "overall": 77
+    }
+  }
+}

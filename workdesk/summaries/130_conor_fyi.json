@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:47:25.849965+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アクセシビリティとAIエージェント：SwiftUIの構造化データが開発効率を最大化する理由",
+    "url": "https://www.conor.fyi/writing/ai-access",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "iOSアプリのアクセシビリティツリーを適切に構築することで、AIエージェントの操作コストを大幅に削減し、開発効率とアクセシビリティを同時に向上させる手法を解説した記事。",
+    "summaryBody": "AIエージェントによるiOSアプリ操作を劇的に改善するための戦略が提案されています。従来、エージェントはスクリーンショットを介して視覚的に画面を認識していましたが、これはトークン消費量が多く、低速で、かつ操作位置の推論が不安定という課題がありました。本稿では、SwiftUIのアクセシビリティ修飾子（Identifier, Label, Hint, Value, Traits）を完全に記述し「アクセシビリティツリー」を構築することで、エージェントがテキストベースで高速かつ決定論的にアプリをナビゲートできる手法を解説しています。具体的な実装として、GeometryReaderを用いた座標追跡ツールや構造化された命名規則を紹介しており、これによりトークンコストを約1/10に削減可能です。この取り組みは、AIによる自動テストや開発支援を強化するだけでなく、視覚障害者向けのアクセシビリティ向上にも直結する「一石二鳥」の投資となります。",
+    "topics": [
+      "SwiftUI",
+      "AI Agents",
+      "Accessibility",
+      "iOS Development",
+      "Token Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Accessibility and AI Agents"
+  }
+}

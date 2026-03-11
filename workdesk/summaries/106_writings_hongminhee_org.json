@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:41:20.869609+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる再実装とコピーレフトの浸食：法的な妥当性は道徳的正当性を保証するか",
+    "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/index.en.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（Claude）を用いて既存のLGPLライブラリを再実装しMITライセンスに変更した事例を巡り、法的な許可が必ずしもオープンソース・コミュニティにおける社会的正当性を意味しないことを鋭く指摘する。",
+    "summaryBody": "Pythonの文字コード判定ライブラリ『chardet』のメンテナが、AIを使用してコードをゼロから書き直すことで、従来のLGPLライセンスを放棄しMITライセンスへ変更した騒動についての論評です。Redis作者のantirez氏やFlask作者のRonacher氏がこの動きを「法的・歴史的に妥当」と支持したのに対し、著者のHong Minhee氏は強い懸念を表明しています。\n\n著者の主な論点は以下の通りです：\n1. **ベクトルの違い**: かつてのGNUによるUNIX再実装は「プロプライエタリから自由へ」の移動だったが、今回のケースは「共有財産（コモンズ）の保護を剥ぎ取る」逆向きの行為である。\n2. **法と正当性の乖離**: 法律は最低限の基準に過ぎず、12年間にわたる貢献者たちの信頼（相互扶助の契約）をAIという技術的手段で回避することは、社会的に不誠実である。\n3. **仕様コピーレフトの必要性**: ソースコードの生成コストが下がる中、今後はテストスイートやAPI仕様そのものをコピーレフトで保護するような新しい規範が必要になる可能性がある。\n\n最終的に、AIがどれほど効率的にコードを再生成できたとしても、「コモンズから恩恵を受けた者は、コモンズに恩返しをすべきである」というオープンソースの根本的な倫理観は変わらないと結論付けています。",
+    "topics": [
+      "AI再実装",
+      "コピーレフト",
+      "オープンソースライセンス",
+      "LGPL",
+      "デジタルコモンズ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft"
+  }
+}

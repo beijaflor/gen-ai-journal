@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:39:56.013514+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "get-shit-done: Claude Code向け軽量コンテキスト管理・仕様駆動開発システム",
+    "url": "https://github.com/gsd-build/get-shit-done",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI（特にClaude Code）のコンテキスト肥大化による品質低下を防ぎ、仕様に基づいた一貫性のある開発を可能にするメタプロンプティング・システム。",
+    "summaryBody": "GSD (Get Shit Done) は、Claude CodeやGemini CLIなどのAI開発ツールにおいて、「コンテキストの腐敗（Context Rot）」を防ぎ、大規模な開発を効率化するためのフレームワークです。\n\n主な特徴とワークフロー：\n1. **コンテキストエンジニアリング**: 肥大化しがちなAIのコンテキストウィンドウを適切に管理し、常に新鮮で関連性の高い情報のみを維持することで、生成コードの品質低下を抑止します。\n2. **仕様駆動開発 (SDD)**: プロジェクトの初期化からロードマップ作成、フェーズごとの議論・計画・実行・検証という明確なサイクルを提供。`PROJECT.md`や`ROADMAP.md`を通じてAIと進捗を共有します。\n3. **マルチエージェント・オーケストレーション**: 調査、計画、実行などの役割を分担した複数のサブエージェントを並列実行させ、メインのコンテキストをクリーンに保ちます。\n4. **アトミックなGitコミット**: タスクごとに独立した意味のあるコミットを自動生成し、変更履歴の可読性と追跡性を高めます。\n\n既存の複雑なアジャイル儀式を排除し、個人開発者が「作りたいもの」を伝えるだけで、一貫性のあるコードを構築することに特化しています。",
+    "topics": [
+      "Claude Code",
+      "LLM開発ツール",
+      "コンテキストエンジニアリング",
+      "メタプロンプティング",
+      "仕様駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "get-shit-done: A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code"
+  }
+}

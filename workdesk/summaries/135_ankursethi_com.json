@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:48:54.717212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeをフル活用したプログラミング言語開発：AIエージェントによる次世代エンジニアリングの実践",
+    "url": "https://ankursethi.com/blog/programming-language-claude-code/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "開発者がClaude Codeを「自律エージェント」として扱い、自身は仕様策定と環境整備に徹することで、わずか4週間でC言語製のプログラミング言語を完成させた実験的記録。",
+    "summaryBody": "### 概要\nフロントエンドエンジニアのAnkur Sethi氏が、Anthropicのコマンドラインツール「Claude Code」を全面的に使用し、1行も自力でコードを書かずに動的プログラミング言語『Cutlet』を構築したプロセスを詳細に解説しています。\n\n### 「エージェント・エンジニアリング」の核心\n著者は、AIを単なるコード補完ツールではなく、意図を解釈して実行するエージェントとして活用するための4つの重要スキルを提唱しています。\n1. **問題の適合性判断**: 自動検証が可能で、学習データに類例がある課題をAIに割り当てる。\n2. **意図の伝達**: 自然言語による厳密な仕様書（プランファイル）を作成し、実装前にAIと合意形成を行う。\n3. **環境の構築**: テストスイート、リンター、ASan/UBSan（メモリ安全性ツール）等のガードレールを整備し、AIが自律的にエラーを修正できる環境を作る。\n4. **ループの最適化**: AIの非効率な挙動を観察し、定型作業をスクリプト化してフィードバックサイクルを高速化する。\n\n### 結論と展望\nソフトウェアエンジニアの役割は「コードの記述」から「システムの指揮」へと変化するものの、ドメイン知識や設計能力の重要性は変わらないと述べています。また、AIによる高速開発がもたらす心理的影響（依存性）についても触れており、技術・精神両面での新しい向き合い方を提示しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "エージェント・エンジニアリング",
+      "言語実装",
+      "プログラミングの未来"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I built a programming language using Claude Code"
+  }
+}
