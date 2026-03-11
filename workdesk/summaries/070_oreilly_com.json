@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:52:30.840388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソフトフォーク：トレーニングなしでAIを専門化する「エージェント・スキル」の仕組み",
+    "url": "https://www.oreilly.com/radar/soft-forks-how-agent-skills-create-specialized-ai-without-training/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "モデルの再学習ではなく、実行時のコンテキスト注入によってAIエージェントに専門知識を付与する「エージェント・スキル」という新しいパラダイムとその有効性を解説しています。",
+    "summaryBody": "この記事では、AIエージェントの専門化を「ソフトフォーク」として定義する新しいアプローチを提案しています。従来のファインチューニング（ハードフォーク）がモデルの重みを変更するのに対し、エージェント・スキルは実行時にMarkdown形式の指示書やリソースを注入することで、モデルの挙動を動的に制御します。この関係は、モデルをCPU、エージェント基盤をOS、スキルをアプリケーションに例えることができます。SkillsBenchを用いた評価では、スキル導入により平均13.2%の性能向上が確認されましたが、興味深いことに、包括的な指示よりも簡潔で焦点の絞られたスキルの方が約4倍高い効果を示しました。また、適切なスキルを付与された小規模モデル（Claude Haiku）が、スキルのない大規模モデル（Claude Opus）を上回る結果も示されており、推論コストを抑えつつ高い専門性を実現する手段として期待されます。一方で、人間による専門知の言語化が依然としてボトルネックであることや、スキル間の衝突回避といったガバナンス上の課題も指摘されています。",
+    "topics": [
+      "AI Agent",
+      "Model Context Protocol (MCP)",
+      "Agent Skills",
+      "SkillsBench",
+      "Soft Fork"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Soft Forks: How Agent Skills Create Specialized AI Without Training"
+  }
+}

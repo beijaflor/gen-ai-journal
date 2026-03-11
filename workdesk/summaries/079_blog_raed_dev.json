@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:54:48.836091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チャット履歴をAIエージェントの状態管理（State Store）として使うのをやめるべき理由",
+    "url": "https://blog.raed.dev/posts/agentic-workflows-are-not-conversations/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント開発において、単なるチャット履歴の配列をバックエンドの実行状態として扱うことの危険性を指摘し、永続的実行（Durable Execution）や構造化されたツール呼び出し管理の重要性を説く。",
+    "summaryBody": "現在のAIエージェント開発の多くが、OpenAIの `/v1/chat/completions` のような平坦なメッセージ配列を「状態」として使い回していますが、著者はこれを「プレゼンテーション層のデータ構造をバックエンドの制御フローに強制している」と批判しています。LLMは非決定的な計算ノードとして扱い、リトライやエラーハンドリング、状態の不整合を防ぐためには、Temporalのような「永続的実行（Durable Execution）」の仕組みや、決定論的な状態マシンを導入すべきだと主張しています。\n\nまた、ツール呼び出しを「Read（参照）」「Write（書き込み）」「Hybrid（予約など）」の3つの型に分類し、それぞれに対してキャッシュ、冪等性キー、補償トランザクション（Sagaパターン）を適用するアーキテクチャを提案。チャットログはユーザーインターフェースのためのものであり、システムの状態管理には厳密なイベントログと構造化データを用いるべきであると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "状態管理",
+      "LLMアーキテクチャ",
+      "Durable Execution",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Stop Using Chat History As Your Agent's State Store"
+  }
+}

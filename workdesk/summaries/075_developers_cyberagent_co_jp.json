@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:53:58.186058+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Xcode 26.3 で iOS 開発の AI 活用はどう変わるのか ── タップルでの導入方針とあわせて",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/62551/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Xcode 26.3で導入された公式MCPサーバーと内蔵AIエージェントにより、ビルド・テスト・UI確認を伴う自律的なAIコーディングが可能になった背景と制約、活用法を解説しています。",
+    "summaryBody": "AppleがリリースしたXcode 26.3における、AIコーディング支援の劇的な進化を解説する記事です。主なアップデートとして、公式のMCPサーバー（xcrun mcpbridge）の提供が開始され、外部のAIエージェントからXcodeのビルドやテスト、SwiftUIのプレビュー画像取得（RenderPreview）が容易になりました。これにより、従来は困難だった「ビルドエラーをAIが自律的に修正するサイクル」や「UIの見た目をAIが確認して修正するワークフロー」が現実的になっています。また、Xcode内にClaudeやOpenAIのモデルを直接統合する『In-Xcode』エージェント機能についても言及。記事後半ではタップル社での導入方針として、Scheme選択ができない等の現時点での制約を考慮しつつ、RenderPreviewを用いたUI検証やXcodeWriteによるプロジェクト管理から段階的に導入を進める戦略が語られています。",
+    "topics": [
+      "Xcode 26.3",
+      "MCP (Model Context Protocol)",
+      "iOS開発",
+      "AIエージェント",
+      "SwiftUI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

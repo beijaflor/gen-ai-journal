@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:59:03.321608+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "M5Stack CoreS3とAzure AI Realtime API (gpt-realtime-1.5) を使った音声対話ロボット「ｽﾀｯｸﾁｬﾝ」の製作記録",
+    "url": "https://zenn.dev/nomhiro/articles/stack-chan-poc-001",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "M5Stack CoreS3とAzure OpenAIの最新モデル「gpt-realtime-1.5」を連携させ、中継サーバを用いたWebSocket通信により、低遅延な音声対話と感情表現を可能にするAIロボットの製作プロセスを解説した記事。",
+    "summaryBody": "本記事は、IoTデバイスのM5Stack CoreS3とAzure OpenAIのRealtime API（gpt-realtime-1.5）を組み合わせ、音声対話型ロボット「ｽﾀｯｸﾁｬﾝ」を構築するチュートリアルです。ハードウェア（ESP32-S3）のメモリ制約や、マイクとスピーカーが同一のI2Sバスを共有するという物理的な制約を解決するため、Node.jsによる中継サーバを導入した3層構造のシステムアーキテクチャを採用しています。技術的な核心として、1.5MBのリングバッファを用いた音声データの平滑化、WebSocketにおけるバックプレッシャー制御、およびAIのツール呼び出し機能（Function Calling）を利用したアバターの表情制御の実装方法が詳細に解説されています。特にM5UnifiedのplayRaw()関数の挙動に起因する音声ノイズ問題の解決など、組み込み開発特有のトラブルシューティングが豊富に含まれており、実用性の高いガイドとなっています。",
+    "topics": [
+      "M5Stack CoreS3",
+      "Azure OpenAI",
+      "GPT-Realtime",
+      "ESP32",
+      "WebSocket"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "M5Stack CoreS3 x gpt-realtime-1.5 - （ｽﾀｯｸﾁｬﾝはじめる）"
+  }
+}

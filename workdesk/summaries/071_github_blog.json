@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:52:48.685761+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic Workflowsのセキュリティアーキテクチャ：隔離と統制による安全なAIエージェントの実行",
+    "url": "https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubは、非決定的な挙動を持つAIエージェントをCI/CD環境で安全に運用するため、隔離、機密情報の保護、書き込み検閲、網羅的ログを柱とする堅牢なセキュリティアーキテクチャを構築した。",
+    "summaryBody": "GitHub Agentic Workflowsを安全に運用するための技術的詳細が公開されました。AIエージェントは非決定的で外部入力を処理するため、従来のCI/CDモデルを拡張した新しいガードレールが必要です。本記事では4つの主要原則に基づいた設計を解説しています。\n\n1. **多層防御 (Defense in Depth)**: Substrate（VM/コンテナ）、Configuration、Planningの3層で構成され、カーネルレベルの通信境界や特権操作の調停を行います。\n2. **機密情報の非公開 (Zero-secret Agents)**: エージェントを専用コンテナに隔離し、LLMへの認証はAPIプロキシ経由で行います。これにより、プロンプトインジェクションによるシークレットの漏洩を物理的に防ぎます。\n3. **書き込みの検証 (Stage and Vet All Writes)**: エージェントによるGitHubへの変更操作は「Safe Outputs MCPサーバ」で一旦保留され、サニタイズや回数制限の検証を経てから実行されます。\n4. **全ログの記録 (Log Everything)**: ネットワーク、APIリクエスト、ツール実行のすべてを記録し、異常検知とフォレンジックを可能にしています。\n\nこれらの仕組みにより、開発者は自律的なエージェントの利便性を享受しつつ、リポジトリの整合性と安全性を維持できます。",
+    "topics": [
+      "GitHub Agentic Workflows",
+      "AIエージェント",
+      "セキュアなAI開発",
+      "GitHub Actions",
+      "Model Context Protocol (MCP)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Under the hood: Security architecture of GitHub Agentic Workflows"
+  }
+}

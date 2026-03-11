@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:57:15.040892+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのEffort、実は4段階ある ― \"max\" の使い方とソースコード調査",
+    "url": "https://qiita.com/shohei_yamamoto/items/f326f5c343a4a35e63bc",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのUIやドキュメントに未記載の最上位推論レベル「max」について、ソースコード解析からその有効性と適用方法を明らかにした技術調査記事。",
+    "summaryBody": "Claude Code（AnthropicのCLIツール）の推論深度を制御する`effortLevel`設定には、公式ドキュメントに記載された3段階（low, medium, high）以外に、APIレベルで定義された第4のレベル「max」が存在します。著者はCLI v2.1.66のソースコードを解析し、UI（/modelピッカー）やCLI引数（--effort）では「max」に制限やバリデーションがかけられているものの、`settings.json`や環境変数（CLAUDE_CODE_EFFORT_LEVEL）を介することで、対話モードでもこの制限をバイパスして適用できることを特定しました。また、Opus 4.6以外のモデル（Sonnet 4.6等）で「max」を指定した場合、API側でサイレントにフォールバックが行われる実態など、ドキュメント化されていない詳細な内部挙動についても解説しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "ソースコード解析",
+      "API仕様"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:56:58.763280+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "国土交通省のMCPを使おう #Claude - Qiita",
+    "url": "https://qiita.com/Qiitakana/items/8ef69462d44e8a4a4c32",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "国土交通省が公開した地理空間MCP ServerをClaudeに導入し、不動産実務の視点から建設計画の提案精度を検証した記録です。",
+    "summaryBody": "### 概要\n国土交通省が公開した「地理空間MCP Server（α版）」をClaude Desktopで利用するための導入ガイドとレビューです。\n\n### 導入のポイント\n- **API申請:** 申請から利用まで最大5営業日を要するため、事前の申請が必須です。現在、受付完了通知が届かない不具合がある点に注意が必要です。\n- **設定の注意点:** Claude Desktopの設定で、ツールの利用を「自動（Claudeが判断）」ではなく「常に利用可能」に設定しないと正常に動作しないケースがあることが報告されています。\n\n### 実践検証と評価\n不動産実務の知見を持つ筆者が、JR中央線沿線での建設計画をシミュレーションさせたところ、具体的なプランが提示されました。しかし、地価データが現状より安価（古い）であったり、住宅ローン適用における「自宅面積50%超ルール」といった専門的な実務要件への考慮が不足しているなど、AIの判断が楽観的すぎる側面も浮き彫りになりました。\n\n### 結論\n現状ではオープンデータへのアクセス手段としての側面が強いですが、今後他省庁（特に国税庁や法務省）のデータが連携されることで、活用の幅が劇的に広がる可能性を秘めています。",
+    "topics": [
+      "MCP",
+      "Claude",
+      "国土交通省",
+      "不動産テック",
+      "地理空間情報"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 78,
+      "annexPotential": 85,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

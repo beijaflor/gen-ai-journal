@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:57:42.376859+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デバッグはもう人間の仕事ではなくなった：Claude CodeとAgent Teamsによる調査の自動化",
+    "url": "https://zenn.dev/dinii/articles/debugging-is-solved",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、本番データへの安全なアクセスと複数エージェントによる仮説検証プロセスを構築することで、技術的な不具合調査をAIに完全委ねる手法の紹介。",
+    "summaryBody": "この記事では、ダイニー社がClaude Codeを導入し、不具合調査をAIへ全面的に委譲した手法を解説しています。成功の鍵は2点あります。1つ目は、AIがBigQuery（本番データのレプリカ）やCloud Loggingへ直接アクセスできる「Skills」を整備したことです。その際、`sandbox-exec`とサービスアカウントを組み合わせ、AIの権限を厳格に管理するセキュリティ対策も講じています。2つ目は、Agent Teams機能を活用した`/ultra-debug`ツールの開発です。5体のデバッガーが並列で仮説を検証し、1体のクリティック（批判者）がその論理性をレビューする多層的なエージェント構成により、人間が数往復かけて行う調査を一度の指示で完遂させる仕組みを構築。ハードウェアトラブルの原因特定までこなす、極めて精度の高いデバッグ環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Agent Teams",
+      "BigQuery",
+      "Debugging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

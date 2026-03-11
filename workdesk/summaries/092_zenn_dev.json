@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:57:58.946068+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エンジニアは知ってる。PM・PDMが「見逃している」AIツール活用術",
+    "url": "https://zenn.dev/fastdoctor/articles/7f9622fdda9175",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "PMやPDMがCursorやMCPを活用し、ソースコードやドキュメントを直接参照しながら仕様定義や調査業務を効率化するための実践的なワークフローを解説しています。",
+    "summaryBody": "ファストドクターのエンジニアが、PM・PDM向けにAIエディタ「Cursor」と「Model Context Protocol (MCP)」の活用術を伝授する記事です。主な内容は以下の通りです。\n\n1. **Cursorの導入**: チャットUIだけでなく、実際のソースコードをAIが直接参照できる環境をPMが持つことで、コピペの手間を省き、エンジニアへの確認コストを削減します。\n2. **MCPによるツール集約**: SlackやNotion、Jiraなどの外部ツールとCursorを「とおりぬけフープ」のように接続。会話履歴やドキュメントを横断的に読み込ませ、意思決定の要約やアクションプラン作成を自動化します。\n3. **DB調査の自律化**: スキーマ情報を読み込ませることで、エンジニアに頼らずにRedash等のクエリをAIに作成させるステップを解説。\n4. **フェーズ分けによるドキュメント管理**: 仕様定義(Specify)からタスク分解(Tasks)までをAIと共創し、リポジトリ内で管理することで、手戻りのない開発フローを提案しています。\n\n最終的に、AI活用力は「言語化能力」に比例することを説き、非エンジニアが技術的な文脈を理解し操るためのマインドセットを共有しています。",
+    "topics": [
+      "Cursor",
+      "MCP",
+      "プロダクトマネジメント",
+      "生成AI",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
