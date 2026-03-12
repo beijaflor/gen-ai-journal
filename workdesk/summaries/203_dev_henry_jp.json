@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:31:09.413752+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skillsのチーム展開で気づいたSkill管理の課題と対策",
+    "url": "https://dev.henry.jp/entry/claude-code-skills-for-teams",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのカスタムSkillをチームへ展開する際の、プロンプト評価の主観性や開発者のポータビリティといった課題を「個人用とチーム用の分離」と「Starter Kit化」で解決する手法の紹介。",
+    "summaryBody": "Claude Codeの「Skill」機能（AIへのカスタム指示やツール定義）をチームで共有・運用する際の実践的な知見をまとめた記事です。筆者は、Skillの修正が通常のコードレビューと異なり評価が主観的になりやすいこと、利用者のニーズが多様であること、そして個人の開発効率を支えるSkillが環境の変化（異動・転職）で失われる「ポータビリティ」の欠如を課題として挙げています。これに対し、Skillを「個人の設定（dotfiles）」のように扱う「個人Skill」と、誰でも利用可能な「チームSkill（Starter Kit）」に分離する運用を提案しています。このアプローチにより、機密情報を守りつつ、個人の実験的な改善を妨げずにチーム全体のAI活用能力を底上げする循環を生み出す仕組みが解説されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "LLM Ops",
+      "エンジニアリング組織",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

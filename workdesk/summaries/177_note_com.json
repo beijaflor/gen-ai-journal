@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:24:59.367286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Embedding 2 の概要：Google初のネイティブ・マルチモーダル埋め込みモデル",
+    "url": "https://note.com/npaka/n/n1e39b1e67561",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "テキスト、画像、動画、音声を単一のベクトル空間に統合マッピングする、Google初のネイティブ・マルチモーダル埋め込みモデル「Gemini Embedding 2」が発表されました。",
+    "summaryBody": "Googleは、Geminiアーキテクチャを基盤とした次世代埋め込みモデル「Gemini Embedding 2」をGemini APIおよびVertex AIでパブリックプレビューとしてリリースしました。従来のテキスト専用モデルと異なり、画像、最長120秒の動画、音声、最大6ページのPDFを単一の統合埋め込み空間に直接マッピング可能です。インターリーブ入力（画像とテキストの組み合わせ等）をネイティブに理解し、メディア間の複雑な関係性を捉えます。また、Matryoshka Representation Learning (MRL) を採用しており、デフォルトの3072次元から、精度を保ちつつ用途に応じて次元を動的に縮小（1536, 768など）できるため、検索パフォーマンスとストレージコストの最適化が可能です。LangChainやLlamaIndex、主要なベクトルデータベースへの統合も既にサポートされています。",
+    "topics": [
+      "Gemini",
+      "Multimodal",
+      "Embedding",
+      "RAG",
+      "Matryoshka Representation Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Gemini Embedding 2: Our first natively multimodal embedding model"
+  }
+}

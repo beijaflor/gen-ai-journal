@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:22:26.075686+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のAPIセキュリティ：自律的な振る舞いに備えるための6つのベストプラクティス",
+    "url": "https://workos.com/blog/api-security-best-practices-for-ai-agents",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが人間の代わりにAPIを自律操作する時代に向け、OAuthを基盤とした厳格なスコープ管理や人間による最終承認（Step-up Auth）など、新しい脅威モデルに対応するセキュリティ設計を解説。",
+    "summaryBody": "AIエージェントの普及により、従来の「人間がボタンを押す」ことを前提としたAPIセキュリティモデルは通用しなくなっています。エージェントは自律的に推論し、連鎖的なアクションを実行するため、意図しない動作やプロンプト・インジェクションによるリスクが増大します。本記事では、WorkOSが提唱する6つのベストプラクティスを紹介しています。\n\n1. **OAuth 2.1の徹底**: 委譲された認可の標準としてOAuthを採用し、安全な認可フローを基盤にする。\n2. **粒度の細かいスコープ管理**: `write:*`のような広範な権限を避け、`write:calendar`などアクション単位で最小権限を適用する。\n3. **コンテキストを伴うクレームの活用**: トークン内に「AIエージェントである」という属性情報（Claims）を含め、認可ロジックで利用する。\n4. **オーディエンス制限の厳格化**: トークンの使い回しを防ぐため、サービスごとにオーディエンス（aud）を検証する。\n5. **重要操作でのステップアップ認可**: 金銭の移動やデータ削除など、不可逆で影響の大きい操作には必ず人間によるMFA等の再承認を求める。\n6. **全リクエストの検証**: 内部エージェントであっても暗黙の信頼を置かず、レート制限や入力値のバリデーションを徹底する。\n\nエージェントの利便性を最大限に引き出しつつ、破壊的な結果を防ぐための実戦的なガイドラインです。",
+    "topics": [
+      "API Security",
+      "AI Agents",
+      "OAuth 2.1",
+      "MCP (Model Context Protocol)",
+      "Zero Trust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "API security best practices for the age of AI agents"
+  }
+}

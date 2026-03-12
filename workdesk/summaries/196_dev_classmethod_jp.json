@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:29:30.464160+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにcron風の定期タスク実行機能「/loop」が追加：デプロイ監視やPRチェックを自動化",
+    "url": "https://dev.classmethod.jp/articles/claude-code-loop-command/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code v2.1.71において、セッション内でプロンプトやコマンドを定期実行・リマインドできる「/loop」コマンドが導入されました。",
+    "summaryBody": "Claude Codeのアップデート（v2.1.71以降）により、定期的なタスク実行を可能にする新機能「/loop」が追加されました。これはセッション内で動作する軽量なスケジューラで、開発者が手動で行っていた「デプロイの進捗確認」や「CI/PRの状態チェック」などの繰り返し作業をAIに任せることができます。\n\n主な仕様と特徴：\n- **実行形式**: `/loop [間隔] &lt;プロンプト/コマンド&gt;` の形式で指定し、最小実行単位は1分です。\n- **柔軟な指定**: 「5m」「every 2 hours」といった自然な間隔指定や、特定時刻へのリマインド（atコマンド風）にも対応しています。\n- **動作挙動**: 完全に独立したジョブではなく、会話の合間に実行されます。実行時刻には最大10%のジッター（揺らぎ）が含まれる場合があり、正確性よりは利便性に重点が置かれています。\n- **制限事項**: セッション終了で破棄され、最大3日間で自動削除されるため、永続的な自動化にはGitHub Actions等の利用が推奨されます。\n\n開発環境における「待ち時間」の監視を自動化することで、開発者のコンテキストスイッチを減らす効果が期待できます。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLIツール",
+      "自動化",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Claude Codeにcronみたいな定期タスク実行機能が追加されました"
+  }
+}

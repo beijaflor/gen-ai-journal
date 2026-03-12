@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:24:45.690464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BigQuery AI関数だけでRAGを構築する ― Embedding生成から類似検索まで",
+    "url": "https://zenn.dev/sasadango28/articles/bqml-rag-20260306",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "BigQueryの新しいAI関数（AI.EMBEDやAI.SIMILARITY）を活用し、外部ベクトルDBを使わずにSQLのみでRAGを実装する具体的な手順を解説しています。",
+    "summaryBody": "BigQueryの最新AI関数（AI.EMBED、AI.SIMILARITY、AI.GENERATE）を用いて、外部インフラや追加のベクトルデータベースを必要としないRAG（Retrieval-Augmented Generation）の構築方法を解説したチュートリアルです。従来必要だったCREATE MODELによるリモートモデル登録が不要になり、よりシンプルなSQLでEmbedding生成から類似度計算、テキスト生成までを完結できるようになった点が特徴です。記事ではプリキュアのキャラクターデータを例に、Vertex AIとのコネクション作成、Embeddingテーブルの作成、そして商品名から関連キャラクターを特定する類似検索の実装までをステップバイステップで紹介。検索精度を最適化するためのtask_type（RETRIEVAL_DOCUMENTとRETRIEVAL_QUERY）の使い分けなど、実戦的な Tips も含まれています。",
+    "topics": [
+      "BigQuery",
+      "RAG",
+      "Google Cloud",
+      "Generative AI",
+      "Vector Search"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "BigQuery AI関数だけでRAGを構築する ― Embedding生成から類似検索まで"
+  }
+}

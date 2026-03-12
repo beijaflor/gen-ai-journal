@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:19:25.549351+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareがAIエージェント向け構造化エラーを導入、トークンコストを98%削減",
+    "url": "https://blog.cloudflare.com/rfc-9457-agent-error-pages/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareはAIエージェント向けに、従来のHTMLに代わりRFC 9457準拠のJSONやMarkdown形式のエラーレスポンスを提供開始し、トークン消費を大幅に削減します。",
+    "summaryBody": "Cloudflareは、AIエージェントがWebサイトでエラーに遭遇した際、人間向けの冗長なHTMLではなく、機械判読可能な構造化データ（JSON/Markdown）を返す機能を発表しました。これにより、エラーレスポンスのサイズとトークン消費量を約98%削減できます。RFC 9457（Problem Details for HTTP APIs）に準拠したこのレスポンスには、エラーの原因だけでなく、「30秒待機してリトライ」や「リトライ不可」といったエージェントが次に取るべき具体的な実行指示（Actionable Guidance）が含まれています。開発者はAcceptヘッダーで形式を指定するだけで、無駄なリトライの抑制やモデル実行コストの最適化が可能になります。現在は1xxx系のエラーに対応しており、今後4xxや5xx系にも拡大予定です。",
+    "topics": [
+      "Cloudflare",
+      "AI Agents",
+      "RFC 9457",
+      "LLM Optimization",
+      "API Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Slashing agent token costs by 98% with RFC 9457-compliant error responses"
+  }
+}

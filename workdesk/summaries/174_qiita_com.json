@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:24:17.499008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Python+ローカルLLM】AIコーディングエージェントをRAGに組み合わせてみた #Django",
+    "url": "https://qiita.com/rikiza1989/items/b88c4b05c71e3c5d0039",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DjangoとOllamaを活用し、社内ドキュメント検索とAIコーディング環境を統合した、プライバシー重視のローカルRAGアプリケーション「Django-RAG Ver.2」の解説。",
+    "summaryBody": "### 概要\n本記事では、DjangoとローカルLLM（Ollama）を統合した「Django-RAG (Ver.2)」のアーキテクチャと実装について解説しています。このプロジェクトは、社内ドキュメントへの自然言語Q&Aを行う「Knowledge Hub」と、AIによるコード生成・デバッグを支援する「Coding IDE」の2つを統合したWebアプリケーションです。\n\n### 主な特徴と技術的ポイント\n- **完全ローカル・セキュア運用**: APIキー不要で機密情報を外部に出さず、RTX 5050等のローカル環境で動作。個人利用からチーム展開まで対応可能です。\n- **高度な多言語対応**: 埋め込みモデルに`BAAI/bge-m3`を採用し、100言語以上の質問を自動検出し、その言語で回答する仕組みを構築しています。\n- **開発効率化機能**: ブラウザ上にMonaco Editorを搭載。Git操作のUI統合に加え、関数やクラスの論理境界に基づいた「コード認識チャンキング」により、LLMへのコンテキスト注入精度を高めています。\n- **洗練された設計**: クリーンアーキテクチャの採用、テンプレートローダーによる独自の多言語UI切り替え、埋め込みモデル変更時のFAISSインデックス自動リセットなど、プロダクション品質の機能を備えています。\n\n### 結論\nクラウドAPIのコストやプライバシー懸念を解消しつつ、社内ナレッジの共有と開発支援を1つのシステムで完結させる、実用的なOSSプロジェクトとなっています。",
+    "topics": [
+      "Python",
+      "Django",
+      "RAG",
+      "Ollama",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

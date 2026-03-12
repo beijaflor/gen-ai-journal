@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:18:10.977797+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NGINXによるAIエージェントの可視化：MCPトラフィックのリアルタイム監視モジュール発表",
+    "url": "https://blog.nginx.org/blog/introducing-agentic-observability-in-nginx-real-time-mcp-traffic-monitoring",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NGINXは、AIエージェント通信規格MCPのトラフィックを可視化し、ツールごとの遅延やエラーをリアルタイム監視可能にする新しいオープンソースモジュールを公開しました。",
+    "summaryBody": "NGINXは、Model Context Protocol（MCP）トラフィックを詳細に分析・監視するための「Agentic Observability」モジュールを発表しました。AIエージェントのワークロードは動的かつ非決定的であるため、従来の監視手法では特定のツール呼び出しやシャドーエージェントの挙動を追跡することが困難でした。本モジュールは、NGINX JavaScript (njs) と OpenTelemetry を活用し、追加のプロキシを必要とせずにMCPレベルのスループット、レイテンシ、エラー率をクライアントやツールごとに分類して可視化します。これにより、ボトルネックとなっているMCPサーバーの特定や、認可されていないLLMからのアクセス制御が容易になります。PrometheusとGrafanaを組み合わせたリファレンス実装も提供されており、即座に運用の高度化を図ることが可能です。",
+    "topics": [
+      "NGINX",
+      "Model Context Protocol (MCP)",
+      "AIエージェント",
+      "可視化 (Observability)",
+      "OpenTelemetry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Agentic Observability in NGINX: Real-time MCP Traffic Monitoring"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:29:41.539594+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Antigravityを事故らせない運用設計",
+    "url": "https://note.com/tasty_dunlin998/n/n0dd53c5c4406",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Antigravityの運用において、ルール設定だけでなく、実行権限の制限、Artifactを用いたゲート設計、サンドボックスでのドライランを組み合わせることで誤実行を防ぎ、AIエージェントの安全性を高める手法を解説しています。",
+    "summaryBody": "AIエージェント開発環境「Antigravity」を安全かつ効率的に運用するための設計指針を提示する記事です。著者は、ルールを増やすことよりも「どこで効かせるか」の役割分担が重要であると説き、RulesをGlobal、Workspace、Workflowsの3層に再配置することを推奨しています。また、実行ポリシーを「Review-driven」に設定し、JavaScript実行やターミナル操作に制約をかけることで事故の半径を最小化する方法を提案。Antigravityの特徴である「Artifact」を単なる作業ログではなく、Implementation Planの承認やWalkthroughの確認といった『DoD（完了定義）のゲート』として機能させる具体的な運用フローや、サンドボックスを用いた外側でのプレフライト、導入初週のチェックリスト、実行用プロンプトまで網羅しています。AIエージェントの自律性と安全性のバランスを取るための実務的なガイドとなっています。",
+    "topics": [
+      "Antigravity",
+      "AIエージェント",
+      "運用設計",
+      "ガードレール",
+      "AgentOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:27:07.529881+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2年間諦めていたDBの整合性崩れを、Claude Codeと2文のSQLで解決した話",
+    "url": "https://zenn.dev/syncable_tech/articles/2ddb940ade018d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2年間放置されていたBIツールのDB整合性問題を、Claude Codeによるスキーマ分析と人間との役割分担により、わずか2文のSQLで解消した実践記録。",
+    "summaryBody": "BIツール「Metabase」のアップデート失敗により、DBのスキーマと管理テーブル（Liquibase）の状態が乖離してしまった問題を、AIエージェント「Claude Code」を活用して解決した事例です。過去3回の失敗を経て凍結されていた課題に対し、AIに「3つの巨大なスキーマファイルの比較」や「OSSのマイグレーションコード解析」を任せることで、人間だけでは困難だった調査コストを大幅に削減。最終的に、2年前に著者が立てていた「管理レコードを削除して再実行させる」という仮説の妥当性をAIで検証・補強し、最小限の修正で11メジャーバージョンの更新に成功しました。AIを単なる生成ツールではなく、分業パートナーとして活用し、別セッションでのAIレビューを挟むなど、確実性を高める運用ノウハウが詳述されています。",
+    "topics": [
+      "Claude Code",
+      "Metabase",
+      "Liquibase",
+      "データベース保守",
+      "AI活用事例"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
