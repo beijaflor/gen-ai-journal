@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-10T23:58:46.679321+00:00",
+    "generatedAt": "2026-03-12T10:28:26.447055+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Claude CodeをEven G2スマートグラスで利用する試み（コンテンツ取得エラー）",
+    "title": "メガネだけでClaude Codeとやり取りできるようにした話",
     "url": "https://zenn.dev/wmoto_ai/articles/claude-code-even-g2-glasses",
     "language": "ja",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "提供されたURLへのアクセスが制限（403 Forbidden）されていたため、Claude CodeとEven G2の連携に関する技術記事と推測される情報をまとめています。",
-    "summaryBody": "指定されたURLへのアクセス時に403 Forbiddenエラーが発生したため、記事本文を取得して解析することができませんでした。しかし、URLの文字列に含まれるキーワード（Claude Code、Even G2）から、Anthropicが公開した開発者向けCLIエージェントである「Claude Code」を、スマートグラス「Even G2」の表示環境やポータブルな開発体験として活用する手順や実験結果について記述された記事であると強く推察されます。具体的な内容を確認するには、サイト側の制限が解除された状態で直接元のURLを参照する必要があります。",
+    "oneSentenceSummary": "スマートグラス「Even Realities G2」を活用し、PCから離れた状態でもClaude Codeの承認・通知確認・音声コメント返しができるハンズフリーな開発環境を構築。",
+    "summaryBody": "本記事は、AIコーディングエージェント「Claude Code」をスマートグラス「Even Realities G2」で操作可能にした開発記録です。育児や家事、散歩などでPCを離れる際に、承認待ちでエージェントの作業が止まってしまう課題を解決するため、Mac + iPhone + Tailscaleを組み合わせた通知・操作システムを構築しました。\n\n仕組みとしては、Claude CodeのHTTP Hook機能を利用してローカルのNotification Hubにリクエストを飛ばし、iPhone経由でG2に承認UIを表示させます。G2専用のリング型コントローラーを用いることで、スマホを取り出すことなく「承認・拒否・音声コメント」といった最低限のレスポンスが可能です。著者は、スマートグラスを「長文を読むためのデバイス」ではなく「AIの割り込みをさばくための端末」と定義し、通知設計の重要性や実機特有のUXの制約についても詳しく解説しています。PCに拘束されず、歩きながらでもエージェントとのセッションを継続できる実用的な「AI運用レイヤー」の提案となっています。",
     "topics": [
       "Claude Code",
-      "Even G2",
+      "Even Realities G2",
       "スマートグラス",
-      "Anthropic",
-      "開発環境"
+      "AIエージェント",
+      "ウェアラブル"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
     },
     "originalTitle": null
   }
