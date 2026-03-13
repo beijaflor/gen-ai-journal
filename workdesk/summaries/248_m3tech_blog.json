@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:58:46.709702+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チームで本格的に Docs as Code を運用しているので紹介します - エムスリーテックブログ",
+    "url": "https://www.m3tech.blog/entry/2026/03/12/115110",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの推論精度を最大化するため、画面仕様書やADR、Design Doc、API定義をコードと同一リポジトリで管理する「コンテキスト・エンジニアリング」の実践事例を紹介。",
+    "summaryBody": "エムスリーのデジスマチームにおけるDocs as Codeの実践レポートです。AI Agentが開発プロセスに深く関わる現代において、プロンプトの工夫だけでは限界があるという課題に対し、ドキュメントをコードベース内に集約してAIに「文脈（コンテキスト）」を与えるアプローチを詳説しています。具体的には、Markdownによる画面仕様書（Figma DevモードURLの埋め込み）、アーキテクチャの意思決定を記録するADR、技術詳細を記すDesign Doc、そしてProtocol BuffersによるAPI定義の4つをGitHubで管理。AIがリポジトリ内のファイルを直接参照できる状態にすることで、開発メンバー間の認識齟齬を減らしつつ、AIによるコード生成の品質を向上させています。一方で、Design Docと実装の乖離やドキュメントの陳腐化といった課題についても触れられており、DRY（Don't Repeat Yourself）原則をドキュメントにも適用する工夫などが共有されています。",
+    "topics": [
+      "Docs as Code",
+      "AIエージェント",
+      "ADR",
+      "Design Doc",
+      "コンテキスト・エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

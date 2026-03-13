@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:49:50.248907+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ポストトレーニングがAIの実用性を決める：AMDのSharon Zhou氏が語る生成AIの最前線",
+    "url": "https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-sharon-zhou-on-post-training/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AMDのAI担当VP、Sharon Zhou氏が、モデルに特定の挙動を学習させる「ポストトレーニング」の重要性、RL（強化学習）の企業普及、エージェント開発の要諦について語る。",
+    "summaryBody": "AMDのAI担当VPであるSharon Zhou氏へのインタビューを通じて、生成AIを実世界で活用するための鍵となる「ポストトレーニング」の技術と戦略が解説されています。\n\n1. **ポストトレーニングの本質**: 事前学習で得た「未加工の知能」を、対話や推論、API利用などの「実用的な知能」へと変換するプロセスです。ChatGPTが成功した最大の要因は、このフェーズでの調整にあります。\n2. **SFT、RL、RAGの使い分け**: 企業はプロンプトによるインコンテキスト学習と教師あり微調整（SFT）のトレードオフを評価すべきです。また、強化学習（RL）は従来フロンティア企業の領域でしたが、ツールの進化により一般企業への普及が目前に迫っています。\n3. **エージェント開発**: 単にツール（MCPなど）を導入するだけでなく、ポストトレーニングを通じてモデルに「ツールを正しく使う振る舞い」を教え込むことが、ハルシネーション抑制と精度の向上に不可欠です。\n4. **今後の展望**: スケーリング則にはまだ限界が見えていない一方、企業は特定のタスクにおける「挙動の適応」に投資すべきです。データプラットフォームの構築と、評価（Eval）指標の確立が、AIのROIを最大化する基盤となります。",
+    "topics": [
+      "ポストトレーニング",
+      "強化学習(RL)",
+      "AIエージェント",
+      "教師あり微調整(SFT)",
+      "LLMの実装戦略"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Generative AI in the Real World: Sharon Zhou on Post-Training"
+  }
+}

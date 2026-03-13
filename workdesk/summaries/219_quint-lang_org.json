@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:52:03.519172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM時代の信頼性の高いソフトウェア：Quintによる検証とAI活用の新ワークフロー",
+    "url": "https://quint-lang.org/posts/llm_era",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成の不確実性を、実行可能な仕様言語Quintを用いた検証プロセスで解決し、複雑な分散システムの開発効率と信頼性を両立させる手法の提案。",
+    "summaryBody": "LLMは開発を加速させましたが、生成されたコードの正当性を人間がレビューだけで検証することは困難です。本記事では、仕様記述言語「Quint」を、曖昧な自然言語と実装コードの間の「実行可能な検証ポイント」として位置づける新しいワークフローを提案しています。具体例として、BFTコンセンサスエンジン「Malachite」への複雑な変更（Fast Tendermintの導入）を、数ヶ月の工数見積もりからわずか1週間強に短縮した事例を紹介。プロセスは「AIによる仕様変更」「人間による仕様検証」「検証済み仕様からのコード生成」「モデルベーステストによるコード検証」の4ステップで構成されます。Quintのシミュレータやモデルチェッカーを活用することで、AIの過剰な自信やハルシネーションを抑え込み、仕様を「デバッグの指針」として機能させることで、確信を持って複雑なシステムを構築できることを示しています。",
+    "topics": [
+      "Quint",
+      "LLM",
+      "Formal Methods",
+      "Model-based Testing",
+      "Distributed Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Reliable Software in the LLM Era"
+  }
+}

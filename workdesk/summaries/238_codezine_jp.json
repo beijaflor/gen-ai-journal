@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:56:24.042993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの長時間タスクを支える「エージェントハーネス」の役割と設計",
+    "url": "https://codezine.jp/article/detail/23340",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM単体では困難な長時間かつ複雑なタスクの完遂を可能にするため、コンテキスト管理やツール実行を制御する基盤「エージェントハーネス」の重要性と構成要素を解説する。",
+    "summaryBody": "AIエージェントが数時間に及ぶ複雑なタスク（例：コーディング代行）を安定して遂行するためには、LLMの外側に「エージェントハーネス」と呼ばれる管理基盤が必要である。本記事では、ハーネスをPCのOSに例え、その主要な役割として「コンテキスト管理（メモリ管理）」「ツール実行管理（I/O管理）」「タスク計画（プロセス管理）」の3点を挙げている。具体的には、コンテキストウィンドウの上限に対応するための要約・圧縮技術や、エラーハンドリング、サブプロセスへのタスク委譲などが不可欠であることを示し、LangChainの「DeepAgents」を例にその内部構造を紐解いている。モデルの『賢さ』だけでは解決できない、状態維持と実行制御のエンジニアリング的側面を強調する内容となっている。",
+    "topics": [
+      "AIエージェント",
+      "エージェントハーネス",
+      "LLM",
+      "ソフトウェアアーキテクチャ",
+      "LangChain"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

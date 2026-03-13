@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:55:34.916920+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにコードを書かせるなら知っておきたい「Karpathy Guidelines」を解説する #ClaudeCode",
+    "url": "https://qiita.com/kotai2003/items/e88e7c247c6cb70c57dc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Andrej Karpathy氏の知見に基づき、LLMが陥りがちな「余計な実装」や「無関係な修正」を防ぎ、コーディング品質を劇的に向上させるための4つの運用指針を解説しています。",
+    "summaryBody": "この記事では、Tesla AIやOpenAIで活躍したAndrej Karpathy氏の指摘を基にした、LLM（特にClaude Code等のAIエージェント）向けの行動指針「Karpathy Guidelines」を紹介しています。LLMにコードを書かせる際によく発生する「勝手な前提での実装」「過剰な抽象化」「無関係な箇所の修正」といった問題を解決するため、1. Think Before Coding（前提の明示）、2. Simplicity First（最小限の実装）、3. Surgical Changes（外科的な最小変更）、4. Goal-Driven Execution（検証可能なゴール設定）という4つの原則を提唱しています。これらをSKILL.mdとしてClaude等のシステムプロンプトに組み込むことで、人間にとってレビューしやすく、かつバグの少ないコード生成が可能になります。単なる指示のコツではなく、AIとの協業における『振る舞いの設計』を重視した実践的なガイドです。",
+    "topics": [
+      "LLM",
+      "Claude Code",
+      "プログラミング",
+      "Andrej Karpathy",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

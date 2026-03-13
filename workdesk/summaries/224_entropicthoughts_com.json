@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:53:12.197227+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMは本当に進化しているのか？マージ率の停滞から見るプログラミング能力の現状",
+    "url": "https://entropicthoughts.com/no-swe-bench-improvement",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "METRのデータを再分析した結果、LLMが生成するコードの「マージ成功率」は2025年以降向上しておらず、プログラミング能力の向上が停滞している可能性を指摘する記事です。",
+    "summaryBody": "この記事は、METR（Model Evaluation and Threat Reduction）が公開したLLMのコーディング能力に関するベンチマーク結果を、統計的な視点から再解釈したものです。筆者は、LLMが単に「テストをパスする」能力と、人間が「コードをマージ（承認）する」と判断する品質の間には大きな隔たりがあることに注目しました。2024年末から2025年にかけてのデータを分析したところ、テスト通過率は向上していても、実際の開発現場で重要となる「マージ率」は2025年初頭からほぼ横ばいであることが分かりました。Brierスコアを用いたモデル比較によれば、線形な成長トレンドよりも、能力が一定であると仮定するモデルの方がデータに適合しています。これは、AIの進歩に関する世間の期待（ハイプ）と、実際の性能向上の間には大きな乖離があることを示唆しています。",
+    "topics": [
+      "LLM",
+      "AIベンチマーク",
+      "プログラミング",
+      "METR",
+      "統計分析"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "Are LLMs not getting better?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:55:48.374500+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バグチケットに気づく頃にはもう直っている仕組み：Claude Codeによる自動バグ修正の導入",
+    "url": "https://zenn.dev/notahotel/articles/399fc929f48d01",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub IssuesをトリガーにClaude Codeがバグ修正PRを自動生成する仕組みを構築し、人間の作業を「承認ボタンを押すだけ」に簡略化した事例。",
+    "summaryBody": "NOT A HOTELにおけるAIを活用した開発フロー自動化の取り組み。GitHub Issueに特定のラベルが付与されると、GitHub Actionsを介してClaude Codeが起動し、Issueの内容に基づいた修正コードとPRを自動作成する。これにより、エンジニアのバグ修正に伴う文脈切り替えのコストが激減し、本質的な開発業務に集中できる環境を実現した。また、プロンプトをGitHub Actions上で共有・管理することで、個人のスキルに依存しない組織的なAI活用と「AIで何ができるか」という視座の向上に寄与している。今後の課題として、大量生成されるPRのレビュー負荷や、AIによる品質検証の自動化についても言及されている。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AI自動化",
+      "Developer Experience",
+      "バグ修正"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "バグチケットに気づく頃にはもう直っている仕組みを作った"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:56:33.551077+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセッション履歴が30日で消えると知って9999日に変えた話",
+    "url": "https://note.com/cute_agapan9087/n/nf54c17fc5f43",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのローカルセッション履歴が30日で自動削除される制限を、設定ファイルの書き換えにより実質無期限に変更する方法を解説した記事。",
+    "summaryBody": "Claude Codeはデフォルト設定で30日間非アクティブなローカルセッション履歴を自動削除しますが、これを回避する方法を紹介しています。具体的には、`~/.claude/settings.json` 内に `cleanupPeriodDays` パラメータを追加し、値を `9999` に設定することで履歴を長期間保持できるようになります。記事では、Anthropicのサーバー側と自身のローカル端末側でのデータ保存期間の違いや、長期保存によるメリット（過去の調査の再利用、長期プロジェクトの継続性）についても整理されており、AIエンジニアや開発者の生産性向上に直結する内容となっています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "セッション管理",
+      "生産性向上",
+      "設定カスタマイズ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}
