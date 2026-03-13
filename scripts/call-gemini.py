@@ -662,6 +662,25 @@ def main():
             static_content=static_content
         )
 
+        # If output looks like JSON summary, validate it
+        stripped = response.strip()
+        # Strip markdown fences if present
+        if stripped.startswith('```'):
+            stripped = re.sub(r'^```(?:json)?\s*\n', '', stripped)
+            stripped = re.sub(r'\n```\s*$', '', stripped)
+        try:
+            parsed = json.loads(stripped)
+            if 'content' in parsed and 'scores' in parsed.get('content', {}):
+                logging.info("Detected JSON summary in --file output, validating...")
+                is_valid, error_msg = validate_json_summary(parsed)
+                if not is_valid:
+                    logging.error(f"JSON validation failed: {error_msg}")
+                    print(f"Error: JSON validation failed: {error_msg}", file=sys.stderr)
+                    sys.exit(1)
+                logging.info("JSON validation passed for --file output")
+        except (json.JSONDecodeError, ValueError):
+            pass  # Not JSON output, skip validation
+
     # Output to file or stdout
     if args.output:
         try:
