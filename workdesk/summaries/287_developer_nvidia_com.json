@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:21:38.346599+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Nemotron 3 Super: エージェント推論に特化したオープンなMamba-TransformerハイブリッドMoEモデル",
+    "url": "https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAは、100万トークンのコンテキスト窓とMamba-Transformerハイブリッド構造を備え、エージェント推論の効率と精度を極限まで高めた120Bパラメータのオープンモデル「Nemotron 3 Super」を発表しました。",
+    "summaryBody": "NVIDIAが発表した「Nemotron 3 Super」は、自律型エージェントの課題である「思考コスト」と「コンテキスト爆発」を解決するために設計された120B（アクティブ12B）のMixture-of-Experts (MoE) モデルです。Mamba-2層による効率的なシーケンス処理とTransformerによる精密な推論を組み合わせたハイブリッド構造を採用し、100万トークンの巨大なコンテキスト窓を実現しています。主な革新として、トークンを圧縮してルーティングすることで計算コストを抑えつつ専門性を4倍に高める「Latent MoE」、生成速度と論理的整合性を向上させる「マルチトークン予測 (MTP)」、そしてBlackwellアーキテクチャに最適化された「ネイティブNVFP4事前学習」が挙げられます。重み、データセット、学習レシピが完全に公開されており、開発者は自身のインフラで自由にカスタマイズ・デプロイが可能です。PinchBenchにおいて同クラスのオープンモデルで最高スコアの85.6%を記録し、複雑なソフトウェア開発やサイバーセキュリティのタスクに適しています。",
+    "topics": [
+      "Nemotron 3 Super",
+      "Mamba-Transformer",
+      "Agentic AI",
+      "Mixture of Experts (MoE)",
+      "NVFP4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": "Introducing Nemotron 3 Super: An Open Hybrid Mamba-Transformer MoE for Agentic Reasoning"
+  }
+}

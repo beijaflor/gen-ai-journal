@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:22:26.059242+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自律進化型ローカルLLM「Mubo」の仕組みと始め方",
+    "url": "https://note.com/humble_dog9839/n/n232687125c39",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "コマンド一つで環境構築からプラグインの自作、自身のソースコード書き換えまでを自律的に行う、プライバシー重視のローカルAIエージェント。",
+    "summaryBody": "「Mubo（無貌）」は、ユーザーのPC環境に合わせて最適化し、対話を通じて自らを進化させるオープンソースのローカルAIエージェントです。主な特徴は以下の3点に集約されます。第一に、curlコマンド一つでOSやハードウェア（RAM/VRAM）を自動認識し、環境構築からサーバー起動までを完結させる「完全自動セットアップ」。第二に、不足している機能をユーザーの指示に基づいてAIがPythonコードで自作し、システムに組み込む「プラグイン自作能力」。第三に、Gitによるバージョン管理を背景とした、自身のソースコード（app.py）そのものを書き換える「自己書き換え機能」です。ブラウザUIからロールバックが可能な設計となっており、安全にAIの根本的な挙動やUIをカスタマイズできる点が革新的です。",
+    "topics": [
+      "AIエージェント",
+      "ローカルLLM",
+      "自己書き換え",
+      "Python",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 92,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

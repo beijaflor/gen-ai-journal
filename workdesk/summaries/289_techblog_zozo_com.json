@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:22:00.859204+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社員に何もさせずにClaude Code利用ログを集める ── 数百名規模のOpenTelemetry収集基盤の構築",
+    "url": "https://techblog.zozo.com/entry/claudecode-otel",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのOpenTelemetry機能を活用し、Intuneによる設定配布とGoogle Cloud基盤を組み合わせて数百名規模の利用ログを自動収集・分析する仕組みの構築事例。",
+    "summaryBody": "ZOZO社におけるClaude Codeの大規模導入に伴う、利用状況モニタリングの自動化事例です。従来の手動ログ収集（ccusage）では数百名規模の運用が困難だったため、Claude Code標準のOpenTelemetry（OTel）出力機能を活用。MDMツール（Intune）を用いて各端末の「managed-settings.json」にエンドポイント設定をサイレント配布し、社員の工数をゼロにした状態でログ送信を実現しています。受信側はCloud Run上のOTel Collector、Cloud Logging、BigQueryを組み合わせたマネージドな構成で、収集したデータはユーザーごとの利用頻度分析や、従量課金プランへの最適化といったコスト管理に活用されています。",
+    "topics": [
+      "Claude Code",
+      "OpenTelemetry",
+      "Google Cloud",
+      "BigQuery",
+      "Cloud Run"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

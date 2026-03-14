@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:19:15.189877+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自律型AIエージェントがMcKinseyのAIプラットフォーム「Lilli」をハッキング：4600万超のメッセージが露出",
+    "url": "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CodeWallの自律型攻撃エージェントが、McKinseyの社内AI「Lilli」のSQLインジェクション脆弱性を突き、4,650万件のチャット履歴や数十万の機密ファイルへの完全なアクセス権を取得した事例。",
+    "summaryBody": "### 概要\nCodeWallの自律型攻撃エージェントが、McKinsey & Companyの4万人以上の社員が利用するAIプラットフォーム「Lilli」をハッキングしました。この攻撃は、人間が介在せず、ドメイン名のみをヒントにわずか2時間で完了しました。\n\n### 攻撃の手法\n1. **脆弱性の発見**: 公開されていた200以上のAPIエンドポイントのうち、認証不要な22のエンドポイントを特定。その1つで、JSONキーが直接SQLに連結されるSQLインジェクションを発見しました。\n2. **AIによる試行錯誤**: 従来のOWASP ZAP等のツールでは検出できない複雑な脆弱性に対し、エージェントはエラーメッセージからクエリ構造を推測し、15回の反復で本番データベースへのアクセスに成功しました。\n3. **脆弱性の連鎖**: SQLインジェクションとIDOR（不適切な直接オブジェクト参照）を組み合わせ、特定従業員の検索履歴の閲覧まで可能にしました。\n\n### 被害と示唆\n* **露出したデータ**: 4,650万件のチャット、72万件の機密ファイル（M&Aや戦略資料）、5.7万人の社員アカウント、プロンプト設定。 \n* **プロンプトへの攻撃**: データベースへの書き込み権限により、AIの指示（プロンプト層）をサイレントに改ざんし、アドバイスを汚染したり、ガードレールを削除したりすることが可能でした。\n\n本事例は、AIエージェントが自律的にターゲットを選択・攻撃する時代の到来と、企業の「プロンプト層」が新たな重要資産（Crown Jewel）になったことを示しています。",
+    "topics": [
+      "AI Security",
+      "SQL Injection",
+      "Autonomous Agents",
+      "Data Breach",
+      "McKinsey Lilli"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "How We Hacked McKinsey's AI Platform"
+  }
+}

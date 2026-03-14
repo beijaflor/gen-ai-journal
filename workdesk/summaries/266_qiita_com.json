@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:16:57.967311+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic公式「Skills完全ガイド」を読んだら、自分のSKILL.mdのトークン消費を40%減らせた",
+    "url": "https://qiita.com/yurukusa/items/f69920b4a02cf7e2988c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropic公式ガイドに従い、SKILL.mdを3層構造（Progressive Disclosure）に整理することで、AIの精度を高めつつトークン消費を40%削減する手法を解説した記事。",
+    "summaryBody": "Anthropicが公開した「The Complete Guide to Building Skills for Claude」に基づき、Claude CodeやAPIで利用する『Skill』の最適化手法を紹介しています。中心となるのは「Progressive Disclosure（段階的開示）」という考え方で、情報を3つの階層に分離します。第1層（YAMLフロントマター）にはトリガー条件、第2層（SKILL.md本文）には核となる手順、第3層（references/フォルダ）には詳細仕様やエラー対処法を配置します。これにより、Claudeは必要な時だけ詳細情報を読み込むようになり、筆者のケースではトークン消費が約40%削減され、レスポンスの高速化とエラー解決率の向上が確認されました。具体的なフォルダ構成やトラブルシューティングの書き方も示されています。",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "プロンプトエンジニアリング",
+      "Claude Code",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

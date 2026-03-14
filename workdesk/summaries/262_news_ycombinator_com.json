@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:16:11.744882+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AIをローカルで実行できるか？」— canirun.aiの登場とローカルLLMの最新ハードウェア事情",
+    "url": "https://news.ycombinator.com/item?id=47363754",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PCスペックから動作可能なAIモデルを判定する「canirun.ai」を端緒に、Hacker NewsでローカルLLMの最適モデル、ハードウェア構成、APIとのコスト比較について深い議論が展開されています。",
+    "summaryBody": "Hacker Newsで大きな注目を集めた本スレッドでは、ユーザーのハードウェア構成に基づいてLLMの実行可能性を推定するWebツール「canirun.ai」を中心に、ローカルAI実行の最前線が語られています。\n\n**議論の主要トピック:**\n- **有望なローカルモデル**: Qwen 3.5シリーズ（特に9B）が「軽量ながら高度な思考・エージェント能力を持つ」と絶賛されています。また、最新のDeepSeek R1の量子化版やGPT-OSS、Nemotronなどの性能評価も共有されています。\n- **ハードウェアの最適化**: Macの統一メモリ（Unified Memory）の利点や、AMD Strix Halo搭載ノートPCでのLinuxカーネル設定によるGPUメモリ割り当て（120GB超）、VRAMとコンテキストサイズのトレードオフ（線形KVキャッシュ拡張）など、極めて専門的な知見が交わされています。\n- **ローカル vs クラウド**: 100時間以上をローカル環境構築に費やしたユーザーによる「コーディング用途なら結局ClaudeやGeminiのAPIが効率的」という現実的な意見がある一方、プライバシー保護や特定タスク（OCRやログ分析）でのローカル運用の優位性も強調されています。\n- **ツールの精度と代替案**: 「canirun.ai」の推論速度の見積もりの不正確さやMoEモデルの扱いへの批判もあり、代替としてリソースを自動検知するCLIツール「llmfit」などが推奨されています。",
+    "topics": [
+      "ローカルLLM",
+      "canirun.ai",
+      "Qwen 3.5",
+      "ハードウェア構成",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Can I run AI locally? | Hacker News"
+  }
+}

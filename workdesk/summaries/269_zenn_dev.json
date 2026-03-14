@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:17:35.149530+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日曜バイブコーダーがゲーム制作に行き詰まったその後の話：Claude CodeとTDDで挑む4万行のゲーム開発",
+    "url": "https://zenn.dev/kemogamer_nu/articles/3f047c54657094",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "非エンジニアの日曜コーダーが、Claude Codeを用いたVibe Codingの限界を突破し、TDDとE2Eテストを軸にした開発手法で4万行超のオンライン対戦ゲームを完成させるまでの知見を共有した記事。",
+    "summaryBody": "趣味でゲーム制作を行う著者が、AIエージェント「Claude Code」を活用してTypeScript製オンラインボードゲームを開発した記録です。当初はプロンプトのみでコードを生成する「Vibe Coding」で進めるも、規模拡大に伴うコードのスパゲッティ化や設計の破綻に直面。その後、Spec Driven Development (SDD) の試行錯誤を経て、最終的に「テスト（E2E/結合テスト）をLLMへの外部コンテキストとして活用する」という、AI時代に適応したTDD主導のワークフローに辿り着きました。git worktreeを利用した並列デバッグや、サブエージェントによるログ解析、常に「Plan Mode」から開始する重要性など、AIと協働して大規模プロジェクトを完遂するための実践的なテクニックが網羅されています。",
+    "topics": [
+      "Claude Code",
+      "TypeScript",
+      "TDD",
+      "Vibe Coding",
+      "ゲーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
