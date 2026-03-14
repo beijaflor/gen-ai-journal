@@ -162,7 +162,6 @@
 - [x] 164. https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/
 - [x] 165. https://nemoclaw.bot/
 - [x] 166. https://workos.com/blog/api-security-best-practices-for-ai-agents
-- [x] 167. https://socket.dev/blog/node-js-moves-to-annual-major-releases-starting-with-node-27
 - [x] 168. https://www.publickey1.jp/blog/26/javascriptspreadjsai.html
 - [x] 169. https://qiita.com/nogataka/items/a8306067788798975fa7
 - [x] 170. https://qiita.com/masakinihirota/items/b1c979cda8518f8b6695
