@@ -188,6 +188,35 @@ What characteristics of the articles make this pattern appropriate?]
 
 ---
 
+## Curation Signal Summary
+
+Track how human curation flags influenced theme and assembly decisions. Add this section to `editorial_plan_YYYY_MM_DD.md`:
+
+```markdown
+## Curation Signal Summary
+
+**⭐ Standout Articles:**
+- [ID] → Theme X (Lead) — 500-600w, maximum editorial depth
+- [ID] → Theme Y (Lead) — 500-600w, maximum editorial depth
+
+**👍 Upvoted Articles:**
+- [ID] → Theme X (Supporting) — 200-250w, upper weight
+- [ID] → Theme Z (Supporting) — 200-250w, upper weight
+
+**👎 Downvoted Articles:**
+- [ID] → Theme Y (Brief supporting) — 150w, factual only
+- [ID] → Annex
+
+**Omitted Articles:** [IDs] — excluded from all planning
+
+**Flag Coverage:**
+- X of Y flagged articles placed in themes
+- All standout articles used as leads: ✅/❌
+- All omitted articles excluded: ✅/❌
+```
+
+---
+
 ## When Assembly Strategy is Complete
 
 After all themes have assembly strategies documented:

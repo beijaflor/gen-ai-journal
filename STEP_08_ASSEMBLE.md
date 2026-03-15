@@ -14,6 +14,7 @@ Create publication-ready journals that match the format of published examples (s
     - Pattern selections and rationales
     - Article order and connection points
     - Narrative strategies and writing prompts
+- **Human Curation Flags:** `workdesk/curation_flags.md` (⭐ standout, 👍 upvote, 👎 downvote signals)
 - **Pattern Library:** `patterns/assembly/*.md` (reference for assembly strategies)
 - **Article Summaries:**
   - `workdesk/unified_summaries_main.md` (18-25 articles)
@@ -54,6 +55,11 @@ STEP_08 is a **manual editorial process** split into 3 sub-steps:
   - Understand transition strategies for that pattern
   - Review narrative flow recommendations
   - Check example from past journals
+
+- [ ] Read `workdesk/curation_flags.md` (if available)
+  - Note ⭐ standout articles → maximum editorial depth (500-600w)
+  - Note 👍 upvoted articles → upper end of weight range
+  - Note 👎 downvoted articles → brief, factual treatment
 
 - [ ] Read all article summaries
   - [ ] Read `workdesk/unified_summaries_main.md` completely
@@ -188,9 +194,12 @@ Create `workdesk/weekly_journal_YYYY_MM_DD.md` with:
   - Order was determined based on pattern guidelines
   - Only reorder if you discover a better flow (document why in comments)
 
-- **Article weight** — vary length by role assigned in STEP_07:
+- **Article weight** — vary length by role assigned in STEP_07, refined by curation flags:
   - **Lead / Primary source**: 400-600 words. Full treatment. Establish the theme.
+    - ⭐ Standout leads → upper end (500-600w), maximum editorial depth
   - **Supporting articles**: 150-250 words. Focused. Open with explicit transition from previous.
+    - 👍 Upvoted supporting → upper end (200-250w)
+    - 👎 Downvoted supporting → brief (150w), factual only
   - **Synthesis / Contrarian / Final**: 200-300 words. Draw threads together; close with takeaway.
   - Single-article themes: 400-600 words + strong editorial voice (no reference links needed)
 
@@ -582,6 +591,7 @@ Final journals must:
 - [ ] Be ready for direct publication
 - [ ] Each theme section has `#### 参考リンク` with all theme articles listed
 - [ ] Lead article in each theme receives fuller treatment (400-600 words) than supporting articles
+- [ ] Curation signals respected (⭐ standout = maximum depth, 👍 upvote = upper weight, 👎 downvote = brief)
 
 ## Next Step
 
