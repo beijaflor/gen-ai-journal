@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:44:39.634977+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Findyの爆速開発を支えるAIエージェントによる並列実装【Issue × Worktree × Agent Teams 】",
+    "url": "https://tech.findy.co.jp/entry/2026/03/10/070000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Issueの依存関係に基づき、Claude CodeのAgent TeamsとGit worktreeを組み合わせてAIエージェントによる並行実装を自動化するFindyの取り組みを解説しています。",
+    "summaryBody": "ファインディ株式会社が取り組む、AIエージェントによる開発の並列化手法についての紹介記事です。GitHubのSub-issue機能と依存関係設定（blocked_by）から「実行レイヤー」を計算し、Claude Codeの「Agent Teams」機能（Team LeadとWorker）を用いて実装を自動化しています。各Workerエージェントは`git worktree`を活用して独立したディレクトリで作業するため、並列実行時のファイル競合を防げるのが特徴です。また、前段のレイヤーのプルリクエストがマージされるまで次工程を待機させる「merge-gate」という同期メカニズムを導入することで、依存関係を壊さずに安全かつ高速に開発を進める仕組みを構築しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Git worktree",
+      "ソフトウェア開発",
+      "GitHub Issues"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

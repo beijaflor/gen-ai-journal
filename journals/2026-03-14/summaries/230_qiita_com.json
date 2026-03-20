@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:54:38.969099+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Manus元リードが語る「function callingをやめた理由」— 2年のエージェント開発から得た実践知見",
+    "url": "https://qiita.com/nogataka/items/9924c97a74f63c5452eb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントManusやClaude Codeの設計思想から、Function Callingの限界とコード生成（CodeAct）への移行がもたらす開発効率と成功率の向上について解説しています。",
+    "summaryBody": "AIエージェント開発のデファクトスタンダードであるFunction Callingの限界と、その代替としてのコード生成（CodeAct）の優位性を説く記事です。著者は、Manus元リードエンジニアの知見を引用し、ツール数増加に伴うスキーマ管理の複雑化や、ループ・条件分岐などの表現力の欠如をFunction Callingの課題として指摘しています。代替案のCodeActは、アクションをPythonコード等で記述することで、1往復で複数ステップの処理を完結させ、成功率を最大20%向上させます。また、Claude Codeの事例を通じ、ツールを最小限のプリミティブに絞り、オーケストレーターを極限まで薄くする「モデルに知能を委ねる」設計思想を紹介しています。最終的に、KVキャッシュ最適化やファイルシステムを外部メモリとして活用する実務的なテクニックを提示し、今後のエージェント開発の方向性を示唆しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Function Calling",
+      "CodeAct",
+      "システムアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

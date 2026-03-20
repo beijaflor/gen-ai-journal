@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:12:30.777922+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでのプロンプト定期実行（/loop）とスケジューリング機能の活用方法",
+    "url": "https://code.claude.com/docs/en/scheduled-tasks",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの`/loop`コマンドやcronスケジューリングツールを使用して、セッション内でのプロンプト定期実行やリマインダー設定を行う方法を解説します。",
+    "summaryBody": "Claude Codeに搭載された「スケジューリング機能」のガイドです。`/loop`スキルを使用することで、デプロイ状況の監視やPRのチェック、特定時間のリマインダーなどを自動化できます。主な特徴として、自然言語による時間指定（例：'30m'や'at 3pm'）に加え、標準的な5フィールドのcron式をサポートしています。セッション内限定（プロセス終了で破棄）という制約がありますが、実行時間の負荷分散（ジッター）や、忘れられたループを防ぐための「3日間有効期限」などの実用的な設計が施されています。タスクの確認・削除は自然言語または`CronList`等のツールで管理可能です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "自動化",
+      "CLIツール",
+      "cron"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Run prompts on a schedule - Claude Code Docs"
+  }
+}

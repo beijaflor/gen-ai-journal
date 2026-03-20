@@ -86,6 +86,9 @@ After gathering and summarizing sources, identify editorial themes BEFORE curati
 ```bash
 # STEP_03b: Plan Editorial Themes (AI-assisted with human review)
 
+# 0. Export curation flags from Supabase (generates curation_flags.md + annex/omit lists)
+uv run scripts/export_curation_flags.py
+
 # 1. AI analyzes all summaries
 #    - Read workdesk/unified_summaries.md
 #    - Identify 5-8 cohesive themes

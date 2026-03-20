@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:14:41.601558+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Shifting from MCP to Skills / ベストプラクティスの変遷を辿る",
+    "url": "https://speakerdeck.com/yamanoku/shifting-from-mcp-to-skills",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントとの外部連携手法がMCPからAgent Skillsへと進化する背景と、フロントエンド開発における使い分けのベストプラクティスを解説した資料です。",
+    "summaryBody": "AIエージェントによる自動コード生成が普及する中、AIに外部知識やツールを提供する手法が変化しています。本資料では、Anthropicが提唱した「MCP (Model Context Protocol)」の基本から、2025年末に登場した新たな標準「Agent Skills」への変遷を辿っています。MCPは外部ツールとの通信規格として有用ですが、トークン消費や管理コストの課題があります。一方、Agent SkillsはMarkdown形式の指示書とCLIを組み合わせることで、より自律的な実行と専門的な処理の個別管理を可能にします。著者は、Figma連携やアクセシビリティ確認の具体例を交え、外部ツール連携にはMCP、特定のフレームワーク実装や設計ルール適用にはSkillsを用いるといった、用途に応じたハイブリッドな活用方法を提唱しています。",
+    "topics": [
+      "MCP",
+      "Agent Skills",
+      "AIエージェント",
+      "Claude Code",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Shifting from MCP to Skills / ベストプラクティスの変遷を辿る"
+  }
+}

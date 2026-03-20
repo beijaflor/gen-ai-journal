@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:14:16.408646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「人間はコードを1行も書かない」という縛りで5ヶ月間プロダクトを作り続けた結果 ― ハーネスエンジニアリング",
+    "url": "https://qiita.com/nogataka/items/43c01957fa1e54d9a079",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのチームが5ヶ月間コードを一行も書かずに100万行のプロダクトを構築し、AIエージェントの力を制御・最大化する新手法「ハーネスエンジニアリング」を確立した記録。",
+    "summaryBody": "OpenAIのエンジニアリングチームが、AIエージェント「Codex」のみを用いて5ヶ月間で100万行のコードを生成し、社内数百名が利用するプロダクトを構築した実験の報告です。この過程で提唱された「ハーネスエンジニアリング」は、エンジニアの役割を「コードを書くこと」から「エージェントが自律的に動ける環境（ハーネス）を設計すること」へと再定義します。主な手法として、エージェントにブラウザ操作やオブザーバビリティを与える「目」の統合、膨大なマニュアルではなく「地図」として機能する構造化された知識管理、AIにとっての可読性と安定性を優先した「退屈な技術」の選定、そしてアーキテクチャの規律を自動強制するカスタムリンターの導入が挙げられます。また、AIが生成する非効率なパターン（AIスロップ）を自動でクリーンアップする「ガベージコレクション」的なアプローチも紹介されており、AI駆動開発における人間とAIの新たな協働の形と、それに伴う開発組織の規律の重要性を鮮明に描き出しています。",
+    "topics": [
+      "OpenAI",
+      "Codex",
+      "AI駆動開発",
+      "ハーネスエンジニアリング",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 98
+    },
+    "originalTitle": "Harness engineering: leveraging Codex in an agent-first world"
+  }
+}

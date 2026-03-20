@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:40:54.973146+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.5の中規模モデル(122B/35B/27B/9B)をコーディングエージェントで試してみる",
+    "url": "https://nowokay.hatenablog.com/entry/2026/03/08/205807",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.5の中規模モデル群をコーディングエージェントとして比較検証し、122Bは実用的だが35B以下は修正能力に課題があること、またgpt-oss-20bの意外な高さを報告している。",
+    "summaryBody": "著者のきしだ氏が、Qwen3.5シリーズの複数モデル（122B, 35B, 27B, 9B）をOpenCodeやRoo Codeといったコーディングエージェント環境でテストした記録。Java 25の標準ライブラリのみを用いたTODOアプリ開発をお題とした結果、122Bは実用レベルのコードを生成できたが、35Bや27Bは修正プロセスで既存コードを壊す傾向があり、9Bは構文エラーで完動に至らなかった。特筆すべき点として、ベンチマークスコアでは劣るgpt-oss-20bが、エージェント環境においてQwenが苦戦したバグを一発で修正する高い実用性を示したことが挙げられている。結論として、現状では35B以下の単体利用は厳しく、中規模モデルと修正に強いモデルを組み合わせる運用が現実的であると考察している。",
+    "topics": [
+      "Qwen3.5",
+      "コーディングエージェント",
+      "LLM比較",
+      "Local LLM",
+      "Java"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

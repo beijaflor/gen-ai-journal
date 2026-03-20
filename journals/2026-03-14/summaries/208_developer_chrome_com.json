@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:49:33.409080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCPとMCPの使い分け：Chrome for DevelopersによるAIエージェント連携の指針",
+    "url": "https://developer.chrome.com/blog/webmcp-mcp-usage",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Googleが、AIエージェントとウェブを繋ぐフロントエンド向けのWebMCPと、バックエンド・データ連携を担うMCPの決定的な違いと相互補完的な活用法を解説しました。",
+    "summaryBody": "GoogleのChromeチームは、新しく導入された「WebMCP」と既存の「Model Context Protocol (MCP)」の役割分担について明確な指針を示しました。WebMCPはブラウザのフロントエンド専用のAPIであり、ユーザーが現在開いているウェブサイトのDOM、セッション、Cookieなどの「ライブデータ」にエージェントが即座にアクセスできるようにするものです。一方、MCPはサーバーサイドのロジックや外部データソース、ワークフローをエージェントに接続するための永続的な汎用プロトコルです。WebMCPを導入することで、AIエージェントはUI要素からの「推測」による操作ではなく、開発者が定義した明確なツールとしてウェブサイトを操作できるようになり、信頼性と速度が大幅に向上します。開発者は、MCPでコアビジネスロジックを管理し、WebMCPでブラウザ内のコンテキストUI操作を実現するという、両者を組み合わせたアーキテクチャが推奨されています。",
+    "topics": [
+      "WebMCP",
+      "MCP",
+      "AI Agents",
+      "Chrome",
+      "Web Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "When to use WebMCP and MCP"
+  }
+}

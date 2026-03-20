@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:23:22.015110+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Antigravityの「青いボタン」をポチポチ押すのはもう終わり！ターミナル自動承認でAntigravityで楽々開発を実現しよう",
+    "url": "https://qiita.com/masakinihirota/items/b1c979cda8518f8b6695",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "VS CodeベースのAIツールAntigravityで、AIが提案するコマンド実行を特定の安全なものに限り自動化し、手動承認の手間を削減する設定方法を解説。",
+    "summaryBody": "VS CodeのAIエージェント機能やAntigravityを使用する際、AIが提案するターミナルコマンドを毎回手動で承認（青いボタンをクリック）する作業を効率化する手法を紹介しています。設定ファイルである`settings.json`の`chat.tools.terminal.autoApprove`項目をカスタマイズすることで、`ls`、`git status`、テスト実行といった参照・検証系の安全なコマンドは即座に自動実行し、`git push`やパッケージインストール、削除コマンドといった破壊的・影響の大きい操作には手動確認を求めるという「賢い振り分け」が可能になります。記事内では具体的なJSON設定例や正規表現を用いたパターンマッチング、さらにはセキュリティ上の注意点についても詳しく触れられており、AIとのペアプログラミングをよりスムーズにするための実践的なガイドとなっています。",
+    "topics": [
+      "VS Code",
+      "Antigravity",
+      "AIエージェント",
+      "GitHub Copilot",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

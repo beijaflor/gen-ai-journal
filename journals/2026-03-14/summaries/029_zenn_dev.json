@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:08:04.567873+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "続【Claude Code】Wordの詳細設計書とどう向き合うか",
+    "url": "https://zenn.dev/acntechjp/articles/a7ee3dc65bc4a7",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeでWord形式の詳細設計書を扱う際の、PandocやMarkItDownを活用したMarkdown変換手法と、実務における効率的な運用プラクティスを解説しています。",
+    "summaryBody": "本記事は、Excel方眼紙の設計書対応に続き、Word形式の詳細設計書をClaude Codeにコンテキストとして渡すためのアプローチを整理しています。Wordはテキストが線形に流れるためExcelよりAIへの親和性が高い一方、変更履歴（トラックチェンジ）や内部構造の「Run分割」といった特有の技術的課題が存在します。記事では、Pandocを用いたMarkdown変換（変更履歴の処理に強み）、PDF化によるマルチモーダル対応、MicrosoftのMarkItDownによる一括変換など、5つのアプローチを比較。複雑な表構造にはPandoc、手軽な一括処理にはMarkItDownという使い分けや、CLAUDE.mdやSkills機能を活用した自動化の検討を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Word",
+      "Pandoc",
+      "MarkItDown",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

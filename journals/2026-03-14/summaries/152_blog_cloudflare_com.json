@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:19:12.261983+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、AIアプリケーション向けセキュリティ機能を一般提供開始：全ユーザーにエンドポイント検出を無料開放",
+    "url": "https://blog.cloudflare.com/ai-security-for-apps-ga/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、プロンプトインジェクションや機密情報漏洩からAIアプリを保護する「AI Security for Apps」を一般提供開始し、AIエンドポイントの自動検出機能を全プランに無料開放しました。",
+    "summaryBody": "Cloudflareは、AIアプリケーション特有の脆弱性に対処する「AI Security for Apps」の一般提供（GA）を発表しました。従来の決定論的なWAFルールでは対応が難しい、自然言語によるプロンプトインジェクションや機密情報の開示、有害なコンテンツの生成といったリスクを防御します。\n\n主な機能とアップデートは以下の通りです：\n1. **AI Discoveryの無料化**: Free、Pro、Businessを含む全プランのユーザーが、自社ドメイン内で稼働しているAIエンドポイントを自動的に検出し、可視化できるようになりました。\n2. **カスタムトピック検知**: 企業独自のポリシーに基づき、特定のトピックやキーワード（例：競合他社製品、特定の金融資産など）を検知・遮断する機能が追加されました。\n3. **柔軟なプロンプト抽出**: OpenAIやAnthropicなどの主要プロバイダーに加え、JSONPathを使用して独自のデータ構造からプロンプトを抽出・解析する機能が強化されます。\n\nまた、IBM Cloudとの連携拡大や、Wizとのパートナーシップにより、クラウド環境からエッジレイヤーまで一貫したAIセキュリティポスチャの管理が可能になります。現在はEnterprise顧客向けにフル機能を提供しており、今後全プランへの展開を予定しています。",
+    "topics": [
+      "AI Security",
+      "Cloudflare",
+      "LLM Security",
+      "WAF",
+      "Prompt Injection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "AI Security for Apps is now generally available"
+  }
+}

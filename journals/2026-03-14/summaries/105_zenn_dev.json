@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:41:05.733719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGで足りなくなったので Agentic Search を調べてみた",
+    "url": "https://zenn.dev/edash_tech_blog/articles/02582c4f70d0fb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "従来のRAGの限界を克服するために、LLMエージェントが自律的に検索戦略を計画・実行・評価する「Agentic Search」の仕組みと導入の判断基準を解説した記事。",
+    "summaryBody": "従来のRAG（Retrieval-Augmented Generation）を運用する中で直面する「単一クエリの限界」や「検索の空振り」を解消する手法として、Agentic Searchの技術構成とメリット・デメリットをまとめています。Agentic Searchは、LLMエージェントが「計画・検索・評価・再検索」のループを自律的に回すことで、複雑な質問への回答や複数データソースの横断、計算ツールの活用を可能にします。一方で、多段階推論によるレイテンシーの増加やAPIコストの上昇、ハルシネーションの連鎖といった課題も指摘。導入の判断基準として、単純なFAQならRAG、複雑な推論や正確性が最優先される場面ではAgentic Searchを検討すべきとしています。単に検索を丸投げするのではなく、エージェントが辿り着きやすいデータ構造を整える重要性が強調されています。",
+    "topics": [
+      "Agentic Search",
+      "RAG",
+      "LLMエージェント",
+      "AI検索",
+      "ハルシネーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

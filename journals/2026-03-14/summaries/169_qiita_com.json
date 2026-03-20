@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:23:04.617018+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングを自分のプロジェクトで実装してみた #ClaudeCode",
+    "url": "https://qiita.com/nogataka/items/a8306067788798975fa7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeなどのAIエージェントの性能を最大化するため、環境設計（ハーネス）を最適化する具体的な実践手法と、それによる生産性向上の成果を解説した記事。",
+    "summaryBody": "SWE-benchのスコアがモデル変更より環境設計で大きく変動するという調査に基づき、AIエージェントが効率的に動作するための「ハーネスエンジニアリング」を実践。具体的には、1)CLAUDE.mdを冗長な説明ではなく実行可能なポインタに絞り込んで軽量化する、2)PostToolUse Hookを利用してファイル編集のたびにBiomeやOxlintで超高速に自動リント・修正を行う、3)タスクを計画と実行に分離して段階的に進めるワークフロー、の3点を紹介。これにより、AI特有の型定義の怠慢やコード重複を物理的に防ぎ、手直し時間を半分以下に削減したプロセスを詳説しています。",
+    "topics": [
+      "Claude Code",
+      "Harness Engineering",
+      "AIエージェント",
+      "開発環境",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

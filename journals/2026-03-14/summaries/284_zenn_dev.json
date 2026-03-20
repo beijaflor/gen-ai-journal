@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:20:56.777843+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "公式Slack MCPよりも便利? Slack CLIの紹介",
+    "url": "https://zenn.dev/tokium_dev/articles/84a40cfa2d8534",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自作のSlack CLIツール「slack-cli」を紹介し、公式Slack MCPと比較した際の機能的な優位性やAIエージェントとの親和性を解説する。",
+    "summaryBody": "ターミナルからSlackを操作する自作ツール「slack-cli」の紹介記事です。公式のSlack MCPサーバーと比較して、メッセージの編集・削除、履歴のJSON出力、未読管理、リマインダー操作など、より広範な機能を備えている点が特徴です。特にClaude CodeなどのAIエージェントに利用させる際、シェルパイプラインを用いた情報の絞り込み（jq連携など）が可能であるため、LLMのトークン節約や柔軟な自動化に適しています。記事では、npmでの導入方法やマルチプロファイル対応、具体的なユースケースが網羅的に解説されており、開発者個人の生産性向上に直結するツールとなっています。",
+    "topics": [
+      "Slack",
+      "CLI",
+      "MCP",
+      "Claude Code",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

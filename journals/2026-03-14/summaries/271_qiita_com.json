@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:18:06.125899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "米国で話題のRAGのセキュリティ脅威についてまとめてみた",
+    "url": "https://qiita.com/miruky/items/3c98999786c7dbd2b26a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RAGシステム特有の4つの主要なセキュリティ脅威（ポイズニング、間接インジェクション等）を最新の研究論文やMicrosoftの2026年3月版ガイダンスに基づき体系的に解説した記事。",
+    "summaryBody": "RAG（検索拡張生成）システムの企業導入が進む中、米国で報告されている新たな攻撃手法と防御策をまとめた記事です。主な脅威として、少数の悪意ある文書で検索結果を汚染する「ドキュメントポイズニング（PoisonedRAG）」、URLや共有文書に隠された命令を実行させる「間接プロンプトインジェクション（HashJack）」、権限外の機密情報を抽出する「データ抽出攻撃（ConfusedPilot）」、特定のトリガーで挙動を操作する「バックドア攻撃（Phantom）」の4点に焦点を当てています。研究結果によれば、これらの攻撃はオープンソースモデルから商用モデル（GPT-4等）へ転移可能であり、Microsoft 365 Copilotなどの実運用システムも標的となり得ることが示されています。防御策として、アクセス制御の徹底、入出力のサニタイズ、システムプロンプトの硬化、そしてPyRITを用いたRed Teamingなど、今日から実施可能な12の具体的戦略を提案しています。AIの出力を無批判に信頼せず、ゼロトラストのアプローチを適用することの重要性を強調しています。",
+    "topics": [
+      "RAG",
+      "LLM Security",
+      "Prompt Injection",
+      "Cybersecurity",
+      "AI Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

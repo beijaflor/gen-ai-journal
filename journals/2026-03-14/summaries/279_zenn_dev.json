@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:19:52.894794+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数リポジトリで copilot-instructions.md を一元管理する",
+    "url": "https://zenn.dev/noouchi4/articles/my-first-zenn-article",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Actionsを使用して、複数のリポジトリに散在するGitHub CopilotやCursor用の共通ルールを一元管理し、自動で同期・PR作成を行う仕組みの解説。",
+    "summaryBody": "複数リポジトリ構成のプロジェクトにおいて、リポジトリごとにGitHub Copilotの指示ファイル（copilot-instructions.md）をメンテナンスする負担を解消する手法を紹介しています。共通設定用のリポジトリを「正」とし、GitHub Actionsの`cross-repo-sync-action`を活用して、変更を検知した際に各ターゲットリポジトリへ自動的にPull Requestを送信するワークフローを構築します。記事では、sync-config.ymlによる同期ルールの定義、GitHub AppやFine-grained PATを用いた認証設定、Cursor用ルール（.mdc）やESLint設定への応用、ディレクトリ単位での同期や削除オプションなど、実務で役立つ具体的な構成例が網羅されています。",
+    "topics": [
+      "GitHub Copilot",
+      "GitHub Actions",
+      "Cursor",
+      "リポジトリ管理",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

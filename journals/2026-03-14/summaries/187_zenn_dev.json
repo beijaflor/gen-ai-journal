@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:27:21.441520+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus4.6でdraw.io図を生成したらもはやLLMの前提が崩れてた件",
+    "url": "https://zenn.dev/acntechjp/articles/4ab4491afd5a8b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.6が、従来LLMが苦手とされていた複雑なAWS構成図のdraw.io用XML生成において、グラフ理論の制約を超えた高いレイアウト品質を実現していることを検証した記事。",
+    "summaryBody": "この記事は、Claude Opus 4.6（Claude Code）を用いて複雑なAWSシステム構成図をdraw.io形式で生成し、その限界を検証した記録です。筆者は「LLMは空間的推論が苦手であり、接続数が増えれば図が破綻する」というグラフ理論（平面グラフの辺数上限など）に基づいた前提を持っていましたが、検証の結果、Opus 4.6は27個のコンポーネントと48本以上の接続線を持つ構成でも、階層構造や対称性、グルーピングを維持した実用的な図を出力できることが判明しました。記事内では、アイコンの描画におけるスタイルの落とし穴や、さらに精度を上げるためのプロンプトテクニックについても具体的に解説されています。",
+    "topics": [
+      "Claude Code",
+      "Opus 4.6",
+      "draw.io",
+      "AWS",
+      "システム構成図"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

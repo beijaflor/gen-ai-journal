@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:15:00.477720+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実装プラン作りの難しさを LLM × Linear で解決する ― Project壁打ちSkillの紹介",
+    "url": "https://tech.legalforce.co.jp/entry/linear-project-builder",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMによる自動実装を成功させるため、実装前のタスク分解と設計をLinear上で構造化するエージェント用Skill「linear-project-builder」の活用事例。",
+    "summaryBody": "LegalOn Technologiesが開発した、LLMによる実装の前段階（タスク設計）を支援する「linear-project-builder」というSkillについて解説しています。コーディング自体をLLMが行う前に、何を、どの順序で、どの完了条件で進めるかという「リファインメント」の工程をAIエージェントとの対話で自動化・具体化します。\n\n主な特徴は以下の3フェーズ構成です：\n1. **ヒアリング**: 必要な情報が揃うまで1問1答形式で対話を行い、解像度を高める。\n2. **構造化と品質検証**: 「1チケット≦1日」という鉄則に基づき、実装・検証可能な粒度にタスクを分解。AI自身が定義した品質チェックゲートを通過させる。\n3. **Linear登録**: MCP（Model Context Protocol）を通じて、API制約を守りながらLinearのProject/Issueとして登録する。\n\n「速さ」よりも「出力の質（実装可能性）」を優先しており、このSkillを用いることで、人間がボトルネックになりがちな設計フェーズの負荷を下げ、その後のLLMによるコード生成の精度を最大化しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "Linear",
+      "MCP",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:54:25.175366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGシステムにおけるドキュメント・ポイズニング：攻撃者がAIの情報源を汚染する手法",
+    "url": "https://aminrj.com/posts/rag-document-poisoning/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RAGシステムの知識ベースに偽の情報を混入させる「ドキュメント・ポイズニング」の手法と、埋め込みベクトルの異常検知による防御の有効性を実証した解説記事。",
+    "summaryBody": "RAG（検索拡張生成）システムにおいて、ベクトルデータベースに不正なドキュメントを注入し、LLMの回答を意図的に誤らせる「知識ベースポイズニング（Knowledge Base Poisoning）」の危険性を詳説しています。\\n\\n### 主な内容\\n1. **攻撃の実証**: 企業の財務情報を改ざんする3つのドキュメントを注入。LLMは正解データがコンテキスト内にあっても、攻撃者が用意した「修正版」という権限を装った記述を優先し、誤った数値を回答しました。\\n2. **理論的背景**: USENIX Security 2025で発表された「PoisonedRAG」に基づき、検索条件（類似度）と生成条件（権限の主張）の両方を満たすことで攻撃が成功することを示しています。\\n3. **防御策の比較**: プロンプトの要塞化や出力モニタリングよりも、「埋め込みベクトルの異常検知（Embedding Anomaly Detection）」が最も効果的（成功率を95%から20%へ低減）であることを明らかにしました。\\n4. **実装の提言**: 知識ベースへの全書き込みパスの把握、インジェスト時の類似度チェック、定期的なスナップショットの取得を推奨しています。",
+    "topics": [
+      "RAG Security",
+      "Document Poisoning",
+      "AI Safety",
+      "Vector Database",
+      "Anomaly Detection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Document Poisoning in RAG Systems: How Attackers Corrupt Your AI's Sources"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T12:06:49.136956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursor Cloud Agentにおける安全なシークレット管理：Infisicalによるベストプラクティス",
+    "url": "https://infisical.com/blog/secure-secrets-management-for-cursor-cloud-agents",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cursor Cloud AgentのVM環境において、シークレットを直接書き込むリスクを回避し、Infisicalを使用して実行時に安全に機密情報を注入・管理する方法を解説します。",
+    "summaryBody": "Cursor Cloud Agentは、タスクごとにUbuntu VMを起動してリポジトリをクローンし、`install`および`start`ライフサイクルを実行します。この際、APIキーやDB認証情報をスナップショットに含めたり、`.cursor/environment.json`にハードコードしたりすると、資格情報の漏洩や管理不全のリスクが生じます。本記事では、Infisicalの「Machine Identity」を活用した解決策を提案しています。CursorのSecrets UIにはInfisicalの最小限の認証情報（Client ID/Secret）のみを保存し、実行時に`infisical run`で環境変数を注入、あるいは`infisical export`で`.npmrc`などの設定ファイルを生成することで、シークレットを動的に取得します。この手法により、シークレットの自動ローテーション、詳細な監査トレイル、環境ごとのアクセス隔離が可能になり、プロンプトインジェクション攻撃による被害範囲を最小限に抑える堅牢なセキュリティ基盤を構築できます。",
+    "topics": [
+      "Cursor",
+      "Infisical",
+      "Secrets Management",
+      "AI Agents",
+      "Cloud Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Secure Secrets Management for Cursor Cloud Agents | Infisical"
+  }
+}

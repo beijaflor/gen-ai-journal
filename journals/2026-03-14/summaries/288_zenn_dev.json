@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:21:50.376388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リリース直前にPythonからTypeScriptへ：AIを活用した技術スタック転換の成功事例",
+    "url": "https://zenn.dev/rescuenow/articles/de42ef1e09aedb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "リリース3週間前にバックエンドをPythonからTypeScriptへ移行し、AI（Claude）とテストコードの活用によって短期間でパフォーマンス大幅改善を実現した事例の紹介。",
+    "summaryBody": "レスキューナウ社が新規Webサービス開発において、リリース直前にバックエンドの技術スタックをPython（Lambda）からTypeScript（Node.js）へと大胆に入れ替えた経緯と成果を解説しています。当初はチーム内のナレッジ共有を優先しPythonで統一していましたが、Lambdaのコールドスタート等のレイテンシが課題となり、リアーキテクチャを決断。Claude 3.5 Sonnet等のAIを活用してコード移植を自動化し、既存のテストコードをセーフティネットにすることで、通常3ヶ月かかる開発内容をわずか1週間で移行完了させました。結果としてホットスタートのレイテンシを約3分の1に短縮し、コスト削減も実現。AI時代における「学習コスト」の概念の変化と、テストコードさえあれば技術選定の柔軟な変更が可能であることを示す、実用的な知見が共有されています。",
+    "topics": [
+      "AWS Lambda",
+      "TypeScript",
+      "Claude",
+      "技術選定",
+      "マイクロサービス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "リリース直前に技術スタックを入れ替えたけどうまくいった話"
+  }
+}

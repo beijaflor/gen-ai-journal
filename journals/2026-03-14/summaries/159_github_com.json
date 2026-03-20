@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:20:46.402984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Browser Protocol (ABP) - AIエージェントのための確定的なブラウザ操作ツール",
+    "url": "https://github.com/theredsix/agent-browser-protocol",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Chromiumを改造し、AIエージェントがWebページの状態を正確かつ同期的に操作できるMCP対応の新しいブラウザ自動化プロトコルです。",
+    "summaryBody": "Agent Browser Protocol (ABP) は、AIエージェントとWebブラウザのミスマッチを解消するために開発されたカスタムChromiumビルドです。従来のブラウザ操作ツール（Playwright等）は非同期的な挙動がAIとの相性を悪くしていましたが、ABPは1つのリクエストに対して「操作・待機・スクリーンショット・イベントログ」を1つのステップとして同期的に返します。最大の特徴は、エージェントの思考中にJavaScriptの実行や仮想時間を一時停止する機能で、これにより動的なWebページでもエージェントが状態の不一致に悩まされることなく確実な操作を行えます。MCP（Model Context Protocol）とREST APIをエンジンレベルで内蔵しており、Claude CodeなどのAIツールから即座に利用可能です。また、学習用に操作ログをSQLiteで記録する機能も備えています。",
+    "topics": [
+      "AIエージェント",
+      "ブラウザ自動化",
+      "MCP",
+      "Chromium",
+      "LLMツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 94
+    },
+    "originalTitle": "Agent Browser Protocol: Deterministic browser automation. Works out of the box with Claude/Codex/OpenCode"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:47:14.242073+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングガイドライン運用をAIで自動化し、レビュー知見を資産化する",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/62639/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PRレビューコメントからAIが自動でガイドライン案を抽出し、人間が最終判断してドキュメントを更新するGitHub Actionsベースの自動化システムを紹介しています。",
+    "summaryBody": "サイバーエージェントの開発チームが構築した、コーディングガイドラインを継続的に更新するための仕組みの解説です。PRレビューに埋もれがちな知見を「資産」に変えるため、AIが一定期間のコメントを分析してガイドライン案をPRとして提示します。このワークフローは「抽出(extract)」と「同期(sync)」の2フェーズで構成され、PR本文に埋め込まれたメタデータを利用してドキュメントへ自動反映します。AIに全てを任せるのではなく、人間が最終的な採否を判断する「Human-in-the-loop」設計にすることで、チーム固有の文脈やトレードオフを尊重した精度の高いガイドライン維持を実現しています。導入により、AIレビューの精度向上や、人間がビジネスロジックの確認に集中できる環境の構築といった成果が得られています。",
+    "topics": [
+      "GitHub Actions",
+      "LLM",
+      "コードレビュー",
+      "コーディングガイドライン",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

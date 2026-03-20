@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:08:53.190023+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code に `cc` というエイリアスをつけたら PC がハングした話（原因は別でした）",
+    "url": "https://zenn.dev/owayo/articles/6190821ac1dd1e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの短縮コマンドとして`cc`を設定した際に起きたトラブルの技術的調査と、シェルエイリアスがシステムコールに及ぼす影響の解説。",
+    "summaryBody": "筆者がClaude CodeのエイリアスをCコンパイラの標準コマンドである`cc`に設定した際、tree-sitterのテスト実行中に発生したメモリ暴走とシステムハングの顛末を記した記事です。当初はエイリアスが原因でtree-sitterがコンパイラの代わりにClaude Codeを起動してしまったと考えられましたが、詳細な検証の結果、tree-sitterは内部で`execvp`を使用しており、シェルエイリアスの影響を受けないことが判明しました。真の原因はtree-sitter test自体の既知のメモリ問題でしたが、この記事は「既存のコマンド名をエイリアスに上書きすることの危険性」と「トラブル発生時の推測と検証の重要性」について貴重な教訓を与えています。",
+    "topics": [
+      "Claude Code",
+      "shell alias",
+      "tree-sitter",
+      "system call",
+      "troubleshooting"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:56:47.396608+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeログ基盤の構築",
+    "url": "https://speakerdeck.com/giginet/claude-code-logging",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks機能を活用し、利用状況の可視化や生産性分析を行うための独自のログ基盤構築手法を解説する資料。",
+    "summaryBody": "LINEヤフー（LY Corporation）におけるClaude Codeの導入事例をベースに、詳細な利用統計を収集するためのログ基盤構築について解説しています。標準のOpenTelemetry連携やダッシュボードでは取得しづらい「どのツールやSkillが使われたか」「具体的な編集内容」などを、Claude CodeのHooks（SessionStart, PostToolUse等）を利用して収集する方法を提案しています。また、収集用ロガーをPluginとして社内配布・強制有効化する運用フローや、収集したデータ（プロンプト数や編集行数）とPR作成数などの生産性指標を掛け合わせた分析についても触れており、AIエージェントの導入効果を定量化したい組織にとって非常に実用的な内容です。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "Developer Productivity",
+      "Logging",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:28:49.012778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PiClaw: BunとDockerを活用した分離型コーディングエージェント実行プラットフォーム",
+    "url": "https://github.com/rcarmo/piclaw",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Dockerベースの隔離されたDebian環境で、Bun製の洗練されたWeb UIと永続ストレージを備えたPi Coding Agentを実行・管理できるサンドボックス基盤。",
+    "summaryBody": "PiClawは、Pi Coding Agentを安全かつ高度に活用するためのオーケストレーター兼サンドボックス環境です。DockerとBunを基盤とし、SSEによるリアルタイムなトークンストリーミング、Markdown/KaTeX/Mermaidのレンダリング、そしてファイルツリーを伴うワークスペースエクスプローラーを提供します。特にユニークな点として、ディレクトリ構造を視覚化するスターバースト表示や、CodeMirror 6を内蔵したフル機能のコードエディタ、SQLiteによるチャット履歴とタスクの永続化、Passkeys/TOTP認証のサポートなどが挙げられます。開発者が自分のマシンやサーバー上で、隔離された環境を保ちつつ対話的なAIコーディング環境を構築するのに適したツールです。",
+    "topics": [
+      "AI Agent",
+      "Bun",
+      "Docker",
+      "Pi Coding Agent",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "piclaw: I'm going to build my own OpenClaw, with blackjack... and bun!"
+  }
+}

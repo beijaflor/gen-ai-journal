@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:17:02.311738+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "久々にOllamaを触ったら、量子化で別物になってた",
+    "url": "https://zenn.dev/dassimen/articles/fb7c9c893479ee",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Ollamaにおける量子化技術の進化が、ローカルLLMのメモリ消費量削減と転送速度向上にどのように寄与しているかを技術的背景とともに解説した記事。",
+    "summaryBody": "Ollamaのドキュメントからかつての推奨スペック表が消えた背景にある「量子化」の重要性を深掘りしています。LLMの推論が演算性能ではなくメモリ転送速度に制限される「メモリバウンド」な処理であることを指摘し、量子化（ビット数削減）がデータ転送量を減らすことで、結果的に推論速度を向上させるメカニズムを解説。また、2024年末に導入されたKVキャッシュ量子化によるコンテキスト拡張への対応や、Q4_K_Mなどの量子化形式の意味、ハードウェアごとの実行目安など、ローカル環境でLLMを効率的に運用するための実践的な知識がまとめられています。",
+    "topics": [
+      "Ollama",
+      "LLM",
+      "量子化",
+      "推論最適化",
+      "AIハードウェア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

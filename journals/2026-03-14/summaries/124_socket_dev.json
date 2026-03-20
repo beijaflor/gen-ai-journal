@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:45:54.648728+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawの脆弱性報告急増が浮き彫りにする、GHSAとCVEトラッキングの乖離",
+    "url": "https://socket.dev/blog/openclaw-advisory-surge-highlights-gaps-between-ghsa-and-cve-tracking",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIエージェントOpenClawでの脆弱性報告急増をきっかけに、GitHub Security Advisories (GHSA) と CVE の間にある管理体制の乖離と、企業向けツールの対応遅れが議論を呼んでいます。",
+    "summaryBody": "急速に普及したAIエージェント「OpenClaw」プロジェクトにおいて、短期間に250件を超えるセキュリティアドバイザリ（GHSA）が公開されました。しかし、その大半にCVE識別子が割り当てられていないことが、脆弱性管理エコシステムの課題を浮き彫りにしています。脆弱性インテリジェンス企業のVulnCheckが、未割り当ての170件に対してCVE発行の優先権（DIBS）を主張しましたが、CVE作業部会は「特定サプライヤーの脆弱性を一括処理するための制度ではない」としてこれを却下しました。\n\nこの問題の本質は、GHSAがメンテナーにとって摩擦の少ない報告手段である一方、多くの企業のセキュリティスキャナやSBOMツールが依然としてCVEのみに依存しているという点にあります。GHSAのみで公開された脆弱性は、多くの企業環境で「不可視」の状態になっています。専門家の間では、CVEという中央集権的な階層モデルから、GHSAなどの分散した情報源を同等に扱うモデルへの移行が必要だという議論が加速しています。AIによる開発加速に伴い、同様の脆弱性報告の急増とエコシステムの断片化は今後さらに一般化すると予測されます。",
+    "topics": [
+      "OpenClaw",
+      "CVE",
+      "GHSA",
+      "Vulnerability Management",
+      "Supply Chain Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "OpenClaw Advisory Surge Highlights Gaps Between GHSA and CVE Tracking"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:14:33.129554+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GraphQLスキーマを利用してAIエージェントを構築する方法：Apollo MCP Serverの活用ガイド",
+    "url": "https://www.apollographql.com/blog/how-to-build-ai-agents-using-your-graphql-schema",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GraphQLの型定義とModel Context Protocol (MCP)を組み合わせることで、既存のAPIを変更することなくAIエージェントが自然言語で操作可能な「ツール」へと変換する方法を解説しています。",
+    "summaryBody": "AIエージェントに既存のデータやアプリケーション機能を統合する際、GraphQLの強力な型システムとイントロスペクション機能は理想的な基盤となります。本記事では、Anthropicが提唱するModel Context Protocol (MCP) を実装した「Apollo MCP Server」を利用し、GraphQL APIをAIエージェントのツールとして公開する具体的な実装手順をガイドしています。主なステップとして、スキーマの取得、AIが実行する特定のクエリ（オペレーション）の定義、Dockerを使用したサーバーの立ち上げ、そしてClaude Codeなどのクライアントからの呼び出し方法が示されています。この構成により、開発者は既存のセキュリティやオブザーバビリティの仕組みを維持したまま、LLMに対して構造化されたコンテキストと予測可能なデータコントラクトを提供することが可能になります。また、将来的な運用として、Apollo Routerとの統合による認証・認可の継承やパフォーマンスの最適化についても触れられています。",
+    "topics": [
+      "GraphQL",
+      "AI Agents",
+      "Model Context Protocol (MCP)",
+      "Apollo MCP Server",
+      "LLM Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "How to Build AI Agents Using Your GraphQL Schema"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:44:08.087665+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code で SKILL.md に展開されるセッション ID を利用するプラグインを作ろう",
+    "url": "https://blog.pokutuna.com/entry/claude-code-session-id-plugins",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSKILL.mdで利用可能な`${CLAUDE_SESSION_ID}`等のプレースホルダを活用し、セッション単位での権限管理やウィンドウ分岐を実現するプラグインの実装手法を解説した記事。",
+    "summaryBody": "本記事では、Claude Codeの拡張機能である「Skill」において、実行時に動的に展開される環境変数（プレースホルダ）の活用方法を紹介しています。特に`${CLAUDE_SESSION_ID}`を利用することで、セッションごとに一意な状態管理が可能になる点に着目し、一定時間だけコマンド実行の自動許可を与える`/allow-until`や、tmuxでセッションをフォークする`/side-fork`といった自作プラグインの仕組みを解説しています。状態管理に`git config`を軽量DBとして利用するテクニックや、`hooks.json`によるHookの配布、プロジェクト単位での設定管理など、Claude Codeをより高度に使いこなすための実践的なノウハウが凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "LLM",
+      "CLI Tools",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

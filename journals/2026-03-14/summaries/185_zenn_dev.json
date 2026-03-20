@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:26:54.731548+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに長期記憶を実装する",
+    "url": "https://zenn.dev/acntechjp/articles/efcc4f224cc8ca",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "人間の脳の記憶メカニズム（情動、忘却曲線、連想、再固定化など）を模倣した、LLM向けの機能的な長期記憶システムの実装手法を解説した記事。",
+    "summaryBody": "Claude CodeなどのLLMに、人間の脳の仕組みに基づいた長期記憶を実装する実験的プロジェクト「ghost」の詳細が解説されています。単なるデータの外部保存（RAG）に留まらず、以下の16のメカニズムをPythonとSQLiteで実現しています。 \n\n1.  **情動ゲーティング**: 扁桃体のようにテキストのトーンから重要度を判定。\n2.  **忘却と強化**: エビングハウスの忘却曲線に基づいた減衰と、アクセスによる強化。\n3.  **連想と再構成**: ベクトル類似度によるリンク構築と、記憶を断片からLLMに再構成させる仕組み。\n4.  **動的プロセス**: 睡眠（バッチ処理）による記憶の統合、気分一致効果、不随意記憶（フラッシュバック）の実装。\n\n「記憶は静的なデータではなく動的なプロセスである」という思想のもと、時間帯や気分によって検索結果が確率的に変化する、より人間に近い記憶の振る舞いを目指しています。",
+    "topics": [
+      "LLM",
+      "長期記憶",
+      "Claude",
+      "Python",
+      "脳科学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 98,
+      "overall": 95
+    },
+    "originalTitle": "LLMに長期記憶を実装する"
+  }
+}

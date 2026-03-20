@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:06:29.643106+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude に jq の JIT コンパイラを作らせたらめちゃくちゃ速くなった #ClaudeCode",
+    "url": "https://qiita.com/m5d215/items/6b814078a0ad47654b42",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを用い、人間が一行もコードを書かずにRust製の高速なjq互換JITコンパイラ「jq-jit」を自律的に開発させた驚異的な記録。",
+    "summaryBody": "この記事は、AIエージェント「Claude Code」を活用し、JSON処理ツール『jq』のJITコンパイラを完全に自律的なプロセスで開発した詳細なレポートです。開発者は目的を与えただけで、Claudeがアーキテクチャの選定（libjqバイトコードの読み取り）、JITバックエンド（Cranelift）の採用、そして多層的な最適化戦略をすべて自ら判断しました。開発開始からわずか4時間で公式テストスイートを100%パスし、最終的には142コミット、約2万行のRustコードを生成。標準のjqと比較して12〜17倍、高速な代替実装であるjaqに対しても数倍の速度向上を達成しました。明確な評価指標（テストスイート）と高速なフィードバックループが、AIによる複雑な低レイヤプログラミングを成功させた要因として挙げられています。",
+    "topics": [
+      "ClaudeCode",
+      "jq",
+      "Rust",
+      "JIT",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 96,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

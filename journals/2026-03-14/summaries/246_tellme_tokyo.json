@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:58:19.460140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdとrulesの使い分けと各ツールの対応状況 (2026.3)",
+    "url": "https://tellme.tokyo/post/2026/03/12/ai-coding-agent-rules/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI Coding Agentにおける「コンテキスト」と「ルール」の分離の重要性と、CLAUDE.mdやAGENTS.md、各ツール固有のルール機能の使い分けを解説した実務ガイド。",
+    "summaryBody": "AI Coding Agent（Claude Code, Cursor, Windsurf等）を効果的に運用するためのルール設計について解説しています。著者は、プロジェクト概要などの「コンテキスト」と、コーディング規約などの「ルール」を分離することを推奨しています。特にClaude Codeにおいて、CLAUDE.mdはセッションが進むと埋もれやすいため、`.claude/rules/`による条件付きルール（Conditional Rules）を活用することで、必要なタイミングで確実に制約を注入する手法を提示。また、主要ツール（Copilot, Codex CLI, Cursor, Windsurf等）におけるAGENTS.mdのサポート状況を比較し、クロスツールで共通利用できる「コンテキスト層」と、ツール固有の「ルール層」の2層構造が現在の最適解であると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "AGENTS.md",
+      "AI Coding Agent",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T10:28:26.447055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メガネだけでClaude Codeとやり取りできるようにした話",
+    "url": "https://zenn.dev/wmoto_ai/articles/claude-code-even-g2-glasses",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "スマートグラス「Even Realities G2」を活用し、PCから離れた状態でもClaude Codeの承認・通知確認・音声コメント返しができるハンズフリーな開発環境を構築。",
+    "summaryBody": "本記事は、AIコーディングエージェント「Claude Code」をスマートグラス「Even Realities G2」で操作可能にした開発記録です。育児や家事、散歩などでPCを離れる際に、承認待ちでエージェントの作業が止まってしまう課題を解決するため、Mac + iPhone + Tailscaleを組み合わせた通知・操作システムを構築しました。\n\n仕組みとしては、Claude CodeのHTTP Hook機能を利用してローカルのNotification Hubにリクエストを飛ばし、iPhone経由でG2に承認UIを表示させます。G2専用のリング型コントローラーを用いることで、スマホを取り出すことなく「承認・拒否・音声コメント」といった最低限のレスポンスが可能です。著者は、スマートグラスを「長文を読むためのデバイス」ではなく「AIの割り込みをさばくための端末」と定義し、通知設計の重要性や実機特有のUXの制約についても詳しく解説しています。PCに拘束されず、歩きながらでもエージェントとのセッションを継続できる実用的な「AI運用レイヤー」の提案となっています。",
+    "topics": [
+      "Claude Code",
+      "Even Realities G2",
+      "スマートグラス",
+      "AIエージェント",
+      "ウェアラブル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

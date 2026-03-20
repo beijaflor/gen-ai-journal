@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:24:02.943287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の PR Review は「念の為」：念の為になるレビューと任せられるレビューの違いについて",
+    "url": "https://zenn.dev/nrs/articles/bf0e68a1ab75bd",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude CodeのPRレビュー機能が「参考程度」に留まる理由を、ユーザーがレビュー観点の実行を決定論的に制御できない点にあると分析し、自作ツールTAKTとの比較から「任せられるAIレビュー」の条件を考察した記事。",
+    "summaryBody": "AnthropicがリリースしたClaude CodeのPR Review機能について、その有用性を認めつつも、プロジェクト固有のルール（REVIEW.md等）が「必ず実行される保証がない」という課題を指摘しています。筆者は自作のAIオーケストレーションツール「TAKT」での実践を通じ、セキュリティやテスト等の観点ごとに独立したエージェントを配置し、それらを強制的に並行実行させる「1エージェント1観点」の構成が、レビューへの信頼（任せられる感覚）を生むと主張。AIの広範な知識に頼るだけでなく、人間が定義した観点を決定論的に評価プロセスへ組み込めるかどうかが、ツールが「念の為」の補助に留まるか「真の自動化」へ至るかの境界線であると論じています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "コードレビュー",
+      "TAKT",
+      "ソフトウェア品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

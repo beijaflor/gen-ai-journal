@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:18:17.756090+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeやCodexのスキル管理を効率化するnpmツール「faceted-prompting」の紹介",
+    "url": "https://zenn.dev/nrs/articles/88f158aca0505b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "プロンプトを役割・ルール・知識などの部品に分割して管理し、Claude CodeやCodexのスキルとして容易にデプロイ・更新できるOSSツールの解説。",
+    "summaryBody": "プロンプトの肥大化と保守性の低下という課題に対し、ソフトウェア設計の「関心の分離」を適用するツール「faceted-prompting」が公開されました。本ツールは、Persona、Policy、Knowledge、Instruction、Output Contractといった要素を個別のMarkdownファイル（部品）として管理し、YAML形式のComposition設定でこれらを自在に組み合わせる仕組みを提供します。最大の特徴は、作成したプロンプトを通常のSystem/Userプロンプトとして出力できるだけでなく、Claude CodeやCodexの「Skill」として直接インストール・一括更新できる点にあります。これにより、共通の設計ルールを修正するだけで、それを利用する全てのAIスキルへ変更を自動反映させることが可能になり、プロンプトの重複管理から開発者を解放します。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "Prompt Engineering",
+      "LLM",
+      "npm"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

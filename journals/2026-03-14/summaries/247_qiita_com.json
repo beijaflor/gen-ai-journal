@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:58:34.799048+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【deepwiki-open】いいパソコンはもってないけど、ローカルLLMで社内Wikiをつくりたい",
+    "url": "https://qiita.com/melhts/items/6e5bc00f8426194d0978",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS EC2上でOllamaとAmazon Bedrock、そしてOSSのdeepwiki-openを組み合わせ、高価なPCなしで社内リポジトリをWiki化・QA対応させる構築ガイド。",
+    "summaryBody": "### 概要\n高性能なGPU搭載PCを持たない開発者が、AWSのクラウド資源を活用してローカルLLMベースの社内Wikiシステム「deepwiki-open」を構築する手法を解説しています。GitHubのプライベートリポジトリを対象としたセキュアな情報管理と、対話型インターフェースによる知識共有の自動化が目的です。\n\n### 主な技術構成と手順\n1. **実行環境**: EC2 (g4dn.xlarge) 上でDockerコンテナを稼働させ、NVIDIAドライバやOllamaをセットアップ。\n2. **ハイブリッドLLM利用**: 埋め込みモデルにOllama (nomic-embed-text)、文章生成にAmazon Bedrock (Claude 3.5 Sonnet) を活用し、コストと精度のバランスを調整。\n3. **トラブルシューティング**: 構築過程で遭遇した「モデル設定が反映されない問題」の解決策（docker-composeのボリュームマウント修正）や、WebSocket接続、EC2環境特有のエラーといった実践的なハマりポイントを共有しています。\n\n### 結論\ndeepwiki-openを用いることで、リポジトリから自動的にアーキテクチャ図や機能解説を含むWikiが生成され、開発のキャッチアップコストを大幅に削減できる可能性が示されています。",
+    "topics": [
+      "AWS",
+      "LLM",
+      "Ollama",
+      "Amazon Bedrock",
+      "deepwiki-open"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

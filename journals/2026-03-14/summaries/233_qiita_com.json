@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:55:19.877207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gpt-ossの推論を6倍速に。Thinking OFF設定と、Ollamaで効かない理由",
+    "url": "https://qiita.com/ntaka329/items/35f156dbe526121e66f5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "gpt-ossの推論速度を最大6倍高速化する「Thinking OFF」設定の具体的な実装方法と、推論エンジンごとの挙動や精度への影響を検証した技術解説。",
+    "summaryBody": "本記事は、gpt-oss等の推理型LLMにおいて思考プロセス（analysisチャネル）をスキップさせ、推論を劇的に高速化する「Thinking OFF」設定について詳説しています。具体的には、chat_templateを書き換えて空の解析ブロックを事前注入する手法を紹介しており、llama-serverやSGLangでの実装手順を公開しています。一方で、Ollamaでは独自のパーサーの影響でこの手法が効かない「罠」についても言及。ベンチマークでは推論時間が約1/6（12.4秒から2.0秒）に短縮される一方で、タスクの複雑さによっては精度が大幅に低下（-20pt程度）するトレードオフについても定量的データに基づいて分析しています。",
+    "topics": [
+      "LLM",
+      "gpt-oss",
+      "llama.cpp",
+      "Ollama",
+      "推論高速化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

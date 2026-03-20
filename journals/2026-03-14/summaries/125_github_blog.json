@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:46:09.442376+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AIはテキストから実行へ」：GitHub Copilot SDKが切り拓くエージェント実行の新時代",
+    "url": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIを単なる対話相手ではなく、GitHub Copilot SDKを通じてアプリ内部で自律的にタスクを計画・実行する「インフラ」へと転換させるパラダイムシフトの解説。",
+    "summaryBody": "GitHubは、AIとの対話形式（プロンプトとレスポンス）の時代が終わり、アプリケーションが直接AIに実行を委ねる「エージェント実行（Agentic Execution）」の時代が到来したと主張しています。新しく提供されるGitHub Copilot SDKにより、開発者はこれまでIDE内でのみ利用していたCopilotのプランニング・実行エンジンを、自社のアプリケーションやバックグラウンドサービスに直接組み込めるようになります。\n\n記事では、エージェント実行を実装するための3つの主要なパターンが提示されています。1つ目は「マルチステップ作業の委譲」で、固定のスクリプトではなく「意図」を渡すことで、AIが自律的に手順を計画しエラーから回復しながらタスクを完遂します。2つ目は「構造化されたコンテキストの活用」で、Model Context Protocol (MCP) を通じてAIが直接ツールやデータにアクセスできるようにします。3つ目は「IDE外への埋め込み」で、SaaSやイベント駆動型システムなど、あらゆるソフトウェア環境に実行レイヤーとしてのAIを配置します。これにより、AIは単なるヘルパーから、ソフトウェアアーキテクチャの不可欠な構成要素（インフラ）へと進化します。",
+    "topics": [
+      "GitHub Copilot SDK",
+      "Agentic Workflows",
+      "Model Context Protocol (MCP)",
+      "AI Infrastructure",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": "The era of “AI as text” is over. Execution is the new interface."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:24:33.771125+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで自分好みの朝刊が届く仕組みを作った",
+    "url": "https://zenn.dev/aoi_umigishi/articles/936073d8dd16e9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの自動実行機能とmacOSのlaunchdを連携させ、毎朝決まった時間に技術情報を自動で収集・要約・整理する仕組みの構築ガイド。",
+    "summaryBody": "この記事では、Claude Codeのプロンプトモード（-pフラグ）とmacOSのジョブ管理システムであるlaunchdを組み合わせ、エンジニア向けの技術ニュースを毎朝自動配信するシステムの作り方を解説しています。Qiita、Zenn、はてなブックマークなどのRSS/APIからの直接取得に加え、Claude Codeが直接アクセスできないRedditやYouTubeについてはPythonスクリプトを介して取得するハイブリッドな構成を採用しています。並列処理の指定による高速化、過去7日間の履歴に基づく重複記事の排除、macOS特有のファイルアクセス権限（サンドボックス）への対策など、実運用における具体的なノウハウが網羅されています。自動化された情報収集環境を構築することで、情報のチェック漏れを防ぎ、生産性を向上させる実用的なアプローチを提案しています。",
+    "topics": [
+      "Claude Code",
+      "自動化",
+      "Python",
+      "macOS launchd",
+      "情報収集"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Codeで自分好みの朝刊が届く仕組みを作った"
+  }
+}

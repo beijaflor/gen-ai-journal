@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:22:37.271316+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "夜中もOpenClawに働かせ続けよう：AIエージェントによる夜間自動開発運用の手引き",
+    "url": "https://zenn.dev/iototaku/articles/c7f87e5ba76c5f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Silicon Mac上でOpenClawとcron、GitHubのラベル機能を活用し、人間が寝ている間にAIエージェントに開発タスクを自動処理させる運用フローの解説。",
+    "summaryBody": "本記事は、AIコーディングエージェント「OpenClaw」をcronで定期実行し、GitHubのIssue管理と連携させて夜間に開発を自動進行させる具体的な方法を提案しています。開発者は指示書（engineer.md）を作成し、GitHubラベル（ai-ready, ai-wip, ai-completed等）を用いてタスクの状態を管理します。運用において最も重要な点は、AIが生成したコードの品質を担保するために、Docker等を用いたローカルCI/CD環境を整備し、テストが完走する状態を事前に構築することです。これにより、翌朝にはテスト済みのプルリクエストが並んでいる状態を実現でき、開発スループットの向上が期待できます。",
+    "topics": [
+      "OpenClaw",
+      "AIエージェント",
+      "自動化",
+      "GitHub",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    },
+    "originalTitle": "夜中もOpenClawに働かせ続けよう🌜🦞"
+  }
+}

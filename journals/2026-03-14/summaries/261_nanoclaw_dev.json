@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:15:52.456631+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NanoClawがDocker Sandboxesに対応：ワンコマンドでセキュアなAIエージェント実行環境を構築可能に",
+    "url": "https://nanoclaw.dev/blog/nanoclaw-docker-sandboxes/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NanoClawはDocker Sandboxesとの提携により、マイクロVMを活用した高度な隔離環境でAIエージェントを安全かつ簡単に実行できる機能をリリースしました。",
+    "summaryBody": "AIエージェントの実行基盤であるNanoClawが、Docker Sandboxesとの統合を発表しました。これにより、ユーザーはmacOSやWindowsからワンコマンドで、各エージェントを完全に隔離されたマイクロVM環境で実行できるようになります。このアーキテクチャは、従来型のコンテナ隔離を超えたハイパーバイザレベルの境界を提供し、エージェントがホストシステムや他のエージェントのデータにアクセスすることを物理的に遮断します。「AIエージェントを信頼しない設計（Design for Distrust）」という哲学に基づき、プロンプトインジェクションやモデルの予期せぬ挙動によるセキュリティリスクを最小化しています。今後は、エージェント間での制御されたコンテキスト共有や、権限管理、人間による承認フローの統合など、エンタープライズ規模でのエージェント運用を支える機能拡張が予定されています。",
+    "topics": [
+      "NanoClaw",
+      "Docker Sandboxes",
+      "AIエージェント",
+      "セキュリティ",
+      "マイクロVM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Run NanoClaw in Docker Sandboxes with One Command"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:53:24.355405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OneCLI: AIエージェント向けオープンソース・クレデンシャル管理ゲートウェイ",
+    "url": "https://github.com/onecli/onecli",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに生のAPIキーを渡さず、プロキシ経由で動的に認証情報を注入することで、セキュリティを確保しながら外部サービス連携を可能にするツール。",
+    "summaryBody": "OneCLIは、AIエージェントと外部APIの間に介在するオープンソースのセキュアなゲートウェイです。従来、AIエージェントのコードやメモリ内に直接APIキーを保持させることは、キーの漏洩や管理の煩雑化というリスクを伴っていました。OneCLIはこの問題を解決するため、エージェント側には「FAKE_KEY」などのプレースホルダーを使用させ、リクエストがゲートウェイを通過する際にAES-256-GCMで暗号化された実シークレットを自動で注入する仕組みを提供します。Rustで実装された高速なゲートウェイ（MITM対応）と、Next.jsで構築されたダッシュボードにより、エージェントごとのアクセス権限管理やキーのローテーション、ログ監視を一元化できます。Dockerを利用して、外部データベース不要（PGlite内蔵）ですぐにローカル環境で試すことが可能です。",
+    "topics": [
+      "AI Agent",
+      "Secret Management",
+      "Cybersecurity",
+      "Rust",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - onecli/onecli: Open-source credential vault, give your AI agents access to services without exposing keys."
+  }
+}

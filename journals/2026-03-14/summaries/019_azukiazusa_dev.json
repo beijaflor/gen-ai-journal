@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:05:50.305044+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skill Create スキルを使用したスキルの作成と改善",
+    "url": "https://azukiazusa.dev/blog/skill-create-skill-creation-and-improvement/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが提供する「skill-creator」を活用し、Claude Code用スキルの作成から定量的評価、プロンプトの自動最適化までを行うHuman-in-the-loopな開発フローを解説しています。",
+    "summaryBody": "この記事では、Claude Code向けのカスタムスキル（Agent Skills）を効率的に開発・改善するためのツール「skill-creator」の具体的な活用方法を詳説しています。skill-creator自体がAgent Skillのベストプラクティスに基づいて構築されており、内部でanalyzer、comparator、graderといった専門のサブエージェントを使い分ける構造を解説しています。具体的なワークフローとして、既存の『記事レビュー用スキル』を例に、SKILL.mdの自動改善、テストケース（evals.json）の作成、複数エージェントによる並列実行とベンチマーク集計、そしてHTMLレポートを通じた評価結果の確認手順を紹介しています。さらに、スキルの呼び出し精度を左右するdescriptionフィールドを、実際のクエリを用いたテストループによって自動最適化する高度なプロセスについても触れており、AIエージェントの品質管理における実用的な指針を提供しています。",
+    "topics": [
+      "Claude Code",
+      "Agent Skills",
+      "skill-creator",
+      "AIエージェント評価",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

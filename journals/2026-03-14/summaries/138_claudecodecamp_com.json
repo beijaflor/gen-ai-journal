@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:49:47.066445+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「寝ている間に動くエージェント」の品質をどう担保するか：AI時代のTDDと自動検証ワークフロー",
+    "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが生成する大量のコードを人間がレビューしきれない課題に対し、事前に定義した受入条件（AC）に基づきAIが自動検証する「AIネイティブなTDD」を提案する。",
+    "summaryBody": "AIエージェント（Claude CodeやGastown等）の普及により、開発速度は向上したが、人間によるコードレビューが追いつかないという課題が生じている。著者は、AIが自分の書いたコードをテストする「自己満足マシン」の危険性を指摘。解決策として、開発前に人間が「受入条件（AC）」を自然言語で定義し、それを元に別のAIプロセスが検証を行う「AI時代のTDD」を提唱している。\n\n具体的には、オープンソースのツール「opslane/verify」を使い、以下の4ステップで検証を自動化するワークフローを紹介している：\n1. **Pre-flight**: サーバーの状態やファイルの存在を確認する非LLMのチェック。\n2. **Planner**: 仕様書と変更コードを読み込み、検証計画を策定。\n3. **Browser agents**: Playwrightを用いて各ACを並列実行し、スクリーンショットなどの証拠を収集。\n4. **Judge**: 収集した証拠に基づき、最終的な合格・不合格を判定。\n\nこの手法により、開発者は膨大なコードの差分を読む代わりに、失敗した検証結果のみを確認すれば良くなり、AIの自律性を活かしつつ信頼性を確保できる。",
+    "topics": [
+      "AI Agents",
+      "Claude Code",
+      "TDD",
+      "Playwright",
+      "Software Quality"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "I'm Building Agents That Run While I Sleep"
+  }
+}

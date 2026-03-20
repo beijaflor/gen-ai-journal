@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:25:43.607050+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "llmock: テストのための決定論的なモックLLMサーバー",
+    "url": "https://llmock.copilotkit.dev/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI、Claude、GeminiなどのLLM APIを模倣し、決定論的なレスポンスとリアルなHTTP/SSE/WebSocket通信を提供する依存関係ゼロのテスト用モックサーバー。",
+    "summaryBody": "llmockは、AIエージェントやLLMアプリケーションのテストを高速、安価、かつ決定論的に行うためのモックサーバーです。MSWのようなプロセス内インターセプトではなく、実際のポートで動作するHTTPサーバーとして機能するため、Next.jsや複数のワーカープロセスから共通のモックへアクセスできるのが最大の特徴です。OpenAI、Claude、GeminiのSSE（Server-Sent Events）ストリームを忠実に再現し、JSONフィクスチャによる応答定義、ツールコールのシミュレーション、エラーインジェクション（429や503など）、リクエスト内容の検証用ジャーナル機能を備えています。また、OpenAI RealtimeやGemini LiveなどのWebSocket APIにも対応しており、Playwright等のE2Eテスト環境において複雑なAI挙動の自動テストを容易にします。",
+    "topics": [
+      "LLM",
+      "Testing",
+      "OpenAI",
+      "E2E Testing",
+      "Mocking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    },
+    "originalTitle": "llmock — Deterministic mock LLM server for testing"
+  }
+}

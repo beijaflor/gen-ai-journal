@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:18:32.693493+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studio の自律型エージェントでファイルアップロードトリガーを試してみた",
+    "url": "https://qiita.com/Takashi_Masumori/items/1689535e7ae6e5b2ea25",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Copilot Studioの自律型エージェントにおいてSharePointへのファイルアップロードをトリガーにする際の検証を行い、現時点での制約とAI Builderを組み合わせた実用的な代替案を解説しています。",
+    "summaryBody": "Copilot Studioの「ファイルが作成されたとき (プロパティのみ)」トリガーを使用して、アップロードされた見積書PDFから情報を自動抽出する検証記事です。検証の結果、現時点ではエージェントにファイルコンテンツのバイナリを直接渡しても解読できず、また添付ファイルリストのJSON指定も不安定であることが判明しました。筆者はこの課題の解決策として、Power Automateフロー内で先にAI Builderを使用してテキスト抽出を行い、構造化されたJSONテキストをエージェントに渡す方法を提案しています。Power Automate単体動作時との挙動の違い（Apply to eachの自動追加など）についても詳しく考察されています。",
+    "topics": [
+      "Copilot Studio",
+      "Power Automate",
+      "Power Platform",
+      "AI Builder",
+      "自律型エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

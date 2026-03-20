@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:27:36.359123+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHubで見つけた「便利ツール」を解析したらマルウェアだった話",
+    "url": "https://zenn.dev/hiyoko_sauna/articles/74dd12a7cabafa",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub上の正規ツールを装ったリポジトリを解析し、正規のLuaJITをLOLBinとして悪用して難読化スクリプトからシェルコードを実行するマルウェアの手口を詳解した技術記事。",
+    "summaryBody": "GitHubで公開されていたOpen Clawのインストーラーを装う不審なリポジトリ（sdwadsagw/OpenClawInstaller）の解析レポート。本マルウェアは、正規のLuaJIT実行環境（luau.exe）をLOLBin（Living off the Land Binary）として悪用し、VirusTotalで検出されない高度に難読化されたLuaスクリプト（asm.txt）を実行させる。記事では、FFIフックを用いた擬似動的解析とWindows VMでの動的解析を通じて、RWXメモリの確保、PE構造体の定義、ウィンドウの非表示化、ボットIDの生成、C2通信の準備といった攻撃チェーンを特定している。正規ツールをクローンして信頼を装い、短期間で更新を繰り返すGitHubを悪用した配布手法への警戒を呼びかけている。",
+    "topics": [
+      "マルウェア解析",
+      "GitHub",
+      "LuaJIT",
+      "LOLBin",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

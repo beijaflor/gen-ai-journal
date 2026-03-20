@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:13:34.562792+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Claude Codeに向いているプログラミング言語」ベンチマークの方法論的問題について",
+    "url": "https://zenn.dev/kmizu/articles/2026-03-ai-coding-bench-methodology",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "遠藤氏によるClaude Codeの言語別ベンチマークに対し、プロジェクト構築コストの不分離や交絡因子の存在など、方法論的な観点からその妥当性を検証・批判する記事。",
+    "summaryBody": "プログラミング言語の専門家であるkmizu氏が、遠藤氏（@mametter）による「Claude Codeに向いている言語」のベンチマーク結果に対し、科学的・統計的な観点から異議を唱えています。主な指摘として、1. プロジェクト構成ファイル生成（ブートストラップ）のコストが動的型付け言語に有利に働いている点、2. コード行数（トークン数）の差が実装時間に直結しており言語自体の効率性を純粋に測れていない点、3. 統計的な有意差の検証不足、4. LLMが自発的に最適なビルドツールを選択するという前提の非現実性、などを挙げています。筆者は単なる批判に留まらず、標準的なツールチェーンを事前に用意し、セットアップ時間を分離して計測するより厳密な比較用ベンチマーク「another-ai-coding-lang-bench」の構築を進めています。",
+    "topics": [
+      "Claude Code",
+      "ベンチマーク",
+      "LLM",
+      "プログラミング言語",
+      "ソフトウェア工学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:56:03.069680+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる再実装とコピーレフトの浸食：「法的」は「正当」と同じか？",
+    "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIを用いて既存のコピーレフト・ライブラリを再実装し、許諾条件の緩いライセンスへ変更する行為の法的な是非と、オープンソース・コミュニティにおける倫理的・社会的妥当性の乖離を鋭く突く論考。",
+    "summaryBody": "Pythonの文字コード判定ライブラリ『chardet』が、AI（Claude）を用いてゼロから再実装され、ライセンスがLGPLからMITへと変更された事例を巡る論争を考察している。維持管理者のDan Blanchard氏は、AIにAPIとテストのみを入力し、既存コードを直接参照していないため「独立した著作物」であると主張した。これに対し、Redis作者のantirez氏やFlask作者のArmin Ronacher氏らは法的な観点からこの行為を支持している。しかし、著者のHong Minhee氏は「法的に許容されること（Legal）」と「社会的に正当であること（Legitimate）」は別物であると反論する。かつてのGNUプロジェクトがUNIXを再実装した際は「プロプライエタリから自由へ」というコモンズの拡大が目的だったのに対し、今回のAI再実装は「コピーレフトから寛容型ライセンスへ」という、コモンズを保護するフェンスを取り払う方向（浸食）であると指摘。共有の精神は一方向的ではなく互恵的であるべきであり、AIによる再実装が容易になった現代こそ、コードだけでなく仕様やテストにもコピーレフトを適用するなどの新しい規範が必要であると主張している。",
+    "topics": [
+      "Open Source License",
+      "Copyleft",
+      "AI Reimplementation",
+      "Ethics",
+      "Software Commons"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft"
+  }
+}

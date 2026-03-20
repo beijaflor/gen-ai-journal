@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T11:42:35.311256+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexの「スキル」を活用したOSSメンテナンスの加速：OpenAI Agents SDKの事例",
+    "url": "https://developers.openai.com/blog/skills-agents-sdk/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Agents SDKチームが、Codexの「スキル」とGitHub Actionsを組み合わせてPRレビューやリリース準備などの定型業務を自動化し、開発スループットを大幅に向上させた実例の紹介。",
+    "summaryBody": "OpenAIは、自社で開発するAgents SDK（Python/TypeScript）のメンテナンスにCodexの「スキル」機能を導入し、開発効率を劇的に改善しました。この記事では、リポジトリ固有の指示を記述する`AGENTS.md`と、特定のタスク（コード検証、ドキュメント同期、PRドラフト作成など）をカプセル化した「スキル」を組み合わせる手法が詳しく解説されています。特に、決定論的な処理（シェルスクリプト）と文脈判断（AIモデル）を分担させる設計思想や、GitHub Actionsを用いたCIへの統合により、マージ済みPR数が約45%増加したという具体的な成果が示されています。また、リリース時の破壊的変更のチェックや、統合テストの自動実行におけるCodexの活用方法についても触れられており、AIエージェントを実際のソフトウェア開発フローに組み込むための実践的なガイドとなっています。",
+    "topics": [
+      "OpenAI Agents SDK",
+      "Codex",
+      "GitHub Actions",
+      "OSSメンテナンス",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Using skills to accelerate OSS maintenance"
+  }
+}

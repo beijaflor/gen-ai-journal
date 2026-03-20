@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-09T09:04:03.128927+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを9Pファイルシステムとして公開するツール「llm9p」",
+    "url": "https://github.com/NERVsystems/llm9p",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "llm9pは、大規模言語モデルを9Pファイルシステムとしてマウントし、標準的なファイル操作を通じてAIとの対話を可能にする画期的なインターフェースです。",
+    "summaryBody": "llm9pは、Plan 9 OS由来の軽量プロトコル「9P」を用いて、LLM（現在はAnthropic APIおよびClaude Code CLIに対応）をファイルシステムとして操作可能にするツールです。ユーザーは特別なSDKを導入することなく、`echo \"質問\" > /mnt/llm/ask` でプロンプトを送信し、`cat /mnt/llm/ask` で回答を読み取ることができます。APIキーを用いた直接アクセスに加え、Claude Maxサブスクリプションを利用したCLI経由のバックエンドもサポートしています。会話履歴の管理やトークン数の確認、ストリーミング出力などもファイル単位で定義されており、Unix哲学に基づいたシンプルかつ強力なパイプライン処理や、AIエージェントの構築に適しています。",
+    "topics": [
+      "9P-Protocol",
+      "LLM",
+      "Claude",
+      "Unix-Philosophy",
+      "Go-Language"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "llm9p: LLM exposed as a 9P filesystem"
+  }
+}

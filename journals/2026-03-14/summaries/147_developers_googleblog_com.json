@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-12T17:17:57.531362+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini CLIに「プランモード (Plan mode)」が登場 ― 安全な解析と対話的な設計が可能に",
+    "url": "https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemini CLIにコードを直接書き換える前に分析・設計を行い、ユーザーへの質問を通じて意図を反映させる読み取り専用の「プランモード」が導入されました。",
+    "summaryBody": "Googleは、AIエージェントによる安全な開発支援を実現するため、Gemini CLIに「プランモード」を追加しました。このモードは読み取り専用の制限下で動作し、コードベースの探索、依存関係の分析、実装案の策定をファイル書き換えのリスクなしに行います。特徴として、ユーザーに不明点を尋ねる「ask_user」ツールや、GitHub、Postgresなどの外部ソースから情報を取得するMCPツールのサポートが挙げられます。また、Gemini 3.1 Proモデルを活用した高度な推論により、複雑なアーキテクチャ設計も可能です。さらに、複数の開発工程を統括する「Conductor」拡張機能との連携により、安全性と柔軟性を両立したコンテキスト駆動型開発（CDD）を強力にサポートします。",
+    "topics": [
+      "Gemini CLI",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "Google Cloud",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Plan mode is now available in Gemini CLI"
+  }
+}

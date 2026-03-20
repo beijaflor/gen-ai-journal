@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-11T12:07:16.870961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを強くする『合成データ』作成のニッチなTips集",
+    "url": "https://tech.layerx.co.jp/entry/2026/03/10/150000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMやAIエージェントの評価・学習に不可欠な高品質な合成データを、型安全な設計や逆方向生成、マルチエージェント構成などの高度な技術を用いて効率的に作成するための実践的なTips集。",
+    "summaryBody": "AIエージェント開発における評価データ不足を解消するための「合成データ（Synthetic Data）」作成に関する高度な技術解説記事です。主なトピックとして、PydanticとOpenAIのStructured Outputsを用いた型安全なデータ生成、正解ラベルから入力を生成する「逆方向生成」、異常検知モデル向けの分類体系（Taxonomy）駆動型生成、そしてPlanner/Generator/Validatorの三層エージェント構成による品質管理が挙げられます。また、単発のデータ生成に留まらず、メタAgent Skillを用いて複数の関連ドキュメント（就業規則と旅費規程など）の間で用語やフォーマットの整合性を保ちながら一括合成する、より実戦的なオーケストレーション手法についても詳述されています。データの忠実性・多様性・有用性を評価するためのLLM-as-a-JudgeやTSTR（Train-on-Synthetic, Test-on-Real）といった評価指標の運用方法も網羅されており、エージェントの性能を限界まで引き出すためのエンジニアリング指針を提供しています。",
+    "topics": [
+      "合成データ",
+      "AIエージェント",
+      "LLM",
+      "Pydantic",
+      "異常検知"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 35,
+      "overall": 97
+    },
+    "originalTitle": null
+  }
+}

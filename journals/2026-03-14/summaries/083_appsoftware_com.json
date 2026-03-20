@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:55:49.947623+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS Code Agent Kanban：AIエージェントとの対話を永続化するタスク管理拡張機能",
+    "url": "https://www.appsoftware.com/blog/introducing-vs-code-agent-kanban-task-management-for-the-ai-assisted-developer",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIコーディングエージェント利用時の課題である「コンテキストの消失」を防ぐため、Markdownベースでタスク管理と実装フローを統合するVS Code拡張機能が登場しました。",
+    "summaryBody": "AIエージェント（GitHub Copilot等）との開発において、チャットをクリアすると過去の設計判断やコンテキストが失われる「Context Rot（文脈の腐敗）」が大きな課題となっています。「VS Code Agent Kanban」は、この問題を解決するために開発されたVS Code拡張機能です。すべてのタスクをリポジトリ内のMarkdownファイル（.md）として保存し、YAMLフロントマターで状態を管理する「GitOps」的なアプローチを採用しています。\n\n主な機能として、VS Code内のカンバンボード表示に加え、GitHub Copilot Chat経由での`@kanban`コマンドによる操作が可能です。「plan（計画）」「todo（TODO作成）」「implement（実装）」という構造化されたワークフローを提供し、エージェントとの対話ログをMarkdownに記録し続けることで、後から振り返り可能な「ソース・オブ・トゥルース（信頼できる情報源）」を構築します。独自のLLMエンジンを抱え込まず、既存のCopilotの機能を最大限に活用する設計思想が特徴です。",
+    "topics": [
+      "VS Code Extension",
+      "AI Coding Agent",
+      "GitHub Copilot",
+      "Task Management",
+      "GitOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Introducing VS Code Agent Kanban: Task Management for the AI-Assisted Developer"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-10T23:58:10.848337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Claude Code に向いているプログラミング言語」記事を見て、LLM が書きやすい言語 Almide を土日で作ってみた",
+    "url": "https://zenn.dev/o6lvl4/articles/9b572ae7c9ae3d",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LLMがコード生成時に迷いやすい曖昧さを排除し、コンパイラが具体的な修正ヒントを提示することで自己修正を促す、LLM特化型プログラミング言語「Almide」の開発記録。",
+    "summaryBody": "Claude Codeを用いた言語別ベンチマーク結果に触発され、LLM（大規模言語モデル）がより正確かつ効率的にコードを生成できる言語「Almide」が開発されました。この言語は、nullやエラー処理の表現を一つに絞り、副作用を`effect fn`で明示するなど、LLMが知識の揺らぎに惑わされない設計を採用しています。Rust製のコンパイラは、LLMが他言語の癖で書いたコード（例：`!`や`return`）を検知し、Almideでの正しい書き方を「Hint」として提示する機能を備えています。現段階では学習データ不足により生成速度は既存言語に劣るものの、高い成功率を記録しており、WASM対応のPlaygroundも公開されています。",
+    "topics": [
+      "Almide",
+      "LLM",
+      "Claude Code",
+      "Rust",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "「Claude Code に向いているプログラミング言語」記事を見て、LLM が書きやすい言語 Almide を土日で作ってみた"
+  }
+}

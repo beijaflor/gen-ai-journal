@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-14T02:17:23.041616+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPゲートウェイの実装 Finatextグループ AI Connect Hub の技術構成",
+    "url": "https://zenn.dev/finatext/articles/mcp-gateway-nowcast",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Finatextグループが開発した、エンタープライズ環境でのMCP（Model Context Protocol）運用の課題を解決する統制基盤「AI Connect Hub」の技術アーキテクチャを詳説。",
+    "summaryBody": "Finatextグループが、エンタープライズでのAIエージェント活用を支えるMCPゲートウェイ「AI Connect Hub」の技術実装を公開しました。Amazon Bedrock AgentCoreをベースにしつつ、標準機能の制約（認可の柔軟性不足、認証プロバイダー数の上限、ログコストなど）を打破するため、Lambda InterceptorとAurora + KMSを組み合わせた独自アーキテクチャを採用しています。主な特徴は、1.ユーザー認証・認可・外部サービス認証の3層構造、2.Aurora ETLを用いたコスト効率の高い監査ログ基盤、3.ワークフローに応じたTool Discoveryの最適化です。MCPを単なる接続プロトコルから、エンタープライズで『運用可能な』仕組みへと昇華させるための実践的な知見が共有されています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Amazon Bedrock AgentCore",
+      "AWS",
+      "AIエージェント",
+      "認証・認可"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

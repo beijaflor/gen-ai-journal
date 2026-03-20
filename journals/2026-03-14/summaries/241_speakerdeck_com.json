@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-13T04:57:22.237158+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のコード品質がばらつくので AI に品質保証させる仕組みを作った話",
+    "url": "https://speakerdeck.com/nrslib/a-story-about-building-a-mechanism-to-have-ai-ensure-quality-because-the-code-quality-from-claude-code-was-inconsistent",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code等のAIエージェントの出力品質を安定させるため、自作のオーケストレーションツールとプロンプト手法を用いて自動品質保証ループを構築した事例。",
+    "summaryBody": "Claude CodeなどのAIコーディングエージェントにおいて、生成されるコードの品質にばらつきが生じる課題に対し、AI自身に品質保証（レビューと修正）を担わせる仕組みを解説した資料です。具体的には、AIエージェントのオーケストレーションを行う自作ツール「TAKT」を活用し、生成したコードに対して自動でレビューフィードバックを回すサイクルを構築しています。また、精度の高い制御のために「Faceted-Prompting」手法を組み合わせています。これにより、人間が手動で行っていた品質チェックの多くを自動化し、一貫したコード品質を維持するための実践的なアプローチを提示しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "TAKT",
+      "コード品質",
+      "自動レビュー"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "A story about building a mechanism to have AI ensure quality, because the code quality from Claude Code was inconsistent"
+  }
+}
