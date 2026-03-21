@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:31:19.189719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercelが提唱する「埋め込み(Embeddings)を使わない」ナレッジエージェントの構築手法",
+    "url": "https://vercel.com/blog/build-knowledge-agents-without-embeddings",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ベクトル検索の代わりにVercel Sandbox上のファイルシステムとbashコマンドをLLMに操作させることで、低コストかつデバッグ容易な高精度エージェントを構築する新手法とテンプレートが公開されました。",
+    "summaryBody": "Vercelは、従来のRAG（検索拡張生成）におけるベクトルデータベースや埋め込みモデルへの依存を解消する、新しいナレッジエージェントの構築アプローチを発表しました。\n\n主なポイントは以下の通りです：\n1. **ファイルシステムベースの検索**: LLMに`grep`や`find`、`cat`などの標準的なbashコマンドを実行させることで、隔離された「Vercel Sandbox」内で直接ファイルを検索・参照させます。これにより、ベクトル検索特有の「なぜこの回答になったか分からない」というブラックボックス問題を解消し、デバッグを劇的に容易にします。\n2. **コストと精度の最適化**: 営業電話の要約エージェントの事例では、コストを1件あたり1ドルから0.25ドルへと75%削減しつつ、品質向上に成功しました。また、質問の複雑さに応じてモデルを自動で切り替えるスマートルーティング機能も備えています。\n3. **Chat SDKによるマルチ展開**: 同時発表された「Chat SDK」を用いることで、一つのナレッジベースからGitHub、Discord、Slackなど複数のプラットフォームへ一括してエージェントを展開可能です。\n\nLLMがコード学習を通じて既に習得している「ファイル操作能力」を最大限に活用するこの手法は、複雑なベクトルパイプラインの構築に悩む開発者にとって強力な代替案となります。",
+    "topics": [
+      "Vercel",
+      "LLM",
+      "RAG",
+      "AI SDK",
+      "Chat SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Build knowledge agents without embeddings"
+  }
+}

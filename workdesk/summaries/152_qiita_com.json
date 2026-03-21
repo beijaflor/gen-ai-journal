@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:18:02.363463+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントに「rm -rf」を実行させるまでの手法から対策法を考える",
+    "url": "https://qiita.com/miruky/items/0aa2c4a7ec05fd1158ba",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントが外部命令によって破壊的なコマンドを実行する「プロンプトインジェクション」の攻撃手法を分析し、サンドボックス化やツール制限による多層防御策を提案しています。",
+    "summaryBody": "本記事は、Claude CodeやCursor、Gemini CLIといったシェル実行権限を持つAIコーディングエージェントを対象としたセキュリティリスクと対策を詳説しています。主な攻撃手法として、ルールファイルに不可視文字を埋め込む「ルールファイルバックドア」、MCP（Model Context Protocol）サーバーのツール説明文を改ざんする「MCPツールポイズニング」、ファイル内のコメントから命令を注入する「間接プロンプトインジェクション」の3点を挙げています。これらに対し、サンドボックス（Docker等）の強制有効化、実行可能コマンドのホワイトリスト化、自動承認（YOLOモード）の無効化、およびカスタムスクリプトによるツール実行前検証（フック機能）といった、利便性と安全性を両立させるための具体的な多層防御アプローチを解説しています。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティ",
+      "プロンプトインジェクション",
+      "Claude Code",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

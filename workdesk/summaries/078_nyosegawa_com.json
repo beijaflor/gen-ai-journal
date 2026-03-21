@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:35:05.144660+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coding Agent時代の開発ワークフローについてのまとめ",
+    "url": "https://nyosegawa.com/posts/coding-agent-workflow-2026/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが主体となってコードを書く「Agentic Engineering」時代における、4つの主要ワークフロー、品質担保テクニック、およびそれらを支える標準化インフラを体系的にまとめたガイド。",
+    "summaryBody": "この記事は、2026年時点でのCoding Agent（AIエージェント）を活用した開発手法「Agentic Engineering」を体系化したものです。主な内容は、プロジェクトの進め方、コーディングテクニック、インフラ基盤の3点に集約されます。ワークフロー面では、仕様書を唯一のソースとするSDD（Spec-Driven Development）や、RPI（Research-Plan-Implement）などの4モデルを比較。技術面では、コンテキストの劣化を防ぐContext Engineering、テストをAIへの指示書とするAgentic TDD、複数のエージェントを並列稼働させるBest-of-N戦略を解説しています。また、AGENTS.mdやAgent Skillsといった業界標準の仕様、HooksやLinterを用いた決定論的な制御（Harness Engineering）についても言及。最後に、筆者が実践する「アイデアドリブン開発」として、LinearとSlackを連携させ、人間の認知負荷を最小化しながら自律的に開発を進める高度な自動化例が紹介されています。",
+    "topics": [
+      "Agentic Engineering",
+      "Claude Code",
+      "Spec-Driven Development",
+      "TDD",
+      "開発ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 94
+    },
+    "originalTitle": "Coding Agent時代の開発ワークフローについてのまとめ - 逆瀬川ちゃんのブログ"
+  }
+}

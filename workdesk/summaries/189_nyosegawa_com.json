@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:10:51.227341+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coding Agent時代のドキュメント管理：AIと共生するための戦略",
+    "url": "https://nyosegawa.com/posts/docs-in-agent-era/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Coding Agentの能力を最大限引き出すため、ドキュメントを検証可能・不変なものに整理し、自動化されたハーネスで鮮度を維持する運用手法を提案している。",
+    "summaryBody": "AIエージェント（Coding Agent）が開発の主軸となる時代において、従来の「腐りやすい」自然言語ドキュメントの在り方を再定義する考察記事です。著者はドキュメントを「導出可能」「検証可能」「不変の記録（ADR）」「還元不能な知識」の4つに分類し、コードやテストに置き換えられない本質的な情報のみを管理対象とすることを推奨しています。具体的な実装として、エージェントのセッションごとに注入される「作業記憶（CLAUDE.md）」と、必要に応じて参照される「長期記憶（docs/）」の二層構造を提案。さらに、ドキュメントの鮮度を機械的にチェックする`check-doc-freshness.sh`や、エージェントの行動改善への寄与度を定量化する`docs-auditor`といったツールを通じ、人間とAIの両方にとって最適なドキュメント環境を構築する実践的なアプローチが紹介されています。",
+    "topics": [
+      "Coding Agent",
+      "Claude Code",
+      "Documentation",
+      "ADR",
+      "AI Workflow"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Coding Agent時代のドキュメントについて考えていること"
+  }
+}

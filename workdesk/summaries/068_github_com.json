@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:37:10.948161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Contextual Commits: Gitコミットに「なぜ（WHY）」を記録するための新しいオープン標準",
+    "url": "https://github.com/berserkdisruptors/contextual-commits",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Gitのコミットメッセージに、変更内容だけでなく、意思決定の背景や却下した代替案などの「理由」を構造化して記録し、AIエージェントや開発者の文脈理解を助ける新しい規約。",
+    "summaryBody": "Contextual Commitsは、従来のConventional Commitsを拡張し、Gitのコミット履歴に「なぜその変更が行われたのか」という意思決定の軌跡を埋め込むための標準規格です。AIコーディングエージェントとのセッションが終了すると、なぜそのアプローチが選ばれ、何が試され、何が却下されたかという重要な文脈が失われてしまうという課題を解決します。この規格では、コミットの本文に `intent` (意図)、`decision` (決定)、`rejected` (却下案)、`constraint` (制約)、`learned` (知見) という5つの型付きアクションラインを使用します。これにより、将来のAIエージェントや人間が `git log` を通じて過去の文脈を正確に把握でき、同じ失敗の繰り返しを防ぐことが可能になります。既存のツールやワークフローを壊すことなく、AI時代の開発における「文脈の蓄積」をGitリポジトリ内で完結させる実用的なアプローチです。",
+    "topics": [
+      "Git",
+      "AI Agents",
+      "Conventional Commits",
+      "Software Engineering",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - berserkdisruptors/contextual-commits: An open standard for capturing the WHY in git history"
+  }
+}

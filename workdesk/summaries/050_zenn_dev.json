@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:40:41.789165+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのReact習熟度を測る",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Webエンジニアのuhyo氏が、Claude Codeの各モデルに対し独自のReact実装ベンチマークを実施し、最新APIの活用能力やアクセシビリティにおける課題を浮き彫りにした。",
+    "summaryBody": "この記事は、TypeScript/Reactのエキスパートであるuhyo氏が、Claude Code（Sonnet, Opus, Haiku）のReact実装における「習熟度」を独自のベンチマークで測定した記録です。6つのテストケースを用い、状態設計、Effectの衛生面、TypeScriptの品質、アクセシビリティなど複数の観点から採点を行っています。\n\n主な結果として、SonnetとOpusは拮抗した実力を持ち、基本的なReactの作法やTypeScriptの型定義では高いスコアを記録しました。一方で、React 19以降の最新API（Suspense, useSyncExternalStore, useEffectEventなど）の活用や、アクセシビリティ（ARIAロールや適切なHTMLセマンティクス）の実装には全モデル共通で大きな課題があることが判明しました。LLMが「動くコード」を書く段階を超え、真にベストプラクティスに則ったコードを書くための現在地を定量的に示す内容となっています。",
+    "topics": [
+      "React",
+      "Claude Code",
+      "LLM",
+      "ベンチマーク",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

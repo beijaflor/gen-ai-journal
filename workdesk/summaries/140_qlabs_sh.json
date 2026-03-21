@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:21:19.922456+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NanoGPT Slowrun：無限の計算資源による10倍のデータ効率化の達成",
+    "url": "https://qlabs.sh/10x",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "アンサンブル学習、連鎖的蒸留、ループ構造などの手法を組み合わせ、従来のChinchilla則を大幅に上回る10倍のデータ効率を達成したNanoGPTの最新研究成果。",
+    "summaryBody": "NanoGPT Slowrunプロジェクトは、わずか数週間で10倍のデータ効率を達成したと報告しています。1億（100M）トークンで訓練された合計18Bパラメータのアンサンブルモデルが、標準的なLMベースラインにおける10億（1B）トークン分の性能に匹敵します。この成果は、将来的な「データ不足による知能のボトルネック」を、計算量の投入（Infinite Compute）によって解決する道筋を示しています。\n\n主要な技術的アプローチは以下の通りです：\n1. **アンサンブル（Ensemble）**: 複数のモデルを独立して訓練し推論時に統合。個々のモデルが最適点を超えて過学習するほどアンサンブル全体の損失が下がるという特異な動態を利用。\n2. **連鎖的蒸留（Chain Distillation）**: 前のモデルを教師として順次蒸留を行う手法。メモリ消費を一定に保ちながら、アンサンブルの性能をさらに底上げします。\n3. **強力な正規化**: 過剰パラメータ化された状態において、標準的な16倍ものWeight Decayを適用し、汎化性能を最大化。\n4. **ループ構造（Looping）**: Transformerの中間レイヤーを反復実行することで、1トークンあたりの計算密度を高め、表現を洗練させます。\n5. **アーキテクチャ最適化**: Exclusive Self Attention (XSA)やU-Net的なスキップ接続、SwiGLUの採用など、データ効率に特化した構造変更を積み重ねています。\n\n同チームは1年以内に「100倍のデータ効率」達成を目標としています。",
+    "topics": [
+      "NanoGPT",
+      "Scaling Laws",
+      "Knowledge Distillation",
+      "Ensemble Learning",
+      "Data Efficiency"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 80,
+      "overall": 95
+    },
+    "originalTitle": "10x Data Efficiency - NanoGPT Slowrun - Q"
+  }
+}

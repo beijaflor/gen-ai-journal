@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:44:02.329774+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Goで作るセキュリティ分析LLMエージェント",
+    "url": "https://zenn.dev/mizutani/books/sec-agent-book",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Go言語を用い、既存フレームワークに頼らずLLM APIを直接操作してセキュリティアラート分析を自動化するエージェントを構築する実践的な解説書。",
+    "summaryBody": "本書は、セキュリティエンジニアのMasayoshi Mizutani氏によって公開された、Go言語によるLLMエージェントのフルスクラッチ実装ガイドです。LangChainなどの抽象化フレームワークを使用せず、LLM APIを直接利用することで、構造化データの抽出やFunction Calling、BigQuery連携、脅威インテリジェンスの活用などを詳細に解説しています。さらに、Plan & ExecuteパターンやMCP（Model Context Protocol）によるツール拡張、コンテキスト圧縮、エージェントの記憶システム、テスト手法まで、実運用におけるセキュリティ分析の自動化に向けた高度なトピックが網羅されています。",
+    "topics": [
+      "Go",
+      "LLM Agent",
+      "Security",
+      "Function Calling",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 100,
+      "overall": 98
+    },
+    "originalTitle": null
+  }
+}

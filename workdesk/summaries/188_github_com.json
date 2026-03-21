@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:11:01.971628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "specre - AIフレンドリーな開発のための、生きている小さな仕様カード",
+    "url": "https://github.com/yoshiakist/specre/blob/main/README.ja.md",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "1ファイル1振る舞いのMarkdown形式で仕様を記述し、ULIDを用いてソースコードと仕様の双方向トレーサビリティを実現する、AIとの協調開発に特化した軽量ツールキット。",
+    "summaryBody": "specre（スペクレ）は、仕様駆動開発（SDD）を現代的、特にAIエージェントとの協調開発に適した形にアップデートするためのツールキットです。従来の巨大で保守困難な仕様書の代わりに、1つの振る舞いを1つのMarkdownファイル（specreカード）として定義します。各カードはULIDによる一意識別子と、draft/stable/deprecatedなどのライフサイクルステータスを持ち、LLMのコンテキストウィンドウを浪費しないサイズに保たれます。ソースコード内にマーカーを記述することで仕様と実装の双方向参照が可能になり、CLIツールによってインデックス作成や検索、整合性チェックを高速に行えます。特定のIDEやAIモデルに依存せず、既存のTDDやBDDプロセスとも共存できる柔軟な設計が特徴です。",
+    "topics": [
+      "仕様駆動開発 (SDD)",
+      "ドキュメンテーション",
+      "AIフレンドリー",
+      "トレーサビリティ",
+      "ULID"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "specre/README.ja.md at main · yoshiakist/specre"
+  }
+}

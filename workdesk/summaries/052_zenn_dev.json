@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:40:18.215242+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coding Agent に loop して欲しいのは prdじゃない skill だ",
+    "url": "https://zenn.dev/takumiyoshikawa/articles/6930a0e58bc196",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "実行計画（PRD）の粗さを克服するため、再現性のある「Skill」をベースにコーディングエージェントを自律ループ・管理させるOSS「skill-loop」の紹介。",
+    "summaryBody": "既存のコーディングエージェントのループ（Ralph Loop等）が抱える「実行計画（PRD）が抽象的すぎてリポジトリ固有の事情に対応できない」という課題を解決するためのOSS『skill-loop』についての解説記事です。本ツールは、モデル非依存の「Skill」を単位としてワークフローを構成し、YAMLファイルでルーター、使用モデル、分岐条件を定義します。tmuxを用いたバックグラウンド実行や、CLI上のダッシュボードによる進捗監視、Human-in-the-loop（人的介入）、さらにはcronによる定期実行までサポートしており、ベンダーロックインを避けながら高度な開発自動化を実現することを目指しています。",
+    "topics": [
+      "Coding Agent",
+      "skill-loop",
+      "LLM",
+      "OSS",
+      "Workflow"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

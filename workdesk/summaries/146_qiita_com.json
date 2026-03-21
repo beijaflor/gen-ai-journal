@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:20:07.976556+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「OpenAI APIのトークン消費量をざっくり計算して」と頼まれて調べたら絶望した話",
+    "url": "https://qiita.com/GeneLab_999/items/04ff280edc3178b60104",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "日本語におけるOpenAI APIトークン計算の不確実性と、BPEの仕組み、最新のo200k_baseエンコーディングによる改善、およびtiktokenを用いた正確な見積もり手法を解説。",
+    "summaryBody": "OpenAI APIのコスト見積もりにおいて、日本語のトークン数を「文字数」で単純計算することの危険性と、その背景にある技術的要因を詳説しています。主な内容は以下の3点です。\n\n1. **BPE（Byte Pair Encoding）の構造的課題**: トークナイザーがバイト列の出現頻度に基づき語彙を構成するため、学習データが豊富な英語に比べ、日本語はトークン効率が著しく低下し（最大4倍程度の差）、文字単位でも効率がバラバラになる現状を分析。\n2. **エンコーディングの進化**: GPT-4時代の`cl100k_base`から、GPT-4oで採用された`o200k_base`への変遷により、日本語のトークン効率が改善されている実態を具体的なコード検証で提示。\n3. **実践的なコスト見積もり**: Pythonライブラリ`tiktoken`を使用し、システムプロンプトや会話履歴を考慮した運用ベースのコスト試算スクリプトを公開。\n\n「1文字1トークン」という安易な近似を避け、ビジネス運用に耐えうる実測ベースのアプローチを推奨しています。",
+    "topics": [
+      "OpenAI API",
+      "tiktoken",
+      "トークナイザー",
+      "Python",
+      "コスト見積もり"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

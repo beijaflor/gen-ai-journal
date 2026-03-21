@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:46:03.261726+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Connection Allowlists: ウェブサイトのデータ漏洩を防ぐ新しい接続制御仕様の提案",
+    "url": "https://github.com/WICG/connection-allowlists",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Content Security Policy (CSP) の複雑さを解消し、ブラウザからのあらゆるネットワーク接続をシンプルかつ包括的に制御するための新しいHTTPヘッダー仕様の提案です。",
+    "summaryBody": "WICG（Web Incubator Community Group）で公開されたこの提案は、ページが開始するすべてのネットワークリクエストと接続を制御するための新しい仕組み「Connection-Allowlist」を定義しています。従来のCSPは、リソースの種類ごとに細かく設定が必要で構文も複雑でしたが、本提案はURLPattern構文を活用したシンプルなリスト形式を採用しています。Fetch、XMLHttpRequestだけでなく、WebRTC、Web Transport、DNSプリフェッチ、FedCMなど、これまで制御が困難だった多岐にわたる接続経路を一括で制限可能です。これにより、悪意のあるスクリプトによるデータ流出（Exfiltration）を、接続が確立される前の段階でより確実に阻止することを目指しています。既存のCSPとも併用可能であり、多層的なセキュリティ対策として期待されています。",
+    "topics": [
+      "WICG",
+      "Cybersecurity",
+      "Content Security Policy",
+      "Web Platform",
+      "URLPattern"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Connection Allowlists"
+  }
+}

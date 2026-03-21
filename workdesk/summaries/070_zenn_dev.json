@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:36:47.235368+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeCodeでSimulinkを操れるか：MATLAB関数を介した自動生成とPIDチューニングの検証",
+    "url": "https://zenn.dev/spargel/articles/20260313_simulink_claudedcode",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ClaudeCodeがMATLABのAPIを介してSimulinkモデルを自律的に構築し、シミュレーション結果に基づいたPIDパラメータの自動調整まで実行できることを実証した記事です。",
+    "summaryBody": "本記事は、テキストベースのAIエージェントであるClaudeCodeを用いて、ビジュアルプログラミング環境であるSimulinkをどの程度操作できるかを検証した記録です。筆者は、Simulinkのモデル構築がMATLABコマンド（new_system, add_block等）で行える点に着目し、ClaudeCodeに指示を出してモデル作成を試みました。\n\n検証では、単純な正弦波出力モデルから始まり、2次遅れ系のフィードバック制御系の構築、そして「いい感じの応答にして」という抽象的な指示によるPIDパラメータの自動調整までを実施。ClaudeCodeは自らシミュレーションを実行し、オーバーシュートや整定時間を解析しながら、目標の応答が得られるまで反復的にゲインを調整するプロセスを見せました。配線の乱れを修正させるなどの物理的なレイアウト操作には課題が残るものの、制御エンジニアのワークフローを大幅に自動化できる可能性が示されています。",
+    "topics": [
+      "ClaudeCode",
+      "Simulink",
+      "MATLAB",
+      "制御工学",
+      "PID制御"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "ClaudeCodeでSimulinkを操れるか"
+  }
+}

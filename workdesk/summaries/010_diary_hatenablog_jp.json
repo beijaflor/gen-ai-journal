@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:48:37.284717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コミットメッセージをClaudeに書かせるgit aicommit",
+    "url": "https://diary.hatenablog.jp/entry/2025/11/23/233725",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gitのエイリアス機能を利用して、Claude CLI経由で差分からコミットメッセージを自動生成し、エディタで確認・修正できるワークフローの紹介。",
+    "summaryBody": "この記事では、Gitの`.gitconfig`に特定のエイリアスを追加することで、Claudeにコミットメッセージを自動作成させる方法を解説しています。具体的には、`git diff --cached`の内容をClaude CLIに渡し、英語の命令形で簡潔な1行のメッセージを生成させます。生成されたメッセージは自動的に`git commit -e`に渡されるため、人間がコミット確定前に内容を自由に編集できる点が特徴です。非常にシンプルながら、日々の開発における「コミットメッセージを考える」という認知負荷を軽減する実用的なハックとなっています。",
+    "topics": [
+      "Git",
+      "Claude",
+      "LLM",
+      "CLI",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 65,
+      "annexPotential": 90,
+      "overall": 78
+    },
+    "originalTitle": null
+  }
+}

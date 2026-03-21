@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:46:20.431656+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Andromeda: Rust製・Novaエンジン搭載の次世代JavaScript/TypeScriptランタイム",
+    "url": "https://tryandromeda.dev/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rustで構築された「Andromeda」は、独自のNovaエンジン、ハードウェア加速Canvas、組み込みSQLiteを備えた、高速・軽量な新しいJS/TSランタイムです。",
+    "summaryBody": "Andromedaは、Rust言語を使用してゼロから構築されたモダンなJavaScriptおよびTypeScriptランタイムです。最大の特徴は、一般的なV8エンジンではなく「Novaエンジン」を採用している点にあり、Node.jsやDenoを凌ぐメモリ効率（アイドル時約41MB）と、10ms未満の超高速な起動時間を実現しています。\n\n主な技術的ハイライトは以下の通りです：\n- **GPU加速グラフィックス**: WGPUバックエンドを用いた2D Canvas APIをネイティブサポートし、サーバーサイドでの高度な画像処理や可視化を可能にします。\n- **組み込みツールチェーン**: フォーマッタ、リンター、バンドラ、LSP、さらにはシングルバイナリへのコンパイル機能を標準装備しており、設定不要（Zero-config）で開発を開始できます。\n- **標準準拠とセキュリティ**: WinterTC準拠のWeb API（Fetch, Crypto等）を実装し、Rustのメモリ安全性とパーミッションベースのアクセス制御により、セキュアな実行環境を提供します。\n- **データ管理**: SQLite Nativeが統合されており、外部依存なしで高度なデータ操作が可能です。\n\nエッジコンピューティング、マイクロサービス、そして高速な自動化スクリプトの開発において、既存のランタイムに代わる強力な選択肢となることを目指しています。",
+    "topics": [
+      "JavaScript",
+      "TypeScript",
+      "Rust",
+      "Runtime",
+      "Nova Engine"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Andromeda: A modern, fast, and secure JavaScript & TypeScript runtime"
+  }
+}

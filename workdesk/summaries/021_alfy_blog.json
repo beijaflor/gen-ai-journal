@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:46:33.759389+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "URLはアプリケーションの状態である：フロントエンドにおけるURL設計の価値と実践",
+    "url": "https://alfy.blog/2025/10/31/your-url-is-your-state.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "URLを単なる「住所」ではなく、共有可能で堅牢な「状態管理コンテナ」として活用するための設計思想と実装パターンを詳しく解説しています。",
+    "summaryBody": "この記事は、フロントエンドエンジニアがモダンな状態管理ライブラリに頼りすぎるあまり、Webの最も古くエレガントな機能である「URL」を軽視している現状に警鐘を鳴らしています。筆者はPrismJSのダウンロードページがURLだけで設定を完全に復元できる例を引き合いに出し、URLをUIの一部かつ状態の保存場所として扱うべきだと主張します。\n\n主な内容は以下の通りです：\n1. **URLの構成要素と役割**: パス（階層構造）、クエリパラメータ（フィルタ・オプション）、アンカー（ページ内位置・SPAルーティング）の適切な使い分けを解説。\n2. **URLに含めるべき状態の選定**: 検索クエリ、ページネーション、表示モードなどはURLに適していますが、機密情報や一時的なUI状態（モーダルの開閉など）は避けるべきだという指針（ヒューリスティック）を提示。\n3. **実装手法**: `URLSearchParams` APIを用いたプレーンなJavaScriptでの操作や、React（React Router/Next.js）での実装例を紹介。特に、履歴を汚さないための `replaceState` と `pushState` の使い分けが重要です。\n4. **ベストプラクティス**: デフォルト値の省略、更新のデバウンス、URLを「アプリとユーザーの契約」として捉える設計思想の重要性を強調しています。\n\n最終的に、URLはユーザーの意図を捉え、文脈を保存し、共有を可能にする唯一無二のツールであり、Webアプリのレジリエンス（回復力）を高める鍵であると結論付けています。",
+    "topics": [
+      "Frontend Development",
+      "URL Design",
+      "State Management",
+      "Web Architecture",
+      "UX/UI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Your URL Is Your State"
+  }
+}

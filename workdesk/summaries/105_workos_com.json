@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:29:25.170829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトインジェクション攻撃：その仕組みと防御策の完全ガイド",
+    "url": "https://workos.com/blog/prompt-injection-attacks",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMアプリケーションの脆弱性第1位であるプロンプトインジェクションの仕組みを解明し、間接型・エージェント型などの最新手法と、実用的な多層防御戦略を解説するガイド。",
+    "summaryBody": "LLMが指示（システムプロンプト）とデータ（ユーザー入力）を区別せずに同一のテキストストリームとして処理するアーキテクチャ上の特性を突いた「プロンプトインジェクション」について、包括的に解説しています。OWASPのLLM脆弱性トップ10で1位とされるこの脅威は、GitHub CopilotやCursor IDE等でRCE（遠隔コード実行）を可能にするなど、実害が加速しています。\n\n記事では攻撃手法を4つに分類しています：1. チャットによる「直接型」、2. 外部文書やメールを介した「間接型」、3. 画像等に指示を埋め込む「マルチモーダル型」、4. ツール実行権限を悪用する「エージェント型」。\n\n防御策として、単一の解決策がないことを前提とした「多層防御」を推奨しています。XMLタグ等を用いたプロンプトの構造化、Llama Prompt Guard等による入出力の検閲、LLMを批評家として使う出力検証、そして最も重要な「最小権限の原則（FGAの活用）」と「破壊的操作への人間による承認」というアーキテクチャ上の対策を具体的に提示しています。AIエージェントに広範な権限を与えず、アイデンティティ管理とアクセス制御を統合することがセキュリティの鍵となります。",
+    "topics": [
+      "プロンプトインジェクション",
+      "LLMセキュリティ",
+      "OWASP Top 10 for LLM",
+      "AIエージェント",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": "Prompt injection attacks: What are they and how to defend against them"
+  }
+}

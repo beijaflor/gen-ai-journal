@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:26:29.181110+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMチームを分散システムとして捉える：原理的な構築と評価の枠組み",
+    "url": "https://arxiv.org/abs/2603.12229",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）のマルチエージェントチームを「分散システム」として捉え、分散計算の理論に基づきその構造やスケーリング、評価を体系化することを提案する研究。",
+    "summaryBody": "近年、複数のLLMエージェントを連携させて複雑なタスクを解く「LLMチーム」が注目されていますが、その設計は依然として試行錯誤に依存しており、エージェント数や構造が性能に与える影響を説明する理論的枠組みが不足しています。本論文は、数十年にわたる歴史を持つ「分散システム」の知見をLLMチームの設計と評価に応用することを提案しています。分散計算におけるフォールトトレランス（耐故障性）、通信コスト、一貫性、並列処理の最適化といった基本概念が、LLMのマルチエージェント・システムにおいても同様の課題として現れることを示しました。これにより、アドホックなプロンプト設計ではなく、計算機科学の原理に基づいたスケーラブルで信頼性の高いエージェント・ワークフローを構築するための指針を提供しています。分散コンピューティングとAIのクロス・トークにより、LLMチームの真の価値と限界を定量化する道筋を提示しています。",
+    "topics": [
+      "Multi-agent Systems",
+      "Distributed Systems",
+      "LLM Scaling",
+      "Agentic Workflows",
+      "System Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 93
+    },
+    "originalTitle": "Language Model Teams as Distributed Systems"
+  }
+}

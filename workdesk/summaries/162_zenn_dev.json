@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:16:07.985221+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPTのReact習熟度も測る",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのGPT-5.4とGPT-4.1を対象にReact実装能力を評価し、Claude 3系モデルとの比較や自己評価バイアスの存在を明らかにした実験レポート。",
+    "summaryBody": "エンジニアのuhyo氏が、前回のClaude系モデルに続き、OpenAIのGPT-4.1とGPT-5.4のReact習熟度をベンチマークした。GitHub Copilot CLI経由で実装を行い、評価はClaude Sonnetに統一。結果、GPT-5.4は平均68.8点を記録し、Claude Sonnet/Opusと同等のティアに位置することが判明した。特筆すべき点として、GPT-5.4はClaude系が苦手としていたアクセシビリティ（ARIAパターンの活用）で顕著な強みを見せたが、コンポーネント設計やEffectの衛生面ではClaudeに一歩譲る結果となった。また、GPT-4.1が自らのコードを過大評価した事例（96点対51点）から、LLM評価における独立性の重要性が再確認されている。最新のモダンAPI（SuspenseやuseEffectEvent）の採用は、依然として全モデル共通の課題として残っている。",
+    "topics": [
+      "React",
+      "GPT-5",
+      "GitHub Copilot",
+      "LLMベンチマーク",
+      "アクセシビリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:44:55.750488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "git-worktree-runnerで複数ブランチを同時に開発する",
+    "url": "https://zenn.dev/luup_developers/articles/git-worktree-runner-ohtaki-20251208",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "git worktreeの操作を簡略化し、エディタ連携やAIツール統合、環境構築の自動化を実現するCLIツール「git-worktree-runner」の活用ガイド。",
+    "summaryBody": "### git-worktree-runner（gtr）による複数ブランチ並行開発の効率化\n\n本記事では、Gitの標準機能である`git worktree`をより便利に扱うためのCLIツール「git-worktree-runner (gtr)」を紹介しています。複数のブランチを異なるディレクトリに同時にチェックアウトし、stash作業や依存関係の再インストールにまつわるオーバーヘッドを解消します。\n\n#### 主な機能と利点\n- **自動環境構築**: `.gtrconfig`を利用することで、worktree作成時に`.env`等のファイルを自動コピーしたり、`npm install`などのコマンド（フック）を自動実行したりできます。\n- **エディタ・AI連携**: VS Code, Cursor, Zedなどのエディタや、Claude CodeなどのAIコーディングツールを特定のworktreeで即座に起動するサブコマンドを提供します。\n- **コンテキストスイッチの削減**: ブランチごとに独立したディレクトリを持つため、作業を中断することなく別ブランチの修正やコードレビューへ移行できます。\n\n#### AIエージェントとの高い親和性\n一つのworktreeでAIエージェントにタスクを実行させている間に、別のworktreeで人間が別の開発を進めるといった並行ワークフローが容易になり、AI時代の開発効率を最大化させることが可能です。",
+    "topics": [
+      "Git",
+      "Git Worktree",
+      "開発効率化",
+      "AIコーディング",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}
