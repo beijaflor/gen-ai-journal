@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:18:22.884661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cc-sdd（仕様駆動開発）にストーリーテストを自動で組み込む",
+    "url": "https://qiita.com/TatsuyaHasunuma/items/090cabb1015806ebd468",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを用いた仕様駆動開発（cc-sdd）において、要件・設計ドキュメントからストーリーテストを自動生成しConfluenceへ出力する自動化ワークフローの構築手法を解説します。",
+    "summaryBody": "この記事では、Claude Codeを活用した仕様駆動開発「cc-sdd」のフローに、ストーリーテストの自動生成を統合する方法を紹介しています。従来手動で行っていたテスト作成を、フェーズ2（設計完了後・実装前）に組み込み、GitHub CopilotのカスタムプロンプトとAtlassian MCPを用いることで、生成された要件（requirements.md）と設計（design.md）から直接Confluenceへテスト仕様書を自動配置する仕組みを構築しました。これにより、仕様とテストの整合性確保、実装前の検証シナリオ明確化、AI生成コードに対する品質担保の強化を実現しています。具体的なプロンプト例も掲載されており、実務への適用が容易な構成となっています。",
+    "topics": [
+      "cc-sdd",
+      "Claude Code",
+      "テスト自動化",
+      "仕様駆動開発",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

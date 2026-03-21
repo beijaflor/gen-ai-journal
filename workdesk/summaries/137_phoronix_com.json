@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:21:59.870221+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google、Linuxカーネル向けの自律型AIコードレビューシステム「Sashiko」を公開",
+    "url": "https://www.phoronix.com/news/Sashiko-Linux-AI-Code-Review",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、Gemini 3.1 Proを活用してLinuxカーネルのパッチから人間が見逃したバグを53%の精度で検出する自律型AIレビューシステム「Sashiko」をオープンソース化しました。",
+    "summaryBody": "GoogleのLinuxカーネルチームは、数ヶ月にわたり内部開発してきた自律型AIコードレビューシステム「Sashiko」を一般公開しました。このシステムは、Linux Kernel Mailing List (LKML) へのすべての投稿を自動的にレビューすることを目的としています。開発者のRoman Gushchin氏によると、Sashiko（Gemini 3.1 Pro使用時）は、人間が完全に見逃していた過去1,000件のバグ修正のうち、53%を特定することに成功したといいます。現在はLinux Foundationにプロジェクトが移管されており、Googleがトークン費用とインフラを支援しています。基本的にはGemini 3.1 Pro向けに設計されていますが、Claudeなどの他のLLMでも動作可能です。Sashiko.devにてWebインターフェースが公開されており、GitHubでソースコードも入手可能です。",
+    "topics": [
+      "Linux Kernel",
+      "Agentic AI",
+      "Google Gemini",
+      "Open Source",
+      "Code Review"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Google Engineers Launch \"Sashiko\" For Agentic AI Code Review Of The Linux Kernel"
+  }
+}

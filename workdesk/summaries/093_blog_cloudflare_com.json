@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:32:02.457044+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、データ処理の地理的境界を自在に定義できる「カスタムリージョン」を発表",
+    "url": "https://blog.cloudflare.com/custom-regions/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、コンプライアンスやデータ主権の要件に合わせて、L7処理やTLS終端を行う地理的境界をユーザーが柔軟に指定できる「カスタムリージョン」機能を発表しました。",
+    "summaryBody": "Cloudflareは、データの局所化を支援する「Regional Services」の大幅な拡張を発表しました。主な更新点は2つです。まず、トルコ、アラブ首長国連邦（UAE）、オーストラリア（IRAP対応）、および日本（ISMAP対応）を含む新しいマネージドリージョンが追加され、計35リージョンとなりました。次に、新機能「カスタムリージョン」の導入により、ユーザーは特定の国コードや条件を組み合わせて独自のデータ処理境界を定義できるようになります。\n\nCloudflareの独自アーキテクチャでは、グローバルネットワークの全容量を活用してL3/L4レベルのDDoS防御を行いながら、機密性の高いTLS終端やWAF、Bot Management、WorkersなどのL7処理は指定された地域内のデータセンターでのみ実行されます。これにより、高度なグローバルセキュリティを維持しつつ、各国の厳格なデータ主権規制や企業のガバナンス要件（AIプロンプトの特定地域内保持など）を柔軟に満たすことが可能になります。",
+    "topics": [
+      "Cloudflare",
+      "データ主権",
+      "コンプライアンス",
+      "エッジコンピューティング",
+      "ネットワークセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Introducing Custom Regions for precision data control"
+  }
+}

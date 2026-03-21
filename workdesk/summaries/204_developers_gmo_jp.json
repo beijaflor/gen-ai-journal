@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:07:40.946237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスで縛れ、AIに任せろ ーAIエージェントの出力品質は“構造”で守る",
+    "url": "https://developers.gmo.jp/technology/81389/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントによるコード品質のばらつきを、「ハーネスエンジニアリング」という4段階の制約構造（ドキュメント、AIセマンティック、CI、構造テスト）で解決する手法の紹介。",
+    "summaryBody": "GMOインターネットのConoHa VPS開発チームが実践する「ハーネスエンジニアリング」のアプローチを詳説した記事です。AI駆動開発において、AIエージェントが出力するコードの品質にばらつきが出る課題に対し、人間の注意力に頼るのではなく「構造」で担保する仕組みを提案しています。具体的には、ルールの執行レベルをL1（ドキュメント）からL4（構造テスト）までの4段階に分けた「エスカレーションラダー」を定義。機械的に判定可能なものはCIやテストコードでブロックし、定量化しにくい品質基準はAIのセマンティックな理解を活用してレビューします。また、Claude CodeのHooksを用いたローカル開発段階での即時フィードバックや、ルールの形骸化を防ぐための週次スキャン（エントロピー管理）といった運用面での工夫も紹介されており、AIエージェントを実戦投入する開発組織にとって極めて実用的な知見がまとめられています。",
+    "topics": [
+      "AIエージェント",
+      "AI駆動開発",
+      "Claude Code",
+      "コード品質",
+      "エンジニアリングプラクティス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

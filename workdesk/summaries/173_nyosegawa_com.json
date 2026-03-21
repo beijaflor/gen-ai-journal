@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:13:51.247848+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "全Notion利用者のための、Coding Agentに対応したCLIを作った話",
+    "url": "https://nyosegawa.com/posts/notion-cli-for-coding-agent/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Notion Remote MCPをラップし、Coding Agentが自律的に利用しやすい設計思想（構造化エラー、JSON出力、OAuth対応）を組み込んだ多機能なNotion CLIの紹介。",
+    "summaryBody": "Notion公式CLIの制限（REST APIラッパー、手動トークン管理）を克服するため、OAuthでワークスペース全体にアクセス可能なRemote MCPをベースとしたCLIツール「@sakasegawa/ncli」を開発。本記事では、Claude Code等のCoding Agentを主要ユーザーと想定した「Agent時代のCLI設計」の4原則（Agent可読なJSON出力、エラーヒントによる段階的開示、What+Why+Hint構造のエラー、Escape Hatchとしての直接API呼び出し）を詳説している。技術スタックはTypeScriptとCommander.jsを用い、PKCE対応のOAuth認証やレートリミット時の自動リトライ、MCPエラーをパターンマッチして解決策を提示するヒントシステムなどを実装。検索からDB操作、ページ作成、コメント管理まで多岐にわたる機能を備え、エージェントのワークフローを強力に支援する内容となっている。",
+    "topics": [
+      "Notion",
+      "MCP (Model Context Protocol)",
+      "CLI",
+      "AI Agent",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:30:56.560117+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "3600億トークン、300万顧客を6名で支える：DurableがVercelで実現したAI開発のレバレッジ",
+    "url": "https://vercel.com/blog/360-billion-tokens-3-million-customers-6-engineers",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIビジネスビルダーのDurableが、わずか6名のエンジニアで300万顧客と膨大なAIトラフィックを処理するために、セルフホストからVercelへ移行し、コストを1/4に削減しながら開発速度を10倍にした事例。",
+    "summaryBody": "AIを活用して数分でビジネスを立ち上げられるプラットフォーム「Durable」の導入事例です。同社は、数百万の顧客サイトやCRM、AIエージェントを管理するマルチテナント・インフラの運用負荷に直面していました。特にカスタムドメインのSSL管理、マルチリージョンでのクラスター維持、セキュリティ対策、そしてAIモデルのオーケストレーションが大きな課題となっていました。 \n\nエンジニアわずか6名のチームは、「自前でVercelのような仕組みを構築するか、Vercel上で構築するか」の決断を迫られ、Vercelへの全面移行を選択。結果として以下の成果を得ました：\n\n1. **コストの劇的な削減**: 一般的な「Vercelは高価」という先入観に反し、セルフホスティングと比較して3〜4倍のコスト削減を実現。\n2. **開発スピードの向上**: 新しいエージェント機能を1日でデプロイ可能になり、エンジニア1人あたりのアウトプットが10倍に。\n3. **AI SDK/Gatewayの活用**: 1日11億トークンという膨大な処理を、モデルのロックインを避けながら効率的に管理。\n\n「インフラではなく、エージェントによる価値創出に集中する」というAIネイティブな企業戦略の成功例と言えます。",
+    "topics": [
+      "Vercel",
+      "Next.js",
+      "AI SDK",
+      "Multi-tenancy",
+      "Engineering Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "360 billion tokens, 3 million customers, 6 engineers - Vercel"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:31:06.847651+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercelが「Chat SDK」を発表：複数のチャットプラットフォームへAIエージェントを容易に統合",
+    "url": "https://vercel.com/blog/chat-sdk-brings-agents-to-your-users",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、SlackやDiscord、WhatsAppなど複数のチャットプラットフォームに対して、単一のコードベースでAIエージェントをデプロイ可能にする「Chat SDK」を公開しました。",
+    "summaryBody": "Vercelが発表した「Chat SDK」は、AIエージェントをSlack、Discord、Microsoft Teams、Google Chat、WhatsApp、GitHub、Linearなど、ユーザーが日常的に利用する多様なプラットフォームへ容易に展開するためのTypeScriptライブラリです。これまで開発者はプラットフォームごとに異なるメッセージングAPIやストリーミング仕様、Markdownのレンダリング差異に対応する必要がありましたが、Chat SDKはこれらを抽象化し、「一度書けばどこでも動く」アーキテクチャを提供します。具体的には、アダプター層が各プラットフォーム固有の挙動（Block KitやGFMなどへの自動変換）を吸収し、開発者はUI要素をJSXで記述するだけで最適な表示を実現できます。また、VercelのAI SDKと統合されており、LLMからのストリーミング出力を直接チャットへ流し込むことが可能です。状態管理についてもRedisやPostgreSQLをサポートしており、エンタープライズ用途にも対応する設計となっています。現在はパブリックベータとして公開されており、オープンソースで利用可能です。",
+    "topics": [
+      "Vercel",
+      "Chat SDK",
+      "AI Agents",
+      "TypeScript",
+      "Multi-platform"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Chat SDK brings agents to your users"
+  }
+}

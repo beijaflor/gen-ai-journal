@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:35:25.660327+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GreenBoost──12GBのGPUで32GBのAIモデルを動かす挑戦",
+    "url": "https://note.com/joho_no_todai/n/nf0c0f3aed7a9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Linuxカーネルモジュール「GreenBoost」を用いて、システムメモリやNVMeをGPU VRAMの延長として活用し、低容量GPUで巨大なLLMを動作させる技術。",
+    "summaryBody": "## 概要\n開発者フェラン・ドゥアリ氏が公開した「GreenBoost」は、GPUのVRAM容量を超える大規模言語モデル（LLM）をローカルで動かすためのオープンソースLinuxカーネルモジュールです。12GBのVRAMしか持たないGPUでも、32GB以上のモデルを読み込める環境を提供します。\n\n## 技術的仕組み\nGreenBoostは2つの主要コンポーネントで構成されています。一つは、システムメモリ（RAM）上に確保した領域をDMA-BUFとして公開し、CUDAから外部メモリとしてインポート可能にするカーネルモジュール `greenboost.ko`。もう一つは、`LD_PRELOAD`を用いてCUDAのメモリ割り当て関数（`cudaMalloc`等）をフックし、大容量のウェイトをシステムRAM側へリダイレクトするCUDAシム `libgreenboost_cuda.so` です。これにより、Ollamaなどのアプリケーション側に変更を加えずに「擬似的なVRAM」として利用可能です。\n\n## 性能と展望\nPCIe 4.0の帯域幅（32GB/s）が物理的なボトルネックとなるため、ネイティブVRAM利用時に比べデコード速度は低下しますが、32GBモデルで2〜5トークン/秒程度を確保。KVキャッシュ圧縮や量子化技術と組み合わせることで、ハードウェアの物理的制約を超えて巨大モデルを「動かす」という新たな選択肢を提示しています。",
+    "topics": [
+      "LLM",
+      "GPU",
+      "VRAM",
+      "CUDA",
+      "Linuxカーネル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

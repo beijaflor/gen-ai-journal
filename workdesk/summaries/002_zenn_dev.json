@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:50:12.071383+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「そのDockerfile、卒業しよう」実務で通用するベストプラクティス",
+    "url": "https://zenn.dev/isawa/articles/a721641613f013",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Docker初学者から実務レベルへ脱却するために必要な、マルチステージビルドやセキュリティ、キャッシュ最適化などのベストプラクティスをGoの事例で解説。",
+    "summaryBody": "実務でDockerfileを運用する際に直面する「イメージサイズの肥大化」「ビルド時間の増大」「セキュリティリスク」といった課題を解決するための具体的な設計指針をまとめています。マルチステージビルドによる実行環境の軽量化、依存関係のコピー順序を工夫したレイヤーキャッシュの最大化、gcr.io/distrolessを用いた最小構成のイメージ作成、非rootユーザー（USER 65532）での実行、そしてENTRYPOINTとCMDの役割の違いなど、明日から使えるテクニックが網羅されています。また、HadolintによるLinter導入やDocker Scoutによる脆弱性スキャンの重要性についても触れており、開発効率と安全性を両立させるためのガイドとなっています。",
+    "topics": [
+      "Docker",
+      "Dockerfile",
+      "Go",
+      "Container Security",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

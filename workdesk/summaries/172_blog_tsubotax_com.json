@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:14:13.287528+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに特化したデザインシステムを作って工夫したこと",
+    "url": "https://blog.tsubotax.com/n/n6f3701611d98",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIによるUI生成の品質を安定させるため、Claude Codeが直接読み取り・参照可能な構造を持つAI最適化デザインシステム「melta-ui」の設計手法を解説している。",
+    "summaryBody": "AI（Claude Code）によるUI生成において、デザインの不一致や過剰な装飾といった「AIっぽさ」を解消するために開発されたデザインシステム「melta-ui」の解説記事です。人間とAIの両方が読み取れるように設計されており、AIのエントリーポイントとなる『CLAUDE.md』にコンポーネント仕様を集約し、106個のデザイントークンをJSON（tokens.json）で定義することで、プロンプトの曖昧さを排除し一貫性を担保しています。また、76項目の禁止ルールを明文化し、AI特有の生成パターンを制限。MCPサーバーを介してAIがAPI経由で仕様を参照する仕組みや、自動デザインレビュー機能も備えており、AI時代の新しいフロントエンド開発の指針を提示しています。",
+    "topics": [
+      "Claude Code",
+      "デザインシステム",
+      "AI最適化",
+      "MCPサーバー",
+      "melta-ui"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

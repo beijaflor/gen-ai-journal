@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:15:18.759874+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex活用ガイド：プロンプト、設定、MCP、自動化まで網羅したベストプラクティス",
+    "url": "https://zenn.dev/microsoft/articles/codex_best_practice",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codexを単なるチャットツールではなく、AGENTS.mdやMCP、自動化機能を駆使して「信頼できるチームメイト」として運用するための実践的な技術ガイド。",
+    "summaryBody": "この記事では、次世代のコーディングエージェントであるCodexを最大限に活用するための包括的なベストプラクティスが解説されています。主なポイントは以下の4点です。1. **明確な文脈定義**: プロンプトにGoal（目的）、Context（背景）、Constraints（制約）、Done when（完了定義）を含めることで精度の高い出力を得ること。2. **継続的な指示管理**: `AGENTS.md`を活用してリポジトリ固有のルールをCodexに学習させ、`config.toml`で環境設定を一貫させること。3. **外部連携と拡張**: MCP（Model Context Protocol）による外部ツール接続や、頻出タスクの「Skill」化、さらには「Automations」によるバックグラウンド実行でワークフローを効率化すること。4. **品質担保**: テスト作成や`/review`コマンドを用いたコードレビューの自動化、そしてセッション管理（forkやcompact）による文脈の整理です。Codexを単なる魔法のツールとしてではなく、設定と検証を繰り返して育てる「実務パートナー」として扱う重要性を説いています。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "GitHub Copilot",
+      "プロンプトエンジニアリング",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:17:27.529387+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "検索エンジンをチューニングしていたら、ニューラルネットを再解釈していた話：Bayesian BM25",
+    "url": "https://zenn.dev/knowledgework/articles/a15addfdfcfcd2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "BM25スコアをベイズ推論で確率化する「Bayesian BM25」の理論と、その数理モデルがニューラルネットワークの構造や活性化関数の本質と一致することを示す技術解説。",
+    "summaryBody": "RAGや検索システムにおいて、キーワード検索（BM25）とベクトル検索のスコアを統合する際の「解釈性の欠如」を解決する手法として『Bayesian BM25』を紹介しています。BM25スコアをSigmoid関数で事後確率に変換するこの手法は、単なるヒューリスティックではなく、ベルヌーイ分布と指数型分布族の数学的帰結に基づいています。さらに、複数の検索シグナルをLog-odds空間で結合するプロセスが、ニューラルネットワーク（FFN）の順伝播構造と数学的に同一であることを指摘。この視点から、ReLUやSwishといった活性化関数を「証拠の量」や「期待信号量」を問う統計的質問として再解釈しています。理論に留まらず、MTEBベンチマークでの性能向上や、WANDアルゴリズムを用いた推論加速、Pythonパッケージでの実装状況など、実用的な側面も網羅されています。",
+    "topics": [
+      "BM25",
+      "Information Retrieval",
+      "Bayesian Inference",
+      "Neural Networks",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:15:29.762977+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "wikigen — Claude Codeでコードベースの仕様ドキュメントを自動生成するCLIツール",
+    "url": "https://zenn.dev/abalol/articles/f522bfdf23a56f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのエージェント機能を活用し、RAGや埋め込み用のインフラを構築することなくGitHubリポジトリから高精度なWikiドキュメントを自動生成するGo製CLIツール。",
+    "summaryBody": "wikigenは、GitHubリポジトリのソースコードを読み取り、GitHub Wiki互換のMarkdownドキュメント一式を自動生成するツールです。従来のAIドキュメント生成ツール（DeepWiki等）がEmbeddingやベクトルDB、Docker環境を必要としていたのに対し、本ツールはClaude Codeの探索機能（`--add-dir`）を直接利用することで、インフラ不要かつコードに根拠のある仕様書を作成します。\n\n主な特徴は以下の通りです：\n- **事実ベースの生成**: JIS X 0160（ISO/IEC 12207）を参考に、API仕様、データモデル、認証フローなど「コードから確実に読み取れるもの」に絞って出力し、不確かな推測を排除。\n- **マルチリポジトリ対応**: フロントエンドとバックエンドなど、複数のリポジトリを横断した1つのドキュメント生成が可能。\n- **CI/CD統合**: GitHub Actionsで動作し、コードの変更に合わせて自動的にWikiを更新可能。\n- **高効率**: Goによる並列処理と失敗したページのみのリトライ機能を備え、大規模なコードベースにも対応します。",
+    "topics": [
+      "Claude Code",
+      "GitHub Wiki",
+      "Go",
+      "Documentation",
+      "LLM Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

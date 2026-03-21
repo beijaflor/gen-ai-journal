@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:16:42.705172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでのふるまいから隠れたSkillを見つける",
+    "url": "https://zenn.dev/chigichan24/articles/eed4a60d102997",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのセッションログを分析し、日々の「ふるまい」から再利用可能なAIエージェントのSkill候補を自動発見・可視化する手法とツール「crune」の紹介。",
+    "summaryBody": "LLMエージェントであるClaude Codeにおいて、再利用可能な「Skill」を作成するには、プロジェクト固有の判断基準などを形式知化する必要があり、そのドキュメント作成コストが導入の壁となっている。本記事では、このプロセスを逆転させ、セッションログに蓄積されたユーザーとエージェントの「ふるまい」からSkill候補を見つけ出すアプローチを提案。著者が開発したツール「crune」は、TF-IDFやTool-IDF、構造的特徴量を用いてセッションをベクトル化・クラスタリングし、プロジェクトを横断して繰り返されている作業パターンを可視化する。単なるSkillの自動生成ではなく、人間が気づいていない「繰り返しの型」をデータから客観的に提示することで、効率的な形式知化とSkillへの昇華を支援する。将来的な展望として、チーム内でのセッション共有によるナレッジ抽出についても触れられている。",
+    "topics": [
+      "Claude Code",
+      "LLM Agent",
+      "AI Skills",
+      "crune",
+      "セッションログ分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:32:15.205220+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Workers AIが大型モデル「Kimi K2.5」に対応：エージェント開発基盤を大幅に強化",
+    "url": "https://blog.cloudflare.com/workers-ai-large-models/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareはWorkers AIで大規模モデル「Kimi K2.5」の提供を開始し、プレフィックスキャッシュや刷新された非同期APIを通じて、低コストで高性能なAIエージェント実行環境を実現しました。",
+    "summaryBody": "Cloudflareは、開発者プラットフォーム上でAIエージェントを構築・展開するための機能を大幅に強化しました。これまでWorkers AIは小規模モデルを中心に提供してきましたが、今回新たにMoonshot AIのフロンティアモデル「Kimi K2.5」を導入しました。このモデルは256kの長いコンテキストウィンドウ、ツール呼び出し、ビジョン入力に対応しており、同社の内部ツールではプロプライエタリなモデルと比較してコストを77%削減しつつ高い性能を維持しています。\n\n推論性能を最適化するために、Cloudflareはカスタムカーネルの導入や推論スタックの改良を実施しました。主な機能アップデートとして、入力トークンの処理を効率化する「プレフィックスキャッシュ（Prefix Caching）」の利用状況の可視化と割引料金の導入、キャッシュヒット率を向上させる「セッションアフィニティヘッダー」、そして容量制限を気にせず大規模なバッチ処理が可能な「刷新された非同期API」が発表されました。これにより、Durable ObjectsやWorkflowsといった既存の機能と組み合わせることで、エージェントのライフサイクル全体を単一のプラットフォームでセキュアかつ効率的に実行できるようになります。",
+    "topics": [
+      "Cloudflare Workers AI",
+      "Kimi K2.5",
+      "AI Agents",
+      "LLM Inference",
+      "Prefix Caching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": "Powering the agents: Workers AI now runs large models, starting with Kimi K2.5"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:29:37.322955+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ベクトル検索エンジンValdの長期運用で見えたパフォーマンス最適化とベストプラクティス",
+    "url": "https://techblog.lycorp.co.jp/ja/20260317c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LINEヤフーが4年間にわたるValdの運用経験から得た、ベクトル検索の精度・速度を両立させるためのリソース隔離やインデックス制御の勘所を網羅的に解説。",
+    "summaryBody": "LINEヤフーによる、Cloud Nativeな近似最近傍探索（ANN）エンジン「Vald」の4年にわたる運用知見を凝縮した記事です。ベクトル検索の理想と現実のギャップを埋めるため、以下の3つの実例を軸に改善策が提示されています。\n\n1. **距離の正規化とガードレール**: 検索クエリとデータの距離が離れすぎている場合にCPU負荷が急増する問題を、ベクトルの正規化や検索タイムアウト（SearchConfig.timeout）設定によって解決する方法。\n2. **リソース隔離と冗長化**: インサート時の高負荷（Indexing）が検索精度を下げる現象に対し、Agent専用のNodePool構築やIndexReplica設定を用いて、検索母数と計算資源を物理的に守る設計。\n3. **インフラの冪等性と投入流量制御**: KubernetesのAffinity制約等による環境の固定化に加え、Uncommitted Indexの滞留を防ぐためにインサート流量を調整し、健全なグラフ構造を維持する運用の重要性。\n\n単純なパラメータ設定に留まらず、マイクロサービス構成としてのValdをいかに安定させるかという、大規模システム特有のプラクティスが詳細に述べられています。",
+    "topics": [
+      "Vald",
+      "ベクトル検索",
+      "近似最近傍探索 (ANN)",
+      "Kubernetes",
+      "パフォーマンスチューニング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": null
+  }
+}

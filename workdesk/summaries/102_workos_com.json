@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:29:59.625610+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP vs. REST: AIエージェントをAPIに接続するための最適な手法",
+    "url": "https://workos.com/blog/mcp-vs-rest",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント向けの新標準「Model Context Protocol (MCP)」と従来の「REST API」の構造的な違いを比較し、両者がどのように補完し合い、エージェントに最適化されたインターフェースを構築すべきかを解説したガイド。",
+    "summaryBody": "この記事は、Anthropicが提唱したModel Context Protocol (MCP)と従来のREST APIの違いを明確にし、AIエージェント時代のAPI設計の在り方を提示しています。RESTは人間（開発者）が仕様を読み、決定論的なコードを書くために最適化されていますが、実行時の自己記述能力やコンテキストの維持に欠けるため、自律的なAIエージェントには不向きな側面があります。一方、MCPはJSON-RPCベースのオープン標準であり、AIが実行時にツールやリソースを動的に発見し、ステートフルなセッションを通じて対話することを可能にします。\n\n著者は、MCPはRESTを置き換えるものではなく、既存のREST APIの上に構築される「AI専用のインターフェース層」であると強調しています。実務上のアドバイスとして、RESTエンドポイントを1対1でMCPツールに変換するのではなく、エージェントのトークン消費や推論ステップを最小化するために「成果（Outcome）」に基づいた統合的なツール設計（例：個別のデータ取得ではなく『注文を追跡する』という単一ツール）が推奨されています。また、認証面ではMCPが推奨するOAuth 2.1 + PKCEの重要性についても触れており、企業がAIエージェントを導入する際のアーキテクチャの指針となる内容です。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "REST API",
+      "AIエージェント",
+      "API設計",
+      "LLM連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "MCP vs. REST: What's the right way to connect AI agents to your API?"
+  }
+}

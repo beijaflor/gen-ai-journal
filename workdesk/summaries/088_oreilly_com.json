@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:33:05.778138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "門を閉ざすのではなく、家を修理せよ：AI時代のオープンソース維持管理術",
+    "url": "https://www.oreilly.com/radar/stop-closing-the-door-fix-the-house/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI生成の低品質なプルリクエスト急増に悩むオープンソースメンテナーに対し、外部貢献を拒絶するのではなく、AIが適切に動作するための指針や自動化を導入してリポジトリ側を適応させるべきだと主張する記事。",
+    "summaryBody": "AI（LLM）の普及により、プロジェクトの規約を無視した「AIスロップ（質の低い生成物）」によるプルリクエスト（PR）が急増し、多くのオープンソース・メンテナーが外部貢献の受付を停止する事態に陥っています。著者のAngie Jones氏は、この「門を閉ざす」行為はオープンソースの本質を損なうと指摘し、代わりに「家（リポジトリ）を修理して」AI時代に対応するための5つの戦略を提案しています。\n\n1. **人間向けのAI利用ガイド (HOWTOAI.md)**: 貢献者がAIを責任を持って使用するためのルール（検証方法や透明性の確保）を明文化する。\n2. **AIエージェント向けの指示書 (AGENTS.md)**: AIが直接読み取れる形式でプロジェクト構造や規約を記述し、AIの精度を高める。\n3. **AIによる一次レビューの導入**: カスタム指示を与えたAIレビューツールを活用し、メンテナーの手元に届く前に基本的な問題を修正させる。\n4. **テストスイートの強化**: AI生成コードの正当性を自動で担保するためのセーフティネットを構築する。\n5. **CIによる自動ゲートキーピング**: リンターやセキュリティチェックを徹底し、品質基準を機械的に維持する。\n\n「AIを拒絶するのではなく、品質のバーを引き上げ、それをクリアするための情報を人間とAIの両方に提供すること」が、これからのソフトウェア開発における維持管理の正解であると説いています。",
+    "topics": [
+      "Open Source",
+      "AI Agents",
+      "Software Maintenance",
+      "LLMs",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 88
+    },
+    "originalTitle": "Stop Closing the Door. Fix the House."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:44:12.193535+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "sudoをパスワードレス認証で使いたい",
+    "url": "https://eng-blog.iij.ad.jp/archives/33282",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "pam_ssh_agent_authを利用して、SSHエージェント認証をsudoの認証に統合し、パスワードを介さないセキュアな特権操作を実現する方法を解説しています。",
+    "summaryBody": "サーバー管理においてパスワード共有や使い回しのリスクを排除するため、SSHエージェント認証をsudoの認証プロセスに流用する手法を紹介しています。PAM（Pluggable Authentication Modules）の仕組みを利用し、pam_ssh_agent_auth.soを導入することで、既存のSSH公開鍵認証の仕組みをそのままsudoに適用可能です。これにより、NOPASSWD設定のような無防備な状態を避けつつ、SSH秘密鍵の安全性が担保されている限りパスワード入力を省略できる実用的なセキュリティ向上策を提示しています。さらに、クライアント側の生体認証や二要素認証と組み合わせることで、より強固な認証基盤を構築できる点についても触れています。",
+    "topics": [
+      "sudo",
+      "PAM",
+      "SSH",
+      "パスワードレス認証",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

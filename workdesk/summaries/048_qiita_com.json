@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:41:02.012207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotに8つの人格を与えてコーディングトーナメントを開催した結果",
+    "url": "https://qiita.com/yukurash/items/0478cbae148a5d15cfb5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotのカスタムエージェント機能（.agent.md）で8種の異なる性格を持つAIを対決させ、テスト駆動開発（TDD）スタイルのエージェントが最も実用的で高品質なコードを出力することを証明した検証記事。",
+    "summaryBody": "GitHub Copilotの「.agent.md」による指示（人格）の違いが、生成されるコードの品質や特性にどのような影響を与えるかをトーナメント形式で検証した実験レポートです。「簡潔さ重視」「速度狂」「テスト駆動（TDD）」など極端な哲学を持つ8つの人格を作成し、3つのコーディング課題で対決させました。結果として、過剰な抽象化（デザインパターン過多）や防御的すぎるコードは実用性を損ない自滅した一方で、テストを先に書いてから最小限の実装を行う「TDD侍」が優勝しました。指示文一つでコード量が2行から80行まで劇的に変化する実態を示し、実務で役立つエージェント設定のコツとして「具体的な行動指針を与えること」や「一つの哲学に絞ること」の重要性を説いています。",
+    "topics": [
+      "GitHub Copilot",
+      "Python",
+      "プロンプトエンジニアリング",
+      "マルチエージェント",
+      "TDD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

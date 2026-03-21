@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:25:35.118799+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Tego Skills Security Index: AIエージェント用スキルのセキュリティリスク分析プラットフォーム",
+    "url": "https://index.tego.security/skills/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが使用するモジュール化された「スキル」の指示内容や権限を分析し、セキュリティ上の脆弱性やリスクを可視化する統合リポジトリ。",
+    "summaryBody": "Tego AIが提供する「Skills Security Index」は、AIエージェントの定義（スキル）に含まれるプロンプトやコードをスキャンし、セキュリティリスクを評価するプラットフォームである。GitHub等のレジストリから収集されたスキルを対象に、プロンプトインジェクション、機密情報の漏洩、過剰な権限（ファイル書き込み、ネットワーク利用等）を動的に分析する。リスクは「Pass」から「Critical」の5段階で評価され、開発者やセキュリティエンジニアが、エージェントをデプロイする前にその影響範囲（ブラスト半径）を正確に把握できるよう支援することを目的としている。指示ベースのAI活用が進む中、スキルの定義自体が新たな攻撃面となる課題に対応している。",
+    "topics": [
+      "AI Security",
+      "AI Agents",
+      "Prompt Injection",
+      "Vulnerability Management",
+      "Tego AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Tego · Skills Security Index"
+  }
+}

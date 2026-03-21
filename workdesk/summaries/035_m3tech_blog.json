@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:43:42.979908+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "goroutineの仕組みをRustで自作して理解する：M:Nモデルとコンテキストスイッチの深淵",
+    "url": "https://www.m3tech.blog/entry/build-your-own-goroutine-in-rust",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Goのgoroutineがなぜ軽量で高性能なのかを理解するため、Rustとアセンブリを用いてユーザー空間スケジューラやM:Nモデルを自作し、その内部構造を詳しく解説しています。",
+    "summaryBody": "この記事は、Go言語の並行処理の核であるgoroutineの動作原理を、Rustによる再実装を通じて解き明かす技術解説です。まず「OSスレッドが重い」理由（メモリ消費とカーネル遷移）を実証したのち、x86_64/aarch64のインラインアセンブリを用いたコンテキストスイッチを実装。10万タスクを完走させるM:1モデルの構築から、マルチコアを活用するM:Nモデルへの拡張、さらには共有キューの排他制御やブロッキングI/Oの課題までを段階的に掘り下げています。最終的に、Goランタイムがnetwork poller等を通じてどのように「通常の関数呼び出しのように書ける並行処理」を実現しているかを考察しており、低レイヤの視点からGoの設計の巧妙さを学ぶことができます。",
+    "topics": [
+      "goroutine",
+      "Rust",
+      "コンテキストスイッチ",
+      "スケジューラ",
+      "並行プログラミング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

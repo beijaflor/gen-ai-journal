@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:44:26.818349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CSSは「制約」ベースにすべきか？：レイアウトの予測可能性と暗黙の設計知",
+    "url": "https://pavpanchekha.com/blog/why-css-bad.html",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "CSSの複雑さを解消するために制約ベースのシステムを導入すべきかという問いに対し、CSSの形式仕様策定に携わった著者が、制約システムの限界と現代的なFlexbox/Gridの優位性を解説する。",
+    "summaryBody": "CSSのレイアウトは決定論的である一方、ルールが極めて複雑で予測困難なことが長年の課題です。これに対し、iOSやAndroidで採用されている「制約ベース（Constraint-based）」のシステムへの移行が提案されることがありますが、著者はこれに警鐘を鳴らしています。制約ベースには、解が複数存在したり存在しなかったりする不安定さ、モジュール性の欠如、デバッグの難しさといった固有の問題があるためです。現在のCSSが複雑なのは、ユーザーのアクセシビリティを守るための「暗黙の設計知（例：はみ出した中央揃えテキストを、スクロール可能にするため自動的に左揃えにする挙動）」がルールに組み込まれているからです。解決策はシステムを根本から変えることではなく、テキスト中心の「フローレイアウト」から脱却し、現代的なUI設計に最適化されたFlexboxやGridのような、より直感的で特定用途に特化したレイアウトモードへと進化し続けることにあると結論づけています。",
+    "topics": [
+      "CSS",
+      "Layout Engine",
+      "Constraint Programming",
+      "Flexbox",
+      "Grid Layout"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Should CSS be Constraints?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:20:31.507813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【2026年最新】Claude Codeで自作プラグインを開発する方法",
+    "url": "https://qiita.com/miruky/items/753395f62397c5ca6cbd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの機能を拡張するプラグインの作成から、スキル、エージェント、MCP/LSP連携、マーケットプレイス配布までを網羅した2026年最新の開発ガイド。",
+    "summaryBody": "本記事はClaude Codeにおける自作プラグイン開発の完全ロードマップです。プロジェクト固有の設定（.claude/）をパッケージ化して再利用・配布可能にするプラグインの仕組みを解説しています。具体的な内容として、plugin.jsonによるマニフェスト定義、スキルやカスタムエージェントの作成、イベント駆動のフック（Hooks）、外部ツール接続のMCPサーバー、コード補完を提供するLSPサーバーの統合方法まで詳述されています。また、2026年に追加された永続データディレクトリ（$CLAUDE_PLUGIN_DATA）の活用法や、マーケットプレイスを通じたチーム内配布の手順、トラブルシューティング、既存設定からの移行プロセスまで含まれており、Claude Codeを高度にカスタマイズしたい開発者にとって実践的なリファレンスとなっています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "MCP",
+      "LSP",
+      "プラグイン開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:10:13.469408+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Devin だけでは足りなかったので、エラー調査 AI Agent を自作した — AI 時代のエラー対応のやり方",
+    "url": "https://blog.smartbank.co.jp/entry/2026/03/18/110000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "スマートバンクが、Sentryのエラーを起点に、DevinやNew Relic、GitHubを横断して自律的に原因調査と対応を行うAI Agent「Guardie」を自作し、MTTR短縮を実現した事例。",
+    "summaryBody": "スマートバンク社が開発したAI Agent「Guardie（ガーディ）」の導入事例です。AIによる開発加速に伴い、障害対応の迅速化が重要となる中、既存のDevinだけでは困難だった「過去の知見の活用」「複数データソース（Logs, Metrics, Releases）の横断」「調査後のアクション（PR作成等）への接続」を解決するために自作されました。\n\nシステムはCloudflare Workers/D1を基盤とし、MCP（Model Context Protocol）を通じてDevinやNew Relic、GitHubと連携。トリアージ、原因究明、記録、完了の4つのフェーズで動作し、各段階で人間が判断を確認・修正できるガードレールを設けています。調査結果はDBに蓄積され、次回以降の類似エラー発生時にナレッジとしてAIに提供される仕組みです。これによりMTTR（平均復旧時間）の短縮や、調査精度の向上が確認されています。",
+    "topics": [
+      "AI Agent",
+      "MCP (Model Context Protocol)",
+      "Sentry",
+      "Devin",
+      "Cloudflare Workers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

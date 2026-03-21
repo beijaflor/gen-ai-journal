@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:36:36.744024+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DenchClaw: Mac上で動作するローカルホスト型AI CRM「OpenClaw」ベースの自律型ツール",
+    "url": "https://denchclaw.com/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Macのローカル環境で動作し、ブラウザ操作やコード生成、データ分析を自律的に行うOpenClawベースのオープンソースAI CRM。",
+    "summaryBody": "DenchClawは、Mac上でローカルにホストされる次世代のAI CRMおよびエージェント実行環境です。OpenClawフレームワークを基盤としており、プライバシーを重視したローカルファーストの設計が特徴です。\n\n### 主な機能と特徴\n- **Chromeプロファイルの直接利用**: ユーザーの既存のChromeセッション（Cookieや認証情報）を使用するため、LinkedInやGmailなどへのログイン不要で自律的なブラウジング、スクレイピング、メッセージ送信が可能です。\n- **自律型データ操作**: 自然言語からSQLを生成してDuckDBをクエリする機能や、Cursorのようにコードを書き換えてDiffを表示する機能を備えています。\n- **拡張性 (Skills Store)**: 5万件以上の「Skills」を1コマンドで追加でき、SalesforceやHubSpot、Slackなどの外部サービスとの連携や、高度な自動化ワークフローを構築できます。\n- **自動化と管理**: カンバン形式のパイプライン管理に加え、Cronジョブによる週次レポート作成やリードの自動フォローアップをバックグラウンドで実行可能です。\n\nNode 22以上がインストールされた環境であれば、`npx denchclaw` コマンド一つで即座に起動でき、MITライセンスのもとオープンソースとして公開されています。",
+    "topics": [
+      "AI CRM",
+      "OpenClaw",
+      "Local-first",
+      "AI Agent",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "DenchClaw — AI CRM, hosted locally on your Mac"
+  }
+}

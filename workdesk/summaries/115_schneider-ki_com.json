@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:27:08.303942+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LoKI - LinuxおよびWSL向けのローカルAIアシスタント：LLMを完全にオフラインで実行",
+    "url": "https://schneider-ki.com/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LoKIは、LinuxとWSL環境でLLMをローカル実行するために設計された、プライバシー重視かつMCP対応のC++製AIアシスタントです。",
+    "summaryBody": "LoKIは、データの外部送信を一切行わず、ユーザーのローカル環境（LinuxまたはWindows WSL）で大規模言語モデル（LLM）を実行するための強力なアシスタントツールです。主な特徴として、C++による高速な動作、CPU/CUDA/Vulkan/OpenCLを自動検知するダイナミックバックエンド、Hugging Faceからの直接ダウンロードおよびGGUF形式への変換・再量子化機能を備えています。特に注目すべきは、Model Context Protocol (MCP) をネイティブに統合している点であり、ローカルファイルへのアクセスやツールの拡張が容易に行えます。組み込みのツールエディタにより、AIの支援を受けながら独自の機能を開発することも可能です。AppImage形式で提供されており、プライバシーを最優先しつつ実用的なAIワークフローを構築したいLinuxユーザーにとって非常に実用的なソリューションとなっています。",
+    "topics": [
+      "Local LLM",
+      "Linux",
+      "WSL",
+      "Model Context Protocol (MCP)",
+      "Privacy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": "LoKI – Local AI Assistant for Linux & WSL | Run LLM Models Locally"
+  }
+}

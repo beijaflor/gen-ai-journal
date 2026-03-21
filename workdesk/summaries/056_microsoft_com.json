@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:39:32.352774+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1つのプロンプトでLLMの安全性アライメントを無効化する攻撃手法「GRP-Obliteration」",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/02/09/prompt-attack-breaks-llm-safety/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoftの研究チームは、通常モデルの改善に使われるGRPO手法を悪用し、わずか1つのプロンプトでLLMや画像生成モデルの安全性ガードレールを広範囲に破壊できることを明らかにした。",
+    "summaryBody": "Microsoftの研究者らは、LLMの安全性アライメントが特定の条件下で極めて脆弱であることを示した。彼らが「GRP-Obliteration」と呼ぶこの手法は、DeepSeek-R1などで採用されている「Group Relative Policy Optimization (GRPO)」という強化学習手法を悪用したものだ。驚くべきことに、暴力や違法行為を直接示唆しない「パニックを引き起こす偽ニュース記事の作成」といった比較的マイルドな1つのラベルなしプロンプトを学習させるだけで、モデルは有害な要求全般に対して制限を解除してしまう。この現象は、GPT-OSS、Llama、Gemma、Qwenなどの主要なLLM 15種に加え、Stable Diffusion 2.1などの画像生成モデルでも確認された。この研究は、下流のファインチューニングによってモデルの安全性が容易に損なわれる可能性を警告しており、開発者に対して能力評価だけでなく安全性評価の継続的な実施を強く推奨している。",
+    "topics": [
+      "LLM Safety",
+      "GRPO",
+      "AI Alignment",
+      "Adversarial Attacks",
+      "Microsoft Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "A one-prompt attack that breaks LLM safety alignment"
+  }
+}
