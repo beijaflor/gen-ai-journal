@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T04:54:47.035241+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのセキュリティ：プロンプトインジェクションが実害をもたらす時代の防御策",
+    "url": "https://openguard.sh/blog/prompt-injections/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがブラウジングやツール実行、メモリ保持、複数エージェント間連携を行う中で、プロンプトインジェクションがインフラレベルの深刻なセキュリティ設計課題へと進化した現状を解説する。",
+    "summaryBody": "本記事は、2025年から2026年にかけてのAIエージェント普及に伴い、プロンプトインジェクション（PI）が単なる出力の乱れではなく、データ漏洩や不正なツール実行といった深刻な実害を引き起こすリスクを詳述しています。主なポイントは以下の通りです：\n\n1. **ブラウザエージェントの脅威**: OpenAIのOperator等の事例では、高度な検知器を導入しても23%の攻撃成功率を記録しており、ウェブ上の悪意あるコンテンツがユーザー権限を悪用するリスクが顕在化しています。\n2. **MCP（Model Context Protocol）の毒化**: ツール自体の説明文を改ざんすることで、モデルに不正なアクションを誘導する攻撃ベクトルが特定されており、GitHub MCPを利用したプライベートリポジトリのデータ漏洩事例も報告されています。\n3. **メモリ毒化と多段攻撃**: 長期メモリへの不正情報の埋め込みや、A2A（Agent-to-Agent）プロトコルを介したエージェント間での権限昇格など、攻撃が高度化しています。\n\n結論として、完璧なPI検知は困難であるため、「最小権限の原則」に基づき、セッションごとの権限スコープ限定や、ツール記述の署名・検証といったインフラ側の設計による多重防御が不可欠であると説いています。",
+    "topics": [
+      "AIエージェントセキュリティ",
+      "プロンプトインジェクション",
+      "Model Context Protocol (MCP)",
+      "最小権限の原則",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "The Webpage Has Instructions. The Agent Has Your Credentials."
+  }
+}
