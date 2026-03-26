@@ -1,31 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-21T01:35:13.125227+00:00",
+    "generatedAt": "2026-03-24T13:36:53.782950+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "エラー: 記事コンテンツの取得失敗",
+    "title": "VitePressを用いてContext EngineeringとDocument Hostingを両立する",
     "url": "https://blog.inorinrinrin.com/entry/2026/03/14/180826",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "HTTP 429エラーにより、指定されたURLから記事の内容を取得することができませんでした。",
-    "summaryBody": "指定されたURL（https://blog.inorinrinrin.com/entry/2026/03/14/180826）へのリクエスト中に『429 Too Many Requests』エラーが発生したため、コンテンツの解析を完了できませんでした。このエラーは、サーバー側で短時間のアクセス制限がかけられたことを示しています。要約を生成するためには、時間をおいてから再度リクエストを行う必要があります。",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Coding Agent向けのコンテキスト管理と、人間が閲覧するためのドキュメント公開を、git submoduleとVitePressを組み合わせて効率化する手法の提案。",
+    "summaryBody": "AI（Coding Agent）がコードを理解するためのコンテキスト管理（Context Engineering）が重要視される中、Docs as Codeを実践する上での課題（リポジトリサイズの肥大化や非エンジニアへの共有）を解決する構成を解説しています。ドキュメントを別リポジトリで管理し、アプリケーション側にはgit submoduleとして読み込ませることで、AIにはCLAUDE.md経由でコンテキストを提供しつつ、人間にはVitePressで生成した静的サイトを通じてドキュメントを公開します。VitePressの導入方法や、ディレクトリ階層を動的にサイドバーへ反映させる実装例も紹介されています。",
     "topics": [
-      "HTTP Error",
-      "Access Denied",
-      "Network Issue"
+      "VitePress",
+      "Docs as Code",
+      "Context Engineering",
+      "Claude Code",
+      "git submodule"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
     },
-    "originalTitle": "429 Client Error: Too Many Requests"
+    "originalTitle": null
   }
 }
