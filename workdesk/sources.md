@@ -79,16 +79,14 @@
 - [x] 187. https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/
 - [x] 186. https://claude.com/code-with-claude
 - [x] 185. https://tmux.thijsverreck.com/
-- [x] 184. https://techblog.roxx.co.jp/entry/2026/03/19/083000
 - [x] 183. https://zenn.dev/k9i/articles/20260304_ccpocket
 - [x] 182. https://tech.acesinc.co.jp/entry/2026/03/19/083000
 - [x] 181. https://github.com/FlorianBruniaux/claude-code-ultimate-guide/blob/main/guide/cheatsheet.md
-- [x] 180. https://www.jstage.jst.go.jp/article/jsaisigtwo/2026/FIN-036/2026_193/_pdf/-char/ja (SKIPPED: exceeds Gemini token limit)
+- [x] 180. https://www.jstage.jst.go.jp/article/jsaisigtwo/2026/FIN-036/2026_193/_pdf/-char/ja
 - [x] 179. https://blog.bytebytego.com/p/how-stripes-minions-ship-1300-prs
 - [x] 178. https://mashable.com/article/angel-protection-ai-mass-shooter-detection-sxsw-2026
 - [x] 177. https://www.axios.com/2026/03/17/chartbeat-search-traffic-ai-chatbots
 - [x] 176. https://www.docswell.com/s/fumiya-kume/Z4NQYD-2026-03-19-195137
-- [x] 175. https://blog.sushi.money/entry/2026/03/18/174452
 - [x] 174. https://mpp.dev/
 - [x] 173. https://nyosegawa.com/posts/notion-cli-for-coding-agent/
 - [x] 172. https://blog.tsubotax.com/n/n6f3701611d98

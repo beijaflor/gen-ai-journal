@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T00:00:00.000000+00:00",
+    "generatedBy": "claude-opus-4-6"
+  },
+  "content": {
+    "title": "株式投資戦略の自動生成におけるフィードバック設計",
+    "url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2026/FIN-036/2026_193/_pdf/-char/ja",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMを用いた株式投資戦略の自動生成フレームワークを構築し、フィードバック設計（情報範囲・提示形式）が戦略改善に与える影響を実証的に検証した研究。",
+    "summaryBody": "### 概要\n人工知能学会SIG-FIN-036で発表された研究論文。LLMの能力向上に伴い投資戦略への活用が急速に広がる中、フィードバックの設計が戦略改善プロセスにどう影響するかを体系的に調査しています。\n\n### 主要な知見\n1. **実験フレームワーク**: LLMに投資戦略のPythonコードを生成・改善させる反復的フレームワークを構築。バックテスト結果をフィードバックとして与え、最大10回の改善ループを実行。\n2. **フィードバック設計の2軸**: (i) 情報範囲（基本情報のみ vs 基本+追加情報）と (ii) 提示形式（テキストのみ vs テキスト+プロット）の組み合わせで4条件を比較。\n3. **結果**: フィードバック設計の違いは改善プロセスに一定の影響を与えるが、パフォーマンス向上への効果は限定的。一方、使用するモデルの違いはより大きな性能差をもたらした。\n4. **示唆**: 投資戦略の自動生成では、フィードバックの精緻化よりもモデル選択の方が重要な要因である可能性を示唆。",
+    "topics": [
+      "LLM投資戦略",
+      "フィードバック設計",
+      "自動コード生成",
+      "金融AI",
+      "実証研究"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 60,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "Feedback Design for the Automatic Generation of Stock Investment Strategies"
+  }
+}
