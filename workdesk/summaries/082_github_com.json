@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:34:15.796964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "axe: TOMLで定義する単一目的AIエージェント実行用軽量CLI",
+    "url": "https://github.com/jrswab/axe",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TOML設定ファイルで定義された単一目的のAIエージェントを、Unixコマンドのようにパイプやcron、Gitフックから呼び出せる軽量なCLIツール。",
+    "summaryBody": "axeは、大規模なチャットボットではなく、Unix哲学に基づいた「一つのことを上手くやる」AIエージェントを構築・実行するためのCLIツールです。エージェントの挙動をTOMLファイルで定義し、標準入出力のパイプ、cronジョブ、Gitフックなど、既存のワークフローに簡単に組み込むことができます。Anthropic、OpenAI、Ollama、AWS Bedrockといった主要なLLMプロバイダーをサポートしており、サブエージェントへのタスク委譲や、MCP（Model Context Protocol）経由の外部ツール連携も可能です。また、サンドボックス化されたファイル操作やWeb検索などの組み込みツールを備え、永続メモリ機能により実行を跨いだコンテキストの保持も実現しています。複雑なフレームワークを必要とせず、特定のタスクに特化したAIアシスタントを自作したい開発者に最適なツールです。",
+    "topics": [
+      "AI Agents",
+      "CLI",
+      "LLM",
+      "Automation",
+      "Golang"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - jrswab/axe: A ligthweight cli for running single-purpose AI agents. Define focused agents in TOML, trigger them from anywhere; pipes, git hooks, cron, or the terminal."
+  }
+}

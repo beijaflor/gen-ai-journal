@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T04:54:45.880936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けコンテンツ最適化の重要性と実践手法：Sentryの事例",
+    "url": "https://cra.mr/optimizing-content-for-agents/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに対して人間用のHTMLではなく、HTTP Content Negotiationを利用して最適化されたMarkdownを返却する実践的なアプローチを解説。",
+    "summaryBody": "Sentryの創設者David Cramer氏は、AIエージェントが人間と同様に既存のAPIを解釈できるという主張に反論し、エージェント特有の制約（コンテキスト容量の節約やリンク階層の把握など）に合わせたコンテンツ最適化の必要性を説いています。具体的には、HTTPの「Accept: text/markdown」ヘッダーを利用して、エージェントがアクセスした際にのみ、ナビゲーションやJavaScriptを除去した純粋なMarkdownや、MCP（Model Context Protocol）サーバー情報、CLI利用ガイドなどを返却する手法を推奨しています。Sentryのドキュメントや製品ページでの実例を挙げ、トークン消費の抑制と推論精度の向上を両立させる具体的な実装イメージを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM最適化",
+      "Markdown",
+      "Content Negotiation",
+      "Sentry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Optimizing Content for Agents"
+  }
+}

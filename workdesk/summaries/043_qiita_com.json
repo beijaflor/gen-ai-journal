@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:42:07.933962+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで「Issue起票→並列開発→PR作成」を全自動化したら、開発速度が異次元になった",
+    "url": "https://qiita.com/kazuki_ogawa/items/c05c3aed3bf8e46a7ddb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのSkills機能を活用し、GitHub Issueの起票からgit worktreeを用いた並列開発、PR作成までを自動化する高度なAI開発ワークフローの構築手法を紹介。",
+    "summaryBody": "この記事では、AIエージェント「Claude Code」を駆使して開発サイクルを劇的に高速化させる手法を解説しています。主な構成は3つの独自Skill（`/issue-create`, `/dev-plan`, `/gtr-workflow`）による連携です。まず人間との対話で要件を固め、AIが構造化されたIssueを自動起票。その後、依存関係を分析して並列開発可能な「Wave」単位にタスクを分解し、`git worktree`を用いて環境を分離することで、複数のClaude Codeセッションによる競合のない同時並列開発を実現します。開発者が「何を作るか」という思考に集中し、実装・テスト・PR作成という実行フェーズをAIに任せきる実用的なパイプラインが提示されています。",
+    "topics": [
+      "Claude Code",
+      "GitHub",
+      "AI開発効率化",
+      "git worktree",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

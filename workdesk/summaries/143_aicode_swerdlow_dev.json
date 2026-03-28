@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:20:43.179760+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代に向けたコード設計マニフェスト：SemanticとPragmaticの分離",
+    "url": "https://aicode.swerdlow.dev/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる大量のコード生成が加速する中で、コードベースの乱雑化を防ぐために「セマンティック関数」「プラグマティック関数」「厳格なモデル」を提唱する設計指針。",
+    "summaryBody": "AIコーディングエージェントの普及により、コードベースの複雑性が急速に増大するリスクを背景に、人間とAIが協力して保守可能なコードを維持するための『AI Codeマニフェスト』です。本稿では、コードを以下の3つの要素で整理することを提案しています。1. **セマンティック関数**: 最小限の責務を持ち、副作用のない、ユニットテストが容易な自己記述的関数。2. **プラグマティック関数**: 複雑なワークフローを包み込むラッパーであり、特定のユースケースに特化した関数。3. **厳格なモデル定義**: 不正な状態を許容しない型設計。特に、同じプリミティブ型でもドメインが異なる場合に区別する『ブランド型』の活用を推奨しています。AIが生成するコードをただ受け入れるのではなく、人間が意図的に構造を定義し、AIにルールを適用させる（Cursor等のスキルとして活用する）ことで、スケーラブルな開発環境を維持できると主張しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Software Architecture",
+      "Clean Code",
+      "Type Safety",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "AI Code: Be intentional about how AI changes your codebase"
+  }
+}

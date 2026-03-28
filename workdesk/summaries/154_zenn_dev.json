@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:17:39.169326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "新機能を追加するために3,000行削除した話 — AIが書いたコードの技術負債とどう向き合うか",
+    "url": "https://zenn.dev/shigerufukada/articles/ccf7cb56eb7b46",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成した設計不在のコードによる技術負債に対し、人間が設計方針を示してAI（Claude Code）に実行を任せることで、3,000行以上のコードを削減しながらリファクタリングを完遂した実体験の記録。",
+    "summaryBody": "AIコーディングツールの普及により、動くものの設計が欠如した「場当たり的なコード」による技術負債が急速に蓄積される問題が発生しています。本記事では、RAGベースのチャットアプリにおいて、6階層にわたるprops drillingや複雑な中間変換層が原因で新機能追加が困難になった事例を紹介。著者は「AIが生んだ負債をAIで返済する」というアプローチをとり、人間が「Contextへの移行」や「型定義の統一」といった設計の方向性を指示し、Claude Codeに広範囲な修正作業（98ファイルの変更）を任せることで、3,113行のコード純減と開発効率の劇的な向上を実現しました。AI時代のエンジニアには、局所的な実装ではなく、全体の設計を判断しAIを高度な作業者として制御する能力が重要であることを示唆しています。",
+    "topics": [
+      "React",
+      "リファクタリング",
+      "技術負債",
+      "Claude Code",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

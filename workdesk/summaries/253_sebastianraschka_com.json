@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T04:54:46.943667+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMアーキテクチャ・ギャラリー：GPT-2からLlama 4、DeepSeek V3までの最新設計図と技術仕様",
+    "url": "https://sebastianraschka.com/llm-architecture-gallery/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "セバスチャン・ラシュカ博士による、主要な大規模言語モデルのアーキテクチャ図解と技術仕様（パラメータ数、アテンション機構、コンテキスト長など）を網羅したリファレンスガイド。",
+    "summaryBody": "本コンテンツは、2019年のGPT-2から2026年最新のLlama 4、DeepSeek V3、Qwen3.5、Gemma 3に至るまで、主要なLLMのアーキテクチャを視覚的に比較・解説したギャラリーです。各モデルの「ファクトシート」として、総パラメータ数、有効パラメータ数、コンテキスト長、ライセンス、デコーダー形式（Dense/MoE/Hybrid）、アテンション機構の詳細（MHA, GQA, MLA, SWA等）が簡潔にまとめられています。\n\n主な特徴とトレンド：\n- **最新アーキテクチャの網羅**: DeepSeekのMLA（Multi-head Latent Attention）や、Llama 4のMoE採用など、最先端の設計思想を反映。\n- **ハイブリッドモデルの台頭**: Mamba-2やxLSTM、DeltaNetなどを組み合わせた、従来のTransformerを超越する効率的なモデル（Nemotron 3やQwen3 Nextなど）の仕様を詳細に記載。\n- **詳細な技術属性**: QK-Norm、NoPE（No Positional Embeddings）、共有エキスパート、マルチトークン予測（MTP）など、モデルごとの固有の最適化手法が特定されています。\n\n各図解は、モデル間の設計の差異を比較するために最適化されており、エンジニアや研究者が特定のモデルの実装詳細を迅速に把握するための強力なツールとなっています。",
+    "topics": [
+      "LLM Architecture",
+      "Transformer",
+      "Mixture of Experts (MoE)",
+      "DeepSeek",
+      "Llama 4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "LLM Architecture Gallery"
+  }
+}

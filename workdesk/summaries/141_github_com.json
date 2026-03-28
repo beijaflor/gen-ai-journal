@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:21:08.298152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicからの法的要請によるOpenCodeの機能削除 (GitHub PR #18186)",
+    "url": "https://github.com/anomalyco/opencode/pull/18186",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Anthropic社からの法的要請に基づき、オープンソースプロジェクト「OpenCode」から同社専用の認証プラグインやシステムプロンプトが削除されました。",
+    "summaryBody": "OSSプロジェクトであるOpenCodeのリポジトリにおいて、Anthropic社からの法的要請に応じるためのコード削除が実施されました。削除されたのは、Anthropic専用のシステムプロンプト、内蔵の認証プラグイン（opencode-anthropic-auth）、プロバイダー選択時のヒント、および「claude-code」に関連するベータヘッダー等です。この変更に対し、GitHub上のコミュニティからは400件近い反対リアクション（👎）が寄せられ、AIベンダーによるサードパーティツールへの制限に対する強い不満が示されています。議論の中では、この修正によって他プロバイダー（OpenAI等）向けのUser-Agentヘッダーが誤って削除されるデグレードの指摘や、有志による代替プラグインの即時開発、さらには「Code as Speech」といった言論の自由の観点からの批判など、法規制と開発者コミュニティの衝突が鮮明になっています。",
+    "topics": [
+      "OpenCode",
+      "Anthropic",
+      "Claude",
+      "OSS",
+      "Legal Issues"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "anthropic legal requests by thdxr · Pull Request #18186 · anomalyco/opencode"
+  }
+}

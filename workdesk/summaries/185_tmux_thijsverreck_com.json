@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:11:32.694186+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "tmux-ide: 複数のClaudeエージェントが連携する開発環境をワンコマンドで構築",
+    "url": "https://tmux.thijsverreck.com/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "tmuxを活用して、複数のClaude Codeエージェントが協調動作するための専用レイアウトをYAML設定から即座に構築できるCLIツール。",
+    "summaryBody": "tmux-ideは、AnthropicのClaude Codeを利用したマルチエージェント開発環境をtmux上で効率的に構築するためのツールです。YAML形式の設定ファイル（ide.yml）に基づき、リードエージェント、複数のチームメンバー用ペイン、開発サーバー、シェルなどのレイアウトを自動生成します。最大の特徴は、複数のClaudeインスタンスを一つのセッション内で動かし、リード役のClaudeが他のエージェントにタスクを割り当てる「エージェント・チーム」ワークフローの基盤を容易に整えられる点です。Claude Codeのスキル登録機能も備えており、Claudeにワークスペースのセットアップを自動で行わせることも可能です。Next.js、Python、Goなどの主要スタックの自動検出にも対応しています。",
+    "topics": [
+      "tmux",
+      "Claude Code",
+      "AIエージェント",
+      "開発環境構築",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "tmux-ide — Prepare Claude agent-team layouts in one terminal"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:39:54.723891+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのエージェントチームを使うだけで大抵のことが出来るようになった",
+    "url": "https://zenn.dev/n314/articles/e06f189f093902",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのAgent teams機能を活用し、調査・設計・実装をサブエージェントに役割分担させることで、複雑な開発タスクを効率化する高度なワークフローの解説。",
+    "summaryBody": "Claude Codeに実装された「Agent teams（エージェントチーム）」機能を実務に投入した具体的な知見が共有されています。筆者は、独自のPlan Modeコマンド（`/team-issue`）を定義し、リーダー、ドキュメント調査、DB分析、実装、レビューといった専門的な役割をサブエージェントに割り当てることで、コンテキストの肥大化を防ぎつつ精度を向上させる手法を確立しました。\n\n主なポイント：\n- **ワークフローの分離**: git worktreeと専用のドキュメントリポジトリを組み合わせ、issueごとにクリーンな環境で作業を開始する。\n- **サブエージェントの活用**: `docs-searcher`や`flow-diagram-generator`など、過去に作成したスキルをエージェントとして呼び出し、多角的な調査を実行させる。\n- **ペアプログラミング体制**: 実装フェーズでは「implementer（実装）」と「reviewer（確認）」の2つのサブエージェントを立ち上げ、自動的にコードレビューが回る仕組みを構築。\n- **CLAUDE.mdの最適化**: コンテキスト制限を意識し、`CLAUDE.md`は100行程度に留め、詳細なルールは外部のmarkdownファイルへ誘導する手法を推奨している。",
+    "topics": [
+      "Claude Code",
+      "Agent teams",
+      "AI-driven Development",
+      "LLM",
+      "Workflow"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

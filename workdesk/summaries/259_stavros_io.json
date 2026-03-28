@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T04:54:48.304799+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用した効率的なソフトウェア開発ワークフロー：アーキテクト、開発者、レビュアーの役割分担",
+    "url": "https://www.stavros.io/posts/how-i-write-software-with-llms/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "筆者が数万行規模のコードをLLMで維持するために確立した、最強モデルを「アーキテクト」に据え、別モデルで「開発」「レビュー」を分担させる高度なエージェント連携ワークフロー。",
+    "summaryBody": "本記事は、LLMを駆使して高品質なソフトウェアを高速に構築する Stavros 氏の具体的なワークフローを解説しています。主な特徴は、単一のAIに頼るのではなく、「アーキテクト」「開発者」「レビュアー」という3つの役割にエージェントを分割する点にあります。最強のモデル（Claude Opus等）をアーキテクトとして人間と対話させ、詳細な設計計画を策定。その後、効率的なモデル（Sonnet等）が実装を行い、さらに別のモデル（CodexやGemini等）が批判的なレビューを行います。\n\n著者は、この手法により数万行規模のコードベースでもバグ率を低く抑えられると主張しています。特に重要な洞察として、人間は「コードを書くスキル」よりも「システムを正しく設計し、LLMの誤った判断を軌道修正するスキル」が求められるようになると強調。後半では、自身のプロジェクトにメール機能を追加する際の実録プロンプトが掲載されており、どのようにエッジケースやセキュリティ要件をLLMと詰め、設計を洗練させていくかのプロセスが詳細に示されています。",
+    "topics": [
+      "LLM-assisted development",
+      "AI Agents",
+      "Software Architecture",
+      "Workflow Optimization",
+      "Claude 3.5 Sonnet/Opus"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": "How I write software with LLMs"
+  }
+}

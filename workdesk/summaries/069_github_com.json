@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:36:59.762503+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LogClaw: AIによる根本原因分析と異常検知を備えたマルチテナント対応ログインテリジェンス・スタック",
+    "url": "https://github.com/logclaw/logclaw",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LogClawは、OpenTelemetry準拠のログ収集からAIによる根本原因分析、異常検知、マルチプラットフォームへのチケット発行までを統合した、Kubernetesネイティブなログ管理基盤です。",
+    "summaryBody": "LogClawは、企業のVPC内やオンプレミス環境での運用を想定した、フルスタックのログインテリジェンス・ソリューションです。Apache 2.0ライセンスで公開されており、以下の主要な機能を提供します。\n\n- **AI駆動のインシデント分析**: Claude、OpenAI、またはローカルのOllamaを利用し、ログから障害の根本原因（RCA）を自動的に特定します。\n- **高度なトレース相関**: 5層のエンジンがサービス間のエラー伝播を追跡し、影響範囲（ブラストラジアス）を算出。重複するインシデントを自動で集約します。\n- **標準プロトコルの採用**: IngestionにはCNCF標準のOpenTelemetry (OTLP) を採用し、既存のSDKやエージェントから容易にログを送信可能です。\n- **堅牢なインフラ構成**: Kafka、Flink、OpenSearch、Airflow、Strimziなどの実証済みコンポーネントをHelmチャートを通じて統合的にデプロイできます。\n- **AI開発ツールとの連携**: Model Context Protocol (MCP) サーバー機能を備えており、Claude DesktopやCursorなどのAIエディタから直接ログやインシデントのコンテキストを参照できます。\n\n小規模なDocker Composeによる試行から、ArgoCDを利用した大規模なマルチテナント環境まで、柔軟なスケールが可能です。",
+    "topics": [
+      "OpenTelemetry",
+      "AIOps",
+      "Kubernetes",
+      "Log Management",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "LogClaw — Multi-tenant Helm chart monorepo for deploying the full log intelligence stack"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:30:30.908075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMは画像の中の文字を読むのか",
+    "url": "https://www.baka-ke.com/2026/03/19/llm-read-gazou/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要なLLMがウェブページ上の画像内テキストをどの程度認識できるかを検証し、多くが画像解析ではなく周辺テキストやメタデータに依存している実態を明らかにしています。",
+    "summaryBody": "この記事では、ウェブサイトに含まれる画像内の文字を、ChatGPT、Claude、Gemini、NotebookLM、Perplexityといった主要LLMがどのように認識するかを実地検証しています。検証方法として、意味のない特定の文字列を「画像内のピクセル」「alt属性」「title属性」「画像下のテキスト」など異なる場所に配置し、どのLLMがどの場所の文字列を読み取れるかを調査しました。\n\n検証の結果、多くのLLMは画像そのものをOCR（文字認識）して読んでいるわけではなく、主に「画像の下に書かれたテキスト」を参照していることが判明しました。Geminiはalt属性も認識しましたが、画像内の文字を直接読み取ったモデルはありませんでした。また、Claudeがtitle属性をalt属性として解釈するハルシネーションを起こすといった興味深い挙動も確認されています。この結果から、AIや検索エンジンに正しく情報を伝えるためには、画像内テキストのみに頼らず、テキストによる補完を行うことの重要性が示唆されています。",
+    "topics": [
+      "LLM",
+      "OCR",
+      "アクセシビリティ",
+      "SEO",
+      "ハルシネーション"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 80
+    },
+    "originalTitle": null
+  }
+}

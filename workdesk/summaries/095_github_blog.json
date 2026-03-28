@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:31:32.694697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Squad：GitHub Copilotを利用したリポジトリ内マルチエージェント協調の仕組み",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilotを基盤としたオープンソースプロジェクト「Squad」が、リポジトリ内に特化したAIエージェントチームを構築し、協調して開発・テスト・レビューを行う仕組みを解説しています。",
+    "summaryBody": "この記事では、リポジトリにネイティブに統合されるマルチエージェント・オーケストレーションツール「Squad」の設計思想とアーキテクチャが詳述されています。Squadは、リード、フロントエンド、バックエンド、テスターといった専門的なAIエージェントをリポジトリ内に即座に展開し、自然言語の指示からコード実装やテスト作成を並列で実行させます。特筆すべきは3つの設計パターンです。1つ目は「ドロップボックス・パターン」で、共有の意志決定をmarkdownファイルとしてリポジトリに保存し、エージェント間の非同期な知識共有を実現します。2つ目は「コンテキスト複製」で、各エージェントに独立した推論コールを割り当てることでコンテキスト制限を回避します。3つ目は「明示的メモリ」で、エージェントの役割（チャーター）や履歴を`.squad/`フォルダにGit管理可能な形式で保持します。これにより、単なるチャットボットを超えた、透明性が高く予測可能な「AIチーム」との協調開発が可能になります。",
+    "topics": [
+      "AIエージェント",
+      "GitHub Copilot",
+      "マルチエージェント・システム",
+      "ソフトウェア開発プロセス",
+      "オーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "How Squad runs coordinated AI agents inside your repository"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:24:38.084004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "100人規模のチームにおけるCIの真実：PostHogの事例とAIエージェントによる自動化",
+    "url": "https://www.mendral.com/blog/ci-at-scale",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "毎週3300万件のテストと11億行のログを生成するPostHogのCI環境を例に、規模拡大に伴う「フレイキーテスト」の課題をAIエージェントMendralがいかに解決するかを解説した記事。",
+    "summaryBody": "Dockerの初期メンバーが創業したMendralによる、急成長中のPostHogにおけるCI運用事例の紹介。PostHogは週に57万件以上のジョブ、3300万件のテスト実行、11.8億行のログを生成する巨大なモノレポを運用しています。テスト成功率が99.98%という極めて高い水準にあっても、この規模では毎週数千件の失敗が発生し、開発者の生産性を著しく低下させます。\n\n記事では、AIエージェント「Mendral」がこの課題をどう解決しているかを詳説しています。\n1. **ログの超高速インジェクション**: 診断の前提として、数十億行のログを検索可能な状態で即座に処理する基盤を構築。\n2. **フレイキーテストの特定と修正**: AIが数百の実行結果を横断分析し、タイミング依存や共有状態による不安定なテストを特定。自動で隔離や修正のプルリクエスト（PR）を作成します。\n3. **インテリジェントな通知**: 失敗の影響を受ける適切な開発者のみをSlackで特定・通知し、不要なノイズを排除します。\n\nAIコーディングツールの普及でコード生成量が増える中、CIのボトルネックを解消することが、将来的な開発速度維持の鍵になると提言しています。",
+    "topics": [
+      "CI/CD",
+      "DevOps",
+      "PostHog",
+      "AI Agents",
+      "Flaky Tests"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "What CI Actually Looks Like at a 100-Person Team"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:33:56.082670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント開発を加速させる6つの主要プロトコル解説ガイド：MCPから決済・UIまで",
+    "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GoogleのAgent Development Kit (ADK)を活用し、MCPやA2AなどAIエージェントの相互運用性を高める6つの標準プロトコルの役割と実装方法を包括的に解説しています。",
+    "summaryBody": "この記事では、AIエージェント開発における「独自の統合コードの山」という課題を解決するため、Googleが提唱・サポートする6つの主要プロトコルを解説しています。レストランのサプライチェーン管理エージェントの構築例を通じ、以下のプロトコルの具体像を提示しています。\n\n1. **MCP (Model Context Protocol)**: データベースやツールへの接続を標準化し、個別のAPI開発を不要にします。\n2. **A2A (Agent2Agent)**: 「Agent Card」を用いてエージェント間の相互発見と通信を標準化します。\n3. **UCP (Universal Commerce Protocol)**: 異なるサプライヤー間のショッピング・チェックアウトフローを統一します。\n4. **AP2 (Agent Payments Protocol)**: 取引における承認権限やガードレールを管理し、監査証跡を提供します。\n5. **A2UI (Agent-to-User Interface)**: 18の基本コンポーネントを用いて、エージェントが動的にUIを構成・提供可能にします。\n6. **AG-UI (Agent-User Interaction)**: ストリーミングやツール実行などのイベントをSSE形式で標準化し、フロントエンドへの統合を簡素化します。\n\n開発者は、これらを段階的に導入することで、拡張性が高く、堅牢なエージェントエコシステムを構築できるとしています。",
+    "topics": [
+      "AI Agents",
+      "Model Context Protocol (MCP)",
+      "Agent Development Kit (ADK)",
+      "Software Architecture",
+      "Interoperability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Developer’s Guide to AI Agent Protocols"
+  }
+}

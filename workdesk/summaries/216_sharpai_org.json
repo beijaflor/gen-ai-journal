@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:46:43.957443+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HomeSec-Bench: ローカルLLMがホームセキュリティ分野でGPT-5.4に肉薄する性能を実証",
+    "url": "https://www.sharpai.org/benchmark/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SharpAIが公開したHomeSec-Benchにおいて、MacBook Pro M5上で動作するQwen3.5-9Bが、ホームセキュリティ特化タスクでGPT-5.4に近い93.8%のスコアを達成しました。",
+    "summaryBody": "SharpAI Aegisが発表した「HomeSec-Bench」は、AIホームセキュリティ・アシスタントとしての実用性を評価するためのベンチマークです。このテストは、単なるチャット能力ではなく、ツールの適切な呼び出し、セキュリティ分類（通常から緊急までのトリアージ）、イベントの重複排除、プロンプトインジェクション耐性など、実世界のワークフローを模した15のスイート（全96テスト）で構成されています。評価の結果、ローカルモデルであるQwen3.5-9Bが93.8%の合格率を記録し、クラウドモデルの最高峰であるGPT-5.4（97.9%）にわずか4.1ポイント差まで迫りました。特に、Qwen3.5-35B-MoEは最初のトークン生成時間（TTFT）でクラウドモデルを凌駕する435msを記録しており、低遅延かつ完全なデータプライバシー、ゼロAPIコストというローカルAIの優位性を証明しています。Apple Siliconなどのコンシューマー向けハードウェアで、クラウド級の高度な推論が実用的であることを示す重要なデータです。",
+    "topics": [
+      "HomeSec-Bench",
+      "Local LLM",
+      "Qwen3.5",
+      "Edge AI",
+      "Benchmark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "HomeSec-Bench — Local AI vs Cloud Benchmark | SharpAI Aegis"
+  }
+}

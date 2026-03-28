@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:08:18.132683+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日本語の手書きメモを書き起こせるOCRを探すために21モデルを片っ端から試した話",
+    "url": "https://nyosegawa.com/posts/japanese-handwriting-ocr-comparison/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "日本語の手書きメモOCR精度を検証するため、Gemini 3.1、GPT-5.4、YomiTokuなど21種類のAPI・OSSモデルを比較し、Geminiシリーズが最高精度を記録したことを示す実証レポート。",
+    "summaryBody": "日本語の手書き文字は読み順や形状の複雑さからOCRの難易度が高い。本記事では、Hungarian NLSやCERなどの指標を用い、計21の主要VLMおよびOCRモデルを比較検証している。結果として、Gemini 3.1 Pro Previewが最高精度（NLS 0.924）を達成し、軽量版のFlash Liteも非常に高いコストパフォーマンスを示した。API勢ではGoogle Cloud VisionやAzure AI Visionが速度面で圧倒的だが、OSS勢では日本語特化のYomiTokuや軽量なGLM-OCRが健闘。一方で、GPT-5.4は日本語手書きにおいて苦戦し、DeepSeekやMistral等のモデルでは多言語ハルシネーション（中国語混入等）が見られた。Modalを用いた実行環境や、アノテーションツールの自作、評価指標の設計など、エンジニアリングの側面からも詳細に解説されている。",
+    "topics": [
+      "OCR",
+      "Gemini",
+      "VLM",
+      "機械学習",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

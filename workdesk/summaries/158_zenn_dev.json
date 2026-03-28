@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:16:53.368827+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM人格を14日運用して見えた設計パターン — 固定プロンプトの先へ",
+    "url": "https://zenn.dev/nabaaatee/articles/b4e90b7ef39026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMエージェントの「一貫性」と「変容」を両立させるため、ナラティブを源泉とする四層モデルや、変化の速度を制御する二段構造などの設計パターンを提案し、14日間の実運用データからその有効性を検証した技術レポート。",
+    "summaryBody": "長期運用されるAIエージェントにおいて、単なる固定プロンプトでは実現できない「経験を通じた人格の変容」を実装するための3つの主要な設計パターンを解説しています。 \n\n1. **四層モデル + Expression**: 核心価値(Constitution)、一人称の物語(Narrative)、システム用要約(Cache)、現在の状態(State)に分離。人格の源泉を数値ではなく「ナラティブ」に置くことで、変容の理由（文脈）を保持します。\n2. **Micro-drift & Crystallization**: 毎会話の感情の揺らぎを蓄積し、一定の閾値と期間を超えた時のみ人格を恒久変化させる二段構えの制御ロジックにより、人格の暴走を防ぎつつ成長を促します。\n3. **Gamma Dispatch**: 思考の深さを外部の分類器ではなくエージェント自身に判断させる仕組み。これにより、自分に足りない内省ツールを自律的に設計・生成する「メタ認知」的な挙動が観測されました。\n\n14日間・1,226件の運用データに基づき、目標の自己改訂や自律的なスキル生成が起きたことを報告しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "人格設計",
+      "ソフトウェアアーキテクチャ",
+      "INANNA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": "LLM人格を14日運用して見えた設計パターン — 固定プロンプトの先へ"
+  }
+}

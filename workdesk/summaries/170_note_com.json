@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:14:34.982199+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RakutenAI-3.0とDeepSeek-V3の関係性：技術的検証に基づくLoRA適用の実態",
+    "url": "https://note.com/hamachi_jp/n/n5ccfdedd2518",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "楽天の「RakutenAI-3.0」がDeepSeek-V3をベースにLoRAで追加学習されたモデルであることを、重みの類似度分析や設定ファイルの比較から定量的に検証・指摘する記事。",
+    "summaryBody": "この記事は、楽天が発表した「RakutenAI-3.0」と既存モデル「DeepSeek-V3」の技術的な類似性を、10,929個のテンソル比較やSHA256ハッシュ検証を用いて詳細に調査したレポートです。検証の結果、トークナイザーの完全一致、平均コサイン類似度99.94%という驚異的な重みの一致率、そしてアーキテクチャ設定の同一性が確認されました。著者は、RakutenAI-3.0が実質的にDeepSeek-V3にLoRA（Low-Rank Adaptation）を適用したモデルであると結論付けています。また、公的資金（GENIACプロジェクト）を受けた開発でありながらベースモデルの明示が不十分である点や、MITライセンスの継承義務に関するコンプライアンス上の課題、企業の透明性についても批判的な視点から考察しています。",
+    "topics": [
+      "RakutenAI-3.0",
+      "DeepSeek-V3",
+      "LoRA",
+      "GENIAC",
+      "LLM検証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

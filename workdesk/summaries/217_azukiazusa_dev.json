@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:46:44.827172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Discord から Claude Code とやり取りしてみた",
+    "url": "https://azukiazusa.dev/blog/discord-claude-code/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code v2.1.80の新機能「Channels」を活用し、DiscordからAIエージェントのセッションを遠隔操作するための具体的な構築手順を解説した記事。",
+    "summaryBody": "Claude Code v2.1.80よりResearch Preview版として公開された「Claude Code channels」機能を用いて、Discordから実行中のClaude Codeを操作する方法を詳説しています。チャンネルはMCP（Model Context Protocol）サーバーとして動作し、外部サービスからの入出力を可能にします。\n\n主な内容は以下の通りです：\n- **実行環境の準備**: Discordプラグインの実行にはBun（v1.3.11以上）が必要です。\n- **Discord Botの設定**: Developer PortalでのBot作成、トークン発行、およびMessage Content Intentの有効化手順。\n- **プラグイン導入**: 公式マーケットプレイスからのインストールと `/discord:configure` によるトークン設定。\n- **ペアリングと起動**: `--channels` オプションを付与したClaude Codeの起動と、Discord上でのペアリングコード認証プロセス。\n- **利用可能なツール**: メッセージ送信（reply）、リアクション（react）、履歴取得（fetch_messages）など、提供されるMCPツールの解説。\n\nまた、セキュリティ向上のためのDMポリシー設定（allowlistへの変更）についても触れられており、実運用を想定したガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "Discord Bot",
+      "MCP (Model Context Protocol)",
+      "Bun",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

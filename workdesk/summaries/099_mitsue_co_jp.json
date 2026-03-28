@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:30:42.050169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIフレンドリーなFigmaデータとは？（第二弾）",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202603/18_0949.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Figmaの設計品質（バリアブルやコンポーネントの活用）が、生成AIによる実装コードの保守性と再利用性に直結することを検証した記事。",
+    "summaryBody": "Figmaの「AIフレンドリーさ」がAIによるコード生成結果にどのような影響を与えるかを比較検証した記事です。同じプロンプトを使用しても、バリアブルを適切に設定した「AIフレンドリーなデータ」からは、CSS変数が定義された保守性の高いコードが出力される一方、そうでないデータでは値がハードコードされる傾向が確認されました。また、コンポーネント化の有無によって、生成されるHTML/CSSが役割ベースのクラス名（再利用可能）になるか、構造依存のセレクタ（再利用困難）になるかという、再利用性の面でも大きな差が生じます。AIによる高品質なコード生成を安定させるためには、プロンプトの工夫以前に、Figma上での設計そのものをAIが解釈しやすい形（AIフレンドリー）に整えることが極めて重要であると結論付けています。",
+    "topics": [
+      "Figma",
+      "生成AI",
+      "CSSバリアブル",
+      "Design-to-Code",
+      "フロントエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

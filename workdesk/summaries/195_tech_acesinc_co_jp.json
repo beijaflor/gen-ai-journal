@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:09:31.337835+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "#5｜AIが書いたコードをどう本番に出すか — リリース安全基盤の設計と展望",
+    "url": "https://tech.acesinc.co.jp/entry/2026/03/18/083000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI生成コードの増加に伴う人的レビューの限界を、Feature Flagや自動エラー分析を組み合わせた「壊れても速く直せる」リリース安全基盤の構築によって解決する取り組みの紹介。",
+    "summaryBody": "AI駆動開発において、AIが生成する大量のコードを人間がすべてレビューすることはスケーラビリティの面で限界があります。本記事では、この課題に対し「壊れないようにする（予防）」から「壊れても速く検知し、速く直す（回復力）」への発想の転換を提案しています。具体的な設計として、以下の4つの柱を掲げています。\n\n1. **Progressive Delivery**: DevCycleを活用したFeature Flagにより、自社環境から段階的にロールアウトし、影響を最小化する。\n2. **Observability**: Sentry等の監視基盤を整え、ノイズを排除した信頼性の高いアラート体制を構築する。\n3. **Error Triage Automation**: エラー検知からClaudeによる原因調査、修正PRの生成までを一気通貫で自動化するパイプラインの検証。\n4. **SLO / Error Budget**: リリース可否の判断を主観ではなく、サービスレベル目標に基づいたデータ駆動で行う。\n\n最終的には、AIがメトリクスに基づき自律的にロールアウト判断やロールバックを行う「Phase 4」の自律型開発サイクルの実現を目指しており、伝統的なエンジニアリングプラクティスをAI時代に合わせて再定義する先駆的な事例となっています。",
+    "topics": [
+      "AI駆動開発",
+      "リリースエンジニアリング",
+      "Feature Flag",
+      "オブザーバビリティ",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

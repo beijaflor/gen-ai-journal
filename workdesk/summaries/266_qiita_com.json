@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T12:43:35.976427+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skills に Agent Teams を組み込む 作る前に議論させるチーム構成",
+    "url": "https://qiita.com/ogaryo/items/e13990b7b1cbf4c20166",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSkillに、作成前段階で複数の専門家エージェント（Agent Teams）を戦わせる議論フェーズを組み込み、多角的な視点から成果物の質を高める設計パターン。",
+    "summaryBody": "この記事では、Claude Codeのカスタムワークフロー（Skills）に「Agent Teams」を導入し、生成前にエージェント同士を議論させることで出力の質を向上させる手法を解説しています。従来の単一エージェントでは視点が偏りがちでしたが、構成・技術・読者体験などの異なる役割を持つ3つのエージェントを並列起動し、特定のプロトコル（感情の表明、引用、立場変化の明示、最低2往復の往復）に基づいた議論を行わせることで、より洗練された構成案を導き出します。実装には汎用的な議論ルールを定義する`team-workflow.md`とタスク特化の`debate-team.md`を使用し、既存のSkillに`--teams`オプションとして組み込む具体的なコードや設計指針が提示されています。このパターンは記事執筆だけでなく、コードレビューやシステム設計などの「正解が一つではない」意思決定を伴うタスクに非常に有効です。",
+    "topics": [
+      "ClaudeCode",
+      "AgentTeams",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

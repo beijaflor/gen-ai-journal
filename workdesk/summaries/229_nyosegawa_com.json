@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:53:39.013945+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codex ユーザーのための誰でもわかるHarness Engineeringベストプラクティス",
+    "url": "https://nyosegawa.com/posts/harness-engineering-best-practices-2026/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの自律稼働と出力を安定させるための補助機構「Harness Engineering」について、2026年時点での最新ツールスタックと実装戦略を網羅した決定版ガイド。",
+    "summaryBody": "この記事は、Claude CodeやOpenAI CodexといったCoding Agentの性能を最大化するための「Harness Engineering（ハーネスエンジニアリング）」の概念と実践手法を詳説しています。エージェントが古い情報を真実と誤認する「コンテキストの腐敗」を防ぐためのリポジトリ衛生管理から、PostToolUse Hookを利用したミリ秒単位の高速リント・フォーマットによる品質強制ループ、アクセシビリティツリーを活用したWeb/モバイル/デスクトップ全方位のE2Eテスト戦略までをカバー。特に、OxlintやBiomeといったRust製ツールの活用、ADR（アーキテクチャ決定記録）と実行可能ルールの結合、AI/MLパイプラインの評価フレームワークなど、プロンプトの指示に頼らず「仕組み」でエージェントを制御する具体的な方法論を提示しています。最終的には、プラットフォームごとの特性を活かしたハイブリッド戦略や、段階的に導入可能な「最小実行可能ハーネス(MVH)」のロードマップをまとめています。",
+    "topics": [
+      "Harness Engineering",
+      "Claude Code",
+      "AI Agent",
+      "CI/CD",
+      "Software Quality Assurance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:19:31.250346+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントは「プロンプトで書く」から「対話を通じて育てる」という時代へ ─ Claude Codeで実践",
+    "url": "https://qiita.com/nogataka/items/1b6eea9fb18f242432d6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "従来の静的なプロンプト定義の限界を突破するため、対話ログから知識を抽出・構造化する「育成優先開発（NFD）」手法をClaude Codeで実践する具体的なフレームワークを提案している。",
+    "summaryBody": "本記事は、2026年3月に発表された「NFD（Nurture-First Development：育成優先開発）」という新しいパラダイムを、Claude Codeを用いて実践する方法を解説しています。従来、AIエージェントの開発は「プロンプトを完璧に記述する」ことに注力されてきましたが、プロジェクト固有の暗黙知や進化するルールを捉えきれない「コンフィギュレーション・ギャップ」が課題でした。NFDでは、エージェントを「育てる」対象と捉え、3層の認知アーキテクチャ（基盤層：CLAUDE.md、スキル層：.claude/skills/、経験層：.claude/memory/）を用いて知識を管理します。日常の対話から[DECISION]や[ERROR]をタグ付けして記録し、週に一度の「知識結晶化サイクル（KCC）」を通じて、生のログを汎用的なスキルへと昇華させるプロセスを提唱しています。金融アナリストへの適用事例では、この手法により分析の有用性が大幅に向上したことが報告されており、AIとの協働を「設定」から「共同進化」へと転換させる実用的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "NFD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

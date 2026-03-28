@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T12:43:39.100418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Deep Agents入門 — 計画・メモリ・サブエージェントを備えたOSSエージェントハーネス",
+    "url": "https://qiita.com/kai_kou/items/5a94750253b0b7cb6eb3",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LangChainが発表したDeep Agentsは、長期的なタスクを解決するために計画・仮想FS・サブエージェント機能を備えた、モデル非依存のオープンソース型エージェントフレームワークです。",
+    "summaryBody": "Deep Agentsは、LangChainがLangGraphランタイム上に構築した、長期的かつ複数ステップのタスクに特化したOSSエージェントハーネスです。従来のLLMエージェントが直面していた「コンテキストウィンドウの圧迫」や「ステート管理の破綻」という課題を、3つの中核機能で解決します。まず、`write_todos`ツールによる明示的なタスク計画、次に仮想ファイルシステムによる効率的なコンテキスト管理、そして`task`ツールによる専門化されたサブエージェントの生成です。Terminal Bench 2.0においてClaude Sonnet 4.5使用時にClaude Codeと同等の性能（約42.65%）を記録しており、MITライセンスの下、AnthropicやOpenAIなど15以上のモデルプロバイダーで利用可能です。また、NVIDIAとの連携によりエンタープライズ規模でのスケーラブルな運用もサポートしています。",
+    "topics": [
+      "Deep Agents",
+      "LangChain",
+      "LangGraph",
+      "AI Agent",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

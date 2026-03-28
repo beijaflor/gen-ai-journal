@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:08:42.212955+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成コンテンツにおける認知バイアス誘導の定量化",
+    "url": "https://aclanthology.org/2025.ijcnlp-long.155/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが生成する要約やファクトチェックが、フレーミングバイアスやハルシネーションを通じて人間の購買意欲を32%高めるなど、意思決定に深刻な影響を与えることを定量化した研究。",
+    "summaryBody": "大規模言語モデル（LLM）がショッピングレビューや医療診断などの意思決定プロセスに組み込まれる中、その生成内容がユーザーに与えるバイアスの影響を調査した論文です。研究チームは5つのLLMファミリーを対象に、要約とニュースのファクトチェックタスクで評価を実施。その結果、全モデル平均で26.42%のケースで文脈の感情を変化させる「フレーミングバイアス」が、60.33%の確率で「ハルシネーション」が発生していることが判明しました。特に衝撃的な結果として、人間がオリジナルのレビューではなくLLM生成の要約を読んだ場合、その製品を購入する確率が32%向上することが示されました。本論文ではこれらの問題を解決するために18種類の緩和手法を検証し、特定のターゲットを絞った介入の有効性を実証しています。",
+    "topics": [
+      "LLM",
+      "認知バイアス",
+      "意思決定",
+      "ハルシネーション",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Quantifying Cognitive Bias Induction in LLM-Generated Content"
+  }
+}

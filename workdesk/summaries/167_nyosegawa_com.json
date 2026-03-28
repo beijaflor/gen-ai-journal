@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:15:07.259997+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの使用率がステータスラインに表示できるようになったので表示用のスクリプトを作った話",
+    "url": "https://nyosegawa.com/posts/claude-code-statusline-rate-limits/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code v2.1.80で追加されたrate_limitsフィールドを活用し、5時間および7日間の使用率をステータスラインに美しく表示する5つのPythonスクリプトを紹介しています。",
+    "summaryBody": "Claude Code v2.1.80から、ステータスライン用のスクリプトに渡されるJSONデータに`rate_limits`フィールド（5時間・7日間の使用率とリセット時刻）が追加されました。本記事では、このデータを活用してターミナルのステータスラインに使用状況をリアルタイム表示する方法を解説しています。設定ファイル（settings.json）への追記方法に加え、ミニマルなドット形式、スパークライン、円グラフ風アイコン、高精細プログレスバー、点字パターンを用いたドット形式といった、5つの視覚的バリエーションのPythonスクリプト全文が公開されています。各スクリプトは使用率に応じて緑から赤へ変化するグラデーション機能を備えており、リソース管理を視覚的に効率化できます。",
+    "topics": [
+      "Claude Code",
+      "Rate Limits",
+      "Python",
+      "Status Line",
+      "CLI Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:24:51.007725+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを3D開発で活用するためのヒント：視覚的フィードバックループの構築",
+    "url": "https://www.davesnider.com/posts/claude-3d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "3D空間の推論が苦手なClaudeに対し、自動スクリーンショット撮影と検証のループを構築することで、複雑な3Dジオメトリ制作を効率化する手法の紹介。",
+    "summaryBody": "Dave Snider氏による、Claude Codeを用いた3D Webアプリ（Three.js等）開発の効率化テクニックを解説した記事です。Claudeは一般的なコード生成には長けていますが、3D空間の空間推論やSTLバイナリの解釈には限界があり、しばしば誤った出力をします。これを克服するため、筆者は「ジオメトリ反復ワークフロー」という自動化ループを提案しています。具体的には、コード変更、ジオメトリ再生成、特定角度からのスクリーンショット撮影（Playwright等を使用）、そしてその画像に基づいた自己修正というサイクルを構築します。開発者が手動で画像をフィードバックする代わりに、Claude自身がカメラを操作し、デバッグ用のマーカーを配置して検証できる「共通言語としてのツール」を用意することが、複雑なタスクを成功させる鍵であると説いています。",
+    "topics": [
+      "Claude",
+      "Three.js",
+      "3D開発",
+      "LLMワークフロー",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Claude tips for 3D work"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T04:54:51.309237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "npm パッケージに Agent Skills を同梱する TanStack intent",
+    "url": "https://azukiazusa.dev/blog/tanstack-intent-to-bundle-agent-skills-with-npm-packages/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェント向けに最適化されたドキュメント「Agent Skills」をnpmパッケージに同梱し、ライブラリの更新と同期させる新ツール @tanstack/intent の活用ガイド。",
+    "summaryBody": "### 概要\nAIコーディングエージェント（Claude CodeやCursorなど）がライブラリの仕様を正確に把握するためには、適切なコンテキストの提供が不可欠です。本記事では、ライブラリのメンテナが Agent Skills を生成・検証し、npmパッケージの一部として配布することを支援するツール **@tanstack/intent** を解説しています。\n\n### 主な内容\n- **背景と課題**: LLMの学習データに含まれない最新ライブラリや破壊的変更に対し、手動でのスキル管理（CLAUDE.mdなど）は更新漏れや陳腐化のリスクがあります。\n- **利用者側のワークフロー**: `intent list` で node_modules 内のスキルを検出し、`intent install` を通じてエージェント設定ファイルへ自動的にタスクマッピングを行う手順を紹介しています。\n- **メンテナ側のワークフロー**: `intent scaffold` を用いたAIによるスキル自動生成、`intent validate` による形式チェック、そして `package.json` への統合方法を詳説しています。\n- **エコシステム**: スキルが同梱されたパッケージを確認できる「Agent Skills Registry」や、CIでの検証を自動化する GitHub Actions のテンプレートについても触れています。\n\n### 結論\n@tanstack/intent を導入することで、ライブラリのバージョンアップと同時にエージェントの知識も最新の状態に保たれるようになり、開発者がエージェントを通じてより高品質なコードを生成できる環境が整います。",
+    "topics": [
+      "TanStack",
+      "Agent Skills",
+      "npm",
+      "AI Coding Agents",
+      "DX (Developer Experience)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:41:28.923060+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Hooks 実践パターン集 — 開発ガードレールと自動化の設計",
+    "url": "https://qiita.com/76Hata/items/81fed794acef9adb82c6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks機能を活用し、開発時の危険な操作のブロックや自動フォーマットなどのガードレールを構築するための具体的な実装パターンを解説したガイド。",
+    "summaryBody": "Claude CodeのHooks機能は、AIエージェントの動作フロー（ツールの実行前後など）にシェルスクリプトを差し込み、動作の制御や自動化を可能にする仕組みです。本記事では、このHooksを用いた実践的な4つのパターンを解説しています。\n\n1. **危険操作のブロック**: `PreToolUse`イベントで`npm`の使用を禁止して`bun`に強制したり、本番DBへの接続コマンドを検知してブロックする方法。\n2. **ファイル編集の制御**: ロックファイルの直接編集を禁止し、適切なパッケージマネージャの使用を促す設計。\n3. **自動フォーマット**: `PostToolUse`で編集後にPrettierやRuffを自動実行し、コード品質を維持するパターン。\n4. **非同期ログ収集**: `async: true`設定を用いて、AIの応答速度を落とさずに操作ログを記録する方法。\n\n設計のベストプラクティスとして、指示レベルの`CLAUDE.md`と強制力を持つ`Hooks`の使い分け、およびスクリプトをリポジトリに含めてチームで共有する運用の重要性を強調しています。",
+    "topics": [
+      "Claude Code",
+      "AIコーディングエージェント",
+      "開発自動化",
+      "ガードレール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

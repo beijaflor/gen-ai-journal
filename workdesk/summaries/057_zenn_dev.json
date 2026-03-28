@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:39:20.860269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Playwright + OWASP ZAP + Claude Code で E2E テストから脆弱性診断まで一気通貫でできるかやってみた",
+    "url": "https://zenn.dev/rescuenow/articles/7192f8ca6ebe48",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PlaywrightのE2EテストシナリオをOWASP ZAPのプロキシとして流用し、Claude CodeによるAI補助を組み合わせて効率的に脆弱性診断を行う手法の検証レポート。",
+    "summaryBody": "### 概要\nPlaywrightで作成したE2Eテストを、セキュリティスキャンツール「OWASP ZAP」のプロキシ経由で実行することで、既存のテスト資産を脆弱性診断に再利用する手法を解説しています。AIエージェントのClaude Codeを活用し、アプリ構築からテスト作成、診断実行までを効率化しています。\n\n### 検証のステップと成果\n- **E2Eテストの流用**: Playwrightの実行時に環境変数を指定するだけで、全トラフィックをZAPに記録。これを元にアクティブスキャンを実行することで、実挙動に基づいた診断が可能になります。\n- **診断結果**: 認証の欠如やCSP未設定、Stored XSSの可能性などを実際に検出。一方で、ORM（SQLAlchemy）やPydanticの活用により、SQLインジェクションやMass Assignmentといった典型的な脆弱性が防げていることも確認しました。\n- **Claude Codeの活用**: プログラミングだけでなく、Docker構成の作成やテストコードの修正、診断レポート作成までをAIがサポートし、開発者の負担を大幅に軽減しています。\n\n### 留意点と結論\nZAPはビジネスロジックの不備（他人のデータ操作など）の検出は難しく、誤検知の判断にはセキュリティ知識が必要です。しかし、一次スクリーニングとしてCI/CDや開発フローに組み込む価値は非常に高いと結論づけています。",
+    "topics": [
+      "Playwright",
+      "OWASP ZAP",
+      "Claude Code",
+      "脆弱性診断",
+      "E2Eテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

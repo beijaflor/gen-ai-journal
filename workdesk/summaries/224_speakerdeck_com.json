@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:46:49.804259+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様漏れ実装漏れをなくすトレーサビリティAI基盤のご紹介",
+    "url": "https://speakerdeck.com/orgachem/introduction-to-a-traceability-ai-platform?slide=11",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "コインチェック社が開発した、Gemini 1.5 Flashを活用して開発成果物間の整合性を自動検証し、仕様漏れや実装漏れを早期発見するトレーサビリティ基盤の事例紹介。",
+    "summaryBody": "ソフトウェア開発において、要求・仕様・実装・テスト間の整合性を保つ「トレーサビリティ」の確保は、手戻りを防ぐために不可欠ですが、手動での維持管理には多大なコストがかかります。コインチェック株式会社は、Gemini 1.5 Flashを用いたAIトレーサビリティ基盤を構築し、この課題を解決しました。\n本システムは、ConfluenceやFigma、Google Drive等から成果物を自動取得・分解し、LLMによる大規模な並列処理で成果物間の関連度評価と矛盾検知を行います。コンテキストウィンドウの制限に対応するため、関連度を先に分析し、必要なコンテキストのみを抽出して矛盾検証を行う工夫がなされています。導入の結果、人手では見落としがちな漏れの早期発見が可能になり、月額1万円程度の低コストな運用を実現しています。",
+    "topics": [
+      "トレーサビリティ",
+      "Gemini 1.5 Flash",
+      "ソフトウェア品質",
+      "AI自動化",
+      "変更管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
