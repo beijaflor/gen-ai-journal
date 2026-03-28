@@ -3,6 +3,9 @@
 
 ## Main List
 
+- [x] 276. https://qiita.com/miruky/items/dfb3509ade7d4ad67b90
+- [x] 275. https://kanfa.macbudkowski.com/vibecoding-cryptosaurus
+- [x] 274. https://zenn.dev/ryuka_lucas/articles/agent-teams-ai-test-cheating
 - [x] 273. https://zenn.dev/okikusan/articles/0f8295e7ecaa19
 - [x] 272. https://zenn.dev/komlock_lab/articles/gsd-guide-handson
 - [x] 271. https://alibaba.github.io/page-agent/
