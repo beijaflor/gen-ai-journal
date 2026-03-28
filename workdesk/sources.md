@@ -3,6 +3,19 @@
 
 ## Main List
 
+- [x] 273. https://zenn.dev/okikusan/articles/0f8295e7ecaa19
+- [x] 272. https://zenn.dev/komlock_lab/articles/gsd-guide-handson
+- [x] 271. https://alibaba.github.io/page-agent/
+- [x] 270. https://qiita.com/miruky/items/026aeee6b59f78df5e9d
+- [x] 269. https://zenn.dev/happy_elements/articles/046faa4f61d98f
+- [x] 268. https://zenn.dev/acntechjp/articles/55d51a1c1ace15
+- [x] 267. https://qiita.com/kai_kou/items/5a94750253b0b7cb6eb3
+- [x] 266. https://qiita.com/ogaryo/items/e13990b7b1cbf4c20166
+- [x] 265. https://qiita.com/Sh1n0g1/items/bb35d6c224634237f968
+- [x] 264. https://qiita.com/nogataka/items/d1971048572bc23e74d0
+- [x] 263. https://qiita.com/nogataka/items/083efbdad4d3e011849b
+- [x] 262. https://qiita.com/nogataka/items/1e35dd4f573547626aff
+- [x] 261. https://marmelab.com/blog/2026/03/20/software-will-never-die.html
 - [x] 260. https://acairns.co.uk/posts/cognitive-debt
 - [x] 259. https://www.stavros.io/posts/how-i-write-software-with-llms/
 - [x] 258. https://news.ycombinator.com/item?id=47394291

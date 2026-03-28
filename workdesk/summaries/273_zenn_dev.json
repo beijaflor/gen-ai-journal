@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T13:16:48.254496+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GraphRAGを実際に構築して分かった「使うほど賢くなるAI」の仕組み",
+    "url": "https://zenn.dev/okikusan/articles/0f8295e7ecaa19",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ナレッジグラフとRAGを組み合わせ、文書間の関係性を構造化することで、データが蓄積されるほど推論能力と全体俯瞰能力が向上するGraphRAGの仕組みを技術的に解説した記事です。",
+    "summaryBody": "従来のRAG（検索拡張生成）が持つ「点（テキスト断片）の検索」という限界を、知識の繋がりを表現する「ナレッジグラフ」で解決するGraphRAGの構築知見をまとめています。GraphRAGは、文書、チャンクに加え、エンティティ（実体）とコミュニティ（知識のグループ）という4層構造を持ち、Leidenアルゴリズムによるコミュニティ検出を用いて全体俯瞰的な質問（Global Search）への回答を可能にします。特筆すべきは「知識の自動循環ループ」であり、新しい文書が追加されるたびに既存のエンティティと自動で関係性が紐付けられるため、人間が介在せずともシステムが成長し続ける仕組みを詳述しています。記事内ではNeo4jを用いた具体的なグラフスキーマやCypherクエリ、トークン効率の比較、導入の判断基準までエンジニア向けに体系的に整理されています。",
+    "topics": [
+      "GraphRAG",
+      "ナレッジグラフ",
+      "RAG",
+      "LLM",
+      "Neo4j"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}
