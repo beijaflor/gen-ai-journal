@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:34:50.890041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MicroGPTの仕組みを視覚的に理解する：200行のPythonコードで紐解くLLMの核心",
+    "url": "https://growingswe.com/blog/microgpt",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Andrej Karpathy氏による200行の純粋なPython実装をベースに、トークナイズからアテンション、バックプロパゲーションまで、LLMの動作原理をインタラクティブに解説するガイド。",
+    "summaryBody": "この記事は、ライブラリを一切使わずにGPTを実装したAndrej Karpathy氏の200行のスクリプト「MicroGPT」を用い、大規模言語モデル（LLM）の内部メカニズムを初心者向けに視覚化しています。解説は、テキストを数値化する「トークナイザー」から始まり、次に来る文字を予測する「次トークン予測」の概念、Logitsを確率に変換する「Softmax」、そして予測の誤りを測定する「交差エントロピー誤差」へと進みます。\n\nさらに、自動微分を実現する「Valueクラス」によるバックプロパゲーションの仕組みや、Transformerの核心である「アテンション（注意）」メカニズム、そしてデータの流れを安定させる「RMSNorm」や「残留接続（Residual Connection）」についても、実際のコード断片と実行ステップを交えて説明しています。最終的には、学習したモデルが「温度（Temperature）」設定によってどのように多様なテキスト（人の名前など）を生成するかの推論プロセスまでを網羅しています。ChatGPTのような巨大なシステムも、基本的にはこの200行のコードと同じ原理の積み重ねであることを理解させてくれる優れた教材です。",
+    "topics": [
+      "LLM",
+      "Transformer",
+      "Python",
+      "機械学習",
+      "Deep Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "MicroGPT explained interactively"
+  }
+}

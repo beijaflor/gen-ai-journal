@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:07:21.332153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIネイティブなRSSリーダー「Oksskolten」- 全記事の全文抽出とAI要約を標準搭載",
+    "url": "https://github.com/babarot/oksskolten",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "「Oksskolten」は、デフォルトで全記事の全文抽出を行い、AI要約・翻訳やMCPを通じたチャット機能を備えた、Node.jsベースのAIネイティブRSSリーダーです。",
+    "summaryBody": "## Oksskolten: RSSリーダーの新しい形\nOksskoltenは、従来のRSSリーダーがタイトルと一部の概要のみを表示するのに対し、「全記事を全文抽出する」ことをデフォルトの動作とするAIネイティブなRSSリーダーです。MozillaのReadabilityと500以上のノイズ除去パターンを組み合わせることで、広告やナビゲーションを除去したクリーンなMarkdown形式でコンテンツを保存します。\n\n### 主な特徴\n- **全文抽出と永続化**: 全ての記事をソースから取得し、ローカルに保存。元のサイトにアクセスせずに完結する読書体験を提供します。\n- **AI機能の統合**: Anthropic、Gemini、OpenAIを利用した要約・翻訳機能に加え、MCP（Model Context Protocol）を介した対話型チャットが可能です。\n- **高度な検索**: Meilisearchを搭載し、アーカイブされた全記事の全文検索を高速に行えます。\n- **スマートなフェッチ**: フィードの更新頻度に応じた適応型スケジューリングや、トラッキングパラメータの削除、重複排除ロジックを備えています。\n\n### 技術スタックと導入\nNode.js 22、React 19、SQLite (libsql) を採用しており、単一のDockerコンテナで動作するため、セルフホストが非常に容易です。MinifluxやFreshRSSといった既存ツールが全文抽出をオプション（またはCSSセレクタ設定が必要）としているのに対し、AI活用を前提とした設計がなされています。",
+    "topics": [
+      "RSS Reader",
+      "Artificial Intelligence",
+      "Self-hosted",
+      "LLM",
+      "Model Context Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - babarot/oksskolten: 🏔️ The AI-native RSS reader"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:38:57.039948+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自宅で動くLLMをどこからでも呼び出せる「LM Link」、Tailscale×LM Studio連携で実現",
+    "url": "https://smhn.info/202603-lm-link-remote-llm",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TailscaleのメッシュVPN技術を活用し、自宅のGPUマシンで動くローカルLLMに外出先から安全かつ簡単にアクセスできる新機能「LM Link」が発表されました。",
+    "summaryBody": "VPNサービスのTailscaleとローカルLLM実行アプリのLM Studioが提携し、新機能「LM Link」を発表しました。この機能は、Tailscaleのライブラリ「tsnet」をLM Studioに組み込むことで、複雑なネットワーク設定やポート開放を行うことなく、外出先のデバイスから自宅や職場のGPUマシン上のLLMをローカル環境と同様に操作できるようにするものです。\n\n主な特徴は以下の通りです：\n- **高度なセキュリティ**: WireGuardベースの暗号化通信により、プロンプトや推論結果などのプライバシーが保護され、外部バックエンドから閲覧されることはありません。\n- **簡単なセットアップ**: GUIまたはCLI（lms link enable）から数クリックで設定が完了し、ユーザーはOSのソケット設定などを意識する必要がありません。\n- **広範な互換性**: macOS、Windows、Linuxに対応し、個人開発者のリモート利用からチーム内でのGPUリソース共有、機密性の高いオンプレミス運用まで幅広く対応します。\n\n現在はプレビュー段階として、最大2ユーザー・合計10台までのデバイス接続が無料で提供されています。",
+    "topics": [
+      "LLM",
+      "LM Studio",
+      "Tailscale",
+      "ローカルAI",
+      "GPUリソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

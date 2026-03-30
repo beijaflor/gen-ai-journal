@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:22:43.596466+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cook: Claude CodeやCodexを高度に制御するAIオーケストレーションCLI",
+    "url": "https://rjcorwin.github.io/cook/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "「cook」は、AIコーディングエージェントに対して反復実行、自動レビュー、並列比較などのワークフローを直感的なコマンドで指示できるCLIツールです。",
+    "summaryBody": "cookは、Claude Code、Codex、OpenCodeといったAIエージェントの挙動をオーケストレートするための強力なコマンドラインインターフェースです。主な機能は「Work（プロンプト実行）」「Loop（反復・レビュー）」「Composition（並列実行・合成）」の3つの要素で構成されています。\n\n具体的には、タスクをN回繰り返す「xN」、レビュー結果に基づいて修正ループを回す「review」、異なるアプローチを並列実行して最適なものを選ぶ「vN」や「vs」といったオペレーターを組み合わせて複雑な自動化を構築できます。Git worktreeを利用した分離実行やDockerサンドボックス、APIのレートリミットを自動回避する待機機能など、実用的な開発ワークフローを想定した設計が特徴です。プロジェクトごとに実行モデルや条件を定義できる設定ファイルもサポートしており、AIによる開発自動化を一段階上のレベルへ引き上げます。",
+    "topics": [
+      "CLI Tool",
+      "AI Agent",
+      "Claude Code",
+      "LLM Orchestration",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "cook — A simple CLI for orchestrating Claude Code, Codex, and OpenCode"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:38:23.347534+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code SkillsでRailsアップグレードを仕組み化した話",
+    "url": "https://developers.freee.co.jp/entry/rails-upgrade-by-claude-skills",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのSkills機能を活用し、Rails 7から8.1へのアップグレード作業を5つのステップに構造化・パイプライン化することで、精度向上と自動ドキュメント化を実現した事例。",
+    "summaryBody": "freeeの開発チームによる、Claude Codeの「Skills」機能を用いたRailsアップグレードの自動化・仕組み化に関する解説記事です。大規模プロダクトのRails更新における課題（コンテキストの肥大化と人間の判断の必要性）を解決するため、作業を「調査」「Gemfile解決」「CI結果分析」「修正」「設定ファイル更新（app:update）」の5段階に分割。各ステップに独立したSkillを定義し、成果物のMarkdownファイルを次のステップの入力とするパイプライン構造を採用しました。これにより、AIの精度低下を防ぎつつ、各フェーズで人間がレビュー可能なポイントを設けています。結果として作業時間が大幅に短縮され、手順の再現性と作業記録の自動生成というメリットが得られたことが示されています。LLMに複雑なタスクを任せるための「ステップ分割」「権限管理」「レビューポイントの構築」という3つの設計指針は、Rails以外にも応用可能な汎用的な知見です。",
+    "topics": [
+      "Claude Code",
+      "Ruby on Rails",
+      "Coding Agent",
+      "DX",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

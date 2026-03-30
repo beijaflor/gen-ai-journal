@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:16:16.919699+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "rmの代わりにtrashを使ってCoding Agentに安全にファイルを削除させる方法",
+    "url": "https://zenn.dev/lef237/articles/23f77b0dade38f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Coding Agentによる取り返しのつかないファイル削除ミスを防ぐため、rmコマンドをゴミ箱移動を行うtrashコマンドへ安全に置き換える手法を紹介。",
+    "summaryBody": "Claude CodeなどのCoding Agentが自律的にファイルを操作する際、rmコマンドによる不可逆な削除は大きなリスクとなります。本記事では、ファイルを完全に消去するのではなくOSのゴミ箱に移動させる「trash」コマンドの導入と活用方法を解説しています。macOS（trash）およびUbuntu/Debian（trash-cli）でのインストール手順に加え、単なるエイリアス設定だけでなく、Coding Agentが多用する -rf などのオプションを無視して安全に処理するためのシェル関数の定義方法を具体的に提示。また、誤操作を徹底的に防ぐためにrm自体を無効化し、エラーメッセージでtrashの使用を促すといった、自動化ツールとの共存における実用的なベストプラクティスをまとめています。",
+    "topics": [
+      "Coding Agent",
+      "CLI",
+      "Security",
+      "Claude Code",
+      "Linux/macOS"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": "rmの代わりにtrashを使ってCoding Agentに安全にファイルを削除させる"
+  }
+}

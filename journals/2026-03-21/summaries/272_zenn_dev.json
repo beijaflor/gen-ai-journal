@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T13:16:52.208506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codexの弱点を解決するOSS「GSD」の設計が良かった",
+    "url": "https://zenn.dev/komlock_lab/articles/gsd-guide-handson",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GSDは、AIコーディングエージェントの限界であるコンテキスト劣化や状態管理の不備を、階層構造、決定論的処理、フラクタル要約によって解決するOSSです。",
+    "summaryBody": "GSD（Get Shit Done）は、AIコーディングエージェントが長時間の開発で陥る「コンテキスト劣化」「記憶喪失」「検証不足」を解決するためのOSSフレームワークです。モデルの推論能力そのものではなく、LLMの外側の「開発プロセス」を構造化することに焦点を当てています。主な設計として、プロジェクトをMilestone/Phase/Taskの3層で管理し、1タスクを1コンテキストに収める「3層階層構造」を採用。Git操作やファイルパースなど再現性が必要な処理は決定論的なTypeScriptコードで処理し、LLMには判断と実装のみを任せることで安定性を高めています。また、「Fractal Summaries」により情報を階層的に圧縮・保持し、タスク単位のアトミックコミットや4段階の検証ラダー（Static/Command/Behavioral/Human）によって品質を担保します。セッション中断からの容易な復帰や並列実行もサポートしており、中〜大規模プロジェクトの完遂を強力に支援する設計となっています。",
+    "topics": [
+      "GSD",
+      "Claude Code",
+      "AI Agent",
+      "TypeScript",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

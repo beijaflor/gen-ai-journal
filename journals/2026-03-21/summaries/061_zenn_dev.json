@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:38:34.417337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / CodexでKaggle金メダルを取った話",
+    "url": "https://zenn.dev/chiman/articles/b233cc808d6af3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに実装を任せて試行回数を劇的に増やし、人間がアイディアとデータ観察に集中することでKaggle金メダルを獲得した実践的な手法の記録。",
+    "summaryBody": "2026年のKaggleコンペ「CSIRO - Image2Biomass Prediction」において、5位入賞（金メダル）を果たした著者が、Claude CodeやCodexといったAIコーディングエージェントをどのように活用したかを詳細に解説した記事です。最大の特徴は「人間がコードを書かない」スタイルを徹底した点にあります。実装コストをゼロに近づけることで、5-Fold CV合計1,515回という圧倒的な試行回数を実現。一方で、スコアを伸ばすための本質的な仮説（DINOv3の活用等）は人間がデータ観察から導き出す必要があったと強調しています。記事内では、AIに同じミスをさせないための「CLAUDE.md」や、実験履歴を管理する「EXP_SUMMARY.md」といった具体的な運用フレームワーク、AIの得意・不得意の境界線、そして定量評価が可能なR&D領域における人間とAIの理想的な役割分担について述べられています。",
+    "topics": [
+      "Kaggle",
+      "Claude Code",
+      "AIエージェント",
+      "機械学習",
+      "LLMコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

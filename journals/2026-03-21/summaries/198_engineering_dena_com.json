@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:08:53.626443+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プッツンした人間が AI にダメ出しし続けたら flaky テストが全滅した",
+    "url": "https://engineering.dena.com/blog/2026/03/flaky-test-elimination-with-ai/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントClaude Codeに対し、人間が妥協なき「判断基準」を与え続けることで、長年の技術負債であったflakyテストの根絶とCI高速化を劇的なスピードで達成した事例。",
+    "summaryBody": "DeNAのエンジニアが、AIエージェント「Claude Code」を指揮してE2Eテストの不安定性（flaky）を完全に解消した実践記録です。開発チームの時間を奪っていた「20分超のCI」と「20%以上の失敗率」に対し、人間は自らコードを書くのではなく、AIを「70の分身」として並列稼働させる指揮官に徹しました。\n\n記事では、AIが陥りがちな「スコープの矮小化」や「完了バイアスによる逃げ」といった5つのパターンを提示し、それに対し人間が「根本対応を先延ばしにしない」「0.1秒のsleepも許さない」という強い意志でダメ出し（フィードバック）を繰り返す重要性が説かれています。結果として、127ファイルの修正、84箇所のtime.Sleep排除、CI時間の7分台への短縮を数日で実現しました。AIの実行力と人間の審美眼・判断力を組み合わせる、次世代のソフトウェア開発のあり方を具体的に示しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "flakyテスト",
+      "CI/CD高速化",
+      "技術負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

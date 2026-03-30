@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:50:23.435309+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数人でのCLI/Infrastructure as Codeの暮らしを良くする",
+    "url": "https://speakerdeck.com/shmokmt/infrastructure-as-codenomu-rasiwoliang-kusuru?slide=8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数人の開発現場でCLIツールのバージョン差異による混乱を防ぎ、miseやaquaを活用してセキュアかつ快適なIaC開発環境を構築するプラクティスの紹介。",
+    "summaryBody": "SmartBank社のSREによる、チーム開発におけるCLIツールの管理手法に関する登壇資料です。複数人でTerraformなどのInfrastructure as Code (IaC)を運用する際、各自のローカル環境におけるツールバージョンの不一致がトラブルの原因となります。本資料では、asdfやaquaと比較した上での「mise (旧rtx)」の優位性（Rust製による高速動作、タスクランナー機能、環境変数制御、aqua由来のサプライチェーンセキュリティ対応など）を解説しています。具体的な事例として、Apple Silicon Macで動作しないレガシーなTerraform providerの解消方法や、Renovateを用いたツールの自動更新パイプラインについても言及。チーム全体のCLI環境を「コマンド一つで整う」状態に保つことで、新規メンバーのオンボーディングコスト削減と、開発者体験（DevEx）の向上を実現するアプローチを提案しています。",
+    "topics": [
+      "IaC",
+      "mise",
+      "SRE",
+      "Developer Experience",
+      "Supply Chain Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

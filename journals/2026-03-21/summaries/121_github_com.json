@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:25:25.289639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Godogen: Claude Codeを利用して自然言語からGodot 4ゲームプロジェクトを完全自動生成",
+    "url": "https://github.com/htdt/godogen",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを活用し、設計からアセット生成、コーディング、視覚的なデバッグまでを行い、テキスト記述から完全なGodot 4プロジェクトを構築するツールセット。",
+    "summaryBody": "Godogenは、Claude Code向けのカスタムスキル群（Skills）であり、ゲームの説明を入力するだけで、Godot 4エンジンを用いた完全なゲームプロジェクトを自動構築します。単なるコード生成に留まらず、Geminiを活用した2Dアート生成やTripo3Dによる3Dモデル変換、さらには独自のGDScriptリファレンスを用いた高精度なスクリプティングを実現しています。\n\n最大の特徴は「Visual QA」ループの実装です。生成されたプロジェクトを実行し、ヘッドレスまたは画面上のスクリーンショットをキャプチャ。それをGemini Flashのビジョン機能で解析することで、テクスチャの欠落、Zファイティング、物理演算のバグなどを自動的に検知・修正します。プロジェクトはシーンツリー、スクリプト、アセットが整理された状態で出力され、2Dおよび3Dの両方に対応しています。開発はUbuntu環境でテストされており、実行にはGodot 4、Claude Code、Google API Keyなどの環境が必要です。",
+    "topics": [
+      "Godot",
+      "Claude Code",
+      "Game Development",
+      "AI Agents",
+      "GDScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Godogen: Claude Code skills that build complete Godot 4 projects from a game description"
+  }
+}

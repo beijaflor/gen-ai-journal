@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:15:53.453481+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコードレビューを「単一責任の原則」で育てた話：エージェント分割による品質向上の実践",
+    "url": "https://zenn.dev/globis/articles/d0c73d2b176ba5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコードレビューの品質を安定させるため、単一責任の原則に基づき観点ごとにエージェントを分割し、過去の失敗パターンをナレッジ化して教え込む運用の仕組みを解説しています。",
+    "summaryBody": "グロービスのDevExチームが、Claude Codeを用いたAIコードレビューの改善プロセスを公開しています。当初発生した「的外れな指摘」や「品質の不安定さ」という課題に対し、ソフトウェア設計の「単一責任の原則」をAIエージェントに適用することで解決を図りました。具体的には、Flaky Test検知、Railsのページネーションにおける順序保証、セキュリティ対策など、特定の観点に特化したサブエージェントを構築し、オーケストレーターがPRの内容に応じて適切なエージェントを自動起動する仕組みを導入しています。過去の不具合事例をナレッジとしてプロンプトに蓄積することで、AIを単なるツールではなく「チームの資産」として育てるアプローチを提示しており、AIへの言語化作業がチームの暗黙知を形式知化する副次的なメリットについても言及されています。",
+    "topics": [
+      "AIコードレビュー",
+      "Claude Code",
+      "単一責任の原則",
+      "DevEx",
+      "Rails"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

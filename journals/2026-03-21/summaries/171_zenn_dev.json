@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:14:24.114203+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様駆動開発(SDD)から、意図駆動開発(IDD)へ",
+    "url": "https://zenn.dev/yamaken0107/articles/2b3d2a0b059aa0",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "実装詳細（How）に縛られる仕様書中心の開発を脱し、「なぜ・何を（Why/What）」という意図を不変な記録として積み重ねる開発手法への転換を提唱する。",
+    "summaryBody": "従来の仕様駆動開発（SDD）において、仕様書に実装の詳細（How）が混入することで発生する「レビューの長期化」や「コードとの乖離」という課題を指摘。これに対し、開発の起点を「意図（Intent）」に置く意図駆動開発（IDD）を提案している。意図は「Why（動機）」と「What（入出力の契約）」のみで構成し、具体的な「How」はコードやAIエージェントに委ねる。また、意図をArchitecture Decision Record (ADR) としてリポジトリに記録することで、仕様書のような二重管理を避けつつ、過去の意思決定の経緯を「追記のみ（イミュータブル）」で管理する手法を解説している。",
+    "topics": [
+      "意図駆動開発 (IDD)",
+      "仕様駆動開発 (SDD)",
+      "ADR (Architecture Decision Record)",
+      "AIエージェント",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 65,
+      "overall": 80
+    },
+    "originalTitle": null
+  }
+}

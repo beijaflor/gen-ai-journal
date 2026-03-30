@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:40:51.811088+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotのスラッシュコマンドやサブエージェントを使って、簡易レビュー実装",
+    "url": "https://zenn.dev/peishim/articles/f1030e6102946c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotのカスタムプロンプトとサブエージェント機能を活用し、VS Code上で動作する独自のコードレビュー用スラッシュコマンドを構築する手法の解説。",
+    "summaryBody": "GitHub Copilotの最新機能を活用して、ローカル環境でAIレビューを行う仕組みを構築する方法を紹介しています。具体的には、`.github/prompts`ディレクトリにMarkdownファイルを配置して独自の`/select_review`や`/review_before_pr`といったスラッシュコマンドを作成する手順を詳述しています。また、単一のプロンプトで処理を完結させず、Linter実行やAIレビューなどのタスクを個別のサブエージェント（`.agent.md`）に委譲することで、コンテキストの圧迫を防ぎ、精度の高いレビュー結果を得る構成を提案しています。記事内では、VS Codeでのツール承認設定や、Agent Flow Chartを用いた動作デバッグ、docsディレクトリでのレビュー観点管理など、実戦的な運用Tipsも豊富に含まれています。",
+    "topics": [
+      "GitHub Copilot",
+      "VS Code",
+      "AIレビュー",
+      "プロンプトエンジニアリング",
+      "開発自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

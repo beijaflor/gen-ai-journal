@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-28T14:55:37.594355+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【2026年3月最新版】コーディングが楽になったからこそ気をつけるべきセキュリティ #AWS",
+    "url": "https://qiita.com/miruky/items/dfb3509ade7d4ad67b90",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングの普及に伴い、「Slopsquatting」や「InstallFix」といった最新の攻撃手法や、OWASP Top 10:2025の動向を踏まえた開発者が今取り組むべきセキュリティ対策を網羅的に解説しています。",
+    "summaryBody": "2025年から2026年にかけて、GitHub CopilotやClaude Code等のAIツールの普及により「Vibe Coding（雰囲気での開発）」が一般化しましたが、それに伴う新たなセキュリティリスクが顕在化しています。本記事では、AIのハルシネーションを悪用して実在しないパッケージをインストールさせる「Slopsquatting」や、偽のツール導入サイトでマルウェアを配布する「InstallFix」といった最新の事案を詳説。さらに、サプライチェーン攻撃が3位に浮上した「OWASP Top 10:2025」やLLM特有の脆弱性指標に基づき、開発者が陥りやすい「コードの盲信」への警鐘を鳴らしています。具体的な対策として、パッケージの信頼性検証、ターミナルコマンドの精査、CI/CDへのSAST/DAST導入、最小権限の原則など、今日から実践できる10の防御策を提示しており、AIを武器にする全エンジニアにとって必須のセキュリティガイドラインとなっています。",
+    "topics": [
+      "AI Security",
+      "Supply Chain Attack",
+      "OWASP",
+      "LLM",
+      "Vibe Coding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

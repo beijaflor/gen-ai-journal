@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:29:47.533721+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントの仕組み：エージェンティック・エンジニアリングのパターン",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コーディングエージェントがLLM、システムプロンプト、ツール呼び出しのループを通じて複雑なタスクを遂行する内部メカニズムを解説したガイド。",
+    "summaryBody": "Simon Willison氏による、コーディングエージェントの動作原理に関する詳細な解説です。エージェントは単なるLLM単体ではなく、外部ツールを呼び出し、見えないプロンプトで制御される「ハーネス（枠組み）」であると定義されています。主要な構成要素として、トークン単位で処理を行うLLM、会話履歴を再現するチャットテンプレート、コストを抑えるためのトークンキャッシュ、そしてBashやPythonを実行するツール呼び出し機能が挙げられています。特に、2025年の進展として「推論（Reasoning）」プロセスの導入が強調されており、モデルが回答前に思考ステップを挟むことで、デバッグなどの複雑なタスク精度が向上している点に触れています。最終的には、エージェントの本質は「LLM + システムプロンプト + ツールのループ」というシンプルな構造の積み重ねであると述べています。",
+    "topics": [
+      "Coding Agents",
+      "LLM",
+      "Agentic Engineering",
+      "Tool Calling",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "How coding agents work - Agentic Engineering Patterns"
+  }
+}

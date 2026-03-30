@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:47:10.494215+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードレビューの先へ：AI時代の開発を支える「仕様駆動開発(SDD)」への転換",
+    "url": "https://www.oreilly.com/radar/beyond-code-review/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI生成コードの膨大化により人間による一行ずつのレビューは限界を迎えており、今後は仕様の定義と最終的な動作検証に注力する「仕様駆動開発（SDD）」が不可欠になる。",
+    "summaryBody": "AIが生成するコードの量は人間がレビュー可能な範囲を急速に超えつつあり、レビューに費やす時間がAIによる生産性向上を相殺してしまうという矛盾が生じている。本記事では、この課題の解決策として「仕様駆動開発（Specification-Driven Development: SDD）」への移行を提唱している。\n\nSDDの本質は、開発の焦点を「コードが正しく書かれているか」から「正しい問題を解決しているか」へとシフトさせることにある。人間は、顧客のニーズに基づいた詳細な仕様策定（アーキテクチャやスケーラビリティなどの非機能要件を含む）と、生成されたシステムがその仕様を満たしているかの検証（Verification）に注力する。これは単なるウォーターフォールへの回帰ではなく、仕様、計画、実装、検証を高速に回すアジャイルな循環プロセスである。人間はコードの書き手から、システムの目的を定義し、その適合性を判断する「設計者・検証者」へと役割を変える必要がある。",
+    "topics": [
+      "AI補助開発",
+      "仕様駆動開発(SDD)",
+      "コードレビュー",
+      "ソフトウェアアーキテクチャ",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Beyond Code Review"
+  }
+}

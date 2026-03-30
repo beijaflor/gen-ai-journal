@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-27T12:43:31.907208+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPサーバは安全か？ツールポイズニング・RCE・サンドボックス脱出の実例と対策",
+    "url": "https://qiita.com/nogataka/items/083efbdad4d3e011849b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Model Context Protocol (MCP) の普及に伴い顕在化したツールポイズニングやRCEなどの脆弱性を、時系列の事例とともに詳説し、運用上の安全策を提示した解説記事。",
+    "summaryBody": "この記事は、AIエージェントの標準プロトコルとして急速に普及したMCP（Model Context Protocol）に潜む深刻なセキュリティリスクを技術的に解説しています。2025年から2026年にかけて発見された主要な脆弱性を網羅しており、具体的には以下の内容が含まれます。\n\n### 主な脆弱性と事例\n- **ツールポイズニング**: 自然言語の説明文に悪意ある指示を埋め込み、LLMを操作する攻撃（WhatsApp MCPの事例）。\n- **リモートコード実行 (RCE)**: `mcp-remote`の不備を突いたOSコマンドインジェクション（CVE-2025-6514）。\n- **サンドボックス脱出**: シンボリックリンクを悪用したFilesystem MCPの制限バイパス（CVE-2025-53109）。\n- **サプライチェーン攻撃**: 偽のnpmパッケージ（`postmark-mcp`）によるデータ窃取。\n\n### 統計と現状\nスキャン調査によると、公開されているMCPサーバの約66%に何らかのセキュリティ上の問題が確認されており、多くが無認証・無暗号化の状態で稼働しています。また、AIエージェントに未使用の過剰な権限（特権の96%が未使用）を与えることがインシデントの引き金になると警告しています。\n\n### 対策ガイドライン\n信頼できるソースの利用、最小権限の原則の適用、コンテナ隔離、トラフィック監視、および脆弱性データベース「The Vulnerable MCP Project」の活用を推奨しています。",
+    "topics": [
+      "MCP",
+      "AIセキュリティ",
+      "LLM",
+      "脆弱性診断",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 50,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

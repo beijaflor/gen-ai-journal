@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:45:40.546984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code が RAG を捨てた理由 -「Agentic Search」という選択肢",
+    "url": "https://zenn.dev/acntechjp/articles/c1296f425baf03",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの開発者が、ローカルコード検索においてRAG（ベクトル検索）を廃止し、LLMの推論能力を活用した単純なglob/grepによる「Agentic Search」へと舵を切った背景とその合理性を解説する。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」の開発者であるBoris Cherny氏へのインタビューを基に、AIエージェントにおける検索の在り方の変化を考察した記事です。当初導入されていたローカルベクトルDBによるRAGは、開発中のコードベースにおける同期の遅延や権限管理の複雑さから放棄されました。代わりに取り入れられた「Agentic Search」は、モデル自身にglobやgrepを使いこなさせる手法です。LLMの能力が向上した現在、エージェントは自ら曖昧な意図を具体的なキーワードに変換し、ディレクトリ構造を推論し、試行錯誤を繰り返すことができます。これにより、複雑な検索パイプラインを構築するよりも、人間が「CLAUDE.md」などでエージェント向けの検索ガイドを整備し、LLMの知性に検索プロセスを委ねる方が、高い精度とリアルタイム性を両立できるというパラダイムシフトが示されています。",
+    "topics": [
+      "Claude Code",
+      "RAG",
+      "Agentic Search",
+      "LLM",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

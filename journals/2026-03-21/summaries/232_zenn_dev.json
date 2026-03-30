@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-23T00:59:56.508175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Markdown ドキュメント間の整合性を検証する contextlint を作っている話",
+    "url": "https://zenn.dev/nozomi_cobo/articles/contextlint-introduction",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Markdownドキュメント間の整合性や構造を静的解析で検証し、AI駆動開発における仕様書の品質を担保するツール「contextlint」の解説記事です。",
+    "summaryBody": "仕様駆動開発（SDD）において、ドキュメントの整合性は生成されるコードの品質に直結します。本記事では、ドキュメント間の参照切れ、IDの重複、テーブルの必須項目、依存グラフの循環参照などを静的解析で検証するツール「contextlint」を紹介しています。LLMによる検証が抱える「コスト」や「再現性の低さ」という課題を解決するため、TypeScriptによる決定論的なチェックを採用。さらに、Model Context Protocol (MCP) サーバー機能や、Claude Code向けのスキルを自動生成する「Context Compiler」など、AIツールとの高度な連携機能も備えており、CI/CDに組み込むことでドキュメントの品質を機械的に維持することが可能です。",
+    "topics": [
+      "contextlint",
+      "Markdown",
+      "静的解析",
+      "SDD",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

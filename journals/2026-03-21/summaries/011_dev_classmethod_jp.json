@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:48:28.711047+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1Password Environmentsで.envファイルを管理できるようになったので試してみた",
+    "url": "https://dev.classmethod.jp/articles/1password-environments-env-management/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "1Password Environmentsを用いて.envファイルを仮想的にマウントし、シークレット情報を物理ディスクに書き込まず安全に管理・運用する手法の紹介。",
+    "summaryBody": "本記事では、2025年10月にパブリックベータとしてリリースされた「1Password Environments」を活用し、開発環境の.envファイルを安全に管理する方法を解説しています。従来の.envファイル管理には、平文でディスクに保存されることによるGitへの誤コミットや、バックアップに含まれてしまうといったセキュリティリスク、およびチーム内共有の煩雑さという課題がありました。1Password Environmentsは、指定したパスに.envファイルを仮想マウントすることで、物理ファイルを存在させずにアプリケーションからシークレットを参照可能にします。\n\n著者は、iOS開発におけるArkana（シークレット難読化ツール）とXcode Cloudを組み合わせた実戦的なフローを提案しています。具体的には、1Password上で環境を作成して既存の.envをインポートし、物理ファイルを削除。その後、1Passwordから仮想的にマウントすることで、Arkanaなどの既存ツールをそのまま動作させつつ安全性を高めています。この手法により、ローカル開発では1Passwordによる堅牢な管理を享受しつつ、CI/CD環境では標準の環境変数を利用するという、一貫性のあるモダンな開発ワークフローが実現可能です。",
+    "topics": [
+      "1Password",
+      "セキュリティ",
+      "環境変数",
+      "iOS開発",
+      "Arkana"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

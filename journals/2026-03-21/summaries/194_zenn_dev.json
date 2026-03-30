@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:09:43.850644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NemoClaw触ってみた：OpenClawのセキュリティ問題を解消できるのか？",
+    "url": "https://zenn.dev/komlock_lab/articles/280ff7f1ba9b13",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAが発表したAIエージェント用セキュリティスタック「NemoClaw」を使い、OpenClawの機密情報漏洩リスクをカーネルレベルの隔離とポリシー制御でどう解決できるかを技術的に検証した記事。",
+    "summaryBody": "NVIDIA GTC 2026で発表された「NemoClaw」は、AIエージェント「OpenClaw」に強力なセキュリティ層を追加するオープンソーススタックです。本記事では、OpenShell（サンドボックス基盤）、NemoClaw（プラグイン）、OpenClaw（本体）の3層構造からなるアーキテクチャを詳しく解説しています。最大の特徴は、アプリケーション層（OpenClawの内部設定）ではなく、LinuxカーネルのLandlock LSMやseccomp、アプリケーション単位のネットワーク制限を用いた「物理的な遮断」にあります。検証を通じて、特定のディレクトリ以外へのアクセス遮断や、許可されたバイナリのみが特定エンドポイントへ通信できる「deny by default」の挙動を確認しました。Alpha版ゆえに既存環境からの移行や利便性に課題はあるものの、機密データを扱う業務利用においては、ポリシーをYAMLで宣言的に管理・監査できるNemoClawが不可欠なツールになると結論づけています。自由な個人利用と、厳格な業務利用での使い分けを提案する内容です。",
+    "topics": [
+      "NemoClaw",
+      "OpenClaw",
+      "AI Security",
+      "NVIDIA",
+      "Sandboxing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:07:07.772632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Everything Claude Code を眺める - Claude Codeを極めるための構成案と実践ガイド",
+    "url": "https://speakerdeck.com/oikon48/every-claude-code-wotiao-meru",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」の機能を大幅に拡張するフレームワーク「Everything Claude Code」の構成要素、エージェント設計、およびセキュリティ対策を網羅的に解説したスライド資料です。",
+    "summaryBody": "本資料は、Claude Codeを高度に使いこなすためのリポジトリ「Everything Claude Code (ECC)」の全体像を解説しています。ECCは単なる設定集に留まらず、25のエージェント、108のスキル、57のコマンド、23のフックを統合した包括的な開発支援システムです。\n\n主なトピックは以下の通りです：\n- **ECCアーキテクチャ**: Planner、Architect、Code-Reviewerといった役割別のエージェント構成と、9言語に対応したコーディング規約（Rules）の管理。\n- **4つの公式ガイド**: 基礎的なセットアップ（Shortform）、トークンコストを抑えつつ推論を深めるテクニック（Longform）、AgentShieldによる防御策（Security）、そして将来の自律化への課題（OpenClaw）。\n- **実践的Tips**: セッション状態の永続化、MCPからCLI+Skillsへの置換によるトークン削減、/forkを用いた並列ワークフローの検証手法。\n- **セキュリティ**: AIエージェント固有のリスク（OWASP Agentic Top 10）や供給網攻撃、メモリ汚染など、自律型AIを安全に運用するための防御層について深く掘り下げています。\n\nClaude Codeを実務で本格的に導入・拡張したい開発者にとって、実装レベルの指針となる内容です。",
+    "topics": [
+      "Claude Code",
+      "Everything Claude Code",
+      "AIエンジニアリング",
+      "AIエージェント",
+      "LLMセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

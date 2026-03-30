@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:33:19.943588+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "決定論的な作業は決定論的に保つ：LLMの信頼性を高める「9の行進」",
+    "url": "https://www.oreilly.com/radar/keep-deterministic-work-deterministic/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMパイプラインの信頼性を向上させる鍵は、計算やルール検証などの決定論的タスクをAIから切り離し、従来のコードで処理することにある。",
+    "summaryBody": "LLMを用いたエージェント型エンジニアリングにおいて、信頼性を高めるための重要な原則を解説した記事です。著者はブラックジャックのシミュレーションを例に、LLMが計算ミスやルールの誤認によって引き起こす「連鎖的失敗（Cascading failures）」の問題を指摘します。信頼性を90%から99%、さらに99.9%へと引き上げる困難なプロセスを「March of Nines」と呼び、各ステップの信頼性が掛け合わされるパイプラインでは、わずかなミスが全体を崩壊させることを示しました。記事では、戦略の検証をLLMから決定論的なコード（ルックアップテーブル）に置き換えることで、成功率が48%から79%へ劇的に向上した事例を紹介しています。トークナイザーの特性上、LLMは文字カウントや厳密な計算を苦手としており、これらをAIに任せず決定論的なスクリプトで処理することが、コスト・速度・精度の向上に直結します。AIシステム構築において「判断が必要な作業」と「コードで解決できる作業」を明確に分離することの重要性を説いています。",
+    "topics": [
+      "Agentic Engineering",
+      "LLM Reliability",
+      "Deterministic Logic",
+      "March of Nines",
+      "AI Pipeline Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "Keep Deterministic Work Deterministic"
+  }
+}

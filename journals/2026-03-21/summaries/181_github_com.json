@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-21T01:12:17.942346+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 究極のチートシート：効率的な開発のための全コマンドとテクニック",
+    "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide/blob/main/guide/cheatsheet.md",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」の生産性を最大化するための、主要コマンド、ショートカット、文脈管理、コスト最適化手法を網羅したリファレンスガイド。",
+    "summaryBody": "このガイドは、Anthropicが提供するAIエンジニアリング用CLIツール「Claude Code」を使いこなすための包括的なリファレンスです。日常的に使用する基本的なスラッシュコマンド（`/plan`, `/compact`, `/status`など）から、作業効率を高めるキーボードショートカット、さらにLSP（Language Server Protocol）連携やマルチエージェントによる並列リファクタリングといった高度な機能までを網羅しています。\n\n特に重要な点として、以下のカテゴリが詳しく解説されています：\n1. **文脈（コンテキスト）管理**: トークン使用率が70%を超えた際の`/compact`による要約や、90%を超えた際の`/clear`の重要性など、AIの忘却を防ぐための指針。\n2. **動的モデル選択**: タスクの複雑さに応じてHaiku（単純作業）、Sonnet（標準開発）、Opus（設計・難解なバグ）を切り替えることで、コストと品質を最適化する手法。\n3. **プロジェクトメモリ**: `CLAUDE.md`ファイルを使用してプロジェクト固有のルールやコンテキストをチームで共有・維持する方法。\n4. **最新機能**: リモートコントロール、ボイス入力、思考プロセス（Thinking）の制御、永続的なタスク管理API（v2.1.16+）の活用。\n\n開発者がAIとの対話を制御し、安全（Plan Mode）かつ迅速にコードを生成・修正するための実践的な知恵が凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLIツール",
+      "AIエンジニアリング",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code Cheatsheet"
+  }
+}
