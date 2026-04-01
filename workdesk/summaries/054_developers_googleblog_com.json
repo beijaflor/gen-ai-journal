@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:38:13.240709+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントスキルによる知識ギャップの解消：Gemini API開発における軽量な解決策",
+    "url": "https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、LLMの学習データの鮮度と最新SDKの仕様との乖離を埋めるため、AIエージェントに最新知識を付与する軽量な仕組み「エージェントスキル」を導入し、Gemini 3シリーズでの劇的な性能向上を実証した。",
+    "summaryBody": "大規模言語モデル（LLM）は学習時点のデータに固定されているため、日々進化するSDKやベストプラクティスとの間に「知識ギャップ」が生じます。Google DeepMindの研究者らは、この課題に対する軽量かつ効果的な解決策として「エージェントスキル」を提案しました。これは、APIの概要、最新モデルやSDKのバージョン、サンプルコード、ドキュメントのソースへのリンクなどをパッケージ化した一連の指示セットです。Gemini API開発用スキルを構築し、PythonとTypeScriptのコード生成タスク（117個のプロンプト）で評価したところ、最新のGemini 3.1 Pro Previewではスキルを有効にすることで、古いSDKの使用を回避し、95%以上の成功率を達成しました。この結果は、強力な推論能力を持つモデルほどスキルを効果的に活用できることを示しています。一方で、スキルの更新管理（古い情報がユーザー環境に残るリスク）などの課題も挙げられていますが、MCP（Model Context Protocol）などと並んで、開発者のワークフローを強化する重要な手段として期待されています。",
+    "topics": [
+      "Gemini API",
+      "AI Agents",
+      "LLM",
+      "Developer Tools",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "Closing the knowledge gap with agent skills"
+  }
+}

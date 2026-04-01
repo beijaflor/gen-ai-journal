@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:28:21.324328+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自作MCP×AI Agentの回答精度をClaude Codeで評価させてみた[LLM-as-a-Judge]",
+    "url": "https://qiita.com/ssc-dninomiya/items/dbb960ac33a17cd1f4c9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自作MCPサーバーを介したAIエージェントの回答精度を、Claude Codeのカスタムスキル（LLM-as-a-Judge）を用いて効率的に自動評価する手法の検証記録。",
+    "summaryBody": "この記事では、自作のMCP（Model Context Protocol）サーバーと連携するAIエージェントの回答精度を評価するために、Claude Codeの「カスタムスキル」機能を活用する手法を紹介しています。著者は社内図書館の書籍管理システムを題材に、FastMCPとPostgreSQLで構築したツール群の性能を検証しました。\n\n評価フローは、まずAIエージェントに質問セットを与えて回答を生成させ、その結果をClaude Codeに読み込ませて「LLM-as-a-Judge」として判定させる形式です。`.claude/skills`内に定義した独自のスキル（/checkAnswer）により、数値の一致や部分的な正誤をOK/PARTIAL/NGといったラベルで分類し、Markdown形式のレポートを自動生成します。\n\n検証の結果、20問中13問が正解（正答率65%）となり、失敗したケースの分析から「MCPツール側の取得件数制限」などの具体的な設計課題が浮き彫りになりました。この手法は、評価コードを自作する手間を省き、Claude Codeの定額プラン内でコストを抑えつつ高品質な評価が実行できるという大きなメリットがあります。一方で、対話型実行が前提のためCIへの組み込みには課題があるものの、開発中の迅速なフィードバックループ構築に非常に有効な手段であることが示されています。",
+    "topics": [
+      "MCP",
+      "Claude Code",
+      "LLM-as-a-Judge",
+      "Python",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

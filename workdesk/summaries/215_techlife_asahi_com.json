@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:29:38.756313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにAICoEのチーム運営を任せてみた｜朝日新聞社CTO室",
+    "url": "https://techlife.asahi.com/n/ne8bbc7518535",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "朝日新聞社のAICoEがGitHubとAIエージェント（Claude Code/Cursor）を連携させ、議事録からのタスク抽出や議題生成など、チーム運営業務の自律化・省力化を実現した事例報告。",
+    "summaryBody": "朝日新聞社CTO室のAICoE（AI Center of Excellence）が、AIエージェントを活用してチーム運営を自動化した実践的な記録です。開発コードを持たない管理業務中心のチームにおいて、ドキュメントをGitHub上のMarkdownで管理することで、AIエージェント（Claude CodeやCursor）がコンテキストを理解しやすい基盤を構築しました。\n\n具体的には、GitHub ActionsとClaude Codeを組み合わせ、議事録からのアクションアイテム自動抽出・Issue起票、定例会議のゴール設定と議題の自動生成、日次・週次・月次での活動内容の自動集約などを実装しています。これにより、人間はゼロから資料を作成する手間から解放され、AIが生成したドラフトをレビューするスタイルへと業務をアップデートしました。成功のポイントとして、「情報のドキュメント化」「人間によるレビューを前提とした実装」「運営サイクルの明確な定義」の3点を挙げています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "GitHub Actions",
+      "チーム運営",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

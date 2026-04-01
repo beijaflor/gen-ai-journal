@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-31T00:42:33.107228+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Reviewより\"自作Skill\"の方がレビュー精度が高かった件",
+    "url": "https://zenn.dev/penpeen/articles/93d318a99d329e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの公式レビュー機能に頼らず、独自のレビュー手順と技術ガイドラインを「Skills」として定義することで、チーム固有の文脈に即した高精度なコードレビューを実現する方法を紹介しています。",
+    "summaryBody": "Claude Codeの標準的なコードレビュー機能に対し、Markdown形式で独自のレビューガイドラインを作成し「Skills」として読み込ませる手法の優位性を解説しています。筆者は、公式機能ではカバーしきれないチーム固有の設計方針や暗黙知を反映させるため、`SKILL.md`と技術別のガイドラインディレクトリを構築しました。特に精度向上に寄与したポイントとして、①「網羅的なリストアップ」と「批判的な厳選」の2段階レビューサイクルの導入、②diffだけでなく影響範囲（呼び出し元など）の調査を必須化、③プロジェクトのディレクトリ構成に基づいたガイドラインの動的選択、④レビュー結果をガイドラインに還元する自己改善ループ、の4点を挙げています。このアプローチにより、人間が気付かない破壊的変更の検出や、オンボーディングの効率化、設計相談の精度向上といった副次的なメリットも得られたと報告しています。",
+    "topics": [
+      "Claude Code",
+      "コードレビュー",
+      "AIツール",
+      "GitHub",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:36:10.747065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント向けのリモートサンドボックス：exe.dev、Sprites、Docker Sandboxの比較",
+    "url": "https://blog.lai.so/agents-sandbox/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントが安全かつ自律的にコマンド実行できる隔離環境「リモートサンドボックス」の主要3サービスを比較・解説した記事。",
+    "summaryBody": "AIコーディングエージェントの普及に伴い、エージェントがホスト環境に影響を与えず自律的に動作できる「リモートサンドボックス」が注目されています。本記事では、VPSやクラウドIDE（GitHub Codespaces等）との違いを明確にした上で、主要な3サービスを比較しています。\n\n1. **exe.dev**: SSHベースで構築されたシンプルなVM。HTTPSエンドポイントの自動付与やクローン機能、プリインストールされたエージェント（Shelley）が特徴で、固定料金制で提供されます。\n2. **Sprites (Fly.io)**: Firecracker microVMを用いたHTTP APIベースの環境。チェックポイントとリストア機能により状態の保存が可能で、アイドル中は課金されない従量課金制ですが、ファイルシステムの安定性に一部課題が見られます。\n3. **Docker Sandbox**: Docker Desktopに統合されたローカルmicroVM。隔離された環境で安全に「YOLOモード」を実行でき、ホストとは独立したDockerデーモンを利用可能です。\n\n用途に応じて、コスト重視ならDocker SandboxやSprites、安定性や利便性重視ならexe.devを併用するスタイルが現実的であると結論づけています。",
+    "topics": [
+      "AI Coding Agents",
+      "Sandbox",
+      "exe.dev",
+      "Fly.io Sprites",
+      "Docker Sandbox"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "コーディングエージェント向けのリモートサンドボックス"
+  }
+}

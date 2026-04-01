@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:29:23.649991+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "takt で AI エージェントを協調させる：5回の失敗から学んだワークフロー設計の急所",
+    "url": "https://zenn.dev/coji/articles/takt-multi-agent-coding-experience",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントオーケストレーションツール「takt」を用い、Codex、Cursor、Claude Codeを連携させて開発を自動化した実践記と、柔軟な分岐設計の重要性を解説した記事。",
+    "summaryBody": "AIエージェントのオーケストレーションツール「takt」を活用し、自作OSS（Durably）の新機能開発を自動化した実体験に基づく技術記事です。筆者は「Codexによる仕様レビュー」「Cursorによる実装」「Claude Codeによる受け入れ検査」という3つの異なるエージェントを1つのワークフローとして定義しました。\n\n実践の中で直面した最大の課題は、仕様レビュー工程で5回連続「ABORT（中断）」が発生したことでした。その原因は、レビュアー役のCodexが微細な懸念点を指摘するたびに全体を停止させる「極端な条件分岐（OKかNGか）」にありました。この記事では、条件文に「軽微な指摘は許容して進める」というロジックを組み込むことで、最終的に人間が一切コードを書かずに約11分で500行規模の実装を完了させるまでのプロセスを詳細に記述しています。\n\nまた、エージェントごとの特性（Codexの厳格さ等）の把握や、Claude Codeプラグイン「ai-tools」によるYAML作成の効率化など、AIエージェントを実務に組み込むための具体的なノウハウが凝縮されています。",
+    "topics": [
+      "AIエージェント",
+      "takt",
+      "Cursor",
+      "Claude Code",
+      "ワークフロー自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

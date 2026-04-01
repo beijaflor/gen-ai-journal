@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:34:29.042112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに何を任せ、何を任せないか - SaaSにAI機能を実装する際の勘所",
+    "url": "https://speakerdeck.com/cap120/llmnihe-woren-se-he-woren-senaika",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SaaSプロダクトにAI機能を実装する際、LLMの不確実性を考慮し、項目の「確実性」と「ミス許容度」に基づいてLLM、ルールベース、空欄を使い分ける設計指針を解説した資料。",
+    "summaryBody": "LayerXのエンジニアが、実務におけるAI機能（家計簿アプリの例）の実装経験を基に、LLMをプロダクトに組み込む際の「適材適所」の考え方を提示しています。LLMは曖昧な処理に強い一方で、金額などの正確性が求められる項目では不確実性がリスクとなります。そのため、項目を①決定値（ルール/履歴）、②LLM生成、③空欄（ユーザー入力）の3パターンに分類し、信頼性と利便性を両立させる設計の重要性を説いています。プロンプトエンジニアリングだけでは解決できない「本番提供できる品質」への橋渡しとして、確実性とミス許容度によるマトリクス分析を推奨しています。また、評価（Eval）やHuman in the Loop（HITL）の視点についても触れられています。",
+    "topics": [
+      "LLM",
+      "プロダクト開発",
+      "LayerX",
+      "AI実装",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "LLMに何を任せ、何を任せないか"
+  }
+}

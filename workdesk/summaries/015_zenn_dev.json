@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:29:36.265708+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "git worktree を Worktrunk で管理したら手放せなくなった",
+    "url": "https://zenn.dev/edash_tech_blog/articles/69d01f875dcccd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Git worktree の管理を直感的にし、Claude Code などの AI ツールとの高度な連携も実現する Rust 製 CLI ツール「Worktrunk」の活用術。",
+    "summaryBody": "Git の標準機能である git worktree は、複数の作業ディレクトリを並行して扱える強力な機能ですが、ディレクトリ移動やクリーンアップの手間が課題でした。Rust 製の CLI ツール「Worktrunk」は、`wt switch` という git に近いコマンド体系で worktree を操作可能にし、インタラクティブな選択 UI も提供します。最大の利点は自動化機能で、Hook を活用して worktree 作成時に .env ファイルのコピーや依存関係のインストールを自動実行できます。また、Claude Code との親和性が高く、プラグインを通じたセッション状態の可視化や、ブランチ作成と同時に AI エージェントを起動するワークフローの構築が可能です。作業の並列化と AI 駆動開発を加速させたい開発者にとって、管理コストを劇的に下げるツールとして紹介されています。",
+    "topics": [
+      "git",
+      "git-worktree",
+      "Worktrunk",
+      "Claude-Code",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

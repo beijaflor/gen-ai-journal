@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:42:24.685379+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【緊急】月間9500万DLのLiteLLMが乗っ取られた。インストールしただけでSSH鍵・AWS認証・仮想通貨が全部盗まれる",
+    "url": "https://qiita.com/emi_ndk/items/2332ff5c93e63ab736ad",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "人気Pythonライブラリ「LiteLLM」の特定バージョンがサプライチェーン攻撃により侵害され、インストールするだけでクラウド認証情報や仮想通貨を盗み出す深刻なマルウェアが混入した事案の技術詳報。",
+    "summaryBody": "2026年3月24日、AIエージェント開発に広く使われる『LiteLLM』のv1.82.7およびv1.82.8がサプライチェーン攻撃により乗っ取られた。攻撃グループ「TeamPCP」は、脆弱性スキャナーTrivyの侵害を通じてPyPIメンテナーの認証情報を窃取し、正規のCI/CDをバイパスして悪意あるパッケージを配布。マルウェアはPythonの`.pth`ファイルの仕様を悪用し、`import`不要で実行される仕組み。窃取対象はSSH鍵、AWS/GCP/Azure認証情報、11種類以上の仮想通貨ウォレット、ブラウザのCookieなど極めて広範。特にKubernetes環境では全ノードにバックドアを設置する特権Podを展開する。記事では侵害のタイムライン、マルウェアの多段難読化の解析、詳細なIOC（侵害の痕跡）、および感染確認・復旧のためのチェックリストがまとめられており、利用者には全認証情報のローテーションが強く推奨されている。",
+    "topics": [
+      "LiteLLM",
+      "サプライチェーン攻撃",
+      "Python",
+      "セキュリティ",
+      "Kubernetes"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 98,
+      "annexPotential": 90,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:40:47.826872+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cog — Claude Codeを支える認知アーキテクチャ",
+    "url": "https://lab.puga.com.br/cog/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeが自律的に複雑なコーディングタスクを遂行するために採用している、思考・計画・実行のループを制御する認知アーキテクチャ「Cog」の解説。",
+    "summaryBody": "### Cogアーキテクチャとは\\nCogは、Anthropicが開発したエンジニアリングエージェント「Claude Code」の中核をなす認知フレームワークです。LLMを単なるチャットボットとしてではなく、複雑なソフトウェア開発タスクを自律的に解決できる「エージェント」として機能させるための設計思想が反映されています。\\n\\n### 主なメカニズム\\n1. **推論ループ**: 環境からのフィードバックを観察し、次の行動を論理的に決定する持続的なサイクル。\\n2. **ツール操作の統合**: ファイル読み書き、ターミナル実行、シンボル検索などのツールを、文脈に応じて動的に選択・利用します。\\n3. **コンテキスト管理**: 膨大なコードベースの中から、現在解決すべき問題に直結する情報のみを効率的に抽出し、推論に活用します。\\n\\n### 実用上の利点\\nこのアーキテクチャにより、Claude Codeは単純なコード生成に留まらず、バグの特定から修正、テストの実行、さらには予期せぬエラーに対する自己修正までを一貫して行うことが可能になっています。開発者が自然言語で指示を出すだけで、複雑な内部実装を自律的に処理できる点が最大の特徴です。",
+    "topics": [
+      "Claude Code",
+      "認知アーキテクチャ",
+      "AIエージェント",
+      "Anthropic",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Cog — Cognitive Architecture for Claude Code"
+  }
+}

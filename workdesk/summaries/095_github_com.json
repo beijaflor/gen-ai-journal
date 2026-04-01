@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:01:52.232711+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HyperAgents: 自己参照・自己改善型エージェントによる計算可能なタスクの最適化 (Meta AI)",
+    "url": "https://github.com/facebookresearch/hyperagents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Meta AIが公開したHyperAgentsは、自身のコードを書き換え・最適化することで、あらゆる計算可能なタスクに対して性能を向上させる自己参照型の自己改善AIエージェントフレームワークです。",
+    "summaryBody": "Meta AI（facebookresearch）が公開した「HyperAgents」は、計算可能なあらゆるタスクを最適化するために、自らのロジックを書き換え・改善する「自己参照型（Self-referential）」のエージェントシステムの実装です。\n\n主な特徴は以下の通りです：\n1. **二層構造のエージェント**: 特定のタスクを遂行する「タスクエージェント」と、そのタスクエージェントのコード自体を改善する「メタエージェント」の役割を分離し、ループ構造によって自律的な進化を促します。\n2. **再帰的な最適化**: エージェントが自身のアルゴリズムを動的に変更し、実行結果のフィードバックに基づいてコードを修正することで、未知のタスクや複雑な課題に対しても適応していきます。\n3. **広範な適用性**: 数学、コーディング、推論など、コンピュータで計算可能なあらゆる領域の最適化をターゲットとしています。\n4. **包括的なリソース**: リポジトリには、論文に基づいた実装コード、評価ドメイン、実験ログ、およびOpenAIやAnthropicなどの最新LLMを用いた実行用スクリプトが含まれています。\n\n本プロジェクトは、AIが自分自身の性能を自律的に向上させる「再帰的自己改善」の可能性を追求する野心的な研究であり、エージェント設計の次なるパラダイムを示唆しています。なお、生成されたコードを直接実行する性質上、セキュリティに配慮した実行環境が必要です。",
+    "topics": [
+      "AI Agents",
+      "Self-Improving AI",
+      "Meta-Learning",
+      "Recursive Self-Improvement",
+      "Code Generation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "HyperAgents: Self-referential self-improving agents that can optimize for any computable task"
+  }
+}

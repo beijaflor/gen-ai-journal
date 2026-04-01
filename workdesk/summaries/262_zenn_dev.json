@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-31T00:42:11.914491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexのBestPracticeを学ぶ会：AIを真の「チームメイト」にするための実践ガイド",
+    "url": "https://zenn.dev/microsoft/articles/codex_best_practice",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codexを単なるチャットAIとしてではなく、文脈の共有、設定の永続化、スキルの自動化を通じて開発ワークフローに統合するための具体的なベストプラクティスを解説したガイド。",
+    "summaryBody": "この記事は、GitHub Copilot等の基盤となるCodexを「とりあえず使う」段階から「使いこなす」段階へ引き上げるための手法をまとめています。主なポイントは以下の通りです。\n\n- **文脈（Context）の明示**: プロンプトにGoal（目標）、Context（文脈）、Constraints（制約）、Done when（完了条件）を含めることで精度を向上させる。\n- **AGENTS.mdによるルール管理**: リポジトリ特有の慣習やビルド手順をMarkdownファイルで管理し、Codexに継続的に参照させることで、同じミスを防ぎチームの知見を共有する。\n- **計画（Plan mode）の活用**: 複雑なタスクではいきなりコードを書かせず、まず計画を立てさせたり、Codexに質問をさせる「壁打ち」プロセスを挟む。\n- **拡張性と自動化**: MCP（Model Context Protocol）による外部ツール接続、繰り返し作業のSkill化、そしてAutomationsによる定期的なバックグラウンド実行を組み合わせる。\n- **セッション管理**: 1タスクにつき1スレッドを原則とし、文脈が肥大化した際は/forkや/compactで整理することで推論の質を維持する。\n\nAIを魔法のツールではなく、教育が必要な「実務パートナー」として扱うマインドセットの重要性を強調しています。",
+    "topics": [
+      "Codex",
+      "GitHub Copilot",
+      "Prompt Engineering",
+      "MCP",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

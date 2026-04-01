@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:29:47.958766+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "毎回ルールは書かなくていい。GitHub Copilot Agent Skillsで統一感を持たせる",
+    "url": "https://zenn.dev/idnet/articles/d54a4952b7c8bd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CopilotのAgent Skills（SKILL.md）を活用し、プロジェクト固有の規約や手順をAIに自動参照させることで、プロンプトの再入力を省き出力を安定させる手法の解説。",
+    "summaryBody": "GitHub Copilotの機能「Agent Skills」を用いて、開発プロセスを効率化し出力の品質を安定させる方法を解説した記事です。プロジェクトの `.github/skills/` ディレクトリ配下に `SKILL.md` を配置し、役割やルールを定義することで、AIが依頼内容に応じて最適なスキルを自動的に参照する仕組みを紹介しています。\n\n具体的には、UIデザイン規約を定義したスキルを使用して、GPTやGeminiといった異なるモデル間でもダークモードや特定のデザインシステムに基づいた統一感のあるコードが生成されることを検証。また、類似機能である「Instructions」や「Custom Agents」との役割の違いを、RPGの「呪文書・作戦・職業」に例えて分かりやすく整理しています。AIへの繰り返し指示に課題を感じている開発者にとって、プロンプトエンジニアリングの手間を削減する実践的なガイドとなっています。",
+    "topics": [
+      "GitHub Copilot",
+      "Agent Skills",
+      "VS Code",
+      "生産性向上",
+      "開発規約"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

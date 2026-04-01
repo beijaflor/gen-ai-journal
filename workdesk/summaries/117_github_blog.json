@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:28:22.730918+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub、AIを活用した脆弱性検知機能を拡張—CodeQLを補完し多言語・多フレームワークに対応",
+    "url": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHubは、従来のCodeQLによる静的解析をAI検知で補完することで、シェルスクリプトやTerraformなど幅広い環境の脆弱性をPR上で自動特定・修正可能にしました。",
+    "summaryBody": "GitHubは、AI技術を駆使してアプリケーションセキュリティのカバー範囲を大幅に拡大することを発表しました。従来、GitHub Code Securityは精密なセマンティック解析を行うCodeQLを中核としてきましたが、現代のコードベースに含まれるシェルスクリプト、Infrastructure as Code (Terraform/HCL)、Dockerファイル、PHPなどの多岐にわたるエコシステムへの対応が課題でした。\n\n今回のアップデートにより、CodeQLによる静的解析とAIベースの検知を組み合わせたハイブリッドモデルが導入されます。このシステムは、プルリクエスト（PR）のワークフロー内に直接統合されており、安全でないSQLクエリやコマンド、脆弱な暗号アルゴリズム、機密情報を露出させるインフラ設定などを自動的に検出します。\n\n特筆すべきは、検出から修正までのスピードです。GitHub Copilot Autofixと連携することで、検出された脆弱性に対する修正案をAIが提示し、開発者はその場で内容を確認・適用できます。内部テストでは80%以上の開発者から肯定的なフィードバックを得ており、修正までの平均時間は従来の半分以下（約40分）に短縮されています。この機能は、2026年第2四半期初頭にパブリックプレビューが開始される予定です。",
+    "topics": [
+      "GitHub Code Security",
+      "AI-powered detection",
+      "CodeQL",
+      "Copilot Autofix",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "GitHub expands application security coverage with AI‑powered detections"
+  }
+}

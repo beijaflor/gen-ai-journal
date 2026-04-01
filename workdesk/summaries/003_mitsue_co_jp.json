@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:27:03.991346+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMでできること：軽量モデルを業務自動化に組み込む方法",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202603/26_1556.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "クラウドAPIのコストやセキュリティの課題を解決するため、Ollamaなどの軽量ローカルLLMを業務自動化のテキスト分類タスクに組み込む具体的な手法を解説しています。",
+    "summaryBody": "生成AIによる業務自動化が進む中、クラウドAPIのコストとデータセキュリティが課題となっています。本記事では、これらを解消する手段として個人用PCで動作する「ローカルLLM」の活用を提案しています。ローカルLLMは高度な推論には不向きですが、記事のカテゴリ分類や情報抽出といった特定のタスクでは十分に実用的です。記事内ではOllamaとGemma 3:4bモデルを使用し、PythonからJSON Schemaを用いて構造化データを出力させる実装例を紹介。ルールベースでは困難だった柔軟な判断を、軽量モデルで効率的に自動化プロセスへ組み込むための考え方をまとめています。",
+    "topics": [
+      "ローカルLLM",
+      "業務自動化",
+      "Ollama",
+      "Gemma 3",
+      "テキスト分類"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

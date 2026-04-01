@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:29:11.292087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "私のClaude Codeによるアプリ実装方法の紹介",
+    "url": "https://zenn.dev/trkbt10/articles/a6618a35dd49f8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを「サボらせない部下」として徹底的に管理し、厳格なプロンプト設計、レビュー、ESLint設定を通じて高品質なWebアプリを構築する実践的ワークフロー。",
+    "summaryBody": "この記事では、AIエージェント「Claude Code」を用いてソフトウェアを構築する際の具体的な手順とマインドセットが紹介されています。筆者はAIを単なる生成ツールとしてではなく、厳格に管理すべきエージェントとして定義しています。まず、Monorepo構成（React/Hono/Cloudflare等）やディレクトリ構造を詳細に指定したプロンプトを作成。次に、AIが生成したコードに対して、`eslint-disable`による妥協を許さず、人間が論理的な矛盾や設定の不備を徹底的に指摘する「ネチネチした」レビュープロセスを繰り返します。また、`CLAUDE.md`でのポリシー定義や、ESLintによる循環参照の禁止など、AIの挙動をツールで縛るガードレールの重要性も説かれています。AIの利便性に甘えず、人間が品質責任を持つことで、短期間で完成度の高い成果物を得るための泥臭くも合理的な手法が示されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Web開発",
+      "コードレビュー",
+      "ESLint"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

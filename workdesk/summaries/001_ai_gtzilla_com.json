@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:26:36.472921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの失敗をすべて「ハルシネーション」と呼ぶのをやめよう",
+    "url": "https://ai.gtzilla.com/papers/stop-calling-every-ai-miss-a-hallucination-v1.0/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIの失敗を「ハルシネーション」と一括りにせず、範囲の漏れ、デフォルトの補完、推論の混在といった具体的なモードに分解して対処すべきだと説く論考。",
+    "summaryBody": "AIエンジニアリングにおいて、あらゆるミスを「ハルシネーション」という曖昧な言葉で片付けることは、問題の本質を見失わせる原因となる。著者は、AIの失敗を以下の4つに分類し、それぞれに異なる技術的対策が必要だと主張している。1) **真のハルシネーション**: 事実に基づかない作り話。グラウンディングや制約の強化が必要。2) **範囲の漏れ (Omitted scope)**: 指定された変更以外の影響範囲を見落とすこと。全体像の明示が必要。3) **デフォルトの補完 (Default fill-in)**: 未指定の項目を勝手に補完すること。仕様の明確化が必要。4) **推論の混在 (Blended inference)**: 事実と推論、仮定を混ぜて回答すること。これに対し、著者が提唱するVDG（Verified / Deduction / Gap）フレームワークは、回答を検証済み事実、推論、欠落に分解し、AIの不確実性を可視化することで的確なデバッグを可能にする。AIの失敗を魔法のような現象としてではなく、工学的な課題として診断することを推奨している。",
+    "topics": [
+      "AI Hallucination",
+      "LLM Engineering",
+      "VDG Framework",
+      "System Prompting",
+      "AI Reliability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Stop Calling Every AI Miss a Hallucination v1.0"
+  }
+}

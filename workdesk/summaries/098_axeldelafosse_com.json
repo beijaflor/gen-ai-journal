@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:04:18.386853+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント間ペアプログラミング：ClaudeとCodexの協調による開発プロセスの進化",
+    "url": "https://axeldelafosse.com/blog/agent-to-agent-pair-programming",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ClaudeとCodexを並列で動作させ、エージェント同士が対話・相互レビューを行う「エージェント間ペアプログラミング」の可能性と、それを実現するツール「loop」を紹介。",
+    "summaryBody": "この記事では、複数のAIエージェントを連携させるワークフローが、人間のチーム構造（オーケストレーターとワーカー）に似てきている点に注目しています。著者は、ClaudeとCodexをペアプログラマーとして対話させる実験を行い、異なるモデルが同じフィードバックを出す際のシグナルの強さを発見しました。これを実現するために開発されたCLIツール「loop」は、tmux上で両エージェントを並列実行し、ブリッジを介して相互通信を可能にします。これにより、エージェントがより能動的に動き、人間は必要に応じて介入・誘導できる自然なチームワークが実現されます。一方で、エージェントによる変更量が想定を超えることがあり、人間による最終レビューの負荷が上がるという新たな課題も提示されています。",
+    "topics": [
+      "AIエージェント",
+      "ペアプログラミング",
+      "Claude",
+      "Codex",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Agent-to-agent pair programming"
+  }
+}

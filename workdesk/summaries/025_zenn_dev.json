@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:31:46.395945+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeとの壁打ちが「積み上げ型」に変わった。長期記憶MCPサーバーの開発記",
+    "url": "https://zenn.dev/kimmaru/articles/3dbd92dea9ede8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeにセッションを跨いだ長期記憶を持たせるため、SQLiteとローカル埋め込みモデルを活用したハイブリッド検索対応MCPサーバー「engram」の開発手法を解説。",
+    "summaryBody": "Claude Codeの課題である「セッションごとの文脈リセット」を解決するため、長期記憶を管理するMCPサーバー「engram」を構築した技術解説記事。主な技術スタックとして、SQLite、sqlite-vec、日本語特化モデルのRuri v3-310mを採用し、外部API不要のフルローカル環境を実現。検索エンジンにはFTS5によるトリグラム全文検索とベクトル検索をRRFで統合するハイブリッド方式を導入し、時間減衰や重複排除のロジックも実装されている。また、Pythonの重量級ライブラリ読み込みによるMCP起動タイムアウト問題の回避策として、遅延インポートと`__future__.annotations`を用いた実装の工夫が共有されており、実用的なAI開発環境の構築に役立つ内容となっている。",
+    "topics": [
+      "Claude Code",
+      "Model Context Protocol (MCP)",
+      "SQLite",
+      "Vector Search",
+      "LLM Memory Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

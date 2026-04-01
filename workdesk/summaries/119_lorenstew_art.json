@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:30:36.086242+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT、Claude、GeminiはブラウザでMarkdownを描画するが、私はしない：サーバーサイド配信による軽量化",
+    "url": "https://www.lorenstew.art/blog/i-do-the-opposite/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "大手AIチャットがブラウザ側で行うMarkdownレンダリングをサーバー側に移譲し、HTMLを直接ストリーミングすることで、クライアント側のJSを最大440KB削減しパフォーマンスを劇的に向上させる手法の提案。",
+    "summaryBody": "ソフトウェア開発者のLoren Stewart氏は、ChatGPTやClaudeといった主要なAIチャットアプリが、Markdownのパースやシンタックスハイライト、LaTeX描画のために膨大なJavaScript（JS）ライブラリをクライアントに送信している現状を指摘しています。氏は自身のアプリ「Cheddy Chat」において、これら全ての処理をサーバー側（FastAPI）で完結させ、完成したHTMLをServer-Sent Events (SSE) でストリーミングするアーキテクチャを採用しました。これにより、クライアント側のメインスレッドを解放し、JSバンドルサイズを160KB〜440KB削減することに成功しています。PythonのPygmentsやnh3、latex2mathmlを活用したこの手法は、ユーザーのデバイス負荷（バッテリー・CPU）を軽減し、低スペックな環境でもネイティブに近い操作感を提供します。サーバー負荷の増大やオフライン閲覧時のキャッシュ管理といったトレードオフはあるものの、安易なクライアント側への実装を避け、「そのコードは本当にユーザーのデバイス上で動かす価値があるのか」を問う、アンチ・ウェスト（無駄排除）な設計思想が詳述されています。",
+    "topics": [
+      "AIアーキテクチャ",
+      "パフォーマンス最適化",
+      "サーバーサイドレンダリング",
+      "Markdown",
+      "Web開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "ChatGPT, Claude, and Gemini Render Markdown in the Browser. I Don't"
+  }
+}

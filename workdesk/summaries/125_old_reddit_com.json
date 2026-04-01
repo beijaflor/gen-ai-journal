@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:37:26.144530+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPTに「1から10,000の数字を選んで」と頼むと、なぜか7,000番台に偏る現象が話題に",
+    "url": "https://old.reddit.com/r/ChatGPT/comments/1rz2ooh/i_am_betting_my_house_that_if_you_ask_gpt_to_pick/",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "ChatGPTなどのLLMに1から10,000の範囲で数字を選ばせると、人間由来のバイアスにより7,300から7,500付近の特定の数字が選ばれやすいという現象がRedditで注目を集めている。",
+    "summaryBody": "Redditのr/ChatGPTコミュニティにて、ChatGPTに1から10,000の間の数字をランダムに選ばせると、統計的に7,300〜7,500の範囲（特に7314や7421、7482など）に回答が集中するという投稿が大きな反響を呼んでいます。多くのユーザーが実際に試したところ、ChatGPTだけでなくClaudeやGeminiでも同様の偏りが見られることが報告されました。\n\nこの現象の背景として、LLMが真の乱数生成器ではなく、学習データ内の「人間がランダムだと感じやすいパターン」を予測していることが挙げられます。人間は1から10,000の間で数字を選ぶ際、キリの良い数字や極端に小さい/大きい数字を避け、7,000番台のような「いかにもランダムに見える中途半端な数字」を選ぶ傾向があり、AIがその心理的バイアスをそのまま学習・再現していると分析されています。他にも「ランダムな事実」を求めると「タコの心臓の数」が返ってきやすい、あるいは「ランダムな色」として「ティール（鴨の羽色）」が選ばれやすいといった、LLM特有の『偏った統計的パターン』が議論されています。",
+    "topics": [
+      "ChatGPT",
+      "LLMバイアス",
+      "乱数生成",
+      "人間心理",
+      "トークン予測"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 86
+    },
+    "originalTitle": "i am betting my house that if you ask gpt to pick a number between 1 to 10000, then it will pick a number between 7300-7500, everytime"
+  }
+}

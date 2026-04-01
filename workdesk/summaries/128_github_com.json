@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:39:51.643357+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ai-sdlc-scaffold: AIファーストなソフトウェア開発のためのSDLCテンプレートリポジトリ",
+    "url": "https://github.com/pangon/ai-sdlc-scaffold/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code等のAIエージェントが効率的に動作するよう設計された、要件定義からデプロイまでを一貫して管理するAI駆動型開発のためのリポジトリテンプレート。",
+    "summaryBody": "このリポジトリは、AIエージェント（特にClaude Code）によるソフトウェア開発ライフサイクル（SDLC）の自律的な遂行を支援するためのテンプレートです。開発プロセスを「Specification（仕様）」「Design（設計）」「Code（実装）」「Deploy（デプロイ）」の4フェーズに構造化し、各フォルダにAI向けの指示ファイル（CLAUDE.md）やドキュメントの雛形を配置しています。\n\n主な特徴は以下の通りです：\n1. **AI主導のモデル**: 人間が上位レベルで監督し、AIが実務を行うことを前提とした設計。\n2. **Everything-in-repo**: 要件、設計書、意思決定記録（ADR）、タスク追跡のすべてをコードと共にGitリポジトリ内で管理し、AIが外部ツールなしですべての文脈を把握可能にする。\n3. **コンテキスト最適化**: トークン消費を抑えるための階層的な指示構造や、意思決定の履歴を分割して読み込ませる仕組みを採用。\n4. **自動化スキル**: Claude Codeで使用可能なカスタムスキル（/SDLC-init, /SDLC-elicit等）が同梱されており、対話形式での要件定義や実装プランの生成を自動化できる。\n\n単なるツールの提供ではなく、AI時代の新しいエンジニアリング・プラクティスを具体化したフレームワークとなっています。",
+    "topics": [
+      "AI-Native Development",
+      "Claude Code",
+      "SDLC",
+      "Software Engineering",
+      "Repository Template"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - pangon/ai-sdlc-scaffold: Template scaffolding for AI-first software development focused on the pre-coding phases"
+  }
+}

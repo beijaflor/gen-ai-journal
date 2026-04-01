@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T22:10:00.362433+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Discord から Claude Code とやり取りしてみた",
+    "url": "https://azukiazusa.dev/blog/discord-claude-code/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code v2.1.80 で導入された「channels」機能と公式プラグインを使用し、Discord Bot を介して実行中の Claude セッションを外部から操作する手順を解説した記事。",
+    "summaryBody": "本記事では、Claude Code の Research Preview 機能である「Claude Code channels」を活用し、Discord から Claude Code セッションを操作する具体的な方法が紹介されています。内容は Discord Bot の作成から始まり、Bun を利用した公式プラグインのインストール、コマンドラインでの環境設定、そしてペアリングコードによるユーザー認証までを網羅しています。この連携により、バックグラウンドで稼働している Claude Code に対して Discord から指示を出し、MCP ツールを介して結果を受け取ることが可能になります。また、セキュリティを考慮したアクセス制限（DMポリシー）の設定や、利用可能なツールの詳細についても詳しく説明されており、実戦的な開発環境の構築に役立つ内容となっています。",
+    "topics": [
+      "Claude Code",
+      "Discord",
+      "MCP",
+      "Bun",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}
