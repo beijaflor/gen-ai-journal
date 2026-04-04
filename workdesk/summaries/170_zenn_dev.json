@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:23:09.840284+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "starshipより速いzsh向けshell promptをコーディングエージェントだけで作った",
+    "url": "https://zenn.dev/shuymn/articles/bda1b7b51cccbf",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rust製の高速zshプロンプト「capsule」を、コーディングエージェントのみを活用し3日間で開発した手法とアーキテクチャの紹介。",
+    "summaryBody": "Starshipの動作速度に不満を感じた著者が、Rust製かつデーモン常駐型のzsh向けプロンプト「capsule」を開発。最大の特徴は、ディレクトリ表示などの即時応答（Fast path）と、Git情報やツールチェイン等の非同期計算（Slow path）を分離した設計にあります。これにより、シェルが操作可能になるまでの待機時間をStarship比で3〜30倍（環境により最大170倍）短縮しています。開発プロセスにおいて特筆すべきは、作者自身がRustを直接記述せず、Claude Codeなどのコーディングエージェントのみを使用して3日間で約17,600行のコードを生成した点です。単に生成するだけでなく、定期的なクリーンアップや設計判断を挟むことで、AI駆動開発における品質維持の工夫も共有されています。",
+    "topics": [
+      "Rust",
+      "zsh",
+      "AIコーディング",
+      "Claude Code",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

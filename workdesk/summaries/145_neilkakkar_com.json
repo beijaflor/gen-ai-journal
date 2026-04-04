@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:20:11.083029+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを活用した開発生産性の極大化：実装者からエージェント管理者への転換",
+    "url": "https://neilkakkar.com/productive-with-claude-code.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを単なるツールではなく「エージェントチーム」として管理し、インフラ側の摩擦を取り除くことで開発スピードを劇的に向上させる手法の解説。",
+    "summaryBody": "筆者は、Claude Codeの導入後にコミット数が急増した背景には、自身が「コードの実装者」から「AIエージェントの管理者」へと役割を転換したことがあると述べています。生産性を向上させるための鍵はAIの性能そのものよりも、エージェントが自律的に動けるための「インフラ（配管）」の整備にあります。\n\n具体的には、以下の4つの摩擦を解消しています：\n1. **定型作業の自動化**: `/git-pr` スキルを作成し、PR作成や詳細な説明文の記述をエージェントに委譲。\n2. **待機時間の排除**: ビルドツールをSWCに切り替え、再起動を1秒未満に短縮。思考のコンテキストスイッチを防止。\n3. **検証の委譲**: Claude Codeのプレビュー機能を活用し、UIの修正確認までエージェントに自己完結させる。\n4. **並列化の実現**: Git Worktreeとポートの自動割り当てシステムを構築し、複数の機能開発を同時に並列実行。\n\n結論として、エンジニアの役割は、エージェントが最高速度で動けるための環境（フロー）を構築することへとシフトしており、制約理論に基づいてボトルネックを一つずつ取り除くことが重要であると強調しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "開発生産性",
+      "Git Worktree",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "How I’m Productive with Claude Code"
+  }
+}

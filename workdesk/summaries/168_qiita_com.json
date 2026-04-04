@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:22:43.541749+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strands Agents、GitHubスター数5300超のOSSをまとめてみた #AWS",
+    "url": "https://qiita.com/miruky/items/304f6f49f46b30125889",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWSが公開した「モデル駆動型」AIエージェント構築フレームワークStrands Agents SDKの基本構成からマルチエージェント設計、本番デプロイまでを徹底解説した記事です。",
+    "summaryBody": "この記事は、AWSがオープンソースで公開しているAIエージェント開発用SDK「Strands Agents SDK」を包括的に解説しています。従来のLangChainやCrewAIのような「フレームワーク駆動（開発者が分岐を定義）」ではなく、モデル自身が推論・ツール選択を行う「モデル駆動」という哲学を掲げており、わずか数行のPythonコードでエージェントを構築可能です。記事では、基本的なエージェント作成、コミュニティツールの活用、MCP（Model Context Protocol）連携に加え、SwarmやGraphといった4つのマルチエージェントパターンについても詳述。さらに、Amazon Bedrock Guardrailsを用いたセーフティ機能、ロボット制御を行うStrands Labsの実験的プロジェクト、そしてAmazon Bedrock AgentCoreへの本番デプロイまで、開発に必要なステップが網羅されています。",
+    "topics": [
+      "Strands Agents",
+      "AWS",
+      "AIエージェント",
+      "Python",
+      "Amazon Bedrock"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Strands Agents、GitHubスター数5300超のOSSをまとめてみた #AWS"
+  }
+}

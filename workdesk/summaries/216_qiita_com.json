@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:29:30.568755+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「OpenAI APIのトークン消費量をざっくり計算して」と頼まれて調べたら絶望した話",
+    "url": "https://qiita.com/GeneLab_999/items/04ff280edc3178b60104",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenAI APIの日本語トークン計算が、BPEの仕組み上、英語に比べて非効率で「ざっくり」算出するのが困難である理由と、その実用的な見積もり手法を解説した記事。",
+    "summaryBody": "OpenAI APIを利用する際の日本語トークン消費量の見積もりの難しさを、BPE（Byte Pair Encoding）の仕組みやUTF-8エンコーディングの観点から考察した技術記事です。同じ意味の文章でも日本語は英語の2〜4倍のトークンを消費する実態や、GPT-4o（o200k_base）とGPT-4（cl100k_base）での効率の差を、Pythonライブラリ「tiktoken」を用いた具体的なコードで検証しています。ビジネス現場で求められる「ざっくり見積もり」の限界を認めつつ、精度に応じた3段階の見積もりアプローチ（文字数係数、サンプリング計測、本番ログ分析）を提案しており、コスト試算に悩む開発者にとって非常に実践的なガイドとなっています。",
+    "topics": [
+      "OpenAI API",
+      "Python",
+      "tiktoken",
+      "LLM",
+      "トークナイゼーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

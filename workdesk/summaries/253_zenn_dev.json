@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:32:28.346243+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント導入で「セキュリティどうするの？」と聞かれたときの技術的な答え方",
+    "url": "https://zenn.dev/sharu389no/articles/e07c926d87ac57",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェント導入時のセキュリティ懸念に対し、OSSツール「AI Guardian」を用いて操作ログ記録、ポリシー制御、法規制対応レポート作成を行う具体的な技術的対策を提案する。",
+    "summaryBody": "Claude CodeやCursorなどのAIエージェントを企業導入する際、情シス部門から寄せられる「操作の不透明性」「危険な実行の防止」「監査対応」といった懸念への技術的な解決策を解説しています。解説の核となるのはOSSライブラリ「AI Guardian (aig-guardian)」です。このツールは、エージェントの全ツール呼び出しを自動記録する『Activity Stream』、YAMLで操作権限を定義する『Policy Engine』、個人情報や脅威を検知する『Threat Scanner』の3機能を提供します。これにより、再帰削除の禁止や機密ファイルへのアクセス制限、さらには日本のAI関連ガイドラインへの準拠状況レポート出力が可能になり、技術的な裏付けを持って安全なAI導入を推進できる内容となっています。",
+    "topics": [
+      "AIエージェント",
+      "AIセキュリティ",
+      "aig-guardian",
+      "Claude Code",
+      "コンプライアンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

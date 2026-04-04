@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:25:12.827690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "普段コード書かない奴が落合陽一に触発されてCLIツールを作った話",
+    "url": "https://zenn.dev/sonicmoov/articles/b2ec3f6a8ade39",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "落合陽一氏の「バイブコーディング」に触発され、Markdownで定義したタスクをローカル/クラウドLLMで実行できる軽量CLIツール「taskp」をAIエージェントと共に開発した体験記。",
+    "summaryBody": "落合陽一氏の活動に触発された著者が、AIエージェント（OpenCodeやpi）を駆使して開発したCLIタスクランナー「taskp」の紹介記事です。本ツールは、Claude Codeなどの「Skills」機能を着想源とし、Markdown形式で定義したタスクを「template（定型実行）」と「agent（LLM自律実行）」の2つのモードで運用できるのが特徴です。技術スタックにはBun、Vercel AI SDK、OpenTUIを採用し、ヘキサゴナルアーキテクチャとResult型による堅牢な設計を実現しています。著者は「実装はほぼAIに任せ、自分はIssue作成と言語化に集中した」と語り、AI時代の新しい開発スタイル「バイブコーディング」の実践的な可能性を示しています。",
+    "topics": [
+      "Vibe Coding",
+      "AI Agent",
+      "taskp",
+      "Bun",
+      "Local LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:27:43.233386+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Everything Claude Codeを眺めてみる",
+    "url": "https://oikon48.dev/ja/blog/everything-claude-code/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicのハッカソン優勝者が開発した「Everything Claude Code」のリポジトリを詳しく分析し、エージェント設計、自動学習、セキュリティなどの運用思想を解説した記事。",
+    "summaryBody": "この記事は、2026年3月時点でClaude Code関連で最も注目されているリポジトリの一つ「Everything Claude Code (ECC)」の内部構造と設計思想を深掘りしています。ECCは、膨大な数のRules、Agents、Skills、Commandsで構成されており、単なるツール集に留まらないAIエージェントの実行環境最適化システムです。\n\n著者は、ECCの特徴として以下の4点を挙げています。1. 各コンポーネントの説明（Description）を簡潔に保つことで呼び出し精度を高めている点。2. タスクを細分化し、Sonnetモデルを主体とした適切なモデル選択を行っている点。3. ユーザーの行動を自動記録・分析して「本能（Instinct）」として学習させる自動学習システム。4. 「OpenClaw」等の外部連携ツールの利便性とセキュリティリスクのトレードオフに対する深い考察です。\n\n結論として、ECCは「全部入りパッケージ」として使うよりも、自分に必要な要素を選別し、エージェントにどこまで権限を与えるかを制御するための「設計思想のサンプル集」として非常に価値が高いと述べています。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "Anthropic",
+      "Autonomous Agents",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

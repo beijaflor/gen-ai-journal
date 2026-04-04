@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:22:56.319112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでひとりチーム開発を回すための設定とワークフロー",
+    "url": "https://qiita.com/kei1-dev/items/c045233e1c4fb497c25d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを「自律的なチーム」として運用するために、コンテキスト管理の最適化、Agent Teamsによる階層化、MCPを活用した外部ツール連携手法を解説しています。",
+    "summaryBody": "この記事では、AIエージェントツール「Claude Code」を用いて、一人でチーム開発に匹敵するスピードを実現するための設定とワークフローを詳述しています。\n\n主な内容は以下の3点です：\n1. **自律性を高める基本設定**: 高い推論精度を確保する「Effort: Max」、文脈を人為的に管理するための「Auto Compact: OFF」、人間の承認を最小限にする「Bypass Mode」など、AIに主導権を渡すための設定が紹介されています。\n2. **Agent Teamsによる多層開発**: 調査・設計・実装（FE/BE/Infra）・QAの各フェーズをサブエージェントに分担させ、親エージェントが全体を統括する階層型ワークフローを採用し、並行作業と精度の向上を両立しています。\n3. **MCPによる開発環境の拡張**: Obsidianでのナレッジ管理、Pencil.devによるUIデザイン、Claude in Chromeによるブラウザ操作など、MCP（Model Context Protocol）を介してリポジトリ外のツールと連携し、開発プロセス全体をAIが扱えるようにしています。\n\nAIを単なるアシスタントではなく、チームメンバーとして最大限に活用するための実践的な知見が詰まっています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "MCP (Model Context Protocol)",
+      "Agent Teams",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

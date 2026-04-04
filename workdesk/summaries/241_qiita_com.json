@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:30:54.367441+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【2026年最新版】Claude Codeで行うべきセキュリティ設定 10選",
+    "url": "https://qiita.com/miruky/items/51db293a7a7d0d277a5d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを安全に使用するために必須となる、サンドボックスの有効化、権限管理、ネットワーク制限、組織ポリシーの強制適用など10の重要設定を解説したガイド。",
+    "summaryBody": "Claude Codeはターミナル操作やファイルアクセスが可能な強力なAIコーディングエージェントですが、その特権ゆえに適切なセキュリティ対策が不可欠です。本記事では2026年時点の公式ドキュメントに基づき、リスクを最小化するための10の設定項目を具体的に解説しています。主な対策として、OSレベルの分離を行うサンドボックスの有効化、`permissions.deny`を用いた危険なコマンド（rm, curl等）や機密ファイル（.env, pem等）へのアクセス遮断、ホワイトリスト方式のネットワークドメイン制限が挙げられています。さらに、高度な対策としてPreToolUseフックによるカスタムバリデーションや、devcontainerを用いた完全隔離環境の構築、さらには企業向けのManaged Settingsによるポリシーの強制適用についても触れており、個人開発から組織利用まで幅広くカバーする実践的な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "生成AI",
+      "Anthropic",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "【2026年最新版】Claude Codeで行うべきセキュリティ設定 10選"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:20:54.005775+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マイクロソフト、Claude CodeやGitHub Copilotに「このアプリをデプロイせよ」と指示すればAIが最適なインフラ構成やサービスでデプロイしてくれる「Azure Skills Plugin」公開",
+    "url": "https://www.publickey1.jp/blog/26/claude_codegithub_copilotaiazure_skills_plugin.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントにアプリのデプロイを指示するだけで、最適なインフラ構成の選定からプロビジョニング、デプロイまでを自律的に実行可能にする「Azure Skills Plugin」がマイクロソフトから公開されました。",
+    "summaryBody": "マイクロソフトは、Claude CodeやGitHub CopilotなどのAIエージェントに対し、Azure上でのインフラ設計からデプロイまでを自動化させる「Azure Skills Plugin」をリリースしました。このプラグインを組み込むことで、ユーザーが「このアプリをデプロイせよ」と指示するだけで、AIが最適なアーキテクチャ選定、Dockerfileや構成ファイルの生成、リソースのプロビジョニングを自律的に実行します。技術的基盤として、40以上のAzureサービスに接続しリアルタイムな操作を可能にする「Azure MCP Server」や、AIモデルカタログを扱う「Foundry MCP」などのコンポーネントで構成されています。GitHub Copilot in VS CodeやCLI、AnthropicのClaude Codeで利用可能であり、AWSの「Agent Plugins for AWS」に続く動きとして、AIによる開発から運用までのシームレスな自動化を加速させるものです。",
+    "topics": [
+      "Azure",
+      "AIエージェント",
+      "GitHub Copilot",
+      "Claude Code",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

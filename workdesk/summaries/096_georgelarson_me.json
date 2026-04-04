@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T00:59:31.108649+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Digital Doorman」の構築：IRCと階層型AIエージェントによる実戦的ポートフォリオ",
+    "url": "https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "履歴書を読み上げるだけのチャットボットを超え、IRCプロトコルと階層型LLMを活用して実際のGitHubコードを解析・回答する自律型AIエージェントの構築記録。",
+    "summaryBody": "エンジニアのGeorge Larson氏が、自身のポートフォリオサイトのために構築したAIエージェント「nullclaw」と「ironclaw」の技術解説。最大の特徴は、単に履歴書テキストを返すのではなく、訪問者の質問に応じて実際のGitHubリポジトリをクローンし、コードの内容に基づいて具体的な回答を生成する点にあります。\n\n主な技術的ハイライトは以下の通りです：\n1. **二層式エージェント構造**: 公開用VPS（nullclaw）とプライベート環境（ironclaw）をTailscaleで分離。公開側はZigで書かれた超軽量バイナリで動作し、非公開データへのアクセスを遮断するセキュリティ境界を構築。\n2. **IRCプロトコルの採用**: 通信基盤に30年以上の歴史を持つIRCを採用。自前サーバー（Ergo）とWebクライアント（gamja）を運用することで、ベンダーロックインを排除し、独自の美学と柔軟性を確保。\n3. **階層型推論（Tiered Inference）**: 応答速度とコストを最適化するため、挨拶や単純な振り分けにはHaikuを、コード解析などの高度な推論にはSonnetを使用し、1日2ドル以下の予算で運用。\n4. **実戦的なセキュリティ設計**: Cloudflare経由のWebSocket、リソース制限、A2A（Agent-to-Agent）プロトコルを用いた制御されたエスカレーションなど、公開用エージェント特有の攻撃面を最小化しています。",
+    "topics": [
+      "AIエージェント",
+      "LLMアーキテクチャ",
+      "IRC",
+      "Zig",
+      "セルフホスティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "building a digital doorman - george larson"
+  }
+}
