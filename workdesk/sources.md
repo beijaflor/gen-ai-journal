@@ -79,24 +79,24 @@
 - [x] 074. https://www.anthropic.com/research/vibe-physics
 - [x] 075. https://blog.cloudflare.com/dynamic-workers/
 - [x] 076. https://storybook.js.org/blog/storybook-mcp-for-react/
-- [ ] 077. https://ymmt.hatenablog.com/entry/2026/03/24/221754
-- [ ] 078. https://qiita.com/nogataka/items/fb28c739d4c4c7f55029
-- [ ] 079. https://winbuzzer.com/2026/03/23/karpathy-humans-bottleneck-ai-research-xcxwbn/
+- [x] 077. https://ymmt.hatenablog.com/entry/2026/03/24/221754
+- [x] 078. https://qiita.com/nogataka/items/fb28c739d4c4c7f55029
+- [x] 079. https://winbuzzer.com/2026/03/23/karpathy-humans-bottleneck-ai-research-xcxwbn/
 - [x] 080. https://agentcommunity.org/
 - [x] 081. https://ai-architecture.findy-tools.io/
 - [x] 082. https://addyosmani.com/blog/code-agent-orchestra/
 - [x] 083. https://tech.layerx.co.jp/entry/debugging-ai-code-uvicorn
 - [ ] 084. https://www.oreilly.com/radar/the-missing-layer-in-agentic-ai/
 - [x] 085. https://blog.mozilla.org/en/mozilla/mila-open-source-sovereign-ai/
-- [ ] 086. https://uxdesign.cc/taste-is-not-a-feature-720ca15366c7
+- [x] 086. https://uxdesign.cc/taste-is-not-a-feature-720ca15366c7
 - [x] 087. https://semaphore.io/how-does-ai-driven-deployment-differ-between-traditional-software-and-ml-models-mlops
 - [x] 088. https://www.checklyhq.com/blog/agentic-cli/
 - [ ] 089. https://css-tricks.com/generative-ui-notes/
 - [x] 090. https://carlsz.dev/posts/evolution-of-craft
-- [ ] 091. https://www.answer.ai/posts/2026-03-12-so-where-are-all-the-ai-apps.html
+- [x] 091. https://www.answer.ai/posts/2026-03-12-so-where-are-all-the-ai-apps.html
 - [x] 092. https://a16z.com/there-are-only-two-paths-left-for-software/
 - [x] 093. https://github.com/lightfeed/extractor
-- [ ] 094. https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion
+- [x] 094. https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion
 - [x] 095. https://github.com/facebookresearch/hyperagents
 - [ ] 096. https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/
 - [x] 097. https://github.com/itigges22/ATLAS
@@ -267,3 +267,4 @@
 - [x] 262. https://zenn.dev/microsoft/articles/codex_best_practice
 - [x] 263. https://nyosegawa.com/posts/docs-in-agent-era/
 - [x] 264. https://zenn.dev/penpeen/articles/93d318a99d329e
+- [x] 265. https://zenn.dev/zozotech/articles/93d318a99d329e

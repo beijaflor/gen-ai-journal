@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-02T11:27:51.481951+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Review より\"自作 Skill\"の方がレビュー精度が高かった件",
+    "url": "https://zenn.dev/zozotech/articles/93d318a99d329e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのSkills機能を活用し、独自のレビューサイクルや影響範囲調査、チーム固有の設計指針を組み込むことで、公式機能以上のレビュー精度を実現する手法の解説。",
+    "summaryBody": "本記事では、Claude Codeの標準的なレビュー機能を超え、チームの文脈に即した高度なコードレビューを実現する「自作Skill」の構築方法を解説しています。主な工夫として、一度網羅的に指摘を出した後に批判的に厳選する「2段階レビューサイクル」、diffのみに頼らず呼び出し元などの「影響範囲調査」を必須化するプロセス、言語やフレームワークに応じたガイドラインの動的読み込み、そしてリポジトリ固有の設計方針（責務配置など）の明文化を挙げています。git worktreeを利用した環境分離や、レビュー内容をガイドラインに還元する自己改善ループなど、LLMを単なるツールではなく、チームの暗黙知を学習・適用するエージェントとして活用するための実践的な知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "AI Code Review",
+      "LLM Skills",
+      "GitHub",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

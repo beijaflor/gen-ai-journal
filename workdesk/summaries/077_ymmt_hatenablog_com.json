@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-03T00:49:05.740965+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント自作のための基礎知識",
+    "url": "https://ymmt.hatenablog.com/entry/2026/03/24/221754",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google製のAgent Development Kit (ADK)を軸に、Go言語でLLMベースのAIエージェントを自作するための設計概念とアーキテクチャを詳説する。",
+    "summaryBody": "Googleの**Agent Development Kit (ADK)**を使用し、**Go**言語でAIエージェントを構築するための基礎知識をまとめた解説記事。単なるチャットボットではなく、LLMを推論エンジンとして外部ツールやサブエージェントを自律的に操作させる「エージェント」の構造を明らかにしている。具体的には、従来のREST APIではなく**Server-Sent Events (SSE)**を用いたイベントストリーミング通信の必要性、会話の分岐を管理するスレッドとブランチの概念、そしてADKによるセッションの「巻き戻し（rewind）」機能などを解説。さらに、低レイヤーの**genai SDK**と高レイヤーの**ADK**の使い分けや、フロントエンド側で必要なUIライブラリ（**assistant-ui**等）についても言及している。開発者がGemini等のLLMを活用し、実用的なエージェントを設計・実装するための体系的なガイドとなっている。",
+    "topics": [
+      "Google ADK",
+      "AIエージェント",
+      "Go言語",
+      "Gemini",
+      "イベントストリーミング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}

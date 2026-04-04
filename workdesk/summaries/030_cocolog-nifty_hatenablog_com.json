@@ -1,31 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-30T16:33:01.577252+00:00",
+    "generatedAt": "2026-04-01T16:18:02.028067+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "URL取得エラー報告 (429 Too Many Requests)",
+    "title": "AI を使って国立国会図書館デジタルコレクションを大量に読んでいる - 山下泰平の趣味の方法",
     "url": "https://cocolog-nifty.hatenablog.com/entry/2026/03/26/164700",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "リクエスト制限により対象URLから記事コンテンツを取得できませんでした。",
-    "summaryBody": "指定されたURL（https://cocolog-nifty.hatenablog.com/entry/2026/03/26/164700）へのアクセス試行中に、HTTP 429 Too Many Requests エラーが発生しました。このステータスコードは、サーバーが短期間に過剰な数のリクエストを受け取った際に、レート制限を適用してアクセスを一時的に遮断したことを意味します。このため、記事の本文データを読み取ることができず、詳細な要約や専門的な評価、トピックの抽出を行うことができません。本報告はコンテンツの欠損を通知するものであり、実際の記事内容に基づく分析ではない点にご注意ください。再度情報を取得するには、サーバーの制限が解除されるまで待機するか、手動での確認が必要です。",
+    "contentType": "🧪 Methodology & Experiments (手法・実験)",
+    "oneSentenceSummary": "国立国会図書館デジタルコレクションの膨大な資料を効率的に読み解くため、AIを活用して調査プロセスの徹底的な自動化と個人用ツール開発を行う筆者の手法と哲学を紹介している。",
+    "summaryBody": "国立国会図書館デジタルコレクション（国デジ）の膨大な資料を読破するために、AIを駆使して調査・記録・出力のワークフローを徹底的に効率化した実践記録です。「一瞬でも面倒だと思ったらAIに解決させる」という基本方針の下、純粋な「読解」以外のノイズ（URLのコピー、検索結果のクリック、OCR修正等）を自動化で排除する手法が解説されています。\n\n具体的な取り組みとして、**ndl-helper.user.js**による検索結果の自動開封と履歴保存、1キーで書誌情報を記録するPythonスクリプト、さらに**macOS Vision**、**Google Cloud Vision**、**ndlocr-lite**の3系統のOCR結果を**Gemini API**で統合校正する高度なシステム構築などが挙げられます。これらのツール群により、資料の処理件数は前年比3倍以上に向上しています。\n\n「自分専用のコアな行動に最適化したツールを作ることこそが創造性の発揮である」という哲学は、汎用ツールに満足せず、自身のワークフローをAIで極限まで研ぎ澄ませたいエンジニアにとって示唆に富む内容です。",
     "topics": [
-      "エラー通知",
-      "HTTP 429",
-      "アクセス制限"
+      "AI Workflow",
+      "OCR統合校正",
+      "Gemini API",
+      "業務効率化",
+      "個人開発"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": "Error fetching URL: 429 Client Error"
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    }
   }
 }
