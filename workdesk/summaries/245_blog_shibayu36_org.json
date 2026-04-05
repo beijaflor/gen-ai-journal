@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:56:50.932203+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのghコマンドpermission問題をreadonly用ラッパーで解決する",
+    "url": "https://blog.shibayu36.org/entry/2026/03/09/173000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeでのGitHub CLI操作において、読み取り専用の別プロファイルとラッパーを作成することで、頻繁な権限プロンプトを回避しつつ安全性を確保する手法。",
+    "summaryBody": "Claude Codeから`gh api`等でGitHubの情報を取得する際、セキュリティ上の理由で毎回権限許可が求められる課題を解決する方法を紹介しています。`GH_CONFIG_DIR`環境変数を利用して、読み取り専用（Fine-grained PATを使用）の別プロファイルを作成し、`ghro`というラッパーコマンドを定義。さらに、`CLAUDE.md`を通じてAIに読み取り時は`ghro`、書き込み時は通常の`gh`を使い分けるよう指示することで、プロンプトの煩雑さを解消しながら、意図しない書き込み操作のリスクを低減しています。",
+    "topics": [
+      "Claude Code",
+      "GitHub CLI",
+      "GH_CONFIG_DIR",
+      "CLAUDE.md",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

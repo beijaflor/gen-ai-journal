@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:26:08.826091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Python 131行で汎用AIエージェントを構築する方法：コーディングと検索エージェントの実装ガイド",
+    "url": "https://www.oreilly.com/radar/how-to-build-a-general-purpose-ai-agent-in-131-lines-of-python/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Pythonを用いて、ファイル操作やBash実行、Web検索などのツールをLLMに統合し、最小限のコードで自律的なAIエージェントを構築する手法を解説します。",
+    "summaryBody": "この記事では、AIエージェントの本質を「ツールを備え、ループ内で動作するLLM」と定義し、具体的な実装例を通してその構築方法を詳しく解説しています。著者のHugo Bowne-Andersonは、コーディングエージェント（131行）と検索エージェント（61行）の2つを例に挙げ、それらが共通の4つのステップ（LLMの接続、ツールの追加、エージェントループの構築、対話ループの構築）で構成されていることを示します。\n\n特に注目すべき点は、Bash実行権限を持つコーディングエージェントが、実質的に「汎用コンピュータ操作エージェント」として機能し、ファイル整理やデータ変換などの多様なタスクをこなせるようになる点です。また、AnthropicのClaudeやGoogleのGeminiといった異なるモデルを用いた実装例も紹介されており、Pydanticを活用したスキーマ定義や、エージェントが自ら機能を拡張するという概念についても触れられています。最終的に、エージェントの魔法は複雑なアルゴリズムではなく、適切なツール設計と対話ループにあると結論づけています。",
+    "topics": [
+      "AI Agents",
+      "Python",
+      "LLM",
+      "Anthropic Claude",
+      "Google Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How to Build a General-Purpose AI Agent in 131 Lines of Python"
+  }
+}

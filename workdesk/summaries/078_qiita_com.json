@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-02T11:34:31.585819+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「何してるか分からない」を解消する ── devtools/OpenTelemetry/cmux 可視化ツール比較",
+    "url": "https://qiita.com/nogataka/items/fb28c739d4c4c7f55029",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェント「Claude Code」の不透明な動作を可視化し、トークンコスト削減や効率化を実現する3つの監視ツールの特徴と導入方法を解説しています。",
+    "summaryBody": "Claude Codeの利用において課題となる「サブエージェントの無限ループ」「無駄なファイル読み直し」「予期せぬトークン消費」といったブラックボックス問題を解決するため、3つの可視化手法を比較・提案しています。\n\n1. **claude-devtools**: Homebrewで導入可能なデスクトップアプリ。トークン消費の内訳（7カテゴリ）やコンテキスト圧縮イベントをリアルタイムに俯瞰でき、CLAUDE.mdの最適化に直結します。\n2. **OpenTelemetry (OTel)**: 公式のテレメトリ連携。メトリクスやイベントをGrafanaやDatadogに統合でき、定量的なエラー分析や組織規模でのコスト管理に適しています。\n3. **cmux**: AIエージェント向けのターミナルマルチプレクサ。複数プロジェクトを並列で動かしながら、サブエージェントの動きを別ペインで直接監視・管理できます。\n\n記事では、まずdevtoolsで現状を把握し、必要に応じてOTelやcmuxへ拡張する段階的な導入パスを推奨しています。可視化によってエラー率の低減やタスク分割の最適化が可能になる実例も紹介されています。",
+    "topics": [
+      "Claude Code",
+      "OpenTelemetry",
+      "claude-devtools",
+      "可観測性",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

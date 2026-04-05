@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:32:45.010370+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SWE-CI: 継続的インテグレーションを通じたコードベース保守能力の評価ベンチマーク",
+    "url": "https://arxiv.org/abs/2603.03823",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMエージェントが、単一のバグ修正を超えて長期的なCI（継続的インテグレーション）サイクルの中でいかにコード品質を維持・進化させられるかを評価する、初のリポジトリレベル・ベンチマーク。",
+    "summaryBody": "本研究は、従来のSWE-benchのような静的なバグ修正評価から、より現実に即した「動的かつ長期的な保守性」の評価へとシフトするためのベンチマーク「SWE-CI」を提案しています。SWE-CIは100のタスクで構成され、各タスクは平均233日の進化履歴と71の連続したコミットを含みます。エージェントはCIループの中で、数十回に及ぶ分析とコーディングの反復プロセスを通じてタスクを解決することが求められます。これは、短期的な機能的正しさだけでなく、複雑な要件変更や長期間の機能反復に対する適応能力を測定することを目的としています。このベンチマークにより、実用的なソフトウェアエンジニアリングタスクにおけるAIエージェントの真の能力と課題が明らかになります。",
+    "topics": [
+      "LLMエージェント",
+      "ソフトウェアエンジニアリング",
+      "ベンチマーク",
+      "CI/CD",
+      "コード保守"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:28:09.742340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot SDKを活用したAIによるGitHub Issueトリアージアプリの構築",
+    "url": "https://github.blog/ai-and-ml/github-copilot/building-ai-powered-github-issue-triage-with-the-copilot-sdk/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot SDKを利用してIssueを要約・トリアージするモバイルアプリの構築方法と、サーバーサイド連携や堅牢なエラーハンドリングの実践パターンを解説しています。",
+    "summaryBody": "この記事では、GitHub Copilot SDKをReact Nativeアプリに統合し、大量のGitHub Issueを効率的に処理するアプリ「IssueCrush」の構築事例を紹介しています。主要な技術的ポイントとして、SDKがNode.js環境を必要とするため、APIキーの保護やリソース管理の観点からサーバーサイドで統合を行うアーキテクチャの重要性が強調されています。SDKのライフサイクル管理（start, createSession, disconnect, stop）や、Issueのラベルや作成者を含めた効果的なプロンプトエンジニアリングの手法、さらにAIサービスが利用不可な場合のフォールバック（代替要約）やキャッシュ戦略など、実用的な実装パターンがコード例と共に解説されています。開発者の認知的負荷を軽減し、トリアージ作業を加速させるための具体的なガイドラインを提供しています。",
+    "topics": [
+      "GitHub Copilot SDK",
+      "AIトリアージ",
+      "React Native",
+      "Node.js",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Building AI-powered GitHub issue triage with the Copilot SDK"
+  }
+}

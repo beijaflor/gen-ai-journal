@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T17:50:19.432698+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが生み出したコードをデバッグする技術 — Uvicornでのデバッグ手法",
+    "url": "https://tech.layerx.co.jp/entry/debugging-ai-code-uvicorn",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成したPythonプログラムをUvicorn環境で効率的にデバッグするための、VS Codeとdebugpyを用いた実践的な設定と手法を詳説しています。",
+    "summaryBody": "近年、AIによるコード生成が一般化していますが、生成されたコードの挙動を完全に把握し、不具合を修正するためには高度なデバッグ技術が求められます。本記事では、PythonのASGIサーバーであるUvicornを用いたWebアプリケーション開発に焦点を当て、VS Codeのデバッグ機能を最大限に活用する方法を紹介しています。具体的には、実行中のプロセスにdebugpyをアタッチさせる設定、ホットリロード（--reload）有効時のデバッガの挙動制御、Dockerコンテナ環境でのポートマッピングの注意点など、実務で即座に役立つTipsがまとめられています。単なるツールの紹介に留まらず、AIとの協調開発における「人間による検証」の重要性を技術的な側面から補完する内容となっています。",
+    "topics": [
+      "Python",
+      "Uvicorn",
+      "VS Code",
+      "LLM",
+      "デバッグ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

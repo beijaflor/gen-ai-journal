@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T17:55:00.821731+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Checkly CLIの進化：人間とAIエージェントの両方に最適化された設計手法",
+    "url": "https://www.checklyhq.com/blog/agentic-cli/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Checklyは、CLI利用者の50%がAIエージェントである現状に対応し、ドキュメントの内蔵や構造化出力、ガードレール機能を備えた「エージェント・ファースト」なCLI設計への転換を解説しています。",
+    "summaryBody": "Checklyの調査によると、CLIユーザーの約半数がすでにAIエージェント（Claude Code、Cursor、Copilot等）であり、2026年末までにエージェントが主流になると予測されています。これを受け、同社は人間とAIの両方が効率的に利用できる新しいCLI設計パターンを提唱しました。\n主な施策として、エージェントが最新のコンテキストを取得できる内蔵ドキュメント機能「Checkly Skills」、解析に適したJSON/Markdown形式の構造化出力、そして重大な操作を人間が承認するための「エージェント・ガードレール」プロトコルの導入が挙げられます。これにより、エージェントがアラート検知から修正、デプロイ、検証、インシデント解決までのループをダッシュボードを介さずターミナル上で完結できるようになりました。\n記事では、今後のCLI開発における重要な設計原則として、機械可読な情報の提供と自律性に対する人間の監視を両立させる必要性を強調しています。",
+    "topics": [
+      "AIエージェント",
+      "CLI設計",
+      "監視自動化",
+      "Developer Experience",
+      "LLM連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "One CLI, Two Audiences: How We Built for Agents and Humans"
+  }
+}

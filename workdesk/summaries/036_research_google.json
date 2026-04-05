@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:34:16.505758+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TurboQuant: LLMとベクトル検索を劇的に効率化する超高圧縮アルゴリズム",
+    "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Researchが開発したTurboQuantは、精度を維持したままLLMのKVキャッシュを大幅に削減し、ベクトル検索を高速化する画期的な量子化技術群である。",
+    "summaryBody": "Google Researchは、大規模言語モデル（LLM）のKVキャッシュやベクトル検索におけるメモリボトルネックを解消する、理論に基づいた新しい量子化アルゴリズム群「TurboQuant」「QJL」「PolarQuant」を発表した。LLMが処理する高次元ベクトルは膨大なメモリを消費するが、TurboQuantはデータを極限まで圧縮しながらも精度損失をゼロに抑えることを可能にする。\n\n具体的には、データを極座標系に変換してメモリオーバーヘッドを排除する「PolarQuant」と、1ビットの符号のみで誤差を補正する「Quantized Johnson-Lindenstrauss (QJL)」を組み合わせている。実験では、Llama-3.1やGemmaなどのモデルにおいて、精度を損なうことなくKVキャッシュを6倍以上削減し、H100 GPU上で最大8倍の高速化を達成した。この技術は、LLMの推論コスト削減だけでなく、数十億のベクトルを扱う次世代のセマンティック検索の高速化にも大きく寄与する。",
+    "topics": [
+      "TurboQuant",
+      "量子化",
+      "LLM",
+      "KVキャッシュ",
+      "ベクトル検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 95
+    },
+    "originalTitle": "TurboQuant: Redefining AI efficiency with extreme compression"
+  }
+}

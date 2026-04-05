@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-05T09:55:30.119023+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Git worktreeの運用をスキルに委ねる ―複雑さを隠蔽するClaude Codeスキル設計の実践―",
+    "url": "https://tech.findy.co.jp/entry/2026/03/23/070000",
+    "language": "ja",
+    "contentType": "🛠️ Tutorial & How-to (チュートリアル・解説)",
+    "oneSentenceSummary": "Claude Codeの「スキル」機能を活用し、Git worktreeの作成から環境構築、クリーンアップまでの複雑な手順を自動化・隠蔽する設計手法を提案する。",
+    "summaryBody": "並列開発を支える **Git worktree** の運用負荷を、AIエージェントツール **Claude Code** の「スキル」機能を用いて解消する実践的な取り組みを紹介しています。通常、worktreeの運用にはディレクトリ作成、環境ファイルのコピー、依存パッケージのインストール、そして事後のクリーンアップなど多くの手動手順を要し、チーム導入のハードルとなっていました。\n\n著者はこれらの複雑な手順を **Claude Code** のスキルとしてカプセル化し、単一のスラッシュコマンドで実行可能にしました。設計上の工夫として、「worktreeの作成」と「環境セットアップ」を分離し、プロジェクト固有の要件をシェルスクリプトでオーバーライド可能にすることで汎用性と柔軟性を両立させています。また、**EnterWorktree** ツールを用いることでセッションのディレクトリを自動で切り替えるなど、エージェントとの親和性が高いライフサイクル管理を実現しています。\n\n**Claude Code** をプロジェクトに導入し、開発ワークフローを高度に自動化したいエンジニアやテックリードにとって、スキルの設計指針として非常に有用な内容です。",
+    "topics": [
+      "Claude Code",
+      "Git worktree",
+      "Developer Experience",
+      "AIエージェント",
+      "ワークフロー自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}

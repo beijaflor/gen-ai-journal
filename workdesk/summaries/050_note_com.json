@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:37:20.506572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを「最小構成」で飼い慣らす — CLAUDE.md + Skills + Hooks のハーネス設計",
+    "url": "https://note.com/m2ai_jp/n/na3869c615096",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの自律的な暴走や誤解を防ぐため、Hooksによる通知、CLAUDE.mdによる制約、Skillsによる手順化を組み合わせた「最小構成のハーネス設計」を提案する。",
+    "summaryBody": "Claude Codeを実用的な開発パートナーとして運用するための、最小限かつ強力な制御フレームワーク（ハーネス）の設計指針。AIの「良かれと思って」による予期せぬ破壊や誤解を防ぐため、事後検証ではなく、コードに触れる前の「事前介入」を重視している。\n\n### 3つの核となる構成要素\n1. **Hook (settings.json)**: プロンプト送信時に自動実行されるスクリプト。AIが作業を開始する直前に、必須手順（ブランチ作成や翻訳）を「通知」としてリマインドする。\n2. **CLAUDE.md**: プロジェクトの「憲法」として行動制約を定義。`&lt;important&gt;`タグによる優先順位付けと、Hookとの相互参照設定により、AIの遵守率を劇的に向上させる。\n3. **Skills (SKILL.md)**: 具体的かつ再利用可能な手順書。特に、高コンテキストな日本語の指示を技術的な論点へ変換する`/translate`スキルは、AIの「理解したつもり」による手戻りをゼロにするための心臓部として機能する。\n\nこの手法は、テストフレームワークなどの外部ツールに頼らず、標準機能のみでAIとのワーキングアグリーメントを確実に履行させる実践的なアプローチである。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "CLAUDE.md",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

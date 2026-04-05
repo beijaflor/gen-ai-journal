@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:33:12.728839+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントをステートフルにする軽量カーネル「agent-kernel」",
+    "url": "https://github.com/oguzbilgic/agent-kernel",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MarkdownファイルとGitリポジトリを記憶媒体として利用し、Claude CodeやCursorなどのAIエージェントにセッションを跨いだ永続的な記憶を持たせるシンプルなフレームワーク。",
+    "summaryBody": "agent-kernelは、データベースや複雑なインフラを一切使わずに、AIコーディングエージェントに長期的な記憶（ステートフル性）を付与するためのミニマルな仕組みです。仕組みは非常にシンプルで、リポジトリをクローンし、エージェントをそのディレクトリに向けるだけです。エージェントは提供されたAGENTS.md（カーネル定義）を読み込み、自身でIDENTITY.mdやKNOWLEDGE.mdを更新・管理することで、ユーザーの好みや過去の決定事項、現在のプロジェクトの状態を「覚えている」ようになります。記憶は「状態（knowledge/）」と「物語（notes/）」の2種類に分類され、Gitによって履歴管理されます。これにより、複数の専門特化型エージェントをリポジトリ単位で簡単に作成・運用できるのが特徴です。",
+    "topics": [
+      "AIエージェント",
+      "AIプログラミング",
+      "状態管理",
+      "Markdown",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - oguzbilgic/agent-kernel: Minimal kernel to make any AI coding agent stateful. Clone, point your agent, go. · GitHub"
+  }
+}

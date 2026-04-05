@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:50:54.307185+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini API開発の精度を高める「Gemini Skills」ライブラリ",
+    "url": "https://github.com/google-gemini/gemini-skills",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMの知識不足を補い、Gemini APIやSDKの最新仕様・ベストプラクティスをAIエージェントに提供してコード生成精度を向上させるスキルライブラリ。",
+    "summaryBody": "このGitHubリポジトリは、Gemini API、SDK、およびモデル/エージェントのインタラクションに特化した「スキル」のコレクションを提供します。LLMには学習時点での固定的な知識しかないため、急速に変化するSDKの仕様や最新のベストプラクティスを把握できないという課題があります。Gemini Skillsは、こうした知識のギャップを埋めるための軽量なコンテキスト補完技術です。\n\n主な内容は以下の通りです：\n- **gemini-api-dev**: Geminiアプリ開発の基本ベストプラクティス。\n- **vertex-ai-api-dev**: Google Cloud Vertex AI特有のSDK機能やマルチモーダル生成に対応。\n- **gemini-live-api-dev**: Gemini Live APIを使用したリアルタイム・双方向ストリーミング機能の構築を支援。\n- **gemini-interactions-api**: テキスト生成、チャット、構造化出力、Deep Researchエージェント等の高度な対話機能をカバー。\n\n評価によると、これらのスキルを導入することで、Gemini 3 Proによるコード生成の正確性が最大96%まで向上したとされています。Vercel skills CLIやContext7 skills CLIを使用して簡単にインストール可能です。",
+    "topics": [
+      "Gemini API",
+      "AI Agents",
+      "LLM Context",
+      "Software Development",
+      "Google Vertex AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "google-gemini/gemini-skills: Skills for the Gemini API, SDK and model/agent interactions"
+  }
+}

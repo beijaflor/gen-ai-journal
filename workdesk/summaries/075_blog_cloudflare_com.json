@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:43:15.901265+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのサンドボックス実行を100倍高速化：Cloudflare Dynamic Worker Loaderがベータ公開",
+    "url": "https://blog.cloudflare.com/dynamic-workers/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareが、AIエージェントが生成したコードを数ミリ秒で安全かつ効率的に実行できる軽量サンドボックス「Dynamic Worker Loader」をオープンベータとして公開しました。",
+    "summaryBody": "Cloudflareは、AIエージェント向けの新しい実行環境「Dynamic Worker Loader」のオープンベータ開始を発表しました。これまでAIが生成したコードの安全な実行にはコンテナが主流でしたが、起動の遅さとリソース消費の多さが課題でした。本機能はV8 Isolate技術を活用し、従来のコンテナに比べ起動時間を約100分の1（数ミリ秒）、メモリ消費を最大100分の1に削減します。\n\n主な特徴とメリットは以下の通りです：\n- **ゼロレイテンシと無限の拡張性**: リクエストごとにオンデマンドで個別のサンドボックスを生成可能で、グローバルな分散環境で即座に動作します。\n- **トークン効率の最適化**: MCPやOpenAPIに比べ簡潔なTypeScript APIを介してツールを操作することで、トークン消費を大幅に削減します。\n- **強力なセキュリティ**: Cloudflareが長年培ったIsolateの分離技術、V8セキュリティパッチ、ハードウェアレベルの防御（MPK）などが自動適用されます。\n- **包括的なツール群**: モデル生成コードの実行を支援する`@cloudflare/codemode`、ランタイムでのnpm依存関係を解決するバンドラー、仮想ファイルシステムを提供する`@cloudflare/shell`などのSDKが提供されます。\n\nこれにより、コンシューマー規模のAIサービスにおいて、ユーザーごとに安全で高速なコード実行環境を低コストで提供することが可能になります。",
+    "topics": [
+      "Cloudflare Workers",
+      "AI Agents",
+      "Sandboxing",
+      "V8 Isolates",
+      "Web Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 96
+    },
+    "originalTitle": "Sandboxing AI agents, 100x faster"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:28:33.210095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code同士が会話できるようになったらしいので試してみた",
+    "url": "https://zenn.dev/acntechjp/articles/7bb9f418be6e68",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCPサーバー「claude-peers-mcp」を利用して、同一PC上の複数のClaude Codeセッションを連携させ、相互にメッセージを送受信する方法を解説する記事です。",
+    "summaryBody": "この記事では、Claude Codeの複数のセッションを相互接続可能にするMCPサーバー『claude-peers-mcp』の導入と活用方法を解説しています。主な内容は、Windows環境における具体的なセットアップ手順とハマりどころの解消法です。特に、通常の`claude mcp add`コマンドではWindows特有のパスやカレントディレクトリの問題で接続に失敗しやすい点を指摘し、`.claude.json`を直接編集して`cmd /c`経由でBunを呼び出す安定した設定方法を提示しています。導入後は、各セッションに`set_summary`で名前を付けることで識別が容易になり、`send_message`ツールを通じて自然言語で他のセッションへ指示を出すといった、マルチエージェント的な動作が可能になります。",
+    "topics": [
+      "Claude Code",
+      "MCP",
+      "claude-peers-mcp",
+      "Multi-agent",
+      "Bun"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

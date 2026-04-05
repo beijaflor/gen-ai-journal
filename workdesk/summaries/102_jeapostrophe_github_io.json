@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:06:33.971611+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを待つな：AIエンジニアリングにおける人間のスループット最大化手法",
+    "url": "https://jeapostrophe.github.io/tech/jc-workflow/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeなどのAIツール実行中の待機時間を、並列セッションの運用と外部的な状態管理（メモ）によって解消し、開発効率を劇的に向上させる手法とツール「jc」の提案。",
+    "summaryBody": "Claude CodeのようなAIエージェントに指示を出した後、処理が完了するまでの「数分間の空白時間」が開発者のボトルネックとなっている。この時間を有効活用するために、著者は複数のAIセッションを並行して実行することを推奨している。しかし、人間側のコンテキスト保持能力には限界があるため、単純な並列化は混乱を招く。これを解決する鍵は「状態の外部化」であり、レビュー中に気づいた点や修正指示を即座にメモし、復帰時に読み返せる仕組みを作ることである。著者はこのワークフローを最適化するために、通知、優先順位付け、TODO.mdへの自動記録機能を備えたmacOSネイティブアプリ「jc」を開発した。AIを単なる非同期の「外注先」にするのではなく、高度なオーケストレーションによって複数のAIを同時に「使いこなす」ための実践的なアプローチを提示している。",
+    "topics": [
+      "Claude Code",
+      "AI Coding Tools",
+      "Developer Productivity",
+      "Context Switching",
+      "jc (Open Source Tool)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Don't Wait for Claude"
+  }
+}

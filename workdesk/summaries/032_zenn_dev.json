@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:33:25.306388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでハーネスエンジニアリングを実践する 〜 狩りから稲作へ",
+    "url": "https://zenn.dev/ignission/articles/f1c15646c990f1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのhooksやskillsを活用し、タスク指示からPRマージまでの開発フローを4つの階層で自動化・堅牢化する「ハーネスエンジニアリング」の実践的な手法を解説しています。",
+    "summaryBody": "本記事は、Claude Codeを核としたAI駆動開発において、人間の介入を設計判断と最終承認のみに絞り込む「ハーネスエンジニアリング」の実践事例を詳説しています。著者は自動化の仕組みを4つの層（1. 操作前後のhooks、2. git操作時のLefthook、3. 任意タイミングのskills、4. リモートのGitHub Actions/CodeRabbit）に分類。Rust/TypeScriptのモノレポ環境を例に、仕様策定から実装、PR作成前の多層レビュー、CodeRabbitによる指摘の自動監視、そしてマージ後のクリーンアップに至る一連のフローを仕組み化しています。特に、Claude Codeのhooksを用いた「破壊的コマンドのブロック」や「先送り表現の検出」など、AI特有の挙動を制御するためのガードレールの実装方法が具体的に示されており、プロンプトの工夫（狩り）から、仕組みによる品質担保（稲作）への転換を提唱しています。",
+    "topics": [
+      "Claude Code",
+      "ハーネスエンジニアリング",
+      "AI駆動開発",
+      "GitHub Actions",
+      "開発自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

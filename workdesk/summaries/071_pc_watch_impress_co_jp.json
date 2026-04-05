@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:42:10.363043+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【特集】眠っているIntelのNPUをLLMで叩き起こしてみた - PC Watch",
+    "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2096319.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "利用機会の少ないIntel製NPU「Intel AI Boost」を、Microsoft Foundry LocalとAnythingLLMを組み合わせてローカルLLMとして活用する実用的な手法とメリットを解説。",
+    "summaryBody": "最新のPCに搭載されながらも活用機会が乏しいIntelのNPU（特にArrow Lake世代）を、LLM（大規模言語モデル）の推論エンジンとして活用する方法を紹介している。具体的には、Microsoftが提供するOpenVINOベースの推論エンジン「Foundry Local」をバックエンドとし、GUIフロントエンドとして「AnythingLLM」を接続する手順を解説。Core Ultra 9 285HXでの検証では、推論速度は約8 tokens/sに留まるものの、消費電力の増加がわずか5〜7W程度というNPU特有の低消費電力・静音性のメリットを実証した。最新モデルの対応にはタイムラグがあるものの、常駐型アシスタントなどの低負荷な用途におけるNPU活用の可能性を提示している。",
+    "topics": [
+      "Intel NPU",
+      "Intel AI Boost",
+      "Foundry Local",
+      "AnythingLLM",
+      "OpenVINO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:50:42.352697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "長時間実行型アプリケーション開発のためのハーネス設計：Claudeの性能を極限まで引き出すエンジニアリング手法",
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのLabsチームが、長時間稼働する自律型コーディングエージェントの性能を向上させるために開発した、生成・評価・計画からなるマルチエージェント・ハーネス設計の技術的知見を共有している。",
+    "summaryBody": "この記事では、Claudeを用いて高度なフロントエンドデザインやフルスタックアプリケーションを自律的に開発するための「ハーネス設計（Harness Design）」について詳述されています。主な内容は以下の通りです。\n\n1. **マルチエージェント構造の採用**: GAN（生成対抗ネットワーク）にヒントを得て、作成を行う「生成（Generator）」と、それを批判的に採点する「評価（Evaluator）」を分離。さらに、複雑な要件を分解する「計画（Planner）」を加えた3エージェント体制を構築しました。\n2. **自己評価バイアスの克服**: AIは自身の出力を過大評価する傾向があるため、独立したエージェントに「独創性」や「技術的精緻さ」などの具体的な基準を与えて評価させることで、ループを通じた品質向上を実現しました。\n3. **コンテキスト管理**: 長時間のタスクで発生する「コンテキスト不安（早期に作業を切り上げようとする傾向）」への対策として、コンテキストのリセットや自動圧縮を導入し、数時間にわたる一貫した作業を可能にしました。\n4. **実例と成果**: 2DゲームエディタやDAW（音楽制作ソフト）の開発を通じ、単一エージェントでは困難だった複雑なロジックの実装や、洗練されたUIデザインが可能であることを証明しました。モデルの能力向上（Opus 4.5から4.6へ）に合わせて、ハーネスを簡素化しつつ高度なタスクへ適応させるプロセスも解説されています。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "Claude",
+      "Multi-agent Systems",
+      "LLM Harness Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Harness design for long-running application development"
+  }
+}

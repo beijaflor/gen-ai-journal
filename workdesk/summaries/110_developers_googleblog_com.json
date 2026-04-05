@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:20:28.982288+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LlamaParseとGemini 3.1を用いた高度な財務アシスタントの構築",
+    "url": "https://developers.googleblog.com/build-a-smart-financial-assistant-with-llamaparse-and-gemini-31/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LlamaParseの高度なパース機能とGemini 3.1のマルチモーダル推論を組み合わせ、複雑な金融書類から構造化データを抽出・要約するエージェントの構築手法を解説する。",
+    "summaryBody": "従来のOCRでは解析が困難だった多段組PDFや複雑な表を含む金融書類を、LlamaParseとGemini 3.1を活用して高精度に処理するワークフローが紹介されています。本記事では、LlamaIndex Workflowsを用いて「パース」「テキスト/表の並列抽出」「Geminiによる要約」という4つのステージで構成されるパイプラインを構築します。特に、レイアウト理解が必要なパースにはGemini 3.1 Proを、コスト効率が求められる要約にはGemini 3 Flashを使い分けるハイブリッドアプローチが特徴です。エージェント的な反復処理（parse_page_with_agentモード）を導入することで、従来のOCRと比較して精度が13〜15%向上することが示されており、開発者が即座に実装可能なPythonコードも公開されています。",
+    "topics": [
+      "Gemini 3.1",
+      "LlamaParse",
+      "LlamaIndex",
+      "Document AI",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Build a smart financial assistant with LlamaParse and Gemini 3.1"
+  }
+}

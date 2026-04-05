@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:24:20.925301+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに長期記憶を：自作ツール「sui-memory」で壁打ちの質を変える設計と実践",
+    "url": "https://zenn.dev/noprogllama/articles/7c24b2c2410213",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのセッション終了時に会話履歴を自動でSQLiteへ保存・検索可能にする「sui-memory」を開発し、過去の議論の文脈を維持した高度なAI壁打ちを実現した。",
+    "summaryBody": "Claude Codeの静的なルール設定（CLAUDE.md）では補えない「過去の議論の文脈」を保持するため、軽量な記憶エンジン「sui-memory」を構築。外部APIを使わずSQLite（FTS5 + sqlite-vec）とローカルの埋め込みモデル（Ruri v3）のみで完結させ、セッション終了時に自動で会話をチャンク化して保存する。キーワード検索とベクトル検索を組み合わせたRRF統合や、古い記憶のスコアを減衰させるアルゴリズムを導入することで、1,900件以上のセッションから必要な文脈を100ms以下で抽出可能。これによりAIとの対話が『毎回の前提説明』から『文脈を共有した継続的な議論』へと進化した過程が詳しく解説されている。",
+    "topics": [
+      "Claude Code",
+      "RAG",
+      "SQLite",
+      "個人開発",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

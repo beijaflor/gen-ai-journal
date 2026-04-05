@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:39:46.932205+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トランスフォーマーはベイズネットワークである：確率的推論としてのアーキテクチャの解明",
+    "url": "https://arxiv.org/abs/2603.17063",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "トランスフォーマーの本質がベイズネットワークにおけるループ信念伝搬法（Loopy Belief Propagation）であることを数学的に証明し、ハルシネーションが構造的な必然であることを指摘した画期的な論文。",
+    "summaryBody": "本論文は、トランスフォーマー・アーキテクチャがなぜ機能するのかという問いに対し、「トランスフォーマーはベイズネットワークである」という明確な数学的回答を提示しています。著者であるGregory Coppola氏は、主に5つの側面からこの関連性を立証しました。\n\n1. **数学的等価性の証明**: 任意のシグモイド型トランスフォーマーが、暗黙のファクターグラフ上で「重み付きループ信念伝搬法（BP）」を実装していることを証明。1層がBPの1ラウンドに対応します。\n2. **構築的証明**: トランスフォーマーが任意の知識ベース上で正確な信念伝搬を実行できることを示し、循環依存のない知識ベースでは正確な確率推定が可能であることを確認しました。\n3. **一意性の提示**: 正確な事後確率を算出するシグモイド・アーキテクチャには、BPの重み以外に選択肢がないことを明らかにしました。\n4. **論理構造の特定**: Attentionを「AND（論理積）」、FFN（Feed-Forward Network）を「OR（論理和）」として定義。それらの交互配置がジュディア・パールの「収集/更新アルゴリズム」と完全に一致することを delineat しました。\n5. **ハルシネーションの定義**: 推論の検証には「有限の概念空間」が必要であり、概念的な接地（grounding）がない状態で動作することは、構造的にハルシネーションを引き起こす原因であると結論付けています。これはスケーリングによって解決されるバグではなく、設計上の帰結であると警鐘を鳴らしています。",
+    "topics": [
+      "Transformer",
+      "Bayesian Networks",
+      "Belief Propagation",
+      "Hallucination",
+      "Formal Verification"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 88,
+      "overall": 94
+    },
+    "originalTitle": "Transformers are Bayesian Networks"
+  }
+}

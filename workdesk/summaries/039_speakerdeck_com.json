@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:34:55.727265+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実践ハーネスエンジニアリング #MOSHTech",
+    "url": "https://speakerdeck.com/kajitack/implementing-herness-engineering",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自律的なAIエージェントがLLMの性能を最大限に発揮できるよう、コンテキスト設計、アーキテクチャ制約、品質評価ループを統合した「ハーネスエンジニアリング」の実践知を解説する。",
+    "summaryBody": "本資料は、2026年時点での自律的AIエージェントの活用を最大化するための環境設計「ハーネスエンジニアリング」について解説しています。主な柱は3点です。1. **コンテキスト設計**: ドキュメントをGitHubに集約し、MCP（Model Context Protocol）を活用してエージェントに適切な知識を与えつつ、実装・レビュー・仕様確認などの責務ごとにエージェントを分離してコンテキストを最適化します。2. **アーキテクチャ制約とガードレール**: クリーンアーキテクチャや依存方向の強制（deptrac/dependency-cruiser）、強力な型システム、静的解析を組み合わせることで、AIが生成するコードの不整合を未然に防ぐ多層防御を構築します。3. **品質評価ループ**: AIが自身でTDD（テスト駆動開発）を行い、Chrome DevTools MCP等を用いてブラウザ上での実動作まで検証する自己修正サイクルを回します。これにより、人間が介在する前に多くのバグをフィルタリングし、エンジニアの役割が「コードを書くこと」から「AIを制御するハーネスを設計すること」へシフトしていく未来を提示しています。",
+    "topics": [
+      "AI Agent",
+      "Harness Engineering",
+      "LLM",
+      "Software Architecture",
+      "Software Quality"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

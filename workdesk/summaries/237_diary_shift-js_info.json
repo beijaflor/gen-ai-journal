@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:30:40.934070+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年3月24日の LiteLLM 侵害の概要と対応指針",
+    "url": "https://diary.shift-js.info/litellm-compromise/",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "2026年3月24日に発生したLiteLLMのPyPIパッケージ侵害事件について、マルウェアの動作詳細から具体的な除染・対応手順までを技術的に解説した速報記事。",
+    "summaryBody": "### インシデントの概要\n2026年3月24日、LLMプロキシライブラリ「LiteLLM」のPyPIアカウントが侵害され、悪性コードを含むバージョン1.82.7および1.82.8が公開されました。これはTeamPCPによる一連のサプライチェーン攻撃の一環と考えられています。\n\n### マルウェアの動作詳細\n- **実行起点**: v1.82.7はインポート時に、v1.82.8は`.pth`ファイル経由でPython起動時のみで発火します。なお、v1.82.8は実装ミスによりフォークボム的な挙動を示します。\n- **情報窃取**: SSH鍵、クラウド（AWS/GCP/Azure/Azure）のクレデンシャル、Kubernetesシークレット、暗号資産ウォレット、ブラウザ履歴、環境変数など、極めて広範な認証情報を収集し外部へ送信します。\n- **永続化とラテラル**: `systemd`ユーザーサービスとしてバックドアを設置するほか、Kubernetes環境では特権Pod（node-setup-*）を全ノードに展開しようと試みます。\n\n### 対応指針\n1. **確認**: `pip show litellm`で1.82.7/8が導入されていないか確認する。\n2. **駆除**: アンインストール、`pip cache purge`の実行、および`~/.config/sysmon/`内のバックドアファイル削除を行う。\n3. **ローテーション**: 収集対象となった全てのクレデンシャル（特にクラウド鍵、SSH、K8sトークン）を即座に更新する。\n\n### 自衛策\n今後も続く可能性があるサプライチェーン攻撃への対策として、信頼できるレジストリプロキシ（Takumi Guard等）の利用や、新規パッケージの検疫期間（72時間程度）の導入が推奨されます。",
+    "topics": [
+      "LiteLLM",
+      "サプライチェーン攻撃",
+      "PyPI",
+      "マルウェア解析",
+      "インシデントレスポンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

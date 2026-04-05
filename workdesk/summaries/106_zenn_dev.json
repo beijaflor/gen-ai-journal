@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:16:18.001305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIでSuperpowersスキルを導入してみた",
+    "url": "https://zenn.dev/jodycraft/articles/copilot-cli-superpowers-guide",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot CLIにAIエージェントの自律的な開発フローを定義するスキルライブラリ「Superpowers」を導入し、TDDや設計の自動化を試した実践レポート。",
+    "summaryBody": "GitHub Copilot CLIおよびVS Code拡張に、AIエージェント向けのスキルライブラリ「Superpowers」を導入する手順と、その活用方法を解説した記事です。Superpowersは、Jesse Vincent氏によって開発された、AIに「開発ワークフローの型」を教えるためのツールセットであり、ブレインストーミングやTDD（テスト駆動開発）、体系的デバッグなど全14種類のスキルが含まれています。\n\n著者は、GitHub Copilot CLIとVS Code拡張の両環境で検証を実施。CLI環境ではツールの自律的な呼び出しが非常に安定しており、スキルに沿った要件定義やプランニングがスムーズに行える一方、VS Code環境ではツールの呼び出しに不安定な面があり、プロンプトでの明示的な指示が必要になる場合があることを指摘しています。\n\n最終的に、設計やデバッグなどの自律性が求められる作業にはCLIを、コードの微修正にはVS Codeを使い分けるスタイルを推奨しており、AIエージェントに「何をさせるか」だけでなく「どうやらせるか」を定義する『スキルエンジニアリング』の重要性を強調しています。",
+    "topics": [
+      "GitHub Copilot",
+      "CLI",
+      "AIエージェント",
+      "Superpowers",
+      "VS Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

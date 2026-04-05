@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:20:37.792699+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と Discord 連携はどのように動作しているのか？",
+    "url": "https://azukiazusa.dev/blog/how-discord-integration-works/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code v2.1.80で導入された「チャンネル」機能の仕組みを、Discord連携の実装例やMCPの通知・ツール仕様、独自チャンネルの構築方法を通じて技術的に解説しています。",
+    "summaryBody": "この記事では、Claude CodeのResearch Preview版として公開された「Claude Code channels」が、どのように外部サービス（Discord等）と連携しているのかを解説しています。主な仕組みはMCP（Model Context Protocol）をベースとしており、Botトークンを設定する『configureスキル』、アクセス権限を管理する『accessスキル』、そして実際に通信を担う『MCPサーバー』の3要素で構成されています。具体的には、Claude Codeが`--channels`フラグで起動した際に、MCPサーバーの`claude/channel`ケイパビリティを介して通知（Notification）を購読し、外部からのメッセージを受信。返信にはMCPツールを呼び出すという双方向通信のフローが詳細なコード例とともに示されています。また、BunとHonoを用いた独自チャンネルの実装手順も紹介されており、開発者が独自の外部連携ツールを構築するための実践的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "Discord",
+      "MCP (Model Context Protocol)",
+      "Agent Skills",
+      "LLM連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

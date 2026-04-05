@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:27:55.496626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex CLIのsubagentsを使って並列コードレビューを試す",
+    "url": "https://blog.lai.so/codex-subagents/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codex CLIの新機能であるsubagentsを活用し、大規模なRustコードのプルリクエストを並列レビューすることで、時間短縮と指摘数向上のトレードオフを検証した記事。",
+    "summaryBody": "### 概要\nCodex CLIに導入された、複数のエージェントを並列起動する「subagents」機能を実戦投入した検証レポートです。PythonからRustへフルリライトされた大規模なPull Request（約9000行）を対象に、単一エージェント、標準並列、カスタム定義エージェントの3パターンで比較検証を行っています。\n\n### 検証結果とパフォーマンス\n- **実行効率:** 並列化によりレビュー所要時間が約6分から3分へと半減しました。メインエージェントがタスクを分散し、結果を統合する流れがログから確認されています。\n- **指摘の質:** 単一エージェントでは5件だった指摘数が、カスタムエージェント構成では11件に倍増。特定領域（セキュリティ、パフォーマンス、Rustのイディオム）に特化させたプロンプトが有効に機能しました。\n- **リソース消費:** 利便性の代償として、Weekly limitの消費量が3倍（4%から12%）に増加しており、コンテキストのフォークによるコスト増が課題となります。\n\n### 運用のヒントと限界\nカスタムエージェントをTOMLで定義し、`developer_instructions`でスコープを限定することで、複雑なタスクのタイムアウトを回避できる可能性が示唆されました。しかし、Zip-slipのような高度な脆弱性を見落とすなど、LLM自体の推論限界も依然として存在するため、人手による確認との組み合わせが重要です。",
+    "topics": [
+      "Codex CLI",
+      "OpenAI",
+      "Code Review",
+      "Rust",
+      "LLM Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

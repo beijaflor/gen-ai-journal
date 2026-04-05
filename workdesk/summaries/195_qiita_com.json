@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:26:58.436246+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントが「最初から戦力になる」リポジトリ設計 — AGENTS.md・ディレクトリ構造・バリデーション戦略の実践ガイド",
+    "url": "https://qiita.com/akira_papa_AI/items/0385b6d1468e6d564b50",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングツールの出力精度を最大化するために、AI専用ドキュメント(AGENTS.md)の作成や、コンテキスト把握を容易にするディレクトリ構造、自動検証の仕組みを導入する実践的な手法を提案している。",
+    "summaryBody": "この記事では、CursorやClaude CodeなどのAIエージェントがプロジェクトの「文脈」を正しく理解し、高品質なコードを生成するためのリポジトリ設計について詳述しています。主な柱として、AI向けの取扱説明書となる『AGENTS.md / CLAUDE.md』の策定（禁止事項の明記やコード例の提示）、AIが関連ファイルを一度に把握しやすい『Vertical Slice Architecture』の採用、そしてJSDoc付きの型定義やCIでのテストカバレッジ強制による『バリデーション戦略』を挙げています。AIツールの性能を嘆く前に、リポジトリ側を「AI-Ready」に整えることで、開発効率が劇的に向上することを説いています。最後には、自身のリポジトリがAIにとってどれほど読みやすいかを判定するチェックリストも提供されています。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "AIエージェント",
+      "リポジトリ設計",
+      "AGENTS.md"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

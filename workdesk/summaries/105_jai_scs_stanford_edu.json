@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:16:00.437967+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jai: AIエージェントの誤操作からファイルを守る、Linux向け軽量・即時サンドボックス",
+    "url": "https://jai.scs.stanford.edu/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Dockerや複雑な設定を必要とせず、コマンド一つでAIエージェントのファイルシステムアクセスを制限・隔離できるLinux用サンドボックスツールです。",
+    "summaryBody": "AIエージェントやAIツールが不適切にホームディレクトリを削除したり、作業ツリーを空にしたりする事故が報告される中、スタンフォード大学のSCS研究グループが開発した「jai」は、開発者が日常的に使える軽量な保護策を提供します。Dockerのようなイメージ構築や、bubblewrapのような複雑なフラグ指定は不要で、`jai &lt;command&gt;` と入力するだけで即座に隔離環境が起動します。\n\n**主な特徴:**\n- **コピーオンライト(CoW)オーバーレイ:** ホームディレクトリへの変更は一時的なレイヤーに記録され、元のファイルは一切変更されません。作業ディレクトリ(CWD)のみが直接書き込み可能となります。\n- **3つの動作モード:** 利便性重視の「Casual」、別ユーザーとして実行し機密性も高める「Strict」、ホームを完全に隠す「Bare」から選択可能です。\n- **設定不要:** インストールしてすぐに既存のワークフロー（AIによるコーディング、シェルコマンド実行、不明なスクリプトの試行）に組み込めます。\n\nAIに全権限を与える「YOLOモード」と、手間のかかる「完全な仮想マシン」の間のギャップを埋める、現代のAI駆動開発に必須のガードレールと言えるツールです。",
+    "topics": [
+      "AIエージェント",
+      "サンドボックス",
+      "Linuxセキュリティ",
+      "開発者ツール",
+      "データ保護"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 88
+    },
+    "originalTitle": "jai - easy containment for AI agents"
+  }
+}

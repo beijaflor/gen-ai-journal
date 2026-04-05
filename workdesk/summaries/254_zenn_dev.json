@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:32:41.236214+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング、それGit Workflowをbashで書き直してるだけでは",
+    "url": "https://zenn.dev/shio_shoppaize/articles/shogun-harness-engineering",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "2026年にバズった「ハーネスエンジニアリング」の本質を既存のGit Workflowの再実装と分析し、真のエンジニアリングは既存プロセスの移植を超えた先にあると提言する。",
+    "summaryBody": "2026年3月に急浮上した概念「ハーネスエンジニアリング」について、著者が主要な文献や公式発表を網羅的に分析し、その正体を批判的に考察した記事です。HashiCorpのMitchell Hashimoto氏が提唱したこの言葉は、「AIエージェントのミスを防ぐ仕組みづくり」を指しますが、著者はその多くがブランチ保護、CI/CD、PRレビューといった既存の「Git Workflow」をターミナル（CLI）環境に再実装しているに過ぎないと指摘します。\n\n著者は、現状の議論を3つのレイヤーに整理しています：\n1. **セットアップ**: CLAUDE.mdやhookの導入（簡単な設定）\n2. **ワークフロー移植**: Git Workflowの品質ゲートをローカルで再現（既存プロセスの引っ越し）\n3. **未踏領域の設計**: マルチエージェント間の非同期通信や自律復帰（真のエンジニアリング）\n\n世の中の記事の多くがレイヤー1〜2に終始している中、自身のマルチエージェントシステム「将軍」での苦闘を例に、AI特有の複雑な協調設計こそが重要であると説いています。単なるバズワードの消費に警鐘を鳴らし、エンジニアとしての思考の構造化と本質的な設計能力の必要性を強調する内容です。",
+    "topics": [
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "Claude Code",
+      "ソフトウェアエンジニアリング",
+      "Git Workflow"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 55,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

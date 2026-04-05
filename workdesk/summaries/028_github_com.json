@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:32:30.156056+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MSA：1億トークンのコンテキストを処理可能な端から端まで学習可能なメモリフレームワーク",
+    "url": "https://github.com/EverMind-AI/MSA",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Memory Sparse Attention (MSA)は、スパースアテンションとドキュメントレベルRoPEを統合し、1億トークンという極限のコンテキスト長を精度を保ちつつ処理可能にする革新的なAIメモリフレームワークです。",
+    "summaryBody": "従来のLLMが直面していたコンテキスト長の限界（128K〜1M程度）を打ち破る「Memory Sparse Attention (MSA)」が登場しました。このフレームワークは、1億トークンという膨大な情報を、端から端まで学習可能な暗黙的メモリとして扱うことができます。\n\n主な技術的特徴は以下の通りです：\n- **可溶性スパースアテンションとドキュメントレベルRoPE**: 訓練時（64K）から推論時（1億）への極端な外挿を可能にし、計算量を線形（O(L)）に抑えることで、16Kから1億トークンへのスケールアップでも性能低下を9%未満に留めています。\n- **KVキャッシュ圧縮とメモリ並列推論**: 文献情報をGPU/CPU/ホストメモリに効率的に分散配置し、A800 GPU 2枚という限定的な環境で1億トークンのスループットを実現します。\n- **メモリ・インターリービング**: 「検索→コンテキスト拡張→生成」を適応的に繰り返すことで、分散した情報源を跨ぐ多段階推論（Multi-hop Reasoning）の能力を大幅に向上させています。\n\nベンチマーク結果では、既存のRAG手法や長文特化型モデルを凌駕しており、特に「大海撈針（NIAH）」テストにおいて100万トークン時でも94.84%の精度を維持するなど、圧倒的な安定性を示しています。",
+    "topics": [
+      "Large Language Models",
+      "Long Context",
+      "Sparse Attention",
+      "Memory Management",
+      "Deep Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Memory Sparse Attention - 亿级（100M）token 上下文的端到端可训练记忆框架"
+  }
+}

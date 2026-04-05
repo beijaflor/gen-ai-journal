@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T17:52:31.419831+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型AIに欠けているレイヤー：自律型システムに決定論的な実行環境が必要な理由",
+    "url": "https://www.oreilly.com/radar/the-missing-layer-in-agentic-ai/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの確率的な推論と実世界での決定論的な実行を分離し、安全性と信頼性を担保するための新レイヤー「意思決定インテリジェンス・ランタイム（DIR）」の必要性を提案する記事。",
+    "summaryBody": "AIエージェントを実際のプロダクション環境、特に金融やインフラ管理などのミッションクリティカルな分野にデプロイする場合、LLMの推論能力（ユーザー空間）だけではネットワークのタイムアウト、競合状態、ハルシネーションによるパラメータ異常などの「インフラの問題」を解決できません。筆者は、OSのカーネルのように特権的な状態変更を管理する「意思決定インテリジェンス・ランタイム（DIR）」というアーキテクチャ層を提唱しています。DIRは、エージェントの出力を信頼できない「提案」として扱い、決定論的なコードでバリデーション、JIT（Just-In-Time）状態検証、冪等性の確保、およびDFID（意思決定フローID）による詳細な監査トレースを強制します。モデルの賢さに依存するのではなく、実行境界をエンジニアリング的に制御することで、実用的な自律型システムの構築が可能になります。",
+    "topics": [
+      "Agentic AI",
+      "AI Safety",
+      "Software Architecture",
+      "LLM Reliability",
+      "Decision Intelligence Runtime"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "The Missing Layer in Agentic AI – Why autonomous systems need a deterministic runtime"
+  }
+}

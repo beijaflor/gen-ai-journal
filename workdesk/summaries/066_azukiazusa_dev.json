@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:40:59.377784+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Storybook MCP を試してみた",
+    "url": "https://azukiazusa.dev/blog/storybook-mcp/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Storybook MCPを活用し、AIエージェントがコンポーネント仕様を正確に理解してUI生成と自動テストを自律的に完結させる高度な開発フローを解説しています。",
+    "summaryBody": "Storybookの新機能「Storybook MCP」の試用レポート。この機能はModel Context Protocol（MCP）を介してAIエージェント（Claude Code等）をStorybookに接続し、コンポーネントの仕様やドキュメントを直接参照させるものです。記事では`@storybook/addon-mcp`の導入から、Claude Codeを用いたログインフォームの自動生成プロセスを具体的に解説しています。エージェントが自律的にStorybookのProps定義を確認し、デザインシステムに一貫したコードを生成した上で、`run-story-tests`によるインタラクションテストの実行と自動修正まで完結させる流れを紹介。AI駆動開発における「デザインシステムとの乖離」や「手動フィードバックの非効率さ」を解決する手法として、ツールの詳細な使用感やベストプラクティスがまとめられています。",
+    "topics": [
+      "Storybook",
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "AIエージェント",
+      "UIテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

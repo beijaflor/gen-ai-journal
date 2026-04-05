@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:29:04.553051+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code ChannelsとOpenClawを比べてみた",
+    "url": "https://zenn.dev/acntechjp/articles/993902f944b29d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの新機能「Claude Code Channels」とOSSの「OpenClaw」を比較し、開発ツール拡張とAIアシスタント基盤という設計思想の違いを解説。",
+    "summaryBody": "2026年3月に発表されたAnthropicの「Claude Code Channels」と、先行するAIエージェント基盤「OpenClaw」を技術的な視点から比較した記事です。Claude Code Channelsは、ターミナルのセッションに外部チャットからアクセスする「開発ツールの拡張」であり、MCPサーバーを用いた一時的な接続を特徴とします。対してOpenClawは、常駐ゲートウェイにより20以上のチャットプラットフォームを統合管理する「AIアシスタント基盤」です。通信モデル、ルーティング機能、メッセージ操作の多様性、権限承認フロー（Permission Relayとexec-approvals）の違いを詳述。さらに、OpenClawにおける過去の脆弱性や悪意あるスキルのリスクにも触れ、手軽な開発効率化か、24時間稼働の多機能基盤かという選択基準を提示しています。",
+    "topics": [
+      "Claude Code",
+      "OpenClaw",
+      "AI Agent",
+      "MCP",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

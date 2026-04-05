@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:30:12.489559+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ファイルにプロンプトを書き込むと非同期にAI Agentが召喚されるツール「ghsummon」",
+    "url": "https://songmu.jp/riji/entry/2026-03-26-ghsummon.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Markdownファイル等に「@copilot」から始まる指示を書いてプッシュするだけで、GitHub Actions経由でAIエージェントが非同期に動作し、Pull Requestを作成してくれるツール。",
+    "summaryBody": "ソフトウェアエンジニアのSongmu氏が開発した、GitHub Actions上で動作するAIエージェント召喚ツール「ghsummon」の紹介記事です。Markdownファイル内に `@copilot 〇〇について調べて` といった指示を書き込みGitHubへpushすると、ツールがそれを検知して自動的にPull Requestを作成し、GitHub Copilot Coding Agentが指示に基づいたファイル編集や調査結果の書き込みを行います。\n\nこのツールの大きな特徴は、エージェントの処理を非同期で行える点にあります。ObsidianなどのエディタとGit自動連携を組み合わせることで、日常のメモ書きの延長でAIにタスクを投げ、後でPR上で結果を確認・調整するというワークフローが可能になります。また、カスタムエージェントの利用も可能で、リサーチと検証のループを回すような高度な指示にも対応。PRのコメントを通じて追加の指示も出せるため、AIの生成内容を人間がレビューしてから取り込む運用がスムーズに行えます。",
+    "topics": [
+      "GitHub Actions",
+      "GitHub Copilot",
+      "AI Agent",
+      "ghsummon",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

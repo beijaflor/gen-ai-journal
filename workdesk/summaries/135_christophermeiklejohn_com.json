@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:18:54.937890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeにモバイルアプリのQA（品質保証）を教える：AndroidとiOSでの自動化の苦闘",
+    "url": "https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Capacitorで構築されたモバイルアプリに対し、Claudeを使用して自動でスクリーンショットを撮影・分析させ、バグを報告するQAエージェントを構築した技術的記録。",
+    "summaryBody": "個人開発者の著者が、Capacitorで構築されたWeb・iOS・AndroidアプリのQAをClaudeで自動化した過程を詳述しています。AndroidはChrome DevTools Protocol (CDP)を介して容易に制御可能で、90分で25画面の自動巡回を実現しました。一方、iOSはAppleの厳しい制限により、通知ダイアログの自動処理やキーボード入力、座標指定の精度に苦慮し、最終的にTCC.dbの直接操作やアクセシビリティAPIの活用によって6時間以上かけて克服しました。AIによる視覚的レグレッションテストの可能性と、プラットフォーム固有の自動化ツールにおける『Appleの壁』、そしてAIエージェントを使用する際の開発者の規律の重要性を強調しています。",
+    "topics": [
+      "Capacitor",
+      "Claude",
+      "QA Automation",
+      "iOS Simulator",
+      "Android WebView"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Teaching Claude to QA a Mobile App"
+  }
+}

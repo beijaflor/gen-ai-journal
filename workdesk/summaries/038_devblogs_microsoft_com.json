@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:34:43.162492+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": ".NETランタイム開発におけるCopilot Coding Agent導入10ヶ月の軌跡と教訓",
+    "url": "https://devblogs.microsoft.com/dotnet/ten-months-with-cca-in-dotnet-runtime/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": ".NETランタイムのような巨大で複雑なコードベースにおいて、GitHub Copilot Coding Agentの成功率はモデルの性能よりも「リポジトリ固有の指示書（instructions.md）」の質に大きく依存することが実証された。",
+    "summaryBody": "Microsoftの.NETチームが、極めて複雑なコードベースである`dotnet/runtime`にGitHub Copilot Coding Agent (CCA) を導入した10ヶ月間の詳細な実験レポートです。合計878件のPRを作成し、そのうち535件をマージ。当初42%だった成功率は、リポジトリ固有のビルド手順やテスト規約を明文化した「instructions.md」の整備により70%以上に向上しました。\n\n主な成果として、コードの削除・クリーンアップ（成功率85%）やテスト作成（76%）で高い生産性を発揮した一方、アーキテクチャの判断やC++等のネイティブコード、プラットフォーム固有のデバッグには依然として課題があることが判明しました。開発者の役割は「コードの実装者」から「AIのガイドおよび査読者」へとシフトしており、スマートフォンから高度なPRを発行できる一方で、レビューの負荷が新たなボトルネックとなる「非対称な生産性」の課題も浮き彫りになっています。結論として、AIエージェントを使いこなす鍵は「モデルの賢さ」以上に「ドメイン知識の明文化（指示書）」にあると強調されています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      ".NET",
+      "ソフトウェアエンジニアリング",
+      "GitHub Copilot Coding Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "Ten Months with Copilot Coding Agent in dotnet/runtime"
+  }
+}

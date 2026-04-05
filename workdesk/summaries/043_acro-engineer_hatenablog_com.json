@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-02T00:44:07.167234+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strands Agents ＋ AG-UIで Human-in-the-Loop付きのAIエージェントを実現する",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/03/27/120000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Strands Agentsのinterrupt機能と標準化されたAG-UIプロトコルを用いて、AIエージェントの重要なツール実行前に人間が介入するHuman-in-the-Loop構成の実装手法を解説する。",
+    "summaryBody": "この記事では、自律型AIエージェントのガバナンスを確保するために重要な**Human-in-the-Loop（HITL）**の実装方法に焦点を当てています。具体的には、Python向けエージェントフレームワーク**Strands Agents**の`interrupt`機能と、エージェント・UI間の通信を標準化するオープンプロトコル**AG-UI**を組み合わせたシステム構成を詳述しています。\n\n主なポイントは以下の通りです：\n- **Strands Agentsの割り込み制御**: `HookProvider`を利用してツール実行の直前に処理を一時停止し、ユーザーの承認を待機させる方法。\n- **AG-UIプロトコルの活用**: 従来のREST/GraphQLでは困難だった長時間実行、ストリーミング、状態共有、およびHITLイベントを標準化された16種類のイベントで実現。これにより、エージェント側はUIの具体的な実装を意識することなく承認フローを組み込めます。\n- **フロントエンドとの連携**: **Next.js**と**CopilotKit**（`useCoAgent`フック）を使用し、バックエンドからの`pending_interrupt`イベントを受け取って承認モーダルを表示し、ユーザーの判断をエージェントに返送する実装フロー。\n\n外部検索やファイルの永続化といったリスクを伴う操作をエージェントに任せる際、開発者がどのようにして疎結合かつ型安全に人間による承認プロセスを統合できるかを提示しており、実用的なリファレンスとなっています。\n\nAIエージェントの自律性と安全性のバランスをとりたいエンジニア、特にマルチエージェントや複雑なワークフローをWebアプリ化しようとしている開発者に推奨されます。",
+    "topics": [
+      "AIエージェント",
+      "Human-in-the-Loop",
+      "AG-UI",
+      "Strands Agents",
+      "CopilotKit"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}

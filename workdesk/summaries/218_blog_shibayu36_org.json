@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-05T14:15:58.934807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる実装の品質が微妙で毎回自分で指摘しまくる必要があったので、確認前に自動で品質を上げさせるようにした",
+    "url": "https://blog.shibayu36.org/entry/2026/03/23/173000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを用いたコーディングにおいて、3つのエージェントによる並列レビューと批判的評価を組み合わせた自動修正フローを構築することで、人間が介入する前に実装品質を底上げする手法を紹介している。",
+    "summaryBody": "Claude Code等のAIによる自動実装において、生成コードの品質が期待に満たず、人間が都度修正を指摘する手間が生じる課題を解決するための実践的なワークフローを解説しています。著者は、独自のスラッシュコマンド `/self-review` を開発し、3種類の異なる特性を持つレビュアー（汎用品質、Codex CLIによる別モデル視点、可読性・一貫性特化）を並列で実行する仕組みを導入しました。このプロセスの鍵は、全ての指摘を鵜呑みにせず、後続の `/fix-review-comments` スキルが指摘の妥当性を批判的に精査した上で、本当に必要な修正のみを実行する点にあります。これにより、AI特有の過剰な抽象化や的外れな指摘をフィルタリングしつつ、プロジェクトの文脈に沿った品質改善を自動化しています。設定ファイルはGitHubで公開されており、AIエージェントの「使いこなし」における現実的かつ高度なアプローチを提示しています。",
+    "topics": [
+      "Claude Code",
+      "AIコードレビュー",
+      "LLM",
+      "エージェントワークフロー",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

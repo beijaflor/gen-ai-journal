@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:34:03.442817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "中間層をリピートするだけでLLM性能が向上する!? 4090x2でリーダーボードトップになった手法Repeat Your Self",
+    "url": "https://note.com/shi3zblog/n/nbb931d23e156",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの特定の中間層を複製して挿入するだけで、追加学習なしに推論能力を劇的に向上させる手法「Repeat Your Self (RYS)」の紹介と検証結果。",
+    "summaryBody": "David Ng氏が提唱する「Repeat Your Self (RYS)」は、LLMを神経解剖学的に捉え、特定の『思考』を司る中間層を繰り返すことで性能を向上させる画期的な手法です。最大の特徴は、一切の再学習や追加の計算資源（スーパーコンピュータ等）を必要とせず、グリッドサーチによる最適な層の特定だけで、リーダーボードのトップに立てるほどの性能を引き出せる点にあります。記事では、Qwen2-72Bでの成功例に加え、著者自身によるQwen3-8BやMoE（Mixture of Experts）モデルでの追試結果を報告。Qwen3-8Bでは第13-15層のリピートにより数学テストで+157%のスコア向上を記録し、特定タスクの回路が特定の層に局在していることを示唆しています。コンシューマ向けGPU（RTX 4090）で実行可能なこの手法は、モデル構造の最適化における新たな地平を切り開いています。",
+    "topics": [
+      "LLM",
+      "Repeat Your Self (RYS)",
+      "推論最適化",
+      "Qwen",
+      "神経解剖学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}
