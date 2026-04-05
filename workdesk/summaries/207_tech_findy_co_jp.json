@@ -1,31 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-03-30T23:20:45.864940+00:00",
+    "generatedAt": "2026-04-05T09:55:30.119023+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "記事取得エラー（429 Too Many Requests）",
+    "title": "Git worktreeの運用をスキルに委ねる ―複雑さを隠蔽するClaude Codeスキル設計の実践―",
     "url": "https://tech.findy.co.jp/entry/2026/03/23/070000",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "指定されたURLのコンテンツ取得中にHTTP 429（Too Many Requests）エラーが発生したため、内容を解析できませんでした。",
-    "summaryBody": "### エラーの概要\n対象のURL `https://tech.findy.co.jp/entry/2026/03/23/070000` へのアクセス時に、サーバー側から過剰なリクエストとして制限を受けたことを示すHTTP 429エラーが返されました。このため、Findy Tech Blogの該当記事の内容を読み取ることができず、要約の生成が不可能となっています。\n\n### 補足事項\n- 発生エラー: 429 Client Error\n- 対象ドメイン: tech.findy.co.jp\n- URL内の日付（2026/03/23）から、未来の日付が設定されているか、特定の予約投稿等に関連するURLである可能性があります。",
+    "contentType": "🛠️ Tutorial & How-to (チュートリアル・解説)",
+    "oneSentenceSummary": "Claude Codeの「スキル」機能を活用し、Git worktreeの作成から環境構築、クリーンアップまでの複雑な手順を自動化・隠蔽する設計手法を提案する。",
+    "summaryBody": "並列開発を支える **Git worktree** の運用負荷を、AIエージェントツール **Claude Code** の「スキル」機能を用いて解消する実践的な取り組みを紹介しています。通常、worktreeの運用にはディレクトリ作成、環境ファイルのコピー、依存パッケージのインストール、そして事後のクリーンアップなど多くの手動手順を要し、チーム導入のハードルとなっていました。\n\n著者はこれらの複雑な手順を **Claude Code** のスキルとしてカプセル化し、単一のスラッシュコマンドで実行可能にしました。設計上の工夫として、「worktreeの作成」と「環境セットアップ」を分離し、プロジェクト固有の要件をシェルスクリプトでオーバーライド可能にすることで汎用性と柔軟性を両立させています。また、**EnterWorktree** ツールを用いることでセッションのディレクトリを自動で切り替えるなど、エージェントとの親和性が高いライフサイクル管理を実現しています。\n\n**Claude Code** をプロジェクトに導入し、開発ワークフローを高度に自動化したいエンジニアやテックリードにとって、スキルの設計指針として非常に有用な内容です。",
     "topics": [
-      "HTTP 429",
-      "Access Error",
-      "Findy Tech Blog"
+      "Claude Code",
+      "Git worktree",
+      "Developer Experience",
+      "AIエージェント",
+      "ワークフロー自動化"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": null
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
   }
 }
