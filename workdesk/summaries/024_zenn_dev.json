@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:20:30.505511+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIは無料で使えるが「50回で死ぬ」ので使い方を考える",
+    "url": "https://zenn.dev/catatsumuri/articles/92a2145f15b7b4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot CLIの無料枠における「50回」というプレミアムリクエスト制限を念頭に、Git操作やGitHub連携に特化した効率的な活用戦略を提案する記事です。",
+    "summaryBody": "GitHub Copilot CLIはGitHubアカウントがあれば無料で利用可能ですが、高機能な処理を行う「プレミアムリクエスト」が月間50回までに制限されています。この記事では、この限られたリソースを無駄にしないための戦略として、一般的なプログラミングの質問ではなく、Gitコマンドの自動化やGitHub連携（PR作成、issue管理、CI/CDのデバッグ）に特化したエージェントとしての運用を推奨しています。\n\n具体的には、`gh`コマンドとの連携設定や、`.github/copilot-instructions.md`を用いた日本語指示の永続化、さらには「upstreamの設定からプルリクエスト作成までを1つのプロンプトで完結させる」といった、リクエスト消費を抑えるためのテクニックが紹介されています。また、ビルトインのMCP（Model Context Protocol）サーバーによるGitHub連携機能についても触れており、CLIからGitHubのリソースを操作する強力なツールとしての側面を強調しています。",
+    "topics": [
+      "GitHub Copilot",
+      "Git",
+      "CLI",
+      "AIエージェント",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 65,
+      "overall": 80
+    },
+    "originalTitle": null
+  }
+}

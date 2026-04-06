@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:20:04.204335+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "本棚Webアプリ「BiblioCanvas」をCLI+スキルでAIから使いやすくしました",
+    "url": "https://zenn.dev/karaage0703/articles/8daffce3c7391f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自作の蔵書管理アプリにCLIとAI用スキルを導入し、AIエージェントが自律的に本棚操作や読書ログ更新を行えるようにする開発手法の紹介。",
+    "summaryBody": "本記事では、蔵書管理Webアプリ「BiblioCanvas」をAIエージェントから操作可能にするためのアプローチが解説されています。著者は、専用のCLIツール「bibliocanvas-cli」を開発し、AIが理解できる形式の命令セット（スキルファイル）を同梱することで、Claude CodeなどのAIエージェントがブラウザを介さずに蔵書管理を行える環境を構築しました。これにより、「特定の本を本棚に追加する」「感想を書いて読了ステータスにする」といった操作を自然言語でAIに依頼可能になります。大規模なAPI連携やMCPサーバー構築のコストを抑えつつ、既存のCLI資産を活用してサービスを『AIフレンドリー』にする個人開発における現実的かつ強力な実装パターンを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "CLI",
+      "BiblioCanvas",
+      "Claude Code",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:19:33.420902+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursorからcmux/Claude Codeに移行するときにやったこと",
+    "url": "https://zenn.dev/d0ne1s/articles/7adbd3a3d54b1d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI開発環境をCursorからターミナルベースのcmuxとClaude Codeに移行し、カスタマイズにより操作性を向上させるための詳細なセットアップガイド。",
+    "summaryBody": "この記事では、CursorからcmuxおよびClaude Codeを主軸としたターミナルベースの開発環境へ移行するための実践的な設定手順を解説しています。主な内容は以下の通りです。\n\n1. **環境構築と見た目の調整**: cmuxの内部エンジンであるGhostty、Starship、zshの見た目と補完機能を最適化し、開発体験の基礎を固めます。\n2. **ツール連携と視覚化**: ファイルマネージャーのyazi、Markdownプレビューのgrip、リアルタイムのdiff監視を行うgit-watchなどを導入し、IDEに匹敵する機能をターミナル上で実現しています。\n3. **自動化とレイアウト**: `cmux-setup`スクリプトにより、4つのペイン（yazi, git-watch, shell, Claude Code）を自動展開するワークスペース構築術を紹介しています。\n4. **Claude Codeの高度なカスタマイズ**: `CLAUDE.md`によるグローバルな指示、MCPサーバー（Sentry/Jira）の連携、そして実行権限を制御するフック（Pre/PostToolUse）の設定方法を詳しく説明しています。\n5. **カスタムスキルの作成**: コミット作成、PR生成、権限レビューなど、頻出するワークフローを「スキル」として定義し、開発効率を最大化する手法を提示しています。",
+    "topics": [
+      "Claude Code",
+      "cmux",
+      "Cursor",
+      "ターミナル",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

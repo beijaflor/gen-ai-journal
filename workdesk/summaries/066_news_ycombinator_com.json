@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T08:49:33.310114+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Webアクセス制限（429エラー）の回避と適切なクローリング設計",
+    "url": "https://news.ycombinator.com/item?id=47579229",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "データ収集プロセスで遭遇する429 Too Many Requestsエラーの原因特定と、指数バックオフを含む再試行戦略の要点。",
+    "summaryBody": "本内容は、Hacker Newsへのアクセス中に発生した「429 Too Many Requests」エラーを題材に、WebスクレイピングやAPI利用におけるレート制限のメカニズムを解説します。429エラーは、サーバー側が設定したリクエスト頻度の閾値を超えた場合に送信されるHTTPステータスコードであり、サイトの可用性維持や不正アクセスの防止に寄与します。効果的な回避策として、リトライ間隔を段階的に伸ばす「指数バックオフ」アルゴリズムの実装、Retry-Afterヘッダーの尊重、および並列リクエスト数の制御が不可欠です。開発者はこれらの設計パターンを理解することで、ターゲットサイトへの負荷を最小限に抑えつつ、堅牢なデータ取得パイプラインを構築できます。",
+    "topics": [
+      "HTTP 429",
+      "レート制限",
+      "API開発",
+      "エラーハンドリング",
+      "指数バックオフ"
+    ],
+    "scores": {
+      "signal": 3,
+      "depth": 3,
+      "uniqueness": 2,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 50,
+      "annexPotential": 75,
+      "overall": 65
+    },
+    "originalTitle": "Understanding HTTP 429 Too Many Requests and Scraping Resilience"
+  }
+}

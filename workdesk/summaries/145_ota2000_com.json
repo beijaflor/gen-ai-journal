@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:48:24.509207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デジタル庁のダッシュボードガイドブックを Claude Code のスキルにした",
+    "url": "https://ota2000.com/blog/dashboard-design-guidebook-as-skill/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "デジタル庁の「ダッシュボードデザインの実践ガイドブック」を Claude Code のカスタムスキルとして定義し、AIによるBIツール（Lightdash）の設計判断とYAML生成を高度化した実践事例。",
+    "summaryBody": "デジタル庁が公開した「ダッシュボードデザインの実践ガイドブック」の内容を、AIエージェント Claude Code のコンテキスト（スキル）に変換して活用する方法を解説しています。主な内容は以下の通りです。\n\n1. **ガイドブックの活用**: 59ページに及ぶPDFから、ダッシュボードの類型（提示型 vs 探索型）、チャート選択基準、具体的なDo's/Don'ts（棒グラフの原点は0にする、色数を絞る等）を抽出。\n2. **AIスキルへの最適化**: PDFをそのまま読み込ませるのではなく、BIツール（Lightdash）のYAML設定に直結する「コードで表現可能な情報」に絞り込み、ツール固有のプロパティへのマッピングを追加。\n3. **運用の分離**: 実装手順、制約、設計原則を別々のスキルファイルに分割し、Claude Code が指示内容に応じて適切なコンテキストを自動選択するように構成。\n\nこの取り組みにより、AIが「スキルにある原則に基づき、円グラフではなく棒グラフを提案する」といった自律的な設計修正を行うようになり、BI as Code の品質向上と効率化を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Lightdash",
+      "デジタル庁",
+      "BI",
+      "ダッシュボードデザイン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T10:42:30.041652+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenYak: ローカル環境で動作するオープンソースのデスクトップAIエージェント",
+    "url": "https://github.com/openyak/desktop",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenYakは、100以上のモデルに対応し、ローカルファイルの操作やワークフローの自動化をプライバシー重視の環境で実現するオープンソースのデスクトップAIエージェントです。",
+    "summaryBody": "OpenYakは、データのプライバシーを最優先に設計されたクロスプラットフォーム対応（Windows, macOS, Linux）のデスクトップAIエージェントです。ユーザーのローカルマシン上で動作し、直接ファイルシステムにアクセスできるため、ファイルの整理、ドキュメント作成、スプレッドシートの解析などのタスクを、外部へデータをアップロードすることなく実行可能です。OpenAIやAnthropic、DeepSeekなどのクラウドモデル（BYOK方式）に加え、Ollamaを介した完全オフラインのローカルモデル利用にも対応しています。技術スタックはTauri v2、Next.js 15、FastAPI、SQLiteで構成されており、MCP（Model Context Protocol）による外部ツール連携の拡張性も備えています。週に100万トークンの無料枠（OpenRouter経由）が提供されており、手軽に導入できる点も特徴です。",
+    "topics": [
+      "AI Agent",
+      "Open Source",
+      "Local LLM",
+      "Automation",
+      "Model Context Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - openyak/openyak: An open-source desktop AI agent that handles your documents, files, and daily workflows — locally, with any model."
+  }
+}

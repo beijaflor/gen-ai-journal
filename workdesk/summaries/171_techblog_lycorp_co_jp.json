@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:42:46.923115+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代の認証課題を解決する次世代標準候補「ID-JAG」とは？",
+    "url": "https://techblog.lycorp.co.jp/ja/20260401a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの普及に伴う認証・認可の複雑化を解決するため、SSOの信頼モデルをAPIアクセスに拡張する次世代標準案「ID-JAG」の仕組みと利点を解説する。",
+    "summaryBody": "AIエージェントが多様な社内サービスと連携する際、各APIへの認可管理が複雑化し、運用の足かせとなる課題が生じています。本記事では、この解決策としてIETFで議論されている「Identity Assertion JWT Authorization Grant (ID-JAG)」を詳しく紹介しています。\n\n### ID-JAGの核となる概念\nID-JAGは、既存のSSO（シングルサインオン）で確立されたIDプロバイダー（IdP）への信頼を、アプリケーション間やエージェント・サービス間のAPIアクセスへと拡張する仕様です。具体的には、OAuth 2.0 Token Exchange (RFC 8693) と JWT Profile (RFC 7523) を組み合わせ、IdPが発行する署名済みJWTを「紹介状」として利用し、リソース側の認可サーバーからアクセス用トークンを取得します。\n\n### 導入の利点と注意点\n- **監査と可視化**: 誰がどのエージェントを通じて何をしたかというコンテキストをIdP側で一元的に記録・監査できます。\n- **中央統制**: 管理者ポリシーによる権限の上書きや、承認されていない「シャドーAI」の利用制限が容易になります。\n- **トークンスプロールの防止**: APIキーや長期Refresh Tokenの散乱を防ぎ、動的な信頼関係に基づく制御へ移行できます。\n\n現時点ではIETFのドラフト段階（Internet-Draft）であり、仕様の確定まで密結合には注意が必要ですが、LINEヤフーの認証基盤「Athenz」でもサポートが開始されるなど、次世代の重要プロトコルとして注目されています。",
+    "topics": [
+      "ID-JAG",
+      "OAuth 2.0",
+      "AIエージェント",
+      "認証・認可",
+      "Athenz"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

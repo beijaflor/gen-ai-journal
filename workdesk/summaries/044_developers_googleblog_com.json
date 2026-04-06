@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:16:20.896536+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google、Go言語向けエージェント開発キット「ADK Go 1.0」を正式リリース",
+    "url": "https://developers.googleblog.com/adk-go-10-arrives/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントのプロダクション導入を支援するGo言語用フレームワーク「ADK Go 1.0」をリリースし、可視化、自己修復、人間介在型ワークフローなどの新機能を追加しました。",
+    "summaryBody": "Googleは、AIエージェントを実験段階から本番サービスへと移行させるための「Agent Development Kit (ADK) for Go 1.0」を発表しました。このリリースでは、マルチエージェントシステムの構築を容易にする以下の主要機能が導入されています。\n\n1. **OpenTelemetryによる可視化**: ネイティブなOpenTelemetry統合により、エージェントの推論プロセス（Chain of Thought）やツール実行を詳細にトレースでき、非決定的な挙動のデバッグが容易になります。\n2. **プラグインシステムによる拡張**: 「Retry and Reflect」プラグインなどの導入により、ツール実行エラー時にエージェントが自らパラメータを修正して再試行する「自己修復機能」を実装できます。\n3. **Human-in-the-Loop (HITL)**: 金銭取引やデータベース操作などの機密性の高い処理において、エージェントが実行を一時停止し、人間の承認を待機する安全ガードレール機能が追加されました。\n4. **YAMLによる構成管理**: エージェントの定義をYAMLファイルで行えるようになり、ボイラープレートコードを書くことなく、ペルソナやサブエージェント階層を迅速に変更・管理できます。\n5. **言語横断的な連携**: Agent2Agent (A2A) プロトコルの安定化により、Go、Java、Pythonで作成されたエージェント間でのシームレスな通信とオーケストレーションが可能になりました。",
+    "topics": [
+      "Golang",
+      "AI Agents",
+      "OpenTelemetry",
+      "LLM",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 80,
+      "overall": 90
+    },
+    "originalTitle": "ADK Go 1.0 Arrives!"
+  }
+}

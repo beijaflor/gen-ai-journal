@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T11:02:47.812153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Database の中で AI Agent を動かしてみる #oci",
+    "url": "https://qiita.com/nyasuhiro/items/e5d0358885bc0ad44848",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Oracle Autonomous Databaseの「Select AI Agent」機能を使い、DB内の構造化データとRAGによる非構造化文書を組み合わせて複雑な業務回答を生成する手順の解説。",
+    "summaryBody": "Oracle Autonomous Database 23aiの「Select AI Agent」を活用し、データベース内部でAIエージェントを稼働させる具体的な実装方法を紹介しています。記事では、社員情報（構造化データ）と社内規定（非構造化データ）を組み合わせるシナリオを例に、RAGによる補助情報の取得、SQLによるデータ抽出、およびそれらを統合して最終回答を作成する「エージェント・チーム」の構築手順を詳述しています。DBMS_CLOUD_AI_AGENTパッケージを用いたツール定義やタスク設定、実行履歴の確認方法まで網羅されており、自然言語インターフェースを通じた高度なデータ活用の実用性を示しています。",
+    "topics": [
+      "Oracle Autonomous Database",
+      "OCI",
+      "AI Agent",
+      "RAG",
+      "Select AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

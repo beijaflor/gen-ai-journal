@@ -41,51 +41,51 @@
 - [x] 225. https://storialaw.jp/blog/12980
 - [x] 224. https://www.hayakawabooks.com/n/n6d743fb70868
 - [x] 223. https://www.itmedia.co.jp/enterprise/articles/2604/02/news027.html
-- [ ] 222. https://tech-blog.tabelog.com/entry/document-to-ai-knowledge
+- [x] 222. https://tech-blog.tabelog.com/entry/document-to-ai-knowledge
 - [x] 221. https://zenn.dev/bookamasedo/articles/c264a26dafe55b
 - [x] 220. https://note.com/zephel01/n/n2a20a614381f
 - [x] 219. https://github.com/SharpAI/SwiftLM
 - [x] 218. https://aws.amazon.com/jp/blogs/mt/announcing-general-availability-of-aws-devops-agent/
 - [x] 217. https://note.com/shi3zblog/n/nf803fcc4a208
-- [ ] 216. https://qiita.com/Takashi_Masumori/items/acdedf5f62ce776a83ed
+- [x] 216. https://qiita.com/Takashi_Masumori/items/acdedf5f62ce776a83ed
 - [x] 215. https://forbesjapan.com/articles/detail/94270
-- [ ] 214. https://zenn.dev/microsoft/articles/88253e369ae8ea
+- [x] 214. https://zenn.dev/microsoft/articles/88253e369ae8ea
 - [x] 213. https://www.megamouth.info/entry/2026/04/02/220910
-- [ ] 212. https://qiita.com/nogataka/items/33f192f593fef964e100
+- [x] 212. https://qiita.com/nogataka/items/33f192f593fef964e100
 - [x] 211. https://k-tai.watch.impress.co.jp/docs/column/teppan/2098561.html
-- [ ] 210. https://zenn.dev/kt3k/articles/74785af8436b1e
-- [ ] 209. https://zenn.dev/explaza/articles/100d753df57fa7
-- [ ] 208. https://zenn.dev/t_honda/articles/flair-time-series-forecasting
-- [ ] 207. https://qiita.com/nyasuhiro/items/e5d0358885bc0ad44848
+- [x] 210. https://zenn.dev/kt3k/articles/74785af8436b1e
+- [x] 209. https://zenn.dev/explaza/articles/100d753df57fa7
+- [x] 208. https://zenn.dev/t_honda/articles/flair-time-series-forecasting
+- [x] 207. https://qiita.com/nyasuhiro/items/e5d0358885bc0ad44848
 - [x] 206. https://www.lesswrong.com/posts/TfKM9PgztxieEcKiv/a-mirror-test-for-llms
 - [x] 205. https://tech.layerx.co.jp/entry/self-maintainable-go-test-ci
-- [ ] 204. https://azukiazusa.dev/blog/difit-review-agent-comment/
+- [x] 204. https://azukiazusa.dev/blog/difit-review-agent-comment/
 - [x] 203. https://openai.com/index/openai-acquires-tbpn/
 - [x] 202. https://cursor.com/ja/blog/cursor-3
 - [x] 251. https://qwen.ai/blog?id=qwen3.6
 - [x] 200. https://news.ycombinator.com/item?id=47612784
-- [ ] 199. https://modolap.com/publication/hn-analysis-1
-- [ ] 198. https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-adults/passive-social-media-use-ai-companionship-and-online-side-hustles-uk-adults-media-and-online-lives-revealed
+- [x] 199. https://modolap.com/publication/hn-analysis-1
+- [x] 198. https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-adults/passive-social-media-use-ai-companionship-and-online-side-hustles-uk-adults-media-and-online-lives-revealed
 - [x] 197. https://github.com/Jang-woo-AnnaSoft/execution-boundaries
 - [x] 196. https://www.bloomberg.com/news/articles/2026-03-27/ai-changed-chess-grandmasters-now-win-with-unpredictable-moves?embedded-checkout=true
 - [x] 195. https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/
-- [ ] 194. https://build.ms/2026/4/1/the-claude-code-leak/
+- [x] 194. https://build.ms/2026/4/1/the-claude-code-leak/
 - [x] 193. https://old.reddit.com/r/programming/comments/1s9jkzi/announcement_temporary_llm_content_ban/
 - [x] 192. https://www.figma.com/blog/introducing-make-kits-and-make-attachments/
-- [ ] 191. https://blog.cloudflare.com/rethinking-cache-ai-humans/
-- [ ] 190. https://www.oreilly.com/radar/the-toolkit-pattern/
+- [x] 191. https://blog.cloudflare.com/rethinking-cache-ai-humans/
+- [x] 190. https://www.oreilly.com/radar/the-toolkit-pattern/
 - [x] 189. https://martinfowler.com/articles/harness-engineering.html
 - [x] 188. https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/
-- [ ] 186. https://blog.comfy.org/p/dynamic-vram-in-comfyui-saving-local
+- [x] 186. https://blog.comfy.org/p/dynamic-vram-in-comfyui-saving-local
 - [x] 185. https://www.itmedia.co.jp/aiplus/articles/2604/01/news042.html
 - [x] 183. https://www.gizmodo.jp/2026/04/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time.html
 - [x] 182. https://note.com/fukkyy/n/n1d8fce44e67a
 - [x] 181. https://developersblog.dmm.com/entry/2026/04/01/110000
-- [ ] 179. https://cozy-starburst-e4f699.netlify.app/
+- [x] 179. https://cozy-starburst-e4f699.netlify.app/
 - [x] 178. https://ledge.ai/articles/agentic_ai_next_intelligence_explosion_science
-- [ ] 177. https://zenn.dev/maeken/articles/claude-code-terminal-setup
-- [ ] 176. https://zenn.dev/knowledgesense/articles/22eac0ba8cada3
-- [ ] 175. https://zenn.dev/nextbeat/articles/practical-claude-code-introduction
+- [x] 177. https://zenn.dev/maeken/articles/claude-code-terminal-setup
+- [x] 176. https://zenn.dev/knowledgesense/articles/22eac0ba8cada3
+- [x] 175. https://zenn.dev/nextbeat/articles/practical-claude-code-introduction
 - [x] 174. https://qiita.com/LostMyCode/items/a867e1954b80e78cf146
 - [x] 173. https://qiita.com/nogataka/items/9af38e7279f553f13e50
 - [x] 172. https://qiita.com/mosaxiv/items/f6fa910cb0c7efe2defc
@@ -108,147 +108,147 @@
 - [x] 155. https://blog.calif.io/p/mad-bugs-vim-vs-emacs-vs-claude
 - [x] 253. https://ccunpacked.dev/
 - [x] 153. https://www.nature.com/articles/d41586-026-00974-2
-- [ ] 151. https://dheer.co/tickets-are-prompts/
-- [ ] 184. https://tech.newmo.me/entry/2026/04/01/130000
-- [ ] 149. https://uxdesign.cc/ai-is-rewriting-the-rules-language-is-following-b811a1a91ced
-- [ ] 148. https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/
-- [ ] 147. https://www.oreilly.com/radar/conviction-collapse-and-the-end-of-software-as-we-know-it/
-- [ ] 146. https://www.oreilly.com/radar/the-model-you-love-is-probably-just-the-one-you-use/
-- [ ] 145. https://ota2000.com/blog/dashboard-design-guidebook-as-skill/
-- [ ] 144. https://developers.googleblog.com/developers-guide-to-building-adk-agents-with-skills/
-- [ ] 143. https://blog.generative-agents.co.jp/entry/agent-harness
-- [ ] 142. https://github.com/instructkr/claw-code
-- [ ] 141. https://about.mercari.com/ai-policy/
-- [ ] 140. https://zenn.dev/417/articles/c15af4f4106a9f
-- [ ] 139. https://www.tomshardware.com/tech-industry/new-cambridge-human-brain-inspired-chip-could-slash-ai-energy-use
-- [ ] 138. https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/30/copilot-cowork-now-available-in-frontier/
-- [ ] 137. https://www.neowin.net/news/microsoft-copilot-is-now-injecting-ads-into-pull-requests-on-github-gitlab/
-- [ ] 135. https://ollama.com/blog/mlx
-- [ ] 134. https://zenn.dev/sc30gsw/articles/1373752d9713b3
-- [ ] 133. https://qwen.ai/blog?id=qwen3.5-omni
-- [ ] 132. https://zenn.dev/dely_jp/articles/3117e590465e38
-- [ ] 131. https://developer.hatenastaff.com/entry/2026/03/26/180000
-- [ ] 130. https://dc.watch.impress.co.jp/docs/column/photo_ai/2097504.html
-- [ ] 129. https://techcrunch.com/2026/03/30/blueskys-new-ai-tool-attie-is-already-the-most-blocked-account-other-than-j-d-vance/
-- [ ] 128. https://zenn.dev/okikusan/articles/8196524b4c904b
-- [ ] 127. https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2097395.html
-- [ ] 126. https://sfujiwara.hatenablog.com/entry/ecspresso-v2.8
-- [ ] 124. https://www.ft.com/content/3880176e-d3ac-4311-9052-fdfeaed56a0e
-- [ ] 123. https://developers.openai.com/codex/plugins
-- [ ] 122. https://github.com/openai/codex-plugin-cc
-- [ ] 120. https://note.com/genkaijokyo/n/n5912e3409beb
-- [ ] 119. https://zenn.dev/sprix_it/articles/7b158f843b64d1
-- [ ] 118. https://qiita.com/kobayashimakoto/items/357add591df55fee1585
-- [ ] 117. https://zenn.dev/kimuchan/articles/549cbb0ea6aa1a
-- [ ] 116. https://www.makeuseof.com/notebooklm-tips-tricks-improve-research/
-- [ ] 114. https://github.com/a-ghorbani/pocketpal-ai
-- [ ] 113. https://www.itmedia.co.jp/aiplus/articles/2603/30/news123.html
-- [ ] 112. https://zenn.dev/dely_jp/articles/cf19634b63015b
-- [ ] 111. https://qiita.com/Oyu3m/items/80cf565c7e1dc52c25f6
-- [ ] 109. https://aws.amazon.com/jp/blogs/storage/how-tavily-reduced-ai-search-caching-costs-by-95-with-amazon-s3-express-one-zone/
-- [ ] 108. https://qiita.com/akira_papa_AI/items/5f66b2b289994e4a0256
-- [ ] 107. https://www.itmedia.co.jp/aiplus/articles/2603/30/news033.html
-- [ ] 106. https://arrow-js.com/
-- [ ] 104. https://zenn.dev/komlock_lab/articles/agent-payments-stack-2026
-- [ ] 110. https://zenn.dev/komlock_lab/articles/openclaw-local-llm
-- [ ] 125. https://zenn.dev/mkj/articles/geminitask_20260325
-- [ ] 101. https://zenn.dev/headwaters/articles/579d5f94907dcd
-- [ ] 180. https://zenn.dev/theaktky/articles/5f9f18c34950c1
-- [ ] 099. https://zenn.dev/berry_blog/articles/8d1b2c9216b4e9
-- [ ] 098. https://zenn.dev/fusic/articles/ae90127245999a
-- [ ] 136. https://zenn.dev/ubie_dev/articles/ai-sec-alert-ops
-- [ ] 096. https://qiita.com/260329-ai-ojisan/items/1eea6c6546537126f6d7
-- [ ] 095. https://qiita.com/getty104/items/6a0c87ba3eeba999e673
-- [ ] 094. https://qiita.com/ssc-yshikeda/items/d946d6576f8de60fa81f
-- [ ] 093. https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
-- [ ] 092. https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c
-- [ ] 091. https://qiita.com/ssc-yshikeda/items/58bd7ec792eb1b0ded52
-- [ ] 090. https://qiita.com/nogataka/items/6685c6f2ca20a2ac887f
-- [ ] 089. https://qiita.com/nogataka/items/8f6c6899a3474a736e87
-- [ ] 088. https://qiita.com/k_izutani/items/3501b63f345f79246e4c
-- [ ] 087. https://qiita.com/185shingeki/items/6207ad9caa6062d21f7b
-- [ ] 086. https://qiita.com/Kota__Sasaki/items/a5008e550de8fa01dc61
-- [ ] 085. https://qiita.com/nogataka/items/d18bd9ee62e72f24395d
-- [ ] 084. https://qiita.com/Ryo-Nakano/items/19f9ccafa4008aec8340
-- [ ] 083. https://qiita.com/Takenoko4594/items/ebc481bfdc89c42947ad
-- [ ] 082. https://qiita.com/PDC-Kurashinak/items/c6ad3537f92d59830910
-- [ ] 081. https://jlzych.com/2026/03/26/take-my-job-ai/
-- [ ] 080. https://maven.com/button-school/coding-course
-- [ ] 079. https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/
-- [ ] 078. https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html
-- [ ] 077. https://p.ocmatos.com/blog/jsse-a-javascript-engine-built-by-an-agent.html
-- [ ] 076. https://openai.com/index/accelerating-the-next-phase-ai/
-- [ ] 075. https://news.ycombinator.com/item?id=47589797
-- [ ] 187. https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/
-- [ ] 073. https://www.greptile.com/blog/ai-slopware-future
-- [ ] 072. https://victorantos.com/posts/i-read-the-leaked-claude-code-source-heres-what-i-found/
-- [ ] 071. https://www.theregister.com/2026/03/31/anthropic_claude_code_limits/
-- [ ] 070. https://www.railsreviews.com/skills
-- [ ] 069. https://github.com/chatgptprojects/claude-code
-- [ ] 068. https://geohot.github.io//blog/jekyll/update/2026/03/31/free-intelligence.html
-- [ ] 067. https://arxiv.org/abs/2603.20639
-- [ ] 066. https://news.ycombinator.com/item?id=47579229
-- [ ] 065. https://agentsofchaos.baulab.info/report.html
-- [ ] 064. https://alexhwoods.com/dont-let-ai-write-for-you/
-- [ ] 063. https://news.ycombinator.com/item?id=47573224
-- [ ] 062. https://arxiv.org/abs/2603.26524
-- [ ] 061. https://martinvol.pe/blog/2026/03/30/how-the-ai-bubble-bursts/
-- [ ] 060. https://techstackups.com/comparisons/mcp-is-solving-the-wrong-problem/
-- [ ] 059. https://www.lesswrong.com/posts/BJ4pnropWdnzzgeJc/i-am-definitely-missing-the-pre-ai-writing-era
-- [ ] 058. https://www.cnbc.com/2026/03/26/ai-bots-humans-internet.html
-- [ ] 121. https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr/
-- [ ] 056. https://zenn.dev/aishift/articles/4f6dfa6b026936
-- [ ] 055. https://developers.cyberagent.co.jp/blog/archives/63059/
-- [ ] 054. https://developers.prtimes.jp/2026/03/31/improvement-with-worktree-compose/
-- [ ] 053. https://uxdesign.cc/the-ground-is-shaking-why-designers-must-flip-the-script-on-ai-9211053bbadd
-- [ ] 052. https://uxdesign.cc/designers-finally-have-a-say-in-the-product-they-design-396c999e1227
-- [ ] 051. https://uxdesign.cc/agentic-ai-design-systems-figma-a-practical-guide-6ab0b681718d
-- [ ] 050. https://vercel.com/blog/agent-responsibly
-- [ ] 049. https://vercel.com/blog/how-flora-shipped-a-creative-agent-on-vercels-ai-stack
-- [ ] 048. https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/
-- [ ] 047. https://technology.blog.gov.uk/2026/03/31/one-year-of-the-ai-accelerator-building-government-tech-talent/
-- [ ] 046. https://www.oreilly.com/radar/software-in-a-time-of-fear/
-- [ ] 045. https://www.oreilly.com/radar/when-ai-breaks-the-systems-meant-to-hear-us/
-- [ ] 044. https://developers.googleblog.com/adk-go-10-arrives/
-- [ ] 043. https://azukiazusa.dev/blog/claude-code-codex-plugin/
-- [ ] 042. https://qiita.com/yuyanz/items/5d2087dd5500d0689d7e
-- [ ] 041. https://devblog.lac.co.jp/entry/20260325
-- [ ] 040. https://dev.classmethod.jp/articles/terraform-search-import-skill-claude-code/
-- [ ] 038. https://qiita.com/N_H_tennis/items/48f13332305338720524
-- [ ] 037. https://dev.classmethod.jp/articles/claude-business-use4/
-- [ ] 036. https://zenn.dev/fukurou_labo/articles/f523b8c34fcf43
-- [ ] 035. https://developers.openai.com/codex/use-cases
-- [ ] 034. https://tubone-project24.xyz/2026/03/27/mugi-claw-slack-personal-ai-agent/
-- [ ] 033. https://nyosegawa.com/posts/skill-with-app/
-- [ ] 032. https://github.com/viperrcrypto/Siftly
-- [ ] 031. https://aws.amazon.com/jp/blogs/news/claude-code-deployment-patterns-and-best-practices-with-amazon-bedrock/
-- [ ] 030. https://zenn.dev/kiyoka/articles/concept-file-1
-- [ ] 029. https://zenn.dev/mkj/articles/3ec9d2d39f446b
-- [ ] 028. https://zenn.dev/d0ne1s/articles/7adbd3a3d54b1d
-- [ ] 027. https://zenn.dev/logbii/articles/10a0bd6eec8707
-- [ ] 026. https://zenn.dev/karaage0703/articles/8daffce3c7391f
-- [ ] 039. https://zenn.dev/nao_u/articles/92ac9436844a16
-- [ ] 024. https://zenn.dev/catatsumuri/articles/92a2145f15b7b4
-- [ ] 105. https://zenn.dev/takuyanagai0213/articles/claude-code-100-skills-full-record
-- [ ] 115. https://qiita.com/jw-automation/items/c24b6e3d879176b27dff
-- [ ] 021. https://qiita.com/yakumo_09/items/ee21d5fac4f99893127c
-- [ ] 020. https://qiita.com/semba_yui/items/c2b47d27428c2008933b
-- [ ] 019. https://qiita.com/y-okayama-tb/items/93fda86f55766e47cbcf
-- [ ] 018. https://simonwillison.net/2026/Mar/29/pretext/
-- [ ] 017. https://www.proofofconcept.pub/p/ai-tokens-are-mana
-- [ ] 016. https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/
-- [ ] 015. https://github.com/rbren/personal-ai-devbox
-- [ ] 014. https://metedata.substack.com/p/a-small-figma-update-and-a-big-signal
-- [ ] 013. https://edition.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition
-- [ ] 012. https://github.com/emson/elfmem
-- [ ] 011. https://github.com/austin-weeks/miasma
-- [ ] 010. https://adlrocha.substack.com/p/adlrocha-what-if-ai-doesnt-need-more
-- [ ] 009. https://github.com/openyak/desktop
-- [ ] 008. https://news.ycombinator.com/item?id=47559948
-- [ ] 007. https://www.cam.ac.uk/research/news/new-computer-chip-material-inspired-by-the-human-brain-could-slash-ai-energy-use
-- [ ] 152. https://lzon.ca/posts/other/thoughts-ai-era/
-- [ ] 005. https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research
-- [ ] 004. https://news.ycombinator.com/item?id=47555081
-- [ ] 003. https://p2ptk.org/ai/5511
-- [ ] 002. https://yamdas.hatenablog.com/entry/20260330/the-ai-doc
-- [ ] 001. https://developers.cyberagent.co.jp/blog/archives/63003/
+- [x] 151. https://dheer.co/tickets-are-prompts/
+- [x] 184. https://tech.newmo.me/entry/2026/04/01/130000
+- [x] 149. https://uxdesign.cc/ai-is-rewriting-the-rules-language-is-following-b811a1a91ced
+- [x] 148. https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/
+- [x] 147. https://www.oreilly.com/radar/conviction-collapse-and-the-end-of-software-as-we-know-it/
+- [x] 146. https://www.oreilly.com/radar/the-model-you-love-is-probably-just-the-one-you-use/
+- [x] 145. https://ota2000.com/blog/dashboard-design-guidebook-as-skill/
+- [x] 144. https://developers.googleblog.com/developers-guide-to-building-adk-agents-with-skills/
+- [x] 143. https://blog.generative-agents.co.jp/entry/agent-harness
+- [x] 142. https://github.com/instructkr/claw-code
+- [x] 141. https://about.mercari.com/ai-policy/
+- [x] 140. https://zenn.dev/417/articles/c15af4f4106a9f
+- [x] 139. https://www.tomshardware.com/tech-industry/new-cambridge-human-brain-inspired-chip-could-slash-ai-energy-use
+- [x] 138. https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/30/copilot-cowork-now-available-in-frontier/
+- [x] 137. https://www.neowin.net/news/microsoft-copilot-is-now-injecting-ads-into-pull-requests-on-github-gitlab/
+- [x] 135. https://ollama.com/blog/mlx
+- [x] 134. https://zenn.dev/sc30gsw/articles/1373752d9713b3
+- [x] 133. https://qwen.ai/blog?id=qwen3.5-omni
+- [x] 132. https://zenn.dev/dely_jp/articles/3117e590465e38
+- [x] 131. https://developer.hatenastaff.com/entry/2026/03/26/180000
+- [x] 130. https://dc.watch.impress.co.jp/docs/column/photo_ai/2097504.html
+- [x] 129. https://techcrunch.com/2026/03/30/blueskys-new-ai-tool-attie-is-already-the-most-blocked-account-other-than-j-d-vance/
+- [x] 128. https://zenn.dev/okikusan/articles/8196524b4c904b
+- [x] 127. https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2097395.html
+- [x] 126. https://sfujiwara.hatenablog.com/entry/ecspresso-v2.8
+- [x] 124. https://www.ft.com/content/3880176e-d3ac-4311-9052-fdfeaed56a0e
+- [x] 123. https://developers.openai.com/codex/plugins
+- [x] 122. https://github.com/openai/codex-plugin-cc
+- [x] 120. https://note.com/genkaijokyo/n/n5912e3409beb
+- [x] 119. https://zenn.dev/sprix_it/articles/7b158f843b64d1
+- [x] 118. https://qiita.com/kobayashimakoto/items/357add591df55fee1585
+- [x] 117. https://zenn.dev/kimuchan/articles/549cbb0ea6aa1a
+- [x] 116. https://www.makeuseof.com/notebooklm-tips-tricks-improve-research/
+- [x] 114. https://github.com/a-ghorbani/pocketpal-ai
+- [x] 113. https://www.itmedia.co.jp/aiplus/articles/2603/30/news123.html
+- [x] 112. https://zenn.dev/dely_jp/articles/cf19634b63015b
+- [x] 111. https://qiita.com/Oyu3m/items/80cf565c7e1dc52c25f6
+- [x] 109. https://aws.amazon.com/jp/blogs/storage/how-tavily-reduced-ai-search-caching-costs-by-95-with-amazon-s3-express-one-zone/
+- [x] 108. https://qiita.com/akira_papa_AI/items/5f66b2b289994e4a0256
+- [x] 107. https://www.itmedia.co.jp/aiplus/articles/2603/30/news033.html
+- [x] 106. https://arrow-js.com/
+- [x] 104. https://zenn.dev/komlock_lab/articles/agent-payments-stack-2026
+- [x] 110. https://zenn.dev/komlock_lab/articles/openclaw-local-llm
+- [x] 125. https://zenn.dev/mkj/articles/geminitask_20260325
+- [x] 101. https://zenn.dev/headwaters/articles/579d5f94907dcd
+- [x] 180. https://zenn.dev/theaktky/articles/5f9f18c34950c1
+- [x] 099. https://zenn.dev/berry_blog/articles/8d1b2c9216b4e9
+- [x] 098. https://zenn.dev/fusic/articles/ae90127245999a
+- [x] 136. https://zenn.dev/ubie_dev/articles/ai-sec-alert-ops
+- [x] 096. https://qiita.com/260329-ai-ojisan/items/1eea6c6546537126f6d7
+- [x] 095. https://qiita.com/getty104/items/6a0c87ba3eeba999e673
+- [x] 094. https://qiita.com/ssc-yshikeda/items/d946d6576f8de60fa81f
+- [x] 093. https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
+- [x] 092. https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c
+- [x] 091. https://qiita.com/ssc-yshikeda/items/58bd7ec792eb1b0ded52
+- [x] 090. https://qiita.com/nogataka/items/6685c6f2ca20a2ac887f
+- [x] 089. https://qiita.com/nogataka/items/8f6c6899a3474a736e87
+- [x] 088. https://qiita.com/k_izutani/items/3501b63f345f79246e4c
+- [x] 087. https://qiita.com/185shingeki/items/6207ad9caa6062d21f7b
+- [x] 086. https://qiita.com/Kota__Sasaki/items/a5008e550de8fa01dc61
+- [x] 085. https://qiita.com/nogataka/items/d18bd9ee62e72f24395d
+- [x] 084. https://qiita.com/Ryo-Nakano/items/19f9ccafa4008aec8340
+- [x] 083. https://qiita.com/Takenoko4594/items/ebc481bfdc89c42947ad
+- [x] 082. https://qiita.com/PDC-Kurashinak/items/c6ad3537f92d59830910
+- [x] 081. https://jlzych.com/2026/03/26/take-my-job-ai/
+- [x] 080. https://maven.com/button-school/coding-course
+- [x] 079. https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/
+- [x] 078. https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html
+- [x] 077. https://p.ocmatos.com/blog/jsse-a-javascript-engine-built-by-an-agent.html
+- [x] 076. https://openai.com/index/accelerating-the-next-phase-ai/
+- [x] 075. https://news.ycombinator.com/item?id=47589797
+- [x] 187. https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/
+- [x] 073. https://www.greptile.com/blog/ai-slopware-future
+- [x] 072. https://victorantos.com/posts/i-read-the-leaked-claude-code-source-heres-what-i-found/
+- [x] 071. https://www.theregister.com/2026/03/31/anthropic_claude_code_limits/
+- [x] 070. https://www.railsreviews.com/skills
+- [x] 069. https://github.com/chatgptprojects/claude-code
+- [x] 068. https://geohot.github.io//blog/jekyll/update/2026/03/31/free-intelligence.html
+- [x] 067. https://arxiv.org/abs/2603.20639
+- [x] 066. https://news.ycombinator.com/item?id=47579229
+- [x] 065. https://agentsofchaos.baulab.info/report.html
+- [x] 064. https://alexhwoods.com/dont-let-ai-write-for-you/
+- [x] 063. https://news.ycombinator.com/item?id=47573224
+- [x] 062. https://arxiv.org/abs/2603.26524
+- [x] 061. https://martinvol.pe/blog/2026/03/30/how-the-ai-bubble-bursts/
+- [x] 060. https://techstackups.com/comparisons/mcp-is-solving-the-wrong-problem/
+- [x] 059. https://www.lesswrong.com/posts/BJ4pnropWdnzzgeJc/i-am-definitely-missing-the-pre-ai-writing-era
+- [x] 058. https://www.cnbc.com/2026/03/26/ai-bots-humans-internet.html
+- [x] 121. https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr/
+- [x] 056. https://zenn.dev/aishift/articles/4f6dfa6b026936
+- [x] 055. https://developers.cyberagent.co.jp/blog/archives/63059/
+- [x] 054. https://developers.prtimes.jp/2026/03/31/improvement-with-worktree-compose/
+- [x] 053. https://uxdesign.cc/the-ground-is-shaking-why-designers-must-flip-the-script-on-ai-9211053bbadd
+- [x] 052. https://uxdesign.cc/designers-finally-have-a-say-in-the-product-they-design-396c999e1227
+- [x] 051. https://uxdesign.cc/agentic-ai-design-systems-figma-a-practical-guide-6ab0b681718d
+- [x] 050. https://vercel.com/blog/agent-responsibly
+- [x] 049. https://vercel.com/blog/how-flora-shipped-a-creative-agent-on-vercels-ai-stack
+- [x] 048. https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/
+- [x] 047. https://technology.blog.gov.uk/2026/03/31/one-year-of-the-ai-accelerator-building-government-tech-talent/
+- [x] 046. https://www.oreilly.com/radar/software-in-a-time-of-fear/
+- [x] 045. https://www.oreilly.com/radar/when-ai-breaks-the-systems-meant-to-hear-us/
+- [x] 044. https://developers.googleblog.com/adk-go-10-arrives/
+- [x] 043. https://azukiazusa.dev/blog/claude-code-codex-plugin/
+- [x] 042. https://qiita.com/yuyanz/items/5d2087dd5500d0689d7e
+- [x] 041. https://devblog.lac.co.jp/entry/20260325
+- [x] 040. https://dev.classmethod.jp/articles/terraform-search-import-skill-claude-code/
+- [x] 038. https://qiita.com/N_H_tennis/items/48f13332305338720524
+- [x] 037. https://dev.classmethod.jp/articles/claude-business-use4/
+- [x] 036. https://zenn.dev/fukurou_labo/articles/f523b8c34fcf43
+- [x] 035. https://developers.openai.com/codex/use-cases
+- [x] 034. https://tubone-project24.xyz/2026/03/27/mugi-claw-slack-personal-ai-agent/
+- [x] 033. https://nyosegawa.com/posts/skill-with-app/
+- [x] 032. https://github.com/viperrcrypto/Siftly
+- [x] 031. https://aws.amazon.com/jp/blogs/news/claude-code-deployment-patterns-and-best-practices-with-amazon-bedrock/
+- [x] 030. https://zenn.dev/kiyoka/articles/concept-file-1
+- [x] 029. https://zenn.dev/mkj/articles/3ec9d2d39f446b
+- [x] 028. https://zenn.dev/d0ne1s/articles/7adbd3a3d54b1d
+- [x] 027. https://zenn.dev/logbii/articles/10a0bd6eec8707
+- [x] 026. https://zenn.dev/karaage0703/articles/8daffce3c7391f
+- [x] 039. https://zenn.dev/nao_u/articles/92ac9436844a16
+- [x] 024. https://zenn.dev/catatsumuri/articles/92a2145f15b7b4
+- [x] 105. https://zenn.dev/takuyanagai0213/articles/claude-code-100-skills-full-record
+- [x] 115. https://qiita.com/jw-automation/items/c24b6e3d879176b27dff
+- [x] 021. https://qiita.com/yakumo_09/items/ee21d5fac4f99893127c
+- [x] 020. https://qiita.com/semba_yui/items/c2b47d27428c2008933b
+- [x] 019. https://qiita.com/y-okayama-tb/items/93fda86f55766e47cbcf
+- [x] 018. https://simonwillison.net/2026/Mar/29/pretext/
+- [x] 017. https://www.proofofconcept.pub/p/ai-tokens-are-mana
+- [x] 016. https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/
+- [x] 015. https://github.com/rbren/personal-ai-devbox
+- [x] 014. https://metedata.substack.com/p/a-small-figma-update-and-a-big-signal
+- [x] 013. https://edition.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition
+- [x] 012. https://github.com/emson/elfmem
+- [x] 011. https://github.com/austin-weeks/miasma
+- [x] 010. https://adlrocha.substack.com/p/adlrocha-what-if-ai-doesnt-need-more
+- [x] 009. https://github.com/openyak/desktop
+- [x] 008. https://news.ycombinator.com/item?id=47559948
+- [x] 007. https://www.cam.ac.uk/research/news/new-computer-chip-material-inspired-by-the-human-brain-could-slash-ai-energy-use
+- [x] 152. https://lzon.ca/posts/other/thoughts-ai-era/
+- [x] 005. https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research
+- [x] 004. https://news.ycombinator.com/item?id=47555081
+- [x] 003. https://p2ptk.org/ai/5511
+- [x] 002. https://yamdas.hatenablog.com/entry/20260330/the-ai-doc
+- [x] 001. https://developers.cyberagent.co.jp/blog/archives/63003/

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:27:26.013337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントの信頼性を構築する「ハーネスエンジニアリング」の指針",
+    "url": "https://martinfowler.com/articles/harness-engineering.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントの不確実性を制御するため、フィードフォワード（指示）とフィードバック（検知）を組み合わせた多層的な制御機構「ハーネス」を構築・運用するフレームワークの提案。",
+    "summaryBody": "AIコーディングエージェントの自律性を高め、人間による監視の負担を減らすための「ハーネスエンジニアリング」という概念についての詳細な解説です。\n\n主な内容は以下の通りです：\n1. **フィードフォワード（ガイド）とフィードバック（センサー）**: 事前に挙動を誘導する「ガイド」と、実行結果から問題を検知して自己修正を促す「センサー」を組み合わせる重要性を説いています。\n2. **計算的 vs 推論的制御**: リンターやテストのような高速で決定論的な「計算的手法（Computational）」と、AIによるコードレビューのような意味解析を伴う「推論的手法（Inferential）」を使い分け、信頼性を担保します。\n3. **3つの制御領域**: 保守性（コード品質）、アーキテクチャ・フィットネス（構造的整合性）、および振る舞い（機能要件）の3つのカテゴリでハーネスを定義します。特に「振る舞い」の自動検証は現状の大きな課題とされています。\n4. **人間によるステアリング**: 人間の役割は、個別のコード修正から、この「ハーネス」という制御ループを設計・改善し、エージェントを正しい方向へ導く「操舵」へと移行します。\n\n今後は、特定のサービス構成（トポロジー）に応じた「ハーネス・テンプレート」の活用や、エージェントが動作しやすい環境（アンビエント・アフォーダンス）の設計が、エンジニアリングの重要な一部になると予測しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Harness Engineering",
+      "Software Architecture",
+      "LLM Safety",
+      "Context Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Harness engineering for coding agent users"
+  }
+}

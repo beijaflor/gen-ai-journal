@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:57:11.538904+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skillsで開発ワークフローを効率化している話",
+    "url": "https://zenn.dev/berry_blog/articles/8d1b2c9216b4e9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「Skills」機能を活用し、開発の各フェーズ（設計・実装・テスト・レビュー等）を構造化・自動化することで、開発品質と効率を劇的に向上させた事例紹介。",
+    "summaryBody": "株式会社Berryによる、Claude Codeの拡張機能「Skills」を用いた高度な開発自動化の事例です。従来のAIルール（.clinerulesなど）が「コーディング規約の統一」に留まっていたのに対し、Skillsでは「開発者の判断基準」を構造化することに成功しています。記事では、設計、実装、QA、レビューなど各フェーズに対応する12種類のカスタムスキルを紹介。特に「Voice（専門家の役割）」「Iron Law（不可侵の絶対ルール）」「Completion Status（標準化された報告形式）」という3つの設計の柱を定義することで、AIの挙動を高度に制御しています。また、Chrome DevTools MCPを介した自動ブラウザテストや、tmuxを利用してClaudeとOpenAI Codexにクロスレビューを行わせる多層的なレビュー体制、検証結果をJSON化して後続のタスクで参照するパイプライン構築など、非常に実践的かつ高度なワークフローが具体的に解説されています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "開発効率化",
+      "LLM",
+      "ワークフロー自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": "Claude Code Skillsで開発ワークフローを効率化している話"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:09:06.513621+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHubにおけるエージェント駆動開発：Copilot Applied Scienceチームの知見",
+    "url": "https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubのCopilot応用科学チームが、AIエージェントを「主要な貢献者」として開発プロセスに組み込み、わずか3日間で大規模な自動化ツールを構築した際の戦略と教訓を共有しています。",
+    "summaryBody": "GitHubのApplied Scienceチームによる、コーディングエージェントを最大限に活用するための実践的なフレームワークの解説です。筆者は、膨大なエージェント評価ログを分析する「eval-agents」というツールの開発を通じ、AIエージェントとの協業における3つの核心的戦略を導き出しました。第一に「プロンプト戦略」として、エージェントをシニアエンジニアのように扱い、対話的な思考や計画モード（/plan）を活用すること。第二に「設計戦略」として、エージェントがコードを理解しやすくするためにリファクタリングと文書化を徹底する「エージェント・ファースト」な構造を維持すること。第三に「イテレーション戦略」として、エラー発生時にエージェントを責めるのではなく、CI/CDやガードレールなどの「プロセス」を改善して再発を防ぐ文化（Blameless Culture）を構築することです。この手法により、5名のチームで短期間に11のエージェントと多数の新機能（約2.8万行）を実装することに成功しました。最終的に、AI時代においてもクリーンなアーキテクチャや徹底したテストといった従来の優れたエンジニアリング原則が、エージェントのパフォーマンスを最大化する鍵であることを強調しています。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Agents",
+      "Agent-Driven Development",
+      "Software Engineering",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Agent-driven development in Copilot Applied Science"
+  }
+}

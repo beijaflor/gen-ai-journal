@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:33:22.126934+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeをAIキュレーターにする自作RSSリーダー「Feed Curator」：Inoreaderを卒業した開発記録",
+    "url": "https://zenn.dev/caphtech/articles/feed-curator-ai-rss-with-claude-code",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Code CLIをAIエンジンとして活用し、追加のAPI費用なしで高度にパーソナライズされた技術記事要約を生成するRSSリーダー「Feed Curator」の開発事例。",
+    "summaryBody": "## 概要\n著者が開発した「Feed Curator」は、Claude Code CLIをサブプロセスとして呼び出すことで、APIキー不要かつ追加コストゼロで動作するAI RSSリーダーです。RSSの取得、スコアリング、要約をAIが行い、ユーザーの既読・スキップ履歴から「なぜ読んだか」というセマンティックな嗜好を自動学習し、毎朝パーソナライズされた技術ブリーフィングを生成します。\n\n## 技術的特徴と設計判断\n- **Claude Code統合**: CLIのパイプモード（-p）を利用し、既存の認証を流用。別途API契約が不要で、プロンプトの透明性も確保。\n- **トークン節約戦略**: 記事の全文ではなく、重要度の高い「先頭500文字＋末尾300文字」のみを抽出して処理する工夫。\n- **3段階パーソナライズ**: タグ統計、AIによる意味的な嗜好メモ、キュレーションへのコンテキスト注入を組み合わせ、使うほど精度が向上する仕組み。\n- **開発プロセス**: Claude Codeによるコード生成、リファクタリング、Property-Based Testing（fast-check）、AIによるコードレビューという堅牢なパイプラインで品質を担保。\n- **デスクトップアプリ化**: BunとTauri 2を用い、SaaS不要のローカル完結型アプリ（SQLite使用）として構築。\n\n## 結論\nAIがコードを生成する時代において、「自分で作るのが面倒」という理由で成立していたSaaSの領域が、自作ツールによってリプレイス可能であることを示しています。",
+    "topics": [
+      "Claude Code",
+      "RSS",
+      "Tauri",
+      "Bun",
+      "LLMアプリ開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

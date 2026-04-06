@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:36:00.107513+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【入門】.claudeフォルダの構造と使い方　Claude Codeを思い通りに動かそう",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2604/02/news015.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの挙動を決定づける「.claude」フォルダの構成要素（指示書、権限、ルール、スキル、エージェント）を整理し、AIをプロジェクトに最適化する方法を解説するガイド。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」を使いこなすために不可欠な「.claude」フォルダの構造と役割を網羅的に解説した記事です。プロジェクトの司令塔となるこのフォルダには、指示書（CLAUDE.md）、権限管理（settings.json）、分割されたルール集（rules/）、自動呼び出しワークフロー（skills/）、そして特定業務に特化したサブエージェント（agents/）という6つの主要なコンポーネントが含まれます。これらを適切に構成することで、Claude Codeにプロジェクト独自のコーディング規約やビルド手順を「言わなくても分かっている」状態として学習させ、単なるチャットAIから自律的なチームメンバーへと進化させる手法を詳しく紹介しています。特に安全性を高めるための権限設定（allow/deny）や、特定のパスにのみ適用されるルール設定など、実践的なTipsが豊富に含まれています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIコーディング",
+      "開発自動化",
+      "プログラミング効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

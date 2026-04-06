@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:53:41.230850+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rust・Zig・Go比較：動作速度・生産性・AI実装の観点から",
+    "url": "https://zenn.dev/sprix_it/articles/7b158f843b64d1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成時代における言語選定基準として、Rust、Zig、Goを「実行性能」と「AI駆動開発の生産性」の2軸で比較し、Goの優位性を説く解説記事。",
+    "summaryBody": "Claude CodeなどのAIエージェントによる開発を前提とした、Rust・Zig・Goの比較分析です。従来の評価指標（習熟度やエコシステム）に加え、「AIがその言語を正確に生成・レビューできるか」という新機軸で評価しています。動作速度面ではRustとZigがC同等で優位ですが、AI駆動の生産性では、標準ライブラリの充実度・コードの平易さ・豊富な訓練データを持つGoが最も安定していると結論づけています。Rustはコンパイラによる安全性保証が強みですがAIの試行錯誤コストが高く、Zigはエコシステムと訓練データの不足により時期尚早と評価。現在のAI実装フローにおいて、フィードバックループの速いGoが最も合理的であると論じています。",
+    "topics": [
+      "Rust",
+      "Go",
+      "Zig",
+      "AI駆動開発",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

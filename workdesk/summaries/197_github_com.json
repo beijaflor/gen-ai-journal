@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:19:15.239302+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと物理世界の境界線：実行境界と責任構造の設計ノート",
+    "url": "https://github.com/Jang-woo-AnnaSoft/execution-boundaries",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "物理世界で動作するAIに対し、単なる実行能力（Can）ではなく、状況に応じた実行の是非（Should）を判断するための「実行境界」と意味論的レイヤーを定義するフレームワーク。",
+    "summaryBody": "AIが物理的なデバイスを操作する際、従来のMatter規格などの「デバイス中心」のアプローチでは、命令が物理世界に及ぼす影響（セマンティクス）を十分に考慮できません。例えば、ベビーモニターのスイッチを入れるのと、電気ヒーターのスイッチを入れるのではリスクが全く異なります。本プロジェクトは、AIと物理世界の間に「実行バリデーション」レイヤーを導入することを提唱しています。これは、AIの命令を実行する前に、Intent（意図）、Effect（物理的変化）、Boundaries（制限事項）、Conditions（条件）の4要素に基づいて検証し、不適切な場合は拒否・説明する仕組みです。「実行能力」から「実行許可」へのパラダイムシフトを促し、AIの安全性と説明責任を向上させるための「9つの質問プロトコル」などが定義されています。",
+    "topics": [
+      "AI Safety",
+      "Physical AI",
+      "Action Modeling",
+      "Responsible AI",
+      "IoT Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 78,
+      "annexPotential": 88,
+      "overall": 82
+    },
+    "originalTitle": "execution-boundaries: Design notes on execution boundaries and responsibility structures for AI systems interacting with the physical world."
+  }
+}

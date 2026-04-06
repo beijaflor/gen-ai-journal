@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:15:31.126491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM のモデル廃止に耐える ~TypeScript で型安全なモデルカタログを作ってみた~",
+    "url": "https://zenn.dev/aishift/articles/4f6dfa6b026936",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMの頻繁なモデル廃止やテナントごとのデプロイ名管理の複雑さを解決するため、TypeScriptの型安全性を活かした「モデルカタログ」基盤の設計と実装手法を解説した記事。",
+    "summaryBody": "AIエージェントプラットフォームを開発する株式会社AI Shiftが、LLMモデルの廃止（DALL-E 3やGemini 1.0など）に伴う開発コスト増大を解決するために構築した「モデルカタログ」パッケージについて解説しています。主な設計ポイントとして、`as const satisfies`を用いたリテラル型と構造チェックの両立、`status: 'retired'`と`replacementModelId`による自動フォールバックチェインの実装、さらにマルチテナント環境下で異なるAzureデプロイ名を型安全に扱うためのジェネリクス活用を紹介。この仕組みの導入により、モデル廃止時の修正範囲が約30ファイルから2ファイルに激減し、フロントエンド・バックエンド間の定義の不一致も解消されるなど、運用の安定性と保守性が大幅に向上した事例です。",
+    "topics": [
+      "TypeScript",
+      "LLM",
+      "Azure OpenAI",
+      "Vercel AI SDK",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 86
+    },
+    "originalTitle": null
+  }
+}

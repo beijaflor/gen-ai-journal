@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:10:53.344959+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのためのミラーテスト：鏡窓ゲームによる自己認識の検証",
+    "url": "https://www.lesswrong.com/posts/TfKM9PgztxieEcKiv/a-mirror-test-for-llms",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "動物の自己認識テストをLLMに応用した「鏡窓ゲーム」を通じて、最新AIが自身の出力を他者の出力から戦略的に区別できるかを検証し、その限界を浮き彫りにした研究。",
+    "summaryBody": "本記事では、動物の自己認識能力を測る「ミラーテスト」をLLM向けに翻案した「鏡窓ゲーム（Mirror-Window Game）」を提案し、主要なAIモデル（Claude 4.6、GPT-5.4等）を評価した。このゲームは、対話履歴に自分の出力（鏡）と他者の出力（窓）を並べ、モデルにどちらが自分かを当てさせるものである。実験の結果、Claude Opus 4.6などの高性能モデルは高い正答率を記録したが、これは高度な自己認識というよりは、自身の独特な文体や語彙（「Luminescence」のような華美な言葉）を統計的に検知しているに過ぎないことが判明した。窓側のトークン分布を鏡側に近づける「対抗的設定」では、どのモデルも自分を特定するための「自己マーキング（特異なトークンの生成）」や「メッセージパッシング（未来の自分への伝達）」を一貫して完遂できず、現時点でのLLMには真の意味での自己客観視能力が欠如していると結論付けている。",
+    "topics": [
+      "LLM",
+      "Self-Awareness",
+      "AI Evaluations",
+      "Theory of Mind",
+      "Benchmarking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "A Mirror Test For LLMs"
+  }
+}

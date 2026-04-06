@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:14:01.980693+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rails開発をシニアレベルへ：AIエージェントに「正しい」書き方を教える拡張スキル集",
+    "url": "https://www.railsreviews.com/skills",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコードエージェントに対し、Railsのベストプラクティスや37signals流の設計パターンを学習させ、高品質なコード生成を実現するオープンソースのスキル集。",
+    "summaryBody": "AIコードエージェント（Claude Code、Cursor、Windsurfなど）が冗長で非効率なコードを生成する問題を解決するため、シニアRailsエンジニアの知見を詰め込んだ「スキル（命令セット）」が公開されました。このツールは、Railsの標準機能を最大限に活かす37signals流の設計（Rich Models, Thin Controllers, Service Objectの廃止など）をAIに強制します。\n\n主な構成要素は3つです。1つ目は、既存のベストプラクティスを適用する『jr-rails-classic』。2つ目は、PhlexやPundit、Solid Queueなどモダンで堅牢なスタックでの新規開発をガイドする『jr-rails-new』。3つ目は、保守性の高いUIコンポーネント構築を支援する『jr-rails-phlex』です。\n\nこれらを導入することで、AIが車輪の再発明（独自のログイン機能の構築など）を行うのを防ぎ、セキュリティリスクの低減とコードベースの簡素化を同時に達成できます。npxコマンドで簡単に導入でき、AIとの共同開発における「指示のズレ」を最小限に抑えることが可能です。",
+    "topics": [
+      "Ruby on Rails",
+      "AI Coding Agents",
+      "Claude Code",
+      "Cursor",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Free AI Coding Skills for Rails — Opinionated Patterns That Work"
+  }
+}

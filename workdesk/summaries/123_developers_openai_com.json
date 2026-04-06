@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:53:04.264803+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codexにおけるプラグイン機能：スキルと外部ツール連携の統合ガイド",
+    "url": "https://developers.openai.com/codex/plugins",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Codexのプラグイン機能は、スキル、アプリ連携、MCPサーバーを統合し、AIによるワークフローの拡張と外部サービス操作を可能にします。",
+    "summaryBody": "OpenAI Codexにおける「プラグイン」は、特定のタスクを実行するための「スキル（再利用可能な指示セット）」、外部アプリケーション（Gmail、Slack、Google Drive等）との「連携」、および「MCP（Model Context Protocol）サーバー」を一つにまとめた再利用可能なワークフローパッケージです。ユーザーはCodexのGUIアプリまたはCLI（`codex /plugins`コマンド）を通じてプラグインをインストールでき、プロンプト内で「@」を用いて明示的に呼び出すか、自然言語で直接タスクを依頼することで機能を実行できます。これにより、メールの要約、ドキュメントの検索、チャットのドラフト作成といった操作をAIが自律的に行えるようになります。セキュリティ面では、既存の承認設定が維持され、外部サービス利用時は各サービスの規約が適用されます。また、`config.toml`によるプラグイン管理や、独自のプラグイン開発・配布のための仕組みも提供されています。",
+    "topics": [
+      "OpenAI Codex",
+      "Plugins",
+      "MCP (Model Context Protocol)",
+      "Workflow Automation",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Plugins – Codex | OpenAI Developers"
+  }
+}

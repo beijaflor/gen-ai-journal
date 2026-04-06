@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:08:52.025752+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VercelのAIスタックを活用したクリエイティブ・エージェント「FAUNA」の開発事例",
+    "url": "https://vercel.com/blog/how-flora-shipped-a-creative-agent-on-vercels-ai-stack",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "FLORA社がVercelのAI SDKやWorkflowを導入し、複雑な画像生成ワークフローを制御するAIエージェントの構築期間を大幅に短縮した事例紹介。",
+    "summaryBody": "クリエイティブ・プラットフォームのFLORAは、デザイナーの思考を補助するAIエージェント「FAUNA」の開発において、VercelのAIスタックを採用しました。従来のノードベースのUIでは、ユーザーがワークフロー設計者として振る舞う必要がありましたが、FAUNAはプロンプトから複数のモデルや構図を並列で提案する「クリエイティブ・パートナー」として機能します。技術面では、画像生成特有の「長時間実行」や「高度な並列処理」という課題に対し、Vercel WorkflowのDurableAgentを活用。これにより、LangChainやTemporalといった複数のシステムを個別に維持するコストを排除し、オーケストレーションと実行環境を統合しました。結果として、インフラ構築の手間を省き、製品開発のスピードを2倍に加速させることに成功しています。",
+    "topics": [
+      "Vercel",
+      "AI Agents",
+      "Workflow SDK",
+      "Generative AI",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 88,
+      "overall": 85
+    },
+    "originalTitle": "How FLORA shipped a creative agent on Vercel's AI stack"
+  }
+}

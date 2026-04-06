@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T08:53:11.910716+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hacker NewsにおけるHTTP 429（Too Many Requests）エラーの発生",
+    "url": "https://news.ycombinator.com/item?id=47573224",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Hacker Newsへのアクセス時にレート制限を超過し、リクエストが一時的に拒否されるエラーが発生しました。",
+    "summaryBody": "指定されたURL（Hacker Newsの投稿 ID: 47573224）へのアクセスにおいて、HTTP 429 Too Many Requestsエラーが記録されました。これは、クライアントが短期間にサーバーの許容範囲を超えるリクエストを送信した際に発生する標準的なHTTPレスポンスです。このため、元の記事の内容を取得・分析することが不可能な状態となっています。本件はコンテンツの質や内容に関するものではなく、データ取得プロセスにおけるインフラストラクチャ上の制限、またはクローラーの挙動に関する技術的な事象を示しています。対策としては、リクエスト間隔の延長やリトライ戦略の改善が挙げられます。",
+    "topics": [
+      "HTTP 429",
+      "Rate Limiting",
+      "Hacker News",
+      "Networking",
+      "Error Log"
+    ],
+    "scores": {
+      "signal": 1,
+      "depth": 1,
+      "uniqueness": 1,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 5,
+      "annexPotential": 10,
+      "overall": 15
+    },
+    "originalTitle": "429 Client Error: Too Many Requests for url"
+  }
+}

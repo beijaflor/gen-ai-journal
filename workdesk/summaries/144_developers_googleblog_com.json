@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:48:37.402879+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADK AgentにSkill（スキル）を組み込むための開発者ガイド",
+    "url": "https://developers.googleblog.com/developers-guide-to-building-adk-agents-with-skills/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GoogleのAgent Development Kit (ADK) を使用し、大規模なプロンプトを回避しながらエージェントの機能を動的に拡張する「Skill」の実装パターンと設計手法を解説するガイド。",
+    "summaryBody": "本記事は、GoogleのAgent Development Kit (ADK) における「SkillToolset」を活用したAIエージェントの開発手法を解説しています。従来のAIエージェント開発では、全ての指示や知識を一つの巨大なシステムプロンプトに詰め込む「モノリシックなプロンプト」が一般的でしたが、これはトークンコストの増大と精度低下を招きます。ADKは「Progressive Disclosure（段階的開示）」というアーキテクチャを採用し、メタデータ (L1)、指示 (L2)、外部リソース (L3) の3層に知識を分割することで、ベースラインのコンテキスト使用量を約90%削減します。\n\nガイドでは以下の4つの実装パターンを紹介しています：\n1. インライン・スキル: コード内に直接定義する基本的なチェックリスト。\n2. ファイルベース・スキル: SKILL.mdファイルと参照ドキュメントを含むディレクトリ構造。\n3. 外部スキル: agentskills.io などのコミュニティ・リポジトリからインポートする再利用可能なスキル。\n4. スキル・ファクトリー（メタ・スキル）: エージェント自身が新しいスキル定義を生成・ロードし、自己拡張するパターン。\n\nこれらのスキルは agentskills.io 仕様に準拠しているため、Gemini CLIやClaude Code、Cursorなどの互換ツール間でのポータビリティも確保されています。",
+    "topics": [
+      "ADK",
+      "AI Agents",
+      "Prompt Engineering",
+      "LLM Optimization",
+      "Agent Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Developer’s Guide to Building ADK Agents with Skills"
+  }
+}

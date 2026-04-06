@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:53:06.993287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DifyのWorkflowを使って記事を要約し、Notionへ保存する仕組みを作る",
+    "url": "https://zenn.dev/bookamasedo/articles/c264a26dafe55b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Difyのワークフロー機能を活用し、記事URLの読み込みからLLMによる要約、Notionへの自動保存までを完結させる自動化システムの構築手順を解説。",
+    "summaryBody": "本記事は、LLMアプリケーション開発プラットフォーム「Dify」のワークフロー機能を使い、効率的な情報収集パイプラインを構築するチュートリアルです。主なステップとして、HTTPリクエストによる記事内容の取得、LLMノードを用いた要約生成、そしてNotion API経由でのデータベースへの保存という一連の流れを詳しく解説しています。各ノードの具体的な設定値や、ワークフロー内での変数の受け渡し方法、日本語要約の品質を安定させるためのプロンプトエンジニアリングの要点などが網羅されており、LLMツールを実務に活用したい開発者にとって非常に実用的で再現性の高い内容となっています。",
+    "topics": [
+      "Dify",
+      "Notion",
+      "自動化",
+      "LLM",
+      "ワークフロー"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 65,
+      "overall": 78
+    },
+    "originalTitle": null
+  }
+}

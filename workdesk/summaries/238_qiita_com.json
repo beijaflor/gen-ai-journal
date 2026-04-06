@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:33:36.702137+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skills オープン標準仕様を読み解く — agentskills.ioが目指すエージェント間スキル共有の世界",
+    "url": "https://qiita.com/nogataka/items/6c4627ffc5ee207f3c47",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが提唱したAIエージェントのスキル定義のオープン標準「Agent Skills」の仕様構造、MCPとの補完関係、および30以上のエージェントが対応する普及状況を解説した記事。",
+    "summaryBody": "2025年12月にAnthropicによって公開された、コーディングエージェント向けのスキル定義のオープン標準「Agent Skills (agentskills.io)」の技術解説です。従来、エージェント（Claude Code、Cursor、GitHub Copilot等）ごとに異なっていたスキルの記述形式を統一し、ポータビリティを確保することを目的としています。\n\n主な特徴は以下の通りです：\n- **シンプルな構成**: YAMLフロントマターを含むMarkdownファイル（SKILL.md）とフォルダ構造のみで定義され、参入障壁が極めて低い。\n- **Progressive Disclosure**: カタログ、インストラクション、リソースの3段階で情報を読み込むことで、コンテキストウィンドウの消費を最小限に抑える設計。\n- **MCPとの相補性**: 通信・接続を担うMCP（Model Context Protocol）に対し、Agent Skillsは「手順や知識」のフォーマットを担当する。\n- **広範な普及**: 2026年4月時点で、主要なコーディングエージェントを含む30以上のツールが対応済み。\n\n著者は、既存のスキルをこの標準仕様へ移行する具体的なステップも示しており、エージェント運用における「スキルの負債化」を防ぐ現実的な手段として高く評価しています。",
+    "topics": [
+      "Agent Skills",
+      "Anthropic",
+      "AIエージェント",
+      "MCP",
+      "標準仕様"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

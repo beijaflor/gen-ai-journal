@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:43:23.107359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AfterPack: AIによる解析を阻止するRust製の高速JavaScript難読化ツール",
+    "url": "https://www.afterpack.dev/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AfterPackは、AIによるコード解析やリバースエンジニアリングを阻止するために設計された、Rust製の不可逆かつ高速な次世代JavaScript難読化ツールです。",
+    "summaryBody": "AfterPackは、従来の難読化ツールがGPT-4などのAIによって容易に解読されてしまうという課題を解決するために開発されました。Rustで構築されたこのツールは、100ファイルを5秒未満で処理する圧倒的なパフォーマンスを誇ります。\n\n主な特徴は以下の通りです：\n- **不可逆な設計**: 従来の逐次変換とは異なり、意味論を破壊する非線形な変換を行うため、開発元ですら復元が不可能です。\n- **AI耐性**: LLMがコードを理解するために依存するパターンを破壊し、自動化された解析を無効化します。\n- **セキュリティと互換性**: `eval()`を使用せずCSPに完全に準拠しているため、銀行やヘルスケアアプリでも安全です。Next.js、Vite、Remixなどのモダンなスタックに1コマンド（npx afterpack）で統合できます。\n- **コスト構造**: 基本機能はMITライセンスのCLIとして無料で提供され、より高度なクロスモジュール難読化やネットワーク保護が必要なチーム向けにPro版が用意されています。",
+    "topics": [
+      "JavaScript",
+      "Security",
+      "Rust",
+      "Obfuscation",
+      "AI Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "AfterPack • Modern JavaScript Obfuscator for AI Era"
+  }
+}

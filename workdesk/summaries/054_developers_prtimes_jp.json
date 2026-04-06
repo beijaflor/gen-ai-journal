@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:02:20.595371+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "git worktree × Docker Composeによる並行開発環境の改善",
+    "url": "https://developers.prtimes.jp/2026/03/31/improvement-with-worktree-compose/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "git worktreeとDocker Composeを連携させ、重い依存サービスを共有しながらブランチごとに独立したWebコンテナとHTTPSドメインを動的に立ち上げる並行開発手法の解説。",
+    "summaryBody": "PR TIMESの開発現場で導入された、`git worktree`と`Docker Compose`を組み合わせた効率的な並行開発環境の構築事例です。主な特徴は、DBやOpenSearchといったリソース消費の激しい共通基盤サービスを共有ネットワーク上に維持しつつ、検証したいブランチごとにアプリケーションコンテナ（Web）のみをワークツリーとして分離して起動する点にあります。自作の管理スクリプトにより、ブランチ名をスラグ化した専用ドメイン（例：`https://feature-x.app.dev.local`）とTLS証明書を動的に生成し、既存のHTTPS前提の開発フローを崩さずに複数ブランチの同時検証を可能にしました。これにより、レビューや修正前後の比較時に発生していた`git switch`による文脈の断絶や環境再構築の手間を大幅に削減しています。",
+    "topics": [
+      "git worktree",
+      "Docker Compose",
+      "ローカル開発環境",
+      "リバースプロキシ",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

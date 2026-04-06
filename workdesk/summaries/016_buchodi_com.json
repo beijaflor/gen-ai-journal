@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:22:23.027631+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPTのボット検知「Cloudflare Turnstile」を解析：Reactの内部状態まで読み取る仕組みを特定",
+    "url": "https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflare TurnstileがChatGPTの対話前に実行する難読化プログラムを解析し、ブラウザ情報だけでなくReactの内部状態まで詳細に監視している実態を暴いた技術レポート。",
+    "summaryBody": "Cloudflare TurnstileがChatGPTの対話リクエスト前に行うボット検知プログラムを復号し、その動作を詳細に解析した調査結果。著者は377件のネットワークトラフィックを解析し、検知プログラムが独自VM上で実行され、3つのレイヤー（ブラウザ、ネットワーク、Reactアプリケーション状態）から55種類のプロパティを収集していることを突き止めた。特筆すべきは、React RouterのコンテキストやハイドレーションデータなどのReact内部状態を確認している点であり、これにより単にブラウザ指紋を偽装するだけのヘッドレスブラウザやボットを排除している。また、難読化に使用されるXORキーが同一のデータストリーム内の命令に含まれているという「暗号化」の実態も明らかにされており、高度な難読化の裏にある実装の詳細を論じている。",
+    "topics": [
+      "Cloudflare Turnstile",
+      "Reverse Engineering",
+      "Bot Detection",
+      "React Internals",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "ChatGPT Won't Let You Type Until Cloudflare Reads Your React State. I Decrypted the Program That Does It."
+  }
+}

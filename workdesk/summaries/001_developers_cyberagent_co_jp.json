@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T10:48:43.054183+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数リポジトリをまたぐ横断設計をAIで自律化するまで",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/63003/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CyberAgentがClaude SonnetとGitHub Actionsを組み合わせ、ビジネス要求のレビューから複数リポジトリにまたがる横断設計、ドキュメントの自動更新までを自律化した仕組みを解説しています。",
+    "summaryBody": "AmebaLIFE事業本部における、生成AIを活用した上流工程（要求定義・横断設計）の自動化事例です。従来の開発では、複数リポジトリにまたがる設計が属人化し、ドキュメントの陳腐化や要求の未定義が課題となっていました。本取り組みでは、GitHub Actions上で動作するAIが、要求の粒度評価、開発者視点での不足検知、アーキテクチャ整合性チェックを多層的に実施します。さらに、コードと同期したドキュメントを自動生成して最新のシステム構成をAIに把握させることで、精度の高い横断設計PRや概算工数の自動算出を実現しました。これにより、人間は最終的な承認と高度な判断に注力できる体制を構築しています。",
+    "topics": [
+      "生成AI",
+      "Claude Sonnet",
+      "GitHub Actions",
+      "システム設計",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

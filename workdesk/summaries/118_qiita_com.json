@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:53:52.768586+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeからFigmaを操作できるようになったので試してみた",
+    "url": "https://qiita.com/kobayashimakoto/items/357add591df55fee1585",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AnthropicのAIエージェント「Claude Code」がFigma MCPサーバー経由でデザイン操作に対応し、コードからデザインシステムやコンポーネントを自動生成・同期する実用的な検証レポート。",
+    "summaryBody": "Figmaが発表したMCP（Model Context Protocol）サーバーにより、Claude CodeなどのAIエージェントがFigmaファイルを直接操作できるようになりました。本記事では、新たに追加された`use_figma`ツールと、それに基づく様々なスキルを検証しています。\n\n主な検証内容は以下の通りです：\n- **/figma-generate-library**: CSSなどのコードからデザイントークン（変数）やコンポーネントを自動生成し、Figmaライブラリを構築します。特にReactコンポーネントのCVA定義を解釈し、バリアント付きコンポーネントを作成する機能の有用性を確認しています。\n- **/figma-generate-design**: ローカルのコードを元にFigma上で画面を構成します。オートレイアウトや命名規則も考慮されており、完成度7割程度のモックアップが自動生成可能です。\n- **その他のスキル**: アクセシビリティ仕様書の生成（/create-voice）や、視覚的階層に基づいた余白の自動適用（/rad-spacing）、コードとデザイン間の同期（/sync-figma-token）など、エンジニア主体でデザイン品質を担保するための強力な機能群を紹介しています。\n\n現在はベータ期間中で無料利用が可能であり、エンジニアとデザイナーのワークフローを劇的に変える可能性が示されています。",
+    "topics": [
+      "Claude Code",
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "デザイントークン",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

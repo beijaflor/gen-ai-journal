@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:29:14.545420+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "書籍の学びを Agent Skills にする ～現場で役立つシステム設計の原則編～",
+    "url": "https://zenn.dev/eda_sann/articles/fd3beee3aa610d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "名著『現場で役立つシステム設計の原則』の設計思想を Claude Code の Agent Skills として実装し、対話形式でドメイン抽出を行う実践的なアウトプット手法の紹介。",
+    "summaryBody": "増田亨氏の著書『現場で役立つシステム設計の原則』から得たドメイン駆動設計（DDD）の知見を、Claude Code 上で動作する「Agent Skills」として定義・実装した事例を紹介しています。作成された `domain-extractor` スキルは、業務概念を「ヒト/モノ/コト」に分類するフレームワークを活用し、ファシリテーター、業務分析家、レビュアーという3つの役割を持つマルチエージェント構成でヒアリングを進行します。コト（出来事）を起点とした業務分析のワークフローを自動化し、最終的に Mermaid を含む分析レポートを出力する仕組みを構築することで、書籍の知識を単なる記憶ではなく「実用的なツール」へと昇華させています。",
+    "topics": [
+      "Claude Code",
+      "Agent Skills",
+      "DDD",
+      "システム設計の原則",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

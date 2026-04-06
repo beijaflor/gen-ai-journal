@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:50:28.467061+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OllamaがApple SiliconでMLXに対応（プレビュー版）：M5チップでの劇的な高速化を実現",
+    "url": "https://ollama.com/blog/mlx",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OllamaがAppleのMLXフレームワークを統合し、Apple Silicon（特にM5チップ）上での推論速度を大幅に向上させ、NVFP4形式のサポートやキャッシュの最適化を実現しました。",
+    "summaryBody": "Ollama 0.19のプレビュー版において、Appleの機械学習フレームワーク「MLX」の統合が発表されました。これにより、Apple Siliconのユニファイドメモリ・アーキテクチャを最大限に活用可能となり、特にM5/M5 Pro/M5 Maxチップでは新搭載のGPU Neural Acceleratorを通じて、Prefill（プロンプト処理）およびDecode（生成）速度が従来比で約2倍に向上しています。また、NVIDIAの「NVFP4」量子化フォーマットをサポートしたことで、高い推論精度を維持しつつメモリ帯域とストレージ使用量を削減し、商用推論環境とのパリティを確保しました。さらに、コーディングエージェント（Claude Code等）での利用を想定し、会話間でのキャッシュ再利用やインテリジェントなチェックポイント機能が追加され、メモリ効率とレスポンス性が大幅に改善されています。本リリースは、32GB以上のメモリを搭載したMac環境が推奨されています。",
+    "topics": [
+      "Ollama",
+      "MLX",
+      "Apple Silicon",
+      "M5",
+      "NVFP4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Ollama is now powered by MLX on Apple Silicon in preview"
+  }
+}

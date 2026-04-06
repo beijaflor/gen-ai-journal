@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:57:01.114252+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "完全自律のコーディングパイプラインの構築：Claude CodeとRiggによるAIエージェントのオーケストレーション",
+    "url": "https://zenn.dev/theaktky/articles/5f9f18c34950c1",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを親、YAMLワークフローを子とする2層構造により、設計からリファクタまでを確実に実行する自律型開発パイプラインの設計手法。",
+    "summaryBody": "この記事では、Claude CodeやCursor CLIを組み合わせ、UXデザインから実装、レビュー、リファクタリングまでを自動完結させる「完全自律コーディングパイプライン」のアーキテクチャを解説しています。最大の特徴は、自由度の高い「親エージェント（Claude Code）」と、機械的なルールを強制する「ワークフロー層（Rigg）」の2層に機能を分離している点です。エージェントが指示を無視したり妥協したりするのを防ぐため、テストや型チェック、レビュー修正のループをYAMLで厳格に定義し、パスするまで次の工程に進ませない仕組みを構築しています。著者が開発したOSSツール『Rigg』を用いることで、複雑なマルチステップのAIワークフローをローカル環境でオーケストレーションし、人間が承認ステップのみに関与する効率的な開発フローを実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ソフトウェア自動開発",
+      "Rigg",
+      "LLMオーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

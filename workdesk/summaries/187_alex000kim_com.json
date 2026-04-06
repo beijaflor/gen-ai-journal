@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T08:42:24.576423+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic「Claude Code」のソースコード流出：偽ツールの注入、正規表現による感情分析、未発表の自律型エージェントの実態",
+    "url": "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Anthropicが誤って公開したClaude Codeのソースコードから、競合他社による学習を防ぐ「偽ツール注入」や未発表の自律型エージェント「KAIROS」などの内部仕様が明らかになりました。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」のnpmパッケージにソースマップが同梱され、全ソースコードが閲覧可能になった件の分析記事です。以下の衝撃的な内部実装が判明しました。\n\n1. **アンチ蒸留メカニズム**: APIトラフィックを記録して競合モデルの学習に利用するのを防ぐため、サーバー側でダミーのツール定義（fake_tools）をシステムプロンプトに注入する仕組みが存在します。\n2. **アンダーカバーモード**: 内部コードネームやSlack情報を隠し、AIが書いた形跡を消して人間に擬態するモード。Anthropic社員によるオープンソース活動での利用を想定していると推測されます。\n3. **正規表現による感情検知**: ユーザーの罵倒やフラストレーションを検知するために、LLMではなくシンプルな正規表現（Regex）が使用されていました。\n4. **ネイティブクライアント認証**: Bunランタイムの低層（Zig）でハッシュを計算し、公式クライアント以外からのAPIアクセスを制限するDRMのような仕組みを実装しています。\n5. **未発表の自律モード「KAIROS」**: 夜間のメモリ蒸留やバックグラウンドでの自律タスク実行をサポートする次世代機能の痕跡が見つかりました。\n\n流出の原因は、Anthropicが買収したBunの既知のバグ（本番環境でのソースマップ生成）である可能性が高く、AI開発におけるガバナンスとサプライチェーンのリスクを浮き彫りにしています。",
+    "topics": [
+      "Anthropic",
+      "Claude Code",
+      "ソースコード流出",
+      "AIエージェント",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:30:44.731088+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeもCodex Securityも見落とした、CSRFトークン漏洩の脆弱性",
+    "url": "https://gmo-cybersecurity.com/blog/claude-codex-missed-csrf-token-leak/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SAML IdP実装時にRails等のフレームワークのフォームヘルパーを利用することで、内部のCSRFトークンが外部のSPへ意図せず漏洩する脆弱性とその検知の難しさについて解説しています。",
+    "summaryBody": "本記事は、RailsやSpring Bootといったフレームワークのフォームヘルパーが、外部へのPOST送信時にCSRFトークンを自動挿入してしまうことで発生する脆弱性を解説しています。特にSAML IdPが認証結果（SAML Response）を外部のService Provider (SP)へ送信する際、この仕様によってIdP側のCSRFトークンが外部へ漏洩します。著者がClaude CodeやCodex Securityといった最新のLLMベースのセキュリティツールで検証したところ、これらは署名鍵のハードコード等は指摘できたものの、この暗黙的なトークン漏洩は見落とす結果となりました。対策として、外部へPOSTするフォームではヘルパーを使わず素のHTMLフォームタグを使用することを推奨しています。フレームワークの便利な機能がセキュリティ上のアンチパターンを生む実例として、開発者とセキュリティ診断員の両方に警鐘を鳴らす内容です。",
+    "topics": [
+      "SAML",
+      "CSRF",
+      "Ruby on Rails",
+      "Claude Code",
+      "脆弱性診断"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

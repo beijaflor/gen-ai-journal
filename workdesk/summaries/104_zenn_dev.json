@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:56:10.555470+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントが払う仕組み — AIエージェント決済の6層構造",
+    "url": "https://zenn.dev/komlock_lab/articles/agent-payments-stack-2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが自律的に決済を行うための技術スタックを6つの階層で整理し、主要なプロトコルの違いと主要企業の垂直統合戦略を解説した包括的なガイド。",
+    "summaryBody": "AIエージェントが自律的に「お金を使う」ためのインフラを「Agent Payments Stack」の6層モデル（L0〜L5）として整理しています。本記事では、BaseやSolanaなどの決済基盤（L0）、TEEやMPCを活用したウォレット層（L1）、Bridgeなどのルーティング層（L2）、x402やMPP、ACPといった主要な決済プロトコル層（L3）、ERC-8004などの認可層（L4）、そしてDeFiや計算リソース調達などのアプリケーション層（L5）を網羅的に解説しています。\n\n特に、API課金に特化したx402、セッションベースのMPP、ECチェックアウト向けのACP、認可フレームワークのAP2など、混同されやすいプロトコルの役割分担を明確にしています。市場の現状として、CoinbaseとStripeがスタック全体を垂直統合しようとする動きや、決済の98.6%がUSDC建てである実態、Visa/Mastercardが既存の信頼ネットワークを拡張しようとしている競争の構図を分析しています。技術的には整いつつあるものの、認可の標準化や真に有用なユースケースの創出が今後の課題であると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "ブロックチェーン",
+      "ステーブルコイン",
+      "x402",
+      "決済プロトコル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

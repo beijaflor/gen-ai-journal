@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:18:01.822604+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Docling で PDF を Markdown に変換してみる",
+    "url": "https://zenn.dev/fukurou_labo/articles/f523b8c34fcf43",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "IBM Researchが開発した文書変換ツール「Docling」を用いて、PDF等の複雑な文書をレイアウト情報を保持したままMarkdownに変換する手法を解説します。",
+    "summaryBody": "本記事では、IBM Research Zurichが公開したオープンソースの文書変換ライブラリ「Docling」を紹介しています。Doclingは、PDF、Word、PowerPointなどの文書から、単なるテキスト抽出ではなく、見出し、段落、表、リストなどの論理構造を維持したままMarkdownやJSONへ変換できる点が特徴です。記事内では、レイアウト解析やOCRを組み合わせたアーキテクチャの概要、pipによるインストール手順、CLI（コマンドライン）での基本操作、およびPythonスクリプトからの呼び出し方法を具体的に解説しています。特にLLM（大規模言語モデル）の精度向上に直結する、RAG（検索拡張生成）の前処理ツールとしての有用性が強調されています。",
+    "topics": [
+      "Docling",
+      "PDF",
+      "Markdown",
+      "Python",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 95,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}
