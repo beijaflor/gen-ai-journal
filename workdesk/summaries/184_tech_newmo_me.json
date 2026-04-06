@@ -1,19 +1,19 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T07:47:11.867476+00:00",
+    "generatedAt": "2026-04-06T14:42:06.322393+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "エラー: 記事の取得に失敗しました (tech.newmo.me)",
+    "title": "エラー：記事コンテンツの取得に失敗しました",
     "url": "https://tech.newmo.me/entry/2026/04/01/130000",
     "language": "ja",
     "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "アクセス制限（429 Too Many Requests）により、指定された技術ブログ記事の内容を取得・解析することができませんでした。",
-    "summaryBody": "指定されたURL「https://tech.newmo.me/entry/2026/04/01/130000」から内容を取得する際に、サーバー側から「429 Too Many Requests」エラーが返されました。このため、記事の本文を読み取ることができず、要約や技術的な評価を行うことが不可能な状態です。内容を確認するには、アクセス制限が解除された後に再度試行するか、ブラウザから直接URLにアクセスして内容を確認する必要があります。現時点ではコンテンツが不明なため、すべての評価スコアは暫定的に0としています。",
+    "oneSentenceSummary": "リクエスト過多（429 Client Error）により、指定されたURLから記事内容を取得することができませんでした。",
+    "summaryBody": "指定されたURL（https://tech.newmo.me/entry/2026/04/01/130000）へのアクセス時に、サーバーから「Too Many Requests」エラーが返されました。このため、記事の具体的な内容（技術的な詳細、背景、結論など）を解析し、要約を作成することができません。本URLは日本のモビリティスタートアップであるnewmo株式会社のエンジニアリングブログ（tech.newmo.me）の一部であると推測されますが、現時点では情報の抽出が不可能です。",
     "topics": [
-      "Error",
-      "HTTP 429",
+      "HTTP 429 Error",
+      "Content Fetch Failure",
       "newmo"
     ],
     "scores": {
