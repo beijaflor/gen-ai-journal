@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:46:43.142453+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CERNがAIをシリコンに焼き込む理由──50ナノ秒の取捨選択",
+    "url": "https://note.com/joho_no_todai/n/n44ecd96b2915",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CERNのLHCでは、毎秒1ペタバイトに及ぶ膨大なデータから未知の物理現象を50ナノ秒で選別するため、FPGAに最適化された極小AI（タイニーAI）が「捨てる技術」の中核を担っている。",
+    "summaryBody": "### CERNにおける「極小AI」の最前線\nCERNのLHC（大型ハドロン衝突型加速器）は年間4万エクサバイトものデータを生成しますが、実際に保存できるのは0.02%未満です。この「データの洪水」から価値ある衝突イベントを救い出すため、CERNは商用AIの巨大化とは対照的に、FPGAに最適化された極限まで軽量な「極小AI」を採用しています。\n\n### 50ナノ秒の意思決定とAXOL1TL\n「レベル1トリガー」と呼ばれるシステムでは、約1,000基のFPGA上で「AXOL1TL」という異常検知アルゴリズムが稼働しています。これは変分オートエンコーダ（VAE）をベースとした教師なし学習モデルで、わずか50ナノ秒で「未知の物理」の兆候を判定します。この速度を実現するため、モデルは量子化や枝刈りを経てFPGA上の固定小数点演算に最適化されています。\n\n### 「捨てる技術」が支える科学的発見\nCERNは「hls4ml」というオープンソースツールを用い、PyTorch等で学習したモデルをシリコンに直接焼き込んでいます。この「何を捨てるか」を極める技術は、新粒子「Ξcc⁺」の発見にも寄与しました。2030年の高輝度LHC計画に向け、さらに10倍に増大するデータ洪水に耐えるべく、ナノ秒単位で判断を下すエッジAIの進化が続いています。",
+    "topics": [
+      "CERN",
+      "FPGA",
+      "エッジAI",
+      "hls4ml",
+      "素粒子物理学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T17:54:47.726884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "伝統的ソフトウェア開発とMLOpsにおけるAI主導デプロイメントの違い：エンジニアリングリーダーが知るべき4つの視点",
+    "url": "https://semaphore.io/how-does-ai-driven-deployment-differ-between-traditional-software-and-ml-models-mlops",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "決定論的なコードを扱う従来のCI/CDと、データに基づき確率的に動作するMLOpsのデプロイメントにおける本質的な違いと、それに対応するパイプライン設計の要点を解説。",
+    "summaryBody": "本記事は、Semaphoreによる、従来のソフトウェア開発と機械学習モデル（MLOps）におけるデプロイメント手法の決定的な違いを解説したガイドです。中心となるコンセプトは、「伝統的なCI/CDは決定論的（Deterministic）なコードをデプロイするのに対し、MLOpsはデータによって形成される確率論的（Probabilistic）な振る舞いをデプロイする」という点にあります。\n\n具体的には、以下の4つの領域で違いを分析しています：\n1. アーティファクト：コードのバージョン管理だけでなく、モデル、学習データ、構成の紐付けが不可欠になります。\n2. 検証：従来の「合格か不合格か」という二値判定から、精度やドリフトの閾値に基づいた「許容可能なリスク」の評価へとシフトします。\n3. ロールアウト：単なるリリースではなく、カナリアデプロイやシャドウデプロイを含む「制御された実験」としての運用が求められます。\n4. フィードバックループ：監視の役割が、単純なエラー検知からモデルの劣化検知と自動再学習のトリガーへと進化します。\n\n最終的に、AIやMLを導入するチームは、既存のCI/CDツールが不確実性や条件付き分岐、実験的なデプロイをサポートできているかを見直す必要があると結論付けています。",
+    "topics": [
+      "MLOps",
+      "CI/CD",
+      "AIデプロイメント",
+      "パイプライン設計",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "How does AI-driven deployment differ between traditional software and ML models (MLOps)?"
+  }
+}

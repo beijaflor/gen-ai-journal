@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:29:59.826606+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Agent Teamで実現するAIのためのデータ品質向上プロセス",
+    "url": "https://zenn.dev/dely_jp/articles/claude-code-agent-team-design",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを用いたエージェントチームを構築し、データ品質の格付け（Tier）向上プロセスを自律化することで、少人数でのデータエンジニアリングと分析アジリティの両立を実現した事例紹介。",
+    "summaryBody": "クラシルのデータチームが、データ品質向上プロセス（Tier昇格）のボトルネックを解消するために「Claude Code Agent Team」を導入した事例を詳述しています。AIが信頼できるデータ（SSoT）を扱える状態を目指し、設計・実装・検証・レビューの各工程を6つの専門エージェントに役割分担。特に、MCP（Model Context Protocol）経由でSnowflakeに接続し、移行前後の数値整合性を自動検証する「migration-tester」により、従来数時間かかっていた検証作業を10分に短縮しました。また、エージェントの振る舞いをスキル定義ファイルで管理し、セッション後の「/retro」コマンドでチーム自体の挙動を継続的に改善する仕組みを構築しています。これにより、品質向上に伴う工数増大を防ぎ、AI Readyなデータ基盤の持続的な運用を可能にしています。",
+    "topics": [
+      "Claude Code",
+      "DataOps",
+      "dbt",
+      "AIエージェント",
+      "データ品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

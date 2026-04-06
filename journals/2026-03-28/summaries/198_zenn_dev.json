@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:27:32.413937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAG パイプラインを捨てて claude -p に Grep させたら3時間で社内ナレッジ Bot が動いた",
+    "url": "https://zenn.dev/kok1eeeee/articles/knowledge-chatbot-agentic-search",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "200ファイル程度の社内ナレッジに対し、複雑なRAGパイプラインを構築せず、Claude Code (claude -p) の検索・読解ツールを活用して迅速かつ高精度に回答する「エージェンティックサーチ」の実装事例。",
+    "summaryBody": "従来のRAG（Embedding、ベクトルDB、リランキング等）を用いず、Claude Codeの非対話モード（claude -p）にファイル検索（Grep）と読み込み（Read）の権限を与えて直接ナレッジを探索させる「エージェンティックサーチ」の手法を解説した記事です。数百ファイル規模であれば、チャンク分割や埋め込みモデルの調整といった運用コストを大幅に削減でき、LLM自身が検索戦略を立てるためクエリ変換も不要になります。記事内では、subprocessを用いた実装方法、セキュリティ対策としての3層防御（cwd制限、入力フィルタ、システムプロンプト）、コストやレイテンシのトレードオフ、さらに`--session-id`を用いた会話の継続方法まで、実用的な知見が網羅されています。特に、Claude Codeという「ハーネス」の完成度がRAG不要論の鍵であるという指摘は、小規模ナレッジ管理の新しいスタンダードを提示しています。",
+    "topics": [
+      "Claude Code",
+      "Agentic RAG",
+      "Slackbot",
+      "AIエージェント",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

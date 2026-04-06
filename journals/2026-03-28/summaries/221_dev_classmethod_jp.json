@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:29:44.953273+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の /batch コマンドで同じ作業を6並列で回してみた",
+    "url": "https://dev.classmethod.jp/articles/claude-code-batch-parallel/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code の /batch コマンドを利用して、テスト生成や PR 作成などの定型作業を複数ワーカーで並列実行する手順と、実務で得られた注意点を解説しています。",
+    "summaryBody": "Claude Code v2.1.63 で追加された `/batch` コマンドは、1つのプロンプトを複数の独立したタスクに分解し、`git worktree` を活用して並列実行する機能です。本記事では Hono + TypeScript のプロジェクトを例に、6つのドメインに対するテストコード生成の自動化を実証しています。\\n\\n主なポイント：\\n1. **仕組み**: 実行前に分解計画（Plan）が提示され、承認後に各ワーカーが独立したディレクトリで作業するため干渉が起きません。\\n2. **権限エラーへの対応**: サブエージェントで発生しやすい Bash 権限エラーに対し、`settings.local.json` の設定や `--dangerously-skip-permissions` フラグを用いた回避策を紹介。\\n3. **応用ワークフロー**: `.claude/rules` や `skills` を組み合わせ、特定の命名規則やレビューチェックリスト、コミットメッセージへの季語挿入などを全ワーカーに統一適用。\\n4. **実践的な教訓**: 並列化は「1つの成功パターンを確立してから横展開」が鉄則であり、いきなり大規模に実行すると、想定外の挙動が発生した際の手戻りコストが膨大になるリスクを指摘しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "TypeScript",
+      "Vitest",
+      "並列処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

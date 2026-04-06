@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:25:01.580664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの文体について：ダッシュやコロンの多用はモデル固有の学習バイアスか",
+    "url": "https://zenn.dev/acntechjp/articles/dba4be5c018925",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM特有の文体とされるダッシュやコロンの多用が、モデルファミリーごとのInstruct Tuning（報酬モデルの設計）に依存することを実験で証明した調査レポート。",
+    "summaryBody": "ChatGPTなどのLLMがem dash（—）やコロン（:）を多用する傾向の起源を調査するため、Gemma 3、Llama 3、Qwen 3の各モデルファミリーにおいてベースモデルとInstructモデルの出力統計を比較した実験記事。結果、Gemma 3はダッシュやマークダウン見出しを大幅に増幅させる一方、Llama 3は逆にこれらを抑制する傾向があり、「LLMはダッシュを多用する」という通説が普遍的でないことを明らかにした。これはRLHFにおける報酬モデルの設計思想（構造化された回答を好むか、自然な散文を好むか）が反映された『Reward Hacking』の一種であると考察。さらに安全性訓練を除去したAbliteratedモデルの分析から、文体特性は安全性フィルタリングとは別の学習層で形成されている可能性を指摘している。",
+    "topics": [
+      "LLM",
+      "RLHF",
+      "Gemma 3",
+      "Llama 3",
+      "Reward Hacking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

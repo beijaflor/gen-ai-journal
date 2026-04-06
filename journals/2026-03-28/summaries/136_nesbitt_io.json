@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:19:11.896311+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オープンソースプロジェクトにAIボットを引き寄せる方法",
+    "url": "https://nesbitt.io/2026/03/21/how-to-attract-ai-bots-to-your-open-source-project.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "低品質なAI生成プルリクエストの急増を皮肉り、あえて「ボットに好まれる劣悪な管理手法」を推奨することで、現代のオープンソースエコシステムの現状を鋭く批判する風刺記事。",
+    "summaryBody": "オープンソースメンテナーのAndrew Nesbitt氏による、GitHub等で見られる低品質なAI生成プルリクエスト（PR）を痛烈に批判した風刺記事です。筆者は「なぜ自分のプロジェクトにはAIボットからのPRが来ないのか」という体裁で、AIボットを惹きつけるための「逆説的なベストプラクティス」を多数提案しています。\n\n具体的には、以下のようなプロジェクト管理をあえて行うべきだと主張します：\n- **曖昧なIssueの作成**: 詳細を書くとボットの「解釈の余地」がなくなるため、あえて内容を薄くする。\n- **テストや型定義の削除**: コードが堅牢すぎるとボットの仕事がなくなるため、JavaScriptへの移行やテストコードの削除を推奨する。\n- **脆弱性の放置**: LLMの学習データに含まれる有名な脆弱性（古いlodash等）をわざと含めることで、ボットの「修正ターゲット」にする。\n- **独自のメトリクス**: AI PRの速度や「Slop（スロップ）密度」など、従来の質を重視する指標とは正反対の評価軸を導入する。\n\nこの記事は、形式的なエンゲージメントを追い求めるあまり、無意味な自動生成コードに時間を奪われるメンテナーの苦悩を、ユーモアを交えて浮き彫りにしています。",
+    "topics": [
+      "オープンソース",
+      "AIエージェント",
+      "GitHub",
+      "ソフトウェア開発",
+      "風刺"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 1,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "How to Attract AI Bots to Your Open Source Project"
+  }
+}

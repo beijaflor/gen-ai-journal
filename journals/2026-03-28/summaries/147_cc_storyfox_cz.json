@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:37:51.621437+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code チートシート (v2.1.87) - コマンド・ショートカット・設定リファレンス",
+    "url": "https://cc.storyfox.cz/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」の最新バージョンに対応した、ショートカット、コマンド、MCP連携、エージェント設定を網羅した包括的なリファレンスガイド。",
+    "summaryBody": "Anthropicが提供するエンジニア向けCLIツール「Claude Code」の最新機能（v2.1.87）をまとめたチートシートです。主な内容は以下の通りです。\n\n### 1. 操作・ショートカット\n基本的なセッション操作（Ctrl+Dで終了、Ctrl+Lでクリア）に加え、バックグラウンドタスクの切り替え（Ctrl+B）、詳細ログの表示（Ctrl+O）、プロンプトの外部エディタ起動（Ctrl+G/X）など、ターミナルでの開発を加速させるショートカットが網羅されています。\n\n### 2. スラッシュコマンドと設定\n- **プロジェクト管理**: `/init`でのCLAUDE.md作成、`/memory`での記憶編集、`/context`によるコンテキスト可視化。\n- **推論制御**: `/effort`コマンドによる計算リソースの調整（LowからMaxまで）、`/plan`による実行前の計画策定。\n- **外部連携**: `/mcp`によるModel Context Protocolサーバの管理、`/chrome`連携、`/remote-control`によるWeb UIとのブリッジ。\n\n### 3. 高度なワークフロー\nGit Worktreesを利用した並列タスク処理（`/batch`）、音声入力（`/voice`）、およびカスタムスキルの作成方法が解説されています。スキルのフロントマターでモデルや権限、トリガー条件を詳細に定義可能です。\n\n### 4. アップデートの要点\nWindows向けPowerShellツールのオプトインプレビュー、VCS（Jujutsu/Sapling）の除外設定、読み取りツールの効率化など、最新の改善点が含まれています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "Developer Tools",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Claude Code Cheat Sheet"
+  }
+}

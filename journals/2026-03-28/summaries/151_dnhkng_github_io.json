@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:44:30.498348+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの神経解剖学 II：レイヤー複製の再検証と「普遍言語」の兆候",
+    "url": "https://dnhkng.github.io/posts/rys-ii/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "学習不要でTransformerモデルの性能を向上させる「RYS（Repeat Your Self）」手法をQwen3.5-27Bで再検証し、モデル内部に言語非依存の推論空間が存在することを実証した。",
+    "summaryBody": "著者が2024年に提唱した、Transformerモデルの中間レイヤーを複製するだけで性能を向上させる手法「RYS (Repeat Your Self)」が、Qwen3.5-27Bなどの現代的な最新モデルでも有効であることを大規模な実験で証明した。コサイン類似度を用いた分析により、LLMの内部処理が「エンコード（言語特有）」「推論（言語に依存しない抽象的な思考空間）」「デコード（言語特有）」の3フェーズで構成されていることを可視化。特に「推論」フェーズに該当する中間層を複製することで、数学的推論や感情知能（EQ）のスコアが向上することを確認した。ビームサーチやXGBoostを用いた200万通りの構成探索の結果、複雑な組み合わせよりも特定の連続した中間層を複製するシンプルな構成が最も効率的（パレート最適）であることを突き止め、それに基づいた最適化済みモデル群を公開している。",
+    "topics": [
+      "LLM",
+      "RYS",
+      "Transformer",
+      "Neuroanatomy",
+      "Qwen3.5"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "LLM Neuroanatomy II: Modern LLM Hacking and hints of a Universal Language?"
+  }
+}

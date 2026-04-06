@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:30:45.832187+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「自動モード」：承認疲労を抑えつつ安全に権限確認を自動化する新機能",
+    "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、モデルベースの分類器を用いてAIエージェントの操作承認を自動化し、開発者の承認疲労を軽減しながら安全性を確保する「Claude Code」の新機能、自動モードを発表しました。",
+    "summaryBody": "Anthropicは、CLIツール「Claude Code」において、AIエージェントのアクションを自動で承認・拒否する「自動モード（Auto mode）」を導入しました。これまで開発者は、すべての操作を手動で承認して「承認疲労」に陥るか、安全性を犠牲にして全ての確認をスキップするかの二択を迫られていました。自動モードはこの中間層を担い、Sonnet 4.6を活用した2層の防御策（入力層のインジェクション検知と出力層のトランスクリプト分類器）によって、ユーザーの意図に反する破壊的行為や機密流出を阻止します。\n\nこのシステムは、ファイル書き込みなどの日常的な操作はパスさせつつ、シェルコマンドや外部通信などのリスクが高い操作のみを詳細に判定します。内部評価では、正当な操作を誤ってブロックする確率を0.4%に抑えつつ、意図しない過剰な行動の83%を阻止できることが示されました。100%完璧ではないものの、安全策のない自動実行に代わる強力なガードレールとして機能します。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "セキュリティ",
+      "Anthropic",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code auto mode: a safer way to skip permissions"
+  }
+}

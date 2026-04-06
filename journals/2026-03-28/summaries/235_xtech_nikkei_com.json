@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:47:10.676159+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sakana AIの新技術「Doc-to-LoRA」：学習なし・1秒未満で文書情報をLLMに反映",
+    "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11603/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Sakana AIが開発した「Doc-to-LoRA」は、特定の文書から追加学習を必要とせず、1秒未満でその内容を反映したLoRAアダプターを即座に生成する画期的な技術です。",
+    "summaryBody": "Sakana AIは、LLMに独自情報を反映させる新手法「Doc-to-LoRA」を発表しました。これまで、企業が独自文書をAIに活用する手段としては、検索ベースのRAG（検索拡張生成）か、計算負荷の高いファインチューニング（LoRA等）が主流でした。RAGは学習不要ですが、長大な文書では推論コストや応答時間が増大し、モデル自体に知識を定着させられない課題があります。一方、従来のLoRAは軽量ですが、文書ごとの学習に数十秒から数分の時間を要していました。\n\n「Doc-to-LoRA」は、文書を入力するだけで、その内容を反映したLoRAアダプターを1秒未満で生成することを可能にします。これにより、事前の重い学習をあらかじめ済ませておくことで、個別の文書に対しては実質的に「学習なし」で即座にモデルの挙動を調整できます。RAGでも従来の追加学習でもない、AI活用における新たな第3の選択肢として注目されます。",
+    "topics": [
+      "Sakana AI",
+      "LLM",
+      "RAG",
+      "LoRA",
+      "Doc-to-LoRA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "文書の内容を学習なしでLLMに反映、Sakana AIの新技術　RAG代替は可能か"
+  }
+}

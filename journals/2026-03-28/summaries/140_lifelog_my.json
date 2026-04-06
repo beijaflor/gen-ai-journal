@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:19:31.437505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAI時代の開発（Vibe Coding）にPythonでもRustでもなくGoが最適なのか",
+    "url": "https://lifelog.my/episode/why-i-vibe-in-go-not-rust-or-python",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIがコードの9割を書く現代において、Goの「退屈な制約」こそがAIの出力を効率的にフィルタリングし、人間の感性をアーキテクチャに集中させる最適なツールであると説く。",
+    "summaryBody": "AIアシスタントを活用して一晩で複雑なブログシステムを構築した経験に基づき、モダンな開発におけるプログラミング言語の選択基準を再定義する論評。著者は、Pythonは実行時までエラーが潜在する「信頼性の低さ」がボトルネックとなり、Rustは借用チェッカーや非同期ランタイムの複雑さが「人間の認知リソースを奪いすぎる」と批判する。対照的に、Goは「5つのレイヤー（コンパイラ、型システム、明示的エラー処理、強制された単純さ、そして人間）」という構造により、AIが生成したコードの構造的ミスを即座に修正し、開発者の「味覚（センス）」を本質的な設計に集中させることができる。単一バイナリによる極めてシンプルなデプロイ体験を含め、Goは言語として最高なのではなく、AI時代の「最良のフィルター」として機能すると結論付けている。",
+    "topics": [
+      "Go",
+      "Vibe Coding",
+      "AI-Assisted Development",
+      "Software Architecture",
+      "Programming Languages"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Why I Vibe in Go, Not Rust or Python"
+  }
+}

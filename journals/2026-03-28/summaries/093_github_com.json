@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T17:59:38.016547+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Lightfeed Extractor: LLMとブラウザ自動化による堅牢なWebデータ抽出ツール",
+    "url": "https://github.com/lightfeed/extractor",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMとPlaywrightを活用し、HTMLやMarkdownからZodスキーマに基づいた構造化データを高精度かつ効率的に抽出するTypeScriptライブラリ。",
+    "summaryBody": "Lightfeed Extractorは、大規模言語モデル（LLM）を用いてWebサイトから構造化データを抽出するためのTypeScriptライブラリです。主な特徴は以下の通りです。\n\n1. **LLM最適化Markdown変換**: HTMLをLLMが理解しやすいMarkdownに変換。メインコンテンツの抽出や、URLの追跡パラメータ削除などのクリーンアップ機能を備えています。\n2. **スキーマ駆動の抽出**: Zodスキーマを使用して抽出データの構造を定義。JSONモードにより正確な出力を得られるほか、不完全なJSONを復元する「JSONリカバリ機能」により、深いネスト構造でも高い堅牢性を実現します。\n3. **広範なモデル対応**: LangChainを介してOpenAI, Gemini, Anthropic, Ollamaなど多様なプロバイダーを利用可能です。\n4. **ブラウザ自動化連携**: Playwrightと直接連携できるほか、同社の`@lightfeed/browser-agent`を併用することで、自然言語コマンドによるブラウザ操作（ログインや検索）後のデータ抽出も自動化できます。\n\n開発者は複雑なDOM解析コードを書く代わりに、抽出したいデータの形をスキーマで定義するだけで、ECサイトの商品情報やブログ記事などの収集パイプラインを構築できます。",
+    "topics": [
+      "Web Scraping",
+      "LLM",
+      "TypeScript",
+      "Data Engineering",
+      "Playwright"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "lightfeed/extractor: Using LLMs and AI browser automation to robustly extract web data"
+  }
+}

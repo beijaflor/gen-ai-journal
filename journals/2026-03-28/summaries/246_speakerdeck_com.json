@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:31:21.483451+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "非情報系研究者へ送る Transformer入門",
+    "url": "https://speakerdeck.com/rishiyama/fei-qing-bao-xi-yan-jiu-zhe-hesong-ru-transformerru-men",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "生物学などの「ウェット」な研究者を対象に、ニューラルネットワークの基礎からTransformerの核心であるアテンション機構、さらに遺伝子データ解析への応用までを平易に解説した入門資料です。",
+    "summaryBody": "この資料は、第2回植物異分野勉強会のために作成されたもので、AIの専門家ではない研究者がTransformerの仕組みを直感的に理解することを目指しています。\n\n主な内容は以下の4つのセクションで構成されています：\n1. **ニューラルネットワークの基礎**: 脳の仕組みを模した数理モデルが、実際には「行列演算」と「非線形関数」の積み重ねであり、誤差を最小化するように行列のパラメータを更新（学習）するプロセスであることを解説します。\n2. **Transformerの概要**: 入力を意味のある出力へと変換する汎用的な枠組み（Encoder/Decoder構造）として定義し、翻訳などの具体例を用いて処理の流れを示しています。\n3. **アテンション機構**: なぜこれが必要なのかを、文脈によって意味が変わる「明るい」という言葉の例（空が明るい vs 生物に明るい）を用いて説明。Query, Key, Valueの概念を直感的に視覚化しています。\n4. **実践と応用**: 映画レビューの感情分析に加え、バイオ系の研究者向けにDNA配列（遺伝子データ）をTransformerで解析し、ウイルスか否かを判別する課題設定とGoogle Colabのハンズオン資料を提供しています。\n\n数理的な厳密さよりも、計算の効率性やデータの関係性を捉える仕組みの理解に重点を置いており、AIをツールとして活用したい他分野の研究者にとって最適な導入となっています。",
+    "topics": [
+      "Transformer",
+      "アテンション機構",
+      "ディープラーニング",
+      "バイオインフォマティクス",
+      "自然言語処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

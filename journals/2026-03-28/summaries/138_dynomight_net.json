@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:30:58.491263+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはコーヒーの冷却を予測できるか？：物理実験とAIの予測精度",
+    "url": "https://dynomight.net/coffee/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）が、コーヒーの冷却という複雑な物理現象を数式でどの程度正確に予測できるかを、実測データと比較検証したユニークな実験レポート。",
+    "summaryBody": "筆者は、特定の条件下でのコーヒーの温度変化を予測する方程式を各種LLM（Claude 4.6 Opus, GPT-5.4, Gemini 3.1 Proなど）に出力させ、自ら計測した実測値と比較する検証実験を行った。物理現象として蒸発、対流、放射などが絡む複雑な課題に対し、LLMは概ね「マグカップへの伝熱」と「空気への放熱」を反映した2段階の指数関数モデルを提示。結果として、LLMの予測は実測値に対して完璧ではないものの、筆者の直感よりはるかに正確であることが判明した。特にClaude 4.6 Opusが高い精度を示したが、推論に要するトークンコストが高額である点も指摘されている。LLMが物理世界の『感覚（Taste）』をどの程度持ち合わせているかを測る興味深い事例である。",
+    "topics": [
+      "LLM",
+      "物理シミュレーション",
+      "熱力学",
+      "ベンチマーク",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "LLMs predict my coffee"
+  }
+}

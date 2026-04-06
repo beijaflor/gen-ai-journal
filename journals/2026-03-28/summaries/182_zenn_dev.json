@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:25:55.346761+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gemini embedding 2 で \"資料単位のナレッジ化\" が容易に！？OCRできない見た目の知識をRAG化する",
+    "url": "https://zenn.dev/bekku/articles/5fcbeae4ec5afb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleのマルチモーダル埋め込みモデル「gemini-embedding-2-preview」を活用し、OCRが困難な資料の「見た目」の情報をそのままベクトル化してRAGに組み込む手法を解説。",
+    "summaryBody": "2026年3月に公開された「gemini-embedding-2-preview」は、テキスト、画像、PDF、動画、音声を同一のベクトル空間にマッピング可能なマルチモーダル埋め込みモデルです。本記事では、従来のOCRによるテキスト抽出に依存したRAGの課題を指摘し、資料のレイアウト、書式、印影といった「視覚的な特徴」を直接検索のキーとして活用する手法を提案しています。銀行の通帳画像を例に、資料そのものを埋め込み、紐づけられた業務ナレッジ（担当者情報や処理フロー）を検索・推論するPythonの実装例を紹介。文字情報が不足している資料でも、見た目の類似性から適切な業務判断を支援する新しいRAGの可能性を示しています。",
+    "topics": [
+      "Gemini",
+      "RAG",
+      "マルチモーダル",
+      "ベクトル検索",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:20:32.502431+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NDLOCR-Lite Web AI: ブラウザ完結型でAI校正機能を備えた日本語OCRツール",
+    "url": "https://github.com/ogwata/ndlocr-lite-web-ai",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "国立国会図書館のNDLOCR-Liteをベースに、ブラウザ完結での高速OCR処理とAIによる高度な誤認識校正を実現したオープンソースツール。",
+    "summaryBody": "「NDLOCR-Lite Web AI」は、国立国会図書館（NDL）が公開しているOCRエンジンをWebブラウザ上で動作するように移植し、さらにAI（Claude、GPT、Gemini等）による校正機能を統合したWebアプリケーションです。最大の特徴は、画像データやOCR結果を外部サーバーに送信せず、すべての処理をユーザーのブラウザ内で完結させるプライバシー保護設計にあります。AI校正機能では、OCR結果と元画像を比較して誤認識を自動修正し、修正箇所をインラインでハイライト表示して個別に適用・却下を選択できます。日本語のほか欧米12言語や数式の認識にも対応しており、画像の傾き・湾曲補正、バッチ処理、縦書き表示切替など、歴史的文書のデジタル化に特化した豊富な機能を備えています。環境構築不要で、最新のONNX Web Runtime技術を活用した実用的な研究・実務支援ツールです。",
+    "topics": [
+      "OCR",
+      "AI校正",
+      "NDLOCR",
+      "ブラウザ完結",
+      "デジタルアーカイブ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - ogwata/ndlocr-lite-web-ai: NDLOCRLite Web: ブラウザ完結型日本語OCRツール（ONNX Web Runtime使用）"
+  }
+}

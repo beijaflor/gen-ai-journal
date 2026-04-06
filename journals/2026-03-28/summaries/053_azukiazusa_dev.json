@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:37:58.858921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cline Kanban で複数のコーディングエージェントを一括管理する",
+    "url": "https://azukiazusa.dev/blog/cline-kanban/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cline Kanbanは、Git worktreeを活用してClaude CodeやClineなどの複数エージェントによる並列開発をカンバン形式で視覚的に管理し、人間の認知的負荷を軽減するツールです。",
+    "summaryBody": "この記事では、AIコーディングエージェントの並列実行に伴う「人間のボトルネック化」と「認知的負荷の増大」を解決するツール『Cline Kanban』について解説しています。Cline Kanbanは、複数のエージェント（Cline, Claude Code, Codex等）をカンバン形式のビューで一括管理でき、どのエージェントが実行中か、あるいはユーザーの承認待ち（ブロック状態）かを一目で把握可能です。\n\n主な機能と特徴は以下の通りです：\n- **並列実行の可視化**: 各タスクはGit worktree上で独立したブランチとして実行され、進行状況がリアルタイムでカードに反映されます。\n- **依存関係の管理**: ⌘キーを使用したドラッグ&ドロップや「Kanban Agent」への指示を通じて、タスク間の実行順序を制御できます。\n- **レビューとフィードバック**: TUIによる会話履歴の確認や、コード差分への直接コメント、コミット・PR作成のアクションがブラウザ上で行えます。\n- **自律モードの設定**: 必要に応じてユーザー承認をバイパスする設定も可能ですが、セキュリティを考慮した制御も提供されています。\n\nエージェントによる開発がキャズムを超えた現代において、人間が「正気を保ちながら」数十のエージェントを指揮するための実践的なソリューションとして紹介されています。",
+    "topics": [
+      "Cline",
+      "Claude Code",
+      "AI Agent",
+      "Kanban",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-05T14:16:44.356148+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / CursorのHooksで実装した AIエージェントの3層プロンプトインジェクション対策",
+    "url": "https://creators.bengo4.com/entry/2026/03/24/080000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやCursorのHooks機能を活用し、AIエージェントの操作を「実行境界」で制御する3層構造のプロンプトインジェクション対策の実装と設計思想を詳説。",
+    "summaryBody": "AIエージェントが外部データを参照して自動操作を行う際のリスクである「プロンプトインジェクション」に対し、弁護士ドットコムのCREチームが開発した実用的な防御手法が解説されています。本手法はLLMへの指示（プロンプト）に依存せず、Claude CodeやCursorのHooks機能を利用して外部実行境界で制御するのが特徴です。\n\n対策は以下の3層で構成されています：\n1. **第1層（UserPromptSubmit）**: チャット入力時の既知の攻撃パターン（Jailbreak等）の検知。\n2. **第2層（PreToolUse）**: 対策の主軸。コマンド実行やツール使用の直前に割り込み、危険なコマンド（rm -rf, 認証情報アクセス等）をブロックする。\n3. **第3層（PostToolUse）**: 外部コンテンツ取得後のスキャン。異常を検知した場合はフラグを立て、次回の第2層実行時に確実に停止させる。\n\n実装面では、Pythonスクリプトによる自動化、正規表現によるパターンマッチング、fail-closed（異常時の遮断）原則、および導入リスクを抑えるための段階的なモード（audit/warn/block）の切り替えといった、実務的な運用設計が網羅されています。",
+    "topics": [
+      "プロンプトインジェクション",
+      "AIエージェント",
+      "Claude Code",
+      "Cursor",
+      "LLMセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:33:50.577504+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLI でプレゼンテーションをする技術",
+    "url": "https://zenn.dev/microsoft/articles/github-copilot-cli-presentation",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIのカスタムスキル機能と指示ファイルを組み合わせ、ターミナル上でアスキーアートのスライドを表示しインタラクティブに進行するプレゼン手法の解説。",
+    "summaryBody": "この記事では、GitHub Copilot CLIをプレゼンテーションツールとして活用するユニークな技術を紹介しています。著者は「GitHub Copilot Dev Days Tokyo 2026」にて、PowerPointを一切使わずターミナルのみで登壇デモを行いました。その仕組みは、`.github/copilot-instructions.md`にスライドのコンテンツを記述し、`.github/skills/presentation/SKILL.md`にスライド送りのロジックを定義するというものです。特に、`ask_user`ツールを使って「次へ」「前へ」といったナビゲーションを実装しつつ、スライド内容を通常の回答として出力することで、LLM特有のストリーミング表示（テキストが流れる演出）をプレゼンの視覚効果として利用している点が独創的です。動作にはClaude Sonnet/Opus 4.6などのモデルが推奨されており、GitHub Copilot CLIの柔軟なカスタマイズ性を示す好例となっています。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "プレゼンテーション術",
+      "アスキーアート",
+      "カスタムスキル",
+      "ターミナル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

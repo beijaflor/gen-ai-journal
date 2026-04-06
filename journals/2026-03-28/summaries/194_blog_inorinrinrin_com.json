@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:03:38.262502+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIバグ発見システム「Sashiko」をJS/TS用にカスタマイズして使ってみる",
+    "url": "https://blog.inorinrinrin.com/entry/2026/03/21/212624",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Linuxカーネル向けAIレビューシステム「Sashiko」の仕組みを詳細に解説し、JavaScript/TypeScriptプロジェクト向けにカスタマイズして既存ツール以上の検知精度を検証する。",
+    "summaryBody": "Googleのエンジニアが開発したAIコードレビューシステム「Sashiko」の内部構造と、JS/TS向けへの移植方法を解説した記事です。Sashikoは単にLLMにコードを投げるのではなく、Rust製のパイプラインを用いて「ツールの自律実行による文脈収集」「9段階の専門家プロトコルによる多角的な分析」「専用ステージによる厳格な偽陽性排除」を行う点が特徴です。著者は、Valibotのプルリクエストを対象に、プロンプトをJS/TS向けにカスタマイズした『Sashiko JS』を用いて検証を行いました。その結果、Copilot ReviewやCodeRabbitが見逃した正規表現の不備やDoSの脆弱性、型安全性の欠如など、4つの重要な問題を検出できることを実証しています。",
+    "topics": [
+      "Sashiko",
+      "LLM",
+      "Code Review",
+      "TypeScript",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

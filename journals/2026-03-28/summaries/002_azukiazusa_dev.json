@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:26:50.974291+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Figma のキャンバスを AI エージェントから操作してデザインしよう",
+    "url": "https://azukiazusa.dev/blog/use-figma-mcp-tool/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Figma の新機能 `use_figma` ツールと MCP サーバーを活用し、AI エージェントが JavaScript 経由で直接デザインの構造やコンポーネントを操作・生成する方法を詳しく解説しています。",
+    "summaryBody": "この記事では、2026年3月にリリースされた Figma MCP サーバーの `use_figma` ツールに焦点を当てています。このツールは Figma Plugin API を通じてキャンバス上で JavaScript を直接実行できるため、従来の見た目の再現に留まっていた AI 生成とは異なり、コンポーネント、バリアント、Auto Layout などの複雑な構造を動的に操作することが可能です。記事内では Claude Code を使用し、既存のコードベースからデザインシステムを自動構築する `figma-generate-library` スキルと、定義されたコンポーネントを用いて UI を作成する `figma-generate-design` スキルの具体的なワークフローを実演しています。AI による自動化の強力さを示す一方で、スクリーンショットによる検証や人間による適切なフィードバックの必要性など、実務的な注意点についても深く掘り下げられています。",
+    "topics": [
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "AI Agent",
+      "デザインシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

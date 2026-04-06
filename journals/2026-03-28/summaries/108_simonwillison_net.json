@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:16:46.699231+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントと共にGitを活用する：エージェント時代のエンジニアリングパターン",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コーディングエージェントはGit操作に精通しており、履歴の要約から複雑なコンフリクト解消、履歴の洗練まで、人間が苦労していた高度なGit機能を対話形式で使いこなすための手法を解説している。",
+    "summaryBody": "Simon Willison氏による「Agentic Engineering Patterns」シリーズの一章。コーディングエージェント（AI）にとってGitは単なる記録ツールではなく、文脈理解と作業制御のための鍵となります。主な要点は以下の通りです。\n\n1. **コンテキストの即時ロード**: 「今日の変更をレビューして」と指示するだけで、エージェントはgit logから最新の設計意図を把握し、スムーズに作業を開始できます。\n2. **「Gitの混乱」からの解放**: 複雑なマージコンフリクトや、ミスしたリベースの修復など、人間が手動で行うと困難な作業をエージェントに任せることができます。\n3. **高度な機能の民主化**: `git bisect`によるバグ混入箇所の特定や、特定モジュールを履歴ごと別リポジトリへ切り出すといった、学習コストの高い操作がプロンプト一つで実行可能になります。\n4. **履歴を「物語」として整える**: コミットメッセージの推敲や履歴の統合をエージェントに任せることで、単なる記録ではなく、将来の人間が読みやすい「洗練された開発ストーリー」としての履歴構築が容易になります。\n\nエージェントの登場により、Gitは「覚えるのが大変なツール」から「AIと協力してプロジェクトを管理するための強力な武器」へと進化しました。",
+    "topics": [
+      "Git",
+      "コーディングエージェント",
+      "LLM",
+      "ソフトウェアエンジニアリング",
+      "AIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Using Git with coding agents - Agentic Engineering Patterns"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:31:50.297729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの真価は運用設計にある",
+    "url": "https://note.com/tasty_dunlin998/n/na2d6485aed1b",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Codeを単なる便利ツールの集合体ではなく、仕事の再現性と継続性を担保する「運用設計の実行環境」として捉え直すための4つの階層モデルを提案する解説記事。",
+    "summaryBody": "この記事は、AnthropicのCLIツール「Claude Code」の本質を、プロンプトの工夫（会話の賢さ）ではなく、仕事の運用フローを構築・維持する力にあると定義しています。著者はClaude Codeの機能を「操作層（戻れる状態）」「再現層（同じように動く状態）」「接続層（外部との連携）」「並列運用層（分解とスケール）」の4段階で整理し、単なる便利コマンドの羅列を超えた活用法を解説しています。\n\n具体的には、`/btw`や`/rewind`による作業状態の管理、`CLAUDE.md`や`Hooks`、`Skills`を用いたワークフローの固定化、そして`-p`フラグや`MCP`、`/batch`による自動化パイプラインへの統合が重要であると説いています。AIを「一人の作業者」から「仕事を回す基盤」へと変えるための、実務に即した具体的な導入順序と診断プロンプトも提供されており、AIエージェントを本気で運用したい開発者にとって極めて示唆に富む内容です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "運用設計",
+      "プロンプトエンジニアリング",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

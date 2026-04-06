@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T16:30:23.427902+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントが生成したMarkdownを自動修正・検証する手法",
+    "url": "https://anond.hatelabo.jp/20260326105704",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMが生成するMarkdownの強調表示の崩れやMermaidの構文エラーを、自作のCLIツールとClaude Code等のエージェントを組み合わせて自動修正する実用的なワークフロー。",
+    "summaryBody": "LLMが生成するMarkdownにおいて、日本語環境特有の強調表示（**）の不具合や、不正なMermaid構文が生成される問題は、最新モデルでも依然として発生する。筆者はこの課題を解決するため、Markdown内のMermaid図を検証する「mdmermaidchecker」や、強調表示の不備を指摘するCLIツールを開発。これらをClaude Codeの指示ファイル（CLAUDE.md）に組み込み、エージェント自身にチェックと修正を実行させることで、出力の妥当性を担保する手法を提案している。既存の重厚なLinterに頼らず、特定の課題を解決する最小限のツールを「車輪の再開発」を恐れず自作し、エージェントの外部命令として活用するアプローチの有効性を説いている。",
+    "topics": [
+      "Markdown",
+      "Claude Code",
+      "Mermaid",
+      "LLM",
+      "コーディングエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

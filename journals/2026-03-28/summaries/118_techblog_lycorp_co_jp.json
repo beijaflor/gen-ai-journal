@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:16:59.893785+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "3つの手法でToken消費量40%削減 — ADKで実践するContext Engineering",
+    "url": "https://techblog.lycorp.co.jp/ja/20260323b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LINEヤフーがADKを用いたContext Engineeringを実践し、Tool Filterやエージェント分割などの手法でトークン消費量を40%削減しながらAIエージェントの精度を向上させる方法を解説している。",
+    "summaryBody": "LINEヤフーの社内コミュニティで共有された、AIエージェントの運用コスト削減と精度向上を両立させる「Context Engineering」の実践ガイドです。記事では、トークンを「有限なリソース」と定義し、LLMに渡す情報を戦略的に選別・管理する重要性を説いています。\n\n具体的には、GoogleのAgent Development Kit (ADK) を使用し、以下の3つの手法を組み合わせています：\n1. **Tool Filter**: MCPツールセットから必要なツールのみを抽出し、ツール定義によるトークン浪費を防ぐ。\n2. **AgentTool**: 複雑なタスクを子エージェントに委譲（コンテキストの階層化）し、親エージェントの履歴肥大化（Context Rot）を抑制する。\n3. **Structuring Data**: Pydanticスキーマを用いて入出力を構造化し、不要な推論テキストを削減する。\n\nJiraの週次レポート生成エージェントを用いた実証実験では、コンテキスト窓の使用率を77.7%削減、全体のトークン消費量を40.7%削減することに成功しました。この原則はClaude CodeやOpenAI Codexなど他のCLIツールにも共通して適用可能であり、組織規模での導入による大きなコスト削減効果を提示しています。",
+    "topics": [
+      "Context Engineering",
+      "LLM",
+      "AI Agent",
+      "ADK",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

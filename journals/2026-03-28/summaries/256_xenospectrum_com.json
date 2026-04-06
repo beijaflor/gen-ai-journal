@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-31T00:40:36.418362+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「あなたは専門家です」プロンプトの罠：役割付与がAIの知識精度を低下させる研究結果",
+    "url": "https://xenospectrum.com/ai-expert-persona-prompt-accuracy-drop/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIに「専門家」の役割を与えると、流暢な文体と引き換えに事実の正確性や計算精度が低下するという、南カリフォルニア大学の研究結果を解説。",
+    "summaryBody": "南カリフォルニア大学の研究チームは、Llama 3.1やQwen 2.5等を用いた検証により、LLMに特定の専門家ペルソナを与えると、MMLUなどの知識ベンチマークの正答率が有意に低下することを明らかにしました。これは、モデルの計算資源が「事実の抽出」よりも「役割の演技（指示実行）」に優先的に割かれるためです。特に詳細な設定を与えるほど精度低下が顕著になります。一方で、ペルソナ付与は安全性（脱獄防止）や文体調整には極めて有効であることも判明しました。このトレードオフを解消するため、研究チームは質問の意図に応じてペルソナの有効化を動的に制御するシステム「PRISM」を提案しています。事実確認が必要なタスクでは、余計な設定をせずシンプルに問いかけることが最適であるという、プロンプトエンジニアリングの常識を覆す内容です。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "LLM",
+      "ペルソナ",
+      "AI精度",
+      "PRISM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:27:16.102344+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unsloth Dynamic Quantization (-UD-) の概要と仕組み",
+    "url": "https://zenn.dev/kun432/scraps/30d5bbfc481126",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GGUF形式の量子化モデル名に見られる「-UD-」は、Unsloth Dynamic量子化を指し、レイヤーごとに異なるビット数を割り当てることで軽量化と性能維持を両立する技術です。",
+    "summaryBody": "最近のLLM量子化モデル、特にGGUF形式のファイル名に付与されている「-UD-」は、「Unsloth Dynamic（動的量子化）」の略称です。これはUnslothコミュニティが開発した手法で、従来の量子化（q4_K_M等）がモデルの全レイヤーを一律のビット数で処理していたのに対し、各レイヤーやパーツの重要度に応じて動的にビット精度を変化させます。具体的には、モデルの精度に大きく寄与する重要なレイヤーには高いビット数（4bitや6bit）を割り当て、それ以外を低精度（1.58bit等）で圧縮することで、モデルサイズを大幅に削減（最大80%程度）しながら性能劣化を最小限に抑えることが可能です。DeepSeek-R1などの大規模モデルを効率的に動作させるための重要な技術的選択肢となっています。",
+    "topics": [
+      "LLM",
+      "量子化",
+      "Unsloth",
+      "GGUF",
+      "動的量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

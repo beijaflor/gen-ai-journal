@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:55:07.379625+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studioでエージェントと外部API呼び出しを組み合わせてみる",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202603/23_0933.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Copilot StudioのREST APIツールを活用し、BacklogのWikiから取得したガイドラインに基づいて文章レビューを行うエージェントの構築手順を解説します。",
+    "summaryBody": "Microsoft Copilot Studioにおける「エージェント」と「ツール（REST API）」を連携させ、外部サービスであるBacklogから情報を取得し、それを元に生成AIが業務レビューを行う仕組みの構築方法を解説しています。具体的な手順として、OpenAPI定義を用いたカスタムコネクタの作成、APIキーによる認証設定、エージェントへのツール組み込み、そしてAIが適切にツールを選択するための『説明』フィールドの書き方のコツを紹介。また、検証時点でOpenAPI 2.0（Swagger）が推奨される点や、OperationIDの重要性といった実装上のハマりどころについても技術的な知見が共有されています。",
+    "topics": [
+      "Copilot Studio",
+      "Microsoft 365",
+      "Backlog API",
+      "REST API",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 88,
+      "overall": 85
+    },
+    "originalTitle": "Copilot Studioでエージェントと外部API呼び出しを組み合わせてみる"
+  }
+}

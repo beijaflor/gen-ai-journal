@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T19:33:26.633810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "高級車整備工場向けAI受付システムの構築 - パート1",
+    "url": "https://www.itsthatlady.dev/blog/building-an-ai-receptionist-for-my-brother/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "週に数百件もの着信を逃していた整備工場の損失を防ぐため、RAGを活用した正確な回答と音声AIを組み合わせた、実践的なAI電話受付「Axle」の構築事例。",
+    "summaryBody": "この記事では、高級車専門の整備工場向けに開発されたAI電話受付システム「Axle」の構築プロセスが解説されています。主な内容は以下の3ステップです。\n\n1. **RAGパイプライン（脳）の構築**: ハルシネーション（嘘の回答）を防ぐため、MongoDB Atlas Vector SearchとVoyage AI、Claude 3.5 Sonnetを組み合わせ、整備工場の価格表やポリシーに基づいた正確な回答を実現しています。\n2. **電話回線との接続**: 音声プラットフォームのVapiを利用し、FastAPIで作られたバックエンドとNgrok経由で連携。リアルタイムでの音声対話とツール呼び出しを可能にしました。\n3. **音声のチューニング**: テキストベースの回答を「話すための言葉」に変換。ElevenLabsの自然な音声（Christopher）を選択し、価格の読み上げ方や、不明点がある場合に連絡先を尋ねるエスカレーションフローを設計しました。\n\n単なるLLMの利用にとどまらず、実ビジネスにおけるデータの正確性と音声ユーザー体験の重要性が強調されています。",
+    "topics": [
+      "AI Agent",
+      "RAG",
+      "MongoDB Atlas",
+      "Vapi",
+      "Claude 3.5 Sonnet"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "How I Built an AI Receptionist for a Luxury Mechanic Shop - Part 1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T18:04:06.795600+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ATLAS: 推論時計算の最適化により14BモデルでGPT-5級のコーディング性能を実現するローカルLLMフレームワーク",
+    "url": "https://github.com/itigges22/ATLAS",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "凍結された小型モデル（14B）を、計画探索、幾何学的スコアリング、自己検証型コード修正という推論時インフラで包むことで、単一GPUでフロンティアモデルに匹敵する性能を引き出すオープンソースプロジェクト。",
+    "summaryBody": "ATLAS (Adaptive Test-time Learning and Autonomous Specialization) は、追加学習なしに小型モデルの性能を最大化するフレームワークです。最新のV3アップデートでは、Qwen3-14Bモデルを使用し、LiveCodeBenchで74.6%という高いpass@1-v(k=3)スコアを達成しました。これはClaude 4 Sonnetを上回り、GPT-5（推定値）に迫る数値です。\n\n主な技術的構成要素は以下の3フェーズです：\n1. **生成フェーズ**: PlanSearchによる多様な計画立案と、Budget Forcingによる思考トークンの制御。\n2. **スコアリング**: 5120次元の自己埋め込みベクトルを用いたGeometric Lensにより、複数の候補から最良の解を選択。\n3. **修復フェーズ**: 実行に失敗したコードに対し、モデル自身がテストケースを生成してPR-CoT（複数視点CoT）で反復的に自己修正を行います。\n\n特筆すべきは、これら全てのプロセスがRTX 5060 Ti（16GB）のような一般消費者向けGPU1枚で、完全ローカルかつプライベートに完結する点です。レイテンシを計算コストに変換することで、API経由の巨大モデルに頼らずに高度な推論を可能にしています。",
+    "topics": [
+      "Test-time Compute",
+      "Local LLM",
+      "LiveCodeBench",
+      "Self-reflective Agents",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - itigges22/ATLAS: Adaptive Test-time Learning and Autonomous Specialization"
+  }
+}

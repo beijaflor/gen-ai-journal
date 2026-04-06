@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-04T01:24:38.416782+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに狙ったコードを書かせるためにLinterを自作してみたら体験が良かった",
+    "url": "https://zenn.dev/arika/articles/20260321-dotnet-linter-for-llms",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMに特定のコーディング規則を遵守させるため、カスタムLinter（Analyzer）を自作してビルドエラーを発生させ、自動的に修正を促す手法の有用性を紹介しています。",
+    "summaryBody": "C#のSource Generator開発において、LLMがパフォーマンスの低い汎用的なコードを生成しやすいという課題に対し、独自のRoslyn Analyzer（Linter）を導入して解決を図る実践的な記録です。LLMは「ビルドを成功させること」を最優先する傾向があるため、望ましくない実装パターンを意図的にビルドエラーにすることで、人間が細かく指示を出さずともLLM自身に正しい実装を選ばせる仕組みを構築しています。記事内では、エラーメッセージに対処法を明示する工夫や、連鎖的なエラーを防ぐための設計、READMEに修正用プロンプトを用意するなどの具体的なテクニックが共有されており、AI時代における開発フローの効率化に向けた新しいアプローチを提案しています。",
+    "topics": [
+      "LLM",
+      "C#",
+      "Source Generator",
+      "Linter",
+      "Roslyn Analyzer"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-03-30T23:37:49.325988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS CodeチームがいかにAIエージェントを活用して開発サイクルを月次から週次へ加速させたか",
+    "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "VS Code開発チームがAIエージェントを全面的に導入することで、10年間続いた月次リリースを週次に短縮し、トリアージからプロトタイピング、品質管理までを自動化した実例を紹介。",
+    "summaryBody": "Visual Studio Codeの開発チームは、AIエージェントを活用することで、10年間維持してきた月次リリースサイクルを週次へと劇的に進化させました。この変革の核心は、単なるコード生成にとどまらず、開発ワークフロー全体の「並行化」と「自動化」にあります。\n\n主な取り組みは以下の4点です：\n1. **並行作業の習慣化**: 開発者は会議の前に複数のエージェントセッション（バグ修正やプロトタイプ作成）を開始し、会議中にバックグラウンドで作業を進行させます。\n2. **間接業務の自動化**: GitHub Actions上でCopilot CLIやSDKを活用し、Issueの自動トリアージ（重複検知・ラベル付け）、コミット履歴からのリリースノート生成などを自動化しました。これにより、開発速度向上に伴う管理コストの増大を抑制しています。\n3. **プロトタイプによる意思決定**: PMや非エンジニアもエージェントを利用してPR（プルリクエスト）を作成し、仕様書の代わりに動くプロトタイプで議論を行う文化が定着しました。\n4. **品質担保の仕組み**: Playwright MCPサーバーを用いたスクリーンショットベースのUIテスト自動化や、Copilotによる事前のコードレビューを導入。AIによる速度向上がデグレードを招かないよう、強固なテストハーネスを構築しています。\n\n最後に、エージェントが効率的に貢献できる「エージェント対応（Agent-ready）なコードベース」への評価と投資が、今後のソフトウェア開発の鍵になると述べています。",
+    "topics": [
+      "VS Code",
+      "AIエージェント",
+      "GitHub Copilot",
+      "ソフトウェア開発プロセス",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "How VS Code Builds with AI"
+  }
+}
