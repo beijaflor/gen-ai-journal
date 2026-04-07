@@ -234,7 +234,6 @@
 - [x] 021. https://qiita.com/yakumo_09/items/ee21d5fac4f99893127c
 - [x] 020. https://qiita.com/semba_yui/items/c2b47d27428c2008933b
 - [x] 019. https://qiita.com/y-okayama-tb/items/93fda86f55766e47cbcf
-- [x] 018. https://simonwillison.net/2026/Mar/29/pretext/
 - [x] 017. https://www.proofofconcept.pub/p/ai-tokens-are-mana
 - [x] 016. https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/
 - [x] 015. https://github.com/rbren/personal-ai-devbox
