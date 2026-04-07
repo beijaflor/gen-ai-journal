@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T14:42:49.315846+00:00",
+    "generatedAt": "2026-04-07T00:18:42.772032+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "記事取得エラー: 429 Too Many Requests",
+    "title": "AIの、AIによる、AIのためのペネトレーションテスト",
     "url": "https://devblog.lac.co.jp/entry/20260325",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "指定されたURLへのアクセスが、サーバー側からの制限（429 Too Many Requests）により拒否されたため、内容を取得できませんでした。",
-    "summaryBody": "LAC社の開発ブログ（devblog.lac.co.jp）から記事を取得しようとした際、HTTPステータスコード429（Too Many Requests）が返されました。このエラーは、サーバーへのアクセス頻度が制限を超えている場合に発生します。リクエストされたURLに含まれる日付が2026年3月25日と未来であることも、正常にアクセスできない要因の一つである可能性があります。現時点では記事の内容を解析できないため、時間をおいて再試行するか、ブラウザから直接URLを確認してください。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSのAIエージェント型セキュリティサービス「AWS Security Agent」の実用性を、脆弱性診断用アプリとAI生成アプリの両面から検証・評価している。",
+    "summaryBody": "この記事は、AWSの新サービス「**AWS Security Agent**」の自動ペネトレーションテスト機能を、セキュリティエンジニアが実機検証した記録です。検証では、意図的に脆弱性を持たせた**DVWA**をターゲットとし、**Route 53**でのドメイン紐付けから**VPC**設定、実際のスキャン実行までの詳細な手順が解説されています。\n\n主な知見として、**AWS Security Agent**は単なるスキャンを超え、設計ドキュメントやコードを理解した上で攻撃シナリオを生成できる点が挙げられます。**DVWA**の検証ではコマンドインジェクション等を正確に検出し、セキュリティレベルが高い設定でも「レベルを下げて再現する」というAI特有の合理的な（あるいはユニークな）提案を行う挙動が確認されました。また、**Claude**で作成した認証機能の甘いアプリに対しても、ハードコードされた認証情報の指摘など、的確なリスク報告が可能であることが示されています。\n\n自動化による工数削減や学習用ツールとしての高いポテンシャルを評価しつつも、実務における完全な代替にはまだ課題があるとする現実的な視点を提供しています。AWS環境で迅速なセキュリティチェックを導入したい開発者や、AIエージェントによる業務自動化の最前線を知りたいエンジニアに最適です。",
     "topics": [
-      "HTTP 429",
-      "Access Error",
-      "Rate Limit",
-      "LAC Dev Blog"
+      "AWS Security Agent",
+      "AIエージェント",
+      "ペネトレーションテスト",
+      "脆弱性診断",
+      "AWS"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": null
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
   }
 }

@@ -1,31 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T14:41:55.099336+00:00",
+    "generatedAt": "2026-04-07T00:21:07.691230+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "記事取得エラー（429 Too Many Requests）",
+    "title": "LLMアプリケーションを改善したければLangfuseを使ってみてほしい～トレース確認からプロンプトの評価までの流れ",
     "url": "https://techblog.technology-doctor.com/entry/2026/04/02/130323",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "指定された技術ブログ記事の取得を試みましたが、サーバー側の負荷制限により本文データが取得できませんでした。",
-    "summaryBody": "対象のURL（https://techblog.technology-doctor.com/entry/2026/04/02/130323）へのアクセス時に HTTP 429 (Too Many Requests) エラーが発生しました。これは対象サイトのサーバーが、短時間での過度なアクセスを検知し一時的に拒絶したことを示しています。そのため、元記事の具体的な内容（技術トピックや詳細解説）を抽出・要約することは現時点では不可能です。URLに含まれる日付が2026年であることから、予約投稿やテスト用記事へのアクセス、あるいはシステム上の理由による制限と考えられます。",
+    "contentType": "🛠️ Guide & Tutorial (ガイド・チュートリアル)",
+    "oneSentenceSummary": "LLM開発における出力原因の特定やプロンプト改善の影響把握という課題に対し、Langfuseを用いたトレース・プロンプト管理・評価の統合フローを解説する。",
+    "summaryBody": "LLMアプリケーションの開発と運用を効率化するためのプラットフォーム **Langfuse** の活用方法を、ヘルスケアアプリの実例を交えて解説したガイドです。\n\n1. **トレース機能（Tracing）**: 多段階のLLM呼び出しやツール利用を階層的に記録し、Web UI上で入出力、レイテンシ、コスト、トークン数を可視化します。これにより「回答がおかしい」際の原因特定が容易になります。\n2. **プロンプト管理（Prompt Management）**: プロンプトをコードから分離し、**Langfuse** 上でバージョン管理します。production/stagingといったラベルを用いることで、コードのデプロイなしにプロンプトの切り替えやロールバックを可能にします。\n3. **評価サイクル（Datasets & Experiments）**: 実際のトレースや手動入力からデータセットを構築し、UI上で新旧プロンプトの出力を並列比較（Prompt Experiments）することで、品質改善のサイクルを高速化します。\n\nLLMの挙動把握に苦労しているエンジニアや、非エンジニアを含めたプロンプト改善フローを構築したいチームにとって、実用的な導入指針となります。",
     "topics": [
-      "エラー",
-      "HTTP 429",
-      "アクセス制限"
+      "Langfuse",
+      "LLM Observability",
+      "Prompt Engineering",
+      "Pydantic AI",
+      "Python SDK"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": "Error fetching URL: 429 Client Error"
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
   }
 }
