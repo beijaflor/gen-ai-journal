@@ -157,7 +157,6 @@
 - [x] 099. https://zenn.dev/berry_blog/articles/8d1b2c9216b4e9
 - [x] 098. https://zenn.dev/fusic/articles/ae90127245999a
 - [x] 136. https://zenn.dev/ubie_dev/articles/ai-sec-alert-ops
-- [x] 096. https://qiita.com/260329-ai-ojisan/items/1eea6c6546537126f6d7
 - [x] 095. https://qiita.com/getty104/items/6a0c87ba3eeba999e673
 - [x] 094. https://qiita.com/ssc-yshikeda/items/d946d6576f8de60fa81f
 - [x] 093. https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
