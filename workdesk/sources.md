@@ -162,7 +162,6 @@
 - [x] 094. https://qiita.com/ssc-yshikeda/items/d946d6576f8de60fa81f
 - [x] 093. https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9
 - [x] 092. https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c
-- [x] 091. https://qiita.com/ssc-yshikeda/items/58bd7ec792eb1b0ded52
 - [x] 090. https://qiita.com/nogataka/items/6685c6f2ca20a2ac887f
 - [x] 089. https://qiita.com/nogataka/items/8f6c6899a3474a736e87
 - [x] 088. https://qiita.com/k_izutani/items/3501b63f345f79246e4c
