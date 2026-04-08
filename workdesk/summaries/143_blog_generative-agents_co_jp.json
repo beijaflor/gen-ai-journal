@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T07:48:57.212452+00:00",
+    "generatedAt": "2026-04-08T15:16:54.814597+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Agent-Harness: LLMエージェントの評価を標準化・効率化するフレームワークの紹介",
+    "title": "エージェントハーネスという言葉はどこから生まれたのか？",
     "url": "https://blog.generative-agents.co.jp/entry/agent-harness",
     "language": "ja",
-    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "LLMエージェントの評価プロセスを標準化し、開発者が容易にベンチマークを実行・拡張できるように設計されたオープンソースフレームワーク「Agent-Harness」の解説。",
-    "summaryBody": "### 概要\\n株式会社Generative Agentsが開発した「Agent-Harness」は、LLMエージェントの評価を効率化するためのオープンソースフレームワークです。\\n### 特徴\\n1. **評価の標準化**: GAIAやWebArenaといった多様なベンチマークを統一的なインターフェースで実行可能です。\\n2. **容易な拡張性**: 開発者は自身で作成したカスタムエージェントや独自のツール、評価指標を簡単に組み込むことができます。\\n3. **開発効率の向上**: 評価のためのインフラ構築にかかる時間を削減し、エージェントのロジック改善に集中できる環境を提供します。\\n### 結論\\nAgent-Harnessは、複雑化するLLMエージェント開発において、客観的かつ再現性の高い評価を実現するための重要な基盤となります。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント開発の核心概念である「エージェントハーネス」の語源と定義の変遷を、2021年の評価ライブラリから最新のフレームワークまで多角的な文献調査によって明らかにする。",
+    "summaryBody": "AIエージェント周りで急速に普及した「エージェントハーネス」という用語の起源と変遷を詳細に調査した論考です。その起源は2021年の**Language Model Evaluation Harness (lm-eval)**に遡り、馬具のハーネスが馬と馬車を繋ぐように「LLM単体では不可能な評価や操作を可能にするための外部接続装置」というニュアンスから発展した経緯を解説しています。\n\n記事では、**OpenHands**（旧OpenDevin）や**Anthropic**のエンジニアリングブログ、**LangChain**による「モデルでなければ、それはハーネスである」という定義など、2024年から2026年にかけての主要な文献を横断的に分析。ハーネスを「LLMの外側にあり、推論ループを包み込んでツール実行や状態管理を担うランタイムオーケストレーション層」と定義し、モデルの進化（Opus 4.5から4.6への進化など）に伴ってハーネス側の仮説（機能）が不要になる「動的な関係性」についても言及しています。\n\nAIエージェントのアーキテクチャ設計に携わるエンジニアが、単なるLLMの呼び出しを超えた「ハーネスエンジニアリング」の本質を理解し、再利用可能な実行基盤を構築するための設計指針として非常に有用です。",
     "topics": [
-      "LLMエージェント",
-      "AI評価",
-      "ベンチマーク",
-      "Agent-Harness",
-      "オープンソース"
+      "AIエージェント",
+      "エージェントハーネス",
+      "LLMオーケストレーション",
+      "ソフトウェアアーキテクチャ",
+      "LangChain"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 4,
-      "practical": 5,
-      "antiHype": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
       "mainJournal": 85,
-      "annexPotential": 95,
-      "overall": 90
-    },
-    "originalTitle": null
+      "annexPotential": 70,
+      "overall": 82
+    }
   }
 }
