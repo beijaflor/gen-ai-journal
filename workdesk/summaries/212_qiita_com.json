@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T11:53:14.892406+00:00",
+    "generatedAt": "2026-04-09T14:48:52.723733+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "LLM推論エンジンの速度比較 (Llama-cpp-python, Transformers, vLLM)",
+    "title": "Claude Codeで\"AIスクラムチーム\"を構築し、実際にスプリントを実行してみた",
     "url": "https://qiita.com/nogataka/items/33f192f593fef964e100",
     "language": "ja",
-    "contentType": "🔬 Research & Analysis (研究・分析)",
-    "oneSentenceSummary": "Llama-cpp-python、Transformers、vLLMといった主要なLLM推論エンジンのスループットとレイテンシを実測値に基づき比較検証した技術解説。",
-    "summaryBody": "本記事は、大規模言語モデル（LLM）の推論実行におけるパフォーマンス最適化を目的としたベンチマーク記事です。検証では、広く使われている「Transformers」、軽量な実装が可能な「llama-cpp-python」、そして高スループットを誇る「vLLM」の3つのライブラリを対象としています。同一のGPU環境（NVIDIA A100等）とモデル（Llama-2）を用い、単一リクエストのレイテンシだけでなく、同時リクエスト時のスループット性能を詳細に計測。結果として、特に多重リクエスト環境におけるvLLMのPagedAttention技術による圧倒的な処理効率の高さや、llama-cpp-pythonの量子化によるリソース削減効果などが定量的に示されており、用途に応じたエンジン選定の指針を提供しています。",
+    "contentType": "🛠️ Tutorial & Case Study (チュートリアル・事例)",
+    "oneSentenceSummary": "Claude Codeの拡張機能を駆使し、8体のAIエージェントによるスクラム開発チームを構築してGitHub Issuesと連携した完全自動の実装フローを実現する方法を解説する。",
+    "summaryBody": "**Claude Code**の「エージェント」「スキル」「Hook」機能を組み合わせ、スクラム開発プロセスを自動化するテンプレート「**AI Sprint Team**」の実践ガイド。GitHub Issuesをバックログ管理の「唯一の正」として活用し、プランニングからタスク分解、設計、実装、レビュー、テスト作成、PR生成までの全工程を8体の特化型AIエージェント（PO、プランナー、Dev、Reviewer等）が自律的に遂行するワークフローを紹介している。また、`block-dangerous.sh`などのHookにより、危険なコマンド実行や`main`ブランチへの直接プッシュを防ぐ安全ガードの仕組みも実装されており、個人開発における品質担保と効率化を両立する実践的なアプローチを提示している。",
     "topics": [
-      "LLM",
-      "vLLM",
-      "Benchmark",
-      "Transformers",
-      "llama-cpp-python"
+      "Claude Code",
+      "AIエージェント",
+      "スクラム開発",
+      "GitHub Issues",
+      "自動化ワークフロー"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 3,
+      "uniqueness": 5,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 70,
+      "mainJournal": 92,
+      "annexPotential": 75,
       "overall": 88
-    },
-    "originalTitle": null
+    }
   }
 }
