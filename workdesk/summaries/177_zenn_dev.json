@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T12:53:02.343087+00:00",
+    "generatedAt": "2026-04-09T00:47:05.063830+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Claude Codeをターミナルに導入して開発効率を最大化するセットアップガイド",
+    "title": "Claude Code の「完了待ち」から解放されるターミナル開発環境",
     "url": "https://zenn.dev/maeken/articles/claude-code-terminal-setup",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "Anthropicが提供するエンジニア向けCLIツール「Claude Code」のインストールから初期設定、ターミナルでの基本的な活用法までを解説したガイド。",
-    "summaryBody": "Anthropicから発表された、ターミナル上で動作するAIエージェント「Claude Code」のセットアップ手順を詳しく解説しています。Node.js環境におけるインストールコマンドから、OAuthによる認証プロセス、そして実際にターミナルからコードの編集やGit操作、テスト実行を行うまでの流れを網羅。IDEとターミナルの往復を減らし、開発フローの中にシームレスにAIを組み込むための具体的なステップが示されています。特に、コマンドライン完結で作業を行いたい開発者にとって、即座に導入可能な実用的な内容となっています。",
+    "contentType": "🛠️ Guide & Tutorial (ガイド・チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの実行完了を待機する「拘束時間」を排除するため、cmuxの通知機能やyazi、lazygitを統合し、AIの非同期処理を最大化するターミナル開発環境を構築する。",
+    "summaryBody": "Claude CodeをIDE（**Cursor**）上で運用する際の「完了まで画面を注視し続けなければならない」「複数プロジェクトの並行開発が重い」という課題に対し、ターミナル中心の軽量・高機能なワークフローへの転換を提唱している。\n中心となるのは、複数セッション管理と「通知リング」機能を備えたmacOSネイティブターミナル **cmux** だ。AIエージェントが入力待ちになるとMacの通知センターやサイドバーのバッジで知らせるため、開発者はAIがコードを書いている間、完全に別の作業に集中できる。さらに、ファイルパス取得を効率化する **yazi** や、**worktree** 管理に優れた **lazygit**、**Raycast** によるショートカット切り替えを組み合わせることで、コンテキストスイッチのコストを最小化している。\nAIエージェントの処理待ち時間に不自由さを感じているエンジニアにとって、開発体験（DX）を劇的に改善する具体的な解法となっている。",
     "topics": [
       "Claude Code",
-      "Anthropic",
-      "CLI",
-      "ターミナル",
-      "開発効率化"
+      "cmux",
+      "lazygit",
+      "ターミナル開発環境",
+      "生産性向上"
     ],
     "scores": {
-      "signal": 4,
-      "depth": 3,
-      "uniqueness": 3,
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
       "practical": 5,
-      "antiHype": 4,
-      "mainJournal": 80,
-      "annexPotential": 90,
-      "overall": 82
-    },
-    "originalTitle": null
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    }
   }
 }
