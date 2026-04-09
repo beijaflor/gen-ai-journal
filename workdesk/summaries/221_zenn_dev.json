@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T05:53:06.993287+00:00",
+    "generatedAt": "2026-04-09T14:55:22.706133+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "DifyのWorkflowを使って記事を要約し、Notionへ保存する仕組みを作る",
+    "title": "Claude Codeに仕様書を丸ごと渡すな ── 「要件を伝える」との決定的な違い",
     "url": "https://zenn.dev/bookamasedo/articles/c264a26dafe55b",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "Difyのワークフロー機能を活用し、記事URLの読み込みからLLMによる要約、Notionへの自動保存までを完結させる自動化システムの構築手順を解説。",
-    "summaryBody": "本記事は、LLMアプリケーション開発プラットフォーム「Dify」のワークフロー機能を使い、効率的な情報収集パイプラインを構築するチュートリアルです。主なステップとして、HTTPリクエストによる記事内容の取得、LLMノードを用いた要約生成、そしてNotion API経由でのデータベースへの保存という一連の流れを詳しく解説しています。各ノードの具体的な設定値や、ワークフロー内での変数の受け渡し方法、日本語要約の品質を安定させるためのプロンプトエンジニアリングの要点などが網羅されており、LLMツールを実務に活用したい開発者にとって非常に実用的で再現性の高い内容となっています。",
+    "contentType": "🛠️ How-to & Best Practices (ノウハウ・ベストプラクティス)",
+    "oneSentenceSummary": "Claude Codeの特性を最大限に活かすため、仕様書を丸ごと読み込ませるのではなく、細分化した要件のみをプロンプトで伝え、実装の詳細は既存コードに委ねる手法を解説する。",
+    "summaryBody": "**Claude Code**で開発を行う際、巨大な仕様書ファイルをそのまま読み込ませると、重要情報の見逃しや既存コード規約の無視といった精度低下を招く。本記事では、この問題を「仕様書を渡す（文書を正とする指示）」と「要件を伝える（意図を伝え、実装はコードに委ねる指示）」の決定的な違いとして分析している。具体的な対策として、仕様書を機能単位のチケットへ分解し、受け入れ基準のみを伝えるプロンプト構成を推奨。また、ドキュメントは「実装前に書く仕様書」ではなく「実装後にコードから生成する技術文書」として扱うべきだと述べている。さらに、Anthropic社内での**CLAUDE.md**活用事例にも触れ、AIとの協業における設計思想の転換を促している。",
     "topics": [
-      "Dify",
-      "Notion",
-      "自動化",
-      "LLM",
-      "ワークフロー"
+      "Claude Code",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "開発フロー",
+      "設計思想"
     ],
     "scores": {
-      "signal": 4,
-      "depth": 3,
-      "uniqueness": 3,
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 80,
-      "annexPotential": 65,
-      "overall": 78
-    },
-    "originalTitle": null
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    }
   }
 }
