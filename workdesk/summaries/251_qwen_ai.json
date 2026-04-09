@@ -1,22 +1,22 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-06T07:13:46.667444+00:00",
+    "generatedAt": "2026-04-09T23:56:06.505342+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Qwen (通義千問): アリババが開発した高性能オープンソースLLMの概要",
+    "title": "Qwen3.6-Plus：リアルワールド・エージェントの実現に向けた大幅アップグレード",
     "url": "https://qwen.ai/blog?id=qwen3.6",
-    "language": "ja",
-    "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "アリババクラウドが開発したQwenは、多言語対応と高い推論能力を兼ね備え、Llamaシリーズに匹敵する性能を誇るオープンソースの大規模言語モデルです。",
-    "summaryBody": "Qwen（通義千問）は、アリババが公開している大規模言語モデル（LLM）のシリーズです。最新のQwen2.5モデルは、数学、プログラミング、一般的な知識のベンチマークにおいて極めて高いスコアを記録しており、オープンソースコミュニティにおいて最も注目されるモデルの一つとなっています。0.5Bから72Bまでの幅広いパラメータサイズを提供し、低リソース環境からエンタープライズ用途まで対応可能です。また、日本語を含む多言語への適応性が高く、視覚や音声などのマルチモーダル機能も強化されています。",
+    "language": "en",
+    "contentType": "📢 Product Launch (新製品・機能発表)",
+    "oneSentenceSummary": "アリババが、100万トークンのコンテキストウィンドウと高度なエージェント機能を備え、リポジトリレベルのコーディングやマルチモーダル推論を大幅に強化した新モデル「Qwen3.6-Plus」を公開しました。",
+    "summaryBody": "アリババのQwen Teamが、最新フラグシップモデル**Qwen3.6-Plus**のリリースを発表しました。本モデルは1Mコンテキストウィンドウを標準で提供し、特に「エージェント能力」に重点を置いた大規模なアップデートが施されています。**SWE-bench Verified**や**Terminal-Bench 2.0**といった、実務に近い複雑なベンチマークで高い性能を記録しており、自律的なコード修正やターミナル操作をこなす「コーディングエージェント」としての実力を証明しています。APIの新機能として`preserve_thinking`が導入され、複数ターンの対話においても思考プロセスを維持することで、エージェントとしての意思決定の一貫性が向上しました。また、**OpenClaw**や**Claude Code**といった主要なエージェントツールとの統合も容易で、実務のワークフローに即座に組み込むことが可能です。視覚的なコーディングや物理的な状況把握を含むマルチモーダル推論能力も進化しており、自律型AIエージェントの構築を目指すエンジニアにとって非常に強力な選択肢となります。",
     "topics": [
-      "LLM",
-      "Qwen",
-      "Alibaba",
-      "Open Source",
-      "GenAI"
+      "Qwen3.6-Plus",
+      "AIエージェント",
+      "コーディングエージェント",
+      "マルチモーダルAI",
+      "LLMベンチマーク"
     ],
     "scores": {
       "signal": 5,
@@ -24,10 +24,10 @@
       "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 90,
-      "overall": 88
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
     },
-    "originalTitle": "Qwen: A comprehensive overview of Qwen models"
+    "originalTitle": "Qwen3.6-Plus: Towards Real World Agents"
   }
 }
