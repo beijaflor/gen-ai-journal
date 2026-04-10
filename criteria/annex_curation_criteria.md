@@ -5,8 +5,10 @@ The Annex Journal is a curated collection for readers seeking unique, non-obviou
 ## Core Principles
 
 1.  **Strict Exclusivity:** The Annex is curated *exclusively* from `omitted_sources.md`. Any article chosen for the main journal is automatically ineligible for the Annex, ensuring zero overlap.
-2.  **Demand for Originality:** Every selected source must provide a unique perspective, novel knowledge, or a fresh point of view. If a reader can find the same idea everywhere else, it doesn't belong here.
-3.  **Zero Hype Policy:** We filter aggressively for substance over speculation. Articles must be grounded in practical reality, deep analysis, or credible, evidence-backed arguments. Marketing fluff and hype are explicitly rejected.
+2.  **Thematic Independence from Main Journal:** Articles that cover the same subject or closely related topics as a main journal theme should NOT be annex candidates. If an article is strongly related to a main journal theme, it should have been included in the main journal — not deferred to the annex. The annex exists for genuinely different topics and perspectives that stand on their own, not for overflow from main themes.
+    - **Exception:** An article may be an annex candidate if it was excluded from main specifically because its viewpoint is *extremely different* or *too unconventional* for the main journal's tone. In this case, flag it during STEP_04 main curation with a note explaining why it's annex-worthy despite the topic overlap.
+3.  **Demand for Originality:** Every selected source must provide a unique perspective, novel knowledge, or a fresh point of view. If a reader can find the same idea everywhere else, it doesn't belong here.
+4.  **Zero Hype Policy:** We filter aggressively for substance over speculation. Articles must be grounded in practical reality, deep analysis, or credible, evidence-backed arguments. Marketing fluff and hype are explicitly rejected.
 
 ## Content Pillars
 

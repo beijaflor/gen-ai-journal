@@ -13,13 +13,14 @@
 
 ### Theme 1: Claude Code 51万行流出：内部構造の解析とDMCA・AIリライト問題
 
-**Articles (IDs):** 072, 253, 233, 174
+**Articles (IDs):** 072, 253, 187, 236, 233, 174
 
 **Theme Introduction (2-3 sentences in Japanese):**
-Claude Codeのソースコード51万行超がnpmソースマップから流出した。内部のエージェントループ構造や未公開機能の技術分析に加え、DMCA濫用への批判やAIリライトによる著作権回避の問題も取り上げる。
+Claude Codeのソースコード51万行超がnpmソースマップから流出した。内部のエージェントループ構造や未公開機能の技術分析、脱獄脆弱性の開示問題に加え、DMCA濫用への批判やAIリライトによる著作権回避の問題も取り上げる。
 
 **Editorial Notes:**
-- 072, 253: 技術面の分析記事
+- 072, 253, 187: 技術面の分析記事（内部構造・隠し機能・設計思想）
+- 236: Claude 4.6脱獄脆弱性の全記録（Anthropicの無応答問題）
 - 233: ドクトロウによる著作権・DMCA批判
 - 174: AIリライトによる言語変換の法的問題
 
@@ -167,7 +168,7 @@ AI依存の影響についても注目すべき記事が複数あり、KAISTのC
 - Annex Journal: Remaining ~220 articles (to be curated in STEP_05)
 
 **Article Count by Theme (Planned):**
-- Theme 1 (Claude Code流出): 4 articles
+- Theme 1 (Claude Code流出): 6 articles
 - Theme 2 (Conviction Collapse・PR広告): 3 articles
 - Theme 3 (ハーネスエンジニアリング): 4 articles
 - Theme 4 (Cursor 3・/fleet・Codex・JSSE): 4 articles
@@ -175,7 +176,7 @@ AI依存の影響についても注目すべき記事が複数あり、KAISTのC
 - Theme 6 (ChatGPT断ち・AI語彙): 3 articles
 - Theme 7 (LayerX・DMM・食べログ): 3 articles
 
-**Total Planned for Main:** 24 articles
+**Total Planned for Main:** 26 articles
 **Remaining for Annex:** ~222 articles (to be curated to ~25-35 in STEP_05)
 
 ---

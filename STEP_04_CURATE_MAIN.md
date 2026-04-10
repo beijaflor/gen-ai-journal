@@ -135,9 +135,35 @@ Create or update:
 - Human-readable structure
 - Directly maps to approved editorial plan
 
-### 4. Generate Non-Main Sources List
+### 4. Flag Annex Candidates from Excluded Articles
 
-After main journal curation is complete, generate the list of remaining sources for annex consideration:
+While reviewing and excluding articles from the main journal, also flag articles that are **annex-worthy** despite being excluded. These are articles that:
+
+- Have an **extremely different point of view** from the main themes — too divergent to fit, but valuable as a contrarian or niche perspective
+- Are **too odd or unconventional** for the main journal's tone, but offer genuine insight
+- Cover a **completely different topic** from any main theme — not overflow from existing themes
+
+**Important:** If an article covers the same subject as a main journal theme, it should either be included in the main journal or excluded entirely. It should NOT be flagged as an annex candidate. The annex is for genuinely independent topics, not for theme overflow.
+
+Create `workdesk/curated_annex_journal_sources.md` with flagged candidates:
+
+```markdown
+# Curated Annex Journal Sources - YYYY-MM-DD
+
+## Curation Status
+- [ ] AI candidate pool generated
+- [ ] Human review completed
+- [ ] APPROVED - Ready for STEP_06
+
+---
+
+- [ ] 050. https://...
+  <!-- Why this is annex-worthy despite being excluded from main -->
+```
+
+### 5. Generate Non-Main Sources List
+
+After main journal curation is complete, generate the list of remaining sources:
 
 ```bash
 uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
@@ -146,7 +172,7 @@ uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts
 This command:
 1. Extracts URLs from the curated main journal sources
 2. Removes those URLs from the complete source list
-3. Creates `workdesk/non_main_sources.md` with remaining URLs for annex review
+3. Creates `workdesk/non_main_sources.md` with remaining URLs (reference only — annex candidates are already flagged in step 4)
 
 ## Verification
 
@@ -155,6 +181,8 @@ This command:
 - [ ] Theme organization in curated_journal_sources.md matches editorial plan
 - [ ] No duplicate topics within same theme or across themes
 - [ ] Each theme has adequate coverage (typically 3-5 articles; single-article themes require documented justification — see Section 4 above)
+- [ ] Annex candidates flagged in `workdesk/curated_annex_journal_sources.md`
+- [ ] Flagged annex candidates are thematically independent from main themes
 - [ ] Verify `workdesk/non_main_sources.md` contains remaining sources
 - [ ] Document any deviations from editorial plan (see below)
 

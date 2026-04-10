@@ -4,6 +4,8 @@
 
 - [ ] 072. https://victorantos.com/posts/i-read-the-leaked-claude-code-source-heres-what-i-found/
 - [ ] 253. https://ccunpacked.dev/
+- [ ] 187. https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/
+- [ ] 236. https://github.com/Nicholas-Kloster/claude-4.6-jailbreak-vulnerability-disclosure-unredacted
 - [ ] 233. https://p2ptk.org/copyright/5519
 - [ ] 174. https://qiita.com/LostMyCode/items/a867e1954b80e78cf146
 

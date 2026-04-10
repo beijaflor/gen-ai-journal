@@ -1,20 +1,21 @@
 # Step 5: Curate Annex Journal
 
-This step selects unique, non-obvious articles from the non-main sources for the annex journal — the "B-side" collection. Unlike STEP_04 (main journal curation), STEP_05 includes a mandatory human review gate before finalizing the candidate list.
+This step reviews and finalizes the annex journal candidate list that was pre-flagged during STEP_04. The annex is the "B-side" collection — articles with genuinely different perspectives, not overflow from main journal themes.
 
 ## Objective
 
-Find articles that provide:
-- Advanced tactics and unconventional wisdom
-- Substantive critiques and contrarian views
-- Niche explorations and deep dives
-- Unique perspectives not covered in mainstream sources
+Review annex candidates flagged during STEP_04 main curation. These are articles that were excluded from main because they:
+- Have an extremely different point of view or unconventional angle
+- Are too odd or niche for the main journal's tone
+- Cover completely different topics from any main theme
+
+**Key principle:** If an article covers the same subject as a main journal theme, it does NOT belong in the annex. It should either be in the main journal or excluded entirely.
 
 ## Input Files
 
-- **Non-main sources:** `workdesk/non_main_sources.md`
-- **Non-main summaries:** `workdesk/non_main_unified_summaries.md`
-- **Supabase flags:** output of `export_curation_flags.py` (Step 0a)
+- **Annex candidates (from STEP_04):** `workdesk/curated_annex_journal_sources.md` (pre-flagged during main curation)
+- **Non-main summaries:** `workdesk/non_main_unified_summaries.md` (for reference)
+- **Supabase flags:** output of `export_curation_flags.py` (Step 0a, optional supplementary signal)
 - **Criteria:** `criteria/annex_curation_criteria.md`
 
 ---
@@ -43,33 +44,23 @@ Keep this output in memory for Step 1 signal combination.
 uv run scripts/unite_summaries.py workdesk/non_main_sources.md workdesk/summaries workdesk/non_main_unified_summaries.md
 ```
 
-### Step 1: AI Builds Candidate Pool
+### Step 1: Review Pre-Flagged Candidates
 
-Read `workdesk/non_main_unified_summaries.md` and combine all available signals to rank candidates:
+The annex candidate list (`workdesk/curated_annex_journal_sources.md`) was already created during STEP_04 main curation. Review it and optionally supplement with Supabase flags.
 
-| Signal | Weight |
-|---|---|
-| `annex_flag=true` | Strong inclusion — lead with these |
-| `standout_flag=true` | Boost priority |
-| `upvote_flag=true` | Positive adjustment |
-| `downvote_flag=true` | Deprioritize |
-| `annexPotential ≥ 90` (from JSON summaries) | Score signal |
-
-Apply annex curation criteria:
+**Verify each candidate against these criteria:**
+- **Thematic independence:** Does NOT overlap with any main journal theme
 - **Originality:** Unique perspective or novel knowledge?
 - **Practical Value:** Actionable for experienced practitioners?
 - **Critical Thinking:** Challenges consensus or explores second-order effects?
 - **Niche Appeal:** Deep-dives into specialized topics?
 
-The annex is **NOT** for:
-- Leftover content that didn't make the main journal
-- Basic tutorials or getting-started guides
-- Pure speculation without substance
-- Marketing material
-
-Write the candidate list to `workdesk/curated_annex_journal_sources.md` as a **flat list** (~40–50 articles). For each article, include an editorial comment noting:
-1. Why it's annex-worthy (Japanese, concise)
-2. Which signals were present (e.g., `annex_flag ⭐`, `standout_flag`, `annexPotential 95`)
+**Remove candidates that:**
+- Cover the same subject as a main journal theme (these should have been included in main or excluded entirely)
+- Are leftover content that didn't make the main journal due to quality, not due to being a different topic
+- Are basic tutorials or getting-started guides
+- Are pure speculation without substance
+- Are marketing material
 
 **Output format:**
 
