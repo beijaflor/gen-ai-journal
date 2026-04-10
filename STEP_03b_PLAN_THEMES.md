@@ -76,13 +76,14 @@ Analyze all collected summaries, identify 5-8 cohesive themes, and create an edi
 
 **Theme Title Guidelines - Be Concrete, Not Generic:**
 
-Theme titles should be **specific, provocative, and attention-grabbing** rather than generic category labels.
+Theme titles should be **specific and factual** — name the actual technologies, people, events, or numbers covered. Avoid generic category labels, but also avoid dramatic or narrative-heavy framing. The title should tell the reader what's in the theme, not sell a story.
 
-✅ **GOOD (Concrete):**
-- "コンテキスト爆発への処方箋：段階的開示とマルチエージェント構成"
-- "Tailwind解雇75%の衝撃：AIがもたらすビジネスモデルの破壊"
-- "プロンプトインジェクションとゼロクリック攻撃：自律性とセキュリティのトレードオフ"
-- "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
+✅ **GOOD (Concrete & Factual):**
+- "Claude Code 51万行流出：内部構造の解析とDMCA・AIリライト問題"
+- "Martin Fowler・Addy Osmani発、ハーネスエンジニアリングの具体手法"
+- "Cursor 3再設計・Copilot /fleet・Codex連携、そしてJSSE"
+- "ChatGPT断ち4日間調査・AI語彙の浸透・「AI疲れ」"
+- "LayerX・DMM・食べログのAIエージェント組織実装"
 
 ❌ **BAD (Generic):**
 - "AIエージェントの実装戦略" → Too abstract
@@ -90,38 +91,24 @@ Theme titles should be **specific, provocative, and attention-grabbing** rather 
 - "セキュリティ問題" → Too vague
 - "ビジネスへの影響" → Too general
 
-**Four Principles for Concrete Titles:**
+❌ **BAD (Overly Dramatic):**
+- "確信の崩壊とソフトウェアが「製品」でなくなる日" → Narrative framing
+- "エージェント経済に「歯車」が足りない" → Metaphor-heavy
+- "認知的萎縮のパラドックスに向き合う" → Dramatic phrasing
 
-1. **Name Specific Technologies/Events**
+**Three Principles for Good Titles:**
+
+1. **Name Specific Technologies, People, or Events**
    - Bad: "新しいプロトコル"
-   - Good: "UCPとMCPサンプリングが描くWebの再定義"
+   - Good: "Agents of Chaosレッドチーミング、CSRF漏洩、エージェント経済のセキュリティ課題"
 
-2. **Include Shocking Facts/Numbers**
-   - Bad: "AIの雇用影響"
-   - Good: "Tailwind解雇75%の衝撃：価値のシフト"
+2. **Include Specific Facts/Numbers When Available**
+   - Bad: "AIコードの流出"
+   - Good: "Claude Code 51万行流出：内部構造の解析"
 
-3. **Highlight Contradictions/Tensions**
-   - Bad: "AIへの批判"
-   - Good: "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
-
-4. **Pose Provocative Questions**
-   - Bad: "開発者体験の管理"
-   - Good: "認知負荷の科学的管理：開発者は「考える係」に徹するべきか"
-
-**Title Structure Patterns:**
-
-- **[Problem]: [Solution]** - "コンテキスト爆発への処方箋：段階的開示とマルチエージェント構成"
-- **[Shocking Event]: [Implication]** - "Tailwind解雇75%の衝撃：ビジネスモデルの破壊"
-- **[Contradiction]: [Examples]** - "AI至上主義と完全拒絶の同居：OpenAI凋落とYarn Spinnerの倫理宣言"
-- **[Specific Tech]: [Broader Impact]** - "UCPとMCPサンプリングが描くWebの再定義"
-- **[Topic]: [Provocative Question]** - "認知負荷の科学的管理：開発者は「考える係」に徹するべきか"
-
-**Why Concrete Titles Matter:**
-- Immediately communicate the theme's value proposition
-- Create curiosity and reading motivation
-- Make the narrative arc visible at a glance
-- Differentiate from generic tech news aggregation
-- Reflect the "visionary but grounded" editorial persona
+3. **List Key Topics Covered**
+   - Bad: "ソフトウェアの変容を問う"
+   - Good: "「Conviction Collapse」とCopilot PR広告挿入、ソフトウェアの変容を問う論考"
 
 #### 4. Map Articles to Themes
 
@@ -134,9 +121,9 @@ Theme titles should be **specific, provocative, and attention-grabbing** rather 
 
 For each theme:
 - [ ] Write 2-3 sentence introduction (Japanese)
-- [ ] Explain what the theme covers
-- [ ] Articulate why it matters this week
-- [ ] Note connections between articles in this theme
+- [ ] Describe what articles are included and what they cover
+- [ ] Keep it factual — do not dramatize or manufacture narrative connections
+- [ ] Present articles as-is; forced story arcs are not needed
 
 #### 6. Draft "今週のハイライト" Outline
 
@@ -165,23 +152,22 @@ For each theme:
 
 **Human Editor Tasks:**
 
-- [ ] Review proposed themes for coherence and narrative strength
+- [ ] Review proposed themes for coherence
 - [ ] Verify article-to-theme mappings make editorial sense
-- [ ] Refine theme titles for clarity and impact
-- [ ] Edit theme introductions for editorial voice
+- [ ] Refine theme titles for clarity and specificity
+- [ ] Edit theme introductions to be factual and concise
 - [ ] Adjust highlight outline to capture week's essence
 - [ ] Reassign articles between themes as needed
 - [ ] Decide which articles belong in main vs. annex
 
 **Quality Checks:**
 
-- [ ] Do themes tell a cohesive weekly story?
-- [ ] Are contradictions and tensions highlighted?
-- [ ] Does the plan reflect EDITOR_PERSONALITY.md voice?
+- [ ] Are themes well-grouped by topic?
+- [ ] Does the plan present articles factually without manufactured narratives?
 - [ ] Are theme titles concrete and specific (not generic category labels)?
-  - Check: Do titles name specific technologies, events, or numbers?
-  - Check: Do titles highlight contradictions or pose questions?
-- [ ] Are theme introductions engaging and insightful?
+  - Check: Do titles name specific technologies, people, events, or numbers?
+  - Check: Are titles factual, not dramatic or narrative-heavy?
+- [ ] Are theme introductions factual and concise (not narrative-driven)?
 - [ ] Is the article distribution appropriate (18-25 main, rest annex)?
 - [ ] If any theme has fewer than 3 articles, is there documented justification? (Single-article themes are permitted for truly exceptional content — see STEP_04 Section 4 for criteria.)
 - [ ] Do themes align with curation_criteria.md principles?
@@ -229,22 +215,22 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 
 ## Identified Themes
 
-**Reminder: Theme titles should be concrete, specific, and attention-grabbing**
-- ✅ Name specific technologies, events, numbers
-- ✅ Highlight contradictions or pose questions
+**Reminder: Theme titles should be concrete, specific, and factual**
+- ✅ Name specific technologies, people, events, numbers
+- ✅ List key topics covered in the theme
 - ❌ Avoid generic category labels
+- ❌ Avoid dramatic or narrative-heavy framing
 
-### Theme 1: [Concrete Japanese Theme Title]
+### Theme 1: [Concrete Factual Japanese Theme Title]
 
 **Articles (IDs):** 007, 012, 023, 034
 
 **Theme Introduction (2-3 sentences in Japanese):**
-[Draft introduction explaining what this theme covers and why it matters this week]
+[Factual description of what articles are included and what they cover]
 
 **Editorial Notes:**
-- Key insights to emphasize:
-- Connections between articles:
-- Potential challenges:
+- [Article ID]: Brief description of article content
+- [Article ID]: Brief description of article content
 
 ---
 
@@ -253,12 +239,11 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 **Articles (IDs):** 001, 015, 029
 
 **Theme Introduction (2-3 sentences in Japanese):**
-[Draft introduction]
+[Factual description of what articles are included and what they cover]
 
 **Editorial Notes:**
-- Key insights:
-- Connections:
-- Challenges:
+- [Article ID]: Brief description of article content
+- [Article ID]: Brief description of article content
 
 ---
 
@@ -269,18 +254,13 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 
 ## Highlight Draft ("今週のハイライト")
 
-**Main Narrative Arc:**
-[2-3 paragraphs analyzing the week's overarching story]
+**今週の主な話題:**
+[2-3 paragraphs summarizing the week's main topics factually]
 
 **Key Points to Cover:**
-1. Contradictions or tensions between developments
-2. Significant shifts in industry thinking
-3. Why this week matters to developers
-4. Forward-looking perspective
-
-**Cross-Cutting Insights:**
-- [Insight that ties multiple themes together]
-- [Another cross-cutting observation]
+1. Major events or releases
+2. Notable articles and their topics
+3. Key themes covered this week
 
 ---
 
