@@ -181,6 +181,106 @@ AI依存の影響についても注目すべき記事が複数あり、KAISTのC
 
 ---
 
+## ASSEMBLY STRATEGIES
+
+### Theme 1: Claude Code 51万行流出
+
+**Pattern:** Single-Focus
+**Rationale:** One central event (source code leak) with multiple analysis angles.
+
+**Article Order & Roles:**
+1. [072] 流出コード技術分析 (Victor A) — Lead: 内部設計思想の全体像
+2. [253] Claude Code Unpacked — Supporting: 50以上のツール・隠し機能の詳細
+3. [187] alex000kim分析 — Supporting: 偽ツール注入・KAIROS・感情検知の実装
+4. [236] 脱獄脆弱性開示 — Supporting: セキュリティ面の脆弱性と開示プロセス
+5. [233] ドクトロウDMCA批判 — Supporting: 著作権・法的問題の視点
+6. [174] AIリライト著作権回避 — Synthesis: ソースコード保護モデルの限界
+
+---
+
+### Theme 2: Conviction Collapse・PR広告・ウィンチェスター型開発
+
+**Pattern:** Multi-Perspective
+**Rationale:** 3つの独立した論考がソフトウェアの変容という共通テーマを異なる切り口で扱う。
+
+**Article Order & Roles:**
+1. [147] Conviction Collapse (O'Reilly) — 開発速度と製品概念の変容
+2. [121] Copilot PR広告挿入 — AIツールの劣化（Enshittification）の実例
+3. [231] ウィンチェスター・ミステリー・ハウス (O'Reilly) — AI時代の第3の開発モデル
+
+---
+
+### Theme 3: ハーネスエンジニアリングの具体手法
+
+**Pattern:** Progressive-Sequence
+**Rationale:** 理論的基盤から実装手法へと段階的に深まる構成が自然。
+
+**Article Order & Roles:**
+1. [189] Martin Fowlerハーネスエンジニアリング — Foundation: 理論的フレームワーク
+2. [182] エージェントハーネス＝業務完成品 — Development: ビジネス視点での位置づけ
+3. [176] NLAH自然言語ハーネス — Advanced: SWE-benchで既存超えの実装手法
+4. [134] VSDD Builder/Adversary方式 — Payoff: 品質保証パターンの実装
+
+---
+
+### Theme 4: Cursor 3・Copilot /fleet・Codex連携・JSSE
+
+**Pattern:** Multi-Perspective
+**Rationale:** 各社が異なるアプローチでエージェント型開発を推進している。並列で紹介する。
+
+**Article Order & Roles:**
+1. [202] Cursor 3 — エージェント中心UIの再設計
+2. [148] Copilot /fleet — タスク分解と並列実行
+3. [122] Codex×Claude Code — ツール間の相互運用
+4. [077] JSSE — AIエージェントのみでJSエンジン構築した到達点
+
+---
+
+### Theme 5: エージェントのセキュリティ課題
+
+**Pattern:** Multi-Perspective
+**Rationale:** 攻撃面・防御の失敗・攻撃的活用という3つの異なるセキュリティ視点。
+
+**Article Order & Roles:**
+1. [065] Agents of Chaos — レッドチーミングで11の脆弱性を実証
+2. [256] CSRF漏洩見落とし — AIツールの防御側の限界
+3. [155] Vim/Emacs RCE発見 — AIの攻撃的セキュリティ利用
+
+---
+
+### Theme 6: ChatGPT断ち・AI語彙の浸透・執筆とAI
+
+**Pattern:** Progressive-Sequence
+**Rationale:** 依存の実証→言語への影響→処方箋という段階的構成。
+
+**Article Order & Roles:**
+1. [228] ChatGPT断ち4日間 — Foundation: AI依存のインフラ化を実証
+2. [149] AI語彙の浸透 — Development: 言語均質化と認知的萎縮の分析
+3. [064] 書くことを委ねるな — Payoff: 処方箋としての主張
+
+---
+
+### Theme 7: LayerX・DMM・食べログの組織実装
+
+**Pattern:** Multi-Perspective
+**Rationale:** 3社がそれぞれ異なるレイヤー（組織モデル・CI・ナレッジ）でAIを実装。
+
+**Article Order & Roles:**
+1. [244] LayerX Agentic Nervous System — 組織モデルとしてのAI活用
+2. [181] DMM 技術的負債AI可視化CI — CI基盤への組み込み
+3. [222] 食べログ MCP活用 — ドキュメントからナレッジへの変換
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+---
+
 ## Review Notes (Human Editor)
 
 **Date Reviewed:** 2026-04-10
