@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:30:12.901091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeもCodexもCSRFを見落とした ── AIコーディングツールのセキュリティ検証能力の限界",
+    "url": "https://qiita.com/nogataka/items/6eb7cda3237358fdbe34",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングツールが生成するコードの約8割にセキュリティ脆弱性が含まれている現状と、その技術的原因、および実務的な多層防御策を解説した記事。",
+    "summaryBody": "2025年の最新調査（Tenzaiやカーネギーメロン大学の研究）により、Claude CodeやCodex、Cursorといった主要なAIコーディングエージェントが、生成したアプリケーション全てにおいてCSRF対策を欠落させていたことが判明しました。記事では、AIがセキュリティを見落とす原因を「学習データの偏り（インセキュアなコードの多さ）」「TransformerのAttentionメカニズムが機能実装を優先する特性」「複数ファイルにまたがるコンテキスト把握の限界」の3点から技術的に分析。対策として、コード生成とセキュリティ検証のフェーズ分離、CLAUDE.mdへの具体的なセキュリティルールの記述、CI/CDパイプラインでの静的解析（Semgrep等）の強制、そして人間によるビジネスロジックのレビューを組み合わせた「人間＋AI」のワークフローを提唱しています。",
+    "topics": [
+      "AIセキュリティ",
+      "CSRF",
+      "Claude Code",
+      "セキュアコーディング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Claude CodeもCodexもCSRFを見落とした ── AIコーディングツールのセキュリティ検証能力の限界"
+  }
+}

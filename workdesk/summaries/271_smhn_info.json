@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:04:59.539974+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【朗報】国土交通省、MCPサーバー公開。自然言語で地価や不動産情報の取得が可能に",
+    "url": "https://smhn.info/202604-mlit-geospatial-mcp-server",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "国土交通省は、Anthropicが提唱するMCPを採用し、自然言語で地価や不動産取引価格などのオープンデータを取得できる「地理空間MCP Server」のα版を公開した。",
+    "summaryBody": "国土交通省は、大規模言語モデル（LLM）と外部データをシームレスに接続するオープン標準プロトコル「MCP（Model Context Protocol）」に対応した「地理空間MCP Server」を公開しました。これにより、専門的なAPIの知識がなくとも、ClaudeなどのLLMを介して「新宿駅周辺の地価を教えて」といった日常的な対話から、最新の不動産関連データを取得できるようになります。\n\n主なポイントは以下の通りです：\n- **対象データ**: 「不動産情報ライブラリ」が提供する地価公示、都道府県地価調査、不動産取引価格、防災情報、地形情報など35種類中25種類に対応。\n- **実装形態**: コードはGitHubで公開されており、利用には「不動産情報ライブラリ」のAPIキー取得が必要です。\n- **意義**: 官公庁のオープンデータ活用が、従来のAPI直接利用からAIエージェント連携へと進化しており、都市分析や不動産調査の効率化が期待されます。\n\n国交省は既に2025年にもインフラデータ向けのMCPサーバーを公開しており、PLATEAU（3D都市モデル）など他の地理空間データとの連携拡大も今後の焦点となります。",
+    "topics": [
+      "MCP",
+      "国土交通省",
+      "オープンデータ",
+      "LLM",
+      "不動産情報ライブラリ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:39:23.550694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude の M365 コネクタと Microsoft 365 Copilot の違い",
+    "url": "https://memo.tyoshida.me/office-365/claude-m365-connector-copilot-differences/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicが公開したClaudeのMicrosoft 365コネクタと、Microsoft 365 Copilotの「Work IQ」の技術的・組織的アーキテクチャの決定的な違いを解説する記事。",
+    "summaryBody": "2026年4月のAnthropicによるClaudeのM365コネクタ開放を受け、「Copilotは不要になる」という言説に対し、技術的な視点から両者の構造的差異を解説しています。ClaudeのコネクタはMCPを通じた一時的な「接続パイプ」であり、読み取り専用で過去の文脈を保持しません。対してCopilotの「Work IQ」は、組織全体のデータをセマンティック・インデックス化し、ユーザーの働き方を学習する永続メモリとマルチモデル推論（Claudeモデルの選択肢を含む）を備えた「知能層」として機能します。さらに、Microsoft Purviewによる秘密度ラベルやDLPポリシーといった高度なガバナンス、管理者がKQLを用いてテナント内でのClaudeコネクタ利用状況を監視する方法など、エンタープライズ運用における不可欠な要素についても詳述されています。",
+    "topics": [
+      "Microsoft 365 Copilot",
+      "Claude",
+      "Work IQ",
+      "MCP (Model Context Protocol)",
+      "Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

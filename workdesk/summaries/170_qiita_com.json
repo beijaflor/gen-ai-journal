@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:50:14.356415+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "国産LLM「LLM-jp-4」が日本語MT-BenchでGPT-4oを上回った ── 技術的背景と実用性を検証する",
+    "url": "https://qiita.com/nogataka/items/6821e5d530938d269e58",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "国立情報学研究所（NII）が公開した『LLM-jp-4』は、日本語特化トークナイザーとMoEアーキテクチャにより、日本語MT-BenchでGPT-4oを超える性能を達成したオープンソースLLMです。",
+    "summaryBody": "2026年4月、NIIが主導するLLM-jpプロジェクトは、最新の国産LLM「LLM-jp-4」を公開しました。このモデルは8BおよびMoE（Mixture of Experts）を採用した32B-A3Bの2つのバリエーションを持ち、日本語MT-BenchにおいてGPT-4oのスコアを上回る快挙を成し遂げました。\n\n技術面では、日本語の圧縮効率を最大化した独自トークナイザー「llm-jp-tokenizer v4.0」と、11.7兆トークンに及ぶ膨大な学習データ（LLM-jp Corpus v4）が性能向上の鍵となっています。特に32B-A3Bモデルは、総パラメータ数は320億でありながら、推論時には38億パラメータのみを稼働させるMoE構造により、高い知識量と低コストな推論を両立しています。Apache 2.0ライセンスで公開されており、機密情報を扱う法務・行政分野でのローカル運用や、コストを抑えた社内チャットボット構築など、実務への強力な活用が期待されます。",
+    "topics": [
+      "LLM-jp-4",
+      "国産LLM",
+      "自然言語処理",
+      "MoE",
+      "NII"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

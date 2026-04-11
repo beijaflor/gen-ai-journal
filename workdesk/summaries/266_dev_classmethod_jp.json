@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:06:15.744087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "思いつきを手軽にメモ。Claudeでアイデアを残し、広げる仕組みを作ってみた。",
+    "url": "https://dev.classmethod.jp/articles/claudememo-20260403/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ClaudeとGitHub MCPを連携させ、チャットでの思いつきを「メモして」の一言でプライベートリポジトリへMarkdownとして自動保存・蓄積する効率的なワークフローを解説します。",
+    "summaryBody": "この記事では、日常的なアイデアの断片を管理するストレスを解消するため、Claude（claude.ai, Cowork, Claude Code）を情報の入り口とし、GitHubを保存先とする仕組みの構築方法を紹介しています。著者はGoogle DocsやObsidian、Artifactsなどの代替案を「メタデータの多さ」や「クロスプラットフォーム対応」の観点から比較し、GitHubがプレーンなMarkdownを扱える最適なバックエンドであると結論づけています。具体的には、GitHub MCP Connectorの設定方法から、Claudeの長期メモリ機能を利用して特定のトリガーワードで自動的に指定のパスへ書き込みを行うルール設定までを詳しくガイドしています。これにより、情報の散逸を防ぎ、AIとの対話を通じたアイデアの深化と自動整理を両立させています。",
+    "topics": [
+      "Claude",
+      "MCP",
+      "GitHub",
+      "ナレッジマネジメント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

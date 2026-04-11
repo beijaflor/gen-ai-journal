@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:05:19.866953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skillsは作って終わりじゃない — 事後ログで改善サイクルを回す",
+    "url": "https://zenn.dev/tre_conigli/articles/claude-code-skill-improvement-cycle",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのカスタムスキルの精度劣化を防ぐため、実行後のログを収集・分析して「事実」と「推測」を分離し、継続的な改善を可能にする手法を解説する。",
+    "summaryBody": "## 概要\nClaude Codeのカスタムスキルは、一度作成してもユーザーの暗黙的な修正が蓄積されず、時間の経過とともに期待される品質から乖離していく「劣化」の問題があります。この記事では、実行が終わった後に情報（Gitの差分、シェル履歴、チャットの文脈）を拾い上げる「事後ログ収集」の仕組みを提案しています。\n\n## 主な内容\n- **スキルの劣化要因**: フィードバックがその場限りの会話で消えてしまう「揮発性」、利用シーンのズレによる「前提の漂流」、実行過程が見えない「観測の不在」が原因であると指摘。\n- **情報の3層構造**: 収集データを「事実（確定情報）」「文脈抽出（チャットからの指示）」「推論（改善の仮説）」に明確に分類。推測を事実と混同しない設計が、正確なスキル修正に不可欠であることを強調。\n- **環境と性質に応じたルーティング**: ローカル環境やサンドボックスといった実行環境の差、またはスクリプト重視かプロンプト重視かというスキルの性質に合わせて、収集すべきデータの優先順位を変える戦略を解説。\n\n## 結論\n「なんとなく全体を書き直す」のではなく、事実に基づいたピンポイントな改善サイクルを回すことが、半年後も使い続けられるスキルを作るための鍵となります。",
+    "topics": [
+      "Claude Code",
+      "LLM Agents",
+      "AI Skills",
+      "Observability",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

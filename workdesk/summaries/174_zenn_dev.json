@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:29:15.234433+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステムを丸ごと Skills にする：AI Agent との効率的な連携事例",
+    "url": "https://zenn.dev/cybozu_frontend/articles/design-system-skills",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "サイボウズが kintone デザインシステムを AI Agent 向けの「Skills」として構成し、MCP サーバー運用を伴わずに高い精度でコンポーネント情報を活用する手法を紹介しています。",
+    "summaryBody": "サイボウズのフロントエンド開発において、デザインシステムを AI Agent（Claude Code 等）から活用するための新手法「Skills」化の実装レポートです。従来は MCP (Model Context Protocol) サーバーを構築してドキュメントやトークン情報を供給していましたが、サーバー運用の手間やコンテキスト圧迫が課題でした。本記事では、デザインシステムのリポジトリをローカルにキャッシュし、階層化された既存の README.mdx を段階的に参照させることで、人間にとって読みやすいドキュメント構造がそのまま AI の段階的開示（Progressive Disclosure）に有効であることを示しています。具体的な SKILL.md の定義例や、リポジトリ自動取得のスクリプト、導入メリットについても解説されています。",
+    "topics": [
+      "デザインシステム",
+      "AI Agents",
+      "MCP",
+      "Claude Code",
+      "フロントエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:52:35.167676+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を並列で回す WezTerm ターミナル構成",
+    "url": "https://zenn.dev/dely_jp/articles/5d4e89c275789f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」を軸とした開発スタイルに最適化するため、WezTermとNeovimを用いて並列作業や通知機能を強化するターミナル構築術を解説。",
+    "summaryBody": "AIエージェントによる開発が主流になったことで、VSCodeからターミナル中心の環境（WezTerm + Neovim）へ移行した実践例を紹介しています。主な特徴は3点。1つ目は、git worktreeとCLIツール「wtp」を組み合わせ、同一リポジトリ内で複数のClaude Codeセッションを並列実行する運用。2つ目は、Claude Codeのフック機能とWezTermのBellイベントを連携させ、AIの応答完了をタブ上の視覚的マーカー（●）で通知する仕組み。3つ目は、カスタムスクリプト「wlay」により、LazyGitやNeovimを一時的なオーバーレイペインとして素早く起動・終了できる利便性です。これによりAIの応答待ち時間を活用した効率的なマルチタスク環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "WezTerm",
+      "AIエージェント",
+      "開発環境構築",
+      "git-worktree"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

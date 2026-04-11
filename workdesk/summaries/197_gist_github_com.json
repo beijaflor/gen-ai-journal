@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:23:50.122269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM Wiki: LLMを活用した持続的かつ蓄積型のナレッジベース構築パターン",
+    "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "RAGの一時的な検索を超え、LLMが情報を既存の構造へ能動的に統合し続ける「蓄積型Wiki」の構築・運用フレームワーク。",
+    "summaryBody": "本記事は、Andrej Karpathy氏が提唱するLLMを用いた次世代ナレッジ管理手法「LLM Wiki」を解説するものです。従来のRAG（検索拡張生成）が検索のたびに断片的な情報を再構成するのに対し、LLM WikiはLLMが「Wikiの管理者」として、新たな情報を既存の体系へ継続的に統合、整理、相互参照させることで、知識を複利的に蓄積させていく仕組みです。システムは、不変の「ソース層」、LLMが書き換える「Wiki層」、そして運用の規約を定めた「スキーマ層」の3層構造で構成されます。Obsidianなどのエディタをインターフェースとし、人間はソースの選定と問い立てに集中し、LLMが要約やリンク、整合性チェックといった煩雑な保守作業を担います。これにより、個人の学習からチームのナレッジ共有まで、メンテナンスコストを最小限に抑えつつ、時間の経過とともに価値が高まる知識ベースの構築が可能になります。",
+    "topics": [
+      "LLM",
+      "Knowledge Management",
+      "RAG",
+      "Obsidian",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "karpathy/llm-wiki.md"
+  }
+}

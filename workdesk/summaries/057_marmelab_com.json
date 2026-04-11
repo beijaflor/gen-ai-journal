@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:58:16.430152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの逆襲：LLMを使ってCOBOLを書かせてわかったこと",
+    "url": "https://marmelab.com/blog/2026/04/08/cobol-ai-strikes-back.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIにCOBOLでのIDE開発を依頼した際、高精度なコード生成と同時に深刻なセキュリティ脆弱性が混入した実例から、開発者による監督の重要性を説く。",
+    "summaryBody": "著者は、学習データが少ないとされる古い言語「COBOL」を対象に、GitHub Copilotを使用してブラウザベースのIDEを構築する実験を行いました。驚くべきことに、AIは複雑なCOBOLの構文やアーキテクチャ設計を高い精度でこなしましたが、同時に「リモートコード実行（RCE）」という致命的な脆弱性を含むコードを平然と生成しました。AIは要求された機能（コードの実行）を忠実に実現しますが、明示的に問われない限りセキュリティリスクを警告しません。記事では、この問題を解決するために「コンテナによる隔離」「システムコールの制限」「WebAssembly（WASM）によるクライアントサイド実行」という3つのアプローチを検討し、最終的に設計判断を下すのは人間であるべきだという「AI時代の開発者の役割」について結論づけています。",
+    "topics": [
+      "Generative AI",
+      "COBOL",
+      "Security Vulnerability",
+      "Software Development",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 85
+    },
+    "originalTitle": "AI Strikes Back: Using an LLM to write COBOL"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:14:39.524540+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに「デザインの判断力」を与えるスキル `ui-ux-pro-max-skill` を徹底解説してみた — Codex CLI 実践編",
+    "url": "https://qiita.com/engchina/items/021eaec14a0970ee1c0b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIにプロ級のデザイン判断力を付与する『ui-ux-pro-max-skill』の仕組み、161業種に対応した推論エンジンの構造、およびCodex CLIでの導入方法を解説した記事。",
+    "summaryBody": "この記事では、Codex CLI等のAIツールにおいてUI生成の質を劇的に向上させるスキル「ui-ux-pro-max-skill」について詳しく解説しています。このスキルの核となるのは、161の業種ルール、67のUIスタイル、57のフォントペアを統合した「Design System Generator」です。技術的には、知識をプロンプトに直接書き込むのではなく、外部のCSVデータとして管理し、BM25アルゴリズムを用いた推論エンジンでプロジェクトに最適なデザイン要素を抽出する手法（RAGに近い思想）を採用しています。これにより、業界特有のアンチパターンの回避や、アクセシビリティを考慮したチェックリストの自動適用が可能になります。Codex CLIユーザー向けに、uipro-cliを用いた導入手順や、デザインシステムの永続化方法などの実践的な活用術が紹介されており、AIスキル設計のベストプラクティスとしても非常に参考になる内容です。",
+    "topics": [
+      "Codex CLI",
+      "UI/UXデザイン",
+      "AIスキル設計",
+      "プロンプトエンジニアリング",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

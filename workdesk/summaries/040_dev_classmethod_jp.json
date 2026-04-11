@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:02:10.415054+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIの「Rubber Duck」を試してみた。異なるAIモデルがコードをレビューする",
+    "url": "https://dev.classmethod.jp/articles/github-copilot-cli-rubber-duck-cross-model-review/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot CLIに導入された、ClaudeとGPTなど異なるAIモデルファミリーを組み合わせてコードのセカンドオピニオンを得る実験的機能「Rubber Duck」の解説と実践レポート。",
+    "summaryBody": "GitHub Copilot CLIに搭載された実験的機能「Rubber Duck」についての解説記事です。この機能は「ラバーダックデバッグ」の概念をAIに応用したもので、メインのコーディングエージェント（Claudeファミリー）とは別のモデルファミリー（GPT-5.4等）を独立したレビュアーとして機能させます。訓練データや設計思想が異なるモデルを組み合わせることで、単一モデルでは見落としがちなアーキテクチャの欠陥やサイレントなバグを検出する狙いがあります。記事では実際にTypeScriptのテストコード作成を依頼し、Rubber Duckがエッジケースやテーブル駆動テストの提案を行う様子を検証しています。また、SWE-Bench Proでのベンチマーク結果に触れ、比較的安価なSonnetモデルでもRubber Duckを併用することで最上位のOpusに近い性能を発揮できる点や、Claude CodeのCodexプラグインとの比較についても詳しく解説されています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIコーディングエージェント",
+      "コードレビュー",
+      "Claude",
+      "GPT-5.4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

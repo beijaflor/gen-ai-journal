@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:52:49.965887+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社内業務をAIに開放 — 自社MCPサーバー群一挙公開！",
+    "url": "https://zenn.dev/aircloset/articles/d9fc317c1336c2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "エアークローゼット社が3ヶ月で構築した、DB、インフラ、業務ツールをAIから操作可能にする17種類の自社MCPサーバー群の全貌と設計思想を紹介。",
+    "summaryBody": "株式会社エアークローゼットが、Model Context Protocol（MCP）を活用して社内の全領域をAI（Claude等）に開放した取り組みの解説。2026年1月からの約3ヶ月で、全社DB、GCP/AWSリソース、Google Workspace、Git、Grafana、CircleCI、プロジェクト管理など、多岐にわたる17のMCPサーバーを構築。TypeScriptによる実装、Pulumiでのデプロイ、Google OAuth 2.0を用いた共通認証基盤、Upstash Redisによるセッション管理など、高度なエンジニアリングスタックで構成されている。特筆すべきは「Workspace MCP」や「Sandbox MCP」で、GitHubアカウントを持たない非エンジニアがAIを通じて安全にコード修正やアプリデプロイを行える環境を実現しており、業務の民主化を強力に推進している。セキュリティ面でも、Read-only権限の徹底やBigQueryへの詳細な監査ログ記録など、エンタープライズ利用に耐えうる多層防御モデルを採用している。",
+    "topics": [
+      "Model Context Protocol (MCP)",
+      "Claude Code",
+      "LLMエージェント",
+      "社内基盤",
+      "認証・セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

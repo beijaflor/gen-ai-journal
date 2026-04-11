@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:56:34.775436+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agents (Anthropic) の概要",
+    "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "開発者が自前でインフラを構築することなく、長時間実行可能な自律型AIエージェントをデプロイできるAnthropicのマネージド基盤。",
+    "summaryBody": "### サービスの概要\nAnthropicが提供を開始した「Claude Managed Agents」は、AIエージェントの実行ループ、ツール実行、サンドボックス環境をすべて肩代わりするマネージドサービスです。従来のMessages APIによる直接的なモデル操作とは異なり、ファイル読み書き、コード実行、Web検索、ブラウジングなどの機能を備えた安全なクラウドコンテナ上でClaudeを自律的に動作させることができます。\n\n### 主要な構成要素\n本サービスは4つの核となるコンセプトで構成されています。モデルやスキルを定義する「Agent」、実行環境（PythonやNode.jsパッケージ、ネットワーク設定）を定義する「Environment」、実際のタスクを実行するインスタンスである「Session」、そしてSSE（Server-Sent Events）を介してやり取りされる「Events」です。\n\n### 特徴とユースケース\n本サービスは、数分から数時間に及ぶ長時間タスクや非同期処理、セキュアなコンテナ環境でのコード実行、ステートフルなファイル操作が必要なアプリケーションに最適です。Bash、ファイル操作、Web検索、MCP（Model Context Protocol）サーバーへの接続といった組み込みツールが標準で提供されており、プロンプトキャッシュやコンパクションなどのパフォーマンス最適化も統合されています。\n\n### 利用条件\n現在はベータ版として提供されており、利用には `managed-agents-2026-04-01` という専用のベータヘッダーが必要です。APIアカウントを持つ組織であればデフォルトで有効化されていますが、一部の高度な機能（マルチエージェントやメモリ機能など）はリサーチプレビュー段階となっています。",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "AI Agent",
+      "Cloud Infrastructure",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Claude Managed Agents overview"
+  }
+}

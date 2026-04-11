@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:51:02.288793+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのメモリを3階層にしたら「覚えてる」が「学んでる」に変わった",
+    "url": "https://zenn.dev/tokium_dev/articles/claude-code-evolutionary-memory",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのメモリを観察・記憶・進化の3層に分け、繰り返し受ける指摘を自動でCLAUDE.mdの強制ルールへ昇格させることで、AIを「使うほど賢くなる」学習体質に変える仕組みの提案。",
+    "summaryBody": "この記事では、Claude Codeの利便性を飛躍的に高めるための「3層メモリ構造」と「進化プロトコル」の実装方法を紹介しています。著者は、単に情報を保存するだけのメモリではAIの行動変容に限界があると考え、人間の学習過程（意識せずともできる状態）を模した仕組みを構築しました。具体的には、1. Slackや会話から無意識の判断基準を抽出する「観察層」、2. 短期・長期の記憶を整理する「記憶層」、3. 同じミスや指摘が3回重なると、強制力のあるCLAUDE.mdや自動実行フックへルールを昇格させる「進化層」の3段階で構成されています。この仕組みにより、開発者が同じフィードバックを繰り返すストレスを「成長の過程（痛みの蓄積）」として捉え直し、AIをパーソナライズされた優秀なパートナーへと進化させる手法を、シェルスクリプトやMarkdown、MCPサーバーを活用した具体的な実装例とともに解説しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "自動化",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

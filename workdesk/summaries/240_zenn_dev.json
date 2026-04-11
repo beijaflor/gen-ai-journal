@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:12:57.797108+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLI の /fleet コマンドによるタスク並列実行の仕組みと活用術",
+    "url": "https://zenn.dev/poipoionigiri/articles/73eb2b803b10d7",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIの新機能「/fleet」を用い、仕事を適切に分解して複数エージェントで並列実行させるためのプロンプト術と活用例を解説しています。",
+    "summaryBody": "GitHub Copilot CLIに導入された「/fleet」コマンドの技術的な仕組みと、そのポテンシャルを最大限に引き出すための実践的なプロンプト設計を解説した記事です。/fleetは、オーケストレーターが大きなタスクを独立したワークアイテムに分解し、複数のサブエージェントに並列実行させる仕組みです。本記事では、並列化を成功させるための4つのポイント（成果物の具体化、ファイル境界の定義、依存関係の明示、検証基準の設定）を詳しく解説しています。また、PR前のセキュリティ監査、設計と実装の分離、モノレポの整合性チェックといった具体的な活用例を提示。ファイルシステムを共有しているための競合リスクや、サブエージェントが独立したコンテキストを持つ利点など、実務で役立つ注意点とTipsを網羅しています。単なる自動化を超え、エージェントをチームとして指揮する新しい開発スタイルを提案しています。",
+    "topics": [
+      "GitHub Copilot",
+      "CLI",
+      "AIエージェント",
+      "並列処理",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "GitHub Copilot CLI の /fleet が面白い"
+  }
+}

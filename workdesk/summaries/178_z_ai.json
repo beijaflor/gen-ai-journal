@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:28:20.842054+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模言語モデルにおける効率的な推論を実現する「KVキャッシュ圧縮」の最新動向",
+    "url": "https://z.ai/blog/glm-5.1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コンテキストウィンドウの増大に伴うメモリ負荷を軽減するため、KVキャッシュを効率的に圧縮し推論速度を向上させる新しいアルゴリズムが注目されています。",
+    "summaryBody": "本記事では、LLMの推論プロセスにおける最大のボトルネックの一つであるKVキャッシュのメモリ消費問題に焦点を当てています。最近の研究では、重要度の低いトークンを動的に破棄する手法や、量子化を組み合わせて精度を維持しつつメモリ使用量を80%以上削減する技術が提案されています。特に、長文読解やマルチターンの対話において、これらの圧縮技術がどのように計算リソースを最適化し、スループットを向上させるかについて詳細な技術的解説が行われています。また、実装上の注意点として、精度の劣化を最小限に抑えるためのハイパーパラメータ調整の重要性についても触れられています。",
+    "topics": [
+      "LLM",
+      "KV Cache",
+      "Inference Optimization",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

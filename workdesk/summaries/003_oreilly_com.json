@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:11:45.949063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型コマースに向けたストアフロント構築：視覚的説得から決定論的なデータ基盤へ",
+    "url": "https://www.oreilly.com/radar/engineering-storefronts-for-agentic-commerce/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが買い物を代行する時代では、人間向けの広告コピーよりも、機械が処理可能な厳格な構造化データと決定論的な検証レイヤーが商取引の成否を決定する。",
+    "summaryBody": "AIエージェントが自律的に購買を行う「エージェント型コマース」の台頭により、従来のECサイトに求められる役割が激変しています。本記事では、AIエージェントがどのように情報を処理するかを「サンドイッチ・アーキテクチャ」として定義し、解説しています。このアーキテクチャは、LLMによる意図翻訳（第1層）、厳格な型チェックを行う決定論的実行（第2層）、そして最終判断（第3層）の3層で構成されます。\n\n著者は、曖昧なマーケティング表現（「嵐を制覇する」等）が数値検証を行う第2層でエラーを引き起こし、安価な製品であっても選別から漏れるリスクを実験で示しました。これからの商取引では、Universal Commerce Protocol (UCP)のような標準化されたスキーマを使い、APIを通じて製品の原材料や性能を正確に開示することが求められます。また、返品を避けるための「ネガティブ最適化（対象外の用途を明記する）」や、プログラム可能な動的ディスカウントが、ブランドの信頼スコアと発見可能性を左右する鍵となります。",
+    "topics": [
+      "エージェント型コマース",
+      "LLM",
+      "構造化データ",
+      "ECインフラ",
+      "AIアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Engineering Storefronts for Agentic Commerce – O’Reilly"
+  }
+}

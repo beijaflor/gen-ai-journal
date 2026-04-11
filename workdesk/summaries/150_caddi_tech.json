@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:35:19.855542+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのお世話が辛いのでUsecase Design Docを書く - CADDi Tech Blog",
+    "url": "https://caddi.tech/2026/04/07/110000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントへの指示と管理の負担を軽減するため、詳細な設計書「Usecase Design Doc」を起点に実装とPR作成を自動化し、開発速度を2倍にした事例を紹介。",
+    "summaryBody": "CADDiの開発チームがAIエージェント（Devin等）を活用する中で直面した、詳細なプロンプト作成や並列作業に伴う認知負荷の増大を解決する手法についての解説。解決策として導入された「Usecase Design Doc」は、ユースケース単位でCRUD表、シーケンス図、ドメイン・APIのインターフェース定義、変更箇所を明文化したものであり、AIにとっての明確な実装指示書として機能する。このドキュメントをベースにタスクを分割しAIに委譲することで、人間の介入を最小限に抑えつつ1日のPRマージ数を倍増させた。成果として開発速度向上とレビュー負荷の軽減が得られた一方、設計の誤りが実装に増幅されるリスクや、設計・レビュー工程が新たなボトルネックになる点も指摘されている。",
+    "topics": [
+      "AI駆動開発",
+      "ソフトウェア設計",
+      "Devin",
+      "生産性向上",
+      "CADDi"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 94,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

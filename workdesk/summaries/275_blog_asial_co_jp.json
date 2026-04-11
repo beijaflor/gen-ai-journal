@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:04:02.615777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": ".safetensors の中身、説明できる？ AIモデルファイル形式の歴史と仕組み",
+    "url": "https://blog.asial.co.jp/6659/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデル保存形式の歴史から、セキュリティ上の懸念を解消したsafetensors、CPU推論に特化したGGUFまでを技術的に解説した包括的ガイド。",
+    "summaryBody": "この記事では、深層学習以前の独自形式から現代のデファクトスタンダードに至るまでのAIモデルファイル形式の変遷を辿っています。初期のCaffe(Protocol Buffers)やKeras(HDF5)から、PyTorchで普及したpickle形式のセキュリティ脆弱性（任意コード実行のリスク）を指摘し、その解決策として誕生したsafetensorsの構造（JSONヘッダと純粋なバイナリデータ）を解説。また、ローカル推論を支えるGGUF形式と量子化技術の重要性についても触れています。現在はGPU向けのsafetensorsとCPU/ローカル向けのGGUFが棲み分けされており、各フォーマットが時代の要請（互換性、手軽さ、安全性、軽量化）に応えて進化してきた歴史がまとめられています。",
+    "topics": [
+      "safetensors",
+      "GGUF",
+      "機械学習",
+      "ファイルフォーマット",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:48:29.991481+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vera: 人間ではなくLLM（AIエージェント）が書くために設計されたプログラミング言語",
+    "url": "https://veralang.dev/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LLM特有の弱点である命名の混乱や論理的一貫性の欠如を解決するため、変数名を排除し強力な形式検証（SMTソルバー）と契約を義務付けた「AIエージェント専用」言語。",
+    "summaryBody": "Veraは、AIモデルがコードの記述主体となる未来を見据えて設計された新しいプログラミング言語です。従来の言語がハードウェア制約や人間の生産性を重視したのに対し、VeraはLLMが抱える「広範囲なコードの一貫性維持」や「命名に関連するエラー（ハルシネーション）」という課題を構造的に解決します。\n\n主な特徴は以下の通りです：\n1. **変数名の排除**: 型付きDe Bruijn指標（例: `@Int.0`）を使用し、名前による参照を構造的参照に置き換えることで命名ミスを根絶。\n2. **契約による検証 (Verification)**: すべての関数に事前条件、事後条件、不変条件の記述を義務付け。Z3ソルバーを用いてコンパイル時に静的検証を行います。\n3. **明示的なエフェクトシステム**: 代数的エフェクトを採用。IO、HTTP、LLM推論（Inference）などの副作用を型として宣言させ、純粋性を担保します。\n4. **LLM向け診断メッセージ**: コンパイルエラーはLLMが理解・修正しやすい自然言語形式と具体的な修正案として出力されます。\n5. **ポータビリティ**: WebAssembly (WASM) にコンパイルされ、CLIやブラウザ上で動作。 \n\nベンチマーク（VeraBench）では、学習データがゼロであるにもかかわらず、一部のモデルでPythonやTypeScriptを上回る正答率を記録しており、言語設計による構造的ガイドがLLMの能力を補完することを示唆しています。",
+    "topics": [
+      "Vera",
+      "AIエージェント",
+      "形式検証",
+      "LLM向けプログラミング言語",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Vera — A language designed for machines to write"
+  }
+}

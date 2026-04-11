@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:07:37.548975+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「メモリは8ギガで十分ですよ」時代の到来。1ビットLLM「Bonsai 8B」を8GBのMacBook Neoで動かしてみたら爆速だった。",
+    "url": "https://www.techno-edge.net/article/2026/04/04/4971.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "1ビット量子化により8.2Bモデルを1.1GBまで軽量化したLLM「Bonsai 8B」を、8GBメモリのMac環境で検証し、その実用性と驚異的なリソース効率を報告する記事。",
+    "summaryBody": "テクノエッジの松尾公也氏による、1ビットLLM「Bonsai 8B」のローカル実行レポート。Caltech（カリフォルニア工科大学）の研究チームが開発したこのモデルは、事後的な量子化ではなく、最初から全てのウェイトを-1または+1で学習した「ネイティブ1ビット」構成。8.2Bのパラメータを持ちながら、ファイルサイズはわずか1.1GB（FP16比で約93%減）に抑えられている。8GBメモリのMacBook Neoで動作させた結果、約21 tok/sの推論速度を達成しつつ、Llama 3.1 8Bに匹敵するベンチマークスコアを記録した。特筆すべきはTool Calling（関数呼び出し）の正確さで、3Bクラスのモデルでは難しかった複雑なエージェント動作も安定してこなす。ディスク占有量やメモリ消費が劇的に少ないため、画像生成や音声合成など他のAI機能との共存も容易。8GBという低メモリ環境がLLM活用のボトルネックではなくなる、新しい時代の到来を告げる検証内容となっている。",
+    "topics": [
+      "Bonsai 8B",
+      "1ビットLLM",
+      "ローカルLLM",
+      "MacBook Neo",
+      "エージェンティックAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

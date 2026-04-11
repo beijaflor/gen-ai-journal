@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:48:43.007823+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DESIGN.md 導入ガイド: AI実装のための入口・契約・検証をどう整えるか",
+    "url": "https://zenn.dev/minewo/articles/design-md-guide-and-adoption-log",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIと人間が共通の判断基準でUIを実装するための入口ドキュメント「DESIGN.md」の役割と、具体的な導入・運用方法を解説するガイド。",
+    "summaryBody": "AIによるUI実装が普及する中で、ページごとの微細なデザインのズレを防ぎ、実装の再現性を高めるための「DESIGN.md」活用法を提案しています。DESIGN.mdは単なるルール集ではなく、デザインツールの正本(SSoT)、コンポーネントの対応関係、検証手順への「入口」として機能します。記事ではGrowth Labの実践例を元に、トークン管理のJSON化、外部UI語彙の正規化、検証コマンド（pnpm penpot:verify）の導入など、AIへの指示コスト削減とレビュー品質向上を両立させる具体的な構成案や導入ステップを紹介しています。",
+    "topics": [
+      "AI実装",
+      "デザインシステム",
+      "フロントエンド開発",
+      "DESIGN.md",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

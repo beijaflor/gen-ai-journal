@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:39:54.329716+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング入門：AI駆動開発の次なるフロンティア",
+    "url": "https://slides.pawapo.minoruonda.com/7cee2011-90b7-4bc9-aa5a-2752acd54f5d/index.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの挙動をプロンプトではなく、テストや制約などの「環境（ハーネス）」によって制御・改善する次世代のエンジニアリング手法を提唱・解説した資料。",
+    "summaryBody": "AI駆動開発の進化は、2024年のプロンプトエンジニアリング、2025年のコンテキストエンジニアリングを経て、2026年には「ハーネスエンジニアリング」へと移行すると説いています。これはMitchell Hashimoto氏が提唱した概念で、AIエージェントが安定して成果を出せるよう、周囲の運用環境を設計することを指します。\n\n本資料ではハーネスを構成する4つの要素を定義しています：\n1. **アーキテクチャ制約**: Linterや命名規則などの仕組みで、AIが「やってはいけないこと」を物理的に防ぐ。\n2. **フィードバックループ**: テスト結果や型チェック、人間によるレビューをAIに自動返却し、自律修正を促す。\n3. **ワークフロー制御**: 複数エージェントの衝突防止や、タスクの依存関係を管理する。\n4. **改善サイクル**: AIのミスパターンをルールやテストへと昇格させ、仕組み自体を成長させる。\n\n「AIのミスをプロンプト修正で済ませず、二度と起きない構造を作る」というエンジニアリングの規律が、AI活用における品質担保の鍵となります。Claude CodeやCLAUDE.mdを用いた実践的な導入アプローチについても触れられています。",
+    "topics": [
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "Mitchell Hashimoto",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Harness Engineering Intro"
+  }
+}

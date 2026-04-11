@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:59:25.954245+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによるSupabase利用の現状と落とし穴：正しく使わせるためのヒント",
+    "url": "https://supabase.com/blog/supabase-agent-skills",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMやAIエージェントがSupabaseの知識を持ちながらも、しばしば古い実装や非効率なコードを生成する実態を解説し、改善策を提示した記事。",
+    "summaryBody": "現代のAIエージェントはSupabaseについて多くの知識を持っていますが、常に最新のベストプラクティスに従うわけではありません。本記事では、AIが生成しがちな「古いSDKバージョンの使用」「冗長なクライアント生成」「Row Level Security (RLS) の設定ミス」などの具体的なアンチパターンを指摘しています。これらを解決するために、開発者が最新のコンテキストをAIに提供する方法（docs.jsonの活用やMCP経由のアクセスなど）や、AIに期待される振る舞いを明確にするためのプロンプト戦略について詳述されています。AIを単なるコード生成器としてではなく、適切なコンテキストを与えるべきパートナーとして扱う重要性を説いています。",
+    "topics": [
+      "Supabase",
+      "AI Agents",
+      "LLM",
+      "Coding Assistant",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    },
+    "originalTitle": "AI Agents Know About Supabase. They Don't Always Use It Right."
+  }
+}

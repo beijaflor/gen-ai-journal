@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:00:20.562804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模にエージェントを構築する Claude Managed Agents を試してみた",
+    "url": "https://azukiazusa.dev/blog/claude-managed-agents/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicが発表したClaude Managed Agentsのパブリックベータを試用し、インフラ構築不要で自律的エージェントを構築・運用する基本概念とGitHub連携の実例を解説した記事。",
+    "summaryBody": "Claude Managed Agentsは、自律型AIエージェントの実行に必要なサンドボックス、ストレージ、モニタリング等のインフラをAnthropicが提供するフルマネージドサービスです。本記事では、エージェント、環境、セッション、イベントという4つの主要概念を整理し、Claude Console上でのセットアップ手順を紹介しています。さらに実践的な例として、GitHub MCPサーバーとCredential Vaultを活用し、エージェントが自律的にリポジトリをクローンして修正を行い、プルリクエストを作成するまでのプロセスを詳細にレポートしています。従量課金制（トークン料 + セッション実行時間）である点や、Messages APIとの使い分けについても言及されており、大規模なエージェント展開を検討する開発者に有用なガイドとなっています。",
+    "topics": [
+      "Claude Managed Agents",
+      "AI Agent",
+      "MCP (Model Context Protocol)",
+      "Anthropic",
+      "GitHub Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

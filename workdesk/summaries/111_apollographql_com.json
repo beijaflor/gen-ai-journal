@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:45:32.146733+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに「調査」をさせるな。「知識」を与えよ：Apollo Skillsによるトークン削減と高速化の実証",
+    "url": "https://www.apollographql.com/blog/your-ai-agent-doesnt-need-to-research-it-needs-to-know",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントにキュレートされた「Skills」を提供することで、調査プロセスを排除し、トークン消費量を63%削減、実行時間を半分以下に短縮できることをApolloが実証した。",
+    "summaryBody": "Apollo GraphQLは、AIエージェントの効率を劇的に向上させる「Apollo Skills」の有効性に関する比較実験の結果を公開しました。従来のAIエージェントはWeb検索やドキュメントの読み込みといった「調査」に多くのトークンと時間を費やしていますが、事前に最適化された「Skills（知識）」を与えることで、トークン消費を65,000から24,000へ削減し、実行時間を5分から2分未満へと大幅に短縮できました。この記事では、質の高いSkillsがLLMの「自信満々な間違い」を防ぐこと、そしてSkillsを本番コードのように継続的にメンテナンスし評価（Eval）することの重要性を説いています。特にCI/CD環境やローカルLLMなどのリソース制約がある場面において、このアプローチは開発サイクル全体の高速化に寄与します。",
+    "topics": [
+      "AI Agents",
+      "Apollo GraphQL",
+      "Token Optimization",
+      "Model Context Protocol (MCP)",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Your AI Agent Doesn't Need to Research. It Needs to Know."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:09:02.620175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bonsai-8B考察 — 1-bit LLMは使い物になるのか",
+    "url": "https://qiita.com/y0kud4/items/3f7faeea52d7eec01b0f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Caltech発のPrismMLが開発した、重みを0と1のみで表現する1.15GBの超軽量1-bit LLM「Bonsai-8B」の技術構造、性能、およびエッジデバイスでの実用性を深く考察した記事。",
+    "summaryBody": "この記事は、PrismMLがリリースした真の1-bit大規模言語モデル（LLM）「Bonsai-8B」についての技術的な深掘りと、コミュニティでの議論をまとめたものです。Bonsai-8Bは、重みをバイナリ（0または1）で保持することで、8Bパラメータでありながらメモリ消費をわずか1.15GBに抑えています。\n\n主な内容は以下の通りです：\n- **技術的特徴**: MicrosoftのBitNet（3値）とは異なる純粋なバイナリ重みを採用。学習段階から1-bitを前提とした「ネイティブ量子化」により、極小サイズながら一定の知能を維持している。\n- **性能評価**: コーディング能力には優れるが、推論や数学に弱点がある。実効的な能力は2B〜4Bモデルと同等であり、1GB程度のメモリ枠内では最強クラスの知識密度を誇る。\n- **実行環境**: `q1_0_g128`フォーマットへの対応が必要で、特定のllama.cppビルドを自力でコンパイルする必要がある。MacのM1環境では1.15GBという軽さが大きな利点となる。\n- **ユースケース**: デスクトップ用途ではなく、ロボティクスやIoTなど「LLMがこれまで動かなかった」極限のメモリ制約環境が真のターゲットである。\n- **Bankai**: 1-bitモデル特有の困難を解消する、独自のポストトレーニング適応手法についても触れられています。",
+    "topics": [
+      "LLM",
+      "1-bit LLM",
+      "Bonsai-8B",
+      "PrismML",
+      "Edge AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

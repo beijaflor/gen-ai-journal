@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:06:05.975912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Linuxカーネル開発におけるAIコーディングアシスタントの利用ガイドライン",
+    "url": "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst",
+    "language": "ja",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "Linuxカーネルコミュニティは、AI生成コードの利用に関する公式ガイドラインを策定し、開発者による法的責任の明記とAssisted-byタグによる属性表示を義務付けました。",
+    "summaryBody": "Linuxカーネルの公式ドキュメント（Documentation/process/coding-assistants.rst）に、AIコーディングアシスタントを利用する際の明確な指針が追加されました。主な規定は以下の通りです。まず、AIエージェント自身がSigned-off-byタグを付与することは禁止されており、人間がコードをレビューした上で開発者証明書（DCO）に対する全責任を負わなければなりません。また、ライセンス面ではGPL-2.0-onlyへの適合が厳守されます。さらに、開発プロセスの透明性を確保するため、AIを使用した貢献には「Assisted-by: モデル名:バージョン」という形式のタグを含めることが求められます。これにより、AIがカーネル開発に与える影響を追跡可能な状態に保つ狙いがあります。",
+    "topics": [
+      "Linux Kernel",
+      "AI Coding Assistants",
+      "Open Source Policy",
+      "DCO",
+      "Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "linux/Documentation/process/coding-assistants.rst"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:53:04.311458+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント開発の参考に！GitHub Copilotのシステムプロンプトを見てみよう",
+    "url": "https://zenn.dev/microsoft/articles/github-copilot-prompts",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "VS Code版GitHub CopilotのOSS化されたシステムプロンプトを分析し、AIエージェント開発における責務の分散、モデル毎の最適化、UI連携の設計手法を解説する。",
+    "summaryBody": "この記事では、MITライセンスで公開されているVS Code向けGitHub Copilotのソースコードから、実際のシステムプロンプトを読み解き、AIエージェント開発のベストプラクティスを抽出しています。主なポイントとして、1) プロバイダー（OpenAI/Anthropic等）の特性に合わせた指示の使い分け、2) 「計画作成」と「実装」の責務を厳格に分離する設計、3) トークン上限時の「引き継ぎ文書」としての高度な会話要約手法、4) UI上でクリック可能なリンクを生成するための厳密な出力制約（契約）の定義、を挙げています。単なる文面の紹介に留まらず、プロンプトを共通部品化する構造や、エージェントが自律的に動くためのワークフロー設計を具体的に解説しており、実戦的なAIアプリケーション開発者にとって非常に有益な知見がまとまっています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      "システムプロンプト",
+      "LLM",
+      "VS Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 80,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

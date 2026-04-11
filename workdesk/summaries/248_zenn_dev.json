@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:10:56.772786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセキュリティ設定を本気で固めた話【2026年版】",
+    "url": "https://zenn.dev/momozaki/articles/10cf58b08de335",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "機密情報の保護やサンドボックス化、TDDの強制など、Claude Codeを実務で安全に運用するための7つの高度なセキュリティ設定を詳しく解説しています。",
+    "summaryBody": "Claude Codeを業務利用する際のリスクを低減するための具体的なセキュリティ強化策を紹介しています。主な内容は、`.env`ファイルへのアクセスを拒否する権限設定、編集履歴の定期的な自動削除、`dotenvx`を用いた環境変数の暗号化、OSレベルでのサンドボックス有効化です。さらに、`CLAUDE.md`による開発ルールの自動適用や、プラグインを用いたテスト駆動開発(TDD)のデフォルト化、トークン消費量に応じたコンテキストの自動圧縮設定など、安全性を確保しつつ開発効率を維持するための技術的な手順がコードスニペットと共に網羅されています。",
+    "topics": [
+      "Claude Code",
+      "AI Security",
+      "LLM",
+      "DevSecOps",
+      "dotenvx"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

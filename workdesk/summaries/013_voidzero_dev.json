@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:09:12.734332+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用してAngularコンパイラを高速化した手法：VoidZeroによるRust製コンパイラの実験",
+    "url": "https://voidzero.dev/posts/oxc-angular-compiler",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "VoidZeroは、AIエージェント（Claude Code/Codex）を駆使してAngularコンパイラをRust製のOxc基盤へ移植し、最大20倍のコンパイル高速化に成功しました。",
+    "summaryBody": "VoidZeroは、AIコーディングエージェントを活用してAngularコンパイラをRustで再構築する実験的プロジェクト「Oxc Angular Compiler」を発表しました。このコンパイラはVite 8およびOxcを基盤としており、従来のAngular CLIと比較して最大20倍のビルド速度を達成しています。\n\n### 性能向上の理由\n既存のコンパイラが「HTMLテンプレート → TypeScript → JavaScript」という多段階の変換と型チェックを必要とするのに対し、本プロジェクトではOxcを用いてRustで直接テンプレート解析とコード生成を行うことで、TypeScriptのセマンティック・チェッカーによるオーバーヘッドを排除しました。\n\n### AIエージェントとの協働\n開発プロセスにおいて、Claude Codeを「実行者」として、Codexを「詳細なコードレビュアー」として活用。特に、既存のAngularコンパイラとの出力を1:1で比較する厳格なテストシステムをAIに管理・修正させることで、わずか2ヶ月で複雑なコンパイラのロジックを正確に移植しました。\n\n### 今後の展望\n本プロジェクト自体は実験的なものであり継続的なメンテナンスは予定されていませんが、Angularチームも公式にOxcの採用を検討しており、今回の知見が将来的なAngularのビルドスタック高速化に寄与する可能性があります。",
+    "topics": [
+      "Angular",
+      "Rust",
+      "Vite",
+      "AI Coding Agents",
+      "Oxc"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How we made the Angular Compiler faster using AI"
+  }
+}

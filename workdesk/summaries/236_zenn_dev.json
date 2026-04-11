@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:13:57.096526+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIクローラーにだけ課金する。Hono + x402で実現するCloudflare Workers上のAIペイウォール",
+    "url": "https://zenn.dev/jphfa/articles/x402-ai-crawler-monetization",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Honoとx402プロトコルを使い、Cloudflare Workers上で人間には無料で提供しつつ、AIクローラーに対してのみHTTP 402を返してSolana/USDCで課金するシステムの実装事例。",
+    "summaryBody": "この記事では、Cloudflare Workers + D1で運用されているBerghainのDJ出演記録データベースを事例に、AIクローラーのみを対象とした「x402ペイウォール」の導入方法が解説されています。Honoのミドルウェア設計を活用し、User-Agentに基づいて人間とAIボットを判別。AIボットに対してのみHTTP 402 Payment Requiredを返し、Solana上のUSDCでマイクロペイメントを要求する仕組みです。実際にOpenAI系のクローラー（GPTBot等）が支払いを行ってアクセスした実績や、Cloudflare Analytics Engineを用いた統計ダッシュボードの実装、Solanaメインネットへの移行プロセスなど、AI時代のサイト運営における新しい収益化とトラフィック管理の可能性を示しています。",
+    "topics": [
+      "Cloudflare Workers",
+      "Hono",
+      "x402",
+      "Solana",
+      "AI Crawler"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

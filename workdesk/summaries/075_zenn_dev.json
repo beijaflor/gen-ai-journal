@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:53:46.543507+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なんとなく改善からの脱却。Langfuseで作る、精度を改善し続けられるAI開発基盤",
+    "url": "https://zenn.dev/layerx/articles/cd04dd1350bac5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LayerXがLangfuseを導入し、プロンプト管理・トレース・データセット評価を統合することで、生成AI機能の精度を定量的かつ高速に改善し続けるための開発基盤を構築した事例を紹介しています。",
+    "summaryBody": "LayerXの「バクラク勤怠」におけるAI機能開発を題材に、確率的な挙動を示すLLMの精度をいかに定量的に管理・改善するかという課題への解法を解説しています。初期開発ではプロンプトの更新がリリースサイクルに縛られ、多段LLMコールの分析も困難でしたが、Langfuseの導入によりこれらを解決しました。\n\n主な基盤構成は以下の通りです：\n1. **Prompts**: バージョン管理されたプロンプトを環境デプロイと同期して管理。\n2. **Tracing**: 複数コールのI/Oやレイテンシを階層的に可視化しボトルネックを特定。\n3. **Datasets**: 失敗ケースをテストデータ化し、精度評価の基準として蓄積。\n\n改善フローでは、顧客フィードバックやデータ差分から失敗を特定し、Claude Codeによる自動改善とCIでのデグレチェックを組み合わせています。また、実運用上の知見として「TracingとDatasetsの入出力フォーマットを統一し、1クリックでデータセット追加を可能にすべき」という具体的な設計指針も示されています。",
+    "topics": [
+      "Langfuse",
+      "LLMOps",
+      "生成AI",
+      "プロンプト管理",
+      "LayerX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

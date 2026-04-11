@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:41:49.651197+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "共有スキルを2分類で管理する――AIスキル設計の理想と現実",
+    "url": "https://zenn.dev/uhyo/articles/ai-skill-modular",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントのスキルを「知識系」と「ワークフロー系」に分類し、チーム共有と個人カスタマイズを両立させる設計手法と、現状のAIの限界を踏まえた現実的な運用案を考察する。",
+    "summaryBody": "コーディングAIエージェントにおける「スキル」の共有と管理に関する考察記事です。著者は、スキルには作成者のオピニオンが入り込みやすいという課題に対し、スキルを「知識系（プロジェクト固有の知識など）」と「ワークフロー系（特定の手順の自動化）」の2つに分類することを提案しています。知識系はチーム全体で共有し、ワークフロー系は個人の好みに合わせて管理するのが望ましい形態です。理想的には、これらをモジュール化し、AIが自然言語の文脈から自動的に適切な知識スキルを呼び出すことが期待されますが、現状のAI（Claude Code等）の指示追随能力では呼び出し漏れが発生しやすいため、スキル名を明示的に指定するなどの現実的な妥協案が必要であると説いています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "スキル設計",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

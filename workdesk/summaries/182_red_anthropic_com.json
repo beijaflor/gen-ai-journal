@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:27:23.037893+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Mythos Previewのサイバーセキュリティ能力の評価",
+    "url": "https://red.anthropic.com/2026/mythos-preview/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが発表した新モデル「Claude Mythos Preview」が、OSやブラウザのゼロデイ脆弱性を自律的に発見・実証する高度なサイバーセキュリティ能力を備えていることを報告する技術レポート。",
+    "summaryBody": "Anthropicは、驚異的なサイバーセキュリティ能力を持つ新世代モデル「Claude Mythos Preview」の評価結果を公開しました。このモデルは、OpenBSDの27年前のバグやFFmpeg、Linuxカーネル、主要ウェブブラウザにおける未知の脆弱性（ゼロデイ）を自律的に発見し、複雑なエクスプロイト（JITヒープスプレーやROPチェインの構築など）を数時間で作成する能力を有しています。特に、熟練の専門家でも困難な複数の脆弱性の連鎖（チェイニング）を、人間の介在なしに成功させた点は特筆に値します。Anthropicはこのモデルの一般公開を制限しつつ、重要インフラの保護を目的とした「Project Glasswing」を始動しました。レポートでは、AIによる脆弱性発見が加速する未来に向け、防御側がパッチサイクルを劇的に短縮し、AIを活用した防御体制の抜本的な再構築を行う必要性を説いています。",
+    "topics": [
+      "Claude Mythos Preview",
+      "サイバーセキュリティ",
+      "ゼロデイ脆弱性",
+      "エクスプロイト開発",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "Assessing Claude Mythos Preview’s cybersecurity capabilities"
+  }
+}

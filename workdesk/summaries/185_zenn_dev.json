@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:26:36.190955+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのデフォルトeffort levelをmaxに固定する方法：環境変数での設定",
+    "url": "https://zenn.dev/madebyjun/articles/8f7d6bb9286b95",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのアップデートで低下したデフォルトの推論精度を、環境変数設定により常に最大（max）の状態へ固定する具体的な手順を解説します。",
+    "summaryBody": "Claude Codeのバージョンv2.1.68以降、デフォルトのeffort level（推論の深さ）がmediumに変更されました。回答の質を最大化したい場合、これをmaxに設定する必要がありますが、現時点の仕様ではsettings.jsonへの記述が永続化されないバグが存在します。この記事では、シェルの設定ファイル（.zshrc等）に環境変数 `CLAUDE_CODE_EFFORT_LEVEL=max` を追加することで、この制限を回避し、常に最高レベルの推論を適用する方法を紹介しています。公式の一時的な引き上げ機能である『ultrathink』よりも強力で、実用的なワークアラウンドとして有用です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "Developer Tools",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}
