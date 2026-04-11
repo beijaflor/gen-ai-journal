@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:44:08.911444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "とりあえず ralph loopからはじめるハーネスエンジニアリング",
+    "url": "https://zenn.dev/explaza/articles/100d753df57fa7",
+    "language": "ja",
+    "contentType": "🛠️ Guide & Tutorial (解説・チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに自律的な試行錯誤を行わせる手法「ralph loop」を、Claude Codeを用いた具体的なワークフローと共に解説しています。",
+    "summaryBody": "**ralph loop**は、AIエージェントにプロンプトを反復的に入力し、成果物が完了条件（promise）を満たすまで段階的に改善を繰り返させる開発手法（ハーネスエンジニアリング）です。本記事では、**Claude Code**のプラグイン機能を利用し、E2Eテストの実装とレビューを自動ループ化する具体例を紹介しています。**.claude/agents**で定義したレビュー専門エージェントと、カスタムコマンドを組み合わせることで、人間が介在せずに「テスト失敗・修正・再レビュー」のサイクルを回す仕組みを構築できます。これにより、AIが不完全なコードを「問題なし」と誤判定して作業を終了する課題を解決し、自律的な開発プロセスの信頼性を向上させます。",
+    "topics": [
+      "Claude Code",
+      "ralph loop",
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "E2Eテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 80
+    }
+  }
+}

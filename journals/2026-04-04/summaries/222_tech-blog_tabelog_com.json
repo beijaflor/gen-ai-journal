@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:57:01.761728+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ドキュメントをAIのナレッジに変える：Confluence × Figma MCP server でフロントエンド開発を加速した話",
+    "url": "https://tech-blog.tabelog.com/entry/document-to-ai-knowledge",
+    "language": "ja",
+    "contentType": "🛠️ Case Study (事例紹介)",
+    "oneSentenceSummary": "ConfluenceやFigmaのドキュメントをMCPサーバー経由でAIに直接参照させることで、フロントエンド開発とテスト生成の精度を劇的に向上させた事例。",
+    "summaryBody": "食べログの店舗管理画面刷新プロジェクトにおいて、**Atlassian MCP**と**Figma MCP server**を活用してAI（**Devin**, **Claude Code**, **Cursor**）を「仕様を理解するパートナー」へと進化させた実践記録です。\\n\\n従来、プロンプトのみではビジネスロジックの漏れやデザイン再現性の低さが課題でしたが、**Confluence**の要件定義書や**Figma**のデザインデータをAIが自ら参照する環境を構築。**Bulletproof React**に基づく設計規約をAIに提示する**Few-shot prompting**を併用することで、実装コストを従来の約4分の1（1日作業を1〜2時間に短縮）に削減しました。また、ドキュメントに基づいた**Gherkin**記法のテストケース自動生成にも成功しています。\\n\\nAI主導の開発フローを構築したい、あるいは社内ドキュメントをAIのナレッジベースとして効果的に接続したいエンジニアチームにとって非常に価値のある内容です。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Confluence",
+      "Figma",
+      "Webフロントエンド",
+      "React"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 88
+    }
+  }
+}

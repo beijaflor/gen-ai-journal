@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:56:24.822393+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClaw × OllamaをMacBook 16GBで動かす - ローカルLLM入門",
+    "url": "https://zenn.dev/komlock_lab/articles/openclaw-local-llm",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MacBook 16GB環境でOpenClawとOllamaを組み合わせ、実用的なローカルAIエージェントを構築する手順と、スペック面での現実的な制約を詳解するチュートリアル。",
+    "summaryBody": "本記事は、TypeScript製AIエージェントフレームワーク「OpenClaw」とローカルLLM実行環境「Ollama」をMacBook Pro (16GB RAM) で動作させるための実践ガイドです。わずか3つのコマンドで環境を構築する手順に加え、Qwen3:8bなどのモデル選択基準、CPU推論時のレイテンシ実測値（約1分/応答）、および16GBメモリ環境での限界を正直に解説しています。特に、OpenClaw自体がシステムプロンプトやツール定義等で約12,000トークンを初期消費するため、32K以上のコンテキスト設定が運用上の必須要件であるという構造的課題に深く触れています。また、ローカルLLMを優先しつつ必要に応じてクラウドAPIへフォールバックするハイブリッド設定の記述や、VRAM容量に応じたKVキャッシュのメモリ計算、14項目にわたる詳細なトラブルシューティングも網羅されており、開発者が直面する「動くが実用的ではない」状態を回避するための実践的な知見が凝縮されています。単なる導入手順に留まらず、ローカル運用の経済的合理性と限界を冷徹に分析した内容です。",
+    "topics": [
+      "Ollama",
+      "OpenClaw",
+      "ローカルLLM",
+      "AIエージェント",
+      "MacBook"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

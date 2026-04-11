@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:02:07.154996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mastra をバックエンド + AI エージェントサーバーとして本番運用してみた",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/63059/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeScript製AIエージェントフレームワーク「Mastra」を活用し、バックエンドAPIとの統合、Langfuseによる可観測性の確保、プロンプト管理を実践した本番運用の知見を解説。",
+    "summaryBody": "サイバーエージェントの開発チームによる、TypeScript製AIエージェントフレームワーク「Mastra」の本番運用事例です。MastraがVercel AI SDKベースであり、Honoを用いたHTTPサーバー機能を内蔵している点を活かし、バックエンドAPIとエージェント機能を単一のサーバー（モノリス）として構築。これにより、クリーンアーキテクチャにおけるドメイン層のロジックをAIの「Tool」として効率的に再利用しています。\n\n運用の鍵となる可観測性については、OpenTelemetry準拠のMastraをLangfuseと連携。GKE Autopilot上にセルフホストしたLangfuseを用いて、複雑なエージェントの処理工程（トレース）やトークンコストを可視化しています。また、プロンプトをコードから分離してLangfuse上で管理することで、デプロイなしでの即時反映やバージョン管理、非エンジニアとの共有を可能にしました。破壊的変更への追従という課題はあるものの、開発スピードとデバッグのしやすさを両立する構成となっています。",
+    "topics": [
+      "Mastra",
+      "AIエージェント",
+      "Langfuse",
+      "TypeScript",
+      "可観測性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

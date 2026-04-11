@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:43:51.939175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agents Observe: Claude Codeのマルチエージェント動作をリアルタイムで可視化するダッシュボード",
+    "url": "https://github.com/simple10/agents-observe",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeでの複雑なマルチエージェント・セッションを可視化し、サブエージェントの階層やツール呼び出しをリアルタイムで追跡できるオープンソースの監視ダッシュボード。",
+    "summaryBody": "「Agents Observe」は、Anthropicが提供するCLIエージェント「Claude Code」の挙動を詳細に監視するためのダッシュボードツールです。Claude Codeが自律的に動作する際、ターミナル上では把握が困難な「サブエージェントの生成」「並列実行中のツール呼び出し」「具体的なファイル操作」などの内部プロセスを、リアルタイムのストリーム形式で可視化します。独自のフックシステムを採用することで、OTEL（OpenTelemetry）よりも広範なコンテキストの取得を可能にしています。主な機能として、エージェントの親子関係の表示、イベントペイロードの展開表示、過去セッションの履歴管理などが備わっています。導入はClaude Codeのプラグインマーケットプレイス、またはDocker経由で行え、開発者がエージェントのデバッグや振る舞い分析を行う際の透明性を劇的に向上させます。",
+    "topics": [
+      "Claude Code",
+      "LLM Agents",
+      "Observability",
+      "Developer Tools",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - simple10/agents-observe: Real-time observability of claude code sessions & multi-agents."
+  }
+}

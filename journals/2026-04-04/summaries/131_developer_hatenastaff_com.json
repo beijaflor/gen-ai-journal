@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-07T00:19:41.960626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間がバグ修正でAIに負けた日",
+    "url": "https://developer.hatenastaff.com/entry/2026/03/26/180000",
+    "language": "ja",
+    "contentType": "💡 Case Study (事例紹介)",
+    "oneSentenceSummary": "本番環境で発生した複雑な副作用バグの修正において、GitHub Copilot Coding Agentが人間よりも迅速かつ正確に原因を特定し解決した実例を報告する。",
+    "summaryBody": "本記事は、**はてな**のエンジニアが本番環境で直面したバグ修正において、人間とAI（**GitHub Copilot Coding Agent**）の対応能力を比較した事例紹介である。対象となったのは、**GraphQL**のフィールド解決順序、キャッシュの有無、および配列への破壊的操作が組み合わさった際のみ発生する、極めて特定が困難な副作用バグであった。人間が焦りや確証バイアスによって調査に難航する一方、AIはコードベースの静的解析を通じて共有参照の破壊を即座に指摘し、1行の修正と適切な回帰テストを含むPRを生成した。\n\n筆者は、構造的な問題や一般的パターンのバグにおいては既にAIが人間を凌駕している可能性を認め、AIを「頼りになる追加の目」として不具合対応の初期段階から活用する戦術の有効性を説いている。また、将来的な展望として**AWS DevOps Agent**のような、監視アラートから自動調査・レポートまでを完結させる仕組みへの期待も示されている。\n\n本番障害対応の効率化を目指すエンジニアや、AIエージェントの具体的な実用性を測りたい開発リーダーにとって、現場のリアルな教訓が詰まった有益な記録である。",
+    "topics": [
+      "GitHub Copilot",
+      "デバッグ",
+      "AIエージェント",
+      "GraphQL",
+      "バグ修正"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:31:20.994972+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "話題の｢Claude Code｣ソースコード流出：内部実装や「隠し要素」が白日に",
+    "url": "https://www.gizmodo.jp/2026/04/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time.html",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicのAIコーディング支援ツール「Claude Code」のソースコードがnpm経由で誤って流出し、内部のプロンプト処理ロジックや隠し機能が明らかになりました。",
+    "summaryBody": "Anthropicが展開するAIコーディングツール「Claude Code」のバージョン2.1.88において、デバッグ用のソースマップファイル（.map）がnpmレジストリに誤って公開されました。これにより、約51万2,000行におよぶTypeScriptソースコードが難読化されていない状態で誰でも閲覧可能な状態となっていました。\n\n流出したコードの解析により、プロンプトのトークン計測方法やAPI呼び出しエンジンの仕様に加え、ユーザーがAIに悪態をついた際の内部的な分析処理、さらには「たまごっち」風の隠しバーチャルペット機能などの詳細が判明しています。Anthropicは、これが「人為的なパッケージングミス」によるものであり、顧客データや認証情報の流出はないと説明しています。IPOを控えた重要な時期におけるこの失態は、競合するOpenAI等とのシェア争いにおいてマイナスの影響を与える可能性があります。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "ソースコード流出",
+      "AI開発ツール",
+      "npm"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Claude code source code has been leaked via a map file in their npm registry!"
+  }
+}

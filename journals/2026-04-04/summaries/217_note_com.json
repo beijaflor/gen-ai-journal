@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:55:22.287899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "5060/5090 日本語ローカルLLM要約ベンチマーク(2026/4/1)",
+    "url": "https://note.com/shi3zblog/n/nf803fcc4a208",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5060/5090環境において、最新のローカルLLM群を用いた日本語長文要約性能を検証し、Qwen3シリーズが圧倒的な精度と効率を示すことを明らかにしたベンチマーク。",
+    "summaryBody": "2026年4月時点の最新GPU（RTX 5060/5090）をターゲットに、ローカル環境で動作するLLMの日本語要約能力を比較検証したレポート。7,000文字の独自原稿を200文字程度に要約させるタスクに対し、Claudeを用いた定性的評価とROUGE-L指標でランク付けを行っている。検証の結果、32GB VRAM環境では「qwen3:30b-a3b (MoE)」がS Tierとして卓越した品質を記録。また、8GB VRAMのRTX 5060環境では「qwen3:8b」が30Bクラスに迫るROUGE-Lスコア（0.333）を叩き出し、実用性が極めて高いことが示された。一方で、一部の小型モデルや旧世代モデルでは、要約指示の無視やハルシネーションが発生しており、モデル選定の重要性を強調している。",
+    "topics": [
+      "ローカルLLM",
+      "ベンチマーク",
+      "Qwen3",
+      "RTX 5090",
+      "日本語自然言語処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T12:02:00.476163+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ComfyUIにおける動的VRAM管理：ローカル環境でのメモリ最適化",
+    "url": "https://blog.comfy.org/p/dynamic-vram-in-comfyui-saving-local",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ComfyUIに導入された動的VRAM管理機能により、GPUメモリの使用効率を最適化し、低スペックなローカル環境でも大規模モデルの実行を可能にする手法が解説されています。",
+    "summaryBody": "ComfyUIの公式ブログによる、新しい動的VRAM管理（Dynamic VRAM Management）機能の解説です。このアップデートにより、推論の各ステップで必要なテンソルのみをVRAMに配置し、不要になったデータを即座にシステムメモリへ退避させる高度なスケジューリングが可能になりました。これにより、従来の「モデル全体を常にVRAMに載せる」制約が緩和され、FLUX.1のような巨大なモデルを12GBや8GBといった標準的なコンシューマー向けGPUでも、パフォーマンスの低下を最小限に抑えつつ動作させることができます。ローカルLLMや画像生成AIにおけるメモリ不足問題に対する強力な解決策となります。",
+    "topics": [
+      "ComfyUI",
+      "VRAM最適化",
+      "Stable Diffusion",
+      "FLUX.1",
+      "AIハードウェア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Dynamic VRAM in ComfyUI: Saving Local"
+  }
+}

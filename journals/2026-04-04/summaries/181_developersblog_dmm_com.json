@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T14:37:23.120797+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "組織全体の技術的負債をAIで可視化するCIの構築",
+    "url": "https://developersblog.dmm.com/entry/2026/04/01/110000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DMMがAIエージェント（Claude Code）と独自MCPサーバー「Modifius」を連携させ、静的解析では困難だったコードの変更容易性を自動計測・可視化するCI基盤を構築した事例。",
+    "summaryBody": "DMM.comのプラットフォーム開発本部における、AIを活用した技術的負債可視化の取り組みです。従来の静的解析ツールでは困難だった「関心の分離」や「抽象レベルの不一致」といった設計上の課題を、LLMの推論能力を用いて定量化するMCPサーバー「Modifius」を開発。これをGitHub Actionsに組み込んだ「Modifius CI」により、120名規模の組織における多種多様なリポジトリの負債状況を自動で集計・可視化する仕組みを構築しました。\n技術的には、Claude Code Base ActionとLiteLLMを組み合わせ、Prompt Cachingによる約90%のコスト削減、温度パラメータ0設定による決定性の確保、GitHub ActionsのMatrixを用いた並列実行制御など、実運用における課題を具体的に解決しています。導入の結果、負債スコアの数値化がリファクタリングの優先順位付けと意思決定を後押しし、DIツールの刷新といった具体的な改善に繋がった成果が報告されています。",
+    "topics": [
+      "技術的負債",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "GitHub Actions",
+      "コード品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "組織全体の技術的負債をAIで可視化するCIの構築 - DMM Developers Blog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-08T15:07:49.575879+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.5-Omni：ネイティブ・オムニモーダルAGIへのスケーリング",
+    "url": "https://qwen.ai/blog?id=qwen3.5-omni",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.5-Omniが、テキスト・画像・音声・動画の全モダリティをネイティブ統合し、10時間超の音声入力やリアルタイム対話に対応した次世代のオムニモーダルLLMを実現しました。",
+    "summaryBody": "本記事は、Qwenチームが開発した最新のオムニモーダルモデル**Qwen3.5-Omni**の技術詳細を紹介しています。このモデルは**Hybrid-Attention MoE**とThinker-Talkerアーキテクチャを採用し、最大256kのロングコンテキスト、10時間以上の音声、400秒以上のHD動画を処理可能です。特に、テキストと音声の動的アライメント技術である**ARIA**の導入により、リアルタイム対話における音声合成の安定性が大幅に向上しています。ベンチマークでは**Gemini-3.1 Pro**に匹敵する性能を示し、音声・動画指示からの直接コーディング（Audio-Visual Vibe Coding）といった新機能も確認されています。リアルタイムAPIを通じてWebSearchや音声クローン機能も提供されており、高度な対話型AIアプリケーションの構築を目指す開発者にとって極めて価値の高い技術です。",
+    "topics": [
+      "Qwen3.5-Omni",
+      "オムニモーダルLLM",
+      "リアルタイム対話AI",
+      "ARIA",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": "Qwen3.5-Omni: Scaling Up, Toward Native Omni-Modal AGI"
+  }
+}

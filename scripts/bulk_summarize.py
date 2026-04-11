@@ -16,7 +16,10 @@ Usage:
     uv run scripts/bulk_summarize.py --dry-run
 """
 
+import os
 import sys
+import time
+import signal
 import argparse
 import subprocess
 import re
@@ -79,20 +82,26 @@ def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, 
             '--output', str(output_path)
         ]
 
-        result = subprocess.run(
+        # Use process group so we can kill uv + python child together
+        proc = subprocess.Popen(
             cmd,
-            capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
-            timeout=120
+            start_new_session=True
         )
+        try:
+            stdout, stderr = proc.communicate(timeout=120)
+        except subprocess.TimeoutExpired:
+            # Kill entire process group (uv + python grandchild)
+            os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+            proc.wait()
+            return False, "ERROR: Timeout generating summary"
 
-        if result.returncode == 0 and output_path.exists():
+        if proc.returncode == 0 and output_path.exists():
             return True, str(output_path)
         else:
-            return False, f"ERROR: {result.stderr}"
-
-    except subprocess.TimeoutExpired:
-        return False, "ERROR: Timeout generating summary"
+            return False, f"ERROR: {stderr}"
     except Exception as e:
         return False, f"ERROR: {str(e)}"
 
@@ -223,23 +232,25 @@ def main():
     print("Generating summaries")
     print("=" * 60)
 
-    for url_id, url in unchecked_urls:
-        print(f"\n[{url_id:03d}] Processing: {url}")
+    for i, (url_id, url) in enumerate(unchecked_urls):
+        if i > 0:
+            time.sleep(2)  # Rate limit: 2s delay between requests
+        print(f"\n[{url_id:03d}] Processing: {url}", flush=True)
 
         success, result = generate_summary(url, url_id, summaries_dir)
 
         if success:
-            print(f"✓ Summary generated: {result}")
+            print(f"✓ Summary generated: {result}", flush=True)
 
             # Mark as checked
             if mark_as_checked(sources_file, url_id):
-                print(f"✓ Marked as checked in sources.md")
+                print(f"✓ Marked as checked in sources.md", flush=True)
                 results[url_id] = {'success': True, 'path': result}
             else:
-                print(f"✗ Failed to mark as checked")
+                print(f"✗ Failed to mark as checked", flush=True)
                 results[url_id] = {'success': False, 'error': 'Failed to mark as checked'}
         else:
-            print(f"✗ Failed: {result}")
+            print(f"✗ Failed: {result}", flush=True)
             results[url_id] = {'success': False, 'error': result}
 
     # Final summary

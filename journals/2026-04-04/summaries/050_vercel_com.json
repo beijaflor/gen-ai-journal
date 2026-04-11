@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T09:08:33.429116+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代の責任ある開発：Vercelが提唱する「依存」と「活用」の境界線",
+    "url": "https://vercel.com/blog/agent-responsibly",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが生成する「完璧に見えるコード」が孕む本番環境へのリスクを指摘し、エンジニアが維持すべき判断力と、インフラによる自動的なガードレール構築の必要性を説いています。",
+    "summaryBody": "Vercelが社内向けに行った講演をベースとした本記事では、AIエージェントによるコード生成の急速な普及に伴う新たなリスクについて論じられています。エージェントが生成したコードは、静的解析やテストを容易にパスし「完璧なPR」に見えますが、本番環境のトラフィックパターンやDB負荷、キャッシュ制約までは理解していません。筆者は、AIを単に「依存（Relying）」するのではなく、出力に全責任を持つ「活用（Leveraging）」の姿勢が重要であると強調します。コードの実装自体がコモディティ化する中で、エンジニアの希少価値は「何が安全かを判断する能力」へ移行します。Vercelはこの課題に対し、カナリアデプロイの自動化、カオスエンジニアリングによる継続的な検証、およびベストプラクティスをツールとして実行可能にする「ガードレールのコード化」への投資を提唱しています。",
+    "topics": [
+      "AIエージェント",
+      "Vercel",
+      "AI SDK",
+      "デプロイメントパイプライン",
+      "信頼性エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Agent responsibly"
+  }
+}

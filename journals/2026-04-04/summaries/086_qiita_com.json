@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:12:17.826262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AgentCore 上の Claude Code の出力を AppSync Event API でリアルタイムにブラウザへ流す",
+    "url": "https://qiita.com/Kota__Sasaki/items/a5008e550de8fa01dc61",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreで動作するClaude Codeのストリーミング出力を、AppSync Event APIを用いて低遅延かつ低コストにブラウザへ配信する実装ガイド。",
+    "summaryBody": "この記事では、AgentCore上のClaude Codeから出力されるテキストチャンクを、AWS AppSync Event APIを活用してリアルタイムにフロントエンド（React）へストリーミングする方法を解説しています。従来のGraphQL Subscriptionよりも軽量なEvent APIを採用し、Publisher（エージェント）はHTTP POST、Subscriber（ブラウザ）はWebSocketを用いる構成を提案。実装の要点として、エージェント側でのSigV4署名による認証、Claude Codeのメインループをブロックしないための非同期（threading）送信、およびブラウザ側でのWebSocketサブプロトコルを利用したCognito認証の注意点（URL-safe Base64変換など）について具体的に記述されています。",
+    "topics": [
+      "AWS",
+      "AppSync Event API",
+      "AgentCore",
+      "Claude Code",
+      "WebSocket"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

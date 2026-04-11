@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:13:46.061600+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JSSE: AIエージェントのみで構築されたRust製JavaScriptエンジン",
+    "url": "https://p.ocmatos.com/blog/jsse-a-javascript-engine-built-by-an-agent.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "開発者がコードを一行も書かず、Claude CodeというAIエージェントへの指示のみで、ECMAScript標準テスト「test262」を100%パスするRust製JavaScriptエンジンを6週間で構築した実験的プロジェクトの記録。",
+    "summaryBody": "著者のPaulo Matos氏は、AIエージェント「Claude Code」を自律モード（YOLO mode）で運用し、人間が一切Rustコードを記述することなくJavaScriptエンジン「JSSE」を開発しました。このプロジェクトは開始からわずか6週間（人間の実働時間は計4時間）で、約17万行のコードを生成し、業界標準のテストスイート『test262』の非ステージングテスト98,426項目すべてに合格（100%パス）するという驚異的な成果を収めました。\n\n開発プロセスでは、エージェントが仕様書から自ら『PLAN.md』を作成し、テストの失敗をフィードバックとしてループを回す手法が取られました。最新のTemporal APIの実装も一晩で完了するなど、AIの圧倒的な生産性が示されています。現状、JSSEは抽象構文木（AST）を直接実行するツリーウォーク型インタープリタであるため、V8等の商用エンジンと比較して実行速度は遅いものの、正確性においては非常に高い水準にあります。\n\n本記事の教訓として、エージェント開発においては「質の高い計画（Plan）」と「明確なフィードバック信号（テストスイート）」がコードそのものよりも重要であること、そしてRustの厳格な型システムがAIによるバグ発見と修正に極めて有効であることが強調されています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Rust",
+      "JavaScriptエンジン",
+      "自律型開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": "JSSE: A JavaScript Engine Built by an Agent"
+  }
+}

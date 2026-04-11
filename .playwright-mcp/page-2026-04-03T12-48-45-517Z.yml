@@ -1,0 +1,696 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - link "Homepage" [ref=e8] [cursor=pointer]:
+        - /url: https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------
+        - img "Medium Logo" [ref=e9]
+      - generic [ref=e12]:
+        - listbox
+        - img [ref=e14]
+        - combobox "search" [ref=e16]
+    - button "Get the Medium app" [ref=e18] [cursor=pointer]:
+      - img [ref=e19]
+      - generic [ref=e22]: Get app
+    - link "Write" [ref=e25] [cursor=pointer]:
+      - /url: https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------
+      - generic [ref=e26]:
+        - img [ref=e27]
+        - text: Write
+    - generic [ref=e31]:
+      - paragraph [ref=e32]:
+        - button "Sign up" [ref=e34]
+      - paragraph [ref=e36]:
+        - link "Sign in" [ref=e38] [cursor=pointer]:
+          - /url: https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&source=post_page---top_nav_layout_nav-----------------------global_nav------------------
+    - tooltip "user options menu" [ref=e41]:
+      - button "user options menu" [ref=e43] [cursor=pointer]
+  - generic [ref=e48]:
+    - link "UX Collective" [ref=e56] [cursor=pointer]:
+      - /url: https://uxdesign.cc/?source=post_page---publication_nav-138adf9c44c-720ca15366c7---------------------------------------
+      - heading "UX Collective" [level=2] [ref=e57]:
+        - generic [ref=e58]: UX Collective
+    - generic:
+      - dialog
+    - article [ref=e60]:
+      - generic [ref=e64]:
+        - tooltip "Featured" [ref=e71]:
+          - generic [ref=e73] [cursor=pointer]:
+            - img [ref=e74]
+            - paragraph [ref=e76]: Featured
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - heading "Taste is not a feature" [level=1] [ref=e81]
+            - generic [ref=e82]:
+              - heading "On judgement, context, and why AI makes taste more important, not less." [level=2] [ref=e83]
+              - generic [ref=e86]:
+                - generic [ref=e87]:
+                  - generic [ref=e88]:
+                    - tooltip "Joshua Leigh" [ref=e91]:
+                      - link "Joshua Leigh" [ref=e93] [cursor=pointer]:
+                        - /url: https://medium.com/@joshualeigh?source=post_page---byline--720ca15366c7---------------------------------------
+                        - img "Joshua Leigh" [ref=e96]
+                    - generic [ref=e100]:
+                      - tooltip "Joshua Leigh" [ref=e103]:
+                        - link "Joshua Leigh" [ref=e106] [cursor=pointer]:
+                          - /url: https://medium.com/@joshualeigh?source=post_page---byline--720ca15366c7---------------------------------------
+                      - button "Follow" [ref=e107] [cursor=pointer]:
+                        - generic [ref=e109]: Follow
+                  - generic [ref=e112]:
+                    - generic [ref=e113]: 13 min read
+                    - generic [ref=e115]: ·
+                    - text: 6 days ago
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - generic [ref=e119]:
+                      - link "clap" [ref=e122] [cursor=pointer]:
+                        - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fuser-experience-design-1%2F720ca15366c7&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&user=Joshua+Leigh&userId=3ae8d4237762&source=---header_actions--720ca15366c7---------------------clap_footer------------------
+                        - tooltip "clap" [ref=e124]:
+                          - generic [ref=e125]:
+                            - img "clap"
+                      - tooltip "507" [ref=e128]:
+                        - paragraph [ref=e130]:
+                          - button "507" [ref=e131] [cursor=pointer]: "507"
+                    - tooltip "responses" [ref=e133]:
+                      - button "responses" [ref=e135] [cursor=pointer]:
+                        - img [ref=e136]
+                        - paragraph [ref=e138]: "8"
+                  - generic [ref=e139]:
+                    - tooltip "Add to list bookmark button" [ref=e142]:
+                      - link "Add to list bookmark button" [ref=e145] [cursor=pointer]:
+                        - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F720ca15366c7&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&source=---header_actions--720ca15366c7---------------------bookmark_footer------------------
+                        - img "Add to list bookmark button" [ref=e147]
+                    - link "Listen" [ref=e155] [cursor=pointer]:
+                      - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D720ca15366c7&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&source=---header_actions--720ca15366c7---------------------post_audio_button------------------
+                      - tooltip "Listen" [ref=e157]:
+                        - button "Listen" [ref=e159]:
+                          - img [ref=e160]
+                    - tooltip "Share Post" [ref=e164]:
+                      - button "Share Post" [ref=e166] [cursor=pointer]:
+                        - img [ref=e167]
+          - figure "Photo by Juan Miguel Agudo on Unsplash" [ref=e172]:
+            - button "Press enter or click to view image in full size" [ref=e173]:
+              - generic [ref=e174]: Press enter or click to view image in full size
+            - generic [ref=e177]:
+              - text: Photo by
+              - link "Juan Miguel Agudo" [ref=e178] [cursor=pointer]:
+                - /url: https://unsplash.com/photos/red-plastic-chair-on-black-background-NhwnmZ-vddo
+              - text: "on"
+              - link "Unsplash" [ref=e179] [cursor=pointer]:
+                - /url: https://unsplash.com/
+          - generic [ref=e181]:
+            - blockquote [ref=e182]:
+              - paragraph [ref=e183]:
+                - emphasis [ref=e184]: "“Taste has no system and no proofs. But there is something like a logic of taste: the consistent sensibility which underlies and gives rise to a certain taste.” —"
+                - text: Susan Sontag, 1964
+                - link "1" [ref=e185] [cursor=pointer]:
+                  - /url: https://monoskop.org/images/5/59/Sontag_Susan_1964_Notes_on_Camp.pdf
+            - paragraph [ref=e186]: Sixty years later, that line lands with a different weight. We are living through the fastest expansion of productive capability in the history of creative work. AI can generate interfaces, brands, campaigns, images, code, entire products, at a pace unthinkable even five years ago. The barriers to making things have, for the most part, dissolved.
+            - paragraph [ref=e187]:
+              - text: The question, then, is no longer
+              - emphasis [ref=e188]: can we build this?
+              - text: It is
+              - emphasis [ref=e189]: should we?
+              - text: "And more urgently:"
+              - emphasis [ref=e190]: how do we know if it’s any good?
+            - paragraph [ref=e191]: The answer, uncomfortable as it is for an industry built on optimisation and scale, is taste. Not taste as aesthetic preference, but taste as the disciplined capacity for contextual judgement, knowing why a specific choice matters here, now, and for this audience.
+            - heading "What we talk about when we talk about taste" [level=2] [ref=e192]
+            - paragraph [ref=e193]:
+              - text: "In 1757, the philosopher David Hume published “Of the Standard of Taste,” one of the most enduring attempts to resolve an old problem: if judgements of beauty are subjective, why do some endure across centuries while others vanish?"
+              - link "2" [ref=e194] [cursor=pointer]:
+                - /url: https://archive.org/details/bim_eighteenth-century_four-dissertations-i-t_hume-david_1757
+              - text: "His answer was that taste is not mere opinion. It is a faculty, developed through practice, sharpened by comparison, and refined by the deliberate removal of prejudice. Hume described the qualities of a “true judge”: delicate sentiment, strong sense, wide experience, and freedom from bias. The joint verdict of such judges, he argued, forms something close to an objective standard."
+            - paragraph [ref=e195]:
+              - text: Two centuries later, Pierre Bourdieu complicated the picture. In
+              - emphasis [ref=e196]: Distinction
+              - text: (1979), he argued that taste is never purely individual; it is shaped by class, education, and cultural position. “Taste classifies,” he wrote, “and it classifies the classifier.”
+              - link "3" [ref=e197] [cursor=pointer]:
+                - /url: https://www.hup.harvard.edu/books/9780674212770
+              - text: What we find beautiful reveals as much about where we come from as about the object itself.
+            - paragraph [ref=e198]: Both perspectives matter. Taste is not a fixed trait or an innate gift. It is an accumulated capacity for contextual judgement, shaped by what you’ve been exposed to, what you’ve chosen to pay attention to, and how honestly you’ve reckoned with the distance between what you thought was good and what turned out to be.
+            - link "Taste On subjectivity, gatekeeping, and the risk of leaving design industry terms like taste undefined. www.doc.cc" [ref=e200] [cursor=pointer]:
+              - /url: https://www.doc.cc/syntax/taste?source=post_page-----720ca15366c7---------------------------------------
+              - generic [ref=e202]:
+                - heading "Taste" [level=2] [ref=e203]
+                - heading "On subjectivity, gatekeeping, and the risk of leaving design industry terms like taste undefined." [level=3] [ref=e205]
+                - paragraph [ref=e207]: www.doc.cc
+            - heading "The stage you cannot skip" [level=2] [ref=e210]
+            - paragraph [ref=e211]:
+              - text: In 1926, the social psychologist Graham Wallas published
+              - emphasis [ref=e212]: The Art of Thought
+              - text: ", proposing a four-stage model of creative work: Preparation, Incubation, Illumination, and Verification."
+              - link "4" [ref=e213] [cursor=pointer]:
+                - /url: https://archive.org/details/theartofthought
+            - paragraph [ref=e214]: "The model is almost a century old. It remains remarkably useful, in part because it identifies something that most accounts of creativity prefer to ignore: the role of time."
+            - 'figure "Graham Wallas‘s four-stage model of creative work: Preparation, Incubation, Illumination, and Verification" [ref=e215]':
+              - 'button "Press enter or click to view image in full size Diagram depicting Graham Wallas’s four-stage model of creative work: Preparation, Incubation, Illumination, and Verification" [ref=e216]':
+                - generic [ref=e217]: Press enter or click to view image in full size
+                - 'img "Diagram depicting Graham Wallas’s four-stage model of creative work: Preparation, Incubation, Illumination, and Verification" [ref=e220]'
+              - generic [ref=e221]: "Graham Wallas‘s four-stage model of creative work: Preparation, Incubation, Illumination, and Verification"
+            - list [ref=e222]:
+              - listitem [ref=e223]:
+                - strong [ref=e224]: Preparation
+                - text: is the conscious gathering of material. You read, look, absorb, study.
+              - listitem [ref=e225]:
+                - strong [ref=e226]: Incubation
+                - text: is what happens next, a slower, largely unconscious process in which that material recombines. Connections form below the surface. References cross-pollinate.
+              - listitem [ref=e227]:
+                - strong [ref=e228]: Illumination
+                - text: is the moment of insight that follows.
+              - listitem [ref=e229]:
+                - strong [ref=e230]: Verification
+                - text: is the work of testing that insight against reality.
+            - paragraph [ref=e231]: The critical stage is the second one. Incubation is not passivity. It is the period during which exposure becomes understanding, and understanding becomes judgement. It is, in Wallas’s model, where taste is quietly forged.
+            - paragraph [ref=e232]: AI collapses this timeline almost entirely. You can now move from brief to output in seconds, from preparation to something that resembles illumination, without passing through the slow digestive work that transforms raw input into genuine discernment.
+            - paragraph [ref=e233]: When you skip incubation, you don’t eliminate the need for taste. You expose its absence faster.
+            - heading "The confusion of making with having made" [level=2] [ref=e234]
+            - paragraph [ref=e235]: There is a revealing case study in how this misunderstanding plays out.
+            - paragraph [ref=e236]:
+              - text: "In a 2024 podcast interview, Mikey Shulman, the CEO and co-founder of the AI music platform Suno, made a striking claim: that most people find the process of making music “not really enjoyable.”"
+              - link "5" [ref=e237] [cursor=pointer]:
+                - /url: https://futurism.com/suno-ai-ceo-making-music
+              - text: Suno’s premise, as Shulman described it, was not to make existing musicians more productive, but to let a billion people experience music without the difficulty of creating it. He later softened the remark, telling
+              - emphasis [ref=e238]: Billboard
+              - text: in March 2026, “I really wish I had chosen different words.”
+              - link "6" [ref=e239] [cursor=pointer]:
+                - /url: https://www.billboard.com/pro/suno-ai-music-startup-cover-story/
+            - paragraph [ref=e240]: "But the original statement is worth taking seriously, because it captures a widespread assumption in the technology industry: that the difficulty of creative work is a problem to be solved, rather than a process to be valued."
+            - paragraph [ref=e241]: This is Wallas’s incubation stage reframed as a bug. The hours spent learning an instrument, the frustration of a phrase that won’t resolve, the slow accumulation of skill through repetition, these are not obstacles between the person and the music. They are the music, or at least the conditions under which music acquires meaning for the person making it.
+            - paragraph [ref=e242]: When you build a tool premised on the idea that creation is an inconvenience, you are not democratising art. You are eliminating the thing that makes it matter.
+            - heading "A thousand shades of cerulean" [level=2] [ref=e243]
+            - paragraph [ref=e244]:
+              - text: There is a scene in
+              - emphasis [ref=e245]: The Devil Wears Prada
+              - text: (2006) that has become a useful shorthand for this argument.
+              - link "7" [ref=e246] [cursor=pointer]:
+                - /url: https://www.20thcenturystudios.com/movies/the-devil-wears-prada
+            - figure [ref=e247]
+            - paragraph [ref=e250]: Miranda Priestly’s monologue about cerulean blue is often remembered as a put-down. But what it actually demonstrates is the invisible depth behind an apparently trivial choice. The blue of a sweater is not arbitrary. It is the downstream result of a chain of decisions, by designers, editors, buyers, filtered through seasons of cultural negotiation, informed by decades of aesthetic history.
+            - paragraph [ref=e251]: When you lack that context, the choice looks like personal preference. When you have it, it looks like inevitability.
+            - paragraph [ref=e252]: "AI can produce a thousand variations of cerulean. What it cannot do is tell you why cerulean matters in this context, at this moment, for this audience, or when it doesn’t. That judgement requires exactly the accumulated, contextual knowledge Hume was describing: the capacity to make distinctions invisible to anyone without the requisite depth of exposure."
+            - heading "The friction was doing something" [level=2] [ref=e253]
+            - paragraph [ref=e254]: For most of the history of creative work, the process of making things acted as a filter. Time, cost, and technical difficulty forced practitioners to think before they produced, to refine before they shipped, to justify before they committed. Slowness was not merely a constraint. It was a form of quality control.
+            - paragraph [ref=e255]: "Charles Eames understood this:"
+            - blockquote [ref=e256]:
+              - paragraph [ref=e257]:
+                - emphasis [ref=e258]: "“Design depends largely on constraints. Here is one of the few effective keys to the design problem: the ability of the designer to recognise as many of the constraints as possible; his willingness and enthusiasm for working within these constraints.”"
+                - link "8" [ref=e259] [cursor=pointer]:
+                  - /url: https://www.eamesoffice.com/the-work/design-q-a/
+            - figure "Charles and Ray Eames at work in their studio" [ref=e260]:
+              - button "Press enter or click to view image in full size Designers Charles and Ray Eames filming in their studio for their 1957 short film, Toccata for Toy Trains." [ref=e261]:
+                - generic [ref=e262]: Press enter or click to view image in full size
+                - img "Designers Charles and Ray Eames filming in their studio for their 1957 short film, Toccata for Toy Trains." [ref=e265]
+              - generic [ref=e266]: Charles and Ray Eames at work in their studio
+            - paragraph [ref=e267]: "Brian Eno made a similar observation about creative work more broadly:"
+            - blockquote [ref=e268]:
+              - paragraph [ref=e269]:
+                - emphasis [ref=e270]: “There is an assumption that if you remove all constraints from people they will behave in some especially inspired manner. This doesn’t seem to be true in any sense at all, not socially, and certainly not artistically.”
+                - link "9" [ref=e271] [cursor=pointer]:
+                  - /url: http://music.hyperreal.org/artists/brian_eno/interviews/keyb81.html
+            - paragraph [ref=e272]: "Now, many of those constraints are gone. And their removal has created a new kind of problem: the ability to produce far more than you can meaningfully evaluate."
+            - paragraph [ref=e273]:
+              - text: A 2024 study published in
+              - emphasis [ref=e274]: Science Advances
+              - text: found that while generative AI enhanced individual creative output, it significantly reduced the collective diversity of that output.
+              - link "10" [ref=e275] [cursor=pointer]:
+                - /url: https://www.science.org/doi/10.1126/sciadv.adn5290
+              - text: People using AI produced work that was more polished but more convergent, gravitating toward the same patterns, the same solutions, the same aesthetic centre of gravity. More was produced. Less was different.
+            - paragraph [ref=e276]:
+              - text: A separate study, presented at CHI 2025, found a significant negative correlation between AI tool usage and critical thinking among knowledge workers, a pattern the researchers described as “cognitive offloading,” in which the ease of generation diminishes the depth of evaluation.
+              - link "11" [ref=e277] [cursor=pointer]:
+                - /url: https://dl.acm.org/doi/10.1145/3706598.3713778
+            - paragraph [ref=e278]: The implication is clear. When production becomes effortless, evaluation becomes the bottleneck. And evaluation, the capacity to discern what is good, what is appropriate, what matters, is precisely where taste lives.
+            - heading "The slop problem" [level=2] [ref=e279]
+            - paragraph [ref=e280]: The public, it turns out, can tell the difference.
+            - paragraph [ref=e281]:
+              - text: In late 2024, the technology journalist Casey Newton used the term “AI slop” to describe the flood of low-quality, AI-generated content spreading across the internet, from social feeds full of synthetic images to YouTube videos assembled entirely by machine.
+              - link "12" [ref=e282] [cursor=pointer]:
+                - /url: https://www.platformer.news/influence-campaigns-2024-ai-russia-china-iran/
+              - text: "The term stuck because it named something people were already feeling: a growing exhaustion with output that was abundant, superficially competent, and utterly devoid of intent."
+            - paragraph [ref=e283]: Slop is precisely what results when the incubation stage is skipped at scale. Without the slow, digestive work of understanding and judgement, output becomes a frictionless stream of convergent noise.
+            - paragraph [ref=e284]:
+              - text: The trajectory of OpenAI’s Sora is instructive here. Announced in early 2024 as a breakthrough in AI video generation, Sora was a genuine technical achievement. But as a creative tool, it struggled to produce work with coherence, authorship, or a sense of purpose beyond demonstration. By March 2026, OpenAI confirmed it was shutting down the standalone Sora app, citing the need to “make trade-offs on products that have high compute costs” and to refocus on other priorities.
+              - link "13" [ref=e285] [cursor=pointer]:
+                - /url: https://www.cnn.com/2026/03/24/tech/openai-sora-video-app-shutting-down
+              - text: Disney, which had been in discussions for a partnership reportedly worth up to $1 billion, pulled out.
+              - link "14" [ref=e286] [cursor=pointer]:
+                - /url: https://www.nytimes.com/2026/03/24/technology/openai-shutting-down-sora.html
+            - 'figure "Still from a video generated with Sora. Source: OpenAI" [ref=e287]':
+              - button "Press enter or click to view image in full size Still from a video generated with Sora. A man rides a horse which is on top of another horse" [ref=e288]:
+                - generic [ref=e289]: Press enter or click to view image in full size
+                - img "Still from a video generated with Sora. A man rides a horse which is on top of another horse" [ref=e292]
+              - generic [ref=e293]:
+                - text: "Still from a video generated with Sora. Source:"
+                - link "OpenAI" [ref=e294] [cursor=pointer]:
+                  - /url: https://openai.com/index/sora-2/
+            - paragraph [ref=e295]:
+              - text: The shutdown was widely interpreted not as a failure of capability but as a failure of purpose.
+              - emphasis [ref=e296]: Kotaku
+              - text: described the platform as a “slop farm.”
+              - link "15" [ref=e297] [cursor=pointer]:
+                - /url: https://kotaku.com/openai-sora-2-app-disney-shut-down-deal-ai-bubble-2000681803
+              - text: The technology worked. The taste, the sense of why something should exist and what it should feel like, was absent.
+            - paragraph [ref=e298]: This is not a niche concern. It is a market signal. Audiences are not rejecting AI because they fear the technology. They are rejecting it because they can sense, even if they cannot always articulate, the absence of the human judgement that gives creative work its weight.
+            - heading "When technology forgets" [level=2] [ref=e299]
+            - paragraph [ref=e300]: Many of the more conspicuous failures in technology are not failures of engineering. They are failures of context.
+            - paragraph [ref=e301]:
+              - text: In May 2025, Uber launched “Route Share,” a fixed-route shuttle service with scheduled departures along pre-set corridors during peak commuting hours, with shared rides and stops every twenty minutes.
+              - link "16" [ref=e302] [cursor=pointer]:
+                - /url: https://www.uber.com/newsroom/introducing-route-share/
+              - text: The description is, of course, that of a bus. The concept is not inherently foolish. But it arrives without acknowledgement of the century of social, civic, and infrastructural history that shaped public transit into what it is. It solves from scratch a problem that was solved generations ago.
+            - 'figure "Uber’s Route Share feature. Source: Uber.com" [ref=e303]':
+              - button "Press enter or click to view image in full size Smartphone containing a screen map from Uber’s Route Share feature" [ref=e304]:
+                - generic [ref=e305]: Press enter or click to view image in full size
+                - img "Smartphone containing a screen map from Uber’s Route Share feature" [ref=e308]
+              - generic [ref=e309]:
+                - text: "Uber’s Route Share feature. Source:"
+                - link "Uber.com" [ref=e310] [cursor=pointer]:
+                  - /url: https://www.uber.com/blog/route-share/
+            - paragraph [ref=e311]: While this might seem like a failure of urban planning, it is fundamentally a failure of product taste. Just as creative taste requires knowing the aesthetic history of cerulean blue, product taste requires understanding the civic and historical context of the problem you are trying to solve.
+            - generic [ref=e312]:
+              - heading "Get Joshua Leigh’s stories in your inbox" [level=2] [ref=e314]
+              - paragraph [ref=e316]: Join Medium for free to get updates from this writer.
+              - generic [ref=e317]:
+                - textbox "Enter your email" [ref=e321]
+                - button "Subscribe" [ref=e324]
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - checkbox "Remember me for faster sign in" [checked]
+                  - img [ref=e329] [cursor=pointer]
+                - paragraph [ref=e332]: Remember me for faster sign in
+            - paragraph [ref=e333]:
+              - text: “Your scientists were so preoccupied with whether or not they could,” as Ian Malcolm puts it in
+              - emphasis [ref=e334]: Jurassic Park
+              - text: ", “they didn’t stop to think if they should.”"
+              - link "17" [ref=e335] [cursor=pointer]:
+                - /url: https://michaelcrichton.com/works/jurassic-park/
+              - text: Michael Crichton wrote that line in 1990, but it has aged into something close to a proverb for the technology industry, a concise diagnosis of what happens when capability outpaces judgement.
+            - paragraph [ref=e336]:
+              - text: "Evgeny Morozov named this broader tendency “technological solutionism” in 2013: the belief that complex human problems can be resolved cleanly through technology alone."
+              - link "18" [ref=e337] [cursor=pointer]:
+                - /url: https://www.publicaffairsbooks.com/titles/evgeny-morozov/to-save-everything-click-here/9781610393706/
+              - text: "But what sits beneath solutionism is something more fundamental: a narrowness of reference. A lack of the historical and cultural literacy that would allow you to recognise when you’re reinventing something rather than inventing it."
+            - heading "The cost of narrow inputs" [level=2] [ref=e338]
+            - paragraph [ref=e339]: There may be a structural reason why these failures recur.
+            - paragraph [ref=e340]:
+              - text: Over the past two decades, the technology industry has overwhelmingly privileged STEM disciplines, at the direct expense of the humanities. In the United States, the number of humanities degrees awarded fell nearly 25% between 2012 and 2020.
+              - link "19" [ref=e341] [cursor=pointer]:
+                - /url: https://www.amacad.org/humanities-indicators/higher-education/bachelors-degrees-humanities
+            - paragraph [ref=e342]:
+              - text: "Research from MIT’s Initiative on the Digital Economy has shown that while applied STEM graduates earn higher initial wages, those technical skills depreciate rapidly. Long-term career adaptability depends increasingly on the broader capacities that a humanities education cultivates: contextual reasoning, communication, and the ability to navigate ambiguity."
+              - link "20" [ref=e343] [cursor=pointer]:
+                - /url: https://academic.oup.com/qje/article/135/4/1965/5858010
+            - paragraph [ref=e344]: "Steve Jobs diagnosed this with characteristic directness:"
+            - blockquote [ref=e345]:
+              - paragraph [ref=e346]:
+                - emphasis [ref=e347]: “A lot of people in our industry haven’t had very diverse experiences. So they don’t have enough dots to connect, and they end up with very linear solutions without a broad perspective on the problem. The broader one’s understanding of the human experience, the better design we will have.”
+                - link "21" [ref=e348] [cursor=pointer]:
+                  - /url: https://www.wired.com/1996/02/jobs-2/
+            - paragraph [ref=e349]: This is not an argument against technical expertise. It is an argument for a wider aperture. Taste depends on knowing what has come before, on understanding why certain ideas persist across time and culture, and why others don’t.
+            - paragraph [ref=e350]: Without those reference points, you get products that are technically accomplished but culturally thin. Efficient but forgettable. Novel but not meaningful.
+            - heading "Taste as discipline" [level=2] [ref=e351]
+            - paragraph [ref=e352]: We tend to speak of taste as though it is innate, a quality you either possess or lack. The evidence, from Hume onward, suggests otherwise.
+            - paragraph [ref=e353]: "Hume’s “true judge” is not born with superior sensitivity. The judge is made, through practice, exposure, comparison, and the sustained correction of bias. Taste, in this framing, is less like perfect pitch and more like a muscle: it develops through varied and deliberate use, and it atrophies without it."
+            - paragraph [ref=e354]:
+              - text: Dieter Rams, whose work at Braun from 1961 to 1995 became foundational to modern industrial design, embodied this principle. His dictum,
+              - emphasis [ref=e355]: Weniger, aber besser
+              - text: "(“Less, but better”), was not a stylistic preference. It was a discipline of discernment: the ability to distinguish what is essential from what is merely present."
+              - link "22" [ref=e356] [cursor=pointer]:
+                - /url: https://www.vitra.com/en-us/magazine/details/dieter-rams-weniger-aber-besser
+              - text: That ability did not arrive fully formed. It was refined across decades of practice, informed by a deep engagement with architecture, fine art, and the broader European design tradition.
+            - 'figure "Dieter Rams in his studio at home, Kronberg, 1975 Photo: Marlene Schnelle-Schneyder © rams foundation" [ref=e357]':
+              - button "Press enter or click to view image in full size Dieter Rams in his studio at home, Kronberg, 1975" [ref=e358]:
+                - generic [ref=e359]: Press enter or click to view image in full size
+                - img "Dieter Rams in his studio at home, Kronberg, 1975" [ref=e362]
+              - generic [ref=e363]:
+                - text: Dieter Rams in his studio at home, Kronberg, 1975
+                - text: "Photo: Marlene Schnelle-Schneyder © rams foundation"
+            - paragraph [ref=e364]:
+              - text: Frank Chimero, in
+              - emphasis [ref=e365]: The Shape of Design
+              - text: "(2012), makes a related observation: that design is not only problem-solving but sense-making. The designer’s task is not just to ask how but why, and the quality of that why depends entirely on the breadth and depth of one’s references."
+              - link "23" [ref=e366] [cursor=pointer]:
+                - /url: https://shapeofdesignbook.com/
+            - paragraph [ref=e367]: Taste, then, is not a luxury or an ornament. It is a discipline, built through sustained attention to work across fields, not only your own; through the patience to sit with ambiguity rather than rushing toward resolution; through a willingness to be wrong and to revise your judgements in light of new exposure; and through active engagement with the accumulated decisions of those who came before.
+            - paragraph [ref=e368]: It is built through constraints, not shortcuts. And it develops at the edges, where disciplines overlap, where references collide, where the comfortable is disrupted by the unfamiliar.
+            - heading "The shift" [level=2] [ref=e369]
+            - paragraph [ref=e370]: If AI makes execution cheap, then judgement becomes scarce. And scarcity, in any system, determines value.
+            - paragraph [ref=e371]: The role of anyone who makes things, designers, writers, product thinkers, engineers, is shifting. It is no longer sufficient to produce. You must discern. You must be able to define what is worth making, recognise quality when you encounter it, and understand the historical and cultural context that gives a decision its weight.
+            - paragraph [ref=e372]: There is a temptation, especially now, to believe this can be accelerated, that with enough exposure, enough tooling, enough generated output, you can compress the timeline. But Wallas’s century-old model suggests otherwise. Incubation cannot be skipped. The slow conversion of experience into judgement is not an inefficiency in the creative process. It is the process.
+            - paragraph [ref=e373]: In a world where everyone has access to the same generative tools, the differentiator is not what you can produce. It is what you can see.
+            - paragraph [ref=e374]:
+              - text: "Taste was always important. It is now essential, and it cannot be automated. To cultivate it in an era of instant generation, we must actively protect the friction of the incubation phase. We must read widely outside our disciplines, study the history of our crafts, and deliberately introduce constraints into our workflows. We must resist the urge to accept the first competent output a machine provides, and instead ask the harder, slower question:"
+              - emphasis [ref=e375]: why this, and why now?
+            - link "Taste On subjectivity, gatekeeping, and the risk of leaving design industry terms like taste undefined. www.doc.cc" [ref=e377] [cursor=pointer]:
+              - /url: https://www.doc.cc/syntax/taste?source=post_page-----720ca15366c7---------------------------------------
+              - generic [ref=e379]:
+                - heading "Taste" [level=2] [ref=e380]
+                - heading "On subjectivity, gatekeeping, and the risk of leaving design industry terms like taste undefined." [level=3] [ref=e382]
+                - paragraph [ref=e384]: www.doc.cc
+        - separator [ref=e387]
+        - generic [ref=e393]:
+          - heading "More on this topic from UX Collective" [level=2] [ref=e394]
+          - paragraph [ref=e395]:
+            - 'link "Made to create, learning to curate: the designer’s dilemma" [ref=e396] [cursor=pointer]':
+              - /url: /made-to-create-learning-to-curate-the-designers-dilemma-0c6a89340a06
+              - strong [ref=e397]: "Made to create, learning to curate: the designer’s dilemma"
+          - paragraph [ref=e398]:
+            - link "We thought AI feedback was making our designers faster. It was making them shallower." [ref=e399] [cursor=pointer]:
+              - /url: /we-thought-ai-feedback-was-making-our-designers-faster-it-was-making-them-shallower-853e41b257fb
+              - strong [ref=e400]: We thought AI feedback was making our designers faster. It was making them shallower.
+          - paragraph [ref=e401]:
+            - link "When design stops asking why and starts asking, “Can AI do it?”" [ref=e402] [cursor=pointer]:
+              - /url: /when-design-stops-asking-why-and-starts-asking-can-ai-do-it-625c9a5d9c68
+              - strong [ref=e403]: When design stops asking why and starts asking, “Can AI do it?”
+          - paragraph [ref=e404]:
+            - link "Why AI is exposing design’s craft crisis" [ref=e405] [cursor=pointer]:
+              - /url: /why-ai-is-exposing-designs-craft-crisis-434bcb652848
+              - strong [ref=e406]: Why AI is exposing design’s craft crisis
+          - paragraph [ref=e407]:
+            - link "Wrestling with skill atrophy in the age of generated thought" [ref=e408] [cursor=pointer]:
+              - /url: /wrestling-with-skill-atrophy-in-the-age-of-generated-thought-479088036235
+              - strong [ref=e409]: Wrestling with skill atrophy in the age of generated thought
+          - paragraph [ref=e410]:
+            - link "Taste vs. empathy" [ref=e411] [cursor=pointer]:
+              - /url: /taste-vs-empathy-00b6a33ed5da
+              - strong [ref=e412]: Taste vs. empathy
+          - paragraph [ref=e413]:
+            - link "AI is coming for our design jobs, but it can’t touch taste" [ref=e414] [cursor=pointer]:
+              - /url: /ai-is-coming-for-our-design-jobs-but-it-cant-touch-taste-afd5c7a48184
+              - strong [ref=e415]: AI is coming for our design jobs, but it can’t touch taste
+        - separator [ref=e416]
+        - generic [ref=e422]:
+          - heading "References" [level=2] [ref=e423]
+          - paragraph [ref=e424]:
+            - text: "1."
+            - link "Sontag, S. (1964). Notes on ‘Camp.’ Partisan Review, 31(4), 515–530." [ref=e425] [cursor=pointer]:
+              - /url: https://monoskop.org/images/5/59/Sontag_Susan_1964_Notes_on_Camp.pdf
+          - paragraph [ref=e426]:
+            - text: "2."
+            - link "Hume, D. (1757). Of the Standard of Taste. In Four Dissertations. London." [ref=e427] [cursor=pointer]:
+              - /url: https://archive.org/details/bim_eighteenth-century_four-dissertations-i-t_hume-david_1757
+          - paragraph [ref=e428]:
+            - text: "3."
+            - 'link "Bourdieu, P. (1979/1984). Distinction: A Social Critique of the Judgement of Taste. Harvard University Press." [ref=e429] [cursor=pointer]':
+              - /url: https://www.hup.harvard.edu/books/9780674212770
+          - paragraph [ref=e430]:
+            - text: "4."
+            - link "Wallas, G. (1926). The Art of Thought. Jonathan Cape." [ref=e431] [cursor=pointer]:
+              - /url: https://archive.org/details/theartofthought
+          - paragraph [ref=e432]:
+            - text: "5."
+            - link "Shulman, M. (2024). CEO of AI Music Company Says People Don’t Like Making Music. Futurism, January 2025." [ref=e433] [cursor=pointer]:
+              - /url: https://futurism.com/suno-ai-ceo-making-music
+          - paragraph [ref=e434]:
+            - text: "6."
+            - link "Suno CEO Walks Back Remarks. Billboard, March 2026." [ref=e435] [cursor=pointer]:
+              - /url: https://www.billboard.com/pro/suno-ai-music-startup-cover-story/
+          - paragraph [ref=e436]:
+            - text: "7."
+            - link "The Devil Wears Prada. Dir. David Frankel. 20th Century Fox, 2006." [ref=e437] [cursor=pointer]:
+              - /url: https://www.20thcenturystudios.com/movies/the-devil-wears-prada
+          - paragraph [ref=e438]:
+            - text: "8."
+            - link "Eames, C. (1972). Design Q&A. Eames Office." [ref=e439] [cursor=pointer]:
+              - /url: https://www.eamesoffice.com/the-work/design-q-a/
+          - paragraph [ref=e440]:
+            - text: "9."
+            - 'link "Aikin, J. (1981). Brian Eno. Keyboard, 7(7), 42–53. Cited in Tamm, E. (1995). Brian Eno: His Music and the Vertical Color of Sound. Da Capo Press." [ref=e441] [cursor=pointer]':
+              - /url: http://music.hyperreal.org/artists/brian_eno/interviews/keyb81.html
+          - paragraph [ref=e442]:
+            - text: "10."
+            - link "Doshi, A.R. & Hauser, O.P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. Science Advances, 10(28), eadn5290." [ref=e443] [cursor=pointer]:
+              - /url: https://www.science.org/doi/10.1126/sciadv.adn5290
+          - paragraph [ref=e444]:
+            - text: "11."
+            - 'link "Lee, M. et al. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers. Proceedings of CHI 2025. ACM." [ref=e445] [cursor=pointer]':
+              - /url: https://dl.acm.org/doi/10.1145/3706598.3713778
+          - paragraph [ref=e446]:
+            - text: "12."
+            - link "Newton, C. (2024). How influence campaigns stopped working. Platformer, August 22, 2024." [ref=e447] [cursor=pointer]:
+              - /url: https://www.platformer.news/influence-campaigns-2024-ai-russia-china-iran/
+          - paragraph [ref=e448]:
+            - text: "13."
+            - link "Gold, H. (2026). OpenAI is shutting down its Sora video app just months after launch. CNN, March 24, 2026." [ref=e449] [cursor=pointer]:
+              - /url: https://www.cnn.com/2026/03/24/tech/openai-sora-video-app-shutting-down
+          - paragraph [ref=e450]:
+            - text: "14."
+            - link "OpenAI Is Shutting Down Sora, Its A.I. Video Generator. The New York Times, March 2026." [ref=e451] [cursor=pointer]:
+              - /url: https://www.nytimes.com/2026/03/24/technology/openai-shutting-down-sora.html
+          - paragraph [ref=e452]:
+            - text: "15."
+            - link "The Internet Reacts To OpenAI Killing Its Sora Slop Farm. Kotaku, March 2026." [ref=e453] [cursor=pointer]:
+              - /url: https://kotaku.com/openai-sora-2-app-disney-shut-down-deal-ai-bubble-2000681803
+          - paragraph [ref=e454]:
+            - text: "16."
+            - 'link "Uber (2025). Introducing Route Share: Uber’s More Affordable, More Predictable Commute. Uber Newsroom." [ref=e455] [cursor=pointer]':
+              - /url: https://www.uber.com/newsroom/introducing-route-share/
+          - paragraph [ref=e456]:
+            - text: "17."
+            - link "Crichton, M. (1990). Jurassic Park. Alfred A. Knopf. Film adaptation dir. Steven Spielberg, Universal Pictures, 1993." [ref=e457] [cursor=pointer]:
+              - /url: https://michaelcrichton.com/works/jurassic-park/
+          - paragraph [ref=e458]:
+            - text: "18."
+            - 'link "Morozov, E. (2013). To Save Everything, Click Here: The Folly of Technological Solutionism. PublicAffairs." [ref=e459] [cursor=pointer]':
+              - /url: https://www.publicaffairsbooks.com/titles/evgeny-morozov/to-save-everything-click-here/9781610393706/
+          - paragraph [ref=e460]:
+            - text: "19."
+            - link "American Academy of Arts & Sciences (2024). Bachelor’s Degrees in the Humanities. Humanities Indicators." [ref=e461] [cursor=pointer]:
+              - /url: https://www.amacad.org/humanities-indicators/higher-education/bachelors-degrees-humanities
+          - paragraph [ref=e462]:
+            - text: "20."
+            - link "Deming, D. & Noray, K. (2020). Earnings Dynamics, Changing Job Skills, and STEM Careers. Quarterly Journal of Economics, 135(4), 1965–2005." [ref=e463] [cursor=pointer]:
+              - /url: https://academic.oup.com/qje/article/135/4/1965/5858010
+          - paragraph [ref=e464]:
+            - text: "21."
+            - link "Jobs, S. (1996). Interview by Gary Wolf. Wired, February 1996." [ref=e465] [cursor=pointer]:
+              - /url: https://www.wired.com/1996/02/jobs-2/
+          - paragraph [ref=e466]:
+            - text: "22."
+            - link "Rams, D. (1995). Less but Better (Weniger, aber besser). Jo Klatt Design+Design Verlag." [ref=e467] [cursor=pointer]:
+              - /url: https://www.vitra.com/en-us/magazine/details/dieter-rams-weniger-aber-besser
+          - paragraph [ref=e468]:
+            - text: "23."
+            - link "Chimero, F. (2012). The Shape of Design." [ref=e469] [cursor=pointer]:
+              - /url: https://shapeofdesignbook.com/
+    - generic [ref=e472]:
+      - link "AI" [ref=e474] [cursor=pointer]:
+        - /url: https://medium.com/tag/ai?source=post_page-----720ca15366c7---------------------------------------
+        - generic [ref=e475]: AI
+      - link "UX" [ref=e477] [cursor=pointer]:
+        - /url: https://medium.com/tag/ux?source=post_page-----720ca15366c7---------------------------------------
+        - generic [ref=e478]: UX
+      - link "Product Design" [ref=e480] [cursor=pointer]:
+        - /url: https://medium.com/tag/product-design?source=post_page-----720ca15366c7---------------------------------------
+        - generic [ref=e481]: Product Design
+      - link "Design" [ref=e483] [cursor=pointer]:
+        - /url: https://medium.com/tag/design?source=post_page-----720ca15366c7---------------------------------------
+        - generic [ref=e484]: Design
+      - link "Creativity" [ref=e486] [cursor=pointer]:
+        - /url: https://medium.com/tag/creativity?source=post_page-----720ca15366c7---------------------------------------
+        - generic [ref=e487]: Creativity
+    - contentinfo [ref=e488]:
+      - generic [ref=e492]:
+        - generic [ref=e493]:
+          - generic [ref=e496]:
+            - link "clap" [ref=e499] [cursor=pointer]:
+              - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fuser-experience-design-1%2F720ca15366c7&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&user=Joshua+Leigh&userId=3ae8d4237762&source=---footer_actions--720ca15366c7---------------------clap_footer------------------
+              - tooltip "clap" [ref=e501]:
+                - generic [ref=e502]:
+                  - img "clap"
+            - tooltip "507" [ref=e505]:
+              - paragraph [ref=e507]:
+                - button "507" [ref=e508] [cursor=pointer]
+          - tooltip "responses" [ref=e511]:
+            - button "responses" [ref=e513] [cursor=pointer]:
+              - img [ref=e514]
+              - paragraph [ref=e516]: "8"
+        - generic [ref=e517]:
+          - tooltip "Add to list bookmark button" [ref=e520]:
+            - link "Add to list bookmark button" [ref=e523] [cursor=pointer]:
+              - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F720ca15366c7&operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&source=---footer_actions--720ca15366c7---------------------bookmark_footer------------------
+              - img "Add to list bookmark button" [ref=e525]
+          - tooltip "Share Post" [ref=e530]:
+            - button "Share Post" [ref=e532] [cursor=pointer]:
+              - img [ref=e533]
+    - generic [ref=e537]:
+      - generic [ref=e539]:
+        - link "UX Collective" [ref=e542] [cursor=pointer]:
+          - /url: https://uxdesign.cc/?source=post_page---post_publication_info--720ca15366c7---------------------------------------
+          - img "UX Collective" [ref=e544]
+        - generic [ref=e547]:
+          - link "Published in UX Collective" [ref=e548] [cursor=pointer]:
+            - /url: https://uxdesign.cc/?source=post_page---post_publication_info--720ca15366c7---------------------------------------
+            - heading "Published in UX Collective" [level=2] [ref=e549]:
+              - generic [ref=e550]: Published in UX Collective
+          - generic [ref=e551]:
+            - link "589K followers" [ref=e554] [cursor=pointer]:
+              - /url: /followers?source=post_page---post_publication_info--720ca15366c7---------------------------------------
+            - generic [ref=e555]:
+              - generic [ref=e556]: ·
+              - link "Last published 3 hours ago" [ref=e557] [cursor=pointer]:
+                - /url: /context-matters-a-lot-7799188344dc?source=post_page---post_publication_info--720ca15366c7---------------------------------------
+          - paragraph [ref=e559]:
+            - text: We believe designers are thinkers as much as they are makers.
+            - link "https://linktr.ee/uxc" [ref=e560] [cursor=pointer]:
+              - /url: https://linktr.ee/uxc
+        - button "Follow" [ref=e563] [cursor=pointer]:
+          - generic [ref=e565]: Follow
+      - generic [ref=e566]:
+        - link "Joshua Leigh" [ref=e569] [cursor=pointer]:
+          - /url: https://medium.com/@joshualeigh?source=post_page---post_author_info--720ca15366c7---------------------------------------
+          - img "Joshua Leigh" [ref=e571]
+        - generic [ref=e574]:
+          - link "Written by Joshua Leigh" [ref=e575] [cursor=pointer]:
+            - /url: https://medium.com/@joshualeigh?source=post_page---post_author_info--720ca15366c7---------------------------------------
+            - heading "Written by Joshua Leigh" [level=2] [ref=e576]:
+              - generic [ref=e577]: Written by Joshua Leigh
+          - generic [ref=e578]:
+            - link "73 followers" [ref=e581] [cursor=pointer]:
+              - /url: https://medium.com/@joshualeigh/followers?source=post_page---post_author_info--720ca15366c7---------------------------------------
+            - generic [ref=e582]:
+              - generic [ref=e583]: ·
+              - link "11 following" [ref=e584] [cursor=pointer]:
+                - /url: https://medium.com/@joshualeigh/following?source=post_page---post_author_info--720ca15366c7---------------------------------------
+          - paragraph [ref=e586]: Product designer. London, UK
+        - button "Follow" [ref=e589] [cursor=pointer]:
+          - generic [ref=e591]: Follow
+    - generic [ref=e595]:
+      - generic [ref=e596]:
+        - heading "Responses (8)" [level=2] [ref=e597]
+        - tooltip "Shield with a checkmark" [ref=e600]:
+          - link "Shield with a checkmark" [ref=e602] [cursor=pointer]:
+            - /url: https://policy.medium.com/medium-rules-30e5502c4eb4?source=post_page---post_responses--720ca15366c7---------------------------------------
+            - img "Shield with a checkmark" [ref=e603]
+      - generic [ref=e609]:
+        - paragraph [ref=e614]: Write a response
+        - generic [ref=e616]:
+          - link "What are your thoughts?" [ref=e618] [cursor=pointer]:
+            - /url: https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fuxdesign.cc%2Ftaste-is-not-a-feature-720ca15366c7&source=---post_responses--720ca15366c7---------------------respond_sidebar------------------
+            - paragraph [ref=e620]: What are your thoughts?
+          - generic:
+            - generic [ref=e621]:
+              - tooltip "Bold (⌘B)" [ref=e623]:
+                - button "Bold (⌘B)" [ref=e625]:
+                  - img [ref=e626]
+              - tooltip "Italic (⌘I)" [ref=e629]:
+                - button "Italic (⌘I)" [ref=e631]:
+                  - img [ref=e632]
+            - generic:
+              - button "Cancel" [ref=e634]
+              - button "Respond" [disabled] [ref=e635]
+      - generic [ref=e638]:
+        - generic [ref=e639]:
+          - generic [ref=e640]:
+            - tooltip "Andreclavel" [ref=e642]:
+              - link "Andreclavel" [ref=e644] [cursor=pointer]:
+                - /url: https://medium.com/@andreclavel4?source=post_page---post_responses--720ca15366c7----0-----------------------------------
+                - generic [ref=e645]:
+                  - img "Andreclavel" [ref=e647]
+                  - img [ref=e649]
+            - generic [ref=e652]:
+              - tooltip "Andreclavel" [ref=e655]:
+                - link "Andreclavel" [ref=e657] [cursor=pointer]:
+                  - /url: https://medium.com/@andreclavel4?source=post_page---post_responses--720ca15366c7----0-----------------------------------
+                  - paragraph [ref=e659]: Andreclavel
+              - link "5 days ago" [ref=e660] [cursor=pointer]:
+                - /url: https://medium.com/@andreclavel4/thanks-joshua-474fa84eed02?source=post_page---post_responses--720ca15366c7----0-----------------------------------
+                - paragraph [ref=e661]: 5 days ago
+          - button [ref=e663] [cursor=pointer]:
+            - img [ref=e664]
+        - generic [ref=e670]: Thanks Joshua ! This si an excellent and essential article ... I will surely re read it many times over ... and whenever I can, send it to people that need to hear this ... 🦋
+        - generic [ref=e672]:
+          - generic [ref=e673]:
+            - link "clap" [ref=e676] [cursor=pointer]:
+              - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F474fa84eed02&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40andreclavel4%2Fthanks-joshua-474fa84eed02&user=Andreclavel&userId=9e7179ac265b&source=---post_responses--474fa84eed02----0-----------------respond_sidebar------------------
+              - img "clap"
+            - paragraph [ref=e678]: "--"
+          - paragraph [ref=e679]:
+            - button "Reply" [ref=e680] [cursor=pointer]
+      - generic [ref=e683]:
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - tooltip "Aram Andreasyan" [ref=e687]:
+              - link "Aram Andreasyan" [ref=e689] [cursor=pointer]:
+                - /url: https://andreasyanaram.medium.com/?source=post_page---post_responses--720ca15366c7----1-----------------------------------
+                - generic [ref=e690]:
+                  - img "Aram Andreasyan" [ref=e692]
+                  - img [ref=e694]
+            - generic [ref=e697]:
+              - tooltip "Aram Andreasyan" [ref=e700]:
+                - link "Aram Andreasyan" [ref=e702] [cursor=pointer]:
+                  - /url: https://andreasyanaram.medium.com/?source=post_page---post_responses--720ca15366c7----1-----------------------------------
+                  - paragraph [ref=e704]: Aram Andreasyan
+              - link "3 days ago" [ref=e705] [cursor=pointer]:
+                - /url: https://andreasyanaram.medium.com/excellent-and-smart-article-204a916f9867?source=post_page---post_responses--720ca15366c7----1-----------------------------------
+                - paragraph [ref=e706]: 3 days ago
+          - button [ref=e708] [cursor=pointer]:
+            - img [ref=e709]
+        - generic [ref=e715]: Excellent and smart article!
+        - generic [ref=e717]:
+          - generic [ref=e718]:
+            - link "clap" [ref=e721] [cursor=pointer]:
+              - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F204a916f9867&operation=register&redirect=https%3A%2F%2Fandreasyanaram.medium.com%2Fexcellent-and-smart-article-204a916f9867&user=Aram+Andreasyan&userId=6e52f6aa8cef&source=---post_responses--204a916f9867----1-----------------respond_sidebar------------------
+              - img "clap"
+            - paragraph [ref=e723]: "--"
+          - paragraph [ref=e724]:
+            - button "Reply" [ref=e725] [cursor=pointer]
+      - generic [ref=e728]:
+        - generic [ref=e729]:
+          - generic [ref=e730]:
+            - tooltip "Rob Dircks" [ref=e732]:
+              - link "Rob Dircks" [ref=e734] [cursor=pointer]:
+                - /url: https://medium.com/@robdircks?source=post_page---post_responses--720ca15366c7----2-----------------------------------
+                - img "Rob Dircks" [ref=e737]
+            - generic [ref=e739]:
+              - tooltip "Rob Dircks" [ref=e742]:
+                - link "Rob Dircks" [ref=e744] [cursor=pointer]:
+                  - /url: https://medium.com/@robdircks?source=post_page---post_responses--720ca15366c7----2-----------------------------------
+                  - paragraph [ref=e746]: Rob Dircks
+              - link "3 days ago" [ref=e747] [cursor=pointer]:
+                - /url: https://medium.com/@robdircks/thank-you-joshua-c6f149804b21?source=post_page---post_responses--720ca15366c7----2-----------------------------------
+                - paragraph [ref=e748]: 3 days ago
+          - button [ref=e750] [cursor=pointer]:
+            - img [ref=e751]
+        - generic [ref=e757]:
+          - text: "Thank you Joshua. You’ve put into words what I’ve been feeling for a while now. I rarely re-read articles, but have already read sections of this again and will keep doing so, and have already shared snippets with several people. BONUS: as a writer…"
+          - button "more" [ref=e758] [cursor=pointer]
+        - generic [ref=e760]:
+          - generic [ref=e761]:
+            - link "clap" [ref=e764] [cursor=pointer]:
+              - /url: https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fc6f149804b21&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40robdircks%2Fthank-you-joshua-c6f149804b21&user=Rob+Dircks&userId=cd831397262b&source=---post_responses--c6f149804b21----2-----------------respond_sidebar------------------
+              - img "clap"
+            - paragraph [ref=e766]: "--"
+          - paragraph [ref=e767]:
+            - button "Reply" [ref=e768] [cursor=pointer]
+      - button "See all responses" [ref=e770]
+    - generic [ref=e776]:
+      - link "Help" [ref=e778] [cursor=pointer]:
+        - /url: https://help.medium.com/hc/en-us?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e779]: Help
+      - link "Status" [ref=e781] [cursor=pointer]:
+        - /url: https://status.medium.com/?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e782]: Status
+      - link "About" [ref=e784] [cursor=pointer]:
+        - /url: https://medium.com/about?autoplay=1&source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e785]: About
+      - link "Careers" [ref=e787] [cursor=pointer]:
+        - /url: https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e788]: Careers
+      - link "Press" [ref=e790] [cursor=pointer]:
+        - /url: mailto:pressinquiries@medium.com
+        - paragraph [ref=e791]: Press
+      - link "Blog" [ref=e793] [cursor=pointer]:
+        - /url: https://blog.medium.com/?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e794]: Blog
+      - link "Privacy" [ref=e796] [cursor=pointer]:
+        - /url: https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e797]: Privacy
+      - link "Rules" [ref=e799] [cursor=pointer]:
+        - /url: https://policy.medium.com/medium-rules-30e5502c4eb4?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e800]: Rules
+      - link "Terms" [ref=e802] [cursor=pointer]:
+        - /url: https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e803]: Terms
+      - link "Text to speech" [ref=e805] [cursor=pointer]:
+        - /url: https://speechify.com/medium?source=post_page-----720ca15366c7---------------------------------------
+        - paragraph [ref=e806]: Text to speech

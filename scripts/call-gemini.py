@@ -2,6 +2,7 @@
 
 import os
 import sys
+import signal
 import argparse
 import re
 import logging
@@ -11,20 +12,35 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 import google.generativeai as genai
 from typing import Optional, Dict, Any, Tuple
+
+
+class TimeoutError(Exception):
+    pass
+
+
+def _timeout_handler(signum, frame):
+    raise TimeoutError("Gemini API call timed out")
 from modules.template_processor import process_template, parse_replacements
 
 def fetch_url_content(url: str, timeout: int = 30) -> str:
     """Fetch content from a URL and extract readable text."""
     try:
         logging.info(f"Fetching content from URL: {url}")
-        
+
         # Set proper headers to avoid being blocked
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
-        
-        response = requests.get(url, headers=headers, timeout=timeout)
-        response.raise_for_status()
+
+        # Hard timeout to prevent hanging on slow/stalled responses
+        old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(timeout)
+        try:
+            response = requests.get(url, headers=headers, timeout=timeout)
+            response.raise_for_status()
+        finally:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, old_handler)
         
         logging.info(f"Successfully fetched {len(response.content)} bytes from URL")
         
@@ -46,6 +62,10 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         logging.info(f"Extracted {len(text)} characters of text content")
         return text
         
+    except TimeoutError:
+        error_msg = f"Error fetching URL {url}: total timeout after {timeout}s"
+        logging.error(error_msg)
+        return f"[ERROR: {error_msg}]"
     except requests.exceptions.RequestException as e:
         error_msg = f"Error fetching URL {url}: {str(e)}"
         logging.error(error_msg)
@@ -353,7 +373,14 @@ def call_gemini_structured(prompt: str, model: Optional[str] = None) -> Dict[str
 
         logging.info("Sending structured output request to Gemini...")
 
-        response = gemini_model.generate_content(prompt)
+        # Set a hard 90s timeout using signal alarm
+        old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(90)
+        try:
+            response = gemini_model.generate_content(prompt)
+        finally:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, old_handler)
 
         logging.info("Received response from Gemini")
 

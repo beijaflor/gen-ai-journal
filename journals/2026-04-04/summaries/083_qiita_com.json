@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:12:58.746815+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CopilotKit を使って Generative UIに触れてみる #AIエージェント",
+    "url": "https://qiita.com/Takenoko4594/items/ebc481bfdc89c42947ad",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント開発フレームワーク「CopilotKit」を用い、ツール実行結果やユーザー承認フローをReactコンポーネントで可視化するGenerative UIの実装手法と実例の解説。",
+    "summaryBody": "本記事では、AIエージェントの応答に合わせて動的にUIを描画する「Generative UI」を、CopilotKitを用いて実装する方法を解説しています。CopilotKitにおけるGenerative UIは、AIの実行結果をトリガーにフロントエンド側で定義済みのUIを描画する「Static（静的）」なアプローチをとります。記事内では、バックエンドのツール実行結果を表示する`useRenderTool`、フロントエンドでツールを実行する`useFrontendTool`、ユーザーの判断を介在させるHuman In The Loopを実現する`useHumanInTheLoop`、そしてツールに依存せず柔軟にUIを表示する`useComponent`の4つの主要フックについて、具体的なコード例を交えて詳述されています。AWSのStrandsAgentsと組み合わせた構成例や、実装時に直面しやすい制約事項などの実戦的な知見も共有されています。",
+    "topics": [
+      "CopilotKit",
+      "Generative UI",
+      "AIエージェント",
+      "React",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 45,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

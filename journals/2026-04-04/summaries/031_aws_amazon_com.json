@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:18:50.119310+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code on Amazon Bedrock のデプロイパターンとベストプラクティス",
+    "url": "https://aws.amazon.com/jp/blogs/news/claude-code-deployment-patterns-and-best-practices-with-amazon-bedrock/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock上でAnthropicのAIコーディングアシスタント「Claude Code」をエンタープライズ規模で安全かつ効率的にデプロイするための、認証、インフラ構成、モニタリングのベストプラクティスを解説するガイド。",
+    "summaryBody": "### 概要\n本記事は、Anthropicが提供するAI駆動のコーディングアシスタント「Claude Code」を、Amazon Bedrockを利用して組織内にデプロイするための包括的な技術ガイドです。開発者の生産性を最大化しつつ、セキュリティ、コスト管理、可観測性を確保するための具体的な手法を紹介しています。\n\n### 主なデプロイパターンのポイント\n- **認証の選択**: 迅速なテストにはSSO、本番環境には詳細なユーザー属性を追跡可能な「直接的なIdP統合（IAMフェデレーション）」を推奨しています。\n- **インフラ構成**: 管理の簡素化、コスト可視性の向上、および本番ワークロードの保護のため、専用のAWSアカウントにリソースを集約するパターンを提案しています。\n- **高度なモニタリング**: CloudWatchに加えてOpenTelemetryを活用することで、コードの変更行数や採用率、ユーザーごとのコスト配分など、投資対効果（ROI）を測定するための詳細な分析を可能にします。\n\n### 実装の推奨事項\nAWSが提供する「Guidance for Claude Code with Amazon Bedrock」ソリューションを利用することで、数時間以内に安全な認証基盤と分析ダッシュボードを備えた環境を構築可能です。小規模なパイロット運用から始め、収集したデータに基づき段階的に拡大していくアプローチを推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Amazon Bedrock",
+      "Generative AI",
+      "OpenTelemetry",
+      "IAM Identity Center"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code deployment patterns and best practices with Amazon Bedrock"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-08T16:33:14.666823+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "21世紀最大の詐欺：AIトークンによる不透明な課金の実態",
+    "url": "https://tokenstree.com/newsletter-article-5.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI各社で異なるトークナイザーの不標準性が招くコストの不透明性と、非英語圏に課される「言語税」の課題を分析し、キャッシュ共有による効率化を提唱している。",
+    "summaryBody": "AIモデルの課金単位である「トークン」が、各プロバイダー独自のアルゴリズム（**BPE**）によって定義され、標準化されていないことによる弊害を詳述した分析記事です。**OpenAI**の**tiktoken**や**Google**の**SentencePiece**など、トークナイザーの違いで同一単語の料金が変動する現状や、英語に比べ日本語やヒンディー語などの非英語圏ユーザーが数倍のコストを支払う「言語税」の問題を具体例を挙げて批判しています。2026年時点での価格差がモデル間で最大420倍に達する中、エージェントの回答を共有・再利用する**TokensTree**の「SafePaths」や「Remote Cache」といった、インフラ側でのコスト削減アプローチが提示されています。開発者は、APIの表面的な価格だけでなく、対象言語のトークン変換効率を含めた実質的な運用コストを評価する必要があります。",
+    "topics": [
+      "LLM価格モデル",
+      "トークナイザー",
+      "言語格差",
+      "コスト最適化",
+      "TokensTree"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": "The Biggest Con of the 21st Century: Tokens"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:21:44.758527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic SearchとAgentic RAG、何が違うのかを自分なりに整理してスッキリするための備忘録",
+    "url": "https://qiita.com/y-okayama-tb/items/93fda86f55766e47cbcf",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Agentic SearchとAgentic RAGの概念を、情報のソースが「公開Web」か「社内独自データ」かという観点から比較・整理した技術解説。",
+    "summaryBody": "AIエージェントの文脈で混同されやすい「Agentic Search」と「Agentic RAG」の違いを整理した記事です。RAG（検索拡張生成）の基礎を前提とした上で、両者の特性を比較しています。Agentic SearchはWeb上の公開情報を対象に、AIが自律的に多段検索や自己評価を行う「Webリサーチ」に特化した手法です。一方、Agentic RAGは企業内の独自データを主軸に、エージェントが状況に応じてツールを選択し、必要最小限の外部情報を補完する「内部情報活用」の手法です。記事では、これらを「優秀なWebリサーチャー」と「社内規定に詳しく外部知識も補える専門家」というユースケースで具体的に対比させています。",
+    "topics": [
+      "Agentic RAG",
+      "Agentic Search",
+      "RAG",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

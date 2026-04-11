@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:16:24.391870+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic AI時代のデザインシステムとFigma：実践ガイド",
+    "url": "https://uxdesign.cc/agentic-ai-design-systems-figma-a-practical-guide-6ab0b681718d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントがデザインシステムを解釈し自律的に構築を行う時代に向け、デザイナーがFigmaで整えるべき命名規則、トークン、構造化の核心を解説する実践的ガイド。",
+    "summaryBody": "AIエージェントがデザインシステムを単なるドキュメントではなく「機械への指示書」として読み取る未来において、デザイナーの役割は「ページの作成」から「システムの構築と意志決定」へと進化しています。本記事では、AIがデザインを正確に理解・実装するために必要な6つのステップを詳説しています。\n\n1. **セマンティックトークンの徹底**: 単なる色の定義ではなく、「intent（意図）」を示すトークンレイヤーの構築。\n2. **コードと一致したプロパティ**: Figmaのプロパティ名とコードのPropsをPascalCase等で完全一致させる重要性。\n3. **あらゆる状態の設計**: HoverやFocus、Errorなど、AIが推測できないすべての状態を明示的に定義する。\n4. **Slotsの活用**: Figmaの新機能である「Slots（スロット）」を用いて、コンポーネントの柔軟性と整合性を両立させる。\n5. **オートレイアウトの厳格な運用**: AIがCSS（Flexbox/Grid）へ正確に変換するための構造的基盤。\n6. **Code ConnectとMCP**: AIエージェントがFigmaとコードベースを紐付けるための技術的プロトコルの理解。\n\n結論として、AIは「組み立て（Assembly）」を高速化しますが、そのための「語彙（Design System）」を豊かにし、何を構築すべきかを指し示すのは、依然としてデザイナーの創造的な判断です。",
+    "topics": [
+      "Agentic AI",
+      "Design Systems",
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "UX/UI Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Agentic AI, design systems & Figma: a practical guide"
+  }
+}

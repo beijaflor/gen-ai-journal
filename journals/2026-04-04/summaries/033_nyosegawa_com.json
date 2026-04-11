@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:18:34.724565+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skillにアプリケーションを組み込んでみる - Agentがプラットフォームになる未来のUI拡張",
+    "url": "https://nyosegawa.com/posts/skill-with-app/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Agent SkillにReactアプリを同梱し、エージェントが動的にUIを呼び出す「Agent-App共生モデル」の実装実験とその未来について解説した記事。",
+    "summaryBody": "著者の逆瀬川氏が、Coding Agent（AIエージェント）の利便性を高めるために、エージェントスキルそのものにReactアプリケーションを組み込む「Skill Apps」という仕組みを試作・提案しています。従来のAI出力（テキストや静的HTML）とは異なり、スキルフォルダ内にコンポーネント、ロジック、永続化データを自己完結型（self-contained）で保持し、エージェントからのSSE指示によってリッチなUIをサイドパネルに表示します。記事では、MCPやA2UI、AG-UIといった既存プロトコルとの比較、セキュリティ上の課題（ToxicSkills）、法規制の遵守、そして「大量生産された自作アプリの管理」という現代的な課題への解決策としての可能性を論じています。エージェントがOSやプラットフォームの役割を担い、ユーザーの意図に応じて最適なUIを呼び出す、あるいは生成する未来のインターフェース像を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "Agent Skill",
+      "Generative UI",
+      "MCP (Model Context Protocol)",
+      "React"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

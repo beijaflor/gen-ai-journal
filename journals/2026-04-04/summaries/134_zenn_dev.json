@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:50:42.014165+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SDD + TDD + VDDを融合したClaude Codeプラグイン「VSDD Claude Code」を作った話",
+    "url": "https://zenn.dev/sc30gsw/articles/1373752d9713b3",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI生成コードの品質問題「AIスロップ」を解決するため、仕様・テスト・検証を統合し、独立したAIによる敵対的レビューを強制するClaude Code用ワークフロープラグインの解説。",
+    "summaryBody": "AIによるコード生成が「表面上は正しいが隠れた欠陥を持つ（AIスロップ）」という課題に対し、SDD（仕様駆動）、TDD（テスト駆動）、VDD（検証駆動）を融合した開発手法「VSDD」をClaude Code上で実現するプラグインを紹介しています。このシステムは、Builder（実装者）とコンテキストを共有しないAdversary（敵対的レビュアー）という役割分離を構造的に強制します。\n\n主な機能：\n1. **6フェーズ・パイプライン**: 仕様定義から収束判定まで、後戻りを含む厳格なフローを管理。\n2. **ゲートチェックフック**: フェーズ外の書き込みを物理的にブロックし、AIの先走りを抑制。\n3. **Chainlinkビード**: 仕様・テスト・実装・証明をIDで紐付け、完全なトレーサビリティを確保。\n4. **形式的ハードニング**: 言語に応じた検証ツール（Kani, Fast-check等）を用いて論理的な正当性を証明。\n\nこれにより、AIに「動くコード」ではなく「仕様を満たし、検証されたコード」を書かせるための強力なハーネス（制御基盤）を提供しています。",
+    "topics": [
+      "Claude Code",
+      "VSDD",
+      "AIエージェント",
+      "テスト駆動開発",
+      "仕様駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "SDD + TDD + VDDを融合したClaude Codeプラグイン「VSDD Claude Code」を作った話"
+  }
+}

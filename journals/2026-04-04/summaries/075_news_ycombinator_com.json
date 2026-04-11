@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T14:39:12.784195+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PhAIL: リアルなロボット実機によるAIモデル性能の評価ベンチマーク",
+    "url": "https://news.ycombinator.com/item?id=47589797",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "VLAモデルの実機性能を計測するため、Franka FR3を用いた倉庫ピッキング作業のオープンなベンチマーク「PhAIL」が公開されました。",
+    "summaryBody": "PhAILは、VLA（Vision-Language-Action）モデルが商業的なタスクで実際にどの程度機能するかを測定するためのオープンなベンチマークプロジェクトです。Googleの検索ランキングエンジニア出身の作成者が、ロボティクス業界における客観的な評価指標の欠如を解消するために立ち上げました。Franka FR3アームとRobotiqグリッパーを使用し、倉庫での一般的な「ビンからビンへのピッキング」を対象に、OpenPI/pi0.5、GR00T、ACT、SmolVLAなどのモデルを評価しています。現時点での最高性能は64 UPH（時間あたり処理数）であり、人間の遠隔操作（330 UPH）や手作業（1,300+ UPH）との間には依然として大きな隔たりがあることが示されました。全実行結果の動画、テレメトリ、データセット、トレーニングスクリプトが公開されており、新たなモデルの持ち込みも受け付けています。",
+    "topics": [
+      "ロボティクス",
+      "VLAモデル",
+      "ベンチマーク",
+      "機械学習",
+      "倉庫自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Show HN: PhAIL – Real-robot benchmark for AI models"
+  }
+}

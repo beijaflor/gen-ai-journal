@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:29:02.586078+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS Security Agentの組織導入における実務的考慮点と検証レポート",
+    "url": "https://zenn.dev/cscloud_blog/articles/securty-agent-ga-organization-how-to",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年3月にGAされたAWS Security Agentについて、OWASP Juice Shopを用いた検証結果と共に、組織導入時に考慮すべき権限設計、データ管理、コスト、運用ルールを詳細に解説しています。",
+    "summaryBody": "2026年3月にGAリリースされた「AWS Security Agent」の検証と組織展開における考慮点をまとめた記事です。OWASP Juice Shop（ECS Fargate）を用いたペネトレーションテストの実行では、約3.5時間の稼働で約$181のコストが発生し、重大な脆弱性の検出を確認。組織活用のポイントとして、データ処理の国内完結性（クロスリージョン推論の仕様）、IAM Identity Centerのアカウントインスタンス活用、1アプリ1エージェントスペースの設計原則を詳述。また、AIの非決定性を前提とした人間による検証プロセスの重要性や、GitHub連携における「1組織1アカウント」制約、AWS RAMを用いた中央集権的なマルチアカウント構成案など、大規模運用の現場で即座に役立つ技術的知見を提供しています。",
+    "topics": [
+      "AWS Security Agent",
+      "ペネトレーションテスト",
+      "IAM Identity Center",
+      "セキュリティ自動化",
+      "脆弱性診断"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "AWS Security Agentを組織で活用していく上での考慮点を考えてみた"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:46:27.387793+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの内部構造を解剖：エージェントループ、50以上のツール、そして未公開の隠し機能",
+    "url": "https://ccunpacked.dev/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAIエージェント「Claude Code」のソースコードを詳細に解析し、その動作原理から、仮想ペットや並列処理といった未公開の実験的機能までを網羅した深掘りレポート。",
+    "summaryBody": "この記事は、Anthropicが提供するCLIベースのAIエージェント「Claude Code」を、公開されたソースコードからリバースエンジニアリングに近い形で解析したものです。内容は大きく4つのセクションに分かれています。1. **エージェントループ**: ユーザー入力からAPI呼び出し、コンテキスト履歴の管理、ツール実行、Inkライブラリを用いたUI描画に至る11のステップを詳細に解説。2. **ツールとコマンド**: ファイル操作、Bash実行、Webブラウザ、MCP（Model Context Protocol）連携など50種類以上のビルトインツールと、デバッグや設定に使用される膨大なスラッシュコマンドを分類。3. **アーキテクチャ**: 500以上のファイルで構成されるUI層、インフラ層、コア処理の構造を可視化。4. **隠し機能 (Hidden Features)**: ソースコード内に存在するが未実装またはフラグ制御されている機能（ターミナル上の仮想ペット「Buddy」、セッションを越えた記憶を保持する「Kairos」、並列ワーカーを走らせる「Coordinator Mode」など）を特定。AIエージェント開発の最前線を知る上で、非常に密度の高い技術情報となっています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Anthropic",
+      "Model Context Protocol (MCP)",
+      "Source Code Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Claude Code Unpacked"
+  }
+}

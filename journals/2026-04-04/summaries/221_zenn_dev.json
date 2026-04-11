@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:55:22.706133+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに仕様書を丸ごと渡すな ── 「要件を伝える」との決定的な違い",
+    "url": "https://zenn.dev/bookamasedo/articles/c264a26dafe55b",
+    "language": "ja",
+    "contentType": "🛠️ How-to & Best Practices (ノウハウ・ベストプラクティス)",
+    "oneSentenceSummary": "Claude Codeの特性を最大限に活かすため、仕様書を丸ごと読み込ませるのではなく、細分化した要件のみをプロンプトで伝え、実装の詳細は既存コードに委ねる手法を解説する。",
+    "summaryBody": "**Claude Code**で開発を行う際、巨大な仕様書ファイルをそのまま読み込ませると、重要情報の見逃しや既存コード規約の無視といった精度低下を招く。本記事では、この問題を「仕様書を渡す（文書を正とする指示）」と「要件を伝える（意図を伝え、実装はコードに委ねる指示）」の決定的な違いとして分析している。具体的な対策として、仕様書を機能単位のチケットへ分解し、受け入れ基準のみを伝えるプロンプト構成を推奨。また、ドキュメントは「実装前に書く仕様書」ではなく「実装後にコードから生成する技術文書」として扱うべきだと述べている。さらに、Anthropic社内での**CLAUDE.md**活用事例にも触れ、AIとの協業における設計思想の転換を促している。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "開発フロー",
+      "設計思想"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    }
+  }
+}

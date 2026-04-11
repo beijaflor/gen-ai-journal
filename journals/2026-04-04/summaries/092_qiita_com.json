@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-10T00:18:37.336092+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "100行のCLAUDE.mdより35行が効く理由 — 公式仕様で解く設定の最適化",
+    "url": "https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c",
+    "language": "ja",
+    "contentType": "🛠️ Guide & Recipe (ガイド & レシピ)",
+    "oneSentenceSummary": "CLAUDE.mdの記述を最小限に抑え、詳細な規約を.claude/rules/へ分離することで、Claudeの注意資源を最適化し精度を向上させる設計手法を解説している。",
+    "summaryBody": "### **Claude CodeにおけるCLAUDE.md最適化の理論と実践**\n\n**Claude Code**の設定ファイルである**CLAUDE.md**が、内部的に「User Message」としてデフォルトのシステムプロンプトの後に注入されるという公式仕様に基づき、会話の進行に伴う効果減衰（位置バイアス、Attention希釈、命令の競合など）のメカニズムを詳解しています。著者は「100行の記述より厳選した35行の方が効果的である」とし、Claudeの限られた注意資源を浪費しないための「注意コスト」という概念を提示しています。\n\n主要な改善策として、LinterやFormatterで自動修正可能なコーディング規約を**CLAUDE.md**から削除し、代わりに「3ステップ以上のタスクは必ずPlanモードで開始する」といった**行動原則（思考プロセス）**の記述を優先することを推奨しています。また、パス指定によって必要な時にだけ特定の指示を注入できる**.claude/rules/**（Conditional Rules）へ詳細な規約を分離する手法を紹介し、セッション後半でもAIの指示遵守率を高く保つためのディレクトリ構成と設計テンプレートを公開しています。\n\nClaude Codeを導入しており、会話が長くなるにつれてAIの品質低下やルール無視に悩んでいる開発者にとって、プロジェクト設定を根本から見直すための非常に実践的なガイドです。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "プロンプトエンジニアリング",
+      "AI駆動開発",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    }
+  }
+}

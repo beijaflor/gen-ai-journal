@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:11:03.911095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LayerXにおける、メンテナンスし続けられるGoのテストCIの構築",
+    "url": "https://tech.layerx.co.jp/entry/self-maintainable-go-test-ci",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LayerXにおけるGoのテストとCI/CDパイプラインの運用に関する知見を紹介し、継続的なメンテナンス性を確保するための具体的な手法を解説した記事。",
+    "summaryBody": "この記事では、LayerXの開発チームが直面したテストコードとCI環境の肥大化・複雑化という課題に対し、どのように「メンテナンスし続けられる」状態を実現したかを解説しています。主な取り組みとして、GitHub Actionsを利用したテストの並列実行による高速化、Flakyなテスト（実行ごとに結果が変わる不安定なテスト）の検知と排除の仕組み、そしてコードカバレッジを単なる指標ではなく品質向上のためのフィードバックループに組み込む運用方法などが挙げられています。開発スピードを落とさずに信頼性の高いコードベースを維持するための、実践的なGoエンジニアリングのエッセンスが凝縮されています。",
+    "topics": [
+      "Go",
+      "CI/CD",
+      "Testing",
+      "GitHub Actions",
+      "LayerX"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

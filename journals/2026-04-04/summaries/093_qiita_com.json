@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T14:38:58.055920+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の設定はどう作る？：最小構成から始める改善ループ設計",
+    "url": "https://qiita.com/hty1123445_a/items/514d864ec0484f323ea9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの設定を最初から作り込むのではなく、実際の利用における摩擦を観測・改善する最小構成のループ設計を提案するガイド。",
+    "summaryBody": "Claude CodeにおけるAIエージェント設定の「形骸化」を防ぐため、最初から完成形を目指さず、日々の開発で生じる摩擦（繰り返される指摘や手順）をベースに設定を段階的に育てる手法を解説しています。本記事では、タスク完了時に動作する最小限の`hooks`を設定し、軽量モデル（Haiku等）に改善候補を抽出させ、人間が判断して`CLAUDE.md`や`skills`へ反映させる「観測→改善→反映」のループ構築を推奨。自動反映をあえて避け、ユーザーが納得感を持って設定を拡張していくことで、個々の作業スタイルに真に最適化された環境を構築することを目指します。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プログラミング自動化",
+      "LLM",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

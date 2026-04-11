@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:23:06.985101+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Googleの「TurboQuant」：KVキャッシュを6分の1に圧縮しAIメモリ問題を数学で解決する",
+    "url": "https://adlrocha.substack.com/p/adlrocha-what-if-ai-doesnt-need-more",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが発表したTurboQuantは、数学的な極座標変換と誤差補正を用いてKVキャッシュを精度劣化なしに6分の1に圧縮し、GPUメモリ不足を解消する画期的な手法です。",
+    "summaryBody": "LLMの推論において、長大なコンテキストを扱う際の最大のボトルネックはKVキャッシュによるメモリ消費です。Googleの研究チームが発表した「TurboQuant」は、ハードウェアの増量ではなく「数学的アプローチ」でこの問題を解決します。\n\nアルゴリズムは2段階で構成されています。まず「PolarQuant」により、高次元ベクトルをデカルト座標から極座標（半径と角度）に変換します。高次元空間における角度の分布が特定のグリッドに集中するという性質を利用することで、モデルの微調整なしに効率的な量子化を可能にします。次に「QJL（Quantized Johnson-Lindenstrauss）」を用いて、量子化で生じた残差誤差を補正し、アテンション計算の精度を維持します。\n\n実験では、Llama 3.1やMistralにおいて精度を維持したままメモリ消費を6分の1に削減し、H100 GPU上で最大8倍のパフォーマンス向上を記録しました。この技術はデータセンターのコスト削減だけでなく、ベクトルデータベースの効率化や、モバイルデバイスでのローカル推論の可能性を大きく広げるものです。",
+    "topics": [
+      "TurboQuant",
+      "KVキャッシュ",
+      "量子化",
+      "LLM推論効率化",
+      "Google Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "What if AI doesn’t need more RAM but better math?"
+  }
+}

@@ -370,7 +370,7 @@ Use categories **only when they add non-obvious value** (aim: 30-40% of entries)
 **Opinion/Essay Articles**:
 → State thesis clearly in opening
 → Include one strongest supporting evidence in middle
-→ Close with most provocative claim
+→ Close with the article's strongest claim
 
 **Category Ambiguity**:
 → Decision matrix: What makes readers most interested? Which annex pillar?

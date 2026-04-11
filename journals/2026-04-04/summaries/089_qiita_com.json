@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:11:37.845780+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitAgent入門 — AIエージェントをフレームワーク非依存で定義・運用する #ClaudeCode",
+    "url": "https://qiita.com/nogataka/items/8f6c6899a3474a736e87",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの定義をフレームワークから独立させ、Dockerのようにポータビリティとバージョン管理を実現するOSSツール『GitAgent』の包括的な解説。",
+    "summaryBody": "本記事は、AIエージェント開発における「フレームワーク乱立と移行コスト（書き直し問題）」を解決するために登場したGitAgentの概要と実践方法を詳説しています。GitAgentは、エージェントを『静的定義（何者か、何を知っているか、何ができるか）』と『実行ランタイム』に分離し、Gitリポジトリをエージェントの単位として扱う思想（Clone a repo, get an agent）を持っています。主要なコアファイルであるagent.yaml（メタデータ）、SOUL.md（アイデンティティ）、DUTIES.md（権限制約）を用いた定義方法や、CLIツールによるClaude Code、CrewAI、LangChain等への変換エクスポート手順が紹介されています。また、MCP（Model Context Protocol）との互換性や、金融機関等の規制に対応したエンタープライズ向けのコンプライアンス管理機能についても言及されており、将来的なAIエージェント管理の標準化に向けた有力なアプローチを提示しています。",
+    "topics": [
+      "GitAgent",
+      "AIエージェント",
+      "Claude Code",
+      "LLM",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:11:51.262763+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのカスタムスキルを \"育てる\" 自動監査スキル \"/audit-skills\" を作成した",
+    "url": "https://qiita.com/k_izutani/items/3501b63f345f79246e4c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのカスタムスキル（SKILL.md）を、ソフトウェア品質特性に基づいた10個のコア観点で自動監査・改善提案するツール「/audit-skills」の開発事例。",
+    "summaryBody": "Claude Codeで作成したカスタムスキルが増えるにつれ、スキル間の冗長性や矛盾、品質のバラつきが課題となります。本記事では、作成したスキル群を自動監査するスキル「/audit-skills」の開発について解説されています。このツールは、ISO/IEC 25010（ソフトウェア品質特性）をベースに設計されており、「指示の矛盾」「セキュリティ」「速度最適化」「allowed-toolsの整合性」など、10個のコア観点と3つの拡張観点（セキュリティ・移植性・信頼性）からSKILL.mdを分析します。実際の監査例として、記述があるのに権限設定が漏れているツール（allowed-tools）の指摘や、複数のスキルに跨るロジックの重複（リファクタリング対象）の発見などが挙げられています。単にスキルを作るだけでなく、AIエージェントの指示書をソフトウェアとして「メンテナンス・改善し続ける」ための実践的な手法が示されています。",
+    "topics": [
+      "ClaudeCode",
+      "AIエージェント",
+      "カスタムスキル",
+      "ソフトウェア品質",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

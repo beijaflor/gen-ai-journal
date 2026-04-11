@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T10:40:07.401518+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "elfmem: LLMエージェントのための自己進化型メモリシステム",
+    "url": "https://github.com/emson/elfmem",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "エージェントの使用経験に基づいて知識が強化・減衰し、独自のアイデンティティを形成・維持できる、生物学的メモリをモデルにしたLLM用メモリシステム。",
+    "summaryBody": "elfmemは、単なる検索インデックスではなく、エージェントの経験を通じて進化する適応型メモリシステムです。主な特徴は以下の通りです：\n\n1. **SELFフレーム**: エージェントの価値観やスタイルを永続性の高い階層に保存し、セッションを跨いで「自己」を維持します。\n2. **動的な知識のライフサイクル**: 役に立った知識は強化され、誤解を招く情報はペナルティを受け、使われない知識はセッションベースの時計に従って減衰・アーカイブされます。\n3. **5つの検索フレーム**: 「注意」「タスク」「世界」など、目的に応じて類似度・信頼度・最新性などの重み付けを最適化した検索パイプラインを提供します。\n4. **知識グラフの構築**: 統合プロセス（dream）により、意味的な関連性を持つ知識同士をグラフで繋ぎ、ベクトルの類似度検索を超えた関連情報の取得を可能にします。\n\nSQLiteベースのシングルファイルで動作し、AnthropicやOpenAIのSDKのみを使用するエージェント・ファーストな設計となっています。MCPサーバとしても提供されており、既存のAIツールへの統合も容易です。",
+    "topics": [
+      "LLMエージェント",
+      "メモリシステム",
+      "ナレッジグラフ",
+      "自己進化型AI",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "emson/elfmem: sELF improving agent memory system"
+  }
+}

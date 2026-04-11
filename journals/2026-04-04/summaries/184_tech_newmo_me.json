@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-07T00:20:23.941377+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Plugin Marketplace でスキルをオプトイン配布にする",
+    "url": "https://tech.newmo.me/entry/2026/04/01/130000",
+    "language": "ja",
+    "contentType": "🛠️ Tool Setup & Config (ツール設定・構成)",
+    "oneSentenceSummary": "Claude Codeのスキル管理をPlugin Marketplaceによるオプトイン方式へ移行し、スキルの誤発火防止とコンテキスト最適化を実現する構成案を提示する。",
+    "summaryBody": "**Claude Code**においてスキル数が増加した際に直面する、スキルの誤発火やコンテキストトークンの浪費という課題を解決するため、ネイティブの**Marketplace**機能を活用したオプトイン配布への移行手法を解説しています。従来のリポジトリ全体への一律適用（.claude/skills/）を止め、**Plugin**パッケージ化して特定のロール（QA、チーム専用等）ごとに配布することで、開発者が必要な機能のみを選択できる柔軟な環境を構築できます。記事ではモノレポに最適なdirectoryソースを用いたマーケットプレイスの構成方法が具体的に示されており、marketplace.jsonやsettings.jsonの設定から、補完時の視認性を高める**Namespace**設計（命名規則）といった実運用に即した知見まで網羅されています。チーム開発におけるAIエージェントの体験（Developer Experience）を最適化し、開発効率を向上させるための実践的なガイドです。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Developer Experience",
+      "モノレポ",
+      "プラグイン管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    }
+  }
+}

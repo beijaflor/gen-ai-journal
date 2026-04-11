@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:45:57.551731+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeソース流出が規制産業のエンジニアリングチームに与える示唆",
+    "url": "https://systima.ai/blog/claude-code-leak-compliance-implications",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude Code流出事件から露呈した開発実態を分析し、EU AI法などの規制下にある企業がAIツール利用において考慮すべき品質管理とリスク管理の要点を解説しています。",
+    "summaryBody": "2026年3月、AnthropicのCLIツール「Claude Code」のソースコードが設定ミスにより公開npmレジストリに流出しました。この流出は、AIの痕跡を消去する「Undercover Mode」や、未発表の自律型エージェント「KAIROS」の存在、さらにはテスト不足を示唆する重大なバグ（autoCompact）の隠蔽など、同社の内部開発実態を浮き彫りにしました。記事では、EU AI法の観点から、開発ツール自体が規制対象ではなくても、その品質管理の欠如がユーザー企業の品質管理システム（QMS）に与えるエンジニアリング上のリスクを強調しています。具体的には、AI生成コードの厳格なレビュー、依存関係の固定、ベンダーの成熟度評価といった現実的な対応策を提示し、ツールベンダーの内部慣行が自社のコンプライアンス姿勢にどう影響するかを論じています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "EU AI Act",
+      "AI Governance",
+      "Supply Chain Risk"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "What The Claude Code Leak Means for Engineering Teams in Regulated Industries"
+  }
+}

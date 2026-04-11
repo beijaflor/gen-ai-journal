@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:16:51.062871+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code から Codex を呼び出すためのプラグイン codex-plugin-cc",
+    "url": "https://azukiazusa.dev/blog/claude-code-codex-plugin/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeからOpenAI Codexを呼び出し、コードレビューやタスク委任を可能にする公式プラグインの導入方法と、JSON-RPCを用いた内部動作の仕組みを解説しています。",
+    "summaryBody": "Claude Codeの設計能力とCodexの論理的思考・レビュー能力を組み合わせるワークフローが注目されています。本記事では、OpenAIからリリースされた「codex-plugin-cc」プラグインの導入手順、主要コマンド（/codex:reviewや/codex:setupなど）、および具体的なAPI実装のレビュー事例を紹介しています。さらに技術的な深掘りとして、プラグインが内部でcodex-companion.mjsを介してCodexの「App Server」とJSON-RPC 2.0で通信する仕組みについても解説されています。この構成により、VS Code拡張機能やCLIツールなど、多様なクライアントからCodexの機能を統一的に呼び出すことが可能になっています。",
+    "topics": [
+      "Claude Code",
+      "OpenAI Codex",
+      "Code Review",
+      "JSON-RPC",
+      "LLM Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

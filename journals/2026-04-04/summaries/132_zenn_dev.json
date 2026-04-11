@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:51:05.935581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの/loopで自律的にパフォーマンスチューニングのPDCAを回させる仕組みを作った【autoresearch】",
+    "url": "https://zenn.dev/dely_jp/articles/3117e590465e38",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Andrej Karpathy氏の「autoresearch」の思想をRailsに応用し、Claude Codeの/loop機能でAIが自律的にパフォーマンス改善のPDCAを回す仕組みを構築。",
+    "summaryBody": "Andrej Karpathy氏が公開したLLM訓練自律改善リポジトリ「autoresearch」の設計思想を、サーバーサイド（Rails）のパフォーマンスチューニングに転用した試み。Claude Codeの「/loop」コマンドとカスタムスキルを活用し、AIエージェントが「コード変更→ベンチマーク計測→評価（Keep/Discard）→記録」というサイクルを自律的に繰り返す。特に、AIの暴走を防ぎつつ客観性を保つための「ハーネスエンジニアリング」に重点を置いており、hooksを利用したBashコマンドのホワイトリスト化や、チューニング担当とデータ準備担当のエージェント分離によるテストデータの隔離など、安全かつ実用的な自律動作環境の構築手法を詳細に解説している。",
+    "topics": [
+      "Claude Code",
+      "Rails",
+      "パフォーマンスチューニング",
+      "自律型AIエージェント",
+      "ハーネスエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Claude Codeの/loopで自律的にパフォーマンスチューニングのPDCAを回させる仕組みを作った【autoresearch】"
+  }
+}

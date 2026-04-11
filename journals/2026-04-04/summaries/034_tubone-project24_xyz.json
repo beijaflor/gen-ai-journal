@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:18:21.014848+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのサブスクリプションで動くSlack常駐AIエージェントを作った",
+    "url": "https://tubone-project24.xyz/2026/03/27/mugi-claw-slack-personal-ai-agent/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのサブスクリプションを活用し、コストを抑えつつブラウザ・モバイル操作も可能なSlack常駐型個人専用AIエージェント「mugi-claw」の実装解説。",
+    "summaryBody": "APIの従量課金コストを抑えるため、Claude Codeのサブスクリプションプランをバックエンドに利用したSlackエージェント「mugi-claw」の開発記事です。実装ではCLIをヘッドレスモードで起動し、NDJSON出力をパースしてSlackスレッドに進捗を表示します。MCP（Model Context Protocol）によるブラウザ・モバイル操作、macOSのsandbox-execとプロキシを組み合わせた2層のセキュリティ対策、さらに機密情報をLLMのコンテキストに含めずに入力する独自の仕組みなど、実用性と安全性を両立させるための高度な実装詳細が紹介されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Slack",
+      "MCP",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:31:25.367813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mesh-llm: 余剰リソースを統合して大規模モデルを分散実行するP2P推論クラウドプラットフォーム",
+    "url": "https://docs.anarchai.org/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のデバイスの余剰計算リソースをP2Pで統合し、エキスパート・シャーディングやパイプライン並列化を用いて巨大なLLMを効率的に分散実行できるオープンソース・プラットフォーム。",
+    "summaryBody": "mesh-llmは、個々のデバイスの計算能力をプールして、強力なオープンモデルを実行するための分散型P2P推論クラウドを構築するツールです。主な特徴として、モデルが1台に収まらない場合に自動でレイヤー分割（パイプライン並列）や、MoEモデルにおけるエキスパート単位でのシャーディングを行う機能を備えています。GGUFメタデータから自動設定されるため、複雑な構成なしに導入可能です。また、Nostrを利用したネットワーク内ノードの発見や、レイテンシを考慮したスマートなルーティング、投機的デコーディングによる高速化をサポートしています。OpenAI互換APIを提供しているため、goose、pi、Claude Codeといった既存のAIエージェントツールと即座に連携可能です。さらに「Blackboard」機能により、中央サーバーなしでエージェント同士がステータスや知見を共有できる分散型のコラボレーション環境も提供します。",
+    "topics": [
+      "分散推論",
+      "P2P",
+      "LLM",
+      "MoE",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "mesh-llm — Decentralised LLM Inference"
+  }
+}

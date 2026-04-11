@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:55:24.922396+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TavilyがAmazon S3 Express One Zoneを採用し、AI検索のキャッシュコストを95%削減",
+    "url": "https://aws.amazon.com/jp/blogs/storage/how-tavily-reduced-ai-search-caching-costs-by-95-with-amazon-s3-express-one-zone/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI検索インフラのTavilyは、キャッシュ層をドキュメントDBからAmazon S3 Express One Zoneに移行し、1桁ミリ秒の低レイテンシ達成とコスト95%削減に成功しました。",
+    "summaryBody": "自律型AIエージェント向けのリアルタイムWeb検索APIを提供するTavilyは、極めて低い応答時間（10ms未満）と予測困難なトラフィックへの対応という課題に直面していました。従来のドキュメントデータベースによるキャッシュは、レイテンシの不安定さとプロビジョニングに伴う高額なコスト（月額数万ドル）がボトルネックとなっていました。同社は、1桁ミリ秒のレイテンシを安定提供する「Amazon S3 Express One Zone」を新たなキャッシュ層として採用。計算リソースと同じアベイラビリティゾーン（AZ）に配置することでネットワークホップを最小化し、リクエストベースの課金モデルによりコストを95%削減しました。現在、同社はRedis（最頻アクセス）、S3 Express One Zone（ホットデータ）、S3 Standard（バックアップ・冗長性）を組み合わせた3層のキャッシュ階層を構築し、高いスケーラビリティとコスト効率を両立させています。",
+    "topics": [
+      "Amazon S3 Express One Zone",
+      "AI Infrastructure",
+      "Caching Strategy",
+      "Cost Optimization",
+      "AWS Storage"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "How Tavily reduced AI search caching costs by 95% with Amazon S3 Express One Zone"
+  }
+}

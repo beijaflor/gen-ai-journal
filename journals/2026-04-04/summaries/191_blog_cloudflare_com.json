@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T12:00:47.040716+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと人間で異なるキャッシュの再考：Cloudflareの新たなアプローチ",
+    "url": "https://blog.cloudflare.com/rethinking-cache-ai-humans/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI生成コンテンツの増大に伴い、従来の静的キャッシュから、計算コストと意味的類似性を考慮した動的キャッシュ戦略への転換をCloudflareが提案しています。",
+    "summaryBody": "Cloudflareは、AI（LLM）によって生成されるコンテンツが従来のウェブコンテンツと根本的に異なる性質を持つことを指摘しています。AI出力は計算コストが高く、かつユーザーごとにユニークであるため、単純なURLベースのキャッシュでは不十分です。本記事では、プロンプトのセマンティック（意味的）な類似性に基づいたキャッシュの可能性や、推論プロセスにおける中間状態の再利用、さらにエッジコンピューティングを活用した計算の最適化など、AI時代のトラフィックを効率化するための新しいアーキテクチャの必要性を論じています。これにより、ユーザー体験の向上とインフラコストの劇的な削減を両立させるビジョンが示されています。",
+    "topics": [
+      "CDN",
+      "Cloudflare",
+      "LLM",
+      "キャッシュ戦略",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "Rethinking Cache: AI and Humans"
+  }
+}

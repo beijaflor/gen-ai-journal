@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T08:42:57.238751+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "流出したClaude Codeのソースコードを解読：その洗練されたエンジニアリングの全貌",
+    "url": "https://victorantos.com/posts/i-read-the-leaked-claude-code-source-heres-what-i-found/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAI CLIツール「Claude Code」の流出ソースコードを解析し、カスタムUIエンジンやAIによる自己検閲を含む独自の二段階セキュリティ、高度なマルチエージェント設計を明らかにしている。",
+    "summaryBody": "ソフトウェアエンジニアのVictor A氏が、流出したAnthropicのCLIツール「Claude Code」のソースコード（約51万行のTypeScript）を分析しました。特筆すべきは、既存のライブラリに頼らずターミナル上でFlexboxを実現する独自のReactベースUIフレームワークを自社開発している点です。セキュリティ面では、静的なルールベースとAIによる動的なリスク分類を組み合わせた「二重の権限システム」を採用しており、AI自身が自身のコマンド実行の安全性を評価します。また、APIレスポンスの受信を待たずにツール実行を開始する「ストリーミング実行」や、Git worktreeを利用したエージェントの作業分離、ディスクベースのメモリ管理など、実用性とパフォーマンスを極限まで追求した設計思想が浮き彫りになっています。これは単なるAPIラッパーではなく、高度に洗練されたエージェント・ランタイムとしての姿を提示しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "TypeScript",
+      "AI Agents",
+      "Reverse Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I Read the Leaked Claude Code Source — Here's What I Found"
+  }
+}

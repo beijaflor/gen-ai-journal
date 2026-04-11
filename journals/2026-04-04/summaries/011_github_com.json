@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T10:40:18.653341+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIスクレイパーを無限の「毒」トラップに嵌めるツール「Miasma」",
+    "url": "https://github.com/austin-weeks/miasma",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIモデルの学習用データ収集を行うWebスクレイパーに対し、毒入りのデータと無限ループするリンクを送りつけることで、無益なリソース消費を強いるオープンソースツール。",
+    "summaryBody": "Miasmaは、Webサイトのコンテンツを無断で収集するAIスクレイパーへの対抗手段として開発されたRust製の軽量サーバーツールです。このツールは、ボットのみが認識できる隠しリンクを通じて、スクレイパーを無限の自己参照リンクと「毒入り」のダミーデータ（スロップ）のループに誘導します。主な特徴として、最小限のメモリ消費で動作する高いパフォーマンス、Nginx等との連携によるレート制限機能、帯域コストを削減する強制Gzip圧縮、収集の深さを制限する設定などが挙げられます。robots.txtで善意の検索エンジンを保護しつつ、悪質なAIボットのみをターゲットにすることが可能です。",
+    "topics": [
+      "Web Scraping",
+      "AI Poisoning",
+      "Cybersecurity",
+      "Rust",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - austin-weeks/miasma: Trap AI web scrapers in an endless poison pit."
+  }
+}

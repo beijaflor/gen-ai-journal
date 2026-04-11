@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:19:04.152866+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ベクトルDB不要！Pythonで構築する軽量セマンティック検索『concept-file、concept-grep』",
+    "url": "https://zenn.dev/kiyoka/articles/concept-file-1",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ベクトルデータベースを使わず、独自フォーマットのファイル管理のみで高度な意味検索を実現するPython製ツール「concept-grep」の紹介。",
+    "summaryBody": "RAG（検索拡張生成）の導入時に障壁となる「重厚なベクトルDBの構築」を回避し、プロジェクト単位で手軽にセマンティック検索を行うためのツール群が公開されました。中核となる『concept-file』は、テキスト、埋め込みベクトル、来歴情報を一つのプレーンテキスト（.conceptファイル）にまとめる仕様で、ポータビリティに優れています。CLIツールの『concept-grep』は、このファイル群を対象にキーワード一致を超えた概念的な検索を実行します。特にAIエージェントが巨大なプロジェクトを解析する際、コンテキスト（トークン）を節約しつつ必要な箇所を特定するための「エージェントの目」としての利用が想定されており、開発プロセス自体もAIエージェントとの協働によって洗練された実践的なツールとなっています。",
+    "topics": [
+      "Python",
+      "RAG",
+      "セマンティック検索",
+      "LLM",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

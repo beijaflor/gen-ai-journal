@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T13:21:15.514734+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS AgentCoreの内部実装から読み解く認証フローと実行環境差",
+    "url": "https://qiita.com/yakumo_09/items/ee21d5fac4f99893127c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreにおいて、ローカルDocker環境の有無がビルド方式と環境変数を変え、認証トークンの自動生成ロジックに影響を与える仕組みを解説しています。",
+    "summaryBody": "Amazon Bedrock AgentCoreを使用する際、Mac環境では正常に動作するコマンドが、Docker DesktopのないWindows環境では「Workload access token has not been set」というエラーになる原因を調査。その根本原因は、deployステップにおけるビルドパスの分岐にありました。ローカルにDocker runtimeがない場合、CodeBuildによるリモートビルドが行われ、環境変数 `DOCKER_CONTAINER=1` が強制的にセットされます。この環境変数が有効な場合、AgentCoreの内部コードはセキュリティの観点から認証トークンの自動セットアップ（_set_up_local_auth）をスキップし、明示的な `--user-id` の指定を要求します。記事では、ソースコードの引用を交えて identity/auth.py のロジックを解明し、解決策として `--user-id` の付与またはDocker環境の整備を提示しています。",
+    "topics": [
+      "AWS",
+      "Amazon Bedrock",
+      "AgentCore",
+      "Docker",
+      "認証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T05:55:09.084046+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS DevOps Agentが一般提供開始（GA）：マルチクラウド対応の自律型SREエージェント",
+    "url": "https://aws.amazon.com/jp/blogs/mt/announcing-general-availability-of-aws-devops-agent/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWS DevOps Agentは、インシデントの自動調査・解決、予防的改善、オンデマンドのSREタスクを実行する、AWS・Azure・オンプレミス対応の自律型AIエージェントです。",
+    "summaryBody": "AWSは、運用チームの自律的なパートナーとして機能する「AWS DevOps Agent」の一般提供（GA）を開始しました。本エージェントは、インシデント発生時の原因究明から修正案の提示、さらには再発防止策の提案までを自動化し、エンジニアを運用上の「トイル（苦労）」から解放します。\n\n主な機能と特徴：\n- **マルチクラウド・オンプレミス支援**: AWSだけでなくAzureやオンプレミス環境をサポート。Model Context Protocol (MCP) を通じてハイブリッド環境の統合的な調査が可能です。\n- **高度な自律性と学習機能**: 組織固有の調査手順（Custom Skills）を学習し、コードベースをインデックス化することで、ソースコードレベルのバグ特定や修正提案を行います。\n- **広範な統合**: Datadog、Splunk、PagerDuty、Grafana、GitHub、Slackなど、既存の運用エコシステムとシームレスに連携します。\n- **実績**: プレビュー版ではMTTR（平均修復時間）を最大75%削減し、根本原因の特定精度は94%に達したと報告されています。\n\n東京を含む世界6リージョンで利用可能で、料金はエージェントの稼働時間に基づく秒単位の従量課金制です。",
+    "topics": [
+      "AWS",
+      "DevOps",
+      "SRE",
+      "AI Agent",
+      "Multi-cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Announcing General Availability of AWS DevOps Agent"
+  }
+}

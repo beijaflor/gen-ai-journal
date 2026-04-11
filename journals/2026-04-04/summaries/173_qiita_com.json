@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:42:23.593508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで「イベント駆動型ワークフロー自動化」ー Hooks × Scheduler × Skills 3つの基本機能を組み合わせる実践ガイド",
+    "url": "https://qiita.com/nogataka/items/9af38e7279f553f13e50",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks、Scheduler、Skillsを有機的に組み合わせ、自律的に検知・実行・修正を行う高度なワークフロー自動化の設計パターンを解説したガイド。",
+    "summaryBody": "この記事では、Claude Codeの3つの基幹機能であるHooks（イベント駆動）、Scheduler（時間駆動）、Skills（ワークフロー定義）を組み合わせた「イベント駆動型ワークフロー自動化」の設計手法を解説しています。主な内容は、定期的なPR収集と異常検知、コミット時のCHANGELOG自動生成、自己検証機能を持つ日次レポート作成、そしてセッション開始時のコンテキスト注入の4つの実践パターンです。コンポーネント間の連携にJSONファイルを活用する疎結合な設計原則や、exit codeを用いた品質管理、スコープ限定による副作用防止など、実運用に即した具体的なTipsが網羅されています。単なるツールの利用を超え、AIを自律的なシステムとして統合するための技術的な知見が詰まっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "生産性向上",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

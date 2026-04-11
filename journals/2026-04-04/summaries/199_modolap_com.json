@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:33:58.635421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ModolapとCodexを用いた20年分のHacker Newsデータ分析",
+    "url": "https://modolap.com/publication/hn-analysis-1",
+    "language": "en",
+    "contentType": "🛠️ Tooling & Infrastructure (ツールとインフラ)",
+    "oneSentenceSummary": "AIエージェントCodexにModolapを統合し、10GBのParquet形式データセット（Hacker News履歴）を自然言語クエリで分析する手法を解説。",
+    "summaryBody": "この記事では、AIエージェント**Codex**と**Modolap**を組み合わせ、大規模データセットを効率的に分析するワークフローを提示しています。約10GBの**Parquet**ファイルに格納されたHacker Newsの20年分のデータを対象に、**npx**経由で「スキル」を追加するだけで、高度な分析を可能にしています。具体例として、RustとGoの言及トレンド、MySQLとPostgresの比較、そして「コメントの平均長が時間の経過とともに短縮している」という仮説の検証プロセスが紹介されています。AIエージェントによるデータ操作とインフラの統合が、いかに迅速なインサイト抽出を実現するかを示す実証的な事例です。",
+    "topics": [
+      "Modolap",
+      "Codex",
+      "データ分析",
+      "Hacker News",
+      "Parquet"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 70,
+      "overall": 78
+    },
+    "originalTitle": "Enabling Codex to Analyze Two Decades of Hacker News Data"
+  }
+}

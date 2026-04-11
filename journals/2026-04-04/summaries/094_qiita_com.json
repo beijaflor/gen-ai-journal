@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:58:12.033546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPとFunction Callingの違いと使い分け",
+    "url": "https://qiita.com/ssc-yshikeda/items/d946d6576f8de60fa81f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの外部ツール連携手法であるFunction CallingとMCP（Model Context Protocol）の役割の違いを整理し、MCPが持つTools/Resources/Promptsの使い分けを解説する技術解説記事。",
+    "summaryBody": "本記事では、LLMに外部ツールやデータを利用させるための2つのアプローチ、Function CallingとMCPの違いについて明快に解説しています。Function CallingがLLM APIに組み込まれた「関数呼び出しの提案機能」であるのに対し、MCPは「AIアプリと外部ソースの接続を標準化するプロトコル」であり、両者は競合ではなく補完関係にあることを強調しています。特に、統合コストが膨らむ「M×N問題」を解決するMCPのアーキテクチャ的メリットや、MCPが提供する3つのプリミティブ（Tools: アクション、Resources: コンテキスト、Prompts: テンプレート）の具体的な活用シーンとクライアント対応状況まで網羅されています。",
+    "topics": [
+      "MCP",
+      "Function Calling",
+      "LLM",
+      "Python",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

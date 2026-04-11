@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-06T07:48:14.139296+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "あなたが愛用するAIモデルは、単に使い慣れているだけかもしれない：モデル選定を歪める要因の考察",
+    "url": "https://www.oreilly.com/radar/the-model-you-love-is-probably-just-the-one-you-use/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "私たちが「最高」と信じるAIモデルは、純粋な性能評価ではなく、組織の導入状況、使い慣れ、そして不透明なマーケティングによって選ばされているに過ぎないという指摘。",
+    "summaryBody": "開発者がどのLLMを推奨するかは、客観的な性能比較よりも、所属組織の決定やインフルエンサーの言動、あるいは単なる「使い慣れ」に依存している現状を批判的に分析した記事です。\n\n主な論点は以下の通りです：\n\n1.  **習熟によるバイアス**: 特定のモデルを使い込むことでユーザー側のプロンプト技術が向上し、それをモデル自体の優位性と誤認してしまう「学習機能」の罠。\n2.  **アクセスの制約**: 多くの開発者は、会社が契約したモデルや、週末にたまたま試したモデルを「最高」と結論付けており、真のベンチマーク（Bakeoff）を行っていない。\n3.  **マーケティングの影響**: モデル提供者によるインフルエンサーへの便宜供与（早期アクセスやクレジット）が、コミュニティの評価信号を不透明にしている。\n4.  **コスト意識の欠如**: 企業環境では、高価な上位モデル（Claude Opus等）を無批判に使いがちだが、実際には軽量モデル（Haiku等）の方がタスクに適しており、オーバーエンジニアリングを防げる場合が多い。\n\n著者は、1週間以上の継続的な試用なしにモデルを評価するのは単なる「第一印象」に過ぎないと警告し、QwenやGLM、Codexといった「コンフォートゾーン」の外にあるモデルを真剣にテストすることを推奨しています。",
+    "topics": [
+      "LLM",
+      "AI選定バイアス",
+      "開発者体験",
+      "AIマーケティング",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": "The Model You Love Is Probably Just the One You Use"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:52:46.697385+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot のカスタマイズに疲弊した人に: Copilot Chat のビルトイン スキルがすごい",
+    "url": "https://zenn.dev/microsoft/articles/88253e369ae8ea",
+    "language": "ja",
+    "contentType": "🛠️ How-to & Best Practices (ノウハウ・ベストプラクティス)",
+    "oneSentenceSummary": "GitHub Copilot の煩雑なカスタマイズ設定に悩む開発者向けに、AI 自身が最適な設定手法を提案・修正する内蔵スキル「agent-customization」の活用法を解説する。",
+    "summaryBody": "GitHub Copilot は **Custom Instructions** や **Agent Skills**、**MCP** などカスタマイズ機能が多様化した一方で、開発者がどの機能をいつ使うべきか判断する負荷が増大している。本記事では、VS Code の **Copilot Chat** 拡張に標準搭載されている **agent-customization** スキルに焦点を当て、その有用性を解説する。\n\nこのスキルは、プロジェクトの文脈や目的に応じて 7 つのプリミティブから最適なものを選択する判断基準（Decision Flow）を内蔵している。また、YAML の構文エラーや不適切な適用範囲設定といった、ドキュメントだけでは気づきにくいアンチパターン（**Common Pitfalls**）を自動で指摘する機能も備えている。記事では、ゼロからの設定作成、反映されない原因の調査、肥大化した設定の整理、独自スキルの開発といった 4 つの具体的シナリオを通じて、AI 自身にカスタマイズを相談するベストプラクティスを提示している。Copilot の真価を引き出し、カスタマイズ作業の疲弊から解放されたいすべてのエンジニアに推奨される内容だ。",
+    "topics": [
+      "GitHub Copilot",
+      "VS Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-09T14:53:28.565120+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studio エージェントの展開先はどこがベスト？4つのチャネルをライセンス・機能面で比較してみた (2026 年 4 月時点)",
+    "url": "https://qiita.com/Takashi_Masumori/items/acdedf5f62ce776a83ed",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoft Copilot Studioで作成したエージェントの4つの展開チャネルを、2026年4月時点の最新ライセンス体系と機能的な安定性の観点から実証比較しています。",
+    "summaryBody": "この記事は、**Microsoft Copilot Studio** を用いて開発したAIエージェントの社内展開先として、「Teams」「M365 Copilot Chat」「SharePoint」「Webサイト埋め込み」の4チャネルを多角的に比較しています。著者は、単なるドキュメント上の仕様だけでなく、トピックベースのエージェントにおける挙動の差異やライセンスの複雑な境界線を実地検証に基づいて整理しています。\n\n1. **チャネル別特性の検証**: **Microsoft Teams** への展開が最も安定しており、複雑な会話フローも正常に動作することを報告しています。対照的に、**SharePoint** エージェントや **M365 Copilot Chat** では「会話の開始」トピックが呼ばれない、あるいは **Power Automate** フローが正常に終了しないといった制限があることを具体例を挙げて警告しています。\n2. **ライセンスとコスト構造**: **Microsoft 365 Copilot** ライセンス保持者による追加課金なしの範囲と、ライセンス未保持者向けの **Copilot Studio クレジット** 消費の関係を明示。特に、SharePointへのiframe埋め込みは「外部チャネル」扱いとなり、Copilotライセンスの有無に関わらず別途クレジットが必要な点に注意を促しています。\n3. **実装のハードル**: Webサイト埋め込みにおいては、**Microsoft Entra ID** での手動認証設定やアプリ登録が必要となるため、市民開発者レベルでは完結しにくい「準備の手間」についても言及しています。\n\n社内業務効率化のために **Copilot Studio** の導入を主導するエンジニアやIT管理者が、コスト効率とUXのバランスを判断するための実践的なガイドとなっています。",
+    "topics": [
+      "Copilot Studio",
+      "Microsoft 365 Copilot",
+      "Microsoft Teams",
+      "AIエージェント展開",
+      "ライセンス比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}
