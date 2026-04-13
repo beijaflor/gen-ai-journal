@@ -142,7 +142,7 @@
 - [x] 146. https://non117.com/entry/2026/04/06/233114
 - [x] 145. https://github.com/arman-bd/guppylm
 - [x] 144. https://void-model.github.io/
-- [ ] 143. https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf
+- [x] 143. https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf
 - [x] 142. https://openai.com/index/industrial-policy-for-the-intelligence-age/
 - [x] 141. https://www.infoworld.com/article/4154210/internet-bug-bounty-program-hits-pause-on-payouts.html
 - [x] 140. https://www.macrumors.com/2026/04/06/apple-sued-by-three-youtube-channels/
