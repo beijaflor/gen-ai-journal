@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:35:51.001831+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1-bit LLM の Bonsai を Google Pixel 7a の Linux ターミナルで試す",
+    "url": "https://qiita.com/revsystem/items/d1573be74bdd4b04b1fb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Android 16のLinuxターミナル機能を使い、1-bit LLMであるBonsaiをGoogle Pixel 7a上でビルド・実行した検証レポートです。",
+    "summaryBody": "PrismMLが開発した1-bit LLM「Bonsai-8B」および「Bonsai-1.7B」を、Android 16の標準Linuxターミナル環境で動作させる試みです。PrismML版のllama.cppをビルドし、Pixel 7a上で直接実行する手順を解説しています。検証の結果、Bonsai-8Bでは生成速度が0.1 t/s、Bonsai-1.7Bでは1.5 t/s程度に留まり、頻繁なクラッシュやセグメンテーションフォールトが発生するなど、現時点でのモバイル実用性には大きな課題があるものの、軽量モデルがモバイルのLinux環境でビルド・動作することを確認した技術的な記録となっています。",
+    "topics": [
+      "1-bit LLM",
+      "Bonsai",
+      "Google Pixel 7a",
+      "llama.cpp",
+      "Android 16"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 78
+    },
+    "originalTitle": "1-bit LLM の Bonsai を Google Pixel 7aのLinuxターミナルで試す #pixel - Qiita"
+  }
+}

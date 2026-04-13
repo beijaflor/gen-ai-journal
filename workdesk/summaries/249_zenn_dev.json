@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:10:41.715257+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 vs Qwen 3.5 — DGX Spark × llama.cpp でMoEモデル対決ベンチマーク",
+    "url": "https://zenn.dev/nabe2030/articles/26e3855bbb70a5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DGX Spark環境にてllama.cppを用い、Gemma 4とQwen 3.5のMoEモデルを日本語推論能力とマルチモーダル性能の2軸で徹底比較した技術検証記事。",
+    "summaryBody": "Googleの最新モデルGemma 4と、軽量・高速なMoEモデルとして定評のあるQwen 3.5-35B-A3Bを、NVIDIA DGX Spark上のllama.cppランタイムで比較。日本語常識推論（JCommonsenseQA）では、Gemma 4 F16（96.51%）とQwen 3.5 MXFP4（96.16%）でほぼ互角の品質を示したが、推論速度（Token Generation）ではQwen 3.5が2倍以上高速であり、VRAM効率も優れている。また、両モデルに搭載された「Thinkingモード」は、知識系タスクにおいてはいずれも正解率を低下させる「考えすぎ」の傾向が確認された。一方で、Gemma 4はApache 2.0ライセンスという実用上の大きな強みを持つ。帯域律速なハードウェア環境におけるMoEモデルの特性や、量子化による影響、llama.cppにおける最新のバグ状況まで網羅的に解説されている。",
+    "topics": [
+      "Gemma 4",
+      "Qwen 3.5",
+      "llama.cpp",
+      "DGX Spark",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:59:53.887375+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アーキテクチャを人間とエージェントに教えるための「Architecture as Code」",
+    "url": "https://www.oreilly.com/radar/architecture-as-code-to-teach-humans-and-agents-about-architecture/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ソフトウェアアーキテクチャを決定論的なコードとして定義することで、人間へのフィードバック提供だけでなく、AIエージェントに対する品質のガードレールとして活用する手法を提唱しています。",
+    "summaryBody": "ソフトウェアアーキテクチャの権威であるNeal Ford氏とMark Richards氏が、開発中の新著に基づき「Architecture as Code (AaC)」の重要性を説いています。かつてはアーキテクトと開発者間のフィードバックループを高速化するための手段だったAaCは、AIエージェント（Agentic AI）の普及により、新たな役割を担うようになりました。AIが解を導く際、循環的複雑度や結合度といった「決定論的な制約」をコードとして定義しておくことで、AIの暴走（力任せのコード生成など）を防ぐガードレールとして機能します。本書では、実装、インフラ、データ、チーム・トポロジーなど9つの交差点におけるアーキテクチャの定義方法と、それをAIに守らせるためのフレームワークについて概説しています。",
+    "topics": [
+      "Software Architecture",
+      "Architecture as Code",
+      "Agentic AI",
+      "AI Guardrails",
+      "Engineering Practices"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Architecture as Code to Teach Humans and Agents About Architecture"
+  }
+}

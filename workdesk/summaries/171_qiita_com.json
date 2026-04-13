@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:29:58.511562+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SDD×マルチエージェントシステムによるAI駆動開発 #ClaudeCode",
+    "url": "https://qiita.com/shuto_nakatsubo/items/5d3c83b65c40197ea33d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "仕様書（SDD）を核とし、Claude Codeや自作のマルチエージェントシステムを活用して、要件定義から実装・QAまでを一貫して自動化・効率化する次世代の開発フローを紹介しています。",
+    "summaryBody": "menu株式会社のエンジニアによる、AIエージェントを最大限に活用した「AI駆動開発」のプロセスに関する実践的な解説記事です。AIによるコード生成が容易になった現在、最大のボトルネックは「要件定義（正しく選ぶこと）」にあるという視点から、仕様書（Spec）を起点とするSDD（Spec-Driven Development）の有効性を主張しています。具体的には、Claude Codeをベースに、マルチリポジトリ横断検索が可能なMCP（file_search_mcp）やコード解析エージェントを組み合わせた「PMエージェント」を構築。これにより、ビジネス・デザイン・エンジニア・QAの4つの観点から抜け漏れのない`requirements.md`を自動生成し、後続のデザイン生成（Figma MCP）、自動実装、Magic PodによるQA自動化へと繋げる一貫したワークフローの設計思想が詳述されています。既存のcc-sddの課題を解消し、組織特有のナレッジを要件定義に反映させるための具体的なアプローチが示されています。",
+    "topics": [
+      "AIエージェント",
+      "ClaudeCode",
+      "SDD",
+      "マルチエージェント",
+      "要件定義"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

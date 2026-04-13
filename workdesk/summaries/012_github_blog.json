@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:09:25.808128+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLI 入門：ターミナルからエージェント型AIを活用するための第一歩",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIのインストールから初期設定、リポジトリ分析やタスク委譲といったエージェント機能を活用する基本手順を解説する初心者向けガイド。",
+    "summaryBody": "GitHub Copilot CLIは、開発者のターミナルにエージェント型のAI機能をもたらすツールです。単なるコマンドの提案にとどまらず、プロジェクト全体のコンテキストを理解し、コードの生成、テストの実行、さらにはエラーの自己修正までを自律的に行う能力を備えています。\n\n本記事では、以下のステップを中心に解説しています：\n1. **インストール**: `npm install -g @github/copilot` を使用した導入手順。\n2. **認証と権限**: `/login` コマンドによる連携と、AIがプロジェクトを操作するためのフォルダ権限設定の重要性。\n3. **主な機能**: プロジェクトの概要把握、新規エンドポイント等のコード生成、そして `/delegate` コマンドによるバックグラウンドでのタスク処理（PR作成まで自動化）が可能です。\n\n開発者はコンテキストを維持したまま、対話形式でタスクをAIに割り当てることができ、ワークフローの劇的な効率化が期待できます。今後は、対話モードの使い分けやMCP（Model Context Protocol）サーバーの活用など、より高度な機能もシリーズとして紹介される予定です。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "AIエージェント",
+      "ターミナル",
+      "開発効率化",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI"
+  }
+}

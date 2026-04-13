@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:26:07.655653+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent CI - GitHub Actionsをローカルで実行し、失敗時の即座な修正とAI連携を可能にするツール",
+    "url": "https://agent-ci.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Actionsをローカル環境で高速に実行し、エラー発生時にコンテナを維持したまま修正・再試行ができるAI親和性の高い開発支援ツール。",
+    "summaryBody": "Agent CIは、RedwoodJSチームによって開発された、GitHub Actionsのワークフローをローカルマシンで実行するためのツールです。従来のクラウドCIや他のローカル実行ツール（act等）との最大の違いは、公式のGitHub Actionsランナーバイナリをそのまま使用し、サーバーAPIを模倣することで高い互換性を実現している点にあります。また、ローカルのnode_modulesをバインドマウントすることでキャッシュの転送時間をゼロにし、極めて高速なフィードバックループを提供します。最大の特徴は、ジョブが失敗した際にコンテナを破棄せず一時停止する機能です。開発者やAIエージェントは、ホスト側でコードを修正した後、失敗したステップから即座に再試行することが可能です。これにより、CIの完了を待つ「待ち時間」を大幅に削減し、AIによる自動開発サイクルへの統合も容易にします。",
+    "topics": [
+      "GitHub Actions",
+      "CI/CD",
+      "Local Development",
+      "AI Agents",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Agent CI — Run GitHub Actions Locally"
+  }
+}

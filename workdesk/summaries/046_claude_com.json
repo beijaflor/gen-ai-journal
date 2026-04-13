@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:02:26.662527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アドバイザー戦略：Opusの知能をSonnetやHaikuに統合し、コスト効率の高いエージェントを実現",
+    "url": "https://claude.com/blog/the-advisor-strategy",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、安価なモデルを実行役に、高性能なOpusを助言役に据えることで、最高峰の知能を低コストで利用可能にする「アドバイザー戦略」とAPIツールの提供を開始しました。",
+    "summaryBody": "Anthropicは、AIエージェントの性能とコストを最適化するための新しいアプローチ「アドバイザー戦略」を発表しました。この戦略では、Claude SonnetやHaikuを「実行役（executor）」としてタスクを回し、困難な判断に直面した時のみ、Claude Opusを「助言役（advisor）」として呼び出します。\n\n主なポイントは以下の通りです：\n- **サーバーサイド・ハンドオフ**: 新機能の「アドバイザーツール」をAPIリクエストに含めるだけで、サーバー側でモデル間の連携が完結。開発者が複雑なオーケストレーションを組む必要がありません。\n- **コストと性能の両立**: Sonnetを単独で使うよりSWE-bench等のベンチマークスコアが向上しつつ、タスクあたりのコストを約12%削減。HaikuとOpusの組み合わせでは、Sonnet単体比で85%ものコスト削減が可能です。\n- **柔軟な制御**: `max_uses`パラメータにより、Opusへの相談回数を制限し、予算管理を行うことができます。\n\nこれにより、全てのステップに高価なモデルを当てるのではなく、必要な時だけ「頭脳」をアップグレードする、より実用的でスケーラブルなAIエージェントの構築が可能になります。",
+    "topics": [
+      "Anthropic",
+      "Claude 3.5",
+      "AIエージェント",
+      "コスト最適化",
+      "LLM API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "The advisor strategy: Give agents an intelligence boost"
+  }
+}

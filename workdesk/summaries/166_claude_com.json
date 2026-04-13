@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:30:59.841158+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クロード・マネージド・エージェント：プロダクションへのデプロイを10倍高速化",
+    "url": "https://claude.com/blog/claude-managed-agents",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、サンドボックス実行や状態管理などの複雑なインフラ構築を不要にし、AIエージェントの開発から商用利用までの期間を大幅に短縮する「Claude Managed Agents」をパブリックベータで公開しました。",
+    "summaryBody": "Anthropicが、クラウドホスト型のAIエージェントを大規模に構築・デプロイするためのAPIスイート「Claude Managed Agents」を発表しました。従来、プロダクション品質のエージェントを構築するには、セキュアなサンドボックス環境の構築、セッションの状態保持、認証管理、実行トレースといった複雑なバックエンド開発に数ヶ月を要していましたが、本サービスはこれらをマネージド環境として提供します。これにより、開発者はインフラ構築ではなく、エージェントのタスク定義やUX設計に集中できるようになります。\n\n主な特徴は以下の通りです：\n1. **本番環境グレードのエージェント基盤**: 安全なサンドボックスとツール実行環境を標準装備。\n2. **長時間セッション**: 通信が途切れても進行状況が維持され、数時間にわたり自律的に動作可能。\n3. **マルチエージェント調整**: 複雑な作業を並列化するためにエージェントが他のエージェントを起動・指示可能。\n4. **統合管理ガバナンス**: 詳細な権限設定と実行トレースにより、安全な外部システム連携を実現。\n\n既にNotion、Rakuten、Asanaなどの企業が導入しており、コーディング支援やドキュメント処理エージェントを数日でデプロイするなど、開発速度を最大10倍向上させています。料金は消費量ベースで、通常のトークン料金に加え、セッションあたり1時間0.08ドルのランタイム料金が適用されます。",
+    "topics": [
+      "AIエージェント",
+      "Anthropic",
+      "Claude API",
+      "開発インフラ",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Claude Managed Agents: get to production 10x faster"
+  }
+}

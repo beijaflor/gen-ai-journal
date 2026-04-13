@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:15:54.644638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "新登場の OCI Enterprise AI Agents で MCPを使ったエージェントを作ろう！",
+    "url": "https://qiita.com/yuji-arakawa/items/d97ded3a9321aaeeb042",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Oracle Cloud Infrastructureの新サービス「OCI Enterprise AI Agents」を用い、MCPを活用したGitHub分析エージェントを構築する手順を解説したチュートリアル。",
+    "summaryBody": "OCI Enterprise AI Agentsの概要から実践的な開発フローまでを解説したガイドです。このサービスはOpenAI Responses APIと互換性を持ち、既存のOpenAI SDKを最小限の変更でOCI環境へ移行できる点が大きな特徴です。記事内では、権限設定、プロジェクト作成、xAIのGrokモデルを使用したエージェント設計、そしてMCP（Model Context Protocol）サーバーである「DeepWiki」を介してGitHubリポジトリを調査するCLIアプリケーション「GitHub DeepInsight」の実装コードを詳しく紹介しています。また、サーバーサイドで会話状態を管理するConversations APIの利点や、インフラ管理をOCIに任せる「Hosted Applications」モデルへのデプロイ手法についても言及しており、エンタープライズ向けAIエージェント開発の全体像を把握できる内容となっています。",
+    "topics": [
+      "OCI Enterprise AI Agents",
+      "Model Context Protocol (MCP)",
+      "Oracle Cloud",
+      "AI Agent",
+      "OpenAI SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

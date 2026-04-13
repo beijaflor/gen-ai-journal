@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:36:07.526638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Prime Intellect Labで始めるAgentic RL ―― 4BモデルでGPT-5を超える",
+    "url": "https://zenn.dev/mkj/articles/prime-rl-20260401",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Prime Intellect Labを活用したAgentic RLにより、4Bパラメータの軽量モデルでGPT-5を超えるメール検索タスク精度を達成する手法とプロセスを解説しています。",
+    "summaryBody": "松尾研究所による本記事では、LLMにツールの利用方法を強化学習で教える「Agentic RL」に焦点を当て、その学習基盤である「Prime Intellect Lab」の活用事例を紹介しています。記事では、環境構築ライブラリ「verifiers」や、分散学習を効率化する非同期アーキテクチャ（AIPO）を備えたプラットフォームの仕組みを詳説。51万通のメールから情報を抽出する「EnronHop」タスクを用いた検証では、適切な報酬設計（中間報酬の導入）を行うことで、4Bモデル（Qwen3）がGPT-5（37.0%）を大きく上回る正答率55.4%を達成しました。RLを通じて「検索キーワードの適正化」や「失敗からの復帰戦略」をモデルが自律的に獲得する様子が示されており、小規模モデルでも特定のタスクにおいてフロンティアモデルを凌駕する可能性を提示しています。",
+    "topics": [
+      "Agentic RL",
+      "Prime Intellect Lab",
+      "Qwen3",
+      "強強化学習",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

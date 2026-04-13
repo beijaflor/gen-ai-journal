@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:09:58.643022+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Linear社におけるLinear Agentの活用事例：顧客要望からコード実装までの自動化フロー",
+    "url": "https://linear.app/now/how-we-use-linear-agent-at-linear",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Linear社が自社開発のAI「Linear Agent」をワークフローに統合し、顧客要望の整理からプルリクエストの作成までをどのように効率化しているかを紹介する。",
+    "summaryBody": "Linear社が自社製品「Linear Agent」を内部でどのように活用（ドッグフーディング）しているか、3つの具体的なワークフローを解説した記事。主な内容は以下の通り：\n\n1. **顧客要望の自動Issue化**: Intercomに届くメールをAgentが文脈を維持したままIssueへ変換。重複の特定やラベル付け、PRDの草案作成までをAIがサポートする。\n2. **Slack・コードベースとの連携**: Slackでの議論から直接Issueを作成。内部でテスト中の「Code Intelligence」やMCPサーバーを活用し、Agentが既存コードの背景を説明したり、最初の実装コードを生成したりすることで開発の摩擦を低減している。\n3. **非エンジニアによる修正の迅速化**: PMがAgentを利用して、文言修正や小規模な機能追加のプルリクエストを直接作成。エンジニアのレビューを経て即座にリリースされる体制を構築している。\n\n成功のポイントとして、Agentをツール（SlackやIntercom）の近くに配置すること、最初は提案から始め徐々に自律性を高めること、そして人間がボトルネックになりやすい「摩擦点」に適用することを挙げている。",
+    "topics": [
+      "Linear",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "ソフトウェア開発",
+      "プロダクトマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How we use Linear Agent at Linear"
+  }
+}

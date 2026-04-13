@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:45:46.849614+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはどうやって記憶し、なぜ忘れるのか？：コンテキスト問題の正体 (Part 1)",
+    "url": "https://www.developerway.com/posts/how-ai-remembers-and-forgets-part1",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIの記憶の仕組みである「コンテキスト」の基本構造と、入力情報が増えることで発生する精度劣化現象「コンテキスト腐敗（Context Rot）」を実験を通じて解説する記事。",
+    "summaryBody": "AI（LLM）には真の意味での「記憶」やセッションは存在せず、過去の会話や情報をすべて最新の入力に含めて送信する「コンテキスト」によって記憶を擬似的に再現している。この記事では、開発者が知っておくべきAIのメモリ管理の仕組みを解説。著者が行った実験では、Claude 3.5 SonnetやGPT-4oなどの最新モデルであっても、コンテキストが肥大化すると情報の欠落、ハルシネーション、無関係な情報の混入といった「コンテキスト腐敗（Context Rot）」が発生することが示された。特に、大量のドキュメントを読み込ませた場合、中央付近の情報が無視される「U字型のパフォーマンス劣化」も確認されている。AIとの対話が噛み合わなくなった際は、無理に議論を続けずセッションをリセットすることが、最も実用的な解決策であると述べている。",
+    "topics": [
+      "LLM",
+      "Context Window",
+      "Context Rot",
+      "Claude 3.5 Sonnet",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "How AI Remembers and Why It Forgets: Part 1. The Context Problem"
+  }
+}

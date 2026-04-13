@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:47:00.239465+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント型AIにおける「透明性が必要な瞬間」の特定手法（パート1）",
+    "url": "https://www.smashingmagazine.com/2026/04/identifying-necessary-transparency-moments-agentic-ai-part1/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "自律的に動作するエージェント型AIにおいて、ブラックボックス化や情報過多を避け、信頼を築くために不可欠な「説明のタイミング」を特定するフレームワークを解説しています。",
+    "summaryBody": "エージェント型AIのデザインにおいて、システムが裏側で何をしているか分からない「ブラックボックス」と、全てのログを流す「データダンプ」の両極端を避けるための実践的な手法が紹介されています。\n\n主な内容は以下の3点です：\n\n1. **意思決定ノード・オーディット (Decision Node Audit)**: エンジニアとデザイナーが協力し、AIが確率に基づいて判断を下す「曖昧なポイント」を特定します。例えば、単に「契約書を確認中」と表示するのではなく、「賠償責任条項を標準テンプレートと比較中」といった具体的なプロセスを可視化することで、ユーザーの不安を解消します。\n2. **影響度/リスク・マトリクス**: 全ての判断を表示するのではなく、影響が大きく不可逆的なアクション（例：データの削除）には「事前の意思確認（Intent Preview）」、影響が小さく可逆的なアクションには「事後のログ表示」を割り当てるなど、情報の優先順位を整理します。\n3. **「Wait, Why?（なぜ待っているのか）」テスト**: ユーザーにAIの動作を観察させ、疑問や不安を感じたタイミングを特定することで、透明性が必要な瞬間を定性的に検証します。\n\n単なるUIの見た目ではなく、システムの内部ロジックを人間の言葉に翻訳し、エンジニア・デザイナー・コンテンツ担当者が一貫して協力することの重要性を説いています。",
+    "topics": [
+      "AI UX",
+      "Agentic AI",
+      "Transparency",
+      "Decision Node Audit",
+      "Trust Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Identifying Necessary Transparency Moments In Agentic AI (Part 1)"
+  }
+}

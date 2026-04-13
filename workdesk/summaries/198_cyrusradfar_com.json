@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:23:27.708547+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの失敗は40年前の知恵で解決できる：関数型アーキテクチャによる信頼性の構築",
+    "url": "https://cyrusradfar.com/thoughts/functional-programming-is-the-only-way-to-scale-with-ai",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが本番環境で失敗する原因はモデルではなく「隠れた依存関係」のあるコード設計にあり、関数型プログラミングの原則を用いることで自動化に適した堅牢な開発が可能になる。",
+    "summaryBody": "AIエージェントによるソフトウェア開発がデモ段階から本番運用へと進まない現状に対し、筆者は「既存のコードベースが自動化に対して敵対的である」と指摘します。人間と異なり、エージェントはコードの背後にある暗黙の文脈を理解できません。そのため、グローバル変数や副作用が散在するコードでは、エージェントによる変更が予期せぬ破壊を招きます。これを解決するため、筆者は1980年代から存在する関数型プログラミングの知恵を「SUPER原則」と「SPIRALSループ」という2つのフレームワークとして体系化しました。SUPER原則（Side Effects at the Edge, Uncoupled Logic, Pure & Total Functions, Explicit Data Flow, Replaceable by Value）は、コードの副作用を端に追いやり、個別の関数を独立して推論可能にします。一方、SPIRALSループは、エージェントの計画・実行・検証を7段階のプロセスで管理し、無制限のループや誤った出力を防ぎます。これらの導入により、エージェントによるコード修正の成功率が向上し、人間による監視コストを大幅に削減できると述べています。",
+    "topics": [
+      "AI Agents",
+      "Functional Programming",
+      "Software Architecture",
+      "LLM Engineering",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "AI agents keep failing. The fix is 40 years old."
+  }
+}

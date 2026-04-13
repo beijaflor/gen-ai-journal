@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:47:47.554054+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Astralにおけるオープンソースセキュリティの実践：Ruff、uvの開発を支える堅牢なサプライチェーン",
+    "url": "https://astral.sh/blog/open-source-security-at-astral",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Astralが、Ruffやuvといった広く利用されるツールの信頼性を維持するために実施している、CI/CDの堅牢化、GitHub Appsによる自動化の隔離、およびサプライチェーン攻撃対策の包括的な取り組みを公開。",
+    "summaryBody": "Astral（Ruffやuvの開発元）は、開発の高速化とセキュリティを両立させるための具体的な手法を詳細に解説しています。主な取り組みとして、GitHub Actionsにおける`pull_request_target`の禁止、全アクションのSHA-1コミットハッシュによる固定（zizmorを用いた監査）、および組織全体での厳格な権限管理が挙げられます。また、機密情報が必要な自動化プロセスをGitHub Actionsから隔離しGitHub Appへ移行するパターンや、PyPI等でのTrusted Publishingの採用、Sigstoreによる証明書の生成、2名以上の承認を必須とするリリース環境の構築など、多層的な防御策を講じています。依存関係においても、Renovate等のクールダウン設定や上流プロジェクトへの積極的なセキュリティ貢献を通じて、エコシステム全体の安全性を高めています。",
+    "topics": [
+      "Open Source Security",
+      "Supply Chain Security",
+      "GitHub Actions",
+      "Astral",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "Open source security at Astral"
+  }
+}

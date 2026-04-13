@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:05:03.852836+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeが書いたコードを、チームのコードにするためにやったこと — 理解負債とどう向き合ったか",
+    "url": "https://zenn.dev/dely_jp/articles/b8b41a4202efda",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる高速なコード生成が引き起こす「理解負債」に対し、PRの細分化、設計情報の明文化、AIと人間のレビュー分担という3つの仕組みで対抗した実践的な記録。",
+    "summaryBody": "クラシルのバックエンド開発においてClaude Codeを導入した際、AIの生成速度が開発者の理解を上回ることで発生する「理解負債（Comprehension Debt）」が課題となった。具体的には、PRの肥大化によるレビューの形骸化や、エラーハンドリング・技術選定における判断根拠の欠如といった問題が発生。これに対し、著者は3つの対策を講じた。1つ目は、PRを依存関係順に細かく分割（計23本）し、レビューの粒度を制御すること。2つ目は、エラーハンドリングや運用要件など「コードの外側にある正解」を設計書テンプレートに強制的に記述させること。3つ目は、機械的な品質チェックをAIに、設計判断の妥当性確認を人間に分担させるレビュー体制の構築である。AI時代の開発において、人間が「なぜ？」を問い続けるための環境設計の重要性を強調している。",
+    "topics": [
+      "Claude Code",
+      "理解負債",
+      "AIコーディング",
+      "コードレビュー",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

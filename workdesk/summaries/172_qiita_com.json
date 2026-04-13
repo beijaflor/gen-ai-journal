@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:29:42.480759+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「ドキュメント書いて」はもう古い。AIに4種類のドキュメントを「コードから自動生成」させる実践ガイド",
+    "url": "https://qiita.com/akira_papa_AI/items/d46a6629b1aae835491d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コードを「唯一の真実」とし、AIに適切なコンテキストを渡すことでREADME、API仕様書、ADR、コードコメントを自動生成・管理する実践的なワークフローを解説します。",
+    "summaryBody": "本記事は、ドキュメント作成を後回しにせず、AIを活用して「コードから自動生成」するための具体的な手法を解説したガイドです。著者は、AIに質の高いドキュメントを書かせる鍵は「コンテキスト（渡し方）の設計」にあると説き、README、API仕様書、ADR（設計判断記録）、コードコメントの4種類について、それぞれ最適な情報の抽出方法とプロンプト例を提示しています。さらに、Node.jsによるコンテキスト抽出スクリプトの例や、GitHub Actionsを用いたPRマージ時の自動更新ワークフロー、ハルシネーションや機密情報漏洩といったAI特有のリスクへの対策まで網羅。人間がコンテキストを設計・レビューし、AIが記述を担当するという、AI時代の新しいドキュメント管理のあり方を提案しています。",
+    "topics": [
+      "AIエージェント",
+      "ClaudeCode",
+      "ドキュメント自動生成",
+      "GitHub Actions",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

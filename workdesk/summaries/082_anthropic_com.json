@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:52:21.345553+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicが語るManaged Agentsのスケーリング：脳と手の切り離しによるエージェントの進化",
+    "url": "https://www.anthropic.com/engineering/managed-agents",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、エージェントのロジック（脳）、実行環境（手）、履歴（セッション）を疎結合化することで、モデルの進化に柔軟に対応し、信頼性とパフォーマンスを向上させる新しいアーキテクチャを導入しました。",
+    "summaryBody": "Anthropicのエンジニアリングチームは、長期間稼働する自律型エージェントサービス「Managed Agents」の背後にあるアーキテクチャを公開しました。従来のエージェント設計では、モデルの制約を補うための制御ロジック（ハーネス）がインフラと密結合しており、モデルの改善に伴ってそのロジックが陳腐化・複雑化するという課題がありました。\n\nこの問題を解決するため、同社は「OSがハードウェアを仮想化するように」、エージェントの構成要素を3つの独立したインターフェースへと抽象化しました。一つ目は全ての履歴を保持する「セッション」、二つ目はモデルの呼び出しとツールルーティングを担う「ハーネス」、三つ目はコード実行等を行う「サンドボックス」です。これにより、インフラは「特定の個体（Pets）」ではなく「代替可能な資源（Cattle）」として扱えるようになり、障害復旧が容易になりました。\n\nこの設計変更により、認証情報をサンドボックスから分離することによるセキュリティの強化、および必要な時だけコンテナを起動する仕組みによるTTFT（Time-to-First-Token）の最大90%削減という劇的なパフォーマンス向上を実現しています。今後のモデルの進化に合わせたハーネスの交換も容易になり、持続可能なエージェント基盤を構築しています。",
+    "topics": [
+      "AIエージェント",
+      "システムアーキテクチャ",
+      "Anthropic",
+      "Managed Agents",
+      "クラウドインフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Scaling Managed Agents: Decoupling the brain from the hands"
+  }
+}

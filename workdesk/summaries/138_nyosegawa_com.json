@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:38:14.974732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【解決済？】Claude Codeの文字化け問題の簡易的対応方法",
+    "url": "https://nyosegawa.com/posts/claude-code-mojibake-workaround/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeで発生する日本語の文字化け（U+FFFD混入）に対し、hooks機能を用いた自動検知・再修復の暫定的な対策方法を解説しています。",
+    "summaryBody": "Claude Codeの最新バージョンで見られるマルチバイト文字（CJK文字）の文字化け問題について、その原因（SSEデコーダーの不備）と実用的な回避策を解説する記事です。`PostToolUse` フックを活用し、`Write` や `Edit` ツールによるファイル書き込み直後に `U+FFFD`（置換文字）の有無をシェルスクリプトでチェック。検知時に終了コード2を返すことで、Claude自身にエラーをフィードバックし、壊れた箇所の再修正を促す仕組みを紹介しています。根本的な修正が公式でなされるまでの間、成果物の破壊を防ぐための極めて有用なテクニックです。",
+    "topics": [
+      "Claude Code",
+      "hooks",
+      "文字化け",
+      "Anthropic",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:46:13.820529+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント・オブザーバビリティ：開発者のためのエージェント監視ガイド",
+    "url": "https://blog.sentry.io/ai-agent-observability-developers-guide-to-agent-monitoring/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント特有の複雑な推論プロセスやツール呼び出しを可視化するため、OpenTelemetry標準に基づいた構造化トレーシングとフルスタック監視の重要性を解説した実用ガイド。",
+    "summaryBody": "Sentryによる本記事は、従来のAPM（アプリケーション性能管理）では捉えきれないAIエージェントの挙動を監視するための「オブザーバビリティ」の手法を詳説しています。AIエージェントは単一のリクエストで終わらず、複数のLLM呼び出し、ツール実行、エージェント間ハンドオフを伴うため、OpenTelemetryの`gen_ai`セマンティック・コンベンションを用いた構造化トレーシングが不可欠であると説いています。記事内では、エラー率やトークンコストといった主要メトリクスの解説に加え、Sentryを用いた自動インストルメンテーションの実装方法、ユーザー単位のコスト分析ダッシュボードの構築例を紹介。さらに、AIのトレースをDBクエリやフロントエンドの挙動と統合することで、エージェントの推論ミスがインフラの遅延やツール故障に起因することを特定する「フルスタック・コンテキスト」の重要性を強調しています。",
+    "topics": [
+      "AI Agents",
+      "Observability",
+      "OpenTelemetry",
+      "Sentry",
+      "LLM Monitoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "AI agent observability: The developer's guide to agent monitoring"
+  }
+}

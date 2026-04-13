@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:06:45.363491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "apfel - macOS標準搭載のAIモデルをCLIやOpenAI互換サーバーとして利用可能にするツール",
+    "url": "https://apfel.franzai.com/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "macOS Tahoeに標準実装されているApple製の3BパラメータLLMを、設定不要かつ完全オフラインでCLI、OpenAI互換API、対話型チャットとして活用できるツール。",
+    "summaryBody": "apfelは、macOS Tahoe (バージョン26) 以降のApple Silicon搭載Macに組み込まれている「Apple Foundation Model (AFM)」を、APIキーや環境構築なしに即座に利用可能にするオープンソースツールです。通常、このオンデバイスモデルはSiriなどのシステム機能に限定されていますが、apfelはFoundationModelsフレームワークをラップし、UNIXコマンド、OpenAI互換のHTTPサーバー、対話型チャットの3つのモードを提供します。Swift 6.3で開発されており、データの送信が発生しない100%オンデバイス処理が特徴です。また、Model Context Protocol (MCP) をサポートしており、外部ツールをモデルと連携させることも可能です。4,096トークンのコンテキスト制限はありますが、シェルスクリプトの自動生成、JSON構造化、翻訳、コードの解説といった軽量なタスクを、ネットワークコストゼロで高速に実行するのに適しています。",
+    "topics": [
+      "Apple Intelligence",
+      "macOS Tahoe",
+      "On-Device AI",
+      "Model Context Protocol (MCP)",
+      "OpenAI API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "apfel - Your Mac Already Has AI"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:11:31.405751+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLI、異種モデルを組み合わせてセカンドオピニオンを得る「Rubber Duck」機能を発表",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Copilot CLIに導入された実験的機能「Rubber Duck」は、ClaudeとGPT-5.4のように異なるAIモデルファミリーを組み合わせて相互レビューを行い、複雑なコーディングタスクの精度を大幅に向上させます。",
+    "summaryBody": "GitHubは、GitHub Copilot CLIの実験的機能として、独立したレビューエージェント「Rubber Duck」を導入しました。従来のAIエージェントは、自身の計画や出力を自己レビューする際に、学習データのバイアスや同じモデル特有の死角によりミスを見逃す「自信満々な間違い（Confident mistakes）」を犯す傾向がありました。Rubber Duckはこの問題を解決するため、メインのオーケストレーター（例：Claude Sonnet/Opus）とは異なるモデルファミリー（例：GPT-5.4）をレビュー担当として採用します。\n\n主な特徴と成果は以下の通りです：\n1. **クロスファミリー・レビュー**: 異なるモデルファミリーを組み合わせることで、単一モデルでは気づきにくいアーキテクチャ上の欠陥や、サイレントなバグ（ループ内での変数上書きなど）を効果的に検出します。\n2. **高いベンチマーク成果**: SWE-Bench Proの評価において、Claude Sonnet 4.6とRubber Duck (GPT-5.4)の組み合わせは、より高性能なClaude Opus単体との性能差の約75%を埋める結果を出しました。特に3ファイル以上にまたがる複雑なタスクで高い効果を発揮します。\n3. **戦略的な介入**: 計画策定後、複雑な実装後、テスト作成後といった「フィードバックの価値が最も高い瞬間」に自動で介入するほか、ユーザーが任意のタイミングで手動でのレビューを依頼することも可能です。\n\n現在、GitHub Copilot CLIで `/experimental` コマンドを実行することで利用可能です。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Agents",
+      "LLM Ensemble",
+      "Claude",
+      "GPT-5.4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub Copilot CLI combines model families for a second opinion"
+  }
+}

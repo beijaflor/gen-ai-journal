@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:20:32.238611+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma Gem: WebGPUを活用しブラウザ上でGoogle Gemma 4を完全ローカル実行するAIエージェント",
+    "url": "https://github.com/kessler/gemma-gem",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "WebGPUを利用してブラウザ内でGoogleのGemma 4モデルを完全ローカル動作させ、Webページの操作や解析を行うオープンソースのChrome拡張機能。",
+    "summaryBody": "Gemma Gemは、Googleの最新軽量LLMであるGemma 4（2B/4Bモデル）を、APIキー不要かつクラウドへのデータ送信なしでブラウザ上で直接実行できるChrome拡張機能です。Hugging FaceのTransformers.jsとWebGPUを活用することで、ユーザーのデバイス上で推論を完結させ、高いプライバシー保護を実現しています。最大の特徴は、LLMが「エージェント」として機能する点にあります。表示中のページ内容の読み取り、スクリーンショット撮影、要素のクリック、フォーム入力、さらにはJavaScriptの実行といったツールをLLMが自律的に使用し、ブラウザ上の作業を自動化・補助することが可能です。アーキテクチャはOffscreen Document、Service Worker、Content Scriptで構成されており、128Kのコンテキストウィンドウを活かした高度なブラウジング支援を提供します。",
+    "topics": [
+      "WebGPU",
+      "Gemma 4",
+      "Local LLM",
+      "Chrome Extension",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - kessler/gemma-gem: Gemma Gem runs Google's Gemma 4 model entirely on-device via WebGPU — no API keys, no cloud, no data leaving your machine."
+  }
+}

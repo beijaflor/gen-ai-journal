@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:24:35.705587+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeに自身のコードをQAさせる：Skyvernによるブラウザ自動テストの統合",
+    "url": "https://www.skyvern.com/blog/getting-claude-to-qa-its-own-work/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Skyvernが開発したMCPサーバーをClaude Codeに統合することで、AIエージェントが自らブラウザを操作して変更内容をQAし、PRの成功率を30%から70%に向上させる手法。",
+    "summaryBody": "Skyvernチームは、AIコーディングエージェントが生成したフロントエンドのコードが、シンタックスは正しくても実際のUI上で不具合を起こす課題を解決するため、33種類のブラウザ操作ツールを備えたMCPサーバーを開発しました。これをClaude Codeと統合することで、エージェントは`git diff`から変更を理解し、ブラウザを開いてピクセル単位で表示を確認し、実際のインタラクション（ボタンクリックやフォーム入力など）を実行してQAを行うことが可能になりました。この仕組みをローカル用の`/qa`スキルおよびCI用の`/smoke-test`スキルとして実装した結果、手動のQAループを半分に短縮し、PRの一発合格率を大幅に改善しています。従来のE2Eテストのようなメンテナンスの負荷を抑えつつ、AIが変更箇所に絞って動的にテストケースを生成・実行する点が特徴です。",
+    "topics": [
+      "AIエージェント",
+      "QA自動化",
+      "Claude Code",
+      "MCP",
+      "Skyvern"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Getting Claude to QA its own work"
+  }
+}

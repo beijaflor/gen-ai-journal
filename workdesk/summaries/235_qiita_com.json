@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:14:10.022276+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「PM」と「CTO」を仕込んだら、プロジェクト管理が変わった",
+    "url": "https://qiita.com/kiyotaman/items/4a9523badbc08af35a93",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのカスタムスラッシュコマンドを活用し、PMとCTOの視点を持つAIエージェントを構築してGitHubのプロジェクト管理を高度化した事例。",
+    "summaryBody": "この記事では、Claude Codeのカスタムコマンド機能を利用して、プロダクトマネージャー（PM）と技術責任者（CTO）の役割を自動化する手法が紹介されています。具体的には、`~/.claude/commands/`にMarkdown形式の定義ファイルを置くことで、`/pm`によるマイルストーンの一貫性や優先順位の分析、および`/cto`による技術的負債やドキュメント健全性の診断を実現しています。GitHub CLI（ghコマンド）と連携し、AIが現状を分析して人間に提案を行うという「分析と実行の分離」を徹底することで、一人開発や小規模チームにおける意思決定の質を向上させる具体的なワークフローとプロンプト設計のポイントが解説されています。",
+    "topics": [
+      "Claude Code",
+      "GitHub",
+      "プロジェクト管理",
+      "AIエージェント",
+      "プロダクトマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

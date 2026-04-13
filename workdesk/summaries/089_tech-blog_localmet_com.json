@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:50:30.201074+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Embedding modelの「内在的な双曲性」を利用したRAG精度の向上と階層矛盾検知の可能性",
+    "url": "https://tech-blog.localmet.com/entry/2026/04/09/165926",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "言語モデルのEmbeddingが持つ内在的な双曲幾何構造を利用し、Lorentz空間への射影によってRAGの検索精度向上と知識階層の矛盾検知の可能性を検証した研究報告。",
+    "summaryBody": "本記事は、Embeddingモデルの出力が負の曲率を持つ双曲空間的な性質を備えているという先行研究「HypRAG」に基づき、その再現実験と実務応用について考察したものです。主な検証内容は、Gromov δ-hyperbolicityを用いた既存モデル（e5, bge等）の双曲性評価、およびModernBERTを用いたLorentz空間（HyTE-H）への射影学習です。実験の結果、M3 Max環境での限定的な学習条件下においても、ユークリッド空間ベースと比較してnDCG@10で1〜6%の精度向上が確認されました。また、双曲空間の「半径方向の深さ（radial depth）」が概念の抽象度（一般から具体）を自然に符号化していることをWordNet等の実データで可視化し、この特性をナレッジグラフやオントロジーにおける階層矛盾の自動検知に応用する展望を述べています。単語レベルでの階層逆転などの課題も挙げられていますが、検索品質の向上と知識表現の高度化を幾何学的にアプローチする内容となっています。",
+    "topics": [
+      "RAG",
+      "Embedding",
+      "双曲幾何学",
+      "Lorentz空間",
+      "ナレッジグラフ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 93
+    },
+    "originalTitle": "Embedding modelの「内在的な双曲性」を利用したRAG精度の向上と階層矛盾検知の可能性"
+  }
+}

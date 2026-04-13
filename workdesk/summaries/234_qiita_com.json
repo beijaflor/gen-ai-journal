@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:14:26.218079+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raspberry Pi 4で1ビットLLM「Bonsai」を動かす手順と検証",
+    "url": "https://qiita.com/moritalous/items/96cdc8bcd48d8a193556",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Raspberry Pi 4上で、1ビット量子化LLM「Bonsai」をカスタマイズ版llama.cppを用いて動作させ、3.3 tok/sの生成速度を確認した技術検証記録。",
+    "summaryBody": "Raspberry Pi 4（8GBモデル）で、極端な量子化技術を用いた1ビットLLM「Bonsai-1.7B」を動作させる手順を解説しています。\n\n主な技術的ポイントは以下の通りです：\n- **カスタムビルド**: 1ビットモデルは標準のllama.cppでは未対応のため、PrismMLが提供するカスタマイズ版ソースをARM64（Raspberry Pi）向けにOpenBLASを有効化してビルドしています。\n- **リソース消費**: 実行時のメモリ使用量は非常に軽量で、1.7BパラメータのモデルがRaspberry Piのメモリ枠内で余裕を持って動作します。\n- **パフォーマンス**: 推論速度は約3.3 tokens/secを記録。CPU負荷は最大に達しますが、エッジデバイスでのLLM推論の可能性を実証しています。\n- **リモート環境**: Raspberry Pi Connectを使用したリモートアクセス環境での操作感や、モデルの生成精度（日本語対応状況）についても触れられています。",
+    "topics": [
+      "Raspberry Pi",
+      "LLM",
+      "Bonsai",
+      "llama.cpp",
+      "1-bit LLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 65,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "Raspberry Pi 4でBonsaiを動かしたよ"
+  }
+}

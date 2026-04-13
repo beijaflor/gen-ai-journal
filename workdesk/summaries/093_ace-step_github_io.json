@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:49:13.887591+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ACE-Step 1.5：商用レベルの品質を消費者向けハードウェアで実現するオープンソース音楽生成モデル",
+    "url": "https://ace-step.github.io/ace-step-v1.5.github.io/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ACE-Step 1.5は、RTX 3090などの消費者向けGPUで高速動作し、商用モデルに匹敵する品質を提供するオープンソースの音楽生成基盤モデルです。",
+    "summaryBody": "ACE-Step 1.5は、SunoやUdioといった主要な商用モデルの性能に迫る、高効率なオープンソース音楽生成AIです。主な特徴は以下の通りです：\n\n1. **圧倒的なパフォーマンス**: A100で1曲あたり2秒未満、RTX 3090で10秒未満という驚異的な生成速度を実現。4GB以下のVRAMで動作し、少数の楽曲からLoRAによる個人化も可能です。\n2. **ハイブリッドアーキテクチャ**: 言語モデル(LM)がプランナーとなり、Chain-of-Thoughtを用いて歌詞や構成の設計図を作成し、それをDiffusion Transformer (DiT)が音声化する革新的な構造を採用しています。\n3. **独自学習手法**: 外部の報酬モデルに依存せず、モデル内部のメカニズムのみを利用した「固有強化学習（Intrinsic RL）」により、バイアスを抑えたアライメントを実現しました。\n4. **高度な編集機能**: 50以上の言語をサポートし、カバー生成、部分的な修正（Repainting）、歌声からBGMへの変換など、制作ワークフローに統合可能な多彩な機能を備えています。\n\n評価指標では、4BパラメータのXLモデルが商用Suno v5を上回るスコアを記録。出力の不一致性や特定のジャンル（中国語ラップ等）への課題はあるものの、オープンソース音楽生成の新たな基準を提示しています。",
+    "topics": [
+      "Music Generation",
+      "Diffusion Transformer",
+      "Open Source AI",
+      "ACE-Step",
+      "LLM Planner"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation"
+  }
+}

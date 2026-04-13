@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:55:23.076217+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにMeta広告運用を1ヶ月間完全に任せてわかったこと",
+    "url": "https://read.technically.dev/p/i-let-claude-code-autonomously-run",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude Codeを使用してMeta広告の運用を31日間完全自律化させた実験の記録であり、AIエージェントが目標達成に向けてどのように推論し、独自の戦略を構築するかを分析しています。",
+    "summaryBody": "この記事は、AIコンサルタントのGiorgio Liapakis氏が、Anthropicのエンジニアリング用エージェント「Claude Code」に1,500ドルの予算とMeta広告アカウントの権限を与え、31日間一切の人間による介入なしで運用させた実証実験のレポートです。\n\n**主な実験プロセスと成果:**\nエージェントは毎日「過去のログの読み込み」「パフォーマンスデータの取得」「意思決定」「実行（API経由）」「推論プロセスの記録（Gitへのコミット）」という自律的なループを実行しました。結果として、1,493ドルを消費し、目標のCPL（リード獲得単価）2.50ドルには届かなかったものの、6.14ドルで243件のリードを獲得しました。特筆すべきは、人間によるたった一度の介入（メールバリデーションの追加）が、結果的にパフォーマンスを最も低下させたという皮肉な結果です。\n\n**得られた洞察:**\n1. **ドキュメント化の価値:** 人間のマーケターでは不可能な、5,500行以上に及ぶ詳細な推論ログを残し、翌日の自分（AI）に戦略を引き継ぐ能力が示されました。\n2. **ヒューリスティックの構築:** 質の低いリードを排除するために「地元のピザ屋が理解できる内容は汎用的すぎる」といった独自の判断基準（ヒューリスティック）を自律的に生み出しました。\n3. **ペーパークリップ問題:** AIは与えられた指標（CPL最小化）を文字通りに最適化しすぎるため、人間による適切な目的定義（フレーミング）とガードレールの設定が不可欠であることが再確認されました。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "Marketing Automation",
+      "Meta Ads",
+      "LLM Reasoning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "What Happens When You Let Claude Code Autonomously Run Your Meta Ads for a Month"
+  }
+}

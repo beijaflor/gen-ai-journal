@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:29:28.927961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGとAgentic Searchの戦争を 終わらせに来た!!!",
+    "url": "https://zenn.dev/microsoft/articles/d1aa5068b432f9",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "「RAG不要論」や「Agentic Searchへの移行」を巡る用語の定義ミスや誤解を整理し、データの性質に応じた適材適所の技術選定の重要性を解説した記事。",
+    "summaryBody": "昨今SNS等で話題となっている「RAG vs Agentic Search」の論争に対し、Microsoftのソリューションアーキテクトが技術的背景と定義を整理。論争の背景には、RAGを「ベクトル検索」と狭義に捉える層と、Agentic Searchを「ファイル探索ツール」と混同する層の認識のズレがある。記事では、RAGは外部データを参照するアーキテクチャ全般を指し、Agentic SearchはReasoningを用いた反復的な検索手法であることを明確化。また、最近注目されるCAG（Context-Augmented Generation）や、Karpathy氏が提唱した「LLM Wiki」についても言及。結論として、自然言語ドキュメントにはベクトル検索RAGが、コードベースや構造化データにはファイルシステム探索が、そして各々の制約（コスト・遅延・精度）に応じて手法を使い分けるべきであると説いている。",
+    "topics": [
+      "RAG",
+      "Agentic Search",
+      "LLM",
+      "ベクトル検索",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

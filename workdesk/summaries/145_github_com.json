@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:36:38.849082+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GuppyLM: 5分で学習可能な「小さな魚」のふりをする900万パラメータの超軽量LLM",
+    "url": "https://github.com/arman-bd/guppylm",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "900万パラメータという極小サイズで「魚のキャラクター」を再現した、LLMの学習プロセスを誰でも5分で体験できる教育用オープンソースプロジェクト。",
+    "summaryBody": "GuppyLMは、大規模言語モデル（LLM）のトレーニングが特別な専門知識や膨大な計算リソースを必要とする「魔法」ではないことを示すために開発された、教育目的のプロジェクトです。わずか約870万パラメータの極小モデルであり、単一のGPU（Google ColabのT4など）を使用して約5分でゼロからの学習が完了します。このプロジェクトの特徴は、データ生成、トークナイザーの訓練、モデル構築、学習、推論までの全工程を1つのノートブックで完結させている点です。アーキテクチャにはあえてGQAやRoPE、SwiGLUといった複雑な最新手法を用いず、標準的なTransformer（Vanilla Transformer）を採用することで、初心者でも構造を理解しやすいよう設計されています。モデルは「Guppy（グッピー）」という名前の魚という設定で、水、食べ物、光、水槽での生活といった限定的なトピックについて、小文字の短い文章で対話します。WebAssemblyを利用したブラウザ上での推論デモも公開されており、10MB程度の量子化モデルで動作します。ブラックボックスになりがちなLLMの内側を理解するための、非常に優れた実用的教材と言えます。",
+    "topics": [
+      "LLM",
+      "Deep Learning",
+      "Educational",
+      "Open Source",
+      "NLP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - arman-bd/guppylm: A ~9M parameter LLM that talks like a small fish."
+  }
+}

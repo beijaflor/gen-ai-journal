@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:46:00.158488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MicrosoftがAIエージェントの実行時セキュリティを強化するオープンソースツールキットを公開",
+    "url": "https://socket.dev/blog/microsoft-open-source-toolkit-for-ai-agent-runtime-security",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Microsoftは、自律型AIエージェントのガバナンス欠如に対応するため、実行時のポリシー適用やアイデンティティ管理を可能にするMITライセンスの「Agent Governance Toolkit」をリリースしました。",
+    "summaryBody": "Microsoftは、AIエージェントの急速な普及に伴うガバナンスとセキュリティの課題に対処するため、7つの独立したパッケージからなる「Agent Governance Toolkit」をオープンソースで公開しました。このツールキットはPython、TypeScript、Rust、Go、.NETをサポートし、LangChainやCrewAIといった既存のフレームワークに統合可能です。主な機能には、YAMLやOPA Regoを用いた実行時ポリシーエンジン（Agent OS）、Ed25519署名によるエージェント間の信頼構築（Agent Mesh）、CPU特権レベルを模した実行リングや緊急停止機能（Agent Runtime）、そしてOWASPのAIエージェント向けトップ10リスクやEU AI法への準拠支援が含まれます。一方で、エージェントの「意図」を正確に識別するセマンティック分類の精度や、短期間の権限スコープ管理など、依然として解決すべき課題も指摘されています。本プロジェクトは将来的に中立的な財団へ移管される予定です。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "ガバナンス",
+      "オープンソース",
+      "Microsoft"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Microsoft Releases Open Source Toolkit for AI Agent Runtime Security"
+  }
+}

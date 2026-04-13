@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:15:21.470569+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人開発でAIコード可視化ツール「CodeMap」を作った話",
+    "url": "https://qiita.com/creolab_dev/items/427ecd0f70555d6125ba",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI生成コードの「理解の負債」を解消するため、React FlowとAI解析を用いてコード構造を可視化し、セキュリティ診断や読み始めガイドを提供するツール「CodeMap」の開発記録。",
+    "summaryBody": "### 開発の背景と目的\nAI生成（Vibe Coding）により「動くが理解できないコード」が増加している現状を課題とし、非エンジニアや初心者でもコード構造を直感的に把握できるツール「CodeMap」を開発。既存の14ツールを調査した上で、可視化・理解支援・セキュリティを統合した点が特徴です。\n\n### 主な機能\n1. **コードマップ可視化**: React Flowを活用し、システム、モジュール、ファイル、セキュリティ、ガイドの5つのビューモードを提供。3段階のドリルダウンが可能です。\n2. **AI読み始めガイド**: package.jsonから順に、理解すべきファイルを優先度順に7〜10件リストアップし解説します。\n3. **セキュリティチェック**: 正規表現による静的スキャンとClaude Haikuによるロジック分析の2層構造で脆弱性を検出。\n4. **ソースビューア & AIチャット**: コード内のimport文やHooksに解説を自動付与し、AIへの質問も可能です。\n\n### 技術スタックと工夫\n- **Next.js 15 / React 19**: 最新のフロントエンド環境を採用。\n- **@babel/parser**: TypeScriptのAST解析における複雑なエッジケースを41件のテストで克服。\n- **Stripe REST API**: サーバーレス環境のコールドスタート対策としてSDKを使わず直接APIを叩く設計。\n- **従量課金モデル**: 初心者の心理的ハードルを下げるため、月額制ではなく100円からのクレジット制を採用しています。",
+    "topics": [
+      "AI",
+      "React",
+      "Next.js",
+      "個人開発",
+      "コード可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

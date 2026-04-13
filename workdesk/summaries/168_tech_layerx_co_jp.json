@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:30:28.971927+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Long-running task（長時間実行タスク）に関する重要論文のサーベイと考察",
+    "url": "https://tech.layerx.co.jp/entry/long-running-task-papers",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "分散システムにおいて数時間から数日単位で実行される「長時間実行タスク」の課題解決に向け、主要な論文から設計思想を紐解く解説記事。",
+    "summaryBody": "LayerXのエンジニアリングブログによるこの記事では、分散システムにおける「Long-running tasks（長時間実行タスク）」の管理と信頼性に関する主要な研究論文を詳しく解説しています。ビジネスロジックが複雑化し、実行時間が数時間に及ぶ処理が増える中で、ネットワーク障害やサーバーの再起動に耐えうる堅牢な仕組みをいかに構築すべきかという問いに対し、過去の重要な論文から得られる知見を整理しています。具体的には、状態のチェックポインティング、メッセージキューのセマンティクス、冪等性の確保、そしてリソースの効率的なスケジューリングといった技術的課題について、既存のフレームワーク（TemporalやCadenceなど）がどのような設計思想に基づいているかを紐解きます。単なるライブラリの使用法に留まらず、分散コンピューティングの本質的な理解を深めるためのリソースとして構成されています。",
+    "topics": [
+      "分散システム",
+      "Long-running tasks",
+      "論文解説",
+      "耐障害性",
+      "ワークフローエンジン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

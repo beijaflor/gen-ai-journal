@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:22:49.356986+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LispはAI耐性が高く、開発コストが跳ね上がる：あるLisp愛好家の嘆き",
+    "url": "https://blog.djhaskin.com/blog/writing-lisp-is-ai-resistant-and-im-sad/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Lisp愛好家のエンジニアが、AIエージェントを用いた開発においてLispがPython等の主流言語に比べ学習データの少なさやREPL駆動の特性から著しく高コストで非効率であることを考察しています。",
+    "summaryBody": "本記事は、Lispを愛するDevOpsエンジニアが、Goose CLIなどのエージェントAIを用いた開発プロセスで直面した「LispのAI耐性」についての洞察をまとめたエッセイです。著者は、PythonであればAIがテストまで含めて数日で書き上げるツールを、Lispで構築しようとするとAIが「空回り」し、数十分で数十ドルのAPIコストを消費しながらも品質の低いコードしか得られない現状を報告しています。\n\n主な要因として、AIの学習データの圧倒的な不足、既存のツールチェーン（QuickLisp）への強いバイアス、そして「低遅延なREPL駆動」というLispの強みが「高遅延なAI APIのバッチ処理」と相性が悪い点を挙げています。AI時代において、言語の普及度は単なる人気の指標ではなく、開発コスト（1トークンあたりの成果）に直結する経済的問題へと変貌しました。著者は、Lispを書き続ける喜びとAIによる実利的な生産性の間で揺れ、かつて鉄道に敗れた「板張りの道」の歴史を引用しながら、AI時代におけるプログラミング言語の在り方を問い直しています。",
+    "topics": [
+      "Common Lisp",
+      "LLM Coding",
+      "Agentic AI",
+      "Economic Cost",
+      "REPL"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Writing Lisp is AI Resistant and I'm Sad — Dan's Musings"
+  }
+}

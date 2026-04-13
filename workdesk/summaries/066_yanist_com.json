@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:55:51.661675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のクリーンコード：なぜ構造が依然として重要なのか",
+    "url": "https://www.yanist.com/clean-code-in-the-age-of-coding-agents/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの文脈ウィンドウも人間の認知負荷と同様の制限があるため、コードの可読性や構造の維持はコストと精度の両面で依然として不可欠である。",
+    "summaryBody": "ソフトウェア開発においてAIエージェントが活用される時代になっても、コードの「構造」を美しく保つ重要性は変わらないと論じる記事です。Robert Martinの『Clean Architecture』を引用し、コードには「動作（価値）」と「構造」の2つの特性があると指摘。LLMにはコンテキストウィンドウの制限があり、構造が劣悪なコードは、エージェントが読み取るべきファイル数を増やし、トークンコストの増大と推論精度の低下を招きます。クリーンなコード（可読性、単純性、モジュール性、テスト可能性）を維持することで、エージェントは最小限のコンテキストで効率的にタスクを遂行できます。実用的なアドバイスとして、エージェントへの指示に「構造」の要件を含めることや、人間によるレビューの継続を推奨しています。",
+    "topics": [
+      "クリーンコード",
+      "AIコーディングエージェント",
+      "LLM",
+      "ソフトウェアアーキテクチャ",
+      "開発効率"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "Clean code in the age of coding agents"
+  }
+}

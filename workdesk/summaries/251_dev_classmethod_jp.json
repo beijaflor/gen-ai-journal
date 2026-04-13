@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:10:15.614988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 を DGX Spark で動かして日本語とマルチモーダルをベンチマークしてみた",
+    "url": "https://dev.classmethod.jp/articles/dgx-spark-gemma4-benchmark/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleの最新モデルGemma 4全4モデルをDGX Spark上で検証し、日本語常識推論での最高スコア達成とMoEモデルの極めて高い効率性を明らかにしました。",
+    "summaryBody": "GoogleがリリースしたGemma 4ファミリー（E2B, E4B, 26B-A4B, 31B）を、128GBの統合メモリを持つNVIDIA DGX Sparkでベンチマーク。全モデルがマルチモーダル対応し、ライセンスがApache 2.0へ変更されたことが大きな特徴です。検証の結果、31BモデルがJCommonsenseQAで97.9%と過去最高精度を記録。特筆すべきは26B-A4B（MoE）モデルで、Activeパラメータ3.8Bながら96.4%という極めて高い精度と高速な推論を実現しています。一方で、論理思考を強化する「Thinkingモード」は常識推論タスクでは精度を低下させる傾向も確認されました。さらに、NVIDIAの最新量子化技術NVFP4によるメモリ削減と速度向上についても言及されています。",
+    "topics": [
+      "Gemma 4",
+      "DGX Spark",
+      "LLM",
+      "マルチモーダル",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

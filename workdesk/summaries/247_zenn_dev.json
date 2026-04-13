@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:11:08.807316+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot は自ら学ぶ: Copilot Memory 入門",
+    "url": "https://zenn.dev/microsoft/articles/50863342150992",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotがセッションや環境を跨いで知識を学習・蓄積する「メモリ機能」について、クラウド保存型とローカル保存型の違いや検証メカニズムを詳しく解説する入門記事。",
+    "summaryBody": "GitHub Copilotの新機能である「メモリ」の全体像を整理した解説記事です。メモリ機能は、人間が明示的に指示を与えるカスタムインストラクションとは異なり、Copilotが自ら知識を獲得し、会話セッションを跨いで保持する仕組みです。主に、GitHubクラウドに保存され全環境で共有可能な「Copilot Memory」と、VS CodeやCLIなどの実行環境に依存する「ローカル保存型メモリ」の2種類に分類されます。特にCopilot Memoryは、リポジトリ内のコードパターンを抽出し、その根拠（citations）をリアルタイムで検証することで、情報の正確性を担保しながら複数のエージェント間で知識を共有できる点が特徴です。本記事では、保存場所・共有スコープ・寿命といった軸で各メモリ機能の仕様が体系的にまとめられています。",
+    "topics": [
+      "GitHub Copilot",
+      "Copilot Memory",
+      "AIエージェント",
+      "VS Code",
+      "GitHub CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:05:35.558807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP vs Skills論争に決着をつける試み。AIエージェントの「拡張手段」を実装・設計・セキュリティで徹底比較する",
+    "url": "https://qiita.com/miruky/items/32314a0d9eb8c154dc95",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント拡張の二大手法であるMCPを「接続層（プロトコル）」、Skillsを「知識層（フォーマット）」と定義し、両者の設計・実装・セキュリティ面での違いと補完関係を詳細に解説した記事。",
+    "summaryBody": "本記事は、Anthropicが提唱するMCP（Model Context Protocol）とAgent Skillsの仕様を技術的側面から徹底比較しています。著者は、MCPは「何をすべきか（接続）」を担うJSON-RPCベースの通信プロトコルであり、Skillsは「どうやるか（知識）」を記述したMarkdown/YAML形式のドキュメントフォーマットであると分類。アーキテクチャ、実装コスト、実行主体（MCPサーバーかLLM自身か）、セキュリティ境界の違いを一次ソースに基づき分析しています。結論として、SaaS連携や認証が必要な操作にはMCP、コーディング規約や手順の標準化にはSkillsが適しており、これらは競合ではなく、MCPによる接続にSkillsによる知見を重ねることで真価を発揮する補完関係にあると述べています。",
+    "topics": [
+      "MCP",
+      "Agent Skills",
+      "AIエージェント",
+      "LLM",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 50,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

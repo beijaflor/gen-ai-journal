@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:39:04.356579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4を8GBのMacBook Neoで動かしたらAIが開眼。KVキャッシュ量子化組み込みでさらに進化しちゃった（CloseBox）",
+    "url": "https://www.techno-edge.net/article/2026/04/07/4973.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "8GBメモリのMacBook Neo上で、Googleの最新LLM「Gemma 4」を活用した画像認識機能の実装と、KVキャッシュ量子化によるコンテキスト長の拡張を検証した技術解説記事。",
+    "summaryBody": "8GB RAMという制約の多いMacBook Neo上でローカルAIを実用化する連載シリーズ。今回はGoogleの最新オープンソースモデル「Gemma 4 E2B」を独自開発のエージェンティックAI『mazzaineo』に統合した。Gemma 4 E2Bはマルチモーダル対応であり、Macのカメラ映像やスクリーンキャプチャをリアルタイムに解析・解説する「目」の機能を実現した。また、Ollamaでの推論時に発生する思考トークンのオーバーヘッド問題を「thinking: false」設定で解決。さらに、KVキャッシュを8ビット量子化（q8_0）することで、メモリ不足を回避しながら実用的なコンテキスト長を32Kから64Kへと倍増させることに成功した。ディスクサイズが小さいQwen 3.5 4Bとの比較では、モデル構造やメモリ展開効率の観点から、8GB環境ではGemma 4の方が圧倒的に高速であることを実証。限られたハードウェア資源で最大のAI性能を引き出すための、具体的かつ実践的な最適化手法が網羅されている。",
+    "topics": [
+      "Gemma 4",
+      "MacBook Neo",
+      "KVキャッシュ量子化",
+      "マルチモーダルAI",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

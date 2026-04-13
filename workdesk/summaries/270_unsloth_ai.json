@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:05:12.379622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 - ローカルで実行する方法 | Unsloth Documentation",
+    "url": "https://unsloth.ai/docs/jp/moderu/gemma-4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleの最新オープンモデル「Gemma 4」シリーズを、Unsloth Studioやllama.cppを使用してローカル環境で効率的に実行・最適化するための技術ガイド。",
+    "summaryBody": "Google DeepMindが発表した「Gemma 4」モデル群（E2B、E4B、26B-A4B、31B）をローカル環境で動作させるための詳細なチュートリアルです。このガイドでは、新たに公開されたWeb UI「Unsloth Studio」による直感的な操作方法に加え、llama.cppを用いたGGUF形式の推論、Apple Mac向けのMLX最適化手法を解説しています。主な特徴として、最大256Kのコンテキストウィンドウ、140以上の言語サポート、画像や音声に対応したマルチモーダル機能、そして明示的な「思考モード（Reasoning）」の制御方法が紹介されています。また、量子化（4-bit/8-bit）ごとの必要なVRAM/RAM要件や、温度設定（Temperature）などの推奨パラメータ、OCRや音声翻訳を最大限に活用するためのプロンプト例も網羅されており、開発者が自身のハードウェア環境に合わせて最適なモデルを選択・運用できる実用的な内容となっています。",
+    "topics": [
+      "Gemma 4",
+      "Unsloth",
+      "ローカルLLM",
+      "推論最適化",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Gemma 4 - How to run locally | Unsloth Documentation"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:01:57.199072+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RedwoodJS Agent-CI: ローカル環境でGitHub Actionsを高速実行し、失敗時の修正・再試行を可能にするツール",
+    "url": "https://github.com/redwoodjs/agent-ci",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "公式のGitHub Actionsランナーをローカルで動作させ、キャッシュの高速化や失敗したステップからの再試行を実現する、AIエージェント開発に最適なツール。",
+    "summaryBody": "Agent-CIは、GitHub Actionsのオーケストレーション層をローカルで再構築するツールです。既存のツール（act等）とは異なり、公式のGitHub Actionsランナーバイナリをそのまま利用し、サーバー側のAPIをエミュレートすることで、100%に近い互換性と高い信頼性を提供します。\n\n主な特徴は以下の通りです：\n1. **高速なキャッシュ**: ホスト側のディレクトリをコンテナに直接マウント（bind-mount）することで、node_modules等の依存関係のキャッシュをゼロ遅延で利用可能です。\n2. **失敗時のポーズ機能**: ステップが失敗した際、コンテナを破棄せずに一時停止させます。ホスト側での修正内容がコンテナ内に即時反映されるため、プッシュや再起動なしで失敗したステップから直接リトライできます。\n3. **AIエージェントへの最適化**: Claude CodeやCursorなどのAIエージェントが、ローカルでCIを回しながらコードを自動修正するワークフローを想定して設計されています。\n\nこれにより、開発者はクラウドCIの待ち時間から解放され、よりタイトなフィードバックループを回すことが可能になります。",
+    "topics": [
+      "GitHub Actions",
+      "CI/CD",
+      "Local Development",
+      "AI Agents",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - redwoodjs/agent-ci: Agent-CI is local GitHub Actions for your agents."
+  }
+}

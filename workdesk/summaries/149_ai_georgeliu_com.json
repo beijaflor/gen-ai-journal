@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:35:37.574074+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LM Studioの新しいヘッドレスCLIとClaude Codeを使用してGoogle Gemma 4をローカルで実行する方法",
+    "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LM Studio 0.4.0の新機能であるヘッドレスCLIを活用し、Googleの最新MoEモデルGemma 4をMac上でローカル実行し、Claude Codeのバックエンドとして統合する手順を解説したガイド。",
+    "summaryBody": "LM Studio 0.4.0で導入された`llmster`デーモンと`lms` CLIを使用し、Googleの最新LLM「Gemma 4 26B-A4B」をApple Silicon Mac上でローカル動作させる方法を詳しく解説しています。主なハイライトは以下の通りです：\n- **Gemma 4 MoEの効率性**: 26Bパラメータの総容量を持ちつつ、推論時には4Bのみをアクティブにする混合エキスパート（MoE）により、低負荷かつ高性能な推論を実現。M4 Pro搭載Macで51 tok/secを記録。\n- **LM Studio 0.4.0の新機能**: GUI不要で動作する`lms`コマンド、Anthropic互換エンドポイントのサポート、および詳細なメモリ推定機能を紹介。\n- **Claude Codeとの連携**: シェル関数を作成し、環境変数を設定することで、Claude Codeの推論先をローカルのLM Studioに向ける「claude-lm」の設定方法を提示。これにより、完全オフラインでプライバシーを保ちつつ、コストゼロでAIコーディング支援が受けられます。\n- **ハードウェアの最適化**: コンテキスト長ごとのメモリ使用量見積もりや、MoEモデルにおける投機的デコーディングの課題など、技術的な洞察も含まれています。",
+    "topics": [
+      "Gemma 4",
+      "LM Studio",
+      "Claude Code",
+      "Local LLM",
+      "Apple Silicon"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Running Google Gemma 4 Locally With LM Studio’s New Headless CLI & Claude Code"
+  }
+}

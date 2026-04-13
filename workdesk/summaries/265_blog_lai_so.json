@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:06:32.173247+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「ソースコード流出」をどう見るのか",
+    "url": "https://blog.lai.so/leak-claude-code/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのソースコードがnpmのソースマップ経由で露呈した問題について、技術的な実態とAnthropicの開発体制を冷静に分析した解説記事。",
+    "summaryBody": "### 概要\n2026年3月末に発生したClaude Codeのソースコード露呈騒動について、技術的な詳細と背景を整理した記事です。本件はハッキングによる「流出（Leak）」ではなく、npmパッケージにデバッグ用のソースマップ（cli.js.map）が誤って同梱された「露呈（Exposure）」であると指摘しています。\n\n### 主な分析ポイント\n- **技術的実態**: 以前から難読化（minify）されたJavaScriptの解析は一部で行われていましたが、ソースマップの混入により、変数名の意味論や未公開機能のコードが完全に復元可能になりました。\n- **フィーチャーフラグの役割**: 44個以上の未公開フラグが確認されましたが、これらは秘匿目的ではなく、AI駆動開発による高速なリリースタイミングを制御するための標準的な手法です。\n- **開発スピードの課題**: Anthropic自身がAIを活用して極めて高い速度で開発を進めている一方で、配布物の検査プロセスがその速度に追いついていない現状が浮き彫りになりました。\n- **競争力への影響**: コーディングエージェントの価値は「モデルとクライアント側の統合（ハーネス）」にあり、コードをコピーしただけでは、サーバー側の最適化やモデルの挙動を含めた真の性能を再現することは困難であると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "npm",
+      "Source Map",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

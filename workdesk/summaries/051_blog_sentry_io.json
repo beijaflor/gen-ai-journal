@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:59:40.046195+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SentryにおけるAIトレースの100%サンプリング戦略：重要な実行データを逃さない手法",
+    "url": "https://blog.sentry.io/sample-ai-traces-at-100-percent-without-sampling-everything/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの非決定的な挙動を確実にデバッグするため、AI関連のルートや操作のみをピンポイントで100%サンプリングするSentryの実装手法を解説。",
+    "summaryBody": "AIエージェントの実行は複数のツール呼び出しや推論ステップを伴う「スパン・ツリー」構造を持ちますが、従来のヘッドベースのサンプリング（一律10%など）では、重要な失敗時のトレースが丸ごと消失するリスクがあります。AIは実行ごとに結果が異なるため、このサンプリング欠落はデバッグを困難にします。本記事では、Sentryの`tracesSampler`機能を使い、AIが関与するAPIルートや特定のオペレーション（`gen_ai.*`）を識別して、それらのみを優先的に100%サンプリングするJavaScriptとPythonの具体的な実装例を紹介しています。また、AIのAPI利用料（トークン代）と比較して監視コストは極めて低いため、AIトレースを全てキャプチャする経済的正当性についても言及。さらに、大量のトラフィックがある場合の代替案として、サンプリングの影響を受けないSentry Metricsを活用したメトリクス収集とログの併用についても解説しています。",
+    "topics": [
+      "Sentry",
+      "LLM Monitoring",
+      "Observability",
+      "AI Agents",
+      "Tracing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Sample AI traces at 100% without sampling everything"
+  }
+}
