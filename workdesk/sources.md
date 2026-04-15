@@ -153,7 +153,6 @@
 - [x] 135. https://www.techno-edge.net/article/2026/04/07/4973.html
 - [x] 134. https://memo.tyoshida.me/office-365/claude-m365-connector-copilot-differences/
 - [x] 133. https://github.com/VoltAgent/awesome-design-md
-- [x] 132. https://slides.pawapo.minoruonda.com/7cee2011-90b7-4bc9-aa5a-2752acd54f5d/index.html
 - [x] 131. https://tech.findy.co.jp/entry/2026/04/07/080000
 - [x] 130. https://kaminashi-developer.hatenablog.jp/entry/ai-pr-process
 - [x] 129. https://ai-engineering-summit-tokyo.findy-tools.io/2026-summer
