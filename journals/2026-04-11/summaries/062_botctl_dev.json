@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:56:51.900479+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "botctl - 自律型AIエージェントのためのプロセスマネージャー",
+    "url": "https://botctl.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "YAML設定とMarkdownプロンプトにより、Claude等のAIエージェントをバックグラウンドで永続的に実行・監視できる、TUI/Web UI完備のプロセスマネージャー。",
+    "summaryBody": "botctlは、AIエージェントの実行管理に特化した「AI版のpm2」のようなツールです。ユーザーは、YAMLフロントマターとMarkdown形式のプロンプトを組み合わせたBOT.mdファイルを作成することで、エージェントの名前、実行間隔、最大ターン数などを宣言的に定義できます。主な機能として、エージェントの永続的なバックグラウンド実行、TUIおよびWeb UIによるリアルタイム監視、実行中のエージェントへの動的なメッセージ送信（割り込み指示）、設定変更を即座に反映するホットリロード、GitHub経由でスキル（機能）を拡張できるエコシステムを備えています。Claudeを利用して自律型エージェントをローカルで安定運用・開発したいエンジニアに最適なユーティリティです。",
+    "topics": [
+      "AIエージェント",
+      "プロセスマネージャー",
+      "Claude",
+      "LLMツール",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "botctl — Process Manager for Autonomous AI Agents"
+  }
+}

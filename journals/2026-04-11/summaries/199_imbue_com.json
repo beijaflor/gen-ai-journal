@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:23:04.272815+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "100体以上のClaudeエージェントを並列稼働：Imbueによる`mngr`を用いた自動テストとドキュメント生成の実践",
+    "url": "https://imbue.com/product/mngr_part_2/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Imbueが自社開発のツール`mngr`を活用し、100以上のClaudeエージェントを並列に動かして自身のテストコード生成、デバッグ、そしてプルリクエストの統合までを自動化した高度なケーススタディ。",
+    "summaryBody": "本記事は、Imbue社が開発したエージェントオーケストレーションツール`mngr`を用いて、自社のワークフローをいかに効率化したかを解説する技術ブログです。彼らはチュートリアルスクリプトを起点に、Claudeエージェント群を活用してテストコード（pytest）を自動生成し、各テストに対して個別のエージェントを割り当ててデバッグと修正を行わせるという大規模な並列処理を実現しました。特筆すべきは、これらのエージェントの成果物を一つの「インテグレーターエージェント」が統合し、人間がレビュー可能な単一のプルリクエストにまとめる仕組みです。このプロセスにより、インターフェースの改善点（エージェントが理解できない部分は人間にとっても難解であるというシグナル）の発見にも繋がりました。また、開発者がローカル環境での小規模な試行から、Modalを用いたクラウド上の大規模並列実行（100エージェント以上）へと、同一のインターフェースでシームレスにスケールアップできる`mngr`の設計思想についても詳述されています。",
+    "topics": [
+      "AI Agents",
+      "LLM Orchestration",
+      "Software Testing Automation",
+      "Claude",
+      "mngr"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "A case study in testing with 100+ of Claude agents in parallel"
+  }
+}

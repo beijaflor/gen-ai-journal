@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:28:45.036032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のサブエージェント機能を改めて確認してみた",
+    "url": "https://dev.classmethod.jp/articles/claude-code-getting-started-02/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのサブエージェント機能のメリット、標準エージェントの役割、およびカスタムエージェントの作成・運用手順を網羅した実践ガイド。",
+    "summaryBody": "Claude Code v2.1.84における「サブエージェント」機能について、その定義と活用メリットを詳しく解説しています。サブエージェントは、メインの会話からコンテキストを分離し、ツール制限やモデル指定（Haikuによるコスト最適化など）を行うことで、特定のタスクに特化した「専門家」をAIの中に構築する機能です。記事では、既存の「Skills」機能との違い（コンテキストの独立性や処理の並列化など）を整理し、標準搭載のExploreやPlanエージェントの特性を紹介。さらに、`/agents`コマンドを使用した対話形式でのカスタムエージェント作成フローをステップバイステップで説明し、実際に「コードレビュー専門エージェント」を作成してPythonコードを解析させる実例を通じて、その高い実用性を示しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "AI駆動開発",
+      "ソフトウェア開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:13:25.662650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLI も OTel で観測する",
+    "url": "https://zenn.dev/microsoft/articles/f439e06d07123e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIでOpenTelemetryを有効化し、Langfuse等でLLM呼び出しやツール実行のトレース・メトリクスを可視化・分析する手法を解説しています。",
+    "summaryBody": "GitHub Copilot CLI (v1.0.4以降) に実装されたOpenTelemetry (OTel) 対応を活用し、環境変数設定のみでテレメトリを出力する方法を詳しく紹介しています。LangfuseとOTel Collectorを用いた構成で、`invoke_agent`、`chat`、`execute_tool`といった詳細なスパンツリーを可視化し、トークン消費量やコンテキストウィンドウの使用状況、ツール実行の成否を把握できます。また、単なる監視に留まらず、カスタムインストラクションやSkillsの変更がエージェントの挙動に与えた影響を、ターン数やツール呼び出しパターンの変化から定量的に評価する「Evals (評価)」の基盤としての活用法も提案しています。v1.0.21時点の最新仕様に基づいた実戦的なガイドです。",
+    "topics": [
+      "GitHub Copilot",
+      "OpenTelemetry",
+      "Langfuse",
+      "LLM Observability",
+      "Evals"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:04:37.171140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "国土交通省提供の『地理空間MCP Server』を使ってお手軽にClaudeからの地理空間情報連携を試してみた",
+    "url": "https://zenn.dev/truestar/articles/ced30276b8d1ed",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "国土交通省が公開した「地理空間MCP Server」をClaude CodeやClaude Desktopと連携させ、AIが直接不動産情報や防災データを取得・分析可能にするセットアップ手順を解説した記事です。",
+    "summaryBody": "## 概要\n国土交通省から公開された「地理空間情報に関するMCP Server（α版）」を導入し、Claudeと連携させる方法を紹介しています。従来は収集が面倒だった不動産情報や地理データを、AIエージェントがMCP経由で直接取得し、分析まで行うフローを検証しています。\n\n## 主な内容\n1. **事前準備**: 不動産情報ライブラリへのAPI利用申請と、Python管理ツール `uv` を用いた環境構築（macOS）。\n2. **Claude Code連携**: `claude mcp add` コマンドを使用し、プロジェクトディレクトリを問わず利用可能なグローバルスコープでの設定方法を解説。\n3. **Claude Desktop連携**: `claude_desktop_config.json` を編集し、GUIツールとしてMCPサーバーを追加する手順。\n4. **活用事例**: 横浜市営地下鉄各駅の乗降客数や地価データの抽出、および特定地点（浜松町）の液状化リスク情報の取得とAIによる考察。\n\n## 結論\nMCPを介することで、公共の地理空間データを迅速かつシームレスにAIのコンテキストに取り込むことが可能になります。他のMCPサーバーや独自データと組み合わせることで、分析のさらなる深化が期待できるツールです。",
+    "topics": [
+      "Model Context Protocol",
+      "Claude",
+      "国土交通省",
+      "地理情報システム",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

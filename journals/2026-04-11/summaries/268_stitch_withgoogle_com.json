@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2024-05-22T10:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google StitchにおけるDESIGN.mdの概要：AIのためのデザインシステム仕様",
+    "originalTitle": "Google Stitch DESIGN.md - Overview",
+    "url": "https://stitch.withgoogle.com/docs/design-md/overview",
+    "language": "en",
+    "contentType": "🛠️ Tools & Releases (ツール・リリース)",
+    "oneSentenceSummary": "プロジェクト内に配置するDESIGN.mdファイルを通じて、AIエージェントにブランド固有のデザインルールを正確に伝えるための共通仕様。",
+    "summaryBody": "Google Stitchが提唱する「DESIGN.md」は、プロジェクトのルートディレクトリ等に配置するプレーンなマークダウン形式のデザインシステム定義ファイルです。これは人間が内容を理解・編集できるだけでなく、AIエージェント（GeminiやClaude Code、その他のAIコーディングツール）がUIを生成する際に参照する「機械可読なブランドガイドライン」として機能します。\n\n従来のAIによるUI生成では汎用的なテンプレートに依存しがちでしたが、DESIGN.mdにカラーパレット、タイポグラフィ、スペーシング、コンポーネントの基本スタイルを具体的に明記しておくことで、AIはプロジェクト固有のデザインルールを遵守したコードを出力できるようになります。本仕様はGitで管理可能なため、デザインの変更履歴をコードと共に追跡でき、チーム間での共有も容易です。運用のベストプラクティスとして、曖昧な説明を避け、セマンティックな命名や具体的な数値（16進数カラーコード等）を使用することが推奨されています。これはコーディングエージェントにおける「CLAUDE.md」のデザイン版と言える概念であり、AI駆動の開発フローにおいてデザインシステムをポータブルかつ一貫性のあるものにする重要な役割を果たします。",
+    "topics": [
+      "DESIGN.md",
+      "Google Stitch",
+      "Design System",
+      "AI Coding Agents",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

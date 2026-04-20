@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:08:45.481387+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで分析エージェントを作って3か月運用した話",
+    "url": "https://note.com/guchey/n/n9eb66dd5d470",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Ubie株式会社のPdMが、Claude Codeを用いてKPI変動の「なぜ」を自動解明する分析エージェントの構築手法と、3層のコンテキスト管理による運用の知見を公開。",
+    "summaryBody": "Ubie株式会社でのプロダクトマネージャーによる、Claude Codeを活用したデータ分析エージェントの構築・運用レポート。単なる「自然言語からSQLへの変換（Text-to-SQL）」では不十分とし、AIが事業背景や施策履歴を理解して自律的な調査を行うための「データ層」「分析層」「文脈層」の3層構造を提案している。具体的には、BigQueryでのクエリ実行結果を受けて次の一手を判断する探索的ループの自動化に加え、Slack、JIRA、Notionから収集した事業コンテキストをClaude Codeのプラグイン内で永続化・活用する仕組みを構築。OpenAIの「6層のコンテキスト」モデルに準拠したこのシステムにより、属人化した分析ナレッジの民主化と調査の高速化を実現している。また、分析ワークフローをコードとしてバージョン管理し、チーム全体に配布・アップデートする運用プラクティスについても詳しく解説されている。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "データ分析",
+      "MCP",
+      "Ubie"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Codeで分析エージェントを作って3か月運用した話"
+  }
+}

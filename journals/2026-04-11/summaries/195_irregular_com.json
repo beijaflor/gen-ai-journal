@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:24:20.832366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成パスワードの脆弱性：予測可能な設計によるセキュリティリスク",
+    "url": "https://www.irregular.com/publications/vibe-password-generation",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが直接生成するパスワードはトークン予測の性質上、極めて低いエントロピーしか持たず、ブルートフォース攻撃に対して非常に脆弱であるという研究報告。",
+    "summaryBody": "LLM（大規模言語モデル）のトークンサンプリングプロセスは、次のトークンを確率的に予測するように設計されており、真にランダムな文字列を生成する暗号学的に安全な疑似乱数生成器（CSPRNG）とは対極の性質を持ちます。本記事では、Claude、GPT、Gemini等の最新モデルを調査し、LLM生成パスワードの危険性を詳説しています。\n\n主な分析結果：\n1. **予測可能なパターン**: 50回の試行でClaude Opus 4.6は特定のパスワードを18回（36%の確率）繰り返し生成し、殆どのモデルで開始文字や文字選択に極端な偏りが見られました。\n2. **深刻なエントロピー不足**: 100ビット以上の強度に見える16文字のパスワードでも、統計的分析やlogprobs解析によると実際には20〜27ビット程度の有効エントロピーしかなく、数秒で解読されるリスクがあります。\n3. **エージェントによる自動埋め込み**: 開発者が「サーバー設定」を依頼した際、コーディングエージェントが安全なツールを使わずにLLM内で生成した脆弱なパスワードをソースコードや設定ファイルに直接書き込むケースが確認されました。\n\n結論として、パスワード生成にLLMを直接利用することは避け、必ず`openssl rand`などの確立された暗号学的ツールをエージェントに使用させるべきであると警鐘を鳴らしています。",
+    "topics": [
+      "LLM Security",
+      "Password Entropy",
+      "AI Coding Agents",
+      "Cybersecurity",
+      "Vulnerability Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "Vibe Password Generation: Predictable by Design"
+  }
+}

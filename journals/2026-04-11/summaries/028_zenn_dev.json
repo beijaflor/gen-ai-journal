@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:04:49.798329+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Playwright CLI + Claude Code で自律UI修正開発の提案",
+    "url": "https://zenn.dev/catatsumuri/articles/22227c79a94a86",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeにPlaywright CLIを統合し、スクリーンショットやDOMスナップショットを通じてAIエージェントに「視覚」を与えることで、UIの崩れやレイアウト修正を自律的に行わせる手法の解説。",
+    "summaryBody": "本記事は、コーディングエージェントであるClaude Codeが苦手とする「UIの視覚的判断」を、Playwright CLIを組み合わせて補完する手法を提案しています。AIはコードを読めても実際の画面上のレンダリング崩れ（CSSのズレ、Markdownの表示異常、レスポンシブの問題）を検知しにくいため、Playwright CLIの『skills』機能を用いてブラウザ操作、スクリーンショット取得、アクセシビリティツリー（スナップショット）の解析をエージェントに実行させます。\n\n具体例として、Laravel環境を用いたMarkdownレンダリングの修正や、ログイン後のフォームレイアウトのズレを修正するプロセスが詳述されています。AIが自らスクリーンショットを撮影し、問題箇所に赤丸を描いて確認したり、修正後に再度表示を確認したりするワークフローを構築することで、人間が指示する手間を大幅に削減しつつ、精度の高いUI修正が可能になることを実証しています。認証が必要な画面への対応方法や、JSを注入してデバッグ情報を視覚化するテクニックも紹介されており、AIエージェントをより実践的なフロントエンド開発に活用するためのガイドとなっています。",
+    "topics": [
+      "Playwright",
+      "Claude Code",
+      "AIエージェント",
+      "Laravel",
+      "UI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

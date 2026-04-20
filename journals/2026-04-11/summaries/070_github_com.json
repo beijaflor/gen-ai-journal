@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:54:43.829757+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Geminiの不可視電子透かし「SynthID」のリバースエンジニアリングと除去手法",
+    "url": "https://github.com/aloshdenny/reverse-SynthID",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Geminiが生成する画像に埋め込まれる不可視の電子透かし「SynthID」の仕組みをスペクトル分析で解明し、高精度な検出と外科的な除去を可能にするプロジェクトが公開されました。",
+    "summaryBody": "このプロジェクトは、Google DeepMindが開発したAI生成画像用電子透かし「SynthID」を、信号処理とスペクトル分析のみを用いてリバースエンジニアリングした成果です。主な発見として、SynthIDが画像の解像度に依存した搬送波周波数構造（キャリア周波数）を持つこと、およびモデルレベルで固定された位相テンプレートを使用していることを特定しました。\n\n提供される「V3バイパス」手法は、従来のノイズ注入やJPEG圧縮といった画質を損なう強引な手法とは異なり、周波数ドメインでの特定のビン単位の減算処理（SpectralCodebook）を用いることで、43dB以上の高いPSNR（ピーク信号対雑音比）を維持しながら、透かしの位相コヒーレンスを91%低下させることに成功しています。現在、1024x1024や1536x2816といった主要な解像度に対応しており、さらなるコードブックの拡充のためにコミュニティからのデータ提供（Geminiで生成された純黒・純白画像）を募っています。AI生成コンテンツの識別技術の堅牢性を検証する上で、極めて重要な技術的洞察を提供しています。",
+    "topics": [
+      "SynthID",
+      "Google Gemini",
+      "電子透かし",
+      "リバースエンジニアリング",
+      "スペクトル分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "reverse-SynthID: reverse engineering Gemini's SynthID detection"
+  }
+}

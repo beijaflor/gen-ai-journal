@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:53:31.613169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント開発のコア概念が掴める100行のコード",
+    "url": "https://zenn.dev/meijin/articles/ai-agent-core-understanding-code",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの本質は「LLMが自律的に終了を判断するまでツール呼び出しを繰り返すループ構造」であることを、100行のコードで簡潔に解説した記事。",
+    "summaryBody": "AIエージェントを「魔法」のように捉えるのではなく、LLMのAPI呼び出しをループ内で制御する原始的な機構として定義し、その核心を100行程度のTypeScriptコードで解き明かしています。最大の特徴は、処理の終了条件をコード側で固定せず、LLM自身の判断に委ねる点にあります。この構造を理解することで、MastraやLangChainといったフレームワークが背後で行っている処理が明確になり、エージェントを導入すべき要件と、通常のAPI呼び出しで済ませるべき要件を適切に見極めるエンジニアリング能力の向上を促しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "TypeScript",
+      "プログラミング",
+      "設計思想"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

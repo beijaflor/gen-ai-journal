@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:11:24.731070+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4で自律エージェントを作る — LangGraph + Podman",
+    "url": "https://zenn.dev/nekoroko/articles/7f22e9c8557aea",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemma 4とLangGraphを活用し、Podmanによるセキュアなサンドボックス環境を備えたローカル完結型のReActエージェントを構築する方法を解説します。",
+    "summaryBody": "この記事では、Apache 2.0ライセンスでリリースされたGemma 4（26B-A4Bモデル）とLangGraphを組み合わせ、RTX 4060という一般的なGPU環境で自律エージェントを構築する手法を詳しく説明しています。特に、Claude Codeの設計思想を参考に、「サブタスク分解方式」から「ReActループ」へと設計を転換することで、ローカルLLM特有のデータ捏造やコンテキスト断絶問題を解消したプロセスが非常に実用的です。また、生成されたコードを安全に実行するためにPodmanコンテナを用いたサンドボックス環境の構築についても、ネットワーク遮断やリソース制限の設定を含めて具体的に解説されています。CSVの月別集計や数値計算タスクを通じた実測パフォーマンスデータも掲載されており、API課金やデータ流出を気にせずに実務でAIエージェントを運用したい開発者にとって価値の高いガイドとなっています。",
+    "topics": [
+      "Gemma 4",
+      "LangGraph",
+      "Podman",
+      "ローカルLLM",
+      "自律エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

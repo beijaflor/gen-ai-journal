@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:09:43.233578+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントは「何が良い状態か」を知らない：AI時代のソフトウェアアーキテクチャの課題",
+    "url": "https://www.oreilly.com/radar/agents-dont-know-what-good-looks-like-and-thats-exactly-the-problem/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントはコードの「書き方」は模倣できても、なぜそうすべきかという「設計の意図」を理解しておらず、品質担保には決定論的なガードレールが不可欠である。",
+    "summaryBody": "ソフトウェアアーキテクチャの権威であるNeal Ford氏とSam Newman氏の対談に基づき、エージェント型AIがシステム設計にもたらす構造的な問題を考察した記事です。主な論点は3点に集約されます。\n\n1. **ドレイファスモデルによる習熟度評価**: 現在のAIは「初心者〜中級者」の段階にあり、テストをパスするために「アサーションをTrueに書き換える」ような、文脈を無視した解決策を提示するリスクがあります。\n2. **振る舞い vs 能力の検証**: ユニットテストで機能的な振る舞いを確認できても、スケーラビリティや結合度といった「システムの能力」の検証は依然として困難であり、AIは人間が過去に犯した設計上の悪癖もそのまま継承しています。\n3. **決定論的ガードレールの必要性**: 非決定的なAIの出力を制御するためには、2017年から提唱されている「アーキテクチャ・フィットネス関数」のような、自動化された客観的な評価指標を導入することがこれまで以上に重要になります。\n\nまた、AIによる高速なコード生成が、人間の組織がその複雑さを理解し管理する「学習プロセス」を追い越してしまう「社会技術的ギャップ」についても強い警鐘を鳴らしています。",
+    "topics": [
+      "Agentic AI",
+      "Software Architecture",
+      "Architectural Fitness Functions",
+      "Microservices",
+      "Sociotechnical Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "Agents don’t know what good looks like. And that’s exactly the problem."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2024-10-24T10:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.1：長時間タスクと自律エンジニアリングに特化した超高性能MoEモデル",
+    "originalTitle": "GLM-5.1: Towards Long-Horizon Tasks",
+    "url": "https://z.ai/blog/glm-5.1",
+    "language": "en",
+    "contentType": "🛠️ Tools & Releases (ツール・リリース)",
+    "oneSentenceSummary": "Z.aiが、SWE-benchで世界首位を記録し、オープンソースかつ商用利用可能なエンジニアリング特化型の大規模言語モデル「GLM-5.1」をリリースしました。",
+    "summaryBody": "Z.ai（旧Zhipu AI）は、自律的なソフトウェアエンジニアリングや長時間の複雑なタスクの実行に特化した最新モデル「GLM-5.1」をリリースしました。本モデルは7540億パラメータを持つ混合エキスパート（MoE）アーキテクチャを採用しており、推論時には400億パラメータをアクティブ化することで効率的な処理を実現しています。\n\n特筆すべきは、エンジニアリング能力の指標であるSWE-Bench Proにおいて、GPT-5.4やClaude Opus 4.6を上回る58.4点という世界最高スコアを記録した点です。最大8時間の連続稼働が可能で、計画策定から実行、反復的な修正、そして最終納品までのワークフローループを自律的に完結させます。デモではLinuxデスクトップ環境をゼロから構築し、ベクトルDBのスループットを6.9倍に向上させるなどの実証結果も示されました。\n\nさらに、MITライセンスの下でHugging Faceにて重みが完全公開されており、商用利用を含めた自由なカスタマイズが可能です。API利用料も競合に比べ安価に設定されており、高いコストパフォーマンスを誇ります。Webエンジニアにとっては、自律型開発エージェントの構築や、大規模なリファクタリング、高度なパフォーマンス改善における強力な選択肢となるでしょう。",
+    "topics": [
+      "GLM-5.1",
+      "MoE",
+      "Agentic Engineering",
+      "SWE-bench",
+      "Open Source LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 90,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:12:42.572135+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント開発の新標準 ADLC を読み解く — IBM × Anthropicのガイドへの共感と、本番運用からの実践的フィードバック",
+    "url": "https://zenn.dev/dxclab/articles/9f015ee80cd809",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "IBMとAnthropicが提唱するAIエージェント開発ライフサイクル（ADLC）の核心概念と、本番運用における評価ファーストな開発手法の実践的知見を解説。",
+    "summaryBody": "本記事は、IBMとAnthropicが共同発表したAIエージェント開発ガイドライン「ADLC (Agent Development Lifecycle)」を実務者の視点で詳説したものです。エージェント開発における3つのパラダイムシフト（確率論的システムへの移行、適応的な振る舞い、評価ファーストへの転換）を定義し、開発時の「実験ループ」と運用時の「ランタイム最適化ループ」という2つの核心的なサイクルを提唱しています。筆者は実務経験に基づき、エージェントを「確率論的」と明文化することが顧客との期待値調整に有効であることや、UATの予測不能性を考慮した計画の重要性を指摘。また、MCP（Model Context Protocol）による安全性確保や、ユーザー自身がインストラクションを微調整できる仕組みの構築など、スケーラブルな運用のための具体的な工夫と課題についても深く考察されています。",
+    "topics": [
+      "AIエージェント",
+      "ADLC",
+      "Anthropic",
+      "LLMOps",
+      "ソフトウェア開発ライフサイクル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

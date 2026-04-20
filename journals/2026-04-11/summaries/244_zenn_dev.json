@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:11:57.176088+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディング規約のAgent Skillを作って実装時の手戻りを減らそう",
+    "url": "https://zenn.dev/j____takumi/articles/create_agent_skill",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI（GitHub Copilot等）にコーディング規約を「Agent Skill」として渡すことで、モバイルアプリ開発における実装のズレや繰り返しの指摘を自動的に防ぐ手法を解説しています。",
+    "summaryBody": "AIによるコード生成で頻発する「文字列のハードコーディング」や「責務の混在」、「!! による強制アンラップ」といったレビュー指摘を減らすため、GitHub CopilotのAgent Skillを活用してコーディング規約を自動適用させる方法を紹介しています。\n\n### 記事のポイント\n- **Agent Skillの活用**: 実装のたびに前提を説明する手間を省き、人間が差分レビューに集中できる環境を構築。\n- **具体的な規約定義**: 文字列リソース化、Android/iOS各プラットフォームにおけるMVVMの責務分離、Null安全性など、モバイル開発に特化したチェックポイントを整理。\n- **実装と運用**: `.github/skills/`配下に`SKILL.md`を配置する具体的な手順と、AIが指示を理解しやすくするための記述のコツ（行動レベルへの具体化）を解説。\n- **全文公開**: KotlinおよびSwiftの公式ガイドラインに準拠した、そのままコピペして使えるSkillテンプレートが含まれています。\n\n単に「綺麗に書いて」と指示するのではなく、公式ドキュメントを根拠にした判断基準をSkillとして構造化することで、AIの生成精度を劇的に向上させることが可能です。",
+    "topics": [
+      "GitHub Copilot",
+      "Agent Skill",
+      "コーディング規約",
+      "Kotlin Multiplatform",
+      "モバイルアプリ開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

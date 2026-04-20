@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:42:18.557790+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM（Gemma4）× AIVIS Speech で音声チャットの応答を「1秒未満」にした話",
+    "url": "https://qiita.com/kikuziro/items/35f8fd0f56e63b25854f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemma 4とAIVIS Speechを組み合わせ、ストリーミング処理や独自のチャンク分割手法を用いることで、音声チャットの応答速度を驚異の694msまで短縮した実践記録。",
+    "summaryBody": "この記事では、ローカルLLMと音声合成を組み合わせた際の最大の課題である「応答遅延」を解消し、1秒未満（実測694ms）のレスポンスを実現するための具体的な5つの工夫を紹介しています。主なボトルネックがLLMの推論ではなく音声合成（TTS）の処理時間にあることを特定し、ローカル実行からクラウドAPIのストリーミングモードへの切り替えや、最初の句読点で即座にTTSを開始する「初回優先チャンク分割」などの実装テクニックを解説。Next.jsからOllamaやAIVIS APIへ直接接続してネットワークホップを最小化する構成や、Gemma 4のシンキングモードOFFによる高速化など、実用的な最適化手法が網羅されています。",
+    "topics": [
+      "Gemma 4",
+      "Ollama",
+      "AIVIS Speech",
+      "音声チャット",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

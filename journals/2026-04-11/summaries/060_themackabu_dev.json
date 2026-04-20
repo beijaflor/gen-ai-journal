@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2025-02-14T10:30:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1ヶ月でJavaScriptランタイムを構築：軽量ランタイム「Ant」の開発記録",
+    "originalTitle": "Building a JavaScript runtime in one month",
+    "url": "https://themackabu.dev/blog/js-in-one-month",
+    "language": "en",
+    "contentType": "💼 Case Study & Experience Report (事例・体験記)",
+    "oneSentenceSummary": "ES5準拠で2MBという超軽量なJavaScriptランタイム「Ant」を、わずか1ヶ月でゼロから構築した開発プロセスと技術仕様の詳解。",
+    "summaryBody": "本記事は、開発者のTheMackabu氏が、わずか1ヶ月という短期間で独自のJavaScriptランタイム「Ant」をゼロから開発した過程を記録した技術レポートです。Antはバイナリサイズがわずか2MBと非常に軽量でありながら、ES1〜ES5の仕様準拠に加え、async/awaitのサポートも実現しています。\n\n技術的な核心として、64ビット浮動小数点の空き領域を利用して多様なデータ型を効率的に表現する「NaN-boxing」の採用や、Boehm GCによる自動メモリ管理、minicoroを用いたコルーチンベースの非同期処理の実装が詳しく解説されています。既存のV8やSpiderMonkeyのような巨大なエンジンに頼らず、パーサ、バイトコードコンパイラ、仮想マシンを自律的に設計・実装することで、JS内部の複雑な仕組みを解き明かしています。\n\nWebアプリケーションエンジニアにとって、日々抽象化されたレイヤで使用しているランタイムの低レイヤな動作原理（レキシカル解析、バイトコード実行、メモリ圧縮など）を理解することは、コードの実行効率やデバッグ能力の向上に直結します。また、AIによるコード生成が標準化する中で、このようなシステムプログラミングの深い洞察は、AIをより高度に使いこなし、基盤インフラを理解するための重要な武器となります。",
+    "topics": [
+      "JavaScript Runtime",
+      "Systems Programming",
+      "Virtual Machine",
+      "NaN-boxing",
+      "Memory Management"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    }
+  }
+}

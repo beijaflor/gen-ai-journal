@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:48:58.075553+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日本発、LLMの推論を「桁違い」に効率化する新アーキテクチャ「PHOTON」の論文が面白かったのでまとめてみた",
+    "url": "https://qiita.com/yuji-arakawa/items/2ad0240c56eb7507b261",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "富士通や理研らが発表した、言語の階層構造を利用してKVキャッシュを劇的に削減し、推論スループットを最大1000倍以上に向上させる新アーキテクチャ「PHOTON」の解説記事です。",
+    "summaryBody": "富士通、理化学研究所、東京科学大学、東海大学の研究チームが発表した新アーキテクチャ「PHOTON」について解説しています。従来のTransformerが抱える、推論時のKVキャッシュ増大によるメモリ帯域のボトルネックを解決するため、言語を「階層構造（サブワード〜段落）」として捉え、垂直方向のスキャンとトップダウン生成を行う手法を提案しています。\n\n主な特徴は以下の通りです：\n1. **階層的な分業**: 文章を要約する「ボトムアップ・エンコーダ」と、要約から詳細を生成する「トップダウン・デコーダ」に分離し、計算コストを文脈長に依存させない構造を実現。\n2. **Recursive Generation (RecGen)**: 生成プロセスを再帰的に定義し、再エンコードを不要にすることでKVキャッシュを最小化。\n3. **劇的な効率化**: 実験では、バニラTransformerに対し、メモリあたりのスループットを最大1,800倍以上改善。長文コンテキストや多クエリ配信において圧倒的な優位性を示しています。\n\n品質と推論効率のパレートフロンティアにおいて既存モデルを上回っており、GPU需要の逼迫に対するアーキテクチャレベルの有力な解決策として期待されます。",
+    "topics": [
+      "LLM",
+      "Transformer",
+      "PHOTON",
+      "推論効率化",
+      "KVキャッシュ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

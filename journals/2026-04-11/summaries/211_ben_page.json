@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:20:07.178898+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMによるコーディング支援がマイクロサービス化を加速させる理由",
+    "url": "https://ben.page/microservices",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（LLM）によるコード生成は、疎結合な境界を持つマイクロサービスと相性が良く、開発の「抵抗が最も少ない道」としてマイクロサービスの乱立を招く可能性がある。",
+    "summaryBody": "著者は、LLM（Claudeなど）を用いた開発が自然とマイクロサービス化へ向かう傾向を指摘しています。その最大の理由は、マイクロサービスが持つ「明確なインターフェース境界」にあります。マイクロサービスは外部との契約（リクエスト/レスポンス）さえ守れば内部構造を自由に刷新できるため、LLMによる大胆なリファクタリングが安全に行える「シェルター」として機能します。一方で、モノリスな構成では暗黙の結合（キャッシュキーの依存関係など）がLLMによって破壊されるリスクが高いと述べています。また、別リポジトリにすることでPRレビューの基準を下げられるといった組織的な要因もこの傾向を後押ししていますが、長期的にはリソース管理やメンテナンスの複雑化を招くリスクについても警鐘を鳴らしています。",
+    "topics": [
+      "LLM",
+      "マイクロサービス",
+      "ソフトウェアアーキテクチャ",
+      "疎結合",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "Does coding with LLMs mean more microservices?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:04:14.840322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AITuber奮闘記：ローカルLLMでゲーム実況、モデル選定と配信テストの記録",
+    "url": "https://note.com/yono_f4ll/n/n2834a3ac77f6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AITuberKitとローカルLLM（Gemma 4等）を組み合わせ、マルチモーダル機能によるゲーム実況の実現可能性とモデルごとの特性を比較検証した技術レポート。",
+    "summaryBody": "ローカル環境で動作するLLMを活用したAITuberによるゲーム実況の構築記録です。AITuberKitとOBSの仮想カメラを連携させ、90秒間隔でゲーム画面をLLMに送信するバッチ処理システムを構築。Qwen 3.5やGemma 3/4などの複数モデルを比較した結果、ハルシネーションを抑制しつつ画面情報から妥当なコメントを出力できるGemma 4を最適と判断しました。Twitchでの2時間のテスト配信では、エラーのない安定した実況を確認。課題として、コメント返答との排他制御の解消や、VRAM調整による応答速度の向上、より大規模なモデル（26B等）の活用が挙げられています。",
+    "topics": [
+      "AITuber",
+      "ローカルLLM",
+      "Gemma 4",
+      "AITuberKit",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 78
+    },
+    "originalTitle": null
+  }
+}

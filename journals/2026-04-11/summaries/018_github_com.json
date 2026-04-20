@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:07:30.761217+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grainulator - Claude Code向けの自律型リサーチ・オーケストレーター",
+    "url": "https://github.com/grainulation/grainulator",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code上で動作し、調査結果を「構造化された主張」として検証・スコアリングし、意思決定に直結するブリーフを自律的に生成するツール。",
+    "summaryBody": "grainulatorは、AnthropicのAI端末ツール「Claude Code」向けに開発された、リサーチ・スプリントの自動化オーケストレーターです。単なる検索ツールではなく、調査で見つかった情報を「Claim（主張）」という単位でデータ化（コンパイル）し、それらを敵対的にテスト（Challenge）したり、証拠レベル（web、ドキュメント、テスト等）に基づいて信頼性を格付けしたりする点が特徴です。\n\n主な機能とワークフロー：\n- **構造化された主張管理**: 調査結果を制約、事実、推測、リスク、推奨事項といった「型」に分類して保存します。\n- **自律的リサーチ**: 開発者が「認証システムの仕組みを調査して」といった指示を出すと、エージェントが多段階のスプリントを実行し、盲点の分析やエビデンス収集を自律的に行います。 \n- **コンパイル・パイプライン**: 型の網羅性、証拠の強度、競合の検知、バイアススキャンなど7つのパスを経て、信頼性の高い最終ブリーフを生成します。\n- **MCP（Model Context Protocol）対応**: wheat（主張エンジン）、mill（形式変換）、silo（知識ストレージ）といった複数のMCPサーバーで構成されるエコシステムの一部であり、高い拡張性を備えています。\n\n外部依存関係を一切排除したNode.jsネイティブ実装であり、エンタープライズ環境への導入も考慮された設計となっています。",
+    "topics": [
+      "Claude Code",
+      "MCP",
+      "AI Agent",
+      "Research Automation",
+      "Knowledge Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "grainulation/grainulator: Research that compiles."
+  }
+}

@@ -29,7 +29,7 @@ output_file = sys.argv[3]
 # Extract URLs from input file
 with open(input_file, 'r', encoding='utf-8') as f:
     content = f.read()
-    input_urls = re.findall(r'https://[^\s\]]+', content)
+    input_urls = re.findall(r'https?://[^\s\]]+', content)
 
 # Build URL to content mapping from summaries
 url_to_content = {}
@@ -40,7 +40,7 @@ for filename in os.listdir(summaries_dir):
         with open(filepath, 'r', encoding='utf-8') as f:
             summary_content = f.read()
             # Find URL in the summary content
-            urls = re.findall(r'https://[^\s\]]+', summary_content)
+            urls = re.findall(r'https?://[^\s\]]+', summary_content)
             if urls:
                 # Take the first URL found (each summary should have only one)
                 url = urls[0]

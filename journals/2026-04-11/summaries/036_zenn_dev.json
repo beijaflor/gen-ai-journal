@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:10:12.935464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic Managed Agents をさくっと触ってみた",
+    "url": "https://zenn.dev/sprix_it/articles/3211f5068cec29",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicが提供を開始した、エージェントの実行環境（サンドボックス）とループ処理をクラウド側で管理する新機能「Managed Agents」の実機検証レポート。",
+    "summaryBody": "Anthropicが2026年4月に発表したベータ機能「Managed Agents」の技術解説と検証記事です。これまで開発者が自前で用意していた「ツール実行用コンテナ」「実行ループ」「セッション管理」をAnthropic側が肩代わりする仕組みについて、実際のPython SDKを用いた検証コードと共に紹介されています。検証では、サンドボックスがUbuntu 24.04 (16 vCPU / 21 GiB RAM) という強力なリソースを持つことや、SSE接続が切れても履歴APIから状態を完全に復元できる点、ローカル側で認証情報を保持したままツールを実行する「custom_tool_use」の挙動などが明らかにされています。アイドル時間は課金対象外（0.08ドル/アクティブ時間）という実用的な料金設計にも触れられており、長時間タスクを回すエージェント開発における新たな標準構成としての可能性を示唆しています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "Agent",
+      "Python",
+      "Managed Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

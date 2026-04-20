@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:46:45.983021+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TorchTPU: GoogleのTPU上でPyTorchをネイティブかつ大規模に実行する新スタックの全貌",
+    "url": "https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、数千台規模のTPUクラスター上でPyTorchコードを最小限の変更でネイティブかつ高性能に実行可能にする新ソフトウェアスタック「TorchTPU」を発表しました。",
+    "summaryBody": "Googleが発表した「TorchTPU」は、PyTorchユーザーがTPU（Tensor Processing Unit）の演算能力を最大限に引き出すための統合スタックです。従来のPyTorch/XLAの課題を克服し、「Eager First（イーター優先）」の設計思想を導入。これにより、開発者は特別なラッパーなしで通常のPyTorch TensorとしてTPUを利用でき、デバッグ、厳密な実行、および演算を自動融合して50〜100%以上の高速化を実現する「Fused Eager」モードを選択可能です。\n\n技術面では、`torch.compile`とXLA、StableHLOを統合し、ICI（Inter-Chip Interconnect）ネットワークを最適化。分散学習においても、DDPやFSDPv2、DTensorを標準サポートし、複雑なMPMD（Multiple Program Multiple Data）実行にも対応しました。また、PallasやJAXを用いたカスタムカーネルの実装も可能です。2026年を通じて、動的シェイプの完全サポートや、vLLM・TorchTitanといった主要エコシステムとの統合、パブリックリポジトリの公開が予定されています。",
+    "topics": [
+      "PyTorch",
+      "TPU",
+      "Google Cloud",
+      "Distributed Computing",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "TorchTPU: Running PyTorch Natively on TPUs at Google Scale"
+  }
+}

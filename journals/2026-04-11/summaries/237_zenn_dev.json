@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:13:41.829141+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × Obsidian によってインフラ管理が拡がる価値を考える",
+    "url": "https://zenn.dev/sprix_it/articles/2470286c5ca1e9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとObsidian、MCPを連携させ、SSH操作のリアルタイム監視から手順書作成、AWS構成図の自動更新までを一気通貫で行うインフラ管理手法の解説。",
+    "summaryBody": "本記事は、Claude Code（AIエージェント）とObsidian（ナレッジ管理ツール）を組み合わせた高度なインフラ運用ワークフローを提案しています。中核となるのは、自作のMCPサーバーを介してSSH操作をリアルタイム監視する仕組みです。特に、エンジニアがコマンド実行前後に『空Enter』を押す癖をAIの検知トリガーとして利用する設計（v2.0）により、ポーリングなしで低遅延な監視を実現している点が独創的です。この監視基盤から派生し、作業ログからの手順書自動生成や、AWS CLIの実行結果をObsidian Canvasに反映させてインフラ構成図を自動更新する手法など、AIとローカルナレッジベースが密接に同期する実用的なエコシステムが詳説されています。ミスの削減だけでなく、ドキュメント作成の負担をゼロにするための具体的な実装と運用ルールが示されています。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "MCP (Model Context Protocol)",
+      "インフラ管理",
+      "AWS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

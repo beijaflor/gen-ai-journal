@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:17:33.869930+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotの『SKILL.md育成RPG』— Lv.0の村人がLv.7の伝説の勇者になるまで鍛えたらコードレビューはどう変わるのか",
+    "url": "https://qiita.com/yukurash/items/d8971bdf08f8416ad7dd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotの「SKILL.md」を活用してAIエージェントを段階的に強化し、コードレビューの精度と出力品質を向上させる手法をRPG仕立てで解説した検証記事。",
+    "summaryBody": "GitHub CopilotのAIエージェント機能を「SKILL.md」というジョブ定義ファイルを用いて強化するプロセスを解説した記事です。10個のバグが仕込まれたExpressサーバーを対象に、AIエージェントのスキルレベルをLv.0（素の状態）からLv.7まで段階的に引き上げる実験を行っています。\n\n検証の結果、Lv.2での手順追加、Lv.3でのチェックリスト（魔法書）追加、Lv.4での分析スクリプト（伝説の武器）追加を経て、Lv.5での出力テンプレート（装備）導入が最大の転換点（ブレイクスルー）となりました。これにより全バグの検出と高度な構造化レポートを達成。また、常時適用される「Instructions」と、特定タスクにオンデマンドで適用される「Skills」の使い分けについても、コンテキスト消費や保守性の観点から明確な指針を示しています。AIを「指示（プロンプト）」だけで動かすのではなく、「装備（エンジニアリング）」によって育成する重要性を説いています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      "SKILL.md",
+      "コードレビュー",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

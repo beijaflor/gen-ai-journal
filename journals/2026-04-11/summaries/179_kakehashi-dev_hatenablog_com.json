@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:28:04.380398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに社内の情報を集約させたら、要求分析の立ち上げがスムーズに回り始めた",
+    "url": "https://kakehashi-dev.hatenablog.com/entry/2026/04/07/090000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeでソースコード、Slack、Confluenceの情報を統合し、RDRAを用いた要求分析のドラフト生成と人間による修正を組み合わせることで、開発プロセスの立ち上げを効率化した実践事例の紹介。",
+    "summaryBody": "カケハシ社のエンジニアチームが、Claude Codeを活用して要求分析の立ち上げを高速化した取り組みについて詳説しています。MCPやCLIを用いてコードベース、Slack、Confluenceの情報を集約し、要求分析手法「RDRA」に基づいたシステムコンテキスト図や業務フロー等の7つの成果物ドラフトを生成。AIはコードから読み取れる構造的な情報の抽出には長けていますが、ドキュメントにない暗黙知や業務的な文脈の解釈には限界があるため、エンジニア2名による同期的なレビューと修正をプロセスに組み込みました。AIによる網羅的な走査が人間のバイアスを補い、結果として短時間で精度の高いPRD（製品要求仕様書）作成まで漕ぎ着けた実体験に基づいたガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "RDRA",
+      "要求分析",
+      "生成AI",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

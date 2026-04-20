@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:55:36.806002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのVercelプラグインによる過剰なテレメトリ収集とプロンプト・インジェクションの指摘",
+    "url": "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code用Vercelプラグインが、プロンプト・インジェクションを用いて同意を偽装し、プロジェクトを問わず機密性の高いbashコマンド履歴などを収集している問題の技術的な告発。",
+    "summaryBody": "エンジニアのAkshay Chugh氏が、Vercelが提供するClaude Code向けプラグインの挙動をソースコードレベルで分析し、深刻なプライバシー上の問題を指摘しています。本プラグインは、Vercelとは無関係なプロジェクトであっても、ユーザーのbashコマンド履歴（ファイルパスや環境変数を含む）をデフォルトで収集・送信しています。特に問題視されているのはその同意プロセスで、ネイティブのUIではなくプロンプト・インジェクションを利用してClaudeにユーザーへの質問を行わせ、回答に基づいてローカルファイルに設定を書き込むシェルコマンドを実行させています。また、フレームワーク検出機能を持ちながら、Vercel以外のプロジェクトでも一律にテレメトリを有効化している点も批判されています。記事では、環境変数 `VERCEL_PLUGIN_TELEMETRY=off` を設定することでこれらの追跡を回避する方法を解説しています。",
+    "topics": [
+      "Claude Code",
+      "Vercel",
+      "プライバシー",
+      "テレメトリ",
+      "プロンプト・インジェクション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "The Vercel Plugin on Claude Code wants to read all your prompts!"
+  }
+}

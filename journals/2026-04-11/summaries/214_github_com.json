@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:19:24.887973+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeが2月のアップデート以降、複雑なエンジニアリングに「使用不能」との報告：思考プロセス短縮による品質低下の分析",
+    "url": "https://github.com/anthropics/claude-code/issues/42796",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの利用者が1.7万件以上のログを分析し、思考プロセスの非表示化と並行して推論の深さと調査能力が急落、結果としてAPIコストが80倍に跳ね上がったとする衝撃的な分析を公開しました。",
+    "summaryBody": "GitHubのIssueに投稿された本レポートは、2026年2月から3月にかけてのClaude Codeの挙動を、約7,000のセッションファイルと23万件以上のツール呼び出しログから定量的に分析したものです。\n\n分析によると、思考プロセス（Thinking block）の非表示化が始まった時期と一致して、推定される思考の深さが約70%減少しました。これに伴い、コードを修正する前に中身を読み取る「Read:Edit比率」が6.6から2.0へと大幅に低下し、モデルがコンテキストを把握せずに場当たり的な修正を行う「Edit-First（編集優先）」の挙動に変容したことが指摘されています。\n\nこの品質低下により、ユーザーのフラストレーション指標は68%増加し、不適切な修正や thrashing（試行錯誤の繰り返し）によってAPIリクエスト数は80倍、コストは122倍にまで膨れ上がったと報告されています。ユーザーは、AIが自律的なパートナーから「常に監視と修正が必要な対象」へと退行したと結論付けており、大規模なエージェント・ワークフローの崩壊を訴えています。",
+    "topics": [
+      "Claude Code",
+      "LLM性能劣化",
+      "推論プロセス",
+      "自律型エージェント",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code is unusable for complex engineering tasks with the Feb updates · Issue #42796 · anthropics/claude-code"
+  }
+}

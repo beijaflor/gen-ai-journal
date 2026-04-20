@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:53:18.160245+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様書は\"使い捨て\"にした方がうまくいった——仕様駆動開発3ヶ月の転換",
+    "url": "https://zenn.dev/dely_jp/articles/ef573ae39b9162",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI-DLCに着想を得た仕様駆動開発の試行錯誤を経て、仕様書を「正として維持する」重荷から解放し、開発の起点として「使い切る」運用へと転換した実践記録。",
+    "summaryBody": "クラシルのAndroid開発チームが、AI-DLC（AI-Driven Development Life Cycle）を参考に導入した「仕様書ベースの開発フロー」の3ヶ月間の振り返り記事です。当初は、Claude Codeのスキル（/create-spec, /execute-planなど）を活用し、要求仕様書と実装計画書を一元管理することでAIによる自動実装の効率化に成功しました。しかし、継続的な運用において「コードとドキュメントの二重管理」「追加仕様によるドキュメントの肥大化」「検索時のノイズ」といった維持コストの限界に直面しました。その結果、仕様書を恒久的なドキュメントとして管理するのではなく、開発完了時に削除・クローズする「使い捨て」のデザインドック的な位置づけへと方針転換。現在はGitHub Issueベースでの管理を模索しており、完璧なメンテナンスよりも、開発の起点としての有用性を重視する実利的なアプローチを提唱しています。",
+    "topics": [
+      "AI-Driven Development",
+      "Claude Code",
+      "仕様駆動開発",
+      "Android",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

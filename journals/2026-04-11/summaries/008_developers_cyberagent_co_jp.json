@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T11:10:31.462599+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "タップルのネイティブQA戦略",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/63257/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングの普及に伴うQAボトルネックを解消するため、MaestroとAIエージェントDevinを統合し、リグレッションテストの自動化と高度な不具合分析を実現した戦略的取り組み。",
+    "summaryBody": "マッチングアプリ「タップル」のネイティブチームが、AIエージェントを活用した次世代QA戦略を詳説しています。Claude CodeやDevin、Cursorといったツールの普及によりコード生成が加速する中、従来の手動リグレッションテスト（216項目）が開発のボトルネックとなっていました。この課題に対し、E2Eテストフレームワーク「Maestro」による自動化と、AIエージェント「Devin」を組み合わせた自動分析ワークフローを構築。毎日深夜に全OSバージョンでテストを実行し、失敗時はDevinがOS依存性の判定や関連PRの特定を行い、GitHub Issueとして起票します。さらに、Datadog RUMの指標に基づくリリース品質の自動評価や、Backlogの不具合報告からの自動コード調査・修正提案（Copilot連携）までを仕組み化。この「Playbook」による運用で、テスト完了時刻を約2時間前倒しし、QAチームがより高度な探索的テスト（フリーテスト）に集中できる環境を実現しました。AIが調査・分析を担い、人間が最終判断を下す「人とAIの協働」による品質担保のモデルケースを提示しています。",
+    "topics": [
+      "QA自動化",
+      "AIエージェント",
+      "Maestro",
+      "ネイティブアプリ開発",
+      "Devin"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 98,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

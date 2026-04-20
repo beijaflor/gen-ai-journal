@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:18:45.539257+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Reading Test: AIコーディングエージェントのドキュメント読解能力を測定するベンチマーク",
+    "url": "https://agentreadingtest.com/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントがウェブ上のドキュメントを正確に読み取れるかを、テキストの切り捨てやSPAレンダリング、CSSノイズなど10のテスト項目で評価するベンチマークツール。",
+    "summaryBody": "Agent Reading Testは、Claude Code、Cursor、GitHub CopilotなどのAIコーディングエージェントが、ドキュメントサイトをどの程度正確に解釈できるかを検証するためのベンチマークプロジェクトです。エージェントがドキュメントを読み込む際、テキストの切り捨て、大量のインラインCSSによるノイズ、JavaScript実行が必要なSPA（シングルページアプリケーション）、タブ切り替え内に隠されたコンテンツなど、現実的な「サイレントな失敗」をどのように処理するかを測定します。エージェントは10のドキュメントタスクを完了した後、各所に配置されたカナリートークンを報告することでスコア化されます。これは『Agent-Friendly Documentation Spec』を補完するプロジェクトであり、ドキュメント側ではなくエージェント側の読み取りパイプライン（Web Fetch）の質を浮き彫りにすることを目的としています。",
+    "topics": [
+      "AIエージェント",
+      "ベンチマーク",
+      "LLM",
+      "ドキュメンテーション",
+      "Webスクレイピング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Agent Reading Test"
+  }
+}

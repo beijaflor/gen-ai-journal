@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:41:36.311650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "全PRの83%をAIレビューだけでマージできるようにしたカウシェの取り組み",
+    "url": "https://zenn.dev/kauche/articles/e051583461c181",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "カウシェはClaude Code Actionを活用し、3人の専門家AIによる並列レビューと、毎晩自動でレビュールールを改善する自律型ループを構築することで、PRの83%を自動マージする運用を実現しました。",
+    "summaryBody": "カウシェにおけるAIレビュー運用の詳細な解説記事です。主な特徴は、Claude Code Actionを用いた「3人のAI専門家（Goエンジニア、アーキテクト、GCP専門家）」による並列レビュー体制と、その精度を維持するための自律的な改善サイクルにあります。\n\n1. **自動化の前提**: 高いE2Eテスト網羅率、Design Docによる事前合意、および「即座に修正可能なものはマージを止めない」という開発カルチャーが基盤となっています。\n2. **AIレビューの構造**: 単なるコードチェックにとどまらず、DBの危険度マップやドメイン知識、開発者プロファイルを含む「ナレッジベース」をAIが参照し、クリティカルな問題（BUG）と提案（SUGGESTION）を切り分けます。\n3. **自律改善ループ**: 「Measure, Explore, Improve, Reflect, Audit」の5つのエージェントが毎晩稼働。過去の誤判定や見逃しを分析して自動的に検出ルールを生成・整理し、人間が介在せずにルールの鮮度を保ちます。\n4. **人間との役割分担**: DBスキーマ変更や認証・決済といった不可逆・高リスク領域の17%は人間がレビューし、定型的な開発はAIに任せることで、人間が本質的な設計判断に集中できる環境を構築しています。",
+    "topics": [
+      "AIレビュー",
+      "Claude Code",
+      "GitHub Actions",
+      "自動マージ",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 95
+    },
+    "originalTitle": "全PRの83%をAIレビューだけでマージできるようにしたカウシェ Tech Blog"
+  }
+}

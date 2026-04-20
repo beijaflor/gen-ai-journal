@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:11:38.580339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング、全員が違うことを言っている — 5社の解釈を並べてみた",
+    "url": "https://zenn.dev/kenimo49/articles/harness-engineering-interpretations-2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIやAnthropicなど主要5組織による「ハーネスエンジニアリング」の定義の差異を整理し、AIエージェントを制御するための共通項と実践手法を解説。",
+    "summaryBody": "AIエージェントの制御手法として注目される「ハーネスエンジニアリング」について、主要な5つの情報源（OpenAI、Anthropic、LangChain、Birgitta Böckeler、arXiv論文）の解釈を横断的に分析した記事です。各社で比喩やアプローチは異なりますが、「Harness ⊇ Context ⊇ Prompt」という階層構造や、制約の強制、フィードバックループの重要性については共通認識があります。OpenAIは「宣言的制約による全自動化」を重視する一方、Anthropicは「コンテキスト不安の解消」、Böckeler氏は「既存コードベース（型やリンター）の活用」を強調しています。最終的に、実務者がまず取り組むべきステップとして、AGENTS.mdの作成と品質ゲートの自動化を提案しています。",
+    "topics": [
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "ソフトウェア開発規約"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:54:15.277902+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Git自動化で見るMCPとAgent Skillの長所・短所",
+    "url": "https://techblog.lycorp.co.jp/ja/20260409c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント開発におけるMCPとAgent Skillの違いをGitリリース自動化の実例を通して比較し、それぞれの役割と使い分けの指針を解説しています。",
+    "summaryBody": "この記事では、LINEヤフー社内で行われたワークショップを基に、MCP（Model Context Protocol）と「Agent Skill」の特性を技術的に比較しています。具体例として、Gitのログ分析からCHANGELOG更新、バージョンバンプ、タグ付けまでを自動化する「GitスマートリリースSkill」の構築手順を解説しています。主な結論として、MCPは外部システムとの「接続（インフラ）層」を担い、Skillは複雑な業務ロジックを定義する「ワークフロー層」を担うという、相互補完的な役割分担が推奨されています。また、LLMの自律判断が介在するMCPに対し、Skillは手続き的知識をパッケージ化することで権限過剰やトークンコストの問題を解消できる利点を強調しています。一方で、現状のSkillエコシステムにおけるSDKのサポート状況や、CLI環境への最適化といった導入上の注意点についても言及しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Agent Skill",
+      "Git自動化",
+      "AIエージェント",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

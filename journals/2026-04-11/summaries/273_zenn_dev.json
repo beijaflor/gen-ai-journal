@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:04:27.654632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DGX SparkでGemma 4 31Bをローカル動作させ、OpenClawから使う",
+    "url": "https://zenn.dev/beef_and_rice/articles/cdb8b3f77f0704",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NVIDIA DGX Spark上で最新のGemma 4 31Bモデルをllama.cppを用いてローカル実行し、AIエージェントフレームワークOpenClawと連携させる実践的な手順の解説。",
+    "summaryBody": "Googleが2026年4月にリリースしたオープンウェイトモデル「Gemma 4 31B」を、GB10 Grace Blackwell搭載のDGX Sparkで動かす技術レポートです。llama.cppのサーバー機能を活用し、KVキャッシュの量子化（q8_0）や思考トークン予算の設定を行い、自作のサンドボックス環境「suisou」を通じてOpenClawエージェントに接続。Discord経由で指示を出し、llama.cppリポジトリ内のGemma 4対応状況を調査・レポートさせる実証実験までを紹介しています。完全ローカル環境での高度なAIエージェント運用の可能性を示す内容です。",
+    "topics": [
+      "Gemma 4",
+      "DGX Spark",
+      "llama.cpp",
+      "OpenClaw",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

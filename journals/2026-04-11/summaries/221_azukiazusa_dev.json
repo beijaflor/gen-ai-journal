@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:17:47.286572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex の Sandbox とエージェントの承認プロセス：自律性とセキュリティの両立",
+    "url": "https://azukiazusa.dev/blog/codex-sandbox-agent-authorization/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェント「Codex」におけるサンドボックスの仕組みと、承認疲れを防ぎつつ安全にコマンド実行を自動化する制御手法を解説した記事です。",
+    "summaryBody": "コーディングエージェントの自律性を高める一方で、誤操作や悪意のあるコード実行からシステムを保護することは極めて重要です。本記事では、Codexのサンドボックス機能を詳しく解説しています。サンドボックスは、OSネイティブの機能（macOSのSeatbeltやLinuxのbubblewrap等）を利用し、`workspace-write`や`read-only`といったモードでエージェントの権限を制限します。また、セキュリティ上の懸念からネットワークアクセスは原則制限され、Web Search Toolのキャッシュ利用が推奨されています。さらに、ユーザーが頻繁な承認操作に疲弊して確認を怠る「承認疲れ（authorization fatigue）」の対策として、Starlark形式で定義する「Rules」による自動承認や、サブエージェントに承認判断を委譲する「guardian_approval」といった高度な制御機能が紹介されています。これにより、安全性を維持したままエージェントの生産性を最大化する環境構築が可能となります。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "サンドボックス",
+      "セキュリティ",
+      "Starlark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

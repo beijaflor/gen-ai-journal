@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:41:06.002896+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bonsai-8B-mlx × Goose でフルローカルの AI エージェント環境を作る",
+    "url": "https://zenn.dev/geeknees/articles/52f2b7ca6b81e4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Silicon Mac上でMLX版のBonsai-8Bモデルをサーバーとして起動し、AIエージェントGooseのバックエンドとして連携させ、完全ローカルなエージェント環境を構築する手順を解説します。",
+    "summaryBody": "この記事では、Apple Siliconに最適化された機械学習フレームワーク「MLX」を利用したモデル「Bonsai-8B-mlx」と、Block社（旧Square）製のAIエージェントツール「Goose」を組み合わせる方法を紹介しています。M1 Mac（16GBメモリ）などの環境で、外部クラウドAPIに依存せず、すべての推論とエージェント動作をローカルで完結させることを目的としています。具体的には、mlx_lm.serverを用いてOpenAI互換のHTTPサーバーを立ち上げる手順、Goose側のCustom Provider設定におけるエンドポイントURLやモデル名の指定方法、およびセットアップ時に遭遇しやすいJSONパースエラーやモデル名の不一致といったトラブルシューティングの詳細が網羅されています。軽量かつ省電力なApple Siliconの利点を活かした、実用的な開発環境構築のガイドとなっています。",
+    "topics": [
+      "LLM",
+      "MLX",
+      "Goose",
+      "AIエージェント",
+      "Apple Silicon"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

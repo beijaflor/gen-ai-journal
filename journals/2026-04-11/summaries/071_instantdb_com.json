@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:54:27.815286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Instant 1.0: AIアプリ開発に最適化されたフルスタック・バックエンドの全貌",
+    "url": "https://www.instantdb.com/essays/architecture",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Instant 1.0は、マルチテナント型Postgresと強力な同期エンジンを組み合わせることで、AIエージェントによる開発に最適化された高速かつオフライン対応のバックエンドを提供します。",
+    "summaryBody": "4年の開発期間を経て、AI駆動の開発に最適化されたバックエンド『Instant 1.0』がオープンソースとしてリリースされました。本プラットフォームは、AIエージェントが複雑な移行やエンドポイント管理を行う手間を省き、フルスタックアプリケーションを迅速に構築できるように設計されています。\n\n技術的な特徴は大きく3点あります。第一に、Postgresをマルチテナントな「トリプルストア（Entity-Attribute-Value形式）」として利用することで、数ミリ秒でのプロジェクト立ち上げと「無制限のアプリ作成」を実現しました。第二に、クライアント側にDatalogベースのクエリエンジンとIndexedDBを用いた同期エンジンを搭載しており、デフォルトでオフライン対応・リアルタイム同期・楽観的更新（マルチプレイヤー機能）をサポートします。第三に、Clojureで記述されたバックエンドがPostgresのWAL（ログ）を監視し、トピックベースの無効化アルゴリズムによって効率的なデータ配信を行います。\n\n従来のCRUD開発における複雑さを抽象化し、AIが生成するコード量を削減しつつ、LinearやNotionのような高度なユーザー体験を提供することを目指しています。",
+    "topics": [
+      "InstantDB",
+      "Sync Engine",
+      "PostgreSQL",
+      "Clojure",
+      "BaaS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "A backend for AI-coded apps"
+  }
+}

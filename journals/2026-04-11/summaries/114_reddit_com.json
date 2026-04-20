@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2025-03-02T10:15:30Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜ大半の「雰囲気コーディング（Vibe Coding）」プロジェクトは失敗するのか",
+    "originalTitle": "Why the majority of vibe coded projects fail",
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1rt31th/why_the_majority_of_vibe_coded_projects_fail/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIの出力を深く検証せず「なんとなく動く」ことを優先する開発手法は、深刻な技術的負債とセキュリティリスクを招き、本番運用で破綻する可能性が高い。",
+    "summaryBody": "AIにプロンプトを投げ、生成されたコードのロジックを十分に理解せず、表面上の動作確認だけで開発を進める「雰囲気コーディング（Vibe Coding）」のリスクについて、RedditやHacker Newsで活発な議論が行われている。\n\n主な失敗要因として、コード品質の著しい低下が挙げられる。調査によれば、AI生成コードは人間が書いたものに比べ重大な問題を含む確率が約1.7倍高く、セキュリティ脆弱性に至っては2.74倍に達する。AIは過剰に複雑で冗長なコードを生成しがちであり、場当たり的な修正の繰り返しは、拡張不能な技術的負債を急速に蓄積させる。本番環境で致命的となる「5つの失敗モード」として、ビジネスロジックのブラックボックス化、例外処理の欠落、コンプライアンス証跡の不在、ロジックの乖離、そして組織内における技術的知見の喪失が指摘されている。\n\n結論として、使い捨てのプロトタイプや学習目的には有効だが、機密データを扱うシステムや長期保守が必要な商用プロジェクトへの適用は極めて危険である。開発者には、AIの出力を厳密にレビューし、システムの全体像を掌握し続ける「設計者」としての役割が強く求められている。",
+    "topics": [
+      "Vibe Coding",
+      "AI-assisted Development",
+      "Technical Debt",
+      "Software Quality",
+      "Security Vulnerabilities"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    }
+  }
+}

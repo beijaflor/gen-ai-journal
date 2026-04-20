@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:09:34.454492+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1.15GBで8Bモデルが動く「1-bit Bonsai」をMacで試した",
+    "url": "https://note.com/kazu_t/n/n00eedbb798e0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PrismMLが発表した、全重みを1ビットで表現し1.15GBという極小サイズで動作するLLM「Bonsai 8B」をMac環境で検証した技術レビュー。",
+    "summaryBody": "PrismML（Caltech発）が開発した、世界初の商用利用可能な1-bit LLM「Bonsai」の検証記事です。\n\n従来の16bit重みを-1と+1の2値（1ビット）に圧縮して学習されており、後付けの量子化とは根本的に異なるアプローチを採用しています。これによりメモリ消費量と計算コストを劇的に削減しています。\n\nM3 Pro搭載Macにて、8Bモデル（1.15GB）が約66 tok/secという驚異的な速度で動作することを確認。日本語の応答も自然であり、iPhone等のモバイル端末でも40 tok/sec以上の実用速度が見込める性能を示しました。\n\nApache 2.0ライセンスで提供され、セットアップも極めて容易であるため、プライバシー重視のオフライン利用やエッジAIの分野において大きな可能性を秘めています。",
+    "topics": [
+      "1-bit LLM",
+      "Bonsai",
+      "Local LLM",
+      "PrismML",
+      "Edge AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

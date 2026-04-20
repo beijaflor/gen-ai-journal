@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-11T10:36:52.337086+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VOID: 物理的な相互作用を考慮した動画内オブジェクト削除",
+    "url": "https://void-model.github.io/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "動画から物体を削除する際、その物体との衝突や影響を受ける周囲の動きまで物理的に整合するように修正・再生成するAIフレームワーク「VOID」。",
+    "summaryBody": "Netflixなどの研究チームが発表した「VOID (Video Object and Interaction Deletion)」は、従来の動画インペインティングでは困難だった「物理的な相互作用の解消」に特化した新手法です。例えば、ボールがウクレレを倒す動画からボールだけを消すと、従来手法ではウクレレが勝手に倒れる不自然な映像になります。VOIDは、VLM（視覚言語モデル）を用いて削除対象の影響を受ける領域を特定し、ビデオ拡散モデルを通じて「その物体が存在しなかった場合の物理的に妥当なシナリオ」を生成します。学習には、KubricやHUMOTOを用いて構築された、物体削除に伴う下流の物理変化を含む新しい対照データセットを使用。また、物体の形状崩れ（モーフィング）を防ぐために、フロー推定を利用した2パスの推論プロセスを導入し、安定した動画生成を実現しています。",
+    "topics": [
+      "動画インペインティング",
+      "ビデオ拡散モデル",
+      "物理整合性",
+      "視覚言語モデル (VLM)",
+      "反事実的生成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "VOID: Video Object and Interaction Deletion"
+  }
+}
