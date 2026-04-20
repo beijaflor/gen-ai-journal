@@ -245,7 +245,317 @@ OpenAIは今週、複数の方面からの圧力に直面している。Stargate
 ## Implementation Checklist
 
 After approval:
-- [ ] Proceed to STEP_04 (Curate Main Journal)
-- [ ] Use this plan as blueprint for article selection
-- [ ] Organize curated_journal_sources.md by themes
-- [ ] Carry forward theme introductions to STEP_08 (Assembly)
+- [x] Proceed to STEP_04 (Curate Main Journal)
+- [x] Use this plan as blueprint for article selection
+- [x] Organize curated_journal_sources.md by themes
+- [x] Carry forward theme introductions to STEP_08 (Assembly)
+- [x] Assembly strategies defined (STEP_07)
+
+---
+
+## ASSEMBLY STRATEGIES
+
+### Theme 1: Managed Agents・Advisor Strategy・Cowork — Anthropicプラットフォーム戦略の一週間
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** Anthropicのプラットフォーム週間という一つの中心的イベントがあり、4記事がそれぞれ異なる側面（製品、アーキテクチャ、コスト最適化、エンタープライズ）を探る構造。
+
+**Article Order & Roles:**
+1. [166] Claude Managed Agents公式発表 - Lead: 中心イベントの事実基盤を確立
+2. [082] Managed Agentsのスケーリング（脳と手の分離） - Technical: アーキテクチャの深堀り
+3. [046] Advisor Strategy（Opus→Sonnet/Haiku統合） - Development: コスト最適化という新プリミティブ
+4. [038] Cowork統制機能のエンタープライズGA - Impact: 企業導入の現実
+
+**Narrative Arc:**
+「何が発表されたか」→「どう構築されているか」→「どう最適化するか」→「誰が使うか」の流れ。読者は製品理解から技術理解、そして実務適用へと自然に進む。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [166] → [082] | 「この製品の裏側には、どのようなアーキテクチャ上の決断があったのか」 |
+| [082] → [046] | 「アーキテクチャの柔軟性を活かし、モデル間の知能をコスト効率よく統合する手法も発表された」 |
+| [046] → [038] | 「これらの技術を企業環境で安全に運用するための統制基盤も同時に整備された」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐⭐
+- Business Impact: ⭐⭐⭐
+- Future Outlook: ⭐⭐⭐
+
+**Key Synthesis Points:**
+- Anthropicは「開発→運用→最適化→統制」の全レイヤーを一週間で揃えた
+- 「脳と手の分離」アーキテクチャはエージェント設計のデファクトパターンになり得る
+- Advisor Strategyはモデル間コスト最適化の新しい設計パラダイム
+- エンタープライズ向けガバナンスの成熟はAIエージェント普及の前提条件
+
+**Conclusion Approach:**
+Anthropicの一連の発表が示すのは、AIエージェントが「実験」から「企業インフラ」へ移行する転換点であること。今後の焦点は、このプラットフォーム上でどのような新しいワークフローが生まれるかに移る。
+
+**Assembly Prompts for STEP_08:**
+1. 4つの発表はプラットフォーム戦略としてどう相互接続しているか？
+2. 「脳と手の分離」は他のエージェントフレームワークとどう違うか？
+3. Advisor Strategyのコスト構造は開発者の設計判断をどう変えるか？
+4. エンタープライズ統制の成熟は市場拡大にどう寄与するか？
+
+---
+
+### Theme 2: ハーネスエンジニアリング・DESIGN.md・仕様駆動開発 — エージェント時代の「意図の設計」
+
+**Pattern:** Progressive-Sequence (Problem-Solution Arc)
+**Pattern Rationale:** 記事が概念的に積み上がる：問題空間の定義→解釈の比較→根本課題の特定→解決策の提示。読者は段階的に理解を深められる。
+
+**Article Order & Roles:**
+1. [285] Spec・Context・Harness三層設計 - Foundation: 問題空間と三概念の統合フレームワーク
+2. [245] ハーネスエンジニアリング5社の解釈比較 - Development: 共通項と差異の整理
+3. [011] エージェントは「良い状態」を知らない（O'Reilly） - Advanced: 根本的課題の特定（フィットネス関数）
+4. [050] Architecture as Codeで人間とエージェントに設計を教える（O'Reilly） - Payoff: 具体的解決策
+
+**Narrative Arc:**
+「AIがコードを書く時代に人間は何を定義すべきか」→「業界はどう解釈しているか」→「なぜ既存のアプローチでは不十分か」→「どう解決するか」。概念定義から実践解への進行。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [285] → [245] | 「この三層構造を提唱する一方で、業界各社の解釈には顕著な差異がある」 |
+| [245] → [011] | 「しかし共通する課題がある。エージェントは何が"良い状態"かを知らないのだ」 |
+| [011] → [050] | 「この課題に対し、アーキテクチャ自体をコードとして定義するアプローチが提案されている」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐⭐
+- Business Impact: ⭐⭐
+- Future Outlook: ⭐⭐⭐⭐
+
+**Key Synthesis Points:**
+- 「意図の設計」がソフトウェア開発の新たな中核スキルとなる
+- Harness ⊇ Context ⊇ Prompt という階層構造が共通認識として収束しつつある
+- 決定論的ガードレール（フィットネス関数）の導入がAIエージェント品質管理の鍵
+- Architecture as Codeは人間とAIの共通言語となる
+
+**Conclusion Approach:**
+ハーネスエンジニアリングの議論は、「AIにどう書かせるか」から「AIに何を守らせるか」への進化を示している。制約をコードとして定義することで、非決定的なAIの出力を決定論的に管理する方法論が形になりつつある。
+
+**Assembly Prompts for STEP_08:**
+1. 三層構造はどの程度実務に浸透しているか？
+2. 5社の解釈の差異から何が学べるか？
+3. フィットネス関数の実装はどこから始めるべきか？
+4. Architecture as Codeは既存の開発プラクティスとどう統合するか？
+
+---
+
+### Theme 3: Claude Mythos Preview・Project Glasswing・DFC — AIサイバーセキュリティの新章
+
+**Pattern:** Single-Focus (Multi-Event Variation)
+**Pattern Rationale:** Mythos Preview/Glasswingという中心的発表があり、DFCが補完的な研究角度を提供。3記事すべてAnthropicからの一次情報。
+
+**Article Order & Roles:**
+1. [182] Claude Mythos Previewサイバーセキュリティ能力評価 - Lead: 能力の技術的評価（ゼロデイ発見、エクスプロイト構築）
+2. [153] Project Glasswing公式発表 - Response: 能力に対する制度的対応（$100Mクレジット、パートナーシップ）
+3. [276] DFC（AIの「差分」ツール） - Complementary: モデル間行動差異の検出という別角度のセキュリティ研究
+
+**Narrative Arc:**
+「AIが何ができるようになったか」→「その能力をどう責任ある形で使うか」→「モデルの安全性をどう監査するか」。能力→制度→検証の三段階。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [182] → [153] | 「この強力な攻撃能力を防御に転用するため、Anthropicは大規模な制度的イニシアチブを立ち上げた」 |
+| [153] → [276] | 「モデルの能力が高まるほど、その内部の振る舞いを理解する手法も重要になる」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐⭐⭐
+- Business Impact: ⭐⭐⭐
+- Future Outlook: ⭐⭐⭐⭐
+
+**Key Synthesis Points:**
+- AIの脆弱性発見能力が人間の専門家を超えた段階に到達
+- 能力の公開制限＋防御側への先行提供という「責任ある開示」モデル
+- DFCによりモデル間の政治的バイアスや検閲メカニズムの可視化が可能に
+- サイバーセキュリティはAIの「キラーアプリ」となる可能性
+
+**Conclusion Approach:**
+Mythos Previewの能力は、AIセキュリティが理論から実戦へ移行したことを決定的に示している。今後の焦点は、防御側がこの技術をどれだけ速く活用できるか、そしてDFCのような検証手法がモデル監査の標準になるかどうかにある。
+
+**Assembly Prompts for STEP_08:**
+1. ゼロデイ発見能力の具体例はどの程度インパクトがあるか？
+2. Project Glasswingのパートナーシップ構造は業界にどう影響するか？
+3. DFCが発見した政治的バイアスの意味は？
+4. 防御側の技術的優位性は維持可能か？
+
+---
+
+### Theme 4: Bram Cohen批判・CSRF見落とし・COBOL脆弱性・ETH Zurich調査 — バイブコーディングのリスク集中
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 4記事がそれぞれ独立した視点（セキュリティ実証、実験報告、学術研究、法的問題）からAI生成コードのリスクを論じており、階層関係はない。
+
+**Article Order & Roles:**
+1. [169] CSRF見落とし — Peer: セキュリティ脆弱性の技術的実証と定量データ
+2. [057] COBOL×AI — Peer: レガシー言語でのRCE脆弱性発生実験
+3. [252] ETH Zurich調査 — Peer: 学術的エビデンス（CS基礎と文章力の重要性）
+4. [016] OpenBSD ext4拒否 — Peer: 法的・ライセンス問題の具体事例
+
+**Narrative Arc:**
+「AIは何を見落とすか」→「古い言語でも同じリスクか」→「何が成果を分けるのか」→「法的にはどうなるか」。技術→実験→研究→法的の四角度。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [169] → [057] | 「セキュリティの見落としはWeb開発に限らない。COBOLという全く異なる領域でも同じ構造的問題が確認された」 |
+| [057] → [252] | 「では、こうしたリスクを回避するために何が必要なのか。ETH Zurichの研究が示唆を与える」 |
+| [252] → [016] | 「技術的なリスクに加え、AI生成コードは法的な地雷原も抱えている」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐⭐
+- Business Impact: ⭐⭐⭐
+- Future Outlook: ⭐⭐⭐
+
+**Key Synthesis Points:**
+- AI生成コードのセキュリティリスクは言語やドメインに依存しない構造的問題
+- CS基礎と文章力がバイブコーディングの成果を分ける（人間のスキルは依然重要）
+- 著作権・ライセンスの法的課題はAIコード採用の制度的障壁となる
+- セキュリティ、品質、法的リスクの三重の課題は相互に連関している
+
+**Conclusion Approach:**
+バイブコーディングのリスクは、技術的（CSRF/RCE）、人的（スキル依存）、法的（著作権）の三層にわたる。これらを個別の問題としてではなく、AI生成コードの構造的特性として理解することが、安全な活用の前提条件である。
+
+**Assembly Prompts for STEP_08:**
+1. 4つの視点はAI生成コードのリスクについて何を示しているか？
+2. 技術的リスクと法的リスクはどう交差するか？
+3. ETH Zurichの研究結果は開発教育にどう影響するか？
+4. 読者はこれらのリスクにどう対処すべきか？
+
+---
+
+### Theme 5: コグニティブ・サレンダー・意思決定疲れ・並列エージェント認知負荷 — AI支援開発の人間コスト
+
+**Pattern:** Progressive-Sequence (Concept → Practice → Evidence)
+**Pattern Rationale:** 概念定義→実践的経験→科学的実証の順で理解が深まる。各記事が前の記事の知見を前提として積み上がる。
+
+**Article Order & Roles:**
+1. [181] コグニティブ・サレンダー概念 - Foundation: 現象の名前と概念フレームワーク
+2. [157] Addy Osmani並列エージェント認知負荷 - Development: 開発者の実践的経験と対策
+3. [092] ChatGPT認知の松葉杖（RCT） - Payoff: 科学的実証データ
+
+**Narrative Arc:**
+「何が起きているか（概念）」→「開発現場でどう現れるか（実践）」→「科学的にどう裏付けられるか（実証）」。抽象から具象、定性から定量への進行。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [181] → [157] | 「この認知の降伏は、AIエージェントを並列稼働させる開発現場でより切実な形で現れている」 |
+| [157] → [092] | 「これらの実務的観察を裏付けるRCTの結果が、学術研究から報告されている」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐
+- Business Impact: ⭐⭐⭐
+- Future Outlook: ⭐⭐⭐⭐
+
+**Key Synthesis Points:**
+- AIへの認知的依存は意識的な選択ではなく無意識のプロセスとして進行する
+- 並列エージェント稼働は生産性向上と同時にComprehension Debtを生む
+- 知識定着率の低下はRCTで実証済み — ツールの便利さは学習を代替しない
+- AI活用の持続可能性は、人間側の認知管理戦略にかかっている
+
+**Conclusion Approach:**
+AI支援開発の「人間コスト」は見えにくいが実在する。効率化の追求が認知能力の低下を招くパラドックスに、開発者と組織はどう向き合うべきか。
+
+**Assembly Prompts for STEP_08:**
+1. 3つの記事は「認知コスト」についてどう補完し合っているか？
+2. Comprehension Debtは具体的にどう管理すべきか？
+3. RCTの結果は開発者の日常にどう影響するか？
+4. 認知負荷管理は組織の責任か個人の責任か？
+
+---
+
+### Theme 6: Gemma 4・LLM-jp-4・PLaMo 3.0・Bonsai 1-bit — 新モデルラッシュとローカルAI
+
+**Pattern:** Multi-Perspective (Implementation Showcase Variation)
+**Pattern Rationale:** 4つの独立したモデルリリースが、それぞれ異なるアプローチ（Googleオープンソース、国産学術、国産スタートアップ、新規アーキテクチャ）を代表。階層関係はなく、並列比較に価値がある。
+
+**Article Order & Roles:**
+1. [282] Gemma 4完全解説 — Peer: グローバル最大のオープンモデルリリース
+2. [286] LLM-jp-4 — Peer: 国産学術モデルがGPT-4oを超えた事実
+3. [137] PLaMo 3.0 Prime beta — Peer: 国産スタートアップ初の推論モデル
+4. [261] Bonsai 1-bit — Peer: 根本的に異なるアーキテクチャアプローチ
+
+**Narrative Arc:**
+Google→日本国立研究所→日本スタートアップ→新規アーキテクチャ。グローバル→国産→革新的の流れで、ローカルAI実行の多様性と実用段階への到達を示す。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [282] → [286] | 「Googleが大規模にオープン化する一方、日本からも注目すべきモデルが登場した」 |
+| [286] → [137] | 「国立研究所に続き、民間からも推論能力を備えた国産モデルが公開された」 |
+| [137] → [261] | 「これらの大規模モデルとは全く異なるアプローチで、1ビット量子化という新たなパラダイムが実用段階に達した」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐⭐⭐
+- Business Impact: ⭐⭐⭐
+- Future Outlook: ⭐⭐⭐
+
+**Key Synthesis Points:**
+- Apache 2.0ライセンスの普及でオープンモデルの商用利用障壁が大幅に低下
+- 日本発モデル（LLM-jp-4、PLaMo 3.0）がグローバル水準に到達
+- 1ビット量子化により8GBメモリでの実用的LLM運用が可能に
+- ローカルAI実行が「実験」から「実用」段階へ移行
+
+**Conclusion Approach:**
+モデルの多様性が爆発的に拡大し、「どのモデルを使うか」だけでなく「どこで動かすか」が重要な設計判断になった。クラウド一強の時代からローカル・ハイブリッド運用への移行が加速している。
+
+**Assembly Prompts for STEP_08:**
+1. 4モデルのアプローチの違いは市場にどんな選択肢を生むか？
+2. 日本発モデルの競争力はどこにあるか？
+3. 1ビット量子化はLLM市場の構造をどう変えるか？
+4. 読者はどのモデルをどのユースケースで選ぶべきか？
+
+---
+
+### Theme 7: OpenAI — Stargate UK凍結・ChatGPT広告導入・フロリダ州調査・投資家のAnthropic移行
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 3記事がそれぞれ異なる角度（信頼性/ガバナンス、ビジネス戦略、規制/政策）からOpenAIの現状を描く。直接的対立ではなく、多面的な状況描写。
+
+**Article Order & Roles:**
+1. [136] New Yorker調査報道 — Peer: 信頼性・ガバナンスの深層分析
+2. [032] 投資家向けメモ — Peer: ビジネス戦略と競争認識
+3. [020] 責任制限法案支持 — Peer: 規制ポジショニング
+
+**Narrative Arc:**
+「誰がOpenAIを動かしているか」→「何を賭けているか」→「何から逃れようとしているか」。人物→戦略→政策の三層で一企業の全体像を浮かび上がらせる。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| [136] → [032] | 「こうしたガバナンスの課題を抱えながらも、OpenAIは投資家に対して計算資源の圧倒的優位を主張し続けている」 |
+| [032] → [020] | 「巨額投資を正当化する一方で、その技術がもたらしうるリスクに対しては責任の制限を求めている」 |
+
+**Emphasis Balance:**
+- Technical Depth: ⭐⭐
+- Business Impact: ⭐⭐⭐⭐⭐
+- Future Outlook: ⭐⭐⭐⭐
+
+**Key Synthesis Points:**
+- New Yorkerの調査はOpenAIの「安全性 vs 成長」の構造的矛盾を可視化
+- 計算資源をめぐる競争は「30GW by 2030」の規模感で展開
+- 責任制限法案への支持は、技術の社会的リスクに対する企業姿勢を象徴
+- ビジネス戦略・ガバナンス・規制の三面から見たOpenAIの全体像
+
+**Conclusion Approach:**
+OpenAIの三方面からの圧力は、AI業界最大のプレイヤーが直面する「技術的野心と社会的責任のバランス」という構造的課題を浮き彫りにしている。
+
+**Assembly Prompts for STEP_08:**
+1. 三つの記事はOpenAIの現状について何を示しているか？
+2. 計算資源の優位性は持続可能か？
+3. 責任制限の要求は業界全体にどう波及するか？
+4. 読者（開発者）にとってこの状況は何を意味するか？
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Approval Date:** 2026-04-19
+**Approver:** Human Editor (pending confirmation)
