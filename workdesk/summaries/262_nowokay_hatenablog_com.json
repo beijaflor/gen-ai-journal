@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:21:00.177255+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.6-35B-A3Bでコーディングエージェントを試してみる。小規模なら十分いける",
+    "url": "https://nowokay.hatenablog.com/entry/2026/04/17/135414",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "新開発のLLM「Qwen3.6-35B-A3B」をローカル環境で検証し、小規模な開発タスクにおいて高い実用性と安定したエージェント操作能力を持つことを確認したレビュー。",
+    "summaryBody": "きしだ氏による、リリースされたばかりのLLM「Qwen3.6-35B-A3B」を用いたコーディングエージェントの検証レポートです。Qwen3.5の大型モデルに匹敵、あるいはベンチマークで上回る性能を持つ本モデルを、ローカルPC（RTX 4060 Ti 16GB、Mac M4 Pro等）で動作させた際のパフォーマンスと実用性を評価しています。\n\n主な内容は以下の通りです：\n- **動作環境**: 16GB VRAMや32GB統合メモリ搭載機であれば、量子化版（Q3_K_SやQ4_K_XL）を利用することで実用的な速度（30-80 tok/sec）で動作可能。MacではMLX版が高速な傾向にある。\n- **コーディング性能**: ブロック崩しやテトリスのJSコードを一発で生成。Spring Bootを使用したTODO管理アプリの開発では、DB変更、フィルタ追加、SPA化といった要件変更に対し、Git操作を含めて概ね適切に対応した。\n- **制限事項**: コンテキストが長くなると（3.5万トークン超）繰り返しが発生しやすいため、セッションの適宜更新が必要。また、JavaのSwitch式や特定のJavaScript DOM操作において、人間による微修正が必要な「惜しい」不具合が見られた。\n\n総評として、仕様の細かい把握に課題はあるものの、小規模なプロジェクトであればローカル環境のコーディングエージェントとして十分に実用段階にあると結論づけています。",
+    "topics": [
+      "Qwen3.6",
+      "Local LLM",
+      "Coding Agent",
+      "Spring Boot",
+      "AIベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

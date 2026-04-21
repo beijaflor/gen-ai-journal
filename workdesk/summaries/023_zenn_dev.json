@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:26:05.919957+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのマルチセッション管理にジョブキューの概念を取り入れる: オーケストレーションツール「tq」の紹介",
+    "url": "https://zenn.dev/mh4gf/articles/claude-code-multi-session-job-queue",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの複数セッションをジョブキューで効率的に管理し、タスクの並列実行や自動化を支援するオーケストレーションツール「tq」の設計思想と活用例。",
+    "summaryBody": "Claude Codeのマルチセッション管理における「人間のコンテキストスイッチ」という課題を解決するため、ジョブキューベースのオーケストレーションシステム「tq」が開発されました。tqは、マネージャーエージェントがタスクを分解しキューに積み、バックグラウンドでClaude Codeセッション（tmux）をディスパッチする仕組みを提供します。\n\n主な特徴は以下の通りです：\n1. ジョブキューによる並列実行制限：対話セッション数を制限することで人間の集中力を維持しつつ、非対話セッションをバックグラウンドでスケールさせます。\n2. エージェント向けCLI：CLI出力はJSON形式で、AIが操作しやすいように設計されています。\n3. 高度な自動化：GitHub通知の監視、CI修正、メール対応の自動化、定型作業のループ実行などが可能です。\n4. 既存機能との差別化：Claude Codeの標準機能である/loopや/scheduleと異なり、ローカルのファイル操作や過去のアクション履歴（メモリ）の引き継ぎ、SQLiteによる永続化をサポートしています。\n\n「人間がtqの使い方を知る必要がない」という設計思想のもと、自然言語での指示をベースに高度なタスク管理を実現します。",
+    "topics": [
+      "Claude Code",
+      "tq",
+      "AIエージェント",
+      "オーケストレーション",
+      "ジョブキュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

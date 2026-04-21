@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:24:39.225572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "fence - AI AgentをOSサンドボックスの中で動かす",
+    "url": "https://songmu.jp/riji/entry/2026-04-11-ai-agent-inside-the-fence.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントのローカル実行に伴うリスクを軽減するため、OSレベルでファイルやネットワークのアクセスを制限するサンドボックスツール「fence」の活用法を紹介。",
+    "summaryBody": "AIエージェント（AI Agent）が賢くなる一方で、ローカル環境で不審なコマンド実行や意図しないファイルアクセスを行うリスクが懸念されています。本記事では、Go製のサンドボックスラッパーツール「fence」を紹介し、GitHub Copilot CLIなどのAIツールを安全に実行する方法を解説しています。fenceはmacOSのApple SeatbeltやLinuxのbubblewrapといったOS標準のサンドボックス機能を利用し、AIエージェントの活動範囲を特定ドメインへの通信や特定ディレクトリの読み書きに制限します。既存のテンプレート（code）を使用することでセットアップが容易であり、`--monitor`オプションを用いてブロックされたアクセスをデバッグすることも可能です。AnthropicのsrtやRust製のnono、Go製のcageといった類似ツールとの比較も行い、Go製であることや機能のバランスからfenceの有用性を高く評価しています。",
+    "topics": [
+      "AI Agent",
+      "Security",
+      "Sandbox",
+      "GitHub Copilot",
+      "fence"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

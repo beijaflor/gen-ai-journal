@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:05:42.792551+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「アドバイザー」と「サブエージェント」── Maxプランでの使い方",
+    "url": "https://qiita.com/ussu_ussu_ussu/items/fec4e0859bf102dfa6d8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの新機能「アドバイザー」と「サブエージェント」の役割の違いを明確にし、Maxプランで開発効率を最大化する構成案とワークフローを解説しています。",
+    "summaryBody": "Claude Code CLIにベータ導入された「アドバイザー（advisor）」機能と「サブエージェント」の使い分けについて詳説した記事です。アドバイザーは実行中のモデルがより上位のモデル（例：SonnetがOpusに相談）へ自動で設計やエラー解決を相談する仕組みであり、実装方針の決定やタスク完了前の最終確認に適しています。一方、サブエージェントは独立したコンテキストで動作するため、コードレビューなど「新鮮な視点」での検証に強みを持ちます。記事ではMaxプランの定額制を活かした「Sonnet 4.6 実行 + Opus 4.6 アドバイザー」という推奨構成や、CLAUDE.mdに記述してワークフローを自動化するプロンプト例を紹介。従来のopusplanとの違いや、トークン節約のためのコスト管理Tipsまで網羅されており、最新のClaude環境を使いこなすための実践的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "AI開発ツール",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 80,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

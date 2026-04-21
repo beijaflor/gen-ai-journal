@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:49:14.590207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "iPhone Airだけで動くAIとの音声対話アプリ、Claude Codeが一晩で作ってくれました。そして実感したMacとiPhoneの格差（CloseBox）",
+    "url": "https://www.techno-edge.net/article/2026/04/15/4990.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを活用し、iPhone Air単体で完結するローカルAI音声対話アプリを未経験から一晩で構築し、iOS特有のメモリ制限を浮き彫りにした開発記。",
+    "summaryBody": "松尾公也氏が、開発ツール「Claude Code」を用いてiPhone Air上で動作する完全オンデバイスの音声対話アプリ「AvaTalk」を開発したレポート。llama.cppによるLLM推論、iOS標準の音声認識（STT）、音声合成（TTS）を組み合わせ、ネットワーク不要のハンズフリー対話環境を一晩で構築した。開発過程では、1ビット量子化LLM「Bonsai 8B」などの動作を確認。一方で、iPhone Air（12GB RAM）はスペック上MacBook Neo（8GB RAM）を上回るが、iOSのサンドボックスによるアプリごとのメモリ上限がmacOSより厳しいため、巨大なモデルの展開には制約があるという「OS間の格差」を指摘している。自然言語での対話を通じた「ヴァイブコーディング」が、専門外のプラットフォーム開発のハードルを劇的に下げている実態が示されている。",
+    "topics": [
+      "Claude Code",
+      "ローカルLLM",
+      "iPhone Air",
+      "iOS開発",
+      "オンデバイスAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

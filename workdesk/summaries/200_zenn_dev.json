@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:37:00.563571+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude in Chromeが便利すぎて不満だったので、自分専用のChrome拡張を作った",
+    "url": "https://zenn.dev/sonicmoov/articles/d7703ab8c16515",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のAIプロバイダーを統合し、サイト操作の自動化やナレッジ管理を可能にする自作Chrome拡張「SiteSurf」の開発事例と考察。",
+    "summaryBody": "既存のClaude専用拡張機能の制限を解消するため、著者自らが1週間で開発した多機能Chrome拡張「SiteSurf」についての紹介記事です。Vercel AI SDKを活用し、Claude、Gemini、GPT-4、GitHub Copilot、ローカルLLMなど複数のプロバイダーを切り替えて利用可能。主な機能として、Chrome DevTools Protocol (CDP) を用いた「isTrusted: true」な擬似ユーザー操作、AI生成コードのサンドボックス実行（Artifacts）、URLやDOM構造に基づいたサイト固有の操作定義（Skills）を備えています。開発過程で直面したCSP（Content Security Policy）の回避策などの技術的知見に加え、AIによって「欲しい道具を自作できる」時代におけるエンジニアの役割の変化についても深く考察されています。",
+    "topics": [
+      "Chrome拡張機能",
+      "LLM",
+      "Vercel AI SDK",
+      "React",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

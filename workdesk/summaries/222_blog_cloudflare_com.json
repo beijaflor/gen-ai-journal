@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:31:11.971286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、AIエージェントの長期記憶を可能にするマネージドサービス「Agent Memory」を発表",
+    "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントの会話から重要な情報を抽出・永続化し、コンテキストの劣化を防ぎながら長期的な記憶保持を可能にする「Agent Memory」のプライベートベータを開始しました。",
+    "summaryBody": "Cloudflareが発表した「Agent Memory」は、AIエージェントが過去の対話から学習し、情報を永続化するためのマネージドサービスです。従来のLLMが抱える、コンテキストウィンドウの増大に伴う精度低下（コンテキスト劣化）や情報の喪失という課題に対し、会話から「事実」「イベント」「指示」「タスク」を自動抽出・分類して保存する仕組みを提供します。\\n\\n技術的には、Cloudflare Workers、Durable Objects、Vectorize、Workers AIなどの既存インフラを統合して構築されており、高速な取り込み（Ingest）と高度な検索（Recall）を実現しています。検索パイプラインでは、全文検索、ベクトル検索、HyDE（Hypothetical Document Embedding）を組み合わせ、RRF（Reciprocal Rank Fusion）によって最も関連性の高い情報を抽出します。\\n\\nまた、Llama 4 ScoutやNemotron 3などの複数のモデルを、抽出や回答合成といったタスクごとに最適化して使い分けています。データは完全にエクスポート可能で、ベンダーロックインを回避する設計となっています。これにより、個別のエージェントだけでなく、チーム全体で共有可能な「組織知」としてのエージェント記憶を構築することが可能になります。",
+    "topics": [
+      "Cloudflare",
+      "AI Agents",
+      "Agent Memory",
+      "LLM",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Agents that remember: introducing Agent Memory"
+  }
+}

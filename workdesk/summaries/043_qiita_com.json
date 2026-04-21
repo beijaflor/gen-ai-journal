@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:21:25.888746+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "インターネット無しでAIコードアシスタントをVSCodeとOllamaで構築【2アプローチ比較】",
+    "url": "https://qiita.com/rikiza1989/items/81cce309c0c642bd2d6e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "機密情報の漏洩を防ぐため、VSCodeとOllamaを用いてインターネット不要なローカルAIコードアシスタントを構築する2つの手法（Copilot Chat活用とContinue活用）を徹底解説しています。",
+    "summaryBody": "クラウドAIによるソースコード漏洩リスクを回避するため、Ollamaを利用してローカル環境でLLMを動作させる方法を解説したチュートリアルです。記事では、設定が容易でチャット中心の「GitHub Copilot Chat + Ollama」と、インライン補完やコードベース検索などフル機能を備えた「Continue + Ollama」の2つのアプローチを比較。それぞれのセットアップ手順、config.jsonの設定例、および使用マシンのスペック（RAM/VRAM）に応じた最適なモデル（Gemma 4、Qwen2.5-Coder、DeepSeek等）の選定ガイドが詳しく記載されています。オフライン環境やセキュリティ要件の厳しいプロジェクトでAIの支援を受けたい開発者にとって実用性の高い内容です。",
+    "topics": [
+      "VSCode",
+      "Ollama",
+      "Local LLM",
+      "Continue",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

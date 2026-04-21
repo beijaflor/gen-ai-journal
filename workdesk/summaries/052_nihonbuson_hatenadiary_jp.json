@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:19:06.342393+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIによって書かれたコードに対するQA活動のあり方",
+    "url": "https://nihonbuson.hatenadiary.jp/entry/QA-activities-in-response-to-generated-code",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIが生成したコードの品質を担保するため、プロンプトの妥当性検証や人間によるレビューの再定義、自動テストの強化といったQA活動の変容を考察する内容。",
+    "summaryBody": "GitHub Copilot等の普及により生成AIがコードを書く機会が増える中、QA（品質保証）がどのように対応すべきかを論じた記事です。AI生成コードは「もっともらしいが誤っている」可能性があり、従来のテスト手法だけでは不十分な場合があります。本稿では、プロンプトの工夫による品質の作り込み、生成されたコード特有のバグパターンの把握、およびAIを前提としたテストコード自体の信頼性確保について触れています。開発効率の向上と引き換えに発生しうる技術的負債を防ぐため、QAエンジニアが開発の初期段階からどのように介在すべきか、その具体的なマインドセットと戦略を提案しています。特に、生成AIをブラックボックスとして扱うのではなく、その出力特性を理解した上での検証プロセスの構築が重要であると結論付けています。",
+    "topics": [
+      "生成AI",
+      "QA",
+      "ソフトウェアテスト",
+      "GitHub Copilot",
+      "品質管理"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    },
+    "originalTitle": "QA activities in response to generated code"
+  }
+}

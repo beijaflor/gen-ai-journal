@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:57:28.668904+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareが「Browser Run」を発表：AIエージェント専用のブラウザ実行プラットフォーム",
+    "url": "https://blog.cloudflare.com/browser-run-for-ai-agents/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは「Browser Rendering」を「Browser Run」に刷新し、AIエージェントのWeb操作を支援するリアルタイム監視、人間による介入、WebMCP対応などの新機能を導入しました。",
+    "summaryBody": "Cloudflareは、AIエージェントがWebサイトを効率的に操作・閲覧するためのブラウザ実行環境「Browser Run」（旧称：Browser Rendering）の大型アップデートを発表しました。このリリースでは、エージェントの動作をリアルタイムで監視できる「Live View」や、AIが詰まった際に人間が操作を代行できる「Human in the Loop」機能が追加されました。また、Chrome DevTools Protocol (CDP) エンドポイントを直接公開したことで、既存の自動化スクリプトやMCPクライアント（Claude Desktop等）からの接続が容易になっています。さらに、Webサイト側がエージェント向けに利用可能なツールを宣言する「WebMCP」のサポートや、セッション全体の動作を記録・リプレイできるデバッグ機能も備えています。同時実行制限も従来の30から120へと大幅に引き上げられ、グローバルネットワーク上での大規模なAIエージェント運用が可能になります。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "ブラウザ自動化",
+      "WebMCP",
+      "Chrome DevTools Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Browser Run: give your agents a browser"
+  }
+}

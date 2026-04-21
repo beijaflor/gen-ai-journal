@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:31:58.583405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "A2UI v0.9: フレームワークに依存しないGenerative UIの新しい標準",
+    "url": "https://developers.googleblog.com/a2ui-v0-9-generative-ui/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントが既存のデザインシステムを使用して動的にUIを生成・操作できる、フレームワーク非依存の標準規格「A2UI v0.9」を発表しました。",
+    "summaryBody": "A2UI（Agent-to-UI）は、AIエージェントがリアルタイムでユーザーに最適なUIウィジェットを生成するためのオープンな標準規格です。最新のバージョン0.9では、開発者が既存のコンポーネントカタログを活用しやすくするための「Basic」コンポーネントへの改称、React・Flutter・Angularなどの主要フレームワークを統合する共有Web-Coreライブラリの導入、そしてPython向けAgent SDKの提供が行われました。特に、LLMが出力する不完全なJSONをリアルタイムで修復しながらレンダリングする「Resilient Streaming」機能や、クライアント側で定義された関数をエージェントが呼び出す仕組みなど、実運用における堅牢性が大幅に向上しています。OracleやVercel、AG2といった業界パートナーとのエコシステム形成も加速しており、金融シミュレーターやヘルスケアアプリなど、静的なダッシュボードをAIによる動的なインターフェースに置き換える事例も紹介されています。",
+    "topics": [
+      "Generative UI",
+      "AI Agents",
+      "Web Development",
+      "Google Cloud",
+      "SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "A2UI v0.9: The New Standard for Portable, Framework-Agnostic Generative UI"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:16:52.849732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4をCodex CLIでローカル実行：エージェント開発における実用性の検証",
+    "url": "https://medium.com/google-cloud/i-ran-gemma-4-as-a-local-model-in-codex-cli-7fda754dc0d4",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemma 4の劇的なツール呼び出し能力の向上により、Apple SiliconやNVIDIA Blackwell環境での実用的なローカル・エージェント型コーディングが可能になったことを実機検証で実証。",
+    "summaryBody": "この記事では、2026年時点の最新モデルとされるGemma 4（26B MoEおよび31B Dense）を、Codex CLIを用いたローカル開発環境でテストした結果を詳細に解説しています。主な焦点は、以前のモデルで課題だったツール呼び出し能力が86.4%まで向上したことで、コード生成、テスト実行、パッチ適用といった「エージェント型」のワークフローがローカルで完結できるようになった点にあります。\n\n検証はM4 Proチップを搭載したMacBook Proと、NVIDIA Blackwell GPU搭載のDell GB10の2環境で実施。MoEアーキテクチャの採用により、Mac環境では非常に高速なトークン生成を実現していますが、正確性の面ではDenseモデルが勝るという結果が出ています。また、llama.cppやOllamaを用いたセットアップにおける具体的なフラグ設定（KVキャッシュの量子化、Jinjaテンプレートの使用など）や、現時点でのライブラリのバグ回避策についても触れられています。結論として、クラウドモデル（GPT-5.4）の信頼性には及ばないものの、コスト、プライバシー、オフライン動作の観点からローカル実行が実用的な選択肢になったと述べています。",
+    "topics": [
+      "Gemma 4",
+      "Codex CLI",
+      "Local LLM",
+      "Apple Silicon",
+      "NVIDIA Blackwell"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I ran Gemma 4 as a local model in Codex CLI"
+  }
+}

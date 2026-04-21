@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:30:54.402206+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unweight: 精度を維持しつつLLMを22%圧縮するCloudflareの可逆圧縮技術",
+    "url": "https://blog.cloudflare.com/unweight-tensor-compression/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが開発した「Unweight」は、LLMの重みの指数部をハフマン符号化で可逆圧縮し、GPUのメモリ帯域ボトルネックを解消することで、精度を落とさずモデルサイズを最大22%削減する技術です。",
+    "summaryBody": "Cloudflareは、LLM推論の最大のボトルネックであるGPUメモリ帯域の課題を解決するため、新しい可逆圧縮システム「Unweight」を発表しました。この技術は、BF16形式の重みのうち、高い冗長性を持つ指数部（exponent）のみをハフマン符号化で圧縮します。最大の特徴は、解凍をGPUの高速なオンチップ共有メモリ（SMEM）上で行い、そのままテンソルコアに供給することで、低速なメインメモリ（HBM）との往復を回避する点にあります。\n\n主な成果と技術的詳細は以下の通りです：\n- **ロスレス圧縮**: 量子化（Quantization）とは異なり、出力がビット単位で完全に一致する100%可逆な圧縮を実現。\n- **効率化**: Llama-3.1-8Bにおいて、MLP重みの約30%（モデル全体で15-22%）を圧縮し、VRAMを約3GB節約。\n- **動的最適化**: バッチサイズや行列の形状に応じて、4つの実行パイプライン（フルデコード、指数のみ、パレット変換等）をオートチューナーが自動選択。\n- **Hopper最適化**: NVIDIA H100のTMA（Tensor Memory Accelerator）を活用し、計算と解凍をオーバーラップさせる高度なカーネル実装を採用。\n\n現在は30-40%の処理オーバーヘッドがありますが、配布時間の短縮やGPUあたりのモデル収容率向上に大きく寄与しており、今後さらなる最適化が進められる予定です。",
+    "topics": [
+      "LLM",
+      "モデル圧縮",
+      "Cloudflare",
+      "GPU最適化",
+      "推論エンジン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Unweight: how we compressed an LLM 22% without sacrificing quality"
+  }
+}

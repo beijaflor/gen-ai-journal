@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:31:40.459033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント準備スコアの導入：あなたのサイトはAIエージェント対応済みですか？",
+    "url": "https://blog.cloudflare.com/agent-readiness/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、ウェブサイトがAIエージェントに最適化されているかを測定する「Agent Readinessスコア」と、対応状況を診断するツール「isitagentready.com」をリリースしました。",
+    "summaryBody": "Cloudflareは、人間や検索エンジンだけでなく「AIエージェント」に対してウェブサイトを最適化するための新しい指標「Agent Readinessスコア」を発表しました。専用ツール「isitagentready.com」では、発見可能性（robots.txt, sitemap）、コンテンツ（Markdown対応）、アクセス制御、機能（APIカタログ, MCP）の4つの主要カテゴリでサイトを診断します。\n\n記事のハイライト：\n- **現状分析**: Cloudflare Radarの調査によると、AI設定を明記しているサイトは4%、Markdown交渉に対応しているサイトは3.9%に過ぎず、多くのサイトが未対応です。\n- **診断機能**: 診断に合格しなかった項目に対し、AIコーディングエージェントに渡すだけで実装を完了できる専用のプロンプトを提供します。\n- **自社事例**: Cloudflareのドキュメントサイトを刷新し、llms.txtの構造化やMarkdownへのフォールバックを実装。結果として、AIによる回答速度が66%向上し、トークン消費を31%削減することに成功しました。\n- **先進規格**: Model Context Protocol (MCP) や、HTTP 402を復活させた決済規格 x402 など、エージェントが自律的に動作するための最新プロトコルを統合しています。",
+    "topics": [
+      "AI Agents",
+      "LLM Optimization",
+      "Web Standards",
+      "Cloudflare Radar",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Introducing the Agent Readiness score. Is your site agent-ready?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:11:00.511050+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIのWeb・モバイルからのリモート操作機能がパブリックプレビューとしてリリース",
+    "url": "https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Copilot CLIに`--remote`フラグが追加され、WebブラウザやGitHubモバイルアプリから実行中のCLIセッションをリアルタイムで監視・操作できるようになりました。",
+    "summaryBody": "GitHubは、Copilot CLIのセッションをブラウザやモバイルから遠隔操作できる新機能「copilot --remote」をパブリックプレビューとして発表しました。これまでローカル環境に限定されていたCopilot CLIの体験が拡張され、CLIで発行されたリンクやQRコードを通じて、他デバイスからエージェントの挙動を監視したり追加の命令（ステアリング）を送ったりすることが可能です。\n\n**主な機能:**\n- **リアルタイム同期:** CLIの動作をGitHub上にストリーミングし、Web/モバイルからリアルタイムで確認・操作可能。\n- **リモート制御:** プランのレビュー・修正、オートパイロット/インタラクティブモードの切り替え、権限リクエストへの承認が遠隔で行えます。\n- **利便性の向上:** 時間のかかるタスクにおいて、`/keep-alive`と併用することで、マシンの前を離れてもモバイルから進捗を確認できます。\n\n利用には最新版へのアップデートと、GitHubリポジトリ内での実行が必要です。Enterpriseユーザーの場合は管理者の設定が必要となります。",
+    "topics": [
+      "GitHub Copilot",
+      "CLI",
+      "Remote Control",
+      "Developer Tools",
+      "GitHub Mobile"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Remote control CLI sessions on web and mobile in public preview - GitHub Changelog"
+  }
+}

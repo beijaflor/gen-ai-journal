@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:39:42.455295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Email Serviceがパブリックベータに移行：AIエージェントのためのメール送受信基盤を構築",
+    "url": "https://blog.cloudflare.com/email-for-agents/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflare Email Serviceがパブリックベータとなり、AIエージェントがWorkersやSDKを通じてシームレスにメールを送受信・処理できる統合環境が整いました。",
+    "summaryBody": "Cloudflareは、これまでプライベートベータとして提供していた「Email Sending」をパブリックベータに移行したことを発表しました。これにより、Cloudflare Workersから直接、APIキーの管理不要でトランザクションメールを送信できるようになります。SPF、DKIM、DMARCの設定は自動化され、配信の信頼性が確保されています。\n\n今回のリリースの核心は「AIエージェントとの統合」にあります。Agents SDKにメール送信バインディングが統合されたことで、エージェントはメールを受け取って処理するだけでなく、非同期に返信したり、長時間かかるタスクの完了を通知したりする「メールネイティブ」な動作が可能になりました。また、MCP（Model Context Protocol）サーバーやWrangler CLI、コーディングエージェント向けの『Skills』、そしてオープンソースの参照アプリ『Agentic Inbox』も提供され、エージェントを介した高度なメールワークフローを即座に構築できる環境が整っています。",
+    "topics": [
+      "Cloudflare Workers",
+      "AIエージェント",
+      "Email Service",
+      "Agents SDK",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Cloudflare Email Service: now in public beta. Ready for your agents"
+  }
+}

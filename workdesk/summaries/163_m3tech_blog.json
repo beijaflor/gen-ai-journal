@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:47:17.160589+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeをサンドボックス環境で安全に実行する手法の検討",
+    "url": "https://www.m3tech.blog/entry/claude-code-sandbox",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」を、セキュリティを考慮しつつDocker等のサンドボックス環境で安全に活用するための技術的アプローチを解説。",
+    "summaryBody": "エムスリーの技術ブログによる、Anthropicが発表したターミナル用AIエージェント「Claude Code」の検証記事です。ローカル環境のファイルを直接操作・実行する機能を持つツールの利便性と、実行に伴うセキュリティリスクのトレードオフに焦点を当てています。具体的には、Dockerコンテナを用いたサンドボックス環境の構築方法、開発用ディレクトリの安全なマウント、環境変数やクレデンシャルの保護、そして実行権限の制限など、実務でAIエージェントを導入する際に不可欠なセキュリティ対策を詳しく紹介しています。LLM駆動の開発自動化における安全性確保のベストプラクティスが学べる内容です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Docker",
+      "セキュリティ",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

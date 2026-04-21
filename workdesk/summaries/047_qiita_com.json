@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:20:24.681985+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mesh-llm：余っているPCのGPUを束ねて巨大LLMを動かす分散推論の新アプローチ",
+    "url": "https://qiita.com/nogataka/items/d6776506848d08815be9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のPCのGPUをネットワークで接続し、VRAM不足で単体では起動できない巨大なLLMを分散推論で動かすRust製ツール「mesh-llm」の仕組みと活用方法を紹介。",
+    "summaryBody": "### 概要\nmesh-llmは、ネットワーク経由で複数のGPUリソースを統合し、単一の高性能な推論エンドポイントとして機能させる分散推論システムです。Rustとllama.cppをベースにしており、OpenAI互換APIを提供します。\n\n### 技術的な特徴\n1. **自動並列化戦略**: Denseモデルにはレイヤーを分割する「パイプライン並列」、MoE（Mixture of Experts）モデルには通信を最小化する「エキスパート並列」を自動適用します。\n2. **MoE最適化**: DeepSeek V3などのMoEモデルでは、各ノードが独立して推論を完結させることで、推論中の通信をゼロにする画期的なアプローチを採用しています。\n3. **ネットワーク設計**: 80msのレイテンシキャップやP2P転送、投機的デコーディングの実装により、家庭用ネットワーク環境でも高いパフォーマンスを発揮します。\n\n### セキュリティと運用\nパブリックメッシュに加え、招待トークンを使用した「プライベートメッシュ」機能を備えており、信頼できるノード間だけでセキュアにリソースを共有できます。Petalsやexoといった既存の分散推論ツールと比較しても、広範なGPUプラットフォーム（CUDA, ROCm, Metal, Vulkan）への対応と、MoEモデルの効率的な運用に強みがあります。",
+    "topics": [
+      "LLM",
+      "GPU",
+      "分散推論",
+      "mesh-llm",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

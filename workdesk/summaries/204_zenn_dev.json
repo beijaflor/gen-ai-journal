@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:36:02.858130+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにおける「ハーネス」概念の混乱と視点別の定義整理",
+    "url": "https://zenn.dev/watany/articles/d8b692bbca65a3",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント開発で使われる「ハーネス」という言葉が、開発者側の内部実装と利用者側の外部環境という異なる文脈で混用されている現状を整理した解説記事。",
+    "summaryBody": "AIエージェントの文脈で急速に普及している「ハーネス（馬具）」および「ハーネスエンジニアリング」という用語の定義が、立場によって大きくズレている現状を分析しています。著者はMartin Fowlerの記事を基に、エージェントの作り手が考慮するLLM以外の実装（LangChainやAnthropicの視点）を「内部ハーネス」、利用者がエージェントに与えるフィードバック環境（Mitchell HashimotoやOpenAIの視点）を「外部ハーネス」と分類しました。\n\nLangChainが「Agent = Model + Harness」と定義して開発ツールを提供する一方で、Anthropicは将来的にモデルが賢くなれば補助的な内部ハーネスは「枷」になると主張しています。また、利用者側（外部ハーネス）の視点では、エージェントが同じミスをしないための設計指針を指しています。記事は、この用語が「自社製品へのロックイン」を狙うベンダーと「実務的な安全利用」を求めるユーザーの間で意味が解離していることを指摘し、安易なバズワードとしての利用に注意を促しています。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "LLM",
+      "LangChain",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

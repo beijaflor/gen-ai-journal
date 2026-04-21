@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:04:15.236551+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの並列作業で「画面に張り付く」をやめるためにやったこと",
+    "url": "https://zenn.dev/pepabo/articles/claude-code-stop-watching-parallel-work",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを複数並列で動かす際の人間側のボトルネック「画面への張り付き」を解消し、5〜6本のワークストリームを自走させるための自動化と運用の工夫を紹介しています。",
+    "summaryBody": "Claude Codeを複数起動しても、承認ダイアログやエラー監視のために人間が画面に拘束されると実質的な生産性は向上しません。この記事では、この「張り付き」を解消するための4つの具体的アプローチを解説しています。\n\n1. **承認の自動化**: `settings.json`での権限設定やhooks（フック）を活用し、git操作やファイル編集の承認待ちを削減。\n2. **タスクのスキル化**: 指示を`.claude/skills/`配下に定義し、判断基準を埋め込むことで、途中で人間に質問させない「丸投げ可能な粒度」に設計。\n3. **非同期スタイルの確立**: ターミナル管理ツール`cmux`を導入し、複数ペインにタスクを投げて完了通知を待つ「投入と回収」のワークフローへ移行。\n4. **マルチエージェント自走設計**: 1つのワークストリーム内で複数のサブエージェント（コード/セキュリティ/テスト等）を並列起動させ、指摘ゼロまで自動修正を繰り返す仕組みの構築。\n\nこれらの工夫により、開発者は「コードを見守る人」から「解決すべき課題を判断する人」へと役割をシフトし、圧倒的な並列作業を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "生産性向上",
+      "cmux"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:19:57.438213+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【後編】PowerPointをJSONに変換してLLMに読ませる ── 実装コードで理解するAIスライド編集",
+    "url": "https://zenn.dev/investaitech/articles/2d4613ed796b90",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "python-pptxを利用してPowerPointをJSON形式に変換し、LLMによる高度なスライド内容の分析や自動編集を実現する実装手法を解説したチュートリアル。",
+    "summaryBody": "本記事は、PowerPointファイルをJSONデータへと分解し、再びスライドとして復元するためのPython実装を詳しく解説した技術記事です。`analyze_pptx`関数によるスライド構造（マスター、レイアウト、シェイプ、テキスト書式）の抽出プロセスから、`create_pptx_from_json`関数を用いたテンプレートへのデータ流し込みまでをコードベースで説明しています。特にTextFrame、Paragraph、Runの3層構造を詳細にJSON化することで、LLMがフォントサイズや色、配置情報を保持したまま編集を行う『ラウンドトリップ』を可能にする点が特徴です。記事内ではアーキテクチャの可視化や、LLMへの具体的なプロンプト例、画像データのBase64処理、トークン制限への配慮といった実践的な注意点も網羅されており、AIを活用したドキュメント生成システムの開発に非常に有用な知見を提供しています。",
+    "topics": [
+      "python-pptx",
+      "LLM",
+      "Python",
+      "JSON",
+      "PowerPoint"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:15:33.113709+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Mythos Previewのサイバー攻撃能力に関するAISIの評価報告",
+    "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの新モデルClaude Mythos Previewが、32段階に及ぶ複雑な企業ネットワーク攻撃シミュレーションを初めて完遂するなど、高度な自律的サイバー攻撃能力を示したことがAISIの評価で判明しました。",
+    "summaryBody": "AI安全研究所（AISI）は、Anthropic社が発表した「Claude Mythos Preview」のサイバーセキュリティ能力に関する評価結果を公開しました。本モデルは従来モデルを大きく上回る性能を示しており、主なポイントは以下の通りです。\n\n- **高度なCTF能力**: エキスパートレベルのCapture-The-Flag（CTF）課題において73%という高い成功率を記録しました。\n- **複雑な攻撃の完遂**: 32段階のステップを要する企業ネットワーク攻撃シミュレーション「The Last Ones (TLO)」において、フロンティアモデルとして初めて最初から最後まで完遂することに成功しました（10回中3回）。\n- **推論スケーリング**: 推論トークン予算を増やすことで性能が向上する傾向が見られ、1億トークンまでのスケールが確認されています。\n- **現実的な制約**: 一方で、能動的な防御（セキュリティ監視やインシデント対応）が存在しない環境での評価であるため、強固な防御を持つシステムへの有効性は未知数です。\n\nAISIは、AIが脆弱なシステムに対する自律的な脅威となり得る段階に達したと警鐘を鳴らし、組織に対してはパッチ適用やアクセス制御などの「セキュリティの基本」を徹底することを推奨しています。",
+    "topics": [
+      "Claude Mythos Preview",
+      "AISI",
+      "サイバーセキュリティ",
+      "AIレッドチーミング",
+      "自律的エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 50,
+      "overall": 92
+    },
+    "originalTitle": "Our evaluation of Claude Mythos Preview’s cyber capabilities"
+  }
+}

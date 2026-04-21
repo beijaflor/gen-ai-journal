@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:58:29.902295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによるコード生成の高速化と、検証不全を解決する「品質工学」の再導入",
+    "url": "https://www.oreilly.com/radar/ai-is-writing-our-code-faster-than-we-can-verify-it/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIが人間による検証速度を超えてコードを生成し、信頼性が低下している現状に対し、50年前の「品質工学」をAI自身に実行させることで開発の信頼性を担保する新手法を提案している。",
+    "summaryBody": "AIによる開発革命の裏側で、経験豊富な開発者の間ではAI生成コードへの信頼が急落しています。AIは人間が一行ずつ検証するよりも遥かに速くコードを生成するため、開発者は「AIを盲目的に信頼する」か「多大な時間をかけて手動レビューする」かという不毛な二択を迫られています。筆者のAndrew Stellman氏はこの問題を解決するため、1960年代の『ソフトウェア危機』への回答として生まれた『品質工学（Quality Engineering）』を現代に復活させるべきだと主張します。かつてはコストの問題で廃れたQE（要件に紐づくテスト計画やトレーサビリティの確保）ですが、AIエージェントにこれらの構造化されたタスクを担わせることで、安価かつ高速に実行可能になります。筆者が公開した『Quality Playbook』は、GitHub CopilotやClaude Code等のツールと連携し、既存コードやチャットログから要件を抽出し、テストマトリックスやコードレビュー・プロトコル、バグ報告書などの『品質インフラ』を自動生成します。AIに単にコードを書かせるのではなく、AIに検証プロセスを管理させることで、信頼性を伴ったAI駆動開発（AIDD）の実現を目指しています。",
+    "topics": [
+      "生成AI",
+      "品質工学 (Quality Engineering)",
+      "ソフトウェア開発プロセス",
+      "エージェントエンジニアリング",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "AI Is Writing Our Code Faster Than We Can Verify It"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:36:16.511062+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "結局OpenClawとClaude Code、どっちを使えばいいの？に自分なりの結論を出した",
+    "url": "https://zenn.dev/masarufuruya/articles/0f72fa7b765888",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "OpenClawとClaude Codeを比較し、セキュリティリスクと運用負荷の観点からClaude Codeを推奨する実務者による分析。",
+    "summaryBody": "AIエージェントの代表格であるOpenClawとClaude Codeを、アーキテクチャ、セキュリティ、運用コストの観点から比較した記事です。OpenClawは複数チャネル統合や高い拡張性を持つ一方で、OSへの広範なアクセス権限に起因する深刻な脆弱性（CVE-2026-25253等）や、エコシステム（ClawHub）におけるサプライチェーン攻撃のリスクが指摘されています。著者は、個人・組織の両面でセキュリティ対策を自前で維持するコストが過大であると判断し、現時点ではClaude Codeをメインに据え、OpenClawは設計の参考にするに留めるという結論を導き出しています。具体的なDocker隔離設定やサンドボックス化の推奨手法についても詳しく解説されています。",
+    "topics": [
+      "OpenClaw",
+      "Claude Code",
+      "AIエージェント",
+      "セキュリティ",
+      "比較レビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

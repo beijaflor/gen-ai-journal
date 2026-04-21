@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:35:20.040890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PRを出すだけでスクショ付き動作確認レポートが自動生成される仕組みを作る（Claude × Playwright）",
+    "url": "https://zenn.dev/datum_studio/articles/ebefce70f39a0d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHubのPull Request作成時に、Markdownの手順書に従ってClaude CodeとPlaywrightが自動でアプリを操作し、スクショ付きHTMLレポートを生成・通知するCI/CDフローの構築手法。",
+    "summaryBody": "この記事では、エンジニアの動作確認作業を効率化するため、Claude CodeとPlaywrightをGitHub Actionsに統合し、PR作成時に動作確認レポートを自動生成する仕組みを解説しています。\n\n### 主な特徴と構成\n1. **日本語手順書の自動解釈**: `docs/operation_check.md`に記載した日本語の操作手順を、Claude Codeのスキル（SKILL.md）が読み取り、Playwrightのコマンドに変換して実行します。\n2. **プライバシーに配慮したレポート生成**: スクリーンショットをBase64エンコードしてHTMLに直接埋め込み、GitHub Artifactとして保存することで、外部の画像ホスティングを使わずに安全な証跡管理を実現しています。\n3. **GitHub Actionsへの最適化**: 非対話モード（`-p`フラグ）での実行、ツールの自動承認（`--allowedTools`）、日本語フォントのインストール、Streamlitのバックグラウンド起動とヘルスチェック待機など、CI環境で安定動作させるための具体的な Tips が紹介されています。\n\nこの仕組みを導入することで、開発者は手順書をコミットするだけで、複雑なUI操作を伴う動作確認とエビデンス作成をAIに任せることが可能になります。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "GitHub Actions",
+      "Streamlit",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

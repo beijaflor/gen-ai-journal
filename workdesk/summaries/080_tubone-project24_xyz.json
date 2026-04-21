@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:11:15.126386+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP AppsでMIDIの譜面をリアルタイムに可視化する",
+    "url": "https://tubone-project24.xyz/2026/04/11/midi-mcp-server-mcp-apps/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCP Apps仕様を活用し、Claude.ai上でAIが生成するMIDIデータをリアルタイムに可視化・再生・制御するインタクティブなMCPサーバーの実装解説。",
+    "summaryBody": "2026年1月にリリースされたMCPの新拡張仕様「MCP Apps」を用いた、MIDI譜面のリアルタイム可視化サーバー「midi-mcp-server」の開発記です。従来のテキストベースのMCPとは異なり、サンドボックス化されたiframe内でリッチなHTML UIを提供する方法を詳しく解説しています。特に、LLMがツール引数のJSONを生成している途中にUIを更新する「プログレッシブレンダリング」の仕組み（ontoolinputpartial）や、base64データなどの重いデータをLLMのトークンを消費せずにViewへ渡す「structuredContent」の活用、さらにはView側からClaudeへ再指示を出す「sendMessage」や「callServerTool」による双方向通信など、最新のAIエージェント向けUI実装のベストプラクティスが網羅されています。",
+    "topics": [
+      "MCP Apps",
+      "Model Context Protocol",
+      "MIDI",
+      "Claude.ai",
+      "AI Agent UI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:29:10.355834+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude の Advisor tool を活用して性能とコストのバランスを最適化する",
+    "url": "https://azukiazusa.dev/blog/claude-advisor-tool/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのAdvisor toolを使い、軽量モデルによる実行と高性能モデルによる助言を組み合わせることで、開発コストを抑えつつ高い品質を維持する手法の解説。",
+    "summaryBody": "Claudeに追加された「Advisor tool」は、通常タスクをSonnetやHaikuなどの軽量・安価なモデルに担当させ、複雑な問題が発生した際のみOpusなどの高性能モデルに「相談」してフィードバックを得る仕組みです。これはエージェント・オーケストレーションにおけるタスク委任の発想を逆転させたもので、共有コンテキストを元に計画の修正やリスク指摘を受けることができます。Claude Code v2.1.101以降では `/advisor` コマンドで利用可能。記事ではSvelteコンポーネントのリファクタリングを例に、実行モデル（Sonnet）が気づかなかったDOMクリーンアップの漏れやグローバルクエリのリスクを、Advisorモデル（Opus）が的確に指摘し、実装精度を向上させる様子を詳しく紹介しています。",
+    "topics": [
+      "Claude Code",
+      "Advisor tool",
+      "LLMコスト最適化",
+      "Claude 3 Opus",
+      "Svelte"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:32:17.028889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub CLIに「gh skill」コマンドが登場：AIエージェントのスキルの発見・管理・公開を効率化",
+    "url": "https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub CLIに新機能「gh skill」が追加され、GitHub CopilotやClaude Code等のAIエージェント用スキルのインストールやバージョン管理、セキュアな公開が容易になりました。",
+    "summaryBody": "GitHubは、AIエージェント（Copilot, Claude Code, Cursorなど）の挙動をカスタマイズする「エージェントスキル」を管理するための新しいCLIツール「gh skill」を発表しました（v2.90.0以降）。これまで煩雑だったスキルの導入プロセスを簡素化し、`gh skill install`コマンド一つでリポジトリからスキルを検索・インストールできます。\n\n本機能の核となるのは、オープンな「Agent Skills」仕様への準拠とサプライチェーンの安全性向上です。インストールされたスキルは、SKILL.md内のフロントマターにGitツリーSHAやリポジトリ情報などのメタデータを保持し、プロベナンス（由来）を追跡可能です。また、特定のタグやコミットSHAへの「ピン留め」機能により、意図しないスキルの更新を防ぎ、安全性を担保します。\n\n開発者は`gh skill publish`を使用することで、自作のスキルが仕様を満たしているか検証し、タグ保護やシークレットスキャンが有効な安全な状態でGitHubへ公開できます。このツールセットにより、AIエージェントの能力拡張がよりポータブルかつ信頼性の高いものとなります。",
+    "topics": [
+      "GitHub CLI",
+      "AIエージェント",
+      "GitHub Copilot",
+      "Agent Skills",
+      "サプライチェーンセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Manage agent skills with GitHub CLI"
+  }
+}

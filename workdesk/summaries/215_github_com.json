@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:33:05.483899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "IAM Policy Autopilot: AWS IAMポリシー自動生成・修正ツール",
+    "url": "https://github.com/awslabs/iam-policy-autopilot",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ソースコードの静的解析からAWS IAMポリシーのベースラインを自動生成し、MCPサーバーとしてAIアシスタントとの連携も可能なオープンソースツール。",
+    "summaryBody": "IAM Policy Autopilotは、AWSラボが公開したオープンソースの静的解析ツールです。アプリケーションコード内でのAWS SDK呼び出しを解析し、最小権限の原則に基づいたIAMポリシーのベースラインを自動作成します。Python、Go、TypeScript、JavaScript、Javaに対応しており、CLIだけでなくModel Context Protocol (MCP) サーバーとしても機能します。これにより、Claude DesktopなどのAIコーディングアシスタントが直接ツールを呼び出し、開発文脈に合わせたポリシー生成や、AccessDeniedエラーの修正案をリアルタイムで提示することが可能になります。手動での煩雑な権限設定やデバッグ時間を大幅に短縮し、開発初期段階からのセキュリティ確保を支援します。",
+    "topics": [
+      "AWS",
+      "IAM",
+      "Security",
+      "MCP",
+      "Static Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - awslabs/iam-policy-autopilot: IAM Policy Autopilot is an open source static code analysis tool"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:40:38.024098+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Friends Don't Let Friends Use Ollama - 人気ツールの裏側に潜む帰属軽視と囲い込みの歴史",
+    "url": "https://sleepingrobots.com/dreams/stop-using-ollama/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ローカルLLM実行ツールの代表格であるOllamaが、基盤技術llama.cppへの帰属を隠蔽し、不完全な独自フォークやクラウドへの転換、VC主導の囲い込みを行っているとして、その利用を控えるよう警鐘を鳴らす批判記事。",
+    "summaryBody": "Ollamaは、llama.cppを簡単に扱えるラッパーとして普及しましたが、その成功の裏でオープンソースの倫理に反する行動を繰り返してきたと著者は主張します。主な批判点は以下の通りです。まず、長期間にわたり基盤エンジンであるllama.cppの著作権表示や謝辞を怠り、ライセンス違反に近い状態を放置しました。次に、2025年に安定性を理由に独自のバックエンドへ移行しましたが、結果として本家で解決済みのバグを再発させ、パフォーマンスが大幅に低下（一部モデルで30〜70%の差）しました。また、DeepSeek-R1の蒸留版をフルモデルのように表示してユーザーを誤導したことや、独自の「Modelfile」形式による非効率な管理、クローズドソースなGUIアプリの導入、そしてプライバシー上の懸念があるクラウドサービスへの傾倒も指摘されています。結論として、著者はOllamaを「VCマネーと他人の技術に乗っかった寄生的な製品」と切り捨て、llama.cppの直接利用や、Jan、LM Studioといった誠実な代替手段への移行を強く推奨しています。",
+    "topics": [
+      "Ollama",
+      "llama.cpp",
+      "Open Source Ethics",
+      "Local LLM",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Friends Don't Let Friends Use Ollama"
+  }
+}

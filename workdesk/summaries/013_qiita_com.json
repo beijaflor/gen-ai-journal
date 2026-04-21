@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:28:28.194995+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ComfyUIをTensorRTで爆速化！LoRAもAnima2Bも自由に使えるカスタムノード『ComfyUI-TensorRT-Reforge』を作ってみた",
+    "url": "https://qiita.com/zaochuan5854/items/f7b625bb9df5f4742b61",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "NVIDIA TensorRTを利用してComfyUIの生成速度を劇的に向上させつつ、Refit技術によりLoRAの適用やモデル切り替えも柔軟に行えるカスタムノードの紹介。",
+    "summaryBody": "### 概要\nComfyUIでTensorRTによる高速推論を実現しながら、従来技術では困難だったLoRAの適用やAnima2Bなどの特定モデルへの対応を可能にするカスタムノード「ComfyUI-TensorRT-Reforge」の解説記事です。開発者自ら、導入方法から技術的な仕組みまでを網羅しています。\n\n### 主な特徴\n- **高速化と柔軟性の両立**: TensorRTの「Refit」機能を活用することで、エンジンを再構築することなくLoRAの重みを数秒で更新可能です。\n- **幅広いモデル対応**: SD1.5、SDXL、SD3、Flux、SVDに加え、Anima2BやAuraFlowなどの最新モデルもサポートしています。\n- **シンプルなワークフロー**: モデルを変換・保存する「Exporter」と、変換済みモデルを読み込む「Loader」の2つのノードで構成されています。\n\n### 技術的ポイント\nTensorRTは特定のGPUに最適化された静的なエンジンですが、本ツールは内部の「重み」だけを高速に書き換えるRefit技術を採用しています。これにより、「TensorRTの圧倒的なスピード」と「LoRAによる柔軟な表現」という、これまでトレードオフの関係にあった二つの要素を両立させています。",
+    "topics": [
+      "ComfyUI",
+      "TensorRT",
+      "LoRA",
+      "Stable Diffusion",
+      "画像生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

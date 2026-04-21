@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:27:27.037462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGENTS.mdをベストプラクティスに沿って自動更新する自作スキルとhook設定がいい感じ",
+    "url": "https://zenn.dev/ryonakae/articles/338f63fb030267",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのAgent-based hookと自作スキルを組み合わせ、AIコーディングエージェント用の指示書「AGENTS.md」を実装完了時やコミット時に自動更新する仕組みの紹介。",
+    "summaryBody": "AIコーディングエージェントの指示を記述する「AGENTS.md」の保守コストを削減するための自動化手法について解説しています。主な仕組みとして、Claude Codeの「Stop Hook」でAgent-based hookを活用し、実装が完了したタイミングでAIが自動的にドキュメント更新の必要性を判断します。更新の際は、指示を簡潔に保ち段階的に情報を開示するというベストプラクティスに基づいた「doc-updater」スキルを実行。さらに、独自の「commit-push」スキルにもこの更新処理を組み込むことで、手動修正による情報の乖離も防いでいます。トークン消費や処理時間の増加というトレードオフはあるものの、ドキュメントの陳腐化を防ぎ、常に最適なエージェント動作環境を維持できる点がメリットです。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "AGENTS.md",
+      "Automation",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

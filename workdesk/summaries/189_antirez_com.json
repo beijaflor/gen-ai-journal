@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:40:04.030273+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによるサイバーセキュリティは「プルーフ・オブ・ワーク」ではない：モデルの知能こそが決定打",
+    "url": "https://antirez.com/news/163",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる脆弱性発見は単なる計算量（PoW）の勝負ではなく、モデルの「知能指数（I）」が物理的な上限になるというRedis開発者antirez氏による考察。",
+    "summaryBody": "Redisの作者Salvatore Sanfilippo (antirez) 氏は、AIを用いた脆弱性探索を「プルーフ・オブ・ワーク（PoW）」になぞらえるのは誤りだと指摘します。ハッシュ衝突のように試行回数を増やせば解決する問題とは異なり、脆弱性の発見には高度な論理推論が必要です。OpenBSDのSACKバグを例に挙げ、低性能なモデルはパターンの類似性から「幻覚」的にバグを当てることはあっても、複雑な論理構造を理解して脆弱性を特定することはできません。知能が不足しているモデルをいくら長時間稼働させても、ある一点から先へは到達できない「知能の壁」が存在します。結論として、将来のサイバーセキュリティの優位性は、コンピューティングパワーの量ではなく、より高度な知能を持つモデルへのアクセススピードによって決まると論じています。",
+    "topics": [
+      "AIセキュリティ",
+      "脆弱性探索",
+      "LLM",
+      "推論能力",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 88
+    },
+    "originalTitle": "AI cybersecurity is not proof of work"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:25:57.770740+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "設計書・コード・テストを全部AIに書かせて半年間開発してみたよ",
+    "url": "https://zenn.dev/nttdata_tech/articles/8a010aff542625",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NTTデータのエグゼクティブITアーキテクトが、GitHub Copilotを活用して人間が1行も書かない「AIネイティブ開発」を半年間実践し、その成果と課題を詳解。",
+    "summaryBody": "NTTデータ所属の部長クラスエンジニアが、スクラッチ開発案件においてGitHub Copilotを中心とした「AIネイティブ開発」を半年間実施した実録です。社員3名は設計・コード・テストコードを一切手書きせず、AIエージェントへの指示と成果物のレビュー、およびプロンプト環境（.github配下に133ファイル、9000行に及ぶ規約・指示書）の整備に専念しました。要件定義ではモックベースのバイブコーディングを採用し、設計以降は属人性を排除するためコマンド駆動の開発を徹底。生産性は「にわかに信じがたい」レベルに向上した一方で、単体・結合テスト工程でのテスト観点漏れやバグ流出といった課題も浮き彫りになりました。記事では、OpenAIが提唱する「ハーネスエンジニアリング」との親和性や、AIを使いこなす能力が若手育成に極めて有効であるという洞察が述べられています。",
+    "topics": [
+      "AIネイティブ開発",
+      "GitHub Copilot",
+      "ハーネスエンジニアリング",
+      "プロンプトエンジニアリング",
+      "ソフトウェア開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

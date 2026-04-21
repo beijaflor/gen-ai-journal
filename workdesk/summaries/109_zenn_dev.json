@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:02:34.918637+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WriteBack-RAG: 検索・回答結果をナレッジとして書き戻し、RAGの精度を継続的に向上させる新手法",
+    "url": "https://zenn.dev/knowledgesense/articles/5a50d06fce072d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "検索・生成過程で得られた有益な情報をAIで1つに凝縮し、ナレッジベースへ書き戻すことで、利用するほど精度が向上するRAGの新手法「WriteBack-RAG」の解説。",
+    "summaryBody": "本記事は、北京大学などの研究チームが提案したRAGの精度向上手法「WriteBack-RAG」について解説しています。従来のRAGやAgentic RAGは、複数の文書から情報を集めて回答を生成しても、その知見を再利用せず捨ててしまうという効率性の課題がありました。WriteBack-RAGは、過去の検索結果から回答に貢献した文書を特定し、それらをLLMによって1つのコンパクトな文書に「蒸留（Distillation）」し、ナレッジベースに「書き戻す（Write-Back）」ことで、次回以降の検索精度と効率を向上させます。実験では、FEVERやNQなどのベンチマークにおいて平均2.14%の性能向上が確認され、文書量も2〜7倍に圧縮される成果が出ています。企業内の散らばったナレッジを自動で整理・統合し続けるRAGシステム構築において、非常に実用的なアプローチです。",
+    "topics": [
+      "RAG",
+      "WriteBack-RAG",
+      "LLM",
+      "ナレッジマネジメント",
+      "情報検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "【RAG】企業のナレッジを、AIで書き直す。"
+  }
+}

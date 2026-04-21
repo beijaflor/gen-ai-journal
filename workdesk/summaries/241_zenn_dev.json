@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:26:11.868365+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.7のReact習熟度をさっそく測る",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.7はReactベンチマークで平均75.4点を記録し、最新APIの採用やアクセシビリティの改善によってGPT-5.4を抜き首位に立った。",
+    "summaryBody": "uhyo氏によるReact習熟度ベンチマークシリーズの第4弾。2026年4月にリリースされた最新モデル「Claude Opus 4.7」を13のコーディング仕様で評価した結果、平均スコアは75.4に達し、これまでの最高点だったGPT-5.4（71.5）を更新した。特に、長らくClaudeシリーズの弱点とされていたアクセシビリティスコアが大幅に改善（2.46→3.38）し、さらに指示なしで `useSyncExternalStore` や `useActionState` といった最新のReact APIを適切に選択・利用できるようになった点が特徴的である。一方で、一部の課題（ツリー構造の実装など）ではOpus 4.6からスコアが低下する「リグレッション」も見られ、大規模なコンポーネント分割の甘さや、Suspenseを利用したデータフェッチ、useOptimisticなどの特定APIへの未到達といった課題も浮き彫りになった。全体として、LLMによるReactコード生成能力が着実に進歩していることを示す内容となっている。",
+    "topics": [
+      "Claude Opus 4.7",
+      "React",
+      "ベンチマーク",
+      "LLM",
+      "アクセシビリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

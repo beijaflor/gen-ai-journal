@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:19:42.209951+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Coding AgentをRustで自作してみた",
+    "url": "https://zenn.dev/epicai_techblog/articles/0fb630fc14af7e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Rust言語とRigフレームワークを用いて、ファイル操作やターミナル実行が可能なミニマルなコーディングエージェントを自作し、実用的なエージェントに求められるソフトウェア基盤の重要性を考察した記事。",
+    "summaryBody": "この記事では、RustとAI SDK「Rig」を用いて、自律的にコーディングを行うCLIツール「Microde CLI」を開発する過程が詳しく解説されています。コーディングエージェントの骨子となる「ファイル検索・ファイル操作・ターミナル実行」という3つの能力をbash、read、grep、glob、writeといったツールとして実装し、LLM（Claude 3.5/4.6 Sonnet想定）との対話ループを構築しています。また、単なるプロンプトエンジニアリングに留まらず、トークン消費量に基づいたコンテキスト圧縮（コンパクション）や、ユーザーによるツール実行承認フローの設計、システムプロンプトの動的構築など、エージェントを安定稼働させるためのバックエンド実装に深く踏み込んでいます。最終的にブロック崩しゲームを作成させるデモを通じて、実用的なエージェントには「ツール付きLLMループ」以上の、セキュリティ・拡張性・UI/UXを包含した高度なソフトウェア基盤が必要であるという結論を導き出しています。",
+    "topics": [
+      "Rust",
+      "AI Agent",
+      "Rig",
+      "Claude",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Coding AgentをRustで自作してみた"
+  }
+}

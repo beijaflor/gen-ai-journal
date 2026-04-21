@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:42:51.432844+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "超巨大言語モデル（LLM）を実行するための基盤構築：Cloudflareの技術詳解",
+    "url": "https://blog.cloudflare.com/high-performance-llms/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが、1兆パラメータ規模の超巨大LLMをWorkers AI上で効率的に動作させるための、独自推論エンジン「Infire」やPD分離、マルチGPU最適化技術を解説。",
+    "summaryBody": "Cloudflareは、エージェント利用の増加に伴う長文コンテキスト処理を最適化するため、Workers AIのインフラ基盤を大幅に強化した。主な施策として、計算負荷の高いプリフィル（入力処理）とメモリ帯域が重要なデコード（出力生成）を分離する「PD分離（Prefill Decode Disaggregation）」を導入し、レイテンシを3分の1に短縮。また、Mooncake Transfer Engineを活用したGPU間KVキャッシュ共有や、NVIDIA EAGLE-3による投機的デコードの実装により、推論速度を向上させた。特に独自開発のRust製推論エンジン「Infire」は、1兆パラメータを超えるKimi K2.5モデルを8枚のH100 GPUで実行可能にするなど、メモリ効率と起動速度において既存のvLLMを凌駕する性能を実現している。",
+    "topics": [
+      "Workers AI",
+      "LLM推論最適化",
+      "GPUインフラ",
+      "Kimi K2.5",
+      "Infire"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 90
+    },
+    "originalTitle": "Building the foundation for running extra-large language models"
+  }
+}

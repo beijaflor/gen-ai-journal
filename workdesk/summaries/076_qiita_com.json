@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:12:23.854044+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeソースコード流出から学ぶハーネスパターン10選 ── 50万行のTypeScriptが明かした設計思想",
+    "url": "https://qiita.com/nogataka/items/ebbbe74649eb441a34db",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年に発生したClaude Codeのソースコード流出から判明した、AIエージェントの性能を支える「ハーネス（制御層）」の10の設計パターンと、その実践的な応用方法を詳説する。",
+    "summaryBody": "2026年3月に発生したAnthropic社のAIエージェント「Claude Code」のソースコード流出事件を背景に、プロダクショングレードのAIエージェントにおいて、モデル以上に重要とされる「ハーネス（制御層）」の設計思想を分析した記事です。約51万行のTypeScriptコードから特定された10のパターン（モデルと制御の分離、統一ツール契約、3層メモリ管理、プロンプトキャッシュ最適化、多層パーミッションなど）について、具体的な実装意図やセキュリティ対策、コスト削減手法が解説されています。また、未出荷の自律型機能「KAIROS」や計画オフロード機能「ULTRAPLAN」についても触れられており、モデルの賢さに依存せず、いかにして信頼性の高いシステムを構築するかという「ハーネスエンジニアリング」の本質を提示しています。最後には、個人開発者がCLAUDE.md等で今日から活用できる具体的な設計チェックリストも掲載されています。",
+    "topics": [
+      "ClaudeCode",
+      "AIエージェント",
+      "TypeScript",
+      "ソフトウェアアーキテクチャ",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

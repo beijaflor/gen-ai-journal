@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:11:49.799147+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Max 20xプランでも足りないので、トークン節約のためにやったこと8選",
+    "url": "https://zenn.dev/acntechjp/articles/1396e20b5167ce",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Max 20xプランの利用枠を使い切る課題に対し、Jupytextの活用や「原始人」的な会話スタイルなど、コンテキストエンジニアリングの観点からトークン消費を劇的に減らす8つの実践的手法を紹介しています。",
+    "summaryBody": "この記事は、Claude Code等のエージェント利用におけるトークン消費の最適化を、単なるコスト削減ではなく「コンテキストエンジニアリング」の一環として解説しています。具体的には、1) .claude/設定の整理、2) 敬語や冗長表現を排除する「原始人会話」の導入、3) Jupyter Notebookの巨大なトークン消費を抑えるためのJupytextによる.py同期、4) セッションの適宜リセットとスキル分割、5) ローカルLLMを用いたRAGによる情報探索のオフロード、6) 役割に応じたモデル（Haiku等）の使い分け、7) sandboxによる探索範囲制限、8) .claudeignoreの徹底という8つのアプローチを提示しています。これらはトークン節約だけでなく、ノイズを減らすことでClaudeの推論精度向上にも直接寄与する実践的な知見です。",
+    "topics": [
+      "Claude Code",
+      "コンテキストエンジニアリング",
+      "トークン節約",
+      "Jupytext",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

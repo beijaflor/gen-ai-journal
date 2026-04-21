@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:57:58.704452+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareの全スタックを操作するAIインターフェース「Agent Lee」が登場",
+    "url": "https://blog.cloudflare.com/introducing-agent-lee/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、自然言語でアカウントのトラブルシューティング、設定変更、リソース展開を可能にするダッシュボード統合型AIエージェント「Agent Lee」を発表しました。",
+    "summaryBody": "Cloudflareが発表した「Agent Lee」は、従来の複雑なダッシュボード操作を自然言語での対話に置き換える新しいインターフェースです。このエージェントは、ユーザーのアカウント構成（Workers、DNS、R2、キャッシュ等）を完全に把握しており、障害発生時の原因特定から、実際の修正・デプロイまでを単一のプロンプトで実行できます。\n\n技術面では、LLMの精度を高めるために「Codemode」を採用しており、MCPツール定義をTypeScript APIに変換してコードとして実行します。セキュリティ面では、Durable Objectsが資格情報プロキシとして機能し、書き込み操作には必ずユーザーの明示的な承認（Elicitation gate）を必要とするアーキテクチャを採用しています。また、チャット内でグラフや動的なテーブルを生成する「ジェネレーティブUI」により、分析ページへ移動することなく状況を把握可能です。現在はFreeプランのユーザー向けにベータ版として提供されています。",
+    "topics": [
+      "Cloudflare",
+      "AI Agent",
+      "Agent Lee",
+      "Developer Tools",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Agent Lee - a new interface to the Cloudflare stack"
+  }
+}

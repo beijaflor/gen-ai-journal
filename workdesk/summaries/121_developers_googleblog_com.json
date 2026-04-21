@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:59:01.571724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini CLIにサブエージェント機能が登場：複雑なタスクの並列処理とコンテキスト管理を実現",
+    "url": "https://developers.googleblog.com/subagents-have-arrived-in-gemini-cli/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemini CLIが、独立したコンテキストとツールを持つ専門の「サブエージェント」へのタスク委譲および並列実行に対応しました。",
+    "summaryBody": "GoogleはGemini CLIに「サブエージェント」機能を導入しました。これは、メインのエージェントがオーケストレーターとして機能し、特定のタスクを専門的なサブエージェントに振り分ける仕組みです。各サブエージェントは独自のシステム指示、MCPサーバー、ツールセット、コンテキストウィンドウを持って動作するため、メインセッションのコンテキスト肥大化を防ぎ、効率的かつ低コストな操作を維持できます。また、複数のサブエージェントを同時に走らせる並列実行にも対応しており、大規模なリサーチやリファクタリングを高速化します。ユーザーはMarkdownファイルを使用してカスタムサブエージェントを定義でき、`@agent`構文で明示的に呼び出すことも可能です。",
+    "topics": [
+      "Gemini CLI",
+      "AI Agents",
+      "LLM Context Management",
+      "Developer Productivity",
+      "Google AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Subagents have arrived in Gemini CLI"
+  }
+}

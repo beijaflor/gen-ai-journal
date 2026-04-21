@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:23:14.854553+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "認知科学でAI秘書の記憶を再設計したら別人になった話【プロンプト付き】",
+    "url": "https://note.com/hatakejp/n/naae38195e8d8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "認知科学の記憶モデル（符号化・保持・忘却・想起）をAIエージェント設計に応用し、情報を捨てる仕組みと多角的スコアリングによる想起を導入してAIの精度を劇的に向上させる手法。",
+    "summaryBody": "Ubieのプロダクトデザイナーであるはたけ氏が、AI秘書の「記憶が整理されず精度が落ちる」という課題を認知科学の知見で解決したプロセスを解説。Atkinson & Shiffrinの多重貯蔵モデルをベースに、符号化・保持・忘却・想起の4段階をAIのコンテキスト管理に実装。特に『忘却（TTLによる削除と重要情報の昇格）』と『想起（Recency, Importance, Relevanceによるスコアリング）』の設計に注力し、情報をエピソード記憶・意味記憶・手続き記憶の3種に分類して別ファイルで管理する構成を提案しています。記事後半ではCLAUDE.md等に貼り付けて即利用可能な「AI記憶設計スターターキット」や、自身の状況に合わせた記憶設計をAIと対話しながら作成できるプロンプトも公開されています。",
+    "topics": [
+      "AIエージェント",
+      "認知科学",
+      "プロンプトエンジニアリング",
+      "Claude",
+      "コンテキスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

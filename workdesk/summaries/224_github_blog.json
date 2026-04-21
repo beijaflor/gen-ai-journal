@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:30:38.098948+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIを活用した絵文字リスト生成ツールの構築",
+    "url": "https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIのPlan modeやマルチモデル機能を活用し、箇条書きテキストにAIが最適な絵文字を付与してクリップボードにコピーする実用的なCLIツールの開発工程を紹介しています。",
+    "summaryBody": "GitHubのライブ配信「Rubber Duck Thursdays」で制作された、箇条書きリストに自動で絵文字を添えるツール「Emoji List Generator」の開発レポートです。本プロジェクトでは、GitHub Copilot CLIの「Plan mode」を使用して、Claude Sonnet/Opus（記事内では将来のバージョンとして言及）等のモデルを使い分けながら、設計から実装までをAI主導で行っています。技術スタックには、ターミナルUIのための`@opentui/core`、AI連携の`@github/copilot-sdk`、クリップボード操作の`clipboardy`が採用されており、最新のCopilot機能である「Autopilot mode」や「GitHub MCP server」を組み合わせたモダンな開発フローが解説されています。ツールのソースコードはオープンソースとして公開されています。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "GitHub Copilot SDK",
+      "Generative AI",
+      "CLI Tool Development",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "Building an emoji list generator with the GitHub Copilot CLI"
+  }
+}

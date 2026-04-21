@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:26:32.719747+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-browser入門：Claude Codeからブラウザを自在に操る！導入＆他ツール使い分けガイド",
+    "url": "https://zenn.dev/shinyaa31/articles/082457e115885c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercel Labsが開発したAIエージェント向けブラウザ自動化CLI「agent-browser」の導入からClaude Codeでの活用、Playwright等との使い分けまでを解説したガイド。",
+    "summaryBody": "Vercel Labsが開発したAIエージェント向けブラウザ操作ツール「agent-browser」の解説記事です。Rust実装による高速な動作が特徴で、アクセシビリティツリーを利用したスナップショット機能により、AIがDOM構造を把握しやすく設計されています。記事では、npmを用いた導入手順から、Claude Codeを用いた自然言語指示による「Hacker Newsのタイトル取得」「GitHub検索結果の保存」「セッション管理によるログイン状態の維持」といった実践的なユースケースを紹介しています。また、PlaywrightやBrowser Useといった既存ツールとの比較表やフローチャートを掲載し、決定論的な操作を求めるならPlaywright、AIによる柔軟な判断が必要ならagent-browserといった具体的な使い分け基準を提示しています。特にClaude CodeのBashツール経由で直接呼び出す際の親和性が高く強調されています。",
+    "topics": [
+      "agent-browser",
+      "Claude Code",
+      "AIエージェント",
+      "ブラウザ自動化",
+      "Vercel"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

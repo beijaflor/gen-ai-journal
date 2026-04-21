@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:43:51.323857+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェントAIのデバッグ：エージェント間の「隙間」で生じる失敗の特定方法",
+    "url": "https://blog.sentry.io/debugging-multi-agent-ai-when-the-failure-is-in-the-space-between-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エージェント間の情報の連鎖によって生じるサイレントな失敗を、各境界でのプロンプトやツール実行結果の可視化を通じて特定するマルチエージェント・オブザーバビリティの手法を解説する。",
+    "summaryBody": "マルチエージェントAIシステムにおいて、個々のエージェントが正常に動作していても、エージェント間の不十分な情報伝達やツールの精度の差によって最終的な出力が損なわれる「サイレントな連鎖的失敗」が大きな課題となっています。本記事では、Sentryの開発者が自身の研究システム（Advocate、Skeptic、Synthesizerの3エージェント構成）での実体験をもとに、片方のエージェントの検索ツールが貧弱だったために最終的な合成結果が偏ってしまった事例を分析しています。主要なマルチエージェント・パターン（オーケストレーター型、並列マージ型、ピア・ハンドオフ型）ごとの故障箇所を特定し、解決策として「エージェント境界でのプロンプト/レスポンスのキャプチャ」「エージェント別のコストと信頼性の追跡」「100%のサンプリング率によるトレース」を推奨しています。また、SentryのSDKを用いた自動計装のコード例や、エージェントごとのトークン使用量やエラー率を可視化するカスタムダッシュボードの構築方法も紹介されており、実戦的なデバッグ指針を提供しています。",
+    "topics": [
+      "マルチエージェントAI",
+      "LLM",
+      "オブザーバビリティ",
+      "Sentry",
+      "デバッグ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Debugging Multi-Agent AI: When the Failure is in the Space Between Agents"
+  }
+}

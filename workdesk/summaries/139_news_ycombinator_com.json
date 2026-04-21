@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:54:26.346634+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe Codingが失敗する理由：LLMによる過剰エンジニアリングの罠と人間の役割",
+    "url": "https://news.ycombinator.com/item?id=47778946",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIに丸投げする「Vibe Coding」は、本質的な問題を解決せずに一見「それっぽい」だけの複雑で無意味な過剰エンジニアリングを招くリスクがある。",
+    "summaryBody": "Hacker Newsで話題となった、AI主導の開発（Vibe Coding）の限界に関する実体験に基づく考察です。筆者は、Claudeを使用してエージェントのループを構築する中で、技術的知識やアーキテクチャの理解が欠如した状態でのAI開発がなぜ失敗するかを分析しています。\n\nAIはしばしば「一見すると優れたエンジニアリング」に見える、複雑で無駄な解決策を提案します。例えば、システムの設計上不要なデータ保存の追加や、エラーではない状態を「修正」するために新たなリスクを生む合成データの作成などです。AIは「その修正が本当に重要か？」という根本的な問いを立てることができず、与えられた文脈の中で複雑な抽象化を好む傾向があります。\n\n結論として、Vibe Codingが機能するのは、人間側が問題を完全に理解し、AIを単なる「実装の実行役」として制御できている場合に限られます。筆者は、製品設計・アーキテクチャ検討用のエージェントと実装用のエージェントを分離し、人間が設計段階でしっかりと判断を下すワークフローを推奨しています。",
+    "topics": [
+      "Vibe Coding",
+      "AIエージェント",
+      "過剰エンジニアリング",
+      "LLM",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": "Why Vibe Coding Fails"
+  }
+}

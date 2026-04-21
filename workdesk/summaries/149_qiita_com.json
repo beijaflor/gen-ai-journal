@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:50:46.772229+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を Level 5 まで育てたら、開発が「指示と確認だけ」になった — 実ファイル構成で解説",
+    "url": "https://qiita.com/teppei19980914/items/8da88b33ffa8cf88dfa2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeをCLAUDE.mdやHooks、Agentsといった5段階のレベルで体系的にカスタマイズし、開発作業を「指示と確認」のみに自動化する実践的な手法の解説。",
+    "summaryBody": "この記事では、Claude Codeを単なるAIツールから自律的な開発パートナーへと「育てる」ための5つのステップを、実際のファイル構成例とともに詳しく解説しています。各レベルの内容は以下の通りです：\n\n1. **Level 2 (CLAUDE.md)**: プロジェクト憲法を明文化し、命名規則や禁止事項の繰り返し説明を不要にする。\n2. **Level 3 (Skills)**: `.claude/skills/`に手順書を配置し、複雑な定型作業をコマンド一発で実行可能にする。\n3. **Level 4 (Hooks)**: `.claude/settings.json`でフックを設定し、ファイル編集時や会話終了時にテストや静的解析を自動実行させる。\n4. **Level 5 (Agents)**: セキュリティ、パフォーマンス、SEOなどの観点を持つ独立したレビュワー（Agents）を並行して走らせ、人間がレビューする前に問題を修正する。\n\n著者は、繰り返される苦痛を自動化の動機に変えることで、AI主導の「VibeCoding」においても品質を仕組みで担保できると述べています。最終的に、人間は「何を作るか決める」ことと「動作確認」だけに専念できる体制を構築するプロセスが示されています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "VibeCoding",
+      "自動化",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

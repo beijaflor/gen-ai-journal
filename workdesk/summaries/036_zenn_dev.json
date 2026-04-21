@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:23:00.257393+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに同じレビュー指摘を繰り返させない失敗学習ループの作り方",
+    "url": "https://zenn.dev/pepabo/articles/claude-code-failure-learning-loop",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "セッションをまたぐと記憶が消えるClaude Codeの弱点を、設定ファイルへの「失敗記録」と「ルールの昇格」で解決し、レビュー指摘の再発を防ぐ運用手法。",
+    "summaryBody": "Claude Codeはセッションごとに記憶がリセットされるため、一度受けたレビュー指摘を別のセッションで繰り返してしまう課題があります。この記事では、この問題を「プロンプトの工夫」ではなく「記録の蓄積」で解決する『失敗学習ループ』の構築方法を解説しています。具体的には、~/.claude/ 配下の memory/（プロジェクト固有）と rules/（共通ルール）を使い分け、Claude Code自身に失敗の原因と正解を自動記録させる仕組みを導入します。2回以上繰り返された失敗をグローバルルールに昇格させることで、EUC-JPファイルの文字化けといったレガシーな制約にも対応可能になり、使い込むほど開発品質が向上するプロセスを提案しています。また、個人の学びをリポジトリ内の .claude/ ディレクトリを通じてチーム全体に展開する方法についても触れています。",
+    "topics": [
+      "Claude Code",
+      "AIコードレビュー",
+      "LLM",
+      "開発プロセス",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

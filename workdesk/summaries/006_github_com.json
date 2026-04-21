@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:30:17.132280+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのキャッシュTTLが1時間から5分へサイレントに短縮、コストとクォータ消費が大幅増",
+    "url": "https://github.com/anthropics/claude-code/issues/46829",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおいてプロンプトキャッシュの有効期限（TTL）が1時間から5分へサイレントに短縮されたことで、利用者のコストとクォータ消費が最大30%以上増加しているという詳細なデータ分析が報告されました。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」において、2026年3月初旬を境にプロンプトキャッシュのTTL（有効期限）が1時間から5分へとサイレントに短縮されたとの詳細な調査結果がGitHub Issueで公開されました。約12万件のAPIコールログを分析した結果、2月時点では100%近く維持されていた1時間TTLが、3月6日以降に急激に5分TTLへと置き換わっていることが判明しました。\n\nこの変更により、セッション中にわずか5分以上の休止があるだけでキャッシュが失効し、高価な「キャッシュ作成」料金が繰り返し発生するようになっています。分析によれば、このTTL短縮によってユーザーのコストは平均で17.1%増加し、特にSonnetやOpusのヘビーユーザーにおいては月間数百ドルから千ドル以上の超過支出、およびクォータの早期枯渇を招いています。投稿者は、これがインフラのデグレードか意図的なコスト削減策であるかを問うとともに、設定の復元またはユーザーによる設定変更オプションの提供を求めています。",
+    "topics": [
+      "Claude Code",
+      "Prompt Caching",
+      "Anthropic API",
+      "Cost Analysis",
+      "API Quota"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Cache TTL silently regressed from 1h to 5m around early March 2026, causing quota and cost inflation · Issue #46829 · anthropics/claude-code"
+  }
+}

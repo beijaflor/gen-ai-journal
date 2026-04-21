@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:27:01.663815+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DESIGN.md + 壊れたら気づくハーネス - AI向けデザインシステムを「維持できる仕組み」にした記録",
+    "url": "https://zenn.dev/tsubotax/articles/7f0d3693f70e2f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが正確にUIを生成・維持し続けられるよう、デザインシステムの仕様を3層構造に分離し、自動検証スクリプトでドリフトを防ぐ仕組みの解説。",
+    "summaryBody": "AIエージェント（Claude CodeやCursor）によるUI生成の精度を落とさず、長期的に品質を維持するためのデザインシステム構築手法についての解説記事です。著者は、従来のCLAUDE.md1枚に全仕様を詰め込む手法では、情報の肥大化や実装との乖離（ドリフト）が発生しやすいという課題を指摘。これを解決するため、設計原則を記した「DESIGN.md」、コンポーネント仕様や禁止ルールを構造化した「contracts (JSON)」、そしてそれらの整合性を自動テストする「harness」の3層構造へ移行しました。この仕組みにより、AIが読み取りやすい一意な定義を実現しつつ、GitHub Actions等のCIでルールの違反やドキュメントの矛盾を即座に検知できるようになり、スケーラブルで「維持できる」デザインシステムの運用が可能になります。",
+    "topics": [
+      "デザインシステム",
+      "AIエージェント",
+      "Claude Code",
+      "Tailwind CSS",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

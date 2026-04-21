@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:06:47.673113+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クロードは飛行機を操縦できるか？：X-Plane 12を用いたAIによる自律飛行実験",
+    "url": "https://so.long.thanks.fish/can-claude-fly-a-plane/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルのClaudeが自らPythonスクリプトを書き、フライトシミュレーター上でセスナを操縦・デバッグしながら飛行に挑んだ実験の記録。",
+    "summaryBody": "このレポートは、AIモデル「Claude」にフライトシミュレーター（X-Plane 12）のAPIを学習させ、実時間での飛行操縦に挑戦させた実験記録です。Claudeは自らPythonスクリプトを生成し、離陸、高度維持、旋回といったタスクをこなすためのロジックを段階的に構築しました。記事内ではClaude自身が記録した「パイロットログ」が公開されており、制御ゲインの不備による墜落、その後の自己分析、比例制御（P制御）への修正、そして飛行中の制御空白時間が原因で起きた2度目の墜落といったプロセスが詳細に記されています。AIが自らの能力をどう推論し、リアルタイムの課題に対してどうツール（コード）を準備し適応するかという、AGI的側面のベンチマークとしても興味深い内容です。",
+    "topics": [
+      "Claude",
+      "AIエージェント",
+      "X-Plane 12",
+      "自律制御",
+      "Python"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 30,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "Can Claude Fly a Plane?"
+  }
+}

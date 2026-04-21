@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:19:58.990834+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CursorがVercel MicrofrontendsとFlagsを活用して構築した成長の高速ループ",
+    "url": "https://vercel.com/blog/how-cursor-built-a-growth-iteration-loop-with-vercel-microfrontends-and-flags",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエディタのCursorは、VercelのマイクロフロントエンドとFlagsを活用し、4つの独立したWeb資産を統合するとともに、AIエージェント主導の高速な実験・更新サイクルを実現しました。",
+    "summaryBody": "AIコードエディタを提供するCursorが、Vercelのプラットフォームを活用してWebプレゼンスを統合し、成長のための実験サイクルを高速化した事例が公開されました。同社は、マーケティングサイト、ダッシュボード、ドキュメント、ヘルプセンターという4つの独立したリポジトリで管理されていた資産を、Vercel Microfrontendsを用いて「cursor.com」という単一ドメイン下に統合しました。これにより、既存のサインアップフローを維持したまま、段階的な移行とブランドの統一を達成しました。また、Vercel Flags SDKとStatsigを組み合わせ、エッジ設定とビルド時のプリコンピュート手法を導入。実験によるレイアウトシフトを排除しつつ、メッセージングやナビゲーションのA/Bテストを繰り返した結果、PLG（製品主導型成長）によるサインアップを5%向上させました。特筆すべきは「CMSの廃止」です。Cursorは従来のCMSがAIエージェントによる自動更新に適さないと判断し、MarkdownとGitHub PRをベースとした「エージェント・ファースト」のワークフローへ移行。Slackからエージェントに修正を依頼し、自動生成されたPRとプレビュー環境で人間が確認する体制を構築し、200以上のエージェントを並列稼働させてコンテンツ移行を3日間で完了させるなど、運用の自動化を極限まで追求しています。",
+    "topics": [
+      "Vercel",
+      "Microfrontends",
+      "Feature Flags",
+      "AI Agents",
+      "Growth Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": "How Cursor built a growth iteration loop with Vercel Microfrontends and Flags"
+  }
+}

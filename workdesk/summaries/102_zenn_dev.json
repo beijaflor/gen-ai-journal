@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:04:27.962701+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様駆動開発を「やめる」タイミング：AI時代のドキュメント管理術",
+    "url": "https://zenn.dev/acntechjp/articles/031acfe6379ebe",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "生成AIを用いた仕様駆動開発（SPEC）において、ドキュメントの肥大化とコードとの乖離を防ぐため、開発中盤以降はコードを「正」とし仕様書を「足場」として捨てるべきだとする実践的な論考。",
+    "summaryBody": "Claude CodeなどのAIツール台頭により、自然言語で仕様書を作成してから実装する「仕様駆動開発（SPEC）」が容易になりましたが、プロジェクトが成長するにつれ、仕様書とコードの実態が乖離しAIが矛盾を生む問題が発生します。本記事では、初期フェーズでは仕様書を「足場」として活用しつつ、基盤が完成した後は仕様書を捨て、コードそのものをAIに解釈させる「コードを真実の情報源（Source of Truth）とする」手法を提案しています。ただし、全てのドキュメントを廃止するのではなく、人間が読むための「意思決定の記録（Why）」と、AIの挙動を制御するための「ステアリングファイル」の2点に絞って管理を継続することで、AI開発の速度と品質を両立させる現実的な最適解を提示しています。",
+    "topics": [
+      "仕様駆動開発 (SPEC)",
+      "生成AI",
+      "Claude Code",
+      "ドキュメンテーション",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

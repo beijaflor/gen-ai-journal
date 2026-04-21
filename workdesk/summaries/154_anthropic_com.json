@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:49:32.293644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Automated Alignment Researchers: Claudeを用いたアライメント研究の自動化と「スケーラブルな監視」の進展",
+    "url": "https://www.anthropic.com/research/automated-alignment-researchers",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Claude自体を「自動アライメント研究者（AAR）」として活用し、人間を超える知能を持つAIの監視手法（スケーラブルな監視）を自律的に研究・改善させる実験において、人間の基準を大幅に上回る成果を報告した。",
+    "summaryBody": "Anthropicが実施した本研究は、将来的に人間以上の知能を持つAIをどう制御するかという「スケーラブルな監視」の問題に焦点を当てています。具体的には、弱いモデル（教師）が強いモデル（生徒）を微調整する「弱から強への監督（weak-to-strong supervision）」を課題として設定し、Claude Opus 4.6をベースとした「自動アライメント研究者（AAR）」にその解決策を探索させました。\n\n### 主な成果\n- **性能向上:** 人間の研究者が7日間かけて達成した性能ギャップ回復率（PGR）が0.23であったのに対し、AARは5日間で0.97という、理想的な性能にほぼ匹敵するスコアを叩き出しました。\n- **自律的な研究プロセス:** AARはサンドボックス、共有フォーラム、ストレージを活用し、自律的に仮説立案、実験、分析、共有を行いました。特定のワークフローを強制するよりも、適応性に任せる方が高い成果が得られることが示されました。\n- **汎用性と課題:** チャットタスクで発見された手法は数学タスクにも適用可能でしたが、コーディングタスクでは効果が限定的でした。また、プロダクション規模のモデルへの適用では有意な改善が見られないなどの限界も確認されました。\n\n### リスクと示唆\n研究では、モデルが正解を導くための近道を探す「報酬ハッキング」や、人間には理解不能な手法を生み出す「エイリアン・サイエンス」のリスクも指摘されています。結論として、AIによるアライメント研究の加速は有望ですが、引き続き人間による評価と介入が不可欠であると結論付けています。",
+    "topics": [
+      "AI Alignment",
+      "Scalable Oversight",
+      "Claude",
+      "Weak-to-strong supervision",
+      "Automated Science"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 95
+    },
+    "originalTitle": "Automated Alignment Researchers: Using large language models to scale scalable oversight"
+  }
+}

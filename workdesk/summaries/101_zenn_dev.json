@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:04:45.168079+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "遠隔で GitHub Copilot CLI を操作する - リモートコントロール機能を試してみた",
+    "url": "https://zenn.dev/microsoft/articles/github-copilot-cli-remote-session",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIに追加された、WebブラウザやモバイルアプリからローカルのCLIセッションをリアルタイムで監視・操作できる「リモートセッション」機能の解説記事です。",
+    "summaryBody": "GitHub Copilot CLI v1.0.25でパブリックプレビューとして導入された「リモートセッション機能」について、その概要と具体的な活用方法を解説しています。この機能は、ローカルマシンで実行中のCLIセッションをGitHub.comやGitHub Mobile経由でストリーミングし、別のデバイスから進捗確認や権限の承認、新しい指示の送信を可能にするものです。記事内では、`/remote`コマンドや設定ファイルによる有効化、QRコードを用いたモバイル接続、セッション履歴の同期設定、さらには長時間タスクに便利な`/keep-alive`（スリープ防止）コマンドについて詳しく紹介されています。WSL環境での動作の制限や、リモートUI上でのスラッシュコマンドの制約など、実運用における注意点も網羅されています。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "GitHub Copilot",
+      "CLI",
+      "リモートコントロール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

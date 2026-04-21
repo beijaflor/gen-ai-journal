@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:25:43.548173+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeに原始時代に行ってもらっては困る話",
+    "url": "https://zenn.dev/holy_fox/articles/e0c0bf75fba9e6",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "トークン節約を目的とした「原始人プロンプト」が、LLMの推論能力低下やハルシネーション増加、実質的なコスト対効果の薄さといった深刻な副作用を招くリスクを最新の研究論文を基に考察した記事。",
+    "summaryBody": "海外のLLMコミュニティで話題の「caveman prompt（原始人のように喋らせることで出力トークンを削る技法）」に対し、多角的な視点から批判的検証を行っている。筆者は、2024年から2026年にかけての最新研究を引き合いに出し、以下のリスクを指摘する。1. ペルソナ付与による論理的思考・戦略的推論能力の低下（Persona is a Double-edged Sword）。2. 厳格なスタイル・簡潔さの制約が推論の深さを損なう「Format Tax」の問題。3. 簡潔さの強要がハルシネーション耐性を最大20%悪化させるリスク（Phareベンチマーク）。また、Claude Codeのコスト構造を分析し、トークン消費の大部分が入力側（システムプロンプト、ツール定義、MCP等）にあるため、出力テキストの圧縮によるコスト削減効果には構造的な上限があると論じている。結論として、安易なプロンプトハックよりも、公式が推奨するSubagent活用やコンテキスト管理（/compact, .claudeignore）を優先すべきだと提言している。",
+    "topics": [
+      "Claude Code",
+      "LLMプロンプトエンジニアリング",
+      "トークン最適化",
+      "推論性能",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

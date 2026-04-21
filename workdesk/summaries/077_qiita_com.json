@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:12:07.324865+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic「Project Glasswing」── Claude Mythosが40社限定公開で発見した数千件のゼロデイ脆弱性",
+    "url": "https://qiita.com/nogataka/items/5e1ccf452044bedd733f",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Anthropicの未公開モデル「Claude Mythos」が主要OSやブラウザから数千件のゼロデイ脆弱性を自律的に発見し、その「危険すぎる」能力ゆえに40社限定の防御的利用に絞られた経緯と技術的背景の詳報。",
+    "summaryBody": "2026年4月に発表されたAnthropicの「Project Glasswing」は、汎用コード能力の向上により「意図せず」強力なエクスプロイト開発能力を獲得した未公開モデル「Claude Mythos Preview」を巡るイニシアチブです。このモデルは、OpenBSDの27年越しの脆弱性や、従来のファジングでは発見不能だったFFmpegのバグなど、主要なソフトウェアスタックから数千件のゼロデイ脆弱性を発見しました。Anthropicは、攻撃者がこのモデルを悪用した場合の壊滅的なリスク（攻守の非対称性）を考慮し、一般公開を封印。Apple、Google、Microsoftなど12社のローンチパートナーを含む約40組織に限定提供し、1億ドルのAPIクレジットを拠出して防御側の先手を打たせる戦略を採っています。本記事は、GoogleのBig SleepやXBOWからの潮流を整理し、LLMが「意味理解」と「推論ループ」によっていかに脆弱性を掘り当てるのか、そして開発者が直面するパッチ適用速度の極限化という課題について論じています。",
+    "topics": [
+      "Anthropic",
+      "Claude Mythos",
+      "ゼロデイ脆弱性",
+      "AI安全性",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

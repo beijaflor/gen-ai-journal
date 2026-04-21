@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:56:57.323702+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIを活用した「個人用コマンドセンター」の構築：GitHubエンジニアによる実践事例",
+    "url": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHubのスタッフエンジニアが、GitHub Copilotのエージェント機能を活用して、複数のツールを集約する個人用生産性ダッシュボードをわずか1日で構築した手法を紹介しています。",
+    "summaryBody": "GitHubのエンジニアであるBrittany Ellich氏が、デジタルの断片化を解消するために構築した「個人用組織コマンドセンター」の事例記事です。開発の核心は、AIによる「計画（プランニング）」と「実装」を分けたワークフローにあります。Copilotに自身の要件をインタビューさせることで詳細な設計図を作成し、VS CodeのAgentモードとCopilot Cloud Agentを使い分けて、同期・非同期の両面から開発を加速させました。\n\n主な技術スタックは、Electron、React、Vite、Tailwind、そしてMicrosoft 365データにアクセスするためのWorkIQ MCP（Model Context Protocol）です。特筆すべき点として、AIはコードの追加には積極的ですが、不要なコードの削除（リファクタリング）には人間の介入が重要であるという教訓も語られています。このプロジェクトはオープンソースとして公開されており、誰でも自分の環境に合わせたコマンドセンターを構築可能です。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "AI Agent",
+      "Electron",
+      "WorkIQ MCP",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Build a personal organization command center with GitHub Copilot CLI"
+  }
+}

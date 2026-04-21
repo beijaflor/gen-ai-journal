@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:37:14.635916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AgentOpsで変わるAIエージェントの開発と運用",
+    "url": "https://qiita.com/ksonoda/items/b34e2718ee25e6a33481",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Oracle Cloud Infrastructure (OCI) Generative AI Serviceを活用し、AIエージェントの「運用」を自動化・簡略化する「AgentOps」の概念と、具体的な実装・デプロイ手順を解説する記事。",
+    "summaryBody": "AI開発の関心が「構築」から「運用」へシフトする中、エージェントの管理を体系化する「AgentOps」の重要性が増しています。本記事では、OCI Generative AI Serviceの新機能「Enterprise AI Agent」を用いたAgentOpsの実践方法を詳説しています。主なメリットとして、1. インフラ運用のマネージド化、2. 会話メモリ・スケーリング・ガードレール等の標準機能の活用、3. LangGraphやAutoGenなどの主要OSSフレームワークへの対応を挙げています。記事後半では、マルチエージェント構成（旅行プラン作成と公用語案内）の実装、Dockerによるコンテナ化、OCI Registryへの登録、そしてOAuth認証を用いたセキュアなエンドポイント公開までの具体的なコードと手順が紹介されており、開発者が本来のロジック構築に集中できる環境構築の指針を示しています。",
+    "topics": [
+      "AgentOps",
+      "AIエージェント",
+      "Oracle Cloud",
+      "LangGraph",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

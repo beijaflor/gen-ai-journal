@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:27:17.387480+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ベクトル検索は不要なのか？最新のAgentic RAGと階層的検索手法から考える今後のアーキテクチャ",
+    "url": "https://zenn.dev/nttdata_tech/articles/694e39ceff58b7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "従来のベクトル検索型RAGの限界を再認識し、Agentic RAGや階層構造を考慮した検索手法（PageIndex/DeepRead）との使い分けと共存の重要性を提唱する技術解説記事。",
+    "summaryBody": "この記事では、「ベクトル検索は不要か」という問いに対し、従来の「チャンク分割→ベクトル化→並列検索」というRAGアーキテクチャの課題（階層構造の欠落やコンテキスト管理の難しさ）を指摘した上で、最新の研究動向に基づいたRAGの進化を整理しています。\n\n1. **Agentic RAGの台頭**: AIエージェントが自律的に検索クエリを拡張・試行錯誤する手法。特に少数のドキュメントにおいては、grep等のファイルシステムツールを活用するエージェントが、精度面でベクトル検索を凌駕するという研究結果（Keyword search is all you need等）を紹介しています。\n2. **Structure-Aware RAG**: 文書の目次や見出しの階層構造をツリー形式で管理し、AIが段階的に辿る「PageIndex」や、Markdown変換を通じて構造座標を付与する「DeepRead」といった、ベクトル検索に依存しない高精度な手法が登場しています。\n3. **結論と展望**: ベクトル検索は大規模データや高速レスポンスが求められる場面で依然として有効ですが、今後は「人間のファイル管理」に近い階層的検索が重要になると分析。Gemini Embedding2のようなマルチモーダル埋め込みモデルによる利便性向上も踏まえ、用途に応じた使い分けとアーキテクチャの要所でのベクトル検索活用を推奨しています。",
+    "topics": [
+      "RAG",
+      "Agentic RAG",
+      "ベクトル検索",
+      "LLM",
+      "PageIndex"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "ベクトル検索は不要なのか"
+  }
+}

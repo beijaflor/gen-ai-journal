@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:26:56.786231+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4の音声認識機能でリアルタイム文字起こしを試してみた",
+    "url": "https://zenn.dev/kozoka_ai/articles/3c17156f9f660e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GoogleのマルチモーダルLLM「Gemma 4 E2B」を使用し、音声認識とLLMによる文脈補正を組み合わせたローカル環境でのリアルタイム文字起こしを検証した実践レポート。",
+    "summaryBody": "GoogleがApache 2.0ライセンスでリリースしたマルチモーダルLLM「Gemma 4」の小型モデル（E2B）を用い、音声入力とリアルタイム文字起こしの性能を検証した記事です。本検証では、WSL2上のFastAPIサーバーとブラウザをWebSocketで接続し、5秒ごとの音声チャンクを処理する2段階パイプラインを構築。高速な「Stage 1: 音声認識」と、約15秒分のテキストをまとめて修正する「Stage 2: LLM文脈補正」を組み合わせることで、精度の向上を図っています。検証の結果、有効パラメータ23億のE2BモデルはRTX 4070 Ti Super環境において、5秒の音声に対し0.3〜1.8秒で推論を完了し、十分なリアルタイム性を発揮しました。日常会話レベルでは高い実用性を示す一方、専門用語や固有名詞の認識、および多言語モデル特有の文字混入といった課題も明らかになっています。1つのモデルで音響モデルと補正用言語モデルの役割を兼ね備えるマルチモーダルLLMの可能性を示す内容です。",
+    "topics": [
+      "Gemma 4",
+      "LLM",
+      "音声認識",
+      "マルチモーダル",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

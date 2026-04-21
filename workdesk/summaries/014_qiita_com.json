@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:28:14.081495+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "draw.ioのMCPサーバーのかっこいいUXを模倣しようとしたらなかなか複雑だった件",
+    "url": "https://qiita.com/moritalous/items/88ed3c88e72eb7b8e870",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCP Apps仕様を利用してdraw.ioのように図表をリアルタイムで逐次描画するUXを実現するための、不完全なJSONの修復や構文検証を含む高度な実装手法を解説しています。",
+    "summaryBody": "話題のdraw.io MCPサーバーが持つ、ダイアグラムが少しずつ描画される洗練されたUXの仕組みを技術的に深掘りした記事です。このUXはMCPの拡張仕様である「MCP Apps」によって実現されており、ホスト側のiFrameでHTML/JSを実行し、ツール実行結果をインタラクティブに表示します。特に「リアルタイムな逐次描画」を実現する鍵は、LLMがストリーミング出力するツール引数（不完全なJSON）を順次iFrameに通知することにあります。実装上の課題として、Vercel AI SDKの`parsePartialJson`を用いた不完全なJSONの自動修復や、Mermaid記法として妥当なタイミングのみを判定してレンダリングする制御など、非常にローレベルかつ複雑な処理が必要であることが示されています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "MCP Apps",
+      "Mermaid",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

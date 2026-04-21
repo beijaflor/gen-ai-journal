@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:10:47.244405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザ操作を録画してAIにPlaywrightテストを生成させる効率的なワークフロー",
+    "url": "https://zenn.dev/booost/articles/7dcac5e518b637",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Chrome DevTools Recorderで記録した操作JSONをAIに読み込ませることで、高精度なPlaywrightテストを自動生成・補正する手法の紹介。",
+    "summaryBody": "Chrome DevToolsの「Recorder」機能、Playwright、そしてClaude Code等のAIツールを組み合わせた、E2Eテスト作成の効率化手法が解説されています。従来の手動コーディングや`codegen`機能と比較し、録画データ（JSON）に含まれる豊富なメタデータ（ariaセレクタ、XPath、座標など）をAIに解釈させることで、より堅牢でメンテナンス性の高いテストコードを生成できる点が特徴です。具体的なステップとして、DevToolsでの録画、JSONのエクスポート、AIへのプロンプト指示、そして`playwright-cli`によるスナップショットを用いたセレクタ補正のワークフローが提示されています。UI変更時もAIに差分を修正させることで、メンテナンスコストを大幅に削減できるメリットが強調されています。",
+    "topics": [
+      "Playwright",
+      "E2Eテスト",
+      "Claude Code",
+      "Chrome DevTools Recorder",
+      "テスト自動化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

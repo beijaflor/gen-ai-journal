@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:23:55.390175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentと数理最適化で飲み会会費の傾斜配分を決める",
+    "url": "https://zenn.dev/green_tea/articles/cf25e680fa97b0",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMによる制約パラメータ設計と数理最適化（PuLP）を組み合わせ、飲み会の「いい感じ」な傾斜配分を生成・調整するAIエージェントの実装解説。",
+    "summaryBody": "飲み会の幹事が悩む「役職ごとの傾斜配分」を、LLMと数理最適化を組み合わせて解決するAIエージェントの開発記事です。LLMが人間らしい感覚で制約（ソフト制約）や重みを設計し、PuLP（数理最適化ソルバー）が予算や順序などの厳密なルール（ハード制約）を満たす計算を行うハイブリッドな構成を採用しています。LangGraphによる「生成・評価・調整」の自律ループに加え、自然言語での人間フィードバックを定量/定性的に分類して反映する仕組みや、過去の成功事例を類似検索する永続メモリ機能についても詳細に解説されています。実務的なエージェント設計のパターンとして非常に参考になる内容です。",
+    "topics": [
+      "AI Agent",
+      "数理最適化",
+      "LangGraph",
+      "Python",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}
