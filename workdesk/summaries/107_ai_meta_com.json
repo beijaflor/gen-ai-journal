@@ -1,32 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-20T16:03:10.286249+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-24T10:33:29.414426+00:00",
+    "generatedBy": "manual-claude-sonnet-4-6"
   },
   "content": {
-    "title": "[エラー] コンテンツ取得失敗: Meta AI ブログ記事 (introducing-muse-spark-msl)",
+    "title": "Muse Sparkを発表：MetaがLlamaを離れクローズドソースの独自モデルで主力AI競争に再参入",
     "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
-    "language": "ja",
+    "language": "en",
     "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "指定されたURL（https://ai.meta.com/blog/introducing-muse-spark-msl/）へのアクセス時にHTTP 400エラーが発生し、内容を読み取ることができませんでした。",
-    "summaryBody": "提供されたURL『https://ai.meta.com/blog/introducing-muse-spark-msl/』に対してサーバーから「400 Client Error: Bad Request」が返されたため、記事の詳細を確認することができません。このエラーは、URLが正しくない、ページが削除された、あるいはアクセス制限がかかっているなどの原因が考えられます。Meta AIの公式ブログ上において、Muse、Spark、MSLといった名称を含む既知の主要なリリースは現時点で確認されておらず、URLの記述ミスである可能性が高いと考えられます。内容の要約や分析が必要な場合は、正しいURLを提供いただくか、元の記事テキストを入力してください。",
+    "oneSentenceSummary": "Metaが2026年4月8日に発表したMuse Sparkは、Scale AI創業者Alexandr Wang率いるMeta Superintelligence Labs（MSL）初のモデルで、Llamaと異なりクローズドソースのネイティブマルチモーダル推論モデル。",
+    "summaryBody": "2026年4月8日、MetaはMeta Superintelligence Labs（MSL）初のモデル「Muse Spark」を発表。Llamaシリーズとは完全に切り離した一から再構築で、Scale AI共同創業者のAlexandr Wangが主導。ネイティブマルチモーダル（テキスト・画像・音声入力）設計で、Visual Chain of Thoughtとマルチエージェントオーケストレーションを内包。通常の高速モードに加え、複数サブエージェントが並列推論する「Contemplating」モードを搭載し、Gemini Deep ThinkやGPT-5.4 Proに対抗。訓練技術「Thought Compression」により、Llama 4 Maverick比10倍以上の計算効率を実現。ベンチマークはAI Intelligence Index v4.0で4位（スコア52）、HealthBenchとHumanity's Last Examで首位だがコーディング（Terminal-Bench）とARC-AGI-2は低位。meta.aiで無償提供だがクローズドソース—Llamaの方針との決別が最大のポイント。",
     "topics": [
       "Meta AI",
-      "HTTP 400 Error",
-      "URL Access Failure",
-      "Content Analysis Error"
+      "Muse Spark",
+      "Meta Superintelligence Labs",
+      "マルチモーダル",
+      "LLMリリース"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 87
     },
-    "originalTitle": "Introducing Muse Spark MSL (Link Error)"
+    "originalTitle": "Introducing Muse Spark: Scaling Towards Personal Superintelligence"
   }
 }

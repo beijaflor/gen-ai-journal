@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-20T16:19:06.342393+00:00",
+    "generatedAt": "2026-04-22T15:19:13.020870+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "生成AIによって書かれたコードに対するQA活動のあり方",
+    "title": "翻訳記事「AIコーディングツールによって加速するコード生成に品質保証活動はどう立ち向かうか」",
     "url": "https://nihonbuson.hatenadiary.jp/entry/QA-activities-in-response-to-generated-code",
     "language": "ja",
-    "contentType": "🎯 Opinion & Commentary (意見・論評)",
-    "oneSentenceSummary": "AIが生成したコードの品質を担保するため、プロンプトの妥当性検証や人間によるレビューの再定義、自動テストの強化といったQA活動の変容を考察する内容。",
-    "summaryBody": "GitHub Copilot等の普及により生成AIがコードを書く機会が増える中、QA（品質保証）がどのように対応すべきかを論じた記事です。AI生成コードは「もっともらしいが誤っている」可能性があり、従来のテスト手法だけでは不十分な場合があります。本稿では、プロンプトの工夫による品質の作り込み、生成されたコード特有のバグパターンの把握、およびAIを前提としたテストコード自体の信頼性確保について触れています。開発効率の向上と引き換えに発生しうる技術的負債を防ぐため、QAエンジニアが開発の初期段階からどのように介在すべきか、その具体的なマインドセットと戦略を提案しています。特に、生成AIをブラックボックスとして扱うのではなく、その出力特性を理解した上での検証プロセスの構築が重要であると結論付けています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "生成AIによる開発加速がもたらす「もっともらしい誤り」という新たな品質リスクに対し、QAエンジニアが取るべき戦略的アプローチを解説する。",
+    "summaryBody": "JetBrainsのQAリード Lilia Abdulina（Vitaly Sharovatov協力）による英語研究「QA in the Age of AI-Accelerated Development」の日本語翻訳記事。AIコーディングツールによる開発加速がQA活動に与える影響を体系的に分析している。AIが大量のコードを高速生成することで「理解の負債」が積み上がり、後段での診断コストが急増するという構造的問題を指摘。解決策として、仕様・意図の段階で品質を担保する「予防重視のQA」への転換を提唱し、品質コスト（CoQ）フレームワークで「予防 < 評価 < 失敗」のコスト構造がAI時代に拡大する理由を論じる。リスクベースの投資モデルや戦略的リスク知識の移転可能性など、現場で使える概念フレームが豊富。",
     "topics": [
       "生成AI",
-      "QA",
+      "品質保証 (QA)",
       "ソフトウェアテスト",
       "GitHub Copilot",
-      "品質管理"
+      "開発プロセス"
     ],
     "scores": {
       "signal": 4,
       "depth": 4,
-      "uniqueness": 4,
+      "uniqueness": 5,
       "practical": 4,
-      "antiHype": 3,
+      "antiHype": 4,
       "mainJournal": 85,
       "annexPotential": 75,
       "overall": 82
     },
-    "originalTitle": "QA activities in response to generated code"
+    "originalTitle": "QA in the Age of AI-Accelerated Development"
   }
 }

@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-20T16:07:25.468365+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-24T05:38:14.796753+00:00",
+    "generatedBy": "manual-claude-sonnet-4-6"
   },
   "content": {
-    "title": "Vibe Coding（バイブ・コーディング）の罠：AI主導開発の落とし穴",
+    "title": "トークンという新たなドーパミン経済：Vibe Codingが開発者にもたらす心理的罠",
     "url": "https://www.enfuse.io/blog/vibe-coding-trap",
     "language": "en",
     "contentType": "🎯 Opinion & Commentary (意見・論評)",
-    "oneSentenceSummary": "AIへの自然言語指示でコードを書く「Vibe Coding」がもたらす、技術的理解の欠如や長期的な保守性の低下というリスクを警告する記事です。",
-    "summaryBody": "近年、大規模言語モデル（LLM）の進化により、厳密なプログラミング構文よりも「直感」や「雰囲気」でAIに指示を出し、動くソフトウェアを作り上げる「Vibe Coding（バイブ・コーディング）」という言葉が注目されています。本記事は、この手法がエンジニアリングの本質的な厳密さを欠く「罠」になり得ると指摘します。開発者が生成されたコードの内部論理を深く理解しないまま「なんとなく動く」状態に依存すると、デバッグが極めて困難になり、システム全体の脆弱性や技術的負債が急増します。AIによる効率化を認めつつも、真のエンジニアリングには依然として論理的な検証と基礎知識が不可欠であることを再認識させる内容となっています。",
+    "oneSentenceSummary": "Claude CodeやReplit Agentなどのエージェントツールが設計する「ドーパミンループ」を解剖し、高速出荷の快感が判断力を蝕む構造的リスクを論じた深度ある分析。",
+    "summaryBody": "Jacque Istok（Enfuse）による2026年4月の論考。Vibe Codingの本質的問題を「速度」ではなく「ドーパミン設計」として再定義する点が独自。エージェントツールは進捗ナレーション（Cursorの推論説明、Replitのタスクチェックリスト）で可変報酬を演出し、デプロイの達成感を意図的に強化していると指摘。さらに「Validation Hit」という概念を提示：AIのミスを発見した瞬間の「自分はまだ必要だ」という快感が自己正当化ループを生み、本来問うべき「この機能を作る価値があるか」の判断を妨げる。技術的には「理解の負債（Comprehension Debt）」「アーキテクチャの健忘症（顧客コンテキストゼロ）」「CI/CDの無人化リスク」を並べて論じる。一方、インフラ開発コミュニティ（LangGraph等）は逆に人間チェックポイントを再導入しており、両コミュニティが逆方向に動く皮肉を指摘。解決策は「evaluation-driven development」——エージェントを呼ぶ前に「良い」の定義を確立すること。",
     "topics": [
       "Vibe Coding",
-      "AI-Assisted Development",
-      "Technical Debt",
-      "Software Engineering",
-      "LLM"
+      "エージェントAI",
+      "ドーパミン設計",
+      "理解の負債",
+      "プロダクトエンジニアリング"
     ],
     "scores": {
-      "signal": 4,
-      "depth": 3,
+      "signal": 5,
+      "depth": 5,
       "uniqueness": 5,
       "practical": 3,
       "antiHype": 5,
-      "mainJournal": 75,
-      "annexPotential": 85,
-      "overall": 80
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 88
     },
-    "originalTitle": "The Vibe Coding Trap"
+    "originalTitle": "Tokens — The New Dopamine Economy"
   }
 }
