@@ -2,30 +2,32 @@
   "metadata": {
     "version": "1.0",
     "generatedAt": "2026-04-20T15:56:12.476828+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedBy": "manual-claude-sonnet-4-6"
   },
   "content": {
-    "title": "コンテンツ取得エラー: 429 Too Many Requests",
+    "title": "AIエージェント kuro の裏側",
     "url": "https://product.st.inc/entry/2026/04/15/133306",
     "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "指定されたURLからのコンテンツ取得中にHTTP 429エラーが発生したため、記事の詳細を解析することができませんでした。",
-    "summaryBody": "提供されたURL（https://product.st.inc/entry/2026/04/15/133306）にアクセスを試みましたが、「429 Too Many Requests」エラーによりコンテンツの取得に失敗しました。これは短期間に大量のリクエストが送られた場合に発生する一時的なアクセス制限です。URLのドメインから、STORES 株式会社（STORES, Inc.）のプロダクト開発に関するブログ記事であると推測されますが、本文が取得できなかったため、内容に基づく要約や評価は実施できていません。詳細を確認するには、後ほど直接URLにアクセスすることをお勧めします。",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "STORESが自作AIエージェントkuroの技術実装を公開——Claude Agent SDKをコアにしたReActハーネス、クエスト単位のプロセス分離、Slack/GitHub連携の設計思想を解説する後編。",
+    "summaryBody": "前編（活動事例）に続く技術実装解説。なぜ既存SaaSを使わず自作したかの理由として、2月時点でDevin以外に選択肢がほぼなかったこと、ハーネスエンジニアリングの社内知見蓄積を優先したことを挙げる。設計コンセプトは「社内エンジニアと同等の最低権限で公開チャンネル上のあらゆる作業を担う汎用エージェント」。技術スタックはnanoclaw派生で、Claude Agent SDKをReActコアとして採用し、周辺ハーネスを内製。依頼単位を「クエスト」と呼び、クエストエージェントをメインプロセスと分離した別プロセスで起動することで環境変数制限・タイムアウト管理・並列化を実現。GitHub/Slackからメッセージを受け取りエージェントを起動、結果を各プラットフォームに返す構成。社内に単一の共有エージェントを置き各チームが個別に自作する必要をなくす、という組織設計上の狙いも明示している。",
     "topics": [
-      "エラー報告",
+      "AIエージェント",
+      "Claude Agent SDK",
+      "エージェントアーキテクチャ",
       "STORES",
-      "アクセス制限"
+      "ReAct"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 90
     },
-    "originalTitle": "429 Client Error: Too Many Requests for url"
+    "originalTitle": null
   }
 }

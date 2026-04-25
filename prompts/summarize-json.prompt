@@ -5,6 +5,10 @@ Summarize the article according to instructions below. Output the summary as str
 **⚠️ CRITICAL — URL RULE (read first):**
 The `content.url` field in your JSON output MUST be the **exact string** passed to `{{fetch:"{{url}}"}}` at the end of this prompt — character-for-character, no changes. Do **NOT** resolve redirects, shorten, canonicalize, guess, or "correct" the URL in any way. Copy it verbatim.
 
+**⚠️ CRITICAL — TITLE RULE (read first):**
+- `title` for **Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT paraphrase, summarize, or alter it in any way.
+- `originalTitle` for **non-Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT derive from the URL slug or rewrite it.
+
 **IMPORTANT**: Before generating JSON, detect the article language:
 - If language is **Japanese** (ja): **DO NOT** include the `originalTitle` field in your JSON output
 - If language is **English/other** (en/other): **MUST** include the `originalTitle` field with the original title
@@ -167,20 +171,20 @@ The final output must be valid JSON matching this structure:
 - **Non-Japanese articles**: Include the `originalTitle` field with the original title
 
 1.  **title** (string, required):
-    - If article language is **Japanese**: Use original Japanese title as-is
-    - If article language is **English**: Translate title to Japanese
-    - If article language is **other**: Translate title to Japanese
+    - If article language is **Japanese**: Copy the exact text from the page's `<title>` or `<h1>` tag, character-for-character. **NEVER paraphrase, summarize, shorten, or modify the title in any way.**
+    - If article language is **English**: Translate the exact page title to Japanese. Do not paraphrase — translate faithfully.
+    - If article language is **other**: Translate the exact page title to Japanese. Do not paraphrase — translate faithfully.
     - Length: 1-200 characters
 
 2.  **originalTitle** (string, optional):
     - **ONLY include this field for non-Japanese articles**
     - If article language is **Japanese**: **DO NOT include this field in the JSON output** (omit entirely, do not set to null)
-    - If article language is **English**: Include with original English title from the page
-    - If article language is **other**: Include with original title in source language
+    - If article language is **English**: Copy the exact title from the page's `<title>` or `<h1>` tag verbatim. **Do NOT derive from the URL slug.** If the URL is `/blog/my-article` but the page title is "My Article: A Deep Dive", use the page title.
+    - If article language is **other**: Copy the exact title from the page verbatim in its original language.
     - Length: 1-300 characters
     - **Title selection rule**:
-      - For non-Japanese pages: Use translated Japanese title for `title` field, preserve original in `originalTitle`
-      - For Japanese pages: Use page title as-is for `title` field (no translation/modification)
+      - For non-Japanese pages: Use translated Japanese title for `title` field, preserve exact original page title in `originalTitle`
+      - For Japanese pages: Copy page `<title>`/`<h1>` text verbatim for `title` field — no translation, no modification
 
 3.  **url** (string, required):
     - **MUST be the exact URL string from the `{{fetch:"..."}}` call at the bottom of this prompt — copied character-for-character**
