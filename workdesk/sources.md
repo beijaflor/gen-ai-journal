@@ -17,7 +17,6 @@
 - [x] 255. https://atmarkit.itmedia.co.jp/ait/articles/2604/17/news018.html
 - [x] 254. https://iret.media/193289
 - [x] 253. https://www.deepl.com/ja/products/voice
-- [x] 252. https://gigazine.net/news/20260417-qwen36-35b-a3b/
 - [x] 251. https://www.itmedia.co.jp/aiplus/articles/2604/16/news107.html
 - [x] 250. https://k1low.hatenablog.com/entry/2026/04/17/083000
 - [x] 249. https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/
