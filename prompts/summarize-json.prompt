@@ -3,7 +3,7 @@
 Summarize the article according to instructions below. Output the summary as structured JSON matching the v1.0 schema.
 
 **⚠️ CRITICAL — URL RULE (read first):**
-The `content.url` field in your JSON output MUST be the **exact string** passed to `{{fetch:"{{url}}"}}` at the end of this prompt — character-for-character, no changes. Do **NOT** resolve redirects, shorten, canonicalize, guess, or "correct" the URL in any way. Copy it verbatim.
+The `content.url` field in your JSON output MUST be the **exact string** of the URL fetched at the end of this prompt — character-for-character, no changes. Do **NOT** resolve redirects, shorten, canonicalize, guess, or "correct" the URL in any way. Copy it verbatim.
 
 **⚠️ CRITICAL — TITLE RULE (read first):**
 - `title` for **Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT paraphrase, summarize, or alter it in any way.
@@ -187,7 +187,7 @@ The final output must be valid JSON matching this structure:
       - For Japanese pages: Copy page `<title>`/`<h1>` text verbatim for `title` field — no translation, no modification
 
 3.  **url** (string, required):
-    - **MUST be the exact URL string from the `{{fetch:"..."}}` call at the bottom of this prompt — copied character-for-character**
+    - **MUST be the exact URL string from the fetch directive at the bottom of this prompt — copied character-for-character**
     - Do NOT resolve redirects, canonicalize, guess, shorten, or alter the URL in any way
     - The URL you received in the fetch instruction is the authoritative value; use it as-is
     - Must be valid URI format
