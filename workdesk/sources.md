@@ -13,7 +13,6 @@
 - [x] 259. https://forest.watch.impress.co.jp/docs/serial/aistream/2102602.html
 - [x] 258. https://github.com/ombulabs/claude-code_rails-upgrade-skill
 - [x] 257. https://k-tai.watch.impress.co.jp/docs/news/2102414.html
-- [x] 256. https://openai.com/ja-JP/index/codex-for-almost-everything/
 - [x] 255. https://atmarkit.itmedia.co.jp/ait/articles/2604/17/news018.html
 - [x] 254. https://iret.media/193289
 - [x] 253. https://www.deepl.com/ja/products/voice
