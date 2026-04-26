@@ -35,7 +35,6 @@
 - [x] 237. https://zenn.dev/tokium_dev/articles/705334e2f6ac10
 - [x] 236. https://zenn.dev/ryonakae/articles/338f63fb030267
 - [x] 235. https://qiita.com/miruky/items/fde2d0747358cd7870d7
-- [x] 234. https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not
 - [x] 233. https://www.anthropic.com/news/claude-design-anthropic-labs
 - [x] 232. https://miguelconner.substack.com/p/im-coding-by-hand
 - [x] 231. https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you
