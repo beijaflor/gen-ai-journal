@@ -149,7 +149,7 @@ const summariesByStatus = {
             {summariesByStatus.main.map(summary => (
               <article class="summary-card">
                 <header class="summary-header">
-                  <div class="summary-id">#{summary.id}</div>
+                  <copyable-id class="summary-id" value={summary.id}>{summary.id}</copyable-id>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
                       {formatDomainDisplay(summary.sourceUrl)}
@@ -213,7 +213,7 @@ const summariesByStatus = {
             {summariesByStatus.annex.map(summary => (
               <article class="summary-card">
                 <header class="summary-header">
-                  <div class="summary-id">#{summary.id}</div>
+                  <copyable-id class="summary-id" value={summary.id}>{summary.id}</copyable-id>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
                       {formatDomainDisplay(summary.sourceUrl)}
@@ -272,7 +272,7 @@ const summariesByStatus = {
             {summariesByStatus.omitted.map(summary => (
               <article class="summary-card">
                 <header class="summary-header">
-                  <div class="summary-id">#{summary.id}</div>
+                  <copyable-id class="summary-id" value={summary.id}>{summary.id}</copyable-id>
                   <div class="summary-domain">
                     <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
                       {formatDomainDisplay(summary.sourceUrl)}
@@ -347,37 +347,46 @@ const summariesByStatus = {
       // First try to import as module
       try {
         const module = await import(webComponentsUrl);
-        if (module.registerMarkdownRenderer) {
-          module.registerMarkdownRenderer();
-        } else if (window.WebComponents?.registerMarkdownRenderer) {
-          window.WebComponents.registerMarkdownRenderer();
+        if (module.registerAllComponents) {
+          module.registerAllComponents();
+        } else {
+          if (module.registerMarkdownRenderer) {
+            module.registerMarkdownRenderer();
+          } else if (window.WebComponents?.registerMarkdownRenderer) {
+            window.WebComponents.registerMarkdownRenderer();
+          }
+          if (module.registerCopyableId) {
+            module.registerCopyableId();
+          } else if (window.WebComponents?.registerCopyableId) {
+            window.WebComponents.registerCopyableId();
+          }
         }
-        console.log('✅ Markdown renderer component registered successfully via module import');
+        console.log('✅ Web components registered successfully via module import');
       } catch (moduleError) {
         // Fallback: load as script and use global
         console.warn('Module import failed, trying script tag approach:', moduleError);
-        
+
         // Check if already loaded globally
-        if (window.WebComponents?.registerMarkdownRenderer) {
-          window.WebComponents.registerMarkdownRenderer();
-          console.log('✅ Markdown renderer component registered successfully via global');
+        if (window.WebComponents?.registerAllComponents) {
+          window.WebComponents.registerAllComponents();
+          console.log('✅ Web components registered successfully via global');
         } else {
           // Load via script tag
           const script = document.createElement('script');
           script.src = webComponentsUrl;
           script.type = 'module';
-          
+
           script.onload = () => {
-            if (window.WebComponents?.registerMarkdownRenderer) {
-              window.WebComponents.registerMarkdownRenderer();
-              console.log('✅ Markdown renderer component registered successfully via script load');
+            if (window.WebComponents?.registerAllComponents) {
+              window.WebComponents.registerAllComponents();
+              console.log('✅ Web components registered successfully via script load');
             }
           };
-          
+
           script.onerror = () => {
             throw new Error('Failed to load web components script');
           };
-          
+
           document.head.appendChild(script);
         }
       }
