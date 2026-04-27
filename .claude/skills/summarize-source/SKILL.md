@@ -286,6 +286,88 @@ uv run scripts/validate_summaries.py workdesk/summaries --quiet
 2. Delete the old summary file
 3. Run bulk_summarize.py or call-gemini.py
 
+## Batch retry with Playwright
+
+When `scripts/summary_review.py` flags suspicious rows, or when a human reviewer
+identifies summaries that were clearly fabricated from a URL/domain (BS4
+extraction failed on a JS-rendered or bot-blocked page), use the **batch retry
+workflow** to fix multiple summaries at once.
+
+**Trigger phrases the user might use**:
+
+- "re-summarize 092 164 251"
+- "fix summaries 164 and 192 with Playwright"
+- "retry these IDs with the rendered page"
+
+**Workflow per ID**:
+
+For each ID provided, the skill performs these steps in sequence:
+
+1. **Look up the URL** from the appropriate sources file:
+   - Active week: `workdesk/sources.md`
+   - Already-published journal: `journals/YYYY-MM-DD/sources/sources.md`
+   ```bash
+   grep -E "^- \[.\] 164\." workdesk/sources.md
+   ```
+
+2. **Fetch the rendered page with Playwright MCP**, since BS4 already failed.
+   Two options, in order of preference:
+
+   - **Playwright MCP (preferred)**: navigate to the URL via the
+     `mcp__playwright__browser_navigate` tool, then capture the rendered text
+     with `mcp__playwright__browser_evaluate` (e.g.
+     `() => document.body.innerText`) or `browser_snapshot`. Save the
+     extracted text to a temp file (e.g. `/tmp/164_rendered.txt`).
+
+   - **CLI fallback**: re-run `call-gemini.py` with the
+     `--auto-fallback-playwright` flag, which retries the fetch via the
+     in-process Playwright integration when BS4 extraction is below the
+     quality threshold. This is the simpler one-shot path:
+     ```bash
+     uv run scripts/call-gemini.py \
+       --url "URL_FROM_SOURCES" \
+       --auto-fallback-playwright \
+       --output workdesk/summaries/164_domain.json
+     ```
+
+3. **Send the rendered content through `call-gemini.py`** (only needed when
+   you used the MCP option in step 2 to capture text manually):
+   ```bash
+   # Replace the {{fetch:"..."}} block in the prompt with the captured text,
+   # then pipe to call-gemini.py via --file or stdin.
+   ```
+
+4. **Replace the existing JSON file** in `workdesk/summaries/` (or the
+   published `journals/YYYY-MM-DD/summaries/` directory) — the schema
+   validation in `call-gemini.py` ensures the new file is well-formed before
+   it overwrites the old one.
+
+5. **Verify** with `scripts/summary_review.py` that the previously suspicious
+   row is no longer flagged (or run `validate_summaries.py` to confirm
+   schema compliance):
+   ```bash
+   uv run scripts/summary_review.py workdesk/summaries/ --only-suspicious
+   ```
+
+**Quality gate signals** (from Issue #108, Layer 1):
+
+`call-gemini.py` now emits a stderr warning when BS4 extracts fewer than 200
+characters from a page (the typical failure mode for JS-rendered articles).
+When you see `WARN: extracted only N chars from <url>`, treat the resulting
+summary as suspect even if schema validation passes.
+
+**Review table** (from Issue #108, Layer 2):
+
+After a bulk run, append `--review-table` to surface suspicious summaries:
+
+```bash
+uv run scripts/bulk_summarize.py --review-table
+# Or stand-alone over an existing directory:
+uv run scripts/summary_review.py journals/2026-04-18/summaries/ --only-suspicious
+```
+
+Use the flagged IDs as input to the batch retry workflow above.
+
 ## Relationship to Other Skills
 
 - **Before summarize-source**: Use `add-url` skill to add URLs
