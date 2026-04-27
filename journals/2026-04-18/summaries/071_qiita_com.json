@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:13:59.456038+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのサブエージェントを使い倒す ── Anthropic公式「計画・生成・評価」3分離パターンの実践",
+    "url": "https://qiita.com/nogataka/items/efe8eb9df612d2211221",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicが提唱する「計画・生成・評価」の3エージェント分離構成をClaude Codeで実装し、大規模開発時の品質低下とコンテキスト肥大化を解決する手法の解説。",
+    "summaryBody": "本記事は、Anthropicのエンジニアリングチームが推奨する「計画(Planner)」「生成(Generator)」「評価(Evaluator)」の3エージェント分離パターンをClaude Codeで実践するための詳細なガイドです。単一エージェントが長時間稼働した際に陥る『コンテキスト不安(context anxiety)』や自己評価の甘さを、役割を物理的に分けることで解消する手法を解説しています。具体的には、`.claude/agents/`におけるエージェント定義の書き方、ファイルを通じた非同期通信によるコンテキスト汚染の防止、そしてMartin FowlerのGuides/Sensorsフレームワークを用いた理論的背景まで網羅。評価エージェントに『懐疑的な視点』を持たせるためのプロンプト設計や、コスト増と品質のトレードオフ、無限ループを防ぐ運用ルールなど、実戦から得られた失敗教訓も豊富に盛り込まれています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "マルチエージェント",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

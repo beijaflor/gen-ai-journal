@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:12:44.622359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.mdでClaude Codeのワークフローを自動化する実践ガイド ── superpowers 15万Starの設計思想",
+    "url": "https://qiita.com/nogataka/items/c59defafd0dfb88c4a90",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「Skills」機能を用いて、定型ワークフローを再利用可能な「SKILL.md」として定義し、AIエージェントの動作を高度に自動化するための実践的な設計手法を解説したガイド。",
+    "summaryBody": "本記事は、AnthropicのCLIツール「Claude Code」において、特定のタスク手順をAIに覚えさせる仕組みである「Skills（Agent Skills）」の定義方法と運用思想を詳しく解説しています。プロジェクト全体のルールを定める『CLAUDE.md』と、個別の業務マニュアルにあたる『SKILL.md』を分離することで、コンテキスト消費を最適化する「段階的開示（Progressive Disclosure）」の重要性を説いています。\n\n主な内容は以下の通りです：\n- **superpowersフレームワーク**: 15万Starを獲得した開発方法論に基づき、BrainstormからFinalizeまでを7フェーズで管理する設計思想。\n- **MCPとの使い分け**: 外部ツールとの接続（MCP）と、その道具をどう使うかのレシピ（Skills）という役割分担。\n- **具体的な実装例**: 記事執筆、コードレビュー、デプロイ自動化におけるSKILL.mdの具体的な記述テンプレート。\n- **導入ロードマップとアンチパターン**: 曖昧なトリガーや、人間の承認ポイントの欠如といった実運用での失敗を防ぐための知見。\n\nAIを単なる対話相手ではなく、一貫性のある成果物を生む自律的エージェントとして育てるための体系的なマニュアルとなっています。",
+    "topics": [
+      "Claude Code",
+      "SKILL.md",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 93
+    },
+    "originalTitle": null
+  }
+}

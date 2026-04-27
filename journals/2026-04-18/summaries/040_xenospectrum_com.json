@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:22:05.630789+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GoogleがついにJavaScriptを「再定義」する。次世代解析基盤「JSIR」がASTの限界を突破する理由",
+    "url": "https://xenospectrum.com/jsir-google-mlir-javascript-analysis/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが公開したJSIRは、MLIR基盤のJavaScript用高レベル中間表現であり、ASTの限界を超えた高度なデータフロー解析とソースコードへの完全な可逆変換を実現する。",
+    "summaryBody": "Googleのコンパイラチームが、JavaScriptのための新しい高レベル中間表現（IR）である「JSIR」のRFCを公開しました。これまでBabelやESLintなどのツールが依存してきたAST（抽象構文木）は、構文構造の保持には適していますが、変数の追跡や複雑な制御フローの解析には不向きという課題がありました。JSIRはLLVMプロジェクトのMLIRを活用し、ソースコード・AST・IR間での情報損失がない「高忠実度なラウンドトリップ」を99.9%以上の成功率で保証します。これにより、従来の静的解析では困難だった難読化解除やセキュリティ上のテイント解析が飛躍的に高度化されます。既にGoogle内部では、Gemini AIと連携したハイブリッド解析手法「CASCADE」や、Hermesバイトコードの逆コンパイル基盤として実用化されています。今後はLLVM/MLIRコミュニティへの統合が焦点となりますが、QuickJSやBabelへの依存といった技術的課題の解決が待たれています。",
+    "topics": [
+      "JSIR",
+      "MLIR",
+      "JavaScript",
+      "LLVM",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

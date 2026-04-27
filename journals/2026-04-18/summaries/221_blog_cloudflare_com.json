@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:31:25.635592+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI学習用リダイレクト機能：Cloudflareが古いドキュメントの誤学習を防ぐ新機能を発表",
+    "url": "https://blog.cloudflare.com/ai-redirects/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIクローラーが古いコンテンツを学習するのを防ぐため、HTMLのcanonicalタグを基に自動で301リダイレクトを行う新機能を導入しました。",
+    "summaryBody": "Cloudflareは、AIクローラーが`noindex`や警告バナーなどの「推奨信号」を無視し、非推奨の古いドキュメントを学習し続ける問題に対処するため、「Redirects for AI Training」機能を発表しました。この機能は、有料プランのユーザーを対象に、HTML内の`&lt;link rel=\"canonical\"&gt;`タグを検出し、認証済みのAI学習クローラーに対してのみ自動的にHTTP 301リダイレクトを実行します。これにより、AIモデルが最新かつ正規のコンテンツのみを取り込むよう強制し、古いCLI構文などの誤った情報がモデルに継承されるのを防ぎます。人間や検索エンジンのクローラーには影響を与えず、既存のSEO資産を活用してAIへの露出を制御できる点が特徴です。あわせて、Cloudflare RadarではAIクローラーへの応答ステータス分析機能も提供開始されました。",
+    "topics": [
+      "Cloudflare",
+      "AIクローラー",
+      "SEO",
+      "リダイレクト",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Redirects for AI Training enforces canonical content"
+  }
+}

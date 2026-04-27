@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:44:59.902676+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MaxTextがポストトレーニング機能を拡張：単一ホストTPUでのSFTと強化学習（RL）をサポート",
+    "url": "https://developers.googleblog.com/maxtext-expands-post-training-capabilities-introducing-sft-and-rl-on-single-host-tpus/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleのLLMトレーニングフレームワーク「MaxText」が、単一ホストTPU環境でのSFTおよびGRPO/GSPOを用いた強化学習に対応し、モデルの最適化プロセスを大幅に簡素化しました。",
+    "summaryBody": "Googleは、JAXベースのオープンソースLLMトレーニングフレームワーク「MaxText」において、単一ホストTPU（v5p-8やv6e-8など）でのポストトレーニング機能を新たにサポートしたことを発表しました。主な更新点は、教師あり微調整（SFT）と強化学習（RL）の導入です。SFTでは、Hugging Faceのデータセットやチェックポイントとのネイティブな統合、およびTunixライブラリによる効率的な実行が可能になりました。RLについては、メモリ効率の高いGRPO（Group Relative Policy Optimization）と、数学やコーディングの推論性能を高めるGSPO（Group Sequence Policy Optimization）の2つのアルゴリズムをサポート。vLLMを用いた高スループットな推論ループをトレーニング中に実行できることが特徴です。これにより、開発者は小規模なリソースから始めて、将来的にマルチホスト構成へシームレスにスケールアップできる道筋が提供されます。",
+    "topics": [
+      "MaxText",
+      "TPU",
+      "JAX",
+      "Reinforcement Learning",
+      "Fine-tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "MaxText Expands Post-Training Capabilities: Introducing SFT and RL on Single-Host TPUs"
+  }
+}

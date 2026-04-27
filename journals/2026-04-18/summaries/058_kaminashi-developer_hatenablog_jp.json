@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:17:37.204833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのための特別なアーキテクチャはいらない ― 0→1開発で実践した設計原則とガードレール",
+    "url": "https://kaminashi-developer.hatenablog.jp/entry/you-might-not-need-dedicated-architecture-for-ai",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI機能をプロダクトに組み込む際、過剰に複雑な専用インフラや構成を避け、既存のWebアプリケーション設計を活かしてシンプルに構築する重要性を説く記事。",
+    "summaryBody": "この記事は、株式会社カミナシの開発チームによる、AI（特にLLM）を活用した機能開発におけるアーキテクチャ選定の知見をまとめたものです。多くの開発者がAI導入に際して専用のベクトルデータベースや複雑なオーケストレーションツールの導入を検討しがちですが、筆者は「AIを特殊視しすぎない」ことの重要性を強調しています。既存のドメイン駆動設計（DDD）やWeb開発のプラクティスをそのまま適用し、必要な場合のみ特定のAIコンポーネントを追加することで、保守性を維持しつつ迅速な価値提供が可能になります。過度な抽象化を避け、技術的負債を最小限に抑えながらAI機能を実装するための現実的なトレードオフの考え方が示されています。",
+    "topics": [
+      "AI開発",
+      "ソフトウェアアーキテクチャ",
+      "LLM",
+      "システム設計",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

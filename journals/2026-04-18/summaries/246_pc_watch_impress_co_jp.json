@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:24:59.504488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NPUって要するに何？AI処理でGPUが限界を迎え、専用プロセッサが台頭する理由",
+    "url": "https://pc.watch.impress.co.jp/docs/column/tidbit/2101870.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI処理におけるGPUの歴史的背景と限界を整理し、演算効率や電力消費を劇的に改善するNPU（AIプロセッサ）の技術的特徴を深掘りする解説記事。",
+    "summaryBody": "本記事は、半導体ジャーナリストの大原雄介氏が、NPU（AIプロセッサ）の定義とその必要性について解説したものです。まず、2012年のAlexNet登場以降、演算性能と入手性の高さからNVIDIAのGPUがAI研究のデファクトスタンダードとなった背景を説明。しかし、現在のLLM（大規模言語モデル）の進化に対し、GPUは電力消費の爆発的な増大（ラックあたり数百kW）、バッチサイズ依存による効率低下、疎行列処理の困難さといった限界に直面しています。これに対し、NPUは「AI演算への超特化」「データフロー型アーキテクチャによる並列処理の最適化」「CIM/PIM（メモリ内演算）によるデータ移動電力の削減」「大量のSRAMやHBMの搭載」といった特徴を備え、GPUの弱点を克服しようとしています。また、エッジ向けのアナログプロセッサや光ファイバーベースのアクセラレータなど、次世代の多様なアプローチについても言及されています。",
+    "topics": [
+      "NPU",
+      "GPU",
+      "AIアクセラレータ",
+      "半導体アーキテクチャ",
+      "深層学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

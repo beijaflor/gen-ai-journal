@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:27:42.880914+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【こわい】Google APIキーの脆弱性により13時間で約900万円請求される事案が発生！ Firebase×Geminiで今すぐやるべきセキュリティ対策",
+    "url": "https://qiita.com/miruky/items/fde2d0747358cd7870d7",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Firebase等の公開APIキーがGemini APIの認証に悪用され、短時間で約900万円の高額請求が発生した事例と、その脆弱性の仕組みおよび具体的な対策を解説した記事。",
+    "summaryBody": "本記事は、Google CloudのAPIキー設定における「デフォルトで制限なし」という仕様と、Gemini API（Generative Language API）の導入が組み合わさることで発生した深刻な高額請求被害について報告しています。従来、FirebaseのAPIキーは設計上クライアントサイドに含めることが許容されていましたが、プロジェクトでGemini APIを有効化すると、既存の公開キーがそのままGeminiの認証に使用可能になる「遡及的な権限拡大（Retroactive Privilege Expansion）」という脆弱性が生じます。実際に13時間で€54,000（約900万円）の請求が発生した事例を引き合いに、APIキーの制限設定（Generative Language APIの明示的な除外）、キーの用途別分離、ローテーション、および割り当て（Quotas）によるリアルタイムなリクエスト制限の重要性を説いています。予算アラートには数時間の遅延があるため、アラートだけに頼る危険性についても警鐘を鳴らしています。",
+    "topics": [
+      "Google Cloud",
+      "Firebase",
+      "Gemini",
+      "APIセキュリティ",
+      "クラウド破産"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

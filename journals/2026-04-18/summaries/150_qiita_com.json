@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:50:32.012460+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe Coding、スペック駆動開発を一歩進める Superpowers という現実解で Flutter アプリを作ってみた話 #ClaudeCode",
+    "url": "https://qiita.com/kunitomo926/items/305540d2ab13e61806c9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのプラグイン「Superpowers」を用いて、設計・計画・実装・テストのプロセスをAIに強制し、高品質なFlutterアプリを構築する手法の解説。",
+    "summaryBody": "Claude Codeの利用において、AIが設計をスキップして場当たり的にコードを書く「Vibe Coding」や、仕様書を与えても無視される課題を解決するプラグイン「Superpowers」の実践ガイドです。Superpowersは、対話による要件定義（Brainstorming）、詳細なタスクリスト作成（Write Plan）、自動実装、そしてテストという開発チームが踏むべきプロセスをAIエージェントに強制します。\n\n本記事ではFlutter製の習慣トラッカー開発を例に、著者が「実装とテストのエージェントを分ける」「E2Eテストを含める」という制約をプランに反映させた過程を紹介しています。RiverpodやSQLiteを用いた堅牢なアーキテクチャが採用され、タスクごとの自動スペック準拠レビューによって不備が即座に修正される様子が描かれています。最終的に185個のテスト（Unit/Widget/E2E）をパスするまでのフローが示されており、単なるプロンプトエンジニアリングを超えた「プロセス管理」としてのAIコーディングの有用性が強調されています。",
+    "topics": [
+      "Claude Code",
+      "Superpowers",
+      "Flutter",
+      "AI駆動開発",
+      "Riverpod"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

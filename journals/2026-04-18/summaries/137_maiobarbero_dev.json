@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:54:56.800811+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIアシスタントを活用した開発ワークフロー：コードを書く前の「思考」を構造化する",
+    "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによるコード生成の速度を活かしつつ、保守性を損なわないために「実装前の思考と設計」をAIとの対話で徹底的に言語化・構造化する7段階のワークフロー。",
+    "summaryBody": "Tech LeadであるMatteo Barbero氏が提唱する、AIを活用した効率的かつ持続可能な開発ワークフローの解説です。筆者は「AIは実装には優れているが、ユーザーが本当に求めていることの把握や前提条件の検証には不向きである」と指摘。この課題を解決するため、実装前の「思考プロセス」を重視した7つのステップを提唱しています。\n\n1. **自由形式のプラン作成**: 自分の考えをプレーンテキストで言語化する。\n2. **AIによるPRD生成**: AIがコードベースを探索し、人間への執拗なインタビューを通じて例外系や依存関係を詰めた構造的なPRDを作成。\n3. **垂直スライスでのIssue化**: UIからDBまでを網羅した検証可能な単位に分割し、AI単独で完結可能な「AFK」と人間の判断が必要な「HITL」に分類。\n4. **タスクの細分化**: 1セッションで完結する具体的なAIへの指示書を作成。\n5. **実装のハンドオフ**: タスクごとにクリーンなAIセッションで実行させ、文脈のドリフトを防ぐ。\n6. **6パスによるコードレビュー**: ロジック、セキュリティ、命名規則など多角的な自動レビュー。\n7. **最終監査**: システム全体の一貫性を確認。\n\nAIを「設計のストレスステスト」と「実行の加速器」として位置づけ、エンジニアの判断を各工程のチェックポイントとして組み込むことで、速度と品質を両立させる手法です。",
+    "topics": [
+      "AI Workflow",
+      "Tech Leadership",
+      "Software Design",
+      "LLM Productivity",
+      "PRD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "My AI-Assisted workflow"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:44:05.921817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel Workflowsが正式リリース：耐久性に優れた実行を可能にする新しいプログラミングモデル",
+    "url": "https://vercel.com/blog/a-new-programming-model-for-durable-execution",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelが、インフラ管理不要で長期間実行される処理やAIエージェントを構築できる「Vercel Workflows」を正式公開し、TypeScriptとPythonでの開発に対応しました。",
+    "summaryBody": "Vercelは、長期実行型プロセスやAIエージェント、信頼性の高いバックエンドを構築するための「Vercel Workflows」を正式リリース（GA）しました。このモデルの最大の特徴は、従来のオーケストレーションサービスを不要にし、アプリケーションコード内に「use workflow」や「use step」といったディレクティブを記述するだけで、リトライ処理、状態の永続化、ステップの隔離、可観測性を自動的に実現できる点にあります。\n\n主な特徴は以下の通りです：\n1. オーケストレーターの排除：実行状態を記録するイベントログ、Fluid compute、Vercel Queuesを基盤とし、実行したコンピューティング分のみ課金される仕組みを採用。\n2. AIエージェントへの最適化：AI SDKとの深い統合により、ツール呼び出しやステート管理、外部イベント待ちを伴う長時間実行エージェントを容易に開発可能。また「Durable Streams」により、ブラウザを閉じてもストリーミングを中断・再開できる機能を提供します。\n3. 高度なセキュリティ：データは環境外に出る前にデフォルトで暗号化されます。\n4. マルチランゲージ対応：TypeScriptに加え、Python SDKがベータ版として公開されました。\n\nまた、次世代の「Workflows 5」では、並行制御（ロックプリミティブ）やスナップショットベースのランタイムによるリプレイオーバーヘッドの削減が予定されています。",
+    "topics": [
+      "Vercel Workflows",
+      "Durable Execution",
+      "AI Agents",
+      "TypeScript",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "A new programming model for durable execution"
+  }
+}

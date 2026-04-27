@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:12:59.352616+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "hermes-agent：GitHub 67,000 Starの「自己成長型AIエージェント」の技術的仕組み",
+    "url": "https://qiita.com/nogataka/items/48328a49ae80dead6174",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Nous Researchが開発した、実行結果からスキルを自律生成・改善し続ける「自己成長型」AIエージェント『hermes-agent』の4層構造アーキテクチャと技術的背景を解説。",
+    "summaryBody": "GitHubで急速な支持を得ている『hermes-agent』の核心である「自己成長（Self-Improving）」メカニズムを詳説した記事です。最大の特徴は、エージェントが実行結果を評価し、再利用可能な手続き知識（スキル）をMarkdown形式で自動生成・改善する4層の学習ループにあります。このシステムは、単なるエピソード記憶ではなく、次に役立つ「手順」を蓄積する設計となっており、使い込むほどユーザーの好みや作業スタイルに適応します。また、外部ライブラリ『Honcho』を用いたユーザーモデリングや、モデルを切り替えても蓄積された知識が失われないモデル非依存のデータ管理、superpowersやClaude Managed Agentsといった競合プロジェクトとの機能比較など、エージェントの将来像を決定づける技術的要素を網羅しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "hermes-agent",
+      "Nous Research",
+      "自己改善"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

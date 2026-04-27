@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:25:13.458716+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.7 を Claude Code で使いこなすためのベストプラクティス",
+    "url": "https://claude.com/blog/best-practices-for-using-claude-opus-4-7-with-claude-code",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Opus 4.7の特性に合わせ、新設された努力レベル「xhigh」の活用や、アダプティブ・シンキング（適応的思考）への最適化を通じてClaude Codeの効率を最大化する手法が公開されました。",
+    "summaryBody": "Anthropicは、コーディングとエージェントタスクに特化した最新モデル「Claude Opus 4.7」をClaude Codeで最適に運用するためのガイドを公開しました。主な推奨事項は以下の通りです。\n\n1. **構造化された対話**: 細かな指示を繰り返す「ペアプログラミング型」ではなく、最初のターンで背景・制約・受入基準を網羅的に伝え、モデルに自律的な実行を任せる「委譲型」のアプローチが推奨されています。\n2. **新しい努力レベル「xhigh」**: デフォルト設定となった「xhigh」は、推論能力とトークンコストのバランスが最適化されており、API設計や大規模なリファクタリングに最も適しています。\n3. **アダプティブ・シンキング**: 固定の思考バジェットではなく、タスクの難易度に応じてモデルが思考の深さを自動調整します。プロンプトで「ステップバイステップで考えて」と明示することで、思考の強度を制御可能です。\n4. **動作の変更点**: 以前のモデルより回答が簡潔になり、ツールの呼び出しやサブエージェントの生成がより慎重（必要な時のみ実行）になっています。\n\nこれらの調整により、曖昧なバグの修正や複数ファイルにわたる複雑な変更において、従来以上の自律性を発揮できるようになります。",
+    "topics": [
+      "Claude Opus 4.7",
+      "Claude Code",
+      "AIコーディング",
+      "Anthropic",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Best practices for using Claude Opus 4.7 with Claude Code"
+  }
+}

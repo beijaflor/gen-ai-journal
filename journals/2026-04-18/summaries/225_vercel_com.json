@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:30:25.090424+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zo ComputerがVercelの導入でAIの信頼性を20倍向上させた方法：AI GatewayとSDKの活用事例",
+    "url": "https://vercel.com/blog/how-zo-computer-improved-ai-reliability-20x-on-vercel",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Zo ComputerはVercelのAI SDKとAI Gatewayを導入することで、リトライ率を20倍削減し、P99レイテンシを38%短縮する劇的な信頼性向上を実現しました。",
+    "summaryBody": "## 概要\n個人向けAIクラウドプラットフォームを提供するZo Computerが、VercelのAIインフラを採用して達成した劇的な改善についての事例紹介です。同社はOpenAIやAnthropicなど複数のモデルプロバイダーを統合する際の複雑さと信頼性の低さに直面していました。\n\n## 課題：マルチモデル管理の「アダプター地獄」\n以前のシステムでは、プロバイダーごとにカスタムアダプターを記述し、リトライ処理やフォールバックロジック、エラーハンドリングを自前で管理する必要がありました。これにより、新しいモデルの追加には数時間の開発が必要で、リトライ率は7.5%に達していました。\n\n## 解決策：AI SDKとAI Gatewayの統合\n- **AI SDK**: モデル間のインターフェースを統一し、レスポンス形式の正規化や画像サポートを簡素化しました。\n- **AI Gateway**: ルーティングレイヤーでリトライ、フォールバック、プロバイダーのヘルスモニタリングを自動化。インフラの複雑さをコードから排除しました。\n\n## 主要な成果\n- **信頼性の飛躍的向上**: リトライ率が7.5%から0.34%へ低下（20倍の改善）。チャット成功率は99.93%を達成。\n- **パフォーマンス改善**: 平均レイテンシが25.7%改善し、P99レイテンシは131秒から81秒へと38%短縮されました。\n- **開発効率の向上**: 新モデルのサポートにかかる時間が「数時間のコード修正とデプロイ」から「設定変更のみの30秒」に短縮されました。\n\nこの事例は、小規模なチームがAIの「配管（インフラ管理）」に時間を取られず、プロダクト開発に専念するためにVercelのAIツールが強力な武器になることを示しています。",
+    "topics": [
+      "Vercel",
+      "AI Gateway",
+      "AI SDK",
+      "LLM Infrastructure",
+      "Reliability Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How Zo Computer improved AI reliability 20x on Vercel"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:33:40.712363+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Package Manager (APM): AIエージェント設定の依存関係を管理するOSSツール",
+    "url": "https://github.com/microsoft/apm",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントのプロンプトやスキル、プラグインの設定をapm.ymlで一括管理し、再現可能な開発環境を構築するパッケージマネージャー。",
+    "summaryBody": "APM (Agent Package Manager) は、Microsoftが公開したAIエージェントのためのオープンソース依存関係マネージャーです。npmやpipのように、apm.ymlというマニフェストファイルを用いて、AIエージェントに必要なコンテキスト（指示、スキル、プロンプト、プラグイン、MCPサーバーなど）を定義し、プロジェクト間でポータブルかつ再現可能な形での管理を可能にします。主な特徴として、マルチホスト（GitHub, GitLab等）からのインストール対応、パッケージ間の推移的依存関係の自動解決、不正なUnicode文字を検知するセキュリティ監査機能、GitHub CopilotやClaude Code向けプラグインの標準形式での書き出しなどが挙げられます。コードベースを分析して指示を自動生成するagentrcとも親和性が高く、組織内でのAI開発の標準化と共有を強力に支援します。",
+    "topics": [
+      "AIエージェント",
+      "パッケージマネージャー",
+      "GitHub Copilot",
+      "プロンプトエンジニアリング",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Agent Package Manager (APM)"
+  }
+}

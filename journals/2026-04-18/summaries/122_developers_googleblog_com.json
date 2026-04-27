@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:58:47.057439+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "次世代AIエージェントを構築するための5つの核心的な開発ヒント：Googleの「Agent Bake-Off」より",
+    "url": "https://developers.googleblog.com/build-better-ai-agents-5-developer-tips-from-the-agent-bake-off/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google Cloudが開催したAIエージェント開発競技の知見から、プロンプトの工夫を超えて「厳格なエンジニアリング」へと移行するための5つの主要なアーキテクチャ設計指針を提示。",
+    "summaryBody": "Google Cloudが主催した「AI Agent Bake-Off」の結果から、プロダクションレベルのAIエージェントを構築するための実践的な教訓が共有されています。主なポイントは以下の5点です：\n\n1. **モノリスからの脱却**: 単一のLLMに全てを任せず、特殊化したサブエージェントとスーパーバイザーで構成するマイクロサービス的な「マルチエージェント・ワークフロー」を採用する。\n2. **不変性の排除**: モデルは数週間で進化するため、エージェント・ハーネス（制御コード）は常に置き換え可能なモジュール形式で設計する。\n3. **マルチモーダルのネイティブ化**: テキストのみの推奨ではなく、画像生成や視覚情報の抽出を中核機能として統合し、より有機的な体験を提供する。\n4. **標準プロトコルの活用**: MCP（Model Context Protocol）などのオープンな標準を採用し、独自の「接着コード」の記述を避けて将来の拡張性を確保する。\n5. **推論と実行の分離**: 数値計算などの決定論的なタスクをLLMに直接行わせず、LLMは「意図の抽出」に限定し、実際の実行はPydantic等の厳格なスキーマを経由して従来のコードに行わせる。\n\n単なるデモから、実用的で信頼性の高い商用アプリケーションへと進化させるための具体的なエンジニアリング手法が強調されています。",
+    "topics": [
+      "AIエージェント",
+      "マルチエージェント・アーキテクチャ",
+      "LLMエンジニアリング",
+      "Model Context Protocol (MCP)",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "Build Better AI Agents: 5 Developer Tips from the Agent Bake-Off"
+  }
+}

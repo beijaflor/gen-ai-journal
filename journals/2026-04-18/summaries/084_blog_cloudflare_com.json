@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:09:18.373808+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareにおけるModel Context Protocol (MCP)の大規模導入とセキュリティリファレンスアーキテクチャ",
+    "url": "https://blog.cloudflare.com/enterprise-mcp/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareは、企業がMCPを安全かつ効率的に導入するためのリファレンスアーキテクチャを公開し、トークン消費を94%削減する「Code Mode」や未承認MCPサーバーの検知手法を提示しました。",
+    "summaryBody": "Cloudflareは、Model Context Protocol (MCP) を全社的なAI戦略の中核として採用する中で直面したセキュリティとコストの課題を解決するためのリファレンスアーキテクチャを公開しました。主な技術的進歩として、まず個々の従業員によるローカルMCPサーバーの運用を制限し、Cloudflareのプラットフォーム上で管理・認証された「リモートMCPサーバー」へと移行しました。これにより、Cloudflare Accessを通じた認証や、MCP Server Portalsによる中央集中型のガバナンスとDLP（データ漏洩防止）が可能になります。また、新機能「Code Mode」は、全てのツール定義をプロンプトに含める代わりに、必要なツールを動的に探索・実行する仕組みを導入し、LLMのトークン消費量を約94%削減しました。さらに、Cloudflare GatewayのHTTP検査機能を活用し、JSON-RPCメソッドに基づいた正規表現で「シャドウMCP（未承認の外部MCP利用）」を検知・遮断する手法も確立しています。この包括的なアプローチは、AIエージェントの自律性を維持しつつ、企業のコンプライアンスとコスト効率を両立させる先駆的なモデルとなっています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Cloudflare One",
+      "AI Security",
+      "LLM Cost Optimization",
+      "Shadow IT Detection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    },
+    "originalTitle": "Scaling MCP adoption: Our reference architecture for simpler, safer and cheaper enterprise deployments of MCP"
+  }
+}

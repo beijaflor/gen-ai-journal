@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:28:46.483994+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude 4.7の新トークナイザー計測：技術文書で最大1.47倍のトークン増と実質的なコスト増",
+    "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude 4.7の新しいトークナイザーは、技術文書においてトークン数を最大1.47倍増加させ、実行コストを実質20〜30%押し上げる一方で、指示遵守能力をわずかに向上させている。",
+    "summaryBody": "Anthropicが公開したClaude 4.7の移行ガイドでは、新トークナイザーによるトークン増を1.0〜1.35倍としていますが、実際の技術文書やコードベースでの計測では最大1.47倍（CLAUDE.mdで1.45倍）に達することが判明しました。特に英語やプログラミングコードにおいてこの傾向が顕著であり、キャッシュ利用時でもセッション全体のコストが約20〜30%増加します。\n\n著者は、この変更の代償としてAnthropicが主張する「指示遵守能力の向上」をIFEvalを用いて検証しました。結果、厳密な指示遵守において+5ポイントの改善が確認されました。トークンが細分化されることでモデルの注意力が向上した可能性がありますが、ユーザーは同じ予算やレートリミット内で処理できる情報量が実質的に減少することに注意が必要です。特にClaude Codeのような長大なコンテキストを扱うツールでは、キャッシュの効率や料金に直接的な影響を及ぼします。",
+    "topics": [
+      "Claude 4.7",
+      "トークナイザー",
+      "LLMコスト",
+      "Anthropic",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "I Measured Claude 4.7's New Tokenizer. Here's What It Costs You."
+  }
+}

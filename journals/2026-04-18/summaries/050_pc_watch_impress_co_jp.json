@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:19:33.725290+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザだけで即ローカルLLM。WebGPUでGemma-4やQwen 3.5を試す",
+    "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2100827.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "WebGPU技術を活用し、専用ソフトのインストールなしでブラウザから直接Gemma-4やQwen 3.5などの最新AIモデルをローカル実行する方法を解説している。",
+    "summaryBody": "本記事では、WebGPU技術を用いてWebブラウザ上でローカルLLMを動かすメリットと現状を解説しています。従来のLM Studio等のソフトを介さず、URLにアクセスするだけでGPUを活用した高速な推論が可能になります。macOS（Metal）とWindows（Direct3D 12）での実装の違いによるオーバーヘッドの問題や、Gemma-4 E2B、Qwen 3.5、gpt-oss-20bといった最新モデルに対応した4つの具体的なデモサイトを紹介。さらに、著者が独自に開発したVision（画像認識）機能やWeb検索機能を統合したカスタマイズ版についても触れており、プライバシーを確保しつつ手軽にAIを利用する新しい開発手法を提示しています。",
+    "topics": [
+      "WebGPU",
+      "ローカルLLM",
+      "Gemma-4",
+      "Qwen 3.5",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

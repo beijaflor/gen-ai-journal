@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:21:39.176399+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにおけるサブエージェントの活用ガイド",
+    "url": "https://claude.com/blog/subagents-in-claude-code",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeでコンテキストの肥大化を防ぎ、タスクの並列化や独立したリサーチを可能にする「サブエージェント」の仕組みと実践的な活用パターンを解説しています。",
+    "summaryBody": "この記事は、AnthropicのCLIツール「Claude Code」の新機能であるサブエージェントについての包括的なガイドです。サブエージェントはメインセッションから独立したコンテキストを持つClaudeのインスタンスであり、リサーチ、並列タスク、客観的なレビューなどの用途に最適です。記事では、自然言語による会話形式の呼び出し、`.claude/agents/`でのカスタムエージェント定義、`CLAUDE.md`による指示、再利用可能な「スキル」、自動実行される「フック」など、多様な制御方法を紹介しています。また、同一ファイルの同時編集や高度な相互連携が必要な場合には不向きであるといった、実運用上の注意点も具体的に示されており、開発者がAIエージェントを効率的にオーケストレーションするための知見が詰まっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ソフトウェア開発効率化",
+      "コンテキストウィンドウ",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "How and when to use subagents in Claude Code"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:07:05.187390+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェント・ソフトウェア開発は分散システムの問題である（AGIでも解決できない）",
+    "url": "https://kirancodes.me/posts/log-distributed-llms.html",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "マルチエージェントによるソフトウェア開発は本質的に分散コンセンサス問題であり、FLP定理やビザンチン将軍問題といった分散システムの理論的限界からはモデルの知能向上だけでは逃れられないと論じている。",
+    "summaryBody": "本記事は、LLMを用いたマルチエージェントによるソフトウェア開発（MASD）を、分散システムの理論的枠組みから批判的に分析している。著者は、自然言語のプロンプトが本質的に曖昧であり、複数のエージェントが共同でコードを生成する過程は「分散コンセンサス問題」そのものであると指摘する。記事では、分散システムの2つの重要な不可能定理をMASDに適用している。第一に「FLP定理」により、非同期システムにおけるエージェントの遅延やクラッシュ故障がある限り、安全性と生存性を同時に保証することはできない。第二に「ビザンチン将軍問題」を引用し、プロンプトを誤認するエージェントが一定数（1/3）を超えると合意形成が不可能になることを示した。著者は「次世代のモデルが賢くなれば調整問題は解決する」という楽観論を否定し、AGIであってもこれらの理論的制約は回避できないと主張する。結論として、スケーラブルなマルチエージェント開発を実現するためには、場当たり的な手法ではなく、分散システム理論に基づいたプロトコル、言語、および検証ツールの設計が不可欠であると強調している。",
+    "topics": [
+      "マルチエージェントシステム",
+      "LLM",
+      "分散システム",
+      "コンセンサスアルゴリズム",
+      "形式手法"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Multi-agentic Software Development is a Distributed Systems Problem (AGI can't save you from it)"
+  }
+}

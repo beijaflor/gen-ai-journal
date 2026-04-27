@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:35:33.868362+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "takt 入門 - AI マルチエージェントオーケストレーションで開発ワークフローを自動化する",
+    "url": "https://zenn.dev/rasshii/articles/dc19793edab99a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントのワークフローをYAMLで定義し、複数モデルの連携や自動レビューを可能にするオーケストレーションツール「takt」の解説記事。",
+    "summaryBody": "本記事は、AIコーディングエージェントを自律的に連携させるツール「takt (TAKT Agent Koordination Topology)」の入門ガイドです。単一のAIモデルに依存することによる「自己強化バイアス」や「特定モデルの癖」といった課題を解決するため、taktを用いたマルチエージェント環境の構築方法を解説しています。主な機能として、YAMLによるワークフロー定義、Persona/Policy/Knowledgeといった要素（ファセット）による振る舞いの制御、ClaudeやCopilotなど複数プロバイダの混在利用、無限ループを防ぐ「ループ監視」などが挙げられます。記事では、テスト駆動開発（TDD）フローや、実装とレビューで異なるモデルを使用する「クロスレビュー」の具体的なYAML設定例が示されており、開発プロセスの自動化と品質保証を組織的に管理するための実践的なアプローチが提示されています。",
+    "topics": [
+      "AIエージェント",
+      "takt",
+      "LLM",
+      "ワークフロー自動化",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "takt 入門 - AI マルチエージェントオーケストレーションで開発ワークフローを自動化する"
+  }
+}

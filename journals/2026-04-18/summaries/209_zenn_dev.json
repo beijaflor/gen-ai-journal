@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:34:40.273033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【LLM Wiki】Obsidian x Claude Codeで学んだ知識を構造化し記憶媒体を脳からAIに移行する",
+    "url": "https://zenn.dev/dely_jp/articles/8b55114cc0b958",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Andrej Karpathy氏の「LLM Wiki」概念をObsidianとClaude Codeで実装し、情報を検索（RAG）ではなく、AIが自律的に整理・更新し続ける「コンパイルされた知識ベース」へと昇華させる手法の解説。",
+    "summaryBody": "本記事は、Andrej Karpathy氏が公開した「LLM Wiki」という概念を、Claude Codeのカスタムスキルとして実装した実践的なガイドです。従来のRAGが「検索→合成」を毎回ゼロから繰り返すのに対し、LLM WikiはソースドキュメントをLLMが読み込み、相互参照が張られた永続的なマークダウンファイル群（Wiki）へと「コンパイル」します。このアプローチにより、知識は時間とともに成長し、矛盾の修正や関連トピックの統合が動的に行われます。\n\n著者はClaude Codeの`/skill-creator`を用いて、`ingest`（取り込み）、`query`（質問）、`lint`（健全性チェック）、`init`（初期化）の4つの操作を定義したスキルを構築。Obsidianと組み合わせることで、AIが管理する知識を人間がグラフビュー等で可視化・閲覧できる環境を整えています。さらに、大規模な運用を見据えた「2層インデックス構造」の採用や、ページの作成・更新・分割に関する明確な判断基準の言語化など、実用性を高めるための独自の設計判断が詳細に紹介されており、パーソナルなAIナレッジマネジメントの高度な実例となっています。",
+    "topics": [
+      "LLM Wiki",
+      "Obsidian",
+      "Claude Code",
+      "AIエージェント",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 93
+    },
+    "originalTitle": null
+  }
+}

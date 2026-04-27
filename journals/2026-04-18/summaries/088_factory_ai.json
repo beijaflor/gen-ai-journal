@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:08:17.446016+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Factory.aiによるAI自律開発システム「Missions」のアーキテクチャ解説",
+    "url": "https://factory.ai/news/missions-architecture",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "大規模な開発タスクを「関心の分離」と「2段階のテスト駆動開発」に基づき、複数の特化型エージェントに分散実行させることで、高い信頼性を実現する自律型AI開発システム「Missions」の内部構造。",
+    "summaryBody": "Factory.aiが発表した「Missions」は、数日間にわたる複雑なエンジニアリングタスクを自律的に完遂するためのフレームワークです。従来、単一のエージェントに長時間タスクを任せると、コンテキストの肥大化による精度低下（Context Dilution）や、自らの実装を客観的に評価できないバイアス（Self-Evaluation Bias）が発生する課題がありました。Missionsはこの課題に対し、役割を「Orchestrator（計画・分解）」「Workers（実装）」「Validators（独立検証）」に分離するアーキテクチャを採用しています。特徴的なのは「2段階のTDD」で、ミッション全体に対して最初に振る舞いの定義（バリデーション・コントラクト）を策定し、実装後に別のエージェントがブラックボックス形式で検証を行います。実証実験では、約16時間でSlackクローンを構築し、89%のコードカバレッジと38,000行以上のコード生成に成功しており、AIによるソフトウェア開発の新たなパラダイムを提示しています。",
+    "topics": [
+      "AI Agents",
+      "Autonomous Development",
+      "Software Engineering",
+      "Agentic Workflow",
+      "TDD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "How Missions Work"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:25:53.056687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メルカリのClaude Codeセキュリティ設定の組織配布戦略",
+    "url": "https://speakerdeck.com/hi120ki/claude-code-organization-settings",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "メルカリがAIエージェント「Claude Code」を全社導入する際、エンジニアと非エンジニアのニーズを両立させるためにMDMを活用したセキュリティ設定の配布戦略を解説した資料。",
+    "summaryBody": "本スライドは、Anthropicが提供するAIエージェント「Claude Code」を組織内で安全に運用するためのメルカリの実践例を紹介しています。Claude Codeはファイル編集やコマンド実行が可能なため、認証情報の漏洩や破壊的コマンドの実行といったリスクがあります。メルカリでは、パーミッションの強制、特定コマンド（curl等）の確認必須化、サンドボックスによるネットワーク制限、カスタムシステムプロンプトの注入といったセキュリティ対策を講じています。特に、MDM（端末管理システム）を利用して設定を配布する際、カスタマイズを重視するエンジニアと、初期設定での安全性を求める非エンジニアとで設定を分離し、生産性を損なわずに安全性を確保する戦略が示されています。",
+    "topics": [
+      "Claude Code",
+      "AIセキュリティ",
+      "メルカリ",
+      "MDM",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

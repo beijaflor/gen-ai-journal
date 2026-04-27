@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:11:31.539336+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Spec-Driven Presentation Maker — 伝えたいことを先に設計し、スライド構築は AI に任せる",
+    "url": "https://aws.amazon.com/jp/blogs/news/spec-driven-presentation-maker-ja/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "「何を伝えるか」の設計（仕様）をAIとの対話で先に固め、実際のスライド構築は既存テンプレートに合わせてAIが自動で行う、AWSのオープンソースツールの紹介。",
+    "summaryBody": "本記事では、AWSが公開したオープンソースのプレゼン資料作成ツール「Spec-Driven Presentation Maker」のコンセプトと導入方法が解説されています。従来の「白紙のスライドから作り始めてレイアウト調整に時間を取られる」あるいは「AIに丸投げして論理構成が破綻する」といった課題に対し、ソフトウェア開発の設計思想（仕様駆動）をプレゼン作成に応用しています。\n\n主な特徴は以下の通りです：\n- **3つの設計フェーズ**: 「ブリーフィング（目的定義）」「アウトライン（1スライド1メッセージの構成）」「アートディレクション（視覚効果）」をAIと対話しながら定義します。\n- **ブランド準拠**: 独自のPowerPointテンプレート（.pptx）をアップロードして、企業のガイドラインに沿ったデザインを自動適用可能です。\n- **柔軟な連携**: Web UIだけでなく、MCP（Model Context Protocol）に対応しており、VS CodeやClaude Desktopなどの使い慣れたAIツールからも操作できます。\n- **セキュアなデプロイ**: ユーザー自身のAWSアカウント内にデプロイされるため、データがサードパーティに送信される不安がなく、Amazon Bedrockを活用した安全な運用が可能です。\n\nアーキテクチャは4層構造になっており、個人のローカル試行からチームでのフルスタック利用まで段階的に拡張できる設計となっています。",
+    "topics": [
+      "Amazon Bedrock",
+      "生成AI",
+      "プレゼンテーション",
+      "オープンソース",
+      "MCP (Model Context Protocol)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:24:24.739337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeトークン消費を抑えて5倍使う: 「原始人」口調が80%削減",
+    "url": "https://zenn.dev/mikana0918/articles/7ad57493a04f88",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "日本語特有の敬語や冗長な表現を排除するプロンプト技術「genshijin」を用いて、Claudeのトークン消費を最大80%削減する手法を解説。",
+    "summaryBody": "本記事では、Claude Code向けの英語圧縮スキル「caveman」を日本語に最適化した「genshijin（原始人）」モードを提案しています。日本語のトークナイザ（BPE）特性を分析し、敬語・クッション言葉・冗長な助詞を徹底的に排除して体言止めを多用することで、技術的情報の密度を維持したままトークン数を劇的に減らす仕組みを解説。実際のCORSエラー対応や概念解説のタスクにおいて、通常時と比較して80%以上の削減効果を実証しています。また、Extended Thinking（思考モデル）適用時のトークン消費傾向や精度への影響についても詳細なベンチマーク結果を公開しており、実用的なAIエージェント設定（Cursor, Windsurf等）としての導入方法まで網羅しています。",
+    "topics": [
+      "Claude",
+      "プロンプトエンジニアリング",
+      "トークン最適化",
+      "Claude Code",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

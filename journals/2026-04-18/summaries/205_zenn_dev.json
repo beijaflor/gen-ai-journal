@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:35:47.094758+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code ルーチン を触ってみた: 既存スケジューリング手段との差分とナレッジワーカー向け3サンプル設計",
+    "url": "https://zenn.dev/canly/articles/ed403b2b3d3bb3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの新機能「ルーチン」について、GitHub Actions等の既存手段との違いを整理し、ナレッジワーカーが即活用できる3つの自動化実サンプルを解説した検証記事。",
+    "summaryBody": "Claude Codeに追加された「ルーチン」機能（リサーチプレビュー）の特性と活用法を詳解した記事です。クラウド上のAnthropic管理環境で完全自律実行されるこの機能について、スケジュール・API・GitHubイベントという3種のトリガーの仕組みを解説。既存のGitHub Actionsやローカルタスクとの比較表を用い、個人アカウント紐付けという特性を活かした「Actionsを補完する」使い分けを提唱しています。具体例として、Slackへの週次活動報告、ターミナルからのIssue自動生成、PR時のドキュメント整合性チェックの3つのプロンプト例と設定手順を公開。さらに、現時点での実行上限数やUTC設定の注意点、UIとドキュメントの乖離といった実戦的な落とし穴についても深く言及しています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "ルーチン (Routines)",
+      "GitHub Actions",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Claude Code ルーチン を触ってみた: 既存スケジューリング手段との差分とナレッジワーカー向け3サンプル設計"
+  }
+}

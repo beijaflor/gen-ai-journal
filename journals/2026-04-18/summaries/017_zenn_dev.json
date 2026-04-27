@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:27:31.818794+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agents を試してみた",
+    "url": "https://zenn.dev/kumamo_tone/articles/365845d65e6cf4",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicの新機能「Claude Managed Agents」を使い、GitHubリポジトリをマウントして自律的にコードレビューを行うエージェントを構築した実践レポートです。",
+    "summaryBody": "Anthropicが発表した、自律型エージェントの実行インフラ「Claude Managed Agents」の試用記事です。この機能は、Anthropicがホストするサンドボックス環境（コンテナ）内でClaudeがbash、ファイル操作、コード実行、ウェブ閲覧を自律的に行えるようにするものです。著者はCloudflare Workersと組み合わせ、GitHub PRが作成された際にリポジトリをマウントしてコード読解、テスト実行、レビュー投稿を自動で行うシステムを構築しました。記事内では「エージェント（設定）」と「セッション（実行インスタンス）」という基本概念の解説に加え、SDK未対応時のAPI直接叩き方、デバッグ手法、コスト面での注意点がまとめられています。また、類似の自動化機能である「Web Scheduled Tasks」や「Routines」との使い分けについても触れられており、開発者にとっての導入判断に役立つ内容となっています。",
+    "topics": [
+      "Claude Managed Agents",
+      "Anthropic",
+      "AIエージェント",
+      "Cloudflare Workers",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:21:12.320935+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "分析エージェントの問題点と、セマンティックレイヤーという打ち手──AIにSQLを書かせない設計",
+    "url": "https://zenn.dev/gixo/articles/semantic-layer-agent-bigquery",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自然言語でのデータ分析におけるAIエージェントの不安定さを解消するため、セマンティックレイヤーを介してSQL生成を分離し、ビジネスロジックの一元管理と実行の決定性を担保する設計手法を解説する。",
+    "summaryBody": "自然言語でデータを分析するAIエージェントが実務で直面する「SQL生成の揺れ」「ビジネス定義の不在」「スキーマ変更への弱さ」といった課題を分析し、その解決策としてセマンティックレイヤーの導入を提案している。LLMに直接SQLを書かせるのではなく、ビジネスロジック（指標定義）を集約したセマンティックレイヤー（Cube等）をAPI経由で呼び出す役割分担により、分析の再現性と信頼性を向上させる。記事内ではBigQueryの公開データセット、Cube Core、Geminiを用いた具体的な実装例を紹介し、コードベースで「AIにSQLを書かせない」アーキテクチャの優位性を示している。最終的に、分析の信頼性は「指標の意味づけをどこに置き、SQLの組み立てを誰に任せるか」という設計に依存することを強調している。",
+    "topics": [
+      "セマンティックレイヤー",
+      "AIエージェント",
+      "Text-to-SQL",
+      "Cube",
+      "データ分析基盤"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

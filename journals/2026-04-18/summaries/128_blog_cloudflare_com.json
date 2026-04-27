@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:57:13.221828+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Agents SDKに音声機能が登場：リアルタイムな対話型AIエージェントの開発が容易に",
+    "url": "https://blog.cloudflare.com/voice-agents/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、既存のAgents SDKにリアルタイムな音声対話機能を追加する実験的パッケージ「@cloudflare/voice」をリリースしました。",
+    "summaryBody": "Cloudflareは、エージェント開発用ツールキット「Agents SDK」の拡張として、音声パイプライン機能「@cloudflare/voice」を発表しました。この新機能により、開発者はDurable ObjectsやSQLiteベースの既存アーキテクチャを維持したまま、単一のWebSocket接続を介してリアルタイムな音声対話機能をエージェントに統合できます。\n\n主な技術的特徴は以下の通りです：\n- **統合された開発体験**: `withVoice`や`withVoiceInput`といった高階関数を使用することで、既存のエージェントクラスにSTT（音声文字変換）やTTS（音声合成）のロジックをシームレスに組み込めます。\n- **低レイテンシなエッジ処理**: Workers AIとDeepgramのモデル（Flux, Nova 3, Aura）を組み込みでサポートし、Cloudflareのネットワーク上で処理を完結させることで遅延を最小限に抑えています。\n- **マルチモーダルな状態管理**: 音声とテキストが同じDurable Objects上で処理されるため、会話履歴やツール、永続化された状態をチャンネル間で共有可能です。\n- **柔軟なアダプター構成**: Twilioを使用した電話連携や、React用フック、さらには将来的なWebRTC/SFU対応を見据えたプロバイダー非依存の設計となっています。\n\nこれにより、単なるテキストチャットボットを超え、電話、Web、アプリなどあらゆるインターフェースで自然に振る舞う「音声エージェント」の構築が現実的になります。",
+    "topics": [
+      "Cloudflare Agents SDK",
+      "Workers AI",
+      "Voice AI",
+      "Durable Objects",
+      "Real-time Communication"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Add voice to your agent"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-24T12:26:00.827082+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Azure AI SearchのAgentic Retrievalを使ってAgentic RAG実現",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/04/14/120000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Azure AI Searchのプレビュー機能「Agentic Retrieval」を活用し、自律的な検索と回答生成を行うAgentic RAGの実装手順と比較検証について解説しています。",
+    "summaryBody": "Microsoft Azureのプレビュー機能として追加された「Agentic Retrieval」の概要と実装方法を解説する記事です。Agentic Retrievalは、ユーザーの入力から必要なクエリを自律的に作成し、複数回の検索結果を集約して回答するエージェントを容易に構築できる機能です。記事では、出力形式を制御する『Output Mode』や、思考の深さを調整する『Reasoning Effort (minimal/low/medium)』といった主要パラメータを解説。Python SDKを用いた具体的な実装コードを提示し、Reasoning Effortの設定値が生成されるクエリ数、回答の質、実行時間、およびトークン消費量にどのような影響を与えるかを比較検証しています。検証の結果、思考レベルを上げることで広範囲を検索しつつ、要点を整理した回答が得られる傾向にあることを示しています。",
+    "topics": [
+      "Azure AI Search",
+      "Agentic RAG",
+      "LLM",
+      "Python",
+      "Azure AI Foundry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

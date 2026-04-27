@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:37:43.498509+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMのQwen3.6がSVG生成においてClaude Opus 4.7を上回る",
+    "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Simon Willison氏によるベンチマークで、AlibabaのローカルモデルQwen3.6-35B-A3Bが、Anthropicの最新フラグシップモデルClaude Opus 4.7よりも優れたSVG生成能力を示した。",
+    "summaryBody": "Simon Willison氏が提唱する「自転車に乗るペリカン」のSVG生成ベンチマークにおいて、Alibabaの最新モデルQwen3.6-35B-A3B（量子化版）をMacBook Pro M5で実行した結果が、AnthropicのClaude Opus 4.7を上回る結果となった。Opusは自転車のフレームの描画に失敗したが、Qwenは正確に描写した。さらに、追加テストの「一輪車に乗るフラミンゴ」でもQwenが勝利し、SVG内にユーモアのあるコメントまで含めていた。これまでこのベンチマークはモデルの総合的な実力と相関があったが、今回の結果は、特定のクリエイティブ/コード生成タスクにおいて、ローカル実行可能な中規模モデルが巨大なプロプライエタリモデルを凌駕し始めている現状を示唆している。",
+    "topics": [
+      "Qwen",
+      "Claude",
+      "Local LLM",
+      "SVG Generation",
+      "Benchmarking"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7"
+  }
+}

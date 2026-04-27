@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:25:26.908525+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gh skillが登場。GitHub公式のスキル管理ツールにnpx skillsから乗り換えた",
+    "url": "https://zenn.dev/ubie_dev/articles/gh-skill-install-agent-skills",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub公式CLIに追加された`gh skill`コマンドにより、AIエージェント向けスキルのインストール・更新・公開が、サプライチェーン対策を含めた高い安全性で管理可能になった。",
+    "summaryBody": "2026年4月16日にGitHub CLI（v2.90.0以上）へ追加された新サブコマンド`gh skill`の活用ガイドです。AIエージェント向けの「スキル（Agent Skills）」を管理するためのツールで、従来の`npx skills`に代わるGitHub公式のソリューションとなります。\n\n主な特徴と機能：\n- **安全な導入**: `preview`コマンドでインストール前にスキルの内容（SKILL.md）を確認でき、プロンプトインジェクション等のリスクを事前チェックできます。\n- **サプライチェーン対策**: Tree SHAによる改ざん検知、特定のタグやコミットへのバージョン固定（Pinning）、由来情報（Provenance）のメタデータ埋め込みなど、堅牢なセキュリティ機能が組み込まれています。\n- **管理の効率化**: `install`や`update`により、Claude Code等のエージェントごとに最適なディレクトリへスキルを配置・更新できます。\n- **公開支援**: `publish`コマンドは、`agentskills.io`仕様への準拠バリデーションに加え、リポジトリ側のTag protectionやシークレットスキャン設定の有無までチェックし、安全なスキル公開をサポートします。",
+    "topics": [
+      "GitHub CLI",
+      "Agent Skills",
+      "AI Agents",
+      "Claude Code",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

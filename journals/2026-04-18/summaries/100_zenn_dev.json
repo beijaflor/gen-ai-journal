@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:04:58.601282+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VRAM 32GBのローカルLLM環境(AI PC)をコスパ重視で構築してみる",
+    "url": "https://zenn.dev/playree/articles/2376eee1d9d24d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "RTX 5060 Ti 16GBを2枚使用し、高価なフラグシップ機を避けつつ32GBのVRAMを確保するコスパ重視のローカルLLM環境構築ガイド。",
+    "summaryBody": "NVIDIA GeForce RTX 5090（32GB VRAM）が高価であることを背景に、RTX 5060 Ti 16GBを2枚刺しすることで低コストに32GBのVRAM環境を構築する手法を解説した記事です。構築の鍵として、マザーボードがCPU直結の「PCIe x8 / x8」動作をサポートしている必要がある点や、物理的な干渉を避けるためのL字・Uターン型電源アダプタの活用、最新OS（Ubuntu 25.10）の選択、電力制限による効率化などを詳述しています。実際にGemma4 26bを動作させ、実用的な推論速度を確認しています。",
+    "topics": [
+      "ローカルLLM",
+      "自作PC",
+      "NVIDIA RTX 5060 Ti",
+      "Ollama",
+      "GPU"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

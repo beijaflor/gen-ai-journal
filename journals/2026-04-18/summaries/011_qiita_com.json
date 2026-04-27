@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:28:57.591800+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "🔧 AutoAgent — AIエージェントが自らのハーネスを改善し続ける「自律エージェントエンジニアリング」",
+    "url": "https://qiita.com/y-morimatsu/items/b117f97a1be1d6190c54",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AutoAgentは、メタエージェントがAIエージェントのプロンプトやツール構成を自律的に編集・評価し、スコアに基づいて自動改善を繰り返す「自律エージェントエンジニアリング」のフレームワークです。",
+    "summaryBody": "AutoAgentは、AIエージェントの開発プロセス（プロンプト調整、ツール設計、テスト）をAI自身に代行させる革新的なオープンソースフレームワークです。エンジニアが直接ハーネスを記述するのではなく、メタエージェントへの指示書（program.md）を書くことで、AIが自律的に`agent.py`を書き換え、ベンチマークを実行し、山登り法（Hill-Climbing）によって性能を向上させます。Dockerによる安全な隔離環境とHarbor Frameworkを用いた厳密な評価基盤を備えており、プロンプト改善の限界を超えてツール追加などの高レバレッジな改善を24時間自動で継続できる点が最大の特徴です。記事では、実践的なイテレーション記録を通じて、インフラ改善がプロンプト調整よりも高いROIを生むことや、過学習防止の重要性についても詳しく解説されています。",
+    "topics": [
+      "AIエージェント",
+      "AutoAgent",
+      "LLM",
+      "OpenAI Agents SDK",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

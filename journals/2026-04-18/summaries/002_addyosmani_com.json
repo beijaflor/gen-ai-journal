@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:31:15.511499+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティック・エンジン最適化 (AEO)：AIエージェントのためのドキュメント最適化ガイド",
+    "url": "https://addyosmani.com/blog/agentic-engine-optimization/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントが効率的にドキュメントを理解し利用できるようにするための新しい手法「AEO (Agentic Engine Optimization)」の概念と具体的な実装スタックを解説する記事。",
+    "summaryBody": "GoogleのAddy Osmani氏が提唱する「AEO (Agentic Engine Optimization)」は、人間ではなくAIエージェントによるドキュメント消費に最適化する新しい技術規律です。AIエージェントは、人間のようなスクロールや遷移を行わず、単一のHTTPリクエストで内容を取得し、トークン制限という独自の制約の中で情報を処理します。本記事では、エージェントに「見つけられ、理解される」ための6つのレイヤー（robots.txt、llms.txtによる発見、skill.mdによる機能表明、Markdown形式への変換、トークン数の明示、AI向けコピーボタン）からなるスタックを提案しています。特に、トークン数を管理可能な範囲（3万トークン以下）に抑えることや、エージェント専用の入り口となる`AGENTS.md`の設置が、AI時代の開発者体験（DX）において重要になると説いています。",
+    "topics": [
+      "AEO",
+      "AI Agents",
+      "LLMs",
+      "Developer Experience",
+      "Documentation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "Agentic Engine Optimization (AEO)"
+  }
+}

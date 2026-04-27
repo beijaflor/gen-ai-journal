@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:06:16.244140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのRoutines（ルーチン）機能による業務自動化",
+    "url": "https://code.claude.com/docs/en/routines",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのクラウド基盤上で、スケジュール、API、GitHubイベントをトリガーに自律的なタスクを実行できる「Routines」機能の概要と設定方法。",
+    "summaryBody": "Claude Codeの「Routines（ルーチン）」は、特定のプロンプト、リポジトリ、MCPコネクタをパッケージ化して自動実行する機能です。Anthropicが管理するクラウドインフラ上で動作するため、ローカルPCを閉じていてもタスクが継続されます。主なトリガーは3種類で、1時間・1日単位などの「スケジュール」、HTTP POSTによる「API」、プルリクエスト作成などの「GitHubイベント」に対応しており、これらを組み合わせて高度な自動化が可能です。活用例として、夜間のバックログ管理、アラート発生時の自動トリアージ、コードレビューの自動化、ドキュメントの更新検知などが挙げられます。作成はWeb UI、CLI（/scheduleコマンド）、デスクトップアプリから行えます。Pro、Max、Team、Enterpriseプランのユーザーが利用可能で、実行にはアカウントごとのデイリー制限が適用されます。",
+    "topics": [
+      "Claude Code",
+      "Routines",
+      "Workflow Automation",
+      "MCP Connectors",
+      "GitHub Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Automate work with routines - Claude Code Docs"
+  }
+}

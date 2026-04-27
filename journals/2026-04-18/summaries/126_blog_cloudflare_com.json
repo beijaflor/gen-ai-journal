@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:57:44.090471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、次世代AIエージェント構築基盤「Project Think」を発表",
+    "url": "https://blog.cloudflare.com/project-think/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、永続的な実行、サンドボックスでのコード実行、自己拡張機能などを備えたAIエージェント開発のための強力なプリミティブ群「Project Think」を公開しました。",
+    "summaryBody": "Cloudflareが発表した「Project Think」は、Agents SDKを拡張する次世代のビルディングブロック群です。従来のチャットボットを超え、インフラとして機能する「自律型エージェント」の構築を目指しています。\n\n主な機能と特徴は以下の通りです：\n1. **永続的実行（Fibers）**: チェックポイント機能により、プラットフォームの再起動やクラッシュ後も状態を保持し、長時間のタスクを継続できます。\n2. **サンドボックスでのコード実行**: LLMが生成したコードを、Dynamic Workersを用いてミリ秒単位で起動する安全な隔離環境で実行します。これにより、従来のツール呼び出し（Tool Calling）と比較してトークン消費を大幅に削減できます。\n3. **実行ラダー（Execution Ladder）**: ワークスペース、隔離されたアイソレート、npmパッケージの利用、ブラウザ操作、フルOSサンドボックスまで、必要に応じてエージェントの能力を段階的に引き上げます。\n4. **自己 authored 拡張**: エージェントが実行時に自らTypeScriptで新しいツールを書き、機能を自己拡張するループを実現します。\n5. **Thinkベースクラス**: メッセージの永続化、ストリーミング、ツール実行、セッション管理などを一括で処理する高度な抽象化レイヤーを提供します。\n\nDurable ObjectsのSQLiteデータベースを活用することで、アイドル時のコストをゼロに抑えつつ、ユーザーやタスクごとに個別のエージェントを大規模に展開できる設計となっています。",
+    "topics": [
+      "AIエージェント",
+      "Cloudflare Workers",
+      "Durable Objects",
+      "サーバーレス",
+      "LLM開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Project Think: building the next generation of AI agents on Cloudflare"
+  }
+}

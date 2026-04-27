@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:50:02.366192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セキュリティ分析AIエージェント実装にみるハーネスエンジニアリング",
+    "url": "https://zenn.dev/ubie_dev/articles/sec-agent-harness-eng",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "セキュリティ分析AIエージェント「Warren」の実装を通じ、LLMの不確実性をアーキテクチャやルールで制御する「ハーネスエンジニアリング」の実践手法を詳説した記事。",
+    "summaryBody": "Ubie社で開発・運用されているセキュリティアラート分析エージェント「Warren」の知見に基づき、AIエージェントの挙動をモデル外部で制御する「ハーネスエンジニアリング」の概念と実装を解説しています。主な取り組みとして、1.計測観点（トレースの永続化とJSONスキーマによる計画の構造化）、2.実行設計観点（5つのフェーズ分割、ツールセットの分離、クレデンシャル隔離、Regoポリシーによる決定的制御）、3.実行最適化観点（過去の実行結果からナレッジを自動抽出・整理するKnowledge Reflection、時間とコストに基づくバジェット戦略）の3点を挙げています。プロンプトエンジニアリングに依存しすぎず、構造的な制約とガードレールによって、実務に耐えうる安全性、信頼性、コスト効率を両立させる具体的なアーキテクチャが提示されています。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "セキュリティ分析",
+      "LLMアーキテクチャ",
+      "Observability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 95
+    },
+    "originalTitle": null
+  }
+}

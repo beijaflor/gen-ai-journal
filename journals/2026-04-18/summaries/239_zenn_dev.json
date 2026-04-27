@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:26:41.380320+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのトークン消費が$40/日から1週間でも余裕になった全手法",
+    "url": "https://zenn.dev/okamyuji/articles/claude-code-max-x20-token-savings",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの莫大なトークンコストを抑えるため、課金プランの選定、CLI出力圧縮ツール「RTK」、長期記憶ツール「kizami」、およびワークフロー最適化フックを組み合わせる実践的ノウハウを解説。",
+    "summaryBody": "Claude CodeをEnterpriseプランやAPI経由で利用すると、1日あたり$40に達する場合がある高コスト問題を解決するための包括的なガイドです。\n\n### 主な最適化手法\n1. **課金モデルの転換**: Enterprise（従量課金）からMAX x20（定額制）へ移行することで、同じOpus 4.6モデルを使用しながらコストを大幅に抑制可能であることを実証。\n2. **RTK (Rust Token Killer) による圧縮**: CLIコマンドの出力をLLM向けに最適化し、平均92%のトークン削減を実現。特に`curl`や`ps aux`などの冗長なデータの圧縮に効果的です。\n3. **セッション間メモリの活用**: `kizami`や`claude-mem`を導入し、セッションを跨いでプロジェクトの知識を保持。毎回のコンテキスト再構築に伴う5,000〜20,000トークンの浪費を防止します。\n4. **フックとプラグインによる統制**: Claude Codeの非効率な探索を抑制するため、`feature-dev`などのSKILLや39個におよぶフックを導入し、効率的な開発手順を強制します。\n\nこれらの手法を「I/O層」「記憶層」「ワークフロー層」の3層で組み合わせることで、開発効率を維持しつつトークン消費を極限まで抑えることが可能です。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "開発効率化",
+      "トークン節約",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

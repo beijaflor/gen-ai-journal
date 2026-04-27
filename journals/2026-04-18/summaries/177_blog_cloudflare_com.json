@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:43:18.394903+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareのAIプラットフォーム：エージェント向けに設計された推論レイヤー",
+    "url": "https://blog.cloudflare.com/ai-platform/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、複数のAIプロバイダーを統合し、エージェント開発に不可欠な低遅延・高信頼性・コスト管理を実現する統一推論レイヤーを発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントの構築を簡素化・最適化するための「統一推論レイヤー」を導入しました。従来のAI開発では、特定のプロバイダーへの依存や、複数モデルを組み合わせる際の複雑なコスト・遅延管理が課題でした。新機能では、Workers AIの`env.AI.run()`バインディングを拡張し、OpenAI、Anthropic、Googleなど12以上のプロバイダーが提供する70以上のモデルに単一のAPIでアクセス可能になります。また、AI Gatewayを通じて、複数プロバイダーにわたる支出のモニタリングや、メタデータに基づく詳細な分析、自動フェイルオーバー、ストリーミングレスポンスのバッファリングといった信頼性向上機能を提供します。さらに、Replicateとの提携により、ユーザーが独自のカスタムモデルをWorkers AIに持ち込んで実行できる「Bring Your Own Model (BYOM)」機能も開発中です。これにより、開発者はインフラの複雑さを意識することなく、世界中のエッジネットワークを活用した高速なエージェントを構築できるようになります。",
+    "topics": [
+      "Cloudflare",
+      "AI Agents",
+      "AI Gateway",
+      "Workers AI",
+      "Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Cloudflare’s AI Platform: an inference layer designed for agents"
+  }
+}

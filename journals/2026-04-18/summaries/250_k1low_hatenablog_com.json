@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-26T02:54:27.074477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "待つツールを作って活用している ( gh-wait / gh-copilot-review )",
+    "url": "https://k1low.hatenablog.com/entry/2026/04/17/083000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Coding Agentとの並行開発で生じる「待ち時間」を最適化するため、GitHubの状態変化を監視して通知やアクションを実行する自作のCLIツール群を紹介しています。",
+    "summaryBody": "Coding Agent（コーディングエージェント）を複数並行して利用する開発スタイルへの移行に伴い、PRのCI完了やレビュー待ちといった「待ち」のコンテキストスイッチが課題となっています。著者はこの「待ち」の状態管理を効率化するために開発した2つのGitHub CLI拡張を紹介しています。\n\n1. **gh-wait**: GitHubのPR、Issue、Workflow RunなどのURLを渡すだけで、承認やCI完了などの条件を満たした際にデスクトップ通知やブラウザ起動を行うツールです。ポーリングによる継続監視も可能で、エージェントが苦手な「状態変化を待つ」プロセスを補完します。\n2. **gh-copilot-review**: GitHub Copilotへのレビュー依頼を自動化するツールです。古いコメントの非表示化（minimize）や、レビュー完了までの待機をCLI上で行えるようにし、Copilotとの連続的な対話をスムーズにします。\n\n著者は、これらを単なる通知ツールに留めず、将来的には「runn」などのシナリオ記述ツールと組み合わせ、Agentが自律的に「レビューを依頼して完了を待ち、修正を繰り返す」といった開発ルーティーンを自動化する展望についても述べています。",
+    "topics": [
+      "GitHub CLI",
+      "Coding Agent",
+      "GitHub Copilot",
+      "生産性向上",
+      "Go"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:43:34.118845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Artifacts: AIエージェント向けに設計されたGitプロトコル対応の分散型・版管理ストレージ",
+    "url": "https://blog.cloudflare.com/artifacts-git-for-agents-beta/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントによる高頻度なコード生成と状態管理を最適化するため、Gitプロトコルをネイティブにサポートする新しい分散型ファイルシステム「Artifacts」を発表しました。",
+    "summaryBody": "AIエージェントの台頭により、従来の人間向けソース管理システムでは対応困難な規模のコードと操作が発生しています。これに応える「Artifacts」は、Gitプロトコルをネイティブに解釈する分散型ファイルシステムです。Durable Objectsを基盤とし、Zigで書かれたWasmベースのGitエンジンを搭載することで、軽量かつスケーラブルなリポジトリ作成を可能にしています。主な特徴として、REST/Workers API経由での動的リポジトリ作成、セッション状態のフォークとタイムトラベル、そして巨大リポジトリを遅延読み込みで即座にマウントする「ArtifactFS」が挙げられます。これにより、エージェント環境やサンドボックスの起動時間を大幅に短縮しつつ、既存のGitツールチェーンとの互換性を維持したまま、大規模な自律的ワークフローを支えるインフラを提供します。",
+    "topics": [
+      "Cloudflare",
+      "Git",
+      "AIエージェント",
+      "Durable Objects",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Artifacts: versioned storage that speaks Git"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:27:11.718688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "QAチームのナレッジを「ハーネス」にする — Claude Codeでテスト設計を自動化した話",
+    "url": "https://zenn.dev/tokium_dev/articles/705334e2f6ac10",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのSkillやHook機能を活用し、チームの暗黙知を構造化した「ハーネス」を構築することで、テスト設計からリリースノート作成までを一気通貫で自動化する手法の紹介。",
+    "summaryBody": "TOKIUMのQAチームが実践する「ハーネスエンジニアリング」によるテスト設計自動化の事例記事です。単なるプロンプト調整に留まらず、Knowledge Base（ナレッジの構造化）、Hooks（品質ゲートの自動化）、Skills（ワークフローの分割）の3本柱でAIの動作環境を設計。ソースコードを読み取り、テスト観点の作成、Gherkin形式のテストケース生成、スプレッドシート用TSV出力、さらにはリリースノート作成までを7フェーズのパイプラインで自動実行します。内部用語の混入防止や境界値分析の網羅性確保など、実運用で直面した課題と解決策も具体的に示されており、AIを実務に組み込むための高度な設計パターンが解説されています。",
+    "topics": [
+      "Claude Code",
+      "QAエンジニアリング",
+      "テスト設計自動化",
+      "ハーネスエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

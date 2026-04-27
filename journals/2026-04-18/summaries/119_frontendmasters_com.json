@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:59:41.095661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成UIはデフォルトでアクセシビリティが欠如している：5つの防御レイヤーによる対策",
+    "url": "https://frontendmasters.com/blog/ai-generated-ui-is-inaccessible-by-default/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成するUIコードは視覚的には優れていてもアクセシビリティツリーが欠落していることが多く、それを防ぐための5つのエンジニアリングレイヤーを提案している。",
+    "summaryBody": "AIコード生成ツール（ChatGPT, Claude, Cursor等）が生成するReactコンポーネントの多くは、&lt;div&gt;タグを多用しセマンティクスが欠落した「div soup」になりがちです。本記事では、この問題を解決するために以下の5つのレイヤーによる強制システムを解説しています。1. プロンプト制約（.cursorrules等でのセマンティクス定義）、2. 静的解析（eslint-plugin-jsx-a11y）、3. ランタイムテスト（Playwright + axe-core）、4. CI統合（GitHub Actionsでの自動検証）、5. アクセシブルなコンポーネント抽象化（Radix UI, Headless UI等の利用）。AIは「コードがどう見えるか」をモデル化しますが、「コードが支援技術にどう意味をなすか」は理解していないため、開発者が構造的にガードレールを設置する必要があると説いています。",
+    "topics": [
+      "Accessibility (A11y)",
+      "Generative AI",
+      "React",
+      "Frontend Architecture",
+      "Web Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI-Generated UI Is Inaccessible by Default – Frontend Masters Blog"
+  }
+}

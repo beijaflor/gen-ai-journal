@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:59:20.663677+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにWebサイトを最適化するための6つの有効な手法と8つの無効な手法",
+    "url": "https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントやLLMがWebサイトを正確に理解できるように、llms.txtの設置やMarkdown形式の提供など、標準的なWeb技術を活用した6つの最適化手法を解説するガイド。",
+    "summaryBody": "検索エンジンからの流入が減少する中、LLMやAIエージェントによるWebサイトの「発見性」と「可読性」の向上が重要視されています。本記事では、Evil Martiansが自社サイトで実施した、LLM向け最適化の具体的な手法を紹介しています。主な推奨手法は、サイトマップの役割を果たす「/llms.txt」の設置、各ページのクリーンな「.md (Markdown)」ルートの提供、HTTP Linkヘッダーや&lt;link&gt;タグを用いたMarkdown版の通知、そして「Accept: text/markdown」によるコンテンツネゴシエーションの実装です。一方で、独自メタタグやHTMLコメントへの依存など、根拠のない『AI SEO』の迷信についても論理的に否定しています。最終的に、LLMが読み取るのはメタデータではなく、整理されたセマンティックなテキストであると強調し、サーバーログによる効果測定の重要性を説いています。",
+    "topics": [
+      "LLM最適化",
+      "llms.txt",
+      "Markdown",
+      "Web標準",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Making your site visible to LLMs: 6 techniques that work, 8 that don't"
+  }
+}

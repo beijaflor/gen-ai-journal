@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:36:32.104471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでハーネスエンジニアリングを実践する — 5層の設計パターン",
+    "url": "https://zenn.dev/sasadango28/articles/claude-code-harness-engineering-20260415",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeにおいて、LLMのステートレスな性質を補完し意図した動作を安定させる「ハーネスエンジニアリング」を5つの設計レイヤーで具体的に解説したガイドです。",
+    "summaryBody": "ハーネスエンジニアリングとは、HashiCorpのMitchell Hashimoto氏が提唱した「エージェントのミスに対し環境側で恒久的な修正を施す」という概念です。本記事ではClaude Codeを高度に使いこなすための5つの実装レイヤーを提案しています。\n\n1. **CLAUDE.md**: プロジェクトの目的や「やらないこと」を定義する憲法。個人設定のimport手法も紹介。\n2. **Rules**: `.claude/rules/`に配置し、`globs`プロパティで特定条件下のみ読み込むドメインルール。\n3. **Skills**: カスタムスラッシュコマンド。LLMを「判断」に、スクリプトを「決定的な処理」に分離し、トークン消費を抑える設計が重要。\n4. **Agents**: 特定役割に特化し、メインコンテキストを汚さず並行処理を行うサブエージェント。\n5. **Settings**: `settings.json`によるツール実行権限の制御（安全装置）。\n\nLLMを単なるチャットボットではなく、信頼性の高い開発環境の一部として組み込むための実践的なTipsが凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "LLM",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

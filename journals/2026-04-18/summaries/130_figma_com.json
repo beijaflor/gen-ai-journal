@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:56:44.336744+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP（Model Context Protocol）の要点：なぜ「コンテキスト」が重要で、どう活用すべきか",
+    "url": "https://www.figma.com/blog/the-tldr-on-mcp/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "FigmaがリリースしたMCPサーバーによって、デザインの意図やコンテキストをAIエージェントに直接伝え、デザインシステムに忠実な実装を実現する方法を解説した記事。",
+    "summaryBody": "Figmaが提供を開始したMCP（Model Context Protocol）サーバーのベータ版に関する解説記事です。従来、AIコーディングツールはデザインを単なる画像（スクリーンショット）として認識していましたが、MCPを活用することで、デザイン内のコンポーネント、トークン、レイアウトといった詳細な「コンテキスト（文脈）」をAIに共有できるようになります。\n\n### 主なポイント：\n- **デザインとコードのギャップ解消**: MCPにより、AIはブランドカラーの代わりにデザイントークンを使用し、汎用的な要素の代わりに既存のUIコンポーネントをコードに反映できます。\n- **デザイナー・開発者のワークフロー変化**: デザイナーの作成したファイルがそのままAIの生成コードに影響を与えるため、レイヤー名やオートレイアウトの重要性が増します。一方、開発者は手動でのデザイン解釈や翻訳作業から解放されます。\n- **双方向の連携**: `generate_figma_design`（コードからデザインへ）と`use_figma`（AIによるキャンバス上の設計）により、コードとデザインをシームレスに行き来する「ラウンドトリップ」が実現します。\n- **精度の向上策**: AIエージェントに手順を指示する「Skills」の活用、レイヤー名の明確化、コード構文（Code Syntax）の追加などが推奨されています。",
+    "topics": [
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "デザインシステム",
+      "Code Connect"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "The TL;DR on MCP: Why context matters and how to put it to work"
+  }
+}

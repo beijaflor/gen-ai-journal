@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T15:43:04.000768+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Search: エージェントのための検索プリミティブ",
+    "url": "https://blog.cloudflare.com/ai-search-agent-primitive/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、ハイブリッド検索、動的なインスタンス生成、自動インデックス管理を備えた、AIエージェント構築のための統合検索インフラ「AI Search」を発表しました。",
+    "summaryBody": "Cloudflareが発表した「AI Search」（旧AutoRAG）は、AIエージェントが数百万のファイルや顧客データから最適な情報を取得するための検索プラットフォームです。主な特徴として、ベクトル検索とキーワード検索（BM25）を組み合わせたハイブリッド検索、メタデータによるランキング調整、リランキング機能を備えています。従来のRAG構築で必要だったベクトルインデックスやR2バケットの個別設定が不要になり、ファイルをアップロードするだけで自動的にインデックス化されるマネージドな体験を提供します。特に強力なのは新しく導入された`ai_search_namespaces`バインディングで、Cloudflare Workersから実行時に顧客ごとやエージェントごとに検索インスタンスを動的に作成・管理できます。これにより、共有ドキュメントと個別の履歴を跨いだクロスインスタンス検索などが容易に実装可能となり、カスタマーサポートやコーディング支援などのエージェント開発を大幅に加速させます。現在はオープンベータとして提供されています。",
+    "topics": [
+      "Cloudflare",
+      "AI Search",
+      "RAG",
+      "AIエージェント",
+      "Cloudflare Workers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "AI Search: the search primitive for your agents"
+  }
+}

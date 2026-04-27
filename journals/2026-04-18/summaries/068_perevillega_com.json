@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-20T16:14:42.763887+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セッションを跨いでAIエージェントの「記憶」を維持する設計手法",
+    "url": "https://perevillega.com/posts/2026-03-24-building-agent-memory-that-survives-between-sessions/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントがセッションごとに記憶を失う問題を解決するため、コンテキストを3つの階層に分離し、開発フローの中で動的にドキュメント化・管理する実践的な手法を解説しています。",
+    "summaryBody": "AIエージェント（特にClaude Code）のセッションリセット問題に対し、情報をツールではなく「設計」で管理する手法を紹介。Teresa Torres氏の提唱する、グローバル設定、プロジェクト設定、そして詳細な参照ファイルを分ける「3レイヤー・システム」により、AIの注意力を最適化します。重要なのは「同じ説明を繰り返す前に立ち止まって記録する（Stop and Capture）」ルールであり、対話を通じてコンテキストファイルを半自動生成・更新することで、メンテナンスの負担を抑えつつエージェントを自分専用の「外骨格」へと進化させます。また、Patrick Zandl氏によるJSONLを用いたセッションログ管理や、情報が中間で欠落するLLMの性質（Lost in the Middle）を考慮した軽量なCLAUDE.mdの運用など、技術的な実装ヒントも詳述されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "コンテキストエンジニアリング",
+      "ナレッジマネジメント",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Building Agent Memory That Survives Between Sessions"
+  }
+}

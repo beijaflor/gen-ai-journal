@@ -2,14 +2,17 @@
 
 import os
 import sys
+import ssl
 import signal
 import argparse
 import re
 import logging
+import subprocess
 import requests
 import json
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
 import google.generativeai as genai
 from typing import Optional, Dict, Any, Tuple
 
@@ -20,6 +23,8 @@ class TimeoutError(Exception):
 
 def _timeout_handler(signum, frame):
     raise TimeoutError("Gemini API call timed out")
+
+
 from modules.template_processor import process_template, parse_replacements
 
 def fetch_url_content(url: str, timeout: int = 30) -> str:
@@ -27,25 +32,28 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
     try:
         logging.info(f"Fetching content from URL: {url}")
 
-        # Set proper headers to avoid being blocked
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
+        # Use curl subprocess to avoid urllib3 HTTP/2 Connection header RFC 7540 violation
+        # which causes certain servers (e.g. Qiita) to hang indefinitely on requests.get()
+        result = subprocess.run(
+            [
+                'curl', '-s', '-L',
+                '--max-time', str(timeout),
+                '-A', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                '-H', 'Accept-Language: ja,en;q=0.9',
+                url
+            ],
+            capture_output=True,
+            timeout=timeout + 5
+        )
+        if result.returncode != 0:
+            raise requests.exceptions.RequestException(f"curl exit code {result.returncode}: {result.stderr.decode()[:200]}")
+        html_bytes = result.stdout
+        
+        logging.info(f"Successfully fetched {len(html_bytes)} bytes from URL")
 
-        # Hard timeout to prevent hanging on slow/stalled responses
-        old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
-        signal.alarm(timeout)
-        try:
-            response = requests.get(url, headers=headers, timeout=timeout)
-            response.raise_for_status()
-        finally:
-            signal.alarm(0)
-            signal.signal(signal.SIGALRM, old_handler)
-        
-        logging.info(f"Successfully fetched {len(response.content)} bytes from URL")
-        
         # Parse HTML content
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(html_bytes, 'html.parser')
         
         # Remove script and style elements
         for script in soup(["script", "style"]):
@@ -62,7 +70,7 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         logging.info(f"Extracted {len(text)} characters of text content")
         return text
         
-    except TimeoutError:
+    except (TimeoutError, subprocess.TimeoutExpired):
         error_msg = f"Error fetching URL {url}: total timeout after {timeout}s"
         logging.error(error_msg)
         return f"[ERROR: {error_msg}]"
