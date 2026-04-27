@@ -27,8 +27,118 @@ def _timeout_handler(signum, frame):
 
 from modules.template_processor import process_template, parse_replacements
 
+# Layer 1 (Issue #108) — Fetch quality gate
+# When BeautifulSoup extracts very little text, the page is likely JS-rendered or
+# bot-blocked, and Gemini will hallucinate a summary from the URL/domain.
+# Threshold below which a fetch is considered unreliable.
+FETCH_QUALITY_MIN_CHARS = 200
+
+# Module-level state so the main flow can decide whether to fall back to Playwright.
+# Populated by fetch_url_content() and read in main() — keeps the call signature
+# unchanged for the template processor that invokes it.
+_LAST_FETCH_METRICS: Dict[str, Any] = {}
+
+# When True, fetch_url_content will automatically retry with Playwright if the
+# initial BS4 extraction is below FETCH_QUALITY_MIN_CHARS. Toggled by the
+# --auto-fallback-playwright CLI flag in main().
+_AUTO_FALLBACK_PLAYWRIGHT: bool = False
+
+
+def _emit_fetch_quality_warning(url: str, metrics: Dict[str, Any]) -> None:
+    """Emit a stderr warning when extracted content is below the quality threshold."""
+    extracted = metrics.get('extracted_chars', 0)
+    has_article = metrics.get('has_article_tag', False)
+    has_main = metrics.get('has_main_tag', False)
+    title_len = metrics.get('title_len', 0)
+    print(
+        f"WARN: extracted only {extracted} chars from {url}; summary may be unreliable "
+        f"(article_tag={has_article}, main_tag={has_main}, title_len={title_len})",
+        file=sys.stderr,
+    )
+
+
+def fetch_url_content_playwright(url: str, timeout: int = 60) -> Tuple[str, Dict[str, Any]]:
+    """Fetch URL content using Playwright (handles JS-rendered pages).
+
+    Returns:
+        (text, metrics) tuple. text is the extracted page text; metrics captures
+        extracted_chars, has_article_tag, has_main_tag, title_len, fetcher.
+    """
+    logging.info(f"Playwright fetch: {url}")
+    text = ""
+    metrics: Dict[str, Any] = {
+        'extracted_chars': 0,
+        'has_article_tag': False,
+        'has_main_tag': False,
+        'title_len': 0,
+        'fetcher': 'playwright',
+    }
+
+    try:
+        from playwright.sync_api import sync_playwright
+
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            try:
+                context = browser.new_context(
+                    user_agent=(
+                        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+                    ),
+                    locale='ja-JP',
+                )
+                page = context.new_page()
+                page.goto(url, timeout=timeout * 1000, wait_until='domcontentloaded')
+                # Give SPAs a brief settle window for late-rendering content.
+                try:
+                    page.wait_for_load_state('networkidle', timeout=10_000)
+                except Exception:
+                    pass
+
+                html = page.content()
+                title_attr = page.title() or ''
+            finally:
+                browser.close()
+
+        soup = BeautifulSoup(html, 'html.parser')
+        for script in soup(["script", "style", "noscript"]):
+            script.decompose()
+
+        metrics['has_article_tag'] = soup.find('article') is not None
+        metrics['has_main_tag'] = soup.find('main') is not None
+        metrics['title_len'] = len(title_attr)
+
+        text = soup.get_text()
+        lines = (line.strip() for line in text.splitlines())
+        chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+        text = ' '.join(chunk for chunk in chunks if chunk)
+        metrics['extracted_chars'] = len(text)
+        logging.info(f"Playwright extracted {len(text)} characters")
+    except Exception as e:
+        logging.error(f"Playwright fetch failed for {url}: {e}")
+        text = f"[ERROR: Playwright fetch failed: {e}]"
+
+    return text, metrics
+
+
 def fetch_url_content(url: str, timeout: int = 30) -> str:
-    """Fetch content from a URL and extract readable text."""
+    """Fetch content from a URL and extract readable text.
+
+    Side effect: populates module-level _LAST_FETCH_METRICS with quality signals
+    (extracted_chars, has_article_tag, has_main_tag, title_len, fetcher) so that
+    the caller in main() can decide whether to warn or trigger a Playwright
+    fallback (see --auto-fallback-playwright).
+    """
+    global _LAST_FETCH_METRICS
+    _LAST_FETCH_METRICS = {
+        'extracted_chars': 0,
+        'has_article_tag': False,
+        'has_main_tag': False,
+        'title_len': 0,
+        'fetcher': 'curl+bs4',
+        'url': url,
+    }
+
     try:
         logging.info(f"Fetching content from URL: {url}")
 
@@ -49,27 +159,68 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         if result.returncode != 0:
             raise requests.exceptions.RequestException(f"curl exit code {result.returncode}: {result.stderr.decode()[:200]}")
         html_bytes = result.stdout
-        
+
         logging.info(f"Successfully fetched {len(html_bytes)} bytes from URL")
 
         # Parse HTML content
         soup = BeautifulSoup(html_bytes, 'html.parser')
-        
+
+        # Layer 1 metrics: capture structural signals BEFORE stripping script/style.
+        _LAST_FETCH_METRICS['has_article_tag'] = soup.find('article') is not None
+        _LAST_FETCH_METRICS['has_main_tag'] = soup.find('main') is not None
+        title_tag = soup.find('title')
+        _LAST_FETCH_METRICS['title_len'] = len(title_tag.get_text(strip=True)) if title_tag else 0
+
         # Remove script and style elements
         for script in soup(["script", "style"]):
             script.decompose()
-        
+
         # Extract text content
         text = soup.get_text()
-        
+
         # Clean up whitespace
         lines = (line.strip() for line in text.splitlines())
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
         text = ' '.join(chunk for chunk in chunks if chunk)
-        
+
         logging.info(f"Extracted {len(text)} characters of text content")
+        _LAST_FETCH_METRICS['extracted_chars'] = len(text)
+        logging.info(
+            f"Fetch metrics: extracted_chars={_LAST_FETCH_METRICS['extracted_chars']}, "
+            f"article_tag={_LAST_FETCH_METRICS['has_article_tag']}, "
+            f"main_tag={_LAST_FETCH_METRICS['has_main_tag']}, "
+            f"title_len={_LAST_FETCH_METRICS['title_len']}"
+        )
+
+        # Layer 1: warn early when extraction is suspiciously thin.
+        if len(text) < FETCH_QUALITY_MIN_CHARS:
+            _emit_fetch_quality_warning(url, _LAST_FETCH_METRICS)
+
+            # Optional: auto-retry via Playwright when the user opts in.
+            if _AUTO_FALLBACK_PLAYWRIGHT:
+                print(
+                    f"INFO: --auto-fallback-playwright set; retrying {url} with Playwright",
+                    file=sys.stderr,
+                )
+                pw_text, pw_metrics = fetch_url_content_playwright(url)
+                # Only swap in the Playwright result if it actually improves things.
+                if pw_metrics.get('extracted_chars', 0) > len(text) and not pw_text.startswith('[ERROR'):
+                    _LAST_FETCH_METRICS = pw_metrics
+                    print(
+                        f"INFO: Playwright fetch recovered {pw_metrics['extracted_chars']} chars "
+                        f"(BS4 had {len(text)})",
+                        file=sys.stderr,
+                    )
+                    return pw_text
+                else:
+                    print(
+                        "WARN: Playwright fallback did not yield better content; "
+                        "keeping BS4 result",
+                        file=sys.stderr,
+                    )
+
         return text
-        
+
     except (TimeoutError, subprocess.TimeoutExpired):
         error_msg = f"Error fetching URL {url}: total timeout after {timeout}s"
         logging.error(error_msg)
@@ -522,8 +673,21 @@ def main():
     parser.add_argument('--disable-context-cache', action='store_true',
                        help='Disable explicit context caching')
     parser.add_argument('--output', '-o', help='Output file path (if not specified, output to stdout)')
+    parser.add_argument(
+        '--auto-fallback-playwright',
+        action='store_true',
+        help='If BS4 extracts less than %d chars, automatically retry the fetch '
+             'via Playwright (handles JS-rendered pages). Off by default.'
+             % FETCH_QUALITY_MIN_CHARS,
+    )
 
     args = parser.parse_args()
+
+    # Wire the CLI flag into the module-level fallback toggle so fetch_url_content
+    # (called indirectly via the template processor) can react to it.
+    if args.auto_fallback_playwright:
+        global _AUTO_FALLBACK_PLAYWRIGHT
+        _AUTO_FALLBACK_PLAYWRIGHT = True
 
     # Get script directory (needed for relative paths)
     script_dir = os.path.dirname(os.path.abspath(__file__))
