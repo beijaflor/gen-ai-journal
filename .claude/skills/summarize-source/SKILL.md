@@ -158,6 +158,40 @@ Examples:
 - **Prompt template**: `prompts/summarize-json.prompt`
 - **Workflow docs**: `workflow/STEP_02_GENERATE_SUMMARIES.md`
 
+## Validation contract
+
+**Every summary, regardless of generation path, must pass `scripts/validate_summary.py` before being written to `workdesk/summaries/`.** This is a hard requirement: the gemini primary path enforces it inline, and any fallback path (direct HTTP fetch, Playwright-rendered fetch, or any other future path) must invoke the same validator before persisting JSON to disk.
+
+**Why this exists**: validation rules used to live inline in `scripts/call-gemini.py`, which meant fallback paths bypassed schema/topic-count/required-field checks and let invalid summaries reach the workflow. Issue #113 consolidated all rules into `scripts/validate_summary.py` so every path goes through the same gate.
+
+**How fallback paths must use it**:
+
+1. Generate the summary JSON (whatever the source — direct fetch, Playwright, etc.).
+2. Write the candidate JSON to a temporary path (NOT directly to `workdesk/summaries/`).
+3. Run the validator:
+   ```bash
+   python scripts/validate_summary.py /tmp/candidate.json
+   ```
+   Exit code `0` = pass; non-zero = fail with reason on stderr.
+4. **Only on pass**: move the candidate file into `workdesk/summaries/XXX_domain.json`.
+5. **On fail**: do NOT write to `workdesk/summaries/`. Either retry, escalate to the next fallback path, or surface the validation error to the user. Never write a summary that failed validation.
+
+**Programmatic use** (when scripting in Python rather than shelling out):
+
+```python
+from validate_summary import validate
+result = validate(summary_dict)
+if not result.ok:
+    raise RuntimeError(f"Summary failed validation: {result.first_error}")
+```
+
+The validator API:
+- `validate(summary: dict) -> ValidationResult` — primary entry point; `result.ok` is bool, `result.errors` lists every detected error, `result.first_error` returns the first one.
+- `validate_first_error(summary: dict) -> (bool, str | None)` — backwards-compatible tuple form.
+- CLI: `python scripts/validate_summary.py path/to/summary.json` — exit 0 / non-zero with stderr message.
+
+The rules enforced (extracted from the original inline checks): required top-level/metadata/content fields, version `1.0`, dimension scores 0-5, composite scores 0-100, topics array length 1-5, and the title / oneSentenceSummary / summaryBody length bounds.
+
 ## JSON Validation
 
 When using JSON format (default), summaries are automatically validated against the v1.0 schema:

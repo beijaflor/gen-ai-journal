@@ -26,6 +26,7 @@ def _timeout_handler(signum, frame):
 
 
 from modules.template_processor import process_template, parse_replacements
+from validate_summary import validate as _validate_summary
 
 def fetch_url_content(url: str, timeout: int = 30) -> str:
     """Fetch content from a URL and extract readable text."""
@@ -125,88 +126,17 @@ def clean_gemini_output(text: str) -> str:
 def validate_json_summary(data: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
     """Validate JSON summary structure against v1.0 schema.
 
+    Thin wrapper that delegates to the unified validator in
+    `scripts/validate_summary.py`. Kept for backwards compatibility
+    with existing call sites in this module — every summary,
+    regardless of generation path, must pass that validator before
+    being written to disk.
+
     Returns:
         (success: bool, error_message: Optional[str])
     """
-    try:
-        # Check required top-level fields
-        if 'metadata' not in data or 'content' not in data:
-            return False, "Missing required top-level fields: metadata or content"
-
-        metadata = data['metadata']
-        content = data['content']
-
-        # Validate metadata
-        if metadata.get('version') != '1.0':
-            return False, f"Invalid version: {metadata.get('version')}, expected '1.0'"
-
-        if not metadata.get('generatedAt'):
-            return False, "Missing generatedAt in metadata"
-
-        if not metadata.get('generatedBy'):
-            return False, "Missing generatedBy in metadata"
-
-        # Validate content required fields
-        required_content_fields = [
-            'title', 'url', 'language', 'contentType',
-            'oneSentenceSummary', 'summaryBody', 'topics', 'scores'
-        ]
-
-        for field in required_content_fields:
-            if field not in content:
-                return False, f"Missing required content field: {field}"
-
-        # Validate scores structure
-        scores = content['scores']
-        required_score_fields = [
-            'signal', 'depth', 'uniqueness', 'practical', 'antiHype',
-            'mainJournal', 'annexPotential', 'overall'
-        ]
-
-        for field in required_score_fields:
-            if field not in scores:
-                return False, f"Missing required score field: {field}"
-
-        # Validate score ranges
-        dimension_scores = [
-            scores['signal'], scores['depth'], scores['uniqueness'],
-            scores['practical'], scores['antiHype']
-        ]
-
-        for score in dimension_scores:
-            if not isinstance(score, int) or score < 0 or score > 5:
-                return False, f"Dimension score out of range (0-5): {score}"
-
-        composite_scores = [
-            scores['mainJournal'], scores['annexPotential'], scores['overall']
-        ]
-
-        for score in composite_scores:
-            if not isinstance(score, int) or score < 0 or score > 100:
-                return False, f"Composite score out of range (0-100): {score}"
-
-        # Validate topics array
-        topics = content['topics']
-        if not isinstance(topics, list):
-            return False, "Topics must be an array"
-
-        if len(topics) < 1 or len(topics) > 5:
-            return False, f"Topics array must have 1-5 elements, got {len(topics)}"
-
-        # Validate string lengths
-        if len(content['title']) < 1 or len(content['title']) > 200:
-            return False, f"Title length out of range (1-200): {len(content['title'])}"
-
-        if len(content['oneSentenceSummary']) < 10 or len(content['oneSentenceSummary']) > 300:
-            return False, f"One sentence summary length out of range (10-300): {len(content['oneSentenceSummary'])}"
-
-        if len(content['summaryBody']) < 100 or len(content['summaryBody']) > 1200:
-            return False, f"Summary body length out of range (100-1200): {len(content['summaryBody'])}"
-
-        return True, None
-
-    except Exception as e:
-        return False, f"Validation error: {str(e)}"
+    result = _validate_summary(data)
+    return result.ok, result.first_error
 
 
 def sanitize_html_in_text(text: str) -> str:
