@@ -4,6 +4,7 @@
  */
 
 import { MarkdownRenderer } from './MarkdownRenderer.js';
+import { CopyableId } from './CopyableId.js';
 
 /**
  * Register a web component with error handling
@@ -17,7 +18,7 @@ function registerComponent(tagName, componentClass) {
       console.warn(`Web component "${tagName}" is already registered`);
       return;
     }
-    
+
     customElements.define(tagName, componentClass);
     console.log(`✅ Registered web component: ${tagName}`);
   } catch (error) {
@@ -30,6 +31,7 @@ function registerComponent(tagName, componentClass) {
  */
 export function registerAllComponents() {
   registerComponent('markdown-renderer', MarkdownRenderer);
+  registerComponent('copyable-id', CopyableId);
 }
 
 /**
@@ -37,6 +39,10 @@ export function registerAllComponents() {
  */
 export function registerMarkdownRenderer() {
   registerComponent('markdown-renderer', MarkdownRenderer);
+}
+
+export function registerCopyableId() {
+  registerComponent('copyable-id', CopyableId);
 }
 
 // Note: Auto-registration removed to prevent duplicate registrations.

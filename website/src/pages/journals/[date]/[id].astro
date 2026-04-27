@@ -185,7 +185,7 @@ const nextSummary = currentIndex > 0
             {statusLabel}
           </div>
           <div class="summary-info">
-            <span class="summary-id">#{summary.id}</span>
+            <copyable-id class="summary-id" value={summary.id}>{summary.id}</copyable-id>
             <span class="summary-stats">{summary.wordCount.toLocaleString()}文字 • {summary.readingTime}分</span>
           </div>
         </div>
@@ -359,30 +359,39 @@ const nextSummary = currentIndex > 0
       
       try {
         const module = await import(webComponentsUrl);
-        if (module.registerMarkdownRenderer) {
-          module.registerMarkdownRenderer();
-        } else if (window.WebComponents?.registerMarkdownRenderer) {
-          window.WebComponents.registerMarkdownRenderer();
+        if (module.registerAllComponents) {
+          module.registerAllComponents();
+        } else {
+          if (module.registerMarkdownRenderer) {
+            module.registerMarkdownRenderer();
+          } else if (window.WebComponents?.registerMarkdownRenderer) {
+            window.WebComponents.registerMarkdownRenderer();
+          }
+          if (module.registerCopyableId) {
+            module.registerCopyableId();
+          } else if (window.WebComponents?.registerCopyableId) {
+            window.WebComponents.registerCopyableId();
+          }
         }
-        console.log('✅ Markdown renderer registered successfully');
+        console.log('✅ Web components registered successfully');
       } catch (moduleError) {
         console.warn('Module import failed, trying global approach:', moduleError);
-        
-        if (window.WebComponents?.registerMarkdownRenderer) {
-          window.WebComponents.registerMarkdownRenderer();
-          console.log('✅ Markdown renderer registered via global');
+
+        if (window.WebComponents?.registerAllComponents) {
+          window.WebComponents.registerAllComponents();
+          console.log('✅ Web components registered via global');
         } else {
           const script = document.createElement('script');
           script.src = webComponentsUrl;
           script.type = 'module';
-          
+
           script.onload = () => {
-            if (window.WebComponents?.registerMarkdownRenderer) {
-              window.WebComponents.registerMarkdownRenderer();
-              console.log('✅ Markdown renderer registered via script load');
+            if (window.WebComponents?.registerAllComponents) {
+              window.WebComponents.registerAllComponents();
+              console.log('✅ Web components registered via script load');
             }
           };
-          
+
           document.head.appendChild(script);
         }
       }
