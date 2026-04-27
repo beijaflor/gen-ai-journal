@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:01:43.977005+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWSのグローバルAIハッカソンでファイナリストになった話 - AIで重い作業を圧縮して人間は判断に集中した -",
+    "url": "https://qiita.com/dario_okazaki/items/b7f008dda31412c5866f",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWS主催のグローバルAIハッカソンにおいて、AIを「作業の圧縮」に活用し、人間がドメイン判断と評価に注力することでファイナリストに選出された獣医師向けアプリ「VetVoice」の開発記録。",
+    "summaryBody": "AWSのグローバルハッカソン「10,000 AIdeas Competition」にて50人のファイナリストに選ばれた著者による、開発プロセスとAI活用の要諦をまとめた記事です。開発した「VetVoice」は大動物獣医師の音声メモを診療記録に変換するツールで、Amazon BedrockやAmplify Gen 2を用いて構築されています。技術的なポイントとして、LLM一発での生成ではなく「音声認識→辞書補正→情報抽出→整形」という段階的なパイプラインを採用し、評価と修正の容易性を確保しています。また、AIを魔法の杖としてではなく、翻訳・コーディング・データ変換といった「人間でもできるが重い作業」を肩代わりさせる労働力として定義し、人間が課題設定やドメイン特有の判断、受け入れ基準の策定に集中することの重要性を説いています。専門知識（ドメイン）とAIによる試行回数の確保が、個人開発でもグローバルレベルで戦える鍵であることを示唆しています。",
+    "topics": [
+      "AWS",
+      "Amazon Bedrock",
+      "Amplify",
+      "生成AI",
+      "ハッカソン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

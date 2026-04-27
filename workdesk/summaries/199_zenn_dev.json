@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:30:03.551181+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursorで爆速開発、でもセキュリティは爆速で崩壊していた",
+    "url": "https://zenn.dev/nekoai_lab/articles/6b876ab524de84",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングによる開発加速が招くセキュリティ劣化を、Claude Codeの「SKILL」機能を活用してシニアセキュリティエンジニアの視点をAIに組み込み自動化する手法。",
+    "summaryBody": "AIコーディングツールの普及により開発速度が劇的に向上する一方で、レビューのボトルネック化とセキュリティ品質の低下が深刻な課題となっています。本記事では、Cursorでの開発中にシークレットキーの露出を経験した著者が、AI生成コードに潜むリスク（プロンプトインジェクション、SSRF、コスト爆発等）を指摘。解決策として、Claude Codeの「SKILL」機能を用いてOWASP Top 10やLLM固有のリスクを網羅したセキュリティエンジニアの知見をAIに「憑依」させる方法を解説しています。具体的なSKILL.mdの構成、深刻度別の判定ロジック、およびGitHubで公開されているテンプレートの導入手順まで網羅されており、AIエージェント開発における安全性の確保に直結する内容です。",
+    "topics": [
+      "Cursor",
+      "Claude Code",
+      "AIエージェント",
+      "セキュリティ",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

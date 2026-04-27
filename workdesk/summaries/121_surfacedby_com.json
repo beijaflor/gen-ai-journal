@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:10:06.540714+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIトラフィックとリファラル：Nginxログから判明した主要チャットボットの挙動",
+    "url": "https://surfacedby.com/blog/nginx-logs-ai-traffic-vs-referral-traffic",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要AIチャットボットがWebサイトを訪問する際のユーザーエージェントや挙動をNginxログから解析し、AIによる直接取得とユーザーの流入を区別する方法を解説した調査レポート。",
+    "summaryBody": "Nginxのカスタムログを用いて、主要なAIアシスタント（ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok等）がどのようにサイトのコンテンツにアクセスしているかを詳細に調査したレポートです。AI関連のトラフィックは、AIモデルが回答生成のために直接ページを読み込む「プロバイダー側のフェッチ」と、回答内のリンクを人間がクリックして訪れる「リファラル訪問」の2種類に大別されます。調査の結果、ChatGPTやClaude、Manusは固有のユーザーエージェント（UA）を送信し、robots.txtを尊重するなどの識別可能な挙動を示しました。一方で、GeminiはGooglebotの既存インデックスを利用し、CopilotやGrokは一般のブラウザを装ってアクセスするため、ログのみで人間と区別することが困難であるという構造的な課題も浮き彫りになっています。サイト運営者は、検索用クローラ、学習用ボット、そして回答生成用のリアルタイム取得ボットを混同せずに計測・制御する必要があることを示唆しています。",
+    "topics": [
+      "Nginx",
+      "AIトラフィック",
+      "ユーザーエージェント",
+      "SEO",
+      "ログ分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "AI traffic vs referral traffic: what nginx logs prove"
+  }
+}

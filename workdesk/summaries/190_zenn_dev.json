@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:27:56.976992+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skillの管理に困っているので APM: Agent Package Managerとgh skillを使うんだ",
+    "url": "https://zenn.dev/hirayuki/articles/66d27a9a1cfb89",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MicrosoftのAPMとGitHub CLIのgh skillを併用し、AIエージェントのスキルやプロンプトをチーム・個人で効率的に管理・配布する実践的な手法を解説。",
+    "summaryBody": "AIエージェントの構成要素であるInstructions、Skills、Agentsの管理を効率化するため、Microsoftが提供する「Agent Package Manager (APM)」とGitHubの「gh skill」を実機検証した記録です。APMでは、パッケージのインストール、apm.lock.yamlによるバージョン固定、apm-policy.ymlを用いたCIでの利用許可制限（ガバナンス）など、チーム開発に適した管理機能を詳述。gh skillでは、スキルの検索・導入だけでなく、Gitリポジトリを起点とした自作スキルの公開（publish）手順と、リリース時の注意点（不変リリースの設定やコミットの必要性）を解説しています。個人での簡易な利用にはgh skill、チームでの厳格なルール運用にはAPMという使い分けが示唆されています。",
+    "topics": [
+      "GitHub Copilot",
+      "Agent Package Manager",
+      "gh skill",
+      "AI Agent",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

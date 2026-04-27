@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:47:15.055227+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでバックオフィス業務のために「back-officeリポジトリ」を作ったほうがいいよ",
+    "url": "https://note.com/suthio/n/nf03d4f1df801",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとGitリポジトリを組み合わせ、バックオフィス業務（領収書回収、仕訳、請求発行等）をコードのように管理・自動化する実践的な手法を解説しています。",
+    "summaryBody": "法人のバックオフィス業務（経理、財務、法務等）を効率化するため、専用のGitリポジトリ「back-office」を構築し、Claude Codeで運用する手法を提唱しています。SaaSごとのログイン情報や請求書取得手順をMarkdownでドキュメント化し、Claude Codeがそれらを読み取ってブラウザ操作（claude-in-chrome）やfreee API操作（freee-mcp）を実行する仕組みを詳細に解説。特に、1サービス＝1ディレクトリ構成に「手順書」「自動化プロンプト」「ファイル検索スクリプト」をまとめ、実行のたびにClaude Codeに改善履歴を追記させることで、ドキュメントを「自己成長型」の自動化ツールへと進化させる手法が特徴的です。StripeやPaddleといった決済代行会社ごとの攻略法や、借入金管理、役員報酬、出張旅費規程の管理方法まで網羅した、極めて実践的な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "バックオフィス",
+      "自動化",
+      "freee",
+      "Git"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

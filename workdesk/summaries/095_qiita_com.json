@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:03:39.796622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skills で株スクリーニングを自動化した話 Vol.4【マルチAIエージェント × Agentic AI Pattern】",
+    "url": "https://qiita.com/okikusan-public/items/27d9b0f0177293db8b1a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとAgentic AI Patternを組み合わせ、6つの自律型エージェントが役割分担して株の選定からリスク検証までを自動で行うマルチエージェントシステムの構築事例。",
+    "summaryBody": "この記事では、株スクリーニング自動化の第4弾として、従来のスクリプトベースの自動化から「Agentic AI Pattern」を用いたマルチエージェントアーキテクチャへの刷新を解説しています。\n\n### 主な特徴とアーキテクチャ\n- **自律的オーケストレーション**: Orchestratorがユーザーの意図を解釈し、Screener、Analyst、Strategistなど6つの専門エージェントを動的に連鎖させます。各エージェントはコードではなく、MarkdownとFew-shot設定のみで定義されています。\n- **事実と判断の分離**: データの取得（Health Checker）と投資判断（Strategist）を分離し、さらに複数のLLM（GPT-4/Gemini 1.5/Claude 3.5等）を用いた「Reviewer」エージェントが論理矛盾や計算ミスを多角的に検証する品質保証フローを構築しています。\n- **Agentic Engineeringの活用**: Claude CodeのCode Interpreterを利用し、AIがその場で分析コードを生成・実行する柔軟な設計を採用。GraphRAG（Neo4j）との連携により、過去の投資メモや失敗談（lessons）を文脈として反映させた判断が可能です。\n\n### 成果\n「ポートフォリオの改善」といった抽象的な要求に対し、AI同士が自律的にリサーチ、提案、修正ループを回すことで、人間が介在せずとも高精度な回答を導き出すシステムを実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Agentic AI",
+      "マルチエージェント",
+      "GraphRAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": null
+  }
+}

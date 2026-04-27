@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:38:17.629294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Firebase AI Logicで本番環境のAI機能を迅速に提供：Cloud Next '26の最新アップデート",
+    "url": "https://firebase.blog/posts/2026/04/cloud-next-2026-ai-logic/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Firebase AI Logicの大型アップデートにより、サーバーサイドでのプロンプト管理、セキュリティ強化、Androidでのハイブリッド推論、および型安全な関数呼び出しが実現しました。",
+    "summaryBody": "Cloud Next '26にて発表されたFirebase AI Logicの主要な進化を解説しています。主なアップデートは5点です。1. **サーバープロンプトテンプレートの拡張**: マルチターンチャットと関数呼び出し（Function Calling）をサーバー側で定義可能になり、クライアントコードの更新なしでAI挙動の調整やIP保護が可能になりました。2. **App Checkによるリプレイ攻撃保護**: 2026年5月より、トークンを厳密に使い捨てにする機能が導入され、高コストなAIエンドポイントの悪用を防ぎます。3. **型安全な自動関数呼び出し**: KotlinなどのSDKで、データクラスから自動的にスキーマを推論し、シリアライズ処理を自動化することで開発効率が向上しました。4. **コンテキストキャッシュ**: 大規模なドキュメントやデータをキャッシュし、再利用することでトークンコストの削減と応答の高速化を実現します。5. **Android向けハイブリッド推論**: Gemini Nanoを活用し、デバイスの対応状況に応じてオンデバイス実行とクラウド実行を自動的に切り替える仕組みが実験的に導入されました。",
+    "topics": [
+      "Firebase",
+      "Gemini",
+      "Android",
+      "GenAI",
+      "Function Calling"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Ship production AI features faster with Firebase AI Logic"
+  }
+}

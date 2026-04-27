@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:27:31.047711+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotの本当の強み：プレミアムリクエストとオーケストレーションを使い倒す",
+    "url": "https://zenn.dev/headwaters/articles/0595f9c0a1fadb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot特有の「プレミアムリクエスト」課金体系を最大限に活かし、サブエージェントやオーケストレーションパターンを用いて複雑なタスクを低コストで高精度に処理する方法を解説しています。",
+    "summaryBody": "GitHub Copilotの最大の利点は、使用トークン量ではなくリクエスト回数で課金される「プレミアムリクエスト」モデルによる圧倒的なコストパフォーマンスにあります。本記事では、この仕組みを背景に、単一の指示で複雑なタスクを処理させるのではなく、AI自身にタスクを分解・管理させる「オーケストレーションパターン」の重要性を説いています。具体的には、タスク管理用の「todo」ツール、ユーザーへの質問を行う「vscode/askQuestions」、そして追加コストなしで並列処理や相互レビューを可能にする「agent/runSubagent」といった各種ツールの活用術を紹介。また、独自の挙動を定義する「カスタムエージェント」と知識を拡張する「エージェントスキル」の違いについても触れ、開発者がAIエージェントの能力をフルに引き出すための実践的なアプローチを提示しています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      "オーケストレーション",
+      "カスタムエージェント",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

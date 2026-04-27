@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:44:13.859260+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「無検閲」モデルでも言いたいことが言えない：事前学習に刻まれた「怯み（flinch）」の測定",
+    "url": "https://morgin.ai/articles/even-uncensored-models-cant-say-what-they-want.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "「無検閲」を謳うAIモデルであっても、事前学習時のフィルタリングにより特定単語の出力確率が極端に低くなる「怯み（flinch）」現象が根強く残っていることを明らかにした調査報告。",
+    "summaryBody": "Morgin.aiによる本調査は、AIモデルが明示的な拒絶反応を示さなくても、特定の「際どい」単語（政治、性、暴力など）の出力確率を内部的に極端に低く見積もる現象を「怯み（flinch）」と定義し、7つの主要な事前学習モデルを対象に測定を行いました。主な知見として、拒絶方向のベクトルを削除した「無検閲（Uncensored）」モデルであっても、この「怯み」は解消されず、むしろベースモデルより悪化する場合があることが判明しました。例えば、QwenやGemmaなどの商用モデルは、古いオープンデータモデルであるPythiaと比較して、特定の文脈で適切な単語の確率を数万倍低く設定しているケースがあります。調査ではGoogleのGemma-4が前世代（Gemma-2）から大幅に「怯み」を改善させた一方で、OpenAIのgpt-oss-20bが非商用ベースモデルの中で高い政治的バイアスを示すなど、モデルごとの特性も可視化されています。この結果は、表層的な拒絶の削除（Abliteration）だけでは、事前学習段階で深く刻み込まれた分布の偏りは修正できないことを示唆しています。",
+    "topics": [
+      "LLM",
+      "Censorship",
+      "Safety Alignment",
+      "Abliteration",
+      "Benchmark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 93
+    },
+    "originalTitle": "Even 'Uncensored' Models Can't Say What They Want"
+  }
+}

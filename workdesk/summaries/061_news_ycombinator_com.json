@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:45:00.596525+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic、サードパーティ製CLIツールの利用制限を緩和か：ユーザーの不信感と混乱が噴出",
+    "url": "https://news.ycombinator.com/item?id=47844269",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicがOpenClaw等のサードパーティ製ツールによるCLI利用を再び容認したと報じられる中、その不透明なポリシー変更と公式発表の欠如に対し開発者コミュニティから批判が集中しています。",
+    "summaryBody": "Hacker Newsにおいて、AIスタートアップAnthropicのCLI利用ポリシーを巡る議論が紛糾しています。発端は、開発者のPeter氏（OpenClaw開発者）らが「AnthropicがOpenClaw形式の利用を再度許可した」と報告したことですが、実際の挙動は依然としてプロンプト検知によるブロックが発生するなど、公的な言説と実態に乖離があるとの指摘が相次いでいます。\n\n議論の要点は、Anthropicが『Claude Code』という自社製CLIツールをプッシュする一方で、サブスクリプション（Pro/Max）のOAuthトークンを他社製ハーネスで流用する行為を「追加料金（Extra Usage）」の対象とするなど、実質的な従量課金制へ移行しようとしている点です。多くのユーザーは、公式ドキュメントではなく従業員のTwitter（X）等でポリシーが小出しにされ、頻繁にルールが「フリップフロップ（二転三転）」することに強い不満を表明しています。\n\nこの混乱を受け、信頼性を重視する開発者の間では、より安価で安定したOpenAI（Codex）や、急成長する中国系モデル（GLM等）へ乗り換える動きが顕著になっており、Anthropicは「開発者からの信頼」という貴重な資産を毀損しているとの厳しい声が上がっています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "OpenClaw",
+      "Developer Experience",
+      "AI Policy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 82
+    },
+    "originalTitle": "Anthropic says OpenClaw-style Claude CLI usage is allowed again | Hacker News"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:33:45.903971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントの「非同期化」：HTTPの限界を超え、永続的なセッションへ",
+    "url": "https://zknill.io/posts/all-your-agents-are-going-async/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMエージェントがバックグラウンドで自律動作する「非同期」時代において、従来のHTTPベースの同期通信はもはや不十分であり、永続的なステートとトランスポートを統合した「セッション」という概念が必要である。",
+    "summaryBody": "AIエージェントの利用形態は、人間と対面でやり取りするチャット（同期型）から、背後で独立して動作し結果を報告する「非同期型」へと急速に進化しています。しかし、現在のLLMアプリケーションの多くはHTTPリクエスト・レスポンス（SSEストリーミング）に依存しており、この「通信プロトコルの不一致」が課題となっています。\n\n**主な問題点:**\n- **接続の短命性:** エージェントの作業時間がHTTP接続の寿命を超えると、結果の受け取りが困難になる（ポーリングが必要になる）。\n- **プッシュ通知の欠如:** 作業完了や承認依頼など、エージェント側から自発的にユーザーへ通知を送る仕組みが標準化されていない。\n- **デバイス跨ぎの未対応:** デスクで開始したタスクを移動中にスマホで確認するといった、継続的なセッション管理が困難。\n\n**解決への展望:**\nCloudflareやAnthropicは「永続的なステート（状態）」の保存に注力していますが、依然として通信路（トランスポート）は不安定なままです。著者は、リアルタイム・メッセージング基盤を活用し、ステートとトランスポートを統合した「セッション」というプリミティブを構築することで、人間とエージェントがいつでも自由に出入りでき、ネットワークの切断やデバイスの切り替えに強い次世代のインフラが必要であると主張しています。",
+    "topics": [
+      "AI Agents",
+      "Asynchronous Communication",
+      "LLM Infrastructure",
+      "Real-time Messaging",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "All your agents are going async"
+  }
+}

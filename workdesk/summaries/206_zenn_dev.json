@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:32:14.740643+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ObsidianとClaude Codeで「育つ知識ベース」を作った話",
+    "url": "https://zenn.dev/sochi/articles/1e851637841acc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Andrej Karpathy氏の構想に基づき、Claude CodeをObsidian Wikiの自動メンテナーとして活用することで、LLMが自律的に知識を構造化・蓄積し続ける仕組みを構築する。",
+    "summaryBody": "生成AIのセッションごとに情報がリセットされる問題を解決するため、LLMにWikiの管理（Markdownの編集）を任せる「LLM知識ベース」の実装方法を解説しています。ObsidianのVault内に生データ（raw/）とLLM管理下のWiki（wiki/）を分離し、Claude Codeに`CLAUDE.md`を通じて「記事の取り込み」「相互参照の付与」「矛盾の検知」などの指示を与える仕組みです。これにより、人間が記事をクリッピングするだけで、AIが自動的にサマリ作成や用語集の更新を行い、知識が有機的に結びついた「育つ知識ベース」が実現します。記事内ではGitHubで公開されているテンプレートや、具体的なカスタムコマンドの設定例も紹介されています。",
+    "topics": [
+      "Obsidian",
+      "Claude Code",
+      "LLM",
+      "ナレッジマネジメント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

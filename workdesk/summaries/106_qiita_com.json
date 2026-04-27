@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:06:21.567885+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdがトークンを食い潰す5つの書き方と、直し方",
+    "url": "https://qiita.com/yurukusa/items/59d56dc9991e6b800170",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのコンテキストとして毎ターン読み込まれるCLAUDE.mdを最適化し、トークン消費を抑えつつ精度を高める5つの実践的テクニックを解説。",
+    "summaryBody": "Claude CodeにおいてCLAUDE.mdは毎ターンの固定コストとなるため、その書き方がトークン消費量と実行精度に直結します。本記事では、800時間以上の運用データに基づき、トークンを節約するための5つのパターンを提案しています。具体的には、不完全になりがちな「禁止リスト」を「許可リスト」に置き換える、1組のFew-shot（良い例・悪い例）で基準を明確にする、判断の理由を1行だけ添えて汎用性を高める、条件分岐をLLMが解析しやすい「テーブル形式」で記述する、そして強制可能なルールはCLAUDE.mdではなくgit hooks等に委譲するといった手法です。単なる短縮ではなく、誤読やリトライを減らす「効率的な記述」によって、全体的なコスト削減と開発効率の向上を実現する内容となっています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "プロンプトエンジニアリング",
+      "トークン節約",
+      "LLM最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

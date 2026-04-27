@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:00:47.532996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ternary Bonsai: 1.58ビット重みで高精度と極小メモリフットプリントを両立したLLM",
+    "url": "https://prismml.com/news/ternary-bonsai",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "PrismMLが発表したTernary Bonsaiは、{-1, 0, +1}の3値（1.58ビット）重みを採用し、従来の16ビットモデルの約9分の1のサイズで高い推論能力とエネルギー効率を実現します。",
+    "summaryBody": "PrismMLが発表した「Ternary Bonsai」は、ネットワーク全体の重みを1.58ビット（{-s, 0, +s}の3値）で表現する新しい大規模言語モデル（LLM）ファミリーです。8B、4B、1.7Bの3サイズが展開されており、8Bモデルでは従来の16ビットモデルと比較してメモリ使用量を約9分の1に削減しながら、Qwen3 8Bなどのフル精度モデルに匹敵する性能を達成しました。特にAppleシリコンへの最適化が進んでおり、M4 Proで82 toks/sec、iPhone 17 Pro Maxで27 toks/secという高速動作を実現。1ビットモデルと比較しても、わずかなメモリ増加で平均ベンチマークスコアを5ポイント向上させるなど、知能密度と効率性の新たなトレードオフを提示しています。モデルはApache 2.0ライセンスで公開され、MLXを通じてAppleデバイス上でネイティブに動作可能です。",
+    "topics": [
+      "1.58-bit LLM",
+      "Ternary Quantization",
+      "Edge AI",
+      "PrismML",
+      "Model Compression"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Ternary Bonsai: Top Intelligence at 1.58 Bits"
+  }
+}

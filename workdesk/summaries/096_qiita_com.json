@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:03:55.048599+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus4.7の登場により、Claude Codeの開発者と公式が「これはもうやめろ」と言い始めた6つのこと",
+    "url": "https://qiita.com/ot12/items/06420caf41a34a910c53",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Opus 4.7のリリースに伴い、AIエージェントの運用を「指示・監視型」から「目標定義・自律委譲型」へと転換するための6つの重要原則を解説した記事。",
+    "summaryBody": "Anthropicが発表したClaude Opus 4.7により、Claude Codeの最適運用法が劇的に変化しました。最大の転換点は、微細な指示を繰り返す「ペアプログラミング」から、目的・制約・完了条件を定義して自律実行に任せる「委譲モデル」への移行です。記事では、(1)過剰な指示の回避、(2)Effort Levelはmaxではなくxhighを使用、(3)パーミッション自動化（Auto Mode）の活用、(4)長時間セッションの監視停止とFocusモード利用、(5)サブエージェント呼び出しの自律判断化、(6)テストコード等の自動検証機構の導入、という6つの改善ポイントを詳説。さらにAPIの仕様変更やトークナイザーの刷新、/ultrareviewコマンドなどの新機能もカバーしており、最新モデルの性能を最大限引き出すための実務的なチェックリストを提供しています。",
+    "topics": [
+      "ClaudeCode",
+      "Claude",
+      "Anthropic",
+      "AIエージェント",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

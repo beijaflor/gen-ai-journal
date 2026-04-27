@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:39:14.139771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DESIGN.md: AIコーディングエージェントのためのデザインシステム仕様フォーマット",
+    "url": "https://github.com/google-labs-code/design.md",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントがデザインシステムを理解・適用できるように、構造化されたトークンとデザインの意図を記述するMarkdown形式の新しい仕様。",
+    "summaryBody": "Google Labsが公開した「DESIGN.md」は、GitHub CopilotやAIエージェントに対して、プロジェクトの視覚的アイデンティティを正確に伝えるためのフォーマットです。このファイルは、YAMLフロントマターによる「機械可読なデザイントークン（色、タイポグラフィ、余白、形状など）」と、Markdownによる「人間可読なデザインの根拠（なぜそのデザインなのか、どう適用すべきか）」の2層構造で構成されます。これにより、AIは単に数値を参照するだけでなく、ブランドのトーンやアクセシビリティの文脈を理解した上でコードを生成できるようになります。また、バリデーション用のLinter、WCAGコントラスト比のチェック、Tailwind CSSやDTCG形式へのエクスポート機能を持つCLIツールも提供されています。現在はalpha版として公開されており、AI時代のフロントエンド開発における「AIへのデザイン指示書」の標準化を目指しています。",
+    "topics": [
+      "DESIGN.md",
+      "Design Systems",
+      "AI Coding Agents",
+      "LLM",
+      "Google Labs"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 95,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - google-labs-code/design.md: A format specification for describing a visual identity to coding agents."
+  }
+}

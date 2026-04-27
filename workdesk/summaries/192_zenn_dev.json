@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:28:23.911208+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeユーザーのためのプロンプトキャッシュ入門",
+    "url": "https://zenn.dev/lv/articles/302bf552110e67",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのコスト効率と応答速度を左右するプロンプトキャッシュの仕組み、プランごとのTTLの違い、そしてキャッシュを維持するための具体的な運用対策を詳しく解説した記事。",
+    "summaryBody": "この記事は、Claude Codeの背後で動作するAnthropicのプロンプトキャッシュ機能を解説し、ユーザーが直面する「使用量の急増」を回避するための実践的な知識を提供しています。内容は、LLMの推論プロセス（prefillとdecode）におけるキャッシュの役割から始まり、Claude Codeが毎ターン送信する膨大なコンテキスト（システムプロンプト、ツール定義、履歴等）がいかにキャッシュされるかを説明します。特に重要な点として、プランによるTTL（キャッシュ寿命）の差異（Pro/APIは5分、Maxは1時間）を指摘し、この時間を超えるとキャッシュ再構築のために通常の12.5倍のコストがかかる「キャッシュミス」の罠を警告しています。対策として、離席前のキープアライブメッセージ送信、モデル切り替えの回避、CLAUDE.mdの静的運用などを推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "プロンプトキャッシュ",
+      "LLMコスト最適化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 93
+    },
+    "originalTitle": null
+  }
+}

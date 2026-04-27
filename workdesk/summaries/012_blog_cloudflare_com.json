@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:32:40.340548+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareが自社製品で構築したAIエンジニアリングスタック：R&Dの93%が利用する内幕",
+    "url": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cloudflareが自社の開発基盤（Workers AI、AI Gateway、MCP等）をフル活用し、R&D組織の93%が日常的に利用する高度なAIエージェント環境を構築した事例の詳細。",
+    "summaryBody": "Cloudflareは、開発者の生産性を劇的に向上させるため、自社製品を組み合わせた内製AIエンジニアリングスタックを構築しました。この取り組みは「iMARS」プロジェクトとして開始され、現在では全従業員の60%、R&D組織の93%が利用する規模に成長しています。\n\nシステムは主に3つの層で構成されています。第1層の「プラットフォーム層」では、Cloudflare Accessによる認証、AI Gatewayによるルーティングとコスト管理、Workers AIによる推論を行い、数千人規模のトラフィックを効率的かつ安全に処理しています。第2層の「知識層」では、Backstageや各リポジトリに配置した`AGENTS.md`を通じて、AIエージェントにシステム構造や開発規約のコンテキストを提供します。第3層の「執行層」では、CI/CDに統合されたAI Code ReviewerとEngineering Codex（標準化指針）により、コード品質の自動検証を実現しています。\n\nこのスタックの導入後、週間のマージリクエスト数が約2倍に増加するなど、開発速度の向上がデータで実証されました。同社はさらに、Durable ObjectsやSandbox SDKを活用した「バックグラウンドエージェント」の展開も進めており、自社製品をドッグフーディングすることで、AIエージェント時代の開発プラットフォームとしての完成度を高めています。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "Model Context Protocol (MCP)",
+      "Workers AI",
+      "プラットフォームエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "The AI engineering stack we built internally — on the platform we ship"
+  }
+}

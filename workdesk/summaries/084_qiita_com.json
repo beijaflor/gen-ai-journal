@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:01:01.450276+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code モデル別に追加耐性テストをしてみた",
+    "url": "https://qiita.com/aito1234/items/11c70a0b2a2362a5c913",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの3つのモデル（Haiku, Sonnet, Opus）を使い、機能追加を繰り返した際のコードの整合性と既存機能の維持能力を比較検証した記事です。",
+    "summaryBody": "この記事では、AI開発ツール「Claude Code」において、単発の出力品質ではなく「機能を積み上げていく過程で既存の動作を維持できるか（追加耐性）」という観点でHaiku、Sonnet、Opusの3モデルを比較しています。パスワード生成ツールをベースに5つの機能追加ステップを実施した結果、Opusは指示以上のUX改善（アドリブ）を行いながらもUIの整合性を高く保ったのに対し、HaikuやSonnetは機能追加に伴うレイアウト崩れや状態管理の不備が見られました。モデルのランクが上がるほど「変更が重なっても既存機能を壊さない」安定性が増すことが実証されており、開発の規模や複雑さに応じたモデル選択の指針を提示しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "比較検証",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

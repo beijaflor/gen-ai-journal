@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:17:19.592179+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawに依存しない安全なローカルAIエージェントの構築：MS-DOSの教訓から学ぶセキュリティ設計",
+    "url": "https://www.flyingpenguin.com/build-an-openclaw-free-secure-always-on-local-ai-agent/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントのセキュリティをMS-DOS時代の教訓に照らし合わせ、単一境界のサンドボックスではなく、プロセス分離とツール層での権限管理を重視するWirken.AIの設計思想を解説した記事。",
+    "summaryBody": "著者のDavi Ottenheimer氏は、現在のAIエージェントゲートウェイの多くが、MS-DOS時代のような「境界のない」脆弱な設計に陥っていると批判しています。NVIDIAが公開したOpenClaw（NemoClaw）のチュートリアルを詳細に分析し、ネットワーク境界での保護やエージェント全体をコンテナ化する手法が、利便性を損なうだけでなく、プロンプトインジェクションなどの本質的な脅威に対して不十分であることを指摘します。\n\nこれに対し、著者が開発する「Wirken.AI」のアーキテクチャを比較提示しています。Wirkenは、各通信チャネルをEd25519識別子を持つ独立したプロセスとして分離し、推論はループバック経由でホスト上で実行、高リスクなツール実行時のみ最小限のDockerサンドボックス（読み取り専用rootfs、ネットワーク遮断等）を動的に適用します。記事では実際の監査ログを提示し、`curl`などのコマンドがどのように階層的に承認・制限されるかを実証しており、エージェントの「信頼境界」を最小化する設計の重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "OpenClaw",
+      "Wirken.AI",
+      "サンドボックス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Build an OpenClaw Free (Secure), Always-On Local AI Agent"
+  }
+}

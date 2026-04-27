@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:39:40.217787+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "claude-brain: Claude Codeにセッションを跨ぐ記憶を持たせる単一ファイル型メモリエンジン",
+    "url": "https://github.com/memvid/claude-brain",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "外部データベースを一切使わず、単一の`.mv2`ファイルのみでClaude Codeに長期記憶（過去の決定事項や修正履歴）を付与するRust製ツール。",
+    "summaryBody": "### 概要\n`claude-brain`は、AnthropicのCLIツール「Claude Code」にセッションを跨ぐ「長期記憶」を統合するためのプラグインです。最大の特徴は、SQLiteやChromaDBといった外部データベースを一切必要とせず、プロジェクト内の`.claude/mind.mv2`という**単一のポータブルなファイル**にすべての記憶を保存する点にあります。\n\n### 主な特徴とメリット\n- **シンプルな管理**: メモリが1つのファイルに集約されるため、git commitによる履歴管理や、scpによる他サーバーへの転送、チーム間での共有（オンボーディング）が容易です。\n- **高速・軽量**: コア部分はRustで記述されており、1万件以上の記憶に対してもサブミリ秒（1ms未満）での検索が可能です。1年使用してもファイルサイズは数MB程度に収まります。\n- **完全ローカル**: 外部APIやクラウドにデータが送信されることはなく、プライバシーが担保されています。\n- **自然な対話**: `/mind search`コマンドのほか、「過去の認証バグについて教えて」といった自然言語での問い合わせに対して、過去のコンテキスト（決定理由や解決策）をClaudeが回答できるようになります。\n\n### 導入方法\nClaude Code内で`/plugin add marketplace memvid/claude-brain`を実行し、プラグインを有効化するだけでセットアップが完了します。",
+    "topics": [
+      "Claude Code",
+      "LLM Memory",
+      "Rust",
+      "RAG",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - memvid/claude-brain: Give Claude Code photographic memory in ONE portable file."
+  }
+}

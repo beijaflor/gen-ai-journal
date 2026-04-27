@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:03:08.726739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのノウハウをサンプルコードで学ぶ ── 入門編（初心者向け）",
+    "url": "https://qiita.com/nogataka/items/59cc72e55e037d77225f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropic社が提供するCLIコーディングエージェント「Claude Code」の基本構造から、インストール、拡張機能の仕組み、安全に使いこなすための設計思想までを網羅した初心者向けガイドです。",
+    "summaryBody": "本記事は、AIコーディングツール「Claude Code」を単に「動くものを作る」道具としてだけでなく、その仕組み（ハーネス設計）を理解して使いこなすための入門記事です。主な内容は以下の通りです。\n\n- **ClaudeとClaude Codeの違い**: LLM（脳）とエージェント（実行層）を分ける概念の解説。\n- **セットアップと運用**: インストール方法、4つの認証方式（Pro/Max、API、Bedrock、Vertex）、主要な15種の内蔵ツールの紹介。\n- **プロジェクトの最適化**: プロジェクト固有の知識をClaudeに伝える `CLAUDE.md` の活用法と階層構造のメリット。\n- **4つの拡張機構**: 外部連携の「MCP」、自動処理の「フック」、振る舞いを定義する「スキル」、並列処理の「サブエージェント」の全体図。\n- **安全管理とコスト**: ユーザーの確認を介在させる「ハーネス」の重要性、プランモードの活用、およびプロンプトキャッシュによるコスト削減の仕組み。\n\n初心者が陥りやすい「AIへの丸投げ」によるリスクを回避し、ログやコードの差分を自分で読む基礎力を養いながら、AIと共創するための具体的なノウハウを提示しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIコーディング",
+      "MCP",
+      "エンジニア学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

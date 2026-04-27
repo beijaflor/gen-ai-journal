@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:03:24.707075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのノウハウをサンプルコードで学ぶ ── ハーネス設計8パターン編",
+    "url": "https://qiita.com/nogataka/items/6d0eccd780b824cf080e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの内部設計から抽出された、安全で効率的なLLMエージェントを構築するための8つの実装パターンをTypeScriptコードと共に解説します。",
+    "summaryBody": "この記事は、Anthropicが提供するAIエージェント「Claude Code」の設計思想を、自作エージェントに応用可能な8つの実装パターンとして、1ファイル完結のTypeScriptコードで解説したチュートリアルです。解説されるパターンには、モデルの知能とシステムの安全性を分離する「ハーネスパラダイム」、ツールのインターフェースを統一する「ツールコントラクト」、状態マシンによって会話の破綻を防ぐ「クエリエンジン」、多層的な権限評価を行う「パーミッションシステム」などが含まれます。また、プロンプトキャッシュの最適化によるコスト削減や、3層のメモリアーキテクチャによるコンテキスト管理、ユーザーの苛立ちを検知して戦略を変えるフラストレーション検出など、実用的なエージェント開発に欠かせない高度なノウハウが網羅されています。全てのコードは外部API不要で動作確認が可能であり、AIエージェント開発におけるアーキテクチャ設計の具体的な指針を提供する内容となっています。",
+    "topics": [
+      "TypeScript",
+      "ClaudeCode",
+      "AIエージェント",
+      "LLM",
+      "設計パターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:21:12.815193+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi Vendor Verifier: オープンソースモデルの推論品質を検証する「信頼の鎖」の再構築",
+    "url": "https://www.kimi.com/blog/kimi-vendor-verifier",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Moonshot AIは、オープンソースモデルが異なるプロバイダーやインフラ環境で正しく実装・動作しているかを検証するためのツールセット「Kimi Vendor Verifier」を公開しました。",
+    "summaryBody": "Moonshot AIは、最新モデルKimi K2.6のリリースに合わせ、推論実装の正確性を検証するオープンソースプロジェクト「Kimi Vendor Verifier (KVV)」を発表しました。背景には、モデルの重みが公開されても、サードパーティのAPIプロバイダーがデコーディングパラメータ（TemperatureやTopP）を誤用したり、KVキャッシュのバグや量子化による劣化によって公式と異なる性能（ベンチマーク乖離）を示すという問題があります。\n\nKVVは、インフラ起因の不具合を特定するために以下の6つの検証ステップを提供します：\n- **Pre-Verification**: パラメータ制約が正しく適用されているかの確認\n- **OCRBench & MMMU Pro**: マルチモーダル処理と画像前処理の検証\n- **AIME2025**: 長文出力ストレスによるKVキャッシュ等のバグ検出\n- **ToolCall**: ツール呼び出しのJSONスキーマ精度と一貫性の測定\n- **SWE-Bench**: エージェントによるコーディング能力の検証\n\nまた、vLLMやSGLang等のコミュニティと連携して根本原因の修正に取り組むとともに、ベンダーの検証結果を公開するリーダーボードを維持することで、オープンソースエコシステムの透明性と信頼性を高めることを目指しています。",
+    "topics": [
+      "Kimi Vendor Verifier",
+      "LLM Inference Quality",
+      "Open Source AI",
+      "Benchmark Integrity",
+      "Moonshot AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Rebuilding the \"Chain of Trust\": Kimi Vendor Verifier"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:14:00.947536+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「認証以外」をAIで書こう：WorkOSが提唱するVibe Codingの限界と解決策",
+    "url": "https://workos.com/blog/vibe-code-everything-except-auth",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIによるコード生成「Vibe Coding」は便利だが、セキュリティの要である認証の実装に使うのは危険であり、WorkOSはCLIによる安全な自動統合を推奨している。",
+    "summaryBody": "LLMに指示を出してコードを生成させる「Vibe Coding」は、UIやプロトタイプ作成には非常に有効ですが、認証（Auth）の実装に適用することは重大なセキュリティリスクを伴います。LLMが生成した認証コードは、一見正しく動作するように見えても、CSRF対策の欠如、不適切なパスワードハッシュ化（SHA-256の使用など）、リフレッシュトークンの回転処理の不備といった、目に見えにくい脆弱性を抱えがちです。認証は単なる「機能」ではなく、継続的な保守が必要な「インフラ」として扱うべきです。\n\nWorkOSはこの課題に対し、AI搭載のインストーラー「WorkOS CLI」を発表しました。`npx workos@latest install` コマンドを実行するだけで、15種類以上のフレームワークからプロジェクトの構成を自動検出し、SDKの導入、環境変数の設定、安全な認証ルートの構築を数分で完結させます。これにより、開発者はセキュリティの専門知識がなくても、エンタープライズレベルの堅牢な認証システムを即座に導入し、本来の製品開発に集中できるようになります。",
+    "topics": [
+      "認証",
+      "Vibe Coding",
+      "WorkOS",
+      "セキュリティ",
+      "AI開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Vibe code everything except your auth"
+  }
+}

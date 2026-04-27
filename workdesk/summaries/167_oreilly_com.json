@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:21:40.586492+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自律型エージェントにおける「振る舞い資格情報」の必要性：静的認可が失敗する理由",
+    "url": "https://www.oreilly.com/radar/behavioral-credentials-why-static-authorization-fails-autonomous-agents/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "従来の静的な認可システムでは、運用中に意思決定パターンが変化する自律型AIエージェントの安全性を担保できないため、行動の継続性を検証する新たなガバナンス手法が必要である。",
+    "summaryBody": "企業におけるAIガバナンスは、現在もソフトウェアを静的な成果物として扱い、デプロイ時に一度限りの認可（OAuth等）を与える方式が主流である。しかし、自律型エージェントはモデルの重みが変わらずとも、コンテキストやメモリ、相互作用の蓄積によって、意思決定のパスやツールの使用パターンが時間とともに「ドリフト（変質）」していく性質を持つ。本記事では、この管理的なアイデンティティと実際の振る舞いの乖離を指摘し、エージェントが承認時の振る舞いプロファイルを維持しているかをリアルタイムで監視・検証する「振る舞い資格情報（Behavioral Credentials）」の概念を提唱している。これには、意思決定の整合性、信頼度のキャリブレーション、ツール使用パターンの3つの信号を継続的に測定するランタイム制御レイヤーの構築が不可欠であり、ゼロトラストの原則をネットワークの場所ではなく「行動の継続性」に適用するアプローチが求められている。",
+    "topics": [
+      "AIエージェント",
+      "AIガバナンス",
+      "サイバーセキュリティ",
+      "ゼロトラスト",
+      "マシンラーニング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Behavioral Credentials: Why Static Authorization Fails Autonomous Agents"
+  }
+}

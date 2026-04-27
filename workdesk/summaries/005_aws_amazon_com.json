@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:30:51.933026+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Cowork in Amazon Bedrock の提供開始：組織全体での AI 活用を AWS 環境内で実現",
+    "url": "https://aws.amazon.com/jp/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Amazon Bedrock 上で Claude Cowork が利用可能になり、企業はデータセキュリティとリージョン内のデータレジデンシーを維持しながら、ナレッジワーカー向けに高度な AI デスクトップ機能を展開できるようになりました。",
+    "summaryBody": "Amazon Bedrock において、Anthropic のデスクトップアプリケーションを AWS 環境で実行できる「Claude Cowork」の提供が開始されました。これにより、開発者向けの Claude Code に加え、組織内のあらゆるナレッジワーカーが AWS のセキュリティ・コンプライアンス基準を満たした状態で Claude を活用できるようになります。\n\n### 主な特徴とメリット\n- **エンタープライズレベルのセキュリティ**: プロンプトやファイル、モデルの回答は Amazon Bedrock に保存されず、モデルのトレーニングにも使用されません。IAM による認証、VPC エンドポイントによるネットワーク隔離、CloudTrail による監査など、既存の AWS 管理機能をそのまま利用可能です。\n- **デスクトップアプリの利便性**: ドキュメント分析、多段階のリサーチ、データ処理などのタスクを Claude Desktop アプリケーションから実行できます。MCP（Model Context Protocol）サーバーを通じて、ライブドキュメントや Web 検索、社内ツールとの連携も可能です。\n- **柔軟な管理と課金**: Jamf や Microsoft Intune などのデバイス管理システムを通じて一括設定が可能。料金は AWS の従量課金制（コンシューマベース）であり、Anthropic 側でのシートライセンス契約は不要です。\n\nなお、データ機密性を維持するため、Anthropic がホストするインフェレンスが必要な機能（Chat タブ、Computer Use、Skills Marketplace など）は含まれず、すべてのモデル推論はユーザーの AWS アカウント内の Amazon Bedrock を通じて行われます。",
+    "topics": [
+      "Amazon Bedrock",
+      "Claude Cowork",
+      "Anthropic",
+      "Generative AI",
+      "Enterprise Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock"
+  }
+}

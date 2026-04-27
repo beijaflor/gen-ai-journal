@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:40:41.983075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM間の「語彙の壁」を克服する世界初の「トークン共通化」技術を確立",
+    "url": "https://group.ntt/jp/newsrelease/2026/04/22/260422a.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NTTは、異なる語彙を持つLLM間でも精度を落とさずトークンを共通化できる世界初の技術を確立し、異種モデル同士のアンサンブルや知識転移を可能にした。",
+    "summaryBody": "NTTは、大規模言語モデル（LLM）の推論における入出力単位「トークン」の語彙集合を、精度を劣化させることなく自在に縮小・変換できる世界初の理論およびアルゴリズムを開発した。従来、開発組織や時期が異なるLLM間ではトークン語彙が一致しない「語彙の壁」が存在し、複数のモデルの予測を統合するアンサンブルや知識転移（ポータブルチューニング）といった連携が困難であった。本技術は、出力される文章の分布が不変となるように変換を行う独自の理論に基づいており、元のモデルの性能を維持したまま共通の語彙セットでの連携を実現する。これにより、NTTの「tsuzumi」と他社製LLMを密に連携させるなど、モデル間の知識統合による高性能化が期待される。本成果は深層学習の最難関会議ICLR 2026に採択されている。",
+    "topics": [
+      "LLM",
+      "トークン共通化",
+      "ICLR 2026",
+      "NTT",
+      "アンサンブル学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Lossless Vocabulary Reduction for Auto-Regressive Language Models"
+  }
+}

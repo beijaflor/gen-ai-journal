@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:11:13.493639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicトークンコスト計算ツール「Tokenomics」",
+    "url": "https://tokens.billchambers.me/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicの異なるモデルバージョン間で、同一プロンプトのトークン消費量とコストの差異を比較・計算できるオープンソースツールです。",
+    "summaryBody": "このツールは、AnthropicのClaudeシリーズなどの異なるモデル間で、同じリクエストがどのようにトークンとしてカウントされ、コストに影響するかを可視化します。ユーザーはJSON形式やプレーンテキストのトランスクリプトを入力することで、モデルバージョン間（例：Opus 4.6 vs 4.7など）のリクエストトークン数とコストの差分を即座に算出できます。Anthropic SDKを使用して正確にトークンをカウントしており、入力データは保存されない匿名設計となっています。開発者がAPI利用のコスト最適化やモデル移行の影響を評価する際に非常に有用なリソースです。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "Tokenomics",
+      "API Cost",
+      "LLM Optimization"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 70,
+      "annexPotential": 90,
+      "overall": 78
+    },
+    "originalTitle": "Tokenomics - Anthropic Token Cost Calculator"
+  }
+}

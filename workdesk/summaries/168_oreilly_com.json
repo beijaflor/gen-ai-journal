@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:21:56.191170+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ダーク・ファクトリー：AIエージェントによる自動コード生成の新潮流「Trycycle」",
+    "url": "https://www.oreilly.com/radar/dark-factories-rise-of-the-trycycle/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIが仕様からコードを自動生成する「ダーク・ファクトリー」の概念と、反復学習によって精度を高める最新のツール群（Trycycle, Kilroy等）を紹介する解説記事。",
+    "summaryBody": "AIが仕様書を納品可能なソフトウェアへと変換する「ダーク・ファクトリー」と呼ばれる開発形態が台頭しています。この手法の核心は、AIが自身の出力を評価し改善する「フィードバックループ」にあります。記事では、複数のAIに同時提案させる『スロットマシン開発』と、計画・実行・修正を繰り返す『Trycycle（トライサイクル）』という2つの主要パターンを解説。具体的なプロジェクトとして、Mad Max的な世界観を持つ共同開発プラットフォーム『Gas Town』、フィードバックによる自己改善を実装した『StrongDM Attractor』、そのGo言語実装版『Kilroy』、そしてClaude Codeなどのコーディングエージェントに即座に導入可能なシンプルスキル『Trycycle』が紹介されています。AIが自身の誤りを修正し、サイクルごとに品質が向上する「ゲイン（利得）」の状態に達したことが、これらツールの実用化を後押ししています。",
+    "topics": [
+      "AI Software Engineering",
+      "Autonomous Agents",
+      "LLM Feedback Loops",
+      "Trycycle",
+      "Software Development Lifecycle"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "Dark Factories: Rise of the Trycycle"
+  }
+}
