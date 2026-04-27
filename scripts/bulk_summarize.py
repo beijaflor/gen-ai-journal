@@ -180,6 +180,13 @@ def main():
         action='store_true',
         help='Sync checkbox state with existing summary files'
     )
+    parser.add_argument(
+        '--review-table',
+        action='store_true',
+        help='After the run completes (or instead of running, if no unchecked '
+             'URLs), print a review table of generated summaries with '
+             'suspicious rows flagged for human review (see Issue #108).'
+    )
 
     args = parser.parse_args()
 
@@ -211,6 +218,8 @@ def main():
 
     if not unchecked_urls:
         print("\n✓ No unchecked URLs found. All sources are already processed!")
+        if args.review_table:
+            _print_review_table(summaries_dir)
         sys.exit(0)
 
     print(f"Found {len(unchecked_urls)} unchecked URLs\n")
@@ -274,8 +283,36 @@ def main():
 
     print("\nDone! ✓")
 
+    if args.review_table:
+        _print_review_table(summaries_dir)
+
     if failed > 0:
         sys.exit(1)
+
+
+def _print_review_table(summaries_dir: Path) -> None:
+    """Render the review table from summary_review.py for the given directory.
+
+    Imported lazily so bulk_summarize.py keeps working even if summary_review.py
+    is missing in older trees.
+    """
+    try:
+        # Local import: scripts/ is the parent directory of this file.
+        sys.path.insert(0, str(Path(__file__).parent))
+        import summary_review  # type: ignore
+    except ImportError as e:
+        print(f"\n(could not load summary_review module: {e})", file=sys.stderr)
+        return
+
+    print("\n" + "=" * 60)
+    print("REVIEW TABLE (Issue #108, Layer 2)")
+    print("=" * 60)
+    rows = summary_review.gather_rows(summaries_dir)
+    if not rows:
+        print(f"(no summary files found in {summaries_dir})")
+        return
+    print(summary_review.render_table(rows))
+
 
 if __name__ == '__main__':
     main()
