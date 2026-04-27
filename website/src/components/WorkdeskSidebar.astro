@@ -50,7 +50,7 @@ function formatDate(date: Date): string {
           <article class="summary-item">
             <div class="summary-header">
               <h3 class="summary-title">
-                <span class="summary-number">#{summary.id}</span>
+                <copyable-id class="summary-number" value={summary.id}>{summary.id}</copyable-id>
                 <a href={withBase(`/journals/${nextJournalDate}/${summary.id}/`)}>
                   {summary.title}
                 </a>
@@ -419,3 +419,46 @@ function formatDate(date: Date): string {
     }
   }
 </style>
+
+<script type="module" is:inline define:vars={{ webComponentsUrl: withBase('/js/web-components.js') }}>
+  // Register the copyable-id web component used by ID badges in the sidebar.
+  async function initializeComponents() {
+    try {
+      try {
+        const module = await import(webComponentsUrl);
+        if (module.registerCopyableId) {
+          module.registerCopyableId();
+        } else if (module.registerAllComponents) {
+          module.registerAllComponents();
+        } else if (window.WebComponents?.registerCopyableId) {
+          window.WebComponents.registerCopyableId();
+        }
+        console.log('✅ copyable-id registered (sidebar)');
+      } catch (moduleError) {
+        console.warn('Module import failed, trying global approach:', moduleError);
+
+        if (window.WebComponents?.registerCopyableId) {
+          window.WebComponents.registerCopyableId();
+        } else {
+          const script = document.createElement('script');
+          script.src = webComponentsUrl;
+          script.type = 'module';
+          script.onload = () => {
+            if (window.WebComponents?.registerCopyableId) {
+              window.WebComponents.registerCopyableId();
+            }
+          };
+          document.head.appendChild(script);
+        }
+      }
+    } catch (error) {
+      console.warn('⚠️ copyable-id failed to load:', error);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeComponents);
+  } else {
+    initializeComponents();
+  }
+</script>
