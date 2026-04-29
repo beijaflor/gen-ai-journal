@@ -120,7 +120,6 @@
 - [x] 117. https://speakerdeck.com/torumakabe/azure-lifecycle-with-copilot-cli
 - [x] 118. https://speakerdeck.com/yuukiyo/ai-dlc-deep-dive
 - [x] 119. https://spectrum.ieee.org/state-of-ai-index-2026
-- [x] 120. https://stephvee.ca/blog/artificial%20intelligence/ai-resistance-is-growing/
 - [x] 121. https://surfacedby.com/blog/nginx-logs-ai-traffic-vs-referral-traffic
 - [x] 122. https://tante.cc/2026/04/21/ai-as-a-fascist-artifact/
 - [x] 123. https://tech.findy.co.jp/entry/2026/04/21/070000
