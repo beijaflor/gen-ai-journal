@@ -1,31 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T16:42:00.761793+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-29T14:15:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
   },
   "content": {
-    "title": "アクセス不可：Vercelセキュリティチェックポイントによる遮断",
+    "title": "Claude Desktop（macOS）が事前認可済みのNative Messagingマニフェストをサイレントインストール、ePrivacy指令違反の懸念も",
+    "originalTitle": "Claude Desktop Installs Preauthorized Browser Extension Manifests",
     "url": "https://letsdatascience.com/news/claude-desktop-installs-preauthorized-browser-extension-mani-4064fb1a",
-    "language": "ja",
+    "language": "en",
     "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "提供されたテキストはVercelのセキュリティ確認画面の内容であり、記事本体の情報を抽出することができません。",
-    "summaryBody": "入力されたデータは、ウェブサイトへのアクセス時に表示されるVercelのセキュリティチェックポイント（ブラウザ検証画面）のテキストです。JavaScriptの有効化やブラウザの認証を促すメッセージのみで構成されており、ニュースや技術解説などの有意なコンテンツは含まれていません。このため、本来の目的である記事の要約や評価を行うための情報が不足しています。対象URLのコンテンツを直接閲覧・取得するには、ブラウザ側でセキュリティ認証を通過するか、スクレイピング設定を調整する必要があります。",
+    "oneSentenceSummary": "Claude Desktop（macOS）が`com.anthropic.claude_browser_extension.json`という事前認可マニフェストをChromium系ブラウザ未インストール環境にも書き込み、後にインストールされる任意のChromium系ブラウザがClaude拡張等3つのIDに対しNative Messagingブリッジ経由のローカル権限を自動付与する状態になることが判明した。",
+    "summaryBody": "セキュリティ研究者Alexander Hanff氏が発見し、Noah Kenney氏が独立にレビューしたところ、Anthropic製のClaude Desktop for macOSが、`com.anthropic.claude_browser_extension.json`という名のNative Messagingマニフェストをインストールしていることが明らかになりました。このマニフェストは「Claude for Chrome」を含む3つのChromium拡張IDを事前認可しており、**対象ブラウザが現時点で未インストールでも書き込まれる**ため、後にChromium系ブラウザを追加した際に拡張が自動的にローカルバイナリと通信可能となります。\n\n### 技術的リスク\n\nNative Messagingは、ブラウザ拡張とローカル実行ファイル間のブリッジを定義する仕組みで、**OSレベルのユーザー権限で動作しブラウザサンドボックスをバイパス**します。マニフェストが事前配置された状態では、拡張はローカルバイナリとメッセージを交換し、ページ内容の読み取り・フォーム自動入力・画面キャプチャ・認証済みセッションの利用といった操作が、追加のユーザー同意なしに可能となります。Anthropic自身が公表しているプロンプトインジェクション脆弱性率（緩和策なし23.6%、現行緩和策あり11.2%）を踏まえると、インジェクション成功時に拡張経由でローカルブリッジへピボットされるリスクは無視できません。\n\n### プライバシー法上の論点\n\nHanff氏はEU ePrivacy指令第5条3項（端末への情報の保存・アクセスにはユーザーの明示同意が必要）違反の可能性を指摘しています。Kenney氏は、事前認可済みブリッジが**永続的でユーザーが発見・除去しづらい**ことを問題視しており、ブラウザベース攻撃の脅威モデルを拡大させると評価しています。\n\n### 推奨される緩和策\n\n- `~/Library` および `/Library` 配下の予期しないNative Messagingマニフェストを点検・削除する\n- インストール済みブラウザ拡張を監査し、未知の拡張IDをブロックまたは明示的フローでのみ再認可する\n- ローカルメッセージを受け付けるプロセスを監視し、OSレベルの最小権限ポリシーを適用する\n\nEUでの規制当局による精査、Anthropicからのセキュリティアドバイザリーや修正、Native Messagingを利用する他のデスクトップAI連携ツールへの監査拡大が予想されます。",
     "topics": [
-      "セキュリティ",
-      "Vercel",
-      "アクセス制限"
+      "Anthropic",
+      "Claude Desktop",
+      "Native Messaging",
+      "ブラウザ拡張セキュリティ",
+      "ePrivacy指令"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": "Vercel Security Checkpoint"
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 75,
+      "overall": 80
+    }
   }
 }

@@ -1,31 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T16:41:48.231758+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-29T14:10:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
   },
   "content": {
-    "title": "Vercelのセキュリティチェックポイントによるアクセス制限",
+    "title": "Atlassian、Jira/Confluenceの利用データをAI学習用にデフォルト収集へ（2026年8月17日施行）",
+    "originalTitle": "Atlassian Enables Default Data Collection to Train AI",
     "url": "https://letsdatascience.com/news/atlassian-enables-default-data-collection-to-train-ai-f71343d8",
-    "language": "ja",
+    "language": "en",
     "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "Vercelのセキュリティチェックポイントによりブラウザの検証が求められており、実際の記事コンテンツが取得できない状態です。",
-    "summaryBody": "入力されたテキストは、WebホスティングサービスであるVercelのセキュリティ保護画面（Security Checkpoint）のものです。ブラウザの整合性チェックやJavaScriptの有効化を確認する待機ページであり、ニュースや技術解説などの具体的な記事内容は含まれていません。このため、元のコンテンツの要約は不可能です。",
+    "oneSentenceSummary": "Atlassianは2026年8月17日より、Jira/Confluence等のメタデータと利用コンテンツをデフォルト収集し自社AI（Rovo / Rovo Dev）の学習に用いる方針へ転換し、Free/Standard/Premium層ではメタデータ収集のオプトアウトが不可能となる。",
+    "summaryBody": "Atlassianは、約30万社のクラウド顧客に対し、2026年8月17日からJiraやConfluence等の利用データをデフォルトで収集し、自社AI機能「Rovo」「Rovo Dev」の学習に充当する方針を発表しました。これは「顧客データはAIサービスの学習・改善には使用しない」とした従来方針からの明確な転換となります。\n\n### データ区分とプラン別デフォルト\n\n収集対象は2種類に分かれます。**メタデータ**は可読性スコア、タスク分類、セマンティック類似度、Jira Service ManagementのSLA値など脱識別化されたシグナル。**インアプリデータ**はConfluenceページ本文、Jira Issueのタイトル/コメント、カスタム絵文字名、ワークフロー名等のユーザー生成コンテンツです。プラン別デフォルトは組織の最上位プランに紐付き、Free/Standardはメタデータ常時オン（オプトアウト不可）＋インアプリオン、Premiumはメタデータ常時オン＋インアプリ既定オフ、Enterpriseは双方既定オフかつメタデータもオプトアウト可能、という階層構造です。\n\n### 除外条件と保持・削除ポリシー\n\nCustomer-Managed Encryption Keys利用、Atlassian Government Cloud、Isolated Cloud、HIPAA要件のある顧客は収集対象から完全除外されます。データ保持期間は最長7年。オプトアウトや削除から30日以内にインアプリデータを除去し、対象データで学習されたモデルは90日以内に再学習で「忘却」させると規定されています。\n\n### 意義とリスク\n\nこの動きは、SaaSベンダーが内部利用シグナルやコンテンツを基盤モデルの学習・微調整・評価に流用する業界トレンドの典型例です。Atlassianが提示する実利は検索精度・要約・テンプレート提案・エージェントワークフローの最適化ですが、ストーリーポイントやSLAメトリクス等のテレメトリは脱識別化後もプロジェクト構造を露出する可能性があり、7年保持は監査要件のある組織のリスクサーフェスを拡大させます。完全オプトアウトを求める組織はEnterpriseプランへの移行か特殊デプロイメントの検討が必要となり、データガバナンスがプラン階層と直結する設計になっています。",
     "topics": [
-      "Vercel",
-      "Security",
-      "Web Protection"
+      "Atlassian",
+      "AI学習データ",
+      "Rovo",
+      "データプライバシー",
+      "エンタープライズSaaS"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 5,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 5
-    },
-    "originalTitle": "Vercel Security Checkpoint"
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 65,
+      "annexPotential": 80,
+      "overall": 72
+    }
   }
 }

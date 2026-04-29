@@ -1,32 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T16:49:08.951743+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-29T15:03:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
   },
   "content": {
-    "title": "コンテンツアクセス不可：ブラウザ設定の要求",
+    "title": "OpenAI、PII検出・マスク用のオープンウェイト軽量モデル「OpenAI Privacy Filter」をApache 2.0で公開 — 1.5Bパラメータ、128kコンテキスト、ローカル実行可能でPII-Masking-300kでF1 96%",
+    "originalTitle": "Introducing OpenAI Privacy Filter",
     "url": "https://openai.com/index/introducing-openai-privacy-filter/",
-    "language": "ja",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "ブラウザのJavaScriptとCookieが有効になっていないため、目的のコンテンツを表示できない状態です。",
-    "summaryBody": "入力されたテキストは、ウェブサイトへのアクセス制限やセキュリティチェックの際に表示される一般的なシステムメッセージです。JavaScriptまたはCookieがブラウザ側で無効化されているか、自動化されたスクリプトによるアクセスを制限している可能性を示唆しています。このメッセージ自体に特定の技術的トピックや業界動向に関する情報は含まれておらず、情報の取得にはブラウザ設定の変更が必要です。",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは2026年4月22日、テキスト中のPII（個人情報）を文脈考慮で検出・マスクするオープンウェイト軽量モデル「OpenAI Privacy Filter」（1.5B総パラメータ／50Bアクティブ／128kコンテキスト／PII-Masking-300kでF1 96%）をApache 2.0ライセンスでHugging Face / GitHubに公開した。",
+    "summaryBody": "OpenAIは2026年4月22日、**OpenAI Privacy Filter** をオープンウェイトモデルとして公開しました。テキスト中の個人情報（PII）を検出・マスク／編集するための軽量・高速モデルで、**Apache 2.0ライセンスでHugging FaceおよびGitHub経由で配布**されます。\n\n### モデルアーキテクチャ\n\n- **基盤**：自己回帰型事前学習済みチェックポイントを、固定された分類ラベル集合に対する**双方向トークン分類器**へと適応。LMヘッドをトークン分類ヘッドに置換し教師あり分類目的で post-training。\n- **デコード**：トークンを1パスで一括ラベリング後、**制約付きViterbi手続きでBIOESスパンタグを一貫したスパンに復号**。\n- **規模**：総パラメータ **1.5B**、アクティブパラメータ **50M**（MoE的構成）。\n- **コンテキスト長**：**128,000トークン**まで対応。\n- **動作環境**：ローカル実行可能 — 未フィルタデータをサーバ送信せずデバイス上で処理可能。\n- **チューナブル**：オペレーティングポイント（Recall vs Precision）を用途に応じて調整可能。\n\n### 検出ラベル分類\n\n8カテゴリで予測：\n\n- `private_person` / `private_address` / `private_email` / `private_phone` / `private_url` / `private_date`\n- `account_number`（クレジットカード・銀行口座番号等を含む幅広い口座番号）\n- `secret`（パスワード・APIキー等）\n\n### 性能\n\n- **PII-Masking-300k**：F1 **96%**（Precision 94.04% / Recall 98.04%）。注釈不備を補正したベンチマーク版では F1 **97.43%**。\n- **ファインチューニング効率**：ドメイン適応タスクで少量データのF1が **54% → 96%** へ急速に改善。\n- 長文書・曖昧参照・混在フォーマット文字列・ソフトウェア関連シークレット等の現実的ノイズを含む状況での実用性を重視。コードベース内シークレット検出、多言語・敵対的・文脈依存ストレステストもモデルカードで報告。\n\n### 入出力例\n\n```\n入力: Hi Jordan, ... product launch is scheduled for September 18, 2026.\n     ... project file is listed under 4829-1037-5581. ...\n     reply here at maya.chen@example.com or call me at +1 (415) 555-0124.\n     Best, Maya Chen\n\n出力: Hi [PRIVATE_PERSON], ... [PRIVATE_DATE] ...\n     [ACCOUNT_NUMBER] ... [PRIVATE_EMAIL] ... [PRIVATE_PHONE] ...\n     [PRIVATE_PERSON]\n```\n\n### 制限と位置付け\n\n本モデルは**匿名化ツールでもコンプライアンス認証でもなく、高リスク領域でのポリシーレビューの代替にもならない**点を明示。法務・医療・金融といった高機微領域では人手レビュー・ドメイン特化評価・ファインチューニングが必須としています。OpenAI自身も社内のプライバシー保護ワークフローでファインチューン版を運用中。「世界について学ぶモデルを作るが、私的個人について学ぶモデルは作らない」というスタンスを技術として体現する一環という位置付けです。",
     "topics": [
-      "アクセスエラー",
-      "システムメッセージ",
-      "ブラウザ設定",
-      "セキュリティ"
+      "Privacy Filter",
+      "PII検出",
+      "オープンウェイト",
+      "Apache 2.0",
+      "プライバシー保護"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 5,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
-    },
-    "originalTitle": "Enable JavaScript and cookies to continue"
+      "signal": 4,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 86
+    }
   }
 }
