@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T17:09:01.387580+00:00",
+    "generatedAt": "2026-04-29T15:46:04.514315+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Azure Lifecycle with Copilot CLI - GitHub Copilot CLIによるAzure活用の全体像",
+    "title": "Azure Lifecycle with Copilot CLI",
     "url": "https://speakerdeck.com/torumakabe/azure-lifecycle-with-copilot-cli",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "GitHub Copilot CLIをガイドとセンサーで強化し、Azureのサービス選定からデプロイ、運用メンテナンスまで一貫して自動化・高度化する実践的手法。",
-    "summaryBody": "本スライドは、GitHub Copilot CLIをAzure開発ライフサイクル全体に適用するための具体的なワークフローとテクニックを解説しています。著者の真壁氏は、エージェントへの知識提供（フィードフォワード）を「ガイド」、実行結果の検証（フィードバック）を「センサー」と定義し、MCP (Model Context Protocol) サーバーやカスタムスキルを活用したアーキテクチャ設計、コスト見積もり、ADR (アーキテクチャ決定記録) の作成、BicepによるIaC生成、そしてトラブルシューティングの自動化例を紹介しています。単なるコード生成に留まらず、ExcelやPowerPoint、draw.ioとの連携まで踏み込み、人間の好奇心と理解を助ける道具としてのCopilot CLIの価値を強調しています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilot CLIを活用し、Azureのサービス選定からIaC開発、コスト見積もり、運用・保守に至るライフサイクル全体をエージェント技術で効率化する高度な実践手法を解説。",
+    "summaryBody": "本スライドは、2026年時点を想定したGitHub Copilot CLIによるAzureライフサイクル管理の解説資料です。主要な概念として、エージェントを導く「ガイド（フィードフォワード）」と、結果を検証する「センサー（フィードバック）」の組み合わせを提唱しています。\n\n具体的には以下のワークフローが示されています：\n1. **サービス選定・設計**: Azure MCP ServerやMS Learnを活用したDeep Researchにより推奨構成を決定し、ADR（アーキテクチャ決定記録）として残す手法。\n2. **IaCと図解**: Bicepコードの自動生成に加え、Mermaidやdraw.io形式での構成図作成、さらにはExcel/PowerPointへのドキュメント出力スキル。\n3. **デプロイとトラブルシューティング**: Azure Developer CLI (azd) との連携や、Resource Graphを利用したセキュリティ分析、エラー発生時の自動修正プロセス。\n\n単なる自動化にとどまらず、AIによって浮いた時間で「技術を深く理解する」という、エンジニアの成長とAIとの共存に関する哲学的な示唆も含まれています。",
     "topics": [
-      "GitHub Copilot CLI",
       "Azure",
-      "MCP (Model Context Protocol)",
+      "GitHub Copilot CLI",
       "IaC (Bicep)",
-      "Platform Engineering"
+      "Agentic Workflow",
+      "Microsoft Azure Developer CLI (azd)"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
+      "depth": 5,
       "uniqueness": 5,
-      "practical": 5,
+      "practical": 4,
       "antiHype": 4,
-      "mainJournal": 88,
-      "annexPotential": 92,
-      "overall": 90
-    },
-    "originalTitle": "Azure Lifecycle with Copilot CLI"
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 95
+    }
   }
 }
