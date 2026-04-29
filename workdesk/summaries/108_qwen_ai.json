@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T17:06:46.068878+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-29T15:35:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
   },
   "content": {
-    "title": "Qwen: アリババクラウドによる最先端オープンソースLLMシリーズの概要",
+    "title": "Qwen3.6-27B：27Bデンスモデルがフラッグシップ級コーディング性能を達成、15倍規模のQwen3.5-397B-A17Bを全主要ベンチで凌駕",
+    "originalTitle": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
     "url": "https://qwen.ai/blog?id=qwen3.6-27b",
-    "language": "ja",
+    "language": "en",
     "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "アリババクラウドが開発する「Qwen」は、多言語対応と高い推論能力を備えた強力なオープンソース大規模言語モデルシリーズです。",
-    "summaryBody": "Qwen（通義千問）は、アリババクラウドによって開発された、世界トップクラスの性能を誇る大規模言語モデル（LLM）のシリーズです。最新のQwen2.5では、数千億パラメータのモデルから、エッジデバイス向けの軽量モデルまで幅広いラインナップを展開しています。特にコーディング能力、数学的推論、そして日本語を含む多言語対応において非常に高いベンチマークスコアを記録しており、オープンソースモデル（Apache 2.0またはQwenライセンス）として、研究者や開発者が自由に利用・カスタマイズ可能です。商用利用も可能なモデルが多く、エンタープライズAIの実装において有力な選択肢となっています。",
+    "oneSentenceSummary": "Alibaba CloudのQwenチームは2026年4月にQwen3.6-27B（27Bデンス・マルチモーダル）をオープンウェイトで公開し、SWE-bench Verified 77.2、Terminal-Bench 2.0 59.3など全主要コーディングベンチで15倍規模のQwen3.5-397B-A17B（MoE 397B/17B active）を上回り、Claude 4.5 Opusと並ぶ性能を27Bデンスという実用的スケールで実現した。",
+    "summaryBody": "Alibaba CloudのQwenチームが、**Qwen3.6-27B** をオープンウェイトモデルとして公開しました（2026年4月）。Qwen3.6-Plus、Qwen3.6-35B-A3B（MoE）に続く同ファミリーの新ラインで、コミュニティで最も需要の高い27Bスケールの**デンス（非MoE）マルチモーダル**モデルです。Qwen Studioで対話可能、Hugging FaceとModelScopeで重みを配布、Alibaba Cloud Model Studio API経由でも利用可能。\n\n### 主張：15倍規模のMoE Flagshipを上回る\n\n本リリースの中核的主張は「**27Bデンスが、前世代フラッグシップQwen3.5-397B-A17B（総パラメータ397B / アクティブ17BのMoE）を全主要コーディングベンチマークで凌駕する**」ことです。コーディングベンチ抜粋（同レポート公開値）：\n\n| ベンチマーク | Qwen3.6-27B | Qwen3.5-397B-A17B | Claude 4.5 Opus | Gemma4-31B |\n|---|---|---|---|---|\n| SWE-bench Verified | **77.2** | 76.2 | 80.9 | 52.0 |\n| SWE-bench Pro | **53.5** | 50.9 | 57.1 | 35.7 |\n| SWE-bench Multilingual | **71.3** | 69.3 | 77.5 | 51.7 |\n| Terminal-Bench 2.0 | **59.3** | 52.5 | 59.3 | 42.9 |\n| SkillsBench Avg5 | **48.2** | 30.0 | 45.3 | 23.6 |\n| Claw-Eval Pass^3 | **60.6** | 48.1 | 59.6 | 25.0 |\n| QwenWebBench | **1487** | 1186 | 1536 | 1197 |\n\nClaude 4.5 OpusとTerminal-Bench 2.0で同点（59.3）、SkillsBenchとClaw-Eval Pass^3でClaude 4.5 Opusを上回ります。推論面でもGPQA Diamond 87.8、AIME26 94.1と強力。\n\n### マルチモーダル能力\n\nQwen3.6-35B-A3Bと同様、**思考・非思考両モードを単一チェックポイントで統合**したネイティブマルチモーダル設計。画像・動画・テキストを処理し、文書理解・視覚QAをサポート。VideoMME (w sub.) 87.7、VlmsAreBlind 97.0、AndroidWorld 70.3など視覚エージェントタスクでも高性能。\n\n### デプロイの実用性\n\nMoEルーティングの複雑さを排した**デンスアーキテクチャ**により、トップティアのコーディング能力を実用的・広範に展開可能なスケールで提供する設計。コンテキスト窓は131,072トークン（推論時の最大トークン16,384）。SWE-Bench系評価では200K、Terminal-Bench評価では256Kコンテキストで実施。\n\n### 統合エコシステム\n\nClaude Code・OpenClaw（旧Moltbot/Clawdbot）・Qwen Codeの主要サードパーティコーディングエージェントと連携可能。Alibaba Cloud Model StudioはOpenAI互換API（chat completions / responses）に加え**Anthropic互換API**もサポートしており、`ANTHROPIC_BASE_URL=https://dashscope-intl.aliyuncs.com/apps/anthropic` を設定するだけでClaude CodeからQwen3.6-27Bを呼び出せます。`preserve_thinking` 機能でエージェントタスク向けに前ターンの思考内容を保持可能。\n\n### 評価条件の補足\n\nSWE-Bench Pro評価では公開セットの一部問題を補正し、全比較対象を補正版で評価。Terminal-Bench 2.0はHarbor/Terminus-2ハーネス、3時間タイムアウト、5回平均。SkillsBenchはOpenCode経由で78タスク（API依存タスクを除外した自己完結サブセット）。NL2RepoはClaude Codeで `temp=1.0, top_p=0.95, max_turns=900`。",
     "topics": [
-      "Qwen",
-      "LLM",
-      "Alibaba Cloud",
-      "オープンソース",
-      "AIモデル"
+      "Qwen3.6-27B",
+      "デンスモデル",
+      "Agentic Coding",
+      "SWE-Bench",
+      "オープンウェイト"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
+      "depth": 5,
       "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 90,
-      "overall": 88
-    },
-    "originalTitle": "Qwen: A Comprehensive Overview of Alibaba's Large Language Models"
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
   }
 }

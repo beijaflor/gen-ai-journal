@@ -1,33 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T16:31:45.336714+00:00",
+    "generatedAt": "2026-04-29T15:41:44.890405+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
     "title": "gh コマンドでエージェントスキルをインストール・管理できるようになった",
     "url": "https://azukiazusa.dev/blog/gh-agent-skill-management/",
     "language": "ja",
-    "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "GitHub CLI v2.90.0にて追加された`gh skill`コマンドにより、AIエージェント向けの「スキル」をセキュアに検索・管理・公開できる仕組みが導入されました。",
-    "summaryBody": "GitHub CLIの最新アップデートで、AIエージェントの機能を拡張する「エージェントスキル」を管理するための`gh skill`コマンドが登場しました。Agent Skills仕様に準拠しており、Vercelの`npx skills`と互換性を持ちつつ、GitHubネイティブな機能（タグやリリース）を活用したサプライチェーン攻撃への対策が強化されています。\n\n主な機能として、リポジトリ全体からのスキル検索、インストール前の内容確認（プレビュー）、特定のコミットハッシュによるバージョン固定、そして自動バリデーションを含むスキル公開などが挙げられます。Claude CodeやGitHub Copilotなどの主要なエージェントに対応しており、プロジェクト単位でのスキル管理が可能なため、チーム開発におけるプロンプトやベストプラクティスの共有が容易になります。",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CLI v2.90.0に導入された gh skill コマンドにより、AIエージェント用のスキルを安全かつシームレスに検索、管理、公開できるようになりました。",
+    "summaryBody": "GitHub CLIの最新アップデート（v2.90.0）で追加された `gh skill` コマンドについての解説記事です。この新機能により、GitHub上で公開されている「エージェントスキル」を直接管理できるようになります。主な特徴として、サードパーティ製ツールに依存しないネイティブな管理、インストール前の安全なプレビュー、そしてコミットハッシュやピン留め機能によるサプライチェーン攻撃のリスク軽減が挙げられます。既存の `npx skills` との互換性も維持されており、Claude CodeやCursorといった主要なAIエージェントへのインストールに対応。さらに、バリデーション機能を備えた `publish` サブコマンドにより、開発者が安全に自作スキルを公開するためのフローも整備されています。チーム開発における暗黙知の形式知化を加速させる強力なツールとしての活用が期待されます。",
     "topics": [
       "GitHub CLI",
-      "Agent Skills",
       "AIエージェント",
-      "セキュリティ",
-      "ナレッジマネジメント"
+      "エージェントスキル",
+      "開発ツール",
+      "セキュリティ"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 5,
+      "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 92,
-      "annexPotential": 65,
-      "overall": 90
-    },
-    "originalTitle": "gh コマンドでエージェントスキルをインストール・管理できるようになった"
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
   }
 }

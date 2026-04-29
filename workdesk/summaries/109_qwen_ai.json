@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-04-27T17:07:01.255236+00:00",
-    "generatedBy": "gemini-3-flash-preview"
+    "generatedAt": "2026-04-29T15:38:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
   },
   "content": {
-    "title": "Qwen: アリババがリードするオープンソースLLMの進化と実力",
+    "title": "Qwen3.6-Max-Preview：プロプライエタリ次期フラッグシップの早期プレビュー、6主要コーディングベンチでトップスコア達成（SWE-bench Pro / Terminal-Bench 2.0 / SkillsBench 等）",
+    "originalTitle": "Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving",
     "url": "https://qwen.ai/blog?id=qwen3.6-max-preview",
-    "language": "ja",
+    "language": "en",
     "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "アリババ・グループが開発するQwenは、多言語対応と高い推論能力を兼ね備え、最新のQwen2.5ではベンチマークで世界トップレベルの性能を示すオープンソースLLMシリーズです。",
-    "summaryBody": "アリババ・グループのQwenチームが提供する大規模言語モデル「Qwen」シリーズは、オープンソースコミュニティにおいて極めて重要な地位を確立しています。最新のQwen2.5シリーズでは、0.5Bから72Bまでの幅広いパラメータサイズを展開し、特に数学、コーディング、および多言語理解のベンチマークにおいて、MetaのLlama 3などの主要な競合モデルに匹敵、あるいは凌駕するスコアを記録しています。モデルの多くはApache 2.0ライセンスやQwenライセンスの下で公開されており、企業や個人開発者がローカル環境で高度な推論を実行できる点が最大の強みです。また、テキスト生成のみならず、Qwen2-VL（画像・動画理解）やQwen2-Audio（音声理解）といったマルチモーダル展開も加速しており、実用的なAIアプリケーション構築の基盤として急速に採用が広がっています。",
+    "oneSentenceSummary": "Alibaba CloudのQwenチームは、次期プロプライエタリモデル「Qwen3.6-Max-Preview」を早期プレビューとして公開し、Qwen3.6-Plus比でエージェントコーディング・世界知識・指示追従に大幅な改善を加え、SWE-bench Pro / Terminal-Bench 2.0 / SkillsBench / QwenClawBench / QwenWebBench / SciCode の6主要コーディングベンチでトップスコアを獲得した（Alibaba Cloud Model Studio経由でホスト提供）。",
+    "summaryBody": "Qwenチームが **Qwen3.6-Max-Preview** を公開しました（2026年4月）。Qwen3.6-Plusに続く次世代**プロプライエタリ（クローズドソース）**モデルの早期プレビュー版で、Alibaba Cloud Model Studio経由でホスト提供されます。同時期にオープンウェイトで公開された姉妹モデル **Qwen3.6-27B**（本誌#108参照）とは異なる、API専用のフロンティア帯ラインです。\n\n### Qwen3.6-Plusからの主要改善\n\n- **エージェントコーディング**：SkillsBench **+9.9**、SciCode **+6.3**、NL2Repo **+5.0**、Terminal-Bench 2.0 **+3.8**\n- **世界知識**：SuperGPQA **+2.3**、QwenChineseBench **+5.3**\n- **指示追従**：ToolcallFormatIFBench **+2.8**\n\n### ベンチマーク達成\n\n6つの主要コーディングベンチマークで**トップスコア**を獲得：\n\n- SWE-bench Pro\n- Terminal-Bench 2.0\n- SkillsBench\n- QwenClawBench（Claw agent benchmark — 実ユーザー分布に基づく）\n- QwenWebBench（フロントエンドコード生成のbilingual多カテゴリ評価）\n- SciCode\n\n### 提供形態\n\n- **Qwen Studio**：対話形式で即座に試用可能\n- **Alibaba Cloud Model Studio API**：`qwen3.6-max-preview` として呼び出し（提供準備中）\n- API互換性：OpenAI互換（chat completions / responses）と **Anthropic互換** の両プロトコルをサポート\n- **`preserve_thinking`機能**：エージェントタスク向けに前ターンの思考内容を保持\n\n### 位置付け\n\n本リリースは「プレビュー」と明示され、活発な開発中で後続バージョンでさらなる改善が見込まれます。Qwen3.6ファミリー全体の中での位置付けとしては、3B-activeの軽量Qwen3.6-35B-A3B → オープンウェイト27BデンスのQwen3.6-27B → API版Qwen3.6-Plus → そして本Qwen3.6-Max-Preview、というスケール階層で「全スケールでエージェントコーディングのブレークスルー」を実現する戦略の頂点に位置します。\n\nなお本ローンチページ自体は具体的なスコア表を掲載せず、相対改善幅の言及にとどまっています。詳細な比較データは姉妹モデルQwen3.6-27Bのリリースノート（#108）でClaude 4.5 OpusやQwen3.5-397B-A17Bとの比較が公開されています。",
     "topics": [
-      "Qwen",
-      "LLM",
-      "オープンソース",
-      "アリババ",
-      "生成AI"
+      "Qwen3.6-Max-Preview",
+      "プロプライエタリLLM",
+      "Agentic Coding",
+      "Alibaba Cloud Model Studio",
+      "プレビューリリース"
     ],
     "scores": {
-      "signal": 5,
-      "depth": 4,
-      "uniqueness": 4,
-      "practical": 5,
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
       "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 90,
-      "overall": 92
-    },
-    "originalTitle": "Qwen"
+      "mainJournal": 70,
+      "annexPotential": 80,
+      "overall": 75
+    }
   }
 }
