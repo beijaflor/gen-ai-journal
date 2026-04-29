@@ -258,11 +258,11 @@ def get_gemini_schema():
                 properties={
                     "title": Schema(
                         type=Type.STRING,
-                        description="Article title in Japanese (1-200 chars)"
+                        description="Title to display in the journal (always Japanese: copy verbatim if source is Japanese, translate if source is non-Japanese). 1-200 chars."
                     ),
                     "originalTitle": Schema(
                         type=Type.STRING,
-                        description="Original title if article is in non-Japanese language",
+                        description="Source page's original title, verbatim. REQUIRED when language is one of {en, zh, ko, other}. MUST be omitted (do not include the key, do not set null) when language='ja'. Never derive from URL slug, related papers, or product names.",
                         nullable=True
                     ),
                     "url": Schema(
@@ -272,7 +272,7 @@ def get_gemini_schema():
                     "language": Schema(
                         type=Type.STRING,
                         enum=["ja", "en", "zh", "ko", "other"],
-                        description="Article language code"
+                        description="Language of the SOURCE page (not the output/summary language). 'ja' only if the source page itself is written in Japanese."
                     ),
                     "contentType": Schema(
                         type=Type.STRING,
@@ -678,6 +678,25 @@ def main():
                     logging.warning(f"URL mismatch corrected: '{generated_url}' → '{args.url}'")
                     print(f"Warning: URL mismatch corrected ('{generated_url}' → '{args.url}')", file=sys.stderr)
                     response_data['content']['url'] = args.url
+
+            # originalTitle invariant: must be present iff language != 'ja'.
+            # When the model violates this we strip rather than retry, so the file is at least self-consistent.
+            if 'content' in response_data:
+                content = response_data['content']
+                lang = content.get('language')
+                orig = content.get('originalTitle')
+                if lang == 'ja' and orig:
+                    msg = (f"language='ja' but originalTitle was set "
+                           f"({orig[:60]!r}...). Stripping originalTitle. "
+                           f"Re-summarize if this is actually a non-Japanese source.")
+                    logging.warning(msg)
+                    print(f"Warning: {msg}", file=sys.stderr)
+                    del content['originalTitle']
+                elif lang and lang != 'ja' and not orig:
+                    msg = (f"language={lang!r} but originalTitle is missing. "
+                           f"Non-Japanese articles should include originalTitle.")
+                    logging.warning(msg)
+                    print(f"Warning: {msg}", file=sys.stderr)
 
             # Convert to formatted JSON string
             response = json.dumps(response_data, ensure_ascii=False, indent=2)

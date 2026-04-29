@@ -8,10 +8,15 @@ The `content.url` field in your JSON output MUST be the **exact string** of the 
 **⚠️ CRITICAL — TITLE RULE (read first):**
 - `title` for **Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT paraphrase, summarize, or alter it in any way.
 - `originalTitle` for **non-Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT derive from the URL slug or rewrite it.
+- `originalTitle` must come from the **source page itself** — not from a paper, product, talk, or other resource the article merely references. If the source is a press release announcing a paper, `originalTitle` is the press release's own title (or omitted, if the press release is in Japanese), **not** the paper's title.
 
-**IMPORTANT**: Before generating JSON, detect the article language:
-- If language is **Japanese** (ja): **DO NOT** include the `originalTitle` field in your JSON output
-- If language is **English/other** (en/other): **MUST** include the `originalTitle` field with the original title
+**IMPORTANT — `language` is the SOURCE page's language**, not the output/summary language. The `title` field is always Japanese (translated when the source is non-Japanese), but `language` reflects the source page. Examples:
+- Source is in English → `language: "en"`, `title` is Japanese (translated), `originalTitle` is the English page title.
+- Source is in Japanese → `language: "ja"`, `title` is Japanese (verbatim), **omit** `originalTitle` entirely.
+
+Before generating JSON, detect the source article's language:
+- If source language is **Japanese** (ja): **DO NOT** include the `originalTitle` field in your JSON output
+- If source language is **English/other** (en/zh/ko/other): **MUST** include the `originalTitle` field with the original title
 
 Article contents is very last of prompt.
 
@@ -47,7 +52,7 @@ Article contents is very last of prompt.
 }
 ```
 
-**For English/other language articles (INCLUDE originalTitle field):**
+**For English/other language articles (note `language: "en"` even though `title` is Japanese — `language` describes the SOURCE page, not the title field):**
 ```json
 {
   "metadata": {
@@ -77,6 +82,8 @@ Article contents is very last of prompt.
   }
 }
 ```
+
+**Common mistake to avoid:** A Cloudflare/AWS/OpenAI blog post titled in English is a **non-Japanese source** — `language: "en"`, `originalTitle` set to the English page title, and `title` is your Japanese translation. Do NOT label it `language: "ja"` just because the `title` field you're producing happens to be Japanese. Conversely, an NTT or Qiita Japanese press release is `language: "ja"` and **must omit** `originalTitle` even if the article references an English-titled paper or product — those references go in `summaryBody`, not in `originalTitle`.
 
 **You must output ONLY this JSON structure. Do not add any other fields at the root level.**
 
