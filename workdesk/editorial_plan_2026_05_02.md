@@ -6,6 +6,8 @@
 - [x] Theme introductions drafted
 - [x] Article-to-theme mapping complete
 - [x] APPROVED - Ready for STEP_04 curation
+- [x] Assembly strategies defined (STEP_07)
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
 
 ---
 
@@ -227,3 +229,331 @@ After approval:
 4. **Theme 1 の Lead 選択**: 055 (Martin Alderson) と 110 (Sam Henri Gold) はどちらも独立分析。055を採用したが、Lead を 110 に入れ替える選択もある。
 
 5. **アノテーション**: メインから外した日本語Tips系記事 (066, 068, 069, 086, 088, 090, 091, 095, 104, 187, 191, 193, 195, 196, 198, 205-208) は Annex の主軸ではないが、STEP_05でリストに含めるかは判断要。
+
+---
+
+## ASSEMBLY STRATEGIES (STEP_07)
+
+Pattern selections and assembly notes for each main theme. 3 Single-Focus + 4 Multi-Perspective. No Progressive-Sequence or Debate-Contrast this week — articles in this journal are mostly parallel reactions or angle variations rather than building chains or pure pro/con debates.
+
+### Theme 1: Claude Design発表とデザイン業界の再編
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 2026-04-17のClaude Design発表が中心イベント。4記事はすべて、この発表に対する異なる角度からの分析・反応・周辺動向。055 が独立アナリストの直接分析、110 が歴史的文脈、015 が Google の並行的応答、044 が業界側の概念整理。Single-Focus が自然。
+
+**Article Order & Roles:**
+1. 055 Martin Alderson "Figma's Woes Compound with Claude Design" — Lead (独立アナリストによる Claude Design の構造的影響分析)
+2. 110 Sam Henri Gold — Supporting (Sketch→Figma→Code への歴史的回帰文脈)
+3. 015 Google Labs Stitch DESIGN.md — Supporting (Google の並行アクション、競合のデザイン仕様 OSS 化)
+4. 044 Goodpatch Agentic UX — Synthesis/Final (デザイン業界側からの「エージェント時代の UX」概念応答)
+
+**Narrative Arc:**
+Claude Design 発表が業界に与えた構造的影響を、独立アナリスト視点 → 歴史的文脈 → 競合の対応 → 業界側の概念整理、の順で示す。論争を作らず、各記事が示す事実（Figma 株 7% 下落、CPO 取締役辞任、DESIGN.md OSS 化、Agentic UX の4観点）を並列に提示する。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 055 | 「Anthropicが2026-04-17に発表したClaude Designは、Figmaの株価7%下落とCPO辞任という即時的影響を生んだ。最も詳細な構造分析を行ったのは独立アナリストのMartin Aldersonである」 |
+| 055 → 110 | 「この構図を歴史的文脈に置いたのが、Sam Henri Goldによる『デザインの真実の源（Source of Truth）』論である」 |
+| 110 → 015 | 「Anthropicの動きと同じ週、Google Labsは『DESIGN.md』をOSS化した」（並行アクションへの転換） |
+| 015 → 044 | 「これらの動きをデザイン業界側はどう受け止めるか。Goodpatchが提示する『Agentic UX』は…」 |
+
+**Emphasis Balance:**
+- Technical Depth: Medium (DESIGN.md仕様の構造、handoffバンドルの実装)
+- Business Impact: High (Figma株価、CPO辞任、市場構造への影響)
+- Future Outlook: Medium (デザイン職の再定義、業界の中期的方向性)
+
+**Key Synthesis Points:**
+- Claude Designはデザインツール市場参入であると同時に、デザインプロセス全体をコード起点に再編する試み
+- Sketch→Figmaの構図再来というSam Henri Goldの観察は、Claude Designを単発イベントでなく構造的シフトの一部として位置づける
+- Google・Goodpatchが示すように、業界各所から「AIにデザイン意図を伝える形式（DESIGN.md/Agentic UX）」が独立に生まれている
+
+**Conclusion Approach:**
+4記事を貫くのは「デザインの真実の源（Source of Truth）がコードへ回帰しつつある」という観察。Figma株価の即時反応・歴史的文脈・競合の応答・業界の概念整理が、それぞれ独立に同じ方向を指している事実を述べて閉じる。「だから何が起きるか」の予測はしない。
+
+**Assembly Prompts for STEP_08:**
+1. Claude Design発表は何を変えたか？（具体的に：株価、ツール選定、デザインフロー）
+2. なぜ「ツールの真実の源がコードへ回帰」する流れがいま生じるのか
+3. DESIGN.md/Agentic UXのような形式が複数同時発生していることが示すもの
+4. デザイナー職の中期的役割
+
+---
+
+### Theme 2: Claude Mythos の現実と虚像
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 同一トピック（Mythos）の異なる側面を扱う4記事。017は Mozilla の成功事例（公式）、151 は同じ主張への批判的検証、173 は運用現実、182 は競合追従。017 と 151 は対立的だが、173・182 はそれぞれ独立した次元（地政学、競争）を加えており、Debate-Contrast より Multi-Perspective が適切。
+
+**Article Order & Roles:**
+1. 017 Mozilla "The zero-days are numbered" — 公式成功事例 (Firefox 271件修正)
+2. 151 flyingpenguin "The boy that cried Mythos" — 批判的検証 (244ページのシステムカード精査、72.4%→4.4%)
+3. 173 Reuters "NSA using Mythos despite blacklist" — 運用現実 (DoDブラックリスト無視)
+4. 182 XBOW "Mythos-like hacking open to all" — 競合追従 (GPT-5.5が同等性能達成)
+
+**Narrative Arc:**
+Mythosの「主張」「検証」「運用」「競合」の4側面を順に提示する。各記事は他を否定しないが、組み合わせると「公式発表の数字は単純化されているが、現場では既に運用されており、競合も追いついている」という多層的な事実関係が浮かぶ。判断は読者に委ねる。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 017 | 「MozillaはMythos Previewを使ってFirefox 150の脆弱性271件を一斉修正したと公式に報告した」 |
+| 017 → 151 | 「この公式発表に対して、独立した検証を行ったのがflyingpenguinである」 |
+| 151 → 173 | 「数字をめぐる議論とは別に、運用面では既に異なる現実がある。Reutersの報道によれば...」 |
+| 173 → 182 | 「Anthropicの優位性が短命である可能性を示すのが、XBOWによるGPT-5.5の検証結果である」 |
+
+**Emphasis Balance:**
+- Technical Depth: High (システムカードの数字、脆弱性検出の手法、ベンチマーク)
+- Business Impact: Medium (Anthropic-Mozilla提携、DoD/NSA関係)
+- Future Outlook: Medium (AIによる脆弱性検出のコモディティ化)
+
+**Key Synthesis Points:**
+- 公式発表の数字（Firefox 72.4%）と独立検証の数字（4.4%）の差は、AIモデル評価における「ベンチマーク条件」の重要性を示す
+- 運用現実（NSA利用）と公式の指針（DoDブラックリスト）の不一致は、AI モデルの実用と政策的議論のずれを示す
+- GPT-5.5 が同等性能を達成したことで、Mythos の独自性は技術より「先行発表」にあった可能性
+
+**Conclusion Approach:**
+Mythosは「271件修正」と「2件依存で4.4%」という両方が同じ事実を異なる切り口で示している。NSAが運用し、GPT-5.5が追いついている、という運用・競合状況も含めて、AI による脆弱性検出はもはや単一モデルの独占ではなくなりつつある、と事実を述べて閉じる。
+
+**Assembly Prompts for STEP_08:**
+1. 271件と4.4%、両方の数字はそれぞれ何を測っているのか
+2. NSA運用とDoDブラックリストの関係は何を示すか
+3. GPT-5.5の追従はAI脆弱性検出の市場構造に何を示唆するか
+4. 公式発表をどう読むかについての教訓
+
+---
+
+### Theme 3: GPT-5.5発表とOpenAI連発リリース
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 075 GPT-5.5 が中心イベント、028 Chronicle と 077 Workspace Agents は同週の連発リリースで GPT-5.5 を前提とする付随機能。三つは公式サイト同列ではあるが、フラッグシップモデル発表が他を導く構造。Single-Focus が自然。
+
+**Article Order & Roles:**
+1. 075 OpenAI "Introducing GPT-5.5" — Lead (フラッグシップモデル発表)
+2. 028 Codex Chronicle — Supporting (macOS版Codex、画面OCRで Memories 自動蓄積)
+3. 077 Workspace Agents — Synthesis/Final (Codex基盤の企業向けエージェント、5/6まで無料)
+
+**Narrative Arc:**
+GPT-5.5 のベンチマーク数値とラムゼー数の形式検証で能力を確立した上で、それを前提とする周辺機能 Chronicle と Workspace Agents を提示する。3日間の連発リリースとして、OpenAI が GPT-5.5 中心のエコシステムを一気に展開した構図を示す。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 075 | 「OpenAIは2026-04-21〜23の3日間でGPT-5.5本体・Chronicle・Workspace Agentsを連続発表した。中核となるGPT-5.5から見ていく」 |
+| 075 → 028 | 「GPT-5.5の能力を最も実用的に活用する形が、macOS版Codexに導入されたChronicle機能である」 |
+| 028 → 077 | 「個人向けの Chronicle に対し、企業向けに展開されたのが Workspace Agents である」 |
+
+**Emphasis Balance:**
+- Technical Depth: High (Terminal-Bench 2.0で82.7%、GDPval 84.9%、ラムゼー数の形式検証)
+- Business Impact: High (5/6まで無料の企業展開戦略、OpenAI Workspace Agentsの位置づけ)
+- Future Outlook: Medium (Terminal-Benchベースの自律エージェント実用化)
+
+**Key Synthesis Points:**
+- GPT-5.5のラムゼー数オフ対角漸近証明は、AIによる数学的発見の早期事例
+- 同週連発はOpenAIが GPT-5.5を単独モデルでなく「エージェント基盤」として位置づけている戦略の表れ
+- Chronicle (個人) と Workspace Agents (企業) で、両方の市場に同時アプローチ
+
+**Conclusion Approach:**
+GPT-5.5・Chronicle・Workspace Agentsの3日間連発は、ベンチマーク数値の話題を超えて、OpenAIが個人と企業の両端でエージェント基盤を一気に展開した動きとして読める。事実を述べて閉じる。
+
+**Assembly Prompts for STEP_08:**
+1. GPT-5.5のベンチマーク数値は具体的に何を意味するか
+2. ラムゼー数の形式検証は AIによる数学的発見として何を示すか
+3. Chronicle・Workspace Agentsの位置づけ
+4. 3日間連発戦略から読み取れるOpenAIの方向性
+
+---
+
+### Theme 4: Amazon $25B拡張とAWS-Anthropic 10年提携
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 提携拡大発表（139）が中心イベント、AWS Bedrock AgentCore（006）と Claude Cowork（005）はその提携を実装に落とし込む製品リリース。3記事は階層構造（提携 → AgentCore → Cowork）。Single-Focus が自然。
+
+**Article Order & Roles:**
+1. 139 Amazon公式 "Amazon invests additional $5 billion in Anthropic AI" — Lead (提携拡大の一次情報)
+2. 006 AWS公式 "New features in Amazon Bedrock AgentCore" — Supporting (AgentCore マネージドハーネス、CLI、永続FS)
+3. 005 AWS公式 "Claude Cowork in Amazon Bedrock" — Synthesis/Final (ナレッジワーカー向け展開、IAM/VPC/CloudTrail統合)
+
+**Narrative Arc:**
+Amazon の追加 $5B（最大 $25B）と Anthropic の 10年で $100B コミットを起点に、それを支える Bedrock AgentCore のマネージドハーネスと、組織展開を可能にする Claude Cowork を順に提示する。資本提携 → 開発者向け基盤 → 組織向け展開、の3層構造で全体像を示す。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 139 | 「Amazon は追加$5B（最大$25B）をAnthropicに出資、Anthropicは10年で$100BのAWS支出と Trainium2-4 採用、5GWの Project Rainier 稼働でコミットした」 |
+| 139 → 006 | 「この提携を実装に落とし込む第一の製品が、Bedrock AgentCore の新機能群である」 |
+| 006 → 005 | 「開発者向けの AgentCore に対し、組織内のナレッジワーカー向けに展開されたのが Claude Cowork in Bedrock である」 |
+
+**Emphasis Balance:**
+- Technical Depth: Medium (AgentCore のマネージドハーネス、Trainium 4世代、Project Rainier の5GW)
+- Business Impact: Very High ($25B/$100B/5GWのスケール、AWSの請求統合、ナレッジワーカー全社展開)
+- Future Outlook: Medium (10年の長期コミットの含意)
+
+**Key Synthesis Points:**
+- $25B出資 + $100B支出コミットは、AnthropicとAWSの相互依存を制度化
+- AgentCore（開発者）と Cowork（組織）の同時展開は、エージェント基盤の上下流カバー戦略
+- Project Rainier の 5GW 規模はTrainium 4世代の本格商用化の意志表示
+
+**Conclusion Approach:**
+資本提携の数字、AgentCoreの開発者向け実装、Coworkの組織展開、という3層が同じ週に揃うことが、AWS-Anthropic提携が単発投資ではなく実装と組織展開まで含めた構造的取り組みであることを示す、という事実関係で閉じる。
+
+**Assembly Prompts for STEP_08:**
+1. $25B/$100B/5GWの数字は何を意味するか
+2. AgentCoreのマネージドハーネスは開発者の何を変えるか
+3. Coworkの組織展開はナレッジワーカーの利用シーンをどう広げるか
+4. 10年提携の戦略的含意
+
+---
+
+### Theme 5: Claude Code Pro削除騒動とCopilot個人プラン制限
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 同一現象（エージェント時代のサブスクリプション破綻）を3つの異なる立場から扱う。181 は批評家による Anthropic 分析、038 は GitHub の公式発表（自社サービスの制限）、062 は HN コミュニティの初動反応。階層構造はなく、3つは並列の異なる視点。Multi-Perspective が適切。
+
+**Article Order & Roles:**
+1. 181 Ed Zitron (wheresyoured.at) "Anthropic Removes Pro CC" — 批評家視点 (ドキュメント書き換えの記録、課金モデル批判)
+2. 038 GitHub公式 "Changes to GitHub Copilot Individual plans" — ベンダー視点 (公式発表、新規受付停止、利用制限強化)
+3. 062 HN "Claude Code to be removed from Pro plan?" — コミュニティ視点 (A/Bテスト発覚スレッド、初動反応)
+
+**Narrative Arc:**
+Anthropic 側（181 + 062）と GitHub 側（038）の両方で、エージェント機能のコスト構造がサブスクリプションモデルを破綻させている、という同じ構造的問題が同時に露呈している。批評家・ベンダー・コミュニティの3視点を並列で提示し、業界全体の課題として位置づける。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 181 | 「Anthropicが Pro プランからClaude CodeをA/Bテストで一時除外し、GitHubがCopilot個人プランの新規受付停止を発表した週となった。批評家の側からまず見ていく」 |
+| 181 → 038 | 「Anthropic 側の動きに対し、GitHub も並行的に Copilot 個人プランの制限強化を公式発表した」 |
+| 038 → 062 | 「ベンダー側の動きに対するコミュニティの反応は、HN スレッドで凝縮されている」 |
+
+**Emphasis Balance:**
+- Technical Depth: Low (具体的なコスト構造の数字は限定的)
+- Business Impact: High (サブスクリプションモデルの限界露呈、業界全体への影響)
+- Future Outlook: Medium (個人開発者の課金モデル選択肢、業界の方向性)
+
+**Key Synthesis Points:**
+- Anthropic と GitHub の両方が同時期に同種の制限を導入したのは偶然でなく、エージェント機能の計算コストが個人サブスク料金を構造的に上回っているため
+- 批評家・公式発表・コミュニティの3視点はそれぞれ独立に同じ問題を捉えている
+- ドキュメント書き換え（181 の指摘）、新規受付停止（038）、A/Bテスト発覚（062）の3つは、ベンダーが「正面突破でなく制限緩和的な変更」を選んでいることを示す
+
+**Conclusion Approach:**
+2社が同じ週に同じパターンの制限を導入した事実そのものが、エージェント時代のサブスクリプション経済が変曲点にあることを示す。3視点が同じ方向を指している事実関係を述べて閉じる。「個人プランは消える」のような予測はしない。
+
+**Assembly Prompts for STEP_08:**
+1. Anthropicの「Pro削除A/Bテスト」と「ドキュメント書き換え」は具体的に何が起きたか
+2. GitHubの公式制限変更は何を制限するか
+3. 2社が同時期に同じ動きをしたことが示す構造
+4. 個人開発者にとっての含意
+
+---
+
+### Theme 6: オープンウェイト勢のフロンティア追従
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 3記事はそれぞれ異なる種類の進展を示す並列の事実：052 は研究手法 SOTA、108 は商用密モデル、164 はエージェント能力拡張。階層関係や依存関係はなく、すべて「オープンウェイト勢がクローズドモデルを追従している」という同一テーマの異なる側面。Multi-Perspective が適切。
+
+**Article Order & Roles:**
+1. 052 LLM-as-a-Verifier (Stanford×Berkeley×NVIDIA) — 研究 SOTA (Terminal-Bench 2 で 86.4%、3軸スケーリング)
+2. 108 Qwen3.6-27B (Qwen公式) — 商用密モデル (SWE-bench 77.2、Claude 4.5 Opus と同点)
+3. 164 Kimi K2.6 (Moonshot公式) — エージェント能力 (300サブエージェント、4,000ステップ並列、10時間実行)
+
+**Narrative Arc:**
+研究面（052: 3軸スケーリングで SOTA）→ 商用モデル性能（108: Qwen3.6が Claude Opus と同点）→ エージェント能力（164: Kimi の300並列）、と異なる側面でオープン勢が追従している事実を3並列で示す。「追いつき型」と「独自性発揮型」が同時進行している構図を示す。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 052 | 「ベンチマーク面で、Stanford × Berkeley × NVIDIA 共同研究の LLM-as-a-Verifier が Terminal-Bench 2 で86.4% の SOTA を達成した」 |
+| 052 → 108 | 「研究面のSOTAに加え、商用密モデルでは Qwen3.6-27B が新たな到達点を示している」 |
+| 108 → 164 | 「単一モデルの性能とは別の軸で、エージェント能力を拡張したのが Moonshot AI の Kimi K2.6 である」 |
+
+**Emphasis Balance:**
+- Technical Depth: High (Terminal-Bench 2.0、SWE-bench、3軸スケーリングの数式、Agent Swarm仕様)
+- Business Impact: Medium (オープンウェイト採用の選択肢拡大)
+- Future Outlook: Medium (オープン-クローズドのギャップ縮小)
+
+**Key Synthesis Points:**
+- 052 の 86.4% は Generation/K-best/Compute の 3 軸スケーリングという手法の発見、性能数値そのものより方法論が重要
+- 108 の「Claude 4.5 Opus と同点」は密モデルでも追従可能を示す
+- 164 の Agent Swarm（300 サブエージェント・10時間実行）は単一モデル性能とは別軸の差別化
+- 研究 → 商用 → エージェント、という3軸での同時進展がオープン勢の総合力を示す
+
+**Conclusion Approach:**
+3つの事実（86.4% SOTA、Claude Opus 同点、300並列）はそれぞれ独立した到達点であり、オープンウェイト勢がベンチマーク・商用モデル・エージェント能力の3軸で並行して進歩していることを示す。事実の並列で閉じる。
+
+**Assembly Prompts for STEP_08:**
+1. LLM-as-a-Verifierの3軸スケーリング手法は何を発見したか
+2. Qwen3.6-27Bが Claude Opus と同点を達成した条件と意味
+3. Kimi K2.6のAgent Swarmは単一モデル性能と何が違うか
+4. 3つの進展が並行することの含意
+
+---
+
+### Theme 7: AGENTS.md/Skills/APMの標準化
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 4記事はコンテキストファイル管理の異なるスケールでの進展を扱う：200 は社内事例、003 は Google 公式、105 は Microsoft 公式、042 は個人実例。階層関係はなく、それぞれ独立の事例。「コンテキストファイル仕様の標準化」という共通トピックに対する4つの異なるスケールの取り組み。Multi-Perspective が適切。
+
+**Article Order & Roles:**
+1. 200 Pepabo CLAUDE.md 3層化 (83%削減) — 社内事例 (実装手順と計測結果)
+2. 003 Google Android CLI + Skills (70%削減) — 公式ベンダー (タスク3倍高速化)
+3. 105 Microsoft APM (Agent Package Manager) — エンタープライズツール (バージョン管理)
+4. 042 mizchi/chezmoi-dotfiles SKILL.md — 個人実例 (empirical-prompt-tuning)
+
+**Narrative Arc:**
+社内事例（Pepabo）→ ベンダー公式（Google Android）→ エンタープライズツール（Microsoft APM）→ 個人実装（mizchi）、と異なるスケールで「コンテキストファイルを構造化することがトークン削減に直結する」という同じパターンが独立に発生していることを示す。
+
+**Transition Strategy:**
+
+| From → To | Transition Approach |
+|-----------|---------------------|
+| (Intro) → 200 | 「コンテキストファイルを構造化することの効果を、最も具体的な数字で示したのが Pepabo の事例である」 |
+| 200 → 003 | 「Pepaboの社内事例と同じ方向性を、ベンダー公式の規模で示しているのが Google Android の CLI + Skills である」 |
+| 003 → 105 | 「個社・ベンダーレベルの取り組みに対し、エコシステム全体のパッケージ管理を整備しているのがMicrosoft APMである」 |
+| 105 → 042 | 「これらのツール群を実際に運用する個人開発者の実例として、mizchi のSKILL.md がある」 |
+
+**Emphasis Balance:**
+- Technical Depth: High (3層構造、SKILL.md仕様、APMロックファイル、empirical-prompt-tuning手法)
+- Business Impact: Medium (組織内トークンコスト削減、エコシステム統合)
+- Future Outlook: Medium (コンテキストファイルが標準ファイルセットとして定着する流れ)
+
+**Key Synthesis Points:**
+- 83%削減（Pepabo）と 70%削減（Google）は規模が違うが同じ削減率レンジ
+- ベンダー（Google・Microsoft・Anthropic）と個人開発者の両方が独立に同じ問題（コンテキスト肥大化）に取り組んでいる
+- パッケージマネージャ（APM、gh skill）の登場は、SKILL.md/AGENTS.md/CLAUDE.md がエコシステムインフラ化している証拠
+
+**Conclusion Approach:**
+4つの異なるスケール・主体が独立に「コンテキストファイル構造化」に取り組んでいる事実そのものが、この標準化が個別の最適化でなくエコシステム全体の流れであることを示す。事実関係を述べて閉じる。
+
+**Assembly Prompts for STEP_08:**
+1. Pepaboの83%削減（11万→1.9万）は具体的にどんな構造で達成されたか
+2. Google Android Skillsの70%削減と3倍高速化は何を測ったものか
+3. Microsoft APMがエコシステムに何を加えるか
+4. 個人実装と公式ツールが独立に同じ方向に向かうことの含意
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Approval Date:** 2026-05-01
+**Approver:** beijaflor
+
+**Pattern Distribution:**
+- Single-Focus: 3 themes (1, 3, 4) — central event with reactions/implementations
+- Multi-Perspective: 4 themes (2, 5, 6, 7) — parallel angles on same topic
+- Progressive-Sequence: 0 — articles don't strictly build on each other
+- Debate-Contrast: 0 — even Theme 2 (Mythos critique) is too multi-axial for pure pro/con
+
+**Notes:**
+- All themes have ≥3 articles; no single-article themes this week.
+- 7 themes is at the upper end of the 6-7 main range. Theme count itself is fine; the question is whether to merge any (Theme 7 absorbing 098 Harness critique, etc.) — left to STEP_08 judgment.
+- Memory note: avoid manufactured narrative connections in transitions; the connections above are grounded in actual content, not invented.
