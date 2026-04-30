@@ -147,6 +147,7 @@
 - [x] 145. https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users
 - [x] 146. https://www.businessinsider.jp/article/2604-adobe-summit-ai-brand-visibility/
 - [x] 147. https://www.chrbutler.com/reactionary-red-lining-of-ai
+- [x] 148. https://news.ycombinator.com/item?id=47818324
 - [x] 149. https://www.figma.com/blog/how-ai-leaders-are-borrowing-from-the-design-playbook/
 - [x] 150. https://www.flyingpenguin.com/build-an-openclaw-free-secure-always-on-local-ai-agent/
 - [x] 151. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/
