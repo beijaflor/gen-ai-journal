@@ -33,7 +33,6 @@
 - [x] 029. https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide
 - [x] 030. https://digital-gov.note.jp/n/n84aeba282e60
 - [x] 031. https://eiji.page/blog/opensrc-intro/
-- [x] 032. https://engineering-shift-con.findy-tools.io/2026
 - [x] 033. https://evilmartians.com/chronicles/3-rules-for-getting-ai-agents-to-find-use-and-not-exploit-your-devtool
 - [x] 034. https://findy-code.io/media/articles/interview-yusukebe
 - [x] 035. https://firebase.blog/posts/2026/04/cloud-next-2026-ai-logic/
