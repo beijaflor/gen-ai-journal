@@ -34,6 +34,7 @@
 - [x] 039. https://github.com/google-labs-code/design.md
 - [x] 040. https://github.com/Luce-Org/lucebox-hub
 - [x] 041. https://github.com/memvid/claude-brain
+- [x] 042. https://github.com/mizchi/chezmoi-dotfiles/blob/main/dot_claude/skills/empirical-prompt-tuning/SKILL.md
 - [x] 043. https://github.com/okdt/claude-code-hardening-cheatsheet
 - [x] 045. https://group.ntt/jp/newsrelease/2026/04/22/260422a.html
 - [x] 046. https://interconnected.org/home/2026/04/18/headless

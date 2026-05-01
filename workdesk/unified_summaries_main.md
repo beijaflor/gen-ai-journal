@@ -433,13 +433,3 @@ https://qiita.com/TKfumi/items/0751732005097816296c
 AIエージェントの設定やスキルをnpmのように一括管理・共有できるMicrosoft製のパッケージマネージャー「APM」の活用法を紹介する記事。
 
 AIエージェント（Claude Code、Cursor、GitHub Copilot等）がプロジェクトのコンテキストを理解するためには、適切な指示やスキルを与える「ハーネスエンジニアリング」が必要ですが、設定の共有や管理が煩雑になる課題があります。本記事では、この課題を解決するMicrosoft製OSS『APM (Agent Package Manager)』を解説しています。APMは、apm.ymlを用いてプロジェクトに必要な指示（Instructions）、スキル（Skills）、プロンプトテンプレート等を定義し、`apm install`コマンド一つで複数のエージェントツールに環境を展開できます。また、プロンプトインジェクションを防ぐためのセキュリティスキャン機能も備えており、チーム開発におけるAIエージェント利用の標準化を強力にサポートします。記事内ではObsidianスキルを導入する具体例やインストール手順も紹介されています。
-
----
-
-## Claude向け経験的プロンプトチューニングのスキル定義 (mizchi/chezmoi-dotfiles)
-
-https://github.com/mizchi/chezmoi-dotfiles/blob/main/dot_claude/skills/empirical-prompt-tuning/SKILL.md
-
-著名な開発者mizchi氏による、Claudeの出力を改善するための「経験的プロンプトチューニング」手法を体系化したスキル定義ファイル。
-
-本リソースは、開発者のmizchi氏が公開しているClaudeのCustom Instructions（Skills）の一部であり、LLMのプロンプトエンジニアリングにおける「経験的な調整（Empirical Tuning）」の手法を定義したものです。具体的には、単なる推測ではなく、プロンプトの微細な変更が結果に与える影響を観察・分析し、フィードバックループを回すための方法論をLLM自身に理解させるためのプロンプトセットとなっています。chezmoiを用いてドットファイルと共に管理されており、AIエージェントの振る舞いをより確実かつ技術的なアプローチで最適化しようとする試みの一つです。※対象のファイルパスがGitHub上で見つからない（404）場合がありますが、リポジトリの構成から、Claude Desktop等の拡張機能としての利用が想定されています。

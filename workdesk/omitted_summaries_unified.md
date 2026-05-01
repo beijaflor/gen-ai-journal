@@ -409,6 +409,16 @@ Claude Code内で`/plugin add marketplace memvid/claude-brain`を実行し、プ
 
 ---
 
+## Claude向け経験的プロンプトチューニングのスキル定義 (mizchi/chezmoi-dotfiles)
+
+https://github.com/mizchi/chezmoi-dotfiles/blob/main/dot_claude/skills/empirical-prompt-tuning/SKILL.md
+
+著名な開発者mizchi氏による、Claudeの出力を改善するための「経験的プロンプトチューニング」手法を体系化したスキル定義ファイル。
+
+本リソースは、開発者のmizchi氏が公開しているClaudeのCustom Instructions（Skills）の一部であり、LLMのプロンプトエンジニアリングにおける「経験的な調整（Empirical Tuning）」の手法を定義したものです。具体的には、単なる推測ではなく、プロンプトの微細な変更が結果に与える影響を観察・分析し、フィードバックループを回すための方法論をLLM自身に理解させるためのプロンプトセットとなっています。chezmoiを用いてドットファイルと共に管理されており、AIエージェントの振る舞いをより確実かつ技術的なアプローチで最適化しようとする試みの一つです。※対象のファイルパスがGitHub上で見つからない（404）場合がありますが、リポジトリの構成から、Claude Desktop等の拡張機能としての利用が想定されています。
+
+---
+
 ## Claude Code セキュリティ設定（ハードニング）チートシートと設定サンプル集
 
 https://github.com/okdt/claude-code-hardening-cheatsheet

@@ -340,7 +340,7 @@ https://www.kimi.com/blog/kimi-k2-6
 
 ## 7. AGENTS.md/Skills/APMの標準化 — Pepabo CLAUDE.md 83%削減・Android CLI 70%削減・Microsoft APM
 
-コンテキストファイル（CLAUDE.md/AGENTS.md/SKILL.md）の構造化によるトークン削減実証と、それらを管理するパッケージマネージャの整備が同週に重なった。本セクションはPepaboのCLAUDE.md 3層構造化（83%削減）、Google AndroidのCLI+Skills（70%削減）、Microsoft APM（Agent Package Manager）、mizchiのSKILL.md実例の4件を扱う。
+コンテキストファイル（CLAUDE.md/AGENTS.md/SKILL.md）の構造化によるトークン削減実証と、それらを管理するパッケージマネージャの整備が同週に重なった。本セクションはPepaboのCLAUDE.md 3層構造化（83%削減）、Google AndroidのCLI+Skills（70%削減）、Microsoft APM（Agent Package Manager）の3件を扱う。
 
 ### CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録
 
@@ -374,19 +374,9 @@ https://qiita.com/TKfumi/items/0751732005097816296c
 
 個社・ベンダーレベルの取り組みに対し、エコシステム全体のパッケージ管理を整備しているのがMicrosoftのAPM（Agent Package Manager）である。AIエージェント（Claude Code、Cursor、GitHub Copilot等）がプロジェクトのコンテキストを理解するためには、適切な指示やスキルを与える「ハーネスエンジニアリング」が必要だが、設定の共有や管理が煩雑になる課題がある。
 
-APMはこの課題を解決するMicrosoft製OSSで、`apm.yml` を用いてプロジェクトに必要な指示（Instructions）、スキル（Skills）、プロンプトテンプレート等を定義し、`apm install` コマンド一つで複数のエージェントツールに環境を展開できる。プロンプトインジェクションを防ぐためのセキュリティスキャン機能も備えており、チーム開発におけるAIエージェント利用の標準化を強力にサポートする。本記事ではObsidianスキルを導入する具体例やインストール手順も紹介されている。Pepaboが社内で運用しているCLAUDE.md構造化、Googleがベンダー公式で展開しているAndroid Skills、Microsoftがエコシステム全体で整備しているAPM、という3つは独立した取り組みでありながら、同じ「コンテキストファイル管理を構造化する」方向に収斂している。
+APMはこの課題を解決するMicrosoft製OSSで、`apm.yml` を用いてプロジェクトに必要な指示（Instructions）、スキル（Skills）、プロンプトテンプレート等を定義し、`apm install` コマンド一つで複数のエージェントツールに環境を展開できる。プロンプトインジェクションを防ぐためのセキュリティスキャン機能も備えており、チーム開発におけるAIエージェント利用の標準化を強力にサポートする。本記事ではObsidianスキルを導入する具体例やインストール手順も紹介されている。
 
----
-
-### Claude向け経験的プロンプトチューニングのスキル定義 (mizchi/chezmoi-dotfiles)
-
-https://github.com/mizchi/chezmoi-dotfiles/blob/main/dot_claude/skills/empirical-prompt-tuning/SKILL.md
-
-これらのツール群を実際に運用する個人開発者の実例として、mizchi氏のSKILL.md定義がある。このリソースは、開発者のmizchi氏が公開しているClaudeのCustom Instructions（Skills）の一部で、LLMのプロンプトエンジニアリングにおける「経験的な調整（Empirical Tuning）」の手法を体系化したものである。
-
-具体的には、単なる推測ではなく、プロンプトの微細な変更が結果に与える影響を観察・分析し、フィードバックループを回すための方法論をLLM自身に理解させるためのプロンプトセットとなっている。chezmoiを用いてドットファイルと共に管理されており、Claude DesktopやCLIを跨いでスキルを共有する個人開発者のワークフローの実例として参考になる。
-
-ベンダー（Google・Microsoft・Anthropic）と個人開発者の両方が独立に同じ問題（コンテキスト肥大化）に取り組んでいる事実そのものが、SKILL.md/AGENTS.md/CLAUDE.mdがエコシステムインフラ化している証拠である。パッケージマネージャ（APM、`gh skill`）の登場と、社内事例（Pepabo）・ベンダー公式（Google）・個人実装（mizchi）の独立した実装が同じ週に揃ったことが、この標準化の流れが点ではなく面で進んでいることを示している。
+社内事例（Pepaboの83%削減）・ベンダー公式（Googleの70%削減・3倍高速化）・エコシステムツール（Microsoft APM）という3つの異なるスケール・主体が独立に「コンテキストファイル管理を構造化する」方向に収斂している事実は、SKILL.md/AGENTS.md/CLAUDE.mdがエコシステムインフラ化していることを示す。パッケージマネージャ（APM、`gh skill`）の登場が、この標準化の流れが点ではなく面で進んでいる証拠となっている。
 
 ---
 
@@ -395,7 +385,6 @@ https://github.com/mizchi/chezmoi-dotfiles/blob/main/dot_claude/skills/empirical
 - [CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録](/journals/2026-05-02/200/)
 - [Android CLIと「Skills」の導入：AIエージェントによる開発を3倍高速化](/journals/2026-05-02/003/)
 - [ハーネスエンジニアリング時代の「環境構築」を一撃で終わらせるAPM](/journals/2026-05-02/105/)
-- [Claude向け経験的プロンプトチューニングのスキル定義 (mizchi/chezmoi-dotfiles)](/journals/2026-05-02/042/)
 
 ---
 
