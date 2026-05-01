@@ -74,6 +74,42 @@ When given multiple URLs:
    - Duplicates skipped
    - Any errors
 
+### Ordering Guarantee (Input Order Preservation)
+
+When the user supplies an ordered list of URLs, the IDs assigned in
+`workdesk/sources.md` MUST reflect that input order. This is a hard contract,
+not a best-effort behavior — downstream STEP_02 verification cross-checks
+summaries against the original input list by ID.
+
+**Rules:**
+
+1. **Strict input order.** URLs are validated and appended to `sources.md`
+   strictly sequentially in the order received. Do NOT validate or append
+   multiple URLs in parallel (no parallel `Bash` tool calls for `check_link.py`
+   across different URLs in the same batch, no parallel `Edit` calls to
+   `sources.md`). Finish one URL fully — validate, then append (or skip) — before
+   touching the next.
+2. **Duplicates and failures do not consume IDs.** If a URL is a duplicate
+   (`check_link.py` reports it already exists) or fails validation, skip it and
+   move to the next URL. The next ID is reserved only when an entry is actually
+   committed to `sources.md`.
+3. **Assigned IDs strictly increase in input order.** Given input
+   `[URL_A, URL_B, URL_C]` where `URL_B` is a duplicate, the result is:
+   - `URL_A` → lowest new ID (e.g. `213`)
+   - `URL_B` → skipped (no ID consumed)
+   - `URL_C` → next ID (`214`)
+
+   `URL_C` MUST NOT receive an ID lower than `URL_A`'s.
+
+**Why it matters:** STEP_02 (summarization) and any manual spot-check against
+the user's original URL list rely on `ID order == input order`. Any
+out-of-order assignment forces manual re-alignment downstream and is treated as
+a bug (see issue #120).
+
+The `scripts/bulk_add_links.py` helper, when used, encodes this same contract:
+URLs are processed one at a time and the next ID is only assigned after the
+previous URL has been committed to `sources.md`.
+
 ## What This Skill Does NOT Do
 
 - ❌ Does NOT generate summaries
