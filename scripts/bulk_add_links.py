@@ -234,12 +234,20 @@ def main():
         print("No URLs found.")
         sys.exit(0)
 
-    # Process URLs
+    # Process URLs strictly sequentially in input order.
+    #
+    # Ordering guarantee (see issue #120):
+    # - URLs are validated and appended to sources.md one at a time, in the
+    #   exact order received from the input.
+    # - Duplicates and validation failures are skipped WITHOUT consuming an ID.
+    # - The next ID is only assigned and incremented after the previous URL has
+    #   been committed to sources.md, so assigned IDs strictly increase in
+    #   input order.
     results: Dict[str, dict] = {}
     next_id = get_next_id(sources_file)
 
     print("=" * 60)
-    print("PHASE 1: Validating URLs")
+    print("Processing URLs (sequential, input order preserved)")
     print("=" * 60)
 
     for url in urls:
@@ -249,24 +257,60 @@ def main():
         if args.verbose:
             print(message)
 
-        if is_unique:
-            results[url] = {
-                'unique': True,
-                'sanitized': sanitized_url,
-                'id': next_id,
-                'added': False,
-                'summarized': False,
-                'marked': False
-            }
-            print(f"✓ UNIQUE - Will add as ID {next_id:03d}")
-            next_id += 1
-        else:
+        if not is_unique:
             results[url] = {
                 'unique': False,
                 'sanitized': sanitized_url,
                 'message': message
             }
-            print(f"✗ DUPLICATE or ERROR")
+            print(f"✗ DUPLICATE or ERROR (skipped, no ID consumed)")
+            continue
+
+        # URL is unique. Reserve the next ID and append immediately so that
+        # subsequent URLs see this entry when computing duplicates / next ID.
+        assigned_id = next_id
+        data = {
+            'unique': True,
+            'sanitized': sanitized_url,
+            'id': assigned_id,
+            'added': False,
+            'summarized': False,
+            'marked': False,
+        }
+        results[url] = data
+        print(f"✓ UNIQUE - Assigning ID {assigned_id:03d}")
+
+        if args.dry_run:
+            # In dry-run we still increment so the printed sequence reflects
+            # the IDs that WOULD be assigned, in input order.
+            next_id += 1
+            continue
+
+        if add_url_to_sources(sources_file, sanitized_url, assigned_id):
+            data['added'] = True
+            next_id += 1
+            print(f"✓ Added to sources.md as {assigned_id:03d}")
+        else:
+            print(f"✗ Failed to add to sources.md (ID {assigned_id:03d} not consumed)")
+            # Do NOT increment next_id: the append failed, so the ID is free
+            # for the next URL. This preserves the contiguous ordering
+            # guarantee for IDs that actually land in sources.md.
+            continue
+
+        # Generate summary inline (still sequential per URL) unless suppressed.
+        if not args.no_summarize:
+            print(f"[{assigned_id:03d}] Generating summary: {sanitized_url}")
+            success, result = generate_summary(sanitized_url, assigned_id, summaries_dir)
+
+            if success:
+                data['summarized'] = True
+                print(f"✓ Summary saved: {result}")
+
+                if mark_as_processed(sources_file, assigned_id):
+                    data['marked'] = True
+                    print(f"✓ Marked as processed")
+            else:
+                print(f"✗ Failed: {result}")
 
     # Count unique URLs
     unique_urls = [url for url, data in results.items() if data.get('unique', False)]
@@ -275,50 +319,6 @@ def main():
     if args.dry_run:
         print("\nDRY RUN - No changes made")
         sys.exit(0)
-
-    if not unique_urls:
-        print("\nNo URLs to add.")
-        sys.exit(0)
-
-    # Add URLs to sources.md
-    print("\n" + "=" * 60)
-    print("PHASE 2: Adding to sources.md")
-    print("=" * 60)
-
-    for url in unique_urls:
-        data = results[url]
-        print(f"\n[{data['id']:03d}] Adding: {data['sanitized']}")
-
-        if add_url_to_sources(sources_file, data['sanitized'], data['id']):
-            data['added'] = True
-            print(f"✓ Added to sources.md")
-        else:
-            print(f"✗ Failed to add")
-
-    # Generate summaries
-    if not args.no_summarize:
-        print("\n" + "=" * 60)
-        print("PHASE 3: Generating summaries")
-        print("=" * 60)
-
-        for url in unique_urls:
-            data = results[url]
-            if not data['added']:
-                continue
-
-            print(f"\n[{data['id']:03d}] Generating summary: {data['sanitized']}")
-            success, result = generate_summary(data['sanitized'], data['id'], summaries_dir)
-
-            if success:
-                data['summarized'] = True
-                print(f"✓ Summary saved: {result}")
-
-                # Mark as processed
-                if mark_as_processed(sources_file, data['id']):
-                    data['marked'] = True
-                    print(f"✓ Marked as processed")
-            else:
-                print(f"✗ Failed: {result}")
 
     # Final summary
     print("\n" + "=" * 60)
