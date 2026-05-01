@@ -26,6 +26,11 @@ def _timeout_handler(signum, frame):
 
 
 from modules.template_processor import process_template, parse_replacements
+from modules.fetch_router import (
+    needs_spa_render,
+    looks_blocked,
+    build_blocked_stub,
+)
 from validate_summary import validate as _validate_summary
 
 # Layer 1 (Issue #108) — Fetch quality gate
@@ -126,9 +131,17 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
     """Fetch content from a URL and extract readable text.
 
     Side effect: populates module-level _LAST_FETCH_METRICS with quality signals
-    (extracted_chars, has_article_tag, has_main_tag, title_len, fetcher) so that
-    the caller in main() can decide whether to warn or trigger a Playwright
-    fallback (see --auto-fallback-playwright).
+    (extracted_chars, has_article_tag, has_main_tag, title_len, fetcher,
+    blocked, blocked_reason, raw_bytes) so that the caller in main() can decide
+    whether to warn, trigger a Playwright fallback (see --auto-fallback-playwright),
+    or short-circuit and emit a blocked-stub instead of hallucinating a summary
+    (Issue #121).
+
+    Domain-aware routing (Issue #121): URLs whose host matches the SPA-render
+    allowlist (qwen.ai, *.notion.site, openai.com — but not
+    developers.openai.com) are routed through Playwright FIRST. If Playwright
+    is not importable, the SPA path falls through to curl + the generic
+    blocked-content guard, which will emit a stub rather than hallucinate.
     """
     global _LAST_FETCH_METRICS
     _LAST_FETCH_METRICS = {
@@ -138,7 +151,35 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         'title_len': 0,
         'fetcher': 'curl+bs4',
         'url': url,
+        'raw_bytes': 0,
+        'blocked': False,
+        'blocked_reason': '',
     }
+
+    # Issue #121: route SPA / JS-gated domains through Playwright up front.
+    # If Playwright is not available the curl path will run and the guard
+    # below will catch the resulting interstitial/SPA-shell.
+    if needs_spa_render(url):
+        try:
+            import playwright  # noqa: F401  (probe whether the dep is installed)
+            logging.info(f"Routing {url} through Playwright (SPA-render allowlist)")
+            pw_text, pw_metrics = fetch_url_content_playwright(url, timeout=timeout)
+            _LAST_FETCH_METRICS.update(pw_metrics)
+            _LAST_FETCH_METRICS['url'] = url
+            blocked, reason = looks_blocked(pw_text if not pw_text.startswith('[ERROR') else '')
+            if blocked:
+                _LAST_FETCH_METRICS['blocked'] = True
+                _LAST_FETCH_METRICS['blocked_reason'] = reason
+                print(
+                    f"WARN: Playwright fetch for {url} still looks blocked: {reason}",
+                    file=sys.stderr,
+                )
+            return pw_text
+        except ImportError:
+            logging.warning(
+                f"Playwright not importable; SPA host {url} will be tried via curl "
+                "and the blocked-content guard will likely fire."
+            )
 
     try:
         logging.info(f"Fetching content from URL: {url}")
@@ -160,6 +201,7 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         if result.returncode != 0:
             raise requests.exceptions.RequestException(f"curl exit code {result.returncode}: {result.stderr.decode()[:200]}")
         html_bytes = result.stdout
+        _LAST_FETCH_METRICS['raw_bytes'] = len(html_bytes)
 
         logging.info(f"Successfully fetched {len(html_bytes)} bytes from URL")
 
@@ -193,6 +235,20 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
             f"title_len={_LAST_FETCH_METRICS['title_len']}"
         )
 
+        # Issue #121: blocked-content guard. Catches anti-bot interstitials
+        # (e.g. openai.com/index/*) and un-hydrated SPA shells regardless of
+        # whether the URL was routed through Playwright. Records the verdict
+        # in the module-level metrics so main() can short-circuit before the
+        # LLM call.
+        blocked, blocked_reason = looks_blocked(text)
+        if blocked:
+            _LAST_FETCH_METRICS['blocked'] = True
+            _LAST_FETCH_METRICS['blocked_reason'] = blocked_reason
+            print(
+                f"WARN: blocked-content guard fired for {url}: {blocked_reason}",
+                file=sys.stderr,
+            )
+
         # Layer 1: warn early when extraction is suspiciously thin.
         if len(text) < FETCH_QUALITY_MIN_CHARS:
             _emit_fetch_quality_warning(url, _LAST_FETCH_METRICS)
@@ -207,6 +263,11 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
                 # Only swap in the Playwright result if it actually improves things.
                 if pw_metrics.get('extracted_chars', 0) > len(text) and not pw_text.startswith('[ERROR'):
                     _LAST_FETCH_METRICS = pw_metrics
+                    # Re-run the blocked-content guard against the recovered
+                    # text (Issue #121): it may still be a blocked interstitial.
+                    pw_blocked, pw_reason = looks_blocked(pw_text)
+                    _LAST_FETCH_METRICS['blocked'] = pw_blocked
+                    _LAST_FETCH_METRICS['blocked_reason'] = pw_reason if pw_blocked else ''
                     print(
                         f"INFO: Playwright fetch recovered {pw_metrics['extracted_chars']} chars "
                         f"(BS4 had {len(text)})",
@@ -661,9 +722,42 @@ def main():
                 logging.error(f"Template processing error: {e}")
                 print(f"Template processing error: {e}", file=sys.stderr)
                 sys.exit(1)
-            
+
+            # Issue #121: if the fetch was blocked (anti-bot interstitial or
+            # un-hydrated SPA shell), skip the LLM call entirely and emit a
+            # blocked-stub instead. This is the load-bearing safety net that
+            # prevents hallucinated summaries from reaching workdesk/summaries/.
+            if _LAST_FETCH_METRICS.get('blocked'):
+                stub = build_blocked_stub(
+                    url=args.url,
+                    reason=_LAST_FETCH_METRICS.get('blocked_reason', 'unknown'),
+                    extracted_chars=_LAST_FETCH_METRICS.get('extracted_chars', 0),
+                    raw_bytes=_LAST_FETCH_METRICS.get('raw_bytes', 0),
+                    fetcher=_LAST_FETCH_METRICS.get('fetcher', 'unknown'),
+                )
+                print(
+                    f"BLOCKED: {args.url} — {_LAST_FETCH_METRICS.get('blocked_reason', '')}; "
+                    "writing blocked-stub instead of calling Gemini.",
+                    file=sys.stderr,
+                )
+                if args.output:
+                    try:
+                        with open(args.output, 'w', encoding='utf-8') as f:
+                            f.write(stub)
+                        logging.info(f"Wrote blocked-stub to {args.output}")
+                    except IOError as e:
+                        logging.error(f"Error writing blocked-stub to {args.output}: {e}")
+                        print(f"Error writing blocked-stub: {e}", file=sys.stderr)
+                        sys.exit(1)
+                else:
+                    print(stub)
+                # Exit 0: bulk_summarize.py treats this as a successful run
+                # and marks the source as checked. The BLOCKED: marker in
+                # the file body is what flags it for human review.
+                sys.exit(0)
+
             logging.info(f"Final prompt length: {len(prompt)} characters")
-            
+
             # args.clean = True  # Auto-enable cleaning for URL summarization
             args.model = 'gemini-3-flash-preview'  # Use latest model for URL summarization
             logging.info(f"Using model: {args.model} with clean output enabled")

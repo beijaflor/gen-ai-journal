@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Codex memories chronicle - OpenAI Developers</title>
+<meta name="description" content="A walkthrough of how Codex agents persist memories across sessions, with worked examples and trade-offs.">
+<style>body{font-family:system-ui;max-width:760px;margin:auto;padding:2rem}</style>
+<script>window.__NEXT_DATA__={};</script>
+</head>
+<body>
+<header><nav><a href="/">Home</a> &middot; <a href="/codex">Codex</a></nav></header>
+<main>
+<article>
+<h1>Codex memories: a chronicle</h1>
+<p class="byline">Posted by the OpenAI Developers team. Last updated this week.</p>
+<p>This article walks through how Codex agents persist context across sessions, why the underlying memory store is structured the way it is, and what trade-offs we explored along the way. The goal is not to hand you a recipe; it is to make the engineering choices legible so you can adapt them to your own agent runtime.</p>
+<h2>Why a separate memory store at all?</h2>
+<p>The naive approach is to stuff every prior turn into the next prompt and let the model figure it out. That works for short tasks. For long-running coding agents it falls apart: token budgets blow up, latency degrades, and the model spends more attention on its own scratch notes than on the task at hand. We needed a memory store that could be queried selectively, evolved over time, and inspected by the developer.</p>
+<h2>What we tried first</h2>
+<p>Our first design was a flat append-only log keyed by session ID. Every tool call, every model output, every user message went in. Retrieval was a vector search over the log. This was easy to build but produced two recurring failure modes: the log accumulated junk faster than useful signal, and the vector index drifted as the codebase changed underneath the agent.</p>
+<h2>What we shipped</h2>
+<p>The shipped design splits memory into three tiers: a short-lived working set scoped to the current task, a per-repository knowledge layer that survives across sessions, and a global preferences layer that captures user-level conventions. Each tier has its own write path, its own retention policy, and its own retrieval surface. Crucially, the knowledge layer is pruned on a fixed schedule so it does not become a graveyard of stale findings.</p>
+<h2>Trade-offs</h2>
+<p>This design buys us inspectability and lets users delete memories that turned out to be misleading, at the cost of more moving parts. We think that is the right trade for a coding agent, where wrong memories are actively harmful — but it might not be the right trade for, say, a customer-support bot where breadth beats precision.</p>
+<h2>What is next</h2>
+<p>We are working on tooling to let developers diff memory state across sessions and roll back specific writes, which has come up repeatedly during dogfooding. Expect more on that soon.</p>
+</article>
+</main>
+<footer><p>&copy; OpenAI</p></footer>
+</body>
+</html>
