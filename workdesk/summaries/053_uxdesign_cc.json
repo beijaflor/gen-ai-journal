@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://uxdesign.cc/the-right-touch-mapping-ai-presence-to-user-intent-d01fa2dee282
-- Reason: interstitial signature detected: 'Enable JavaScript and cookies to continue'
-- Fetcher: curl+bs4
-- Extracted chars: 57
-- Raw bytes: 5846
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:51:20.484116+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "適切なタッチ：AIの存在感をユーザーの意図にマッピングする",
+    "url": "https://uxdesign.cc/the-right-touch-mapping-ai-presence-to-user-intent-d01fa2dee282",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI搭載プロダクトにおいて、ユーザーの意図の強さと確信度に応じて、控えめな通知から直接的な生成までAIの介入度を動的に調整するための設計フレームワークを提案する記事です。",
+    "summaryBody": "AI-nativeなプロダクト設計において、全てのインターフェースを生成型や会話型にするのではなく、ユーザーの「意図（Intent）」と「確信度（Confidence）」に基づいてAIの存在感を最適化する手法を解説しています。\n\n### AIの存在感（Presence）の4つのレベル\n1. **Level 1: Shoulder tap**（控えめな提案）: ユーザーが助けを必要としている兆候を検知し、軽く介入する。\n2. **Level 2: Back and forth discussion**（対話による明確化）: チャット等を通じてユーザーの要望を絞り込む。\n3. **Level 3: Let me help**（共同作業）: キャンバス等の共有スペースでAIが具体的に生成・構成を支援する。\n4. **Level 0: Take over control**（既存UIへの誘導）: 既存の機能で解決すべき場合は、コストの高い生成を避け、確実なUIへ案内する。\n\n### 確信度コンティニュアム（Confidence Continuum）\nシステムがユーザーの意図をどの程度正確に把握しているか（確信度）によって、応答の仕方を変化させます。確信度が高い場合は「直接実行」し、低い場合は「質問による確認」や「控えめなプッシュ」に留めることで、ユーザーのノイズを最小限に抑えつつ信頼を獲得します。AIが「いつ身を引くべきか」を知ることが、優れたUX設計の鍵であると強調しています。",
+    "topics": [
+      "AI UX Design",
+      "Human-AI Interaction",
+      "Product Design Framework",
+      "Intent Mapping",
+      "Generative UI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "The right touch: mapping AI presence to user intent"
+  }
+}

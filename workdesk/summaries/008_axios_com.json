@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.axios.com/2026/04/24/catholics-pope-vatican-artificial-intelligence
-- Reason: interstitial signature detected: 'Enable JavaScript and cookies to continue'
-- Fetcher: curl+bs4
-- Extracted chars: 57
-- Raw bytes: 5830
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:50:46.455732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "教皇庁がAIの規制と「真実」の守護に乗り出す — 独自の倫理的枠組みを構築",
+    "url": "https://www.axios.com/2026/04/24/catholics-pope-vatican-artificial-intelligence",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "バチカンはAIによる「真実の危機」に対処するため、人間中心の倫理ガイドライン策定やデジタル防衛体制の構築を加速させている。",
+    "summaryBody": "バチカン（教皇庁）は、AIがもたらす情報の不確実性や倫理的課題に対し、世界でも極めて早い段階で国家レベルのフレームワークを導入するなど、独自のデジタル防衛と監視体制を構築しています。2026年に報じられたこの動向では、教皇レオ14世が司祭に対し、信仰の共有は人間にしかできないとしてAIによる説教の作成を禁じたことが象徴的です。ガイドラインでは、AIが人間を代替することや尊厳を損なうことを厳格に禁じ、透明性と人間中心の設計を求めています。さらに、バチカンが情報の真偽を判定する「真実のエンジン」としての役割を担うのではないかという憶測も広まっており、技術の進化に伴う偽情報や格差の拡大に対し、道徳的権威を武器にAI時代のレフェリーとしての地位を確立しようとしています。",
+    "topics": [
+      "AI倫理",
+      "バチカン",
+      "偽情報",
+      "デジタル・ガバナンス",
+      "カトリック教会"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 82
+    },
+    "originalTitle": "The pope moves to police AI"
+  }
+}
