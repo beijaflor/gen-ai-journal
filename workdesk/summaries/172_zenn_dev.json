@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:47:28.237682+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "97%のPermission確認を自動化するCoding Agent用OSS「ccgate」が誕生した",
+    "url": "https://zenn.dev/layerx/articles/20260428-ccgate",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCodex CLIのツール実行時に頻出する「権限確認プロンプト」を、別のLLMが判定・代行することで作業の97%を自動化しつつ安全性を担保するOSS「ccgate」の紹介記事。",
+    "summaryBody": "AIによるコーディングエージェント（Claude CodeやCodex CLI）を利用する際、ファイル編集やコマンド実行のたびに発生する権限確認（Permission Request）は、開発の集中力を削ぐ要因となります。本記事で紹介されている「ccgate」は、この確認作業を別のLLM（Claude 4.5 Haiku等）に代行させるOSSツールです。\n\nccgateは、エージェントのフック機能を活用して「ゲート」として動作します。ユーザーが定義したJsonnet形式の自然言語ルールに基づき、安全な操作は「allow（許可）」、危険な操作やプロジェクト規定外の挙動は理由付きで「deny（拒否）」、判断に迷うものは「fallthrough（人間に確認）」と判定します。著者の実績では月間約2000件の確認のうち97%を自動化し、さらに拒否理由をエージェントにフィードバックすることで、エージェントの動きを正しい方向へ誘導する効果も得られています。\n\n公式のAuto Modeと比較して、複数ツール（Claude/Codex）で共通のルールを適用できる点や、メトリクス可視化による透明性、拒否メッセージの柔軟なカスタマイズが可能な点が強みです。--dangerously-skip-permissionsによる全許可を避け、利便性と安全性の両立を目指す開発者にとって非常に実用的なツールとなっています。",
+    "topics": [
+      "ccgate",
+      "Claude Code",
+      "Codex CLI",
+      "Coding Agent",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    }
+  }
+}

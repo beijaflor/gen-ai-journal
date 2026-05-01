@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:38:44.673932+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PDF4LLM：LLM前処理ドキュメント処理レイヤー",
+    "url": "https://qiita.com/jamie-lemon/items/1b4a5c771cd8c1638915",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PDFの描画データを解析して、LLMが理解しやすい構造化されたMarkdownやJSONへと変換する、RAGやファインチューニング向けの高精度かつ低コストな前処理ツール。",
+    "summaryBody": "PDFはレンダリング用の描画命令の集合であり、本来LLMが直接処理するのに適した「見出し」や「表」の構造を持っていません。PDF4LLMは、この問題を解決するための前処理レイヤーとして機能し、カラムやサイドバーを考慮した読み順の解決、表の再構築、階層構造（見出しやリスト）の保持、画像抽出などを行います。出力はクリーンなMarkdown形式で提供され、VLM（ビジョン言語モデル）を使用する場合の約240分の1という圧倒的な低コスト（1,000ページあたり0.06ドル）で運用可能です。現在はPython版（PyMuPDF4LLM）と.NET版が提供されており、JS版（WASM）も近日公開予定。さらに、抽出された座標情報を利用してPDFビューワー上でAIの回答根拠をハイライトする「AIサイテーション」機能もサポートしています。",
+    "topics": [
+      "PDF4LLM",
+      "RAG",
+      "LLM前処理",
+      "PyMuPDF",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

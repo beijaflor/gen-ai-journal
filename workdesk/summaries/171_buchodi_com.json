@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:37:13.630899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPTの広告配信メカニズムとアトリビューション・ループの詳細解析",
+    "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChatGPTが会話中に広告を挿入する仕組みと、Fernet暗号化トークンや独自SDK「OAIQ」を用いた広告効果計測の技術的詳細を解説した調査報告。",
+    "summaryBody": "OpenAIがChatGPTで展開する広告プラットフォームの技術的な詳細が、トラフィック解析によって明らかになりました。システムは主に2つの要素で構成されています。\n\n1. **ChatGPT側の配信**: SSE（Server-Sent Events）ストリームを介して、会話の最中に`single_advertiser_ad_unit`というオブジェクトが注入されます。広告は会話のトピックに即したコンテキストターゲティングが行われ、クリエイティブはOpenAI自体のCDN（bzrcdn.openai.com）から配信されます。\n2. **マーチャント側のアトリビューション**: 広告主のサイトには「OAIQ」と呼ばれるJavaScript SDKが導入され、ブラウザ上で訪問者の行動をトラッキングします。\n\nこれらを結びつけるのが、Fernetで暗号化された4つのトークン（ads_spam_integrity_payload, oppref, olref, ad_data_token）です。特に`oppref`はファーストパーティクッキーとして30日間保持され、コンバージョン計測の鍵となります。また、広告リンクはChatGPT内のウェブビューで開かれる設定になっており、OpenAIはクリック後のナビゲーションも直接観測可能な構造になっています。",
+    "topics": [
+      "ChatGPT",
+      "広告配信システム",
+      "アトリビューション",
+      "OAIQ SDK",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "How ChatGPT serves ads. Here's the full attribution loop."
+  }
+}

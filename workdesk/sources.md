@@ -2,28 +2,61 @@
 
 ## Main List
 
-- [ ] 151. https://zenn.dev/makocchan/articles/whats_agents_cli
-- [ ] 150. https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer
-- [ ] 149. https://zenn.dev/renue/articles/4687cb5e5c0031
-- [ ] 148. https://zenn.dev/techtrain_blog/articles/0991bc406b58e2
-- [ ] 147. https://zenn.dev/headwaters/articles/68de421c45931b
-- [ ] 146. https://zenn.dev/yuden/articles/playwright-auto-heal-claude-code
-- [ ] 145. https://zenn.dev/knowledgework/articles/f41bdc6ac95b1d
-- [ ] 144. https://qiita.com/youtoy/items/3098aa2c88975539476f
-- [ ] 143. https://qiita.com/harupython/items/ed256553d10578cfec2a
-- [ ] 142. https://qiita.com/smi/items/ab0d3e9d61fb0297111a
-- [ ] 141. https://qiita.com/nob193/items/7c5ab1203dc01e253dfe
-- [ ] 140. https://qiita.com/nogataka/items/1156e2d3a40c4dab3398
-- [ ] 139. https://qiita.com/emi_ndk/items/2f0e910dc41bfe07139a
-- [ ] 138. https://qiita.com/ennagara128/items/71abb80697cdc826229c
-- [ ] 137. https://qiita.com/yushibats/items/504dfd592ec24677ab3b
-- [ ] 136. https://qiita.com/nogataka/items/7dec7a26e49f39e7d471
-- [ ] 135. https://qiita.com/KNR109/items/17aba9efc0de7ceff040
-- [ ] 134. https://qiita.com/ko1-ino/items/ccc64ce6504c77100cfb
-- [ ] 133. https://victortaelin.github.io/lambench/
-- [ ] 132. https://www.wsj.com/finance/investing/google-expands-anthropic-investment-with-40-billion-commitment-99b4de74
-- [ ] 131. https://www.sidjha.com/2026/02/why-productivity-needs-to-be-redefined/
-- [ ] 130. https://marmelab.com/blog/2026/04/24/claude-code-tips-i-wish-id-had-from-day-one.html
+- [x] 184. https://zenn.dev/yagisan_reports/articles/8a89b77f7106b9
+- [x] 183. https://zenn.dev/tokium_dev/articles/c0e6e9aca98a85
+- [x] 182. https://zenn.dev/mkj/articles/9431e342db202f
+- [x] 181. https://zenn.dev/bizreach_aps/articles/0d758497357167
+- [x] 180. https://zenn.dev/marycache/articles/03011f881e36f7
+- [x] 179. https://zenn.dev/tomokusaba/articles/a599cb645ca2c5
+- [x] 178. https://zenn.dev/aircloset/articles/65efe9614f8e73
+- [x] 177. https://zenn.dev/knowledgesense/articles/7dddae04a7d828
+- [x] 176. https://zenn.dev/finatext/articles/mcp-gateway-google-sa
+- [x] 175. https://zenn.dev/yamadashy/articles/claude-code-routines-perf-tuning
+- [x] 174. https://zenn.dev/layerx/articles/a99cd11af487fc
+- [x] 173. https://zenn.dev/nttdata_tech/articles/bf6b694144e55a
+- [x] 172. https://zenn.dev/layerx/articles/20260428-ccgate
+- [x] 171. https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/
+- [x] 170. https://www.wheresyoured.at/ais-economics-dont-make-sense/
+- [x] 169. https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/
+- [x] 168. https://arkaung.github.io/interactive-turboquant/
+- [x] 167. https://deepmind.google/blog/decoupled-diloco/
+- [x] 166. https://developer.chrome.com/docs/ai/prompt-api
+- [x] 165. https://qiita.com/jamie-lemon/items/1b4a5c771cd8c1638915
+- [x] 164. https://zenn.dev/ino_h/articles/2026-04-23-claude-code-plugins-ranking
+- [x] 163. https://qiita.com/moritalous/items/3c5269610f26e23c5b04
+- [x] 162. https://zenn.dev/acntechjp/articles/a7c12b3114f56a
+- [x] 161. https://qiita.com/TaichiEndoh/items/8b8ed06bb76a80bb34c2
+- [x] 160. https://ynarwal.github.io/how-llms-work/
+- [x] 159. https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- [x] 158. https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- [x] 157. https://xenospectrum.com/ai-autonomous-agent-designs-risc-v-cpu-in-12-hours-verkor/
+- [x] 156. https://zenn.dev/hsaki/articles/llm-cap-theorem
+- [x] 155. https://zenn.dev/ryok/articles/claude-code-to-codex-settings
+- [x] 154. https://zenn.dev/peintangos/articles/b024c86e672191
+- [x] 153. https://zenn.dev/masayan1126/books/claude-code-hooks-basic
+- [x] 152. https://zenn.dev/sasau/articles/a19b1cb2528852
+- [x] 151. https://zenn.dev/makocchan/articles/whats_agents_cli
+- [x] 150. https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer
+- [x] 149. https://zenn.dev/renue/articles/4687cb5e5c0031
+- [x] 148. https://zenn.dev/techtrain_blog/articles/0991bc406b58e2
+- [x] 147. https://zenn.dev/headwaters/articles/68de421c45931b
+- [x] 146. https://zenn.dev/yuden/articles/playwright-auto-heal-claude-code
+- [x] 145. https://zenn.dev/knowledgework/articles/f41bdc6ac95b1d
+- [x] 144. https://qiita.com/youtoy/items/3098aa2c88975539476f
+- [x] 143. https://qiita.com/harupython/items/ed256553d10578cfec2a
+- [x] 142. https://qiita.com/smi/items/ab0d3e9d61fb0297111a
+- [x] 141. https://qiita.com/nob193/items/7c5ab1203dc01e253dfe
+- [x] 140. https://qiita.com/nogataka/items/1156e2d3a40c4dab3398
+- [x] 139. https://qiita.com/emi_ndk/items/2f0e910dc41bfe07139a
+- [x] 138. https://qiita.com/ennagara128/items/71abb80697cdc826229c
+- [x] 137. https://qiita.com/yushibats/items/504dfd592ec24677ab3b
+- [x] 136. https://qiita.com/nogataka/items/7dec7a26e49f39e7d471
+- [x] 135. https://qiita.com/KNR109/items/17aba9efc0de7ceff040
+- [x] 134. https://qiita.com/ko1-ino/items/ccc64ce6504c77100cfb
+- [x] 133. https://victortaelin.github.io/lambench/
+- [x] 132. https://www.wsj.com/finance/investing/google-expands-anthropic-investment-with-40-billion-commitment-99b4de74
+- [x] 131. https://www.sidjha.com/2026/02/why-productivity-needs-to-be-redefined/
+- [x] 130. https://marmelab.com/blog/2026/04/24/claude-code-tips-i-wish-id-had-from-day-one.html
 - [x] 129. https://prtimes.jp/main/html/rd/p/000000228.000045379.html
 - [x] 128. https://pc.watch.impress.co.jp/docs/topic/feature/2104681.html
 - [x] 127. https://note.com/hirotsuchida/n/n6eee4f612217

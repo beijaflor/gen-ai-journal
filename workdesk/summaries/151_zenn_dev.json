@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:41:59.388445+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agents-cliの中身を見てみよう",
+    "url": "https://zenn.dev/makocchan/articles/whats_agents_cli",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google Cloud Next '26で発表されたAIエージェント開発ツール「agents-cli」の、コーディングエージェント向けの設計思想や主要コマンドの内部動作を解説しています。",
+    "summaryBody": "Google Cloud Next '26で発表された「agents-cli」は、AIエージェントの開発ライフサイクル（プロジェクト作成、実装、評価、デプロイ）を統合管理するためのCLIツールです。このツールの最大の特徴は、人間が直接操作するだけでなく、Claude CodeやGemini CLIなどのコーディングエージェントがADK（Agent Development Kit）を利用して開発を行いやすくするための「スキル」を提供している点にあります。記事では、プロジェクト構成を生成する`scaffold`、uvとruffを用いた`lint`、認証情報を自動解決する`run`、テストデータに基づき精度を測定する`eval`、そしてCloud RunやGKE、Agent Runtimeへのデプロイを行う`deploy`といった主要コマンドの内部挙動を詳細に紹介しています。各機能が細かく分割されているため、既存のCI/CDプロセスやインフラ管理手法を維持したまま、部分的に導入可能な実用性の高い設計となっています。",
+    "topics": [
+      "Google Cloud",
+      "AIエージェント",
+      "agents-cli",
+      "ADK",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

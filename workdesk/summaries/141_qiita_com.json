@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:44:26.077752+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自家製 MCP サーバーで個人開発の Web ツール集を Claude から直接呼べるようにした完全レシピ",
+    "url": "https://qiita.com/nob193/items/7c5ab1203dc01e253dfe",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "個人開発の Web ツール集を MCP サーバー化し、Claude や Cursor 等の AI クライアントから直接呼び出せるようにした実装プロセスと、集客戦略、公開時の落とし穴を詳細に解説した記事です。",
+    "summaryBody": "## 概要\n個人開発の Web ツール集「lit-forge.com」の機能を MCP (Model Context Protocol) サーバー化し、Claude Desktop や Cursor から直接利用可能にするまでの全工程をまとめた実践的レシピです。\n\n## 主な内容\n- **戦略的背景**: SEO 以外の流入経路として MCP レジストリや AI クライアント内での露出を狙う戦略を詳説。AI が苦手な処理（ハッシュ計算、UUID 生成、Cron 解析等）を優先的にツール化しています。\n- **実装詳細**: TypeScript SDK を使用し、stdio トランスポート経由でツールを登録する設計。Node.js 環境でのライブラリ再実装や、拡張性の高いファイル構成について触れています。\n- **デプロイの落とし穴**: npm 公開時の 2FA/OTP の罠、WSL2 での認証エラー、GitHub のユーザー名変更に伴う「Contributors ウィジェット」のキャッシュ問題など、実務的なトラブルシューティングが豊富です。\n- **集客と導線**: `awesome-mcp-servers` への登録や公式レジストリへの公開手順、Web 版との双方向の導線設計について解説されています。\n\n## 結論\nMCP 化は機能提供だけでなく、AI 時代における新たなブランド認知・集客チャネルとして極めて有効であることを実証しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Claude",
+      "TypeScript",
+      "個人開発",
+      "npm"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

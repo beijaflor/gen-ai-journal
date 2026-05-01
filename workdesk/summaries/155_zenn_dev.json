@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:41:03.812612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の設定を Codex にどう対応づけるか",
+    "url": "https://zenn.dev/ryok/articles/claude-code-to-codex-settings",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとOpenAIのCodexという2つのAIエージェント設定をdotfilesで管理・移行する際の、共通化すべき運用ポリシーとツール特有の差異の整理方針を解説。",
+    "summaryBody": "AnthropicのClaude CodeとOpenAIのCodexという2つのターミナルベースAIエージェントを併用・移行するための設定管理術についての解説です。筆者は、単なる設定ファイルの「移植」ではなく「運用ポリシーの共通化」が重要であると提言しています。具体的には、性格付け（personality）や承認ポリシー、独自スキル（git操作等）はCodexの流儀に合わせて再構成し、一方で絶対パスを含むローカル状態やツール固有のフック機能はdotfilesから除外して管理する手法を提案しています。また、リポジトリごとの指示書として`CLAUDE.md`から`AGENTS.md`への集約を推奨するなど、複数エージェントを効率的に運用するための実践的な知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "dotfiles",
+      "AIエージェント",
+      "開発環境"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    }
+  }
+}

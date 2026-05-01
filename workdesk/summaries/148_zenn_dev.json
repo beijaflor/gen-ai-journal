@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:42:40.763895+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と二人七脚 DB 設計",
+    "url": "https://zenn.dev/techtrain_blog/articles/0991bc406b58e2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code と 4 つの性格の異なる Subagent を使い分け、人間が判断の主体となりつつ DB 設計を加速させる具体的な 4 ステップのワークフローを解説しています。",
+    "summaryBody": "AI にコード生成の多くを任せる一方で、設計の主体性は人間が握る「二人七脚」の DB 設計手法を紹介しています。プロセスは 4 つのステップで構成されており、1. 仕様と既存コードからのユースケース抽出、2. 人間による論点整理と issue 化、3. AI との壁打ちによる詳細設計、4. 4 人の Subagent（楽観・悲観・UI重視・こだわり）による多角的なレビューループという流れで進めます。特にハルシネーションを防ぐためのソース提示指示や、AI による過剰設計を人間がフィルタリングする役割の重要性など、実務における AI 活用のリアリティと具体的なプロンプトの工夫が詳述されています。",
+    "topics": [
+      "Claude Code",
+      "DB設計",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    }
+  }
+}

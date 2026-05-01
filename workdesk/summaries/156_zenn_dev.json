@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:40:51.670745+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMアプリケーションにおける設計Principal - LLMのCAP定理",
+    "url": "https://zenn.dev/hsaki/articles/llm-cap-theorem",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "分散システムのCAP定理をLLM設計に適用し、モデル品質の一貫性、可用性、コストのトレードオフ構造と新たなサービスレベル管理のあり方を提唱する。",
+    "summaryBody": "分散システムのCAP定理になぞらえ、LLMアプリ設計における3つの要素「Consistency（モデル出力の一貫性）」「Availability（クオータ制限内での可用性）」「Price（低コスト）」のトレードオフを論じています。これらは同時に満たすことができず、プロビジョンドスループット（CA）、従量課金単一モデル（CP）、複数モデルのフォールバック（AP）といった戦略的選択が必要になります。また、LLM特有のスループット型SLIを従来の成功率型SLOへ変換する際の課題を指摘。GPUリソースの物理的制約を背景に、全ユーザー一律のSLA維持は困難であるとし、機能・プラン別のSLO分割、BYO-Key、非同期キューイングによる期待値コントロールなど、ビジネスと密接に連携したアーキテクチャ設計の重要性を説いています。",
+    "topics": [
+      "LLM",
+      "CAP定理",
+      "システムアーキテクチャ",
+      "SRE",
+      "サービスレベル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

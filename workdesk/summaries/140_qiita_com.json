@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:44:39.269391+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "同じ Issue を Claude・Codex・Gemini に同時に解かせるとどうなるか — git worktree × tmux で衝突しない並列 AI 開発",
+    "url": "https://qiita.com/nogataka/items/1156e2d3a40c4dab3398",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "git worktree と tmux を活用して複数の AI エージェントを物理的に隔離し、同一 Issue に対して並列で開発・比較を行う手法「workmux」とその実践例を紹介。",
+    "summaryBody": "複数の AI エージェント（Claude, Codex, Gemini）を同時に走らせる際の最大の課題である、依存関係（node_modules）や Git インデックスの衝突を `git worktree` で解決する方法を解説しています。Raine Virta 氏が開発した `workmux` を用いることで、エージェントごとに独立した作業ツリーと tmux ウィンドウを割り当て、競合のない並列開発環境を構築します。記事では、同一の Issue に対する 3 つの AI の実装速度や傾向の比較、`git range-diff` を用いた効率的なコード選定、そして人間が管理可能な認知負荷の限界（2〜3 並列が適正）といった実践的な知見が共有されています。単なるツールの紹介に留まらず、AI 時代における「レビュアーとしての人間」のワークフローを再定義する内容となっています。",
+    "topics": [
+      "git worktree",
+      "tmux",
+      "Claude Code",
+      "AIエージェント",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:39:53.978884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの仕組み：ビジュアルで学ぶ深層解説",
+    "url": "https://ynarwal.github.io/how-llms-work/",
+    "language": "en",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "Andrej Karpathy氏の講義に基づき、インターネット上の生データから対話型AIが構築される全プロセスを視覚的かつ詳細に解説した技術ガイド。",
+    "summaryBody": "大規模言語モデル（LLM）がどのように構築され、動作するのかを、Andrej Karpathy氏の技術解説をベースに紐解くコンテンツです。主な内容は以下の3つのフェーズに分かれています。\n\n1. **事前学習 (Pre-training):** Common Crawlなどの膨大なWebデータからFineWebのような高品質データセットを抽出し、トランスフォーマーモデルに次の一手（トークン）を予測させるプロセス。トークン化の仕組みやスケーリング則についても解説されています。\n2. **事後学習 (Post-training):** 「インターネットのシミュレーター」であるベースモデルを、SFT（教師あり微調整）とRLHF（人間からのフィードバックによる強化学習）を通じて、役立つアシスタントへと変換する工程です。\n3. **LLMの心理学と応用:** ハルシネーション（幻覚）の理由、RAG（検索拡張生成）による知識補完、プロンプトインジェクションなどのセキュリティリスクなど、実用上の重要な概念を網羅しています。\n\n最終的に、LLMは「次に続く確率が最も高いトークンを選ぶ統計的な推論エンジン」であることを強調し、現代のコンピューティングにおける新しいオペレーティングシステム（OS）の核としての可能性を提示しています。",
+    "topics": [
+      "Large Language Models",
+      "Machine Learning",
+      "Transformer",
+      "RLHF",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "How LLMs Work — A Visual Deep Dive"
+  }
+}

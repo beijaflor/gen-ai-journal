@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:34:20.537411+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawとHermesの違いを思想から理解する",
+    "url": "https://zenn.dev/mkj/articles/9431e342db202f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "松尾研究所による、個人開発発の「バディ」的存在を目指すOpenClawと、研究機関発の「進化」を重視するHermes Agentの設計思想とアーキテクチャの比較解説。",
+    "summaryBody": "この記事では、現在GitHubで爆発的な人気を博している2つの自律型AIエージェント、OpenClawとHermes Agentを比較分析しています。\n\n### OpenClawの思想：バディとしてのAI\n元OpenAIのエンジニアによる個人開発から始まったOpenClawは、「常に側にいてくれるバディ」であることを重視しています。技術的な特徴として、単一の永続的セッションを維持し、Markdown形式の人間が読める記憶（MEMORY.md）や、定期的に自己反省を行う「ハートビート（脈）」機能を備えています。これにより、ユーザーとの連続的な関係性を構築することに特化しています。\n\n### Hermes Agentの思想：進化するAI\nNous Researchが開発するHermesは、「AIの進化」を主眼に置いています。こちらはタスクごとにセッションをクリアにする「マルチセッション管理」を採用し、コンテキストの汚染を防ぐ実利的な設計です。また、SQLiteを用いた記憶管理や、定義したスキルを自ら更新する「Evolving Skills（進化するスキル）」など、研究機関らしいパフォーマンスと拡張性に強みを持っています。\n\n両者は常駐型デーモンとしてのアーキテクチャは共通していますが、セッションの扱いや記憶の保存方法において、人格を重視するかタスクの精度を重視するかという対照的なアプローチをとっています。",
+    "topics": [
+      "OpenClaw",
+      "Hermes Agent",
+      "AIエージェント",
+      "松尾研究所",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

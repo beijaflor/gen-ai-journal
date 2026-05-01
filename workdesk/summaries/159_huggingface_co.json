@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:40:07.116673+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4-Flash モデルカードと技術概要",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DeepSeek-V4は、100万トークンのコンテキストに対応し、独自のハイブリッド・アテンションとMuonオプティマイザにより高い推論効率と性能を両立した最新のMoEモデルシリーズです。",
+    "summaryBody": "DeepSeek-AIは、100万トークンのロングコンテキストに対応する最新の大規模言語モデル「DeepSeek-V4」シリーズを公開しました。このシリーズには、1.6Tパラメータ（有効49B）のPro版と、284Bパラメータ（有効13B）のFlash版が含まれています。技術的な特徴として、Compressed Sparse Attention (CSA) と Heavily Compressed Attention (HCA) を組み合わせたハイブリッド・アテンション・アーキテクチャを採用しており、DeepSeek-V3と比較してKVキャッシュを90%削減しつつ、ロングコンテキストにおける推論効率を劇的に向上させています。また、層間の信号伝達を安定させるManifold-Constrained Hyper-Connections (mHC) や、学習を高速化するMuonオプティマイザを導入。推論時には、ユーザーが用途に合わせて「Non-think」「Think」「Think Max」の3段階の思考モードを選択でき、特にProモデルのThink Maxモードは数学、コーディング、エージェントタスクにおいて主要なクローズドモデルに匹敵する性能を発揮します。",
+    "topics": [
+      "DeepSeek-V4",
+      "MoE (Mixture of Experts)",
+      "Long Context",
+      "Transformer Architecture",
+      "AI Model Release"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face"
+  }
+}

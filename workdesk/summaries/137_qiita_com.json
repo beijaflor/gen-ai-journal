@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:45:24.163091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Oracle】Pre-Built AI Agents の「Select AI Inspect」で自然言語でデータベースの中身を調査してみた",
+    "url": "https://qiita.com/yushibats/items/504dfd592ec24677ab3b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Oracle Database 26aiで利用可能な「Select AI Inspect」を用い、自然言語でデータベースの構造や依存関係を高度に解析・調査する手法を解説した記事。",
+    "summaryBody": "本記事では、OracleがGitHubで提供する「Select AI Pre-Built AI Agents」の中から、データベースオブジェクトの調査に特化した「Select AI Inspect」の実装と活用例を解説しています。これはAutonomous AI Database 26ai上でReAct型エージェントを動かし、自然言語での問いに対してSQL生成、メタデータ解析、依存関係の特定、コード要約などを行うツールです。\n\n主な内容は以下の通りです：\n- **Select AI Inspectの概要**: 単なるDDL表示ではなく、テーブル間の依存関係やPL/SQLロジックの意図をAIが理解・説明する機能を提供。\n- **導入手順**: GitHubのスクリプトを利用し、OCI Generative AIの連携設定やAIプロファイルの作成を経て、DB内にパッケージとエージェントチームを構築するプロセスを詳述。\n- **実用性の検証**: 「テーブルの役割を推測して日本語で説明する」といった複雑な指示に対し、エージェントが内部で依存関係解析やベクトル検索を組み合わせて回答する様子を実演。\n\nレガシーコードの解析や変更影響調査など、DB運用保守における実務的な利便性が高いツールとして評価されています。",
+    "topics": [
+      "Oracle Database",
+      "Select AI",
+      "Autonomous Database",
+      "OCI",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

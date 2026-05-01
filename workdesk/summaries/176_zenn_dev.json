@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:36:04.477411+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに会社のGoogleアカウントを渡していませんか",
+    "url": "https://zenn.dev/finatext/articles/mcp-gateway-google-sa",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントにユーザー権限を直接渡さず、ユーザー個別のサービスアカウントとGoogleの共有設定を活用してアクセス権を最小化・可視化するセキュアな設計。",
+    "summaryBody": "AIをGoogle Workspaceに連携する際のセキュリティ課題に対し、ユーザーごとに専用のサービスアカウント（SA）を払い出すことで「AIが見て良い範囲」を明示的に管理する設計を解説しています。従来のユーザートークン共有方式では、AIがユーザーの持つ全権限を継承するため、プライベートなメモなどの機密情報が漏洩するリスクがありました。本手法では、ユーザーがGoogle Driveの共有設定を通じてAI（SA）に能動的にアクセス権を与える仕組みを構築。また、実装にはAWS Lambda、GCP Workload Identity Federation（WIF）、および委任チェーンを活用し、静的なサービスアカウントキーを一切持たない「鍵レス」な構成を実現しています。これにより、監査ログ上での人間とAIの操作の明確な分離と、高水準なセキュリティを両立しています。",
+    "topics": [
+      "MCP",
+      "Google Workspace",
+      "IAM",
+      "Security",
+      "AWS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

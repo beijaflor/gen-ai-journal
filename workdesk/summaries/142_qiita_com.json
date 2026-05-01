@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:44:10.027564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発で増えたMarkdownを快適に読むビューア「MarkShelf」を作った",
+    "url": "https://qiita.com/smi/items/ab0d3e9d61fb0297111a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI駆動開発によって急増したMarkdownドキュメントの構造化・依存関係の可視化・快適な閲覧に特化したOSSビューア「MarkShelf」の紹介。",
+    "summaryBody": "AI駆動開発の普及により、仕様や設計メモがMarkdownで管理される機会が増えた一方で、ファイル間の依存関係の把握や閲覧の不便さが課題となっています。個人開発者のsmi氏が公開した「MarkShelf」は、これらの課題を解決するための閲覧専用ビューアです。\n\n主な機能として、ドキュメント間のリンクをグラフで可視化する「リンクグラフ」、リンク先に遷移せずに内容を確認できる「ホバープレビュー」、Gitと連携した「変更履歴タイムライン」を備えています。編集機能をあえて持たず「読むこと」に特化しており、npxコマンド一つで即座に起動可能です。また、Dockerでのセルフホストにも対応しており、BASE_PATHの設定によるサブパス配信など、実運用を考慮した設計がなされています。AIがMarkdownを生成する時代の「読む側の体験」を最適化するツールです。",
+    "topics": [
+      "Markdown",
+      "OSS",
+      "個人開発",
+      "AI駆動開発",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

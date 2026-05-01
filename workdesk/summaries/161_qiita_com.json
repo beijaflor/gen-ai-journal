@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:39:40.001305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic公式「skill-creator」完全活用ガイド — SKILL.md設計・eval最適化・チーム運用・トラブルシューティングまで全部入り",
+    "url": "https://qiita.com/TaichiEndoh/items/8b8ed06bb76a80bb34c2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが提供する、Claude用のカスタム指示（Agent Skills）を効率的に作成・評価・改善するための公式ツール「skill-creator」の包括的な技術ガイド。",
+    "summaryBody": "Anthropicが2025年12月にリリースした「Agent Skills」と、その作成を支援する「skill-creator」の活用法を詳説した記事です。スキルは指示書（SKILL.md）、スクリプト、リソースをパッケージ化したもので、Claude.ai、Claude Code、APIで共通利用できます。skill-creatorを用いることで、対話形式でのSKILL.md生成、`run_loop.py`による定量的評価（eval）、トリガー精度の自動改善が可能になります。記事では、MCP（Model Context Protocol）との「手順（Skills）と手段（MCP）」という役割の違い、チームでのバージョン管理やレビュープロセス、API経由での高度な実装方法まで網羅されており、Claudeを特定の業務ワークフローに最適化するための実践的な知見がまとめられています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "Agent Skills",
+      "skill-creator",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

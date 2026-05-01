@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:36:16.816446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのルーチン機能で定期的にパフォーマンスチューニングをさせている",
+    "url": "https://zenn.dev/yamadashy/articles/claude-code-routines-perf-tuning",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのルーチン機能を活用し、クラウド上で定期的にプロンプトを実行してコードのパフォーマンス改善を自動化し、2.4倍の高速化を実現した手法の紹介。",
+    "summaryBody": "Claude Codeの「Routines（ルーチン）」機能をパフォーマンスチューニングに活用する実践的なガイドです。クラウド上で定期実行されるプロンプトを用いて、リポジトリのボトルネック特定から実装、ベンチマーク計測、PR作成までを自動化しています。著者のCLIツール「Repomix」では、この仕組みにより約2.4倍の高速化を達成しました。\n\n主なポイント：\n- **ルーチン設定**: 2時間おきに実行し、5つのサブエージェントを並列起動して多角的に調査。\n- **改善戦略**: 1回の実行で1つの改善に絞り、ベンチマークで改善指標を満たさない場合は自動でrevertする仕組み。\n- **検証基盤**: GitHub ActionsでOS（Ubuntu/macOS/Windows）ごとに計測し、`github-action-benchmark`で履歴を可視化。\n- **運用フロー**: 自動生成されたDraft PRを人間が確認し、有用な変更のみを再実装してマージする「Human-in-the-loop」を採用。\n\nAIによる「数値に基づいた客観的な指摘」が、開発者の直感に反する最適化や、地味だが積み重なると大きな改善をもたらす点に価値があると述べています。",
+    "topics": [
+      "Claude Code",
+      "パフォーマンスチューニング",
+      "GitHub Actions",
+      "AI自動化",
+      "Repomix"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}
