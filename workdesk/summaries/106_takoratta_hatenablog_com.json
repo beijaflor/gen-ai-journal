@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:14:14.597714+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のWeb〜いま、第二のレスポンシブ設計が始まっている",
+    "url": "https://takoratta.hatenablog.com/entry/2026/04/28/112859",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが新たなWebクライアントとして台頭する中、従来の視覚的推測から脱却し、WebMCPやNLWebを通じて明示的な操作・対話インターフェースを提供する「第二のレスポンシブ設計」の重要性を説く。",
+    "summaryBody": "### AIエージェントを「第3のクライアント」として定義する\nかつてのモバイル革命が画面サイズへの対応を迫ったように、AIエージェントの普及は「視覚を持たず意図を持つクライアント」への対応をWebに求めています。現状のComputer Useやスクレイピングは、人間向けの視覚レイヤーを推測して操作する「脆い」手法であり、サイト側が明示的なインターフェースを提供する必要性が高まっています。\n\n### 二つの基盤技術：WebMCPとNLWeb\n本記事では、AIエージェント向けのWebアーキテクチャを支える2つの標準技術を解説しています。\n- **WebMCP**: ブラウザ内でサイトが許可する「ツール（操作）」を定義・実行するプロトコル。ユーザーのセッションを継承しつつ、Human-in-the-loop（人間の承認）を組み込める設計が特徴です。\n- **NLWeb**: 自然言語での「問い合せ」に応じる窓口。Schema.orgやベクトルDBを活用し、RAG的にサイト情報を構造化して提供します。\n\n### UXからAX（Agent Experience）への拡張\n今後のWeb設計は、人間向けのUXだけでなく、エージェントがサイトをどれだけ理解・操作しやすいかを示す**AX (Agent Experience)**が重要になります。検索エンジンの評価指標が「エージェントからの実行容易性」に拡大する未来を見据え、開発者は今からサイトの主要操作の棚卸しや構造化データの点検を行うべきであると提言しています。",
+    "topics": [
+      "AIエージェント",
+      "WebMCP",
+      "NLWeb",
+      "AX (Agent Experience)",
+      "レスポンシブ設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

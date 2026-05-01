@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:20:53.409898+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI支援コーディング：ソフトウェアエンジニアのための実践ガイド",
+    "url": "https://frontendmasters.com/blog/ai-assisted-coding-a-practical-guide-for-software-engineers/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによるコード生成を単なる「転記」ではなく「エンジニアリング」として統合し、生産性と安全性を両立させるための具体的な戦略を解説するガイド。",
+    "summaryBody": "この記事は、AI支援コーディングをプロダクション品質で実現するための包括的な指針を示しています。主なポイントは以下の通りです。\n\n1. **確実な意図の伝達**: 曖昧な指示を避け、実装前に「契約（シグネチャ）」や「設計意図」を定義するContract-Firstパターンの重要性。\n2. **コンテキスト管理**: LLMの性質上、会話が長くなると精度が劣化（Dissolution）するため、セッションを細かく分け、`.cursorrules`などのルールファイルで状態を管理する手法を推奨。\n3. **4つの有効な活用法**: QA（チェックリストによる検証）、メンター（概念の深掘り）、ドキュメント生成、テストデータ生成の役割を定義。\n4. **リスク管理**: AIは確率的なエンジンであり、パッケージのハルシネーションやセキュリティ脆弱性を生む可能性があるため、人間による徹底したコードレビューが不可欠です。\n\nAIに設計判断を委ねるのではなく、人間が技術的判断を主導し、AIを「有能だが注意が必要な事務作業者」として扱うべきだと説いています。",
+    "topics": [
+      "AI Coding",
+      "LLM",
+      "Prompt Engineering",
+      "Software Development",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "AI-Assisted Coding: A Practical Guide for Software Engineers – Frontend Masters Blog"
+  }
+}

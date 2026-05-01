@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:14:29.352150+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間レビューはもう不要？ AI と人間のレビューの線引きを決めた話",
+    "url": "https://ai.acsim.app/articles/introducing-self-merge-policy",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる自動レビューと人間のレビューを「後戻りできる決定か」という基準で明確に分離し、プルリクエストの8割をセルフマージ化してリードタイムを大幅に短縮した事例紹介。",
+    "summaryBody": "Acsim開発チームによる、AI駆動開発におけるレビューボトルネック解消のための実践的な取り組みです。ジェフ・ベゾスが提唱する「One-Way Door / Two-Way Door（戻れない決定か、戻れる決定か）」の概念をコードレビューに導入。DBスキーマ変更や基盤ライブラリの更新など、影響が大きくやり直しの困難な変更を「人間レビュー必須」とし、それ以外の容易に修正可能な変更はAIレビューのみによる「セルフマージ」を許可する運用を開始しました。\n\n具体的には、Claude Code Actionを用いてPR作成時にセルフマージの可否を自動判定する仕組みを構築。導入から2週間で、全PRの約80%が人間を介さずにマージ可能となり、リードタイム（p90）を30〜70%短縮する成果を得ました。また、品質維持のためにDesign Docでの事前合意や、AIの参照元となるドキュメントの継続的剪定といった補完的な施策も同時に実施されており、スピードと品質を両立させるための高度なプロセス設計が示されています。",
+    "topics": [
+      "AIコードレビュー",
+      "開発プロセス",
+      "生産性向上",
+      "Claude",
+      "チーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

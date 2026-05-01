@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:50:19.343181+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "熱力学的な効率の逆転：生成AI推論と広告付きWeb検索セッションのエネルギー・ライフサイクル比較評価",
+    "url": "https://dupr.at/thermodynamic-efficiency-inversion",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "モバイル環境での複雑な情報探索において、通信量や広告技術の負荷を考慮した「フルスタック」評価では、生成AIの方がWeb検索より4〜9倍エネルギー効率が高いとする研究結果。",
+    "summaryBody": "## 概要\n本論文は、生成AI（LLM）と従来のWeb検索のエネルギー消費を、サーバー側のみならず通信・デバイス・広告負荷を含めた「セッション単位」で比較したライフサイクル評価（CELCA）である。従来の「AIは検索より電力を消費する」という通説が、モバイル環境の複雑なタスクにおいては逆転することを実証している。\n\n## 主な分析結果\n1. **効率の逆転**: 複雑な合成タスクをモバイル回線で行う場合、標準的なLLMセッションは広告付きWeb検索より中央値で**5.4倍（1.6〜9倍の範囲）効率的**である。 \n2. **通信エネルギーの寄与**: モバイルページの平均容量（2.56MB）を4G/5Gで通信するエネルギーは、LLMの推論コスト（約0.24Wh）を単独で上回る。LLMの回答は数KBであり、通信コストが極めて低い。\n3. **広告技術（Ad-tech）の税**: デバイス電力の15〜44%が広告のレンダリングやリアルタイム入札に消費されており、これらを回避するLLMはデバイス側の消費電力を大幅に削減する。\n4. **タスク完了時間の短縮**: AIは複数のページを巡回する「ポゴスティッキング」を排除し、画面点灯時間を短縮することで、さらなる省エネを実現する。\n\n## 限界と推奨事項\nこの「逆転」はWi-Fi接続時や単純なクエリでは限定的であり、Chain-of-Thoughtを用いる高度な推論モデルやエージェント型ワークフローでは消費電力が激増し、優位性が失われる。持続可能なIR（情報検索）のために、タスクの複雑さに応じたモデルの適切なルーティングが推奨される。",
+    "topics": [
+      "生成AI",
+      "エネルギー効率",
+      "ライフサイクルアセスメント",
+      "モバイルネットワーク",
+      "広告技術"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Thermodynamic Efficiency Inversion: A Comparative Energy Lifecycle Assessment of Generative AI Inference versus Ad-Supported Web Search Sessions"
+  }
+}

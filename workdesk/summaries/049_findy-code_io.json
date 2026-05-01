@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:42:12.182641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと、コードを見ながらやりとりする。ローカルレビューを回すOSS「difit」",
+    "url": "https://findy-code.io/media/articles/aisaji-yoshiko_pg",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントによる開発サイクルに「ブラウザでのローカルレビュー」を組み込み、コード品質の維持とレビュー負荷の軽減を両立するOSS「difit」の活用術を紹介しています。",
+    "summaryBody": "AIコーディングの進展により実装速度が向上する一方で、人間によるレビューが追いつかずコード品質が低下する課題に対し、著者はローカルで手軽に差分を確認できるOSS「difit」を開発・活用しています。\n\n主な特徴とワークフローは以下の通りです：\n- **AI連携ワークフロー**: AIエージェントが実装完了後に自動でdifitを立ち上げ、人間にレビューを依頼。人間はブラウザ上で差分を確認し、指摘があればコメントを残します。\n- **直感的なUI**: GitHubのPull Request画面に近いUIをローカル環境で再現しており、ターミナルのgit diffよりも高い視認性を実現しています。\n- **双方向のやりとり**: ブラウザ上で入力したコメントをAIがプロンプトとして受け取り、即座に再実装を行うフィードバックループが構築可能です。\n- **開発の経緯**: 要件定義から実装までをChatGPT o3やClaude CodeといったAI主導で行ったエピソードや、リリース後の反響についても詳しく解説されています。\n\nAIにすべてを委ねるのではなく、人間が「ちょうどいいさじ加減」で介入するための実践的なツールとして提案されています。",
+    "topics": [
+      "AIコーディング",
+      "OSS",
+      "コードレビュー",
+      "Claude Code",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

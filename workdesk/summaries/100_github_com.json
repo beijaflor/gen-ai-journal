@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:15:36.130339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "[バグ] 回帰：Claude Code v2.1.111にて、ファイル読み込み時のマルウェア警告がサブエージェントの拒否を引き起こす問題が再発",
+    "url": "https://github.com/anthropics/claude-code/issues/49363",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのClaude Codeにおいて、ファイル読み込み時に挿入されるマルウェア対策のシステム指示が原因で、サブエージェントが正当なコード編集を拒否するバグが再発しています。",
+    "summaryBody": "Anthropicの公式CLIツール「Claude Code」のバージョン2.1.111において、以前のバージョン（v2.1.92）で修正されたはずの「マルウェアに関するシステムリマインダー」のバグが再発していることが報告されました。このバグは、ファイル読み込みや検索ツールを実行するたびに、`&lt;system-reminder&gt;`として「コードの改善や拡張を拒否しなければならない」という強い安全指示をコンテキストに注入するものです。\n\n特にOpus 4.7を使用したサブエージェント（並列実行エージェント）において、この文言がマルウェアの有無にかかわらず「無条件の編集拒否指示」として文字通りに解釈されてしまい、正当なOSSプロジェクトの編集依頼を40〜60%の確率で拒否するという深刻な実害が出ています。また、一回のセッションで同じリマインダーが大量に注入されることにより、2万〜4万トークンのコンテキストが浪費されるというコスト面の問題も指摘されています。報告者は、リマインダーの完全削除、あるいは条件（もしマルウェアだと判断した場合のみ拒否する等）を明確にするプロンプトへの改善を提案しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLMエージェント",
+      "AIセーフティ",
+      "バグ報告"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 65,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "[Bug] Regression: malware reminder on every Read still causes subagent refusals in v2.1.111 (fix from #47027 / v2.1.92 did not hold) · Issue #49363 · anthropics/claude-code"
+  }
+}

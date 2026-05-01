@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:45:04.575353+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングの実践は \"Thin\" と \"Self-healing\" へ",
+    "url": "https://note.com/timakin/n/nf08e5c07f86f",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントのハーネス設計において、事前定義を最小限に抑え、モデルが必要に応じてコードを自己生成・修復する「Thin & Self-healing」へのパラダイムシフトを解説する。",
+    "summaryBody": "LLMエージェントを動作させるための「ハーネス」設計が、従来の網羅的な事前定義から、最小限の構成で実行時にモデル自身が不足機能を補完する「Thin（薄い）かつSelf-healing（自己修復的）」な方向へ進化している。背景には、モデルの推論能力向上によるツールスキーマ遵守の徹底、巨大なコンテキストウィンドウによる情報圧縮の不要化、そしてモデル自身によるエラー修正能力の獲得がある。Garry Tan氏が提唱する「Thin Harness, Fat Skills」の概念や、Browser-harnessの事例を引き合いに、決定論的な実行空間とモデルの推論空間を切り分ける重要性を論じている。一方で、決済などの重要操作における信頼性確保のためには、依然として境界線の引き方が重要であると指摘している。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "LLM",
+      "ソフトウェア設計",
+      "Self-healing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    }
+  }
+}

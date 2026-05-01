@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:15:04.605429+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "talkieの紹介：1930年までのテキストで学習された13Bのヴィンテージ言語モデル",
+    "url": "https://talkie-lm.com/introducing-talkie",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "1931年以前の歴史的テキストのみを学習した13Bパラメータの言語モデル『talkie』が、AIの未知の概念への汎化能力とデータの多様性の影響を研究するために発表されました。",
+    "summaryBody": "### 概要\n「talkie-1930-13b-base」は、1930年12月31日までに発行された書籍、新聞、雑誌、特許などの歴史的資料（2,600億トークン）のみを使用して学習された13Bパラメータの「ヴィンテージ」言語モデルです。このプロジェクトは、インターネットベースのデータ汚染を排除し、モデルが未知の技術や概念（プログラミングなど）に対してどのように汎化するか、またデータの多様性がモデルの個性にどう影響するかを調査することを目的としています。\n\n### 主な特徴と研究成果\n- **汎化能力の検証**: 1931年以前には存在しなかったデジタルコンピュータやPythonプログラミングについて、少数の例示（in-context learning）を与えるだけで、単純なコードの修正や反転関数の実装といった限定的な成功を収めました。\n- **OCR品質の影響**: 従来のOCRシステムによる転記ミスは学習効率を30%まで低下させることが判明しました。これを改善するため、独自の「ヴィンテージOCR」の開発を進めています。\n- **時代に即した学習**: 現代のチャットデータを使わず、当時のエチケットマニュアルや辞書を用いて対話能力を構築し、1930年代の対話相手としての振る舞いを再現しています。\n\n### 今後の展望\n研究チームは、今夏までにGPT-3レベルのモデルをリリースする予定であり、コーパスを1兆トークン以上に拡大することでGPT-3.5（ChatGPT初期版）と同等の能力を目指しています。また、英語以外の多言語対応も優先課題としています。",
+    "topics": [
+      "LLM",
+      "Historical Data",
+      "Machine Learning Research",
+      "Data Contamination",
+      "OCR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing talkie: a 13B vintage language model from 1930"
+  }
+}

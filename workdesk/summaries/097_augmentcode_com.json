@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:16:26.303400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "良質な AGENTS.md はモデルのアップグレードに匹敵するが、不適切なものは逆効果となる",
+    "url": "https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント向けガイドライン『AGENTS.md』がコード生成の質に与える影響を調査し、性能を最大化するための記述パターンと避けるべき落とし穴を提示している。",
+    "summaryBody": "Augment Code社による調査で、AIエージェント専用の指示ファイル（AGENTS.md）の最適化が、コード生成の品質を劇的に向上させることが示された。良好なファイルはモデルをHaikuからOpusへアップグレードするのと同等の効果をもたらすが、不適切なファイルは逆に完遂率を30%低下させる。推奨されるパターンは、100〜150行に抑えた「段階的開示」、番号付きの「ワークフロー」、選択を明確にする「決定テーブル」、そして禁止事項に代替案を添える「Do & Don'tのペア」である。逆に、過度なアーキテクチャ解説や解決策のない大量の警告は、エージェントを不要な探索に追い込み、コンテキストの肥大化と混乱を招く。エージェントはAGENTS.mdを優先的に読み込むため、ここをハブとして既存のREADMEやドキュメントを整理することが推奨される。",
+    "topics": [
+      "AGENTS.md",
+      "AIエージェント",
+      "コード生成",
+      "ドキュメンテーション",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all."
+  }
+}

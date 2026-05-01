@@ -1,0 +1,15 @@
+BLOCKED: summary suppressed — fetch did not return usable content.
+
+- URL: https://uxdesign.cc/the-forgotten-conversation-problem-in-ai-chat-4d3d0c3ea525
+- Reason: interstitial signature detected: 'Enable JavaScript and cookies to continue'
+- Fetcher: curl+bs4
+- Extracted chars: 57
+- Raw bytes: 5831
+
+This stub was emitted by scripts/modules/fetch_router.py to prevent
+the LLM from hallucinating a summary against an anti-bot interstitial
+or an un-hydrated SPA shell. See Issue #121 for context.
+
+Action required: re-fetch this URL manually (e.g. via Playwright with
+an authenticated session, or by archiving the page and feeding the
+saved HTML), or curate the URL out of the journal.

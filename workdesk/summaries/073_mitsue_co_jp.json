@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:21:37.918632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursor3のworktreeコマンドとbest-of-nコマンドを使ってi18nの実装案の比較をしてみた",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202604/27_0954.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cursor3の新機能である/worktreeと/best-of-nコマンドを活用し、多言語サイト構築における最適なi18n実装案をAIエージェントに並列生成させて比較検証する手法を解説しています。",
+    "summaryBody": "2026年4月にリリースされたAIエディタ「Cursor3」の目玉機能である`/worktree`と`/best-of-n`コマンドの実践的な検証レポートです。1,000ページ規模の多言語静的サイト構築を例に、2つのコマンドの使い分けを提案しています。`/worktree`コマンドでは、Gitの作業ツリーを分離することで、11tyやAstroといった異なる技術スタックの構成案をメイン環境を汚さずに並行して実装・比較しています。一方、`/best-of-n`コマンドでは、選定した技術スタック内での詳細な実装パターン（YAMLの配置方法や共通管理の粒度など）を複数モデルやアプローチで同時生成させ、AIによる推奨案を含めた比較検討を行っています。これらの機能を組み合わせることで、複雑な技術選定やアーキテクチャ設計の意思決定をAIエージェントが強力に支援するワークフローが示されています。",
+    "topics": [
+      "Cursor",
+      "AIエージェント",
+      "i18n",
+      "Git Worktree",
+      "静的サイトジェネレーター"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

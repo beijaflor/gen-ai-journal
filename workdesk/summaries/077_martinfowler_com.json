@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:20:35.965396+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "構造化プロンプト駆動開発 (SPDD)：LLM支援による変更を統治可能、レビュー可能、再利用可能にする方法",
+    "url": "https://martinfowler.com/articles/structured-prompt-driven/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プロンプトを第一級のエンジニアリング成果物として扱い、REASONSキャンバスを通じてLLMによるコード生成の品質と統治を組織的に担保する手法「SPDD」の提案。",
+    "summaryBody": "Thoughtworksが開発した「Structured-Prompt-Driven Development (SPDD)」は、LLMによるコード生成を個人の効率化ツールから組織的なエンジニアリング能力へと昇華させるためのフレームワークです。主な特徴は、プロンプトを使い捨てのチャットではなく、バージョン管理やレビューの対象となる「第一級の成果物」として扱う点にあります。具体的には、7つの要素（要件、エンティティ、アプローチ、構造、操作、規範、ガードレール）から成る「REASONSキャンバス」を用いて設計意図を構造化し、LLMに与える境界条件を明確にします。この手法では「現実に乖離が生じた場合は、まずプロンプトを修正し、その後にコードを更新する」というワークフローを徹底することで、生成コードの予測可能性、透明性、および長期的な保守性を確保します。記事では、請求エンジンの機能拡張を例に、要件定義からコード生成、テスト、同期までの具体的なステップを解説しており、抽象化、アラインメント、反復的レビューという、AI時代の開発者に求められる3つの核となるスキルについても触れています。",
+    "topics": [
+      "SPDD",
+      "生成AI",
+      "プロンプトエンジニアリング",
+      "ソフトウェアアーキテクチャ",
+      "Thoughtworks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Structured-Prompt-Driven Development (SPDD)"
+  }
+}

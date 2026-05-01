@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:20:17.149065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個々の部品が正しくてもシステム全体が誤る理由：自律型AIにおける「振る舞いのドリフト」",
+    "url": "https://www.oreilly.com/radar/when-correct-systems-produce-the-wrong-outcomes/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "各コンポーネントが正常に動作していても、意思決定の連鎖によってシステム全体が意図から外れていく「振る舞いのドリフト」という新たな課題を解説する。",
+    "summaryBody": "現代の自律型AIシステム、特に検索・推論・ツール実行を組み合わせたエージェント・システムでは、従来のソフトウェア設計における「個別の部品が正しければ全体も正しい」という前提が崩壊しつつあります。本記事では、この現象を「振る舞いのドリフト（Behavioral Drift）」と定義し、以下の重要な視点を提示しています。\n\n- **合成可能性の課題**: 個々のステップ（検索、推論、行動）が局所的に正当であっても、それらの相互作用が時間の経過とともに累積することで、グローバルな目的から乖離した軌道を生み出す可能性がある。\n- **観測可能性の限界**: 従来の監視（レイテンシ、エラー率等）はシステムの「活動」を捉えますが、システムが依然として「意図通りか（アライメント）」は捉えられません。エラーが発生していないにもかかわらず、望まない結果に向かう状況が発生します。\n- **失敗を「軌道」として捉える**: 失敗を単一のイベントではなく、時間軸に沿った「軌道」の変化として理解する必要があります。これには、イベントベースの監視から、パターンや意思決定の変動を監視するアプローチへの転換が求められます。\n\n設計者は、システムを固定的なバリデーションの集合としてではなく、フィードバックループを通じて軌道を修正し続ける「継続的な制御プロセス」として構築すべきであると結論付けています。",
+    "topics": [
+      "AI Safety",
+      "Observability",
+      "Agentic AI",
+      "Software Architecture",
+      "System Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "When Correct Systems Produce the Wrong Outcomes"
+  }
+}

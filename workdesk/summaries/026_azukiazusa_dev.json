@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:47:57.496997+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "事前に定義した UI を AI に生成させる json-render を試してみた",
+    "url": "https://azukiazusa.dev/blog/json-render/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIに事前に定義したカタログに基づいたJSONを生成させることで、安全かつ予測可能なGenerative UIを実現するフレームワーク「json-render」の導入方法と実践的な使い方を解説した記事。",
+    "summaryBody": "Vercel Labsが開発した「json-render」は、AIによるUI生成（Generative UI）の課題である出力の不確実性やセキュリティリスクを解決するフレームワークです。あらかじめコンポーネントやアクションのカタログを定義し、AIにはそのスキーマに従ったJSONのみを出力させることで、既存アプリケーションとシームレスに統合されたUIを提供します。本記事では、Next.js環境におけるReactレンダラーの導入手順を、カタログの定義、コンポーネントのマッピング、APIルートの実装、そして実際のレンダリングまでコード例を交えて詳しく解説しています。特に、双方向のデータバインディングや、アクションによる状態変化を伴うUI生成の具体例は、動的なユーザー体験を構築する際の参考になります。AI SDKとの組み合わせにより、ストリーミング形式でUIが組み上がっていくプロセスも紹介されています。",
+    "topics": [
+      "Generative UI",
+      "json-render",
+      "Vercel Labs",
+      "React",
+      "AI SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

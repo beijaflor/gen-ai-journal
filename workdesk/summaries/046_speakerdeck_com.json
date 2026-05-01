@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:43:00.118665+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を安全に使おう勉強会 / Claude Code Security Basics",
+    "url": "https://speakerdeck.com/masahirokawahara/claude-code-security-basics",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeなどのAIエージェントを安全に利用するために、「抑止・制限・隔離」という3つの軸でガードレールを構築する具体的な設定手法を解説したスライド資料。",
+    "summaryBody": "Anthropicが提供するCLIツール「Claude Code」をセキュアに運用するためのガイドラインです。AIエージェントによる意図しないファイル操作や情報漏洩を防ぐため、以下の3つのアプローチを組み合わせてガードレールを構築することを推奨しています。\n\n1. **抑止**: `CLAUDE.md`ファイルに永続的な指示を記述し、Claudeに機密情報の扱いや破壊的コマンドの禁止を「お願い」する手法。\n2. **制限**: `settings.json`の`permissions`セクションを利用し、Bashコマンドやファイル読み取りに対して`deny`（拒否）や`ask`（確認）を機械的に定義。また、`Hooks`機能でツール実行前にカスタムスクリプトによるチェックを挟むことが可能です。\n3. **隔離**: OSレベルでファイルシステムやネットワークを制限する「ネイティブサンドボックス」機能の有効化や、Dev Containerによる環境分離により、万が一の暴走時にもホストOSへの影響を最小限に抑えます。\n\nツールの実行制御こそがセキュリティの核心であり、`.env`ファイルなどの機密情報へのアクセスを多層的に防御する重要性が説かれています。",
+    "topics": [
+      "Claude Code",
+      "LLM Security",
+      "Anthropic",
+      "AI Agent",
+      "Sandbox"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 50,
+      "overall": 92
+    }
+  }
+}

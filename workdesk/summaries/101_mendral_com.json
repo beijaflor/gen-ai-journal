@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:15:20.238058+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "フロンティアモデルへの移行でコスト削減に成功：MendralのAIエージェント階層設計",
+    "url": "https://www.mendral.com/blog/frontier-model-lower-costs",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "高機能なフロンティアモデルを司令塔とし、安価なモデルを作業者として階層化する設計により、CIログ解析の精度向上とコスト削減を同時に実現した手法の解説。",
+    "summaryBody": "Mendral社が、CIログ解析におけるLLM利用コストを削減した具体的なアーキテクチャを解説しています。主な戦略は、高価な上位モデル（Opus）をプランニングに特化させ、実行タスクを安価なモデル（Haiku）に分散させる「階層型エージェント」の採用です。\n\n1. **Triager（選別）パターン**: 全CI失敗の80%を占める既知の重複問題をHaikuが識別。セマンティック検索を用いて既存の不具合と照合し、新規の問題のみを上位モデルへエスカレーションします。\n2. **Context Hygiene（文脈の衛生管理）**: 大規模なログをプロンプトに流し込むのではなく、ClickHouseへのSQLインターフェースを介して、エージェントが必要なデータのみを「プル」する仕組みを構築。これにより、文脈の汚染とトークンコストを抑制しています。\n3. **オーケストレーション**: Opusが調査計画を立て、具体的なデータ取得や調査をHaikuサブエージェントに指示。サブエージェントは1レベルの深さに制限し、コストの暴走を防いでいます。\n\nこの構成により、上位モデルへのアップグレード後も、全体コストは以前（中位モデルのみを使用していた時）よりも低下しました。",
+    "topics": [
+      "LLM Cost Optimization",
+      "AI Agents",
+      "CI/CD Analysis",
+      "Claude 3",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "We Upgraded to a Frontier Model and Our Costs Went Down"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:48:47.456688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4のDay 0サポート：SGLangとMilesによる高速推論と検証済み強化学習",
+    "url": "https://www.lmsys.org/blog/2026-04-25-deepseek-v4/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DeepSeek-V4の公開と同時に、SGLangとMilesが高度なキャッシュ管理や最適化カーネル、FP8/FP4対応を含む推論および強化学習のフルスタック・サポートを提供開始。",
+    "summaryBody": "LMSYS Orgは、最新のDeepSeek-V4（1.6T Proおよび284B Flash）に対する、SGLang（推論エンジン）とMiles（学習・RLスタック）によるDay-0サポートを詳細に公開しました。DeepSeek-V4はハイブリッド・スパース・アテンションやmHC（Manifold-Constrained Hyper-Connections）、Blackwell向けのFP4専門家重みなど複雑な構造を持ちますが、これらを最適に扱うシステムが構築されています。\n\n推論面では、3つの異なるKVプールを統合管理するプレフィックス・キャッシュ機構「ShadowRadix」を導入し、1Mトークンの長い文脈でも高いキャッシュ効率を実現。また、CPUメモリをKVキャッシュの拡張として利用する「HiSparse」や、投機的デコード（MTP）のグラフ内実装により、スループットが大幅に向上しています。カーネル層では、FlashMLA、DeepGEMM、TileLangなどの最新技術を統合し、Blackwell世代でのFP4演算を最大化しています。\n\n学習面では、Megatron-LMをベースにDP/TP/SP/EP/PP/CPの全並列化手法をサポート。数値的安定性を重視したFP8学習や、DSAインデクサーのリプレイ機能を含むRL（強化学習）パイプラインが構築され、巨大モデルの初日からの安定したトレーニングを可能にしています。",
+    "topics": [
+      "DeepSeek-V4",
+      "SGLang",
+      "Inference Optimization",
+      "Reinforcement Learning",
+      "GPU Kernels"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "DeepSeek-V4 on Day 0: From Fast Inference to Verified RL with SGLang and Miles - LMSYS Blog | LMSYS Org"
+  }
+}
