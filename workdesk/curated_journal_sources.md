@@ -13,7 +13,7 @@
 
 - [ ] 017. https://blog.mozilla.org/en/privacy-security/ai-security-zero-day-vulnerabilities/
 - [ ] 151. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/
-- [ ] 173. https://www.reuters.com/business/us-security-agency-is-using-anthropics-mythos-despite-blacklist-axios-reports-2026-04-19/
+- [ ] 143. https://news.ycombinator.com/item?id=47832222
 - [ ] 182. https://xbow.com/blog/mythos-like-hacking-open-to-all
 
 ## Theme 3: GPT-5.5発表とOpenAI連発リリース — Terminal-Bench 2.0で82.7%・Codex Chronicle・Workspace Agents

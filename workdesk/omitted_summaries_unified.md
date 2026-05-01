@@ -1572,18 +1572,6 @@ AIによって「何かができる」ことが必ずしも「価値を提供す
 
 ---
 
-## ペンタゴンが排除したAnthropicの最強AI「Mythos」、NSAが極秘利用か
-
-https://news.ycombinator.com/item?id=47832222
-
-**Original Title**: NSA is using Anthropic's Mythos despite blacklist | Hacker News
-
-国防総省がAnthropic社を「サプライチェーンのリスク」としてブラックリストに登録した一方で、NSAが同社の高度なサイバーセキュリティAI「Mythos」を密かに利用している実態が判明しました。
-
-Axiosの報道を端緒とした本議論は、米国家安全保障局（NSA）が国防総省（DoD）による禁止命令を無視して、Anthropic社の最新AIモデル「Mythos Preview」を運用している実態を浮き彫りにしています。Mythosはコード生成と自律的エージェント機能に特化した非公開モデルであり、数十年前の0デイ脆弱性を発見するなどの驚異的な能力を持つとされています。DoDは、Anthropicが軍事利用に対して独自の「憲法」や制約（ガードレール）を課そうとしていることを「供給網のリスク」と断定しましたが、NSAは実利を優先して導入を強行した形です。Hacker Newsのユーザー間では、この「リスク」指定が政治的な交渉カードに過ぎないという見方や、AIのモデル重みが核兵器並みの戦略物資として扱われ始めている現状、そして「Mythos」が単なるマーケティング的な誇大広告（ハイプ）なのか真の実力なのかについて、多角的な議論が交わされています。特に、オープンソースプロジェクトへのAI製脆弱性報告の急増など、実社会への影響も具体的に言及されています。
-
----
-
 ## AIチャットボットが人間の知能を低下させる懸念：研究が警告する「認知的オフロード」の代償
 
 https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider
@@ -1914,6 +1902,18 @@ https://www.publickey1.jp/blog/26/googleaiagent_studioaigemini_enterprise_agent_
 Googleは、AIエージェントの開発・運用・管理を包括する「Gemini Enterprise Agent Platform」と、ローコード開発ツール「Agent Studio」を発表しました。
 
 Google Cloud Next 2026にて、企業向けAIエージェントの包括的なプラットフォーム「Gemini Enterprise Agent Platform」が発表されました。この基盤は、ローコードでビジュアル開発が可能な「Agent Studio」や、コードベースの開発キット「ADK」、セキュアな実行環境「Agent Engine」を備えています。利用可能なAIモデルはGoogleのGeminiに限らず、Claude、DeepSeek、Llama、Mistralなど「Model Garden」から幅広く選択可能です。また、MCP（Model Context Protocol）対応ツール、長期記憶用のMemory Bank、サンドボックス、アイデンティティ管理、可観測性などのエンタープライズ要件を満たす機能が統合されており、社内業務の自動化を強力に支援します。
+
+---
+
+## マイクロソフトとOpenAI、1000億ドル規模のAIデータセンター「Stargate」を計画
+
+https://www.reuters.com/business/us-security-agency-is-using-anthropics-mythos-despite-blacklist-axios-reports-2026-04-19/
+
+**Original Title**: Microsoft, OpenAI planning $100 billion data center project, Information reports
+
+マイクロソフトとOpenAIが、次世代AIモデルの計算需要に応えるため、1000億ドル規模の巨大スーパーコンピュータ「Stargate」を含むデータセンター群の建設を計画しています。
+
+マイクロソフトとOpenAIは、AIインフラの将来を左右する野心的なプロジェクト「Stargate」を推進しています。この計画は5段階のデータセンター拡張の最終段階に位置づけられ、総予算は1000億ドルを超えると推定されています。このプロジェクトの目的は、次世代の大規模言語モデルを実行するために必要な膨大な計算リソースを確保することにあります。数百万個のチップを必要とするこのスパコンは、既存のデータセンターを遥かに凌ぐ規模となり、NVIDIA製チップへの依存度や電力供給の確保が今後の鍵となります。この投資は、AI分野における両社の主導権を決定づける戦略的な一手と見られています。
 
 ---
 
