@@ -2,6 +2,28 @@
 
 ## Main List
 
+- [ ] 151. https://zenn.dev/makocchan/articles/whats_agents_cli
+- [ ] 150. https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer
+- [ ] 149. https://zenn.dev/renue/articles/4687cb5e5c0031
+- [ ] 148. https://zenn.dev/techtrain_blog/articles/0991bc406b58e2
+- [ ] 147. https://zenn.dev/headwaters/articles/68de421c45931b
+- [ ] 146. https://zenn.dev/yuden/articles/playwright-auto-heal-claude-code
+- [ ] 145. https://zenn.dev/knowledgework/articles/f41bdc6ac95b1d
+- [ ] 144. https://qiita.com/youtoy/items/3098aa2c88975539476f
+- [ ] 143. https://qiita.com/harupython/items/ed256553d10578cfec2a
+- [ ] 142. https://qiita.com/smi/items/ab0d3e9d61fb0297111a
+- [ ] 141. https://qiita.com/nob193/items/7c5ab1203dc01e253dfe
+- [ ] 140. https://qiita.com/nogataka/items/1156e2d3a40c4dab3398
+- [ ] 139. https://qiita.com/emi_ndk/items/2f0e910dc41bfe07139a
+- [ ] 138. https://qiita.com/ennagara128/items/71abb80697cdc826229c
+- [ ] 137. https://qiita.com/yushibats/items/504dfd592ec24677ab3b
+- [ ] 136. https://qiita.com/nogataka/items/7dec7a26e49f39e7d471
+- [ ] 135. https://qiita.com/KNR109/items/17aba9efc0de7ceff040
+- [ ] 134. https://qiita.com/ko1-ino/items/ccc64ce6504c77100cfb
+- [ ] 133. https://victortaelin.github.io/lambench/
+- [ ] 132. https://www.wsj.com/finance/investing/google-expands-anthropic-investment-with-40-billion-commitment-99b4de74
+- [ ] 131. https://www.sidjha.com/2026/02/why-productivity-needs-to-be-redefined/
+- [ ] 130. https://marmelab.com/blog/2026/04/24/claude-code-tips-i-wish-id-had-from-day-one.html
 - [x] 129. https://prtimes.jp/main/html/rd/p/000000228.000045379.html
 - [x] 128. https://pc.watch.impress.co.jp/docs/topic/feature/2104681.html
 - [x] 127. https://note.com/hirotsuchida/n/n6eee4f612217
