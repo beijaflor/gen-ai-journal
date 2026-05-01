@@ -45,3 +45,4 @@
 - [ ] 200. https://zenn.dev/pepabo/articles/claude-code-rules-skills-split
 - [ ] 003. https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html
 - [ ] 105. https://qiita.com/TKfumi/items/0751732005097816296c
+- [ ] 197. https://zenn.dev/mizchi/articles/empirical-prompt-tuning

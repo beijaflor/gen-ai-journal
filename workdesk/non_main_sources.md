@@ -173,7 +173,6 @@
 - [x] 194. https://zenn.dev/masarufuruya/articles/9e277188780755
 - [x] 195. https://zenn.dev/medirom_tech/articles/c8d422b940fa6d
 - [x] 196. https://zenn.dev/microsoft/articles/2a952ed44e3873
-- [x] 197. https://zenn.dev/mizchi/articles/empirical-prompt-tuning
 - [x] 198. https://zenn.dev/ncdc/articles/ee35ef7974d279
 - [x] 199. https://zenn.dev/nekoai_lab/articles/6b876ab524de84
 - [x] 201. https://zenn.dev/progate/articles/cb3018bbfc5aad
