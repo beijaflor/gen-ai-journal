@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:36:53.796628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT画像生成モデル プロンプティングガイド",
+    "url": "https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenAIのgpt-image-2を中心とした最新画像生成モデルにおいて、高品質なビジュアル生成と精密な編集を実現するためのプロンプト技術と実務ワークフローを解説するガイド。",
+    "summaryBody": "本ガイドは、OpenAIの最新画像生成モデル「gpt-image-2」を最大限に活用するための包括的なリファレンスです。従来のモデル（gpt-image-1.5等）と比較して、より高度なフォトリアリズム、正確なテキストレンダリング、複雑な構造の理解、そして強力な編集機能を備えていることを示しています。プロンプト構築の基本原則として、背景、被写体、詳細、制約の順に記述する構造化アプローチを推奨しており、品質とレイテンシのトレードオフを管理する`outputQuality`パラメータや、特定のアスペクト比・解像度設定のベストプラクティスを網羅しています。ユースケースは多岐にわたり、インフォグラフィックス、広告クリエイティブ、UIモックアップ、科学的図解の生成から、スタイル転送、仮想試着、オブジェクトの削除、複数画像の合成といった高度な編集操作まで、具体的なコード例とプロンプト例を交えて解説されています。特に、一貫したキャラクター描写を維持するための「アンカー」手法や、ブランドの整合性を保つための「不変条件」の設定など、商用利用に耐えうる実用的なテクニックが豊富に盛り込まれています。",
+    "topics": [
+      "gpt-image-2",
+      "プロンプトエンジニアリング",
+      "画像生成AI",
+      "OpenAI API",
+      "DALL-E"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 93
+    },
+    "originalTitle": "GPT Image Generation Models Prompting Guide"
+  }
+}

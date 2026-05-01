@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:36:36.842782+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codexの新機能「Chronicle」：画面内容から作業コンテキストを自動記憶",
+    "url": "https://developers.openai.com/codex/memories/chronicle",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは、macOS版Codexにおいて画面上の情報を自動的に記憶（Memories）として蓄積し、プロンプト入力時の背景説明を省略可能にする新機能「Chronicle」を公開しました。",
+    "summaryBody": "OpenAIが発表した「Chronicle」は、macOS版Codexアプリ向けのオプトイン方式のリサーチプレビュー機能です。この機能は、画面キャプチャやOCRを利用してユーザーの現在の作業内容（ファイル、Slackのスレッド、Webサイトなど）を解析し、それを「Memories」としてローカルに蓄積します。これにより、ユーザーはAIに対して「今見ているもの」に関する背景を詳しく説明する手間が省け、ツールやワークフローの文脈を維持したまま対話が可能になります。ただし、画面情報の利用に伴うプライバシーのリスクや、悪意のあるサイトからのプロンプト注入（Prompt Injection）リスクが増大するため、機密情報を扱う際の「一時停止」機能や、生成されたメモリ（Markdown形式）のローカル管理・削除方法についても詳しく解説されています。現在はChatGPT Proサブスクライバー向けに提供され、EU、英国、スイスは対象外となっています。",
+    "topics": [
+      "OpenAI Codex",
+      "AI Memories",
+      "macOS productivity",
+      "Context Management",
+      "AI Privacy & Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Chronicle – Codex | OpenAI Developers"
+  }
+}

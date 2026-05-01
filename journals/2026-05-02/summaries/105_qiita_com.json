@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:06:07.054748+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング時代の「環境構築」を一撃で終わらせるAPM",
+    "url": "https://qiita.com/TKfumi/items/0751732005097816296c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの設定やスキルをnpmのように一括管理・共有できるMicrosoft製のパッケージマネージャー「APM」の活用法を紹介する記事。",
+    "summaryBody": "AIエージェント（Claude Code、Cursor、GitHub Copilot等）がプロジェクトのコンテキストを理解するためには、適切な指示やスキルを与える「ハーネスエンジニアリング」が必要ですが、設定の共有や管理が煩雑になる課題があります。本記事では、この課題を解決するMicrosoft製OSS『APM (Agent Package Manager)』を解説しています。APMは、apm.ymlを用いてプロジェクトに必要な指示（Instructions）、スキル（Skills）、プロンプトテンプレート等を定義し、`apm install`コマンド一つで複数のエージェントツールに環境を展開できます。また、プロンプトインジェクションを防ぐためのセキュリティスキャン機能も備えており、チーム開発におけるAIエージェント利用の標準化を強力にサポートします。記事内ではObsidianスキルを導入する具体例やインストール手順も紹介されています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "Microsoft",
+      "APM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:24:12.492597+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Desktopが「スパイウェア」を無断でインストール？Anthropicの挙動を専門家が告発",
+    "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Desktopがユーザーに無断でブラウザのサンドボックスを回避するネイティブメッセージング用ファイルを強制インストールし、セッション奪取等のリスクを生じさせていることが判明した。",
+    "summaryBody": "プライバシー専門家Alexander Hanff氏による法科学的調査で、macOS版Claude Desktopアプリがインストール時に、BraveやChrome、Edgeを含む複数のブラウザディレクトリへ、文書化されていない「Native Messaging」マニフェストファイルを自動生成していることが明らかになりました。このファイルは、特定のブラウザ拡張機能がブラウザのサンドボックス外で、ユーザーと同等の権限を持つ実行ファイルを呼び出すことを可能にする「ブリッジ（実質的なバックドア）」として機能します。\n\n**主なリスクと問題点:**\n- **高度な特権:** 認証済みセッションへのアクセス、DOMの状態読み取り、フォーム入力の監視、画面キャプチャなどが技術的に可能になります。\n- **ダークパターン:** ユーザーへの通知や同意（オプトイン）がなく、ファイルを削除してもアプリを起動するたびに強制的に再生成されます。\n- **セキュリティ上の脅威:** プロンプトインジェクション攻撃を通じて、攻撃者がブラウザ外のシステムに干渉する経路となり得ます。\n\nHanff氏は、この挙動が欧州のePrivacy指令などの法規制に直接抵触するものであり、安全性を強調するAnthropicの姿勢と矛盾していると強く批判しています。",
+    "topics": [
+      "Anthropic",
+      "Claude Desktop",
+      "プライバシー",
+      "サイバーセキュリティ",
+      "ダークパターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Anthropic secretly installs spyware when you install Claude Desktop"
+  }
+}

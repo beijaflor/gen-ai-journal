@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:28:50.237994+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "改善要望開発ワークフローをClaude Codeで構築する 〜Agentic Workflow実践事例〜",
+    "url": "https://zenn.dev/masarufuruya/articles/9e277188780755",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用し、Agentic Workflowの設計思想に基づいた「改善要望開発」の自動化・標準化を通じて、属人化解消と開発効率向上を実現するiCARE社の実践事例。",
+    "summaryBody": "株式会社iCAREにおける、Claude Codeを用いた改善要望開発のAIワークフロー化の取り組みを紹介した記事です。属人化の解消と「プロンプトによる品質改善」を目標に、リスク許容度が低く型が決まっている業務に対してAgentic Workflow（Prompt Chaining等）を適用しています。具体的には、仕様駆動開発（cc-sdd）をベースに、要件定義から実装、テストまでのステップをAIと人間が協調して進める仕組みを構築。AIに100%を任せるのではなく、各ステップの完成度を人間が担保することで、80点のアウトプットを素早く出すことを重視しています。最終的には、エンジニアがより顧客理解に時間を割ける体制の構築を目指しており、現場の知見をワークフローに落とし込む「ハーネスエンジニアリング」の実践についても触れています。",
+    "topics": [
+      "Claude Code",
+      "Agentic Workflow",
+      "LLM",
+      "開発プロセス",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:07:46.380075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "終盤で崩壊させないAI駆動開発 ― takt-sddで実現する仕様駆動ワークフロー ―",
+    "url": "https://speakerdeck.com/j5ik2o/zhong-pan-debeng-huai-sasenaiaiqu-dong-kai-fa",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI駆動開発で発生しがちな「終盤の品質崩壊」を、YAMLワークフローと仕様駆動開発（SDD）の導入によって解決するツール「takt-sdd」の解説資料です。",
+    "summaryBody": "AI駆動開発において、序盤は高速に進むものの、終盤で整合性が取れず開発が停滞する「終盤崩壊」の課題に焦点を当てています。その根本原因を「仕様・制約・検証ゲートの欠如」と分析し、解決策としてコードより先に仕様を固める「仕様駆動開発（SDD）」を提唱しています。中核となるツール「takt」は、YAMLでAIエージェントの行動を定義するステートマシン型のCLIで、各フェーズにGO/NO-GOゲートを設けることで非決定的なAIの出力を決定論的なワークフローで制御します。要件定義、設計、タスク分解、実装、並列レビューまでを自動化する「takt-sdd」ワークフローにより、AI開発の確実性を高めるアプローチを紹介しています。",
+    "topics": [
+      "AI駆動開発",
+      "takt-sdd",
+      "仕様駆動開発 (SDD)",
+      "AIエージェント",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

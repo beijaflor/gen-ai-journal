@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:31:00.655071+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングとは何で、何ではないのか 〜作る側のハーネス、使う側のハーネス〜",
+    "url": "https://zenn.dev/r_kaga/articles/329afdc151899f",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ハーネスエンジニアリングの多義的な定義を整理し、開発ツール側の「エージェントハーネス」と利用者側の「ユーザーハーネス」の階層構造と設計の要諦を解説した記事。",
+    "summaryBody": "昨今話題となっている「ハーネスエンジニアリング」という言葉の定義の曖昧さを解消するための考察記事です。著者は、ハーネスを大きく2つのレイヤーに分類しています。一つはClaude Code等のツール自体が内包する「エージェント（ビルダー）ハーネス」で、オーケストレーションや制御ループを担います。もう一つは利用者が構築する「ユーザーハーネス」で、CLAUDE.mdやSkills、Hooksなどが該当します。\n\n記事では、単にルールファイルを整備するだけでなく、linterやテストといった「計算的センサー」によるフィードバックや、検証ループ（Verification Loops）を組み込む重要性が説かれています。また、Martin Fowlerのサイト等で提唱されるサイバネティクス的制御（フィードフォワードとフィードバック）の観点から、推論に頼るガイド（Skills等）と決定論的な事後チェックの組み合わせがハーネスの信頼性を高めると指摘しています。最終的には、定義の固執よりも「AIエージェントが自律的に動きやすい環境をどう整えるか」という実務的な視点が重要であると結論付けています。",
+    "topics": [
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "Claude Code",
+      "ソフトウェアエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:35:09.483829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub CLI v2.90.0 の gh skill でAgent Skillsの導入・管理を試してみた",
+    "url": "https://dev.classmethod.jp/articles/gh-skill-agent-skills-management/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CLI v2.90.0で追加された `gh skill` コマンドを使用し、AIエージェント向け機能パッケージ「Agent Skills」を検索・管理する手順と既存ツールとの比較を解説した記事。",
+    "summaryBody": "GitHub CLI v2.90.0（2026年4月リリース）にて、AIエージェントに特定タスクの実行方法を教える「Agent Skills」を管理するための `gh skill` サブコマンドがパブリックプレビューとして導入されました。本記事では、主要な5つのサブコマンド（search, preview, install, update, publish）の実際の動作を検証しています。\n\n### 主な特徴と検証内容\n- **標準化された管理**: 従来の手作業やサードパーティツール（npx skills等）による管理に対し、GitHub公式の仕組みとして統合されました。\n- **高度な検証機能**: `preview` でインストール前に `SKILL.md` を確認でき、`publish` では仕様に沿ったバリデーションが可能です。\n- **差分検知**: `update` コマンドは Git の tree SHA を利用しており、バージョン番号の更新だけでなく実質的なコンテンツ変更を検知して同期します。\n- **マルチエージェント対応**: Claude Code, GitHub Copilot, Cursor などの主要なエージェントホストに対応し、適切なディレクトリ（`.claude/skills/` 等）に自動配置されます。\n\n現時点では `list` や `uninstall` コマンドが未実装であるなどのプレビュー版ゆえの制約もありますが、AIスキルのサプライチェーン管理における利便性が大幅に向上しています。",
+    "topics": [
+      "GitHub CLI",
+      "Agent Skills",
+      "AI Agents",
+      "Claude Code",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

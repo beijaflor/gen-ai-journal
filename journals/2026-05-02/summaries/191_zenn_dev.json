@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:28:09.863242+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM向けの簡易ツール拡張機能「トリガー」の提案と実装",
+    "url": "https://zenn.dev/karaage0703/articles/89631872ca5a86",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ローカルLLMでも確実に動作するよう、シェルスクリプトを配置するだけで機能拡張を可能にする簡易的なツール実行仕組み「トリガー」を提案しています。",
+    "summaryBody": "ローカルLLMが複雑な「スキル」を使いこなすことが難しいという課題に対し、著者（からあげ氏）が考案した「トリガー」という簡易拡張機能の解説記事です。この機能は、特定のディレクトリにシェルスクリプト（handler.sh）と定義ファイル（trigger.yaml）を配置するだけで、LLMにFunction Callingを介してカスタムツールを提供できる仕組みです。自作のAIアシスタントフレームワーク「xangi」に統合されており、天気予報やテックニュースの取得といったタスクを、LLMの推論能力が低めな環境でも再現性高く実行できる点が特徴です。記事内では具体的なディレクトリ構成やスクリプト例に加え、Dockerを用いたクイックスタート方法も紹介されています。最新の高性能モデルであれば不要になる可能性を認めつつも、低スペック環境でのツール活用の現実的な解として提示されています。",
+    "topics": [
+      "Local LLM",
+      "Function Calling",
+      "AIエージェント",
+      "xangi",
+      "Shell Script"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 35,
+      "overall": 85
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T15:41:44.890405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gh コマンドでエージェントスキルをインストール・管理できるようになった",
+    "url": "https://azukiazusa.dev/blog/gh-agent-skill-management/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CLI v2.90.0に導入された gh skill コマンドにより、AIエージェント用のスキルを安全かつシームレスに検索、管理、公開できるようになりました。",
+    "summaryBody": "GitHub CLIの最新アップデート（v2.90.0）で追加された `gh skill` コマンドについての解説記事です。この新機能により、GitHub上で公開されている「エージェントスキル」を直接管理できるようになります。主な特徴として、サードパーティ製ツールに依存しないネイティブな管理、インストール前の安全なプレビュー、そしてコミットハッシュやピン留め機能によるサプライチェーン攻撃のリスク軽減が挙げられます。既存の `npx skills` との互換性も維持されており、Claude CodeやCursorといった主要なAIエージェントへのインストールに対応。さらに、バリデーション機能を備えた `publish` サブコマンドにより、開発者が安全に自作スキルを公開するためのフローも整備されています。チーム開発における暗黙知の形式知化を加速させる強力なツールとしての活用が期待されます。",
+    "topics": [
+      "GitHub CLI",
+      "AIエージェント",
+      "エージェントスキル",
+      "開発ツール",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

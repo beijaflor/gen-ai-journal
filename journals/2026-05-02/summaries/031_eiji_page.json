@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:37:21.249137+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにコードを読ませるならopensrc！調査コードを一元管理",
+    "url": "https://eiji.page/blog/opensrc-intro/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに外部ライブラリのコードを読み込ませる際の手間を解消し、一元管理を可能にするVercel Labs製のCLIツール「opensrc」の紹介。",
+    "summaryBody": "AIにライブラリのソースコードを調査させる際、従来は手動でリポジトリを探してクローンする必要がありましたが、Vercel Labsが公開した「opensrc」はこのプロセスを劇的に効率化します。このCLIはnpm、PyPI、GitHubなど多岐にわたるレジストリに対応しており、特定ディレクトリ（デフォルトは~/.opensrc/）にソースをshallow cloneして一元管理します。AIエージェント向けの「Skill」定義も公開されており、CursorなどのAIに対し自然言語で『opensrcで〇〇を落として調査して』と指示するだけで、最新のコードに基づいた分析が可能になります。開発用のghqとは別に、調査・閲覧・使い捨て用として使い分ける運用が推奨されています。",
+    "topics": [
+      "AIエージェント",
+      "CLI",
+      "Vercel",
+      "開発効率化",
+      "opensrc"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

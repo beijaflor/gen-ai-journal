@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:34:42.582833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPを活用したプロダクション環境対応エージェントの構築",
+    "url": "https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが提唱するModel Context Protocol (MCP) を用い、AIエージェントを外部システムに安全かつ効率的に接続するための実践的な設計パターンと、直接APIやCLIとの比較を解説した記事。",
+    "summaryBody": "AIエージェントを実用的なプロダクションシステムに統合するための最適なアプローチとして、AnthropicはModel Context Protocol (MCP) を推奨しています。本記事では、従来の直接API呼び出しやCLIと比較したMCPの優位性と、構築における主要なパターンを解説しています。\n\n### 主なポイント：\n- **接続手法の比較**: 直接APIはスケーラビリティに欠け、CLIはローカル環境に限定されます。MCPはプロトコルとして標準化されており、クラウド環境でのポータビリティと認証、発見を容易にします。\n- **MCPサーバーの設計**: エンドポイントを単にラップするのではなく、「意図（Intent）」に基づいてツールをグループ化することが重要です。また、大規模なAPIセットにはコード実行型のオーケストレーション、リッチなUIにはMCP Appsの活用が推奨されます。\n- **クライアントの効率化**: コンテキストを節約するため、ツールのオンデマンド検索や、コード実行サンドボックス内でのプログラムによるツール呼び出しが有効です。\n- **Skillsとの組み合わせ**: MCPが「道具」を提供するのに対し、Skillsはそれらを使いこなす「手順」を教えます。これらをプラグインとしてパッケージ化することで、エージェントの専門性を高めることができます。\n\nMCPを採用することで、一度の統合で多様なクライアント（Claude, ChatGPT, VS Code等）からシステムを利用可能になり、エコシステムの恩恵を最大限に享受できます。",
+    "topics": [
+      "Model Context Protocol (MCP)",
+      "AI Agents",
+      "Anthropic Claude",
+      "System Integration",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Building agents that reach production systems with MCP"
+  }
+}

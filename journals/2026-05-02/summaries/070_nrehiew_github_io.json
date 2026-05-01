@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:47:30.586277+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングモデルの「過剰編集（Over-Editing）」問題とRLによる改善手法",
+    "url": "https://nrehiew.github.io/blog/minimal_editing/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIがバグ修正時に不要なコード変更を行う「過剰編集」問題を定義し、最新LLMの傾向分析と強化学習（RL）による改善効果を実証した研究。",
+    "summaryBody": "本記事では、AIコーディング支援ツールが些細な修正の際に関数全体を書き換えてしまう「過剰編集（Over-Editing）」問題を詳細に調査しています。この問題はコードレビューの負荷を増大させ、保守性を低下させる要因となります。研究では、トークン単位のレーベンシュタイン距離と認知複雑度（Cognitive Complexity）を指標として導入し、GPT-5.4やClaude Opus 4.6、DeepSeekなどの最新モデルを評価しました。その結果、推論モデルはデフォルトで過剰編集を行いやすいものの、明示的なプロンプトへの追従性は高く、最小限の編集を指示することで精度を保ちつつ変更量を抑えられることが判明しました。また、モデルのトレーニング手法として、SFT（教師あり微調整）やDPOと比較して、強化学習（RL）が「最小限の編集」というスタイルを最も効果的に汎化させ、モデルの既存のコーディング能力を損なわずに学習できることを示しています。LoRAを用いた低ランクでの学習も有効であり、特定のスタイル変更には全パラメータの微調整が不要であることも実証されました。",
+    "topics": [
+      "Over-Editing",
+      "AI Coding Tools",
+      "Reinforcement Learning",
+      "LLM Benchmarking",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Coding Models Are Doing Too Much"
+  }
+}

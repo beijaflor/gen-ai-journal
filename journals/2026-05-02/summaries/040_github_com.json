@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:39:27.977886+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Lucebox-hub: 特定のコンシューマ向けGPUに特化した手書きカーネルによる超高速LLM推論ツール",
+    "url": "https://github.com/Luce-Org/lucebox-hub",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "RTX 3090などの特定のGPUに最適化されたカスタムカーネルや投機的デコード技術を駆使し、既存のフレームワークを大幅に上回る推論性能と電力効率を実現するオープンソースプロジェクト。",
+    "summaryBody": "Lucebox-hubは、汎用性を捨てて「特定のチップ」に対する極限の最適化を追求するLLM推論最適化ハブです。主要なプロジェクトとして、Qwen 3.5 0.8Bの全24レイヤーを単一のCUDAディスパッチで処理する「Megakernel」があり、RTX 3090においてAppleの最新シリコンと同等の電力効率（1.87 tok/J）かつ2倍のスループットを実現しています。また、27Bクラスのモデルを1枚のRTX 3090で高速動作させるために、DFlash（ブロック拡散投機的デコード）とDDTreeを統合し、標準的な自己回帰推論と比較して約3.4倍の速度向上（約130 tok/s）を達成しています。NVIDIAのAmpereから最新のBlackwell（RTX 5090/GB10）、さらにはJetson AGX Thorまで、各アーキテクチャに合わせた手書きの最適化が提供されており、ローカル環境でのAI実行をデフォルトにするための強力なツール群となっています。",
+    "topics": [
+      "LLM Inference",
+      "CUDA Optimization",
+      "Speculative Decoding",
+      "RTX 3090",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Lucebox-hub: Lucebox optimization hub: hand-tuned LLM inference, built for specific consumer hardware."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:11:31.621739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TSRX: エージェント時代に最適化された宣言的UIのためのTypeScript拡張",
+    "url": "https://tsrx.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeScriptに制御フローやスコープ付きスタイル、局所変数を直接記述可能にする、AIエージェントとの親和性を重視したJSXの後継的言語拡張。",
+    "summaryBody": "TSRX (TypeScript Render Extensions) は、UIコンポーネントの構造、スタイル、ロジックを1つのファイルに高度に共存（Co-location）させることを目的としたTypeScriptの言語拡張です。JSXの精神的後継として、if/forといった制御フローやローカル変数をテンプレート内に直接記述できる構文を提供します。\n\n主な特徴と利点は以下の通りです：\n- **マルチフレームワーク対応**: React、Preact、Solid、Rippleなど複数のランタイムをターゲットにコンパイル可能です。\n- **コンパイラによる最適化**: Reactのフックを条件分岐内で呼び出した際に自動でコンポーネントを分割したり、Solidのprops分割代入におけるリアクティビティ消失を防いだりと、フレームワーク特有の制約をコンパイル時に解消します。\n- **AIフレンドリーな設計**: 関連情報が物理的に近くに配置されるため、LLM（大規模言語モデル）がコードの構造と文脈を理解しやすく、エージェントによるコード生成やリファクタリングの精度向上が期待できます。\n- **既存エコシステムとの互換性**: 既存のTypeScriptプロジェクトに導入可能で、主要なエディタ（VS Code, Zed, Neovim等）向けのLSPやPrettier/ESLintプラグインも完備されています。\n\n現在はアルファ版として開発が進められており、UI開発における「人間とAIの両方にとっての書きやすさ」を追求しています。",
+    "topics": [
+      "TypeScript",
+      "JSX",
+      "UI Framework",
+      "AI-native Development",
+      "Frontend Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "TSRX | A TypeScript language extension for building declarative UIs in an agentic era."
+  }
+}

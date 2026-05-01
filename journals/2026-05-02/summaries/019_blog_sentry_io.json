@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:34:28.218988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェントAIシステムのオブザーバビリティをスケールさせる方法：Sentryによるアプローチ",
+    "url": "https://blog.sentry.io/scaling-observability-for-multi-agent-ai-systems/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複雑化するマルチエージェントAIシステムにおいて、エージェント間の依存関係やサイレントな失敗を可視化するための分散トレーシングの重要性とSentryによる実装手法を解説。",
+    "summaryBody": "AIシステムが単一の呼び出しから、エージェントが他のエージェントを呼び出す「マルチエージェント構成」へと進化する中で、従来の監視手法では不十分になっています。本記事では、マルチエージェント特有の課題として「例外を投げないサイレントな失敗（文脈の汚染）」や「複雑な依存関係によるボトルネックの特定困難さ」を挙げています。\n\n効果的なオブザーバビリティを実現するための4つの要件として、以下を提示しています：\n1. **トレースの継続性**: エージェントの境界を跨いでTrace IDを維持し、完全な呼び出しツリーを可視化すること。\n2. **エージェント単位のスパン属性**: レイテンシ、トークン量、モデル、プロンプトハッシュなどを個別に記録すること。\n3. **失敗モードの細分化**: タイムアウト、ツール実行エラー、ハルシネーションなどを区別すること。\n4. **タスク単位のコスト計測**: クエリごとに消費されたトークンとコストを正確に紐付けること。\n\nSentryは、OpenAI、Anthropic、LangGraph、Pydantic AIなどの主要フレームワークに対して自動計装を提供しており、既存の分散トレーシングのプリミティブを応用することで、これらの複雑な実行フローを直感的に把握できる環境を提供します。",
+    "topics": [
+      "AI Observability",
+      "Multi-agent Systems",
+      "Distributed Tracing",
+      "LLMOps",
+      "Sentry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    },
+    "originalTitle": "Scaling your observability for multi-agent AI systems | Sentry Blog"
+  }
+}

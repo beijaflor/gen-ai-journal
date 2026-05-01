@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T15:46:04.514315+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Azure Lifecycle with Copilot CLI",
+    "url": "https://speakerdeck.com/torumakabe/azure-lifecycle-with-copilot-cli",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilot CLIを活用し、Azureのサービス選定からIaC開発、コスト見積もり、運用・保守に至るライフサイクル全体をエージェント技術で効率化する高度な実践手法を解説。",
+    "summaryBody": "本スライドは、2026年時点を想定したGitHub Copilot CLIによるAzureライフサイクル管理の解説資料です。主要な概念として、エージェントを導く「ガイド（フィードフォワード）」と、結果を検証する「センサー（フィードバック）」の組み合わせを提唱しています。\n\n具体的には以下のワークフローが示されています：\n1. **サービス選定・設計**: Azure MCP ServerやMS Learnを活用したDeep Researchにより推奨構成を決定し、ADR（アーキテクチャ決定記録）として残す手法。\n2. **IaCと図解**: Bicepコードの自動生成に加え、Mermaidやdraw.io形式での構成図作成、さらにはExcel/PowerPointへのドキュメント出力スキル。\n3. **デプロイとトラブルシューティング**: Azure Developer CLI (azd) との連携や、Resource Graphを利用したセキュリティ分析、エラー発生時の自動修正プロセス。\n\n単なる自動化にとどまらず、AIによって浮いた時間で「技術を深く理解する」という、エンジニアの成長とAIとの共存に関する哲学的な示唆も含まれています。",
+    "topics": [
+      "Azure",
+      "GitHub Copilot CLI",
+      "IaC (Bicep)",
+      "Agentic Workflow",
+      "Microsoft Azure Developer CLI (azd)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:10:48.603913+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex CLIで作るSlack 1次回答AI",
+    "url": "https://techblog.lycorp.co.jp/ja/20260421a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codex CLIを活用し、Slackへの問い合わせに対してリポジトリやドキュメントを横断調査して根拠付きの1次回答を自動生成するワークフローの構築手法を紹介。",
+    "summaryBody": "LINEヤフーの開発チームが、日常的なSlackへの技術問い合わせ対応を効率化するために構築した「1次回答AI」の仕組みについての解説です。Codex CLIのスキル機能を核とし、GitHubリポジトリ（ghコマンド）、Confluence、Jira、Slackなどの複数ソースから情報を収集します。特に、単一エージェントではコンテキストが肥大化して回答精度が下がる課題に対し、リポジトリごとにSub Agentを配置する「Multi Agents構成」を採用することで、コンテキストの節約と精度の維持を実現しています。導入ステップは、ローカル環境での試行（ホップ）、各組織への展開（ステップ）、クラウド上での完全自動化（ジャンプ）の3段階で構成。AIが独走しないよう「人間が最終確認して投稿する」Human-in-the-loop設計を重視しており、実務での実用性とリスク管理を両立させた構成案が提示されています。",
+    "topics": [
+      "Codex CLI",
+      "Multi-Agents",
+      "Slack連携",
+      "RAG",
+      "LLMワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

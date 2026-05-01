@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:33:27.426672+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zindex - AIエージェントのためのダイアグラム作成インフラストラクチャ",
+    "url": "https://zindex.ai/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Zindexは、AIエージェントがDiagram Scene Protocol (DSP) を通じてダイアグラムを永続的な状態として管理、自動レイアウト、レンダリングできる開発者向けインフラです。",
+    "summaryBody": "Zindexは、LLMやAIエージェントが図を描画するための専用インフラストラクチャを提供します。最大の特徴は、エージェントが座標を指定するのではなく、ノードやエッジの関係性を記述する「Diagram Scene Protocol (DSP)」を採用している点です。これにより、エージェントは論理構造の定義に集中し、レイアウトエンジンが自動的に最適な配置を計算します。\n\n主な機能と利点：\n- **MCP (Model Context Protocol) 対応**: Claude CodeやCursorなどのエージェント環境にツールとして即座に導入可能。\n- **インクリメンタルな編集**: パッチベースの更新により、図の一部だけを変更しながら一貫性を維持できます。\n- **不変のリビジョン管理**: すべての変更が履歴として保存され、差分（diff）の確認や特定バージョンへの復旧が容易です。\n- **マルチフォーマット出力**: 1つの定義からSVGやPNGを生成でき、複数のデザインテーマ（blueprint, sketch等）を適用可能です。\n- **ドメイン特化型**: アーキテクチャ図、ER図、シーケンス図、BPMNワークフローなど、システム開発に必要な多様な図に対応しています。",
+    "topics": [
+      "AIエージェント",
+      "ダイアグラム生成",
+      "MCP (Model Context Protocol)",
+      "DSP (Diagram Scene Protocol)",
+      "開発者ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "zindex - diagram infrastructure for agents"
+  }
+}

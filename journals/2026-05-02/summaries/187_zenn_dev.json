@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:27:17.505083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI SDK のストリームに json-render を挟んで Generative UI をインライン描画する",
+    "url": "https://zenn.dev/chot/articles/ai-sdk-json-render-inline-generative-ui",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Vercel AI SDKのストリームパイプラインにjson-renderを統合し、JSONLパッチを用いてテキストとReactコンポーネントをインラインで描画する高度な実装手法の解説。",
+    "summaryBody": "本記事は、Vercel Labs製のフレームワーク「json-render」をVercel AI SDKに組み込み、LLMの出力ストリーム内にGenerative UIを直接埋め込む方法を詳説しています。従来のiframe（MCP Apps）方式が抱える「テキストとUIの混在が困難」という課題に対し、JSONLパッチによるプログレッシブ描画とサーバー側での自動分離（pipeJsonRender）を用いるアプローチを提案。Zodによる型安全なカタログ定義、LLMへのプロンプト注入、ストリーミング中のUI完全性チェック（Fallback UI）、さらにDBスキーマを変更せずに履歴からUIを復元する設計まで、実務に即したアーキテクチャが解説されています。特に、パーツの出現順序を維持したままレンダリングするクライアント側の実装パターンは、高度なチャットUI開発における重要な知見です。",
+    "topics": [
+      "Vercel AI SDK",
+      "json-render",
+      "Generative UI",
+      "React",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:01:17.118596+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot に パケットキャプチャ解析をさせる！",
+    "url": "https://qiita.com/aktsmm/items/378733288149ffb35160",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotのエージェントモードを活用し、.pcapngファイルをコンテキストとして読み込ませてtsharkやPythonによるパケット解析を自動化・高度化する手法の紹介。",
+    "summaryBody": "GitHub Copilot Chat（GPT-5.4想定）のエージェントモードを利用し、Wiresharkのパケットキャプチャデータ（.pcapng）を効率的に解析するワークフローを解説した記事です。筆者は、capinfosやtsharkによる全体像の把握、Pythonを用いた時系列スループットの可視化、そしてHTTP HostやRDAP情報を駆使したIPアドレスのラベル付けという4段階の解析プロセスを提案しています。この手法により、複雑なCLIオプションを覚えることなく、プロトコル解析からトラブルシューティングレポートの作成までを一貫してAIに実行させることが可能です。さらに、この手順を「Agent Skill」として定義することで、再現性の高いネットワーク解析環境を構築できる点も強調されています。",
+    "topics": [
+      "GitHub Copilot",
+      "Wireshark",
+      "tshark",
+      "ネットワーク解析",
+      "Agent Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

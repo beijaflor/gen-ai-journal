@@ -281,9 +281,9 @@ rmdir workdesk/summaries 2>/dev/null || true
 echo "✅ Workdesk cleaned and ready for next cycle"
 ```
 
-### 6. Mark Summaries as Published (Supabase)
+### 6. Mark Summaries as Published (Supabase) — REQUIRED
 
-If using the Supabase admin system, mark workdesk summaries as published:
+**This step is mandatory.** Running it transitions workdesk summaries to the published state in Supabase, which the website relies on for serving the journal's summary detail pages (`/journals/YYYY-MM-DD/NNN/`). Skipping it will leave summaries in draft state and break public access.
 
 ```bash
 # Mark all workdesk summaries as published with the journal date
@@ -291,22 +291,24 @@ uv run scripts/mark_published.py YYYY-MM-DD
 ```
 
 **What this does:**
-- Updates `journal_date` field in Supabase for all workdesk summaries
+- Updates `journal_date` field in Supabase for all workdesk summaries (journal_date IS NULL)
 - Transitions summaries from draft (workdesk) to published state
 - Enables public read access via Row Level Security (RLS) policy
 - Preserves summary URLs: `/journals/YYYY-MM-DD/001/` remains valid
 
+**Important — runs against ALL unmarked workdesk summaries:** the script updates every Supabase row where `journal_date IS NULL`, not just this week's 209. If summaries from prior weeks were never marked, they will all be assigned this week's date. Run this every week to keep state consistent.
+
 **When to run:**
 - After archiving journals to `journals/YYYY-MM-DD/`
 - Before creating pull request (STEP_12)
-- Only run once per journal publication
+- Run once per journal publication — this is a required step, not optional
 
 **Example:**
 ```bash
 uv run scripts/mark_published.py 2025-12-27
-# Prompts: "Mark 42 workdesk summaries as published for 2025-12-27? [y/N]"
-# Type: y
-# Output: "✅ Marked 42 summaries as published"
+# Prompts: "This will set journal_date=2025-12-27 for ALL workdesk summaries. Continue? (yes/no):"
+# Type: yes
+# Output: "✅ Successfully marked N summaries as published"
 ```
 
 **Prerequisites:**
@@ -396,6 +398,11 @@ grep -c '^## ' journals/YYYY-MM-DD/02_omitted_summaries.md
   - No unified summary working files remain
   - No `sources.md` in workdesk (archived to journals/)
 
+- [ ] **Supabase Publication (REQUIRED):** ⭐
+  - `uv run scripts/mark_published.py YYYY-MM-DD` has been executed
+  - Supabase summaries for this week show `journal_date=YYYY-MM-DD`
+  - Website summary detail pages return 200 (not 404) for `/journals/YYYY-MM-DD/NNN/`
+
 - [ ] **Structure Consistency:**
   - Main directory follows standard pattern
   - All directories have proper organization
@@ -429,6 +436,7 @@ git commit -m "Add weekly journal for YYYY-MM-DD
 After cleanup, the workspace is ready for the next weekly cycle:
 - `workdesk/` directory empty and ready
 - Archive safely stored in `journals/YYYY-MM-DD/`
+- **Supabase summaries marked as published with this week's `journal_date` (REQUIRED — see Section 6)**
 - Git repository updated with new journal
 - Ready to start Step 1 for next week
 

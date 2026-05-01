@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:22:11.866605+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Don’t Blame the Model - LLMの不確実性はモデルではなくAPIの制限に起因する",
+    "url": "https://www.oreilly.com/radar/dont-blame-the-model/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの信頼性不足はモデルの知能の問題だけでなく、API提供側が開発者のコントロールや可視性を制限しているという構造的な課題に起因していると論じる記事です。",
+    "summaryBody": "本記事は、大規模言語モデル（LLM）が「信頼できない」とされる原因の多くが、モデルそのものの限界ではなく、API提供側（OpenAI、Anthropic、Google等）が意図的に設けた機能制限にあると指摘しています。具体的には、以下の3つの主要な制限が開発者の自由度を奪っています。\n\n1. **入力の制限**: 「プリフィリング（回答の書き出しを固定する）」が制限されているため、特定の形式での回答強制や効率的な部分再生成が困難になっています。\n2. **制御の欠如**: 出力形式の強制がJSONなどの一部に限定されており、正規表現や任意の文法を用いた高度な制約（Constrained Decoding）が利用できません。\n3. **可視性の欠如**: モデルの確信度を示す「対数確率（logprobs）」や「思考プロセス（reasoning tokens）」が隠蔽または要約されているため、エラーの診断や信頼性の検証が妨げられています。\n\n著者は、これらの制限は技術的な問題ではなく、蒸留（Distillation）の防止や安全性を口実にした「ポリシー上の決定」であると批判しています。オープンウェイトモデルが提供するような高度な制御機能をクローズドAPIでも解放することが、AIシステムの信頼性向上には不可欠であると結論付けています。",
+    "topics": [
+      "LLM",
+      "API Design",
+      "AI Reliability",
+      "Developer Tools",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Don’t Blame the Model"
+  }
+}

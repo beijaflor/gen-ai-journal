@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T15:00:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
+  },
+  "content": {
+    "title": "OpenAI、Axiosサプライチェーン攻撃を受けmacOS署名証明書をローテーション — 5月8日に旧版ChatGPT/Codex/Atlas Macアプリのサポート終了",
+    "originalTitle": "Our response to the Axios developer tool compromise",
+    "url": "https://openai.com/index/axios-developer-tool-compromise/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "OpenAIは2026年3月31日に発生したAxios（v1.14.1）のサプライチェーン侵害が自社のmacOSアプリ署名GitHub Actionsワークフローに到達した事案について、証明書漏洩の可能性は低いと評価しつつも予防措置として証明書をローテーション、5月8日付で旧バージョンのChatGPT/Codex/Atlas Macアプリのサポートを終了することを発表した。",
+    "summaryBody": "OpenAIは2026年4月10日付のセキュリティ通知で、業界全体に影響したAxiosサプライチェーン攻撃（2026年3月31日UTC、悪性版v1.14.1の配布）への対応を公表しました。**ユーザーデータ・OpenAIシステム・知的財産・配布ソフトウェアの改変は確認されていない**ものの、念のため macOSアプリ署名で使用される証明書を漏洩したものとして扱い、失効・ローテーションを実施します。\n\n### 何が起きたか\n\n影響を受けたのは、**ChatGPT Desktop / Codex / Codex CLI / Atlas** のmacOSアプリ署名・公証（notarization）処理に使われていたGitHub Actionsワークフロー。攻撃時にこのジョブが悪意あるAxios v1.14.1をダウンロード・実行しました。フォレンジック分析の結論は、**実行タイミング・証明書のジョブへの注入順序・その他の緩和要因により、署名証明書が成功裏に流出した可能性は低い**というもの。それでも証明書を侵害扱いし、第三者DFIRファームを起用、Appleと連携し旧証明書での新規公証をブロック中です。\n\n### ユーザーへの影響と対応期限\n\n2026年5月8日付で、新証明書での再署名が行われた最初のリリース未満の旧バージョンはアップデート・サポート対象外となり、機能しなくなる可能性があります。新証明書での最低バージョン：\n\n- ChatGPT Desktop: `1.2026.051`\n- Codex App: `26.406.40811`\n- Codex CLI: `0.119.0`\n- Atlas: `1.2026.84.2`\n\nダウンロードはアプリ内アップデートまたは公式ページのみを利用し、メール・SMS・広告・サードパーティ配布サイトのインストーラを使わないよう警告が出ています。\n\n### 根本原因と教訓\n\n根因はGitHub Actionsの設定ミスで、**問題のアクションがコミットハッシュではなくフローティングタグを使用**しており、`minimumReleaseAge`（新規パッケージの最低公開期間）も設定されていなかった点。これは現代的なサプライチェーンセキュリティのベストプラクティス（タグ固定 / コミットSHAピン留め / 最低公開待機期間）の重要性を改めて示す事例となっています。iOS / Android / Linux / Windows / Web版およびAPI・パスワード・APIキーは影響対象外です。",
+    "topics": [
+      "サプライチェーン攻撃",
+      "Axios",
+      "macOSコード署名",
+      "GitHub Actions",
+      "OpenAI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 75,
+      "overall": 82
+    }
+  }
+}

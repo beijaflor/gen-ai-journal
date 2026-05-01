@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:08:32.150166+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM時代の検索アーキテクチャと技術的意思決定",
+    "url": "https://speakerdeck.com/shibuiwilliam/llmshi-dai-nojian-suo-akitekutiyatoji-shu-de-yi-si-jue-ding",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMやAIエージェントの台頭に伴い、人間向けとAIエージェント向けで異なる検索の要件を整理し、次世代の検索システムにおけるアーキテクチャ設計と技術選定の指針を解説する。",
+    "summaryBody": "LLMおよびAIエージェントが普及する時代において、検索システムの役割は「人間が探すための道具」から「AIが判断・拡張するためのインフラ」へと進化しています。本資料では、人間とAIエージェントの検索要件の違いを明確に定義しています。人間には認知の制約があるため「洗練された少数の結果」が求められるのに対し、AIエージェントは低コストで反復・並列処理が可能なため「構造化された評価可能性と探索可能性」が重視されます。技術的には、全文検索やベクトル検索といった単一の技術選定に留まらず、GraphRAG、AgenticRAG、MCP（Model Context Protocol）などを含む広範な検索Capabilityをソフトウェアアーキテクチャとして統合する必要性を説いています。また、AIエージェントのための検索設計プラクティスとして、メタデータの付与、自律的なファセット探索、構造的なクエリ拡張、バッチ・反復検索などの具体的なアプローチが紹介されており、これからの検索基盤構築における重要なロードマップを提示しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "検索アーキテクチャ",
+      "RAG",
+      "技術選定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 88,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

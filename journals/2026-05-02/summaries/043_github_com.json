@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:40:08.978105+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code セキュリティ設定（ハードニング）チートシートと設定サンプル集",
+    "url": "https://github.com/okdt/claude-code-hardening-cheatsheet",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」を安全に運用するための、サンドボックス化、権限管理、Hooks設定などをまとめたセキュリティ強化ガイド。",
+    "summaryBody": "Anthropicが提供するAIエージェント型CLIツール『Claude Code』を、最小権限の原則に基づいて安全に運用するための設定テンプレートおよびチートシートです。本リポジトリでは、`settings.json`を用いたサンドボックスの有効化、ファイル操作やネットワークアクセスの`deny/ask/allow`ルール設計、さらにHooks機能を活用した高度なカスタムチェック方法などが解説されています。OSの重要ファイルへのアクセス制限や、破壊的な操作の防止など、実務でClaude Codeを導入する際のセキュリティリスクを低減するための具体的なベストプラクティスが、日本語と英語の両方で提供されています。",
+    "topics": [
+      "Claude Code",
+      "AI Security",
+      "Hardening",
+      "CLI Tools",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code Hardening Cheatsheet"
+  }
+}

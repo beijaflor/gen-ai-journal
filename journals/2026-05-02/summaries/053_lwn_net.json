@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:42:46.822750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成のセキュリティ報告増大によるLinuxカーネル旧機能の削除",
+    "url": "https://lwn.net/Articles/1068928/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）によって生成された膨大なセキュリティ脆弱性報告への対応が困難になったため、LinuxカーネルからAX.25やISA/PCMCIAなどの長年メンテナンスされていない旧式コードを削除する動きが加速しています。",
+    "summaryBody": "LWN.netの報告によると、Linuxカーネル開発コミュニティにおいて、LLMを用いて生成された脆弱性報告が急増しており、開発者の大きな負担となっています。特にネットワーキングサブシステムなどのレガシーコード（AX.25、ATMプロトコル、旧式ドライバー等）が「バグの磁石」となっており、メンテナー不在のまま報告だけが積み上がる状況を打破するため、これらのコードをメインラインから削除する提案が相次いでいます。議論の中では、これらの機能をユーザー空間での実装に移行すべきだという意見や、Rustによる書き換えでメモリ安全性を確保する案、あるいは企業向けのLTSディストリビューションがout-of-treeで維持すべきだといった意見が出ています。この問題は、AIによる自動監査がオープンソース開発の「メンテナンスされないレガシーの切り捨て」という選択を強要している現状を浮き彫りにしています。",
+    "topics": [
+      "Linux Kernel",
+      "LLM",
+      "Security",
+      "Legacy Hardware",
+      "Open Source Maintenance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Kernel code removals driven by LLM-created security reports"
+  }
+}

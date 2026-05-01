@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:37:49.388980+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに「見つけてもらい、使ってもらい、悪用されない」ための3つのルール",
+    "url": "https://evilmartians.com/chronicles/3-rules-for-getting-ai-agents-to-find-use-and-not-exploit-your-devtool",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが自律的に開発ツールを発見・利用し、かつセキュリティリスクを抑えるための「エージェント体験（AX）」構築の戦略的ガイド。",
+    "summaryBody": "NetlifyのCEOが提唱した「エージェント体験（AX）」という概念を軸に、AIエージェントが製品をどのように「ユーザー」として扱うかを最適化する戦略を解説しています。主な内容は3つの柱で構成されています。第一に、LLMの学習データとRAG（検索拡張生成）の両方で推薦されるための「LLM SEO」戦略。比較ページやReddit、GitHubドキュメントの最適化が鍵となります。第二に、人間を介さない「エージェント・ファースト」なオンボーディング。MCPサーバーの提供や、利用後に人間が所有権を主張する「create-then-claim」モデル、エージェント向けの支払いパスの構築を提案しています。第三に、セキュリティ。エージェントの属性（actor_type）に基づいた認証や、段階的な信頼階層（Progressive Trust）を用いたリソース保護、MCPサーバーの脆弱性診断の重要性を強調しています。AXを単なる機能ではなく、AI時代の製品開発における不可欠な「規律」として捉えるべきだと結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "Agent Experience (AX)",
+      "LLM SEO",
+      "開発者ツール",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "3 rules for getting AI agents to find, use—and not exploit—your devtool"
+  }
+}

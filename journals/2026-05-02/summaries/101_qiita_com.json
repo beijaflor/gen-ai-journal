@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:05:13.928743+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Chrome DevTools MCP の全ツールをまとめて理解する",
+    "url": "https://qiita.com/softbase/items/fe445a318846fd6a364d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントがChromeを操作・解析するための「chrome-devtools-mcp」に含まれる全29ツールの役割と実務的な使い分けを解説したガイド。",
+    "summaryBody": "この記事は、AIコーディングエージェント（Gemini, Claude, Cursor等）から生きたChromeブラウザを制御するためのMCPサーバー「chrome-devtools-mcp」の全29ツールを網羅的に解説しています。ツールは大きく「入力自動化」「ナビゲーション」「エミュレーション」「パフォーマンス」「ネットワーク」「デバッグ」の6カテゴリに分類されています。各ツールの具体的な用途に加え、例えば『fill（値の注入）』と『type_text（キーボード操作）』の使い分け、構造化テキストを優先すべき『take_snapshot』の重要性など、実務でAIにブラウザを扱わせる際のノウハウが詳述されています。開発者が手動で行う「画面操作・エラー確認・通信調査・性能分析」の一連の流れをAIで自動化するための実践的なリファレンスとなっています。",
+    "topics": [
+      "Chrome DevTools",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "ブラウザ自動操作",
+      "デバッグ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

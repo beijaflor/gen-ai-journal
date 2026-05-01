@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:28:37.494803+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを24時間常駐させる自宅ホームラボを月500円で運用している話(Ubuntu + Tailscale + tmux)",
+    "url": "https://zenn.dev/marvelousu/articles/claude-code-homelab",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "中古PCとUbuntuを活用し、徹底した省電力設定とTailscale、tmuxを組み合わせることで、月500円という低コストでClaude Codeを常駐・遠隔操作する環境の構築法を紹介。",
+    "summaryBody": "この記事では、中古の省スペースデスクトップPC（Dell OptiPlex）を活用し、Claude Code CLIを24時間稼働させる低コストな自宅サーバー（ホームラボ）の構築事例を解説しています。Ubuntu 24.04 LTSをOSに採用し、TLPやpowertop、カーネルパラメータの調整により平均消費電力を20W前後（月額電気代 約520円）に抑制。ネットワーク面ではTailscaleによるセキュアなVPN接続とtmuxによるセッション永続化を組み合わせ、外出先のiPhone（Shellfish）やブラウザからシームレスにClaude Codeを操作できる環境を実現しています。VPSやAWSを利用するよりも圧倒的に安価に、かつ高性能なAI開発環境を維持するための具体的な設定値やセキュリティ対策（ufw, fail2ban）が網羅されており、実用性の高いガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "ホームラボ",
+      "Ubuntu",
+      "省電力",
+      "Tailscale"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}

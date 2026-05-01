@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:44:41.026968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code (Opus 4.7) における過剰なマルウェア検知とガードレールによる開発への制約問題",
+    "url": "https://news.ycombinator.com/item?id=47814832",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claudeの新モデルが正規の開発作業を「マルウェア」と誤認して拒絶する事例が相次ぎ、AIの過度な検閲が技術的好奇心や生産性を阻害しているという懸念が広がっている。",
+    "summaryBody": "Hacker Newsにおいて、Anthropicの最新モデル（Opus 4.7/Claude 3.7世代）および開発ツール「Claude Code」が、スクレイピングツールの開発やセキュリティデバッグなどの正当な作業をマルウェア作成と誤認し、実行を拒否する事例が報告されています。投稿者は、月額200ドルのサブスクリプションを支払い、身元も明かしているにもかかわらず、AIから「監視・制御されている」ような感覚を覚えると主張しています。\n\n議論では、特定のシステムプロンプト（&lt;system-reminder&gt;）がファイル読み取りのたびにマルウェア分析を強制し、コードの改善を禁止していることが技術的な原因として指摘されました。また、アカウントが「疑わしい活動」として即座に凍結されるリスクや、AIが「答え」を安易に提示することで人間の好奇心を殺しているという意見と、逆に知識の探索を加速させているという意見で分かれています。クローズドなAIによる検閲を回避するため、ローカルモデルやオープンな技術への移行を検討する開発者の動きも浮き彫りになっています。",
+    "topics": [
+      "Claude Code",
+      "LLM Guardrails",
+      "Anthropic",
+      "AI検閲",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 45,
+      "overall": 85
+    },
+    "originalTitle": "Claude Code Opus 4.7 keeps checking on malware | Hacker News"
+  }
+}

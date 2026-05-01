@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:35:39.438199+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotにソースコードを学習されないために対応したこと",
+    "url": "https://developers.freee.co.jp/entry/github-copilot-governance",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilotの個人プランにおける学習ポリシー変更を受け、組織のコード流出を防ぐためにネットワーク層でのエンドポイント遮断を含む具体的な統制手法を提案。",
+    "summaryBody": "GitHubが2026年4月より、Copilot Free/Proプランの入出力をデフォルトでAIモデルの学習に利用する方針変更を発表しました。Copilot Business/Enterprise利用者は対象外ですが、開発者が個人のFreeプランを意図せず使用する「シャドーAI」のリスクが存在します。本記事では、freee社が実施した3つの対策を詳述しています。1.ライセンスと組織の連動（コスト面で一部課題）、2.個人設定のオプトアウト徹底（確実性に欠ける）、3.ネットワーク層での制御（採用）。特に3番目の「Subscription based routing」を活用し、個人プラン用のドメイン（*.individual.githubcopilot.com）をブロックし、法人プラン用ドメインのみを許可することで、誤サインイン時でも通信を遮断し、学習を防ぐ実戦的なアプローチを解説しています。",
+    "topics": [
+      "GitHub Copilot",
+      "セキュリティ",
+      "AIガバナンス",
+      "情報漏洩対策",
+      "ネットワーク制御"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

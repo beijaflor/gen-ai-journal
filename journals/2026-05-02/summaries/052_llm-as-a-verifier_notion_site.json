@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T14:20:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
+  },
+  "content": {
+    "title": "LLM-as-a-Verifier：スコア粒度・反復検証・基準分解の3軸スケーリングでTerminal-Bench 2およびSWE-Bench VerifiedでSOTA達成（Stanford × UC Berkeley × NVIDIA）",
+    "originalTitle": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+    "url": "https://llm-as-a-verifier.notion.site/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Stanford AI Lab・UC Berkeley Sky Computing Lab・NVIDIAらの共同研究によるLLM-as-a-Verifierは、スコア粒度・反復検証・評価基準分解の3軸を同時にスケールさせる汎用検証フレームワークで、Terminal-Bench 2（86.4%）およびSWE-Bench Verified（77.8%）でSOTAを達成し、Claude Opus 4.6・GPT-5.4・Gemini系を上回った。",
+    "summaryBody": "Stanford AI Lab、UC Berkeley Sky Computing Lab、NVIDIAの研究チーム（筆頭著者Jacky Kwok氏、共著にIon Stoica氏、Azalia Mirhoseini氏らを含む）が、エージェント軌跡（trajectory）を細粒度に評価する汎用検証フレームワーク **LLM-as-a-Verifier** を発表しました。Test-time scalingの報酬モデルとして用いた場合、Terminal-Bench 2で **86.4%**、SWE-Bench Verifiedで **77.8%** のSOTAを達成しています。\n\n### 既存「LLM-as-a-Judge」の限界\n\n標準的なLLM-as-a-Judge手法は、モデルに離散スコアトークン（例：1〜8）を出力させ最高確率のトークンを最終スコアとするため、複雑な軌跡比較で同点が頻発します。Terminal-Benchでは **27%が同点（tie）** となり、優劣の判別に失敗するケースが顕著でした。\n\n### 3軸スケーリングによる検証\n\n本フレームワークは「判定（judge）」ではなく「検証（verifier）」として機能し、3つの軸を同時にスケールします：\n\n1. **スコアトークンの粒度（G）**：1→20まで拡張。`<score_A>` `<score_B>` タグからtoplogprobsを抽出し、各トークンに対する条件付き確率分布を連続的な報酬として近似（量子化誤差を低減）。\n2. **反復検証（K）**：1→16回。個別評価のバイアス・ノイズを平均化。\n3. **評価基準の分解（C）**：軌跡全体の品質を直接推定するのではなく、「Specification（タスク要件への適合）」「Output（出力フォーマットの一致）」「Errors（失敗シグナルの欠如）」という相補的因子に分解。\n\n報酬は \\(R(t,\\tau) = \\frac{1}{CK}\\sum_{c,k,g} p_\\theta(v_g \\mid t,c,\\tau) \\phi(v_g)\\) として算出され、N候補からは総当たりトーナメントで最良軌跡を選定します。\n\n### 実験結果\n\nTerminal-Benchでの2方向検証精度はk=1で **74.7%**（LLM-as-a-Judgeは57.0%）、k=16で **77.4%**（同70.2%）。**Tie率はLLM-as-a-Verifierが全条件で0%**、Judge側はk=16でも5.4%残存します。エージェントハーネスを問わずプラグアンドプレイで適用可能で、ForgeCodeで86.4%、Terminus-Kiraで79.4%、Terminus 2で71.2%まで成功率を引き上げました。実験では検証側にGemini 2.5 Flashを採用し、Claude Opus 4.6のサンプル軌跡を主に評価対象としています。\n\n### 意義\n\n本研究は、Test-time scalingの中核要素である報酬モデルを、追加学習なしのフレームワーク設計だけでフロンティアモデルを上回る精度に押し上げた点で重要です。GitHub（`llm-as-a-verifier.github.io`）で再現コードが公開されており、PRM/ORMやRL訓練パイプラインへの統合が今後の方向性として示されています。",
+    "topics": [
+      "LLM-as-a-Verifier",
+      "Test-time Scaling",
+      "Terminal-Bench",
+      "SWE-Bench Verified",
+      "報酬モデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 90
+    }
+  }
+}

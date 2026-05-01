@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:30:32.977279+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録",
+    "url": "https://zenn.dev/pepabo/articles/claude-code-rules-skills-split",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの肥大化する設定ファイルCLAUDE.mdを、ルールと遅延ロードされるスキルの3層構造に整理することで、起動時のトークン消費を83%削減した実体験に基づく技術解説。",
+    "summaryBody": "Claude Codeを使い続ける中で肥大化しがちな`CLAUDE.md`（設定ファイル）の最適化手法を解説する記事です。筆者は2000行近くまで育った設定ファイルを「エントリーポイント（CLAUDE.md）」、「恒常的な制約（rules/）」、「オンデマンドのワークフロー（skills/）」の3層に再構成しました。特に、呼び出されるまでロードされない`skills/`へ機能を切り出すことで、起動時のトークン消費を11万超から約1.9万まで削減することに成功しています。また、Claudeが既知の一般原則（SOLID等）の削除や、chezmoiを用いたホスト別の設定出し分けなど、実用的なTipsも豊富に盛り込まれています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "LLM",
+      "chezmoi",
+      "dotfiles"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

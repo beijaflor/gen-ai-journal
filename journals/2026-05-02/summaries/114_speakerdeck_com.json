@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:08:16.889930+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの権限管理 1: MCPサーバー・ ツールの Fine grained access control 編",
+    "url": "https://speakerdeck.com/ren8k/aws-mcp-access-control-for-ai-agents",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWSのAgentCoreを利用し、AIエージェントがMCP経由で実行するツールに対してユーザー単位の細粒度なアクセス制御（FGAC）を実装する3つの手法を解説しています。",
+    "summaryBody": "AIエージェントが企業内のデータソースやAPIに接続する際、不適切なツール実行やデータ漏洩を防ぐための権限管理（FGAC）の重要性と実装方法を詳述したスライド資料です。Model Context Protocol (MCP) を利用する基盤において、AgentCore Gatewayが提供する3つの手法を比較・解説しています。具体的には、JWTを用いてGateway全体の利用可否を制御する「Inbound Authorization」、Cedarポリシーによりツール単位で詳細な認可を行う「AgentCore Policy」、Lambdaを用いてリクエストやレスポンスの動的な加工や複雑な認可ロジックを実現する「Gateway Interceptors」について、それぞれのメリットとユースケースを整理しています。特にツールの遅延読み込みや権限に基づくフィルタリングにより、エージェントの動作を最適化する設計についても触れています。",
+    "topics": [
+      "AI Agent",
+      "Model Context Protocol (MCP)",
+      "AWS AgentCore",
+      "Fine-grained Access Control",
+      "Cedar Policy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:05:27.807557+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI に送る前に機密情報を伏せるライブラリ「makkuro」を作った",
+    "url": "https://qiita.com/sotanengel/items/626d51ce3efd3d641885",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "生成AIプロバイダへの送信前にメールアドレスや電話番号などの機密情報を自動でマスキングし、レスポンス時に復元するローカルプロキシ「makkuro」の開発報告。",
+    "summaryBody": "「makkuro」は、AI CLIとAPIの間に立ち、送信データに含まれる個人情報（PII）やシークレットを自動検知してプレースホルダーへ置換するツールです。日本語特有の電話番号、郵便番号、マイナンバー形式に対応しており、AIからの返答時には置換された値を元の形式に戻すため、利便性を損なわず安全にAIを活用できます。ローカルプロキシとして動作するため、既存のAI CLIツールと組み合わせてガードレールとして機能させることが可能です。",
+    "topics": [
+      "生成AI",
+      "セキュリティ",
+      "PII",
+      "個人情報保護",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:32:25.239946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareにおけるAIコードレビューの大規模オーケストレーション：OpenCodeを活用したCIネイティブな仕組み",
+    "url": "https://blog.cloudflare.com/ai-code-review/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cloudflareが開発した、複数の専門AIエージェントを協調させて数万件のプルリクエストを効率的にレビューする大規模なオーケストレーションシステムの全貌。",
+    "summaryBody": "Cloudflareは、エンジニアリングチームのボトルネックを解消するため、オープンソースのコーディングエージェント『OpenCode』をベースにした高度なAIコードレビューシステムを構築しました。このシステムは、単一の巨大なプロンプトに頼るのではなく、セキュリティ、パフォーマンス、コード品質、ドキュメントなど各分野に特化した最大7つの専門エージェントを、一人のコーディネーターが統括するアーキテクチャを採用しています。変更の規模に応じた「リスクティアリング」により、些細な修正には軽量モデル、重要な変更にはClaude Opus等の強力なモデルを使い分けることでコストを最適化。また、JSONLによるストリーミング処理やCloudflare Workersを活用した動的なモデル切り替え（サーキットブレーカー）を実装し、高い可用性と回復性を実現しています。導入1ヶ月で約4.8万件のMRを処理し、平均コスト約1.19ドル、キャッシュヒット率85.7%という極めて高い実用性を示しています。",
+    "topics": [
+      "AIコードレビュー",
+      "OpenCode",
+      "Cloudflare Workers",
+      "LLMオーケストレーション",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": "Orchestrating AI Code Review at scale"
+  }
+}

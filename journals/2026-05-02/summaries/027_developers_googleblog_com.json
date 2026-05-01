@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T16:36:24.300314+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロダクション品質のAIエージェント構築：モノリスから脱却するための5つの教訓",
+    "url": "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleが脆弱な営業調査AIエージェントをGoogle Agent Development Kit (ADK)を用いて堅牢なプロダクション仕様へとリファクタリングした際の実践的な教訓を紹介しています。",
+    "summaryBody": "Googleの「AI Agent Clinic」プロジェクトによる、営業調査エージェント「Titanium」の刷新プロセスを解説した記事です。プロトタイプ特有の脆弱性を克服するための5つの柱が示されています。1. モノリスな単一スクリプトを、ADKを用いたオーケストレーション済みのサブエージェント群へ分割し、責務を分離すること。2. プロンプトにJSON形式を記述するのではなく、Pydanticオブジェクトを直接注入して構造化出力を強制し、パースエラーを防ぐこと。3. ハードコードされた情報を、Playwrightによるクロールとベクトル検索を組み合わせた動的なRAGパイプラインへ置き換えること。4. OpenTelemetryを活用してエージェントの実行過程を可視化し、デバッグ可能な状態にすること。5. リトライ処理やタイムアウトをフレームワーク側で管理し、トークン消費の暴走を抑制すること。これらの手法により、サイレントな失敗を防ぎ、スケーラブルなエージェント運用が可能になります。",
+    "topics": [
+      "AIエージェント",
+      "Google Cloud",
+      "Agent Development Kit (ADK)",
+      "Pydantic",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "Production-Ready AI Agents: 5 Lessons from Refactoring a Monolith"
+  }
+}

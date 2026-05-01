@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:13:43.592953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OWASP Top 10 for LLM Applications 2025: 開発者が知っておくべきAIセキュリティの要点",
+    "url": "https://workos.com/blog/the-owasp-top-10-for-llm-applications-what-developers-shipping-ai-features-need-to-know",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2025年版OWASP Top 10 for LLMに基づき、プロンプト注入や過剰なエージェンシー、RAG特有の脆弱性など、AI機能を安全に構築するための10のリスクと具体的な防衛策を解説しています。",
+    "summaryBody": "この記事では、2024年11月に更新された「OWASP Top 10 for LLM Applications 2025」をベースに、AIアプリケーション特有のセキュリティ境界の崩壊と、その対策について詳しく解説しています。従来のWebセキュリティが決定論的なコードを前提としていたのに対し、LLMは確率的な動作をするため、入力（プロンプト）と指示が同じチャネルで流れることによる「プロンプト注入」や、RAG（検索拡張生成）における「ベクトルストアの脆弱性」といった新しいリスクが生じています。\n\n主なトピックとして、間接的なプロンプト注入の脅威、システムプロンプトの漏洩、そして2025年版で新設された「ベクトルと埋め込みの弱点」などが挙げられています。特に、LLMに過剰な権限（エージェンシー）を与えることの危険性を指摘し、認可（Authorization）のロジックをプロンプト内の指示に頼るのではなく、確定的なコードや外部の権限管理ツール（RBAC/FGAなど）で実装すべきであると強調しています。最終的には、LLMを「信頼できないコンポーネント」として扱い、入出力の検証、最小権限の原則、および詳細な監査ログの記録を徹底することを推奨しています。",
+    "topics": [
+      "OWASP Top 10",
+      "LLM Security",
+      "RAG Security",
+      "Prompt Injection",
+      "AI Application Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "The OWASP Top 10 for LLM applications: What developers shipping AI features need to know"
+  }
+}

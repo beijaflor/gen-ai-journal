@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T15:02:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
+  },
+  "content": {
+    "title": "OpenAI、GPT-5.5を発表 — Terminal-Bench 2.0で82.7%、エージェントコーディングと長期タスクで実用的飛躍、API版も4月24日提供開始",
+    "originalTitle": "Introducing GPT-5.5",
+    "url": "https://openai.com/index/introducing-gpt-5-5/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは2026年4月23日にGPT-5.5（およびGPT-5.5 Pro）を発表、Terminal-Bench 2.0で82.7%、GDPvalで84.9%、OSWorld-Verifiedで78.7%とエージェントコーディング・コンピュータ操作・科学研究で大幅な性能向上を達成し、GPT-5.4と同等のトークン単価レイテンシを維持しつつ同タスクをより少ないトークンで完遂する「効率的な知能」を打ち出した。",
+    "summaryBody": "OpenAIが **GPT-5.5** および **GPT-5.5 Pro** を発表しました（2026年4月23日、API版は翌24日提供開始）。「最も賢く、最も直感的に使えるモデル」と位置付け、エージェントコーディング・知識労働・科学研究という3領域での実用的飛躍を訴求しています。\n\n### 主要ベンチマーク（OpenAI公表）\n\n| ベンチマーク | GPT-5.5 | GPT-5.4 | Claude Opus 4.7 | Gemini 3.1 Pro |\n|---|---|---|---|---|\n| Terminal-Bench 2.0 | **82.7%** | 75.1% | 69.4% | 68.5% |\n| Expert-SWE (社内) | **73.1%** | 68.5% | – | – |\n| GDPval | **84.9%** | 83.0% | 80.3% | 67.3% |\n| OSWorld-Verified | **78.7%** | 75.0% | 78.0% | – |\n| Toolathlon | **55.6%** | 54.6% | – | 48.8% |\n| BrowseComp | 84.4% | 82.7% | 79.3% | 85.9% |\n| FrontierMath Tier 1–3 | 51.7% | 47.6% | 43.8% | 36.9% |\n| FrontierMath Tier 4 | **35.4%** | 27.1% | 22.9% | 16.7% |\n| CyberGym | **81.8%** | 79.0% | 73.1% | – |\n\nさらにSWE-Bench Pro 58.6%、Tau2-bench Telecom 98.0%（プロンプトチューニングなし）、FinanceAgent 60.0%、社内投資銀行モデリング88.5%、OfficeQA Pro 54.1%。**全評価でGPT-5.4より少ないトークン使用**で同等以上の精度を達成。Artificial AnalysisのCoding Indexでは「競合フロンティアコーディングモデルの半額でSOTA」と主張。\n\n### 性能の質的変化\n\n社内・社外テスターからの定性的フィードバックが象徴的。Every社CEO Dan Shipper氏は「私が使った中で初めて深い概念的明確性を持つコーディングモデル」と評価、Cursor共同創業者Michael Truell氏は「GPT-5.4より顕著に賢く、長時間のタスクで早期停止せず継続する」、NVIDIAのエンジニアは「GPT-5.5へのアクセスを失うのは手足を切断されたような感覚」と述べました。\n\n### 知識労働における実例\n\nOpenAI社内では**85%以上の社員がCodexを毎週利用**。事例：\n\n- **コミュニケーション部門**：6ヶ月分の登壇依頼データを分析、自動Slackエージェントを構築・検証し低リスク案件の自動処理を実現。\n- **財務部門**：24,771件のK-1税務フォーム（71,637ページ）をレビュー、前年比で2週間の短縮。\n- **GTM部門**：週次レポート生成を自動化し週5-10時間を節約。\n\n### 科学研究での貢献\n\n社内版GPT-5.5がカスタムハーネスと組み合わせて、**組合せ論の中心対象であるラムゼー数のオフ対角漸近事実について新しい証明**を発見し、Leanで形式検証されています。GeneBench（多段階の科学データ分析）、BixBench（バイオインフォマティクス）でリード。免疫学研究者Derya Unutmaz氏は62サンプル・約28,000遺伝子の分析を「チームで数ヶ月かかる仕事」を実現したと評価。\n\n### 配信状況\n\n- **GPT-5.5**：ChatGPTのPlus / Pro / Business / Enterprise + Codex で展開中\n- **GPT-5.5 Pro**：ChatGPTのPro / Business / Enterprise\n- **API**：4月24日アップデートで提供開始（システムカードに追加セーフガードを追記）\n- 顧客採用：NVIDIA、Cisco、Abridge、Databricks、Harvey、Box、Lowe's、Glean、Palo Alto Networks、Ramp、Perplexity 等\n\n### 安全性\n\nOpenAI史上最強のセーフガードを謳い、内部・外部レッドチーム、サイバーセキュリティ・生物学領域のターゲット試験、約200の信頼パートナーからの実利用フィードバックを反映。",
+    "topics": [
+      "GPT-5.5",
+      "エージェントコーディング",
+      "Terminal-Bench",
+      "GDPval",
+      "Codex"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 94
+    }
+  }
+}

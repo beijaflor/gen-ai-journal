@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:29:34.845838+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトの再現性をAI に自動チューニングさせる方法 ~ 暗黙知を排除する",
+    "url": "https://zenn.dev/mizchi/articles/empirical-prompt-tuning",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "プロンプト作成時の主観バイアスや暗黙知を排除するため、別のAIサブエージェントに実行と不備のレポートを繰り返させる、TDD的な自動チューニング手法の提案。",
+    "summaryBody": "プロンプト作成者が無意識に持ち込む「暗黙知」が原因で、別のセッションではプロンプトが機能しなくなる再現性の問題を解決する手法が紹介されています。著者のmizchi氏は、プロンプトを「書いた直後の自分」は最悪の読者であり、前提を勝手に補完してしまうと指摘します。このバイアスを排除するため、Claude CodeのTask toolなどを利用し、独立したAIサブエージェントにプロンプトを実行させ、「不明瞭な点」「勝手に裁量で補完した箇所」「再試行回数」を箇条書きでレポートさせます。\n\nこのワークフローはソフトウェア開発のTDD（テスト駆動開発）に似ており、実行AIのレポートを元にプロンプトを最小修正し、再び「白紙状態の新しいAI」で検証するループを繰り返します。収束の判定基準として、精度だけでなくtool_uses（ツール使用回数）や所要時間などの定量的指標を用いることで、プロンプトの構造的欠陥を浮き彫りにします。記事の後半では、この記事自体を同手法で評価・改善するプロセスも公開されており、実戦的なプロンプトエンジニアリングの指針を提供しています。",
+    "topics": [
+      "Prompt Engineering",
+      "Claude Code",
+      "LLM",
+      "TDD",
+      "Reproducibility"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": null
+  }
+}

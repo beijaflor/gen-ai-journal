@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:33:00.680245+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 5090によるQwen3.6-35B-A3Bの動作検証：VRAM管理の重要性とQwen3.5との性能比較",
+    "url": "https://zenn.dev/toki_mwc/articles/rtx5090-qwen36-35b-a3b-llmacpp-bench",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5090環境下でQwen3.6-35B-A3Bの推論速度を検証し、VRAM溢れによる速度低下の特定や前世代モデルとの性能・品質差を詳細に比較した記事。",
+    "summaryBody": "本記事は、RTX 5090とllama.cppを用いて最新モデルQwen3.6-35B-A3Bの推論性能を検証した記録です。当初発生した18 t/sという極端な速度低下が、OllamaのVRAM占有によるCPUフォールバックであったことを特定し、クリーンな環境では180 t/s（UD-Q5_K_S）まで向上することを実証しています。また、llama.cppのビルド更新による最適化効果や、Unsloth Dynamic（UD）量子化におけるQ4とQ5の速度差のなさ、前世代Qwen3.5と比較して速度は約15%低下するもののキャラクター表現力等の品質が向上している点など、実運用に直結する知見がまとめられています。",
+    "topics": [
+      "RTX 5090",
+      "Qwen3.6",
+      "llama.cpp",
+      "LLMベンチマーク",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": null
+  }
+}

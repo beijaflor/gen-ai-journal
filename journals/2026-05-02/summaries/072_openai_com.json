@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-29T14:55:00+00:00",
+    "generatedBy": "claude-opus-4-7-via-playwright"
+  },
+  "content": {
+    "title": "OpenAI、ChatGPT Business/Enterprise向け「Workspace Agents」をリサーチプレビュー公開 — 共有可能・スケジュール実行・承認ゲート付きの社内エージェント基盤",
+    "originalTitle": "Workspace agents for business | OpenAI",
+    "url": "https://openai.com/business/workspace-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIはChatGPT Business / Enterprise / Edu / Teachers向けに、Slack・Google Drive・Microsoftアプリ等を横断するワークフローを担うエージェントを社内共有・スケジュール実行・承認ゲート付きで構築できる「Workspace Agents」をリサーチプレビューとして公開した。",
+    "summaryBody": "OpenAIがChatGPT内でビジネス向けに**Workspace Agents**を発表しました（リサーチプレビュー）。対象はChatGPT Business、Enterprise、Edu、Teachersの各プランで、ChatGPTの会話インターフェース上で「ワークフロー全体を担うエージェント」を構築・共有・運用できる仕組みです。\n\n### 機能の柱\n\n- **一度作って組織全体に共有**：作成したエージェントをワークスペース全体で共有し、チーム横断で同じワークフロー・ベストプラクティスを再利用可能にする。\n- **スケジュール実行**：リードレビュー、サポート要求の要約、レポート生成といった定期タスクを無人で回す。\n- **ツール横断のアクション**：Slack、Google Drive、Microsoft系アプリ等を介して情報収集・チケット更新・ドキュメント編集・メッセージ送信などを段階指示なしで実行。\n- **作成のしやすさ**：自然言語でジョブを定義し、コンテキストと承認済みアプリを接続、ガードレールとガバナンスを設定するだけで誰でも数分で作成可能。\n\n### ガバナンスとセキュリティ\n\n企業向けに重視されている統制機能として：\n\n- **ロールベースアクセス制御（RBAC）**：誰がエージェントを作成・利用できるか、どのツール・アプリ・アクションを使えるかを管理者が制御。\n- **監査ログとモニタリング**：エージェントの活動を追跡し、ワークフローの実行内容をレビュー可能。\n- **機微なアクションへの承認ゲート**：メッセージ送信や記録更新などのアクションに人間承認を必須化できる。\n- **集中管理コンソール**：エージェント、権限、統合を一元的に管理。\n\n### ユースケース例（公式提示）\n\nVendor risk analysis（ベンダーリスク評価）、Sales development、IT support、Metrics reporter、Product analyst — セールス、IT、ファイナンス、プロダクトオペレーションなど多岐の部門での適用が想定されています。\n\n### ポジショニング\n\nMicrosoft Copilot StudioやAnthropic ClaudeのAgent SkillsといったエンタープライズAIエージェント基盤に対する、OpenAI側の本格的な対抗手として位置付けられます。「Build once. Scale across your team」という訴求は、属人化解消と社内専門知のスケール化（一人が組み上げたものを全社員が活用）に焦点を当てています。なお本ページはマーケティング色が強く、レート制限・価格・SLA・実装上の制約等の技術詳細は記載されていないため、評価には実機検証が必要です。",
+    "topics": [
+      "Workspace Agents",
+      "ChatGPT Business",
+      "エンタープライズAI",
+      "エージェントガバナンス",
+      "RBAC"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 60,
+      "annexPotential": 80,
+      "overall": 70
+    }
+  }
+}

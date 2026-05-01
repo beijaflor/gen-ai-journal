@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-04-27T17:02:11.980568+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のスキルを「中央集権しない」で配る、chezmoi dotfiles スターターキット",
+    "url": "https://qiita.com/kamo-shika/items/6c4e74972eeb0d1a6fb2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのスキル管理を「中央集権」せず、chezmoiとdotfilesを用いて個人の裁量とチーム共有を両立させる実践的な手法の紹介。",
+    "summaryBody": "AIコーディングエージェント「Claude Code」におけるスキルの運用管理において、中央集権的なリポジトリに依存せず、個人のdotfilesを活用した分散型の配布方法を提案する記事です。著者はchezmoiを用いたスターターキット（chezmoi-dotfiles-starter）を公開し、スキルを以下の3つに分類して管理することを提唱しています。 \n\n1. **自作スキル**: chezmoiで自身のdotfilesとして管理し、必要に応じて他者に公開。 \n2. **他人のスキル**: `skills CLI` を利用し、自作環境と混ざらないよう独立させて管理。 \n3. **案件スキル**: 特定プロジェクト固有のものは、プロジェクトリポジトリの `.claude/skills/` に直接配置。 \n\n最大の特徴は、これらの運用ルール自体を「スキル（skill-management）」として定義し、AI自身に正しい管理ツール（chezmoiかCLIか）を選択させることで、利用者の学習コストをゼロにしている点にあります。GitHub Enterpriseでの実用的なチップスも含まれています。",
+    "topics": [
+      "Claude Code",
+      "dotfiles",
+      "chezmoi",
+      "AIエージェント",
+      "スキル管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": null
+  }
+}
