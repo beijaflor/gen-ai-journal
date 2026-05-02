@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:59:55.649366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gitコミットメッセージに'HERMES.md'が含まれると、Claude Codeの課金がプラン枠ではなく追加使用分にルーティングされるバグ",
+    "url": "https://github.com/anthropics/claude-code/issues/53262",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Gitのコミット履歴に「HERMES.md」という特定の文字列が含まれているだけで、Claude Codeの利用料がサブスクリプション枠ではなく追加の有料クレジットから差し引かれるという奇妙なバグが報告されました。",
+    "summaryBody": "Claude Code（AnthropicのCLIツール）において、Gitの最近のコミット履歴に「HERMES.md」という大文字小文字を区別する特定の文字列が含まれている場合、APIリクエストのルーティングが誤って「追加使用（Extra Usage）」の請求に回されるバグが判明しました。これにより、サブスクリプション（Maxプランなど）の利用枠が残っているにもかかわらず、ユーザーが意図せずに追加クレジットを消費（例：200ドル分）してしまう被害が発生しました。\n\n**主な技術的詳細:**\n- **原因:** Claude Codeがシステムプロンプトに最近のコミットメッセージを含める際、サーバー側で特定の文字列「HERMES.md」を検知してルーティングを変更している可能性が高い。\n- **再現条件:** ファイルの実体ではなく「コミットメッセージ内の文字列」がトリガー。大文字の「HERMES.md」でのみ発生し、「hermes.md」（小文字）や「HERMES.txt」では発生しない。\n- **対応:** Anthropicはこの問題を認め、影響を受けたユーザーへの返金と200ドル分のクレジット付与を実施しました。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Git",
+      "Billing Bug",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "HERMES.md in git commit messages causes requests to route to extra usage billing instead of plan quota #53262"
+  }
+}

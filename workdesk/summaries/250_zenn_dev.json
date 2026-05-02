@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:01:04.203455+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自作MCPサーバーのトークン消費を9割削減するTips ── MCPの退避パターン",
+    "url": "https://zenn.dev/aircloset/articles/4c5f49f89db19f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自作MCPサーバーにおいて、巨大なデータを直接やり取りせずURLやKeyに置き換えて外部ストレージへ退避させることで、トークン消費量を最大9割削減する手法を解説。",
+    "summaryBody": "AIエージェントの拡張規格であるMCP（Model Context Protocol）において、大きなファイルや膨大なDBクエリ結果をそのままコンテキストに含めると、トークン消費の急増やレスポンス上限エラーが発生します。エアークローゼット社では、この課題に対し「データの退避パターン」を導入しました。具体的には、リクエスト時にソースコードを直接送る代わりに自前GitサーバーのURLを渡しAIにpushさせる手法や、レスポンス時に数千行のデータを直接返さずGoogleスプレッドシートへ自動出力してURLを返す仕組みを紹介しています。これにより、同社の全ツール合算でトークン使用量を70〜90%削減することに成功しました。さらに、Google Workspace OAuthを活用することで、ユーザー個別の権限で安全かつシームレスに外部ストレージへデータを退避できる設計上の利点についても詳述されています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "トークン最適化",
+      "LLM",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

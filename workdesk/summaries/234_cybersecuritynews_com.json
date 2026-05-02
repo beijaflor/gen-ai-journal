@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:04:39.896621+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CVE MCP Server：27のツールと21のAPIを統合し、Claudeを強力なセキュリティアナリストに変えるMCPサーバー",
+    "url": "https://cybersecuritynews.com/cve-mcp-server-and-claude/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのModel Context Protocol（MCP）を利用し、21の外部APIと27のツールをClaudeに統合して脆弱性調査の自動化・効率化を実現するオープンソースツールが登場しました。",
+    "summaryBody": "「CVE MCP Server」は、脆弱性（CVE）のトリアージに伴う手作業の負担を劇的に軽減するオープンソースプロジェクトです。Anthropicが提唱するModel Context Protocol（MCP）を採用しており、Claudeから直接21の外部APIと27のセキュリティツールにアクセスすることを可能にします。\n\n主な機能と特徴：\n- **包括的なツール統合**: NVD、EPSS、CISA KEV、GitHub（PoC確認）、VirusTotal、Shodanなど、脆弱性情報から脅威インテリジェンスまで幅広くカバーしています。\n- **高度なリスクスコアリング**: CVSSのみに依存せず、EPSS（35%）、CISA KEV（30%）、CVSS（20%）、PoCの有無（15%）を組み合わせた独自の加重スコアリングを提供します。\n- **即時導入が可能**: 8つのツールはAPIキー不要で動作し、セットアップ後すぐにクエリを開始できます。Claude DesktopやClaude Codeとの親和性も高く、開発環境や調査端末に統合しやすい設計です。\n- **サプライチェーン保護**: `requirements.txt`の分析やOSV.dev、GitHub Security Advisoriesとの照合により、依存関係の脆弱性スキャンも自然言語で行えます。",
+    "topics": [
+      "MCP",
+      "Claude",
+      "CVE",
+      "Vulnerability Management",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "CVE MCP Server Turns Claude Into a Fully Capable Security Analyst With 27 Tools Across 21 APIs"
+  }
+}

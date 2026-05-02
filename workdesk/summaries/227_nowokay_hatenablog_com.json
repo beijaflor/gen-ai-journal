@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:06:19.964891+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.6とGemma 4を比較。コーディング以外の用途だとGemma 4か",
+    "url": "https://nowokay.hatenablog.com/entry/2026/04/28/034311",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.6とGemma 4の各モデルを日本語能力、OCR、知識精度、メモリ効率の観点で比較し、コーディング以外ではGemma 4が優勢であると結論づけています。",
+    "summaryBody": "本記事では、同時期にリリースされたQwen3.6（35B-A3B/27B）とGemma 4（26B-A4B/31B）を、コーディング以外の一般的な用途で多角的に検証しています。比較項目はメモリ消費、知識のカットオフ、ローカル知識、日本語表現、要約、OCR、推論能力など多岐にわたります。\n\n主な知見として、Qwen3.6は線形アテンションの採用により、長いコンテキストにおけるメモリ効率で優位に立っています。一方で、Gemma 4は知識のカットオフが2025年1月と新しく、日本語のニュアンス表現（役割演技）や要約の確実性において高い安定性を見せました。特にOCRを用いた決算書の読み取りでは、Gemma 4 31Bが内容から企業名（任天堂）を特定するなど、優れた洞察力を示しています。\n\n筆者は、コーディングを除いた汎用的な利用においてはGemma 4を高く評価する一方、Gemma 4はコンテキスト長に応じてメモリ消費が急増する特性があるため、利用環境に応じた選択が重要であると述べています。",
+    "topics": [
+      "LLM比較",
+      "Qwen3.6",
+      "Gemma 4",
+      "ローカルLLM",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

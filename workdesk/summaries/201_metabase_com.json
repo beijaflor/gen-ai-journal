@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:12:59.669071+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10個のカスタムサブエージェントで50万行のClojureコードベースを管理する方法",
+    "url": "https://www.metabase.com/blog/ten-custom-subagents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Metabaseが50万行のClojureコードベースを効率的に扱うため、Claude Codeを活用して10種類の専門特化型AIサブエージェントを構築した実践的なアプローチを公開している。",
+    "summaryBody": "Metabaseの開発チームは、大規模なコードベースにおけるAIのコンテキストウィンドウ枯渇とドメイン知識の再取得コストを解決するため、Claude Codeの「サブエージェント」機能を導入しました。具体的には、クエリプロセッサ(MBQL)、権限管理、プラットフォーム、通知、ドライバーなど、コードの論理的な境界に合わせて10個の専門エージェントを定義しました。各エージェントは、固有のシステムプロンプト、メモリー、コードの場所、特有の落とし穴、テスト戦略を含んだMarkdownファイルとして構成されています。これにより、一般的なAIでは把握が困難な「68段階におよぶ複雑なミドルウェアパイプラインの挙動」などの特定ドメインに対し、専門家としての推論と調査が可能になりました。記事では、YAMLフロントマターを用いたエージェントの定義方法や、並列呼び出しによる効率化など、実戦的なヒントが紹介されています。",
+    "topics": [
+      "AI Agents",
+      "Claude Code",
+      "Clojure",
+      "Software Architecture",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    },
+    "originalTitle": "How we built ten custom subagents to tame a 500K-line Clojure codebase"
+  }
+}

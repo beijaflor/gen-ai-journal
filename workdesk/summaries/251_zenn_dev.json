@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:00:51.527546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DevOps Agent奮闘記 〜検証から見えた設計プラクティス〜",
+    "url": "https://zenn.dev/estie/articles/6c42162ce868b9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWS DevOps Agentの導入検証を通じ、SKILL.mdの活用による精度向上とマルチアカウント環境での集約設計パターンの重要性を解説した記事。",
+    "summaryBody": "AWS DevOps Agentの東京リージョンGAを受け、実運用に向けた検証結果をまとめたレポートです。初期状態ではタイムスタンプの解釈ミスなど課題があるものの、調査手順を定義する「SKILL.md」を「AIでAIを育てる」ループ（Agentに改善案を出させ別モデルで評価する）で洗練させることで、コードのバグを特定できる精度まで向上可能であることを示しています。また、GitHub連携の制約を回避するために専用AWSアカウントへAgent Spaceを集約する構成や、スキル発動率を高めるためのDescriptionの書き方など、実践的な設計プラクティスが提示されています。",
+    "topics": [
+      "AWS DevOps Agent",
+      "SRE",
+      "SKILL.md",
+      "マルチアカウント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

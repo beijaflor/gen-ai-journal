@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:57:40.454413+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex のiOSアプリ開発のためのプロンプトまとめ",
+    "url": "https://note.com/npaka/n/n51962b239b68",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントCodexとXcodeBuildMCP等のツールを組み合わせ、iOSアプリのビルド、SwiftUIのリファクタリング、デバッグ、App Intent実装などを効率化する高度なプロンプト設計ガイド。",
+    "summaryBody": "この記事は、AIエージェント「Codex」を活用したiOSアプリ開発のワークフローを詳細にまとめたものです。主な内容は5つのセクションで構成されています。まず、CLI優先のビルドループ構築では、xcodebuildやTuist、XcodeBuildMCPを使用してXcode GUIに頼らない開発サイクルを実現する方法を紹介。次に、SwiftUIのリファクタリングでは、MVVMよりMVパターンを優先し、コードの保守性を高めるための具体的な制約付きプロンプトを提示しています。さらに、iOS 26（想定）のLiquid Glassデザインシステムへの移行、App Intentsによるシステム機能へのアクション公開、そしてシミュレータ上での自律的なバグ再現とデバッグのループ管理について解説。各工程において、エージェントに「検証可能な最小のループ」を実行させ、スクリーンショットやログを証拠として求めるといった、信頼性の高い開発を行うための実践的なテクニックが凝縮されています。",
+    "topics": [
+      "iOS",
+      "SwiftUI",
+      "Codex",
+      "プロンプトエンジニアリング",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

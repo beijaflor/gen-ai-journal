@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:09:24.807153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIグラビアをグラビアカメラマンが作るとどうなる？第65回：顔LoRA不要、写真4枚で激似にするWorkflowを紹介しよう（西川和久）",
+    "url": "https://www.techno-edge.net/article/2026/04/28/5030.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "顔LoRAの学習を介さず、1枚の元画像から生成した4枚の角度別写真を用いることで、ComfyUI上で高精度な顔入れ替えを実現する革新的な手法を紹介。",
+    "summaryBody": "西川和久氏による連載第65回では、従来の手間がかかる「顔LoRA」作成を回避しつつ、特定の人物の顔を極めて高い精度で再現するComfyUIワークフローが解説されています。手法の核心は、1枚の参照画像から「Flux.2 [Klein] 9B Distilled」などの編集モデルを用いて、左右や斜め後ろといった異なる角度の顔画像3枚を自動生成し、計4枚をリファレンスとして利用することです。この方法により、LoRA学習に必要なVRAM環境や大量の学習用データがなくても、遮蔽物（マイク等）がある複雑な構図でも自然に馴染む顔入れ替えが可能になります。記事では具体的なプロンプト例や、既存の連載作例をベースにしたリメイク結果も公開されており、実用性と再現性の高さが強調されています。",
+    "topics": [
+      "ComfyUI",
+      "Flux.2",
+      "生成AIグラビア",
+      "画像生成AI",
+      "顔入れ替え"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

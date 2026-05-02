@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:07:30.651538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜLLMは日本文化に執着するのか？大規模言語モデルに潜む文化的・地域的バイアスの分析",
+    "url": "https://arxiv.org/abs/2604.21751",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）が日本文化に対して顕著な偏好を示す傾向があることを、新たなデータセットを用いた調査で明らかにし、そのバイアスが事後学習（SFT）段階で発生することを特定しました。",
+    "summaryBody": "本研究は、LLMの文化的網羅性と地域的バイアスを評価するため、新たに「Culture-Related Open Questions (CROQ)」データセットを提案しました。従来の「西洋・英語圏中心主義」という指摘とは対照的に、分析の結果、多くのモデルが日本などの特定の国や文化に対して明確な偏好（バイアス）を示すことが判明しました。この現象を分析した結果、バイアスの兆候は事前学習（Pre-training）段階ではなく、その後の教師あり微調整（SFT）プロセスにおいて顕著に現れることが示唆されています。また、英語などの高リソース言語での入力は、出力の多様性を高めるものの、特定の地域への傾倒を完全には解消できないことも確認されました。本成果は、LLMの公平性や文化的な適応性を評価・改善する上で重要な知見を提供します。",
+    "topics": [
+      "LLM",
+      "文化バイアス",
+      "日本文化",
+      "SFT",
+      "評価データセット"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Why are all LLMs Obsessed with Japanese Culture? On the Hidden Cultural and Regional Biases of LLMs"
+  }
+}

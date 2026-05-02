@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:01:30.471075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の CLAUDE.md / Skills / Agents を3層で整備する設計パターン",
+    "url": "https://qiita.com/ennagara128/items/c25e72eb240611454457",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの運用における設定ファイルの肥大化を防ぐため、規約・手順・タスクをCLAUDE.md、Skills、Agentsの3層に分離して管理する設計パターンを解説した記事。",
+    "summaryBody": "Claude Codeの実務利用で発生しがちな「CLAUDE.mdの肥大化」と「責務の重複」を解決するための3層設計モデルを提案しています。1. 基盤層 (CLAUDE.md) はプロジェクト全体で常に守るべき最小限の規約（200行以下）に絞り、2. 手順層 (Skills) は特定のトリガーで呼び出す具体的な実行手順、3. タスク層 (Agents) は並列実行可能な独立した機能（レビューやドキュメント生成など）として定義します。この分離により、AIの文脈理解を助けつつ、メンテナンス性を劇的に向上させる手法と判定フローを紹介しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "開発プロセス",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

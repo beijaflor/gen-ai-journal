@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:56:30.406501+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Embedding 2 の活用：エージェント型マルチモーダルRAGとその先へ",
+    "url": "https://developers.googleblog.com/building-with-gemini-embedding-2/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemini Embedding 2の一般提供開始に伴い、テキストや画像、動画、音声を同一空間で扱うマルチモーダルRAGやタスク特化型プレフィックスによる検索精度の向上手法を解説しています。",
+    "summaryBody": "Googleは、テキスト、画像、動画（最大120秒）、音声（最大180秒）、PDFを単一の埋め込み空間にマッピングできる「Gemini Embedding 2」の一般提供（GA）を開始しました。本モデルの最大の特徴は、複数のモダリティを跨いだ情報の意味的理解が可能になる点です。\n\n主な技術的ポイントは以下の通りです：\n- **タスク・プレフィックスの導入**: 検索、質問回答、分類など、エージェントの目的に応じたプレフィックス（例: `task: code retrieval`）を付与することで、非対称検索の精度を大幅に向上させます。\n- **Matryoshka Representation Learning (MRL)**: 3072次元のベクトルを768次元などに切り詰めても高い精度を維持でき、ストレージコストと計算効率を最適化します。\n- **多様なユースケース**: 既にHarvey（法的調査）やNuuly（衣類検索）などの企業が導入しており、検索の再現率（Recall）や一致率が劇的に改善した事例が紹介されています。\n\n開発者はGemini APIやAgent Platformを通じて、これらの高度なマルチモーダル検索やリランキング、クラスタリング機能をアプリケーションに組み込むことが可能です。",
+    "topics": [
+      "Gemini API",
+      "Multimodal Embeddings",
+      "RAG",
+      "AI Agents",
+      "Vector Search"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 90
+    },
+    "originalTitle": "Building with Gemini Embedding 2: Agentic multimodal RAG and beyond"
+  }
+}

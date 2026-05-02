@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:15:55.617284+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコードレビューがバグを半分しか見つけられない理由：構造分析の限界と「意図」の重要性",
+    "url": "https://www.oreilly.com/radar/ai-code-review-only-catches-half-of-your-bugs/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるコードレビューは構文や構造の正しさを検証できても、開発者の意図や要件に起因する設計上の欠陥を見逃す傾向があり、真の品質向上には要件ベースの検証が不可欠である。",
+    "summaryBody": "ソフトウェア工学の専門家であるAndrew Stellman氏によれば、AIによるコードレビューには「意図の天井（Intent Ceiling）」が存在します。AIはコードが構造的に正しいか、一般的なアンチパターンに合致しているかを判断するのは得意ですが、そのコードが「本来何をすべきか」という要件を知らなければ、設計上の重大な欠陥を見逃してしまいます。NISTの調査でも、セキュリティ脆弱性の約半分は実装ミスではなく設計上の欠陥であり、これらは静的解析では検出できません。著者は、AIに実装の「方法（Spec）」だけでなく「理由（Requirement）」を与えることの重要性を説き、自身が開発した『Quality Playbook』を用いてGoogleのGsonライブラリに潜んでいた長年のバグを発見・修正した事例を紹介しています。AIを活用した開発において、チャット履歴や設計ドキュメントから「負の要件（何をしてはいけないか）」を含む意図を抽出し、それを検証プロセスに組み込むことが、信頼性の高いシステム構築の鍵となります。",
+    "topics": [
+      "AI Code Review",
+      "Software Quality Engineering",
+      "Requirements Engineering",
+      "Software Security",
+      "Agentic Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "AI Code Review Only Catches Half of Your Bugs"
+  }
+}

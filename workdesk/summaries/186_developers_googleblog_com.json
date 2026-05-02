@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:16:28.560913+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの高速化：GCSFSとRapid Bucketを介してGoogle ColossusをPyTorchに導入",
+    "url": "https://developers.googleblog.com/speeding-up-ai-bringing-google-colossus-to-pytorch-via-gcsfs-and-rapid-bucket/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudはColossusストレージをgcsfs経由でPyTorchに統合し、gRPCベースの高速アクセスによりAIトレーニングのI/Oボトルネックを解消、最大23%の高速化を実現しました。",
+    "summaryBody": "Google Cloudは、AI/MLワークロードのパフォーマンスを大幅に向上させるため、Googleの強力なストレージアーキテクチャ「Colossus」をベースとした「Rapid Storage (Rapid Bucket)」をPyTorchエコシステムへ統合したことを発表しました。従来のREST APIに代わり、双方向gRPCストリーミングとダイレクトパス接続を採用することで、15 TiB/s以上の総スループットと1ms未満の低レイテンシを実現しています。この統合はPythonの標準的なファイルインターフェースである`fsspec`（gcsfs）を通じて提供されるため、開発者は既存のコードを書き換えることなく、バケットをRapid Bucketに変更するだけで、読み取り速度4.8倍、書き込み速度2.8倍の恩恵を受けることができます。実際のベンチマークでは、PyTorch Lightningを用いた134M行のデータセットのトレーニングにおいて、全体の実行時間が23%短縮されることが確認されています。",
+    "topics": [
+      "Google Cloud",
+      "PyTorch",
+      "GCS",
+      "Deep Learning",
+      "Storage Performance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "Speeding Up AI: Bringing Google Colossus to PyTorch via GCSFS and Rapid Bucket"
+  }
+}

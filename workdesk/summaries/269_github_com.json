@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:56:42.520847+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MozillaによるPrompt APIへの否定的見解（standards-positions）",
+    "url": "https://github.com/mozilla/standards-positions/issues/1213",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Mozillaは、ブラウザでローカルLLMを操作するためのPrompt APIに対し、現時点では「否定的な見解（negative）」を表明しました。",
+    "summaryBody": "Mozillaの標準化ポジションリポジトリにおいて、Google（Blink）が提案する「Prompt API」に対する評価が公開されました。このAPIは、Webアプリケーションがユーザーのデバイス上でローカルに実行されている大規模言語モデル（LLM）にアクセスし、テキスト生成などのタスクを実行可能にするものです。Mozillaはこの提案に対し、ラベルとして「position: negative」を付与しました。これは、プライバシー保護、フィンガープリントへの懸念、あるいはモデルの差異による相互運用性の欠如など、Web標準としての導入に向けた課題を重視した判断であると考えられます。Blink側は既に実装の意向（Intent to Prototype）を示していますが、主要ブラウザベンダー間での合意形成には至っていない状況が浮き彫りになっています。",
+    "topics": [
+      "Prompt API",
+      "Mozilla",
+      "Web standards",
+      "Browser LLM",
+      "Privacy"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 25,
+      "overall": 78
+    },
+    "originalTitle": "Prompt API · Issue #1213 · mozilla/standards-positions"
+  }
+}
