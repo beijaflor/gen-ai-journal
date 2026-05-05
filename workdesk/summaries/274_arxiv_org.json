@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-05T03:06:38.094940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Design Conductor: 自律型エージェントによる1.5 GHz Linux対応RISC-V CPUの自動設計",
+    "url": "https://arxiv.org/abs/2603.08716",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新のAIモデルを活用した自律型エージェント「Design Conductor」が、わずか12時間で仕様書から1.48 GHz駆動のRISC-V CPUを完全自動で設計・生成することに成功しました。",
+    "summaryBody": "本論文では、半導体設計をコンセプト段階から最終的なレイアウトデータ（GDSII）までエンドツーエンドで完結させる自律型エージェント「Design Conductor (DC)」が紹介されています。DCは、わずか219語の要件定義書から、1.48 GHzで動作しLinux実行が可能なRISC-Vプロセッサ「VerCore」をわずか12時間で自律的に構築しました。VerCoreはCoreMarkスコア3261を達成しており、これは2011年頃のIntel Celeronプロセッサに匹敵する性能です。DCは、RTLの実装、テストベンチによる検証、フロントエンドのデバッグ、タイミング収束のための最適化、そしてバックエンドツールとの連携といった複雑な設計フローを人間を介さず実行しました。これは、自律型エージェントが仕様から実用レベルのCPUを完全に構築した初の事例であり、将来のチップ設計プロセスにおけるAIの圧倒的な可能性を実証しています。",
+    "topics": [
+      "RISC-V",
+      "AIエージェント",
+      "半導体設計オートメーション",
+      "LLM",
+      "EDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Design Conductor: An agent autonomously builds a 1.5 GHz Linux-capable RISC-V CPU"
+  }
+}

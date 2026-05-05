@@ -2,6 +2,7 @@
 
 ## Main List
 
+- [x] 274. https://arxiv.org/abs/2603.08716
 - [x] 273. https://pub.sakana.ai/kame/
 - [x] 272. https://cursor.com/ja/blog/continually-improving-agent-harness
 - [x] 271. https://zenn.dev/exwzd/articles/20260501_copilot_agent_skill_recommender
