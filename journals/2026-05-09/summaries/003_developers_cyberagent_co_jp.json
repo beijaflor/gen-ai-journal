@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:53:48.839286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの長時間実行で重要なDurable Executionの仕組みとAWS LambdaでのGo SDK実装",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/63635/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの長時間実行を支える「Durable Execution」の仕組みを解説し、AWS LambdaでのGo SDK自作を通じた実装の詳細を紹介している。",
+    "summaryBody": "AIエージェントはモデル推論、外部ツール呼び出し、人間の承認待ちなど、待機時間が長く不確実な処理を繰り返す特性があります。これらを効率的に管理し、実行環境を占有せずに「続きから再開」可能にするのがDurable Executionの概念です。本記事では、AWS Lambdaが提供するチェックポイント/リプレイ型のDurable Executionモデルを詳細に解説しています。さらに、公式で提供されていないGo言語向けのSDKをJavaScript SDKの内部構造（Step IDのハッシュ化や子コンテキストの制御など）を参考に自作し、GitHubに公開した経緯と技術的な知見を共有しています。非決定的な実行によるエラー回避や、冪等性の担保など、信頼性の高いエージェント基盤を構築するための実践的な内容となっています。",
+    "topics": [
+      "AIエージェント",
+      "Durable Execution",
+      "AWS Lambda",
+      "Go言語",
+      "サーバーレス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

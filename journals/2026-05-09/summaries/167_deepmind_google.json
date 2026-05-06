@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:38:18.063214+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Decoupled DiLoCo: 大規模かつレジリエントな分散AI学習を実現する新手法",
+    "url": "https://deepmind.google/blog/decoupled-diloco/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google DeepMindは、低帯域な広域ネットワーク上で、ハードウェア障害の影響を最小限に抑えつつ、複数のデータセンターを跨いで大規模言語モデルを効率的に学習できる新技術「Decoupled DiLoCo」を発表しました。",
+    "summaryBody": "Google DeepMindが発表した「Decoupled DiLoCo（Distributed Low-Communication）」は、地理的に分散した計算資源を用いて大規模言語モデル（LLM）を学習させるための新しいアーキテクチャです。従来の大規模学習では全チップの厳密な同期が必要であり、一部の故障が全体の停止を招くことが課題でした。本手法では計算資源を「島（Learner Units）」として切り分け、島の間で非同期的にデータを流すことで、一部のハードウェア障害が全体に波及しない高いレジリエンスを実現しています。Chaos Engineeringを用いた試験では、ユニットの喪失後も学習が継続され、復旧時にシームレスに再統合されることが確認されました。また、2-5 Gbps程度の一般的なインターネット帯域でも、従来の同期手法より20倍高速に学習が進み、かつ性能を維持できることが実証されています。さらに、TPU v6eとv5pのような異なる世代のハードウェアを混在させて単一の学習ジョブを実行できる柔軟性も備えており、インフラ活用の効率を大幅に向上させます。",
+    "topics": [
+      "分散学習 (Distributed Training)",
+      "LLM",
+      "Google DeepMind",
+      "フォルトトレランス",
+      "TPU"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale — Google DeepMind"
+  }
+}

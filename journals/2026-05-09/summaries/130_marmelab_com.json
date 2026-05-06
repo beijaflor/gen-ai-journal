@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:46:48.447827+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 実践ガイド：開発効率を最大化するTipsとワークフロー",
+    "url": "https://marmelab.com/blog/2026/04/24/claude-code-tips-i-wish-id-had-from-day-one.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Marmelab社が数ヶ月の実践から得た、Claude Codeをシニア開発者のように使いこなすための具体的なワークフローとベストプラクティスの解説。",
+    "summaryBody": "Claude Codeを「熱心すぎるインターン」から「シニア開発者の相棒」へと進化させるための実践的な知見がまとめられています。主要なポイントは以下の通りです。\n\n- **ワークフローの最適化**: 複雑なタスクでは必ず「計画モード」で方針を合意し、実装は一度に全てを求めず1ステップずつ進めることが肝要です。ミスが発生した際はプロンプトで修正を繰り返すのではなく、`/rewind`や`/clear`を使ってクリーンなコンテキストからやり直す方が結果的に効率的です。\n- **知識の蓄積とドキュメント**: `CLAUDE.md`を活用してプロジェクトのコーディング規則やドメイン知識を200行以内で管理します。セッション終了時に「何を学んだか」を振り返らせ、その結果をMarkdownドキュメントやSkillファイルに反映することで、エージェントの「擬似的な記憶」を構築します。\n- **拡張ツールの活用**: GitHub CLI (`gh`) を連携させてPR作成やCI確認を自動化するほか、`Context7`プラグインを使用してライブラリの正確なドキュメントを参照させることでハルシネーションを防ぎます。\n- **避けるべき落とし穴**: ツールの過剰な導入や、`/batch`コマンドによる並列処理は、エラーの連鎖を招き制御不能になるリスクがあるため、人間のボトルネック（確認プロセス）を適切に維持することが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "AI Coding",
+      "LLM Agents",
+      "Developer Productivity",
+      "Marmelab"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Claude Code Tips I Wish I’d Had From Day One"
+  }
+}

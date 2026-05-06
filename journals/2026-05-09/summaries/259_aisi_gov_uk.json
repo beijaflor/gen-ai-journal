@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:59:14.321065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AISIによるOpenAI GPT-5.5のサイバー能力評価報告",
+    "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "英国AI安全研究所（AISI）の評価により、OpenAIのGPT-5.5が複雑なサイバー攻撃タスクにおいて人間の専門家を凌駕する速度と高い成功率を示すことが明らかになった。",
+    "summaryBody": "英国AI安全研究所（AISI）は、OpenAIの最新モデル「GPT-5.5」のサイバーセキュリティ能力に関する詳細な評価結果を公開しました。本報告の主なポイントは以下の通りです。\n\n- **驚異的な解析スピード**: 人間のエキスパートが約12時間を要する高度なリバースエンジニアリング課題（rust_vm）に対し、GPT-5.5はわずか10分22秒、コスト1.73ドルで解決に至りました。これにはカスタムVMの命令セット復元や制約解決（SMT solver）の利用が含まれます。\n- **自律的な攻撃能力**: 32ステップに及ぶ複雑な企業ネットワーク攻撃シミュレーション「The Last Ones」を完遂。これはAnthropicのClaude Mythos Previewに続く、史上2例目の達成となります。\n- **高い成功率**: エキスパートレベルのサイバータスクにおいて、GPT-5.4の52.4%を上回る71.4%の成功率を記録し、現時点で最も強力なサイバー能力を持つモデルと評価されました。\n- **安全性への懸念**: 専門家による6時間のレッドチーミングの結果、ガードレールを回避する「ユニバーサル・ジェイルブレイク」の存在が確認されており、悪用のリスクが依然として存在します。\n\nAISIは、AIの推論能力の向上がサイバー脅威を加速させていると指摘し、防御側もAIを活用した対策を急ぐべきだと提言しています。",
+    "topics": [
+      "GPT-5.5",
+      "AISI",
+      "サイバーセキュリティ",
+      "リバースエンジニアリング",
+      "AI安全性評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "Our evaluation of OpenAI's GPT-5.5 cyber capabilities | AISI Work"
+  }
+}

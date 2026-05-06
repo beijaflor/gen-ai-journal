@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:43:45.734940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.5 の API を Node.js で軽く試す（OpenAI Agents SDK TypeScript の Hello world の例を利用）",
+    "url": "https://qiita.com/youtoy/items/3098aa2c88975539476f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "リリースされたばかりの GPT-5.5 API を OpenAI Agents SDK を用いて Node.js 環境で動かす手順を、モデル指定方法や具体的なコード例と共に解説しています。",
+    "summaryBody": "この記事では、最新の GPT-5.5 API を Node.js で利用する方法を紹介しています。従来の API ライブラリではなく、新しく登場した「OpenAI Agents SDK TypeScript」を使用している点が特徴です。\n\n主な内容は以下の通りです：\n- **SDK のセットアップ**: `@openai/agents` パッケージのインストールと API キーの設定手順。\n- **モデルの指定**: デフォルト設定（gpt-4.1 等）から `gpt-5.5` へ明示的に切り替えるエージェントの定義方法。\n- **GPT-5.x 固有のパラメータ**: 推論時のリソース配分を指定する `reasoning.effort` や、出力の冗長性を制御する `verbosity` 設定への言及。\n- **動作確認**: シンプルな俳句作成プロンプトを実行し、OpenAI API の Usage ページで実際に `gpt-5_5-2026-04-23` が消費されていることを確認するまでの流れ。\n\nSDK を利用することで、エージェント単位での柔軟なモデル切り替えが可能になる様子が示されています。",
+    "topics": [
+      "GPT-5.5",
+      "Node.js",
+      "OpenAI Agents SDK",
+      "TypeScript",
+      "OpenAI API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

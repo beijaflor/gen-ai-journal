@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:02:02.640117+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "品質の言語化のススメー早期テストの原則をClaude Code Agent Skillsで実現する試み",
+    "url": "https://tech.layerx.co.jp/entry/articulatin_quality",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのSkills機能を活用し、言語化した品質基準やリスク情報をAIに自己判断させることで、早期テストの原則に基づいた高品質な開発を実現する試み。",
+    "summaryBody": "LayerXのQAエンジニアによる、AIコーディングアシスタント「Claude Code」を用いた品質保証の自動化事例です。JSTQBの「早期テスト」の原則をAIで実現するため、プロダクトのフェーズ、リスク基準、テストピラミッドのスコープを言語化し、Claude CodeのAgent Skillsに組み込みました。これにより、AIがタスクの内容からプロダクトのフェーズや機能のリスクレベルを自律的に判断し、トランザクション管理の徹底やテストカバレッジの目標値を動的に適用します。実際の評価（Evals）では、スキル適用なしの場合と比較してテストカバレッジが65%から95%に向上したケースもあり、人間が「あるべき姿」を定義することでAIを品質のガードレール（Quality Harness）として機能させる新しいQAの形を提示しています。",
+    "topics": [
+      "Claude Code",
+      "品質保証 (QA)",
+      "テスト自動化",
+      "AIエージェント",
+      "早期テスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

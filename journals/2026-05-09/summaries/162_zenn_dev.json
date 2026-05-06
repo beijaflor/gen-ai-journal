@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:39:26.614477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GeminiやChatGPTで画像生成できる時代に、わざわざローカルで動かす理由",
+    "url": "https://zenn.dev/acntechjp/articles/a7c12b3114f56a",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "クラウドAIのブラックボックス性を排し、ComfyUI等のローカル環境で画像生成パイプラインを詳細に制御・自動化するエンジニア的メリットを解説する。",
+    "summaryBody": "クラウド型の画像生成AIは手軽だが、生成過程がブラックボックス化されており、プロンプト以外の変数を制御できないという「天井」がある。著者は、ComfyUIを用いたローカル環境の構築を推奨し、その利点を主に3点挙げている。第一に、サンプラーやスケジューラー、モデルをノードとして繋ぐことで、画像生成を視覚的なシステムとして設計・管理できる点。第二に、ControlNetやSEGSを用いた部分生成により、TRPGのキャラクター生成のような複雑な要件でも整合性を保ちながら細部を固定・修正できる点。第三に、試行錯誤を同期的なチャットで行うのではなく、パラメータを振った大量生成をバックグラウンドで実行する「非同期ワークフロー」が可能になる点。生成AIを「便利なツール」としてだけでなく「制御可能なシステム」として捉え直すことで、クリエイティブな表現の質を根本から向上させられると説いている。",
+    "topics": [
+      "画像生成AI",
+      "ComfyUI",
+      "ローカル環境",
+      "ControlNet",
+      "ワークフロー自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

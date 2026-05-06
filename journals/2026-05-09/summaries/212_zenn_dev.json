@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:09:58.318721+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LM Studioで国産OSS大規模言語モデルLLM-jp4を使う",
+    "url": "https://zenn.dev/hi/articles/64f106cd145fa8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "国立情報学研究所(NII)が開発した国産LLM「LLM-jp-4」をLM Studioで導入する手順と、Jinjaテンプレートエラーを回避するための具体的なReasoning Parsing設定を解説しています。",
+    "summaryBody": "国立情報学研究所（NII）がOSSとして公開した最新の国産大規模言語モデル「LLM-jp-4」（8bおよび32b）を、LM Studioを用いてローカル環境で動作させる方法を解説した記事です。Hugging Faceで公開されているGGUF形式モデルの検索・導入手順に加え、LM Studio上で発生するプロンプトテンプレートエラー（Jinja template error）の具体的な回避策を紹介しています。具体的には「Reasoning Parsing」設定で開始文字列と終了文字列を指定する方法を提示。RTX 3060（12GB VRAM）環境での動作検証において、8bモデルは高速かつ正確な日本語指示に従う一方、32bモデルは思考プロセスの制御に課題を残しつつも動作することを確認しています。プライバシーを重視する用途での国産LLM活用の可能性を示唆しています。",
+    "topics": [
+      "LLM-jp-4",
+      "LM Studio",
+      "ローカルLLM",
+      "GGUF",
+      "国立情報学研究所"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

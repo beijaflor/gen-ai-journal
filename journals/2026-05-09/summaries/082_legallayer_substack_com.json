@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:19:27.400258+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeが書いたコードの所有権は誰にあるのか？",
+    "url": "https://legallayer.substack.com/p/who-owns-the-claude-code-wrote",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI生成コードの著作権、雇用契約による帰属、およびオープンソースライセンス汚染のリスクについて、開発者が知っておくべき法的論点を解説した記事。",
+    "summaryBody": "AIコード生成ツール（Claude Code, Cursor等）によって生成されたコードの所有権と法的リスクを整理した解説記事です。主な論点は以下の3点に集約されます。\n\n1. **著作権の限界**: 現行の米国著作権法では「人間の著作者」が必要とされており、人間による実質的な創造的寄与がないAI生成コードは著作権保護の対象外（パブリックドメインに近い状態）になるリスクがあります。裁判例（Thaler事件等）でも、AI単独の著作物は認められていません。\n2. **雇用契約と職務著作**: 業務でAIツールを使用する場合、職務著作の原則により、生成されたコードの所有権は雇用主に帰属します。特に会社支給のツールやリソースを使用している場合、個人プロジェクトへの影響も注意が必要です。\n3. **ライセンス汚染**: AIがGPLなどのコピーレフトライセンスのコードを学習データからそのまま出力（再現）してしまう可能性があり、意図せず自社製品にソースコード公開義務が生じるリスクを指摘しています。\n\n対策として、ライセンススキャンの実施、開発プロセス（プロンプトや修正履歴）のドキュメント化、適切なプラン（API/Enterprise）の利用を推奨しています。",
+    "topics": [
+      "AI著作権",
+      "Claude Code",
+      "ソフトウェア法務",
+      "オープンソースライセンス",
+      "プログラミングエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Who Owns the Code Claude Wrote?"
+  }
+}

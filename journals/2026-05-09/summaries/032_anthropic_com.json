@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:46:27.979615+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの品質低下に関する調査報告：3つの原因と今後の対策",
+    "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicはClaude Codeでの品質低下報告を受け、推論レベルの変更、キャッシュ処理のバグ、冗長性抑制プロンプトの3点が原因であったと特定し、全ての修正と再発防止策を完了した。",
+    "summaryBody": "Anthropicは、過去1ヶ月間にユーザーから報告されていたClaude CodeおよびClaude Agent SDKの品質低下に関する詳細な調査結果を公表しました。API自体には影響はなく、原因は製品側の3つの個別の変更に起因していました。1つ目は、レイテンシ改善のために推論の努力量をデフォルトで「中」に下げたことによる知能指数の低下、2つ目は、キャッシュ最適化のバグにより1時間を経過したセッションで思考履歴が繰り返し削除され「忘却」が生じたこと、3つ目は、冗長性を抑えるためのプロンプト変更がコーディング品質を阻害したことです。これらは4月20日までにすべて修正・復元されました。同社は再発防止として、内部でのパブリックビルド利用の徹底、システムプロンプト変更時の厳格な評価スイートの導入、およびコードレビューツールの強化を掲げています。また、補填として全サブスクライバーの利用制限がリセットされました。",
+    "topics": [
+      "Anthropic",
+      "Claude Code",
+      "LLM品質管理",
+      "ポストモーテム",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "An update on recent Claude Code quality reports"
+  }
+}

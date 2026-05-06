@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:06:33.575884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codexにおけるサンドボックス回避の脆弱性 (ZDI-26-305)",
+    "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-305/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAI Codexにおいて悪意のあるJavaScriptを含むリポジトリを処理させることで、サンドボックスを回避し任意のコード実行が可能になる脆弱性が報告されました。",
+    "summaryBody": "Zero Day Initiative (ZDI) は、OpenAI Codexに存在する深刻なサンドボックス回避の脆弱性（ZDI-26-305）を公開しました。この脆弱性は、JavaScript実行環境における分離の不備に起因しており、攻撃者はターゲットに悪意のあるJSを含むリポジトリを処理させることで、現在のユーザーコンテキストでコードを実行できる可能性があります。特筆すべき点として、OpenAIは脆弱性の再現を認めつつも、デフォルトの製品サーフェスではないとしてバグバウンティの対象外とし、修正を行わない判断を下したため、ZDIによって0デイアドバイザリとして公開されました。CVSSスコアは8.6と高く、現状の唯一の回避策は該当製品とのインタラクションを制限することのみです。",
+    "topics": [
+      "OpenAI Codex",
+      "サンドボックス回避",
+      "0デイ脆弱性",
+      "JavaScriptセキュリティ",
+      "ZDI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "OpenAI Codex Sandbox Escape Vulnerability"
+  }
+}

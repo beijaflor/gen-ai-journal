@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:21:08.241024+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "長時間実行エージェント (Long-running Agents)",
+    "url": "https://addyosmani.com/blog/long-running-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "数時間から数週間にわたって自律的に動作し、状態の永続化と自己検証を通じて複雑なタスクを完遂する「長時間実行AIエージェント」の設計パターンと主要企業の取り組みを解説した記事。",
+    "summaryBody": "この記事では、単一のチャットセッションの枠を超えて数日、あるいは数週間にわたり稼働し続ける「長時間実行（Long-running）エージェント」の台頭と、その技術的課題、設計パターンについて解説しています。従来のAIエージェントは文脈の忘却や自己検証の欠如といった「壁」に直面していましたが、最新の設計では、状態（State）をモデルのコンテキストウィンドウ外に保存し、実行環境を分離するアーキテクチャへと移行しています。\n\n具体的には、以下の3つの主要なアプローチを紹介しています：\n1. **コンポーネントの分離**: Anthropicが提唱する「脳（モデル）」「手（実行環境）」「セッション（ログ）」の分離や、Cursorの「プランナー/ワーカー/ジャッジ」の役割分担。\n2. **永続化の設計**: ファイルシステム（prd.jsonやprogress.txt）を利用した「Ralph Loop」や、Google Cloudの「Memory Bank」による長期記憶の管理。\n3. **実運用パターン**: チェックポイントと再開、人間による承認（Human-in-the-loop）、フリート・オーケストレーション（専門家エージェントの連携）。\n\n結論として、エージェントを「賢いチャット窓」から「自律的な同僚」へと進化させる鍵は、モデル自体の性能向上だけでなく、その周囲を取り囲むセッション管理、状態の永続化、および厳密な完了条件の定義にあると強調しています。",
+    "topics": [
+      "AIエージェント",
+      "自律型AI",
+      "Anthropic",
+      "Google Cloud",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Long-running Agents"
+  }
+}

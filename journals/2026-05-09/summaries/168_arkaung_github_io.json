@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:38:03.737333+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TurboQuant：第一原理からの詳説（高次元ベクトル量子化の解説）",
+    "url": "https://arkaung.github.io/interactive-turboquant/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TurboQuantは、ランダム回転によりあらゆる入力ベクトルを既知の分布へ変換することで、追加メタデータなしに理論的限界に近い精度で2〜4ビット圧縮を実現する革新的な量子化手法です。",
+    "summaryBody": "LLMのKVキャッシュや埋め込みベクトルを極低ビット（2〜4ビット）で圧縮する新技術「TurboQuant」の技術解説です。従来の手法は、外れ値（アウトライアー）に対処するためにブロックごとのスケール係数等の付加情報が必要でしたが、TurboQuantは数学的な「ランダム回転」を適用することでこの問題を解決しています。回転後の座標は元の分布に関わらず既知のベータ分布（高次元ではガウス分布に近似）に従うため、事前に計算された汎用的なLloyd-Maxコードブックのみで最適な量子化が可能です。この手法はシャノンの情報理論的下限である4^-bの誤差率をほぼ達成しており、LLMの推論精度を維持しながら4倍以上のメモリ節約を可能にします。また、内積計算のバイアスを排除するQJL（Quantized JL）を組み込んだバリアントも紹介されており、実用性と理論的整合性を両立させています。",
+    "topics": [
+      "ベクトル量子化",
+      "LLM推論最適化",
+      "KVキャッシュ",
+      "データ圧縮",
+      "機械学習理論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "TurboQuant: A First-Principles Walkthrough"
+  }
+}

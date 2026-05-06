@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:34:51.435063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DESIGN.mdは「どんなサイトもスキャンして再構築できる」のか — advanced-design-mdによる既存3手段の検証と再設計",
+    "url": "https://zenn.dev/marycache/articles/03011f881e36f7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが提唱したAI向けデザイン仕様書「DESIGN.md」の既存ツールの精度課題を検証し、観測と推測を厳格に分離することで高精度な再構築を可能にするツールキット「advanced-design-md」の設計思想を詳説する。",
+    "summaryBody": "本記事は、AIエージェントにブランドデザインを一貫して伝えるための共通仕様「DESIGN.md」の現状の課題を検証し、その解決策として著者が開発したツールキット「advanced-design-md」の設計思想を論じている。Google Stitch等の既存ツールを実在のサイトで比較検証した結果、AIによる事実の捏造（ハルシネーション）や、アニメーション定義の欠如、題材への先入観による観測データの汚染といった構造的欠陥を指摘。これに対し、本ツールキットでは「VANILLA.md（観測事実のみ）」と「INTERPRETED.md（解釈層）」の二段構成による層分離、事前に定義された語彙のみを使用する「lexicon（辞書）」モデル、Playwrightを活用した動的レンダリング後の情報抽出といった独自のアプローチを採用している。「AIが知らないことを知らないと言える」設計を重視し、人間の意図とAIの生成能力を高度に繋ぐための信頼性の高いデザイン記述の在り方を提案する実務的な論考である。",
+    "topics": [
+      "DESIGN.md",
+      "UI/UX",
+      "AIコーディングエージェント",
+      "フロントエンド",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

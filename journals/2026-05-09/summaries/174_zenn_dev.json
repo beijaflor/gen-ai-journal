@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:36:29.183713+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを安全に動かすための技術——サンドボックスについて調べてみる",
+    "url": "https://zenn.dev/layerx/articles/a99cd11af487fc",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが自律的にコード実行やツール操作を行う際のリスクを管理するため、主要なサンドボックス隔離技術の分類と各プラットフォームの実装状況を解説した包括的レポート。",
+    "summaryBody": "AIエージェントはLLMが動的に行動を決定するため、攻撃者による悪意ある指示が直接的なシステム操作（ファイル改ざんや機密奪取など）に繋がるリスクがあります。本記事では、このリスクを最小化するためのサンドボックス技術を4つの層で解説しています。1. プロセス分離（Namespace/cgroup）、2. ユーザー空間カーネル（gVisor）、3. VM分離（Firecracker等のmicroVM）、4. 言語・バイトコード分離（WASM）について、それぞれの隔離強度と用途を整理しています。さらに、AWS、Google Cloud、OpenAI、Docker、Anthropicなどの主要各社が、実際にどの技術を自社のコード実行環境やAIエージェント基盤に採用しているかを網羅的に調査しており、セキュリティ設計における具体的な技術選定の参考となります。",
+    "topics": [
+      "AIエージェント",
+      "サンドボックス",
+      "セキュリティ",
+      "microVM",
+      "gVisor"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

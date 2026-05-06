@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:35:22.060377+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "非エンジニアの「作りたい」と「安全に公開したい」を両立する Sandbox MCP を作った",
+    "url": "https://zenn.dev/aircloset/articles/65efe9614f8e73",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "非エンジニアがAI（Claude Code等）を用いて作成したアプリを、認証・DB・インフラの複雑な設定を意識せず、安全に社内公開できるプラットフォーム「Sandbox MCP」の構築事例。",
+    "summaryBody": "本記事では、エアークローゼット社が開発した「Sandbox MCP」のアーキテクチャと設計思想が詳説されています。AIによる開発の民主化が進む一方で課題となる「安全な公開」を解決するため、Cloudflare Workerによる共通OAuth認証、Firestoreのアプリ単位での名前空間分離、Cloud Runへの自動デプロイ機能を統合。特筆すべきは、AIエージェントに「正しく使わせる」ための設計です。ツールのdescriptionに詳細なrunbookを埋め込むことで、AIが自律的にUI Kitを適用し、DBを連携させ、デプロイまで完結できる仕組みを実現しています。また、AIのトークン消費と大容量ファイルの扱いを考慮し、裏側で自前Gitサーバーを介在させるなど、実運用に即した高度なインフラ構成となっています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "Cloudflare Workers",
+      "Cloud Run",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

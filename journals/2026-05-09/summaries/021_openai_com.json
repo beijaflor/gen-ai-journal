@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:49:09.485727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Privacy Filter のご紹介",
+    "url": "https://openai.com/ja-JP/index/introducing-openai-privacy-filter/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIが、非構造化テキスト内の個人情報（PII）をローカル環境で高精度かつ効率的に検出・マスキングできる、15億パラメータのオープンウェイトモデル「OpenAI Privacy Filter」をリリースしました。",
+    "summaryBody": "OpenAIは、テキスト内の個人を特定できる情報（PII）を高度な文脈理解に基づいて検出・編集するためのオープンウェイトモデル「OpenAI Privacy Filter」を発表しました。このモデルは、従来のルールベースの手法では困難だった曖昧な参照や文脈に依存する個人情報の特定に長けており、住所、氏名、メールアドレスに加え、APIキーや銀行口座番号など計8つのカテゴリに対応しています。\n\n技術的には、自己回帰モデルのチェックポイントから派生した双方向トークン分類器を採用しており、1回のパスで効率的にラベル付けを行うため、最大128,000トークンという長文コンテキストの処理も高速です。また、15億パラメータ（アクティブ5,000万）という軽量設計により、データを外部サーバーに送信せずローカルデバイス上で実行可能なため、情報漏洩リスクを最小化できます。\n\nApache 2.0ライセンスで提供され、Hugging FaceやGitHubから利用可能です。PII-Masking-300kベンチマークでF1スコア97.43%という最先端の性能を達成しており、開発者が独自のデータセットに合わせてファインチューニングすることも可能です。",
+    "topics": [
+      "PII検出",
+      "プライバシー保護",
+      "オープンウェイトモデル",
+      "ローカル推論",
+      "LLMセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

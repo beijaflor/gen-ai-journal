@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:06:47.677307+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Pro は月300回制限からトークン課金へ—GPT-5.4 × Copilot CLI の実コストを試算した",
+    "url": "https://zenn.dev/toki_mwc/articles/copilot-pro-token-billing-gpt54",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "GitHub Copilot Proが2026年6月よりリクエスト数制限からトークンベースの従量課金へ移行することを受け、GPT-5.4を利用した際の実質コストと利用可能回数の試算結果をまとめています。",
+    "summaryBody": "2026年6月1日より、GitHub Copilot Proの課金体系が従来の「月300リクエスト（PRU）」から、月額10ドルで1,000 AIクレジットを付与する従量課金制へと移行します。本記事では、次世代モデル「GPT-5.4」をCopilot CLIで使用した場合のコストを詳細に試算。画像入力を含む軽量なタスク（VRM表情レビュー等）では月間約2,600回、重めのテキスト処理でも約590回の実行が可能となり、旧制度の300回制限と比較して実質的な上限が大幅に緩和される見通しを解説しています。また、Claude Codeによる全体実装とCopilot CLIによる局所的な数値判定を使い分ける「分業コスト構造」の有効性や、Copilot Code Reviewで発生するGitHub Actions実行時間の消費といった注意点についても触れています。",
+    "topics": [
+      "GitHub Copilot",
+      "GPT-5.4",
+      "従量課金",
+      "Copilot CLI",
+      "コスト試算"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

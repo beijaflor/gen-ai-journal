@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:56:14.147727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gh skill と Copilot Coding Agent で Agent Skills を自動推薦する仕組みを作ってみた",
+    "url": "https://zenn.dev/exwzd/articles/20260501_copilot_agent_skill_recommender",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CLIの新機能「gh skill」とCopilot Coding Agentを組み合わせ、リポジトリに最適なAgent Skillsを自動で検索・リスク評価・PR作成まで行う自律型ワークフローの構築例。",
+    "summaryBody": "GitHub CLI v2.90.0でリリースされた `gh skill` コマンドとGitHub Copilot Coding Agentを活用し、プロジェクトに最適なAgent Skills（エージェント用拡張機能）を自動管理する仕組みの解説記事です。リポジトリの技術スタックを分析する `gather`、候補を絞り込む `search`、既存導入済みを検知する `detect`、そしてPRを作成する `create-pr` という一連のプロセスを、独自のシェルスクリプトとSKILL.mdによる命令定義で自動化しています。特に、エージェントに候補スキルの権限（allowed-tools）を読み取らせて4段階のリスク評価を行わせることで、セキュリティ担保と省力化を両立させている点が特徴です。GitHub Actionsのスケジュール実行と組み合わせ、リポジトリの成長に合わせた継続的なスキル更新を実現しています。",
+    "topics": [
+      "GitHub Copilot",
+      "Agent Skills",
+      "GitHub CLI",
+      "GitHub Actions",
+      "LLM Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

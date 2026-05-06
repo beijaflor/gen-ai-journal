@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:49:29.280455+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントは「同僚」ではない、ソフトウェアに組み込むべきだ",
+    "url": "https://www.feldera.com/blog/ai-agents-arent-coworkers-embed-them-in-your-software",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントを擬人的な対話相手としてではなく、CDCや宣言的設定などを通じてソフトウェア基盤に深く統合し、低負荷で自律的な「穏やかな技術」に変えるべきだと提唱する記事。",
+    "summaryBody": "現在のAIエージェントの多くはチャットボットのように人間との対話を前提として設計されており、過度な説明や監視を必要とする「認知負荷の高い同僚」のようになっています。本記事では、マーク・ワイザーの「穏やかな技術（Calm Technology）」の概念を引用し、エージェントは背景に溶け込み、人間の注意を奪わずに動作すべきだと主張しています。具体的には、CLI、宣言的スペック、リコンシリエーション（自己修復）ループといった設計パターンの活用を推奨しています。特にデータ処理において、従来のポーリングではなく変更データキャプチャ（CDC）を用いることで、エージェントが必要な情報の差分だけをリアルタイムに受け取り、効率的に動作するアーキテクチャの重要性を、Felderaのインクリメンタル処理エンジンを例に挙げて解説しています。",
+    "topics": [
+      "AI Agents",
+      "Change Data Capture (CDC)",
+      "Software Architecture",
+      "Calm Technology",
+      "Incremental Processing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Agents Aren’t Coworkers, Embed Them in Your Software"
+  }
+}

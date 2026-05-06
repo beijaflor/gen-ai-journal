@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:35:36.932771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ベクトルDBを使わないRAG。全てのナレッジを階層化する手法",
+    "url": "https://zenn.dev/knowledgesense/articles/7dddae04a7d828",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ベクトルデータベースに頼らず、ナレッジを階層的なディレクトリ構造に変換してLLMエージェントが探索する新手法「Corpus2Skill」の解説。",
+    "summaryBody": "Magellan Technology Research Instituteが提案した「Corpus2Skill」は、従来のベクトル検索に基づくRAGが抱える「網羅的な検索が困難」という課題を解決する手法です。全文書をベクトル化後にk-means法でグループ分けし、LLMを用いて各クラスタを要約・階層化することで、人間がファイルシステムの目次を辿るような「エージェンティックな探索」を可能にします。この構造化により、AIは文脈を俯瞰しながら必要な文書を特定でき、WixQAベンチマークにおいて既存手法を全指標で上回る性能を記録しました。文書量が増えても探索コストが対数的にしか増加しない点も大きな特徴です。",
+    "topics": [
+      "RAG",
+      "Corpus2Skill",
+      "LLMエージェント",
+      "階層型検索",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

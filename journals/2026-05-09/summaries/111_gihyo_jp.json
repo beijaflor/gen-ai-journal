@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:12:56.687896+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI、GPT-5.5の利用法とプロンプトガイドを公開　——達成条件と停止条件の明確化を重視",
+    "url": "https://gihyo.jp/article/2026/04/gpt5.5-prompt-guide",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "OpenAIがGPT-5.5向けの新しいプロンプトガイドを公開し、手順の固定よりも達成条件（Outcome-first）と停止条件の明確化を推奨していることを伝えるニュース。",
+    "summaryBody": "OpenAIが新たに公開したGPT-5.5向けガイドでは、従来のモデルからの単純な置き換えではなく、高い推論能力を活かした「Outcome-first（成果優先）」なプロンプト設計が推奨されています。具体的には、詳細な手順を固定する代わりに「成功条件」と「制約」を明確に提示し、不要な検索を避けるための「停止条件（retrieval budget）」や、コード変更後の「検証方法」を定義することの重要性が強調されています。また、API利用時の新パラメータである`reasoning.effort`や`text.verbosity`、構造化出力を活用した状態管理の最適化についても触れられており、複雑な実務ワークフローを構築する開発者にとって具体的な指針となる内容です。NVIDIAの最新システム上での動作についても言及されています。",
+    "topics": [
+      "GPT-5.5",
+      "プロンプトエンジニアリング",
+      "OpenAI",
+      "API最適化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

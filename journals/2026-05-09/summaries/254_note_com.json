@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:00:10.219762+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex のゲーム開発のためのプロンプトまとめ",
+    "url": "https://note.com/npaka/n/n8fb9f73d2ce3",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのCodexを活用し、ゲームの設計からUI調整、ロジック最適化、バグトリアージ、コードレビューまでを一貫して自動化・効率化するための実践的なプロンプト集。",
+    "summaryBody": "この記事は、OpenAIのCodex（AIモデル）をゲーム開発の各プロセスで最大限に活用するためのワークフローと具体的なプロンプトをまとめた解説です。主な内容は以下の5つのセクションで構成されています。\n\n1. **ブラウザゲームの開発**: `PLAN.md`で設計図を作り、`AGENTS.md`でAIの動作を制御しながら、PlaywrightでのテストとImageGenでのアセット生成を組み合わせる反復フローを紹介。\n2. **UIの微調整**: 開発サーバーと連携し、特定モデル（gpt-5.3-codex-spark等）を用いて最小限のパッチでUIを改善する手順。\n3. **難易度の高いロジック改善**: 評価スクリプトを用いた「評価主導型改善ループ」により、目標スコアに達するまで自律的にリファクタリングさせる手法。\n4. **バグトリアージの自動化**: SentryやGitHub、Slackから情報を収集し、優先順位付けとレポート作成を自動化するワークフロー。\n5. **コードレビューの自動化**: GitHub連携によるセキュリティやテスト不足の自動検出と、AIへの修正指示（fix it）の活用。\n\n全体として、AIを単なるコード生成器としてではなく、自律的に動作・検証を行う「開発エージェント」として機能させるための具体的なフレームワークを提示しています。",
+    "topics": [
+      "Codex",
+      "プロンプトエンジニアリング",
+      "ゲーム開発",
+      "AIエージェント",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    }
+  }
+}

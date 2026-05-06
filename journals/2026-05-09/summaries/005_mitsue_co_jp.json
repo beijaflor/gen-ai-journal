@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:53:13.099602+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studioでエージェントと外部API呼び出しを組み合わせてみる ― カスタムコードでツール拡張",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202604/24_0915.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Copilot Studioのカスタムコネクタにおいて、C#のカスタムコードを用いてAPIレスポンスの整形やロジックの実装を行う方法を技術的に解説した記事。",
+    "summaryBody": "本記事では、Copilot Studioから外部サービスを呼び出す「ツール（カスタムコネクタ）」の機能を、C#のカスタムコードで拡張する手法を解説しています。主な活用法として、APIからのレスポンスを生成AIが解釈しやすい形式に整形する「データの抽出・正規化」と、外部APIを呼び出さずにロジックのみで処理を完結させる「関数的なツールの作成（HTMLタグ削除や正規表現の適用など）」の2つのパターンを紹介しています。実行時間は2分以内、サイズは1MB以下という制約があるものの、AIエージェントに渡す情報を最適化し、精度の高い応答を実現するために非常に有効な手段です。",
+    "topics": [
+      "Copilot Studio",
+      "カスタムコネクタ",
+      "C#",
+      "API連携",
+      "Microsoft Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

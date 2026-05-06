@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:22:33.948372+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントが UI を安全に生成して描画するためのプロトコル A2UI とは？",
+    "url": "https://azukiazusa.dev/blog/a2ui-protocol/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが提唱するAIエージェント向けUI生成プロトコル「A2UI」の仕組みと、CopilotKitやReactを用いた具体的な実装方法を解説した技術記事。",
+    "summaryBody": "Googleが提唱する『A2UI (Agent-to-UI)』は、AIエージェントが安全かつポータブルにUIを生成・描画するための標準プロトコルです。従来のGenerative UIが抱えていた、悪意のあるスクリプトの実行リスクや表示の一貫性といった課題を、事前に定義された『カタログ』に基づく宣言的なJSONメッセージによって解決します。\n\nA2UIの主な特徴は以下の通りです：\n- **安全性**: 実行可能なコードを含まず、事前に承認されたコンポーネント定義のみをJSONでやり取りするため、セキュリティリスクを大幅に低減できます。\n- **ストリーミング最適化**: コンポーネントをIDで参照するフラットな構造を採用しており、LLMによる逐次的な生成と描画に適しています。\n- **データバインディング**: JSON Pointer (RFC 6901) を使用してデータモデルの状態を管理し、ユーザーの操作をサーバーに安全にフィードバックします。\n\n記事では、CopilotKitを用いた手軽な導入方法から、`@a2ui/react`とZodを用いたカスタムカタログの定義、Vercel AI SDKを使用したバックエンドの実装まで、実用的なステップが詳しく紹介されています。",
+    "topics": [
+      "A2UI",
+      "Generative UI",
+      "AIエージェント",
+      "Google",
+      "React"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:45:06.674608+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skills 実装パターン10選 — 業務をスキル化するときの設計判断と落とし穴",
+    "url": "https://qiita.com/ennagara128/items/71abb80697cdc826229c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」において、定型業務を自動化する「Skills」機能を効果的に運用するための10の実装パターンと設計の勘所を解説しています。",
+    "summaryBody": "Claude Codeの「Skills」機能を実務で活用するための設計指針と具体的な10のパターンを紹介した記事です。スキル化の判断基準として「頻度（週1回以上）」「言語化の可否」「リトライの安全性」を挙げ、やみくもな自動化を避ける重要性を説いています。具体的なパターンには、複数スキルを束ねるオーケストレーション、進捗管理ファイルによる途中再開、WebFetchの並列化、履歴照合による重複防止、失敗時の挙動定義などが含まれます。トークンの環境変数管理や疎結合な設計など、メンテナンスコストを抑えつつAIエージェントの能力を最大限に引き出すための実践的なノウハウがまとめられています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "業務自動化",
+      "設計パターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

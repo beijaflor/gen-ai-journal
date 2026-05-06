@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:10:52.840985+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発における「認知的負債」をtextlintで減らす",
+    "url": "https://qiita.com/autotaker1984/items/e4e6e741f93c4ecd8af9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI駆動開発で発生しがちなAI特有の難解な表現を「認知的負債」と定義し、textlintと辞書ベースのチェックで機械的に検出し修正するワークフローを紹介しています。",
+    "summaryBody": "AI駆動開発が進むと、AIが生成するドキュメントに「taxonomy」や「evidence」といった英語由来の硬い表現や読みにくい語彙が混入し、人間が読む際の負荷（認知的負債）が増大する問題が発生します。本記事では、この問題をプロンプトの工夫ではなく、textlintを用いた機械的な検出によって解決する方法を提案しています。\n\n具体的には、JSONL形式の辞書ファイルで禁止語と置換候補を管理し、AIエージェントにlintエラーを解消させるプロセスを構築。AIが自身の出力した読みにくい語に引きずられないよう、1ファイルずつ個別に校閲させる工夫や、ファイル名等の固定値をバッククォートで保護するルール、5〜10ファイルごとの人間によるレビューといった運用のポイントが詳述されています。これにより、ドキュメントの可読性を維持し、AIへの指示も簡略化できる実利的なメリットが得られたとしています。",
+    "topics": [
+      "AI駆動開発",
+      "textlint",
+      "認知的負債",
+      "ドキュメンテーション",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

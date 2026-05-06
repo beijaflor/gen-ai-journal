@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:12:26.785263+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIオタクのセキュリティエンジニアが伝えたい、バイブコーディングのセキュリティリスク7選",
+    "url": "https://blog.flatt.tech/entry/vibe_coding_security_risk",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを用いた「バイブコーディング」における、任意コード実行や機密情報漏洩といった7つの主要なセキュリティリスクとその具体的な対策を解説。",
+    "summaryBody": "Claude CodeやCursor等のAIエージェントを駆使する「バイブコーディング」において、開発者が直面するセキュリティ上の脅威を整理した解説記事です。リスクは「よくない操作（任意コード実行）」「よくない持ち出し（情報漏洩）」「よくない出荷（脆弱性の混入）」の3点に集約されます。\n\n具体的には以下の7つのリスクを詳述しています：\n1. 悪意あるAgent Skillの実行\n2. OSSに含まれる悪意ある設定ファイルの自動読み込み\n3. サードパーティMCPサーバの脆弱性や悪意\n4. 破壊的な生成コマンドへの無意識な承認\n5. Slopsquatting等のソフトウェアサプライチェーン攻撃\n6. プレースホルダドメインへの意図しない通信\n7. エラーログ等を通じた機密情報のコンテキスト注入と漏洩\n\n筆者は、これらのリスクを低減するために**サンドボックス環境（Claude Sandbox, Docker等）の導入**を最も推奨しています。加えて、1Password等のシークレットマネージャーを用いた機密情報の分離や、AI生成コードの品質を担保する「ハーネスエンジニアリング」の実装、ドメインブロックなどの多層的な防御策を提唱しています。",
+    "topics": [
+      "バイブコーディング",
+      "AIエージェント",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "セキュリティリスク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

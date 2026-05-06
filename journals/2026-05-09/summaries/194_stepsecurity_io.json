@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:14:35.632710+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SAP関連のnpmパッケージに「Shai-Hulud」ワームが混入、Bunランタイムを用いた難読化ペイロードによる認証情報窃取を分析",
+    "url": "https://www.stepsecurity.io/blog/a-mini-shai-hulud-has-appeared",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "StepSecurityは、SAP関連のnpmパッケージが侵害され、Bunランタイムを悪用した難読化ペイロードが認証情報を窃取し、さらにIDEやAIエージェントのフックを通じて拡散する巧妙なサプライチェーン攻撃を確認した。",
+    "summaryBody": "SAPエコシステムの主要なnpmパッケージ（`mbt`、`@cap-js/sqlite`など）が「Shai-Hulud」と呼ばれるワームに侵害されました。この攻撃は、`preinstall`フックを利用してBun JavaScriptランタイムを動的にダウンロードし、11.6MBに及ぶ高度に難読化されたペイロードを実行します。主な特徴として、監視を回避するためにNode.jsではなくBunを使用すること、クラウド（AWS/GCP/Azure）やnpmの認証情報を広範囲に窃取すること、そしてVSCodeの`tasks.json`やClaude Codeの`SessionStart`フックを悪用してリポジトリを開いただけで再感染する持続性を備えていることが挙げられます。窃取されたデータは、被害者のGitHubアカウント上に『Dune』をテーマにした名前（例：sardaukar-sandworm-123）のリポジトリとして暗号化された状態で公開（デッドドロップ）されます。また、ロシア語圏のシステムでは実行を停止するCIS免除パターンが含まれており、攻撃者の出自を示唆しています。StepSecurityは、侵害されたバージョンのアンインストールとすべての秘密情報のローテーションを強く推奨しています。",
+    "topics": [
+      "npm",
+      "Supply Chain Attack",
+      "Cybersecurity",
+      "SAP",
+      "Bun Runtime"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "A Mini Shai-Hulud Has Appeared: Obfuscated Bun Runtime Payloads Hit SAP-Related npm Packages"
+  }
+}

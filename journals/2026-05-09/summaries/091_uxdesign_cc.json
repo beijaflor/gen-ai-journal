@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:49:47.390080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIチャットにおける「忘れ去られた会話」問題：知識作業に適さないメッセージ型UIの限界",
+    "url": "https://uxdesign.cc/the-forgotten-conversation-problem-in-ai-chat-4d3d0c3ea525",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "現在のAIチャットが採用しているメッセージアプリ型のUIは、重要な知識の検索や再利用を困難にしており、過去のHCI研究に基づいた知識管理アーキテクチャへの転換が必要であると説く論評。",
+    "summaryBody": "ChatGPT、Claude、Geminiといった主要なAIチャットプラットフォームが共通して抱える「過去の会話を検索できない」という構造的な問題について分析した記事です。筆者は、現在のAIチャットがメッセージアプリ（iMessageやSlack等）のUIを継承していることが原因であると指摘しています。メッセージアプリは情報の断片が一時的であることを前提としていますが、AIとの対話は「知識作業」であり、そこから生成されるコードや草案、意思決定は永続的な価値を持つ資産です。\n\n記事では、Vannevar BushのMemex（1945年）やDoug EngelbartのNLS（1968年）といった初期のコンピュータ科学が提示した「知識のリンクと検索」のビジョンを振り返り、現在のAIチャットがタイトル検索や精度の低いRAG（検索拡張生成）に頼りすぎている現状を批判しています。解決策として、以下の4つの機能を備えた新しいアーキテクチャを提唱しています。\n1. メッセージ単位でのアドレス（URL）指定\n2. タイトルではなく全文を対象としたキーワード検索\n3. ユーザーによるタグ付けやアーカイブなどの永続性管理\n4. 会話間をまたぐ双方向リンク\n\nAIチャットを単なる一時的な対話ツールから、検索可能でアドレス指定可能な「知識のアーカイブ」へと進化させるべきだという主張です。",
+    "topics": [
+      "AI UX",
+      "Knowledge Management",
+      "HCI (Human-Computer Interaction)",
+      "Information Architecture",
+      "Search and Retrieval"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "The forgotten conversation problem in AI chat"
+  }
+}

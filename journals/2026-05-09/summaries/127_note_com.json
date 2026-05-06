@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:09:06.275031+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "“承認疲れ”が招く重大事故 ― Claude Code全社導入で押さえる7つの守り",
+    "url": "https://note.com/hirotsuchida/n/n6eee4f612217",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの全社展開に伴う権限悪用やプロンプトインジェクション等のリスクに対し、内部監査の視点から具体的な設定テンプレートを含む7つの多層防御策を解説。",
+    "summaryBody": "Claude Codeが開発者のみならず全社員のAIエージェントとして普及する中、従来のチャット型AIとは異なり、PC内部でコマンド実行やファイル編集を行う権限に伴う新たなセキュリティリスクが顕在化しています。本記事では、2025年から2026年にかけて発生したメキシコ政府への侵害事例や、Anthropic自身のソースコード誤公開、MCP（Model Context Protocol）サーバーの脆弱性などの最新インシデントを分析。これらを踏まえ、内部監査人やCISOが主導すべき「7つの守りの領域」を提示しています。具体策として、managed-settings.jsonを用いたMDMによるセキュリティポリシーの強制配布、機密ファイルへのアクセスを拒否するdenyリストの構築、監査ログのOpenTelemetryによる集約、そして非エンジニア層へのリテラシー教育などを挙げ、技術とガバナンスの両面からエージェント型AIを安全に導入するための実践的なフレームワークを提唱しています。",
+    "topics": [
+      "Claude Code",
+      "AIセキュリティ",
+      "内部監査",
+      "エージェント型AI",
+      "ガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

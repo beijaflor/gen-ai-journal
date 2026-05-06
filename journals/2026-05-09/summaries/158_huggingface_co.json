@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:40:21.770650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4: 100万トークン対応と劇的な推論効率向上を実現する次世代MoEモデル",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DeepSeek-V4は、1.6兆パラメータのProを含むMoEシリーズで、独自のハイブリッド・アテンションにより100万トークンの文脈をDeepSeek-V3比10%のKVキャッシュで処理可能な、極めて高効率な大規模言語モデルです。",
+    "summaryBody": "DeepSeek-AIが発表したDeepSeek-V4シリーズ（ProおよびFlash）は、MoE（Mixture-of-Experts）アーキテクチャを採用した次世代モデルです。最大の特徴は、Compressed Sparse Attention (CSA) と Heavily Compressed Attention (HCA) を組み合わせた「ハイブリッド・アテンション」の導入にあります。これにより、100万トークンのロングコンテキスト設定において、前世代のDeepSeek-V3.2と比較してKVキャッシュを90%削減し、推論時のFLOPsを27%にまで抑制することに成功しました。また、層間の信号伝播を安定させる「manifold-Constrained Hyper-Connections (mHC)」や、収束を早める「Muonオプティマイザ」など、革新的な技術が多数投入されています。学習には32兆以上の多様なトークンを使用し、ポストトレーニングでは専門ドメインごとの学習の後にオンポリシー蒸留を行う2段階の手法を採用。ベンチマークでは推論、コーディング、エージェント能力において、クローズドな最先端モデル（GPT-5クラス想定）に匹敵する、あるいは凌駕する性能をオープンモデルとして達成しています。",
+    "topics": [
+      "DeepSeek-V4",
+      "Mixture of Experts (MoE)",
+      "Long Context",
+      "Inference Efficiency",
+      "Hybrid Attention"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence"
+  }
+}

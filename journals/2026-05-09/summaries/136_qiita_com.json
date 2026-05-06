@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:45:41.397300+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 4.7 の新トークナイザーで請求が1.35倍に跳ねた話 — 価格据え置きでも実コストが上がる仕組みと対策",
+    "url": "https://qiita.com/nogataka/items/7dec7a26e49f39e7d471",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Opus 4.7への移行により、トークナイザーの刷新とキャッシュTTLの短縮が原因で、表面上の単価は据え置きながら実質的なコストが大幅に増加した実態と対策を詳説している。",
+    "summaryBody": "筆者が業務でClaude Opus 4.7へ更新した際、API単価に変更がないにもかかわらず請求額が約1.35倍に急増した事象を分析した記事。主な原因は2点あり、1つはBPE（Byte Pair Encoding）設計の変更に伴うトークン計測数の増加で、特に日本語テキストでは筆者の環境で約24%の増加が確認された。もう1つは、プロンプトキャッシュの標準TTLが60分から5分へ大幅に短縮されたことによるキャッシュヒット率の低下である。記事では、これら「見えないコスト」への対策として、モデルバージョンの明示的なピン留め、Haiku 4.5等の安価なモデルへのタスク分散、そしてキャッシュ効率を最大化するプロンプト構造への改善を提唱している。LLMの運用コスト（FinOps）を評価する際は、単価だけでなくトークン数やキャッシュ仕様まで含めた実測が不可欠であることを強調している。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "FinOps",
+      "トークナイザー",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

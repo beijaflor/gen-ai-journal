@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:34:34.221127+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにユーザーを演じさせて業務をテストするBizReach AI Product Studio",
+    "url": "https://zenn.dev/bizreach_aps/articles/0d758497357167",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに仕様を知らない「ユーザー」としてのペルソナを与え、UIのみを頼りに自律的に業務を遂行させてバグを検出する「Agentic UAT」の手法を紹介した記事。",
+    "summaryBody": "株式会社ビズリーチのAI Product Studio（APS）が開発した、AIエージェントによる新しいユーザー受け入れテスト（UAT）手法「Agentic UAT」の解説です。従来の自動テスト（UT/IT/E2E）が「実装者視点」で記述されるのに対し、Agentic UATは「エンドユーザー視点」に立ち、ソースコードの読み取りやAPIの直接実行を禁止したエージェントが、UI探索のみを通じて業務ゴールを達成できるかを検証します。これにより、URLを直接指定するE2Eテストではパスしてしまう「UI要素の欠落」や「操作の迷い」を人手を介さず自動で検出可能になります。記事では、Claude CodeやCodexを用いたマネージャー・ペルソナ構成のエージェント設計、業務フロー定義に基づくシナリオ実行、Critical/Major/Minorの3段階評価によるフィードバックサイクルについて具体的に紹介されています。",
+    "topics": [
+      "AIエージェント",
+      "UAT (ユーザー受け入れテスト)",
+      "ソフトウェアテスト",
+      "Claude Code",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

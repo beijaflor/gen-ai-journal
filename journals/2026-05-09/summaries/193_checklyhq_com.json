@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:14:49.645940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rocky AIの根本原因分析がCLIとパブリックAPIで利用可能に",
+    "url": "https://www.checklyhq.com/blog/rocky-ai-cli-and-public-api/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ChecklyがRocky AIによる根本原因分析をCLIとAPIに統合し、監視AIと開発エージェントが直接連携して障害復旧を自動化するワークフローを実現しました。",
+    "summaryBody": "Checklyは、AIによる自動根本原因分析（RCA）機能「Rocky AI」をCLIツールおよびパブリックAPIに統合したことを発表しました。これまでは、Rocky AIがダッシュボード上で生成した診断結果を人間が確認し、開発エージェント等に伝える必要がありましたが、新機能によりAIエージェント同士が直接対話できるようになります。\n\n具体的には、`checkly checks`コマンドを通じて、エラーグループごとの根本原因、ユーザーへの影響、HTTPトレースなどの証拠データをCLIから取得可能になりました。また、`checkly rca`コマンドを使用することで、手動での分析実行やJSON形式でのデータ出力も可能です。これにより、コーディングエージェント（GitHub Copilot等）がRocky AIの診断内容を直接読み込み、トリアージをスキップして即座にコード修正やインフラの調整に取り掛かる「エージェンティック・ワークフロー」が可能になります。インシデント発生からプルリクエスト作成までのプロセスを、人間が介入することなく最適化・高速化することを目指しています。",
+    "topics": [
+      "Checkly",
+      "AIエージェント",
+      "Root Cause Analysis",
+      "Monitoring as Code",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Rocky AI Root Cause Analysis in the CLI and Public API"
+  }
+}

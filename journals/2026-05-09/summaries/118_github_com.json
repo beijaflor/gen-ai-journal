@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:11:31.261154+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodeBurn: AIコーディングツールのコストとトークン利用量を可視化するダッシュボード",
+    "url": "https://github.com/getagentseal/codeburn",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCursor、GitHub Copilotなど16種類以上のAIツールのトークン使用量とコストをローカルデータから解析・可視化するTUIダッシュボード。",
+    "summaryBody": "CodeBurnは、主要なAIコーディングツールの利用状況をローカルのセッションデータから直接解析し、インタラクティブなTUI（ターミナルUI）で可視化するオープンソースツールです。APIキーやプロキシを必要とせず、ディスク上の履歴を読み取ることで、タスクカテゴリ（コーディング、デバッグ、計画など）別のコスト、モデルごとのパフォーマンス、キャッシュヒット率などを詳細にレポートします。\n\n主な機能として、モデルごとのワンショット成功率やリトライ率を比較する「Compare」、無駄なトークン消費（再読み込みや長すぎるBash出力など）を特定して改善策を提示する「Optimize」、Gitコミットと連動してAIの貢献度を測る「Yield」など、高度な分析機能を備えています。162種類の通貨に対応しており、macOS向けにはメニューバーアプリも提供されています。個人やチームでAIエージェントの運用コストを透明化し、効率を最大化するのに最適なツールです。",
+    "topics": [
+      "AI Coding Tools",
+      "Cost Observability",
+      "Token Usage",
+      "Terminal UI",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - getagentseal/codeburn: See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability."
+  }
+}

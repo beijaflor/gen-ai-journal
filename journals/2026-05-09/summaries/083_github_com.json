@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:19:10.948648+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VibeVoice: Microsoftによるオープンソースの最先端音声AIモデル群（ASR・TTS・リアルタイム）",
+    "url": "https://github.com/microsoft/VibeVoice",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Microsoftが公開した、最長60分の長時間音声認識(ASR)や低遅延な音声合成(TTS)を実現する、Qwenベースの次世代音声AIフレームワーク。",
+    "summaryBody": "Microsoft Researchが開発した「VibeVoice」は、超低フレームレート(7.5Hz)の連続音声トークナイザーと拡散モデル(Next-token diffusion)を組み合わせた革新的な音声AIシリーズです。主なモデルとして、60分の音声を一度に処理し話者分離やタイムスタンプ出力を行う「VibeVoice-ASR」、最大4名の話者で90分の音声を生成する「VibeVoice-TTS」（※責任あるAIの観点からコードは現在非公開）、そして約300msの低遅延で動作する「VibeVoice-Realtime(0.5B)」が公開されています。特にASRモデルはHugging Face Transformersに統合されており、50以上の言語に対応。ホットワード指定による認識精度の向上もサポートしています。",
+    "topics": [
+      "VibeVoice",
+      "Microsoft Research",
+      "音声認識 (ASR)",
+      "音声合成 (TTS)",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI"
+  }
+}

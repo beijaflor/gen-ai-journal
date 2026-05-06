@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:22:18.777997+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ollamaを活用してClaude Codeのコストを90%削減する「2エンジン体制」の構築ガイド",
+    "url": "https://github.com/Coherence-Daddy/use-ollama-to-enhance-claude",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Desktopを戦略立案に、ターミナル版Claude CodeをOllama経由のローカルLLMに振り分けることで、開発コストを劇的に抑える環境構築手法。",
+    "summaryBody": "このリポジトリは、AnthropicのClaude Desktopとターミナル用エージェントであるClaude Codeを併用し、コストを最適化するためのセットアップガイドを提供しています。戦略的な設計や複雑なバグ修正はClaude Desktop（Pro版）で行い、一方でトークン消費の激しいLint、リファクタリング、バッチ処理などの作業はOllama（Gemma、Qwen、DeepSeek等）を介してローカルで実行させる「2エンジン戦略」を提唱しています。\n\n主な特徴は以下の通りです：\n- **大幅なコスト削減**: Claude Codeのバックエンドをローカルモデルにルーティングすることで、API利用料を最大約90%カットします。\n- **自動セットアッププロンプト**: 1つのプロンプトをClaudeに貼り付けるだけで、OS判別から環境構築までをほぼ自動で行う仕組みが用意されています。\n- **ビジュアルチュートリアル**: 21枚のスライドで構成されたステップバイステップのガイドが含まれています。\n- **クロスプラットフォーム対応**: macOS、Windows (WSL2)、Linuxに対応しています。\n\nこれにより、Claudeの利用制限（クォータ）を気にすることなく、エージェントによる自動コーディングの恩恵を最大限に享受することが可能になります。",
+    "topics": [
+      "Claude Code",
+      "Ollama",
+      "Local LLM",
+      "Cost Optimization",
+      "Agentic Coding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 55,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Coherence-Daddy/use-ollama-to-enhance-claude: Pair Claude Desktop on Anthropic with Claude Code routed through Ollama. Visual walkthrough + copy-paste prompt that cuts your Claude Code bill ~90%."
+  }
+}

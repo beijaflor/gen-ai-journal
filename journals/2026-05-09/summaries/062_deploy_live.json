@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:24:10.692990+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10時間の飛行機移動中にローカルLLMのみで開発を行う：MacBook M5 Maxの実地テスト",
+    "url": "https://deploy.live/blog/running-local-llms-offline-on-a-ten-hour-flight/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "M5 Max搭載MacBook Proを用い、ネット接続のない10時間のフライトでQwen 3.6-35bを含むローカルLLMをフル活用して複雑な開発業務を完遂した実地検証レポート。",
+    "summaryBody": "エンジニアのDmitri Lerko氏が、ロンドンからラスベガスへの10時間のフライト中にMacBook Pro M5 Max（128GBメモリ）を用いてローカルLLMのみで開発を行った記録です。モデルはLM Studio経由でQwen 3.6-35bを使用し、約400万トークンを処理しながらクラウド費用分析ツールや電力モニタリング用CLI（powermonitor）を自作しました。\n\n検証の結果、小規模なタスクや特定のスコープにおいては既存のフロンティアモデルに匹敵する成果が得られることが示されました。一方で、深刻な課題として「電力消費」と「発熱」が挙げられています。高負荷時には毎分1%のバッテリーを消費し、機内の60W給電では不足してバッテリーが減少すること、また70-80Wの熱により膝上での作業が困難になることが報告されています。\n\n特筆すべき点として、充電ケーブルの選択（iPhone用かMacBook用か）だけで電力供給効率に30%以上の差が出ることや、ローカルでの推論コストを体感することで、プロンプトの効率化やコンテキスト管理に対する「機械的共感」が養われるという副次的なメリットも強調されています。",
+    "topics": [
+      "Local LLMs",
+      "MacBook Pro M5 Max",
+      "Qwen",
+      "Performance Benchmarking",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Running Local LLMs Offline on a Ten-Hour Flight"
+  }
+}

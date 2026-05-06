@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:52:12.035654+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Browser Harness：LLMがブラウザを直接操作しスキルを自律生成・修復する軽量フレームワーク",
+    "url": "https://github.com/browser-use/browser-harness",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMをCDP経由で直接ブラウザに接続し、不足しているコードやドメイン固有のスキルをAI自身が実行中に書き出し・改善できる自己修復型のブラウザ操作ハーネスです。",
+    "summaryBody": "browser-harnessは、LLMがブラウザタスクを完遂するための、約600行のPythonで構成された軽量な「自己修復型」ハーネスです。最大の特徴は、エージェントがタスク実行中に必要なヘルパー関数や、特定のWebサイト（AmazonやLinkedInなど）に特化したセレクタ・ワークフローを自らコードとして生成し、`agent-workspace`に保存していく点にあります。これにより、実行を重ねるほどエージェントのスキルが向上し、未知のUI変更や複雑なフローにも自律的に対応できるようになります。Claude CodeやCodexなどの既存ツールとの連携が想定されており、ユーザーが手動でスキルを定義するのではなく、エージェントが発見した解決策を永続化する「苦い教訓（The Bitter Lesson）」に基づいた設計思想を持っています。",
+    "topics": [
+      "LLMエージェント",
+      "ブラウザ自動化",
+      "自己修復",
+      "Python",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - browser-use/browser-harness: Browser Harness | Self-healing harness that enables LLMs to complete any task."
+  }
+}

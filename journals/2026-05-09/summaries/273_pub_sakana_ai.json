@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T12:55:48.396134+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "KAME: 音声対話AIの知識と応答性を両立させるタンデムアーキテクチャ",
+    "url": "https://pub.sakana.ai/kame/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Sakana AIが発表した「KAME」は、高速な音声応答モデルと強力なLLMを非同期に連携させることで、低遅延かつ高度な知識を持つ音声対話を実現する新しいアーキテクチャです。",
+    "summaryBody": "Sakana AIは、リアルタイム音声対話AIの課題である「応答性と知識のトレードオフ」を解消する新技術「KAME」を発表しました。従来の音声直接生成（S2S）モデルは応答性に優れますが、推論能力や知識量に限界がありました。KAMEは、高速なS2Sフロントエンドと、非同期で動作するバックエンドLLMを組み合わせる「タンデムアーキテクチャ」を採用しています。フロントエンドが即座に発話を開始する一方で、バックエンドLLMがユーザーの入力を並行して解析し、逐次「オラクル信号」を注入することで、発話の最中に回答内容を洗練させます。この「考えながら話す」仕組みにより、Moshiなどの既存モデルを上回る推論・STEM・人文科学の正答率を達成しました。バックエンドLLMはGPT-4やClaude、Geminiなど用途に応じて柔軟に切り替え可能です。",
+    "topics": [
+      "音声対話AI",
+      "Sakana AI",
+      "リアルタイム推論",
+      "LLM",
+      "Speech-to-Speech"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Two Heads Are Better Than One: Async Knowledge Injection for Speech AI with Tandem Architecture"
+  }
+}

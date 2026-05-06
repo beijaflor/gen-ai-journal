@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:20:01.125829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sentryの次世代AIデバッグツール「Seer Agent」：蓄積データから回答を導き出す新機能",
+    "url": "https://blog.sentry.io/introducing-seer-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Sentryが発表した「Seer Agent」は、蓄積されたトレースやログなどの全テレメトリデータをAIがグラフとして探索し、自然言語の質問に対して根本原因を即座に回答するエージェントです。",
+    "summaryBody": "Sentryは、システムの全コンテキストを活用して複雑な問題を調査するAIエージェント「Seer Agent」のオープンベータ版を公開しました。従来のツールが個別のエラーから調査を開始するのに対し、Seer Agentは「特定リージョンの遅延」や「上流サービスの不安定さ」といった具体的なエラーに直結しない曖昧な事象からでも調査を開始できます。トレース、ログ、ソースコード、デプロイ履歴、コミット情報を紐付けた「テレメトリグラフ」をAIが自動で探索し、人間のエンジニアが数十分かけて行う手動のピボット操作を数秒で完了させます。これにより、エンジニアのボトルネックを「調査箇所の特定」から「解決策の実行」へと移します。Slack連携によりチームでの対話型調査も可能で、将来的にはインシデント発生時の自動トリアージ機能なども予定されています。",
+    "topics": [
+      "Sentry",
+      "Seer Agent",
+      "AIデバッグ",
+      "オブザーバビリティ",
+      "インシデント管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it. | Sentry Blog"
+  }
+}

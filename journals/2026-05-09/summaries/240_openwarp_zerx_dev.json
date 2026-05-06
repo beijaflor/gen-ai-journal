@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:03:37.077043+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenWarp: Warpターミナルで自由なAIプロバイダーの利用を可能にするコミュニティフォーク",
+    "url": "https://openwarp.zerx.dev/en/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenWarpは、WarpターミナルのAI機能を拡張し、OpenAIやOllamaなどユーザー独自のAIモデル（BYOP）を直接利用可能にするオープンソースのコミュニティフォークです。",
+    "summaryBody": "Warpターミナルの利便性を維持しつつ、公式のクラウド制限を回避して独自のAIプロバイダーを統合できるプロジェクト「OpenWarp」が公開されました。主な特徴は以下の通りです。\n\n- **BYOP (Bring Your Own Provider):** OpenAI、Anthropic、Gemini、Ollama、DeepSeekなど、6つのネイティブAPIプロトコルに対応し、任意のベースURLとAPIキーで設定可能です。\n- **高度なカスタマイズ:** minijinjaテンプレートエンジンを搭載。カレントディレクトリやロケールに基づいた動的なシステムプロンプトを構築できます。\n- **プライバシー重視:** 認証情報はすべてローカルに保存され、クラウドへのリレーなしでプロバイダーと直接通信します。テレメトリも排除されています。\n- **Warpとの互換性:** Warpのコア機能（Blocks、Workflows、AIコマンドなど）を維持しながら、AIレイヤーのみをオープンにしています。\n\n現在は初期開発段階（Work in progress）であり、GitHubからソースコードをクローンしてビルドすることで早期アクセスが可能です。ライセンスは上流のWarpに準じたAGPL-3.0/MITのデュアルライセンスを採用しています。",
+    "topics": [
+      "OpenWarp",
+      "Warp Terminal",
+      "AI Integration",
+      "Open Source",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "OpenWarp — Unlock custom AI providers for Warp Community"
+  }
+}

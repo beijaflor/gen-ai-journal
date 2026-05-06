@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:10:34.303367+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.mdを使っている人は全員\"gh skill\"も知っておいてください",
+    "url": "https://qiita.com/TooMe/items/c9e42de497a9eff2b680",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub CLIの新機能「gh skill」を用いて、AIエージェント用の指示書（Agent Skills）を効率的に検索・管理・導入する方法を詳しく解説したガイドです。",
+    "summaryBody": "GitHub CLI v2.90.0で追加された`gh skill`サブコマンドについて解説しています。これは、AIエージェントに特定の能力を付与する「SKILL.md」を管理するためのツールで、npmのような感覚でスキルのインストールや更新が可能です。\n\n主なポイントは以下の通りです：\n- **多様なAI対応**: Claude Code、GitHub Copilot、Cursor、Gemini CLIなど、30種類以上のエージェントに1コマンドで指示を配備できます。\n- **主要な機能**: `search`での検索、`preview`での内容確認、`install`でのプロジェクト・ユーザー単位の導入、`publish`による独自スキルの検証と公開が可能です。\n- **プロジェクト共有**: `.agents/skills/`ディレクトリにスキルを展開することで、チームメンバー間で同じAI指示書を共有できます。\n- **セキュリティ**: 任意の命令を読み込ませる性質上、`preview`での確認や`--pin`フラグによる特定コミットへの固定といった安全な運用の重要性も強調されています。\n\n現時点ではプレビュー機能ですが、AI開発ワークフローの標準化を強力に支援するツールとして期待されます。",
+    "topics": [
+      "GitHub CLI",
+      "SKILL.md",
+      "Claude Code",
+      "GitHub Copilot",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

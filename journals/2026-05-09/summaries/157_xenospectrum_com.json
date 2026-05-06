@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:40:35.434513+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIがたった12時間で「CPU」を完全設計。219語の仕様書から製造データを出力した新技術の衝撃",
+    "url": "https://xenospectrum.com/ai-autonomous-agent-designs-risc-v-cpu-in-12-hours-verkor/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが219語の仕様書から、RISC-V準拠のCPU設計を12時間で完遂し、製造用データ（GDSII）まで出力する画期的な技術が登場しました。",
+    "summaryBody": "AIチップ設計スタートアップVerkor.ioが開発した自律型エージェント「Design Conductor (DC)」は、人間の介入なしに仕様書からCPUを設計するシステムです。DCは複数のLLMを統合・制御し、論理回路の記述（RTL）から機能検証、デバッグ、物理的な配置配線（プレース＆ルート）までを垂直統合で実行します。特筆すべきは、波形データ（VCD）を解析するために自らデバッグ用のPythonスクリプトを生成し、エラー原因を特定して修正するメタ認知能力です。結果として設計された「VerCore」は、ASAP7（7nm相当）プロセスで1.48GHzの動作周波数を達成し、2011年頃の商用CPUに匹敵する性能を記録しました。現状ではハードウェア特有の「並行性」の理解に課題があり、非効率な回路変更を試みる側面もありますが、数億円規模の予算と数百人のエンジニアを要した従来の設計プロセスを劇的に短縮・民主化する可能性を秘めています。",
+    "topics": [
+      "AI半導体設計",
+      "RISC-V",
+      "自律型エージェント",
+      "Design Conductor",
+      "EDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:10:18.650047+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot + Playwright MCP による UI/UX レビュー&修正自動化の試みで学んだこと",
+    "url": "https://zenn.dev/nttdata_tech/articles/4a76fdf4495b85",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilot と Playwright MCP を組み合わせ、セキュリティ対策を講じつつ UI/UX レビューから修正までを自動サイクル化する手法の検証記録。",
+    "summaryBody": "GitHub Copilot の Agent モードと Playwright MCP を活用し、UI/UX のレビュー・修正・検証を自動化するワークフローの構築事例です。著者は、Playwright MCP による頻繁な手動承認の負荷を軽減するために自動承認を導入する際、コンテナのネットワーク分離（internal: true）や Squid プロキシによる外部通信制限を施すことで、サプライチェーン攻撃やツールポイズニングのリスクを最小化する設計を提案しています。実験の結果、AI が自律的にデバッグを行う高い実用性が確認された一方で、アクセシビリティツリーなどの詳細な DOM 情報の送信によるトークン消費量の増大が、コスト面での継続的な課題として挙げられています。",
+    "topics": [
+      "GitHub Copilot",
+      "Model Context Protocol",
+      "Playwright",
+      "Docker",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

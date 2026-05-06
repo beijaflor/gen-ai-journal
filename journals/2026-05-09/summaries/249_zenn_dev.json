@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:01:18.145980+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セキュリティ診断、AIに全部やらせたら月$0.5で回せるようになった話",
+    "url": "https://zenn.dev/sabakan1/articles/bd286802d6a91d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを活用してOWASP Top 10準拠のセキュリティ診断を全自動化し、1回あたり約$0.05という極低コストで運用する手法とツールの紹介。",
+    "summaryBody": "Claude Codeの拡張機能（スキル）として開発された「claude-security-scan」の紹介記事です。個人開発者が直面する「セキュリティ診断の学習コスト」や「外注費」の課題を解決するため、AIをオーケストレーターとして既存の診断ツール（npm audit, gitleaks, 各種動的スキャン）を統合・実行する仕組みを構築しています。AIに診断ロジックそのものを任せるのではなく、ツールの実行・結果の解釈・レポート生成の「指揮役」に徹させることで、判定のブレを抑えつつ実用的な出力を実現しています。安全面では、本番URLへの実行ブロック機能やプロンプトインジェクション対策、機密情報のマスク処理が組み込まれています。運用コストは週次実行でも月額100円以下に収まり、DevSecOpsを個人や小規模チームでも手軽に導入できる可能性を示しています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ診断",
+      "OWASP Top 10",
+      "DevSecOps",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

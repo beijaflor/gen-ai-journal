@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-02T13:05:07.847267+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントによるCloudflareアカウント作成・ドメイン取得・デプロイの自動化",
+    "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareとStripeの提携により、AIエージェントが自律的にアカウント作成、ドメイン購入、本番環境へのデプロイを完結できる新しい相互運用プロトコルが発表されました。",
+    "summaryBody": "Cloudflareは、AIエージェントがユーザーに代わってクラウドサービスをセットアップし、アプリケーションをデプロイするための新しい標準プロトコルをStripeと共同で発表しました。これまで、APIトークンの取得や支払い情報の入力といった作業には人間の介入が必要でしたが、「Stripe Projects」との統合により、エージェントが自律的にCloudflareアカウントを作成し、ドメインを登録し、コードをデプロイすることが可能になります。このプロトコルは「発見（Discovery）」「認可（Authorization）」「決済（Payment）」の3つのコンポーネントで構成されています。セキュリティ面では、Stripeがユーザーの身元を保証し、エージェントには直接クレジットカード情報を渡さず、月額100ドルなどの予算制限を設ける仕組みが導入されています。また、Stripe Atlasを利用する新規スタートアップには10万ドル分のCloudflareクレジットが提供されます。",
+    "topics": [
+      "AIエージェント",
+      "Cloudflare",
+      "Stripe Projects",
+      "自律デプロイ",
+      "APIエコシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Agents can now create Cloudflare accounts, buy domains, and deploy"
+  }
+}
