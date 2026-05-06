@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:12:16.109283+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Playwright CLI で AI エージェントに視覚的なフィードバックを与える",
+    "url": "https://azukiazusa.dev/blog/playwright-cli-ai-agent-visual-feedback/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Playwright CLI v0.1.9のアノテーション機能を使い、ブラウザ上の要素を直接指定してAIエージェントへ直感的なUI修正指示を出すワークフローを解説しています。",
+    "summaryBody": "Playwright CLI v0.1.9で追加された「アノテーション機能」を活用し、AIエージェント（特にClaude Codeなど）に対して人間が視覚的なフィードバックを効率的に与える手法を解説した記事です。フロントエンド開発において、AIだけでは判断が難しいデザインの微調整やアニメーションの挙動に対し、人間がブラウザ上で要素を選択してコメントを残すことで、正確な修正指示を可能にします。\n\n主な内容は以下の通りです：\n- **Playwright CLIの導入**: インストール方法と、Claude Code等のエージェントがツールを使いこなすための「Skill」のセットアップ手順。\n- **UIレビューの流れ**: `playwright-cli show --annotate` コマンドを実行し、ブラウザ上で要素をドラッグ選択してフィードバックを入力するプロセス。\n- **AIへの情報伝達**: アノテーションにより座標、スクリーンショット、アクセシビリティツリーがAIに渡され、コード修正の精度が向上する仕組み。\n\n人間による直感的な操作とAIの自動化を組み合わせることで、フロントエンド開発のイテレーションを加速させる実践的なアプローチが示されています。",
+    "topics": [
+      "Playwright",
+      "AI Agent",
+      "Claude Code",
+      "Frontend Development",
+      "UI/UX Testing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:30:23.152132+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opusの1786分の1!? DeepSeek V4のAPI価格がバグってるので全部計算してみた",
+    "url": "https://qiita.com/lumichy/items/0252c195b4d0df797592",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "DeepSeek V4のAPI価格が他社モデルを圧倒する低価格であることを示し、特にキャッシュヒット時の極端なコスト優位性と具体的な最適化手法を解説しています。",
+    "summaryBody": "2026年4月にリリースされたDeepSeek V4シリーズのAPI料金体系を、Claude Opus 4.6やGPT-4oなどの主要モデルと比較・分析した記事です。特筆すべきは「コンテキストキャッシュ」による割引率で、キャッシュヒット時にはClaude Opusの通常入力と比較して最大1786倍ものコスト削減が可能になると試算されています。記事内では、KVキャッシュが永続化される仕組みやタイミング（リクエスト境界、共通プレフィックスの自動検出等）を詳細に解説。キャッシュヒット率を最大化するために「静的コンテンツをプロンプトの先頭に配置する」「タイムスタンプ等の動的要素を末尾に移動する」といった具体的なプロンプトエンジニアリングの手法を提示しています。また、APIレスポンスのusageフィールドを確認することで定量的に効果を測定する方法についても触れており、大量のトークンを消費するRAGやエージェント開発者にとって極めて実用性の高い内容となっています。",
+    "topics": [
+      "DeepSeek",
+      "LLM",
+      "API Pricing",
+      "Context Caching",
+      "Cost Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

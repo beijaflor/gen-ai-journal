@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:08:11.472363+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.md AGENTS.md AgentSkills 完全整理ノート（備忘録）",
+    "url": "https://zenn.dev/kodak_diary/articles/8fb30c071e9752",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングツールにおける設定ファイル群を、常時守る「ルール」、必要時に参照する「手順」、人格を定義する「役割」の3層で整理し、コンテキストの最適化を図る手法の解説。",
+    "summaryBody": "Claude CodeやCodex、Gemini CLIなどのAIコーディングツールで増えがちな設定ファイル（AGENTS.md, CLAUDE.md, SKILL.md等）の役割を明確に整理するノウハウをまとめた記事です。著者は、全ての指示を一箇所に詰め込むとコンテキストが肥大化し精度が落ちるという課題に対し、「常時ルール」「必要時の手順」「担当者（エージェント）の定義」の3つに分離することを提唱しています。具体的には、プロジェクト共通ルールをAGENTS.mdに集約し、ツール固有ファイルはそれを参照する程度に薄くします。作業手順はSKILL.mdとして切り出し、特定の役割（レビュアー等）は専用のagentファイルに分けることで、人間とAIの両方にとって管理しやすく効率的な開発環境を実現する構成案を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Codex",
+      "プロンプトエンジニアリング",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

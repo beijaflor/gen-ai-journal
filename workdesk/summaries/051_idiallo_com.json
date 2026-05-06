@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:14:32.200074+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIがデータベースを消したのではない、あなたが消したのだ",
+    "url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる本番環境DB削除事件を例に、ツールへの責任転嫁を批判し、適切なガードレールとエンジニアの責任の重要性を説く論評。",
+    "summaryBody": "CursorやClaudeのAIエージェントが本番データベースを削除したというSNSのバイラル投稿に対し、筆者は「AIのせいではなく、設計と運用の責任である」と一石を投じています。そもそも「なぜ本番DBを全削除できるような強力なAPIエンドポイントがAIからアクセス可能な状態で放置されていたのか」という根本的な問いを提示。AIを「思考する知性」ではなく「トークンを生成するツール」として正しく認識し、人間のミスを前提としたCI/CDや権限管理と同様に、AIの使用にも厳格なプロセスと責任が必要だと主張しています。AIに全責任を委ねる「バイブス・コーディング」の危険性を警告し、有能な開発者がツールを制御し、説明責任を果たすべきだと結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェアエンジニアリング",
+      "責任の所在",
+      "セキュリティガードレール",
+      "Cursor/Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "AI didn't delete your database, you did"
+  }
+}

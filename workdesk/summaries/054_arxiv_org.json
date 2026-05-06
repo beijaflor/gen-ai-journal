@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:13:41.333881+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5V-Turbo: マルチモーダルエージェントのためのネイティブ基盤モデルへのアプローチ",
+    "url": "https://arxiv.org/abs/2604.26752",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GLM-5V-Turboは、視覚知覚を推論や実行の核に統合し、GUI操作やマルチモーダルコーディングに特化したエージェント向け基盤モデルである。",
+    "summaryBody": "GLM-5V-Turboは、AIエージェントが現実の複雑な環境で動作するために不可欠な「マルチモーダルな知覚と行動の統合」に焦点を当てた基盤モデルです。従来のモデルが視覚情報を言語モデルの補助的な入力として扱っていたのに対し、本モデルは画像、動画、ウェブページ、ドキュメント、GUIなどの多様なコンテキストを推論、計画、ツール利用、実行の核となるコンポーネントとしてネイティブに統合しています。技術的には、モデル設計の刷新、マルチモーダル訓練、強化学習、ツールチェーンの拡張、そしてエージェントフレームワークとの密な統合が行われています。評価実験では、マルチモーダル環境下でのコーディングや視覚的ツール利用において高い性能を示しつつ、従来のテキストベースの能力も維持していることが確認されました。また、階層的な最適化や信頼性の高いエンドツーエンドの検証プロセスなど、実用的なエージェント構築に向けた重要な知見を提供しています。",
+    "topics": [
+      "マルチモーダル基盤モデル",
+      "AIエージェント",
+      "GLM",
+      "GUI操作",
+      "マルチモーダルコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents"
+  }
+}

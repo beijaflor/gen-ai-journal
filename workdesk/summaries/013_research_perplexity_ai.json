@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:24:19.309550+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Perplexityにおけるエージェント・スキルの設計・改善・維持ガイド",
+    "url": "https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Perplexityが、AIエージェントの能力を拡張するモジュール「Skill」の設計思想、構造、評価、および運用のベストプラクティスを詳細に公開しました。",
+    "summaryBody": "Perplexityは、同社のエージェントシステム（Perplexity Computerなど）を支える基盤である「Agent Skills」の構築・運用ガイドを公開しました。スキルは単なるコードではなく、モデルに与える「コンテキストのパッケージ」として定義されます。主な特徴は以下の通りです：\n\n1. **「Zen of Skills」**: 従来のソフトウェア開発（Zen of Python）とは異なり、スキル開発では「単純さより複雑さが機能となる」「明示的な命令より暗黙的なパターンマッチング（プログレッシブ・ディスクロージャ）を重視する」といった独自の原則が適用されます。\n2. **3段階の階層構造**: トークンコストを最適化するため、常時読み込まれる「インデックス（呼び出し条件）」、呼び出し時に読み込む「SKILL.md（本文）」、必要に応じて参照される「スクリプト/資産」の3層で構成されます。\n3. **設計とメンテナンス**: 「Load when...」から始まる呼び出し条件の定義が最も重要であり、本文ではモデルが既知の一般的知識ではなく、特定のドメインにおける「ハマりどころ（Gotchas）」や「独自の好み」を記述することに集中します。\n4. **評価（Evals）の重視**: スキル作成前に評価セットを作成し、特に「隣接ドメインとの混同」を防ぐための負の例を重視した反復的な改善が推奨されています。",
+    "topics": [
+      "AIエージェント",
+      "Perplexity",
+      "プロンプトエンジニアリング",
+      "LLM運用",
+      "エージェント・スキル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Designing, Refining, and Maintaining Agent Skills at Perplexity"
+  }
+}

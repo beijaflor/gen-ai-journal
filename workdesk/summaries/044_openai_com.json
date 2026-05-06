@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:16:07.765459+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIにおける低遅延なリアルタイム音声AIのスケールアウト戦略",
+    "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIがChatGPT VoiceやRealtime APIにおいて、WebRTCをKubernetes環境でスケールさせるために構築した、リレーとトランシーバーを分離する独自のネットワークアーキテクチャを公開。",
+    "summaryBody": "自然な会話AIの実現には、ネットワーク遅延の最小化が不可欠です。OpenAIは、標準的なWebRTCがKubernetesの「セッションごとのポート割り当て」と相性が悪い（ポート枯渇やセキュリティ、スケーラビリティの課題）という問題を解決するため、独自の「リレー＋トランシーバー」構成を導入しました。このシステムでは、軽量な「リレー」がパケットのルーティングを行い、ステートフルな「トランシーバー」がWebRTCの接続終端（ICE/DTLS/SRTP）を担当します。最大の特徴は、ICEプロトコルの『ufrag（ユーザー名フラグメント）』にルーティング用のメタデータを埋め込むことで、パケット復号前に適切な送信先を決定できる点です。これにより、数千のUDPポートを公開することなく、全世界的な低遅延通信と、インフラの柔軟なオートスケーリングを両立しています。実装面では、Go言語とLinuxのSO_REUSEPORT、スレッド固定などを活用し、カーネルバイパスなしで高性能なパケット処理を実現しています。",
+    "topics": [
+      "OpenAI",
+      "WebRTC",
+      "Kubernetes",
+      "Real-time AI",
+      "Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "How OpenAI delivers low-latency voice AI at scale"
+  }
+}

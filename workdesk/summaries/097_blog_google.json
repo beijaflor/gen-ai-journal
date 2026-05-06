@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:30:41.459352+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4の推論を最大3倍高速化する「Multi-Token Prediction (MTP)」ドラフトモデルが登場",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Gemma 4向けに、投機的デコードを活用して推論速度を最大3倍に向上させ、精度を維持したままレイテンシを大幅に削減するMulti-Token Prediction (MTP) ドラフトモデルが公開されました。",
+    "summaryBody": "Googleは、最新のオープンモデル「Gemma 4」ファミリーの推論を劇的に高速化する「Multi-Token Prediction (MTP) ドラフトモデル」をリリースしました。\n\n### 主な特徴と技術的背景\n*   **投機的デコードの採用:** 標準的なLLM推論はメモリ帯域幅がボトルネックとなりますが、軽量なMTPモデルが先行してトークンを予測し、大きなターゲットモデルが並列検証することで、推論効率を最大3倍向上させます。\n*   **精度の維持:** 最終的な出力はターゲットモデルによって検証されるため、高品質な推論能力や精度を損なうことなく高速化を実現しています。\n*   **幅広い対応:** 31B Denseや26B MoEモデルだけでなく、オンデバイス向けのE2B/E4Bモデルもサポート。エッジデバイスでのバッテリー消費抑制にも寄与します。\n*   **エコシステムへの統合:** Apache 2.0ライセンスで公開され、Hugging Face、Kaggle、vLLM、MLX、Ollama、Transformersなどの主要なツールやライブラリで即座に利用可能です。\n\nこのアップデートにより、リアルタイムチャット、高度なコーディング支援、エッジデバイス上での複雑なエージェントワークフローの構築がより容易になります。",
+    "topics": [
+      "Gemma 4",
+      "Multi-Token Prediction",
+      "Speculative Decoding",
+      "推論高速化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Accelerating Gemma 4: faster inference with multi-token prediction drafters"
+  }
+}

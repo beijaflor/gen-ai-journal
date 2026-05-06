@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:14:21.500632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Coworkで「Qiita自動投稿bot」を1日で組んだ話 #ClaudeCode",
+    "url": "https://qiita.com/Ngen/items/8b91b3302a24e1429ccc",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Coworkのスケジュールタスク機能を活用し、日々の活動ログからQiita記事を自動生成・投稿するbotを1日で構築した実践記録。",
+    "summaryBody": "Claude Coworkを用いた社内AX（AI Transformation）の一環として、Qiitaへの記事投稿を自動化する仕組みを構築した事例が紹介されています。具体的には、cron形式で設定できるスケジュールタスクを利用し、朝のトレンド調査、夜の活動ログ収集と記事生成、週末のまとめ投稿という3つのタスクを定義。実装過程では、セッションを跨ぐ状態共有の不可、機密情報の自動マスキング、スクレイピング対策が施されたサイトへのAPI対応、ツール間でのファイルパスの不一致といった実務的な課題に直面し、それらをいかに解決したかが詳細に綴られています。AIエージェントを実運用に組み込むための実践的なTipsが豊富な内容です。",
+    "topics": [
+      "Claude Cowork",
+      "Qiita API",
+      "業務自動化",
+      "AIエージェント",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

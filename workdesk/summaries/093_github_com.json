@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:31:46.808740+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SPECA: 仕様書からチェックリストを生成するエージェント型監査フレームワーク",
+    "url": "https://github.com/NyxFoundation/speca/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自然言語の仕様書からセキュリティプロパティを抽出し、実装コードがそれらを満たしているかを検証する、仕様書主導のLLMエージェント型セキュリティ監査フレームワーク。",
+    "summaryBody": "SPECAは、従来のコードパターンのみに依存する監査とは異なり、自然言語の仕様書（RFCやEIP等）を起点としたセキュリティ監査フレームワークです。システムの不変条件や正当性条件を「セキュリティプロパティ」として抽出し、それに基づいた「証明試行型（Proof-attempt）」の推論によって実装の不備を特定します。\n\n本フレームワークは6つのフェーズ（仕様発見、グラフ抽出、プロパティ生成、コード位置特定、監査、レビュー）で構成されています。評価では、SherlockのEthereum監査コンテストにおいて、366人のプロ監査者が見逃した暗号学的脆弱性を含む4つの新規バグを発見し、全15件の既知脆弱性をすべて特定することに成功しました。また、RepoAuditベンチマークにおいても、Claude 3.7/Sonnet 4.5等の最新モデルを用いて、従来の最高精度に匹敵する88.9%の精度を記録しています。この手法は、コードレベルのパターンマッチングでは検出できない仕様上の矛盾や、複雑なプロトコルの不備を診断可能にする革新的なアプローチです。",
+    "topics": [
+      "AI Agent",
+      "Security Auditing",
+      "LLM",
+      "Formal Verification",
+      "Ethereum"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "SPECA: A Specification-to-Checklist Agentic Auditing Framework"
+  }
+}

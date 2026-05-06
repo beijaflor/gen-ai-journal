@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:15:21.993813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMをゼロから自作するハンズオン：約1時間で完了するGPTモデル構築",
+    "url": "https://github.com/angelos-p/llm-from-scratch",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "約1000万パラメータのGPTモデルをゼロから構築し、個人のノートPCで1時間以内にトレーニングを完了させるための実践的なワークショップ用リポジトリです。",
+    "summaryBody": "このリポジトリは、Andrej Karpathy氏の「nanoGPT」にインスパイアされた、LLM構築の本質を学ぶための実践的なワークショップ教材です。大規模な計算リソースを必要とせず、MacBookなどの一般的なノートPCで約45分でトレーニングが完了する10Mパラメータのモデル構築を目指します。\n\n内容は以下の6つのパートに分かれています：\n1. **トークナイゼーション**: 文字レベルのエンコーディングの理解。\n2. **Transformerアーキテクチャ**: Self-Attention、LayerNorm、MLPブロックの実装。\n3. **トレーニングループ**: 損失関数、AdamW、学習率スケジューリングの設定。\n4. **テキスト生成**: 推論とサンプリング（Temperature、top-k）。\n5. **実践**: 実際のデータを用いたトレーニングと実験。\n6. **コンペティション**: 詩生成AIの精度向上への挑戦。\n\nPyTorchを使用し、モデルの仕組みを「書いて理解する」ことに重点を置いており、抽象的な概念を動くコードとして体得できる構成になっています。",
+    "topics": [
+      "LLM",
+      "Transformer",
+      "PyTorch",
+      "深層学習",
+      "チュートリアル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - angelos-p/llm-from-scratch"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:21:30.932236+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS CodeでAIをコミットの共同制作者としてデフォルトで追加する変更が行われ、コミュニティで大きな物議を醸す",
+    "url": "https://github.com/microsoft/vscode/pull/310226",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "VS CodeがGitHub Copilotをコミットの「共同制作者」として自動的に追加する設定をデフォルトで有効化し、AIを利用していないユーザーのコミットにも署名が混入するなどの事態から批判が殺到している。",
+    "summaryBody": "VS Codeのプルリクエスト#310226にて、Git拡張機能の設定「git.addAICoAuthor」がデフォルトで有効化（all）されました。これにより、AIがコード生成に関与したと判断されると、コミットメッセージに「Co-authored-by: Copilot」というトレーラーが自動挿入されるようになります。しかし、この変更はリリース直後からコミュニティで猛烈な批判を浴びています。具体的には、AI機能を明示的に無効化しているユーザーや、AIを一切使っていない手書きのコミットに対しても勝手に署名が追加される不具合が報告されています。ユーザーからは「メトリクスを操作するためのステルス・マーケティングだ」「意図しない共著者の追加はデータの汚染であり、信頼を損なう」といった声が上がっており、Hacker News等のプラットフォームでも炎上する事態となりました。開発チームはこれを受け、レグレッション（退行）を認め、修正と再検討を行う姿勢を示しています。",
+    "topics": [
+      "VS Code",
+      "GitHub Copilot",
+      "Git",
+      "プライバシー",
+      "AI倫理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 88
+    },
+    "originalTitle": "Enabling ai co author by default by cwebster-99 · Pull Request #310226 · microsoft/vscode · GitHub"
+  }
+}

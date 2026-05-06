@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:11:46.002717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AndroidでClaude Code / Codex / Gemini CLIを動かすネイティブAIターミナルIDE「Shelly」",
+    "url": "https://zenn.dev/ryoitabashi/articles/744397718965f6",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Android上でClaude CodeやGemini CLIなどのAIコーディングCLIを直接動作させ、モバイル完結の開発環境を実現するネイティブターミナルIDE「Shelly」の紹介。",
+    "summaryBody": "Android向けネイティブAIターミナルIDE「Shelly」の最新進化（v5.1.1）に関する解説記事です。Termuxやprootに依存せず、アプリ内にNode.js、Python、git、そして各種AI CLI（Claude Code, OpenAI Codex, Gemini CLI）の実行環境を直接同梱しているのが最大の特徴です。Android特有のSELinux制限やプロセス管理、OAuth認証の課題を「Credential Import UI」や「shelly-doctor」などの独自実装で解決しています。APKサイズは約900MBと巨大ですが、Galaxy Z Fold6等の大画面端末において、ターミナル、AIチャット、ブラウザをシームレスに横断したモバイルAIコーディングを可能にします。現在はGitHubにてAPKが配布されています。",
+    "topics": [
+      "Android",
+      "AIコーディング",
+      "Claude Code",
+      "Gemini CLI",
+      "ターミナルIDE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

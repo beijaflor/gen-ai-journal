@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:26:25.999935+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにシニアエンジニアの規律を：Addy Osmani氏による「Agent Skills」の解説",
+    "url": "https://addyosmani.com/blog/agent-skills/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがシニアレベルのエンジニアリング規律を遵守するためのワークフロー集「Agent Skills」の設計思想と5つの核心的原則を解説。",
+    "summaryBody": "Addy Osmani氏が提唱する「Agent Skills」は、AIコーディングエージェントが陥りがちな「最短経路でのコード実装」という問題を解決し、仕様策定、テスト、レビューといったシニアエンジニアの必須プロセスを強制するためのフレームワークです。主要な設計原則として、エージェントが実行可能なチェックポイントを含む「プロセス（工程）の重視」、エージェントの言い訳を封じる「反正当化テーブル」、検証証拠の義務化、コンテキストを節約する「段階的開示」、そして不必要なリファクタリングを防ぐ「スコープの規律」の5つを挙げています。これらはGoogleのエンジニアリング文化（Hyrum's Lawやテストピラミッド等）をMarkdown形式でコード化したものであり、Claude CodeやCursor等のツールに統合可能です。エージェントを「ただコードを書くジュニア」から「信頼性の高いソフトウェアを届けるシニア」へ変えるための実践的なアプローチを提供しています。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "LLM Rules",
+      "SDLC",
+      "Google Engineering Practices"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Agent Skills"
+  }
+}

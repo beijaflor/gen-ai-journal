@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:17:45.547694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepClaude: Claude CodeをDeepSeek等の安価なバックエンドで利用するプロキシツール",
+    "url": "https://github.com/aattaran/deepclaude",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code CLIのUXをそのままに、DeepSeek V4 ProやOpenRouter等の安価なモデルをバックエンドとして利用可能にするオープンソースのプロキシツール。",
+    "summaryBody": "DeepClaudeは、Anthropicの自律型コーディングエージェント「Claude Code」を、DeepSeek V4 Proなどのより安価なバックエンドモデルで動作させるためのツールです。環境変数を操作してAPIリクエストをローカルプロキシに転送することで、本来高価なClaude Codeの月額費用やトークンコストを大幅（最大17倍）に削減します。ファイル編集、シェル実行、Git操作、サブエージェントの生成といった主要機能はすべて動作し、セッション中にモデルを動的に切り替えることも可能です。DeepSeek以外にもOpenRouterやFireworks AIなどのAnthropic互換APIプロバイダーをサポートしています。",
+    "topics": [
+      "Claude Code",
+      "DeepSeek",
+      "LLM Proxy",
+      "Cost Optimization",
+      "Autonomous Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - aattaran/deepclaude: Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper."
+  }
+}

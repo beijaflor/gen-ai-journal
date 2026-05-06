@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:24:40.025014+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "KIKO Milanoがブラックフライデーに向けてVercelでスケーリングを効率化した方法",
+    "url": "https://vercel.com/blog/how-kiko-milano-scales-for-black-friday",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "イタリアのコスメブランドKIKO Milanoが、Vercelへの移行によりブラックフライデー前のインフラ準備期間を3週間削減し、自動スケーリングと高速ビルドを実現した事例を紹介しています。",
+    "summaryBody": "イタリア発のグローバル美容ブランドKIKO Milanoは、従来AWS EC2上でEコマースサイトを運用していましたが、ブラックフライデーなどの繁忙期には数週間におよぶ手動のサーバー拡張作業と複雑なアプリケーション設定が必要でした。Vercelへの移行後、同社は以下の劇的な改善を達成しました。\n\n- **インフラ準備の撤廃**: 手動のスケーリング作業が不要になり、3週間の準備期間がゼロになりました。\n- **ビルド時間の短縮**: 平均20分かかっていたビルドが4分未満（75%削減）に短縮されました。これにより、多数のロケールや大規模な商品カタログを持つサイトでも迅速な更新が可能になりました。\n- **デプロイ頻度の向上**: 以前はリスク回避のためにリリース回数を厳しく制限していましたが、現在は1日に何度もデプロイが可能な体制へと変化しました。\n- **開発効率の改善**: プレビュー環境の即時作成が可能になり、週に約1日の工数削減につながっています。\n\nVercelの自動スケーリング機能により、トラフィックの急増に際してもインフラ管理を意識することなく、顧客体験の向上に集中できる体制を構築しました。",
+    "topics": [
+      "Vercel",
+      "Next.js",
+      "E-commerce",
+      "Cloud Migration",
+      "Scaling"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "How KIKO Milano scales for Black Friday - Vercel"
+  }
+}

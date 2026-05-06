@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:49:21.145670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Flue: サンドボックス型エージェント開発のためのTypeScriptフレームワーク",
+    "url": "https://github.com/withastro/flue",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Flueは、Claude Codeのような操作感でありながら、GUIやTUIを一切持たず、TypeScriptで完結するヘッドレスなAIエージェント構築フレームワークです。",
+    "summaryBody": "Flueは、Astroの開発チームによって公開されたAIエージェント開発のためのオープンソース・フレームワークです。Claude Codeのような柔軟な操作感を継承しつつ、人間が介在しない完全自律型のプログラムとして実装・デプロイできる「エージェント・ハーネス」を提供します。\n\n**主な特徴:**\n- **実行環境の柔軟性:** Node.js、Cloudflare Workers、GitHub Actions、CI/CD環境など、多様なランタイムで動作します。\n- **ハイブリッド・サンドボックス:** `just-bash`による高速・安価な仮想サンドボックスと、Daytonaなどを利用したフルコンテナ環境を柔軟に使い分け可能です。\n- **セッションの永続化:** CloudflareのDurable Objects等を活用し、以前の会話履歴やファイル状態を維持したままプロセスを再開できます。\n- **MCP対応:** Model Context Protocolを介して外部ツールと容易に連携可能です。\n- **Markdownベースのロジック管理:** スキルやコンテキストをMarkdown形式で分離管理でき、プロンプトエンジニアリングとコードの実装を明確に分けることができます。",
+    "topics": [
+      "AIエージェント",
+      "TypeScript",
+      "サンドボックス",
+      "MCP",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - withastro/flue: The sandbox agent framework."
+  }
+}
