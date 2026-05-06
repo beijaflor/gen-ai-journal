@@ -75,11 +75,17 @@ def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, 
         if output_path.exists():
             return True, f"Summary already exists: {output_path}"
 
-        # Generate summary (always JSON)
+        # Generate summary (always JSON). --auto-fallback-playwright lets
+        # call-gemini retry via headless Chromium when the curl+bs4 path is
+        # blocked by a Cloudflare challenge or returns an SPA shell — without
+        # this flag, those URLs become BLOCKED stubs even though Playwright
+        # can recover them (observed on uxdesign.cc, which fronts every
+        # article with `cf-mitigated: challenge`).
         cmd = [
             'uv', 'run', 'scripts/call-gemini.py',
             '--url', url,
-            '--output', str(output_path)
+            '--output', str(output_path),
+            '--auto-fallback-playwright',
         ]
 
         # Use process group so we can kill uv + python child together
