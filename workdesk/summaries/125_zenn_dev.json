@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:43:44.287546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.7のReact習熟度をeffort=maxで測る、ついでにOpus 4.6の劣化説も検証",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.7のeffort=max設定によるReact習熟度の向上を確認し、Opus 4.6の性能劣化説を定量的ベンチマークによって検証した記事。",
+    "summaryBody": "エンジニアのuhyo氏によるReact習熟度ベンチマークシリーズの第5回。本検証ではClaude Opus 4.7において、より思考にコストをかける「effort=max」設定が品質に与える影響と、Opus 4.6が以前より劣化したという噂の真偽を確かめている。結果として、Opus 4.7 (max) は平均スコア78.2を記録し、前回の自身の記録およびGPT-5.4を上回る歴代1位の結果となった。特にコンポーネント設計やアクセシビリティの向上に寄与しており、effortを上げることで設計ミスを回避できる傾向が確認された。一方で、Opus 4.6の劣化説については、再走スコアが前回と同等以上であったことから、React技術力の観点では否定された。ユーザーが感じる劣化は確率的な出力の揺れや、指示追随能力といった別の側面にある可能性が示唆されている。",
+    "topics": [
+      "Claude",
+      "React",
+      "LLMベンチマーク",
+      "AIコーディング",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

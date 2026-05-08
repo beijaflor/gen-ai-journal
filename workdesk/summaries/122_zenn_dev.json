@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:44:26.429750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenCode Go + pi-coding-agent のすゝめ",
+    "url": "https://zenn.dev/kimuson/articles/pi-coding-agent-with-opencode-go",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "クローズドモデルのコスト増と制約に対抗するため、安価なオープンモデルのサブスク「OpenCode Go」と拡張性の高いCLI「pi-coding-agent」を組み合わせた次世代の開発環境を提案する。",
+    "summaryBody": "クローズドAIモデル（Claude/OpenAI等）の価格上昇やサブスクリプション制限が厳しくなる中、オープンモデルを活用した開発環境への移行を推奨する内容です。月額10ドルでDeepSeek V4 ProやKimi K2.6などの高性能モデルが使い放題に近い状態で利用できる「OpenCode Go」と、ベンダーロックインのない軽量・拡張的なAgent CLI「pi-coding-agent」の組み合わせを解説しています。具体的な活用法として、モデルのフォールバック設定、Jina AIを利用したWeb検索機能の統合、`srt`によるサンドボックス環境の構築、そして`pueue`を用いたバックグラウンド・オーケストレーションなど、実戦的な設定ファイル（AGENTS.md等）と共に紹介されています。高額な商用サブスクに頼らず、モデル性能とコストパフォーマンスを両立させるための具体的な技術スタックが提示されています。",
+    "topics": [
+      "AI Coding Agent",
+      "OpenCode Go",
+      "pi-coding-agent",
+      "LLMコスト最適化",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

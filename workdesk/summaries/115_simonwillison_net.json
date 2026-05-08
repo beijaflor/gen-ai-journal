@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:46:00.267917+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe codingとAgentic engineeringの境界が曖昧になりつつある現状への懸念",
+    "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIコーディングエージェントの信頼性向上に伴い、専門家による制御と非専門家による「雰囲気」での開発の境界が消失し、開発プロセスと信頼のあり方が根本から変わりつつある。",
+    "summaryBody": "Simon Willison氏は、AIを活用したプログラミングにおける「Vibe coding（コードを読まずに挙動のみで開発する）」と「Agentic engineering（専門家がAIを高度な道具として制御する）」の境界が急速に曖昧になっていると指摘しています。かつては、専門家はAIが生成したコードを一行ずつ精査すべきだと考えられていましたが、Claude Codeなどのエージェントの信頼性が向上するにつれ、専門家であってもコードを詳細にレビューせず、外部ライブラリや他チームのコンポーネントのように「ブラックボックス」として扱う傾向が強まっています。\n\nこの変化は、ソフトウェア開発のライフサイクル全体に大きな影響を及ぼします。AIがテストやドキュメント、膨大なコミット履歴を瞬時に生成できるようになった今、成果物それ自体はもはや「品質の証拠」とはならず、実際に「誰かが継続的に使用し、機能しているか」という実績が新たな信頼の源泉へとシフトしています。著者は、実装コストの劇的な低下が設計プロセスのリスク許容度を高めると予測する一方で、人間の「説明責任」の欠如や、監視を怠ることで将来的に致命的なミスを見逃す「逸脱の正常化」のリスクについても警鐘を鳴らしています。",
+    "topics": [
+      "Vibe coding",
+      "Agentic engineering",
+      "Claude Code",
+      "Software Development Life Cycle",
+      "AI Accountability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Vibe coding and agentic engineering are getting closer than I’d like"
+  }
+}

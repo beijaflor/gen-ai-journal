@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:48:36.781877+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "決定論的でないAIエージェントの振る舞いを検証する：ドミネータ分析による「信頼レイヤー」の構築",
+    "url": "https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubは、AIエージェントの非決定的な実行プロセスを検証するため、グラフ理論のドミネータ分析を用いて「必須のチェックポイント」を特定し、環境の揺らぎに強い検証を実現する「信頼レイヤー（Trust Layer）」の手法を提案している。",
+    "summaryBody": "ソフトウェアテストの常識である「振る舞いの再現性」は、自律型AIエージェントの登場により通用しなくなっています。GitHub Copilot Coding AgentのようなエージェントがUI操作（Computer Use）を伴う際、読み込み時間や操作パスの変動により、タスクが成功しても従来のスクリプトベースのテストが失敗する「偽陰性」が頻発します。この課題に対し、GitHubの研究チームはコンパイラ理論の「ドミネータ分析」を応用した新しい検証フレームワークを開発しました。まず少数の成功トレースを収集し、Prefix Tree Acceptor（PTA）というグラフ構造に統合。LLMを用いて各状態のセマンティックな等価性を判断しながら、タスク完了のために「必ず通過しなければならない状態（ドミネータ）」を数学的に抽出します。この手法により、エージェントが特定の順序で必須項目を達成しているかを検証可能になり、評価実験ではエージェントによる自己評価（精度82.2%）を大きく上回る精度100%を達成しました。これにより、AIエージェントを実験段階から本番環境のCI/CDパイプラインへと統合するための信頼性の高い基盤が提供されます。",
+    "topics": [
+      "AI Agents",
+      "Software Testing",
+      "Dominator Analysis",
+      "GitHub Copilot",
+      "LLM Reliability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Validating agentic behavior when “correct” isn’t deterministic"
+  }
+}

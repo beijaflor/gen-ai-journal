@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:45:19.350228+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大量のSkillを効率的に管理する特化型CLIツール「sklock」を作りました",
+    "url": "https://qiita.com/artie/items/980b1b48f943e096b46c",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントの「Skill」における複雑な依存関係や階層構造を、lockfileやグラフ可視化を用いて効率的に管理できる特化型CLIツール「sklock」が登場。",
+    "summaryBody": "AIエージェント開発において、再利用性が高く増えやすい「Skill」の管理に特化したCLIツール「sklock」が開発されました。既存のツールが配布やレジストリを主眼に置くのに対し、sklockはローカルワークスペース内の再帰的なスキル構造（nested skill tree）の管理に注力しています。主な機能として、`SKILL.md`からの依存関係抽出、`skill.lock`による状態固定、Mermaid形式のグラフ表示、影響範囲の特定（why/explain）、CIでの乖離検知などを備えています。GitHubのリンクをClaude Code等のAIエージェントに渡すだけで即座に導入でき、既存のプロジェクト構成を大きく変えずに運用を開始できるのが特徴です。",
+    "topics": [
+      "AI Agent",
+      "sklock",
+      "CLI",
+      "Skill Management",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

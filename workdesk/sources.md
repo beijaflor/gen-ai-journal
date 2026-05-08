@@ -2,6 +2,31 @@
 
 ## Main List
 
+- [x] 129. https://zenn.dev/blackenedgold/scraps/1c44b845a6aa68
+- [x] 128. https://ai.watch.impress.co.jp/docs/news/2105449.html
+- [x] 127. https://forbesjapan.com/articles/detail/96946
+- [x] 126. https://www.watch.impress.co.jp/docs/topic/2105497.html
+- [x] 125. https://zenn.dev/uhyo/articles/react-profession-bench-5
+- [x] 124. https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/
+- [x] 123. https://blog.takuros.net/entry/2026/05/06/135413
+- [x] 122. https://zenn.dev/kimuson/articles/pi-coding-agent-with-opencode-go
+- [x] 121. https://zenn.dev/okazu_dm/articles/83957f1623ec4d
+- [x] 120. https://zenn.dev/frontline/articles/3a912df20d9210
+- [x] 119. https://qiita.com/engchina/items/495f0871a20415ad0ee3
+- [x] 118. https://qiita.com/artie/items/980b1b48f943e096b46c
+- [x] 117. https://api-docs.deepseek.com/quick_start/pricing
+- [x] 116. https://elonlit.com/scrivings/a-theory-of-deep-learning/
+- [x] 115. https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
+- [x] 114. https://github.com/sqliteai/adam
+- [x] 113. https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy/
+- [x] 112. https://www.rishgupta.com/blog/the-ai-operator-biggest-role-in-silicon-valley
+- [x] 111. https://katedaviesdesigns.com/2026/04/29/knitting-bullshit/
+- [x] 110. https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63
+- [x] 109. https://academy.dair.ai/blog/wiki-builder-claude-code-plugin
+- [x] 108. https://every.to/guides/ai-product-management-guide
+- [x] 107. https://css-tricks.com/googles-prompt-api/
+- [x] 106. https://uxdesign.cc/why-you-need-to-protect-your-work-more-than-ever-7d0ac5836540
+- [x] 105. https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/
 - [x] 104. https://dev.classmethod.jp/articles/shuntaka-claude-code-tmux-personal-tips/
 - [x] 103. https://qiita.com/moritalous/items/cd53aec76db1dec20862
 - [x] 102. https://qiita.com/Ngen/items/8b91b3302a24e1429ccc

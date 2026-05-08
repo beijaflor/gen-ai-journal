@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:42:52.921361+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "yubikeyを買ったので色々セットアップのメモ",
+    "url": "https://zenn.dev/blackenedgold/scraps/1c44b845a6aa68",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Ubuntu環境においてYubiKeyを導入し、FIDO U2F、OpenPGPによるGit署名、PAMを用いたログイン・sudo認証、抜き差しによる画面ロック等の高度な設定を網羅した詳細な備忘録。",
+    "summaryBody": "著者がYubiKey 5シリーズを購入し、Ubuntuデスクトップで活用するためのセットアップ過程を時系列で記録したスクラップです。内容は多岐にわたり、まずYubico AuthenticatorによるOTP設定やGitHubでのWebAuthn/U2F設定から始まり、メインとなるOpenPGP鍵の管理（マスター鍵のオフライン保管とサブ鍵のYubiKeyへの移動、Gitコミット署名、Thunderbirdでの利用）を詳細に解説しています。さらに、Linuxシステムとの統合として、libpam-u2fを用いたログイン・sudoの多要素認証化、udevルールとloginctlを組み合わせた「キーを抜いた際の自動画面ロック」の実装、GNOME Keyringの開錠に関する課題と対策など、実運用に即したトラブルシューティングが含まれています。",
+    "topics": [
+      "YubiKey",
+      "OpenPGP",
+      "Ubuntu",
+      "セキュリティ",
+      "U2F"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}
