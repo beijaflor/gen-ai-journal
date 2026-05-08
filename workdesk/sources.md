@@ -2,7 +2,6 @@
 
 ## Main List
 
-- [x] 129. https://zenn.dev/blackenedgold/scraps/1c44b845a6aa68
 - [x] 128. https://ai.watch.impress.co.jp/docs/news/2105449.html
 - [x] 127. https://forbesjapan.com/articles/detail/96946
 - [x] 126. https://www.watch.impress.co.jp/docs/topic/2105497.html
