@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:07:50.453658+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Mythos PreviewによるFirefoxのセキュリティ強化の裏側",
+    "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mozillaは最新のAIモデル「Claude Mythos Preview」を活用したエージェント型パイプラインにより、Firefoxのコードから従来のファジングでは困難だった271個のセキュリティ脆弱性を特定・修正しました。",
+    "summaryBody": "Mozillaは、AIエージェントを活用してFirefoxのセキュリティを劇的に強化した手法を公開しました。かつてAIによるバグ報告は「低質なノイズ」として扱われていましたが、モデルの進化（Claude Mythos Preview等）と、動的にテストケースを生成・検証する「ハーネス」システムの構築により、その状況は一変しました。このパイプラインにより、JITエンジンの最適化不備、20年以上前のレガシーコードに潜むバグ、サンドボックス回避を可能にする複雑なレースコンディションなど、深刻な脆弱性が多数発見されました。Mozillaは、AIが推論に基づき「動く証明コード（PoC）」を生成できるようになった点を強調しており、今後はこの分析プロセスをCI（継続的統合）に組み込み、パッチが当たるたびに自動スキャンを行う体制を目指しています。この事例は、AIが防御側にとって強力な武器になることを実証しています。",
+    "topics": [
+      "Firefox",
+      "LLM",
+      "Cybersecurity",
+      "Browser Security",
+      "Mozilla"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Behind the Scenes Hardening Firefox with Claude Mythos Preview"
+  }
+}

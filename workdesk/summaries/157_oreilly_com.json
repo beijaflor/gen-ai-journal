@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:02:05.369647+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIツールの乱立を防ぐ：企業内AIツールレジストリの必要性",
+    "url": "https://www.oreilly.com/radar/fighting-tool-sprawl-the-case-for-ai-tool-registries/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの急増に伴う重複開発やセキュリティリスクを回避するため、パッケージマネージャーのような企業内ツールレジストリの構築が不可欠であると論じています。",
+    "summaryBody": "AIエージェントの導入が拡大する中、各チームが場当たり的にツール（データ取得やAPI実行機能）を開発することで生じる「ツールの乱立（スプロール）」が深刻な課題となっています。本記事では、この問題を解決するために企業独自の「AIツールレジストリ」の構築を提唱しています。主な論点は以下の3点です。1. 調整コストの削減：重複した開発を防ぎ、既存ツールの発見性を高めます。2. リスク管理の強化：調査によると88%の組織がエージェント関連のセキュリティインシデントを経験しており、レジストリによる可視化がセキュリティレビューの前提条件となります。3. ガバナンスの基盤：バージョン管理、認証メタデータ、アクセス制御を統合することで、エージェントの挙動変更の追跡やポリシーの強制を可能にします。プラットフォームチームにとって、今のうちに中央集権的なインフラを構築することが、迅速な導入と安全な運用を両立させる鍵となります。",
+    "topics": [
+      "AI Agents",
+      "AI Governance",
+      "Cybersecurity",
+      "Platform Engineering",
+      "Enterprise Architecture"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Fighting Tool Sprawl: The Case for AI Tool Registries"
+  }
+}

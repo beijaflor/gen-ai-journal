@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:06:42.507421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント・オーケストレーションを高速化する「agent-harness-kit (ahk)」",
+    "url": "https://ahk.cardor.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のAIエージェントによる協調作業環境を、SQLiteベースのステート管理やMCPツール、監視ダッシュボードと共に自動構築できる開発キット。",
+    "summaryBody": "agent-harness-kit (ahk) は、AIエージェントのマルチエージェント体制をリポジトリ内に素早く構築するための開発ツールです。「Lead (調整)」「Explorer (読み取り)」「Builder (書き込み)」「Reviewer (検証)」という4つの専門ロールを定義し、それぞれが明確な境界内で協調動作する仕組みを自動生成します。\n\n技術的特徴として、Node.js 22以降の組み込みSQLiteやPostgreSQL/MySQLをバックエンドに利用し、エージェント間のステートやタスク履歴を永続化します。また、12種類のMCP (Model Context Protocol) ツールを内蔵しており、エージェントはタスクの追加・更新、実行アクションの記録、ドキュメント検索などを自律的に実行可能です。Webベースのダッシュボードも提供され、エージェントの活動をリアルタイムでモニタリングできます。Claude CodeやOpenCodeといったモダンなAIツールとの統合が想定されています。",
+    "topics": [
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "オーケストレーション",
+      "マルチエージェント",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "agent-harness-kit — The Vite of AI agent orchestration"
+  }
+}

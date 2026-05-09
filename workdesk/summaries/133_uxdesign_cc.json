@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:08:43.025869+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにFigmaのデザインシステムを遵守させる方法",
+    "url": "https://uxdesign.cc/how-to-make-claude-code-follow-your-design-system-in-figma-559618cffaa9",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeがFigma MCPを通じてUIを生成する際、既存の変数やコンポーネントを強制的に適用させ、メンテナブルな出力を実現するための4つの「スキル」とワークフローを解説した記事。",
+    "summaryBody": "Claude CodeとFigma MCP（Model Context Protocol）を組み合わせることで、自然言語からUIを直接生成可能になりましたが、デフォルトではデザインシステムを無視し、生のカラーコード（Hex）や独自のコンポーネントを作成してしまうという課題があります。本記事では、この「ガバナンス」の欠如を解決するために著者が開発した、ワークフロー強制レイヤーとしての4つのスキルを提案しています。\n\n1. **Preflight**: セッション開始前にライブラリのトークンやコンポーネントを完全にロードし、ベースラインを確定させる。\n2. **Reference Interpreter**: 構築前にデザインブリーフを作成し、どのセクションにどのトークンを適用するかを定義・確認する。\n3. **Component Rules**: 常にライブラリ内のコンポーネントを検索し、既存のインスタンスを使用することを最優先させる。\n4. **Style Binding**: すべての視覚的プロパティを強制的に変数やスタイルに紐付け、生の値の使用を禁止するQAパスを実行する。\n\nこれらのルールを導入することで、AIは単なる「ピクセル生成器」から、デザインシステムのルールに沿って共同作業ができる「デザインアシスタント」へと進化します。",
+    "topics": [
+      "Claude Code",
+      "Figma",
+      "Design System",
+      "MCP",
+      "AI-driven Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "How to make Claude Code follow your design system in Figma"
+  }
+}

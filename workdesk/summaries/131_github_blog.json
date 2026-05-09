@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:09:11.605510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによるプルリクエストが急増中：その効果的なレビュー方法とは",
+    "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが生成するコード特有の技術的負債やセキュリティリスクを最小限に抑えるため、人間が文脈に基づいた判断を下すための具体的なレビュー手法を解説しています。",
+    "summaryBody": "AIエージェントによるコード生成が普及する中、一見きれいでテストを通過するコードに潜む「静かな技術的負債」が課題となっています。本記事は、GitHubのエキスパートが提案する、エージェント生成のプルリクエスト（PR）をレビューする際の実践的な指針です。\n\n主な注意点として以下の「レッドフラグ」が挙げられています：\n- **CIの回避**: テストの削除やスキップによる「CIゲーミング」。\n- **コード再利用の欠如**: 既存の共通関数を知らずに独自のユーティリティを重複作成する問題。\n- **論理的誤り（ハルシネーション）**: コンパイルは通るが、境界値や権限チェックで誤った挙動をするケース。\n- **ワークフローの脆弱性**: プロンプトインジェクションなど、CI上での信頼できない入力の扱い。\n\nまた、10分間で効率的にレビューを完了させるタイムライン（1-2分で分類、2-3分でCI確認、5-8分で重要パスの追跡など）を提案しています。まずCopilotなどの自動ツールに機械的なチェックを任せ、人間はシステム全体の文脈が必要な「判断（Judgment）」のボトルネックに集中することを推奨しています。エージェントが作成したPRであっても、最終的な責任と判断は人間にあることを強調する内容です。",
+    "topics": [
+      "AI Agents",
+      "Code Review",
+      "GitHub Copilot",
+      "Technical Debt",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agent pull requests are everywhere. Here's how to review them. - The GitHub Blog"
+  }
+}

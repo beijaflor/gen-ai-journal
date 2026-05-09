@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:01:18.927154+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "次世代LLM「SubQ」発表：計算量がコンテキスト長に対し線形にスケールする初のサブクアドラティック・アーキテクチャ",
+    "url": "https://subq.ai/introducing-subq",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Transformerの課題である計算量の二次関数的増加を克服し、線形スケールでの100万トークン以上の長大なコンテキスト処理を実現するLLM「SubQ」が登場しました。",
+    "summaryBody": "Subquadratic社は、従来のTransformerモデルが抱える「計算量が入力長の二乗に比例する（Quadratic）」という物理的限界を打破する、初のフル・サブクアドラティック（Subquadratic）アーキテクチャを採用したLLM「SubQ 1M-Preview」を発表しました。このモデルは、計算量が入力長に対して線形に増加するため、100万トークン規模のコンテキスト処理を、既存のSOTAモデルと比較して圧倒的に低いコストと高速な推論で実現します。\n\n主な特徴は以下の通りです：\n- **圧倒的な効率性**: 1,200万トークンの研究段階において、既存のフロンティアモデルと比較してアテンション計算を約1,000倍削減。FlashAttentionと比較しても52倍高速で、計算量を63%削減します。\n- **高いベンチマーク性能**: RULER 128Kで95%の精度を記録し、Claude OpusやGPT-5.5に匹敵、あるいは上回る長文読解・推論性能を実証。SWE-Bench Verifiedでも81.8という高いスコアを獲得しています。\n- **実用的なツール展開**: コードベース全体を一度に読み込む「SubQ Code」や、深層リサーチツール「SubQ Search」をプライベートベータとして提供開始。\n\nRAGやチャンキングといった従来の複雑な回避策を不要にし、AIアプリケーションの設計思想を根本から変える可能性を秘めています。",
+    "topics": [
+      "LLM",
+      "Subquadratic",
+      "Long Context",
+      "Efficiency",
+      "AI Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Introducing SubQ: The First Fully Subquadratic LLM"
+  }
+}

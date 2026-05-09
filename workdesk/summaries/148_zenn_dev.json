@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:04:21.747092+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwenが閉じ始めたのでGemma 4を選んだ——GPUなしPCでローカルLLMをファインチューニング",
+    "url": "https://zenn.dev/helloworld/articles/074671b77f030c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GPU非搭載環境でもGoogle ColabとLoRA、Unslothを組み合わせて、最新のGemma 4モデルを約20分でファインチューニングする実践的な手法を紹介しています。",
+    "summaryBody": "この記事では、Qwenモデルの開発体制の変化やフラッグシップモデルのクローズド化という動向を踏まえ、代替としてライセンスがApache 2.0に緩和されたGoogleのGemma 4を選択し、ローカルLLMのファインチューニング（FT）を行う手順を解説しています。\n\n主な内容は以下の通りです：\n- **モデル選定**: Qwen 3.5の将来的な不透明性と、Gemma 4のライセンス面・日本語性能（JCommonsenseQA 96.51%）の優位性を比較。\n- **概念解説**: 知識補完のRAGとスタイル変更のFTの違い、およびパラメータのわずか0.23%に「付箋」を貼るように学習するLoRAの仕組みを説明。\n- **実践手順**: Unslothライブラリを用い、Google Colabの無料枠（T4 GPU）でGemma 4 E4Bを約15〜20分で学習させるフローを提示。Training Lossの低下やフィボナッチ数列による推論テストまでをカバー。\n\n最後に、Colab無料版のRAM制限によるGGUF変換時のクラッシュといった、実務上の注意点についても触れています。",
+    "topics": [
+      "Gemma 4",
+      "Fine-tuning",
+      "LoRA",
+      "Google Colab",
+      "Unsloth"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

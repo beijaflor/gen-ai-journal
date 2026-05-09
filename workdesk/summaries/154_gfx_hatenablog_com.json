@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:02:50.475609+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Wado開発記録 ~ agentic codingによるプログラミング言語の設計と実装 ~",
+    "url": "https://gfx.hatenablog.com/entry/2026/05/07/140118",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント（Claude Code）を100%活用し、新しいプログラミング言語「Wado」を設計・実装する過程で得られた、ツール特性の回避策や開発手法の知見をまとめた技術レポート。",
+    "summaryBody": "4ヶ月間にわたり、Claude Codeを全面的に利用して新規プログラミング言語「Wado」の処理系を構築した記録です。AIエージェント特有の挙動（実行環境のタイムアウト問題）へのスキルベースの対策や、Rustに似て非なる新言語の仕様をLLMに守らせるための「チートシート」と厳格なコードレビューの重要性が説かれています。開発プロセスでは、仕様書（WEP）に基づく仕様駆動開発（SDD）を徹底し、コンパイラの内部構造をASTからTIR（Typed IR）、WIR（Wasm IR）へと多層化する大規模リファクタリングについても詳述。開発時間の約6割がリファクタリング、3割がバグ修正と最適化に費やされるなど、AI時代の言語開発における現実的な工数配分と設計の難所が示されています。",
+    "topics": [
+      "Agentic Coding",
+      "Claude Code",
+      "プログラミング言語自作",
+      "Rust",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

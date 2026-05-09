@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:01:31.263539+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexでコマンドが自動承認される設定をする #ClaudeCode",
+    "url": "https://qiita.com/ry-harada/items/a673260fe45346ed37a9",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Codexにおいてコマンド実行を自動承認するためのRules設定について、Starlark形式の記述方法やClaude Codeとの比較を交えて解説した実用ガイド。",
+    "summaryBody": "AIエージェントツールであるCodexにおいて、サンドボックス外のコマンド実行を自動承認・制限するための「Rules」機能の設定方法を解説しています。\n\n1. **設定の基本**: `.codex/rules/` ディレクトリ配下に `.rules` ファイルを作成し、Starlark形式（Python風）の構文で記述します。\n2. **prefix_ruleの活用**: `pattern` で対象コマンドを指定し、`decision` で `allow`（許可）、`prompt`（確認）、`forbidden`（拒否）を制御します。`justification`（理由）や `match/not_match`（テストケース）の記述も可能です。\n3. **Claude Codeとの対比**: Claude Codeの `settings.json` における権限設定との対応関係を示し、移行や併用を容易にしています。\n4. **検証と注意点**: `codex execpolicy check` コマンドによる設定のテスト方法や、シェル経由のコマンドがどのように分解・評価されるかの仕様についても言及されています。",
+    "topics": [
+      "Codex",
+      "Claude Code",
+      "CLIツール",
+      "Starlark",
+      "開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
