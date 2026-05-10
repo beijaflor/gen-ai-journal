@@ -110,6 +110,51 @@ Theme titles should be **specific and factual** — name the actual technologies
    - Bad: "ソフトウェアの変容を問う"
    - Good: "「Conviction Collapse」とCopilot PR広告挿入、ソフトウェアの変容を問う論考"
 
+**Recommended Title Structure: `[2–3 named anchors] [single verb] [substantive topic phrase]`**
+
+The reliable pattern that consistently produces approvable titles:
+
+`[Named anchors joined with ・] [single connecting verb] [concrete substantive topic phrase]`
+
+Examples (from journal 2026-05-16):
+- "Addy Osmani・Perplexity・技術評論社が示すAgent Skills設計原則"
+- "Linear・Anthropic・Stripeが進めるエージェント業務基盤の標準装備化"
+- "Uncle Bob・Addy Osmani・Simon Willisonが問うAIコーディング委譲の認知コスト"
+- "Atlantic・GPU担保融資・「Claude Is Dead」が突きつけるAI業界の収益性と移行先選択"
+
+Why this works:
+- **Named anchors** are concrete (specific people, products, quoted phrases, numbers) — satisfies the "be concrete" rule
+- **Single verb** ("が示す", "が問う", "が進める", "に見る", "で見える") binds anchors to substance without inventing narrative
+- **Substantive topic phrase** at the end answers "what is this theme *about*?" — not just what each article contains. This is the "self-describing" requirement
+
+Other working patterns (when the items themselves naturally signal the topic):
+- Three flat parallel facts: "DeepSeek V4が1786倍安く、GitHubは62%削減、Claude CodeのWebFetchは裏でHaiku要約" — the items are recognizably all about cost/internal behavior, so the substance is implicit
+- Anchor event + colon + aspects: "Claude Code 51万行流出：内部構造の解析とDMCA・AIリライト問題"
+
+❌ **Title Anti-Patterns (rejected during iteration):**
+
+1. **Abstract-suffix-only descriptors** — using a generic noun as the entire descriptor without a substantive topic phrase
+   - Bad: "Agent Skills設計の体系化", "トークンと内部挙動の数値化", "実用ライン", "境界線"
+   - The noun ("体系化", "数値化", "ライン", "境界線") tells the reader nothing concrete
+
+2. **Em-dash + complement style** — short subject phrase, em-dash, then list
+   - Bad: "Agent Skillsをどう書くか — Addy Osmani・Perplexity・SKILL.mk・公式入門書"
+   - The leading phrase is question-only and not concrete; the trailing list is just enumeration
+
+3. **Long parallel chains of 5–7 items** — strings together every article's headline detail
+   - Bad: "Addy Osmani 5原則・Perplexity「Zen of Skills」・SKILL.mk 85%削減・sklock・既存コード抽出・公式入門書"
+   - Reads as a tag dump; cap at 2–3 anchors and let the intro carry the rest
+
+4. **Manufactured narrative connectors** — words that imply coordination/dialogue the articles don't actually have
+   - Avoid: "並ぶ", "同週発表", "同時公表", "反論", "を巡る論考", "を巡る論争", "ラッシュ", "急増", "波"
+   - These invent a story arc; flat fact-listing is preferred
+
+5. **Pure URL-content enumeration** — listing what each URL contains without naming the theme's substance
+   - Bad: "Linearが「Issue tracking is dead」宣言、Anthropic Managed AgentsがDreaming追加、StripeがMPP/Tempo発表"
+   - The reader can list the contents but the theme topic isn't stated. Replace with anchor-list + substance phrase: "Linear・Anthropic・Stripeが進めるエージェント業務基盤の標準装備化"
+
+**Iteration tip:** if you generate titles and they read like "X did A, Y did B, Z did C" with no overarching subject, ask "what is this theme *about*?" and add that substance phrase at the end with a single binding verb.
+
 #### 4. Map Articles to Themes
 
 - [ ] For each proposed theme, list candidate article IDs

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:48:13.016153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの設定をchezmoi管理してみた",
+    "url": "https://product.plex.co.jp/entry/claude-code-chezmoi",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの独自スキルや設定ファイルをdotfiles管理ツール「chezmoi」でGit管理下に置き、同期作業をClaude Code自身に自動化させる効率的な運用手法を紹介しています。",
+    "summaryBody": "Claude Codeを使い込むと増えていく`~/.claude/`配下のスキル（skill）、ルール（rule）、エージェント定義などの設定を、Go製のdotfiles管理ツール「chezmoi」で管理する手法の解説記事です。手動編集による先祖返りや新環境構築の難しさを解決するため、chezmoiによるGit管理を導入。さらに、管理漏れを防ぐために「chezmoi-sync」というClaude Code用のスキルを自作し、ファイルの変更検知からリポジトリへの反映（chezmoi add/forget）までを対話的に自動実行させる仕組みを構築しています。これにより、設定のバージョン管理の安心感と、複数端末間での環境同期の容易さを両立しています。",
+    "topics": [
+      "Claude Code",
+      "chezmoi",
+      "dotfiles",
+      "Git",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

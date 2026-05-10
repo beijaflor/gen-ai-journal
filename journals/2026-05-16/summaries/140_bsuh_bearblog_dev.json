@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:06:25.325640+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントに必要なのはプロンプトの工夫ではなく「制御フロー」である",
+    "url": "https://bsuh.bearblog.dev/agents-need-control-flow/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの信頼性を高めるためには、複雑なプロンプトチェーンに依存するのではなく、プログラムによる決定論的な制御フローと検証の仕組みを構築すべきである。",
+    "summaryBody": "### 概要\nAIエージェントが複雑なタスクを遂行する際、プロンプトに「MANDATORY」や「DO NOT SKIP」といった指示を詰め込む手法には限界があります。本記事では、信頼性の高いシステムを構築するためには、LLMをシステムそのものとして扱うのではなく、コードによって制御される一つのコンポーネントとして扱うべきだと主張しています。\n\n### 主なポイント\n- **プロンプトの非決定性**: プロンプトは弱く指定された散文であり、検証が困難。ソフトウェアのように再帰的な構成要素としてスケールさせることはできません。\n- **決定論的スキャフォールド（足場）**: 状態遷移や検証のチェックポイントをコード側で管理し、エージェントの動作に確定的な枠組みを提供する必要があります。\n- **プログラムによる検証の必要性**: エラー検出機能のないエージェントは、単に「誤った結論へ高速で到達するツール」に過ぎません。人間による監視（Babysitter）や事後監査（Auditor）、あるいは運任せ（Prayer）から脱却するために、プログラムによる検証が不可欠です。",
+    "topics": [
+      "AIエージェント",
+      "LLMオーケストレーション",
+      "ソフトウェア設計",
+      "制御フロー",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "agents need control flow, not more prompts"
+  }
+}

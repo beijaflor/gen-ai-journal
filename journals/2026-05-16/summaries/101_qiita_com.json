@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:14:36.792789+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code入りのDockerイメージをDevContainerで動かす",
+    "url": "https://qiita.com/sour23/items/a86a42a675e27853299b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを安全かつ高速に利用するため、事前ビルドされたDockerイメージとDevContainerを活用し、最新版を自動更新する環境構築手法を解説しています。",
+    "summaryBody": "本記事は、AnthropicのAIエージェント「Claude Code」を開発環境から隔離されたDockerコンテナ（DevContainer）で効率的に運用する方法を解説しています。通常のセットアップでは起動のたびにインストールが発生し時間がかかる課題に対し、筆者はあらかじめClaude Codeをインストール済みのカスタムイメージを作成し、GitHub Container Registry (ghcr.io) で公開する手法を提案しています。また、GitHub Actionsを用いてClaude Codeの最新バージョンを毎日自動チェック・ビルド・タグ付けする仕組みを導入しており、ユーザーはdevcontainer.jsonの設定を書き換えるだけで、常に最新の安定した隔離環境を即座に利用可能です。",
+    "topics": [
+      "Claude Code",
+      "DevContainer",
+      "Docker",
+      "GitHub Actions",
+      "VS Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

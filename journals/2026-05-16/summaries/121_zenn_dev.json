@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:44:38.357218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Claude Codeに全部やらせる時代が来た」のか検証してみた",
+    "url": "https://zenn.dev/okazu_dm/articles/83957f1623ec4d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのセキュリティスキャン機能をOWASP Juice Shopで検証し、主要な脆弱性の60〜70%を検出できる一方、ビジネスロジックや特定の攻撃手法には課題があることを明らかにした報告。",
+    "summaryBody": "セキュリティエンジニアの@okazu_dm氏が、Claude Codeのslash commandとして実装された「claude-security-scan」の実用性を、脆弱性診断の練習用アプリOWASP Juice Shopを用いて検証しました。\n\n検証の結果、脆弱性クラス単位で60〜70%、Critical級に絞ると80%以上の検出率を記録しました。特にSQLインジェクションや既知CVEを持つ依存パッケージ、ハードコードされたシークレットの検出には強みを発揮しましたが、Juice Shopの全チャレンジ（約100件）ベースでは検出率は11%に留まりました。レースコンディションやDOM XSS、複雑なビジネスロジック由来の欠陥は構造的に検出が難しく、先行事例の「検出率100%」は対象の複雑性に依存するものと分析しています。\n\n結論として、安価なセキュリティ文化導入の入口としては有用ですが、現時点で「全てを任せられる」段階ではなく、LLMの特性（揺らぎや網羅性の限界）を理解した運用が必要であると強調しています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティスキャン",
+      "LLM",
+      "OWASP Juice Shop",
+      "脆弱性診断"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

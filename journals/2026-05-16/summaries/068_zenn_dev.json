@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:09:52.268375+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "あなたのClaude CodeのWebFetch、実はWebをちゃんと読んでいない",
+    "url": "https://zenn.dev/zhizhiarv/articles/claude-code-webfetch-haiku-summary",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのWebFetchツールは、原文を直接読むのではなく、裏側でHaikuが要約した結果のみをメインモデルに渡しており、情報の欠落やサイレントな切り捨てが発生している実態を解説しています。",
+    "summaryBody": "Claude Code（v2.1.126時点）のWebFetchツールの内部挙動を詳細に分析した調査記事です。主な発見として、ユーザーが入力したURLは直接メインモデル（Sonnet/Opus）に渡されるのではなく、まずClaude 3 Haikuによって要約・抽出処理が行われ、その短縮された結果のみがメインモデルに届く仕組みになっています。特定の「信頼されたドメイン（AWS、MDN等）」かつ「Markdown形式」かつ「10万文字未満」という極めて限定的な条件を満たさない限り、この要約プロセスは回避できません。また、HTMLは先頭1MiB、Markdown変換後は先頭10万文字でサイレントに切り捨てられる仕様や、内部プロンプトによる125文字の引用制限といった著作権保護機能の存在も指摘されています。著者は、この不透明な構造がAIの判断ミスや情報の見落としを招くリスクを強調し、正確な情報取得が必要な場合は`curl`や`defuddle`といった外部ツールの併用を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLMエージェント",
+      "WebFetch",
+      "リバースエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

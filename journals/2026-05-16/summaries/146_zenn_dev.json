@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:04:48.459125+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic Graph RAG MCPのススメ — Graph RAGは「単発」ではなく「対話」になった",
+    "url": "https://zenn.dev/aircloset/articles/341dffee42f454",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがMCPを介してグラフ構造を多段的に探索する「Agentic Graph RAG」の設計思想と、社内での具体的な実装パターンについて解説した記事。",
+    "summaryBody": "従来のGraph RAGが計算コストや精度の制約から「単発検索・事前要約」を前提としていたのに対し、AIエージェントとMCP（Model Context Protocol）が普及した現代における新しい設計論を提唱しています。筆者は、AIが自律的にツールを呼び出すAgenticなループを前提に、人間が設計した決定的なグラフ構造を「地図」として渡し、AIがその都度必要な情報を取得するアプローチの有効性を説いています。具体的には、ツールの返却値をAI向けの「次の一手」のガイド（runbook）として設計し、探索・詳細取得・関係走査の3ステップに分けることで、ハルシネーションを抑えつつ複雑なドメイン知識の活用を可能にしています。airCloset社内でのDB GraphやBiz Graphなどの事例を通じ、ドメイン知識をグラフ化することの重要性を強調しています。",
+    "topics": [
+      "GraphRAG",
+      "MCP",
+      "AIエージェント",
+      "ナレッジグラフ",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

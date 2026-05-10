@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:06:08.967344+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek 4 Flash専用のMetal向け軽量推論エンジン「ds4」",
+    "url": "https://github.com/antirez/ds4",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Redisの生みの親であるantirez氏が開発した、Apple SiliconのGPU（Metal）に最適化されたDeepSeek V4 Flash専用の超高速・軽量推論エンジン。",
+    "summaryBody": "Redisの開発者として知られるSalvatore Sanfilippo (antirez) 氏による、DeepSeek V4 Flashに特化したネイティブ推論エンジンです。汎用的なGGUFランナーではなく、特定のモデルに絞ることで高い最適化を実現しています。主な特徴として、MoE（混合専門家）部分のみを量子化し品質を維持する独自の2ビット量子化、高速なSSDを活用して100万トークンのコンテキストを永続化・再開可能にする「Disk KV Cache」、そしてOpenAI/Anthropic互換のサーバー機能が挙げられます。Apple Silicon（M3 Max/Ultra等）上で動作し、Claude CodeやPiといったコーディングエージェントからのローカル利用も想定されています。開発にはGPT-5.5の強力な支援を受けており、llama.cppの成果を基盤としつつも、特定のモデルに対して「完結した体験」を提供することを目指しています。",
+    "topics": [
+      "DeepSeek-V4-Flash",
+      "Metal",
+      "LLM Inference",
+      "Apple Silicon",
+      "KV Cache"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - antirez/ds4: DeepSeek 4 Flash local inference engine for Metal"
+  }
+}

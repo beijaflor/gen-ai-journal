@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:09:25.843864+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic Workflowsにおけるトークン効率の改善手法",
+    "url": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubは、自社運用のエージェント型ワークフローにおいて、APIプロキシによる計測、MCPツールの整理、CLIへの代替、および独自のコスト指標「Effective Tokens」を導入することで、最大62%のトークン消費削減を達成しました。",
+    "summaryBody": "GitHubが自社リポジトリのメンテナンスやCIで利用している「GitHub Agentic Workflows」のコスト最適化に関する詳細なレポートです。主な取り組みとして、まずAPIプロキシを導入し、全てのLLMコールのトークン使用量（入力、出力、キャッシュ、モデル種別）を標準化された形式で記録・可視化しました。最適化の具体策として、推論のたびに送信されるMCP（Model Context Protocol）ツールのスキーマから未使用のものを削除しコンテキストを削減したほか、データ取得処理をLLMの推論ループから切り離し、決定論的なGitHub CLI（ghコマンド）に置き換える手法を採用しています。また、コスト評価の精度を高めるため、モデルごとの単価やキャッシュの有効性、出力トークンのコスト比重を加味した「Effective Tokens (ET)」という独自メトリクスを定義しました。この結果、Issueの自動トリアージなど複数のワークフローで大幅なコスト削減に成功しています。",
+    "topics": [
+      "GitHub Agentic Workflows",
+      "LLMコスト最適化",
+      "Model Context Protocol (MCP)",
+      "GitHub Actions",
+      "AIエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Improving token efficiency in GitHub Agentic Workflows"
+  }
+}

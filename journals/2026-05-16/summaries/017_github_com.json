@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:23:12.917349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-desktop: AIエージェント向けOSアクセシビリティツリー操作CLI",
+    "url": "https://github.com/lahfir/agent-desktop",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Rust製のデスクトップ自動化ツールで、スクリーンショットに頼らずOSのアクセシビリティ機能を介してAIエージェントによる確実なUI操作を実現します。",
+    "summaryBody": "agent-desktopは、AIエージェントがデスクトップアプリケーションを操作するために設計されたRust製のネイティブCLIツールです。従来の画像認識や座標ベースの自動化とは異なり、OSのアクセシビリティツリー（Accessibility Tree）を介して構造化されたデータにアクセスします。これにより、AIは決定論的な要素参照（@e1, @e2など）を用いて正確にUI要素を特定し、クリック、タイピング、スクロール、ウィンドウ管理などの操作を実行できます。\n\n主な特徴：\n1. **トークン消費の最適化**: 「Progressive skeleton traversal」機能により、階層の深いアプリでも必要な部分だけをドリルダウンして取得でき、AIに渡すコンテキストを大幅に削減します。\n2. **マシンフレンドリー**: すべての出力は構造化JSONで提供され、エラー発生時にはリカバリのヒントも含まれます。\n3. **高い互換性**: C-ABI対応のダイナミックライブラリ（FFI）を同梱しており、Python、Go、Swiftなどから直接呼び出すことが可能です。\n4. **高速・軽量**: 依存関係のない単一バイナリとして動作し、macOSのアクセシビリティAPIを最大限に活用します（Windows/Linux対応も計画中）。",
+    "topics": [
+      "AI Agents",
+      "Desktop Automation",
+      "Rust",
+      "Accessibility API",
+      "macOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "lahfir/agent-desktop: Native desktop automation CLI for AI agents. Control any application through OS accessibility trees with structured JSON output and deterministic element refs."
+  }
+}

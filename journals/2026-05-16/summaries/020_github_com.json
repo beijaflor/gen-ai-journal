@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:22:29.042577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.mk: Makefile形式を用いたAIエージェントスキルの仕様とツール",
+    "url": "https://github.com/Teaonly/SKILL.mk",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Makefileの構文を利用してAIエージェントのスキル定義を構造化し、トークン削減と論理的な依存関係の明示を可能にする新しい仕様提案。",
+    "summaryBody": "AIエージェントが利用するスキル定義（SKILL）を、従来のMarkdown形式ではなく、エンジニアにお馴染みのMakefile形式で記述する「SKILL.mk」仕様のリポジトリです。主な利点として、Makefileが持つ依存関係（DAG）の仕組みをエージェントのプランニングに直接転用できる点や、必要なRecipe（ターゲット）のみを動的に読み込むことで実行時のトークン消費を大幅に抑えられる点（実証例で最大85%削減）が挙げられます。また、レシピ単位での実行統計の取得や、Gitによる詳細な変更管理といった監査性にも優れており、エージェントスキルの「Evolution Engineering（進化工学）」に適した基盤を提供します。",
+    "topics": [
+      "AIエージェント",
+      "Makefile",
+      "プロンプトエンジニアリング",
+      "トークン最適化",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Teaonly/SKILL.mk: Specification and Tools for Makefile-formatted Agent Skills."
+  }
+}

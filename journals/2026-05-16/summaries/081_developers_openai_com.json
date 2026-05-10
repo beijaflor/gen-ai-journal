@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:50:59.551637+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex App Server - OpenAI Codex用アプリケーションサーバーの仕様と実装",
+    "url": "https://developers.openai.com/codex/app-server",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Codexの機能をリッチクライアントに統合するための、JSON-RPCベースのオープンソースアプリケーションサーバーのプロトコル仕様と実装。",
+    "summaryBody": "Codex App Server（codex-rs/app-server）は、VS Code拡張機能などの製品に、認証、会話履歴、承認フロー、エージェントイベントのストリーミングなどの高度な機能を統合するためのインターフェースです。通信にはJSON-RPC 2.0を採用し、stdioやWebSocketを通じた双方向通信をサポートします。コア概念として、会話を管理する「Thread」、1回の要求と応答のサイクルを示す「Turn」、メッセージやツール実行の最小単位である「Item」を定義しています。また、ファイルシステム操作、スキル管理、MCP（Model Context Protocol）との連携、コマンド実行のサンドボックス制御、ChatGPTアカウントとの同期機能など、AIエージェントの構築に必要な機能を網羅的に提供します。開発者はこのプロトコルを使用することで、自身のプロダクト内にCodexの機能を深く組み込むことが可能です。",
+    "topics": [
+      "OpenAI Codex",
+      "JSON-RPC",
+      "AIエージェント",
+      "MCP",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "App Server – Codex | OpenAI Developers"
+  }
+}

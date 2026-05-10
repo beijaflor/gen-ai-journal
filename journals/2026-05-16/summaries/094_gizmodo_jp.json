@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:31:27.079863+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "｢MPCサーバー｣でローカルLLMを“無料AIエージェント”に変えてみる",
+    "url": "https://www.gizmodo.jp/2026/05/what_is_mcp_in_local_llm.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LM StudioなどのローカルLLM環境で「Model Context Protocol (MCP)」を活用し、ファイルの読み書きや外部データ取得が可能な「AIエージェント」へと機能を拡張する手法を紹介。",
+    "summaryBody": "本記事では、ローカルLLMアプリ「LM Studio」に**MCP（Model Context Protocol）サーバー**を導入し、AIに実用的なツール使用能力を与える方法を解説しています。主な具体例として、PC内のファイルを直接操作する「Filesystem MCP Server」や、国土交通省が公開している「地理空間MCP Server」を用いたデータ分析、Webサイトの情報を取得する自作ツールなどが紹介されています。これにより、単なるチャットボットだったローカルLLMを、特定のタスクを自律的にこなす「AIエージェント」へと進化させることが可能です。一方で、導入にはコマンドライン操作やJSON形式の設定ファイル編集が必要であり、信頼できるサーバーの選定といったセキュリティ面や設定難易度の課題も指摘されています。",
+    "topics": [
+      "Local LLM",
+      "Model Context Protocol (MCP)",
+      "LM Studio",
+      "AI Agent",
+      "Filesystem MCP Server"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

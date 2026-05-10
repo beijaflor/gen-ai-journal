@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:45:06.260634+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによるコーディング支援で大事になるのは「書く速さ」ではなく「確かめる力」",
+    "url": "https://qiita.com/engchina/items/495f0871a20415ad0ee3",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIコーディング支援の本質は「生成の速さ」ではなく、生成されたコードを安全に本番へデプロイするための「検証力」と「人間による説明責任」にある。",
+    "summaryBody": "Sonar社の開発者調査（State of Code Developer Survey）を基に、AI時代の開発プロセスにおける真のボトルネックを考察した記事です。AIはコードを書く作業を大幅に短縮しますが、その結果として「確かめる作業（検証）」の比重が増大していることを指摘しています。AIが生成したコードの信頼性と、実際の確認頻度の間にあるギャップを埋めるためには、コードの生成速度を競うのではなく、自動テストや静的解析の強化、小さなPR（プルリクエスト）の維持、そして「なぜその設計にしたか」という判断根拠のレビューが重要であると説いています。最終的に本番コードに責任を持つのは人間であり、AIに渡すコンテキスト（前提情報）をいかに整理するかがチームの生産性を左右する鍵となります。",
+    "topics": [
+      "生成AI",
+      "GitHub Copilot",
+      "コードレビュー",
+      "開発プロセス",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

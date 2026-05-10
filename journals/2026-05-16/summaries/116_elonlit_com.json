@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:45:45.237609+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "深層学習の理論：出力空間における動的システムとしての汎化メカニズム",
+    "url": "https://elonlit.com/scrivings/a-theory-of-deep-learning/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "深層学習の汎化能力を、パラメータ空間ではなく出力空間の動的システムとして捉え、信号を「チャネル」に、ノイズをテストに影響しない「リザーバー」に分離する理論で説明する。",
+    "summaryBody": "本記事は、スタンフォード大学のDiffusion Groupによる深層学習の汎化に関する新しい理論を解説しています。従来の統計的学習理論では説明できない「良性の過学習（Benign Overfitting）」や「二重降下現象」に対し、経験的ニューラルタンジェントカーネル（eNTK）を用いた出力空間での動的システム解析を提案しています。著者は、学習軌道全体を積分した演算子を定義し、学習データに含まれる信号が「チャネル」に、ノイズがテスト予測に影響を与えない「リザーバー（核）」に分離される仕組みを数学的に証明しました。これにより、暗黙的バイアスやグロッキング現象を統一的に解釈できるだけでなく、バリデーションセットを必要とせずに汎化性能を直接最適化する、Adamへの一行の変更で実装可能な新しいアルゴリズムも提示しています。",
+    "topics": [
+      "深層学習理論",
+      "汎化性能 (Generalization)",
+      "ニューラルタンジェントカーネル (NTK)",
+      "グロッキング (Grokking)",
+      "二重降下 (Double Descent)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 95
+    },
+    "originalTitle": "A Theory of Deep Learning"
+  }
+}

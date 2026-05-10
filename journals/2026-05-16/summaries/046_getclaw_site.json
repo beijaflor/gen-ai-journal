@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:15:36.891452+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "claw — あらゆるLinux環境で動作する軽量なPOSIX-sh製LLMエージェント",
+    "url": "https://getclaw.site/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "curlとjqのみに依存するPOSIX shで書かれた、シェル操作・履歴管理・ペルソナ定義が可能なポータブルなLLMエージェント。",
+    "summaryBody": "clawは、PythonやNode.jsなどのランタイムを一切必要とせず、標準的なシェル（sh）、curl、jqのみで動作する極めて軽量なLLMエージェントです。OpenAIやAnthropicのAPIをバックエンドとして利用し、ターミナル上での対話型ストリーミングチャットを提供します。\n\n主な機能と特徴は以下の通りです：\n- **シェルツール実行**: LLMが生成したシェルコマンドを直接実行し、その結果をフィードバックとして受け取れます（要確認・自動の切替可能）。\n- **ローリングメモリ**: 会話履歴が溜まるとLLMが自動的にセッションルールやMarkdown形式のジャーナルへと要約・圧縮し、長期的なコンテキスト維持を可能にします。\n- **ゼロ依存**: Alpine Linuxコンテナ、VM、安価なVPSなど、最小限の環境で動作。単一の実行ファイルをダウンロードするだけでセットアップが完了します。\n- **拡張性**: `soul.md`ファイルによるキャラクター設定（ペルソナ）や、Markdownファイルによるカスタムナレッジの追加（Skills機能）に対応しています。\n- **セッション管理**: 名前付きセッションをサポートし、プロジェクトごとに履歴やルールを分離して管理できます。\n\nサーバー管理やスクリプト作成、システムのトラブルシューティングを、追加の環境構築なしでAIに支援させたい開発者やSREにとって非常に実用的なツールです。",
+    "topics": [
+      "LLMエージェント",
+      "シェルスクリプト",
+      "Linux",
+      "AIツール",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "claw — Tiny POSIX-sh Shell Agent for any Linux box"
+  }
+}

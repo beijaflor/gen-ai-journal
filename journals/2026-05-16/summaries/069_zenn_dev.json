@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:09:37.709360+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI coding agent を使い続けるために、自分の開発環境の権限棚卸しをした",
+    "url": "https://zenn.dev/yamk/articles/ai-agent-permission-inventory",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントに渡す権限を可視化し、サプライチェーン攻撃のリスクを抑えつつ安全に開発を続けるための「一拍置く」運用と棚卸し手法の提案。",
+    "summaryBody": "AIコーディングエージェント（Claude CodeやCodex等）を「便利なチャット」ではなく「強い権限を持つ実行プロセス」と再定義し、個人開発者が安全に運用するための権限棚卸し手法を紹介しています。近年のサプライチェーン攻撃が開発環境のトークンやCI/CD環境を標的にしている現状を踏まえ、エージェントが操作可能な範囲（リポジトリ、シェル、環境変数、GitHubトークン）をマトリックス化して整理。具体的な対策として、メインブランチへの直接反映を避ける運用や、GitHub Actionsワークフロー、.env、デプロイ設定といった「危険ファイル」の変更をAI任せにせず手動で確認するルールを提唱しています。また、Claude Codeの`settings.json`を用いた権限制限の実践例を挙げ、利便性を損なわずに「うっかり事故」を防ぐための軽いガードの重要性を説いています。",
+    "topics": [
+      "AI Coding Agent",
+      "セキュリティ",
+      "Claude Code",
+      "GitHub",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

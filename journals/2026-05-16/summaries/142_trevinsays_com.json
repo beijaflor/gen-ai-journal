@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-09T06:05:57.251462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに最適化されたCLI設計の10原則",
+    "url": "https://trevinsays.com/p/10-principles-for-agent-native-clis",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを主要な利用者と想定し、確実な自動化と一貫性を実現するための10の設計原則を提示している。",
+    "summaryBody": "本記事は、人間ではなくAIエージェントを第一のユーザーとして設計する「エージェント・ネイティブ」なCLIの重要性を説いている。設計指針は2つのティアに分かれており、ティア1では非対話モードの必須化、構造化出力(JSON)、詳細なエラー提示、冪等性の確保、応答の制限といった基本的な堅牢性を重視する。ティア2では、複数ツール間での語彙の統一、機械判読可能なイントロスペクション、非同期処理の隠蔽(--wait)、プロファイルによる設定管理、柔軟な出力形式(--deliver)といった、エージェントの能力を拡張し利用体験を向上させる要素を定義している。CloudflareやHeyGenの事例を基に、手動の整合性チェックではなく、スキーマ駆動のコード生成による自動的な品質維持を推奨しており、エージェント向けの設計が結果として人間にとっても優れたインターフェースになることを強調している。",
+    "topics": [
+      "CLI設計",
+      "AIエージェント",
+      "LLM",
+      "API設計",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": "10 Principles for Agent-Native CLIs"
+  }
+}

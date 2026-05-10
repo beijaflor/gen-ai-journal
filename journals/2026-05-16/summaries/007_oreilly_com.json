@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:25:17.480823+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルAI：独自ハードウェアでのLLM実行",
+    "url": "https://www.oreilly.com/radar/local-ai/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コスト、プライバシー、地域的ニーズの観点から、クラウドAPIに依存せず独自のハードウェアでLLMを動かす「ローカルAI」が急速に実用性を高めている現状と、主要なオープンウェイトモデルの動向を解説する。",
+    "summaryBody": "この記事では、Gemma 4やDeepSeekなどの「オープンウェイトモデル」が進化し、クラウド上の「フロンティアモデル」に匹敵する性能を持ち始めたことで、ローカルAIの実行が現実的な選択肢となった背景を詳述しています。ローカル実行の主な動機として、月額数百ドルに達するAPIコストの削減、GDPR等のデータ主権遵守、低遅延なレスポンス、そして特定のドメインへのファインチューニングの自由度が挙げられています。特に中国や欧州、新興国では、ハードウェア制約やプライバシー懸念から効率的なローカルモデル（Qwen, GLM, Sunflower等）の開発が活発です。一方で、ローカル環境特有の同時実行性能の限界や、トレーニングデータの不透明性によるセキュリティリスク、プロンプトインジェクションへの脆弱性といった課題も指摘されています。結論として、フロンティアモデルとの性能差は縮まり続けており、データ管理とコスト効率を重視する開発者にとって、ローカルAIは不可欠な選択肢になりつつあります。",
+    "topics": [
+      "Local AI",
+      "LLM",
+      "Gemma 4",
+      "Open-Weight Models",
+      "Data Sovereignty"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Local AI – Running LLMs on your own hardware"
+  }
+}

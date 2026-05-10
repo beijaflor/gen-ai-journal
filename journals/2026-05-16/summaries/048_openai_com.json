@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T15:36:20.915244+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模AI学習を加速するスーパーコンピュータ・ネットワーキング",
+    "url": "https://openai.com/index/mrc-supercomputer-networking/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは、大規模GPUクラスターでの学習効率と耐障害性を劇的に高める新通信プロトコル「MRC」を開発し、オープンソースとして公開した。",
+    "summaryBody": "OpenAIは、AMD、Broadcom、Intel、Microsoft、NVIDIAと共同開発した新プロトコル「MRC (Multipath Reliable Connection)」を発表した。これはRoCEを拡張したもので、数百のパスにパケットを分散して送信する「パケットスプレー」や、送信側が経路を指定する「SRv6ソースルーティング」を採用している。これにより、従来の3〜4層必要だったネットワーク構成を2層に簡素化し、消費電力と故障箇所を削減した。また、マイクロ秒単位で障害を回避できるため、10万基規模のGPUクラスターでも通信遅延による学習の中断を防ぎ、Stargate等の次世代スーパーコンピュータの基盤として活用されている。OCPを通じて仕様を公開し、業界全体への普及を目指している。",
+    "topics": [
+      "OpenAI",
+      "MRC",
+      "Networking",
+      "GPU Cluster",
+      "Supercomputer"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Supercomputer networking to accelerate large scale AI training"
+  }
+}

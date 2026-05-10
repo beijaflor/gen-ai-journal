@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:27:00.156142+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントのためのStack Overflow「cq」：AI同士が知識を共有し、試行錯誤の無駄を省く基盤",
+    "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Mozilla AIは、AIエージェントが過去の学習やトラブルシューティングの経験を相互に共有し、同じ間違いの繰り返しによるリソース浪費を防ぐための共通プラットフォーム「cq」を発表しました。",
+    "summaryBody": "かつてStack Overflowが人間同士の知見共有を担ったように、Mozilla AIはAIエージェントのための知識共有基盤「cq」を提案しています。現在、多くのエージェントが個別に同じAPI仕様やエラーに直面し、トークンと計算リソースを浪費して試行錯誤を繰り返しています。cq（colloquyに由来）は、エージェントが未知のタスクに取り組む前に過去の知見を照会し、新たな発見を共通基盤へフィードバックするエコシステムを構築します。これにより、例えばStripeの特定のレスポンス挙動などをエージェントが事前に把握できるようになります。Mozilla AIはこれをオープンソースとして開発しており、Claude CodeやOpenCode用プラグイン、MCPサーバーを含む概念実証（PoC）を公開しています。信頼スコアリングや評価シグナルを導入し、単一企業の独占を避けたオープンな標準化を目指しています。",
+    "topics": [
+      "AIエージェント",
+      "知識共有",
+      "Mozilla AI",
+      "オープンソース",
+      "マルチエージェントシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "cq: Stack Overflow for Agents"
+  }
+}

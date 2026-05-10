@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:47:48.953471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・ネイティブのプロダクトマネジメント：AIを活用した次世代PMワークフロー・ガイド",
+    "url": "https://every.to/guides/ai-product-management-guide",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントと対話しながら戦略立案、チケット管理、メトリクス分析を行う「エージェント・ネイティブ」なPM手法と、それを実現するプラグイン「compound-engineering」の活用法を解説したガイド。",
+    "summaryBody": "AIエージェントの台頭により、プロダクトマネジャー（PM）の仕事は「チケット作成」や「SQLクエリの記述」といった定型的な事務作業から、エージェントとの「対話を通じた意思決定」へと劇的に変化しています。本記事では、Every社が提供するオープンソースプラグイン「compound-engineering」を用いた、ポストAI時代のPMワークフローを解説しています。\n\n主な特徴的な機能は以下の2点です：\n1. **戦略立案 (`ce:strategy`)**: リチャード・ルメルトのフレームワークに基づき、エージェントがインタビュー形式でターゲット、アプローチ、KPIを整理し、`strategy.md`を自動生成します。\n2. **プロダクト・パルス (`ce:product-pulse`)**: PostHogやStripe、SentryなどのツールをMCP経由で連携し、利用状況やエラー、システム負荷をエージェントが自動で要約・分析して報告します。\n\nこのアプローチでは、従来の「プラン20%：実行80%」の比率を「プラン80%：実行20%」へと逆転させ、PMはより創造的な設計やユーザーとの対話に集中できる環境を構築することを目指しています。",
+    "topics": [
+      "AIエージェント",
+      "プロダクトマネジメント",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "コンパウンド・エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": "Agent-native Product Management"
+  }
+}

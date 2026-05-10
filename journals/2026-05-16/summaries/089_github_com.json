@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:48:24.911468+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Irodori-TTS: 絵文字によるスタイル制御が可能なFlow Matchingベースの日本語TTSモデル",
+    "url": "https://github.com/Aratako/Irodori-TTS",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Flow MatchingとRectified Flowを採用し、テキストや絵文字による指示で声色を自在に操れる「Voice Design」機能を備えた日本語特化型の高音質音声合成モデル。",
+    "summaryBody": "Aratako氏によって公開された「Irodori-TTS」は、Echo-TTSの設計思想を継承したFlow Matchingベースのテキスト読み上げ（TTS）リポジトリです。Rectified Flow Diffusion Transformer (RF-DiT) を採用し、DACVAEを用いた48kHzの高品質な音声生成を実現しています。最大の特徴は「Voice Design」機能で、参照音声なしでも「落ち着いた女性の声」といったテキスト指示（キャプション）や絵文字から話者のスタイルを制御できます。また、少量の参照音声を用いたゼロショット・ボイスクローニングや、PEFT/LoRAによる効率的なファインチューニング、Muonオプティマイザのサポートなど、最新の深層学習技術が凝縮されています。現在、500Mパラメータのv2モデルが公開されています。",
+    "topics": [
+      "TTS",
+      "Flow Matching",
+      "Voice Cloning",
+      "Japanese NLP",
+      "PyTorch"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Aratako/Irodori-TTS: A Flow Matching-based Text-to-Speech Model with Emoji-driven Style Control"
+  }
+}

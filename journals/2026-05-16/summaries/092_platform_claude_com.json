@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:47:06.399949+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Workload Identity Federation - Claude API ドキュメント",
+    "url": "https://platform.claude.com/docs/en/manage-claude/workload-identity-federation",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude APIにおいて、静的な長期APIキーの代わりにAWSやGitHub ActionsなどのIDプロバイダーが発行する短命なOIDCトークンを使用して認証を行う「Workload Identity Federation」の技術ドキュメント。",
+    "summaryBody": "Anthropicが提供するClaude APIの新しい認証オプション、Workload Identity Federation（WIF）の解説です。この機能により、開発者は静的なAPIキー（`sk-ant-...`）を管理・保管・更新する必要がなくなり、AWS IAM、Google Cloud、GitHub Actions、Kubernetes、OktaなどのOpenID Connect (OIDC) 準拠プロバイダーから発行される数分で失効する一時的なトークンを用いたセキュアな認証が可能になります。\n\n仕組みとしては、ワークロードがIdPから取得したJWTをAnthropicに提示し、事前に設定した信頼ルール（Federation Rules）に基づいて、短命なAnthropicアクセストークン（`sk-ant-oat01-...`）へと交換します。SDKはこの交換と自動リフレッシュをバックグラウンドで処理するため、アプリケーションコードの変更を最小限に抑えつつセキュリティ体制を強化できます。主な構成要素として、非人間用アイデンティティである「サービスアカウント」、プロバイダーを登録する「フェデレーションイッシュー」、そしてJWTのクレームと権限を紐付ける「フェデレーションルール」の3点についても詳細に説明されています。",
+    "topics": [
+      "Anthropic",
+      "Claude API",
+      "Workload Identity Federation",
+      "OIDC",
+      "Cloud Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Workload Identity Federation - Claude API Docs"
+  }
+}

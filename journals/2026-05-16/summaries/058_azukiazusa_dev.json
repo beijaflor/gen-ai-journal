@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:12:30.957753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex を利用した iOS アプリ開発を試してみた",
+    "url": "https://azukiazusa.dev/blog/ios-app-development-with-codex/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Web開発者がAIエージェントCodexを活用し、SwiftUIでのiOSアプリ開発の環境構築からTODOアプリの実装、さらにMV構造へのリファクタリングまでを実践的に学習した記録。",
+    "summaryBody": "iOSアプリ開発未経験のWeb開発者が、コーディングエージェント「Codex」とMCP（Model Context Protocol）サーバーである「build-ios-apps」プラグインを使用してアプリ開発を行う過程を詳細に解説した記事です。内容は単なる自動生成に留まらず、SwiftUI特有のデータ構造（struct, Codable, Identifiable）、状態管理（@State, Binding）、およびプロジェクト構成の基礎をCodexに質問しながら理解を深めるプロセスに焦点を当てています。具体的には、xcodebuildを用いたシミュレータ上でのビルド・検証ループ、Computer UseツールによるGUI操作、そして最終的なコードの責務分離（Views/Models/Services）のリファクタリングまでをカバーしています。AIを学習ツールとして活用し、開発の民主化を体現する試みとなっています。",
+    "topics": [
+      "Codex",
+      "SwiftUI",
+      "MCP",
+      "iOS開発",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

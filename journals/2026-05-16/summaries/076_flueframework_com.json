@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:07:38.361445+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Flue — TypeScriptベースの自律型エージェント・ハーネス・フレームワーク",
+    "url": "https://flueframework.com/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeScriptでエージェントの実行環境（ハーネス）を定義し、サンドボックス、再利用可能なスキル、セキュアな環境変数管理を統合して、多様なプラットフォームへデプロイ可能にするフレームワーク。",
+    "summaryBody": "Flueは、Claude CodeやCodexのような高度な自律型エージェントを構築するためのTypeScriptフレームワークです。「エージェント = モデル + ハーネス」という考え方に基づき、プロンプト制御だけでなく、ファイルシステム操作、サンドボックス内でのBash実行、構造化出力を伴う『スキル』の定義などをプログラマブルに管理できます。最大の特徴は『Write once, deploy anywhere』を掲げている点であり、同一のコードをNode.js、Cloudflare Workers、GitHub Actions、Vercelなど、HTTPサーバーやCLIツールとしてあらゆる環境にデプロイ可能です。仮想サンドボックス機能により、ホスト環境を汚さずにエージェントへPythonやBashの実行権限を安全に付与できる実戦的な設計となっています。",
+    "topics": [
+      "AI Agents",
+      "TypeScript",
+      "LLM Framework",
+      "Sandbox",
+      "Autonomous Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Flue — The Agent Harness Framework"
+  }
+}

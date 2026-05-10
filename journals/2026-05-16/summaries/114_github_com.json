@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-08T06:46:16.267945+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "adam: C言語で構築された埋め込み型クロスプラットフォームAIエージェントライブラリ",
+    "url": "https://github.com/sqliteai/adam",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "「エージェント界のSQLite」を目指す、C言語で書かれた軽量・ポータブルかつ多機能な埋め込み型AIエージェント開発用ライブラリ。",
+    "summaryBody": "Adamは、C言語で開発されたクロスプラットフォーム対応のAIエージェントライブラリです。「Agentフレームワーク界のSQLite」をコンセプトに、軽量さとポータビリティを重視しています。クラウドLLM（Anthropic, OpenAI, Google Gemini等）とローカルLLM（llama.cpp）の両方を統一的なインターフェースでサポート。ツール呼び出し、長期記憶（BM25とベクトル検索のハイブリッド）、音声処理（STT/TTS）、セッション永続化、WASM対応など、エージェント構築に必要な機能を網羅しています。また、SQLiteやPostgreSQLの拡張機能として組み込むことが可能で、データベース内で直接自然言語によるデータ操作を実現します。メモリアリーナによる効率的な管理やサンドボックス化されたツール実行環境など、堅牢な設計が特徴です。",
+    "topics": [
+      "AIエージェント",
+      "C言語",
+      "組み込みシステム",
+      "LLM",
+      "SQLite"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - sqliteai/adam: An embeddable cross-platform AI agent library written in C. Cloud and local LLMs, tool calling, long-term memory, voice, sessions, research mode, self-evolving loops. The SQLite of agent frameworks: small, portable, just works. · GitHub"
+  }
+}

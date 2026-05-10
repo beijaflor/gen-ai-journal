@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T13:14:09.540641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハードウェアバディでClaudeとおともだち",
+    "url": "https://qiita.com/moritalous/items/cd53aec76db1dec20862",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Desktopのハードウェア連携機能を、M5Stack Core2 For AWSとMicroPythonを用いて独自に実装し、物理デバイスとClaudeを接続する手順を解説した記事です。",
+    "summaryBody": "Claude Desktopの機能「ハードウェアバディ（物理デバイス連携機能）」を、公式推奨のM5 StickC Plus以外のハードウェアであるM5Stack Core2 For AWSで動作させた実験レポートです。公式のC++ソースコードではなく、ドキュメント化された通信仕様に基づきMicroPythonで再実装を行っています。主な内容として、esptoolを用いたファームウェアの書き込み、mpremoteによるスクリプト転送、BLE（Bluetooth Low Energy）通信における非暗号化・暗号化方式の挙動、およびWindows環境におけるペアリング情報の削除といったハマりポイントが共有されています。また、Claude Codeのキャラクターをディスプレイに表示させる試みについても触れられています。",
+    "topics": [
+      "Claude",
+      "M5Stack",
+      "MicroPython",
+      "IoT",
+      "BLE"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 78
+    }
+  }
+}
