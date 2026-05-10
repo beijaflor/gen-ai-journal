@@ -1,6 +1,6 @@
 ## LLMエージェントによるテーブル結合（Deep Merge）の課題解決ガイド
 
-https://futuresearch.ai/deep-merge-tutorial/
+https://futuresearch.ai/blog/deep-merge-tutorial/
 
 **Original Title**: How LLM Agents Solve the Table Merging Problem
 
