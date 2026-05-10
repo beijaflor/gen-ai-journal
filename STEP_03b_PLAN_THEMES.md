@@ -193,19 +193,35 @@ For each theme:
 
 **⚠️ WORKFLOW STOPS HERE - HUMAN APPROVAL REQUIRED ⚠️**
 
-#### 8. Review and Refine Editorial Plan
+This gate is enforced by the **`human-review-gate` skill**
+(`.claude/skills/human-review-gate/SKILL.md`). The agent invokes the skill;
+the skill opens the planning document in a tmux popup running vim, blocks
+until the human closes the editor, and verifies that a checked approval line
+is present. The agent **must not** check the approval line itself — the human
+authors it inside vim.
 
-**Human Editor Tasks:**
+#### 8. Review and Refine Editorial Plan (in vim popup)
 
-- [ ] Review proposed themes for coherence
-- [ ] Verify article-to-theme mappings make editorial sense
-- [ ] Refine theme titles for clarity and specificity
-- [ ] Edit theme introductions to be factual and concise
-- [ ] Adjust highlight outline to capture week's essence
-- [ ] Reassign articles between themes as needed
-- [ ] Decide which articles belong in main vs. annex
+**Agent invokes the gate:**
 
-**Quality Checks:**
+```bash
+bash scripts/review_in_popup.sh \
+  workdesk/editorial_plan_YYYY_MM_DD.md \
+  '^- \[x\] APPROVED - Ready for STEP_04 curation'
+```
+
+The popup opens vim on the planning document. While inside the popup, the
+**human editor**:
+
+- [ ] Reviews proposed themes for coherence
+- [ ] Verifies article-to-theme mappings make editorial sense
+- [ ] Refines theme titles for clarity and specificity
+- [ ] Edits theme introductions to be factual and concise
+- [ ] Adjusts highlight outline to capture the week's essence
+- [ ] Reassigns articles between themes as needed
+- [ ] Decides which articles belong in main vs. annex
+
+**Quality Checks (human runs through this list inside vim):**
 
 - [ ] Are themes well-grouped by topic?
 - [ ] Does the plan present articles factually without manufactured narratives?
@@ -217,12 +233,20 @@ For each theme:
 - [ ] If any theme has fewer than 3 articles, is there documented justification? (Single-article themes are permitted for truly exceptional content — see STEP_04 Section 4 for criteria.)
 - [ ] Do themes align with curation_criteria.md principles?
 
-#### 9. Mark Plan as Approved
+When satisfied, the human flips the unchecked approval line under "Planning
+Status" from `- [ ] APPROVED ...` to `- [x] APPROVED ...` and writes/quits.
+The skill verifies the marker and returns:
 
-- [ ] Update "Planning Status" section in editorial_plan_YYYY_MM_DD.md
-- [ ] Check ✅ "APPROVED - Ready for STEP_04 curation"
-- [ ] Add review notes documenting any changes
-- [ ] Commit planning document to git
+- Exit `0` → approval found, proceed to step 9.
+- Exit `1` → no approval marker; agent reads the file for inline edits/comments,
+  asks the human what revisions are needed, applies them, then **re-invokes
+  the gate**.
+- Exit `2` → no tmux session detected; agent falls back to chat-based
+  approval per the skill's §4 (file-based check still required).
+
+#### 9. Commit Approved Plan
+
+After the gate returns exit `0`, commit:
 
 ```bash
 git add workdesk/editorial_plan_YYYY_MM_DD.md
