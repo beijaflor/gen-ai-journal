@@ -54,6 +54,7 @@
 - [x] 237. https://maguro.dev/blog/the-era-of-humans-writing-code-is-over/
 - [x] 238. https://code.claude.com/docs/en/best-practices
 - [x] 239. https://xenospectrum.com/claude-code-ports-cuda-to-rocm-nvidia-moat-analysis/
+- [x] 240. https://news.ycombinator.com/item?id=46668424
 - [x] 001. https://uxdesign.cc/the-case-for-the-uncertain-ai-why-chatbots-should-say-im-not-sure-8d8b4d2bab89
 - [x] 002. https://www.seangoedecke.com/gas-and-ralph/
 - [x] 003. https://old.reddit.com/r/webdev/comments/1qcxres/vibe_coding_is_a_blight_on_opensource/
