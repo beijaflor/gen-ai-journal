@@ -38,6 +38,21 @@ This repository creates weekly curated journals about Generative AI in coding, f
   - Uses `uv run scripts/bulk_summarize.py` for batch operations
   - Marks URLs as checked after successful summary generation
 
+- **human-review-gate skill**: Blocking review of AI-drafted planning documents
+  - Invoked at every "AI drafts → human reviews → AI proceeds" handoff
+    (currently STEP_03b editorial plan approval and STEP_07 assembly strategy
+    approval; any future planning gate must use this skill)
+  - Opens the file in a tmux popup running vim via
+    `scripts/review_in_popup.sh`, blocks until the human closes vim, then
+    verifies a checked approval line (`- [x] APPROVED ...`) exists
+  - **Hard rule: the agent must NOT write the `[x]` itself** — the human
+    authors the approval marker inside vim. The agent writes the line as
+    `- [ ]` only; flipping it is the human's signal.
+  - Falls back to chat-based `AskUserQuestion` confirmation (still file-based
+    grep-checked) when not running inside a tmux session
+  - If the agent edits a planning document after a successful gate, the prior
+    approval does not cover the new content — re-invoke the skill
+
 ## Frequently Used Commands
 ```bash
 # Create journal directory structure

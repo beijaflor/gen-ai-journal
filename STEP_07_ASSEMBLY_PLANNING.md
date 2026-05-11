@@ -222,9 +222,27 @@ For each theme, add to editorial plan:
   - AI and human customize (Phase 2 Step 3)
   - AI documents assembly strategy
 
-- [ ] Human reviews complete assembly plan
+- [ ] Once all themes have a documented assembly strategy, **invoke the
+  `human-review-gate` skill** to gate progression to STEP_08:
 
-- [ ] Human approves: ✅ ASSEMBLY STRATEGIES APPROVED
+  ```bash
+  bash scripts/review_in_popup.sh \
+    workdesk/editorial_plan_YYYY_MM_DD.md \
+    '^- \[x\] ASSEMBLY PLAN APPROVED - Ready for STEP_08'
+  ```
+
+  This is a **re-review** of the same file approved at STEP_03b — the
+  STEP_03b approval does not cover the new ASSEMBLY STRATEGIES section.
+  The skill opens the file in a tmux popup running vim, blocks until the
+  editor closes, and verifies the human flipped
+  `- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08` to `- [x] ...`.
+
+  - Exit `0` → proceed to STEP_08.
+  - Exit `1` → revise the assembly strategies based on the human's edits
+    and re-invoke.
+  - Exit `2` → fall back to the skill's chat-based confirmation (§4).
+
+  See `.claude/skills/human-review-gate/SKILL.md` for the full contract.
 
 ---
 
@@ -293,7 +311,11 @@ For each theme, add to editorial plan:
 - [x] Phase 1: Pattern library reviewed
 - [x] Phase 2: Patterns selected and customized for all themes
 - [x] Phase 3: Assembly strategies documented
-- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+> The agent leaves `ASSEMBLY PLAN APPROVED` **unchecked** when generating the
+> document. The human flips it to `[x]` inside the `human-review-gate` vim
+> popup; the agent must not check it.
 
 **Approval Date:** [YYYY-MM-DD]
 **Approver:** [Human Editor Name]
