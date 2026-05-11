@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:53:33.715155+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VRAM8GBの汎用PCに高性能LLM Qwen3.6-35Bを稼働させる: 人工知能深訪",
+    "url": "https://zenn.dev/dozo/articles/49ff5d14569116",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MoE技術とLM Studioを組み合わせることで、8GB VRAMの一般家庭用PCでも350億パラメータの高性能LLMを実用的に動作させる設定手法を解説。",
+    "summaryBody": "本記事は、メモリリソースの限られた環境で大規模言語モデル（LLM）を効率的に動作させるためのテクニックを解説しています。特にMoE（混合専門家）アーキテクチャを採用したモデルが、8GB VRAMのGPUでも実用的な速度で動作可能であることを、LM Studioを用いた具体的な設定手順とともに示しています。GPU Offload機能によるCPUとGPUへの計算負荷分散、コンテキスト長の最適化、そしてK/Vキャッシュの量子化といった高度なメモリ節約術を紹介しており、限られたハードウェア資産で最新のAI開発環境を構築したいエンジニアにとって極めて実用性の高い内容となっています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen3.6",
+      "LM Studio",
+      "MoE",
+      "VRAM節約"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

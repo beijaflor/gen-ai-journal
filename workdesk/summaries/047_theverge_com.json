@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:56:23.094173+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChromeのAI機能がPCストレージを4GBも占有している可能性",
+    "url": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Google ChromeのGemini NanoによるオンデバイスAI機能が、ユーザーへの明確な通知なしに約4GBのモデルファイルをダウンロードし、ストレージを圧迫していることが判明した。",
+    "summaryBody": "Google Chromeにおいて、Gemini Nanoを搭載したオンデバイスAI機能（詐欺検出、執筆支援、オートフィル、提案機能など）を有効にしている場合、ブラウザのシステムフォルダ内に「weights.bin」という約4GBの巨大なファイルが自動的にダウンロード・保存される。このファイルはローカルでAIを動かすための学習パラメータであり、プライバシー保護の観点では有利だが、ストレージ残量の少ないユーザーにとっては大きな負担となっている。\n\nユーザーがファイルを手動で削除しても、AI設定が有効な限りChromeによって再ダウンロードされるため、ストレージを解放するには設定画面の「システム」項目にある「オンデバイスAI（On-Device AI）」オプションをオフにする必要がある。Google側は、デバイスのリソースが少ない場合には自動的にアンインストールされる仕様であると説明しているが、導入時にこのファイルサイズに関する明確な通知が行われていない点が問題視されている。",
+    "topics": [
+      "Google Chrome",
+      "Gemini Nano",
+      "オンデバイスAI",
+      "ストレージ容量",
+      "ブラウザ設定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Chrome’s AI features may be hogging 4GB of your computer storage"
+  }
+}

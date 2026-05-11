@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:52:19.306380+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを\"使いこなす\"ための個人ルール設定 - 実際にやって効果が高かった設定",
+    "url": "https://zenn.dev/dotdtech_blog/articles/92348ee48cc692",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの効率と精度を最大化するために、CLAUDE.mdでのプロンプト定義やsettings.jsonによるコンテキスト圧縮・ステータスラインのカスタマイズ手法を解説した実践ガイド。",
+    "summaryBody": "Claude Codeを日常的に利用するエンジニアに向けて、作業効率を劇的に改善する「個人ルール設定」のノウハウをまとめた記事です。主なカスタマイズ対象は、グローバル設定ファイル（~/.claude/CLAUDE.md）と環境設定（settings.json）の2点です。具体的には、無駄な挨拶や前置きを排除する「回答スタイル」、git操作の前処理を自動化する「ブランチ管理」、実装の意図を明文化させる「コード説明ルール」といったプロンプト設定を紹介しています。さらに、CLI上にコストやコンテキスト使用率を表示するカスタムステータスラインのスクリプト実装や、回答精度の低下を防ぐために自動コンパクションの閾値をデフォルトの95%から60%へ変更する設定など、開発体験を向上させるための実戦的なTipsが網羅されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI開発ツール",
+      "プロンプトエンジニアリング",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

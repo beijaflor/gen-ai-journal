@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:55:31.062437+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code /btwコマンドを試した：サイドクエスチョンの使い所と/rewind・subagentとの使い分け",
+    "url": "https://qiita.com/dev-shin/items/163b2db50eb24d6388ae",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの新機能「/btw」コマンドの特性を検証し、subagentや/rewind、/forkといった既存機能との使い分け基準を明確化した実用ガイド。",
+    "summaryBody": "Anthropicが提供するCLIツール「Claude Code」に新しく追加された`/btw` (By the way) コマンドの詳細解説です。このコマンドは、メインの対話フローを中断したり履歴を汚したりすることなく、現在のコンテキストに基づいた「ちょっとした質問」をオーバーレイ形式で実行できる機能です。最大の特徴は、既存の会話コンテキストをすべて引き継ぎつつも、ファイル読み込みやコマンド実行などのツール使用はできない点にあります。本記事では、長時間タスク実行中の利用や、会話履歴に残らない一時的な確認といった具体的なシナリオを検証。また、「既知の情報確認は/btw」「新規の調査はsubagent」「履歴の巻き戻しは/rewind」といった、開発効率を最大化するための使い分けチャートを提示しています。プロンプトキャッシュを再利用するため追加トークンコストが最小限である点も、実用上の大きなメリットとして挙げられています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "CLI",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:04:00.130491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のリッチテキスト形式：MarkdownとHTMLの役割分担",
+    "url": "https://blog.lai.so/ai-rich-text-format/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI生成の出力形式がMarkdownからHTMLへ移行する流れを分析し、閲覧・対話用の「パブリッシュ先」と、編集・移植用の「中間素材」という2つの役割分担を提唱する。",
+    "summaryBody": "AnthropicのClaude Codeチームによる「HTML is the new Markdown」という主張を起点に、AI時代のドキュメント形式の変遷を考察した記事。かつてはトークン効率や推論の制約からMarkdownが選ばれていましたが、モデルの進化とコンテキストウィンドウの拡大により、リッチな表現（SVG、インタラクション、ページ内ナビゲーション）が可能なHTMLが「パブリッシュ先（閲覧・フィードバック用）」として再評価されています。\n\n本稿では、AI生成物を以下の2つに分類して整理しています：\n- **パブリッシュ先（HTML）**: 閲覧が主目的の到達点。PRレビュー、教材、分析レポートなど。DOM構造を持つため、特定の要素を選択してAIに修正指示を出すUI（ArtifactsやCanvas等）と相性が良い。\n- **中間素材（Markdown）**: AIが開発時に読み込む素材や、人間との編集サイクル、ツール間のポータビリティ（NotionやSlack等への貼り付け）を重視する場面で依然として優位。\n\n結論として、HTMLがMarkdownを置換するのではなく、用途に応じた「分業」が進んでいると指摘しています。",
+    "topics": [
+      "AI出力フォーマット",
+      "Markdown",
+      "HTML",
+      "Claude Artifacts",
+      "UXデザイン"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 88
+    }
+  }
+}

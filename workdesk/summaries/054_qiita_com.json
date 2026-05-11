@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:54:48.631937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex AppのComputer Useは何をしているのか",
+    "url": "https://qiita.com/TaigoKuriyama/items/850a26760fc3c8d111ad",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codex AppのComputer Use機能の内部構造を、インストールディレクトリの構成やMCPサーバーの挙動、アクセシビリティ情報の活用状況から分析・解説した記事。",
+    "summaryBody": "macOS版Codex Appに搭載された「Computer Use」機能の仕組みを技術的に分析した記事です。この機能は、MCP（Model Context Protocol）サーバーとSkillを組み合わせたプラグインとして実装されており、内部的にはOpenAIが買収したSky社の技術と思われるネイティブバイナリ（SkyComputerUseClient/Service）が動作しています。最大の特徴は、単なるスクリーンショットの画像解析だけでなく、macOSのアクセシビリティAPIから取得した構造化データ（アクセシビリティツリー）を併用している点にあります。これにより、UI要素をインデックスで正確に指定できるため、画像のみのアプローチよりも高速かつ安定した操作が可能になっています。また、付属のSKILL.mdにはPrompt Injection対策や、機密情報の取り扱い、金融取引時の確認フローなど、詳細なAI用ガードレールが定義されていることも明らかにされています。",
+    "topics": [
+      "Codex",
+      "Computer Use",
+      "MCP",
+      "OpenAI",
+      "macOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

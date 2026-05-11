@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:07:34.191617+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「30分でClaude Codeを極める」（Anthropic公式ワークショップ / Boris Cherny登壇）",
+    "url": "https://note.com/vueloo_blog/n/n9d3f08d86730",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicの開発者が教える、CLI型AIエージェント「Claude Code」を実戦で使いこなすためのセットアップ、ワークフロー最適化、チーム共有、SDK活用までの徹底解説。",
+    "summaryBody": "Anthropicの技術スタッフでありClaude Codeの開発者でもあるBoris Cherny氏による、実践的なワークショップの要約記事です。Claude Codeを単なる補完ツールではなく、ファイル検索から編集、Git操作までこなす「エージェント」として最大限活用するためのステップが紹介されています。\n\n主なポイントは以下の通りです：\n- **導入とQ&A**: 初心者はまずコードベースへの質問から始めることで、ツールの能力と境界線を理解する。インデックス作成不要で、オンボーディング時間を劇的に短縮可能。\n- **高度な編集**: 「計画を立てさせてから実行させる」ワークフローや、`commit, push, pr`の一括自動化、音声入力の活用による効率化。\n- **コンテキスト管理**: `CLAUDE.md`ファイルを用いて、プロジェクト固有のルールやコーディング規約を自動でClaudeに読み込ませる手法。\n- **チーム連携と拡張性**: MCP（Model Context Protocol）サーバーの共有、プロジェクトや組織単位での権限設定、そしてSDKを用いたCI/CDや自動化パイプラインへの組み込み。\n\n開発者が意図した「エンジニアの自由度を奪わないパワーツール」としての使いこなし方が網羅されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

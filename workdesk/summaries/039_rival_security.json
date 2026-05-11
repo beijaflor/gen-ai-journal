@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:58:24.978894+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude MythosによるCVEの「発見」：学習データ内の既知の脆弱性が示す真の脅威",
+    "url": "https://rival.security/posts/mythos-discovered-a-cve-already-in-its-training-data---and-thats-still-worrying",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAI「Claude Mythos」が発見したFreeBSDの脆弱性は、実は2007年の既知の脆弱性の「再発見」であり、AIが学習データに基づきレガシーな脆弱性を高速に特定・悪用する脅威を浮き彫りにした。",
+    "summaryBody": "Anthropicが発表したAIモデル「Claude Mythos」によるFreeBSDのカーネル脆弱性（CVE-2026-4747）の発見に対し、Rival Researchが詳細な調査を実施した。その結果、この「新発見」は2007年にMIT Kerberosで修正された古い脆弱性（CVE-2007-3999）とほぼ同一のコードに起因することが判明した。FreeBSDが過去に実装をコピーした際、修正が漏れていたレガシーなバグをAIが「再発見」した形となる。\n\n本記事は、AIが真に独創的な脆弱性を見つけたわけではなく、学習データに含まれるパターンを照合した可能性が高いことを指摘している。しかし、これはAIの脅威を低減させるものではない。むしろ、AIが安価かつ高速に「埋もれた既知の脆弱性」を特定・悪用できる能力を持つことを意味しており、人間によるコード管理の限界を露呈させている。結論として、攻撃側がAIを活用するスピードに対抗するためには、防御側も自律的なエージェント（Agentic Defense）による迅速なパッチ適用が不可欠であると警鐘を鳴らしている。",
+    "topics": [
+      "AI Security",
+      "Claude Mythos",
+      "CVE-2026-4747",
+      "FreeBSD",
+      "Vulnerability Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Mythos 'Discovered' a CVE Already in Its Training Data - and That’s Still Worrying"
+  }
+}

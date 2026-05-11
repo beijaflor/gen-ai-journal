@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:55:18.406984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeCodeとCodexにコーディングを全て任せて商用レベルのUnityゲーム開発を行う【前編】",
+    "url": "https://qiita.com/archeleeds/items/6fbf02174f308e31f284",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ClaudeCodeとCodexを組み合わせたUnityゲーム開発における、AIのパフォーマンスを最大化するためのデータ先行設計とガイドライン構築の実践的検証。",
+    "summaryBody": "この記事は、ClaudeCodeとCodexを用いてUnityでの商用レベルのゲーム開発をどこまでAIに任せられるかを検証した記録です。著者は3つのフェーズに分けて検証を行いました。\n\n1. **ClaudeCode単独**: コンテキスト不足やデバッグのループにより、フレームワークを無視した実装や微細なバグの修正に難航。\n2. **ClaudeCode（設計）+ Codex（実装）**: 分業を試みるも、AI同士の方針の衝突やコミュニケーションコストの増大、技術的負債の蓄積が課題に。\n3. **人間によるレビューとガイドライン化**: AIが生成したコードを人間がレビューし、その指摘内容を抽象化した「バイブル（設計ガイドライン）」を整備。また、「まずデータ構造（Domainオブジェクト）を設計する」という、エンジニアリング重視のワークフローを採用することで、劇的に品質と効率が向上しました。\n\n結論として、適切なフレームワークの整備とAI向けのコード品質ガイドラインの策定（シニアエンジニア2〜3名で約2ヶ月の準備期間を想定）があれば、AIを主導とした本格的なゲーム開発は十分可能であるとしています。",
+    "topics": [
+      "Unity",
+      "ClaudeCode",
+      "Codex",
+      "AI駆動開発",
+      "クリーンアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

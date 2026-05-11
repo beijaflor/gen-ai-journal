@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:00:10.635426+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ZAYA1-8B：AMD MI300で学習された高密度な推論特化型MoEモデル",
+    "url": "https://www.zyphra.com/post/zaya1-8b",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Zyphraが発表したZAYA1-8Bは、AMD MI300で学習された有効パラメータ数10億未満のMoEモデルであり、独自の推論手法によりClaude 4.5やGPT-5に匹敵する数学・コード性能を実現しています。",
+    "summaryBody": "Zyphraは、AMD Instinct MI300スタックでプリトレーニングからファインチューニングまで一貫して学習された初のMoEモデル「ZAYA1-8B」をリリースしました。総パラメータ数8B、有効パラメータ数1B未満という小型サイズながら、独自の「Compressed Convolutional Attention (CCA)」や「Markovian RSA」と呼ばれる革新的なテスト時計算（TTC）手法を採用することで、Mistral-Small-4やClaude 4.5 Sonnet、さらにはGPT-5-Highに匹敵する数学およびコーディング性能を示しています。特にMarkovian RSAは、並列的な推論トレースの生成と再帰的な集約を組み合わせることで、コンテキスト長を一定に保ちながら高度な推論を可能にします。モデルはApache-2.0ライセンスで公開され、Hugging Faceでのウェイト提供およびZyphra CloudでのサーバーレスAPI利用が可能です。",
+    "topics": [
+      "ZAYA1-8B",
+      "MoE (Mixture of Experts)",
+      "AMD MI300",
+      "Test-Time Compute",
+      "Markovian RSA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "ZAYA1-8B: Frontier intelligence density, trained on AMD"
+  }
+}
