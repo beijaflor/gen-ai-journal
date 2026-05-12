@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:07:43.380584+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Next.js + Supabaseのためのフルスタック・オブザーバビリティ：Sentryによる監視とAIデバッグ",
+    "url": "https://blog.sentry.io/nextjs-supabase-observability/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Next.jsとSupabaseを組み合わせたモダンな開発において、Sentryを活用してフロントエンドからDBクエリまでを一気通貫で監視し、AIで自動修正する手法を解説しています。",
+    "summaryBody": "AIエージェントによるコード生成が普及する中、オブザーバビリティ（可観測性）が欠如したコードが本番環境にデプロイされるリスクが高まっています。本記事では、Next.js、Supabase Edge Functions、およびPostgres間の分散トレーシングをSentryで実現する方法を詳説しています。主な内容は、SupabaseのログドレインをSentryに接続する設定、SDKを用いたクエリレベルのトレーシング（N+1問題の自動検知）、およびDenoランタイムであるEdge Functionsの計測方法です。さらに、SentryのAIデバッガー「Seer」や「Autofix」を活用し、エラーの根本原因特定からGitHub PR作成までを自動化するワークフローを紹介。Model Context Protocol (MCP) を通じてAIエージェントに最新のプロジェクト文脈を与えることで、より精度の高い計装と修正が可能になる未来を提示しています。",
+    "topics": [
+      "Next.js",
+      "Supabase",
+      "Sentry",
+      "Observability",
+      "AI Debugging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Full-stack observability for Next.js + Supabase | Sentry Blog"
+  }
+}

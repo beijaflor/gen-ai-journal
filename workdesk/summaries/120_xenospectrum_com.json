@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:06:19.519233+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rubyを単一バイナリ化し実行速度を最大87倍にする「Spinel」：Matz氏がAIと協働し、わずか数週間で開発",
+    "url": "https://xenospectrum.com/spinel-ruby-aot-compiler/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "まつもとゆきひろ氏がClaudeと共同開発したRubyのAOTコンパイラ「Spinel」は、動的機能を制限したサブセット仕様により、従来の最大87倍の高速化と単体バイナリ配布を実現する。",
+    "summaryBody": "まつもとゆきひろ（Matz）氏がRubyKaigi 2026にて発表した「Spinel」は、RubyコードをC言語へ変換しネイティブバイナリを生成するAhead-Of-Time（AOT）コンパイラである。AnthropicのAI「Claude」を開発パートナーとして活用し、わずか約1ヶ月で自己ホスト可能なプロトタイプを構築した。SpinelはPrismパーサーと静的型推論を組み合わせ、ベンチマークではCRuby比で最大87倍の速度を記録している。eval等の動的機能を意図的に制限することで、CLIツールやAIエージェント用ヘルパーといった、高速性と単一バイナリ配布が重視される領域へのRubyの適用を目指している。既存のYJIT等と競合するものではなく、補完的な役割を果たすプロジェクトである。",
+    "topics": [
+      "Ruby",
+      "Spinel",
+      "AOTコンパイラ",
+      "まつもとゆきひろ",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

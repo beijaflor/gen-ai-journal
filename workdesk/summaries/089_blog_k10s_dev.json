@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:13:45.198417+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる「雰囲気コーディング」の限界と、手書きコードへの回帰",
+    "url": "https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（Claude）を駆使した「雰囲気コーディング」で構築したKubernetesツールが、設計の欠如によりメンテ不能な「巨大オブジェクト」と化した失敗から得た5つの教訓。",
+    "summaryBody": "著者がAI（Claude）を全面的に活用してKubernetes用TUIツール「k10s」を開発した際の、成功と挫折の記録です。当初は10倍の速度で開発が進む「vibe-coding（雰囲気コーディング）」に陶酔したものの、最終的にコードは1600行を超える単一構造体の「ゴッドオブジェクト」と化し、状態管理の破綻やデータレースが多発しました。AIは機能単位の実装には優れていますが、全体的なアーキテクチャを維持する能力はないため、放っておくと「最も近道だが誤った設計」を選択し続けます。著者は、型安全な設計やビューの隔離、並行処理のルールを人間が定義し、`CLAUDE.md`などの指示書を通じてAIに制約を課す重要性を説いています。現在はRustでの再開発に着手し、設計は人間が手作業で行うべきだという結論に至っています。",
+    "topics": [
+      "AI Coding",
+      "Software Architecture",
+      "Vibe Coding",
+      "LLM Guardrails",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Im going back to writing code by hand | k10s devlog"
+  }
+}

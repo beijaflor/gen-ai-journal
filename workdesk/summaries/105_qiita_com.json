@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:10:10.000257+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexの `/goal` コマンドを使い倒す ― 数時間の無監督自律作業を成立させる目標設定の作法",
+    "url": "https://qiita.com/y-morimatsu/items/a314e5bbfdc83616d3ae",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenAI Codexの/goalコマンドを活用し、明確な目標設定と検証可能な停止条件を組み合わせることで、数時間に及ぶ自律的なAIエージェント作業を実現する具体的な手法を解説しています。",
+    "summaryBody": "OpenAI Codexの実験的機能である「/goal」コマンドを用いて、ユーザーの介入なしに数時間の自律作業を行わせるためのガイドです。この機能の核心は「検証可能な停止条件（verifiable end state）」の定義にあります。記事では、成功のための4大要素として、Objective（目標）、References（参照）、Verification（検証方法）、Stop Condition（停止条件）を挙げ、これらが揃うことでAIが自律的な試行錯誤のループを回せると説明しています。\n\n具体的なユースケースとして、テストを通しながらのコード移行（Migrations）、PLAN.mdに基づいたプロトタイプ作成（Prototype creation）、評価スコアを基準としたプロンプト最適化（Prompt optimization）の3領域を提示し、それぞれの書き方のコツを「良い例・悪い例」と共に詳細に解説しています。また、運用フローとして、人間が最初にPLAN.md（契約書）を作成し、最後のみレビューを行う「PLAN.md -&gt; /goal -&gt; tests -&gt; human review」という4ステップを推奨。雑多なTODOではなく、機械的に終了を判定できる単一の大きな目標にこそ、この機能の真価があるとしています。",
+    "topics": [
+      "OpenAI Codex",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "ソフトウェアテスト",
+      "開発自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:16:42.801942+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIワークフローの評価と監視：n8nによるプロダクションAIプレイブック",
+    "url": "https://blog.n8n.io/production-ai-playbook-evaluation-and-monitoring/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIワークフローの性能低下（サイレント・ドリフト）を防ぐため、n8nを用いた定量的・定性的な評価手法と継続的な監視体制の構築方法を解説した実用的なガイドです。",
+    "summaryBody": "AIワークフローは、明確なエラーを出さずに品質が徐々に低下する「サイレント・ドリフト」という特有の課題を抱えています。本記事では、n8nの評価機能を活用し、信頼性の高いAIシステムを構築・維持するための戦略を詳説しています。\n\n主なポイントは以下の通りです：\n- **評価フレームワーク**: 完全一致、コード/構造検証、ツール利用の整合性、LLM-as-a-Judge（AIによる主観的評価）、安全性チェックの5段階アプローチを提案。\n- **n8nでの実装**: データテーブルを用いたテストセット管理、Evaluationトリガーによる本番環境に影響を与えないテスト実行、そしてEvaluationノードによるメトリクス計測（正確性、ヘルプフルネス等）の構築ステップ。\n- **継続的モニタリング**: 本番データから「ゴールデンデータセット」を作成し、定期的な評価実行と閾値に基づいたSlack通知などを組み合わせた監視ループの構築。\n\n単なる開発時のテストにとどまらず、デプロイ後の品質維持をデータ駆動で行うための具体的なワークフローテンプレートも紹介されています。",
+    "topics": [
+      "n8n",
+      "AI Evaluation",
+      "LLM-as-a-Judge",
+      "MLOps",
+      "AI Monitoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Production AI Playbook: Evaluation and Monitoring – n8n Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:09:44.050925+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gbrainに学ぶ、Agentの記憶基盤とKnowledge Graphの作り方",
+    "url": "https://zenn.dev/headwaters/articles/8bc4e8c3119fa3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Y CombinatorのCEOが公開したOSS「gbrain」の設計から、LLMに依存せずPostgreSQLと決定論的ロジックを組み合わせて高度なエージェント記憶基盤とナレッジグラフを構築する手法を紐解く。",
+    "summaryBody": "この記事は、AIエージェントの記憶基盤を構築するためのOSS「gbrain」のリポジトリを解析し、そのアーキテクチャ、特にナレッジグラフ（KG）の構築手法を詳説しています。\n\n### 主な特徴と設計思想\n- **多層的な記憶モデル**: 全てをベクトル化して埋め込むのではなく、短期的な事実(facts)、現在の理解(pages)、時系列(timeline)、関係性(links)をPostgreSQL上で分離して管理します。\n- **決定論的なリンク抽出**: LLMを介さず、MarkdownリンクやYAML frontmatter、正規表現によるパターンマッチングを用いて、所属(works_at)や投資(invested_in)といった関係を抽出。これにより、低コストかつ高速で再現性の高いグラフ構築を可能にしています。\n- **情報の整合性維持（Reconciliation）**: 各エッジの「由来(provenance)」を保持することで、元ページが更新された際に古いエッジのみを正確に削除・更新する仕組みを実装しています。\n- **検索ランキングへの活用**: グラフを探索(traversal)に使うだけでなく、検索結果のスコアリングに被リンク数(backlink count)を反映させ、重要度の高い情報を優先的に抽出します。\n- **コードグラフの統合**: 人や組織の関係性とは別に、関数の呼び出し関係などを扱うコード専用のグラフ構造を持ち、高度なコード探索を実現しています。\n\nベクトル検索の限界を構造的な検索で補完する、実用的なエージェント開発の指針となる内容です。",
+    "topics": [
+      "gbrain",
+      "Knowledge Graph",
+      "AI Agent",
+      "PostgreSQL",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:10:35.480171+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "e2a: AIエージェント向け認証済みメールゲートウェイ",
+    "url": "https://github.com/Mnexa-AI/e2a",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが安全にメールを送受信するためのゲートウェイで、SPF/DKIM検証、HMAC署名、人間による承認フロー（HITL）を統合しています。",
+    "summaryBody": "e2aは、AIエージェントと電子メール間の通信を安全かつ構造化された方法で仲介するオープンソースのゲートウェイです。インバウンドではSPF/DKIMを自動検証し、HMAC署名付きヘッダーを付与してWebhookまたはWebSocket経由でエージェントに配送します。アウトバウンドでは、エージェントがメールを送信する前に、人間がダッシュボードやCLIから内容を確認・承認できるHuman-in-the-Loop (HITL) 機能を標準搭載しています。また、WebSocketモードを利用することで、公開URLを持たないローカル環境のエージェントでもメールを受信可能です。TypeScriptとPythonのSDKが提供されており、開発者は既存のエージェントワークフローに容易にメール機能を組み込むことができます。",
+    "topics": [
+      "AI Agents",
+      "Email Security",
+      "Human-in-the-loop",
+      "Webhook",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Mnexa-AI/e2a: Authenticated email gateway for AI agents — SPF/DKIM verified inbound, HMAC-signed delivery, webhook + WebSocket fan-out, CLI + SDKs"
+  }
+}

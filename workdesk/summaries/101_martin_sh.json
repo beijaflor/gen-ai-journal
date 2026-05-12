@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:10:55.866637+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを使って、夜中に目が覚める原因を特定するツールを自作した話",
+    "url": "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディング支援を活用して、睡眠データと騒音録音を同期させ、中途覚醒の真の原因を突き止めるカスタムツールを週末の8時間で構築した記録です。",
+    "summaryBody": "著者は都市部での騒音による睡眠の質の低下に悩まされていましたが、AI（コーディングエージェント）を活用することで、以前なら数週間かかったであろう高度な分析ツールをわずか1週末で完成させました。このシステムはRaspberry Pi、USBマイク、Garminの睡眠データ、そしてHome Assistantのセンサー群を統合したものです。大きな音が検知されると、睡眠ステージの遷移や心拍数の変化と同期してタイムライン上に表示され、ユーザーは「どの音が原因で目が覚めたか」をピンポイントで確認できます。AIはコードの記述だけでなく、SSH経由でデバイスのセットアップやテストまで担当しました。このプロジェクトの核心は、AIが問題を直接解決したことではなく、個人が自分の問題を解決するための「専用ツール」を構築するコストを劇的に下げたことにあります。結果として、隣人のドアの閉め方や特定の時間帯のゴミ収集車が原因であることを特定し、的確な防音対策（吸音パネルの設置など）につなげることができました。",
+    "topics": [
+      "AIコーディング支援",
+      "睡眠の最適化",
+      "スマートホーム",
+      "Raspberry Pi",
+      "データ可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "I Let AI Build a Tool to Help Me Figure Out What Was Waking Me Up at Night"
+  }
+}

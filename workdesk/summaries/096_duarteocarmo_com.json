@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:12:11.660916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AMÁLIAと欧州ポルトガル語LLMの将来展望",
+    "url": "https://duarteocarmo.com/blog/amalia-and-the-future-of-european-portuguese-llms",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ポルトガル政府が550万ユーロを投じたLLM「AMÁLIA」について、データ組成の妥当性、真のオープンソース性、評価指標の欠如という観点から批判的に分析した考察。",
+    "summaryBody": "ポルトガル政府主導で開発された欧州ポルトガル語特化型LLM「AMÁLIA」の技術報告書に基づき、その現状と課題を分析した記事です。AMÁLIAはEuroLLMをベースにArquivio.ptのデータを用いて継続事前学習を行っていますが、著者は以下の3点を問題視しています。第一に「オープンソース」を掲げながら重みや学習ログ、詳細なデータセットが未公開である点。第二に、追加学習における欧州ポルトガル語データの割合が5.5%程度と低く、Qwen 3-8Bなどの汎用モデルに一部のベンチマークで劣っている点。第三に、作成された新ベンチマークがポルトガルの歴史や文化といった固有知識を十分に評価できていない点です。公的資金を投じたプロジェクトとしての透明性と、小規模言語圏におけるモデル構築の難しさを浮き彫りにしています。",
+    "topics": [
+      "AMÁLIA",
+      "European Portuguese",
+      "Large Language Models",
+      "Open Source AI",
+      "NLP"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 78,
+      "annexPotential": 85,
+      "overall": 82
+    },
+    "originalTitle": "AMÁLIA and the future of European Portuguese LLMs"
+  }
+}

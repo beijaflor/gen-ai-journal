@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:15:15.505293+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fat Skills, Thin Harness, No Terminal：非開発者向けAIエージェントの設計思想",
+    "url": "https://www.lorenstew.art/blog/fat-skills-thin-harness-no-terminal/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Garry Tanが提唱する「Fat Skills, Thin Harness」アーキテクチャを、ターミナルを使わない一般ユーザー向けAIエージェント開発にどう適応させるべきかを解説した記事。",
+    "summaryBody": "Loren Stewart氏は、Garry Tan氏が提唱したAI開発アーキテクチャ「Fat Skills, Thin Harness（肥大なスキル、薄いハーネス）」を、非開発者向けのAI同僚ツール「Cheddy」に応用した知見を共有しています。この設計では、モデルへの指示（スキル）を厚くし、制御ループ（ハーネス）を最小限に抑え、最下層にTemporalなどの堅牢なインフラ（確定的階層）を配置します。開発者ツールと異なり、一般ユーザー向けではスキルをMarkdownファイルではなく「UI上の設定や製品機能」として提供する必要がある点が大きな特徴です。また、記憶保持におけるpgvectorへの依存回避や、非開発者に向けた実行プロセスの可視化（オブザーバビリティ）の重要性についても論じています。",
+    "topics": [
+      "AIアーキテクチャ",
+      "LLMプロダクト設計",
+      "エージェント開発",
+      "Temporal",
+      "Cheddy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Fat Skills, Thin Harness, No Terminal"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:17:07.601981+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Privacy Filter を pre-commit フックに入れて個人情報のコミットを防ぐ",
+    "url": "https://zenn.dev/kou_pg_0131/articles/opf-pre-commit",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ローカルで動作する OpenAI Privacy Filter を Git の pre-commit フックに組み込み、コミット前に個人情報（PII）を自動検出・防止する実装ガイド。",
+    "summaryBody": "OpenAIが公開した、テキストから個人情報（PII）を検出・マスキングするローカル実行用モデル「OpenAI Privacy Filter」を Git の pre-commit フックで活用する方法を解説しています。公式 CLI (opf) のインストールから、`git diff` を用いてステージングされた差分から PII を抽出し、検出時にコミットを中断させるシェルスクリプトの実装例を紹介。実際に個人名やクレジットカード番号（の下4桁）を含む CSV でのテスト結果や、ローカル CPU 実行におけるパフォーマンスの制限（数分かかる場合がある点）や精度の限界といった実用上の注意点についても言及されています。",
+    "topics": [
+      "OpenAI",
+      "Git",
+      "Security",
+      "Privacy",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

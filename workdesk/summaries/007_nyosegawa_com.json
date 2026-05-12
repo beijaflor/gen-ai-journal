@@ -10,7 +10,7 @@
     "language": "ja",
     "contentType": "🔬 Research & Analysis (研究・分析)",
     "oneSentenceSummary": "Coding Agent（harness）の実力をモデル単体ではなく、ツール構成や実行環境を含めて評価するためのベンチマーク「HarnessBench」を構築した記録。",
-    "summaryBody": "### 概要 Codex CLI、Claude Code、Cursor Agentといった「Coding Agent (harness)」を、同一のOSSプロジェクト課題で横断的に評価する独自のベンチマーク「HarnessBench」を開発。モデルそのものの性能だけでなく、ファイル操作、探索、プロンプト、キャッシュ等の周辺実装を含めた実効性能を測定した。 ### 評価手法 9個のOSSリポジトリから27問（難易度別）を抽出し、14の条件で計378回実行。採点はLLM-as-a-judgeによる揺れを避け、hidden testによる機械採点を採用している。 ### 結果と考察 27問規模では成功率の統計的有意差は未検出だが、実行速度（wall time）には顕著な差が見られた。Cursor Composer 2は高速かつ実用的な精度を維持しており、単なるベンチマーク特化型（benchmaxxing）ではない実力を示した。エージェントの評価には、モデル単体ではなくharnessを含めた計測が不可欠である。",
+    "summaryBody": "### 概要\nCodex CLI、Claude Code、Cursor Agentといった「Coding Agent (harness)」を、同一のOSSプロジェクト課題で横断的に評価する独自のベンチマーク「HarnessBench」を開発。モデルそのものの性能だけでなく、ファイル操作、探索、プロンプト、キャッシュ等の周辺実装を含めた実効性能を測定した。\n\n### 評価手法\n9個のOSSリポジトリから27問（難易度別）を抽出し、14の条件で計378回実行。採点はLLM-as-a-judgeによる揺れを避け、hidden testによる機械採点を採用している。\n\n### 結果と考察\n27問規模では成功率の統計的有意差は未検出だが、実行速度（wall time）には顕著な差が見られた。Cursor Composer 2は高速かつ実用的な精度を維持しており、単なるベンチマーク特化型（benchmaxxing）ではない実力を示した。エージェントの評価には、モデル単体ではなくharnessを含めた計測が不可欠である。",
     "topics": [
       "HarnessBench",
       "Coding Agent",
