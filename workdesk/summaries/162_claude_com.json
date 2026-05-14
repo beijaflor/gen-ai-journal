@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:31:01.549875+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「エージェント・ビュー」が登場：複数セッションの一括管理が可能に",
+    "url": "https://claude.com/blog/agent-view-in-claude-code",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」において、複数のエージェントセッションを並行管理し、進行状況の可視化やバックグラウンド処理を容易にする「エージェント・ビュー」機能が公開されました。",
+    "summaryBody": "Anthropicは、エンジニア向けCLIツール「Claude Code」に新機能「エージェント・ビュー (Agent view)」を追加しました。この機能は、複数のエージェントを同時に動かす際、ターミナルのタブ管理や進捗把握が困難になるという課題を解決します。ユーザーは`claude agents`コマンドまたは左矢印キーで一覧画面を呼び出し、どのエージェントが入力待ちか、あるいは実行中かを一目で確認できます。また、セッションをバックグラウンドに送る`/bg`コマンドや、一覧画面からセッションを完全に切り替えずに回答内容を確認し、そのまま指示を返せる「Peek（覗き見）」機能が搭載されました。これにより、プルリクエストの作成やダッシュボードの更新といった複数の並行タスクを、開発フローを中断することなく効率的に監督できます。本機能は現在、Pro、APIプラン以上のユーザー向けにリサーチプレビューとして提供されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "開発効率化",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Agent view in Claude Code"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:31:59.724487+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Interfaze: 高精度かつ大規模処理に向けた新しいハイブリッドAIアーキテクチャ",
+    "url": "https://interfaze.ai/blog/interfaze-a-new-model-architecture-built-for-high-accuracy-at-scale",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DNNの専門性とTransformerの汎用性を融合し、OCR、音声認識、構造化データ抽出において既存のFlash系モデルを凌駕する性能とコスト効率を実現した新アーキテクチャ「Interfaze」が登場しました。",
+    "summaryBody": "Interfazeは、特定のタスクに強いDNN/CNNと、文脈理解に長けたTransformerを組み合わせた新しいハイブリッドAIアーキテクチャです。従来のLLMが苦手としていたOCR、物体検出、音声認識（STT）、構造化データ出力などの「決定論的なタスク」において、Gemini-3-FlashやGPT-5.4-Mini、Claude Sonnet 4.6といった主要なFlashモデルを上回るベンチマーク結果を記録しています。主な特徴として、100万トークンのコンテキストウィンドウ、OpenAI互換のSDK対応、そして特定のタスクのみを有効化して高速化・低コスト化を図る「部分モデルアクティベーション」機能が挙げられます。特に音声認識ではGemini-3-Flashの約11倍の推論速度を誇り、価格面でも$1.50/1M input tokensと競争力のある設定となっています。",
+    "topics": [
+      "Interfaze",
+      "OCR",
+      "音声認識",
+      "モデルアーキテクチャ",
+      "構造化出力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Interfaze: A new model architecture built for high accuracy at scale"
+  }
+}

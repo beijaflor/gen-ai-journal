@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:35:49.968508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの利用状況確認用ダッシュボードを作ってみよう",
+    "url": "https://qiita.com/nr_ishibashi/items/161073461c00b50ab429",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeに組み込まれたOpenTelemetry機能を活用し、New Relic上でトークン使用量やコスト、ユーザー別の利用状況を可視化するダッシュボードの構築手法を解説しています。",
+    "summaryBody": "この記事では、AnthropicのAIエージェント「Claude Code」に標準実装されているOpenTelemetry (Otel) 連携機能を使い、利用データをNew Relicに送信して可視化する方法を紹介しています。具体的には、`settings.json`でのテレメトリ有効化設定から、トークン使用量・コスト・AIのレスポンス数・ユーザーごとの利用時間などを算出するための具体的なNRQLクエリの例を多数提示しています。これにより、組織内でのAI利用状況のモニタリング、予算管理、およびプロンプト履歴のログを通じたコンプライアンス確認が可能になります。New Relicのダッシュボード機能を活用し、誰がどのモデルをどの程度利用しているかを多角的に分析する実戦的なガイドです。",
+    "topics": [
+      "Claude Code",
+      "New Relic",
+      "OpenTelemetry",
+      "可視化",
+      "NRQL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

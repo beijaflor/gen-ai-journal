@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:33:00.656629+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexのサブエージェントで実装とレビューを分業してみた",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/05/12/120000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Codexのサブエージェント機能を活用し、実装とレビューの役割を分担させることで、コード品質の向上と開発プロセスの可視化を実現する手法を紹介しています。",
+    "summaryBody": "OpenAIのコーディングエージェント「Codex」におけるサブエージェント機能を用いた、マルチエージェント開発の実践的な検証記事です。実装担当とレビュー担当を別々のサブエージェントとして定義し、役割に応じて「思考の深さ（Reasoning Effort）」や「MCP（Model Context Protocol）」、システムプロンプトを個別に最適化する設定方法を解説しています。AngularとFastAPIを用いたアプリ開発の例では、シングルエージェントでは見落としがちな非同期処理の競合といった設計上の不備が、高精度設定のレビュー専任エージェントによって的確に指摘・修正されるプロセスが示されています。また、実験的機能「spawn_agents_on_csv」を利用することで、ジョブの投入から多段階の修正・再レビューの履歴をCSVで構造的に管理・可視化できるメリットについても詳しく述べられています。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "マルチエージェント",
+      "MCP",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

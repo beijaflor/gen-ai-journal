@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:31:33.583207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スキーマでアーキテクチャを縛る ── 人間とAIを同じルールで動かす",
+    "url": "https://techblog.zozo.com/entry/architecture-codegen-pipeline",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "アーキテクチャを曖昧なドキュメントではなく厳密なスキーマとして定義し、人間とAIが同じルールに従ってコード生成・開発を行うための仕組みと成果を紹介しています。",
+    "summaryBody": "ZOZOTOWNのiOS開発における、アーキテクチャの品質維持とAI活用を両立させるための先進的な取り組みについての解説です。従来の「努力目標」としてのドキュメント管理を脱却し、コンポーネントの責務や依存関係を「スキーマ」として構造化することで、人間とAIの双方を共通のルールで制約しています。\n\n具体的には、以下の3段階のプロセスで運用されています。\n1. **定義**: `architecture-guidelines.md`で各レイヤーの命名・依存・禁止事項を定義し、テンプレートを整備する。\n2. **設計**: `/architecture`コマンドを用い、Figmaや仕様書から画面設計を記述した「設計YAML」を自動生成。人間は設計判断に集中する。\n3. **実装**: `/codegen`コマンドでYAMLからSwiftのボイラープレート（View, ViewModel, Repository, Test等）を一括生成する。\n\nこのアプローチにより、AIが生成するコードの品質が安定し、ハルシネーションが抑制されました。結果として、コードレビューの焦点が実装詳細からプロダクトのUXや仕様の妥当性といった「本質的な品質」へとシフトしたと報告されています。",
+    "topics": [
+      "iOS",
+      "アーキテクチャ",
+      "AI開発",
+      "コード生成",
+      "Swift"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

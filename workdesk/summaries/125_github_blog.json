@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:40:50.225135+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Dungeons & Desktops: GitHub Copilot CLIを使用したプロシージャル・ローグライクの開発",
+    "url": "https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot CLIを活用して、コードベースの構造やコミット履歴をローグライクゲームのダンジョンへと自動変換するユニークなCLI拡張機能の開発プロセスを紹介。",
+    "summaryBody": "この記事では、GitHub Copilot CLIの機能を活用してリポジトリを遊べるダンジョンに変えるツール「GitHub Dungeons」の制作過程が解説されています。主な技術的ハイライトは以下の通りです：\n\n- **BSP（Binary Space Partitioning）アルゴリズム**: リポジトリの最新コミットハッシュをシード値とし、空間を再帰的に分割することで、コードの変更に連動して進化する構造的なダンジョンを生成します。\n- **Copilot CLIの`/delegate`機能**: Go言語での開発において、複雑なロジックやボイラープレートの作成をAIエージェントに委任。開発者は実装の詳細よりもゲームデザインや体験の設計に集中できるワークフローを実現しています。\n- **CLI拡張の可能性**: AIエージェントとの協調作業（PRベースの非同期開発）により、短期間でMVPを構築し、実験的な機能を迅速に組み込む手法が示されています。\n\n最後には、ゲームに負けると未コミットの変更を強制的に削除するという「危険な遊び方」も紹介されており、AIを活用した遊び心のあるツール開発の事例としてまとめられています。",
+    "topics": [
+      "GitHub Copilot CLI",
+      "手続き型生成 (ProcGen)",
+      "BSPアルゴリズム",
+      "Go言語",
+      "ゲーム開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 82
+    },
+    "originalTitle": "Dungeons & Desktops: Building a procedurally generated roguelike with GitHub Copilot CLI"
+  }
+}

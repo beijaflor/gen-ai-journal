@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:31:48.316984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Xcodeのコーディングエージェントを使う",
+    "url": "https://cockscomb.hatenablog.com/entry/using-xcode-coding-agent",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Xcodeに統合されたClaude AgentやCodexを活用し、最新SDKの知識や内蔵ツールを組み合わせた次世代のアプリ開発ワークフローを検証する。",
+    "summaryBody": "Macアプリ「MTP File Transfer」の開発において、Xcodeに統合されたAIコーディングエージェント（Claude AgentおよびCodex）を実戦投入した記録です。Xcode統合型エージェントの強みとして、知識のカットオフ以降の情報（macOS 26の新API等）を検索ツールや追加ドキュメントを通じて補完できる点や、内蔵ツールを駆使した高度なコード生成が挙げられています。記事では、SwiftUIのLazyVGridにおける複雑なドラッグ選択の実装を、手動での作り込みを避けつつAIの補助で完遂した事例を紹介。Claude Agentは既存コードの調査に長け、Codex（GPT-5.5搭載）は最新APIの発見に成功するなど、モデルごとの特性や更新頻度、利用ライセンスの違いについても具体的に解説しています。",
+    "topics": [
+      "Xcode",
+      "AIコーディング",
+      "SwiftUI",
+      "Claude",
+      "Apple開発ツール"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 50,
+      "overall": 88
+    }
+  }
+}

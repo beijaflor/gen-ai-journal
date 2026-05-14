@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:41:51.559216+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADKを用いた、中断・再開が可能で文脈を維持する長期実行型AIエージェントの構築",
+    "url": "https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GoogleのAgent Development Kit (ADK) を活用し、数週間にわたる複雑な業務プロセスを、文脈を失わずに中断・再開できる「長期実行型AIエージェント」の構築手法を詳説しています。",
+    "summaryBody": "この記事では、従来のステートレスなチャットボットが抱える課題（コンテキストの肥大化、トークンコストの増大、長期休止後のハルシネーション）を克服するための、実用的なエージェント構築手法を解説しています。新入社員のオンボーディングを例に、数日間の待機時間を挟むプロセスを管理する「長期実行型エージェント」をADK (Agent Development Kit) で実装する方法を紹介しています。\n\n主要なアーキテクチャの転換点として以下の3点を挙げています：\n1. **永続的なステートマシン**: 未加工のチャット履歴に頼らず、明示的な状態スキーマを定義してワークフローの進捗を正確に追跡します。\n2. **チェックポイントと再開**: SQLiteやCloud SQLを用いてセッションを永続化し、サーバーの再起動後も中断した箇所から正確に復帰させます。\n3. **イベント駆動型の待機処理**: ウェブフックを活用し、外部イベントが発生した時のみエージェントを起動させることで、アイドル時の計算リソースを削減します。\n\nさらに、マルチエージェント構成によるタスク委譲や、ゴールデンテストを用いた評価手法、Agent Runtimeへのデプロイについても網羅しており、エンタープライズレベルのワークフロー自動化を目指す開発者に不可欠なガイドとなっています。",
+    "topics": [
+      "AIエージェント",
+      "ADK",
+      "Google Cloud",
+      "ワークフロー自動化",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Build Long-running AI agents that pause, resume, and never lose context with ADK"
+  }
+}

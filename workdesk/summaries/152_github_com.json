@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:33:29.908475+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "@tanstack/* の42個のパッケージにマルウェア混入、クラウド認証情報やGitHubトークン、SSHキーを窃取",
+    "url": "https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "TanStackのnpmパッケージ群に悪意あるバージョンが混入し、インストール時にクラウド認証情報やSSH鍵を外部へ送信、さらに二次感染を試みる大規模なサプライチェーン攻撃が確認された。",
+    "summaryBody": "2026年5月11日、TanStack/routerリポジトリの脆弱性を突いたサプライチェーン攻撃により、42種類のnpmパッケージ（計84バージョン）にマルウェアが混入した。この攻撃は、GitHub Actionsの「Pwn Request」構成ミス、キャッシュ汚染、および実行プロセスからのOIDCトークン抽出を組み合わせることで、正当な発行権限を悪用して実行された。\n\n**主な被害と影響:**\n- **認証情報の窃取:** インストール時に実行される `router_init.js` が、AWS、GCP、Kubernetes、Vault、npm、GitHubのトークン、およびSSH秘密鍵を収集し、外部へ送信する。\n- **自己増殖:** 感染した環境のユーザーが維持している他のnpmパッケージを特定し、同様のインジェクションを行って再配布を試みる。\n- **対象:** 該当期間中に `npm install` 等を実行した全ての開発・CI環境が侵害された可能性がある。\n\n**対策:**\n- 影響を受けるバージョンを使用している場合は、直ちに修正版へアップデートし、クリーンなロックファイルから再インストールすること。\n- インストールプロセスからアクセス可能だった全ての認証情報（AWS、GitHub、SSH等）を直ちにローテーションし、不審なアクティビティがないか監査ログを確認する必要がある。",
+    "topics": [
+      "Supply Chain Attack",
+      "npm",
+      "Security Advisory",
+      "TanStack",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 20,
+      "overall": 98
+    },
+    "originalTitle": "Malware in 42 @tanstack/* packages exfiltrates cloud credentials, GitHub tokens, and SSH keys · Advisory · TanStack/router · GitHub"
+  }
+}

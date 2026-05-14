@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:29:39.274319+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "90日間の脆弱性公開ポリシーは死んだ：LLM時代のセキュリティ対応",
+    "url": "https://blog.himanshuanand.com/2026/05/the-90-day-disclosure-policy-is-dead/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによって脆弱性の発見とエクスプロイト開発が劇的に加速した現代において、従来の「90日間の猶予」という公開ポリシーはもはや機能不全に陥っていると警鐘を鳴らす記事。",
+    "summaryBody": "本記事は、セキュリティ業界で長年信じられてきた「90日間の責任ある公開ポリシー」が、LLM（大規模言語モデル）の普及によって終焉を迎えたと主張しています。著者は自身の経験や、React、Linuxカーネル（Copy Fail、Dirty Frag）の最新事例を引き合いに出し、以下のパラダイムシフトを指摘しています。\n\n1. **脆弱性発見の同時多発化**: LLMの活用により、同じ脆弱性が短期間に複数の研究者によって発見されるようになり、情報の秘匿が不可能になっています。\n2. **パッチから攻撃コード作成までの短縮化**: 従来は数日〜数週間かかっていたリバースエンジニアリングが、LLMの補助によりわずか数十分から数時間に短縮されました。\n3. **Linuxにおける実害**: パッチが配布される前にエクスプロイトが公開・悪用されるケースが増えており、もはや「月次パッチサイクル」や「猶予期間」は攻撃者に有利な「攻撃の窓」でしかありません。\n\n結論として、ベンダーは脆弱性をP0（最優先）として即時修正すべきであり、防御側（ブルーチーム）もCI/CDパイプラインにLLMを組み込んで、自動解析と迅速なデプロイを行う体制へ移行する必要があると説いています。",
+    "topics": [
+      "脆弱性管理",
+      "LLM",
+      "責任ある公開 (Responsible Disclosure)",
+      "Linux Kernel",
+      "エクスプロイト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "the 90 day disclosure policy is dead"
+  }
+}

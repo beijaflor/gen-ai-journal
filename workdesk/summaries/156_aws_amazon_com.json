@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:32:29.228681+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS MCP Server の一般提供を開始",
+    "url": "https://aws.amazon.com/jp/blogs/news/the-aws-mcp-server-is-now-generally-available/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWSは、AIエージェントが最新のドキュメントと認証済みAPIを利用して、セキュアにAWSリソースを操作できるようにするマネージド型の「AWS MCP Server」の一般提供を開始しました。",
+    "summaryBody": "AWS MCP Serverは、AIエージェントやコーディングアシスタント（Claude Code、Cursor、Kiro等）が、Model Context Protocol (MCP) を通じてAWS環境と安全にやり取りするためのマネージドサービスです。主な機能として、15,000以上のAPIを実行可能な`call_aws`、最新の公式ドキュメントを検索・取得する`search_documentation`、そして複数のAPIコールを効率化するサンドボックス環境でのPython実行ツール`run_script`が含まれます。\n\nまた、新機能の「スキル（Skills）」により、AWSサービスチームが提供するベストプラクティスに基づいたガイダンスをエージェントに提供し、ハルシネーションの抑制とトークン消費の最適化を実現します。セキュリティ面ではIAMと完全統合されており、人間とエージェントの権限分離や、CloudWatch、CloudTrailによる詳細な監査証跡の取得が可能です。追加料金なし（リソース使用料のみ）で、バージニア北部およびフランクフルトリージョンから利用可能です。",
+    "topics": [
+      "AWS",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "IAM",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
