@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:17:36.164639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude for Legal: Anthropicによる法務ワークフロー向けAIエージェント・プラグイン集",
+    "url": "https://github.com/anthropics/claude-for-legal",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが公開した「Claude for Legal」は、契約レビュー、訴訟準備、ガバナンスなどの法務実務を支援するClaude用のオープンソースなプラグイン、エージェント、およびコネクタの包括的なリファレンス実装です。",
+    "summaryBody": "Anthropicは、法務実務に特化したClaude用のリファレンス実装集「Claude for Legal」をGitHubで公開しました。これは、企業の法務部門、法律事務所、および法科大学院を対象とした一連のプラグイン、スキル、およびデータコネクタ（MCP）で構成されています。\n\n主な特徴と機能：\n1. **多岐にわたる専門領域**: 商業契約、M&A、プライバシー、知財、労働法、訴訟、AIガバナンスなど、10以上の領域をカバーする専用プラグインを提供しています。\n2. **高度なカスタマイズ**: 「コールドスタート・インタビュー」機能により、組織固有のプレイブックやスタイルをClaudeに学習させ、パーソナライズされたドラフト作成が可能です。\n3. **外部ツール連携 (MCP)**: Slack、Google Drive、Ironclad、Westlaw (CoCounsel)、iManageなどのツールと連携し、権威あるソースに基づいた回答と引用生成をサポートします。\n4. **Microsoft 365統合**: Wordでの変更履歴（Redline）作成や、Excelでの複雑なデータ抽出・管理に対応しています。\n5. **安全性と信頼性**: すべての出力は弁護士のレビューを前提として設計されており、出典の自動検証や管轄区域の考慮など、専門的なガードレールが組み込まれています。\n\nユーザーは、Claude Desktop、Claude Code、または自社インフラにデプロイ可能なマネージドエージェントとして、これらのツールを柔軟に利用・拡張できます。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "Legal Tech",
+      "MCP (Model Context Protocol)",
+      "Workflow Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 98
+    },
+    "originalTitle": "GitHub - anthropics/claude-for-legal: A suite of plugins for legal workflows"
+  }
+}

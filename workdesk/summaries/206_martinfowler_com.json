@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:23:30.775324+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "対話型LLM（Interrogatory LLM）：インタビューを通じてコンテキストを構築する手法",
+    "url": "https://martinfowler.com/bliki/InterrogatoryLLM.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMに人間をインタビューさせることで、複雑なタスクに必要なコンテキストの作成や専門知識の抽出を効率化するアプローチの提案。",
+    "summaryBody": "マーティン・ファウラー氏は、LLMにタスクを実行させるための膨大なコンテキスト（仕様やガイドライン等）を人間が手書きする代わりに、LLM自身に人間を「尋問（インタビュー）」させて情報を引き出す手法を紹介している。この「対話型LLM」アプローチでは、LLMに一度に一つずつ質問をさせることで、人間から必要な情報を網羅的に収集し、精度の高いプロンプトやドキュメントを生成する。また、既存のドキュメントの正確性を専門家にインタビューして検証させるなど、知識の明文化が苦手な人々を支援するツールとしての可能性も示唆されている。Harper Reed氏のブログに触発されたこの手法は、AIとの協働における「入力の質」を高めるための実戦的なプラクティスである。",
+    "topics": [
+      "LLM",
+      "Prompt Engineering",
+      "Knowledge Management",
+      "Generative AI",
+      "Martin Fowler"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    },
+    "originalTitle": "Interrogatory LLM"
+  }
+}

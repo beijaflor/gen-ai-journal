@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:15:52.024846+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ログイン済みの Chrome をそのまま Claude Code から操作する — playwright-cli attach",
+    "url": "https://zenn.dev/optimisuke/articles/40529cd970cbf0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "playwright-cliのattach機能を利用して、認証セッションを維持したまま既存のChromeブラウザをClaude Codeから直接操作するセットアップ方法を解説。",
+    "summaryBody": "この記事では、`playwright-cli v0.1.8`で導入された`attach --cdp=chrome`コマンドを使用して、普段使いのChromeブラウザをClaude Codeから制御する手法を紹介しています。従来のMCPサーバー設定や別ブラウザ起動の手間を省き、ログイン済みのセッションをそのまま利用できるのが最大の特徴です。具体的な手順として、`@playwright/cli`のインストール、Chromeのリモートデバッグ有効化、接続確認方法を説明しています。また、Claudeに操作を自律的に行わせるための`SKILL.md`生成機能や、プロジェクトごとの指示書である`CLAUDE.md`への記述例も提示。調査や確認作業において、認証情報の引き継ぎが必要な場合に非常に実用的なアプローチとなっています。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "Chrome",
+      "ブラウザ自動化",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

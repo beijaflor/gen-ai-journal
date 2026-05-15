@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:19:14.892095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DreamHostが既存サイトに無断で「agents.txt」を追加：AIエージェント制御の試みとその課題",
+    "url": "https://journal.kvibber.com/2026/05/agents-txt-on-dreamhost/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "DreamHostが、AIによる学習やRAGを制御する`agents.txt`をユーザーへの事前通知なく既存サイトへ導入した件について、その内容と実装の不備を解説しています。",
+    "summaryBody": "ホスティングプロバイダーのDreamHostが、管理下のサイトにAIエージェント制御用の設定ファイル `agents.txt` を自動的に追加したことが報告されました。このファイルは、AIによる学習（Allow-Training: no）や特定アクション（Allow-Actions: no）を制限する一方、検索拡張生成（Allow-RAG: yes）を許可するデフォルト設定を持っています。著者は、AIによる無秩序なクローリングを防ぐ試み自体は評価していますが、以下の問題を指摘しています。1. **事前の合意形成の欠如**: 既存のユーザーサイトに対して通知なく遡及的にファイルを追加した点。2. **仕様の混乱**: 参照された仕様は既に `agent-manifest.txt` へと名称変更されるなどの更新が行われており、DreamHostの実装が最新の提案に追いついていない点。これは、Webサイト管理者が意図しない形でホスティング側がAIポリシーを代理決定する際のリスクと、標準化が進むAI制御プロトコルの現状を示唆しています。",
+    "topics": [
+      "DreamHost",
+      "agents.txt",
+      "AIエージェント",
+      "RAG",
+      "Webホスティング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "New agents.txt file found on DreamHost | K-Squared Ramblings"
+  }
+}

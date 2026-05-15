@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:20:19.302773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMが20年来のシステム設計を破壊する",
+    "url": "https://zknill.io/posts/llms-are-breaking-20-year-old-system-design/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMやAIエージェントの台頭により、従来の「ステートレスな計算とDBへの状態集約」というWebアーキテクチャの限界が露呈しており、特定のプロセスを直接アドレス指定できる新たなルーティング・プリミティブが求められている。",
+    "summaryBody": "従来のWebアーキテクチャは「計算はステートレス、状態はデータベース」という20年前の前提に基づいている。しかし、LLMエージェントは長時間実行、ステートフルな計算（エージェントのメモリ）、および双方向の対話という3つの特性を持ち、この前提を破っている。TemporalのようなDurable Executionフレームワークは実行の回復性を提供するが、クライアントが特定のプロセスと通信するためのルーティング問題は未解決のままである。現状では、データベースをメッセージバスのように扱った非効率な「ポーリング」が常態化しており、これがレイテンシやUXの悪化を招いている。筆者は、接続（Connection）ではなくアドレス（Address）として機能する「Pub/Subチャネル」をルーティング・プリミティブとして導入すべきだと提言する。これにより、LLMのような非決定論的でコストの高い処理において、接続が切れても特定のワークフローと継続的に対話可能な、エージェント志向の新しいアーキテクチャが実現する。",
+    "topics": [
+      "LLM",
+      "System Architecture",
+      "Durable Execution",
+      "Stateful Computing",
+      "Pub/Sub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 18,
+      "overall": 90
+    },
+    "originalTitle": "LLMs are breaking 20 year old system design"
+  }
+}

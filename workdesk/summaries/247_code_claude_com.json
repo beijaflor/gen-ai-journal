@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:13:29.037205+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ファストモードによるレスポンスの高速化 - Claude Code ドキュメント",
+    "url": "https://code.claude.com/docs/en/fast-mode",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeにおいて、Claude Opusのレスポンス速度を2.5倍に向上させる「ファストモード」の設定方法、コスト構造、および管理機能について解説するガイド。",
+    "summaryBody": "Claude Codeの「ファストモード」は、Claude Opusモデルの品質を維持したまま、レスポンス速度を2.5倍に向上させるAPI構成オプションです。現在はリサーチプレビューとして提供されており、`/fast`コマンドで簡単に切り替えが可能です。主な特徴として、Opus 4.6（デフォルト）およびOpus 4.7（環境変数で有効化）に対応していますが、コストは入力100万トークンあたり$30、出力$150と、標準モードより高価に設定されています。この機能はAnthropic Console APIおよびClaudeサブスクリプションプランの「追加利用（Extra usage）」枠で利用可能であり、Amazon BedrockやGoogle Vertex AIなどのサードパーティ経由では利用できません。管理者は組織単位での有効化や、セッションごとのオプトイン設定を強制でき、コスト管理と開発体験のバランスを調整することが可能です。速度が重要となる対話的なデバッグや迅速な反復作業に適した機能です。",
+    "topics": [
+      "Claude Code",
+      "Claude Opus",
+      "Fast Mode",
+      "LLM Optimization",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "Speed up responses with fast mode - Claude Code Docs"
+  }
+}

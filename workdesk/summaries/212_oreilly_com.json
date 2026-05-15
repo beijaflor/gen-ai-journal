@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:21:59.045963+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIの実世界：AIデータ基盤の未来を担うLanceDBとマルチモーダル・レイクハウス",
+    "url": "https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-chang-she-on-data-infrastructure-for-ai/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "pandasのコア開発者が、従来のデータスタックの限界と、AIエージェント時代に不可欠な「マルチモーダル・レイクハウス」への移行の重要性を説く。",
+    "summaryBody": "本記事は、LanceDBのCEOであるChang She氏へのインタビューを通じ、AI時代に最適なデータインフラの在り方を提示している。主要な論点は、従来のParquetやpandasといった分析用ツールが、AI特有のマルチモーダルデータやランダムアクセス、大規模な埋め込みベクトルの管理において非効率になっている点である。She氏は、これに応えるオープンソースのファイル形式「Lance」を紹介し、それがランダムアクセスの高速化とストレージコストの削減を両立する「マルチモーダル・レイクハウス」の基盤になると述べている。また、AIエージェントの台頭により、クエリ負荷が数百QPSから数十万QPSへと爆発的に増加する現状に対し、S3等のオブジェクトストレージを賢く活用するアーキテクチャの必要性を強調。さらに、今後12ヶ月でエンタープライズにおけるコスト意識が高まり、オープンウェイトモデルへのシフトが進むと予測している。AIインフラは単なるベクトル検索から、画像・動画・メタデータを統合管理する広範なシステムへと進化し、最終的に「マルチモーダル」はデータの標準的な状態になると結論づけている。",
+    "topics": [
+      "LanceDB",
+      "マルチモーダル",
+      "データインフラ",
+      "AIエージェント",
+      "レイクハウス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Generative AI in the Real World: Chang She on Data Infrastructure for AI"
+  }
+}
