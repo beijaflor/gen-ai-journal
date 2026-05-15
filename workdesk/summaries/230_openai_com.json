@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://openai.com/index/work-with-codex-from-anywhere/
-- Reason: extracted text too short (65 chars < 500 threshold); page is likely an un-hydrated SPA shell or anti-bot challenge
-- Fetcher: playwright
-- Extracted chars: 65
-- Raw bytes: 0
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T08:21:48.937694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexがChatGPTモバイルアプリに統合：外出先での「バイブ・コーディング」を可能にするリモート操作機能",
+    "url": "https://news.ycombinator.com/item?id=48140529",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIのコーディングエージェント「Codex」がChatGPTモバイルアプリから利用可能になり、デスクトップ上の開発環境をスマホからリモート操作・継続できるようになった。",
+    "summaryBody": "OpenAIは、コーディング特化型エージェント「Codex」をChatGPTモバイルアプリへ統合した。これにより、デスクトップ版CodexやCLIと連携し、スマホからリモートでコードの生成やリファクタリングを指示できるようになった。\n\nHacker Newsの議論では、コードを直接詳細に読み込まずにAIとの対話だけで大枠を実装させる「バイブ・コーディング（Vibe Coding）」という手法が注目を集めている。外出先でモバイルからプロンプトを投げ、帰宅後にデスクトップで詳細をレビューするワークフローが現実的になりつつある。また、競合のClaude Codeと比較して利用制限が緩い点や、最新のGPT-5.5モデルによるコンテキスト管理能力を評価する声も多い。一方で、モバイルでの操作性やセキュリティリスク（スマホからデスクトップを操作することによる脆弱性）を懸念する意見も寄せられている。現在はmacOSおよびLinux（CLI）に対応しており、Windows版も近日提供予定だ。",
+    "topics": [
+      "OpenAI",
+      "Codex",
+      "Vibe Coding",
+      "ChatGPT Mobile",
+      "Remote Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "Codex is now in the ChatGPT mobile app | Hacker News"
+  }
+}
