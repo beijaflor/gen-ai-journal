@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:40:55.665439+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "いつも使っている Claude Code の裏側を覗いてみた",
+    "url": "https://qiita.com/sapeet-lin/items/f9143a90094601631b6b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeが内部でどのようにAPIを呼び出し、推論と実行を分離してAIエージェントとして機能させているのかを可視化ツールを用いて解説した技術記事です。",
+    "summaryBody": "この記事では、Anthropicが提供するCLIツール「Claude Code」の内部挙動を、ローカルプロキシツール「claude-tap」を用いて解析しています。大きな特徴として、Claude（LLM）自身はコマンド実行能力を持たず、実行すべきツールとその引数をJSONで出力する「推論」のみを担当し、実際の「実行」はローカルのクライアント側が行うという分業体制が詳解されています。一回の要求に対し、ツールの実行結果をフィードバックしながら複数回のAPIターンを繰り返すループ構造や、プロンプトキャッシュによるコストと速度の最適化、さらにはサーバー側ツールとクライアント側ツールの違いなど、開発者がエージェントを構築する上で参考になる知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "LLM",
+      "APIツール呼び出し"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

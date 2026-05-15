@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:41:39.789987+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI以前のシステム移行を、AI思考で振り返る（OMS内製化）",
+    "url": "https://tech-blog.monotaro.com/entry/2026/05/14/090000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "モノタロウにおける大規模な注文管理システムの内製化プロジェクトを題材に、AI以前の開発手法と現代のAI駆動開発を比較し、プロセスの効率化と新たな課題を論じた振り返り記事。",
+    "summaryBody": "モノタロウで行われた注文管理システム（OMS）のパッケージ内製化プロジェクトを、「もし当時AIが活用できていたら」という視点で分析した記事です。従来のコードリーディングや精緻な設計、手動テスト、複雑なデータ分析といった工程が、Claude Code、MCP（Model Context Protocol）、仕様駆動開発（OpenSpec）などの現代的なAIツールによって数倍以上の効率化が可能であると詳述されています。具体的には、BigQueryとの連携による分析の自動化や、git worktreeを用いたAgentによる並列実装などが挙げられています。一方で、AIによる開発加速に伴う「レビューのボトルネック化」や、「コードを自ら読んで理解する経験の欠如による新人教育への影響」といったAI時代特有の課題についても実直に考察されており、技術力とAI活用力のバランスの重要性を説いています。",
+    "topics": [
+      "AI駆動開発",
+      "システム内製化",
+      "Claude Code",
+      "モダナイゼーション",
+      "エンジニア教育"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

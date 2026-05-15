@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:40:41.746124+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicが提示するマルチエージェント設計パターン5選 〜ローカル完結からAWS実装イメージまで〜",
+    "url": "https://dev.classmethod.jp/articles/claude-code-multi-agent-design-patterns/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが公開した5つのマルチエージェント設計パターンを整理し、Claude Codeによるローカル実装例やAWSでのクラウド構成案を解説した記事。",
+    "summaryBody": "本記事は、Anthropicが提唱する「マルチエージェントの5つの設計パターン」をベースに、開発現場での具体的な適用方法を解説しています。主なパターンとして、生成と検証を分担する「Generator-Verifier」、タスクを分解して並列処理する標準的な「Orchestrator-subagent」、長期的な文脈を保持する「Agent Teams」、イベント駆動で疎結合な「Message Bus」、共有ストレージで協調する「Shared State」が紹介されています。特にOrchestrator-subagentは、最初に検討すべき推奨パターンとして挙げられています。また、ローカル環境（Claude Code）での限界を考慮し、Agent TeamsやMessage BusなどをAWS（ECS Fargate、EventBridge、Step Functions等）で構築する際の実装イメージと設計ポイントが図解されており、実務的なAIシステム設計の指針を提供しています。",
+    "topics": [
+      "Anthropic",
+      "マルチエージェント",
+      "Claude Code",
+      "AWSアーキテクチャ",
+      "LLM設計パターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

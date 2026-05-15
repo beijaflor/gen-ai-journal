@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:45:53.315315+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code にAWSのコスト調査をさせたら数千万円分の改善ポイントが見つかった",
+    "url": "https://zenn.dev/geniee/articles/claude-code-aws-cost-optimization",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用してAWS Cost Explorerとコードを自律的に調査させた結果、不要なS3書き込みや設定漏れを発見し、年間数千万円規模のコスト改善を実現した事例。",
+    "summaryBody": "GENIEEのSREチームがAnthropicのCLIツール「Claude Code」を用いて、長年運用されているシステムのAWSコスト最適化を試みた事例。読み取り専用権限でAWS CLIを実行させ、Cost Explorerの分析からソースコードの調査までをAIに自律的に行わせた。その結果、1. 参照されていないS3ログの不要な書き込み（APIリクエスト毎のPutObject）、2. API Gatewayのレスポンス圧縮設定の漏れ（有効化により転送量を86.4%削減）という、人間が見落としていた高インパクトな改善点を特定した。AIが先入観なくシステム全体を俯瞰し、設定不備を効率的に洗い出せる有用性が示されており、定期的なメンテナンスとしての活用が推奨されている。",
+    "topics": [
+      "AWS",
+      "Claude Code",
+      "コスト最適化",
+      "SRE",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

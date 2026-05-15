@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:46:23.090111+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Routines で Issue の自動対応をチームで回している話",
+    "url": "https://zenn.dev/notahotel/articles/claude-routine-auto-fix-issue",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code の Routines 機能を活用し、チームメンバー間でスケジュールを分散させることで、追加課金なしで GitHub Issue の自動修正と PR 作成を継続的に行う運用事例。",
+    "summaryBody": "NOT A HOTEL の開発チームによる、Claude Code Routines を用いた GitHub Issue 自動修正システムの構築レポートです。主な特徴は、4人のチームメンバーが cron 設定を15分ずつずらすことで、個人の無料枠内（Extra Usage なし）で高頻度な自動処理を実現している点にあります。\n\nワークフローは、独自に定義したスキル `/auto-fix-issue` を通じて Issue の選択からブランチ作成、コード修正、PR 作成までを完結させます。機械的なラベル付けやプレビュー環境のデプロイ、AI レビューなどは GitHub Actions に任せるという「LLM と Actions の分業」が徹底されています。また、前日のレビューコメントから未対応事項を抽出して自動起票する `daily-fix.yml` と組み合わせることで、人間が介入せずとも Issue が供給・解決されるエコシステムを構築しています。\n\nクラウドサンドボックス環境を利用することで、ローカル環境を汚さず、かつモバイルからでも指示が出せるという利便性を強調しつつ、外部認証情報の扱いやセッション共有の難しさといった現状のトレードオフについても詳しく解説されています。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AIエージェント",
+      "GitHub Issues",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:48:22.823720+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel AI Gateway プロダクション指標：実稼働データから見るAIモデル利用の現在地",
+    "url": "https://vercel.com/blog/ai-gateway-production-index",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Vercelが20万以上のチームによるAI Gatewayの実稼働データを分析し、Anthropicの支出シェア首位、Googleのトークン量首位、そしてエージェント化とマルチモデル運用の急速な普及を明らかにしました。",
+    "summaryBody": "Vercelが公開した本レポートは、AI Gatewayを通じた数兆トークンの実稼働トラフィックに基づいています。主な傾向として、高品質な推論を求めるAnthropicが支出額で61%のシェアを占める一方、安価なGemini Flashを提供するGoogleがトークン量で38%と首位に立っています。利用形態は劇的に変化しており、トークン量の59%がAIエージェントによるツール呼び出しに関連するものです。また、1,000万リクエストを超えるような大規模チームでは、平均35以上のモデルを組み合わせた複雑なルーティング・グラフを構築しており、特定のプロバイダーに依存しないマルチモデル構成が標準となっています。新モデルの採用速度も極めて速く、数週間で旧モデルから移行する実態や、フォールバック機能がダウンタイムやレート制限の影響を緩和している実状も示されています。",
+    "topics": [
+      "AI Gateway",
+      "LLM利用統計",
+      "マルチモデル・アーキテクチャ",
+      "AIエージェント",
+      "Vercel"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "AI Gateway production index"
+  }
+}

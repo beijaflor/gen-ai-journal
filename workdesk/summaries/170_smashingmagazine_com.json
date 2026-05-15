@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:49:12.665237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの透明性を高めるための実用的なインターフェースパターン（パート2）",
+    "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの「思考プロセス」を可視化し、ユーザーの信頼を構築するための具体的なUIパターンと言語化のフレームワークを提案しています。",
+    "summaryBody": "エージェント型AIが「考えている」時間をユーザーにどう伝えるべきか、従来のスピンアニメーションに代わる設計指針を解説しています。主なポイントは以下の通りです：\n\n- **ステータス更新の方程式**: 「アクション動詞 + 対象 + 制限事項」を組み合わせ、AIが何をしているか具体的に示します（例：「ルフトハンザ航空の価格をスキャン中 / 600ドル以下を探すため」）。\n- **4つの主要パターン**: 低負荷なタスク用の「Living Breadcrumb」、複雑な工程を可視化する「Dynamic Checklist」、専門家向けの「Thinking Toggle」、そして事後検証のための「Audit Trail」。\n- **失敗の設計**: AI自体の不具合と外部ツールのエラーを区別し、一部成功（Partial Success）を適切に表示することで、全損感を防ぎ信頼を維持します。\n\n単なるUIの装飾ではなく、予測可能性と信頼を構築するための「同僚としてのAI」という設計思想を提示しています。",
+    "topics": [
+      "UXデザイン",
+      "AIエージェント",
+      "透明性",
+      "インターフェースデザイン",
+      "ユーザー信頼"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Practical Interface Patterns For AI Transparency (Part 2) — Smashing Magazine"
+  }
+}
