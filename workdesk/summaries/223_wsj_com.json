@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.wsj.com/tech/ai/sam-altmans-business-dealings-under-gop-scrutiny-ahead-of-openais-ipo-52c1cc4d
-- Reason: extracted text too short (50 chars < 500 threshold); page is likely an un-hydrated SPA shell or anti-bot challenge
-- Fetcher: curl+bs4
-- Extracted chars: 50
-- Raw bytes: 767
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T11:12:28.395031+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サム・アルトマン氏のビジネス取引に対する共和党の追及：OpenAI IPO前の不透明な関係",
+    "url": "https://news.ycombinator.com/item?id=48134429",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "OpenAIのIPOを前に、サム・アルトマンCEOが個人の投資先とOpenAIの資金を不透明な形で結びつけているとして、米共和党が調査を強化しています。",
+    "summaryBody": "OpenAIのサム・アルトマンCEOによる、非営利団体から営利目的のベンチャー企業への資金誘導や、個人的な投資先（HelionやRedditなど）とOpenAIとの取引関係が、米共和党の監視下に置かれています。Hacker Newsの議論では、これが純粋なガバナンスへの疑念なのか、あるいは競合するイーロン・マスク氏の背後工作による政治的な嫌がらせなのかについて議論が白熱しています。\n\n主な焦点は、アルトマン氏が「OpenAIの株式を直接保有していない」と公言しながら、間接的なスキームを通じて利益を得ている可能性や、501(c)(3)非営利団体の使命に背く不適切な資金運用がなかったかという点です。議論の中では、アルトマン氏の過去の行動に対する不信感や、AIバブルにおける倫理的欠如を指摘する声が多く上がっています。一方で、こうした追及がテック業界全体の権力構造や、政治的な寄付を巡る「揺さぶり」の一環であるという冷ややかな見方も存在し、AI企業の透明性と説明責任の在り方が問われています。",
+    "topics": [
+      "サム・アルトマン",
+      "OpenAI",
+      "ガバナンス",
+      "利益相反",
+      "共和党調査"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 80
+    },
+    "originalTitle": "Sam Altman's Business Dealings Under GOP Scrutiny Ahead of OpenAI's IPO | Hacker News"
+  }
+}
