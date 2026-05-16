@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:11:11.274484+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WindowsでもCodexのMobileからCodex Appに接続する方法",
+    "url": "https://zenn.dev/acntechjp/articles/4b2af76beb46b3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Windows環境のCodex AppをChatGPTモバイルアプリからリモート操作可能にするための、設定ファイル編集とMFA有効化の具体的な手順を解説しています。",
+    "summaryBody": "OpenAI Codex Appのリモートアクセス機能は、現時点では公式にMacホストが中心と案内されていますが、Windowsでも特定の設定変更を行うことで利用可能です。主な手順は、Windows上の設定ファイル `config.toml` に `remote_connections` や `remote_control` などの機能を有効化する記述を追記し、ChatGPTアカウントでMFA（多要素認証）を有効化することです。特にMFAの有効化は、モバイル側のアプリでPCを認識させるための重要なフラグとなっています。最後にCodex Appとモバイルアプリを完全に再起動し、モバイル側からAuthorize（承認）を行うことで、スマホからPC上のCodexセッションを操作できるようになります。",
+    "topics": [
+      "OpenAI Codex",
+      "ChatGPT",
+      "Windows",
+      "リモート操作",
+      "MFA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

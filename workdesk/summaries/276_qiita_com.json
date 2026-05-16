@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:11:26.716759+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe Coding のトークン消費量の40-60%を占めることもある、Markdownファイルの読み込みトークン消費量を最大98%以上圧縮する markdown-query スキル",
+    "url": "https://qiita.com/dahatake/items/ce9917268d8d18aa9b6c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントによるMarkdownドキュメントの読み込みをチャンク化して最適化し、トークン消費量を劇的に削減するツール「markdown-query」の解説。",
+    "summaryBody": "Vibe Coding（AI主導の開発スタイル）において、仕様書やADRなどの大量のMarkdownファイルがコンテキストウィンドウを圧迫する課題を解決するためのスキル「markdown-query」を紹介しています。このツールは、ローカル環境でMarkdownをインデックス化（SQLite）し、必要な見出し単位のチャンクのみをAIに提供することで、トークン消費量を最大98%以上削減します。日本語トークナイザーによる検索、オフライン動作、BM25/grep対応が特徴で、GitHub CopilotやClaude Code等のCLIと連携可能です。記事では具体的なセットアップ手順から、トークン削減率を測定するベンチマークツールの使い方まで詳しく解説されており、コンテキスト管理を「有限のリソース」として扱う実践的な手法を提示しています。",
+    "topics": [
+      "VibeCoding",
+      "GitHub Copilot",
+      "Token Optimization",
+      "Markdown",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

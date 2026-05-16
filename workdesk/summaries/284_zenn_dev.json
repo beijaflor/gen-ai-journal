@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:09:35.933589+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにリポジトリを1枚のワークフロー図にしてもらうプロンプト",
+    "url": "https://zenn.dev/acntechjp/articles/b82cebfa0e4d50",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを利用して、複雑なリポジトリの全体構造を直感的な1枚の動的ワークフロー図として自動生成するための高度なプロンプトを解説しています。",
+    "summaryBody": "新しいリポジトリのコードを読み始める前に、全体像を視覚的に把握するための手法として、Claude Codeに「flows.json」と「workflows.html」を生成させるプロンプトが紹介されています。このプロンプトは外部ライブラリを一切使わず、ブラウザで直接開ける対話的な図を作成します。特に、AIに図を描かせる際の「やってはいけないこと（ノードの重なり、バッジの反応阻害など）」を具体的に指定することで、実用性の高い可視化を実現しています。ダークモード基調のデザインや、エッジの往復分離、衝突判定などの細かなビジュアル仕様も含まれており、開発者のコード理解を劇的に助けるツールとなっています。プロンプト内にはSVGのZインデックス問題の回避や、バッジの衝突判定ロジックまで細かく定義されており、実用性が極めて高い内容です。",
+    "topics": [
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "SVG可視化",
+      "リポジトリ解析",
+      "フロントエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

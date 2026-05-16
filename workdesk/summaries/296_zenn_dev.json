@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:06:44.548156+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アルカノイド風ブロック崩し / コーディングエージェント / サイバネティクス",
+    "url": "https://zenn.dev/s_tokutake/articles/d7286592282197",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ノーバート・ウィーナーのサイバネティクス論を援用し、コーディングエージェントの動作をフィードバックループとして再定義し、実験を通じて各種エンジニアリング手法の効果を検証した論考。",
+    "summaryBody": "本記事は、Claude Codeなどのコーディングエージェントの動作原理を、ノーバート・ウィーナーの『サイバネティックス』における「制御と通信」の観点から読み解いています。筆者は、エージェントの挙動をプロンプト（運動の原型）と実行結果（実際の運動）の差分を埋めるフィードバックループと定義しました。\n\n記事では、Go言語のEbitengineを用いたブロック崩し制作を題材に、4つのエンジニアリング手法を比較検証しています。\n1. **Prompt Engineering**: 単純な指示のみ。基本的な実装はできるが単調。\n2. **Context Engineering (規約)**: コーディング規約を付与。思考が深まり自発的な仕様追加が見られるが、迷い（backtracking）も増大。\n3. **Context Engineering (仕様追加)**: 詳細なゲーム仕様（アルカノイド）を付与。AIの思考負荷が下がり出力効率が向上するが、動的なバグを抑制できない。\n4. **Harness Engineering**: 計画・検証・修正のスキルチェーンを構築。負のフィードバックを明示的に構造化することで、ランタイムバグの修正に成功。\n\n結論として、コンテキストはAIが「思考すべきこと」と「前提とすべきこと」の境界線として機能し、生成と抑制（負のフィードバック）のバランスを最適化することが、エージェントエンジニアリングの本質であると述べています。",
+    "topics": [
+      "Coding Agent",
+      "Claude Code",
+      "Cybernetics",
+      "Software Engineering",
+      "LLM Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

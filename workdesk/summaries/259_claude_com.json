@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:15:20.161701+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模コードベースにおける Claude Code の運用：ベストプラクティスと導入ガイド",
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "数百万行規模のコードベースで Claude Code を成功させるための、エージェント的探索、拡張レイヤー（ハーネス）の構築、および組織的ガバナンスのベストプラクティスを解説しています。",
+    "summaryBody": "Anthropicが、大規模なモノレポやレガシーシステムにおいて Claude Code を効果的に運用するための戦略を公開しました。主な特徴は、従来のRAG（検索拡張生成）に依存せず、ライブのファイルシステムを直接ナビゲートする「エージェント的探索」を採用している点です。これにより、インデックスの遅れによる情報の古さを回避しています。\n\n成功の鍵として、以下の5つの拡張ポイント（ハーネス）の構築を推奨しています：\n1. **CLAUDE.md**: 階層化されたコンテキストファイルによる知識提供。\n2. **フック (Hooks)**: 学習の反映や自動チェックの実行。\n3. **スキル (Skills)**: タスクに応じた専門知識のオンデマンドな読み込み。\n4. **プラグイン**: 設定の組織内配布。\n5. **MCP サーバー**: 内部ツールやデータソースへの接続。\n\nまた、LSP（Language Server Protocol）の統合によるシンボルレベルの精度向上や、開発者体験（DevEx）チームによる専任の「エージェントマネージャー」の配置など、技術と組織の両面からのアプローチが詳述されています。単なるツールの導入ではなく、AIエージェントをいかに組織のワークフローに適応させるかの実践的なフレームワークを提供しています。",
+    "topics": [
+      "Claude Code",
+      "AI Coding Agents",
+      "Developer Productivity",
+      "Enterprise AI",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "How Claude Code works in large codebases: Best practices and where to start"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:07:04.130615+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "image-blaster: 1枚の画像から3D環境・メッシュ・音響を生成するClaude用スキルセット",
+    "url": "https://github.com/neilsonnn/image-blaster",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Desktopと外部APIを連携させ、単一の画像から探索可能な3D環境、オブジェクト、環境音を数分で一括生成するツールです。",
+    "summaryBody": "### 概要\\n`image-blaster`は、Claude Desktop（MCP/スキルセット）を通じて、静止画から完全な3Dワールドを構築するためのツールキットです。World LabsのMarble-1.1モデルによる探索可能な環境生成、FAL経由のHunyuan 3Dによるメッシュ作成、ElevenLabsによる音響生成を統合し、5分以内に3Dアセットを構築します。\\n\\n### 主な機能\\n- **3D空間生成**: World Labs Marble-1.1を使用して探索可能な3D環境を構築。\\n- **オブジェクトモデリング**: 画像内の動的物体を抽出し、Hunyuan 3Dで.glb/.obj形式のメッシュを生成。\\n- **Gaussian Splatting**: 静的な環境を.spz形式で出力可能。\\n- **音響制作**: ElevenLabsを用いて、環境に即したアンビエント音や効果音（.mp3）を自動生成。\\n\\n### 活用と拡張性\\n生成されたアセットはUnity、Unreal Engine、Blender、Three.jsなどの主要な3Dソフトウェアやゲームエンジンへ統合可能です。ゲームのコンセプトアートの空間化や、建築レンダリング、ロケハンのプロトタイピングなどの用途に最適です。",
+    "topics": [
+      "Claude Desktop",
+      "3D Generation",
+      "Gaussian Splatting",
+      "World Labs",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - neilsonnn/image-blaster: An image-to-world skillset for Claude."
+  }
+}

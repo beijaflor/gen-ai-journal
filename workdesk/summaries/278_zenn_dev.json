@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:10:58.884833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "積みデバイスをClaude Codeで成仏させた春",
+    "url": "https://zenn.dev/optimisuke/articles/c9a2e4f7b831d5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "放置されていた電子工作デバイスや3Dプリンターを、Claude CodeとCLIツールの組み合わせによって実用的な開発ワークフローへと落とし込み、活用を再開した体験談。",
+    "summaryBody": "### 概要\n数年間放置されていたArduinoや3Dプリンターなどの、いわゆる「積みデバイス」を、AIエージェント「Claude Code」を活用することで実用レベルへと引き上げた事例報告です。従来のGUIツールに伴う不便さや、CAD等の学習コストの高さを、CLIツールとAIによるコード生成を組み合わせることで解消しています。\n\n### 技術的アプローチ\n- **電子工作のCLI化**: `arduino-cli`を導入し、Claude Codeから直接コンパイル・書き込みを実行。これによりGUIへの依存を無くし、Gitによるソースコード管理との親和性を向上させています。\n- **コードベースの3Dモデリング**: Pythonライブラリの`build123d`を採用。Claude Codeに形状の指示を出し、生成されたコードを修正するサイクルを回すことで、CADソフトを習得せずとも実用的なSTLファイル作成を可能にしました。\n- **ハードウェアの進化**: 最新の3Dプリンター（Bambu Lab A1 Mini）の高い成功率と、AIによる設計変更の速さが組み合わさることで、試作のイテレーションが劇的に高速化しています。\n\n### 結論\n挫折の要因となりがちな「管理の面倒さ」や「ツール習得コスト」をAIが補完することで、個人のDIY環境が劇的に改善されることを示唆しています。",
+    "topics": [
+      "Claude Code",
+      "Arduino",
+      "3Dプリンタ",
+      "build123d",
+      "電子工作"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

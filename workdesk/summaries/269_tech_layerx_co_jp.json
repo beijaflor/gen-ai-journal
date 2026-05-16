@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:13:08.524857+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "検索エンジン上に作るAgent向け仮想ファイルシステム",
+    "url": "https://tech.layerx.co.jp/entry/2026/05/15/112547",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがOpenSearch上の文書をbashコマンドで探索できる仮想ファイルシステムを構築し、権限制御と検索精度の向上を両立させる手法の提案。",
+    "summaryBody": "AIエージェントが自律的に情報を探索する「Agentic Search」において、探索の利便性とエンタープライズ特有の権限管理を両立させるための「仮想ファイルシステム（VFS）」の試作について解説されています。具体的には、OpenSearchをバックエンドに、just-bashを用いてエージェントにls、cat、grep、そして独自のsemantic_searchコマンドを提供します。この構成により、エージェントはディレクトリ構造を探索するように振る舞いながら、裏側ではOpenSearchのDocument Level Security（DLS）を介して厳密なアクセス制御が適用されます。実証実験では、キーワード検索（grep）にベクトル検索（semantic_search）を組み合わせることで、EnterpriseRAG-Benchにおける文書想起率（Recall）が15.3%から41.5%へと大幅に向上し、回答精度も改善されることが示されました。エージェントにとっての「探索しやすいインターフェース」の重要性を論じています。",
+    "topics": [
+      "AIエージェント",
+      "Agentic Search",
+      "OpenSearch",
+      "RAG",
+      "仮想ファイルシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    }
+  }
+}
