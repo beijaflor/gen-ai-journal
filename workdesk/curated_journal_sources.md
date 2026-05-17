@@ -38,10 +38,20 @@
 - [ ] 122. https://www.oreilly.com/radar/burnout-and-cognitive-debt/
 - [ ] 175. https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/
 
-## Theme 6: 安野貴博・3メガバンク・NIST・OpenMythosが描くClaude Mythosを軸とした攻防の構造変化
+## Theme 6: James Shore・Bryan Cantrill・rust-langが指摘するAI生成コードの保守コスト爆発と「怠惰」の喪失
+
+- [ ] 087. https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs
+- [ ] 112. https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/
+- [ ] 144. https://zenn.dev/todesking/articles/fba4cc93baf0a9
+- [ ] 258. https://github.com/rust-lang/rust-forge/pull/1040
+
+## Theme 7: 安野貴博・NIST・Metabase・GoogleがClaude Mythos前後の攻防構造とAI駆動スキャンの実例を示す
 
 - [ ] 008. https://www.nikkei.com/article/DGXZQOUA302TJ0Q6A430C2000000/
+- [ ] 102. https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html
 - [ ] 167. https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
+- [ ] 168. https://blog.himanshuanand.com/2026/05/the-90-day-disclosure-policy-is-dead/
 - [ ] 185. https://www.nikkei.com/article/DGXZQOUB130SI0T10C26A5000000/
 - [ ] 197. https://www.sbbit.jp/article/cont1/185369
 - [ ] 251. https://www.lac.co.jp/lacwatch/alert/20260514_004720.html
+- [ ] 262. https://www.metabase.com/blog/strip-mining-era-of-open-source-security
