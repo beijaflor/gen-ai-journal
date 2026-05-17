@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:34:03.393246+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cuda-oxide：Rustコードを直接PTXへ変換するNVIDIA製GPUコンパイラ",
+    "url": "https://nvlabs.github.io/cuda-oxide/index.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "「cuda-oxide」は、DSLを介さず標準的なRustコードを直接PTXへコンパイルすることで、安全かつ慣用的な記述を可能にするNVIDIA開発の実験的GPUコンパイラである。",
+    "summaryBody": "NVIDIAが公開した「cuda-oxide」は、Rustの強力な型システムと所有権モデルをGPUプログラミングに導入するための新しいツールチェーンである。既存の多くのライブラリとは異なり、独自のDSLを使用せず、カスタムの`rustc`バックエンドを介して純粋なRustコードを直接PTX（Parallel Thread Execution）へと変換する。主要な機能として、GPUメモリの安全な管理、`async/await`を用いた非同期GPUプログラミングの構成、共有メモリやTMA（Tensor Memory Accelerator）などの高度なハードウェア機能の抽象化が挙げられる。現在はv0.1.0のアルファ段階にあり、バグやAPIの変更が含まれる可能性があるが、RustエコシステムとCUDAの融合を深化させる重要なプロジェクトとなっている。",
+    "topics": [
+      "Rust",
+      "CUDA",
+      "GPU",
+      "Compiler",
+      "NVIDIA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 85
+    },
+    "originalTitle": "The cuda-oxide Book — cuda-oxide"
+  }
+}

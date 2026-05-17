@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:10:32.125881+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの1000セッションを分析して、一週間目でリードタイムを10%縮めた話",
+    "url": "https://zenn.dev/globis/articles/94762dc8ec7914",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの利用ログ1000件を分析し、Hookを活用して不要な確認プロセスを自動化することで、月100時間の工数削減とリードタイム10%短縮を実現した事例。",
+    "summaryBody": "グロービス社におけるClaude Code（CLI版AIエージェント）の導入と最適化の取り組みを紹介した記事です。1000件のセッションログを分析した結果、開発者が単に「進めて」と返答するだけの不要な承認待ちが全体の40%を占めていることが判明。これに対し、特定の確認ステップをスキップするHook、AIに自己レビューを促しハルシネーションを抑制するStop hook、masterブランチへの直接コミットを防ぐPreToolUse Hookなどを導入しました。特筆すべきは、開発者の体験を損なわずログを暗号化して中央集約する仕組みを構築し、データに基づいて組織全体の設定を継続的に改善するサイクルを確立した点です。これにより、開発リードタイムの10%短縮という具体的な成果を得ています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "DevEx",
+      "LLM運用",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

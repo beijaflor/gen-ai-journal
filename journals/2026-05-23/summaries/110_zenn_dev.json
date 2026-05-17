@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:08:58.209010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code に「確か前に〇〇って言ってたよね」って言ってほしい",
+    "url": "https://zenn.dev/flinters_blog/articles/d824ce0576dcf2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの標準機能のみを活用し、過去のセッションログを自動要約・検索することで、エージェントが過去の文脈を自発的に思い出す「memory-recall」システムの設計と実装の記録。",
+    "summaryBody": "### 概要\nClaude Codeに、公式の指示・嗜好保持機能とは異なる「エピソード記憶（過去の具体的な作業文脈）」を持たせるための実装事例。外部の常駐デーモンや複雑なDBを避け、Claude Codeの`hook`、`skill`、`scheduled task`のみで完結させる設計思想が詳述されています。\n\n### システム構成と設計判断\n- **3層の記憶構造**: TODO管理（L1）、Obsidianでの要約ノート（L2）、生のjsonlログ（L3）に整理し、日次で自動要約を作成。\n- **同期・非同期の流路**: プロンプト時にキーワードで過去を引く「同期流路」と、セッション終了後に要約を生成する「非同期流路」を組み合わせ、明日の自分が今日の作業を「ふと思い出す」仕組みを構築。\n- **脱RAGの選択**: 検索の透明性と管理コストを考慮し、あえてベクトルDBやEmbeddingを使わず、ripgrepと形態素解析（Sudachi等）によるシンプルなキーワード検索を採用。\n\n### 運用で見えた知見\n「何度も想起された記憶が新しい要約に乗り続ける」ことで、複雑なスコアリングなしに重要度の自然淘汰が成立する副次効果を確認。また、大規模なログを要約する際のトークン消費や、同一セッション内での検索結果の重複排除といった、実運用ならではの課題と対策も共有されています。",
+    "topics": [
+      "Claude Code",
+      "LLM Memory",
+      "開発プロセス効率化",
+      "エージェント設計",
+      "形態素解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

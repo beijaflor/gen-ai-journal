@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:56:11.436247+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルAIを標準にすべき理由",
+    "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "クラウドAI依存が招くプライバシーの欠如やシステムの脆弱性を指摘し、AppleのローカルモデルAPIを活用した「信頼されるソフトウェア」への転換を提唱している。",
+    "summaryBody": "現代のソフトウェア開発において、OpenAI等のクラウドAPIを安易に利用することは、アプリの堅牢性を損ないプライバシー侵害のリスクを高める「怠慢」であると著者は主張します。多くのデバイスが強力なニューラルエンジンを搭載しているにもかかわらず、外部サーバーに依存し続ける現状を批判し、ローカルAIを活用すべきだとしています。\n\n具体例として、著者が開発した「The Brutalist Report」のiOSクライアントでの実装を紹介。Appleの`FoundationModels`を使用し、ユーザーのデータがデバイス外に出ることなく記事の要約を行っています。また、近年のAppleのアップデートにより、AIの出力をSwiftの構造体として型安全に受け取る（`@Generable`）手法が可能になり、AIを予測不可能なチャットボットとしてではなく、信頼できる「エンジニアリング上のサブシステム」として組み込める点を強調しています。ローカルモデルは万能ではありませんが、要約・分類・抽出といった多くのアプリ機能には十分であり、プライバシーポリシーに頼らない真の信頼をユーザーと築くための鍵になると結論付けています。",
+    "topics": [
+      "Local AI",
+      "On-device Machine Learning",
+      "Apple FoundationModels",
+      "Software Architecture",
+      "Privacy by Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Local AI Needs to be the Norm"
+  }
+}

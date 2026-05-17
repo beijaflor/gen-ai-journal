@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:32:44.818431+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "インタラクション・モデル：人間とAIのコラボレーションをスケーラブルにするアプローチ",
+    "url": "https://thinkingmachines.ai/blog/interaction-models/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Thinking Machines Labは、外部ツールに頼らずモデル自体が200ms単位のマイクロターンで音声・映像・テキストをリアルタイム処理し、人間のような自然な協調を可能にする「インタラクション・モデル」を発表した。",
+    "summaryBody": "Thinking Machines Labが発表した本研究は、従来の「ターン制（交互対話）」の限界を突破し、人間とAIがリアルタイムに情報を共有・反応し合う「インタラクション・モデル」のアーキテクチャを提案しています。\n\n### 主な技術的ブレイクスルー\n- **マイクロターン設計**: 音声や映像を200ms単位の極小チャンクで処理し、入出力を同時並行で扱うことで、割り込みや同時発話、視覚的変化への即時反応を可能にしました。\n- **デュアルモデル構造**: 即応性を担う「インタラクション・モデル」と、複雑な推論やツール利用を行う「バックグラウンド・モデル」を非同期に連携させ、スピードと知能を両立しています。\n- **エンコーダーフリーの初期融合**: 巨大なエンコーダーを使わず、オーディオ信号（dMel）や画像パッチを直接トランスフォーマーに流し込むことで、レイテンシを極限まで削減しました。\n\n### 評価と成果\nFD-bench等の対話品質・応答性指標でGPT-4oやGeminiを上回るスコアを記録。特に「時間の経過を認識する」「視覚的な合図で自律的に発話する」といった、従来のAIが対応できなかった領域で顕著な性能を発揮しています。今後、長時間のセッション管理やモデルのスケーリングを課題に、研究プレビューとしての公開が予定されています。",
+    "topics": [
+      "Human-AI Collaboration",
+      "Multimodal AI",
+      "Real-time Interaction",
+      "Interaction Models",
+      "Micro-turn Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "Interaction Models: A Scalable Approach to Human-AI Collaboration"
+  }
+}

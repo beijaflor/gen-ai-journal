@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T08:18:52.675865+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grok Build：xAIによるRust製CLIコーディングエージェントのリリースと議論",
+    "url": "https://x.ai/news/grok-build-cli",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "xAIが開発した新しいCLIコーディングエージェント「Grok Build」について、その洗練されたTUI、Rust製の技術スタック、および月額300ドルという強気な価格設定が議論を呼んでいる。",
+    "summaryBody": "### 概要\nxAIから発表されたCLIベースのコーディングアシスタント「Grok Build」に関するHacker Newsの議論。RustとRatatuiライブラリを使用して構築された美しいターミナルUI（TUI）が特徴で、自動化のためのヘッドレスモードやACP（Agent Control Protocol）もサポートしている。\n\n### 技術的特徴と開発背景\n- **技術スタック**: 開発者（skp1995）によると、RustのRatatuiを採用し、マウス操作とVimキーバインドの両立、詳細なレンダリング調整が行われている。\n- **OSサポート**: 現状はLinuxとmacOSがメイン。WindowsについてはWSLまたはGit Bash経由が推奨されており、ネイティブ対応はテスト中である。\n- **自動化**: `-p`フラグによるヘッドレスモードをサポートし、スクリプトやエディタ内からの呼び出しを容易にしている。\n\n### ユーザーの反応と批判\n- **価格設定**: 月額300ドル（SuperGrok Heavy）という高額な設定に対し、Claude CodeやGitHub Copilotと比較して「高すぎる」との批判が多い。\n- **差別化**: Twitter（X）との密接な連携以外に、既存の競合製品に対する明確な優位性が不明透明であるという指摘がある。\n- **政治的バイアス**: 一部のユーザーからは、生成される回答のバイアスに対する懸念が表明されている。",
+    "topics": [
+      "xAI",
+      "Grok",
+      "Rust",
+      "TUI",
+      "Coding Agent"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 2,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 80
+    },
+    "originalTitle": "Grok Build | Hacker News",
+    "contentSourceUrl": "https://news.ycombinator.com/item?id=48139115"
+  }
+}

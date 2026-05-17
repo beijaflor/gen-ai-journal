@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:12:10.438405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × Codex 共存セットアップ — ルール・Skills・hooks を一元管理する",
+    "url": "https://qiita.com/kirozero/items/aec53be56a5427475969",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとCodexを併用する際に、設定・スキル・フックを共通化し、一元管理することで二重管理のコストを削減するセットアップ手法を提案しています。",
+    "summaryBody": "この記事では、Claude CodeとCodexという2つのAIエージェントを同一プロジェクトで効率的に併用するための環境構築手法が解説されています。両ツールは設定形式やスキルの探索場所が異なるため、何も対策をしないと二重管理が発生しますが、「共通正本 + 薄いアダプタ」戦略をとることでこれを回避します。具体的には、プロジェクトルールを`AGENTS.md`に集約して`CLAUDE.md`からインポートし、スキルはシンボリックリンクを用いて実体を一つに絞り、フック処理は共通のシェルスクリプトを呼び出す構成にします。また、メモリ機能の割り切りや、実効コンテキストウィンドウに基づいた使い分け基準についても触れられており、複数のAIツールを使い分ける開発者にとって非常に実用的な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AIエージェント",
+      "開発環境",
+      "一元管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

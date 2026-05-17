@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:42:30.878281+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMを動かすハードウェア",
+    "url": "https://nowokay.hatenablog.com/entry/2026/05/13/104214",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2026年の視点から、コーディングエージェントの実用に必要な32GB以上のVRAM/RAMを備えた最新SoCやGPUのコストパフォーマンスと選択肢を解説。",
+    "summaryBody": "ローカルLLM、特にコーディングエージェントを実用的に運用するためのハードウェア選定ガイドです。著者は、十分なコンテキスト長を確保するために「32GB」のメモリ量を一つの基準として提示しています。\n\n### 主なハードウェア区分と特徴\n- **SoC（System on Chip）**: 大容量メモリを安価に確保できるため、推論特化なら最良の選択肢。Ryzen AI Max+ 395搭載機（128GB）やMac Studio（96GB〜）、Intel Core Ultra搭載ミニPCなどが挙げられています。\n- **GPU（単体グラボ）**: 学習や動画生成も視野に入れる場合に有力。RTX 5060 Ti 16GBの2枚挿しが最も安価に32GB VRAMを得る方法として紹介されているほか、Intel Arc Pro B70（32GB）やRTX 5090（32GB）といった選択肢の価格感がまとめられています。\n\n単純な推論のみが目的ならSoC系の完組マシン、拡張性や多目的利用を求めるならRTX系自作が推奨されるという、2026年時点（想定）の市場環境に基づいた比較となっています。",
+    "topics": [
+      "ローカルLLM",
+      "GPU",
+      "VRAM",
+      "SoC",
+      "ハードウェア構成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

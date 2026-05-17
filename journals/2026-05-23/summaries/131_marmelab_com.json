@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:39:00.931756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeをターミナルで最大限に活用する：生産性を高めるコマンドとテクニック",
+    "url": "https://marmelab.com/blog/2026/05/12/claude-code-hidden-commands.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」を使いこなすための、シェル連携、マルチディレクトリ対応、高度なコンテキスト管理テクニックについて解説されています。",
+    "summaryBody": "この記事では、AnthropicのCLIツールである「Claude Code」をターミナル環境で最大限に活用するための実用的なワークフローが紹介されています。主な内容は以下の通りです。\n\n1. **シェルコマンドの直接実行**: `!`プレフィックスを使用することで、チャット内から直接シェルコマンドを実行し、その出力をそのままAIへのコンテキストとして提供できます。\n2. **コンテキスト管理の最適化**: `@`によるファイル参照、`/add-dir`による複数ディレクトリの同時検索・編集、`/usage`によるトークン消費の監視が可能です。\n3. **高度なセッション操作**: `/compact`によるコンテキストの圧縮や、Escキー2回押しによる「リワインド（巻き戻し）」機能（コードのみ、会話のみ、両方の復元を選択可能）を駆使することで、精度の低下とトークンコストを抑えることができます。\n4. **マルチタスクとクリーンアップ**: `/btw`を用いたサイドチャットの開始や、実装後のコードを洗練させる`/simplify`コマンドなど、開発効率を劇的に向上させるTipsが網羅されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "Terminal",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Getting More Out of Claude Code in the Terminal"
+  }
+}

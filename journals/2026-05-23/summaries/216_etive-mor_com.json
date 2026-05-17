@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:20:54.080260+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "言語モデルは絵を描けるのか？：逐次的描画プロセスから見るAIの「脆弱性」",
+    "url": "https://www.etive-mor.com/blog/can-a-language-model-paint/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMに1筆ずつ絵を描かせる実験を通じ、空間認識の欠如がもたらす描画の崩壊と、それがソフトウェア開発におけるAI生成コードの脆弱性にどう通じるかを鋭く考察している。",
+    "summaryBody": "### 概要\n著者は、LLMが「一発」で画像を生成するのではなく、人間のように1ストロークずつ考えながら描画を進めるプロセスを検証するアプリを開発しました。Claude 3.5 (Opus/Sonnet) や Mistral Large を使い、Vision Language Model (VLM) にキャンバスの現状を認識させながら次の筆致を決定させる試みです。\n\n### 判明した課題と「脆弱性」の比喩\n1. **逐次処理の弱点**: モデルは最初の大まかな構成には長けていますが、細部を描き込む段階で空間認識力の欠如が露呈します。一箇所の「間違った筆致」が全体を破綻させ、その後AIは修復を試みるほどさらに事態を悪化させる「壊滅的な失敗」が頻発しました。\n2. **コード生成への転用**: この現象はソフトウェア開発におけるLLM活用にも共通します。大規模なコードベースにおいて、AIが生成した一つの不適切な機能やコミットが全体の保守性を不可逆的に損なう「脆弱性」の視覚的なメタファーとなっています。\n3. **芸術性の議論**: トルストイの芸術論（誠実さとアクセシビリティ）を引用し、AI生成物はアクセシビリティを満たすものの、真の「誠実さ」や「意図」を欠いているため、依然として魂のない派生物に留まっていると論じています。",
+    "topics": [
+      "LLM",
+      "VLM",
+      "AIエージェント",
+      "生成AIアート",
+      "ソフトウェア工学"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 88
+    },
+    "originalTitle": "Can a language model paint?"
+  }
+}

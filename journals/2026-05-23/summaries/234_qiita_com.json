@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:16:48.092745+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Ready なデータ基盤とは何か",
+    "url": "https://qiita.com/ayumito/items/746fc38b5675869b96a0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント時代に求められるデータ基盤を「メダリオンアーキテクチャによるデータ整備」と「オントロジーによる文脈提供」の2軸で定義し、Microsoft Fabricでの実現手法を解説する記事。",
+    "summaryBody": "AIがSQLを生成できるだけでは不十分であり、ビジネスの問いに正しく答えるには「AI Ready」なデータ基盤が必要です。本記事ではその要件を2つの軸で整理しています。第1の軸は「データの形を整える」ことで、メダリオンアーキテクチャ（Bronze/Silver/Gold）を用い、AIが再利用しやすい整合性の取れたベーステーブルを構築します。第2の軸は「データのコンテキスト（意味・ルール）をAIに伝える」ことで、従来のセマンティックモデルに加え、Microsoft Fabricが展開する『Fabric IQ』などのオントロジーやナレッジグラフ機能を活用し、ビジネス概念やリレーションシップを機械可読な形で構造化します。最終的に、データ整備から組織横断的なナレッジ共有（Foundry IQ/Work IQ連携）に至る4つのステップによる段階的アプローチを推奨しています。",
+    "topics": [
+      "Microsoft Fabric",
+      "AI Ready",
+      "メダリオンアーキテクチャ",
+      "オントロジー",
+      "セマンティックモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 88
+    }
+  }
+}

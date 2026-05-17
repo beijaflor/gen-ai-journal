@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:05:57.846573+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "untodo - 人間とAIのための型安全TODOライブラリ",
+    "url": "https://blog.inorinrinrin.com/entry/2026/05/16/131740",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeScriptでKotlinのTODO()関数を再現し、型安全性と構造化メタデータによって人間とAIの双方に配慮したTODO管理を可能にするライブラリ「untodo」の紹介。",
+    "summaryBody": "TypeScript向けの新ライブラリ「untodo」は、従来の「// TODO:」コメントが抱える「コンパイラに無視される」「型システムに乗らない」といった課題を解決します。Kotlinの`TODO()`関数から着想を得ており、`never`型を返すことで、関数の返り値を含むあらゆる場所で型安全に配置可能です。最大の特徴は、理由（reason）やIssue番号、担当者といったメタデータを構造化データとして扱える点で、これによりAIコーディングアシスタントが文脈を正確に理解できるようになります。また、ESLint/oxlintとの連携によりCI/CDでの検知を容易にするほか、ランタイムでの挙動をカスタマイズできる柔軟な設計を採用しています。コメントから「型安全なコード」へとTODOを昇格させることで、実装漏れや属人化した管理を防止するアプローチを提案しています。",
+    "topics": [
+      "TypeScript",
+      "untodo",
+      "AIコーディングアシスタント",
+      "型安全性",
+      "ESLint"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

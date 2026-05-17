@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:23:02.530112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Genkit Middlewareの発表：エージェントアプリのインターセプト、拡張、堅牢化が可能に",
+    "url": "https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleのAI開発フレームワーク「Genkit」に、モデル生成やツール実行ループにカスタムロジックを挿入できるコンポーザブルなMiddleware機能が導入されました。",
+    "summaryBody": "Googleは、AIエージェント構築用フレームワーク「Genkit」において、生成プロセスを柔軟に制御できる「Middleware（ミドルウェア）」機能を発表しました。この機能は、モデル呼び出し、ツール実行、生成ループの3つのレイヤーで動作し、TypeScript、Go、Dart（Pythonは近日対応）で利用可能です。標準で提供されるミドルウェアには、一時的なエラーに対する「Retry（再試行）」、割り当て超過時に代替モデルへ切り替える「Fallback（フォールバック）」、破壊的な操作の前に人間が承認する「Tool approval」、特定ディレクトリの知識を注入する「Skills」、安全なファイル操作を提供する「Filesystem」が含まれます。また、開発者は独自のカスタムミドルウェアを作成して、コンテンツフィルタリングや機密情報の除去などを宣言的に実装でき、Genkit Developer UIを通じてその実行過程を視覚的にデバッグすることも可能です。",
+    "topics": [
+      "Genkit",
+      "AIエージェント",
+      "LLM",
+      "Google Cloud",
+      "ミドルウェア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps"
+  }
+}

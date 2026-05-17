@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:07:57.947159+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "責任指向AIエージェント：能力ベースから責任ベースの設計へ",
+    "url": "https://www.oreilly.com/radar/from-capabilities-to-responsibilities/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "高リスクなタスクを担うAIエージェントに対し、プロンプトに頼る「能力」ベースの制御から、コード化された「責任コントラクト」による決定論的な制約へのパラダイムシフトを提唱する。",
+    "summaryBody": "この記事では、資金移動やインフラ変更などの重要な意思決定を行う「高リスクなAIエージェント」における新しいガバナンスモデル「責任指向エージェント（ROA）」を提案しています。現状の『人間による介入（HITL）』は規模が拡大するとアラート疲れや運用のボトルネックを招くため、著者は人間が設計ループに留まる『Human-Over-The-Loop (HOTL)』への移行を主張します。ROAは5つの柱（責任コントラクト、ミッション、認識論的隔離、認識論的継続性、決定テレメトリ）で構成され、エージェントが直接外部操作を行うのではなく、決定論的なランタイムによって検証可能な『ポリシー提案』のみを出力する仕組みです。これにより、既存のLangChainなどのフレームワークの柔軟性を維持しつつ、厳格な実行ガバナンスと説明責任を確保できるとしています。",
+    "topics": [
+      "AIエージェント",
+      "AIガバナンス",
+      "システムアーキテクチャ",
+      "意思決定インテリジェンス",
+      "エンタープライズAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "From Capabilities to Responsibilities: Designing contract-bound AI agents for high-stakes execution"
+  }
+}

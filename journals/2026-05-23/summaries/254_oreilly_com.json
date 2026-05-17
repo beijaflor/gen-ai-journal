@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:16:49.823216+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・ハーネス・エンジニアリング：AIモデルを真のツールに変えるための設計手法",
+    "url": "https://www.oreilly.com/radar/agent-harness-engineering/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの性能はモデル単体ではなく、プロンプト、ツール、サンドボックス、フィードバックループといった「ハーネス（足場）」の設計によって決まるという新たなエンジニアリングの規律を提唱している。",
+    "summaryBody": "この記事では、GoogleのAddy Osmani氏が、AIエージェント構築においてモデルそのものよりも周囲の設計、すなわち「ハーネス（Harness）」が重要であることを解説しています。主な要点は以下の通りです。\n\n- **Agent = Model + Harness**: 優れたモデルでも貧弱なハーネスでは機能せず、逆に適切なハーネスがあれば標準的なモデルでも高度なタスクを完遂できます。ハーネスにはシステムプロンプト、ツール群、サンドボックス、可観測性、そしてオーケストレーションが含まれます。\n- **「スキル問題」としての再定義**: エージェントの失敗をモデルの限界と決めつけるのではなく、コンフィギュレーション（設定）の欠落として捉えます。失敗が発生するたびに`AGENTS.md`等のルールを更新し、二度と同じミスをさせない「ラチェット（歯止め）」の仕組みが重要です。\n- **コンテキスト管理の技術**: コンテキスト窓の飽和を防ぐため、要約（Compaction）やツール実行結果の外部ファイル化、セッションのクリーンな再起動などの高度な制御が求められます。\n- **長期実行のループ設計**: 計画（Planning）、自己検証（Self-verification）、そして生成と評価を分離するマルチエージェント構造（Generator/Evaluator）により、長期的なタスクの完遂率を高めます。\n\n最終的に、開発者はLLM APIを直接叩くのではなく、ハーネスが提供するランタイム（HaaS: Harness as a Service）を活用する形態へとシフトしていくと予測しています。",
+    "topics": [
+      "AI Agents",
+      "LLM Ops",
+      "Software Architecture",
+      "Claude Code",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Agent Harness Engineering – O’Reilly"
+  }
+}

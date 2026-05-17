@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:54:07.702055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの失敗をチームルールに昇格させる仕組み",
+    "url": "https://zenn.dev/dely_jp/articles/5bc3e9cf62d776",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェント（Claude Code）が起こした失敗を蓄積・分析し、再発頻度の高いものを自動的にチーム共有の開発ルールへ昇格させる「ハーネスエンジニアリング」の実践手法。",
+    "summaryBody": "クラシルのRails開発チームによる、AIエージェントの運用精度を継続的に向上させるための仕組みの紹介です。Mitchell Hashimotoが提唱する「エージェントのミスに合わせて環境を更新する」思想に基づき、3つのステップを構築しています。まずEvaluatorが検知した失敗をローカルの`FAILURES.md`に蓄積。次に`/failure-promote`コマンドにより、3件以上重なった失敗パターンをチーム共有の`.claude/rules`へ昇格させるPRを自動生成します。さらに、セッション終了時に`/retro`を実行することで、PRレビューや手修正の履歴からカテゴリ別に知見を抽出し、MemoryやHook、Skillsへと還元。単発の修正で終わらせず、エージェントが動作する「環境」そのものを自己進化させることで、同じ失敗を繰り返さないエコシステムを実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "LLM",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

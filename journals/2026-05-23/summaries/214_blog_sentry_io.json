@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:21:27.972161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sentry、AIエージェントによるダッシュボードの自動生成・編集機能を発表",
+    "url": "https://blog.sentry.io/dashboard-updates/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Sentryは、自然言語のプロンプトでダッシュボードを構築・編集できるAIエージェント機能や、CLIを通じた管理機能を発表しました。",
+    "summaryBody": "Sentryは、これまで手動で行われていた可視化プロセスの効率化を目指し、AIエージェントを活用した新しいダッシュボード作成体験を導入しました。主なアップデート内容は以下の通りです。\n\n1. **AIエージェントによる生成と編集 (Beta)**: チャット形式で要望を伝えるだけで、Seer（SentryのAIデバッガー）と同様の技術を用いてダッシュボードを自動構築します。修正も対話的に行えるため、構築時間を大幅に短縮できます。\n2. **Insightsのダッシュボード化**: 従来の固定的な「Insights」ページを、クローン・カスタマイズ可能なダッシュボードへと統合。Web Vitalsやバックエンド、モバイル向けに最適化されたテンプレートとして活用可能です。\n3. **Sentry CLIによる管理**: ターミナルからダッシュボードのCRUD操作が可能になりました。JSON出力をサポートしており、Claude CodeやCursorなどの外部AIエージェントからもプログラム的にダッシュボードを更新できます。\n4. **リビジョン履歴**: AIや手動による変更履歴を自動追跡し、必要に応じて以前のバージョンにロールバックできる機能を搭載しました。\n\nこれにより、開発者は「ダッシュボードを自作する」負担から解放され、データが示す問題の特定と解決に集中できるようになります。",
+    "topics": [
+      "Sentry",
+      "AI Agent",
+      "Observability",
+      "Dashboards",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "New ways to agentically build and edit dashboards | Sentry Blog"
+  }
+}

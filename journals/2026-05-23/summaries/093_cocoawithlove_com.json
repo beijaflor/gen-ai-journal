@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:13:00.014577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SwiftでLLMを学習する 第1回：行列演算をGflop/sからTflop/sへ",
+    "url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Swiftを用いて、Apple SiliconのCPU、AMX、GPUを最大限に活用し、行列演算を標準実装の380倍以上高速化してTflop/s級のパフォーマンスを実現するプロセスを解説しています。",
+    "summaryBody": "この記事は、Andrej Karpathy氏の「llm.c」をモデルに、外部ライブラリを使わずSwiftでLLM（大規模言語モデル）の訓練を最適化するシリーズの第1回です。主な内容は、行列演算の性能を2.8 Gflop/sから1.1 Tflop/sまで引き上げる具体的な手法の紹介です。まず、SwiftのArray固有のオーバーヘッド（COWチェックなど）を回避するためにSwift 6.2の`MutableSpan`を導入し、次に`Swift Numerics`の`Relaxed.multiplyAdd`を用いてSIMD命令を活用したFused Multiply-Add（FMA）を実装します。さらに、`InlineArray`によるスタック割り当てとマルチスレッド化（DispatchQueue.concurrentPerform）を組み合わせ、最終的には非公開のAMX（Apple Matrix Coprocessor）命令や、Metalによるタイリング（Tiling）演算を実装することで、GPUのポテンシャルを引き出しています。理論的な解説だけでなく、Apple Siliconの各演算ユニットの特性と、Swiftでの低レイヤー最適化の可能性を実証する内容となっています。",
+    "topics": [
+      "Swift",
+      "LLM",
+      "Apple Silicon",
+      "Metal",
+      "Performance Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 95
+    },
+    "originalTitle": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s"
+  }
+}

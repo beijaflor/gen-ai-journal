@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:13:23.165989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Generative UI のためのフレームワーク OpenUI",
+    "url": "https://azukiazusa.dev/blog/openui-framework-for-generative-ui/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが独自の宣言型言語を用いてUIを動的に生成・構築するためのフレームワーク「OpenUI」の概要と、その実装方法を解説した記事。",
+    "summaryBody": "OpenUIは、従来のJSONベースのGenerative UIが抱えるトークン消費やストリーミングの難しさを解決するために開発された、オープン標準のフレームワークです。AIに独自の「OpenUI言語」を出力させることで、トークン効率を高めつつ、段階的なレンダリングを可能にします。主な構成要素はコンポーネントライブラリ、プロンプトジェネレーター、パーサー、レンダラーの4つで、これらによりブランドの一貫性とセキュリティを保ちながら柔軟なUI生成を実現します。記事では、Next.jsを用いた具体的なセットアップ、Zodによるカスタムコンポーネントの定義、さらにはQueryやMutation、MCP（Model Context Protocol）ライクなツール連携を通じた双方向のデータ操作の実装方法までが体系的に解説されています。",
+    "topics": [
+      "OpenUI",
+      "Generative UI",
+      "LLM",
+      "Next.js",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

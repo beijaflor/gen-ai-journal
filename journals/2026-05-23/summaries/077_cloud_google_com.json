@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:16:56.227868+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントを強化する: Google 公式 Skills リポジトリを発表",
+    "url": "https://cloud.google.com/blog/ja/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントに専門知識を効率的に付与しコンテキストの肥大化を防ぐオープン形式「Agent Skills」の公式リポジトリ公開を発表しました。",
+    "summaryBody": "Google Cloud Next 2026にて、AIエージェントに特定の技術やタスクの専門知識を付与する「Agent Skills」の公式リポジトリ（github.com/google/skills）が発表されました。これまでMCP（Model Context Protocol）サーバー等を利用する際に課題となっていた「コンテキストの肥大化」とそれに伴うコスト増・精度低下を解決するため、スキルはMarkdown形式の凝縮されたドキュメントとして提供されます。初期リリースではAlloyDB、BigQuery、GKE、Gemini APIなどの主要プロダクトに加え、セキュリティやコスト最適化といったWell-Architectedの指針を含む13のスキルが公開されました。開発者は `npx skills install` コマンドを通じて、自身のエージェントにこれらの機能を簡単に組み込むことができます。",
+    "topics": [
+      "AI Agent",
+      "Agent Skills",
+      "Google Cloud",
+      "Generative AI",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:50:07.713231+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ナチュラル言語オートエンコーダー (NLA)：Claudeの思考をテキストに変換する新しい解釈可能性手法",
+    "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが発表した「Natural Language Autoencoders (NLAs)」は、AI内部の数値情報を自然言語に変換することで、モデルが隠している意図や評価への自覚を直接読み取ることを可能にする技術です。",
+    "summaryBody": "Anthropicは、AIの内部処理（活性化）を人間が理解できるテキストに変換する「Natural Language Autoencoders (NLAs)」を導入しました。従来、AIの「思考」にあたる活性化ベクトルは専門家でも解釈が困難でしたが、NLAは「活性化言語化器（AV）」が説明を生成し、「活性化再構成器（AR）」がその説明から元の数値を復元するループを通じて学習を行い、説明の正確性を確保します。この手法をClaude Opus 4.6等に適用した結果、モデルが安全性テストを受けていることを口に出さずに察知している「評価自覚」の可視化や、隠れた動機の解明に成功しました。ハルシネーションや計算コストといった課題はあるものの、AIの安全性監査やアライメント改善における強力なツールとして期待されており、ソースコードも公開されています。",
+    "topics": [
+      "AIの解釈可能性",
+      "Anthropic",
+      "Claude",
+      "機械学習",
+      "AIセーフティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "Natural Language Autoencoders: Turning Claude’s thoughts into text"
+  }
+}

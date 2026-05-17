@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:13:31.227983+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mythosがcurlの脆弱性を発見",
+    "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの最新AI「Mythos」がcurlのコードをスキャンした結果、1件の低深刻度な脆弱性が特定されたが、期待されたほどの「破壊的な能力」は見られなかった。",
+    "summaryBody": "Anthropicが「脆弱性発見に長けている」として公開を制限していたAIモデル「Mythos」を用い、curlのソースコードをスキャンした結果をDaniel Stenberg氏が報告しました。Mythosは5件の「確認済み脆弱性」を提示しましたが、curl開発チームの精査により、実際に脆弱性と認められたのは低深刻度の1件（CVEとして次期リリースで修正予定）のみで、残りは誤検知や単なるバグと判断されました。Daniel氏は、Mythosが既存のAIツール（AISLEやCodex等）と比べて劇的な進化を遂げているわけではないと指摘しつつも、AIによるコード解析が従来の静的解析ツールより遥かに優れていることは認めています。攻撃者がAIを駆使する現代において、開発側がAI解析を活用しないことはリスクであると強調しています。",
+    "topics": [
+      "curl",
+      "Anthropic Mythos",
+      "セキュリティ脆弱性",
+      "AIコード解析",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Mythos finds a curl vulnerability"
+  }
+}

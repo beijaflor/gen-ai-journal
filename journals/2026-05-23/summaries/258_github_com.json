@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:15:45.189664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RustプロジェクトにおけるLLM使用ポリシーの策定：rust-lang/rustへの貢献ルール",
+    "url": "https://github.com/rust-lang/rust-forge/pull/1040",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Rustプロジェクトの主要リポジトリにおけるLLM生成コンテンツの使用を原則禁止し、適切な実験的利用の枠組みを定める新ポリシーの提案。",
+    "summaryBody": "Rustコンパイラや標準ライブラリ（rust-lang/rust）の開発において、LLM（大規模言語モデル）の利用を管理するためのポリシーが提案されました。この取り組みの背景には、LLMによって生成された低品質な「スロップ」と呼ばれるプルリクエストの急増があり、レビュー負荷の軽減が急務となっています。\\n\\n### ポリシーの主要ポイント\\n- **原則的な禁止**: LLMによって最初に作成されたコードや説明文の投稿を原則として禁止します。これには、生成後に人間が編集を加えたものも含まれます。\\n- **実験的利用の枠組み**: レビュアーとの事前の合意があり、かつサウンドネス（健全性）に影響しない範囲であれば、試験的な利用を認める例外規定が設けられています。\\n- **許容される利用**: 既存のコードの理解を助けるための検索や、人間が完全に内容を把握・制御している範囲での単純な補完ツールの利用は制限されません。\\n\\n議論は、LLMの倫理的・環境的影響を理由に全面禁止を求める声と、開発補助としての可能性を模索する層の間で紛糾しましたが、本ポリシーはプロジェクト運営の現実的な継続性を最優先に設計されています。",
+    "topics": [
+      "Rust",
+      "LLM",
+      "GitHub",
+      "ガバナンス",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Add an LLM policy for rust-lang/rust #1040"
+  }
+}

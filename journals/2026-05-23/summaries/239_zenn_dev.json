@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:15:41.390116+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代にゼロ知識証明が必要な理由",
+    "url": "https://zenn.dev/komlock_lab/articles/zero-knowledge-proof-2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが自律的に決済を行う時代において、行動履歴の秘匿と正当性の証明を両立する「ゼロ知識証明」の重要性と実装方法を解説する。",
+    "summaryBody": "AIエージェントによる経済圏の到来を見据え、ゼロ知識証明（ZKP）の必要性を説く技術記事です。ZKPの基本概念を「アリババの洞窟」や「離散対数問題」の例えで分かりやすく解説し、ブロックチェーンにおけるスケーリング（ZK Rollup）とプライバシー（ZK Payments）の役割を整理しています。特に、Vitalik Buterinが提唱するAIエージェント向けの決済標準「ZK Payments」に焦点を当て、エージェントの行動からユーザーを特定されるリスクをZKPでどう解決するかを論じています。後半では、circomとsnarkjsを用いた具体的なコード例を提示し、因数分解の知識を秘密にしたままその正しさを証明するデモを通じて、技術的な実装フローを学べる構成になっています。",
+    "topics": [
+      "ゼロ知識証明",
+      "AIエージェント",
+      "ブロックチェーン",
+      "Ethereum",
+      "ZK Payments"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

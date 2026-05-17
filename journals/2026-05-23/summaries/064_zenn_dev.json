@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:51:51.519957+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code・Codex CLI・Copilot CLI を QCD で比較する（オトナの自由研究 #16）",
+    "url": "https://zenn.dev/nnakapa/articles/lab-16-rpi4-qcd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code、Codex CLI、GitHub Copilot CLIの3種を品質・コスト・速度のQCD指標で90回試行に基づき定量比較し、実戦的な選び分け基準を提示したベンチマーク記事。",
+    "summaryBody": "AIコーディングエージェントのCLIツール主要3製品を、Raspberry Pi 4環境にて比較検証。ISO/IEC 25010をベースにした5軸の品質評価、APIトークン換算のコスト、実行速度の3側面から90回のテストを実施しています。\n\n検証の結果、品質面では全製品が平均99点台を記録し、本タスクにおいては実質的に互角。速度面ではClaude Codeが他2製品より約35%高速であり、コスト面ではGitHub Copilot CLIが圧倒的に優位（約6〜8倍安価）であることが示されました。\n\n特筆すべきは、静的解析（ruff/bandit等）では検知できない脆弱性や可読性の問題をLLM採点が補完する有用性と、コードレビューの指摘傾向がツールよりも採用モデル（Opus 4.7 vs GPT-5.5）に依存するという発見です。結論として、総合バランスならClaude Code、コスト優先ならCopilot CLIという推奨が導き出されています。",
+    "topics": [
+      "Claude Code",
+      "GitHub Copilot",
+      "Codex CLI",
+      "ベンチマーク",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

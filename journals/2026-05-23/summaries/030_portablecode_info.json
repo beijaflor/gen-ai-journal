@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:00:25.383241+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "節約AIコーディング・実践編",
+    "url": "https://portablecode.info/2026/05/08/low-cost-ai-coding/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングのコストを月額$10〜$30程度に抑えるための、LLMモデルの役割別使い分け、コンテキスト節約ツール、および仕様駆動開発（SDD）の実践手法を詳しく解説しています。",
+    "summaryBody": "### 概要\\nAIコーディングの普及に伴い増大するLLM利用コストを抑制するための実践的なガイドです。筆者の経験に基づき、トークン消費を抑えながら開発効率を維持する手法を提案しています。\\n\\n### 主な内容\\n1. **モデルの階層的利用**: 複雑なプランニングには高性能な上位モデル（GPT-5.5等）、メインの実装作業にはコストパフォーマンスに優れた中堅モデル（Kimi K2.6やGPT-5.3-Codex）、軽微な修正には極めて安価なモデル（DeepSeek V4 Flash）を使い分ける戦略を推奨しています。\\n2. **トークン節約ツールの活用**: \\n   - `ccc`: セマンティックコード検索により、無駄なファイル読み込みを削減。\\n   - `RTK`: CLI出力を最適化し、Tool Call時のコンテキスト消費を抑制。\\n   - `Context7`: 効率的なドキュメント参照を可能にするMCPツール。\\n3. **仕様駆動開発 (SDD)**: `OpenSpec`や`cc-sdd`を活用し、実装前に仕様を固めることで、開発フェーズでの試行錯誤と無駄なトークン消費を最小化します。仕様をファイル管理することでセッションを切り替え、履歴の累積を防ぐ手法も有効です。",
+    "topics": [
+      "AIコーディング",
+      "LLMコスト削減",
+      "DeepSeek",
+      "仕様駆動開発",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

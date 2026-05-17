@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:06:38.260033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "microsoft/waza: AIエージェントのスキル開発・評価・品質管理用フレームワーク",
+    "url": "https://github.com/microsoft/waza",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Microsoftが公開した、AIエージェントの「スキル」を定義、テスト、評価、改善するためのGo言語製CLIツールおよびフレームワーク。",
+    "summaryBody": "wazaは、AIエージェントの機能（スキル）を構築・評価・改善するための包括的なツールキットです。開発者はこのツールを使用して、スキルの定義からテストスイートの構築、ベンチマークの実行、そして品質の継続的なモニタリングまでを一貫して行うことができます。\n\n主な特徴と機能：\n- **スキャフォールディング**: `waza init` や `waza new` により、スキル定義（SKILL.md）や評価タスクのテンプレートを即座に作成可能。\n- **高度な評価システム**: `waza run` を通じて、LLM-as-a-Judge、振る舞い分析、トークン使用量、ツール呼び出しシーケンスなど、多角的なグレーダー（採点機）を実行できます。\n- **トークン最適化**: プロンプトのトークン数をカウントし、予算内に収まっているかチェックする機能や最適化案の提示機能。\n- **ダッシュボードと統合**: `waza serve` による評価結果の可視化、Azure Blob Storageへの結果自動アップロード、GitHub Actionsを利用したCI/CD統合をサポート。\n\nエージェントの能力を定量的に評価し、モデルの変更やプロンプトの修正がスキルの有効性に与える影響を正確に測定することを目的としています。",
+    "topics": [
+      "AI Agents",
+      "LLM Evaluation",
+      "CLI",
+      "Microsoft",
+      "Quality Assurance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "microsoft/waza: CLI / Framework for Agent Skills - create, test, measure and improve skill quality and effectiveness"
+  }
+}

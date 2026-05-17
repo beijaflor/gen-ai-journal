@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:07:30.479675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SupersetがVercelでAIエージェント向けIDEを構築した方法",
+    "url": "https://vercel.com/blog/how-superset-built-the-ide-for-ai-agents-on-vercel",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Supersetは、Vercelのサーバーレスインフラを活用し、最大10体のAIエージェントを並行稼働させて開発を自動化する、エージェント特化型IDEの構築事例を紹介しています。",
+    "summaryBody": "### エージェント時代の次世代IDE「Superset」\nSupersetは、1人の開発者が複数のAIエージェントを指揮してコードを生成する「マルチエージェント開発」のためのIDEです。従来の逐次的なワークフローではなく、最大10体のエージェントを並列に実行し、それぞれに独立したワークスペースとプレビュー環境を提供します。\n\n### Vercelを活用した並列インフラの構築\nSupersetのチームは、プラットフォームエンジニアリングを介さずに以下のVercel製品群を組み合わせてインフラを構築しました：\n- **Vercel Fluid Compute**: エージェントの並列タスクを動的に吸収し、アクティブなCPU使用時間のみ課金されるため、モデル応答待ちのコストを最適化。\n- **Vercel AI SDK & AI Gateway**: マルチモデル・マルチエージェントのオーケストレーションとルーティングを一括管理。\n- **自動プレビューデプロイ**: エージェントが作成するブランチごとに瞬時にURLを発行し、開発サイクルを劇的に加速。\n\n### 驚異的な開発スピードとスケーラビリティ\n自社でもSupersetを活用することで、週に1,000〜1,400回のデプロイを実行し、1日平均600件のプレビューデプロイを処理しています。Hacker Newsへの掲載によるトラフィック急増時も、インフラの再設計なしで対応可能なスケーラビリティを実現しました。",
+    "topics": [
+      "AI Agents",
+      "Vercel",
+      "IDE",
+      "Software Development",
+      "Next.js"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "How Superset built the IDE for AI agents on Vercel"
+  }
+}

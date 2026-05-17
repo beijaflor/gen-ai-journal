@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:08:01.216466+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「OSSがあるなら自作するな」は AI時代も正しいか ── Build vs Adopt の新しい判断基準",
+    "url": "https://speakerdeck.com/kumorn5s/oss-build-vs-adopt",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる実装コストの低下とOSS採用に伴う「依存リスク」を再定義し、機能の重要度や保守負荷に基づく新たなBuild vs Adoptの意思決定フレームワークを提唱する。",
+    "summaryBody": "サイバーエージェントの石川氏による、AI時代の技術選定（Build vs Adopt）に関する考察です。かつて定石とされた「OSSがあるなら自作するな」という方針を、OSSの持続性リスク（KubeVelaの事例）とAIによる開発効率化の観点から再評価しています。\n\n主なポイントは以下の通りです：\n- **AIが変えるコスト構造**: AIは「実装コスト（コーディング、テスト、ドキュメント作成）」を劇的に下げますが、リリース後の「所有コスト（保守運用、責任、意思決定）」までは肩代わりしません。\n- **3つの判断マトリクス**: \n  1. **主判断**: OSSがコア要件を満たすか × 機能の重要度\n  2. **Adoptコスト**: システム結合度 × OSSの持続性（依存リスクの評価）\n  3. **Buildコスト**: Working Set Size（AIと人間が理解可能な範囲） × 継続保守負荷\n- **結論**: 全てを自作するのではなく、コア領域はAdoptしつつ、周辺・境界領域において「Configuration/Extension/Fork Build」を戦略的に選択することが、AI時代におけるプラットフォーム価値の最大化に繋がります。",
+    "topics": [
+      "Platform Engineering",
+      "Build vs Adopt",
+      "OSS Sustainability",
+      "AI駆動開発",
+      "技術選定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

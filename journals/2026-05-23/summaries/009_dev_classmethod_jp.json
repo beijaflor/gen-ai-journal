@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:05:45.908936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS MCP Server を Claude Code から主要ツールをひと通り叩いてみた",
+    "url": "https://dev.classmethod.jp/articles/aws-mcp-server-claude-code-20260507/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "一般提供（GA）されたAWS MCP ServerをClaude Codeに統合し、API実行からCloudTrailによる監査、メトリクス可視化までの実用性を徹底検証したレポート。",
+    "summaryBody": "AWS MCP ServerのGAに伴い、Claude Codeを用いた主要機能の検証結果をまとめています。本サービスはModel Context Protocol（MCP）を通じてAIエージェントにAWS操作権限を与えるマネージドツールです。記事では、AWS CLIを実行する「call_aws」やPythonサンドボックスを利用する「run_script」、公式ドキュメントを検索するツールの挙動を解説しています。特に運用・セキュリティ面において、CloudTrailのinvokedByフィールドでエージェント操作を識別できる点や、CloudWatchメトリクスでの実行管理、IAMポリシーを用いたガードレール設計の重要性など、エンタープライズ導入に欠かせない技術的知見が詳しく述べられています。",
+    "topics": [
+      "AWS",
+      "Model Context Protocol (MCP)",
+      "Claude Code",
+      "生成AI",
+      "CloudTrail"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

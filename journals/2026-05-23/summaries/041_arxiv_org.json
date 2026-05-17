@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:57:55.701565+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに作業を委託するとドキュメントが損なわれる：長期的な委託ワークフローにおける信頼性の検証",
+    "url": "https://arxiv.org/abs/2604.15597",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）への長期的な作業委託がドキュメントの内容を沈黙のうちに劣化させる現象を、52の専門ドメインにわたる新ベンチマーク「DELEGATE-52」で明らかにした研究。",
+    "summaryBody": "本研究は、ユーザーがタスクをLLMに任せる「委託（Delegation）」という新しい対話パラダイムにおける信頼性を調査しました。研究チームは、コーディング、結晶学、楽譜作成など52の専門領域を含む大規模ベンチマーク「DELEGATE-52」を構築し、次世代のフロンティアモデルを含む19種類のLLMを評価しました。その結果、最先端モデル（Gemini 3.1 Pro、Claude 4.6 Opus、GPT 5.4など）であっても、長期的なワークフローの末にはドキュメント内容の平均25%を誤って損なわせることが判明しました。これらのエラーは「まばらだが深刻」という特徴を持ち、ドキュメントのサイズや対話の長さ、ノイズとなるファイルの存在によって悪化します。さらに、エージェント的なツール利用を導入してもこの劣化は改善されないことが示されており、現在のLLMを「信頼できる代理人」として扱うことには、サイレントな品質低下という大きなリスクが伴うことを示唆しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "ドキュメント編集",
+      "ベンチマーク",
+      "信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "LLMs Corrupt Your Documents When You Delegate"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:22:48.729046+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オンデバイスAIの高速化：ArmとGoogle AI Edgeによる最適化の概要",
+    "url": "https://developers.googleblog.com/accelerating-on-device-ai-a-look-at-arm-and-google-ai-edge-optimization/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google AI EdgeとArmのSME2技術の統合により、モバイル端末上での生成AI推論が最大5倍高速化され、開発ワークフローが大幅に簡素化されました。",
+    "summaryBody": "GoogleとArmは、モバイルデバイス上での生成AI実行を効率化するための共同最適化プロジェクトを発表しました。この取り組みの核となるのは、ArmのScalable Matrix Extension 2 (SME2) をGoogleのAI Edgeスタック（LiteRT）で直接サポートすることです。SME2はCPU内に専用の行列演算ユニットを統合しており、これによりCPUが高性能AIアクセラレータとして機能します。具体的には、XNNPACKとArm KleidiAIの統合により、開発者は低レベルのコードを書くことなく、行列演算の重いワークロードで大幅な速度向上を得られます。デモでは、Stability AIのStable Audio Open Smallモデルを量子化（Int8/FP16）し、音声生成時間を10秒から4.3秒へ短縮、メモリ使用量を4分の1に削減しつつ品質を維持できることが実証されました。",
+    "topics": [
+      "オンデバイスAI",
+      "Arm SME2",
+      "Google AI Edge",
+      "LiteRT",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Accelerating on-device AI: A look at Arm and Google AI Edge optimization"
+  }
+}

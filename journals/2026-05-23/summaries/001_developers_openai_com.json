@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:07:48.167527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex Chrome 拡張機能の概要と設定方法",
+    "url": "https://developers.openai.com/codex/app/chrome-extension",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのCodexがユーザーのログイン済みブラウザを使用して、GmailやSalesforceなどの認証が必要なサイトでタスクを実行できるようにする拡張機能の解説です。",
+    "summaryBody": "### 概要\nOpenAI CodexのChrome拡張機能は、ブラウザのログイン状態を引き継いでタスクを実行するためのツールです。通常のインアプリブラウザではアクセスできない、Gmail、Salesforce、LinkedIn、または社内ツールといった「ログインが必要なサイト」でのデータ読み取りや操作をCodexに指示できます。\n\n### 主な特徴と機能\n- **認証済みセッションの活用**: ユーザーが既にログインしているウェブサイトのコンテキストを利用して、複雑なワークフローを自動化します。\n- **柔軟な制御**: 特定のドメインを常に許可する「許可リスト」や、アクセスを制限する「ブロックリスト」の設定が可能です。\n- **セキュリティ**: ページの内容は「信頼できないコンテキスト」として扱われ、新しいサイトへのアクセス時にはユーザーへの確認プロンプトが表示されます。\n- **ツールの自動切り替え**: ローカル環境（localhost）にはインアプリブラウザ、認証が必要なサイトにはChrome拡張機能と、タスクに応じて最適な手段を選択します。\n\n### 利用方法\nCodexのプラグインメニューからChromeを追加し、拡張機能をインストール・接続することで利用可能です。プロンプトで「@Chrome」と指定することで、直接ブラウザ操作を呼び出すことができます。",
+    "topics": [
+      "OpenAI Codex",
+      "Chrome Extension",
+      "Browser Automation",
+      "AI Productivity",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Codex Chrome extension – Codex app | OpenAI Developers"
+  }
+}

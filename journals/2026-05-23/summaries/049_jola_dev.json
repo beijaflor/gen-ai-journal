@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:55:58.049937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "24GBメモリのM4 MacでローカルLLMを実行する",
+    "url": "https://jola.dev/posts/running-local-models-on-m4",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "24GBのメモリを搭載したM4 MacBook Proにおいて、LM StudioとQwen 3.5-9Bを活用し、実用的なローカルLLM環境を構築する手法と経験則を解説。",
+    "summaryBody": "M4チップと24GBメモリを搭載したMacBook Proで、実用レベルのローカルLLM環境を構築するための実践的なガイドです。著者は、様々なモデルやツールを試行した結果、Qwen 3.5-9B (Q4 quantization) が、実行速度（約40 tps）、思考機能（Thinking mode）、ツール使用、および128Kのコンテキストウィンドウのバランスにおいて最適であると結論づけています。\n\n記事では、LM Studioを使用した具体的な設定方法や、思考モードを有効にするためのプロンプトテンプレートの調整、`pi` や `OpenCode` といったエージェントツールの設定例（JSON）が公開されています。また、SOTA（最先端）モデルとの比較において、ローカルモデルは「指示の細かなフォローが必要だが、それがかえってユーザーの主体的思考を促し、プライバシーやオフライン利用、コストの面で大きな利点がある」と述べています。ElixirのコードリファクタリングやGitのコンフリクト解消の事例を通じ、成功と失敗の両面から現実的な活用限界を明らかにしています。",
+    "topics": [
+      "Local LLM",
+      "Apple M4",
+      "LM Studio",
+      "Qwen 3.5",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Running local models on an M4 with 24GB memory"
+  }
+}

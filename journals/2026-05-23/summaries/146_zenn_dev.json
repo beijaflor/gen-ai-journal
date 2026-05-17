@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:35:07.797675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのハーネスを徹底的に整えたら、レビューもシステム運用も自動化され、非エンジニアも開発に参加できるようになった話 ── 連載総論",
+    "url": "https://zenn.dev/aircloset/articles/d416342f46f16b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを実務で活用するための「ハーネス（土台）」を整備し、コードレビューから障害対応までを自動化することで、開発速度の劇的な向上と非エンジニアの参加を実現した事例の総論。",
+    "summaryBody": "エアークローゼット社が構築したAI開発プラットフォーム「cortex」の全貌を紹介する連載の初回記事。モデル性能に頼るのではなく、AIを制御・支援する「ハーネス（Harness Engineering）」を徹底することで、PRの自動マージや障害の自動修復（Alert-Fix）を実現している。核となるのは、コード・文書・DB・インフラを1つのグラフに統合した「Product Graph」であり、これがAIに正しいコンテキストを供給する。厳格な品質ゲート（テストカバー率90%以上、Lintの徹底禁止事項）を設けることで、非エンジニアでも安全にコードを修正・マージできる環境を構築。結果として、人間によるレビューの律速を排除し、月間PRマージ数を22倍に激増させた。本記事は「魔法」ではなく、いかにAIが動きやすいシステム設計を組み上げるかという工学的アプローチを説いている。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "Model Context Protocol",
+      "DevOps",
+      "AI自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

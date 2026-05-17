@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:51:18.041570+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMから呼ばれるアプリをMCPファーストで設計するときの3つの原則",
+    "url": "https://zenn.dev/ykenkou001/articles/mcp-first-regulatory-saas",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMからのツール呼び出しを前提とした「MCPファースト」な設計により、判断ロジックの集約と説明責任の強化を実現する3つのアーキテクチャ原則を解説しています。",
+    "summaryBody": "従来の「Web画面から作成し、APIを後付けする」設計順序を逆転させ、LLMから呼ばれることを最初の制約に置く「MCP（Model Context Protocol）ファースト」な設計手法を提案しています。特に法対応やコンプライアンスなど説明責任が重い業務アプリにおいて、以下の3原則を提唱しています。 \n1. **入口層は薄く保つ**: 判断ロジックを画面やAPI層ではなく「中核ロジック」に集約し、MCP、REST、Webの3つを等距離の薄い変換器として実装する。\n2. **出力形式は最初から多重化する**: 画面表示だけでなく、PPT、Word、Excel、Markdownなどの「持ち帰り資料」を、成果物中立なデータ構造から生成可能にする。\n3. **出典・根拠・代替案を返り値に含める**: LLMがユーザーに根拠を説明できるよう、スコアだけでなく、統計元データ、不採用理由、前提条件を構造化して返却する。\nこれにより、LLMエージェントが推測ではなく事実に基づいて回答できる、腐りにくいアーキテクチャを構築できます。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "アーキテクチャ設計",
+      "LLM",
+      "クリーンアーキテクチャ",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

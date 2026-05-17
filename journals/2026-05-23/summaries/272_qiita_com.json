@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:12:23.466788+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI-DLC とは何か ― AWS Labs が公開した「承認ゲート × 適応型」AIエージェント向け開発ワークフローの全体像",
+    "url": "https://qiita.com/y-morimatsu/items/c0f41d3901160be7e334",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWS Labsが公開した、生成AIエージェントを活用して要件定義から実装までを「承認ゲート」付きで体系化する開発ワークフロー「AI-DLC」の概要と、INCEPTIONフェーズの実践プロセスを解説した記事です。",
+    "summaryBody": "AI-DLC（AI-Driven Development Life Cycle）は、AWS Labsが公開したAIエージェント主導の開発ワークフローで、要件定義からユニット分解までの各工程を再現可能なプロセスとして落とし込みます。最大の特徴は「承認ゲート」と「適応型ワークフロー」にあり、人間の承認なしにAIが勝手に進むことを防ぐ構造になっています。本記事では、INCEPTION（開始）フェーズの6つのステージについて詳しく解説。特に「Plan → Clarification → Artifacts」という3段構成による曖昧さの排除、12問のクラリフィケーション質問による要件の矛盾検出、そして逐語記録（Audit Log）による透明性の確保が強調されています。著者はClaude Codeの思考モード（ultrathink）を活用した整合性監査の実践例も紹介しており、AIエージェントを「組織で運用できるプロセス」へ引き上げるための具体的な知見が共有されています。",
+    "topics": [
+      "AI-DLC",
+      "AWS Labs",
+      "Claude Code",
+      "AIエージェント",
+      "開発ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

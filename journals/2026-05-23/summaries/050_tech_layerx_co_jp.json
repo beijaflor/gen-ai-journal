@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:55:45.737857+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人からAIへのフィードバックデザインパターン",
+    "url": "https://tech.layerx.co.jp/entry/human-to-ai-feedback-design-pattern",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIシステムの継続的な改善に不可欠な「ユーザーからのフィードバック」を、いかに負荷を抑えて高品質に収集するかについて、最新のHCI学会の論文を基に具体的なパターンを解説する。",
+    "summaryBody": "LLMプロダクトの性能改善において、ユーザーフィードバックの収集は重要ですが、自由記述形式ではユーザーの認知負荷が高く、低品質な指示に陥りやすいという課題があります。本記事ではCHI（2025, 2026）の研究事例を中心に、以下の改善パターンを紹介しています。\n\n- **UIによる制約と誘導**: 自由記述ではなく、出力箇所のハイライト、差分表示、Undo/Redoなどのインターフェースを通じて、ユーザーが修正箇所を特定しやすくする。\n- **フィードバック形式の多様化**: 2択の選好（Preference-Guided）や、ラベル付けとルール記述のハイブリッド方式など、タスクに適した入力形態の選択。\n- **解釈性と持続性の確保**: 最適化されるプロンプトを人間が読める形で残す手法や、フィードバックをテストケースとして蓄積し、回帰的な劣化を防ぐ「Data-Prompt Co-Evolution」の考え方。\n\n結論として、適切な制約（型）を設けることで、ユーザーが迷わず、かつシステム側が活用しやすいフィードバックループを構築できると述べています。",
+    "topics": [
+      "LLM",
+      "HCI",
+      "UXデザイン",
+      "プロンプトエンジニアリング",
+      "ユーザーフィードバック"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

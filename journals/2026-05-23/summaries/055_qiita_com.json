@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:54:35.056407+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Toolkit for AWSが持つ50種類のSkillsをStrands Agentsから実行する",
+    "url": "https://qiita.com/nasuvitz/items/fd1be5f3be4170a11a44",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreで動作するStrands Agentsに、Agent Toolkit for AWSの50種類のSkillsを統合してAIエージェントの調査・分析能力を強化する実装ガイド。",
+    "summaryBody": "本記事では、AWS公式の「Agent Toolkit for AWS」に含まれるSkillsをStrands Agentsに組み込む具体的な手法を解説しています。AWS全般の設計・運用手順やAIエージェント開発（aws-agents）に関する計50種類のSkillsを、CodeZip方式のAgentCore Runtimeに同梱。StrandsのAgentSkillsプラグインを活用し、必要な時にだけ詳細な指示を読み込む「段階的な情報開示（Progressive disclosure）」アプローチを採用することで、LLMのコンテキスト圧迫を防ぎつつ高度な専門知識の活用を実現しています。APIの直接操作権限を与えず技術調査や手順提示に特化させるためのシステムプロンプト設定や、公式リポジトリからの自動同期スクリプトなども紹介されており、非常に実践的なエージェント構築の知見が提供されています。",
+    "topics": [
+      "Amazon Bedrock",
+      "Agent Toolkit for AWS",
+      "Strands Agents",
+      "AIエージェント",
+      "AWS Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

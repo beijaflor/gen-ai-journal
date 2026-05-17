@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:07:04.161562+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude DesktopのSSH機能におけるMITM脆弱性（CVE-2026-44467）の解説",
+    "url": "https://zenn.dev/aeyesec/articles/0aa59f113a702b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude DesktopのSSH接続機能に、ホスト鍵の検証を適切に行わないことで中間者攻撃を許容してしまう脆弱性（CVE-2026-44467）が発見されました。",
+    "summaryBody": "株式会社エーアイセキュリティラボの安西氏が、Claude Desktopの「Code」タブにおけるSSHリモート開発機能の脆弱性を報告しました。本脆弱性は、SSH接続時にサーバーから提示されたホスト鍵と既知の鍵が一致するかを正しく確認しないという、古典的な実装不備に起因します。これにより、ネットワーク上でMITM（中間者）の立場にある攻撃者が、正規のサーバーになりすまして通信を傍受・改ざんすることが可能でした。具体的には、ソースコードや秘密情報の窃取、AIのツール実行結果に対する悪意あるレスポンスの注入といった被害が想定されます。現在は修正版（v1.4304.0以降）がリリースされており、開発時の利便性を優先した「検証スキップ」の危険性を再確認させる事例となっています。",
+    "topics": [
+      "Claude Desktop",
+      "脆弱性診断",
+      "SSH",
+      "MITM",
+      "CVE-2026-44467"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

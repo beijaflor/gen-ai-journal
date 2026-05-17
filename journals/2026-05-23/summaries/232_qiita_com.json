@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-15T03:17:18.896471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Generative UIでSuspenseを使う",
+    "url": "https://qiita.com/uhyo/items/bdbd01449cf019365dca",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Generative UIにおけるUI定義のストリーミング配信において、React Suspenseを用いて効率的にスケルトン表示を実装する手法を解説した記事です。",
+    "summaryBody": "この記事では、生成AIがUIコンポーネントを動的に生成する「Generative UI」において、UIの構築状況に応じたローディング（スケルトン）表示をReact Suspenseで実現する方法を提案しています。\n\n### 主な内容\n- **Generative UIのストリーミング**: AIがUIの定義を少しずつ出力する際、クライアント側ではNDJSONやJSON Patchを用いてUIオブジェクトを逐次更新していく仕組み（Vercelのjson-renderの例）について解説。\n- **ローディング設計の課題**: 従来の実装では未到着の要素をnullチェックなどで条件分岐してスケルトンを表示しますが、これをReactの標準的な「Suspense」で行うメリットを強調。\n- **カスタムレンダラーの実装**: 未定義の要素を参照した際に意図的に解決しないPromiseをthrowすることで、Reactをサスペンド状態にし、Suspenseのfallback（スケルトン）を自動的に表示させる具体的な実装コードを紹介しています。\n\nUIの構造そのものがストリーミングされる特異な状況において、Reactの宣言的なデータ取得・レンダリング制御がいかに親和性が高いかを考察しています。",
+    "topics": [
+      "React",
+      "Generative UI",
+      "Suspense",
+      "Streaming",
+      "json-render"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

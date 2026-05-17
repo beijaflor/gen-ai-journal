@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:34:53.019448+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Slack上でインフラのトラブルシューティングができるAgentの設計と実装",
+    "url": "https://zenn.dev/ubie_dev/articles/b712ec880ac038",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Ubieが開発した、Slackからインフラ調査を自律実行する「Infra Agent」の、透過プロキシを用いた強固なセキュリティ設計と導入効果の解説。",
+    "summaryBody": "UbieのSREチームにおける調査・問い合わせ対応の負荷を軽減するために開発された、Slack Bot型AIエージェント「Infra Agent」の実装事例です。\n\n### 導入の背景と課題\n従来のローカル実行型AIエージェントでは、環境の不均一性や認証情報の管理、実行ログの共有に課題がありました。これらを解消するため、Cloud Run上で動作する共有型エージェントへと移行しました。\n\n### セキュリティ・アーキテクチャ\n自律型エージェントの最大のリスクであるPrompt Injectionや誤操作に対し、本システムは「インフラ層での封じ込め」を重視しています。具体的には、VPCカスタムルートを用いた**透過プロキシ方式**を採用。`mitmproxy`によりTLS通信を復号・検査し、URLパスやヘッダーレベルでの厳格なフィルタリングを行うことで、エージェントの自由度を保ちつつ、機密情報の外部流出を防ぐ多層防御を実現しています。\n\n### 導入効果\n運用開始から2週間で、問い合わせチケット件数が20%減少、解決時間（中央値）が31%短縮されるなど、プラットフォームチームの業務効率化に目に見える成果を上げています。",
+    "topics": [
+      "SRE",
+      "AIエージェント",
+      "SlackBot",
+      "mitmproxy",
+      "CloudRun"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

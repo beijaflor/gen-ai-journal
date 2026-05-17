@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:46:37.868153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにQAエンジニアとして思考させるエージェントQA設計の思想",
+    "url": "https://zenn.dev/edash_tech_blog/articles/383410d9a1afba",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントにテスト技法やQAの暗黙知を「スキル」として組み込み、テスト設計から実装までを自律化させる「エージェントQA」の設計思想。",
+    "summaryBody": "e-dash株式会社における、AIエージェントを活用したQAプロセスの自動化（エージェントQA）の設計思想を解説した記事です。開発スピードの加速に対し、人的リソースのみでQA品質を維持する限界を打破することを目的としています。具体的には、テスト要求から設計書、仕様書、テストコード生成、管理ツール登録までを4つのサブエージェント（TestDesign, TestSpec, QASE Import, AutoCode）に分担させる構成を提案しています。\n\n設計の核心は、AIを単なる変換ツールではなく「QAエンジニアとして思考させる」点にあり、境界値分析や同値分割などのテスト技法を「Skill（プロンプト）」として定義しています。アーキテクチャには「Orchestrator -&gt; Planner -&gt; Generator -&gt; Hooks -&gt; Evaluator」のフローを採用し、機械的なチェック（Hooks）と論理的な品質判定（Evaluator）を分離することで精度を高めています。QAエンジニアはテストの「実行者」から「AIのSkillを育てる設計者（オーケストレーター）」へと役割を変え、Human-in-the-loopを通じて継続的にAIの思考品質を向上させる仕組みを目指しています。",
+    "topics": [
+      "QAエンジニア",
+      "AIエージェント",
+      "テスト自動化",
+      "LLM",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

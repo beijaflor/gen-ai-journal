@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T15:34:36.298717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM に日本の法令・法規を正しく引かせるために、日本の法規 MCP ファミリーを作った話",
+    "url": "https://zenn.dev/shuji_bonji/articles/ad1ec6c65ac45a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMが日本の法令や通達を正確に参照できるように、e-Gov APIや国税庁データを活用したMCPサーバ群と行動指針を定義するClaude Skillを構築した開発事例。",
+    "summaryBody": "LLMによるハルシネーションを抑え、日本の法令（憲法・法律・政令等）や通達を一次情報として正しく引用させるための「houki family」プロジェクトの解説です。主なコンポーネントは、e-Gov 法令 API v2を利用する『houki-egov-mcp』、国税庁の通達や質疑応答をSQLite/FTS5で検索する『houki-nta-mcp』、法令略称解決ライブラリ、そして業法独占規定への注意喚起やオーケストレーションを担う『houki-research-skill』の4つで構成されています。単にデータを取得するだけでなく、法的拘束力の有無をメタデータとして付与し、LLMに「法律相談ではなく調査補助である」という振る舞いを強制する3層構造の設計思想が特徴です。電子契約や会計ソフト開発などの実務における調査コスト削減を目的としています。",
+    "topics": [
+      "MCP",
+      "LLM",
+      "e-Gov",
+      "法律",
+      "Claude Skill"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

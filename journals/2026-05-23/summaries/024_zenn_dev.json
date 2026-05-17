@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:01:42.687217+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでの個人開発とセキュリティ管理",
+    "url": "https://zenn.dev/btiw/articles/4420d8b95d3e09",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを用いた大規模な個人開発における、AIエージェントによる秘密情報への不適切なアクセスを防ぐための多層防御策（Keychain移行、設定制限、プロンプト管理）を解説した記事。",
+    "summaryBody": "本記事は、7つのリポジトリからなる複雑なシステム開発にClaude Codeを導入した経験に基づき、特に「秘密情報の管理」に焦点を当てた実践的なセキュリティガイドです。Claude Codeはプロジェクトの文脈を理解し、実装からテスト、CI整備までを強力にサポートしますが、AIがファイル読み取りツールやBashコマンドを通じて`.env`ファイル等の機密情報を意図せず取得してしまうリスクがあります。著者はこれに対し、1. 秘密情報をmacOS Keychainやプロジェクト外へ隔離する「経路の排除」、2. settings.jsonのpermissions.denyによる「技術的制限」、3. CLAUDE.mdでの「行動ルール」の明示、という3層の防御構造を提案しています。AIエージェントにファイル操作やコマンド実行権限を委ねる現代の開発環境において、ツール設定のみならず環境設計そのものを見直す重要性が説かれています。",
+    "topics": [
+      "Claude Code",
+      "LLMセキュリティ",
+      "個人開発",
+      "秘密情報管理",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:40:30.763106+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数のエージェントを 1 画面で管理するClaude Codeの新機能「Agent View」を試してみた",
+    "url": "https://dev.classmethod.jp/articles/introduce-claude-code-agent-view/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの新機能「Agent View」を利用して、複数のバックグラウンドセッションを一元管理し、開発効率を向上させる方法を解説。",
+    "summaryBody": "Claude Code v2.1.139以降で追加された「Agent View」は、複数のバックグラウンドセッション（`claude --bg`）を1つの画面で監視・操作できるUI機能です。主な利点として、マシン全体のセッションを横断的に表示できること、Claude Haikuが15秒おきに各エージェントの状況を1行サマリとして自動更新すること、そして「ピークパネル」を通じてセッションに完全に入ることなく進捗確認や返信ができることが挙げられます。また、並列実行時のファイル競合を避けるため、`.claude/worktrees/`配下に自動で分離されたgit worktreeを作成する仕組みが備わっており、手動での作業ディレクトリ管理の負担を軽減します。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Agent View",
+      "生産性向上",
+      "CLIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

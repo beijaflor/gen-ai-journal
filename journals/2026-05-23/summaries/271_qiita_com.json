@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:12:37.905485+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を社内で使うための「AIエージェントセキュリティ」実践編",
+    "url": "https://qiita.com/sharu389no/items/ab5bf50d9f68e7c8de56",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」を安全に導入するため、OSSツール「AIGIS」を用いた可視化・制御・監査、および国内規制への対応を実証する技術ガイド。",
+    "summaryBody": "企業内でのAIエージェント利用、特に強力な操作権限を持つ「Claude Code」の導入に伴うセキュリティリスクを技術的に解決する方法を解説しています。主な対策として、OSSの「AIGIS (pyaigis)」を導入し、エージェントの操作をフックして制御する手法を提示しています。\n\n### 主な内容\n1. **技術的統制**: `aigis init`を実行するだけで、Claude Codeのツール実行前にフィルタをかけ、`rm -rf /`や`.ssh/`へのアクセスといった危険な操作を自動的にブロック、あるいは人間によるレビューを強制できます。\n2. **監査と可視化**: 全操作をJSON形式で構造化ログとして保存し、「いつ誰が何をしたか」を明確にします。\n3. **コンプライアンス対応**: 日本の「AI事業者ガイドライン」や「AI推進法（2025年施行予定）」への対応状況を数値化してレポート出力する機能を備えており、情シス部門への説明責任を果たせます。\n4. **最新の攻撃への防御**: プロンプトインジェクションやメモリポイズニングなど、最新の論文に基づいたAI特有の攻撃に対する検出機能を実装しています。\n\n「対策しています」という曖昧な表現ではなく、ブロック件数などの実測値に基づいたガバナンス構築を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "AIGIS",
+      "AIセキュリティ",
+      "AIエージェント",
+      "ガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T04:55:02.574858+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングの導入ステージを明確にしてみる",
+    "url": "https://qiita.com/aganesy/items/bbd3702560a5ac27ff12",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIへの権限委譲とリスク管理をセットで捉え、導入成熟度をStage 0から7の8段階で定義したハーネスエンジニアリングの実践的ガイド。",
+    "summaryBody": "本記事は、AIエージェントの能力拡張（権限委譲）とそれに見合うリスク管理を両立させる「ハーネスエンジニアリング」の概念を、8つの成熟度ステージで体系化したものです。Mitchell HashimotoやAnthropic、Thoughtworksらの知見を引用し、AIにツール（MCPやPlugin）を使わせる便利さの裏にある「権限委譲に伴うリスク」を強調しています。Stage 1のルール明文化から、Stage 3の外部ツール接続、Stage 5の仕様駆動による機械的バリデーション、そしてStage 7のフルサンドボックスと回復ループまで、能力の大きさに応じてリスク管理策を一段ずつ強くしていく構造を提案。AIの暴走を抑える仕組みは、QAやTDD、CI/CDといった既存のソフトウェア工学の知見を、AIが扱える形に研ぎ直したものであると結論づけています。",
+    "topics": [
+      "ハーネスエンジニアリング",
+      "AIエージェント",
+      "品質保証",
+      "ソフトウェア工学",
+      "リスク管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-13T14:37:26.338290+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Agent Teams ぽいものを自分で作ってみたい、ついでに Codex でも使いたい。",
+    "url": "https://zenn.dev/himkt/articles/00c6049542170b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのAgent Teams機能の課題を解決するため、TmuxとSQLiteを活用してCodexにも対応した自作のマルチエージェント協調ツール「cafleet」を公開。",
+    "summaryBody": "Claude Codeの実験的機能「Agent Teams」が抱える更新時の不安定さや、最新機能（1Mコンテキスト等）への追従の遅れといった課題を解決するため、著者自ら開発したCLIツール「cafleet」を紹介しています。cafleetはTmuxのペイン操作をラップし、複数のコーディングエージェント（Claude Code/Codex）をDirectorとTeammateという役割で協調させます。特筆すべきはパーミッション管理の手法で、Teammate側を「dontAsk」モードで起動し、Directorのセッションにコマンド実行の許諾を集約することで、複数ペインを行き来するストレスを排除しています。メッセージング基盤にはSQLite3を採用し、1対1の送受信や一斉放送（broadcast）を実現。`uv tool install`で即座に導入可能であり、開発者が自律的なAIチームを自在に構築・管理するための実践的な実装が示されています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "Agent Teams",
+      "マルチエージェント",
+      "Tmux"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-14T05:46:08.333082+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI と一緒に開発するときにも便利な Aspire の好きなところ",
+    "url": "https://zenn.dev/microsoft/articles/aspire-favorite-points",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": ".NET Aspire を活用してローカル開発環境を統合し、MCP 経由で AI エージェントにログやトレースを共有することで、デバッグや動作確認を劇的に効率化する方法を解説しています。",
+    "summaryBody": "この記事では、.NET Aspire（旧 .NET Aspire）を AI 時代の開発にどう活かすかに焦点を当てています。主な利点として、`AppHost` による複数サービスやミドルウェア（Redis, Cosmos DB 等）の一括起動、OpenTelemetry を活用した Aspire Dashboard での分散トレーシングの可視化を挙げています。特に注目すべきは AI との連携で、Model Context Protocol (MCP) を介して Aspire のログやトレースを GitHub Copilot 等の AI クライアントから直接参照できるようにする仕組みを紹介しています。`aspire agent init` コマンドによるエージェント環境の自動構成や、Playwright CLI と組み合わせた AI による自動ブラウザテストなど、開発者が手動で行っていた調査・検証作業を AI に委譲するための具体的なワークフローが示されています。",
+    "topics": [
+      ".NET Aspire",
+      "AI エージェント",
+      "MCP (Model Context Protocol)",
+      "OpenTelemetry",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

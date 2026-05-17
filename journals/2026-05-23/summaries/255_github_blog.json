@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-16T11:16:33.608647+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "汎用アクセシビリティ・エージェントの構築—そのプロセスで得られた学び",
+    "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubがアクセシビリティ課題の自動検知・修正を目指して開発したAIエージェントの試行錯誤と、サブエージェント構成による精度向上の知見を紹介。",
+    "summaryBody": "GitHubは、フロントエンド開発におけるアクセシビリティ（a11y）の障壁を自動的に解消するための実験的なAIエージェントを試験運用しています。このエージェントは3,500件以上のプルリクエストをレビューし、68%の解決率を達成しました。技術的な特筆点として、単一の巨大なプロンプトではなく、「レビュアー（調査・研究）」と「実装者（修正実行）」の2つの役割に分かれたサブエージェント構成を採用しています。各エージェントはテンプレート化されたスキーマを介して通信し、線形なステップで処理を実行することで、トークン消費の抑制と回答の安定性を両立しています。また、AIの限界を認め、ドラッグ＆ドロップなどの高リスクなUIパターンや複雑すぎるコードについては自動修正を行わず、専門チームへエスカレーションするロジックを組み込むことで、信頼性を担保しています。LLMが学習データの影響で生成しがちな不適切なa11yパターンを克服するため、過去の修正実績をコーパスとして活用する重要性も強調されています。",
+    "topics": [
+      "アクセシビリティ",
+      "AIエージェント",
+      "GitHub Copilot",
+      "ソフトウェアエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Building a general-purpose accessibility agent—and what we learned in the process"
+  }
+}

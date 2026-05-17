@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-12T02:08:12.857345+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
+    "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "NDL OCR Liteの認識結果をLLMに「ヒント」として与えるハイブリッド手法により、縦書き和文書籍の誤読をほぼゼロにしつつ、図表のMermaid化を含む高度なMarkdown構造化を実現した検証記録。",
+    "summaryBody": "縦書き和文書籍のデジタル化において、専用OCR（NDL OCR Lite）とローカルVLM（Qwen 2.5/3.5）を組み合わせるパイプラインの構築と検証結果。VLM単独では縦書きの密なテキストで生成ループが発生しやすく、OCR単独では文書構造が失われるという課題に対し、OCRの結果をプロンプトに埋め込んでLLMに構造化させる「ハイブリッド手法」を採用。この結果、文字精度は実測99.9%（字単位の誤読ほぼゼロ）に達し、見出し、箇条書き、さらには図表をMermaid形式のコードに、イラストを内容説明文（alt-text）に変換することに成功した。記事ではMac+Ollama環境での実装、API利用時のコスト比較、画像解像度の影響など、実用的なノウハウが詳細にまとめられている。",
+    "topics": [
+      "OCR",
+      "LLM",
+      "NDL OCR Lite",
+      "Markdown",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
