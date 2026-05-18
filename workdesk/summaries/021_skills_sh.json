@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:57:08.235568+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Browser-to-API: ブラウザの実行トレースからOpenAPI仕様書を自動生成",
+    "url": "https://www.skills.sh/browserbase/skills/browser-to-api",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ブラウザ操作時のネットワーク通信ログ（CDP）を解析し、未公開APIのOpenAPI 3.1ドキュメントやJSONスキーマを自動生成する開発ツール。",
+    "summaryBody": "Browserbaseが提供する「browser-to-api」は、ブラウザ操作のトレース結果（CDPリクエスト/レスポンスイベント）を元に、API仕様をリバースエンジニアリングするスキルです。既存の`browser-trace`スキルでキャプチャしたデータを利用し、URLのテンプレート化やJSONスキーマの推論を行い、OpenAPI 3.1ドキュメントと人間が読みやすいカバレッジレポートを出力します。ドキュメント化されていないサードパーティAPIのSDKを作成したい開発者や、特定のワークフローがどのエンドポイントを叩いているかを可視化したい場合に非常に有用です。本ツール自体は通信を行わず、オフラインでの後処理に特化しています。",
+    "topics": [
+      "OpenAPI",
+      "Reverse Engineering",
+      "Browserbase",
+      "API Discovery",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "browser-to-api — browserbase/skills"
+  }
+}

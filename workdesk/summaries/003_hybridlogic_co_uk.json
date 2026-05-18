@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:21:41.924786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP Hello Page: ユーザーの混乱を防ぐMCPサーバー用「案内ページ」の実装手法",
+    "url": "https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCPサーバーのURLをブラウザで開いたユーザーが「故障」と誤解する問題を、Content Negotiationを用いて案内用HTMLを表示することで解決した実践例。",
+    "summaryBody": "Model Context Protocol (MCP) サーバーの運用において、ユーザーがエンドポイントURLを直接ブラウザで開き、401エラーや未整形のJSONを見て「リンクが壊れている」と誤解し、サポートへの問い合わせが急増する課題が発生した。筆者はこの問題に対し、HTTPヘッダーのContent Negotiationを活用した解決策を導入した。具体的には、GETリクエストのAcceptヘッダーに 'text/html' が含まれる場合に限り、そのURLをLLMクライアント（Claude Desktop等）に設定するためのガイドを表示するHTMLページ（Hello Page）を返すようにした。この単純な「ハック」により、サポートチケットは激減し、ユーザーのオンボーディング体験が大幅に改善された。現行のMCP仕様に人間向けのディスカバリー機能が欠けていることへの批判的な視点も含まれている。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Developer Experience",
+      "API Design",
+      "Onboarding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    },
+    "originalTitle": "MCP Hello Page"
+  }
+}
