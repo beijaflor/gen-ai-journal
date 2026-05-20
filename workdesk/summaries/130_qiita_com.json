@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:57:45.061659+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにPlaywrightでブラウザ操作を任せたら、社内Chromeで3連敗した話",
+    "url": "https://qiita.com/hirashima-gmoconnect/items/733d77bbeecfe69873a6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeからPlaywrightで社内Chromeを操作する際に直面したCDP接続、SSL証明書、ビューポート設定の3つの技術的課題とその解決策を詳説しています。",
+    "summaryBody": "Claude CodeとPlaywrightを組み合わせて社内研修の自動化を試みた著者が、実務環境で遭遇した3つのハマりポイントとその回避策をまとめています。既存のChromeプロセスにデバッグポートを確実に開かせるための`--user-data-dir`指定の重要性、社内SSLインスペクション環境での証明書エラーを回避するための`NODE_EXTRA_CA_CERTS`設定、そして自動操作後に人間が操作不能にならないためのビューポート復元（`try/finally`）や`fullPage: true`の活用について、具体的なPowerShellとJavaScriptのコード例を交えて解説。AIと人間が同一のブラウザを共有するハイブリッドな自動化運用を実現するための実践的な知見が凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "Chrome",
+      "ブラウザ自動化",
+      "トラブルシューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

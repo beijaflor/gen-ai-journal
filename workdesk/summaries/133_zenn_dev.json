@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:58:39.699188+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "野良スキルは使うな、盗め──Claude Codeスキルの安全な作り方",
+    "url": "https://zenn.dev/emilia_lab/articles/claude-code-skill-safety",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのスキルに潜むプロンプトインジェクションの危険性を解説し、安全に機能を自作するための「概念だけを盗む」手法を提唱する。",
+    "summaryBody": "Claude Codeの挙動をカスタマイズする「スキル」（CLAUDE.mdに記述する命令）のセキュリティリスクを警告する記事です。SNS等で配布される「野良スキル」には、直接的な悪意あるコマンドだけでなく、「バックアップ」や「ログ」といった一見無害な言葉に偽装してAPIキー等の機密情報を外部送信させるプロンプトインジェクションが仕込まれる可能性があります。記事では、これらの命令が人間には普通の作業依頼に見えても、AIには情報奪取命令として機能する危うさを指摘。安全な対策として、既存スキルのコードをそのまま読み込ませず、ブラウザでの目視確認後に「機能の概念」だけを抽出し、Claudeに一から安全なスキルを再構成させるワークフローを推奨しています。また、異常検知を支援するツールの活用についても紹介されています。",
+    "topics": [
+      "Claude Code",
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "CLAUDE.md",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:53:36.305971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercelプロダクトデザインチームが実際に使用しているツール（2026年時点のワークフロー）",
+    "url": "https://www.hannahhearth.com/posts/tools-the-vercel-product-design-team-actually-uses",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercelのデザインチームが、AIエージェントによるペアプログラミングや、Figmaを介さない「プロダクト起点」のデザインワークフローなど、現在進行形で進化する使用ツールと手法を公開しています。",
+    "summaryBody": "Vercelのプロダクトデザインチームにおける、2026年4月時点のツール活用状況がまとめられています。主なトピックは以下の4点です。\n\n1. **AIエージェントの高度な活用**: Timo氏はCodexとClaudeを連携させ、一方が作成したコードをもう一方がレビューする「AIペアプログラミング」を実践。また、AIの生成待ち時間を回避するため、Conductorを使用して複数スレッドで並列作業を行うことで集中状態（フロー）を維持しています。\n2. **Production as Source of Truth**: 実装スピードの向上により、Figmaよりも実際のコード（本番環境）が最新となる「逆転現象」が起きています。Paper拡張機能で本番のスタイルをデザインキャンバスに復元したり、カスタム拡張機能でブラウザから直接コードファイルへジャンプしたりする手法が取られています。\n3. **キャンバスなき反復試行**: Sam氏が開発した「UI Fork」というツールにより、Figmaなどのキャンバスを介さず、ローカルのブラウザ上でコンポーネントの複数バリエーションを直接比較・検証し、即座にマージするワークフローが紹介されています。\n4. **Figmaと非AIツールの役割**: Figmaは広範な探索には有用ですが、速度面でAIツールに劣るため、現在はCursor経由でFigma MCPを使いデータを自動流し込みするなどの効率化が行われています。また、画面常時録画の「Timeless」など、非AIツールも依然として重要視されています。",
+    "topics": [
+      "Vercel",
+      "プロダクトデザイン",
+      "AIエージェント",
+      "Cursor",
+      "デザインワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Tools the Vercel Product Design Team Actually Uses | Hannah Hearth"
+  }
+}

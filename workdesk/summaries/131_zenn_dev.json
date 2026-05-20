@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:58:11.273817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1日平均15.8件のPR作成を実現したカウシェのAI駆動並列開発手法",
+    "url": "https://zenn.dev/kauche/articles/20260518_ai_driven_development_kauche_farm_mini",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "PRDからの計画自動生成、Agent Teamsによる並列実装、自己改善型AIレビューを組み合わせ、1人・2ヶ月でのプロダクトリリースと驚異的なPR作成数を達成したAI駆動開発の実践記録。",
+    "summaryBody": "カウシェが新プロダクト「カウシェファームミニ」の開発において、1名・2ヶ月でのリリースを可能にしたAI駆動開発（AI-Driven Development）の具体的なワークフローを紹介しています。主な特徴は4点：(1)PRDや設計書をコードと同リポジトリで管理し、AI（Claude Code等）が常に最新の文脈を参照できる環境の構築、(2)独自スキルによるPRDからの「並列化を最大化した実装計画」の自動生成、(3)Agent Teamsを活用し、リーダーAIが複数の実装者AIを指揮して相互レビューを行いながら並行開発する体制、(4)領域別に専門化したAIレビューに加え、人間の修正をAIが学習してルールを自動更新する自己改善ループの導入です。これらの施策により、開発ピーク時には1日平均15.8件、最大39件という圧倒的なPR作成数を記録し、少人数での超高速開発を実現しました。",
+    "topics": [
+      "AI駆動開発",
+      "Claude Code",
+      "Agent Teams",
+      "生産性向上",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 96
+    }
+  }
+}
