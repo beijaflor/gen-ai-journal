@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:28:52.702698+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソフトウェアを作って、ドキュメントを書かせる：LLMによる技術ドキュメンテーションの自動化",
+    "url": "https://ongaeshi.hatenablog.com/entry/software-development-and-llm-documentation",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "開発者が負担に感じやすい技術ドキュメントの作成を、コミットログや対話履歴をLLMに読み込ませることで自動化・高品質化する実践的な手法を提案している。",
+    "summaryBody": "Obsidianプラグイン「Previous River」の開発を事例に、LLMを活用して技術ドキュメントを生成するワークフローを解説しています。開発者が既知の情報を改めて言語化する際の心理的ハードルを、LLMに代行させることで解消するアプローチです。特筆すべきは、「Google Technical Writing」の原則を組み込んだプロンプト設計で、情緒的な不要表現（AIスロップ）を排除し、設計意図やトレードオフを客観的に記述させる制約を設けています。この手法により、設計アルゴリズムの解説やMermaid形式の図解を含む、再利用性の高いドキュメントを効率的に作成できます。作成されたドキュメントは、未来の自分や他者への共有だけでなく、LLMが開発コンテキストを把握するための優れたソースとしても機能します。",
+    "topics": [
+      "LLM",
+      "テクニカルライティング",
+      "プロンプトエンジニアリング",
+      "ソフトウェア開発",
+      "Obsidian"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

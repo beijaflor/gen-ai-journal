@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:18:57.134083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・スキルは有効だが、多くのチームが構築方法を誤っていることが研究で判明",
+    "url": "https://www.oreilly.com/radar/agent-skills-work-but-the-research-shows-most-teams-are-building-them-wrong/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの能力を拡張する「スキル」の構築において、人間によるキュレーションの重要性や大規模ライブラリの管理、セキュリティリスクなどの最新研究知見をまとめた記事。",
+    "summaryBody": "AIエージェントに特定のワークフローや組織固有の知識を付与する「スキル（Agent Skills）」の重要性が高まっていますが、最新の研究（SkillsBench等）は、多くのチームがその運用で陥る罠を指摘しています。人間が丁寧に定義したスキルはタスク成功率を平均16.2%向上させますが、モデルが自己生成したスキルには明確な効果が認められませんでした。また、スキルの数が数十を超えると、単純なリスト形式での検索は破綻し、階層的な「能力ツリー」による管理が必要になります。さらに、コミュニティで公開されているスキルの26%以上にセキュリティ脆弱性が含まれているという懸念すべきデータも示されました。持続可能なエージェントシステムを構築するには、プロンプトエンジニアリングの枠を超え、コードと同様にスキルのライフサイクルを管理し、実際の実行データに基づいた洗練が不可欠です。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Agent Skills",
+      "セキュリティ",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 86
+    },
+    "originalTitle": "Agent Skills Work but the Research Shows Most Teams Are Building Them Wrong – O’Reilly"
+  }
+}

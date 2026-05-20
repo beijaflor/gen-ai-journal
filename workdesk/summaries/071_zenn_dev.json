@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:27:20.225129+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI コーディングで secret を漏らさないための４層防御",
+    "url": "https://zenn.dev/takna/articles/secret-leak-prevention-4-layer",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングによる開発加速で低下する人間の注意力を補うため、設計、git pre-commit、push protection、そしてAIエージェントのフックを組み合わせた4層のシークレット漏洩防御策を提案する。",
+    "summaryBody": "AIコーディングの普及により開発スピードが向上する一方で、人間によるレビューが追いつかず、機密情報（シークレット）を誤ってコミットしてしまうリスクが高まっています。本記事では、筆者の失敗体験に基づき、「注意力を資源」と定義した上で、仕組みによって機密情報を守るための4つの防御層を解説しています。\n\n1. **設計層**: 機密を含むファイルを最初から`.gitignore`の対象ディレクトリに分離し、gitの管理から外す。\n2. **git pre-commit層**: `gitleaks`と`lefthook`を用い、コミット時に決定論的なスキャンを強制する。日本語のフィールド名（パスワード: 等）に対応するカスタムルールの設定も推奨。\n3. **push protection層**: GitHubの標準機能を利用し、リモートリポジトリへの到達を最終防衛線で阻止する。\n4. **Claude Code hook層**: Claude Codeの`PreToolUse`フックを利用し、AIがファイルを書き換える瞬間にスキャンを行い自己修正を促す。\n\nAIに頼り切るのではなく、Gitレベルでの確実な防御を主軸に据え、AIツールを補助的に活用する「AI時代のセキュリティの形」を提示しています。また、万が一漏洩した際の`git filter-repo`による履歴抹消やトークンローテーションの重要性についても詳述されています。",
+    "topics": [
+      "Security",
+      "Git",
+      "Claude Code",
+      "gitleaks",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

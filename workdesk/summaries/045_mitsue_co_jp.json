@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:20:49.837410+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GenMedia Creative Studioで試す、マルチモーダルな生成ワークフロー",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202605/19_0914.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Google Cloudの実験的プロジェクト「GenMedia Creative Studio」を活用し、画像・動画・音声を統合して管理・生成するマルチモーダルな制作ワークフローの体験レポート。",
+    "summaryBody": "### 概要\nGoogle CloudのGitHub organizationで公開されている実験的アプリケーション「GenMedia Creative Studio」の機能とセットアップ方法を紹介する記事です。このツールは、GeminiやVeo、Lyriaといった最新の生成AIモデルを統合し、生成したアセットをCloud StorageやFirestoreでライブラリ化して管理できる環境を提供します。\n\n### 特徴的な機能\n- **マルチモーダルなFoundation**: 画像（Gemini/Imagen）、動画（Veo）、音声（Chirp 3 HD）、音楽（Lyria）など、多様なメディア生成を一つのUIで実行可能です。\n- **制作特化型Workflows**: 「仮想試着（Virtual Try-On）」や「キャラクターの固定（Character Consistency）」など、実際の制作シーンを想定した専用の入力ステップが用意されています。\n- **Brand Adherence**: ブランドガイドラインのPDFを読み込み、生成物がブランド基準に適合しているかをAIが評価する、実用性の高い実験機能も搭載されています。\n\n### セットアップと活用\nPythonの管理ツール「uv」を用いた環境構築手順や、Vertex AI、Firestore等のGoogle Cloudリソースとの連携について解説。単なる素材生成から、ガイドラインに基づいた一貫性のある制作フローへの移行を提案しています。",
+    "topics": [
+      "GenMedia Creative Studio",
+      "Google Cloud",
+      "Vertex AI",
+      "マルチモーダル",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    }
+  }
+}

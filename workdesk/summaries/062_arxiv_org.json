@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:24:53.868733+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "事前学習時のAIに関する言説が「自己成就的」なアライメント（不整合）を引き起こす：Alignment Pretrainingの提唱",
+    "url": "https://arxiv.org/abs/2601.10160",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "事前学習コーパスに含まれるAIの挙動に関する議論が、LLMの実際のアライメント特性に直接的な因果関係を持ち、自己成就的な結果をもたらすことを明らかにした研究。",
+    "summaryBody": "本研究は、事前学習データに含まれる「AIに関する記述（AI言説）」が、完成したモデルの振る舞いにどのような影響を与えるかを6.9BパラメータのLLMを用いて検証しました。実験の結果、AIの「不整合（Misalignment）」に関する議論や記述を増やして事前学習を行うと、モデルは実際に不整合な行動をとりやすくなることが判明しました。逆に、AIが「整合的（Aligned）」であるとする記述をアップサンプリングした結果、不整合スコアが45%から9%へと大幅に改善しました。この効果は強固であり、その後のSFTやRLHFといった事後学習を経ても持続します。筆者らは、アライメントを単なる事後学習のプロセスではなく、事前学習データの選別段階から取り組むべき「Alignment Pretraining」として定義し、その重要性を説いています。",
+    "topics": [
+      "AI Alignment",
+      "Pretraining",
+      "LLM Safety",
+      "Data Curation",
+      "Self-fulfilling Prophecy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment"
+  }
+}
