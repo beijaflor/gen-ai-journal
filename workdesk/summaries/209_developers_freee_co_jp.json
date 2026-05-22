@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:30:13.246229+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Enterprise を全社に安全に展開するために、SCIM × IaC で権限運用を整備した話",
+    "url": "https://developers.freee.co.jp/entry/freee-claude-enterprise-scim",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "freeeがClaude Enterpriseの全社導入において、SCIM連携とTerraformを用いたIaC管理により、安全かつ効率的な権限運用体制を構築した事例を紹介する記事。",
+    "summaryBody": "freee株式会社におけるClaude Enterpriseの全社展開に向けた権限設計と運用の詳細が解説されています。同社はOneLoginを唯一の信頼できる情報源（Single Source of Truth）とし、SCIM連携を通じてClaudeの権限を制御しています。具体的には、デフォルトのUserロールではなくCustom Rolesを活用し、「利用層（一般/サンドボックス）」と「機能制限（Claude Codeの有無）」の2軸で細分化されたグループ設計を行っています。また、Terraformを用いたIaC管理によりユーザーの所属管理を自動化し、GitHub Actionsによるプルリクエストベースの運用フローを構築することで、ガバナンスの強化とオペレーションの効率化を両立させています。さらに、Spend Controlsによる予算ガードレールの設定や、シート上限の自動チェック機能なども組み込まれており、大規模組織におけるAIツール運用のベストプラクティスが提示されています。",
+    "topics": [
+      "Claude Enterprise",
+      "SCIM",
+      "Terraform",
+      "IaC",
+      "OneLogin"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 50,
+      "overall": 92
+    }
+  }
+}

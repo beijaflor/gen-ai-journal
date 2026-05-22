@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:26:39.084023+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのskill-creatorによるAgent Skillのベンチマークと改善プロセスの検証",
+    "url": "https://zenn.dev/redamoon/articles/article45-claude-code-skill-creator-benchmark",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの「skill-creator」を活用し、自作の執筆支援Agent Skillを定量的に評価・改善していく具体的なベンチマーク手順と知見を解説しています。",
+    "summaryBody": "Anthropicが提供するClaude Code内蔵の「skill-creator」を用い、Agent Skill（.claude/skills/）の品質を客観的に計測・改善するフローを詳解した記事です。著者は自作の「Zennブログ執筆用Skill」を対象に、Skillの有無（with/without）による出力の差をベンチマーク機能で数値化。検証の結果、Zenn固有のfrontmatter記法やtopicsの命名規則といった、LLMが一般常識として持っていない細かな制約を適用させる上でSkillが極めて有効であることを実証しました。2回の改善イテレーションを経て、通過率を94.4%から100%へ引き上げる過程が記されており、Skillを単なるプロンプトとしてではなく、テストによって動作を保証する「コードに近い存在」として運用する重要性を提案しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Agent Skill",
+      "LLM Benchmark",
+      "Zenn"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

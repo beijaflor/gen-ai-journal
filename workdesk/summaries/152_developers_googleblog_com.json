@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:15:41.569421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LiteRT-LMによる高速なデバイス上での生成AI：Gemma 4への最適化とクロスプラットフォーム展開",
+    "url": "https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが発表したLiteRT-LMは、Gemma 4に最適化されたエッジ推論エンジンで、MTPや高度なメモリ管理により、Android、iOS、Webの各プラットフォームで劇的なパフォーマンス向上とシームレスなAI体験を実現します。",
+    "summaryBody": "LiteRT-LMは、Google AI Edgeスタックの中核として、Gemma 4をAndroid、iOS、Webブラウザ上で高速に動作させるための推論エンジンです。Multi-Token Prediction（MTP）へのネイティブ対応により、従来のデコード処理を最大2.2倍高速化します。また、KVキャッシュのシリアライズ機能によるセッション保存や、メモリ負荷を抑えるレイヤー埋め込みの動的ロードなど、リソース制約の厳しいエッジ環境に特化した設計が特徴です。SwiftおよびJavaScript APIの提供により、モバイルアプリからWebGPUを活用したブラウザ実行まで、幅広い開発環境で一貫したパフォーマンスを提供します。さらに「Thinking Mode」のサポートにより、エッジ側での高度な推論とツール利用（Function Calling）を組み合わせて実行可能です。",
+    "topics": [
+      "LiteRT-LM",
+      "Gemma 4",
+      "On-device AI",
+      "Edge Computing",
+      "Google AI Edge"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "Blazing fast on-device GenAI with LiteRT-LM"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:15:06.300409+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADK for Kotlin および ADK for Android 0.1.0 の発表：Android とその先での AI エージェント構築",
+    "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが、Gemini Nanoなどのオンデバイスモデルとクラウドモデルを柔軟に連携させ、Android上で高度なAIエージェントを構築できる「ADK for Kotlin / Android」の初期版をリリースしました。",
+    "summaryBody": "Googleは、AIエージェントの開発と実行を簡素化するオープンソースフレームワーク「Agent Development Kit (ADK)」のKotlinおよびAndroid向けバージョン0.1.0を発表しました。このSDKは、バックエンド向けのKotlin版と、モバイルアプリ向けに最適化されたAndroid版で構成されています。最大の特徴は「ハイブリッドオーケストレーション」で、メインの推論をクラウドで行いつつ、機密情報の処理やローカルデータの検索（RAG）をGemini Nanoなどのオンデバイスモデルで実行するサブエージェントに委ねる構成が容易に実装できます。また、@Tool注釈による関数定義、順次実行エージェント、セッション状態の管理、OpenTelemetryによるテレメトリ機能なども備えており、実験的ながら実用的なエージェント構築を支援します。",
+    "topics": [
+      "Android",
+      "Kotlin",
+      "AIエージェント",
+      "Gemini Nano",
+      "オンデバイスAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Announcing ADK for Kotlin and ADK for Android 0.1.0: Building AI Agents on Android and Beyond"
+  }
+}

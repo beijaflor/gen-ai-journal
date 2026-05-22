@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:25:20.964777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "育休中エンジニアがClaude Coworkで「あかちゃんカレンダー🍼」を作った話",
+    "url": "https://qiita.com/yuzinet/items/323bc76cf2d31d9f4d42",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "育休中のエンジニアが、AIエージェント「Claude Cowork」を活用し、対話のみで一度もコードを書かずに赤ちゃんの行事管理Webアプリを開発・公開した事例です。",
+    "summaryBody": "## 概要\n育休中の著者が、第2子の誕生に伴う煩雑な行事スケジュール（お宮参り、お食い初め等）を管理するため、Anthropicのデスクトップ向けAIエージェント「Claude Cowork」を使用して解決ツールを構築した記録です。\n\n## 開発のプロセスと特徴\n- **完全プロンプト開発**: HTML/CSS/JavaScriptのコードを一行も手書きせず、要件定義からデプロイまでをAIとの対話で完結。GitHub Pagesへのデプロイ操作もAIが行いました。\n- **主要機能**: 出生日と性別の入力から、お宮参り、お食い初め、ハーフバースデー、初節句などの日程と準備リストを自動生成。スマホで見やすいカードUIを採用しています。\n- **AIによるドメイン知識の補完**: 指示していない「K2シロップ」の準備をリストに含めるなど、AIが文脈を理解して自律的に機能を提案しました。\n\n## 結論と気づき\n育児の合間の10〜15分といった細切れの時間でも、AIエージェントを活用することで実用的なツールが開発可能です。デザインや複雑な日付計算ロジックには対話の工夫が必要ですが、エンジニア以外の人でも「自分専用のツール」を作れる時代の到来を示唆しています。",
+    "topics": [
+      "Claude Cowork",
+      "AIエージェント",
+      "育休エンジニア",
+      "GitHub Pages",
+      "ノーコード開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

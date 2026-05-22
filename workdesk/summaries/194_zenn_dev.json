@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:26:21.458570+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "toC プラットフォームの AIチャット を支える技術",
+    "url": "https://zenn.dev/kawason/articles/7118acbf3b07f1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "知識共有プラットフォーム「Brain」におけるCS AIチャットの導入事例として、有人対応を67%削減した技術構成、RAGの検索ロジック、およびDevinを活用した運用自動化を解説しています。",
+    "summaryBody": "本記事では、実サービスに導入されたCS（カスタマーサービス）AIチャットのアーキテクチャと運用手法が詳述されています。主要な技術ポイントとして、APIサービスとの障害分離やSSE（Server-Sent Events）の特性を考慮した「チャット専用ECSサービス」の切り出し、OpenAI Vector Storeを用いたRAG構成、そして複数クエリ展開やリランクを組み合わせた高度な検索ロジックが挙げられます。特に興味深い点として、フロントエンドのコード変更をナレッジに同期させるCDパイプラインや、Slack上の会話からAIエージェント「Devin」がナレッジリポジトリを自動更新する仕組みが構築されており、開発負荷を抑えつつ回答精度を維持する実戦的な工夫が凝らされています。現在はユーザー固有データの参照を制限しつつも、高いカバー率（97.9%）を実現しており、プロダクトへのAI実装における好例といえます。",
+    "topics": [
+      "RAG",
+      "AWS",
+      "LLM",
+      "OpenAI",
+      "Devin"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:30:00.141840+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMが高速化！LM Studio最新ベータ版が遂にMTP対応",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2110414.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LM Studioの最新ベータ版（0.4.14 Build 2）において、MTP（マルチトークン予測）による投機的デコーディングがサポートされ、対応モデルでの推論速度が最大2倍に向上した。",
+    "summaryBody": "米Element Labsは、ローカルLLM実行環境「LM Studio」の最新ベータ版（0.4.14 Build 2以降）を公開しました。今回のアップデートの目玉は、MTP（Multi-Token Prediction: マルチトークン予測）による投機的デコーディングのサポートです。これにより、Qwen 3.6やGemma 4といった最新の対応モデルにおいて、特に並列処理時の推論速度が最大2倍程度まで高速化されます。利用には、設定から更新チャネルを「ベータ版」に切り替えてランタイムをv2.15.0へアップデートし、さらにMTP対応版のモデルを改めてダウンロードした上で、ロード時に「MTP Speculative Decoding」オプションを有効にする必要があります。チャットUIのバグを修正したBuild 3も既に公開されており、ローカルAI利用者の利便性とパフォーマンスが大きく向上しています。",
+    "topics": [
+      "LM Studio",
+      "ローカルLLM",
+      "MTP",
+      "推論高速化",
+      "AIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}
