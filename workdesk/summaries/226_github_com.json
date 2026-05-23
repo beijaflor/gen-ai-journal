@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:19:20.661261+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIモデルの仕様・価格・機能を網羅したオープンソース・データベース「Models.dev」",
+    "url": "https://github.com/anomalyco/models.dev",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIモデルのスペック、価格、トークン制限、モダリティなどの詳細情報を構造化データとして集約した、コミュニティ主導のオープンソース・プロジェクトです。",
+    "summaryBody": "Models.devは、乱立するAIモデルの情報を一元化することを目的に構築されたデータベースです。OpenAI、Anthropic、Google、Meta、Mistralなど多数のプロバイダーのモデル情報を網羅しています。各モデルの入力・出力価格、コンテキストウィンドウ、知識のカットオフ日、推論（Reasoning）機能の有無、画像や音声などのマルチモーダル対応状況が、統一されたスキーマのTOML形式で管理されています。これらのデータはAPI（`https://models.dev/api.json`）経由でも提供されており、AI SDKを使用する開発者が動的にモデル情報を取得し、コスト計算や機能の振り分けを行う際の信頼できるリソースとして活用できます。また、各プロバイダーのSVGロゴも提供されており、フロントエンド開発の利便性も考慮されています。",
+    "topics": [
+      "AIモデル",
+      "LLM",
+      "API",
+      "データベース",
+      "コスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - anomalyco/models.dev: An open-source database of AI models."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:19:33.835581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【AWS】デジタル庁の生成AI基盤「源内(GenAI)」でRAG環境を構築してみた #bedrock",
+    "url": "https://qiita.com/ohtsuka-shota/items/94ca81b1a3840c2abe75",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "デジタル庁の生成AI基盤「源内(GenAI)」のAPIリポジトリを活用し、AWS CDKを用いてAmazon BedrockベースのRAG環境を構築する具体的な手順を解説しています。",
+    "summaryBody": "デジタル庁が公開している「genai-ai-api」リポジトリを使用し、AWS上にRAG（検索拡張生成）環境を構築するための詳細なチュートリアルです。主な手順として、IAMロールの権限設定、NAT GatewayのEIP設定を含む構成ファイルの修正、そしてSSO環境以外でもデプロイ可能にするための「switch-role-stack.ts」のコード修正を網羅しています。Amazon Bedrockのナレッジベース、OpenSearch Serverless、Lambdaを組み合わせた構成となっており、最終的に「源内Web」のUIからS3にアップロードした独自のドキュメントに基づいて回答を生成できるところまでを確認しています。タイムアウト値の調整など、デプロイ時のエラーを回避するための実用的な Tips も含まれています。",
+    "topics": [
+      "AWS",
+      "RAG",
+      "Amazon Bedrock",
+      "源内(GenAI)",
+      "AWS CDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    }
+  }
+}

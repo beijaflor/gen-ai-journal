@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:21:22.641971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のサブエージェント構成は、業務形態で大きく変わる — 1人多案件横断者の設計例",
+    "url": "https://zenn.dev/sprix_it/articles/53c746eb9cf31c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのマルチエージェント設計において、「分離・共有・捨てる」という3点フレームワークを用い、業務形態に応じた最適な構成を導き出す手法を解説しています。",
+    "summaryBody": "Claude Codeを用いたマルチエージェント設計を、個人の好みではなく「業務形態」という物理制約から逆算して構築するためのフレームワークを提案する記事です。著者は「何を分離し、何を共有し、何を捨てるか」という3つの判断軸を定義し、1人で複数プロジェクトを横断し「実装」よりも「判断」を重視する自身の業務に最適化した設計例を紹介しています。具体的には、隔離されたコンテキストで調査のみを行いサマリを返す「調査員型サブエージェント」の構成や、AI専用のメモリを作らずObsidian等の外部ストアを共有ステートにする設計原則を提唱。後半では、長期開発やバグレビューなど異なる業務形態における設計の転換についても触れており、ツール駆動ではなく業務プロセス駆動でエージェントを構成する重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "マルチエージェント",
+      "システム設計",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

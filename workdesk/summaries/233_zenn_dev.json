@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:20:57.680978+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "既存サービスにMCPサーバーを組み込む際の設計ポイント",
+    "url": "https://zenn.dev/finatext/articles/b404032aec58c4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Go言語で構築された既存のバックエンドシステムにMCP（Model Context Protocol）を統合する際の、サーバー構成の選定や権限に基づいたツールの可視性制御といった実戦的な設計ポイントを解説しています。",
+    "summaryBody": "本記事では、Finatext社の保険ビジネスプラットフォーム『Inspire』へのMCP（Model Context Protocol）導入事例を基に、既存システムへの統合設計を詳説しています。主な設計ポイントとして、MCPサーバーを独立させるか既存APIに内包させるかの比較、Go公式SDKの選定理由、そして特に重要な「ツールの可視性と認可」について言及しています。LLMが権限のないツールを認識してエラーを繰り返すUXの低下を防ぐため、`tools/list`の段階でユーザー権限に応じた動的なフィルタリングを行う手法を提案しています。また、クリーンアーキテクチャを採用しているプロジェクトにおける具体的なディレクトリ構成や、ツール定義に権限情報を紐付ける実装例も紹介されており、実務への適用を強く意識した内容となっています。さらに、クライアントの検証（CIMD）など、本番運用を見据えた最新の仕様変更への対応についても触れられています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Go",
+      "バックエンド開発",
+      "権限管理",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

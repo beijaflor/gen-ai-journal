@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:20:14.921468+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでコードレビューの自動化を試した話",
+    "url": "https://qiita.com/109x79m/items/347352e9d3a5a2aa3515",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを用い、SonnetとHaikuを使い分けるマルチエージェント構成で、コストを抑えつつコードレビューから修正・テストまで自動化する手法の紹介。",
+    "summaryBody": "この記事では、AnthropicのCLIツール「Claude Code」を使用して、コードレビューから修正、テスト実行までを一貫して自動化するエージェントの構築方法を解説しています。最大の特徴は、タスクの性質に応じてモデルを使い分けている点です。高度な判断が求められるレビュー本体にはClaude 3.5 Sonnetを、差分取得やパッチ生成、テスト実行といった定型的な処理にはClaude 3 Haikuを割り当てることで、品質を維持しながらAPIコストを大幅に削減しています。具体的には、プロジェクトの動作ルールを規定する`Claude.md`や、各エージェントの役割（code_find, code_review, code_fix, code_test）を定義する`agents.json`の設定例が公開されており、すぐに実践可能な内容となっています。また、不要なファイル読み込みを制限してトークン消費を抑える設定のコツについても触れられています。",
+    "topics": [
+      "Claude Code",
+      "コードレビュー",
+      "AIエージェント",
+      "コスト最適化",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}
