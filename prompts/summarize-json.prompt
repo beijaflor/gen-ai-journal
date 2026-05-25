@@ -10,6 +10,11 @@ The `content.url` field in your JSON output MUST be the **exact string** of the 
 - `originalTitle` for **non-Japanese articles**: Copy the page's `<title>` or `<h1>` text **verbatim**. Do NOT derive from the URL slug or rewrite it.
 - `originalTitle` must come from the **source page itself** — not from a paper, product, talk, or other resource the article merely references. If the source is a press release announcing a paper, `originalTitle` is the press release's own title (or omitted, if the press release is in Japanese), **not** the paper's title.
 
+**⚠️ CRITICAL — NO FABRICATION RULE (read first):**
+Summarize **only** what the fetched content actually states. NEVER invent, infer, extrapolate, or fill in details that are not present in the content — no made-up statistics, examples, mechanisms, arguments, or conclusions, even if they seem plausible for the topic or title.
+- If the page is **thin** — e.g. it only links to a PDF/document and contains just a title plus a vague one-line description, or is a landing/index page — do NOT manufacture a full summary from the title or your background knowledge. Instead, state plainly what is actually there. For example: "このURLはPDFへのリンクであり、ページ本文にはその概要を示す簡潔な説明しか含まれていない。" (for an English page: "This URL points to a PDF and the page itself contains only a vague description of it.") Then describe only the title and whatever the page literally says.
+- When in doubt, under-claim. A short, accurate summary is always preferred over a longer one padded with unverifiable detail.
+
 **IMPORTANT — `language` is the SOURCE page's language**, not the output/summary language. The `title` field is always Japanese (translated when the source is non-Japanese), but `language` reflects the source page. Examples:
 - Source is in English → `language: "en"`, `title` is Japanese (translated), `originalTitle` is the English page title.
 - Source is in Japanese → `language: "ja"`, `title` is Japanese (verbatim), **omit** `originalTitle` entirely.
