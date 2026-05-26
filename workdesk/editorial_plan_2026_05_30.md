@@ -211,3 +211,225 @@ After approval:
 - [ ] Use this plan as blueprint for article selection
 - [ ] Organize curated_journal_sources.md by themes
 - [ ] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+# ASSEMBLY STRATEGIES (STEP_07)
+
+> 各テーマの組み立てパターンと記事の役割・順序・接続を定義。STEP_08はこれを設計図として執筆する。
+> 原則：記事に実在しない物語的接続を作らない／誇張しない（事実ベースで接続）。
+
+### Theme 1: Google I/O 2026のGemini 3.5・Gemini Spark・AI Modeが進めるエージェント型ウェブ
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** Google I/O 2026という単一イベントが中心で、160が全体像（最も権威ある一次まとめ）、残り3本は個別発表の側面を扱う。「何が起きたか→個別の中身」の構造に合致。
+
+**Article Order & Roles:**
+1. [160] Google I/O 2026 100アップデート — Lead（イベント全体像・基盤）
+2. [122] Gemini 3.5 Flash — Supporting（中核モデルの詳細）
+3. [124] Google検索 I/O 2026 / AI Mode — Supporting（検索・エージェント体験への適用）
+4. [078] Gemini Spark — Supporting/Closing（常駐エージェント、👍。I/O直前情報→160の正式発表と接続）
+
+**Narrative Arc:** イベント全体像を提示した後、モデル（122）→ プロダクト適用（124）→ 常駐エージェント（078）へと、発表の中身を具体化していく。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 160 → 122 | 「100件の発表の中核をなすのが新モデルだ。」 |
+| 122 → 124 | 「このモデルが最初に組み込まれた領域の一つが検索である。」 |
+| 124 → 078 | 「検索に続き、常駐エージェントとして示されたのがGemini Sparkだ。」 |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+**Key Synthesis Points:**
+- 個別機能ではなく「エージェントがウェブとデバイスを横断する」という一貫した方向性
+- モデル（Gemini 3.5）と常駐エージェント（Spark）が同一構想の両輪
+**Conclusion Approach:** 個別発表を貫く「エージェント型ウェブ」への移行という主題で締める（事実の範囲で）。
+**Assembly Prompts:** ①このテーマの主題は何か（エージェント型ウェブ）②各発表はどう一貫するか ③読者が押さえるべき発表は ④Googleの方向性はどこへ向かうか
+
+---
+
+### Theme 2: BLS雇用統計・Pew調査・卒業式ブーイングに表れる米国のAI反発
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 同一現象（米国のAI反発）を、雇用統計・世論調査・報道・キャンパスという対等な複数の切り口から捉える。明確な主従はなく、スペクトラムを見せることに価値がある。
+
+**Article Order & Roles:**
+1. [001] BLS雇用統計（AI露出職の雇用減） — 経済データ（具体・一次データ）
+2. [049] Pew・ギャラップ調査（専門家と市民の乖離） — 世論データ
+3. [113] 米国の反発が激化 — 報道による全体像
+4. [121] 卒業式ブーイング — 具体的なフラッシュポイント
+
+**Narrative Arc:** 硬い経済データ→世論調査→広範な反発の報道→可視的な事件、と「データから社会的表出へ」スコープを広げる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 001 → 049 | 「数字の背後にある人々の感情は、世論調査にも表れている。」 |
+| 049 → 113 | 「こうした不信は、より広範な反発として報じられている。」 |
+| 113 → 121 | 「反発が最も可視化された場面の一つが、大学の卒業式だった。」 |
+
+**Emphasis Balance:** Technical ⭐ / Business ⭐⭐⭐ / Future ⭐⭐
+**Key Synthesis Points:**
+- 雇用・環境・教育という複数領域で同時に反発が表面化
+- 専門家の楽観と市民の不安という乖離が通底
+**Conclusion Approach:** 反発が単一要因でなく複合的であること、その含意を事実ベースで示す。
+**Assembly Prompts:** ①各切り口が共通して示すものは ②データと感情はどう関係するか ③なぜ今このタイミングか ④開発者・業界への含意
+
+---
+
+### Theme 3: OpenAI IPO申請・Anthropic黒字化論争・従量課金移行が問うAI事業の収益性
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 具体的なIPO申請（事実）から、企業分析、黒字化への批判、マクロなバブル論へと、スコープが「個別事象→業界全体の経済性」へ段階的に拡大する。
+
+**Article Order & Roles:**
+1. [181] OpenAI IPO機密申請 — Foundation（具体的な引き金となる事実）
+2. [119] Anthropic IPO準備とクローズド化 — Development（同様の動きと懸念）
+3. [225] Anthropicの黒字化「まやかし」批判 — Advanced（収益性の数字への批判）
+4. [120] AIは高価すぎる／バブル論 — Payoff（マクロな経済性の総括）
+
+**Narrative Arc:** 上場という事象→各社の動き→収益性の数字への懐疑→業界全体の経済的持続性、と批判の射程が拡大する。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 181 → 119 | 「同じ上場の動きは、Anthropicにも見られる。」 |
+| 119 → 225 | 「では、その収益性の数字はどこまで信頼できるのか。」 |
+| 225 → 120 | 「個社の問題を超え、AI業界全体の経済性に目を向ける論考もある。」 |
+
+**Emphasis Balance:** Technical ⭐ / Business ⭐⭐⭐⭐ / Future ⭐⭐⭐
+**Key Synthesis Points:**
+- 上場準備が収益性への圧力を可視化
+- サブスク経済の持続性と従量課金への移行圧力
+**Conclusion Approach:** 収益性という共通の問いが、個社からマクロへ一貫することを示す（断定は避け論点提示）。
+**Assembly Prompts:** ①上場の動きが突きつける問いは ②批判の根拠は何か ③個社とマクロはどう繋がるか ④開発者が備えるべきコスト構造の変化
+
+---
+
+### Theme 4: Claude Mythos・金融庁要請・PocketOS事件が突きつけるAIエージェントのセキュリティ脅威
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** AnthropicのMythos（攻撃能力の実証）が中心的事象で、085がそれを示し、139・244が制度的・規制的反応、106が運用面の別リスクという構造。中心事象＋反応＋別側面のSingle-Focusに合致。
+
+**Article Order & Roles:**
+1. [085] MythosがAppleの防御を5日で突破 — Lead（衝撃的な能力の実証）
+2. [139] AnthropicがMythosの知見をFSBと共有 — Supporting（制度的反応）
+3. [244] 金融庁がフロンティアAI対応を要請 — Supporting（規制的反応・一次資料）
+4. [106] PocketOS本番DB削除事件 — Closing（運用面の別リスク次元）
+
+**Narrative Arc:** 攻撃能力の実証→規制当局との共有→金融庁の要請、という反応の連鎖を示した後、106で「運用上の事故」という別種のリスクへ視野を広げる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 085 → 139 | 「この能力を、Anthropic自身が金融監督機関と共有し始めている。」 |
+| 139 → 244 | 「規制側も動いた。日本では金融庁が具体的な要請を出している。」 |
+| 244 → 106 | 「攻撃能力だけでなく、エージェントの運用そのものにもリスクは潜む。」 |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+**Key Synthesis Points:**
+- 攻撃側の加速と防御側の構築速度の非対称（「バグマゲドン」）
+- 攻撃能力リスクと運用リスクの両面に備えが必要
+**Conclusion Approach:** AIエージェントのセキュリティが能力・運用の両面で問われる局面に入ったことを事実ベースで示す。
+**Assembly Prompts:** ①Mythosは何を実証したか ②制度・規制はどう反応したか ③106が示す別種のリスクは ④組織が取るべきガードレール
+
+---
+
+### Theme 5: Karpathy・大規模コードベース実践・Agent Skills研究に見るハーネスエンジニアリング
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 「ハーネス」概念の定義（024）→大規模コードベースでの実践（027）→Karpathyの知見によるガイドライン（243）→Agent Skillsという具体領域の研究知見（038）と、抽象から具体・研究裏付けへ段階的に深化する。
+
+**Article Order & Roles:**
+1. [024] ハーネスエンジニアリングとは（3層構造） — Foundation（概念定義）
+2. [027] Claude Code 大規模コードベースのベストプラクティス — Development（実践適用）
+3. [243] Karpathyの知見に基づくCLAUDE.mdガイドライン — Advanced（指針への精緻化）
+4. [038] Agent Skills研究（成功率+16.2%、26%に脆弱性、👍） — Payoff（研究に基づく具体領域）
+
+**Narrative Arc:** 概念→実践→指針→研究という成熟曲線で、「モデルよりハーネス設計」という認識の深化を辿る。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 024 → 027 | 「この概念を大規模コードベースで実践すると、何が要点になるのか。」 |
+| 027 → 243 | 「実践知をさらに指針化したのが、Karpathyの洞察に基づくガイドラインだ。」 |
+| 243 → 038 | 「ハーネスの一要素であるスキルについては、研究が具体的な知見を示している。」 |
+
+**Emphasis Balance:** Technical ⭐⭐⭐⭐ / Business ⭐ / Future ⭐⭐⭐
+**Key Synthesis Points:**
+- 性能はモデルよりハーネス設計（ランタイム・コンテキスト・セーフティ）に依存
+- スキルは人手キュレーションが有効、自己生成は効果薄・脆弱性に注意
+**Conclusion Approach:** ハーネス設計がプロンプトエンジニアリングを超えた運用設計へと成熟していることを示す。
+**Assembly Prompts:** ①ハーネスとは何か ②実践の要点は ③指針化で何が変わるか ④スキル研究が示す落とし穴
+
+---
+
+### Theme 6: カウシェ・NOT A HOTEL・Progateに見るAI駆動開発の組織実装とレビュー設計
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 同じ課題（AI駆動開発の組織への落とし込み）に対する複数企業の対等な事例。実装・統制・レビュー速度・レビュー手法という異なる側面を扱い、主従はない。
+
+**Article Order & Roles:**
+1. [131] カウシェ：並列実装で1日15.8件PR — 実装（成果の規模）
+2. [138] NOT A HOTEL：4レイヤーの安全運用 — 統制・ガバナンス
+3. [137] Progate：PRレビュー1時間ルール — レビュー速度・プロセス
+4. [162] サイバーエージェント：ランタイムレビュー（👍） — レビュー手法の革新
+
+**Narrative Arc:** 実装の成果→安全な統制→レビューのボトルネック対策→本番挙動ベースのレビューへ、と組織実装の異なる側面を並置する。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 131 → 138 | 「高速な実装を支えるには、安全な運用体制が要る。」 |
+| 138 → 137 | 「運用体制と並んで課題になるのが、人間のレビューがボトルネック化する問題だ。」 |
+| 137 → 162 | 「レビューの速度に加え、その手法自体を見直す動きもある。」 |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐⭐ / Future ⭐⭐
+**Key Synthesis Points:**
+- AI駆動開発の成否は個人ツールより組織の仕組み（統制・レビュー）に依存
+- レビューがPR時点から本番挙動へと軸足を移しつつある
+**Conclusion Approach:** 各社の事例が示す「組織実装の型」を整理し、レビュー設計の重要性を示す。
+**Assembly Prompts:** ①各社が解いた課題は ②実装・統制・レビューはどう繋がるか ③共通する成功要因は ④レビュー設計の今後
+
+---
+
+### Theme 7: Martin Fowlerの定義と懐疑論・役割再定義が問うバイブ・コーディングの有効性
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** Martin Fowlerによる「バイブ・コーディング」の定義（155）が最も権威ある中心で、179が懐疑的な反応、073が役割再定義という含意。中心の定義＋反応＋含意のSingle-Focusに合致。
+
+**Article Order & Roles:**
+1. [155] Martin Fowlerによるバイブ・コーディングの定義 — Lead（定義・有効範囲と限界）
+2. [179] 「なぜ私はバイブ・コーディングをしないのか」 — Supporting（懐疑的反応）
+3. [073] コーディングエージェント時代のエンジニアの役割 — Closing（役割再定義の含意）
+
+**Narrative Arc:** 定義と限界を提示→現場の懐疑→エンジニアの役割がどこへ移るかという含意、という「定義→反応→含意」の流れ。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| 155 → 179 | 「この手法に対し、あえて距離を置くベテラン開発者もいる。」 |
+| 179 → 073 | 「賛否を超えて問われるのは、エンジニアの役割がどう変わるかだ。」 |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+**Key Synthesis Points:**
+- バイブ・コーディングはプロトタイプに有効、重要システムには限界（Fowlerの整理）
+- 手法の賛否は、エンジニアの価値が設計・判断・検証へ移る議論に接続
+**Conclusion Approach:** 有効範囲を冷静に示しつつ、役割再定義という含意で締める（誇張しない）。
+**Assembly Prompts:** ①バイブ・コーディングの定義と限界は ②懐疑論の論点は ③役割はどう変わるか ④読者が取るべきスタンス
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+> The agent leaves `ASSEMBLY PLAN APPROVED` unchecked. The human flips it to `[x]`.
+
+**Pattern Distribution:** Single-Focus ×3 (T1, T4, T7) / Multi-Perspective ×2 (T2, T6) / Progressive-Sequence ×2 (T3, T5) / Debate-Contrast ×0
+
+**Approval Date:** 2026-05-26
+**Approver:** beijaflor
