@@ -291,12 +291,18 @@ uv run scripts/mark_published.py YYYY-MM-DD
 ```
 
 **What this does:**
-- Updates `journal_date` field in Supabase for all workdesk summaries (journal_date IS NULL)
-- Transitions summaries from draft (workdesk) to published state
+- Updates `journal_date` in Supabase ONLY for **this journal's** summaries, matched by
+  URL against `journals/YYYY-MM-DD/summaries/*.json` (with a `workdesk/summaries/` fallback)
+- Transitions those summaries from draft (workdesk) to published state
 - Enables public read access via Row Level Security (RLS) policy
 - Preserves summary URLs: `/journals/YYYY-MM-DD/001/` remains valid
 
-**Important — runs against ALL unmarked workdesk summaries:** the script updates every Supabase row where `journal_date IS NULL`, not just this week's 209. If summaries from prior weeks were never marked, they will all be assigned this week's date. Run this every week to keep state consistent.
+**Scoped by design (hardened 2026-05):** the script no longer blanket-updates every
+`journal_date IS NULL` row — that previously swept un-marked prior weeks into one date
+(caused the 2026-04-25 mega-bucket). It now stamps only the URLs belonging to this
+journal, so leftover backlog is left untouched. If no matching summaries are found it
+**refuses to run** rather than guessing. An `--all-null` escape hatch preserves the old
+blanket behavior for exceptional manual use only.
 
 **When to run:**
 - After archiving journals to `journals/YYYY-MM-DD/`

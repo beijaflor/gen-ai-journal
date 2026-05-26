@@ -95,8 +95,10 @@ uv run scripts/sanitize_url.py "URL_HERE"
 
 # STEP_10: Mark Supabase summaries as published (REQUIRED — see STEP_10 Section 6)
 # Run AFTER archiving to journals/YYYY-MM-DD/ and BEFORE creating the PR (STEP_12).
-# Sets journal_date for ALL workdesk-state Supabase summaries (NULL journal_date),
-# transitioning them to published. Skipping breaks /journals/YYYY-MM-DD/NNN/ pages.
+# Scoped: sets journal_date ONLY for THIS journal's summaries (matched by URL
+# against journals/YYYY-MM-DD/summaries/), transitioning them to published.
+# Skipping breaks /journals/YYYY-MM-DD/NNN/ pages. (--all-null forces the old
+# blanket behavior; avoid it — it sweeps unrelated NULL rows into this date.)
 uv run scripts/mark_published.py YYYY-MM-DD
 ```
 
