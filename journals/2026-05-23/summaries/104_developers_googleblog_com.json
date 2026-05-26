@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:51:30.695589+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Tensor SDK BetaとLiteRTの統合：Pixel 10でのオンデバイスAI開発を加速",
+    "url": "https://developers.googleblog.com/google-tensor-sdk-beta-with-litert/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、Pixel 10のTPU性能を最大限に引き出すTensor SDK Betaを公開し、LiteRTとの統合によりモデルの変換から展開までのシームレスな開発フローを実現しました。",
+    "summaryBody": "Googleは、Pixel 10シリーズに搭載された独自SoC「Tensor」のTPU（Tensor Processing Unit）を直接活用するための『Tensor ML SDK』をBeta版として公開しました。最大の特徴は、Googleのオンデバイス推論フレームワーク『LiteRT』との統合です。\n\n開発者はLiteRT Torchを使用してPyTorchやTFLiteモデルをTPU向けに最適化コンパイルし、PlayストアのAI Packsを通じて効率的に配布できるようになります。SDKはTPUが利用不可な場合のCPU/GPUフォールバック機能も自動で行います。\n\nまた、Gemma 3 1Bを含む100種類以上のモデルが『Model Garden』として提供されており、Hugging Faceから事前コンパイル済みモデルを即座に導入可能です。これにより、リアルタイムの画像編集、低遅延な音声翻訳、SLM（小規模言語モデル）によるアプリ操作などの高度なオンデバイスAI体験を、プライバシーを確保したまま容易に実装可能になります。",
+    "topics": [
+      "Google Tensor",
+      "LiteRT",
+      "オンデバイスAI",
+      "Pixel 10",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Google Tensor SDK Beta with LiteRT"
+  }
+}

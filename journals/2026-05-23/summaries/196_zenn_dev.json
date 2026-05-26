@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:26:54.125049+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Local Coding Agent が身近なタスクをどれくらいこなせるのかを検証した",
+    "url": "https://zenn.dev/aishift/articles/5b048ff347fd7b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MacBook Pro上でQwen3.6-27BとOpenCodeを組み合わせたローカル開発環境の性能を検証し、クラウドモデルと比較した実用性と速度の課題を明らかに。",
+    "summaryBody": "MacBook Pro (M3 Max) 上で動作するローカルLLM「Qwen3.6-27B」とエージェント環境「OpenCode」を使い、実務を想定した6つの開発タスク（UI調整、Zodによる正規化、APIフィルタリング、CRUD実装等）の遂行能力を検証したレポートです。\n\n- **主な結果**: 検証した全6タスクにおいて、ローカルモデルのみでテストをパスするコード生成に成功。特に複雑な正規化ロジックの自己修正や、OpenAPI定義に基づいたレイヤー間の同期など、高い推論能力を示した。\n- **Claude Codeとの比較**: Claude Code (Sonnet 4.6) と比較すると、精度面では遜色ないものの、実行速度に約20倍（約2時間 vs 6分）の差が生じた。\n- **結論**: 速度面での課題はあるものの、データの外部送信を避けたい環境や、バックグラウンドで時間をかけて処理させる用途においては、ローカル開発エージェントが既に実用レベルに達していることを示唆している。",
+    "topics": [
+      "Local LLM",
+      "Qwen3.6",
+      "OpenCode",
+      "AI Agent",
+      "MacBook Pro"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

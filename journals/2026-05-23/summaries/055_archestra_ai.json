@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:23:27.062442+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI slop（AI製の粗悪コンテンツ）がOSSを破壊する：GitHubリポジトリを守るための「核の選択肢」",
+    "url": "https://archestra.ai/blog/only-responsible-ai",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI生成のスパム（AI slop）によるGitHubリポジトリの汚染に対抗するため、Archestraが導入した独自のホワイトリスト制オンボーディング手法とその背景を解説しています。",
+    "summaryBody": "GitHubがAIによる貢献の増加を謳う一方で、現場のオープンソース（OSS）開発では「AI slop」と呼ばれるAI生成の低品質なコメントやプルリクエスト（PR）が深刻なノイズとなっています。Archestra社は、報奨金を狙ったAIボットによる大量のスパムに直面し、正当な貢献者が埋もれ、メンテナーの工数が奪われる危機を経験しました。\n\n当初は貢献者のレピュテーション計算やAI検閲ボット（AI sheriff）を試みましたが、誤検知の問題もあり、最終的に「オンボーディングを通過したユーザーのみをホワイトリスト化する」という強硬策を導入しました。GitHubには直接的なホワイトリスト機能がないため、同社は「既存の貢献者（prior contributors）のみに制限」という設定をハック。独自のオンボーディングサイトで倫理規程への同意とCAPTCHAを突破したユーザーに対し、GitHub Actionsを通じて特定のアカウント名で空のコミットを自動プッシュすることで、擬似的に「既存の貢献者」ステータスを付与しアクセスを許可する仕組みを構築しました。\n\nこの取り組みは、活動指標の数値よりもコミュニティの品質と安全性を優先するという決断であり、AI時代のOSS管理における新たな課題を浮き彫りにしています。",
+    "topics": [
+      "AI Slop",
+      "Open Source",
+      "GitHub Management",
+      "Developer Experience",
+      "Spam Prevention"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Let's talk about AI slop"
+  }
+}

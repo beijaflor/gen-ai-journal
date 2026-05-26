@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T05:06:30.553514+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apple Siliconの実行コストはOpenRouterを下回る",
+    "url": "https://x.com/rohan_sood15/status/2056585919805714777",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Apple Silicon（M4 Max）でのローカルLLM実行が、ハードウェアの資産価値やバッチ処理を考慮することでOpenRouter等のAPI利用より最大3倍安価になり得ることをベンチマークに基づき示す。",
+    "summaryBody": "Rohan Sood氏が、M4 Max 128GB搭載の**MacBook Pro**を用いたローカルLLM実行と**OpenRouter**のコスト比較分析を報告。従来の分析で欠落していた「実環境に近い入力比率」「バッチ処理やキャッシュによるスループット向上」、そして「ハードウェアの残存価値（数年後の売却益）」を算入した。結果、**Gemma 4 31B**ではAPI利用より14%安く、MoEモデルの**Gemma 4 26B**では約3倍（65%）ものコストメリットがある。GPUの供給不足や価格高騰、プライバシーの観点から、ローカルLLMは単なる趣味ではなく経済的合理性のある選択肢であることを強調している。",
+    "topics": [
+      "Apple Silicon",
+      "ローカルLLM",
+      "コスト分析",
+      "Gemma 4",
+      "OpenRouter"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 84,
+      "annexPotential": 86,
+      "overall": 84
+    },
+    "originalTitle": "Apple Silicon costs LESS than OpenRouter"
+  }
+}

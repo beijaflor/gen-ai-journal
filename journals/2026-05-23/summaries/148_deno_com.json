@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:14:29.690012+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claw Patrol: エージェント向けオープンソース・セキュリティ・ファイアウォール",
+    "url": "https://deno.com/blog/clawpatrol",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Denoが開発した、AIエージェントによるデータベースやKubernetesへの操作を監視・制限し、認証情報を隠蔽するオープンソースのセキュリティゲートウェイ。",
+    "summaryBody": "Denoは、AIエージェントが本番環境（AWS、GCP、Kubernetes、Postgres等）を安全に操作できるようにするためのセキュリティ・ファイアウォール「Claw Patrol」をオープンソースとして公開しました。既存のLLMゲートウェイが主にHTTP通信のみを対象としているのに対し、Claw PatrolはWireGuardやTailscaleを利用してネットワーク層で動作し、SQLやKubernetesといった非HTTPプロトコルまで解釈・制限できる点が特徴です。\n\n主な機能として、エージェント側に実際の認証情報を持たせない「クレデンシャル・インジェクション」、HCLによる柔軟なルール設定、LLMや人間による承認フローの組み込み（Human-in-the-loop）をサポートしています。これにより、エージェントによる誤操作やプロンプトインジェクションに伴う破壊的な操作（DROP TABLEやリソース削除など）を未然に防ぐことが可能です。現在はアルファ版としてMITライセンスで提供されています。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "Deno",
+      "オープンソース",
+      "Kubernetes"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Claw Patrol: an open-source security firewall for agents"
+  }
+}

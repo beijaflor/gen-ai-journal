@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:26:07.593404+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Googleの新しいTUI「Antigravity CLI」のセットアップとGemini CLIとの比較検証",
+    "url": "https://zenn.dev/hoki621/articles/how-to-agy-cli",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Googleが提供を開始した新しいTUIツール「Antigravity CLI」の導入方法から、高度なスラッシュコマンド操作、従来のGemini CLIを上回るコード生成性能の検証までを詳しく解説しています。",
+    "summaryBody": "Googleの新しい軽量ターミナルユーザーインターフェース（TUI）である「Antigravity CLI (AGY CLI)」の試用レポートです。この記事では、Macへのインストール手順やGoogle OAuthによる認証、Go言語ベースへの刷新に伴う設定ファイル（settings.json）の詳細を網羅しています。操作面では、ファイルパスの自動補完（@）、ターミナルコマンド実行（!）、会話の巻き戻し（/rewind）やModel Context Protocol（/mcp）などの多彩なスラッシュコマンドが紹介されています。特にGemini CLIとの比較では、Three.jsを用いた3D花火の生成において、AGY CLIが生成速度で約2倍（2分20秒）速く、かつポストプロセッシング（Bloom効果）を含む視覚的に高度なコードを出力した点が強調されています。現時点では非公開ソースコードのツールですが、エージェント機能の活用や複数モデル（Gemini 3.5, Claude等）の選択など、開発者向けインターフェースとして大幅な進化を遂げています。",
+    "topics": [
+      "Antigravity CLI",
+      "Google Gemini",
+      "TUI",
+      "LLM",
+      "Three.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

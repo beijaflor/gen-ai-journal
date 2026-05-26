@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-06T14:11:46.002717+00:00",
+    "generatedAt": "2026-05-11T04:52:47.783895+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "AndroidでClaude Code / Codex / Gemini CLIを動かすネイティブAIターミナルIDE「Shelly」",
-    "url": "https://zenn.dev/ryoitabashi/articles/744397718965f6",
+    "title": "要求を仕様に落とすテンプレートを作ってみた",
+    "url": "https://zenn.dev/channnnsm/articles/c3a6de22e71f86",
     "language": "ja",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "Android上でClaude CodeやGemini CLIなどのAIコーディングCLIを直接動作させ、モバイル完結の開発環境を実現するネイティブターミナルIDE「Shelly」の紹介。",
-    "summaryBody": "Android向けネイティブAIターミナルIDE「Shelly」の最新進化（v5.1.1）に関する解説記事です。Termuxやprootに依存せず、アプリ内にNode.js、Python、git、そして各種AI CLI（Claude Code, OpenAI Codex, Gemini CLI）の実行環境を直接同梱しているのが最大の特徴です。Android特有のSELinux制限やプロセス管理、OAuth認証の課題を「Credential Import UI」や「shelly-doctor」などの独自実装で解決しています。APKサイズは約900MBと巨大ですが、Galaxy Z Fold6等の大画面端末において、ターミナル、AIチャット、ブラウザをシームレスに横断したモバイルAIコーディングを可能にします。現在はGitHubにてAPKが配布されています。",
+    "oneSentenceSummary": "AI時代に重要性を増す「何を作るか」を定義するスキルを標準化するため、ビジネス要求から機能要求までを体系的に整理できるMarkdown形式の要求仕様書テンプレートと活用手順を解説したガイド。",
+    "summaryBody": "### 要件定義の「型」でプロジェクトの認識齟齬をなくす\\n生成AIの普及により実装（How）の難易度が下がる中、開発の成否は「正確な仕様定義（What/Why）」にシフトしています。本記事では、属人化しやすい要件定義を体系化するための11セクションから成るMarkdownテンプレートを公開し、その活用法を詳説しています。\\n\\n#### テンプレートの核心と実務ポイント\\n- **構造的アプローチ**: プロジェクト概要、ステークホルダー分析、ビジネス要求(BR)、機能要求(FR)、非機能要求などを論理的な順序で整理。\\n- **要求と要件の厳密な分離**: 顧客の願望である「要求」を、システムが満たすべき客観的な「要件（仕様）」へと翻訳するプロセスを重視。\\n- **テスト可能な粒度**: 「〜できる」といった曖昧な記述を避け、入力に対するシステムの動作と具体的な受け入れ基準（チェックリスト形式）で記述する手法を提示。\\n- **負債の可視化**: 「未解決事項（Open Issues）」をドキュメントの重要項目に据え、担当者と期限を明記して徹底管理。\\n\\n会議の文字起こしから仕様書を構成するステップや、よくある間違いへの対処法も含まれており、開発現場の品質向上に直結する内容です。",
     "topics": [
-      "Android",
-      "AIコーディング",
-      "Claude Code",
-      "Gemini CLI",
-      "ターミナルIDE"
+      "要件定義",
+      "要求仕様書",
+      "プロジェクトマネジメント",
+      "Markdown",
+      "システム開発"
     ],
     "scores": {
       "signal": 5,
-      "depth": 5,
-      "uniqueness": 5,
-      "practical": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
       "antiHype": 4,
-      "mainJournal": 90,
-      "annexPotential": 35,
-      "overall": 92
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
     }
   }
 }

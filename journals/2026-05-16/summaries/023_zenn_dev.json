@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:01:55.498254+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexをローカルLLMで駆動する",
+    "url": "https://zenn.dev/robustonian/articles/codex_with_local_llm",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LM StudioのCLIツール（lms）を活用し、独自のResponses API形式を要求するCodex CLIをローカルLLM環境で動作させるための具体的な構築手順を解説しています。",
+    "summaryBody": "この記事では、通常OpenAI APIなどの商用サービスを前提とするCodex CLIを、LM Studioを用いてローカルLLMで駆動する方法を紹介しています。llama.cppでは最新のCodexが要求するResponses形式のAPIに難があるため、LM StudioのCLI機能（lms）を採用。GGUFモデルの自動インポートとサーバー起動を行うシェルスクリプト、思考プロセス（Thinking）の制御用プロキシの実装、そしてCodex側の`~/.codex/config.toml`における`wire_api = \"responses\"`の設定など、実用的なステップを詳述しています。これにより、ローカルLLMを用いたコーディングエージェントのベンチマーク比較が可能になります。",
+    "topics": [
+      "Codex",
+      "LM Studio",
+      "ローカルLLM",
+      "GGUF",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

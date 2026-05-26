@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:20:02.512156+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "あれほど頼れるAIが、しょっぱいテストケースを作ってくる理由を考えた",
+    "url": "https://qiita.com/yurizono/items/43a93d8ff3f7046b31e3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが期待通りのテストケースを生成できない主因は「プロダクト固有のコンテキスト」の不足にあり、仕様DBの構築と連携がその解決策となる。",
+    "summaryBody": "LLMがコーディングにおいて高いパフォーマンスを発揮する一方で、QAタスクで苦戦する理由は、リポジトリのような「読み込める網羅的な背景情報」が不足しているためだと分析しています。著者は、メンテナンス可能な粒度の「仕様DB（ユーザージャーニーの集合体）」をNotionで構築し、MCP（Model Context Protocol）を通じてAIに提供する手法を提案。これにより、単なる仕様書の引き写しではなく、既存機能への影響や過去の障害事例を考慮した、QAエンジニアの視点に近い高度なテスト設計が可能になることを実証しています。プロンプトエンジニアリングを超えた「コンテキストエンジニアリング」の重要性を説く内容です。",
+    "topics": [
+      "AI4QA",
+      "LLM",
+      "コンテキストエンジニアリング",
+      "QA",
+      "テスト設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:52:17.656822+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントのための保守性センサー",
+    "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントが生成するコードの保守性を維持するために、静的解析ツールを「センサー」として活用し、AI自身に自己修正を促すフレームワークとその実践的な知見を解説している。",
+    "summaryBody": "AIエージェントによるソフトウェア開発において、コードの内部品質（保守性）を担保するための「センサー」システムの構築方法を提案しています。著者は、ESLint、型チェッカー、テスト、セキュリティスキャンといった計算的なツールをエージェントに継続的なフィードバックを与えるセンサーと位置づけ、AIが人間によるレビュー前に自己修正できる環境を構築しました。特に、リンターの警告メッセージにAI向けの「自己修正ガイドライン」を埋め込むことで、エージェントが警告を修正するか、理由を添えて抑制するかを判断できるようにする手法が有効です。AIの導入により、従来は管理コストが高かった静的解析ルールの運用が容易になり、コードベースの「クリーンな状態」を維持するハードルが下がっています。一方で、エージェントが過度なリファクタリングのループに陥るリスクや、数値化できない意味的な品質の欠如についても注意を促しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Software Maintainability",
+      "Static Analysis",
+      "Self-Correction",
+      "LLM in Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Maintainability sensors for coding agents"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:54:24.826130+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code/Cursor/Codex/Geminiを横断して記憶を共有する方法：Linksee Memoryの活用",
+    "url": "https://zenn.dev/kanseilink/articles/linksee-memory-claude-cross-llm-20260511",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のAIツール（Claude, Cursor, Codex, Gemini）間で、SQLiteを介して開発の設計判断や制約を一元管理・共有できるMCPサーバー「Linksee Memory」の紹介。",
+    "summaryBody": "開発者がClaude CodeやCursor、Codexなどの複数のLLMを使い分ける際、各ツールが独立したメモリを持つため、過去のコンテキストを再共有する手間とトークン消費が課題となります。本記事で紹介される「Linksee Memory」は、共通のSQLiteファイルを読み書きするMCPサーバーとして機能し、この問題を解決します。例えば、Codexで行ったデータベース設計の制約を一度記録すれば、Claude Codeでの開発時にその内容を自動で踏まえた提案を受けることが可能になります。セットアップは5分程度で完了し、~/.linksee-memory/memory.dbを介して全AIが同一の記憶を共有できるため、開発の継続性が劇的に向上します。",
+    "topics": [
+      "MCP",
+      "Linksee Memory",
+      "Claude Code",
+      "Cursor",
+      "LLM Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:53:32.759648+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codex / Kiro に AWS 権限を 渡すとき、何を設計すべきか",
+    "url": "https://speakerdeck.com/k_adachi_01/kiro-ni-aws-quan-xian-wo-du-sutoki-he-woshe-ji-subekika",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントにAWS操作権限を付与する際のガバナンス設計として、「許可・記録・停止」を軸にした具体的なアーキテクチャと運用指針を解説しています。",
+    "summaryBody": "AIエージェント（Claude Code、Codex、Kiro等）がAWSを操作する際、CloudTrailにはIAMプリンシパルとAPI実行記録しか残らず、AIによる操作であるかが不透明になる課題があります。本資料では、エンタープライズ統制の観点から「誰に何を許すか」「何を記録するか」「どう止めるか」の3点を中心に設計手順を整理しています。具体的には、短命認証情報の採用、MCP（Model Context Protocol）による経路識別、人間とAI用ロールの分離、CloudTrailとエージェントログの突合、そして有事の際にAIのみを遮断するランブックの整備など、本番環境でAIを安全に自律動作させるためのプラクティスが提示されています。また、主要エージェントツールごとの管理機能の比較も含まれています。",
+    "topics": [
+      "AWS",
+      "IAM",
+      "AIエージェント",
+      "ガバナンス",
+      "CloudTrail"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

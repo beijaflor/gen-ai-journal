@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:43:28.069444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursorのモデル選択UIをちゃんと理解する",
+    "url": "https://zenn.dev/knowledgework/articles/f41bdc6ac95b1d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cursorのモデル選択UIにおける各モード（Auto/Premium等）の詳細な違いや、モデルごとの「Edit」メニューから設定可能な推論・コンテキストの調整方法を解説しています。",
+    "summaryBody": "AIエディタ「Cursor」のモデル選択ドロップダウンにある各機能と、意外と知られていない詳細設定（Edit）の活用法を解説した記事です。\n\n### 主な内容\n- **4つの基本モード**: コンテキストを最大化する「MAX Mode」、複数モデルで並列実行する「Use Multiple Models」、効率重視の「Auto」、品質優先の「Premium」の使い分けと料金面への影響を整理。\n- **Editメニューの活用**: 各モデルの横にある歯車アイコンから、コンテキストウィンドウの拡張（1Mトークン等）や推論の深さ（EffortやReasoning）、ThinkingのON/OFFを個別設定できる点を詳述。モデルごとに設定項目が異なるトラップについても触れています。\n- **実践的な使い分け**: 著者は作業の7〜8割を高速な「Composer 2」でこなし、複雑なロジックや調査で詰まった際に、設定を強化した「GPT-5.4」や「Opus 4.7」へ昇格させる運用フローを紹介。\n\n「モデルを変える前に、今のモデルの設定を一段上げてみる」という選択肢を持つことで、開発のリズムを崩さずに高難度タスクを突破する具体的なテクニックを提案しています。",
+    "topics": [
+      "Cursor",
+      "LLM",
+      "AIエディタ",
+      "GPT-5.4",
+      "Claude 3.5 Opus"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

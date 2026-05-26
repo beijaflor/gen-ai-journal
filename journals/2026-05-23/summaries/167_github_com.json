@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:19:28.260158+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI透かし除去ツール「remove-ai-watermarks」: 可視・不可視の透かしやメタデータを一括削除",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Google Geminiの可視ロゴやSynthID等の不可視透かし、C2PAメタデータなどを除去し、SNSの「AI生成」ラベルを回避するための高度なCLIツール。",
+    "summaryBody": "AI生成画像に付与される「透かし」を包括的に除去するためのオープンソースツールです。Google Gemini（Nano Banana）の可視ロゴをアルファ反転で高速に除去する機能に加え、SynthIDやStableSignatureといった不可視の周波数ドメイン透かしを、SDXL等の拡散モデルを用いた再生成によって無効化します。さらに、InstagramやX（Twitter）で「Made with AI」ラベルのトリガーとなるC2PA、EXIF、XMPなどのメタデータも一括でストリップ可能です。再生成時の顔の崩れを防ぐ「Smart Face Protection」や、AI判定器を欺くための「Analog Humanizer（フィルム粒子付与）」など、実用的な機能を多数備えています。法的な規制状況や脅威モデルについての考察も含まれており、技術的・倫理的背景を理解した上で利用できる構成になっています。",
+    "topics": [
+      "AI Watermark Removal",
+      "SynthID",
+      "C2PA",
+      "Generative AI",
+      "Image Processing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - wiltodelta/remove-ai-watermarks: CLI and library for removing visible (Gemini) and invisible (SynthID, C2PA, EXIF) AI watermarks from images"
+  }
+}

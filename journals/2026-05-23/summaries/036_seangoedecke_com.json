@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:56:48.981400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4-Flashの登場により、LLMの「ステアリング」技術が再び脚光を浴びる理由",
+    "url": "https://www.seangoedecke.com/steering-vectors/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "高性能なローカルモデルDeepSeek-V4-Flashの登場を受け、モデルの内部活性化を直接操作して挙動を制御する「ステアリング」技術が、エンジニアにとって実用的な実験対象として再浮上しています。",
+    "summaryBody": "DeepSeek-V4-Flashのリリースと、それを用いたantirez氏のプロジェクト「DwarfStar 4」により、LLMの「ステアリング（Steering）」が再び注目を集めています。ステアリングとは、プロンプトによる指示ではなく、推論中のモデル内部の活性化状態（アクティベーション）を直接操作して、モデルの挙動やトーンを制御する手法です。\n\n本記事では、ステアリングの仕組み（特定の概念に対応する活性化パターンの差分を抽出し、ベクトルとして加算する手法など）を解説するとともに、なぜこれが今面白いのかを考察しています。これまでステアリングは、商用APIモデルではアクセス不能であり、ローカルモデルでは性能不足という「中産階級の罠」に陥っていましたが、DeepSeek-V4-Flashのような強力なオープンモデルの登場がその壁を壊しました。\n\n著者は、プロンプトエンジニアリングで代用可能なケースが多いことや「知能」そのものをステアリングで引き出すことの難しさを指摘しつつも、モデルの「拒否設定」の解除やデータ圧縮的な観点での実用性に期待を寄せています。今後6ヶ月で、オープンソースコミュニティによるステアリング機能のライブラリ化が進むかどうかが、この技術の真価を左右すると結論づけています。",
+    "topics": [
+      "DeepSeek-V4-Flash",
+      "LLM Steering",
+      "Interpretability",
+      "DwarfStar 4",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 78
+    },
+    "originalTitle": "DeepSeek-V4-Flash means LLM steering is interesting again"
+  }
+}

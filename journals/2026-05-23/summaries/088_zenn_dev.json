@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:31:50.136768+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "飲み会の帰り道、自宅サーバが落ちていたのでスマホからClaudeに任せ1時間で復旧させた話(Proxmox + Tailscale)",
+    "url": "https://zenn.dev/marvelousu/articles/claude-code-remote-incident",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "外出先からのスマホ操作のみで、TailscaleとClaude Codeを駆使して自宅サーバの複合的なネットワーク障害を1時間で特定・復旧させた技術ドキュメント。",
+    "summaryBody": "外出中に発生した自宅サーバ（Proxmox）の全停止に対し、スマホからTailscale経由で管理経路を確保し、常駐させていたClaude Code（AIエージェント）に障害の切り分けと復旧作業を代行させた実録です。\n\n### 障害の全容\n一見すると一つの大きな障害に見えましたが、実際には以下の独立した2つの問題が同時発生していました。\n1. **DHCPプールの枯渇**: `pbs-store`コンテナの`dhclient`が暴走し、セカンダリアドレスを大量に保持。LAN内の新規接続が不可能になり、IP衝突も発生。\n2. **ホストの再起動**: 別ホストのProxmoxがクラッシュし、tmuxセッションが消失。これによりClaudeの既存セッションがすべて切断。\n\n### 成功の要因\n- **Tailscaleによる管理経路**: ルータのDHCPが死んでLANに新規参加できない状況下でも、既存IPを保持していたノードへ外部からアクセス可能なオーバーレイネットワークが機能しました。\n- **AIエージェントの活用**: 画面の小さいスマホから複雑なコマンドを打つのではなく、人間が「Go/No-Go」の判断のみを行い、AIに調査と破壊的操作（ip flush, pct resize等）を実行させることで、迅速な復旧を実現しました。\n\n本記事は、冗長化よりも「障害ドメイン外に管理経路を1本持つこと」の重要性と、モバイル運用におけるAIエージェントの有用性を強調しています。",
+    "topics": [
+      "Proxmox",
+      "Tailscale",
+      "Claude Code",
+      "Troubleshooting",
+      "Homelab"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

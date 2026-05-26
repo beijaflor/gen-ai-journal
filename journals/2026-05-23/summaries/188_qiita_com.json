@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:24:47.644542+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Hooks を使ったら「確認待ち」が消えて開発速度が 2 倍になった話",
+    "url": "https://qiita.com/LemonCake/items/b60881f953dfa8c16d20",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks機能を活用してコマンド実行の自動承認やファイル編集後の自動整形を実装し、AI開発特有の確認待ち時間をゼロにするための具体的な設定例とスクリプトが紹介されています。",
+    "summaryBody": "Claude CodeのHooks（PreToolUse、PostToolUse、Stop）を利用して、AIエージェントとの対話で発生する「確認ダイアログ」の手間を削減し、開発フローを高速化する方法を解説しています。主な内容として、.claude/settings.jsonにフックを定義し、npm run testやlintなどの安全なコマンドの自動承認、ファイル保存後のPrettierによる自動整形、テスト失敗の自動フィードバック、作業完了時のSlack通知といった実践的な自動化パターンがBashスクリプトと共に提示されています。これにより、ユーザーが手動で許可を与える頻度が劇的に減り、AIがより自律的に動く環境を構築できるとしています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "生産性向上",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

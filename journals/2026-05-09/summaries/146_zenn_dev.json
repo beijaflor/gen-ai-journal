@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-01T09:43:07.237778+00:00",
+    "generatedAt": "2026-05-09T06:04:48.459125+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "人間が寝ている間にClaude CodeがPlaywrightのE2Eテストを直してPRを出す",
-    "url": "https://zenn.dev/yuden/articles/playwright-auto-heal-claude-code",
+    "title": "Agentic Graph RAG MCPのススメ — Graph RAGは「単発」ではなく「対話」になった",
+    "url": "https://zenn.dev/aircloset/articles/341dffee42f454",
     "language": "ja",
-    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "GitHub ActionsとClaude Codeを連携させ、夜間に失敗したPlaywrightのE2EテストをAIが自動で分析・修正し、翌朝までに修正案のDraft PRを作成するオートヒールの仕組みを紹介しています。",
-    "summaryBody": "この記事では、夜間の定期実行で失敗したE2EテストをClaude Codeを用いて自動修復（オートヒール）するワークフローの構築事例が解説されています。GitHub Actions上でテスト失敗を検知すると、Claude Code CLIが起動し、Playwrightのレポートと事前に定義された「QAナレッジベース（instructions）」を参照して修正案を作成、Draft PRを自動生成します。特に、rowspanを含む複雑なテーブル構造のXPath修正など、AIによる高度な推論が必要なケースでの成功例や、不用意なタイムアウト延長を防ぐための指示の与え方、セキュリティを考慮したツール実行制限（--allowedTools）の設定など、実践的な運用ノウハウが凝縮されています。プロダクトコードの参照ができない制約下でも、テストコードの設計（POM/Fixtures）を整えることで高い精度で修正が可能であることを示しています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがMCPを介してグラフ構造を多段的に探索する「Agentic Graph RAG」の設計思想と、社内での具体的な実装パターンについて解説した記事。",
+    "summaryBody": "従来のGraph RAGが計算コストや精度の制約から「単発検索・事前要約」を前提としていたのに対し、AIエージェントとMCP（Model Context Protocol）が普及した現代における新しい設計論を提唱しています。筆者は、AIが自律的にツールを呼び出すAgenticなループを前提に、人間が設計した決定的なグラフ構造を「地図」として渡し、AIがその都度必要な情報を取得するアプローチの有効性を説いています。具体的には、ツールの返却値をAI向けの「次の一手」のガイド（runbook）として設計し、探索・詳細取得・関係走査の3ステップに分けることで、ハルシネーションを抑えつつ複雑なドメイン知識の活用を可能にしています。airCloset社内でのDB GraphやBiz Graphなどの事例を通じ、ドメイン知識をグラフ化することの重要性を強調しています。",
     "topics": [
-      "Claude Code",
-      "Playwright",
-      "E2Eテスト",
-      "GitHub Actions",
-      "オートヒール"
+      "GraphRAG",
+      "MCP",
+      "AIエージェント",
+      "ナレッジグラフ",
+      "LLM"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
+      "depth": 5,
       "uniqueness": 5,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 92,
-      "annexPotential": 75,
-      "overall": 95
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
     }
   }
 }

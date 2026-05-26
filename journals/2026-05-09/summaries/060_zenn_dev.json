@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:12:00.443159+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex + Godotで一発生成、ポン出しすると、どのくらいゲームになるのか",
+    "url": "https://zenn.dev/geeknees/articles/ac061e452f8435",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CodexとGodotを組み合わせ、1時間の対話で3Dゲームの企画からWeb公開（Vercel）までの全工程を自動化する実証実験の結果報告。",
+    "summaryBody": "AI（Codex）とGodot 4.6.2を用いて、企画書から3DナラティブアクションゲームのPoC（試作）を一気に作成する検証が行われました。単なるコード生成に留まらず、プロジェクト構造の構築、ロジックテストの自動実行、日本語フォントの文字化け対策、そしてVercelへのWebエクスポート設定まで、開発周辺のワークフロー全体をAIが主導しています。\n\n成果物である『夜明けに、どこへ行く』は、プレイヤーの選択によって環境や結末が変化するゲームループを完備しており、約1時間で実動するレベルまで到達しました。一方で、ビジュアル面や操作の「気持ちよさ」といった感性的な領域には課題が残り、AIが骨格（ロジックとデプロイ）を、人間が肉付け（演出と調整）を担当する分業スタイルの有効性が示されました。約6.2億トークン（キャッシュ込）を消費した詳細なコスト計算も公開されています。",
+    "topics": [
+      "Godot",
+      "Codex",
+      "ゲーム開発",
+      "Vercel",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

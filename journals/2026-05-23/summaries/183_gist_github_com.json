@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:23:17.206205+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Geminiのシステムプロンプト",
+    "url": "https://gist.github.com/mkaramuk/44a44d83178e632ec0dd1f02186d822c",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Gistにて公開された、GoogleのAI「Gemini」の挙動やデータ活用の制限を規定する詳細なシステムプロンプトの記録です。",
+    "summaryBody": "このドキュメントは、Geminiがユーザーとの対話において遵守すべき一連の指示（システムプロンプト）をまとめたものです。プロンプト内には、共感的でありながら事実に基づいた回答を行うこと、数式の記述にはLaTeXを適切に使用すること、情報の階層化による可読性の確保といった基本的なガイドラインが記されています。特に注目すべきは、ユーザーデータを利用する際の厳格なステップで、パーソナライゼーションが価値を生むかどうかの判断、機密情報（人種、宗教、政治的見解、健康状態など）の利用制限、および「〜に基づくと」といった説明を省いて自然に回答に組み込むプロトコルが含まれています。また、自身の設定を漏洩させないためのガードレールや、特定の状況下で回答を止めるルールなども詳細に定義されています。",
+    "topics": [
+      "Gemini",
+      "System Prompt",
+      "AI倫理",
+      "プロンプトエンジニアリング",
+      "Google AI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Gemini System Prompt"
+  }
+}

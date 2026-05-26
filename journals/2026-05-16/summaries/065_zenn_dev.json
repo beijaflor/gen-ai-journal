@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-06T14:10:39.749889+00:00",
+    "generatedAt": "2026-05-11T04:51:32.738150+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "デジタル庁の生成AI基盤「源内」のOSSをAWS上で動かしてみた話",
-    "url": "https://zenn.dev/hosoyayusaku/articles/25ec9a4a6fa1c9",
+    "title": "AI時代の「作らない判断」— 知育時計アプリ開発で見えたAIとの役割分担",
+    "url": "https://zenn.dev/mrksye/articles/852ae582426665",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "デジタル庁が公開した生成AI基盤「源内」をAWS上に構築し、構成要素や動作の検証、セキュリティ設計の確認を行ったエンジニアによる実践レポートです。",
-    "summaryBody": "デジタル庁が2026年4月にOSS公開した生成AI基盤「源内（GenAI）」のWebインターフェース（genai-web）を、AWS環境にデプロイした詳細な検証記録です。AWS CDKを用いたデプロイ手順や、Node.jsのバージョン管理・PowerShellの実行ポリシーといった環境構築時の注意点が具体的に解説されています。技術的な深掘りとして、Amazon Bedrockによる対話・翻訳機能だけでなく、Amazon Transcribeを用いた文字起こし機能の実装コードを分析。S3でのユーザー間データ分離（Cognito identityIdの利用）やIAMポリシーによるセキュリティ設計、ライフサイクル設定の有無など、行政機関での導入に際して重要となる観点が整理されています。半日の検証で費用は約200〜300円と試算されており、自治体の技術担当者がベンダー提案を受ける前に自ら仕組みを把握するための有益なリファレンスとなっています。",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIにコード生成を任せる開発において、製品の目的を果たすために人間が担うべき「引き算の判断」と「抽象化の重要性」を実開発の事例から説く。",
+    "summaryBody": "子どもの時計教育用アプリ『Futatoki the Clock』の開発を通じた、AI時代の設計思想に関する考察です。Claude Code等のAIをフル活用しつつも、AIが得意とする「機能追加」の提案に対し、人間が「何を作らないか」を定義する重要性を強調しています。「予定」という言葉を「できごと」に抽象化して時制の矛盾を解消した例や、左右対称なモード構成をあえて崩す判断、メモリリーク調査におけるドメイン前提の共有など、AIとの協業における実戦的な知見が豊富に盛り込まれています。AIは提案を行い、人間は「責務」に基づいて決断を下すという、これからのエンジニアの役割を提示する内容です。",
     "topics": [
-      "源内",
-      "デジタル庁",
-      "AWS",
-      "生成AI",
-      "自治体DX"
+      "AI開発",
+      "プロダクト設計",
+      "UI/UX",
+      "Claude",
+      "SolidJS"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
       "uniqueness": 5,
-      "practical": 5,
-      "antiHype": 4,
-      "mainJournal": 92,
-      "annexPotential": 30,
-      "overall": 90
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
     }
   }
 }

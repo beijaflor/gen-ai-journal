@@ -1,57 +1,49 @@
 # Curated Main Journal Sources - 2026-05-23
 
-## Theme 1: Addy Osmani・dely・Codex・Google Skillsが具体化するハーネス／Agent Skills設計
+## Theme 1: Google I/O 2026のGemini 3.5・Gemini Spark・AI Modeが進めるエージェント型ウェブ
 
-- [ ] 057. https://zenn.dev/dely_jp/articles/5bc3e9cf62d776
-- [ ] 065. https://zenn.dev/mrksye/articles/852ae582426665
-- [ ] 077. https://cloud.google.com/blog/ja/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository
-- [ ] 154. https://acro-engineer.hatenablog.com/entry/2026/05/12/120000
-- [ ] 254. https://www.oreilly.com/radar/agent-harness-engineering/
+- [ ] 160. https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/
+- [ ] 122. https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/
+- [ ] 124. https://blog.google/products-and-platforms/products/search/search-io-2026/
+- [ ] 078. https://www.testingcatalog.com/google-prepares-gemini-spark-ai-agent-ahead-of-i-o-launch/
 
-## Theme 2: Agent View・Fast Mode・VS Code 1.120・Anthropic公式ガイド・cafleetが拡張するエージェント実行環境
+## Theme 2: BLS雇用統計・Pew調査・卒業式ブーイングに表れる米国のAI反発
 
-- [ ] 106. https://zenn.dev/himkt/articles/00c6049542170b
-- [ ] 162. https://claude.com/blog/agent-view-in-claude-code
-- [ ] 247. https://code.claude.com/docs/en/fast-mode
-- [ ] 252. https://code.visualstudio.com/updates/v1_120
-- [ ] 259. https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
+- [ ] 001. https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai
+- [ ] 049. https://www.theverge.com/ai-artificial-intelligence/644853/pew-gallup-data-americans-dont-trust-ai
+- [ ] 113. https://www.wsj.com/tech/ai/the-american-rebellion-against-ai-is-gaining-steam-94b72529
+- [ ] 121. https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac
 
-## Theme 3: antirez DS4・nowokay・jolaが示すローカルLLMの「実用域」到達
+## Theme 3: OpenAI IPO申請・Anthropic黒字化論争・従量課金移行が問うAI事業の収益性
 
-- [ ] 019. https://www.gizmodo.jp/2026/05/2026_local_llm_matome.html
-- [ ] 049. https://jola.dev/posts/running-local-models-on-m4
-- [ ] 196. https://nowokay.hatenablog.com/entry/2026/05/13/104214
-- [ ] 294. https://antirez.com/news/165
+- [ ] 181. https://www.cnbc.com/2026/05/20/openai-ipo-filing.html
+- [ ] 119. https://www.vincentschmalbach.com/anthropic-ipo-developers-should-be-worried-v2/
+- [ ] 225. https://www.wheresyoured.at/anthropics-profitability-swindle/
+- [ ] 120. https://www.wheresyoured.at/ai-is-too-expensive/
 
-## Theme 4: LayerX・グロービス・モノタロウ・aircloset・ubieが報告するClaude Code/エージェント本番運用
+## Theme 4: Claude Mythos・金融庁要請・PocketOS事件が突きつけるAIエージェントのセキュリティ脅威
 
-- [ ] 137. https://tech.layerx.co.jp/entry/2026/05/12/125409
-- [ ] 146. https://zenn.dev/aircloset/articles/d416342f46f16b
-- [ ] 199. https://tech-blog.monotaro.com/entry/2026/05/14/090000
-- [ ] 269. https://tech.layerx.co.jp/entry/2026/05/15/112547
-- [ ] 280. https://zenn.dev/globis/articles/94762dc8ec7914
+- [ ] 085. https://jbpress.ismedia.jp/articles/-/94870
+- [ ] 139. https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb
+- [ ] 244. https://www.fsa.go.jp/news/r7/sonota/20260522-5/20260522.html
+- [ ] 106. https://www.oreilly.com/radar/when-an-agent-deletes-the-production-database/
 
-## Theme 5: twada・404 Media・sshh.io・O'Reillyが論じるAI生産性の実像と認知負債
+## Theme 5: Karpathy・大規模コードベース実践・Agent Skills研究に見るハーネスエンジニアリング
 
-- [ ] 012. https://speakerdeck.com/twada/software-engineering-scrum-fest-niigata-2026-edition
-- [ ] 088. https://blog.sshh.io/p/how-ai-productivity-fails
-- [ ] 122. https://www.oreilly.com/radar/burnout-and-cognitive-debt/
-- [ ] 175. https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/
+- [ ] 024. https://newspicks.com/news/16607103/body/
+- [ ] 027. https://izanami.dev/post/af045ef8-eff9-4317-b05a-abce17e14f55
+- [ ] 243. https://github.com/multica-ai/andrej-karpathy-skills
+- [ ] 038. https://www.oreilly.com/radar/agent-skills-work-but-the-research-shows-most-teams-are-building-them-wrong/
 
-## Theme 6: James Shore・Bryan Cantrill・rust-langが指摘するAI生成コードの保守コスト爆発と「怠惰」の喪失
+## Theme 6: カウシェ・NOT A HOTEL・Progateに見るAI駆動開発の組織実装とレビュー設計
 
-- [ ] 087. https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs
-- [ ] 112. https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/
-- [ ] 144. https://zenn.dev/todesking/articles/fba4cc93baf0a9
-- [ ] 258. https://github.com/rust-lang/rust-forge/pull/1040
+- [ ] 131. https://zenn.dev/kauche/articles/20260518_ai_driven_development_kauche_farm_mini
+- [ ] 138. https://note.com/kajinari/n/n6494b35a4826
+- [ ] 137. https://levtech.jp/media/detail_860/
+- [ ] 162. https://developers.cyberagent.co.jp/blog/archives/63860/
 
-## Theme 7: 安野貴博・NIST・Metabase・GoogleがClaude Mythos前後の攻防構造とAI駆動スキャンの実例を示す
+## Theme 7: Martin Fowlerの定義と懐疑論・役割再定義が問うバイブ・コーディングの有効性
 
-- [ ] 008. https://www.nikkei.com/article/DGXZQOUA302TJ0Q6A430C2000000/
-- [ ] 102. https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html
-- [ ] 167. https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
-- [ ] 168. https://blog.himanshuanand.com/2026/05/the-90-day-disclosure-policy-is-dead/
-- [ ] 185. https://www.nikkei.com/article/DGXZQOUB130SI0T10C26A5000000/
-- [ ] 197. https://www.sbbit.jp/article/cont1/185369
-- [ ] 251. https://www.lac.co.jp/lacwatch/alert/20260514_004720.html
-- [ ] 262. https://www.metabase.com/blog/strip-mining-era-of-open-source-security
+- [ ] 155. https://martinfowler.com/bliki/VibeCoding.html
+- [ ] 179. https://jacobharr.is/personal/i-dont-vibe-code
+- [ ] 073. https://zenn.dev/hiromoo/articles/5f127b5459d490

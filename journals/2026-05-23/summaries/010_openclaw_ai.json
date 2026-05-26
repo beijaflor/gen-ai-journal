@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:23:22.768035+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawのセキュリティが向かう先 — 強力なAIエージェントを安全に運用するためのロードマップ",
+    "url": "https://openclaw.ai/blog/where-openclaw-security-is-heading",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIアシスタントOpenClawは、強力なシステム操作権限を安全に行使するため、ファイルシステム境界の定義、ネットワーク制御、プラグイン信頼評価、静的解析を組み合わせた多層的なセキュリティ戦略を展開しています。",
+    "summaryBody": "OpenClawは、ファイル操作やコマンド実行などの強力な権限を持つAIエージェントを安全に実行するためのロードマップを提示しました。主な柱は以下の5点です。\n\n1. **ファイルシステム境界 (`fs-safe`)**: パストラバーサルを防ぐための共通ライブラリを導入。また、ランタイム状態をファイルからSQLiteに移行することで、不要なファイルアクセス権限を削減します。\n2. **ネットワーク出口管理 (`Proxyline`)**: Node.jsレベルでのルーティング制御により、SSRF攻撃を防御し、プロキシによる一元的なポリシー適用を可能にします。\n3. **プラグインの信頼性 (ClawHub)**: ClawScanや静的解析、ソースの出所確認を組み合わせた信頼シグナルをユーザーに提供し、悪意あるプラグインのインストールを未然に防ぎます。\n4. **コマンド承認の最適化**: `Tree-sitter`を利用してシェルコマンドの内部構造を解析。難読化された破壊的なコマンドを検知しつつ、コンテキストに応じた承認フローで「プロンプト疲れ」による安易な許可を抑制します。\n5. **静的解析による再発防止**: 140以上のOpenGrepルールとCodeQLを併用し、過去の脆弱性（GHSA）と同様のパターンがCI段階で混入しないよう自動監視を強化しています。",
+    "topics": [
+      "AI Security",
+      "Agentic Systems",
+      "Software Supply Chain",
+      "Application Security",
+      "OpenClaw"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Where OpenClaw Security Is Heading — OpenClaw Blog"
+  }
+}

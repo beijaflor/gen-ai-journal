@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-15T03:21:42.656965+00:00",
+    "generatedAt": "2026-05-23T03:16:18.073244+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "開発者がコンテキスト管理を学ぶべき理由：AI駆動型開発における不可欠なスキル",
-    "url": "https://www.oreilly.com/radar/why-doesnt-anyone-teach-developers-about-context-management/",
+    "title": "AIの最新動向：エージェント・ハーネスの再考と計算資源の軍拡競争",
+    "url": "https://www.oreilly.com/radar/this-week-in-ai-rethinking-the-agent-harness/",
     "language": "en",
-    "contentType": "🎯 Opinion & Commentary (意見・論評)",
-    "oneSentenceSummary": "AI開発における成功の鍵は、モデルの有限なコンテキストを過信せず、決定事項やその背景を外部ファイルに記録・管理する「コンテキスト管理」の技術にある。",
-    "summaryBody": "AI駆動型開発において、多くの開発者がプロンプトエンジニアリングやモデル選択に注力する一方で、最も重要とも言える「コンテキスト管理」が軽視されています。本記事では、AIモデルが持つ「記憶（コンテキスト）」の有限性と、その管理が開発効率に与える影響を論じています。\n\n### コンテキスト管理の重要性\nAIセッションが長くなると、モデルはコンテキストの「圧縮」を行い、重要な詳細を忘れてしまいます。これにより、不正確な回答やバグの混入を招きます。著者は、セッションを単にリセットするのではなく、プロジェクトの背景や決定事項を `DEVELOPMENT_CONTEXT.md` などの外部ファイルに永続化することを推奨しています。\n\n### 「なぜ」を記録することの意義\n特に重要なのは、設計判断の「理由（Why）」を記録することです。理由が記されていないと、後のセッションでAIが「より綺麗なコード」を目指して、意図的な設計判断を「修正（デグレード）」してしまう恐れがあります。\n\n### オーケストレーターとしてのAI活用\nAIを単なる回答生成器ではなく、マルチステップのワークフローを調整する「オーケストレーター」として捉えるべきです。コンテキストをファイルとして外部化することで、AIは以前のセッションの結果を引き継ぎ、より大規模で複雑なタスクを、一貫性を保ちながら遂行可能になります。",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIエージェントの性能は、モデルそのものの選択よりも、それを制御・運用する「ハーネス（枠組み）」の設計が重要になるフェーズに移行している。",
+    "summaryBody": "O'Reillyのシリーズ「This Week in AI」における議論をまとめた本記事では、AI開発の関心がモデル単体の性能から、実用的な「エージェント・ハーネス」へとシフトしている現状を解説しています。主なトピックとして、数十年前の脆弱性を発見するほど高度化したAIによるセキュリティ問題、マンハッタンの2倍の面積に及ぶ巨大データセンター計画（Stratosプロジェクト）などのインフラ投資の加速、そして「モデルの性能差よりもハーネスの設計が成果を左右する」という実務的知見が共有されました。特に、ドメインエキスパートが自然言語でエージェントの挙動を直接管理・修正できる環境の重要性が強調されており、エンジニア以外がAIを高度に制御する未来が示唆されています。",
     "topics": [
-      "AI-driven development",
-      "Context Management",
-      "LLM",
-      "Software Engineering",
-      "Prompt Engineering"
+      "AI Agents",
+      "LLM Infrastructure",
+      "AI Security",
+      "Prompt Engineering",
+      "Data Centers"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 5,
+      "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
       "mainJournal": 90,
-      "annexPotential": 15,
+      "annexPotential": 10,
       "overall": 92
     },
-    "originalTitle": "Why Doesn’t Anyone Teach Developers About Context Management?"
+    "originalTitle": "This Week in AI: Rethinking the Agent Harness"
   }
 }

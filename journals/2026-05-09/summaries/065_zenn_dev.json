@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-06T14:10:39.749889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デジタル庁の生成AI基盤「源内」のOSSをAWS上で動かしてみた話",
+    "url": "https://zenn.dev/hosoyayusaku/articles/25ec9a4a6fa1c9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "デジタル庁が公開した生成AI基盤「源内」をAWS上に構築し、構成要素や動作の検証、セキュリティ設計の確認を行ったエンジニアによる実践レポートです。",
+    "summaryBody": "デジタル庁が2026年4月にOSS公開した生成AI基盤「源内（GenAI）」のWebインターフェース（genai-web）を、AWS環境にデプロイした詳細な検証記録です。AWS CDKを用いたデプロイ手順や、Node.jsのバージョン管理・PowerShellの実行ポリシーといった環境構築時の注意点が具体的に解説されています。技術的な深掘りとして、Amazon Bedrockによる対話・翻訳機能だけでなく、Amazon Transcribeを用いた文字起こし機能の実装コードを分析。S3でのユーザー間データ分離（Cognito identityIdの利用）やIAMポリシーによるセキュリティ設計、ライフサイクル設定の有無など、行政機関での導入に際して重要となる観点が整理されています。半日の検証で費用は約200〜300円と試算されており、自治体の技術担当者がベンダー提案を受ける前に自ら仕組みを把握するための有益なリファレンスとなっています。",
+    "topics": [
+      "源内",
+      "デジタル庁",
+      "AWS",
+      "生成AI",
+      "自治体DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

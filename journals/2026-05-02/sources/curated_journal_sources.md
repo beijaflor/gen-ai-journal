@@ -1,48 +1,50 @@
 # Curated Main Journal Sources - 2026-05-02
 
-24 articles across 7 themes. Theme titles and article ordering follow the approved editorial plan (`workdesk/editorial_plan_2026_05_02.md`).
+## Theme 1: GitHub Copilot従量課金移行、Tokenmaxxing、Uber 4ヶ月で予算超過——AI経済の構造転換
 
-## Theme 1: Claude Design発表とデザイン業界の再編 — Figma株7%下落・DESIGN.md・Agentic UX
+- [ ] 054. https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/
+- [ ] 169. https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/
+- [ ] 170. https://www.wheresyoured.at/ais-economics-dont-make-sense/
 
-- [ ] 055. https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/
-- [ ] 110. https://samhenri.gold/blog/20260418-claude-design/
-- [ ] 015. https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-design-md/
-- [ ] 044. https://goodpatch.com/blog/2026-04-agentic-ux
+## Theme 2: Microsoft×OpenAI独占契約解消、AWS Bedrock Managed Agents提供開始
 
-## Theme 2: Claude Mythos の現実と虚像 — Firefox 271件修正・システムカード批判・NSA運用・GPT-5.5追従
+- [ ] 098. https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/
+- [ ] 060. https://news.ycombinator.com/item?id=47921248
+- [ ] 061. https://openai.com/index/next-phase-of-microsoft-partnership/
 
-- [ ] 017. https://blog.mozilla.org/en/privacy-security/ai-security-zero-day-vulnerabilities/
-- [ ] 151. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/
-- [ ] 143. https://news.ycombinator.com/item?id=47832222
-- [ ] 182. https://xbow.com/blog/mythos-like-hacking-open-to-all
+## Theme 3: DeepSeek-V4・GPT-5.5・Mistral Medium 3.5——基盤モデル新世代の同時リリースとサイバー能力評価
 
-## Theme 3: GPT-5.5発表とOpenAI連発リリース — Terminal-Bench 2.0で82.7%・Codex Chronicle・Workspace Agents
+- [ ] 158. https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- [ ] 033. https://www.itmedia.co.jp/aiplus/articles/2604/24/news067.html
+- [ ] 259. https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities
+- [ ] 221. https://voluntas.ghost.io/opencode-go/
 
-- [ ] 075. https://openai.com/index/introducing-gpt-5-5/
-- [ ] 028. https://developers.openai.com/codex/memories/chronicle
-- [ ] 077. https://openai.com/index/introducing-workspace-agents-in-chatgpt/
+## Theme 4: ハーネスエンジニアリングの実践——Cursor運用、AGENTS.md、Karpathy「Agent Engineering」、Codex Symphony仕様
 
-## Theme 4: Amazon $25B拡張とAWS-Anthropic 10年提携 — Bedrock AgentCore・Claude Cowork・Project Rainier
+- [ ] 272. https://cursor.com/ja/blog/continually-improving-agent-harness
+- [ ] 097. https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files
+- [ ] 247. https://qiita.com/yuji-arakawa/items/9e7235e708e2b33e58e6
+- [ ] 103. https://news.ycombinator.com/item?id=47924920
 
-- [ ] 139. https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai
-- [ ] 006. https://aws.amazon.com/jp/blogs/machine-learning/get-to-your-first-working-agent-in-minutes-announcing-new-features-in-amazon-bedrock-agentcore/
-- [ ] 005. https://aws.amazon.com/jp/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/
+## Theme 5: Cursor 9秒で本番DB削除事件、Codexサンドボックス回避、Shai-Hulud npm侵害——AIコーディングのセキュリティ実害
 
-## Theme 5: Claude Code Pro削除騒動とCopilot個人プラン制限 — エージェント時代のサブスク経済
+- [ ] 116. https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue
+- [ ] 223. https://blog.railway.com/p/your-ai-wants-to-nuke-your-database
+- [ ] 143. https://qiita.com/harupython/items/ed256553d10578cfec2a
+- [ ] 194. https://www.stepsecurity.io/blog/a-mini-shai-hulud-has-appeared
 
-- [ ] 181. https://www.wheresyoured.at/news-anthropic-removes-pro-cc/
-- [ ] 038. https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/
-- [ ] 062. https://news.ycombinator.com/item?id=47854477
+## Theme 6: AIコーディング運用の批判的検討——Forbes/HN論争、コード忘却、認知的負債、AIコードレビュー精度調査
 
-## Theme 6: オープンウェイト勢のフロンティア追従 — Qwen3.6-27B・Kimi K2.6・LLM-as-a-Verifier 86.4%
+- [ ] 095. https://news.ycombinator.com/item?id=47930738
+- [ ] 086. https://reggieescobar.com/blog/how-i-forgot-to-code
+- [ ] 189. https://www.oreilly.com/radar/dont-automate-your-moat-matching-ai-autonomy-to-risk-and-competitive-stakes/
+- [ ] 105. https://ai.acsim.app/articles/introducing-self-merge-policy
 
-- [ ] 052. https://llm-as-a-verifier.notion.site/
-- [ ] 108. https://qwen.ai/blog?id=qwen3.6-27b
-- [ ] 164. https://www.kimi.com/blog/kimi-k2-6
+## Theme 7: AI研究・科学応用の最新成果——半導体設計、数学、音声AI、バイオインフォマティクス
 
-## Theme 7: AGENTS.md/Skills/APMの標準化 — Pepabo CLAUDE.md 83%削減・Android CLI 70%削減・Microsoft APM
+- [ ] 274. https://arxiv.org/abs/2603.08716
+- [ ] 124. https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/
+- [ ] 273. https://pub.sakana.ai/kame/
+- [ ] 262. https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench
 
-- [ ] 200. https://zenn.dev/pepabo/articles/claude-code-rules-skills-split
-- [ ] 003. https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html
-- [ ] 105. https://qiita.com/TKfumi/items/0751732005097816296c
-- [ ] 197. https://zenn.dev/mizchi/articles/empirical-prompt-tuning
+<!-- Total selected: 26 articles -->

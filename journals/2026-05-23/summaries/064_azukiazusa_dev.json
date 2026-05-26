@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:25:23.725169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hermes Agent と Grok の統合を試してみた",
+    "url": "https://azukiazusa.dev/blog/hermes-agent-grok-integration/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Hermes Agent v0.14.0で導入されたxAIのGrokモデル統合により、OAuth認証を用いてXの投稿検索や画像生成をエージェント経由で実行する方法を解説しています。",
+    "summaryBody": "Nous Researchが開発する自律型AIエージェント「Hermes Agent」のバージョン0.14.0にて、xAIのGrokモデルとの本格的な統合が実現しました。この記事では、OAuth認証を使用したセットアップ手順と、実務での活用例が紹介されています。最大の特徴は、SuperGrokサブスクリプションを保有していれば、APIキーを個別に発行することなく追加課金なしでGrokの各機能（x_search, image_generate等）を利用できる点です。具体的には、CLIからのインストール、ツールの有効化、そしてX（旧Twitter）上のリアルタイムなトレンド情報の検索や、Grok Imagineを用いた画像生成のワークフローがスクリーンショット付きで示されています。AIエージェントにSNSの最新情報を直接検索・解析させることで、動的な情報取得能力を大幅に拡張できる可能性を提示しています。",
+    "topics": [
+      "Hermes Agent",
+      "Grok",
+      "xAI",
+      "AIエージェント",
+      "X (Twitter)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:19:43.281260+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "既存の評価（Eval）は破綻する：次世代モデルの質的転換を予測できないリスク",
+    "url": "https://wanglun1996.github.io/blog/your-evals-will-break.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "現在のLLM評価手法は既存能力の測定に終始しており、次世代モデルで発生する質的な能力転換や新たなリスクを予測・検知できない「評価のボトルネック」を指摘している。",
+    "summaryBody": "LLM開発において評価（Eval）はトレーニングの目的関数を規定する核心的な要素だが、現在のベンチマークは「既存モデルの延長線上の進化」を前提としており、劇的な質的変化を伴う「相転移」を捉えられない。筆者は、物理学における「秩序パラメータ」の概念を導入し、能力の質的転換を事前に予測する指標の必要性を強調している。例えば「戦略的な情報隠蔽」のような新しい失敗モードは、事実の正確性を測る従来のベンチマークでは検知できない。この課題に対し、メカニスティック・インタプリタビリティを用いた進捗指標の特定や、モデルが自律的に評価項目を進化させる「自己進化型評価システム」への投資を提言。評価の刷新こそが、次なる能力向上と安全なスケーリングを実現するための鍵であると主張している。",
+    "topics": [
+      "LLM評価",
+      "創発的能力",
+      "メカニスティック・インタプリタビリティ",
+      "AI安全性",
+      "相転移"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 88
+    },
+    "originalTitle": "Your Evals Will Break and You Won't See It Coming"
+  }
+}

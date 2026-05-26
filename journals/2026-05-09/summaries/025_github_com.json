@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-01T06:48:09.661048+00:00",
+    "generatedAt": "2026-05-06T14:21:11.885832+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "YourMemory: エビングハウスの忘却曲線を採用したAIエージェント向け永続メモリ",
-    "url": "https://github.com/sachitrafa/YourMemory",
+    "title": "リアルタイムVoice AIエージェント構築のための包括的リソースガイド",
+    "url": "https://github.com/mahimairaja/voiceai",
     "language": "en",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "エビングハウスの忘却曲線に基づいた忘却・強化メカニズムを備え、ハイブリッド検索とグラフ構造によって高い想起率を実現するAIエージェント向け永続メモリ層。",
-    "summaryBody": "YourMemoryは、人間の記憶の仕組みを模倣したAIエージェント用の永続メモリソリューションです。エビングハウスの忘却曲線を採用しており、重要な情報は残り、不要な情報は時間の経過とともに自動的に削除（プルーニング）される仕組みを備えています。技術的にはDuckDB（ベクトルDB）、NetworkX（グラフ）、spaCy、sentence-transformersを使用しており、外部インフラを必要とせずローカルで動作します。また、Model Context Protocol (MCP) をサポートしているため、Claude DesktopやCursor、Clineといった主要なAIツールに簡単に統合可能です。検索はVector + BM25に加えて、セマンティックな関係性を辿るグラフ探索を組み合わせたハイブリッド方式を採用しており、既存のMem0やZep Cloudと比較して高い想起率（Recall）を達成しています。開発者は、重要度やコンテキストパスを指定してメモリを保存でき、エージェントが過去のセッションで学んだユーザーの好みや技術スタックを自動的に引き出すことが可能になります。",
+    "oneSentenceSummary": "リアルタイムVoice AIエージェントの開発に必要なSTT、TTS、LLM、WebRTC、電話連携などの技術スタックと学習パスを体系的にまとめた開発者向けリソース集。",
+    "summaryBody": "このリポジトリは、リアルタイムVoice AIエージェントを構築するための包括的な学習パスとツールキットを提供します。STT（音声認識）、LLM（言語モデル）、TTS（音声合成）を組み合わせたストリーミングパイプラインの構築、VAD（音声活動検知）による発話制御、WebRTCやSIPを用いた通信プロトコル、さらにプロダクション導入時の評価・テスト手法や倫理・規制（FCCやEU AI法）までを網羅しています。LiveKitやPipecatといった主要なオープンソースフレームワークの比較や、レイテンシを最小化するための具体的な手法が詳しく解説されており、開発者が最初のコールから実用的なテレフォニー連携までを段階的に学べるよう設計されています。2025年時点の最新技術動向を反映した極めて実用性の高いリソースです。",
     "topics": [
-      "AI Memory",
-      "Model Context Protocol (MCP)",
-      "Ebbinghaus Curve",
-      "Vector Database",
-      "AI Agents"
+      "Voice AI",
+      "LLM",
+      "Real-time AI",
+      "WebRTC",
+      "LiveKit"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
-      "uniqueness": 5,
+      "depth": 5,
+      "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 60,
-      "overall": 90
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
     },
-    "originalTitle": "YourMemory: Agentic AI memory with Ebbinghaus forgetting curve decay. +16pp better recall than Mem0 on LoCoMo."
+    "originalTitle": "GitHub - mahimairaja/voiceai: Set of 📝 with 🔗 to help those building Voice AI agents 🎙️🤖"
   }
 }

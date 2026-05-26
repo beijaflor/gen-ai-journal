@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:24:32.871681+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexモバイルからUbuntuのCodex Appを操作する",
+    "url": "https://zenn.dev/robustonian/articles/codex_mobile_connect_to_ubuntu",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Ubuntu上のCodex AppをスマホのCodexモバイルから遠隔操作するための、リポジトリ導入と設定ファイル編集の手順を解説したガイド。",
+    "summaryBody": "本記事は、Ubuntu環境（物理・仮想マシン）のCodex Appをモバイル端末からリモート操作するためのセットアップ手順をまとめた備忘録です。導入の前提としてChatGPTでの多要素認証（MFA）が必要であることや、GitHubのリポジトリ（codex-desktop-linux）を使用した具体的なインストールコマンド、および「~/.codex/config.toml」を編集して「remote_control = true」を設定する方法をステップバイステップで解説しています。これにより、Linuxデスクトップ上のCodexの履歴確認や操作をスマートフォンから行えるようになり、開発効率の向上が図れます。",
+    "topics": [
+      "Ubuntu",
+      "Codex",
+      "Linux",
+      "リモート制御",
+      "ChatGPT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 20,
+      "overall": 82
+    }
+  }
+}

@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-06T14:10:20.912284+00:00",
+    "generatedAt": "2026-05-11T04:51:18.041570+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "漫画のネームを 3 大 AI に競作させたい — コーディング CLI を並列で走らせる nemu-kaigi の実装事例",
-    "url": "https://zenn.dev/yatmita/articles/nemu-kaigi-llm-content-voting",
+    "title": "LLMから呼ばれるアプリをMCPファーストで設計するときの3つの原則",
+    "url": "https://zenn.dev/ykenkou001/articles/mcp-first-regulatory-saas",
     "language": "ja",
-    "contentType": "🔬 Research & Analysis (研究・分析)",
-    "oneSentenceSummary": "Anthropic、OpenAI、Googleの3大AIベンダーのコーディングCLIを並列実行し、相互レビューと匿名投票を通じて高品質な漫画ネームを生成するシステム「nemu-kaigi」の技術詳報。",
-    "summaryBody": "本記事は、コーディング向けのLLMエージェント（Claude Code, Codex, Gemini CLI）を漫画のネーム制作に転用した自作システム「nemu-kaigi」の実装事例を紹介している。主な特徴は、正解のないクリエイティブなタスクに対し、複数の異なるAIモデルと実行環境（ハーネス）を並列に走らせ、合議制で品質を高める点にある。\n\nシステムの核となるのは、自作のループ実行CLI「ralph-loop」であり、定義された完成品質（YAML構造、文字数制限、一貫性チェック等）を満たすまでLLMにリトライを繰り返させる。各ステップでは「propose（提案）」「review（比較レビュー）」「improve（改善）」「vote（匿名投票）」の4段階のパイプラインが回り、他モデルの優れたアイデアを吸収（クロスポリネーション）させる仕組みが構築されている。\n\nまた、長編制作における伏線管理のために、全AIが参照する「グランドデザイン文書」と「自由創作可能な伏線リスト」を導入。これにより、単話の品質だけでなく、シリーズ全体の整合性を外部メモリとして保持する手法を提案している。最終的に「外側（制御）は薄く、内側（ReActエージェント）は厚く」という設計思想が、現代のLLMエコシステムを最大限に活用する鍵であると結論づけている。",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMからのツール呼び出しを前提とした「MCPファースト」な設計により、判断ロジックの集約と説明責任の強化を実現する3つのアーキテクチャ原則を解説しています。",
+    "summaryBody": "従来の「Web画面から作成し、APIを後付けする」設計順序を逆転させ、LLMから呼ばれることを最初の制約に置く「MCP（Model Context Protocol）ファースト」な設計手法を提案しています。特に法対応やコンプライアンスなど説明責任が重い業務アプリにおいて、以下の3原則を提唱しています。 \n1. **入口層は薄く保つ**: 判断ロジックを画面やAPI層ではなく「中核ロジック」に集約し、MCP、REST、Webの3つを等距離の薄い変換器として実装する。\n2. **出力形式は最初から多重化する**: 画面表示だけでなく、PPT、Word、Excel、Markdownなどの「持ち帰り資料」を、成果物中立なデータ構造から生成可能にする。\n3. **出典・根拠・代替案を返り値に含める**: LLMがユーザーに根拠を説明できるよう、スコアだけでなく、統計元データ、不採用理由、前提条件を構造化して返却する。\nこれにより、LLMエージェントが推測ではなく事実に基づいて回答できる、腐りにくいアーキテクチャを構築できます。",
     "topics": [
-      "LLMエージェント",
-      "Claude Code",
-      "漫画制作",
-      "プロンプトエンジニアリング",
-      "AI駆動開発"
+      "MCP (Model Context Protocol)",
+      "アーキテクチャ設計",
+      "LLM",
+      "クリーンアーキテクチャ",
+      "AIエージェント"
     ],
     "scores": {
       "signal": 5,
-      "depth": 5,
+      "depth": 4,
       "uniqueness": 5,
-      "practical": 4,
+      "practical": 5,
       "antiHype": 4,
-      "mainJournal": 95,
+      "mainJournal": 92,
       "annexPotential": 35,
-      "overall": 94
+      "overall": 95
     }
   }
 }

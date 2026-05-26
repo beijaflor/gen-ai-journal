@@ -1,31 +1,31 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-11T05:03:04.000954+00:00",
+    "generatedAt": "2026-05-18T00:40:25.606252+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "AIエージェント時代のDB設計をTursoが書き換えに来ている話",
-    "url": "https://zenn.dev/emuni/articles/6eef9f97f564b4",
+    "title": "AIに同じ質問を3経路で投げたら、入力トークンが約1,200倍違った — Claudeの「プログラム利用専用クレジット」と構造化APIの関係",
+    "url": "https://zenn.dev/edinetdb/articles/ai-cost-input-tokens-structured-db",
     "language": "ja",
-    "contentType": "🎯 Opinion & Commentary (意見・論評)",
-    "oneSentenceSummary": "Tursoが有料プランでのDB数制限を撤廃したことを契機に、SQLiteの特性を活かして「DBを変数のように扱う」新しい設計思想とその技術的背景を解説する記事。",
-    "summaryBody": "Tursoが有料プランにおける「アクティブなデータベース数」の制限を撤廃しました。この記事では、この変更が単なる料金改定ではなく、データベース設計のメンタルモデルを根本から変えるものであると論じています。\n\n従来のPostgreSQL等のプロセス型DBでは、リソースコストの観点から「テナントごとにDBを分ける」ことは非現実的であり、共有テーブルや行レベルセキュリティ（RLS）による論理分離が主流でした。しかし、SQLiteは「DB＝ファイル」という特性を持ち、物理的な分離を極めて安価に行えます。TursoはSQLiteをRustで書き直し、MVCC（多版型同時実行制御）を導入することで、SQLite最大の弱点であった書き込みロックの制約を克服しようとしています。\n\nこの技術革新により、「AIエージェントのセッションごとに独立したDBを割り当てる」といった、これまでDBを貴重なリソースと見なしていた制約下では不可能だった設計が可能になります。「DBを変数のように気軽に作る」世界観は、特にコンテキストの厳密な分離が求められるAI時代において、アプリケーション開発の自由度を大きく広げる可能性を秘めています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude料金改定に伴うコスト増への対策として、有価証券報告書のPDF全文を読ませるのではなく、構造化データ（EDINET DB）とMCPを活用することで入力トークンを約1,200分の1に削減し、精度を向上させる手法を解説している。",
+    "summaryBody": "Anthropicが2026年6月から導入するClaudeの「プログラム利用専用クレジット」により、従来のサブスクリプションによるAPI利用の裁定機会が失われ、AI利用料は実質的な従量課金へと移行する。本記事では、ソフトバンクグループの財務データを取得する事例を用い、「Web検索」「PDF全文添付」「構造化API（MCP）」の3つの経路で入力トークン量と精度を比較。PDF全文（約30万トークン）に対し、EDINET DBのMCP経由では必要な項目のみを抽出するため約250トークン（1/1200）で済み、劇的なコスト削減が可能になる。また、構造化データを利用することで、PDFのレイアウトに起因する桁の誤読や単位の取り違えといったハルシネーションも防げるため、AI運用の最適化において「何を読ませるか」という入力側の設計が最重要課題となることを説いている。",
     "topics": [
-      "Turso",
-      "SQLite",
-      "データベース設計",
-      "マルチテナント",
-      "AIエージェント"
+      "Claude",
+      "MCP",
+      "EDINET DB",
+      "トークン削減",
+      "コスト最適化"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
+      "depth": 5,
       "uniqueness": 5,
       "practical": 4,
       "antiHype": 4,
-      "mainJournal": 90,
-      "annexPotential": 30,
+      "mainJournal": 95,
+      "annexPotential": 15,
       "overall": 92
     }
   }

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:40:52.784796+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Tursoがバグバウンティプログラムの廃止を決定：AI生成の「スロップ」による負荷増大が原因",
+    "url": "https://turso.tech/blog/the-wonders-of-ai",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "データベーススタートアップのTursoは、LLMによる低品質なAI生成報告（スロップ）の急増がメンテナーの負担となったため、1,000ドルの報奨金プログラムを廃止した。",
+    "summaryBody": "Tursoは、SQLiteの信頼性を超える製品を目指し、データ破損バグの報告に対して1,000ドルを支払うバグバウンティプログラムを約1年間実施してきました。当初はこのプログラムを通じて、シミュレーターの盲点を突く高度なバグ報告が得られるなど、非常に良好な成果を上げていました。しかし、LLMの普及に伴い、AIが生成した無意味なバグ報告やプルリクエスト（スロップ）が大量に送られるようになり、事態が一変しました。手動でバイナリを書き換えて「データが破損した」と主張するものや、SQLデータベースでSQLが実行できることを脆弱性と称するものなど、的外れな報告の精査に膨大な時間を奪われる事態に陥っています。Tursoはオープンソースとしての門戸を維持しつつ、メンテナーの負担を軽減するため、AIに悪用される金銭的インセンティブを排除することを決断しました。",
+    "topics": [
+      "Bug Bounty",
+      "AI Slop",
+      "Open Source Maintenance",
+      "Database Reliability",
+      "LLM Issues"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Wonders of AI: We Are Retiring Our Bug Bounty Program"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:21:11.018546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1時間で開発を完了する。Claude Code の Skill で社内プロジェクトを仕組み化した話",
+    "url": "https://zenn.dev/sonicgarden/articles/e5fd7f54433d3d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSkill機能を活用し、会議後の1時間でタスク選定から並列実装、PR作成までを自動化する開発ワークフローの構築事例。",
+    "summaryBody": "株式会社ソニックガーデンによる、AIエージェント「Claude Code」を実務に深く組み込んだ事例紹介です。後回しになりがちな社内プロジェクトを「仕組み」で解決するため、定例会議後のわずかな時間で実装を完了させるフローを構築しています。\n\n主な技術的構成要素は以下の3点です：\n1. **Skillによる起点作成**: Zoomの要約テキストからタスクを特定し、プロジェクト管理ツールと連携して実装計画を立てるエンドポイントを構築。\n2. **Rulesによる文脈定義**: プロジェクトIDや運用ルールを`.claude/rules`に定義し、AIが常に適切なコンテキストで動くよう制御。\n3. **Subagentsによる並列実装**: Git worktreeとサブエージェント機能を組み合わせ、複数のタスクを並列で「実装・テスト作成・PR作成・通知」まで一気通貫で自動実行します。\n\n単なるコード生成にとどまらず、社内の独自プロセスに沿った「動く状態のもの」を自動で作り出すことで、人間がレビューや設計の議論といった「考えること」に集中できる環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "生産性向上",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:54:26.582781+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMCap - LLM API呼び出しに対する厳格なドルベースの利用制限",
+    "url": "https://www.llmcap.io/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLM APIの利用額が設定した上限に達した際、通知だけでなくリクエストを即座に遮断することで、予期せぬ高額請求を物理的に防ぐプロキシサービス。",
+    "summaryBody": "LLMCapは、Anthropic、OpenAI、Google Gemini、Mistral、Cohereといった主要なLLM APIプロバイダーに対応した、コスト管理のためのプロキシサービスです。最大の特徴は、予算上限に達した際に「通知」するのではなく、プロバイダーへのリクエストを転送する前にHTTP 429エラーを返して「遮断」する点にあります。SDKの`base_url`を一行書き換えるだけで導入可能で、追加レイテンシは35ms未満と極めて低く抑えられています。APIキーをサーバーに保存せずリクエストごとにパススルーする設計や、VS Code拡張、CLI、デスクトップアプリを介したリアルタイムの支出監視機能など、開発者が安心してAPIを利用するためのツールが揃っています。",
+    "topics": [
+      "LLMコスト管理",
+      "APIプロキシ",
+      "FinOps",
+      "セキュリティ",
+      "開発者ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "LLMCap — Hard Dollar Caps on LLM API Calls"
+  }
+}

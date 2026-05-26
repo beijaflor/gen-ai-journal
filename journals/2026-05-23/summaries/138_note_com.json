@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:59:42.696612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを組織で安全に使うために NOT A HOTELで実施している４つのレイヤー",
+    "url": "https://note.com/kajinari/n/n6494b35a4826",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NOT A HOTELがClaude Code等のAIツールを組織導入する際、シャドーIT防止、ガードレール設計、コスト最適化、組織展開の4つのレイヤーで構築した安全な運用体制の全容。",
+    "summaryBody": "NOT A HOTELにおけるClaude Codeを含むAnthropic製品の組織導入事例。個人利用から全社展開へ広げる際に生じる「シャドーIT」「データ流出」「コスト爆発」「形骸化」の4大リスクを、技術と運用の両面から解決している。具体策として、1. OktaによるSSO必須化とドメインクレームによる公式テナントへの集約、2. `managed-settings.json`をMDM（Jamf/Intune）経由で配布し、間接プロンプトインジェクションや破壊的操作を構造的に防ぐガードレール、3. 1Password CLIを活用したAPIキーの秘匿化、4. OpenTelemetryによる利用量の可視化と従量課金/シート課金の使い分け、5. 段階的なオンボーディングと理解度テストの実施が挙げられている。特に、Managed SettingsをGitHub Actionsでplist変換しMDM配信する仕組みや、1Password CLIによる平文キーの排除など、情シス視点での高度な自動化とセキュリティ実装が詳述されている。",
+    "topics": [
+      "Claude Code",
+      "Enterprise Security",
+      "Okta",
+      "Jamf",
+      "Corp IT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 96
+    }
+  }
+}

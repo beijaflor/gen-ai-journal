@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:54:08.885244+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を大規模コードベースで使うベストプラクティス",
+    "url": "https://izanami.dev/post/af045ef8-eff9-4317-b05a-abce17e14f55",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの性能を左右するのはモデルの性能よりもCLAUDE.mdやフックといった「ハーネス」の整備であり、大規模コードベースでは階層的な管理と自己改善ループが鍵となります。",
+    "summaryBody": "Claude Codeを大規模なコードベースで効果的に運用するための公式指針に基づいた解説記事です。主なポイントは以下の通りです。\n\n### 「ハーネス」による精度向上\nClaude CodeはRAG（検索拡張生成）によるインデックス保持を行わず、ライブのファイルシステムを直接探索します。そのため、モデルの周辺環境（ハーネス）であるCLAUDE.md、hooks、skills、plugins、MCPの整備が、単なるモデルの性能以上に重要となります。\n\n### 実践的な運用テクニック\n1. **CLAUDE.mdの階層化**: ルートには全体像や重要な注意点のみを記載し、詳細な規約はサブディレクトリごとのCLAUDE.mdに分散させることで、トークン消費を抑えつつ精度を維持します。\n2. **起動位置の最適化**: ルートではなく作業対象のサブディレクトリで起動することで、探索範囲を絞り込みます。Claudeは親ディレクトリのCLAUDE.mdを自動で読み込むため文脈は維持されます。\n3. **自己改善の仕組み**: `stop hook`を利用して、セッションでの学びをCLAUDE.mdに反映させる案を出させることで、設定を自動的に成長させます。\n4. **定期的な棚卸し**: モデルの進化により過去の制約（「1ファイルずつ編集して」等）が不要になるため、3〜6ヶ月おきに設定を刷新することが推奨されます。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "CLAUDE.md",
+      "エンジニアリング",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:58:52.900701+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pi 5 で Claude Code を 40 日運用して、1 日 5 USD を 2 USD に下げた話",
+    "url": "https://zenn.dev/techquant/articles/claude-code-pi5-budget-tuning",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Raspberry Pi 5上でClaude Codeを自動運用する際のコスト増大問題を、タスクの細分化とプロンプトの最適化によって60%削減した実録。",
+    "summaryBody": "Raspberry Pi 5上でClaude Codeをsystemd user timerを用いて24時間自動運用していた著者が、蓄積するコストを大幅に削減した手法を解説。分析の結果、会話（Conversation）が長くなるほど自動コンパクションによるトークン消費が増え、プロンプトキャッシュのヒット率が低下することが判明。これに対し、1) タスクを30分以内の粒度に分割して会話をリセットする、2) プロンプト冒頭で「単一目的」と「完了の定義」を宣言して不要な探索を抑制する、3) `--max-budget-usd` による予算制限をかける、という3つの具体策を実施。結果として、生産性を損なうことなく1日5ドルから2ドルへとコストの60%削減に成功した。",
+    "topics": [
+      "Claude Code",
+      "Raspberry Pi",
+      "コスト最適化",
+      "プロンプトエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

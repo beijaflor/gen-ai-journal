@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:21:54.819428+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "dari-docs: エージェント艦隊を活用したドキュメント最適化ツール",
+    "url": "https://github.com/mupt-ai/dari-docs",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがドキュメントを読み込んで実際にタスクを遂行できるかをテストし、不明瞭な箇所の特定やドキュメントの自動改善案を提示するCLIツールです。",
+    "summaryBody": "dari-docsは、ドキュメントがAIエージェントにとって十分に明確であるかをテストするためのオープンソースCLIツールです。AIエージェントが自律的にタスクをこなす時代において、人間には「なんとなく」通じる曖昧な記述や不足している前提条件は、エージェントの失敗に直結します。本ツールは、シミュレートされた開発者エージェントに指定されたドキュメントとタスクを与え、実際に実行させることで、どこでエージェントが詰まったか（コンテキスト不足、用語の不一致、セットアップ手順の欠落など）を客観的にレポートします。\n\n主な機能として、ドキュメントのチェック機能（check）と、フィードバックに基づいた修正案の自動生成機能（optimize）を備えています。修正案はローカルのディレクトリに書き出されるため、ユーザーは内容をレビューした上でリポジトリに反映させることができます。ホスト型の「Managedモード」を使用すれば、複雑なセットアップなしですぐにドキュメント品質のループを回すことが可能です。",
+    "topics": [
+      "AIエージェント",
+      "ドキュメント",
+      "開発者ツール",
+      "LLM",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "mupt-ai/dari-docs: optimize your documentation through fleets of agents"
+  }
+}

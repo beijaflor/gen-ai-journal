@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:40:08.686130+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3-30Bを動かし、社内LANにOpenAI互換APIとしてvLLMで公開してみた",
+    "url": "https://zenn.dev/fusic/articles/779af66b5810a9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "24GBのGPU1枚で30BクラスのQwen3モデルをAWQ量子化とvLLMを用いて動かし、社内LAN向けにOpenAI互換APIとして公開する手順を解説。",
+    "summaryBody": "RTX 3090 Ti（VRAM 24GB）環境で、AlibabaのMoEモデル「Qwen3-30B-A3B」を運用するための実践的なガイドです。メモリ制限を克服するためにAWQ量子化版モデルを選定し、高速推論エンジンvLLMを用いてOpenAI互換APIサーバーを構築します。パッケージ管理にはuvを採用し、依存関係の解決やCUDAパスの設定、APIキーによる認証、特定IPへのバインドといった実運用に近い構成を紹介しています。また、量子化形式の確認（config.jsonの重要性）や、setuptoolsの欠落、Qwen3特有のthinking出力の扱いなど、構築時に遭遇しやすいトラブルとその解決策が具体的にまとめられています。",
+    "topics": [
+      "vLLM",
+      "Qwen3",
+      "AWQ",
+      "uv",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

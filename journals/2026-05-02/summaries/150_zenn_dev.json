@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:42:12.725762+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIレビューの「で、これ合ってんの？」を減らす",
+    "url": "https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコードレビューのノイズを削減するため、マルチエージェントによる専門家レビューと「ディフェンス（検証・却下）」プロセスを組み合わせた高精度なアーキテクチャを提案。",
+    "summaryBody": "AIによるコードレビューは「指摘の数は多いが、的外れなものが混ざり確認コストが増える」という課題があります。本記事では、このノイズを人間のレビューにおける「意図の説明と再検証」のプロセスで解決するマルチエージェント設計を詳説しています。\n\n設計は3段階で構成されます：\n1. **Focus Analysis (Haiku)**: 変更内容から最適な専門家ペルソナ（例：Security, DB）を動的に生成。\n2. **Parallel Review (Sonnet)**: 複数の専門家が独立してレビューを行い、重大度別に指摘を厳選。\n3. **Defense & Consolidation (Opus)**: 最も高性能なモデルが周辺コンテキストを含めて各指摘を検証し、妥当なものだけを採用・統合。却下理由も明示することで、最終的な指摘の信頼性を担保しています。\n\nMulti-ReviewやMixture-of-Agentsなどの研究結果に基づき、モデルごとの特性（コスト・速度・推論能力）を最適に配置することで、実用的な「質」を追求した実装となっています。",
+    "topics": [
+      "AIコードレビュー",
+      "マルチエージェント",
+      "Claude",
+      "LLMアーキテクチャ",
+      "開発プロセス効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

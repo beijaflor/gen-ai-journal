@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T06:48:09.661048+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "YourMemory: エビングハウスの忘却曲線を採用したAIエージェント向け永続メモリ",
+    "url": "https://github.com/sachitrafa/YourMemory",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "エビングハウスの忘却曲線に基づいた忘却・強化メカニズムを備え、ハイブリッド検索とグラフ構造によって高い想起率を実現するAIエージェント向け永続メモリ層。",
+    "summaryBody": "YourMemoryは、人間の記憶の仕組みを模倣したAIエージェント用の永続メモリソリューションです。エビングハウスの忘却曲線を採用しており、重要な情報は残り、不要な情報は時間の経過とともに自動的に削除（プルーニング）される仕組みを備えています。技術的にはDuckDB（ベクトルDB）、NetworkX（グラフ）、spaCy、sentence-transformersを使用しており、外部インフラを必要とせずローカルで動作します。また、Model Context Protocol (MCP) をサポートしているため、Claude DesktopやCursor、Clineといった主要なAIツールに簡単に統合可能です。検索はVector + BM25に加えて、セマンティックな関係性を辿るグラフ探索を組み合わせたハイブリッド方式を採用しており、既存のMem0やZep Cloudと比較して高い想起率（Recall）を達成しています。開発者は、重要度やコンテキストパスを指定してメモリを保存でき、エージェントが過去のセッションで学んだユーザーの好みや技術スタックを自動的に引き出すことが可能になります。",
+    "topics": [
+      "AI Memory",
+      "Model Context Protocol (MCP)",
+      "Ebbinghaus Curve",
+      "Vector Database",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "YourMemory: Agentic AI memory with Ebbinghaus forgetting curve decay. +16pp better recall than Mem0 on LoCoMo."
+  }
+}

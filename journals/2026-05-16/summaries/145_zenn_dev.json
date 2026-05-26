@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-09T06:05:04.350586+00:00",
+    "generatedAt": "2026-05-13T15:35:23.539464+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "AIのPlan Modeをなんとなく承認しないために",
-    "url": "https://zenn.dev/lv/articles/9438e1678c873a",
+    "title": "コンパニオンAIの記憶を、普通のRAGじゃない設計にした話",
+    "url": "https://zenn.dev/haru0416/articles/843c6c29c04c7c",
     "language": "ja",
-    "contentType": "🎯 Opinion & Commentary (意見・論評)",
-    "oneSentenceSummary": "AIエージェントの提案する実装計画を盲信せず、事前に「受け入れ条件」を既存情報から整理し、根拠・手順・確認方法の4観点でレビューする実践的ワークフローの提案。",
-    "summaryBody": "Claude CodeやCodexが提供する「Plan Mode」において、AIが提示するもっともらしい計画を開発者が安易に承認してしまう課題を考察しています。著者は「Plan（どう作るか）」と「受け入れ条件（何を満たすか）」を明確に分離することを提唱。AIには条件を決めさせるのではなく、既存のコード、Figma、Issue等から条件の『候補』を抽出させ、人間がそれらを『参照元あり・仮説・要確認』に分類・整理することで、タスクのメンタルモデルを構築する重要性を説いています。最終的に、AIの計画を『根拠・受け入れ条件・実装手順・確認方法』の4つの軸で評価することで、AIの『完了しました』を鵜呑みにしない、確実性の高い開発プロセスを実現する手法をまとめています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コンパニオンAIにおいて人間との長期的な関係性を築くため、時間軸・忘却・同一性・記憶の整理（圧密化）といった要素をRAGの外側に統合した「Asterel」の記憶設計の解説。",
+    "summaryBody": "コンパニオンAI「Asterel」における、従来のRAG（検索拡張生成）の限界を超えた記憶システムの設計思想が詳説されています。単なるテキスト検索ではなく、情報の「有効期間」を管理するbitemporal設計、法的な要件も考慮した「忘却」の3つのモード（Soft/Hard/Tombstone）、埋め込みとLLMを組み合わせた高精度なエンティティ判定、そして「睡眠フェーズ」による生ログから信念や関係性への自動集約（コンソリデーション）など、人間らしい記憶の仕組みを工学的に実装するアプローチが特徴です。既存のベクトル検索のみに頼らず、Knowledge GraphとPersonalized PageRankを活用した多段の検索パイプラインについても言及されており、AIエージェントの長期記憶設計における高度な知見を提供しています。",
     "topics": [
-      "AI Agent",
-      "Claude Code",
-      "開発プロセス",
-      "受け入れ条件",
-      "プロンプトエンジニアリング"
+      "コンパニオンAI",
+      "RAG",
+      "Knowledge Graph",
+      "記憶設計",
+      "Asterel"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
-      "uniqueness": 4,
-      "practical": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
       "antiHype": 4,
-      "mainJournal": 90,
-      "annexPotential": 30,
-      "overall": 92
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 96
     }
   }
 }

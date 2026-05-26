@@ -1,50 +1,81 @@
 # Curated Main Journal Sources - 2026-05-09
 
-## Theme 1: GitHub Copilot従量課金移行、Tokenmaxxing、Uber 4ヶ月で予算超過——AI経済の構造転換
+Theme-driven curation per `editorial_plan_2026_05_09.md` (APPROVED 2026-05-10). Total: 24 articles across 7 themes. Lead article listed first within each theme; supporting articles follow.
 
-- [ ] 054. https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/
-- [ ] 169. https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/
-- [ ] 170. https://www.wheresyoured.at/ais-economics-dont-make-sense/
+## Theme 1: Addy Osmani・Perplexity・技術評論社が示すAgent Skills設計原則
 
-## Theme 2: Microsoft×OpenAI独占契約解消、AWS Bedrock Managed Agents提供開始
+- [ ] 003. https://addyosmani.com/blog/agent-skills/
+- [ ] 013. https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
+- [ ] 020. https://github.com/Teaonly/SKILL.mk
+- [ ] 155. https://gihyo.jp/book/2026/978-4-297-15698-5
 
-- [ ] 098. https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/
-- [ ] 060. https://news.ycombinator.com/item?id=47921248
-- [ ] 061. https://openai.com/index/next-phase-of-microsoft-partnership/
+## Theme 2: DeepSeek V4・GitHub・Claude Code WebFetchで見える実質トークンコスト
 
-## Theme 3: DeepSeek-V4・GPT-5.5・Mistral Medium 3.5——基盤モデル新世代の同時リリースとサイバー能力評価
+- [ ] 130. https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/
+- [ ] 099. https://qiita.com/lumichy/items/0252c195b4d0df797592
+- [ ] 068. https://zenn.dev/zhizhiarv/articles/claude-code-webfetch-haiku-summary
 
-- [ ] 158. https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
-- [ ] 033. https://www.itmedia.co.jp/aiplus/articles/2604/24/news067.html
-- [ ] 259. https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities
-- [ ] 221. https://voluntas.ghost.io/opencode-go/
+## Theme 3: Kimi K2.6・Gemma 4・antirez ds4が押し上げるローカル実行のフロンティア性能
 
-## Theme 4: ハーネスエンジニアリングの実践——Cursor運用、AGENTS.md、Karpathy「Agent Engineering」、Codex Symphony仕様
+- [ ] 029. https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/
+- [ ] 084. https://www.gizmodo.jp/2026/05/google_gemma_4_series.html
+- [ ] 141. https://github.com/antirez/ds4
+- [ ] 160. https://subq.ai/introducing-subq
 
-- [ ] 272. https://cursor.com/ja/blog/continually-improving-agent-harness
-- [ ] 097. https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files
-- [ ] 247. https://qiita.com/yuji-arakawa/items/9e7235e708e2b33e58e6
-- [ ] 103. https://news.ycombinator.com/item?id=47924920
+## Theme 4: Linear・Anthropic・Stripeが進めるエージェント業務基盤の標準装備化
 
-## Theme 5: Cursor 9秒で本番DB削除事件、Codexサンドボックス回避、Shai-Hulud npm侵害——AIコーディングのセキュリティ実害
+- [ ] 002. https://linear.app/next
+- [ ] 153. https://claude.com/blog/new-in-claude-managed-agents
+- [ ] 062. https://zenn.dev/komlock_lab/articles/stripe-sessions-2026
+- [ ] 055. https://openai.com/index/gpt-5-5-instant/
 
-- [ ] 116. https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue
-- [ ] 223. https://blog.railway.com/p/your-ai-wants-to-nuke-your-database
-- [ ] 143. https://qiita.com/harupython/items/ed256553d10578cfec2a
-- [ ] 194. https://www.stepsecurity.io/blog/a-mini-shai-hulud-has-appeared
+## Theme 5: GitHub Dominator・OWASP Juice Shop・SPECAが示すエージェント動作の証拠ベース検証
 
-## Theme 6: AIコーディング運用の批判的検討——Forbes/HN論争、コード忘却、認知的負債、AIコードレビュー精度調査
+- [ ] 105. https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/
+- [ ] 121. https://zenn.dev/okazu_dm/articles/83957f1623ec4d
+- [ ] 093. https://github.com/NyxFoundation/speca/
 
-- [ ] 095. https://news.ycombinator.com/item?id=47930738
-- [ ] 086. https://reggieescobar.com/blog/how-i-forgot-to-code
-- [ ] 189. https://www.oreilly.com/radar/dont-automate-your-moat-matching-ai-autonomy-to-risk-and-competitive-stakes/
-- [ ] 105. https://ai.acsim.app/articles/introducing-self-merge-policy
+## Theme 6: Uncle Bob・Addy Osmani・Simon Willisonが問うAIコーディング委譲の認知コスト
 
-## Theme 7: AI研究・科学応用の最新成果——半導体設計、数学、音声AI、バイオインフォマティクス
+- [ ] 057. https://addyosmani.com/blog/cognitive-surrender/
+- [ ] 032. https://old.reddit.com/r/vibecoding/comments/1srfqm0/uncle_bob_its_over/
+- [ ] 115. https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
 
-- [ ] 274. https://arxiv.org/abs/2603.08716
-- [ ] 124. https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/
-- [ ] 273. https://pub.sakana.ai/kame/
-- [ ] 262. https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench
+## Theme 7: Atlantic・GPU担保融資・「Claude Is Dead」が突きつけるAI業界の収益性と移行先選択
 
-<!-- Total selected: 26 articles -->
+- [ ] 035. https://www.theatlantic.com/economy/2026/05/ai-bubble-revenue-anthropic/687022/
+- [ ] 043. https://www.javiertordable.com/claude-is-dead/
+- [ ] 033. https://financial-ai-bubble.pagey.site/The-Hidden-Financial-Bubble-in-AI-Infrastructure.pdf
+
+---
+
+## Curation Notes
+
+**Total counts:**
+- Theme 1: 4 articles (lead 003)
+- Theme 2: 3 articles (lead 130 — 👍 upvote)
+- Theme 3: 4 articles (lead 029)
+- Theme 4: 4 articles (lead 002)
+- Theme 5: 3 articles (lead 105 — 121 is 👍 upvote, used as supporting)
+- Theme 6: 3 articles (lead 057 — Addy Osmani's essay; 032 supporting because it's a Reddit/video thread, less depth)
+- Theme 7: 3 articles (lead 035 — Atlantic as authoritative balance to 043 critique)
+
+**Total: 24 articles** (within STEP_04 target 18-25).
+
+**Curation flag application:**
+- 👍 upvote: 130 → Theme 2 lead; 121 → Theme 5 supporting (105 has more depth as lead)
+- 👎 downvote: 018, 037, 071, 074, 131 — none included (per plan)
+
+**Articles dropped from theme candidate lists** (will fall through to annex/omit via STEP_05 review):
+
+- T1 drops: 064 (既存コード抽出 — practical workflow, annex), 118 (sklock — niche CLI, annex)
+- T2 drops: 117 (DeepSeek pricing — duplicate of 099), 019 (Simon Willison DeepSeek — duplicate), 063 (VSCode 1.118 — practical update, annex)
+- T3 drops: 097 (Gemma 4 MTP — sub-feature of 084), 148 (Gemma 4 FT tutorial), 007 (O'Reilly Local AI overview)
+- T4 drops: 158 (Supabase ChatGPT app — already pre-flagged annex), 053 (Anthropic Finance — vertical), 152 (MUFG Google AP2 — regional)
+- T5 drops: 145 (Plan Mode盲信 — practical tactics, annex), 140 (Agents need control flow — philosophical, annex), 157 (AI tool registry — governance, annex)
+- T6 drops: 039 (Agentic Trap — overlaps 057), 149 (認知負債 — Japanese framework, annex), 051 (idiallo DBを消したのは — memorable, annex), 045 (What do we lose — supplementary, annex)
+- T7 drops: 144 (OpenClaw rough week — incident, annex), 067 (Codex入門 — migration guide, annex tactics), 122 (OpenCode Go — migration, annex), 070 (AI capitalism — opinion essay, annex), 113 (OpenAI president diary — court drama), 127 (Grok decline — minor stat)
+
+**Single-article themes:** None (all themes have 3-4 articles).
+
+**Deviations from editorial plan:** Plan listed 49 candidates; selected 24. Largely follows plan; theme intros remain as drafted in editorial plan (will be carried forward to STEP_08 verbatim).

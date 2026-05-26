@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-11T05:01:55.498254+00:00",
+    "generatedAt": "2026-05-18T00:53:02.523212+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "CodexをローカルLLMで駆動する",
-    "url": "https://zenn.dev/robustonian/articles/codex_with_local_llm",
+    "title": "【Claude Code VS Codex】同じSkillsでオセロ対戦させたら、56-8で○○が完敗した話",
+    "url": "https://zenn.dev/acntechjp/articles/cc97075e985938",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "LM StudioのCLIツール（lms）を活用し、独自のResponses API形式を要求するCodex CLIをローカルLLM環境で動作させるための具体的な構築手順を解説しています。",
-    "summaryBody": "この記事では、通常OpenAI APIなどの商用サービスを前提とするCodex CLIを、LM Studioを用いてローカルLLMで駆動する方法を紹介しています。llama.cppでは最新のCodexが要求するResponses形式のAPIに難があるため、LM StudioのCLI機能（lms）を採用。GGUFモデルの自動インポートとサーバー起動を行うシェルスクリプト、思考プロセス（Thinking）の制御用プロキシの実装、そしてCodex側の`~/.codex/config.toml`における`wire_api = \"responses\"`の設定など、実用的なステップを詳述しています。これにより、ローカルLLMを用いたコーディングエージェントのベンチマーク比較が可能になります。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "共通の戦略指示（Skills）を与えてClaude CodeとCodexをオセロ対戦させた結果、中盤の圧勝からClaudeが逆転負けし、LLM間の思考プロセスや性格の差異が明らかになった。",
+    "summaryBody": "この記事は、Claude CodeとCodexという2つのLLMに、全く同じ「Skills」（位置評価テーブルやモビリティ評価のヒューリスティックを定義した指示書）を付与し、オセロで対戦させた実験の記録です。対戦はローカルHTTPサーバーを介して行われ、両モデルは共通の評価関数を用いて着手を決定しました。結果は、黒（Codex）56対白（Claude）8でCodexの圧勝。特筆すべきは、中盤までClaudeが29対1と圧倒していたものの、X打ち（X-square）のリスク判断ミスと、長距離の斜めラインによる角への脅威を読み落としたことで一気に崩壊した点です。考察では、同じ指示を受けても「ヒューリスティックの解釈の深さ」「思考プロセスの冗長性（日本語での出力によるトークン消費）」「リスク許容度」といったLLM固有の特性が勝敗を分ける要因となった可能性が指摘されています。AI同士を対戦させることで、単なる正誤判定を超えた「思考の癖」を可視化する興味深い試みとなっています。",
     "topics": [
+      "Claude Code",
       "Codex",
-      "LM Studio",
-      "ローカルLLM",
-      "GGUF",
-      "AIエージェント"
+      "LLM比較",
+      "オセロ (Reversi)",
+      "プロンプトエンジニアリング"
     ],
     "scores": {
-      "signal": 5,
-      "depth": 4,
+      "signal": 4,
+      "depth": 3,
       "uniqueness": 5,
-      "practical": 5,
+      "practical": 3,
       "antiHype": 4,
       "mainJournal": 85,
       "annexPotential": 15,
-      "overall": 90
+      "overall": 88
     }
   }
 }
