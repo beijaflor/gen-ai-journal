@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:30:15.824457+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "XプレミアムプランでGrokとx_searchツールを使う (hermes-agent活用ガイド)",
+    "url": "https://zenn.dev/robustonian/articles/x_premium_grok_search",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Xプレミアムプランのユーザーが、hermes-agentを通じてGrok-4.3や強力なX検索ツール（x_search）を導入・設定し、高度なAIエージェント環境を構築する手順の解説。",
+    "summaryBody": "本記事は、Nous Researchが開発したAIエージェントフレームワーク「hermes-agent」を用いて、Xのプレミアムプラン環境でxAIの最新モデルや検索機能を活用するための実用的なガイドです。主な構成は以下の通りです：\n\n1. **hermes-agentの導入**: ワンライナーでのインストールからツールの設定方法を詳解。\n2. **xAI OAuth認証の突破**: 「SuperGrokが必要」という情報の誤りを指摘し、標準のプレミアムプランで認証を通す具体的な手順を解説。特にリモートサーバー利用時のSSHトンネル（ポートフォワーディング）を用いた認証維持についても触れています。\n3. **x_searchツールの機能**: Xの高度な検索演算子（from, sinceなど）や、画像・動画の内容理解オプションを活用した、AIによる情報収集の効率化。\n4. **柔軟なプロバイダー連携**: xAIのモデルだけでなく、ローカルLLM等の他のモデルとx_searchを組み合わせて使用する方法を提示。\n\n既存の情報の錯綜を整理し、開発者が迷いやすい認証周りのトラブルシューティングを網羅した備忘録となっています。",
+    "topics": [
+      "hermes-agent",
+      "Grok",
+      "xAI",
+      "X検索",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

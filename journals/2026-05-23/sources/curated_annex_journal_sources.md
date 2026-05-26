@@ -6,92 +6,86 @@
 - [x] APPROVED - Ready for STEP_06
 
 ---
-<!-- Review: check [x] to include, remove line to exclude. Target: ~25-35 articles. -->
+<!-- Human-reviewed final annex selection: 27 articles (from 44 pre-flagged candidates).
+     162 (ランタイムレビュー) was promoted to the main journal, Theme 6. -->
 
-- [x] 013. https://kuranuki.sonicgarden.jp/archives/36034
-  <!-- DHH発言を起点に、コーディングが「審美眼に基づく技芸」へ変容するとし、Railsの規約重視がトークン効率の文脈でAI時代に再評価されると論じる。Signals: annex_flag ⭐ -->
+- [x] 010. https://openclaw.ai/blog/where-openclaw-security-is-heading
+  <!-- OpenClawの多層セキュリティ戦略（FS境界・ネットワーク制御・プラグイン信頼評価・静的解析）のロードマップ。Signals: annex_flag 👍 -->
 
-- [x] 015. https://blog.lai.so/ai-rich-text-format/
-  <!-- AI出力フォーマットがMarkdownからHTMLへ移行する潮流を、「パブリッシュ先」と「中間素材」という役割分担で整理した論考。Signals: annex_flag ⭐ -->
+- [x] 014. https://qiita.com/uhyo/items/26bb74cc81b7fbabf14b
+  <!-- AIへ英語で指示する利点（敬語コスト回避と入力効率）を説く開発者の考察。ニッチな運用Tips。Signals: annex_flag -->
 
-- [x] 021. https://note.com/shi3zblog/n/nd3c1de46eb7b
-  <!-- 清水亮による、地方創生と人材育成は「AI教室」ではなく遊びの場「AIゲームセンター」が鍵だという教育論の提案。Signals: annex_flag ⭐ annexPotential 65 -->
+- [x] 019. https://www.gizmodo.jp/2026/05/limits-of-ai-capabilities-oe8.html
+  <!-- Vishal Sikka氏ら：LLMには複雑性を超えるタスクを完遂できない数学的限界があるとする研究。批判的分析。Signals: annex_flag -->
 
-- [x] 043. https://www.cryptopolitan.com/user-tricked-grok-bankrbot-to-send-tokens/
-  <!-- モールス信号を用いたプロンプトインジェクションでGrokとBankrbotから約20万ドル相当のトークンを送金させた事件の報告。Signals: annex_flag ⭐ -->
+- [x] 021. https://www.skills.sh/browserbase/skills/browser-to-api
+  <!-- ブラウザのCDPトレースから未公開APIのOpenAPI 3.1仕様を自動生成するツール。ツール・実験。Signals: annex_flag -->
 
-- [x] 045. https://arxiv.org/abs/2605.05419
-  <!-- 人間が自身の認知をLLM的と誤認する心理バイアス「LLMorphism」を提唱する研究で、AI時代の自己認識を問い直す視点。Signals: annex_flag ⭐ -->
+- [x] 026. https://golden-lucky.hatenablog.com/entry/2026/05/17/170605
+  <!-- LLM時代における技術書「編集」の価値と出版ビジネスの経済性を論じた考察。批判的分析。Signals: annex_flag -->
 
-- [x] 046. https://www.seangoedecke.com/the-left-wing-case-for-ai/
-  <!-- AIを保守的技術と見なす通念に対し、障害者支援・医療格差是正・教育民主化という左派的目標の達成手段として擁護する論陣。Signals: annex_flag ⭐ -->
+- [x] 034. https://kk.org/thetechnium/a-catechism-for-robots/
+  <!-- ケヴィン・ケリーが自律型AIへの倫理的・哲学的指針を問答形式で綴った草案。ニッチ・思想。Signals: annex_flag -->
 
-- [x] 048. https://unix.foo/posts/local-ai-needs-to-be-norm/
-  <!-- クラウドAI依存の脆弱性を批判し、Apple FoundationModels等を活用したローカルAIを「信頼されるソフトウェア」の前提に据えるべきだという主張。Signals: annex_flag ⭐ -->
+- [x] 061. https://andonlabs.com/blog/andon-fm
+  <!-- 4つのAIにラジオ局を半年自律運営させ、各モデルの「性格」や機能不全を観察した実験記録。実験・面白枠。Signals: annex_flag -->
 
-- [x] 054. https://qiita.com/TaigoKuriyama/items/850a26760fc3c8d111ad
-  <!-- Codex AppのComputer Use機能の内部構造を、インストールディレクトリやMCPサーバの挙動から解剖した技術調査記事。Signals: annex_flag ⭐ -->
+- [x] 100. https://1password.com/blog/agent-identity-protocols
+  <!-- OAuth/OIDCがエージェントの非決定的挙動をカバーできない理由と継続的認可の必要性。セキュリティ・設計。Signals: annex_flag -->
 
-- [x] 063. https://zenn.dev/optimisuke/articles/b358f464414cf9
-  <!-- Claude Codeとarduino-cliを連携させ、自然言語からマイコン書き込みまでをターミナルで完結させる電子工作の実践報告。Signals: annex_flag ⭐ -->
+- [x] 109. https://blog.cloudflare.com/claude-managed-agents/
+  <!-- Cloudflare×AnthropicがサンドボックスとClaude推論を統合したエージェント実行基盤を発表。Signals: annex_flag 👍 -->
 
-- [x] 071. https://www.anthropic.com/research/natural-language-autoencoders
-  <!-- Anthropicが発表した、Claude内部の数値表現を自然言語に変換して解釈可能性を高めるNatural Language Autoencodersの研究。Signals: annex_flag ⭐ -->
+- [x] 112. https://www.hannahhearth.com/posts/tools-the-vercel-product-design-team-actually-uses
+  <!-- Vercelデザインチームの実ワークフロー（Figmaを介さない「プロダクト起点」設計）。ニッチ・実務。Signals: annex_flag -->
 
-- [x] 074. https://apnews.com/article/ai-artificial-intelligence-ethics-religion-roundtable-053a44133c64703f83fd50c9ee6124ea
-  <!-- OpenAIやAnthropicがAI倫理構築のために世界各国の宗教指導者と連携する「Faith-AI Covenant」の動向を伝える業界ニュース。Signals: annex_flag ⭐ -->
+- [x] 117. https://www.llmcap.io/
+  <!-- LLM API利用額が上限到達でリクエストを即遮断し高額請求を物理的に防ぐプロキシ。ツール・実験。Signals: annex_flag -->
 
-- [x] 081. https://www.anthropic.com/research/teaching-claude-why
-  <!-- Claude 4のアライメント不整合に対し、行動模倣ではなく倫理的推論の「理由」を教えることで汎用的安全性を引き上げたAnthropicの研究報告。Signals: annex_flag ⭐ -->
+- [x] 129. https://www.publickey1.jp/blog/26/linux_foundationaiagntcon_mcpcon910112.html
+  <!-- Linux FoundationがMCP旗艦イベント「AGNTCon + MCPCon Japan」を9月東京で開催。業界動向。Signals: annex_flag -->
 
-- [x] 086. https://blog.citp.princeton.edu/2026/05/05/make-america-ai-ready-strengths-weaknesses-and-recommendations/
-  <!-- 米国労働省のSMSベースAI教育プログラムを、プリンストン大学IT政策センターがアクセシビリティと労働者視点の欠如の両面から評価した分析。Signals: annex_flag ⭐ -->
+- [x] 132. https://zenn.dev/pepabo/articles/9baa6271b2055d
+  <!-- AI並列開発がワーキングメモリに与える過負荷と、注意力・セッション設計の指針。認知・実務。Signals: annex_flag -->
 
-- [x] 124. https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/
-  <!-- GitHub Copilot個人向けプランの刷新（Flex枠導入とMaxプラン新設）を伝える、料金体系の従量課金移行に関する公式アナウンス。Signals: annex_flag ⭐ -->
+- [x] 148. https://deno.com/blog/clawpatrol
+  <!-- Deno製Claw Patrol：エージェントのDB/K8s操作を監視・制限し認証情報を隠蔽するOSSゲートウェイ。ツール・セキュリティ。Signals: annex_flag -->
 
-- [x] 127. https://u-site.jp/alertbox/ai-simulations-studies
-  <!-- AI生成のデジタルツインや合成ユーザーがUX調査でどこまで実ユーザーを再現・補完できるかを、3つの研究結果から検証する記事。Signals: annex_flag ⭐ -->
+- [x] 159. https://www.figma.com/blog/the-figma-agent-is-here/
+  <!-- Figmaがキャンバス上で動くネイティブAIエージェントを発表。ツール・実験。Signals: annex_flag -->
 
-- [x] 135. https://deepmind.google/blog/ai-pointer/
-  <!-- Google DeepMindが、Geminiを使ってマウスカーソルに視覚・意味的コンテキストを理解させる「AI Pointer」の設計4原則を発表したリサーチ。Signals: annex_flag ⭐ -->
+- [x] 161. https://blog.val.town/slow-mode
+  <!-- 自動ループ・即時生成を禁じ人間との対話と学習を優先する「Slow Mode」開発スタイルの提案。批判的・思想。Signals: annex_flag 👍 -->
 
-- [x] 148. https://zenn.dev/shuji_bonji/articles/ad1ec6c65ac45a
-  <!-- LLMに日本の法令・通達を正確に参照させるため、e-Gov APIや国税庁データを統合した法規MCPサーバ群とClaude Skillを構築した開発記録。Signals: annex_flag ⭐ -->
+- [x] 163. https://www.lukew.com/ff/entry.asp?2153
+  <!-- エージェントの個人最適化が招くチーム成果物の乖離を防ぐ「コラボレーティブ・ステアリング」。設計・思想。Signals: annex_flag -->
 
-- [x] 155. https://thinkingmachines.ai/blog/interaction-models/
-  <!-- Thinking Machinesが、200msのマイクロターンでマルチモーダル入力をリアルタイム処理する「Interaction Models」アーキテクチャを発表した研究。Signals: annex_flag ⭐ -->
+- [x] 164. https://webframp.com/posts/the-workflow-collision/
+  <!-- 人間のプル型WFとエージェントのライフサイクルの設計思想衝突と「合成」による解決を提唱。設計・思想。Signals: annex_flag -->
 
-- [x] 210. https://linear.app/now/code-intelligence-for-linear-agent
-  <!-- Linear Agentがリポジトリを直接読み取り、バグ原因特定や仕様策定時の技術調査を行えるようになったコードインテリジェンス機能の発表。Signals: annex_flag ⭐ -->
+- [x] 166. https://2026.stateofai.dev/en-US
+  <!-- 2026年開発者調査：AI生成コード56%、Claude Code台頭とバブル懸念の併存。データ・俯瞰。Signals: annex_flag -->
 
-- [x] 212. https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-chang-she-on-data-infrastructure-for-ai/
-  <!-- pandasコア開発者のChang Sheが、AIエージェント時代に必要な「マルチモーダル・レイクハウス」とLanceDBの役割を語ったポッドキャスト書き起こし。Signals: annex_flag ⭐ -->
+- [x] 167. https://github.com/wiltodelta/remove-ai-watermarks
+  <!-- Geminiの可視/不可視透かし・C2PAメタデータを除去しAIラベルを回避するCLIツール。ツール・グレー領域。Signals: annex_flag -->
 
-- [x] 216. https://www.etive-mor.com/blog/can-a-language-model-paint/
-  <!-- LLMに1筆ずつ絵を描かせる実験から、空間認識の欠如とAI生成コードの脆弱性の構造的類似を読み解く論考。Signals: annex_flag ⭐ annexPotential 92 -->
+- [x] 174. https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results
+  <!-- 個人ブログ1枚でGoogle AI検索に誤情報を仕込める脆弱性とGoogleの対策。セキュリティ・批判。Signals: annex_flag -->
 
-- [x] 257. https://daverupert.com/2026/05/small-language-models-in-the-browser/
-  <!-- ChromeやEdgeに搭載されつつあるブラウザ内蔵SLMの利点と、ベンダー依存・標準化困難という二面性を整理した記事。Signals: annex_flag ⭐ -->
+- [x] 176. https://lithub.com/nobel-laureate-olga-tokarczuk-apparently-used-ai-to-write-her-latest-novel/
+  <!-- ノーベル文学賞作家トカルチュク氏が創作にAIを活用と示唆。文化・AI論争。Signals: annex_flag -->
 
-- [x] 265. https://x.com/mitchellh/status/2055380239711457578
-  <!-- HashiCorp創業者Mitchell Hashimotoが、思考と意思決定をAIに丸投げする「AI精神病」という概念を提示したX投稿。Signals: annex_flag ⭐ -->
+- [x] 182. https://noslopgrenade.com/
+  <!-- 一行で済む返答にAI生成の冗長文を貼る「スロップ・グレネード」が対話を破壊すると説くマニフェスト。批判的・面白枠。Signals: annex_flag -->
 
-- [x] 289. https://claude.com/blog/the-founders-playbook
-  <!-- Anthropicが公開した、AIネイティブなスタートアップの立ち上げからスケールまでをClaude活用でカバーするファウンダー向けプレイブック。Signals: annex_flag ⭐ -->
+- [x] 183. https://gist.github.com/mkaramuk/44a44d83178e632ec0dd1f02186d822c
+  <!-- 公開されたGeminiのシステムプロンプト記録。挙動・データ利用制限を規定。ニッチ・一次資料。Signals: annex_flag -->
 
-- [x] 189. https://www.megamouth.info/entry/2026/05/12/215443
-  <!-- AI面接を受ける47歳エンジニアの一人称物語で、技術的誠実さと「市場価値」の乖離、AIに裁かれる不条理を吐露する読み物。Signals: annexPotential 98 -->
+- [x] 184. https://www.0xsid.com/blog/antigravity-bait-n-switch
+  <!-- GoogleがAntigravityを一方的に対話型UIへ刷新しIDE環境を破壊した「ベイト・アンド・スイッチ」批判。批判的分析。Signals: annex_flag -->
 
-- [x] 295. https://github.com/neilsonnn/image-blaster
-  <!-- Claude Desktopと外部APIを連携させ、1枚の画像から3D環境・メッシュ・音響を数分で生成するMCP/スキルセット型のツール。Signals: annexPotential 90 -->
+- [x] 191. https://qiita.com/kage-no-kage/items/2539ada514ba413bcfa4
+  <!-- ChatGPTの画像認識でGeoGuessrに挑戦し、Vision Encoder/ViTの仕組みを初心者向けに解説。実験・教育。Signals: annex_flag -->
 
-- [x] 180. https://zenn.dev/edash_tech_blog/articles/383410d9a1afba
-  <!-- AIエージェントにテスト技法やQAの暗黙知をスキルとして組み込み、テスト設計から実装までを自律化させる「エージェントQA」設計思想の解説。Signals: annexPotential 90 -->
-
-- [x] 096. https://duarteocarmo.com/blog/amalia-and-the-future-of-european-portuguese-llms
-  <!-- ポルトガル政府が550万ユーロを投じた欧州ポルトガル語LLM「AMÁLIA」を、データ組成・オープン性・評価指標の観点から批判的に分析した記事。Signals: annexPotential 85 -->
-
-- [x] 037. https://x.com/trq212/status/2052809885763747935
-  <!-- Claude Codeとのコミュニケーションで、Markdownに代わるHTMLの情報密度・視覚的明瞭性・楽しさを推す実践的観察のX投稿。Signals: annexPotential 80 -->
-
+- [x] 202. https://baigie.me/officialblog/2026/05/20/llmo/
+  <!-- LLMO（大規模言語モデル最適化）の本質を技術・コンテンツ設計・外部言及から解説する包括ガイド。実務・教育。Signals: annex_flag -->

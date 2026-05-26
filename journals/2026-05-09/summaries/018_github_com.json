@@ -1,33 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-01T06:49:58.211511+00:00",
+    "generatedAt": "2026-05-06T14:22:59.225376+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "HATS: 6つの帽子の思考法を用いたAIエージェント・チーム構築ツール",
-    "url": "https://github.com/rockcat/HATS",
+    "title": "Governor for Claude Code - トークン節約とコンテキスト最適化ツール",
+    "url": "https://github.com/0xhimanshu/governor",
     "language": "en",
     "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "「6つの帽子の思考法」に基づき、異なる役割を持つAIエージェントたちが建設的な議論やタスク管理を行うオープンソースのマルチエージェント・システム。",
-    "summaryBody": "エドワード・デボノの「6つの帽子の思考法」をAIで再現したマルチエージェント・フレームワークです。客観的事実、直感、リスク、可能性、創造性、プロセスの6つの役割（帽子）を各エージェントに割り当てることで、単一のLLMでは陥りがちなバイアスを排除し、多角的な議論を可能にします。Model Context Protocol (MCP) を介してカンバンボードやGitHub、各種データベースと連携し、エージェントが自律的にタスクを処理・更新します。さらに、Three.jsによる3Dアバター、Piper TTSによる音声合成、Rhubarbによるリップシンクを組み合わせた視覚的な会議機能を備えており、人間が議論に参加することも可能です。",
+    "oneSentenceSummary": "Claude Codeの応答を簡潔にし、不要なログや重複コンテキストを削減することでトークン消費を抑え、精度を維持する管理ツール。",
+    "summaryBody": "Governorは、AnthropicのCLIツール「Claude Code」での開発効率を最大化するためのオープンソース・プラグインです。主な機能は、応答の簡潔化、メモリファイル（CLAUDE.md等）の圧縮、ノイズの多いツール出力（大規模なログやビルド結果）のインテリジェントなフィルタリング、そして作業の逸脱を防ぐためのプランニング・ガードレールです。単純なトークン削減だけでなく、コードや重要な情報を保護する「保護スパン」機能を備えており、コンテキスト窓の占有を抑えつつ意思決定の品質を維持するように設計されています。V2アップデートでは、独自のベンチマークスイート（VCLR）を導入し、トークン削減率だけでなく、モデルの意思決定能力が損なわれていないかを評価できるようになっています。Claude Code以外にも、Cursor、Windsurf、ClineなどのAIエディタ向けの設定スニペットも提供しています。",
     "topics": [
-      "AIエージェント",
-      "マルチエージェントシステム",
-      "意思決定",
-      "Model Context Protocol (MCP)",
-      "Six Thinking Hats"
+      "Claude Code",
+      "LLMトークン最適化",
+      "AI開発ツール",
+      "コンテキスト管理",
+      "Anthropic"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
-      "uniqueness": 5,
-      "practical": 4,
+      "uniqueness": 4,
+      "practical": 5,
       "antiHype": 4,
       "mainJournal": 85,
-      "annexPotential": 90,
-      "overall": 88
+      "annexPotential": 15,
+      "overall": 90
     },
-    "originalTitle": "GitHub - rockcat/HATS: AI Personas"
+    "originalTitle": "Governor for Claude Code: compact professional output, context slimming, tool-output filtering, telemetry, and drift guardrails."
   }
 }

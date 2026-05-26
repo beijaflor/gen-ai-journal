@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:20:40.626948+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Plan Mode を使わず 1 ヶ月ハマって学んだ Claude Code 設計の地図",
+    "url": "https://zenn.dev/cnative_tkb/articles/630d98a2e3ace6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「Context Window（会話バケツ）は有限である」という根本制約から逆算し、Plan Modeの活用やディレクトリ構成による効率的な設計手法を体系化したガイド。",
+    "summaryBody": "Claude Codeを1ヶ月運用して得られた「設計の地図」を解説する記事です。最大のポイントは、すべての機能（Plan Mode、Skills、Agents、Hooks）が「会話バケツ（Context Window）の節約」という単一の制約から導かれているという洞察です。まず、実装前にPlan Modeで計画を文章化する「スペック駆動」の4ステップ（Explore/Plan/Implement/Commit）により、修正ループによるバケツの浪費を防ぐ重要性を説いています。また、プロジェクトの仕様をCLAUDE.md（永続・高頻度）、SKILL.md（オンデマンド）、Plan Mode出力（一過性）の3階層で管理し、情報の露出を段階的に制御する「Progressive Disclosure」の重要性を提示。さらに、.claude/配下の各ディレクトリ（skills, agents, hooks等）の役割を整理し、決定論的なガードとしてのhooksや、コンテキストを分離して作業するagentsの使い分けについて、著者の実践的な知見に基づいた具体的な運用フローを提案しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI開発",
+      "プロンプトエンジニアリング",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}

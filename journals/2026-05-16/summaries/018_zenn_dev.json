@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-11T05:03:04.000954+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のDB設計をTursoが書き換えに来ている話",
+    "url": "https://zenn.dev/emuni/articles/6eef9f97f564b4",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Tursoが有料プランでのDB数制限を撤廃したことを契機に、SQLiteの特性を活かして「DBを変数のように扱う」新しい設計思想とその技術的背景を解説する記事。",
+    "summaryBody": "Tursoが有料プランにおける「アクティブなデータベース数」の制限を撤廃しました。この記事では、この変更が単なる料金改定ではなく、データベース設計のメンタルモデルを根本から変えるものであると論じています。\n\n従来のPostgreSQL等のプロセス型DBでは、リソースコストの観点から「テナントごとにDBを分ける」ことは非現実的であり、共有テーブルや行レベルセキュリティ（RLS）による論理分離が主流でした。しかし、SQLiteは「DB＝ファイル」という特性を持ち、物理的な分離を極めて安価に行えます。TursoはSQLiteをRustで書き直し、MVCC（多版型同時実行制御）を導入することで、SQLite最大の弱点であった書き込みロックの制約を克服しようとしています。\n\nこの技術革新により、「AIエージェントのセッションごとに独立したDBを割り当てる」といった、これまでDBを貴重なリソースと見なしていた制約下では不可能だった設計が可能になります。「DBを変数のように気軽に作る」世界観は、特にコンテキストの厳密な分離が求められるAI時代において、アプリケーション開発の自由度を大きく広げる可能性を秘めています。",
+    "topics": [
+      "Turso",
+      "SQLite",
+      "データベース設計",
+      "マルチテナント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

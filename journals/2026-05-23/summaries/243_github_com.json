@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:23:20.708798+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Andrej Karpathyの洞察に基づくClaude Code改善用ガイドライン (CLAUDE.md)",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Andrej Karpathy氏が指摘したLLMコーディングの典型的な欠点を克服し、ClaudeやCursorの挙動を最適化するための4つの基本原則をまとめたガイドラインプロジェクト。",
+    "summaryBody": "Andrej Karpathy氏による「LLMは勝手な推測を行い、コードを過剰に複雑化させ、無関係な箇所まで修正してしまう」という観察に基づき、AIコーディングエージェントの精度と信頼性を高めるための『CLAUDE.md』設定ファイルを提供しています。\n\n以下の4つの原則を定義しています：\n1. **Think Before Coding**: 推測で進めず、曖昧な点は質問し、トレードオフを明示させる。\n2. **Simplicity First**: 投機的な実装を排除し、必要最小限のシンプルなコードを維持する。\n3. **Surgical Changes**: 修正が必要な箇所のみを「外科手術」のように正確に書き換え、無関係なリファクタリングを避ける。\n4. **Goal-Driven Execution**: 命令ではなく成功基準（テスト等）を与え、検証ループを回す。\n\nClaude Codeのプラグインとして導入できるほか、Cursorのプロジェクトルール（.cursor/rules）としても活用可能で、不要な差分（Diff）の減少や、実装前の正確なコミュニケーションを促進します。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "LLM Coding",
+      "Prompt Engineering",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
+  }
+}

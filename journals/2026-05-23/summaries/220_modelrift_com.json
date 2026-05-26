@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:17:54.066063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenSCAD LLM ベンチマーク：パンテオンの構築を通じた 3D CAD 生成能力の比較",
+    "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenSCAD を使用したローマのパンテオン模倣モデリングを通じて、Gemini 3.5 Flash や Claude 等の最新 LLM が持つ空間推論と幾何学コード生成能力を評価した調査レポート。",
+    "summaryBody": "ModelRift によるこのベンチマークは、テキストベースの 3D モデリング言語 OpenSCAD を対象に、主要な AI コーディングツールの幾何学的再現性をテストしたものです。ローマのパンテオンという、回転対称性、円柱、ドーム、格子状の天井（格天井）を含む複雑な建築物をプロンプトとして与え、各モデルの出力を比較しました。\n\n主な成果として以下の点が挙げられます：\n- **Google Antigravity 2.0 (Gemini 3.5 Flash High)** が自律型モデルの中で最高評価を獲得。実際の寸法を調査し、唯一、内部の格天井まで数学的に再現しました。\n- **Claude Sonnet 4.6** は最もクリーンなシルエットを生成しましたが、実行速度は低速でした。\n- **Cursor Composer** は最速の反復を誇る一方、出力品質は最も低く、速度と幾何学的正確性のトレードオフが顕著でした。\n- **Codex 5.5 High** は詳細度が高かったものの、プレビューと最終的な STL エクスポートの不一致という「エクスポートリスク」を露呈しました。\n\n結論として、LLM は OpenSCAD の構文を完全に理解しており、単純なツール使用よりも「幾何学的な判断力」がボトルネックとなっていることが判明しました。また、高度な CAD 生成には、人間が視覚的にフィードバックを与える「Human-in-the-loop」型のワークフローが依然として有効であると指摘しています。",
+    "topics": [
+      "OpenSCAD",
+      "LLM Benchmark",
+      "AI CAD",
+      "Gemini 3.5 Flash",
+      "3D Modeling"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "OpenSCAD LLM Benchmark: Building the Pantheon | ModelRift Blog"
+  }
+}

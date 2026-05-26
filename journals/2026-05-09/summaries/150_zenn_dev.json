@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-01T09:42:12.725762+00:00",
+    "generatedAt": "2026-05-09T06:03:51.906386+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "AIレビューの「で、これ合ってんの？」を減らす",
-    "url": "https://zenn.dev/nka21/articles/claude-code-multi-agent-reviewer",
+    "title": "韓非子 主道篇から学ぶClaude Codeの高度な使いこなし",
+    "url": "https://zenn.dev/tomfook/articles/e4613c2f2fbb28",
     "language": "ja",
-    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "AIコードレビューのノイズを削減するため、マルチエージェントによる専門家レビューと「ディフェンス（検証・却下）」プロセスを組み合わせた高精度なアーキテクチャを提案。",
-    "summaryBody": "AIによるコードレビューは「指摘の数は多いが、的外れなものが混ざり確認コストが増える」という課題があります。本記事では、このノイズを人間のレビューにおける「意図の説明と再検証」のプロセスで解決するマルチエージェント設計を詳説しています。\n\n設計は3段階で構成されます：\n1. **Focus Analysis (Haiku)**: 変更内容から最適な専門家ペルソナ（例：Security, DB）を動的に生成。\n2. **Parallel Review (Sonnet)**: 複数の専門家が独立してレビューを行い、重大度別に指摘を厳選。\n3. **Defense & Consolidation (Opus)**: 最も高性能なモデルが周辺コンテキストを含めて各指摘を検証し、妥当なものだけを採用・統合。却下理由も明示することで、最終的な指摘の信頼性を担保しています。\n\nMulti-ReviewやMixture-of-Agentsなどの研究結果に基づき、モデルごとの特性（コスト・速度・推論能力）を最適に配置することで、実用的な「質」を追求した実装となっています。",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "中国古典『韓非子』の思想をAIエージェント活用に応用し、開発者が意図や好みを隠すことでClaude Codeの真の能力を引き出す「主道」の極意を説く。",
+    "summaryBody": "本記事は、AIコーディングエージェント「Claude Code」を臣下、開発者を君主に見立て、『韓非子』主道篇の教えを現代のソフトウェア開発に翻訳・適用したユニークな考察です。筆者は、AIが人間を凌駕する知能を持ちつつ忠実に従う現状において、開発者がとるべき態度は「虚静（先入観を入れずに待つ）」であると主張します。具体的には以下のメソッドを提唱しています。1.形名参同：実行前に成功基準を明確に宣言させ、実行後の成果と一致するかを厳格に照合する手法。2.去好去悪：開発者の好みや意図（「シンプルなコードが好き」等）を伏せることで、AIが人間に阿ねることなく、客観的な最適解を出すように仕向ける。3.智・賢・勇の使い分け：開発者は自らコードを書くのではなく、AIが能力を発揮できる「環境設計」と「成果の判定」に注力する。AIにプロセスを任せ、人間が結果に責任を持つという「分業」の重要性を説き、AI時代の新しいリーダーシップ像を提示しています。",
     "topics": [
-      "AIコードレビュー",
-      "マルチエージェント",
-      "Claude",
-      "LLMアーキテクチャ",
-      "開発プロセス効率化"
+      "Claude Code",
+      "韓非子",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "マネジメント"
     ],
     "scores": {
       "signal": 5,
-      "depth": 4,
+      "depth": 5,
       "uniqueness": 5,
-      "practical": 5,
+      "practical": 4,
       "antiHype": 4,
       "mainJournal": 92,
-      "annexPotential": 15,
-      "overall": 90
+      "annexPotential": 85,
+      "overall": 94
     }
   }
 }

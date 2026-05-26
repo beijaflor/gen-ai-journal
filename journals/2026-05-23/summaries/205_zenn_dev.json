@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:29:16.802915+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GoogleのModern Web Guidanceスキル登場。AIが古いCSS・JSを書く問題を解決する",
+    "url": "https://zenn.dev/ubie_dev/articles/modern-web-guidance",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントに最新のWeb標準知識を学習させるGoogle公式ツール「Modern Web Guidance」の概要と導入メリット、実際の活用事例を解説した記事。",
+    "summaryBody": "Google I/O '26で発表された「Modern Web Guidance」は、LLMが学習データの性質上、古いコーディングパターン（Subgridを使わず古いGridのネストを提案するなど）を優先してしまう問題を解決するための公式ガイドです。このツールをClaude CodeなどのAIエージェントに導入することで、CSSレイアウト、UX、パフォーマンス、UI、アクセシビリティ、ブラウザ内蔵AIの6分野における最新のベストプラクティスをAIに認識させることができます。ブラウザ対応状況の指標であるBaselineとリアルタイムに連動しており、フォールバックを含めた適切な提案が可能です。記事内では著者が自身のポートフォリオサイトに適用し、最新のCSS色空間の利用確認やアクセシビリティ、セキュリティ面の改善案を具体的に得られた成果を報告しています。`npx modern-web-guidance@latest install`で手軽に導入できる点も大きな特徴です。",
+    "topics": [
+      "Modern Web Guidance",
+      "Google I/O",
+      "AIコーディング",
+      "CSS",
+      "JavaScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

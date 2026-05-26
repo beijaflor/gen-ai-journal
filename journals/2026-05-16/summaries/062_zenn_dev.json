@@ -1,31 +1,31 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-06T14:11:32.690906+00:00",
+    "generatedAt": "2026-05-11T04:52:19.306380+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Stripeが構想するAIエージェント決済インフラ - MPP、Tempo、Link Agent Walletsの衝撃",
-    "url": "https://zenn.dev/komlock_lab/articles/stripe-sessions-2026",
+    "title": "Claude Codeを\"使いこなす\"ための個人ルール設定 - 実際にやって効果が高かった設定",
+    "url": "https://zenn.dev/dotdtech_blog/articles/92348ee48cc692",
     "language": "ja",
-    "contentType": "🚀 Product Launch (製品発表)",
-    "oneSentenceSummary": "StripeはSessions 2026にて、AIエージェント向けの決済プロトコルMPPや自前ブロックチェーンTempo、権限委任型ウォレット等を発表し、AI時代の経済OSへの進化を鮮明にしました。",
-    "summaryBody": "Stripe Sessions 2026で発表された288の新機能を、AIエージェント経済圏という視点で整理した解説。主な柱は4つ：1. AIエージェントへの支払い権限委任を可能にする「Link Agent Wallet」と、マシン間決済の標準規格「Machine Payments Protocol (MPP)」。2. 決済特化型ブロックチェーン「Tempo」のメインネット稼働と、ステーブルコインを活用した160カ国対応の「Treasury」拡張。3. 開発スタック全体をStripe上でプロビジョニングし、請求を統合する「Stripe Projects」。4. 不正検知RadarにおけるAIエージェントと悪意あるbotの峻別機能。Stripeは「インターネットの経済インフラ」から、人の介在を前提としないマイクロトランザクションが主役となる「AIの経済インフラ」へとその定義を再定義しています。特にステーブルコインを計量単位として扱い、銀行ライセンスが届かない地域をも網羅する戦略は、既存の送金プラットフォームに対する大きな脅威となります。",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの効率と精度を最大化するために、CLAUDE.mdでのプロンプト定義やsettings.jsonによるコンテキスト圧縮・ステータスラインのカスタマイズ手法を解説した実践ガイド。",
+    "summaryBody": "Claude Codeを日常的に利用するエンジニアに向けて、作業効率を劇的に改善する「個人ルール設定」のノウハウをまとめた記事です。主なカスタマイズ対象は、グローバル設定ファイル（~/.claude/CLAUDE.md）と環境設定（settings.json）の2点です。具体的には、無駄な挨拶や前置きを排除する「回答スタイル」、git操作の前処理を自動化する「ブランチ管理」、実装の意図を明文化させる「コード説明ルール」といったプロンプト設定を紹介しています。さらに、CLI上にコストやコンテキスト使用率を表示するカスタムステータスラインのスクリプト実装や、回答精度の低下を防ぐために自動コンパクションの閾値をデフォルトの95%から60%へ変更する設定など、開発体験を向上させるための実戦的なTipsが網羅されています。",
     "topics": [
-      "Stripe",
-      "AIエージェント",
-      "フィンテック",
-      "ブロックチェーン",
-      "ステーブルコイン"
+      "Claude Code",
+      "Anthropic",
+      "AI開発ツール",
+      "プロンプトエンジニアリング",
+      "CLI"
     ],
     "scores": {
       "signal": 5,
       "depth": 4,
       "uniqueness": 4,
-      "practical": 4,
-      "antiHype": 3,
-      "mainJournal": 95,
-      "annexPotential": 40,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
       "overall": 92
     }
   }

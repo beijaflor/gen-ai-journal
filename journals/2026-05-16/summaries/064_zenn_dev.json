@@ -1,32 +1,32 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-06T14:11:03.351054+00:00",
+    "generatedAt": "2026-05-11T04:51:51.519957+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "既存ソースコードからAgent Skills を抽出作成する",
-    "url": "https://zenn.dev/srtia2318/articles/organize-info23-skills-gene-23b0b52d0d0bc6",
+    "title": "Claude Code・Codex CLI・Copilot CLI を QCD で比較する（オトナの自由研究 #16）",
+    "url": "https://zenn.dev/nnakapa/articles/lab-16-rpi4-qcd",
     "language": "ja",
-    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "既存のソースコードをAIエージェントに解析させ、プロジェクト固有の規約や設計パターンを「Agent Skills」として自動抽出・定義する手法の提案。",
-    "summaryBody": "既存コードベースのプロジェクトにおいて、独自のコーディング規約や設計パターンの解読は開発者の大きな負担となります。本記事では、GitHub Copilotの「Agent Skills」機能を活用し、既存コードからこれらプロジェクト特有のノウハウを自動抽出して「SKILL.md」を生成するワークフローを紹介しています。具体的には、`skill-creator`というメタスキルを介してClaude 4.7 Opusなどのモデルにコードを読み込ませ、ディレクトリ構造、命名規則、コンポーネントの書き方、DI登録の作法などを言語化・マニュアル化します。抽出されたスキルをエージェントに参照させることで、プロジェクトの暗黙知に基づいた一貫性のあるコード生成が可能になり、既存資産のモダナイズやメンテナンスにおける効率化が期待できます。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code、Codex CLI、GitHub Copilot CLIの3種を品質・コスト・速度のQCD指標で90回試行に基づき定量比較し、実戦的な選び分け基準を提示したベンチマーク記事。",
+    "summaryBody": "AIコーディングエージェントのCLIツール主要3製品を、Raspberry Pi 4環境にて比較検証。ISO/IEC 25010をベースにした5軸の品質評価、APIトークン換算のコスト、実行速度の3側面から90回のテストを実施しています。\n\n検証の結果、品質面では全製品が平均99点台を記録し、本タスクにおいては実質的に互角。速度面ではClaude Codeが他2製品より約35%高速であり、コスト面ではGitHub Copilot CLIが圧倒的に優位（約6〜8倍安価）であることが示されました。\n\n特筆すべきは、静的解析（ruff/bandit等）では検知できない脆弱性や可読性の問題をLLM採点が補完する有用性と、コードレビューの指摘傾向がツールよりも採用モデル（Opus 4.7 vs GPT-5.5）に依存するという発見です。結論として、総合バランスならClaude Code、コスト優先ならCopilot CLIという推奨が導き出されています。",
     "topics": [
+      "Claude Code",
       "GitHub Copilot",
-      "Agent Skills",
-      "AI駆動開発",
-      "プロンプトエンジニアリング",
-      "Blazor"
+      "Codex CLI",
+      "ベンチマーク",
+      "AIエージェント"
     ],
     "scores": {
-      "signal": 4,
-      "depth": 3,
-      "uniqueness": 4,
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
       "practical": 5,
-      "antiHype": 4,
-      "mainJournal": 85,
-      "annexPotential": 65,
-      "overall": 82
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
     }
   }
 }

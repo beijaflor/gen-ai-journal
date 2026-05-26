@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:31:21.639992+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SANA-WM: ハイブリッド線形拡散トランスフォーマーによる効率的な分単位の世界モデリング",
+    "url": "https://nvlabs.github.io/Sana/WM/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIA等の研究チームが開発したSANA-WMは、単一GPUで720p・1分間の高品質な動画生成と精密なカメラ制御を可能にする、2.6Bパラメータのオープンソース世界モデルです。",
+    "summaryBody": "NVIDIA、MIT等の研究チームによるSANA-WMは、1枚の静止画と6自由度（6-DoF）のカメラ軌跡から、最長60秒の720p動画を生成できる効率的な世界モデルです。従来のSoftmaxアテンションに基づくモデルが長尺生成時に直面するメモリ消費増大の課題を、「ハイブリッド線形アテンション（Gated DeltaNetとSoftmaxの統合）」の採用により解決しました。これにより、メモリ効率を維持しながら長期的な一貫性を確保しています。\n\n主な技術的特徴は以下の通りです：\n1. **アーキテクチャ**: 再帰的な特性を持つ線形アテンションを用いることで、計算コストを抑えつつ分単位の動画生成に対応。\n2. **精密な制御**: デュアルブランチ構造により、複雑なカメラパスへの高い追従性を実現。\n3. **2段階生成**: 2.6Bのモデルで生成した動画に対し、専用の17Bリファイナーを適用することで、ディテールと一貫性を強化。\n4. **効率的な推論**: H100単体で1分の動画を生成可能であり、さらに蒸留・量子化（NVFP4）を施したバリアントは、RTX 5090等の一般向けGPUでも高速動作します。\n\n本プロジェクトは、効率的な学習（64枚のH100で15日間）と高い推論スループットを両立し、オープンソースの世界モデルとして新たな基準を提示しています。",
+    "topics": [
+      "世界モデル",
+      "動画生成",
+      "拡散モデル",
+      "NVIDIA",
+      "深層学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer"
+  }
+}

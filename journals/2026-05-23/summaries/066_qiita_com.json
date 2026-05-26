@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:26:00.532975+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM8850 / AIPramid / LLM630 / ModuleLLM で動くモデル183選",
+    "url": "https://qiita.com/nnn112358/items/8cf4809fb3ca31a34fe1",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "M5Stack LLM8850やModuleLLMに搭載されたAXERA製SoCで動作する、LLMや画像認識など183種類の最適化済みAIモデルと活用方法をまとめたリポジトリカタログ。",
+    "summaryBody": "M5StackのLLM8850、AI Pyramid、LLM630 ComputeKit、ModuleLLMに搭載されているAXERA Semiconductor製SoC向けの最適化済みモデル群（全183種）を網羅したリファレンス記事です。AXERA公式のHuggingFaceから収集されたデータを基に、QwenやDeepSeekなどのLLM、Vision-Language Model (VLM)、音声合成・認識（TTS/ASR）、YOLOシリーズなどの画像認識モデルが整理されています。\n\n主な内容は以下の通りです：\n- **ハードウェア仕様**: AX650N（24 TOPS）およびAX630C（3.2 TOPS）のNPU性能と、専用コンパイラ「Pulsar2」による.axmodel形式への変換プロセスについて解説。\n- **モデル対応表**: カテゴリ別にAXERA配布版とオリジナルモデルの対応表を提供し、用途に応じた選択を支援。\n- **命名規則の解説**: リポジトリ名に含まれる量子化（GPTQ-Int4）、コンテキスト長（CTX）、事前処理サイズ（Cxxx/Pxxx）などのサフィックスの意味を定義。\n\nエッジAIデバイス上での推論実装を検討している開発者にとって、モデルの選定からダウンロード、仕様把握までを一貫して行える実用的なカタログとなっています。",
+    "topics": [
+      "M5Stack",
+      "AXERA",
+      "Edge AI",
+      "Hugging Face",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:51:03.098748+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント 1.0 向けの Chrome DevTools で AI コーディング ワークフローを効率化",
+    "url": "https://developer.chrome.com/blog/devtools-for-agents-v1",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントがブラウザを直接操作・デバッグするためのツールキット「Chrome DevTools for Agents」の安定版1.0がリリースされ、MCP対応や自動監査、メモリ解析機能が利用可能になりました。",
+    "summaryBody": "Googleは、AIコーディングエージェントがウェブサイトをリアルタイムで検証・デバッグ・最適化できるようにするためのツール「Chrome DevTools for Agents」のバージョン1.0（安定版）をリリースしました。これまでAIエージェントはコード生成には強力でしたが、ブラウザ実行時の挙動確認には制限がありました。本ツールはModel Context Protocol (MCP) やCLI、専門的な「エージェントスキル」を提供することで、このギャップを埋めます。主な機能として、Lighthouseによる自動品質監査、デバイスやネットワーク環境のエミュレーション、Chrome拡張機能のデバッグ、そしてメモリリークの検出などが挙げられます。また、WebMCPのサポートにより、エージェントがDOM構造を推測するのではなく、構造化されたツールと直接やり取りできるようになります。Antigravity、Gemini CLI、Claude Codeといった主要なAIツールへの統合も容易になっています。",
+    "topics": [
+      "Chrome DevTools",
+      "AI Agents",
+      "MCP (Model Context Protocol)",
+      "Web Development",
+      "Debugging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:23:10.778262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "音声AIシステムに潜む脆弱性：人には聞こえない音でAIを「ハイジャック」可能",
+    "url": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人間には聞こえない微弱な音声信号をオーディオクリップに混入させることで、大規模音声言語モデル（LALM）を不正に操作し、メール送信やファイル共有などの実行を強制できる攻撃手法「AudioHijack」が発表された。",
+    "summaryBody": "IEEE Symposium on Security and Privacyで発表される研究により、大規模音声言語モデル（LALM）に対する深刻なセキュリティ脆弱性が明らかになりました。浙江大学の研究チームが開発した「AudioHijack」は、デジタル音声の波形を微調整することで、人間には判別不可能な攻撃命令を音声データに埋め込みます。\n\n### 主な特徴と影響\n- **高い成功率**: 13種類の主要なオープンモデルに対し、平均79%〜96%という極めて高い成功率でモデルの挙動を制御可能。\n- **コンテキスト非依存**: ユーザーがどのような指示を併せて出しても攻撃が有効であり、一度作成した信号を繰り返し再利用できます。\n- **実害のリスク**: 機密情報のWeb検索、攻撃者サーバーからのファイルダウンロード、ユーザーデータを含むメールの送信などを強制される可能性があります。\n- **転移性**: オープンモデルを対象に開発された攻撃手法が、同様のアーキテクチャを持つMicrosoftやMistralの商用モデルにも転移することが確認されています。\n\nこの攻撃はLALMの「注意機構（Attention Mechanism）」を巧みに操り、モデルに攻撃信号を優先的に処理させることで成立します。既存の検知・防御策の多くを回避するため、マルチモーダルAIの安全設計における新たな課題となっています。",
+    "topics": [
+      "音声AI",
+      "サイバーセキュリティ",
+      "アドバーサリアル攻撃",
+      "大規模音声言語モデル (LALM)",
+      "インジェクション攻撃"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Voice AI Systems Are Vulnerable to Hidden Audio Attacks"
+  }
+}

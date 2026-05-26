@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-19T16:21:20.345332+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Project Glasswing：Mythosが示したセキュリティLLMの真価",
+    "url": "https://blog.cloudflare.com/cyber-frontier-models/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CloudflareがAnthropicのセキュリティ特化型LLM「Mythos Preview」を検証し、脆弱性の連鎖構築や実証コード生成における高い能力と、それを実用化するための専用実行基盤（ハーネス）の重要性を報告している。",
+    "summaryBody": "Cloudflareは、Anthropicの最新セキュリティLLM「Mythos Preview」を50以上の自社リポジトリでテストした結果を公開しました。主な発見として、同モデルは複数の軽微なバグを組み合わせて深刻な攻撃シナリオを構築する「エクスプロイトチェーンの構築」や、実際にコードを書いて検証する「実証（PoC）生成」において、従来の汎用モデルを大きく上回る性能を示しました。一方で、汎用的なコーディングエージェントをそのまま大規模なコードベースに適用しても、コンテキスト制限やスループットの課題から十分な網羅性は得られないことも判明しました。これに対しCloudflareは、偵察、探索、検証、到達可能性の追跡など、タスクを細分化して並列実行する独自の「実行基盤（ハーネス）」を構築し、モデルの推論能力を最大限に引き出す手法を確立しました。結論として、AIにより攻撃サイクルが加速する未来では、単なるパッチ適用の高速化ではなく、脆弱性が存在しても攻撃を無効化できる「防御的なアーキテクチャ設計」の重要性が増すと提言しています。",
+    "topics": [
+      "LLM",
+      "Cybersecurity",
+      "Anthropic Mythos",
+      "Cloudflare",
+      "Vulnerability Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Project Glasswing: what Mythos showed us"
+  }
+}

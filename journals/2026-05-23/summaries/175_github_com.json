@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:21:17.359516+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "分散システムテストのためのAIエージェント・スキル集",
+    "url": "https://github.com/shenli/distributed-system-testing",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "分散システムの「主張（Claims）」に基づいたテスト計画の立案と実行を、AIコーディングエージェントが自律的に行えるようにする再利用可能なスキル定義。",
+    "summaryBody": "本リポジトリは、Claude CodeやCursorといったAIエージェント向けに、分散システムおよびステートフルなシステムの検証を高度化する「スキル」を提供します。ネットワーク分断や非決定的な並行性、クラッシュ復旧など、従来のテストでは発見が難しいバグを特定するために、製品の主張（Claims）から逆算する設計思想を採用しています。主な構成要素は、カオスエンジニアリングや決定論的シミュレーションなどの手法を選択してテスト計画を策定する「設計スキル」と、実際にテストを実行し、9段階の判定結果やエラーの帰属先（SUT、環境、チェッカー等）を詳述したレポートを生成する「実行スキル」です。JepsenやElleといった既存の検証ツール、および学術的文献に基づいた技術カタログが統合されており、AIによる高度な分散システム検証を実現します。",
+    "topics": [
+      "Distributed Systems",
+      "Software Testing",
+      "AI Agents",
+      "Chaos Engineering",
+      "Reliability Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "shenli/distributed-system-testing: AI-agent skills for distributed-systems testing"
+  }
+}

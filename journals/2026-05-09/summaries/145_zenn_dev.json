@@ -1,22 +1,22 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-05-01T09:43:28.069444+00:00",
+    "generatedAt": "2026-05-09T06:05:04.350586+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Cursorのモデル選択UIをちゃんと理解する",
-    "url": "https://zenn.dev/knowledgework/articles/f41bdc6ac95b1d",
+    "title": "AIのPlan Modeをなんとなく承認しないために",
+    "url": "https://zenn.dev/lv/articles/9438e1678c873a",
     "language": "ja",
-    "contentType": "💡 Tutorial & How-to (チュートリアル)",
-    "oneSentenceSummary": "Cursorのモデル選択UIにおける各モード（Auto/Premium等）の詳細な違いや、モデルごとの「Edit」メニューから設定可能な推論・コンテキストの調整方法を解説しています。",
-    "summaryBody": "AIエディタ「Cursor」のモデル選択ドロップダウンにある各機能と、意外と知られていない詳細設定（Edit）の活用法を解説した記事です。\n\n### 主な内容\n- **4つの基本モード**: コンテキストを最大化する「MAX Mode」、複数モデルで並列実行する「Use Multiple Models」、効率重視の「Auto」、品質優先の「Premium」の使い分けと料金面への影響を整理。\n- **Editメニューの活用**: 各モデルの横にある歯車アイコンから、コンテキストウィンドウの拡張（1Mトークン等）や推論の深さ（EffortやReasoning）、ThinkingのON/OFFを個別設定できる点を詳述。モデルごとに設定項目が異なるトラップについても触れています。\n- **実践的な使い分け**: 著者は作業の7〜8割を高速な「Composer 2」でこなし、複雑なロジックや調査で詰まった際に、設定を強化した「GPT-5.4」や「Opus 4.7」へ昇格させる運用フローを紹介。\n\n「モデルを変える前に、今のモデルの設定を一段上げてみる」という選択肢を持つことで、開発のリズムを崩さずに高難度タスクを突破する具体的なテクニックを提案しています。",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの提案する実装計画を盲信せず、事前に「受け入れ条件」を既存情報から整理し、根拠・手順・確認方法の4観点でレビューする実践的ワークフローの提案。",
+    "summaryBody": "Claude CodeやCodexが提供する「Plan Mode」において、AIが提示するもっともらしい計画を開発者が安易に承認してしまう課題を考察しています。著者は「Plan（どう作るか）」と「受け入れ条件（何を満たすか）」を明確に分離することを提唱。AIには条件を決めさせるのではなく、既存のコード、Figma、Issue等から条件の『候補』を抽出させ、人間がそれらを『参照元あり・仮説・要確認』に分類・整理することで、タスクのメンタルモデルを構築する重要性を説いています。最終的に、AIの計画を『根拠・受け入れ条件・実装手順・確認方法』の4つの軸で評価することで、AIの『完了しました』を鵜呑みにしない、確実性の高い開発プロセスを実現する手法をまとめています。",
     "topics": [
-      "Cursor",
-      "LLM",
-      "AIエディタ",
-      "GPT-5.4",
-      "Claude 3.5 Opus"
+      "AI Agent",
+      "Claude Code",
+      "開発プロセス",
+      "受け入れ条件",
+      "プロンプトエンジニアリング"
     ],
     "scores": {
       "signal": 5,
@@ -24,9 +24,9 @@
       "uniqueness": 4,
       "practical": 5,
       "antiHype": 4,
-      "mainJournal": 92,
-      "annexPotential": 15,
-      "overall": 90
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:23:48.379211+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードレビューを6段階にしたら、AIと人間の分業が見えた",
+    "url": "https://zenn.dev/kenimo49/articles/code-review-6-stages-ai-human-boundary",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIと人間の役割をコードレビューの6段階で再定義し、AIの得意分野と人間が責任を持つべき「ロジック層」以降の境界線を明確にする手法を解説した記事。",
+    "summaryBody": "AIコードレビューツールの普及により「AIが通したから大丈夫」という過信からバグを見逃すリスクが増大しています。著者はこの課題に対し、レビューをFormat、Lint、Style、Logic、Design、Architectureの6段階に分けるモデルを提案しています。  \n\n- **自動化領域 (Stage 1-3):** FormatやLintは100% AIに任せ、Style（命名等）も90%はAIの指摘を活用します。  \n- **人間が注力すべき領域 (Stage 4-6):** ロジック層（Logic）はAIの検出率が6割程度に留まる「最も危険な中間ゾーン」であり、AIが指摘しなかった部分を人間が仕様書と照らして確認する運用が重要です。さらにDesignやArchitectureといった高次の判断は、未来の拡張性やチーム固有の文脈が絡むため、人間が100%の責任を負うべきとしています。  \n\n「Approve」という行為の重みを再定義し、AIの利便性を享受しつつ品質責任を放棄しないための、実践的なエンジニアリングマネジメント論です。",
+    "topics": [
+      "コードレビュー",
+      "GitHub Copilot",
+      "CodeRabbit",
+      "生産性向上",
+      "AI開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

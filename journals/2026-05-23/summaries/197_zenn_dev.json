@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-22T10:27:08.769322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex Petsで学ぶSkill設計",
+    "url": "https://zenn.dev/terass_dev/articles/a2423e49ece071",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codex Appの「hatch-pet」スキルの内部構造を分析し、LLMの創造性とコードによる厳密な制約を組み合わせた、AIエージェント時代の高度なワークフロー設計手法を解説する記事です。",
+    "summaryBody": "Codex Appのデスクトップマスコット作成スキル「hatch-pet」の設計から、AIエージェントのスキル開発における重要なプラクティスを抽出しています。主なポイントは、LLMに「かわいさ」や「ポーズ」などの非定形な生成を任せる一方で、フレーム数、セルサイズ、透明度といった構造的制約はコード（Pythonスクリプト）で厳密に管理するという役割分担です。特に、LLMにテキストだけでなく「レイアウトガイド画像」を参照させて生成品質を担保する手法や、機械的なバリデーションと動画生成による視覚的QAを組み合わせるワークフローは、実用的なAIスキル設計の優れた手本となっています。著者は、Skillとは単なる長いプロンプトではなく、LLMとコードが協調する「ワークフロー設計」そのものであると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "Codex Pets",
+      "スキル設計",
+      "LLM",
+      "ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

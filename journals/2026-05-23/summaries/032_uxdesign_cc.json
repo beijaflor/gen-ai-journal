@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:55:43.775425+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIプロダクトにおける「元に戻す（Undo）」機能の欠損問題",
+    "url": "https://uxdesign.cc/the-undo-problem-in-ai-products-c90ff080de3b",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIプロダクトが、50年にわたるPC史の基本原則である「Undo（Cmd+Z）」を軽視し、複雑な「ブランチ（分岐）」機能で代用している現状のUXの欠陥を指摘する論考。",
+    "summaryBody": "1987年のMacintosh以来、Cmd+Z（Undo）は「ユーザーの誤りを許容し、試行錯誤を促進する」ための不可欠なデザイン要素であった。しかし、現在のChatGPTやClaude、GeminiなどのAI製品は、チャットUIという不適切な骨組みを継承した結果、この基本的な可逆性を実装していない。代わりに提供されている「再生成」や「ブランチ」は、操作コストが高く、ユーザーはデータの喪失を恐れて「全選択コピー」や「スクリーンショット」といった独自の防衛策を強いられている。著者のアディ・レヴィム氏は、AI UXが成熟するためには、モデル中心の思考を脱却し、HCIの基本原則に基づいた「1キーでの可逆性」や「スタック型の履歴管理」を実装すべきだと提唱している。",
+    "topics": [
+      "UXデザイン",
+      "生成AI",
+      "HCI",
+      "インターフェース設計",
+      "可逆性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The undo problem in AI products. AI products inherited fifty years of… | by Adi Leviim | May, 2026 | UX Collective"
+  }
+}

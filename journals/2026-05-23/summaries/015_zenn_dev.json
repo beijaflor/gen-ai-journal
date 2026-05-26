@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:24:18.396938+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGナレッジベース作成を容易にするCLIツール「mrag」の紹介",
+    "url": "https://zenn.dev/bathtimefish/articles/80a22a045795f0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ローカル環境で動作し、高度なチャンキングや多彩な検索戦略、AIエージェント連携機能を備えた小規模RAG構築用CLIツール「mrag」が登場しました。",
+    "summaryBody": "本記事では、ローカル環境で完結する小規模なRAG（検索拡張生成）パイプラインを構築・運用するためのCLIツール「mrag (Micro RAG)」について解説しています。既存のツールでは実現が難しかった「デスクトップエージェント向けのナレッジベースをローカルでクイックに作成したい」というニーズに応える設計となっています。\n\n主な特徴は以下の通りです：\n- **技術スタック**: Python, SQLite, Qdrant, Ollamaを基盤とし、日本語対応の形態素解析（Vaporetto）を統合。\n- **高度な検索機能**: ハイブリッド検索（BM25+ベクトル）、Parent-Child Retrieval、Anthropic流のContextual Retrieval（コンテキスト拡張）をサポート。\n- **チャンキング最適化**: Markdownの表構造やコードブロックを認識するアトミックなチャンキング機能を搭載。\n- **エージェント親和性**: AIエージェント（Claude Code等）に操作手順を教える「SKILL.md」が同梱されており、自律的なナレッジ構築が可能。\n- **外部連携**: Difyの外部ナレッジAPI仕様に準拠したサーバーを起動でき、Difyからの利用も容易です。\n\nプライバシーを考慮しつつ、手元のドキュメントを即座にRAG化してエージェントを強化したい開発者に最適なツールとなっています。",
+    "topics": [
+      "RAG",
+      "Python",
+      "Ollama",
+      "LLM",
+      "CLIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

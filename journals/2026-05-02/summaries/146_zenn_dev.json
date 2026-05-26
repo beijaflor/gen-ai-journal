@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-01T09:43:07.237778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間が寝ている間にClaude CodeがPlaywrightのE2Eテストを直してPRを出す",
+    "url": "https://zenn.dev/yuden/articles/playwright-auto-heal-claude-code",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub ActionsとClaude Codeを連携させ、夜間に失敗したPlaywrightのE2EテストをAIが自動で分析・修正し、翌朝までに修正案のDraft PRを作成するオートヒールの仕組みを紹介しています。",
+    "summaryBody": "この記事では、夜間の定期実行で失敗したE2EテストをClaude Codeを用いて自動修復（オートヒール）するワークフローの構築事例が解説されています。GitHub Actions上でテスト失敗を検知すると、Claude Code CLIが起動し、Playwrightのレポートと事前に定義された「QAナレッジベース（instructions）」を参照して修正案を作成、Draft PRを自動生成します。特に、rowspanを含む複雑なテーブル構造のXPath修正など、AIによる高度な推論が必要なケースでの成功例や、不用意なタイムアウト延長を防ぐための指示の与え方、セキュリティを考慮したツール実行制限（--allowedTools）の設定など、実践的な運用ノウハウが凝縮されています。プロダクトコードの参照ができない制約下でも、テストコードの設計（POM/Fixtures）を整えることで高い精度で修正が可能であることを示しています。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "E2Eテスト",
+      "GitHub Actions",
+      "オートヒール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 95
+    }
+  }
+}

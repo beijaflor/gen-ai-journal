@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-20T04:52:49.607940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareにおけるClaude Managed Agentsの提供開始：Anthropicとの提携によるセキュアなエージェント実行環境",
+    "url": "https://blog.cloudflare.com/claude-managed-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareとAnthropicが提携し、Claudeの推論能力とCloudflareの強力なサンドボックス・ネットワーク機能を統合したAIエージェント実行基盤を発表しました。",
+    "summaryBody": "CloudflareはAnthropicとの協力により、Claude Managed AgentsをCloudflareのインフラ上で動作させる新機能を発表しました。この統合により、AIの「知能（脳）」をAnthropicのプラットフォームに、コード実行やネットワーク接続といった「実務（手）」をCloudflareのサンドボックスに分離して管理できるようになります。\n\n主な利点として、V8 Isolateベースの軽量サンドボックスによるミリ秒単位の起動と圧倒的なコスト効率、またはMicroVMベースのフルLinux環境の選択が可能です。セキュリティ面では、カスタムプロキシを介した認証情報の注入やデータ漏洩防止が強化されており、Cloudflare MeshやWorkers VPCを利用して社内プライベートサービスへ安全に接続できます。また、ブラウザ操作（Browser Run）やメールツールの標準搭載に加え、Workersを用いたカスタムツールの定義も容易です。これにより、開発者はセキュアかつ大規模にスケールするAIエージェントを迅速に構築・運用できる環境を手に入れることになります。",
+    "topics": [
+      "AIエージェント",
+      "Cloudflare Workers",
+      "Anthropic Claude",
+      "サンドボックス",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Announcing Claude Managed Agents on Cloudflare"
+  }
+}

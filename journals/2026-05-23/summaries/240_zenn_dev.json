@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-23T03:22:39.590362+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ZenkakuHiraganaさんのPRで将軍がOpenCode対応、そしてまた183ドル溶けた",
+    "url": "https://zenn.dev/shio_shoppaize/articles/shogun-opencode-v5-openrouter",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "マルチエージェントAIコーディングシステム「multi-agent-shogun」がOpenCodeに対応し、OpenRouter経由で多様な最新AIモデルを軍団の構成員として利用可能になりました。",
+    "summaryBody": "マルチエージェントAIコーディング環境である「multi-agent-shogun」が、コミュニティからの大規模なプルリクエストによりOpenCodeに正式対応しました。これにより、従来のClaude CodeやGitHub Copilotなどの特定CLIに加え、OpenRouter経由でDeepSeek V4 ProやMiniMax M2.5といった多様なモデルを「将軍」「家老」「足軽」といった各ロールに割り当てることが可能になりました。\n\n実装面では、OpenCodeのエージェント定義ファイルを既存の共通インストラクション・ビルドの仕組みに統合。役割ごとの権限設定やインボックス連携を維持しつつ、プロバイダーの制約を越えた自由なモデル選択を実現しています。実戦検証として行われたOpenRouter経由でのSWE-benchテストでは、モデルの性能を確認できた一方で、並列実行によるAPIコストが183ドルに達した教訓も共有されています。今回のアップデートは、特定プラットフォームへの依存を減らし、OSSとしての門戸を広げる重要な一歩となりました。",
+    "topics": [
+      "multi-agent-shogun",
+      "OpenCode",
+      "OpenRouter",
+      "AIエージェント",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

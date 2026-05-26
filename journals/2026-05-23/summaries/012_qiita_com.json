@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-18T00:23:39.381903+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Batch APIで「マルチターンができない」とは？",
+    "url": "https://qiita.com/yohei-aoki/items/fc3faf20a012dce88bfd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Batch APIにおける「マルチターン不可」の真意が、履歴の送信制限ではなく、tool_useを伴うエージェントループが不可能であることを指している点について解説した記事。",
+    "summaryBody": "Claude Batch APIにおける「マルチターン」の制約について、公式ドキュメントと学習ガイドの相違を紐解き、技術的背景を詳しく解説しています。結論として、過去のメッセージ履歴を含めてリクエストを送る「マルチターン会話」は可能ですが、AIがツール実行を要求しクライアントが結果を返すという「エージェントループ（マルチターンツール呼び出し）」は、非同期処理の性質上サポートされていません。Batch APIを効果的に活用するためには、実行時にツールへ依存するのではなく、あらかじめ必要な情報をプロンプト内に収集・集約して送信する設計が重要であると結論付けています。",
+    "topics": [
+      "Claude",
+      "Batch API",
+      "Anthropic",
+      "LLM",
+      "API設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}
