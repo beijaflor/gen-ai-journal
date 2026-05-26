@@ -94,15 +94,16 @@ AIエージェントの性能を左右するのはモデルそのものよりも
 
 ### Theme 6: カウシェ・NOT A HOTEL・Progateに見るAI駆動開発の組織実装とレビュー設計
 
-**Articles (IDs):** 131, 138, 137
+**Articles (IDs):** 131, 138, 137, 162
 
 **Theme Introduction (Japanese):**
-AI駆動開発を個人の効率化から組織の仕組みへ落とし込む国内事例が出そろった。Agent Teamsによる並列実装で1日平均15.8件のPRを実現したカウシェ、4レイヤーで安全な運用体制を築いたNOT A HOTEL、人間のボトルネック化を防ぐ「PRレビュー1時間以内」ルールのProgateと、実装・統制・レビューの各側面を扱う。
+AI駆動開発を個人の効率化から組織の仕組みへ落とし込む国内事例が出そろった。Agent Teamsによる並列実装で1日平均15.8件のPRを実現したカウシェ、4レイヤーで安全な運用体制を築いたNOT A HOTEL、人間のボトルネック化を防ぐ「PRレビュー1時間以内」ルールのProgate、そしてPR時点でなく本番挙動でリリース可否を判断するサイバーエージェントの「ランタイムレビュー」と、実装・統制・レビューの各側面を扱う。
 
 **Editorial Notes:**
 - 131: カウシェのAI駆動並列開発。PRD管理・並列実装計画・Agent Teams・自己改善ループで1日平均15.8件のPR — リード
 - 138: NOT A HOTELがClaude Code導入で構築した4レイヤー（シャドーIT防止・ガードレール・コスト・組織展開）
 - 137: ProgateのPRレビュー1時間以内ルールが解決した組織課題と生産性向上
+- 162: サイバーエージェントの「ランタイムレビュー」。PR時点でなく本番環境の振る舞いでリリース可否を判断する手法（👍 upvote、当初annex候補→人手判断でメインへ）
 
 ---
 
@@ -146,6 +147,7 @@ AI駆動開発を個人の効率化から組織の仕組みへ落とし込む国
 **👍 Upvoted Articles Used:**
 - 078 → Theme 1（Gemini Spark / Supporting）
 - 038 → Theme 5（Agent Skills研究 / Supporting）
+- 162 → Theme 6（ランタイムレビュー / Supporting）※当初annex候補→人手判断でメインへ移動
 
 **👎 Downvoted Articles:**
 - 067（VAUDフレームワーク）→ 主テーマから除外
@@ -169,11 +171,13 @@ AI駆動開発を個人の効率化から組織の仕組みへ落とし込む国
 - Theme 3 (収益性・IPO): 4 articles
 - Theme 4 (セキュリティ): 4 articles
 - Theme 5 (ハーネスエンジニアリング): 4 articles
-- Theme 6 (組織実装): 3 articles
+- Theme 6 (組織実装): 4 articles
 - Theme 7 (バイブ・コーディング論): 3 articles
 
-**Total Planned for Main:** 26 articles
-**Remaining for Annex:** 44 pre-flagged candidates (to be narrowed in STEP_05)
+**Total Planned for Main:** 27 articles
+**Remaining for Annex:** STEP_05で確定（人手レビューで27候補に絞り込み、162はメインへ移動）
+
+> Deviation note (STEP_04/05): 162（サイバーエージェント「ランタイムレビュー」）は当初annex候補だったが、ユーザー判断でTheme 6へ移動。メインは26→27本に。
 
 ---
 

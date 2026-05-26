@@ -40,6 +40,7 @@
 - [ ] 131. https://zenn.dev/kauche/articles/20260518_ai_driven_development_kauche_farm_mini
 - [ ] 138. https://note.com/kajinari/n/n6494b35a4826
 - [ ] 137. https://levtech.jp/media/detail_860/
+- [ ] 162. https://developers.cyberagent.co.jp/blog/archives/63860/
 
 ## Theme 7: Martin Fowlerの定義と懐疑論・役割再定義が問うバイブ・コーディングの有効性
 

@@ -140,7 +140,6 @@
 - [x] 158. https://goodpatch.com/blog/2026-05-prototype
 - [x] 159. https://www.figma.com/blog/the-figma-agent-is-here/
 - [x] 161. https://blog.val.town/slow-mode
-- [x] 162. https://developers.cyberagent.co.jp/blog/archives/63860/
 - [x] 163. https://www.lukew.com/ff/entry.asp?2153
 - [x] 164. https://webframp.com/posts/the-workflow-collision/
 - [x] 165. https://blog.murphytrueman.com/your-design-system-might-be-ai-ready/
