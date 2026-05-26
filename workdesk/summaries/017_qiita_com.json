@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:36:01.978873+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawで脆弱性情報収集と自社システムチェック判定を定期自動稼働させた",
+    "url": "https://qiita.com/taks/items/5ba334aca2ecb8276e8c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenClawのcron機能を活用し、脆弱性情報を自動収集・フィルタリングして自社サーバーインベントリと照合することで、初動判断を迅速化する自動化の仕組み。",
+    "summaryBody": "OpenClawを用いて脆弱性管理の初動判断を自動化した事例の紹介。CISA KEVやNVD、各種ベンダーのアドバイザリを定期的に取得し、Linux/AWS/PHPなどの特定のキーワードかつHigh/Critical以上の重要度に絞ってフィルタリングを行う。最大の特徴は、Markdown形式で記述されたサーバーインベントリと照合することで、Slack通知時に「どの自社サーバーに影響があるか」や「具体的なチェックポイント」を明記している点。AI（ChatGPT 5.5等）を開発や要約の補助に使いつつ、判定ロジックは決定的なスクリプトで構築することで、情報の見落としや誤検知のバランスを保ち、運用の実効性を高めている。",
+    "topics": [
+      "脆弱性管理",
+      "OpenClaw",
+      "セキュリティ自動化",
+      "Slack通知",
+      "CVE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

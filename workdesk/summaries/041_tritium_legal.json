@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:29:11.757570+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Noroboto: 虚偽フォントによるAIへの攻撃とRustによる防御策",
+    "url": "https://tritium.legal/blog/noroboto",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "フォントのUnicodeマッピングを細工してAIエージェントに誤った情報を読み取らせる「Noroboto」攻撃の手法と、OCRを用いたRustによる検知・防御の実装が解説されています。",
+    "summaryBody": "この記事は、2026年のリーガルテック環境において懸念される、フォント埋め込み仕様を悪用した新しい攻撃手法「Noroboto」について詳述しています。この攻撃は、フォントのUnicode文字写像（cmap）を意図的に書き換えることで、人間の目には正しく見えるグリフを表示しつつ、AIのテキスト抽出プロセスには全く異なる情報を与えるものです。具体的な手法として、テキストを読解不能にする「完全難読化」や、特定の用語を別の単語に置き換える「置換攻撃（例：MarylandをDelawareと認識させる）」が紹介されています。筆者は、最新のLLMエージェントが計算コストの高いOCR処理を避け、文書内のテキストデータを優先的に信頼する「怠慢さ」を突くこの手法の有効性を指摘しています。対策として、Rust言語を用いた「Tritium」プロジェクトでの実装例を紹介。埋め込まれたフォントからグリフのアトラスを生成し、OS標準のOCR機能を用いてレンダリング結果とUnicode値の整合性を検証する、実用的かつ堅牢な防御アプローチを提示しています。",
+    "topics": [
+      "Cybersecurity",
+      "LegalTech",
+      "Rust",
+      "Large Language Models",
+      "Typography"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Noroboto: Lying Fonts and Mitigation in Rust"
+  }
+}

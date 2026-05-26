@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:35:16.404717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WhisperローカルとGemini 2.5 Flashで講義録アプリを作った──構成と技術選定の解説",
+    "url": "https://zenn.dev/haruto_miyakawa/articles/4b7754712b7585",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ローカル環境でのWhisper実行とGemini 2.5 Flashの広範なコンテキスト窓を組み合わせ、低コストかつ高精度な講義録生成を実現したWebアプリの設計思想と実装の解説。",
+    "summaryBody": "本記事は、Next.jsとPythonを組み合わせた講義録作成アプリの個人開発における技術選定と設計判断を詳説しています。文字起こしをローカルGPU上のWhisper large-v3で行うことでAPIコストをゼロにし、要約や専門用語の補正にはGemini 2.5 Flashのマルチモーダル入力（inlineData）を活用して、外部Vector DBを使わずに高精度なRAGを実現しています。主な技術的工夫として、SSEを用いた実行進捗のリアルタイム通知、ハルシネーション検知時の自動リトライ、商用利用を見据えたMITライセンスの「simple-diarizer」の採用、Windows環境下でのエンコーディング対応などが挙げられます。個人開発においてコスト効率と実用性を両立させるためのアーキテクチャの好例です。",
+    "topics": [
+      "Whisper",
+      "Gemini API",
+      "Next.js",
+      "音声認識",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

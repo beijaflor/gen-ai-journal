@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:31:12.190046+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Dart開発をAIエージェントで効率化する「Agent Skills for Dart」",
+    "url": "https://github.com/dart-lang/skills",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Dart公式チームが提供する、AIエージェントに特定の手順やドメイン知識を付与し、テスト作成やエラー修正などの開発ワークフローを自動化するためのスキルセット集。",
+    "summaryBody": "Agent Skills for Dartは、GitHub CopilotなどのAIエージェントがDart開発のベストプラクティスに従ってタスクを遂行できるように設計されたワークフローのコレクションです。MCP（Model Context Protocol）がエージェントに外部ツールへのアクセス権を与えるのに対し、本プロジェクトはそれらのツールを特定のタスクでどう活用すべきかという「専門知識」を教え込みます。主なスキルには、ユニットテストの自動生成、CLIアプリケーションの構造作成、ランタイムエラーの自己修正、パッケージ競合の解決、静的解析の実行などが含まれます。`npx skills`コマンドを通じてプロジェクトに導入でき、エージェントの推論エラーを減らし、開発者の意図に沿った高品質なコード生成と保守を支援します。",
+    "topics": [
+      "Dart",
+      "AI Agents",
+      "LLM",
+      "GitHub Copilot",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Agent Skills for Dart"
+  }
+}

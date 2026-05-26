@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:38:27.987869+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code に質の高いPR書かせる Google Engineering Practices 食わせたスキル",
+    "url": "https://izanami.dev/post/e63c7bfd-cc85-4421-a4e7-776e93fb8720",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeにGoogleのエンジニアリング規約を原文のまま辞書として参照させることで、情報の劣化を防ぎつつ高品質なPR作成と出荷判断を実現するスキルの構築手法。",
+    "summaryBody": "Claude Codeの新機能「スキル」を活用し、Googleが公開しているコードレビュー基準（Google Engineering Practices Documentation）をAIに効果的に学習・参照させるための実践的ガイドです。著者は、情報を日本語に要約（distill）してAIに与えると重要な観点が抜け落ちる「情報のドリフト」が発生することを指摘し、代わりに「薄い手順（SKILL.md）＋厚い辞書（原文のMarkdown群）」という設計を提唱しています。具体的には、`.claude/skills/`配下に原文をそのまま同梱し、必要に応じて1ファイルずつオンデマンドで読み込ませることで、コンテキスト効率と精度の両立を図っています。この手法により、AIが「修正必須（blocking）」と「磨き（nit）」を自ら判断し、例外処理の不備やPRの肥大化を的確に指摘できるようになった事例が紹介されています。",
+    "topics": [
+      "Claude Code",
+      "Google Engineering Practices",
+      "AIエージェント",
+      "コードレビュー",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

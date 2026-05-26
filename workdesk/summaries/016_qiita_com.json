@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:36:22.697507+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った",
+    "url": "https://qiita.com/hiropon122/items/a8274aef2a4c882197d6",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの会話履歴から改善点を自動抽出し、GitHub IssuesとPRを通じてAIエージェントのスキルを継続的に自己改善させる仕組みの構築事例。",
+    "summaryBody": "Claude Codeの「Routines」機能を活用し、開発スキル定義ファイル（SKILL.md）を自律的に改善するワークフローの構築記録です。開発セッションの履歴（jsonl）から「ユーザーによる訂正指示」や「無限ループ」などの不調シグナルを検出し、GitHub Issuesに自動起票。その後、無人運転用に特化した「triageスキル」がIssueを読み取り、修正・検証・PR作成までを自動で行います。品質担保のため、Edit意図の達成度検証、構造レビュー、公開リポジトリへの秘密情報漏洩チェックの3段階ゲートと収束ループを実装。3週間の運用で40件以上の自動改善PRを作成しており、非対話環境でのツール実行許可ダイアログの回避策など、実運用における詳細な知見も共有されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "GitHub",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

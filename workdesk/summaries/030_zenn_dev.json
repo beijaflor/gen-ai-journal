@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:32:30.898121+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Karpathy CLAUDE.mdは本当に普遍解か？──Opus 4.7との構造的合致と、モデル依存性のはなし",
+    "url": "https://zenn.dev/earlgray_mk/articles/472ef76d9e9d3e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Karpathy CLAUDE.mdが流行したのはOpus 4.7の特性と合致したためであり、モデルごとの特性（ランタイム）に合わせた運用の重要性を説く。",
+    "summaryBody": "Karpathy CLAUDE.md（Forrest Chang氏作成）が急速に普及した背景には、Claude Opus 4.7の「指示を文字通りに解釈する」性質と「agentic stamina（多段階実行力）」の向上との構造的な合致があります。本記事では、CLAUDE.mdを「自然言語で書かれたコード」、モデルをその「ランタイム」と定義し、モデルのバージョンによってその挙動や効果が大きく変わることを指摘しています。\n\n特に「Goal-Driven Execution（目標駆動型の実行）」の原則はモデルの自走力に依存するため、能力が不足するモデルで適用すると逆効果（ポンコツ化）を招くリスクがあります。組織でのAI活用においては、CLAUDE.mdを単なるコピペ用ファイルではなく、想定モデルを明記し、モデルの更新に合わせてメンテナンスし続ける「育てていくドキュメント」として扱うべきであると提言しています。AIネイティブな組織成熟度の指標として、CLAUDE.mdの依存性管理を導入することを推奨しています。",
+    "topics": [
+      "CLAUDE.md",
+      "Claude Opus 4.7",
+      "Andrej Karpathy",
+      "AI Coding",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

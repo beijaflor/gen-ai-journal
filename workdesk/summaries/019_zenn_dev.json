@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:35:30.733769+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社内の知見をAIが漏らさず拾う唯一の設計思想 ― Karpathy氏のLLM Wikiを実践して分かったこと",
+    "url": "https://zenn.dev/nori_handa/articles/llm-knowledge-base-karpathy-wiki",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Andrej Karpathy氏のLLM Wiki思想に基づき、社内ドキュメントをLLMが消化しやすい構造へ事前に「コンパイル」することでRAGの精度を劇的に向上させる設計手法の解説。",
+    "summaryBody": "従来のRAG（検索拡張生成）が抱える「検索精度が出ない」という課題に対し、Andrej Karpathy氏が提唱する「LLM Wiki」やPineconeの「Nexus」といった最新の設計思想を用いた解決策を提示しています。筆者は、精度不足の根本原因はドキュメントの「入れ方」にあり、生のデータをそのままチャンク化するのではなく、LLMに読ませて構造化・整理されたWikiページ群として保持する「知識のコンパイル」が不可欠であると説きます。具体的には、raw（生データ）、Wiki本体、スキーマの三層構造を採用し、ingest（取り込み）、query（検索）、lint（保守）のサイクルを回す手法を紹介。約20万ファイルの個人ストレージを用いた実践では、チャンクの粒度統一と文脈の明示により体感精度が大幅に向上したとしています。また、Anthropicの「progressive disclosure（段階的開示）」の概念を引用し、情報を一括で渡すのではなく、AIが必要な情報を段階的に取得できる環境を整える重要性を強調しています。",
+    "topics": [
+      "RAG",
+      "LLM Wiki",
+      "Andrej Karpathy",
+      "ナレッジマネジメント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:33:17.515712+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントの本当の攻撃面は設定ファイルだった",
+    "url": "https://zenn.dev/ju571n/articles/ai-agent-config-attack-surface",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントの脆弱性はモデルの挙動ではなく、設定ファイルによる権限管理の不備にあり、これらを監視するセキュリティツール「Sigil」が解決策として提示されています。",
+    "summaryBody": "AIコーディングエージェント（Claude Code, Cursor, GitHub Copilot等）における深刻なセキュリティリスクの起点は、AIモデルそのものではなく「設定ファイル」にあることを詳説しています。TrustFallやAWS Kiroの事例では、リポジトリ内の`.claude/settings.json`や`.mcp.json`が悪用され、クローンして開くだけでRCE（リモートコード実行）が可能になる、あるいは間接プロンプトインジェクションにより権限設定が書き換えられる脆弱性が報告されています。これらの脆弱性（CVE-2025-59536等）は、信頼確認ダイアログの前に設定が読み込まれる仕様を突いたものです。これに対処するため、筆者は設定ファイルを監視し危険度をスコアリングするRust製ツール「Sigil」を公開しました。Sigilは設定の変更をリアルタイムで検知し、SIEM等へログを流すことで、開発者の利便性を損なわずにAI-SPM（AI Security Posture Management）を実現します。",
+    "topics": [
+      "AIコーディングエージェント",
+      "セキュリティ",
+      "RCE",
+      "MCP (Model Context Protocol)",
+      "Sigil (OSS)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

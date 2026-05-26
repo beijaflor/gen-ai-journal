@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:28:33.350125+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Snowflake Cortex CLI と AI Agent Loop を用いた MLOps 基盤構築",
+    "url": "https://zenn.dev/sirok/articles/13bcaed37f893c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "SnowflakeのCortex CLIとAIエージェントを活用し、GitHub Issueや共有状態ファイルを通じて機械学習ライフサイクルを自律的に制御する、柔軟で追跡性の高いMLOps基盤の構築事例。",
+    "summaryBody": "株式会社シロクによる、AIエージェントを用いた次世代型MLOps基盤の構築レポートです。従来の静的なパイプラインとは異なり、plan、develop、verify、releaseの4つのAIエージェントが、共通のmlops-state.jsonを参照しながら動的に意思決定を行う構成を採用しています。具体的には、GitHub Issueに要望を起票すると、Snowflake Cortex CLIを通じて自然言語で計算リソースの準備やNotebookの生成、モデル学習、評価、そしてModel Registryへの登録までを自動化。Slack通知やGitHub Kankanによる進捗管理を組み合わせることで、専門知識が少ないメンバーでもモデル構築・運用が可能になるHuman-in-the-loopな環境を実現しています。Cortex Codeを活用した自然言語によるインフラ操作と、状態駆動型のアーキテクチャが特徴です。",
+    "topics": [
+      "Snowflake",
+      "MLOps",
+      "AIエージェント",
+      "Cortex CLI",
+      "機械学習自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

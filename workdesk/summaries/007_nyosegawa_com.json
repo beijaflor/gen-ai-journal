@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:39:05.201359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Antigravity Gemini 3.5 FlashとCursor Composer 2.5をHarnessBenchで評価した話",
+    "url": "https://nyosegawa.com/posts/harness-bench-antigravity-composer-25/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "独自ベンチマークHarnessBenchを用いた評価により、Cursor Composer 2.5の改善とGPT-5.5系モデルの圧倒的な優位性が示された。",
+    "summaryBody": "独自のコーディングエージェント評価用ベンチマーク「HarnessBench」を用い、Antigravity（Gemini 3.5 Flash）とCursor Composer 2.5の実力を検証した。Cursor Composer 2.5 (fast)は19/27問を成功させ、旧バージョンの17/27から改善を見せたが、実行時間は3.6分から7.5分へと増加した。対してAntigravityは成功数17/27で、Claude Code等と同じ下位グループに甘んじた。依然としてベンチマークのトップ層はCodex/GPT-5.5系（最高22/27）が独占しており、特にCursor GPT-5.5 mediumは高い成功率と4.7分という圧倒的な速度を両立していることが判明した。最新アップデートでも既存の上位モデルの壁は依然として厚いことが示唆されている。",
+    "topics": [
+      "HarnessBench",
+      "Cursor",
+      "Antigravity",
+      "Gemini 3.5 Flash",
+      "Coding Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

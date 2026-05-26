@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:33:34.326826+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った",
+    "url": "https://zenn.dev/sonicgarden/articles/claude-code-self-improving-loop",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの会話履歴から「うまくいかなかった信号」を抽出して課題化し、Routines機能でSKILL.mdを自動修正・PR作成する自己改善ループの構築。",
+    "summaryBody": "Claude Codeの「Routines」機能を活用し、エージェントの挙動（SKILL.md）を自律的に洗練させるフレームワークの紹介です。開発セッション終了時に会話履歴（jsonl）を解析してGitHub Issuesに課題を起票する「発見側」と、Routines経由でそのIssueを判定・修正・PR作成する「適用側」の2段構成になっています。修正プロセスには、意図達成確認・記述スタイルチェック・機密情報漏洩チェックの3段階の品質ゲートを設け、収束するまでループさせることで精度を担保しています。運用開始3週間で40件以上の自動改善コミットを記録し、人間が気づきにくいエージェント間の微細な問題も修正可能になった実例が示されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Self-Improvement",
+      "Prompt Engineering",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

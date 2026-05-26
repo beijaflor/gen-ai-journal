@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:34:28.634500+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに投げても解けなかったGPSアート自動生成を、最適化問題として組み立て直した話",
+    "url": "https://zenn.dev/jiro3141/articles/9ad0cd28b076e9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIへの指示だけでは困難だったGPSアート生成を、入力形状の配置探索と道路スナップという2段階の最適化問題として再構成し、焼きなまし法等で解決した開発記。",
+    "summaryBody": "ユーザーが描いた図形を実際の道路網に即したルートに変換する「GPSアート」の自動生成アルゴリズムに関する解説記事。当初はAI（LLM）へのプロンプトで解決を試みたが、形状の崩れやグラフ構造の不整合に直面。これを解決するため、問題を「道路グラフの辺選択」から「入力形状の座標変換（移動・回転・拡大縮小）の探索」へと抽象化。OpenStreetMapデータの間引き・マージ等の前処理、動的計画法（smooth DP）を用いたなめらかな道路スナップ、焼きなまし法（Simulated Annealing）による広域的な最適化手法を組み合わせることで、実用的な生成を実現した。また、複数パーツの同時最適化やデバッグ用可視化UIの重要性など、工学的な問題解決のアプローチが詳述されている。",
+    "topics": [
+      "GPSアート",
+      "最適化問題",
+      "焼きなまし法",
+      "グラフアルゴリズム",
+      "OpenStreetMap"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 95
+    }
+  }
+}

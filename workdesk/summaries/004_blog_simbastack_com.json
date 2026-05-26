@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:39:52.348895+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "5年前のMacBookでGemma 4をローカル実行し、1年分の動画アーカイブを自動インデックス化した記録",
+    "url": "https://blog.simbastack.com/indexed-a-year-of-video-locally/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "5年前のM1 Max MacBook ProとGemma 4を活用し、数千個の未整理動画ファイルをAIで自動分析・検索可能にするローカル完結型のワークフローを構築した実践記。",
+    "summaryBody": "ケニアのロッジ運営で蓄積された膨大な未整理動画（IMG_*.MOV等）を整理するため、著者はAIを活用したローカルインデックス作成システムを構築しました。かつては高価なSaaSを検討していましたが、プライバシーとコストの観点から「ローカル完結」を選択。Claude Codeを司令塔とし、Gemma 4 31B（LM Studio経由）、WhisperX、insightface、ffmpegを組み合わせたパイプラインを開発しました。 \n\n主な特徴は、各動画ファイルごとにMarkdown形式のサイドカーファイルを生成し、シーン描写、顔認識、位置情報、文字起こしを構造化データとして保存する点です。これにより、「ゴールデンアワーのキリンのワイドショット」といった自然言語での検索が可能になりました。技術的には、モデルの誤出力を防ぐためのEnum制約の活用や、M1 Maxの64GBメモリをスワップを駆使して限界まで使い切る実装、そしてAI動画編集における真の課題は「編集機能」ではなく「素材のインデックス化」にあるという洞察が示されています。",
+    "topics": [
+      "ローカルLLM",
+      "Gemma 4",
+      "動画管理",
+      "M1 Max",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "While I slept, my 5-year-old MacBook ran Gemma 4 locally and indexed a year of video — simbastack"
+  }
+}
