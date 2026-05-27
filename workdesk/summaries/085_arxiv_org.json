@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:13:26.224807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "言語モデルには「睡眠」が必要：コンテキストを高速重みに変換する定着メカニズムの提案",
+    "url": "https://arxiv.org/abs/2605.26099",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TransformerのKVキャッシュをSSMブロックの高速重みへと変換・固定化する「睡眠」フェーズを導入し、長大な文脈処理と深い推論を両立させる新手法の提案。",
+    "summaryBody": "本研究は、Transformerモデルが長期的なタスクにおいて直面する、KVキャッシュの増大と計算コストのスケーラビリティ問題を解決するため、生物学的な「睡眠」に着想を得たコンソリデーション（記憶の固定化）メカニズムを提案しています。\n\n具体的には、モデルが定期的に最近のコンテキストを状態空間モデル（SSM）ブロックの「高速重み（Fast Weights）」へと変換し、KVキャッシュをクリアするプロセスを導入します。この「睡眠」中、モデルは蓄積されたコンテキストに対して$N$回のオフライン再帰パスを実行し、学習された局所的なルールに従って重みを更新します。これにより、推論時（覚醒時）の低レイテンシを維持しながら、重い計算を睡眠フェーズにオフロードすることが可能になります。\n\n実験では、セルオートマトン、多段階グラフ検索、数学的推論などの合成タスクおよび現実的なタスクで評価を行いました。その結果、従来のTransformerや既存のSSM-Attentionハイブリッドモデルが失敗する設定においても、提案手法は高い性能を示しました。特に「睡眠時間（パスの数 $N$）」を増やすことで、より深い思考を必要とするタスクの精度が向上することが確認されました。",
+    "topics": [
+      "Large Language Models",
+      "Transformer",
+      "State-Space Models",
+      "Memory Consolidation",
+      "Long-context reasoning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Language Models Need Sleep"
+  }
+}

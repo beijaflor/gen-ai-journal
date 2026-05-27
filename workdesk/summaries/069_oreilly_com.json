@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:17:15.300203+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェントAIにおける「委譲」の課題：権限の連鎖をいかに制御するか",
+    "url": "https://www.oreilly.com/radar/who-authorized-that-the-delegation-problem-in-multi-agent-ai/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチエージェントAIシステムにおいて、エージェント間のタスク委譲に伴う権限管理の不透明さと、それにより生じる「ゴースト権限」などのセキュリティリスク、および解決策としての委譲対応モデルを解説する。",
+    "summaryBody": "複数のAIエージェントが連携して動作する「マルチエージェントAI」の普及が進む中、エージェントから別のエージェントへタスクを委譲する際の権限管理（Authorization）が新たなセキュリティの境界線となっています。現在、MCP（Model Context Protocol）やA2Aなどの接続プロトコルは整備されつつありますが、権限の「正当な委譲」を保証する仕組みは不十分です。本記事では、委譲チェーンが不透明なことで生じる3つの失敗（ゴースト権限、スコープ・ドリフト、監査トレールの断絶）を指摘。解決策として、暗号学的なアイデンティティ、権限の縮小（アテニュエーション）、目的へのバインド、証拠ベースの監査を統合した「委譲対応モデル」を提唱しています。企業が今すぐ着手すべき実務的なステップとして、委譲チェーンの可視化や暗黙的な権限の排除、監査ログの構築などが推奨されています。",
+    "topics": [
+      "マルチエージェントAI",
+      "AIセキュリティ",
+      "権限委譲",
+      "最小特権の原則",
+      "Agent Identity Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Who Authorized That? The Delegation Problem in Multi-Agent AI"
+  }
+}

@@ -2,6 +2,35 @@
 
 ## Main List
 
+- [x] 095. https://github.com/ollama/ollama/releases/tag/v0.24.0
+- [x] 094. https://ledge.ai/articles/anthropic_claude_cowork_sales_account_management
+- [x] 093. https://speakerdeck.com/naoichihara/agentic-aishi-dai-niokeru-merukarinoaigabanansutogadorerushi-zhuang
+- [x] 092. https://github.com/steipete/agent-scripts/blob/main/skills/skill-cleaner/SKILL.md
+- [x] 091. https://zenn.dev/haru0416/articles/codex-skill-md-220-lines
+- [x] 090. https://qiita.com/nolanlover0527/items/d87ae4ec1af4280aec91
+- [x] 089. https://qiita.com/hiropon122/items/f4496113455b1161e872
+- [x] 088. https://qiita.com/ryota_ishii/items/7cdba1a68f14a4256120
+- [x] 087. https://qiita.com/Nana_777/items/aff2e56e4248cee1114e
+- [x] 086. https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/
+- [x] 085. https://arxiv.org/abs/2605.26099
+- [x] 084. https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify
+- [x] 083. https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/
+- [x] 082. https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/
+- [x] 081. https://pluralistic.net/2026/05/26/the-ai-will-continue/
+- [x] 080. https://jry.io/writing/use-boring-languages-with-llms/
+- [x] 079. https://simonwillison.net/2026/May/25/encyclical-on-ai/
+- [x] 078. https://pscanf.com/s/354/
+- [x] 077. https://zonted.com/posts/every-ai-is-intj/
+- [x] 076. https://veso.ai/research/agentic-patterns/
+- [x] 075. https://medium.com/design-bootcamp/what-we-lost-in-the-ai-chat-stream-2f96a22a6b80
+- [x] 074. https://css-tricks.com/technical-writing-in-the-ai-age/
+- [x] 073. https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf
+- [x] 072. https://goodpatch.com/blog/2026-05-podcastreport
+- [x] 071. https://tidyfirst.substack.com/p/genie-lessons-from-genie-sessions
+- [x] 070. https://blog.sentry.io/agents-need-production-context/
+- [x] 069. https://www.oreilly.com/radar/who-authorized-that-the-delegation-problem-in-multi-agent-ai/
+- [x] 068. https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead
+- [x] 067. https://developer.chrome.com/blog/build-new-features-using-built-in-ai-in-chrome-io2026
 - [x] 066. https://takoratta.hatenablog.com/entry/2026/05/26/083000
 - [x] 065. https://azukiazusa.dev/blog/mcp-stateless/
 - [x] 064. https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/

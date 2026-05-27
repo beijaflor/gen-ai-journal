@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:11:44.251405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けスキル管理・最適化ツール「skill-cleaner」",
+    "url": "https://github.com/steipete/agent-scripts/blob/main/skills/skill-cleaner/SKILL.md",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "CodexやOpenClaw環境におけるAIスキルの重複削除、プロンプト予算の最適化、および未使用スキルの特定を行うための監査ツールのドキュメント。",
+    "summaryBody": "このツールは、AIエージェント（Codex/OpenClaw）の「スキル」ライブラリを整理・最適化するためのスクリプトです。主な機能には、スキルのプロンプト消費量（コンテキスト予算）の分析、名前や内容が類似した重複スキルの特定、利用履歴ログに基づいた未使用スキルの検出、およびプロンプト節約のための説明文短縮提案が含まれます。コンテキストウィンドウの2%という制限に基づいたシミュレーションを行い、どのスキルを削除または無効化すべきかの判断を支援します。ローカルやGitHubリポジトリのスキルルートをスキャンし、実運用における効率的なスキル管理を実現します。",
+    "topics": [
+      "AI Agents",
+      "Codex",
+      "Prompt Optimization",
+      "Skill Management",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 60,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "agent-scripts/skills/skill-cleaner/SKILL.md at main · steipete/agent-scripts · GitHub"
+  }
+}

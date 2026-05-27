@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:11:31.719041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic AI時代における メルカリのAIガバナンスとガードレール実装",
+    "url": "https://speakerdeck.com/naoichihara/agentic-aishi-dai-niokeru-merukarinoaigabanansutogadorerushi-zhuang",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "メルカリがAgentic AIの普及に伴う独自のセキュリティリスクを定義し、組織体制、ツール審査、技術的なサンドボックス化を含む多層的なガードレールを構築した実践事例。",
+    "summaryBody": "メルカリは「AIを前提に再設計された組織」を目指し、自律的な動作を伴うAgentic AI特有のリスクに対応する包括的なガバナンスとガードレールを構築しています。\n\n### 主なリスクと対策\nAgentic AIの進化により、従来のセキュリティリスクに加え「自律的探索によるシステム破壊」や「権限混同による機密情報露出」といった新たな脅威が顕在化しています。同社では、実際の「AIヒヤリハット」事例（AIによる機密情報の外部サイトへのアップロード等）を分析し、以下の3層で対策を講じています。\n\n1. **ガバナンス層**: 専任のAIセキュリティチームを設置し、利用ガイドラインの策定やe-Learningを実施。\n2. **ツール審査層**: 入力データの学習利用やSSO対応、権限制御の可否に基づき利用許可ツールを厳密に審査。\n3. **ガードレール層**: MDMによる安全設定の強制配布、LiteLLMを用いたAPIキー管理、n8nワークフローの自動脆弱性検査ツール（n8ncheckとしてOSS公開）などを実装。\n\n### 実装のポイント\nエンジニアには一定の自由度を許容し、非エンジニアには厳格な制限を課すなど、ユーザーのリテラシーに応じた「Secure By Default」な設計を採用しています。また、アイデンティティ管理（AI as Identity）やMCP（Model Context Protocol）を活用した今後の展望についても詳述されています。",
+    "topics": [
+      "Agentic AI",
+      "AIガバナンス",
+      "セキュリティ",
+      "メルカリ",
+      "ガードレール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

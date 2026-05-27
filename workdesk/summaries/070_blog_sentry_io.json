@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:16:55.283996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに本番環境のコンテキストを：Sentry MCPとCLIによる自動修正の実現",
+    "url": "https://blog.sentry.io/agents-need-production-context/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SentryがMCP（Model Context Protocol）とCLIの強化を発表し、AIエージェントが本番環境のスタックトレースや分散トレースを理解して自動で修正PRを作成できる仕組みを整えました。",
+    "summaryBody": "AIエージェントがバグを修正する際の最大の障壁は、ソースコード以外の「本番環境での実行コンテキスト」が欠落していることです。Sentryはこの課題を解決するため、Anthropicが提唱するModel Context Protocol (MCP) を採用し、CursorやClaude CodeなどのAIツールがSentry上のエラー情報（スタックトレース、パンくずリスト、分散トレース、Seerによる原因分析）に直接アクセスできる環境を構築しました。\n\n主な特徴は以下の通りです：\n1. **Sentry MCP:** hosted server経由でAIエージェントに構造化された問題データを提供。\n2. **AI診断（Seer）:** 複数サービスにまたがる複雑なエラーの根本原因を2分以内に特定し、修正案を提示。\n3. **人間中心のワークフロー:** 完全自動マージではなく、エージェントがテスト済みのドラフトPRを作成し、最終的に人間が確認するスタイルを推奨。\n\nこれにより、従来はバックログに埋もれがちだった微細なバグや、サービス境界を越えた複雑な問題の解決（MTTR）を大幅に高速化します。",
+    "topics": [
+      "AIエージェント",
+      "Sentry",
+      "MCP (Model Context Protocol)",
+      "オブザーバビリティ",
+      "自動デバッグ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Your agent can't fix what it can't see | Sentry Blog"
+  }
+}
