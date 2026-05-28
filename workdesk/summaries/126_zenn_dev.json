@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:57:12.712645+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeやCodexに機密情報入れて大丈夫？セキュリティを軽くまとめ",
+    "url": "https://zenn.dev/acntechjp/articles/a1e95959858c1c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやCodex CLIを業務利用する際のセキュリティリスクを、プラン別のデータ扱い、重要用語（ZDR等）、情報の機密度に応じた5段階の利用基準の観点から解説した実務ガイド。",
+    "summaryBody": "AIプログラミングツールを安全に運用するための要点をアクセンチュア有志が整理。1.個人プランはデータ学習の可能性があるため業務利用は避けるべき。2.Team/EnterpriseプランやAPI利用は原則として学習対象外。3.ZDR（ゼロデータ保持）、BAA、EKMといった企業導入で必須となるセキュリティ用語の定義と必要場面を解説。4.機密度を5段階に分け、レベルに応じた契約要件や社内ガバナンス（DPA締結、ガイドライン策定、利用者教育等）を具体化。5.Claudeはログ保持期間の短さ（7日）、Codexは鍵管理（EKM）の柔軟性に強みがある。技術的な安全性と法務・コンプライアンス面の両面から、安全なAI活用のためのロードマップを提示している。",
+    "topics": [
+      "Claude Code",
+      "Codex CLI",
+      "セキュリティ",
+      "AIガバナンス",
+      "個人情報保護"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:55:36.869007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude × Obsidian で「感情の跡」を残す仕組みを作る",
+    "url": "https://zenn.dev/miyaken0805/articles/ed70d88fa81c34",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ClaudeとObsidianをMCPで連携させ、AIとの対話から生まれたアイデアや内省の記録を、構造化されたノートとして自動で保存・リンクする「思考のインフラ」の構築手法を紹介。",
+    "summaryBody": "この記事では、Claude（claude.ai）とObsidianをMCP（Model Context Protocol）経由で接続し、チャットでの気づきを即座にナレッジベースへ保存するワークフローを解説しています。主なステップとして、Obsidian MCPプラグインとLocal REST APIを用いた環境構築、Vault内にテンプレートや運用ルールを定義した「Obsidian-Claude.md」を配置する管理手法、そして`/obsidian`コマンドで動作するClaudeカスタムスキルの開発が紹介されています。特に、ジャーナリングプロジェクト「Lifewell」との統合では、YAML frontmatterを活用して感情スコア（mood/emotions）をデータ化し、将来的な可視化を見据えた構造化を実現しています。単なるメモ保存を超え、AIが既存ノートを検索し、[[wikilink]]で関連性を自動付与することで、個人の思考の地図を拡張し続ける仕組みを提案しています。",
+    "topics": [
+      "Claude",
+      "Obsidian",
+      "MCP",
+      "ジャーナリング",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

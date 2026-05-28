@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:52:03.368007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AnthropicにおけるClaude製品群の封じ込め（コンテインメント）手法",
+    "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicがAIエージェントの爆発半径（影響範囲）を制限するために、Claude CodeやCoworkなどの製品で導入しているサンドボックス、仮想マシン、および多層的な防御アーキテクチャの詳細を公開しました。",
+    "summaryBody": "AIエージェントの能力向上に伴う「爆発半径」の拡大に対処するため、Anthropicが実施しているエンジニアリング手法を詳述した記事です。防御の核心は「モデルによる行動制御」ではなく「実行環境による物理的な制約」に置かれています。\n\n1. **3つの隔離パターン**: \n- **Claude.ai**: gVisorを用いた一時的なサーバーサイド・コンテナによる隔離。\n- **Claude Code**: 開発者向けにOSレベルのサンドボックス（Seatbelt/bubblewrap）と人間による承認を組み合わせ、承認疲れを防ぐ自動モードを導入。\n- **Claude Cowork**: 非技術者向けにハイパーバイザーによる完全な仮想マシン（VM）隔離を提供。\n\n2. **教訓と脆弱性事例**: \n- プロンプトインジェクションによるデータ持ち出しや、許可ドメインを悪用したエクスフィルトレーションの事例を紹介。\n- 「自社で構築したカスタムプロキシ」が脆弱性の原因になりやすく、gVisorやハイパーバイザーといった「成熟した標準プリミティブ」の方が信頼性が高いことを強調。\n\n3. **多層防御の重要性**: \n- 確率的なモデル（LLM）側の防御は100%ではなく、決定論的な環境境界（エグレス制御、ファイルシステム制限）こそが最後の砦となるという設計思想を示しています。",
+    "topics": [
+      "AIセキュリティ",
+      "AIエージェント",
+      "サンドボックス",
+      "Anthropic",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "How we contain Claude across products"
+  }
+}

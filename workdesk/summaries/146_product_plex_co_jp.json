@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:52:19.359126+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルの Claude Code レビューを「すり抜けられない」必須チェックにした話",
+    "url": "https://product.plex.co.jp/entry/local-claude-code-review-required-check",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeによるローカルAIレビューの実行を、git notesとGitHub Actionsを連携させることで、バイパス不可能な必須マージ条件として組み込む手法の解説。",
+    "summaryBody": "### 概要\nPLEX社の開発チームによる、Claude Codeを使用したローカルAIレビューの運用改善事例です。AIレビューのコスト（従量課金）を抑制するために実行環境をCIから各開発者のローカル環境に移管しつつ、その実行を「必須」にするための技術的な仕組みを構築しています。\n\n### 具体的な仕組み\n1. **ローカル実行と機械的判定**: `lefthook` を使用し、`pre-push` フックで Claude Code のカスタムコマンドを実行。出力内の特定のタグ（`[REVIEW_RESULT: PASS]`）をスクリプトで検知します。\n2. **証跡の記録 (git notes)**: レビューがパスした場合のみ、`git notes` を利用してコミットにメタデータを付与し、そのノートをリモートリポジトリへ push します。\n3. **GitHub Actions での検証**: push イベントをトリガーに Actions を起動し、対象コミットに特定の `git notes` が存在するかを確認。存在すれば GitHub の Commit Status を `success` に更新します。\n4. **ブランチ保護による強制**: GitHub の Branch Protection を設定し、この status check を必須項目に指定することで、レビュー未実施のコードのマージを構造的にブロックします。\n\n### 導入のメリット\nこの手法により、ローカルでの AI 実行という低コストな運用を維持しながら、Git hook のセットアップ漏れや実行忘れといったヒューマンエラーを自動的に検出・排除できるようになります。サーバー側から観測困難なローカル作業を検証可能にした点が大きな特徴です。",
+    "topics": [
+      "Claude Code",
+      "AIレビュー",
+      "GitHub Actions",
+      "Git notes",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 12,
+      "overall": 95
+    }
+  }
+}

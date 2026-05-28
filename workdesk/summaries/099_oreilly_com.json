@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:03:57.313292+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにシニアエンジニアの規律を：Addy Osmani氏の「Agent Skills」プロジェクト",
+    "url": "https://www.oreilly.com/radar/agent-skills/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GoogleのエンジニアAddy Osmani氏が開発した、AIエージェントが実装を急ぐあまりテストや仕様策定をスキップするのを防ぎ、シニアエンジニアの規律あるワークフローを強制するためのフレームワークの解説。",
+    "summaryBody": "GoogleのAddy Osmani氏による、AIコーディングエージェントに「シニアエンジニアの足場（スカフォールディング）」を導入するプロジェクト「Agent Skills」の紹介記事です。AIエージェントはデフォルトでは最短距離で「完了」を目指すため、仕様策定やテスト、レビューといった重要な工程をスキップしがちです。本プロジェクトは、これらの工程をMarkdown形式のワークフローとして定義し、エージェントに遵守させることを目的としています。\n\n主な特徴は以下の通りです：\n- **反合理化テーブル**: 「タスクが簡単だからテストは不要」といったエージェントの言い訳に対する先回りの反論を定義し、プロセスの逸脱を防ぎます。\n- **検証の義務化**: 「動くはず」ではなく、テスト合格やランタイムの証拠提出を必須の出口基準として設定します。\n- **Googleのプラクティスの移植**: Hyrumの法則、テストピラミッド、小規模なPRサイズなど、Googleの堅牢な開発文化をスキルとしてコード化しています。\n- **高い汎用性**: Markdown形式であるため、Claude Code、Cursor、Gemini CLI、Aiderなど、システムプロンプトを利用する多くのAIツールで即座に活用可能です。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "Addy Osmani",
+      "SDLC",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Agent Skills"
+  }
+}

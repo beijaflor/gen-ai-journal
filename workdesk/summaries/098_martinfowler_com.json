@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:04:12.751622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "The VibeSec Reckoning: なぜAIへの「セキュアであれ」という指示だけでは不十分なのか",
+    "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "非技術者が生成AIでアプリを構築する「Vibe coding」がもたらすセキュリティ上の欠陥に対し、プロンプトを超えた決定論的なガードレールとコンテキスト管理の必要性を提唱する。",
+    "summaryBody": "生成AIツールを用いて非専門家が迅速にアプリケーションを構築する「Vibe coding」が普及する一方で、AIが利便性を優先して脆弱な設定（公開ストレージや過剰な権限付与など）を提案する「VibeSec」リスクが顕在化しています。Thoughtworksの事例では、GeminiやClaudeが提案したコードに重大な脆弱性が含まれていたことが報告されており、統計的にもAI生成コードの25%に脆弱性が確認されています。本稿では、プロンプトによる指示（確率的な制御）だけでは不十分であると断じ、解決策として「セキュリティコンテキストファイル」の導入、および「ハーネスエンジニアリング（決定論的な自動チェック機能でAIを包む手法）」を提唱しています。短期的にはAIセッションへの厳格なルール定義、中長期的には企業独自のセキュアなテンプレート作成とインテリジェンスフィードの構築を通じて、開発速度を損なわずにエンジニアリングの規律を維持するアプローチを解説しています。",
+    "topics": [
+      "Vibe coding",
+      "GenAI Security",
+      "Harness Engineering",
+      "Cybersecurity",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "The VibeSec Reckoning"
+  }
+}

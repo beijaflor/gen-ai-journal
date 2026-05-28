@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:56:06.893790+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Webwright: ターミナルのみでWebエージェントを実現する手法 - Microsoft Research",
+    "url": "https://www.microsoft.com/en-us/research/articles/webwright-a-terminal-is-all-you-need-for-web-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoft Researchが開発したWebwrightは、1ステップずつのUI操作ではなく、ターミナルでコードを書き実行することでWebタスクを自律的に解決し、再利用可能なRPAスクリプトを生成する最小限のフレームワークです。",
+    "summaryBody": "Webwrightは、Webエージェントの設計思想を「ブラウザ内での逐次操作」から「ターミナルでのコード開発」へと転換する研究プロジェクトです。エージェントはPlaywrightを用いたコードを記述・実行し、必要に応じてブラウザセッションを立ち上げたり破棄したりしながらタスクを遂行します。このシステムは、Runner、Model Endpoint、Environmentという3つのモジュール（計約1,000行）で構成される極めてシンプルな設計ながら、GPT-5.4を活用することでOnline-Mind2WebやOdysseysといったベンチマークにおいて既存のSOTA（State-of-the-Art）を大幅に更新しました。特筆すべきは、エージェントが生成したワークフローをパラメータ化されたCLIツールとして保存・再利用できる点であり、従来のピクセル座標指定型エージェントに比べて高いロバスト性と効率性を実現しています。研究チームは、モデルの能力向上に伴い、過剰なエンジニアリングを施したハーネスよりも、自由度の高いターミナル環境の方がエージェントの真の能力を引き出せると結論づけています。",
+    "topics": [
+      "Web Agents",
+      "LLM Agents",
+      "Playwright",
+      "RPA",
+      "Microsoft Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Webwright: A Terminal Is All You Need For Web Agents - Microsoft Research"
+  }
+}

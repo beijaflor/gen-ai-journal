@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:58:33.961640+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexによるAGENTS.mdの自動最適化：8回の反復試行で見えた期待と退行の現実",
+    "url": "https://www.stet.sh/blog/how-i-used-codex-to-improve-its-own-agents-md",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codexを使用してAGENTS.mdを8回反復改善させた結果、局所的なコード品質は向上したものの、未知のタスクセットではスコープ判断の誤りなどの退行（リグレッション）が発生することが判明しました。",
+    "summaryBody": "本記事は、AIエージェントの指示ファイル（AGENTS.md）を、AI自身にベンチマーク測定を行わせながら改善させる実験のレポートです。筆者は、指示ファイルの更新を「感覚（vibes）」で行う危うさを指摘し、過去のPRをベースにした定量的な評価ツール「Stet」を用いて、Codex（GPT-5.5世代想定）による8回の改善ループを実行しました。学習セットでは良好な結果を示した「義務のリスト化」などの新ルールは、コードの整合性や保守性スコアを向上させましたが、10件の独立したホールドアウトセットでは、タスク範囲の逸脱や不必要なリファクタリングといった「境界判断」の悪化を招きました。この結果は、もっともらしい指示が必ずしも良い結果に繋がるとは限らず、共有の指示ファイルを更新する際には厳密な評価と回帰テストが不可欠であることを示唆しています。",
+    "topics": [
+      "AGENTS.md",
+      "LLM Evaluation",
+      "Codex",
+      "Prompt Engineering",
+      "Stet.sh"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "I had Codex iterate on its own AGENTS.md 8 times and measured each version against real PRs. The best one still regressed on a clean holdout."
+  }
+}
