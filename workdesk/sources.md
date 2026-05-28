@@ -55,7 +55,6 @@
 - [x] 102. https://simonwillison.net/2026/May/27/sqlite-agents/
 - [x] 101. https://playfulprogramming.com/posts/how-ai-impacts-your-growth/
 - [x] 100. https://uxdesign.cc/ai-and-cognitive-delegation-the-hidden-cost-of-ai-that-works-too-well-18dac6a637f5
-- [x] 099. https://www.oreilly.com/radar/agent-skills/
 - [x] 098. https://martinfowler.com/articles/vibesec-reckoning.html
 - [x] 097. https://martinfowler.com/fragments/2026-05-27.html
 - [x] 096. https://zenn.dev/aircloset/articles/f6c990989e60d4
