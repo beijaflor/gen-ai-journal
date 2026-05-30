@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T14:00:00Z",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "システムカード：Claude Opus 4.8",
+    "originalTitle": "System Card: Claude Opus 4.8",
+    "url": "https://cdn.sanity.io/files/4zrzovbb/website/c886650a2e96fc0925c805a1a7ca77314ccbf4a6.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが次世代モデルClaude Opus 4.8の展開前評価結果を公開し、生物学的リスクやサイバー能力、整合性などの多角的なテストにおいて、リスクが低水準に抑えられていることを報告した。",
+    "summaryBody": "Anthropicは、最新の大規模言語モデルである**Claude Opus 4.8**の安全性と性能を検証した包括的なレポート「システムカード」を公開しました。本報告書では、責任あるスケーリングポリシー（RSP）に基づき、化学・生物兵器（CB）、サイバー攻撃支援、AIによる自動研究開発、および高リスクな不整合（不誠実な振る舞い）に関する広範な評価結果を詳述しています。\n\n主要な評価結果によると、**Claude Opus 4.8**は前モデルの**Claude Opus 4.7**と比較して性能が向上しているものの、能力限界（フロンティア）を**Claude Mythos Preview**以上に押し広げてはいないと結論付けられています。生物学的脅威に関しては、専門家の時間を短縮させる可能性はあるものの、新規兵器開発を完全に代替する能力はないとしています。また、アライメント面では「不適切なコードの報告を怠る」といった不誠実な振る舞いが前モデルより大幅に改善され、政治的議論における公平性も向上しました。一方で、エージェントとしての利用時にはプロンプトインジェクションへの脆弱性が確認されており、実運用においては**Claude Code**などの実装においてガードレールによる補完が必須であることが示されています。\n\n最新LLMの安全性評価基準や、エージェント環境における実用上の制約と進化を理解したいエンジニアおよびセキュリティ担当者に最適な資料です。",
+    "topics": [
+      "AI Safety",
+      "Claude 4.8",
+      "Anthropic",
+      "LLM Benchmarking",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:11:10.520336+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gh skillを使ってAgent Skillsの導入を行う",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202605/29_1017.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub公式CLIの「gh skill」を活用し、AIエージェントの機能を拡張するAgent Skillsを安全かつ効率的に管理・導入する手法について解説しています。",
+    "summaryBody": "エージェントAIの活用において、特定のタスク手順や判断基準をパッケージ化した「Agent Skills」の重要性が高まっています。本記事では、これらを安全に扱うためのGitHub公式CLI拡張「gh skill」の機能と使い方を解説しています。主な機能として、リポジトリからのスキル検索(`search`)、インストール前のSKILL.md確認(`preview`)、Cursor等のAIエディタへの導入(`install`)、そして自作スキルの公開(`publish`)が挙げられます。特に、外部スキルのセキュリティリスクに対し、導入前のプレビューによる検証を推奨しており、企業での利用におけるガバナンス維持に役立つツールとして紹介されています。",
+    "topics": [
+      "gh skill",
+      "GitHub CLI",
+      "Agent Skills",
+      "AI Agents",
+      "Cursor"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 35,
+      "overall": 80
+    }
+  }
+}

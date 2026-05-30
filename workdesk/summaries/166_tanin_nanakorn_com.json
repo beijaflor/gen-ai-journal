@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:49:41.477539+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ruby vs. Java vs. TypeScript: Cowork DOCXプラグイン開発の比較と教訓",
+    "url": "https://tanin.nanakorn.com/ruby-java-typescrip-claude-docx-plugin/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude用DOCXプラグインをRuby、Java、TypeScript(Bun)の3言語で実装・比較し、最終的にMCPへの対応を重視してTypeScriptを選択した開発記録。",
+    "summaryBody": "同一の機能を備えたClaude用DOCXプラグインを、Ruby、Java、TypeScript（Node/Bun）の3つのスタックで再実装した経験に基づく比較です。DOCXファイルの本質であるZIP圧縮とXML処理において、Javaは標準ライブラリの成熟度と静的型付けにより最も開発体験が良かったと評価されています。一方でRubyは、型がないことによる実行時エラーや一部ライブラリのバグに直面しました。最終的にTypeScriptが選ばれた理由は、Claude DesktopのMCP（Model Context Protocol）対応において将来的にバイナリサイズを大幅に軽量化できる可能性があるためです。また、Node.jsでは難しい単一バイナリ作成をBunで解決する手法や、Cursor（Codex）のプラグイン機構がClaudeに比べ発展途上である点など、実用的な開発の知見がまとめられています。",
+    "topics": [
+      "Claude MCP",
+      "DOCX",
+      "Bun",
+      "Java",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "Ruby vs. Java vs. TypeScript: my experience on building a Cowork DOCX plugin"
+  }
+}

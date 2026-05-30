@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:03:02.261174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの経年劣化を測定する「AgingBench」：長期運用における信頼性の低下と「寿命工学」の提唱",
+    "url": "https://agingbench.github.io/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを長期運用した際の信頼性低下を「エージェントの老化」と定義し、4つの劣化メカニズムを通じて原因を特定・診断するベンチマーク「AgingBench」が発表されました。",
+    "summaryBody": "AIエージェントの評価はデプロイ直後の「初日」の状態に焦点が当てられがちですが、実際の長期運用では、モデルの重みが固定されていても対話履歴の蓄積やメモリ管理の影響で性能が劣化します。UT Austinの研究チームが開発した「AgingBench」は、この「エージェントの老化」を測定するための基盤です。劣化の原因を、詳細が失われる『圧縮』、記憶の混同を招く『干渉』、情報の更新に失敗する『改訂』、運用操作で崖が発生する『保守』の4つに分類。実験では、10セッションでリコールが85%低下する事例や、高性能な最新モデルへの変更よりも「メモリ管理ポリシー」の最適化の方が寿命を延ばす効果が高いことなどが示されました。信頼性の高いエージェント開発には、単なるモデル性能の向上ではなく、書き込み・保存・検索・活用の各段階を診断・修理する「寿命工学（Agent Lifespan Engineering）」が必要であると提唱しています。",
+    "topics": [
+      "AI Agent",
+      "AgingBench",
+      "LLM Reliability",
+      "Memory Management",
+      "Agent Lifespan Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "AgingBench: AI Agents Age Too"
+  }
+}

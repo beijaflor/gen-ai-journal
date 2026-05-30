@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:59:00.617657+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CrowdStrikeによる開発者を標的としたボットネット「Glassworm」の解体プロセス",
+    "url": "https://www.crowdstrike.com/en-us/blog/inside-crowdstrike-takedown-of-a-developer-targeting-botnet/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CrowdStrikeは、オープンソースのサプライチェーンを悪用して開発者を標的にしていたボットネット「Glassworm」のC2インフラを、GoogleやShadowserverと協力して同時に無力化しました。",
+    "summaryBody": "CrowdStrikeのCounter Adversary Operationsチームが、ソフトウェア開発者を標的とするボットネット「Glassworm」のテイクダウンを実行しました。この攻撃グループは2025年以降、トロイの木馬化したVSCode拡張機能や悪意のあるnpm/Pythonパッケージ、汚染されたGitHubリポジトリを通じて、高権限を持つ開発者の環境を侵害していました。\n\nGlasswormの最大の特徴は、Solanaブロックチェーンのメモフィールド、BitTorrentの分散ハッシュテーブル(DHT)、Googleカレンダーといった、従来の遮断が困難な分散型インフラをC2（コマンド＆コントロール）チャネルとして併用していた点にあります。CrowdStrikeはこれらの4つのチャネルを同時に叩くことで、攻撃者と感染端末の通信を完全に遮断しました。\n\n分析の結果、この攻撃者はロシアを拠点としている可能性が高く、特定の言語・地域設定を持つ端末を回避する挙動が確認されています。記事内では、組織が感染を確認するためのビーコンIPアドレスや、GlasswormRATを検出するためのYARAルールも公開されており、サプライチェーン攻撃に対する積極的な防御（Disruption）の重要性が強調されています。",
+    "topics": [
+      "Glassworm",
+      "CrowdStrike",
+      "Supply Chain Attack",
+      "Botnet Takedown",
+      "Threat Intelligence"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Inside CrowdStrike’s Takedown of a Developer-Targeting Botnet"
+  }
+}

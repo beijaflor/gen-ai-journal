@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:56:27.115903+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "これがいいとは言わないが。私が普段 Vibe Coding で実際に投入しているPromptを晒す",
+    "url": "https://qiita.com/dahatake/items/ef5cb2ad8d0e27dd976a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilotを活用した「Vibe Coding」において、実装プラン作成、質問票による要件定義、敵対的レビューを組み合わせた実践的なプロンプト集とワークフローの解説。",
+    "summaryBody": "Microsoftのエンジニアが、GitHub Copilotを実戦で使いこなすための具体的なプロンプトセットを公開しています。従来の複雑なプロンプトエンジニアリングから、CopilotのRewrite機能を前提とした「Why/What」重視のスタイルへの変化を強調しています。\n\n主なポイントは以下の4点です：\n1. **タスクの最小化**: コンテキストウィンドウを節約し精度を高めるため、指示を極限まで細分化する。\n2. **実装プランと質問票**: AIに詳細な修正手順を作らせると同時に、不明点を「質問票」として逆質問させることでハルシネーションを抑止する。\n3. **敵対的レビュー**: プロンプト内で「敵対的レビュアー」を定義し、目的適合性やYAGNI原則（オーバーエンジニアリング禁止）の観点から厳格にコードを検証させる。\n4. **逐次実行の徹底**: 修正プランに基づき、1タスクごとに実行とレビューのサイクルを回す実運用フロー。\n\nコピー＆ペーストで活用可能なプロンプトのテンプレートが含まれており、AI駆動開発の品質を一段階引き上げるための実践的なガイドとなっています。",
+    "topics": [
+      "GitHub Copilot",
+      "Vibe Coding",
+      "プロンプトエンジニアリング",
+      "AI駆動開発",
+      "VS Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

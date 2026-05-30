@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:10:26.508801+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを本番に出せない本当の理由",
+    "url": "https://zenn.dev/knowledge_graph/articles/kg-agent-production-safety",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの本番導入を阻む権限管理・追跡可能性・ロールバックの課題に対し、ナレッジグラフを用いた安全設計と実装の勘所を解説する。",
+    "summaryBody": "AIエージェントがPoCから本番環境へ移行できない主因は、セキュリティ部門が求める「権限管理」「追跡可能性」「ロールバック」への回答が設計段階で欠落していることにある。本記事では、ナレッジグラフ（KG）を活用することで、多段の委任関係をエッジで表現し、意思決定のコンテキストを構造的に記録する手法を提示している。一方で、KG単体では解決できないランタイムの権限チェックや特権昇格防止、Human-in-the-loopの必要性についても言及。具体的な参照実装としてDevRevの事例を紹介し、エンジニアが即座に取り組むべき擬似コードの定義や、CISO向けのチェックリストまでを網羅的にガイドしている。",
+    "topics": [
+      "AIエージェント",
+      "ナレッジグラフ",
+      "セキュリティ設計",
+      "LLM本番導入",
+      "権限管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

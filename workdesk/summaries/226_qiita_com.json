@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:56:56.808471+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで独自タイミングのhooksを自作する",
+    "url": "https://qiita.com/hiropon122/items/12e273d9e6aca359be7d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの標準hookでは届かない任意のタイミングでの処理を、スキル化とTodo管理ツールの活用によって実現するワークフロー設計手法の紹介。",
+    "summaryBody": "Claude Codeの標準hooks（SessionStartやTaskCompletedなど）はツールのライフサイクルに基づいているため、独自のワークフロー内における「特定のステップ終了後」といった細かいタイミングの制御が困難です。この記事では、一連の作業を「スキル」として定義し、その冒頭で`TodoWrite`（最新版では`TaskCreate`等のTask系ツール）を用いて全工程をタスク登録する手法を提案しています。これにより、タスクリストの中にhook用のステップを意図的に混ぜ込むことが可能になります。具体例として、チーム共有のワークフローを維持しながら、個人設定ファイル（.local.md）経由で完了時に通知やPR作成スキルを実行させる「dev-workflow」の実装パターンが解説されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Skills",
+      "Workflow",
+      "Task管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

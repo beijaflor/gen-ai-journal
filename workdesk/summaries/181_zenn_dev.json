@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:09:58.049911+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexを使い始めて長時間稼働させるまで",
+    "url": "https://zenn.dev/genda_jp/articles/b7fe56ce2fc60f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code (Codex) を長時間自律的に稼働させるため、グローバルルール、作業ログ雛形、コマンド実行ポリシーの設定方法を具体的に解説しています。",
+    "summaryBody": "AIエージェントであるClaude Code（Codex）を、頻繁な人間の承認を介さず長時間自律的に動作させるための設定ガイドです。著者は、タスクの粒度が大きくなるにつれデフォルト権限での承認要求が障壁になった経験から、環境整備を整理しています。具体的には、共通ルールを定義する「AGENTS.md」、調査・実装・検証を分離する「長時間ワークフロー」、作業状況を可視化する「run note」、そして安全性と効率を両立させるための「command-policy.rules」によるコマンド実行権限の管理方法を紹介。これにより、30分〜1時間程度の複雑なタスクを放置した状態で完遂可能な環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AI Agent",
+      "自動化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

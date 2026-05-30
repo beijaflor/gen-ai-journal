@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:08:18.408160+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにトリプル抽出させたら壊れたKG ─ 構築自動化3パターンと落とし穴",
+    "url": "https://zenn.dev/kenimo49/articles/llm-triple-extraction-3-patterns-pitfalls",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMによるナレッジグラフ構築自動化における3つの実装パターンと、表記揺れや矛盾といった実務上の落とし穴への対策を具体的に解説した実践ガイド。",
+    "summaryBody": "LLMを用いたナレッジグラフ（KG）構築の自動化において、著者が5,000件以上のドキュメント処理で経験した失敗を基に、3つの構築パターンと対策を提示しています。\n\n1. **構築パターン**: コスト重視の「Few-shot Prompt + Validator」、精度と構造を両立する「スキーマ駆動抽出（OntoGPT等）」、最高精度を狙う「マルチパス + Self-correction」の3段階を、プロジェクトのフェーズに応じて使い分けることを推奨しています。\n2. **主要ツール**: 2026年時点の推奨として、OntoGPT、LangChain LLMGraphTransformer、Microsoft GraphRAG、Neo4j LLM KG Builderなどの特性が整理されています。\n3. **3つの落とし穴と対策**: \n   - **表記揺れ**: 正規化辞書と埋め込み類似度によるマージ。\n   - **関係の方向性**: スキーマ定義やプロンプトでの方向明示による誤認防止。\n   - **矛盾の取り扱い**: 情報を削除せず、出典メタデータを付与して「矛盾として可視化」することが意思決定において重要であると説いています。\n\n最終的に、KGは構築して終わりではなく、運用を通じてスキーマや辞書を育てる「生き物」として扱うべきであると結論付けています。",
+    "topics": [
+      "ナレッジグラフ",
+      "GraphRAG",
+      "LLM",
+      "Neo4j",
+      "OntoGPT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    }
+  }
+}

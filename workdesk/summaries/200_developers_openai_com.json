@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:04:19.196261+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Secure MCP Tunnel - OpenAIによるプライベートMCPサーバーの安全な接続ガイド",
+    "url": "https://developers.openai.com/api/docs/guides/secure-mcp-tunnels",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのSecure MCP Tunnelは、ファイアウォール内のプライベートなMCPサーバーを、公開インターネットに晒すことなくChatGPT等の製品へ安全に接続可能にするツールです。",
+    "summaryBody": "OpenAIが公開した「Secure MCP Tunnel」は、Model Context Protocol (MCP) サーバーを安全に運用するためのネットワーク・ソリューションです。通常、ローカルやプライベートネットワーク上にあるサーバーをChatGPT等の外部サービスから利用するには、インバウンドポートの開放などセキュリティ上のリスクが伴いますが、本ツールはアウトバウンド専用のトンネルを構築することでこの問題を解決します。内部ネットワークで動作する `tunnel-client` がOpenAI側とHTTPSで通信し、リクエストをポーリング・中継する仕組みです。Kubernetesのサイドカーとしてのデプロイや、mTLSによる認証、診断用の `doctor` コマンドなど、エンタープライズ用途にも耐えうる高度な機能が提供されており、企業の機密データを保持したままAIエージェントの機能を拡張することが容易になります。",
+    "topics": [
+      "OpenAI",
+      "MCP",
+      "Network Security",
+      "ChatGPT",
+      "API Integration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Secure MCP Tunnel"
+  }
+}

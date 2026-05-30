@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:10:57.790047+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGで過去コードを自然言語検索する",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202605/28_0953.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "RAG（検索拡張生成）を活用し、PythonとChromaDBを用いて過去のソースコードを意味ベースで検索・解説する個人用ツールの実装方法を解説しています。",
+    "summaryBody": "開発者が過去に作成したプロジェクトのコードを、文字列一致のgrepではなく「やりたいこと」ベースの自然言語で検索可能にする軽量なRAGツールの構築手順を紹介しています。sentence-transformers (multilingual-e5-small) を用いた意味ベクトル化とChromaDBによるベクトル検索を組み合わせ、ローカルLLM（Ollama上のqwen2.5-coder等）で回答を生成する構成です。既存のプロジェクト構造を崩さず、ディレクトリを参照するだけで「どのプロジェクトのどのファイルに該当機能があるか」を根拠とともに提示できる、実用的な実装例となっています。",
+    "topics": [
+      "RAG",
+      "Python",
+      "ChromaDB",
+      "ローカルLLM",
+      "セマンティック検索"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

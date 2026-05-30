@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:53:33.658597+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TunixとTPUを用いてGemmaに「思考」させる：コミュニティによる推論学習の実践",
+    "url": "https://developers.googleblog.com/how-the-community-trained-gemma-to-think-with-tunix-and-tpus/",
+    "language": "en",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "Google主催の「Tunix Hack」ハッカソンにおいて、開発者コミュニティがGemmaモデルに高度な推論能力（Chain-of-Thought）を低コストで付与するための革新的な手法を公開した。",
+    "summaryBody": "Google Developers Blogは、軽量LLMであるGemmaに明示的な推論プロセスを学習させたハッカソン「Tunix Hack」の成果を報告しています。参加者はGoogleのポストトレーニングライブラリ「Tunix」とKaggle TPU v5e-8（9時間制限）という制約下で、Gemma-2-2BやGemma-3-1Bを強力な推論モデルへと進化させました。\n\n主な優勝手法は以下の通りです：\n- **1位 (G-RaR):** ルーブリックベースの報酬（Gemma-3-12Bを評価者に使用）とGRPOを組み合わせ、構造化された思考プロセスを学習。\n- **2位 (Pinocchio-1B):** メモリ効率の高いSimPO（Simple Preference Optimization）とGRPOを採用し、厳格なXMLフォーマットと論理的一貫性を両立。\n- **3位 (IDEA-E):** TF-IDF報酬を用いることで、LLMによる評価の遅延を回避しつつ、推論ステップの冗長性を抑制。\n\nこの取り組みは、オープンな学習レシピと限られた計算リソースでも、医療や法務などの特定ドメインにおいて高度な推論が可能なモデルを構築できることを実証しています。",
+    "topics": [
+      "Gemma",
+      "Tunix",
+      "GRPO",
+      "Reinforcement Learning",
+      "Chain-of-Thought"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "How the community trained Gemma to \"Think\" with Tunix and TPUs"
+  }
+}

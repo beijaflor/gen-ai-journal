@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:54:38.511254+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "“育つ”ナレッジ基盤「LLM Wiki」とは？RAGとの違いをイラスト付きで整理してみた",
+    "url": "https://qiita.com/shinnosuke_takami/items/86307593829ac5e70852",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Andrej Karpathy氏が提唱した、LLMにMarkdown形式のWikiを自律編纂・維持させることで、情報の断片ではなく構造化された知識を蓄積する新手法「LLM Wiki」の解説。",
+    "summaryBody": "LLM Wikiは、従来のRAGが未編集の資料を「倉庫」から検索するのと対照的に、LLMに百科事典（図書館）を構築・編集させる知識管理パターンです。構造は一次資料、LLMが編集するMarkdown Wiki、構造を定義するSchemaの3層で構成されます。主な特徴は、情報の取り込み時に既存ページを更新・統合する「Ingest」、埋め込みベクトルを使わずにindex.mdを起点に探索する「Query」、整合性を保つ「Lint」という運用プロセスにあります。RAGが事実検索に適しているのに対し、LLM Wikiは概念理解や知識の統合、個人学習などに適した「成長する」システムです。",
+    "topics": [
+      "LLM Wiki",
+      "RAG",
+      "ナレッジマネジメント",
+      "Andrej Karpathy",
+      "Obsidian"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:10:10.794968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1 行渡すと Claude Code が 1 時間自走する ─ E2E テスト駆動で新機能を作らせた話",
+    "url": "https://zenn.dev/canly/articles/c7da70a520d1b8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのカスタムコマンドを活用し、1行のE2EテストケースからAPI実装・デプロイ・検証までを最大1時間自律的に実行させる開発自動化の取り組み。",
+    "summaryBody": "カンリーテックブログによる、Claude Codeを用いたSlack Bot開発の効率化事例です。LLMが「実装完了」と報告しても実際には動かないという課題に対し、独自のスラッシュコマンド「/e2e-dev」を構築。開発者が「ユーザーの発話 → 期待する応答」を1行記述するだけで、Claude CodeがAPIリポジトリの実装、Lambdaの修正、AWSへのデプロイ、そして実際のSlack上でのE2E検証をループ実行します。最大5回のリトライと1時間に及ぶ自走を許容することで、開発者はAIへのマイクロマネジメントから解放され、実装待ちの間に別タスクに集中できるようになりました。「E2E PASSを完了条件にする」ことで、AI開発における責任の曖昧さを解消しています。",
+    "topics": [
+      "Claude Code",
+      "E2Eテスト",
+      "AIエージェント",
+      "Slack Bot",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

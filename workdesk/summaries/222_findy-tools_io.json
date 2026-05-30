@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:57:57.045257+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント開発特集：9社によるアーキテクチャ設計と本番運用の実践知",
+    "url": "https://findy-tools.io/articles/ai-agent/258",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "国内企業9社がAIエージェントの本番導入で直面した品質評価、コスト、観測性の課題に対し、具体的なアーキテクチャと技術選定でどのように解決したかを網羅的に解説しています。",
+    "summaryBody": "AIエージェントを実際に商用運用している9社（GMOペパボ、グリー、KDDIアジャイル開発センター、KINTOテクノロジーズ、LayerX、ログラス、NCDC、Sansan、TOKIUM）の技術スタックと運用知見をまとめた特集です。各社共通の課題として「LLM出力の品質評価」と「運用コスト」が挙げられており、LLM-as-a-Judgeによる自動評価、マルチエージェント構成によるモデルの使い分け、LangfuseやDatadogを用いた詳細なトレーサビリティ確保といった具体的な解決策が示されています。また、決定論的ワークフローとLLMの柔軟性を組み合わせる設計思想や、Go製のeino、AWSのStrands Agents、LiteLLMといった最新ツールの採用事例も豊富に紹介されており、実装レベルでの実践的なガイドとなっています。",
+    "topics": [
+      "AIエージェント",
+      "LLMOps",
+      "システムアーキテクチャ",
+      "品質評価",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

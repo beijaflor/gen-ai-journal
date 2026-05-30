@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:03:18.267098+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最新AI「ミュトス」がもたらす脆弱性発見の革命と修正フェーズの壁。Firefox開発元に学ぶ「3層構造」のセキュリティ対策",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2605/28/2000000024/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicの最新モデル「Claude Mythos」を活用し、Firefoxで271件の脆弱性を一気に解消したMozillaの事例から、AIによる自動発見を実際の修正に繋げるための「3層構造」の重要性を解説する。",
+    "summaryBody": "MozillaがWebブラウザ「Firefox 150」において、Anthropicの次世代AIモデル「Claude Mythos Preview」を活用し、271件の深刻な脆弱性を一気に発見・修正した事例を深掘りした論考です。特筆すべきは、15～20年間も従来のファジングや人間による監査をすり抜けてきたバグが、AIによって短期間で特定された点です。しかし、業界全体では「AIによるバグ発見」は加速しているものの、発見されたバグの1%未満しか修正に至っていないという「バグマゲドン」の懸念も浮き彫りになっています。Mozillaが成功した理由は、単に高性能なAIモデル（第1層）を利用しただけでなく、それを機能させるためのテスト環境「ハーネス」（第2層）と、修正までをスケールさせる「パイプライン」（第3層）を統合した「3層構造」の防御態勢を構築していたことにあります。単にAIのアクセス権を得るだけでは不十分であり、組織がいかにAIの成果を受け入れ、処理できるかというアーキテクチャの重要性を説いています。",
+    "topics": [
+      "Claude Mythos",
+      "Mozilla",
+      "サイバーセキュリティ",
+      "脆弱性診断",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
