@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:54:23.749525+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クオンツトレーダーがLLMをどこに使うべきか — 「アルファの最終層に置かない」設計入門",
+    "url": "https://qiita.com/tikeda123/items/a71261ecc47f609e52fc",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "クオンツ運用においてLLMを売買決定の最終層ではなく、研究・開発・レポーティングを支援する「知的中間層」として活用すべき理由と具体的な設計指針を解説している。",
+    "summaryBody": "本記事は、クオンツ運用におけるLLM（大規模言語モデル）の適切な統合方法を提案する実務ガイドです。LLMは非決定的でレイテンシが大きいため、売買判断やリスク管理の「最終執行レイヤー」に置くべきではないと断じた上で、データ収集と人間によるレビューの間にLLMを挟む「サンドイッチ構造」のアーキテクチャを推奨しています。RAGを用いた決算資料の分析、コーディング支援、ポストトレード分析など、ROIが高くリスクの低い領域から導入する具体策を詳説。さらに、Look-ahead biasを防ぐ評価設計やプロンプトキャッシュによるコスト最適化、金融規制（NISTや金融庁）を意識したガバナンス体制まで、AIを「魔法の杖」ではなく「知的能力の拡張ツール」として使いこなすための高度な戦略を提示しています。",
+    "topics": [
+      "LLM",
+      "クオンツ",
+      "システムトレード",
+      "AIガバナンス",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    }
+  }
+}

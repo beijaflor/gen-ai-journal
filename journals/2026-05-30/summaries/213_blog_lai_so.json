@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:00:54.389287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawブームのその後とHermes Agent",
+    "url": "https://blog.lai.so/hermes-agent/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自律型AIエージェントのOpenClawと後発のHermes Agentを比較し、常駐型アシスタントの技術設計、自己改善ループの実態、およびセキュリティ上の懸念を考察する。",
+    "summaryBody": "本記事は、セルフホスト可能なパーソナルAIエージェント「OpenClaw」とそのフォロワーであるNous Research製「Hermes Agent」の技術的深掘りと比較レビューです。主な論点は以下の3点に集約されます。\n\n1. **常駐プロセス型エージェントの定義**: 従来の対話型（セッション型）に対し、HEARTBEATによって自律駆動し、ローカルにMarkdown形式で記憶を蓄積する「常駐型」の特性を解説。Claude Code等の純正アプリがこの領域を侵食しつつある現状を指摘しています。\n2. **Hermes Agentの設計思想**: 独自の実装を最小限に抑え、Vercelのagent-browserや各種MCPサーバー等の外部ツール、及びNous Portalを介した他社LLMを束ねる「アグリゲータ」としてのアーキテクチャを分析。特に、経験からSKILL.mdを自動生成する自己改善ループの実態を検証しています。\n3. **実用上のリスク**: 起動時にKeychain等のローカル認証情報を自動検出し流用する挙動や、人間の承認を挟まないスキル更新プロセスに伴うプロンプトインジェクションの脆弱性について警鐘を鳴らし、隔離環境での利用を推奨しています。",
+    "topics": [
+      "AIエージェント",
+      "OpenClaw",
+      "Hermes Agent",
+      "自律型AI",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

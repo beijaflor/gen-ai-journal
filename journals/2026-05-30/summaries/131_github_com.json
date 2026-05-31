@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:55:50.651859+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Webwright: SOTAを達成したソフトウェアエンジニアリングスタイルのWebエージェントフレームワーク",
+    "url": "https://github.com/microsoft/Webwright",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Microsoftが公開したWebwrightは、ブラウザ操作をPlaywrightスクリプトの生成と実行によって行う「code-as-action」アプローチにより、複雑で長期的なWebタスクでSOTAを達成した軽量フレームワークです。",
+    "summaryBody": "Webwrightは、従来のWebエージェントが「ブラウザのページ状態を受け取り、次のクリックや入力を1ステップずつ予測する」手法を取っていたのに対し、エージェントに「ターミナル」を与えてPythonコード（Playwright）を書かせることでブラウザを制御する新しいアプローチを採用しています。これにより、動的なページの待機やループ処理といった複雑なロジックをコードとしてカプセル化でき、実行時の堅牢性と再現性が大幅に向上しました。性能面では、Mind2WebやOdysseysといったベンチマークでGPT-5.4等のモデルを用いて既存手法を凌駕するSOTAを記録しています。また、Claude Code、Codex、OpenClaw、Hermesといった既存のAIツールにプラグインとして統合できる柔軟性も備えており、約1,500行のPythonコードで構成されたミニマルな設計が特徴です。",
+    "topics": [
+      "Web Agent",
+      "Playwright",
+      "LLM",
+      "Automation",
+      "Microsoft"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - microsoft/Webwright: A simple SWE style browser agent framework that achieves SOTA results on long horizon web tasks. · GitHub"
+  }
+}

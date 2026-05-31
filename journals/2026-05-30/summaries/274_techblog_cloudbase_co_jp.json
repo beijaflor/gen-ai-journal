@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:49:18.787111+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチクラウドのコスト集計を Claude Code に任せたら、週1時間が10分になった話",
+    "url": "https://techblog.cloudbase.co.jp/entry/2026/05/29/080000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「skill」機能を活用してマルチクラウドのコスト集計を自動化し、作業時間を大幅短縮しつつ自律的な原因分析を可能にした実践事例。",
+    "summaryBody": "Cloudbase社におけるマルチクラウド（AWS, Azure, GCP, OCI, Datadog）のコスト集計業務を、エージェント型AIツール「Claude Code」で自動化した取り組みの記録です。\n\n### 導入の背景と仕組み\n従来、毎週1時間を要していた各クラウドのCLI/コンソール経由の集計作業を、Claude Codeの「skill」機能を用いてパッケージ化。`/cost-report`コマンド一発で、5系統のコスト並列取得、検算、異常検知（3つの観点：変化率・絶対額・全体比率）、Notionへのレポート生成までを一気通貫で実行します。\n\n### Claude Codeによる自律的な調査\n特筆すべきは、コスト増大時の調査能力です。Claude Codeに指示を出すだけで、自律的にCost ExplorerからCloudTrailのログまで遡り、「いつ・誰が・何の操作をしたか」を特定できるレベルに達しています。これにより、管理ツールを切り替えるスイッチングコストが消失しました。\n\n### 導入成果\n作業時間は1時間から10分へと激減。単なる時短だけでなく、集計のハマりどころをskillとしてコード化することでナレッジが蓄積され、人的ミスを防ぎつつ、より高度なコスト最適化（FinOps）へ注力できる体制を構築しています。",
+    "topics": [
+      "Claude Code",
+      "マルチクラウド",
+      "コスト管理",
+      "自動化",
+      "FinOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

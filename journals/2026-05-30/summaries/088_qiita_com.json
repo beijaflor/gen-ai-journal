@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:12:41.119890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Chatは「コードを読むツール」として使える",
+    "url": "https://qiita.com/ryota_ishii/items/7cdba1a68f14a4256120",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot Chatにプロジェクトのディレクトリ構造（treeコマンドの結果）を解析させることで、コード理解の迅速化と命名不備の自動検出を実現する手法の紹介。",
+    "summaryBody": "Spring Bootを用いた大規模プロジェクト（約800ファイル、150ディレクトリ）に途中参加した際の効率的なキャッチアップ手法を解説しています。`tree -d`コマンドで出力したディレクトリ構成をCopilot Chatに貼り付けるだけで、技術スタックやレイヤー構成、各パッケージの責務を数分で整理できます。さらに、人間が慣れで見落としがちな「protal（portalの誤字）」や「regacyAbstruct（legacyAbstractの誤字）」といった命名不備をAIが客観的に発見する副産物についても触れています。記事では、全体像の把握から命名不整合の指摘、設計パターンの確認まで、段階的に効果を得るための具体的なプロンプトのコツがまとめられており、Copilotを単なる生成ツールではなく「静的解析・コードリーディング」の補助として活用する有用性を示しています。",
+    "topics": [
+      "GitHub Copilot Chat",
+      "Spring Boot",
+      "コードリーディング",
+      "リファクタリング",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

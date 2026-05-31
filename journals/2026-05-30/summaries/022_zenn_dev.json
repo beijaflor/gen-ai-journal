@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:34:42.164752+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントが毎回データを取りに行く設計の限界とナレッジグラフによる解決",
+    "url": "https://zenn.dev/knowledge_graph/articles/kg-agent-memory-first-design",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが推論のたびに複数システムからデータを取り出す「scatter-gather」方式の限界を指摘し、ナレッジグラフを用いた「事前統合型（Memory-first）」設計の優位性を解説する。",
+    "summaryBody": "AIエージェントのPoCが本番で失敗する主な原因として、分散したシステムからその都度データを集める「scatter-gather問題」を挙げています。この方式はレイテンシの増大、トークン消費の非効率、システム間の関係性の欠如による精度低下を招きます。解決策として、推論が始まる前に関連データを統合・構造化しておく「事前統合型（Memory-first）」アーキテクチャを提案しています。特にナレッジグラフを活用することで、RDBでは複雑になりがちな「データ間の深い関係性」の走査を効率化し、LLMが推論に集中できる環境を構築できます。具体的な参照実装としてDevRevの設計（MemoryとAirSync）を紹介し、システム数が増えても開発コストを抑えつつ、一貫した推論精度を維持する手法を詳説しています。",
+    "topics": [
+      "AIエージェント",
+      "ナレッジグラフ",
+      "アーキテクチャ設計",
+      "RAG",
+      "DevRev"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

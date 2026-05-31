@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:56:34.950878+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code vs Codex：それぞれのツールが開発者に求める、暗黙の条件",
+    "url": "https://zenn.dev/dely_jp/articles/cfac9a04904113",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Codeを「深さ優先（DFS）」、Codexを「幅優先（BFS）」の思考モデルと定義し、それぞれの特性に合わせた開発者の関与方法と使い分けを解説したエンジニアによる分析記事。",
+    "summaryBody": "iOSアプリの大規模リファクタリングにおける実体験に基づき、AIコーディングツールの挙動の差異を分析。Claude Code (Opus 4.7)は単一の仮説に突き進む「DFS型」であり、初期段階で正確なコンテキストを与えれば高い実行力を発揮する一方、前提を誤ると暴走するリスク（wrong compression）がある。対してCodex (GPT-5.5)は多角的な検討が得意な「BFS型」だが、実行プランへの落とし込みで迷走しやすい（failure to compress）。著者はARC-AGI-3のベンチマーク分析を引用し、これらの差がベースモデルの「思考の癖」に由来すると指摘。実務では、Codexで全体像を調査・議論し、その結果を圧縮してClaude Codeに渡して実装させるという、特性を補完し合う使い分けを推奨している。",
+    "topics": [
+      "AIコーディング",
+      "Claude Code",
+      "Codex",
+      "LLM",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

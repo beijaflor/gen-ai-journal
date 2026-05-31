@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:07:46.574243+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント向けGuardianポリシーテンプレート：AIの行動リスク評価フレームワーク",
+    "url": "https://github.com/openai/codex/blob/rust-v0.133.0/codex-rs/core/src/guardian/policy_template.md",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのCodex関連プロジェクトで利用される、AIエージェントの提案する操作が安全か否かを、リスクレベルとユーザーの承諾状況から判定するための詳細なガイドライン。",
+    "summaryBody": "このドキュメントは、コーディングエージェントが実行しようとするアクションを評価するための「Guardian（守護者）」コンポーネント用のシステムプロンプト（ポリシーテンプレート）です。エージェントが生成したコードや操作を「信頼できない証拠」として扱い、ユーザーの意図、操作の可逆性、およびシステムへの影響範囲を分析する手法を定義しています。\n\n主な内容は以下の通りです：\n- **リスク分類**: 低（ルーチン操作）から、重要サービスの破壊や機密情報の漏洩を含む「Critical」まで、4段階でリスクを定義。\n- **ユーザー承諾スコアリング**: 明示的な承認から、推測、あるいは根拠なし（Unknown）までを評価。\n- **判定ロジック**: リスクが「High」以上の場合は中程度以上の承諾が必要、あるいは原則拒否といった閾値を設定。ただし、ユーザーがリスクを認識した上での再承認を最優先する。\n- **調査ガイドライン**: 破壊的な操作（rm -rf等）の前に読み取り専用チェックを行うなど、エビデンスに基づく判断を推奨。\n\nAIエージェントの自律性と安全性を両立させるための、実践的なガバナンス設計の好例と言えます。",
+    "topics": [
+      "AI Safety",
+      "LLM Agents",
+      "OpenAI Codex",
+      "Policy Enforcement",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 92
+    },
+    "originalTitle": "codex/codex-rs/core/src/guardian/policy_template.md at rust-v0.133.0 · openai/codex · GitHub"
+  }
+}

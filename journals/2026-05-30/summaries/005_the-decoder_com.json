@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:39:35.653200+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AutoTTS：AIエージェントが人間を超える推論スケーリング規則を自動生成",
+    "url": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」が、推論時の計算資源配分を最適化するアルゴリズムを自律的に設計し、人間による既存手法を上回る効率性を達成した。",
+    "summaryBody": "メリーランド大学やMetaなどの共同研究チームは、LLMの推論能力を向上させる「テスト時スケーリング（TTS）」の制御アルゴリズムを自動発見する手法「AutoTTS」を発表しました。従来、推論をどの程度並列実行し、どのタイミングで枝刈りするかといったルールは人間が設計していましたが、AutoTTSはAIエージェント（Claude Code）がそのロジックを直接コードとして書き出し、改善を繰り返します。特筆すべきは、あらかじめ生成された回答パスを用いるオフライン環境により、数千もの試行をわずか40ドルのコストで実施可能な点です。生成されたアルゴリズムは、モデルの確信度の変化を動的に監視する高度なロジックを備え、数学ベンチマーク（AIME等）において、従来の自己整合性（Self-consistency）手法と比較してトークン消費量を約70%削減しながら精度を維持、あるいは向上させました。これはAI研究者の役割が「ルールの設計」から「探索環境の設計」へシフトすることを示唆しています。",
+    "topics": [
+      "AutoTTS",
+      "Test-time Scaling",
+      "Claude Code",
+      "LLM 推論最適化",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Researchers let Claude Code discover AI scaling algorithms that humans probably wouldn't have designed"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:09:43.089451+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Karpathy氏の200行GPT「microGPT」を1行1行読み解く",
+    "url": "https://zenn.dev/karaage0703/articles/1e7106add712d1",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "Andrej Karpathy氏が公開した200行の純PythonによるGPT実装「microGPT」の内部構造を、自動微分からアテンションまでコードレベルで詳細に解説した技術記事です。",
+    "summaryBody": "この記事は、Andrej Karpathy氏による外部ライブラリ（PyTorchやNumPy）を一切使用しないGPT実装「microGPT」を徹底的に分解・解説しています。\n\n主な構成要素は以下の通りです：\n1. **Autogradエンジン**: スカラー値を用いた簡易的な自動微分クラス「Value」の実装とバックプロパゲーションの仕組み。\n2. **Transformerアーキテクチャ**: マルチヘッドセルフアテンション、MLP（Feed-Forward Network）、RMSNorm、残差接続を純粋なPythonのループと数学演算で再現。\n3. **学習プロセス**: Adam最適化アルゴリズムを用いた、名前データセットによる1000ステップの訓練フロー。\n4. **推論と可視化**: 学習済みモデルによるテキスト生成に加え、Loss曲線やアテンション重みのヒートマップ、パラメータ分布の変化を可視化する独自のPythonコードも紹介されています。\n\nライブラリに隠蔽されたTransformerの内部計算を「見える化」することで、GPTの動作原理を根本から理解するための優れた教材となっています。",
+    "topics": [
+      "microGPT",
+      "Andrej Karpathy",
+      "Transformer",
+      "自動微分",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:52:02.281343+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPでAgentのできることを増やすのをやめたら、Context Boundaryが残った",
+    "url": "https://zenn.dev/mofuteq/articles/be562471f96a68",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "MCPを単なる能力拡張の手段ではなく、エージェントの責務境界を定義し、回答の「平均化」を防ぐためのコンテキスト制御機構として活用する設計思想の提案。",
+    "summaryBody": "MCP（Model Context Protocol）を用いてAIエージェントの機能を拡張する際、LLMが「何でも答えられてしまう」ことに起因するリスクを論じています。特に契約書レビューなどの専門的なドメインでは、RAG等で取得した複数の論点や矛盾が、LLMの自然な文章生成によって「平均化（Flattening of reasoning）」され、重要なリスクが埋もれてしまう課題があります。著者は、MCPを「エージェントに自由を与える入口」ではなく、ランタイム側から「使ってよい観点を提示する境界（Context Boundary）」として再定義することを提案。Scope Check、Candidate Review Lenses、Output Boundaryの3要素を導入することで、エージェントの振る舞いを型作り、透明性と安全性を確保する設計手法を詳しく解説しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AIエージェント設計",
+      "LLM",
+      "Context Boundary",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

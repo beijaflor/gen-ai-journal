@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:33:01.913946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン84%減 + 長時間連続自走を実現したAIワーカーのCycle運用 (Codex CLI)",
+    "url": "https://zenn.dev/marvelousu/articles/codex-cli-cycle-ops",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codex CLIを用いたAIエージェントの運用を「1ファイル・1サイクル」に再設計することで、トークン消費を84%削減し、最長22.5時間の連続自走を達成した事例報告です。",
+    "summaryBody": "個人開発プロジェクト『Anemora』におけるAIエージェント（Codex CLI）の運用パターン「Cycle」の設計と成果が解説されています。主な改善点は、役割の分離（gpt-5.5による手順書作成とgpt-5.4-miniによる実装）、編集範囲を1ファイルに制限する「手順書」の固定化、および「検証・キャプチャ・ビルド・コミット・プッシュ」を自動で行う4段階のガードレール構築です。この再設計により、1スレッドあたりの平均トークン消費量が36.7Mから6.0Mへと激減し、人間が介入せずとも長時間（最長22.5時間）自走可能な環境を構築しました。自動チェックが通っても目視確認が必要なケースがあるといった実運用上の課題や、GitHubで公開された配布キットについても言及されています。",
+    "topics": [
+      "Codex CLI",
+      "AIエージェント",
+      "LLM運用",
+      "自動化",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:15:37.972728+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic Patterns: 先端エージェントシステムにおける普遍的アーキテクチャのガイドライン",
+    "url": "https://veso.ai/research/agentic-patterns/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやOpenAI、Googleなどの主要エージェントシステムが収束しつつある、設計上の物理的制約に基づいた普遍的な8つの設計パターンとアーキテクチャを解説する実践ガイド。",
+    "summaryBody": "## 概要\nVeso Researchが公開したこのガイドは、Claude Code、OpenAI Codex、LangGraphといった主要なエージェントシステムが、異なる開発環境にもかかわらず共通の設計に収束している事実を「Agentic Patterns」として体系化したものです。これは模倣の結果ではなく、コンテキスト窓の制限やツールのプロトコル、安全性の確保といった物理的な制約への対応として必然的に導き出された結論であるとしています。\n\n## 8つの基本原則 (Postulates)\n1. **永続的な指示ファイル**: `CLAUDE.md`等でスタックや規約を200行以内で管理する。\n2. **プロンプト外での安全強制**: 安全ルールをプロンプトに頼らず、権限管理やフックで物理的に制限する。\n3. **コンテキスト予算の管理**: 指示(10-15%)、会話(30-40%)、ツール結果(20-30%)の比率を維持し、80%でクリア/要約を行う。\n4. **MCP (Model Context Protocol) の採用**: ツール接続の標準規格としてMCPを導入する。\n5. **共有ステートによる調整**: システム内ではメッセージ交換ではなく共有ステートの読み書きで連携する。\n6. **コヒーレンスの崖を避ける分解**: モデルの一貫性が低下する前にタスクをサブタスクへ分解する。\n7. **タスクごとのコスト追跡**: 初期段階からトークン予算とコスト監視をインフラとして組み込む。\n8. **段階的な複雑化**: 週単位で機能を積み上げ、各レイヤーを検証しながら複雑性を増やす。\n\n## 実装への示唆\n本ガイドは、エージェント開発を単なるプロンプト調整ではなく、分散システムエンジニアリングとして捉えるべきだと主張しています。開発者は「Prompt(指示)」「Control(制御)」「Context(記憶)」「Interface(接続)」「Operate(運用)」の各セクションを順を追って構築することで、堅牢なプロダクションレベルのエージェントを実現できます。",
+    "topics": [
+      "Agentic Patterns",
+      "LLM Agents",
+      "MCP (Model Context Protocol)",
+      "AI Architecture",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    },
+    "originalTitle": "Agentic Patterns"
+  }
+}

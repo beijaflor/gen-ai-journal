@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:14:38.017952+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMでの開発には「退屈な言語」を使え",
+    "url": "https://jry.io/writing/use-boring-languages-with-llms/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMやAIエージェントの出力精度を最大化するには、エコシステムが断片化しておらず、記述方法の一貫性が高い「退屈な言語」（特にGo）を選択すべきである。",
+    "summaryBody": "ソフトウェア開発におけるLLMやAIエージェントの活用において、プログラミング言語の「一貫性」がモデルの出力品質を左右する決定的な要因となっている。JavaScriptやPythonのように多様なフレームワークやツールチェーンが乱立し、断片化したエコシステムを持つ言語では、学習コーパス内の分散（バリアンス）が大きいため、AIが生成するコードの信頼性が低下しやすい。一方で、Ruby on Railsや特にGo言語のように、規約が厳格で「やり方が一つしかない」環境は、学習データのベクトル空間において高い一貫性を持ち、AIにとって予測しやすい。Goはシンプルな並行処理、強力な標準ライブラリ、一貫したフォーマットツール、そしてメモリ管理をAIに委ねられるGCを備えており、AI駆動開発において最も「堅実な」選択肢である。著者は、AIエージェントのパフォーマンスを引き出すためには、柔軟性よりも制約と一貫性を優先すべきだと主張している。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "Go言語",
+      "ソフトウェアアーキテクチャ",
+      "開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Use boring languages with LLMs"
+  }
+}

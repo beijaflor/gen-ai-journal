@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:53:06.650053+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LiteLLMをやめて自作Goバイナリに置き換えたら一気に軽くなりました - 「実践 AI エージェント開発」を実装してみた",
+    "url": "https://zenn.dev/okamyuji/articles/golang-litellm-alternative-single-binary",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "書籍『実践 AI エージェント開発』の指針に基づき、Go言語で開発した軽量なシングルバイナリAIエージェントの設計と、16段階の本番運用要件の実装プロセスを解説しています。",
+    "summaryBody": "本記事は、書籍『実践 AI エージェント開発』の知見をGo 1.25で具現化したオープンソースツール「go-llm-agent」の開発記です。Python製のLiteLLMをあえて使用せず、Goで自作することで「シングルバイナリによる可搬性」「エージェントループの統合」「保守コストの最小化」を実現しています。\n\n主な特徴と実装内容は以下の通りです：\n- **マルチプロバイダー対応**: OpenAI, Anthropic, Google Gemini, Ollamaを統合。OpenAI互換サーバーとしても機能します。\n- **16のステップ別実装**: 観測可能性(OTel)から始まり、コスト追跡、信頼性(リトライ/フォールバック)、セキュリティ(PII消去/mTLS)、評価フレームワーク、MCP(Model Context Protocol)対応まで、書籍の章立てに沿って本番運用に必要な機能を段階的に構築しています。\n- **安全性の確保**: ツール実行時のサンドボックス制限や、危険な操作に対する人間による承認フロー(HITL)を組み込んでいます。\n\n大規模なゲートウェイではなく、開発者のローカル環境やCI環境で即座に動作する「軽量・高速・堅牢」なエージェントのあり方を提示しています。",
+    "topics": [
+      "Go",
+      "AIエージェント",
+      "LLM",
+      "実践AIエージェント開発",
+      "プロダクション運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 96
+    }
+  }
+}

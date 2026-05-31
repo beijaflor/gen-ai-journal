@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:17:31.166393+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの規約をAGENTS.mdに書くのをやめ、フックとnano-stagedで自動化する手法",
+    "url": "https://evilmartians.com/chronicles/stop-writing-rules-in-agents-md-use-agent-hooks-and-nano-staged-instead",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMエージェントへの指示を自然言語ドキュメントに頼るのではなく、エージェントフックと高速なLinter/Formatterを組み合わせた自動ガードレールとして実装することで、信頼性と開発速度を向上させる手法の提案。",
+    "summaryBody": "AIエージェント（Claude Code等）におけるベストプラクティスは、人間の開発者と同様に「ドキュメント（AGENTS.md）よりも自動化」を優先することです。本記事では、エージェントがコードを出力した直後のイベント（Stopフック）を利用し、`nano-staged`経由で`oxlint`や`oxfmt`といった高速なツールを実行するワークフローを紹介しています。これにより、エージェントが指示を忘れるリスクを排除し、トークン消費を抑えながら、瞬時に修正フィードバックをループさせることが可能になります。具体的には、`.claude/settings.json`へのフック設定、依存関係の少ない`nano-staged`の活用、そして従来のPrettier/ESLintからRust製の高速ツールへの移行によるDX（Agent Experience）の向上が強調されています。",
+    "topics": [
+      "AI Agents",
+      "Developer Experience (DX)",
+      "Claude Code",
+      "nano-staged",
+      "Linting"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Stop writing rules in AGENTS.md: use agent hooks and nano-staged instead—Martian Chronicles, Evil Martians’ team blog"
+  }
+}

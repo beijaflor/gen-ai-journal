@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:11:57.331356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex が SKILL.md を 220 行で打ち切っていた話",
+    "url": "https://zenn.dev/haru0416/articles/codex-skill-md-220-lines",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Codex CLIでエージェントがスキルを読み込む際、モデルが生成するsedコマンドにより220行目以降が無視されるという、仕様に基づいた「暗黙の制約」を実測により明らかにした記事。",
+    "summaryBody": "著者が開発中のスキル集「Quaere」をTerminal-Benchで検証した際、Codex CLI上のエージェントがSKILL.mdの220行目までしか読み取っていないことをログから発見しました。この挙動はCLI側のバグではなく、エージェントがスキルを読み出す際に生成するシェルコマンド `sed -n '1,220p'` に起因します。Claude Code等の他のハーネスでは発生せず、Codex CLI特有の「ファイル読み取りツールを持たず、モデルが自らシェルで読みに行く」というアーキテクチャが生んだ現象です。モデルにとっての「スキルの標準的な長さ」というイディオムが220行程度である可能性が高く、アンチパターンや終了条件といった重要な指示が後半にある場合、それらは物理的に読み飛ばされていました。結論として、OpenAIの公式ドキュメント通り「SKILL.mdは200行以内に収め、詳細は別ファイルへ逃がす」という設計を厳守する必要性を実証しています。",
+    "topics": [
+      "Codex",
+      "Agent Skills",
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

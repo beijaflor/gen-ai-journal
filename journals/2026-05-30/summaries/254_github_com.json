@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:54:23.736390+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "tiny-vllm: C++とCUDAで高性能なLLM推論エンジンを自作するチュートリアル",
+    "url": "https://github.com/jmaczan/tiny-vllm",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "vLLMの設計思想を最小構成で再現し、Llama 3.2を対象とした高性能な推論エンジンをC++とCUDAでスクラッチから構築するための包括的な学習リソース。",
+    "summaryBody": "このプロジェクトは、vLLMの「弟分」として、高性能なLLM推論エンジンをC++とCUDAでゼロから実装するプロセスを解説したリポジトリです。Llama 3.2 1B Instructモデルを対象とし、Safetensors形式の重み読み込み、BFloat16による数値表現の理解、GPUメモリ管理といった基礎から、RMSNorm、RoPE、Grouped-Query Attention（GQA）といったLLM固有の演算、さらにはPagedAttentionや連続バッチング（Continuous Batching）といった高度な最適化手法までを網羅しています。特に、cuBLASにおける行列演算の転置トリックや、並列リダクションを用いたカスタムカーネルの実装など、低レイヤの最適化に関する詳細な数学的・技術的解説が含まれているのが特徴です。",
+    "topics": [
+      "LLM推論",
+      "CUDA",
+      "C++",
+      "vLLM",
+      "GPUプログラミング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - jmaczan/tiny-vllm: Build your own high performance LLM inference engine in C++ and CUDA - a smaller version of vLLM"
+  }
+}

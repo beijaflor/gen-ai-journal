@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:34:08.409366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAnthropicはプロンプトにXMLタグを推奨するのか──Markdownとの構造的な違い",
+    "url": "https://zenn.dev/yun_bow/articles/a339e1d31a4c43",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Markdownの人間向け設計に起因する構造的曖昧さを指摘し、AIの解釈精度向上やRAGの最適化のためにXML/HTMLタグが有効である理由を技術的に解説する。",
+    "summaryBody": "本記事は、AnthropicがClaudeのプロンプトエンジニアリングにおいてXMLタグを推奨する背景を、言語設計・学習データ・トークン解釈の観点から考察している。Markdownは人間にとっての可読性を優先しており、同じ意味を複数の記法で表現できる「構造的曖昧性」を持つ。対してHTMLやXMLは、開始・終了タグによる明示的な構造（自己記述性）と属性によるメタデータの付与が可能であり、LLMがコンテキストを誤認するリスクを低減させる。特にRAGのチャンク境界の明確化や、セル結合を含む複雑なテーブルの伝達において、HTML構造はMarkdownに対して優位性を持つ。一方で、タグの使用はトークン数を1.2〜2倍程度増加させるため、指示の重要度やモデルの制約に応じた適材適所の「ハイブリッドアプローチ」が推奨されている。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "Claude",
+      "Markdown",
+      "XML",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

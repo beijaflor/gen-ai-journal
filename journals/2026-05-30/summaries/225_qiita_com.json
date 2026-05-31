@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:57:10.477946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デジタル庁の源内 Web（genai-web）から Cloud 依存を外して、ローカル LLM で動かしてみた",
+    "url": "https://qiita.com/engchina/items/4e61325b1eec339e43e1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "デジタル庁の生成AI基盤「源内 Web」のAWS依存箇所をSQLiteやOpenAI互換APIに置き換え、ローカル環境でLLMを動作させるための技術的な改修手法を解説しています。",
+    "summaryBody": "デジタル庁が公開している生成AI利活用基盤「源内 Web（genai-web）」を、クラウド（AWS）を介さずにローカル環境で完結して動作させるための改修記録です。主な変更点として、Vite環境変数を用いたモード切り替えの導入、Cognito/Amplify認証のスキップ、Lambda response streamのローカルHTTP APIへの差し替え、DynamoDBに代わるチャット履歴の保存先としてのSQLite採用、そしてBedrock/SageMakerの代わりにOllama等のOpenAI互換エンドポイントを利用可能にする実装が挙げられています。既存のフロントエンド構成を大きく崩さず、dynamic importを活用してクラウド依存コードを分離することで、公式のデザインシステムを活かしつつローカルLLMで動作するUIを実現しています。",
+    "topics": [
+      "デジタル庁",
+      "源内Web",
+      "ローカルLLM",
+      "Ollama",
+      "React"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

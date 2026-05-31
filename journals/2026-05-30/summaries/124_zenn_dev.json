@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:57:38.096874+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに仕事を任せたら確認待ちで止まっていた。しゃべらせたら今度はうるさかったので改善した。",
+    "url": "https://zenn.dev/collabostyle/articles/6423fd88ee0054",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのHooks機能と音声通知を組み合わせる際、通知が頻繁になりすぎる問題をBashスクリプトによる時間制御とフラグ管理で解決した事例。",
+    "summaryBody": "Claude Codeの作業完了や入力待ちをmacOSの`say`コマンドで音声通知する仕組みを、より実用的にカスタマイズする方法を解説しています。標準的なHooks実装では、短時間の作業や頻繁なやり取りのたびに通知が発生して「うるさすぎる」という課題がありました。筆者はこの問題を解決するため、以下の3つの制御ロジックを導入しています。\n\n1. **完了通知の制限**: 作業時間が5分未満の場合は完了通知をスキップし、軽微な修正での通知を抑制。\n2. **クールダウン設定**: プロンプト送信から10秒以内は「入力待ち」通知を無視し、テンポの良い会話を邪魔しないように設定。\n3. **完了後の通知抑制**: タスク完了フラグを一時ファイルで管理し、次のプロンプトを送信するまで「入力待ち（アイドル状態）」通知が再発するのを防止。\n\n具体的なBashスクリプトの内容と`~/.claude/settings.json`の設定例が公開されており、Claude Codeを用いた並行作業の効率化に役立つ内容となっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "hooks",
+      "シェルスクリプト",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

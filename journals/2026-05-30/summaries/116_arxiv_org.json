@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:59:33.504786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FuzzingBrain V2：脆弱性の自動発見と再現のためのマルチエージェントLLMシステム",
+    "url": "https://arxiv.org/abs/2605.21779",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "FuzzingBrain V2は、OSS-Fuzzとの統合や「Suspicious Point」という独自の制御フロー抽象化により、LLMによる脆弱性発見の偽陽性を排除し、再現可能な検証までを自動化するシステムです。",
+    "summaryBody": "本研究は、大規模言語モデル（LLM）を用いたソフトウェア脆弱性の自動発見および再現における、偽陽性、不適切な分析粒度、複雑な依存関係の推論不足という3つの課題を解決する「FuzzingBrain V2」を提案しています。このシステムは、マルチエージェント構造を採用し、以下の4つの技術的貢献を行っています。(1) GoogleのOSS-Fuzz基盤を活用し、発見した脆弱性が実際にファジングで再現可能であることを保証する自動分析フロー。(2) 「Suspicious Point」と呼ばれる制御フローベースの新しい抽象化により、関数と行の中間的な最適な粒度での脆弱性特定を実現。(3) リソース制約下で関数カバレッジを最大化する、論理駆動型の階層的関数分析と二層ファジング。(4) MCP（Model Context Protocol）ベースの静的・動的解析ツールを用いたコンテキストエンジニアリングによる、複雑な脆弱性への推論強化。AIxCC 2025のC/C++データセットで90%の検出率を記録したほか、実世界の12のオープンソースプロジェクトから29件のゼロデイ脆弱性を発見し、そのすべてがメンテナによって確認・修正されています。",
+    "topics": [
+      "脆弱性診断",
+      "LLMエージェント",
+      "ファジング",
+      "OSS-Fuzz",
+      "ソフトウェアセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "FuzzingBrain V2: A Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction"
+  }
+}

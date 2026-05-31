@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:55:38.154502+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexのコンテキスト圧縮はなぜ優秀なのか — ソースコードから読み解く設計",
+    "url": "https://qiita.com/nogataka/items/9b71285a9dd448e53bb1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAI Codex CLIのRust実装を解析し、LLMエージェントが長時間のセッションでも文脈を失わずに動作し続けるための「多層的なコンパクション（履歴圧縮）」の設計思想を詳解しています。",
+    "summaryBody": "LLMベースのコーディングエージェントが直面するコンテキストウィンドウ上限の問題に対し、Codexが採用している「コンパクション」機構をソースコードレベルで分析した解説記事です。Codexは単に古い履歴を切り捨てるのではなく、会話ログから「現在の状態」を抽出し、別のモデルへの「引き継ぎメモ」として履歴を再構成します。特徴的な点として、ターンの境界だけでなく推論の途中（Mid-turn）やモデルのダウンシフト時にも圧縮が発動する柔軟なトリガー設計、履歴を「初期コンテキスト＋直近発言＋要約」の3層構造で維持するロジック、そしてツール実行履歴をあえて捨てて「再実行」や「状態参照」に依存する割り切りが挙げられます。また、リモートAPI経由の不透明なデータ（encrypted_content）による圧縮や、圧縮効果の徹底的な計測・分析基盤など、実用的なエンジニアリングの極致が示されています。",
+    "topics": [
+      "LLM",
+      "OpenAI",
+      "Codex",
+      "Rust",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

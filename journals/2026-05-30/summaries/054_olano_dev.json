@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:26:01.279007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成コードを「読まない」という選択：規律の対象をコードから仕様へ転換する",
+    "url": "https://olano.dev/blog/dangerously-skip/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによるコード生成の爆発的な加速に対し、人間がすべてのコードを査読するのではなく、ソースコードを「読み飛ばす対象（中間言語）」と見なし、規律の焦点を「仕様」と「テスト」へ移行すべきだと論じている。",
+    "summaryBody": "著者のFacundo Olanoは、プログラマがLLM生成コードのすべてを理解・査読し続けることは、生成速度と非決定性の観点からもはや非現実的になりつつあると指摘します。組織がLLMによる生産性向上を真に追求するのであれば、ソースコードをアセンブリやバイトコードと同様の「人間が直接読まない中間生成物」として扱い、人間の責任範囲をより高レベルな「仕様（Specification）」の定義と、その正当性を検証する「テスト」に集約すべきだというパラダイムシフトを提案しています。\n\nこの転換には組織構造の抜本的な見直しが不可欠です。アムダールの法則を引き合いに出し、コード生成だけを高速化しても、会議や承認プロセスなどの「人間系」のボトルネックが残れば全体の生産性は向上しません。エンジニアがプロダクトデザインから意思決定までを自律的に行い、標準化されたMarkdown形式の仕様書を「プロジェクトの真実」として管理する、新しいエンジニアリングの規律が求められています。手戻りのコストが極めて低くなる世界では、コードそのものよりも、何を構築するかという定義（仕様）と、それが正しく動くかという検証（テスト）がアカウンタビリティの中核となります。",
+    "topics": [
+      "LLM",
+      "Software Engineering",
+      "Productivity",
+      "Specification Driven Development",
+      "Amdahl's Law"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "--dangerously-skip-reading-code"
+  }
+}

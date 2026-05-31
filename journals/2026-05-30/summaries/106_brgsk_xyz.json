@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:02:03.249252+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・メモリ：その解剖学的分析",
+    "url": "https://brgsk.xyz/agent-memory-anatomy/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントのメモリシステムを認知科学の用語とエンジニアリングの実態の両面から解剖し、現状のライブラリが抱える課題と将来の可能性を論じた技術考察。",
+    "summaryBody": "この記事は、AIエージェントにおける「メモリ」の仕組みを、抽出器（Extractor）、保存先（Store）、検索器（Retriever）という3つのエンジニアリング・コンポーネントと、認知科学における4つのメモリ分類（エピソード、意味、手続き、展望）を対比させて詳説しています。現状の多くのライブラリ（LangMem、Mem0、Graphitiなど）が、認知科学の用語をAPIに借用しながらも、実態としてはエピソード記憶を脱文脈化して「意味記憶（事実の蓄積）」へと圧縮しているに過ぎないと指摘。特に、エージェント自身の行動特性を変える「手続き的記憶」や、将来の行動を想起する「展望的記憶」の実装が不十分である点を強調しています。また、生物学的メモリとの比較において、睡眠中の記憶整理に似た「コンソリデーション（統合）」の重要性を説く一方で、生物的な「忘却」をそのまま模倣することはエージェントの監査性やデバッグ性を損なうため、単なる削除ではなく「検索可能性の管理」に注力すべきだと論じています。",
+    "topics": [
+      "AIエージェント",
+      "LLMメモリ",
+      "認知科学",
+      "RAG",
+      "アーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "agent memory: an anatomy"
+  }
+}

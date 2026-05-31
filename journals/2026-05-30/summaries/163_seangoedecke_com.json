@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:50:36.018378+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトもまた技術的負債である",
+    "url": "https://www.seangoedecke.com/prompts-are-technical-debt-too/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIプロンプトは特定のモデルに依存し、モデル更新によって密かに劣化するため、コードと同様に管理と削減が必要な「技術的負債」であると警告する論評。",
+    "summaryBody": "ソフトウェア開発において「すべてのコードは技術的負債である」と言われるのと同様に、AIエージェントやツール向けのプロンプトもメンテナンス負荷を高める負債となります。プロンプトの最大の問題は、特定のモデルバージョンに対する依存性が極めて高いことです。あるモデルで劇的な改善をもたらした調整が、次のバージョンでは無効、あるいは有害になる可能性があります。コードのバグと異なり、プロンプトの劣化は「サイレント」に進行するため、開発者が気づかぬうちにシステムのパフォーマンスが低下します。著者は、独自の複雑なエージェント設定（AGENTS.md等）を自作しすぎるのを避け、CursorやCopilotのようなサードパーティ製ツールに最適化を任せること、そしてプロンプトは振る舞いの指示ではなく「プロジェクトに関する具体的な事実」に限定し、最小限に保つべきだと主張しています。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "技術的負債",
+      "AIエージェント",
+      "ソフトウェアエンジニアリング",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Prompts are technical debt too"
+  }
+}

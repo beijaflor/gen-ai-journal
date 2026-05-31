@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:51:34.713409+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4が4種類もあって混乱したので整理してみた！",
+    "url": "https://zenn.dev/tasshi441/articles/8a80daffac2556",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GoogleがリリースしたオープンウェイトLLM「Gemma 4」の4つのバリエーション（31B, 26B A4B, E4B, E2B）について、アーキテクチャや推論負荷の違いを整理した解説記事。",
+    "summaryBody": "Googleが2026年にリリースしたGemma 4シリーズの4つのモデル（31B、26B A4B、E4B、E2B）について、ローカルLLM愛好家の視点から特徴をまとめた記事です。\n\n### 各モデルの特徴とアーキテクチャ\n- **Gemma 4 31B**: 標準的なTransformer（Dense）構造。高品質だが31GB以上のメモリを要し、リクエスト数が少ない高品質重視の用途向け。\n- **Gemma 4 26B A4B**: MoE（Mixture of Experts）を採用。総パラメータは26Bだが、推論時は約4Bのみがアクティブになるため、26Bの品質と4Bの推論速度を両立する。\n- **Gemma 4 E4B (Effective 4B)**: PLE（Per-Layer Embeddings）技術を採用した8Bモデル。推論負荷を4B相当に抑えており、iPhone 17 Proなどのモバイルデバイスでも高速動作する。\n- **Gemma 4 E2B**: PLE採用の軽量モデル（約5B、実行時2B相当）。ラズベリーパイ等のエッジデバイス特化型。\n\n### 運用のヒント\nそのまま利用する場合は「it（Instruction-Tuned）」サフィックスが付いたモデルを選択するのが定石です。著者は、API的な利用には26B A4B、特定の単一タスクに最適化（ファインチューニング）して本番利用するにはE4Bがコストパフォーマンス面で期待できると述べています。",
+    "topics": [
+      "Gemma 4",
+      "LLM",
+      "ローカルLLM",
+      "Google",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

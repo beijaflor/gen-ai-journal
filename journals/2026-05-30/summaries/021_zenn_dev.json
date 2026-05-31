@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:34:58.412735+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot app を加えて考える CLI / VS Code / app の使い分け",
+    "url": "https://zenn.dev/tomokusaba/articles/b24e916c53fa7d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilotの3つのインターフェース（CLI、VS Code、App）の特性をマニュアル・オートマ車に例えて比較し、GitHub上の仕事の流れに基づいた最適な使い分けを提案しています。",
+    "summaryBody": "本記事では、テクニカルプレビューとして登場した「GitHub Copilot app」を加え、既存のCLIおよびVS Code（Agent Mode）との使い分けをC#/.NET開発者の視点で整理しています。著者は、GitHub Copilot appを「GitHubネイティブな作業空間」と定義し、CLIを「マニュアル車」、Appを「オートマ車」に例えて解説しています。\n\n主な使い分けの基準は以下の通りです：\n1. **GitHub Copilot app**: 「GitHubの仕事を前に進める入口」。IssueやPRのライフサイクル管理、複数リポジトリを跨ぐ並列セッション、Workflowsによる定型作業の自動化に強みを持ちます。\n2. **GitHub Copilot CLI**: 「リポジトリに深く入る入口」。コマンドラインからの強力な制御や、dotnetビルド・テスト等のターミナル操作と密接に連携した開発に適しています。\n3. **VS Code**: 「コードに最も近い入口」。特定のファイルや選択範囲に対する局所的な修正、インラインでの差分確認など、エディター近接戦に最適です。\n\nAppの導入により、ディレクトリ単位ではなく「リポジトリとセッション」単位で作業を捉えられるようになり、複数タスクを並行する際の認知負荷が軽減されるメリットが強調されています。",
+    "topics": [
+      "GitHub Copilot",
+      "GitHub Copilot app",
+      "GitHub Copilot CLI",
+      "VS Code",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 90
+    }
+  }
+}

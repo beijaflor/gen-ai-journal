@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:55:22.804296+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skills のアンチパターン — 「なぜ Skills か」から考え直す設計の落とし穴",
+    "url": "https://qiita.com/nogataka/items/ea4e7d78651d6ed46796",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの「Skills」機能を設計思想「段階的開示」から再定義し、コストと精度の最適化を妨げる6つの構造的なアンチパターンとその対策を詳説した実地ガイド。",
+    "summaryBody": "この記事は、Claude Codeの「Skills」機能を1ヶ月運用した経験から得られた設計上の負債と対策をまとめた解説記事です。筆者は、Skillsの真髄を「段階的開示（progressive disclosure）」にあると定義し、コンテキストウィンドウの制限下でコストと精度を両立させるためのメカニズムを紐解きます。主なアンチパターンとして、SKILL.mdの肥大化による発火精度の低下、多責務による再利用性の喪失、曖昧なdescriptionによる誤発火・不発火、副作用のあるコマンドの自動実行、共通手順のコピペ、そしてMarkdownゆえのレビュー欠如を挙げています。これらに対し、本体を200行以内に保ち詳細は別ファイルに分離する構造や、副作用のあるスキルをマニュアル発火（disable-model-invocation: true）に限定する手法、共通ルールをrules/ディレクトリに集約する3層構造の設計指針を提示しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "AI開発",
+      "設計思想"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}

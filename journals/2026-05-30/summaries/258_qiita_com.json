@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:53:21.293308+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Dynamic Workflows入門 — 並列サブエージェントで大規模タスクを自動化する",
+    "url": "https://qiita.com/kai_kou/items/fe9b0e65e2252af773c9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのClaude Codeに追加された、JavaScriptスクリプト生成と最大1,000の並列サブエージェントによる大規模タスク自動化機能「Dynamic Workflows」の解説ガイド。",
+    "summaryBody": "AnthropicがClaude Opus 4.8のリリースとともに発表したClaude Codeの新機能「Dynamic Workflows」を詳しく解説しています。この機能は、従来の直列処理の限界を超え、JavaScriptのオーケストレーションスクリプトを自動生成して最大1,000のサブエージェント（同時16並列）を稼働させる仕組みです。コードベース全体の移行、セキュリティ監査、リサーチなどの大規模タスクを、コンテキストウィンドウを節約しながら実行できます。記事では、`/deep-research`や`workflow`キーワードによる3つのトリガー方法、`Ctrl+G`による実行前スクリプト確認、`/workflows`でのリアルタイム監視、そして成功したフローのコマンド化による再利用方法を紹介しています。並列実行に伴うトークン消費増大への対策として、スコープの限定やコスト管理の重要性についても注意を促しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI Agent",
+      "LLM",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

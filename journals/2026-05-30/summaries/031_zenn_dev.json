@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:32:15.489711+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日本語PDFで「Keyword search is all you need」を試す：Agent RAGとVector RAGの精度・コスト",
+    "url": "https://zenn.dev/retrieva_tech/articles/f4386f6b246b34",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazonが提案したキーワード検索ベースのAgentic RAGを日本語PDFで検証し、表データの抽出精度や運用コストのトレードオフを具体的に明らかにした記事。",
+    "summaryBody": "Amazonの研究チームが発表した「Keyword search is all you need」（arXiv:2602.23368）の手法を日本語環境で検証した記録です。LangChainのReAct Agentにpdfgrepをツールとして持たせた「Agent RAG」と、埋め込みモデルを用いた「Vector RAG」を比較しています。結果、10問の小規模検証ではAgent RAGが正解率90%を記録し、特に表や図表からの具体的数値の抽出においてVector RAG（70%）を上回りました。一方で、Agent RAGはLLMの反復呼び出しによりAPIコストが約8.1倍高く、レイテンシも大きいという課題があります。記事では、インデックス構築が不要なAgent RAGの運用面での利点と、コスト・速度面でのVector RAGの利点を整理し、用途に応じた使い分けの基準を提示しています。",
+    "topics": [
+      "RAG",
+      "LLM Agent",
+      "LangChain",
+      "Amazon Bedrock",
+      "pdfgrep"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

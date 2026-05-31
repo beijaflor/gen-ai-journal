@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:55:51.374438+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude に E2E 回帰試験を振ったら呼び戻され続けた話 ── \"段取り八分\" を地で行く現場ノウハウ",
+    "url": "https://qiita.com/ntaka329/items/af9551596ea5fa7a6f30",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI（Claude）によるE2Eテスト自動化において、コード生成前の「段取り（仕様の明確化と環境整備）」が自走の鍵であることを実体験に基づき解説したノウハウ記事。",
+    "summaryBody": "Claude等のAIにE2Eテスト自動化を依頼した際、頻繁に質問（呼び戻し）が発生する原因は、テストコード以前の「暗黙知」や「地ならし不足」にあると指摘しています。本記事では「段取り八分」として、以下の4つの柱を提唱しています。\n\n1. **試験項目の明確化**: 画面名と実URL/APIのトレーサビリティをClaude自身に整理させ、OK条件を定義する。\n2. **事前SEEDの明確化**: 必要なマスタデータや前提状態をリスト化し、AIが把握できるようにする。\n3. **自動化スコープの設計**: 環境的に無理な項目を切り分け、実装方針（UI操作かAPI併用か等）を先に決める。\n4. **環境操作の準備**: ClaudeがData API等で自らデータを投入・クリーンアップできる環境を整える。\n\nこれらを「新メンバーを受け入れる準備」として事前に行うことで、AIが人の手を借りずに自律的にテストを量産できる体制が構築可能になります。",
+    "topics": [
+      "E2Eテスト",
+      "テスト自動化",
+      "ClaudeCode",
+      "Playwright",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

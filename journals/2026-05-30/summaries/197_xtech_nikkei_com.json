@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:05:38.019043+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMでAIエージェントを試す、「Claude Code」を動かしてみる",
+    "url": "https://xtech.nikkei.com/atcl/nxt/column/18/03600/042100004/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Ollamaのサーバー機能を介して、コーディング特化型モデル「Qwen3-Coder-Next」と「Claude Code」を連携させ、Windows上でローカルAIエージェントを構築する手順を解説する。",
+    "summaryBody": "本記事は、自分のパソコンで大規模言語モデル（LLM）を動かす連載の第4回として、プログラミング向けAIエージェント「Claude Code」をローカル環境で動作させる具体的な手法を紹介している。技術スタックとして、2026年1月に追加された「ollama launch」コマンドによる連携機能を活用し、バックエンドにはコーディングとローカル開発に最適化されたMoE（混合専門家）モデル「Qwen3-Coder-Next (80B)」を採用。Windows環境におけるOllamaのセットアップ、Gitの導入、モデルのダウンロード、そしてClaude Codeのインストールから作業ディレクトリの準備までをステップ・バイ・ステップで解説している。外部APIの制限を受けないプライベートな開発支援環境を構築したいエンジニア向けの実践的なガイドとなっている。",
+    "topics": [
+      "ローカルLLM",
+      "Claude Code",
+      "Ollama",
+      "Qwen3-Coder-Next",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

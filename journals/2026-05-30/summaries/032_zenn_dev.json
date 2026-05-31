@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:31:59.654933+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 用のエージェントを Codex にも対応させる",
+    "url": "https://zenn.dev/scalar_sol_blog/articles/74374b5ad77607",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code専用に設計された設計エージェント「Nexus Architect」を、コアロジックを変更せずAGENTS.mdによる翻訳レイヤーの追加のみでOpenAI Codexに対応させた実践事例の紹介。",
+    "summaryBody": "本記事では、ScalarDB向けのマイクロサービス設計エージェント「Nexus Architect」を、Claude CodeだけでなくOpenAI Codexでも動作するように改修したプロセスを解説しています。主な差異として、ツール名（Read/Write vs cat/apply_patch）、スキル呼び出し方法（スラッシュコマンドの有無）、フックの自動実行、およびモデル指定フロントマターの解釈の違いが特定されました。解決策として、SKILL.md本体のロジックは一切変更せず、Codex向けの指示書となる「AGENTS.md」を薄い互換レイヤーとして作成。これにより、ツール名のマッピングやフォールバックパス、推奨モデル表を定義し、両方のツールで同じスキル群を共用できるポータブルなエージェント構成を実現しました。実装はCodexが行い、互換性チェックをClaude Codeが行うという、プラットフォーム間の特性を活かした開発フローも紹介されています。",
+    "topics": [
+      "Claude Code",
+      "OpenAI Codex",
+      "LLMエージェント",
+      "Nexus Architect",
+      "ポータビリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:55:12.500392+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LFM2.5-8B-A1B: オンデバイス向け混合エキスパート（MoE）モデルのさらなる進化",
+    "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Liquid AIが、38兆トークンで学習され、128Kコンテキストと高度な推論能力を備えた、高速・省メモリなオンデバイスAIモデル「LFM2.5-8B-A1B」を発表しました。",
+    "summaryBody": "Liquid AIは、エッジデバイスでの実行に最適化された新しい混合エキスパート（MoE）モデル「LFM2.5-8B-A1B」をリリースしました。前モデルのLFM2から大幅な進化を遂げており、学習データ量は12Tから38Tトークンへ拡大、コンテキストウィンドウも32Kから128Kへと拡張されています。最大の特徴は、総パラメータ数8Bに対しアクティブパラメータ数が1Bという極めて軽量な設計でありながら、明示的な思考の連鎖（Chain of Thought）を生成する「推論専用モデル」としての能力を備えている点です。語彙数を128Kに倍増させたことで、日本語を含む非ラテン言語のトークナイズ効率も向上しています。また、強化学習（RL）により「無限ループ」の抑制やハルシネーションの低減が図られており、ツール呼び出し（Tool Calling）の精度が向上。主要な推論エンジン（llama.cpp, MLX, vLLM等）を初日からサポートし、M5 Max搭載ラップトップで253 tokens/s、スマートフォンでも実用的な速度で動作し、完全プライベートなオンデバイス・エージェントの構築を可能にします。",
+    "topics": [
+      "Liquid Foundation Models",
+      "Mixture of Experts",
+      "On-device AI",
+      "Reasoning Models",
+      "Edge Computing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    },
+    "originalTitle": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts | Liquid AI Products Liquid Foundation Models"
+  }
+}

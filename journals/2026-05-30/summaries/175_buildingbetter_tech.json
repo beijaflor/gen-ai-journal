@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:11:24.672586+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのソースコードから判明した未ドキュメントの隠れた設定機能",
+    "url": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」のソースコード解析により、コマンドの自動書き換え、永続的なエージェントメモリ、自己学習ループなど、公式ドキュメントに記載されていない強力な設定項目が明らかになりました。",
+    "summaryBody": "この記事は、Claude Code（バージョン2.1.87）のソースコードを調査して発見された、公式ドキュメント未記載の機能を詳述しています。主な発見として、第一に、フック（Hooks）を介してツールへの入力を動的に書き換える「updatedInput」や、プログラムで承認を判断する「permissionDecision」などのJSONフィールドの存在があります。第二に、スキルやエージェントのフロントマターで利用可能な「memory」（プロジェクト間の記憶保持）や「effort」（推論深度の制御）などの高度なプロパティが判明しました。また、自然言語で実行環境の性質（「これは検証サーバーである」等）を記述してAIの安全判断を微調整する「YOLO Classifier」の仕組みや、バックグラウンドでセッション内容を統合・学習する「autoDreamEnabled」などの設定も紹介されています。これらは単なる隠し設定ではなく、より自律的で高度なAI開発環境を構築するための鍵となる機能です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM Tools",
+      "CLI Customization",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "I Read the Claude Code Source Code. Here's Everything You Can Configure That the Docs Don't Tell You."
+  }
+}

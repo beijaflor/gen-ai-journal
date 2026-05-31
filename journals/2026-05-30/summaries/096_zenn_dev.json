@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:04:51.221152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIハーネスの心臓部 ── AIのAIによるAIのためのナレッジグラフ（連載Part 2）",
+    "url": "https://zenn.dev/aircloset/articles/f6c990989e60d4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "JSDocとAST解析を用いて、コード・DB・ドキュメント・インフラを一つのナレッジグラフに統合し、AIがビジネスコンテキストを持って自律的に動作するための基盤「Product Graph」の設計詳解。",
+    "summaryBody": "エアークローゼット社が開発するAIプラットフォーム「cortex」の核心部である「Product Graph (cpg)」の設計と実装に関する解説。従来の静的解析のみでは解決できなかった「ビジネスコンテキストの欠如」や「検索の進入点の不在」といった課題に対し、JSDocをSingle Source of Truth (SSoT) とするアプローチを採用している。TypeScriptのAST解析（ts-morph）により、コード、BigQueryのスキーマ定義（Pulumi）、Markdownドキュメント、インフラ定義を統合し、意味検索（Embedding）と構造的な依存関係を1つのグラフとしてBigQuery上に構築。このグラフをModel Context Protocol (MCP) を通じてAIエージェントに提供することで、AIが自律的に影響範囲を調査し、Runbook形式で次のアクションを決定できる仕組みを構築している。AIがコードを書くことを前提とした「AIファースト開発」によって、人手では維持困難な詳細なメタデータの更新を自動化している点が特徴である。",
+    "topics": [
+      "GraphRAG",
+      "Knowledge Graph",
+      "Model Context Protocol",
+      "TypeScript",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

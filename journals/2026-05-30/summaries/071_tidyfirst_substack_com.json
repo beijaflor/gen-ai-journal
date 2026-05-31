@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:16:40.138476+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Genie Sessionsからの教訓：プログラミング言語としての自然文（Prose）",
+    "url": "https://tidyfirst.substack.com/p/genie-lessons-from-genie-sessions",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "構造化された英語をコードとして扱い、AIエージェントに実行させるフレームワーク「OpenProse」のアーキテクチャと、宣言的プログラミングへの転換を論じる。",
+    "summaryBody": "Kent BeckがOpenProseの創設者Dan Barrettと共に、自然言語を構造化されたプログラミング言語として利用する手法を解説している。OpenProseは「requires（前提条件）」と「ensures（事後条件）」のブロックを持つコンポーネントで構成され、IoC（制御の反転）コンテナがこれらを自動で結合する仕組みを持つ。主な特徴として、LLMのコンテキスト管理にファイルパス（ポインタ）を利用し、サブエージェント間でのデータ転送を効率化している点が挙げられる。「どのように作るか」ではなく「どのような結果（Outcome）を望むか」を記述する宣言的な設計思想に基づき、Dijkstra以来の『自然言語はプログラミングに不向き』という定説に対し、AIエージェント時代の新たな境界線を探る試みとなっている。",
+    "topics": [
+      "OpenProse",
+      "LLM",
+      "AI Agents",
+      "Software Design",
+      "Declarative Programming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Genie Lessons from Genie Sessions: Prose as a Programming Language"
+  }
+}

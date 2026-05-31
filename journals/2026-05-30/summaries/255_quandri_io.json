@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:54:08.193620+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「MCPは死んだ」：開発者から見たModel Context Protocolの課題と実用的な代替案",
+    "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "MCPはコンテキストの浪費、信頼性の低さ、既存CLIとの重複という3つの主要な問題を抱えており、特定の用途を除いてはCLIや「Skills」パターンの利用がより効率的である。",
+    "summaryBody": "この記事は、LLMと外部ツールを接続する「Model Context Protocol (MCP)」に対する、開発現場での実体験に基づいた批判的分析です。著者のChloe Kim氏は、MCPが抱える3つの主要な課題を指摘しています。第一に「コンテキストの浪費」であり、多数のツール定義がコンテキストウィンドウの10%以上を占有し、実作業のスペースを奪う点。第二に「運用上の信頼性」で、REST APIと比較して初期化が9.4倍、実行が3倍遅く、プロセス管理の複雑さやエラーが発生しやすい点。第三に「既存ツールとの重複」で、LLMは既にSQLやCLI操作に長けており、MCPサーバーを介するより直接CLIを叩く方がトークン効率が最大65倍も高い点を挙げています。Claude Codeなどのアップデートによりコンテキスト消費は改善されつつありますが、著者は、CLIが存在しない場合や本番DBのセキュリティ保護など特定のケースを除き、必要な時だけ情報を読み込む「Skills」パターンや既存のBash/CLIを活用する方が、デバッグの容易さと効率の面で勝ると結論付けています。",
+    "topics": [
+      "MCP",
+      "Claude Code",
+      "LLM Agent",
+      "CLI",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "MCP is dead | Quandri Engineering Articles"
+  }
+}

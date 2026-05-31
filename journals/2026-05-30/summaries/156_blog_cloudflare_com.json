@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:52:41.427946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareのデータプラットフォーム「Town Lake」とAIエージェント「Skipper」の構築",
+    "url": "https://blog.cloudflare.com/our-unified-data-platform/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが、分散した膨大なデータを統合するレイクハウス「Town Lake」と、自然言語でデータ分析を実行できるAIエージェント「Skipper」を自社スタックで構築した技術的詳細を解説しています。",
+    "summaryBody": "Cloudflareは、秒間10億件を超えるイベント処理から得られる膨大なデータを活用するため、社内プラットフォーム「Town Lake」とAIエージェント「Skipper」を開発しました。\n\n### 1. データレイクハウス「Town Lake」のアーキテクチャ\n分散していたPostgres、ClickHouse、BigQueryなどのデータを統合するため、Apache Trinoをクエリエンジン、R2上のApache Icebergをストレージとするレイクハウスを構築しました。Cloudflare WorkersやWorkflowsを活用したELTエンジン「Transformer」により、コスト効率の高いデータ管理を実現しています。\n\n### 2. ガバナンスとセキュリティ\n「デフォルトでクローズ」の原則を採用し、AIを活用したPII（個人情報）スキャナー「Skimmer」が全カラムを自動分類します。ユーザーはレビュー済みのデータのみにアクセス可能で、機密データへのアクセスはセッション単位のオプトインとログ記録で厳格に管理されています。\n\n### 3. AIデータエージェント「Skipper」\nWorkers AI上で動作し、自然言語の質問からSQL生成、データ抽出、可視化までを数秒で行います。精度の鍵は、スキーマ情報だけでなく「テーブルを生成したSQLコード」自体をコンテキストとしてモデルに与える手法にあります。また、MCP（Model Context Protocol）を活用した「Code Mode」により、AIがJavaScriptを生成・実行して複雑なワークフローを処理します。\n\n### 4. 結論と教訓\n最も困難だったのはAIそのものではなく、アクセス制御やPII検出といった「退屈だが重要なインフラ」の部分でした。現在、課金分析やセキュリティ調査の現場で、従来数日かかっていたクエリが数秒で完了する成果を上げています。",
+    "topics": [
+      "Cloudflare",
+      "Data Lakehouse",
+      "AI Agent",
+      "Apache Trino",
+      "LLM Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "How we built Cloudflare's data platform and an AI agent on top of it"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:57:50.535916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとCodexを2ヶ月使い比べて分かった選び方 — settings.jsonを育てた側が速い",
+    "url": "https://zenn.dev/playpark/articles/claude-code-vs-codex-comparison",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2ヶ月の実践を通じ、設定の作り込みで爆速化するClaude Codeと、大規模変更やGitHub連携に強みを持つCodexの最適な使い分けを比較解説しています。",
+    "summaryBody": "Next.js 16 + React 19のプロジェクトで2ヶ月間、Claude CodeとCodexを併用した実践的な比較レポートです。主な結論として、日常的な開発速度は「settings.jsonやSkillsを育てたClaude Code」が圧倒的であり、既存コードのパターンを学習してプロジェクト固有の慣習に沿ったコードを生成する能力に長けています。一方で、Codexは数十ファイルに及ぶ大規模なリファクタリングや、GitHubと連携した自動PRレビュー、CI連携において優位性があります。著者は、日常開発の生産性を重視してClaude Codeをメインに据えつつ、大規模変更や自動レビューにCodexを組み合わせる運用を推奨。月額220ドルのコストも、作業時間を時給換算すれば初日で回収できるほどの投資対効果があると述べています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AIコーディング",
+      "開発効率化",
+      "比較レビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

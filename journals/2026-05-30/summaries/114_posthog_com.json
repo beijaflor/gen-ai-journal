@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:00:06.329797+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PostHog、独自のAIモデル構築に向けたデータ学習計画を発表",
+    "url": "https://posthog.com/blog/training-ai-models",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "PostHogは、セッションリプレイ分析の高度化や自動コード改善を実現するため、USクラウド上のユーザーデータを活用した独自AIモデルのトレーニングを開始することを公表しました。",
+    "summaryBody": "PostHogは、製品を「プロアクティブかつ自動運転型」へと進化させるための新たなAI戦略を発表しました。主な目的は、大規模なセッションリプレイ分析の効率化、リリース前の挙動を予測する「合成ユーザーテスト」、そしてコンバージョン改善の自動提案を行う『PostHog Code』の強化です。\n\n**運用方針のポイント:**\n- **対象**: USクラウドインスタンスのユーザーが対象（2026年6月29日開始）。EUクラウドや特定契約者はデフォルトで除外されます。\n- **プライバシー**: データは匿名化され、外部のモデルプロバイダー（OpenAI等）には共有・売却せず、すべて自社内でトレーニングを行います。\n- **透明性**: オプトアウト方式を採用していますが、設定からいつでも無効化可能です。CEOのJames Hawkins氏は、十分な学習データ確保のためにこの方式を選んだとしつつ、透明性を最優先する姿勢を強調しています。",
+    "topics": [
+      "PostHog",
+      "AIトレーニング",
+      "データプライバシー",
+      "プロダクトアナリティクス",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "Training our own AI models"
+  }
+}

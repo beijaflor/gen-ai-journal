@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:58:19.095934+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Microsoft Foundry Hosted Agent と Claude Agent SDK を使ったサンドボックス検証",
+    "url": "https://tech.layerx.co.jp/entry/hosted-agent-claude-agent-sandbox",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの安全な実行環境を構築するため、Microsoft Foundry Hosted AgentのmicroVMとClaude Agent SDKのOSレベル隔離機能を組み合わせた多層防御の有効性を検証した技術ブログ。",
+    "summaryBody": "AIエージェントが不特定多数のユーザー環境で動作する際、ファイルアクセスや外部通信、サブプロセス実行などの副作用を構造的に制限するサンドボックス技術の重要性を解説しています。本記事では、個別の拒否ルール（deny rule）の積み上げによるアドホックな対応の限界を指摘し、以下の二層構造による多層防御を提案・検証しています。まず、Microsoft Foundry Hosted Agentを用いてセッション単位のmicroVM（VM境界）で隔離し、他ユーザーとの干渉を防ぎます。次に、Claude Agent SDKのBash sandbox機能を活用し、Linuxのnamespace機構（mount, net, pid, user等）によりBashサブプロセスをOSレイヤーで監獄（jail）化します。これにより、Python経由のファイル読み出しやSNI偽装を伴う通信といった、従来のコマンド制限を迂回する攻撃に対しても、構造的に防御可能であることを実証しています。最終的に、セキュリティ監査の説明性や再現性の観点からも、OS/VM境界による構造的防御が最適であると結論づけています。",
+    "topics": [
+      "AI Agent",
+      "Azure",
+      "Claude Agent SDK",
+      "Sandbox",
+      "Cloud Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

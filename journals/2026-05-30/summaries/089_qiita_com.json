@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:12:24.188896+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのスキルを書くときに便利だった3つの組み込みツール",
+    "url": "https://qiita.com/hiropon122/items/f4496113455b1161e872",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのAgent Skill開発において、ワークフローの遵守や並列処理、コンテキスト分離を可能にする3つの強力な組み込みツール（TodoWrite, Agent, PlanMode）の実践的な活用法を解説した記事。",
+    "summaryBody": "この記事では、AnthropicのCLIツール「Claude Code」向けのカスタムスキル（Agent Skill）を開発する際に、エージェントの挙動を安定・高度化させる3つの組み込みツールを紹介しています。\n\n1. **TodoWrite**: 明示的なタスクリストを作成し、進捗を管理させることで、多段階のレビューや実装フェーズのスキップを防ぎ、ワークフローの堅牢性を高めます。\n2. **Agent**: メインとは別のコンテキストでサブエージェントを起動します。ルールチェックの並列実行による高速化や、肥大化した会話履歴の解析を別環境に分離してサマリーのみを受け取る「コンテキスト分離」に極めて有効です。\n3. **EnterPlanMode / ExitPlanMode**: 計画フェーズで編集ツールを物理的に制限し、ユーザーの明示的な承認を待ってから実装に移る「ゲート」として機能します。\n\nこれらのツールを組み合わせることで、単なるテキスト指示を超えた、信頼性の高いAIエージェントの構築が可能になります。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Anthropic",
+      "LLM",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

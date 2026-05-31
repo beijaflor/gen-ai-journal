@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:02:57.555968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SQLiteが「AGENTS.md」を追加：AI生成コードの受け入れを拒否し、バグ報告のみを許可する方針を明文化",
+    "url": "https://simonwillison.net/2026/May/27/sqlite-agents/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "SQLiteがリポジトリにAGENTS.mdを追加し、AI生成コードのプルリクエストを拒否する一方で、再現可能なバグ報告は受け入れるという明確なガイドラインを提示した。",
+    "summaryBody": "SQLiteのソースコードリポジトリに、AIエージェントやAIツールを利用するユーザー向けの方針を記した`AGENTS.md`が追加されました。この文書では、法的背景や品質維持の観点から、AIによって生成されたコード（Agentic code）のパッチやプルリクエストを一切受け入れないことを明記しています。一方で、AIが発見したバグであっても、再現可能なテストケースが付属している報告については歓迎するとしています。大量のAI生成報告に対応するため、専用の「SQLite Bug Forum」も新設されました。プロジェクトリーダーのD. Richard Hipp氏は、これらの報告から有効なものを精査し、修正作業を進めています。この動きは、LLMの普及に伴うオープンソースプロジェクトの新しい防衛策と共存策の例として注目されます。",
+    "topics": [
+      "SQLite",
+      "LLM",
+      "Open Source Policy",
+      "AI Agents",
+      "Bug Reporting"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "sqlite AGENTS.md"
+  }
+}

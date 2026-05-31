@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:40:23.927427+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バグ発見は10倍、修正は2週間、真陽性は90.6％──Mythosが突きつける「修正する人間がボトルネック」という現実",
+    "url": "https://jbpress.ismedia.jp/articles/-/95004",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの次世代モデル「Claude Mythos」による脆弱性検知プロジェクトの結果、AIが人間の10倍の速度で高精度のバグを発見する一方、人間による修正作業が開発のボトルネックとなっている実態が明らかになった。",
+    "summaryBody": "米Anthropicの脆弱性発見プロジェクト「Project Glasswing」の中間報告を解説する記事です。未公開モデル「Claude Mythos Preview」は、わずか1カ月で1万件超の重大な脆弱性を発見。Mozilla Firefoxの検証では、従来モデルの12倍以上となる271件のバグを検出し、その中には20年前から潜んでいた欠陥も含まれていました。Cloudflareの事例でも90.6%という極めて高い真陽性率（正解率）を記録し、AIの推論能力がシニア研究員レベルに達していることを示唆しています。しかし、AIが瞬時にバグを見つけるのに対し、人間による修正には平均2週間を要しており、供給過多となった脆弱性情報を人間が処理しきれない「修正のボトルネック化」が新たな経営課題として浮上しています。企業には、AIによる自動修正（自動パッチ適用）の導入や、セキュリティ戦略の根本的な再構築が求められています。",
+    "topics": [
+      "Claude Mythos",
+      "脆弱性検知",
+      "Anthropic",
+      "サイバーセキュリティ",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

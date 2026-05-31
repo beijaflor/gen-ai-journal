@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:01:05.910316+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "礼儀正しさはLLMの精度にどう影響するか：プロンプトの口調と回答精度の相関調査",
+    "url": "https://arxiv.org/abs/2510.04950",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新のLLM（ChatGPT-4o）を用いた実験により、丁寧なプロンプトよりも不躾なプロンプトの方が回答精度が高くなるという、従来説とは逆の傾向が明らかになった。",
+    "summaryBody": "この研究は、プロンプトの「礼儀正しさ（Politeness）」が大規模言語モデル（LLM）の回答精度に与える影響を定量的に調査した。数学、科学、歴史の3分野にわたる50の基本問題を、非常に丁寧（Very Polite）から非常に不躾（Very Rude）までの5段階のトーンに書き換え、計250のプロンプトを作成。ChatGPT-4oを用いた評価の結果、非常に丁寧なプロンプトの精度（80.8%）に対し、非常に不躾なプロンプト（84.8%）が最も高い精度を記録した。これは、不躾な表現がより直接的な指示として機能している可能性を示唆しており、これまでの「礼儀正しいプロンプトが精度を高める」という先行研究の結果とは対照的である。モデルの進化に伴い、トーンに対する応答特性が変化している可能性を提起している。",
+    "topics": [
+      "Prompt Engineering",
+      "LLM Accuracy",
+      "Human-AI Interaction",
+      "Politeness",
+      "ChatGPT-4o"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 85
+    },
+    "originalTitle": "Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy (short paper)"
+  }
+}

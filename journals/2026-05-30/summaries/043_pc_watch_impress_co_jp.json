@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:28:47.646224+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Mythosが脆弱性を2.3万件発見。人間の対処が追いつかず",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2111241.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの強力なAIモデル「Claude Mythos」がOSSから2.3万件の脆弱性候補を特定したが、人間による確認と修正がボトルネックとなり対処が追いつかない現状が判明した。",
+    "summaryBody": "米Anthropicが発表したレポートにより、最新のAIモデル「Claude Mythos Preview」を用いたオープンソースソフトウェア（OSS）の脆弱性探索の結果が明らかになりました。nginxやjq、wolfSSLなどの主要プロジェクトを対象とした調査で、2万3,019件もの脆弱性候補を短期間で発見。しかし、AIの圧倒的な検知スピードに対し、専門家による内容の精査（トリアージ）や修正パッチの作成といった「人間による作業」が追いつかず、実際に修正に至ったのはわずか97件に留まっています。AIの高度な分析能力が、既存のセキュリティ対策エコシステムの処理能力を大幅に上回ってしまうという、新たな課題を浮き彫りにしました。なお、このモデルは悪用リスクを考慮し、一般公開の予定はありません。",
+    "topics": [
+      "Claude Mythos",
+      "Anthropic",
+      "サイバーセキュリティ",
+      "脆弱性診断",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

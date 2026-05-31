@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:53:51.860308+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Dynamic Workflow を試してみた",
+    "url": "https://azukiazusa.dev/blog/claude-code-dynamic-workflow/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Code v2.1.154で導入された、JavaScriptで複数のサブエージェントを制御し大規模タスクを自動化する「Dynamic Workflow」機能の試用レポート。",
+    "summaryBody": "Claude Codeの新機能「Dynamic Workflow」について、組み込みの`/deep-research`コマンドや自作ワークフローの生成・保存方法を解説した記事です。この機能は、タスクをフェーズ（Scope, Search, Fetch, Verify, Synthesize等）に分割し、JavaScriptで定義されたロジックに基づき複数のサブエージェントを並列実行・調整することで、数時間から数日かかる大規模な作業を可能にします。記事では、リサーチの信憑性を高める「敵対的検証」の仕組みや、プロジェクト固有の移行作業（ESLintからOxlintへの移行など）をワークフロー化する手順、実行状況の確認方法（`/workflows`コマンド）が具体的に紹介されています。また、ワークフローはプロジェクト単位やユーザー単位で保存・再利用が可能であり、大規模開発の自動化における強力なツールとしての可能性が示されています。",
+    "topics": [
+      "Claude Code",
+      "Dynamic Workflow",
+      "AIエージェント",
+      "Anthropic",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

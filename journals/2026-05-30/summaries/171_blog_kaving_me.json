@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:54:21.610041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLVMのSLPベクタライザにおけるコストモデルの調整",
+    "url": "https://blog.kaving.me/blog/tuning-llvms-slp-vectorizer-cost-model/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLVMのSLPベクタライザが、ループ内でのベクトル構築コストの計算を誤り、RISC-V環境で大幅な性能劣化を引き起こしていた問題を修正する過程の記録。",
+    "summaryBody": "この記事は、LLVMのSLP（Superword Level Parallelism）ベクタライザの修正を通じて、RISC-Vターゲットで発生した約25%の性能回帰（レグレッション）を解決した技術的な詳細を解説しています。主な原因は、最近導入された「順序付き浮動小数点加算リダクション（ordered fadd reduction）」のコストモデルにありました。調査の結果、ベクタライザがリダクション自体のコストはループの反復回数（約20億回）でスケールさせていたのに対し、ベクトルを構築するためのコスト（TreeCost）をスケールさせていなかったことが判明しました。これにより、実際には非常に低速なコード（スタックへの退避とベクトルロードを繰り返すコード）が、コンパイラには「非常に利益が高い」と誤認されていました。解決策として、コスト計算関数にリダクションのルート命令（RdxRoot）を渡し、ループのコンテキストを正しく参照できるようにすることで、ベクトル構築コストも適切にスケールされるよう修正されました。この修正により、RISC-Vのベンチマーク性能は以前のベースラインまで回復しました。",
+    "topics": [
+      "LLVM",
+      "RISC-V",
+      "SLP Vectorizer",
+      "Compiler Optimization",
+      "Performance Tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Tuning LLVM's SLP Vectorizer Cost Model"
+  }
+}

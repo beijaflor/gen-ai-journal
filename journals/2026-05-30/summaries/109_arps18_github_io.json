@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:01:20.452206+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトの先へ：Claude Codeを使いこなすための究極ガイド",
+    "url": "https://arps18.github.io/posts/claude-code-mastery/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを単なるCLIチャットボットではなく、自律的なエンジニアリングエージェントとして運用するための高度な設定、スキル開発、ワークフロー最適化の手法を詳説しています。",
+    "summaryBody": "この記事は、AnthropicのCLIツール「Claude Code」を最大限に活用するための実践的なガイドです。主なポイントは以下の通りです。\n\n1. **検証ループの重視**: Claudeに自身の作業を検証させる仕組み（テストの実行など）を組み込むことで、品質が劇的に向上します。\n2. **CLAUDE.mdの戦略的活用**: プロジェクト固有のルールや「ハマりどころ」をCLAUDE.mdに記録し、Claudeが自律的に学習・改善する仕組みを構築します。個人用のCLAUDE.local.mdを併用し、PRフィードバックを即座に反映させる手法も推奨されています。\n3. **スキルとサブエージェント**: 特定のタスク（API構築、PRレビューなど）に特化した「スキル」や、メインセッションのコンテキストを汚さずに並行稼働する「サブエージェント」の作成方法を解説。\n4. **MCP (Model Context Protocol)**: ObsidianやGitHub、データベース等と連携し、システム全体を把握したエージェントへと進化させる方法。\n5. **高度なコマンド**: `/goal`による目標達成の自動化や、並行セッション（git worktrees）を用いたマルチタスクの運用など、Boris Cherny氏（開発者）直伝のテクニックが多数紹介されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "開発ツール",
+      "MCP",
+      "エンジニアリング・ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "Beyond the Prompt: Claude Code"
+  }
+}

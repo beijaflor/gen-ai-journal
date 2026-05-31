@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T16:23:19.272673+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026-07-28 MCP 仕様ではステートレスファーストになる",
+    "url": "https://azukiazusa.dev/blog/mcp-stateless/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPプロトコルがステートレス化され、ハンドシェイクの廃止やヘッダーベースのルーティング、レスポンスキャッシュの導入など、大規模運用に適した仕様に刷新されます。",
+    "summaryBody": "Model Context Protocol (MCP) の2026-07-28リリース候補仕様では、プロトコルのステートレス化が最大の変更点です。従来の `initialize` ハンドシェイクが廃止され、クライアントの機能宣言は各リクエストの `_meta` フィールドとヘッダーで行われるようになります。また、`server/discover` メソッドの導入、`requestState` を用いたマルチラウンドトリップによる入力要求（elicitation）の再定義、`Mcp-Method`/`Mcp-Name` ヘッダーによるインフラレベルでのルーティング支援が追加されました。さらに、SSE通知への依存を減らすため、リスト応答に対する `ttlMs` と `cacheScope` を用いたキャッシュ機構が導入され、ロードバランサー背後でのスケーラビリティと運用効率が大幅に向上します。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "API設計",
+      "ステートレス",
+      "HTTP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 93
+    }
+  }
+}

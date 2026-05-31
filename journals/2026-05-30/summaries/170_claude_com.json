@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:48:24.984295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「ダイナミック・ワークフロー」導入：並列エージェントによる大規模開発の自動化",
+    "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Codeがオーケストレーション・スクリプトを動的に生成し、数百の並列サブエージェントを用いて大規模なコード移行やバグ修正を自動完結させる新機能を発表しました。",
+    "summaryBody": "Anthropicは、Claude Codeにおいて複雑なエンジニアリングタスクを自律的に細分化し、大規模な並列処理で実行する「ダイナミック・ワークフロー」を導入しました。この機能は、Claudeが自身でオーケストレーション用のスクリプトを記述し、数十から数百のサブエージェントを立ち上げてタスクを同時進行させるものです。大規模リポジトリ全体のバグハント、セキュリティ監査、数千ファイルに及ぶフレームワークの移行などがエンドツーエンドで可能になります。実例として、Bunの75万行におよぶコードをZigからRustへ移行する際、並列エージェントを活用してわずか11日間で完了させたケースが紹介されています。本機能はClaude Code CLI、Desktop、VS Code拡張機能のMax/Team/Enterpriseプラン、および主要なAPIプラットフォームでリサーチプレビューとして提供されます。高度な推論を伴うためトークン消費量は増加しますが、従来は数週間から数ヶ月を要した作業を数日に短縮できる可能性を秘めています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "コードモダナイゼーション",
+      "並列処理",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Introducing dynamic workflows in Claude Code"
+  }
+}

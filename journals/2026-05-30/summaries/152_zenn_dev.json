@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:50:35.604203+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code同士でプランをレビューさせよう。",
+    "url": "https://zenn.dev/backtech/articles/617b9ec02f6d48",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "複数のClaude Codeインスタンスに並行して実装プランを作成させ、互いにレビューさせることで、共有コードの堅牢性と再利用性を最大化する手法。",
+    "summaryBody": "AIコーディングエージェント「Claude Code」を実開発で活用する中で見出された、手戻りを減らすためのワークフローの紹介です。類似する複数の機能を実装する際、それぞれのタスクごとにClaude Codeインスタンスを立ち上げ、作成されたプランを相互にレビュー（批評）させるステップを挟みます。これにより、LLMが陥りがちなコードの重複生成を防ぎ、DRY原則に基づいた適切な共通化と、テスト容易性の高い実装を実現できます。記事では、この手法によってロジックの90%を再利用し、変更量を想定の半分程度に抑制できた事例が共有されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "コードレビュー",
+      "開発プロセス",
+      "バックテック"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

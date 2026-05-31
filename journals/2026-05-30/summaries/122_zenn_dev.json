@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T06:58:05.424523+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 4.7 と GPT-5.5 のレビュー特性を統計的に明らかにした（オトナの自由研究 #19）",
+    "url": "https://zenn.dev/nnakapa/articles/lab-19-opus47-gpt55-code-review",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.7とGPT-5.5のコードレビュー特性を720ケースの統計から分析し、Opusは「読み手志向の辛口」、GPTは「原則厳守」という個性の違いを浮き彫りにした検証記事。",
+    "summaryBody": "最新のLLMであるClaude Opus 4.7とGPT-5.5を用い、コードレビューにおける品質評価の傾向を統計的に比較検証した記録です。Raspberry Pi 5上の同一環境で、4つのプログラミングタスクと3つのCLIツールを組み合わせた計720件の評価データを解析しています。主な発見として、全体の平均評点はほぼ同等ながら、特定の評価軸で顕著な「人格差」が確認されました。Opus 4.7は『保守性』を重視し、将来の可読性やドキュメント不足に対して小幅ながら厳しく減点する「読み手志向」の特性を持ちます。対してGPT-5.5は『安全性』において、指示書にないファイルの追加を厳格に「スコープ違反」と見なして大幅減点する「原則厳守」の姿勢を示しました。また、採点尺度についてもOpusは5点刻みの離散的、GPTは2点刻みの連続的なスコアリングを行うといった、モデル固有の挙動の差異も詳細にレポートされています。",
+    "topics": [
+      "Claude Opus 4.7",
+      "GPT-5.5",
+      "コードレビュー",
+      "LLMベンチマーク",
+      "統計分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

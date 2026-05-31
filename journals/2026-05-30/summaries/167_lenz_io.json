@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:49:23.980736+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ベンチマークを超えて：実世界のファクトチェックにおけるフロンティアLLM間の不一致",
+    "url": "https://lenz.io/research/llm-disagreement",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "1,000件の実世界のクレームを用いた調査により、主要なフロンティアLLM間でファクトチェックの判定が67%の割合で一致しないことが明らかになりました。",
+    "summaryBody": "Lenz Researchによるこの調査は、2026年5月時点の最新の実世界ユーザー投稿クレーム1,000件を対象に、GPT-5.4、Claude Opus 4.7、Gemini 3 Pro、Sonar Proなどの5つの主要なフロンティアLLMを用いてファクトチェックの判定精度を検証したものです。主な結果として、**67%のケースでモデル間の判定が一致せず**、そのうち34%では「真実」と「虚偽」が分かれるような実質的な対立が見られました。特に「概ね真実」や「紛らわしい」といった中間的な判定においてモデル間の意見が分散する傾向が強く、特定の単一モデルのみに依存することの危うさが浮き彫りになっています。本研究は、既存のベンチマークが学習データに含まれている可能性（汚染）を考慮し、鮮度の高い実データを用いることで、AIが依然として事実確認において一貫性を欠いていることを実証しています。",
+    "topics": [
+      "LLM",
+      "ファクトチェック",
+      "モデル評価",
+      "信頼性",
+      "AIの一致度"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Beyond Benchmarks: Disagreement Among Frontier LLMs on Real-World Fact-Checks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:10:44.525986+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "インフラプログラマが Claude Code をどう使っていくか － AWS マルチアカウント管理",
+    "url": "https://zenn.dev/sonicgarden/articles/ef6268318d256f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとAWS MCPを活用し、マルチアカウント環境におけるインフラ調査やSecurity Hubの棚卸しを自律化・効率化するための実践的なプロジェクト構成と運用ノウハウ。",
+    "summaryBody": "ソニックガーデンのエンジニアが、Claude CodeとAWS MCP（Model Context Protocol）を組み合わせて複雑なAWSマルチアカウント管理を効率化する方法を解説しています。従来の課題であった各アカウントへのログインや手順書のメンテナンス、非定型調査の手間を、アカウントごとのMCPサーバー定義と`CLAUDE.md`によるコンテキスト共有で解決します。具体的には、AWS SSO連携によるセキュアなログイン維持、`.mcp.json`でのプロファイル別サーバー設定、そしてSecurity Hubの特定コントロールに関する横断調査をプロンプト一つで完結させる実例を紹介。インフラ業務を「HOW（どう実現するか）」の試行錯誤から「WHAT（何をしたいか）」の思考へとシフトさせ、運用負荷を大幅に軽減する実戦的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "AWS MCP",
+      "マルチアカウント管理",
+      "Security Hub",
+      "インフラ運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 93
+    }
+  }
+}

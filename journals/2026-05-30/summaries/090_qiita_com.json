@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-26T23:12:11.753583+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「最軽量」のローカルLLMはどのくらい使い物になるのか？実機で検証してみた",
+    "url": "https://qiita.com/nolanlover0527/items/d87ae4ec1af4280aec91",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "パラメータ数5億の超軽量LLM「Qwen2.5 0.5B」を検証し、対話やコーディングには不向きな一方で、システム内部品としての活用の可能性を提示している。",
+    "summaryBody": "本記事では、ローカルLLMの中でも最小クラスである「Qwen2.5 0.5B」の実用性を実機で検証しています。Ollamaを使用したインストール手順、400MBという驚異的なモデルサイズ、そして高速な応答性を紹介。検証項目として、基本的な日本語対話、ランディングページ（LP）の制作、VSCode拡張機能を通じたデバッグ作業を実施しました。結果として、日本語の乱れや複雑な指示への対応力の欠如が露呈し、一般的なチャットAIとしての利用は困難であると結論づけています。しかし、その存在意義は対話用ではなく、スマホやエッジデバイスにおける意図分類やJSON生成といった、AIシステム内部の特定タスクを担う軽量コンポーネントにあると考察しています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen2.5",
+      "Ollama",
+      "AIベンチマーク",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 82,
+      "annexPotential": 15,
+      "overall": 80
+    }
+  }
+}

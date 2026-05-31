@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:05:50.488403+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのルールを自動生成し、チームの品質を平準化する",
+    "url": "https://note.com/dev_onecareer/n/nbc93b3ce4d04",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub ActionsとClaudeを活用し、PRレビューの履歴からプロジェクト固有のルールを自動抽出・更新することで、チーム内の開発品質を平準化する仕組みの構築事例。",
+    "summaryBody": "ワンキャリア社による、AIコーディング支援ツール「Claude Code」向けのプロジェクトルール（CLAUDE.md等）を自動メンテナンスする取り組みの紹介です。背景として、手動でのルール更新はメンテナンスコストが高く、知見が風化しやすいという課題がありました。これを解決するため、GitHub Actionsを使用して週次でマージ済みPRを集計し、バグ修正やレビュー指摘の多いPRからClaudeが「今後使い回せるルール候補」を抽出。自動でルール追加のPRを作成するワークフローを構築しました。導入により、ベテランエンジニアの暗黙知が可視化され、新規メンバーでも一定水準の品質を保てるようになるなどの効果が得られています。今後は局所的なルールだけでなく全体方針との整合性や、機械的な自動テストとの役割分担が焦点となります。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AIコーディング",
+      "コードレビュー",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

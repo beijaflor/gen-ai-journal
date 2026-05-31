@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:58:31.877858+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ConductorがVercel Sandboxを活用し、並列コーディングエージェントのクラウド実行を実現",
+    "url": "https://vercel.com/blog/how-conductor-moved-parallel-coding-agents-from-the-laptop-to-the-cloud-with-vercel-sandbox",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "並列コーディングエージェントを提供するConductorは、Vercel Sandboxを導入して実行環境をクラウドへ移行し、ローカルハードウェアの制約を解消しました。",
+    "summaryBody": "Conductorは、Claude CodeやCodexなどのAIコーディングエージェントを、分離されたブランチ上で複数同時に並列実行できるGUIを提供しています。これまではローカルマシンで実行されていたため、CPU負荷やバッテリー消費、マシンの起動状態といった物理的な制約が課題でした。今回、Vercel Sandboxを基盤とした「Cloud Workspaces」を構築したことで、開発者はラップトップを閉じた後もクラウド上でエージェントを稼働させ続けることが可能になりました。高速な起動とスナップショット機能を備えたVercelのインフラにより、ローカル環境と遜色のないユーザー体験を実現しつつ、スケーラビリティと信頼性を大幅に向上させています。また、モデルアグノスティックな設計により、特定のAIモデルに依存せず最新の技術を即座に活用できる体制を整えています。",
+    "topics": [
+      "AI Agents",
+      "Vercel Sandbox",
+      "Cloud Computing",
+      "Developer Experience",
+      "Parallel Processing"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 82
+    },
+    "originalTitle": "How Conductor moved parallel coding agents from the laptop to the cloud with Vercel Sandbox"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T19:09:06.226682+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code: セキュリティガイダンスプラグインによる脆弱性の自動検知と修正",
+    "url": "https://code.claude.com/docs/en/security-guidance",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeが生成するコードの脆弱性をリアルタイムで検知・修正し、開発サイクル内でのセキュリティ確保を強化する「security-guidance」プラグインの詳細ガイド。",
+    "summaryBody": "本ドキュメントは、AnthropicのCLIツール「Claude Code」向けセキュリティガイダンスプラグインの活用方法を解説しています。このプラグインは、Claudeがコードを記述・編集する際、インジェクションや安全でないデシリアライズなどの一般的な脆弱性を自動的にレビューし、同一セッション内での修正を促します。チェックは3段階（ファイル編集時のパターンマッチ、ターン終了時のモデルレビュー、コミット時のエージェントによる詳細分析）で構成されており、開発者が意識することなくバックグラウンドで動作します。ユーザーはカスタムルール（YAML/Markdown形式）を追加することで、プロジェクト固有のセキュリティポリシーを適用することも可能です。既存の静的解析ツールやCI/CDプロセスと併用することで、脆弱性がプルリクエストに到達する前に排除する「多層防御」の初動レイヤーとして機能します。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "脆弱性検知",
+      "Anthropic",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Catch security issues as Claude writes code - Claude Code Docs"
+  }
+}

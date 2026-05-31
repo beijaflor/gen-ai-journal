@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-29T18:56:08.428555+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel公式「React Best Practices」Skillsでコードはどう変わるのか試してみた",
+    "url": "https://qiita.com/ma-ryu/items/32646ec31ef9fa1c4e0b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelが公開したAIエージェント向けの「React Best Practices」スキルを導入し、GitHub Copilotが生成するReactコンポーネントの品質変化を比較検証したレビュー。",
+    "summaryBody": "VercelがAIエージェントやLLM向けに公開した構造化リポジトリ「React Best Practices」をGitHub Copilotに適用し、その効果を検証しています。汎用的なButtonコンポーネントの生成を比較した結果、スキル適用後のコードでは、React.memoによる再レンダリングの防止、定数のホイスティングによる最適化、focus-visibleを用いたアクセシビリティの向上、型の再利用性の確保といった顕著な改善が見られました。一方で、小規模なプロジェクトでは過剰な最適化（オーバーエンジニアリング）になる可能性や、React 19のCompiler思想との乖離も指摘されています。著者は、AIを単なる自動生成ツールとしてだけでなく、ベストプラクティスに基づいたコードレビューの支援役として活用することを推奨しています。",
+    "topics": [
+      "React",
+      "Vercel",
+      "GitHub Copilot",
+      "AI開発",
+      "フロントエンド最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

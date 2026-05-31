@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-28T07:00:38.746382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントはシステムを保守できない：LLMによるソフトウェアデリバリーにおける「加算的」と「変革的」のギャップ",
+    "url": "https://phroneses.com/articles/build/notes/agents-cannot-maintain-systems.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMはパターンの模倣による新規コード生成には優れているが、既存システムの複雑な依存関係や不変条件を理解して変更する因果推論能力が欠けているため、完全な自律は困難である。",
+    "summaryBody": "ソフトウェア開発におけるLLMの限界を「加算的（Additive）」と「変革的（Transformative）」という独自の概念で鋭く分析した論考です。\n\n1. **加算的作業と変革的作業の壁**: LLMは新しい関数の作成といった、パターンを拡張する「加算的」なタスクには高い性能を発揮します。しかし、数千行規模の既存リポジトリにおいて、システムの不変条件（Invariants）を維持しながらコードを修正する「変革的」な作業には、システム全体の因果関係を把握する必要があり、現在のLLMでは対応できません。\n2. **因果推論 vs パターンマッチング**: LLMの本質は統計的なトークン予測であり、システムレベルの「結果」を予測する因果推論ではありません。永続的な状態や時間的依存関係が絡む実システムの変更において、パターンマッチングだけでは正確性を担保できないと指摘しています。\n3. **エンジニアリングの再定義**: AIによってコード生成が安価になる一方で、判断（Judgement）の価値が高まります。人間は機械的な記述ではなく、意図の明確化、アーキテクチャ設計、安全性、トレードオフの評価といった、より高次のエンジニアリングに注力すべきであると結論付けています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "ソフトウェアエンジニアリング",
+      "因果推論",
+      "システム保守"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agents Cannot Maintain Systems: The Additive–Transformative Gap in LLM Software Delivery"
+  }
+}
