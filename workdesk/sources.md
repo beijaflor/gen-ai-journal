@@ -2,7 +2,6 @@
 
 ## Main List
 
-- [ ] 275. https://x.com/fta7/article/2059754329058488795
 - [x] 274. https://techblog.cloudbase.co.jp/entry/2026/05/29/080000
 - [x] 273. https://speakerdeck.com/kkakizaki/aigabian-eta-pin-zhi-noshou-rifang
 - [x] 272. https://type.jp/job-company/49052/et/
