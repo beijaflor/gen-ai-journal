@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:56:56.173041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ノイズの多いLLM評価器でも、AIエージェントの改善には極めて有用である理由",
+    "url": "https://www.tensorzero.com/blog/even-very-noisy-llm-evaluators-are-useful-for-improving-ai-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "個別の出力に対する判定が不正確なLLM評価器であっても、十分なサンプル数を平均化することで、エージェント間の性能比較や最適化に高い信頼性で利用できる。",
+    "summaryBody": "LLMによる評価器（LLM-as-a-Judge）は、個別の出力に対する判定（出力レベルの相関）においてノイズが多く、ガードレールのような用途には信頼性が欠ける場合が多々あります。しかし、本記事は統計的な観点から、評価器のノイズは多数のサンプルを平均化することで相殺されるため、エージェント全体の性能比較（エージェントレベルの相関）においては非常に有用であることを論じています。実際にGridworldやWordle、データ抽出タスクを用いたベンチマークでは、個別の判定精度が低くても、プロンプトやモデルのバリアント間の勝敗を判定する「ペアワイズ勝率」は非常に高い（0.82〜0.97）ことが示されました。開発者は完璧な評価器の構築に固執せずとも、既存のノイズの多い評価器を用いてオフラインでエージェントの改善サイクルを回すことが可能であり、そのためのサンプルサイズの重要性についても解説されています。",
+    "topics": [
+      "LLM-as-a-judge",
+      "AIエージェント",
+      "性能評価",
+      "統計的分析",
+      "評価メトリクス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Even (very) noisy LLM evaluators are useful for improving AI agents"
+  }
+}

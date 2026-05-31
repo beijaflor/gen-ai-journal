@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:50:54.324485+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ollama(Qwen3-VL)×Playwrightで作る完全無料のWeb調査エージェント",
+    "url": "https://zenn.dev/lluminai_tech/articles/358bee9674ed4e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OllamaのQwen3-VLとPlaywrightを組み合わせ、ローカル環境でAPIコストを抑えつつスクリーンショットベースでWeb調査を行うエージェントの構築手法を解説します。",
+    "summaryBody": "本記事では、Ollama上で動作するローカルVLM（Qwen3-VL）とPlaywrightを組み合わせた、完全無料のWeb調査エージェントの構築方法が紹介されています。従来のAPIベースのエージェントが直面する高額な利用料やトークン制限という課題を、ローカル推論によって解決するアプローチを提案。DOM構造を解析するのではなく、Playwrightで取得したスクリーンショットをVLMに直接読み込ませることで、視覚的に情報を抽出します。特にQwen3-VLの日本語OCR性能の高さを活かし、複雑なWebページからも正確にテキストを抽出できる点や、開発の手軽さが強調されています。実際のデモとしてZennのトレンド記事を抽出するPythonコードも公開されており、即座に試用可能な内容となっています。",
+    "topics": [
+      "Ollama",
+      "Qwen3-VL",
+      "Playwright",
+      "AIエージェント",
+      "VLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

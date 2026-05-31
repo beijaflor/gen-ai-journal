@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:52:49.910540+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "楽しかったコーディングエージェントサブスク時代の終わり",
+    "url": "https://zenn.dev/tkithrta/articles/0378bc53599fb3",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIコーディングエージェントの課金体系が、従来の月額定額制から計算資源（トークン・クレジット）の消費量に応じた従量課金モデルへ移行している現状と背景を解説する記事。",
+    "summaryBody": "AIコーディング支援ツールが「月額定額のSaaS」から「トークン消費ベースのクラウド資源」へと変貌を遂げている現状を分析した記事です。背景には、リポジトリ探索やテスト実行を行う「エージェント型」ツールが、従来のコード補完とは比較にならないほど膨大な計算リソースを消費するという構造的課題があります。\n\n記事では主要3社の動向を整理しています：\n- **OpenAI Codex**: ChatGPTワークスペース内でのトークン使用量に応じたクレジット消費への移行。\n- **Claude Code**: 標準APIレートに基づいた従量課金。Enterpriseではシート料と利用料を分離。\n- **GitHub Copilot**: 2026年6月より「AI Credits」を導入。組織単位でプールされたクレジットを消費し、トークン換算で課金するモデルへ移行（ただし基本補完は対象外）。\n\n結論として、企業におけるAIツール管理は、単なるライセンス管理から「FinOps（クラウド家計管理）」へと移行しており、開発者が消費するトークンコストと生産性の費用対効果を精査する時代が到来したことを強調しています。",
+    "topics": [
+      "AIコーディングエージェント",
+      "SaaS課金モデル",
+      "GitHub Copilot",
+      "Claude Code",
+      "FinOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

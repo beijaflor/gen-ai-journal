@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:51:48.748853+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Claude Code ✖ Obsidian】自分用ルールをskillsを使ってAIに自動読み込み・更新させる仕組みを作ってみた",
+    "url": "https://zenn.dev/arm_techblog/articles/ea4a436c5b80bb",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「skills」機能とObsidianを連携させ、個人の修正履歴やプロジェクト固有のルールをAIが自動で学習・反映し続けるパーソナライズ環境の構築手法。",
+    "summaryBody": "Claude Code標準の「CLAUDE.md」がチーム共有前提であることの限界を解消するため、Obsidianを外部記憶装置として活用するワークフローを提案しています。構成は「共通ルール(Global.md)」「プロジェクト固有(Rules.md)」「指摘ログ(Feedback.md)」の3層に分かれ、Claudeのカスタムスキルを通じて、セッション開始時の情報読み込み、会話中の指摘の自動記録、終了時の要約・ルール昇格案の提案を自動化しています。これにより、同じ指摘を繰り返す手間を省き、AIを自分専用に「育成」できる仕組みを実現。Markdownベースのため、将来的なツール移行にも強い知識資産となります。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "AIエージェント",
+      "生産性向上",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

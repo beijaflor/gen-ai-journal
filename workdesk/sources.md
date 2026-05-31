@@ -2,6 +2,45 @@
 
 ## Main List
 
+- [ ] 275. https://x.com/fta7/article/2059754329058488795
+- [x] 274. https://techblog.cloudbase.co.jp/entry/2026/05/29/080000
+- [x] 273. https://speakerdeck.com/kkakizaki/aigabian-eta-pin-zhi-noshou-rifang
+- [x] 272. https://type.jp/job-company/49052/et/
+- [x] 271. https://speakerdeck.com/tonkotsuboy_com/aishi-dai-nosi-noji-shu-inpututotoautopututoshu
+- [x] 270. https://courrier.jp/news/archives/447110/
+- [x] 269. https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available
+- [x] 268. https://zenn.dev/lluminai_tech/articles/358bee9674ed4e
+- [x] 267. https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio
+- [x] 266. https://www.itmedia.co.jp/news/articles/2605/30/news025.html
+- [x] 265. https://zenn.dev/tasshi441/articles/8a80daffac2556
+- [x] 264. https://zenn.dev/arm_techblog/articles/ea4a436c5b80bb
+- [x] 263. https://zenn.dev/mofuteq/articles/be562471f96a68
+- [x] 262. https://zenn.dev/nana/articles/3fd7e9dffeb831
+- [x] 261. https://zenn.dev/finatext/articles/policy-for-frontier-ai
+- [x] 260. https://zenn.dev/tkithrta/articles/0378bc53599fb3
+- [x] 259. https://zenn.dev/okamyuji/articles/golang-litellm-alternative-single-binary
+- [x] 258. https://qiita.com/kai_kou/items/fe9b0e65e2252af773c9
+- [x] 257. https://qiita.com/jnchito/items/e4c2aa255819464fa18d
+- [x] 256. https://azukiazusa.dev/blog/claude-code-dynamic-workflow/
+- [x] 255. https://www.quandri.io/engineering-blog/mcp-is-dead
+- [x] 254. https://github.com/jmaczan/tiny-vllm
+- [x] 253. https://www.bbc.com/news/articles/ce3pe36qe7ro
+- [x] 252. https://giovannigatti.github.io/cve-bench/
+- [x] 251. https://www.liquid.ai/blog/lfm2-5-8b-a1b
+- [x] 250. https://static.stepfun.com/blog/step-3.7-flash/
+- [x] 249. https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/
+- [x] 248. https://www.moderndescartes.com/essays/ai_and_expertise/
+- [x] 247. https://shawnsmucker.substack.com/p/please-use-ai
+- [x] 246. https://github.com/scanaislop/aislop
+- [x] 245. https://www.tensorzero.com/blog/even-very-noisy-llm-evaluators-are-useful-for-improving-ai-agents/
+- [x] 244. https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/
+- [x] 243. https://github.com/yujonglee/openrouter-toolkit
+- [x] 242. https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/
+- [x] 241. https://firethering.com/hell-grind-ai-film-cannes-premiere-higgsfield/
+- [x] 240. https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/
+- [x] 239. https://vercel.com/blog/how-conductor-moved-parallel-coding-agents-from-the-laptop-to-the-cloud-with-vercel-sandbox
+- [x] 238. https://www.oreilly.com/radar/open-source-ecosystems/
+- [x] 237. https://1password.com/blog/the-unmanaged-stack-governing-saas
 - [x] 236. https://qiita.com/tikeda123/items/a71261ecc47f609e52fc
 - [x] 235. https://qiita.com/shinnosuke_takami/items/86307593829ac5e70852
 - [x] 234. https://qiita.com/nogataka/items/266dcb5c7a08e25d09d8

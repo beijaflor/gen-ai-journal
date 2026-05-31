@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:58:17.562704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "標準データセンターGPUで3,000トークン/秒のリアルタイムLLM推論を実現する「Kog Inference Engine」",
+    "url": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Kog Labsは、単一リクエストのデコード速度に特化した「Kog Inference Engine」のプレビューを公開し、8枚のAMD MI300X GPU上で2Bモデルを用いて3,000トークン/秒という驚異的な速度を達成しました。",
+    "summaryBody": "フランスのスタートアップKog Labsが発表した「Kog Inference Engine (KIE)」は、AIエージェントの生産性を左右する「単一リクエストのデコード速度」を極限まで追求しています。従来の推論スタック（vLLM等）がカーネル起動やCPUスケジューリングなどのソフトウェア的なオーバーヘッドでマイクロ秒単位の損失を出しているのに対し、Kogはエンジン、GPUコード、モデルアーキテクチャの3層を共同設計することでこれを解決しました。\n\n具体的には、推論パス全体を一つの永続的なプログラムとして実行する「Monokernel」、マイクロ秒単位の低遅延通信を実現する独自ライブラリ「KCCL」、そして通信と計算をオーバーラップさせる新しいアーキテクチャ「Laneformer (Delayed Tensor Parallelism)」を導入しています。これにより、8枚のAMD MI300Xで3,000トークン/秒、NVIDIA H200で2,100トークン/秒という、専用推論チップに匹敵する速度を標準的なGPUで実現しました。今後はDeepSeekやQwenといった大規模なオープンウェイトMoEモデルへの適用も計画されており、GPUのメモリ帯域幅を最大限に活用した次世代の推論インフラを目指しています。",
+    "topics": [
+      "LLM推論最適化",
+      "GPUアーキテクチャ",
+      "AMD MI300X",
+      "AIインフラ",
+      "リアルタイム推論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Real-time LLM Inference on Standard Datacenter GPUs (3,000 tokens/s per request)"
+  }
+}

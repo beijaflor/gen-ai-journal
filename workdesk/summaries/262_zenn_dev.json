@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:52:16.811722+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Agents！機能が多い！でもここだけ抑えたら便利に使える！",
+    "url": "https://zenn.dev/nana/articles/3fd7e9dffeb831",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの新機能「Agent View」を使いこなし、複数のバックグラウンドタスクを効率的に監視・操作するための実践的なテクニック集。",
+    "summaryBody": "Claude Codeに搭載された「Agent View」は、複数のバックグラウンドセッションを一元管理できるダッシュボード機能です。本記事では、多機能なAgent Viewを迷わずに使いこなすための要点を絞って解説しています。\n\n主な活用テクニック：\n- **セッションのバックグラウンド移行**: 通常のセッション中に `/bg` コマンドまたは左矢印キーを入力することで、即座にダッシュボードへタスクを移動できます。\n- **効率的な整理と管理**: `ctrl + r` でのセッション名変更や `shift + ↑/↓` による並び替え、`ctrl + t` のピン留めを組み合わせることで、煩雑になりがちなセッション一覧を整理できます。\n- **Peek（覗き見）機能**: セッション一覧で `space` キーを押すと、画面を切り替えずに進行状況を確認し、そのまま追加プロンプトを投入できる強力な機能です。\n- **複数ワークツリー運用**: ワークツリーの親ディレクトリで `claude agents` を起動し、`@project-name` 記法を用いることで、異なるリポジトリのタスクを1つの画面で横断的に制御する方法が紹介されています。\n\nこれらのショートカットや運用ルールを抑えることで、AIエージェントを並列稼働させる開発環境の利便性が飛躍的に向上します。",
+    "topics": [
+      "Claude Code",
+      "Claude Agents",
+      "AIエージェント",
+      "開発効率化",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

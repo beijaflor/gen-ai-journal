@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:56:40.262494+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "aislop: AIが生成したコードの「ゴミ」を検出し修正する高速クリーンアップツール",
+    "url": "https://github.com/scanaislop/aislop",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントが残しがちな不要なコメントや低品質なコードパターンを、LLMを使わずに高速かつ決定論的に検出・修正するオープンソースツール。",
+    "summaryBody": "Claude CodeやCursorといったAIエージェントが生成するコードは、テストは通るものの、人間が書かないような「AI Slop（ゴミ）」を伴うことが多々あります。`aislop`は、過剰な説明コメント、握りつぶされた例外、`as any`の多用、デッドコードなど、AI特有の低品質なパターンを40以上のルールで検出します。TypeScript、Python、Go、Rustなど主要7言語に対応し、LLMを介さない静的解析（Regex/AST）によりミリ秒単位で動作するのが特徴です。CLI、GitHub Actions、MCPサーバーとして利用でき、CI上でコード品質を0-100でスコアリングしてゲートを設けることも可能です。自動修正機能に加え、修正が困難な箇所をAIエージェントに再修正させるためのフック機能も提供されています。",
+    "topics": [
+      "AI Slop",
+      "Static Analysis",
+      "Linter",
+      "Code Quality",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "GitHub - scanaislop/aislop: Catch the slop AI coding agents leave in your code: narrative comments, swallowed exceptions, as-any casts, dead code, oversized functions. 50+ rules across 7 languages (TypeScript, JavaScript, Python, Go, Rust, Ruby, PHP). Sub-second, deterministic, no LLM at runtime. MIT-licensed. · GitHub"
+  }
+}

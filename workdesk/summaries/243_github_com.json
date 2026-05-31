@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:57:22.699726+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenRouterモデルIDをコンパイル時に検証するRustツールキット「openrouter-toolkit」",
+    "url": "https://github.com/yujonglee/openrouter-toolkit",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenRouterのモデルIDと機能サポートをコンパイル時に静的チェックし、実行時のエラーを防止するRust向けマクロツールキット。",
+    "summaryBody": "openrouter-toolkitは、OpenRouterで利用可能なモデルIDとその機能（ツール使用、画像入力、テキスト出力など）をRustのコンパイル時に検証するためのライブラリです。`model_supports!`マクロを使用することで、指定したモデルがプロジェクトで必要な要件を満たしているかをビルド段階で確認できます。もし未知のモデルIDや、そのモデルがサポートしていない機能（例：画像入力非対応のモデルに`input::image`を指定する等）を記述した場合、コンパイルエラーとして通知されます。これにより、LLMアプリケーション開発における型安全性と信頼性が向上します。",
+    "topics": [
+      "Rust",
+      "OpenRouter",
+      "LLM",
+      "Macro",
+      "Type Safety"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 55,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "GitHub - yujonglee/openrouter-toolkit"
+  }
+}

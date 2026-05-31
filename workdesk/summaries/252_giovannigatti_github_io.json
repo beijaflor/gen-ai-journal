@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-05-31T03:54:57.634921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CVE-Bench: 実世界のセキュリティ脆弱性修正におけるLLMのベンチマーク評価",
+    "url": "https://giovannigatti.github.io/cve-bench/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "実世界のPythonプロジェクトの脆弱性20件を対象とした新ベンチマーク「CVE-Bench」において、GPT-5.5などの最新モデルでも最高解決率は50%に留まり、自律的な修正には依然として大きな課題があることが示された。",
+    "summaryBody": "本記事は、LLMエージェントによる実世界のセキュリティ脆弱性（CVE）修正能力を測定するための新しいベンチマーク「CVE-Bench」の開発と評価結果をまとめたものです。OpenAI（GPT-5.5, 5.4-mini/nano）とPoolside（Laguna）のモデルを対象に、PythonプロジェクトのCVE 20件を3つのプロンプト条件（アドバイザリ全文、行動説明のみ、場所特定のみ）でテストしました。\n\n**主な結果:**\n- **信頼性の欠如:** 最高性能のGPT-5.5でも全体の解決率は50%であり、最も有利な条件でも60%に止まりました。\n- **統計的有意差:** OpenAIファミリーはPoolsideファミリーを有意に上回りましたが、同一ファミリー内（例：GPT-5.5対5.4-mini）では統計的な差は見られませんでした。\n- **コスト効率:** GPT-5.4-miniは、GPT-5.5の25分の1のコストで同等の解決率を示しており、実務上の合理的な選択肢となります。\n- **失敗パターン:** 「探索の迷走（関係ないファイルへの遷移）」、「予算切れ（トークン制限による未完）」、「不完全な修正」が共通の失敗要因として特定されました。\n\n結論として、現在のフロンティアモデルであっても、自律的にセキュリティ脆弱性を修正させるには、依然として「複雑で困難（It's Complicated）」な状況にあることが浮き彫りになりました。",
+    "topics": [
+      "CVE-Bench",
+      "LLM",
+      "セキュリティ脆弱性",
+      "AIエージェント",
+      "ベンチマーク評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "I Tested Whether AI Can Fix Security Vulnerabilities. Well, It's Complicated. – CVE-Bench – Benchmarking LLMs on real-world CVE patching"
+  }
+}
