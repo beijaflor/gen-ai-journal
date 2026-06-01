@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:19:09.791033+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに個人情報を入れてはいけない、で思考停止していないか",
+    "url": "https://blog.cloudnative.co.jp/articles/ai-data-governance-cloud-saas-guidelines/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "生成AIの利用制限を「個人情報禁止」で終わらせず、SaaS同様の責任分界点と事業効果を考慮した経営判断としてリスク管理すべきだと提言する記事。",
+    "summaryBody": "生成AIの導入において、単に「個人情報や機密情報の入力禁止」とルール化するのではなく、SaaSやクラウドと同様に「どの業務を、どの契約条件で外部に任せるか」という経営判断の重要性を説いています。セキュリティを単なる「禁止」ではなく、事業効果とリスクのトレードオフ（妥協ライン）の設計と捉え、情シス部門は経営が判断するための材料（効果、利用範囲、具体的リスク、低減策）を整理すべきだと主張しています。また、AI固有の論点として、学習利用の有無だけでなくデータの保持期間や接続権限（エージェント/コネクタ）の管理についても、一次情報に基づいた冷静な評価を求めています。「禁止」はかえってシャドーITを招くリスクがあり、組織として正規のルートと管理策をセットで設計することが真のガバナンスであると結論付けています。",
+    "topics": [
+      "生成AI",
+      "情報セキュリティ",
+      "リスクマネジメント",
+      "ガバナンス",
+      "シャドーIT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

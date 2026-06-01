@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:14:52.968650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM（Qwen3.6 / Gemma4 / DeepSeek V4 Flash）とClaude 4.5のコーディング性能比較",
+    "url": "https://zenn.dev/keitayamamoto/articles/4380d3f64c8bf1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mac Studio (M3 Ultra) 環境にて、最新のローカルLLM 3種とClaude 4.5 Sonnetのコーディング性能をAiderベンチマークで比較した検証結果。",
+    "summaryBody": "本記事は、Mac Studio (M3 Ultra, 96GB) を使用し、最新のローカルLLM（DeepSeek V4 Flash、Qwen3.6 35B、Gemma 4 26B）とClaude 4.5 Sonnetのコーディング能力を比較したものです。ベンチマークにはAider PolyglotのPythonとRustのサブセット（64問）を使用。結果として、Claude 4.5が正答率85.9%で首位を獲得し、ローカルLLM勢ではDeepSeek V4 FlashのQ2量子化版が70.3%で続きました。DeepSeekは精度が高い一方で推論速度が遅く、Qwen3.6 35Bは精度（60.9%）と速度のバランスにおいて最も実用的であると評価されています。一方でGemma 4は出力フォーマットの崩れが原因で正答率が低迷。現時点ではAIエージェントとしての実用性は依然としてClaudeに軍配が上がるものの、ローカルLLMの進歩も顕著であることが示されました。",
+    "topics": [
+      "ローカルLLM",
+      "ベンチマーク",
+      "DeepSeek",
+      "Qwen",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 85
+    }
+  }
+}

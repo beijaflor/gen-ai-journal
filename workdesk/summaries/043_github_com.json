@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:17:01.150498+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agmsg: CLI AIエージェント間通信を実現するSQLiteベースのメッセージングツール",
+    "url": "https://github.com/fujibee/agmsg",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "agmsgは、Claude CodeやCodexなどのCLI AIエージェント間で、デーモンやネットワークを介さずSQLiteを共有してメッセージを送受信できるようにするローカル軽量ツールです。",
+    "summaryBody": "agmsgは、複数のCLI AIエージェント（Claude Code、Codex、Gemini CLIなど）が互いに通信するためのインフラを提供するオープンソースツールです。主な特徴は、サーバーやデーモンを必要とせず、共有のSQLiteデータベース（WALモード）を通じてメッセージをやり取りするシンプルさにあります。\n\n利用者は同一の「チーム」に参加することで、エージェント同士がメッセージを送り合い、リアルタイムでタスクを分担させることが可能です。例えば、Claude CodeからCodexへコードレビューを依頼するといったワークフローが実現できます。\n\n配送モードとして、リアルタイムプッシュを可能にする`monitor`モード（Claude Code推奨）や、ターンの合間にメッセージを確認する`turn`モード（Codex推奨）を備えています。また、同一プロジェクト内で複数の役割（tech-leadやbiz-analystなど）を切り替える`actas`コマンドや、セッションごとの排他ロック制御など、高度なマルチエージェント運用を支える機能も実装されています。依存関係はbashとsqlite3のみで、導入が非常に容易な点も特徴です。",
+    "topics": [
+      "AIエージェント",
+      "マルチエージェントシステム",
+      "Claude Code",
+      "SQLite",
+      "CLIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "fujibee/agmsg: Cross-agent messaging for CLI AI agents. No daemon, no network, no complexity."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:15:48.511690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot app で rubber-duck が既定有効になったので考えたこと",
+    "url": "https://zenn.dev/tomokusaba/articles/787d8cb138491b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot app v0.2.14にて「rubber-duck」エージェントが既定で有効化されたことを受け、開発フローにおける独立した批評者としての役割とその価値について考察しています。",
+    "summaryBody": "GitHub Copilot app の v0.2.14 更新により、コードや設計に対して建設的なフィードバックを提供する「rubber-duck」エージェントが全ユーザーに既定で導入されました。本記事では、問題を言語化することで自己解決を促す「ラバーダック・デバッグ」の概念をAIに応用したこの機能の意義を解説しています。\n\n主な内容は以下の通りです：\n- **独立した批評者としての役割**: 実装を担当するエージェントとは別に、あえて「書き込みをしない批評役」を置くことで、開発者の盲点やAI自身の思い込みを排除し、設計の精度を高める仕組みについて整理しています。\n- **開発フェーズごとの活用法**: 計画段階でのリスク確認、実装中の責務分割の相談、テスト前の境界値チェック、人間によるレビュー前の事前確認など、具体的な呼び出しタイミングを提案しています。\n- **CLIとAppの相乗効果**: 手軽に呼べるCLIの良さと、セッション管理に優れるAppの良さが融合し、相談行為がより習慣化される可能性に期待を寄せています。\n\n最終的な判断は人間が行うことを前提としつつ、単一エージェントに依存しない「安全な進捗のためのミラー」としての価値を強調しています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      "ラバーダック・デバッグ",
+      "開発プロセス",
+      "GitHub Copilot CLI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

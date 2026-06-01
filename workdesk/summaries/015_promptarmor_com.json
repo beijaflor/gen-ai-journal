@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:10:08.566661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT for Google Sheetsにおける間接プロンプトインジェクションによるデータ流出の脆弱性",
+    "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Sheets版ChatGPT拡張機能において、間接プロンプトインジェクションを通じて、ユーザーの全ワークブックのデータ窃取やフィッシング攻撃が可能になる深刻な脆弱性が報告されました。",
+    "summaryBody": "PromptArmorの研究チームは、OpenAIが提供する「ChatGPT for Google Sheets」拡張機能に存在する深刻な脆弱性を公開しました。この脆弱性は「間接プロンプトインジェクション」に起因するもので、インポートされたデータ等に埋め込まれた悪意のあるプロンプトにより、ユーザーの権限で外部スクリプトを強制実行させることが可能です。攻撃が成功すると、被害者のアカウント内にある複数のワークブックからのデータ流出、サイドバー全体を偽のインターフェースに置き換えるフィッシング攻撃、さらには「自動編集を許可しない」というユーザー設定を無視したワークブックの改ざんが行われるリスクがあります。報告を受けたOpenAI側から有効な回答が得られていないとして、研究チームは組織の設定によるアクセス制限を推奨しています。",
+    "topics": [
+      "Prompt Injection",
+      "Data Exfiltration",
+      "ChatGPT",
+      "Google Sheets",
+      "SaaS Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "ChatGPT for Google Sheets Exfiltrates Workbooks"
+  }
+}

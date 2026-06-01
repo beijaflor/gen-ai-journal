@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:13:18.850501+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon Bedrock Managed Agents × OpenAI で本番対応エージェントを設計する",
+    "url": "https://qiita.com/FumiakiKato/items/befeed7d74caeb8503d4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock Managed Agentsに統合されたOpenAIモデルを活用し、エンタープライズ要件を満たすセキュアで高機能なAIエージェントを構築するための設計手法と実装例を解説しています。",
+    "summaryBody": "この記事は、Amazon Bedrock Managed AgentsでOpenAIのモデル（GPT-5.x等）が利用可能になったことを前提に、本番環境におけるAIエージェント設計のベストプラクティスをまとめています。\n\n### 主な内容\n- **Bedrock経由でOpenAIを利用する意義**: OpenAI APIを直接呼び出す場合に課題となる「認証管理（IAM）」「コストの統合請求」「詳細な監査ログ（CloudTrail）」「独自のガードレール適用」をAWS基盤で解決できる点を強調しています。\n- **アーキテクチャパターン**: 単一のエージェント構成だけでなく、オーケストレーターがGPT-5.x、コーディングはCodex、軽量タスクはClaude 3.7 Haikuのように、用途に応じてモデルを使い分けるマルチエージェント構成を提案しています。\n- **実装とガバナンス**: Action Group（Lambda）を用いた外部連携、DynamoDBによる長期記憶の実装、PII（個人情報）マスキングを自動化するBedrock Guardrailsの設定、さらにはリクエストレベルでのコスト帰属タグの活用など、実運用に不可欠な要素がコード例と共に示されています。\n\nモデルの抽象化により、コードを大幅に書き換えることなくモデルの切り替えが可能になるため、将来的な技術変化にも柔軟に対応できる設計指針となっています。",
+    "topics": [
+      "AWS",
+      "Amazon Bedrock",
+      "OpenAI",
+      "AIエージェント",
+      "エンタープライズAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

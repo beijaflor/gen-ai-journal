@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:16:47.264820+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Palantir の「オントロジー」を Python で再現してみた",
+    "url": "https://zenn.dev/channnnsm/articles/e0be25fadca0df",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Palantirの「オントロジー」思想をPythonで再現し、AIがサプライチェーンの文脈を理解して意思決定・実行までを行うデータ基盤の実装手法を解説する。",
+    "summaryBody": "Palantirのデータ基盤における重要概念「オントロジー」を、Pythonを用いて具体的に実装する方法を解説したチュートリアル記事です。従来のデータベース管理の枠組みを超え、Pydanticを活用した「ビジネス上の意味（Schema）」の定義、グラフ構造による「意思決定の文脈（Context）」の抽出、そしてAIの提案からシステムへの書き戻しを行う「実行（Action）」の3つのステップで、サプライチェーン管理システムを構築しています。AIに単なるデータではなく、ビジネス的な繋がり（文脈）を渡すことで、より高度な意思決定支援が可能になることを実証しており、次世代のデータ基盤設計における有力なアプローチを提示しています。GitHubでソースコードも公開されており、実際に手を動かして学べる内容となっています。",
+    "topics": [
+      "Palantir",
+      "オントロジー",
+      "Python",
+      "LLM",
+      "データ基盤"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

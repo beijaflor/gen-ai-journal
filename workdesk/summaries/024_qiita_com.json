@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:12:38.451728+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeCodeとCodexにコーディングを全て任せて商用レベルのUnityゲーム開発を行う【後編】",
+    "url": "https://qiita.com/archeleeds/items/6ec24ba4942973a1ce0b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI（ClaudeCode/Codex）を使い、徹底したドキュメント化と段階的な設計・実装フローを組み合わせることで、商用レベルの品質を持つUnityゲームを効率的に開発する手法を解説した記事です。",
+    "summaryBody": "AIにUnityゲーム開発を丸投げしつつ、商用レベルの品質（技術的負債が少なく、拡張性・保守性が高い状態）を維持するための実践的ワークフローを解説しています。主な核心は「作業の合間の徹底したDocs化（ドキュメント化）」にあり、デザイン、ガイドライン、ロードマップ、セルフレビューの4種の文書をAIに更新させ続けることで、AIのコンテキストを維持し、精度の低下を防ぎます。開発手順を「マスタデータ・Domainオブジェクトの設計」「Orchestrator/UseCaseの構築」「詳細なロードマップに基づく実装」のステップに分割し、実装直前に『機能詳細』と『理想設計』を定義させることで、AI特有のスパゲッティコードを回避します。筆者はこの手法により、10人日程度の工数で高いスケーラビリティを持つゲーム開発に成功しており、設計と実装の分離（分割統治）がAI駆動開発において極めて重要であることを示しています。",
+    "topics": [
+      "Unity",
+      "ClaudeCode",
+      "Codex",
+      "AI駆動開発",
+      "クリーンアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

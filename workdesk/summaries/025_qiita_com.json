@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:12:51.057695+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code x Obsidianで、LLM Wiki構築 | セッションを切り替えても会話を続けられる方法",
+    "url": "https://qiita.com/usayamadausako/items/c8b5cca97554f6f64782",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとObsidianを連携させ、人間が管理・制御する「LLM Wiki」を構築することで、AIエージェントのコンテキスト維持とトークン節約を実現する手法。",
+    "summaryBody": "Andrej Karpathy氏が提唱した「LLM Wiki」の概念をベースに、Claude CodeとObsidianを組み合わせたナレッジ管理術を解説しています。筆者は、AIが自動でノートを生成・更新する「自己増殖方式」が招く情報の腐敗やメンテナンスの困難さを指摘し、人間が記録のタイミングや整理の判断を行う「手動ハンドリング型」を推奨しています。\n\n具体的な運用として、プロジェクト内に `ai_wiki/` ディレクトリを作成してObsidianで管理し、機能の調査結果やセッション切り替え時の引き継ぎ事項をClaude Codeに指示してMarkdown形式で記録・整理させます。これにより、セッションを跨いでも過去の文脈を低コストで復元でき、AIに最新のプロジェクト構造を正確に把握させ続けることが可能になります。プロンプト例やディレクトリ構成、情報のアーカイブ化などの具体的な運用ノウハウが網羅されています。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "LLM Wiki",
+      "AIエージェント",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

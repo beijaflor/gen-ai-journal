@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:19:23.922106+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのためのゼロトラスト",
+    "url": "https://claude.com/blog/zero-trust-for-ai-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、自律型AIエージェントの安全な企業導入を実現するため、階層型ゼロトラスト・アーキテクチャとAIによる攻撃に対応した防御運用フレームワークを公開しました。",
+    "summaryBody": "### 概要\nAnthropicは、企業における自律型AIエージェントの安全な導入を支援するための包括的なセキュリティフレームワークを発表しました。AIモデルの進化により、脆弱性の発見から攻撃（エクスプロイト）までの時間が短縮される中、従来のセキュリティ手法だけでは不十分であると指摘し、エージェント特有の性質に合わせた「ゼロトラスト」アプローチを提唱しています。\n\n### フレームワークの核心\n本ガイドでは、AIエージェントが持つ「自律的な判断」や「ツールの実行」に伴うリスクを管理するため、以下の要素を組み込んだ新しいセキュリティモデルを提案しています。\n- **IDと権限**: 暗号化されたルートを持つID管理と、タスクごとに最小化された権限スコープ。\n- **3層のゼロトラスト構造**: 組織の成熟度に合わせて「Foundation（基礎）」「Advanced（発展）」「Optimized（最適化）」の3つのティアで実装。\n- **防御の高速化（Agentic SOAR）**: AIによって加速された攻撃に対抗するため、防御側も自律的なツール（Agentic SOAR）を用いて、検知から対応までの時間を短縮。\n\n### 結論\nAIエージェントを「侵害されることを前提（Assume Breach）」とした設計に組み込み、メモリー保護やサンドボックス化、入出力制御を徹底することで、企業のイノベーションと安全性の両立を目指しています。",
+    "topics": [
+      "AIエージェント",
+      "ゼロトラスト",
+      "サイバーセキュリティ",
+      "Anthropic",
+      "エンタープライズAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Zero Trust for AI agents"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:13:31.782359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Dynamic Workflows を触ってみた: マルチエージェント並列オーケストレーションの概念と体験",
+    "url": "https://zenn.dev/canly/articles/45da96250c7028",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの新機能「Dynamic Workflows」の仕組みと、大規模リポジトリの定期棚卸しにおける実用性を検証した詳細レポート。",
+    "summaryBody": "Anthropicが提供するClaude Code v2.1.154で導入された「Dynamic Workflows（動的ワークフロー）」のリサーチプレビューについて、その概念と実地検証の結果をまとめた記事です。この機能は、Claudeがオーケストレーション用のスクリプトを動的に生成し、数十〜数百のサブエージェントを並列稼働させて大規模なタスクを遂行する仕組みです。既存のサブエージェント機能との大きな違いは、Claude自身が段取り（分割と検証）を設計し、「敵対的レビュー（反証ループ）」を自動で内蔵している点にあります。\n\n検証では、社内用マーケットプレイスリポジトリの横断的・俯瞰的な棚卸しをタスクとして依頼。40のエージェントが約40分稼働し、監査で見つかった71件の指摘のうち約4割を反証フェーズで誤検知として除外するなど、高い検証精度が確認されました。トークン消費は大きいものの、メインセッションのコンテキストを消費せずに大規模な調査結果をまとめられるため、数千ファイル規模の移行やセキュリティ監査といった「単一パスでは無理筋なタスク」に対する強力な手段となります。",
+    "topics": [
+      "Claude Code",
+      "Dynamic Workflows",
+      "AIエージェント",
+      "マルチエージェント",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

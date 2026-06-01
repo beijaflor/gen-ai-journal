@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:15:34.937527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "full AIでRust製CLIツール「tiny-view」を開発：体験設計とAI活用の新機軸",
+    "url": "https://zenn.dev/araki_takaki/articles/tinyview-dev",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "RustとネイティブWebViewを用い、サーバーや一時ファイル不要でHTML/Markdown等を即座に表示するCLIツール「tiny-view」の、AI主導による開発プロセスと設計思想の記録。",
+    "summaryBody": "本プロジェクトは、Rust製の軽量CLIツール「tiny-view」をAI（Claude等）を全面的に活用して開発した事例です。このツールは、標準入力やファイルから渡されたHTML、Markdown、Mermaid、コード断片などを、ローカルサーバーや一時ファイルを介さず、ネイティブWebView（wry/tao）で即座に表示します。バイナリサイズは約1MBと軽量で、起動速度150ms以下を目標とした高速なプレビュー体験を提供します。\n\n開発プロセスの最大の特徴は、人間が「作りたい体験」を言語化し、AIが実装と検品を担う徹底した役割分担にあります。PRD（製品要求仕様書）にて「No Server / No Temp File / Ephemeral」といった絶対制約とパフォーマンス数値を定義し、それをAIの「記憶」として参照させることで、実装のブレを防いでいます。具体的には、`.claude`設定を用いたワークフローにより、AIがIssue発行からWorktreeでの実装、ドラフトPR作成、さらにはテスト内容のMarkdown要約までを自動化しました。\n\n人間はコードを一行ずつ追うのではなく、AIが生成したドキュメントやテスト要約を通じて、設計思想との整合性をレビューすることに注力しています。AI時代における「仕様の単一情報源（SSOT）」の重要性と、人間が担うべき「判断基準の定義」という役割の変容を具体的に示す、実践的な知見がまとめられています。",
+    "topics": [
+      "Rust",
+      "CLIツール",
+      "AI開発",
+      "WebView",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

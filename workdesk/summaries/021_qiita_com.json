@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:11:47.569598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで使うモデルをMiniMax M2.7に変更してみた検証メモ",
+    "url": "https://qiita.com/KNR109/items/aaa3ce165cb4efdabd18",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのバックエンドモデルをAnthropic互換APIを持つMiniMax M2.7に差し替え、設定手順や開発時の挙動、生成速度の優位性を検証した解説記事。",
+    "summaryBody": "本記事では、エンジニアリング業務に特化したモデル「MiniMax M2.7」をClaude Codeの「頭脳」として使用する方法を検証しています。MiniMaxが提供するAnthropic互換APIを活用することで、使い慣れたClaude CodeのUIを維持したままモデルを差し替える具体的な手順（APIキー発行、既存環境変数のクリア、settings.jsonの編集）が解説されています。実際のNext.jsアプリ開発検証では、モデルが計画立案から実装、エラーの自己修正までを自律的に行う様子が確認されており、Claude 3.5 Sonnetと比較した際のレスポンスの速さやテンポの良さが実用上の利点として挙げられています。",
+    "topics": [
+      "Claude Code",
+      "MiniMax M2.7",
+      "AI駆動開発",
+      "LLM",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:17:39.573890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AI時代にこそ効くGo | Why Go Works in the Age of Generative AI",
+    "url": "https://speakerdeck.com/mom0tomo/sheng-cheng-aishi-dai-nikosoxiao-kugo-why-go-works-in-the-age-of-generative-ai",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Go言語の「退屈」とも評される一貫性と制約が、生成AIによるコード生成・レビューの効率を最大化し、AI時代の開発において大きな優位性となることを論じたスライド資料。",
+    "summaryBody": "変化の激しいWeb技術の中で、Go言語が「変わらないこと（Go Way）」を選択してきた価値を再定義する内容です。主要な論点は以下の3点に集約されます。\n\n1. **AI生成コードとの親和性**: Goは言語仕様が小さく、誰が書いても同じコードになりやすい性質を持ちます。これにより、AIが生成したコードと人間が書いたコードの乖離が少なく、レビュー負荷を劇的に下げることができます。\n2. **「冗長」がメリットに転換**: 従来、エラーハンドリングなどの記述が冗長だと言われてきましたが、AIが記述を代行する現代では「書く手間」は問題になりません。むしろ、AIが生成した明示的で予測可能なコードを人間が素早く読み解けるメリットの方が上回ります。\n3. **ツールチェーンと安定性**: 標準化されたフォーマッタ（gofmt）や高速なコンパイル、シングルバイナリでの配布といったGoの特性は、AIによる自動化やCI/CDプロセスにおいて、環境依存のトラブルを最小化し、検証サイクルを高速化させます。\n\n結論として、開発がAI中心にシフトするほど、読みやすさと安定性を重視してきたGoの哲学が、強力な信頼の土台（Foundation）として機能すると説いています。",
+    "topics": [
+      "Go",
+      "生成AI",
+      "コードレビュー",
+      "ソフトウェア工学",
+      "開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

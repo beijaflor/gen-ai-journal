@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:18:54.419719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAIW - AI透かし・C2PAメタデータ削除オンラインツール",
+    "url": "https://raiw.cc/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI画像に含まれる可視ロゴやC2PA等のメタデータ、さらにはSynthIDのような不可視の透かしを検出し、削除または無効化できるオンラインツール「RAIW」。",
+    "summaryBody": "### 概要\nRAIWは、生成AIによって画像に付与された様々な「AIの痕跡」を削除するためのオンラインツールです。Google Geminiのロゴ、C2PAコンテンツ認証情報、そしてSynthIDのような不可視の透かしの検出と除去に対応しています。\n\n### 主な機能\n- **可視透かしの除去**: Geminiのスパークルロゴや「Made with AI」といった視覚的なオーバーレイを削除します。\n- **メタデータの剥離**: EXIF、C2PA、中国のAIGC規格（TC260）などのAI由来メタデータを剥離し、SNS等での自動AIラベル付与を防ぎます。\n- **不可視透かしの妨害**: ChatGPTやSynthIDが画素レベルで埋め込む不可視のパターンに対し、拡散モデルを用いた再生成処理を行うことでその機能を無効化します。\n\n### 料金と仕様\n- **Quick clean (無料)**: 可視透かしの除去とメタデータの削除を高速に実行します。\n- **All-in-one ($1.25/枚)**: GPUを使用し、不可視透かしの破壊を含む高度な処理を行います。\nアカウント登録不要で、15MBまでのPNG、JPG、WebP形式に対応しています。",
+    "topics": [
+      "AI透かし除去",
+      "C2PA",
+      "SynthID",
+      "メタデータ",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 80
+    },
+    "originalTitle": "AI watermark remover - Remove AI watermarks from images online | RAIW"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:06:38.996190+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン盗難からの保護 - Vercel",
+    "url": "https://vercel.com/blog/protecting-against-token-theft",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI推論のコストを悪用したトークン盗難（推論盗難）のメカニズムと、Vercel BotIDを用いたリクエスト単位の防御手法を解説した記事。",
+    "summaryBody": "AI推論のコストは通常のHTTPリクエストに比べて極めて高く、攻撃者が他人のAPIエンドポイントを不正に利用してトークンを転売する「推論盗難（Inference Theft）」が深刻な問題となっています。従来のIP制限やセッションベースの認証では、多数の住宅用プロキシや捨てアカウントを駆使する攻撃を防ぎきれません。攻撃者は、被害者のAPIをOpenAI互換のアダプターで包むことで、標準的なSDKから利用可能な状態にして転売します。Vercelはこの対策として、リクエストごとに検証を行う「BotID」の導入を推奨しています。BotIDは機械学習を用いた不可視の認証を提供し、セッション開始時ではなく、推論リクエストのたびにチェックを行うことで、攻撃側のバイパスコストを増大させます。実際にVercelのドキュメント用AIチャットが攻撃を受けた際も、BotIDによって1日1万ドル規模の被害を未然に防いだ事例が紹介されています。",
+    "topics": [
+      "AIセキュリティ",
+      "トークン盗難",
+      "Vercel BotID",
+      "LLM運用",
+      "ボット対策"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Protecting against token theft - Vercel"
+  }
+}
