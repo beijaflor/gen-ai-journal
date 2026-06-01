@@ -37,6 +37,23 @@ This repository creates weekly curated journals about Generative AI in coding, f
   - Can process single URL by ID or batch-process all unchecked URLs
   - Uses `uv run scripts/bulk_summarize.py` for batch operations
   - Marks URLs as checked after successful summary generation
+  - **PDF URLs are auto-routed to the `summarize-pdf` pipeline** via
+    `scripts/call-gemini.py`'s Content-Type / `.pdf`-suffix probe — no
+    human intervention needed (Issue #141)
+
+- **summarize-pdf skill**: PDF-specific extraction pipeline
+  - Invoked automatically by `call-gemini.py` when the input URL is detected
+    as PDF (HEAD probe says `application/pdf` OR the URL path ends in `.pdf`)
+  - Detection happens BEFORE any extraction, so small PDFs cannot sneak
+    through the HTML BS4 path and trigger URL-slug hallucinations
+  - Downloads via curl, extracts text via `pypdf`, fails closed when
+    extraction does not produce ≥400 chars (rejects scanned/image-only PDFs)
+  - Writes a `BLOCKED-PDF:` stub on failure rather than letting the LLM
+    fabricate from the URL slug
+  - Explicit invocation:
+    `uv run scripts/call-gemini.py --url <PDF_URL> [--pages 25]`
+  - For pre-extracted text (e.g. OCR output, Playwright-captured PDFs):
+    `uv run scripts/call-gemini.py --url <PDF_URL> --content <path>`
 
 - **human-review-gate skill**: Blocking review of AI-drafted planning documents
   - Invoked at every "AI drafts → human reviews → AI proceeds" handoff
@@ -74,6 +91,12 @@ uv run scripts/bulk_summarize.py --dry-run
 
 # One-shot URL summarization (for single URL)
 uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/XXX_domain.md
+
+# PDF summarization (Issue #141): detection is automatic, but you can
+# control page caps on huge reports and force-disable routing if needed.
+uv run scripts/call-gemini.py --url "https://example.com/report.pdf" --pages 25 --output workdesk/summaries/XXX_domain.json
+uv run scripts/call-gemini.py --url "https://example.com/article.pdf" --content /tmp/extracted.txt --output workdesk/summaries/XXX_domain.json
+uv run scripts/call-gemini.py --url "https://example.com/file.pdf" --no-pdf-routing  # force HTML path for debugging
 
 # DEPRECATED: Old combined workflow (kept for reference)
 # uv run scripts/bulk_add_links.py urls.txt
