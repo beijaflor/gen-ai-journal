@@ -143,7 +143,13 @@ Interpret:
 - **401 / 403** → likely paywall or bot block → **Step 3**
 - **404 / 410** → page is dead; report to user, do not regenerate
 - **5xx** → transient server issue; wait briefly and retry **Step 2** once before moving on
-- **200 OK but `Content-Type` is non-HTML** (e.g. PDF, video) → document and stop; this skill cannot summarize binary content
+- **200 OK and `Content-Type: application/pdf`** (or URL ends in `.pdf`) → re-run
+  `call-gemini.py --url "$URL"` and let the PDF router (Issue #141) take over.
+  No manual fetch needed; the script will download, extract via pypdf,
+  fail-closed if extraction is poor, and produce a schema-valid JSON.
+  For huge reports, add `--pages 25` to extract only front matter.
+- **200 OK but `Content-Type` is non-HTML and non-PDF** (e.g. video) → document
+  and stop; this skill cannot summarize that content
 
 If the headers look healthy but you saw paywall language in the existing summary (Step 1), also fetch a small body sample to LLM-judge whether the page is gated:
 
@@ -267,7 +273,25 @@ uv run scripts/call-gemini.py \
   --model gemini-3-flash-preview
 ```
 
-**Known gap (follow-up)**: `call-gemini.py` does not currently expose a `--content` flag or stdin-content mode for "I already have the article text, just summarize it". The workaround above uses `--file` with a hand-built prompt, which bypasses the URL-mode JSON pipeline (the script only auto-applies the structured-output JSON pipeline when `--url` is set). If validation fails on the resulting output, escalate to **Step 6**. A clean fix would be a new `--content <path>` flag that reuses the URL-mode JSON pipeline with externally supplied article text — tracked as a follow-up.
+**Preferred path (Issue #141)**: `call-gemini.py` now exposes a `--content
+<path>` flag that reuses the URL-mode JSON pipeline (schema enforcement, URL
+pinning, `originalTitle` invariant) with externally supplied article text.
+When you have the article body and just need the structured summary,
+**prefer this over the hand-built `--file` prompt above**:
+
+```bash
+# 1. Get the article text into a temp file (curl + BS4, Playwright snapshot,
+#    OCR, etc.). $RAW from the snippet above works as-is.
+# 2. Run the URL-mode pipeline against the supplied text. --url is required
+#    (it is pinned into content.url).
+uv run scripts/call-gemini.py \
+  --url "$URL" \
+  --content "$RAW" \
+  --output "workdesk/summaries/${ID}_${DOMAIN}.json"
+```
+
+The hand-built `--file` workflow above is kept for completeness but should
+only be needed if `--content` cannot represent the request (rare).
 
 ### Step 6 — Playwright last resort
 

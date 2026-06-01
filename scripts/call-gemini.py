@@ -31,6 +31,12 @@ from modules.fetch_router import (
     looks_blocked,
     build_blocked_stub,
 )
+from modules.pdf_router import is_pdf_url, has_pdf_suffix
+from modules.pdf_extractor import (
+    ExtractionResult,
+    extract_pdf_from_url,
+    build_pdf_blocked_stub,
+)
 from validate_summary import validate as _validate_summary
 
 # Layer 1 (Issue #108) — Fetch quality gate
@@ -295,6 +301,49 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         error_msg = f"Error processing content from {url}: {str(e)}"
         logging.error(error_msg)
         return f"[ERROR: {error_msg}]"
+
+def _build_url_mode_prompt_with_text(url: str, article_text: str, script_dir: str) -> str:
+    """Assemble the URL-mode JSON prompt with externally supplied article text.
+
+    Issue #141: the URL-mode pipeline (URL pinning, originalTitle enforcement,
+    schema validation, sanitization) is the right pipeline for PDF and any
+    other non-HTML source. The only thing those paths need is a way to inject
+    pre-extracted text into the prompt template instead of letting
+    ``fetch_url_content`` run BS4 over the raw bytes.
+
+    This helper loads ``prompts/summarize-json.prompt``, substitutes the
+    ``{{url}}`` placeholder, replaces the ``{{fetch:"..."}}`` directive with
+    ``article_text`` verbatim, then runs the template processor with NO
+    fetch function so the remaining ``{{file:...}}`` includes (criteria,
+    scoring framework, editorial persona) resolve as normal.
+
+    The caller is responsible for url pinning / language invariants /
+    schema validation in the post-processing layer — those run uniformly
+    on whatever this function produces.
+    """
+    prompt_path = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
+    if not os.path.exists(prompt_path):
+        raise FileNotFoundError(f"Prompt template not found: {prompt_path}")
+
+    with open(prompt_path, 'r', encoding='utf-8') as f:
+        prompt = f.read().strip()
+
+    prompt = prompt.replace('{{url}}', url)
+    # Strip the fetch directive(s) and append the article text under the
+    # "# Article Content" marker. The marker is load-bearing because the
+    # context-caching split in main() also keys off it.
+    prompt = re.sub(r'\{\{fetch:"[^"]+"\}\}', '', prompt)
+    if '# Article Content' in prompt:
+        head, _tail = prompt.split('# Article Content', 1)
+        prompt = head + '# Article Content\n\n' + article_text
+    else:
+        prompt = prompt + '\n\n# Article Content\n\n' + article_text
+
+    # Resolve {{file:...}} includes (criteria, persona). No fetch function
+    # is passed in: externally supplied text means we do NOT want any
+    # implicit URL fetching here.
+    return process_template(prompt, {}, script_dir, fetch_function=None)
+
 
 def setup_gemini() -> genai.GenerativeModel:
     """Initialize Gemini AI with API key from environment."""
@@ -671,6 +720,25 @@ def main():
              'via Playwright (handles JS-rendered pages). Off by default.'
              % FETCH_QUALITY_MIN_CHARS,
     )
+    parser.add_argument(
+        '--content',
+        help='Path to a file containing pre-extracted article text. Reuses the '
+             'URL-mode JSON pipeline (schema validation, URL pinning, '
+             'originalTitle enforcement). Requires --url to be set, which is '
+             'pinned into content.url. Issue #141 follow-up.',
+    )
+    parser.add_argument(
+        '--pages',
+        type=int,
+        help='When the source is a PDF, cap the number of leading pages read '
+             '(front-matter mode for huge reports). Ignored for HTML sources.',
+    )
+    parser.add_argument(
+        '--no-pdf-routing',
+        action='store_true',
+        help='Disable automatic PDF detection. Useful for testing the legacy '
+             'HTML-only path. Issue #141.',
+    )
 
     args = parser.parse_args()
 
@@ -691,77 +759,178 @@ def main():
     else:
         logging.basicConfig(level=logging.WARNING, stream=sys.stderr)
     
+    # Validate --content depends on --url (we need a URL to pin into content.url)
+    if args.content and not args.url:
+        print("Error: --content requires --url to be set (the URL is pinned into content.url)", file=sys.stderr)
+        sys.exit(1)
+
     # Handle URL summarization
     if args.url:
         logging.info(f"URL summarization mode for: {args.url}")
 
+        # ------------------------------------------------------------------
+        # Issue #141: PDF detection happens BEFORE any extraction. This is
+        # the "detection decision, not recovery decision" architecture from
+        # the issue's outside review — the HTML BS4 pipeline must never see
+        # a PDF, because small PDFs survive the 500-char guard and end up
+        # producing URL-slug hallucinations.
+        # ------------------------------------------------------------------
+        is_pdf = False
+        if args.content:
+            # External text supplied; skip routing entirely. Caller already
+            # decided the source type.
+            logging.info("--content supplied; skipping PDF/HTML routing")
+        elif args.no_pdf_routing:
+            logging.info("--no-pdf-routing set; forcing HTML pipeline")
+        else:
+            # Cheap suffix check first to skip the HEAD round-trip for the
+            # obvious cases.
+            if has_pdf_suffix(args.url):
+                logging.info(f"PDF detected by URL suffix: {args.url}")
+                is_pdf = True
+            else:
+                try:
+                    is_pdf = is_pdf_url(args.url, timeout=10)
+                    if is_pdf:
+                        logging.info(f"PDF detected by Content-Type probe: {args.url}")
+                except Exception as exc:  # noqa: BLE001
+                    logging.warning(f"PDF probe raised; falling through to HTML path: {exc}")
+                    is_pdf = False
+
         # Always use JSON prompt for URL summarization
         prompt_file = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
-
-        logging.debug(f"Looking for prompt file: {prompt_file}")
-
         if not os.path.exists(prompt_file):
             logging.error(f"Prompt file not found: {prompt_file}")
             print(f"Error: {prompt_file} not found", file=sys.stderr)
             sys.exit(1)
-        
-        try:
-            with open(prompt_file, 'r', encoding='utf-8') as f:
-                prompt = f.read().strip()
-            logging.info(f"Loaded prompt template ({len(prompt)} chars)")
-            
-            # Replace {{url}} placeholder
-            prompt = prompt.replace('{{url}}', args.url)
-            
-            # Process template for file inclusions
-            try:
-                logging.info("Processing template for file inclusions...")
-                prompt = process_template(prompt, {}, script_dir, fetch_function=fetch_url_content)
-                logging.debug(f"Prompt after template processing:\n{'-'*50}\n{prompt}\n{'-'*50}")
-            except ValueError as e:
-                logging.error(f"Template processing error: {e}")
-                print(f"Template processing error: {e}", file=sys.stderr)
-                sys.exit(1)
 
-            # Issue #121: if the fetch was blocked (anti-bot interstitial or
-            # un-hydrated SPA shell), skip the LLM call entirely and emit a
-            # blocked-stub instead. This is the load-bearing safety net that
-            # prevents hallucinated summaries from reaching workdesk/summaries/.
-            if _LAST_FETCH_METRICS.get('blocked'):
-                stub = build_blocked_stub(
-                    url=args.url,
-                    reason=_LAST_FETCH_METRICS.get('blocked_reason', 'unknown'),
-                    extracted_chars=_LAST_FETCH_METRICS.get('extracted_chars', 0),
-                    raw_bytes=_LAST_FETCH_METRICS.get('raw_bytes', 0),
-                    fetcher=_LAST_FETCH_METRICS.get('fetcher', 'unknown'),
-                )
+        try:
+            if is_pdf:
+                # PDF path: download, extract via pypdf, verify quality (fail
+                # closed), then build the URL-mode prompt with the extracted
+                # text. The URL-mode JSON pipeline (schema, URL pinning,
+                # originalTitle, sanitization) runs identically.
                 print(
-                    f"BLOCKED: {args.url} — {_LAST_FETCH_METRICS.get('blocked_reason', '')}; "
-                    "writing blocked-stub instead of calling Gemini.",
+                    f"PDF: routing {args.url} through pypdf extractor "
+                    f"(pages={args.pages or 'all'})",
                     file=sys.stderr,
                 )
-                if args.output:
-                    try:
-                        with open(args.output, 'w', encoding='utf-8') as f:
-                            f.write(stub)
-                        logging.info(f"Wrote blocked-stub to {args.output}")
-                    except IOError as e:
-                        logging.error(f"Error writing blocked-stub to {args.output}: {e}")
-                        print(f"Error writing blocked-stub: {e}", file=sys.stderr)
-                        sys.exit(1)
-                else:
-                    print(stub)
-                # Exit 0: bulk_summarize.py treats this as a successful run
-                # and marks the source as checked. The BLOCKED: marker in
-                # the file body is what flags it for human review.
-                sys.exit(0)
+                extraction: ExtractionResult = extract_pdf_from_url(
+                    args.url, pages=args.pages
+                )
+                if not extraction.ok:
+                    stub = build_pdf_blocked_stub(
+                        url=args.url,
+                        reason=extraction.error,
+                        metrics=extraction.metrics,
+                        raw_bytes=extraction.raw_bytes,
+                    )
+                    print(
+                        f"BLOCKED-PDF: {args.url} — {extraction.error}; "
+                        "writing blocked-stub instead of calling Gemini.",
+                        file=sys.stderr,
+                    )
+                    if args.output:
+                        try:
+                            with open(args.output, 'w', encoding='utf-8') as f:
+                                f.write(stub)
+                            logging.info(f"Wrote PDF blocked-stub to {args.output}")
+                        except IOError as e:
+                            logging.error(f"Error writing PDF blocked-stub: {e}")
+                            print(f"Error writing PDF blocked-stub: {e}", file=sys.stderr)
+                            sys.exit(1)
+                    else:
+                        print(stub)
+                    # Exit 0 mirrors the HTML blocked-stub semantics: the
+                    # source is marked as checked, the BLOCKED-PDF marker
+                    # flags it for human review.
+                    sys.exit(0)
+                # Successful extraction — log metrics for the editor audit.
+                print(
+                    f"PDF: extracted {extraction.metrics.describe()} from {args.url}",
+                    file=sys.stderr,
+                )
+                prompt = _build_url_mode_prompt_with_text(
+                    args.url, extraction.text, script_dir
+                )
+            elif args.content:
+                # Externally-supplied content path (Issue #141 follow-up).
+                # Reuses the URL-mode JSON pipeline so URL pinning and schema
+                # enforcement still apply.
+                try:
+                    with open(args.content, 'r', encoding='utf-8') as f:
+                        article_text = f.read()
+                except OSError as e:
+                    logging.error(f"Cannot read --content file: {e}")
+                    print(f"Error: cannot read --content file '{args.content}': {e}", file=sys.stderr)
+                    sys.exit(1)
+                if not article_text.strip():
+                    print(f"Error: --content file '{args.content}' is empty", file=sys.stderr)
+                    sys.exit(1)
+                logging.info(
+                    f"--content: loaded {len(article_text)} chars from {args.content}"
+                )
+                prompt = _build_url_mode_prompt_with_text(
+                    args.url, article_text, script_dir
+                )
+            else:
+                # HTML path (the existing flow, unchanged).
+                with open(prompt_file, 'r', encoding='utf-8') as f:
+                    prompt = f.read().strip()
+                logging.info(f"Loaded prompt template ({len(prompt)} chars)")
+
+                # Replace {{url}} placeholder
+                prompt = prompt.replace('{{url}}', args.url)
+
+                # Process template for file inclusions + fetch
+                try:
+                    logging.info("Processing template for file inclusions...")
+                    prompt = process_template(prompt, {}, script_dir, fetch_function=fetch_url_content)
+                    logging.debug(f"Prompt after template processing:\n{'-'*50}\n{prompt}\n{'-'*50}")
+                except ValueError as e:
+                    logging.error(f"Template processing error: {e}")
+                    print(f"Template processing error: {e}", file=sys.stderr)
+                    sys.exit(1)
+
+                # Issue #121: if the fetch was blocked (anti-bot interstitial or
+                # un-hydrated SPA shell), skip the LLM call entirely and emit a
+                # blocked-stub instead. This is the load-bearing safety net that
+                # prevents hallucinated summaries from reaching workdesk/summaries/.
+                if _LAST_FETCH_METRICS.get('blocked'):
+                    stub = build_blocked_stub(
+                        url=args.url,
+                        reason=_LAST_FETCH_METRICS.get('blocked_reason', 'unknown'),
+                        extracted_chars=_LAST_FETCH_METRICS.get('extracted_chars', 0),
+                        raw_bytes=_LAST_FETCH_METRICS.get('raw_bytes', 0),
+                        fetcher=_LAST_FETCH_METRICS.get('fetcher', 'unknown'),
+                    )
+                    print(
+                        f"BLOCKED: {args.url} — {_LAST_FETCH_METRICS.get('blocked_reason', '')}; "
+                        "writing blocked-stub instead of calling Gemini.",
+                        file=sys.stderr,
+                    )
+                    if args.output:
+                        try:
+                            with open(args.output, 'w', encoding='utf-8') as f:
+                                f.write(stub)
+                            logging.info(f"Wrote blocked-stub to {args.output}")
+                        except IOError as e:
+                            logging.error(f"Error writing blocked-stub to {args.output}: {e}")
+                            print(f"Error writing blocked-stub: {e}", file=sys.stderr)
+                            sys.exit(1)
+                    else:
+                        print(stub)
+                    # Exit 0: bulk_summarize.py treats this as a successful run
+                    # and marks the source as checked. The BLOCKED: marker in
+                    # the file body is what flags it for human review.
+                    sys.exit(0)
 
             logging.info(f"Final prompt length: {len(prompt)} characters")
 
             # args.clean = True  # Auto-enable cleaning for URL summarization
             args.model = 'gemini-3-flash-preview'  # Use latest model for URL summarization
             logging.info(f"Using model: {args.model} with clean output enabled")
-            
+
         except FileNotFoundError:
             logging.error(f"Prompt file not found: {prompt_file}")
             print(f"Error: Prompt file '{prompt_file}' not found", file=sys.stderr)
