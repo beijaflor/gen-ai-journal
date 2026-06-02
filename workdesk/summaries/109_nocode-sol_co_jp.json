@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T08:02:41.265924+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セキュリティを考慮したClaude Codeの企業運用に正解を出してみる",
+    "url": "https://nocode-sol.co.jp/blog/tech/claude-code-enterprise-security-guide/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの企業導入におけるセキュリティリスクを整理し、Managed Settings、OSサンドボックス、OpenTelemetry監査を組み合わせた具体的な多層防御の設計指針を解説しています。",
+    "summaryBody": "エージェント型AIツール「Claude Code」を企業で安全に運用するための包括的なガイドです。AIがリポジトリ操作やシェル実行を自律的に行うことに伴う、プロンプトインジェクションや機密情報漏洩といった5大リスクを定義した上で、4つの防御層による統制を提案しています。\n\n具体的には、IT管理者が設定を強制できる「Managed Settings」を用いて、bypassPermissionsモードの禁止や、.env・SSH鍵などの機密ファイルへのアクセス拒否（deny rules）を徹底する方法を詳述。また、macOSのSeatbeltやLinuxのbubblewrapを利用したサンドボックス機能の有効化、ネットワーク通信のドメイン制限など、OSレベルでの隔離策についても解説しています。さらに、OpenTelemetryを活用して操作ログやトークン消費量を社内SIEM（SplunkやDatadog等）に集約し、コスト統制と異常検知を両立する監視ダッシュボードの構築例も提示。導入時に必須となるチェックリストと推奨されるsettings.jsonの雛形も含まれており、情シスやセキュリティ担当者が即座に実務に活用できる内容となっています。",
+    "topics": [
+      "Claude Code",
+      "AIセキュリティ",
+      "エンタープライズガバナンス",
+      "サンドボックス",
+      "OpenTelemetry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

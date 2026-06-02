@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:59:12.156448+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PdMの脳みそをClaude Codeに移植した仕組み",
+    "url": "https://zenn.dev/tokium_dev/articles/pdm-brain-on-claude-code",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "複数プロダクトを並行管理するPdMの認知負荷を下げるため、Claude Codeを用いて「主観・客観・タスク・記憶」の4層で脳内情報を外部化・自動更新する仕組み。",
+    "summaryBody": "TOKIUMのPdMによる、Claude Codeを活用したナレッジマネジメントの高度化事例です。複数のプロダクトを管理する際の「把握はしておきたいが自分にボールがない案件」による認知負荷を解消するため、4つのレイヤー（dashboard、context.md、tasks/、memory/）で情報を整理する仕組みを構築しています。最大の特徴は、JIRA、Slack、GitHub、Gmailなどの外部ソースから2時間おきに情報を集約し、主観的な優先度に基づいた「脳内ダッシュボード」を自動再構築するカスタムスキルの運用です。記事内では、実際に使用されているダッシュボードのプロンプトや、スキルの定義ファイル（SKILL.md）のテンプレートが公開されており、Claude Codeを用いた業務効率化の具体的な実装方法を学ぶことができます。情報の「主観」と「客観」を分離し、ソースから表示へのデータフローを片方向化することで、メンテナンス性を高める設計思想も詳述されています。",
+    "topics": [
+      "Claude Code",
+      "PdM",
+      "AIエージェント",
+      "ナレッジマネジメント",
+      "業務自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:52:00.468356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vault Operator: Obsidian向け自律型AIエージェント",
+    "url": "https://github.com/pssah4/vault-operator",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Obsidian内のデータを自律的に操作し、情報のインジェストからドキュメント生成、知識グラフの整理までをこなす、プライバシー重視の強力なAIエージェント。",
+    "summaryBody": "Vault Operatorは、Obsidianのノートを「読み・書き・管理」する高度なAIエージェントプラグインです。単なるチャットUIではなく、自律的なエージェントループを実行し、ユーザーの承認を得ながらノートの作成やリファクタリング、出典付きの要約作成（/ingest）などを行います。\n\n主な特徴は以下の通り：\n1. **マルチLLM・MCP対応**: OpenAI, Anthropic, Googleなどのクラウドモデルから、OllamaやLM Studioによるローカルモデル、さらにMCP（Model Context Protocol）経由で外部ツールと連携可能。\n2. **高度な知識管理**: ローカルでのベクトル検索とキーワード検索を組み合わせた意味検索や、リンク切れなどを修正するボルトのヘルスチェック機能を搭載。\n3. **安全性とプライバシー**: 書き込み操作の承認制、独自のGitバックアップによる一括元戻し（Undo）機能、ローカルファーストの設計によりデータを保護。\n4. **オフィス文書出力**: 既存のノートからWord、Excel、PowerPoint（Beta）形式のファイルを直接生成可能です。 \n\nプライバシーを重視しつつ、個人のナレッジベースを「思考するパートナー」へと進化させる強力なツールです。",
+    "topics": [
+      "Obsidian",
+      "AIエージェント",
+      "ナレッジマネジメント",
+      "MCP",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - pssah4/vault-operator: Real AI agent for your vault. Coworker, Copilot & thinking partner, that maintains your memory & knowledge, adapts to your workflows, uses plugins, skills & tools with full safety controls. BYOK & MCP."
+  }
+}

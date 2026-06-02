@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:58:23.761774+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのために「臭うコード検出器」を開発し、Hooksに設定してみた話",
+    "url": "https://zenn.dev/manalink_dev/articles/coding-agent-with-syntax-tree-analyze",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの出力を自動検証するため、PHPStanのカスタムルールとStop Hookを連携させ、AIが自律的に「臭うコード」を検知・修正する仕組みの構築事例。",
+    "summaryBody": "AIによるコーディングが進む中で増大する人間のレビュー負荷を軽減するため、マナリンクCTOの名人氏が提唱する「臭うコード」の自動検出・フィードバック手法を解説しています。主な内容は以下の3点です。\n\n1. **構文木解析によるガードレール**: PHPStan等のカスタムルールを作成し、内製ラッパーの強制使用など「明確にNGな実装」をCIで弾く仕組み。CLAUDE.mdによる指示が確率で無視される問題に対し、物理的な制限を設けます。\n2. **Stop Hookによる再考の促し**: 修正必須ではないが修正が望ましい「臭うコード」（UseCase層でのDB Model参照など）を、Claude Codeの`Stop Hook`を利用して検知し、AIに即座にフィードバックを返します。これにより、AIが自律的に修正または弁明を行うループを構築します。\n3. **ルール作成の自動化**: AIが犯したミスを再発防止策としてルール化する「SKILL」の開発。過去のレビュー指摘資産を反映させることで、組織に特化したコーディングエージェントへの最適化を図ります。\n\n抽象的な指示に頼るのではなく、静的解析という根拠のある検出を開発プロセスに組み込むことで、AIとの協働における品質管理を高度化する実践的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "PHPStan",
+      "静的解析",
+      "AST",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

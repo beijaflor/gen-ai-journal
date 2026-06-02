@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:57:16.122884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【AI-DLC】aidlc-workflows の v2 が生えていたので差分を見てみた",
+    "url": "https://qiita.com/ryu-ki/items/6ed097f5bf99d3d2b5a7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSが公開するAI駆動開発ライフサイクル（AI-DLC）用リポジトリにおける、Markdownベースの既存構成とエージェント・スキル分離型の新構成（v2）の設計思想の違いを比較分析しています。",
+    "summaryBody": "AWS Labsの「awslabs/aidlc-workflows」リポジトリにおける、現行のmainブランチと新設されたv2ブランチの構造的差異を分析した記事です。\n\n- **mainブランチの特徴**: Markdown形式のルールファイルを、Claude Code等のエージェントに読み込ませる「ステアリングファイル方式」です。導入が容易で、既存の多くのツールと互換性がありますが、ルールが長大化するとモデルが一部を無視する「Lost in the middle」のリスクがあります。\n- **v2ブランチの特徴**: エージェント（生成担当のBuilderと検証担当のValidator）と、15個に細分化された「スキル」に分割された構成です。現在はKiro IDE/CLI向けですが、必要なスキルのみを動的にロードすることでコンテキスト効率を高め、生成と検証を分離した「自己検証」の自動化を強化しています。\n\n記事では、LLMの確率的な挙動を「決定論的（deterministically）」に近づけるための設計アプローチの変遷として、単一プロンプトから分業システムへの移行を考察しています。",
+    "topics": [
+      "AI-DLC",
+      "AWS",
+      "Claude Code",
+      "Kiro",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

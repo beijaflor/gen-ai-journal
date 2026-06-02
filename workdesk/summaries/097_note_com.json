@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:59:42.713317+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "IllustriousユーザーがAnimaへ移行したらこう変わる -ComfyUIではなくNeoでAIイラスト制作するまで-",
+    "url": "https://note.com/rockey2799m/n/n0ceb02f7c1ba",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "従来のIllustrious環境から最新モデルAnimaへ移行する際、学習コストの高いComfyUIを避け、使い慣れた操作感のForge Neoで構築するメリットと具体的な導入手順を解説した記事。",
+    "summaryBody": "本記事は、Stable Diffusion Web ForgeでIllustrious系モデルを使用してきた著者が、次世代の高品質モデル「Anima」へ移行した実体験に基づく技術ガイドです。Animaの最大の強みは自然言語（文章プロンプト）に対する非常に高い理解力にあり、従来のタグ形式では難しかった繊細な感情表現や状況描写が容易になることを強調しています。\n\n環境構築においては、多くのユーザーが障壁と感じるノードベースのComfyUIではなく、従来のWebUI/Forgeに近いインターフェースを持つ「Stable Diffusion Web Forge - Neo」を選択。Stability Matrixを活用したパッケージ導入から、Anima専用のVAE（qwen_image_vae）やText Encoder（Qwen-3-0.6B）の具体的な配置パスまで、初心者が迷いやすいポイントを詳細に図解しています。また、移行後の画風変化を埋めるためのLoRA学習についても触れており、既存の制作スタイルを保ちつつ最新モデルの恩恵を受けるための実践的な道筋を示しています。",
+    "topics": [
+      "Anima",
+      "Stable Diffusion Web Forge - Neo",
+      "Stability Matrix",
+      "AIイラスト",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}
