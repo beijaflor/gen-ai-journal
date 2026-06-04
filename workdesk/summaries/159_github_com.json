@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:54:30.799577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Chipotleの顧客サポートAIを「流用」するAIコーディングエージェント「Chipotlai Max」",
+    "url": "https://github.com/cyberpapiii/chipotlai-max",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "米国のメキシカンフードチェーン「Chipotle」の顧客サポートAIをリバースエンジニアリングし、無料のコーディング支援バックエンドとして利用可能にしたジョーク色の強いOSSプロジェクト。",
+    "summaryBody": "### 概要\nChipotlai Maxは、AIコーディングエージェント「OpenCode」のフォークであり、Chipotle（チポトレ）のカスタマーサポートボット「Pepper」をデフォルトモデルとして統合した実験的なプロジェクトです。Chipotleの計算リソース（Pepper AI）を「盗む（借用する）」というコンセプトで開発されています。\n\n### 技術的背景と仕組み\n- **Pepper AIの正体**: Chipotleのボット「Pepper」はIPsoft Ameliaを搭載しており、ユーザーの発見により、高度なコーディング問題（LeetCode等）を解けることが判明しました。\n- **リバースエンジニアリング**: 開発者の@Gonzih氏が、PepperのWebSocket/STOMPバックエンドを解析し、OpenAI互換のAPIとして機能するプロキシを構築しました。\n- **無料のAI推論**: このプロキシをローカルで実行することで、APIキーなしに無料でLLM推論を利用できるようになります。\n\n### 今後の展望とリスク\n- **マルチプロバイダー化**: Home Depot、IKEA、Starbucksなど、他の企業のサポートチャットボットもリバースエンジニアリングして統合する計画があります。\n- **法的・技術的リスク**: 利用規約違反の可能性が非常に高く、Chipotle側による対策（パッチ）でいつでも利用不能になる可能性があるため、プロダクション利用は推奨されていません。",
+    "topics": [
+      "AI Coding Agent",
+      "Reverse Engineering",
+      "LLM Proxy",
+      "OpenSource",
+      "Meme Tech"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 60,
+      "annexPotential": 95,
+      "overall": 78
+    },
+    "originalTitle": "GitHub - cyberpapiii/chipotlai-max: The AI coding agent that runs on stolen Chipotle compute 🌯 Fork of OpenCode with Pepper AI as default model. Community project to add providers from Home Depot, Lowes, Target, Starbucks & more. · GitHub"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:44:07.471162+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mnemo: LLMのためのローカルファーストなAIメモリレイヤー",
+    "url": "https://github.com/zaydmulani09/mnemo",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMアプリケーションに永続的なナレッジグラフとエンティティ抽出による高度なコンテキスト注入機能を提供する、Rust製のローカルファーストなメモリ管理ツール。",
+    "summaryBody": "mnemoは、LLMアプリケーションに長期記憶（メモリ）を付加するためのオープンソースのサイドカーサービスです。入力テキストからLLMを用いてエンティティとそれらの関係性を抽出し、SQLiteとRustのpetgraphライブラリを組み合わせてナレッジグラフを構築します。検索時には、全文検索、エンティティ検索、グラフ探索（BFS）を統合した6段階のパイプラインにより、単なるベクトル検索を超えた関連コンテキストを50ms以下の低レイテンシで生成します。Ollamaを使用した完全ローカル環境のほか、OpenAIやAnthropicなどのAPIにも対応しており、開発者はインフラの複雑さを気にせず、自身のパイプラインに永続的な構造化メモリを統合できます。",
+    "topics": [
+      "LLM",
+      "Knowledge Graph",
+      "Rust",
+      "Local-first",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - zaydmulani09/mnemo: Local-first AI memory layer for any LLM. Persistent knowledge graph, entity extraction, semantic retrieval. Works with Ollama, OpenAI, Anthropic, or any OpenAI-compatible backend."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:42:22.704616+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のビルドタイム・ガバナンス：Context as Codeによるアーキテクチャ制御",
+    "url": "https://www.oreilly.com/radar/context-as-code/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成が爆発的に増加する中で、設計境界を「コードとしてのコンテキスト」で定義し、ビルド時に決定論的なガバナンスを強制する新手法を提案している。",
+    "summaryBody": "AIエージェントが構文的に正しいコードを大量生産する現代、設計意図や制約が無視された「フランケンシュタイン・ファクトリー」化が深刻な課題となっている。本稿では、プロンプトエンジニアリングの域を超え、ビルドパイプラインでアーキテクチャを統治する「Context Compilation Pattern（コンテキスト・コンパイル・パターン）」を提唱している。この手法では、人間が事前に`boundaries.md`（構造的制約）や`threat-model.md`（脅威モデル）といったアーティファクトを定義し、それをコンパイラがLLMのコンテキストとして組み立てると同時に、Semgrepなどの決定論的ツールを用いてCI/CD上で検証を行う。これにより、AIエージェントは「何でもYESと言う存在」から、定義された境界を守る制御可能なエンジンへと変わる。エンジニアの役割は、個別のコードを書くことから、正しいコードが生成されるための「境界条件」を設計することへと根本的にシフトしていく必要がある。",
+    "topics": [
+      "Context as Code",
+      "AI Code Generation",
+      "Software Architecture",
+      "Governance",
+      "LLM Ops"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Context as Code – Build-time governance in the era of infinite syntax"
+  }
+}

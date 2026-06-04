@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:50:15.927357+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HTTP/2における新たな脆弱性「HTTP/2 Bomb」の発見：AIが10年来の盲点を特定",
+    "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIツール「Codex」が、HPACK圧縮とフロー制御の仕組みを組み合わせることで、主要なWebサーバーのメモリを瞬時に枯渇させる深刻なDoS攻撃手法を発見した。",
+    "summaryBody": "### 脆弱性の概要\nセキュリティ研究チームCalifは、主要なWebサーバー（nginx、Apache httpd、IIS、Envoy、Pingora等）に影響する新しいDoS攻撃手法「HTTP/2 Bomb」を公開しました。この脆弱性は、AIモデル「Codex」が、10年以上前から知られていた2つの手法を独創的に組み合わせることで発見されました。\n\n### 攻撃のメカニズム\n1. **HPACK Indexed Reference Bomb**: 1バイトの参照コードで、サーバー側に膨大なメモリ割り当てを強制します。従来のサイズ制限を回避するため、デコード後のデータではなく、サーバー側の「エントリー管理用メモリ」を標的にします。\n2. **HTTP/2 Window Stall**: フロー制御窓を0に維持し、微細な更新を繰り返すことで、サーバーがレスポンスを完了できずメモリを解放できない状態に固定（ピン留め）します。\nこれらを組み合わせることで、Cookieヘッダーの分割送信による制限バイパスを行い、攻撃者は低速な回線からでもサーバーを短時間でメモリ不足（OOM）に追い込むことが可能です。\n\n### 影響と対策\n家庭用回線からでも、数十秒で32GB以上のサーバーメモリを占有可能です。nginx 1.29.8やApache mod_http2 2.0.41では既に対策が導入されていますが、未パッチの環境ではHTTP/2の無効化や、cgroups等を用いたワーカープロセスのメモリ上限設定が強く推奨されています。",
+    "topics": [
+      "HTTP/2",
+      "サイバーセキュリティ",
+      "脆弱性診断",
+      "DoS攻撃",
+      "HPACK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Codex Discovered a Hidden HTTP/2 Bomb"
+  }
+}

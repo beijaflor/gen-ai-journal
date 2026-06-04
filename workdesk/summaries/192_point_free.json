@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:03:13.557844+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10年前のXeonだけで十分：Gemma 4を旧世代サーバーで動かす最適化術",
+    "url": "https://point.free/blog/gemma-4-on-a-2016-xeon/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "2016年製の旧式XeonとDDR3メモリという制約下で、最新のGemma 4 26B MoEモデルを読書速度で動作させるための高度な最適化テクニックを解説。",
+    "summaryBody": "この記事は、GPUを搭載しない2016年製の古いサーバー（Intel Xeon E5-2620 v4、DDR3メモリ）で、最新のGemma 4 26B Mixture-of-Experts (MoE) モデルを動作させる方法を技術的に深掘りしています。推論の主なボトルネックである「メモリの壁」を打破するため、ik_llama.cppという特殊なフォークを使用し、25以上の最適化フラグを駆使します。主な手法として、MTP（Multi-Token Prediction）による投機的デコード、CPUキャッシュ階層に最適化されたMoEルーティング、メモリのピン留め（mlock）、そしてCPU向けに移植されたFlash AttentionやMLA（Multi-Head Latent Attention）の活用が挙げられます。著者は、ブラックボックス化した既存ツール（Ollamaなど）のデフォルト設定を避け、ハードウェアの物理的限界に合わせた緻密なチューニングを行うことで、10年前のハードウェアでも最新AIを実用的な速度で実行可能であることを示しています。",
+    "topics": [
+      "LLM推論最適化",
+      "Gemma 4",
+      "Mixture-of-Experts",
+      "ik_llama.cpp",
+      "ハードウェアチューニング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "A 10 year old Xeon is all you need"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:59:17.214131+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.8 のプロンプティング・ベストプラクティス — 公式ガイドの要点",
+    "url": "https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicが公開したClaude Opus 4.8向けプロンプトエンジニアリング公式ガイドの要点をまとめ、特に重要となるeffortパラメータの制御や思考プロセスの最適化手法について解説しています。",
+    "summaryBody": "本記事は、Anthropicの最新モデル「Claude Opus 4.8」におけるプロンプトエンジニアリングの最適化手法を詳しく解説しています。主なポイントは以下の通りです。\\n\\n- **effortパラメータの活用**: モデルの「賢さ」と「コスト・速度」を調整する最重要レバーであり、コーディングやエージェントタスクにはxhigh設定が推奨されます。4.8はこの設定を厳格に守るため、タスクの複雑さに応じた適切なレベル選択が不可欠です。\\n- **adaptive thinking**: 思考の有無を動的に判断させる設定が可能になり、複雑な推論が必要な場面で効果を発揮します。従来のextended thinkingに代わる仕組みとして導入されています。\\n- **指示の厳格な解釈**: 前世代よりも指示を文字通りに受け取る傾向が強いため、意図を「察してもらう」のではなく、全体への適用範囲（Scope）などを明示的に指定する必要があります。\\n- **用途別最適化**: 特定のデザイン本能（ハウススタイル）を回避する方法や、バグ発見能力を最大化するために「発見」と「フィルタリング」のフェーズを分けるコードレビュー手法などが具体的に示されています。\\n\\n従来のプロンプトも動作しますが、4.8固有の挙動やprefillの非推奨化といった変更点を理解することで、モデルのポテンシャルを最大限に引き出すことが可能になります。",
+    "topics": [
+      "Claude Opus 4.8",
+      "プロンプトエンジニアリング",
+      "Anthropic",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

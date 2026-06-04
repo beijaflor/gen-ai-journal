@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:00:52.951912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "寝ている間にクラッシュ報告から PR まで全自動化した話 — GitHub Actions × Claude Code Routines",
+    "url": "https://zenn.dev/interpark/articles/auto-fix-crash-with-claude-routines",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub ActionsとClaude Code Routinesを活用し、モバイルアプリのクラッシュログ取得からコード修正、PR作成、さらには指摘事項への再対応までを完全自動化した高度な運用事例。",
+    "summaryBody": "## 概要\nモバイルアプリ「SUBLINE」の開発チームが、GitHub ActionsとClaude Code Routinesを組み合わせて構築した「クラッシュ対応自動化システム」の解説記事です。従来1件あたり1〜2時間かかっていた「発見・起票・調査・修正・PR作成」のプロセスを、人間が5〜10分で最終確認・テストするだけの状態まで効率化しています。\n\n## 技術的なポイント\n- **状態管理による再開性**: Backlogのステータスやブランチの状態をトリガーに、AIが「今どこから再開すべきか」を判断。エラー発生時も次回のcron実行で途中から継続可能な堅牢な設計を導入しています。\n- **コストと品質の最適化**: GitHub Actions上でタスクごとにClaudeのモデル（Opus/Sonnet/Haiku）を使い分け、論理的思考が必要な工程にはOpus、定型的な要約にはHaikuを割り当てることでコストパフォーマンスを最大化しています。\n- **PRの自動統合と追記**: 類似の修正を1つのPRにまとめるロジックや、実機テスト後の指摘を「claude-fix」ラベル付与だけでAIに追加修正させる仕組みを構築しています。\n\n## 実運用での効果\n人間は「PRの最終確認」と「実機テスト」に集中できるようになり、AIと並走する自律的な開発サイクルを実現。朝起きると複数の修正案が並んでいるという理想的なワークフローを確立しています。",
+    "topics": [
+      "GitHub Actions",
+      "Claude Code",
+      "自動化",
+      "Firebase Crashlytics",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

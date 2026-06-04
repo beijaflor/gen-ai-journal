@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:53:39.524771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.8 effort=high VS effort=max React習熟度比較",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.8の思考時間を最大設定にした場合、複雑なコンポーネント設計において前世代からの進化に匹敵する性能向上と出力の安定化が見られることを実証したベンチマークレポート。",
+    "summaryBody": "## 概要\nClaude Opus 4.8の「effort」設定（思考量）をmaxに引き上げた際、Reactの開発能力がどう変化するかを13の課題を用いた独自ベンチマークで検証。effort=highと比較し、平均スコアが4.64ポイント向上し、モデルの世代交代に匹敵する改善を確認しました。\n\n## 主要な分析結果\n- **設計能力の飛躍**: 最も顕著な伸びは「コンポーネント設計」(+0.54)であり、複雑な要件におけるコンポーネント分割やpropsの設計判断が大幅に強化されています。\n- **思考時間と能力の境界**: TypeScriptの型定義品質には変化がなく、型付けは「思考時間」ではなく「モデルの能力上限」に依存することが示唆されました。\n- **安定性の向上**: 試行ごとのスコアのばらつき（分散）が縮小。複雑な課題ほど、max設定による「底上げ」と「収束」の効果が強く現れる傾向があります。\n\n## 運用の示唆\n単純なタスクでは追加思考が逆に揺らぎを生む可能性もありますが、設計の難易度が高い領域ではmax設定が極めて有効です。長時間実行に伴うAPIの利用制限や中断への耐性確保など、運用面での知見も共有されています。",
+    "topics": [
+      "Claude",
+      "LLM",
+      "React",
+      "ベンチマーク",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:48:21.276320+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Agentsで自分をマイクロマネジメントするAI「Kuro」を作った",
+    "url": "https://odiak.net/cloudflare-agents-personal-micromanager",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cloudflare AgentsとObsidianを連携させ、ユーザーの生活ログに基づき能動的にタスク管理や進捗確認を行う「おせっかいな」パーソナルAIエージェントの開発事例。",
+    "summaryBody": "エンジニアのodiak氏が、自身のタスク先延ばしや集中力の散漫を解決するために開発したAIエージェント「Kuro」の解説記事です。このエージェントはObsidianのdaily notesをメインの情報源とし、Cloudflare Agentsの基盤（Workers, Durable Objects, D1, Vectorize等）を利用して構築されています。最大の特徴は、AI側からTelegramを通じて「このタスク、今できそう？」といった能動的な声掛け（プロアクティブ・メッセージング）を行う点にあります。実装面では、Obsidian Syncとの同期、LLM（Claude 3.5 Sonnet）による最適な介入判断、そしてAIによる直接的な破壊的変更を防ぐための「変更案（diff）提案」といった仕組みが盛り込まれています。汎用的な便利さよりも、個人の弱さを補完することに特化した「自分専用マネージャー」の構築プロセスが詳細に綴られています。",
+    "topics": [
+      "Cloudflare Agents",
+      "AIエージェント",
+      "Obsidian",
+      "Claude 3.5 Sonnet",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

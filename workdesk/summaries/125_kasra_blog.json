@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:44:45.779418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMによる脆弱性診断の検証：1,500ドルを投じて分かった最新モデルの攻撃性能",
+    "url": "https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "セキュリティリサーチャーが、Firebaseのアクセス制御不備を突く自作アプリのハッキングに各種LLMが成功するか、1,500ドルの予算をかけて検証した実験レポート。",
+    "summaryBody": "セキュリティリサーチャーのKasra Rahjerdi氏が、最新のLLM（GPT-5.5、Claude 4.6、DeepSeek V4等）に対し、自作の脆弱なモバイルアプリをハッキングできるかを検証した結果を公開しました。検証の核心は、アプリのバイナリからFirebaseの認証情報を特定し、APIを経由せずにデータベースへ直接アクセスして秘密情報を奪取できるかにあります。\\n\\n### 実験結果のハイライト\\n- **GPT-5.5**: 成功率70%で首位。攻撃の文脈を理解し、Firebaseへの直接攻撃を最も的確に実行しました。\\n- **DeepSeek V4 Pro**: 30%の成功率。安価ながら高い能力を示しましたが、方針決定に迷う場面も見られました。\\n- **Claudeシリーズ**: Sonnet 4.6やOpus 4.8は高い能力を持ちつつも、最終局面でセキュリティガードレールが作動し「拒絶」に陥るケースが多く発生しました。\\n- **Gemini**: セキュリティポリシーにより、開始直後または途中で拒絶され、今回のタスクは未達成となりました。\\n\\n### 結論と示唆\\n自律型エージェントとしてのLLMは、すでに特定の脆弱性を特定・悪用する能力を有していますが、モデルごとに「攻撃への寛容さ（ガードレール）」と「推論の正確性」のバランスが大きく異なります。特に中国系モデルはデータベース操作を伴うタスクに抵抗が少ない傾向が見られました。一方で、高額なAPIコストやAPIの安定性が実運用上の障壁となっている現状も浮き彫りになりました。",
+    "topics": [
+      "LLM Security",
+      "Vulnerability Research",
+      "Firebase Security",
+      "AI Benchmarking",
+      "BOLA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "I built a vulnerable app and spent $1,500 seeing if LLMs could hack it"
+  }
+}

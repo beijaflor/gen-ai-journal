@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:45:22.341453+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに1年分のニュースを読ませて4,500件の長期記憶を作って見えた課題",
+    "url": "https://tech.layerx.co.jp/entry/ai-agent-long-term-memory-simulation",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに1年分のニュースから4,552件の長期記憶を構築させ、大規模運用における記憶管理（Dreaming）のコンテキスト制限や関連付けの困難さを検証したレポート。",
+    "summaryBody": "LayerXのApplied R&Dチームによる、AIエージェントの長期記憶に関する大規模シミュレーションの知見をまとめた記事です。\n\n### 実験の概要\nClaude CodeのMemory機能を参考に、Markdown形式のメモリファイルを基本単位とする長期記憶システムを構築。LayerXのAIニュースレター1年分（約4,500件のニュース）をエージェントに読み込ませ、約600回のセッションを経て、実際に長期運用された際の問題点を抽出しました。検索手法としてBM25、ベクトル検索、グラフ探索（relatedフィールド）などを組み合わせています。\n\n### 主な成果と課題\n- **検索性能**: 「RAGの評価設計」といった具体的な問いに対し、半年以上前の特定の記事（RAGChecker等）を正確に引用して回答することに成功しました。\n- **コンテキストの限界**: 記憶の整理・重複削除を行う「Dreaming」プロセスにおいて、数千件のメタデータだけで200kトークンのコンテキスト窓を容易に超過してしまう問題が浮上しました。\n- **グラフ構造の維持**: 記憶間の関連付け（related）は自動では約11%しか構築されず、自律的な知識グラフの成長にはプロンプトの工夫や階層構造の設計が必要であることが分かりました。\n- **運用の教訓**: LLMによるフォーマットミスを防ぐプログラム側のガードレールや、膨大な記憶に対する「忘却戦略」の重要性が強調されています。",
+    "topics": [
+      "AIエージェント",
+      "長期記憶",
+      "LLM",
+      "LayerX",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

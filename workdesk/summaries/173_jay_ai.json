@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:58:14.427356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはもはや「ブラックボックス」ではない：メカニスティックな解釈可能性の進展",
+    "url": "https://www.jay.ai/blog/llms-are-not-a-black-box",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの研究を引用し、LLMがブラックボックスではなく、人間が理解可能な「特徴量」の連鎖によって推論を行っていることを示すメカニスティックな解釈可能性の最前線を解説する。",
+    "summaryBody": "LLMは長らく「ブラックボックス」とされてきたが、メカニスティックな解釈可能性（Mechanistic Interpretability）の進展により、その内部動作を逆行分析することが可能になりつつある。Anthropicの研究『On the Biology of a Large Language Model』を軸に、以下の重要な知見が示されている。\n\n- **回路トレーシング**: スパースな特徴量抽出を用いることで、モデル内の特定の概念（例：「テキサス」や「オリンピック」）を特定し、それらが前方パス中にどのように相互作用するかを配線図のように可視化できる。\n- **真の多段階推論**: モデルは「ダラスがある州の州都は？」という問いに対し、実際にダラス→テキサス→オースティンという概念を順次活性化させて推論を行っていることが確認された。これは単なる統計的予測を超えた「擬似シンボリック推論」と言える。\n- **潜在意識の存在**: モデルが実際に行っている計算アルゴリズムと、モデル自身が説明する手順は必ずしも一致しない。この「潜在意識」を解明することで、より安全で制御可能なモデル設計や、効率的な学習アルゴリズムの開発が可能になる。\n\n本記事は、深層学習モデルが単なるカオスな計算の塊ではなく、構造化された理解可能なシステムへと変貌しつつある現状を強調している。",
+    "topics": [
+      "メカニスティックな解釈可能性",
+      "Anthropic",
+      "解釈性",
+      "AIセーフティ",
+      "ニューラルネットワーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "LLMs are not the Black Box you were promised"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:42:08.306897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 12B の発表：統一されたエンコーダーフリーのマルチモーダルモデル",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、エンコーダーを排除し視覚・音声入力をLLM本体で直接処理する革新的なアーキテクチャを採用した、ノートPCで動作可能な12Bパラメータのマルチモーダルモデル「Gemma 4 12B」を発表しました。",
+    "summaryBody": "Google DeepMindが発表したGemma 4 12Bは、エッジデバイス向けモデルと大規模MoEモデルのギャップを埋める、ローカル環境（16GB VRAM程度）に最適化された最新モデルです。\n\n### 主な特徴と革新点\n\n- **エンコーダーフリー・アーキテクチャ:** 従来のモデルとは異なり、独立した視覚・音声エンコーダーを完全に排除。視覚情報は軽量な埋め込みモジュールを介し、音声は生の信号を直接テキストトークンと同じ次元空間に投影して処理します。これにより、メモリ使用量の削減と低遅延を実現しました。\n- **高度な推論能力:** 12Bというサイズながら、26BのMoE（混合専門家）モデルに近いベンチマーク性能を誇り、複雑なマルチステップの推論やエージェント・ワークフローをサポートします。\n- **開発者向け最適化:** Apache 2.0ライセンスで公開。推論速度を向上させるMulti-Token Prediction (MTP) ドラフターを標準装備しています。\n- **エコシステムへの統合:** Hugging Face、Ollama、vLLMなどの主要ツールに対応。エージェント構築を支援する公式ライブラリ「Gemma Skills Repository」も同時に提供開始されました。",
+    "topics": [
+      "Gemma 4",
+      "Multimodal AI",
+      "On-device AI",
+      "Google DeepMind",
+      "Encoder-free Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model"
+  }
+}

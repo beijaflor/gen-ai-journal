@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:54:51.291212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Constant-Q変換（CQT）の視覚的ガイド",
+    "url": "https://brendanjameslynskey.github.io/ConstantQ-Transform/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "人間の聴覚や音楽のピッチ構造に合わせた対数的な周波数解像度を持つConstant-Q変換（CQT）の仕組みと応用を、視覚的・直感的に解説するインタラクティブガイド。",
+    "summaryBody": "### CQTの核心的直感\nConstant-Q変換（CQT）は、中心周波数とその帯域幅の比（Q値）を一定に保つ周波数解析手法です。これは人間の聴覚や音楽のピッチが対数的である（オクターブの関係など）ことに対応しています。低域では高い周波数解像度（長い解析窓）、高域では高い時間解像度（短い解析窓）を自動的に選択します。\n\n### FFTとの違い\n標準的なFFTは周波数ビンを線形（Hz単位）に配置するため、音楽的なピッチ解析には不向きです。一方、CQTは対数スケールでビンを配置するため、ピアノの各音符がスペクトログラム上で均等な幅を持ち、音楽情報の抽出が容易になります。\n\n### 幾何学的構造と計算\nCQTのカーネルは、周波数ごとに異なる長さの窓関数を使用します。計算負荷を抑えるため、FFTを利用したスペクトルカーネル法や再帰的なダウンサンプリングを用いた効率的なアルゴリズムが一般的に使用されています。\n\n### 実践的応用：クロマグラム\nCQTの出力を1オクターブの12半音に折り畳んで集計することで「クロマグラム」が得られます。これは和音認識や楽曲のキー検出において、オクターブの違いを無視した調性エネルギーの分布を可視化する強力なツールです。\n\n### 現代の活用シーン\n自動採譜、ピッチトラッキング、AIによる音源分離（Demucs等）など、音楽情報処理（MIR）における深層学習モデルの入力特徴量として、従来のメルスペクトログラム以上に重要な役割を果たしています。",
+    "topics": [
+      "Constant-Q Transform",
+      "デジタル信号処理",
+      "音楽情報処理",
+      "スペクトログラム",
+      "クロマグラム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    },
+    "originalTitle": "The Constant-Q Transform — A Visual Guide"
+  }
+}

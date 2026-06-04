@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:41:54.546146+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 12Bをラップトップに：Google AI Edgeによるローカルなエージェント・ワークフローの実現",
+    "url": "https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、120億パラメータの最新モデルGemma 4 12BをノートPCで動作させ、ローカル環境での高度なデータ分析、音声編集、および標準互換のAPIサーバー実行を可能にするアップデートを発表しました。",
+    "summaryBody": "Google DeepMindの最新オープンモデル「Gemma 4 12B」がGoogle AI Edgeスタックに統合され、一般的なノートPC上で高度なエージェント機能をローカル実行できるようになりました。主なアップデートは以下の通りです：\n\n1. **Google AI Edge Gallery (macOS)**: 自然言語指示からPythonコードを生成・実行する機能を搭載。データ分析や複雑な3Dレンダリング（trimesh等）をデバイス上で完結させます。\n2. **Google AI Edge Eloquent**: 完全オンデバイスの音声入力アプリ。新機能「Voice Edit」により、「要約して」「翻訳して」といった音声コマンドでテキストを直接編集可能です。前モデル比で品質が60%以上向上しています。\n3. **LiteRT-LMの機能拡張**: CLIに`serve`コマンドが追加され、OpenAI互換のローカルエンドポイントを即座に構築可能。これにより、AiderやContinueなどの既存ツールとGemma 4 12Bを簡単に連携できます。\n\nこれにより、プライバシーを保護しつつ、遅延やコストを抑えたエージェント指向のワークフローが個人の開発環境で実現可能になります。",
+    "topics": [
+      "Gemma 4",
+      "Google AI Edge",
+      "On-device AI",
+      "LLM",
+      "Agentic Workflows"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Bringing Gemma 4 12B to your Laptop: Unlocking Local, Agentic Workflows with Google AI Edge"
+  }
+}

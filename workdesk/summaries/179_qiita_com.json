@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:59:49.898134+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【AI × AWS】aws login 超入門 ─ AIにAWSを任せる前に知っておきたい認証の話",
+    "url": "https://qiita.com/imamu123/items/910c463ebedd15057ebf",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS CLI v2.32.0で導入されたブラウザベースの認証コマンド「aws login」の基本と、AIエージェントにAWS操作を委ねる際の認証情報の管理・注意点を解説した記事。",
+    "summaryBody": "この記事は、AWS CLIの新機能である`aws login`コマンドの使い方と、AIエージェント（Claude Code等）にCLI操作を代行させる際のセキュリティ上の留意点をまとめたガイドです。主な内容は以下の通り：\n\n1. **aws loginの基本**: ブラウザ経由でマネジメントコンソールにサインインし、最大12時間有効な一時認証情報をローカルに取得する。従来の静的なアクセスキー保存（aws configure）やSSOログイン（aws sso login）との違いを整理しています。\n2. **認証情報の優先順位の落とし穴**: `default`プロファイルに古い静的なアクセスキーが残っている場合、`aws login`を実行して成功メッセージが出ても、CLIは引き続き静的キーを優先して使用してしまいます。`aws configure list`で認証情報のTYPEが`login`になっているか確認する重要性を説いています。\n3. **AI活用のベストプラクティス**: AIに操作を任せる際は、意図しない環境（本番環境など）を操作させないよう、`--profile`の明示をプロンプトで強制すること、実行前に`aws configure list`で環境を確認させること、破壊的な操作の前に人間による確認ステップを挟むことなどを推奨しています。\n\nAIにAWS操作を任せる前に、まずは`default`プロファイルをクリーンに保つことが第一歩であると結論付けています。",
+    "topics": [
+      "AWS CLI",
+      "aws login",
+      "AIエージェント",
+      "セキュリティ",
+      "IAM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:58:26.571904+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エディタ常駐型とCLIエージェント型AIコーディングツールの使い分け",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202606/02_1044.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotに代表されるエディタ常駐型とClaude Codeに代表されるCLIエージェント型の特性を比較し、タスクの粒度や範囲に応じた最適な使い分けを提示した記事。",
+    "summaryBody": "AIコーディングツールを「エディタ常駐型の補完アシスタント」と「CLIベースのエージェント型」の2つのアプローチで比較・分析しています。GitHub Copilotのようなエディタ常駐型は、リアルタイムのインライン補完や短い関数作成に適しており、開発者の思考フローを止めない局所的な支援に強みがあります。一方、Claude CodeのようなCLIエージェント型は、プロジェクト全体の構造を把握し、複数ファイルを跨ぐ機能実装やリファクタリング、コマンド実行を伴うデバッグなどの自律的なタスク遂行に長けています。記事では、日常のコーディングはエディタ型、複雑な要件や調査はCLI型といった具体的な使い分けシナリオを提示し、これらを併用することで開発効率が最大化されると結論付けています。",
+    "topics": [
+      "AIコーディング",
+      "GitHub Copilot",
+      "Claude Code",
+      "AIエージェント",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

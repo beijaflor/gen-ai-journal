@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:58:38.537001+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "その commit、本当に安全？ コーディングエージェント時代に Git Hook で情報流出を防ぐ方法",
+    "url": "https://qiita.com/aktsmm/items/4311b133ed9a1dd0c8f4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによる自動コーディングやgit操作が普及する中、Gitのpre-commitフックを活用してGitHub Copilot CLIにセキュリティチェックを行わせ、情報の流出や脆弱なコードのコミットを未然に防ぐ仕組みを解説。",
+    "summaryBody": "AIエージェントにコード生成だけでなくgit操作まで任せる「vibe coding」時代において、誤って機密情報や脆弱性を含むコードをコミットしてしまうリスクを低減するための手法を紹介しています。本記事の核心は、Gitの`pre-commit`フックを「ローカルの関所」として利用し、ステージングされた差分（staged diff）をGitHub Copilot CLIに渡してセキュリティレビューを実行させる点にあります。具体的には、PowerShellスクリプトを用いて差分を抽出し、AIにSQLインジェクションやハードコードされたシークレット等の特定カテゴリを検証させ、問題があればコミットを停止させます。Git HookとGitHub Copilot Hooksの違いについても詳細に解説されており、人間が手動で操作する場合とエージェントが自動操作する場合の両方に有効なガードレールを構築する方法を学べます。",
+    "topics": [
+      "Git Hook",
+      "GitHub Copilot",
+      "セキュリティ",
+      "AIエージェント",
+      "GitHub Copilot CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

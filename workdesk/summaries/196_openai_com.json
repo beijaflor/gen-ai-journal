@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:04:18.562049+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "信頼できる第三者評価のための共通プレイブック",
+    "url": "https://openai.com/ja-JP/index/trustworthy-third-party-evaluations-foundations/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIは、フロンティアAIモデルの安全性と能力を独立して評価する際の精度を高めるため、評価環境（ハーネス）の設計と妥当性確認の標準化を提言した。",
+    "summaryBody": "OpenAIが公開した本記事は、高度なAIモデルを評価する際、モデル単体ではなく実行環境を含む「ハーネス」の設定が結果に決定的な影響を与えることを指摘しています。評価は、能力の引き出し、安全対策の堅牢性、統制比較の3つの目的に基づいて設計されるべきであり、特に複数ステップのタスクをこなすエージェント型システムでは、トークン予算やツールの利用設定が評価結果を左右します。また、評価を歪める要因として、報酬ハッキング、汚染、サンドバギング（意図的な低性能）、拒否などの「ハザード」を特定し、これらを検証するための証拠を報告書に含めるべきだと主張しています。具体例として、GPT-5.5を用いたサイバー・レンジ評価や、METR・Apollo等の第三者機関による評価結果の修正プロセスを引き合いに出し、将来的な国際標準規格の策定に向けた詳細な報告要件を提案しています。",
+    "topics": [
+      "AI安全性",
+      "第三者評価",
+      "フロンティアモデル",
+      "評価ハーネス",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:05:12.368721+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIトークンの9割はゴミだった",
+    "url": "https://joho-todai.com/ai-tokens-ninety-percent-garbage/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Netflixのエンジニアが、LLMへの入力に含まれる冗長なメタデータを最大90%削減し、コストと精度を劇的に改善するオープンソースの可逆圧縮ツール「Project Headroom」を開発。",
+    "summaryBody": "Netflixのシニアエンジニア、テジャス・チョプラ氏が開発した「Project Headroom」は、LLMに送信されるコンテキストの肥大化とコスト増大を解決するオープンソースプロジェクトです。同氏はLLMトークンの大部分が人間による文章ではなく、機械が生成した冗長なJSONスキーマやAPIレスポンス、ボイラープレート（圧縮可能なデータ）であると指摘しています。\n\nこのツールはローカルプロキシとして動作し、以下の仕組みで動作します：\n1. **多段階の圧縮**: CacheAlignerによる差分送信や、AST・JSON・DOMに特化したコンプレッサー、統計分析ベースの「スカッシャー」を用いて入力を削減します。\n2. **可逆圧縮の実現**: 重要な情報を残しつつ削減した箇所にマーカーを打ち、LLMが必要とした場合のみMCPサーバーを通じてローカルのRedis/SQLiteから原文を復元します。これにより「要約」とは異なる情報欠損のない圧縮を実現しました。\n3. **精度の向上**: 入力が短くなることで、LLMがコンテキストの中間部分を無視する「コンテキスト腐敗」を防ぎ、回答の質も向上させます。\n\n2026年1月の公開後、既に推計1億1100万円以上のコスト削減実績を上げており、AIエージェントの普及に伴う「トークン消費爆発」への現実的な対抗策として期待されています。",
+    "topics": [
+      "Project Headroom",
+      "LLMコスト最適化",
+      "トークン圧縮",
+      "MCP (Model Context Protocol)",
+      "エージェント型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

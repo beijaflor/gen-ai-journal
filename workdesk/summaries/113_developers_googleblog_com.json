@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:41:39.884121+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 12B 開発者ガイド：エンコーダーフリーなマルチモーダル・ローカルAIの新機軸",
+    "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが発表したGemma 4 12Bは、独立したエンコーダーを排除しLLMに直接入力を接続する革新的な統合アーキテクチャにより、16GB VRAMのローカル環境で高速な音声・画像処理を実現します。",
+    "summaryBody": "Googleは、エンコーダーフリーの統合アーキテクチャを採用した「Gemma 4 12B」をリリースしました。従来のマルチモーダルモデルが別個のビジョン・オーディオエンコーダーを必要としていたのに対し、本モデルは生の画像パッチや音声フレームを直接LLMバックボーンの隠れ次元へ投影する構造を採用し、レイテンシとメモリ使用量を劇的に削減しています。この12Bモデルは、16GBのVRAMを搭載したノートPC等でローカル実行が可能であり、macOS向けのネイティブデスクトップアプリやLiteRT-LMによるOpenAI互換APIサーバーも提供されます。これにより、プライバシーを維持したまま高度な音声認識、ビデオ理解、自律型エージェントの開発をローカル環境で完結できるようになります。",
+    "topics": [
+      "Gemma 4",
+      "Multimodal LLM",
+      "On-device AI",
+      "Encoder-free Architecture",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "Gemma 4 12B: The Developer Guide"
+  }
+}

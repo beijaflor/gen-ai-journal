@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:47:28.990410+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zennの記事一覧からAI関連の記事をAIの力によって滅ぼし、そして私も消えよう",
+    "url": "https://zenn.dev/sora_kumo/articles/zenn-ai-filter",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Chrome 138以降のBuilt-in AI (Gemini Nano) を活用し、Zennの記事一覧からAI関連記事をローカルで判定・非表示にするChrome拡張機能の開発記録。",
+    "summaryBody": "ChromeのBuilt-in AI（Prompt APIおよびSummarizer API）を利用して、Zenn上のAI関連記事をフィルタリングするChrome拡張機能の実装解説です。外部APIを使わずクライアントサイドで完結する仕組みや、要約・判定のフォールバック処理、複数記事のバッチ判定による高速化、正規表現を用いたJSONパースの堅牢化について詳述されています。また、記事を非表示にした際のCSS Gridのレイアウト崩れを防ぐため、要素の累積高さを計算して左右カラムに再配置する「バランスレイアウト」の実装など、実用性を高めるためのフロントエンド・ハックも紹介されています。ローカルLLM特有の出力のゆらぎや性能限界を、泥臭い工夫で克服するアプローチが特徴です。",
+    "topics": [
+      "Chrome拡張機能",
+      "Built-in AI",
+      "Gemini Nano",
+      "JavaScript",
+      "フロントエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

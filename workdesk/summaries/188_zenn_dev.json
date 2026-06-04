@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:02:16.391417+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1年間の育休に備えて「勝手に賢くなる」AI情報収集基盤を作った",
+    "url": "https://zenn.dev/tokium_dev/articles/20260427_ai_tech_researcher",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "1年間の育休期間中に技術トレンドから取り残されないよう、Claude Codeを活用して情報ソースが自動で進化するAI情報収集・レポート生成基盤を構築した事例。",
+    "summaryBody": "TOKIUMのエンジニアが、1年間の育休中に生成AIの技術トレンドから取り残されないために構築した、自律的な情報収集基盤の解説記事です。\n\n### システムの主な特徴\n- **自動進化する情報ソース**: SQLiteで管理されたキーワードやソースが、収集した情報の「レポートへの採用実績」に基づいて自動的に昇格・降格する仕組み（候補発見→昇格→降格）を備えています。\n- **多角的な収集軸**: 単なるキーワード検索だけでなく、特定のWebサイト、Slackチャンネル、特定ユーザーの投稿という4つの軸で情報を収集し、キーワードでは拾えない文脈（スライド共有など）もカバーします。\n- **Claude Codeによる自律実行**: Markdown形式の指示書（Skill）をClaude Codeに読み込ませることで、DB操作、Web検索、要約、PDF生成までをLLMが自律的に実行します。\n- **堅牢なパイプライン**: シェルスクリプトによるオーケストレーションにより、並列実行や部分的な失敗の許容、冪等性の確保がなされており、長期間の「放置」に耐える設計となっています。\n\n運用3週間で、新しいAIフレームワーク「Mastra」を自動検知して検索対象に昇格させるなど、人間の介入なしに鮮度の高い情報を届け続ける仕組みが実現されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "LLM",
+      "情報収集"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}
