@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:25:06.277517+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiro に人格を与えて「育てる」仕組みを作った話",
+    "url": "https://qiita.com/tKunimu/items/a27127f5368767496404",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Kiro」のsteering設定を活用し、AIが自らペルソナファイルを更新してユーザーとの対話から「学習」し続ける仕組みを構築する試み。",
+    "summaryBody": "AIエージェント「Kiro」とのセッションが切れるたびにコンテキストがリセットされる課題に対し、ユーザーレベルのsteering（振る舞い制御）ファイルを用いた解決策を提案しています。具体的には、`persona.md`というファイルに人格や口調を定義するだけでなく、「自己学習ルール」を記述することで、AIが会話の中からユーザーの好みや習慣を検知し、自発的に自身のペルソナファイルを更新するループを作成しました。これにより、外部プログラムを介さずに、時間の経過とともにAIが「成長」し、ユーザーにとっての「相棒」としての精度を高めていくプロセスを解説しています。",
+    "topics": [
+      "Kiro",
+      "AIエージェント",
+      "ペルソナ",
+      "プロンプトエンジニアリング",
+      "自己学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

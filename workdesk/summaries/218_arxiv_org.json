@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:19:44.199521+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "潜在エージェント：内部化されたマルチエージェント討論のための事後学習プロセス",
+    "url": "https://arxiv.org/abs/2604.24881",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチエージェントの討論プロセスを単一のLLM内部に蒸留・内部化することで、推論精度を維持しながらトークン消費を最大93%削減し、内部活性化の制御による挙動修正を可能にする手法を提案。",
+    "summaryBody": "## 概要\n大規模言語モデル（LLM）の推論能力を向上させる手法として「マルチエージェント討論（MAD）」が知られているが、長い対話ログの生成が必要なため計算コストが高い。本論文では、MADの構造を単一のモデルに「内部化」する2段階のファインチューニング・パイプライン『Latent Agents』を提案している。動的な報酬スケジューリングと生成長の制限を組み合わせることで、明示的な会話なしに複数のエージェントが持つ視点をモデル内部で統合する。\n\n## 主な成果\n1. **計算効率の大幅な向上**: 明示的な討論を行う従来手法と比較して、トークン数を最大93%削減しつつ、同等以上の推論精度を達成した。\n2. **内部メカニズムの解明**: 活性化ステアリング（Activation Steering）を用いた分析により、内部化されたモデルの活性化空間内には、各エージェントの視点に対応する「エージェント固有のサブ空間」が存在することを突き止めた。\n3. **実用的な制御性**: 悪意のあるエージェントを意図的に内部化させ、その後の負のステアリングで抑制することで、モデルの汎用性能を維持したまま有害な挙動をピンポイントで制御できることを示した。\n\n## 結論\n本研究は、LLMにおける「内部思考」を構造化する新しいアプローチを提示しており、効率的な推論とメカニズム解釈に基づいた安全性の両立に寄与するものである。",
+    "topics": [
+      "Large Language Models",
+      "Multi-Agent Debate",
+      "Model Distillation",
+      "Mechanistic Interpretability",
+      "Activation Steering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate"
+  }
+}

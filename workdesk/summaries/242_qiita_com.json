@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:25:19.155250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに絶対に任せてはいけないことと、私がプロジェクトで使っているAGENTS.mdのルール",
+    "url": "https://qiita.com/TOMOSIA-HieuNT/items/411d47f0d03b2fc7d20b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの誤操作による損害を防ぎ、安全に開発を自動化するための「AGENTS.md」によるルール定義と2エージェント体制の実践手法を解説したガイド。",
+    "summaryBody": "AIエージェントに自律的なタスクを任せる際のリスク管理と、具体的な運用ルールを提案する記事です。著者の失敗談（不要なファイルと一緒に必要な設定ファイルを削除された経験）に基づき、エージェントに任せてはいけない「破壊的な操作」を定義しています。具体的には、データベースの書き込み・削除、本番環境へのデプロイ、認証・セキュリティロジックの変更、シークレット情報の操作などが挙げられます。これらのリスクを回避するために、リポジトリ内に「AGENTS.md」と「blocked_commands.md」を配置し、プロジェクトの背景や実行禁止コマンドをエージェントに事前提示する手法を紹介。さらに、実装担当とレビュー担当の2つのエージェントを使い分ける「Two-Agent Loop」や、作業完了時にリスクや変更点をまとめさせる「Final Report」の重要性を説いており、AIエージェントを「道具」から「安全なチームメンバー」へと昇華させるための実践的なフレームワークとなっています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "開発プロセス",
+      "リスク管理",
+      "AGENTS.md"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

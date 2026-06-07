@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:19:30.083617+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicが公開したAIによる自律型脆弱性診断・修正フレームワーク「Defending Code Reference Harness」",
+    "url": "https://github.com/anthropics/defending-code-reference-harness",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claudeを活用して脅威モデリングから脆弱性スキャン、トリアージ、修正パッチ作成までを自律的に実行する、セキュリティエンジニア向けのリファレンス実装。",
+    "summaryBody": "Anthropicが公開した本プロジェクトは、LLM「Claude」を用いてソフトウェアの脆弱性発見から修正までを自動化するための包括的なリファレンス実装です。単なる静的解析ではなく、偵察・発見・検証（ASAN等を用いた実行検証）・重複排除・レポート・パッチ生成という一連のサイクルを自律的に実行します。特徴として、対話型CLIツール「Claude Code」に統合可能なカスタムスキル（/threat-model, /vuln-scan等）が含まれており、gVisorによるサンドボックス環境で安全に動作するよう設計されています。デフォルトではC/C++のメモリ脆弱性を対象としていますが、カスタマイズにより他言語や異なる脆弱性クラスへの適用も可能です。AIをセキュリティ運用に組み込むための実戦的なガイドラインとツールセットを提供しています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "脆弱性診断",
+      "DevSecOps",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - anthropics/defending-code-reference-harness: Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:20:27.318484+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Dr. GRPOの高速化：カスタムカーネル実装とシステム統合における予期せぬ落とし穴",
+    "url": "https://kyrieblunders.bearblog.dev/making-dr-grpo-go-brrr/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Dr. GRPOを用いた小規模LLMのRL学習を対象に、カスタムAttentionカーネルがマイクロベンチマークで2.2倍高速化しながらも、システム全体のグラフ最適化を破壊し実効速度を3倍低下させた要因を詳細に分析。",
+    "summaryBody": "この記事は、Qwen2.5-0.5B-Instructを用いたGSM8KタスクでのDr. GRPO（DeepSeekのGRPOの改良版）実装と、そのボトルネック解消への挑戦を記録した技術ブログです。著者は、RL学習の実行時間の約90%がロールアウト（テキスト生成）フェーズに費やされていることを特定し、最適化を進めました。\n\nまず、ベースラインのクリーンアップとして「StaticCache」と「torch.compile」を導入し、生成フェーズで4.8倍の高速化を達成しました。次に、更なる改善を目指し、RoPE、KVキャッシュの書き出し、およびAttentionを1つに統合したカスタムカーネルをCuteDSLで開発しました。このカーネルは単体テストで既存のSDPA（Scaled Dot Product Attention）実装を2.2倍上回る性能を示しました。\n\nしかし、このカーネルをHuggingFaceの`generate`ループに統合したところ、生成速度が3倍遅くなるという結果を招きました。原因は、カスタムカーネルが「torch.compile」の計算グラフを分割してしまったことにあります。これにより、本来グラフ内に隠蔽されていた大量のPython側のカーネル起動オーバーヘッドと、EOS判定のためのCPU-GPU同期コスト（`is_nonzero`等）が表面化し、高速化したはずのAttentionの利得を完全に打ち消してしまいました。最終的に、マイクロベンチマークの数値がシステム全体のパフォーマンスを保証しないこと、および現代のLLM最適化では「グラフキャプチャ」を維持することの重要性を強調しています。",
+    "topics": [
+      "Dr. GRPO",
+      "LLM RL Post-training",
+      "CUDA Kernel Development",
+      "torch.compile",
+      "CuteDSL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Making Dr GRPO go brrr"
+  }
+}

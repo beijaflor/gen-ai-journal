@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:30:48.191464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codex の全社展開とAI観測基盤の設計",
+    "url": "https://docswell.com/s/rakutek/59NR49-2026-06-04-194729",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "クラシル株式会社が、MDMを活用した設定配布とOpenTelemetryにより、Claude CodeやCodex CLIの利用実態を全社横断で可視化した観測基盤の事例。",
+    "summaryBody": "クラシル株式会社における、AI開発ツール（Claude Code, Codex CLI）の全社展開と、その利用実態を定量的に把握するための観測基盤構築に関する解説資料です。\n\n主な内容は以下の通り：\n\n1. **課題と背景**: 2025年までに全社員へClaudeやCursor等を導入したが、数百人規模では誰がどのように活用しているか見えない課題があった。\n2. **技術的アプローチ**: OpenTelemetry (OTel) を採用。Claude CodeやCodex CLIがネイティブでOTelに対応している点を活かし、ベンダー中立なプロトコルでログを収集。\n3. **MDMによる強制適用**: 組織レベルの設定ファイル（managed-settings.json / managed_config.toml）をJamf等のMDMで全社配布することで、個人契約を含む全ユーザーのログ収集をユーザー操作なしで実現した。\n4. **可視化と成果**: 収集データはGrafana Cloudで統合。コスト、トークン使用量、ツール実行ログなどをダッシュボード化。今後はGitHubやNotionのAPIと連携し、AI利用と開発アウトプット（KPI）の相関を分析する構想を掲げている。",
+    "topics": [
+      "OpenTelemetry",
+      "Claude Code",
+      "Codex",
+      "Grafana",
+      "MDM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

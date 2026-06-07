@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:23:42.000366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-browser 入門 ~ AIエージェントのためのブラウザ自動化CLI ~",
+    "url": "https://qiita.com/t-yonefu/items/c90cee56dfd5f2e06833",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Vercel LabsによるRust製CLI「agent-browser」を用い、AIエージェントがウェブページを効率的に操作・検証するための仕組みと、Playwrightとの使い分けを解説したガイド。",
+    "summaryBody": "本記事では、CursorやClaude CodeなどのAIエージェントがブラウザを操作するために設計されたツール「agent-browser」を紹介しています。Rust製のCLIと常駐デーモンで構成され、HTMLを直接扱うのではなく、アクセシビリティツリーを要約したスナップショットと参照番号（@e1など）を用いてエージェントに提示するのが特徴です。これによりトークン消費を抑えつつ、確実な要素操作を可能にします。Playwright等の既存ツールとの比較では、Playwrightが固定的なテスト資産の構築に向くのに対し、agent-browserはアジャイルな対話型開発における「その場の動作確認」に適していると解説されています。また、ログイン情報の暗号化保持（Auth Vault）やAIエージェントへの指示（Rules）の同期方法など、実践的な運用についても触れています。",
+    "topics": [
+      "agent-browser",
+      "AIエージェント",
+      "ブラウザ自動化",
+      "Rust",
+      "Playwright"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

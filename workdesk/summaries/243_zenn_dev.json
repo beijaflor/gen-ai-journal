@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:25:32.652421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 4080でローカルLLM 7モデルを実測したら「16GB VRAMの壁」が見えた",
+    "url": "https://zenn.dev/seeda_yuto/articles/ollama-vs-vllm-rtx4080-benchmark",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 4080 (16GB VRAM) 環境でのローカルLLM実測を通じ、15GBを超えるモデルで発生する致命的な速度低下と、速度・品質のバランスで「gpt-oss:20b」が最適解であることを解説した検証記事です。",
+    "summaryBody": "RTX 4080 (16GB VRAM) を使用し、OllamaとvLLMのバックエンド比較、および12種類のLLMモデルの推論性能（tok/s）と品質を実測した結果をまとめています。最大の知見は「16GBの壁」であり、GGUFのサイズが約15GBを超えるとCPUオフロードにより生成速度が1/10以下（125 tok/sから1 tok/s未満）に激減する現象が確認されました。バックエンド比較では、単一ユーザー環境ではOllamaの方が圧倒的に高速であり、特に`OLLAMA_KEEP_ALIVE=-1`によるモデル常駐がレイテンシ改善に寄与します。モデル別では、DeepSeek-Coder-V2が最速の234 tok/sを記録したものの推論パズルで誤答。対して`gpt-oss:20b`は125 tok/sの高速性と高いコード・推論品質を両立しており、16GB環境における現時点の「最適解」として推奨されています。また、パラメータ数ではなく実際のVRAM専有量に基づくモデル選定の重要性が強調されています。",
+    "topics": [
+      "LLM",
+      "GPU",
+      "Ollama",
+      "Benchmark",
+      "RTX 4080"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

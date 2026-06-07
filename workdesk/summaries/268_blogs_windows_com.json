@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:31:38.472889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのためのWindowsプラットフォームセキュリティの進化：MXC SDKの導入",
+    "url": "https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Microsoftは、AIエージェントがOS上で自律的に動作する際の安全性を確保するため、ポリシー駆動型の隔離レイヤー「Microsoft Execution Containers (MXC) SDK」を発表しました。",
+    "summaryBody": "AIエージェントがシステムの操作やファイル編集を自律的に行うようになる中、MicrosoftはWindows OS自体にエージェント向けのセキュリティ基盤を統合することを発表しました。その中心となるのが「Microsoft Execution Containers (MXC) SDK」です。これは開発者がエージェントの動作範囲をポリシーで定義し、Windowsが実行時にそれを強制する仕組みです。具体的には、GitHub Copilot CLIなどで採用されている軽量な「プロセス隔離」や、ユーザーのデスクトップ環境から完全に分離された「セッション隔離」が提供されます。さらに、ハードウェア支援による「Micro-VM」やLinuxコンテナへの対応もロードマップに含まれています。これにより、IT管理者はEntraやIntuneを通じてエージェントの権限をガバナンス下に置くことが可能になり、企業環境での安全なAI活用を促進します。NVIDIA、OpenAI、GitHubなどの主要パートナーとも連携し、エコシステム全体でのセキュリティ向上を図っています。",
+    "topics": [
+      "AIエージェント",
+      "Windows Security",
+      "MXC SDK",
+      "サンドボックス",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Windows platform security for AI agents - Windows Developer Blog"
+  }
+}

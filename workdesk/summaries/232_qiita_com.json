@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:23:04.504952+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FlutterでLFM2.5-1.2B-Thinkingを動かしてみる",
+    "url": "https://qiita.com/y_abe_bc/items/6f212a142f6199a0ce83",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Liquid AIの軽量LLM「LFM2.5-1.2B-Thinking」を、Leap SDKを用いてFlutterアプリ上でオンデバイス動作させる実装手順の解説。",
+    "summaryBody": "Liquid AIが発表したモデルサイズ1GB未満の軽量モデル「LFM2.5-1.2B-Thinking」を、Flutterアプリで実行する方法を解説しています。Liquid AI専用のLeap SDKを使用することで、モデルのダウンロード、キャッシング、推論（ストリーミング応答）をすべてサーバーレスで実現できます。記事では具体的な`liquid_ai_leap`パッケージの導入方法から、Hugging Faceからのモデル取得、システムプロンプトの設定、`Stream`を用いたチャットUIの実装コードを公開。Pixel 7aでの実行結果として、約13.76 tokens/secondという具体的なパフォーマンス数値も提示されており、オンデバイスLLMのモバイルアプリ活用における実用性と課題（実行速度の端末依存性など）がまとめられています。",
+    "topics": [
+      "Flutter",
+      "Liquid AI",
+      "On-device AI",
+      "Leap SDK",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

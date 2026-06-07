@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:19:58.625646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Open Code Review (OCR): アリババの大規模環境で実証されたハイブリッド型AIコードレビューツール",
+    "url": "https://github.com/alibaba/open-code-review",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "アリババの数万人規模の環境で磨かれた、決定論的ロジックとLLMエージェントを融合させ、高精度な行単位の指摘を実現するオープンソースのAIコードレビューCLIツール。",
+    "summaryBody": "Open Code Review (OCR)は、Alibaba Group内で数万人の開発者に利用され、数百万件の欠陥を特定してきた実績を持つAIコードレビューツールです。汎用的なAIエージェントが抱える「指摘箇所の行ズレ」「大規模変更における一部ファイルの無視」「品質の不安定さ」といった課題を、決定論的なエンジニアリングとLLMのハイブリッド構成で解決しています。具体的には、ファイルの選択やグルーピング、ルールマッチングは確定的なロジックで行い、LLMはツール利用が可能なエージェントとして文脈把握や動的な判断を担います。OpenAIやAnthropicのAPIに対応し、CI/CD統合やClaude Codeのプラグインとしても動作します。",
+    "topics": [
+      "AIコードレビュー",
+      "LLMエージェント",
+      "Alibaba",
+      "静的解析",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - alibaba/open-code-review: Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:26:21.483498+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PR 前後で AI レビューを2段構えにしたら、レビュー待ちが約70%減った話",
+    "url": "https://zenn.dev/estie/articles/4f06bde08a90d4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとCodeRabbitをPR前後に配置する2段構えのAIレビュー体制により、人間によるレビューのボトルネックを解消し待ち時間を約70%削減した実践事例。",
+    "summaryBody": "株式会社estieにおけるAI Agent活用の進展に伴い、実装速度の向上に対してレビューが追いつかなくなる課題が発生しました。これを解決するため、PR作成前にローカルで実行する「Claude Code」と、GitHub上で自動実行される「CodeRabbit」を組み合わせた2段構えのレビューフローを構築。Claude Codeには「影響分析」と「仕様整合」、CodeRabbitには「コード品質」と役割を分担させ、独自の依存関係定義ファイルやレビュー規約をツール間で共有することで、機械的に指摘できる問題を人間に届く前に処理する体制を実現しました。結果として、レビュー待ち時間は14.1時間から4.3時間へと劇的に改善し、デプロイ頻度も約2.8倍に向上。AIを単なる自動化ツールではなく「人間が設計判断に集中するための判断材料」として定義したことが成功の要因となっています。",
+    "topics": [
+      "AIレビュー",
+      "Claude Code",
+      "CodeRabbit",
+      "開発プロセス改善",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

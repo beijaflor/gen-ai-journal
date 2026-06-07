@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:22:51.929266+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AgentCoreランタイムのインバウンド認証の使い分け：IAM認証 vs JWT認証",
+    "url": "https://qiita.com/har1101/items/594461462b452945c443",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS BedrockのAgentCoreランタイムにおける2種類のインバウンド認証について、構成パターンに応じた選定基準を解説するガイド。",
+    "summaryBody": "Amazon BedrockのAgentCoreランタイムで利用可能な「IAM認証」と「JWT認証」の使い分けについて解説した記事です。基本的な指針として、Lambdaなどのバックエンドコンピュートから呼び出す場合は「IAM認証」、Amplifyや外部プロバイダー（Cognito等）経由でフロントエンドから直接呼び出す場合やイベント駆動の場合は「JWT認証」を選択することを推奨しています。記事内では、リソースベースポリシーによる権限管理、API Gatewayとの組み合わせ、MCPサーバーとしてのホスティング例など、具体的なアーキテクチャパターンが紹介されています。",
+    "topics": [
+      "AWS",
+      "Amazon Bedrock",
+      "AgentCore",
+      "認証",
+      "サーバーレス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 85
+    }
+  }
+}

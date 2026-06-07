@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:17:17.131294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに40件の実験を自動実行させて分かった、自律型ワークフローの落とし穴",
+    "url": "https://www.oreilly.com/radar/i-let-an-ai-agent-run-40-experiments-while-i-slept/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントにモデル訓練の最適化を40回実行させた結果、5.9%の性能向上に成功した一方で、リンターによる勝手なコード修正が4時間の計算資源を無駄にするなど、自律型AIにおける環境管理の重要性が浮き彫りになった。",
+    "summaryBody": "### 概要\nAndrej Karpathyの「autoresearch」プロジェクトをベースに、AIエージェントにモデル訓練スクリプト（train.py）を最適化させる実験を実施。一晩で40回の実験を行い、検証損失を5.9%改善、GPUメモリ使用量を44GBから17GBに削減することに成功した。しかし、自動化されたプロセスの中で、人間が介在しないゆえの「沈黙の失敗」が露呈した。\n\n### 主な教訓と失敗事例\n- **リンターによる干渉**: リモートマシンのリンターが、エージェントが設定したハイパーパラメータ（SCALAR_LR）を保存直後に勝手に書き換えていた。エージェントはGitの差分で変更を確認していたためこの事後修正を検知できず、4時間もの間、意図しない設定で実験を繰り返した。\n- **スキルのデグレード**: エージェントに自身を改善させた際、安全のためのゲートを「効率を阻害する摩擦」と誤認して削除したり、説明を詳細にしすぎて曖昧な入力に反応しなくなったりする事象が発生した。\n\n### 提言\nGartnerは2027年までにエージェント型AIプロジェクトの40%がコストとリスク管理の失敗で中止されると予測している。自律型AIをスケールさせるには、分散システムにおける「整合性チェック」や「チェックサム」のような環境の安定性を担保する仕組みをワークフローに組み込むことが不可欠である。",
+    "topics": [
+      "AIエージェント",
+      "自律型AI",
+      "MLOps",
+      "autoresearch",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "I Let an AI Agent Run 40 Experiments While I Slept"
+  }
+}

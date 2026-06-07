@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:18:16.131749+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "KVarN: 3-5倍のコンテキストとFP16級の精度を実現するvLLM向けKVキャッシュ量子化バックエンド",
+    "url": "https://github.com/huawei-csl/KVarN",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Huawei CSLが開発したKVarNは、分散正規化技術により精度と速度を損なわずにKVキャッシュ容量を3〜5倍に拡張できる、vLLMネイティブな量子化バックエンドです。",
+    "summaryBody": "KVarN（Variance Normalized KV-Cache）は、大規模言語モデル（LLM）の推論効率を劇的に向上させるためのvLLM用量子化実装です。従来のKVキャッシュ量子化（TurboQuant等）は、メモリ容量を稼げる一方でスループットが40〜50%低下し、精度も悪化するという課題がありました。KVarNは、アダマール回転による外れ値の分散と、Sinkhorn法に似た反復的な分散正規化（Variance Normalization）を組み合わせることで、FP16と同等の精度を維持しつつ、FP16以上のスループット（最大1.3倍）と3〜5倍のキャッシュ容量を実現します。特に4ビットのキーと2ビットの値（k4v2）の構成において、Qwen3-32Bなどのモデルで高い推論性能が実証されています。vLLMのフォークとして提供されており、フラグを1つ追加するだけでキャリブレーションなしに利用可能です。",
+    "topics": [
+      "LLM Inference",
+      "KV Cache",
+      "Quantization",
+      "vLLM",
+      "Long Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - huawei-csl/KVarN: KVarN is a native vLLM KV-cache quantization backend for your agents: 3-5x more context, throughput above FP16, and FP16-level accuracy. Calibration-free, one flag. · GitHub"
+  }
+}
