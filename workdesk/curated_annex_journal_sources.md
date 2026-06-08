@@ -35,7 +35,7 @@ Signals legend:
 - [x] 213. https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/
   <!-- GoogleのCEOが「コードの75%はAI生成」と公言する一方、現場エンジニアが性能の低さに不満を漏らす内部状況。Signals: added、トップと現場の認識ギャップ -->
 
-- [x] 214. https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/
+- [x] 214. https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/darren-oconnor-timnit-gebru-was-fired-from
   <!-- Timnit Gebru解雇原因論文（Stochastic Parrots）が指摘したリスクが現実化したという歴史的再評価。Signals: added、歴史的視座は独自 -->
 
 - [x] 224. https://alexispurslane.github.io/rsync-analysis/
@@ -44,7 +44,7 @@ Signals legend:
 - [x] 265. https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/
   <!-- テッド・チャンによるLLMは流暢な統計マシンに過ぎず意識や道徳的主体性ではないとする論考。Signals: supabase、哲学的角度 -->
 
-- [x] 273. https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/
+- [x] 273. https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html
   <!-- UCバークレーの落第率急増の背景にAI過依存と数学基礎体力低下があるという報道。Signals: supabase、教育現場からの一次データ -->
 
 ## B. エンジニア役割・組織値の再定義
@@ -69,13 +69,13 @@ Signals legend:
 - [x] 144. https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb
   <!-- AIツールCodexがHPACK圧縮とフロー制御を組合せた深刻なDoS攻撃手法（HTTP/2 bomb）を発見。Signals: supabase、AIによる脆弱性発見 -->
 
-- [x] 080. https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-first-nation-state-led-lawsuit-against-openai-ceo/
+- [x] 080. https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-first-nation-state-led-lawsuit-against-openai-ceo
   <!-- フロリダ州司法長官による全米初の州主導OpenAI/Altman提訴。Signals: supabase、T3とは異なる司法レベルの規制動向 -->
 
 - [x] 143. https://leidendeclaration.ai/
   <!-- 数学的証明の信頼性・著者の権利・人間の理解を守るためのAI利用に関する国際的宣言。Signals: supabase、学界からの宣言 -->
 
-- [x] 254. https://blog.adobe.com/jp/publish/2026/06/04/corp-the-creator-act-protection-artists-need-age-of-ai/
+- [x] 254. https://blog.adobe.com/jp/publish/2026/06/04/corp-the-creator-act-protection-artists-need-age-of-ai
   <!-- アーティストの「作風」をAI模倣から守る米超党派法案CREATOR法とAdobeの支持表明。Signals: supabase -->
 
 - [x] 055. https://theconversation.com/a-key-science-publishing-platform-is-cracking-down-on-ai-slop-283136
