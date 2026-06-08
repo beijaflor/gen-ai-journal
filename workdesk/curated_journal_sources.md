@@ -1,13 +1,14 @@
 # Curated Main Journal Sources - 2026-06-06
 
-<!-- Theme-organized per approved editorial_plan_2026_06_06.md (STEP_03b) -->
+<!-- Theme-organized per approved editorial_plan_2026_06_06.md (STEP_03b round 2) -->
 <!-- 8 themes / 25 articles total. -->
 
-## Theme 1: Anthropic 650億ドル調達・S-1機密提出・OpenAI評価額逆転が示すエージェンティックAI事業の収益化
+## Theme 1: Anthropic 650億ドル調達・S-1機密提出・日立29万人Claude展開が示すエージェンティックAI事業の収益化と日本浸透
 
 - [ ] 003. https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup
+- [ ] 062. https://www.itmedia.co.jp/enterprise/articles/2605/30/news010.html
 - [ ] 077. https://www.anthropic.com/news/confidential-draft-s1-sec
-- [ ] 099. https://www.watch.impress.co.jp/docs/series/nishida/2113178.html
+- [ ] 103. https://about.mercari.com/press/news/articles/20260601_chrocaio/
 
 ## Theme 2: Uber月額1,500ドル制限・Dropbox Nova・AIバブル警告で見えるAIコスト現実と下流ボトルネック
 
@@ -33,21 +34,20 @@
 - [ ] 177. https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d
 - [ ] 270. https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills
 
-## Theme 6: 「Vibe Codingはエンジニアリングではない」・「AI Job Grief」・倫理的孤立論考が問うAI時代の認知と心理コスト
-
-- [ ] 004. https://phroneses.com/articles/build/notes/vibe-coding-is-not-engineering.html
-- [ ] 005. https://jackmaguire.org/blog/ai-job-grief/
-- [ ] 006. https://musings.martyn.berlin/to-have-a-moral-stance-on-ai-is-to-be-an-outcast-and-it-sucks
-
-## Theme 7: 日立29万人Claude展開・Mercari CHRO/CAIO新設・Japan AI Indexが進める日本企業のAIネイティブ組織化
-
-- [ ] 062. https://www.itmedia.co.jp/enterprise/articles/2605/30/news010.html
-- [ ] 103. https://about.mercari.com/press/news/articles/20260601_chrocaio/
-- [ ] 258. https://www.itmedia.co.jp/aiplus/article/2606/04/2000000058/
-- [ ] 262. https://tech.smarthr.jp/entry/2026/06/04/094730
-
-## Theme 8: Gemma 4「エンコーダー廃止」アーキテクチャ・QAT軽量化・Mac Studio Aiderベンチが拓くローカルLLMの実用ライン
+## Theme 6: Gemma 4「エンコーダー廃止」アーキテクチャ・QAT軽量化・Mac Studio Aiderベンチが拓くローカルLLMの実用ライン
 
 - [ ] 034. https://zenn.dev/keitayamamoto/articles/4380d3f64c8bf1
 - [ ] 115. https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/
 - [ ] 225. https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/
+
+## Theme 7: Anthropic Institute「再帰的自己改善」報告・Sakana AI東京RSIラボ・40回チューニング実験が形にするRSI現在地
+
+- [ ] 207. https://www.oreilly.com/radar/i-let-an-ai-agent-run-40-experiments-while-i-slept/
+- [ ] 215. https://www.anthropic.com/institute/recursive-self-improvement
+- [ ] 226. https://sakana.ai/rsi-lab/
+
+## Theme 8: FDE変質・「プロダクトエンジニア」・Ashby 5 core valuesが映すエンジニア職能の判断・設計への再定義
+
+- [ ] 057. https://comemo.nikkei.com/n/n8fcec9d3d10f
+- [ ] 102. https://www.itmedia.co.jp/aiplus/article/2606/01/2000000039/
+- [ ] 216. https://www.ashbyhq.com/blog/engineering/ai-ashby-engineering-and-the-future
