@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:44:33.922813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "E2Eテストを民主化したら、朝には失敗の分析も再実行も修正PRも終わっていた",
+    "url": "https://zenn.dev/lincwell_inc/articles/e8e288ee35f5b4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "PlaywrightによるE2Eテスト運用を各開発チームへ分散（民主化）する際、AI（Claude）を用いて失敗原因の分析から再実行、修正PRの作成までを自動化した事例の紹介。",
+    "summaryBody": "Linc'well社におけるE2Eテスト（Playwright）運用の改善事例です。当初、QAチームが中央集権的に管理していたテストを各開発チームに移譲する「民主化」を行いましたが、運用負荷の増大が課題となりました。この解決策として、Claudeを活用した自動化フローを構築。AIがGitHub ActionsのログとSlack通知を解析し、失敗原因を「環境起因（Flaky）」「仕様変更」「バグ」に分類します。AIは判定に基づき、テストの再実行や修正PRの自動作成までを夜間に完結させます。これにより、エンジニアは始業時にAIの分析結果を確認し、PRをレビューするだけで済むようになり、テスト運用に伴う判断コストと作業負担を劇的に削減することに成功しました。",
+    "topics": [
+      "E2Eテスト",
+      "Playwright",
+      "Claude",
+      "QA民主化",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

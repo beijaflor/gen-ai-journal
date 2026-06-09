@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:51:01.491598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMでドキュメントを要約しExcelへ自動書き込みする実装ガイド",
+    "url": "https://qiita.com/CodeTea_Ping999/items/632555addfd0fff9633d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OllamaとPythonを組み合わせ、WordやPDFから抽出した情報をローカルLLMで要約・JSON化し、Excelテンプレートに精度高く書き込むワークフローの解説。",
+    "summaryBody": "この記事では、完全ローカル環境でドキュメント処理を自動化するためのPython実装手法を紹介しています。主な特徴は、Ollama（Llama 3.1やGemma等）を用いて文書を要約し、一度JSON形式の構造化データとして出力させてから、`openpyxl`でExcelの指定セルに書き込むという「構造化出力」に重点を置いた設計です。Word (`python-docx`)、PDF (`PyMuPDF`)、Excelといった複数形式への対応コードや、LLMの出力の揺らぎを抑えて実務での安定性を高めるためのプロンプト設計、長文ドキュメントを扱う際の分割要約の手法についても具体的に解説されています。",
+    "topics": [
+      "ローカルLLM",
+      "Ollama",
+      "Python",
+      "RAG",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 82
+    }
+  }
+}

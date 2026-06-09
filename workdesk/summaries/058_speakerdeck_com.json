@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:44:48.045420+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIプラットフォームを運用し続けるための可観測性",
+    "url": "https://speakerdeck.com/tanimuyk/aipuratutohuomuwoyun-yong-sisok-kerutamenoke-guan-ce-xing",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント特有の複雑な判断プロセスを可視化するため、OpenTelemetryとDatadogを組み合わせて「説明可能性」と「セキュリティ」を両立する運用手法の詳説。",
+    "summaryBody": "LayerX社のAi Workforce事業部におけるAIプラットフォーム運用の知見をまとめた資料です。AIエージェントが「なぜその判断をしたのか」を解明するため、従来のメトリクス・ログ・トレースに加え、OpenTelemetryを用いた詳細な計装とDatadog LLMObsの活用事例を紹介しています。技術的なポイントとして、API側と非同期ワークフロー間のトレースをSpan Linksで関連付ける手法や、機密性の高いプロンプト内容を送信前にマスキングしつつメタデータで調査を可能にする実装、さらにはCoding Agent（生成AIを用いた開発）が迷わず計装できるようルール化された共通パッケージの導入などが解説されています。SREだけでなく開発・QAチーム全体で運用可能な「チームによる可観測性」の構築を目指した実践的な内容です。",
+    "topics": [
+      "OpenTelemetry",
+      "Datadog",
+      "AIエージェント",
+      "オブザーバビリティ",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

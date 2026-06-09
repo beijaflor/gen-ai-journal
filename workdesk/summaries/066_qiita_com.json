@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:42:45.046005+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのトークン代を節約するNetflixのエンジニアが作ったツール「Headroom」について調べてみた",
+    "url": "https://qiita.com/shinkai_/items/61b10d10c63db47a64e7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Headroomは、AIエージェントが消費するトークンコストを抑えるため、JSONやログなどの冗長なコンテキストを構造的に圧縮・管理するローカル完結型のオープンソースツールです。",
+    "summaryBody": "### 概要\nNetflixのシニアエンジニアが開発した「Headroom」は、Claude CodeやCursorといったAIエージェントの入力トークンを削減するためのツールです。AIエージェントが高コストになる主因が「入力コンテキストに積み重なる冗長なデータ（DB結果、ログ、JSON等）」であることに着目し、これらを効率的に圧縮します。\n\n### 主な特徴と機能\n- **構造化データの圧縮**: JSONやビルドログなどの反復的なデータを統計的に処理し、精度を維持しながら最大90%以上圧縮します。一方、正確性が求められるソースコードはあえて圧縮しない設計になっています。\n- **CCR (Compress, Cache and Retrieve)**: 圧縮前の原文をローカルにキャッシュし、LLMが詳細を必要とした際にMCPツール経由で再取得できる「可逆的」な仕組みを提供します。\n- **多様な導入形態**: CLIラッパー、APIプロキシ、Pythonライブラリ、MCPサーバーとして利用可能です。\n\n### 実績と注意点\n公式ベンチマークでは高い削減率を誇りますが、短い会話が多い実運用セッションでの削減率中央値は約4.8%と報告されています。ツール出力や大規模なログを扱う特定のユースケースで最大の効果を発揮します。また、処理はローカル完結ですが、デフォルトで匿名テレメトリが有効な点には注意が必要です。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "トークン削減",
+      "Headroom",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

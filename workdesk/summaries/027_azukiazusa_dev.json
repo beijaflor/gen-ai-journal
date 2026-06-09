@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:52:36.949840+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "/goal コマンドの活用例: Vitest の実行時間を 6 倍高速化した話",
+    "url": "https://azukiazusa.dev/blog/goal-command-use-case-vitest/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code の `/goal` コマンドを活用して Vitest の `isolate: false` 導入に伴う大量のテスト不具合を自律的に修正し、テスト実行時間を 12 分から 2 分へ短縮した事例紹介。",
+    "summaryBody": "大規模な React プロジェクトにおいて、Vitest のテスト実行時間を 6 倍高速化した実践的な記録です。ボトルネックがモジュールの import と環境構築にあることを突き止め、`isolate: false` オプションを導入することで劇的な改善（12分→2分）を実現しました。\n\n特筆すべきは、この設定に伴う「テスト間の状態汚染」という副作用の解決に Claude Code の `/goal` コマンドを利用している点です。通常、AI は大規模な修正を途中で断念したりユーザーに指示を仰いだりしますが、`/goal` を使用することで「全テスト合格」という定量的な目標に到達するまで、AI が自律的にテストのシャッフル、失敗分析、修正をループ実行しました。記事では、localStorage のクリーンアップ漏れや ID の正規化シリアライザの導入など、具体的なトラブルシューティング手法も解説されています。",
+    "topics": [
+      "Vitest",
+      "Claude Code",
+      "Testing",
+      "Performance Optimization",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

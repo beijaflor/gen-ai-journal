@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:57:06.862428+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リビングのスマートTVがAIスクレイピング・エコノミーのノードになっている実態：Include Securityによる調査",
+    "url": "https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Bright Data社のSDKを組み込んだスマートTVやモバイルアプリが、AI学習用データ収集のためのレジデンシャル・プロキシとして利用されている実態を、通信解析とリバースエンジニアリングで暴いた調査報告。",
+    "summaryBody": "Include Securityは、Bright Data社が提供するSDKがどのように一般家庭のデバイスを「レジデンシャル・プロキシ（居住者用プロキシ）」の出口ノードに転換しているかを詳述しました。AI企業はデータセンターIPからのアクセスをブロックするサイトをスクレイピングするため、これら一般家庭のIPを必要としています。調査により、SDKはiOSのVPN設定をバイパスし、デバイスが「アイドル状態」（CPU使用率70%以下、バッテリー20%以上など）の際にバックグラウンドでリレー通信を行うことが判明しました。特にスマートTVは常時給電・高速通信・ユーザーの監視が薄いことから、理想的なノードとされています。報告書では、ViberやPlayWorksなどの主要な導入パートナー、WebSocketを用いた独自プロトコルの詳細、そしてDNSブロックによる防御手法を提示しています。",
+    "topics": [
+      "AIスクレイピング",
+      "レジデンシャルプロキシ",
+      "スマートTV",
+      "プライバシー",
+      "リバースエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:56:07.655246+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンテキスト・スカルプティング（Context Sculpting）：LLMの文脈を「追記型」から「編集可能」な設計空間へ変える試み",
+    "url": "https://perceptiontheory.bearblog.dev/context-sculpting/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMのコンテキストウィンドウを不変の履歴ではなく、上位モデルが動的に編集・最適化可能な「設計空間」として扱う「コンテキスト・スカルプティング」という新しいエージェント設計手法の実験報告。",
+    "summaryBody": "本記事は、LLMエージェントのコンテキストウィンドウを従来の「追記のみの会話履歴」から、モデル自身が編集・修正可能な「動的な空間」へと再定義するコンセプト「コンテキスト・スカルプティング（Context Sculpting）」の検証記録です。筆者は、強力な「外側エージェント」が実行用の「内側エージェント」のコンテキストを毎ターン監視し、書き換え・ロールバック・終了を判断する2層構造のフレームワークを構築しました。実験では、ノイズの多い合成タスクにおいて情報を整理し効率化する「ヒーローラン」に成功した一方で、コーディングタスクでは過剰な介入（オーバーステアリング）によりコストが70倍に跳ね上がり、ガードレールで停止する失敗例も報告されています。この試行錯誤を通じて、介入ポリシー（プロンプト）自体がインフラではなくシステムの挙動そのものを決定する「制御問題」であることが浮き彫りになりました。",
+    "topics": [
+      "LLMエージェント",
+      "コンテキスト管理",
+      "プロンプトエンジニアリング",
+      "AIアーキテクチャ",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Context Sculpting"
+  }
+}

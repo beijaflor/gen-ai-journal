@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:58:27.017773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareがAI Gatewayに支出制限機能を追加：AIコストの可視化と制御を強化",
+    "url": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AI Gatewayにおいてドルベースの支出制限機能を導入し、Cloudflare Accessと連携したユーザー単位の予算管理と自動ルーティング機能の提供を開始しました。",
+    "summaryBody": "Cloudflareは、企業のAI利用コスト急増と不透明な支出を解決するため、AI Gatewayに新たな管理機能を導入しました。主なアップデートは、モデルやプロバイダー、カスタム属性（ユーザーやチーム）ごとにドル単位で予算を設定できる「支出制限（Spend Limits）」のオープンベータ提供です。予算到達時にはリクエストのブロックだけでなく、低コストな代替モデルへの自動切り替えも可能です。さらに、Cloudflare Accessとの統合により、JWTからID情報を抽出して「誰が・どのチームが」トークンを消費したかを正確に把握・制御できる「アイデンティティ駆動型予算管理」のクローズドベータも開始。今後はリクエスト内容に応じて最適なモデルへ自動で振り分ける「タスクベースのインテリジェントルーティング」の実装も予定されており、AIのROI最大化に向けたプラットフォームとしての機能を強化しています。",
+    "topics": [
+      "Cloudflare AI Gateway",
+      "AIコスト管理",
+      "LLMOps",
+      "Cloudflare Access",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Your AI bill is out of control. Cloudflare can fix it now."
+  }
+}

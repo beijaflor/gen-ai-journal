@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:57:58.693459+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの仕組みを徹底解説：トークン化からトランスフォーマーの内部構造まで",
+    "url": "https://www.0xkato.xyz/how-llms-actually-work/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "現代のLLMの基盤であるトランスフォーマー・アーキテクチャの内部メカニズム（アテンション、埋め込み、FFN、生成ループなど）を、数式を最小限に抑えて概念的に解説する技術ガイド。",
+    "summaryBody": "現代のLLM（大規模言語モデル）の主流であるトランスフォーマー・アーキテクチャの内部動作を詳しく解説したチュートリアルです。内容は大きく分けて以下のステップで構成されています。\n\n1. **入力の変換**: テキストを数値化する「トークン化」と、意味を多次元ベクトルで表す「埋め込み」、そして単語の順序を認識させる「位置エンコーディング（RoPE）」について説明します。\n2. **アテンション機構**: Q（クエリ）、K（キー）、V（バリュー）という3つの役割を用いて、モデルが文脈の中でどの言葉に注目するかを決定する仕組みを詳述。推論を効率化する「GQA（グループ・クエリ・アテンション）」などの最新手法もカバーしています。\n3. **内部処理レイヤー**: 各トークンを独立して処理する「フィードフォワード・ネットワーク（FFN）」や、学習を安定させる「残差接続」と「レイヤー正規化（RMSNorm）」の重要性を説きます。また、パラメータ効率を高める「Mixture of Experts (MoE)」にも言及しています。\n4. **推論と生成**: 最終的なベクトルから次の単語を予測する「ロジット」と「ソフトマックス」の役割、および生成を高速化する「投機的デコーディング」について解説します。\n\nこの記事を理解することで、LlamaやMistral、GPT-4といった最新モデルの「モデルカード」や論文を読み解くための基礎的な知識を習得できます。",
+    "topics": [
+      "LLM",
+      "Transformer",
+      "Machine Learning",
+      "Deep Learning",
+      "NLP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "How LLMs Actually Work"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:48:17.928339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "お前のフィラーを数えろ。AmiVoice APIで日本語フィラーを消さずに数えるCLIを作ってみた",
+    "url": "https://zenn.dev/kimifan/articles/ami-voice-filler-count-tools",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AmiVoice APIのフィラー保持機能を活用し、音声中の「えー」「あのー」といったフィラーを自動で計数・分析するCLIツール「filler-cli」の開発記録。",
+    "summaryBody": "音声認識エンジンAmiVoice APIのHybridエンジン（-a-general）が持つ「keepFillerToken=1」というパラメータを利用し、通常は自動削除されるフィラーをトークンとして抽出・集計するCLIツール「filler-cli」を紹介しています。このツールは、音声ファイルからフィラーの総数、1分あたりの頻度、種類別の内訳、タイムラインをMarkdownまたはJSON形式で出力します。開発の背景には、LTやプレゼン練習における自身の話し方を客観的に把握したいというニーズがあり、AIエージェント（Claude等）と連携してコーチングを受けるためのスキルも同梱されています。記事ではAPIのリクエスト形式やレスポンス構造、即興スピーチにおける検出精度の限界（単音節の誤検知など）についても詳しく検証されており、音声認識技術の実践的な活用事例となっています。",
+    "topics": [
+      "AmiVoice",
+      "音声認識",
+      "Go",
+      "CLI",
+      "プレゼン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

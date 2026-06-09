@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:49:41.825773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のサーバーサイド開発を考えて、Next.jsフルスタックからRustへ移行した話",
+    "url": "https://zenn.dev/shtrchkw/articles/438accc201f16a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントの活用を前提に、開発の安全性と保守性を高めるため、Next.jsフルスタックからRust（Axum）によるAPIサーバー構成へ段階的に移行した実践記録。",
+    "summaryBody": "株式会社Eye Universeによる、サーバーサイド開発の技術スタックをNext.jsからRustへ移行した背景と知見の共有です。移行の核心は「実行速度」ではなく、AIエージェント（Claude Code等）による高速な開発において、Rustの強力な型システムとコンパイラが「コードの正しさ」を即座に検証するフィードバックループとして極めて有効である点にあります。アーキテクチャにはAxumを採用し、API、Domain、DBの3層に責務を分離。既存のPrismaスキーマを管理用に残しつつSQLxで実装することで、段階的な移行を実現しました。また、OpenAPIを人間とAIの共通言語として位置づけ、仕様定義を構造化することで、AIによる実装やリファクタリングの精度を高める手法についても触れられています。",
+    "topics": [
+      "Rust",
+      "Next.js",
+      "AIコーディングエージェント",
+      "Axum",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

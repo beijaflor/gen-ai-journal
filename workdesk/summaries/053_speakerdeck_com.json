@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:46:18.558148+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のUIはどこへ行く？その2！",
+    "url": "https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるUI生成（Generative UI）の進化を整理し、MCP AppsやReactを活用した新しい動的UI生成パターンを提案する技術解説。",
+    "summaryBody": "フロントエンド・PHPカンファレンス北海道2026での登壇資料です。AI時代のUIの在り方を、特に「Generative UI」の観点から深く掘り下げています。既存のUI生成手法を「Static（固定）」、「Declarative（宣言的）」、「Open Ended（自由）」の3つのパターンに分類し、それぞれのメリット・デメリットを比較。その上で、CloudflareのDynamic Workersを活用してAIにReact/JSXを書かせ、SSRとSuspenseを組み合わせてストリーミング表示する第4のパターン「Dynamic」を提唱しています。この手法により、高い自由度を保ちつつ、スケルトンローダーによる快適なユーザー体験と、HTML生成に比べたトークン消費の抑制を両立できる可能性を示しています。具体的なデモとして、旅行プランナーやニュースアプリを用いた実装例も紹介されています。",
+    "topics": [
+      "Generative UI",
+      "MCP (Model Context Protocol)",
+      "React",
+      "Cloudflare Workers",
+      "フロントエンド設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}
