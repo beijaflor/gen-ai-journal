@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:12:21.664791+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DESIGN.md とは — GoogleがOSS化した「AIエージェント向けデザイン仕様」",
+    "url": "https://qiita.com/y-morimatsu/items/0271f85171f4ea084aea",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Googleが公開したDESIGN.mdは、AIエージェントにブランドの意図やデザイントークンを一貫して伝えるための、機械可読と人間可読を統合した新フォーマットです。",
+    "summaryBody": "### 概要\\nGoogle Labsがオープンソース化した「DESIGN.md」は、AIエージェントがUIを生成する際に、ブランドのアイデンティティ（色、フォント、余白など）を正確に理解し一貫性を保つための仕様です。\\n\\n### 主な特徴\\n- **ハイブリッド構造**: YAMLフロントマターに機械可読なデザイントークン（値）を、Markdown本文に人間向けの設計根拠（意図）を記述することで、情報の断片化を防ぎます。\\n- **標準準拠と互換性**: W3CのDesign Token Format (DTCG) に準拠。CLIツール（@google/design.md）を使用してTailwind CSSや標準的なJSON形式へのエクスポートが可能です。\\n- **運用の効率化**: 文法チェック（lint）や差分比較（diff）が可能で、デザインシステムをコードのようにバージョン管理やCI/CDサイクルに組み込むことができます。\\n\\n### 意義\\nAIエージェントがプロンプトから「意図を推測」して不正確なUIを作る問題を解消し、単一の情報源（Single Source of Truth）として機能することを目指しています。",
+    "topics": [
+      "Google",
+      "DESIGN.md",
+      "AIエージェント",
+      "デザイントークン",
+      "Design Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

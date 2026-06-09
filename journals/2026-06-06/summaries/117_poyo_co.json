@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:42:38.349149+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チャット以外の2つのLLM UIパターン：テーブルによる比較とツリーによる分解",
+    "url": "https://poyo.co/note/20260525T094605/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMのインターフェースを単一のチャットから解放し、構造化された文脈管理を可能にする「テーブル形式の比較」と「ツリー形式の分解」という2つの新しいUIパターンを提案しています。",
+    "summaryBody": "現在のLLMアプリの主流であるチャットUIは、情報の比較や複雑なトピックの深掘りにおいて、文脈の混濁や不必要な再生成といった課題を抱えています。本記事では、これらを解決する2つのアプローチを紹介しています。1つ目は「Comparitable（テーブル形式）」で、行にアイテム、列に質問を配置し、チャットの応答をセルの値として構造化することで、一覧性の高い比較を可能にします。2つ目は「Breakdowner（ツリー形式）」で、タスクを枝分かれさせて管理します。各ノードは親の文脈を継承しつつ兄弟要素とは独立しているため、特定のスレッドを深く探索しても他の文脈を汚染しません。これらは、LLMとの対話において「UIがいかに文脈を形作り、ユーザーに可視化するか」という設計の重要性を強調しています。",
+    "topics": [
+      "LLM UI",
+      "UXデザイン",
+      "コンテキスト管理",
+      "プロンプトエンジニアリング",
+      "インターフェース設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Two LLM UI Patterns That Aren't Chat"
+  }
+}

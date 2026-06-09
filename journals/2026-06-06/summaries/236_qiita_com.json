@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:23:55.806780+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Tips: Claude CodeではHooksをSkillsに書ける",
+    "url": "https://qiita.com/getty104/items/3d648bf04cfe5a92bc77",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks機能をSKILL.mdのfrontmatterに記述することで、特定のスキル実行中のみに限定されたスコープで自動処理やガードレールを実装できる。",
+    "summaryBody": "この記事では、AnthropicのCLIツール「Claude Code」におけるHooks（特定のイベントをトリガーにシェルコマンド等を実行する機能）を、Skills（SKILL.md）内で定義する方法について解説しています。通常、Hooksはグローバルな`settings.json`に記述しますが、SKILL.mdのfrontmatterに記載することで、そのスキルがアクティブな期間中だけ有効なフックを作成できます。これにより、特定のタスク（デプロイやフォーマット等）に紐づくバリデーションや後処理を、グローバル設定を汚さずにプロジェクト内で共有・配布することが可能になります。セキュリティチェックや自動整形を特定のワークフローに組み込む際に非常に有用なテクニックです。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "Automation",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

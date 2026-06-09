@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:13:44.693680+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MLエンジニアのための本質から理解するLLM推論 KV cache編",
+    "url": "https://zenn.dev/kaz20/articles/c77f8a41cf2bf5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMの推論効率化に不可欠なKVキャッシュにおいて、なぜQueryを保存せずKeyとValueのみをキャッシュするのかを、数式とAttentionの仕組みから本質的に解説した技術記事。",
+    "summaryBody": "LLMの推論高速化に寄与する「KV cache」について、その仕組みを「なぜQueryはキャッシュ不要なのか」という問いを軸に解説した記事です。\n\n### 主な解説内容\n- **推論フェーズの数式解剖**: Transformerの自己注意機構（Self-Attention）において、位置 $m+1$ の出力を計算する際、過去のQuery ($Q_{1:m}$) は一切参照されない一方で、過去のKey ($K_{1:m}$) とValue ($V_{1:m}$) は現在のQueryとの演算に必須であることを数式で示しています。\n- **Causal Maskの役割**: 因果関係マスク（Causal Mask）により、過去のトークンが未来のトークンを参照すること（＝過去のQueryが新しいKeyと演算すること）が禁じられているため、過去のQueryを保持する価値がないことを明確化しています。\n- **KeyとValueの必要性**: Keyは現在のQueryがどの過去トークンを参照すべきかの計算に、Valueは決定された重みに基づく情報抽出にそれぞれ繰り返し使用されるため、キャッシュによる効率化の恩恵が非常に大きいと説明しています。\n\nMHA、GQA、MQAの違いにも触れつつ、実装レベルで混同しやすいテンソルの形状や計算フローが図解されています。",
+    "topics": [
+      "LLM",
+      "KV Cache",
+      "Transformer",
+      "Attention",
+      "推論最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:26:49.707768+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントに「脆弱性を探して」はなぜ失敗するのか──Cloudflareが50+リポで示したharnessの正体",
+    "url": "https://zenn.dev/aiwatch_jp/articles/agent-vuln-hunting-harness-glasswing",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareがセキュリティ特化モデル「Mythos Preview」を用いた調査を通じ、単一のAIエージェントによる脆弱性探索の限界と、それを解決するための「harness（実行管理基盤）」の設計思想を解説した記事。",
+    "summaryBody": "Cloudflareは、Anthropicのセキュリティ特化モデル「Mythos Preview」を活用し、自社リポジトリ50以上をスキャンする「Project Glasswing」を実施しました。汎用コーディングエージェントに「脆弱性を探して」と頼む素直な手法は、コンテキストの狭さとスループットの低さにより、広大な攻撃面をカバーできないため失敗します。これに対し、Cloudflareは「harness（実行管理基盤）」を構築し、タスクを偵察、狩猟、検証、追跡といった段階に分割。特に、2体のエージェントを意図的に対立させてノイズを削減する「敵対的検証」や、発見された欠陥が実際に外部から到達可能かを判定する「到達性追跡」の重要性を強調しています。結論として、AIの性能を引き出し実用的な成果を得るためには、モデル単体ではなく、相互作用の形（アーキテクチャ）を設計することが不可欠であると説いています。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "Cloudflare",
+      "脆弱性診断",
+      "LLM Harness"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

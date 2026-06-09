@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:46:38.779719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Antigravity CLIの開発フローをAGENT.mdとSkillsで整えたうえで、雑なインプットでWebアプリを開発する",
+    "url": "https://qiita.com/satoshi-sugiyama/items/3af51527329791e02bb1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Antigravity CLIとGoogle CloudのGeminiを活用し、詳細な役割（Skills）と連携規約（AGENT.md）を定義することで、曖昧な指示からNext.jsベースのWebアプリを自律的に開発するフローの実践レポート。",
+    "summaryBody": "この記事では、Google CloudのGeminiを活用したAIエージェントツール「Antigravity CLI」を用いて、Webアプリを開発する高度なワークフローを解説しています。プロダクトオーナー、フロントエンド/バックエンドデザイナー、セキュリティレビュアーなど14種類の「Skills（専門役割）」を定義し、それらの連携を`AGENT.md`で制御することで、AIが自律的に要件定義・設計・コードレビュー・実装・E2Eテストまでを行う仕組みを構築。事例として「一人目育児向けの用品レビューサイト」を構築し、約1時間17分、コスト約3,500円で実用的なレベルのNext.jsアプリが完成した実績を報告しています。設計フェーズでのレビュアーによる指摘対応や、Playwrightによる自動テストの生成など、AIエージェントによる開発の具体像が示されています。",
+    "topics": [
+      "Antigravity",
+      "AIエージェント",
+      "Next.js",
+      "Gemini",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

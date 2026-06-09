@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:22:19.502794+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにテスト駆動開発（TDD）を実践させるための「スキル」の定義",
+    "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントにKent BeckのTDD原則や「SEF（仕様・符号化・遂行）」ループを教示することで、質の高いテストとコードを出力させる手法の解説。",
+    "summaryBody": "現状のAIエージェントはテストの作成が苦手な傾向にありますが、著者はその原因が学習元となる人間のコードの質の低さにあると指摘しています。解決策として、エージェントにKent Beckの『Canon TDD』に基づいた明確な「スキル（指示セット）」を与えることを提案しています。著者は独自の「Specify-Encode-Fulfill（SEF）」ループを提唱しており、まず仕様を特定し、それを実行可能なテストとして記述（エンコード）し、その後で仕様を満たす最小限のコードを書くというプロセスを推奨しています。また、テスト設計自体を別のエージェントにレビューさせる「Test Design Review」スキルの活用や、「テストが書きにくい時はまず設計を改善する（Clean the kitchen）」という原則を徹底させることで、AIの生産性をタイムレスな設計原則と組み合わせて最大化できると述べています。",
+    "topics": [
+      "TDD (テスト駆動開発)",
+      "AI Agents",
+      "Software Design",
+      "Kent Beck",
+      "LLM Prompting"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "My Agent Skill for Test-Driven Development"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:32:28.034219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIA、推論5倍速で無償の550Bエージェント向けLLM「Nemotron 3 Ultra」",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2114675.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAは、5,500億パラメータを持ち、従来比5倍のスループットを実現した自律型エージェント向けLLM「Nemotron 3 Ultra」をオープンライセンスで公開した。",
+    "summaryBody": "米NVIDIAは、複雑なタスクを実行する自律型エージェント向けの大規模言語モデル「NVIDIA Nemotron 3 Ultra (550B-A55B)」を発表しました。主な特徴は以下の通りです：\n\n- **高効率なアーキテクチャ**: 総パラメータ数5,500億、アクティブパラメータ数550億のMoE（Mixture of Experts）を採用。Mambaトランスフォーマーやマルチトークン予測（MTP）の導入により、同クラスのオープンモデルと比較して5倍のスループットを達成しています。\n- **エージェント特化**: ツール利用やサブエージェントの起動、推論ステップのフィードバックなど、エージェント特有のワークロードに最適化。コストも最大30%削減可能です。\n- **独自の学習手法**: 10以上の専門家モデルから学習する「マルチティーチャー・オンポリシー蒸留（MOPD）」により、高い推論能力を獲得しました。\n- **オープンな提供**: OpenMDW-1.1ライセンスの下、Hugging Face等でモデルの重みが無償提供されます。\n\n併せて、4Bの安全管理モデル「Nemotron 3.5 Content Safety」や超低遅延の音声認識モデル「Nemotron 3.5 ASR」も公開されました。",
+    "topics": [
+      "NVIDIA",
+      "LLM",
+      "Nemotron",
+      "自律型エージェント",
+      "MoE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

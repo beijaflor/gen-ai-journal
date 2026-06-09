@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:16:43.336476+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Colab CLIの発表：ターミナルからクラウドGPUへシームレスにアクセス",
+    "url": "https://developers.googleblog.com/introducing-the-google-colab-cli/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、ローカル端末からColabのリモート計算資源を直接操作し、GPUのプロビジョニングやスクリプト実行を可能にする「Google Colab CLI」を公開した。",
+    "summaryBody": "Google Colabの強力な計算リソースをローカルのターミナル環境から利用可能にする「Google Colab CLI」が発表されました。このCLIにより、`colab --gpu A100`のようなコマンドで即座にGPUインスタンスを確保し、ローカルのPythonスクリプトをリモートで実行（`colab exec`）することが可能になります。また、AIエージェント（Claude Code等）との親和性が高く設計されており、エージェントが自律的にGPUを確保してMLモデルのファインチューニングを行い、成果物をローカルにダウンロードするといった自動化ワークフローが容易に構築できます。実行ログを.ipynb形式で回収する機能や、リモート環境へのインタラクティブなアクセス（REPL）もサポートしています。",
+    "topics": [
+      "Google Colab",
+      "CLI",
+      "GPU",
+      "AI Agent",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "Introducing the Google Colab CLI"
+  }
+}

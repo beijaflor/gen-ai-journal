@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T08:00:38.539957+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skillsを徹底解説！",
+    "url": "https://blog.g-gen.co.jp/entry/agent-skills-explained",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに専門知識やワークフローをパッケージ化して追加するオープンフォーマット「Agent Skills」の仕組み、構造、および導入方法を詳しく解説するガイド。",
+    "summaryBody": "Agent Skillsは、Anthropicが策定したAIエージェント向けのオープンな拡張規格であり、専門知識、ワークフロー、組織固有のルールなどをパッケージ化してエージェントに提供します。最大の特徴は「段階的開示（Progressive Disclosure）」という仕組みで、Discovery、Activation、Executionの3段階に分けて必要な情報のみをコンテキストに読み込むことで、LLMのコンテキスト肥大化（Context Bloat）を防ぎます。実体は`SKILL.md`を含むディレクトリ構成であり、外部アクセスを担うMCP（Model Context Protocol）とは補完関係にあります。Gemini CLI、Claude Code、Cursorなどの主要ツールが対応しており、`npx skills install`コマンドを通じて容易に配布・導入が可能です。",
+    "topics": [
+      "Agent Skills",
+      "AIエージェント",
+      "Anthropic",
+      "Gemini CLI",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

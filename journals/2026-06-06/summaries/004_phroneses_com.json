@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:07:33.456642+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe Coding（バイブ・コーディング）はエンジニアリングではない",
+    "url": "https://phroneses.com/articles/build/notes/vibe-coding-is-not-engineering.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによるコード生成（バイブ・コーディング）は、動作するコードは作るが、長期的な運用に不可欠な「エンジニアリング的な意思決定」を代替するものではないと警告する論評。",
+    "summaryBody": "### バイブ・コーディングとエンジニアリングの境界線\n「Vibe Coding（プロンプトによる非エンジニアのコード生成）」は、デモレベルのコードを素早く出力できるが、それは「システム」を構築したことにはならない。エンジニアリングの本質は、コードを書く前に行われる「問題の定義」「制約の特定」「不変条件の設計」といった意思決定にある。\n\n### LLMが欠落させている視点\nAIはプロンプトに従って動作するコードを生成するが、以下のような本番環境で致命的となる問いを自ら発することはない。\n- **ビジネスコンテキストの欠如**: メールアドレスのユニーク制約やユーザー識別子の整合性など、システムの安全性を保つためのルールを無視する傾向がある。\n- **ハッピーパスへの偏重**: 正常系では動作するが、ストレス下での挙動や境界条件、エラーハンドリングといった「負の側面」に対する設計が不十分である。\n\n### 長期的な脆さ\nエンジニアリングの決定を欠いたまま生成されたコードは、機能が追加されるにつれて互いに衝突し、状態が予測不能になり、最終的に開発速度の低下と信頼性の崩壊を招く。著者は、AIを単なるコード生成器として利用するのではなく、生成前に人間が「不変条件」「同一性ルール」「失敗モード」を明確に定義する必要があると強調している。AIはデモを作るが、製品を作るには依然としてエンジニアリングの規律が不可欠である。",
+    "topics": [
+      "Vibe Coding",
+      "Software Engineering",
+      "LLM",
+      "Systems Design",
+      "Requirements Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "Vibe Coding Is Not Engineering"
+  }
+}

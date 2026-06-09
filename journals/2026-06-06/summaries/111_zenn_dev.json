@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-03T14:42:03.800690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 4.8のReact習熟度を測る",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 4.8のReact開発能力を13のテストケースで検証し、コンポーネント設計やアクセシビリティ面での堅実な進化と、試行回数（n=3）による統計的信頼性を確認した。",
+    "summaryBody": "エンジニアのuhyo氏による、Claude Opus 4.8のReact習熟度を測るベンチマーク記事です。13の具体的なスペック（UI実装課題）を用いてOpus 4.7と比較した結果、平均スコアが75.72から79.38へと上昇し、明確な進化が確認されました。特に「データダッシュボード」や「ツールチップ/ポップオーバー」といった項目で大幅な改善が見られ、アクセシビリティやコンポーネント分割の精度が向上しています。\nまた、本調査の重要な点として「試行回数（n=1 vs n=3）」の比較が挙げられています。初回試行のみではモダンAPI（useActionState等）の採用見送りによる性能退化が疑われましたが、追試によってそれがモデル特有の「揺れ」であることが判明し、ベンチマークにおける複数回試行の重要性を浮き彫りにしました。最終的にOpus 4.8は同ベンチマークにおける歴代トップの評価を記録しています。",
+    "topics": [
+      "Claude Opus 4.8",
+      "React",
+      "LLMベンチマーク",
+      "Anthropic",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

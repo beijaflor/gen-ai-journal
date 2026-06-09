@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:19:49.193259+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "humanizer: AI特有の書き癖を除去し、人間らしい自然な文章に変換するClaude Code用スキル",
+    "url": "https://github.com/blader/humanizer",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Wikipediaの「AIによる文章の特徴」ガイドに基づき、AI特有の語彙や構成を排除して人間らしい自然な文章に変換するClaude Code/OpenCode向けの拡張スキル。",
+    "summaryBody": "humanizerは、Claude CodeやOpenCodeに導入できるオープンソースのスキル（拡張機能）です。Wikipediaの「WikiProject AI Cleanup」が定義した数千件のAI生成文章の観察に基づく「AI文章の兆候」ガイドを基盤としています。\n\n主な特徴は以下の通りです：\n1. **30種類のパターン検知**: 「pivotal moment」などの誇張表現、過度な箇条書き、特定の接続詞（Actually, Additionally等）といったAI特有の癖を30項目にわたって特定・修正します。\n2. **ボイス・キャリブレーション**: ユーザー自身の執筆サンプルを入力することで、個人の文体（リズム、語彙、癖）を分析し、それに合わせたリライトが可能です。\n3. **2段階のプロセス**: 1度目のリライト後、さらに「明らかにAIが生成したと思われる箇所」を再監査する2パス方式を採用し、より自然な出力を実現します。\n\nREADMEには、AIによる不自然な原文と、humanizer適用後の具体的な改善例が掲載されており、技術文書やブログの質を向上させたい開発者にとって実用的なツールとなっています。",
+    "topics": [
+      "Claude Code",
+      "AI Writing",
+      "Natural Language Processing",
+      "Open Source",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - blader/humanizer: Claude Code skill that removes signs of AI-generated writing from text · GitHub"
+  }
+}

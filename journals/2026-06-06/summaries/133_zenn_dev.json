@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:46:57.557032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "データサイエンティストのためのAGENTS.mdとSkills",
+    "url": "https://zenn.dev/green_tea/articles/d310e5cf809190",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub CopilotなどのAIエージェントをデータ分析で活用するため、指示を構造化・モジュール化して管理する「AGENTS.md」と「Skills」の運用手法のガイド。",
+    "summaryBody": "AIコーディングツールの能力を最大限に引き出しつつ、トークン消費を抑えるための指示管理術が解説されています。主な方針は、全タスク共通の指示を「copilot-instructions.md」に、作業別（SQL、Polars、可視化等）のルールを「.github/skills/」に、プロジェクト固有のコンテキスト（データカタログ、指標定義）を「docs/agent/」に分割し、「AGENTS.md」をそれらへのルーターとして機能させる手法です。具体的には、uvによるパッケージ管理の徹底、pandasからpolarsへの移行、日本語フォントを考慮したmatplotlibの可視化ルールなど、データサイエンス実務に特化した具体的なテンプレートが提供されています。また、自然言語による指示だけでなく、生データのコミット防止などをスクリプトやCIで機械的に検査するガードレールの重要性についても強調されており、AIエージェントとの協調ワークフローを安全かつ効率的に構築するための実践的な知見がまとめられています。",
+    "topics": [
+      "GitHub Copilot",
+      "AIエージェント",
+      "データサイエンス",
+      "プロンプトエンジニアリング",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

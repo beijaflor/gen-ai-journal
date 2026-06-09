@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:41:26.055596+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステムをAI対応にする方法 — Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI生成プロトタイプの精度向上を目的に、デザイン上の意思決定を文書化し、Markdown仕様書やトークン層を通じてAIに明確なコンテキストを提供する手法を解説しています。",
+    "summaryBody": "AIが生成するプロトタイプの品質が安定しない主な原因は、デザインシステム内にある細かな不整合や、文書化されていない暗黙のルールにあります。本記事では、AIに誤解のないガイダンスを与えるための「AI対応デザインシステム」の構築方法を提案しています。\n\n核となるのは3つのアプローチです。まず、デザイン原則やアクセシビリティ基準を「仕様書（Spec Files）」としてMarkdown形式で整備し、AIが参照できるインフラとして扱います。次に、FigmaLint等のツールを用いて、ハードコードされた値や命名規則の乱れを排除する監査を行います。最後に、AIが独自の値を生成しないよう、厳密に定義されたトークン層を構築し、常に最新の仕様と同期させることが重要です。AIは魔法のように負債を解消するのではなく、人間が意図を明確に伝えるための構造化されたデータ（コンテキスト・エンジニアリング）を必要としています。これからのデザイナーには、視覚的な作業だけでなく、AIが理解可能な形式で設計思想を整備・維持する役割が求められます。",
+    "topics": [
+      "Design Systems",
+      "AI Tools",
+      "UX Design",
+      "Documentation",
+      "Figma"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "How To Make Your Design System AI-Ready — Smashing Magazine"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:21:31.809006+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 QATモデル：モバイルおよびノートPC向けに最適化されたモデル圧縮技術",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Quantization-Aware Training（QAT）を適用したGemma 4モデルが発表され、モバイル端末でのメモリ使用量を1GB未満に抑えつつ、高品質なローカル推論を実現しました。",
+    "summaryBody": "Googleは、Gemma 4ファミリーにQuantization-Aware Training（QAT）を適用した新しいチェックポイントを導入しました。従来の事後量子化（PTQ）とは異なり、学習過程で量子化をシミュレーションするQATを採用することで、圧縮に伴うモデルの精度低下を最小限に抑えています。本リリースには一般的なQ4_0形式に加え、モバイルに特化した新しい量子化形式が含まれており、E2Bモデル（20億パラメータ級）のメモリフットプリントを1GBまで削減することに成功しました。技術的な工夫として、静的アクティベーションの採用、チャネル単位の量子化、特定の層へのターゲットを絞った2ビット量子化などが盛り込まれています。これにより、スマートフォンのようなエッジデバイスや一般的なノートPCのGPU上で、Gemma 4をより効率的かつ高速に動作させることが可能になります。すでにHugging Face、llama.cpp、vLLMなどの主要エコシステムでサポートが開始されています。",
+    "topics": [
+      "Gemma 4",
+      "QAT (Quantization-Aware Training)",
+      "Edge AI",
+      "Model Compression",
+      "Mobile Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency"
+  }
+}

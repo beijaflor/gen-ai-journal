@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:34:49.253506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとCodexがGitを介してリアルタイムに対話：AIエージェント間の新たな通信手法",
+    "url": "https://news.ycombinator.com/item?id=48345837",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Gitの内部構造（カスタムref）をメッセージバスとして活用し、AIエージェント同士がレビュー可能な履歴を保持しながら協調作業を行うための新しいプロトコルと手法についての議論。",
+    "summaryBody": "この記事は、Claude CodeやCodex（Cursor）などのAIエージェントが、Gitリポジトリを介して相互に通信する「h5i」という試みを核とした議論をまとめています。従来のAPI連携とは異なり、Gitのカスタムref（refs/h5i/など）を使用することで、エージェント間の対話履歴をコンテンツアドレス指定可能なオブジェクトとして保存し、人間がその中間状態をレビューしたり、ブランチ間で同期したりすることが可能になります。Hacker Newsのスレッドでは、Unixソケットや共有ファイル、Jira、NATSといった既存の通信手段と比較した際の優位性や、AI同士が勝手に「話しすぎる」ことによるコスト問題、さらには複数のエージェントが合意に達するまでのレビューの難しさなど、実用化に向けた多角的な視点から批判や期待が寄せられています。",
+    "topics": [
+      "AI Agents",
+      "Git",
+      "Claude Code",
+      "Multi-agent Systems",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 45,
+      "overall": 80
+    },
+    "originalTitle": "Claude Code and Codex can have real-time conversation via Git | Hacker News"
+  }
+}

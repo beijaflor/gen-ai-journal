@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:25:51.806117+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agentsで「まずエンジニアに聞こう」を「まずbotに聞こう」に変えたDinii Tech Blog",
+    "url": "https://zenn.dev/dinii/articles/d7be3acc43d868",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DiniiがClaude Managed Agentsを活用して開発チームへの問い合わせ対応を自動化し、チケット起票数を約50%削減、エスカレーション率を22%まで低下させた事例紹介。",
+    "summaryBody": "ダイニーの開発チームが、社内からの技術的な問い合わせ（dev-help）を効率化するために導入したSlack bot「@ask-anything」の導入事例です。Anthropicの「Claude Managed Agents」を活用し、BigQueryのデータ調査、Cloud Loggingのログ解析、モノレポ内のコード仕様確認といった、これまでエンジニアが手動で行っていた「現行システムの調査タスク」をAIエージェントに代行させています。導入の背景として、従来のRAGでは対応できなかった「動的な調査」の自動化が挙げられており、Managed Agentsのサンドボックス環境やMCP server連携により、自前でのオーケストレーション実装を大幅に削減。結果として、導入から4週間で開発チームへの正式な問い合わせ件数は約半分に減少し、エンジニアが本来の業務に集中できる環境を構築しました。運用面では、botの回答精度をKPI化（エスカレーション率の監視）し、継続的に改善を行っている点も特徴です。",
+    "topics": [
+      "Claude Managed Agents",
+      "Anthropic",
+      "AI Agent",
+      "Developer Experience",
+      "LLM Application"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

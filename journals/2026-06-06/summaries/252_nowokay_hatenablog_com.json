@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:27:46.589588+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4-12B、日常使いによさそう",
+    "url": "https://nowokay.hatenablog.com/entry/2026/06/04/033047",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleの最新モデルGemma 4-12Bのローカル動作を検証し、12GB程度のメモリ環境における要約・翻訳の高い実用性とコーディング面の課題を解説しています。",
+    "summaryBody": "GoogleのGemma 4-12BをUnslothのQ4量子化版を用いてローカル環境で検証したレビュー記事です。12Bというサイズはメモリ8〜12GB程度の環境で扱いやすく、日常的なタスク（要約、翻訳、日本語の表現力豊かな対話）において極めて高いパフォーマンスを発揮します。知識のカットオフは2025年1月で、Java 23に関する最新情報も正確に回答。一方で、コーディング能力については単純なプログラムで修正が必要になったり、複雑な開発エージェントとしての動作に失敗したりするなど、専門的な用途には改善の余地があるとしています。トータルでは日常使いの軽量モデルとして非常にバランスが良いと評価されています。",
+    "topics": [
+      "Gemma 4",
+      "ローカルLLM",
+      "Google",
+      "Unsloth",
+      "AIモデル検証"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

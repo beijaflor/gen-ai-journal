@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:10:20.147017+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI の Secure MCP Tunnel を試してみた",
+    "url": "https://azukiazusa.dev/blog/openai-secure-mcp-tunnel/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenAI の Secure MCP Tunnel を使い、プライベートな環境にある MCP サーバーを外部公開せずに ChatGPT と連携させる手順を解説した記事。",
+    "summaryBody": "OpenAI が提供する「Secure MCP Tunnel」のセットアップと活用方法を解説するチュートリアルです。従来、Streamable HTTP トランスポートを使用する MCP サーバーはパブリックなエンドポイントが必要でしたが、このトンネル機能を利用することでファイアウォール内やローカル環境のサーバーを安全に OpenAI 製品へ接続できます。記事では、OpenAI プラットフォーム上での権限設定（ロール作成）、専用 CLI ツール `tunnel-client` の導入、プロファイル作成、そして ChatGPT のカスタムコネクタ設定までの全工程を網羅。実際に TypeScript で実装した計算ツールを ChatGPT から呼び出すデモを通じ、企業内データやローカルツールを安全に AI に活用する手法を提示しています。",
+    "topics": [
+      "OpenAI",
+      "MCP",
+      "Secure MCP Tunnel",
+      "ChatGPT",
+      "tunnel-client"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:13:06.099520+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI が Windows を自律操作するって本当？ Project Opal (Frontier) を試して分かった「実用的な使いどころ」",
+    "url": "https://qiita.com/carol0226/items/a78a888ce0c4d2364232",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "MicrosoftのAIエージェント基盤「Project Opal」のセットアップから、Windowsを自律操作させExcel資料を作成する実機検証、RPAとの比較を通じた活用シーンの考察までを解説しています。",
+    "summaryBody": "Microsoftが提供を開始したAIエージェント基盤「Project Opal（Frontier）」の先行検証レポートです。従来の支援型Copilotとは異なり、クラウド上のWindows 365（Cloud PC）をAIが直接操作してタスクを代行する「自律型エージェント」としての側面を掘り下げています。\n\n主な内容は以下の通りです：\n- **導入要件とセットアップ**: Microsoft 365 CopilotとIntuneのライセンス要件、早期アクセスプログラムへの参加、Cloud PCプールの構築手順を画面キャプチャ付きで詳説。\n- **動作検証**: 外部Webサイト（connpass）からのイベント情報収集とExcel保存を指示し、AIがブラウザ操作やデータ入力を自律的に行うフローを確認。途中で人間が操作を奪う「Take control」機能も紹介されています。\n- **RPAとの比較と将来性**: 事前定義済みのフローを繰り返すRPAに対し、Opalは目的から動的に手順を生成する点が特徴。現状は動作が緩慢などの課題はあるものの、API未提供のサービスや閉じたポータルでの操作など、既存の自動化では困難だった「操作そのものが価値になる業務」の補完役としての可能性が示唆されています。",
+    "topics": [
+      "Project Opal",
+      "AIエージェント",
+      "Microsoft 365 Copilot",
+      "Windows 365",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

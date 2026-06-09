@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:00:21.429897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "議事録AIでは、会議は前に進まない。前回→今回→次回をつなぐ Decision Loop を作った",
+    "url": "https://zenn.dev/ichigoe/articles/39ed922d19c9bb",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "会議の発言を「決定・未決・タスク・曖昧さ」に構造化し、次回会議へ「状態」を引き継ぐことで業務の停滞を防ぐAIエージェント「Decision Loop」の開発事例。",
+    "summaryBody": "従来の議事録AIが「記録と要約」に留まり、実業務の進展に寄与しにくいという課題に対し、会議の「状態（State）」を管理し次回へ繋げる「Decision Loop」を開発。Microsoft Agent Hackathon 2026での成果物として公開された。\n\n### 主な特徴と設計思想\n- **決定ループの構築**: 会議の発言を「決定事項」「未決事項」「タスク」「曖昧箇所」に切り分け。単なる要約ではなく、前回から次回への文脈をグラフ形式で可視化する。\n- **Human-in-the-Loop**: AIが根拠（エビデンス）と共に候補を提示し、人間が最終確定を行う設計。AIの勝手な補完による誤った意思決定を防ぐ。\n- **エージェント的解析**: 1回のプロンプトで全てを処理せず、キーワード抽出、前回未決事項の参照、日付変換など、解析を多段階に分けることで精度を担保。必要に応じてツールを自律的に呼び出す。\n\n### 技術スタックと構成\n- **Azure OpenAI (GPT-4o)**: 非同期のジョブ形式で解析を実行。Azure Service Busを活用し、長時間処理の安定性を確保。\n- **インフラ**: Azure App Service (Web App for Containers) 上でFrontend、API、AIサービスを独立させて運用。コスト面でも1会議あたり約10円程度と実用的な水準に抑えられている。",
+    "topics": [
+      "AIエージェント",
+      "Azure OpenAI",
+      "GPT-4o",
+      "議事録",
+      "業務改善"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

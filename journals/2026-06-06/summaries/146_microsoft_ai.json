@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2025-03-24T10:00:00Z",
+    "generatedBy": "gemini-2.0-flash-thinking-exp"
+  },
+  "content": {
+    "title": "MAI-Thinking-1：丘登りマシンの構築",
+    "originalTitle": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+    "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoft AIチームが、システムレベルの最適化アプローチを用いてスクラッチから構築した、STEM推論とコーディングに特化した1兆パラメータ規模のMoEモデル「MAI-Thinking-1」の技術報告。",
+    "summaryBody": "本報告書は、Microsoft AI（MAI）が開発した、推論能力を極限まで高めた大規模言語モデル **MAI-Thinking-1** のアーキテクチャと学習手法を詳述したものである。本モデルは35Bのアクティブパラメータ（総計1T）を持つ疎な混合エキスパート（MoE）モデルであり、他社モデルからの蒸留や合成データに依存せず、30兆トークンの高品質な独自データを用いてスクラッチから学習されている。開発プロセスを「丘登りマシン（Hill-Climbing Machine）」と定義し、データ、インフラ、アルゴリズムの全レイヤーで経験的な最適化ループを回している点が特徴である。\n\n技術的な中核は、強化学習（RL）フェーズにおける推論能力の向上にある。**GRPO**（Group Relative Policy Optimization）をベースに、適応的なエントロピー制御や独自の報酬設計を導入することで、数学（AIME 2025で97.0%）やコーディング（SWE-Bench Proで52.8%）において、Claude 3.5 Sonnet等の最先端モデルに匹敵、あるいは凌駕する性能を達成した。また、256Kのロングコンテキスト対応や、GitHubのプルリクエストをベースにした実行可能なソフトウェアエンジニアリング環境の構築など、実用的なエージェント能力の強化にも注力されている。\n\n次世代のAIコーディングエージェント構築や、LLMを用いた複雑な問題解決システムの設計に携わるウェブアプリケーションエンジニアにとって、最先端のモデル最適化手法を理解するための極めて価値の高い資料である。",
+    "topics": [
+      "LLM",
+      "Mixture of Experts",
+      "Reinforcement Learning",
+      "Coding Agent",
+      "STEM Reasoning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    }
+  }
+}

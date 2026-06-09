@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:20:59.620439+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1995年のテクニカルライターのようにドキュメントを書くためのLLM微調整",
+    "url": "https://passo.uno/fine-tuning-docs-llm/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "1990年代のマイクロソフトの技術マニュアルを学習データとして、現代のLLMを当時の独特な執筆スタイルを再現するようにQLoRAで微調整した実験の記録。",
+    "summaryBody": "著者は1980〜90年代のソフトウェア技術文書のスタイルを再現するため、Bitsaversにアーカイブされた古いマイクロソフトの公式マニュアル（約3700万語）をコーパスとして使用し、Llama 3.1 8BやQwen 2.5 7Bの微調整を行いました。実験ではQLoRAを用い、学習データ量やランク（Rank）、エポック数の違いがスタイル転送の精度に与える影響を分析しています。結果として、微調整されたモデルは現代的なMarkdown形式ではなく、当時の「Synopsis」や「Return Value」といった特有のセクション構造や硬い語彙を忠実に再現することに成功しました。また、ランクが低いアダプタの方が「なりきり」の強度が上がり、学習が進みすぎると現代の知識が混ざりやすくなるなどの興味深い知見が得られています。",
+    "topics": [
+      "Fine-tuning",
+      "LLM",
+      "QLoRA",
+      "Technical Writing",
+      "Retro Computing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Fine-tuning an LLM to write docs like it's 1995 – Fabrizio Ferri Benedetti"
+  }
+}

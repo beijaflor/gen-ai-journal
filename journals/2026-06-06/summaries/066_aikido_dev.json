@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:50:40.093366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mythosは不要：脆弱性診断におけるAI『ハーネス』の重要性",
+    "url": "https://www.aikido.dev/blog/mythos-vs-harness",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIモデル単体の性能（Mythos等）よりも、複数のエージェントを制御・検証する「ハーネス（オーケストレーション層）」の設計こそが、低コストで高精度な脆弱性検知の鍵である。",
+    "summaryBody": "Aikido Securityによる技術ブログ。最新のAIモデル「Mythos」が脆弱性調査において注目を集めているが、筆者は特定のモデル選択よりも「ハーネス（オーケストレーション層）」の構築こそが重要であると説く。主な内容は以下の3点。1. **モデル能力の収束**: GPT-5.5などの他モデルもMythosと同等の性能に達しており、単体モデルへの依存はリスクとなる。2. **ハーネスによる最適化**: 偵察、狩猟、検証、トレース、重複排除といった工程をオーケストレーションすることで、安価な小型モデルの組み合わせでも、高価なモデル単体での結果を上回ることができる。3. **経済合理性**: Mythosを1回実行するコストで、小型モデルを複数回・多角的に走らせる方が、偽陽性を抑えつつ網羅性を高められる。結論として、ベンダーに依存しない柔軟なパイプライン設計が、次世代のAppSecにおける真の差別化要因になるとしている。",
+    "topics": [
+      "AIセキュリティ",
+      "脆弱性診断",
+      "LLMハーネス",
+      "オーケストレーション",
+      "AppSec"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Move over, Mythos. Here comes... pretty much any other model with a good harness"
+  }
+}

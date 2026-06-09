@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T08:02:08.297084+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの汚染：GitHub Issue一つでサプライチェーンを破壊する手法",
+    "url": "https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude Code GitHub Actionsにおける権限バイパスとプロンプトインジェクションを組み合わせ、サプライチェーン全体を侵害できる脆弱性の詳細。",
+    "summaryBody": "GMO Flatt Securityのリサーチにより、Anthropicが提供するClaude Code GitHub Actionsの深刻な脆弱性が明らかにされました。この問題は、GitHub Appからのリクエストを無条件で信頼する不適切な権限検証（checkWritePermissions）に起因します。攻撃者は悪意のあるGitHub Appを作成し、パブリックリポジトリに対してIssueを作成することで、Claude Codeを起動させることが可能でした。ここからプロンプトインジェクションを悪用し、コンテナ内の環境変数からOIDCトークンを取得、最終的にはリポジトリへの書き込み権限を持つGitHub Appトークンを奪取することで、ソースコードの改ざんを含むフルコンプライズが可能になります。Anthropicはこの報告を受け、v1.0.94にて修正を完了し、現在は緩和策が講じられています。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "Supply Chain Security",
+      "Prompt Injection",
+      "OIDC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Poisoning Claude Code: One GitHub Issue to Break the Supply Chain"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:21:16.271061+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "rsyncの開発にClaude（AI）を導入してバグは増えたのか？データ分析による検証",
+    "url": "https://alexispurslane.github.io/rsync-analysis/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "rsync開発におけるClaude（AI）導入がバグ増加を招いたという批判に対し、全36リリースの重大度加重バグ率を統計的に分析した結果、AI導入リリースが歴史的分布の中で特異なものではないことを明らかにした。",
+    "summaryBody": "2026年5月に発生した「rsync開発へのClaude導入」を巡る騒動に対し、開発者が客観的なデータを用いた統計分析を実施。批判の多くは、特定のリリースで発生したバグとAI使用の相関を根拠に「品質低下」を主張していたが、本レポートはこれを否定する。分析ではv2.4.6からv3.4.3までのリリースを対象に、LLM（Qwen 3）を用いてバグの重大度を0-100でスコアリングし、10コミットあたりの重大度加重バグ率（sev/10c）を算出。Claudeを使用した2つのリリース（v3.4.2とv3.4.3）を検定したところ、置換検定のp値は46%であり、歴史的なバグ発生分布の範囲内に収まっていることが判明した。特筆すべき点として、史上最悪のバグ率を記録したのはAI導入前のv3.4.1（39.39 sev/10c）であり、AIに対する批判が「感情的な確証バイアス」に基づいている可能性を指摘。メンテナーのAndrew Tridgell氏は、AI生成の大量のCVE報告への対応が開発負荷を増大させている現状についても言及している。",
+    "topics": [
+      "rsync",
+      "Claude",
+      "ソフトウェア品質",
+      "統計分析",
+      "AIアシスト開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Did Claude Increase Bugs in rsync? Data Analysis"
+  }
+}

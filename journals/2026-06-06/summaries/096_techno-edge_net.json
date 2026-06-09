@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:59:28.417993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "もうカメラはいらない。写真撮らないし。そう思っていた僕が一晩で開発したiPhone異世界カメラアプリ（CloseBox）",
+    "url": "https://www.techno-edge.net/article/2026/05/30/5123.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "カメラ映像をVisionモデルで言語化し、そのプロンプトからローカルの画像生成AIで『現像』し直すiPhoneアプリをCodexとの対話で開発した記録。",
+    "summaryBody": "テクノエッジ編集部の松尾公也氏が、OpenAI Codexを用いた対話型開発（ヴァイブコーディング）によって構築したiPhoneアプリの制作秘話を公開。このアプリは、カメラから入力された映像を直接変換するのではなく、Qwen系のVision-Languageモデルで一度「言葉」へと抽象化し、そのプロンプトを基にBonsai Imageモデルを用いてローカル環境で画像を再構築する「Photograph Abstraction Layer」を具現化している。iPhoneのメモリ制限という厳しい制約の中で、Visionモデルと画像生成モデルを共存させるための技術的トレードオフや、拡散モデル（Diffusion Model）の構造をモジュラーシンセの減算合成に例えた独特の技術論が語られている。単なる写真加工ではなく、現実をAIがどう解釈し「再演」するかという、亡き妻への思いも背景にある極めて個人的かつ実験的なプロジェクトの全容が記されている。",
+    "topics": [
+      "iOS開発",
+      "ローカルAI",
+      "画像生成",
+      "OpenAI Codex",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

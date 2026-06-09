@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-01T02:21:16.054921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スマホの動作データによる喫煙の再発と渇望の予測：タイムリーな禁煙支援の実現",
+    "url": "https://www.nature.com/articles/s41598-026-49611-y",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "スマートフォンの慣性センサーから得られる微細な動作データを深層学習で解析し、喫煙の再発や強い渇望を85%の精度で予測することで、最適なタイミングでの禁煙支援を可能にする研究。",
+    "summaryBody": "### 研究の背景と目的\\n禁煙支援において、喫煙の引き金となる要因を特定し、適切なタイミングで介入を行う「Just-In-Time Adaptive Intervention (JITAI)」が注目されています。本研究では、スマートフォンの加速度計、ジャイロスコープ、磁力計から得られる受動的な動作データが、喫煙行動や渇望の予測にどこまで有効かを検証しました。\\n\\n### 手法と結果\\n17名の喫煙者を対象に3.5ヶ月間のデータを収集し、1D-CNNとBiLSTMを組み合わせた深層学習モデルで解析しました。その結果、喫煙行動を5分以内の窓で85%の精度で予測することに成功。これは時間的特徴（63%）などの従来指標を大きく上回ります。また、禁煙後の再発や渇望も78%の精度で特定できました。さらに、他人のデータで学習したモデルを未知のユーザーに適用してもAUC=0.8の高い精度を維持し、モデルの汎用性が証明されました。\\n\\n### 結論と意義\\n本研究は、人間が意識しない微細な動作パターン（デジタル表現型）が健康行動の予測に極めて有効であることを示しました。GPSのようなプライバシーや電力消費の問題があるセンサーを使わず、低負荷な慣性センサーのみでリアルタイム介入が可能なため、実用的な禁煙支援アプリへの応用が期待されます。",
+    "topics": [
+      "深層学習",
+      "禁煙支援",
+      "デジタルフェノタイピング",
+      "行動予測",
+      "スマートフォンセンサー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Smartphone movement data can reliably predict smoking lapses and cravings to enable timely smoking cessation support"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T05:48:04.638591+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのトークンを削減しつつ、同等の回答精度を維持するライブラリ",
+    "url": "https://izanami.dev/post/ce82cdd3-cb71-4143-8528-7e552d2aa4c4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMのコンテキストを圧縮するライブラリ「headroom」をClaude Codeに導入した実測レポートで、構造化JSONで44.6%のトークン削減を確認しつつ、用途による向き不向きを解説しています。",
+    "summaryBody": "### headroomの概要と仕組み\nheadroomはLLMに送信するコンテキストを事前に圧縮するミドルウェアです。データ型を判定する「ContentRouter」と、JSON用の「SmartCrusher」、コード用の「CodeCompressor」などの専用圧縮器を使い分けることで効率化を図ります。特筆すべきは可逆性で、原本をローカルに保持（CCR）し、LLMが必要とした際に`headroom_retrieve`で完全な情報を復元できる二段構えの設計です。\n\n### 導入と検証結果\n導入は非常に容易で、`headroom wrap claude`コマンドやProxy経由での利用が可能です。実際の計測では、100件のコード検索結果（構造化JSON）において**44.6%のトークン削減**という高い効果を示しました。一方で、400行の素のビルドログでは削減率が0%となり、汎用的な冗長テキストを単純なライブラリ呼び出しのみで縮めるのは難しいことも判明しました。\n\n### 活用のアドバイス\n「何でも縮む魔法」ではなく、ツール出力やRAGの検索結果など、型が決まったデータを大量に扱うワークロードで真価を発揮します。Claude Codeなどのエージェントでコンテキスト上限に悩む開発者にとって、特定のユースケースにおいて極めて有効な選択肢となります。導入前に自分のワークロードで効果を計測することが推奨されます。",
+    "topics": [
+      "Claude Code",
+      "headroom-ai",
+      "トークン削減",
+      "LLM",
+      "コンテキスト圧縮"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

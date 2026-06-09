@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-02T07:58:09.066277+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにテストケースを書かせているだけではない: manual-bb-test-harness の説明",
+    "url": "https://zenn.dev/rna4219/articles/0c51e22473e3c8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIを活用しつつ、ブラックボックステストの設計からリスク評価、最終的なリリース判断（Go/No-Go）までのプロセスを構造化するOSS「manual-bb-test-harness」の設計思想を解説しています。",
+    "summaryBody": "本記事は、生成AI時代の開発速度向上に伴いボトルネックとなりがちな「テスト工程」を、属人的な勘から説明可能な構造へと変えるOSS「manual-bb-test-harness」の解説です。このツールは、単なるAIによるテストケース自動生成ではなく、テストエンジニアが本来行うべき「観点出し」「リスクの見積もり」「期待結果の根拠確認」「リリース可否の判断」という一連の思考プロセスをハーネス（枠組み）化することを目指しています。\n\n特徴として、AIがもっともらしい嘘をつくのを防ぐために「根拠のない期待結果を捏造させない」安全装置や、異常系テストにおける「invalid_single_fault（一つだけ前提を壊す）」のデータ設計、そして最終的にリスクに基づいたゲート判定を行う仕組みが組み込まれています。テストエンジニアリングとハーネスエンジニアリングの知識を融合させ、手動テストが避けられない現場において、ジュニア層でも経験者のような判断軸を持ってテストを遂行できる再現性の高い成果物（アーティファクト・チェーン）の提供を目指しています。",
+    "topics": [
+      "QA",
+      "ソフトウェアテスト",
+      "テスト設計",
+      "AI開発",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 18,
+      "overall": 90
+    }
+  }
+}

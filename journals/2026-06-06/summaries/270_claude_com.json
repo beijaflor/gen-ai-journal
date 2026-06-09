@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:32:13.782522+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにおける「スキル」構築の教訓：Anthropic社内の実践ガイド",
+    "url": "https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicがClaude Codeの開発を通じて蓄積した、AIエージェントの能力を拡張する「スキル」の9つの分類と、効果的に構築・共有するためのベストプラクティス。",
+    "summaryBody": "Anthropicは、同社のAIエージェントツール「Claude Code」において、エージェントが発見・利用できる指示やスクリプトのセットである「スキル（Skills）」の活用法を公開しました。スキルは単なるMarkdownファイルではなく、スクリプトや設定、永続化データを含む「フォルダ」として機能します。同社は社内の数百のスキルを、ライブラリ参照、製品検証、データ分析、CI/CD、ランブックなど9つのカテゴリに整理。特に「製品検証」スキルは、ヘッドレスブラウザでのテスト実行や状態アサーションを通じて、出力品質に最も大きな影響を与えたとしています。作成のコツとして、モデルが既知の事柄は書かず「ハマりどころ（Gotchas）」を重点的に記述すること、情報を別ファイルに分ける「段階的な開示」の活用、ログファイルによる記憶の保持などが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "Anthropic",
+      "Software Development",
+      "Agent Skills"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Lessons from building Claude Code: How we use skills"
+  }
+}

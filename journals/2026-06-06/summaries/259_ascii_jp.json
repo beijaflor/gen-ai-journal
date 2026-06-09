@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:29:26.050432+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのPlan modeをやめてみる　～grill-meスキルで一歩ずつ設計を固め、アプリを作る～",
+    "url": "https://ascii.jp/elem/000/004/407/4407056/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのPlan modeに頼り切るのではなく、grill-meスキルとADRを組み合わせることで、AIとの対話を通じて設計の不整合を防ぎ、一貫性のあるアプリケーション開発を行う手法を解説。",
+    "summaryBody": "Claude Code（特にOpus 4.7）のPlan modeは強力な実装力を持つ一方で、提示されたプランを鵜呑みにすることで設計のブレやコードの肥大化を招く課題があります。本記事では、この課題を解決するために「grill-me」スキルを活用した対話型設計と、ADR（Architecture Decision Records）による意思決定の明文化を組み合わせたフローを提案しています。\n\n1. **grill-meスキルの活用**: 一括でプランを作成させるのではなく、AIに一問一答形式で設計を深掘りさせ、開発者が根拠を持って選択肢を選べるようにします。\n2. **ADRによる設計の永続化**: 決定事項をドキュメントとして蓄積し、実装時やデザイン時に参照させることで、プロジェクト全体の一貫性を維持します。\n3. **adr-managerスキルの自作**: ドキュメントの陳腐化を防ぐため、最新の決定とアーカイブを管理する独自のワークフローを構築し、設計の鮮度を保つ工夫を紹介しています。\n\nこの手法は、個人開発や設計品質を重視するプロジェクトにおいて、AIの「忠実に実装する強み」を最大限に引き出すための実践的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "ADR (Architecture Decision Records)",
+      "grill-me",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

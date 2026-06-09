@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:24:52.709691+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex の Remote Connections で OCI Compute インスタンスを活用！",
+    "url": "https://qiita.com/kanakani/items/0ebb2720c3a91dc74767",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codex Desktop AppのRemote Connections機能を利用し、OCI上のOracle Linux 9インスタンスへSSH接続してリモート開発環境を構築する手順の解説。",
+    "summaryBody": "本記事は、Codex Desktop Appの新機能である「Remote Connections」を用いて、OCI（Oracle Cloud Infrastructure）上のComputeインスタンスをリモートプロジェクトとして利用する方法を解説しています。具体的な構成として、ローカルのmacOSからOracle Linux 9インスタンスへのSSH接続を前提とし、リモート側での環境構築（Node.js 22、Codex CLI、bubblewrapのインストール）から、Device Authを用いた認証プロセスまでをステップバイステップで説明しています。また、SSH設定における秘密鍵の取り扱い、セキュリティ・リストの構成、トラブルシューティングといった実用的な運用情報も網羅されており、クラウド上のリソースをAIコーディングツールから直接操作したい開発者にとって有益なガイドとなっています。",
+    "topics": [
+      "OCI",
+      "Codex",
+      "SSH",
+      "Oracle Linux",
+      "Remote Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

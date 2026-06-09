@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-06T06:26:34.608191+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code (Opus 4.8) で全ツール呼び出しが壊れる — 日本語環境で踏みやすい未修正バグと回避策",
+    "url": "https://zenn.dev/edhiblemeer/articles/claude-code-opus48-tool-corruption",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code (Opus 4.8) の Windows/日本語環境で発生するツール呼び出し破損バグの挙動と、Opus 4.7 への切り替えを含む具体的な回避策が解説されています。",
+    "summaryBody": "Claude Code の最新モデル Opus 4.8 において、長時間使用や日本語文字の混入により、ツール呼び出し（Function Call）のタグが破損し正常に動作しなくなる深刻なバグが報告されています。この現象はモデルが自身の誤った出力を文脈として模倣する自己強化ループに陥ることで発生し、GitHub でも未修正の Issue として挙げられています。主なトリガーは「Windows環境」「長時間運用（文脈の蓄積）」「非ASCII文字」の組み合わせです。\n\n復旧策として `/rewind` や `/compact` で履歴を整理する方法があるほか、根本的な回避策として、バグが修正済みの Opus 4.7 へのダウングレードや、タスクを細分化してコンテキストの肥大化を防ぐ運用、および `CLAUDE.md` を活用した指示の永続化が推奨されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Opus 4.8",
+      "トラブルシューティング",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

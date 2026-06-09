@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-04T06:00:08.394112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMにWebアプリを自律生成させた — 28秒で完成、セキュリティテスト22件全PASS",
+    "url": "https://zenn.dev/seeda_yuto/articles/local-llm-agent-harness-guide",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ローカルLLM「gpt-oss:20b」を用い、Todoアプリやノートアプリを数十秒で自律生成させつつ、独自実装のセーフティハーネスでセキュリティを完封した実験報告。",
+    "summaryBody": "オープンウェイトのMoEモデル「gpt-oss:20b」を使用し、ブラウザ上で動作するWebアプリの自律生成能力を検証した。Todoアプリ、ポモドーロタイマー、Markdownノートアプリの3種を試作した結果、全件がわずか2回のAPI呼び出し（平均25秒程度）で実用レベルのコードとして完成した。特に、正規表現ベースのマークダウンパーサーやAudioContextを用いたビープ音の実装など、単一HTMLに閉じた高度なコード生成能力が確認された。一方、生成されたコードを安全に実行するために「ハーネスエンジニアリング」の概念を導入し、Pythonでサンドボックス、ポリシーエンジン、gitトランザクションの3層構造からなる安全装置（約300行）を構築。パストラバーサルや不正コマンド実行を含む22項目のセキュリティテストを100%遮断することに成功しており、ローカルLLMによる自律型開発エージェントの安全性と実用性を両立させる手法を提示している。",
+    "topics": [
+      "ローカルLLM",
+      "gpt-oss",
+      "自律エージェント",
+      "AIセキュリティ",
+      "Web開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}
