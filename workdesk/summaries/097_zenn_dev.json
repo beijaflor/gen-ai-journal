@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:38:08.177579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "設計資料をHTMLで回す — 生成・レビュー・社内共有のワークフロー",
+    "url": "https://zenn.dev/rehabforjapan/articles/html-design-doc-workflow-claude-code-202605",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、設計資料をHTML形式で生成・レビュー・共有することで、AIとの協調作業とドキュメントの表現力を最大化する新しいワークフローの提案。",
+    "summaryBody": "設計資料を従来のMarkdownではなくHTML形式で管理する試みについての解説。AI（Claude Code）にとってMarkdownが「制限的」になりつつあるという背景から、表や図、インタラクションを1ファイルに集約できるHTMLの利点に着目しています。具体的には、(1)Claude Codeでコメント機能付きHTMLを生成、(2)ブラウザ上でのレビューコメントを直接修正プロンプトに変換、(3)AWS（S3/CloudFront/Cognito）ベースの社内基盤へ専用スキルで即座にデプロイ、という一連の流れを構築。これにより、リポジトリに依存しない柔軟な設計共有と、レビュー指摘の即時反映が可能になります。AI強化人間としての実務経験に基づいた、極めて実践的な生産性向上の取り組みです。",
+    "topics": [
+      "Claude Code",
+      "設計ドキュメント",
+      "LLM",
+      "AWS",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

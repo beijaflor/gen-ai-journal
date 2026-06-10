@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:26:14.503243+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのトークン代を節約する CLAUDE.md と copilot-instructions.md 実践ガイド",
+    "url": "https://qiita.com/shinkai_/items/8f88307b7cb13b748e57",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントのステートレスな仕組みを理解し、設定ファイルの最適化やプロンプトキャッシング、サブエージェントの分離によって、開発コストを抑えつつ精度を高める実践的な手法をまとめたガイドです。",
+    "summaryBody": "AIエージェント（Claude CodeやGitHub Copilot）が毎ターン全履歴を送信する仕組み（ステートレス性）を解説し、トークン消費を劇的に抑えるための具体的戦略を提示しています。\n\n### 主な最適化ポイント\n- **設定ファイルの剪定**: `CLAUDE.md`や`copilot-instructions.md`から「コードを読めばわかる情報」を削除し、重要なルールのみを数百トークン以内に凝縮することで、情報のシグナル比を高めます。\n- **プロンプトキャッシングの活用**: 静的な設計書をセッションの冒頭に配置することで、2回目以降の入力コストを大幅に削減します。\n- **出力トークンの制御**: 「説明不要」「簡潔に」といった指示を設定ファイルに常駐させ、出力コストを40〜70%削減します。\n- **MCPサーバーとサブエージェントの運用**: 使用しないツールの定義をオフにすることや、独立したコンテキストを持つサブエージェントに探索を任せることで、メインセッションの肥大化を防ぎます。\n\n「書けばいい」という風潮に対し、トークンエコノミーの観点から設定ファイルを「コードと同様にレビューし、剪定する」重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "GitHub Copilot",
+      "プロンプトエンジニアリング",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

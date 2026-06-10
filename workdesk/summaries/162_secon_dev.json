@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:20:39.763103+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "macOS Tahoe で動くネイティブAPI経由での翻訳 cli を作った",
+    "url": "https://secon.dev/entry/2026/06/08/080000-mac-translate-cli-trn/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "macOS Tahoeのネイティブ翻訳APIを利用し、Apple Intelligenceモデルによる高品質翻訳と高速な従来型翻訳を使い分けられるCLIツール「trn」の紹介。",
+    "summaryBody": "macOS Tahoeで提供されるネイティブ翻訳APIを活用したCLIツール「trn」が公開されました。このツールは、Apple Intelligenceモデルを利用した高品質な翻訳（high）と、従来の統計確率ベースの高速な翻訳（low）の2種類を選択可能です。作者による検証の結果、現在のApple Intelligenceモデルは日英翻訳において動作が低速な割に劇的な品質向上は見られなかったため、デフォルト設定は高速な従来モデル（low）に最適化されています。Homebrew経由でインストール可能で、パイプ入力をサポートしており、開発ワークフローにおけるローカル完結型の翻訳環境として実用的です。",
+    "topics": [
+      "macOS",
+      "CLI",
+      "Apple Intelligence",
+      "翻訳",
+      "ネイティブAPI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 82
+    }
+  }
+}

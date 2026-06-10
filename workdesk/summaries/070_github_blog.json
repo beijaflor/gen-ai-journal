@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:45:04.496926+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIでのカスタムエージェント活用法：一発のプロンプトから再利用可能なワークフローへ",
+    "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilot CLIにて、リポジトリ内のMarkdownファイルで定義可能な「カスタムエージェント」を活用し、セキュリティ監査やリリース作成などの反復タスクを標準化・自動化する方法を解説しています。",
+    "summaryBody": "GitHub Copilot CLIの新機能である「カスタムエージェント」の定義と活用方法に関するガイドです。カスタムエージェントは、リポジトリの`.github/agents/`ディレクトリに`.agent.md`という拡張子で保存されるMarkdownファイルによって構築されます。このファイルには、YAMLフロントマターを用いてエージェントの名前や使用可能なツール（gh、git、terraform、trivyなど）を定義し、本文でエージェントの役割、ガードレール、出力形式を指定します。記事内では「セキュリティ監査」「IaCコンプライアンス」「リリースノート作成」「インシデント対応」という4つの具体的なワークフロー例が紹介されており、各プロファイルのテンプレートも提供されています。これにより、従来は個人の経験に依存していたターミナル上での作業を、チーム全体でレビュー・バージョン管理可能な資産へと変換できます。また、パートナー製の既成エージェント（JFrogやDynatrace等）と、チーム独自のルールを組み込むカスタムエージェントの使い分けについても指針が示されています。",
+    "topics": [
+      "GitHub Copilot",
+      "CLI",
+      "AI Agents",
+      "DevOps",
+      "Infrastructure as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI"
+  }
+}

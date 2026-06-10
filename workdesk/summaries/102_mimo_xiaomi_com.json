@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:36:56.294063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1兆パラメータモデルで1,000 TPSを達成：Xiaomi MiMo-V2.5-Pro-UltraSpeedの発表",
+    "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "XiaomiがTileRTとの共同開発により、1兆パラメータ規模の超大規模言語モデルで1,000 tokens/sを超える推論速度を実現する「MiMo-V2.5-Pro-UltraSpeed」を発表しました。",
+    "summaryBody": "Xiaomi MiMoチームとTileRTシステムチームの共同設計（Codesign）により、1兆（1T）パラメータのモデルで業界最高水準の1,000 tokens/s（TPS）超という生成速度を達成しました。この高速化は、専用ハードウェアではなく一般的なGPU（8枚構成ノード）で実現されており、主要な技術として、MoEエキスパート層への「FP4量子化」、ブロックレベルの並列予測を行う「DFlash投機的デコーディング」、そしてGPUの計算カーネルを常駐させオーバーヘッドを極限まで排除するTileRTの「永続エンジン（Persistent Engine）」が採用されています。この劇的な速度向上により、Best-of-Nによる推論品質の改善、コーディングエージェントのリアルタイム化、さらには医療や金融などの低遅延が必須な領域での高度なAI活用が可能になります。現在、期間限定でAPIトライアルが実施されているほか、HuggingFaceでモデルの重みも公開されています。",
+    "topics": [
+      "Large Language Model",
+      "Inference Optimization",
+      "Quantization",
+      "Speculative Decoding",
+      "Xiaomi MiMo"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "MiMo-V2.5-Pro-UltraSpeed: Pushing 1T-Parameter Model Generation Speed to 1000 TPS"
+  }
+}

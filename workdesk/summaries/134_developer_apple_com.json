@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:28:35.682506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Core AI - Apple Silicon向けオンデバイスAI実行フレームワーク",
+    "url": "https://developer.apple.com/documentation/coreai/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Apple Siliconの性能を最大限に引き出すために設計された、デバイス上でのAIモデル実行・管理・デバッグを高度に制御できる新フレームワーク「Core AI」の概要。",
+    "summaryBody": "Core AIは、Apple Silicon（CPU、GPU、Neural Engine）に最適化されたAIモデルの構築、実行、展開を支援する新しいSwiftフレームワークです。従来のCore MLよりも低レベルかつ柔軟な制御を提供し、モデルの特殊化（Specialization）やキャッシング、推論パフォーマンスの微調整が可能です。\n\n### 主な特徴とエコシステム\n- **新しいモデル形式**: Core AI PyTorch Extensionsを使用して、既存のモデルを`.aimodel`フォーマットへ変換して利用します。\n- **高度なデバッグ**: 「Core AI Debugger」アプリにより、モデル構造の可視化やテンソル値のPythonソースコードへのトレース、数値デバッグが可能です。\n- **パフォーマンス最適化**: XcodeのデバッグゲージやInstrumentによるプロファイリングに加え、`coreai-build`ツールを用いたビルド時の事前コンパイル（AOTコンパイル）をサポートします。\n- **Core MLとの使い分け**: 決定木やテーブルデータなど、ニューラルネットワーク以外のモデルタイプを使用する場合は、引き続きCore MLが推奨されています。",
+    "topics": [
+      "Core AI",
+      "Apple Silicon",
+      "Machine Learning",
+      "Swift",
+      "On-device AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Core AI | Apple Developer Documentation"
+  }
+}

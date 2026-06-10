@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:32:10.544394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SentryにおけるAIを活用したバグ再現の自動化手法",
+    "url": "https://blog.sentry.io/ai-bug-reproduction/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Sentryの開発チームがClaudeを活用し、GitHubのIssueからバグ再現用の環境とコードを自動生成して、トリアージ作業の効率を大幅に向上させた事例を紹介しています。",
+    "summaryBody": "SentryのSDK開発チームは、159ものパッケージを抱える広大なエコシステムのバグ報告に対応するため、Claudeのカスタムスキルを活用した再現フローの自動化を導入しました。バグ修正において最も手間がかかるのは、環境構築や特定フレームワークのバージョン調整といった「ボイラープレート」の準備です。\n\n導入されたAIエージェントは、GitHubのIssue URLを元に言語・フレームワーク・SDKのバージョン情報を解析し、ローカルディレクトリの作成、標準的なツール（uv, npm等）を用いた最小限の再現環境の構築、そして実行手順を記載したプルリクエストの作成までを自動で行います。この仕組みにより、従来数時間かかっていたセットアップ作業が大幅に短縮されました。\n\n運用の教訓として、AIに過度な期待をせず「複雑すぎる場合は途中で停止して人間に説明する」という選択肢を与えることや、`gh` CLIなどの既存ツールを活用すること、そして「ボットによるノイズ」を防ぐために完全自動化ではなく人間が介在する余地を残すことの重要性が強調されています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "バグトリアージ",
+      "自動化",
+      "Sentry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    },
+    "originalTitle": "How We Use AI to Reproduce Reported Bugs | Sentry Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:20:14.308862+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発を2コマンドで組織標準に ── Claude Code × Codexで設計からテストまで",
+    "url": "https://techblog.zozo.com/entry/ai-development-two-commands",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ZOZOがClaude CodeとCodexを連携させ、設計からテストまでを2つの標準コマンドで完結させることで、AI駆動開発の組織的な平準化と品質向上を実現した取り組み。",
+    "summaryBody": "ZOZO基幹システム本部における、AIエージェントを活用した開発プロセスの標準化事例です。個人のスキルに依存しがちなAI活用を改善するため、`/dev-init`（初期設計・タスク分解）と`/dev-resume`（実装・再開・レビュー）という2つのコマンドを導入しました。Claude Codeをメインの実行役、Codexを批判的なレビュアーとして役割分担させ、複数のAIモデル間で「批判的対話」を行わせることで設計・実装の品質を担保しています。また、進捗状況をMarkdown形式でGit管理することで、AIが常に最新のコンテキストを把握できる仕組みを構築。Playwright MCPを用いたフロントエンドの自動画面確認まで統合されており、人間が判断すべき「抽象から具体への変換」とAIが得意な「情報の変換・抽出」を明確に切り分けた実戦的なフレームワークとなっています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AI駆動開発 (AI-driven development)",
+      "MCP (Model Context Protocol)",
+      "開発プロセス標準化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

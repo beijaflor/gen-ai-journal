@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:43:25.187699+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grepこそがすべてか？エージェント用ハーネスがエージェント検索をどのように再定義するか",
+    "url": "https://arxiv.org/abs/2605.15184",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMエージェントの検索タスクにおいて、単純なgrep（文字列検索）がベクトル検索を上回る精度を示す場合があることを、主要なCLIツールと独自環境を用いた比較実験で明らかにした研究。",
+    "summaryBody": "LLMエージェントによる自律的な検索・ツール実行ワークフローにおいて、検索戦略（grep vs ベクトル検索）とツール呼び出しの枠組み（ハーネス）が性能に与える影響を実証的に調査した論文。実験では、Claude CodeやGemini CLIなどの実用的なツールと独自ハーネス（Chronos）を用い、LongMemEvalをベースにした評価を実施。その結果、多くのケースでgrepがベクトル検索よりも高い精度を記録した。さらに、検索結果の提示方法（インライン表示かファイルベースか）や、無関係な会話履歴による「ノイズ」が混入した場合の頑健性も検証しており、エージェントの成功にはモデル自体の性能だけでなく、ツールとのインターフェース設計である「ハーネス」が極めて重要であることを示唆している。",
+    "topics": [
+      "LLM Agent",
+      "Information Retrieval",
+      "RAG",
+      "Grep",
+      "Agentic Workflow"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search"
+  }
+}

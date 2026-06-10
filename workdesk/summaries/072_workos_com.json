@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:44:30.744382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのメモリ・コンテキスト汚染：攻撃者による長期記憶の改ざんを防ぐための防御策",
+    "url": "https://workos.com/blog/ai-agent-memory-poisoning",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの長期記憶やRAGを悪意あるデータで汚染し、セッションを跨いで永続的に誤作動を引き起こす「メモリ汚染」の脅威と、その多層防御戦略を解説する。",
+    "summaryBody": "AIエージェント特有のセキュリティリスクである「メモリおよびコンテキスト汚染（OWASP ASI06）」に焦点を当てた解説記事です。プロンプトインジェクションとの最大の違いは、攻撃と被害が時間的に分離されること、およびエージェントが自身の記憶を「絶対的な事実」として無批判に信頼する点にあります。MemoryGraftやMINJAといった具体的な攻撃手法を紹介しつつ、RAGナレッジベースの汚染、会話要約の操作、エージェント間汚染といった侵入経路を特定。対策として、入力時の信頼度検証、データ出自（プロバンス）の追跡、システム・ユーザー・エージェント間でのメモリ分離、時間の経過に伴う情報の重み付け減衰、そして長期的な挙動のドリフト（変遷）監視といった、AIインフラ層での多層防御の必要性を説いています。",
+    "topics": [
+      "AI Security",
+      "Memory Poisoning",
+      "RAG",
+      "LLM Agents",
+      "OWASP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Memory and context poisoning: Don't let attackers rewrite your AI agent's memory"
+  }
+}

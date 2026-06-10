@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:36:15.007155+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Maestro MCPとClaude Code Skillsによる自律的なE2Eテスト作成",
+    "url": "https://zenn.dev/flierinc/articles/fcf32bfa82524e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Maestro MCPとClaude Codeのスキル機能を組み合わせ、FlutterアプリのE2Eテスト作成から実行、コード修正、失敗時の自動リカバリまでをAIエージェントで完結させる手法の紹介。",
+    "summaryBody": "モバイルアプリのE2Eテスト作成における工数とメンテナンスの課題を解決するため、Maestro MCPとClaude Code Skillsを活用した自律的なワークフローを構築した事例。著者はFlutterアプリのテスト作成に特化したOSS「asmz-agent-plugins」を公開しており、これを使用することでAIエージェントがアプリの画面構造を調査し、最適なSemantics(identifier)の追加提案からMaestro Flowの生成、テストの実行までを自動で行います。\n\n具体的には、Claude Codeがコードベースを解析してテストに必要な要素が不足している場合にソースコードを修正し、安定したテストコードを生成します。また、仕様変更によってテストが失敗した場合でも、AIがMaestro MCP経由で現在のUI状態（スクリーンショットやヒエラルキー）を取得・分析し、エラー原因となる要素（モーダル表示など）を回避する処理を自動で追加・修正する一連の流れが実証されています。これにより、これまでエンジニアの負担が大きかったE2Eテストの維持・更新コストの劇的な削減が期待できます。",
+    "topics": [
+      "Maestro",
+      "Model Context Protocol (MCP)",
+      "Claude Code",
+      "Flutter",
+      "E2Eテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

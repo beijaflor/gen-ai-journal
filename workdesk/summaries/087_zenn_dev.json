@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:40:40.063613+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agents で社内データ・ログ・コードを横断調査する Slack bot を安定運用する方法",
+    "url": "https://zenn.dev/dinii/articles/1cfac1ca8b46c3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Managed Agentsを活用し、社内エンジニアの調査業務を自動化するSlack botのアーキテクチャ設計、セッション永続化、コスト最適化の実装パターンを解説した技術記事。",
+    "summaryBody": "Claude Managed Agentsを社内向けSlack botに導入し、安定運用するための技術的プラクティスを詳説しています。設計面では、Cloud Run（実行系）とAgent定義（プロンプト・スキーマ）を分離し、GitHubリポジトリのマウント、動的なスキル（マニュアル）管理、Memory storeによる自律改善を組み合わせています。特に運用の鍵として、Firestoreを用いたSlackスレッドとAnthropicセッションの紐付け（セッション再利用）や、Cloud Tasksによる障害時のリトライ制御を挙げています。また、トークンコスト削減のためのシステムプロンプト圧縮や、BigQueryの課金上限設定といった実務的なコスト管理、さらにはClaude Codeを用いた回答ログ分析による継続的改善サイクルについても言及されており、ベータ版のManaged Agentsを実戦投入するための包括的なガイドとなっています。",
+    "topics": [
+      "Claude Managed Agents",
+      "Anthropic",
+      "Slack bot",
+      "Cloud Run",
+      "LLM Ops"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

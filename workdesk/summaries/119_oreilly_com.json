@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:32:25.170698+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントスタック（2026年版）：プロダクション導入に向けた6つの階層モデル",
+    "url": "https://www.oreilly.com/radar/the-ai-agents-stack-2026-edition/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点でのAIエージェント開発において重要となる、推論、プロトコル、メモリ、フレームワーク、評価、ガードレールの6つの技術レイヤーとその選定基準を網羅的に解説しています。",
+    "summaryBody": "この記事は、AIエージェントをデモレベルからプロダクション品質へと引き上げるために必要な6つの技術レイヤーを定義しています。\n\n1. **モデルと推論**: 推論モデル（o1/o3等）の台頭により、単一コールで複雑なタスクが可能になりました。プロトタイプはクローズド、本番はオープンウェイトモデルという潮流があります。\n2. **プロトコルとツール**: MCP (Model Context Protocol) が業界標準となり、エージェントとツールの接続を簡素化しています。ブラウザ自動化やエージェント間通信プロトコルの成熟も進んでいます。\n3. **メモリと知識**: RAGを超えた「コンテキスト・エンジニアリング」が重要視され、構造化されたメモリ管理がアーキテクチャの中核となっています。\n4. **フレームワークとSDK**: プロバイダーSDK、LangGraphのようなグラフ型フレームワーク、自前実装の3択となっており、状態管理の複雑さに応じた選択が求められます。\n5. **評価（Eval）と観測**: プロダクションへの最大の障壁であり、ツール呼び出しの正確性や長期タスクの評価、回帰テストの自動化が必須です。\n6. **ガードレール**: 出力フィルタリングから、ツール実行時の認可・ガバナンスへと焦点が移っています。\n\n最終的に、スタックの抽象化が進み、2027年までには多くの機能がモデルプロバイダーに統合されると予測されていますが、大規模・複雑なシステムでは依然として各レイヤーの深い理解が不可欠です。",
+    "topics": [
+      "AI Agents",
+      "MCP (Model Context Protocol)",
+      "LangGraph",
+      "LLM Infrastructure",
+      "Context Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "The AI Agents Stack (2026 Edition) – O’Reilly"
+  }
+}
