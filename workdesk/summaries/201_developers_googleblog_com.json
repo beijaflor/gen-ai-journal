@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:32:28.101813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DiffusionGemma：デベロッパーガイド",
+    "url": "https://developers.googleblog.com/diffusiongemma-the-developer-guide/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが発表したDiffusionGemmaは、従来の自己回帰型ではなく拡散モデルを採用することで、最大4倍の高速化と双方向コンテキストによる自己修正を可能にした実験的な言語モデルです。",
+    "summaryBody": "DiffusionGemmaは、Gemma 4をベースとした26B（推論時3.8Bパラメータ活性）の混合エキスパート（MoE）モデルであり、テキスト生成に拡散モデル（Diffusion Model）のアプローチを導入しています。\n\n主な特徴は以下の通りです：\n- **演算主導の並列生成**: 従来のLLMのボトルネックであったメモリ帯域幅の制限を、256トークンのキャンバスを並列にデノイジング（除去）することで回避し、NVIDIA H100で毎秒1000トークン以上の生成速度を実現します。\n- **双方向コンテキストと自己修正**: 全てのトークンが互いにアテンションを向ける双方向構造により、生成過程でのエラー修正が可能です。これは数独のような制約の厳しい問題解決において、従来の自己回帰型モデルよりも高い精度（0%から80%への向上）を発揮します。\n- **ブロック自己回帰拡散**: 長文生成時には、256トークンごとのブロック単位で並列処理しつつ、KVキャッシュを用いて逐次的に繋げることで安定性を保ちます。\n\nvLLM、Hugging Face、SGLang、MLXなどの主要フレームワークに対応しており、Apache 2.0ライセンスでウェイトが公開されています。また、JAXベースの「Hackable Diffusion」によるチューニングレシピも提供されています。",
+    "topics": [
+      "DiffusionGemma",
+      "Gemma 4",
+      "Diffusion Models",
+      "LLM Architecture",
+      "vLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "DiffusionGemma: The Developer Guide"
+  }
+}

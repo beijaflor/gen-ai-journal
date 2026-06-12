@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:34:37.236007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「ChatGPTのコネクタでつながるし、M365 Copilotいらなくない？」→有識者3人に聞いてみた　知らないと損するコンテキスト管理「Work IQ」の仕組み",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2606/11/2000000059/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoft 365 Copilotが他社AIのコネクタ接続と一線を画す核心的理由である、独自のコンテキスト管理機構「Work IQ」の3層構造と動作原理を専門家が解説する。",
+    "summaryBody": "他社AI（ChatGPT等）のコネクタ機能とMicrosoft 365 Copilot（以下Copilot）の決定的な違いは、独自のコンテキスト管理基盤「Work IQ」の有無にある。専門家によれば、他社AIが明示的なデータ指定を要するのに対し、Work IQはMicrosoft Graphを基盤に「データ層」「コンテキスト層」「推論層」の3層で機能し、ユーザーの行動履歴や組織内関係、コミュニケーション状況から文脈を「察して」最適な回答を導き出す。特にコンテキスト層では、直近の更新履歴や送受信履歴に基づいた情報の重み付けが行われ、単純なファイル検索を超えた推論が可能となる。この恩恵を最大化するには、SharePoint等のデータ整理（ゴミデータの排除）が不可欠であり、Copilotチャットを起点にAIを業務の流れに組み込む「AI in the flow of work」が重要視されている。",
+    "topics": [
+      "Microsoft 365 Copilot",
+      "Work IQ",
+      "Microsoft Graph",
+      "コンテキスト管理",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

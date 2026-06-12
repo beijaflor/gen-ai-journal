@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:25:17.164388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5を１日使ってみて",
+    "url": "https://qiita.com/yo_arai/items/30ae4581b8a9b3206b15",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年に公開されたとされるAnthropicの次世代モデル「Fable 5」を実務で使用し、UI再現性の向上と驚異的な自律性を確認した一方、コストと速度面に課題があることを報告するレビュー記事です。",
+    "summaryBody": "Anthropicが2026年6月に一般公開した新モデル「Fable 5」を、Claude Code環境で1日試用した所感のまとめです。主な特徴として、仕様書に基づいたUIの実装精度がOpus 4.8と比較して大幅に向上しており、画像からのモックアップ再現も実用的なレベルに達しています。特に特筆すべきはバグ調査における自律性で、指示を与えていない範囲のブランチまで自ら調査し原因を特定する能力を見せました。一方で、トークン消費が非常に激しく、実行速度もOpus 4.8より大幅に遅いというトレードオフがあり、高度な推論を必要とするタスクへの適性が示唆されています。",
+    "topics": [
+      "Claude Fable 5",
+      "Anthropic",
+      "Claude Code",
+      "AIコーディング",
+      "LLM比較"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

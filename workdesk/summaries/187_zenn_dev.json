@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:36:05.028943+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ollama + qwenで、PDFを読み取る環境を構築",
+    "url": "https://zenn.dev/yuta_enginner/articles/4fb1d8b8d43923",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OllamaとQwen3.5 9Bを使い、MacBookのローカル環境でPDFをテキストまたは画像として解析・要約する実装方法の解説。",
+    "summaryBody": "この記事では、MacBook Air (M5/16GB) 環境において Ollama を活用し、ローカルLLMである Qwen3.5 9B を用いてPDFを読み取る環境構築手順を紹介しています。機密性の高いビジネス文書を安全に処理することを目的とし、以下の3つの実装パターンがコード付きで解説されています。1) `ollama` ライブラリと `PyMuPDF` を用いた直接的なテキスト抽出および画像変換による解析。2) `LangChain` を介したLLM呼び出しとデータ管理。3) `FastAPI` を用いた、ブラウザからPDFをアップロードして要約結果を取得するWeb APIの実装。特に、PDF内のテキスト情報が失われている場合に備え、PDFを画像（PNG）に変換してQwenのマルチモーダル機能を活用する手法が実用的です。",
+    "topics": [
+      "Ollama",
+      "Qwen",
+      "Local LLM",
+      "Python",
+      "PyMuPDF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:29:17.948594+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apache Burr (Incubating): 状態管理と可視性に優れたPython製AIエージェント構築フレームワーク",
+    "url": "https://burr.apache.org/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Apache Burrは、ステートマシンに基づいた直感的なPython APIにより、AIエージェントの挙動を完全に制御・可視化し、信頼性の高いアプリケーション開発を可能にするフレームワークです。",
+    "summaryBody": "Apache Burr（インキュベーティング）は、チャットボットから複雑なマルチエージェントシステムまでを構築するためのPythonフレームワークです。\n\n主な特徴と機能：\n- **ステートマシンベースの設計**: アプリケーションを「アクション（Action）」と「遷移（Transition）」として定義します。独自のDSLやYAMLを必要とせず、純粋なPython関数とデコレータのみで構築できるため、開発者の自由度が高いのが特徴です。\n- **組み込みの可視化とデバッグ**: 専用のBurr UIにより、各ステップの実行、状態の変化、トレースをリアルタイムで監視・デバッグできます。\n- **永続化と状態管理**: 状態をディスクやデータベースに自動保存し、任意の地点からの再開や過去の実行のリプレイ、ユニットテストを容易にします。\n- **Human-in-the-Loop**: ワークフローの途中で人間の入力を待機する承認プロセスなどをネイティブにサポートしています。\n\n過度な抽象化を避け、制御性と透明性を重視する設計思想を持っており、LangChainなどの既存フレームワークに比べて本番環境への導入（Production-ready）を意識した堅牢な作りになっています。",
+    "topics": [
+      "AIエージェント",
+      "Python",
+      "ステートマシン",
+      "オブザーバビリティ",
+      "Apacheプロジェクト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Apache Burr (Incubating) - Build Reliable AI Agents and Applications"
+  }
+}
