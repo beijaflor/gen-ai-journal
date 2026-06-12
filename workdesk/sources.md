@@ -74,7 +74,6 @@
 - [x] 163. https://zenn.dev/counterworks/articles/62667be5a186b8
 - [x] 162. https://secon.dev/entry/2026/06/08/080000-mac-translate-cli-trn/
 - [x] 161. https://www.itmedia.co.jp/pcuser/articles/2606/08/news096.html
-- [x] 160. https://www.journalofinfection.com/article/S0163-4453(26)00084-8/fulltext
 - [x] 159. https://zenn.dev/abalol/articles/579296fa31056f
 - [x] 158. https://www.technologyreview.jp/s/384248/are-ai-chatbots-making-us-lose-control-of-our-brains/
 - [x] 157. https://diary.sorah.jp/2026/06/08/himari-for-mcp
