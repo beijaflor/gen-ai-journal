@@ -1,32 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-06-13T09:26:52.087617+00:00",
+    "generatedAt": "2026-06-13T10:28:10.528291+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "404 ページが見つかりません - Vercel",
-    "url": "https://vercel.com/blog/how-okara-runs-cmo-agents-for-thousands-of-companies-on-vercel",
+    "title": "Vercelを活用し12万社のCMOエージェントを運用するOkaraの事例",
+    "url": "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
     "language": "en",
-    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
-    "oneSentenceSummary": "Vercelのウェブサイトで指定されたページが見つからない際に表示される、各種製品やドキュメントへのナビゲーションを含む404エラーページです。",
-    "summaryBody": "このコンテンツは、Vercelのプラットフォーム上で無効なURLにアクセスした際に表示される標準的な404エラーページです。特定の内容を持つ記事ではありませんが、ページ内にはVercelが提供する主要なサービス（AI SDK、v0、Next.js、Turborepo、Fluid Computeなど）や、開発者向けのリソース（ドキュメント、ブログ、テンプレート、マーケットプレイス）へのリンクが網羅されています。ユーザーが迷った際に、プラットフォームの各機能やサポートセクションへ迅速に遷移できるよう設計されたハブページとしての役割を果たしています。",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "わずか4人のチームで12万社のAIマーケティングを自動化するOkaraが、Vercel AI GatewayとSandboxを駆使して1日40億トークンを処理する技術構成を解説しています。",
+    "summaryBody": "AI CMOプラットフォーム「Okara」は、SEO、SNS、コンテンツ制作などを代行する専門のエージェント群を運用し、12万社以上の企業の成長を支援しています。わずか4名のエンジニアでこの規模を支えるため、同社はVercelのインフラを最大限に活用しています。具体的には、Vercel AI Gatewayの導入により、8つの異なるモデルプロバイダーを単一のAPIで管理し、リトライ処理やフォールバック、課金管理のオーバーヘッドを解消。新しいAIモデルがリリースされた当日にユーザーへ提供できるスピード感を実現しました。また、エージェントがサイト分析コードを実行する隔離環境としてVercel Sandboxesを利用し、安全かつ即座にSEO改善のプルリクエストを生成するフローを構築しています。インフラを隠蔽し、プロダクト開発に専念することで、1日40億トークンという膨大なトラフィックの処理を少人数で可能にしています。",
     "topics": [
       "Vercel",
-      "Web Development",
-      "Developer Tools",
-      "Cloud Platform"
+      "AI Agents",
+      "LLMOps",
+      "AI Gateway",
+      "Sandbox"
     ],
     "scores": {
-      "signal": 1,
-      "depth": 1,
-      "uniqueness": 1,
-      "practical": 1,
-      "antiHype": 5,
-      "mainJournal": 5,
-      "annexPotential": 10,
-      "overall": 10
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
     },
-    "originalTitle": "404: Not Found"
+    "originalTitle": "How Okara runs CMO agents for 120,000 companies on Vercel"
   }
 }

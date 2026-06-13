@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T10:34:11.804138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントをゼロから構築する：長期タスクのプランニング",
+    "url": "https://news.ycombinator.com/item?id=48461635",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMにスクラッチパッドやTODOリスト、自己修正ループを組み込み、複雑なタスクを段階的に実行できるAIエージェントの構築手法を解説する。",
+    "summaryBody": "この記事は、AIエージェントに長期的な計画立案能力を持たせるための実践的なチュートリアルである。主なアプローチとして、思考を整理する「スクラッチパッド」、進行状況を管理する「TODOリスト」、そして失敗時に自己修復を試みる「リカバリ戦略」の3点を挙げ、それらをPythonコードで実装する方法を説明している。Hacker Newsの議論では、AIにアーキテクチャ設計を任せることの実用性や、コンテキストの断片化を防ぐための外部ストレージの活用法について、ベテランエンジニアたちの間で活発な議論が交わされた。特に「上位モデルで計画し、軽量モデルで実行する」といった階層的ワークフローの有効性が強調されている。",
+    "topics": [
+      "AIエージェント",
+      "LLMプランニング",
+      "プロンプトエンジニアリング",
+      "自律型エージェント",
+      "ソフトウェア設計"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 65,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "Build a Basic AI Agent from Scratch: Long Task Planning | Hacker News"
+  }
+}
