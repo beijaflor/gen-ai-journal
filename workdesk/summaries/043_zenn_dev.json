@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:48:45.264302+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで仕様書をMarkdown/HTMLで記述を比較",
+    "url": "https://zenn.dev/kawauchi_lab/articles/4b300879a41ab5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを用いて仕様書をMarkdownとHTMLで生成し、視認性・生成時間・トークン消費量のトレードオフを比較検証した研究。",
+    "summaryBody": "Claude Code（モデル：Opus 4.8 / high effort）を使用し、実装コードから仕様書をリバース生成する際の形式による違いを検証。Markdown（プレーン/Mermaid併用）とHTML（静的/Playwright自己検証/インタラクティブ要素）の5パターンで比較した。結果、HTML形式はデザイン性やインタラクティブな操作性（折りたたみ、ホバー等）で圧倒的に優れる一方、生成時間はMarkdownの3分に対し最大33分、トークン量は13.7kから114.1kへと激増することが判明。仕様駆動開発におけるドキュメントの質とコスト、メンテナンス性のバランスを考える上での指標を提示している。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "仕様駆動開発",
+      "プロンプトエンジニアリング",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

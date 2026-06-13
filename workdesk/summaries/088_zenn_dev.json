@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:40:27.614127+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のトークン削減を実測した — semble 93%・cacheRead 1800倍の内訳",
+    "url": "https://zenn.dev/pepabo/articles/claude-code-token-reduction-measured",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおけるプロンプトキャッシュや意味検索MCP「semble」の導入によるトークン削減効果を実測し、コード検索で93%の削減、キャッシュ利用が通常入力の1800倍に達した事例を紹介。",
+    "summaryBody": "Claude Codeの運用におけるコストとコンテキストの最適化手法とその実測値に関する解説。主な手法として、プロンプトキャッシュの最大化、タスクに応じたOpusとSonnetのモデルルーティング、さらに「ルールのオンデマンド化」や「セッションログからのルール自動抽出（rule-mining）」といった独自の工夫を挙げている。計測の結果、`semble`を用いた意味検索により、全ファイルを読み込む場合と比較して93%ものトークン削減を達成した。また、`ccusage`による集計では、ある1日の統計でキャッシュ読み込みが入力の約1800倍に達しており、プロンプトキャッシュの圧倒的な効率性が数値で証明されている。単なる手法の導入に留まらず、実測を通じて効果を可視化することの重要性を強調している。",
+    "topics": [
+      "Claude Code",
+      "Prompt Engineering",
+      "LLM Cost Optimization",
+      "MCP",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

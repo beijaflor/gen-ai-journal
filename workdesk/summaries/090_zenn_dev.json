@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:39:57.454107+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Claude Code」を支える技術：AIエージェントの性能を最大化する「ハーネス」の実装戦略",
+    "url": "https://zenn.dev/knowledgesense/articles/7ce72924c0050f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの内部構造を解析し、AIモデルの裁量を最大化しつつ安全性を担保する「ハーネス（制御環境）」の設計思想と5つの主要な実装コンポーネントを解説しています。",
+    "summaryBody": "Anthropicのコーディングエージェント「Claude Code」の内部解析論文に基づき、その高度なアーキテクチャを詳説した記事です。最大の特徴は、ソースコードの98.4%がAIモデルを支えるための「ハーネス（制御環境）」で構成されている点にあります。主要な技術要素として、①拒否・確認・許可の3段階で制御するパーミッション、②コンテキスト消費量に応じた4つの拡張手段（Hooks, Skills, Plugins, MCP）、③5段階の段階的要約・削除（Lazy Degradation）によるコンテキスト管理、④ベクトル検索を使わずMarkdown（CLAUDE.md）で管理する独自のメモリ思想、⑤Git worktreeを活用した軽量なサブエージェント実行環境、が挙げられます。AIを過度に制約するのではなく、自由度を与えつつ環境側で緻密に制御するという、実用的なエージェント開発の核心を突く内容です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "ソフトウェアアーキテクチャ",
+      "LLMハーネス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

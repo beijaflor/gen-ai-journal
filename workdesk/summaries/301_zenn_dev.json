@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:49:26.171316+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeと91本のPDFで知識グラフを作って卒論を書いた（そして何が壊れたか）",
+    "url": "https://zenn.dev/keipi/articles/lbd-knowledge-graph-91pdfs",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "非エンジニアの著者がClaude CodeとPythonを駆使し、91本の文献から知識グラフを構築して卒論を完遂させた過程と、その裏側で起きた数々の実装上の失敗と改善策の記録。",
+    "summaryBody": "著者は91本のPDF（約460万字）をClaude Codeと17本のPythonスクリプトで処理し、中国の社会信用システムに関する622概念・846エッジの知識グラフを構築した。手法にはLiterature-Based Discovery (LBD)のSwanson ABCモデルを採用し、未知の研究ギャップを抽出。ノードの孤立（当初40%）をSentence-BERTによる重複排除や3段階のエッジ追加（定義文ベースの自動抽出、人間による承認等）で解消し、ハブノードを除外するアルゴリズムで仮説の質を高めた。一方で、セッション間のJSONキー名の不一致により集計が0件になるバグや、ヒューリスティックな予測の実装、マージ後のエッジ不整合など、非エンジニアが「道理の検品（ロジックのレビュー）」だけでは防げなかった「配管（実装）」部分の失敗も率直に共有されている。LLMを用いた大規模文書の構造化において、人間の介在が品質を決定づけること、および状態管理（progress.json）の重要性を説く実践的な内容となっている。",
+    "topics": [
+      "Claude Code",
+      "知識グラフ",
+      "LLM",
+      "社会科学",
+      "卒論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

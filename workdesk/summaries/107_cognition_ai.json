@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:35:46.767824+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FrontierCodeの発表：AIコードの正確性を超え、プロダクション品質を測定する新ベンチマーク",
+    "url": "https://cognition.ai/blog/frontier-code",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cognitionは、AI生成コードの「正確性」だけでなく、実世界のオープンソースメンテナーがマージを認める「品質」を厳格に評価する新ベンチマークFrontierCodeを発表しました。",
+    "summaryBody": "AIエージェントDevinを開発するCognitionが、新しいコーディングベンチマーク「FrontierCode」を公開しました。従来のベンチマークが主にコードが動くかどうか（正確性）に焦点を当てていたのに対し、FrontierCodeは「実際のプロジェクトメンテナーがそのPRをマージするかどうか（マージ可能性）」を評価基準の核としています。\n\n### 主要な特徴と革新性\n- **OSメンテナーによる設計**: 36の著名なオープンソースプロジェクトから20名以上のメンテナーが参加し、1タスクあたり40時間以上をかけて実用的かつ困難な150の課題を作成しました。\n- **高度な検証システム**: ユニットテストに加え、AIが書いたテストが修正前のコードで正しく失敗するかを確認する「Reverse-Classical」、実装に合わせてテストを動的に調整する「Adaptive Classical Grading」、変更範囲の適切さを測る「Code Scope」などを導入しています。\n- **高い信頼性**: SWE-Bench Proと比較して誤検知率を81%削減しており、モデルの真の実力を測るための「最も強力なシグナル」を提供します。\n\n### 現行モデルの評価結果\n最新のモデルでもこの基準をクリアするのは難しく、最高難易度のDiamondセットではClaude Opus 4.8が13.4%、GPT-5.5が6.3%のスコアに留まり、AIによる高品質なコード生成には依然として大きな伸び代があることが浮き彫りになりました。",
+    "topics": [
+      "FrontierCode",
+      "Cognition",
+      "AIベンチマーク",
+      "ソフトウェア開発",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "Introducing FrontierCode"
+  }
+}

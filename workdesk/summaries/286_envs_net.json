@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:53:08.305558+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成フロントエンドの「安っぽさ」を軽減する工夫",
+    "url": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成するフロントエンド特有の安っぽさ（Slop）を回避するため、あえて「Qtスタイル」を指定するという実用的なプロンプトの工夫を紹介しています。",
+    "summaryBody": "AIエージェントにフロントエンドを生成させると、デザインセンスの欠如から「Slop（安っぽく、まとまりのないデザイン）」が生成されがちです。筆者は様々なスタイルを試行した結果、特定のデザイン指示として「Qt（デスクトップGUIツールキット）アプリのように」と指定することで、この問題を劇的に改善し、清潔感のある実用的なUIを得られることを発見しました。過度な装飾よりも、機能的で伝統的なデスクトップGUIの制約をAIに与えることが、個人用ツールの迅速な開発において有効であると述べています。",
+    "topics": [
+      "AI Frontend Generation",
+      "UI/UX Design",
+      "Prompt Engineering",
+      "Qt Framework",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 78,
+      "annexPotential": 22,
+      "overall": 82
+    },
+    "originalTitle": "Slightly reducing the sloppiness of AI generated frontend"
+  }
+}

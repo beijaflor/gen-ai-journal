@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:40:15.271347+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5 のプロンプティング：次世代モデルのベストプラクティス",
+    "url": "https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicの最新モデルClaude Fable 5およびMythos 5において、長期的な自律性や高度な推論能力を最大限に引き出すための、エフォート管理やスキャフォールディングの最適化手法を解説するガイド。",
+    "summaryBody": "Anthropicが公開したClaude Fable 5およびMythos 5向けの公式プロンプティングガイドです。従来のモデル（Opus 4.8など）と比較して、長時間の自律的なタスク実行能力、複雑な問題に対する初回の正確性、高度なビジョン能力、および並列サブエージェントの管理能力が大幅に向上しています。主要な変更点として、知能とコストを制御する「Effort（エフォート）」パラメータの導入、指示追従性の向上に伴う簡潔なプロンプトへの移行、長期実行タスクにおける進捗報告の監査、およびメモリシステムの構築が挙げられます。また、特定の安全カテゴリ（サイバーセキュリティや生物学など）や推論の抽出（reasoning extraction）に対する拒否挙動への対処方法、非同期エージェント向けの「send_to_user」ツールの活用など、実用的な実装パターンが詳述されています。既存のプロンプトを再利用するのではなく、モデルの自律性に任せる「引き算」のプロンプトエンジニアリングが推奨されています。",
+    "topics": [
+      "Claude Fable 5",
+      "プロンプトエンジニアリング",
+      "LLM",
+      "Anthropic",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

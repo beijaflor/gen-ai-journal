@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:59:09.197739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループ・エンジニアリング：AIエージェントに直接指示を出す時代の終焉",
+    "url": "https://addyosmani.com/blog/loop-engineering/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "人間がAIエージェントに逐一プロンプトを打つのではなく、エージェントを自律的に実行・監視・検証させる「ループ（システム）」を設計する手法とその構成要素について解説した記事。",
+    "summaryBody": "GoogleのAddy Osmani氏による、コーディングエージェントの活用方法の進化に関する考察です。筆者は、開発者が直接プロンプトを入力する段階から、エージェントを駆動する「ループ」を設計する段階への移行（ループ・エンジニアリング）が、今後の開発の中核になると主張しています。\n\nループを構築するために必要な5つの要素と1つの基盤が提示されています：\n1. **オートメーション**: 定期的なタスク発見とトリアージを実行する「鼓動」。\n2. **ワークツリー**: 複数のエージェントが衝突せずに並列作業するための隔離環境。\n3. **スキル**: プロジェクト固有の知識（SKILL.md）を定義し、再説明の手間を省く。\n4. **プラグイン/コネクタ**: MCPなどを通じてLinearやSlack等の外部ツールと連携する。\n5. **サブエージェント**: 作成者と検証者を分離し、出力の質を担保する。\n6. **外部メモリ（状態管理）**: コンテキスト外で進行状況を記録するmarkdownやチケット管理ツール。\n\nClaude CodeやCodex appといった最新ツールが既にこれらの機能を備え始めていることを示しつつ、一方でトークンコストの増大や、人間が中身を理解せずに承認してしまう「認知の降伏（Cognitive Surrender）」、プロジェクトへの理解が損なわれる「理解の負債」といったリスクについても警鐘を鳴らしています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "ソフトウェア開発",
+      "オートメーション",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Loop Engineering"
+  }
+}

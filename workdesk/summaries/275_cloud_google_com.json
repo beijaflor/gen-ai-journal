@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:56:03.149905+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Open Knowledge Format (OKF) の導入: データ共有とAIエージェントのためのオープン仕様",
+    "url": "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google Cloudは、LLMやAIエージェントが利用するメタデータやナレッジをMarkdownとYAMLで標準化し、相互運用性を高めるためのオープン仕様「Open Knowledge Format (OKF)」を発表しました。",
+    "summaryBody": "Google Cloudは、AIエージェントに必要なコンテキスト（メタデータ、定義、キュレーションされた知識など）を表現するためのオープンな標準仕様「Open Knowledge Format (OKF) v0.1」を導入しました。従来、組織内の知識はメタデータカタログ、Wiki、コード内のコメントなど断片化されたシステムに存在し、AIエージェント構築の障壁となっていました。OKFはこの問題を解決するため、MarkdownファイルとYAMLフロントマターを用いたシンプルなディレクトリ構造を定義し、ベンダー中立でポータブルな「LLM-wiki」パターンを正式化しました。特定のSDKやランタイムを必要とせず、Gitによるバージョン管理や人間による編集、エージェントによるパースを容易に行えるのが特徴です。BigQuery向けの抽出エージェントや静的HTMLビジュアライザなどのリファレンス実装も公開されており、AI時代のナレッジ共有の「共通言語」となることを目指しています。",
+    "topics": [
+      "Open Knowledge Format",
+      "AI Agents",
+      "LLM Context",
+      "Metadata Management",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How the Open Knowledge Format can improve data sharing | Google Cloud Blog"
+  }
+}

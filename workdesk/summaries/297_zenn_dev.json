@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:50:21.469220+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × Obsidian で『記憶の二層構造』を作る",
+    "url": "https://zenn.dev/0rv3/articles/b6a7172bfda1ed",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude (Claude Code/claude.ai)とObsidianをMCP経由で連携させ、長期ナレッジと作業文脈をシームレスに同期・管理する「記憶の二層構造」の構築手法を紹介。",
+    "summaryBody": "Claudeを用いた日常的な思考や開発ログを効率的に管理するため、Obsidianを長期ナレッジ層、Claude Codeのセッションログを作業文脈層とする二層構造の記憶システムを構築。Cloudflare Workers上で自作したMCPサーバーを介してGitHub上のObsidian vaultを操作し、ローカルのWSL環境ではGit pullとrsyncを組み合わせることで、PC・モバイル・AI間でのデータ整合性を保つ仕組みを解説しています。iCloudの特殊なパス、rsyncの除外設定、WSLでのcron自動起動、SQLite FTS5の検索クエリの罠など、実装時のハマりポイントと解決策が具体的に共有されています。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "Model Context Protocol",
+      "WSL",
+      "Knowledge Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

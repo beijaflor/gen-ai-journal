@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:22:30.095339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Stop Slop: AI特有の書き癖を排除し、より自然な文章を生成するためのスキルファイル",
+    "url": "https://github.com/hardikpandya/stop-slop",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが生成する文章に特有の冗長な表現や不自然なパターンを特定・排除し、人間が書いたような自然な文体に修正するためのプロンプト指示セット。",
+    "summaryBody": "AI生成テキストに見られる典型的なパターン、いわゆる「AIスロップ（AI Slop）」を排除するためのフレームワークです。ClaudeなどのLLMに読み込ませる「スキル」として設計されており、不要な枕詞（喉を鳴らすような前置き）、過剰なビジネス用語、受動態の多用、二項対立などの不自然な構造を禁止事項として定義しています。\n\n主な構成要素は、命令の核となる『SKILL.md』と、削除すべき具体的なフレーズや構造をまとめた『references/』ディレクトリです。また、文章の「直接性」「リズム」「信頼性」「真正性」「密度」を50点満点で評価する独自のスコアリングシステムが含まれており、35点未満の場合は自動的にリライトを要求する仕組みになっています。Claude Codeやカスタム指示、システムプロンプトに組み込むことで、AI臭さを抑えた洗練された執筆が可能になります。",
+    "topics": [
+      "AI Writing",
+      "Prompt Engineering",
+      "LLM",
+      "Claude",
+      "Content Quality"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "hardikpandya/stop-slop: A skill file for removing AI tells from prose"
+  }
+}

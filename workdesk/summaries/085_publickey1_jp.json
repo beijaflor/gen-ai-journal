@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:41:14.086823+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、従業員やアプリごとにAIの利用上限額を設定できるCloudflare AI Gatewayの新機能を発表",
+    "url": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_ai_gateway.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflare AI Gatewayの新機能により、共通のAPIキーを使用していてもユーザーやアプリ単位でAIの利用料金上限を設定し、超過時の制限やモデル切り替えが可能になる。",
+    "summaryBody": "Cloudflareは「Cloudflare AI Gateway」の新機能として、従業員やアプリケーションごとにAIの利用料金上限（Spend Limits）を設定できる機能を発表した。OpenAIやAnthropic、GoogleなどのAPIキーを組織で共有している場合でも、Cloudflare Access等との連携により、ユーザー個別のIDに基づいた予算管理が可能になる。ゲートウェイがリアルタイムにトークン使用量を計算し、設定額に達した際には、アクセスの遮断だけでなく、より安価なモデルへの自動的なダウングレードを選択することもできる。これにより、管理者は予期せぬ高額請求（Runaway bills）を防ぎつつ、柔軟なコスト制御を行える。現在はクローズドベータ版として提供中である。",
+    "topics": [
+      "Cloudflare",
+      "AI Gateway",
+      "コスト管理",
+      "FinOps",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

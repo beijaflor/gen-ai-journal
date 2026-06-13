@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:19:13.675453+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "テックタッチEOの仕事の進め方 - claude.aiコスト可視化をAIと検証",
+    "url": "https://tech.techtouch.jp/entry/eo-claude-cost-visualization",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "テックタッチのEngineering Officeが、Claude CodeのOpenTelemetry機能を活用し、AWS CloudWatchへの直接送信による低コストなユーザー別AI利用費可視化を検証・実現した事例。",
+    "summaryBody": "テックタッチ株式会社に新設されたEngineering Office（EO）の役割と、具体的な業務実例として「claude.ai（Claude Code/Cowork）のユーザー別コスト可視化」に向けた技術検証プロセスが紹介されています。EOは「代行ではなく標準化」「統制ではなく判断支援」「便利屋ではなく再現性」の3原則を掲げ、意思決定に必要な情報の整理を行います。\n\n今回の検証では、Anthropicのチームプランで不足している個人単位の利用状況を把握するため、Claude Codeが備えるOpenTelemetry（OTel）送信機能に着目。AIによる調査では「AWS東京リージョンはOTLP直送未対応」とされましたが、実機検証によりベアラートークン認証を用いたCloudWatch Logsへの直接送信が可能であることを突き止めました。最終的に、CloudWatch Logs、GAS/スプレッドシート、S3を組み合わせた、月額数十円〜数百円規模の極めて低コストな3層構成を提案し、SRE部門へのスムーズな実装引き渡しに成功しています。",
+    "topics": [
+      "Engineering Office",
+      "Claude Code",
+      "OpenTelemetry",
+      "AWS CloudWatch",
+      "コスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

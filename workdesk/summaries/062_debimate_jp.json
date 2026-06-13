@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:43:43.922974+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文体の一致度を評価する nao1215/omokage を作った話",
+    "url": "https://debimate.jp/post/ja/2026-06-02-%E6%96%87%E4%BD%93%E3%81%AE%E4%B8%80%E8%87%B4%E5%BA%A6%E3%82%92%E8%A9%95%E4%BE%A1%E3%81%99%E3%82%8Bomokage%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "過去の文章から「自分らしさ」を学習し、新しい下書きの文体一致度を定量的に評価できるCLIツール「omokage」の開発秘話と仕組みの解説。",
+    "summaryBody": "LLMに文章を執筆させる際、自分自身の文体へ徹底的に寄せたいというニーズと、その精度を客観的に測る物差しがないという課題から、文体のLinterとして機能するツール「omokage」を開発。本ツールは助詞や英語の前置詞といった機能語、文字N-gram、文末表現（敬体/常体）などの統計的特徴を計測し、Burrows’ Deltaの考え方を踏襲して標準偏差（zスコア）から一致度を算出する。Goで実装されており、ローカルで完結して動作するためプライバシーも担保。特に日本語は漢字・ひらがな・カタカナの比率などが独自の軸となるため、英語よりも高い精度で著者を識別できる。LLMエージェントのワークフローに組み込み、スコアが上がるまで推敲を繰り返させるループを実現可能にする。一方で、形としての文体は模倣できても、その奥にある「思考の宿り」までは測りきれないという、AI時代の執筆における哲学的な限界についても言及している。",
+    "topics": [
+      "文体計量学",
+      "LLM",
+      "CLIツール",
+      "Go",
+      "AIライティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

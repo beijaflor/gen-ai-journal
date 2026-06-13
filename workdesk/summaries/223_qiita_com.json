@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:26:03.608005+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code ActionsによるCrashlyticsクラッシュ調査の自動化：コストとリードタイムの実績",
+    "url": "https://qiita.com/mgre_tanabe/items/d43b26d994d3f430f926",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code Actionsを活用してFirebase Crashlyticsの調査を自動化した結果、1回あたり約3.4ドルのコストと約7分の所要時間で高品質なトリアージが可能であることを示した運用報告。",
+    "summaryBody": "Firebase Crashlyticsのアラートを起点に、AIエージェント（Claude Code Actions）が自動でソースコードを解析し、GitHub Issueの作成や修正PRのドラフト作成を行う仕組みの運用実績をまとめています。\n\n### 運用の主要実績\n- **コスト:** 1調査あたり中央値で約3.4ドル（最小0.8ドル、最大7.3ドル）。プロンプトキャッシュ機能により、多ターンの探索でも入力コストが極めて低く抑えられています。\n- **リードタイム:** 一次調査（原因切り分け・緊急度判定）の完了まで中央値で約7分。人手では数日かかることもある初動が大幅に短縮されました。\n- **探索の質:** スタックトレースから関連リポジトリを自律的に特定・クローンし、コードの裏取りを行うプロセスを自動化。画像リサイズの欠落や、共通基盤バージョンの固定漏れなど、構造的な原因の特定にも成功しています。\n\n### 結論\nAIによる一次トリアージは実運用において十分実用的であり、エンジニアが最終判断を行う二段構えの構成によって、特に休日や夜間のアラート対応負荷を劇的に軽減できることが示されました。",
+    "topics": [
+      "Firebase Crashlytics",
+      "Claude Code",
+      "AIエージェント",
+      "GitHub Actions",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

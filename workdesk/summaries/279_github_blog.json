@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:54:58.375832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot CLIのタスク委譲を最適化：より賢いサブエージェント管理による高速化",
+    "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Copilot CLIにおいて、メインエージェントによるサブエージェントへのタスク委譲をより選択的かつ並列的に行うよう改善し、信頼性と応答速度を大幅に向上させました。",
+    "summaryBody": "GitHubは、GitHub Copilot CLIの「よりスマートなサブエージェント委譲（Smarter subagent delegation）」機能を発表しました。従来のエージェントシステムでは、単純なタスクでもサブエージェントに委譲することで不必要なオーバーヘッドや呼び出し失敗が発生していましたが、新しいオーケストレーションポリシーにより、メインエージェントが直接処理すべきタスクを賢く判断し、専門性や並列性が必要な場合のみ委譲を行うように最適化されました。この改善により、本番環境のA/Bテストではツールの失敗が23%減少し、P95レベルのユーザー待機時間が5%改善されました。LLMを用いた実行軌跡の分析とオフライン検証を組み合わせた開発プロセスにより、品質を維持しながら開発者の摩擦を軽減しています。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Agents",
+      "CLI",
+      "LLM Orchestration",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How we made GitHub Copilot CLI more selective about delegation - The GitHub Blog"
+  }
+}

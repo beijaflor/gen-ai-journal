@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:18:05.105429+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CISA BOD 26-04: リスクに基づくセキュリティアップデートの優先順位付け",
+    "url": "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "CISAは、資産の露出度や攻撃の自動化可能性、技術的影響度などのリスク指標に基づいて脆弱性対応の優先順位を決定する、新しい拘束力のある運用指令（BOD 26-04）を発表しました。",
+    "summaryBody": "### 概要\nCISA（サイバーセキュリティ・インフラセキュリティ庁）は、連邦政府機関を対象とした新しい指令「BOD 26-04」を公開しました。本指令は、従来のBOD 19-02とBOD 22-01を統合・更新するもので、すべての脆弱性を一律に扱うのではなく、実際の「リスク」に基づいた動的なパッチ適用を求めています。\n\n### 優先順位付けの4つの重要指標\n脆弱性の修正期限は、以下の4つの変数によって決定されます：\n1. **資産の露出 (Asset Exposure)**: 資産がインターネットに公開されているか。\n2. **KEVステータス**: CISAの「既知の悪用された脆弱性カタログ」に登録されているか。\n3. **攻撃の自動化可能性 (Exploit Automation)**: 攻撃者が攻撃ステップを自動化可能か。\n4. **技術的影響 (Technical Impact)**: 悪用された際、資産の制御をどの程度奪われるか（部分的または完全）。\n\n### 実施要件とタイムライン\n指令は3つのフェーズで実施され、最終的にはリスクに応じて最短3日以内の修正とフォレンジック調査が求められるケースもあります。CISAは「Vulnrichment Program」を通じてこれら判断に必要なメタデータを提供し、各機関はCDMプログラム等を通じた自動報告体制の構築が義務付けられます。\n\n### 背景と意義\nAIの進歩により脆弱性発見から攻撃までの時間が短縮される中、リソースを最も重大な脅威に集中させる戦略的アプローチへの転換を目指しています。",
+    "topics": [
+      "CISA",
+      "脆弱性管理",
+      "BOD 26-04",
+      "サイバーセキュリティ政策",
+      "リスクベースアプローチ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "BOD 26-04: Prioritizing Security Updates Based on Risk | CISA"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:58:41.280952+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI SASTとは何か？：推論に基づく次世代の静的コード解析の解説",
+    "url": "https://www.aikido.dev/blog/what-is-ai-sast",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI SASTは、従来のパターンマッチングでは検出困難だった論理的脆弱性やIDORなどを、AIの推論能力を用いてコードから直接特定する新しいセキュリティテスト手法です。",
+    "summaryBody": "本記事は、AIを活用した静的アプリケーションセキュリティテスト（SAST）の定義と、従来手法との違いを詳細に解説しています。\n\n### 2つの主要なアプローチ\n1. **AIネイティブ（推論型）SAST**: AIエンジンがコードを「読み」、シニアエンジニアのように論理を推論します。IDORやビジネスロジックの欠陥、サービス境界を越える権限昇格など、構文的なルールでは定義できない脆弱性を特定します。\n2. **AI拡張型SAST**: 従来の決定論的なルールベースエンジンを基盤とし、AIを誤検知のフィルタリングや修正案（AutoFix）の提示、トリアージの補助に利用します。\n\n### SAST、AI SAST、AIペンテストの使い分け\n著者は、これらを排他的なものではなく、補完的なものとして捉えるべきだと述べています。\n- **決定論的SAST**: 高速かつ安価。すべてのコミットで実行し、一般的な脆弱性をキャッチする。\n- **AI SAST**: 複雑なロジックが関わる重要な変更時に実行。人間によるコードレビューの一部を自動化する。\n- **AIペンテスト**: 稼働中のアプリケーションに対して実行し、実際に悪用可能かを検証する。\n\n結論として、「SASTは常に、AI SASTは頻繁に、AIペンテストは要所で」という階層的なセキュリティ戦略を提唱しています。",
+    "topics": [
+      "AI SAST",
+      "アプリケーションセキュリティ",
+      "脆弱性診断",
+      "LLM",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "What is AI SAST?"
+  }
+}

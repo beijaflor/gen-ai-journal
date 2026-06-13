@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:55:39.539750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "数字なしの算術：LLMの内部で何が行列のみで計算を行っているのか",
+    "url": "https://alvaro-videla.com/llm-arithmetic-internals/article_interactive/article.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "言語モデルが数値を内部で「位相」と「幾何学的構造」として表現し、算術演算を行うメカニズムを、残差ストリームの解析を通じて解き明かそうとする研究プロジェクト「Rune」の解説。",
+    "summaryBody": "本記事は、言語モデル（LLM）が算術演算をどのように処理しているかを調査したプロジェクト「Rune」の技術的詳細をまとめたものです。人間が身体性に基づき計算するのと対照的に、LLMはトークンの活性化ベクトルが行列を通じて変化するプロセス、特に「残差ストリーム」内で計算を完結させます。研究では、数値がフーリエ変換的な「らせん（Helix）」構造としてベクトル空間に配置されていることを示唆し、特定の層の活性化から被演算子や演算の種類をデコードできることを実証しました。また、プロンプトのテキストをパースするのではなく、モデル内部の状態から計算引数を抽出して外部計算機（Python等）に渡す「活性化由来のツール引数」手法の有効性を検証。一方で、モデルの内部状態を直接書き換えて計算結果を反映させる試み（残差JIT置換）は、読み取りほど容易ではない（Readable != Writable）という重要な知見も得られています。",
+    "topics": [
+      "メカニスティック・インタープリタビリティ",
+      "LLM算術",
+      "残差ストリーム",
+      "幾何学的表現",
+      "活性化パッチング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 45,
+      "overall": 92
+    },
+    "originalTitle": "Arithmetic Without Numbers Rune article companion"
+  }
+}

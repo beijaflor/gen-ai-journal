@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:42:30.611364+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ボブおじさんが使っているAIコーディングエージェントに与える品質ツール群",
+    "url": "https://tune.hatenadiary.jp/entry/2026/06/06/111019",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Uncle Bobが提唱する、AIコーディングエージェントに適用すべき4つの品質指標（テストカバレッジ、CRAPスコア、ミューテーションテスト、受け入れテスト変異）を実際に導入した知見をまとめています。",
+    "summaryBody": "Clean Codeの著者Uncle Bob（ロバート・C・マーティン）が提唱するAI時代の品質管理手法を、Claude Codeを用いて実践した記録です。具体的には、(1)テストカバレッジの継続的測定、(2)循環的複雑度とカバレッジを掛け合わせたCRAPスコアによるリファクタリング箇所の特定、(3)コードを意図的に書き換えてテストの有効性を検証するミューテーションテスト、(4)受け入れテスト自体のミューテーション、という4つの施策に焦点を当てています。著者は、7万行規模のLaravelプロジェクトに対し、AIエージェントを活用することでわずか1〜2日でこれらの高度な品質管理基盤を構築しました。AIに「疲れを知らないテスト担当者」としての役割を担わせることで、開発プロセスの機械的な品質向上とバグ発見を実現しています。",
+    "topics": [
+      "AI Coding Agent",
+      "Claude Code",
+      "Mutation Testing",
+      "CRAP Score",
+      "Software Quality"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:22:35.656307+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM時代に新しいDSLが生き残るための戦略",
+    "url": "https://www.williamcotton.com/articles/how-a-new-dsl-survives-in-the-era-of-llms",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLM時代において新しいドメイン特化言語（DSL）が普及するには、LLMエージェントへのコンテキスト提供、WASMによる即時体験、そして統合された診断ツールが不可欠である。",
+    "summaryBody": "既存の言語（PythonやRustなど）は膨大な学習データと成熟したツール群（型チェッカー、LSP等）によりLLMとの高い親和性を持っています。著者は、新しいDSLがこの「先行者利益」に対抗するための具体的な生存戦略を提示しています。まず、LLMエージェントが言語仕様を理解するためのテンプレート（AGENTS.md）をバイナリから生成可能にすること。次に、WASMを活用してブラウザ上で即座に動作するエディタを提供し、ユーザーとモデル双方の導入障壁を下げること。そして、ランタイムとLSPを一体化したバイナリにより、一貫した強力な診断フィードバックを提供することです。既存の言語（SQLやLua等）を埋め込むことでLLMの既存知識を活かしつつ、特定領域に特化した言語が爆発的に増える未来を予測しています。",
+    "topics": [
+      "DSL",
+      "LLM",
+      "開発環境",
+      "WASM",
+      "LSP"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "How a New DSL May Survive in the Era of LLMs"
+  }
+}

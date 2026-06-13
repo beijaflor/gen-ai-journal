@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:53:19.967002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MaxProof: 生成的検証器RLと集団レベルのテスト時スケーリングによる数学的証明のスケーリング",
+    "url": "https://arxiv.org/abs/2606.13473",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MaxProofは、証明生成・検証・修正の3要素を統合した強化学習とテスト時スケーリングにより、国際数学オリンピック級の難問で金メダル基準を超える性能を達成したフレームワークである。",
+    "summaryBody": "本研究は、数学的証明のためのスケーリングフレームワーク「MaxProof」と、それを適用したMiniMax-M3モデルシリーズを紹介している。M3モデルは、証明生成、偽陽性率を最小化する生成的検証、および批判に基づく証明修正の3つの能力を強化学習（RL）によって獲得する。推論段階（テスト時）では、MaxProofがモデルを生成・検証・洗練・ランク付けの各役割に割り当て、生成された候補群の中からトーナメント選択を通じて最終的な解答を導き出す。この手法により、IMO 2025で35/42、USAMO 2026で36/42というスコアを記録し、人間の金メダル獲得ラインを上回る高度な数学的推論能力を実現した。",
+    "topics": [
+      "数学的証明",
+      "テスト時スケーリング",
+      "強化学習",
+      "Large Language Models",
+      "MiniMax-M3"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 95
+    },
+    "originalTitle": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling"
+  }
+}

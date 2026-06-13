@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:17:18.002235+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコンテキスト消費で悩んでいる人のための『context-mode』 #ClaudeCode",
+    "url": "https://qiita.com/lemoneder/items/04ad0f72c89ef57e560f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのログや出力をインデックス化することで、コンテキスト消費を約40-50%削減し、セッションの中断を防ぐプラグイン『context-mode』の有用性を紹介する記事。",
+    "summaryBody": "AIコーディングエージェント「Claude Code」を利用する際の大きな課題である、コンテキストの急速な消費と頻繁な`/compact`（要約・圧縮）処理を解決するツール『context-mode』について解説しています。このプラグインは、ツールの生出力を会話履歴に直接積むのではなく、外部サンドボックスに蓄積・全文インデックス化し、必要な情報のみを検索で取り出す仕組みを採用しています。実測値として、Web開発において43%のコンテキスト削減と、AIの稼働継続時間の倍増が報告されています。導入により、トークン費用の節約だけでなく、セッションを跨いだ意思決定の保持や、`/compact`による細かいニュアンスの消失を防げる点が大きなメリットです。`/ctx-stats`コマンドで削減効果を視覚的に確認できる機能も備わっています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "コンテキスト管理",
+      "開発ツール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

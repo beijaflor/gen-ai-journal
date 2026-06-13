@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:53:40.414641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークンとトークナイゼーション：LLMが「strawberry」の'r'を数えられない理由",
+    "url": "https://bearisland.dev/posts/tokens-and-tokenization/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）がテキストを処理する最小単位「トークン」の概念から、BPEアルゴリズムの仕組み、語彙設計のトレードオフ、そしてモデルが文字を直接認識できないことによる知覚の限界を詳述した技術解説。",
+    "summaryBody": "### トークナイゼーションの核心\nLLMはテキストを直接読み取るのではなく、**トークン**と呼ばれる情報の断片に変換し、整数IDとして処理します。本記事では、このプロセスがモデルの知覚にいかに決定的な影響を与えるかを解説しています。\n\n### BPE (Byte Pair Encoding) の仕組み\n現代のモデルで主流のBPEは、コーパス内で頻出する隣接ペアを繰り返し結合して語彙を構築するアルゴリズムです。特に「バイトレベルBPE」は、文字ではなくバイト単位から開始することで未知語（UNK）を完全に排除し、あらゆる入力の表現を保証します。\n\n### 語彙サイズ（V）のトレードオフ\n語彙サイズはモデル設計の重要なノブです。サイズを大きくすればテキスト圧縮率は向上しますが、埋め込み行列のパラメータ数と計算コストが線形に増大します。実用的なモデル（Llama 3, GPT-4等）は、3万から25万の範囲でこのバランスを調整しています。\n\n### モデルの「盲点」：strawberry問題\nGPT-4などが「strawberry」の'r'の数を誤認するのは、モデルが文字（r）ではなくトークン（`str` + `aw` + `berry`）を見ているためです。トークンはモデルにとって不透明なIDであり、内部のスペルを数えるのは本来「上り坂」の難易度を持つタスクとなります。\n\n### アルゴリズムの変種\nGPT系のBPEのほか、BERT系のWordPiece、多言語対応に優れたSentencePiece（Llama等）といったバリエーションがあり、空白の扱いや事前トークン化の有無で異なります。",
+    "topics": [
+      "トークナイゼーション",
+      "BPE",
+      "LLM",
+      "自然言語処理",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Tokens and Tokenization | Simon's Journal"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:46:28.294663+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zamba2-VL: ハイブリッドSSM-Transformerによる高速・軽量な視覚言語モデル",
+    "url": "https://www.zyphra.com/our-work/zamba2-vl",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Zyphraは、Mamba2とTransformerを融合させたハイブリッドアーキテクチャ「Zamba2」をベースに、推論速度を大幅に向上させたオープンな視覚言語モデル（VLM）シリーズを発表しました。",
+    "summaryBody": "Zyphraが発表した「Zamba2-VL」は、Mamba2（状態空間モデル）と少数の共有Transformerブロックを組み合わせた「Zamba2」LLMをバックボーンとする視覚言語モデルです。1.2B、2.7B、7Bの3つのスケールで展開され、Apache 2.0ライセンスで公開されています。最大の特徴は推論効率の高さにあり、特にTime-to-First-Token（TTFT）において、既存のTransformerベースのVLMと比較して約10倍の高速化を実現しました。これはTransformerの二次関数的な注意機構のコストを、SSMの線形的な処理で代替・補完したことによる成果です。精度面でも主要なベンチマークでTransformerベースのモデルと競合しており、特に計数（Counting）やドキュメント、チャートの理解において優れた性能を発揮します。本モデルはQwen2.5-VLのビジョンエンコーダーを統合しており、高解像度の動的処理にも対応しています。",
+    "topics": [
+      "Zamba2-VL",
+      "Mamba2",
+      "Hybrid SSM-Transformer",
+      "VLM",
+      "Efficiency"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Zamba2-VL: Hybrid SSM Vision-Language Models"
+  }
+}

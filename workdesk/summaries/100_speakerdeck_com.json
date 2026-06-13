@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:37:30.875673+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM本来の能力を解き放つサンドボックス技術とAI民主化への適用",
+    "url": "https://speakerdeck.com/yukukotani/unleash-true-potential-of-llm-with-sandbox",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの自律性と安全性を両立させるため、マイクロVMを活用したサンドボックス環境と動的な権限注入を組み合わせた高度なアーキテクチャを提案する。",
+    "summaryBody": "Ubie株式会社のCTO小谷氏による、AIエージェントの社会実装におけるボトルネックとその解決策に関する登壇資料。LLMが長時間タスクを自律的にこなす際、従来のコマンド単位での人間による承認（HITL）や静的な権限制限が生産性を著しく阻害することを指摘。これを解決するため、E2BなどのマイクロVM技術を用いた分離された実行環境（サンドボックス）を導入し、脳（Agent Loop）と手（Tools）を切り離すパターンを詳説している。実行時のみのクレデンシャル注入、mitmproxyによる通信監視、Service AccountとOAuthの使い分けによる権限分離など、決定論的に安全性を担保しつつ、エージェントが自由にコードを実行し試行錯誤できる環境の重要性を説いている。後半ではjustbash.devのような軽量エミュレーションやMCPの適用についても触れ、AI民主化に向けた実用的な知見が共有されている。",
+    "topics": [
+      "AIエージェント",
+      "サンドボックス",
+      "MicroVM",
+      "LLMセキュリティ",
+      "Ubie"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

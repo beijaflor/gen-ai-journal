@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:43:51.597964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マイクロソフトのオープンソースツールがハッキング、AI開発者のパスワード盗難被害",
+    "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "マイクロソフトがGitHub上で公開していた70以上のオープンソースプロジェクトが侵害され、AI開発者の認証情報を盗むマルウェアが混入されたことが判明しました。",
+    "summaryBody": "マイクロソフトがGitHub上で管理する70以上のオープンソースプロジェクトがハッキングを受け、パスワードや機密情報を盗み出すマルウェアがコード内に注入されました。影響を受けたプロジェクトには、Azure関連ツールや、Claude Code、GeminiのCLI、VS Codeなど、AI開発者が使用する主要なツールが含まれています。今回の事案は、開発環境を標的とした「サプライチェーン攻撃」の一種であり、侵害されたツールをAIコーディングアプリで開いた際に認証情報が盗まれる仕組みでした。同社は該当リポジトリを一時停止し、一部の顧客に通知を行っています。注目すべきは、これが数週間で2度目の侵害である点であり、前回の「Durable Task」プロジェクトへの攻撃が完全に終息していなかった、あるいは再侵害された可能性がセキュリティ研究者から指摘されています。",
+    "topics": [
+      "サプライチェーン攻撃",
+      "Microsoft",
+      "GitHub",
+      "AI開発ツール",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 85
+    },
+    "originalTitle": "Microsoft's open source tools were hacked to steal passwords of AI developers"
+  }
+}

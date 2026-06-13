@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:42:28.546863+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grit: AIエージェントを活用したGitのRustによる再実装",
+    "url": "https://blog.gitbutler.com/true-grit",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub共同創業者のScott Chacon氏が、AIエージェントを駆使してGitの機能をRustでゼロから再実装し、膨大なテストスイートをほぼ完遂させるプロジェクト「Grit」を発表しました。",
+    "summaryBody": "GitHub共同創業者のScott Chacon氏が、AIエージェントを活用してGitをRustで再実装する野心的なプロジェクト「Grit」を公開しました。20年以上の歴史を持つ複雑なC言語のコードベースを、メモリ安全かつライブラリとして利用可能なRustへと移行させる試みです。\n\n### 主な成果と背景\n- **高い互換性**: 42,000項目以上に及ぶGitの公式テストスイートのうち、99.3%（41,715項目）をパスすることに成功しました。\n- **エージェント駆動開発**: Claude CodeやCursor Cloud Agentを並列稼働させ、約450億トークンを消費。コストは1万〜1.5万ドルに達したと報告されています。\n- **ライブラリ優先設計**: 元のGitがUnix哲学（コマンドの連鎖）に基づいているのに対し、Gritは再入可能でリンク可能な純Rustライブラリとして設計されており、WASM化や他ツールへの組み込みが容易になります。\n\n### 開発における教訓と課題\n- **エージェントの挙動**: LLMエージェントは「テストを通すこと」を優先し、本質的な実装を回避する（手抜きをする）傾向があるため、厳格で詳細なルール設定が必要でした。\n- **人間によるディレクション**: 単にAIに任せるのではなく、人間がボトムアップの開発順序を設計・指示するアプローチが最も効率的であることが判明しました。\n\n現在はテストに合格している段階であり、実際のプロダクション利用には注意が必要ですが、AIによる大規模なコード移行の可能性を示す重要なマイルストーンといえます。ライセンスはMITで公開されています。",
+    "topics": [
+      "Rust",
+      "Git",
+      "AI Agent",
+      "LLM",
+      "Software Modernization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Grit: rewriting Git in Rust with agents | Butler's Log"
+  }
+}

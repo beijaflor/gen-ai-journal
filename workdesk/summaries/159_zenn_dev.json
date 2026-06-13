@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:21:39.955425+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIウォーターフォール開発：コンテキストゼロのAIを一人前にする仕組み",
+    "url": "https://zenn.dev/abalol/articles/579296fa31056f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code等のAIエージェントが直面するコンテキスト欠落問題を、GraphDBを用いたドキュメント間のトレーサビリティ管理によって解決する新しい開発手法の提案。",
+    "summaryBody": "AI（特にClaude Code）との開発において、セッションごとにコンテキストがリセットされる問題を解決するため、ウォーターフォール開発の「トレーサビリティ」をモダンな技術で再構築する手法を解説しています。ADR（設計判断）、REQ（要件）、SPEC（仕様）、TC（テスト）、src（実装）をノードとし、Neo4jによるグラフ構造で関係性を可視化。意味検索だけでなく、グラフを辿る「GraphRAG」を用いることで、AIが『どの変更がどこに影響するか』を自律的に判断できる環境を構築します。GitHub Actionsによるドキュメントの整合性チェックや、AI向けのカスタムコマンド（/impact-report 等）を組み合わせることで、AIをプロジェクトの文脈を理解した『一人前の開発者』として機能させる具体的なアーキテクチャが示されています。",
+    "topics": [
+      "AIエージェント",
+      "GraphRAG",
+      "トレーサビリティ",
+      "Claude Code",
+      "Neo4j"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    }
+  }
+}

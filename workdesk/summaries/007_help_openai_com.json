@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:57:40.144041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI、ChatGPTのセキュリティを強化する「ロックダウンモード」を導入",
+    "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "プロンプトインジェクション攻撃によるデータ流出リスクを軽減するため、Web閲覧や外部アプリ連携などの機能を制限する高度なセキュリティ設定「ロックダウンモード」が公開されました。",
+    "summaryBody": "OpenAIは、ChatGPTユーザーが機密データをより安全に扱えるよう、外部へのデータ流出を阻止する「ロックダウンモード（Lockdown Mode）」を導入しました。このモードを有効にすると、プロンプトインジェクション攻撃によって悪意ある指示が実行された場合でも、外部ネットワークへのリクエストが制限されるため、情報の持ち出しが困難になります。具体的には、ライブWebブラウジング（キャッシュのみに制限）、Deep Research、Agent mode、Canvasのネットワーク接続、ファイルダウンロード機能などが無効化または制限されます。ただし、この機能はプロンプトインジェクションによる挙動の変化（誤った情報の生成など）自体を防ぐものではない点に注意が必要です。現在、FreeからEnterpriseまでの各プランで順次ロールアウトされており、設定の「セキュリティ」項目から切り替えが可能です。なお、開発者モード（Developer Mode）とは併用できません。",
+    "topics": [
+      "OpenAI",
+      "ChatGPT",
+      "セキュリティ",
+      "プロンプトインジェクション",
+      "データプライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Lockdown Mode | OpenAI Help Center"
+  }
+}

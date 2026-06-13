@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:48:05.573956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バイブコーディングが怖いので、全PJにSemgrep + gitleaksの自動セキュリティスキャンを仕込んだ話",
+    "url": "https://zenn.dev/zittiandbuoni/articles/632ff0709247f6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによるコード生成（バイブコーディング）の不安を解消するため、SemgrepとGitleaksをpre-commitとGitHub Actionsに組み込み、セキュリティチェックを自動化した事例の紹介。",
+    "summaryBody": "AIツール（Claude Code等）による高速な開発手法「バイブコーディング」において、意図しない脆弱性や機密情報の混入を防ぐための実践的なセキュリティ対策の記録です。\n\n### 導入の背景\nAIが生成したコードを盲信することによるリスク（shell=Trueなどの脆弱な実装やAPIキーのハードコード）を考慮し、機械的なチェック体制の構築を決定しました。\n\n### 二層防御の構成\n1. **ローカル (pre-commit):** `git commit` 時にSemgrep（静的解析）とGitleaks（シークレットスキャン）を自動実行し、リポジトリへの混入を未然に防ぎます。\n2. **CI (GitHub Actions):** PushやPull Request時に再度スキャンを実行し、ローカルチェックをすり抜けたリスクを検知します。\n\n### 自動化と運用の工夫\n新規プロジェクトでの導入漏れを防ぐため、設定ファイルのコピーと初期化を一括で行うシェル関数 `secinit` を作成。また、Semgrepの `--config auto` 設定を活用し、言語に応じた最適なルールを自動適用する構成としています。「動く」だけでなく「安全」を担保しつつ開発スピードを維持するための知見が共有されています。",
+    "topics": [
+      "セキュリティ",
+      "Semgrep",
+      "Gitleaks",
+      "CI/CD",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

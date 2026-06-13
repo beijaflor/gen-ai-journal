@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:26:54.519715+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "vLLMのStructured OutputでJSONパース失敗率を改善してみた",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202606/10_1330.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "vLLMのStructured Output（制約付き復号）を活用することで、プロンプト指示だけでは5%程度発生していたJSONパースエラーを0%にまで改善した実践事例の紹介。",
+    "summaryBody": "LLMを用いて自然言語データをJSON形式に正規化する際、プロンプトによる指示だけでは構文エラーが発生し、後段のシステムでデータ欠損が生じる課題がありました。本記事では、推論エンジン「vLLM」のStructured Output機能を導入し、JSON Schemaに基づいたConstrained Decoding（制約付き復号）を強制することで、この問題を解決する手法を解説しています。具体的な実装方法として、Python dictによるスキーマ定義やAPIリクエストへの組み込み方が紹介されており、実証実験では700件超のデータに対し、パース失敗率を5.2%から0%へ低減することに成功しました。また、バックエンドエンジンであるxgrammarやguidanceの選択、およびその優先順位についても触れられており、実運用における推論の安定化に役立つ内容となっています。",
+    "topics": [
+      "vLLM",
+      "Structured Output",
+      "Constrained Decoding",
+      "JSON Schema",
+      "LLM実運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

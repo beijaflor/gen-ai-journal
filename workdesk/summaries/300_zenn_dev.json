@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:49:40.249042+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "明確な Goal と Eval でエージェントを動かす — Code with Claude Extended Tokyo で学んだこと",
+    "url": "https://zenn.dev/gaogaoasia/articles/65db07864e31b8",
+    "language": "ja",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "Anthropic主催のイベントにて、AIエージェント開発を成功させるための「評価（Eval）ファースト」の考え方や、コード・LLM・サブエージェントの適切な役割分担について学んだ知見のまとめ。",
+    "summaryBody": "Anthropicのイベント「Code with Claude: Extended Tokyo」の参加レポートです。AIエージェントが長時間・複雑なタスクをこなす現代において、開発の核心は「コードを書くこと」から「コードがうまく書かれる条件を整えること」へシフトしていると指摘しています。具体的には、実装前にエージェントに質問させて曖昧さを消すプロセス、HTMLを用いた構造的な計画策定、そして「Evals first（評価を先に書く）」という原則が強調されました。肥大化したエージェントを改善する手法として、算術的な計算はPythonコードへ、判断のみをLLMへ、独立したゴールはSubagentへと役割を分解し、Evalスコアでその正当性を検証する実践的なアプローチが紹介されています。また、Managed Agentsのメモリ管理やサンドボックス環境の利活用についても触れられています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "AIエージェント",
+      "Eval",
+      "Managed Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

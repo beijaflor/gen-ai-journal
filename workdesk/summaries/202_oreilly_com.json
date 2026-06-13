@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:32:11.718240+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI機能をプロダクション環境で成功させるためのPMプレイブック",
+    "url": "https://www.oreilly.com/radar/the-pms-playbook-for-shipping-ai-features-that-actually-work-in-production/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI機能のデモと実用の間にある「死の谷」を越えるため、PMが考慮すべきレイテンシ予算、フォールバック戦略、非決定的な出力の評価手法、ドリフト監視などの実践的な規律を詳説しています。",
+    "summaryBody": "AIプロダクトの開発において、プロトタイプが完璧に見えても実運用で失敗するケースが多いのは、AI特有の不確実性とエンジニアリング規律の欠如が原因です。本記事では、PMがプロダクション品質を実現するための具体的な指針を提示しています。まず、レイテンシは単なる数値ではなく、ストリーミング利用や同期・非同期の区分による「体感速度」として設計すべきです。また、AIは予測不能な失敗をするため、モデルのダウングレードやキャッシュ、テンプレートを用いた「階層的なフォールバック」が不可欠です。品質評価については、安全性・正確性・有用性・喜びの4層ピラミッドで定義し、自動評価と人間による評価を組み合わせて継続的に監視することを推奨しています。さらに、AIの非決定性によりA/Bテストの分散が大きくなるため、通常の2〜3倍のサンプルサイズが必要であるといった統計的な注意点や、モデルドリフト（経時的な品質劣化）への対策としてプロンプトをコードとして管理・テストする運用の重要性を強調しています。",
+    "topics": [
+      "AI Product Management",
+      "LLMOps",
+      "Model Monitoring",
+      "User Experience",
+      "Product Strategy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "The PM’s Playbook for Shipping AI Features That Actually Work in Production"
+  }
+}

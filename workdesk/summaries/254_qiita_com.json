@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:22:15.259446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / GitHub Copilot のトークン消費を手軽に削減する2つのツール",
+    "url": "https://qiita.com/rairaii/items/0ea0ebf709eb00230b93",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコード生成ツールにおけるトークン消費を劇的に抑えるため、入力側を最適化する「RTK」と出力側を簡素化する「Caveman」の2つの無料ツールとその効果を紹介しています。",
+    "summaryBody": "AI開発支援ツールにおけるトークン消費（コスト）の問題を解決するための2つのツールを詳しく解説しています。入力トークンを削減する「RTK」は、シェルコマンドの出力をAI向けに最適化してフィルタリングする仕組みで、特に大規模リポジトリでのgrep検索などで大きな効果を発揮し、実測で約76%の削減を記録。一方、出力側を最適化する「Caveman（Claude Code専用）」は、AIの回答を最小限の装飾に抑えることで約65%のトークンを削減します。これらは導入が容易で、不具合解析やログ調査など、AIとの対話回数が増える作業において特に高いコストパフォーマンスを発揮します。",
+    "topics": [
+      "Claude Code",
+      "GitHub Copilot",
+      "トークン削減",
+      "コスト最適化",
+      "LLM開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

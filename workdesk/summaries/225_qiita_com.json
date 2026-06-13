@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:25:33.778923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "各コーディングエージェントがコードを「どう把握」しているのか差異と特徴を調べた",
+    "url": "https://qiita.com/hokutoh/items/cb6344af8c76b2672338",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要なコーディングエージェントが採用するコード検索手法（字句・意味・構造・エージェント型）の技術的差異と、それに伴うトークン効率の違いを調査研究に基づき解説した記事。",
+    "summaryBody": "最新の調査研究（Jain, 2025）をベースに、Claude Code、GitHub Copilot、CursorなどのAIコーディングエージェントがどのようにコードベースを理解しているかを分析しています。把握タイプは、高速な「字句検索」、概念で探す「意味検索」、コードの依存関係を追う「構造検索」、LLMが動的にコマンドを打つ「エージェント検索」などに分類されます。実験では全エージェントがタスクを完遂したものの、トークン消費量には1桁以上の開きがありました。特にClaude Codeは、埋め込み型RAGよりも一貫性と最新性を重視し、あえてエージェント検索を採用している点が特徴です。コードの論理構造が強いソフトウェア開発においては、従来のRAGよりも字句・構造検索や動的探索が有効な場面が多いことを示唆しています。",
+    "topics": [
+      "ClaudeCode",
+      "GitHubCopilot",
+      "AIエージェント",
+      "RAG",
+      "コード検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

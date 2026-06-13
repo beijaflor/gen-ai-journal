@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:51:15.375068+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.mdを書き換えて、AIの動きがどう変わるのか実験してみる #ClaudeCode",
+    "url": "https://qiita.com/anzuuuuu/items/03d2f29361c2c73c3bff",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのスキル定義ファイル「SKILL.md」の記述を微調整し、AIのトリガー精度や出力形式がどのように変化するかを検証した実践的なレポートです。",
+    "summaryBody": "この記事では、Claude Codeの新機能である「Skill」を自作し、特に`SKILL.md`内の3つのセクションがAIの挙動に与える影響を実験しています。「JSONをTypeScript型に変換するスキル」を例に、1. `description`（トリガー条件）を厳密に書くことで意図しない発火を防ぐ方法、2. `Instructions`（指示）でキャメルケース変換やnull値の処理などの具体的なコーディング規約を強制する方法、3. `Examples`（具体例）によるJSDoc付与の制御などを解説しています。AIの推論に頼るだけでなく、期待通りの出力を得るためにルールを明文化し、継続的にファイルを「育てる」運用の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "SKILL.md",
+      "TypeScript",
+      "プロンプトエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

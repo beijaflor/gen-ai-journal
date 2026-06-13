@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:51:49.094546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのフックで「自分専用セカンドブレイン」を作る ─ 10本超のフック構成と実装例",
+    "url": "https://qiita.com/tateishi-t/items/03529caccd796a8a8dcf",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのHooks機能をフル活用し、会話の自動保存やObsidian連携、機密保護、リマインダーなど10種以上のフックで個人開発環境を自動化する実践的な手法を解説しています。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」におけるHooks機能を用いた高度な自動化の構築ガイドです。設定をグローバル・プロジェクト・ローカルの3層に分け、セッション終了時の会話ログ自動保存（Obsidian同期）、巨大ファイル読み込み時の警告、機密ファイル保護などの実装例を具体的に紹介しています。また、便利な反面で陥りやすい落とし穴として、自動pushによるAPIキーの混入事例や、バックグラウンドジョブのサンドボックス制限、フック過多による起動遅延といった実体験に基づく教訓と対策が詳述されており、実運用に即した「セカンドブレイン」構築のノウハウが凝縮されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Obsidian",
+      "自動化",
+      "Bash"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:47:41.512389+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × Trivy MCPで依存ライブラリの脆弱性を検出→修正→再スキャンする",
+    "url": "https://zenn.dev/virtualcraft/articles/claude-code-trivy-mcp-security-check",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeにTrivy MCPを統合し、脆弱性検知・AIによる修正提案・再スキャン、さらに編集時の自動スキャンまでを自動化するワークフローを解説しています。",
+    "summaryBody": "この記事は、AIエージェント「Claude Code」と脆弱性スキャナ「Trivy」をModel Context Protocol (MCP) を通じて連携させる実践的なガイドです。筆者は「スキャナ＝事実、AI＝提案、人間＝承認」という明確な役割分担を提唱し、セキュリティチェックのプロセスを定型化する方法を紹介しています。具体的には、Trivy MCPプラグインのセットアップ、独自の「/security-check」スキルの作成、およびClaude Codeのhook機能（PostToolUse）を用いた依存ファイル編集時の自動スキャン設定について解説。手動での確認漏れを防ぎつつ、AIが脆弱性のあるパッケージを検知した際に即座に修正版へのアップデートを提案する、堅牢な開発サイクルの構築手法を提示しています。",
+    "topics": [
+      "Claude Code",
+      "Trivy",
+      "Model Context Protocol",
+      "脆弱性診断",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

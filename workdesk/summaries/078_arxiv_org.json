@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:43:11.988091+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PR-CAD: LLMを用いた統合的・制御可能なText-to-CAD生成のための逐次洗練フレームワーク",
+    "url": "https://arxiv.org/abs/2604.19773",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMと強化学習を活用し、CADの新規生成と修正・編集プロセスを一つのエージェントに統合することで、高度に制御可能で忠実な3Dモデリングを実現するフレームワーク「PR-CAD」の提案。",
+    "summaryBody": "### 概要\n本研究は、大規模言語モデル（LLM）を用いてテキストからCADモデルを生成する際の「生成と編集の分断」という課題を解決する、新たなフレームワーク「PR-CAD」を提案しています。従来の手法では初期生成と後からの修正が個別のタスクとして扱われてきましたが、本手法はこれらを単一のプロセスとして統合します。\n\n### 技術的ブレイクスルー\n1. **統合型プログレッシブ・リファインメント**: 生成と編集をシームレスに統合し、ユーザーとの対話を通じて設計を洗練させる「オールインワン」の解決策を提供します。\n2. **高品質な対話データセット**: CADのライフサイクル全体をカバーし、定性的・定量的な記述を含む高忠実なインタラクションデータセットを構築。これにより、人間のような自然な編集操作の学習を可能にしました。\n3. **強化学習による推論の強化**: 意図の理解、パラメータ推定、編集箇所の特定を最適化するために強化学習を導入。LLMベースのエージェントが、より精密にCADコードを操作できるよう設計されています。\n\n### 成果と意義\n公開ベンチマークにおける実験の結果、PR-CADは生成と修正の両方において、従来技術を凌駕する制御性と忠実性（Faithfulness）を達成しました。専門知識が必要なCADモデリングの敷居を下げ、設計効率を大幅に向上させる可能性を示しています。",
+    "topics": [
+      "Text-to-CAD",
+      "LLM",
+      "3Dモデリング",
+      "強化学習",
+      "デザイン自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "PR-CAD: Progressive Refinement for Unified Controllable and Faithful Text-to-CAD Generation with Large Language Models"
+  }
+}

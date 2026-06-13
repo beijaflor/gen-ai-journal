@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:49:28.018697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と Codex を使い比べて見えた設計思想の違い",
+    "url": "https://zenn.dev/tark_ann/articles/e8b09c6db73bfb",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude CodeとOpenAI Codexを実務で比較し、前者が「仮説と計画の整合性」、後者が「実コードと実行結果の整合性」を重視するという設計思想の差異と、それに基づく使い分けを考察した記事。",
+    "summaryBody": "2026年時点の最新AIエージェント、Claude Code (Opus 4.7) とCodex (GPT-5.5) の比較分析です。著者は、両者の根底にある設計思想の違いを「問題空間の探索」と「解空間の実行」と定義。Claude Codeは『探索・計画・実装』のフローを重視し、曖昧な課題の整理や人間が理解しやすい要約（PR作成等）に強みを持つ一方、作成した計画（仮説）を優先しすぎて実コードと乖離する傾向を指摘しています。対してCodexは『読み・書き・実行』を軸に、実コードや実行結果との接地（Grounding）を優先するため、実装やリファクタリング、検証作業において高い信頼性を発揮します。この特性差から、情報収集や方針策定にはClaude、具体的なコード実装にはCodexを充てるという、相補的な使い分け戦略を提唱しています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "プログラミング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:45:20.655686+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "次世代サイバーモデルから身を守る：Cloudflare自身を最初の顧客とする多層防御アーキテクチャ",
+    "url": "https://blog.cloudflare.com/frontier-model-defense/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI（フロンティアモデル）によるサイバー攻撃の高速化に対し、Cloudflareが自社製品をフル活用して構築した多層的な防御アーキテクチャと、シグネチャに依存しないセキュリティ戦略を詳説。",
+    "summaryBody": "AIモデル（Mythos等のフロンティアモデル）の台頭により、脆弱性の発見からエクスプロイトの生成、攻撃の適応化までのタイムラインが劇的に短縮されています。Cloudflareは「パッチの速度よりも、脆弱性の周囲を囲むアーキテクチャが重要」と主張し、以下の多層防御戦略を提唱しています。\n\n1. **検知の進化**: 従来のシグネチャベースの防御ではなく、機械学習を用いた「WAF Attack Score」によって、未知の攻撃パターンをスコアリングし、AIによる動的な攻撃変更に対応します。\n2. **多層的な防御層**: WAF、API Shield（ポジティブセキュリティモデル）、Bot Managementを組み合わせ、攻撃者の偵察段階から自動的にブロックします。\n3. **ゼロトラストの徹底**: 内部アプリケーションすべてにZTNAを適用し、万が一の侵入時も「単一の識別情報」でアクセスできる範囲を最小化します。\n4. **AIエージェントの制御**: MCP（Model Context Protocol）サーバーポータルやAI Gatewayを導入し、社内のAIエージェントの行動ログを管理・制限しています。\n\n「Customer Zero（最初の顧客）」として自社ツールを実戦投入することで、開発の柔軟性を損なわずに、AI時代の高速な攻撃サイクルに対抗する具体例を示しています。",
+    "topics": [
+      "AIセキュリティ",
+      "Cloudflare",
+      "多層防御",
+      "Zero Trust",
+      "WAF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Defend against frontier cyber models: Cloudflare's architecture as customer zero"
+  }
+}

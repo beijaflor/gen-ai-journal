@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:33:56.723116+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIA SkillSpector: AIエージェントスキルのセキュリティ脆弱性・悪意のあるパターンを検出するスキャナー",
+    "url": "https://github.com/nvidia/skillspector",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが実行するスキルの脆弱性や悪意のあるコードを、静的解析とLLMによる意味論的検証を組み合わせて検出するNVIDIA製のセキュリティスキャナー。",
+    "summaryBody": "NVIDIA/SkillSpectorは、Claude Code、Codex CLI、Gemini CLIなどのAIエージェントが使用する「スキル」の安全性を検証するためのオープンソースツールです。調査によればスキルの26.1%に脆弱性があり、5.2%に悪意のある意図が含まれているという背景から開発されました。プロンプトインジェクション、データ漏洩、権限昇格、サプライチェーンリスク、過度な権限（Excessive Agency）など、16カテゴリにわたる64の脆弱性パターンを検出します。解析は二段階で構成されており、高速な静的解析とASTベースの挙動分析に加え、オプションでLLMを用いた意味論的な検証を行い、検知精度を向上させます。また、OSV.dev APIを介したリアルタイムのCVEチェックや、0-100のリスクスコアリング機能を備えており、結果はTerminal、JSON、Markdown、SARIF形式で出力可能です。CI/CDへの統合も容易で、AIエージェント導入時のセキュリティリスクを最小化する実用的なツールです。",
+    "topics": [
+      "AI Security",
+      "AI Agents",
+      "LLM Security",
+      "Vulnerability Scanner",
+      "NVIDIA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - NVIDIA/SkillSpector: Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks. · GitHub"
+  }
+}

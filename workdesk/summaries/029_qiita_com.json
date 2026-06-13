@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:52:04.970007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スマホからプロンプト指示のみで 会員制 Webサイト内のジョブを完結 | Project Opal の「サイトログインで止まる問題」を解決する設計（OPSM パターン）",
+    "url": "https://qiita.com/carol0226/items/df8b3f93e6e975ca0fd0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Project OpalによるAIのWindows自律操作において、Microsoft Entra IDのパスワードベースSSOを組み合わせることでログイン認証を自動化し、スマホからの指示だけで業務を完結させる「OPSMパターン」を紹介する。",
+    "summaryBody": "本記事では、AIがWindowsを操作する「Project Opal」の運用における最大の障壁の一つである、Webサイトのログイン認証による処理停止を解決する「OPSM（Opal Password SSO Magic）パターン」を提案しています。\\n\\n### 主な内容\\n- **課題の解決**: Cloud PCがジョブごとに初期化されるため、従来は手動でのログインが必要でしたが、Entra IDのパスワードベースSSOを利用することで認証情報の安全な保管と自動入力を両立します。\\n- **実装手順**: Microsoft Entra IDでのエンタープライズアプリケーション作成、Edge拡張機能の導入、およびIntuneによる拡張機能のインストール許可設定などを詳しく解説しています。\\n- **動作検証**: ANAのサイトを例に、スマホからのプロンプトだけで航空券の空席照会から予約直前までを自律的に実行させる具体的なフローとプロンプト例を紹介。\\n\\nこの設計により、プロンプトにパスワードを記述することなく、セキュアかつ完全に自動化されたブラウザ操作が可能になります。",
+    "topics": [
+      "Project Opal",
+      "Microsoft Entra ID",
+      "Windows 365",
+      "Microsoft Copilot",
+      "RPA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

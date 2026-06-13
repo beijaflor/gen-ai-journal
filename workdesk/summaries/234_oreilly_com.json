@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:27:06.006070+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンテキスト崩壊時：エージェントに記憶喪失からの検知と復旧を教える",
+    "url": "https://www.oreilly.com/radar/when-context-collapses-teaching-agents-to-detect-and-recover-from-lost-memory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントのコンテキスト上限による記憶喪失（コンテキスト崩壊）に対し、外部ファイルを用いた状態保存・検知・復旧を行う「ERRパターン」を提唱する技術記事。",
+    "summaryBody": "LLMのコンテキストウィンドウが一杯になると、古い情報が暗黙的に圧縮または破棄され、エージェントの動作が不安定になる「コンテキスト崩壊」が発生します。筆者のAndrew Stellman氏は、この課題を解決するために「Externalize（外部化）- Recognize（認識）- Rehydrate（再構築）」というERRパターンを提案しています。具体的には、エージェントの実行状態を常にディスク上のファイル（JSONL等）に保存し、セッション開始時に出力ファイルと進捗管理ファイルの不整合をチェックすることでコンテキスト消失を検知、必要に応じてファイルを再読み込みして状態を復元します。この記事は、コンテキスト管理を単なるプロンプトハックではなく、分散システムのようなアーキテクチャ上の課題として扱うべきであると強調しています。",
+    "topics": [
+      "AI Agents",
+      "Context Management",
+      "LLM Reliability",
+      "Agentic Engineering",
+      "ERR Pattern"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "When Context Collapses: Teaching Agents to Detect and Recover from Lost Memory"
+  }
+}

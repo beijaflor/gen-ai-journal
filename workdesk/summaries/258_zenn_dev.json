@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:20:54.124855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Fable 5 は自分以上に信頼している」Claude Code 開発者に聞く【Code w/ Claude Tokyo現地参加レポート】",
+    "url": "https://zenn.dev/sompojapan_dx/articles/811ac0999e297b",
+    "language": "ja",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "Anthropic日本初開催のイベントにて、新モデルClaude Fable 5のリリースと、開発エンジニアが語るAIエージェント運用の実践的な知見が共有されました。",
+    "summaryBody": "2026年6月に東京で開催されたAnthropicの開発者イベント「Code w/ Claude Tokyo」の参加レポートです。新モデル「Claude Fable 5」の発表当日に行われ、開発エンジニアから直接得られた実践的なTipsが凝縮されています。\n\n### 1. Claude Fable 5とAIエージェントの現在地\nFable 5は、純粋な応答速度よりも「賢さによる開発効率の向上」が強調されています。開発者の体感では、修正指示の回数が激減し、1タスクの所要時間が半分になるなど、信頼性が飛躍的に向上しました。また、Claude Codeの内部では、探索作業にHaikuを使用するモデルルーティングが行われており、コスト最適化の具体例が示されました。\n\n### 2. エージェント自律運用の核心\n無人運用（headlessモード）において重要なのは、エスカレーションのルール化よりも「最初に完璧なPlan（計画）を作ること」です。Planに検証ステップや受け入れ条件を書き切ることで、エージェントは数時間自走できるようになります。また、評価（Eval）に銀の弾丸はなく、地道に実データから評価セットを作ることの重要性が全セッションを通じて語られました。\n\n### 3. 組織とエンジニアリングの変化\nコーディングがボトルネックではなくなり、新しい課題は要件定義、設計、レビュー、セキュリティといった「周辺領域」に移っています。Anthropic社内では、設計議論をホワイトボードではなく「生成した3つのPRを比較する」スタイルで行うなど、役割の境界が溶け始めたAIネイティブな開発体制が構築されています。",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "Claude Code",
+      "AIエージェント",
+      "Fable 5"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

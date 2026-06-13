@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:49:56.838943+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Skill「cc-rsg」をWeb化した話 — OpenHandsという発見",
+    "url": "https://zenn.dev/daishiro/articles/openhands-cc-rsg-webapp",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code Skillである「cc-rsg」を、OpenHandsをバックエンドに活用してWebアプリ化した開発プロセスと、エージェント基盤としての利点を解説した記事。",
+    "summaryBody": "Claude Code向けの仕様書生成拡張「cc-rsg」を、CLIに馴染みのないユーザーへ提供するためOpenHandsをエージェント実行基盤としてWeb化した実装記録です。OpenHandsの選定理由として、Dockerによる環境隔離、REST/WebSocket APIの提供、そしてCodex OAuth（ChatGPTサブスクの流用）への対応が挙げられています。\n\n**主な技術的ポイント:**\n- **MCPサーバーの自作**: エージェントからユーザーへの質問を仲介する「ask_user_question」ツールをMCPで実装し、Next.jsのUIと連携。\n- **認証の統合**: OpenHandsのOAuthフローを利用し、APIキーだけでなくChatGPT Plus等のサブスクリプション権限での実行を可能に。\n- **UI/UXの工夫**: エージェントの内部ログとユーザー対話の可視化、フェーズ表示による実行状況の把握。\n\n既存のAIツールを自前のWebフロントエンドで包み込み、「自分専用のAgentic AI基盤」を構築する際の実践的な参考事例となっています。",
+    "topics": [
+      "Claude Code",
+      "OpenHands",
+      "Agentic AI",
+      "Model Context Protocol",
+      "Next.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    }
+  }
+}
