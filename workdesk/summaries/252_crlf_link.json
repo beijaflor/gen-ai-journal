@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:22:52.926140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1900年以前のテキストのみで学習した「ビンテージLLM」をゼロから構築する",
+    "url": "https://crlf.link/log/entries/260525-1/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "1900年以前の歴史的な文献データのみを使用し、Llama 3アーキテクチャに基づいた340Mパラメータの言語モデル「Vintage LLM」をスクラッチから構築した実験記録。",
+    "summaryBody": "著者Cristi Constantin氏による、ビクトリア朝時代の雰囲気を再現する独自の言語モデル構築プロジェクトの詳報です。既存の現代的なデータセットを排除し、プロジェクト・グーテンベルクやインターネット・アーカイブなどから1900年以前の英語テキストのみを厳選・抽出し、クレンジングした独自データセットを作成。Llama 3アーキテクチャを採用した340Mパラメータのモデルを、RunPodやVast.aiなどのクラウドGPUを利用して計9B（90億）トークンで事前学習しました。記事では、OCRノイズの除去、ZLIB圧縮率やエントロピーを用いたデータ品質フィルタリング、トークナイザーの自作、そして学習段階ごとの出力の変化が具体的に示されています。また、モデルが単純な算術演算を暗記できるかという検証も行われ、引き算の方が足し算より精度が高いといった興味深い結果も報告されています。現在は対話能力を向上させるためのファインチューニング段階にあり、歴史的な正確さを保つためにあえて現代的なアライメント（検閲）を行わない方針をとっています。",
+    "topics": [
+      "LLM",
+      "Pre-training",
+      "Historical Data",
+      "Llama architecture",
+      "Data Cleaning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Making a vintage LLM from scratch"
+  }
+}

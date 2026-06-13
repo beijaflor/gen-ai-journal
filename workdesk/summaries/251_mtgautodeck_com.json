@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:23:06.181737+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MTG Bench: LLMがマジック：ザ・ギャザリングをどの程度プレイできるかのベンチマーク測定",
+    "url": "https://mtgautodeck.com/articles/mtg-bench/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新のLLM（GPT-5.5やClaude Fable 5等）を用い、複雑なルールを持つMTGをルールエンジンなしでどこまで正確にプレイできるかを検証したベンチマーク結果の報告。",
+    "summaryBody": "この記事では、LLMの推論能力を測定するためにカードゲーム『マジック：ザ・ギャザリング（MTG）』を利用したベンチマーク「MTG Bench」の結果を公開しています。2026年6月時点のデータとして、GPT-5.5 (medium) が95.4点で最高スコアを記録し、Claude Fable 5やGemini 3.5 Flashがそれに続きます。技術的な特徴として、外部のルールエンジンを使用せず、LLM自身の判断とMCP（Model Context Protocol）サーバーを介したライブラリ操作ツールのみでシミュレーションを行っている点が挙げられます。また、OpenAIとAnthropicにおけるMCP経由のツール呼び出し時のトークン課金構造の違いについても言及されており、エージェントループにおけるキャッシュの重要性が強調されています。現時点ではコストと速度の面で実用性は低いものの、将来的なデッキ最適化や統計分析への応用の可能性が示唆されています。",
+    "topics": [
+      "LLMベンチマーク",
+      "マジック：ザ・ギャザリング",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "トークンコスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "MTG Bench: Testing how well LLMs can play magic"
+  }
+}
