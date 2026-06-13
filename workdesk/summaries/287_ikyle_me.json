@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:52:53.141484+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "macOSでローカルコーディングエージェントを構築する方法：Gemma 4とQwen 3.6の高速実行",
+    "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "llama.cppとMTP（マルチトークン予測）を活用し、macOS上でGemma 4やQwen 3.6を高速なローカルコーディングエージェントとして動作させる詳細な手順。",
+    "summaryBody": "インターネット環境に依存しない開発環境を構築するため、macOS（Appleシリコン）上で大規模言語モデル（LLM）を高速に実行し、コーディングエージェントとして利用する方法を解説しています。主な構成要素は、Metal最適化された`llama.cpp`、推論を高速化するMTP（Multi-Token Prediction）ドラフトモデル、そしてターミナルベースのエージェント「Pi」です。著者による検証では、M1 Max環境においてMTPを使用することで、Gemma 4 26Bの生成速度が約24%向上（58.2 tok/sから72.2 tok/s）することを確認しています。また、MLXよりもllama.cppの方が高速であったという比較結果や、マルチモーダル対応（画像の読み込み）、Qwen 3.6 35Bモデルへの適用例など、実践的な設定コードとベンチマークが網羅されています。",
+    "topics": [
+      "llama.cpp",
+      "MTP",
+      "macOS",
+      "Gemma",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "How to Setup a Local Coding Agent on macOS - Kyle Howells"
+  }
+}

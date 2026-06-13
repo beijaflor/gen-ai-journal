@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:47:57.080029+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bedrock AgentCore + Strands Agents SDK で作る、使うほど賢くなる社内RAGボット",
+    "url": "https://zenn.dev/pksha/articles/agentcore-strands-self-improving-rag",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreとStrands Agents SDKを活用し、Agentic RAGと運用ログの循環フィードバックによって「使うほど精度が向上する」社内ヘルプデスクボットの構築事例。",
+    "summaryBody": "PKSHA Technologyによる社内ヘルプデスク向けRAGボットのリプレイス事例。従来の単純なRAG（一問一答形式）が抱えていた「文脈の欠如」「検索精度の限界」「ナレッジの陳腐化」という課題を、最新のAWS基盤とエージェントSDKで解決しています。\n\n**主な構成と工夫:**\n- **Agentic RAGへの移行:** Strands Agents SDKを用い、LLMが自律的に検索ツールの利用やクエリの言い換えを判断する構成。Bedrock AgentCore Runtime/Memoryにより、セッション管理や実行環境をマネージド化しています。\n- **3つの自己改善ループ:** \n  1. **過去ログの活用:** ボットが答えられなかった際の有人回答ログを構造化し、Knowledge Basesのフォールバック用データソースとして自動投入。\n  2. **構造化フィードバック:** Slack上のボタンから「回答不十分」なケースを抽出し、改善ポイントを特定。\n  3. **マニュアル更新案の生成:** 頻出する未解決質問をクラスタリングし、「ドキュメントツイン（構成図）」を用いて既存マニュアルのどこに何を追記すべきかを半自動で提案。\n\n単にAIを導入するだけでなく、運用のなかでナレッジギャップを埋め続ける「学習ループ」の設計思想が強調されています。",
+    "topics": [
+      "Amazon Bedrock",
+      "Agentic RAG",
+      "Strands Agents SDK",
+      "LLMOps",
+      "AgentCore"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

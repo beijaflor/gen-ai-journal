@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:48:13.565636+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サブエージェント活用で Claude Fable 5 をコスパよく運用する",
+    "url": "https://zenn.dev/genda_jp/articles/b6045575e2e13d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Fable 5の高性能・高コスト特性を考慮し、タスクの役割に応じてSonnetやOpus等のサブエージェントへ処理を委譲することでコストパフォーマンスを最大化する運用ルールを詳説。",
+    "summaryBody": "### 概要\n最新モデルClaude Fable 5は極めて高い性能を誇りますが、その分コスト（トークン単価）も高額です。本記事では、株式会社GENDAのエンジニアが実践する、Claude Codeを用いた「役割ベースのモデル使い分け」による運用最適化手法を紹介しています。\n\n### モデル別の役割分担\n作業の性質に合わせてモデルを固定することで、賢さとコストのバランスをとります。\n- **Fable**: 計画、設計判断、最終的なレビュー。高度な論理思考が必要なメインセッションを担当。\n- **Sonnet**: 広範なコード探索や、仕様が確定済みの実装。ファイル読み込み量が多いタスクに適しています。\n- **Opus**: 原因の切り分けが必要な複雑なデバッグや、複数ファイルにまたがる重い実装。\n- **Haiku**: テストの実行と合否の要約。長大なテスト出力をメイン文脈に入れず安価に処理。\n\n### 運用の工夫と設定\n- **カスタムエージェント定義**: `.claude/agents/`配下に、`model:`や`effort:`を構造的に指定したエージェントを作成。文章での指示より確実にモデルを固定します。\n- **CLAUDE.mdによる委譲基準の共有**: 委譲判断の基準を外部ファイル化し、`CLAUDE.md`から`@`参照で読み込むことで、常にClaudeが判断基準を持てるようにします。\n- **トークン節約の報告契約**: サブエージェントに対し「コード全文を返さない」「変更箇所のみ報告する」といった制約を課し、メインセッションの文脈圧迫を防ぎます。",
+    "topics": [
+      "Claude Fable 5",
+      "Claude Code",
+      "コスト最適化",
+      "LLMエージェント",
+      "AI開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

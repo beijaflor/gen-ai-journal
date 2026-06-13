@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:47:29.135921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "いかにして既存の自律LLMエージェントを超えるエージェントをつくるか - 試行錯誤の痕跡",
+    "url": "https://zenn.dev/minamorl/articles/ba026ee683bff2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM APIの歴史とOSSエージェント「OpenCode」の解析を通じ、イベント駆動型アーキテクチャや厳格な権限管理による真の自律エージェント構築手法を詳説する。",
+    "summaryBody": "本記事は、既存の自律LLMエージェント（Claude CodeやDevinなど）の仕組みを深く掘り下げ、それらを超えるための設計思想を筆者の試行錯誤に基づき共有しています。まず、Completion APIからChat Completion、そしてFunction Callingへの歴史的変遷を辿り、エージェントの実体が「モデルとホスト側ランタイムの結合」であることを明確化します。次に、OSSの「OpenCode」を題材に、セッション管理、ツールレジストリ、詳細な権限モデル、サブエージェントの分業体制といった、自律エージェントに必要な具体的コンポーネントをコードレベルで分析しています。さらに、筆者が提唱する「root-paradigm（イベント駆動型状態管理）」や「cray（状態変換としてのワークフロー）」といったライブラリ群を用いた、モデル非依存のツール実行基盤の構築手法を解説。MCP（Model Context Protocol）登場以前から進めていた「タスク中心」の設計が、現在の標準プロトコルとも親和性が高いことを示しています。結論として、単なるRAGやプロンプトの工夫に留まらず、世界への作用、失敗の観測、権限の継承、履歴の圧縮といったループ全体をソフトウェアとして設計することの重要性を説いています。",
+    "topics": [
+      "LLMエージェント",
+      "自律エージェント",
+      "ソフトウェアアーキテクチャ",
+      "OpenCode",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}
