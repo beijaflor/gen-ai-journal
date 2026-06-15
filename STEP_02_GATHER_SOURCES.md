@@ -25,8 +25,16 @@ python3 scripts/check_link.py https://example.com/article-about-ai-coding
 ### What the Check Script Does
 
 1. **Sanitizes the URL** - Removes UTM parameters and fragments
-2. **Checks for duplicates** - Searches in both sources.md and summaries
-3. **Reports status** - Tells you if the URL is unique and ready to add
+2. **Resolves the canonical URL** - Fetches the page and parses `<head>` for
+   `hreflang="x-default"` → `rel="canonical"` → `og:url` (in priority order).
+   If the page declares a different canonical, the dedup check uses that
+   canonical instead. This catches localized variants such as
+   `https://openai.com/ja-JP/index/foo/` resolving to
+   `https://openai.com/index/foo/`, so the same article cannot be added
+   twice under different language paths. Network failures fall back to the
+   sanitized URL (the add is not blocked).
+3. **Checks for duplicates** - Searches in both sources.md and summaries
+4. **Reports status** - Tells you if the URL is unique and ready to add
 
 ## Manual Link Addition Process
 
