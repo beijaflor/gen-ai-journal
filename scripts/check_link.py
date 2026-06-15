@@ -4,8 +4,10 @@ Check a link before adding to the GenAI journal workflow.
 This script:
 1. Accepts a URL as input
 2. Sanitizes the URL (removes UTM params and fragments)
-3. Follows HTTP redirects to get the final destination URL
-4. Checks for duplicates in existing summaries (both original and final URLs)
+3. Resolves the canonical URL via HTML <head> signals
+   (hreflang=x-default → rel=canonical → og:url)
+4. Follows HTTP redirects to get the final destination URL
+5. Checks for duplicates in existing summaries (using the canonical URL)
 """
 
 import sys
@@ -15,6 +17,11 @@ from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 from pathlib import Path
 import requests
 from requests.exceptions import RequestException
+
+# Allow `python3 scripts/check_link.py ...` to import the sibling helper
+# without requiring scripts/ to be on PYTHONPATH.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from canonicalize_url import fetch_canonical  # noqa: E402
 
 def validate_url(url):
     """
@@ -215,9 +222,34 @@ def main():
     if url != sanitized_url:
         print("Note: URL was modified (removed tracking params/fragments)")
 
+    # Step 2.5: Resolve canonical URL via HTML head signals
+    # (hreflang=x-default → rel=canonical → og:url).
+    # If the page declares a different canonical, switch to it before
+    # the dedup check — that catches localized variants like
+    # https://openai.com/ja-JP/index/foo/  →  https://openai.com/index/foo/.
+    print("\nResolving canonical URL...")
+    canonical_url, canonical_source = fetch_canonical(sanitized_url)
+    dedup_url = sanitized_url
+    if canonical_url:
+        canonical_sanitized = sanitize_url(canonical_url)
+        if canonical_sanitized != sanitized_url:
+            print(
+                f"Input:     {sanitized_url}\n"
+                f"Canonical: {canonical_sanitized}  (from {canonical_source})"
+            )
+            dedup_url = canonical_sanitized
+        else:
+            # Self-referencing canonical (page declared itself) — no-op.
+            print(
+                f"Canonical matches input (self-referencing {canonical_source}); "
+                "no swap."
+            )
+    else:
+        print("No canonical signal found; using sanitized URL for dedup.")
+
     # Step 3: Follow redirects
     print("\nFollowing redirects...")
-    final_url, redirect_chain = follow_redirects(sanitized_url)
+    final_url, redirect_chain = follow_redirects(dedup_url)
 
     if final_url:
         if redirect_chain:
@@ -227,20 +259,20 @@ def main():
                 print(f"  {i}. {redirect_url}")
         else:
             print(f"No redirects detected")
-            final_url = sanitized_url
+            final_url = dedup_url
     else:
         print("Warning: Unable to follow redirects (network error or timeout)")
-        print("Will check for duplicates using sanitized URL only")
+        print("Will check for duplicates using sanitized/canonical URL only")
         final_url = None
 
-    # Step 4: Check for duplicates (both sanitized and final URLs)
-    is_duplicate, duplicates = check_duplicate(sanitized_url, final_url)
+    # Step 4: Check for duplicates (the dedup URL plus any redirect destination)
+    is_duplicate, duplicates = check_duplicate(dedup_url, final_url)
 
     if is_duplicate:
         print(f"\n❌ Error: URL already exists!")
         print("\nDuplicates found:")
         for location, matched_url in duplicates:
-            if matched_url != sanitized_url:
+            if matched_url != dedup_url:
                 print(f"  - {location}")
                 print(f"    Matched via redirect: {matched_url}")
             else:
