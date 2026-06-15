@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:22:15.657666+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OmniAuth ベース OAuth 2 認可サーバー Himari に MCP 向け機能を実装した",
+    "url": "https://diary.sorah.jp/2026/06/08/himari-for-mcp",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "独自開発のOAuth 2認可サーバー「Himari」をMCP（Model Context Protocol）に対応させるため、OAuth 2.1、DCR、CIMD、リフレッシュトークン等の機能を実装した技術的詳解。",
+    "summaryBody": "著者のsorah氏が開発・運用している、OmniAuthを上流としたサーバーレスOAuth 2認可サーバー/OIDCプロバイダ「Himari」のアップデート報告です。LLMの連携プロトコルであるMCP (Model Context Protocol) サーバーでの認証にHimariを活用するため、MCPが準拠を求める最新の仕様群を実装しました。\n\n主な実装・改善項目は以下の通りです：\n- **OAuth 2.1対応**: loopback URLでのポート番号無視（RFC 9207）や、認可レスポンスへのissパラメータ付与などを実施。\n- **AS Metadata (RFC 8414)**: OIDCのDiscoveryドキュメントを一般化したメタデータエンドポイントの提供。\n- **Dynamic Client Registration (RFC 7591)**: クライアントの動的登録機能。MCPクライアントのような不特定多数の接続に対応します。\n- **Client ID Metadata Documents (CIMD)**: クライアントIDにURLを使用し、動的にメタデータを取得する最新ドラフト仕様への対応。SSRF対策等の考慮点についても触れられています。\n- **リフレッシュトークン**: OmniAuthの上流認証を考慮した独自のリフレッシュロジックを実装。\n- **RFC 9068 (JWT Profile)**: Amazon Bedrock AgentCore等での検証を容易にするため、アクセストークンのJWT化に対応。\n\nサーバーレス（AWS Lambda + DynamoDB）環境での柔軟な認証基盤としての有用性が示されています。",
+    "topics": [
+      "MCP",
+      "OAuth 2.1",
+      "OIDC",
+      "Himari",
+      "Ruby"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

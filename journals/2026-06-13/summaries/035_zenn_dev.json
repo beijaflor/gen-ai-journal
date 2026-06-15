@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:50:35.595664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude を使って Gemini 議事録から必要な情報を抽出する仕組み",
+    "url": "https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google Meet の Gemini 議事録を GAS で Markdown 化して GitHub に集約し、Claude Skills を活用して決定事項や TODO を Slack や Jira へ自動連携するワークフローの解説。",
+    "summaryBody": "Google Meet の AI 議事録機能を実用的な業務プロセスに組み込むための具体的な構築手法が解説されています。主な流れは、Google Apps Script (GAS) を用いて Google Docs 形式の議事録を Markdown 変換し、プライベートな GitHub リポジトリへ集約することから始まります。次に、Claude Code の機能である「Claude Skills」を使い、文字起こしデータを含む Markdown から「決定事項」や「TODO」を特定のルールに基づいて抽出します。記事では、単なる要約に留まらないよう「抽出しない対象（雑談など）」の定義や、文字起こしを一次情報として優先する判断基準が詳しく示されています。抽出結果は Slack のメインメッセージとスレッドに分けて投稿されるほか、既存の Jira チケットを検索してコメントとして反映する Skill の定義（プロンプト）例も公開されています。自動化の手段として Claude Code の Routine や GitHub Actions を挙げ、AI を単なる要約ツールではなく自律的な業務アシスタントとして活用する実践的な知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "Gemini",
+      "Google Apps Script",
+      "GitHub Actions",
+      "業務自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

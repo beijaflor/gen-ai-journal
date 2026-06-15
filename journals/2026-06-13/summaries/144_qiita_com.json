@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:25:39.040677+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI/LLMを利用したベクトル検索とは？",
+    "url": "https://qiita.com/Yukidarusan/items/40868cd89c17e976a75c",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "SQLエンジニアの視点から、ベクトル検索の概念をリレーショナルデータベース（RDB）との対比で分かりやすく解説した入門ガイド。",
+    "summaryBody": "この記事は、普段SQLやRDBを扱っているエンジニアが「ベクトル検索」や「embedding」を地続きの知識として理解できるように解説しています。主な内容は以下の通りです。\n\n1. **概念の対比**: 従来のSQL検索が「文字の一致」を見るのに対し、ベクトル検索は「意味の近さ」を数値化（embedding）して検索します。\n2. **RDB的な解釈**: ベクトル検索をSQLで表現すると `ORDER BY 距離 LIMIT N` であり、条件に合う行を探すのではなく、近い順に並べて上位を取得する発想であることを強調しています。\n3. **実装の具体例**: PostgreSQLの拡張機能 `pgvector` を例に、ベクトル型のカラムを持つテーブル設計や、メタデータと組み合わせたハイブリッドな検索クエリの書き方を説明しています。\n4. **RAGとの関係**: LLMが知らない社内知識などを補完する「RAG」の心臓部として、検索技術（Retrieval）がRDBエンジニアの職能と密接に関わっていることを示唆しています。\n\n総じて、ベクトル検索を「魔法の新技術」ではなく「SQLの新しい道具」として再定義し、既存のDB知識を活用できる分野であることを伝えています。",
+    "topics": [
+      "ベクトル検索",
+      "RAG",
+      "pgvector",
+      "PostgreSQL",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

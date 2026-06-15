@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:49:12.446688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのアドバイザーが「プロジェクトの本質」を毎回思い出させてくれる ── 公式仕様を踏まえたCLAUDE.mdの書き方",
+    "url": "https://zenn.dev/acntechjp/articles/83f9d7bb898010",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのAdvisorツールに対し、CLAUDE.md内で二人称で直接指示を出すことで、長時間の開発セッションにおけるプロジェクト方針のブレを防ぐテクニックを解説しています。",
+    "summaryBody": "Claude Codeの「Advisor」機能は、実行モデル（Executor）が重要な判断を下す際に全履歴を参照してアドバイスを行うツールです。本記事では、公式ドキュメントの「アドバイザーに直接呼びかける指示は効果的」という知見を応用し、CLAUDE.mdに二人称形式（Advisor: ...）でプロジェクトの本質を記述する手法を提案しています。これにより、セッションが長くなるにつれ実行モデルが陥りやすい「コンテキストドリフト」を防ぎ、アドバイザーに『プロジェクトの番人』としての役割を持たせることが可能になります。記事内では具体的なCLAUDE.mdの記述サンプルや、Advisorを呼び出す頻度の制御、出力長の管理についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "Prompt Engineering",
+      "Anthropic",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:43:15.267690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Open Code Review — Alibabaによるエージェントネイティブな次世代コードレビュー基盤",
+    "url": "https://alibaba.github.io/open-code-review/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Alibabaが公開した「Open Code Review」は、決定論的なエンジニアリングとAIエージェントの推論を組み合わせ、低コストかつ高精度な自動コードレビューを実現するオープンソースツールです。",
+    "summaryBody": "Open Code Review（OCR）は、Alibabaグループ内で100万回以上のタスクを実行し、30%以上の採用率を誇る実戦投入済みのコードレビューエージェントです。最大の特徴は「ハイブリッドアーキテクチャ」にあり、タスク分割や行番号の特定といった決定論的な処理と、リスク検知や文脈理解といったLLMエージェントによる推論を分離することで、精度向上とトークンコストの削減（従来の1/5）を両立しています。\n\n主な機能として、3段階のLLM戦略による正確なコメント位置特定、メモリ圧縮による大規模コンテキスト管理、JavaやPython、Goなど10言語以上に対応した組み込みルールを備えています。また、Claude Code等の既存エージェントと比較しても、セマンティックF1スコアで高いパフォーマンスを示しており、開発者のプライバシーを保護しながらローカル環境やCI/CDへ容易に統合可能です。npm経由で即座にインストールでき、OpenAIやAnthropicなどのAPIと連携して動作します。",
+    "topics": [
+      "AIエージェント",
+      "コードレビュー",
+      "Alibaba",
+      "LLM",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Open Code Review — Agent Native Code Review"
+  }
+}

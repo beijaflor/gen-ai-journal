@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:45:54.400217+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "350画面のUI統一、AIに任せたのは「セルフチェック」だった",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260612/ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ラクスが350画面に及ぶ大規模なUI統一プロジェクトにおいて、AI（Cursor Rules）を実装そのものではなく「ルール遵守のセルフチェック」に活用し、品質と速度を両立させた実践事例。",
+    "summaryBody": "株式会社ラクスの「楽楽販売」開発チームによるUI統一プロジェクトの報告です。全350画面の改修という大規模な課題に対し、チームは作業の性質に応じてAIの役割を定義しました。既存コードが複雑なコア画面（56画面）ではデグレ防止のためAIを使わず人間が実装しましたが、ルールが明確な設定系画面（350画面）ではAIを活用。具体的にはCursor Rulesを用い、大量のデザインシステム移行ルール（アイコン置換や構造変更など）をAIに翻訳して「セルフチェック」を担当させました。実装者が手元でルール遵守を確認できる体制を整えたことで、レビュアーは機械的なチェックから解放され、UXや特殊挙動の確認など「人間が判断すべき領域」に集中できるようになり、半年での完遂を実現しました。AIが得意な「仕事の再分配」が成功の鍵であったと結論づけています。",
+    "topics": [
+      "AI活用",
+      "UIデザイン",
+      "Cursor Rules",
+      "フロントエンド開発",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

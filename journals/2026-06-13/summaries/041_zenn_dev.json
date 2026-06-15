@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:49:12.102299+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGで詰まったのは、検索結果ではなく検索クエリだった",
+    "url": "https://zenn.dev/mofuteq/articles/2c5ca06a689140",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RAG構築において、検索精度の向上以前に見落とされがちな「検索クエリ設計」の重要性と、抽象的な概念を具体的な検索意図（Search Intent）へ変換する境界の必要性を解説する。",
+    "summaryBody": "RAG（検索拡張生成）の開発ではベクトルDBやリランカーの選定に注力しがちだが、著者は「何を検索するか」というクエリの設計こそが最大のボトルネックになると指摘。ユーザーのプロンプトや、分析によって抽出された「共通ルール」は、そのままでは検索エンジンが最適に機能する形式ではない。特にファッション分野の実験プロジェクト「trend-to-rule」の知見を引き合いに、抽象的なトレンドルールを「色・アイテム・シルエット」といった具体的な視覚的手がかり（Visual Search Intent）へと変換する境界（Boundary）の必要性を論じている。検索の役割は「正解を出すこと」だけでなく、抽象から具象（現実の例）へ接地（Grounding）させる往復プロセスであると説く。",
+    "topics": [
+      "RAG",
+      "検索クエリ設計",
+      "Search Intent",
+      "LLM",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

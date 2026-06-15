@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:26:21.276001+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と Codex のレート残量を確認するためにブラウザを開くのをやめた話",
+    "url": "https://qiita.com/tatsuya582/items/5ca0c12a8495530f7d09",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code と Codex のレート制限をブラウザで都度確認する手間を省くため、API 経由で残量を端末の 1 ペインに常時表示する仕組みを自作した事例。",
+    "summaryBody": "Claude Code と Codex (ChatGPT Plus) を併用する環境において、頻発するレートリミット（5時間/週枠）を効率的に管理するための自作ツールに関する解説です。当初は CLI の statusLine での表示を試みましたが、複数サービスの同時把握や更新頻度の課題から、最終的に端末マルチプレクサ（cmux）の 1 ペインを占有して常時表示する方式を採用しました。\n\n### 主な実装・技術ポイント\n- **取得と表示の分離**: API 制限（429）を回避し、複数ペインでの参照を効率化するため、定期的に JSON を書き出す daemon と、それを読み込む viewer に分割。\n- **Claude の残量取得**: OAuth の usage エンドポイント (`/api/oauth/usage`) を利用し、アクセストークンを keychain 等から取得して使用。\n- **Codex の残量取得**: `codex app-server` に対して JSON-RPC を投げ、`account/rateLimits/read` メソッドから利用率を取得。\n- **開発手法**: ほぼすべてのスクリプト作成を Claude Code 自身に任せることで、実質数時間という短時間で自分専用の最適ツールを構築。\n\n既存ツールの機能に合わせるのではなく、自分が必要な情報を一目で把握できる環境を AI を活用して構築することで、開発フローが劇的に改善したと述べています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "レートリミット",
+      "CLI",
+      "ShellScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

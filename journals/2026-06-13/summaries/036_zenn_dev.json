@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:50:21.399713+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotのクレジット節約術3選",
+    "url": "https://zenn.dev/lalafloat/articles/5398aaa20b88b1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotの料金体系がトークンベースの従量課金へ移行したことを受け、モデル選定、タスク分割、プロンプトキャッシュ活用の3視点からクレジットを節約する具体策を解説した記事。",
+    "summaryBody": "GitHub Copilotの課金体系が従来の利用回数ベースから、入出力トークン量に応じた「AI Credit」消費制へ変更されたことに伴い、効率的なクレジット運用のための3つの節約術を紹介しています。\n\n1. **モデルの適切な選択**: 性能とコストのバランス（SWE-Bench Pro等のベンチマーク参照）を考慮し、GPT-5.5系を主軸にしつつ、設計には上位モデル、単純な実装にはmini系を使い分けることを推奨。特にClaude 3.5/4.6系は現状の料金体系では割高になる傾向を指摘しています。\n2. **タスクの分割とセッション管理**: トークンベースでは過去のチャット履歴が入力トークンを増大させるため、独立したタスクは「New Chat」や「/fork」でセッションを切り離し、不要なコンテキストを読み込ませないことが重要です。\n3. **Prompt CachingのTTL意識**: キャッシュによってコストを最大90%削減可能ですが、保持時間（TTL）に制限があります。GPT系（特に最新モデル）は最大24時間保持される一方、Claude系や旧モデルは数分で消えるため、時間を空けずにタスクを完了させる工夫が求められます。",
+    "topics": [
+      "GitHub Copilot",
+      "LLM",
+      "コスト最適化",
+      "GPT-5",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

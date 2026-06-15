@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:27:14.208550+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代の権限管理が、いまアツい",
+    "url": "https://tech.layerx.co.jp/entry/ai-agent-authorization",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自律的に判断・実行するAIエージェントの登場により、従来の人間中心の権限管理モデル（RBAC等）が通用しなくなる課題と、次世代のアイデンティティ設計の論点を整理した解説記事。",
+    "summaryBody": "LayerXの「Ai Workforce」開発チームによる、AIエージェント特有の権限管理に関する考察です。従来のソフトウェアは人間を操作の主体として設計されてきましたが、エージェントは自ら意図を生成しアクションを連鎖させるため、監査ログでの識別不能や責任所在の曖昧化といった課題が生じます。記事では、エージェントを「ユーザーの権限継承（代行）」とするか「独立したアイデンティティ（依頼）」とするかの設計指針や、Google・Salesforce等の先行事例を比較。将来的には、リソースの個別指定ではなく属性や意図に基づくポリシー記述、エージェントのライフサイクル管理が必要になると展望しています。",
+    "topics": [
+      "AIエージェント",
+      "権限管理",
+      "アイデンティティ管理",
+      "IAM",
+      "Ai Workforce"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

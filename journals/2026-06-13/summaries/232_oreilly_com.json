@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:23:34.115161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "補助金の終了：ツール利用型エージェントの実際のコスト",
+    "url": "https://www.oreilly.com/radar/the-subsidy-ended-what-tool-using-agents-actually-cost/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "GitHub Copilotの従量課金移行を契機に、反復的なツール利用が引き起こすAIエージェントの膨大な実行コストの実態と、プラットフォーム層でのガバナンスの必要性を解説する記事。",
+    "summaryBody": "GitHub Copilotが定額制からクレジット制の従量課金へ移行したことで、これまで隠されていた「エージェント型ワークロード」の真のコストが可視化されました。エージェントは単発のチャットと異なり、思考とツール実行のループを繰り返すため、蓄積されるコンテキスト量に応じてコストが指数関数的に増大します。特に冗長なツール定義や曖昧なプロンプトは、不必要な推論ループを生み出し、費用を跳ね上げる要因となります。本記事では、ユーザー個人のプロンプト技術（具体的指示やフォーマット制御）による節約には限界があるとし、モデルの動的ルーティング、ループ回数の制限、ペイロードのキャップといった「プラットフォーム側でのコスト・ガバナンス」をアーキテクチャとして構築すべきだと提言しています。",
+    "topics": [
+      "AI Agents",
+      "LLM Costs",
+      "GitHub Copilot",
+      "AI Governance",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Subsidy Ended: What Tool-Using Agents Actually Cost"
+  }
+}

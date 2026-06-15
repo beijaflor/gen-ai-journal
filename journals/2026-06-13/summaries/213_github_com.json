@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:28:59.371099+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Desktopがチャット利用のみでも1.8 GBのHyper-V VMを起動する不具合報告",
+    "url": "https://github.com/anthropics/claude-code/issues/29045",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Windows版Claude Desktopにおいて、チャット機能のみの使用時でも約1.8GBのメモリを消費するHyper-V仮想マシン（Vmmem）が自動起動し、リソースを過度に圧迫する不具合が報告されました。",
+    "summaryBody": "Windows版Claude Desktopアプリにおいて、アプリを起動するだけでHyper-Vの仮想マシンプロセス（Vmmem）が立ち上がり、約1.8GBものRAMを強制的に占有する問題がGitHub Issueで報告されました。この現象は、高度な機能である「Cowork」や「エージェントモード」を使用せず、通常のチャット機能のみを目的とする場合でも発生します。調査により、VirtualMachinePlatformが有効な環境でRPCインターフェースを介してvmcomputeサービスがトリガーされていることや、数千件に及ぶ過去のセッション用の一時ファイルがクリーンアップされずに蓄積している実態が明らかになりました。16GBメモリを搭載した標準的なPC環境では、この動作によりアイドル時のメモリ使用率が大幅に上昇し、システム全体のパフォーマンス低下を招いています。報告者は、VMのオンデマンド起動と不要なセッションデータの自動削除を求めています。",
+    "topics": [
+      "Claude Desktop",
+      "Hyper-V",
+      "Windows 11",
+      "メモリリーク",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "[BUG] Claude Desktop spawns 1.8 GB Hyper-V VM on every launch, even for chat-only use · Issue #29045 · anthropics/claude-code"
+  }
+}

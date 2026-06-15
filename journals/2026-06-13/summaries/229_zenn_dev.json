@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:24:29.728549+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "続・Figma MCPって本当にすごいの？",
+    "url": "https://zenn.dev/sre_holdings/articles/3b4d7d222d4b1f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Figma MCPと「Code to Figma」を再検証し、正しいコンポーネント設計とAIの双方向連携がデザイン・開発効率を大幅に向上させることを実証しています。",
+    "summaryBody": "本記事は、Figma MCP（Model Context Protocol）と、2025年3月に発表された「Code to Figma」機能の実践的な検証レポートです。前回の検証での「精度不足」という課題に対し、著者は「Figmaを正しい設計原則（フレームベース）で扱う」ことで解決を図りました。具体的には、コンポーネント単位での生成、既存デザインに基づいた未デザイン画面の作成、そして実装コードからFigmaへデザインを逆反映させる「Code to Figma」のフローを検証しています。結果として、コード生成の精度が劇的に向上しただけでなく、煩雑なFigmaレイヤーの命名をAIがコードの文脈に沿って整理するなどの保守性向上のメリットも確認されました。CI/CDへの組み込みなど、将来的な自動化への高いポテンシャルを結論づけています。",
+    "topics": [
+      "Figma",
+      "MCP",
+      "GitHub Copilot",
+      "Code to Figma",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

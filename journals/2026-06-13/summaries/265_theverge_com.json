@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:18:59.797375+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Microsoft、データ保持への懸念から従業員によるClaude Fableの利用を制限",
+    "url": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Microsoftは、Anthropicの最新AIモデル「Claude Fable 5」のデータ保持ポリシーが社内の機密保持基準に抵触する懸念があるとして、従業員による内部利用を制限しました。",
+    "summaryBody": "Microsoftが、Anthropicの「Mythosクラス」の最新AIモデルである『Claude Fable 5』の社内利用を制限していることが明らかになりました。外部の顧客（GitHub CopilotやFoundryユーザー）向けには同モデルの提供を開始している一方で、自社従業員が利用する内部ツールからは除外されています。\n\n制限の主な理由は、Anthropicが新たに導入したデータ保持要件にあります。従来のClaudeモデルは「ゼロデータ保持（ZDR）」ルールで運用可能でしたが、Fable 5では安全性監視（セーフティ・クラシファイア）を機能させるため、プロンプトと出力を30日間保持します。さらに、利用規約違反が疑われる場合は最長2年間保持される可能性があり、Microsoftの法務チームが機密情報や顧客データの取り扱いについて評価を続けています。この背景には、Fableがサイバーセキュリティ領域で非常に強力な能力を持つため、安全性を確保するための厳格な監視が必要になったという事情があります。",
+    "topics": [
+      "Microsoft",
+      "Anthropic",
+      "Claude Fable",
+      "データプライバシー",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": "Microsoft restricts Claude Fable for employees over data retention concerns | The Verge"
+  }
+}

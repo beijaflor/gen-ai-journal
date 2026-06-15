@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:43:59.906194+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 QAT の概要：モバイル・ラップトップ向けモデル圧縮の最適化",
+    "url": "https://note.com/npaka/n/ndeef4df16dd2",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "量子化対応学習（QAT）により精度低下を抑えつつ、モバイル端末等のリソース制限環境で1GB未満のメモリでも動作可能にした「Gemma 4 QAT」の解説。",
+    "summaryBody": "Googleが公開した「Gemma 4 QAT」は、量子化対応学習（Quantization-Aware Training）を用いて最適化されたモデル群です。学習中に量子化をシミュレートすることで、従来の学習後量子化（PTQ）に比べて精度を維持しながら劇的な軽量化を実現しています。主な特徴として、静的アクティベーションの事前計算、モバイルアクセラレータに適したチャネルごとの量子化、特定層への2ビット量子化の適用などが挙げられます。これにより「Gemma 4 E2B」のテキスト専用構成ではメモリ1GB未満での動作を可能にしており、スマホやラップトップでのローカル実行のハードルを大きく下げています。llama.cppやvLLM、MLXといった主要なフレームワークとも即座に連携可能です。",
+    "topics": [
+      "Gemma 4",
+      "QAT",
+      "量子化",
+      "Edge AI",
+      "Google DeepMind"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 50,
+      "overall": 88
+    }
+  }
+}

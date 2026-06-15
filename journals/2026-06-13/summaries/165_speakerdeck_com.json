@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:20:02.130984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「気づいたら仕事が終わっている」バクラクAIエージェント本番運用の裏側",
+    "url": "https://speakerdeck.com/yuya4/layerx-bakuraku-aie2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LayerXが提唱する「Ambient Agent」の概念に基づき、業務の完全自動運転を目指すバクラクAIエージェントの設計思想から、AI-BPOを活用した運用・改善サイクルまでを網羅的に解説した技術資料。",
+    "summaryBody": "LayerXの「バクラク」が、従来のSaaSからAIエージェントへと進化する過程での実践知をまとめたセッション資料です。最大の特徴は、人間が操作するのではなく「気づいたら仕事が終わっている」状態を作る『Ambient Agent』の追求にあります。\n\n主なポイントは以下の通りです：\n- **設計思想の転換**: LLMの高度な推論能力を信頼し、タスクを細分化しすぎず、可能な限り業務全体（End-to-End）を任せることでコンテキストの欠落を防ぎます。\n- **AI-BPOの活用**: 100%の精度に固執せず、AIエージェントと人間オペレーターを組み合わせたAI-BPOを「Human-on-the-Loop」の形で運用。これにより、難易度の高い業務の受託と改善データの蓄積を両立させています。\n- **エージェント・フレンドリーな業務設計**: 単なる既存フローの自動化ではなく、自動化を前提とした業務プロセスの再構築（暗黙知の言語化や不要なプロセスの削除）の重要性を説いています。\n- **堅牢なシステム基盤**: 多数のステップを伴うエージェント実行において、Temporalを用いたDurable Execution（耐久性のある実行）を導入し、失敗を前提とした回復設計を行っています。\n\n最後に、AIエージェントの改善自体をAIに行わせる「使えば使うほど賢くなる」ループの構築など、未来のプロダクト開発のあり方についても言及されています。",
+    "topics": [
+      "AIエージェント",
+      "Ambient Agent",
+      "LayerX",
+      "Human-on-the-Loop",
+      "AI-BPO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

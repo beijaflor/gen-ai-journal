@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:21:34.761240+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自分専用のAIニュースキュレーターをCodexで作って約1か月運用してみた",
+    "url": "https://zenn.dev/mkj/articles/966c62588bd8fc",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのCodexを活用し、RSS取得から日本語要約、Tinder風UIによる明示的フィードバックを用いたパーソナライズまでを自動化した自作AIニュースキュレーターの構築・運用レポート。",
+    "summaryBody": "松尾研究所のデータサイエンスチームによる、情報過多なAIニュースを効率的に収集するための自作ツール開発記録です。\n\n### システムの核となる機能\n- **自動要約と翻訳**: OpenAI BlogやarXiv等のRSSから記事を取得し、OpenAI APIで日本語のタイトルと要約を生成します。\n- **パーソナライズロジック**: Tinder風のスワイプUIを採用し、記事に対して「役に立った/不要」の明示的なフィードバックを与えることで、ソースやタグの重みを動的に調整します。\n- **推薦の工夫**: スコア上位だけでなく「探索枠」を設けることで情報の偏りを防ぎ、同一ソースの過剰露出を制限する制約を設けています。\n\n### 運用の成果と今後の展望\n1ヶ月の運用を通じ、OpenAIや分析系ニュースレターの優先度が高まるなど、自身の嗜好に合わせた最適化が確認されました。一方で、タグの粒度不足や類似記事の重複といった課題も浮き彫りになり、今後はEmbeddingベースの推薦導入などの改善が検討されています。Vibe codingによる迅速な開発と、実運用による改善サイクルの重要性が強調されています。",
+    "topics": [
+      "Codex",
+      "OpenAI API",
+      "推薦システム",
+      "ニュースキュレーション",
+      "LLMアプリ開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

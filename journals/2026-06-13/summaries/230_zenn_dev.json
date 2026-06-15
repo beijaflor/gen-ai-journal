@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:24:11.861174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "新しく出たGemma4-E2B-QATを試してみる",
+    "url": "https://zenn.dev/aiforall/articles/f4a39bb9b8c672",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleの最新軽量モデルGemma4-E2B-QATを、OllamaとOpen WebUIを用いてローカルのCPU環境で動作させ、テキスト・画像認識の性能を検証したレポート。",
+    "summaryBody": "Googleが公開したQAT（Quantization-Aware Training）最適化モデル「Gemma4-E2B-QAT」の導入・検証記事です。QATは学習段階から量子化を考慮する手法で、通常の量子化(PTQ)より精度劣化を抑えつつ軽量化が可能。本記事ではWSL2上のDocker環境でOllamaとOpen WebUIを使用し、GPUなしのCPU推論（Core i7, 16GB RAM）で実行。テキスト生成では演算やコード生成に成功する一方、文字カウントに失敗。画像認識では一部テキスト抽出を確認しました。推論速度は約18-19トークン/秒を記録し、軽量モデルとしての実用性と限界を明らかにしています。",
+    "topics": [
+      "Gemma 4",
+      "QAT",
+      "Ollama",
+      "ローカルLLM",
+      "Open WebUI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

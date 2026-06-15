@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:48:44.455414+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5のReact習熟度を測る",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新モデルClaude Fable 5のReact実装能力を13の指標で評価した結果、Opus 4.8の通常設定を上回るものの、高思考設定（max effort）には及ばないことが判明しました。",
+    "summaryBody": "エンジニアのuhyo氏による独自ベンチマーク「React Profession Bench」の第8回レポート。最新のClaude Fable 5を評価した結果、総合スコアは81.33となり、前世代のOpus 4.8 (default) を上回りましたが、Opus 4.8 (max effort) の84.03には届きませんでした。\\n\\n### 主な分析結果\\n- **進化点**: 状態モデリングやReact 19の最新イディオム（`&lt;Context value&gt;`短縮記法等）の採用、アクセシビリティへの配慮に地力の向上が見られます。\\n- **弱点**: 複雑なコンポーネント設計や、再利用可能なパーツへの適切な分解能力。これはモデルの「世代」よりも「思考量（effort）」に依存する性質が強いと分析されています。\\n- **APIの死角**: `useTransition`や`useOptimistic`といった並行レンダリング関連のAPIは、新世代モデルでも依然として活用できていない状況です。\\n\\n### 結論\\nFable 5は正常進化を遂げているものの、コスト効率の観点では既存モデルの思考設定を上げた方が高いパフォーマンスを発揮するケースがあることが示唆されました。",
+    "topics": [
+      "React",
+      "Claude",
+      "LLMベンチマーク",
+      "フロントエンド開発",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

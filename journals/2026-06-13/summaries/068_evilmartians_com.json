@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:45:37.539240+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2人のマーシャンが4週間で更地からMVPを構築：Railsによるエージェント指向コーディング",
+    "url": "https://evilmartians.com/chronicles/2-martians-greenfield-to-mvp-in-4-weeks-agentic-coding-on-rails",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RailsとInertia.js、AIエージェントを活用し、エンジニア1名とデザイナー1名の最小構成で、教育プラットフォームのMVPをわずか4週間で構築した事例紹介。",
+    "summaryBody": "Evil Martiansが、最新のAIツールを活用して迅速に製品を開発する「エージェント指向コーディング（Agentic Coding）」の実践例を公開しました。プロジェクトでは、Ruby on Rails、Inertia.js、Reactというスタックを採用。Railsの強固な「規約（Convention）」がAIにとって予測可能なガイドラインとなり、AIが生成するコードの信頼性が向上することを示しています。\n\n開発の初期段階では`Bolt.new`を用いてデザイナーが直接動くプロトタイプを作成し、その後`Claude Code`に移行して本番環境のRailsアーキテクチャへと統合しました。特筆すべきは、AIにプロジェクト固有の設計方針や抽象化のパターン（N+1問題の解決や独自のフィルタ抽象化など）を「スキル」として学習・適用させることで、開発後半には手動の介入がほぼ不要になった点です。この事例は、AI時代の開発においてRailsのような意見の強い（Opinionated）フレームワークが、いかに強力な制約として機能し、少数精鋭での高速な開発を支えるかを実証しています。",
+    "topics": [
+      "Ruby on Rails",
+      "Inertia.js",
+      "AIエージェント",
+      "MVP開発",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "2 Martians, greenfield to MVP in 4 weeks: agentic coding on Rails—Martian Chronicles, Evil Martians’ team blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:22:49.565810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code × Claude Design で趣味のアプリを作った話",
+    "url": "https://blog.asial.co.jp/6808/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとClaude Designを連携させ、設計から実装、デザイン監査までをAIと共創しながらExpo+Supabaseで筋トレアプリを個人開発した実践記録。",
+    "summaryBody": "アシアルのエンジニアによる、最新のAIコーディングツールを活用したモバイルアプリ開発の事例紹介です。ターミナル完結型エージェントのClaude CodeとUI生成のClaude Designを組み合わせたワークフローが詳細に綴られています。特徴的なのは「プロジェクト専属のAIを育てる」というアプローチで、.claude/配下に独自のAgentやSkill（手順書）を定義し、UIガイドやDB移行手順を自動化しています。デザイン面では、Claude Codeが作成した仕様をClaude Designでモック化し、再びClaude CodeでReact Native実装に落とし込む双方向の連携を実現。さらに実装とデザインの差分をチェックする監査エージェントを自作するなど、AIの出力を人間が意図を持って統制する「相棒」としての使い方が非常に実践的です。技術スタックはExpo、Supabase、TanStack Queryを採用し、オフラインファーストな設計についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "Claude Design",
+      "React Native",
+      "Supabase",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

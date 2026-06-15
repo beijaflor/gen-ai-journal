@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:25:48.450219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5 vs Opus 4.8：コードレビュー性能とコストの比較",
+    "url": "https://qiita.com/goofmint/items/0dbc38ed562a97a0850d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの次世代AIモデルFable 5とOpus 4.8を比較し、詳細なコード解析能力と、コスト・速度・ユーザー負荷のトレードオフを明らかにしています。",
+    "summaryBody": "本記事はCodeRabbitが提供するポッドキャストの内容を基に、Anthropicのモデル「Fable 5」と「Opus 4.8」のコードレビュー性能を比較・検証しています。Fable 5は環境理解とファイル構造の把握に時間をかける設計で、従来より15〜20%多い高品質なコメントを生成しますが、処理速度が遅く（ベンチマークで90分以上）、コストもOpus 4.8の約2倍という課題があります。ゲーム設計では短いプロンプトで意図を汲み取る高い推論力を示す一方、日常的なレビューでは過剰なコメントがノイズとなるリスクも指摘されており、精度重視とスピード重視の使い分けが推奨されています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "コードレビュー",
+      "LLMベンチマーク",
+      "CodeRabbit"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 25,
+      "overall": 85
+    }
+  }
+}

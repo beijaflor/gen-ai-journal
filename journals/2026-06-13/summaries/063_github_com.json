@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:43:30.284607+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Forge: セルフホストLLMのツール呼び出しとエージェント・ワークフローのためのPythonフレームワーク",
+    "url": "https://github.com/antoinezambelli/forge/tree/main",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Forgeは、セルフホストされた小型LLMのツール呼び出しにおける信頼性を向上させ、安定したエージェント・ワークフローを実現するためのPythonフレームワークです。",
+    "summaryBody": "Forgeは、ローカル環境で動作するLLM（LlamaやMistralなど）のツール呼び出し（Function Calling）機能を強化する「信頼性レイヤー」です。主な特徴は以下の通りです：\n\n1. **ガードレール機能**: モデルの回答を検証し、不正な形式（Markdown内のJSONや特定のXMLタグなど）を正規の形式に修復する「レスキューパース」や、エラー発生時のリトライループを備えています。これにより、8Bクラスの小型モデルでもツール呼び出しの成功率を大幅に向上させます。\n2. **プロキシサーバー**: OpenAI Chat CompletionsおよびAnthropic Messages API互換のプロキシを提供。既存のツール（aider, Continue, Claude Code等）から、ローカルLLMをより高性能なモデルのように利用可能です。\n3. **ワークフロー管理**: 複数のステップが必要なエージェント・ワークフローを定義・実行するWorkflowRunnerを搭載。コンテキスト圧縮やGPUリソースの優先順位付き共有（SlotWorker）にも対応しています。\n4. **広範なバックエンド対応**: Ollama, llama-server (llama.cpp), Llamafile, vLLM、さらにAnthropicのAPIをバックエンドとして利用できます。\n\n独自の評価ハーネスにより26のシナリオで性能が検証されており、信頼性の高いエージェント開発を支援します。",
+    "topics": [
+      "LLM",
+      "Agentic Workflow",
+      "Function Calling",
+      "Python",
+      "Self-hosting"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - antoinezambelli/forge: A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows"
+  }
+}

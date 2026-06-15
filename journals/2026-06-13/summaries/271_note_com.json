@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:17:32.915987+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pomeraは最高のエージェンティックAI端末だ!",
+    "url": "https://note.com/shi3zblog/n/n005d66490a9e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "キングジムのデジタルメモ端末「Pomera」をLinux化し、自作のAIエージェントインターフェースを搭載して究極の執筆・思考用AIデバイスへと改造する試み。",
+    "summaryBody": "デジタルメモ端末として人気の高いキングジムの「Pomera (DM200/DM250)」をLinux化し、バックエンドの強力なAIモデルと連携させるハックを紹介しています。\n\n### 概要と技術的ポイント\n- **Linux環境の構築**: Debian LinuxをPomera上で動作させ、Wi-Fiの認識バグをシェルスクリプトの修正で解消。Tailscaleを導入することで、外部ネットワークとのセキュアな接続を実現しています。\n- **バックエンドとの連携**: MacStudio M3 Ultra上で稼働する「DwarfStar4 (ds4)」を介してDeepSeek V4などの最新AIモデルと通信。これにより、端末自体は軽量ながら極めて高い知能を持たせています。\n- **自作エージェント「Poclaw」**: Claude Codeの代わりに開発された、Pomera上で動作する独自エージェント。ツール実行機能を備え、ネットワーク経由での調査や思考の補助が可能です。\n\n物理キーボードによる入力の快適さと、エージェントAIによる高度な支援が融合した、新たな「ハッカーの相棒」としてのPomeraの可能性を提唱しています。",
+    "topics": [
+      "Pomera",
+      "Linux化",
+      "AIエージェント",
+      "Debian",
+      "DeepSeek"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 95,
+      "overall": 85
+    }
+  }
+}

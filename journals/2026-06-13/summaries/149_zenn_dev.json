@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:24:32.500238+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Pro移行後の実測 — 付属は1,500クレジット、でもCLIは2回で16クレジット消えた",
+    "url": "https://zenn.dev/toki_mwc/articles/copilot-credits-actual-vs-forecast",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilot Proの従量課金移行後の実測結果を報告し、エージェント型CLIの大きなオーバーヘッドにより、1回平均約8クレジットを消費することを明らかにした記事。",
+    "summaryBody": "2026年6月のGitHub Copilot従量課金（AIクレジット制）移行に伴う実測レポート。Copilot Proの付属クレジットは月1,500クレジット（$15相当）であったが、CLI経由の利用ではエージェント型の仕組みにより、短い指示でもシステムプロンプト等で約29kトークンの入力が発生する。実測では、GPT-5.4を用いた2回のCLI呼び出しだけで計16クレジットを消費した。これにより、月間1,500クレジット枠では約180回程度の利用が目安となり、モデル単価以上に「利用経路によるオーバーヘッド」がコストに大きく影響することが示唆されている。",
+    "topics": [
+      "GitHub Copilot",
+      "GitHub Copilot CLI",
+      "GPT-5.4",
+      "従量課金",
+      "コスト分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

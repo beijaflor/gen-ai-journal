@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:20:40.412138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicの新モデル「Claude Fable 5 & Mythos 5」を徹底解説",
+    "url": "https://zenn.dev/galirage/articles/claude-fable-5",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicが発表した史上最高性能モデル「Claude Fable 5」と「Mythos 5」の技術仕様、セーフガードの仕組み、ベンチマーク性能を網羅的に解説した記事です。",
+    "summaryBody": "Anthropicが2026年6月に発表した最新モデル群の解説記事です。Claude Fable 5は一般公開向け、Mythos 5は重要インフラ等の特定組織限定（Project Glasswing）の高リスク領域対応版と位置づけられています。Fable 5は「安全クラシファイア」を搭載し、ハッキングや生物・化学領域の危険なリクエストを検知するとOpus 4.8へ自動フォールバックする独自の安全設計を採用しました。ベンチマークではSWE-bench Verifiedで95.0%を達成し、多くの領域でSOTAを記録。特にソフトウェア開発や創薬、ゲノミクス研究での成果が顕著です。価格は100万トークンあたり入力$10/出力$50と、先行したMythos Previewから半額以下に値下げされました。実務面では思考モードの常時有効化や30日間のデータ保持要件、セーフガード発動時のモデルすり替わりへの対応など、LLMOps上の注意点も詳述されています。",
+    "topics": [
+      "Anthropic",
+      "Claude Fable 5",
+      "Claude Mythos 5",
+      "AIセキュリティ",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:39:13.091232+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを導入したらやるべき！おすすめ3選（CLAUDE.md / hooks / プラグイン）",
+    "url": "https://zenn.dev/secondselection/articles/claude_code_knowledge",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの導入直後に設定すべき、コンテキスト共有のためのCLAUDE.md、操作を制御するhooks、機能を拡張するプラグインの3つの重要テクニックを解説。",
+    "summaryBody": "本記事では、Anthropicが提供するCLIツール「Claude Code」の効率を最大限に引き出すための3つの活用術を紹介しています。\n\n1. **CLAUDE.mdの作成**: プロジェクトのルールや推奨コマンドを記述する設定ファイルです。Claude Codeはセッションごとに記憶がリセットされますが、起動時にこのファイルを読み込むことで、前提条件のズレを防ぎトークン消費を抑えられます。TASKS.mdやSPEC.mdと役割を分ける運用が推奨されています。\n2. **hooksの設定**: ツールの実行前後（PreToolUse / PostToolUseなど）に処理を強制実行させる仕組みです。機密ファイルへのアクセス禁止や、コード編集後の自動フォーマット適用など、プロンプトによる「お願い」を「強制力」に変えることで安全性を高めます。\n3. **プラグイン（MCP）の活用**: AIの思考プロセスを強化する「Superpowers」や、最新ドキュメントを検索してハルシネーションを防ぐ「Context7」などの導入手順を解説。標準機能を超えた高度な開発支援を実現します。\n\n単なる導入に留まらず、開発ワークフローを構造化するための具体的なベストプラクティスがまとまっています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLAUDE.md",
+      "MCP",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

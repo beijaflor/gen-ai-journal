@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:33:29.445099+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DiffusionGemma：テキスト生成を4倍高速化する拡散型オープンモデル",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが発表したDiffusionGemmaは、テキスト拡散技術を用いることで、従来の自己回帰型モデルより最大4倍高速にテキストを並列生成できる26B MoEの実験的オープンモデルです。",
+    "summaryBody": "Googleは、テキスト生成に拡散（Diffusion）モデルのアプローチを取り入れた実験的なオープンモデル「DiffusionGemma」を公開しました。従来のLLMが1トークンずつ逐次的に生成するのに対し、本モデルは256トークンのブロックを並列で同時に生成し、反復的に洗練させることで、GPU上での推論速度を最大4倍向上させています。26Bの混合エキスパート（MoE）構成ですが、推論時にアクティブになるのは3.8Bパラメータのみであり、量子化により18GB VRAMのコンシューマー向けGPUでも動作可能です。双方向アテンションを活かしたインライン編集やコード補完などのインタラクティブな用途に強みを持ち、Apache 2.0ライセンスで提供されます。生成品質は標準のGemma 4に及ばない場合がありますが、スピードとローカル推論の効率性を極限まで追求した設計となっています。",
+    "topics": [
+      "DiffusionGemma",
+      "Text Diffusion",
+      "LLM",
+      "Google DeepMind",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "DiffusionGemma: 4x faster text generation"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:25:25.802709+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "経験浅いエンジニアが AI に React 書かせてると、進化に取り残される説",
+    "url": "https://qiita.com/Yamada040/items/be9684ba52ae88f76dda",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（GPT-5.5）が生成するコードがReact 19などの最新仕様を反映しにくい構造的理由を解説し、ジュニアエンジニアがAIに頼りすぎるリスクと自律的な学習の重要性を説く。",
+    "summaryBody": "ジュニアエンジニアである著者が、最新のAI（GPT-5.5を想定）にReactのフォーム実装を依頼した際、依然としてReact 18以前の古い手法（複数のuseState管理）が提案されることに気づいた経験を綴っています。記事では、React 19で導入された「useActionState」と「form action」を用いることで、状態管理のコードを劇的に削減できる具体例を提示。AIが古い書き方を優先する理由として、学習データにおける既存パターンの圧倒的多数派バイアスや、API進化に対するLLMの構造的な追従遅れ（arXivの研究引用）を挙げています。結論として、AIを正しく使いこなすには人間側が「何が最新か」を知っている必要があり、AIの生成物を疑い、公式ドキュメント等で常にキャッチアップし続ける姿勢が不可欠であると主張しています。",
+    "topics": [
+      "React 19",
+      "LLM",
+      "useActionState",
+      "AI Code Generation",
+      "Frontend Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

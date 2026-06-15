@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:40:11.481020+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メモリが潤沢ではないPCでローカルLLMにコーディング質問した結果",
+    "url": "https://zenn.dev/okamyuji/articles/local-llm-ruby-pitfall-benchmark-18gb-mac",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "18GBメモリのMac環境で、Gemma 4やQwenシリーズ等のローカルLLMを用いてRubyとGoの難解な言語仕様への回答精度を比較検証した記録。",
+    "summaryBody": "この記事は、18GBのメモリを搭載したMacBook Pro（M3 Pro）環境で、Ollamaを介して3つのローカルLLM（Gemma 4, Qwen 3.5, Qwen 2.5 Coder）のコーディング能力を検証した記録です。メモリ制約上、モデルサイズは9〜10GBが限界であり、その範囲内でRubyとGoの固有の「落とし穴」を問うプロンプトを投げています。\n\n検証の結果、言語によってモデルの得意不得意が顕著に現れました。Goに関しては、Gemma 4がクロージャやデータ競合の問題で完璧に近い回答を示した一方、Rubyでは「文字列はイミュータブルである」と誤認するなどの致命的なミスが見られました。対照的にQwen 2.5 CoderはRubyの仕様に比較的強い傾向がありました。また、1Tパラメータ規模のクラウドモデル（Kimi K2.6）との比較も行い、特にProc/Lambdaの挙動やdeferの実行タイミングなど、言語の深いセマンティクスに関してはローカルモデルに明確な限界があることを指摘しています。結論として、ローカルLLMはバグ発見のヒントには有用ですが、初心者が鵜呑みにするのは危険であり、経験者によるレビューが不可欠であると説いています。",
+    "topics": [
+      "Local LLM",
+      "Ollama",
+      "Ruby",
+      "Go",
+      "Benchmark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

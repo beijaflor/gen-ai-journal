@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T10:28:10.528291+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercelを活用し12万社のCMOエージェントを運用するOkaraの事例",
+    "url": "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "わずか4人のチームで12万社のAIマーケティングを自動化するOkaraが、Vercel AI GatewayとSandboxを駆使して1日40億トークンを処理する技術構成を解説しています。",
+    "summaryBody": "AI CMOプラットフォーム「Okara」は、SEO、SNS、コンテンツ制作などを代行する専門のエージェント群を運用し、12万社以上の企業の成長を支援しています。わずか4名のエンジニアでこの規模を支えるため、同社はVercelのインフラを最大限に活用しています。具体的には、Vercel AI Gatewayの導入により、8つの異なるモデルプロバイダーを単一のAPIで管理し、リトライ処理やフォールバック、課金管理のオーバーヘッドを解消。新しいAIモデルがリリースされた当日にユーザーへ提供できるスピード感を実現しました。また、エージェントがサイト分析コードを実行する隔離環境としてVercel Sandboxesを利用し、安全かつ即座にSEO改善のプルリクエストを生成するフローを構築しています。インフラを隠蔽し、プロダクト開発に専念することで、1日40億トークンという膨大なトラフィックの処理を少人数で可能にしています。",
+    "topics": [
+      "Vercel",
+      "AI Agents",
+      "LLMOps",
+      "AI Gateway",
+      "Sandbox"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "How Okara runs CMO agents for 120,000 companies on Vercel"
+  }
+}

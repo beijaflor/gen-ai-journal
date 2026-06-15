@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:26:36.459750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeとOSカーネルを作り始めた #Rust",
+    "url": "https://qiita.com/segfo/items/970f068161f19cfacc6e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントであるClaude Codeを活用し、Rustを用いたOSカーネルの設計・実装・ドキュメント作成を効率的に進める学習手法の提案。",
+    "summaryBody": "AIコーディングエージェント（Claude Code）を「専属のプロフェッショナル」として隣に置き、RustでOSカーネルをフルスクラッチ開発する新しい学習アプローチを解説しています。既存のOS自作本では詳細な解説が不足しがちなメモリ管理（仮想メモリ、バディアロケータ、デマンドページング等）を重点的に扱い、Claudeに設計の細分化、TODO管理、そして実装の背景理論をドキュメント化させるサイクルを構築。単にコードを生成するだけでなく、人間が仕組みを深く理解するためのパートナーとしてAIを活用する方法を紹介しており、ACPIによる電源管理やAPICの実装など、低レイヤー開発における具体的な進め方とコスト感も示されています。",
+    "topics": [
+      "OS自作",
+      "Rust",
+      "Claude Code",
+      "メモリ管理",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

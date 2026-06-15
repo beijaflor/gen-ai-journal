@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-11T17:25:01.998196+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM時代に非構造化データを構造化して扱う設計を考える",
+    "url": "https://zenn.dev/lnest_knowledge/articles/5c096326621715",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの推論能力とマルチモーダル化を背景に、画像や音声等の非構造化データを既存システムで活用可能な構造化データとして定義し、設計する重要性を説く。",
+    "summaryBody": "LLMの進化により、画像・音声・現場ログといった非構造化データの解釈が容易になりましたが、これらを単に自然文として出力するだけでは業務自動化には不十分です。本記事では、LLMの役割を「非構造化データを解釈し、構造化されたインターフェースに変換する入口」と位置づける設計思想を解説しています。JSON Schemaなどを用いたスキーマ定義によるシステム間の「契約」の明確化、既存のデータベースやBIツールとの接続性向上、さらには外部APIとオープンウェイトモデルのコスト・リアルタイム性におけるトレードオフなど、LLMを実務システムへ組み込むための実践的な検討事項を網羅しています。",
+    "topics": [
+      "LLM",
+      "データモデリング",
+      "システム設計",
+      "マルチモーダル",
+      "JSON Schema"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:24:46.687672+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Dynamic workflow と /goal コマンドによるスキルの最適化手法",
+    "url": "https://zenn.dev/nogu66/articles/dynamic-workflow-goal-skill-optimization",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「Dynamic workflow」と「/goal」コマンドを組み合わせ、AIエージェントのスキルを多角的かつ自動的に検証・改善する高度な最適化フローを提案しています。",
+    "summaryBody": "Claude Codeにおけるエージェントスキルの開発において、手動チューニングの限界を打破するための検証・改善手法を解説しています。中心となるのは、マルチエージェントをオーケストレーションして並列的なコードレビューや棄却検証を行う「Dynamic workflow (ultracode)」と、指定した達成条件を満たすまで自律的に動作し続ける「/goal」コマンドの組み合わせです。具体的なワークフローとして、まずultracodeを用いてスキルの欠陥や考慮漏れを多角的な視点から洗い出し、次に/goalコマンドでその指摘事項が完全に解消されるまで自動的に修正と再検証を繰り返すプロセスを示しています。この手法により、人的な検証コストを大幅に削減しながら、実運用に耐えうる高精度なエージェントスキルの育成が可能になります。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "LLM",
+      "プログラミング効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

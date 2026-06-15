@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:56:28.085088+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon Bedrock AgentCore Gateway ターゲット向けプライベート接続パターン",
+    "url": "https://aws.amazon.com/jp/blogs/networking-and-content-delivery/private-connectivity-patterns-for-amazon-bedrock-agentcore-gateway-targets/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCore Gateway がサポートする MCP、REST API、API Gateway、Lambda の各ターゲットに対し、VPC Lattice や VPC Link 等を用いてセキュアなプライベート接続を確立する 4 つのアーキテクチャパターンを解説。",
+    "summaryBody": "Amazon Bedrock AgentCore Gateway を活用したエージェンティック AI ワークロードにおいて、セキュリティとコンプライアンスを維持するための 4 つのプライベート接続パターンを詳細に解説しています。\\n\\n1. **MCP サーバー**: Amazon VPC Lattice を使用したプライベートエンドポイント経由の接続。管理型および自己管理型の構成が可能。\\n2. **REST API**: OpenAPI 仕様に基づき、VPC Lattice 経由で内部 REST API と通信。Gateway がプロトコル変換を自動処理。\\n3. **Amazon API Gateway**: Regional REST API と VPC Link を組み合わせ、VPC 内の Network/Application Load Balancer 経由でリソースにアクセス。\\n4. **AWS Lambda**: VPC 対応の Hyperplane ENI を通じてプライベートリソースを呼び出し。\\n\\nさらに、Direct Connect や VPN を用いたオンプレミスやマルチクラウド環境、また AWS RAM を活用したクロスアカウント接続など、複雑なネットワーク要件に対応するための高度なパターンも網羅しており、セキュアな AI 基盤設計に不可欠なガイドとなっています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AgentCore Gateway",
+      "VPC Lattice",
+      "Network Security",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Private connectivity patterns for Amazon Bedrock AgentCore Gateway Targets"
+  }
+}

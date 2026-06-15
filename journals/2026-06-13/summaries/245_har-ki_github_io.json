@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:27:50.973727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "06 — エアギャップ環境における Claude Code の実行",
+    "url": "https://har-ki.github.io/claude-code-sre-handbook/handbook/06-air-gapped/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Silicon 上の Ollama と Qwen モデルを使用して、Claude Code を外部ネットワークから完全に遮断された環境で動作させるための具体的なセットアップ手順と最適化手法を解説。",
+    "summaryBody": "本記事は、セキュリティ要件や規制により外部クラウドが利用できない環境（エアギャップ環境）で、Claude Code をローカル LLM と連携させて実行する方法を解説しています。Apple M3 Pro (36GB RAM) と Ollama 0.24、Qwen 3.6 35B MoE モデルを組み合わせたスタックをベースに、実用化のために必要な4つの重要な修正を提示しています。\n\n### 4つの不可欠な修正\n1. **思考機能の無効化**: 推論モデルが制限時間を使い切るのを防ぐため、`MAX_THINKING_TOKENS=0` を設定します。\n2. **Ollama 0.24 へのアップグレード**: MLX バックエンドの適切な動作と API 互換性のために最新版が必要です。\n3. **環境変数による制御**: MLX ランナーは Modelfile の設定を無視するため、環境変数でパラメータを指定する必要があります。\n4. **404 エラーの無視**: Anthropic 固有のエンドポイントへのリクエスト失敗は無視して構いません。\n\n### ハードウェアの影響と限界\nローカル実行の速度はメモリ帯域幅に依存し、36GB RAM モデルでは 25K トークンのプリフィルに約 1 分を要します。また、メモリ容量によってコンテキストウィンドウが制限（36GB で 32K、64GB で 256K）されます。十分なハードウェアがあれば、データの機密性を保ちつつ調査から PR 作成までのループを完結させることが可能です。",
+    "topics": [
+      "Claude Code",
+      "Ollama",
+      "Qwen 3.6",
+      "Apple Silicon",
+      "Air-gap"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "6. Air-Gapped Claude Code - The Claude Code SRE Handbook"
+  }
+}

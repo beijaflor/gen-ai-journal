@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:23:52.663079+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・ハーネスを自作しない：Hermesを活用した次世代のAIエージェント構築術",
+    "url": "https://rajitkhanna.com/agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "セッション管理やメモリ、自動化などの基盤（ハーネス）を自作せず、Hermesをプリミティブとして利用することで、独自のデータやスキルに集中したAIエージェント開発を実現する手法の提案。",
+    "summaryBody": "AIエージェントの開発において、セッション管理、メモリ、ツールループ、ファイルシステムなどの「ハーネス」構築は極めて高コストです。筆者は、これらの基盤を自作する代わりにオープンソースのパーソナルエージェント「Hermes」をプリミティブとして活用することを提唱しています。Hermesを基盤に据えることで、開発者は独自のシステムプロンプトやMCP（Model Context Protocol）によるツール連携、特定のスキルセットの定義のみに集中できるようになります。新たに公開されたPrism APIでは、Docker隔離環境、永続ファイルシステム、自己学習（Ralph Wiggumループ）、自動化機能を備えたエージェントを1つのAPIコールでデプロイ可能です。これは、LangChainやClaudeのマネージドエージェントよりも高い自由度と機能網羅性を目指しています。",
+    "topics": [
+      "AIエージェント",
+      "Hermes",
+      "MCP",
+      "自動化",
+      "エージェント・ハーネス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": "Building Agents without Harness-Engineering"
+  }
+}

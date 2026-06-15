@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-13T09:55:50.373296+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バグの自動修正を自律エージェントに任せる：Linearにおける実践",
+    "url": "https://linear.app/now/linear-agent-bug-fix",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Linearのエンジニアが、自律型エージェント「Linear Agent」を活用して機能フラグの削除やタスク修正を自動化し、人間とAIが協調する新しい開発ワークフローを確立した事例を紹介している。",
+    "summaryBody": "ソフトウェア管理ツールのLinearが取り組んでいる、AIエージェントによる「セルフドライビングSaaS」の実現に向けた実践的なレポートです。開発者のIgor Sechyn氏が、Linear Agentにバグ修正を任せる中で得た知見が共有されています。\n\n### 成功している2つの具体例\n1. **デッドコードの削除**: 全ユーザーに公開済みのフィーチャーフラグを監視し、100%使用されているものを検知して、エージェントが自動でコードをクリーンアップします。タスクが定型的であるため、ほぼ100%の成功率を誇ります。\n2. **バックグラウンドタスクの修正**: 失敗率が上昇したタスクに対し、エージェントがログを読み取って修正を試みます。成功率は約33%ですが、修正に至らなくても調査結果をIssueに残すことで、人間のエンジニアの時間を大幅に節約しています。\n\n### 運用の鍵となるポイント\n- **パンくずリスト（Breadcrumbs）**: コードの命名規則やパターンを整備し、エージェントがルールを推論しやすくする「エンジニアリング側の工夫」が不可欠です。\n- **理解の証明**: トークンの無駄遣いや誤ったPRを防ぐため、修正案を出す前にエージェントに問題を理解したことを証明させる「ゲート」を設けています。\n- **マルチプレイヤーな体験**: エディタ内での完結ではなく、Issueトラッカー上で調査プロセスが可視化されるため、チーム全員が状況を把握し、必要に応じて人間が介入できる設計になっています。",
+    "topics": [
+      "AI Agents",
+      "Linear Agent",
+      "Software Automation",
+      "LLM in Production",
+      "Code Maintenance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Teaching an agent to auto-fix bugs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-10T06:34:48.365887+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "fm CLIとPython SDKを使用したAI搭載スクリプトの構築",
+    "url": "https://developer.apple.com/videos/play/wwdc2026/334/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "macOS 27で導入された新しいfm CLIとPython SDKを活用し、Apple Foundation ModelをスクリプトやPythonのデータ評価パイプラインに統合する方法を紹介しています。",
+    "summaryBody": "Appleは、macOS 27から利用可能になる「fm」コマンドラインツールと「Foundation Models SDK for Python」を発表しました。これにより、従来Swiftのみに限定されていたオンデバイスおよびPrivate Cloud Compute（PCC）上のApple Foundation Modelsへのアクセスが、ターミナルやPython環境から直接可能になります。\n\n### 主な内容\n- **fm CLI**: ターミナルから即座にモデルと対話できる `fm chat` や、スクリプト内で推論を実行する `fm respond` を提供。JSONスキーマを用いた構造化出力もサポートし、複雑なファイル整理の自動化などに活用できます。\n- **Python SDK**: Python 3.10以上およびApple Silicon Macに対応。Swift版と同様のAPI体系（LanguageModelSession）を持ち、ツール呼び出し（Tool Calling）や構造化出力（Guided Generation）が可能です。\n- **評価パイプラインの構築**: Jupyter Notebook、Pandas、matplotlibなどのPythonエコシステムと統合することで、プロンプトのバリエーションごとの精度を定量的に評価・可視化するワークフローが示されています。\n\n開発者はXcodeプロジェクトを再構築することなく、迅速にプロンプトのプロトタイピングや性能分析を行うことが可能になります。",
+    "topics": [
+      "Apple Foundation Models",
+      "macOS 27",
+      "Python SDK",
+      "CLI Tools",
+      "LLM Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Build AI-powered scripts with the fm CLI and Python SDK"
+  }
+}

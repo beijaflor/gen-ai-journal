@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:45:36.447437+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM Checker - ローカルLLM実行のためのハードウェア分析・モデル推奨CLIツール",
+    "url": "https://github.com/Pavelevich/llm-checker",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ユーザーのPCハードウェアをスキャンし、メモリ容量やGPU性能に基づいてOllamaで実行可能な最適なLLMモデルを推奨・実行する高度なCLIツール。",
+    "summaryBody": "llm-checkerは、ローカル環境での大規模言語モデル（LLM）実行を最適化するためのオープンソースCLIツールです。ユーザーのCPU、GPU（NVIDIA, AMD, Apple Silicon, Intel Arc）、RAM、VRAMを詳細に分析し、200以上のモデルと7,000以上のバリアントを含むカタログから、デバイスの性能に合致したモデルを提案します。\n\n主な特徴は以下の通りです：\n- **4Dスコーニングエンジン**: 品質、速度、適合性（メモリ効率）、コンテキスト長の4次元でモデルを評価。\n- **高度なメモリ推定**: 量子化レベルに応じた正確なメモリ使用量を算出。MoE（Mixture of Experts）モデルの推論特性にも対応。\n- **Ollama統合**: 推奨モデルのプルから実行、トークン生成速度の計測までシームレスに連携。Claude MCP（Model Context Protocol）もサポートしており、AIエージェントからのハードウェア管理が可能。\n- **エンタープライズ対応**: ポリシー検証機能や監査ログのエクスポート（JSON, CSV, SARIF）を搭載し、組織内での利用制限やガバナンスにも対応しています。\n\nNode.js 16以上で動作し、ネイティブ依存関係がないため、環境構築も非常に容易です。",
+    "topics": [
+      "LLM",
+      "Ollama",
+      "ローカルAI",
+      "ハードウェア最適化",
+      "CLIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - Pavelevich/llm-checker: Advanced CLI tool that scans your hardware and tells you exactly which LLM or sLLM models you can run locally, with full Ollama integration. · GitHub"
+  }
+}

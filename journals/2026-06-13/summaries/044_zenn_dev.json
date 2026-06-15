@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-09T05:48:30.826735+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ultracode でアイデア出しを安く回す — Claude Code の workflow コストを実測で約7割削る手法",
+    "url": "https://zenn.dev/marvelousu/articles/claude-dynamic-workflows-cost",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのdynamic workflows（ultracode）におけるトークン消費構造を実測分析し、モデルの使い分けやバッチ化によってコストを約7割削減する具体的な手法を解説した記事。",
+    "summaryBody": "Claude Codeの新機能「dynamic workflows（ultracode）」は、並列エージェントの稼働によりトークン消費が膨らむ傾向があります。本記事ではアイデア出しの5段階パイプラインを例に、コスト削減の3大レバーを提示しています。まず「単価の最適化」として、調査をHaiku、発明・採点をSonnet、選別・設計をOpusと工程別にモデルを割り振ることで、質を保ちつつ単価を下げます。特にSonnet 4.6は非自明な重複検知においてOpus並みの精度を示し、極めてコスパが高いことが実証されました。次に「体数の削減」です。エージェント1体あたり約20kトークンの固定コスト（システムプロンプトやツール定義）が発生するため、採点などを並列化せず1体でバッチ処理させることで大幅にトークンを削れます。最後に「キャッシュの温度管理」により、同じ文脈を反復利用してキャッシュ読み出し（安価）を促します。これらの合わせ技により、実測でコストを約74%削減、実行時間を約46%短縮できることが示されています。",
+    "topics": [
+      "Claude Code",
+      "LLMコスト最適化",
+      "Anthropic",
+      "AIエージェント",
+      "ultracode"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}
