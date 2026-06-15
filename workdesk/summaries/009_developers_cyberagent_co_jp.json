@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:51:05.998036+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CA Tech JOB 参加記録【極予測やりとりAI】",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/64326/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "サイバーエージェントのインターンにおいて、広告クリエイティブ審査ツールのSlack通知処理を同期から非同期バッチ方式へ再設計し、DBロック競合や高レイテンシ問題を解消した技術改善の記録。",
+    "summaryBody": "サイバーエージェントの就業型インターン「CA Tech JOB」における、AI事業本部のプロダクト「極予測やりとりAI」での開発成果をまとめた記事です。主な成果として、広告クリエイティブの納品通知処理のトランザクション構造の再設計が挙げられます。従来はDBトランザクション内でSlack APIを同期的に呼び出していたため、APIの遅延（最大8〜10秒）がユーザーの待機時間やDBの行ロック保持時間の増大を招いていました。これを解消するため、通知キュー（notice_queue）とバッチ処理を用いた非同期設計へと転換し、信頼性とパフォーマンスを大幅に向上させました。また、スレッドIDのバリデーション不備による誤送信問題も修正しています。副次的な学びとして、Datadog MCP（Model Context Protocol）を活用した効率的なメトリクス調査や、チーム開発における合意形成の重要性についても触れられています。",
+    "topics": [
+      "インターンシップ",
+      "バックエンド",
+      "システム設計",
+      "Slack API",
+      "Datadog"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

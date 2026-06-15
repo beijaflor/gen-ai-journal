@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T04:14:53.230132+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicの次世代モデル「Claude Fable 5」システムプロンプトの流出・解析",
+    "url": "https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubで公開された、Anthropicの未発表または最新モデル「Claude Fable 5」および「Mythos 5」の挙動を規定する詳細なシステムプロンプトの内容。",
+    "summaryBody": "このドキュメントは、Anthropicの最新モデル「Claude Fable 5」に適用されているシステムプロンプトの全文です。プロンプトによると、Fable 5は従来のOpusを超える「Mythosクラス」の初モデルと位置付けられ、承認済み組織向けの制限解除版「Mythos 5」とベースを共有しています。\n主な特徴として、Artifacts内での永続ストレージAPI（window.storage）の利用、Claude CodeやClaude Coworkなどのエージェントツールとの連携、MCP（Model Context Protocol）アプリの提案フローが詳細に規定されています。また、著作権保護（1引用15語以内、1ソース1回限定）、メンタルヘルスへの配慮、法的・金融的助言の回避といった厳格なガードレールも確認できます。知識のカットオフは2026年1月、プロンプト上の現在時刻は2026年6月9日と設定されており、次世代モデルのリリースサイクルを示唆する内容となっています。",
+    "topics": [
+      "Claude Fable 5",
+      "Anthropic",
+      "システムプロンプト",
+      "AIエージェント",
+      "LLM内部仕様"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "CL4R1T4S/ANTHROPIC/CLAUDE-FABLE-5.md at main · elder-plinius/CL4R1T4S · GitHub"
+  }
+}

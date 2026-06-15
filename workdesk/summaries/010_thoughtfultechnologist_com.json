@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:51:21.820729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "開発プロセスからの自己自動化：Claude Codeによる自律型開発サイクルの構築",
+    "url": "https://www.thoughtfultechnologist.com/p/automating-myself-out-of-development",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとGitHubを連携させ、仕様策定から実装までをEC2上のデーモンで自律化し、人間を「コードを書く作業」から「レビューと意思決定」へとシフトさせる高度な開発フローの実践記録。",
+    "summaryBody": "Claude Codeを活用して開発サイクルから人間を段階的に排除し、自律的なエージェントワークフローを構築した詳細な実践記です。著者は、ローカルでの対話型セッションから始まり、EC2環境への移行、GitHub Issuesをステートマシンとして利用した非同期タスク管理、そしてcronによる自動実行（デーモン化）へとシステムを進化させています。\n\n主な構築ステップと特徴は以下の通りです：\n1. **GitHubベースのオーケストレーション**: Issueのラベル（ready, implementing, needs-attention等）を状態遷移のトリガーとして使用。\n2. **コンテキスト・エンリッチメント**: わずかな指示からAIが既存コードを調査し、詳細な仕様書とQAログを自動生成するパスを構築。\n3. **非同期実行**: cronスクリプト（tick.sh）が15分おきにキューを確認し、非対話モードでClaude Codeを走らせてブランチを作成。\n4. **人間によるゲート設定**: 思考までAIに委譲することを避け、仕様承認、プラン承認、マージの3点に人間のチェックを配置。\n\n著者は、この自動化によってボトルネックが「実装」から「レビューと設計」にシフトし、技術負債のリスクは高まるものの、より高次な開発に集中できるようになったと述べています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Autonomous Development",
+      "Software Engineering",
+      "LLM Workflows"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Automating Myself Out of Development"
+  }
+}

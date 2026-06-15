@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T04:13:16.758777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「原則」を Rules / Skills にして運用してみた",
+    "url": "https://zenn.dev/tingtt/articles/fc05c73f8265e4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに詳細な実装例を大量に与えるのではなく、抽象度の高い「設計原則」をRulesやSkillsとして定義することで、開発効率と成果物の品質を向上させる運用の工夫を紹介しています。",
+    "summaryBody": "AIエージェントを活用した開発（Agentic Coding）において、メンテナンス負荷の高い大量の「実装例」を提示する代わりに、抽象度の高い「設計原則」をRulesやSkillsとして定義し運用する手法を解説した記事です。\n\n著者は運用構成を「抽象的な原則」「技術・種別ごとの適用ガイド」「プロジェクト固有の具体的指示」の3段階に分けることを推奨しています。具体例として、ドキュメント作成における役割定義や、ソースコードにおける責務分離・境界設計の原則をMarkdown形式のSkillファイルとして定義する方法が紹介されています。\n\nこのアプローチの利点は、AIが不足しているコンテキストを「原則」に基づいて自律的に補完・判断できるようになる点にあります。結果として、DesignDoc作成時のプロンプト調整（壁打ち）回数が大幅に減少（10〜20回から5〜10回へ）し、比較的軽量なモデルでも実用的な成果が得られるようになると報告されています。0→1の新規開発や、品質にこだわりたいプロジェクトにおいて特に有効なプラクティスです。",
+    "topics": [
+      "Agentic Coding",
+      "AIエージェント",
+      "設計原則",
+      "Rules/Skills",
+      "LLM開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}
