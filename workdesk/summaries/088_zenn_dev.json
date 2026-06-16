@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:45:46.765236+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "従量制になったGitHub Copilotの代わりにOpenCode GoをCopilot Chatのカスタムプロバイダとして使う",
+    "url": "https://zenn.dev/kusuke/articles/82129236caa5f8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotの従量課金化を受け、VS Codeの新機能「Custom Endpoint」を用いて定額制のOpenCode Goをチャットプロバイダとして統合する方法の解説。",
+    "summaryBody": "GitHub Copilotが2026年6月から従量課金（クレジット制）へ移行したことに対応し、月額10ドルの定額制サービス「OpenCode Go」を代替として利用する手順をまとめています。VS Codeの最新バージョン（1.124.2以降）で追加された「Custom Endpoint」機能を活用し、DeepSeek V4 Pro、Kimi K2.6、Qwen 3.7 Maxなどの外部LLMをCopilot ChatのUIから直接利用するためのJSON設定例を公開。APIキーの設定方法に加え、特定モデルにおけるパラメータ制約（top_p等）をローカルプロキシで回避する実戦的なノウハウについても触れられています。",
+    "topics": [
+      "GitHub Copilot",
+      "VS Code",
+      "OpenCode Go",
+      "LLM",
+      "Custom Endpoint"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}
