@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:07:47.849976+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DevinからClaude Code Actionsへ ── アカウント管理の自動化基盤を移行した判断とアーキテクチャ",
+    "url": "https://tech.findy.co.jp/entry/2026/06/16/070000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Findyが、アカウント管理のトイル削減のために構築していたDevin基盤を、Claude Code Actionsを用いたGitHub Actionsベースの構成へ移行した技術詳細を解説しています。",
+    "summaryBody": "ファインディ株式会社のSREチームが、TerraformによるAWS/GitHubアカウント管理の自動化基盤をDevinからClaude Code Actionsへ移行した事例記事です。移行の背景には、Devinの仕様変更によるアカウント制約でユーザー体験が低下した点があり、解決策として全社員が個別アカウント不要で利用できるClaude Code Actionsを採用しました。新アーキテクチャでは、Slack WorkflowとDeno Slack SDK、GitHub Actionsを連携させています。特に、Claude Code Actionを「triage（申請内容の解析・判定）」と「routine-pr（ファイル編集・PR作成）」の2段階に分け、それぞれのジョブでツール実行権限やターン数を制限することで、セキュリティと確実性を両立させた設計となっています。JSON Schemaを用いた構造化出力の活用など、LLMエージェントを本番運用に組み込むための実践的な工夫が詳しく紹介されています。",
+    "topics": [
+      "Claude Code Actions",
+      "Devin",
+      "Terraform",
+      "GitHub Actions",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

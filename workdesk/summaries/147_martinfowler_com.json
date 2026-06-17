@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:15:40.077172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "信頼性の高いエージェント型AIシステムの構築：Bayerにおけるエージェント型RAGの事例研究",
+    "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "BayerとThoughtworksが開発した製薬データプラットフォーム「PRINCE」を例に、マルチエージェントRAGにおける信頼性と制御性を高めるためのエンジニアリング手法を解説しています。",
+    "summaryBody": "この記事は、Bayer AGが構築した製薬業界向けのAIプラットフォーム「PRINCE」の事例を通じて、プロダクション品質のエージェント型AIシステムを構築するための知見を共有しています。システムは「Search（検索）」から「Ask（回答）」、そして「Do（タスク実行）」へと進化し、数十年分の非臨床試験報告書を統合しています。\n\n主な特徴は以下の通りです：\n1. **マルチエージェント・アーキテクチャ**: LangGraphを用いて、意図の明確化、計画立案（Think & Plan）、情報収集（Researcher）、検証（Reflection）、回答作成（Writer）の各エージェントを制御。特に「プロセスへの反省」と「データへの反省」を分離し、精度を高めています。\n2. **ハイブリッド検索の高度化**: 非構造化データ向けのRAGと、構造化データ向けのText-to-SQLを組み合わせ、専門的なクエリに対応しています。\n3. **エンジニアリングによる信頼性**: コンテキストの厳密な管理（Context Engineering）と、リトライ、フォールバック、状態の永続化といった「ハーネス（馬具）」としての枠組み（Harness Engineering）を構築することで、LLMの不確実性を管理しています。\n4. **透明性と検証可能性**: 回答に詳細な引用元リンクを付与し、人間が根拠を即座に確認できる仕組みを導入。評価にはRAGASフレームワークとLangfuseを用いた継続的監視を行っています。",
+    "topics": [
+      "Agentic RAG",
+      "Multi-agent Systems",
+      "LangGraph",
+      "Text-to-SQL",
+      "LLM Reliability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "Building Reliable Agentic AI Systems"
+  }
+}

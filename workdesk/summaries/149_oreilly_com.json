@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:16:12.555674+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントシステムにおける「非線形なコスト」と最適化レイヤーの欠如",
+    "url": "https://www.oreilly.com/radar/linear-thinking-nonlinear-costs/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの爆発的なコスト増大を防ぐには、プロンプト設計だけでなくメモ化や枝刈りといった古典的な計算機科学の最適化手法をシステムに組み込む必要がある。",
+    "summaryBody": "AIエージェントシステムは、単一のリクエストが推論、自己反省、ツール実行へと連鎖することで、コストと遅延が非線形に増大する性質を持っています。現在の開発はモデル選択やプロンプトに偏重していますが、真に持続可能なシステムを構築するには、古典的な計算機科学の知見を「最適化レイヤー」として再導入する必要があります。具体的には、過去の決定を再利用する「メモ化」、無駄な探索を打ち切る「枝刈り」、共通の部分問題を共有する「動的計画法」といったパターンが不可欠です。また、これらはエージェントのトポロジー（集中型、分散型、独立型など）に応じて最適に構成されるべきであり、エンジニアリングの基本に立ち返ることが、経済的にも技術的にも優れたエージェントシステムの実現に繋がると説いています。",
+    "topics": [
+      "AIエージェント",
+      "コスト最適化",
+      "ソフトウェアエンジニアリング",
+      "アルゴリズム",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Linear Thinking, Nonlinear Costs – O’Reilly"
+  }
+}
