@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:32:56.857846+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "同じプロンプトを何度も書きたくないので、AIとのやりとりを棚卸しする仕組み作った",
+    "url": "https://tech.layerx.co.jp/entry/prompt-log-driven-ai-workflow",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIへのプロンプト履歴をログとして蓄積・分析し、繰り返し発生する作業を特定してSkillやCommandとして自動化・仕組み化するための運用フレームワークの紹介です。",
+    "summaryBody": "LayerXにおけるAIエージェント活用の生産性を向上させるため、プロンプトの「棚卸し」を行う仕組みについての解説記事です。Claude CodeのHook機能を利用して全プロンプトをローカルのJSONLファイルに記録し、社内基盤「Shepherd」を用いて日次でLLMが分析を行います。単なる文字列一致ではなく意味的なグルーピングを行い、3回以上繰り返されているパターンを自動検出してSlackで通知します。通知時にはその作業をSkill化するためのプロンプト案も添えることで、人間が即座に自動化を判断できる工夫がなされています。この仕組みにより、PR作成やCI修正などの定型作業の7割以上を仕組み化することに成功し、AI活用の改善を個人の「感覚」から「事実（Fact）」ベースへと転換させています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "プロンプトエンジニアリング",
+      "業務効率化",
+      "LayerX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

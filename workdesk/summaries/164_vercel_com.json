@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:07:21.279295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エンタープライズ向けアプリとAIエージェントのためのVercel",
+    "url": "https://vercel.com/blog/vercel-for-enterprise-apps-and-agents",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、企業がIDプロバイダー連携や短寿命クレデンシャルを通じて、安全かつガバナンスの効いた内部向けAIエージェントとアプリを構築・展開できる新プラットフォームを発表しました。",
+    "summaryBody": "Vercelは、企業全体でAIエージェントや内部アプリを安全に開発・運用するためのスイート「Vercel for Enterprise Apps and Agents」を発表しました。このプラットフォームは、AIの導入に伴う「誰が使えるか」「どのデータにアクセスできるか」といったセキュリティ上の懸念を解決することを目指しています。\n\n主な構成要素は以下の通りです：\n- **Vercel Passport**: すべての内部アプリをデフォルトで企業のIDプロバイダー（Okta, Microsoft Entra等）の認証下に置き、公開ミスを防ぎます。\n- **Vercel Connect**: 静的な環境変数の代わりに、SlackやSalesforce等の外部システムへの短寿命かつスコープ制限されたアクセス権限をエージェントに提供します。\n- **Enterprise Managed Users (EMU)**: SAML SSOとディレクトリ同期により、ユーザーアカウントのライフサイクルを企業の管理下に置きます。\n- **Bring Your Own Cloud (BYOC) on AWS**: ワークロードを顧客自身のAWSアカウントおよびVPC内で実行可能にし、高いセキュリティ要件に対応します。\n\nまた、AIアプリビルダー「v0」とSnowflakeの連携も強化され、非エンジニアでも安全にデータ活用アプリを構築できる環境を提供します。",
+    "topics": [
+      "Vercel",
+      "AI Agents",
+      "Enterprise Security",
+      "Cloud Infrastructure",
+      "v0"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Vercel for Enterprise Apps and Agents"
+  }
+}

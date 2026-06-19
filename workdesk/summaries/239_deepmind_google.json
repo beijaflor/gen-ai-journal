@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:31:22.168358+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google DeepMind、高度なAIエージェントの暴走を防ぐ「AI Control Roadmap」を公開",
+    "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google DeepMindは、AIエージェントが不完全にアライメントされている可能性を前提に、内部システムを「インサイダー脅威」から保護するための多層的なセキュリティフレームワークを発表した。",
+    "summaryBody": "Google DeepMindが提唱する「AI Control Roadmap」は、AIエージェントが自律的に複雑なタスクを遂行する未来を見据え、モデルのアライメント（調整）が不十分であっても安全性を確保するための防御策を提示している。このロードマップは、AIエージェントを「内部の脅威（インサイダー脅威）」として扱うサイバーセキュリティの観点を取り入れており、MITRE ATT&CKフレームワークをベースとした脅威モデリングを行っている。主な戦略として、信頼できる別のAIシステムによる「監視（Supervision）」、有害なアクションをリアルタイムで遮断する「防止（Prevention）」、そしてAIの推論の隠蔽やリスクの大きさに応じて防御レベルを強化するスケーラブルな対応策が含まれる。既に100万件以上のコーディングエージェントの軌跡を分析し、意図しないデータ削除などの問題にリアルタイムで対応するプロトタイプの運用も開始されている。",
+    "topics": [
+      "AI Safety",
+      "AI Control Roadmap",
+      "Autonomous Agents",
+      "Threat Modeling",
+      "Google DeepMind"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Securing internal systems against increasingly capable and imperfectly aligned AI — Google DeepMind"
+  }
+}

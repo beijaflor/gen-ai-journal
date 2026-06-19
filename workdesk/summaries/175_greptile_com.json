@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:10:20.773944+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコードレビューのためのコード実行とアーティファクト生成：TREXの構築",
+    "url": "https://www.greptile.com/blog/trex-code-execution",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Greptileが開発した「TREX」は、AIがプルリクエストのコードを実際にサンドボックスで実行し、動画やログなどの証拠を伴う検証結果を生成することで、静的解析では不可能な動的なバグ検出を実現します。",
+    "summaryBody": "### AIによる「実行を伴う」コードレビューの実現\n従来のAIコードレビューは静的な差分解析に留まっていましたが、Greptileが導入した**TREX (Test, Run, Execute)**は、実際にコードを動かして挙動を検証します。これにより、論理エラーやUIのデグレ、レースコンディションなど、コードを読むだけでは発見できないバグの特定が可能になりました。\n\n#### 主な技術的特徴\n- **エージェントのオーケストレーション**: メインのレビュー用エージェントが問題を特定し、個別の調査タスクごとに専用のTREXサブエージェントを並列で立ち上げる構造を採用。これにより、コンテキストの過負荷を防ぎつつ深い調査を実現しています。\n- **マルチモーダル・アーティファクト**: 指摘の根拠として、実行ログ、APIトレース、スクリーンショット、さらにはアニメーションを確認するための動画を自動生成します。これは下流のAIエージェントや人間が「推論の過程」を検証するために不可欠です。\n- **モデルに依存しない評価基盤**: 特定のLLMに固執せず、タスクごとに最適なモデルを使い分け、性能の変化に即座に対応できる評価ハーネスを構築しています。\n- **高速なサンドボックス環境**: 数ミリ秒で起動する使い捨ての計算インスタンスを利用。リポジトリごとのスナップショットを活用することで、安全かつ高速に本番に近い依存関係でのテストを可能にしています。\n\nTREXは、単なるレビューツールから、エンジニアリングチームのバリデーション工程を完全に自動化する「検証スイート」への進化を目指しています。",
+    "topics": [
+      "AI Code Review",
+      "LLM Agents",
+      "Software Testing",
+      "Greptile",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Building TREX: Code Execution and Artifact Generation for AI Code Review | Greptile"
+  }
+}

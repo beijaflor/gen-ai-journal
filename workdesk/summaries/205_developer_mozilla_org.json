@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:22:12.774716+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MDN MCPサーバーの導入：AIツールから最新のWebドキュメントと互換性データへのアクセスを実現",
+    "url": "https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "MDNが、最新のWebドキュメントやブラウザ互換性データをAIエージェントやIDEで直接利用可能にする「MDN MCPサーバー」を公開しました。",
+    "summaryBody": "MDNは、AIツールが外部データにアクセスするための標準規格「Model Context Protocol (MCP)」に対応したサーバーをリリースしました。これにより、AIモデルの学習データの欠落や情報の古さという課題を解決し、最新のWebプラットフォーム仕様やブラウザの互換性情報（BCD）をAIが正確に取得できるようになります。具体的には、VS Code、Cursor、Claude Codeなどのツールで利用可能です。Mozillaによるテストでは、最新のFirefox 151におけるWeb Serial APIのサポート状況など、従来のLLMが間違えやすい情報の精度が劇的に向上したほか、AIが直接ドキュメントを検索・パースする手間が省けるため、応答速度も約2倍に向上したと報告されています。",
+    "topics": [
+      "MDN",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "ブラウザ互換性",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Introducing the MDN MCP server"
+  }
+}
