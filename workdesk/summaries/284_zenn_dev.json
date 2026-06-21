@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:21:46.947450+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マークダウンやHTMLをSlackで共有するのが辛すぎて社内ツールを作った話",
+    "url": "https://zenn.dev/tokium_dev/articles/tokium-share-pages",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "SlackでのマークダウンやHTML共有の不便さを解消するため、Cloudflare R2とPagesを活用して72時間限定の共有URLを即座に発行できる社内ツールを構築した事例。",
+    "summaryBody": "Slack上でマークダウンやHTMLファイルを共有する際、プレビューができずダウンロードの手間が発生する課題を解決するため、ドラッグ&ドロップで即座にURLを発行できる社内専用ツールを開発。Cloudflare Pages FunctionsとR2を組み合わせたサーバーレス構成により、運用コスト$0を実現しています。主な特徴は「72時間で自動削除」される一過性の共有設計で、管理コストを最小化。また、Claude Code等のAIツールからの利用を想定したMCP (Model Context Protocol) への対応や、GitHubアカウント不要のセルフオンボーディング、外部公開用パスワード設定など、PdM視点での高いユーザビリティが盛り込まれています。運用開始2週間で社内ユーザー60名、累計3,000回以上の発行を達成しています。",
+    "topics": [
+      "Cloudflare",
+      "R2",
+      "MCP",
+      "社内ツール",
+      "Slack"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

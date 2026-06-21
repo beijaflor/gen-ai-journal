@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:18:22.412272+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Virtual monorepo のすゝめ",
+    "url": "https://ymmt.hatenablog.com/entry/2026/06/18/230120",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コーディングエージェントが複数リポジトリの文脈を理解しやすくするため、実リポジトリを統合せずにローカルで擬似的なモノリポを構成する手法を解説した記事です。",
+    "summaryBody": "Claude Code などのコーディングエージェントを活用する際、プロダクトが複数の Git リポジトリに分かれていると、リポジトリを跨いだ文脈の把握が困難になるという課題があります。本記事では、この問題を解決する「Virtual monorepo」パターンを紹介しています。この手法は、実際のリポジトリを物理的に統合（モノリポ化）することなく、ローカル環境で複数のリポジトリをサブディレクトリとしてクローンし、`AGENTS.md` や `CLAUDE.md` を使ってシステム全体の依存関係をエージェントに明示するものです。記事内では、GitHub CLI を用いたセットアップスクリプトの例や、エージェントに構造を伝えるためのドキュメントの書き方、`.gitignore` による管理方法が具体的に示されています。これにより、AI によるコード生成やリファクタリングの精度を、最小限の手間で向上させることが可能になります。",
+    "topics": [
+      "Virtual Monorepo",
+      "Claude Code",
+      "AIエージェント",
+      "開発環境",
+      "Git"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
