@@ -214,7 +214,6 @@
 - [x] 210. https://pc.watch.impress.co.jp/docs/column/nishikawa/2117740.html
 - [x] 211. https://zenn.dev/trilog/articles/0d4a064ce1f50e
 - [x] 212. https://applech2.com/archives/20260618-openai-scheduled-tasks-in-chatgpt.html
-- [x] 213. https://www.sciencedirect.com/science/article/pii/S294988212500091X
 - [x] 214. https://vercel.com/eve
 - [x] 215. https://forest.watch.impress.co.jp/docs/serial/aidev/2114536.html
 - [x] 216. https://www.itmedia.co.jp/news/articles/2606/18/news038.html
