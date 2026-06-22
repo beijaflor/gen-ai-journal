@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:29:39.959936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "論文を読むAIの精度を90%に引き上げた — AI for Scienceのための知識グラフRAGシステム開発記",
+    "url": "https://qiita.com/hisaho/items/4dbbcd41e83f9575cd28",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "科学論文の複雑な知識構造を扱うために「MemGraphRAG」を独自実装し、HotpotQAベンチマークで既存手法を大きく上回る90.0%の精度を達成した開発記録。",
+    "summaryBody": "本記事は、AI for Scienceを加速させるべく、知識グラフを活用したRAGシステム「aira-synapse」を開発した詳細な記録です。KDD 2026の最新論文「MemGraphRAG」をTypeScriptでクリーンルーム実装し、HotpotQAベンチマークにおいて公式実装の71.6%を大幅に上回る90.0%の精度を達成しました。開発の過程で、単なるアルゴリズムの調整よりも「コーパスカバレッジの網羅性」や「グラフ専用データベース（LadybugDB）の導入」が精度と速度の向上に大きく寄与したことが示されています。また、専門用語辞書やシソーラスをPPR（Personalized PageRank）の初期ベクトルに注入する試みが、逆に精度を低下させるというAblationテストの結果など、実践的な洞察が豊富に含まれています。さらに、GiNZAを用いた日本語論文への対応や、MCPサーバー化によるClaude 3.5/Cursor等のAIエージェントへの統合についても触れられており、研究ワークフローを劇的に効率化する可能性を提示しています。",
+    "topics": [
+      "GraphRAG",
+      "Knowledge Graph",
+      "LLM",
+      "AI for Science",
+      "HotpotQA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

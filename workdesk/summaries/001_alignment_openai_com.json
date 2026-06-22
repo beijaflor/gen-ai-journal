@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:14:19.554169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "広範かつ持続的に有益なモデルに向けた強化学習",
+    "url": "https://alignment.openai.com/beneficial-rl/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIの研究チームは、誠実さや謙虚さなどの「有益な特性」に焦点を当てた強化学習により、ドメインを超えた高い汎化性能と敵対的圧力への耐性を持つAIアライメントを実現できることを示した。",
+    "summaryBody": "OpenAIによる本研究は、AIモデルを特定のタスクに縛られず、広範な状況で安全かつ有益に動作させるための新しいアプローチを提案しています。研究チームは、誠実さ（Truthfulness）、認知的謙虚さ（Epistemic Humility）、メタ認知の透明性（Metacognitive Transparency）、被修正性（Corrigibility）など、人間にとって望ましい「有益な特性」を訓練・測定するための、多岐にわたるドメインの現実的な会話データセットを構築しました。強化学習（RL）を用いた実験の結果、特定のドメイン（例：医療）での訓練が、訓練データに含まれない数十の異なるベンチマーク（欺瞞の抑制、報酬ハッキングの防止など）においてもモデルの性能を向上させることが判明しました。これは、アライメントが特定の挙動の模倣ではなく、ドメイン横断的な「特性」として定着することを示唆しています。さらに、この手法で訓練されたモデルは、敵対的なプロンプトや有害なファインチューニングに対しても高い耐性を維持し、意図的な悪用に対しても堅牢であることが実証されました。",
+    "topics": [
+      "AIアライメント",
+      "強化学習",
+      "汎化性能",
+      "安全性",
+      "OpenAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Reinforcement learning towards broadly and persistently beneficial models"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:36:50.461447+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "データサイエンス向けAIコーディングスキル向上テンプレート: ds-ai-coding-skills",
+    "url": "https://github.com/atsushi-green/ds-ai-coding-skills",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot等のAIアシスタントを最大限に活用するため、AGENTS.mdを用いた指示体系の階層化や安全なデータ操作ルールを定義したデータサイエンス専用の分析プロジェクトテンプレート。",
+    "summaryBody": "本リポジトリは、データサイエンティストがAIコーディングアシスタント（Copilot Agent Mode等）と連携して、安全かつ効率的に分析を行うためのベストプラクティスを集約したテンプレートです。最大の特徴は、指示ファイルを「共通ルール」「ルーター（AGENTS.md）」「作業別スキル（SQL、可視化等）」「プロジェクト固有知識」の3層に分割して設計している点にあります。これにより、AIへの過剰なトークン消費を抑えつつ、文脈に応じた適切な誘導が可能になります。また、uvによるパッケージ管理、rawデータのコミット防止スクリプト、Ruffによる品質チェックなど、実務で必須となる安全性と一貫性を担保する仕組みが標準で組み込まれています。分析計画の策定からレポート作成までをカバーする再利用可能なプロンプト群も提供されています。",
+    "topics": [
+      "GitHub Copilot",
+      "データサイエンス",
+      "プロンプトエンジニアリング",
+      "AIコーディングアシスタント",
+      "分析テンプレート"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

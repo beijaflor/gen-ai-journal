@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:26:29.165322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DGX Sparkで2つのQwen3モデルを同時稼働：ローカルLLM構築におけるメモリ管理の実践",
+    "url": "https://www.devashish.me/p/two-qwen3-models-on-one-dgx-spark",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "vLLMを用いて1枚のGPU上でQwen3の80Bと4Bモデルを共存させる際の、メモリ割り当て計算の落とし穴と実効的な設定値を解説した技術記事。",
+    "summaryBody": "1台のDGX Spark（GB10）上で、推論用のQwen3-Next-80Bと高速応答用のQwen3-4Bを同時に稼働させるための技術的知見をまとめた記事です。著者は、vLLMの`gpu_memory_utilization`パラメータが「空きメモリ」ではなく「GPU全容量」に対する比率である点に着目し、複数モデルの共存におけるメモリ競合の回避方法を具体例とともに提示しています。特に、Qwen3-Next-80B-Thinkingモデルがツール呼び出しにおいて期待通り動作しない特性や、MambaアーキテクチャによるKVキャッシュ計算の特殊性についての実体験に基づいた詳細な数値（実測メモリ消費量）が示されています。最終的な結論として、大きなモデルを先に安定させ、実測値に基づいて小さなモデルの予算を決めるという実用的なワークフローを推奨しています。",
+    "topics": [
+      "vLLM",
+      "Qwen3",
+      "GPUメモリ管理",
+      "ローカルLLM",
+      "LiteLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    },
+    "originalTitle": "Two Qwen3 Models on One DGX Spark: The Residency Math for Local LLM Setup"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:23:36.588337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "データエージェント評価のためのラボ構築：Hexによる「The Shoebox」と「Shorelane」の実践",
+    "url": "https://hex.tech/blog/evaluate-data-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Hexは、現実世界の複雑で不完全なデータを再現した仮想ビジネス「Shorelane」と、ペアワイズ比較を核とした評価基盤「The Shoebox」を構築し、データ分析エージェントの精度を厳格に測定しています。",
+    "summaryBody": "データ分析ドメインにおけるAIエージェントの評価は、現実のデータウェアハウスが持つ「汚さ（データ負債）」や文脈の依存性が高く、既存のベンチマーク（Spider等）では不十分であるという課題があります。Hexはこの課題に対し、以下の2つのアプローチで対応しています。\n\n1. **The Shoebox**: エージェントのトレース可視化と評価を行うカスタム基盤です。最大の特徴は、開発者のローカル環境と共有のリモート環境を同期させ、常に「本番ベースライン」と「開発中の候補」をペアワイズ（対照比較）で評価できる点にあります。これにより、定性的な挙動の変化を客観的に捉えることが可能になります。\n\n2. **Shorelane Commerce**: 実世界のデータ負債を模した架空のB2B2C企業データです。IDの欠損、未統合の買収データ、定義の異なる収益カラムなど、あえて「扱いづらい」3万行のコードに基づく生成データを用いることで、エージェントが現実のビジネス環境で遭遇する困難な問いに耐えうるかをテストします。\n\n評価にはLLMジャッジを活用したカスタムルブリック（評価基準）を用いていますが、LLMジャッジの校正や、ローカルとリモートの環境整合性の維持など、運用上の高度な課題についても言及されています。",
+    "topics": [
+      "AI Agents",
+      "LLM Evaluation",
+      "Data Analytics",
+      "Synthetic Data",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How we built a lab to evaluate data agents | Hex"
+  }
+}

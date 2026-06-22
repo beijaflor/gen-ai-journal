@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:33:10.066730+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM はマークダウンファイル全体を読んでいる。その必要はない。",
+    "url": "https://zenn.dev/oubakiou/articles/b9db61885cd7be",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Markdownドキュメントを構造化してインデックス化し、LLMエージェントが必要なセクションのみを効率的に読み込めるようにするCLIツール「md2idx」の紹介。",
+    "summaryBody": "LLMエージェント（Claude Code等）が数千行のMarkdownファイルを全文読み込むことで発生する、トークンの浪費と回答精度の低下を解決するツール「md2idx」について解説されている。Markdownの見出し構造を利用し、ファイルを「目次」と「セクション配列」を持つJSONに変換することで、`jq`等のコマンドを用いて必要な部分だけをピンポイントでコンテキストに投入できる。既存の`grep`では困難な、コードフェンス内の見出し除外やセクション本文の正確な切り出し、インライン記法の処理に対応しているのが特徴。また、GitHub Skillとして提供される「md2idx-read」を導入することで、エージェントがファイルサイズに応じて自律的にこの最適化ワークフローを実行し、コンテキスト使用量を最大80〜98%削減することが可能になる。",
+    "topics": [
+      "Markdown",
+      "LLM",
+      "Token Optimization",
+      "AI Agent",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

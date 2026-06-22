@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:36:32.593699+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rust | rmcp で Remote MCP Server を実装する",
+    "url": "https://zenn.dev/codemountains/articles/1d2ebe105ef998",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Rust向けの公式MCP SDKである「rmcp」を活用し、Streamable HTTP transportを用いてAxum上にRemote MCPサーバーを構築・公開する具体的な実装方法を解説します。",
+    "summaryBody": "この記事では、Model Context Protocol (MCP) の公式Rust SDK「rmcp」を使用して、HTTP経由でアクセス可能なRemote MCPサーバーを実装する手順をステップバイステップで紹介しています。主な内容は以下の通りです。\n\n1. **SDKのセットアップ**: `server`や`transport-streamable-http-server`などのfeatureを有効化し、`axum`や`schemars`と組み合わせる準備を行います。\n2. **マクロによる効率的な実装**: `#[tool]`, `#[tool_router]`, `#[tool_handler]`といった強力なマクロを活用することで、ツールの定義、JSON Schemaの自動生成、サーバーハンドラのボイラープレートを大幅に削減する方法を説明しています。\n3. **HTTPトランスポートの構成**: `StreamableHttpService`を使用してセッション管理やレスポンス形式（SSE/JSON）を設定し、Axumの`nest_service`としてマウントするまでの流れを網羅しています。\n4. **実用的な例**: 日本の山岳データAPI「mountix」を例に、具体的な検索ツールなどの実装コードを提示しています。\n5. **デバッグと接続**: MCP Inspectorを用いた動作確認や、Cursor等のクライアントからHTTPエンドポイントとして接続する設定についても触れています。",
+    "topics": [
+      "Rust",
+      "MCP",
+      "rmcp",
+      "Axum",
+      "API開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

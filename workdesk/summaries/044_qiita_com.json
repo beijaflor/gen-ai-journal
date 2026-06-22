@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:29:20.380894+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ollamaで月額0円のローカルLLM環境を構築してみた",
+    "url": "https://qiita.com/Hinata-H/items/ff98d92ca5eafee31226",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Ollamaを使用してMac上に月額無料かつオフラインで動作するローカルLLM環境を構築し、CLIやPython APIから活用するまでの手順を網羅したガイド。",
+    "summaryBody": "本記事は、macOS上で手軽に大規模言語モデル（LLM）を実行できるツール「Ollama」の導入方法と活用事例を解説しています。主な内容は以下の通りです。\n\n- **導入とモデル実行**: 公式サイトのインストーラーまたはHomebrewを使用したセットアップ手順から、Llama3やQwenといったオープンソースモデルのダウンロード、実行方法までを初心者向けに説明しています。\n- **多様なインターフェース**: ターミナルでの対話型操作（CLI）だけでなく、テキストファイルの入力を処理する方法や、Pythonを用いたAPI連携（requestsライブラリ使用）の実装コードを紹介しており、ストリーミング出力や会話履歴の管理方法もカバーしています。\n- **ChatGPTとの比較**: ローカル環境ならではのプライバシー保護、コスト、オフライン利用のメリットと、モデル性能やマシンスペックへの依存といったデメリットを客観的に比較しています。\n\n最終的に、データの機密性が高い用途や、頻繁な開発プロトタイピングにはローカルLLMが適しており、高度な推論にはクラウドAIを併用する「使い分け」を推奨しています。",
+    "topics": [
+      "Ollama",
+      "LLM",
+      "macOS",
+      "Llama3",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

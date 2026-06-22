@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:14:35.163663+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OfficeCLI: AIエージェント向けに設計された世界初のOffice自動化・編集スイート",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがWord、Excel、PowerPointをOfficeのインストールなしに直接読み書き、描画、自動化できるようにするオープンソースの単一バイナリCLIツールです。",
+    "summaryBody": "OfficeCLIは、AIエージェントによるドキュメント操作を最適化するために構築された次世代のツールキットです。Microsoft Officeのインストールを一切必要とせず、Word (.docx)、Excel (.xlsx)、PowerPoint (.pptx) の作成、読み取り、高度な編集が可能です。最大の特徴は、AIエージェントが生成物を確認できる「エージェントフレンドリーなレンダリングエンジン」を内蔵しており、HTMLやPNGへの書き出しを通じてエージェントが自身の作業を視覚的に修正できるフィードバックループを実現している点です。\n\nアーキテクチャは3レイヤー構造（L1: セマンティック表示、L2: DOMライクな要素操作、L3: Raw XMLへの直接アクセス）を採用し、トークン消費を抑えつつ精緻な制御が可能です。また、MCP (Model Context Protocol) サーバーを内蔵しており、Claude CodeやCursor、GitHub Copilotといった主要なAIツールにワンコマンドで統合できます。Excelの150以上の関数評価やピボットテーブル生成、テンプレートエンジンによるマージ機能など、開発者やエージェントワークフローに必要な機能が網羅されています。",
+    "topics": [
+      "AI Agents",
+      "Office Automation",
+      "CLI Tools",
+      "Open Source",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "GitHub - iOfficeAI/OfficeCLI: OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required. · GitHub"
+  }
+}

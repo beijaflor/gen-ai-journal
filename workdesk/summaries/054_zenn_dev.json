@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:32:18.908587+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiro CLI v3 徹底解説 — 仕様駆動開発・hooks 刷新・capability パーミッション",
+    "url": "https://zenn.dev/aws_japan/articles/36e23635add477",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Kiro CLI v3は、共通エンジン「Kiro Agent Server」の導入により、仕様駆動開発のターミナル対応、capabilityベースの権限管理、刷新されたhooks機能などを実現し、IDEやWeb版との機能統合を強化しました。",
+    "summaryBody": "Kiro CLI v3 (Early Access) のリリースに伴う主要なアップデートを網羅的に解説した記事です。最大の変化は、これまでクライアントごとに分散していたエージェント機能を「Kiro Agent Server」に統合したことで、CLI、IDE、Webの全環境で一貫したロジックが共有されるようになりました。新機能として、要件定義・設計・タスク生成・実行を自動化する「仕様駆動開発 (/spec)」がターミナルでも利用可能になったほか、宣言的な `permissions.yaml` による詳細な capability ベースの権限管理、独立したファイルとして定義可能になった高度な hooks システム、タグベースで簡潔に記述できるエージェント設定が導入されました。既存の v2 とは並行して動作可能で、`--v3` フラグでオプトインすることで新機能を試すことができます。セキュリティ面ではシェルコマンドの分割評価や、リポジトリからの意図しないパーミッション注入を防ぐ設計など、堅牢性が向上しています。",
+    "topics": [
+      "Kiro CLI",
+      "Agentic Coding",
+      "仕様駆動開発",
+      "パーミッション管理",
+      "AWS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

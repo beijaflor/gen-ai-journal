@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:35:52.885080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Desktop の Cowork を Amazon Bedrock 経由で Windows にセットアップ",
+    "url": "https://zenn.dev/aws_japan/articles/claude-cowork-on-bedrock-windows-setup",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude DesktopのCowork機能をAmazon Bedrockの認証を利用してWindows環境に構築するための、AWS管理者と利用者の双方に向けた詳細なセットアップガイド。",
+    "summaryBody": "この記事では、AnthropicのデスクトップアプリであるClaude Desktopのエージェント機能「Cowork」を、Amazon Bedrock経由で利用するためのWindows向けセットアップ手順を解説しています。主な内容は、AWS管理者によるIAM PolicyとBearer Token認証用APIキーの作成、利用者側でのWindows「仮想マシン プラットフォーム」の有効化、Claude Desktop内でのサードパーティ推論（Bedrock）の設定、そしてMCP（Model Context Protocol）サーバーを用いたBrave SearchやChrome DevToolsの連携方法です。Node.jsのインストールやブラウザのリモートデバッグ設定など、Coworkを実用的に動かすために必要な周辺ツールの導入についても具体的に触れられています。",
+    "topics": [
+      "Claude Desktop",
+      "Amazon Bedrock",
+      "MCP (Model Context Protocol)",
+      "Windows",
+      "IAM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

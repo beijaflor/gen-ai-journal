@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:37:46.443626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codexの「Record & Replay」：操作画面の録画から再利用可能なスキルを自動生成",
+    "url": "https://developers.openai.com/codex/record-and-replay",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "macOS上での操作を一度録画して見せるだけで、OpenAI Codexがそれを学習し、Computer Use等で実行可能な再利用可能な「スキル」として定義できる機能。",
+    "summaryBody": "OpenAIのCodexに導入された「Record & Replay」は、ユーザーがMac上で行う一連のワークフローを実演し、それをAIが実行可能な「スキル」へと変換する機能です。プロンプトでの説明が困難な複雑な手順や、経費精算・予約作業といった定型的なタスクを、実際に見せることで学習させることができます。生成されたスキルは、異なる入力値（日付やファイルなど）を与えて再実行が可能で、Computer Useやブラウザ操作、各種プラグインと連携して動作します。現在、macOS版のCodexアプリで利用可能（一部地域を除く）となっており、チームへの展開が必要な場合は、これらをパッケージ化してプラグインとして配布することも推奨されています。",
+    "topics": [
+      "OpenAI Codex",
+      "Computer Use",
+      "Workflow Automation",
+      "AI Agents",
+      "macOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Record & Replay – Codex | OpenAI Developers"
+  }
+}

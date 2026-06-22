@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:20:10.035582+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの制御：CLAUDE.md、スキル、フック、ルール、サブエージェントなどの活用ガイド",
+    "url": "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの挙動をカスタマイズするための7つの方法を、コンテキストコストや読み込みタイミング、権限の強さの観点から比較・解説した包括的ガイド。",
+    "summaryBody": "Anthropicが提供するCLIツール「Claude Code」を最適化するための7つのカスタマイズ手法を詳しく解説しています。主要な手法として、プロジェクトの規則を記述する「CLAUDE.md」、特定のパスに制約を課す「ルール」、再利用可能なワークフローを定義する「スキル」、独立したコンテキストで並列処理を行う「サブエージェント」などが紹介されています。各手法は、セッション開始時に読み込まれるかオンデマンドか、コンテキスト圧縮時に再注入されるかといった動作特性が異なり、開発者はタスクの性質に応じて最適な手法を選択することが推奨されています。特にトークンコストの管理と、決定論的な処理（リンターの実行など）にはフックを使用するといった使い分けが、効率的なAI開発の鍵となります。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM Agent",
+      "Developer Tools",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more"
+  }
+}

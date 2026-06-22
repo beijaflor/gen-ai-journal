@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:35:40.189360+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotのクレジット消費がユーザー単位でAPI取得可能に：監視を自動化する ai_credits_used の使い方",
+    "url": "https://zenn.dev/headwaters/articles/github-copilot-ai-credits-usage-metrics-2026",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Copilot usage metrics APIに、ユーザーごとの消費クレジットを把握できる「ai_credits_used」フィールドが追加され、監視の自動化が可能になった。",
+    "summaryBody": "GitHub Copilotの従量課金モデルにおいて、ユーザー単位のクレジット消費量をAPI経由で取得できる新フィールド「ai_credits_used」が追加されました。これにより、従来ダッシュボードの目視や手動集計に頼っていた重利用ユーザーの特定や、消費傾向の可視化がプログラムによって自動化可能になります。本記事では、この新機能が「観測（オブザーバビリティ）」として、予算制御と並ぶ運用の両輪になることを解説しています。ただし、利用にあたっては以下の4つの制約（急所）を理解しておく必要があります。1. 機能やモデル別の内訳は取得不可、2. 確定請求額ではなく分析用メトリクスである、3. 最大2営業日のデータ反映ラグがある、4. 管理者権限とポリシー設定が必要。リアルタイムの制御は既存のユーザー予算（ULB）に任せ、本APIはトレンド把握と予算の最適化に活用することが推奨されます。",
+    "topics": [
+      "GitHub Copilot",
+      "GitHub API",
+      "FinOps",
+      "AI Credits",
+      "Monitoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

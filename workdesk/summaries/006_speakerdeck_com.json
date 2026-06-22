@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:15:46.864008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMでどこまでコードが書けるか -拡張版",
+    "url": "https://speakerdeck.com/kishida/how-much-code-can-be-written-on-a-local-llm-extended",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点の最新ローカルLLM（Qwen 3.6 / Gemma 4等）を用いたコーディングの実用性と、推奨されるハードウェア・ソフトウェア構成を解説する技術資料。",
+    "summaryBody": "本資料は、2023年から2026年にかけてのローカルLLMの進化を辿り、現在の「実用レベル」に達した開発環境について解説しています。30Bクラスのモデルであれば日常的な要約や翻訳、初期段階のコーディングに十分活用できる一方、デバッグや長大なコンテキスト（5万トークン超）では性能低下や仕様の誤認が課題となることが示されています。推奨ハードウェアとしてAMD Ryzen AI Max+やNVIDIA RTX 5090、Mac Studio等の具体的な構成を挙げ、llama.cppやOpen WebUI、OpenCodeといったソフトウェアスタックの活用を提案しています。結論として、複雑な設計やデバッグは商用のフロンティアモデルに頼りつつ、実作業をローカルLLMで肩代わりさせるハイブリッドな開発スタイルの有効性を説いています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen",
+      "Gemma",
+      "AIコーディングエージェント",
+      "ハードウェア構成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

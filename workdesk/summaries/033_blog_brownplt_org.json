@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:24:56.705348+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様としての人間による判断",
+    "url": "https://blog.brownplt.org/2026/06/09/pick.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが生成した不完全な仕様候補に対し、具体的な事例への賛否を人間が判断することで、正確な形式的仕様を導き出す手法「PICK」の提案。",
+    "summaryBody": "生成AI時代において、AI出力の正当性を検証する「形式的仕様」の重要性が高まっていますが、人間が厳密な仕様を記述するのは困難です。Brown大学の研究チームが開発した「PICK」は、この問題を解決するためのワークフローを提供します。LLMが生成した複数の仕様候補（正規表現やアクセス制御ルールなど）に対し、システムが候補間の「意味的な差異」を具体的なテストケースとして抽出。ユーザーはそれらの事例に対し肯定・否定の判断を下すだけで、抽象的な数式に触れることなく、自らの曖昧な意図を洗練（仕様の解明）させることができます。これは、LLMに依存しきらない独立した「人間の判断」を検証の証人として組み込むアプローチであり、誤った合成（Synthesis）を防ぐ強力な手段となります。",
+    "topics": [
+      "Large Language Models",
+      "Formal Methods",
+      "Software Specification",
+      "PICK",
+      "Human-in-the-loop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Human Judgment as a Specification"
+  }
+}

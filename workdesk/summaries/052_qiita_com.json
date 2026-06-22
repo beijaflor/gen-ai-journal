@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:31:46.814991+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに自分でスキルを書かせて育てる ― 自己増殖するエージェント環境",
+    "url": "https://qiita.com/bokuwalily/items/e7b56e2119841636b38e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeが対話から再利用可能な手順を自動で抽出し、自己増殖的にスキルを蓄積・管理する2層の生成システムと運用ノウハウを解説した記事。",
+    "summaryBody": "Claude Codeの課題である「セッションを跨ぐ手順の忘却」を解決するため、AI自身に解決手順を「スキル」として言語化・保存させる仕組みについて詳述されています。設計の核は、作業中に即時生成する「セッション中生成」と、夜間に会話ログから漏れを拾う「夜間バッチ生成」の2層構造です。スキルの乱造を防ぐために「5回以上のツール実行」や「エラー回避策の発見」といった具体的なトリガーをCLAUDE.mdに定義。生成されたスキルは専用のディレクトリ（auto/）に隔離され、週次で稼働する「Curator」が使用頻度の低いスキルを自動で降格・退避させることで、ノイズの抑制と鮮度の維持を両立しています。運用を通じて、初期に既存の暗黙知が大量に言語化された後は、新たな手順のみが緩やかに追加される安定した生成曲線が得られることが示されています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "エージェント",
+      "自動化",
+      "Qiita"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

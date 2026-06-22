@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:30:15.815928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで設計書作成に使えるサブエージェントの作り方｜要件定義から詳細設計まで",
+    "url": "https://qiita.com/kamome_susume/items/467446c5a6cbd10a5ffa",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeにおいて設計フェーズごとに専用サブエージェントを定義し、要件定義から詳細設計までのドキュメント作成を効率化・標準化する手法を解説しています。",
+    "summaryBody": "この記事では、Claude Codeのサブエージェント機能を活用して、設計書の品質を安定させる方法を紹介しています。著者は、要件定義、基本設計、詳細設計、DB設計、図表生成という5つのフェーズごとに専用のサブエージェントを構築することを推奨しており、それぞれの具体的な役割と定義ファイル（Markdown形式）の記述例を提示しています。特に、詳細設計やDB設計においては既存コードやマイグレーションファイルを読み取る権限（Read/Grep）を与えることで、実装と矛盾のない設計書を生成できる点が大きな利点です。また、フェーズ間の表記ゆれを防ぐためにCLAUDE.mdで用語集を共有する運用や、図表生成に軽量モデル（Haiku）を活用してコストを抑えるなどの実践的なTipsも詳しく解説されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "設計書",
+      "システム設計",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

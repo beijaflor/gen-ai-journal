@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:17:46.504832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "入門から実践 -「🔁 ループエンジニアリング」 #ClaudeCode",
+    "url": "https://qiita.com/Syoitu/items/97ed37e7ba9c38dc75d8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントにプロンプトを打つ役割から脱却し、エージェントを自律的に動かし続ける仕組み全体を設計する「ループエンジニアリング」の概念と、Claude CodeやMastraを用いた実装方法を解説しています。",
+    "summaryBody": "「ループエンジニアリング」とは、人間がエージェントに逐一指示を出すのではなく、目標・レビュー体制・引き継ぎの仕組み（ループ）を設計し、自分をプロンプト担当から外すという考え方です。本記事では、Prompt、Context、Harness、Loopの4層構造に基づき、自律型AIを構築するための5つのアクション（発見・受け渡し・検証・記憶・スケジューリング）を定義しています。\n\n実践編として、Claude Codeを用いた最小構成のループ実装を紹介。`CLAUDE.md`での完了定義、`.claude/settings.json`のフック機能を利用した自動テストの強制、そして行き詰まりを打破するための別エージェント（fixer）の切り出しなど、泥臭くも強力な自動化手法を提示。また、Mastraフレームワークの「Goals機能」を用いた、作業役と判定役（judge）の分離についても解説しています。最後に、トークン暴走によるコスト増加や人間による判断の重要性など、自動化の「代価」についても言及されており、エンジニアが「物差し」を持ち続けることの必要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ループエンジニアリング",
+      "Mastra",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:22:21.738360+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ワークフローを再利用可能なスキルに変換する Record & Replay を試してみた",
+    "url": "https://azukiazusa.dev/blog/workflow-to-reusable-skill",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Codexの新機能「Record & Replay」を使い、macOS上の操作をアクセシビリティAPI経由で記録し、AIが再利用可能な「スキル」に変換するプロセスを解説した記事。",
+    "summaryBody": "この記事では、Codexのデスクトップアプリで利用可能な「Record & Replay」機能の実践的な使い方を紹介しています。この機能は、ユーザーがmacOS上で行った一連の操作を実演することで、それをAIが実行可能なスキルとして定義できるものです。\n\n主なポイントは以下の通りです：\n- **技術的構成**: `event-stream` MCPサーバーが操作を記録し、`record-and-replay` スキルがその内容を解析します。記録は画面座標ではなく、アクセシビリティAPIから取得したUI要素の情報（RoleやDescription）として保存されるため、画面配置の変化に強いのが特徴です。\n- **スキルの生成**: 記録終了後、`skill-creator` スキルが自動的に起動し、入力値の検証ステップや安全性の考慮事項を含む詳細なスキル定義（Markdown形式）を生成します。\n- **実践例**: 記事では架空の勤怠管理アプリ「TimePort」への工数入力を記録し、自然言語の指示だけでAIがブラウザを操作して入力を完了させる様子を実証しています。\n\n単純なマクロ記録とは異なり、AIが操作の「意図」を理解して構造化するため、複雑な定型業務の自動化において非常に強力なツールとなります。",
+    "topics": [
+      "Codex",
+      "Record & Replay",
+      "Computer Use",
+      "MCP (Model Context Protocol)",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

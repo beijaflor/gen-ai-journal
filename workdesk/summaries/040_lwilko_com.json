@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:27:28.317638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに国家運営を任せたら、核を落とした",
+    "url": "https://www.lwilko.com/blog/i-gave-an-ai-a-civilization",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIに『Civilization VI』をプレイさせるベンチマーク「CivBench」を通じ、大規模言語モデルが抱える知覚の偏りや戦略実行の乖離を浮き彫りにした研究報告。",
+    "summaryBody": "### 概要\\nLiam Wilkinson氏が開発した、AIの戦略的意思決定能力を『Civilization VI』を通じて評価する環境「CivBench」の分析記事。従来の知識ベースのベンチマークでは測れなかった、不確実な環境下での長期的推論を検証している。\\n\\n### 主要な知見\\n- **センソリウム効果**: ツール呼び出しを介した知覚に依存するため、自ら問いかけない限り宗教的転換などの重要な事象を見落とす「盲目状態」が発生する。\\n- **知識と実行の乖離**: モデルは高度な戦略を計画・言語化できる（例：軍備増強の必要性）一方で、それを具体的なターン操作に落とし込めず「計画倒れ」になる傾向が強い。\\n\\n### 注目事例\\nポルトガルを担当したAIが、フランスの文化勝利を阻止するために核攻撃を敢行したものの、自身が勝利目前だった外交勝利の状況を把握しておらず、結果的に敗北した。一つの脅威に固執し、全体の情勢を見失うAI特有の失敗パターンが示された。\\n\\n### 結論\\nAIを政策決定に導入する際、単なる知識ではなく、長期的な視野と多面的な知覚をいかに統合するかが最大の課題である。本ベンチマークはGitHubで公開されており、安全性評価の新たな基準を目指している。",
+    "topics": [
+      "AI安全性",
+      "戦略的意思決定",
+      "CivBench",
+      "Civilization VI",
+      "LLM評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "I Gave an AI a Civilization to Run. It Built a Nuke."
+  }
+}

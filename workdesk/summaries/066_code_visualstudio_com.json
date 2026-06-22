@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:37:10.226334+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS CodeにおけるGitHub Copilotのトークン効率向上の取り組み",
+    "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotがプロンプトキャッシュの最適化、ツール検索のオンデマンド化、WebSocketの導入などにより、トークン消費の削減と低レイテンシ化を実現した技術的裏側を解説。",
+    "summaryBody": "GitHub Copilotのエージェント機能におけるトークン効率化の最新成果が共有されています。OpenAIモデルでは、プロンプトキャッシュの保持時間を24時間に延長することで、長い中断後の再開時におけるキャッシュヒット率を最大10倍以上に向上させました。また、WebSocket（Responses API）の採用により通信のオーバーヘッドを減らし、初回トークン生成までの時間を約16〜19%短縮しています。Anthropicモデルにおいては、戦略的なキャッシュブレークポイントの配置により94%のキャッシュヒット率を達成しました。さらに、OpenAIのネイティブツール検索や、Anthropicモデル向けのクライアントサイド埋め込み検索（ベクトル検索）を導入し、膨大なツール定義をオンデマンドで読み込むことで、セッション全体のトークン使用量を約10〜18%削減することに成功しています。今後は軽量なサブエージェントへのタスク分散や、トークン消費の透明性向上に取り組む予定です。",
+    "topics": [
+      "GitHub Copilot",
+      "Visual Studio Code",
+      "LLM Caching",
+      "Token Optimization",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Improving token efficiency for GitHub Copilot in VS Code"
+  }
+}
