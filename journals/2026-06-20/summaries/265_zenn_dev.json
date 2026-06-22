@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:17:18.113563+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1コマンドでClaude Codeが開発チームになる「ccteams」を作った",
+    "url": "https://zenn.dev/yui/articles/4f54a98ad94fe5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのサブエージェント構成をパッケージ化し、1コマンドでプロジェクトに最適な開発チーム構成を導入・切り替えできるツール「ccteams」。",
+    "summaryBody": "Claude Codeにおけるサブエージェント（実装、レビュー、規約遵守など）の構成をプロジェクト間で再利用するためのパッケージマネージャー「ccteams」の紹介記事です。これまでプロジェクトごとに手動でコピペしていたエージェント設定を、`ccteams use &lt;team-name&gt;`という1コマンドで簡単に適用できます。Go、Next.js、Railsなどの主要スタックに最適化された8つのプリセットチームが用意されており、`.claude/agents/`配下でのファイル管理や`CLAUDE.md`への自動インポートをサポートします。さらに、Claude Code内からスラッシュコマンドで最適なチームをAIに選ばせるプラグイン機能や、エージェント同士を連携させるモードも搭載されています。MITライセンスで公開されており、npmを通じて誰でも利用可能です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ccteams",
+      "開発ツール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

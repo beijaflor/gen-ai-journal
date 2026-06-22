@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:50:03.553963+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apple Intelligenceによるパスワード自動変更機能：その利便性に潜むセキュリティ上の危惧",
+    "url": "https://www.kylereddoch.me/blog/apples-ai-can-now-change-your-passwords-what-could-possibly-go-wrong/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Apple IntelligenceがWebサイトを巡回してパスワードを自動変更する新機能について、プロンプトインジェクションやアカウント権限の委譲に伴う深刻なセキュリティリスクを専門家が考察しています。",
+    "summaryBody": "AppleがWWDC26で発表したiOS 27等の新機能「パスワード自動変更」は、AIエージェントがSafari上で脆弱なパスワードを検知し、自動で強力なものに置き換えるものです。セキュリティ専門家のKyle Reddoch氏は、この機能が放置された脆弱性を解消するメリットを認めつつも、重大なリスクを警告しています。主な懸念点は、悪意あるWebサイトの内容がAIへの指示として機能する「プロンプトインジェクション」、AIモデルにパスワードが露出する可能性、変更プロセス中の通信エラーによるアカウントロックアウト、そして侵害されたデバイスでの被害拡大です。氏はAppleに対し、資格情報のモデルからの完全な隔離、Face ID等による個別承認の必須化、厳格なオリジン検証、および詳細な監査ログの提供など、AIエージェントに権限を与える上での「最低限の要件」を提示しています。「AIができること」よりも「AIに何を許すべきか」というガバナンスの重要性を説く内容です。",
+    "topics": [
+      "Apple Intelligence",
+      "サイバーセキュリティ",
+      "AIエージェント",
+      "パスワード管理",
+      "プロンプトインジェクション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Apple's AI Can Now Change Your Passwords. What Could Possibly Go Wrong?"
+  }
+}

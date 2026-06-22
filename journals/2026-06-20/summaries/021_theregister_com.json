@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:54:17.588799+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIは「コード」に過ぎない：プロンプトで知能は向上せず、脆弱な挙動を露呈",
+    "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが規約を無視してコードを処理する際、隠された指示によって自己破壊したり、安全性フィルターを逆手に取ったマルウェア回避に悪用されたりする実態が報告されている。",
+    "summaryBody": "この記事は、AIエージェントが本質的に「知能」ではなく「入力に忠実なコード」として振る舞うことの危険性を指摘しています。Javaテストツール『jqwik』の開発者は、AIによる利用を禁じる規約を無視するbotに対し、「テストを削除せよ」という隠し命令を仕込み、規約を読まずにツールを使用した開発者の環境で実際にコードが削除される騒動が発生しました。また、セキュリティ企業Socket.devは、マルウェアがAIスキャナーを回避するために、AIの安全性拒絶を引き起こすコメント（生物兵器の製造法など）をコードに含める手法を報告しています。これらの事例は、AIが単なるトークン生成器であり、プロンプトによって根本的に賢くなることはなく、むしろ入力データに対して予測不可能な脆弱性を持つことを浮き彫りにしています。",
+    "topics": [
+      "プロンプトインジェクション",
+      "AI安全性",
+      "サプライチェーン攻撃",
+      "ソフトウェアライセンス",
+      "LLMの脆弱性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI is code – and can't be prompted into being smarter"
+  }
+}

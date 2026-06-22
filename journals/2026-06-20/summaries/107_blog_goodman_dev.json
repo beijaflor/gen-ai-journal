@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:02:39.186210+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのための「タコ型アーキテクチャ」: TorkBotにおける集中管理と分散実行の設計",
+    "url": "https://blog.goodman.dev/blog/octopus-agent-architecture/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "中央のメイン脳が対話の継続性を維持し、セミオートな「触手」が複雑なタスクやI/Oを独立して実行する、AIエージェント向けの新しい分散型設計。",
+    "summaryBody": "Geoff Goodman氏が、自身が開発するAIエージェント「TorkBot」で採用している「タコ型アーキテクチャ」について解説しています。この設計は、単一のLLM会話にユーザーとの対話を集約させる「中央の脳」と、特定のタスク（Google Workspace操作やサンドボックス内でのコード実行など）を担う「セミオートな触手（レーン）」で構成されます。主な特徴は、プラットフォームを問わず全ての入力を1つのフォアグラウンド会話に多重化して流し込むことで、エージェントの人格と長期的な文脈の連続性を保つ点にあります。複雑なツール実行やエラーリトライ、重いI/O処理は各レーンの独立したコンテキスト内に閉じ込めるため、メインの応答性が損なわれず、キャッシュ効率やコンテキストの節約にも繋がります。レーン間はテキスト通信と共有仮想ファイルシステムを介して連携し、最終的な成果物のみを「脳」に報告する仕組みです。",
+    "topics": [
+      "AIエージェント",
+      "システムアーキテクチャ",
+      "LLM",
+      "コンテキスト管理",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The octopus architecture for AI agents"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T04:19:05.118365+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント開発の作業を「AFK」と「HITL」で仕分ける",
+    "url": "https://qiita.com/ryoji9702/items/ac005b39873ce4861b6e",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる開発を加速させるため、作業を自律的な「AFK」と人間が判断を下す「HITL」に明確に分離し、開発のボトルネックを解消する手法を解説。",
+    "summaryBody": "AIコーディングエージェント（Claude Code等）の導入に伴い、人間のレビュー速度が開発のボトルネックになる課題を解決するためのフレームワークを提示しています。作業を、エージェントが自律してテストをパスさせるまでの「AFK（Away From Keyboard）」と、人間が結果の妥当性を評価する「HITL（Human In The Loop）」に仕分けます。単にテストが緑になること（AFKの成果）と、要件を満たしているという判定（HITLの役割）を明確に区別し、人間は個別のコード修正ではなく「ハーネス（開発環境やルール）」の整備、つまり『Humans on the loop』へ移行すべきだと主張しています。HITLで得た知見をハーネス（CLAUDE.md等）にフィードバックし続けることで、エージェントの自律性を高め、チーム全体のスループットを向上させるサイクルが重要です。",
+    "topics": [
+      "AIエージェント",
+      "AI駆動開発",
+      "Claude Code",
+      "ソフトウェアエンジニアリング",
+      "Harness Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

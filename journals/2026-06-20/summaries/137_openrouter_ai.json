@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:12:39.898019+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fusionによるフロンティアモデル性能の超越 — OpenRouter公式ブログ",
+    "url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenRouterが発表した「Fusion」は、複数のLLMの出力を統合・分析することで、GPT-5.5などの最新フロンティアモデルを上回る回答精度を実現する新しい推論ツールです。",
+    "summaryBody": "OpenRouterは、複数のAIモデルの出力を合成して単一モデルの限界を超える性能を引き出す新機能「Fusion」をリリースしました。この機能は、複数の「参加モデル」からなるパネルに並列で問い合わせを行い、別の「ジャッジモデル」がそれらの回答を統合・分析して最終的な回答を生成する仕組みです。\n\n主な成果と特徴は以下の通りです：\n- **性能の向上**: 深層調査ベンチマーク「DRACO」において、Fable 5とGPT-5.5を統合したパネルは69.0%のスコアを記録し、Fable 5単体の性能（65.3%）を上回りました。\n- **低コストでの高精度**: Gemini 3 FlashやDeepSeek V4 Proなどの安価なモデルを組み合わせた「予算重視パネル」が、GPT-5.5やOpus 4.8といった高価な単体モデルを凌駕しました。\n- **自己統合の効果**: 同一モデル（Opus 4.8）を複数使用して統合するだけでも、推論パスの多様化により約6.7ポイントの精度向上が確認されました。\n- **簡単な導入**: API上でモデル名に `openrouter/fusion` を指定するか、プラグインとして特定のパネル構成を定義するだけで、サーバーサイドの複雑なパイプラインを1回のAPIコールで実行できます。\n\nこの機能により、単一のAIモデルが持つ知識の偏りやエラー（ハルシネーション）を、複数の視点による合意形成と検証を通じて軽減することが可能になります。",
+    "topics": [
+      "OpenRouter",
+      "Fusion",
+      "LLMアンサンブル",
+      "ベンチマーク",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Surpassing Frontier Performance with Fusion — OpenRouter Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T04:17:12.022924+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10倍の生産性を実現するAI駆動並列エージェントのすべて",
+    "url": "https://speakerdeck.com/kumaiu/10bei-nosheng-chan-xing-woshi-xian-suruaiqu-dong-bing-lie-ezientonosubete",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicの研究をベースに、Claude Code等のAIエージェントを並列稼働させてシステム開発の生産性を劇的に向上させる実戦的ノウハウを解説した資料。",
+    "summaryBody": "本スライドは、2026年時点でのAI駆動開発の最前線を解説したものです。主な内容は、Anthropicの研究成果（16個のClaude Opusを用いたCコンパイラ構築）を実務に応用し、複数の並列エージェントを制御することで開発期間を大幅に短縮する手法です。親エージェントがタスクを分解し、子エージェント（Claude Code等）がTDD（テスト駆動開発）形式で並行実装を行うアーキテクチャが紹介されています。特に、エージェントが陥りやすい「局所的な最適化」や「マクロ視点の欠如」を補うための『構造化レビュー』の重要性が説かれており、人間が最後に全体整合性を確認する重要性が強調されています。具体的なユースケースとして、VercelやSupabaseを用いたMVP開発のフローや、CI/CDとの統合についても触れられています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "並列処理",
+      "AI駆動開発",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:29:06.295226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LegalOn Technologiesで7ヶ月インターンした話 — 読み順が崩れる官報PDFをLLMで構造化した",
+    "url": "https://tech.legalforce.co.jp/entry/structuring-kanpo-pdf-with-llm",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "官報PDFの複雑なレイアウトと読み順の不整合を解消するため、Gemini 3 Flash等のLLMを活用して情報の構造化と自動配信基盤を構築した技術的な取り組みの記録。",
+    "summaryBody": "LegalOn Technologiesでのインターンシップにおいて、官報（日本政府の機関紙）の情報を自動解析・配信するシステムを開発した事例です。官報PDFはレイアウトが極めて不規則で、抽出テキストが人間の読み順と一致しない課題がありました。筆者は、ルールベースの処理とマルチモーダルLLMによるOCR・構造化抽出を組み合わせた手法を検証。CER（文字誤り率）や数値の再現率等の指標を用いてGeminiシリーズの各モデルを比較し、コストと精度のバランスに優れた「gemini-3-flash-preview」を選定しました。実行基盤としてGKE CronJobを採用し、AlloyDB Auth Proxyのnative sidecar運用やWorkload Identityによる権限管理など、インフラからアプリケーション実装まで一貫した開発プロセスが詳述されています。",
+    "topics": [
+      "LLM",
+      "OCR",
+      "Gemini",
+      "PDF解析",
+      "GKE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

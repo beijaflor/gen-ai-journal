@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:12:28.536221+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「コードは1行も書かない」と決めた4ヶ月 — 完全AI駆動で300ページをNext.jsに移植した話",
+    "url": "https://qiita.com/bsj-k-hioki/items/8d75accb932bb2988fb9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "既存のVue/Nuxt2プロダクト（300ページ）を、人間がコードを一行も書かずAI（Claude Code等）のみでNext.jsへ移行した4ヶ月間の実践記録と、AI駆動開発における「レールの敷き方」の教訓。",
+    "summaryBody": "bravesoft株式会社による、大規模なフロントエンドリプレイスの挑戦記録です。Laravel+VueおよびNuxt2で構成された約300ページの既存資産を、Claude Codeを中心としたAI駆動開発でNext.jsへ完全移植しました。\n\n### 移行のプロセスと改善策\n1. **初期の失敗**: コードのみをAIに渡すと視覚的・機能的再現率が30%に留まった。AIは「コードから挙動を想像」するのが苦手であることを痛感。\n2. **視覚情報の付与**: Chrome DevTools MCPを活用し、AIに実際の動作画面を「見せる」ことで再現率が大幅に向上。\n3. **トークンコストの最適化**: 手戻りが最大のコスト要因であることを特定。仕様抽出Agentを強化し、エラーハンドリングや全インタラクションを事前に網羅させることで、総トークン量を抑制した。\n4. **ルールの構造化**: 全てのルールを1箇所にまとめず、CLAUDE.md、Skills、Agent定義など階層的に分離し、AIが必要な時に必要な情報だけを参照できる環境を構築。\n\n### 重要な教訓\n「AIが得意な技術（情報の多いNext.jsなど）」を選ぶことが開発の成否を分けること、そしてプロジェクト固有の「型（エラー処理やデータフェッチ）」を初期のパイロットフェーズで固めきらないと、終盤に甚大なリファクタリングコストが発生することを強調しています。",
+    "topics": [
+      "AI駆動開発",
+      "Next.js",
+      "Claude Code",
+      "リプレイス",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

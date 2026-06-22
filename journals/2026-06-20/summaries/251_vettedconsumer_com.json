@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:13:39.554859+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.2: 最強のオープンウェイトモデルとそのローカル実行における厳しい現実",
+    "url": "https://vettedconsumer.com/glm-5-2-the-most-powerful-open-weight-model-yet-and-the-brutal-reality-of-running-it-locally/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Z.aiがリリースしたGLM-5.2は、753Bパラメータと100万トークンのコンテキストを誇る最強のオープンウェイトモデルですが、その実行には膨大なメモリが必要であり、ローカルでの運用は極めて限定的です。",
+    "summaryBody": "中国のAIラボZ.aiが発表したGLM-5.2は、Artificial Analysis Intelligence Indexで首位を獲得した、現時点で最も強力なオープンウェイトLLMです。753Bパラメータ（アクティブ40B）のMixture-of-Experts（MoE）構成で、100万トークンのコンテキストウィンドウ、MITライセンス、そして推論効率を高める独自の「IndexShare」アーキテクチャを備えています。\n\nしかし、本記事は「ローカル実行」の極めて高いハードルに警鐘を鳴らしています。FP16形式で1.51TBという巨大なウェイトサイズは、4ビット量子化（Q4_K_M）でも476GBのメモリを要求し、一般的なコンシューマーPCでは動作しません。2ビット量子化まで落としても241GBのメモリが必要であり、現時点で単一の筐体で実行可能なのは256GB以上のユニファイドメモリを搭載した最高スペックのMac Studioのみです。実用的な速度やコストを考慮すると、APIやクラウドレンタルの利用が現実的であると結論づけています。プライバシー重視のコーディングエージェント用途など、特定のニーズを持つユーザー向けのハイエンドツールと言えます。",
+    "topics": [
+      "GLM-5.2",
+      "LLM",
+      "オープンウェイト",
+      "ハードウェア要件",
+      "MoE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "GLM-5.2: The Most Powerful Open-Weight Model Yet — and the Brutal Reality of Running It Locally"
+  }
+}

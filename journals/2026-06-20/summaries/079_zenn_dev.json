@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:43:23.907773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントはCloudflareに賭けろ",
+    "url": "https://zenn.dev/yusukebe/articles/ccb1f953e48ee1",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "CloudflareのDeveloper Advocateが、V8 Isolateの優位性と推論・サンドボックス・実行環境を統合したプラットフォームとしてのAIエージェント構築の最適性を解説しています。",
+    "summaryBody": "Cloudflareのyusukebe氏による、AIエージェント時代のインフラ戦略の解説です。従来のコンテナベースのクラウドは「1対多」の配信を想定しており、各ユーザーに独立した環境が必要な「1対1」のAIエージェント時代には、V8 IsolateベースのCloudflare Workersが最適であると主張しています。エージェントに必要な3要素として「推論（Workers AI）」「サンドボックス（Sandboxes/Browser Run/Dynamic Workers）」「実行環境（Durable Objects/Workflows）」を挙げ、これらを統合する『Agents SDK』の強力な機能（状態保持、リアルタイム同期、ハイバネーション）を紹介しています。特に、AIがツール呼び出しではなくコードを直接生成して実行する『Code Mode』や、AIネイティブな開発（MCPサーバーやAI向けドキュメント提供）への取り組みについても詳しく述べられています。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "Cloudflare Workers",
+      "Agents SDK",
+      "V8 Isolate"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

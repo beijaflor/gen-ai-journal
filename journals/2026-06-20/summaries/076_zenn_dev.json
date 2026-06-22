@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:42:40.777246+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMは長文を本当に読めているのか？「Lost in the Middle」から考えるRAG設計",
+    "url": "https://zenn.dev/japan/articles/73ad921caeb0bd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが長い入力の中央付近の情報を失念しやすい「Lost in the Middle」現象を解説し、RAGの実務における並び替えやReranker活用などの具体的な対策を提示する。",
+    "summaryBody": "LLMが長文コンテキストの先頭と末尾の情報を優先し、中央部分の情報を無視しやすくなる「Lost in the Middle」現象に焦点を当て、RAG（検索拡張生成）設計への影響と実務的な対策を詳説しています。\n\n主な内容は以下の通りです：\n- **現象の概要**: 論文に基づき、コンテキストウィンドウが大きくても情報の位置によって利用精度が著しく低下する問題を解説。\n- **RAGにおける課題**: 検索上位のチャンクがプロンプト中央に配置されると、正解が含まれていてもLLMが「回答不能」と判断したり誤答したりするリスクを指摘。\n- **実践的な対策**: 検索結果をそのまま詰め込むのではなく、Rerankerによる並べ替え、重要情報の先頭・末尾への配置、不要なノイズのフィルタリング、回答前に根拠を抽出させるプロンプト設計などの手法を推奨。\n- **評価の重要性**: 情報の配置場所を変えた評価データを作成し、自社システムの位置バイアスを定量的かつ安全に測定する手法を提案。\n\n単なるコンテキストの拡大に頼らず、情報の「順序」と「密度」を制御するパイプライン設計の重要性を強調しています。",
+    "topics": [
+      "LLM",
+      "RAG",
+      "Lost in the Middle",
+      "Reranker",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

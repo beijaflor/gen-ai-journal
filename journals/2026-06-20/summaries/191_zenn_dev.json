@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:14:32.867231+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Databricks発OSSのメタハーネス『Omnigent』を触ってみた！",
+    "url": "https://zenn.dev/nttdata_tech/articles/2fe14c8819557c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCodexなど複数のAIエージェントを統合・制御し、チームで共有可能にするDatabricks発のオープンソース「Omnigent」の導入と検証レポート。",
+    "summaryBody": "Databricksが公開したOSS「Omnigent」は、複数のAIエージェントを上位レイヤーから束ねる『メタハーネス』である。本記事ではWSL2環境へのインストールから、Claude ProとCodexを接続する手順、組み込みサンプル「Debby」を用いたエージェント間ディベートの実行結果を紹介している。YAMLによるエージェント構成定義、実行ポリシー制御、URLによるセッション共有などの機能を備えており、単一エージェントの利用に留まらない、組織的なマルチエージェント活用のための基盤としてのポテンシャルを解説している。",
+    "topics": [
+      "Omnigent",
+      "Databricks",
+      "AIエージェント",
+      "マルチエージェント",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 82
+    }
+  }
+}

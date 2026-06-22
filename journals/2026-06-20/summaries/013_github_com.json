@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:52:02.514892+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TensorZero: ゲートウェイから評価・最適化までを一元管理するオープンソースLLMOpsプラットフォーム",
+    "url": "https://github.com/tensorzero/tensorzero",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TensorZeroは、LLMゲートウェイ、観測、評価、最適化、A/Bテストなどの機能をRust製の高性能な基盤で統合した、包括的なオープンソースLLMOpsプラットフォームである。",
+    "summaryBody": "TensorZeroは、LLMアプリケーションの開発から運用（LLMOps）までのライフサイクルを一元管理するためのツール群です。Rustで構築された高性能なゲートウェイ（p99レイテンシ &lt;1ms）を核としており、主要なLLMプロバイダーへのアクセスを統一します。主な機能として、推論ログとフィードバックを自身のデータベースに保存する「観測」、LLM Judgeやヒューリスティックによる「評価」、収集したデータを用いたファインチューニングやプロンプト自動最適化（GEPA等）を行う「最適化」を備えています。OpenAI SDKと互換性があり、既存のコードベースに最小限の変更で導入可能です。特に推論データから学習しモデルを改善する「データ・ラーニング・フライホイール」の構築に特化しており、小規模なスタートアップから大企業まで対応可能なスケーラビリティを持っています。",
+    "topics": [
+      "LLMOps",
+      "LLM Gateway",
+      "Rust",
+      "Machine Learning",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - tensorzero/tensorzero: TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation."
+  }
+}

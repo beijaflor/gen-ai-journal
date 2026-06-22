@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:17:33.051158+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Eve】AIエージェントは\"ディレクトリ\"になる — Vercel発のエージェントフレームワークを触ってみた",
+    "url": "https://zenn.dev/sc30gsw/articles/a03d6a17af036c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Vercelが発表したAIエージェントフレームワーク「Eve」の、ディレクトリベースの設計思想、主要コンポーネント、および実際に執筆エージェントを構築した際の実践的な知見を解説する記事。",
+    "summaryBody": "Vercelが公開したオープンソースのAIエージェントフレームワーク「Eve」についての解説と実践レポートです。Eveの最大の特徴は「Next.jsにおけるルーティング」のようなファイルシステム・ファーストな設計にあります。`agent/`ディレクトリ配下の構成（tools, skills, subagents等）がそのままエージェントの能力を定義する規約（Convention）となっており、開発者は各部品をファイルとして追加するだけで複雑なエージェントを構築できます。\n\n記事では以下の主要コンポーネントが紹介されています：\n- **Tools/Skills**: TypeScriptやMarkdownで定義するアクションと知識ベース。\n- **Durable Sessions**: 長時間の実行や人間による承認待ち（Human-in-the-loop）を可能にする永続的実行基盤。\n- **Subagents**: 複雑なタスクを分業させるための入れ子構造のエージェント。\n- **Vercel Connect**: 認証や外部サービス（Notion等）との連携を安全かつ簡潔に行う仕組み。\n- **Sandboxed Compute**: ファイル操作やコード実行を隔離環境で行うセキュアな設計。\n\n著者は、Eveを「AI SDK（React相当）の上に乗るNext.jsのようなフレームワーク」と定義し、本番運用に必要なボイラープレートを抽象化する強力なツールであると評価しています。",
+    "topics": [
+      "Vercel",
+      "Eve",
+      "AIエージェント",
+      "TypeScript",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

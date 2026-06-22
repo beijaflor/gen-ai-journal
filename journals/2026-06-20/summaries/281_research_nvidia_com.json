@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-21T03:21:04.539598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ENPIRE: 実世界におけるエージェントによるロボットポリシーの自己改善",
+    "url": "https://research.nvidia.com/labs/gear/enpire/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントが実世界でのロボット操作タスクにおいて、自動化されたフィードバックループを通じて自律的に学習アルゴリズムを提案・改善し、99%の成功率を達成するフレームワーク「ENPIRE」の提案。",
+    "summaryBody": "ENPIREは、物理世界でのロボット学習における人間による監督とアルゴリズムエンジニアリングのボトルネックを解消するためのフレームワークです。このシステムは、環境（自動リセットと検証）、ポリシー改善（コード生成）、ロールアウト（評価）、進化（分析と改善）の4つのコアモジュールで構成される「物理的フィードバックループ」を構築します。これにより、CodexやClaude Code、Kimi Codeといった先端コーディングエージェントが、ヒューリスティック学習、行動クローニング（BC）、オフライン/オンライン強化学習（RL）などの手法を自律的に試行し、失敗モードを分析してトレーニングコードを最適化することが可能になります。実験では、Push-TやGPU挿入、ジップタイの切断といった複雑なタスクで99%のパス率を達成しました。また、ロボットフリートを用いたスケーリング法則についても分析し、ロボット利用率（MRU）やトークン利用率（MTU）といった新しい評価指標を導入して、エージェント主導の物理的研究の効率性を定量化しています。本研究は、一般的な物理的知能の追求において、実世界でのロボット学習を制御可能な最適化プロセスへと変貌させる実用的な道筋を示しています。",
+    "topics": [
+      "Robot Learning",
+      "Large Language Models",
+      "Autonomous Research",
+      "Reinforcement Learning",
+      "Robotic Manipulation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 35,
+      "overall": 96
+    },
+    "originalTitle": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World"
+  }
+}

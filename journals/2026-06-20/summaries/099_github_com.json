@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:00:27.705382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SharkNinja製ロボット掃除機を操作可能なMCPサーバー「sharkclean-mcp」",
+    "url": "https://github.com/a-funk/sharkclean-mcp",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "SharkNinja製ロボット掃除機をClaudeなどのMCPクライアントから操作し、清掃指示やステータス確認を自然言語で行えるようにするツール。",
+    "summaryBody": "SharkNinja社のロボット掃除機をModel Context Protocol (MCP) 経由で制御するためのサーバー実装です。Matrix、AI Ultra、Mach 2などの最新モデルが採用している「skegox」バックエンドに対応しており、従来のAylaクラウドベースのツールでは制御できなかった機種でも動作するのが最大の特徴です。主な機能として、家全体の清掃、特定部屋の指定清掃、吸引モード（エコ/ノーマル/マックス）の変更、ドックへの帰還、バッテリー残量やステータスの確認が含まれます。Pythonのuvを使用してセットアップを行い、Auth0による初回認証をブラウザ経由で済ませることで、Claude DesktopやClaude Codeから「リビングを掃除して」といった自然言語での命令が可能になります。",
+    "topics": [
+      "MCP",
+      "SharkNinja",
+      "Smart Home",
+      "Home Automation",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - a-funk/sharkclean-mcp: MCP server for SharkClean / SharkNinja robot vacuums — start cleanings, clean rooms, dock, and check status from any MCP client"
+  }
+}
