@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:12:54.999888+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "5万スターのClaude Code Tips集、本質は2つだけ",
+    "url": "https://zenn.dev/acntechjp/articles/5409d8e2ad0767",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHubで5万スターを獲得したClaude Codeのベストプラクティス集を基に、CLAUDE.mdの簡素化と検証の自動化（ハーネスエンジニアリング）という2つの核心的設計思想を解説しています。",
+    "summaryBody": "この記事は、GitHub Trending 1位を獲得した『claude-code-best-practice』リポジトリを深く読み解き、その核心を2つの設計思想に集約して解説しています。1つ目は「CLAUDE.mdをシンプルに保つ」こと。公式の推奨（200行以下）やBoris Cherny氏の「バニラ（素のまま）」重視の姿勢を引き合いに、指示を詰め込みすぎず、特定ドメインのルールは別ファイル（.claude/rules/）に切り出し、決定論的な設定はsettings.jsonで行うべきだと説いています。2つ目は「ハーネスエンジニアリング」。モデル自体を賢くしようとするのではなく、Claudeにテストや型チェックなどの検証手段を与え、フック機能で機械的な修正を行う「失敗しにくい仕組み」を構築することの重要性を強調しています。最終的に、プロンプトを盛るのではなく、引き算の設計と検証ループの構築が、成果物の質を2〜3倍に高める鍵であるとまとめています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM Agents",
+      "Software Engineering",
+      "Best Practices"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

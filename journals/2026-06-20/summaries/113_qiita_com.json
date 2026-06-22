@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:05:55.587236+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでつくる「並列ループエージェント」実践！ハンズオンガイド",
+    "url": "https://qiita.com/kumai_yu/items/54ded70a5a68a5ca15d5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのサブエージェントとスキル機能を活用し、並列実行・TDD・仕様駆動を組み合わせて自走型開発エージェントを構築するための詳細な実践ガイド。",
+    "summaryBody": "この記事は、Claude Codeを用いた高度な開発自動化フレームワーク「並列ループエージェント」の構築方法を解説したハンズオンです。主な特徴は、CLAUDE.mdを骨格（案内役）とし、重い手順やテンプレートを「スキル」に、実際の作業を「サブエージェント」に切り出すことでコンテキスト課金を抑えつつ、効率的な並列開発を実現する設計にあります。具体的には、調査・仕様定義・実装（TDD）・統合・検証の5フェーズに分け、各フェーズで適切なモデル（Opus/Sonnet/Haiku）を使い分ける手法を提示しています。また、人間による「仕様レビュー」と「構造化レビュー」という2つの関所を設けることで、マクロ視点での品質を担保しながら、/goal コマンドを用いた自律的なループ走行を可能にする実践的な構成が紹介されています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "並列エージェント",
+      "TDD (テスト駆動開発)",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

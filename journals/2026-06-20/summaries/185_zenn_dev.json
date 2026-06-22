@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:12:58.246551+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.2は本当にオープンソースになったのか？月18ドルからClaude Codeに挿して試す",
+    "url": "https://zenn.dev/ino_h/articles/2026-06-16-glm-5-2-opensource-cost",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Zhipu AIの最新モデル「GLM-5.2」のオープンソース化に関する実態調査と、現時点でClaude Codeへ組み込んで利用するためのコスト・設定方法のまとめ。",
+    "summaryBody": "2026年6月に発表されたZhipu AI（Z.ai）の最新コーディング特化モデル「GLM-5.2」について、その公開状況と利用方法を解説しています。\n\n### 「オープンソース」の実態\n発表当初から「MITライセンスでオープンソース化」と報じられていますが、2026年6月16日時点ではHuggingFaceやGitHubに「重み（Weights）」は公開されておらず、正確には「オープンソース化の告知」段階です。モデルデータの公開は発表の翌週になる見込みです。\n\n### 現時点での利用方法とコスト\n今すぐ試すには、月額18ドルからの「GLM Coding Plan」への加入が必要です。このプランではAnthropic互換エンドポイントが提供されるため、Claude Codeの環境設定を書き換えることで、バックエンドとしてGLM-5.2を即座に利用可能です。利用制限はトークンではなく「プロンプト数（5時間ごと、または週単位）」で管理されます。\n\n### モデルスペックと注意点\n744B MoE（アクティブ40B）という巨大なパラメータ規模を持ち、100万トークンのコンテキストに対応しています。将来的に重みが公開された場合でも、その規模からローカル実行には非常に高いハードウェアスペックが要求される点に注意が必要です。",
+    "topics": [
+      "GLM-5.2",
+      "Zhipu AI",
+      "Claude Code",
+      "LLM",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

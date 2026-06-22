@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:40:21.935188+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apple Foundation Models用Claude統合Swiftパッケージのリリース",
+    "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが、AppleのFoundation Modelsフレームワーク内でClaudeをサーバーサイド言語モデルとしてシームレスに利用可能にするSwiftパッケージを公開しました。",
+    "summaryBody": "Anthropicは、Appleの新しい『Foundation Models』フレームワーク上でClaudeを利用するための公式Swiftパッケージ「Claude for Foundation Models」をリリースしました。このパッケージを使用することで、開発者はAppleデバイス上のローカルモデルとサーバーサイドのClaudeを、共通のLanguageModelSession API（respond(to:)、ストリーミング、ツール呼び出し等）を通じて同一のコードベースで切り替えて利用できるようになります。リクエストはAnthropicのAPIに直接送られ、Appleがプロンプトやレスポンスの内容を閲覧することはありません。開発環境用のAPIキー認証に加え、商用利用に向けたプロキシ認証もサポートされており、Web検索やコード実行といったサーバーサイドツールも統合されています。なお、本パッケージはOS 27（ベータ版）で導入されたサーバーサイド言語モデルAPIを対象としています。",
+    "topics": [
+      "Claude",
+      "Swift",
+      "Apple Foundation Models",
+      "iOS Development",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Apple Foundation Models - Claude API Docs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:28:52.409197+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareにおけるAIエージェントのハーネスとフレームワークの拡充：Flueの導入",
+    "url": "https://blog.cloudflare.com/agents-platform-flue-sdk/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントの永続的な実行と安全なコード実行を可能にするAgents SDKと、それを利用した新しい宣言型フレームワーク「Flue」を発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントをプロトタイプから本番環境のインフラへと昇華させるための新しい3層スタックを定義し、その構成要素を公開しました。このスタックは、開発者体験を担う「フレームワーク（Flue）」、エージェントの思考ループを制御する「ハーネス（Pi/Project Think）」、そして耐久性のある実行環境を提供する「プラットフォーム（Agents SDK）」で構成されます。特にAgents SDKは、Durable Objects上で動作する「Fibers」という仕組みにより、プロセスの中断後もチェックポイントから自動復旧する機能を備えています。また、安全なサンドボックスでLLM生成コードを実行する「Code Mode」や、SQLiteベースの仮想ファイルシステム「@cloudflare/shell」を提供し、高価なコンテナを必要とせずに複雑なタスクを効率的かつ安価に実行できるよう設計されています。",
+    "topics": [
+      "AI Agents",
+      "Cloudflare Workers",
+      "Agents SDK",
+      "Flue Framework",
+      "Durable Objects"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue"
+  }
+}

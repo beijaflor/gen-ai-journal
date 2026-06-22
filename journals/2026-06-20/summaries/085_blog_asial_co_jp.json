@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:45:01.727436+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と Codex CLI を “設計者と作業者” として組み合わせる開発フローの話",
+    "url": "https://blog.asial.co.jp/6859/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを設計・指揮官、Codex CLIを実装・エラー修正担当として分業させることで、トークン節約と開発品質向上を両立させる実践的なマルチエージェント手法の紹介。",
+    "summaryBody": "AnthropicのClaude CodeとOpenAIのCodex CLIという2つのAIコーディングツールを、役割分担させて運用する高度な開発フローについて解説しています。Claude Codeを「設計者」としてコンテキスト管理や全体指揮に専念させ、重たい実装作業や繰り返しのエラー修正（Linter/型チェック修正など）を「作業者」としてのCodexに委譲することで、Claude Codeのトークン枯渇を防ぎつつ高いコード品質を維持しています。具体的には、分析用の`codex-analyze`、実装用の`codex-exec`、エラー完遂用の`codex-fix`といったカスタムスキルを定義し、大規模タスクでは自動的にサブエージェントを立ち上げて並列処理させるチーム構成の仕組みについても触れられています。",
+    "topics": [
+      "AIコーディング",
+      "Claude Code",
+      "Codex CLI",
+      "マルチエージェント",
+      "プログラミング効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

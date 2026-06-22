@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T03:06:56.494735+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMをいつ使うべきか？：特化型モデルによる精度向上と安定稼働の実践",
+    "url": "https://zenn.dev/sompojapan_dx/articles/74624afa03040c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ローカルLLMは単なるコスト削減手段ではなく、特定のタスクに特化させた小型モデルを高品質な教師データで訓練することで、フロンティアモデルに匹敵する精度と安定したレイテンシを実現できる。",
+    "summaryBody": "本記事は、SOMPO Digital LabによるローカルLLM活用の指針と実例を紹介している。2026年時点の予測試算に基づき「ローカルLLM＝低コスト」という誤解を解き、ガバナンス、タスク特化の精度、レイテンシの安定性が真の導入メリットであると論じている。具体例として、RAGチャットボットの「ドリフト検知」ステップにおいて、2Bクラスの小型モデル（Gemma 4 E2B）をLoRAでファインチューニングした事例を詳述。上位モデルを教師とした蒸留パイプラインと、judgeモデルによる品質ゲートの構築により、検知精度を61%から97%まで改善し、Gemini 2.5 Flash等のフロンティアモデルを凌駕する結果を得た。また、vLLMを用いた自前デプロイにより、共有APIの混雑に左右されない予測可能な低レイテンシ（p95の安定性）を実現。汎用的な生成はAPI、特定の定型処理は特化型ローカルモデルというハイブリッド構成が現実的であると結論づけている。",
+    "topics": [
+      "ローカルLLM",
+      "Fine-tuning",
+      "RAG",
+      "Gemma 4",
+      "LLM Ops"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

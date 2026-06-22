@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:06:49.097817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel Connectの発表：AIエージェント向けのセキュアなランタイム認証基盤",
+    "url": "https://vercel.com/blog/introducing-vercel-connect",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel Connectは、環境変数に静的なトークンを保存する代わりに、OIDCを利用して実行時に必要最小限の権限を持つ短期間のトークンを取得できるセキュアな認証システムです。",
+    "summaryBody": "Vercel Connectは、AIエージェントやアプリケーションが外部サービス（Slack、GitHub、Linear等）にアクセスする際のセキュリティ課題を解決します。従来の長期間有効な「保存されたトークン」を、実行時の「資格情報交換（Credential Exchange）」に置き換えるのが最大の特徴です。\n\n### 主な機能とメリット\n- **OIDCによるアイデンティティ証明**: デプロイメントが持つOIDCアイデンティティを使用してVercel Connectにリクエストを行い、プロバイダーのトークンを取得します。アプリ側にシークレットを保持する必要がありません。\n- **最小権限の原則（Least Privilege）**: リクエストごとにスコープ（特定のGitHubリポジトリのみ、読み取り専用など）を指定でき、タスクに必要な権限だけを動的に付与します。\n- **ユーザー単位のスコーピング**: アプリ全体だけでなく、特定のユーザーとしてのアクションを代行するトークンの取得も可能です。\n- **トリガー転送（Trigger Forwarding）**: Webhook（Slack等）をVercel Connectが受信・検証し、安全にアプリへ転送。アプリ側での署名検証コードを簡略化できます。\n\nVercelの新しいエージェントフレームワーク「eve」やAI SDKとも統合されており、開発者は認証の複雑なロジックを意識せずにセキュアなエージェントを構築できます。",
+    "topics": [
+      "Vercel",
+      "Authentication",
+      "AI Agents",
+      "Security",
+      "OIDC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Vercel Connect"
+  }
+}

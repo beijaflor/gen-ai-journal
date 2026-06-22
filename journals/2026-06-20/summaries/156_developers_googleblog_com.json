@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:05:03.994690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic Resource Discovery (ARD) の発表：AIエージェントとツールのためのオープンな発見・検証仕様",
+    "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントが組織の境界を超えてツールやスキルをセキュアに発見・検証・接続するためのオープンな仕様「Agentic Resource Discovery (ARD)」を発表した。",
+    "summaryBody": "Googleは、AIエージェントのエコシステムをスケールさせるための新しい共通規格「Agentic Resource Discovery (ARD)」を公開しました。現在、AIツールやエージェントは特定のプラットフォーム内に閉じられており、外部からの発見や安全な接続が困難です。ARDはこの課題を解決するため、組織が自社ドメインで「カタログ（ai-catalog.json）」を公開し、それを「レジストリ」が索引化する分散型の仕組みを提供します。\n\n主な特徴は以下の通りです：\n1. **分散型の発見**: ドメインベースのカタログ公開により、所有権の証明と動的なリソース検索を実現。\n2. **暗号化による検証**: 接続前にパブリッシャーの正当性を確認できる信頼メタデータを標準化。\n3. **広範な互換性**: MCP (Model Context Protocol)、OpenAPI、A2Aエージェントなど、既存のプロトコルを問わず統合可能。\n\nGoogle Cloudの「Gemini Enterprise Agent Platform」はこの仕様をネイティブサポートし、エンタープライズ向けのガバナンスやコンプライアンス管理機能を提供します。本仕様はApache 2.0ライセンスで公開され、GitHubを通じてコミュニティによる拡張が可能です。",
+    "topics": [
+      "AI Agents",
+      "Interoperability",
+      "Open Specification",
+      "Google Cloud",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Announcing the Agentic Resource Discovery specification"
+  }
+}

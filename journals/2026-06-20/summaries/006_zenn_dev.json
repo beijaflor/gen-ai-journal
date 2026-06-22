@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:50:23.283808+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "推薦システムの新たなパラダイム Generative Recommendation",
+    "url": "https://zenn.dev/rintaro121/articles/generative-recommendation",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "言語モデルの次単語生成のようにアイテムを自己回帰的に予測する「Generative Recommendation」の仕組みと、Semantic IDを用いた実装手法を詳しく解説しています。",
+    "summaryBody": "この記事では、MetaやGoogleなどのビッグテックが注力している推薦システムの新しいパラダイム「Generative Recommendation (GR)」を包括的に解説しています。GRは推薦タスクを「次のアイテムIDを生成する問題」として定式化し、Transformerなどのアーキテクチャを用いて自己回帰的に予測を行う手法です。従来の推薦手法（DLRM等）と比較してスケーリング則が効きやすい点が大きなメリットとされています。\n\n技術的なポイントとして、膨大なアイテムカタログやコールドスタート問題に対処するための「Semantic ID」という概念が紹介されています。これは、アイテムのコンテンツ情報をエンコーダで埋め込み、RQ-VAEなどの手法で量子化することで、類似アイテムが類似したIDトークン列を共有するように設計するものです。記事後半ではMovieLensデータセットを用い、SentenceTransformerによるテキストエンコード、RQ-VAEによるID生成、そしてDecoder-only Transformerによる学習までの具体的な実装フローを公開リポジトリと共に紹介しています。実験結果からは、正解の直接的中だけでなく、ユーザーの嗜好に沿った関連アイテムを柔軟に生成できるポテンシャルが示されています。",
+    "topics": [
+      "推薦システム",
+      "Generative Recommendation",
+      "Semantic ID",
+      "Transformer",
+      "RQ-VAE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

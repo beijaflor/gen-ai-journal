@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T02:24:25.351387+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Eve - VercelによるAIエージェント構築のための新フレームワーク",
+    "url": "https://vercel.com/eve",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelが発表した「Eve」は、Markdownで指示を記述しTypeScriptで機能を拡張する、耐久性とマルチチャネル対応を備えたAIエージェント開発用フレームワークです。",
+    "summaryBody": "Vercelが「WebアプリにおけるNext.jsのような存在」を目指して開発したAIエージェント構築フレームワークです。エージェントの指示（Instructions）やスキルをMarkdownで、ツール（Tools）をTypeScriptで定義するファイルベースの構造を採用しています。Vercelのインフラと密接に統合されており、Vercel Workflowsによる耐久性のある実行（チェックポイントからの再開）、AI Gatewayによるモデル管理、分離されたサンドボックス環境でのコード実行、GitHubやLinearとの認証済み接続（Vercel Connect）などを標準で提供します。また、Slack、Discord、Webなどの複数チャネルへの配信、人間による承認プロセス（Human-in-the-loop）、サブエージェントへのタスク委任、Cronによる定期実行など、プロダクション環境での運用に必要な機能が網羅されています。",
+    "topics": [
+      "Vercel",
+      "AIエージェント",
+      "TypeScript",
+      "LLM",
+      "フレームワーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Eve - Vercel"
+  }
+}

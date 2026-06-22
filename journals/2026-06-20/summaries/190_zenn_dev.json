@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:14:17.507783+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自己改善エージェントはなぜ前提を覆せないのか ― 局所最適とハーネスでの脱出",
+    "url": "https://zenn.dev/layerx/articles/b36ceffe6b5e20",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがワークフロー改善において局所最適に陥り、根本的な設計変更ができない理由を最新のAI研究から紐解き、探索構造（ハーネス）による解決策を提案する。",
+    "summaryBody": "LayerXのエンジニアによる、自己改善AIエージェントが直面する「初期の前提を覆せない」という停滞現象の分析記事です。エージェントがプロンプトの微調整など近傍の改善に留まり、処理順序や設計自体を見直せない問題を、アンカリング効果や自己反省の限界（Degeneration-of-Thought）として整理しています。解決策として、2026年時点の最新研究（GEPA、DGM、HGM、Group-Evolving Agents等）を引用し、1. 複数候補の並行改善とモジュール単位の統合、2. 過去の候補を木構造でアーカイブし系統別に再利用する仕組み、3. 設計の多様性（LLMステップ数やコード化範囲など）を評価軸に組み込む手法、の3点を解説。個体としてのモデル性能に期待するのではなく、適切な探索を可能にするシステム側（ハーネス）の制御構造が、ラストワンマイルの改善には不可欠であると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "自己改善",
+      "進化的探索",
+      "LayerX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

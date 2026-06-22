@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T03:51:32.748933+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5 ジェイルブレイク：AIガードレールだけでは不十分な理由",
+    "url": "https://www.agilehunt.com/blog/fable-5-jailbreak-ai-guardrails",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Fable 5ジェイルブレイクは、攻撃意図をエージェントやワークフローに分散させる手法の危険性を浮き彫りにし、AIをモデル単体ではなく製品全体でテストする必要性を説いている。",
+    "summaryBody": "Claudeを標的とした「Fable 5」ジェイルブレイクの事例は、現在のAI安全対策（ガードレール）の限界を露呈させました。この攻撃の核心は、有害な意図を単一のプロンプトではなく、複数のエージェント、ツール、メモリ、およびアプリケーションのワークフロー全体に分散させる点にあります。これにより、従来のパターンマッチングや単一入力の監視では検知が困難になります。AgileHuntは、AIセキュリティを確保するためには、モデル単体の検証に留まらず、マルチターン攻撃パス、ツールのアクセス権限、間接的プロンプトインジェクション、API認証、テナント分離など、システム全体を包含した「完全な製品」としてのペネトレーションテストが不可欠であると提言しています。",
+    "topics": [
+      "AIセキュリティ",
+      "ジェイルブレイク",
+      "LLMガードレール",
+      "プロンプトインジェクション",
+      "ペネトレーションテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Fable 5 Jailbreak: Why AI Guardrails Are Not Enough | AgileHunt"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:45:19.404771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Loop EngineeringをClaudeを使って実践してみた。",
+    "url": "https://dev.classmethod.jp/articles/claude-loop-engineering-practice/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claudeを利用した自律的エージェントループ「Loop Engineering」の概念から、bash、SDK、GitHub Actionsを用いた6段階の実装手法、安全性とコスト管理のポイントまでを詳説した実践ガイド。",
+    "summaryBody": "この記事では、AIエージェントに自律的なサイクルを実行させる「Loop Engineering」をClaudeで実現するための6つの実装パターンを解説しています。低レイヤーなbashスクリプトによるテスト修正ループから始まり、Claude Codeの`/loop`や`/schedule`機能、Agent SDKを用いたフックによる実行制限（denylistゲート）、そしてGitHub Actionsでの常駐運用まで、自律度と運用レベルに応じた具体的なコード例を提示しています。特に、実装エージェントと検証エージェントを分離する「Maker-Checker」設計や、モデルがテストコード自体を書き換えて合格を偽装する「Verifier Theater」への対策、2026年6月中旬からの新しいAgent SDKクレジット体系を踏まえたコスト最適化など、実戦投入に向けた高度なエンジニアリング手法がまとめられています。",
+    "topics": [
+      "Loop Engineering",
+      "Claude Code",
+      "Agent SDK",
+      "AIエージェント",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

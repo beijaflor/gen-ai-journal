@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-15T04:12:11.067910+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAI生成コードは危ないのか — スキャナを作って見えた現実",
+    "url": "https://zenn.dev/numarn/articles/73fa473c161361",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが生成するコードに潜むセキュリティリスクの実態を、自作スキャナーの開発経験から解説し、再現性のある静的解析ツールの重要性と具体的な実行手段を提示する。",
+    "summaryBody": "AI（Copilot、ChatGPT等）が生成するコードは開発効率を劇的に向上させる一方で、秘密鍵のハードコードやSSL検証の無効化、不適切なエラーハンドリングといった脆弱性を「もっともらしい体裁」で大量生産するリスクを抱えています。筆者は、AI生成コード特有の「開発者の無批判なコピペ」という生態系に対し、既存ツールやLLMによる不安定な解析ではなく、決定論的な静的解析が必要であると指摘。14カテゴリ・93ルールのパターンを用いて、シェルインジェクションや機密情報の露出を検知する自作のCLIツール「codeheal-scan」を公開しています。この記事は、AIによる「動くが危険なコード」を機械的にチェックする手段を持つことの重要性を説いています。",
+    "topics": [
+      "AIセキュリティ",
+      "静的解析",
+      "脆弱性診断",
+      "LLM",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:42:54.167077+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「court 無限ループ」から、会話を捨てずに復活する（Opus 4.8）",
+    "url": "https://zenn.dev/shotakada/articles/claude-code-opus48-court-loop",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code (Opus 4.8) で発生する「court」等の謎の単語によるツール呼び出し失敗（無限ループ）に対し、文脈を維持したまま復旧・回避するための具体的なテクニックを解説。",
+    "summaryBody": "Claude CodeおよびClaude Opus 4.8環境において、ツール呼び出しの先頭に「court」や「count」といった無関係な文字列が混入し、パースエラーで動作が停止・ループする問題の回避策をまとめています。筆者は、この現象が「ツール呼び出し直前の文章」によって誘発される点に着目。解決策として、謝罪や説明を一切書かせずツール呼び出しのみを再送させる方法や、`/compact` コマンドによる履歴の整理、文章ベースでの詳細な引き継ぎ作成を推奨しています。また、根本的な予防策として `UserPromptSubmit` hook を活用し、毎ターンの入力に「前置きを禁止する指示」を自動注入するシェルスクリプトの実装例も提示しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic Opus",
+      "LLM",
+      "トラブルシューティング",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

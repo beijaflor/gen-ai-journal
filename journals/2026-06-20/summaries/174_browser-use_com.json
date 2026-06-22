@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:10:04.802691+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クラウドブラウザを3倍安く、高速にした方法：Firecrackerと入れ子構造VMの最適化",
+    "url": "https://browser-use.com/posts/firecracker-browser-infra",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Browser UseがFirecrackerをEC2上の入れ子構造VMとして運用し、メモリやCPUの低レイヤー最適化を行うことで、コストを1/3に削減しながら高速なブラウザ起動と高いステルス性を実現した技術解説。",
+    "summaryBody": "Browser Useは、クラウドブラウザのコストを1時間あたり0.06ドルから0.02ドルへと削減し、起動時間を大幅に短縮したインフラ刷新の詳細を公開しました。主な技術的改善点は以下の4点です。1. **入れ子構造VMの採用**: AWSのベアメタルではなく通常のEC2上でFirecracker（マイクロVM）を動かす構成により、コスト削減と迅速なスケーリングを両立。2. **メモリ管理の改善**: 入れ子構造特有のページフォールト遅延を解消するため、4KBではなく2MBのラージページを採用し、独自ハンドラ（userfaultfd）でメモリを先読みすることで起動時間を短縮。3. **CPUスケジューリング**: Chromium起動時の負荷バースト時はCPUを固定せず、安定稼働後に物理コアの兄弟スレッドへピン留めする2段階の戦略により、1ホストあたりの収容密度を向上。4. **ステルス性の維持**: JavaScriptの書き換えではなくChromium自体を低レイヤーでパッチし、数万件の実デバイス指紋を適用することで、ボット検知回避率81%以上という最高水準のスコアを達成。今後はブラウザ起動済みの状態でのスナップショット化により、さらなる高速化を目指しています。",
+    "topics": [
+      "Firecracker",
+      "Virtualization",
+      "Chromium Optimization",
+      "Cloud Infrastructure",
+      "Anti-Bot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "How We Made Cloud Browsers 3x Cheaper and Faster"
+  }
+}

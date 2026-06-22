@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-16T07:43:09.899805+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OSSの「AI社員だけの会社」OneManCompany を動かしてみる ~Microsoft Foundry のモデルで~",
+    "url": "https://zenn.dev/nomhiro/articles/omc-azure-foundry",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが自律的に組織として働くOSS「OneManCompany」を、Microsoft FoundryのOpenAI互換APIを用いて動作させる設定手順と検証結果のまとめ。",
+    "summaryBody": "本記事は、AIエージェントを社員に見立てて自律的な組織運営を実現するOSS「OneManCompany (OMC)」を、Microsoft FoundryのLLM（gpt-5.4-nano/mini想定）で動かす手順を解説したチュートリアルです。OMCはCEO（人間）のタスク指示に対し、EAやCOOなどのAI社員が役割分担して成果物を作成する「一人会社のOS」を目指すプロジェクトです。\n\n主な解説ポイントは以下の通りです：\n- **設計構造**: 実行コンテナである「Vessel」と、能力パッケージである「Talent」を分離し、LangChain/LangGraphで制御する仕組みを紹介。\n- **連携方法**: OMCの`custom`プロバイダ設定を活用し、Microsoft Foundryのv1 API（Bearer認証）をOpenAI SDK互換として接続する方法を詳解。\n- **環境構築**: Windows環境での`uv`を用いたセットアップや、初期化ウィザードの不具合を補完するための`.env`ファイルへの手動追記手順。\n- **実証**: 実際にブログ記事の執筆タスクを投げ、エージェントが自律的にプロジェクトを進行し、Markdownファイルを生成する一連の流れをログ付きで公開しています。",
+    "topics": [
+      "OneManCompany",
+      "Microsoft Foundry",
+      "Azure",
+      "LangChain",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

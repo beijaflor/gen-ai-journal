@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-17T02:59:47.468276+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "North Mini Code: Cohere初のエージェント指向コーディング特化型モデルの発表",
+    "url": "https://cohere.com/blog/north-mini-code",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cohereは、30BパラメータのMoEアーキテクチャを採用し、Apache 2.0で公開されたエージェント指向の軽量・高速なコーディング特化型モデル「North Mini Code」を発表しました。",
+    "summaryBody": "Cohereが開発者向けに設計した初のオープンソースモデル「North Mini Code」を公開しました。このモデルはMixture-of-Experts (MoE) アーキテクチャを採用しており、総パラメータ数30Bのうち、推論時にアクティブなのは3Bのみという極めて効率的な設計が特徴です。主なポイントは以下の通りです。1. **高い性能と効率**: 単一のH100 GPU (FP8) で動作可能でありながら、SWE-benchやTerminal Benchなどのベンチマークで同等サイズのモデルを凌駕する性能を示します。2. **エージェント能力への最適化**: コード生成のみならず、サブエージェントのオーケストレーション、システムアーキテクチャの設計、コードレビューなどの自律的タスクに特化しています。3. **開発者の自由度**: Apache 2.0ライセンスにより、オンプレミスやローカル環境での展開が可能です。競合モデルと比較して最大2.8倍のスループットを実現しており、コスト効率と開発速度の向上に寄与します。256Kのロングコンテキストにも対応しています。",
+    "topics": [
+      "Cohere",
+      "LLM",
+      "コーディングエージェント",
+      "オープンソース",
+      "MoE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "North Mini Code: Agentic Coding Model for Developers | Cohere"
+  }
+}

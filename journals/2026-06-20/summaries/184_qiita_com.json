@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-19T01:12:42.586641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Open WebUIを動かす #Docker",
+    "url": "https://qiita.com/KazuhisaFujita/items/2df0d2bfa8e12d22817a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Dockerを用いてOpen WebUI、SearXNG、外部Ollamaを連携させ、Web検索機能を備えたローカルLLMチャット環境を構築する手順の解説。",
+    "summaryBody": "この記事では、Dockerを使用してOpen WebUIの実行環境を構築し、Web検索機能を統合する実践的な方法を解説しています。主な特徴は、GPUを搭載した外部サーバー上のOllamaにSSHトンネル経由で接続する構成と、ローカルで動作する検索エンジンSearXNGを組み合わせている点です。docker-compose.ymlの具体的な設定から、SearXNGのsettings.ymlの調整、さらには検索結果を効果的に処理するためのLLMのModelfile設定（コンテキスト長やプロンプトの最適化）まで、実用的なワークフローが網羅されています。",
+    "topics": [
+      "Open WebUI",
+      "Docker",
+      "Ollama",
+      "SearXNG",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
