@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:09:38.096399+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "巨大な差分のあるコードレビューこそAIを活用すべき理由",
+    "url": "https://simianwords.bearblog.dev/you-should-use-ai-for-reviewing-code-especially-when-the-diff-is-huge/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "大規模なプルリクエストのレビューにおいて、人間は一行ずつのロジック確認をAIに任せ、自分たちはAIが持たない背景知識や設計意図の検証に注力すべきである。",
+    "summaryBody": "1万行を超えるような巨大なコード差分（diff）は人間によるレビューのボトルネックとなる。筆者は、人間が一行ずつコードを精査して細かなミスを指摘する時代は終わったと主張する。AIは脆弱性の検出や論理的な不備の特定において、すでに人間を凌駕する性能を見せているからだ。レビュアーが真に提供すべき価値は、AIやコード作成者が知らない「分布外（Out Of Distribution）」の知識である。例えば、会議で決まった特定のサービスの非推奨化、コードベース固有の設計原則、将来的なアーキテクチャの方向性などがこれに当たる。人間はプロンプトを通じてこれらのメタ情報をAIに与え、高レベルな設計の不整合を確認する役割にシフトすべきである。ただし、組み込みシステムのように一行のミスが致命的となる分野は例外となり得る。",
+    "topics": [
+      "コードレビュー",
+      "AIエンジニアリング",
+      "LLM",
+      "ソフトウェア開発効率",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    },
+    "originalTitle": "You should use AI for reviewing code especially when the diff is huge – Simian Words"
+  }
+}

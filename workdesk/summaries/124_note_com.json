@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:20:45.940364+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "寝てても動くGemini。「Workspace Studio」が一般公開！Gmail、Drive、スプシを早速自動化してみた",
+    "url": "https://note.com/on_consul/n/n103dc815653d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Google Workspace Studioが個人のGemini有料プランユーザー向けに開放され、GmailやDriveと連携した指示不要の「放置型」自動化ワークフローの構築が可能になりました。",
+    "summaryBody": "Googleのワークフロー自動化ツール「Workspace Studio」が、Google AI Pro（Geminiの個人向け有料プラン）ユーザーでも利用可能になりました。本記事では、Googleドライブへのファイル保存やGmailの受信をトリガーとして、AIが自動で内容抽出やデータ記録を行う「指示待ちではない」自動化の具体例を解説しています。主な検証事例として、レシート画像のアップロードからOCRを経てスプレッドシートへ自動記帳する流れや、NotebookLMと連携したメール返信案の作成などが紹介されています。Zapier等の外部ツールとの比較では、Google圏内で完結する導入の容易さとコストメリットを強調。一方で、ファイル名変更などの細かい制御にはGASとの組み合わせが必要な点や、将来的な実行回数制限、デバッグの難しさといった実運用上の懸念点についても正直にレビューされており、AIをチャットツールから日常のインフラへ変える可能性を提示しています。",
+    "topics": [
+      "Workspace Studio",
+      "Gemini",
+      "Google Apps Script",
+      "業務自動化",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

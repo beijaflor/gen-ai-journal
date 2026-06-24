@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:07:58.837335+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントの「スキル」を正しく活用する方法：SkillsBenchへの反論と実践的アプローチ",
+    "url": "https://notes.ansonbiggs.com/youre-probably-using-agent-skills-wrong/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの「スキル」は実行前に生成させるのではなく、困難な課題を解決した後の知見の永続化や、プロジェクト固有の反復作業の自動化に活用すべきであると解説する記事。",
+    "summaryBody": "Claude Codeなどのエージェント機能における「スキル」の誤用について、最新のベンチマーク論文『SkillsBench』の結果を引用しながら考察しています。論文では「モデル自身が生成したスキルは無効」と結論付けられていますが、著者は「タスク実行前にスキルを作成させる」という手法がそもそも誤りであると指摘。これは単なる『思考プロセス（Thinking Blocks）』の非効率な再現に過ぎません。本来のスキル活用は、一度苦労して解決した問題から得た「知識のギャップ」を記録すること、あるいはCI監視やドキュメント整合性の確認といった「頻繁に繰り返す定型作業」を外部知識として持たせることにあります。スキルを「新規性の記録」と「反復の回避」という2つの目的に絞ることで、エージェントの能力を最大限に引き出せると説いています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "SkillsBench",
+      "自律型エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "You're probably using Agent Skills wrong"
+  }
+}

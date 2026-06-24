@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:10:59.511466+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ロール混同としてのプロンプトインジェクション",
+    "url": "https://role-confusion.github.io",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プロンプトインジェクションの本質は、LLMがセキュアな役割タグではなく執筆スタイルに基づいて役割を誤認する「ロール混同」にあることを解明し、思考プロセスを偽装する新たな攻撃手法を提示した研究。",
+    "summaryBody": "本研究は、大規模言語モデル（LLM）におけるプロンプトインジェクションの根本原因が、モデル内部での「役割（ロール）の認識不全」にあることを明らかにしている。LLMは入力を単一のトークン列として処理しており、`&lt;user&gt;`や`&lt;tool&gt;`といった役割タグを厳密な境界としてではなく、単なる推論の手がかりとして扱っている。著者らは「ロール・プローブ」手法を用いて、モデルが各トークンをどの役割に属すると認識しているかを定量化。その結果、LLMはタグそのものよりもテキストの執筆スタイルに強く反応し、タグとスタイルが矛盾する場合、後者を優先して役割を誤認することが判明した。\n\nこの知見に基づき、モデルの思考プロセス（Chain of Thought）を偽装して高い信頼を奪取する「CoT Forgery（思考偽装）」という新たな攻撃手法を提案し、その有効性を実証した。既存の防御策が攻撃パターンの暗記に依存しているため脆弱であると指摘し、役割の境界を構造的に分離する「真の役割認識」の必要性を説いている。また、役割の概念を拡張し、潜在的な感情による操作（Subconscious steering）や、計画・評価といった新しい役割の導入によるモデル性能の向上についても展望を述べている。",
+    "topics": [
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "ロール混同",
+      "内部表現解析",
+      "Chain of Thought"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Prompt Injection as Role Confusion"
+  }
+}

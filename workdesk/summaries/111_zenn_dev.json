@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:16:51.068776+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングではコードではなく検証プロセスをレビューする",
+    "url": "https://zenn.dev/mkj/articles/56245f7a34539c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングにおける品質担保の鍵は、コードそのものの目視確認よりも、AIエージェントにE2Eテストやデプロイまでを完遂させる「検証プロセス」の設計と管理にある。",
+    "summaryBody": "松尾研究所によるAIコーディングの実践的知見をまとめた記事。AIによる自動生成が加速する中で、品質を安定させるための4つの問いを軸に解説している。1.エージェントにE2Eテストやデプロイ後の検証まで担わせる環境構築、2.コードの細部はAIレビューに任せ、人間は業務ロジックや性能、非機能要件に注力する役割分担、3.成功したコンテキストを再利用可能なinstructions.mdとして資産化する運用、4.設計書と実装PRのレビューバランス、といった具体的な方法論を提示。AIは時に検証をショートカットするという特性を前提に、開発プロセス全体を再定義することの重要性を説いている。",
+    "topics": [
+      "AIコーディング",
+      "コードレビュー",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "品質管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

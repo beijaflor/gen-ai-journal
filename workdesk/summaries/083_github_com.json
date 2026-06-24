@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:09:23.935533+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI CodexのSQLiteログによる過剰なディスク書き込み問題（年間約640TB）",
+    "url": "https://github.com/openai/codex/issues/28224",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAI CodexがSQLite形式のログに年間約640TBもの過剰な書き込みを行い、SSDの寿命を急速に消耗させる深刻なパフォーマンス問題が報告されました。",
+    "summaryBody": "OpenAI CodexのCLIおよびデスクトップアプリにおいて、ローカルのSQLiteログファイル（`~/.codex/logs_2.sqlite`）へ極めて大量のデータが書き込まれる問題が特定されました。ユーザーの分析によると、21日間の稼働で約37TBの書き込みが発生しており、これは年間換算で約640TBに相当します。この数値は一般的な消費者向けSSDの書き込み保証容量（TBW）を1年足らずで使い果たすレベルです。原因は、デフォルトのログレベルが`TRACE`に設定されており、WebSocketの生ペイロードやOpenTelemetryのミラーイベント、inotifyのスパム的なイベントなど、低付加価値な情報が大量に記録されていたことにあります。現在、この問題はバージョン0.142.0および0.143.0向けにマージされた複数のプルリクエストによって、ログの約85%を削減することで解消されています。暫定的な回避策として、SQLiteのトリガー機能を用いてログの挿入を強制的にブロックするコマンドも共有されています。",
+    "topics": [
+      "OpenAI Codex",
+      "SSD Endurance",
+      "SQLite",
+      "Performance Optimization",
+      "Logging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Codex SQLite feedback logs can write ~640 TB/year and rapidly consume SSD endurance · Issue #28224 · openai/codex · GitHub"
+  }
+}

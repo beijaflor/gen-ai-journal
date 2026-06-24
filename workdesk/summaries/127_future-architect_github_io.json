@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:21:43.467771+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントスキルを評価する仕組みを作ってみる",
+    "url": "https://future-architect.github.io/articles/20260622a/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの「スキル」が処理時間やトークン消費に与える影響を、Codex SDKを用いた自作ベンチマークで定量的に評価・検証した試みの記録。",
+    "summaryBody": "AIエージェントの特定のタスク実行手順を定義する「スキル」の有効性を定量評価するため、Codex SDKを用いたベンチマーク環境（codex-skill-bench）を構築・検証した記事です。まず、AGENTS.md、MCP、Skillsの役割の違いを整理し、スキルが「特定タスクのノウハウ共有」や「コンテキスト効率」において優れている点を指摘しています。検証では、単純なタスク（ライセンス付与）と複雑なタスク（データ集計）を比較。その結果、単純なタスクではモデルの素の能力で解決できるためスキルの恩恵は少ないものの、複雑なタスクではスキルを定義することでトークン消費量と処理時間を劇的に削減できることが示されました。また、キャッシュヒットによるコスト削減（1/10程度）の重要性に触れ、将来のエンジニアには人月だけでなく「AIの予想トークン数」を見積もる能力が求められる可能性についても考察しています。",
+    "topics": [
+      "AIエージェント",
+      "Codex",
+      "MCP",
+      "ベンチマーク",
+      "トークン最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

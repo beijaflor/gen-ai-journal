@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:07:24.021368+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのトークン費用問題は「アイデンティティ」の課題である",
+    "url": "https://workos.com/blog/ai-agent-token-costs-identity-attribution",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる予測不能なトークン消費コストを抑制するには、各エージェントに個別のIDを付与し、認可レイヤーで利用コストの帰属を明確化する「アイデンティティ管理」のアプローチが不可欠である。",
+    "summaryBody": "AIエージェントの導入により、企業のトークン消費コストが予算を数ヶ月で使い果たすほど爆発的に増加する事例が相次いでいる。本記事では、コスト管理が困難な理由として、消費の非線形性、財務部門からの不可視性、帰属の不明確さの3点を挙げ、これらは従来のFinOpsツールでは解決できないと指摘する。解決策として、認証・認可の仕組み（アイデンティティ・レイヤー）を計器として活用することを提言。具体的には、1. エージェント個別のクレデンシャル発行、2. ツールレベルでの細粒度な認可設定、3. セッション境界による時間制限、の3つの実装により、どのエージェントがどのタスクでコストを発生させたかを構造的に把握・制御できると論じている。AIガバナンスの鍵は後付けのダッシュボードではなく、設計段階での認可アーキテクチャにあるという主張である。",
+    "topics": [
+      "AIエージェント",
+      "トークンコスト",
+      "アイデンティティ管理",
+      "FinOps",
+      "認可アーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "The token bill is an identity problem"
+  }
+}

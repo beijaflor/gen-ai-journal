@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:21:18.598813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bot作成のプルリクエストが承認によりワークフロー実行可能に",
+    "url": "https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "github-actions[bot]が作成したプルリクエストにおいて、書き込み権限を持つユーザーの承認を条件にCI/CDワークフローの実行が可能になりました。",
+    "summaryBody": "GitHub Actionsにおいて、`github-actions[bot]`が作成したプルリクエスト（PR）からCI/CDワークフローを実行できるよう改善されました。従来、セキュリティ上の理由からBotによるPRではワークフローが実行されず、CIを通さないままマージされるリスクがありましたが、本アップデートによりリポジトリへの書き込み権限を持つユーザーが承認することで実行が許可されます。これはGitHub Copilotが生成したPRの挙動と一致するものであり、自動生成されたコードに対しても適切なテストと安全確認を行えるようになります。",
+    "topics": [
+      "GitHub Actions",
+      "CI/CD",
+      "Security",
+      "Pull Request",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Bot-created pull requests can run workflows if approved - GitHub Changelog"
+  }
+}

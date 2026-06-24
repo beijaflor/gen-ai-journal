@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:14:17.411434+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発のセキュリティツール、結局なにを入れればいい？",
+    "url": "https://qiita.com/udowanllc/items/42635251d8e2641cb50c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI駆動開発におけるリスクを9カテゴリに分類し、開発規模（レベル1〜3）に応じた具体的な推奨ツールとCI/CDへの組み込み方を詳説した実践ガイド。",
+    "summaryBody": "AI駆動開発特有のセキュリティリスクに対し、具体的なツール選定と導入の優先順位を解説する記事です。対策を9つのカテゴリ（シークレットスキャン、SCA、slopsquatting対策、汎用SAST、AI生成コード特化SAST、ライセンス、Content Exclusion、DAST、LLMゲートウェイ）に分け、組織の成熟度に応じた3段階のロードマップを提示しています。\n\n主なポイントは以下の通りです：\n- **2層防御の推奨**: シークレットスキャン（Gitleaks + TruffleHog）やSCA（Socket + Snyk）のように、速度重視のローカルチェックと深さ重視のCIスキャンを組み合わせる手法を推奨。\n- **AI特化型対策**: AIの幻覚による不正パッケージ混入（slopsquatting）を防ぐSocketや、プロンプトインジェクション等を検知するSemgrepのAI Securityルールパックの活用。\n- **運用の徹底**: 単にツールを導入するだけでなく、GitHubのブランチ保護設定による「品質ゲート」の構築や、AI利用を明記するPRテンプレートの導入など、プロセス面でのガードレール構築の重要性を強調。\n\n2026年時点の最新トレンドを踏まえ、一人開発から金融・医療などの高セキュリティ領域まで対応した網羅的な内容となっています。",
+    "topics": [
+      "AI駆動開発",
+      "DevSecOps",
+      "セキュリティツール",
+      "GitHub Actions",
+      "Semgrep"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

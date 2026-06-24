@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:16:19.001775+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code に「7人の意地悪なQA」を仕込んでテストケースの観点漏れを潰した",
+    "url": "https://zenn.dev/nexta_/articles/be13a2395a5d2a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeに「7人の意地悪なQA」ペルソナと、新機能・移行案件で分けた2系統の専用スキルを組み込むことで、AIが生成するテストケースの網羅性と品質のバラツキを解消した事例。",
+    "summaryBody": "Claude Codeを活用してテストケース作成を自動化する際、正常系への偏りや、新機能・移行案件での品質のバラツキを解決するための具体的な手法が解説されています。中核となるのは「7人のQAペルソナ」の導入で、新人ユーザーから悪意ある操作者、データ整合性監査役まで、異なる視点を持つ役割をAIに演じさせ、各ペルソナに最低1つは確認観点を残させることで網羅性を担保しています。また、仕様の出どころが異なる「新機能（PBIベース）」と「既存機能の移行」でスキルを分離し、期待結果の精度を高めるためにMCP経由でソースコードやスキーマを直接参照させる仕組みを構築。さらに、ISO 25010の品質特性をCSV列に含めることで観点の偏りを可視化し、「分からないことは推測で書かない」という制約を課すことで、AIによるハルシネーションを抑制しながら実用的なテスト設計を実現しています。",
+    "topics": [
+      "Claude Code",
+      "QAエンジニアリング",
+      "テスト設計",
+      "LLM",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:14:01.278149+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "触ってみたら今まで「途中で止まる・自己申告完了」が当たり前だったのが嘘みたいになった — GOAL-Loop Skill の設計とデモ",
+    "url": "https://qiita.com/shahin0809/items/37ce6b2e8799677b2493",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの「途中で止まる」「勝手に完了にする」問題を、受入基準の固定と外部シグナルによる評価ループで解決するフレームワーク「GOAL-Loop Skill」の解説とデモ。",
+    "summaryBody": "GitHub CopilotやClaude CodeなどのAIエージェントに複雑なタスクを最後まで完遂させるための設計指針「GOAL-Loop Skill」を紹介する記事です。従来のエージェントが陥りやすい「迷走」や「自己都合による完了報告」を防ぐため、本スキルは以下の特徴を持ちます。1. 最初に検証コマンドを含む受入基準を合意・固定（Freeze）する。2. テストや静的解析の終了コード（Exit Code）という外部シグナルで客観的に評価する。3. 同じ失敗を繰り返さないための教訓テーブルや、小規模から試す Small-Bet-First 戦略を導入する。4. 7つのフェーズと2つの帳簿（Task/Progress Ledger）で進捗を厳密に管理する。記事ではPythonプロジェクトの非同期化を例に、エージェントが自律的にエラーを修正しながらタスクを完遂する様子が実演されており、実務におけるエージェント活用の精度を劇的に高める手法として非常に有用です。",
+    "topics": [
+      "AIエージェント",
+      "GitHub Copilot",
+      "プロンプトエンジニアリング",
+      "LLM",
+      "GOAL-Loop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}
