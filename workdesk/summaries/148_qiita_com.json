@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:13:26.480087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code コンテキスト管理パターン集：need-to-know だけ読ませる設計",
+    "url": "https://qiita.com/nogataka/items/99b1ea9ba20877d54dba",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのコンテキスト消費を抑え、精度を維持するための「need-to-know原則」に基づく6つの管理パターンを体系化したガイド。",
+    "summaryBody": "Claude Codeを利用する開発者が直面する「コンテキスト不足」や「精度の低下」を解決するための、情報の取捨選択（need-to-know原則）に基づく設計パターン集です。具体的には、CLAUDE.mdの常時読み込みを減らす『オンデマンド読込』、重いタスクを別セッションで処理する『サブエージェントへの委譲』、複数の視点を別エージェントに分担させる『観点分担』、特定の行や見出しのみを抽出する『部分読み込み』、委譲先に前提知識を伝える『コンテキスト注入マニフェスト』、フェーズごとに会話をリセットする『セッション分割』の6つを解説しています。これらを活用することで、トークン消費を抑えつつ、長時間にわたる複雑な開発作業においてもLLMの推論精度を高く保つことが可能になります。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "AIエージェント",
+      "コンテキスト管理",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

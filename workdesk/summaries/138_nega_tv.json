@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:10:21.545765+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エルデンリングにおける「ローテク」なAI実装の仕組み",
+    "url": "https://nega.tv/posts/low-tech-ai-of-elden-ring.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エルデンリングのAIは、高度なプランニング技術ではなく、Havok Scriptを用いたプッシュダウン・オートマトン（PDA）によるシンプルかつ制御性の高い設計で構築されている。",
+    "summaryBody": "### 概要\n本記事は、フロム・ソフトウェアが『エルデンリング』や過去のソウルシリーズで採用しているAI設計を、逆コンパイルされたHavok Script（Luaベース）の解析を通じて技術的に解説しています。一見複雑なボスの挙動が、実は「ローテク」かつ効率的なシステムで制御されていることを明らかにしています。\n\n### 技術的特徴\n- **プッシュダウン・オートマトン (PDA)**: 有限状態マシン（FSM）を拡張し、状態をスタック管理するPDAを採用。これにより、上位の「Goal（目標）」を維持しながら一時的なサブアクション（攻撃、接近など）を柔軟に差し込む階層的な制御を実現しています。\n- **アニメーション駆動のロジック**: 挙動の多くはアニメーションと密接に結びついており、スクリプト側からは「アニメーション再生」を指示し、当たり判定やタイミングはアニメーション側のイベントが担当します。\n- **割り込み（Interrupt）システム**: プレイヤーの呪文詠唱やアイテム使用、被ダメージといったイベントを検知し、現在のGoalを破棄して即座に反撃行動へ移る仕組みが備わっています。\n\n### 結論\nGOAPや複雑なビヘイビアツリー（BT）のようなモダンなトレンドを追わず、デザイナーやアニメーターの意図を直接反映しやすい「命令的」な実装を突き詰めることで、あの独特な戦闘体験が生まれていると考察されています。",
+    "topics": [
+      "Game AI",
+      "Elden Ring",
+      "Software Engineering",
+      "Havok Script",
+      "FromSoftware"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Low-Tech AI Of Elden Ring"
+  }
+}

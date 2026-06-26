@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:15:37.187608+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeがSOC業務を全自動でやってくれるってさ - ZOZO TECH BLOG",
+    "url": "https://techblog.zozo.com/entry/soc-claude-agent",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとMCPを活用し、SplunkやOpenCTIと連携してセキュリティアラートの初動対応を全自動化する「SOC Agent」の構築と運用事例。",
+    "summaryBody": "ZOZOの情報セキュリティ部が、Claude Codeを用いてSOC（Security Operations Center）の初動対応（Tier1）を自動化する「SOC Agent」を構築した事例を紹介しています。このエージェントは、MCP（Model Context Protocol）を介してSplunkからログデータを、OpenCTIから脅威インテリジェンスをそれぞれ取得・分析します。設計上の工夫として、特定のタスクに特化したSubAgent（opencti-agent, log-search-agent）を並列起動する構成を採用。セキュリティ確保のため、Hooks機能を用いた読み取り専用権限の強制や1Password CLIによる安全な認証情報管理も実装されています。Slackと連携した定期実行により、24時間体制での未処理アラート検知とトリアージ結果の投稿を実現し、少人数体制でのSOC運用の効率化と平準化に大きく寄与しています。",
+    "topics": [
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "SOC",
+      "Splunk",
+      "セキュリティ自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

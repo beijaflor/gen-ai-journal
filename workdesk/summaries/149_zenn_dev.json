@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:13:44.108178+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "46リポジトリに跨るコードベースを、静的解析で一つのナレッジグラフにした話（前編）",
+    "url": "https://zenn.dev/aircloset/articles/a7cf65cc035572",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "46個のリポジトリに分散したコードベースを、tree-sitterやTypeScript Compiler、Geminiを用いた静的解析によって一つのナレッジグラフに統合し、リポジトリを跨ぐ依存関係を可視化した事例の紹介。",
+    "summaryBody": "エアークローゼット社における、大規模かつ多様なフレームワーク（jQueryからNestJSまで）が混在する46リポジトリのコード解析事例です。単なるLLMへのコード提供ではコンテキスト制限やハルシネーションが発生するため、tree-sitterを用いたAST解析、TypeScript Compiler APIによる型解決、そしてGeminiを組み合わせ、API・DB・Eventといった「境界ノード」を抽出・接合するナレッジグラフ「code-graph」を構築しました。構築過程では、命名規則の揺れや動的なエンドポイント解決の困難さが詳述されており、これらを正規化して接続率99%を目指す取り組みがなされています。現在は日次で境界の接続率を監視し、AIによる影響範囲調査の「事実基盤」として運用されていますが、セマンティック検索の欠如やノード爆発といった構造的な課題も提示されています。",
+    "topics": [
+      "静的解析",
+      "ナレッジグラフ",
+      "LLM",
+      "TypeScript",
+      "tree-sitter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

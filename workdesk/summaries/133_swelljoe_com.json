@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:08:40.348136+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Will It Mythos? — セキュリティ脆弱性検知における最新LLMのベンチマーク比較",
+    "url": "https://swelljoe.com/post/will-it-mythos/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの強力な脆弱性検知モデル「Mythos」に対抗し、GPT-5.5やQwen 3.6などの最新LLMがどれほど複雑なセキュリティバグを特定できるかを独自に検証したベンチマーク報告。",
+    "summaryBody": "### 概要\n本記事は、Anthropicが「強力すぎる」として限定公開している脆弱性検知モデル「Mythos」の真価を確かめるべく、筆者が独自のベンチマークを構築して検証した結果をまとめたものです。Mythosが発見した既知の難解な脆弱性（9件）をデータセットとし、GPT-5.5 Pro、Claude Opus/Sonnet、Gemini 3.5、Qwen 3.6、DeepSeek v4、Gemma 4などの主要モデルに、ヒントなしでバグを発見できるかテストしました。\n\n### 主な分析結果\n- **Mythosの性能**: 検証された公開モデルのどれもが、Mythosが発見したバグのうち4つを特定できず、Mythosの優位性（あるいは推論コストの高さ）が裏付けられる形となりました。\n- **意外な高パフォーマー**: Qwen 3.6 (27B) や Gemma 4 MoE が、より大規模なモデルや米国製モデルを凌駕する精度を見せ、特にQwenは偽陽性が極めて少なく実用的であると評価されました。\n- **中国系モデルの躍進**: MiMoやDeepSeekは、Claude OpusやGPT-5.5と同等の性能を約10分の1のコストで実現しており、コストパフォーマンスが圧倒的です。\n- **ガードレールの障壁**: GoogleのGemini（agy）などは、セキュリティ分析の要求自体を拒否する傾向が強く、実務利用において大きな妨げとなっている点が指摘されています。\n\n### 結論\n現状ではMythosが依然として最高峰である可能性が高いものの、公開モデルも適切なプロンプトやツールと組み合わせることで、難解な脆弱性を発見できるポテンシャルを十分に持っていることが示唆されました。",
+    "topics": [
+      "LLM",
+      "セキュリティ脆弱性",
+      "ベンチマーク",
+      "Mythos",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Will It Mythos? - I've done some things"
+  }
+}

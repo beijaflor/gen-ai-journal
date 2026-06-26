@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:15:54.143514+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS DevOps Agentを入れる前に決めたいログ配信と調査起動の設計",
+    "url": "https://zenn.dev/simplex/articles/d61859ac20ab31",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWS DevOps Agentの自律的調査を実運用に乗せるため、ログ・メトリクス観測の設計手法と、コストや調査枠を守るための「入口制御」の重要性を具体的に解説したガイド。",
+    "summaryBody": "AWS DevOps Agentを単なるチャットツールではなく、インシデント発生時に自律的に動くエージェントとして活用するための運用設計について解説しています。主な焦点は「観測設計」と「起動制御」の2点です。観測面では、CloudWatchメトリクスによる利用状況の把握に加え、Vended Logsを用いたログ配信（S3/CloudWatch Logs）のAWS CDKによる実装方法を紹介。起動制御面では、アラーム過多によるコスト増を防ぐため、Lambdaを用いた冪等化や月間利用時間のAPI（get-account-usage）チェック、同時調査数の制限（Service Quotas）を考慮した「軽量なインシデント管理」の仕組みを提案しています。AIが人の介入前に一次切り分けを完了する理想的な運用のための、実用的なプラクティスがまとめられています。",
+    "topics": [
+      "AWS DevOps Agent",
+      "AWS CDK",
+      "Amazon CloudWatch",
+      "DevOps",
+      "運用設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

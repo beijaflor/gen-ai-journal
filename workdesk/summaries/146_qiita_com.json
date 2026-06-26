@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:12:45.380643+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの性能向上・劣化を可視化したい！",
+    "url": "https://qiita.com/yo_arai/items/8ed5cd2a153b5ad0dbf3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの性能変化を客観的に把握するため、X（旧Twitter）のユーザー投稿を感情分析し時系列で可視化するシステムの構築を試みた実験レポート。",
+    "summaryBody": "筆者は、日々変化を感じるClaude Codeの性能を可視化するため、まず固定タスクによるベンチマークを試みたが、難易度設計の困難さから断念した。その後、SNS上のユーザーの「体感」を収集・分析するアプローチへ転換。形態素解析を用いた辞書ベースの判定と、Claude自身によるLLMベースの感情分析（速度、品質、知能、信頼性、コストの5観点）を組み合わせ、エンゲージメント加重平均による「性能インデックス」を算出するダッシュボードを構築した。定性的な声を数値化する仕組みを実現したものの、X APIの高額なコストが実運用上の大きな壁となることも明らかにしている。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM性能評価",
+      "感情分析",
+      "SNS分析"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 75
+    }
+  }
+}

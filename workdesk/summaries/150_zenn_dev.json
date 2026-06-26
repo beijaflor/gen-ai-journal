@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:14:00.686338+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のナレッジ管理手法 - Googleの「OKF」を解説",
+    "url": "https://zenn.dev/knowledgesense/articles/14a874a9f423bb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが提唱する「OKF（Open Knowledge Format）」について、MarkdownにYAMLメタデータを付与してAIの検索性を高める軽量なナレッジ管理手法を解説。",
+    "summaryBody": "Google Cloudチームが提案した「OKF（Open Knowledge Format）」は、AIエージェントやRAG（検索拡張生成）での利用を最適化するためのナレッジ管理仕様です。主な特徴は、Markdownファイルの冒頭にYAML形式で「type」などのメタデータを記述するという極めてシンプルなルールにあります。背景には、LLMによる全自動ナレッジ管理（LLM Wiki等）が抱える「情報の質の低下」や「データの属人化」という課題があり、OKFは「人間による最小限の構造化」と「AIによる高度な検索」のバランスを取ることを目指しています。記事内では架空の製品開発を例に、メタデータによる定義、概念間のリンク、そしてAIエージェントによる複数ファイルにまたがる推論デモを紹介しており、将来的な社内ナレッジの統一フォーマットとしての可能性を提示しています。",
+    "topics": [
+      "OKF",
+      "RAG",
+      "ナレッジマネジメント",
+      "Google Cloud",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:07:15.483555+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GoogleのADKとA2Aプロトコルを用いたクロスランゲージ・マルチエージェント・チームの構築",
+    "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GoogleのAgent Development Kit (ADK)とAgent2Agent (A2A)プロトコルを活用し、PythonとGoのように異なる言語で構築されたエージェント間を連携させ、堅牢な契約遵守パイプラインを構築する方法を解説しています。",
+    "summaryBody": "この記事では、本番環境のAIシステムにおける「エージェントのモノリス化」による性能劣化やテストの困難さを解決するため、エージェントをマイクロサービス化するアーキテクチャを提案しています。Googleが提供するAgent Development Kit (ADK)とオープン標準のAgent2Agent (A2A)プロトコルを用いることで、Python（Geminiによる契約書抽出）とGo（決定論的なポリシー検証）という異なる言語で開発されたエージェント同士を、HTTP経由でシームレスに連携させる手法を示しています。主な技術的ポイントとして、エージェントの能力を定義する「Agent Card」によるディスカバリ、JSON-RPC 2.0を用いた通信、ADKの`RemoteA2aAgent`による抽象化、そして一部のエージェントが停止してもシステム全体を落とさないフェイルセーフ設計（マニュアルレビューへの移行）が挙げられます。これにより、各チームが得意な言語で専門性の高いエージェントを構築しつつ、信頼性の高いマルチエージェント・オーケストレーションを実現できます。",
+    "topics": [
+      "Agent Development Kit (ADK)",
+      "Agent2Agent (A2A) Protocol",
+      "Multi-agent Systems",
+      "Gemini API",
+      "Cross-language Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Build Cross-Language Multi-Agent Team with Google’s Agent Development Kit and A2A"
+  }
+}

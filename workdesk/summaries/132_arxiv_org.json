@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:08:22.714444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VibeThinker-3B: 小規模言語モデルにおける検証可能な推論のフロンティアの探索",
+    "url": "https://arxiv.org/abs/2606.16140",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "30億パラメータという極めて小規模なモデルながら、独自の学習パイプラインにより、数学やプログラミングの推論性能で巨大モデル（DeepSeek V3.2やGemini 3 Pro）を凌駕する性能を達成した研究。",
+    "summaryBody": "本技術レポートは、3B（30億）パラメータのコンパクトな高密度モデル「VibeThinker-3B」を通じて、小規模モデルにおける検証可能な推論能力の限界を調査したものである。「Spectrum-to-Signal」ポストトレーニング・パラダイムを基盤とし、カリキュラム学習ベースの教師あり微調整（SFT）、マルチドメイン強化学習（RL）、およびオフライン自己蒸留を組み合わせた高度なパイプラインを採用している。実験の結果、AIME26で94.3、LiveCodeBench v6で80.2 Pass@1を記録し、最新のLeetCodeコンテストでも96.1%の正答率を達成。これは、DeepSeek V3.2やGemini 3 Proといった、パラメータ数が数桁多いフラッグシップモデルに匹敵、あるいは一部で上回る性能である。著者はこの成果に基づき、「推論能力はコンパクトなコアに圧縮可能だが、広範な知識の網羅には膨大なパラメータが必要である」とする『パラメータ圧縮・網羅仮説（Parametric Compression-Coverage Hypothesis）』を提唱。小規模モデルが高性能推論における単なる軽量代替品ではなく、独自の進化パスであることを示唆している。",
+    "topics": [
+      "VibeThinker-3B",
+      "SLM (小規模言語モデル)",
+      "検証可能な推論",
+      "強化学習",
+      "モデル圧縮"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models"
+  }
+}

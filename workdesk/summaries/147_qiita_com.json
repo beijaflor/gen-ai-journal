@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:13:07.136174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人開発で AI デスクトップ作ったら、チャットから cron / 並列バッチ / 編集可能な .pptx まで吐けるようになった",
+    "url": "https://qiita.com/gen99/items/b5ee04644ff6da7e7671",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "自然言語からのcronスケジュール登録、大規模並列バッチ処理、さらにVision-LLMによる視覚的修正ループを備えた編集可能なPowerPoint生成までを実現する、ローカル完結型AIエージェント「Praxia Desktop」の紹介。",
+    "summaryBody": "個人開発者によって公開された「Praxia Desktop」は、Windows向けの高度なローカルAIワークスペースです。Tauri 2 (Rust/Svelte) とPython (FastAPI) を組み合わせたアーキテクチャにより、以下の特徴的な機能を提供します。1) **自動化**: 「毎週月曜に資料を要約」といった自然言語の指示をPOSIX cron式に変換し、承認制でタスクを自動実行。2) **並列バッチ**: 大量のPDF等に対し、LLMプロバイダのレート制限を考慮しながら並列処理を行い結果を集約。3) **編集可能なPPTX生成**: `python-pptx`でスライドを生成するだけでなく、Vision-LLMがレイアウト崩れ等を視覚的にチェックし、自動でコードを修正・再実行する「自己修正ループ」を搭載。4) **ローカルファースト**: 会話履歴やドキュメントはすべてローカル保存。Ollama等を用いることで完全オフライン動作も可能。さらに、20種以上のSaaS連携やMCP (Model Context Protocol) への対応など、実用性と拡張性を兼ね備えた設計となっています。",
+    "topics": [
+      "Python",
+      "AIエージェント",
+      "ローカルLLM",
+      "Tauri",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

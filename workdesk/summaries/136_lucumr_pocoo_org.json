@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:09:39.840344+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "The Coming Loop - 開発エージェントの「外部ループ」がもたらすソフトウェア開発の変容",
+    "url": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "開発エージェントを自律的に制御する「ハーネス・ループ」の普及が、ソフトウェアを理解可能な「機械」から、診断のみが可能な「有機体」へと変容させている現状と課題を考察する。",
+    "summaryBody": "Flaskの作者として知られるArmin Ronacher氏が、コーディングエージェントの次なる段階である「ハーネス・ループ（Harness Loop）」について考察した論考。エージェントが単独でタスクを行うのではなく、外部のシステムがエージェントを監視し、目的が達成されるまで試行を繰り返させる「ループ」が主流になりつつある。筆者は、この手法がコードの理解可能性（Comprehensibility）を損なうことに強い懸念を示している。AIが生成するコードは、不変条件（Invariants）を無視して過剰に防御的なパッチを当てる傾向があり、ループが繰り返されることで「理解不能だが動くスロップ（Slop）」が蓄積される。ソフトウェアは決定論的な「機械」から、症状を観察して処置するしかない「有機体」へと変化しつつある。しかし、セキュリティ攻撃や開発競争の観点からこの流れを拒否することは難しく、今後は人間の判断力やエンジニアリングの原則をいかに維持し、ループを管理可能な状態に保つかが問われると主張している。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "Code Quality",
+      "Harness Loops",
+      "Future of Programming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Coming Loop"
+  }
+}

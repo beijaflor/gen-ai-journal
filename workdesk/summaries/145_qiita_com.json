@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:12:32.139453+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code セキュリティガードレール 実装テンプレ集 — コピペで使える settings.json と hook スクリプト",
+    "url": "https://qiita.com/nogataka/items/bab35c7b58a664d3b8f1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの自律的な動作に伴う破壊的・機密流出リスクを抑えるため、設定ファイルやフックスクリプトを用いた具体的なセキュリティ実装テンプレートを紹介する記事です。",
+    "summaryBody": "Claude Codeを安全に運用するための「動くコード」に焦点を当てた実装ガイドです。主な対策として以下の4点を紹介しています。\n\n1.  **最小権限の設計**: `settings.json`の`permissions`セクションで`allow`（ホワイトリスト）と`deny`（ブラックリスト）を組み合わせ、`rm -rf`や`force push`などの危険な操作をグローバル・プロジェクト単位で制限します。\n2.  **PreToolUseフックによる遮断**: ツール実行直前に発火するフックスクリプトを用いて、Bashコマンドのパターンマッチングを行い、`exit 2`を返すことでAIの独断による破壊的コマンドを強制キャンセルさせます。\n3.  **確認ゲートの実装**: `/dev/tty`を利用して、`git push`や`npm publish`などの不可逆または外部送信を伴う操作の前に、人間が対話的に承認・拒否できる仕組みを導入します。\n4.  **機密情報流出の防止**: `.claudeignore`によるファイル除外、`PostToolUse`フックでのステージング済みコンテンツのスキャン、および`CLAUDE.md`へのプロンプト指示による多層的な防御策を解説しています。\n\n「AIを縛るのではなく、人間が判断すべき境界を設計する」という思想に基づき、運用コストを抑えつつ安全性を高めるTipsがまとめられています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "AIエージェント",
+      "ガードレール",
+      "Qiita"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
