@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:25:26.470546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FastWan-QAD: RTX 5090で5秒の動画を1.8秒で生成可能にする量子化意識蒸留技術",
+    "url": "https://haoailab.com/blogs/fastwan-qad/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "UCSDのHao AI Labが、量子化意識蒸留（QAD）を用いてRTX 5090上で5秒の480p動画を1.8秒で生成する高速ビデオ生成モデル「FastWan-QAD」を公開しました。",
+    "summaryBody": "FastVideoチームは、Wan2.1-T2V-1.3Bをベースにした新しい高速ビデオ生成モデル「FastWan-QAD」をリリースしました。このモデルは「Quantization-Aware Distillation (QAD)」という新しい学習手法を採用しており、低ビット量子化（NVFP4およびFP8）に伴う品質低下を蒸留プロセスで補完しながら、サンプリングをわずか3ステップに短縮しています。\n\n主な技術的特徴は以下の通りです：\n1. **ハードウェア最適化量子化**: NVIDIA RTX 5090のネイティブNVFP4テンソルコアを最大限に活用し、線形レイヤーとアテンションの両方を低ビット化。RTX 4090向けにはFP8版も提供。\n2. **SageAttentionの統合**: SageAttention3 (FP4) または SageAttention2++ (FP8) を採用し、アテンションの計算密度を維持したまま高速化。\n3. **カーネル融合とコンパイル**: LayerNormやAdaLNなどの小さな演算を1つのカーネルに融合。さらにモデル全体をコンパイルすることでPythonランタイムのオーバーヘッドを排除。\n4. **高速デコーダー**: VAEのボトルネックを解消するため、軽量なオートエンコーダー「TAEHV」を採用。\n\nこれにより、従来のTurboDiffusionやLightX2Vを大きく上回る推論速度を実現しており、Apache-2.0ライセンスでウェイトとコードが公開されています。",
+    "topics": [
+      "FastVideo",
+      "Quantization-Aware Distillation",
+      "RTX 5090",
+      "Video Generation",
+      "NVFP4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "FastWan-QAD: FastVideo generates a 5-Second Video in 1.8 Seconds on a Single NVIDIA GeForce RTX 5090 via Quantization-Aware Distillation"
+  }
+}

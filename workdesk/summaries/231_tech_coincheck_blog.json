@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:54:16.322142+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex を使って障害対応の机上演習をやってみよう",
+    "url": "https://tech.coincheck.blog/entry/codex-ttx",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのCodexをゲームマスターとして活用し、システム構成や過去事例に基づいた臨場感のある障害対応机上演習（TTX）を自動化する取り組みの紹介。",
+    "summaryBody": "障害対応能力を向上させる「机上演習（TTX）」において、システムのアーキテクチャや過去事例に精通した進行役（ゲームマスター）の確保が困難であるという課題を解決するため、コーディングエージェント（Codex）を活用した自動化システムを構築しました。\n\n### システムの仕組みと特徴\n- **自動進行**: Codexがゲームマスターとなり、SlackやTUIを通じて対応者からの質問に回答し、情報を段階的に開示します。\n- **シナリオ準備**: FTA（故障木解析）やFMEA、既存の手順書からAIが「理想タイムライン」と「想定問答集」を生成し、事前レビューを経て演習に使用します。\n- **動的な分岐**: 対応者の行動や判断の遅れに応じて、事態が悪化するなどの分岐をリアルタイムにシミュレート可能です。\n\n### 導入の成果\n運用コストを1回あたり数百円程度に抑えつつ、「胃が痛くなる」ほどの高い臨場感を実現。開発もClaude Codeの活用により11営業日で運用開始というスピード感で進められました。本仕組みはGitHubで公開されており、他チームでも容易に導入可能です。",
+    "topics": [
+      "障害対応",
+      "机上演習 (TTX)",
+      "Codex",
+      "SRE",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

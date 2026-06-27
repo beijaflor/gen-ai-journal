@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:15:50.387397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代の開発は「検証力」で決まる：Flava API Gateway が学んだ高速な動作検証と環境戦略",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-223",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントの速度を活かすため、仕様駆動開発、自動検証、およびNix/Devenvによる高速なローカル環境構築を組み合わせた新しい開発戦略の実践例を紹介しています。",
+    "summaryBody": "LINEヤフーの「Flava API Gateway」開発チームが、AIエージェントによるコーディングを前提とした開発手法について詳説しています。AI開発においてボトルネックとなる「出力の不安定さ」や「CI待ち時間」を解消するため、以下の3点に注力しています。\n\n1. **仕様駆動開発 (OpenSpec/Nickel)**: 実装前にOpenAPI仕様と差分仕様を固め、エージェントの予測可能性を向上。\n2. **自動化された検証ループ**: テストとリンターをエージェントに直接実行させ、ミスを即座に自己修正させるTDD的なアプローチを導入。\n3. **Nix/DevenvによるHermeticな環境**: PostgreSQLやAthenz認証を含む全依存関係をローカルで数秒で検証可能にし、AIの試行錯誤を加速。\n\n「AIは品質向上の努力も手抜きも増幅する」という洞察に基づき、従来以上に厳格かつ高速な検証基盤がAI時代の競争力になると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "仕様駆動開発",
+      "Nix",
+      "devenv",
+      "OpenAPI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:20:51.480845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のコードレビューは人に向けるな、仕組みに向けろ",
+    "url": "https://zenn.dev/manalink_dev/articles/ai-coding-era-review-to-dev-process-not-human",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI（Claude Code等）がコードを書く時代、レビューの焦点を「人のミス」から「不適切なコードを出力・通過させた仕組みの改善」へとシフトし、検証プロセスを資産化する重要性を説く。",
+    "summaryBody": "AIがコード実装の多くを担う現代において、コードレビューの在り方を根本から再定義する論考。不適切なコードが発見された際、開発者個人のスキル不足を理由にするのではなく、どのツール、プロンプト、あるいはCIプロセスがそのコードを許容してしまったのかという「仕組み」の観点で振り返ることを推奨している。Claude Codeを例に、実装指示からリモート送信までの全体像を整理し、決定的なルール（Lintやテスト）と推論ベースのスキル（Agent Skill）を組み合わせた防御策の構築を提案。モデルの性能に一喜一憂せず、独自の検証基盤を育てることこそがAI時代のエンジニアリング組織における真の資産になると主張している。",
+    "topics": [
+      "AI開発",
+      "コードレビュー",
+      "Claude Code",
+      "エンジニアリング組織",
+      "生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

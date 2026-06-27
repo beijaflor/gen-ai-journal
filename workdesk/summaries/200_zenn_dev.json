@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:18:21.785506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "E2E テストを読めるカタログにする ― AI 時代の振る舞い管理",
+    "url": "https://zenn.dev/loglass/articles/1b8129c8f28b37",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによる自動生成が加速する開発環境において、システムの振る舞いを人間が保証し続けるために、Kotlin DSLで書かれたE2EテストからMarkdown仕様書を自動生成するログラス社の取り組みを紹介しています。",
+    "summaryBody": "AIがコードを書く時代、実装の詳細は複雑化し人間がすべてを追うことは困難になりつつあります。株式会社ログラスでは、人間が責任を持つべき「システムの振る舞い」を管理するため、E2Eテストを仕様カタログとして活用する仕組みを構築しました。\n\n具体的には、Kotlin DSLでテスト定義（データセット、初期値、期待値など）を記述し、そこからMarkdownを自動生成するジェネレーターを自作。生成されたMarkdownはGitHub上で人間が読みやすい形式となり、プルリクエスト時の仕様レビューやPdMとの合意形成を容易にします。\n\n運用の肝として、lefthookによるコミット前の生成強制と、CIでの生成物一致チェックを組み合わせ、コードとドキュメントの乖離を構造的に防いでいます。この仕組みにより、AIが生成したコードの正しさを「振る舞い」の側面から確実に保証でき、AIへの文脈提供にも役立つという相乗効果を生んでいます。",
+    "topics": [
+      "E2Eテスト",
+      "AI開発",
+      "ドキュメント自動生成",
+      "Kotlin",
+      "テスト設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

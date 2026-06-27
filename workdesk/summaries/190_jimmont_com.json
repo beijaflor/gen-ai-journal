@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:14:07.250996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMコード生成のトークンコスト削減：ネイティブWeb APIとプロンプト設計の重要性",
+    "url": "https://www.jimmont.com/llm-style-token-costs",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMにネイティブWeb APIの使用を明示的に指示することで、出力トークンを最大90%削減し、コードの安全性と信頼性を劇的に向上させる方法を分析している。",
+    "summaryBody": "LLMが生成するコードは、学習データの傾向から古いNode.js風のパターンや冗長な手動実装になりやすく、これが高価な出力トークンの浪費を招いています。筆者は、Denoやモダンブラウザが提供する標準的なWeb API（URLSearchParams, FormData, AbortSignal.timeout, Promise.allSettled等）を積極的に活用するようプロンプトで指示することを推奨しています。これにより、出力トークン数を劇的に減らせるだけでなく、プロトタイプ汚染やメモリリークといったセキュリティ上のリスクも回避できます。また、研究データを引用しながら、コメントは「何をしているか」ではなく「なぜそうしたか」という設計意図に絞るべきであり、古いコメントはLLMの理解をかえって阻害すると指摘しています。コードのフォーマットによる入力コスト削減も有効ですが、最大のレバレッジはネイティブAPIの採用による出力の最適化にあると結論づけています。",
+    "topics": [
+      "LLM",
+      "Web API",
+      "Token Optimization",
+      "Cost Efficiency",
+      "Deno"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "What I’m Finding About LLM Code Style and Token Costs"
+  }
+}

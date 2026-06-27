@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:18:48.954164+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人のプロンプト術をやめて、チームで回るAI駆動開発ループを作った話",
+    "url": "https://zenn.dev/explaza/articles/d0aeb08fcd1888",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "個人の職人芸的なプロンプト操作を排し、AIが自律的に調査・質問・計画・実装を繰り返す「Loop Engineering」をチームに導入して開発効率を劇的に改善した事例。",
+    "summaryBody": "エクスプラザ社による、AI駆動開発を個人のスキルからチームの資産へと昇華させる「Loop Engineering」の実践記録。従来の「人間がAIのループを回す」状態から脱却するため、調査・質問・計画・実装・レビューを一貫して行うSkill「interview-dev-loop」を開発した。特に、実装前に「実在する曖昧性（Material Ambiguity）」を定義してAIが人間にインタビューする工程を重視。また、調査・計画担当と実装担当のエージェントを分けることでコンテキストの純度を高めている。導入後2ヶ月で、1,000行あたりのレビュー指摘数が約77%減少するという具体的な成果を上げ、開発者が「仕様やユーザー価値を考える時間」を増やすことに成功した。汎用版はGitHubで公開されている。",
+    "topics": [
+      "AI駆動開発",
+      "Loop Engineering",
+      "Claude Code",
+      "チーム開発",
+      "エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

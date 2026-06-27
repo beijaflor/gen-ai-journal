@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:26:02.063320+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Transformer比で最大475倍のスループットを実現する新アーキテクチャ「PHOTON」を富士通が開発",
+    "url": "https://global.fujitsu/ja-jp/technology/research/article/topics/202606-photon-architecture",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "富士通が開発した新アーキテクチャ「PHOTON」は、意味単位の階層処理によりTransformer比で最大475倍の推論効率と大幅なメモリ削減を実現する。",
+    "summaryBody": "富士通は、大規模言語モデル（LLM）の推論コストを劇的に削減する新アーキテクチャ「PHOTON（Parallel Hierarchical Operation for TOp-down Networks）」を開発した。従来のTransformerがトークン単位ですべての関係を計算するのに対し、PHOTONは文章を意味のまとまりとして捉え階層的に処理することで、計算量とKVキャッシュのメモリ使用量を大幅に削減する。実験では、1.2BパラメータモデルにおいてGPUあたりのマルチクエリー性能が最大475倍に向上した。また、複数の並列出力を統合する「マルチクエリー統合技術」を組み合わせることで、わずか9クエリーの統合で従来のTransformerと同水準の精度を維持しつつ、高速な推論が可能になる。本技術は自然言語処理のトップカンファレンスであるACL 2026で発表される予定であり、生成AIの社会実装におけるコストと消費電力の課題解決が期待される。",
+    "topics": [
+      "LLM",
+      "PHOTON",
+      "推論高速化",
+      "Transformer",
+      "富士通"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

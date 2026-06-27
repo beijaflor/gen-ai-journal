@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:26:58.593908+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SNSとAIから来た人、中身はこんなに違う。GA4で流入の“質”を見比べてみた",
+    "url": "https://www.hatena.ne.jp/ownedmedia/article/ga4-ai-vs-sns",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GA4に新設された「AIアシスタント」チャネルを活用し、SNSとAIからの流入におけるユーザー行動の差異を分析する方法と、クローラー計測の補完策を解説。",
+    "summaryBody": "Googleアナリティクス4（GA4）の2026年5月のアップデートにより、デフォルトチャネルグループに「AIアシスタント（AI Assistant）」が追加されました。本記事では、この機能を活用してSNSとAI流入の「質」の違いを可視化する手法を紹介しています。\n\n### SNS流入とAI流入の特性\n- **SNS流入**: タイムライン上での偶発的なクリックが多く、流入数は稼げるものの、滞在時間や回遊率が低い傾向にあります。\n- **AI流入**: ChatGPT等の回答から参照元として訪れるため、目的意識が明確で滞在時間が長く、コンバージョン（資料請求等）に繋がりやすいのが特徴です。\n\n### GA4での分析手法\n比較機能を用いて「Organic Social」と「AI Assistant」を並べ、平均エンゲージメント時間、セッションあたりのページ数、キーイベント率、ランディングページの4指標を分析します。これにより、流入元に応じたコンテンツ改善の打ち手が明確になります。\n\n### AIクローラーの捕捉\nGA4ではJavaScriptを実行しないAIクローラー（GPTBot等）を捕捉できないため、サーバーのアクセスログを抽出。Claude Code等のAIツールでログを解析し、どのAIがどのページを読んでいるかを把握する「二段構え」の分析を推奨しています。",
+    "topics": [
+      "GA4",
+      "生成AI",
+      "SNS分析",
+      "アクセス解析",
+      "アクセスログ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:05:08.375224+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ランタイム分析情報を活用: エージェント向け Chrome DevTools のサードパーティ デベロッパー ツールを導入",
+    "url": "https://developer.chrome.com/blog/devtools-for-agents-3p-tools",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがWebフレームワークの内部状態やランタイム情報を直接取得・操作できるようにする、Chrome DevToolsの新しいサードパーティツール拡張機能が登場しました。",
+    "summaryBody": "### 概要\nGoogleは、AIエージェントによるWebアプリケーションのデバッグ効率を向上させるため、Chrome DevToolsにサードパーティ製デベロッパーツールを統合する機能を導入しました。最新のWeb開発では抽象化が進んでおり、DOMだけでは把握できないフレームワーク内部の状態（コンポーネント階層、Signal、DIグラフなど）が重要です。この新機能により、ライブラリ開発者がAIエージェント専用の診断ツールを提供できるようになります。\n\n### 技術的仕組み\n- **Discovery API**: `devtoolstooldiscovery`イベントを通じて、ページ上のライブラリが自身のツール定義（名称、説明、入力スキーマ）をDevTools MCPサーバーに通知します。\n- **MCP (Model Context Protocol) 連携**: エージェントはMCP経由で利用可能なツールをリストアップし、`execute_3p_developer_tool`を呼び出して、ページの実行コンテキストでツールを動かします。\n- **高度な操作**: `evaluate_script`を使用することで、複数のステップを組み合わせたデバッグや、シリアル化不可能なDOM要素を含む複雑な処理をページ内で完結させることが可能です。\n\n### 実装例と展望\nAngularチームとの協力により、無限ループの特定に役立つ「シグナルグラフツール」や、静的解析では困難なプロバイダーエラーを特定する「依存性注入（DI）グラフツール」が既に実装されています。Reactチームとも実験が進められており、AI主導のデバッグ体験を根本から変えるプラットフォームを目指しています。",
+    "topics": [
+      "Chrome DevTools",
+      "AI Agent",
+      "MCP (Model Context Protocol)",
+      "Debugging",
+      "Web Frameworks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

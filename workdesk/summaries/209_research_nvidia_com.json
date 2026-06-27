@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:21:09.633830+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ArtiFixer：自己回帰型拡散モデルによる3D再構成の強化と拡張",
+    "url": "https://research.nvidia.com/labs/sil/projects/artifixer/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAの研究チームが提案したArtiFixerは、自己回帰型拡散モデルと独自の不透明度ミキシング戦略により、未観測領域を含む高品質な3D再構成を大規模かつ一貫性を持って実現します。",
+    "summaryBody": "NVIDIA Researchが発表した「ArtiFixer」は、3D Gaussian Splattingなどの手法で課題となっていた未観測領域のアーティファクトと、既存の拡散モデルベース手法の拡張性の低さを解決する新しいパイプラインです。本手法は2つのフェーズで構成されています。第1段階では、不透明度マップを活用して既存の観測データと整合性を取りつつ未知領域を補完する「不透明度ミキシング戦略」を用いた双方向ビデオ拡散モデルを学習します。第2段階では、このモデルを自己回帰型モデルへと蒸留することで、数百フレームの一括生成を可能にしました。評価実験では、MipNeRF 360やDL3DVなどのデータセットにおいて、従来手法を1～3 dB上回るPSNRを達成し、極めてスパースな視点からの再構成でも破綻の少ない、幾何学的に妥当な結果を示しています。",
+    "topics": [
+      "3D Reconstruction",
+      "Diffusion Models",
+      "3D Gaussian Splatting",
+      "NVIDIA Research",
+      "Computer Vision"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "ArtiFixer: Enhancing and Extending 3D Reconstruction with Auto-Regressive Diffusion Models"
+  }
+}

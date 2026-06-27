@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:23:10.387201+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Krea 2 技術報告書：多様な美的表現と創造的制御を実現する次世代画像生成モデル",
+    "url": "https://www.krea.ai/blog/krea-2-technical-report",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Krea 2は、多様なスタイルと高い制御性を両立させるため、独自のデータキュレーション、改良型DiTアーキテクチャ、および多段階の強化学習パイプラインを統合した画像生成基盤モデルです。",
+    "summaryBody": "Krea 2は、既存の画像生成モデルが「特定の洗練されたデフォルトのスタイル」に収束しがちな課題を解決し、クリエイターが多様なスタイルや構図を探索できる「表現のエンジン」として設計されました。\n\n主な技術的特徴は以下の通りです：\n1. **アーキテクチャ**: SwiGLU、GQA、gated sigmoid attention、RMSNormを採用した改良型Diffusion Transformer (DiT)を構築。テキストエンコーダにはQwen 3 VLを採用し、レイヤー間特徴集約を行うことで高度な理解を実現しています。\n2. **データパイプライン**: プリトレーニングからAI生成画像を完全に排除し、多様性と世界知識を重視したキュレーションを実施。独自のデータ管理システム「krablet」により、大規模な非同期処理を可能にしています。\n3. **多段階学習**: プリトレーニング、ミッドトレーニング、SFT、選好最適化（STPO）、およびマルチリワードGRPOスタイルの強化学習（RL）を組み合わせた高度なポストトレーニングを実施しました。\n4. **制御システム**: ユーザーの短い入力を詳細な視覚記述に拡張する「プロンプト・エキスパンダー」と、参照画像からスタイルを抽出・混合できる「スタイル・レファレンス・システム」を搭載しています。\n\nまた、報告書内ではWekaファイルシステムの活用や、FSDP2を用いた大規模分散学習におけるGPU・InfiniBandのトラブルシューティングなど、インフラ面での実践的な知見も詳細に公開されています。",
+    "topics": [
+      "画像生成",
+      "Diffusion Transformer",
+      "強化学習 (RLHF)",
+      "機械学習インフラ",
+      "基盤モデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "Krea 2 Technical Report"
+  }
+}
