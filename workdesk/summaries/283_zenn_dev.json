@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:59:56.188579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "会議中に Claude が“次に聞くべきこと”を提案してくれる議事録アプリを作った",
+    "url": "https://zenn.dev/uguisu_blog/articles/d777bd252bab6b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AmiVoiceによるリアルタイム文字起こしとClaudeによるロール別フィードバック機能を備えた、会議支援Webアプリの技術構成と実装の工夫を解説した記事。",
+    "summaryBody": "本記事では、Next.js、AmiVoice API、そしてClaudeを組み合わせた次世代の議事録アプリ「AI-Giziroku」の開発プロセスが詳説されています。主な特徴は、会議中に「営業」や「エンジニア」といった特定の視点から次に確認すべき事項をリアルタイムに提案する機能です。技術的には、Web Audio API（AudioWorklet）を用いたブラウザ側でのPCM変換とWebSocket送信、AmiVoiceの話者ダイアライゼーション機能による複数話者の分離、Claudeのプロンプトキャッシュを活用した低遅延なフィードバック生成が鍵となっています。また、認識セッションを再開する際に画面共有ダイアログの再表示を避けるためのストリーム管理や、Next.jsの`after()`を用いた非同期な議事録生成など、実用性を高めるための細かなUX設計についても言及されています。",
+    "topics": [
+      "Claude",
+      "AmiVoice",
+      "Next.js",
+      "音声認識",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:56:03.037034+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenRouter MCPサーバーの提供開始：AIエージェントに最新のモデル情報と推論機能を提供",
+    "url": "https://openrouter.ai/blog/announcements/openrouter-mcp-server/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenRouterは、AIエージェントが最新のモデル性能、価格、ベンチマーク、ドキュメントに直接アクセスし、最適なモデル選定とテスト実行を可能にするMCPサーバーをリリースしました。",
+    "summaryBody": "OpenRouterが、AIエージェントや開発ツール向けの新機能として「OpenRouter MCP (Model Context Protocol) サーバー」を正式にリリースしました。従来、AIエージェントは自身の訓練データに含まれる古い情報に基づいてモデルを選択していましたが、このMCPサーバーを導入することで、最新のモデルスペック、リアルタイムの価格設定、Artificial AnalysisやDesign Arenaによるベンチマークランキングを直接取得できるようになります。\n\n主な特徴とツール：\n- **モデル選定の最適化**: `models-list`や`benchmarks`ツールを使用し、予算や要件（コンテキスト長、価格、性能）に最適なモデルをエージェントが自律的に提案します。\n- **直接テスト実行**: `chat-send`機能により、エージェントは複数のモデルへ同時にプロンプトを送信し、回答の質やコスト、レイテンシを比較検討できます。\n- **開発効率の向上**: `docs-search`によるドキュメント検索や、プロバイダーごとの詳細確認がエディタ内から可能です。\n- **セキュアな認証**: OAuthフローにより、7日間の有効期限と$10の利用上限が設定された専用APIキーが発行されるため、安心してエージェントに権限を付与できます。\n\nClaude Code、Cursor、Codex CLIなどの主要な開発ツールに対応しており、開発フローにおけるモデル選定の試行錯誤を大幅に削減します。",
+    "topics": [
+      "OpenRouter",
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "LLMベンチマーク",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The OpenRouter MCP Server"
+  }
+}

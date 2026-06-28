@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:06:05.670695+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIステアリング・レイヤー：ブランドと品質を維持するためのAI設計手法",
+    "url": "http://www.lukew.com/ff/entry.asp?2155",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIモデルの出力を組織のブランドや技術標準に適合させるため、ツールとコードベースの間にコンテキストを制御する「ステアリング・レイヤー」を構築する設計手法の提案。",
+    "summaryBody": "### 概要\\nLuke Wroblewski氏が提唱する「AIステアリング・レイヤー（AI Steering Layer）」は、AIモデルの出力を特定のブランド指針やデザイン、コーディング規約に適合させるための設計思想です。AIは多種多様な出力を生成できますが、製品開発においては一貫性が不可欠であり、このレイヤーが適切な「文脈（Context）」をAIに提供し、出力を制御する役割を果たします。\\n\\n### ステアリング・レイヤーの構成要素\\nこのレイヤーは、ツール（UI）とコードベースの中間に位置し、以下のような要素で構成されます。\\n- **ガイドラインと参照画像**: ブランドのスタイルや色彩、使用ルールを定義。\\n- **プロンプトの書き換え**: AIモデルへの指示を自動的に最適化し、ブランドに沿った出力を誘導。\\n- **リトリーバル・システム（RAG）**: 質問に対して最適な文脈を動的に検索・適用する仕組み。\\n\\n### 実践的な利点\\n- **チーム全体の整合性**: デザイナーやPMがAIエージェントを用いてWebサイトを更新する際、あらかじめ定義された「agents.md」などのルールに自動的に適合（スナップ）されるため、品質が保たれます。\\n- **非開発者の貢献**: UIを通じてこのレイヤーを管理できるようにすることで、開発者以外も品質管理に参加可能になります。\\n- **AI活用の高度化**: AIを単なる補助ツールではなく、設計システムの一部として統合することで、組織全体でのAI活用を高度化します。",
+    "topics": [
+      "AI Steering Layer",
+      "Design Systems",
+      "LLM Context",
+      "Agentic Workflow",
+      "Product Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 50,
+      "overall": 92
+    },
+    "originalTitle": "The AI Steering Layer"
+  }
+}

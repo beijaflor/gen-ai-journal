@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:35:46.202380+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini を Claude の「サブエージェント」に —— 大規模開発でコストを実測",
+    "url": "https://zenn.dev/google_cloud_jp/articles/63205d90345627",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの指揮下でGemini (Antigravity CLI) をサブエージェントとして活用し、開発品質を維持したままコストを最大64%削減するハイブリッド構成の実証レポート。",
+    "summaryBody": "本記事は、Anthropicの「Claude Code」とGoogleの「Antigravity CLI (Gemini)」を組み合わせ、開発コストの最適化を図る手法について解説しています。具体的には、Claude Code用のプラグイン「Antigravity for Claude Code」を開発し、「判断は優秀なClaude、量産はコスパの良いGemini」という役割分担（インテリジェント・モデル・ルーティング）を自動化しました。\n\n実測の結果、大規模な機能開発や一括移行タスクにおいて、Claude単独での実行と比較してコストを27〜64%削減することに成功。さらに、Claude単体では利用が難しいVertex AI Searchを用いた社内データ検索や、複数モデルによるクロスレビュー、Webリサーチといった付加価値も実現しています。トークン消費が激増するエージェント開発において、コンテキストを薄く保ちながら安価なモデルへタスクを委譲する仕組みが、投資対効果を最大化する鍵であることを示しています。",
+    "topics": [
+      "Claude Code",
+      "Gemini",
+      "Vertex AI",
+      "AIエージェント",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

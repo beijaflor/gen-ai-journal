@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:35:02.117511+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを“セキュリティのプロ”に変える817個のスキル集 — Claude Code / Codex / Cursor / Copilot対応OSSを読み解く",
+    "url": "https://qiita.com/nogataka/items/8f99cc6fc97541a14b76",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに専門的なサイバーセキュリティ実務のワークフローを外付けするOSS「Anthropic-Cybersecurity-Skills」の構造と活用法を解説した記事。",
+    "summaryBody": "この記事では、AIエージェント（Claude Code, Cursor等）に817種類ものセキュリティスキルを実装可能にするオープンソースプロジェクト「Anthropic-Cybersecurity-Skills」を詳しく解説しています。各スキルは『SKILL.md』というMarkdown形式で構造化されており、推論の判断フローや実行スクリプトが含まれています。技術的特徴として、トークン消費を抑えるための「段階的読み込み」設計や、MITRE ATT&CK、NIST CSF、さらに最新の金融不正対策フレームワークMITRE F3を含む6つの業界標準へのマッピングが挙げられます。記事は、同プロジェクトがAnthropic公式ではない点やスキル品質のばらつきといった注意点も指摘しつつ、実務への導入判断に役立つ詳細な集計データを提供しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "AIエージェント",
+      "Claude Code",
+      "MITRE ATT&CK",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

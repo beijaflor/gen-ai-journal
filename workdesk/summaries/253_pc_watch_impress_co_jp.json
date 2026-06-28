@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:36:37.416447+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM処理効率を最大475倍にする新技術。富士通が開発",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2119985.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "富士通が開発した新アーキテクチャ「PHOTON」は、文章を意味のまとまりで階層的に処理することで、LLMの推論効率を従来のTransformer比で最大475倍向上させる。",
+    "summaryBody": "富士通は、大規模言語モデル（LLM）の計算コストを劇的に削減する新アーキテクチャ「PHOTON（Parallel Hierarchical Operation for TOp-down Networks）」を発表した。従来のTransformerがトークン単位で関係性を計算しメモリアクセスが増大する課題に対し、PHOTONは文章を「意味のまとまり」として階層的に処理することで計算量を大幅に削減する。さらに、複数の質問結果を統合する「マルチクエリー統合技術」により、1.2Bパラメータのモデルを用いた実験でTransformer比約475倍のマルチクエリ計算能力を実証した。KVキャッシュの使用量も抑制されており、限られたGPUメモリ資源で複数の生成結果を並列に得ることが可能となる。本成果は2026年7月の国際会議ACL 2026にて詳細が発表される予定。",
+    "topics": [
+      "富士通",
+      "LLM",
+      "PHOTON",
+      "AIアーキテクチャ",
+      "計算効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 12,
+      "overall": 93
+    }
+  }
+}

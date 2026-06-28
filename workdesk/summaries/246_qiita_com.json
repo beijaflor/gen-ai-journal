@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:34:45.274493+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを実装して気づいた「ガードレールを敷ける設計力」の重要性",
+    "url": "https://qiita.com/ryuichi000persol/items/27789cbca88bd4bf11e0",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント開発において、プロンプトのみに依存せずシステム側でツールの制限や引数検証、ループ上限設定などのガードレールを設計・実装することの重要性を解説した記事。",
+    "summaryBody": "AIエージェントと従来のLLMの違いは、Function Callingを通じて「自律的」にツールを使いタスクを実行する点にあります。この記事では、AIエージェントが予期せぬ行動（機密情報の取得や無限ループによるコスト増など）をとるリスクに対し、プロンプトによる指示（口頭注意）ではなく、システム設計による物理的な「ガードレール」の構築を提唱しています。具体的には、①必要なツールのみを渡す「ツールの制限」、②ディレクトリトラバーサル等を防ぐ「引数（パラメータ）の検証」、③無限ループを防ぐ「エージェントループの上限設定」の3つの観点から、TypeScriptを用いた実装例と共に安全な設計手法を詳説しています。開発者には、AIの挙動を制御し安全性を担保する「設計力」が今後ますます重要になると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Function Calling",
+      "TypeScript",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

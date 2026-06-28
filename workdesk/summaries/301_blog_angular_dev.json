@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:05:32.390364+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "A2UIの全貌：AIエージェントにアプリのUIを「話させる」方法",
+    "url": "https://blog.angular.dev/demystifying-a2ui-how-to-make-ai-agents-speak-ui-in-your-app-e1ffea2303bd",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "A2UIは、AIエージェントが任意のコードを実行することなく、JSONスキーマを介してリッチで動的なユーザーインターフェースを安全に生成・描画するための通信プロトコルです。",
+    "summaryBody": "この記事では、AIエージェントがユーザーの意図に応じてUIを生成するための新プロトコル「A2UI (Agent-to-UI)」について、開発者の実装視点から解説しています。A2UIは特定のフロントエンドフレームワークに依存しないプロトコルであり、LLM（サーバー側）とアプリ（クライアント側）が共通のスキーマで通信します。サーバー側では、利用可能なUI要素の「カタログ」、生成ガイドラインとしての「UI記述」、Few-shot用の「例」、そしてユーザー操作を処理する「アクションマッピング」を定義します。クライアント側では、これらを受け取り、Angularなどのフレームワークを用いてネイティブに描画します。任意のコードを実行せずにポータブルなUIを実現できるため、セキュリティを維持しつつ高度に動的なアプリケーション体験を構築できる点が特徴です。",
+    "topics": [
+      "A2UI",
+      "Generative UI",
+      "AI Agents",
+      "Angular",
+      "LLM Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Demystifying A2UI: How to Make AI Agents “Speak UI” in Your App"
+  }
+}

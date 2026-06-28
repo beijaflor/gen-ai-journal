@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:09:20.909372+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人が方針を立て AI が自律的に回る開発ループを設計してチーム開発に組み込む",
+    "url": "https://www.wantedly.com/companies/wantedly/post_articles/1073080",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Wantedlyにおける、AWSのAI-DLCを参考に「人が方針を立てAIが自律的に実行する」開発ループの設計と、それをチームの共通認識として組み込む実践手法の解説。",
+    "summaryBody": "本記事では、WantedlyのエンジニアチームがAIを開発プロセスに深く統合するための具体的なアプローチを紹介しています。個人のプロンプト共有に留まらず、AWSが提唱するAI-DLC（AI-Driven Life Cycle）を基盤に、人間が方針提示と検証を担い、AIが自律的に自走する「開発ループ」の設計について解説されています。\n\n主なポイントは以下の3点です：\n1. **AI-DLCによる開発ループの構築**: 変更規模に応じて工程の重さを調整し、要所での人間による検証を組み込むことで、速度と安全性を両立させる設計。\n2. **指摘のルール化とコンテキスト共有**: 人間のレビュー指摘を `AGENTS.md` や `Agent Skills` として言語化・蓄積し、AIが次に参照すべき前提（コンテキスト）を常に更新する仕組み。\n3. **AIフレンドリーな技術選定（ADR）**: AIがコードの文脈を把握しやすいよう、あえて抽象化を抑える、型情報を重視するといった「AIとの協調」を判断軸に加えたADR（Architecture Decision Record）の運用。\n\nAIを単なるツールとしてではなく、チーム開発の自律的なサイクルの一環として機能させるための組織的な設計指針を提示しています。",
+    "topics": [
+      "AI駆動開発 (AI-DLC)",
+      "チーム開発",
+      "Wantedly",
+      "AIエージェント",
+      "ADR (Architecture Decision Record)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

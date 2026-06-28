@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:34:31.346085+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Chrome DevTools for Agentsのトークン消費・実行時間をplaywright-cliと比べてみた #ClaudeCode",
+    "url": "https://qiita.com/y-mae/items/170cd4566e4ad01f969e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google I/O 2026で発表されたChrome DevTools for Agentsのトークン消費量と実行時間をplaywright-cliと比較し、そのコスト効率の高さを実証した検証レポート。",
+    "summaryBody": "この記事では、Google I/O 2026で発表された「Chrome DevTools for Agents」をClaude Codeから利用した際のトークン消費と実行時間を、既存のplaywright-cliと比較検証しています。検証では Qiita記事の見出し構造を取得するタスクを行い、(1)プラグイン接続、(2)デバッグモード接続、(3)Playwrightの3つの手法で計測しました。結果として、プラグイン接続がplaywright-cliと比較してコストを約53%削減し、実行時間も34秒と最短（Playwrightは47秒）を記録。Playwrightがページ全体のスナップショットを取得しトークンを大量消費するのに対し、DevTools for AgentsはJavaScript実行によって必要な情報のみを絞り込めるため、より効率的なエージェント運用が可能であることが示されています。",
+    "topics": [
+      "Chrome DevTools for Agents",
+      "Claude Code",
+      "MCP",
+      "Playwright",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

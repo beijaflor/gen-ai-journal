@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:03:15.465817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにプロダクトデザインを教える：Vercelにおける実践手法",
+    "url": "https://vercel.com/blog/teaching-agents-product-design-at-vercel",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelが、AIエージェントにコードの背後にあるデザイン意図や意思決定の文脈を理解させ、一貫性のある高品質なUIを生成させるためのシステム構築手法を公開。",
+    "summaryBody": "Vercelは、AIコーディングエージェントが「コード（結果）は学習できても、なぜそのデザインになったのかという意図（背景）」を理解できない課題に対し、リポジトリ内に「product-design」スキルを構築して対応しています。この仕組みは、意思決定の背景を定義したドキュメント群（エージェント用スキル）、決定事項を自動で強制するリンター、そしてSlackやGitHubから最新のデザイン判断を収集・反映するレビュー基盤の3要素で構成されます。エージェントは、実装・レビュー・構想といった『モード』に応じて適切なリファレンスを参照し、人間のようなプロダクト判断を伴う出力を生成します。これにより、デザインの一貫性を保ちつつ、エージェントによる開発の高速化を実現しています。",
+    "topics": [
+      "AI Agents",
+      "Vercel",
+      "Product Design",
+      "AI SDK",
+      "Design Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Teaching agents product design at Vercel"
+  }
+}
