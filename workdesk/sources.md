@@ -309,3 +309,4 @@
 - [x] 306. https://mindfuldesign.xyz/by-humans/
 - [x] 307. https://paulkrugman.substack.com/p/why-does-everyone-hate-ai
 - [x] 308. https://trakkr.ai/bias
+- [x] 309. https://recruit.kaonavi.jp/lp/hatena-2606-02/
