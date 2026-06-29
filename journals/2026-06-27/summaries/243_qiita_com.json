@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:34:05.427897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic流「Long-running Agents」から学ぶ、長時間自律稼働AIエージェント設計",
+    "url": "https://qiita.com/miyaguchi_kioku/items/e5e23a22f74c4c2a4773",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicのエンジニアが提唱する、コンテキストの腐敗や評価能力の不足を克服し、数日単位で自律稼働するマルチエージェントシステムの設計思想を解説した記事。",
+    "summaryBody": "Anthropicの応用AIチームが公開した、長時間自律稼働するAIエージェント（Long-running Agents）の構築手法についての要約です。長時間動作時に発生する「Context Rot（文脈の劣化）」や、制限を察知して品質を落とす「Context Anxiety（コンテキスト不安）」、自己評価の甘さといった課題を指摘しています。これらへの対策として、Planner（設計）、Generator（実装）、Evaluator（批判的評価）に役割を分離し、GANのような敵対的関係で品質を高めるマルチエージェント構成を提案。スプリント単位でのコンテキストリセットと、Shared Stateによる状態管理を組み合わせることで、人間が「コードを書く」のではなく「AIが協調して動く仕組みを設計する」次世代の開発スタイルを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "Anthropic",
+      "Claude",
+      "マルチエージェントシステム",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

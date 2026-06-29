@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:15:03.116683+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AI時代のRust設計 ― ドメイン知識を型に埋め込む",
+    "url": "https://qiita.com/fumiya-data/items/3fe1f11b984cc39f40a0",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "生成AIによるコード生成の正当性を担保するため、Rustの型システムを活用してドメイン知識をコンパイル時に検証可能な制約として埋め込む設計手法を解説しています。",
+    "summaryBody": "AIが大量のコードを生成する現代において、生成されたコードがドメインルールを遵守しているかを型システムで保証する重要性を説いています。記事では、お金を「拾う」という例を用い、プリミティブ型、構造体、Newtypeパターン、そしてTypestateパターンへと段階的にリファクタリングする過程を詳述しています。最終的に、特定の状態でしか呼べないメソッドを定義し、所有権を利用して状態遷移を表現することで、AIが誤ったロジック（例：既に拾ったお金を再度拾う）を生成してもコンパイルエラーとして排除できる「ガードレール」としての型設計を提案しています。",
+    "topics": [
+      "Rust",
+      "生成AI",
+      "型システム",
+      "ドメイン駆動設計",
+      "Typestateパターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

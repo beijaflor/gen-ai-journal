@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:11:51.694817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.2をローカルで実行する方法：Unslothによる1ビット/2ビット量子化の活用ガイド",
+    "url": "https://unsloth.ai/docs/models/glm-5.2",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Z.aiの最新モデルGLM-5.2（744B）を、Unslothの動的量子化技術を用いてローカル環境で効率的に実行するための包括的なガイド。",
+    "summaryBody": "Z.aiが開発した大規模オープンモデル「GLM-5.2」をローカル環境で動作させるための詳細なガイドがUnslothから公開されました。GLM-5.2は744Bパラメータ（アクティブ40B）を持ち、100万トークンのコンテキストウィンドウを備え、推論やコーディングにおいてClaude 4.8 OpusやGPT-5.5に匹敵するSOTA性能を発揮します。\n\n本記事の主なポイントは以下の通りです：\n- **Unsloth Dynamic GGUF**: 1ビット（精度約76.2%）や2ビット（精度約82%）といった超低ビット量子化をサポートし、モデルサイズを大幅に削減しつつ高い性能を維持します。\n- **ハードウェア要件**: 2ビット版（UD-IQ2_M）は239GBの容量が必要で、256GBメモリ搭載のMacや、RAMオフロードを併用したGPU環境で動作可能です。\n- **Unsloth Studio**: 直感的なWeb UIを通じて、モデルのダウンロード、推論パラメータの自動調整、ツール呼び出し、コード実行などを簡単に行うことができます。\n- **llama.cppの活用**: コマンドラインでのセットアップ手順や、KVキャッシュの量子化（q4_1等）を利用してコンテキスト長を最大3.5倍に拡張する手法も網羅されています。",
+    "topics": [
+      "GLM-5.2",
+      "Unsloth",
+      "ローカルLLM",
+      "量子化 (Quantization)",
+      "llama.cpp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "GLM-5.2 - How to Run Locally | Unsloth Documentation"
+  }
+}

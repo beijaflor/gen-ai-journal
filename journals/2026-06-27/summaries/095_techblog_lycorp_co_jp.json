@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:22:35.283957+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Infrastructure as Code（IaC）で自動化からAIまで：OpenTofuとChatOps導入記",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-86",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LINEヤフーのSREチームがOpenTofuとTerragruntを活用し、既存の大規模インフラをコード化してAIエージェントによる自動運用までを実現したGitOpsの導入事例。",
+    "summaryBody": "LINEヤフーの社内クラウドサービス「Verda」やモニタリングツール「IMON」におけるIaC（Infrastructure as Code）導入プロセスを詳しく解説した記事です。数百のリソースを手動運用からコード管理へ移行するため、OpenTofuとTerragruntを採用し、自動importスクリプトや正規化プロセスを構築しました。また、HCL（HashiCorp Configuration Language）に不慣れな開発者のために、ブラウザ上でコードを自動生成するChrome拡張機能や、Slackから自然言語でインフラ変更を依頼できるAIエージェント（MCP接続）を導入し、インフラ運用のセルフサービス化と透明性を高めています。これにより、インフラ変更もアプリケーション開発と同様のプルリクエストベースのレビューとCI/CDパイプラインに統合され、運用の信頼性が大幅に向上しました。",
+    "topics": [
+      "Infrastructure as Code",
+      "OpenTofu",
+      "GitOps",
+      "AI Agent",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

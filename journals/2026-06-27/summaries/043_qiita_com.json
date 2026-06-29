@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:28:32.215527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ポートフォリオのライブラリアップデートを dependabot × Claude Code ルーチンで自動化した",
+    "url": "https://qiita.com/Adacchi3/items/758e7c046028241b8525",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "DependabotとClaude Codeを連携させ、CIによるガードレールを構築することで、個人開発の依存関係更新をほぼ全自動化した実践記録。",
+    "summaryBody": "長年運用しているポートフォリオサイトの保守コストを削減するため、DependabotとClaude Codeを組み合わせた自動化ワークフローを構築した事例。DependabotがPRを作成し、CI（ビルドチェックやBiomeのバージョン整合性確認）による「ハーネス」を通過したものを、Claude Codeのルーチン機能で自動レビュー・マージする仕組み。運用を通じて、AIにタスクを委譲するには適切なルール整備が不可欠であることや、モデルが自律的にマージ後の通知などの行動を取るようになるといったAIエージェント特有の挙動が報告されている。マイナー・パッチ更新の自動化により、開発者がより本質的な機能開発に集中できる環境を実現している。",
+    "topics": [
+      "Claude Code",
+      "Dependabot",
+      "GitHub Actions",
+      "CI/CD",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

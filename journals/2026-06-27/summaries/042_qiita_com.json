@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:28:09.520755+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで チーム開発ルール を「覚えるもの」から「自動で守るもの」に変える",
+    "url": "https://qiita.com/rairaii/items/a1b622ff1faf4ca34231",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSkillとGit Hookを活用し、チームの開発ルールを「人が覚える」運用から「AIと機械が自動で守る」仕組みへと転換するツール「team-dev-kit」の紹介。",
+    "summaryBody": "Anthropicが提供するCLIツール「Claude Code」を用いて、チーム開発における規約遵守を自動化する手法を解説しています。筆者が開発した「team-dev-kit」を導入することで、これまで人間が暗記して守っていたコミット規約やブランチ運用、Issue/PRの紐付けなどのルールを、Markdown形式の「Skill」としてAIに認識させ、自動実行させることが可能になります。また、秘密情報の漏洩など「絶対に超えてはいけない一線」は、Gitのpre-commit hook（gitleaks等）で機械的にガードします。この『Skill（導く）』と『Hook（止める）』の二段構えにより、新メンバーのオンボーディングコストを削減し、レビューでの定型的な指摘を排除する開発プロセスを提案しています。記事では具体的な導入手順やカスタマイズ方法についても詳述されています。",
+    "topics": [
+      "Claude Code",
+      "生成AI",
+      "チーム開発",
+      "開発プロセス",
+      "Git Hooks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

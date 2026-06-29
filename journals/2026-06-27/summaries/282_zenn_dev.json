@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:59:41.424550+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "明日から始める、コーディングエージェント時代のフルスタック開発 — AWS Blocks のソースコードを読む",
+    "url": "https://zenn.dev/aws_japan/articles/aws-blocks-source-reading",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWS Blocksの内部構造を解析し、Infrastructure from Code（IFC）が単一のTypeScriptコードからローカルモック、CDK構成、Lambdaランタイムを動的に生成する仕組みを解説しています。",
+    "summaryBody": "2026年6月にパブリックプレビューされた『AWS Blocks』のソースコードを詳細に分析した解説記事です。AWS Blocksは、TypeScriptでバックエンドを記述することでインフラを自動導出するInfrastructure from Code（IFC）フレームワークであり、本記事では特に『KVStore』や『Agent』といったBlockの最小構成から、複雑なコンポジションの仕組みまでを追っています。\n\n鍵となるのはNode.jsのConditional Exportsを利用した設計で、`import`される同一のコードが、実行環境（ローカル、CDK、AWSランタイム）に応じて自動的に実装を切り替える仕組み（index.mock.ts / index.cdk.ts / index.aws.ts）を明らかにしています。また、AIコーディングエージェント（CursorやClaude Code等）に最適化された『AGENTS.md』の同梱や、LLMなしでエージェントをテストできる『CannedProvider』の存在など、開発イテレーションを高速化するための工夫が随所に凝らされています。さらに、Amplify Gen2との統合方法やNested Stackを用いた既存CDK資産との共存についても具体例を挙げて解説されています。",
+    "topics": [
+      "AWS Blocks",
+      "Infrastructure from Code",
+      "AWS CDK",
+      "TypeScript",
+      "AI Coding Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:56:56.257002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【2026年版】 ベクトル検索とEmbedding最前線",
+    "url": "https://speakerdeck.com/mocobeta/2026nian-ban-bekutorujian-suo-embeddingzui-qian-xian",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点における埋め込みモデルの進化、高次元化への対策としてのMRLや、最新の量子化技術TurboQuantなど、ベクトル検索の最適化手法を網羅的に解説しています。",
+    "summaryBody": "本資料は、生成AI時代の検索設計において重要となるベクトル検索と埋め込み（Embedding）モデルの2026年における最新トレンドをまとめたものです。主な内容は以下の4点です。\n\n1. **埋め込みモデルの進化**: BERT時代からLLM時代への変遷を経て、現在は数千次元におよぶ高次元性、多目的、多言語、マルチモーダル対応が主流となっています。Google GeminiやMicrosoft Harrierなどの主要モデルが紹介されています。\n2. **近似最近傍探索 (ANN)**: 実務で重要なアルゴリズムとしてIVF-PQとHNSWを挙げ、それぞれの仕組みを解説しています。\n3. **次元削減 (MRL)**: 高次元化に伴う計算コスト増に対し、ネストしたベクトル構造を持つMatryoshka Representation Learning (MRL) が現在の標準的な解決策として提示されています。\n4. **量子化技術**: 従来のScalar Quantization (int8) に加え、2026年に登場したTurboQuant (4-bit) による極めて高い圧縮率と精度の両立について、実験データに基づいた比較が行われています。特にTurboQuantは、SQと同等の精度を保ちつつストレージ容量を半分に抑えられる点が強調されています。",
+    "topics": [
+      "ベクトル検索",
+      "埋め込みモデル",
+      "Matryoshka Representation Learning",
+      "TurboQuant",
+      "近似最近傍探索 (ANN)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

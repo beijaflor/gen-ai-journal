@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:05:56.765901+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon BedrockのLLM呼び出しコストをApplication inference profileでAI機能別に可視化する",
+    "url": "https://kaminashi-developer.hatenablog.jp/entry/2026/06/23/application-inference-profile",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon BedrockのApplication inference profileとコスト配分タグを活用し、同一モデルを使用する複数のAI機能のコストを機能単位で可視化・分析する手法を解説した記事です。",
+    "summaryBody": "Amazon Bedrockを用いた開発において、複数のAI機能が同一のLLMモデルを呼び出すと、AWS Cost Explorer上でコストを機能別に把握できない課題が生じます。本記事では、2024年11月に追加された「Application inference profile」を活用してこの課題を解決する方法を紹介しています。\n\n具体的には、Terraformを用いたプロファイルの作成、IAM権限の付与、アプリケーション側でのモデルIDからプロファイルARNへの参照切り替え、およびコスト配分タグの有効化という4つのステップで実装可能です。これにより、クロスリージョン推論（Cross-Region inference）のメリットを維持したまま、機能ごとの投資対効果（ROI）を測定できるようになります。\n\n注意点として、タグの有効化は遡及適用されないため初期段階での導入が推奨されることや、プロファイルがモデルと1:1で紐付くため管理対象が増える点などが挙げられています。用途に応じて、IAM principal attributionやリクエスト単位のメタデータタグ付けと使い分けることが重要です。",
+    "topics": [
+      "Amazon Bedrock",
+      "AWS Cost Explorer",
+      "Terraform",
+      "FinOps",
+      "Cost Allocation Tags"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

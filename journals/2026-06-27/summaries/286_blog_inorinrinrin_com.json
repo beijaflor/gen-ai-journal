@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:00:35.903903+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub ActionsでAI to Humanになるようレビューフローをコントロールする",
+    "url": "https://blog.inorinrinrin.com/entry/2026/06/26/164821",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIレビューのスレッドがすべて解決された後にのみ人間のレビュアーを自動アサインすることで、効率的なレビューフローを実現するカスタムGitHub Actionの紹介。",
+    "summaryBody": "GitHub CopilotやCodeRabbitなどのAIレビューツールと人間のレビューが同時に走ることで発生する「重複指摘」や「人間が単純なミスを確認する負担」を解決する手法が提案されています。著者が開発した `assign-reviewers-after-resolve` というGitHub Actionを使用すると、PR上のすべての未解決スレッド（Unresolved Threads）が解決され、特定のラベルが付与されたタイミングで初めて人間にレビュー依頼を飛ばすことができます。GitHub標準の `CODEOWNERS` による即時自動アサインを回避するため、独自の `REVIEWERS` ファイルを使用する運用テクニックや、ランダムアサイン機能、ボットの除外設定などの具体的な導入方法が解説されています。",
+    "topics": [
+      "GitHub Actions",
+      "AI Code Review",
+      "CodeRabbit",
+      "GitHub Copilot",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

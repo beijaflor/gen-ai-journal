@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:22:41.461999+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントフレームワーク eve を試してみた",
+    "url": "https://azukiazusa.dev/blog/ai-agent-framework-eve",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercelが公開したNext.jsの設計思想に基づくAIエージェントフレームワーク「eve」の基本構成から、ツール・スキル・サブエージェントの実装、評価、トレーシングまでを網羅的に解説しています。",
+    "summaryBody": "Vercelが発表した新しいAIエージェントフレームワーク「eve」の実践的なガイド。eveはNext.jsのようにディレクトリ構造でエージェントの機能を定義し、TypeScriptとMarkdownをベースに開発できるのが特徴です。本記事では、SREエージェントの構築を例に、耐久性のあるセッション管理、Human-in-the-loop（人間の承認フロー）、情報を段階的に開示する「スキル」、タスクを専門化させる「サブエージェント」、さらにSlack等のチャットプラットフォームとの統合方法を解説しています。また、AIエージェントの運用に欠かせない定量的な評価（evals）の仕組みや、OpenTelemetryを使用したトレーシングについても詳しく触れており、単なる導入紹介に留まらない、本番運用を見据えた包括的な知見を提供しています。",
+    "topics": [
+      "Vercel",
+      "AIエージェント",
+      "eve",
+      "TypeScript",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

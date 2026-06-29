@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:54:43.114889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JetSpec: 並列木ドラフティングによる投機的デコードのスケーリング限界の打破",
+    "url": "https://haoailab.com/blogs/parallel-tree-decoding/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "因果関係を考慮した並列木構造のドラフティングにより、LLMの推論を最大約10倍高速化しつつ出力品質を完全に維持する投機的デコード手法「JetSpec」が提案されました。",
+    "summaryBody": "従来の投機的デコード（Speculative Decoding）には、ドラフト生成のコストとアクセプト率の間にトレードオフという「スケーリングの壁」が存在していました。JetSpecは、凍結されたターゲットLLMの隠れ状態を利用する軽量な「因果的並列ドラフトヘッド」を導入することでこれを解決します。この手法は、木構造のコーザル・アテンションマスクを用いることで、1回のパスで複数の分岐パスを並列に生成しながらも、各トークンが自身のプレフィックスに依存するというターゲットモデル本来の自己回帰的性質を保持します。結果として、Qwen3-8Bを用いたMATH-500ベンチマークで9.64倍の高速化を達成し、B200 GPU 1枚で約1000 TPSという高いスループットを実現しました。本手法はターゲットモデルの重みを変更せず、vLLMへの統合やカスタムカーネルの実装も行われており、実用性が極めて高いのが特徴です。",
+    "topics": [
+      "LLM",
+      "投機的デコード",
+      "推論最適化",
+      "JetSpec",
+      "vLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting"
+  }
+}

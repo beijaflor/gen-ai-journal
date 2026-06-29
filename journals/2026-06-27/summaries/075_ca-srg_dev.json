@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:07:07.334004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agents を利用して Linear/GitHub Issue で PR 作成からレビューループまで回す方法",
+    "url": "https://ca-srg.dev/37d4358b43f781338772ef7b5a1e1693",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Managed Agentsを活用し、GitHubやLinearのIssueからPR作成、AIレビューへの対応までを自動化する自律型エージェントツール「maestro」の仕組みと実践的な利用法を紹介。",
+    "summaryBody": "CyberAgent SRGが開発した、AnthropicのClaude Managed Agentsを利用した自律型エージェントワークフロー「maestro」の解説記事です。このツールは、IssueのURLを入力するだけでタスクの分解、コード実装、プルリクエスト（PR）の作成、そしてAIレビューによる指摘への修正対応を自律的に繰り返します。\n\n主な特徴は以下の通りです：\n- **Parent/Childの二層構造**: 指令役（Parent）がタスクの分解と管理を行い、実装役（Child）がコード修正に集中する設計により、複雑なIssueへの対応精度を高めています。\n- **レビューループの自動解消**: PRに対してGreptileなどのAIレビューツールが行った指摘を検知し、エージェントが妥当性を判断して自動で修正と再プッシュを行います。\n- **MCP（Model Context Protocol）連携**: MCP経由で外部ツールやドキュメントを参照でき、Web UIからこれらの設定やプロンプトの調整が可能です。\n- **リアルタイム進捗管理**: SSEを用いたWeb UIにより、長時間に及ぶエージェントの作業状況をリアルタイムで追跡できます。\n\nBun、TypeScript、SQLiteで構成されており、ローカルやクラウドでの運用が容易な設計となっています。開発者のコンテキストスイッチを減らし、Issueドリブンな開発を加速させる実践的な試みです。",
+    "topics": [
+      "Claude Managed Agents",
+      "LLMエージェント",
+      "GitHub Actions",
+      "MCP (Model Context Protocol)",
+      "Software Development Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:18:41.650661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Windows AIの一部がGeForce RTX 30以降に対応、非Copilot+ PCでも",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2118861.html",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Microsoftは、これまでNPU搭載のCopilot+ PC限定だったAI API「Phi Silica」を、GeForce RTX 30シリーズ以降のGPUでも利用可能にする実験版SDKを公開した。",
+    "summaryBody": "Microsoftは「Windows アプリ SDK バージョン2.2 実験版 9」をリリースし、ローカル言語モデルAPI「Phi Silica」のGPUサポートを試験的に開始しました。これにより、40TOPS以上のNPUを備えていない従来のWindows 11 PCであっても、VRAM 6GB以上のGeForce RTX 30シリーズ以降を搭載していれば、同APIを利用したAI機能の動作が可能になります。利用にはWindows Insider Experimental Channelビルドや最新ドライバが必要で、モデルはオンデマンドでダウンロードされる形式です。\n\nただし、GPU実行時には「プロンプト圧縮」や「投機的デコード」が利用できないといった、NPU実行時とは異なる制限が存在します。また、現時点でGPU対応するのはPhi Silicaのみで、画像生成や超解像などの他のAI APIは依然としてNPUまたはCPUでの実行に限定されています。AMD製GPUへの対応も近日公開予定とされており、WindowsにおけるAI機能のハードウェア門戸が広がりつつあります。",
+    "topics": [
+      "Windows 11",
+      "Phi Silica",
+      "GeForce RTX",
+      "Copilot+ PC",
+      "Windows App SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

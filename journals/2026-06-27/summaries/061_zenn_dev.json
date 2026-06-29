@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:35:22.661801+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の PreToolUse フックで操作ログを自動保存する — 個人環境のセキュリティ強化",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-11-164130",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのPreToolUseフック機能を活用し、Bashツールの実行履歴をJSONL形式で自動保存することで、個人開発環境におけるセキュリティ（否認防止）と操作の透明性を向上させる方法を紹介。",
+    "summaryBody": "Claude Codeが実行するBashコマンドの履歴を自動的に記録する仕組みの実装ガイドです。著者は、自身の環境で起きた意図しないファイル書き換え事故をきっかけに、STRIDE脅威モデルを用いてリスクを分析。特に「否認（Repudiation）」対策として、操作ログの欠如を課題に挙げました。実装では、`.claude/settings.local.json`に数行の設定を追加し、約100行のシェルスクリプトを導入することで、実行されたコマンドをタイムスタンプ付きで日別に保存します。導入後3週間で約2,000件のログを分析し、開発スタイルの変化（git操作から検索系コマンドへのシフトなど）を可視化できた実例も示されています。「何をしたか」を客観的に記録することで、AIエージェント利用時の安心感とガバナンスを両立させる実践的なアプローチを提案しています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "STRIDE",
+      "自動化",
+      "ログ保存"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

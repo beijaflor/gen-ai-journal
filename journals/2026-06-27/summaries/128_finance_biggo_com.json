@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:21:59.526544+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.2がGRPOを静かに放棄、オープンソースLLM強化学習の大きな転換点へ",
+    "url": "https://finance.biggo.com/news/bd10eb10-5dad-4d89-9bfc-18f9ee21746d",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Zhipu AIのGLM-5.2が、長期間のエージェントタスクにおける不正確さを理由に主流のGRPOを捨てPPO（価値ネットワーク）へ回帰したことは、RL手法の適材適所化を象徴しています。",
+    "summaryBody": "Zhipu AIは最新のフラッグシップモデル「GLM-5.2」において、オープンソース界で標準的だった強化学習アルゴリズム「GRPO」を放棄し、価値ネットワークを用いる「PPO」へ回帰しました。この転換の主な理由は、長期間（Long-horizon）のエージェントタスクでは実行軌跡の長さが極端に不均一になり、GRPOの核心である「グループ内での相対評価」が困難になるためです。GLM-5.2は744BのMoEアーキテクチャを採用し、100万トークンのコンテキストウィンドウとMITライセンスでの公開を実現。FrontierSWEベンチマークではClaude OpusやGPT-5.5に匹敵する性能を示しています。また、ドイツ銀行の報告によれば、最先端の商用モデルとオープンソースモデルの間には65倍のコスト格差が存在しており、実用性とコスト効率の面から市場の再評価が進む可能性があります。米中AIの技術格差についても、Zhipu創業者の唐傑氏はイーロン・マスク氏の予測を上回るスピードでのキャッチアップに自信を見せています。",
+    "topics": [
+      "GLM-5.2",
+      "Zhipu AI",
+      "GRPO",
+      "Reinforcement Learning",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GLM-5.2 Quietly Abandons GRPO, Marking a Watershed Moment for Open-Source LLM Reinforcement Learning — BigGo Finance"
+  }
+}

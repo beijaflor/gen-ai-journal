@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:30:51.560842+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwopus v2 お前は、ほんまにQwenよりすごいんか？【ローカルLLMベンチ】",
+    "url": "https://qiita.com/rS_alonewolf/items/03ec544c3bcab0d7784a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.6ベースのファインチューニングモデルであるQwopus v2やPiについて、エージェントタスクの遂行能力と処理速度の観点から実力を検証した比較レポート。",
+    "summaryBody": "本記事は、Qwen3.6をベースにした最新のファインチューニングモデル（Qwopus v2、Pi reasoning、Pi tune）の性能を、ローカル環境（RTX 5070 Ti）で詳細に比較したベンチマーク結果をまとめたものです。評価は単純なテキスト生成（P2, P3）と、OpenCodeを用いたファイル操作やビルドを含むエージェント実行（P4, P5）の計29問で行われました。\n\n主な結果は以下の通りです：\n- **Qwopus v2**: 特にTurboQuant（TQ）構成において、ベースモデルと同等の品質を維持しつつ、エージェントタスクの処理速度を大幅に向上させており、実用性が極めて高い。\n- **Pi reasoning**: 品質は維持されているが、タスク完了までの速度向上は見られなかった。\n- **Pi tune**: 処理速度は速いものの、一部のコード生成タスクで品質の低下が確認された。\n\n結論として、ローカル環境でのエージェント運用においては、品質を保ちながら効率化に成功しているQwopus v2 27B（TQ構成）が最も推奨されるモデルであると評価されています。",
+    "topics": [
+      "LLM",
+      "Qwen",
+      "ローカルLLM",
+      "ベンチマーク",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

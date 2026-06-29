@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:04:42.250371+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントの自律性を最大化するメタハーネス「Polygraph」の発表",
+    "url": "https://nx.dev/blog/announcing-polygraph",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Nxの開発チームが発表したPolygraphは、複数リポジトリに跨る依存関係の可視化とエピソード記憶（長期記憶）を提供することで、AIエージェントが大規模組織で自律的に動作するための「メタハーネス」です。",
+    "summaryBody": "Nxは、AIエージェントが組織内で真の自律性を発揮することを妨げている「空間（Space）」と「時間（Time）」の制約を解消する新ツール「Polygraph」を発表しました。\n\n現在のAIエージェントには、単一のリポジトリ内でしか作業できずシステム全体を俯瞰できない点（空間の制限）と、セッションごとに記憶がリセットされ人間がコンテキストを補完し続けなければならない点（時間の制限）という2つの大きな障壁があります。Polygraphは、Next.jsがReactに対して果たす役割のように、エージェントを実用的なワークフローに適合させる「メタハーネス」として機能します。\n\n### 主な機能と特徴\n- **空間の壁の打破**: 組織内のすべてのプライベートおよびパブリックリポジトリを依存関係グラフとして統合します。エージェントは複数のリポジトリを跨いでコードを読み書きし、PRやCIの調整を単一の変更としてオーケストレートできます。\n- **時間の壁の打破**: 全てのセッション内容を記録し、エピソード記憶として保持します。これにより、過去の決定事項や同僚が行った作業の文脈をエージェントが理解し、以前の作業をシームレスに継続できるようになります。\n- **開発者体験へのこだわり**: TUI（テキストユーザインターフェース）の提供や、Ghostty、Zellijといった最新のターミナル・マルチプレクサへの最適化も行われています。\n\nPolygraphは、特に数万のリポジトリを抱えるような大規模企業において、開発者が手動で行っていたリポジトリ間の調整やコンテキストの再説明を不要にし、ソフトウェア開発のプロセスを根本から変えることを目指しています。",
+    "topics": [
+      "AI Agents",
+      "Developer Tools",
+      "Polygraph",
+      "Monorepo",
+      "Nx"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    },
+    "originalTitle": "Announcing Polygraph: A Meta-Harness for Maximum Agent Autonomy"
+  }
+}

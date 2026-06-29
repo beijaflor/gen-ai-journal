@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:20:34.730179+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AIがSQLを書いてくれる」で終わらせない − 分析基盤の育て方",
+    "url": "https://zenn.dev/tribeau/articles/c961141dd4c9c8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるText-to-SQLを実務で活用するために、ツール提供のみならずガードレール、コンテキスト（dbt指標等）、改善ループを統合した分析基盤の構築手法を解説。",
+    "summaryBody": "トリビュー社における、非エンジニアが安全かつ正確に本番データを分析できる基盤の構築事例を紹介している。単にAIにSQLを書かせるだけでなく、以下の4要素を組み合わせたエコシステムを構築している。1. ツール (MCP): 自然言語からSQLを実行するインターフェース。2. ガードレール: 構文解析による破壊的クエリの遮断とコスト見積もりの強制。3. コンテキスト: dbtを用いた正確なメトリクス定義やプロダクト固有の背景知識の注入。4. 改善ループ: 利用者の「問い（インテント）」をログ化し、不足している定義をdbtやドキュメントへフィードバックする仕組み。特に、構文は正しいが内容が誤っている「サイレントエラー」を防ぐためのコンテキスト管理と、運用を通じて基盤を「育てる」仕組みの重要性が強調されている。",
+    "topics": [
+      "Text-to-SQL",
+      "MCP (Model Context Protocol)",
+      "dbt",
+      "BigQuery",
+      "データ分析基盤"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

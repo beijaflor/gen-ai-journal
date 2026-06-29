@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:30:34.879109+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカル LLM 素人が作るローカル LLM 検証機",
+    "url": "https://qiita.com/mitsuharu_e/items/92a3eccb65d9b5c4ceca",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "個人がVRAM 24GB〜50GBクラスの中規模ローカルLLMを動かすため、AMDマルチGPU構成で構築した自作PCの選定理由と構成詳細の記録。",
+    "summaryBody": "## 概要\n個人開発者が、VRAM 24GB以下から50GB程度の中規模モデル（Gemma-4やQwen-3.6等）を安定して動作させるために構築した、マルチGPU構成の自作PCに関するレポートです。高額なNVIDIA製GPUを避け、AMD製GPUを複数枚利用することでコストを抑えつつ大容量VRAMを確保する手法に焦点を当てています。\n\n## 主要な構成と選定のポイント\n- **GPU**: AMD Radeon AI Pro R9700 32GBをマルチGPUで使用。NVIDIA製品に比べ安価に大容量VRAMを確保し、推論ライブラリにはVulkan経由でOllamaを採用しています。\n- **マザーボードとPCIeスロット**: ASRock B760 Pro RS/D4 WiFiを選定。PCIe 4.0 x16とx4のスロットを利用。帯域差はあるものの、実用上の大きな遅延は見られないと報告されています。\n- **メモリバランス**: システムメモリ（RAM）を96GB搭載。VRAMにロードされるモデル容量と同等以上のRAMを確保し、スワップによる不安定化を防止しています。\n- **CPU**: 発熱を抑えるためTDP 65WのCore i5-14400を選択。内蔵グラフィックスを活用することで、外部GPUのパワーをLLM計算に全振りする工夫がなされています。\n\n## 結論\nサーバーグレードの機材を使わずとも、適切なパーツ選定とマルチGPU構成により、個人の趣味範囲で中規模LLMを快適に検証できる環境が構築可能であることを実証しています。",
+    "topics": [
+      "ローカルLLM",
+      "自作PC",
+      "AMD Radeon",
+      "マルチGPU",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

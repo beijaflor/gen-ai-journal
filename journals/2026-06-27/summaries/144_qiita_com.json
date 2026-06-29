@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:12:09.401282+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜプロンプトインジェクションは無くならないのか — LLMに構造的に埋め込まれた欠陥「ロール混同」",
+    "url": "https://qiita.com/nogataka/items/463c33beaee69618e30a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プロンプトインジェクションの根本原因を、LLMが「役割（ロール）」をタグではなく文体から推測してしまう「ロール混同」にあると定義し、新たな攻撃手法CoT Forgeryとその構造的欠陥を解説する記事。",
+    "summaryBody": "本記事は、2026年の研究論文「Prompt Injection as Role Confusion」に基づき、プロンプトインジェクションが解消されない根本理由を詳説しています。著者らは、LLMが「システム」「ユーザー」「思考」といった各ロールの境界を、厳密なタグではなく「文体」から曖昧に推論している「ロール混同」が原因であると指摘しました。この洞察から、モデル自身の思考（think）を装う「CoT Forgery（思考の偽造）」攻撃が、最新モデルに対しても約60%の成功率を誇ることが実証されています。また、特定の感情やトーンがロールを越えて影響を及ぼす「状態のにじみ出し」による潜在意識的ステアリングの脅威についても警告しており、単なる攻撃パターンの学習ではなく、アーキテクチャレベルでの「ロール知覚」の強化が不可欠であると結論付けています。",
+    "topics": [
+      "LLM",
+      "プロンプトインジェクション",
+      "セキュリティ",
+      "AIエージェント",
+      "ロール混同"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

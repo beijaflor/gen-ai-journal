@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:16:45.502531+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループエンジニアリングでAI編集部を作る：週刊少年バカゲーの自律運営実験",
+    "url": "https://qiita.com/onaka_yurusugi/items/1c16ff9e3942e870e02c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "週刊少年漫画誌の編集・連載システムをAIエージェント組織で再現し、ゲームの企画・実装・評価・広報を自律的にループさせる「ループエンジニアリング」の実装記録。",
+    "summaryBody": "この記事では、Boris Chernyが提唱した「ループエンジニアリング」の概念を、週刊少年ジャンプの編集部モデルに応用した自走型AI組織の実験について解説しています。AIエージェント（作家・編集・編集長・読者）が毎週月曜日に「連載会議」を行い、Webゲームの新作公開や不人気作品の打ち切りを自動で判断します。技術的にはGitHub PR、Playwrightによる自動試遊、Remotionを用いた紹介動画生成を組み合わせ、評価ロジックを純関数として切り出すことで、LLMの「気分」に左右されない決定的な運用を実現しています。現在は人間がPRをマージするのみの半自動運用ですが、AIが生成したゲームを人間が本気で攻略するフェーズに到達しており、完全自律運営に向けた高いポテンシャルを示しています。",
+    "topics": [
+      "ループエンジニアリング",
+      "AIエージェント",
+      "ClaudeCode",
+      "ゲーム開発",
+      "GitHubActions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:05:00.777899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プレイドインターン体験記：Mastraを使ってKARTE Signals AIチャットのメモリ機能を1から設計・実装した話",
+    "url": "https://tech.plaid.co.jp/intern-mastra-karte-signals-ai-chat-memory",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントフレームワークMastraを活用し、KARTE SignalsのAIチャットに永続的なワーキングメモリや推論プロセスの可視化機能を実装した技術体験記。",
+    "summaryBody": "プレイドのインターンにおいて、広告分析支援サービス「KARTE Signals」のAIチャット機能を高度化した開発記録です。AIエージェント開発フレームワーク「Mastra」を採用し、スレッドを跨いで顧客情報を保持する「ワーキングメモリ」をゼロから設計。既存機能の制約を回避するため、特定の情報を個別に削除・更新可能なKey-Value形式の独自メモリ管理クラスを実装しました。また、システムプロンプトを「指示・ツール・スキル」の3層に分解し、オンデマンドでロードする設計に変更することでトークン消費の効率化を実現。ハルシネーション抑制のための推論プロセス（Reasoning）可視化や、GCP Model Armorによるセキュリティ対策など、実運用を見据えた包括的なAI実装プロセスが綴られています。",
+    "topics": [
+      "Mastra",
+      "AIエージェント",
+      "LLM",
+      "ワーキングメモリ",
+      "KARTE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

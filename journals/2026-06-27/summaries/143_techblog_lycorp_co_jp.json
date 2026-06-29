@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:11:47.057921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトは人手チューニングからAIチューニングへ：遺伝的アルゴリズムで回す自動最適化と高速化",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-60",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LINEヤフーが、DSPyと遺伝的アルゴリズム（GEPA）を活用してプロンプト調整を自動化し、数週間要していた作業を約1時間に短縮しつつ、健康医療系クエリにおける高度なポリシー遵守と読みやすさを両立させた事例を紹介しています。",
+    "summaryBody": "LINEヤフーの技術ブログによる、プロンプトエンジニアリングの自動化に関する実践的な解説記事です。LLMのプロンプト調整における「試行錯誤の多さ」や「ノウハウの属人化」といった課題を解決するため、同社は遺伝的アルゴリズムに基づいた最適化手法「GEPA (Reflective Prompt Evolution)」を導入しました。具体的には、プロンプト最適化フレームワーク「DSPy」を用い、Yahoo!検索のAI回答サービスにおける健康医療系クエリに適用。単なる数値スコアだけでなく、自然言語によるフィードバック（リフレクション）をループに組み込むことで、診断行為の禁止や断定表現の回避といった複雑なポリシー遵守と、Markdownによる構造化された回答を同時に実現しました。結果として、従来数週間を要していた調整作業を約1時間に短縮。記事では、評価関数の具体的な設計方法や、人手による最終確認を組み合わせた運用フロー、プロンプトの肥大化といった今後の課題についても詳細に述べられています。",
+    "topics": [
+      "Prompt Engineering",
+      "LLM",
+      "DSPy",
+      "GEPA",
+      "Genetic Algorithm"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

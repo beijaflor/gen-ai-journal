@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:02:13.172059+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "作って使うAIエージェント —— Pi Coding Agentで足りない機能を自作しよう",
+    "url": "https://blog.lai.so/pi-coding-agent/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Pi Coding Agentは、最小限のコアをTypeScriptの拡張機能で育てる設計思想を持ち、検索やメモリ、独自のツールを自由に組み込める自分専用のAI開発基盤（ハーネス）です。",
+    "summaryBody": "本記事では、OSSのターミナル型コーディングエージェント「Pi Coding Agent」を、単なる完成品としてではなく、自分好みに拡張可能な「ハーネス（基盤）」として捉える活用法を提案しています。\n\n主なポイントは以下の通りです：\n- **拡張性**: TypeScriptによるextension機能により、スラッシュコマンド、LLM用ツール、実行フック、プロバイダーを自作できます。MCPやSkillsよりもエージェントの内部処理に近いレイヤーを操作可能です。\n- **薄い抽象化**: モデルに最小限のツールを渡すシンプルな構成のため、新しいモデルやOpenRouter、xAI、ローカルLLMなどのプロバイダーを即座に試すのに適しています。\n- **実践例**: はてなブックマーク検索、Web検索（SearXNG）、X検索（xAI API）、Tailscale経由のローカルLLM連携など、自分の環境に合わせた機能を実装する具体的なアプローチが紹介されています。\n\n「AIエージェントを使う」段階から、自分のワークフローに合わせて「エージェントの機能を自作する」ための具体的なガイドとなっています。",
+    "topics": [
+      "Pi Coding Agent",
+      "AIエージェント",
+      "TypeScript",
+      "LLM",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

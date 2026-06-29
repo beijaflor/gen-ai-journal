@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:20:26.446445+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを「指揮」するOSS「TAKT」とは — 仕組と使い方",
+    "url": "https://zenn.dev/alpha_omega/articles/56ca3136bc5cd8",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの自律的なタスク実行をYAML定義によって「指揮」し、人間の逐次的な介入を不要にするオーケストレーションツール「TAKT」の仕組みと特徴を解説。",
+    "summaryBody": "本記事は、AIエージェントのオーケストレーションツール「TAKT」の仕組みと利用方法を解説する連載の第1部です。TAKTは、AIエージェントが実行すべきプロセスをYAMLで宣言的に定義し、進行・レビュー・修正のループを自動制御するOSSです。主な特徴として、エージェントの出力をAIが判定して次ステップへ遷移させる「AIジャッジ」や、プロンプトをPersona、Policy、Instruction、Knowledge、Output Contractの5要素に分解して管理する「Faceted Prompting」という設計思想が挙げられます。これにより、従来人間が都度行っていた進行管理や確認作業をツール側に任せることが可能になり、タスクの丸投げと自律実行を実現します。npm経由で容易に導入でき、Claude CodeやGitHub Copilot CLIなど複数のエージェント実行環境に対応しています。",
+    "topics": [
+      "TAKT",
+      "AIエージェント",
+      "オーケストレーション",
+      "OSS",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

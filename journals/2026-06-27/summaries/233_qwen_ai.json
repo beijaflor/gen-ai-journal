@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:55:09.993391+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen-AgentWorld: 汎用エージェントのための言語世界モデル",
+    "url": "https://qwen.ai/blog?id=qwen-agentworld",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwenチームは、7つのドメインにわたるエージェント環境をシミュレートし、エージェントの強化学習と基盤モデルとしての能力を大幅に向上させる初のネイティブ言語世界モデル「Qwen-AgentWorld」を発表しました。",
+    "summaryBody": "Qwen-AgentWorldは、Terminal、Search、MCP、SWE、Web、Android、OSの7つのドメインを単一のモデルでシミュレートする言語世界モデル（LWM）です。継続的な事前学習（CPT）、教師あり微調整（SFT）、強化学習（RL）の3段階プロセスで訓練され、環境の「次状態予測」を直接の学習目的としています。評価ベンチマーク「AgentWorldBench」において、GPT-5.4やClaude Opus 4.8を上回るシミュレーション精度を記録しました。本研究では、LWMを「独立した環境シミュレータ」として用いることで、実環境では困難な制御可能な摂動を与えたRL学習を可能にし、エージェント性能を向上させる手法を提案しています。また、エージェント自身がLWMとして世界予測能力を内面化することで、未学習のドメインにおいても高い汎用性を発揮することが実証されました。",
+    "topics": [
+      "Qwen-AgentWorld",
+      "World Models",
+      "AI Agents",
+      "Reinforcement Learning",
+      "Environment Simulation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "Qwen-AgentWorld: Language World Models for General Agents"
+  }
+}

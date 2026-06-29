@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:22:53.074892+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon Bedrock Managed Knowledge Bases で日本語ドキュメントはどこまで解析できるか！？",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/06/24/120000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazon Bedrock Managed Knowledge Bases を用い、日本語の各種ドキュメント形式（PPTX/XLSX/PDF/DOCX）の解析精度と新機能 Agentic Retrieval の実用性を検証したレポート。",
+    "summaryBody": "Amazon Bedrock Managed Knowledge Bases (Managed KB) は、RAGに必要なデータソース接続、文書解析、ベクトル保存、検索最適化を包括的に提供するフルマネージドサービスです。本記事では日本語ドキュメントへの対応能力を検証しています。検証の結果、PowerPoint (.pptx) や Excel (.xlsx) は日本語でも高精度に解析され、特にパワポのノート部分も検索対象となることが確認されました。しかし、現状の制限として PDF (.pdf) および Word (.docx) では日本語の文字化けが発生し、検索が正常に機能しないことが判明しています。また、ユーザーの質問に応じて動的に検索を繰り返す「Agentic Retrieval」の動作も確認されており、今後のドキュメント解析機能の改善が期待される結果となっています。",
+    "topics": [
+      "AWS Bedrock",
+      "RAG",
+      "Managed Knowledge Bases",
+      "Agentic Retrieval",
+      "日本語ドキュメント解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

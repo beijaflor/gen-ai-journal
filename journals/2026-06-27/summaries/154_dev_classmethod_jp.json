@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:15:06.858215+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sakana Fugu (GA) をサブスクリプションプランで試してみた",
+    "url": "https://dev.classmethod.jp/articles/sakana-fugu-ga-first-touch/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Sakana AIがリリースしたマルチエージェント・オーケストレーションモデル「Fugu」のGA版を、実際にサブスクリプション契約して技術構造や実効性能を検証したレビュー記事です。",
+    "summaryBody": "Sakana AIから2026年6月22日にGAリリースされた新LLM製品「Fugu」および「Fugu Ultra」の速報レポートです。Fuguは、従来のルーター型とは異なり、学習済みのコーディネーターLLM自体がGPT 5.5やClaude 4.8などの外部フロンティアモデルを動的に呼び分ける、ひとつの「マルチエージェント・オーケストレーションモデル」として構成されています。\n\n主な検証ポイントは以下の通りです：\n- **アーキテクチャ**: ICLR 2026の論文（TRINITY / Conductor）に基づき、自己再帰や動的なモデル選定を行う仕組み。\n- **挙動の差**: 軽量な「fugu」は単体回答が中心で高速。対して「fugu-ultra」はオーケストレーションを深めるため、回答に数分かかる場合もあるが、複雑なタスクに適している。\n- **実装とコスト**: OpenAI互換APIを提供。Standardプラン（$20/月）での使用感や、裏側のオーケストレーションによるトークン消費量（usageの独自拡張）が詳細に解説されています。\n- **エコシステム**: 公式CLI「codex-fugu」による既存ツールとの統合や、Claude Code Router経由での接続についても触れられています。",
+    "topics": [
+      "Sakana AI",
+      "Fugu",
+      "LLM",
+      "マルチエージェント",
+      "オーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:00:10.456911+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Generative UIにJSONは最適なのか？ OpenUIという選択肢",
+    "url": "https://zenn.dev/sc30gsw/articles/d7320f1247b785",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Generative UIの出力形式として一般的なJSONが抱える「構造の脆さ」や「ストリーミングの難しさ」を、独自DSLを用いるOpenUIがいかに解決するかを技術的に深掘りした解説記事。",
+    "summaryBody": "本記事は、LLMが動的にUIを生成する「Generative UI」のアーキテクチャを比較・検証したものです。現在主流のJSONベース（A2UI, json-render）、HTMLベース（MCP Apps, Open Generative UI）に対し、独自DSL（OpenUI Lang）を採用する「OpenUI」の優位性を解説しています。JSONはデータ記述には優れますが、UIの振る舞いや入れ子構造を表現する際にトークン効率が悪化し、構文エラーによる描画破綻が起きやすい課題があります。対してOpenUIは、行指向のDSLによりストリーミングとの親和性を高め、トークン数を平均約50%削減しつつ、コンポーネントライブラリを「AIとの契約」として定義することで、安全かつ確実なUI描画を実現します。また、タスク管理アプリの実装を通じ、ID解決やHuman-in-the-loop設計など、実運用上の課題と対策についても言及されています。",
+    "topics": [
+      "Generative UI",
+      "OpenUI",
+      "LLM",
+      "TypeScript",
+      "DSL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

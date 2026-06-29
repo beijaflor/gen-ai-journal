@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:54:37.666603+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "組織の文書を自動構造化する「OKF+LLM Wiki」のNAS実践ガイド",
+    "url": "https://ai.watch.impress.co.jp/docs/serial/dojo/2119245.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NASに蓄積された煩雑な社内文書を、Google提唱のOKF形式とAIエージェントを用いて自動的に構造化・Wiki化し、高精度なQA対応を可能にする手法の実践解説。",
+    "summaryBody": "本記事は、組織内で管理が困難になりがちな業務マニュアル等の「るつぼ化」した文書群を、Googleが提唱する「Open Knowledge Format (OKF)」と「LLM Wiki」の概念を用いてAIエージェントが自動で整理・構造化する手法を紹介しています。\n\n### システムの核となる仕組み\n- **OKF (Open Knowledge Format)**: YAMLフロントマターを備えたMarkdown形式で、文書の種別、状態（現行・廃止）、リソース、依存関係を定義するオープンな仕様。人間とAIの双方が読み書き可能です。\n- **OpenClawによる自動化**: NAS上の共有フォルダをAIエージェントが定期的に走査し、新規・改訂ファイルを検知して自動的にWiki（目録）を生成・更新するプロセスを構築しています。\n- **情報のセマンティクス**: 文書間のリンクに「何によって置き換えられたか」「どこに連絡すべきか」といった意味（コンテキスト）を持たせることで、RAG等で発生しがちな誤回答を抑制します。\n\n### 検証結果と課題\n- **推論力の依存**: 文書の統合や廃止を正しく判断するには、LLMの高度な推論能力（GPT-5クラス以上）が不可欠。低性能なモデルではリンクの抽出や本文の充実度が低下する傾向があります。\n- **レガシー環境との親和性**: 既存のファイルサーバーをそのままに、AI用の「目録」を別フォルダに育てるアプローチは、現場の運用を変えずに導入できる利点があります。",
+    "topics": [
+      "OKF (Open Knowledge Format)",
+      "LLM Wiki",
+      "OpenClaw",
+      "ナレッジマネジメント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

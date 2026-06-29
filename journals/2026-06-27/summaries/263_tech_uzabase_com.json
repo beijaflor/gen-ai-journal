@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:49:13.089559+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのスキルでSLO対応を自動化したらめちゃくちゃ楽になった",
+    "url": "https://tech.uzabase.com/entry/2026/06/26/100727",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「スキル」機能を活用してNew Relicのメトリクス分析やコード追跡を含むSLO違反調査を自動化し、数時間かかる調査を25分に短縮した実践事例の紹介。",
+    "summaryBody": "NewsPicksのPlatform Engineeringチームによる、Claude Codeを用いたSLO（サービスレベル目標）運用効率化の事例報告です。従来、SLO違反の調査はエンジニアが手動でNew Relicのメトリクスを確認し、複数のコードリポジトリを追跡する泥臭い作業で、1回あたり数時間を要していました。これを解決するため、「推測禁止」「仮説先行」「トークン消費制限」「辿り道の厳格な記録」といった5つの独自ルールを組み込んだClaude Codeの「スキル（Markdownファイル）」を作成。実際の障害調査において、数千回のDBアクセスを伴う複雑なN+1問題の原因特定から対策設計書の作成までを、わずか25分で完結させる成果を上げました。今後は調査内容（Latency/Availability）に応じたスキルの分割や、ナレッジの共有化による属人化の解消を目指しています。",
+    "topics": [
+      "Claude Code",
+      "SLO",
+      "New Relic",
+      "Observability",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:34:27.097036+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のRust crate選定 (1/4) デファクトスタンダードなcrate群",
+    "url": "https://zenn.dev/estie/articles/4e057582208b0b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが提案するRustライブラリの妥当性を評価するための基準として、2026年時点での主要なデファクトスタンダード・クレートを各分野ごとに整理したガイド。",
+    "summaryBody": "Rustは標準ライブラリが最小限であるため、外部ライブラリ（crate）の選定が重要です。本記事では、特にAIにコード生成を依頼した際、その選定が適切かどうかを判断するための「定番」を紹介しています。シリアライズ（serde）、エラー処理（anyhow/thiserror）、CLIパース（clap）、HTTPクライアント（reqwest）、非同期ランタイム（tokio）、並列処理（rayon）など、数億ダウンロードを誇る圧倒的なデファクトスタンダードを列挙。また、ロギングにおいては、単純な用途ならlog系、並行処理の分析にはtracingといった、目的別の使い分けについても解説しています。これらを知ることで、AIが非標準なライブラリを提案した際に「なぜそれなのか」を問い直す基準を持つことができます。",
+    "topics": [
+      "Rust",
+      "クレート",
+      "ライブラリ選定",
+      "開発効率化",
+      "AI活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

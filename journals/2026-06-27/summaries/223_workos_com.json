@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:25:44.484367+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "auth.md — エージェント登録のためのオープンプロトコル",
+    "url": "https://workos.com/auth-md",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントがユーザーに代わってアプリへのサインアップや登録を自動で行うための、Markdownベースの新しいオープンプロトコル。",
+    "summaryBody": "auth.mdは、AIエージェントが従来のサインアップフォームを経由せずに、アプリケーションへのユーザー登録を安全に行えるようにするオープンプロトコルです。開発者は `/auth.md` というファイルを自社ドメインに配置することで、サポートする認証フロー、権限スコープ、登録方法をエージェントに提示できます。プロトコルは、IDプロバイダーがユーザーの身元を保証する「Agent Verified」フローと、ユーザーがコード確認を行う「User Claimed」フローの2種類をサポートしています。既存のOAuth規格やID-JAGアイデンティティ・アサーションなどを組み合わせて構築されており、WorkOSが提唱していますが、特定のベンダーに依存しないオープンな仕様として設計されています。これにより、エージェントによるサービス利用の自動化が大幅に簡素化されます。",
+    "topics": [
+      "AI Agent",
+      "Authentication",
+      "OAuth",
+      "API Standard",
+      "WorkOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "auth.md — Open Protocol for Agent Registration"
+  }
+}

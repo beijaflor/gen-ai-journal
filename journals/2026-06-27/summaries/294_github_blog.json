@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:03:00.946139+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotの「エージェント・ハーネス」における性能と効率性の評価",
+    "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotの基盤である「エージェント・ハーネス」が、主要モデルにおいてベンダー純正ツールと同等の解決率を維持しつつ、高いトークン効率を実現していることをベンチマークで実証した。",
+    "summaryBody": "GitHubは、GitHub Copilot CLIや各種アプリを支える共通オーケストレーション層「エージェント・ハーネス（Agentic Harness）」の評価結果を公開しました。このハーネスは、ClaudeやGPTシリーズなど20以上の最新モデルに対応しており、特定のモデルに依存しない柔軟性が特徴です。最新のベンチマーク（SWE-bench ProやTerminalBench 2.0など）による検証では、AnthropicのClaude CodeやOpenAIのCodex CLIといった各モデルベンダー純正のハーネスと比較して、タスク解決率で同等の性能を維持しながら、より低いトークン消費量（コスト効率）を達成していることが示されました。特にTerminalBench 2.0の分析では、GPTモデルが高いコストパフォーマンスを発揮する一方で、Claude Opusが最高精度の解決率を実現するというモデルごとの特性も明らかにしており、開発者がタスクに応じて最適なモデルを選択、あるいは自動選択できる強みを強調しています。また、異なるモデル間で互いの出力をレビューする「Rubber Duck」機能など、マルチモデル環境ならではの高度な推論手法についても言及されています。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Agent",
+      "LLM Benchmarking",
+      "Token Efficiency",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks"
+  }
+}

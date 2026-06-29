@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:17:18.011775+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeが使えないときのためにAntigravity CLIを用意した話",
+    "url": "https://qiita.com/tt2004d/items/31cbacd70540423b1581",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのAPIレートリミットや不安定さに備え、操作感が近くプロジェクト設定の共有も可能な代替ツールとしてAntigravity CLIを導入した活用法を紹介しています。",
+    "summaryBody": "Claude Codeの常用ユーザーが、サービス停止やAPI制限時のバックアップとしてGoogleの後継CLIツール「Antigravity CLI」を導入した事例を紹介しています。筆者は、ターミナルベースの操作感が共通していることや、`CLAUDE.md`に類する`AGENTS.md`を用いることでプロジェクトの文脈を引き継ぎやすい点を評価しています。特に、実装前に詳細な確認を行う`/grill-me`コマンドの有用性や、Google Cloud Project紐付けによるAPI課金での運用方法が解説されています。一方で、高度にカスタマイズされたHooksやMCP設定の完全移行は現状難しく、バックアップ用途と割り切った運用を推奨しています。Claude Codeの可用性に不安を感じている開発者にとって、実用的なリスク回避策を提示する内容です。",
+    "topics": [
+      "Claude Code",
+      "Antigravity CLI",
+      "Gemini CLI",
+      "AIエージェント",
+      "CLIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

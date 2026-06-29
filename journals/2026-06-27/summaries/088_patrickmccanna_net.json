@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:10:41.160196+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの「拡張思考（Extended Thinking）」出力は本物ではない",
+    "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Codeのログに記録される「思考プロセス」は、生の思考データではなくAnthropicによって暗号化・要約されたものであり、開発者が期待する完全な透明性や監査証跡にはならない。",
+    "summaryBody": "Claude Codeのローカルログを調査したところ、思考ブロック（thinking blocks）にはテキストではなく600文字の署名（シグネチャ）のみが記録されていることが判明しました。Anthropicのドキュメントによれば、この思考プロセスは暗号化されており、APIを通じてユーザーに返されるのはその「要約」に過ぎません。生の思考データにアクセスするにはエンタープライズ契約が必要です。これは、エージェントの推論論理を完全に把握したいユーザーにとって大きな落とし穴であり、提示される「思考」はモデルの行動を駆動した実際の論理そのものではなく、情報の欠落がある二次的なデータであると指摘されています。監査証跡としての信頼性には注意が必要です。",
+    "topics": [
+      "LLM",
+      "Claude Code",
+      "Anthropic",
+      "AI Transparency",
+      "Extended Thinking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 85
+    },
+    "originalTitle": "The text in Claude Code’s “Extended Thinking” output is not authentic."
+  }
+}

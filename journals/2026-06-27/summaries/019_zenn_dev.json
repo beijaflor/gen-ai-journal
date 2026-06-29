@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:20:44.074192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "月 100万件・ 50億トークンをローカルLLMで捌く - 明細名のストア情報マッピング",
+    "url": "https://zenn.dev/finatext/articles/7180db2c0fce5b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "機密情報を含む決済データの店舗名マッピングを、Gemma 4を用いたローカルLLM基盤で構築し、外部API比で約200倍のコスト効率と高精度な自動化を実現した事例。",
+    "summaryBody": "Finatextグループのナウキャストにおける、クレジットカード決済データの「ストア名」をブランドマスターへ紐付けるエンジニアリング手法の解説です。決済システム特有の半角カナやノイズが多い文字列を処理するため、AWS上の閉域網でGemma 4をvLLMで運用。処理フローは、1.ストア名の構造化分解、2.ブランド推定とルールベースによるサブブランド補完、3.Web検索クエリ生成、4.Snowflakeのベクトル検索とLLMを組み合わせた名寄せ、の4ステップで構成されています。月間50億トークンの大規模処理において、外部API（GPT-5.4 mini想定）では月130万円かかるコストを数千円規模に抑え、機密情報の保護と実用的な推論速度（1,000件/3分）を両立させています。すべてをLLMに頼らず、確信度に応じたWeb検索の動的実行や、最終的なヒューマンチェックを織り交ぜた堅実な設計が特徴です。",
+    "topics": [
+      "ローカルLLM",
+      "Gemma 4",
+      "データエンジニアリング",
+      "vLLM",
+      "Snowflake"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

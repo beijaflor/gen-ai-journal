@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:04:50.129854+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ウェブサイトをエージェント対応にするためのデベロッパー ツールキット",
+    "url": "https://developer.chrome.com/blog/agent-ready-toolkit",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントがウェブサイトを円滑に理解・操作できるようにするためのLighthouseの新監査カテゴリ、WebMCP標準、およびデバッグ用DevToolsを発表しました。",
+    "summaryBody": "AIエージェントがウェブを自律的に操作する「エージェント・ウェブ」への移行を支援するため、Chromeチームは一連の新しい開発ツールを公開しました。\n\n1. **Lighthouse Agentic Browsing**: Chrome M150以降に導入される新カテゴリで、アクセシビリティ・ツリーの整合性、視覚的安定性（CLS）、WebMCPの統合状況を監査し、AIにとっての操作性を評価します。\n2. **WebMCP (Web Model Context Protocol)**: サイトが持つ機能を構造化されたツールとしてAIに公開するための新しい提案標準です。\n3. **Chrome DevTools for Agents**: MCP（Model Context Protocol）を介して、AIエージェントによるブラウジングをシミュレート、追跡、デバッグできるツールです。これにより、エージェントがページをどのように認識し、どこで躓いているかを可視化できます。\n4. **Modern Web Guidance**: エージェントフレンドリーなサイト構築のためのベストプラクティスを提供します。\n\nこれらのツール群により、開発者は予約や注文などの複雑なフローをAIが確実かつ決定論的に実行できる環境を構築・テストできるようになります。",
+    "topics": [
+      "AI Agents",
+      "Chrome DevTools",
+      "Lighthouse",
+      "WebMCP",
+      "Accessibility"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

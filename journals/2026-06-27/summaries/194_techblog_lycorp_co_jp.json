@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:16:11.013859+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Semantic Context OS のアーキテクチャ：エージェントシステムにおける単なるトークン詰め込みを超えて",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-59",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデルのコンテキストウィンドウを、受動的なテキストストリームではなく「Semantic Context OS」という制御可能なシステム資源として再定義し、エージェントの推論精度と信頼性を向上させるアーキテクチャの提案。",
+    "summaryBody": "LLMのコンテキストウィンドウ拡大に伴う「シリコンの誤謬（大容量＝高性能という誤解）」に対し、注意散逸（Attention Dilution）やコンテキスト腐敗（Context Rot）を数学的・構造的に解決するためのランタイム基盤「Semantic Context OS」を解説している。本システムは、LLMとエージェントロジックの間に位置するAIカーネルとして機能する。主な特徴は、POSIX風の仮想ファイルシステム（VFS）による状態の論理的隔離、最小実行コンテキスト（MVC）パイプラインによるノイズ除去、非同期の「sawtoothメモリモデル」による動的トークン圧縮、およびASTベースの「PathAlignステージ」による外科的なコード抽出である。単なるプロンプトエンジニアリングを超え、コンテキスト層を決定論的なOS資源として管理することが、エンタープライズAIエージェントの競争優位性になると説いている。",
+    "topics": [
+      "LLM",
+      "AI Agent",
+      "Context Management",
+      "Semantic Context OS",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    }
+  }
+}

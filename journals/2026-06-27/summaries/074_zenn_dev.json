@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:06:41.551361+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Local LLMでのデータ分析を試してみた",
+    "url": "https://zenn.dev/aishift/articles/5a5383987efee6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Titanicデータセットを用い、クラウドモデル（GPT-5.5 + Codex）とローカルLLM（Qwen3.6 + Qwen Code）によるデータ分析エージェントの性能と解釈性を比較検証した記事です。",
+    "summaryBody": "本記事では、機密データの外部送出を制限したい実務ニーズを背景に、ローカルLLMを用いたデータ分析エージェントの実行精度を検証しています。検証では、GPT-5.5（Codex構成）とQwen3.6 27B（Qwen Code構成）を比較。タスクとしてTitanicデータの探索的データ分析（EDA）、前処理、モデル評価、レポート作成を指示しました。結果として、GPT-5.5はデータから「性別が強い予測因子である」といった解釈や欠損値の背景まで踏み込んだ高品質なレポートを出力したのに対し、Qwen3.6はコードの完走と図表作成は可能だったものの、レポートの洞察力が弱く数値の羅列に留まる傾向が見られました。実行時間でも4倍近い開きがあり、現状では「完走はできるが実務で解釈を任せるにはフロンティアモデルが優位」と結論付けています。",
+    "topics": [
+      "LLM",
+      "データ分析",
+      "Local LLM",
+      "AI Agent",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

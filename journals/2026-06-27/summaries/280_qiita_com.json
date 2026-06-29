@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:59:13.183475+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "話題のトークン課金節約ライブラリ Headroom は本当に効果があるのか実測してみる",
+    "url": "https://qiita.com/ksonoda/items/a1a97be8fed52c34ec89",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの入力トークンを削減するライブラリ「Headroom」を検証し、冗長なJSON構造を持つログデータの分析において約44%のトークン節約効果が得られることを実測により証明した記事です。",
+    "summaryBody": "Netflixのエンジニアが開発しGitHubで50k以上のStarを獲得した注目のライブラリ「Headroom」の検証記事です。HeadroomはLLMへの入力前に「重複排除」「構造圧縮」「ノイズ削除」を行うことで入力トークン数を削減します。筆者はOracle Cloud InfrastructureとMCPを組み合わせ、DBの注文ログ分析をAIエージェントに行わせる実験を実施。通常の会話形式のプロンプトでは削減効果がゼロである一方、JSON形式のDBクエリ結果を扱う分析タスクでは約44%（1702トークンから746トークン削減）という高い節約効果を確認しました。データ分析やマルチエージェント間通信など、構造化データを大量に扱うユースケースで特に有効であることが示されています。",
+    "topics": [
+      "Headroom",
+      "LLM",
+      "コスト最適化",
+      "トークン削減",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 90
+    }
+  }
+}

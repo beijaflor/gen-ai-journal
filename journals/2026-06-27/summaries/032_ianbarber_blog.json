@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:24:42.966717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMアーキテクチャの複雑化：レコメンデーションシステムの轍を踏む現状とコンポーザビリティの必要性",
+    "url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの構造がMoEや多様なAttentionの実装により複雑化する中で、研究の進展にはパフォーマンスと柔軟性を両立する「設計段階からの構成可能性」が不可欠であると説く一考。",
+    "summaryBody": "かつてシンプルなTransformerの積み重ねだったLLMは、今やMixture-of-Experts (MoE) や多様なAttentionバリアント、マルチモーダル統合、分散推論の境界線などにより、かつてのレコメンデーションシステム（RecSys）を彷彿とさせる複雑なスタックへと変貌しています。筆者は、特定の最適化（カーネルのフュージョン等）が研究のイテレーションを阻害する「性能の罠」を指摘。これを解決するためには、PyTorchのFlexAttentionのように、効率を維持しつつ自由に組み替え可能な「コンポーザビリティ（構成可能性）」を重視した設計が、次世代の自動研究ループ（Auto-research loops）を構築する上での鍵になると論じています。",
+    "topics": [
+      "LLM Architecture",
+      "Mixture of Experts",
+      "Composability",
+      "FlexAttention",
+      "Recommendation Systems"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 18,
+      "overall": 80
+    },
+    "originalTitle": "LLMs are complicated now"
+  }
+}

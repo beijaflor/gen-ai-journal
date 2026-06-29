@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:55:23.134070+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにPull RequestのApprove権限を与えて数ヶ月、どのような効果があったか",
+    "url": "https://dev.henry.jp/entry/auto-approval",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる開発自動化に伴うレビュー負荷を軽減するため、AIにApprove権限を付与する運用を導入し、PR数を倍増させつつ開発速度を維持した事例の紹介。",
+    "summaryBody": "株式会社ヘンリーにおける、AIによるPull Request（PR）の自動承認（AutoApproval）運用の実践報告です。Claude Codeの導入により実装速度が向上したことでPRが急増し、レビューが開発のボトルネックとなったため、特定ラベルを付与したPRに対してAIがApproveを出す仕組みを構築しました。導入の結果、PR作成数は約2倍に増加しましたが、全体の約50%（フロントエンドでは70%、バックエンドでは40%）がAIによってApproveされるようになり、レビューコストの削減に成功しています。運用のポイントとして、最終責任は人間が負うという「性善説」に基づき、破壊的変更や複雑なロジックは人間がレビューするよう線引きを明確にしています。一方で、AIの見逃しによるヒヤリハット対策として、メインブランチへの適用制限や通知の整備といった安全策を講じ、AIモデルの特性に応じた改善を継続しています。",
+    "topics": [
+      "AIレビュー",
+      "Claude Code",
+      "生産性向上",
+      "GitHub Actions",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

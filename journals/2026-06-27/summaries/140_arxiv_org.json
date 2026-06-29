@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T12:10:57.190708+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードレビューの終焉：コーディングエージェントが人間による検査を凌駕する",
+    "url": "https://arxiv.org/abs/2606.13175",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントの進化により、従来の人間によるコードレビューはもはや不要であり、むしろ効率と保証の面で限界に達していると論じる論文。",
+    "summaryBody": "1976年のFaganによる定式化以来、ソフトウェア開発の品質ゲートとして君臨してきた「人間によるコードレビュー」が、AIエージェントによって完全に代替される時代が来たと論じる論文です。著者のMartin Monperrusは、LLMベースの自律システムがコードの読み書き、テスト、修復において人間を凌駕する閾値を超えたと主張しています。\n\n本論文の核心は2つの主張にあります。第一に、コードレビューのあらゆる目的（バグの特定、知識の伝達、一貫性の維持など）は、人間よりも低コストかつ高スループットなAIエージェントによって、より効果的に達成可能であるという点です。第二に、AIがコードを書き人間がレビューするという現在のハイブリッドモデルは「袋小路」であるという指摘です。このモデルでは、AIによる高速なコード生成に対して人間のレビューがボトルネックとなり、実質的な検証能力が損なわれるだけでなく、スケーラビリティも確保できません。結論として、開発パイプラインから人間による検査を排除し、エージェントが検証を担う新しいパラダイムへの移行を提唱しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Code Review",
+      "Software Engineering",
+      "LLM",
+      "Automated Programming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "The End of Code Review: Coding Agents Supersede Human Inspection"
+  }
+}

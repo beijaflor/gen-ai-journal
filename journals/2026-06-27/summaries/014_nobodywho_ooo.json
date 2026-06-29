@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:18:00.722630+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GGUFフォーマットの内部構造：重み以外に含まれるものと、現在欠けている要素",
+    "url": "https://nobodywho.ooo/posts/whats-in-a-gguf/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLM推論で普及しているGGUF形式が保持するメタデータの詳細と、ツール呼び出しやマルチモーダル対応における現状の課題、将来の改善案を技術的視点から解説した記事。",
+    "summaryBody": "この記事では、llama.cppなどで採用されている単一ファイル形式「GGUF」の利点と、その内部に含まれるメタデータの重要性を掘り下げています。GGUFは重みだけでなく、Jinja2形式のチャットテンプレート、EOS/BOSなどの特殊トークン、サンプラーの設定順序などを1ファイルに統合することで、モデル間の差異を吸収し高い利便性を提供しています。\n\n一方で、現在のGGUF標準に欠けている要素として、以下の4点を挙げています：\n1. **ツール呼び出しの標準化**: モデルごとに異なる出力フォーマット（JSON, XML等）をパースするための共通文法が必要。\n2. **思考トークンの明示化**: 推論過程（Thinkブロック）を分離するための識別子が不足している。\n3. **プロジェクションモデルの統合**: 画像・音声解析用の追加モデルを同一ファイル内に保持し、マルチモーダル対応を簡素化すべき。\n4. **サポート機能フラグ**: 画像入力やツール呼び出しの可否をプログラムから容易に判別できるフラグが必要。\n\n著者は、GGUFのオープンで拡張可能な性質を活かし、コミュニティ全体でこれらの標準化を進めることで、モデル非依存な推論エンジンの開発をさらに容易にできると結論付けています。",
+    "topics": [
+      "GGUF",
+      "llama.cpp",
+      "LLM推論",
+      "メタデータ",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "What's in a GGUF, besides the weights - and what's still missing?"
+  }
+}

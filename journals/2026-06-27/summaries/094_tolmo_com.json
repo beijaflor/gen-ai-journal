@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:12:27.910705+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5が38分でWindowsカーネルをRustで記述：AIによるインフラ刷新の可能性",
+    "url": "https://tolmo.com/blog/when-the-model-writes-the-kernel/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Fable 5が38分で起動可能なWindows互換Rustカーネルを作成した実験を通じ、AIによる生成が検証を上回る現状の課題と、レガシーCコードの刷新に向けた展望を論じている。",
+    "summaryBody": "Tolmoの研究チームは、AIモデル「Claude Fable 5」を用いてWindows NT互換のカーネル「ntoskrnl-rs」をRustで構築する実験を行った。Fable 5はわずか38分の実働時間で、スケジューラ、メモリマネージャ、I/Oマネージャを含む起動可能なコア部分を生成した。このプロセスでは、GDTやIDTの設定、IRQLのセマンティクスなど、高度なシステムプログラミングの知識に基づいた意思決定が確認されている。その後、Claude Opus 4.8を用いて8日間にわたり機能拡張が行われ、実際のWindowsドライバのロードや、cmd.exeなどのユーザーモードバイナリの実行に成功した。筆者は、AIによる「生成（Generation）」のスピードが人間の「検証（Verification）」能力を大きく上回っている現状を指摘。信頼できるインフラを構築するには、形式検証や自動テストツールの進化が不可欠であり、これらが揃うことで、脆弱性の多い古いC言語のコードをRustで安全に置き換える「インフラの刷新」が可能になると主張している。",
+    "topics": [
+      "Claude Fable 5",
+      "Rust",
+      "OS開発",
+      "サイバーセキュリティ",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": "Fable 5 wrote a Windows kernel in 38 minutes"
+  }
+}

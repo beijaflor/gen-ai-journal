@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T13:06:49.503793+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステムの新しい作者はAIエージェントである",
+    "url": "https://blog.murphytrueman.com/your-design-systems-newest-author-is-an-agent/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントがデザインシステムの「読み手」から「書き手」へと進化したことで、従来の人間によるレビュー体制やトレーサビリティが崩壊しつつあり、新たなガバナンスモデルの構築が急務となっている。",
+    "summaryBody": "デザインシステムは、AIエージェントによる「読み取り専用」の段階から、自らコードやトークンを「書き換える」段階へと急速に移行した。FigmaのMCP（Model Context Protocol）サーバーやGoogleのDESIGN.mdといったツールにより、AIはコンポーネントの配置、変数の更新、ドキュメント生成を自律的に行えるようになっている。しかし、この「圧縮」されたプロセスは、人間がレビューを行う余裕を奪い、システムに意図しない変更が紛れ込むリスクを増大させている。\n\n筆者は、エージェントによる執筆がもたらす4つのケース（キャンバス修正、トークン編集、ドキュメント作成、エージェント用ファイルの生成）を挙げ、それらが従来のガバナンス、特に「誰が承認したか」という責任の所在と「なぜ変更したか」という根拠の透明性を損なうと指摘する。これに適応するためには、デザインシステムを単なる静的なファイルではなく、バージョン管理されたAPIとして扱う必要がある。具体的には、トークンの厳格なバージョン管理、目的重視のコンポーネント記述、そしてAIの成果物をバッチ処理でレビューする体制の構築が推奨される。",
+    "topics": [
+      "Design Systems",
+      "AI Agents",
+      "Figma",
+      "Governance",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Your design system has a new author"
+  }
+}

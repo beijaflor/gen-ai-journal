@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T11:33:48.971477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトからワークフローへ：AIでフロントエンド開発の生産性を向上させる",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-10",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIを単なるコード生成ツールではなく、JiraやSlack、Confluence等の情報を統合・検証する「ワークフローの実行エンジン」として活用し、フロントエンド開発のボトルネックを解消する手法の提案。",
+    "summaryBody": "本記事は、フロントエンド開発における生成AI活用の本質が「コーディングの高速化」から「情報の収集・統合・検証（オーケストレーション）」へ移行していることを解説しています。開発者がJira、Figma、Confluence、Slack、GitHubなどの複数のシステムを横断して情報を収集するコストを、LLMとMCP（Model Context Protocol）を活用した統合ワークフローによって自動化する方法を具体的に提示しています。特に、コードを書き始める前に「プランモード」で要件の矛盾や未解決事項を特定する重要性や、Slackの長いスレッドから意思決定を抽出する手法、そして実装後の検証ループまでをクローズドループで回す実践的なステップが示されています。これにより、構文エラーではなく「コンテキストの誤解」による手戻りを防ぎ、開発の品質と速度を両立させる「コンテキストエンジニアリング」の重要性を強調しています。",
+    "topics": [
+      "生成AI",
+      "フロントエンド開発",
+      "LLMワークフロー",
+      "MCP (Model Context Protocol)",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

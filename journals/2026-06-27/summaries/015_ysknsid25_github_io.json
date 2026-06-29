@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:41:35.684286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "untodo - 人間とAIのための型安全なTODO管理ライブラリ",
+    "url": "https://ysknsid25.github.io/untodo/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "従来のコメント形式のTODOを型安全な関数呼び出しに置き換え、型システムとリンターによって解決を強制する開発者ツール。",
+    "summaryBody": "untodoは、ソースコード内の`// TODO:`コメントを、型システムと統合された`TODO()`関数に置き換える軽量ライブラリ（約1.4KB）です。この関数は`never`型を返すため、未実装箇所を型チェックの段階で確実に捕捉でき、ダミーの型キャストなどを排除できます。また、専用のESLint/oxlintプラグインにより、ビルド時にTODOの存在をエラーとして報告させることが可能です。依存関係がなくNode.js/Bun/Denoで動作し、テキストベースのコメントよりもAIコーディングアシスタント（Claude Code等）が意図を認識しやすいという特徴があります。負債を放置せず、開発プロセスに組み込むための実用的なソリューションです。",
+    "topics": [
+      "TypeScript",
+      "Developer Experience",
+      "ESLint",
+      "Type Safety",
+      "AI Coding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "untodo - Type-safe TODO for humans and AI"
+  }
+}

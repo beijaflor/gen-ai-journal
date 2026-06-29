@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:12:10.851795+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Self-Harness: 自己改善型ハーネスによるLLMエージェントの性能向上",
+    "url": "https://arxiv.org/abs/2606.09498",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMエージェントが自身の動作環境（ハーネス）の弱点を自律的に分析・修正し、人間の介入なしに性能を向上させる自己改善フレームワークの提案。",
+    "summaryBody": "本論文は、LLMベースのエージェントと環境の相互作用を仲介する「ハーネス」を、モデル自身が最適化する新手法「Self-Harness」を提案しています。従来、ハーネスの設計は人間の専門家がモデルの特性に合わせて行ってきましたが、モデルの多様化に伴いこのアプローチは限界を迎えています。Self-Harnessは、実行トレースからモデル固有の失敗を特定する『Weakness Mining』、最小限の修正案を出す『Harness Proposal』、回帰テストで品質を担保する『Proposal Validation』の3ステップからなる反復ループです。Terminal-Bench-2.0を用いた実験では、MiniMax M2.5、Qwen3.5、GLM-5といった異なるモデル群で、パス率を最大で21.4ポイント向上させることに成功しました。これは、エージェントが自らの設計に能動的に参加し、性能を自律的に高められることを示唆しています。",
+    "topics": [
+      "LLM Agent",
+      "Self-Improvement",
+      "Autonomous Agents",
+      "System Engineering",
+      "Model Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Self-Harness: Harnesses That Improve Themselves"
+  }
+}

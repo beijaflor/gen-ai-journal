@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:16:38.455414+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "時雨堂における「スキル（SKILL.md）」を活用したLLM駆動開発の実践",
+    "url": "https://voluntas.ghost.io/shiguredo-skill-20206-06/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "時雨堂が実践する、LLMへの詳細な指示体系「スキル」を核とした、Issueの洗練から徹底的なコードレビューまでを自動化・標準化する次世代の開発フロー。",
+    "summaryBody": "時雨堂におけるLLM（大規模言語モデル）を最大限に活用するための「スキル（SKILL.md）」の運用事例が紹介されています。主な内容は以下の通りです。まず「スキル」とはLLMに与える高度に構造化された指示書のことで、Git操作、Issue管理、プログラミング言語（Erlang、Rust、TypeScript等）ごとのノウハウが個別に集約されています。開発フローでは、人間が作成したIssueを「polish-issue」スキルで実装可能なレベルまで磨き上げ、実装後は「review-diff-code」スキルによって7つの観点から最大5周の徹底的なレビューを行います。この体制により、人間は「判断」という本質的な業務に集中できるようになり、スキルの有無がLLMの出力精度に決定的な差を生んでいることが示されています。スキルは毎日改善され、常に最新の状態が保たれています。",
+    "topics": [
+      "LLM駆動開発",
+      "SKILL.md",
+      "時雨堂",
+      "AIエージェント",
+      "GitHubワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

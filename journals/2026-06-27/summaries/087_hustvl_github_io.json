@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:10:25.143606+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Moebius: 10B級の性能を0.2Bの軽量モデルで実現する画像インペインティング・フレームワーク",
+    "url": "https://hustvl.github.io/Moebius/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Moebiusは、わずか0.22Bのパラメータ数でFLUX.1-Fill-Dev（11.9B）に匹敵する性能を誇る、超軽量・高速な画像インペインティング・フレームワークです。",
+    "summaryBody": "画像インペインティングにおいて、FLUX.1などの10B（100億）規模の巨大モデルは高い品質を実現していますが、計算コストが膨大で実用性に課題がありました。本研究で提案された「Moebius」は、わずか0.22B（2.2億）のパラメータで、これら巨大モデルに匹敵、あるいは一部のベンチマークで凌駕する性能を達成しました。核となる技術は、自己・相互注意機構を線形行列へ集約する「Local-λ Mix Interaction (LλMI) ブロック」と、潜在空間内で教師モデルの能力を転移させる「適応的多粒度蒸留戦略」です。この相乗効果により、FLUX.1-Fill-Devの2%未満のサイズで15倍以上の推論速度向上を実現。自然景観や人物の肖像など6つの主要ベンチマークで高精度な結果を残しており、コンシューマ向けデバイスやエッジデバイスでの実用的な高精度AI画像編集を可能にします。",
+    "topics": [
+      "画像インペインティング",
+      "拡散モデル",
+      "モデル軽量化",
+      "知識蒸留",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance"
+  }
+}

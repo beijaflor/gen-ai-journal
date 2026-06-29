@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:32:04.307446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code サブエージェントのネスト機能で .claude/agents/ の定義が効いた話",
+    "url": "https://zenn.dev/genda_jp/articles/16d35ffa464d65",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code v2.1.172で導入されたサブエージェントのネスト機能を活用し、定義済みエージェントを「共通部品」として再帰的に呼び出す設計の有効性を解説しています。",
+    "summaryBody": "Claude Code v2.1.172より導入された「サブエージェントから別のサブエージェントを呼び出せる（最大5階層）」機能を検証した記事です。筆者は、これまで定義していた役割ベースのサブエージェント（code-explore, implementer, heavy-implementer, test-runner）が、メインセッションからの指示を介さずとも、サブエージェント同士で自律的に連携し「孫エージェント」として呼び出される様子を報告しています。\n\n主な利点として、以下の3点を挙げています：\n1. **共通部品化**: .claude/agents/ 配下の定義が、全階層から同じ選択肢として見えるため、既存の定義をそのまま再利用できる。\n2. **構造的なモデル固定**: 各役割に適したモデル（Opus, Sonnet, Haiku等）を、階層が深くなっても確実に適用できる。\n3. **文脈の隔離**: テスト実行などの冗長なログを孫エージェント側で処理・要約させることで、上位階層のトークン消費と文脈の汚れを抑制できる。\n\nサブエージェントを単なる「メインからの委譲先」ではなく、システム全体で機能する「専門ロールを持つ共通部品」と再定義する、エージェント設計の新たな視点を提供しています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Anthropic",
+      "Software Development",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

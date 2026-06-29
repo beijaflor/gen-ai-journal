@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-24T02:13:30.031398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを定期実行するベストプラクティス：Cron・launchd・/loop・GitHub Actions 徹底比較",
+    "url": "https://qiita.com/degudegu2510/items/e15edc063e19ef82604c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI（特にClaude Code）を定期実行するための5つの手法を、動作環境や自律性の観点から徹底比較し、最適な選択基準と設定例を解説したガイド。",
+    "summaryBody": "AIの活用が広まる中、レポート生成やコード品質チェックなどのタスクを定期実行するためのベストプラクティスを紹介しています。具体的には、1. Linux/Unix標準の「Cron」、2. macOSに最適化された「launchd」、3. AIが自律的に実行間隔を判断するClaude Code独自の「/loop」モード、4. クラウド管理とチーム共有に適した「GitHub Actions」の4つ（5手段）を比較。macOSならlaunchd、自律的な監視なら/loop、チーム開発ならGitHub Actionsといった、環境や目的に応じた使い分けを具体的な設定ファイル（crontab, plist, YAML等）の例を交えて詳説しています。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "自動化",
+      "cron",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

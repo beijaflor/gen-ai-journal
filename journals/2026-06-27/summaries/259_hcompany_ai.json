@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-27T12:12:28.533930+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HoloDesktop CLI：既存のAIエージェントにPC操作能力（Computer Use）を付与するオープンソース・ツール",
+    "url": "https://hcompany.ai/holodesktop-cli",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude CodeやCursorといった既存のAIエージェントをローカルPCの画面認識・GUI操作と連携させ、APIのないアプリの自動化や視覚的なQAテストを可能にするツール。",
+    "summaryBody": "H Companyが、ローカル環境で動作するコンピュータ操作エージェント（CUA）「H Agent」を既存のワークフローに統合する「HoloDesktop CLI」を発表しました。このツールは、MCP、ACP、A2Aといったプロトコルを介して、Claude Code、Cursor、Hermes、OpenClawなどの主要なエージェント・ハーネスと連携します。主な特徴は、ローカルデバイス上での推論に対応している点です。Holo3.1 35Bモデル（Apache 2.0）を自前でホストすることで、プライバシーを完全に維持しながら、クラウド型モデルと比較して約30〜40倍の低コスト、あるいは無料でGUI操作ループを実行できます。NVIDIAとの協力により量子化（NVFP4）が最適化されており、MacやNVIDIA DGX上での高速なローカル実行が可能です。これにより、開発したWebアプリの視覚的なバグチェックや、デスクトップアプリを跨いだ定型業務の自動化が現実的なコストで実現します。",
+    "topics": [
+      "Computer Use",
+      "AI Agent",
+      "Holo3.1",
+      "MCP (Model Context Protocol)",
+      "Open Source AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Let your favorite agent harness operate your computer: Introducing HoloDesktop CLI"
+  }
+}

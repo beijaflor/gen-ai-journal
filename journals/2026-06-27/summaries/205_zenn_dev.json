@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:20:03.003140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "小さいローカル LLM をファインチューニングしてタスクに特化させ、Unity で利用する",
+    "url": "https://zenn.dev/meson_tech_blog/articles/fine-tuning-local-llm",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemma 3 2BをMLXでLoRA学習し、データ合成・品質管理を経てUnity上のllama.cppで動作させるまでの一連のローカルLLM活用パイプラインを解説しています。",
+    "summaryBody": "Apple Silicon MacとMLXフレームワークを使用し、軽量LLM「Gemma 3 2B」を特定の分類タスクに最適化する実践的チュートリアルです。まず少数の手動データからClaudeを用いて教師データを増幅し、LLMによる品質判定（品質ゲート）を経て高品質な学習用データセットを作成する手法を提示。LoRAを用いた学習プロセスでは、メモリ節約のためのパラメータ設定（max_seq_lengthやnum_layersの影響）を詳細に解説しています。さらに、学習済みアダプタをベースモデルに融合（Fuse）し、GGUF形式へ変換して「LLM for Unity」でiPhone実機上で動作させるまでのワークフローを網羅。変換時に発生しうるトークナイザーの不整合などの技術的トラブルとその解決策についても触れており、エッジAI実装の現場で即応可能な知見が含まれています。",
+    "topics": [
+      "Gemma 3",
+      "MLX",
+      "LoRA",
+      "Unity",
+      "GGUF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 94
+    }
+  }
+}

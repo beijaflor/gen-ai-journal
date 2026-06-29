@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-26T13:08:06.341612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen-AgentWorld: 汎用エージェントのための言語世界モデル",
+    "url": "https://arxiv.org/abs/2606.24597",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "アリババのQwenチームが、1,000万件以上の行動ログを用いて構築した「Qwen-AgentWorld」を発表し、LLMによる高度な環境シミュレーションとエージェントの性能向上を実現した。",
+    "summaryBody": "本論文は、AIエージェントが環境の変化を予測するための「世界モデル」を大規模言語モデル（LLM）で構築する手法を提案しています。研究チームは、35Bおよび397Bパラメータの「Qwen-AgentWorld」を開発しました。このモデルは、1,000万件以上のインタラクション軌跡を学習し、長期的なChain-of-Thought（CoT）推論を用いて、7つのドメインにわたる複雑な環境変化をシミュレート可能です。トレーニングプロセスは、一般的な世界理解を注入するCPT、状態遷移の推論を活性化させるSFT、そしてシミュレーション精度を鋭敏化するRLの3段階で構成されています。また、新たな評価指標として「AgentWorldBench」を導入し、既存のフロンティアモデルを凌駕する性能を確認しました。実用面では、数千の環境を仮想的に提供するデカップリングされたシミュレータとして、エージェントの強化学習を大幅に加速させるほか、エージェント基盤モデルのウォームアップとしても極めて有効であることを示しています。",
+    "topics": [
+      "世界モデル (World Models)",
+      "AIエージェント",
+      "Qwen",
+      "強化学習",
+      "LLMシミュレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 50,
+      "overall": 95
+    },
+    "originalTitle": "Qwen-AgentWorld: Language World Models for General Agents"
+  }
+}

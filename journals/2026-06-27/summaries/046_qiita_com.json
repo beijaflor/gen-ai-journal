@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-22T15:29:55.929988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiro CLI v3.0.0がやってくる！ #AWS",
+    "url": "https://qiita.com/kamogashira/items/a3a06fafce2343c4bb6c",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWS向けAI開発ツールKiro CLI v3.0.0において、要件・設計・タスクの3段階で計画を立案してから実装を行う「仕様駆動開発」機能が導入されます。",
+    "summaryBody": "Kiro CLI v3.0.0（先行公開版 v2.8.0）で導入された「仕様駆動開発（Spec-driven development）」の仕組みと活用方法についての解説記事です。主な内容は以下の通りです。\n\n### 1. 開発パラダイムの更新：仕様駆動開発\n「いきなりコードを書く」のではなく、「要件(Requirements) → 設計(Design) → タスク(Tasks)」の順に文書を作成し、合意形成を行ってから実装（Execution）へ進む「plan-then-execute」モデルを採用しています。生成されるドキュメントは`.kiro/specs/`ディレクトリに保存され、人間が直接レビューや編集を行うことが可能です。\n\n### 2. CLIでの操作ワークフロー\n`kiro-cli --v3`で起動し、`/spec new &lt;name&gt;`で要件定義を開始、`/spec run &lt;name&gt;`でタスクを逐次実行します。各タスク間では自動的な検証が行われ、信頼性の高い開発を支援します。\n\n### 3. IDE版との互換性と特徴\nCLI版で作成した仕様ファイルをIDE版で引き継ぐなどの相互運用が可能です。CLI版は逐次実行を基本とする一方、IDE版はタスクの並列実行やGUIによる視覚的な状態表示に強みがあります。\n\nAmazon Q Developer CLIの後継として、エージェント実行基盤の刷新を含む大規模なアップデートとなっています。",
+    "topics": [
+      "AWS",
+      "Kiro CLI",
+      "AIエージェント",
+      "AI駆動開発",
+      "仕様駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
