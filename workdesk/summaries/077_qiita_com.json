@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:58:07.614597+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "テーブル設計をskillsでレビューしてみませんか",
+    "url": "https://qiita.com/kuma_3838/items/dd2e5075ea0d59ee3a36",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "定評のあるDB設計の技術書2冊の知見をベースに、Claude Codeでデータベースのアンチパターンを自動検知できるカスタムスキル「db-review」の紹介記事です。",
+    "summaryBody": "本書は、DB設計の定番書である『失敗から学ぶ RDBの正しい歩き方』と『達人に学ぶDB設計 徹底指南書』の内容に基づき、Claude Code上で動作するレビュー用スキルを開発・公開した記録です。PrismaやRails、生SQLといった多様なスキーマ形式に対応しており、データ不整合のリスクやパフォーマンス劣化の懸念を「CRITICAL/HIGH/MEDIUM」の3段階でレポートします。AIによる「断定」ではなく、開発者の文脈を尊重した「候補提示」というスタンスをとることで、人間とAIが協調して設計品質を高めるワークフローを提案しています。技術書を単に読むだけでなく、実務や個人開発に即座にフィードバックさせるための実用的なアプローチが示されています。",
+    "topics": [
+      "DB設計",
+      "Claude Code",
+      "アンチパターン",
+      "データベース",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

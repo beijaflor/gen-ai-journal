@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:02:19.479947+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "週末2日間でAI駆動開発による家計簿SaaS構築：Claude Codeを活用した開発プロセスの変遷と考察",
+    "url": "https://zenn.dev/thorie/articles/548se-ai-driven-development",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用し、2日間でスクラッチから家計簿SaaSを構築した体験を通じ、エンジニアの役割が「コード書き」から「プランナー・レビュアー・QA」へとシフトする実態を考察している。",
+    "summaryBody": "著者が週末の2日間で、Claude Codeを用いたAI駆動開発により、フロントエンド（React）、バックエンド（Spring Boot/Java）、インフラ（AWS/Terraform）を含む家計簿SaaS「Sumika」のMVPを構築した実践レポートです。開発プロセスは、Claudeの「Planモード」でタスクを細分化し、「Autoモード」でコード生成とPR作成を自動化、人間がレビュアーおよびQAとして品質を担保するサイクルで進められました。\n\nAIによるコード自体の質は高いものの、タスクの漏れや実環境での動作不備といった「おっちょこちょい」な側面が指摘されており、それらを補完するためにE2Eテスト（Playwright/REST Assured）やデプロイ自動化といった「ハーネス（開発基盤）」を整えることの重要性が説かれています。最終的に、これからのエンジニアにはコーディング能力よりも、開発計画の立案、AIの作業承認、そして高度なQA能力が求められるようになると考察しています。",
+    "topics": [
+      "AI駆動開発",
+      "Claude Code",
+      "Spring Boot",
+      "React",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:17:48.561589+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの指示はどこまで効く？ CLAUDE.md・メモリ・スキルの「効く範囲」を整理してみた",
+    "url": "https://dev.classmethod.jp/articles/kash02_claude_context/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude AppとClaude Codeにおける各種設定ファイルやメモリ、スキルの適用範囲と優先順位を、ディレクトリ階層やアカウント単位の視点で整理した解説記事。",
+    "summaryBody": "Claudeにおけるコンテキスト管理の複雑さを解消するため、Web/アプリ版の「App環境」とCLIツールである「Claude Code環境」それぞれの指示の影響範囲をまとめています。App環境ではパーソナライズ、メモリ、プロジェクト指示、スキルが「全体」「プロジェクト内」といった単位で管理される一方、Claude Code環境ではCLAUDE.mdやrules、skillsといったファイルがホームディレクトリ（ユーザーレベル）からカレントディレクトリ（プロジェクトレベル）へと遡って読み込まれ、より作業対象に近い（後に読み込まれる）指示が優先される仕組みが特徴です。各ファイルの配置場所や、競合時の優先順位の考え方（具体的であることや配置の近さ）を理解することで、「指示が反映されない」といったトラブルを避け、効率的なプロンプト管理が可能になります。",
+    "topics": [
+      "Claude",
+      "Claude Code",
+      "CLAUDE.md",
+      "プロンプトエンジニアリング",
+      "AI開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

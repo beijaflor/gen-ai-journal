@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:57:54.573670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SDD（Spec-Driven Development）とLoop Engineeringの関係 ― superpowersは両者を統合したハーネスだった",
+    "url": "https://qiita.com/nogataka/items/b78d9d8cd39967df4119",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングにおける設計規律「SDD」と実行規律「Loop Engineering」の補完関係を整理し、それらを統合した開発ハーネス「superpowers」の構造を分析した記事。",
+    "summaryBody": "AIエージェントによる開発手法として注目される「Spec-Driven Development (SDD)」と「Loop Engineering」の概念的な関係性を詳しく解説しています。SDDは『何を作るか』を仕様として成文化する上流の設計規律であり、Loop Engineeringは『どう安全に回すか』を有界なループで制御する実行の規律です。記事では、SDDの受け入れ基準がLoop Engineeringの停止条件として機能する補完関係にあることを指摘。さらに、Jesse Vincent氏が開発したツール『superpowers』が、これら2つの概念を明示せずに「設計承認前の実装禁止」や「サブエージェントによる検証ゲート」という形で高度に統合・実装している実態を、コードレベルのスキル定義から紐解いています。",
+    "topics": [
+      "SDD",
+      "Loop Engineering",
+      "AIエージェント",
+      "superpowers",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}

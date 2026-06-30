@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T16:29:15.503169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DSpark: 半自己回帰生成と信頼度ベースのスケジューリングによる投機的デコーディングの最適化",
+    "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DSparkは、並列ドラフトモデルの高速性と自己回帰モデルの品質を両立する半自己回帰アーキテクチャと、負荷状況に応じた検証長さの動的最適化を導入した投機的デコーディング技術である。",
+    "summaryBody": "本論文では、LLMの推論を高速化する投機的デコーディング手法「DSpark」が提案されている。従来の並列型ドラフトモデルは生成速度は速いものの、トークン間の依存関係が欠如するため後半の採択率が低下し、また一律の検証がシステムのスループットを圧迫するという課題があった。DSparkは、計算負荷の高い並列バックボーンに軽量な逐次型モジュール（マルコフヘッドやRNNヘッド）を組み合わせる「半自己回帰」構成により、低遅延を維持しつつドラフトの精度を改善した。さらに、各トークンの採択確率を予測する信頼度ヘッドと、ハードウェア特性を考慮したスケジューラを統合。システム負荷に応じて検証トークン数を動的に調整することで、無駄な検証計算を削減する。DeepSeek-V4の実稼働環境では、既存のベースラインと比較してユーザーあたりの生成速度を60%〜85%向上させ、高負荷時でも安定した性能を発揮することを確認した。",
+    "topics": [
+      "Speculative Decoding",
+      "Large Language Models",
+      "DeepSeek",
+      "Inference Optimization",
+      "Throughput Maximization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 94
+    },
+    "originalTitle": "DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation"
+  }
+}

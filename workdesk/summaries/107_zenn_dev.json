@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:06:01.230513+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセッションを見下ろし型オフィスとして可視化するツールを作った",
+    "url": "https://zenn.dev/breakbot/articles/53e7f1c6564f26",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのセッションログをリアルタイムに監視し、エージェントの活動やHooksの発火状況をカイロソフト風の見下ろし型オフィスとして可視化するmacOS向けデスクトップアプリ。",
+    "summaryBody": "### 概要\nClaude Codeの動作状況を視覚的に把握するためのツール「claude-code-park」の開発レポートです。ローカルの `~/.claude/` ディレクトリを監視し、エージェントを社員、セッションをオーケストレーターとして、ゲームのようなグラフィックでリアルタイムに描画します。\n\n### 主な機能と特徴\n- **Hooksの可視化**: 複雑になりがちなHooksの適用範囲や発火タイミングをアニメーションで確認可能。\n- **マルチセッション対応**: 複数のターミナルで走っているセッションを1つの画面でまとめて管理。\n- **シームレスな連携**: 可視化されたエージェントをクリックするだけで、対応するターミナル（iTerm2やVS Code等）を前面に呼び出せます。\n- **プライバシー重視**: 外部通信を一切行わず、ローカルファイルのみを参照する設計。\n\n### AIによる開発プロセス\n著者はRust未経験ながら、Claude Codeを100%活用して開発を完遂。行き詰まった際にClaudeに「散歩してきて（思考を切り替えて）」と促すことで技術的ブレイクスルーが起きたという興味深いエピソードが語られています。新規プロジェクトにおいてAIエージェントと「対話」しながら進めるローカル開発の優位性が強調されています。",
+    "topics": [
+      "Claude Code",
+      "Tauri",
+      "AIエージェント",
+      "可視化",
+      "Vibe Coding"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

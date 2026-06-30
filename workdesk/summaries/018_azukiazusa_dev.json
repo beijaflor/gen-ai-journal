@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:22:25.047790+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントフレームワーク Flue を試してみた",
+    "url": "https://azukiazusa.dev/blog/ai-agent-framework-flue/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TypeScript製のAIエージェントフレームワーク「Flue」を用い、SRE業務を自律的に遂行するエージェントの構築からSlack連携までを解説した実践ガイド。",
+    "summaryBody": "この記事では、TypeScriptでAIエージェントを構築するためのフレームワーク「Flue」の主要機能と使い方を、SRE（Site Reliability Engineering）エージェントの構築例を通じて詳細に解説しています。Flueは、Claude Code等でも採用されているハーネス駆動アーキテクチャを基盤としており、プロンプトの履歴管理やツールの実行、サンドボックス環境の提供など、エージェント開発に必要なコンポーネントを包括的に備えています。\n\n主な特徴として以下の点が挙げられています：\n1. **構成要素のモジュール化**: エージェント、ツール（Valibotによる型定義）、スキル（必要時にロードするプログレッシブ・ディスクロージャー）、サブエージェント（タスク委譲によるコンテキスト汚染の防止）といった概念を分かりやすく整理しています。\n2. **耐久性のある実行**: セッション履歴をDurable Objects等に保存することで、長時間のタスクでもリカバリ可能な設計になっています。\n3. **ワークフローとチャンネル**: ポストモーテム作成のような構造化された処理を定義する「ワークフロー」や、Slackなどの外部インターフェースと接続する「チャンネル」機能についても実例を交えて紹介されています。\n\n実際のコード例では、ログ調査をサブエージェントに任せ、メインエージェントが最終判断を下す設計や、マークダウン形式のRunbookを「スキル」として読み込ませる手法など、実運用に即したアーキテクチャが示されており、AIエージェントの実装を目指すエンジニアにとって非常に有益な内容となっています。",
+    "topics": [
+      "Flue",
+      "AIエージェント",
+      "TypeScript",
+      "SRE",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

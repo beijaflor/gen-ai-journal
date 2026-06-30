@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:22:39.343565+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Open GENAI: デジタル庁「源内」を完全ローカルLLM環境で動かす非公式プロジェクト",
+    "url": "https://github.com/hirokawaguchi/open-genai",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "デジタル庁のガバメントAI「源内(GENAI)」を、AWS等のクラウド依存から切り離し、OllamaやKeycloakを用いて完全ローカル環境で実行可能にするOSSプロジェクト。",
+    "summaryBody": "デジタル庁がオープンソースで公開した「源内（GENAI）」を、Apple Silicon MacやNVIDIA GPU環境下で完全ローカル動作させるための非公式フォークプロジェクトです。元来AWSやAzure等のクラウドサービスに依存していた認証、LLM推論、チャット履歴、RAG、文字起こし、画像生成といった機能を、Keycloak、FastAPI、Ollama、Qdrant、Whisper、Stable DiffusionといったOSSスタックに置換しています。Docker Composeによる容易な環境構築が可能で、チーム単位のナレッジ管理やDifyワークフローとの連携機能も実装。行政・法人等でデータを外部に送れない環境でのAI活用基盤として設計されています。",
+    "topics": [
+      "ローカルLLM",
+      "デジタル庁",
+      "源内(GENAI)",
+      "RAG",
+      "Dify"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

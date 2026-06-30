@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:05:24.809392+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる自動脆弱性診断への信頼が9%に急落、Cobaltの最新レポートが示す「完全自動化」の限界",
+    "url": "https://www.infosecurity-magazine.com/news/trust-ai-vulnerability-scanning/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる完全自動の脆弱性診断を信頼する組織がわずか9%にまで激減し、偽陰性への懸念から人間とAIを組み合わせたハイブリッドモデルへの移行が加速している。",
+    "summaryBody": "Cobaltが発表した「2026年ペネトレーションテスト状態レポート」によれば、脆弱性診断をAIによる自動化のみに頼る企業の割合が、前年の29%から9%へと大幅に低下しました。回答者の78%が「完全自動化ツールは重大な脆弱性を見逃している」と回答しており、偽陰性（検知漏れ）によるリスクが信頼失墜の主な要因となっています。\n\n現在、組織の47%は人間とAIを併用するハイブリッドモデルを好んでおり、その支持率は1年間で22ポイント上昇しました。特にLLM（大規模言語モデル）に関連する脆弱性はコンテキスト依存性が高く、ビジネスロジックの深い理解が必要なため、従来の自動スキャナーでは検知が困難です。AI関連の脆弱性の解決率は38%と低く、平均修復時間（MTTR）も19日から36日へと大幅に伸びています。\n\n主な脅威ベクトルとして、シャドーAI（44%）、データ/モデルポイズニング（41%）、不適切な出力処理（41%）が挙げられており、AIの導入によって攻撃面が複雑化している実態が浮き彫りになりました。報告書は、AIの効率性を活用しつつも、高度な人間による検証を基盤とすることの重要性を強調しています。",
+    "topics": [
+      "AIセキュリティ",
+      "脆弱性診断",
+      "ペネトレーションテスト",
+      "LLMセキュリティ",
+      "サイバーリスク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Trust in Automated AI Vulnerability Scanning Collapses to 9%, New Study Finds"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:54:45.487330+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "herdr: ターミナル上で動作するAIエージェント専用マルチプレクサ",
+    "url": "https://github.com/ogulcancelik/herdr",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "herdrは、tmuxの持続性とAIエージェントの状態監視機能を統合した、ターミナル完結型のAIエージェント・マルチプレクサです。",
+    "summaryBody": "herdrは、Claude Code、GitHub Copilot CLI、Devin CLIなどのAIコーディングエージェントを一つのターミナルで統合管理するためのツールです。tmuxのようにセッションの永続性を持ち、PCを閉じてもプロセスが死なず、SSH経由でスマホなどから再接続できます。最大の特徴はエージェントの状態認識能力で、サイドバーを通じて「作業中」「ブロック」「完了」「アイドル」といったステータスを一目で把握できます。Rust製の軽量な単一バイナリで動作し、マウス操作によるペイン分割やタブ管理、さらにSocket APIを通じたエージェントによる自動操作にも対応しています。既存のGUIベースのエージェント管理ツールとは異なり、完全なTUI（ターミナルUI）レンダリングを維持しながら、開発者フレンドリーな操作環境を提供します。",
+    "topics": [
+      "AI Agents",
+      "Terminal Multiplexer",
+      "Rust",
+      "Developer Tools",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - ogulcancelik/herdr: agent multiplexer that lives in your terminal."
+  }
+}

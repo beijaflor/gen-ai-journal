@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:00:49.556178+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "UnityプロジェクトでAIを効率よく使うためのトークン節約術",
+    "url": "https://zenn.dev/gamedev_toollab/articles/a7364d37455a50",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "UnityやUE5などの大規模なゲーム開発プロジェクトにおいて、AIエージェントのトークン消費を抑えつつ開発効率を最大化するための実務的な設定と運用フローを解説したガイド。",
+    "summaryBody": "UnityプロジェクトでAIコーディングエージェント（Claude CodeやCodex等）を活用する際、膨大な自動生成ファイルや巨大なYAML（Scene/Prefab等）がコンテキストを圧迫し、トークン消費と精度の低下を招く問題があります。本記事では、これを解決するために「AIに何を読ませるか」を設計する重要性を説いています。\n\n主な対策として、`.gitignore`の徹底に加え、`AGENTS.md`や`CLAUDE.md`を用いた探索範囲の制限、Sembleなどのセマンティック検索ツールの併用、巨大ファイルから情報を抽出するスクリプトをAIに書かせる手法を提案しています。また、指示ファイルは英語で記述することで、簡潔さとコードとの親和性を高める運用を推奨しています。最後に、Unity/UE5それぞれのディレクトリ構造に対応した汎用的な設定テンプレートも提供されており、即座に実務へ導入可能な内容となっています。",
+    "topics": [
+      "Unity",
+      "Claude Code",
+      "LLMトークン節約",
+      "AIコーディング",
+      "ゲーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

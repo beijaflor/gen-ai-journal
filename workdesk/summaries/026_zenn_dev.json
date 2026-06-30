@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:14:06.585995+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのレート残量をCLI一発で確認する ~ もうブラウザ確認なんてしない ~",
+    "url": "https://zenn.dev/masa0902dev/articles/clc-claude-code-rate",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの利用制限（5時間枠・週間枠・追加枠）を、ブラウザを開かずにターミナルから一発で確認できるPython製の軽量CLIツールを紹介しています。",
+    "summaryBody": "Claude Codeを利用する際に懸念となる「レート制限の残り」を、ターミナル上で `clc rate` と打つだけで確認できるツール「claude-code-rate」の解説記事です。このツールはPythonの標準ライブラリのみで構成されており、外部パッケージのインストールが不要な点が特徴です。macOSのKeychainやClaude Codeの設定ファイルから認証トークンを自動で取得し、5時間枠、7日間枠、および追加枠（Extra usage）の使用率をカラー付きのプログレスバーで視覚的に表示します。記事内では、AnthropicのOAuth APIエンドポイントの仕様や、macOS/Windows/Linuxへの対応方法、さらに利用規約に関するグレーゾーンの考察（自己責任での利用推奨）についても触れられています。既存の常時監視型ツールと比較して、単発での確認に特化したシンプルな設計が魅力です。",
+    "topics": [
+      "Claude Code",
+      "Python",
+      "CLI",
+      "Anthropic",
+      "API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

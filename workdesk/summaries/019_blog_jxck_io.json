@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:56:44.342941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Web 標準の議論を LLM-Wiki で追う",
+    "url": "https://blog.jxck.io/entries/2026-06-29/tc39-llm-wiki.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Andrej Karpathy氏が提唱したLLM-Wikiの手法をTC39の議事録管理に応用し、14年分にわたる膨大なWeb標準の議論経緯を効率的に把握・蓄積するシステムの実践報告。",
+    "summaryBody": "Jxck氏による、LLM（大規模言語モデル）を活用した知識管理の実践記事です。ECMAScriptの策定を行うTC39の議事録は2012年から詳細に記録されていますが、その膨大な量から「なぜこの仕様になったのか」という文脈を追うコストが課題でした。これに対し、Andrej Karpathy氏が提唱した「LLM-Wiki」という、情報を整理し知識を育てていくフレームワークを導入。議事録を取り込む`Ingest`、最新の会議をまとめる`Summarise`、関連仕様をグループ化する`Families`、既存Wikiから知識を抽出する`Query`といった機能をエージェントとして実装しました。既存のRAG（検索拡張生成）と比較して、知識をWikiとして構造化することで蓄積による複利効果が得られる点や、トークンコストを抑えつつ特定のブラウザベンダーの反対理由やステージ遷移の歴史など、高い解像度で情報を引き出せる点がメリットです。この手法はCSSWGなど他のWGにも応用可能であり、Web標準のキャッチアップという情報の海を渡るための強力な指針となっています。",
+    "topics": [
+      "LLM-Wiki",
+      "TC39",
+      "Web標準",
+      "ナレッジマネジメント",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}
