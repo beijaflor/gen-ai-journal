@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:16:55.577513+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Enterprise全社導入で何を検討し、何をやらなかったか - メドピア開発者ブログ",
+    "url": "https://tech.medpeer.co.jp/entry/2026/06/26/122446",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "メドピア社がClaude Enterpriseを全社導入する際、AIの自律性に基づいたリスク分類と「事前制御」を軸とするセキュリティ設計、そして工数対効果に基づく断念事項を詳説した実践記録。",
+    "summaryBody": "メドピア株式会社が約130名の社員向けにClaude Enterpriseを導入した際の、技術的・組織的な検討プロセスを公開した記事です。最大の特徴は、AI製品を自律性の高さに基づいて「Tier 1（チャット型）」と「Tier 2（自律操作型）」に分類し、リスクを定義した点にあります。監査ログ機能が不十分な現状を鑑み、事後検証ではなくSSO、SCIM、CAA（端末認証）による「事前制御」を主軸に据えた設計がなされています。具体的には、非エンジニアへのClaude Code利用制限、端末認証を迂回させないためのSlack連携無効化、そしてSCIMを利用した権限管理の自動化などが実施されました。また、MDMによる詳細設定の強制を見送るなど、運用コストとリスクのトレードオフについても具体的に言及されており、AI導入を検討する企業のセキュリティ・コーポレートIT担当者にとって極めて実用的な知見がまとめられています。",
+    "topics": [
+      "Claude Enterprise",
+      "AIガバナンス",
+      "情報セキュリティ",
+      "SaaS管理",
+      "メドピア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

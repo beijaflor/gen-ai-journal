@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:19:05.164975+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apple Silicon向け軽量コンテナランタイム「apple-container」利用者向けリファレンス",
+    "url": "https://gist.github.com/voluntas/306e75ce54a24379b4b505cf9c4df0cd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Silicon Mac専用の軽量Linuxコンテナランタイム「apple-container」のインストールから各種コマンド、ネットワーク設定、永続開発環境（machine）の構築までを網羅したリファレンスガイド。",
+    "summaryBody": "Apple Silicon Mac上で動作する、1コンテナにつき1つの軽量VMを割り当てる方式のランタイム「apple-container（container CLI）」の包括的なマニュアルです。Docker互換のOCIイメージをそのまま利用でき、ネイティブなarm64およびRosetta経由のamd64実行に対応しています。\n主な特徴と内容は以下の通りです：\n- **基本操作**: `container run`, `build`, `pull/push` など、Dockerと親和性の高いCLI体系。\n- **ネットワーク・DNS**: macOS 26以降での高度なネットワーク管理、ホスト名解決を容易にする組み込みDNS機能。\n- **ボリューム管理**: 名前付きボリュームや、ext4のジャーナルモード指定、ホストディレクトリの共有。\n- **コンテナマシン (machine)**: `/sbin/init` を起動し、ホストのホームディレクトリをマウントする永続的な開発用Linux環境の構築機能。\n- **システム管理**: カーネルの管理（`system kernel`）や、設定ファイル（`config.toml`）によるカスタマイズ、macOSのバージョンごとの制約事項の解説。",
+    "topics": [
+      "Apple Silicon",
+      "Container Runtime",
+      "macOS",
+      "Virtualization",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

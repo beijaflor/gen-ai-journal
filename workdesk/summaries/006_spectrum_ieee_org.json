@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:37:17.859754+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIがRFIC設計の「暗黒芸術」を習得：人間には想像できない無線チップの設計へ",
+    "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プリンストン大学の研究チームが、強化学習や拡散モデルを用いて、従来「職人芸」とされてきた高周波集積回路（RFIC）設計を自動化し、人間を凌駕する性能を実現する手法を開発した。",
+    "summaryBody": "無線通信に不可欠な高周波集積回路（RFIC）の設計は、マクスウェル方程式や熱力学が複雑に絡み合うため、長年「暗黒芸術（Dark Art）」と呼ばれる熟練エンジニアの直感に頼る領域でした。プリンストン大学のKaushik Sengupta教授らのチームは、この課題に対し、従来のテンプレートに依存しないAI駆動型のアプローチを導入しました。強化学習（RL）を用いて回路構成をゼロから探索し、畳み込みニューラルネットワークを用いたエミュレータによって電磁界シミュレーションをミリ秒単位に高速化。さらに画像生成AIで使われる拡散モデルを応用し、性能を維持しつつ人間がデバッグしやすい「解釈可能」なレイアウトの生成にも成功しました。開発された5G用パワーアンプは、従来の設計手法を大幅に上回る広帯域化と効率を達成しており、設計期間の劇的な短縮と性能向上を両立しています。今後は「ImageNet」のようなオープンなデータセットの構築が、回路設計におけるユニバーサルな基盤モデルの実現に不可欠であると提言されています。",
+    "topics": [
+      "RFIC",
+      "半導体設計",
+      "強化学習",
+      "拡散モデル",
+      "5G/6G"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "AI Learns the “Dark Art” of RFIC Design"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:13:52.973858+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code と Codex のレビュー機能は脆弱性をどれだけ見つけられるかをOWASP Benchmark で検証",
+    "url": "https://zenn.dev/yukkie1114/articles/3d927e8c28e085",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとCodexの各種コードレビュー機能をOWASP Benchmarkを用いて比較し、セキュリティ脆弱性の検知能力と特性を定量的・定性的に分析した検証レポート。",
+    "summaryBody": "Claude Code（CC）とCodexの計4種類のレビュー機能を対象に、OWASP Benchmark Java 1.2を用いて脆弱性検知能力を定量的に評価した結果を解説しています。主な検証結果として、Codex /review（GPT-5.5）が最高スコア（0.964）を記録し、CC /security-reviewが検出率98.2%で追随しています。検証では、単一のツールで見逃しが発生する場合でも、Codex /reviewとCC /security-reviewを併用することで脆弱性の検出率を100%まで高められることが示されました。一方で、モデルごとに「セキュリティ」「コード品質」「全体俯瞰」など設計思想に基づく得意不得意があることも判明しています。完全自動で誤検知をゼロにすることは難しく、AIによるスクリーニングと最終的な人間による確認を組み合わせる運用が実務上の最適解であると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "OWASP Benchmark",
+      "脆弱性診断",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

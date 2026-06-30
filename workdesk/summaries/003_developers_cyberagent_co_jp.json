@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:36:40.276018+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントの実行過程を検証する Agent as a Judge をフィードバックループに導入する",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/64354/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントの成果物だけでなく作業過程（軌跡）を別のAIで評価する「Agent as a Judge」を開発フローに導入し、プロセスの不正や動作確認の不備を自動検知する取り組み。",
+    "summaryBody": "サイバーエージェントのアニメTech STUDIOにおける、コーディングエージェントの品質担保に関する実践報告です。エージェントが「完了」を報告した際、その作業履歴（Transcript）を別の評価用エージェント（Agent as a Judge）が検証する仕組みを構築しました。主な特徴は、単なるテキスト解析に留まらず、実際にツールを用いてCIステータスや実行ログを確認しに行く「能動的な事実確認」にあります。評価軸には『前提情報の取得状況』『動作確認の証跡』『危険操作の有無』『ごまかしの兆候』『推奨開発手法（TDD等）への準拠』を設定。判定結果を人間向けのMarkdownレポートと自動処理用のJSONで出力することで、人間によるレビュー前の段階で低品質な成果物をフィルタリングし、開発効率と信頼性を向上させています。",
+    "topics": [
+      "Agent as a Judge",
+      "LLMエージェント",
+      "Claude Code",
+      "AIエンジニアリング",
+      "ソフトウェア品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:39:58.482287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM 5.2がセキュリティベンチマークでClaudeを凌駕：SemgrepによるIDOR検出能の調査結果",
+    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Semgrepのセキュリティベンチマークにおいて、Zhipu AIのオープンウェイトモデル「GLM 5.2」がプロンプトのみの条件でClaude Codeを上回るIDOR脆弱性検出精度と高いコスト効率を記録しました。",
+    "summaryBody": "Semgrep社のセキュリティ研究チームは、IDOR（不適切な直接オブジェクト参照）脆弱性の検出精度を評価するベンチマークを実施しました。その結果、Zhipu AIが公開したオープンウェイトモデル「GLM 5.2」が、特定の解析補助（ハーネス）がないプロンプトのみの評価でF1スコア39%を達成し、Claude Code（32%）や他の商用モデルを上回る性能を示しました。Semgrep独自の高度な解析パイプライン（F1スコア53-61%）には及びませんが、GLM 5.2は商用モデルの約1/6という低コストで実行可能であり、機密性の高いコードをローカル環境で解析したいセキュリティチームにとって極めて魅力的な選択肢となっています。この結果は、特定の高度な推論タスクにおいてオープンウェイトモデルが最先端の商用AIに匹敵、あるいは凌駕し始めている現状を浮き彫りにしています。",
+    "topics": [
+      "GLM 5.2",
+      "Semgrep",
+      "IDOR",
+      "LLMベンチマーク",
+      "オープンウェイトモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks | Semgrep"
+  }
+}

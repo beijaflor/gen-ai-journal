@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:38:57.936742+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 4.8を用いたMRIのセカンドオピニオン取得とその顛末",
+    "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "著者が肩のMRI画像をClaude Code上のOpus 4.8に直接解析させたところ、人間の医師による「重度の腱断裂」という診断を真っ向から否定する「異常なし」という結果が導き出された、実験的なセカンドオピニオンの記録。",
+    "summaryBody": "このブログ記事は、肩の痛みに悩む著者がAI（Opus 4.8）を活用してMRI診断のセカンドオピニオンを取得した実験的なプロセスを詳細に記述しています。当初、クリニックの医師からは「グレードIIIの部分断裂」と診断され、即座に衝撃波療法やホメオパシー治療（Traumeel）が実施されました。しかし、GPT 5.5 Proによる治療内容の疑義指摘を受け、著者はClaude Codeを用いて数百枚のDICOMファイルを直接Opus 4.8に解析させました。\n\n解析の結果、AIは医師の診断とは異なり「腱は無傷である」と報告。さらに複数のAIエージェントを用いた裁定プロセス（Arbitration）を通じても、AI側の「異常なし」という結論が支持されました。人間とAIの診断が180度異なるという事態に、著者は「専門家を信頼できる安心感」が損なわれる一方で、将来的にAIがメールの校正と同じようにMRIのレビューを信頼される時代が来ることを期待しています。医療アドバイスではなく、技術的な好奇心に基づいた検証記録としてまとめられています。",
+    "topics": [
+      "AI医療診断",
+      "Claude Code",
+      "DICOM解析",
+      "セカンドオピニオン",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 95,
+      "overall": 85
+    },
+    "originalTitle": "Using Opus 4.8 to get a second opinion on an MRI and where it leaves me"
+  }
+}
