@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:00:04.644802+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Workersはなぜ日本企業の「アプリ実行基盤」として選ばれにくいのか",
+    "url": "https://zenn.dev/417/articles/masakazu-cf-workers-japan-enterprise-wall-20260628",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflare Workersが日本企業に浸透しにくい理由は、データ保管場所の「日本法域」保証の欠如や、ISMAP・FISCなどの制度的な説明材料の不足にある。",
+    "summaryBody": "Cloudflare Workersは技術的に優れているものの、日本企業のエンタープライズ用途で採用するには、データ主権とコンプライアンス面で5つの大きな壁が存在します。第一に、D1やR2などのストレージサービスに「Japan jurisdiction（日本法域）」の選択肢がなく、データの国内保管を法的に保証できません。第二に、管理ログやメタデータを日本国内に固定する手段（CMB）が提供されていません。第三に、Workersからの外部API呼び出し（subrequest）はリージョン制限の対象外です。また、ガバメントクラウドへの未採択や、SIerが利用できるFISC対応リファレンスの不足といった「調達レール」の問題も指摘されています。本記事では、これらを踏まえた現実的な解として、エッジ処理にCloudflareを使い、正本データはAWS等の東京リージョンに置くハイブリッド構成や、フェーズ別の判断基準を提案しています。",
+    "topics": [
+      "Cloudflare Workers",
+      "データ主権",
+      "ISMAP",
+      "クラウドコンプライアンス",
+      "サーバーレス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

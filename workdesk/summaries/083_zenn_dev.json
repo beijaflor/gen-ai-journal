@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:59:35.150812+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP Serverを自作してOAuthを追いかける",
+    "url": "https://zenn.dev/random_memory/articles/12fa97a8a1731c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCP (Model Context Protocol) の認可仕様を詳細に読み解き、API Gateway と Go Lambda、Cognito を組み合わせて OAuth 2.1 準拠のサーバーを構築する実践的なガイド。",
+    "summaryBody": "この記事は、Model Context Protocol (MCP) の 2025-11-25 版仕様に基づき、自作 MCP サーバーに認可機能を実装する過程をまとめた技術解説です。コスト効率を重視して AWS Lambda (Go) を採用し、OAuth 2.1 ドラフトや RFC 9728 (Protected Resource Metadata)、RFC 8414 (AS Metadata) といった複数の仕様が MCP 認可においてどのように組み合わされているかを整理しています。特に AWS Cognito を Identity Provider として使用する際の制約（PKCE のメタデータ表記や issuer の不整合など）を解決するための shim 実装や、Resource Indicators (RFC 8707) を用いた Audience 検証の重要性について、コードを交えて深く掘り下げています。実装上のハマりどころである discovery プロトコルの優先順位や、API Gateway のステージ設計に関する知見も提供されています。",
+    "topics": [
+      "MCP",
+      "OAuth 2.1",
+      "AWS Lambda",
+      "Cognito",
+      "Go"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}

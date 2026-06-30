@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:59:48.933644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに知識ベースを育てさせる：Karpathy氏の「LLM Wiki」を実際にやってみた",
+    "url": "https://zenn.dev/fujimac/articles/fc62cb2ac43505",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Andrej Karpathy氏が提唱した「人間ではなくLLMがWikiの構築・管理を担う」という概念に基づき、ObsidianとClaude Codeを用いた持続可能なナレッジベース構築の実践手法を紹介。",
+    "summaryBody": "従来のナレッジ管理が「メンテナンスコストが価値を上回り、情報の墓場化する」という課題に対し、Andrej Karpathy氏の「LLM Wiki」構想を具現化した実践記録です。この手法では、人間は一次ソース（論文、メモ、会話ログ）を置くだけで、LLMが要約・相互参照・矛盾検出を自動で行います。不変のソース層、LLMが管理するWiki層、エージェントへの指示を定義するSchema層の3層構造で構成され、Ingest（取り込み）、Query（質問）、Lint（整合性チェック）の3つの操作により、知識が複利的に積み上がる仕組みを実現。著者はObsidian、Claude Code、Codexを組み合わせ、毎朝の進捗ブリーフィングの自動取り込みや、モバイル環境からのメモ連携までを含めたワークフローを構築しています。",
+    "topics": [
+      "LLM Wiki",
+      "Andrej Karpathy",
+      "Obsidian",
+      "Claude Code",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

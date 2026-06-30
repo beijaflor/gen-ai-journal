@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:04:49.150675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社内申請が行われるたびにプロンプトがどんどん育つAIエージェントを支えるDevin",
+    "url": "https://engineering.dena.com/blog/2026/06/devin-prompt-improvement-cycle/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "社内申請エージェントの差し戻し理由や会話ログをAIエンジニア「Devin」に毎週分析させ、プロンプトを自律的に改善・Pull Request作成まで行う自動化サイクルの構築事例。",
+    "summaryBody": "DeNAのエンジニアチームが、自律型AIソフトウェアエンジニア「Devin」を活用して、社内申請を補助するAIエージェントのプロンプトを継続的に改善する仕組みを導入しました。従来、申請の差し戻しが発生するたびに人間が行っていたプロンプトの微調整を自動化したものです。\n\n### 仕組みの核となるポイント\n- **Devinの活用**: Playbook（手順書）とScheduled Sessions機能を組み合わせ、毎週月曜日に自動実行。リポジトリを読み込み、修正箇所の判断からテスト、Draft PR作成までをDevinが担当します。\n- **データソース**: kintone上の申請差し戻しコメントと、Langfuseに記録されたユーザーとの対話ログ（OpenTelemetry経由）を分析し、エージェントがつまずいている「言語化されていない判断基準」を抽出します。\n- **ガードレールの設置**: プロンプト本文以外（ロジック等）の編集禁止、変更行数の制限、既存テストのパス、人間による最終レビュー（Draft PR形式）を必須とすることで、信頼性を担保しています。\n\nこの取り組みにより、複雑な入力ルールや条件分岐が、運用を通じて「3週間（3回のサイクル）かけて段階的に洗練される」といった、実運用に即した自律的な改善ループが実現されています。",
+    "topics": [
+      "Devin",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "Langfuse",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

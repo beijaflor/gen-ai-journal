@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:01:51.427596+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DevOps Agent奮闘記 〜アラートを起点に、運用の一次対応をAIに任せてみた〜",
+    "url": "https://zenn.dev/estie/articles/29a0968c00b8d3",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DatadogやAWSのアラートをトリガーにDevOps Agentを自動起動し、ログやコードを分析した一次調査結果をSlackに集約する運用自動化の事例紹介。",
+    "summaryBody": "estie社における、AIエージェントを用いたシステム運用自動化の取り組みについての解説です。開発速度がAIで向上する中で、運用のキャパシティをスケールさせるために「DevOps Agent」を導入しました。\n\n### 仕組みと工夫\nDatadogやAWS EventBridgeからの通知をLambdaで集約・整形し、DevOps Agentに調査を依頼するアーキテクチャを構築。特に以下の点にこだわっています。\n- **根拠の明示**: 単なる推測ではなく、確認したログやGitHub上のコード、リソースへのリンクを提示し、人間が判断を追体験できるように設計。\n- **重複抑制**: DynamoDBでアラート履歴を管理し、短時間の同種アラートに対する過剰な調査実行を抑制しコストとノイズを削減。\n\n### 成果と展望\nECSのタスク異常終了など、原因とコードの対応が明確なケースでは極めて高い精度で一次切り分けが可能になりました。今後は、調査結果を元にClaude CodeやDevinなどの開発エージェントと連携し、修正PRの作成までを自動化することを目指しています。",
+    "topics": [
+      "DevOps",
+      "SRE",
+      "AI Agent",
+      "AWS",
+      "Datadog"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}
