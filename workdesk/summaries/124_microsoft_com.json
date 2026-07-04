@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:37:12.881331+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Memora: 抽象化と具体性を両立する、AIエージェントのための「調和型メモリ」表現",
+    "url": "https://www.microsoft.com/en-us/research/blog/memora-a-harmonic-memory-representation-balancing-abstraction-and-specificity/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "保存する「リッチな内容」と検索用の「軽量な抽象化インデックス」を分離することで、詳細を維持しつつトークン消費を最大98%削減するAIエージェント向けメモリシステム。",
+    "summaryBody": "Microsoft Researchが開発した「Memora」は、AIエージェントが数ヶ月にわたる長期タスクで情報を保持・活用するための新しいメモリフレームワークです。現在のLLMエージェントは、履歴の読み込みによるコスト増大か、要約による情報の欠落という課題を抱えています。Memoraは、情報の本体（Value）と、検索用の短い抽象化（Primary Abstraction）、および多角的なアクセスを可能にするタグ（Cue Anchors）を分離する「調和型組織」を採用しました。さらに、反復的な推論を用いて情報を検索するポリシーガイド付きリトリーバーにより、従来のRAGやMem0を凌駕する性能を達成。ICML 2026に採択され、長期的な共同作業が可能なAIエージェントの基盤として期待されています。",
+    "topics": [
+      "AIエージェント",
+      "長期記憶システム",
+      "RAG",
+      "ICML 2026",
+      "Microsoft Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Memora: A Harmonic Memory Representation Balancing Abstraction and Specificity"
+  }
+}

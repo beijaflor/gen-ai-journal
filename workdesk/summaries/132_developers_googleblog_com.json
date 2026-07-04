@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:39:01.925294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントによるエージェント品質のフライホイールの推進",
+    "url": "https://developers.googleblog.com/driving-the-agent-quality-flywheel-from-your-coding-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、コーディングエージェントがAIエージェントの品質を自律的に評価・改善するための「品質フライホイール」スキルとGenAI評価サービスを発表しました。",
+    "summaryBody": "Google Cloud Next '26で発表された、AIエージェントの品質向上を「感覚（バイブス）」に頼らずエンジニアリングとして実践するための新しいフレームワークに関する解説。このアプローチは、Build & Test、Ship & Monitor、Learn & Refineの3フェーズからなる「品質フライホイール」に基づいています。今回導入されたコーディングエージェント向けの新スキルは、データの準備、推論の実行、Google DeepMindと共同開発された「AutoRaters」による採点、失敗分析、最適化という5段階のサイクルを自動化します。開発者は「ユーザーの修正が反映されているか心配だ」といった自然言語で指示を出すだけで、エージェントが適切なメトリクスを選定し、評価・修正提案までを行います。この仕組みはADKを含む主要なフレームワークをサポートし、開発時のシミュレーションから本番環境のトレース分析までを一貫してカバーします。",
+    "topics": [
+      "AI Agents",
+      "LLM Evaluation",
+      "Google Cloud AI",
+      "AutoRaters",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Driving the Agent Quality Flywheel from Your Coding Agent"
+  }
+}

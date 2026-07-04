@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:45:49.429474+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMエージェントを『コスパ良く・高精度に』組む技術：Clearwingのワークフロー設計に学ぶ",
+    "url": "https://zenn.dev/khale/articles/llm-agent-cost-accuracy-clearwing",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Lazarus AIのOSS「Clearwing」を題材に、安価な前処理・段階的な予算配分・独立した敵対的検証を組み合わせることで、LLMエージェントのコストと精度を両立させる具体的な設計パターンを解説しています。",
+    "summaryBody": "LLMエージェントの実務導入における「高コスト」と「ハルシネーション（低精度）」のトレードオフを、ワークフロー設計によって解消する手法を解説した記事です。自律型脆弱性ハンター「Clearwing」のアーキテクチャを分析し、以下の3つの柱を中心に紹介しています。1.「コストの工夫」：LLM投入前の正規表現や静的解析による足切り、重み付けスコアによる優先度管理、予算の傾斜配分。2.「精度の工夫」：『証拠ラダー』による確信度の段階管理、推論プロセスを共有しない独立した検証エージェントによる敵対的検証、サンドボックス実行による機械的な証拠（Ground Truth）の優先。3.「汎用的な設計パターン」：これらをオーケストレータ・ワーカー型構成として抽象化し、情報抽出やコードレビューなど他領域へ転用するためのリファレンス構成を示しています。魔法のプロンプトに頼るのではなく、システム構造でLLMの失敗モードを制御する実践的なアプローチが特徴です。",
+    "topics": [
+      "LLMエージェント",
+      "AIアーキテクチャ",
+      "Clearwing",
+      "AIセキュリティ",
+      "ワークフロー設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

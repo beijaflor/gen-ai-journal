@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:35:27.472931+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "wayfinder-router: ローカルとクラウドLLMを高速・決定論的に振り分けるオフラインルーター",
+    "url": "https://github.com/itsthelore/wayfinder-router",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "プロンプトの構造や語彙から複雑さをスコア化し、LLM呼び出しを介さずにオフラインかつ決定論的にローカルモデルとクラウドモデルへ振り分ける高速ルーターツール。",
+    "summaryBody": "wayfinder-routerは、LLMへのクエリをその難易度に応じて「ローカルLLM」と「クラウドLLM」に自動で振り分けるCLIツール兼ゲートウェイです。最大の特徴は、ルーティングの判断自体にLLMを使用しない点にあります。プロンプトの長さ、見出し、リスト、コードの有無といった構造的な特徴や、数学記号・制約条件などの語彙的特徴を解析して、ミリ秒単位かつオフラインで複雑度スコア（0.0〜1.0）を算出します。これにより、ルーティング自体にかかるコストや遅延を排除しつつ、簡単なタスクはローカル（Ollama等）で安価に、複雑なタスクはクラウド（OpenAI等）で高品質に処理することを可能にします。OpenAI互換のAPIエンドポイントとして動作するため、既存のクライアント設定のbase_urlを変更するだけで導入可能です。また、ユーザー独自のデータに基づいたキャリブレーション機能も備えており、コストと品質のバランスを実運用に合わせて最適化できます。",
+    "topics": [
+      "LLM",
+      "Router",
+      "Local LLM",
+      "Cost Optimization",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - itsthelore/wayfinder-router: Simple CLI tool for deterministic routing of queries between local and hosted LLM models · GitHub"
+  }
+}

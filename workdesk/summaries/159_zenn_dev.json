@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:46:23.615269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Agent Teams による、複数課題を同時並行で処理し自己改善を繰り返すAIチーム（PM＋作業者）の構築",
+    "url": "https://zenn.dev/acntechjp/articles/6f74e9a6aef835",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの実験的機能「Agent Teams」を活用し、PMエージェントが複数の作業者エージェントを指揮して並列開発と自己改善を行う自律的な運用フレームワークを提案する。",
+    "summaryBody": "Claude Codeのベータ機能「Agent Teams」を使い、PM（リード）と複数の専門作業者（teammate）による並列開発体制を構築する実戦的なガイド。主な特徴として、PMが実装を行わず管理・検証に専念する役割分担、`.claude/`ディレクトリを活用した永続・使い捨ての2層ステート管理、Hooksによるリンター実行や破壊的操作のガードレール構築などが詳述されている。特に、Cronツールを用いた20分おきの定期点検によるプロセスの生存確認や、セッション終了時の「振り返り」コマンドを通じて失敗の記録を`rules/`へ昇華させ、エージェントを自己改善させる運用ループが非常に実用的。tmuxを用いた複数エージェントの可視化や、上位モデルへの自動相談（advisorツール）などの高度なテクニックも網羅されている。",
+    "topics": [
+      "Claude Code",
+      "Agent Teams",
+      "AIエージェント",
+      "自律型開発",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    }
+  }
+}

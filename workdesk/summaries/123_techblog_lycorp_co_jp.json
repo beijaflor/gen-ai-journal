@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:36:51.319078+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Embedding 安定化で検索リランキングのCold start problemを解決：LINEバイトでの適用事例紹介",
+    "url": "https://techblog.lycorp.co.jp/ja/techverse2026-62",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LINEバイトの検索リランキングにおけるコールドスタート問題とEmbedding空間の非定常性を、後処理による空間アライメント手法で解決し、サービス全体の売上を6.5%向上させた事例紹介。",
+    "summaryBody": "LINEバイトの検索システムでは、求人の頻繁な入れ替えに伴う学習データ不足（コールドスタート）と、モデルの再学習ごとにEmbedding空間が変化して下流モデルで特徴量として使いにくい課題があった。この解決策として、RecSys '25で提案された『Orthogonal Low Rank Embedding Stabilization』を導入。Low Rank SVDとOrthogonal Procrustesを組み合わせ、前日のEmbeddingを基準に当日の空間を逐次的にアライメントすることで、時間の経過に伴う空間ドリフトを抑制した。Sparkを用いた分散処理の実装や、QR分解をCholesky分解で代替する効率化も行っている。この手法により、1ヶ月後でも高いベクトル類似度（0.87前後）を維持することに成功。オフライン評価ではnDCGが大幅に向上し、オンラインA/Bテストでは検索単体にとどまらずサービス全体のKPIを4.7%、売上を6.5%向上させる顕著な成果を上げた。既存の学習パイプラインやモデル構造を大きく変更せずに後処理として導入できる点が大きな実用上のメリットである。",
+    "topics": [
+      "Embedding",
+      "Cold Start Problem",
+      "Search Reranking",
+      "Recommendation Systems",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}
