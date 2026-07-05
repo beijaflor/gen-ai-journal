@@ -181,5 +181,10 @@ This skill is optimized for interactive, one-by-one URL addition with immediate 
 
 - **After add-url**: Use `summarize-source` skill to generate summaries
 - **Before add-url**: URLs are typically gathered from various sources (RSS, newsletters, manual curation)
+- **Cloud inbox companion**: Links submitted via the platform inbox
+  (https://gen-ai-journal.pages.dev/submit) are pulled in batch with
+  `uv run scripts/pull_inbox.py`, which applies the same validation/dedup/ID
+  rules as this skill. Use this skill for URLs given directly in chat; use
+  pull_inbox for the accumulated cloud inbox at cycle start (STEP_02).
 
 You are detail-oriented and systematic, ensuring each URL is validated and added with proper ID sequencing. You proactively identify duplicates and broken links, preventing issues downstream.

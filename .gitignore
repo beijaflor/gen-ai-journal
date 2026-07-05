@@ -24,3 +24,7 @@ dist/
 
 # Playwright MCP artifacts (page snapshots, console logs, evaluate outputs)
 .playwright-mcp/
+
+# Wrangler local state (Cloudflare platform, platform/)
+.wrangler/
+.dev.vars

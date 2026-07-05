@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Submit link — gen-ai-journal</title>
+  <style>
+    :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; }
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 8vh auto; padding: 0 20px; color: #21252d; line-height: 1.6; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    p.sub { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+    label { display: block; font-size: 13px; font-weight: 600; margin: 16px 0 4px; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px; border: 1px solid var(--line); border-radius: 5px; font-family: inherit; }
+    textarea { resize: vertical; min-height: 60px; }
+    button { margin-top: 18px; background: var(--accent); color: #fff; border: 0; border-radius: 5px; padding: 10px 22px; font-size: 15px; font-weight: 600; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: default; }
+    #result { margin-top: 18px; padding: 12px 14px; border-radius: 5px; font-size: 14px; display: none; }
+    #result.ok { display: block; background: #e7f2ea; color: #22633c; }
+    #result.dup { display: block; background: #fdf3e4; color: #8a5307; }
+    #result.err { display: block; background: #fbe9e7; color: #a33326; }
+    .bm { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--muted); }
+    .bm a.lnk { display: inline-block; background: #f1ede5; border: 1px dashed var(--accent); border-radius: 5px; padding: 6px 14px; color: var(--accent); font-weight: 600; text-decoration: none; margin: 6px 0; }
+    nav { margin-top: 28px; font-size: 13.5px; }
+    nav a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <h1>Submit a link</h1>
+  <p class="sub">Saved to the inbox instantly; pulled into sources.md at the next cycle start.</p>
+
+  <form id="f">
+    <label for="url">URL</label>
+    <input id="url" name="url" type="url" required placeholder="https://…" autofocus>
+    <label for="note">Note (optional)</label>
+    <textarea id="note" name="note" maxlength="500" placeholder="why it caught your eye, page title, …"></textarea>
+    <button id="btn" type="submit">Save to inbox</button>
+  </form>
+  <div id="result"></div>
+
+  <div class="bm">
+    <strong>Bookmarklet</strong> — drag this to your bookmarks bar; clicking it on any article opens this form pre-filled:
+    <br>
+    <a class="lnk" id="bml" href="#">+ journal inbox</a>
+  </div>
+
+  <nav><a href="/inbox">→ view inbox</a></nav>
+
+  <script>
+    const qs = new URLSearchParams(location.search);
+    const urlEl = document.getElementById("url");
+    const noteEl = document.getElementById("note");
+    if (qs.get("url")) urlEl.value = qs.get("url");
+    if (qs.get("title")) noteEl.value = qs.get("title");
+
+    document.getElementById("bml").href =
+      "javascript:window.open('" + location.origin +
+      "/submit?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'_blank')";
+
+    const form = document.getElementById("f");
+    const btn = document.getElementById("btn");
+    const result = document.getElementById("result");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      btn.disabled = true;
+      result.className = "";
+      try {
+        const res = await fetch("/api/links", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          credentials: "same-origin",
+          body: JSON.stringify({ url: urlEl.value.trim(), note: noteEl.value.trim() || undefined }),
+        });
+        const data = await res.json();
+        if (res.status === 201) {
+          result.className = "ok";
+          result.textContent = "✓ Saved as #" + data.id + " — " + data.url;
+          form.reset();
+        } else if (res.status === 200 && data.duplicate) {
+          result.className = "dup";
+          result.textContent = "Already in the inbox as #" + data.id + " (status: " + data.status + ")";
+        } else {
+          result.className = "err";
+          result.textContent = "✗ " + (data.error || res.status);
+        }
+      } catch (err) {
+        result.className = "err";
+        result.textContent = "✗ network error: " + err;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
