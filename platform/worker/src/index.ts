@@ -20,6 +20,7 @@ export interface PipelineEnv {
   MIN_CONTENT_CHARS: string;
   MAX_CONTENT_CHARS: string;
   API_BEARER_TOKEN?: string; // enables the /eval route (#167)
+  GEMINI_API_KEY?: string; // required when SUMMARIZE_MODEL is a gemini-* model
 }
 
 const DEBOUNCE_MS = 20_000;
@@ -161,20 +162,30 @@ async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?: strin
   }
   const content = text.slice(0, Number(env.MAX_CONTENT_CHARS));
 
-  // 3. Workers AI, summary-v1 via json_schema
+  // 3. Structured summary-v1 generation.
+  //    Model routing (#167 decision): gemini-* → Gemini API (same model as the
+  //    whole archive — quality parity by construction, and Workers AI's free
+  //    neuron budget can't carry the weekly volume at 70B quality);
+  //    @cf/* → Workers AI (kept as fallback/eval path).
   const prompt = SUMMARIZE_PROMPT_TEMPLATE.replace("{{url}}", url).replace("{{content}}", `# ${title}\n\n${content}`);
   const t1 = Date.now();
   let parsed: Record<string, never>;
   let usage: unknown;
   try {
-    const result = (await env.AI.run(model as never, {
-      messages: [{ role: "user", content: prompt }],
-      max_tokens: 4096,
-      response_format: { type: "json_schema", json_schema: SUMMARY_JSON_SCHEMA },
-    } as never)) as { response?: unknown; usage?: unknown };
-    usage = result.usage;
-    const out = result.response ?? result;
-    parsed = (typeof out === "object" && out !== null ? out : JSON.parse(String(out))) as Record<string, never>;
+    if (model.startsWith("@cf/")) {
+      const result = (await env.AI.run(model as never, {
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 4096,
+        response_format: { type: "json_schema", json_schema: SUMMARY_JSON_SCHEMA },
+      } as never)) as { response?: unknown; usage?: unknown };
+      usage = result.usage;
+      const out = result.response ?? result;
+      parsed = (typeof out === "object" && out !== null ? out : JSON.parse(String(out))) as Record<string, never>;
+    } else {
+      const g = await runGemini(env, model, prompt);
+      parsed = g.parsed as Record<string, never>;
+      usage = g.usage;
+    }
   } catch (e) {
     return {
       ok: false,
@@ -227,6 +238,55 @@ async function decodeBody(res: Response): Promise<string> {
   } catch {
     return new TextDecoder("utf-8").decode(buf);
   }
+}
+
+/** Gemini structured-output call — mirrors get_gemini_schema() in scripts/call-gemini.py. */
+async function runGemini(
+  env: PipelineEnv,
+  model: string,
+  prompt: string,
+): Promise<{ parsed: unknown; usage: unknown }> {
+  if (!env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY secret not set on the pipeline worker");
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      // No maxOutputTokens: mirror the local pipeline (model default), which
+      // never truncates — a 4096 cap produced unterminated-JSON failures.
+      generationConfig: {
+        responseMimeType: "application/json",
+        responseSchema: toGeminiSchema(SUMMARY_JSON_SCHEMA),
+      },
+    }),
+    signal: AbortSignal.timeout(90_000),
+  });
+  if (!res.ok) throw new Error(`Gemini HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  const data = (await res.json()) as {
+    candidates?: { content?: { parts?: { text?: string }[] } }[];
+    usageMetadata?: unknown;
+  };
+  const text = data.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("");
+  if (!text) throw new Error("Gemini returned no candidates");
+  return { parsed: JSON.parse(text), usage: data.usageMetadata };
+}
+
+/** Convert our JSON-Schema-style shape to Gemini's REST schema (uppercase types). */
+function toGeminiSchema(node: Record<string, unknown>): Record<string, unknown> {
+  const out: Record<string, unknown> = {};
+  if (typeof node.type === "string") out.type = (node.type as string).toUpperCase();
+  if (node.enum) out.enum = node.enum;
+  if (node.required) out.required = node.required;
+  if (node.items) out.items = toGeminiSchema(node.items as Record<string, unknown>);
+  if (node.properties) {
+    out.properties = Object.fromEntries(
+      Object.entries(node.properties as Record<string, Record<string, unknown>>).map(([k, v]) => [
+        k,
+        toGeminiSchema(v),
+      ]),
+    );
+  }
+  return out;
 }
 
 async function extractText(res: Response): Promise<{ title: string; text: string }> {
