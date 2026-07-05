@@ -19,6 +19,7 @@ export interface PipelineEnv {
   SUMMARIZE_MODEL: string;
   MIN_CONTENT_CHARS: string;
   MAX_CONTENT_CHARS: string;
+  API_BEARER_TOKEN?: string; // enables the /eval route (#167)
 }
 
 const DEBOUNCE_MS = 20_000;
@@ -91,76 +92,15 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
       return;
     }
 
-    // 1. Fetch (fail closed on anything that isn't a readable HTML page)
-    let res: Response;
-    try {
-      res = await fetch(link.url, {
-        redirect: "follow",
-        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
-        headers: { "user-agent": USER_AGENT, accept: "text/html,application/xhtml+xml" },
-      });
-    } catch (e) {
-      await this.block(link.id, `BLOCKED: fetch failed — ${String(e).slice(0, 200)}`);
-      return;
-    }
-    if (!res.ok) {
-      await this.block(link.id, `BLOCKED: fetch returned HTTP ${res.status}`);
-      return;
-    }
-    const ctype = (res.headers.get("content-type") ?? "").toLowerCase();
-    if (ctype.includes("application/pdf") || new URL(link.url).pathname.toLowerCase().endsWith(".pdf")) {
-      await this.block(link.id, "BLOCKED-PDF: PDF detected — regenerate locally via summarize-pdf (#168)");
-      return;
-    }
-    if (!ctype.includes("html")) {
-      await this.block(link.id, `BLOCKED: unsupported content-type ${ctype.slice(0, 80)}`);
+    const out = await summarizeUrl(this.env, link.url);
+    if (!out.ok) {
+      await this.block(link.id, out.reason);
       return;
     }
 
-    // 2. Extract main text (streaming, CPU-cheap)
-    const { title, text } = await extractText(res);
-    const minChars = Number(this.env.MIN_CONTENT_CHARS);
-    if (text.length < minChars) {
-      await this.block(link.id, `BLOCKED: extracted ${text.length} chars < ${minChars} — likely bot-blocked or JS-rendered`);
-      return;
-    }
-    const content = text.slice(0, Number(this.env.MAX_CONTENT_CHARS));
-
-    // 3. Workers AI, summary-v1 via json_schema
-    const prompt = SUMMARIZE_PROMPT_TEMPLATE.replace("{{url}}", link.url).replace(
-      "{{content}}",
-      `# ${title}\n\n${content}`,
-    );
-    let parsed: Record<string, never>;
-    try {
-      parsed = await this.runModel(prompt);
-    } catch (e) {
-      await this.block(link.id, `BLOCKED: model call failed — ${String(e).slice(0, 200)}`);
-      return;
-    }
-
-    // 4. Enforce invariants the prompt alone can't guarantee
-    const doc = parsed as { metadata?: Record<string, unknown>; content?: Record<string, unknown> };
-    doc.metadata = {
-      ...(doc.metadata ?? {}),
-      version: "1.0",
-      generatedAt: new Date().toISOString(),
-      generatedBy: this.env.SUMMARIZE_MODEL,
-    };
-    if (doc.content) {
-      doc.content.url = link.url; // URL RULE enforced in code, not trust
-      if (doc.content.language === "ja") delete doc.content.originalTitle;
-    }
-    const raw = JSON.stringify(doc, null, 2);
-    const check = inspectSummary(raw);
-    if (check.error) {
-      await this.block(link.id, `BLOCKED: model output invalid — ${check.error}`);
-      return;
-    }
-
-    // 5. Allocate NNN and write via the shared path (IDs only spent on success)
+    // Allocate NNN and write via the shared path (IDs only spent on success)
     const id = await allocateId(this.env as never);
-    const result = await writeSummary(this.env as never, { id, content: raw });
+    const result = await writeSummary(this.env as never, { id, content: out.raw });
     if (!result.ok) {
       await this.block(link.id, `BLOCKED: store rejected — ${result.error}`);
       return;
@@ -169,17 +109,103 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
       .bind(id, link.id)
       .run();
   }
+}
 
-  private async runModel(prompt: string): Promise<Record<string, never>> {
-    const result = (await this.env.AI.run(this.env.SUMMARIZE_MODEL as never, {
+export interface SummarizeMeta {
+  model: string;
+  extractChars: number;
+  fetchMs: number;
+  aiMs: number;
+  usage?: unknown; // whatever AI.run reports (token counts where available)
+}
+
+export type SummarizeResult =
+  | { ok: true; raw: string; meta: SummarizeMeta }
+  | { ok: false; reason: string; meta?: Partial<SummarizeMeta> };
+
+/** The full summarization core — used by the DO (persisting) and /eval (non-persisting). */
+async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?: string): Promise<SummarizeResult> {
+  const model = modelOverride ?? env.SUMMARIZE_MODEL;
+
+  // 1. Fetch (fail closed on anything that isn't a readable HTML page)
+  const t0 = Date.now();
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      redirect: "follow",
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      headers: { "user-agent": USER_AGENT, accept: "text/html,application/xhtml+xml" },
+    });
+  } catch (e) {
+    return { ok: false, reason: `BLOCKED: fetch failed — ${String(e).slice(0, 200)}` };
+  }
+  if (!res.ok) return { ok: false, reason: `BLOCKED: fetch returned HTTP ${res.status}` };
+  const ctype = (res.headers.get("content-type") ?? "").toLowerCase();
+  if (ctype.includes("application/pdf") || new URL(url).pathname.toLowerCase().endsWith(".pdf")) {
+    return { ok: false, reason: "BLOCKED-PDF: PDF detected — regenerate locally via summarize-pdf (#168)" };
+  }
+  if (!ctype.includes("html")) {
+    return { ok: false, reason: `BLOCKED: unsupported content-type ${ctype.slice(0, 80)}` };
+  }
+
+  // 2. Extract main text (streaming, CPU-cheap)
+  const { title, text } = await extractText(res);
+  const fetchMs = Date.now() - t0;
+  const minChars = Number(env.MIN_CONTENT_CHARS);
+  if (text.length < minChars) {
+    return {
+      ok: false,
+      reason: `BLOCKED: extracted ${text.length} chars < ${minChars} — likely bot-blocked or JS-rendered`,
+      meta: { extractChars: text.length, fetchMs },
+    };
+  }
+  const content = text.slice(0, Number(env.MAX_CONTENT_CHARS));
+
+  // 3. Workers AI, summary-v1 via json_schema
+  const prompt = SUMMARIZE_PROMPT_TEMPLATE.replace("{{url}}", url).replace("{{content}}", `# ${title}\n\n${content}`);
+  const t1 = Date.now();
+  let parsed: Record<string, never>;
+  let usage: unknown;
+  try {
+    const result = (await env.AI.run(model as never, {
       messages: [{ role: "user", content: prompt }],
       max_tokens: 4096,
       response_format: { type: "json_schema", json_schema: SUMMARY_JSON_SCHEMA },
-    } as never)) as { response?: unknown };
+    } as never)) as { response?: unknown; usage?: unknown };
+    usage = result.usage;
     const out = result.response ?? result;
-    if (typeof out === "object" && out !== null) return out as Record<string, never>;
-    return JSON.parse(String(out));
+    parsed = (typeof out === "object" && out !== null ? out : JSON.parse(String(out))) as Record<string, never>;
+  } catch (e) {
+    return {
+      ok: false,
+      reason: `BLOCKED: model call failed — ${String(e).slice(0, 300)}`,
+      meta: { model, extractChars: content.length, fetchMs },
+    };
   }
+  const aiMs = Date.now() - t1;
+
+  // 4. Enforce invariants the prompt alone can't guarantee
+  const doc = parsed as { metadata?: Record<string, unknown>; content?: Record<string, unknown> };
+  doc.metadata = {
+    ...(doc.metadata ?? {}),
+    version: "1.0",
+    generatedAt: new Date().toISOString(),
+    generatedBy: model,
+  };
+  if (doc.content) {
+    doc.content.url = url; // URL RULE enforced in code, not trust
+    if (doc.content.language === "ja") delete doc.content.originalTitle;
+  }
+  const raw = JSON.stringify(doc, null, 2);
+  const check = inspectSummary(raw);
+  if (check.error) {
+    return {
+      ok: false,
+      reason: `BLOCKED: model output invalid — ${check.error}`,
+      meta: { model, extractChars: content.length, fetchMs, aiMs, usage },
+    };
+  }
+  return { ok: true, raw, meta: { model, extractChars: content.length, fetchMs, aiMs, usage } };
 }
 
 /** Decode the body honoring its declared charset (Japanese sites often serve
@@ -284,7 +310,26 @@ const SUMMARY_JSON_SCHEMA = {
 } as const;
 
 export default {
-  async fetch(): Promise<Response> {
-    return new Response("gen-ai-journal-pipeline: Durable Object host (no public routes)", { status: 404 });
+  // POST /eval {url, model?} — run the exact pipeline path WITHOUT persisting
+  // anything (no NNN spent, no D1 writes). Bearer-protected. Used by the
+  // model-quality eval (#167).
+  async fetch(request: Request, env: PipelineEnv): Promise<Response> {
+    const url = new URL(request.url);
+    if (url.pathname === "/eval" && request.method === "POST") {
+      const auth = request.headers.get("authorization") ?? "";
+      if (!env.API_BEARER_TOKEN || auth !== `Bearer ${env.API_BEARER_TOKEN}`) {
+        return Response.json({ error: "unauthorized" }, { status: 401 });
+      }
+      let body: { url?: string; model?: string };
+      try {
+        body = await request.json();
+      } catch {
+        return Response.json({ error: "body must be JSON: {url, model?}" }, { status: 400 });
+      }
+      if (!body.url) return Response.json({ error: "url is required" }, { status: 400 });
+      const result = await summarizeUrl(env, body.url, body.model);
+      return Response.json(result, { status: result.ok ? 200 : 422 });
+    }
+    return new Response("gen-ai-journal-pipeline: Durable Object host", { status: 404 });
   },
 };
