@@ -5,33 +5,9 @@ This step describes how to collect and add links to the journal workflow.
 ## Overview
 
 The new workflow involves:
-0. Pull links accumulated in the cloud inbox (if any)
 1. Check if a link is valid and unique
 2. Manually add links to sources.md
 3. Generate summaries using the one-shot script
-
-## Cloud Link Inbox (Issue #159)
-
-Links can be submitted from any device during the week via the platform inbox
-(https://gen-ai-journal.pages.dev/submit — form + bookmarklet, protected by
-Cloudflare Access). At cycle start, pull them into sources.md:
-
-```bash
-# Preview what would be pulled
-uv run scripts/pull_inbox.py --dry-run
-
-# Pull: validates, sanitizes, canonicalizes, dedup-checks each link
-# (same rules as add-url / check_link.py), appends unique ones to
-# "## Main List" with sequential IDs, and marks them consumed in the cloud.
-uv run scripts/pull_inbox.py
-```
-
-- Duplicates against sources.md / summaries / published journals are marked
-  `dismissed` in the inbox (they never consume an ID).
-- Requires `PLATFORM_API_TOKEN` in `scripts/.env`.
-- The inbox is viewable at https://gen-ai-journal.pages.dev/inbox.
-- URLs provided directly in chat still go through the `add-url` skill as before;
-  the inbox is for links gathered away from the desk.
 
 ## Checking Links Before Adding
 
