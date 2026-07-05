@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:27:53.946595+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Generative UIとそれを実現するOpenUIのイメージを掴む！",
+    "url": "https://zenn.dev/peishim/articles/37ff4d894f8fbc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIがUI構造自体を生成するGenerative UIの3つの分類と、専用言語OpenUI Langを用いてReactコンポーネントを効率的に生成・描画するフレームワーク「OpenUI」の実装手法を解説した記事。",
+    "summaryBody": "本記事では、AIが文脈に応じたユーザーインターフェースを動的に生成する「Generative UI (GenUI)」の概念と、その実装を支援するフレームワーク「OpenUI」について詳説しています。GenUIを自由度に応じて「静的型」「宣言型」「オープンエンド型」の3種類に分類し、それぞれのメリット・デメリットを整理。後半ではOpenUI Langを用いたトークン消費の抑制効果や、Next.jsでのカスタムコンポーネント実装、さらにはiframeを用いたオープンエンド型（HTML/CSS/JS生成）の構築方法までをコード例と共に紹介しています。AG-UIやMCP Appsといった類似プロトコルとの役割の違いについても言及されており、GenUIの全体像を把握するのに最適なリソースです。",
+    "topics": [
+      "Generative UI",
+      "OpenUI",
+      "React",
+      "Next.js",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

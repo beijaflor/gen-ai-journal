@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:22:14.809195+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "君たちはどう Fable のか ~ 公式ドキュメントによる Claude Fable 5 の使い方の本質",
+    "url": "https://qiita.com/tomoki-miso/items/36e5893e4d235625de44",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Fable 5（架空の次世代モデル）を、実装作業ではなく設計の意思決定や技術的負債の探索といった「探索・診断」フェーズに活用すべき戦略的理由を解説。",
+    "summaryBody": "この記事は、2026年の未来を想定したClaude Fable 5の運用戦略を提示しています。筆者は「Fableにコードを書かせるな、何を書くべきかを探させろ」と説き、その根拠としてセーフティ・クラシファイアによる誤判定のリスクを挙げています。思考過程の抽出や特定の領域への接触とみなされた際、自動でOpus等の旧モデルへフォールバックし、長時間の自律実行（overnight run）が中断されることを危惧しています。そのため、中断コストの高い実装タスクを避け、技術的負債の棚卸しや設計の比較検証、クライアントへの質問リスト作成といった、モデルの自律探索能力が活きるフェーズにリソースを集中すべきだと論じています。また、進捗捏造を防ぐための監査プロンプトの導入など、実戦的なプロンプトエンジニアリングの手法も紹介されています。",
+    "topics": [
+      "Claude",
+      "プロンプトエンジニアリング",
+      "AI開発",
+      "設計",
+      "技術的負債"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 86
+    }
+  }
+}

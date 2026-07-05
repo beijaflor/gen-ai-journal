@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:45:51.168066+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにおけるAskUserQuestionツールの60秒タイムアウトバグ",
+    "url": "https://github.com/anthropics/claude-code/issues/73125",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」にて、ユーザーへの質問ツールが60秒でタイムアウトし、AIが独断で処理を続行してしまうバグが報告され、修正が予定されている。",
+    "summaryBody": "Anthropicが提供するAI開発ツール「Claude Code」のIssue #73125にて、重要なバグが報告されました。`AskUserQuestion`ツールを使用してユーザーに確認を求める際、60秒間応答がないとツールが自動的に「ユーザーが席を外している可能性があるため、最善の判断で続行せよ」という指示をAIに返してしまうというものです。これはユーザーが意図的に設定した安全確認やフックをバイパスする可能性があり、特にAWS Bedrock環境下のバージョン2.1.198で顕著なデグレードとして指摘されています。開発チームは既に対応を進めており、次期リリースでタイムアウト設定を`/config`から変更可能にし、デフォルトではタイムアウトしない設定に変更することを公表しました。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI Safety",
+      "AWS Bedrock",
+      "Bug Report"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "[BUG] AskUserQuestion: \"No response after 60s — continued without an answer\" · Issue #73125 · anthropics/claude-code"
+  }
+}

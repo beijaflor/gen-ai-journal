@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:29:02.720800+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeCodeとObsidianで設計・作業メモを残す",
+    "url": "https://toranoana-lab.hatenablog.com/entry/2026/06/30/130000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントのClaude CodeとObsidian CLIを連携させ、開発中の設計判断や作業メモをAIが自律的に記録・参照する仕組みを構築するガイド。",
+    "summaryBody": "AIエージェントを活用した開発において、調査結果や設計方針の文脈を管理することは重要です。本記事では、Obsidian v1.12.7以降で提供されているCLI機能を活用し、Claude Codeが直接Obsidianのノートを作成・編集するための「Skill」の構築方法を解説しています。\n\n具体的には、BacklogのチケットIDをキーにしたディレクトリ構成（設計方針、作業メモ、目次リンク）を定義し、Markdownテンプレートを用いてAIに情報を出力させます。また、Claude Codeのメモリ機能を利用することで、作業の一区切りがついた際にAI側から記録の作成を提案させる自動化サイクルを実現しています。これにより、人間の手間を最小限に抑えつつ、AIが過去の経緯を容易に参照できる知識基盤を構築できます。",
+    "topics": [
+      "Claude Code",
+      "Obsidian",
+      "AIエージェント",
+      "ナレッジマネジメント",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

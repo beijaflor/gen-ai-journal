@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:25:56.700598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが自走できるかは設計で決まる ― 良いコードを残し、悪いコードを入れさせない",
+    "url": "https://zenn.dev/sunagaku/articles/ai-autonomous-development-design",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI駆動開発における「自走」の鍵はツールの使い方ではなくコードベースの設計品質にあり、AIが良いパターンを模倣・拡散できる環境を整えることの重要性を解説しています。",
+    "summaryBody": "AIが自律的に開発を進める（自走する）ためには、指示の細かさよりも「既存コードの設計」が重要であると説いています。AIは既存の実装を「お手本」として水平展開する特性を持つため、設計が不透明なコードベースでは負債が急速に増殖します。本記事では、自走を実現するための具体的Tipsとして、入念なPlan作成、MCPを活用した動作確認、レビュー指摘のCLAUDE.mdへの蓄積、定型作業のSkill化を紹介。さらに、単なるPR数の増加に惑わされず、「AIが設計意図を読み取れる一貫したコード」を維持することこそが、AI時代のエンジニアにとって最大の武器になると強調しています。",
+    "topics": [
+      "AI駆動開発",
+      "ソフトウェア設計",
+      "Claude Code",
+      "Cursor",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

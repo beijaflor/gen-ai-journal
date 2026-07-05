@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:27:10.042472+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のチーム開発フローは「小さく安全に流し続ける」こと",
+    "url": "https://zenn.dev/nocall/articles/3f0fcbbed6348c",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる実装速度の向上で肥大化しがちなコード差分に対し、トランクベース開発への移行やリリースサイクルの微細化、AI向けの検証環境整備を通じて安全性を担保する手法を解説。",
+    "summaryBody": "AIを導入すると実装速度が上がる一方で、レビューやリリースの対象となる差分が爆発的に増えるという課題が生じます。この記事では、従来のGitflowからトランクベース開発に寄せ、PRを「機能として確認しやすい粒度」で頻繁にmainへ統合する体制への転換を提唱。具体的な工夫として、ローカルでの統合確認環境の自動化、Feature Toggleによるデプロイと機能公開の分離、タグ管理によるリリース固定、Terraformの分離などを挙げています。さらに、AIが自律的にテストや検証を行える「ハーネス」や「スキル」をリポジトリ内に整備することで、人間が気合で確認する限界を突破し、毎日安全にリリースし続けるための土台作りがAI時代の開発において不可欠であると説いています。",
+    "topics": [
+      "AI開発フロー",
+      "トランクベース開発",
+      "CI/CD",
+      "デプロイ戦略",
+      "チーム生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

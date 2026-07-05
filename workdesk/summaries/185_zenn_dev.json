@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:26:09.877477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【速報】Claude Sonnet 5のReact習熟度はOpus 4.8に匹敵",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Sonnet 5のReact習熟度ベンチマークにおいて、前世代のフラッグシップであるOpus 4.8と同水準のスコアを叩き出し、ミドルティアモデルとしての驚異的な進化が確認されました。",
+    "summaryBody": "uhyo氏による独自ベンチマーク「React Profession Bench」の第9回レポート。最新モデルClaude Sonnet 5のReact習熟度を測定した結果、総合スコア78.21を記録し、前世代フラッグシップのOpus 4.8 default（79.38）と実質的に同等の性能を示しました。前世代のSonnet 4.6（66.5）からは+11.7という大幅な跳躍を遂げています。分析では、コンポーネント設計能力において上位モデルを凌駕する一方、アクセシビリティ対応や、React 19のuseActionStateなどの最新API採用における信頼性（型チェック不成立）に課題があることも浮き彫りになりました。コストパフォーマンスは極めて高いものの、複雑な実装を一発で完遂する力は依然として最上位モデル（FableやOpus max）に譲る形となっています。",
+    "topics": [
+      "Claude",
+      "React",
+      "LLMベンチマーク",
+      "フロントエンド開発",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

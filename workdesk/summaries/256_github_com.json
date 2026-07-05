@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:45:03.784412+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI専門家ボードによる意思決定の事前登録・事後検証ツール「asktheboard」",
+    "url": "https://github.com/danilushin/asktheboard",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI専門家による意思決定と予測をGitで管理し、事後にその妥当性をブライア・スコアで厳格に評価・可視化するツール。",
+    "summaryBody": "asktheboardは、AIエージェントによる意思決定プロセスに「説明責任」と「予測の検証」を導入するオープンソースプロジェクトです。単にAIにアドバイスを求めるのではなく、決定時の予測をGitのタイムスタンプと共に事前登録（Pre-register）し、将来の特定日に実際の結果と照らし合わせてスコアリングを行います。\n\n主な特徴は以下の通りです：\n- **検証可能な予測**: 決定事項、各専門家（アーキテクト、懐疑派、戦略家等）のスタンス、確率、解決日をJSON/Markdown形式のADR（アーキテクチャ決定記録）として記録。\n- **Gitによる真正性証明**: Gitのコミット履歴をタイムスタンプの外部証明として利用し、後出しの予測変更を防止。\n- **キャリブレーション**: ブライア・スコア（Brier score）を用いて、どの専門家エージェントの予測が最も正確だったかを定量的に算出。\n- **BYOKモデル**: ユーザーが自身のLLM APIキーを提供（Bring Your Own Key）する方式で、OpenAI互換のあらゆるエンドポイントに対応。\n\n開発の背景には、AIの助言を単に受け入れるのではなく、過去の正答率という実績に基づいた「信頼」を長期的に構築するという思想があります。",
+    "topics": [
+      "AIエージェント",
+      "意思決定",
+      "ADR",
+      "予測市場",
+      "Brier Score"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - danilushin/asktheboard: A board of expert personas whose every decision is a pre-registered, time-anchored, reality-graded bet. BYOK; the board that keeps score, before the fact. · GitHub"
+  }
+}

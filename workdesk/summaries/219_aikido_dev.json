@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:34:39.696839+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンプライアンスにおけるAIペネトレーションテストの活用と各規格への適合性",
+    "url": "https://www.aikido.dev/blog/ai-pentesting-for-compliance",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる自律型ペネトレーションテストが、SOC 2やISO 27001などの主要なセキュリティ基準に適合するかを詳細に解説し、PCI DSSなど人的テストが必須となる例外も明確に示しています。",
+    "summaryBody": "従来の年1回の人手によるペネトレーションテストは、現代の継続的なデプロイ環境ではすぐに陳腐化してしまいます。本記事は、AikidoのAIエージェントを活用した自律型ペネトレーションテストが、各国のコンプライアンス枠組みでどのように扱われるかを分析しています。\n\n### AIペネトレーションテストの仕組み\nAIエージェントが列挙、脅威モデリング、脆弱性の特定、そして「実証（Exploitation）」までを自律的に行います。単なるスキャンと異なり、実際に脆弱性が悪用可能かを検証するため、誤検知が極めて少ないのが特徴です。\n\n### 各規格への適合状況\n- **適合 (Yes):** SOC 2, ISO 27001, GDPR, HIPAA, NIS2, NIST 800-53など。これらは「定期的かつ効果的なテスト」を求めており、AIによる継続的な検証が有効な証拠となります。\n- **不適合 (No):** PCI DSS, FedRAMP, DORA (TLPT)。これらは「有資格の人間のテスター」や「認定された第三者機関（3PAO）」によるテストを明示的に要求しています。\n\n結論として、多くの最新基準ではAIテストが承認されていますが、特定の金融や政府系基準では依然として人間の署名が必要なケースがあるため、ハイブリッドなアプローチが推奨されます。",
+    "topics": [
+      "AIペネトレーションテスト",
+      "コンプライアンス",
+      "SOC 2",
+      "脆弱性管理",
+      "セキュリティ監査"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "AI Pentesting for Compliance"
+  }
+}

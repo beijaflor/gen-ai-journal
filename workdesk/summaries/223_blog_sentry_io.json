@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:35:44.820949+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのトレードオフ：評価（Eval）で捉えられるものとトレースから見えてくるもの",
+    "url": "https://blog.sentry.io/spot-checking-ai-agents/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの自動評価（Eval）の限界と、トレース（実行ログ）の目視確認によって養われる「判断基準」やコスト・品質のトレードオフ決定の重要性を説く記事。",
+    "summaryBody": "SentryのエンジニアがAIカンファレンスのスケジュール管理エージェントを構築した際の知見を共有しています。主な課題は、安価なモデルがツール実行結果を無視して「実在しない登壇者」を捏造（ハルシネーション）し、さらにその出所を偽るケースでした。自動評価（Eval）は「正解・不正解」や回帰の検知には有効ですが、それだけでは「無料層に高価なモデルを充てるべきか」といったビジネス上のトレードオフ判断はできません。記事では、Sentryのテレメトリ機能を活用して入力・出力・ツール実行結果をコンテキストと共に保存し、開発者が「トレースを読み込む」ことの重要性を強調しています。トレースを読み込むことで、プロンプトの調整、ルーティングの改善、あるいは「特定の条件下では誤回答を許容する」といった高度な意思決定が可能になり、AI開発における「センス」を養うことができると結論付けています。",
+    "topics": [
+      "AIエージェント",
+      "LLM評価 (Eval)",
+      "オブザーバビリティ",
+      "ハルシネーション",
+      "Sentry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI agent tradeoffs: what evals catch and reading traces reveal | Sentry Blog"
+  }
+}

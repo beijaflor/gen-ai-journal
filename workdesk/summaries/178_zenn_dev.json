@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:24:24.148000+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10 か月 CLI で使ってきた Claude Code を、Desktop メインに移行した 12 の理由",
+    "url": "https://zenn.dev/canly/articles/428767121d7dc2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "長期間 Claude Code を CLI で運用してきたエンジニアが、セッション管理や PR 自動化、独自 MCP 連携などの観点から Desktop アプリ版が圧倒的に優れている理由を解説。",
+    "summaryBody": "Claude Code を 10 か月間 CLI で使い続けてきた筆者が、Desktop アプリの「Code」タブへ完全移行した理由を 12 のポイントでまとめています。主なメリットとして、サイドバーによる複数セッションの並行管理、PR の自動修正・自動マージ機能、ブラウザ連携による要素指定、そして Claude 自身が別タスクを提案してセッションを切り出す `spawn_task` などの強力な GUI 統合機能を挙げています。単なる UI のラッパーではなく、並列運用と自動化を前提とした設計が CLI での手動管理（worktree 隔離やターミナル多重化）のコストを大幅に削減することを強調しており、開発体験の具体的な進化が詳述されています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "Claude Desktop",
+      "MCP",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

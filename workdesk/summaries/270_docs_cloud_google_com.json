@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:48:37.686577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Code Assist を使用した GitHub コードレビューの概要と設定",
+    "url": "https://docs.cloud.google.com/gemini/docs/code-review/review-repo-code",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub のプルリクエストに Gemini Code Assist を統合し、AI による自動要約や詳細なコードレビュー、チャット形式のフィードバックを実現する機能の解説。",
+    "summaryBody": "Google Cloud が提供する Gemini Code Assist を GitHub と連携させることで、プルリクエスト（PR）のプロセスを大幅に効率化できます。主な機能として、AI による PR 内容の自動要約、コード品質向上のための詳細なレビュー生成、および PR コメント内での `/gemini` タグを用いた対話型フィードバックが挙げられます。ドキュメントでは、2026年7月に終了予定の一般ユーザー向けバージョンと、Google Cloud 経由で管理する Enterprise 版の違い（クォータ、管理単位、スタイルガイド対応など）を詳説しています。セキュリティ保護のため、`.github/workflows` ディレクトリ内のファイルはレビュー対象外となる制限や、Developer Connect を介した接続構成についても説明されています。",
+    "topics": [
+      "Gemini Code Assist",
+      "GitHub",
+      "コードレビュー",
+      "Google Cloud",
+      "プルリクエスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 85
+    }
+  }
+}

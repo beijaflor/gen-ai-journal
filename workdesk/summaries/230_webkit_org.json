@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:37:30.158639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebKit、Web開発者向けの「Safari MCPサーバー」を発表。AIエージェントによるブラウザ操作が可能に",
+    "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Safari Technology Preview 247において、AIエージェントがブラウザのDOMやコンソール、ネットワーク状況を直接取得・操作可能にするModel Context Protocol（MCP）サーバーが導入されました。",
+    "summaryBody": "WebKitチームは、AIエージェントを活用したWeb開発ワークフローを効率化する「Safari MCPサーバー」を発表しました。これはAnthropicが提唱するModel Context Protocol（MCP）に対応したサーバーで、ClaudeやCodexなどのMCP対応クライアント（エージェント）が、Safariブラウザと直接対話することを可能にします。エージェントはDOM構造の取得、コンソールメッセージの確認、JavaScriptの実行、ネットワークリクエストの解析、スクリーンショットの撮影などを自律的に実行できるようになります。これにより、開発者が手動でエラー内容をプロンプトに貼り付ける手間が省け、アクセシビリティの検証、Safari固有のレイアウトバグの修正、パフォーマンス分析などが大幅に高速化されます。利用にはSafari Technology Preview 247以降が必要で、設定から「リモートオートメーション」を有効化することで利用可能です。",
+    "topics": [
+      "Safari",
+      "MCP (Model Context Protocol)",
+      "AI Agents",
+      "WebKit",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Introducing the Safari MCP server for web developers"
+  }
+}

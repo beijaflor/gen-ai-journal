@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:24:49.943435+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リリースのキャッチアップを、Claude Code Skills と Github CLI で自動化した",
+    "url": "https://zenn.dev/aeyesec/articles/fe599775862786",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code の Skills 機能と GitHub CLI を組み合わせ、リリース前の Issue や PR の内容把握から非エンジニア向けの要約作成までを自動化する実用的な手法の紹介。",
+    "summaryBody": "株式会社エーアイセキュリティラボのエンジニアが、2週間に一度発生するリリース内容のキャッチアップ作業を自動化した事例を解説しています。Claude Code の「Skills」機能（SKILL.md）を活用し、GitHub CLI (`gh`) を介して Issue、PR、コード差分（diff）を動的に取得。取得した情報を基に「概要」「対応・変化」「ユーザー体験の変化」という3つの構成で非エンジニア向けに要約します。設計のポイントとして、AIの推測による「作り話」を防ぐためのプロンプトの工夫や、技術用語を排して平易な言葉に変換するルール、さらには柔軟な入力形式（URLやスプレッドシートのコピペ等）への対応方法が具体的に示されており、即戦力となる自動化ツールとしての設計思想が学べます。",
+    "topics": [
+      "Claude Code",
+      "GitHub CLI",
+      "AI自動化",
+      "リリース管理",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

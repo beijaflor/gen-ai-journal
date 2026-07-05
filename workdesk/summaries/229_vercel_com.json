@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:37:16.280339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "konsistent：AIエージェントと開発者のためのTypeScript構造リンターのオープンソース化",
+    "url": "https://vercel.com/changelog/enforce-consistent-code-for-agents-and-humans-with-konsistent",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercelが公開したkonsistentは、TypeScriptやESLintではカバーできないファイル構造やエクスポート規則を強制し、AIと人間の双方に一貫した開発コンテキストを提供するCLIツールです。",
+    "summaryBody": "Vercelは、TypeScriptコードベースの構造的な一貫性を検証するためのCLIリンター「konsistent」をオープンソースとして公開しました。このツールは、TypeScriptの型システムやESLintの静的解析だけではモデル化が難しい「ファイル間の依存関係」や「特定のディレクトリ構造に基づいたエクスポート規則」などを定義できます。例えば、「特定のパターンに一致するファイルは必ず特定の型をエクスポートする」「特定のファイルがあるフォルダには必ず設定ファイルを置く」といったルールを`konsistent.json`で一括管理できます。これにより、特にコードベースの文脈を理解する必要があるAIエージェントによる自動生成やリファクタリングの精度を向上させ、決定論的で高速なフィードバックを実現します。VercelのAI SDKやChat SDK内でも既に実戦投入されています。",
+    "topics": [
+      "TypeScript",
+      "Linter",
+      "AI Agents",
+      "Vercel",
+      "Static Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Enforce consistent code for agents and humans with konsistent"
+  }
+}

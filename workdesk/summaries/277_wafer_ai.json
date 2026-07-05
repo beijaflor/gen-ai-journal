@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:50:50.583916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AMD MI355XでGLM-5.2を高速化：NVIDIA Blackwell比で2倍以上のコスト効率を実現",
+    "url": "https://www.wafer.ai/blog/glm52-amd",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Wafer社がAMD MI355Xを用いてGLM-5.2の推論を最適化し、NVIDIA Blackwellの約2.75倍のコスト効率で高いスループットを実現した手法を解説。",
+    "summaryBody": "Wafer社は、最新モデル「GLM-5.2」をAMD MI355X GPU上で最適化し、NVIDIA Blackwell（B200/B300）を凌駕するコストパフォーマンスを実証しました。主な手法として、AMD QuarkによるMXFP4量子化の採用、sglangでの投機的デコード（Speculative Decode）のバグ修正、およびMoE（Mixture of Experts）カーネルのチューニングを行っています。結果として、シングルストリームで213 tok/s、ノードあたり2626 tok/sのスループットを達成。性能自体はB200の約80%ですが、ハードウェア価格が2.75倍安価であるため、ドルあたりの性能では圧倒的優位に立ちます。この事例は、これまでCUDAが独占していたSOTAモデルの推論領域において、AMDのソフトウェアエコシステムとエンジニアリングの進展により、その「堀」が急速に埋まりつつあることを示しています。",
+    "topics": [
+      "AMD MI355X",
+      "GLM-5.2",
+      "sglang",
+      "MXFP4",
+      "Inference Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Performance per dollar is getting faster and cheaper"
+  }
+}

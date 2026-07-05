@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:47:24.666008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMをコーディングに活用する新しい手法の模索：Hacker Newsの議論",
+    "url": "https://news.ycombinator.com/item?id=48771515",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによるコーディングが「フロー状態」を阻害するという共通の悩みに対し、密閉型エージェントや仕様重視のワークフローなど、開発者たちが実践する多様な実験的手法が議論されています。",
+    "summaryBody": "Hacker Newsのこのスレッドでは、従来のプロンプト応答ループが開発者の集中を途切れさせるという課題に対し、独自の解決策が多数共有されています。主なアプローチとして、実装とテストを完全に分離し確証バイアスを防ぐ「密閉型エージェント（Hermetic Agents）」、AIにコードの背景や意図を散文として出力させる「リテレートプログラミング」、仕様の不備をAIに厳密に問い詰めさせる「グリル（Grilling）」手法などが挙げられます。また、開発者がコードを直接書くのではなく、管理者のように振る舞う「バイブ・コーディング（Vibe Coding）」の是非についても議論が活発です。一部のユーザーは、Zedの編集予測やClaude Codeのようなエージェントツールを活用しつつ、AIに仕様の「逆質問」をさせることで思考を深化させるなど、単なるコード生成を超えた「思考のパートナー」としてのLLM活用を模索しています。",
+    "topics": [
+      "LLM Coding",
+      "AI Agents",
+      "Vibe Coding",
+      "Software Engineering Workflow",
+      "Hacker News"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?"
+  }
+}

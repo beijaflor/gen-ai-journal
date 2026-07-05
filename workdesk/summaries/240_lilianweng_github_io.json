@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:40:36.018704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スケーリング則を注意深く理解する",
+    "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "深層学習における計算資源・モデルサイズ・データ量の最適な関係を示すスケーリング則について、Kaplan則とChinchilla則の相違点からデータ制限下の最新理論、実務的なフィッティングの罠までを包括的に解説した記事。",
+    "summaryBody": "Lilian Weng氏によるこの記事は、大規模言語モデル（LLM）の設計に不可欠な「スケーリング則」の変遷と現状を深く掘り下げています。序盤では、損失がモデルサイズ(N)やデータ量(D)に対して冪乗則（Power Law）に従うという初期の知見から、OpenAIによるKaplanらの研究、そしてそれを修正したDeepMindのChinchilla則（モデルとデータを同等にスケールさせるべきとする結論）への歴史的流れを整理しています。特に、両者の推奨事項がなぜ食い違ったのかについて、埋め込みパラメータの影響や実験規模の違いから説明するPearce & Songの分析を引用して明快に解説しています。さらに、昨今の「データ枯渇問題」を見据えた、データに繰り返し（Epochs）が含まれる場合の損失ペナルティを定式化する最新の「データ制限下でのスケーリング」研究についても詳細に触れています。最後に、パラメータのカウント方法や浮動小数点精度の扱いといった些細な要因が、巨大モデルの挙動予測に致命的な誤差をもたらす実務上の難しさ（フィッティングの機微）を指摘しており、理論と実践の両面で極めて価値の高い内容となっています。",
+    "topics": [
+      "スケーリング則",
+      "LLM",
+      "Chinchilla則",
+      "深層学習",
+      "計算最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "Scaling Laws, Carefully"
+  }
+}

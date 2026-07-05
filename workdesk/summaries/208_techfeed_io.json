@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:31:52.970923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeにDNSログを解析させた結果、ネットワークの意外な実態が判明",
+    "url": "https://techfeed.io/entries/6a444a9071759f74d1a07f7b",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "膨大なDNSログをClaudeに読み込ませることで、洗濯機の不自然な通信間隔やIoTデバイスの挙動など、手動では気づけないネットワークの異常を特定した事例。",
+    "summaryBody": "この記事では、LLM（Claude）を家庭内ネットワークのDNSログ解析に活用した実験的な試みが紹介されています。筆者が大量のログデータをアップロードしたところ、AIは即座にパターンを認識し、特定の洗濯機が72秒おきに日本のサーバーへ通信していることや、特定のデバイスが深夜に大量の外部通信を行っている実態を明らかにしました。人間が手作業で行うには膨大すぎるログ解析において、AIが「パターンの発見」や「異常値の特定」に極めて有効であることを示しています。専門的なパケット解析知識がなくても、AIを補助として使うことでセキュリティやプライバシーの管理レベルを大幅に向上させられる可能性を提示しています。",
+    "topics": [
+      "Claude",
+      "DNSログ",
+      "ネットワーク解析",
+      "IoTセキュリティ",
+      "AI活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "I let Claude read my DNS log, and it told me things about my network I never would've known otherwise"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:39:40.481628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間とAIのインタラクションを設計するための39の原則",
+    "url": "https://syntaxstream.substack.com/p/42-principles-for-designing-humanai",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIの不確実性や確率的な性質を前提に、ユーザーがAIを適切に信頼し、制御し、共に創造していくための実践的なデザイン原則を9つの領域・39項目で体系化したフレームワーク。",
+    "summaryBody": "AIシステムは従来の決定論的なソフトウェアとは異なり、同じ入力でも異なる出力を生成する「確率的」な性質を持ちます。本記事では、AI製品の質はモデル性能だけでなくインターフェース設計に左右されると説き、Microsoft、Google、IBMなどの既存ガイドラインを統合した39の設計原則を提示しています。\n\n主なフレームワークの柱は以下の通りです：\n1. **確率的基盤と期待設定**: AIの変動性を許容し、能力の限界を明示すること。\n2. **キャリブレーションされた信頼**: 自信スコアよりも「根拠（Provenance）」を優先し、ユーザーが検証しやすい環境を作る。また、AIがユーザーに迎合する「Sycophancy（へつらい）」を防ぎ、正直な反論ができるよう設計する。\n3. **透明性と制御**: 多段階の作業では計画を可視化し、ユーザーがいつでも介入・修正・拒否できるようにする。出力は完成品ではなく、編集可能な「下書き」として提示する。\n4. **責任ある自律性と失敗への備え**: リスクの大きさに応じて自律性を制限し、エラーが発生した際のロールバックや人間へのハンドオフを「優雅な失敗」として設計する。\n\n単なるUIのテクニックに留まらず、AI時代のUXに不可欠な「人間主導のガバナンス」をシステムレベルで実装するための指針となっています。",
+    "topics": [
+      "Human-AI Interaction",
+      "UXデザイン",
+      "AIプロダクト設計",
+      "信頼のキャリブレーション",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "39 Principles for Designing Human–AI Interaction"
+  }
+}

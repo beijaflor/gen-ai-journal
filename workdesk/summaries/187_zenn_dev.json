@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:26:42.697566+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5をトークン破産させずに使い倒す — オーケストレーターに徹させる運用",
+    "url": "https://zenn.dev/yui/articles/740da24e9ee419",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "高性能なFable 5を設計・指示のみに特化させ、実作業を安価なモデルへ委譲することで、トークン消費を抑えつつ開発精度を向上させるオーケストレーション手法を解説。",
+    "summaryBody": "Claude Codeなどの次世代AI環境において、高性能モデル「Fable 5」を効率的に運用するための戦略を解説した記事です。\n\n### 主な内容\n- **トークン管理の課題**: 高性能モデルに全てを任せるとトークン消費が激しく、実装の詳細でコンテキストが汚れるため、判断精度が低下する問題があります。\n- **役割分担の最適化**: Fable 5を「計画・分解・統合」に特化したオーケストレーターとし、Opusを複雑な設計・デバッグ、Sonnetを機械的な実装やテストに割り振る構成を推奨しています。\n- **ccteamsの活用**: 著者が開発したCLIツール「ccteams」を使用することで、役割分担されたサブエージェント設定とCLAUDE.mdのルーティングルールを1コマンドでプロジェクトに導入可能です。\n- **メリット**: トークン節約に加え、オーケストレーターが常に「高い抽象度」を保てるため、長時間セッションでも判断がブレなくなる効果があります。\n\n異なるモデル系統（Codexなど）をペアエンジニアとして組み合わせ、リスクの高い判断でセカンドオピニオンを得る手法についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "Fable 5",
+      "AIオーケストレーション",
+      "ccteams",
+      "LLM運用最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

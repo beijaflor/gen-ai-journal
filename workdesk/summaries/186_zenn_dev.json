@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:26:26.408642+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の質問ダイアログが勝手にタイムアウトするのを無効化する",
+    "url": "https://zenn.dev/ytkdm/articles/claude-code-askuserquestion-timeout",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code v2.1.198で導入された「離席判定による60秒の自動続行」などのタイムアウト挙動を、非公開の環境変数を設定して無効化する方法を解説します。",
+    "summaryBody": "Claude Codeの最新バージョン（v2.1.198以降）では、エージェントからの質問ダイアログを60秒間放置すると、ユーザーが離席中と判断され自動で処理が進んでしまう「AFK自動継続タイマー」が導入されました。公式ドキュメントには無効化の方法が記載されていませんが、バイナリ解析によって判明した内部環境変数を設定することでこの挙動を制御できます。具体的には `~/.claude/settings.json` の `env` ブロックに `CLAUDE_AFK_TIMEOUT_MS`（巨大な数値を設定）と `CLAUDE_CODE_USER_DIALOG_TIMEOUT_MS`（0を設定）を追加することで、回答するまで無期限に待機させることが可能です。複数のセッションを並列実行する際の不意な自動実行を防ぐのに役立ちます。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "環境設定",
+      "トラブルシューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

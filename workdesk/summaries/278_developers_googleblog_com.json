@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:51:07.032664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADK Go 2.0 発表：グラフベースのワークフロー、Human-in-the-Loop、動的オーケストレーションを搭載",
+    "url": "https://developers.googleblog.com/announcing-adk-go-20/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleがAgent Development Kit (ADK) for Go 2.0をリリース。グラフベースのワークフローエンジン、組み込みのHuman-in-the-Loop、動的オーケストレーションにより、堅牢なマルチエージェント開発を支援する。",
+    "summaryBody": "Googleは、Go言語向けエージェント開発キット「ADK for Go 2.0」をリリースしました。最大の特徴は、エージェントの動作をノードとエッジで定義するグラフベースのワークフローエンジンです。これにより、分岐、並列実行、リトライ、ループなどの複雑なオーケストレーションを、従来の場当たり的な制御フローよりも堅牢に実装できるようになりました。また、承認や情報入力をワークフローに組み込む「Human-in-the-Loop (HITL)」機能が標準搭載され、プロセスの再起動を跨いだ状態の永続化と再開をサポートしています。Goのジェネリクスを活用した型安全なノード定義や、LLMを「脳」として利用した動的なルーティング、シングルエージェントと共通の実行モデルへの統一など、プロダクション品質のエージェント開発を加速させる機能が盛り込まれています。1.0からの移行パスも提供されており、コンテキストの統合などの修正で導入可能です。",
+    "topics": [
+      "Go",
+      "AI Agents",
+      "Workflow Engine",
+      "LLM",
+      "Google Developers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Build reliable multi-agent applications with ADK Go 2.0. Discover our new graph-based workflow engine, built-in human-in-the-loop, and dynamic orchestration"
+  }
+}

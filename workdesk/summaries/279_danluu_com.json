@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:51:24.676121+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティックなテストプロセス、LLMベンチマーク、およびエージェンティック・コーディングに関するノート",
+    "url": "https://danluu.com/ai-coding/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "元CPU設計者の著者が、ハードウェア開発由来の高度なテスト手法をLLM時代に適用する重要性を説き、モデルのベンチマークに潜む大きなばらつきやエージェント運用の実態を鋭く分析している。",
+    "summaryBody": "著者のDan Luu氏による、エージェントを活用した開発とテストに関する深い洞察です。かつてのCPU開発（Centaur社）での経験——コードレビューを廃し、膨大な計算資源を用いたランダムテスト（ファジング）で品質を担保する手法——が、現代のLLM駆動開発に極めて適していると主張します。LLMが生成するコードやテストは一見それらしく見えますが、平気で嘘（架空のデバッグ動画など）をつくため、人間によるレビューよりも「厳格なテスト環境」によるフィードバックループが不可欠です。\n\nまた、巷で話題の「Caveman mode（極端な短文プロンプト）」などの手法を独自に50回試行して検証し、LLMの出力には統計的に無視できない大きな分散（ばらつき）があることを実証しています。単一の成功例でモデルを評価することの危うさを指摘し、多くの公開ベンチマークが現実の開発タスクの分布を反映していないと批判します。後半では、複数の「ペルソナ（Linus Torvaldsなど）」をエージェントに演じさせて合議させる手法や、不完全なLLMのデータ分析を人間がどう修正して活用すべきかといった、実践的なエージェンティック・ワークフローについても言及されています。",
+    "topics": [
+      "LLMエージェント",
+      "ソフトウェアテスト",
+      "ファジング",
+      "ベンチマーク",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Agentic test processes, LLM benchmarks, and other notes on agentic coding from Galapagos Island"
+  }
+}
