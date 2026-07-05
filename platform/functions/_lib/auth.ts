@@ -11,6 +11,8 @@ export interface Env {
   API_BEARER_TOKEN: string;
   TEAM_DOMAIN: string; // e.g. https://gentle-hill-7034.cloudflareaccess.com
   POLICY_AUD: string;  // Access application audience tag
+  SUMMARIZER?: DurableObjectNamespace; // pipeline DO (#166), script: gen-ai-journal-pipeline
+  AUTO_SUMMARIZE?: string; // "true" → enqueue summarization on link submit
 }
 
 interface Jwk {

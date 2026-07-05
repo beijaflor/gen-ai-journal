@@ -5,9 +5,15 @@
 import { authorize, type Env } from "../../_lib/auth";
 import { error, json, sanitizeUrl, validateUrl } from "../../_lib/util";
 
-const VALID_STATUSES = ["new", "consumed", "dismissed"] as const;
+const VALID_STATUSES = ["new", "queued", "summarized", "blocked", "consumed", "dismissed"] as const;
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+function enqueueSummarization(env: Env): Promise<unknown> | null {
+  if (env.AUTO_SUMMARIZE !== "true" || !env.SUMMARIZER) return null;
+  const stub = env.SUMMARIZER.get(env.SUMMARIZER.idFromName("main"));
+  return stub.fetch("https://summarizer/enqueue", { method: "POST" }).catch(() => {});
+}
+
+export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const who = await authorize(request, env);
   if (!who) return error("unauthorized", 401);
 
@@ -35,6 +41,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const res = await env.DB.prepare("INSERT INTO links (url, note) VALUES (?, ?) RETURNING id, submitted_at")
     .bind(url, note)
     .first<{ id: number; submitted_at: string }>();
+  const enqueue = enqueueSummarization(env);
+  if (enqueue) waitUntil(enqueue);
   return json({ duplicate: false, id: res!.id, url, note, status: "new", submitted_at: res!.submitted_at }, 201);
 };
 
@@ -49,9 +57,11 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
 
   const stmt = status
     ? env.DB.prepare(
-        "SELECT id, url, note, status, submitted_at, consumed_at FROM links WHERE status = ? ORDER BY submitted_at ASC",
+        "SELECT id, url, note, status, error, summary_id, submitted_at, consumed_at FROM links WHERE status = ? ORDER BY submitted_at ASC",
       ).bind(status)
-    : env.DB.prepare("SELECT id, url, note, status, submitted_at, consumed_at FROM links ORDER BY submitted_at DESC");
+    : env.DB.prepare(
+        "SELECT id, url, note, status, error, summary_id, submitted_at, consumed_at FROM links ORDER BY submitted_at DESC",
+      );
   const { results } = await stmt.all();
   return json({ links: results, count: results.length });
 };

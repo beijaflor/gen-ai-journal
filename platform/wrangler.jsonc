@@ -4,7 +4,17 @@
   "compatibility_date": "2026-06-28",
   "vars": {
     "TEAM_DOMAIN": "https://gentle-hill-7034.cloudflareaccess.com",
-    "POLICY_AUD": "573e670ac8efa1333f50da0f6f072b2fc9e1aeb20ebe2ca913952203881295b0"
+    "POLICY_AUD": "573e670ac8efa1333f50da0f6f072b2fc9e1aeb20ebe2ca913952203881295b0",
+    "AUTO_SUMMARIZE": "true"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SUMMARIZER",
+        "class_name": "SummarizerDO",
+        "script_name": "gen-ai-journal-pipeline"
+      }
+    ]
   },
   "d1_databases": [
     {

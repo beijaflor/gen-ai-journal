@@ -1,0 +1,23 @@
+{
+  "name": "gen-ai-journal-pipeline",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-28",
+  "vars": {
+    "SUMMARIZE_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "MIN_CONTENT_CHARS": "200",
+    "MAX_CONTENT_CHARS": "20000"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gen-ai-journal-db",
+      "database_id": "41a485fb-c2ec-40a6-ad21-e2e6bf9f3cf9"
+    }
+  ],
+  "ai": { "binding": "AI" },
+  "durable_objects": {
+    "bindings": [{ "name": "SUMMARIZER", "class_name": "SummarizerDO" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SummarizerDO"] }],
+  "observability": { "enabled": true }
+}
