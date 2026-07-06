@@ -50,7 +50,7 @@
   <div class="bar">
     <span class="filters" id="filters">
       <button data-s="" class="on">all</button>
-      <button data-s="new">new</button>
+      <button data-s="new">generating</button>
       <button data-s="queued">queued</button>
       <button data-s="summarized">summarized</button>
       <button data-s="blocked">blocked</button>
@@ -95,7 +95,7 @@
       $("stats").innerHTML = [
         cyc ? `<div class="stat cyc"><b>${cyc.journal_date}</b>cycle · next NNN ${String(cyc.next_summary_id).padStart(3, "0")}</div>`
             : `<div class="stat cyc"><b>none</b>no active cycle</div>`,
-        `<div class="stat"><b>${c.new ?? 0}</b>new</div>`,
+        `<div class="stat"><b>${c.new ?? 0}</b>generating</div>`,
         `<div class="stat"><b>${c.queued ?? 0}</b>queued</div>`,
         `<div class="stat"><b>${c.summarized ?? 0}</b>summarized</div>`,
         `<div class="stat"><b>${c.blocked ?? 0}</b>blocked</div>`,
@@ -113,7 +113,7 @@
         else acts.push(`<button data-a="retry" data-id="${l.id}">re-open</button>`);
         tr.innerHTML = `
           <td class="num">${l.summary_id ? `<a href="/api/summaries/${l.summary_id}" target="_blank"><b>${l.summary_id}</b></a>` : "–"}</td>
-          <td><span class="pill ${l.status}">${l.status}</span></td>
+          <td><span class="pill ${l.status}">${l.status === "new" ? "generating" : l.status}</span></td>
           <td><div class="u"><a href="${l.url}" target="_blank" rel="noreferrer">${l.url}</a></div>
               ${l.note ? `<div style="font-size:12px;color:var(--muted)">${escapeHtml(l.note)}</div>` : ""}
               ${l.error ? `<div class="err">${escapeHtml(l.error)}</div>` : ""}</td>
