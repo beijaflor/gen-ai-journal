@@ -17,14 +17,18 @@ functions/            Pages Functions = the HTTP API
   _lib/summaries.ts   THE write path: validation, blocked-stub detect, upsert, NNN allocation
   _lib/util.ts        URL sanitize/validate (mirrors scripts/check_link.py)
   _lib/enqueue.ts     kick the summarization DO
+  _lib/events.ts      logEvent(): fire-and-forget audit-trail INSERT (#172),
+                      shared with the pipeline DO
   api/links/          POST (submit+auto-enqueue), GET, PATCH /:id (retry re-enqueues;
                       dismiss RETRACTS the link's workdesk summary — NNN stays spent)
   api/summaries/      POST bulk upsert (fallback pushes), GET list / :id (public reads)
   api/cycle.ts        GET registry state, POST rollover (seed counter per #165 rule)
   api/pipeline.ts     joined operational view for the console
+  api/events.ts       GET audit trail: ?limit= (≤200) &event= &summary_id= &link_id=
 public/               static, Access-protected where sensitive
-  submit/ inbox/      link intake UI + bookmarklet
+  submit/ inbox/      link intake UI + bookmarklet (+ latest-events panel)
   admin/pipeline/     operations console: states, errors, metrics, retry, rollover
+  admin/logs/         events log: full audit trail, filterable, auto-refresh
 worker/               companion Worker "gen-ai-journal-pipeline"
   src/index.ts        SummarizerDO: alarm-driven queue (debounce 20s, serial,
                       stale-claim recovery, infra-retry via alarm backoff)
@@ -64,4 +68,9 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
   Re-open flips it back instantly — no regeneration, no token spend.
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
+- Every summarization-lifecycle interaction lands in the append-only `events`
+  table (#172): link submitted/dismissed/reopened, summary created/dismissed/
+  restored, pipeline blocked (with metrics), cycle rolled. Events survive link
+  deletion; scope is summarization only until the publish phase (#163) adds
+  journal events. View at `/admin/logs`, query via `GET /api/events`.
 - Secrets: `API_BEARER_TOKEN` (Pages + worker), `GEMINI_API_KEY` (worker).

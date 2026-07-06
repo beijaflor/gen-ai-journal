@@ -9,6 +9,7 @@
 // infra failures rethrow so the alarm's built-in retry/backoff handles them.
 
 import { DurableObject } from "cloudflare:workers";
+import { logEvent } from "../../functions/_lib/events";
 import { allocateId, getCycle, writeSummary } from "../../functions/_lib/summaries";
 import { logRun, summarizeUrl, tokensFromUsage, type LinkRow, type SummarizeMeta, type SummarizeResult } from "./core";
 
@@ -76,6 +77,13 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
     await this.env.DB.prepare("UPDATE links SET status = 'blocked', error = ? WHERE id = ? AND status = 'queued'")
       .bind(reason.slice(0, 500), linkId)
       .run();
+    const t = tokensFromUsage(meta?.usage);
+    await logEvent(this.env.DB, {
+      actor: "pipeline",
+      event: "pipeline.blocked",
+      linkId,
+      detail: { reason: reason.slice(0, 500), model: meta?.model, fetch_ms: meta?.fetchMs, ai_ms: meta?.aiMs, tokens_in: t.tokensIn, tokens_out: t.tokensOut },
+    });
   }
 
   private async recordRun(linkId: number, meta?: Partial<SummarizeMeta>): Promise<void> {
@@ -117,6 +125,14 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
     )
       .bind(id, link.id)
       .run();
+    const t = tokensFromUsage(out.meta.usage);
+    await logEvent(this.env.DB, {
+      actor: "pipeline",
+      event: "summary.created",
+      linkId: link.id,
+      summaryId: id,
+      detail: { model: out.meta.model, fetch_ms: out.meta.fetchMs, ai_ms: out.meta.aiMs, tokens_in: t.tokensIn, tokens_out: t.tokensOut },
+    });
   }
 }
 

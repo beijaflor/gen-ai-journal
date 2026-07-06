@@ -3,6 +3,7 @@
 //   POST: rollover {date, next_id?} (bearer/Access)
 
 import { authorize, type Env } from "../_lib/auth";
+import { logEvent } from "../_lib/events";
 import { error, json } from "../_lib/util";
 import { getCycle } from "../_lib/summaries";
 
@@ -37,5 +38,6 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       "INSERT INTO settings (key, value) VALUES ('next_summary_id', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value",
     ).bind(String(nextId)),
   ]);
+  await logEvent(env.DB, { actor: "editor", event: "cycle.rolled", detail: { date, next_id: nextId, by: who } });
   return json({ active: true, journal_date: date, next_summary_id: nextId });
 };

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Events log — gen-ai-journal</title>
+  <style>
+    :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; --ok: #22633c; --bad: #a33326; }
+    body { font-family: system-ui, sans-serif; max-width: 980px; margin: 5vh auto; padding: 0 20px 60px; color: #21252d; line-height: 1.5; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    p.sub { color: var(--muted); margin: 0 0 18px; font-size: 14px; }
+    .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+    .bar select, .bar button { font-size: 13px; border: 1px solid var(--line); background: #fff; border-radius: 5px; padding: 5px 12px; }
+    .bar button { cursor: pointer; }
+    .bar .hint { font-size: 12px; color: var(--muted); }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; }
+    th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--line); white-space: nowrap; }
+    td { padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    td.ts { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
+    .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; white-space: nowrap; }
+    .pill.editor { background: #e8eef5; color: #33567a; }
+    .pill.pipeline { background: #fdf3e4; color: #8a5307; }
+    .pill.system { background: #f0f0ee; color: #888; }
+    .ev { font-family: ui-monospace, monospace; font-size: 12px; white-space: nowrap; }
+    .ev.good { color: var(--ok); }
+    .ev.bad { color: var(--bad); }
+    .subj { white-space: nowrap; }
+    .subj a { color: #1f4e79; }
+    .detail { color: #444; font-size: 12.5px; word-break: break-word; }
+    .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    #empty { color: var(--muted); font-size: 14px; padding: 22px 12px; }
+    nav { margin-top: 22px; font-size: 13.5px; }
+    nav a { color: var(--accent); margin-right: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Events log</h1>
+  <p class="sub">Summarization audit trail — every human &amp; pipeline interaction, newest first. <span id="asof"></span></p>
+
+  <div class="bar">
+    <select id="f-event">
+      <option value="">all events</option>
+      <option>link.submitted</option>
+      <option>link.dismissed</option>
+      <option>link.reopened</option>
+      <option>summary.created</option>
+      <option>summary.dismissed</option>
+      <option>summary.restored</option>
+      <option>pipeline.blocked</option>
+      <option>cycle.rolled</option>
+    </select>
+    <select id="f-limit">
+      <option value="50">last 50</option>
+      <option value="100">last 100</option>
+      <option value="200">last 200</option>
+    </select>
+    <span style="flex:1"></span>
+    <span class="hint">auto-refreshes every 30s</span>
+    <button id="refresh">↻ refresh</button>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>subject</th><th>detail</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div id="empty" hidden>No events yet.</div>
+  </div>
+
+  <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/submit">submit</a></nav>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function fmtDetail(raw) {
+      if (!raw) return "";
+      let obj;
+      try { obj = JSON.parse(raw); } catch { return raw; }
+      return Object.entries(obj)
+        .filter(([, v]) => v !== null && v !== undefined && v !== "")
+        .map(([k, v]) => {
+          const s = String(v);
+          return k + "=" + (s.length > 110 ? s.slice(0, 110) + "…" : s);
+        })
+        .join(" · ");
+    }
+
+    function subjectHtml(e) {
+      const parts = [];
+      if (e.summary_id) {
+        const nnn = encodeURIComponent(e.summary_id);
+        parts.push(`<a href="/api/summaries/${nnn}" target="_blank"><b>${escapeHtml(e.summary_id)}</b></a>`);
+      }
+      if (e.link_id != null) parts.push(`link #${Number(e.link_id)}`);
+      return parts.join(" · ") || "–";
+    }
+
+    function evClass(name) {
+      if (name === "summary.created") return "ev good";
+      if (name === "pipeline.blocked") return "ev bad";
+      return "ev";
+    }
+
+    function escapeHtml(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+
+    async function load() {
+      const p = new URLSearchParams();
+      p.set("limit", $("f-limit").value);
+      if ($("f-event").value) p.set("event", $("f-event").value);
+      const res = await fetch("/api/events?" + p, { credentials: "same-origin" });
+      if (!res.ok) { $("rows").innerHTML = `<tr><td colspan="5">failed to load (${res.status})</td></tr>`; return; }
+      const d = await res.json();
+      $("asof").textContent = d.count + " event" + (d.count === 1 ? "" : "s") + " shown.";
+      $("empty").hidden = d.count !== 0;
+      $("rows").innerHTML = "";
+      for (const e of d.events) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td class="ts">${(e.ts || "").slice(0, 19).replace("T", " ")}</td>
+          <td><span class="pill ${e.actor}">${e.actor}</span></td>
+          <td><span class="${evClass(e.event)}">${escapeHtml(e.event)}</span></td>
+          <td class="subj">${subjectHtml(e)}</td>
+          <td class="detail" title="${escapeHtml(e.detail || "")}">${escapeHtml(fmtDetail(e.detail))}</td>`;
+        $("rows").appendChild(tr);
+      }
+    }
+
+    $("f-event").onchange = load;
+    $("f-limit").onchange = load;
+    $("refresh").onclick = load;
+    load();
+    setInterval(load, 30_000);
+  </script>
+</body>
+</html>
