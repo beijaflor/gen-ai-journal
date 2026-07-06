@@ -15,7 +15,24 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
   )
     .bind(id, journalDate || null)
     .first<Record<string, string>>();
-  if (!row) return error("summary not found", 404);
+  if (!row) {
+    // Numbering is confusing enough to deserve a self-explaining 404 (NNN is
+    // per-cycle and only assigned on successful summarization).
+    const scope = journalDate ? `journal_date=${journalDate}` : "the workdesk (no journal_date)";
+    const { results } = await env.DB.prepare(
+      "SELECT id FROM summaries WHERE ifnull(journal_date,'') = ifnull(?, '') ORDER BY id",
+    )
+      .bind(journalDate || null)
+      .all<{ id: string }>();
+    return json(
+      {
+        error: `no summary ${id} in ${scope}`,
+        hint: "NNN ids are per-cycle and exist only after successful summarization; gaps mean a retracted (dismissed) summary. For published journals pass ?journal_date=YYYY-MM-DD.",
+        available_ids: results.map((r) => r.id),
+      },
+      404,
+    );
+  }
 
   let content: unknown = row.content;
   if (!isBlockedStub(row.content)) {
