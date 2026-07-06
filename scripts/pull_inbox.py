@@ -6,7 +6,7 @@ Fetches links with status=new from the platform API, runs the same
 validation / sanitization / canonical-resolution / duplicate checks as the
 add-url skill (reusing scripts/check_link.py), appends unique URLs to the
 "## Main List" section of sources.md with sequential zero-padded IDs, and
-marks them consumed (duplicates → dismissed) via the API.
+marks them dismissed in the cloud inbox via the API (legacy parallel-run tool).
 
 Usage:
     uv run scripts/pull_inbox.py [--dry-run] [--sources workdesk/sources.md]
@@ -118,7 +118,7 @@ def main() -> int:
         elif in_target:
             # Already in this cycle's list (e.g. a re-run after a crash between
             # file write and PATCH) — it was consumed, not rejected.
-            print(f"– {prefix} — already in {sources_path.name}; marking consumed")
+            print(f"– {prefix} — already in {sources_path.name}; dismissing")
             dup.append(lid)
             if not args.dry_run:
                 api("PATCH", f"/api/links/{lid}", json={"status": "dismissed"})

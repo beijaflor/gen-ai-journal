@@ -1,6 +1,6 @@
 // /api/links — link inbox (#159)
 //   POST: submit a URL (form/bookmarklet via Access cookie, or bearer)
-//   GET:  list links, ?status=new|consumed|dismissed (default: all)
+//   GET:  list links, ?status=new|queued|summarized|blocked|dismissed (default: all)
 
 import { authorize, type Env } from "../../_lib/auth";
 import { enqueueSummarization } from "../../_lib/enqueue";
