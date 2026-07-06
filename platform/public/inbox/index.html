@@ -130,7 +130,7 @@
         actor.appendChild(pill);
         const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
         const subj = document.createElement("td"); subj.className = "subj";
-        subj.textContent = [e.summary_id ? "NNN " + e.summary_id : "", e.link_id != null ? "link #" + e.link_id : ""].filter(Boolean).join(" · ") || "–";
+        subj.textContent = [e.summary_id ? "NNN " + e.summary_id : "", e.link_id != null ? "L" + e.link_id : ""].filter(Boolean).join(" · ") || "–";
         tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(subj);
         rows.appendChild(tr);
       }

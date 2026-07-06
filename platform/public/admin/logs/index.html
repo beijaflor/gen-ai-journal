@@ -90,9 +90,9 @@
       const parts = [];
       if (e.summary_id) {
         const nnn = encodeURIComponent(e.summary_id);
-        parts.push(`<a href="/api/summaries/${nnn}" target="_blank"><b>${escapeHtml(e.summary_id)}</b></a>`);
+        parts.push(`NNN <a href="/api/summaries/${nnn}" target="_blank"><b>${escapeHtml(e.summary_id)}</b></a>`);
       }
-      if (e.link_id != null) parts.push(`link #${Number(e.link_id)}`);
+      if (e.link_id != null) parts.push(`L${Number(e.link_id)}`);
       return parts.join(" · ") || "–";
     }
 
