@@ -86,7 +86,8 @@
         if (l.error) { const er = document.createElement("div"); er.className = "err"; er.textContent = l.error; li.appendChild(er); }
         const meta = document.createElement("div"); meta.className = "meta";
         const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status === "new" ? "generating" : l.status;
-        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16);
+        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16) + "  ·  L" + l.id;
+        t.title = "L" + l.id + " = link id used as subject in /admin/logs";
         meta.appendChild(pill); meta.appendChild(t);
         const act = document.createElement("span"); act.className = "act";
         if (l.status !== "dismissed") act.appendChild(actBtn(l.id, "dismissed", "dismiss"));
