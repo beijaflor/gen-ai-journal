@@ -16,22 +16,22 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
     .bind(id, journalDate || null)
     .first<Record<string, string>>();
   if (!row) {
-    // Numbering is confusing enough to deserve a self-explaining 404 (NNN is
-    // per-cycle and only assigned on successful summarization).
-    const scope = journalDate ? `journal_date=${journalDate}` : "the workdesk (no journal_date)";
-    const { results } = await env.DB.prepare(
-      "SELECT id FROM summaries WHERE ifnull(journal_date,'') = ifnull(?, '') ORDER BY id",
-    )
-      .bind(journalDate || null)
-      .all<{ id: string }>();
-    return json(
-      {
-        error: `no summary ${id} in ${scope}`,
-        hint: "NNN ids are per-cycle and exist only after successful summarization; gaps mean a retracted (dismissed) summary. For published journals pass ?journal_date=YYYY-MM-DD.",
-        available_ids: results.map((r) => r.id),
-      },
-      404,
-    );
+    // State-aware miss: out-of-range keeps the plain 404; an allocated-but-
+    // missing NNN explains itself (retracted vs being regenerated).
+    const next = await env.DB.prepare("SELECT value FROM settings WHERE key='next_summary_id'").first<{ value: string }>();
+    if (!journalDate && next && Number(id) >= Number(next.value)) {
+      return error("summary not found", 404); // never allocated (out of range)
+    }
+    const link = await env.DB.prepare("SELECT status FROM links WHERE summary_id = ?")
+      .bind(id)
+      .first<{ status: string }>();
+    if (link?.status === "dismissed") {
+      return json({ error: `summary ${id} was retracted — its link was dismissed by the editor`, status: "retracted" }, 410);
+    }
+    if (link && (link.status === "new" || link.status === "queued")) {
+      return json({ error: `summary ${id} is being regenerated — retry shortly`, status: "processing" }, 404);
+    }
+    return error("summary not found", 404);
   }
 
   let content: unknown = row.content;
