@@ -20,16 +20,15 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
     return error("body must be JSON: {status}", 400);
   }
   const status = body.status;
-  if (status !== "new" && status !== "consumed" && status !== "dismissed") {
-    return error("status must be one of: new, consumed, dismissed", 400);
+  if (status !== "new" && status !== "dismissed") {
+    return error("status must be one of: new, dismissed", 400);
   }
 
-  const consumedAt = status === "consumed" ? new Date().toISOString() : null;
   const res = await env.DB.prepare(
-    "UPDATE links SET status = ?, consumed_at = ?, error = CASE WHEN ? = 'new' THEN NULL ELSE error END WHERE id = ? RETURNING id, url, status, consumed_at, summary_id",
+    "UPDATE links SET status = ?, error = CASE WHEN ? = 'new' THEN NULL ELSE error END WHERE id = ? RETURNING id, url, status, summary_id",
   )
-    .bind(status, consumedAt, status, id)
-    .first<{ id: number; url: string; status: string; consumed_at: string | null; summary_id: string | null }>();
+    .bind(status, status, id)
+    .first<{ id: number; url: string; status: string; summary_id: string | null }>();
   if (!res) return error("link not found", 404);
 
   if (status === "dismissed" && res.summary_id) {

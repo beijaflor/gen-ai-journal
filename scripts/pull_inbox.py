@@ -114,14 +114,14 @@ def main() -> int:
             added.append((lid, nid, dedup_url))
             if not args.dry_run:
                 sources_path.write_text(text)
-                api("PATCH", f"/api/links/{lid}", json={"status": "consumed"})
+                api("PATCH", f"/api/links/{lid}", json={"status": "dismissed"})
         elif in_target:
             # Already in this cycle's list (e.g. a re-run after a crash between
             # file write and PATCH) — it was consumed, not rejected.
             print(f"– {prefix} — already in {sources_path.name}; marking consumed")
             dup.append(lid)
             if not args.dry_run:
-                api("PATCH", f"/api/links/{lid}", json={"status": "consumed"})
+                api("PATCH", f"/api/links/{lid}", json={"status": "dismissed"})
         else:
             where = locations[0][0] if locations else "archives"
             print(f"– {prefix} — duplicate ({where}); dismissing")
