@@ -17,8 +17,9 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
     .first<Record<string, string>>();
   if (!row) return error("summary not found", 404);
   if (row.status === "dismissed") {
-    // Hidden while dismissed — re-open the link on the console to restore.
-    return json({ error: `summary ${id} is dismissed`, status: "dismissed" }, 410);
+    // Only the content is hidden while dismissed; metadata stays visible.
+    const { content: _hidden, ...meta } = row;
+    return json({ ...meta, content: null, note: "content hidden while dismissed — re-open the link to restore" });
   }
 
   let content: unknown = row.content;
