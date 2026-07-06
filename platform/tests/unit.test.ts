@@ -5,6 +5,7 @@
 import { describe, expect, it } from "vitest";
 import { sanitizeUrl, validateUrl } from "../functions/_lib/util";
 import { blockedStubUrl, displayTitle, inspectSummary, isBlockedStub } from "../functions/_lib/summaries";
+import { renderSummaryPage, type LinkRow, type SummaryRow } from "../functions/_lib/summary_page";
 import { tokensFromUsage } from "../worker/src/core";
 
 describe("sanitizeUrl (mirrors scripts/check_link.py)", () => {
@@ -54,6 +55,74 @@ describe("summary classification", () => {
     expect(displayTitle(VALID)).toBe("T");
     expect(displayTitle("BLOCKED: reason here")).toContain("BLOCKED");
     expect(displayTitle("garbage")).toBe("(unparseable)");
+  });
+});
+
+describe("renderSummaryPage (#173 detail page)", () => {
+  const mkSummary = (over: Partial<SummaryRow> = {}): SummaryRow => ({
+    id: "042",
+    journal_date: null,
+    url: "https://e.com/a",
+    content: JSON.stringify({
+      metadata: { version: "1.0", generatedAt: "t", generatedBy: "m" },
+      content: {
+        title: "見出し <script>alert(1)</script>",
+        originalTitle: "Original & <Title>",
+        url: "https://e.com/a",
+        language: "en",
+        contentType: "news",
+        oneSentenceSummary: "一文要約。",
+        summaryBody: "SECRET-BODY-MARKER 段落1。\n\n段落2。",
+        topics: ["agents", "<b>xss</b>"],
+        scores: { signal: 4, depth: 3, uniqueness: 2, practical: 4, antiHype: 5, mainJournal: 3, annexPotential: 4, overall: 4 },
+      },
+    }),
+    status: "workdesk",
+    pushed_at: "2026-07-06T00:00:00Z",
+    updated_at: "2026-07-06T00:00:00Z",
+    ...over,
+  });
+  const link: LinkRow = {
+    id: 7,
+    url: "https://e.com/a",
+    note: null,
+    status: "summarized",
+    error: null,
+    submitted_at: "2026-07-06T00:00:00Z",
+    processed_at: "2026-07-06T00:01:00Z",
+    fetch_ms: 500,
+    ai_ms: 12000,
+    tokens_in: 9000,
+    tokens_out: 800,
+  };
+
+  it("renders content with all user text HTML-escaped", () => {
+    const html = renderSummaryPage(mkSummary(), link);
+    expect(html).toContain("SECRET-BODY-MARKER");
+    expect(html).toContain("原題: Original &amp; &lt;Title&gt;");
+    expect(html).toContain("&lt;script&gt;alert(1)&lt;/script&gt;");
+    expect(html).not.toContain("<script>alert(1)</script>");
+    expect(html).toContain("&lt;b&gt;xss&lt;/b&gt;");
+    expect(html).toContain("re-summarize"); // summarized link → re-summarize action
+    expect(html).toContain("L7");
+  });
+
+  it("dismissed summaries hide the body but keep metadata + re-open", () => {
+    const html = renderSummaryPage(mkSummary({ status: "dismissed" }), { ...link, status: "dismissed" });
+    expect(html).not.toContain("SECRET-BODY-MARKER");
+    expect(html).toContain("hidden while dismissed");
+    expect(html).toContain("re-open");
+    expect(html).not.toContain("re-summarize");
+    expect(html).toContain("Summary 042");
+  });
+
+  it("blocked stubs render as escaped raw text; no link row → no actions", () => {
+    const html = renderSummaryPage(
+      mkSummary({ status: "blocked", content: "BLOCKED: paywall <hit>\n\n- URL: https://e.com/a\n" }),
+      null,
+    );
+    expect(html).toContain("BLOCKED: paywall &lt;hit&gt;");
+    expect(html).toContain("Actions unavailable");
   });
 });
 

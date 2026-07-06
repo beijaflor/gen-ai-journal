@@ -107,12 +107,12 @@
       $("rows").innerHTML = rows.length ? "" : `<tr><td colspan="7" style="color:var(--muted)">nothing here</td></tr>`;
       for (const l of rows) {
         const tr = document.createElement("tr");
+        // Read-mostly list (#173): dismiss/re-open/re-summarize live on the
+        // summary detail page; only retry-on-blocked stays here.
         const acts = [];
         if (l.status === "blocked") acts.push(`<button data-a="retry" data-id="${l.id}">retry</button>`);
-        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}" data-st="${l.status}" data-nnn="${l.summary_id ?? ""}">dismiss</button>`);
-        else acts.push(`<button data-a="retry" data-id="${l.id}">re-open</button>`);
         tr.innerHTML = `
-          <td class="num">${l.summary_id ? `<a href="/api/summaries/${l.summary_id}" target="_blank"><b>${l.summary_id}</b></a>` : "–"}</td>
+          <td class="num">${l.summary_id ? `<a href="/admin/summaries/${encodeURIComponent(l.summary_id)}" target="_blank"><b>${l.summary_id}</b></a>` : "–"}</td>
           <td><span class="pill ${l.status}">${l.status === "new" ? "generating" : l.status}</span></td>
           <td><div class="u"><a href="${l.url}" target="_blank" rel="noreferrer">${l.url}</a></div>
               ${l.note ? `<div style="font-size:12px;color:var(--muted)">${escapeHtml(l.note)}</div>` : ""}
@@ -127,15 +127,13 @@
     function escapeHtml(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
     document.body.addEventListener("click", async (e) => {
-      const a = e.target.dataset?.a;
-      if (!a) return;
-      const status = a === "retry" ? "new" : "dismissed";
+      if (e.target.dataset?.a !== "retry") return;
       e.target.disabled = true;
       await fetch(`/api/links/${e.target.dataset.id}`, {
         method: "PATCH",
         headers: { "content-type": "application/json" },
         credentials: "same-origin",
-        body: JSON.stringify({ status }),
+        body: JSON.stringify({ status: "new" }),
       });
       load();
     });
