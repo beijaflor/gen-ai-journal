@@ -59,13 +59,11 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
     return error(`status must be one of: ${VALID_STATUSES.join(", ")}`, 400);
   }
 
+  const cols =
+    "id, url, note, status, error, summary_id, submitted_at, consumed_at, processed_at, fetch_ms, ai_ms, tokens_in, tokens_out";
   const stmt = status
-    ? env.DB.prepare(
-        "SELECT id, url, note, status, error, summary_id, submitted_at, consumed_at FROM links WHERE status = ? ORDER BY submitted_at ASC",
-      ).bind(status)
-    : env.DB.prepare(
-        "SELECT id, url, note, status, error, summary_id, submitted_at, consumed_at FROM links ORDER BY submitted_at DESC",
-      );
+    ? env.DB.prepare(`SELECT ${cols} FROM links WHERE status = ? ORDER BY submitted_at ASC`).bind(status)
+    : env.DB.prepare(`SELECT ${cols} FROM links ORDER BY submitted_at DESC`);
   const { results } = await stmt.all();
   return json({ links: results, count: results.length });
 };
