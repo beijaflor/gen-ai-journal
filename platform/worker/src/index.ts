@@ -9,8 +9,8 @@
 // infra failures rethrow so the alarm's built-in retry/backoff handles them.
 
 import { DurableObject } from "cloudflare:workers";
-import { allocateId, getCycle, inspectSummary, writeSummary } from "../../functions/_lib/summaries";
-import { SUMMARIZE_PROMPT_TEMPLATE } from "./prompt.generated";
+import { allocateId, getCycle, writeSummary } from "../../functions/_lib/summaries";
+import { logRun, summarizeUrl, tokensFromUsage, type LinkRow, type SummarizeMeta, type SummarizeResult } from "./core";
 
 export interface PipelineEnv {
   DB: D1Database;
@@ -26,15 +26,6 @@ export interface PipelineEnv {
 const DEBOUNCE_MS = 20_000;
 const NEXT_LINK_DELAY_MS = 2_000;
 const STALE_QUEUED_MIN = 15;
-const FETCH_TIMEOUT_MS = 25_000;
-const USER_AGENT = "Mozilla/5.0 (GenAI Journal Summarizer; +https://gen-ai-journal.pages.dev)";
-
-interface LinkRow {
-  id: number;
-  url: string;
-  status: string;
-}
-
 export class SummarizerDO extends DurableObject<PipelineEnv> {
   async fetch(request: Request): Promise<Response> {
     const path = new URL(request.url).pathname;
@@ -76,13 +67,13 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
       `UPDATE links SET status = 'new' WHERE status = 'queued' AND submitted_at < datetime('now', '-${STALE_QUEUED_MIN} minutes')`,
     ).run();
     return this.env.DB.prepare(
-      "UPDATE links SET status = 'queued' WHERE id = (SELECT id FROM links WHERE status = 'new' ORDER BY submitted_at ASC LIMIT 1) RETURNING id, url, status",
+      "UPDATE links SET status = 'queued' WHERE id = (SELECT id FROM links WHERE status = 'new' ORDER BY submitted_at ASC LIMIT 1) RETURNING id, url, status, summary_id",
     ).first<LinkRow>();
   }
 
   private async block(linkId: number, reason: string, meta?: Partial<SummarizeMeta>): Promise<void> {
     await this.recordRun(linkId, meta);
-    await this.env.DB.prepare("UPDATE links SET status = 'blocked', error = ? WHERE id = ?")
+    await this.env.DB.prepare("UPDATE links SET status = 'blocked', error = ? WHERE id = ? AND status = 'queued'")
       .bind(reason.slice(0, 500), linkId)
       .run();
   }
@@ -110,305 +101,24 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
       return;
     }
 
-    // Allocate NNN and write via the shared path (IDs only spent on success)
-    const id = await allocateId(this.env as never);
+    // Reuse the link's existing NNN on re-summarize (retry/re-open of a
+    // previously summarized link must never double-spend an ID); otherwise
+    // allocate — IDs are only spent on success.
+    const id = link.summary_id ?? (await allocateId(this.env as never));
     const result = await writeSummary(this.env as never, { id, content: out.raw });
     if (!result.ok) {
       await this.block(link.id, `BLOCKED: store rejected — ${result.error}`, out.meta);
       return;
     }
     await this.recordRun(link.id, out.meta);
-    await this.env.DB.prepare("UPDATE links SET status = 'summarized', summary_id = ?, error = NULL WHERE id = ?")
+    // Guarded on 'queued' so a dismissal that raced this run wins.
+    await this.env.DB.prepare(
+      "UPDATE links SET status = 'summarized', summary_id = ?, error = NULL WHERE id = ? AND status = 'queued'",
+    )
       .bind(id, link.id)
       .run();
   }
 }
-
-function tokensFromUsage(usage: unknown): { tokensIn: number | null; tokensOut: number | null } {
-  const u = (usage ?? {}) as Record<string, number>;
-  return {
-    // Gemini: usageMetadata.{promptTokenCount,candidatesTokenCount}; Workers AI: {prompt_tokens,completion_tokens}
-    tokensIn: u.promptTokenCount ?? u.prompt_tokens ?? null,
-    tokensOut: u.candidatesTokenCount ?? u.completion_tokens ?? null,
-  };
-}
-
-/** One structured log line per pipeline run — visible via `wrangler tail` and Workers Logs. */
-function logRun(link: LinkRow, out: SummarizeResult): void {
-  const t = tokensFromUsage(out.ok ? out.meta.usage : out.meta?.usage);
-  console.log(
-    JSON.stringify({
-      evt: "summarize",
-      linkId: link.id,
-      url: link.url,
-      outcome: out.ok ? "ok" : "blocked",
-      reason: out.ok ? undefined : out.reason,
-      model: out.ok ? out.meta.model : out.meta?.model,
-      fetchMs: out.ok ? out.meta.fetchMs : out.meta?.fetchMs,
-      aiMs: out.ok ? out.meta.aiMs : out.meta?.aiMs,
-      extractChars: out.ok ? out.meta.extractChars : out.meta?.extractChars,
-      tokensIn: t.tokensIn,
-      tokensOut: t.tokensOut,
-    }),
-  );
-}
-
-export interface SummarizeMeta {
-  model: string;
-  extractChars: number;
-  fetchMs: number;
-  aiMs: number;
-  usage?: unknown; // whatever AI.run reports (token counts where available)
-}
-
-export type SummarizeResult =
-  | { ok: true; raw: string; meta: SummarizeMeta }
-  | { ok: false; reason: string; meta?: Partial<SummarizeMeta> };
-
-/** The full summarization core — used by the DO (persisting) and /eval (non-persisting). */
-async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?: string): Promise<SummarizeResult> {
-  const model = modelOverride ?? env.SUMMARIZE_MODEL;
-
-  // 1. Fetch (fail closed on anything that isn't a readable HTML page)
-  const t0 = Date.now();
-  let res: Response;
-  try {
-    res = await fetch(url, {
-      redirect: "follow",
-      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
-      headers: { "user-agent": USER_AGENT, accept: "text/html,application/xhtml+xml" },
-    });
-  } catch (e) {
-    return { ok: false, reason: `BLOCKED: fetch failed — ${String(e).slice(0, 200)}` };
-  }
-  if (!res.ok) return { ok: false, reason: `BLOCKED: fetch returned HTTP ${res.status}` };
-  const ctype = (res.headers.get("content-type") ?? "").toLowerCase();
-  if (ctype.includes("application/pdf") || new URL(url).pathname.toLowerCase().endsWith(".pdf")) {
-    return { ok: false, reason: "BLOCKED-PDF: PDF detected — regenerate locally via summarize-pdf (#168)" };
-  }
-  if (!ctype.includes("html")) {
-    return { ok: false, reason: `BLOCKED: unsupported content-type ${ctype.slice(0, 80)}` };
-  }
-
-  // 2. Extract main text (streaming, CPU-cheap)
-  const { title, text } = await extractText(res);
-  const fetchMs = Date.now() - t0;
-  const minChars = Number(env.MIN_CONTENT_CHARS);
-  if (text.length < minChars) {
-    return {
-      ok: false,
-      reason: `BLOCKED: extracted ${text.length} chars < ${minChars} — likely bot-blocked or JS-rendered`,
-      meta: { extractChars: text.length, fetchMs },
-    };
-  }
-  const content = text.slice(0, Number(env.MAX_CONTENT_CHARS));
-
-  // 3. Structured summary-v1 generation.
-  //    Model routing (#167 decision): gemini-* → Gemini API (same model as the
-  //    whole archive — quality parity by construction, and Workers AI's free
-  //    neuron budget can't carry the weekly volume at 70B quality);
-  //    @cf/* → Workers AI (kept as fallback/eval path).
-  const prompt = SUMMARIZE_PROMPT_TEMPLATE.replace("{{url}}", url).replace("{{content}}", `# ${title}\n\n${content}`);
-  const t1 = Date.now();
-  let parsed: Record<string, never>;
-  let usage: unknown;
-  try {
-    if (model.startsWith("@cf/")) {
-      const result = (await env.AI.run(model as never, {
-        messages: [{ role: "user", content: prompt }],
-        max_tokens: 4096,
-        response_format: { type: "json_schema", json_schema: SUMMARY_JSON_SCHEMA },
-      } as never)) as { response?: unknown; usage?: unknown };
-      usage = result.usage;
-      const out = result.response ?? result;
-      parsed = (typeof out === "object" && out !== null ? out : JSON.parse(String(out))) as Record<string, never>;
-    } else {
-      const g = await runGemini(env, model, prompt);
-      parsed = g.parsed as Record<string, never>;
-      usage = g.usage;
-    }
-  } catch (e) {
-    return {
-      ok: false,
-      reason: `BLOCKED: model call failed — ${String(e).slice(0, 300)}`,
-      meta: { model, extractChars: content.length, fetchMs },
-    };
-  }
-  const aiMs = Date.now() - t1;
-
-  // 4. Enforce invariants the prompt alone can't guarantee
-  const doc = parsed as { metadata?: Record<string, unknown>; content?: Record<string, unknown> };
-  doc.metadata = {
-    ...(doc.metadata ?? {}),
-    version: "1.0",
-    generatedAt: new Date().toISOString(),
-    generatedBy: model,
-  };
-  if (doc.content) {
-    doc.content.url = url; // URL RULE enforced in code, not trust
-    if (doc.content.language === "ja") delete doc.content.originalTitle;
-  }
-  const raw = JSON.stringify(doc, null, 2);
-  const check = inspectSummary(raw);
-  if (check.error) {
-    return {
-      ok: false,
-      reason: `BLOCKED: model output invalid — ${check.error}`,
-      meta: { model, extractChars: content.length, fetchMs, aiMs, usage },
-    };
-  }
-  return { ok: true, raw, meta: { model, extractChars: content.length, fetchMs, aiMs, usage } };
-}
-
-/** Decode the body honoring its declared charset (Japanese sites often serve
- *  Shift_JIS / EUC-JP; HTMLRewriter assumes UTF-8, so garbled input must be
- *  re-decoded before parsing — found via itmedia.co.jp in the first e2e run). */
-async function decodeBody(res: Response): Promise<string> {
-  const buf = await res.arrayBuffer();
-  let charset =
-    /charset=["']?([\w-]+)/i.exec(res.headers.get("content-type") ?? "")?.[1]?.toLowerCase() ?? null;
-  if (!charset) {
-    const head = new TextDecoder("latin1").decode(buf.slice(0, 2048));
-    charset =
-      /<meta[^>]+charset=["']?([\w-]+)/i.exec(head)?.[1]?.toLowerCase() ??
-      /<meta[^>]+content=["'][^"']*charset=([\w-]+)/i.exec(head)?.[1]?.toLowerCase() ??
-      "utf-8";
-  }
-  try {
-    return new TextDecoder(charset).decode(buf);
-  } catch {
-    return new TextDecoder("utf-8").decode(buf);
-  }
-}
-
-/** Gemini structured-output call — mirrors get_gemini_schema() in scripts/call-gemini.py. */
-async function runGemini(
-  env: PipelineEnv,
-  model: string,
-  prompt: string,
-): Promise<{ parsed: unknown; usage: unknown }> {
-  if (!env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY secret not set on the pipeline worker");
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    method: "POST",
-    headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      // No maxOutputTokens: mirror the local pipeline (model default), which
-      // never truncates — a 4096 cap produced unterminated-JSON failures.
-      generationConfig: {
-        responseMimeType: "application/json",
-        responseSchema: toGeminiSchema(SUMMARY_JSON_SCHEMA),
-      },
-    }),
-    signal: AbortSignal.timeout(90_000),
-  });
-  if (!res.ok) throw new Error(`Gemini HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  const data = (await res.json()) as {
-    candidates?: { content?: { parts?: { text?: string }[] } }[];
-    usageMetadata?: unknown;
-  };
-  const text = data.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("");
-  if (!text) throw new Error("Gemini returned no candidates");
-  return { parsed: JSON.parse(text), usage: data.usageMetadata };
-}
-
-/** Convert our JSON-Schema-style shape to Gemini's REST schema (uppercase types). */
-function toGeminiSchema(node: Record<string, unknown>): Record<string, unknown> {
-  const out: Record<string, unknown> = {};
-  if (typeof node.type === "string") out.type = (node.type as string).toUpperCase();
-  if (node.enum) out.enum = node.enum;
-  if (node.required) out.required = node.required;
-  if (node.items) out.items = toGeminiSchema(node.items as Record<string, unknown>);
-  if (node.properties) {
-    out.properties = Object.fromEntries(
-      Object.entries(node.properties as Record<string, Record<string, unknown>>).map(([k, v]) => [
-        k,
-        toGeminiSchema(v),
-      ]),
-    );
-  }
-  return out;
-}
-
-async function extractText(res: Response): Promise<{ title: string; text: string }> {
-  const html = await decodeBody(res);
-  const chunks: string[] = [];
-  let title = "";
-  let inTitle = false;
-  const collect = {
-    text(t: { text: string; lastInTextNode: boolean }) {
-      if (t.text) chunks.push(t.text);
-      if (t.lastInTextNode) chunks.push("\n");
-    },
-  };
-  const rewriter = new HTMLRewriter()
-    .on("title", {
-      element() {
-        inTitle = true;
-      },
-      text(t) {
-        if (inTitle) title += t.text;
-        if (t.lastInTextNode) inTitle = false;
-      },
-    })
-    .on("p", collect)
-    .on("h1", collect)
-    .on("h2", collect)
-    .on("h3", collect)
-    .on("li", collect)
-    .on("blockquote", collect)
-    .on("td", collect);
-  await rewriter.transform(new Response(html)).arrayBuffer(); // drive the stream (UTF-8 by construction)
-  const text = chunks.join("").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
-  return { title: title.trim(), text };
-}
-
-// summary-v1 shape for Workers AI structured output (mirrors get_gemini_schema
-// in scripts/call-gemini.py; scores kept permissive — schema enforces shape,
-// criteria in the prompt define meaning).
-const SUMMARY_JSON_SCHEMA = {
-  type: "object",
-  required: ["metadata", "content"],
-  properties: {
-    metadata: {
-      type: "object",
-      required: ["version", "generatedAt", "generatedBy"],
-      properties: {
-        version: { type: "string" },
-        generatedAt: { type: "string" },
-        generatedBy: { type: "string" },
-      },
-    },
-    content: {
-      type: "object",
-      required: ["title", "url", "language", "contentType", "oneSentenceSummary", "summaryBody", "topics", "scores"],
-      properties: {
-        title: { type: "string" },
-        originalTitle: { type: "string" },
-        url: { type: "string" },
-        language: { type: "string", enum: ["ja", "en", "zh", "ko", "other"] },
-        contentType: { type: "string" },
-        oneSentenceSummary: { type: "string" },
-        summaryBody: { type: "string" },
-        topics: { type: "array", items: { type: "string" } },
-        scores: {
-          type: "object",
-          required: ["signal", "depth", "uniqueness", "practical", "antiHype", "mainJournal", "annexPotential", "overall"],
-          properties: {
-            signal: { type: "integer" },
-            depth: { type: "integer" },
-            uniqueness: { type: "integer" },
-            practical: { type: "integer" },
-            antiHype: { type: "integer" },
-            mainJournal: { type: "integer" },
-            annexPotential: { type: "integer" },
-            overall: { type: "integer" },
-          },
-        },
-      },
-    },
-  },
-} as const;
 
 export default {
   // POST /eval {url, model?} — run the exact pipeline path WITHOUT persisting

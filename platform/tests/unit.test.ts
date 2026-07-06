@@ -1,0 +1,66 @@
+// Unit tests for the platform's pure logic (run: npm test in platform/).
+// D1/DO/HTTP paths are covered by production e2e; these pin the invariants
+// that silently corrupting would hurt most.
+
+import { describe, expect, it } from "vitest";
+import { sanitizeUrl, validateUrl } from "../functions/_lib/util";
+import { blockedStubUrl, displayTitle, inspectSummary, isBlockedStub } from "../functions/_lib/summaries";
+import { tokensFromUsage } from "../worker/src/core";
+
+describe("sanitizeUrl (mirrors scripts/check_link.py)", () => {
+  it("strips tracking params and fragments, keeps real params", () => {
+    expect(sanitizeUrl("https://example.com/a?utm_source=x&id=42#sec")).toBe("https://example.com/a?id=42");
+    expect(sanitizeUrl("https://example.com/a?fbclid=1&gclid=2&mc_eid=3&ref=t&source=s&hl=ja")).toBe(
+      "https://example.com/a",
+    );
+  });
+  it("preserves params on allowlisted hosts", () => {
+    expect(sanitizeUrl("https://en.wikipedia.org/w/index.php?title=LLM&utm_source=x")).toContain("utm_source=x");
+  });
+});
+
+describe("validateUrl", () => {
+  it("rejects local/private/non-http", () => {
+    for (const u of ["http://localhost:3000/x", "http://127.0.0.1/", "http://10.0.0.5/", "http://192.168.1.1/", "ftp://example.com/"]) {
+      expect(validateUrl(u)).not.toBeNull();
+    }
+  });
+  it("accepts public https", () => {
+    expect(validateUrl("https://example.com/article")).toBeNull();
+  });
+});
+
+const VALID = JSON.stringify({
+  metadata: { version: "1.0", generatedAt: "t", generatedBy: "m" },
+  content: { title: "T", url: "https://e.com", summaryBody: "B", language: "ja" },
+});
+
+describe("summary classification", () => {
+  it("valid summary-v1 passes inspection", () => {
+    expect(inspectSummary(VALID).error).toBeUndefined();
+    expect(inspectSummary(VALID).url).toBe("https://e.com");
+  });
+  it("missing fields fail with a reason", () => {
+    expect(inspectSummary("{}").error).toBeTruthy();
+    expect(inspectSummary("not json").error).toContain("neither");
+  });
+  it("BLOCKED stubs are detected and carry their URL", () => {
+    const stub = "BLOCKED: nope\n\n- URL: https://x.com/a.pdf\n- Reason: r\n";
+    expect(isBlockedStub(stub)).toBe(true);
+    expect(isBlockedStub(VALID)).toBe(false);
+    expect(blockedStubUrl(stub)).toBe("https://x.com/a.pdf");
+  });
+  it("displayTitle handles all three shapes", () => {
+    expect(displayTitle(VALID)).toBe("T");
+    expect(displayTitle("BLOCKED: reason here")).toContain("BLOCKED");
+    expect(displayTitle("garbage")).toBe("(unparseable)");
+  });
+});
+
+describe("tokensFromUsage", () => {
+  it("reads Gemini and Workers AI shapes", () => {
+    expect(tokensFromUsage({ promptTokenCount: 10, candidatesTokenCount: 2 })).toEqual({ tokensIn: 10, tokensOut: 2 });
+    expect(tokensFromUsage({ prompt_tokens: 5, completion_tokens: 1 })).toEqual({ tokensIn: 5, tokensOut: 1 });
+    expect(tokensFromUsage(undefined)).toEqual({ tokensIn: null, tokensOut: null });
+  });
+});

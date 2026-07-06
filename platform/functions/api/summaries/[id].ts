@@ -16,6 +16,11 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
     .bind(id, journalDate || null)
     .first<Record<string, string>>();
   if (!row) return error("summary not found", 404);
+  if (row.status === "dismissed") {
+    // Only the content is hidden while dismissed; metadata stays visible.
+    const { content: _hidden, ...meta } = row;
+    return json({ ...meta, content: null, note: "content hidden while dismissed — re-open the link to restore" });
+  }
 
   let content: unknown = row.content;
   if (!isBlockedStub(row.content)) {

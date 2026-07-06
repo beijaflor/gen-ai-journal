@@ -1,0 +1,15 @@
+{
+  "name": "gen-ai-journal-platform",
+  "private": true,
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "deploy": "wrangler pages deploy ./public --project-name gen-ai-journal --branch main",
+    "deploy:worker": "cd worker && wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260620.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

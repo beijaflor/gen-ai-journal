@@ -20,19 +20,38 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
     return error("body must be JSON: {status}", 400);
   }
   const status = body.status;
-  if (status !== "new" && status !== "consumed" && status !== "dismissed") {
-    return error("status must be one of: new, consumed, dismissed", 400);
+  if (status !== "new" && status !== "dismissed") {
+    return error("status must be one of: new, dismissed", 400);
   }
 
-  const consumedAt = status === "consumed" ? new Date().toISOString() : null;
   const res = await env.DB.prepare(
-    "UPDATE links SET status = ?, consumed_at = ?, error = CASE WHEN ? = 'new' THEN NULL ELSE error END WHERE id = ? RETURNING id, url, status, consumed_at",
+    "UPDATE links SET status = ?, error = CASE WHEN ? = 'new' THEN NULL ELSE error END WHERE id = ? RETURNING id, url, status, summary_id",
   )
-    .bind(status, consumedAt, status, id)
-    .first();
+    .bind(status, status, id)
+    .first<{ id: number; url: string; status: string; summary_id: string | null }>();
   if (!res) return error("link not found", 404);
+
+  if (status === "dismissed" && res.summary_id) {
+    // Dismiss is a reversible flag — the summary row stays, marked dismissed.
+    // Published rows are never touched.
+    await env.DB.prepare("UPDATE summaries SET status = 'dismissed' WHERE id = ? AND journal_date IS NULL AND status = 'workdesk'")
+      .bind(res.summary_id)
+      .run();
+  }
   if (status === "new") {
-    const kick = enqueueSummarization(env);
+    if (res.summary_id) {
+      // Re-open of a summarized link just flips the flag back — never regenerates.
+      const flipped = await env.DB.prepare(
+        "UPDATE summaries SET status = 'workdesk' WHERE id = ? AND journal_date IS NULL AND status = 'dismissed' RETURNING id",
+      )
+        .bind(res.summary_id)
+        .first();
+      if (flipped) {
+        await env.DB.prepare("UPDATE links SET status = 'summarized' WHERE id = ?").bind(id).run();
+        return json({ ...res, status: "summarized" });
+      }
+    }
+    const kick = enqueueSummarization(env); // blocked/never-summarized: real retry
     if (kick) waitUntil(kick);
   }
   return json(res);

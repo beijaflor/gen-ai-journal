@@ -6,7 +6,7 @@ import { authorize, type Env } from "../../_lib/auth";
 import { error, json } from "../../_lib/util";
 import { displayTitle, writeSummary, type SummaryInput } from "../../_lib/summaries";
 
-const VALID_STATUSES = ["workdesk", "published", "blocked"] as const;
+const VALID_STATUSES = ["workdesk", "published", "blocked", "dismissed"] as const;
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const who = await authorize(request, env);

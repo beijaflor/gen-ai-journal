@@ -1,12 +1,12 @@
 // /api/links — link inbox (#159)
 //   POST: submit a URL (form/bookmarklet via Access cookie, or bearer)
-//   GET:  list links, ?status=new|consumed|dismissed (default: all)
+//   GET:  list links, ?status=new|queued|summarized|blocked|dismissed (default: all)
 
 import { authorize, type Env } from "../../_lib/auth";
 import { enqueueSummarization } from "../../_lib/enqueue";
 import { error, json, sanitizeUrl, validateUrl } from "../../_lib/util";
 
-const VALID_STATUSES = ["new", "queued", "summarized", "blocked", "consumed", "dismissed"] as const;
+const VALID_STATUSES = ["new", "queued", "summarized", "blocked", "dismissed"] as const;
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const who = await authorize(request, env);
@@ -51,9 +51,9 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   }
 
   const cols =
-    "id, url, note, status, error, summary_id, submitted_at, consumed_at, processed_at, fetch_ms, ai_ms, tokens_in, tokens_out";
+    "id, url, note, status, error, summary_id, submitted_at, processed_at, fetch_ms, ai_ms, tokens_in, tokens_out";
   const stmt = status
-    ? env.DB.prepare(`SELECT ${cols} FROM links WHERE status = ? ORDER BY submitted_at ASC`).bind(status)
+    ? env.DB.prepare(`SELECT ${cols} FROM links WHERE status = ? ORDER BY submitted_at DESC`).bind(status)
     : env.DB.prepare(`SELECT ${cols} FROM links ORDER BY submitted_at DESC`);
   const { results } = await stmt.all();
   return json({ links: results, count: results.length });

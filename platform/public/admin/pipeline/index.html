@@ -50,7 +50,7 @@
   <div class="bar">
     <span class="filters" id="filters">
       <button data-s="" class="on">all</button>
-      <button data-s="new">new</button>
+      <button data-s="new">generating</button>
       <button data-s="queued">queued</button>
       <button data-s="summarized">summarized</button>
       <button data-s="blocked">blocked</button>
@@ -62,7 +62,7 @@
   </div>
 
   <div class="tbl-wrap"><table>
-    <thead><tr><th>#</th><th>status</th><th>url / note / error</th><th>NNN</th><th>run</th><th>tokens</th><th>actions</th></tr></thead>
+    <thead><tr><th>NNN</th><th>status</th><th>url / note / error</th><th>run</th><th>tokens</th><th>actions</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
 
@@ -95,7 +95,7 @@
       $("stats").innerHTML = [
         cyc ? `<div class="stat cyc"><b>${cyc.journal_date}</b>cycle · next NNN ${String(cyc.next_summary_id).padStart(3, "0")}</div>`
             : `<div class="stat cyc"><b>none</b>no active cycle</div>`,
-        `<div class="stat"><b>${c.new ?? 0}</b>new</div>`,
+        `<div class="stat"><b>${c.new ?? 0}</b>generating</div>`,
         `<div class="stat"><b>${c.queued ?? 0}</b>queued</div>`,
         `<div class="stat"><b>${c.summarized ?? 0}</b>summarized</div>`,
         `<div class="stat"><b>${c.blocked ?? 0}</b>blocked</div>`,
@@ -109,15 +109,14 @@
         const tr = document.createElement("tr");
         const acts = [];
         if (l.status === "blocked") acts.push(`<button data-a="retry" data-id="${l.id}">retry</button>`);
-        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}">dismiss</button>`);
+        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}" data-st="${l.status}" data-nnn="${l.summary_id ?? ""}">dismiss</button>`);
         else acts.push(`<button data-a="retry" data-id="${l.id}">re-open</button>`);
         tr.innerHTML = `
-          <td class="num">${l.id}</td>
-          <td><span class="pill ${l.status}">${l.status}</span></td>
+          <td class="num">${l.summary_id ? `<a href="/api/summaries/${l.summary_id}" target="_blank"><b>${l.summary_id}</b></a>` : "–"}</td>
+          <td><span class="pill ${l.status}">${l.status === "new" ? "generating" : l.status}</span></td>
           <td><div class="u"><a href="${l.url}" target="_blank" rel="noreferrer">${l.url}</a></div>
               ${l.note ? `<div style="font-size:12px;color:var(--muted)">${escapeHtml(l.note)}</div>` : ""}
               ${l.error ? `<div class="err">${escapeHtml(l.error)}</div>` : ""}</td>
-          <td class="num">${l.summary_id ? `<a href="/api/summaries/${l.summary_id}" target="_blank">${l.summary_id}</a>` : "–"}</td>
           <td class="num">${fmtMs(l.fetch_ms)} + ${fmtMs(l.ai_ms)}</td>
           <td class="num">${l.tokens_in ? `${(l.tokens_in / 1000).toFixed(1)}k/${l.tokens_out}` : "–"}</td>
           <td class="act">${acts.join("")}</td>`;
