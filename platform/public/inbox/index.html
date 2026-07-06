@@ -64,7 +64,7 @@
         if (l.note) { const n = document.createElement("div"); n.className = "note"; n.textContent = l.note; li.appendChild(n); }
         const meta = document.createElement("div"); meta.className = "meta";
         const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status;
-        const t = document.createElement("span"); t.textContent = "#" + l.id + " · " + (l.submitted_at || "").replace("T", " ").slice(0, 16);
+        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16);
         meta.appendChild(pill); meta.appendChild(t);
         const act = document.createElement("span"); act.className = "act";
         if (l.status !== "dismissed") act.appendChild(actBtn(l.id, "dismissed", "dismiss"));
