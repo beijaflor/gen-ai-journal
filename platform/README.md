@@ -59,8 +59,9 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
 
 - NNN IDs are spent **only on successful summary writes**; retry/re-open of a
   summarized link **reuses** its NNN (never double-spends).
-- Dismissing a summarized link **deletes its workdesk summary** (published
-  rows never). The NNN stays spent — numbering gaps are honest.
+- Dismiss is a **reversible flag**: the summary row stays, marked `dismissed`
+  (excluded from `status=workdesk` consumers; published rows never touched).
+  Re-open flips it back instantly — no regeneration, no token spend.
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
 - Secrets: `API_BEARER_TOKEN` (Pages + worker), `GEMINI_API_KEY` (worker).

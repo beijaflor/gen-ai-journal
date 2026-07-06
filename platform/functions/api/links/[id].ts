@@ -32,20 +32,28 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
     .first<{ id: number; url: string; status: string; consumed_at: string | null; summary_id: string | null }>();
   if (!res) return error("link not found", 404);
 
-  let retracted: string | null = null;
   if (status === "dismissed" && res.summary_id) {
-    // Dismiss means "not in the journal": retract the link's workdesk summary.
-    // Published rows are never touched; the NNN stays spent (gaps are honest).
-    const del = await env.DB.prepare(
-      "DELETE FROM summaries WHERE id = ? AND journal_date IS NULL AND status = 'workdesk' RETURNING id",
-    )
+    // Dismiss is a reversible flag — the summary row stays, marked dismissed.
+    // Published rows are never touched.
+    await env.DB.prepare("UPDATE summaries SET status = 'dismissed' WHERE id = ? AND journal_date IS NULL AND status = 'workdesk'")
       .bind(res.summary_id)
-      .first();
-    if (del) retracted = res.summary_id;
+      .run();
   }
   if (status === "new") {
-    const kick = enqueueSummarization(env);
+    if (res.summary_id) {
+      // Re-open of a summarized link just flips the flag back — never regenerates.
+      const flipped = await env.DB.prepare(
+        "UPDATE summaries SET status = 'workdesk' WHERE id = ? AND journal_date IS NULL AND status = 'dismissed' RETURNING id",
+      )
+        .bind(res.summary_id)
+        .first();
+      if (flipped) {
+        await env.DB.prepare("UPDATE links SET status = 'summarized' WHERE id = ?").bind(id).run();
+        return json({ ...res, status: "summarized" });
+      }
+    }
+    const kick = enqueueSummarization(env); // blocked/never-summarized: real retry
     if (kick) waitUntil(kick);
   }
-  return json({ ...res, retracted_summary: retracted });
+  return json(res);
 };

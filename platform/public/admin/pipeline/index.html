@@ -129,8 +129,6 @@
     document.body.addEventListener("click", async (e) => {
       const a = e.target.dataset?.a;
       if (!a) return;
-      if (a === "dismiss" && e.target.dataset.nnn &&
-          !confirm(`Dismissing retracts summary ${e.target.dataset.nnn} from the collection (its NNN stays spent). Continue?`)) return;
       const status = a === "retry" ? "new" : "dismissed";
       e.target.disabled = true;
       await fetch(`/api/links/${e.target.dataset.id}`, {
