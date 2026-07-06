@@ -85,7 +85,7 @@ def main() -> int:
         return 1
 
     data = api("GET", "/api/links?status=new")
-    links = data["links"]
+    links = sorted(data["links"], key=lambda l: l["id"])  # oldest first: sources.md IDs follow submission order
     print(f"Inbox: {len(links)} new link(s)")
     if not links:
         return 0

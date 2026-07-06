@@ -53,7 +53,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const cols =
     "id, url, note, status, error, summary_id, submitted_at, processed_at, fetch_ms, ai_ms, tokens_in, tokens_out";
   const stmt = status
-    ? env.DB.prepare(`SELECT ${cols} FROM links WHERE status = ? ORDER BY submitted_at ASC`).bind(status)
+    ? env.DB.prepare(`SELECT ${cols} FROM links WHERE status = ? ORDER BY submitted_at DESC`).bind(status)
     : env.DB.prepare(`SELECT ${cols} FROM links ORDER BY submitted_at DESC`);
   const { results } = await stmt.all();
   return json({ links: results, count: results.length });
