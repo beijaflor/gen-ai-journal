@@ -109,7 +109,7 @@
         const tr = document.createElement("tr");
         const acts = [];
         if (l.status === "blocked") acts.push(`<button data-a="retry" data-id="${l.id}">retry</button>`);
-        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}">dismiss</button>`);
+        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}" data-st="${l.status}" data-nnn="${l.summary_id ?? ""}">dismiss</button>`);
         else acts.push(`<button data-a="retry" data-id="${l.id}">re-open</button>`);
         tr.innerHTML = `
           <td class="num">${l.id}</td>
@@ -130,6 +130,8 @@
     document.body.addEventListener("click", async (e) => {
       const a = e.target.dataset?.a;
       if (!a) return;
+      if (a === "dismiss" && e.target.dataset.nnn &&
+          !confirm(`Dismissing retracts summary ${e.target.dataset.nnn} from the collection (its NNN stays spent). Continue?`)) return;
       const status = a === "retry" ? "new" : "dismissed";
       e.target.disabled = true;
       await fetch(`/api/links/${e.target.dataset.id}`, {

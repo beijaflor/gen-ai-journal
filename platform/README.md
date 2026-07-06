@@ -1,60 +1,66 @@
 # platform/ — Cloudflare content platform
 
-Cloud side of the online migration (epic #155). Phase 1 scope: link inbox
-(#159), summary collection API (#160), admin console (#161). The journal
-website itself is NOT hosted here yet — see the epic for later phases.
+Cloud side of the online migration (epic #155): link intake (#159), summary
+store + cycle/ID registry (#160), cloud summarization pipeline (#166, model
+decided in #167), admin console (#161). The journal website is NOT hosted
+here yet — see the epic for later phases.
 
-Live at: **https://gen-ai-journal.pages.dev**
+Live: **https://gen-ai-journal.pages.dev** · Pipeline worker: `gen-ai-journal-pipeline`
 
 ## Layout
 
 ```
-wrangler.jsonc        project config: D1 + KV bindings, Access vars
-migrations/           D1 schema, applied with wrangler d1 migrations
-functions/            Pages Functions = the API (TypeScript)
+wrangler.jsonc        Pages project: D1/KV/DO bindings, Access vars
+migrations/           D1 schema (wrangler d1 migrations apply gen-ai-journal-db)
+functions/            Pages Functions = the HTTP API
   _lib/auth.ts        bearer-token + Cloudflare Access JWT verification
-  _lib/util.ts        URL sanitize/validate (mirrors scripts/check_link.py), JSON helpers
-  api/links/          POST (submit), GET (list), PATCH /:id (status)
-public/               static pages (deployed as-is)
-  submit/             link submission form + bookmarklet  [Access-protected]
-  inbox/              inbox viewer with status filters    [Access-protected]
+  _lib/summaries.ts   THE write path: validation, blocked-stub detect, upsert, NNN allocation
+  _lib/util.ts        URL sanitize/validate (mirrors scripts/check_link.py)
+  _lib/enqueue.ts     kick the summarization DO
+  api/links/          POST (submit+auto-enqueue), GET, PATCH /:id (retry re-enqueues;
+                      dismiss RETRACTS the link's workdesk summary — NNN stays spent)
+  api/summaries/      POST bulk upsert (fallback pushes), GET list / :id (public reads)
+  api/cycle.ts        GET registry state, POST rollover (seed counter per #165 rule)
+  api/pipeline.ts     joined operational view for the console
+public/               static, Access-protected where sensitive
+  submit/ inbox/      link intake UI + bookmarklet
+  admin/pipeline/     operations console: states, errors, metrics, retry, rollover
+worker/               companion Worker "gen-ai-journal-pipeline"
+  src/index.ts        SummarizerDO: alarm-driven queue (debounce 20s, serial,
+                      stale-claim recovery, infra-retry via alarm backoff)
+  src/core.ts         summarizeUrl(): fetch → charset-aware decode → HTMLRewriter
+                      extract → min-chars gate → model call → validate.
+                      Model routing: gemini-* → Gemini API, @cf/* → Workers AI
+  src/prompt.generated.ts  GENERATED — uv run scripts/build_prompt_module.py
+tests/                vitest unit tests for the pure logic
+```
+
+## Commands
+
+```bash
+npm run check          # tsc --noEmit (run before every deploy)
+npm test               # vitest unit tests
+npm run deploy         # Pages (functions + static)
+npm run deploy:worker  # pipeline worker (DO)
+wrangler d1 migrations apply gen-ai-journal-db --remote   # after adding migrations/NNNN_*.sql
+wrangler tail gen-ai-journal-pipeline                     # live structured run logs
 ```
 
 ## Auth model
 
 | Caller | Mechanism |
 |---|---|
-| Local scripts (`pull_inbox.py`, `push_summaries.py`) | `Authorization: Bearer` — token in Pages secret `API_BEARER_TOKEN` = `PLATFORM_API_TOKEN` in `scripts/.env` |
-| Browser (submit/inbox/admin pages) | Cloudflare Access wall on the page paths; the `CF_Authorization` cookie JWT is verified in-function for `/api/*` calls (signature via team JWKS, `aud` = `POLICY_AUD` var) |
-| Public | `/` only; every `/api/*` write and read requires one of the above |
+| Local scripts | `Authorization: Bearer` = `PLATFORM_API_TOKEN` in `scripts/.env` (Pages secret `API_BEARER_TOKEN`, same on the worker for `/eval`) |
+| Browser pages | Cloudflare Access wall (team `gentle-hill-7034`) on `/submit` `/inbox` `/admin/*`; the `CF_Authorization` JWT is signature-verified in-function for `/api/*` calls |
+| Readers | public GETs on summaries/cycle only; every write is authenticated |
+| Evaluations | worker `POST /eval` {url, model?} — full pipeline path, NO persistence (see `evaluations/README.md`) |
 
-Access application lives in the Zero Trust dashboard (team
-`gentle-hill-7034`): paths `/admin`, `/submit`, `/inbox`, allow-email policy,
-One-time PIN login.
+## Semantics worth remembering
 
-## Commands
-
-```bash
-# Local dev (local D1; bearer token "dev-token" from .dev.vars)
-cd platform
-wrangler d1 migrations apply gen-ai-journal-db --local
-wrangler pages dev --port 8788
-
-# Schema changes: add migrations/NNNN_*.sql, then
-wrangler d1 migrations apply gen-ai-journal-db --remote
-
-# Deploy
-wrangler pages deploy ./public --project-name gen-ai-journal --branch main
-
-# Rotate the bearer token
-wrangler pages secret put API_BEARER_TOKEN --project-name gen-ai-journal
-#   ...and update PLATFORM_API_TOKEN in scripts/.env to match
-```
-
-## Bookmarklet
-
-Drag from the /submit page, or create a bookmark with this URL:
-
-```
-javascript:window.open('https://gen-ai-journal.pages.dev/submit?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'_blank')
-```
+- NNN IDs are spent **only on successful summary writes**; retry/re-open of a
+  summarized link **reuses** its NNN (never double-spends).
+- Dismissing a summarized link **deletes its workdesk summary** (published
+  rows never). The NNN stays spent — numbering gaps are honest.
+- Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
+  are regenerated locally and pushed (#168, permanent fallback path).
+- Secrets: `API_BEARER_TOKEN` (Pages + worker), `GEMINI_API_KEY` (worker).
