@@ -4,6 +4,7 @@
 
 import { authorize, type Env } from "../../_lib/auth";
 import { enqueueSummarization } from "../../_lib/enqueue";
+import { logEvent } from "../../_lib/events";
 import { error, json, sanitizeUrl, validateUrl } from "../../_lib/util";
 
 const VALID_STATUSES = ["new", "queued", "summarized", "blocked", "dismissed"] as const;
@@ -36,6 +37,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   const res = await env.DB.prepare("INSERT INTO links (url, note) VALUES (?, ?) RETURNING id, submitted_at")
     .bind(url, note)
     .first<{ id: number; submitted_at: string }>();
+  await logEvent(env.DB, { actor: "editor", event: "link.submitted", linkId: res!.id, detail: { url, by: who } });
   const enqueue = enqueueSummarization(env);
   if (enqueue) waitUntil(enqueue);
   return json({ duplicate: false, id: res!.id, url, note, status: "new", submitted_at: res!.submitted_at }, 201);

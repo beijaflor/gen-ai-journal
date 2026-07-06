@@ -4,6 +4,7 @@
 
 import { authorize, type Env } from "../../_lib/auth";
 import { enqueueSummarization } from "../../_lib/enqueue";
+import { logEvent } from "../../_lib/events";
 import { error, json } from "../../_lib/util";
 
 export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params, waitUntil }) => {
@@ -31,12 +32,27 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
     .first<{ id: number; url: string; status: string; summary_id: string | null }>();
   if (!res) return error("link not found", 404);
 
-  if (status === "dismissed" && res.summary_id) {
-    // Dismiss is a reversible flag — the summary row stays, marked dismissed.
-    // Published rows are never touched.
-    await env.DB.prepare("UPDATE summaries SET status = 'dismissed' WHERE id = ? AND journal_date IS NULL AND status = 'workdesk'")
-      .bind(res.summary_id)
-      .run();
+  if (status === "dismissed") {
+    let flagged = null;
+    if (res.summary_id) {
+      // Dismiss is a reversible flag — the summary row stays, marked dismissed.
+      // Published rows are never touched.
+      flagged = await env.DB.prepare(
+        "UPDATE summaries SET status = 'dismissed' WHERE id = ? AND journal_date IS NULL AND status = 'workdesk' RETURNING id",
+      )
+        .bind(res.summary_id)
+        .first();
+    }
+    await logEvent(env.DB, {
+      actor: "editor",
+      event: "link.dismissed",
+      linkId: id,
+      summaryId: res.summary_id,
+      detail: { url: res.url, by: who },
+    });
+    if (flagged) {
+      await logEvent(env.DB, { actor: "editor", event: "summary.dismissed", linkId: id, summaryId: res.summary_id, detail: { by: who } });
+    }
   }
   if (status === "new") {
     if (res.summary_id) {
@@ -48,9 +64,18 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
         .first();
       if (flipped) {
         await env.DB.prepare("UPDATE links SET status = 'summarized' WHERE id = ?").bind(id).run();
+        await logEvent(env.DB, { actor: "editor", event: "link.reopened", linkId: id, summaryId: res.summary_id, detail: { url: res.url, by: who } });
+        await logEvent(env.DB, { actor: "editor", event: "summary.restored", linkId: id, summaryId: res.summary_id, detail: { by: who } });
         return json({ ...res, status: "summarized" });
       }
     }
+    await logEvent(env.DB, {
+      actor: "editor",
+      event: "link.reopened",
+      linkId: id,
+      summaryId: res.summary_id,
+      detail: { url: res.url, by: who, requeued: true },
+    });
     const kick = enqueueSummarization(env); // blocked/never-summarized: real retry
     if (kick) waitUntil(kick);
   }

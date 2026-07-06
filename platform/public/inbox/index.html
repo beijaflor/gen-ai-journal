@@ -28,7 +28,18 @@
     .act button { font-size: 12px; border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 2px 10px; cursor: pointer; }
     #empty { color: var(--muted); font-size: 14px; padding: 28px 0; }
     nav { margin-top: 28px; font-size: 13.5px; }
-    nav a { color: var(--accent); }
+    nav a { color: var(--accent); margin-right: 14px; }
+    #events { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 14px; }
+    #events h2 { font-size: 14px; margin: 0 0 8px; display: flex; align-items: baseline; gap: 10px; }
+    #events h2 a { font-size: 12.5px; font-weight: 400; color: var(--accent); }
+    #events table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+    #events td { padding: 3px 8px 3px 0; border-bottom: 1px dotted var(--line); vertical-align: top; }
+    #events td.ts { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+    #events td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; }
+    #events .pill { font-size: 10px; }
+    #events .pill.editor { background: #e8eef5; color: #33567a; }
+    #events .pill.pipeline { background: #fdf3e4; color: #8a5307; }
+    #events td.subj { white-space: nowrap; color: #444; }
   </style>
 </head>
 <body>
@@ -44,7 +55,13 @@
   </div>
   <ul id="list"></ul>
   <div id="empty" hidden>Nothing here yet.</div>
-  <nav><a href="/submit">→ submit a link</a></nav>
+
+  <section id="events" hidden>
+    <h2>Latest events <a href="/admin/logs">full audit log →</a></h2>
+    <table><tbody id="ev-rows"></tbody></table>
+  </section>
+
+  <nav><a href="/submit">→ submit a link</a><a href="/admin/pipeline">console</a><a href="/admin/logs">events log</a></nav>
 
   <script>
     let current = "";
@@ -69,7 +86,8 @@
         if (l.error) { const er = document.createElement("div"); er.className = "err"; er.textContent = l.error; li.appendChild(er); }
         const meta = document.createElement("div"); meta.className = "meta";
         const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status === "new" ? "generating" : l.status;
-        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16);
+        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16) + "  ·  L" + l.id;
+        t.title = "L" + l.id + " = link id used as subject in /admin/logs";
         meta.appendChild(pill); meta.appendChild(t);
         const act = document.createElement("span"); act.className = "act";
         if (l.status !== "dismissed") act.appendChild(actBtn(l.id, "dismissed", "dismiss"));
@@ -91,8 +109,31 @@
           body: JSON.stringify({ status }),
         });
         load();
+        loadEvents();
       };
       return b;
+    }
+
+    async function loadEvents() {
+      const res = await fetch("/api/events?limit=15", { credentials: "same-origin" });
+      if (!res.ok) return;
+      const d = await res.json();
+      const panel = document.getElementById("events");
+      const rows = document.getElementById("ev-rows");
+      panel.hidden = d.count === 0;
+      rows.innerHTML = "";
+      for (const e of d.events) {
+        const tr = document.createElement("tr");
+        const ts = document.createElement("td"); ts.className = "ts"; ts.textContent = (e.ts || "").slice(5, 16).replace("T", " ");
+        const actor = document.createElement("td");
+        const pill = document.createElement("span"); pill.className = "pill " + e.actor; pill.textContent = e.actor;
+        actor.appendChild(pill);
+        const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
+        const subj = document.createElement("td"); subj.className = "subj";
+        subj.textContent = [e.summary_id ? "NNN " + e.summary_id : "", e.link_id != null ? "L" + e.link_id : ""].filter(Boolean).join(" · ") || "–";
+        tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(subj);
+        rows.appendChild(tr);
+      }
     }
 
     document.getElementById("filters").addEventListener("click", (e) => {
@@ -102,6 +143,8 @@
       load();
     });
     load();
+    loadEvents();
+    setInterval(loadEvents, 30_000);
   </script>
 </body>
 </html>
