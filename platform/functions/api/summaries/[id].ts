@@ -16,6 +16,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
     .bind(id, journalDate || null)
     .first<Record<string, string>>();
   if (!row) return error("summary not found", 404);
+  if (row.status === "dismissed") {
+    // Hidden while dismissed — re-open the link on the console to restore.
+    return json({ error: `summary ${id} is dismissed`, status: "dismissed" }, 410);
+  }
 
   let content: unknown = row.content;
   if (!isBlockedStub(row.content)) {

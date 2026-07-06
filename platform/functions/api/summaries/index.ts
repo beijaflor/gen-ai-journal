@@ -56,6 +56,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
       binds.push(journalDate);
     }
   }
+  if (!status) where.push("status != 'dismissed'"); // hidden unless asked for explicitly
   const sql =
     "SELECT id, journal_date, url, content, status, pushed_at, updated_at FROM summaries" +
     (where.length ? ` WHERE ${where.join(" AND ")}` : "") +
