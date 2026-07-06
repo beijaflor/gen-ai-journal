@@ -3,15 +3,10 @@
 //   GET:  list links, ?status=new|consumed|dismissed (default: all)
 
 import { authorize, type Env } from "../../_lib/auth";
+import { enqueueSummarization } from "../../_lib/enqueue";
 import { error, json, sanitizeUrl, validateUrl } from "../../_lib/util";
 
 const VALID_STATUSES = ["new", "queued", "summarized", "blocked", "consumed", "dismissed"] as const;
-
-function enqueueSummarization(env: Env): Promise<unknown> | null {
-  if (env.AUTO_SUMMARIZE !== "true" || !env.SUMMARIZER) return null;
-  const stub = env.SUMMARIZER.get(env.SUMMARIZER.idFromName("main"));
-  return stub.fetch("https://summarizer/enqueue", { method: "POST" }).catch(() => {});
-}
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const who = await authorize(request, env);
