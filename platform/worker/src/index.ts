@@ -80,9 +80,19 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
     ).first<LinkRow>();
   }
 
-  private async block(linkId: number, reason: string): Promise<void> {
+  private async block(linkId: number, reason: string, meta?: Partial<SummarizeMeta>): Promise<void> {
+    await this.recordRun(linkId, meta);
     await this.env.DB.prepare("UPDATE links SET status = 'blocked', error = ? WHERE id = ?")
       .bind(reason.slice(0, 500), linkId)
+      .run();
+  }
+
+  private async recordRun(linkId: number, meta?: Partial<SummarizeMeta>): Promise<void> {
+    const t = tokensFromUsage(meta?.usage);
+    await this.env.DB.prepare(
+      "UPDATE links SET processed_at = ?, fetch_ms = ?, ai_ms = ?, tokens_in = ?, tokens_out = ? WHERE id = ?",
+    )
+      .bind(new Date().toISOString(), meta?.fetchMs ?? null, meta?.aiMs ?? null, t.tokensIn, t.tokensOut, linkId)
       .run();
   }
 
@@ -94,8 +104,9 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
     }
 
     const out = await summarizeUrl(this.env, link.url);
+    logRun(link, out);
     if (!out.ok) {
-      await this.block(link.id, out.reason);
+      await this.block(link.id, out.reason, out.meta);
       return;
     }
 
@@ -103,13 +114,43 @@ export class SummarizerDO extends DurableObject<PipelineEnv> {
     const id = await allocateId(this.env as never);
     const result = await writeSummary(this.env as never, { id, content: out.raw });
     if (!result.ok) {
-      await this.block(link.id, `BLOCKED: store rejected — ${result.error}`);
+      await this.block(link.id, `BLOCKED: store rejected — ${result.error}`, out.meta);
       return;
     }
+    await this.recordRun(link.id, out.meta);
     await this.env.DB.prepare("UPDATE links SET status = 'summarized', summary_id = ?, error = NULL WHERE id = ?")
       .bind(id, link.id)
       .run();
   }
+}
+
+function tokensFromUsage(usage: unknown): { tokensIn: number | null; tokensOut: number | null } {
+  const u = (usage ?? {}) as Record<string, number>;
+  return {
+    // Gemini: usageMetadata.{promptTokenCount,candidatesTokenCount}; Workers AI: {prompt_tokens,completion_tokens}
+    tokensIn: u.promptTokenCount ?? u.prompt_tokens ?? null,
+    tokensOut: u.candidatesTokenCount ?? u.completion_tokens ?? null,
+  };
+}
+
+/** One structured log line per pipeline run — visible via `wrangler tail` and Workers Logs. */
+function logRun(link: LinkRow, out: SummarizeResult): void {
+  const t = tokensFromUsage(out.ok ? out.meta.usage : out.meta?.usage);
+  console.log(
+    JSON.stringify({
+      evt: "summarize",
+      linkId: link.id,
+      url: link.url,
+      outcome: out.ok ? "ok" : "blocked",
+      reason: out.ok ? undefined : out.reason,
+      model: out.ok ? out.meta.model : out.meta?.model,
+      fetchMs: out.ok ? out.meta.fetchMs : out.meta?.fetchMs,
+      aiMs: out.ok ? out.meta.aiMs : out.meta?.aiMs,
+      extractChars: out.ok ? out.meta.extractChars : out.meta?.extractChars,
+      tokensIn: t.tokensIn,
+      tokensOut: t.tokensOut,
+    }),
+  );
 }
 
 export interface SummarizeMeta {
@@ -388,6 +429,7 @@ export default {
       }
       if (!body.url) return Response.json({ error: "url is required" }, { status: 400 });
       const result = await summarizeUrl(env, body.url, body.model);
+      logRun({ id: -1, url: body.url, status: "eval" }, result);
       return Response.json(result, { status: result.ok ? 200 : 422 });
     }
     return new Response("gen-ai-journal-pipeline: Durable Object host", { status: 404 });
