@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Pipeline console — gen-ai-journal</title>
+  <style>
+    :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; --ok: #22633c; --bad: #a33326; }
+    body { font-family: system-ui, sans-serif; max-width: 980px; margin: 5vh auto; padding: 0 20px 60px; color: #21252d; line-height: 1.5; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    p.sub { color: var(--muted); margin: 0 0 18px; font-size: 14px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .stat { border: 1px solid var(--line); border-radius: 6px; padding: 8px 14px; font-size: 13px; background: #fff; }
+    .stat b { display: block; font-size: 17px; font-variant-numeric: tabular-nums; }
+    .cyc { border-color: var(--accent); }
+    .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+    .bar button, .bar input { font-size: 13px; border: 1px solid var(--line); background: #fff; border-radius: 5px; padding: 5px 12px; }
+    .bar button { cursor: pointer; }
+    .bar button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .filters button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; }
+    th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--line); white-space: nowrap; }
+    td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; white-space: nowrap; }
+    .pill.new { background: #e7f2ea; color: var(--ok); }
+    .pill.queued { background: #fdf3e4; color: #8a5307; }
+    .pill.summarized { background: #e8eef5; color: #33567a; }
+    .pill.blocked { background: #fbe9e7; color: var(--bad); }
+    .pill.consumed, .pill.dismissed { background: #f0f0ee; color: #888; }
+    .u a { color: #1f4e79; word-break: break-all; }
+    .err { color: var(--bad); font-size: 12px; margin-top: 2px; }
+    .act button { font-size: 11.5px; border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 2px 9px; cursor: pointer; margin-right: 4px; }
+    .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    nav { margin-top: 22px; font-size: 13.5px; }
+    nav a { color: var(--accent); margin-right: 16px; }
+    dialog { border: 1px solid var(--line); border-radius: 8px; padding: 20px; max-width: 340px; }
+    dialog label { display: block; font-size: 13px; font-weight: 600; margin: 10px 0 3px; }
+    dialog input { width: 100%; box-sizing: border-box; padding: 7px 10px; border: 1px solid var(--line); border-radius: 5px; }
+    dialog menu { display: flex; gap: 8px; justify-content: flex-end; padding: 0; margin: 16px 0 0; }
+  </style>
+</head>
+<body>
+  <h1>Pipeline console</h1>
+  <p class="sub">Cloud STEP_02 operations — links → summaries. <span id="asof"></span></p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="bar">
+    <span class="filters" id="filters">
+      <button data-s="" class="on">all</button>
+      <button data-s="new">new</button>
+      <button data-s="queued">queued</button>
+      <button data-s="summarized">summarized</button>
+      <button data-s="blocked">blocked</button>
+      <button data-s="dismissed">dismissed</button>
+    </span>
+    <span style="flex:1"></span>
+    <button id="refresh">↻ refresh</button>
+    <button id="rollover" class="primary">start new cycle…</button>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>#</th><th>status</th><th>url / note / error</th><th>NNN</th><th>run</th><th>tokens</th><th>actions</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+
+  <nav><a href="/submit">submit</a><a href="/inbox">inbox</a><a href="/api/summaries" target="_blank">summaries API</a></nav>
+
+  <dialog id="dlg">
+    <b>Start new cycle</b>
+    <label for="d-date">Journal date (YYYY-MM-DD)</label>
+    <input id="d-date" placeholder="2026-07-18">
+    <label for="d-next">Next summary ID</label>
+    <input id="d-next" type="number" value="1" min="1">
+    <p style="font-size:12px;color:var(--muted)">Parallel-run rule: seed the ID from the real sources.md max + 1 if local IDs exist this cycle.</p>
+    <menu>
+      <button id="d-cancel">cancel</button>
+      <button id="d-go" class="primary" style="background:#d96b0b;color:#fff;border-color:#d96b0b">set cycle</button>
+    </menu>
+  </dialog>
+
+  <script>
+    let current = "";
+    const $ = (id) => document.getElementById(id);
+    const fmtMs = (ms) => ms == null ? "–" : (ms >= 1000 ? (ms / 1000).toFixed(1) + "s" : ms + "ms");
+
+    async function load() {
+      const res = await fetch("/api/pipeline", { credentials: "same-origin" });
+      if (!res.ok) { $("rows").innerHTML = `<tr><td colspan="7">failed to load (${res.status})</td></tr>`; return; }
+      const d = await res.json();
+
+      const c = d.counts, cyc = d.cycle;
+      $("stats").innerHTML = [
+        cyc ? `<div class="stat cyc"><b>${cyc.journal_date}</b>cycle · next NNN ${String(cyc.next_summary_id).padStart(3, "0")}</div>`
+            : `<div class="stat cyc"><b>none</b>no active cycle</div>`,
+        `<div class="stat"><b>${c.new ?? 0}</b>new</div>`,
+        `<div class="stat"><b>${c.queued ?? 0}</b>queued</div>`,
+        `<div class="stat"><b>${c.summarized ?? 0}</b>summarized</div>`,
+        `<div class="stat"><b>${c.blocked ?? 0}</b>blocked</div>`,
+        `<div class="stat"><b>${(d.tokens.in / 1000).toFixed(1)}k / ${(d.tokens.out / 1000).toFixed(1)}k</b>tokens in/out</div>`,
+      ].join("");
+      $("asof").textContent = d.last_processed_at ? `last run ${d.last_processed_at.slice(0, 19).replace("T", " ")}Z` : "";
+
+      const rows = d.links.filter((l) => !current || l.status === current);
+      $("rows").innerHTML = rows.length ? "" : `<tr><td colspan="7" style="color:var(--muted)">nothing here</td></tr>`;
+      for (const l of rows) {
+        const tr = document.createElement("tr");
+        const acts = [];
+        if (l.status === "blocked") acts.push(`<button data-a="retry" data-id="${l.id}">retry</button>`);
+        if (l.status !== "dismissed") acts.push(`<button data-a="dismiss" data-id="${l.id}">dismiss</button>`);
+        else acts.push(`<button data-a="retry" data-id="${l.id}">re-open</button>`);
+        tr.innerHTML = `
+          <td class="num">${l.id}</td>
+          <td><span class="pill ${l.status}">${l.status}</span></td>
+          <td><div class="u"><a href="${l.url}" target="_blank" rel="noreferrer">${l.url}</a></div>
+              ${l.note ? `<div style="font-size:12px;color:var(--muted)">${escapeHtml(l.note)}</div>` : ""}
+              ${l.error ? `<div class="err">${escapeHtml(l.error)}</div>` : ""}</td>
+          <td class="num">${l.summary_id ? `<a href="/api/summaries/${l.summary_id}" target="_blank">${l.summary_id}</a>` : "–"}</td>
+          <td class="num">${fmtMs(l.fetch_ms)} + ${fmtMs(l.ai_ms)}</td>
+          <td class="num">${l.tokens_in ? `${(l.tokens_in / 1000).toFixed(1)}k/${l.tokens_out}` : "–"}</td>
+          <td class="act">${acts.join("")}</td>`;
+        $("rows").appendChild(tr);
+      }
+    }
+
+    function escapeHtml(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+
+    document.body.addEventListener("click", async (e) => {
+      const a = e.target.dataset?.a;
+      if (!a) return;
+      const status = a === "retry" ? "new" : "dismissed";
+      e.target.disabled = true;
+      await fetch(`/api/links/${e.target.dataset.id}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        credentials: "same-origin",
+        body: JSON.stringify({ status }),
+      });
+      load();
+    });
+
+    $("filters").addEventListener("click", (e) => {
+      if (e.target.tagName !== "BUTTON") return;
+      current = e.target.dataset.s;
+      for (const b of document.querySelectorAll("#filters button")) b.classList.toggle("on", b === e.target);
+      load();
+    });
+    $("refresh").onclick = load;
+    $("rollover").onclick = () => $("dlg").showModal();
+    $("d-cancel").onclick = () => $("dlg").close();
+    $("d-go").onclick = async () => {
+      const res = await fetch("/api/cycle", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        credentials: "same-origin",
+        body: JSON.stringify({ date: $("d-date").value.trim(), next_id: Number($("d-next").value) }),
+      });
+      if (res.ok) { $("dlg").close(); load(); }
+      else alert("failed: " + (await res.json()).error);
+    };
+    load();
+    setInterval(load, 30_000);
+  </script>
+</body>
+</html>
