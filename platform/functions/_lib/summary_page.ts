@@ -142,11 +142,10 @@ export function renderErrorPage(subject: string, message: string): string {
   );
 }
 
-/** Rich render of summary-v1 JSON; falls back to <pre> for stubs/unparseable. */
+/** Rich render of summary-v1 JSON; falls back to <pre> for stubs/unparseable.
+ * Pure content — show or nothing; all status messaging lives in the result
+ * overview. Callers skip this entirely for dismissed summaries. */
 function contentHtml(s: SummaryRow): string {
-  if (s.status === "dismissed") {
-    return `<div class="notice">Content hidden while dismissed — re-open the link below to restore it. The row (and its content) still exists.</div>`;
-  }
   const raw = s.content ?? "";
   if (raw.trimStart().startsWith("BLOCKED")) {
     return `<section><h2>Blocked stub</h2><pre class="raw">${esc(raw)}</pre></section>`;
@@ -191,16 +190,42 @@ function contentHtml(s: SummaryRow): string {
   </section>`;
 }
 
-/** Shown instead of a content section when the link never produced a summary. */
-function noSummaryHtml(link: LinkRow): string {
+/** Result overview — the run's outcome at a glance, shown FIRST (before the
+ * log): status headline for every state (blocked reason, success NNN,
+ * dismissed, generating/queued) plus the last-run metrics. */
+function resultOverviewHtml(link: LinkRow, summary: SummaryRow | null): string {
+  let headline: string;
   if (link.status === "blocked") {
-    return `<div class="notice"><span class="err" style="font-weight:600">blocked</span> — ${esc(link.error ?? "(no reason recorded)")}<br>
-    Fail-closed: no summary was written, no NNN spent. Retry below, or regenerate locally and push (#168).</div>`;
+    headline = `<div class="notice"><span class="err" style="font-weight:600">blocked</span> —
+    fail-closed: no summary was written, no NNN spent. Retry below, or regenerate locally and push (#168).</div>`;
+  } else if (link.status === "dismissed") {
+    headline = summary
+      ? `<div class="notice">Dismissed — content hidden while dismissed. Re-open below to restore it instantly (no regeneration, no token spend; the row still exists).</div>`
+      : `<div class="notice">Dismissed before a summary was produced — re-open below to queue it.</div>`;
+  } else if (summary) {
+    headline = `<div class="notice">Summarized into <span class="nnn">NNN ${esc(summary.id)}</span> — content below the log.</div>`;
+  } else {
+    headline = `<div class="notice">No summary yet — the pipeline ${link.status === "queued" ? "has queued this link" : "will pick this link up shortly"}.</div>`;
   }
-  if (link.status === "dismissed") {
-    return `<div class="notice">Dismissed before a summary was produced — re-open below to queue it.</div>`;
+
+  const rows: string[] = [];
+  if (link.status === "blocked") {
+    rows.push(`<tr><td>reason</td><td class="err">${esc(link.error ?? "(no reason recorded)")}</td></tr>`);
   }
-  return `<div class="notice">No summary yet — the pipeline ${link.status === "queued" ? "has queued this link" : "will pick this link up shortly"}.</div>`;
+  if (summary) {
+    rows.push(
+      `<tr><td>summary</td><td><span class="nnn">NNN ${esc(summary.id)}</span> <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span></td></tr>`,
+    );
+  }
+  if (link.processed_at) {
+    rows.push(
+      `<tr><td>last run</td><td>${fmtTs(link.processed_at)} · fetch ${fmtMs(link.fetch_ms)} + ai ${fmtMs(link.ai_ms)} · tokens ${link.tokens_in != null ? `${esc(link.tokens_in)}/${esc(link.tokens_out ?? "–")}` : "–"}</td></tr>`,
+    );
+  }
+
+  return `<section id="result"><h2>Result</h2>
+    ${headline}${rows.length ? `\n    <table class="kv"><tbody>\n      ${rows.join("\n      ")}\n    </tbody></table>` : ""}
+  </section>`;
 }
 
 function actionButtons(link: LinkRow): string {
@@ -239,9 +264,7 @@ function linkSectionHtml(link: LinkRow): string {
       <tr><td>url</td><td>${urlHtml(link.url)}</td></tr>
       <tr><td>link</td><td>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span></td></tr>
       ${link.note ? `<tr><td>note</td><td>${esc(link.note)}</td></tr>` : ""}
-      ${link.error ? `<tr><td>error</td><td class="err">${esc(link.error)}</td></tr>` : ""}
       <tr><td>submitted</td><td>${fmtTs(link.submitted_at)}</td></tr>
-      <tr><td>last run</td><td>${fmtTs(link.processed_at)} · fetch ${fmtMs(link.fetch_ms)} + ai ${fmtMs(link.ai_ms)} · tokens ${link.tokens_in != null ? `${esc(link.tokens_in)}/${esc(link.tokens_out ?? "–")}` : "–"}</td></tr>
     </tbody></table>
     ${actionButtons(link)}
   </section>`;
@@ -317,6 +340,8 @@ export function renderLinkPage(link: LinkRow, summary: SummaryRow | null): strin
   const body = `  <h1>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span>${summary ? ` <span class="nnn">NNN ${esc(summary.id)}</span>` : ""}</h1>
   <p class="sub">${sub}</p>
 
+${resultOverviewHtml(link, summary)}
+
   <section id="log"><h2>Summarization log</h2>
     <div class="tbl-wrap"><table>
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>detail</th></tr></thead>
@@ -325,7 +350,7 @@ export function renderLinkPage(link: LinkRow, summary: SummaryRow | null): strin
     <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this link.</div>
   </section>
 
-${summary ? contentHtml(summary) : noSummaryHtml(link)}
+${summary && summary.status !== "dismissed" ? contentHtml(summary) : ""}
 
 ${linkSectionHtml(link)}
 

@@ -110,12 +110,17 @@ describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
     expect(html).toContain('"summaryId":"042"'); // events merged with the NNN history
   });
 
-  it("summarization log section comes before content and link sections", () => {
+  it("section order: result overview → log → content → link", () => {
     const html = renderLinkPage(link, mkSummary());
+    const result = html.indexOf('<section id="result">');
     const log = html.indexOf('<section id="log">');
-    expect(log).toBeGreaterThan(-1);
-    expect(log).toBeLessThan(html.indexOf("SECRET-BODY-MARKER")); // before summary content
-    expect(log).toBeLessThan(html.indexOf("<h2>Link</h2>")); // before link section
+    const content = html.indexOf("SECRET-BODY-MARKER");
+    const linkSec = html.indexOf("<h2>Link</h2>");
+    expect(result).toBeGreaterThan(-1);
+    expect(result).toBeLessThan(log); // outcome first
+    expect(log).toBeLessThan(content); // log before summary content
+    expect(content).toBeLessThan(linkSec); // link section last
+    expect(html).toContain("last run"); // run metrics live in the overview now
   });
 
   it("dismissed: hides the body but keeps metadata + re-open", () => {
