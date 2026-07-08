@@ -168,8 +168,16 @@ Local companions in `scripts/`: `pull_inbox.py` (legacy parallel-run tool),
    `summary_id`) → `writeSummary()` upsert → link `status=summarized`.
 5. On any content failure: **fail closed** — link `status=blocked` + reason, no
    NNN spent. Infra failures (D1/AI outage) rethrow so the alarm retries.
-6. Every run emits events (`summary.created` / `pipeline.blocked`) and updates
-   the link's run-metric columns (fetch_ms, ai_ms, tokens).
+6. Every run emits events (#172, step events #178): `pipeline.run_started` at
+   claim, then `pipeline.fetched` → `pipeline.extracted` →
+   `pipeline.model_requested` → `pipeline.model_responded` along the way,
+   closed by `summary.created` (first write) / `summary.updated` (overwrite
+   under the link's existing NNN — re-summarize/retry of a summarized link) /
+   `pipeline.blocked`. All events of one attempt share a `run` marker (ISO
+   timestamp captured at claim) in `detail`, so retries group into distinct
+   runs. The DO passes a `logEvent`-backed emitter into `summarizeUrl()`;
+   `/eval` passes none (no-op — eval persists nothing). The link's run-metric
+   columns (fetch_ms, ai_ms, tokens) update as before.
 
 **Fail-closed cases** (all become `blocked`, never a hallucinated summary):
 PDF (Content-Type/`.pdf` → regenerate locally, #168), non-HTML, HTTP error,
@@ -325,7 +333,8 @@ One-shot investigations live under `evaluations/<YYYY-MM-DD-topic>/`
 `evaluations/README.md`. **Product code never imports from `evaluations/`.**
 The stable seam for pipeline investigations is the worker's bearer-protected
 `POST /eval {url, model?}` — it runs the exact `summarizeUrl()` path **without
-persisting** (no D1 write, no NNN spent), returning summary + timings + tokens.
+persisting** (no D1 write, no NNN spent, no step events — it passes no step
+emitter, #178), returning summary + timings + tokens.
 
 ---
 
@@ -337,7 +346,8 @@ persisting** (no D1 write, no NNN spent), returning summary + timings + tokens.
 - **New DB column/table**: add the next `migrations/NNNN_*.sql`; apply local +
   remote; rebuild the table if you're touching a CHECK constraint.
 - **New event type**: emit via `logEvent()` — it's fire-and-forget and shared
-  with the worker.
+  with the worker. New *pipeline step* events go through the `StepEmitter`
+  callback of `summarizeUrl()` (#178) so `/eval` stays persistence-free.
 - **Change the model**: set `SUMMARIZE_MODEL` in `worker/wrangler.jsonc` (add
   `GEMINI_API_KEY` for gemini-*, nothing for `@cf/*`); re-eval via `/eval`
   before trusting a new one (see §11).

@@ -114,12 +114,20 @@ const STYLE = `
     /* The log is the page's main content — unwrap it from the card look so
        it doesn't read as just another parallel section. */
     #log { border: none; border-radius: 0; background: transparent; padding: 6px 0 10px; }
-    #log td.ts { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
-    #log td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; }
+    /* One line per row (#178): fixed layout + nowrap/ellipsis on the flexible
+       cells; hovering a row shows the full content in the popover. */
+    #log table { table-layout: fixed; }
+    #log td.ts { white-space: nowrap; overflow: hidden; color: var(--muted); font-variant-numeric: tabular-nums; }
+    #log td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #log td.ev.step { color: var(--muted); }
     #log .pill.editor { background: #e8eef5; color: #33567a; }
     #log .pill.pipeline { background: #fdf3e4; color: #8a5307; }
     #log .pill.system { background: #f0f0ee; color: #888; }
-    #log td.detail { color: #444; font-size: 12.5px; word-break: break-word; }
+    #log td.detail { color: #444; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #log-pop { position: fixed; z-index: 20; max-width: min(560px, 90vw); max-height: 60vh; overflow: auto;
+      background: #21252d; color: #f2efe9; font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.5;
+      padding: 10px 12px; border-radius: 6px; white-space: pre-wrap; word-break: break-word;
+      box-shadow: 0 4px 18px rgba(0,0,0,.3); pointer-events: none; }
     nav { margin-top: 22px; font-size: 13.5px; }
     nav a { color: var(--accent); margin-right: 16px; }
 `;
@@ -306,6 +314,26 @@ const CLIENT_SCRIPT = `
         .join(" · ");
     }
 
+    // Hover popover (#178): rows are one line (ellipsized); hovering shows the
+    // full event name, timestamp, and pretty-printed detail JSON. Content is
+    // set via textContent only — never innerHTML of user data.
+    const pop = document.getElementById("log-pop");
+    const STEP_EVENTS = new Set(["pipeline.run_started", "pipeline.fetched", "pipeline.extracted", "pipeline.model_requested", "pipeline.model_responded"]);
+    function popText(e) {
+      let detail = e.detail || "";
+      try { detail = JSON.stringify(JSON.parse(detail), null, 2); } catch { /* leave raw */ }
+      return e.event + "\\n" + (e.ts || "") + " · " + e.actor + (detail ? "\\n\\n" + detail : "");
+    }
+    function placePop(x, y) {
+      pop.style.left = Math.max(8, Math.min(x + 14, window.innerWidth - pop.offsetWidth - 10)) + "px";
+      pop.style.top = Math.max(8, Math.min(y + 14, window.innerHeight - pop.offsetHeight - 10)) + "px";
+    }
+    function attachPop(tr, e) {
+      tr.addEventListener("mouseenter", (m) => { pop.textContent = popText(e); pop.hidden = false; placePop(m.clientX, m.clientY); });
+      tr.addEventListener("mousemove", (m) => placePop(m.clientX, m.clientY));
+      tr.addEventListener("mouseleave", () => { pop.hidden = true; });
+    }
+
     async function loadLog() {
       const qs = ["link_id=" + PAGE.linkId];
       if (PAGE.summaryId != null) qs.push("summary_id=" + encodeURIComponent(PAGE.summaryId));
@@ -330,9 +358,11 @@ const CLIENT_SCRIPT = `
         const actor = document.createElement("td");
         const pill = document.createElement("span"); pill.className = "pill " + e.actor; pill.textContent = e.actor;
         actor.appendChild(pill);
-        const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
+        const ev = document.createElement("td"); ev.className = STEP_EVENTS.has(e.event) ? "ev step" : "ev"; ev.textContent = e.event;
         const detail = document.createElement("td"); detail.className = "detail"; detail.textContent = fmtDetail(e.detail);
+        detail.title = fmtDetail(e.detail); // native tooltip as a supplement to the popover
         tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(detail);
+        attachPop(tr, e);
         rows.appendChild(tr);
       }
     }
@@ -352,10 +382,12 @@ ${resultOverviewHtml(link, summary)}
 
   <section id="log"><h2>Summarization log</h2>
     <div class="tbl-wrap"><table>
+      <colgroup><col style="width:152px"><col style="width:76px"><col style="width:186px"><col></colgroup>
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>detail</th></tr></thead>
       <tbody id="log-rows"></tbody>
     </table></div>
     <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this link.</div>
+    <div id="log-pop" hidden></div>
   </section>
 
 ${summary && summary.status !== "dismissed" ? contentHtml(summary) : ""}

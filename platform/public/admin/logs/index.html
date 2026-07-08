@@ -14,21 +14,29 @@
     .bar select, .bar button { font-size: 13px; border: 1px solid var(--line); background: #fff; border-radius: 5px; padding: 5px 12px; }
     .bar button { cursor: pointer; }
     .bar .hint { font-size: 12px; color: var(--muted); }
-    table { border-collapse: collapse; width: 100%; font-size: 13px; }
+    /* One line per row (#178): fixed layout + nowrap/ellipsis on the flexible
+       cells; hovering a row shows the full content in the popover. */
+    table { border-collapse: collapse; width: 100%; font-size: 13px; table-layout: fixed; }
     th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--line); white-space: nowrap; }
     td { padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-    td.ts { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
+    td.ts { font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; color: var(--muted); }
     .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; white-space: nowrap; }
     .pill.editor { background: #e8eef5; color: #33567a; }
     .pill.pipeline { background: #fdf3e4; color: #8a5307; }
     .pill.system { background: #f0f0ee; color: #888; }
+    td.evtd { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .ev { font-family: ui-monospace, monospace; font-size: 12px; white-space: nowrap; }
     .ev.good { color: var(--ok); }
     .ev.bad { color: var(--bad); }
-    .subj { white-space: nowrap; }
+    .ev.step { color: var(--muted); }
+    .subj { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .subj a { color: #1f4e79; }
-    .detail { color: #444; font-size: 12.5px; word-break: break-word; }
+    .detail { color: #444; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    #log-pop { position: fixed; z-index: 20; max-width: min(560px, 90vw); max-height: 60vh; overflow: auto;
+      background: #21252d; color: #f2efe9; font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.5;
+      padding: 10px 12px; border-radius: 6px; white-space: pre-wrap; word-break: break-word;
+      box-shadow: 0 4px 18px rgba(0,0,0,.3); pointer-events: none; }
     #empty { color: var(--muted); font-size: 14px; padding: 22px 12px; }
     nav { margin-top: 22px; font-size: 13.5px; }
     nav a { color: var(--accent); margin-right: 16px; }
@@ -45,8 +53,14 @@
       <option>link.dismissed</option>
       <option>link.reopened</option>
       <option>summary.created</option>
+      <option>summary.updated</option>
       <option>summary.dismissed</option>
       <option>summary.restored</option>
+      <option>pipeline.run_started</option>
+      <option>pipeline.fetched</option>
+      <option>pipeline.extracted</option>
+      <option>pipeline.model_requested</option>
+      <option>pipeline.model_responded</option>
       <option>pipeline.blocked</option>
       <option>cycle.rolled</option>
     </select>
@@ -55,6 +69,9 @@
       <option value="100">last 100</option>
       <option value="200">last 200</option>
     </select>
+    <label style="display:flex;align-items:center;gap:5px;font-size:13px;cursor:pointer">
+      <input type="checkbox" id="f-steps"> show step events
+    </label>
     <span style="flex:1"></span>
     <span class="hint">auto-refreshes every 30s</span>
     <button id="refresh">↻ refresh</button>
@@ -62,11 +79,13 @@
 
   <div class="tbl-wrap">
     <table>
+      <colgroup><col style="width:158px"><col style="width:88px"><col style="width:196px"><col style="width:112px"><col></colgroup>
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>subject</th><th>detail</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
     <div id="empty" hidden>No events yet.</div>
   </div>
+  <div id="log-pop" hidden></div>
 
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/submit">submit</a></nav>
 
@@ -94,13 +113,38 @@
       return parts.join(" · ") || "–";
     }
 
+    // Step-level pipeline events (#178) — hidden by default so outcome-level
+    // scanning stays possible; toggle "show step events" (or pick one in the
+    // event filter) to see them.
+    const STEP_EVENTS = new Set(["pipeline.run_started", "pipeline.fetched", "pipeline.extracted", "pipeline.model_requested", "pipeline.model_responded"]);
+
     function evClass(name) {
-      if (name === "summary.created") return "ev good";
+      if (name === "summary.created" || name === "summary.updated") return "ev good";
       if (name === "pipeline.blocked") return "ev bad";
+      if (STEP_EVENTS.has(name)) return "ev step";
       return "ev";
     }
 
     function escapeHtml(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+
+    // Hover popover (#178): rows are one line (ellipsized); hovering shows the
+    // full event name, timestamp, and pretty-printed detail JSON. Content is
+    // set via textContent only — never innerHTML of user data.
+    const pop = $("log-pop");
+    function popText(e) {
+      let detail = e.detail || "";
+      try { detail = JSON.stringify(JSON.parse(detail), null, 2); } catch { /* leave raw */ }
+      return e.event + "\n" + (e.ts || "") + " · " + e.actor + (detail ? "\n\n" + detail : "");
+    }
+    function placePop(x, y) {
+      pop.style.left = Math.max(8, Math.min(x + 14, window.innerWidth - pop.offsetWidth - 10)) + "px";
+      pop.style.top = Math.max(8, Math.min(y + 14, window.innerHeight - pop.offsetHeight - 10)) + "px";
+    }
+    function attachPop(tr, e) {
+      tr.addEventListener("mouseenter", (m) => { pop.textContent = popText(e); pop.hidden = false; placePop(m.clientX, m.clientY); });
+      tr.addEventListener("mousemove", (m) => placePop(m.clientX, m.clientY));
+      tr.addEventListener("mouseleave", () => { pop.hidden = true; });
+    }
 
     async function load() {
       const p = new URLSearchParams();
@@ -109,23 +153,28 @@
       const res = await fetch("/api/events?" + p, { credentials: "same-origin" });
       if (!res.ok) { $("rows").innerHTML = `<tr><td colspan="5">failed to load (${res.status})</td></tr>`; return; }
       const d = await res.json();
-      $("asof").textContent = d.count + " event" + (d.count === 1 ? "" : "s") + " shown.";
-      $("empty").hidden = d.count !== 0;
+      const showSteps = $("f-steps").checked || Boolean($("f-event").value);
+      const events = showSteps ? d.events : d.events.filter((e) => !STEP_EVENTS.has(e.event));
+      const hidden = d.count - events.length;
+      $("asof").textContent = events.length + " event" + (events.length === 1 ? "" : "s") + " shown" + (hidden > 0 ? " (" + hidden + " step events hidden)." : ".");
+      $("empty").hidden = events.length !== 0;
       $("rows").innerHTML = "";
-      for (const e of d.events) {
+      for (const e of events) {
         const tr = document.createElement("tr");
         tr.innerHTML = `
           <td class="ts">${(e.ts || "").slice(0, 19).replace("T", " ")}</td>
           <td><span class="pill ${e.actor}">${e.actor}</span></td>
-          <td><span class="${evClass(e.event)}">${escapeHtml(e.event)}</span></td>
+          <td class="evtd"><span class="${evClass(e.event)}">${escapeHtml(e.event)}</span></td>
           <td class="subj">${subjectHtml(e)}</td>
           <td class="detail" title="${escapeHtml(e.detail || "")}">${escapeHtml(fmtDetail(e.detail))}</td>`;
+        attachPop(tr, e);
         $("rows").appendChild(tr);
       }
     }
 
     $("f-event").onchange = load;
     $("f-limit").onchange = load;
+    $("f-steps").onchange = load;
     $("refresh").onclick = load;
     load();
     setInterval(load, 30_000);

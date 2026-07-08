@@ -28,9 +28,27 @@ export type SummarizeResult =
   | { ok: true; raw: string; meta: SummarizeMeta }
   | { ok: false; reason: string; meta?: Partial<SummarizeMeta> };
 
+/** Optional per-step event emitter (#178). The DO passes one backed by
+ *  logEvent (adding link_id + the run marker); /eval passes nothing, so eval
+ *  runs persist no events. Fire-and-forget: emitter failures are swallowed
+ *  here so a step event can never fail a run. */
+export type StepEmitter = (event: string, detail: Record<string, unknown>) => void | Promise<void>;
+
 /** The full summarization core — used by the DO (persisting) and /eval (non-persisting). */
-export async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?: string): Promise<SummarizeResult> {
+export async function summarizeUrl(
+  env: PipelineEnv,
+  url: string,
+  modelOverride?: string,
+  onStep?: StepEmitter,
+): Promise<SummarizeResult> {
   const model = modelOverride ?? env.SUMMARIZE_MODEL;
+  const emit = async (event: string, detail: Record<string, unknown>): Promise<void> => {
+    try {
+      await onStep?.(event, detail);
+    } catch {
+      /* step events must never fail or slow the run */
+    }
+  };
 
   // 1. Fetch (fail closed on anything that isn't a readable HTML page)
   const t0 = Date.now();
@@ -53,9 +71,12 @@ export async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?
     return { ok: false, reason: `BLOCKED: unsupported content-type ${ctype.slice(0, 80)}` };
   }
 
-  // 2. Extract main text (streaming, CPU-cheap)
-  const { title, text } = await extractText(res);
+  // 2. Decode (charset-aware) + extract main text (streaming, CPU-cheap)
+  const { html, bytes, charset } = await decodeBody(res);
+  await emit("pipeline.fetched", { status: res.status, ms: Date.now() - t0, bytes, charset });
+  const { title, text } = await extractText(html);
   const fetchMs = Date.now() - t0;
+  await emit("pipeline.extracted", { chars: text.length });
   const minChars = Number(env.MIN_CONTENT_CHARS);
   if (text.length < minChars) {
     return {
@@ -72,6 +93,7 @@ export async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?
   //    neuron budget can't carry the weekly volume at 70B quality);
   //    @cf/* → Workers AI (kept as fallback/eval path).
   const prompt = SUMMARIZE_PROMPT_TEMPLATE.replace("{{url}}", url).replace("{{content}}", `# ${title}\n\n${content}`);
+  await emit("pipeline.model_requested", { model, input_chars: prompt.length });
   const t1 = Date.now();
   let parsed: Record<string, never>;
   let usage: unknown;
@@ -98,6 +120,8 @@ export async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?
     };
   }
   const aiMs = Date.now() - t1;
+  const tk = tokensFromUsage(usage);
+  await emit("pipeline.model_responded", { ms: aiMs, tokens_in: tk.tokensIn, tokens_out: tk.tokensOut });
 
   // 4. Enforce invariants the prompt alone can't guarantee
   const doc = parsed as { metadata?: Record<string, unknown>; content?: Record<string, unknown> };
@@ -126,7 +150,7 @@ export async function summarizeUrl(env: PipelineEnv, url: string, modelOverride?
 /** Decode the body honoring its declared charset (Japanese sites often serve
  *  Shift_JIS / EUC-JP; HTMLRewriter assumes UTF-8, so garbled input must be
  *  re-decoded before parsing — found via itmedia.co.jp in the first e2e run). */
-async function decodeBody(res: Response): Promise<string> {
+async function decodeBody(res: Response): Promise<{ html: string; bytes: number; charset: string }> {
   const buf = await res.arrayBuffer();
   let charset =
     /charset=["']?([\w-]+)/i.exec(res.headers.get("content-type") ?? "")?.[1]?.toLowerCase() ?? null;
@@ -138,9 +162,9 @@ async function decodeBody(res: Response): Promise<string> {
       "utf-8";
   }
   try {
-    return new TextDecoder(charset).decode(buf);
+    return { html: new TextDecoder(charset).decode(buf), bytes: buf.byteLength, charset };
   } catch {
-    return new TextDecoder("utf-8").decode(buf);
+    return { html: new TextDecoder("utf-8").decode(buf), bytes: buf.byteLength, charset: "utf-8" };
   }
 }
 
@@ -193,8 +217,7 @@ function toGeminiSchema(node: Record<string, unknown>): Record<string, unknown> 
   return out;
 }
 
-async function extractText(res: Response): Promise<{ title: string; text: string }> {
-  const html = await decodeBody(res);
+async function extractText(html: string): Promise<{ title: string; text: string }> {
   const chunks: string[] = [];
   let title = "";
   let inTitle = false;

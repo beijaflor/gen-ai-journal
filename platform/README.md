@@ -87,8 +87,16 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
 - Every summarization-lifecycle interaction lands in the append-only `events`
-  table (#172): link submitted/dismissed/reopened, summary created/dismissed/
-  restored, pipeline blocked (with metrics), cycle rolled. Events survive link
-  deletion; scope is summarization only until the publish phase (#163) adds
-  journal events. View at `/admin/logs`, query via `GET /api/events`.
+  table (#172): link submitted/dismissed/reopened, summary created/updated/
+  dismissed/restored, pipeline blocked (with metrics), cycle rolled. Each
+  pipeline run also emits step events (#178) — `pipeline.run_started` →
+  `.fetched` → `.extracted` → `.model_requested` → `.model_responded` — all
+  sharing a `run` marker (ISO ts captured at claim) in `detail` with the
+  closing created/updated/blocked event, so retries group into distinct runs.
+  `summary.updated` = overwrite under an existing NNN (re-summarize);
+  `summary.created` stays for first writes. The worker `/eval` path passes no
+  step emitter → persists nothing. Events survive link deletion; scope is
+  summarization only until the publish phase (#163) adds journal events. View
+  at `/admin/logs` (one-line rows, hover for full detail; step noise hidden
+  by default), query via `GET /api/events`.
 - Secrets: `API_BEARER_TOKEN` (Pages + worker), `GEMINI_API_KEY` (worker).

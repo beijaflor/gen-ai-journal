@@ -136,6 +136,16 @@ describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
     expect(html).toContain("L7");
   });
 
+  it("log rows are one-line with a hover popover (#178)", () => {
+    const html = renderLinkPage(link, mkSummary());
+    expect(html).toContain("table-layout: fixed"); // one-line rows need fixed column widths…
+    expect(html).toContain("text-overflow: ellipsis"); // …and ellipsized flexible cells
+    expect(html).toContain('<div id="log-pop" hidden></div>'); // popover container, hidden by default
+    expect(html).toContain("pop.textContent = popText(e)"); // popover content built with textContent, not innerHTML
+    expect(html).toContain("JSON.stringify(JSON.parse(detail), null, 2)"); // pretty-printed detail JSON in the popover
+    expect(html).toContain("pipeline.run_started"); // step events styled/known by the client script
+  });
+
   it("blocked, no NNN: shows the escaped reason, retry, and no content section", () => {
     const html = renderLinkPage(
       { ...link, status: "blocked", summary_id: null, error: "PDF detected <fail-closed>" },
