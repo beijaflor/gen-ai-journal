@@ -1,6 +1,9 @@
-// Summary detail page renderer (#173) — pure HTML-building for
-// /admin/summaries/<NNN>. Kept out of the route file so vitest can pin the
-// invariants (dismissed hides body, user content is escaped) without a D1.
+// Link detail page renderer (#173) — pure HTML-building for
+// /admin/links/<id>. Keyed by link id so EVERY submitted link — blocked and
+// failed runs included, which never earn an NNN — has an inspectable page
+// with its per-run summarization log. Kept out of the route file so vitest
+// can pin the invariants (dismissed hides body, user content is escaped)
+// without a D1.
 //
 // Everything that originates from the DB or the LLM goes through esc();
 // the only unescaped interpolations are safeJson() (for the client script)
@@ -22,6 +25,7 @@ export interface LinkRow {
   note: string | null;
   status: string; // new | queued | summarized | blocked | dismissed
   error: string | null;
+  summary_id: string | null;
   submitted_at: string | null;
   processed_at: string | null;
   fetch_ms: number | null;
@@ -71,6 +75,7 @@ const STYLE = `
     :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; --ok: #22633c; --bad: #a33326; }
     body { font-family: system-ui, sans-serif; max-width: 860px; margin: 5vh auto; padding: 0 20px 60px; color: #21252d; line-height: 1.6; }
     h1 { font-size: 22px; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+    h1 .nnn { font-size: 15px; color: var(--accent); }
     p.sub { color: var(--muted); margin: 0 0 20px; font-size: 13.5px; }
     section { border: 1px solid var(--line); border-radius: 6px; padding: 16px 20px; margin-bottom: 16px; background: #fff; }
     section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 0 0 10px; }
@@ -128,10 +133,10 @@ ${body}
 `;
 }
 
-export function renderErrorPage(id: string, message: string): string {
+export function renderErrorPage(subject: string, message: string): string {
   return shell(
-    `Summary ${id} — gen-ai-journal`,
-    `  <h1>Summary ${esc(id)}</h1>
+    `${subject} — gen-ai-journal`,
+    `  <h1>${esc(subject)}</h1>
   <div class="notice">${esc(message)}</div>
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/admin/logs">events log</a></nav>`,
   );
@@ -186,6 +191,18 @@ function contentHtml(s: SummaryRow): string {
   </section>`;
 }
 
+/** Shown instead of a content section when the link never produced a summary. */
+function noSummaryHtml(link: LinkRow): string {
+  if (link.status === "blocked") {
+    return `<div class="notice"><span class="err" style="font-weight:600">blocked</span> — ${esc(link.error ?? "(no reason recorded)")}<br>
+    Fail-closed: no summary was written, no NNN spent. Retry below, or regenerate locally and push (#168).</div>`;
+  }
+  if (link.status === "dismissed") {
+    return `<div class="notice">Dismissed before a summary was produced — re-open below to queue it.</div>`;
+  }
+  return `<div class="notice">No summary yet — the pipeline ${link.status === "queued" ? "has queued this link" : "will pick this link up shortly"}.</div>`;
+}
+
 function actionButtons(link: LinkRow): string {
   const btn = (label: string, status: string, confirmMsg: string, warn = false) =>
     `<button data-status="${esc(status)}" data-confirm="${esc(confirmMsg)}"${warn ? ' class="warn"' : ""}>${esc(label)}</button>`;
@@ -215,12 +232,7 @@ function actionButtons(link: LinkRow): string {
   return `<div class="actions">${btns.join("")}${hint ? `<span class="hint">${esc(hint)}</span>` : ""}</div>`;
 }
 
-function linkSectionHtml(link: LinkRow | null): string {
-  if (!link) {
-    return `<section><h2>Link</h2>
-    <div class="notice" style="border:none;padding:0;margin:0">No link row references this NNN (deleted, or pushed via the local fallback). Actions unavailable.</div>
-  </section>`;
-  }
+function linkSectionHtml(link: LinkRow): string {
   const label = link.status === "new" ? "generating" : link.status;
   return `<section><h2>Link</h2>
     <table class="kv"><tbody>
@@ -264,8 +276,8 @@ const CLIENT_SCRIPT = `
     }
 
     async function loadLog() {
-      const qs = ["summary_id=" + encodeURIComponent(PAGE.summaryId)];
-      if (PAGE.linkId != null) qs.push("link_id=" + PAGE.linkId);
+      const qs = ["link_id=" + PAGE.linkId];
+      if (PAGE.summaryId != null) qs.push("summary_id=" + encodeURIComponent(PAGE.summaryId));
       const lists = await Promise.all(qs.map(async (q) => {
         const res = await fetch("/api/events?limit=200&" + q, { credentials: "same-origin" });
         return res.ok ? (await res.json()).events : [];
@@ -296,12 +308,16 @@ const CLIENT_SCRIPT = `
     loadLog();
 `;
 
-export function renderSummaryPage(summary: SummaryRow, link: LinkRow | null): string {
-  const page = { summaryId: summary.id, linkId: link ? link.id : null };
-  const body = `  <h1>Summary ${esc(summary.id)} <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span></h1>
-  <p class="sub">${summary.journal_date ? `journal ${esc(summary.journal_date)}` : "workdesk (current cycle)"} · pushed ${fmtTs(summary.pushed_at)} · updated ${fmtTs(summary.updated_at)} · <a href="/api/summaries/${esc(summary.id)}" target="_blank" style="color:var(--accent)">raw JSON</a></p>
+export function renderLinkPage(link: LinkRow, summary: SummaryRow | null): string {
+  const page = { linkId: link.id, summaryId: summary ? summary.id : null };
+  const label = link.status === "new" ? "generating" : link.status;
+  const sub = summary
+    ? `${summary.journal_date ? `journal ${esc(summary.journal_date)}` : "workdesk (current cycle)"} · summary <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span> · pushed ${fmtTs(summary.pushed_at)} · updated ${fmtTs(summary.updated_at)} · <a href="/api/summaries/${esc(summary.id)}" target="_blank" style="color:var(--accent)">raw JSON</a>`
+    : `no NNN allocated${link.status === "blocked" ? " (fail-closed — nothing spent)" : ""} · submitted ${fmtTs(link.submitted_at)}`;
+  const body = `  <h1>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span>${summary ? ` <span class="nnn">NNN ${esc(summary.id)}</span>` : ""}</h1>
+  <p class="sub">${sub}</p>
 
-${contentHtml(summary)}
+${summary ? contentHtml(summary) : noSummaryHtml(link)}
 
 ${linkSectionHtml(link)}
 
@@ -310,7 +326,7 @@ ${linkSectionHtml(link)}
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>detail</th></tr></thead>
       <tbody id="log-rows"></tbody>
     </table></div>
-    <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this NNN.</div>
+    <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this link.</div>
   </section>
 
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/admin/logs">events log</a><a href="/submit">submit</a></nav>
@@ -318,5 +334,5 @@ ${linkSectionHtml(link)}
   <script>
     const PAGE = ${safeJson(page)};
 ${CLIENT_SCRIPT}  </script>`;
-  return shell(`Summary ${summary.id} — gen-ai-journal`, body);
+  return shell(`Link L${Number(link.id)} — gen-ai-journal`, body);
 }

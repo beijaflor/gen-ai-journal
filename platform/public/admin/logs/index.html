@@ -87,12 +87,10 @@
     }
 
     function subjectHtml(e) {
+      // Navigation is keyed by link id (#173) — every run has a detail page.
       const parts = [];
-      if (e.summary_id) {
-        const nnn = encodeURIComponent(e.summary_id);
-        parts.push(`NNN <a href="/admin/summaries/${nnn}" target="_blank"><b>${escapeHtml(e.summary_id)}</b></a>`);
-      }
-      if (e.link_id != null) parts.push(`L${Number(e.link_id)}`);
+      if (e.summary_id) parts.push(`NNN <b>${escapeHtml(e.summary_id)}</b>`);
+      if (e.link_id != null) parts.push(`<a href="/admin/links/${Number(e.link_id)}" target="_blank">L${Number(e.link_id)}</a>`);
       return parts.join(" · ") || "–";
     }
 

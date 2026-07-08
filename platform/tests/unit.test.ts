@@ -5,7 +5,7 @@
 import { describe, expect, it } from "vitest";
 import { sanitizeUrl, validateUrl } from "../functions/_lib/util";
 import { blockedStubUrl, displayTitle, inspectSummary, isBlockedStub } from "../functions/_lib/summaries";
-import { renderSummaryPage, type LinkRow, type SummaryRow } from "../functions/_lib/summary_page";
+import { renderLinkPage, type LinkRow, type SummaryRow } from "../functions/_lib/summary_page";
 import { tokensFromUsage } from "../worker/src/core";
 
 describe("sanitizeUrl (mirrors scripts/check_link.py)", () => {
@@ -58,7 +58,7 @@ describe("summary classification", () => {
   });
 });
 
-describe("renderSummaryPage (#173 detail page)", () => {
+describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
   const mkSummary = (over: Partial<SummaryRow> = {}): SummaryRow => ({
     id: "042",
     journal_date: null,
@@ -88,6 +88,7 @@ describe("renderSummaryPage (#173 detail page)", () => {
     note: null,
     status: "summarized",
     error: null,
+    summary_id: "042",
     submitted_at: "2026-07-06T00:00:00Z",
     processed_at: "2026-07-06T00:01:00Z",
     fetch_ms: 500,
@@ -96,33 +97,39 @@ describe("renderSummaryPage (#173 detail page)", () => {
     tokens_out: 800,
   };
 
-  it("renders content with all user text HTML-escaped", () => {
-    const html = renderSummaryPage(mkSummary(), link);
+  it("summarized: renders content with all user text HTML-escaped, shows both ids", () => {
+    const html = renderLinkPage(link, mkSummary());
     expect(html).toContain("SECRET-BODY-MARKER");
     expect(html).toContain("原題: Original &amp; &lt;Title&gt;");
     expect(html).toContain("&lt;script&gt;alert(1)&lt;/script&gt;");
     expect(html).not.toContain("<script>alert(1)</script>");
     expect(html).toContain("&lt;b&gt;xss&lt;/b&gt;");
     expect(html).toContain("re-summarize"); // summarized link → re-summarize action
-    expect(html).toContain("L7");
+    expect(html).toContain("L7"); // primary key…
+    expect(html).toContain("NNN 042"); // …and the editorial number stays visible
+    expect(html).toContain('"summaryId":"042"'); // events merged with the NNN history
   });
 
-  it("dismissed summaries hide the body but keep metadata + re-open", () => {
-    const html = renderSummaryPage(mkSummary({ status: "dismissed" }), { ...link, status: "dismissed" });
+  it("dismissed: hides the body but keeps metadata + re-open", () => {
+    const html = renderLinkPage({ ...link, status: "dismissed" }, mkSummary({ status: "dismissed" }));
     expect(html).not.toContain("SECRET-BODY-MARKER");
     expect(html).toContain("hidden while dismissed");
     expect(html).toContain("re-open");
     expect(html).not.toContain("re-summarize");
-    expect(html).toContain("Summary 042");
+    expect(html).toContain("L7");
   });
 
-  it("blocked stubs render as escaped raw text; no link row → no actions", () => {
-    const html = renderSummaryPage(
-      mkSummary({ status: "blocked", content: "BLOCKED: paywall <hit>\n\n- URL: https://e.com/a\n" }),
+  it("blocked, no NNN: shows the escaped reason, retry, and no content section", () => {
+    const html = renderLinkPage(
+      { ...link, status: "blocked", summary_id: null, error: "PDF detected <fail-closed>" },
       null,
     );
-    expect(html).toContain("BLOCKED: paywall &lt;hit&gt;");
-    expect(html).toContain("Actions unavailable");
+    expect(html).toContain("PDF detected &lt;fail-closed&gt;");
+    expect(html).not.toContain("<fail-closed>");
+    expect(html).toContain("no NNN allocated");
+    expect(html).not.toContain("Scores"); // no content section rendered
+    expect(html).toContain("retry");
+    expect(html).toContain('"summaryId":null'); // events filtered by link_id only
   });
 });
 

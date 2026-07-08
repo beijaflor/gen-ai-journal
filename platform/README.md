@@ -26,16 +26,21 @@ functions/            Pages Functions = the HTTP API
   api/cycle.ts        GET registry state, POST rollover (seed counter per #165 rule)
   api/pipeline.ts     joined operational view for the console
   api/events.ts       GET audit trail: ?limit= (≤200) &event= &summary_id= &link_id=
-  admin/summaries/    GET /admin/summaries/:id — server-rendered summary detail
-                      page (#173): content, link + run metrics, actions
-                      (dismiss / re-open / re-summarize), per-run event log
-  _lib/summary_page.ts  pure HTML renderer for the detail page (unit-tested)
+  admin/links/        GET /admin/links/:id — server-rendered detail page (#173),
+                      keyed by link id so EVERY run — blocked/failed included —
+                      is inspectable: status, content (when summarized), run
+                      metrics, actions (dismiss / re-open / retry / re-summarize),
+                      per-run event log
+  admin/summaries/    GET /admin/summaries/:NNN → 302 to the latest link's
+                      /admin/links/:id (raw JSON stays at /api/summaries/:NNN)
+  _lib/summary_page.ts  pure HTML renderer for the link detail page (unit-tested)
 public/               static, Access-protected where sensitive
   submit/ inbox/      link intake UI + bookmarklet (+ latest-events panel)
   admin/pipeline/     operations console: states, errors, metrics, retry, rollover
   admin/logs/         events log: full audit trail, filterable, auto-refresh
-                      Lists are read-mostly (#173): NNN links navigate to the
-                      detail page; only retry-on-blocked stays on the console
+                      Lists are read-mostly (#173): L<n> tokens navigate to the
+                      link detail page (NNN stays as text); only retry-on-blocked
+                      stays on the console
 worker/               companion Worker "gen-ai-journal-pipeline"
   src/index.ts        SummarizerDO: alarm-driven queue (debounce 20s, serial,
                       stale-claim recovery, infra-retry via alarm backoff)

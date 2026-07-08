@@ -17,7 +17,8 @@
     li { border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; }
     li .u a { color: #1f4e79; word-break: break-all; text-decoration-thickness: 1px; }
     li .meta { font-size: 12.5px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    li .meta a.nnn { color: var(--accent); font-weight: 600; }
+    li .meta .nnn { color: var(--accent); font-weight: 600; }
+    li .meta a.lid { color: #1f4e79; font-weight: 600; }
     .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; }
     .pill.new { background: #e7f2ea; color: #22633c; }
     .pill.consumed { background: #e8eef5; color: #33567a; }
@@ -88,17 +89,21 @@
         const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status === "new" ? "generating" : l.status;
         meta.appendChild(pill);
         if (l.summary_id) {
-          // Read-mostly list (#173): actions live on the summary detail page.
-          const nnn = document.createElement("a");
+          const nnn = document.createElement("span");
           nnn.className = "nnn";
-          nnn.href = "/admin/summaries/" + encodeURIComponent(l.summary_id);
           nnn.textContent = "NNN " + l.summary_id;
-          nnn.title = "summary detail: content, actions, run log";
           meta.appendChild(nnn);
         }
-        const t = document.createElement("span"); t.textContent = (l.submitted_at || "").replace("T", " ").slice(0, 16) + "  ·  L" + l.id;
-        t.title = "L" + l.id + " = link id used as subject in /admin/logs";
+        const t = document.createElement("span"); t.textContent = (l.submitted_at || "").replace("T", " ").slice(0, 16);
         meta.appendChild(t);
+        // Read-mostly list (#173): actions live on the link detail page —
+        // every submission has one, blocked/failed runs included.
+        const lid = document.createElement("a");
+        lid.className = "lid";
+        lid.href = "/admin/links/" + l.id;
+        lid.textContent = "L" + l.id;
+        lid.title = "link detail: status, content, actions, run log";
+        meta.appendChild(lid);
         li.appendChild(meta);
         list.appendChild(li);
       }
@@ -120,14 +125,14 @@
         actor.appendChild(pill);
         const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
         const subj = document.createElement("td"); subj.className = "subj";
-        if (e.summary_id) {
+        if (e.summary_id) subj.appendChild(document.createTextNode("NNN " + e.summary_id + (e.link_id != null ? " · " : "")));
+        if (e.link_id != null) {
           const a = document.createElement("a");
-          a.href = "/admin/summaries/" + encodeURIComponent(e.summary_id);
-          a.textContent = "NNN " + e.summary_id;
+          a.href = "/admin/links/" + Number(e.link_id);
+          a.textContent = "L" + Number(e.link_id);
           subj.appendChild(a);
-          if (e.link_id != null) subj.appendChild(document.createTextNode(" · L" + Number(e.link_id)));
-        } else {
-          subj.textContent = e.link_id != null ? "L" + Number(e.link_id) : "–";
+        } else if (!e.summary_id) {
+          subj.textContent = "–";
         }
         tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(subj);
         rows.appendChild(tr);

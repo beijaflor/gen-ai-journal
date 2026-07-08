@@ -137,7 +137,8 @@ platform/
     api/cycle.ts               registry state · rollover
     api/pipeline.ts            console feed (joined view)
     api/events.ts              audit query
-    admin/summaries/[id].ts    server-rendered detail page (#173)
+    admin/links/[id].ts        server-rendered detail page (#173), keyed by link id
+    admin/summaries/[id].ts    NNN → 302 redirect to /admin/links/<id>
   public/                      submit/ inbox/ admin/pipeline/ admin/logs/  (static)
   worker/
     wrangler.jsonc             Worker config: D1 + AI + DO binding
@@ -186,11 +187,15 @@ no active cycle.
   successful summarization**, **reused** on re-summarize, **stays spent** on
   dismissal (gaps are honest). Used in filenames, `sources.md`, site URLs
   `/journals/<date>/<NNN>/`, and `/api/summaries/<NNN>`. **This is the only
-  number shown in the UI.**
+  number with editorial meaning in the UI.**
 - **link id** (`links.id`, shown discreetly as `L<n>`) — a technical row id.
   Assigned at submission, counts everything ever (incl. dismissed/blocked/tests),
-  never resets. Its only job: a stable target for actions (`PATCH /api/links/7`)
-  and the subject key in `/admin/logs`. **Zero editorial meaning.**
+  never resets. Its only job: a stable target for actions (`PATCH /api/links/7`),
+  the subject key in `/admin/logs`, and the key of the admin detail page
+  (`/admin/links/<id>`) — keyed by link id for process observability, so
+  blocked/failed runs that never earned an NNN are inspectable too
+  (`/admin/summaries/<NNN>` just redirects; NNN remains the editorial number).
+  **Zero editorial meaning.**
 
 The registry (`settings` table: `current_journal_date`, `next_summary_id`)
 makes the cloud the ID authority. `POST /api/cycle` rolls over and seeds the
