@@ -5,7 +5,7 @@
 - [x] Human review and refinement
 - [x] Theme introductions drafted
 - [x] Article-to-theme mapping complete
-- [x] APPROVED - Ready for STEP_04 curation
+- [x] APPROVED - Ready for STEP_04 curation (Revision Round 1: +Theme 8 Cloudflare)
 
 ---
 
@@ -124,6 +124,22 @@ AIの全面的な浸透に対する、批判と人間中心への揺り戻しの
 
 ---
 
+### Theme 8: Cloudflare Monetization Gateway・x402・エージェント型インターネットが築くWebコンテンツのマネタイズ基盤
+
+**Articles (IDs):** 225, 226, 228
+
+**Theme Introduction:**
+AIエージェントがWebトラフィックの主体となる時代に向け、Cloudflareがマネタイズ基盤を相次いで打ち出した。HTTP 402とステーブルコインを用いてリクエスト単位で即時課金する「Monetization Gateway（x402）」、コンテンツ制作者の権利保護と収益化を図る「Content Independence Day」以降のエコシステム、そしてAIボットを検索・エージェント・トレーニングに細分化して制御する新機能が、エージェント経済における新たな収益モデルを示している。
+
+**Editorial Notes:**
+- 225: HTTP 402とステーブルコインでリクエスト単位の即時課金を実現するMonetization Gateway（x402）（本テーマのリード）
+- 226: エージェント型インターネットに向けたコンテンツ収益化とパブリッシャー権利保護の取り組み
+- 228: AIボットを「検索・エージェント・トレーニング」に細分化して制御する新オプション
+
+*(Revision Round 1 — added post-approval at editor request. 227「Pay Per Use」は👎のため主journalには入れず annex/non-main に据え置き。)*
+
+---
+
 ## Highlight Draft ("今週のハイライト")
 
 **今週の主な話題:**
@@ -141,6 +157,7 @@ AIの全面的な浸透に対する、批判と人間中心への揺り戻しの
 2. ループ／ハーネスエンジニアリングの実践知としての定着とエンジニア役割変容
 3. 国産LLM・主権AI・AI資産化と、経営課題化するトークンマネジメント
 4. AIへの批判・人間中心の揺り戻しという対抗軸
+5. Cloudflareのx402/Monetization Gatewayが示すエージェント経済のマネタイズ基盤
 
 ---
 
@@ -168,17 +185,18 @@ AIの全面的な浸透に対する、批判と人間中心への揺り戻しの
 
 ## Theme Coverage Summary
 
-**Article Count by Theme (Planned):**
-- Theme 1 (Fable 5再公開): 4
-- Theme 2 (Claude Sonnet 5): 4
+**Article Count by Theme (Final, post-STEP_04 + Revision Round 1):**
+- Theme 1 (Fable 5再公開): 3
+- Theme 2 (Claude Sonnet 5): 3
 - Theme 3 (ループ／ハーネス): 4
 - Theme 4 (役割変容・キャリア): 4
 - Theme 5 (国産LLM・主権AI): 4
-- Theme 6 (トークンマネジメント): 4
+- Theme 6 (トークンマネジメント): 3
 - Theme 7 (AIへの抵抗・人間中心): 4
+- Theme 8 (Cloudflareマネタイズ基盤 — Round 1追加): 3
 
-**Total Planned for Main:** 28 articles (trim to 24–25 during review if desired — each theme's 4th article is the most droppable: T1 245, T2 148, T3 079, T4 121, T5 213, T6 133, T7 269)
-**Remaining for Annex:** ~249 (Supabase-flagged pool = 53 candidates; final annex selection in STEP_05)
+**Total for Main:** 28 articles across 8 themes
+**Remaining for Annex/Non-main:** ~249 (Supabase-flagged pool narrowed in STEP_05; 225 moved from annex to main T8)
 
 **Notable strong clusters intentionally routed to annex (not main themes):**
 - AIセキュリティ／エージェント安全性: 009, 015, 052, 078, 090, 105, 111, 134, 168, 219, 275
@@ -186,7 +204,7 @@ AIの全面的な浸透に対する、批判と人間中心への揺り戻しの
 - MCP・エージェント基盤／ツール: 022, 083, 131, 204, 229, 230, 232, 233, 248, 278
 - AIと社会・経済・雇用: 044, 062, 203, 241, 263, 271, 274
 - AIと情報の信頼性・メディア: 002, 007, 110, 142, 214, 243, 254, 255
-- Cloudflareのエージェント経済インフラ: 225, 226, 227, 228
+- Cloudflareのエージェント経済インフラ: 227（225/226/228はTheme 8へ昇格、227は👎で据え置き）
 - 国内企業実装事例（Theme外）: 024, 035, 037, 116, 198, 209, 210
 
 ---
@@ -197,6 +215,7 @@ AIの全面的な浸透に対する、批判と人間中心への揺り戻しの
 **Reviewer:** (human)
 
 **Changes Made:**
+- Revision Round 1 (post-approval, editor request): added Theme 8 (Cloudflare Monetization Gateway/x402). 225 promoted from annex, 226/228 from non-main. Main 25→28.
 - (to be filled during review)
 
 **Approval:** ✅ APPROVED

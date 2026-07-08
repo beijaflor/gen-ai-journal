@@ -45,3 +45,9 @@
 - [ ] 262. https://righttointelligence.org/
 - [ ] 276. https://isaaclyman.com/blog/posts/coding-without-ai/
 - [ ] 269. https://whitep4nth3r.com/blog/goodbye-forever-probably/
+
+## Theme 8: Cloudflare Monetization Gateway・x402・エージェント型インターネットが築くWebコンテンツのマネタイズ基盤
+
+- [ ] 225. https://blog.cloudflare.com/monetization-gateway/
+- [ ] 226. https://blog.cloudflare.com/agentic-internet-bot-report/
+- [ ] 228. https://blog.cloudflare.com/content-independence-day-ai-options/
