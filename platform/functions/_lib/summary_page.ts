@@ -106,6 +106,9 @@ const STYLE = `
     .actions button { font-size: 13px; border: 1px solid var(--line); background: #fff; border-radius: 5px; padding: 5px 14px; cursor: pointer; }
     .actions button.warn { border-color: var(--accent); color: var(--accent); font-weight: 600; }
     .actions .hint { font-size: 12px; color: var(--muted); align-self: center; }
+    /* The log is the page's main content — unwrap it from the card look so
+       it doesn't read as just another parallel section. */
+    #log { border: none; border-radius: 0; background: transparent; padding: 6px 0 10px; }
     #log td.ts { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
     #log td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; }
     #log .pill.editor { background: #e8eef5; color: #33567a; }
