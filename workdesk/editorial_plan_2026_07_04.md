@@ -49,7 +49,7 @@ AnthropicはミドルティアモデルとしてClaude Sonnet 5を発表した�
 
 ---
 
-### Theme 3: Addy Osmani・Superpowers 6・Claude Code公式が定めるループ／ハーネスエンジニアリングの実践
+### Theme 3: ループエンジニアリング・ハーネスエンジニアリング・Claude Code公式ループが定める自律駆動の実践
 
 **Articles (IDs):** 166, 043, 079, 206
 

@@ -12,7 +12,7 @@
 - [ ] 182. https://zenn.dev/sora_lnv/articles/c5790370979240
 - [ ] 185. https://zenn.dev/uhyo/articles/react-profession-bench-9
 
-## Theme 3: Addy Osmani・Superpowers 6・Claude Code公式が定めるループ／ハーネスエンジニアリングの実践
+## Theme 3: ループエンジニアリング・ハーネスエンジニアリング・Claude Code公式ループが定める自律駆動の実践
 
 - [ ] 166. https://asixiv.org/pdf/curated/2606.00001
 - [ ] 043. https://drive.google.com/file/d/1qzKI4DKnyHRpXK1J3ATPqwaqLc0iNu-M/view
