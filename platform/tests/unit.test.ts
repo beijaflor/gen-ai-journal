@@ -112,7 +112,7 @@ describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
 
   it("section order: result overview → log → content → link", () => {
     const html = renderLinkPage(link, mkSummary());
-    const result = html.indexOf('<section id="result">');
+    const result = html.indexOf('<section id="result"');
     const log = html.indexOf('<section id="log">');
     const content = html.indexOf("SECRET-BODY-MARKER");
     const linkSec = html.indexOf("<h2>Link</h2>");
@@ -121,6 +121,10 @@ describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
     expect(log).toBeLessThan(content); // log before summary content
     expect(content).toBeLessThan(linkSec); // link section last
     expect(html).toContain("last run"); // run metrics live in the overview now
+    const actions = html.indexOf('class="actions"');
+    expect(actions).toBeGreaterThan(result); // actions live inside the result…
+    expect(actions).toBeLessThan(log); // …section, not down in the link card
+    expect(html).toContain('id="result" class="st-summarized"'); // outcome tint hook
   });
 
   it("dismissed: hides the body but keeps metadata + re-open", () => {

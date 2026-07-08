@@ -93,6 +93,11 @@ const STYLE = `
     .pill.blocked { background: #fbe9e7; color: var(--bad); }
     .pill.dismissed { background: #f0f0ee; color: #888; }
     .notice { border: 1px dashed var(--line); border-radius: 6px; background: #faf9f6; color: var(--muted); padding: 14px 18px; font-size: 14px; margin-bottom: 16px; }
+    /* Result headline tinted by outcome (st-<link.status> on #result). */
+    #result.st-blocked .notice { border: 1px solid #efc4bd; background: #fbe9e7; color: var(--bad); }
+    #result.st-summarized .notice { border: 1px solid #bfd8c6; background: #e7f2ea; color: var(--ok); }
+    #result.st-new .notice, #result.st-queued .notice { border: 1px solid #ecd9b6; background: #fdf3e4; color: #8a5307; }
+    #result.st-dismissed .notice { border: 1px solid var(--line); background: #f0f0ee; color: #777; }
     pre.raw { background: #faf9f6; border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; font-size: 12.5px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
     table { border-collapse: collapse; width: 100%; font-size: 13px; }
     th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 5px 10px 5px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
@@ -226,8 +231,9 @@ function resultOverviewHtml(link: LinkRow, summary: SummaryRow | null): string {
     );
   }
 
-  return `<section id="result"><h2>Result</h2>
+  return `<section id="result" class="st-${esc(link.status)}"><h2>Result</h2>
     ${headline}${rows.length ? `\n    <table class="kv"><tbody>\n      ${rows.join("\n      ")}\n    </tbody></table>` : ""}
+    ${actionButtons(link)}
   </section>`;
 }
 
@@ -269,7 +275,6 @@ function linkSectionHtml(link: LinkRow): string {
       ${link.note ? `<tr><td>note</td><td>${esc(link.note)}</td></tr>` : ""}
       <tr><td>submitted</td><td>${fmtTs(link.submitted_at)}</td></tr>
     </tbody></table>
-    ${actionButtons(link)}
   </section>`;
 }
 
