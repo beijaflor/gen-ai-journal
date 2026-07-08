@@ -6,6 +6,7 @@ decided in #167), admin console (#161). The journal website is NOT hosted
 here yet — see the epic for later phases.
 
 Live: **https://gen-ai-journal.pages.dev** · Pipeline worker: `gen-ai-journal-pipeline`
+Staging (#177): **https://staging.gen-ai-journal.pages.dev** · worker `gen-ai-journal-pipeline-staging` · isolated D1 `gen-ai-journal-db-staging`
 
 ## Layout
 
@@ -52,7 +53,10 @@ npm run check          # tsc --noEmit (run before every deploy)
 npm test               # vitest unit tests
 npm run deploy         # Pages (functions + static)
 npm run deploy:worker  # pipeline worker (DO)
-wrangler d1 migrations apply gen-ai-journal-db --remote   # after adding migrations/NNNN_*.sql
+npm run deploy:staging         # staging Pages preview (#177)
+npm run deploy:worker:staging  # staging pipeline worker
+wrangler d1 migrations apply gen-ai-journal-db --remote                 # after adding migrations/NNNN_*.sql
+wrangler d1 migrations apply gen-ai-journal-db-staging --remote --env preview  # …and the staging mirror (#177)
 wrangler tail gen-ai-journal-pipeline                     # live structured run logs
 ```
 

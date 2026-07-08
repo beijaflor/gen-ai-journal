@@ -84,6 +84,38 @@ Access `POLICY_AUD`, `SUMMARIZE_MODEL`, char limits).
 **wrangler's OAuth token has NO Zero Trust scope** — the Access app must be
 configured in the dashboard (or with a separately-minted API token), not the CLI.
 
+### Staging environment (#177)
+
+A full staging mirror lives entirely in Cloudflare, isolated from production at
+the data plane (its own D1 — the hub). Compute is the Pages **`preview`**
+environment plus the Worker's **`staging`** wrangler environment; config is the
+two `env` blocks in the `wrangler.jsonc` files (`env.preview` on Pages,
+`env.staging` on the worker). All free tier.
+
+| Resource (staging) | Identifier |
+|---|---|
+| D1 database | `gen-ai-journal-db-staging` `8217e2ac-…` |
+| KV namespace | `REBUILD_THROTTLE_staging` `65760529…` |
+| Worker | `gen-ai-journal-pipeline-staging` (deploy: `--env staging`) |
+| Pages env | `preview` → staging.gen-ai-journal.pages.dev (deploy: `--branch staging`) |
+| Access application | **separate app**, own AUD `86817f76…`, walls the same paths on `staging.…` |
+
+- **The isolation seam is `staging Worker → staging D1`.** The `SummarizerDO`
+  writes through the worker's own `DB` binding, so the one thing that must never
+  leak is the worker's D1 id. The Pages `env.preview` DO binding therefore sets
+  `script_name: gen-ai-journal-pipeline-staging` — the staging UI enqueues into
+  the staging pipeline, never prod.
+- **`POLICY_AUD` differs per environment.** Staging has its own Access
+  application (the prod app's 5-destination limit forced the split), so
+  `env.preview.POLICY_AUD` = the staging app's AUD, verified in-function against
+  the staging-issued JWT. `TEAM_DOMAIN` stays the same (one Zero Trust team).
+- **Secrets are per-environment and NOT shared:** `GEMINI_API_KEY` +
+  `API_BEARER_TOKEN` on the worker `--env staging`; `API_BEARER_TOKEN` on the
+  Pages **Preview** scope. Keep the staging bearer separate from prod (mirror it
+  locally as `PLATFORM_API_TOKEN_STAGING` in `scripts/.env`).
+- Seed the staging cycle once after first deploy: `POST /api/cycle {date, next_id}`
+  (else every submission fails closed on "no active cycle").
+
 ---
 
 ## 4. Repository layout
@@ -229,10 +261,14 @@ npm run check          # tsc --noEmit (strict) — ALWAYS before deploy; esbuild
 npm test               # vitest unit tests (pure logic)
 npm run deploy         # Pages (functions + static)
 npm run deploy:worker  # pipeline Worker (DO)
+npm run deploy:staging         # Pages preview → staging.gen-ai-journal.pages.dev (#177)
+npm run deploy:worker:staging  # staging pipeline Worker (Worker env.staging)
 
-# schema change: add migrations/NNNN_name.sql, then BOTH:
+# schema change: add migrations/NNNN_name.sql, then apply to BOTH DBs (#177 —
+# migrations now fan out; the staging mirror uses the Pages env.preview binding):
 wrangler d1 migrations apply gen-ai-journal-db --local
 wrangler d1 migrations apply gen-ai-journal-db --remote
+wrangler d1 migrations apply gen-ai-journal-db-staging --remote --env preview
 
 # local dev of the whole stack (local D1 + .dev.vars bearer):
 wrangler pages dev --port 8788
@@ -265,6 +301,12 @@ deploy is an immutable snapshot; `--branch main` also makes it production.
   differently; only some honor `response_format`/`json_schema`.
 - **Access can't be scripted with wrangler's token** — dashboard or a scoped
   API token only.
+- **Pages secrets apply only to NEW deployments.** `wrangler pages secret put …
+  --env preview` updates the project store but does NOT reach the currently-live
+  deployment — a Function keeps seeing the old (or `undefined`) value until you
+  redeploy. A freshly-set staging `API_BEARER_TOKEN` 401'd every `/api/*` call
+  until `npm run deploy:staging` re-ran (#177). (Contrast Worker `secret put`,
+  which takes effect immediately.)
 - **Audit events outlive their subject** — deleting a link keeps its events by
   design; test/cleanup artifacts linger in `/admin/logs` (annotate test actions
   with `detail.note`).

@@ -5,7 +5,9 @@
     "check": "tsc --noEmit",
     "test": "vitest run",
     "deploy": "wrangler pages deploy ./public --project-name gen-ai-journal --branch main",
-    "deploy:worker": "cd worker && wrangler deploy"
+    "deploy:worker": "cd worker && wrangler deploy",
+    "deploy:staging": "wrangler pages deploy ./public --project-name gen-ai-journal --branch staging",
+    "deploy:worker:staging": "cd worker && wrangler deploy --env staging"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260620.0",
