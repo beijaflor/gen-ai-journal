@@ -25,6 +25,13 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
     return error("status must be one of: new, dismissed", 400);
   }
 
+  // Prior status decides which trigger event the log gets (retry vs
+  // re-summarize vs re-open) — RETURNING only yields post-update values.
+  const prior = await env.DB.prepare("SELECT status FROM links WHERE id = ?")
+    .bind(id)
+    .first<{ status: string }>();
+  if (!prior) return error("link not found", 404);
+
   const res = await env.DB.prepare(
     "UPDATE links SET status = ?, error = CASE WHEN ? = 'new' THEN NULL ELSE error END WHERE id = ? RETURNING id, url, status, summary_id",
   )
@@ -69,9 +76,17 @@ export const onRequestPatch: PagesFunction<Env> = async ({ request, env, params,
         return json({ ...res, status: "summarized" });
       }
     }
+    // The trigger event names the editor's intent (#178): retry of a blocked
+    // link, re-summarize of a live one, or a plain re-open/requeue.
+    const event =
+      prior.status === "blocked"
+        ? "link.retried"
+        : prior.status === "summarized"
+          ? "link.resummarize_requested"
+          : "link.reopened";
     await logEvent(env.DB, {
       actor: "editor",
-      event: "link.reopened",
+      event,
       linkId: id,
       summaryId: res.summary_id,
       detail: { url: res.url, by: who, requeued: true },

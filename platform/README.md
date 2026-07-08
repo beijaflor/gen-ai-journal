@@ -87,8 +87,10 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
 - Every summarization-lifecycle interaction lands in the append-only `events`
-  table (#172): link submitted/dismissed/reopened, summary created/updated/
-  dismissed/restored, pipeline blocked (with metrics), cycle rolled. Each
+  table (#172): link submitted/dismissed/reopened/retried/resummarize_requested
+  (the `→ new` trigger is named by the editor's intent, from prior status),
+  summary created/updated/dismissed/restored, pipeline blocked (with metrics),
+  cycle rolled. Each
   pipeline run also emits step events (#178) — `pipeline.run_started` →
   `.fetched` → `.extracted` → `.model_requested` → `.model_responded` — all
   sharing a `run` marker (ISO ts captured at claim) in `detail` with the
