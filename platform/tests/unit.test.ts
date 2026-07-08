@@ -110,6 +110,14 @@ describe("renderLinkPage (#173 detail page, keyed by link id)", () => {
     expect(html).toContain('"summaryId":"042"'); // events merged with the NNN history
   });
 
+  it("summarization log section comes before content and link sections", () => {
+    const html = renderLinkPage(link, mkSummary());
+    const log = html.indexOf('<section id="log">');
+    expect(log).toBeGreaterThan(-1);
+    expect(log).toBeLessThan(html.indexOf("SECRET-BODY-MARKER")); // before summary content
+    expect(log).toBeLessThan(html.indexOf("<h2>Link</h2>")); // before link section
+  });
+
   it("dismissed: hides the body but keeps metadata + re-open", () => {
     const html = renderLinkPage({ ...link, status: "dismissed" }, mkSummary({ status: "dismissed" }));
     expect(html).not.toContain("SECRET-BODY-MARKER");

@@ -317,10 +317,6 @@ export function renderLinkPage(link: LinkRow, summary: SummaryRow | null): strin
   const body = `  <h1>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span>${summary ? ` <span class="nnn">NNN ${esc(summary.id)}</span>` : ""}</h1>
   <p class="sub">${sub}</p>
 
-${summary ? contentHtml(summary) : noSummaryHtml(link)}
-
-${linkSectionHtml(link)}
-
   <section id="log"><h2>Summarization log</h2>
     <div class="tbl-wrap"><table>
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>detail</th></tr></thead>
@@ -328,6 +324,10 @@ ${linkSectionHtml(link)}
     </table></div>
     <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this link.</div>
   </section>
+
+${summary ? contentHtml(summary) : noSummaryHtml(link)}
+
+${linkSectionHtml(link)}
 
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/admin/logs">events log</a><a href="/submit">submit</a></nav>
 
