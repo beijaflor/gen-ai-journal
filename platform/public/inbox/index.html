@@ -14,7 +14,8 @@
     .filters button { border: 1px solid var(--line); background: #fff; border-radius: 20px; padding: 4px 14px; font-size: 13px; cursor: pointer; }
     .filters button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
     ul { list-style: none; padding: 0; margin: 0; }
-    li { border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; }
+    li { border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; cursor: pointer; transition: border-color .12s, background .12s; }
+    li:hover { border-color: var(--accent); background: #fdfaf6; }
     li .u a { color: #1f4e79; word-break: break-all; text-decoration-thickness: 1px; }
     li .meta { font-size: 12.5px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
     li .meta .nnn { color: var(--accent); font-weight: 600; }
@@ -80,6 +81,7 @@
       empty.hidden = data.count !== 0;
       for (const l of data.links) {
         const li = document.createElement("li");
+        li.dataset.href = "/admin/links/" + l.id; // whole card → detail page
         const u = document.createElement("div"); u.className = "u";
         const a = document.createElement("a"); a.href = l.url; a.textContent = l.url; a.target = "_blank"; a.rel = "noreferrer";
         u.appendChild(a); li.appendChild(u);
@@ -138,6 +140,19 @@
         rows.appendChild(tr);
       }
     }
+
+    // Whole card navigates to the link detail page; real anchors (the subject
+    // URL, the L<id> token) keep their own targets. Text selection doesn't
+    // navigate; ctrl/cmd-click opens the detail in a new tab.
+    list.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      const li = e.target.closest("li[data-href]");
+      if (!li) return;
+      const sel = window.getSelection();
+      if (sel && sel.toString()) return;
+      if (e.ctrlKey || e.metaKey) window.open(li.dataset.href, "_blank");
+      else location.href = li.dataset.href;
+    });
 
     document.getElementById("filters").addEventListener("click", (e) => {
       if (e.target.tagName !== "BUTTON") return;
