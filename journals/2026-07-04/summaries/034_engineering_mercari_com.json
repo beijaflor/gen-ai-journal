@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:16:38.124622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "修正PRを食べてレビュースキルが賢くなる：Claude Codeによる自己改善サイクル",
+    "url": "https://engineering.mercari.com/blog/entry/20260616-0f89ad4c7b/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "メルカリQAチームが開発した、Claude Codeを用いて修正PRから「レビューの見落とし」を自動分析し、レビュー基準を継続的に強化する自己改善型AIレビュー基盤の事例紹介。",
+    "summaryBody": "メルカリのQAチームは、Claude Codeのカスタムスキル機能を活用し、AIによるPRレビューの高度化と自己改善サイクルを実現しました。この取り組みでは、まず独自コマンド「/review-pr」を用いて、コードの正確性や後方互換性といった汎用的な観点と、プロジェクト固有の設計ルール（Extra観点）に基づいた自動レビューを実施します。さらに、不具合修正PRを分析する「/improve-review-pr」コマンドを導入。これにより、なぜ過去のレビューで見落としが発生したのかをAIが分析し、再発防止のための新たなチェック項目を自動で提案・スキル定義ファイル（SKILL.md）へ反映させます。GitHub ActionsとSlack通知を組み合わせ、人間が最終確認を行う「Human-in-the-Loop」形式で運用することで、形骸化しがちなレビュー基準を常に最新の状態に保ち、チーム全体の知見をAIへ蓄積し続ける仕組みを構築しています。",
+    "topics": [
+      "Claude Code",
+      "AIによるコードレビュー",
+      "QAエンジニアリング",
+      "ソフトウェア品質向上",
+      "エンジニアリングプロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

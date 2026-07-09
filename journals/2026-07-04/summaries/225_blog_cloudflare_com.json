@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:36:15.835132+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、あらゆるリソースの従量課金を実現する「Monetization Gateway」を発表 — x402プロトコルを採用",
+    "url": "https://blog.cloudflare.com/monetization-gateway/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、HTTP 402規格とステーブルコインを活用し、AIエージェント等によるWebリソース利用に対してリクエスト単位で即時課金できる新機能を発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントの台頭により従来の広告やサブスクリプションモデルが崩壊しつつある現状に対応するため、新たな収益化基盤「Monetization Gateway」を発表しました。このゲートウェイは、25社以上の業界リーダーと共同開発したオープンプロトコル「x402」を採用しており、HTTPステータスコード「402 Payment Required」を実用化するものです。\n\n主な特徴は以下の通りです：\n- **リクエスト単位の決済**: 特定のAPIパス、データセット、Webページへのアクセスに対し、1セント未満のマイクロペイメントを設定可能。\n- **ステーブルコインによる即時精算**: USDCやOpen USDなどのステーブルコインを使用し、1秒以内の高速決済と極めて低い手数料を実現。\n- **エッジでの検証**: Cloudflareのグローバルネットワーク（330都市以上）で決済検証とアクセス制御を行うため、オリジンサーバーに負荷をかけずに運用が可能。\n- **ノーコード/低コード管理**: ダッシュボードやTerraformから、APIパスやHTTPメソッドごとの価格設定ルールを柔軟に記述できます。\n\nこれにより、AIクローラーや自律型エージェントが、アカウント作成やログインの手間なく、必要な分だけリソースを購入して利用できる「エージェント・ファースト」なインターネット経済の構築を目指しています。",
+    "topics": [
+      "Cloudflare",
+      "x402",
+      "マイクロペイメント",
+      "AIエージェント",
+      "Web収益化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Announcing the Monetization Gateway: charge for any resource behind Cloudflare via x402"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:38:09.719180+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codexにおける機密ファイル除外設定（.codexignore）の提案",
+    "url": "https://github.com/openai/codex/issues/2847",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが環境変数や秘密鍵などの機密情報を誤ってモデルに送信することを防ぐため、.gitignore形式の設定ファイル導入を求める提案。",
+    "summaryBody": "OpenAI Codexのリポジトリ（Issue #2847）にて、AIエージェントによるコンテキスト取得から特定のファイルやパスを確実に除外するためのメカニズムが提案されています。\n\n### 提案の背景と目的\n現在のAI開発ツールはリポジトリ内を広範囲に読み取りますが、`.env`、`.pem`、`.ssh/`といった機密情報を含むファイルが意図せずLLM（大規模言語モデル）へ送信されるセキュリティリスクがあります。既存の議論ではRust実装への移行に伴い同様の機能が期待されていましたが、2025年時点でも依然として不足していると指摘されています。\n\n### 主な内容\n- **.codexignoreの導入**: リポジトリ単位およびグローバルな設定により、読み取りを禁止するファイルを決定論的に制御する。\n- **セキュリティの確保**: 秘密鍵やトークン、個人情報の漏洩を開発者個人の注意やドキュメントに頼らず、ツールレベルで防止する。\n- **リソースの最適化**: 検索には必要だがモデルへの全送信は不要な`node_modules`等の大規模ディレクトリの管理。\n\nこの提案は、AIエージェントを実務に導入する上でのデータプライバシーと安全性を強化する重要な議論となっています。",
+    "topics": [
+      "AI Security",
+      "OpenAI Codex",
+      "Data Privacy",
+      "GitHub Copilot",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 85
+    },
+    "originalTitle": "A way to exclude sensitive files · Issue #2847 · openai/codex"
+  }
+}

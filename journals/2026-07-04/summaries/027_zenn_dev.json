@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:14:28.190730+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studioエージェントをバイブコーディングで開発：Claude Codeとハーネスを活用した新開発手法",
+    "url": "https://zenn.dev/upgradetech/articles/84fce7d81b9ed3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "2026年6月のCopilot Studio大幅アップデートを受け、Claude Codeと「ハーネス」と呼ばれる設計図を用いることで、自然言語とファイルベースでエージェントを開発する「バイブコーディング」の実践手法を解説しています。",
+    "summaryBody": "Microsoft Copilot Studioの2026年6月のアップデートにより、開発思想が従来のパイプライン型から、推論と観察を繰り返す「Agentic Loop型」へと進化しました。この変化を背景に、GUIによるポチポチ操作ではなく、Claude Code等のAIエージェントに実装を任せる「バイブコーディング」による開発手順を提案しています。具体的には、エクスポートしたソリューション（XMLやJSONファイル群）を解析し、AIがバイト単位で正しく再構築できるように「ハーネス」と呼ばれるMarkdown形式の設計図を作成。このハーネスを基にAIが構成ファイルを生成・ビルドし、再びPower Platformへインポートするサイクルを回すことで、再現性が高く、自然言語ベースでの迅速なエージェント開発が可能になることを実証しています。記事では、XMLエスケープ処理の注意点や、実機エクスポートとの差分比較による最適化プロセスなど、具体的なつまずきポイントも詳しく紹介されています。",
+    "topics": [
+      "Copilot Studio",
+      "Claude Code",
+      "バイブコーディング",
+      "Power Platform",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

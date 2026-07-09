@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:34:04.607670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5 プロンプティングガイド：新世代モデルの特性と最適化手法",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicの新世代モデルClaude Fable 5およびMythos 5の特性を最大限に引き出すための、エフォート管理、自律型エージェント設計、およびプロンプト最適化の包括的ガイド。",
+    "summaryBody": "Claude Fable 5は、数日〜数週間かかる複雑で曖昧なタスクを完結させる能力に特化した新世代モデルです。本ガイドでは、Opus 4.8以前とは異なる以下の最適化手法を解説しています。\n\n1. **エフォートレベルの活用**: 「effort」パラメータ（Low〜XHigh）が知能とコスト・速度のバランスを制御する主軸となります。高エフォート設定では、不必要なリファクタリングを避けるための明確な制約（「必要以上に複雑にしない」など）が有効です。\n2. **長期実行の制御**: 1つのリクエストが数分間続く場合があるため、クライアント側のタイムアウト調整や、ツール実行結果に基づいた進捗監査の指示が推奨されます。\n3. **プロンプトの簡略化**: 指示追従性が大幅に向上したため、冗長なルール定義よりも、簡潔な「結論から述べる」等の指示がより効果的です。\n4. **エージェント・スキャフォールディング**: 並列サブエージェントの活用や、Markdownファイルによる外部メモリ機能の実装が性能を最大化します。\n5. **安全・拒絶挙動**: 特定の推論抽出（thinkingブロックの強制出力）やバイオ・サイバーセキュリティ関連は拒絶対象となるため、フォールバック戦略が必要です。",
+    "topics": [
+      "Claude Fable 5",
+      "Anthropic",
+      "プロンプトエンジニアリング",
+      "LLMエージェント",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 98
+    },
+    "originalTitle": "Prompting Claude Fable 5"
+  }
+}

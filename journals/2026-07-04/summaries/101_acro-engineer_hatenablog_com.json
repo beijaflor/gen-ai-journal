@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:04:05.105105+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeモデルの「拡張思考」から「適応的思考」への移行",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/06/29/120000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude 4.6系で導入された「適応的思考（Adaptive Thinking）」について、従来の拡張思考との違いやeffortパラメータによる思考量・品質の変化を実証的に解説しています。",
+    "summaryBody": "Claude 4.6から導入された、モデルが自律的に推論量を調整する「適応的思考（Adaptive Thinking）」への移行を技術的に解説した記事です。従来の『人間がトークン上限を指定する方式』から、『モデルが難易度に応じて調整する方式』への変化に伴い、新たに導入されたeffortパラメータ（low/medium/high）の効果を検証しています。実験の結果、簡単なタスクでは思考をスキップし速度とコストを最適化できる一方、難易度の高いタスクやAIエージェントの運用では『medium』が最も安定したバランスを示すことが明らかになりました。開発者が実務でどのパラメータを選択すべきかの具体的な判断基準を提示しています。",
+    "topics": [
+      "Claude",
+      "Adaptive Thinking",
+      "Anthropic",
+      "Amazon Bedrock",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

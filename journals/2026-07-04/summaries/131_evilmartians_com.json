@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:38:48.558688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ほとんどのMCPサーバーは不要：自社製品に導入すべきか判断するためのフレームワーク",
+    "url": "https://evilmartians.com/chronicles/most-mcp-servers-dont-need-to-exist-your-case-might-be-an-exception",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicが提唱したMCP（Model Context Protocol）の過剰な流行に対し、APIやCLI、スキルとの使い分けや、真に導入が必要な条件を整理した技術指針。",
+    "summaryBody": "この記事は、急速に普及するMCP（Model Context Protocol）サーバーの多くが、実は不要な「時期尚早なインターフェース」であると批判的に分析しています。著者は、APIを「ソフトウェア契約」、CLIを「実行契約」、MCPを「エージェントアクセス契約」と定義し、まずは安定したAPIと構造化出力が可能なCLIを整備することを優先すべきだと主張しています。MCPを導入すべき最大の動機は「自社が制御できない複数のAIクライアント（Claude、ChatGPT、Cursor等）から共通の操作を求められること」であり、単一のアプリ内エージェントであれば既存の関数呼び出しで十分です。また、MCPの導入にはコンテキスト予算（トークン消費）の増大、運用コスト、セキュリティ、クライアントごとの機能実装の断片化といった「隠れたコスト」が伴うため、意図に基づいた抽象化（Intent-level operations）が重要であると結論付けています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AI Agents",
+      "API Design",
+      "LLM Tooling",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Most MCP servers don't need to exist. Your case might be an exception."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:03:31.731697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5 公開中の3日間で300万円を課金した話",
+    "url": "https://note.com/sho_okiyama/n/n4106c42c2b3d",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "2026年に期間限定公開されたClaude Fable 5を用い、3日間で300万円分のトークンを消費して直面した、物理的なハードウェア制約とエージェント並列稼働の圧倒的生産性に関する実践報告。",
+    "summaryBody": "本記事は、Anthropicの次世代モデル「Claude Fable 5」の公開期間中、数十体の自律エージェントを並列稼働させた筆者の極端な使用体験記である。MacBook ProをハブにMac miniやスパコンABCIを連携させた環境で、以下の課題と解決策が提示されている。\\n\\n1. **物理的限界への挑戦**: CPUが100℃を超える熱問題には外部への負荷分散と手動ファン制御で対応し、正規アダプタでも追いつかない電力不足は複数筐体への分散で解消。\\n2. **セキュリティと制御**: TailscaleによるSSH接続と一方向の通信制限により、自律性の高いエージェントを論理的・物理的に隔離。\\n3. **入出力の拡張**: 6面ディスプレイ、フットペダル、複数の骨伝導イヤホンを用いた「聴覚3系統インプット」など、人間側のボトルネックを物理環境への投資で補う。\\n\\n最終的に、この圧倒的な試行回数によってKaggleでのシルバーメダル獲得という実利を得ており、単なる「トークンの浪費（Tokenmaxxing）」ではなく、成果に直結させる「Tokenminimaxing」の重要性が説かれている。",
+    "topics": [
+      "Claude Fable 5",
+      "AIエージェント",
+      "Claude Code",
+      "GPU計算リソース",
+      "マルチモーダル環境"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 2,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

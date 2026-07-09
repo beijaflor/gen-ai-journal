@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:13:15.557648+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Spring Boot で Claude API 呼び出しを OpenTelemetry で計測する",
+    "url": "https://zenn.dev/propagandist/articles/0004-spring-boot-otel-claude-observability",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Spring Boot 3のMicrometer ObservationとOpenTelemetryを使用し、Claude API呼び出しのレイテンシ、トークン利用量、コストを可視化する実装手法を解説したガイドです。",
+    "summaryBody": "本記事は、Spring Boot 3.5とAnthropic公式Java SDKを用い、OpenTelemetryによる可観測性を導入する手順を詳説しています。LLM呼び出し特有の遅延やコスト、不透明な失敗理由を把握するため、Micrometer Observationを活用して呼び出しをSpanとして手動計装する方法を解説。具体的には、依存関係の設定、Spanへのトークン数や停止理由の属性付与、Prometheus用のカスタムメトリクス（トークン使用量と推定コスト）の記録、そしてJaegerやGrafanaを用いた可視化までを網羅しています。特に、SDK内部のHTTPクライアントが自動計装されない問題への対処や、高基数属性によるカーディナリティ爆発の防止など、実運用上の注意点も具体的に示されています。",
+    "topics": [
+      "Spring Boot",
+      "OpenTelemetry",
+      "Claude",
+      "Observability",
+      "Micrometer"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

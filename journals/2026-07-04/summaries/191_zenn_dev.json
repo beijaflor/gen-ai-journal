@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:27:40.568687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サバゲー動画をvideo-useで編集したらデスモンタージュができたので、自分でハイライト作成スキルを書いた話",
+    "url": "https://zenn.dev/tokium_dev/articles/airsoft-video-use-highlight",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "汎用AI動画編集ツールの失敗から学び、音響解析とドメイン知識を組み合わせてサバゲー専用のハイライト自動生成スキルを開発したエンジニアの記録。",
+    "summaryBody": "Claude Codeの動画編集ツール「video-use」をサバゲー動画に適用した際、STT（音声認識）のみに頼る仕様が災いし、被弾コールばかりを集めた「デスモンタージュ」が生成されるという課題に直面しました。これを解決するため、著者は音響解析ライブラリ「librosa」を用いた戦闘音の検知と、特定のヒットコールを抽出するロジックを組み合わせた独自スキルを開発しました。サバゲー特有の「ナイス」の両義性やカウントダウン音の除外、ハンドサインによるヒット数管理といったドメイン知識をPythonスクリプトに反映させることで、実用的なハイライト作成を実現しています。汎用的なAIツールに特定の文脈（ドメイン知識）を注入し、実用レベルまで引き上げる具体的なプロセスが解説されています。",
+    "topics": [
+      "Claude Code",
+      "video-use",
+      "サバゲー",
+      "音響解析",
+      "動画編集"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

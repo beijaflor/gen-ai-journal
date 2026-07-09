@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:31:18.263240+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeにおける「ループ」の始め方：エージェントによる自動化の設計ガイド",
+    "url": "https://claude.com/blog/getting-started-with-loops",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeチームが定義する、エージェントが目標達成まで作業を繰り返す「エージェント・ループ」の概念と、タスクに応じた4つのループパターンの使い分けを解説するガイド。",
+    "summaryBody": "AnthropicのClaude Codeチームが、AIエージェントによる自動化の鍵となる「ループ（繰り返し処理）」の設計手法を公開しました。ループは「停止条件が満たされるまで作業サイクルを繰り返すエージェント」と定義され、タスクの性質に応じて以下の4つの段階に分類されています。\n\n1. **ターンベース・ループ**: プロンプト毎に実行。手動確認を基本とするが、`SKILL.md`を用いて自己検証能力を強化できる。\n2. **ゴールベース・ループ (`/goal`)**: 成功基準（例：テスト合格、Lighthouseスコア改善）を指定し、達成まで自動で試行を繰り返す。\n3. **タイムベース・ループ (`/loop`, `/schedule`)**: 定期的な実行。PRのレビュー対応や外部システムの監視に適している。\n4. **プロアクティブ・ループ**: イベント駆動で自律的に動作。バグ報告のトリアージから修正、レビューまでを、人間を介さずに完結させる高度な自動化。\n\n効率的な運用のために、トークン消費を抑えるストップ条件の設定や、第2のエージェントによる客観的なコードレビューの導入など、品質維持とコスト管理を両立させるシステム設計の重要性が強調されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "エージェント・ループ",
+      "LLM開発手法"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Getting started with loops"
+  }
+}

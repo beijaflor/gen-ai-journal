@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:55:58.109354+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen 3.6 27B：ローカル開発における「スイートスポット」",
+    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Qwen 3.6 27Bは、高い推論能力とローカル環境での実行性を両立させ、コーディングや複雑な指示遵守において商用モデルに匹敵する性能を発揮する最適なローカルLLMである。",
+    "summaryBody": "Qwen 3.6 27Bは、ローカル環境で動作する汎用AIとして極めて高い完成度を誇ります。著者は、MoE（混合専門家）モデルの35B A3Bよりも、動作は重いもののより強力な高密度モデルである27Bを推奨しています。主な特徴として、制約付きライティングや複雑なコーディングタスク（pnpmを用いた六角形マインスイーパーの作成など）において、一度のプロンプトで実用的な成果を出せる高い知能を備えています。技術面ではllama.cpp、8-bit量子化（Q8_0）、およびマルチトークン予測（MTP）を組み合わせることで、MacBook Max M5やRTX 5090といったハードウェア上で30〜50 tokens/sという実用的な速度を実現します。ベンチマークスコアはGPT-5やClaude 4.5クラスに迫るとされ、プライバシー保護やコスト削減、将来的なモデルの非公開化リスクへの備えとして、開発者がローカルで所有・管理できる最高峰の選択肢となっています。",
+    "topics": [
+      "Qwen 3.6",
+      "ローカルLLM",
+      "llama.cpp",
+      "AIベンチマーク",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Qwen 3.6 27B is the sweet spot for local development - Quesma Blog"
+  }
+}

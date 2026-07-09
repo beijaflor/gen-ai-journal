@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:01:36.621574+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Snowflake CoCo（旧 Cortex Code）で見落とされがちな AI SQL コストと統制",
+    "url": "https://zenn.dev/finatext/articles/snowflake-coco-hidden-ai-cost",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SnowflakeのAIアシスタント「CoCo」が自動実行するSQLに含まれるAI関数のコストが、既存の監視や制限を回避して急増するリスクとその具体的な対策を解説。",
+    "summaryBody": "SnowflakeのAIコーディング支援機能「CoCo（旧Cortex Code）」を利用する際、エージェントが自動生成・実行するSQL内に`AI_COMPLETE`等のCortex AI関数が含まれると、CoCo専用の利用料ビューやResource Monitor、ユーザー別クレジット制限の対象外でコストが発生する「監視の死角」について詳述しています。\\n\\n主な内容は以下の通りです：\\n- **コストの構造**: CoCo本体の推論費用と、生成されたSQL実行によるAI関数費用が別経路（サーバーレスAI Services）で課金される仕組み。\\n- **監視の課題**: AI関数はウェアハウス経由に見えても実態は別管理のため、Resource Monitorの通知やCoCo独自の制限パラメータをすり抜ける。\\n- **対策ロードマップ**: 短期的には`CORTEX_USER`ロールの権限設計見直し（`PUBLIC`からの剥奪）、中期的には「AI Budget」と「Custom Actions」による自動停止、さらに今後GA予定の「Per User Quota」等の新機能活用を推奨しています。",
+    "topics": [
+      "Snowflake",
+      "Cortex AI",
+      "CoCo",
+      "コスト管理",
+      "データガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 93
+    }
+  }
+}

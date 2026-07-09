@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:40:40.684315+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデル学習をコードとして定義する (Model Training as Code) — Aleph AlphaによるAI開発パイプライン「Savanna」の導入",
+    "url": "https://aleph-alpha.com/en/blog/model-training-as-code/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Aleph Alphaは、AIモデル学習の全工程をコードで管理する「Model Training as Code (MTaC)」とそれを実現するプラットフォーム「Savanna」により、複雑な開発プロセスの自動化とチーム間連携の効率化を実現している。",
+    "summaryBody": "AIモデルの学習プロセスが複雑化・大規模化する中、Aleph Alphaは学習工程をソフトウェアプロジェクトとして管理する「Model Training as Code (MTaC)」という手法を提唱し、自社プラットフォーム「Savanna」を構築しました。手動管理によるヒューマンエラー、知見の散逸、チーム間の分断（事前学習と事後学習の断絶など）という課題に対し、Savannaはパイプライン全体を命令型コードで記述することで、以下の3つの価値を提供します。1. **Composability（構成可能性）**: 手順を型定義された関数として抽象化し、1クリックでエンドツーエンドの学習や評価を実行可能にする。2. **Consensus（合意形成）**: Gitによるバージョン管理を「真実のソース」とし、常にチームの最善のレシピを共有する。3. **Provenance（由来の追跡）**: コミット履歴や不変（Immutable）なアーティファクト管理により、どのデータとコードからどのモデルが生まれたかを厳密に特定。これにより、実験サイクルの高速化だけでなく、「多言語対応」などの特定の能力を専門チームが事前学習から事後学習まで一貫して改善できる体制を確立しました。",
+    "topics": [
+      "MLOps",
+      "AI Infrastructure",
+      "LLM Training",
+      "Aleph Alpha",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Model Training as Code — Aleph Alpha Blog"
+  }
+}

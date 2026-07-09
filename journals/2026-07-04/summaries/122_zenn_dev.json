@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:36:36.852154+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "46リポジトリに跨るコンテキストを、AIがセマンティックに検索できるようにした話（後編）",
+    "url": "https://zenn.dev/aircloset/articles/9b63579545582d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "静的解析によるコードグラフに、DB情報と境界ノードへのアノテーションを統合し、MCPサーバーを通じて大規模コードベースのセマンティック検索を実現した実践事例。",
+    "summaryBody": "本記事は、46個のリポジトリからなる大規模システムのコンテキストをAIが理解可能にするための「ナレッジグラフ統合」に関する詳解です。前編の静的解析（code-graph）に加え、以下の3つの施策で「入口問題（セマンティック検索の不在）」を解決しています。\n\n1. **3つのグラフの統合**: コード構造を示す「code-graph」、DB定義と意味を持つ「db-graph」、そして機能の意図を定義する「annotation graph (SPG)」を、`SAME_ENTITY`ブリッジで接合。APIパスの正規化やPage/Taskの突合アルゴリズムにより、自然言語からDBカラムまで一気通貫で辿れる構造を構築しました。\n2. **AIによる自動運用**: 現場エンジニアの負荷を避けるため、mainブランチとは別にAI専用のannotationブランチを運用。Webhookを起点にAIが自動でアノテーションの差分生成とレビューを行うパイプラインを確立しました。\n3. **MCPによるフロントドア化**: AIエージェントの唯一の入り口としてMCP（Model Context Protocol）サーバーを設置。データフロー追跡やビジネスルール検索などのツールを統合し、非エンジニアでも仕様を確認できる環境を実現しています。\n\n最後に、グラフの接合品質を維持するためのSLO（APIハンドラの接続率やDBエッジの完全性など）についても触れられており、実用性を重視した設計思想が示されています。",
+    "topics": [
+      "ナレッジグラフ",
+      "LLM",
+      "MCP (Model Context Protocol)",
+      "静的解析",
+      "セマンティック検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

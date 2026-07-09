@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:45:35.731084+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "依存関係からLLM生成コードを排除：git-annex開発者の100時間に及ぶ奮闘記",
+    "url": "https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "git-annexの開発者が、依存パッケージに含まれるLLM生成コードを特定・排除するために費やした多大な労力と、AI導入によるコード品質の低下への懸念を綴っている。",
+    "summaryBody": "git-annexの開発者であるJoey氏は、自身のプロジェクトの依存関係ツリー全体を調査し、LLM（大規模言語モデル）によって生成されたコードが含まれていないことを確認するために約100時間を費やした。この過程で、説明なく撤回された大規模な変更や、数万行に及ぶ支離滅裂なコミット、著作権侵害のリスクを孕んだAIプロンプトの利用など、深刻な品質管理の問題を多数発見した。氏は、コミュニティにおける安易なLLM利用が「10倍の生産性」を標榜する一方で、実際にはメンテナンスの負担を他者に押し付け、オープンソースの信頼性を損なっていると批判。現状のソフトウェア開発の動向に強い失望感を示し、自身のコミュニティへの関わり方についても再考を始めている。",
+    "topics": [
+      "git-annex",
+      "LLM",
+      "コード品質",
+      "オープンソース開発",
+      "サプライチェーン・セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 45,
+      "overall": 85
+    },
+    "originalTitle": "no LLM code in dependencies"
+  }
+}

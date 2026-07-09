@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:46:49.908810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Embedding 2で作るネイティブマルチモーダルRAG",
+    "url": "https://zenn.dev/aishift/articles/83708f752b3c87",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemini Embedding 2を用いて、テキスト・画像・音声・動画を単一の埋め込み空間で直接扱う「ネイティブマルチモーダルRAG」の構築手法と実践的なTipsを解説しています。",
+    "summaryBody": "従来のマルチモーダルRAGでは画像OCRや音声文字起こしなどの複雑な前処理が必要でしたが、Gemini Embedding 2の登場により、多様なモダリティを直接同一のベクトル空間へ写像することが可能になりました。本記事では、google-genai SDKとChromaDBを用いたシンプルなRAGの実装方法を紹介しています。PDF内の複雑な図表の検索や、動画内の特定シーンの特定など、従来手法では困難だったタスクが、単一の埋め込みモデルとLLM（Gemini 1.5 Flash）の組み合わせで簡潔に実現できることを示しています。さらに、検索精度を高めるためのタスク文字列の指定方法や、Matryoshka Representation Learningによる埋め込み次元の最適化など、コストとパフォーマンスを両立させるための技術的なTipsも網羅されています。",
+    "topics": [
+      "Gemini",
+      "RAG",
+      "マルチモーダル",
+      "埋め込みモデル",
+      "ベクトルデータベース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

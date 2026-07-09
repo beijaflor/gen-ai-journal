@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:46:07.699479+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeやLLMに動画を効率的に「見せる」ためのローカルツール「claude-real-video」",
+    "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "シーン検知と重複排除により、LLMが最小限のトークンで動画内容を深く理解できるように最適化されたフレーム抽出・文字起こしツール。",
+    "summaryBody": "claude-real-videoは、ClaudeやChatGPT、GeminiなどのLLMに動画内容を「見せる」ためのオープンソースツールです。従来の固定間隔でのフレーム抽出とは異なり、シーンの変化を検知して重要なフレームのみを抽出し、ピクセルベースの重複排除を行うことで、トークン消費を抑えつつ情報の欠落を防ぎます。\n\n主な特徴：\n- **高度なフレーム抽出**: シーン変更検知とスライディングウィンドウによる重複排除により、静止画の多いプレゼン動画などは1枚に、動きの激しい動画は詳細にキャプチャします。\n- **マルチモーダル対応**: 動画のフレーム抽出に加え、Whisperによる音声文字起こし、グリッド形式（コンタクトシート）での画像統合をサポート。\n- **ローカル・プライバシー重視**: すべての処理はローカルで実行され、LLMへは最適化されたデータのみを送信します。\n- **Claude Code統合**: Claude Codeの「スキル」としてインストール可能で、対話型AIに直接動画URLを渡して分析させることができます。\n- **目的別分析**: `--why`フラグで分析の意図を指定でき、特定の情報を探すなどのコンテキストをLLMに提供可能です。",
+    "topics": [
+      "LLM",
+      "Video Analysis",
+      "Claude",
+      "Multimodal AI",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - HUANGCHIHHUNGLeo/claude-real-video: Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT. · GitHub"
+  }
+}

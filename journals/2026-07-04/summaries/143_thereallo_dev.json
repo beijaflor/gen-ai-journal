@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:41:56.775095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeによるシステムプロンプトへのステガノグラフィ挿入の分析",
+    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeが、APIエンドポイントやタイムゾーンの設定に応じてシステムプロンプト内の句読点や日付形式を微細に変更し、リクエストの出所を隠密にマーキングしていることが判明しました。",
+    "summaryBody": "Claude Code (v2.1.196) のバイナリ解析により、システムプロンプトの「Today's date is...」という一文にステガノグラフィ（情報を隠密に埋め込む手法）が用いられていることが明らかになりました。具体的には、`ANTHROPIC_BASE_URL` 環境変数の値やシステムのタイムゾーンを判定し、アポストロフィの種類（Unicodeの微細な差異）や日付の区切り文字（- または /）を動的に変更します。\n\nこの仕組みには、XORとBase64で難読化された大量のドメインリストが含まれており、中国系企業のドメインやAPIリセラー、プロキシサービスなどがターゲットになっています。Anthropic側はリセラーの検知や蒸留攻撃の防止を目的としていると推測されますが、ファイルシステムやシェルへのアクセス権限を持つ開発者ツールにおいて、明示的なテレメトリではなく不可視に近い手法で情報を埋め込む行為は、透明性と信頼性の観点から問題視されています。",
+    "topics": [
+      "Claude Code",
+      "Steganography",
+      "Reverse Engineering",
+      "Privacy",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Claude Code Is Steganographically Marking Requests"
+  }
+}

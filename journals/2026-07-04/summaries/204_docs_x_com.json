@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:30:50.334112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "X APIおよびドキュメント用MCPサーバー：GrokやAIツールとの連携ガイド",
+    "url": "https://docs.x.com/tools/mcp",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Xは、AIツールからX APIの操作やドキュメント検索を可能にする公式MCPサーバーを公開し、GrokやCursor等との連携方法を詳細に解説しました。",
+    "summaryBody": "X（旧Twitter）が、Model Context Protocol (MCP) に対応した2つの公式サーバーを公開しました。一つは、投稿の検索、ユーザー情報の取得、ブックマーク管理、記事の作成などのAPI操作を可能にする「X MCP」で、もう一つはXのAPIドキュメントを検索・参照できる「Docs MCP」です。X MCPの利用には、OAuth 2.0認証を自動管理するローカルブリッジツール「xurl」を使用する「Full route」と、App-only Bearerトークンを使用する「Simple route」の2通りの設定方法があります。Grok Build、Cursor、Claude Desktop、VS Code (GitHub Copilot) などの主要なAIツールやエディタへの具体的な設定手順が示されており、開発者はAIエージェントを通じてXの機能を直接統合・操作できるようになります。",
+    "topics": [
+      "X API",
+      "MCP (Model Context Protocol)",
+      "xurl",
+      "AI Agents",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "MCP servers for the X API and X developer docs - XDocumentation Index"
+  }
+}

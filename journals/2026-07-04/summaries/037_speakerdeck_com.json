@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:17:29.873007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Superpowers解剖 - AI Agentに開発規律をインストールする",
+    "url": "https://speakerdeck.com/taigamikami/slides-859f3ec7-a00f-4812-8517-864ceaadd3b7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる雑なコード生成を防ぐため、設計、TDD、デバッグ、検証の各工程に「ゲート」を設けて厳格な開発規律を強制するフレームワーク「Superpowers」の解説。",
+    "summaryBody": "AIエージェントが「速く、それっぽく間違える」という根本的な課題に対し、LayerXが提唱する解決策「Superpowers」の内部構造を紐解くプレゼンテーション資料です。Superpowersは単なるスキルの集合体ではなく、エージェントの行動を制限・誘導する「開発規律エンジン」として機能します。\n\n具体的には以下の5つのゲートを実装し、エージェントの暴走を防ぎます：\n1. **Meta Gate**: 些細な作業でも規律（Skill）の適用を確認させる。\n2. **Design Gate**: 曖昧な状態での実装を禁止し、タスクを2〜5分単位の粒度に分解・合意させる。\n3. **Subagent Gate**: 実装、仕様レビュー、品質レビューの責務を分離し、自己正当化を防ぐ。\n4. **TDD Gate**: 失敗するテストを書く前のプロダクションコード生成を禁止する。\n5. **Debug Gate**: 根本原因の調査なしに「とりあえず修正」することを禁止する。\n\nStripe社の「Minions」の事例も引き合いに出し、強いAIコーディング環境の本質はプロンプトエンジニアリングではなく、人間が培ってきた「良い開発規律」をシステムとして強制することにあると結論付けています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェア開発規律",
+      "TDD",
+      "LayerX",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

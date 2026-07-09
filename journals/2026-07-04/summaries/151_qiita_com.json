@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:44:00.777584+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skillsの改善効果を評価するskill-creatorのブラインド比較",
+    "url": "https://qiita.com/licux/items/4dba7ad2a59c2f2d6769",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが提供するskill-creatorを用いて、AIエージェントスキルの改善前後をブラインド比較で評価し、定量的評価と定性的評価の乖離や改善の要点を検証した実証レポート。",
+    "summaryBody": "Anthropicの`anthropic/skills`リポジトリにある`skill-creator`を活用し、AIエージェントのスキル（web-research-report）の改善効果を「ブラインド比較」で検証するプロセスを詳しく解説した記事です。改善版では検索回数の制限やテンプレートの強制により効率化を試みましたが、結果として「改善前」の方がルーブリック評価で高スコアを獲得しました。これは、アサーション（必要条件）のパス率向上を優先した結果、情報の深さや構成の柔軟性が損なわれたためです。本記事は、スキル改善において「何を達成したいか」という人間の意図を反映させた評価指標（ルーブリック）の重要性を説いており、AIエージェント開発における評価の難しさと改善のヒントを提示しています。",
+    "topics": [
+      "Anthropic",
+      "Claude Code",
+      "Agent Skills",
+      "AIエージェント",
+      "LLM評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

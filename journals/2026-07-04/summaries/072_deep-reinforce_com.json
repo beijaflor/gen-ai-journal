@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:56:53.469037+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ornith-1.0: エージェント型コーディングのための自己足場構築（Self-Scaffolding）LLM",
+    "url": "https://deep-reinforce.com/ornith_1_0.html",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Ornith-1.0は、モデル自身がタスクに最適な推論プロセス（足場）を生成・最適化する自己改善型フレームワークにより、SWE-Bench等で世界最高水準のコーディング性能を実現したオープンソースLLM群です。",
+    "summaryBody": "DeepReinforceが発表した「Ornith-1.0」は、9Bから397Bまでの規模を展開するエージェント型コーディング特化のLLMファミリーです。最大の特徴は、人間が設計した固定の実行ハーネスではなく、モデル自身が解決策の生成を導く「足場（Scaffold）」自体を動的に生成・学習する「Self-Scaffolding」フレームワークを採用している点にあります。RLプロセスにおいて足場と解決策を共同で最適化することで、より高度な探索軌道の発見が可能になりました。自己生成による報酬ハッキングを防ぐため、固定の信頼境界、決定論的なモニター、および凍結済みLLMによる判定の3層防御を導入。フラッグシップの397BモデルはSWE-Bench Verifiedで82.4、Terminal-Bench 2.1で77.5を記録し、Claude Opus 4.7やDeepSeek-V4-Proを上回る性能を実証しています。また、エッジデバイス向けの9Bモデルも、数倍の規模を持つGemma 4-31Bに匹敵する極めて高い効率性を示しています。",
+    "topics": [
+      "LLM",
+      "AI Agent",
+      "Coding AI",
+      "Reinforcement Learning",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    },
+    "originalTitle": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding | DeepReinforce Blog | Jun. 2026"
+  }
+}

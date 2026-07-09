@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:12:55.620854+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strands Agentsでエージェントに渡せるツール3種類を試す",
+    "url": "https://qiita.com/sago33333/items/ee53236d7340fb77c5e4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWSのStrands Agentsにおいて、組み込みツール、カスタム関数、MCPサーバーの3種類をエージェントに実装し、機能を拡張する方法を解説したチュートリアル。",
+    "summaryBody": "本記事は、AWSのエージェント構築フレームワーク「Strands Agents」において、エージェントの機能を拡張する「ツール」の実装方法を解説しています。具体的には、(1)ライブラリで提供される既存の「Strands Agents Tools」（現在時刻の取得など）、(2)Pythonの関数にデコレーターを付与して自作する「カスタムツール」、(3)Model Context Protocol (MCP) を利用して外部サーバーと連携する「MCPツール」の3パターンを、実際のコード例を交えて紹介しています。デフォルトでは学習データ内の情報しか持たないAIエージェントが、ツールを通じてリアルタイムの情報や特定のビジネスロジック、AWSドキュメントなどの外部ソースにアクセスできるようになる過程をステップバイステップで学ぶことができます。",
+    "topics": [
+      "Strands Agents",
+      "AWS",
+      "AIエージェント",
+      "MCP",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

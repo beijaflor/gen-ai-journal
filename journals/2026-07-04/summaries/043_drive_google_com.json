@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:19:27.162138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループ・エンジニアリング：自律的に動作するAIエージェント・システム設計の指針",
+    "url": "https://drive.google.com/file/d/1qzKI4DKnyHRpXK1J3ATPqwaqLc0iNu-M/view",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プロンプト作成を人間からシステムへと移行させ、エージェントが自律的にタスクを反復実行する「ループ・エンジニアリング」の概念と実践フレームワークを解説する資料。",
+    "summaryBody": "本資料は、2026年に提唱された「ループ・エンジニアリング」という新しいエンジニアリング手法について詳説しています。これは、従来のプロンプト、コンテキスト、ハーネス（実行環境）といった階層の上に位置する第4の層であり、人間がエージェントを逐次操作するのではなく、エージェントが自らタスクを見つけ、実行し、検証する「ループ（循環構造）」を設計することに焦点を当てています。ループの構成要素として、「発見」「受け渡し」「検証」「永続化」「スケジューリング」の5つのステップが定義されており、特に「生成」と「評価」を分離することの重要性が強調されています。エージェント自身に自己採点させるのではなく、独立した評価エージェントを配置することで、精度の高い自律動作が可能になります。また、Stripe社などの実例を挙げつつ、この手法がもたらす「検証負債」や「認知的放棄」といったリスクについても警告しています。生成コストが劇的に下がる中で、いかに「判断」という希少資源をシステムに組み込むかが鍵となります。",
+    "topics": [
+      "AIエージェント",
+      "ループ・エンジニアリング",
+      "自律型システム",
+      "ソフトウェア開発",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Loop Engineering: The Anthropic Playbook for Designing Systems That Prompt Your Agents - A Field Study of Designing Loops That Run Themselves"
+  }
+}

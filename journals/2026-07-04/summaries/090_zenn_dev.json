@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:01:17.167735+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codexを安全に動かすためのmacOSでのローカルVM基盤",
+    "url": "https://zenn.dev/inventit/articles/secure-ai-agent-local-vm",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントにホストOSの全権限を与えず、Limaを用いたUbuntu VM上で実行環境とアクセス権限を隔離・管理するセキュアなmacOS向けローカル基盤の構築手法。",
+    "summaryBody": "Claude CodeやCodexといったAI Agentにホストマシンの全権限（SSH鍵、AWS認証、ホームディレクトリ等）を渡すリスクを回避するため、Lima（macOS向けVMマネージャ）を利用した隔離環境の構築方法を解説しています。主な特徴は、ホストとの共有を特定のワークスペースに限定すること、AWS認証情報やGit用のSSH鍵をVM内で独立させること、そして`mise`を用いて必要な開発ツール群のバージョンを管理することです。また、エージェントの作業ディレクトリを常に特定範囲に固定するラッパーを用意することで、誤操作によるシステム全体への影響を最小限に抑えています。これにより「Agentがどこまで触ってよいか」というインフラ面での境界線（セキュリティ境界）を明確に定義し、安全なAI開発環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Lima",
+      "AI Agent",
+      "macOS",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

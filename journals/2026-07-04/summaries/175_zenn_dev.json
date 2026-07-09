@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:23:35.568461+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "claude -p を分類器として使って、ファイルを中身で自動整理するツールを作った話",
+    "url": "https://zenn.dev/xtone/articles/copper-golem-claude-p",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Codeのヘッドレス実行を「純粋関数」として利用し、ファイルの中身をAIが判断して自動でフォルダ分けするmacOS向けOSSツール「copper-golem」の開発記。",
+    "summaryBody": "散らかりがちなダウンロードフォルダを整理するため、Claude Code（claude -p）をファイル分類器として活用するツール「copper-golem」を開発した記録です。最大の特徴は、AIを自律的なエージェントとしてではなく、入力を受け取り分類結果をJSONで返すだけの「純粋関数」として設計した点にあります。これにより、AIにファイル操作権限を与えない安全性の確保、ユニットテストの容易さ、プロンプトインジェクションへの耐性を実現しています。macOSの常駐プロセス（launchd）での動作、日本語ファイル名のUnicode正規化（NFD/NFC問題）への対応など、実用的なツールにするための技術的な工夫とハマりどころが詳しく解説されています。",
+    "topics": [
+      "Claude Code",
+      "ファイル整理",
+      "macOS",
+      "Python",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

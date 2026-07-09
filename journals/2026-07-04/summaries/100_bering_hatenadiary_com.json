@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:03:48.468401+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Lance / LanceDBとは何か",
+    "url": "https://bering.hatenadiary.com/entry/2026/06/28/105546",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチモーダルAI向けに設計された次世代カラムナフォーマット「Lance」と「LanceDB」の、ランダムアクセスに最適化された内部アーキテクチャと既存エコシステムとの統合について詳説した技術記事。",
+    "summaryBody": "本記事は、AI/MLワークロードにおいて従来のParquetやIcebergが抱えていた「ランダムアクセスの遅さ」と「列追加の困難さ」を解決する新世代のデータスタック「Lance」を深掘りしています。Lanceは、行グループを廃止したページベースの物理構造と『構造的エンコーディング』により、特定行を1-2回のI/Oで抽出するRETRIEVAL性能を実現しています。また、テーブルフォーマット層では、1つのフラグメント内に複数のデータファイルを保持できる設計により、既存データを書き換えずにベクトルembedding等の列を追記可能です。インデックス層ではIVF_PQやHNSW、さらには日本語形態素解析（Lindera）を用いた全文検索がネイティブ統合されています。記事後半では、Icebergとのファイル・カタログレベルでの統合についても触れており、分析とAIのデータサイロを解消する技術的展望が示されています。",
+    "topics": [
+      "Lance",
+      "LanceDB",
+      "Vector Database",
+      "Columnar Format",
+      "Apache Iceberg"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

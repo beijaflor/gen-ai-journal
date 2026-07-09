@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:44:17.594032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "英語の技術ニュースを追いきれないので、Claude Code で収集を自動化した",
+    "url": "https://qiita.com/sgrs38/items/3bf1954d3903db068c74",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「スキル」機能を駆使し、Laravel Newsの収集・翻訳・検証・記事化を全自動化する高度なAIエージェント・パイプラインの構築事例。",
+    "summaryBody": "Claude Codeを活用してLaravel Newsの更新を自動追跡し、日本語のアーカイブを生成する仕組みを解説した記事です。Sitemapを一次情報として更新差分を特定し、外部ツール（Defuddle）を用いた本文抽出、翻訳用エージェントと検証用エージェントの分離による精度向上、そしてPythonスクリプトによる最終的なリンク整合性チェックという、AIと従来のスクリプトを組み合わせた堅牢なパイプライン構成が特徴です。長時間実行時のAPI切断対策やタイムゾーンの境界問題、キュレーション基準の言語化など、実運用における泥臭い課題とその解決策も詳細に記述されており、技術ニュース購読の自動化における実践的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "Laravel",
+      "AIエージェント",
+      "自動化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

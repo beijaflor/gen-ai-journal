@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:00:36.625825+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントをUIにすることで、誰でも地理データを扱えるWebGISができた。",
+    "url": "https://zenn.dev/shimizu/articles/c1d19c39202eb3",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントへの自然言語指示を通じて、専門知識が必要な空間演算や地図描画をブラウザ上のDuckDB-WASMで自動実行する革新的なWebGIS。",
+    "summaryBody": "GISソフトウェアの操作の難しさを、Claude Messages APIを活用したAIエージェントによって解決するWebGISプロジェクトです。ユーザーはチャット形式で指示を出すだけで、フィルタリング、バッファ作成、空間結合、コロプレス図作成といった複雑な地理空間処理をAIに任せることができます。技術構成はVite、React、DuckDB-WASMをベースとしており、ブラウザ内で空間SQLを実行するアーキテクチャを採用しています。AIはツール利用（Tool Use）のループを通じて、メタデータの確認からSQL生成、エラー時の自律的な修正までを行い、大規模データに対してはR-treeインデックスを適用して高速化を図るなど、実用性の高い実装が特徴です。",
+    "topics": [
+      "GIS",
+      "AIエージェント",
+      "DuckDB-WASM",
+      "Claude API",
+      "位置情報分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

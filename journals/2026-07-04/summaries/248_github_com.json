@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:42:46.666717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenWiki: AIエージェント向けコードベース・ドキュメント作成CLI",
+    "url": "https://github.com/langchain-ai/openwiki",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "コードベースをスキャンし、AIエージェントが理解しやすい形式でドキュメントを自動生成・維持するためのCLIツール。",
+    "summaryBody": "OpenWikiは、LangChainチームが開発した、AIエージェントがソースコードを効率的に理解するためのドキュメントを自動生成・管理するCLIツールです。GitHub CopilotやClaude CodeなどのAIエージェントが、大規模なコードベースにおいてコンテキストを素早く把握できるように設計されています。具体的には、リポジトリを解析して `openwiki/` ディレクトリにドキュメントを作成し、`AGENTS.md` や `CLAUDE.md` を通じてエージェントへの指示を自動設定します。GitHub Actionsと統合することで、コードの変更に合わせて毎日ドキュメントを自動更新するワークフローも構築可能です。OpenAIやAnthropicに加え、OpenRouterなどの主要な推論プロバイダーをサポートしています。",
+    "topics": [
+      "AIエージェント",
+      "開発者ツール",
+      "ドキュメンテーション",
+      "LangChain",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - langchain-ai/openwiki: OpenWiki is a CLI that writes and maintains agent documentation for your codebase."
+  }
+}

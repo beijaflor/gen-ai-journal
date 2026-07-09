@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:47:41.349511+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMで「Pi」エージェントを動かす",
+    "url": "https://zenn.dev/fuwamoekissaten/articles/bb5f5364838ced",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コストとプライバシーを両立させるため、Dockerサンドボックス、SearXNG、Crawl4AIを組み合わせ、ローカルLLM上で安全に「Pi」コーディングエージェントを構築・運用する手法の詳説。",
+    "summaryBody": "商用エージェントの高額なサブスクリプション費用とデータプライバシーの懸念を解消するため、Qwen-3.6-35Bなどのローカルモデルを用いて「Pi（pi-coding-agent）」を稼働させるためのガイドです。技術的なハイライトは、単なる動作確認に留まらない徹底したセキュリティ設計にあります。Dockerを用いたサンドボックス化、UIDの分離、Linux Capabilitiesの剥奪、およびルートファイルシステムの読み取り専用化により、エージェントの暴走によるホスト環境への影響を最小限に抑えています。また、ローカルLLMの知識不足を補うため、SearXNG（メタ検索エンジン）とCrawl4AI（Markdown変換）を組み合わせたプライバシー重視の検索基盤を構築し、Pythonスクリプトを介してエージェントに「検索スキル」を付与する実装方法を解説しています。中スペックのGPU環境においても、MoEモデルの活用と適切な推論設定により、実用的な速度と高いツール呼び出し精度を実現できることを示しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "Docker",
+      "llama.cpp",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

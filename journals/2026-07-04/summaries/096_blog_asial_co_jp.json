@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:02:50.630889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを使えばデザイナーでもStorybookを作れるのかを検証する",
+    "url": "https://blog.asial.co.jp/6872/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "UIデザイナーがClaude CodeとFigma MCPを活用し、デザインからReactコンポーネントおよびStorybookの自動生成、双方向同期が可能かを実証したレポート。",
+    "summaryBody": "アシアル株式会社による、AIを活用したデザイナーとエンジニアの分業体制の刷新を試みる検証記事です。従来エンジニアが担当していたStorybook（UIカタログ）の作成を、デザイナーがAI（Claude Code）を用いて直接実行できるかを検証しています。\n\n検証では、FigmaとClaude CodeをMCP（Model Context Protocol）で連携させる手法を採用。FigmaのURLをAIに渡すだけで、デザイントークンを反映したReactコンポーネントとStoryファイルを自動生成することに成功しました。特筆すべきは、Figmaでの修正をコードに反映させるだけでなく、コード側の色の変更をFigmaのVariables（デザイントークン）へ書き戻す「双方向同期」も実現している点です。\n\n結論として、AIへの指示精度は人間の知識量（Reactやデザイントークンの理解）に依存するものの、実務で十分に活用可能なレベルであると評価されています。デザイナーがスタイルの最終調整まで責任を持つことで、開発のスピードとクオリティを大幅に向上させる可能性が示されました。",
+    "topics": [
+      "Storybook",
+      "Claude Code",
+      "Figma",
+      "MCP",
+      "UI/UX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

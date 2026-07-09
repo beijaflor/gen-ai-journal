@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:51:56.505619+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・メモリ：AIエージェントに永続的な継続性をもたらす設計と分類",
+    "url": "https://www.oreilly.com/radar/agent-memory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ステートレスなLLMを基盤とするAIエージェントに「記憶」を持たせるため、会話、セマンティック、手続きなど7つのメモリ層と、OracleのOAMPを用いた実装アプローチを解説しています。",
+    "summaryBody": "LLMは本質的にステートレスですが、実用的なAIエージェントには過去の対話を記憶し、ユーザーに適応する能力が不可欠です。本記事では、エージェント・メモリを「会話」「セマンティック（事実）」「エピソード（出来事）」「手続き（手法）」「エンティティ」「ワーキング」「サマリー」の7種類に分類し、それぞれの役割を詳述しています。単に履歴をプロンプトに追記する手法には、コンテキストウィンドウの制限やノイズの増加という限界があります。そこで、Oracle AI Database 26ai上の「Oracle AI Agent Memory Package (OAMP)」のような、ベクトル検索、SQL、JSONドキュメントを統合したデータベース駆動のメモリ管理を紹介しています。メモリの自動抽出やコンテキストカードによる要約、特定のスキーマ情報をメモリ化してエージェントに教え込む手法など、一発限りのプロンプト応答を超えて「永続的な共同作業者」としてエージェントを機能させるためのアーキテクチャが示されています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "エージェントメモリ",
+      "Oracle AI Database",
+      "ベクトルデータベース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "Agent Memory"
+  }
+}

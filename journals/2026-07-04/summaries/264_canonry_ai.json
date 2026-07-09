@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:46:57.932742+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI可視化ツールが提示する数値の欺瞞と、真のAI検索最適化（AEO）測定手法",
+    "url": "https://canonry.ai/blog/ai-visibility-tools-are-lying",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI検索でのブランド可視性を測定するツールの多くが、非決定的な回答や地理的要因を無視した「偽の精度」を提示していると批判し、分布に基づいた誠実な測定の必要性を説く。",
+    "summaryBody": "ソフトウェアエンジニアのArber Xhindoli氏による、新興のAI可視化ツール（AI Visibility Tools）に対する批判的な考察です。現在、多くのツールがChatGPTやClaude内での「シェア」や「順位」を算出していますが、著者はこれらの数値がスクレイピングによる単一の合成セッションや、不透明なスコアリングに基づいているため、信頼性に欠けると指摘しています。\n\n主な論点として、以下の4点を挙げています。\n1. **フロントエンド・スクレイピングの限界**: 特定のアカウントやIPに紐付いた1つの「ラボサンプル」に過ぎず、実際のユーザー体験を代表していない。\n2. **非決定的な挙動**: 同一プロンプトでも実行ごとに回答が変化するため、分布として捉える必要がある。\n3. **APIと消費者向けアプリの乖離**: 検索機能やメモリの有無により、APIの挙動はUI上の体験と異なる。\n4. **地理的要因の欠如**: 特にローカルSEOにおいて、場所によって回答が大きく変わる事実が無視されている。\n\nCanonry社では、APIを介した複数回の試行、地理コンテキストの明示、プロンプトセットの透明化により、AI可視化を「決定論的な順位」ではなく「確率的な分布」として扱う、より高コストかつ誠実なアプローチを提唱しています。",
+    "topics": [
+      "AI Search Visibility",
+      "AEO (Answer Engine Optimization)",
+      "Digital Marketing",
+      "LLM Measurement",
+      "Search Analytics"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Every AI Visibility Tool Is Lying to You"
+  }
+}

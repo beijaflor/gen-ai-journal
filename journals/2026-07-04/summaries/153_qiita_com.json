@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:44:40.036776+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeScriptではじめるAIエージェント開発",
+    "url": "https://qiita.com/otakumesi/items/414c2e1836df4d8e278d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TypeScript製フレームワーク「Pi SDK」を利用して、ClaudeなどのLLMを組み込んだ独自のCLI型AIエージェントを構築・拡張する手順を解説する。",
+    "summaryBody": "本記事は、TypeScript向けのエージェント開発ライブラリ「Pi SDK」を用いて、独自のAIエージェントを構築する手法を段階的に解説するチュートリアルです。主な内容は、createAgentSessionによるセッション管理、ストリーミング出力の実装、そしてread/ls/grepといった組み込みツールの有効化方法です。さらに、defineToolを使用したカスタムツールの追加や、プロジェクト固有の知識を定義する「スキル(SKILL.md)」の活用についても詳述されています。後半では、セッションの永続化やTUI（InteractiveMode）の導入、編集系ツールの安全性についても触れており、OpenClawなどの実プロダクトの設計思想を継承した、実践的かつ軽量なエージェント開発の基盤を学べる内容となっています。",
+    "topics": [
+      "TypeScript",
+      "AIエージェント",
+      "Pi SDK",
+      "Claude",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

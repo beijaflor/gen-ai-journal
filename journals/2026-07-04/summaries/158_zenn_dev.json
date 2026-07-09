@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:46:07.113394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenTelemetry に reasoning.level 属性を追加しました",
+    "url": "https://zenn.dev/studist/articles/opentelemetry-genai-reasoning-level",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要LLMの推論制御パラメータの標準化に対応するため、OpenTelemetryのGenAI用セマンティックコンベンションに推論の深さを記録する新属性を追加した貢献の記録。",
+    "summaryBody": "### 概要\nOpenTelemetryのGenAI向け命名規則（Semantic Conventions）に、LLMリクエスト時の推論の深さを記録する属性 `gen_ai.request.reasoning.level` を追加した開発者による技術解説です。\n\n### 背景と必要性\nOpenAIの `reasoning.effort`、Geminiの `thinkingLevel`、Claudeの `effort` など、主要プロバイダーが「モデルがどれだけ深く考えるか」を制御する定性的なパラメータを導入しています。これらは従来のtemperature等とは直交する概念であり、コスト・レイテンシ・品質のトレードオフを制御する重要な要素ですが、OpenTelemetryの標準仕様にはリクエスト側の「要求レベル」を記録する項目が欠落していました。\n\n### コントリビュートでの学び\nPR作成の過程で、以下の設計思想が共有されています。\n- **拡張性**: 将来のトークンベース制御（budget）等の追加を見据え、`reasoning.level` という階層構造を採用。\n- **標準化の動向**: 各社が具体的なトークン数指定ではなく、「low/medium/high」といった抽象的な定性レベルへと収束しているトレンドを反映。\n- **オブザーバビリティの向上**: この属性により、事後のレイテンシ調査において「推論の深さ設定」による影響を明確に切り分け可能になります。",
+    "topics": [
+      "OpenTelemetry",
+      "GenAI",
+      "Observability",
+      "Semantic Conventions",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:22:33.335087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のコンテキスト管理とトークン消費を抑える運用方法",
+    "url": "https://qiita.com/Yasushi-Mo/items/0071f71ba102d2125c13",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの運用において、コンテキストの肥大化によるコスト増と品質低下を防ぐための具体的な管理術や設定の最適化手法を解説したガイド。",
+    "summaryBody": "Claude Codeを利用する際、全会話履歴や読み込んだファイルが「コンテキスト」として積み上がり、毎ターン再課金される仕様への対策をまとめた記事です。主な戦略として以下の6点が挙げられています。1. タスクに応じてSonnetやOpus等のモデルを使い分け、`/effort`で思考レベルを調整すること。2. 5分間のプロンプトキャッシュを意識しつつ、`/clear`や`/compact`で履歴を積極的に整理すること。3. LinterやCLI（gh, grep等）で情報を絞り込んでからAIに渡すこと。4. 重い調査はサブエージェントに委任してメインの文脈を汚さないこと。5. プランモードを活用し、実装前の手戻りを防ぐこと。6. `CLAUDE.md`を200行以下に保ち、ディレクトリ固有のルール（paths設定）やスキル機能を活用して、起動時の固定オーバーヘッドを削減すること。これらはコスト削減だけでなく、指示忘れやミス（Context Rot）を防ぎ、出力品質を高く保つために不可欠な運用技術です。",
+    "topics": [
+      "Claude Code",
+      "生成AI",
+      "AI駆動開発",
+      "コスト最適化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

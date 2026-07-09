@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:58:35.925326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングは、AI時代のチームビルディングだった",
+    "url": "https://zenn.dev/ttaniguchi/articles/hands-on-harness-engineering",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを開発チームの一員として効果的に機能させるための実行基盤「ハーネスエンジニアリング」の定義と、その実践的な構築手法を解説する記事。",
+    "summaryBody": "本記事は、AIエージェントの制御・協働を支える概念「ハーネスエンジニアリング」を、2026年発表の論文（AI Harness Engineering）に基づき再定義し、その実践方法を解説しています。筆者は、ハーネスを単なる「AIの暴走を抑える手綱」ではなく、AIが迷わずに能力を発揮できるための「実行基盤（ランタイム）」であり、人間との役割分担を明確にする「チームビルディング」であると捉えています。\n\n記事では、論文で提示された11の責務（タスク管理、コンテキストマネージャー、権限境界など）と、習熟度レベル（H0〜H3）を紹介。具体的な実践例として、Codexを活用した開発におけるAGENTS.mdによる役割定義、仕様書（Steering）と作業ログ（Feature）の分離、そして自動検査（エントロピー監査）の導入について詳しく述べています。AIを個人ツールとしてではなく、チームメイトとして迎えるための具体的なドキュメンテーションとワークフローの指針を示す内容です。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "チームビルディング",
+      "ソフトウェア開発手法",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

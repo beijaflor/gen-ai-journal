@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:56:11.498448+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マイクロエージェント：モデルAPI内部の協調動作でフロンティアモデルを凌駕する",
+    "url": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "vLLM Semantic Routerは、単一のAPIコールの背後で複数のモデルを協調させる「マイクロエージェント」機能を導入し、既存のフロンティアモデルを超える性能を実現します。",
+    "summaryBody": "vLLM Semantic Routerの新機能である「マイクロエージェント」は、ルーターを単なるモデル選択器から、推論層における「機能構築の制御プレーン」へと進化させます。ユーザーが`vllm-sr/auto`という単一のモデル名を呼び出すだけで、内部では「Looper（ルーパー）」と呼ばれる実行環境が、タスクの難易度やリスクに応じて最適な協調アルゴリズム（レシピ）を選択・実行します。主なループパターンには、安価なモデルから段階的にエスカレーションする『Confidence』、並列実行して集約する『Ratings』、複数の推論試行を合成する『ReMoM』、モデル間の不一致を分析する『Fusion』、役割ベースの『Workflows』があります。評価結果では、GPQA-DiamondやLiveCodeBenchにおいて、単体のGPT-5.5やGemini 3.1 Proを上回るスコアを記録しました。これにより、アプリケーション側に複雑なエージェントロジックを実装することなく、インフラ層での最適化によって高い推論品質とコスト効率の両立が可能になります。",
+    "topics": [
+      "vLLM",
+      "Agentic Routing",
+      "LLM Inference",
+      "Micro-agents",
+      "Model Serving"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Micro-Agent: Beat Frontier Models with Collaboration inside Model API"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:22:50.635876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークンをケチるな、設計しろ：GitHub Copilotを賢く使うコンテキスト戦略",
+    "url": "https://qiita.com/ochtum/items/d442ed23d24245b789a0",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotの精度向上とコスト最適化に向け、単なる文字数削減ではなく、情報の寿命や用途に応じた「コンテキストの階層設計」とツールの出力量制御の重要性を説く実践的ガイド。",
+    "summaryBody": "GitHub Copilotを高度に活用するための「コンテキスト設計」に焦点を当てた解説記事です。主な内容は以下の通りです。\n\n1. **コンテキストの分解と配置**: 常設ルールは`AGENTS.md`、特定作業の手順は`Agent Skills`、デザインシステムは`DESIGN.md`のように、情報の寿命（寿命が長いか一時的か）と適用範囲で配置を分けるべきです。\n2. **MCPとCLIの使い分け**: AIにツールを選ばせるならMCP（Model Context Protocol）、手順が固定ならCLIを活用します。いずれも、実行結果を全件返さず`limit`や`fields`で絞り込む「出力量の制御」がAIの判断ノイズを減らす鍵となります。\n3. **Prompt Cachingと圧縮**: 共通の接頭辞（prefix）をキャッシュする仕組みを理解しつつ、会話が長くなれば要約（圧縮）を行うことで、トークン消費と精度のバランスを取ります。\n4. **CDQRフレームワーク**: 自動化の導入判断として、Cost（コスト）、Delivery（速度）、Quality（品質）、Review（人間による確認の境界）の4軸で評価することを提唱しています。\n\n「トークンを削る」ことが目的ではなく、AIが正しい判断を下すための情報を「適切なタイミングと粒度で渡す」設計の重要性を強調しています。",
+    "topics": [
+      "GitHub Copilot",
+      "MCP (Model Context Protocol)",
+      "コンテキストエンジニアリング",
+      "生成AI",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

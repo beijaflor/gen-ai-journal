@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:07:08.039337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Tirith - モダンなスタックのためのターミナル・セキュリティツール",
+    "url": "https://tirith.sh/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ターミナルコマンドやAIエージェントの入力をリアルタイムで監視し、ホモグラフ攻撃や認証情報漏洩、悪意あるコード実行など200以上の脅威をミリ秒単位で検知・遮断するRust製ツール。",
+    "summaryBody": "Tirithは、現代の開発環境やAIエージェントが直面するターミナル上の脅威から保護するためのセキュリティツールです。ユーザーやAIがターミナルに貼り付ける、あるいは実行しようとするコマンドをミリ秒単位でインターセプトし、ホモグラフ攻撃（同形文字による偽装）、パイプを介したシェル実行（pipe-to-shell）、ANSIインジェクション、クレデンシャルの漏洩、データの外部流出など、29のカテゴリにわたる200以上の脅威ルールでチェックします。\n\n主な特徴は以下の通りです：\n- **AIエージェント保護**: MCP（Model Context Protocol）サーバーに対応し、CursorやClaude CodeなどのAIエージェントによる危険なコマンド実行や、プロンプトインジェクションによる設定汚染を防止します。\n- **サプライチェーン攻撃の防御**: 依存パッケージのインストール後に実行される悪意あるペイロード（メモリスクレイピングや権限昇格など）を、攻撃のキルチェーンの各段階で遮断します。\n- **超高速かつプライバシー重視**: すべての解析はローカルで実行され（ネットワーク通信なし）、1ms未満のレイテンシで動作するため、開発者の生産性を妨げません。\n- **広範な統合**: Bash, Zsh, Fishなどの主要シェルに加え、VS CodeやWindsurfなどのエディタ、CI/CD環境にも導入可能です。\n\n「ブラウザでは防げるが、ターミナルでは素通りしてしまう」攻撃を防ぐ、開発者とAI時代のための必須ツールといえます。",
+    "topics": [
+      "Terminal Security",
+      "AI Safety",
+      "Supply Chain Security",
+      "Rust",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Tirith — Terminal Security"
+  }
+}

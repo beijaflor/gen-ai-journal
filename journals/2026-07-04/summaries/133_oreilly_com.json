@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:39:18.559540+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Tokenmaxxing（トークン浪費）の終焉",
+    "url": "https://www.oreilly.com/radar/the-end-of-tokenmaxxing/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIプロバイダーの収益化シフトと、推論モデルやエージェントによるトークン消費の爆発的増加を受け、無制限にトークンを消費する時代から厳格なコスト管理と最適化の時代へと移行している。",
+    "summaryBody": "AI開発において、見かけ上の生産性のために大量のトークンを消費する「Tokenmaxxing」の習慣が終わりを迎えようとしています。背景には、GitHub Copilotが定額無制限からクレジット制へ移行したことに象徴される、プロバイダー側の「収益化」への転換があります。特に「推論モデル」の登場により内部的な思考プロセスに膨大なトークンが費やされるようになったほか、自律型エージェントがツールをループ利用することで、1つのタスクあたりのコストが数百倍に膨れ上がるケースが出ています。また、データセンターの電力供給制限といった物理的な制約も、安価なトークン提供の限界を早めています。これからの開発者には、オブザーバビリティ（可視化）ツールを用いたエージェントの挙動監視や、タスクの難易度に応じてOpenRouter等で安価なローカルモデルと高価なフロンティアモデルを使い分ける「トークン・ガバナンス」のスキルが不可欠になると分析されています。",
+    "topics": [
+      "AIコスト管理",
+      "トークン最適化",
+      "AIエージェント",
+      "推論モデル",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "The End of Tokenmaxxing"
+  }
+}

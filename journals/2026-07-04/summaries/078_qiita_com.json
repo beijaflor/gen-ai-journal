@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:58:21.353045+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハニーポット観測：探索対象となっているAI関連ツール・サービス",
+    "url": "https://qiita.com/melymmt/items/ff0db94a75b987bca81a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "三菱電機のハニーポット観測により、MLflow、LiteLLM、MCP関連設定など、AIツールやエージェントの管理インターフェースを狙った探索リクエストの急増と多様化が明らかになった。",
+    "summaryBody": "三菱電機のセキュリティ技術者が、クラウド上のハニーポットで観測したAI関連サービスへの探索リクエストを分析した報告です。観測の結果、MLflow（MLOps基盤）、LiteLLM、LM Studio、FlowiseなどのAI開発ツールや、AIエージェントのメタ情報を定義する「.well-known/mcp.json」や「ai-plugin.json」といったパスへのスキャンが断続的に行われていることが判明しました。特に2026年6月以降、Flowiseの既知の脆弱性（CVE-2026-41278）に関連するリクエストや、LiteLLMへの探索が新たに確認されており、攻撃者が標的とするAIスタックが急速に拡大しています。記事では、意図しないAPIの露出や設定不備が機密情報の漏洩につながるリスクを警告し、アクセス制御の徹底と定期的なメタデータディレクトリの点検を推奨しています。",
+    "topics": [
+      "AIセキュリティ",
+      "ハニーポット",
+      "MCP",
+      "MLOps",
+      "脆弱性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

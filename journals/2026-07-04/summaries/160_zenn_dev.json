@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:46:37.093327+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilot、Claude Code、Cursor の裏側の仕組みを比較分析：インデックス・ツール・コンテキスト窓の違い",
+    "url": "https://zenn.dev/sonicmoov/articles/63a6ae419db43a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要なAIコーディングアシスタント3種（GitHub Copilot, Claude Code, Cursor）の内部的なインデックス構築手法、利用ツール、コンテキストウィンドウの仕様を技術的視点から詳細に比較した解説記事です。",
+    "summaryBody": "この記事では、エンジニアが直感的に感じているAIツールの性能差を裏付ける「仕組み」について、3つの観点から詳解しています。\n\n1. **インデックス構築**: \n- **GitHub Copilot**はバックグラウンドで自動的にセマンティックインデックスを作成します。\n- **Claude Code**は事前のインデックス作成（RAG）を行わず、エージェントがリアルタイムでgrep等を実行する「Agentic Search」を採用。「Harness（CLAUDE.md等）」をヒントに探索効率を高めます。\n- **Cursor**は「Merkle tree（メルクルツリー）」を活用し、差分のみを同期することで大規模リポジトリでも高速かつ安全なインデックス更新を実現しています。\n\n2. **提供ツール**: \n各ツールともコードベースの検索・読み取り機能を備えていますが、Cursorはターミナル実行、ブラウザ閲覧、Git worktreeを利用した並行作業用ブランチの自動作成など、IDE一体型ならではの強力なエージェント機能を備えています。\n\n3. **コンテキストウィンドウ**: \nClaude 3.5 Sonnetベースの場合、いずれも最大100万トークン（1M）を目指していますが、Copilotは設定による思考レベルの調整、CursorはMax Modeによる拡張など、インターフェース側の制御に違いが見られます。\n\n「なんとなく」の感覚を、技術仕様に基づいたツール選定の基準へと昇華させる内容となっています。",
+    "topics": [
+      "GitHub Copilot",
+      "Claude Code",
+      "Cursor",
+      "AIエージェント",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:33:35.804200+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ctx: ローカルのコーディングエージェント履歴を検索するCLIツール",
+    "url": "https://github.com/ctxrs/ctx",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCursorなどのコーディングエージェントの過去の履歴をローカルのSQLiteにインデックスし、高速かつトークン効率の良い検索を可能にするRust製ツール。",
+    "summaryBody": "ctxは、開発者のマシン上に保存されている様々なコーディングエージェント（Claude Code, Cursor, Codex, GitHub Copilot CLIなど）のセッション履歴を、ローカルでインデックス化し検索可能にするオープンソースのCLIツールです。通常、エージェントのセッションは「使い捨て」になりがちで、過去の失敗した試行、設計判断、特定のファイルに対する修正の文脈などは失われてしまいます。ctxを使用すると、これらをSQLiteデータベースに保存し、現在のエージェントに「過去に似たエラーが起きたセッション」などの情報を正確に提供できます。Rust製で動作が高速なだけでなく、生のテキスト検索に比べてトークン消費を最大50倍効率化できる設計になっており、プライバシーを重視した完全ローカルなワークフローを実現します。",
+    "topics": [
+      "AI Coding Agent",
+      "Developer Tools",
+      "Rust",
+      "Local-first",
+      "SQLite"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - ctxrs/ctx: Search the coding agent history already on your machine"
+  }
+}

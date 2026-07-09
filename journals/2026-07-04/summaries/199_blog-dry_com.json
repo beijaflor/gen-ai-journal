@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:29:29.938015+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のターミナルマルチプレクサ「Herdr」を使う",
+    "url": "https://blog-dry.com/entry/2026/06/30/234346",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの並列稼働と状態監視に特化した、tmux互換の操作感を持つ次世代ターミナルマルチプレクサ「Herdr」の導入メリットと活用法を解説した記事です。",
+    "summaryBody": "AIエージェント（Claude CodeやOpen Code等）を複数並列で動かす開発スタイルに最適化されたターミナルマルチプレクサ「Herdr」を紹介しています。Herdrはtmuxに近い操作体系を持ちながら、サイドバーで各エージェントの動作状態（稼働中、フィードバック待ち、アイドル）をリアルタイムに可視化できるのが最大の特徴です。Git worktreeを活用したワークスペース管理や、Rustによるプラグイン拡張、さらにはエージェント同士が他のタブの状態を認識できる『Skill』機能など、AI時代の開発ワークフローを支える強力な機能を備えています。記事ではNeovimから特定の情報をエージェントに送信するカスタマイズ例や、自動セットアップツールの開発についても触れられており、既存のターミナル資産を活かしつつエージェントネイティブな環境へ移行したいユーザーにとって極めて有益な内容となっています。",
+    "topics": [
+      "Herdr",
+      "AIエージェント",
+      "ターミナルマルチプレクサ",
+      "tmux",
+      "開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:38:01.414023+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADK 2.0のリリース：AIエージェントの柔軟性と決定論的ワークフローの統合",
+    "url": "https://developers.googleblog.com/why-we-built-adk-20/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、AIエージェントの柔軟な推論能力と決定論的なコード実行の信頼性を組み合わせた「ADK 2.0」を発表し、本番環境でのAI運用におけるコストと精度の課題を解決します。",
+    "summaryBody": "Googleは、AIエージェントをプロトタイプから本番環境へ移行する際の信頼性・コスト・速度の課題を解決するため、「ADK 2.0 (Agent Development Kit)」をリリースしました。主な更新点は、決定論的な「ワークフロー（Workflows）」エンジンの導入です。従来のようにLLMがすべてのオーケストレーション（手順の決定）を行うのではなく、定義済みのビジネスロジック（有向グラフ）内で必要な箇所のみLLMを呼び出すハイブリッド構成が可能になりました。これにより、トークン消費量を約50%削減、レイテンシを約20%改善し、さらにプロンプトインジェクションやハルシネーションによる予期せぬ実行経路の逸脱を防止します。開発者は、ビジネスプロセスが固定されている部分は「ワークフロー」、曖昧な入力の解釈が必要な部分は「エージェント」という使い分けを行うことで、堅牢なAIアプリケーションを構築できます。",
+    "topics": [
+      "AI Agents",
+      "ADK 2.0",
+      "LLM Orchestration",
+      "Software Architecture",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 50,
+      "overall": 92
+    },
+    "originalTitle": "Why we built ADK 2.0"
+  }
+}

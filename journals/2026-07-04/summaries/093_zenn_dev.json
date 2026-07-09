@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:02:04.964125+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプト改善が何倍も楽になる、プロンプト改善の自動化も行える評価ツール「Opik」を試す",
+    "url": "https://zenn.dev/explaza/articles/e9c81b31fe00f7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMの出力評価だけでなく、GEPAアルゴリズムを用いてプロンプトを自動最適化できるプラットフォーム「Opik」の機能と活用ノウハウを紹介。",
+    "summaryBody": "LLM評価ツール「Opik」の検証レポートです。Opikは、Langfuse等と同様の採点・管理機能に加え、GEPA（Genetic-Pareto）という手法を用いたプロンプトの自動改善機能を備えている点が大きな特徴です。記事では「文章を意味で分類し、10文字以内の体言止めで命名する」タスクを題材に、コードによる評価（文字数チェック）とAIによる評価（G-Eval）の両面から検証を行っています。自動改善のプロセスでは、単なる試行錯誤ではなく失敗の理由をフィードバックとして取り込むGEPAの有効性を確認。文字数達成率が0%から100%に向上した事例を通じ、改善を成功させるには「数える項目はコードで評価し、文脈判断はAIで評価する」といった、評価指標と評価手法の適切な組み合わせが重要であると結論付けています。",
+    "topics": [
+      "Opik",
+      "LLM評価",
+      "プロンプトエンジニアリング",
+      "GEPA",
+      "自動最適化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

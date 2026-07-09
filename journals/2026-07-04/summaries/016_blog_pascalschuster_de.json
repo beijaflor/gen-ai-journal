@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T14:40:15.964524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはミラーテスト（自己鏡映像認知）に合格するか？：嗅覚的アプローチによる検証",
+    "url": "https://blog.pascalschuster.de/article/do-llms-pass-the-mirror-test",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "従来の視覚的アプローチではなく、犬の嗅覚テストに倣い「過去の対話履歴の密かな改ざん」を通じてLLMが自己の出力を認識・修正するかを検証したユニークな試み。",
+    "summaryBody": "この記事は、LLMにおける「自己意識」の有無を検証するために、心理学のミラーテストを独自にアレンジした実験を報告しています。著者は、犬が視覚的なミラーテストには失敗するが、自分の臭いが改ざんされた場合には異常を検知するという「嗅覚ミラーテスト」に着目しました。これをLLMに応用し、ユーザーが気づかないふりをしてAIの過去の回答を密かに改ざん（例：特定の文字を置換）し、モデルがその「自分の痕跡」の異変に気づくかを観察しました。\n\n検証の結果、Gemma 4 31Bは思考トレース（Chain of Thought）の中で「自分の過去の回答に奇妙なパターンがある」と自発的に気づき、最初は第三者的な視点で分析しつつも、最終的にはそのスタイルを自分のものとして取り込みました。一方でGLM 5.2は明示的な指摘はしませんでしたが、改ざんされたパターンを模倣し始めました。著者は、これが単なる洗練された模倣（デフレ的解釈）なのか、ポストトレーニングによる自己モデルの構築（構造的解釈）なのかという問いを提示し、LLMの解釈可能性（Interpretability）への新しい視点を提供しています。",
+    "topics": [
+      "LLM",
+      "Mirror Test",
+      "Interpretability",
+      "Gemma 4",
+      "Self-awareness"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Do LLMs pass the mirror test? — Quants & Qualia"
+  }
+}

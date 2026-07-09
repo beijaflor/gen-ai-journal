@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:15:54.534367+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードから仕様書を逆生成するWebアプリ「cc-rsg-web」を公開しました",
+    "url": "https://zenn.dev/daishiro/articles/cc-rsg-web-release",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "コードベースからAIと人間の対話を通じて仕様書を逆生成するWebツール「cc-rsg-web」が公開され、設計背景などの暗黙知をAIが引き出す協調型のアプローチが示されています。",
+    "summaryBody": "「cc-rsg-web」は、ソースコードから仕様書を自動生成するOSSツール「cc-rsg」をWeb化したアプリケーションです。単なるAIによる一括生成ではなく、AIがコードから読み取れない「設計判断の理由」や「非機能要件」などの暗黙知を人間との対話を通じて補完する「6フェーズの生成プロセス」を採用している点が特徴です。プロセスには、ゴール定義、偵察、計画、調査、検証、対話、納品が含まれ、特に人間がAIからの質問に答えるフェーズを設けることで、より正確で実用的なドキュメント作成を目指しています。実証実験では、約35万行のRedmineのソースコードを90分で解析し、Mermaid図やソースコードへの参照（REF）を含む13章構成の仕様書案を作成することに成功しています。手法についてはZenodoで学術プレプリントも公開されており、AIネイティブなドキュメント生成における人間の役割を再定義しています。",
+    "topics": [
+      "Claude Code",
+      "リバースエンジニアリング",
+      "仕様書自動生成",
+      "LLM",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

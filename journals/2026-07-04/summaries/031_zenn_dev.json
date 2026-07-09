@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:15:38.096819+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM 事後学習 (SFT / RLHF / DPO / RLVR / GRPO / 自己蒸留) を教師信号から眺める",
+    "url": "https://zenn.dev/shunk031/articles/llm-post-training-overview",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデルの事後学習手法について、SFTから最新のGRPOや自己蒸留までを「教師信号（学習データと目的関数）」の観点から体系的に整理・解説した技術記事。",
+    "summaryBody": "この記事では、LLMの挙動を調整する事後学習（Post-training）の多様な手法を、教師信号の形態に基づいて分類し解説しています。模範応答を用いるSFT、人間の選好を報酬化するPPO、報酬モデルを不要にしたDPOとその派生（IPO, ORPO, SimPO, KTO）、そしてDeepSeek-R1で注目された検証可能な報酬を用いるGRPOなど、各手法の目的関数と利点を数式を交えて整理。さらに、生成中の文脈で分布を合わせるオンポリシー蒸留（OPD）や自己蒸留（OPSD, SDPO）についても詳述しています。最終的に、手元にあるデータの種類や解決したい課題の単位（応答全体か、推論の特定のステップか）に応じた手法の使い分け指針を提示しており、エージェント構築やモデル改善のための実践的なロードマップとなっています。",
+    "topics": [
+      "LLM",
+      "事後学習",
+      "RLHF",
+      "DPO",
+      "GRPO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 96
+    }
+  }
+}

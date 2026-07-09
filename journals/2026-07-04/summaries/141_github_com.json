@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:41:27.375446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの会話履歴が30日後にデフォルトで自動削除される不具合",
+    "url": "https://github.com/anthropics/claude-code/issues/62476",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Claude Codeにおいて、プロジェクトの会話履歴（.jsonl）がデフォルト設定により30日後に警告なく自動削除される仕様が報告され、回避策が公開されています。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」において、会話履歴の保存期間を規定する`cleanupPeriodDays`がデフォルトで30日に設定されており、起動時に古い`.jsonl`ファイルが通知なく恒久的に削除される問題が指摘されました。この仕様により、長期プロジェクトにおける設計の議論や推論の履歴が失われるリスクがあります。現在、`/config`コマンドでもこの設定は表示されず、初回実行時の説明もありません。回避策として、`~/.claude/settings.json`に`\"cleanupPeriodDays\": 3650`などの大きな値を設定することが推奨されています。Issueではデフォルト設定の非破壊化や、削除前の警告、ソフトデリートの実装などが提案されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "データ消失",
+      "CLI",
+      "バグ報告"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "[BUG] Claude Code silently deletes conversation transcripts after 30 days by default · Issue #62476 · anthropics/claude-code"
+  }
+}

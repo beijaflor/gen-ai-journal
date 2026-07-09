@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-29T15:14:43.769800+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RX 9070 XT 16GBでローカルLLMのAIコーディングエージェント環境を作る",
+    "url": "https://zenn.dev/masahide/articles/0d4016e8ea5a25",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AMD Radeon RX 9070 XT (16GB VRAM) 環境で、llama.cpp と pi-coding-agent を連携させ、Qwen3-Coder 30B モデルを実用的な速度で動作させるAIコーディング環境の構築ガイド。",
+    "summaryBody": "AMD Radeon RX 9070 XT (VRAM 16GB) を搭載したマシンで、ローカルLLMを用いたコーディングエージェント環境を構築する手順を解説しています。主な構成は、Windowsネイティブの llama.cpp server (ROCm版) で Qwen3-Coder-30B-A3B-Instruct を動かし、WSL上の pi-coding-agent から OpenAI 互換 API として呼び出す形です。16GBという限定的な VRAM 容量の中で 30B 級モデルを扱うため、文脈（コンテキスト）消費を抑えやすい pi-coding-agent の選定理由や、Brave Search MCP を用いた外部検索の統合、VRAM 節約のための運用のコツ（-nc オプションや対象ファイルの明示）について詳述されています。実測で 58 tokens/s という実用的な速度を確認しており、AMD 環境で最新のコーディング LLM を活用したいユーザーにとって非常に具体的な指針となる内容です。",
+    "topics": [
+      "AMD Radeon RX 9070 XT",
+      "llama.cpp",
+      "Qwen3-Coder",
+      "pi-coding-agent",
+      "Local LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

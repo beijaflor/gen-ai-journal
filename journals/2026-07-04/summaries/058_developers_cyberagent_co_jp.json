@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:53:24.732974+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントの Human-in-the-Loop 判断パターンを計測して確認・介入のポイントを見直す",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/64352/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントの実行履歴からHuman-in-the-Loop（HITL）の適切性を13のメトリクスで定量的に評価し、介入の過不足を特定してガードレール設定を改善する手法の紹介。",
+    "summaryBody": "AIエージェントの自律性と安全性のトレードオフを最適化するため、実行履歴（Claude Codeのトランスクリプト等）を分析し、人間の介入が適切だったかを評価する仕組みについて解説しています。本記事では、106件の介在実績を基に「必要性率」「自律稼働率」「技術的回避可能率」など13の指標で定量化。これにより、本来不要な確認（確認過多）や、逆に破壊的コマンドの素通りといったリスクを可視化します。分析結果は『CLAUDE.md』の指示更新や『permissions』設定の自動提案に活用され、開発者が介入すべきポイントを「締め、あるいは緩める」ための具体的なアクションを導き出します。著者はこの分析を自動化するOSSツール『hitl-harness-improver』も公開しており、個人だけでなくチーム開発におけるエージェント運用の改善基盤としての活用を展望しています。",
+    "topics": [
+      "AIエージェント",
+      "Human-in-the-Loop",
+      "Claude Code",
+      "ソフトウェアエンジニアリング",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

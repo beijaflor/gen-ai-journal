@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:43:30.284369+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CursorBench 3.1: リアルな開発セッションに基づくAIエージェント性能比較ベンチマーク結果",
+    "url": "https://cursor.com/ja/evals",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエディタCursorが公開した最新ベンチマークCursorBench 3.1において、Fable 5が最高精度を記録する一方、Composer 2.5が極めて高いコストパフォーマンスを実証した。",
+    "summaryBody": "AIコードエディタCursorを提供するAnysphere社が、AIエージェントの性能を評価する最新のベンチマーク「CursorBench 3.1」の結果を公開しました。このベンチマークは、実際のCursorセッションから抽出された、複数ファイルにまたがる曖昧なタスク（コードベースの理解、バグ修正、プランニング等）を用いて評価を行う点が特徴です。\n\n主な分析結果は以下の通りです：\n- **性能ランキング**: 「Fable 5 Max」が72.9%のスコアでトップとなり、Fable 5シリーズが上位を独占しました。\n- **コストパフォーマンス**: 「Composer 2.5」はスコア63.2%に対し、1タスクあたりの平均コストが$0.55と、他モデル（Fable 5 Maxの$18.02など）と比較して圧倒的に安価かつ高効率であることが示されています。\n- **主要LLMの動向**: GPT-5.5やSonnet 5、Opus 4.8といった次世代モデル群の性能とコストの相関関係が可視化されており、性能を追求する「Max」設定から効率を重視する「Medium/Low」設定まで、用途に応じた選択の指標を提供しています。\n\n今回の更新では、コードレビューやバグ発見などの評価基準が改善されており、より実務に近いAIエージェントの能力測定が可能になっています。",
+    "topics": [
+      "Cursor",
+      "CursorBench",
+      "AIエージェント",
+      "LLMベンチマーク",
+      "コード生成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

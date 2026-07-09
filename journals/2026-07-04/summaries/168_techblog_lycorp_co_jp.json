@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:21:42.153209+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "sim-use：エージェントに目と手を持たせる開発ツール",
+    "url": "https://techblog.lycorp.co.jp/ja/20260701b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがモバイルアプリの画面を理解し、自律的に操作・検証を行うためのオープンソースなクロスプラットフォームCLIツール「sim-use」の技術設計を解説する。",
+    "summaryBody": "AIエージェントによるコード生成が加速する中、モバイル開発における実機・シミュレータでの「検証」がボトルネックとなっています。本記事では、この課題を解決するために開発されたツール「sim-use」の5つの主要な技術設計を紹介しています。1.「Outline DSL」によるUIツリーのテキスト圧縮とトークン消費の20分の1への削減。2.「Quadtreeプローブ」を用いた、標準APIでは取得できないUI要素の座標ベースでの自動検出。3.「Daemonアーキテクチャ」によるプロセス起動コストの削減。4.iOSとAndroidの差異を吸収する共通コマンド設計。5.マルチタッチジェスチャーの精密な実装プロセス。これらにより、エージェントが人間のようにアプリを「見て」「触る」ことが可能になり、開発ループの完全自動化を支援します。",
+    "topics": [
+      "AIエージェント",
+      "モバイルアプリ開発",
+      "OSS",
+      "UI自動化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

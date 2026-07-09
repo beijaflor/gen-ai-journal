@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:25:11.550651+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最近リブランディングされた Gemini Enterprise Agent Platform はもう触った？",
+    "url": "https://zenn.dev/gixo/articles/e61553d1df1a93",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "リブランディングされたGemini Enterprise Agent Platform（旧Vertex AI）を用い、Memory BankやGoogleカレンダー連携、RAGを備えた服装アドバイザーを構築する実践ガイド。",
+    "summaryBody": "リブランディング後のGemini Enterprise Agent PlatformとADK（Agent Development Kit）を用いたエージェント開発の検証記事です。「服装アドバイザー」を例に、Memory Bankによる長期記憶、気象庁API連携、Googleカレンダーの3-legged OAuth（3LO）認証、RAG Engineの統合プロセスを詳細に解説しています。特に、Agent Identity有効化時にRAG Engineを自前SDKで呼ぶとmTLSトークンが原因で401エラーになる問題に対し、RAG機能を持つサブエージェントを介することで回避する設計案は非常に実用的です。開発に役立つダッシュボード機能やプレイグラウンドの評価、Memory Bankの日本語対応カスタマイズなど、プレビュー版の機能を使いこなすための知見が凝縮されています。",
+    "topics": [
+      "Gemini Enterprise Agent Platform",
+      "Vertex AI",
+      "ADK",
+      "Agent Identity",
+      "Memory Bank"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

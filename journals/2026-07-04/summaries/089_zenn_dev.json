@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T06:01:03.780777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに同じバグを3回出すと、自動でルール化される話",
+    "url": "https://zenn.dev/nexta_/articles/858e92ee22b4a4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeでの開発セッションを自動でふりかえり、3回繰り返された失敗をルールとして定着させる学習機構「cc-retrospective-learner」の3ヶ月間にわたる運用記録。",
+    "summaryBody": "AIエージェントが同じミスを繰り返す問題と、記憶の肥大化によるノイズ増大を解決するための仕組み「cc-retrospective-learner」の解説記事です。著者は、セッション履歴を「一次資料」として扱い、/retrospective コマンドによって短期記憶から長期的なパターン、最終的な「ルール（CLAUDE.mdへの昇格）」へと段階的に情報を絞り込む「漏斗（ファネル）」構造を構築しました。3ヶ月で385回のセッションから55個の再利用可能なルールを抽出。特に「失敗3回でルール化」という閾値設計や、成功した進め方を専用のスラッシュコマンド（スキル）に変換する「資産化」の手法が、実用性の高いAIの育成に寄与しています。GitHubでソースコードも公開されており、具体的なプロンプトエンジニアリングやコンテキスト管理の知見が豊富に含まれています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プログラミング",
+      "アジャイル開発",
+      "cc-retrospective-learner"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

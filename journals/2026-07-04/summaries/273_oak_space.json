@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:49:25.915417+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Oak — AIエージェントのワークフローに最適化された次世代バージョン管理システム",
+    "url": "https://oak.space/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Oakは、AIエージェントによる高速な開発サイクルを支援するために設計された、Rust製の超高速かつ効率的な新しいバージョン管理システムです。",
+    "summaryBody": "Oakは、人間とAIエージェントが協調してソフトウェアを開発する現代の環境に合わせて設計された、新しいタイプのバージョン管理システム（VCS）です。Gitの代替として機能し、特にエージェントが直面するレイテンシやトークン消費の問題を解決することに焦点を当てています。\n\n主な特徴と利点は以下の通りです：\n1. **圧倒的なパフォーマンス**: Gitと比較して、初期スナップショットや大規模なバイナリの扱いにおいて最大95%のレイテンシ削減を実現しています。\n2. **遅延マウント (Lazy Mount)**: リポジトリ全体をクローンせず、必要なファイルのみを初回の読み込み時にストリーミングするため、巨大なプロジェクトでも即座に作業を開始できます。\n3. **エージェント向けの設計**: 中間コミットにメッセージを必要とせず（チェックポイント機能）、ブランチの説明を一度設定するだけで最終的にメインブランチへ統合できます。\n4. **堅牢な並列作業**: タスクごとに独立したマウントを提供し、Git Worktreeで発生しがちなデータの競合や破損を防ぎます。\n5. **ポータビリティ**: `oak export`コマンドにより、履歴を維持したまま標準的なGitリポジトリへ変換可能で、ベンダーロックインを回避しています。\n\nデータプライバシーに関しても、Oakはコードを用いた学習を行わず、外部へのAIコールも発生させない「純粋な基盤ツール」としての立ち位置を明確にしています。",
+    "topics": [
+      "Version Control System",
+      "AI Agents",
+      "Rust",
+      "Software Development Tools",
+      "Performance Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Oak — the agentic substrate"
+  }
+}

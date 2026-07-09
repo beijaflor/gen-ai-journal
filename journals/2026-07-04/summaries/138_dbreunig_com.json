@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:40:45.488106+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプト負債（Prompt Debt）という問題：手動調整がもたらす開発の停滞とモデルロックイン",
+    "url": "https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自然言語によるプロンプトの手動調整が、システムの保守性を損ない特定のモデルに固執させる「プロンプト負債」を引き起こすと警告し、評価指標に基づいたプロンプトの自動生成への移行を提唱している。",
+    "summaryBody": "自然言語プロンプトによるAIアプリケーションの構築は迅速なプロトタイピングを可能にするが、長期的には「プロンプト負債」という深刻なエンジニアリング上の問題を招くと著者は指摘する。\n\n### プロンプト負債の3つの症状\n1. **イテレーションの鈍化**: エッジケースに対応するために指示を追加・重複させることでプロンプトが肥大化し、修正が別の場所でデグレードを引き起こすようになる。\n2. **チームの機能不全**: 手動で継ぎ接ぎされたプロンプトは可読性が低く、テンプレート化しても複雑な条件分岐の「藪」と化し、共有やメンテナンスが困難になる。\n3. **モデルロックイン**: 特定のモデル（例：GPT-4o）の挙動や「重み」との戦いに最適化されたプロンプトは、より新しく高性能なモデルへの移行を阻害する。\n\n### 解決策としての「プロンプトの自動生成」\n著者は、プロンプトを「人間が書くもの」から「指標に基づいて検索・生成されるもの」へ変えるべきだと主張する。具体的には、DSPyやGEPAのようなフレームワークを活用し、評価指標（Metrics）とテストを定義することで、モデルに依存しないポータブルで信頼性の高いシステム構築が可能になるとしている。",
+    "topics": [
+      "Prompt Engineering",
+      "LLMOps",
+      "Software Engineering",
+      "DSPy",
+      "AI Strategy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Problem is Prompt Debt"
+  }
+}

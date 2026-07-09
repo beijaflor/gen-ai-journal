@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:48:17.072002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループ・エンジニアリング：エージェントを自律駆動させるシステム設計のプレイブック",
+    "url": "https://asixiv.org/pdf/curated/2606.00001",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人間がプロンプトを打つのではなく、エージェントを自律的に駆動させる「ループ」を設計し、評価と生成を分離することで高品質な自動化を実現するための実践的なフレームワーク。",
+    "summaryBody": "## ループ・エンジニアリングの定義\nループ・エンジニアリングは、プロンプト、コンテキスト、ハーネスに続く「第4のレイヤー」として定義されます。これは、人間がエージェントを直接操作するのではなく、エージェントを自動的に駆動・管理するシステムを設計する技術です。\n\n## 5つの動きと6つの構成要素\n自律的なループは、**発見（Discovery）、引き継ぎ（Handoff）、検証（Verification）、永続化（Persistence）、スケジューリング（Scheduling）**の5つのステップで構成されます。これらを実現するために、オートメーション、ワークツリー、スキル、コネクタ、サブエージェント、メモリという6つの部品を活用します。\n\n## 生成と評価の構造的分離\nエージェントは自身の出力を過大評価する傾向があるため、コードを書く「Generator」と、それを厳格に検証する「Evaluator」を分離することが不可欠です。評価者は「疑い」を基本姿勢とし、テストの実行やUIの動作確認など、単なる読み取り以上の検証アクションを行うべきです。\n\n## 運用上のリスクと規律\n自律ループの導入は、検証負債、理解の腐敗、認知的降伏、トークンの急増といった「静かなコスト」を招きます。これらを防ぐには、予算上限の設定、定期的なコードサンプリングの実施、そして人間が最終判断を下す「チェックポイント」を維持するという、エンジニアとしての運用規律が求められます。",
+    "topics": [
+      "Agentic AI",
+      "Loop Engineering",
+      "自律型エージェント",
+      "ソフトウェアエンジニアリング",
+      "AIエージェントの評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    },
+    "originalTitle": "Loop Engineering: The Anthropic Playbook for Designing Systems That Prompt Your Agents"
+  }
+}

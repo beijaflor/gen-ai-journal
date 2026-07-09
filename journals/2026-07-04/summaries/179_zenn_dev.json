@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-05T04:24:38.999687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "投機的デコーディングによる推論高速化（Eagle3・DFlash・DSpark）",
+    "url": "https://zenn.dev/syurenuko/articles/b31d9d63035c9c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM推論を高速化する投機的デコーディングの基礎理論と、EAGLE-3、DFlash、DSparkという3つの最新発展手法の仕組みと性能差を技術的に解説した記事。",
+    "summaryBody": "本記事は、LLM推論のメモリ帯域ボトルネックを解消する「投機的デコーディング」の最新手法を解説しています。まず、軽量なDraft modelと高精度なTarget modelを組み合わせ、数学的に品質を維持したまま高速化する基礎理論を説明。その上で、以下の3手法を詳述しています。1. EAGLE-3: ターゲットの中間表現をカンニングして高い受理率を実現する。2. DFlash: 拡散モデルの仕組みで複数トークンを並列生成し、ドラフト自体の時間を短縮する。3. DSpark (DeepSeek): 半自己回帰生成と動的スケジューリングにより、並列性と正確性を両立させつつ実運用スループットを最適化。特にDSparkが、並列生成の弱点である末尾精度の減衰（Suffix Decay）を克服し、一貫して高い受理率を維持している点を評価しています。",
+    "topics": [
+      "LLM",
+      "投機的デコーディング",
+      "EAGLE-3",
+      "DSpark",
+      "推論高速化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

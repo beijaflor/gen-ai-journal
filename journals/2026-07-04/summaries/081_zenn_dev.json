@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-06-30T05:59:07.573349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RAGを作るのではなく、検索される知識を運用する",
+    "url": "https://zenn.dev/yottayoshida/articles/rag-knowledge-ops-agent-search",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RAGの真の難しさは初期構築ではなく「データ更新後の精度維持」にあるとし、Google CloudのAgent Searchと独自の知識供給パイプラインを組み合わせた運用重視の設計手法を解説している。",
+    "summaryBody": "RAG（検索拡張生成）の運用において、データの追加や更新に伴う検索精度の低下とその原因特定が困難であるという課題に対し、実践的な解決策を提示した記事です。筆者はDifyを用いた自前RAGの構築・管理に限界を感じ、Google Cloudのマネージド検索基盤である「Agent Search（旧Vertex AI Search）」へと責任境界を移譲する決断をしました。\n\n新構成の肝は、検索アルゴリズムの微調整に時間を割くのではなく、XMLサイトマップ起点でのURL管理、SHA256ハッシュによる差分検知、HTMLの正規化テキスト抽出といった「知識供給パイプライン」の構築に注力した点にあります。これにより、精度低下の原因が「データの変化」なのか「検索基盤の設定」なのかを明確に分離し、観測可能な状態を作り上げています。記事では、URL正規化のロジックや、Cloud StorageへのFULL reconciliationモードによる同期など、エンジニアリング上の具体的な設計判断が詳述されており、RAGを単なるプロトタイプから「運用可能なシステム」へと昇華させるための知見がまとめられています。",
+    "topics": [
+      "RAG",
+      "Vertex AI Agent Search",
+      "LLM Ops",
+      "Google Cloud",
+      "Dify"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

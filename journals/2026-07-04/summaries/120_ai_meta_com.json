@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-04T05:36:00.958732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "脳波から文字へ：手術不要な非侵襲的コミュニケーションを実現する「Brain2Qwerty v2」",
+    "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Metaは、手術を必要としない脳磁図（MEG）信号からAIを用いて高精度に文章を復元する「Brain2Qwerty v2」を発表し、単語精度61%という非侵襲手法における飛躍的な向上を達成した。",
+    "summaryBody": "Meta Researchは、非侵襲的な脳活動記録（MEG: 脳磁図）からテキストをリアルタイムでデコードするAIシステム「Brain2Qwerty v2」を公開した。従来、高いデコード精度を得るには外科的な電極埋め込み手術が必要だったが、本プロジェクトは深層学習と大規模言語モデル（LLM）のファインチューニングを組み合わせることで、非侵襲手法でありながら単語精度61%（特定条件下では最高78%）を達成した。これは従来の非侵襲手法の精度（約8%）を大幅に塗り替えるものである。\n\n主な技術的特徴は以下の通り：\n1. **エンドツーエンドのデコード**: 生の脳信号から直接テキストを復元する深層学習パイプラインを構築。\n2. **LLMの統合**: ノイズの多い脳信号を意味的な文脈で補完するため、LLMを脳データで微調整。\n3. **オープンサイエンス**: 神経科学の発展を加速させるため、モデルのトレーニングコードとデータセットを一般公開。\n\n本研究は、脳損傷などで意思疎通が困難な人々に対し、身体的負担の少ないコミュニケーション手段を提供する可能性を示唆している。また、精度がデータ量に比例してログリニアに向上することが確認されており、今後のデータスケールアップによるさらなる性能向上が期待されている。",
+    "topics": [
+      "BMI (ブレイン・マシン・インターフェース)",
+      "Meta AI",
+      "非侵襲型デコーディング",
+      "MEG (脳磁図)",
+      "LLM (大規模言語モデル)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "From Brain Waves to Words: Brain2Qwerty Offers a New Path to Communication Without Surgery"
+  }
+}
