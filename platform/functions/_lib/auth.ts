@@ -107,6 +107,12 @@ export async function authorize(request: Request, env: Env): Promise<string | nu
     if (env.API_BEARER_TOKEN && timingSafeEqualStr(token, env.API_BEARER_TOKEN)) return "bearer";
     return null;
   }
+  // Cookie-authed browser calls: a cross-site form can forge a JSON POST with
+  // the CF_Authorization cookie attached (CSRF). Origin is browser-controlled
+  // and always sent on cross-site POSTs — reject mismatches on state changes;
+  // absent Origin (scripts, curl) stays allowed, the attack needs a browser.
+  const origin = request.headers.get("origin");
+  if (origin && request.method !== "GET" && origin !== new URL(request.url).origin) return null;
   const jwt = request.headers.get("cf-access-jwt-assertion") ?? getCookie(request, "CF_Authorization");
   if (jwt) return verifyAccessJwt(jwt, env);
   return null;
