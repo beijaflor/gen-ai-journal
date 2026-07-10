@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:31:49.652505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデルルーティングの第一原理：効率的なAI活用に向けた4つの指針",
+    "url": "https://try.works/first-principles-of-model-routing",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIモデルの選択を自動化するルーティングにおいて、モデルの明確な差別化や小規模なプール、実環境ベンチマークの重要性を説くガイドライン。",
+    "summaryBody": "モデルルーティングプロトコル「role-model」の開発経験に基づいた、効果的なルーティングを実現するための4つの第一原理を解説しています。1. **モデルを明確に区別する**: 性能が似通ったフロンティアモデル同士ではなく、品質・速度・コストのトレードオフが明確なモデル（例：GPT-5.5とDeepSeek V4 Pro）を組み合わせるべきです。2. **モデルプールを小さく保つ**: 役割が不明確なモデルを追加すると意思決定が困難になるため、デフォルトでは2つに制限し、役割を定義できる場合のみ追加します。3. **相対的かつ実世界のベンチマークを使用する**: 一般的な指標に頼らず、自身のワークロードや特定のエンドポイントでの性能を独自に評価し、相対的なプロファイルを作成することが不可欠です。4. **過去の履歴を評価に活かす**: 過去の要求に対するモデルの性能やテレメトリ（安定性や応答時間）を継続的に分析し、将来のルーティング精度を高めるフィードバックループを構築することを推奨しています。",
+    "topics": [
+      "Model Routing",
+      "LLM Optimization",
+      "AI Infrastructure",
+      "Machine Learning Operations",
+      "role-model"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "First principles of model routing — Try-Works"
+  }
+}

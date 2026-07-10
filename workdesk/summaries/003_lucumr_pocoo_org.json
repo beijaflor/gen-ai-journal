@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:39:05.865153+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "高性能化するモデルと劣化するツール利用：Claudeにおけるスキーマ捏造問題",
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude 3.5 SonnetやOpus 4.8などの最新モデルが、特定のツール呼び出しスキーマにおいて存在しないフィールドを捏造する現象（スロップ）を分析し、その原因が特定の実行環境への過学習にある可能性を指摘する記事。",
+    "summaryBody": "ソフトウェア開発者のArmin Ronacher氏が、最新のClaudeモデル（Opus 4.8やSonnet 5）においてツール呼び出しの精度が以前のモデルより劣化している問題を報告しています。具体的には、Piのファイル編集ツールを使用する際、モデルがスキーマにない架空のフィールド（requireUnique, oldText2等）をJSON内に捏造し、バリデーションエラーを引き起こす現象が確認されました。\n\n著者はこの原因として、Anthropicの内部ツール実行環境「Claude Code」などのエコシステムへの過学習を挙げています。Claude Codeの実行環境（ハーネス）は、モデルが吐き出す不正確なパラメータ名や型エラーを内部で自動修正・許容する「Slop Harness（寛容なハーネス）」として機能しており、強化学習の過程でモデルが厳密なスキーマ遵守よりも「それらしい呼び出し」を優先するよう学習してしまった可能性を指摘しています。\n\nこの問題は、ツールスキーマがもはや中立な契約ではなく、モデルの学習分布（特定の支配的なツールの形状）に依存し始めていることを示唆しています。対策として、制約付きサンプリング（Strict Mode）の重要性が増していますが、一方でモデルの推論能力を最大限に引き出すためには、モデルの「先入観（Prior）」に合わせたスキーマ設計が必要になるという、開発者にとって不都合な現実を浮き彫りにしています。",
+    "topics": [
+      "Anthropic Claude",
+      "LLM Tool Calling",
+      "Reinforcement Learning",
+      "JSON Schema",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Better Models: Worse Tools | Armin Ronacher's Thoughts and Writings"
+  }
+}

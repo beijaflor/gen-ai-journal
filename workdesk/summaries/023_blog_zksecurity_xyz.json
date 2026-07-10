@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:33:01.223884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと暗号学の融合：CloudflareのCIRCLライブラリからAIが発見した7つのバグ",
+    "url": "https://blog.zksecurity.xyz/posts/circl-bugs/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "zkSecurityのAI監査エージェントが、Cloudflareの暗号ライブラリCIRCLにおいて、重大な設計ミスを含む7つの脆弱性を特定し、AIによる暗号監査の有効性と限界を実証した。",
+    "summaryBody": "本記事は、AI監査エージェント「zkao」がCloudflareの先端暗号ライブラリ「CIRCL」から7つの実在するバグを発見した事例を詳述している。報告された脆弱性には、閾値RSAにおける浮動小数点精度の損失、DLEQ証明における検証パラメータの制御不備、属性ベース暗号（CP-ABE）における論理ミスによるアクセスコントロールの完全な崩壊などが含まれる。特筆すべきは、代数的な同一性とシリアライズ仕様が組み合わさって生じる巧妙な欠陥をAIが推論できた点である。一方で、AIは脆弱性の深刻度評価において不安定さを見せ、モデルの更新によって発見能力が変動するなどの課題も示された。結論として、AIは暗号コードの自動監査において強力な能力を発揮するが、現時点では人間による検証（Human-in-the-loop）が信頼性確保のために不可欠であると結論付けている。",
+    "topics": [
+      "暗号監査",
+      "AIセキュリティ",
+      "Cloudflare CIRCL",
+      "脆弱性診断",
+      "ゼロ知識証明"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "AI meets Cryptography 1: What AI Found in Cloudflare's CIRCL"
+  }
+}

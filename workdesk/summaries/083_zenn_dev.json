@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:16:24.629141+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5の挙動をOpus 4.8で再現する — 「賢さ」を検証ループの工程に置き換える",
+    "url": "https://zenn.dev/ait/articles/fable-emu-opus-harness",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Opus 4.8において、検証ループや複数エージェントによる協調、外部記憶を活用することで、上位モデル（Fable 5）の推論能力を構造的に模倣する「fable-emu」ハーネスの設計と実装ガイド。",
+    "summaryBody": "本記事では、Claude Fable 5の「賢さ」を、Opus 4.8上での外部プロセス（分解、独立検証、長期一貫性の維持）として再現する技術「fable-emu」を解説しています。Claude Codeのネイティブ機能（CLAUDE.md、サブエージェント、スラッシュコマンド）のみを使用し、プランナー（planner）、検証者（verifier）、偵察（scout）、判定者（judge）といった役割を分担させることで、単一パスでは到達できない品質を確保する設計です。特に「成果物を見る前に期待リストを導出する独立検証」や「3値（OK/NG/目視要）による判定ルール」など、バイアスを排除し信頼性を高める具体的なプロンプト設計が詳述されています。トークンコストは増加するものの、重要な判断のミスを減らし、実務レベルで上位モデルに肉薄するための実践的なアプローチを提供しています。",
+    "topics": [
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "マルチエージェントシステム",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 95
+    }
+  }
+}

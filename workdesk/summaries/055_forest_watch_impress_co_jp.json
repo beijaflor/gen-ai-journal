@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:23:44.260963+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカル処理で画像から3Dモデルを生成する「Pixal3D」を使いこなす！ - Blender ウォッチング",
+    "url": "https://forest.watch.impress.co.jp/docs/serial/blenderwthing/2123103.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "画像から3Dモデルを生成するAI「Pixal3D」をローカル環境で活用し、VRAM容量に合わせたパラメーター調整やBlenderでのクリーンアップ手順を詳しく解説したガイド。",
+    "summaryBody": "本記事は、TencentARCが開発した画像から3Dモデルを生成するAI「Pixal3D」を、ComfyUIベースのパイプラインで使いこなすための技術解説です。主な内容は以下の通りです。\n\n### 1. パラメーター調整による最適化\n- **pipeline_type**: VRAM 12GB程度なら `1024_cascade` が推奨されますが、共有GPUメモリに余裕があれば `1536_cascade` に上げることでディテールが大幅に向上します。\n- **seedとfixed設定**: 良い形状が出た際にシード値を固定（fixed）し、他のパラメーターを微調整するワークフローを推奨しています。\n- **max_num_tokensとtexture_size**: VRAM消費を抑えるためにこれらの値を調整し、ハードウェアの限界内で最高品質を引き出す方法を紹介しています。\n\n### 2. 生成結果の傾向と課題\n- 複雑な装飾（フリルやウェーブヘア）の再現性は高い一方、アニメ調のキャラクターではリアルな「鼻」や「唇」が生成されるといった、モデル固有の癖についても言及されています。\n\n### 3. Blenderでの後処理\n- 生成されたモデルは頂点がバラバラなため、「距離でマージ」による頂点統合や、不要な破片（浮遊ポリゴン）を一括削除するクリーンアップ手順が紹介されており、実用的なアセット制作の流れを解説しています。",
+    "topics": [
+      "Pixal3D",
+      "Blender",
+      "生成AI",
+      "3DCG",
+      "ComfyUI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:30:25.796311+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5の「働き方」をOpus/Sonnetに継承：規律と検証の明文化によるAIエージェント強化法",
+    "url": "https://zenn.dev/yui/articles/e4f8268ab5c6c1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Fable 5の高度な判断力をOpusやSonnetで再現するため、知識ではなく「作業手順・失敗パターン・検証ルール」を明文化してAIエージェントの規律を強化する手法の解説。",
+    "summaryBody": "Fable 5のサブスクリプション終了に伴い、その高度な自律性をOpusやSonnetといった既存モデルに継承させるための方法論をまとめています。著者は、上位モデルと中位モデルの差は「知能」ではなく、作業における「規律・順序・検証」の差であると定義しました。具体的には、自作ツール『ccteams』を用い、以下の5つの軸でAIの行動を制御しています。(1)書き始める前にリポジトリを調査する「作業ルーティン」の固定、(2)「症状→間違い→正しい一手」を定義した「失敗パターンの明文化」、(3)goroutine起動前などの「意思決定の分岐」定義、(4)VERIFIEDラベル等を義務付ける「検証方法」の定義、(5)未知の失敗を吸収する「学習ループ」の構築です。単なるプロンプト調整ではなく、実行可能な手順書（Playbook）としてスキル化することで、中位モデルでも高精度なエンジニアリングが可能になることを実証しています。",
+    "topics": [
+      "Claude",
+      "AIエージェント",
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "ccteams"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

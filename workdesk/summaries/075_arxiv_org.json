@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:18:29.918836+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kani: Rust向けモデルチェッカー",
+    "url": "https://arxiv.org/abs/2607.01504",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Kaniは、RustのMIRをCBMCエンジンで解析することで、unsafeコードの健全性やランタイムパニックの回避、機能的正当性を自動検証するオープンソースのモデルチェッカーである。",
+    "summaryBody": "Kaniは、Rust言語におけるメモリ安全性を超えた検証を実現する有界モデルチェッカーです。Rustの所有権システムは安全なコード内でのメモリエラーを防止しますが、unsafe操作の健全性やパニックの不在、論理的な正当性までは保証しません。Kaniは、RustのMIR（中間表現）をビット精度の検証エンジンであるCBMCに変換し、ユーザーのアノテーションなしで広範な安全プロパティを自動的にチェックします。また、関数契約（Function Contracts）やループ契約、量化子などの仕様記述言語を備えており、境界のある検証から境界のない検証へと拡張が可能です。Rust標準ライブラリのCIでは、1回のコード変更あたり16,000以上のハーネスを検証する規模で運用されており、産業用プロジェクトでのケーススタディでは、未知のバグを6件発見するなどその実効性が示されています。",
+    "topics": [
+      "Rust",
+      "Model Checking",
+      "Formal Verification",
+      "Software Engineering",
+      "Static Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Kani: A Model Checker for Rust"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:25:55.711920+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentに自由な開発環境を渡す、Proxmox+LXCで。",
+    "url": "https://zenn.dev/uzulla/articles/91272997a7c668",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに安全かつ自由な作業環境を提供するため、ProxmoxとLXCを活用して軽量・高速に使い捨て可能な開発環境を構築・管理する手法の解説。",
+    "summaryBody": "AIエージェントによる自動コーディングが普及する中、ローカルマシンの環境汚染やセキュリティリスクを回避しつつ、エージェントが自由にツール導入やコマンド実行を行える隔離環境を構築する方法を紹介しています。具体的には、Proxmox上でLXCコンテナをテンプレート化して運用しており、完全仮想化（KVM）よりも軽量でDockerのネスト問題も避けられる利点があります。\n\n運用の肝として、Proxmoxを踏み台（Bastion）にし、SSHのProxyCommandと`pct exec`を組み合わせることで、各コンテナに個別のIPアドレスを意識せずアクセスできる設定を公開。また、`mise`によるツール管理や、SSHホスト鍵の自動生成に対応したテンプレート作成手順など、実用的なノウハウが詳細に記述されています。これにより、プロジェクトごとに環境を隔離し、長時間実行（ロングラン）タスクも安全に任せられる体制を整えています。",
+    "topics": [
+      "Proxmox",
+      "LXC",
+      "AI Agent",
+      "Agentic Coding",
+      "開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

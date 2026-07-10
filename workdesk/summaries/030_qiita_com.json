@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:30:39.381664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【AgentCore】Runtime をパブリックにデプロイしたけど、勝手にアクセスされない？",
+    "url": "https://qiita.com/ryu-ki/items/2cd37256824b54022bdb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCore Runtimeのパブリックデプロイ時における、IAM認証を用いたセキュリティ保護の仕組みと、無認証アクセスが拒否される実証プロセスを解説した記事。",
+    "summaryBody": "Amazon Bedrock AgentCore Runtimeをパブリックにデプロイした際のセキュリティリスクについて、実機検証を交えて解説しています。記事の主な要点は以下の通りです。\n\n- **多層防御の構造**: Runtimeへのアクセスは、IAM SigV4またはJWTによる「認証」、IAMポリシーによる「認可」、およびオプションの「リソースベースポリシー」の3層で保護されており、単にエンドポイントURLを知っているだけでは不正利用できない仕組みになっています。\n- **アクセス検証の実測**: `curl`を用いた認証なしのリクエストや誤った認証情報でのアクセスが、いずれも403 Forbiddenで即座に遮断されることを実例で示しています。一方で、正規のAWS認証情報を用いたboto3からは正常に応答が得られることを確認しています。\n- **高度な制限設定**: 特定のIAMロールのみを許可し、それ以外のアクセスを明示的に拒否するリソースベースポリシーの設定例を紹介し、最小権限の原則に基づくセキュアな設計手法を提示しています。\n\nパブリックエンドポイントであっても、AWSの標準的な認証・認可基盤が確実にガードしていることが実証されています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AgentCore",
+      "AWS Security",
+      "IAM",
+      "Boto3"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 45,
+      "overall": 90
+    }
+  }
+}

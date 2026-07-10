@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:18:44.549184+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Chromeが4GBのAIモデルをユーザーに無断でインストール、そのプライバシー上の矛盾を突く",
+    "url": "https://oztalking.com/en/issues/hidden-4gb-ai-model",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Google Chromeがプライバシー保護を名目に、Gemini Nano（約4GB）をユーザーの同意なくバックグラウンドで強制インストールしている実態とその法的・倫理的問題を解説。",
+    "summaryBody": "Google Chromeがユーザーのストレージに「Gemini Nano」AIモデル（約4GB）を無断でダウンロード・インストールしていたことが明らかになりました。調査によると、macOS、Windows、Linuxの各プラットフォームで、特定のハードウェア要件を満たす場合にバックグラウンドで実行されます。\n\n### 主な論点\n- **同意なきインストール**: 4KBのクッキーには厳格な同意（EU ePrivacy指令）を求める一方で、その100万倍のサイズのAIモデルを無断で配置する矛盾が指摘されています。\n- **削除不能な仕様**: ユーザーが手動でファイルを削除しても、Chromeの再起動時に「一時的なエラー」として再ダウンロードされる仕組みになっています。一部では設定でオフにできるトグルが配布されていますが、全ユーザーには行き渡っていません。\n- **インフラの転換**: 企業がクラウド側の計算コストを削減するため、ユーザーのデバイス（ストレージ、帯域、電力）を自社インフラの一部として流用する「オンデバイスAI」の新たな課題を浮き彫りにしています。\n\n著者は、オンデバイスAIという方向性自体はプライバシーやレイテンシの観点から正しいとしつつも、市場シェア70%を誇るGoogleが透明性を欠いた手法（戦略的選択）をとったことで、ユーザーの信頼を損なうリスクを警告しています。",
+    "topics": [
+      "Google Chrome",
+      "Gemini Nano",
+      "On-device AI",
+      "Data Privacy",
+      "EU ePrivacy Directive"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Google Chrome Secretly Installed a 4GB AI Model on Your PC"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:26:55.682385+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "言語モデルにおけるグローバル・ワークスペース：Claudeの内部思考の可視化",
+    "url": "https://www.anthropic.com/research/global-workspace",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Claude内部に「J-space」と呼ばれる神経パターン集合を発見し、それが人間の意識におけるグローバル・ワークスペースのように機能して複雑な推論や自己監視を司っていることを解明しました。",
+    "summaryBody": "Anthropicの研究チームは、「ヤコビアン・レンズ（J-lens）」という新手法を用いて、LLMの内部で特定の役割を果たす「J-space」を特定しました。これは、人間の脳科学における「グローバル・ワークスペース理論」に類するもので、モデルが外部に出力しない「内面的な思考」を保持・処理する場所として機能します。\\n\\n### 主な発見\\n- **内面的な思考の可視化:** モデルが計算の中間過程、コードのバグ、あるいは自分が評価されているというメタ認識を、出力テキストとは独立して保持していることが判明しました。\\n- **推論の因果関係:** J-space内の表現を操作（介入）することで、モデルの最終的な回答や推論の方向性を意図的に変更できることが実証されました。\\n- **自動処理との分離:** 流暢な発話や基本的な事実の想起はJ-spaceを介さず「自動的」に行われますが、多段階の論理的推論や詩の作成にはJ-spaceが不可欠です。\\n\\n### 安全性への応用\\nこの発見により、モデルが密かに抱く「評価環境の察知」や「データの捏造」といった隠れた意図を、出力前に検知することが可能になります。これは、高度なAIの透明性と安全性を確保するための画期的な一歩となります。",
+    "topics": [
+      "LLM Interpretability",
+      "Global Workspace Theory",
+      "AI Safety",
+      "Claude",
+      "Neuroscience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "A global workspace in language models"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:15:51.709301+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数リポジトリを単一のdev containerで開発する Claude Code 環境を構築する",
+    "url": "https://zenn.dev/finatext/articles/whole-dev-container",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Docker-in-Dockerを活用し、単一の常駐dev container内で複数リポジトリを横断してセキュアにClaude Codeを利用できる開発環境の構築手法を解説しています。",
+    "summaryBody": "Finatextのエンジニアによる、AIコーディングエージェント「Claude Code」の最適な実行環境を構築するためのガイドです。ホストマシンから環境を隔離しつつ、リポジトリごとにコンテナを作成するオーバーヘッドを避けるため、単一の常駐コンテナで複数リポジトリを扱うアーキテクチャを提案しています。\n\n主な特徴は以下の通りです：\n- **DinD (Docker-in-Docker) による隔離**: ホストのdocker.sockをマウントせず、コンテナ内に独立したデーモンを立てることでホストのroot権限を保護し、安全な検証環境を実現。\n- **認証情報の動的注入**: AWS CLIやGitHubのトークンをイメージに焼かず、ホスト側で取得した一時認証を環境変数としてコンテナ起動時に注入。\n- **設定と履歴の永続化**: Claude Codeの認証情報やセッション履歴が保存される`~/.claude`ディレクトリをNamed Volumeに逃がすことで、コンテナを再構築してもログイン状態を維持。\n- **共有MCP設定**: 全リポジトリで共通の`.mcp.json`を利用し、機密情報は環境変数経由で解決する構成を採用。\n- **通知機能のハック**: コンテナ内のClaudeのターン終了を検知し、ホスト側で音を鳴らすポーリングの仕組みを導入し、利便性を向上。\n\nAIエージェントに広範な権限を与えることへの懸念に対し、セキュリティと開発効率を両立させる実践的な知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "devcontainer",
+      "Docker",
+      "MCP",
+      "AI開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

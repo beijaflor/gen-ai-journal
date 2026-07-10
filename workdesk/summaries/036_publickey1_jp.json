@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:28:50.422588+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に",
+    "url": "https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "生成AIとツールの接続プロトコルMCPにおいて、IdPを介した一括認証・認可を可能にする企業向け新機能「EMA extension」が安定版となりました。",
+    "summaryBody": "Model Context Protocol (MCP) の新機能「Enterprise-Managed Authorization (EMA) extension」が安定版として公開されました。これまでMCPサーバへの接続はユーザーが個別かつ手動で認証・認可を行う必要がありましたが、本拡張機能により、OktaなどのIdentity Provider (IdP) を通じた一括管理が可能になります。組織はIdP側でアクセス権限やポリシーを制御でき、監査ログの一元化も実現します。ユーザーにとっても、ログインのみで必要なMCPコネクタが自動セットアップされる利便性があります。現時点でOkta、Claude、VS Code、Asana、Figmaなどが対応しており、今後Slack等への拡大も予定されています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "アイデンティティ管理",
+      "エンタープライズセキュリティ",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

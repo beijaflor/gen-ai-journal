@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:38:48.886004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMによるコーディングの実行可能性：Thoughtworksエンジニアによる実地検証",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Apple Silicon環境でのローカルLLMを用いたコーディング、特にエージェント的利用におけるRAM制約、量子化、推論性能などの影響因子を詳細に分析した技術レポート。",
+    "summaryBody": "Thoughtworksのエンジニアが、Apple M3 Max/M5 Pro環境でローカルLLM（QwenやGemma等）をコーディング支援に利用した際の実行可能性を評価しました。主な結論として、RAM（VRAM）が最大の制約であり、15-25GB程度のモデルサイズが実用的なバランスであると述べています。エージェント的な利用において重要な「ツール呼び出し（Tool Calling）」の信頼性は依然として課題ですが、自己修復機能により一部カバー可能です。また、MoE（Mixture of Experts）アーキテクチャがRAM効率と品質の面で優れており、検証時点ではQwen3.6 35B MoEが最適解とされています。コンテキストウィンドウは最低でも32K〜64Kの設定が必要であり、推論（Reasoning）機能は複雑なタスクに有効な反面、ループに陥るリスクも指摘されています。現時点では一般の開発者が即座に「プラグ・アンド・プレイ」で利用できる段階にはないものの、特定の設定下では実用的な選択肢になりつつあることが示されています。",
+    "topics": [
+      "ローカルLLM",
+      "AIコーディングエージェント",
+      "Apple Silicon",
+      "Qwen",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Viability of local models for coding"
+  }
+}

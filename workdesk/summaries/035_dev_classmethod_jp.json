@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:29:09.142171+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DGX Spark 1 台をパートナーにする LLM 構成を考えてみた",
+    "url": "https://dev.classmethod.jp/articles/dgx-spark-single-node-best-llm-qwen3-6-27b-nvfp4/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DGX Spark 1台でQwen3.6やNemotron、GemmaなどのローカルLLMを実機検証し、速度、指示遵守、メモリ共有の観点から最適なパートナー構成を提案している。",
+    "summaryBody": "NVIDIA DGX Spark（GB10/128GB Unified Memory）環境において、最新のQwen3.6-27B-NVFP4を含む複数のローカルLLMの性能を比較検証した。生成速度はモデルの総パラメータ数ではなく「Activeパラメータ数」に依存することを実証し、投機的デコード（MTP）の有効化により、Qwenが2.4倍（29 tok/s）、Gemmaが2.1倍（62 tok/s）に高速化することを報告している。また、LLMを単独で動かすのではなく、RAG用ベクトルDBやComfyUI（画像生成）との同居を前提としたメモリ管理手法（gpu-memory-utilizationの調整）についても解説。結論として、速度のNemotron Nano、指示遵守のGemma、高度推論のQwenを用途に応じて使い分けるマルチモデル構成を推奨している。",
+    "topics": [
+      "DGX Spark",
+      "LLMベンチマーク",
+      "vLLM",
+      "投機的デコード(MTP)",
+      "NVFP4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:21:01.873884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードの綺麗さはコーディングエージェントに影響を与えるか？：制御された最小ペア研究",
+    "url": "https://arxiv.org/abs/2605.20049",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントによる開発において、コードの「クリーンさ」はタスク成功率には影響しないが、トークン消費量を約8%削減し、ナビゲーション効率を34%向上させることが判明した。",
+    "summaryBody": "本研究は、コードの構造的・スタイル的な質（クリーンさ）がAIコーディングエージェント（Claude Code）のパフォーマンスに与える影響を、厳密に制御された「最小ペア（Minimal-pair）」の手法を用いて調査しました。振る舞いや依存関係は同じだが、静的解析違反や認知的複雑さが異なるリポジトリのペアを作成し、計660回の試行を通じて評価を行いました。実験の結果、コードのクリーンさはタスクの成功率（パス率）を左右しないことが明らかになりましたが、エージェントの「動作の効率」には顕著な差が現れました。クリーンなコードで作業する場合、エージェントの使用トークン数は7〜8%減少し、同じファイルを何度も参照する「ファイル再訪問」の回数は34%も削減されました。この結果は、従来の保守性原則がAI時代においても、計算コストの抑制と推論の効率化という新たな価値を持つことを示唆しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Clean Code",
+      "Software Maintenance",
+      "LLM Efficiency",
+      "Empirical Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study"
+  }
+}

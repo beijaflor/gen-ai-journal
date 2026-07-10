@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:22:01.220082+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Node.js、AIによる脆弱性報告の急増を受け公開ワークフローへの移行を検討",
+    "url": "https://socket.dev/blog/nodejs-considers-public-workflow-for-security-reports",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Node.jsが、AI（LLM）を活用した脆弱性報告の急増による管理負荷を軽減するため、低重要度の報告を非公開から公開ワークフローへ移行する提案を議論している。",
+    "summaryBody": "Node.jsの技術運営委員会（TSC）において、低重要度の脆弱性報告を従来の非公開扱いから公開ワークフローへと移行する案が議論されています。この背景には、LLMを用いた自動スキャンやファジングによる報告が急増し、メンテナーのトリアージ負荷が限界に達している現状があります。\n\n主な議論のポイントは以下の通りです：\n\n- **AIによる報告の性質**: 多くの報告が類似したツール設定によるものであり、事実上「公開されているも同然」の状態であるため、秘匿する意義が薄れている。\n- **認知欲求への対応**: 報奨金を停止しても報告数は減っておらず、報告者の動機が「自身の名前でのCVE割り当て」に移っている。この承認欲求が低品質な報告の乱発を招いている。\n- **メンテナーの懸念**: 公開化によって負荷が軽減されるわけではなく、作業が「非公開のトリアージ」から「公開のIssueやPRのレビュー」に移るだけで、本質的なボトルネックである「人的リソース不足」は解消されないという慎重な意見もあります。\n\n現在はHackerOneのトリアージにAIを導入して自動再現や分類を行う試みも検討されており、オープンソースプロジェクトにおけるAI時代のセキュリティ対応のあり方が問われています。",
+    "topics": [
+      "Node.js",
+      "セキュリティ",
+      "脆弱性報告",
+      "生成AI",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 82
+    },
+    "originalTitle": "Node.js Considers Public Workflow for Security Reports Amid AI-Driven Surge"
+  }
+}

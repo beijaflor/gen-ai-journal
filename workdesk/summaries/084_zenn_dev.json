@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:16:07.894922+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeがSlackに書く文字装飾が崩れる問題をSkillで直す",
+    "url": "https://zenn.dev/elements/articles/a86509157c243a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeからSlackへ投稿する際のMarkdown装飾が崩れる問題を解決するため、Slack独自のmrkdwn仕様に合わせて自動で記法を正規化・スペース調整するClaude Skillの紹介。",
+    "summaryBody": "Claude CodeのSlack MCPを利用してメッセージを送信する際、日本語と装飾記号が密着していると太字や斜体が正しく反映されない問題がある。これはSlackの「mrkdwn」記法が装飾の境界に空白を必要とする仕様に起因する。本記事では、記号（**や~~）の統一と、装飾スパンの前後に半角スペースを自動挿入する正規化スクリプトを提案している。このスクリプトをClaudeの「Skill」として実装し導入することで、日本語特有の「文字の詰まり」による表示崩れを自動で修正し、安定したSlack投稿が可能になる。記事内では正規表現を用いた実装詳細やプラグインとしての利用方法も解説されている。",
+    "topics": [
+      "Claude Code",
+      "Slack",
+      "mrkdwn",
+      "MCP",
+      "Markdown"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

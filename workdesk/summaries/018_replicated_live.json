@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:35:28.505956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Beagle SCM：非決定的なLLMを決定論的なツールで制御する「自動化」の設計思想",
+    "url": "https://replicated.live/blog/away",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの持つ「優秀だが不器用」という非決定的な性質を、JavaScriptによる決定論的なツールとプロセスで制御し、AI自身にルーチンを自動化させる開発アプローチの提案。",
+    "summaryBody": "### LLMの「不器用さ」という本質的課題\nOpenAIの研究者が「自らを自動化している」のと同様に、AIを用いた開発における最大の課題は、LLMが高度な推論を行う一方で、不要なディレクトリをコミットするような「不器用で非決定的なミス」を犯す点にあります。著者は、どれだけモデルが進化しても、この性質は根本的には解消されないと指摘します。\n\n### 決定論的な「サンドイッチ」構造\nこの課題に対し、著者は「高価で遅く不器用だが優秀なLLM」を、高速で強力かつ決定論的なツール（下層）と形式的なプロセス（上層）で挟み込む設計を提唱しています。例えば、不正確な手動パースをLLMに禁じ、代わりにRagelのような決定論的パーサーをツールとして与え、その検証ステップを自動化することで信頼性を確保します。\n\n### Beagle SCMによる自己自動化\nBeagle SCMは、LLMが自らのルーチンをJavaScriptで記述し、自動化することを可能にします。重い処理はC言語で実装しつつ、ツール・ワークフロー層をJavaScriptで構築することで、LLMが繰り返し行う作業を確定的なコードへと置き換え、最終的に「LLM自身を自動化によって排除していく」というプロセスを実現しています。",
+    "topics": [
+      "LLM",
+      "Software Engineering",
+      "Beagle SCM",
+      "Automation",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Beagle SCM: Automating away"
+  }
+}

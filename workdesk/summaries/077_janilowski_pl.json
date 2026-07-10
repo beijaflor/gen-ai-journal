@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:18:01.820391+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「100万トークンあたりの価格」は無意味：AIコスト評価における真の指標とは",
+    "url": "https://janilowski.pl/en/blog/2026/price-per-m-tokens/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "トークナイザーの仕様差やタスク完了に必要なトークン効率の違いにより、単なるトークン単価比較はAIの真の運用コストを反映していないと指摘する論考。",
+    "summaryBody": "AIモデルのコストを比較する際、100万トークンあたりの単価（$X/1M tokens）を基準にするのは誤りである。本記事ではその理由を2点挙げている。第一に、モデルごとに独自のトークナイザーを使用しているため、同じテキストでも消費トークン数が大きく異なること。第二に、タスクを完遂するために必要な「思考（Chain of Thought）」トークンの効率に差があることだ。ベンチマーク結果を引用し、単価が高いとされるGPT-5.5が、実際にはClaude Opusよりも1タスクあたりのコストを半分以下に抑えられている事例を紹介している。利用者は「トークン単価」という表面的な数字ではなく、特定のタスクを完了させるのにいくらかかるかという「タスクあたりのコスト」を重視すべきだと結論づけている。",
+    "topics": [
+      "LLMコスト",
+      "トークナイザー",
+      "トークン効率",
+      "ベンチマーク",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "Price per 1M tokens is meaningless"
+  }
+}

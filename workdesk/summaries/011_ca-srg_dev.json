@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:36:59.420539+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS DevOps Agentの新機能カスタムエージェントで週次SREレポートをつくる",
+    "url": "https://ca-srg.dev/38d4358b43f78005837cfc19c3a9862e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS DevOps Agentの「カスタムエージェント」機能を活用し、Datadog等と連携した週次SREレポートを自動生成・定期実行するワークフローの構築方法を解説しています。",
+    "summaryBody": "AWS DevOps Agentに新たに追加された「カスタムエージェント」機能を用いた、SRE業務の自動化に関する解説記事です。この機能により、メトリクスやインシデント情報を集約したカスタムレポートの作成が可能になりました。記事では、チャットUIを介した対話形式でのエージェント作成プロセスや、Datadogとの連携、出力フォーマットの定義方法を具体的に紹介しています。また、Cron形式によるスケジュール実行（トリガー設定）や、生成されたレポートをアーティファクトとして保存・確認する手順も網羅されています。運用上の注意点として、外部サービス連携時の認可設定のベストプラクティスや、現時点ではカスタムエージェントがTerraformによるコード管理に非対応であるといった制約事項についても言及されており、実践的な導入ガイドとなっています。",
+    "topics": [
+      "AWS DevOps Agent",
+      "SRE",
+      "自動化",
+      "Datadog",
+      "カスタムエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}
