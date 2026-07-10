@@ -23,9 +23,13 @@ interface Jwk {
 
 let jwksCache: { keys: Jwk[]; fetchedAt: number } | null = null;
 const JWKS_TTL_MS = 60 * 60 * 1000;
+// Floor for forced (kid-miss) refetches: a fresh fetch is authoritative, so a
+// kid still missing from a <60s-old cache is genuinely invalid — this keeps
+// requests with garbage kids from hammering the certs endpoint.
+const JWKS_FORCE_MIN_AGE_MS = 60 * 1000;
 
-async function getJwks(teamDomain: string): Promise<Jwk[]> {
-  if (jwksCache && Date.now() - jwksCache.fetchedAt < JWKS_TTL_MS) return jwksCache.keys;
+async function getJwks(teamDomain: string, force = false): Promise<Jwk[]> {
+  if (!force && jwksCache && Date.now() - jwksCache.fetchedAt < JWKS_TTL_MS) return jwksCache.keys;
   const res = await fetch(`${teamDomain}/cdn-cgi/access/certs`);
   if (!res.ok) throw new Error(`JWKS fetch failed: ${res.status}`);
   const body = (await res.json()) as { keys: Jwk[] };
@@ -53,7 +57,12 @@ async function verifyAccessJwt(token: string, env: Env): Promise<string | null> 
     const now = Math.floor(Date.now() / 1000);
     if (typeof payload.exp !== "number" || payload.exp < now) return null;
 
-    const jwk = (await getJwks(env.TEAM_DOMAIN)).find((k) => k.kid === header.kid);
+    let jwk = (await getJwks(env.TEAM_DOMAIN)).find((k) => k.kid === header.kid);
+    if (!jwk && jwksCache && Date.now() - jwksCache.fetchedAt >= JWKS_FORCE_MIN_AGE_MS) {
+      // Unknown kid on a cached key set: Access rotates signing keys (~6-weekly),
+      // so the cache may be stale. Refetch once before rejecting.
+      jwk = (await getJwks(env.TEAM_DOMAIN, true)).find((k) => k.kid === header.kid);
+    }
     if (!jwk) return null;
     const key = await crypto.subtle.importKey(
       "jwk",
