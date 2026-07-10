@@ -25,17 +25,21 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
   const url = sanitizeUrl(rawUrl);
 
-  const existing = await env.DB.prepare("SELECT id, status FROM links WHERE url = ?")
-    .bind(url)
-    .first<{ id: number; status: string }>();
-  if (existing) {
-    return json({ duplicate: true, id: existing.id, status: existing.status, url }, 200);
-  }
-
-  const res = await env.DB.prepare("INSERT INTO links (url, note) VALUES (?, ?) RETURNING id, submitted_at")
+  // The duplicate decision happens inside the INSERT (UNIQUE url), so two
+  // concurrent submissions of the same URL can't race a separate pre-check.
+  const res = await env.DB.prepare(
+    "INSERT INTO links (url, note) VALUES (?, ?) ON CONFLICT (url) DO NOTHING RETURNING id, submitted_at",
+  )
     .bind(url, note)
     .first<{ id: number; submitted_at: string }>();
-  return json({ duplicate: false, id: res!.id, url, note, status: "new", submitted_at: res!.submitted_at }, 201);
+  if (!res) {
+    const existing = await env.DB.prepare("SELECT id, status FROM links WHERE url = ?")
+      .bind(url)
+      .first<{ id: number; status: string }>();
+    if (!existing) return error("insert conflict — please retry", 500);
+    return json({ duplicate: true, id: existing.id, status: existing.status, url }, 200);
+  }
+  return json({ duplicate: false, id: res.id, url, note, status: "new", submitted_at: res.submitted_at }, 201);
 };
 
 export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
