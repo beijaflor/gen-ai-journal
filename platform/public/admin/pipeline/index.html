@@ -129,13 +129,20 @@
     document.body.addEventListener("click", async (e) => {
       if (e.target.dataset?.a !== "retry") return;
       e.target.disabled = true;
-      await fetch(`/api/links/${e.target.dataset.id}`, {
-        method: "PATCH",
-        headers: { "content-type": "application/json" },
-        credentials: "same-origin",
-        body: JSON.stringify({ status: "new" }),
-      });
-      load();
+      try {
+        const res = await fetch(`/api/links/${e.target.dataset.id}`, {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          credentials: "same-origin",
+          body: JSON.stringify({ status: "new" }),
+        });
+        if (!res.ok) { alert("retry failed (" + res.status + ")"); return; }
+        load();
+      } catch (err) {
+        alert("retry failed: " + err);
+      } finally {
+        e.target.disabled = false;
+      }
     });
 
     $("filters").addEventListener("click", (e) => {
