@@ -25,10 +25,16 @@ functions/            Pages Functions = the HTTP API
   api/cycle.ts        GET registry state, POST rollover (seed counter per #165 rule)
   api/pipeline.ts     joined operational view for the console
   api/events.ts       GET audit trail: ?limit= (≤200) &event= &summary_id= &link_id=
+  admin/summaries/    GET /admin/summaries/:id — server-rendered summary detail
+                      page (#173): content, link + run metrics, actions
+                      (dismiss / re-open / re-summarize), per-run event log
+  _lib/summary_page.ts  pure HTML renderer for the detail page (unit-tested)
 public/               static, Access-protected where sensitive
   submit/ inbox/      link intake UI + bookmarklet (+ latest-events panel)
   admin/pipeline/     operations console: states, errors, metrics, retry, rollover
   admin/logs/         events log: full audit trail, filterable, auto-refresh
+                      Lists are read-mostly (#173): NNN links navigate to the
+                      detail page; only retry-on-blocked stays on the console
 worker/               companion Worker "gen-ai-journal-pipeline"
   src/index.ts        SummarizerDO: alarm-driven queue (debounce 20s, serial,
                       stale-claim recovery, infra-retry via alarm backoff)
@@ -66,6 +72,9 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
 - Dismiss is a **reversible flag**: the summary row stays, marked `dismissed`
   (excluded from `status=workdesk` consumers; published rows never touched).
   Re-open flips it back instantly — no regeneration, no token spend.
+- **Re-summarize** (detail page, confirm-gated): PATCH the summarized link
+  back to `new` while its summary is NOT dismissed → the pipeline re-runs and
+  overwrites the content under the same NNN (token spend, `updated_at` moves).
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
 - Every summarization-lifecycle interaction lands in the append-only `events`

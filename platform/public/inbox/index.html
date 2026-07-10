@@ -17,6 +17,7 @@
     li { border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; }
     li .u a { color: #1f4e79; word-break: break-all; text-decoration-thickness: 1px; }
     li .meta { font-size: 12.5px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    li .meta a.nnn { color: var(--accent); font-weight: 600; }
     .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; }
     .pill.new { background: #e7f2ea; color: #22633c; }
     .pill.consumed { background: #e8eef5; color: #33567a; }
@@ -24,8 +25,6 @@
     .pill.blocked { background: #fbe9e7; color: #a33326; }
     .err { color: #a33326; font-size: 12px; margin-top: 2px; word-break: break-all; }
     .note { font-size: 13px; color: #444; margin-top: 4px; }
-    .act { margin-left: auto; }
-    .act button { font-size: 12px; border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 2px 10px; cursor: pointer; }
     #empty { color: var(--muted); font-size: 14px; padding: 28px 0; }
     nav { margin-top: 28px; font-size: 13.5px; }
     nav a { color: var(--accent); margin-right: 14px; }
@@ -40,6 +39,7 @@
     #events .pill.editor { background: #e8eef5; color: #33567a; }
     #events .pill.pipeline { background: #fdf3e4; color: #8a5307; }
     #events td.subj { white-space: nowrap; color: #444; }
+    #events td.subj a { color: #1f4e79; }
   </style>
 </head>
 <body>
@@ -86,32 +86,22 @@
         if (l.error) { const er = document.createElement("div"); er.className = "err"; er.textContent = l.error; li.appendChild(er); }
         const meta = document.createElement("div"); meta.className = "meta";
         const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status === "new" ? "generating" : l.status;
-        const t = document.createElement("span"); t.textContent = (l.summary_id ? "NNN " + l.summary_id + " · " : "") + (l.submitted_at || "").replace("T", " ").slice(0, 16) + "  ·  L" + l.id;
+        meta.appendChild(pill);
+        if (l.summary_id) {
+          // Read-mostly list (#173): actions live on the summary detail page.
+          const nnn = document.createElement("a");
+          nnn.className = "nnn";
+          nnn.href = "/admin/summaries/" + encodeURIComponent(l.summary_id);
+          nnn.textContent = "NNN " + l.summary_id;
+          nnn.title = "summary detail: content, actions, run log";
+          meta.appendChild(nnn);
+        }
+        const t = document.createElement("span"); t.textContent = (l.submitted_at || "").replace("T", " ").slice(0, 16) + "  ·  L" + l.id;
         t.title = "L" + l.id + " = link id used as subject in /admin/logs";
-        meta.appendChild(pill); meta.appendChild(t);
-        const act = document.createElement("span"); act.className = "act";
-        if (l.status !== "dismissed") act.appendChild(actBtn(l.id, "dismissed", "dismiss"));
-        else act.appendChild(actBtn(l.id, "new", "re-open"));
-        meta.appendChild(act);
+        meta.appendChild(t);
         li.appendChild(meta);
         list.appendChild(li);
       }
-    }
-
-    function actBtn(id, status, label) {
-      const b = document.createElement("button");
-      b.textContent = label;
-      b.onclick = async () => {
-        await fetch("/api/links/" + id, {
-          method: "PATCH",
-          headers: { "content-type": "application/json" },
-          credentials: "same-origin",
-          body: JSON.stringify({ status }),
-        });
-        load();
-        loadEvents();
-      };
-      return b;
     }
 
     async function loadEvents() {
@@ -130,7 +120,15 @@
         actor.appendChild(pill);
         const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
         const subj = document.createElement("td"); subj.className = "subj";
-        subj.textContent = [e.summary_id ? "NNN " + e.summary_id : "", e.link_id != null ? "L" + e.link_id : ""].filter(Boolean).join(" · ") || "–";
+        if (e.summary_id) {
+          const a = document.createElement("a");
+          a.href = "/admin/summaries/" + encodeURIComponent(e.summary_id);
+          a.textContent = "NNN " + e.summary_id;
+          subj.appendChild(a);
+          if (e.link_id != null) subj.appendChild(document.createTextNode(" · L" + Number(e.link_id)));
+        } else {
+          subj.textContent = e.link_id != null ? "L" + Number(e.link_id) : "–";
+        }
         tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(subj);
         rows.appendChild(tr);
       }
