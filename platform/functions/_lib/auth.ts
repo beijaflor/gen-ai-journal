@@ -89,12 +89,22 @@ function getCookie(request: Request, name: string): string | null {
   return m ? m[1] : null;
 }
 
+// String === short-circuits at the first differing char — a (theoretical)
+// timing oracle for the token. timingSafeEqual is a Workers extension; it
+// requires equal byte lengths, hence the guard.
+function timingSafeEqualStr(a: string, b: string): boolean {
+  const ea = new TextEncoder().encode(a);
+  const eb = new TextEncoder().encode(b);
+  if (ea.byteLength !== eb.byteLength) return false;
+  return crypto.subtle.timingSafeEqual(ea, eb);
+}
+
 /** Returns an identity string when authorized, otherwise null. */
 export async function authorize(request: Request, env: Env): Promise<string | null> {
   const authHeader = request.headers.get("authorization") ?? "";
   if (authHeader.startsWith("Bearer ")) {
     const token = authHeader.slice(7).trim();
-    if (env.API_BEARER_TOKEN && token === env.API_BEARER_TOKEN) return "bearer";
+    if (env.API_BEARER_TOKEN && timingSafeEqualStr(token, env.API_BEARER_TOKEN)) return "bearer";
     return null;
   }
   const jwt = request.headers.get("cf-access-jwt-assertion") ?? getCookie(request, "CF_Authorization");
