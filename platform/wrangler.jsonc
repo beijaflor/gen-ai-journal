@@ -1,0 +1,23 @@
+{
+  "name": "gen-ai-journal",
+  "pages_build_output_dir": "./public",
+  "compatibility_date": "2026-06-28",
+  "vars": {
+    "TEAM_DOMAIN": "https://gentle-hill-7034.cloudflareaccess.com",
+    "POLICY_AUD": "573e670ac8efa1333f50da0f6f072b2fc9e1aeb20ebe2ca913952203881295b0"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gen-ai-journal-db",
+      "database_id": "41a485fb-c2ec-40a6-ad21-e2e6bf9f3cf9",
+      "migrations_dir": "./migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "REBUILD_THROTTLE",
+      "id": "1d583e6976fb4e6f84c45e3cdd9ecaec"
+    }
+  ]
+}

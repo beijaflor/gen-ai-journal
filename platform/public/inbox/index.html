@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Link inbox — gen-ai-journal</title>
+  <style>
+    :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; }
+    body { font-family: system-ui, sans-serif; max-width: 860px; margin: 6vh auto; padding: 0 20px; color: #21252d; line-height: 1.55; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    p.sub { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
+    .filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .filters button { border: 1px solid var(--line); background: #fff; border-radius: 20px; padding: 4px 14px; font-size: 13px; cursor: pointer; }
+    .filters button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; }
+    li .u a { color: #1f4e79; word-break: break-all; text-decoration-thickness: 1px; }
+    li .meta { font-size: 12.5px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; }
+    .pill.new { background: #e7f2ea; color: #22633c; }
+    .pill.consumed { background: #e8eef5; color: #33567a; }
+    .pill.dismissed { background: #f0f0ee; color: #888; }
+    .note { font-size: 13px; color: #444; margin-top: 4px; }
+    .act { margin-left: auto; }
+    .act button { font-size: 12px; border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 2px 10px; cursor: pointer; }
+    #empty { color: var(--muted); font-size: 14px; padding: 28px 0; }
+    nav { margin-top: 28px; font-size: 13.5px; }
+    nav a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <h1>Link inbox</h1>
+  <p class="sub">Submitted candidates, rendered as-is. <span id="count"></span></p>
+  <div class="filters" id="filters">
+    <button data-s="" class="on">all</button>
+    <button data-s="new">new</button>
+    <button data-s="consumed">consumed</button>
+    <button data-s="dismissed">dismissed</button>
+  </div>
+  <ul id="list"></ul>
+  <div id="empty" hidden>Nothing here yet.</div>
+  <nav><a href="/submit">→ submit a link</a></nav>
+
+  <script>
+    let current = "";
+    const list = document.getElementById("list");
+    const empty = document.getElementById("empty");
+    const count = document.getElementById("count");
+
+    async function load() {
+      const q = current ? "?status=" + current : "";
+      const res = await fetch("/api/links" + q, { credentials: "same-origin" });
+      if (!res.ok) { empty.hidden = false; empty.textContent = "Failed to load (" + res.status + ")"; list.innerHTML = ""; return; }
+      const data = await res.json();
+      count.textContent = data.count + " link" + (data.count === 1 ? "" : "s");
+      list.innerHTML = "";
+      empty.hidden = data.count !== 0;
+      for (const l of data.links) {
+        const li = document.createElement("li");
+        const u = document.createElement("div"); u.className = "u";
+        const a = document.createElement("a"); a.href = l.url; a.textContent = l.url; a.target = "_blank"; a.rel = "noreferrer";
+        u.appendChild(a); li.appendChild(u);
+        if (l.note) { const n = document.createElement("div"); n.className = "note"; n.textContent = l.note; li.appendChild(n); }
+        const meta = document.createElement("div"); meta.className = "meta";
+        const pill = document.createElement("span"); pill.className = "pill " + l.status; pill.textContent = l.status;
+        const t = document.createElement("span"); t.textContent = "#" + l.id + " · " + (l.submitted_at || "").replace("T", " ").slice(0, 16);
+        meta.appendChild(pill); meta.appendChild(t);
+        const act = document.createElement("span"); act.className = "act";
+        if (l.status !== "dismissed") act.appendChild(actBtn(l.id, "dismissed", "dismiss"));
+        else act.appendChild(actBtn(l.id, "new", "re-open"));
+        meta.appendChild(act);
+        li.appendChild(meta);
+        list.appendChild(li);
+      }
+    }
+
+    function actBtn(id, status, label) {
+      const b = document.createElement("button");
+      b.textContent = label;
+      b.onclick = async () => {
+        await fetch("/api/links/" + id, {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          credentials: "same-origin",
+          body: JSON.stringify({ status }),
+        });
+        load();
+      };
+      return b;
+    }
+
+    document.getElementById("filters").addEventListener("click", (e) => {
+      if (e.target.tagName !== "BUTTON") return;
+      current = e.target.dataset.s;
+      for (const b of document.querySelectorAll("#filters button")) b.classList.toggle("on", b === e.target);
+      load();
+    });
+    load();
+  </script>
+</body>
+</html>
