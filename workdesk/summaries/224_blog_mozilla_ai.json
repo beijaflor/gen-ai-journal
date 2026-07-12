@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:28:52.350693+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの次世代はモデルではなくインフラが鍵：Mozillaが提唱する「コントロールレイヤー」の重要性",
+    "url": "https://blog.mozilla.ai/the-control-layer-why-the-next-era-of-ai-is-about-infrastructure-not-just-models/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Mozillaが発表したオープンソースのLLM管理基盤「Otari」を軸に、AI運用がモデル選定から、コスト、ガバナンス、マルチプロバイダー管理を担うインフラ層（コントロールレイヤー）の構築へとシフトしている現状を解説する。",
+    "summaryBody": "### モデルの改善から「運用の制御」へ\n2026年、AIの主戦場はモデルの性能そのものから、いかに効率的かつ安全に運用するかという「インフラストラクチャ」に移行している。多くの組織が直面しているのは、数十ものモデルが混在する「断片化」、予測不能な「コストの不透明性」、そして規制への対応やデータ主権を確保するための「ガバナンスの欠如」である。\n\n### オープンソースのLLMコントロールプレーン「Otari」\nMozillaは、特定のベンダーに依存しないオープンなAI環境を維持するため、LLMコントロールプレーン「Otari」を開発した。これはアプリケーションとモデルの間に位置し、以下の機能を提供する：\n- **高度なルーティング**: コスト、性能、レイテンシ、コンプライアンス要件に応じた動的なリクエスト振分け。\n- **コストの可視化**: リアルタイムでの利用料追跡と、ポリシーに基づく支出制限の強制。\n- **ガバナンスと透明性**: 「誰がどのモデルに何を尋ねたか」という監査証跡の確保。\n\n### 結論：制御こそが真の差別化要因\nモデルがコモディティ化する中で、真の競争優位性は「AIをいかにスケールさせ、ガバナンスを効かせ、最適化できるか」という運用の成熟度にある。MozillaはOtariをオープンソースとして提供することで、医療や金融、公共機関など、ブラックボックス化したベンダーへの依存を許容できない分野におけるAIの真の民主化を加速させる。",
+    "topics": [
+      "LLM Infrastructure",
+      "Mozilla",
+      "Otari",
+      "AI Governance",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "The Control Layer: Why the Next Era of AI Is About Infrastructure, Not Just Models"
+  }
+}

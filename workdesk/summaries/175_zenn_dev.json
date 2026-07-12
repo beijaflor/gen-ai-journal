@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:40:47.648973+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skills自動最適化の研究、中身はほぼ深層学習の訓練ループだった",
+    "url": "https://zenn.dev/layerx/articles/9f25ec86a31730",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Agent Skillsの自動最適化に関する2026年上半期の研究動向を、深層学習の訓練ループにおける各コンポーネントのアナロジーを用いて体系的に解説。",
+    "summaryBody": "本記事は、Coding Agentに持たせる「スキル（SKILL.md等）」を自動最適化する最新の研究（Trace2Skill, SkillOpt, SkillGrad等）を分析しています。筆者は、これらの研究が共通して深層学習の訓練ループをテキスト空間に移植した構造を持つことを指摘しています。具体的には、パラメータを「スキル文書」、訓練データを「実行トラジェクトリ」、損失関数を「検証信号」、勾配と学習率を「テキスト編集量」に置き換えた最適化手法が紹介されています。正解データが乏しい環境下での自己進化（CoEvoSkills）や、編集予算を用いた規律ある更新（SkillOpt）など、プロンプトエンジニアリングを超えた「Loop Engineering」の実践的なアプローチが詳述されています。結論として、自動最適化の鍵は依然として「信頼できる検証信号（評価）」の設計にあり、これがエンジニアに残された重要な役割であると述べています。",
+    "topics": [
+      "Agent Skills",
+      "AI Agents",
+      "Loop Engineering",
+      "Self-Correction",
+      "Research Trend"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

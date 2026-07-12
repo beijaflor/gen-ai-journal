@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:41:41.962037+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS Code DevContainer を使わなくなった私の、LLM エージェント向け開発環境",
+    "url": "https://zenn.dev/kenfdev/articles/1febc0052b0d71",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMエージェントによる自動開発が中心となったスタイルに最適化するため、VS Code DevContainerから「SSH接続可能な長生きする開発用コンテナマシン」へと環境を移行した記録。",
+    "summaryBody": "### 概要 著者は以前、Remote Dev Containersを最高の環境としていましたが、LLMエージェント（Claude Code等）に作業を任せる頻度が増えたことで、IDE中心から「エージェントが安定して動作する環境」へと優先順位が変化しました。 ### 主な変更点 1. **ドメイン単位のコンテナ運用**: プロジェクト毎にコンテナを作るのではなく、組織やドメイン単位で長生きする開発用コンテナを1つ持ち、その中で複数のgit worktreeを運用する形に。 2. **ADE (Agent Development Environment) の導入**: Orcaというツールを活用し、リモートコンテナへSSH接続してエージェントを並行動作させています。これにより、エージェントの進捗管理やポートフォワードが容易になりました。 3. **シークレット管理**: 1Password CLI (op) を使い、コンテナ内に認証情報をファイルとして残さない安全な設計を採用。 ### 結論 開発環境をプロジェクトに紐付けるのではなく、「個人用の開発マシン」として切り離し、エージェントが動きやすい土壌を整えることが現在の最適解であると述べています。",
+    "topics": [
+      "LLMエージェント",
+      "開発環境",
+      "DevContainer",
+      "Orca",
+      "Git Worktree"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:03:51.988288+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentで変わるAndroid開発環境：Android Studio Agent Mode、CLI、Skillsの活用",
+    "url": "https://qiita.com/takahirom/items/177d10248bbddca84144",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Google I/O 2026で発表されたAndroid StudioのAgent ModeやAndroid CLI 1.0、タスク特化型指示書Android Skillsを活用し、AIエージェントによる高度な開発自動化を実現する手法が解説されています。",
+    "summaryBody": "Google I/O 2026（およびExtended）で発表された、AIエージェントによるAndroid開発の進化をまとめた解説記事です。中心となるのは、IDE内で動作する「Agent Mode」、外部エージェントからAndroid Studioの機能を制御できる「Android CLI」、そして特定タスク（R8最適化やPerfetto分析等）の実行手順をAIに提供する共通規格「Android Skills」の3要素です。\n\n1. **Agent Mode**: ファイルの読み書き、ビルド、Compose Previewのレンダリング、デバイス操作（Journeys）などをツールとしてエージェントが実行。特に『file critic』機能により、ファイル書き込み前後の警告・エラーを自動検知します。\n2. **Android CLI 1.0**: 安定版となり、Claude CodeやAntigravityなどの外部エージェントが、起動中のAndroid Studioを介して高度なコード解析（find-usages等）やアプリ実行を行うインターフェースを提供します。\n3. **Android Skills**: XMLからComposeへの移行や、R8設定の解析、Perfetto SQLを用いたパフォーマンス調査など、専門知識が必要な作業をSKILL.md形式の指示書でAIに委譲する仕組みです。\n\nこれにより、単なるコーディング補助を超え、UI修正、パフォーマンス改善、E2Eテストといった開発ライフサイクル全体をAIが支援する環境が整いつつあります。",
+    "topics": [
+      "Android Studio",
+      "AI Agent",
+      "Android CLI",
+      "Android Skills",
+      "Google I/O"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    }
+  }
+}

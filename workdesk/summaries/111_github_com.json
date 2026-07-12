@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:06:39.001249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Designのシステムプロンプト：AIスロップを排除しプロ仕様のUIを実現するツールキット",
+    "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのClaude Designからリバースエンジニアリングされた、アクセシビリティ重視かつAI特有の安易なデザインを排除するLLM用プロンプトとスキルライブラリが公開されました。",
+    "summaryBody": "Anthropicの「Claude Design」で使用されているプロンプト構造を分析・再構築したリポジトリが注目を集めています。このプロジェクトは、AIが生成しがちな過剰な装飾や定型的なテンプレート（いわゆるAIスロップ）を拒絶し、アクセシビリティ（WCAG）、セマンティックHTML、論理的な階層構造、一貫した色彩設計など、プロフェッショナルなデザイン原則をLLMに徹底させることを目的としています。\n\n主な特徴は以下の通りです：\n- **20章におよぶシステムプロンプト**: 設計哲学、タイポグラフィ、インタラクション状態、ユーザー理解など、網羅的な指示体系を提供。\n- **14の定義済みスキル**: ワイヤーフレーム作成、アクセシビリティ監査、AIスロップ・チェック、インタラクティブ・プロトタイプ生成など、エージェントが呼び出し可能な特定のタスク手順。\n- **プラットフォーム非依存**: Claudeだけでなく、GPTやGemini、ローカルLLMでも利用可能な設計。\n- **品質重視のフロー**: 単なるコード生成に留まらず、フィードバックループとリファインメントを組み込むことで、プロダクトレベルの出力を目指しています。",
+    "topics": [
+      "Claude",
+      "System Prompt",
+      "UI/UX Design",
+      "Accessibility",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Trystan-SA/claude-design-system-prompt: Reverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator."
+  }
+}

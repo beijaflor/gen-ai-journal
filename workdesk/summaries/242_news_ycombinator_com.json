@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:08:16.296512+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最先端AIモデル（Frontier Model）にしか不可能なタスクとは？Hacker Newsでの議論",
+    "url": "https://news.ycombinator.com/item?id=48863171",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Hacker Newsのユーザーたちが、以前のモデルでは困難だったが最新のフロンティアモデルで解決可能になった、バイナリ解析やシステム移植などの高度なユースケースを報告している。",
+    "summaryBody": "Hacker Newsにおける「フロンティアモデル（GPT-5クラスやFable、Sol等と呼称される最先端モデル）でなければ達成できなかった最近のタスクは何か？」というスレッドの議論をまとめた内容です。参加者からは、単なるコード生成を超えた、以下のような高度な事例が報告されています。\n\n- **バイナリ解析と移植**: 90年代のDOSゲームのRustへの書き換えや、PS1ゲームの静的リコンパイラ作成、ワイドスクリーン化対応など、高度な推論と持続的なコンテキスト維持が必要な作業。\n- **低レイヤのシステム構築**: M4 Mac miniへのLinuxネイティブ移植におけるブートローダーのパッチ適用や、カーネルのビルド・デバッグワークフローの自動構築。\n- **高度なセキュリティ監査**: 人間や旧モデルが見逃すような、マルチサービスのリポジトリを横断するリモートコード実行（RCE）脆弱性の特定。\n- **複雑なドキュメントと意思決定**: ドイツの難解な税務通知の解釈や、不十分な指示から製品アーキテクチャを設計するエージェント的タスク。\n\n多くの意見は、定型的なタスクではモデル間の差が縮まっているものの、「自律的なエージェント動作」や「システム境界を越えた深い洞察」において、フロンティアモデルが依然として独自の価値を提供していると指摘しています。",
+    "topics": [
+      "LLM",
+      "ソフトウェア開発",
+      "リバースエンジニアリング",
+      "セキュリティ監査",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "Ask HN: What was the last task where only a frontier model could do it?"
+  }
+}

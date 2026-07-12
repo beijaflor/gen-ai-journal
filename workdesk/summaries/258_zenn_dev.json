@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:01:31.190269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-cost-bench でコーディングエージェントの品質とコストを測ってみる",
+    "url": "https://zenn.dev/aws_japan/articles/agent-cost-bench-model-compare",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWSが公開するベンチマークツール「agent-cost-bench」を用いて、AIコーディングエージェントの品質・コスト・レイテンシを定量的に比較・評価する方法を解説した記事です。",
+    "summaryBody": "この記事では、aws-samples で公開されている `sample-agent-cost-bench` フレームワークを使用し、AIコーディングエージェント（特に Kiro CLI）のパフォーマンスを測定する手順を解説しています。このツールは、隔離されたワークスペースで同一条件のタスクを実行し、テレメトリからクレジット消費を自動抽出、隠しテスト（pytest等）を用いて客観的に採点する仕組みを備えています。\n\n著者は実際に Claude 3.5 Sonnet / Opus 4.8 / Haiku 4.5 の3モデルを比較。その結果、「Sonnet と Opus は品質が同等ながら、Opus はコストが約1.7倍高い」「Haiku は失敗を含めても成功1回あたりのコスト（Cost per Success）が最安である」といった具体的な数値を導き出しています。また、上位モデルほど実行ごとの推論量にばらつきがあり、バッチ処理の見積もりにはバッファが必要であるといった実務的な洞察も共有されています。最終的に、一般的な指標だけでなく、自前のリポジトリとテストを用いて「自分の条件」で測定することの重要性を強調しています。",
+    "topics": [
+      "AIコーディングエージェント",
+      "ベンチマーク",
+      "AWS",
+      "LLMコスト評価",
+      "Kiro CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

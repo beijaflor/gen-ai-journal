@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:35:06.420561+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIモデルのデュアルユース知識を「オフ」にする新手法：Anthropicが「GRAM」を発表",
+    "url": "https://www.anthropic.com/research/off-switch-dual-use",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicとAE Studioは、AIモデルの特定の専門知識を独立したモジュールに分離して学習させ、必要に応じて安全に機能を取り除ける新手法「GRAM」を発表した。",
+    "summaryBody": "Anthropicは、サイバーセキュリティやウイルス学などの「デュアルユース（軍民両用）」知識をモデルから外科的に切り離す新手法「GRAM（Gradient-Routed Auxiliary Modules）」を発表した。従来の情報フィルタリングは、用途ごとに別個のモデルを学習する必要があり、多大なコストがかかっていた。GRAMは、トランスフォーマーの各層に特定のドメイン専用のモジュール（追加ニューロン）を設け、学習時にドメイン特有の知識がそのモジュールのみに蓄積されるよう勾配を制御する。これにより、学習後は特定のモジュールを削除するだけで、汎用性能を維持したまま、特定の危険な知識だけを「オフ」にできる。50億パラメータ規模のモデルでの実験では、この手法がデータフィルタリングと同等の効果を持ち、ファインチューニングによる知識の回復に対しても既存のアンラーニング手法より高い耐性を示すことが確認された。",
+    "topics": [
+      "Anthropic",
+      "AI安全性",
+      "機械学習",
+      "GRAM",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "An off switch for dual-use knowledge in AI models"
+  }
+}

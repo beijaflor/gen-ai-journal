@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:02:49.102941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CodexのdefaultをGPT-5.6 Terraにした理由：GPT-5.5/5.4との比較",
+    "url": "https://zenn.dev/hjpotter1/articles/59622ac112d0a7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ChatGPT PlusプランのCodexにおいて、コストと性能のバランスが最も優れた「GPT-5.6 Terra」を常用モデルに据え、SolやLunaと使い分ける最適戦略を考察。",
+    "summaryBody": "2026年7月のGPT-5.6シリーズ（Sol/Terra/Luna）登場に伴い、開発ツールCodexでの最適なモデル選択を分析した記事です。筆者は、フラッグシップのSolがGPT-5.5と同等のクレジット消費（高コスト）であるのに対し、中間モデルのTerraが旧世代のGPT-5.4と同じ半分程度のコストで済む点に注目しています。5時間あたりのメッセージ枠の制限を考慮しつつ、日常の実装やコード改修はTerraをデフォルトとし、高度な推論が必要な時のみSolへ、定型的な大量処理はLunaへとモデルを切り替える運用が推奨されています。API価格とCodexクレジットの違い、そして実際のタスクに応じた「小さく切る」開発スタイルの重要性が強調されています。",
+    "topics": [
+      "OpenAI",
+      "GPT-5.6",
+      "Codex",
+      "コスト最適化",
+      "AI開発ツール"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 82
+    }
+  }
+}

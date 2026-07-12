@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:29:25.877743+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LiteRT.js：ブラウザ上で高性能なAI推論を実現するGoogleの新しいJavaScriptライブラリ",
+    "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが発表したLiteRT.jsは、WebAssemblyやWebGPU、WebNNを活用することで、Webブラウザ上でのAI推論を劇的に高速化するJavaScriptライブラリです。",
+    "summaryBody": "Googleは、オンデバイス推論ライブラリLiteRT（旧称TensorFlow Lite）のJavaScriptバインディングである「LiteRT.js」を正式に発表しました。このライブラリは、WebAssemblyを通じてネイティブの最適化ランタイムをブラウザに持ち込み、ユーザーのプライバシー保護、サーバーコストの削減、超低遅延な体験を可能にします。\n\n主な特徴と利点は以下の通りです：\n- **高度なハードウェア加速**: CPU向けのXNNPACK、GPU向けのWebGPU（ML Drift）、そしてNPU向けのWebNNをサポートし、従来のWebランタイムと比較して最大3倍のパフォーマンス向上を実現します。\n- **シームレスな移行と変換**: TensorFlow.jsからの進化形として位置付けられ、PyTorchモデルのワンステップ変換や、AI Edge Quantizerによるレイヤーごとの量子化設定が可能です。\n- **広範な統合**: Ultralytics YOLOフレームワークとの公式統合により、物体検出モデルなどのデプロイが容易になっています。\n- **将来性**: WebNNを通じたNPU利用により、電力効率の高い推論や、ブラウザ上での大規模言語モデル（LLM）実行に向けた最適化が進められています。",
+    "topics": [
+      "LiteRT.js",
+      "WebGPU",
+      "WebNN",
+      "On-device AI",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "LiteRT.js, Google's high performance Web AI Inference"
+  }
+}

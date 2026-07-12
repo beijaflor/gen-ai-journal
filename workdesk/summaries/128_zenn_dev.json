@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:02:14.958335+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに外部脳を持たせて1ヶ月運用した全記録",
+    "url": "https://zenn.dev/nobu666/articles/ai-external-brain-digest",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Obsidianを外部記憶(RAG)としてAIに接続し、Markdown形式の管理とローカル意味検索を組み合わせることで、セッションを跨いだ記憶の永続化と高精度な制御を実現した1ヶ月の実践記録。",
+    "summaryBody": "AI（主にClaude Code）にObsidianのvaultを「外部脳」として連携させ、1ヶ月間運用した技術的知見が詳細に綴られています。筆者はAIの標準的なメモリ機能の不透明さやロックインを解消するため、「プレーンなMarkdownでの保持」「記憶の制御を手動で行う」「検索をローカルで完結させる」という3原則を掲げたシステムを構築しました。\n\n実装面では、キーワード検索とローカルLLM（Ollama）を用いた意味検索を組み合わせたハイブリッド構成を採用。さらに、ミスの再発を防ぐ「ミス記録ノート」や、全体の文脈を把握するための「persona.md」「MOC（Map of Content）」を導入することで、断片的な情報の検索（点）と全体像の把握（面）を両立させています。記事内ではAPIキーを誤ってプッシュした失敗談や、バックアップが静かに停止していたトラブルなど、実運用ならではの生々しい教訓も共有されており、特定のツールに依存しないポータブルなAI活用基盤の作り方として非常に示唆に富んでいます。",
+    "topics": [
+      "AI外部脳",
+      "Obsidian",
+      "RAG",
+      "Claude Code",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

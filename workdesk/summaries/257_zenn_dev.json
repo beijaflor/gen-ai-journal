@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:01:45.191770+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI-DLC Workflows 2.0 とは何か、そしてどう実装されているか",
+    "url": "https://zenn.dev/aws_japan/articles/aidlc-workflows-v2-harness-engineering",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWSが提唱するAI中心の開発ライフサイクル「AI-DLC」の実装リポジトリv2における、複数エージェントCLI（Harness）へ適応可能な柔軟なアーキテクチャと設計思想を詳細に解説した技術記事。",
+    "summaryBody": "この記事は、AWSが提唱するAI駆動開発ライフサイクル（AI-DLC）のOSS実装である「aidlc-workflows」のv2ブランチを深掘りしています。主な特徴は「Harness Engineering」という設計思想にあり、コアとなるメソドロジー（32のステージ定義やエージェントのペルソナ）をMarkdownとYAMLで一元管理し、Claude CodeやKiro CLIといった異なるツール（ハーネス）向けにコンパイル・配布する仕組みを備えています。\n\n技術的なポイントとして、決定論的なルーティングを担う「エンジン」とLLMベースで実行を担う「コンダクター」の分離、人間の訂正を将来のルールとして蓄積する「学習ループ」、そして複数ツール間のペイロード差分を吸収する「アダプタ層」の実装が挙げられます。これにより、特定のAIツールに依存せず、かつAIの暴走を防ぎながら人間が適切に監督できる開発プロセスを、コードの改修なしに定義ファイルの調整だけで実現しています。",
+    "topics": [
+      "AI-DLC",
+      "AWS",
+      "Kiro",
+      "Claude Code",
+      "SDLC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

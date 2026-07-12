@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:03:14.736952+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにSQLを生成・実行させる際に注意したこと※AWS編",
+    "url": "https://qiita.com/yakumo_09/items/51419606674100367559",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS環境でLLMを用いたText-to-SQLシステムを構築する際の、DB選定、読み取り専用権限の徹底、スキーマ情報の最適な渡し方、および精度評価の手法について網羅的に解説しています。",
+    "summaryBody": "AWS上でLLMにSQLを生成・実行させる際の実践的な知見をまとめた記事です。まずDB選定において、分析用途ならRedshift、正規化されたOLTPならAuroraという指針を示し、Redshift特有の方言への対策を解説しています。セキュリティ面では、LLMによる予期せぬ破壊操作を防ぐため、Data API経由であっても必ず読み取り専用ユーザーを使用する具体的な設定方法を紹介。精度向上については、テーブル数に応じたスキーマの渡し方（全件投入 vs ベクトル検索）の使い分けや、外部キー情報の重要性を説いています。最後に、EX（実行正解率）によるオフライン評価と、LLM-as-a-Judgeを用いたオンライン評価の併用方法について、AWS Bedrockの機能を交えて詳しく解説しています。",
+    "topics": [
+      "Amazon Bedrock",
+      "Text-to-SQL",
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "LLM-as-a-Judge"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

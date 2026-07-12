@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:29:06.710055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Storybook Workbench: AI生成UIの「負の遺産」を数時間で監査・修正するツールキット",
+    "url": "https://evilmartians.com/chronicles/storybook-workbench-audit-vibe-coded-uis-and-find-hidden-bugs-in-hours",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成したUI（vibe-code）に含まれる不要なコードやアクセシビリティの不備を、Storybook上で視覚化して高速に監査するためのツールセット。",
+    "summaryBody": "AIエージェントによる高速なUI開発（vibe-coding）は便利ですが、未使用のコンポーネントや一貫性のないデザイン、目に見えないアクセシビリティバグといった「スロップ（ゴミ）」をコードベースに蓄積させがちです。Evil Martiansが開発した『Storybook Workbench』は、AIエージェント向けのスキルセットとして機能し、コードベースを自動スキャンして構造化データを生成、それらをStorybook上で可視化します。これにより、エンジニアやデザイナーは、どのコンポーネントがデッドコードか、どの状態に不備があるかを一目で把握できるようになります。実際に469個のファイルを含むプロジェクトを監査したところ、31個の未使用コンポーネントと6個の重大なアクセシビリティバグを、従来の3日間から数時間に短縮して発見できました。Linearとの連携やFigmaとの同期機能も備えており、AI生成コードの負債を管理可能な状態に保ちます。",
+    "topics": [
+      "Storybook",
+      "AI Coding",
+      "Design Systems",
+      "DX (Developer Experience)",
+      "Evil Martians"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "Storybook Workbench: audit vibe-coded UIs and find hidden bugs in hours"
+  }
+}

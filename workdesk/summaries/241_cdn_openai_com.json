@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:05:26.073421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サイクル二重被覆予想の証明",
+    "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ブリッジのない有限の無向グラフにおいて、すべての辺を正確に2回ずつカバーするサイクル群が存在するという「サイクル二重被覆予想」を、線形代数的アプローチを用いて証明した。",
+    "summaryBody": "本論文は、グラフ理論における長年の未解決問題であった「サイクル二重被覆予想（Cycle Double Cover Conjecture）」の証明を提示している。この予想は、Tutte、Itai、Rodeh、Szekeres、Seymourらによって提唱されたもので、ブリッジ（橋）を持たない任意の無向グラフは、各辺を丁度2回覆うサイクルの多重集合を持つという主張である。証明のプロセスでは、まず問題を3次グラフに限定する標準的な帰着を行い、次に8-flow定理およびTutteの群フロー定理を利用して、有限体Γ = F2^3上のnowhere-zero flowを構築している。核心となる手法は、エッジのラベリングを線形代数的な双対性を用いて操作し、各頂点における条件を満たすサイクル集合へと変換する議論である。特筆すべき点として、本論文の証明および執筆は「GPT 5.6 Sol Ultra」および「Codex」というAIモデルによって行われたことが明記されており、複雑な数学的難問に対するAIの解決能力を示唆する内容となっている。",
+    "topics": [
+      "グラフ理論",
+      "サイクル二重被覆予想",
+      "組み合わせ数学",
+      "AIによる証明",
+      "離散数学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "A PROOF OF THE CYCLE DOUBLE COVER CONJECTURE"
+  }
+}

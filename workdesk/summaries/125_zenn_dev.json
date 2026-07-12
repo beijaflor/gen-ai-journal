@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:02:59.649980+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "すでに4800スター、Loop Engineeringとは — “自分の仕事はloopを書くこと”",
+    "url": "https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに逐一プロンプトを打つのではなく、指示・検証・実行を自動で繰り返す「ループ」を設計する新しいエンジニアリング手法「Loop Engineering」の概念と実践を解説する記事。",
+    "summaryBody": "AnthropicのClaude Code開発責任者Boris Cherny氏の発言「My job is to write loops.」を契機に注目される「Loop Engineering」の全容を解説しています。従来のPrompt Engineeringが「言葉選び」に焦点を当てていたのに対し、Loop Engineeringは「自律的な実行サイクル（ループ）の設計」に重きを置きます。\n\n記事の主な要点：\n- **概念の進化**: Prompt → Context → Harness → Loop Engineeringへと抽象化の段階が移行している。\n- **6つの構成要素**: スケジューリング（Trigger）、ゴール条件、隔離ワークスペース、検証者（Verifier）、永続メモリ、コネクタによって構成される。\n- **実践的ツール**: CLIツール群「loop-engineering」を用いた、設計の採点や雛形生成、コスト見積もりなどの具体的な活用法を紹介。\n- **理解負債への警鐘**: エージェントが高速に生成し続けるコードに対し、人間が構造を把握できなくなる「理解負債」のリスクと、検証責任の所在について強調している。\n\n単なるツールの紹介ではなく、一次情報の信頼性を精査した上で、AI時代のエンジニアの役割の変化を論じています。",
+    "topics": [
+      "Loop Engineering",
+      "AI Agent",
+      "Claude Code",
+      "LLM",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

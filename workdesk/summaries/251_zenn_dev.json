@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:03:18.005612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Loop Engineeringで失敗しないためのハーネス設計",
+    "url": "https://zenn.dev/kamo78/articles/kaji-guarded-loop-engineering",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに自律的な開発を任せる「Loop Engineering」において、作業の逸脱や品質低下を防ぐための5層のガード（ハーネス設計）の重要性と、その実装ツール「kaji」を紹介する記事。",
+    "summaryBody": "AIエージェントに「設計・実装・修正・検証」のループを自律的に回させる「Loop Engineering」は、強力である一方で「形骸化したテスト」や「無限修正ループ」といった失敗を招きやすい。本記事では、これらを防ぎAIの出力を制御する外側の仕組みを「ハーネス」と呼び、5つの層（Workflow, Step, Verdict, Quality gate, Standards）で構成されるガードレール設計を提案している。\n\n1. **Workflow**: 工程の分岐や停止条件を定義する層。\n2. **Step**: 各工程でのエージェントの具体的な手順を規定する層。\n3. **Verdict**: AIの判断を構造化出力に縛り、決定論的な遷移を保証する層。\n4. **Quality gate**: Lintやテストなど、LLMを通さない決定論的なチェック層。\n5. **Standards**: コーディング規約やテスト規約を明文化する層。\n\n著者が開発するOSSツール「kaji」およびそのスターターテンプレートは、これらのガードをあらかじめ実装しており、AI駆動開発を「AI任せ」ではなく「検証可能なエンジニアリング」へと昇華させるための実践的なガイドとなっている。",
+    "topics": [
+      "Loop Engineering",
+      "AI Coding Agent",
+      "kaji",
+      "Claude Code",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

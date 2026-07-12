@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:27:34.969539+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Multi-Head Attentionを実装を通じて理解する",
+    "url": "https://qiita.com/joule/items/b6841bdb510929c79dd7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Multi-Head Attentionの仕組みを、NumPyを用いた実装コードと論文の理論的背景を交えて詳細に解説した技術記事。",
+    "summaryBody": "本記事は、LLMの基幹技術であるMulti-Head Attentionについて、数式とNumPyによるスクラッチ実装の両面から解説しています。Self-Attentionが単一の関連性しか学習できないのに対し、Multi-Head Attentionは入力を複数の「ヘッド」に分割し、それぞれ異なる重みで並列処理することで、文法、意味、長距離依存といった多角的な文脈情報を同時に捉えられることを示しています。実装面では、テンソルのリシェイプや転置（`split_heads`, `combine_heads`）による次元操作の重要性に焦点を当て、各ヘッドが異なる表現空間（representation subspaces）を学習する仕組みを具体的に紐解いています。",
+    "topics": [
+      "LLM",
+      "Multi-Head Attention",
+      "Transformer",
+      "NumPy",
+      "自然言語処理"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 25,
+      "overall": 82
+    }
+  }
+}

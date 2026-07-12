@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:27:09.691502+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのサブエージェントを可視化できる便利ツール5選",
+    "url": "https://qiita.com/kamome_susume/items/7c459b63b9e5bde2ea8e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの複雑なサブエージェントの動作を可視化し、進捗やコスト、エージェント間連携を効率的に把握するためのツール5選を紹介しています。",
+    "summaryBody": "### 概要\nClaude Codeにおけるサブエージェントの挙動は、標準のターミナルログだけでは把握が困難です。本記事では、Claude Codeの「Hooks」機能（PreToolUse/PostToolUseなど）を活用して、動作をリアルタイムに可視化する5つのツールを比較・紹介しています。\n\n### 紹介ツール一覧\n1. **Claude Code Agent Monitor**: DAG（有向グラフ）やSankeyダイアグラムでエージェント連携を高度に分析可能。\n2. **claude-view**: npxで即起動できるVS Code風Web UI。複数セッションの管理やコスト・コンテキスト使用率の可視化に強み。\n3. **subagent-viewer**: ターミナル上で動作する軽量なTUIツール。ブラウザを開かずに進捗を確認したい開発者向け。\n4. **claude-watch**: macOSのメニューバーに常駐。タスクの完了を「ちら見」で把握できる簡易性が魅力。\n5. **claude-code-hooks-multi-agent-observability**: スイムレーン形式でエージェント間のメッセージ送受信を詳細に追跡可能。\n\n### 選定のポイント\nツール選びは「情報の詳細さ」と「表示場所」に依存します。チーム分析ならMonitor、複数セッション管理ならclaude-view、軽量さならsubagent-viewerなど、用途に応じた使い分けが推奨されます。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "可視化ツール",
+      "開発ツール",
+      "モニタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

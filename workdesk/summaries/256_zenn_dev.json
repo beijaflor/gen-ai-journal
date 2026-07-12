@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:02:00.934788+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループエンジニアリングをGitHub Copilotで組めるか調べてみた",
+    "url": "https://zenn.dev/jodycraft/articles/3f7548173dcb55",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ループエンジニアリングの概念を整理し、GitHub Copilotにおける自動実行機能やサブエージェントを用いたモデルの使い分けの実現可能性を多角的に検証した解説記事。",
+    "summaryBody": "### ループエンジニアリングの核心とツールの適合性\\n\\n本記事は、2026年に注目を集めた「ループエンジニアリング（Loop Engineering）」という概念を、既存のAIコーディングツールであるGitHub Copilotを中心に掘り下げた調査結果です。\\n\\n#### 1. ループエンジニアリングの定義\\nハーネスエンジニアリングが「モデルの足場」を設計するのに対し、ループは「その足場をいつ・どの頻度で起動し、誰が結果を検証するか」という自律システムの運用設計を指します。Addy Osmani氏らによって提唱され、エージェントが自律的にタスクを完遂するサイクルの構築を目的としています。\\n\\n#### 2. GitHub Copilotでの実現可能性\\n調査の結果、GitHub Copilotはメインセッションのモデル自動切り替えには未対応ですが、`/fleet`（CLI）や「Subagents」（VS Code）機能により、サブエージェントごとにモデルを個別に指定できることが判明しました。これにより、ループ設計の核心である「実装には低コストモデル、検証には高精度モデルを割り当てる」構成が部品レベルで実現可能です。\\n\\n#### 3. 運用の落とし穴\\n自律化が進む一方で、「理解の負債（Comprehension Debt）」やトークンコストの暴走への注意喚起もなされています。筆者は、CIの失敗調査などの定型タスクから、タスクスケジューラを用いた恒久的な自動実行ループの導入を推奨しています。",
+    "topics": [
+      "Loop Engineering",
+      "GitHub Copilot",
+      "Claude Code",
+      "AI Agent",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

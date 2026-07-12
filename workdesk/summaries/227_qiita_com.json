@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:28:09.398237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Personal OS #1】Claude Codeで、毎日の仕事を自動化する仕組み",
+    "url": "https://qiita.com/degudegu2510/items/793cfe76cf8b6982f2f9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのSkill機能を活用し、メール取得からタスク管理、スケジューリング、議事録作成までをAIが自律的に連携・実行する「Personal OS」の設計思想と構成を紹介した記事。",
+    "summaryBody": "Claude Codeを個人の業務基盤（Personal OS）として定義し、日々のルーティンを自動化する高度な活用事例です。主な特徴は、Claude Codeの「Skill（SKILL.md）」機能を利用して自然言語でワークフローを定義し、毎朝9時にAIがメール、カレンダー、前日の未完了タスクを1つのドキュメントに集約する点にあります。さらに、OS標準の`launchd`と連携することで、会議終了後のタイミングでAIに自動で議事録生成を予約させるなど、AIエージェントとしての自律性を高めています。一方で、最終的な判断や送信は人間が行う「人間による承認（Human-in-the-loop）」のフローを組み込むことで、信頼性と実用性を両立させています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "業務自動化",
+      "タスク管理",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

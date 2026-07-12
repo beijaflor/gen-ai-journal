@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:53:10.779941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agent SaaS を支える自社仮想化基盤「Sunaba」への挑戦と実運用",
+    "url": "https://speakerdeck.com/flatt_security/ai-agent-saas-virtualization",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GMO Flatt Securityが、AIエージェントの安全かつ高速な実行環境を求めてFirecrackerベースの独自仮想化基盤「Sunaba」を構築・運用する知見を公開しています。",
+    "summaryBody": "GMO Flatt Securityが開発するAIエージェントSaaS「Takumi」における実行基盤の課題解決を詳説したスライドです。従来のK8s Podによる分離では、1顧客あたりのコスト負担やカーネル共有によるセキュリティ懸念（コンテナエスケープ等）があり、一方でクラウド標準VMは起動時間の遅さがボトルネックでした。これらの課題を克服するため、同社はAWS Lambdaの基盤でもあるFirecrackerを採用したKVMベースの仮想化基盤『Sunaba』をフルスクラッチで開発。Copy-on-Write (CoW) 技術の活用により、VM起動時間を約5秒に短縮し、ピーク時には週次100万VMを処理するスケール性能を実現しました。運用面でも、Grafana Alloyによる監視統合、Blue-Greenデプロイ、独自のDrain機構など、内製基盤ならではの高度なSREプラクティスが共有されています。",
+    "topics": [
+      "Firecracker",
+      "KVM",
+      "AI Agent",
+      "Infrastructure",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

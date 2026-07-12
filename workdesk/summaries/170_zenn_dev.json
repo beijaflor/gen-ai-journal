@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:41:53.180099+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentic RLにおけるMITOとTITO",
+    "url": "https://zenn.dev/mkj/articles/e63b7e25a1c853",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの強化学習（Agentic RL）において、トークナイザーの再エンコードによる「トークンドリフト」が学習を不安定化させる問題と、日本語におけるその顕著さを解説した記事。",
+    "summaryBody": "LLMをエージェントとして学習させる「Agentic RL」では、モデルが生成したトークンと文字列から再エンコードしたトークンが一致しない「トークンドリフト」が学習崩壊の原因となります。メッセージを媒介とするMITO（Message-In Token-Out）手法では、モデルが関与していないトークンに勾配が流れるリスクがあるため、トークン列を直接扱うTITO（Tokens-In Tokens-Out）原則の遵守が重要です。本記事の実験により、日本語は英語に比べてトークン分割の境界が曖昧であるため、このドリフトが発生しやすく、Agentic RLの難易度を高める要因となっていることが示唆されています。",
+    "topics": [
+      "Agentic RL",
+      "LLM",
+      "強化学習",
+      "トークナイザー",
+      "日本語NLP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

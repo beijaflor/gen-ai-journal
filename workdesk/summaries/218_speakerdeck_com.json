@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:30:31.109510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeとハーネスについて考えてみる",
+    "url": "https://speakerdeck.com/oikon48/claude-codetohanesunituitekao-etemiru",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを「ハーネス（馬具）」と定義し、モデル・内部・外部の3層構造から、AIエージェントを効率的に制御するための設計思想を解説しています。",
+    "summaryBody": "本スライドは、Anthropicが提供するCLIツール「Claude Code」の本質を「ハーネス（馬具）」というメタファーを用いて解説した技術資料です。開発者のBoris Cherny氏の言葉を引用し、AIモデル（馬）を制御するためのインフラ（ハーネス）の重要性を説いています。\n\n主な内容は以下の通りです：\n- **3層構造の定義**: AI駆動開発を「モデル（推論）」「内部ハーネス（Claude Code本体のループ・ツール）」「外部ハーネス（CLAUDE.mdやMCP等の独自設定）」の3つに分類。\n- **ハーネスエンジニアリングの主戦場**: 開発者が直接改善できるのは「外部ハーネス」の層であり、ここをいかに設計するかが開発効率の鍵となる。\n- **運用指針**: 不具合の切り分けを容易にするためにハーネスを「小さく保つ」こと、ツールの変更に強い「ポータブルな構成」にすること、そしてまずは「内部ハーネスとモデルの素の実力」を使い倒すことの重要性を強調しています。\n\nAIを単なるチャット相手ではなく、特定の開発環境に最適化されたエージェントとして統合するための実践的なフレームワークを提供しています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "ハーネスエンジニアリング",
+      "Anthropic",
+      "エージェント設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

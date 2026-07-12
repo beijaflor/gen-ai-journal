@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:04:16.766292+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS MCP Serverが普通に使えるようになったよ！ #Claude",
+    "url": "https://qiita.com/moritalous/items/6102ef63dc60c7e6ee3d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWS公式のMCP ServerがClaude Desktop等で容易に連携可能になり、IAMとOAuthを利用したセキュアなAWSリソース操作が実現した。",
+    "summaryBody": "Agent Toolkit for AWSの一部である公式AWS MCP Serverの導入手順と使用感が解説されています。従来の手法と比較して設定が大幅に簡略化されており、Claude Desktopの「カスタムコネクタ」から特定のリモートURLを追加するだけで利用が開始できます。認証面では、IAMユーザーの作成と専用ポリシーの付与に加え、OAuthによるブラウザ経由のサインインフローが統合されています。記事内では実際にS3バケット情報の取得や権限不足によるエラー挙動が確認されており、IAMの権限設定が厳密に反映される実用的なツールとしての完成度が示されています。",
+    "topics": [
+      "AWS",
+      "MCP",
+      "Claude",
+      "IAM",
+      "Agent Toolkit for AWS"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

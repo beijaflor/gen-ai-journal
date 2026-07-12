@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:08:49.174836+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの消費電力は標準的な生成AIの136倍に達する：KAISTが初の体系的分析結果を発表",
+    "url": "https://en.sedaily.com/technology/2026/07/06/ai-agents-consume-136-times-more-power-than-standard",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "KAISTの研究チームは、AIエージェントが複雑なタスクを遂行する際に、標準的な生成AIと比較して最大136.5倍の電力を消費し、GPUの待機時間も大幅に増加することを世界で初めて定量化した。",
+    "summaryBody": "韓国科学技術院（KAIST）のユ・ミンス教授らの研究チームは、AIエージェントが実際のサービス環境で消費するリソースと電力を体系的に分析した。AIエージェントは自律的な計画策定や外部ツール（検索、計算、コード実行）の利用を行うため、単一応答型の生成AIに比べて負荷が劇的に増大する。\n\n分析の結果、700億パラメータのLLMを用いたAIエージェントは、1クエリあたり平均348.41Whを消費し、これは従来の生成AIの136.5倍に相当することが判明した。また、AIエージェントは推論過程で平均9.2倍多くのLLM呼び出しを行い、応答時間は最大153.7倍に達する。特に、ツール切り替えの際にGPUが計算を行わず待機する「アイドル状態」が全実行時間の54.5%を占めており、ハードウェアの利用効率に大きな課題があることが浮き彫りになった。\n\n将来的に1日137億件の要求が発生した場合、データセンターの電力需要は198.9GW（米国の総消費電力の約半分）に達すると試算されている。研究チームは、モデルの性能向上だけでなく、半導体、データセンター、電力インフラを統合的に最適化する「コ・デザイン」が不可欠であると提言している。",
+    "topics": [
+      "AIエージェント",
+      "消費電力",
+      "KAIST",
+      "LLM",
+      "データセンター"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "AI Agents Consume 136 Times More Power Than Standard Generative AI"
+  }
+}

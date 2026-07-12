@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T15:59:08.909884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代におけるC#でのBenchmarkDotNetを使った最速コードの書き方",
+    "url": "https://neue.cc/2026/07/06_highperformancecode_with_ai.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIにJITの機械語や分岐予測などの詳細な実行統計を与えることで、C#のマイクロベンチマークを自律的に改善させ、人間を超える超高速なブランチレス/SIMDコードを生成する最新手法の解説。",
+    "summaryBody": "AIエージェントが開発を主導する時代において、BenchmarkDotNetのDisassemblyDiagnoserやHardwareCounter（分岐予測ミス等）を活用し、AIに詳細なコンテキストを与える最適化手法が紹介されています。著者は、AIに「なぜ速くなったか」を理解させるための証拠（asmや統計データ）を揃えることで、改善ループの精度が劇的に向上すると主張しています。\n\n記事では2つの具体的な最適化事例が提示されています。1つ目は`Sum`関数のSIMD化で、AIがAVX-512のマスクレジスタやループ展開を駆使し、.NET 11の`TensorPrimitives`に匹敵する極限のコードを生成した例。2つ目は`MessagePack`の整数値書き込み処理で、AIが`lzcnt`とビット演算、ルックアップテーブルを組み合わせた高度な「ブランチレス」コードを自律的に導き出し、分岐予測ミスが頻発するケースで実行時間を5分の1以下に短縮した例です。最新モデル（Fable 5等）の分析能力は、特定の関数領域において人間のエキスパートを凌駕し始めており、開発者の役割はコードの「書き手」から、AIへの指示と成果物の「オーナーシップ」を担う存在へとシフトしつつあります。",
+    "topics": [
+      "C#",
+      "BenchmarkDotNet",
+      "AI Coding",
+      "SIMD",
+      "Performance Tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

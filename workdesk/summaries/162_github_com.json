@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:43:42.626198+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "colibri: 25GB RAMの一般PCで744B MoEモデル（GLM-5.2）を実行する軽量エンジン",
+    "url": "https://github.com/JustVugg/colibri",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "「colibri」は、ディスクから必要なパラメータを動的に読み込むことで、25GB RAMの一般PCでも7,440億パラメータの超大規模言語モデルGLM-5.2（MoE）を動作可能にする、ピュアC言語製の軽量推論エンジンです。",
+    "summaryBody": "### 概要\n「colibri」は、744B（7,440億）という膨大なパラメータ数を持つMixture-of-Experts (MoE) モデル「GLM-5.2」を、一般的なコンシューマーPC（RAM約25GB）で動作させることを目指したオープンソースプロジェクトです。外部ライブラリに依存せず、ピュアC言語（約2,400行）で実装されています。\n\n### 技術的ハイライト\n- **エキスパート・ストリーミング:** MoEモデルの全エキスパートをメモリに載せるのではなく、推論に必要なエキスパートのみをディスク（NVMe SSD等）から随時ストリーミングすることで、RAM消費を劇的に削減（常駐部分は約9.9GB）。\n- **高度な推論技術:** MLA (Multi-head Latent Attention) によるKVキャッシュの57倍圧縮、MTP (Multi-token-prediction) による投機的デコード、GBNF文法制約による高速化などを実装しています。\n- **マルチプラットフォーム:** Linux、macOS、Windows 11（MinGW-w64）にネイティブ対応。\n- **拡張性:** OpenAI互換のAPIサーバー機能を備え、既存のWeb UIなどと連携可能です。また、一部の層をVRAMに保持する実験的なCUDAバックエンドも提供されています。\n\n### 現状と展望\nディスクI/Oが主なボトルネックとなるため、生成速度は現状0.1～1.0 token/s程度と低速ですが、高速なストレージや十分なRAMキャッシュがあればさらなる高速化が可能です。巨大モデルを安価な環境で検証可能にする極めてユニークなアプローチです。",
+    "topics": [
+      "LLM",
+      "Inference Engine",
+      "MoE",
+      "GLM-5.2",
+      "Local LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - JustVugg/colibri: Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:40:15.344563+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code が「プロンプトインジェクション検出」を報告してきたので解析したら作話だった",
+    "url": "https://zenn.dev/nanasess/articles/claude-code-prompt-injection-confabulation",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeがツール出力へのプロンプトインジェクションを誤検知・作話した事例を、トランスクリプト解析で検証し、モデルの判断に依らない決定論的なセキュリティ対策の重要性を解説。",
+    "summaryBody": "本記事は、Claude Codeがセッション中に存在しない「rm -rf」等の攻撃コードを検出したと虚偽の報告を行った事象の技術的な検証記録である。著者はローカルに保存されたJSONL形式のトランスクリプトを精査し、攻撃の形跡が実際のツール実行結果（tool_result）にはなく、モデル自身の出力（assistant）にのみ存在していたことを確認した。この「作話（Confabulation）」が158kトークンを超える巨大コンテキスト下での判断品質低下に起因すること、そして虚偽の物語がプロジェクトメモリを汚染し将来のセッションに感染するリスクを明らかにしている。結論として、LLMの自律的な判断やルール（CLAUDE.md）のみに依存せず、PreToolUse hookを用いた決定論的なスクリプトによるコマンド制限などの多層防御の実装を強く推奨している。",
+    "topics": [
+      "Claude Code",
+      "AIセキュリティ",
+      "LLM",
+      "プロンプトインジェクション",
+      "作話"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

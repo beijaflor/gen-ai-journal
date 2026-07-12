@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:48:59.791398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel Agent: プロダクション環境に導入可能な自律型AIエージェント",
+    "url": "https://vercel.com/blog/vercel-agent",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel Agentは、プロダクション環境の障害調査から修正提案、PR作成までを安全に行うAIエージェントで、独自の権限モデルとサンドボックス実行による安全性を備えています。",
+    "summaryBody": "Vercelは、プラットフォームに深く統合された自律型AIエージェント「Vercel Agent」の機能を拡張しました。このエージェントは、本番環境で障害が発生した際にログやメトリクスを即座に調査し、根本原因を特定してロールバックの推奨や修正PRの作成を数分で実行します。\n\n安全性を確保するため、主に3つの仕組みが導入されています：\n1. **独自のアイデンティティ**: エージェントは「vercel-agent」として動作し、すべてのアクションが追跡可能です。\n2. **Plan-to-permission モデル**: デフォルトは読み取り専用で、アクションを実行する際は具体的な「プラン」を提示し、ユーザーの承認を得てから短時間の権限が付与されます。\n3. **サンドボックス実行**: 生成されたコードは、隔離された環境（Firecracker microVM）で事前にビルドやテストが検証されます。\n\nAIの非決定的な性質を考慮し、不変デプロイメント（Immutable Deployments）という既存のインフラ基盤をガードレールとして利用することで、万が一の誤動作も即座に差し戻せる「アンチフラジャイル（反脆弱）」な運用を目指しています。",
+    "topics": [
+      "Vercel",
+      "AI Agent",
+      "SRE",
+      "AI Security",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Vercel Agent: An agent you can let near production"
+  }
+}

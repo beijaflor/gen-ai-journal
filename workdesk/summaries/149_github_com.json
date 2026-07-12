@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:46:45.509670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GeoSQL: ClaudeやGitHub Copilotを地理空間分析エージェントに変えるオープンソースツール",
+    "url": "https://github.com/dekart-xyz/geosql",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GeoSQLは、ClaudeやGitHub Copilotに地理空間データの分析・可視化能力を付与し、地図描画による視覚的フィードバックで空間SQLの精度を4倍向上させるエージェント用スキルです。",
+    "summaryBody": "GeoSQLは、PostGIS、BigQuery、Snowflakeなどのデータウェアハウス上の地理空間データをLLMが直接操作できるようにするツールです。主な特徴は、エージェントがウェアハウスのメタデータを探索し、エンジン固有の空間SQL（ST_INTERSECTS等）を生成、BigQuery等のコスト見積もりを自動で行う点にあります。特に「Map-in-the-loop」機能が強力で、Dekartを使用して結果を地図としてレンダリングし、エージェントがその画像を確認してジオメトリの誤りを自己修正するループを構築します。これにより、テキストのみの検証では回避が困難だった空間的な論理ミスを劇的に低減し、分析の信頼性を高めています。Pythonライブラリとして提供されており、Claude CodeやVS Code Copilotにプラグインとして導入可能です。",
+    "topics": [
+      "地理空間分析",
+      "LLMエージェント",
+      "SQL生成",
+      "Claude",
+      "GitHub Copilot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - dekart-xyz/geosql: Turn Claude/Codex into geospatial analytics agent."
+  }
+}

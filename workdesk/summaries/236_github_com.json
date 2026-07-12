@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:06:39.246526+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Guardian Framework: AI支援開発におけるアーキテクチャの形骸化を防ぐSDLCオーケストレーター",
+    "url": "https://github.com/arman-jalili/guardian-framework",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ビジネス要件からDDD設計、実装、そしてCIによるアーキテクチャ制約の自動検証までを一気通貫で管理し、AI開発における設計とコードの乖離を物理的に防ぐフレームワーク。",
+    "summaryBody": "guardian-frameworkは、AIを用いたソフトウェア開発（AI-Assisted Development）において、設計の形骸化（アーキテクチャ・ドリフト）を防ぐためのSDLCオーケストレーターです。全ての設計資産（モジュール定義、ADR、ロードマップ、CIスクリプト等）を`.pi/`ディレクトリで一括管理し、そこから実装や検証コードを生成する仕組みを提供します。AIとの対話的なドメイン探索から、DDD（ドメイン駆動設計）に基づくレイヤードアーキテクチャの自動生成、さらに「ドメイン層がインフラ層に依存していないか」といった設計制約をCIで強制的にチェックする機能を備えています。オプションのTDDモードでは、設計から自動的に失敗するテストを生成し、AIエージェントにRed-Green-Refactorのサイクルを回させることも可能です。1人の開発者が11日間で14.6万行のRustプロジェクトを構築した実績を持ち、AIの生産性と設計の堅牢性の両立を目指しています。",
+    "topics": [
+      "AI-Assisted Development",
+      "Domain-Driven Design",
+      "Software Architecture",
+      "SDLC Orchestration",
+      "Architecture as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - arman-jalili/guardian-framework: Architecture Enforcement Framework for AI-Assisted Development"
+  }
+}

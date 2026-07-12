@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:28:34.717505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe Codingで商用品質を目指して失敗してきた記録と、いま試している仮説",
+    "url": "https://qiita.com/autotaker1984/items/7d16cf9bb28c1f5ae088",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる開発（Vibe Coding）で商用品質を維持するため、アーキテクチャの強制、別エージェントによるQA、そして実装の骨格に基づく形式手法の適用という試行錯誤の知見をまとめています。",
+    "summaryBody": "AIエージェントを用いたVibe Codingで、プロトタイプを超えた「商用品質」を実現するための実践的な試行錯誤が共有されています。著者は3つの大きな失敗を分析しています。1つ目は、構造をAI任せにしたことで保守不能になった点であり、人間がアーキテクチャを定義しCIゲートで制限する重要性を説いています。2つ目は、仕様と実装の乖離（ドリフト）に対し、実装者とは別のエージェントに受入条件に基づいたQAをさせる手法の有効性を示しました。3つ目は、自然言語から直接Lean 4を用いた形式手法を試みましたが、実装との接地がなく失敗しました。現在は、実装から抽出した型定義（骨格）と仕様を組み合わせ、Leanで抽象モデルを構築して論理矛盾を検知する「順番を逆にする」仮説を検証中であり、AIによる安易な値の補完（フォールバック）を型の穴として検出する手法を提案しています。",
+    "topics": [
+      "Vibe Coding",
+      "AIエージェント",
+      "Lean4",
+      "ソフトウェア品質",
+      "形式手法"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

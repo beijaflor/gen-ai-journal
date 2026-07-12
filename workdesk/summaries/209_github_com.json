@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:32:36.118302+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "adversarial-panel: Claude Code向けマルチモデル敵対的相互レビュー・スキル",
+    "url": "https://github.com/makinux/adversarial-panel",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数の異なるLLMに互いの回答を批判・検証させることで、単一モデルの自己バイアスを排除し推論精度を高める、GANの着想を得たClaude Code用カスタムスキル。",
+    "summaryBody": "このリポジトリで公開されている「adversarial-panel」は、Claude Codeにマルチモデルによる「敵対的相互レビュー」機能を追加するスキルです。LLMの回答が自信満々に誤る（ハルシネーション）問題に対し、単一モデルの自己批判では「生成時と同じ重み（バイアス）」で検証するため限界があるという課題を解決します。\n\nGAN（敵対的生成ネットワーク）の「検証は生成よりも容易である」という原則を推論プロセスに応用。複数の異なるモデル（Claude 3.5 Sonnet、Opus、あるいは外部CLI経由の別ファミリーモデル）を独立して走らせ、3段階のラウンド（独立回答、相互攻撃、反論と譲歩）を経て、最終的にファシリテーターが矛盾を裁定し統合回答を生成します。単なる合意形成ではなく、検証可能な事実に即した「攻撃」を奨励することで、アーキテクチャ設計や根本原因の特定といった重要度の高い技術判断の信頼性を向上させます。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "Multi-Agent",
+      "Adversarial Review",
+      "GAN"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "makinux/adversarial-panel: A Claude Code skill for multi-model adversarial mutual review"
+  }
+}

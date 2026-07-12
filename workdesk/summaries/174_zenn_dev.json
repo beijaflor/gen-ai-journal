@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:40:59.409462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人タスク管理を「判断は人間、更新はエージェント、計算はスクリプト」で設計する",
+    "url": "https://zenn.dev/layerx/articles/797bb5b8935bf6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "判断を人間、更新をAIエージェント、計算をスクリプトに分離することで、保守コストと整合性の問題を解決するObsidianベースのタスク管理設計思想。",
+    "summaryBody": "LayerXのエンジニアが、過去の失敗（手動運用の形骸化、LLMへの丸投げによる文脈喪失）を経て構築した、持続可能な個人タスク管理システムを解説しています。設計の肝は、役割の厳密な分担です。1タスク1ファイルのMarkdownを「真実のソース」とし、Claude Codeのサブエージェントが不変条件を守りながら更新を担当。一方で、ガントチャート生成や期日集計などの決定論的な処理はPythonスクリプトに任せ、ファイル書き込みをフックに自動実行させます。人間は「優先順位の決定」や「完了判断」という文脈を要する判断に集中することで、ツールに振り回されない運用を実現しています。このアプローチは、Anthropicの公式ベストプラクティスとも合致しており、実務のエージェント開発にも通ずる設計思想です。",
+    "topics": [
+      "タスク管理",
+      "Obsidian",
+      "Claude",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}
