@@ -123,3 +123,143 @@ Notes:
 ## Review
 
 - [x] APPROVED - Ready for STEP_04 curation
+
+---
+
+# Assembly Strategies (STEP_07)
+
+Pattern distribution: Progressive-Sequence ×5 (T1/T3/T5/T7/T8), Multi-Perspective ×3 (T2/T4/T6). No Single-Focus or Debate-Contrast — no theme this week has a single dominant "main character" release or a genuine pro/con split; forcing either would manufacture narrative the articles don't support.
+
+## Theme 1 — ループ・ハーネス工学 :: Progressive-Sequence
+
+**Rationale**: The four articles form a natural concept→framework→application→hardening ladder; each assumes the previous. This is the week's defining trend, so the section should teach the vocabulary as it goes.
+
+**Order & role**:
+1. [125] AIエージェント自律開発ループ (4,800★) — **Foundation**: names the "loop" and why per-prompt instruction is obsolete.
+2. [087] ハーネスエンジニアリング入門 (Agent = Model + Harness) — **Framework**: systematizes the足場 concept, Feedback Flywheel, 認知的負債.
+3. [218] Claude Codeとハーネスについて考えてみる — **Application**: maps the framework onto a concrete tool (3層: モデル/内部/外部).
+4. [251] Loop Engineeringで失敗しないためのハーネス設計 (kaji, 5層ガード) — **Hardening**: how the loop fails and the guard layers that prevent drift.
+
+**Narrative arc**: 「逐一指示」から「ループ設計」への転換 → 足場の体系化 → 具体ツールへの適用 → 逸脱を防ぐガード。Opening question: エンジニアの仕事が「プロンプトを打つ」から「ループを設計する」へ移るとき、何を設計するのか。
+
+**Transitions** (grounded):
+- 125→087: 「このループを支える構造を、087は『ハーネス』として体系化する」
+- 087→218: 「その枠組みを、Claude Codeという具体的な道具に当てはめると何が見えるか」
+- 218→251: 「ただしループは放っておくと逸脱する。251はそれを防ぐ5層のガードを示す」
+
+**Emphasis**: 技術深度⭐⭐⭐ / 実務適用⭐⭐⭐ / 概念整理⭐⭐⭐. **Synthesis**: 今週のコミュニティは「ループ＋ハーネス」を共通言語として獲得した。**STEP_08 prompt**: 概念→体系→適用→ガードの順で、各記事が前の記事の前提の上に立つように書く。定義（loop/harness/guard）を初出時に自然に織り込む。
+
+## Theme 2 — フロンティアモデル勢力図 :: Multi-Perspective
+
+**Rationale**: 150/160/196 are peer releases from different labs (xAI/OpenAI/OpenAI-voice) with no single authoritative lead; 240 juxtaposes them empirically. The value is in the spectrum, closed by a head-to-head.
+
+**Order & role**:
+1. [150] xAI Grok 4.5 (👍) — **Perspective A**: 推論効率Opus×4、コーディング躍進、コスト競争力。
+2. [160] GPT-5.6 — **Perspective B**: 目標に応じて拡張するフロンティア、マルチエージェント並列。
+3. [196] GPT-Live — **Perspective C**: モデル競争が「音声・対話」という別軸にも及ぶ。
+4. [240] 4モデル同一課題ベンチ — **Synthesis**: 各モデルを同じ土俵で走らせた実測で締める。
+
+**Narrative arc**: 各ラボの新モデルを並置し、最後に横断ベンチで相対化。No hierarchy — present as peers, then let 240 arbitrate.
+
+**Transitions**: 150→160「同じ週、OpenAIも応じた」 / 160→196「競争は性能だけでなく対話様式にも及ぶ」 / 196→240「では同一課題で走らせると差はどう出るのか」.
+
+**Emphasis**: 性能・コスト⭐⭐⭐ / 業界力学⭐⭐ / 実測⭐⭐⭐. **Synthesis**: リリース競争は「単体スペック」から「同一タスクでのコスト対性能」評価へ。**STEP_08 prompt**: 各モデルを対等に扱い煽らない（feedback: presenting as-is）。240を審判役の締めに使う。
+
+## Theme 3 — GLM 5.2・ローカルLLM経済 :: Progressive-Sequence
+
+**Rationale**: A claim→evidence→mechanism arc: 080 asserts margin collapse, 161 supplies the hard proof, 199 explains the enabling tech.
+
+**Order & role**:
+1. [080] GLM 5.2とAIマージン崩壊の予兆 — **Thesis**: オープンウェイトがフロンティアの推論マージンを脅かす。
+2. [161] GLM 5.2、VATで人間同等精度を1%以下コストで — **Evidence**: 主張を裏づける具体的ベンチ。
+3. [199] ローカルLLM爆速進化の4技術 — **Mechanism**: 量子化/QAT/MoEが家庭用PCでの実用化を支える。
+
+**Narrative arc**: 経済的脅威の提示 → 実証 → 技術的裏づけ。Opening: なぜ今フロンティアラボの価格構造が揺らぐのか。
+
+**Transitions**: 080→161「その予兆は具体的な数字で現れている」 / 161→199「こうした低コスト化を可能にしているのが次の技術群だ」.
+
+**Emphasis**: 経済インパクト⭐⭐⭐ / 技術⭐⭐. **Synthesis**: オープンウェイトの実用性がフロンティアの価格前提を崩し始めた。**STEP_08 prompt**: 080の主張を161の数字で支え、199で「なぜ可能か」を説明して閉じる。
+
+## Theme 4 — AIバブルの数字 :: Multi-Perspective
+
+**Rationale**: Three vantages on the same worsening bubble-math — industry skepticism, corporate accounting, macroeconomics — with no single lead. Complementary, not sequential.
+
+**Order & role**:
+1. [056] 深まるAIラボへの疑念 — **業界視点**: 有力者・監査人からの持続可能性への疑問。
+2. [132] AIブームの死角（現金枯渇・減価償却） — **会計視点**: 好業績の裏のFCF乖離と陳腐化リスク。
+3. [270] FRB、AIインフラ需要がインフレの一因 — **マクロ視点**: 熱狂が実体経済（物価）に及ぶ。
+
+**Narrative arc**: 同じ「バブルの数字」を3つの距離（業界→企業会計→マクロ）から見る。
+
+**Transitions**: 056→132「疑念は個社の会計にも表れる」 / 132→270「その影響は一社を超えマクロ経済にも及ぶ」.
+
+**Emphasis**: 経済リスク⭐⭐⭐ / 具体データ⭐⭐. **Synthesis**: 生産性の物語の足元で、コスト・キャッシュ・物価の帳尻が問われている。**STEP_08 prompt**: 3視点を対等に。悲観の断定ではなく「数字が示す懸念」として提示（feedback: don't dramatize）。
+
+## Theme 5 — 役割変容と本質理解 :: Progressive-Sequence
+
+**Rationale**: Problem→who-wins→what-matters→how arc. Ends on the ⭐ fundamentals piece as the constructive turn.
+
+**Order & role**:
+1. [002] AIはジュニア市場を焼き尽くした — **Problem**: 育成サイクルの断絶（雇用19%減）。
+2. [005] 普通のエンジニアがAI革命を形作る (オライリー) — **Shift**: 価値は発明より「普及・実装」へ。
+3. [063] 「理解」こそが新たなボトルネック — **New value**: 生成物を深く理解する力が要に。
+4. [022] イリヤ推薦のAI論文30選 (⭐) — **Practice**: 本質理解への回帰＝具体的な学びの入口。
+
+**Narrative arc**: 危機 → 価値の移動 → 新しいボトルネック → その磨き方。
+
+**Transitions**: 002→005「では価値はどこへ移るのか」 / 005→063「その普及を担う力の核心が『理解』だ」 / 063→022「理解を深める具体的な一歩がこの論文リストだ」.
+
+**Emphasis**: キャリア⭐⭐⭐ / 実践⭐⭐. **Synthesis**: 実装のコモディティ化の先で、価値は判断・普及・本質理解へ移る。**STEP_08 prompt**: 022を「悲観の後の建設的な締め」に。
+
+## Theme 6 — 人間中心の揺り戻し :: Multi-Perspective
+
+**Rationale**: Four independent domains of backlash (cognition / education / publishing / marketing). Peers, not a sequence; juxtaposition shows the breadth of friction. This is the critical/societal theme.
+
+**Order & role**:
+1. [264] AIデスキリングが始まった — **認知**: 生産性の影で思考・判断が退化。
+2. [151] 対面試験で平均点50%低下 (Brown) — **教育**: 依存が学力に及ぼす実測。
+3. [100] ブログビジネスの崩壊 — **メディア/Web**: 中央値85%減、実体験の価値。
+4. [069] AIファーストブランドの失速 — **消費/ブランド**: 前面のAIが不信を招く。
+
+**Narrative arc**: 個人の認知 → 教育 → メディア → 市場、と「揺り戻し」が広がる層を見せる。
+
+**Transitions**: 264→151「その退化は教育現場で数字に表れた」 / 151→100「学びだけでなくコンテンツ経済も揺れる」 / 100→069「そして消費者はAIの前面化そのものに反発し始めた」.
+
+**Emphasis**: 社会的摩擦⭐⭐⭐ / 実証⭐⭐. **Synthesis**: 効率の物語では説明できない摩擦が、複数領域で同時に積み上がっている。**STEP_08 prompt**: 反AIの断定ではなく、各領域の事実を並べて「揺り戻し」の広がりを示す（feedback: human-resistance theme, present as-is）。
+
+## Theme 7 — 解釈可能性・ガバナンス :: Progressive-Sequence
+
+**Rationale**: See-inside→risk-revealed→governance-response→reality-check arc. The two ⭐ standouts (043, 238) bookend the constructive spine.
+
+**Order & role**:
+1. [043] グローバル・ワークスペース／J-space (⭐) — **Foundation**: Claude内部思考の可視化という解釈可能性の前進。
+2. [070] Vending-Bench: もっともらしい否認を伴う不正 — **Risk**: 内部が見え始めても、モデルは欺瞞を見せる。
+3. [238] AI 2040 プランA (⭐👍) — **Response**: 超知能競争を意図的に遅らせる統治ロードマップ。
+4. [155] 欧州のガバナンス人材不足 — **Reality check**: 統治の理想に対し実装（人材）が追いつかない。
+
+**Narrative arc**: 内部を「見る」→ そこに潜むリスク → 統治の設計 → 実装の現実。
+
+**Transitions**: 043→070「内部が見え始めても、モデルの振る舞いは御しがたい」 / 070→238「だからこそ競争の速度自体を統治する提案が出る」 / 238→155「しかし統治を担う人材は決定的に不足している」.
+
+**Emphasis**: 解釈可能性⭐⭐⭐ / ガバナンス⭐⭐⭐. **Synthesis**: 「見る」技術と「統治する」設計が同じ週に交差したが、実装の人材が最大のボトルネック。**STEP_08 prompt**: 2つの⭐を前後の柱に。070/155を橋渡しの緊張として使う。
+
+## Theme 8 — エージェントセキュリティ :: Progressive-Sequence
+
+**Rationale**: Threat→defensive-design→hardened-infra arc — concrete attack, then principles, then isolation infrastructure.
+
+**Order & role**:
+1. [213] 3ホップでのデータ流出とドメインベース防御 — **Threat**: 間接注入が機密を外部送信する具体経路。
+2. [232] プロンプトインジェクションと安全な設計 (OWASP多層防御) — **Design**: 脅威に対する設計原則。
+3. [268] Sunaba: 自社仮想化基盤 — **Infra**: 実行そのものを隔離する本番基盤。
+
+**Narrative arc**: 攻撃の具体像 → 設計原則 → 隔離インフラ。「賢さ」でなく構造で守る。
+
+**Transitions**: 213→232「この脅威に対し、設計レベルでどう守るか」 / 232→268「設計原則を実行環境の隔離まで落とし込むと」.
+
+**Emphasis**: セキュリティ深度⭐⭐⭐ / 実装⭐⭐. **Synthesis**: エージェントの安全は「賢さ」への期待ではなく、決定論的な境界と実行隔離で担保する段階へ。**STEP_08 prompt**: 攻撃→防御設計→インフラの順で、具体的脅威から実装対策へ降ろす。
+
+---
+
+## Assembly Review
+
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
