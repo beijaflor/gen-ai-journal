@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:22:37.946479+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MaxTextによるエラスティック・トレーニングの紹介：TPUの故障からプロセスを再起動せず自動復旧する仕組み",
+    "url": "https://developers.googleblog.com/we-terminated-a-tpu-mid-training-and-it-recovered-in-seconds-introduction-to-elastic-training-with-maxtext/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudのMaxTextとPathwaySを利用し、TPUノード故障時にジョブを再起動することなくPython例外として処理し、数分以内に学習を自動継続させる「エラスティック・トレーニング」の手法を解説。",
+    "summaryBody": "本記事は、分散学習におけるノード故障への対策としてGoogle Cloudが提案する「エラスティック・トレーニング」の技術詳説です。従来の分散学習では、1台の故障がジョブ全体のタイムアウトと終了を招き、チェックポイントからのフルリセット（数十分単位）を必要としていました。JAX/TPUスタックにおけるPathwaySオーケストレーターとMaxTextを利用することで、ハードウェア故障をPythonの`JaxRuntimeError`として捕捉し、同一プロセス内でリカバリを行うことが可能になります。デモでは、TPU v5eのスライスを強制終了させても、Kubernetesによるノード再スケジューリングを含め2分弱で学習が自動再開される様子が示されています。また、スライス復旧を待たずに残存リソースで学習を続ける「Replica Resize」や、チェックポイントのスルーパスを最適化する「PathwayS Persistence API」などの高度な機能についても言及されています。",
+    "topics": [
+      "TPU",
+      "MaxText",
+      "JAX",
+      "分散学習",
+      "機械学習インフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "We terminated a TPU mid-training and it recovered in seconds: Introduction to elastic training with MaxText"
+  }
+}

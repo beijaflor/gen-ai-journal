@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:45:10.504924+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによる操作が可能なブラウザベースのビデオエディタ「FableCut」",
+    "url": "https://github.com/ronak-create/FableCut",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "JSON形式のタイムラインを採用し、MCPやREST APIを通じてAIエージェントと人間がリアルタイムで共同編集できる、依存関係ゼロのブラウザ型動画編集ツール。",
+    "summaryBody": "FableCutは、タイムラインのすべてを一つのJSONドキュメントとして管理する、ブラウザベースの非線形動画編集ツール（NLE）です。最大の特徴は、AIエージェント（Claude CodeやClaude Desktopなど）がMCP（Model Context Protocol）やREST APIを介して動画を直接カット・編集できる点にあります。編集内容はサーバー送信イベント（SSE）により約150msでブラウザUIに反映されます。\n\n主な機能として、4つのビデオトラックと3つのオーディオトラック、ドラッグ＆ドロップ、キーフレームアニメーション、17種類のトランジション、AIによる背景削除、リファレンス動画の構成（カット点やBPM）を解析して再現する「リメイク機能」などを備えています。技術的にはNode.jsの単一サーバーファイルで動作し、npmパッケージへの依存がない極めて軽量な設計です。人間とAIが同じタイムライン上で作業しても競合が発生しないよう、リビジョン管理による安全な同時編集が保証されています。",
+    "topics": [
+      "FableCut",
+      "AIエージェント",
+      "MCP",
+      "動画編集",
+      "JavaScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - ronak-create/FableCut: Zero-dependency browser video editor that AI agents can drive — JSON timeline, MCP + REST, live-reloading UI"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:41:26.626457+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに作らせたデスクトップアプリ、その後3ヶ月でどうなったか",
+    "url": "https://zenn.dev/kashioka/articles/7e02592d222990",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI開発したアプリの3ヶ月間の運用を振り返り、AIによる脆弱性発見の事例を通じて、開発者の役割が「コーディング」から「検証と判断」へシフトしたことを解説している。",
+    "summaryBody": "Claude Codeで99%のコードを生成したMarkdownビューア「Rendu」の継続開発レポートです。3ヶ月の運用で、外部貢献者の参加やセキュリティ運用の自動化が進んだ一方、AIエージェントによる多角的レビューによって「1クリックで任意コード実行が可能」な深刻な脆弱性が発覚しました。AIが生成したコードの穴をAIが見つけ、人間がその妥当性を検証して修正するという、AI時代の開発実態が詳述されています。著者は、AIによって開発コストが下がる中、開発者の真の価値は「何を作るか」の判断と「AIの出力をどう疑い、実機でどう確かめるか」という検証の質にあると提言しています。技術的な修正のみならず、Apple Developer契約などのAIでは解決できない領域や、判断の責任についても触れられた実践的な内容です。",
+    "topics": [
+      "Claude Code",
+      "AI個人開発",
+      "セキュリティ",
+      "Tauri",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

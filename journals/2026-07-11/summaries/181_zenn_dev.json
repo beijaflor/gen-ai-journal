@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:39:12.365964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの/checkup(旧/doctor)コマンドで環境を診断・自動修正する",
+    "url": "https://zenn.dev/shirochan/articles/a24092cfebefa0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code v2.1.205にて強化された`/checkup`コマンド（旧`/doctor`）を用い、CLI環境の診断から自動修正、最適化までを一括で行う方法を解説しています。",
+    "summaryBody": "AnthropicのAI CLIツール「Claude Code」のアップデート（v2.1.205）により、環境診断コマンド`/doctor`が`/checkup`というエイリアスと共に大幅に強化されました。従来の診断機能に加え、問題の「自動修正」機能が統合されたことが最大の特徴です。具体的には、設定ファイルの不正エントリの修正、MCPサーバー接続の確認、権限設定のテストといった基本的な診断から、未使用プラグインの整理、肥大化した`CLAUDE.md`の分割、最新版へのアップデート提案など、環境のパフォーマンスを向上させるためのアクションを包括的にサポートします。診断結果は視認性の高いフラットツリー形式で表示され、ユーザーの確認を経てから変更が適用される仕組みとなっています。起動時の警告メッセージをこのコマンドに集約することで、CLIの操作性を向上させ、トラブルシューティングのみならず定期的なメンテナンスツールとしての活用が推奨されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLIツール",
+      "開発環境",
+      "トラブルシューティング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

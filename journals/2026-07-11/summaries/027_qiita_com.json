@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:31:33.775968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのコスト暴走と情報漏洩を防ぐ社内Gateway設計: Azure/AWSガバナンスとLiteLLM実装(Phase1→Phase2)",
+    "url": "https://qiita.com/nogataka/items/6251b5727998ca29734c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Azure/AWSのクラウドガバナンスとOSSのLiteLLMを活用し、コスト管理・セキュリティ・監査を集中制御する「社内LLM Gateway」の段階的な設計・実装手法を解説したガイド。",
+    "summaryBody": "企業内でのLLM（Azure OpenAI, Amazon Bedrock等）利用拡大に伴うコスト暴走や情報漏洩リスクへの対策として、API Gatewayによる一元管理の設計指針を提示しています。まず前半では、AzureのRBACやAPIM、AWSのIAM/SCPを用いたインフラ層でのガバナンス設計を整理。後半では、OSSのLiteLLMを用いて「Phase1：プロジェクト/アプリ単位の予算管理」から「Phase2：SSO連携によるユーザー単位の課金・監査」へと段階的に拡張する具体的な実装ロードマップを解説しています。特にAIコーディングツール利用時のソースコード送信対策や、プロンプト全文を保存しない運用、DLP（データ漏洩防止）の実装など、実務的なセキュリティ要件が網羅されています。",
+    "topics": [
+      "LLM",
+      "LiteLLM",
+      "Azure",
+      "AWS",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

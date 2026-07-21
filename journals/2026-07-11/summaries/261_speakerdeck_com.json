@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:00:42.444519+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SREの積み重ねがAI駆動開発のガードレールになった ― 7つの実践",
+    "url": "https://speakerdeck.com/tomoyakitaura/sre-guardrails-the-7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる高速なコード生成を安全に運用するため、SREのプラクティスを「ガードレール」として再定義し、品質と信頼性を担保する7つの実践手法を紹介している。",
+    "summaryBody": "KDDIアジャイル開発センターの事例に基づき、AI駆動開発におけるSREの役割を解説。AIは「増幅器」であるという前提に立ち、OpenSpecを用いた仕様駆動開発によってAIへの入力品質を向上させ、自動化された受け入れ試験やリグレッションテスト、k6を用いた性能試験によってAIの出力を多層的に検証する仕組みを構築している。また、JIT-PAMによる時限的な本番アクセス制御や、モブプログラミングによるリアルタイムレビュー、ボーイスカウトルールの徹底など、従来のSRE手法がAI時代の開発速度を支える「安全な境界線（ガードレール）」として機能することを提唱している。",
+    "topics": [
+      "SRE",
+      "AI駆動開発",
+      "OpenSpec",
+      "テスト自動化",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

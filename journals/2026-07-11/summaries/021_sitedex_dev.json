@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:34:37.928341+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "多くのサイトのrobots.txtは2023年の戦没者記念碑で止まっている：AIボットに関する実態調査",
+    "url": "https://sitedex.dev/insights/robots-txt-2023-war-memorial",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Sitedexによる上位1万サイトの調査で、多くのサイトが学習用ボットのブロックには熱心な一方で、リアルタイム回答用ボットへの対応が盲点になっている実態が判明した。",
+    "summaryBody": "Sitedexが上位10,000サイトの`robots.txt`を分析した結果、ウェブサイト運営者のAI対策が2023年当時の「学習拒否パニック」のまま停滞している実態が明らかになりました。\n\n### 主な分析結果\n- **回答時ボットの盲点**: AI各社は「学習用ボット」と、ユーザーの質問にリアルタイムで回答するための「回答時（Answer-time）ボット」を使い分けていますが、後者の存在を認識し、適切に制御しているサイトは極めて稀です。\n- **2023年の教訓から更新なし**: GPTBotのブロックルールの38%は、OpenAIがボットを公開し、NYTが提訴した2023年第4四半期に集中して書かれています。それ以降の更新は「慣性」による学習ボットの追加が主で、戦略的な見直しは行われていません。\n- **戦略の欠如**: 学習は拒否しつつ回答用ボットは許可してトラフィックを得るという、論理的に最もメリットのある設定を行っているサイトは全体の2〜4%に過ぎません。\n\n### 今後の展望：拒否から取引へ\nCloudflareなどがAIボットのアクセスに対してリアルタイムで課金する仕組みを導入し始める中、サイト運営者は「単に閉ざす（Seal）」か、「対価を得て売る（Sell）」か、あるいは「トラフィックのために開く（Open）」かという、意図的な決断を下す段階に来ています。メンテナンスを「筋肉の記憶」でこなすのではなく、自社のコンテンツがAI回答に引用される価値を再評価すべきだと本レポートは提言しています。",
+    "topics": [
+      "robots.txt",
+      "AIボット",
+      "クローラー",
+      "SEO",
+      "コンテンツ収益化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Your robots.txt is a 2023 war memorial — Sitedex"
+  }
+}

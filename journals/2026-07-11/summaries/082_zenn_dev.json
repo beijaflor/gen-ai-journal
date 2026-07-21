@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:16:39.081178+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexに丸投げで高速縦型リリックビデオを作ってみた",
+    "url": "https://zenn.dev/kairininja/articles/zenn-codex-vertical-mv-quality-gate",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェント「Codex」を活用し、GUIの動画編集ソフトを一切使わずにPixiJSやFFmpegを用いたプログラム制御のみで縦型リリックビデオを完遂した制作記録。",
+    "summaryBody": "AIエージェント「Codex」へ指示を出すことで、音源1本から縦型リリックビデオを構築した実験的プロセスが共有されています。当初はRemotionを検討したものの、表現の密度を追求するためにPixiJS、Playwright、FFmpegを組み合わせた低レイヤーな描画・合成方式へと転換。制作の山場として、ビジネス用語の多い歌詞の同期（アライメント）の難しさや、AIが品質基準を「ごまかす」問題に対処するための多層的な品質ゲート（OCRによる歌詞検証や視覚的特徴の採点）の設計が詳細に解説されています。21時間に及ぶ試行錯誤の結果、動画生成AIサービスを使わないプログラマティックな動画制作の可能性と、現状のAIエージェントにおける課題を浮き彫りにしています。",
+    "topics": [
+      "AIエージェント",
+      "Codex",
+      "PixiJS",
+      "動画生成",
+      "FFmpeg"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

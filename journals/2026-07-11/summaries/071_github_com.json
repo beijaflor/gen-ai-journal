@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:19:32.823577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けオープンソース・セキュリティゲートウェイ「MakerChecker」",
+    "url": "https://github.com/makerchecker/MakerChecker",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの行動に役割ベースの権限管理（RBAC）と人間による承認プロセスを強制し、改ざん不可能な署名付き監査ログを生成するセキュリティ基盤。",
+    "summaryBody": "MakerCheckerは、AIエージェントの自律実行に伴うリスクを管理するための包括的なオープンソース・セキュリティスタックです。主に、エージェントのコードからリスクのあるアクション（データ削除、送金、秘密情報の抽出など）を検出する静的スキャナ「mc scan」、既存のフレームワーク（LangChain, Claude SDK等）に組み込んで権限外の実行を拒否する「エンベデッド・ライブラリ」、そして人間による承認フローと監査証跡を管理する「セルフホスト・サーバー」の3要素で構成されています。最大の特徴は、エージェントが自身の行動を自己承認できないよう「職務分掌」を技術的に強制できる点にあり、すべての決定はEd25519署名とハッシュチェーンによってオフラインでも検証可能なログとして記録されます。これにより、金融や医療といった高度なガバナンスが求められる領域でのエージェント運用を支援します。",
+    "topics": [
+      "AI Agent Security",
+      "Governance",
+      "RBAC",
+      "Human-in-the-loop",
+      "Audit Trail"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - makerchecker/MakerChecker: Open-source security gateway & static scanner for AI agents. Enforce role-based access control (RBAC), human-in-the-loop approvals, segregation of duties, and cryptographically signed, offline-verifiable audit logs."
+  }
+}

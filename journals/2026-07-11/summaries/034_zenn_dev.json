@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:29:24.337288+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のObservability設計 - アプリケーション / インフラ / CI / LLMすべてを監視する（設計編）",
+    "url": "https://zenn.dev/aircloset/articles/d4c32cff8cb230",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIがシステム状況を正確に把握・分析できるよう、監視対象（アプリ、インフラ、CI、LLM）ごとに最適なデータ形式とバックエンドを使い分けるObservability設計の解説。",
+    "summaryBody": "エアークローゼット社における、AI（LLM）を前提としたObservability（観測性）設計の解説記事です。AIに渡すデータの「質」を重視し、AIが回答すべき問い（探索、時系列、履歴、集計）に応じて、観測スタックを以下の4つの軸で最適化しています。1. **アプリケーション**: OTel + Loki + Tempoの標準構成でAIによる調査を可能にする。2. **インフラ**: 全メトリクスをMimirに集約し、AIがリソース状況を把握。3. **CI**: ログをGitHub APIからpullしてLokiへ流すことで、認証情報を隔離しつつAIが故障履歴を検索可能にする。4. **LLM**: GeminiはPrometheusでリアルタイムコスト監視を行い、Claude CodeはBigQueryで詳細な利用統計をSQL集計する。すべてを一つのツールに寄せず、分析の性質に基づいたバックエンド選定を強調しています。",
+    "topics": [
+      "Observability",
+      "OpenTelemetry",
+      "LLM Monitoring",
+      "Architecture",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

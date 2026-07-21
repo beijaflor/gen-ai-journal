@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:39:26.746146+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeと挑む技術的負債の返済 — 止められない本番データ基盤を、一人で載せ替えた話",
+    "url": "https://zenn.dev/rehabforjapan/articles/composer-to-cloud-run-jobs",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloud ComposerからCloud Run Jobsへの移行をAIエージェントのClaude Codeと協働で行い、運用コストを94%削減しながら技術的負債を一人で完遂した実践記録。",
+    "summaryBody": "Rehab for JAPANのCTOが、常時稼働による高コストが課題だったCloud Composer（Airflow）ベースのETL基盤を、従量課金のCloud Run Jobs + Cloud Schedulerへ移行した事例です。通常なら数人月の工数が必要な規模のプロジェクトを、AIエージェント「Claude Code」を活用することで、CTOが通常業務の傍ら一人で約2ヶ月で完遂しました。\n\n移行のポイントは以下の通りです：\n- **シンプルな構成への回帰**: 複雑なオーケストレータを避け、Pythonコードと時刻差起動による疎結合な構成を採用。\n- **データ整合性の担保**: 新旧パイプラインを並行稼働させ、BigQuery上で行数とチェックサムによる自動検証（3日連続一致）を実施。\n- **Terraformによる管理**: 削除保護設定がなされたリソースのstate操作（state rm / import）を駆使した安全な本番切り替え。\n- **AI駆動開発の有効性**: ドキュメント駆動でAIに文脈を与え、実装とテストをセットで並列生成させることで、開発スピードを飛躍的に向上させました。\n\n「やりたいが割に合わない」と放置されがちな技術的負債が、AIの進化によってペイするようになったことを示す先進的な事例となっています。",
+    "topics": [
+      "Claude Code",
+      "Cloud Run Jobs",
+      "Cloud Composer",
+      "Terraform",
+      "技術的負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

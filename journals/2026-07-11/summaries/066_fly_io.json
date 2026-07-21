@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:20:49.120772+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの自己破壊を防ぐ：Fly.ioの「Sprite」による実行環境の分離と安全性の確保",
+    "url": "https://fly.io/blog/building-agents-that-dont-break-themselves/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの「思考」と「実行」をFly.ioのサンドボックス「Sprite」で分離し、チェックポイント機能や動的な認証注入によって、安全で回復可能なエージェント実行環境を構築する手法を紹介しています。",
+    "summaryBody": "AIエージェントにシェル操作を許可すると、誤ったコマンド実行により自分自身の環境や重要なデータを破壊するリスク（Footgun）が生じます。この記事では、Fly.ioの軽量サンドボックス機能「Sprite」を活用し、エージェントのロジック（脳）と実行環境（手）を分離するアーキテクチャを解説しています。\n\n主な特徴とメリットは以下の通りです：\n\n- **セッション単位の隔離**: ユーザーやタスクごとに使い捨てのSpriteを起動し、エージェント本体や他ユーザーから完全に隔離された状態でコードを実行します。\n- **認証情報の動的注入**: `flyctl`などの認証が必要なツールを使う際、トークンをディスクに保存せず、コマンド実行時のみ環境変数として注入することで、漏洩リスクを最小化します。\n- **チェックポイントによる復元**: 破壊的な操作の前に状態を保存でき、エージェントが環境を壊しても数秒で正常な状態にロールバック可能です。これにより、人間による逐一の確認なしでエージェントを自律動作させることが可能になります。\n\nこの構成により、開発者は「エージェントが壊れること」を恐れずに、より高度な自動化に取り組むことができます。",
+    "topics": [
+      "AI Agents",
+      "Sandboxing",
+      "Fly.io",
+      "Security",
+      "LLM Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Building Agents that Don't Break Themselves"
+  }
+}

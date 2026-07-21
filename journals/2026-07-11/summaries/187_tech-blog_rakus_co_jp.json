@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:37:42.508438+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「楽楽精算」AIエージェント実装で立ちはだかった3つの壁と突破の裏側",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260703/aiagent",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模経費精算システム「楽楽精算」へのAIエージェント実装において、コスト・精度・速度の課題をRAGや非同期処理、LLMゲートウェイ構築によって解決した技術的知見の詳解。",
+    "summaryBody": "株式会社ラクスの「AIエージェント開発課」が、主力製品「楽楽精算」に伝票作成AIを導入する際の試行錯誤を解説。直面した3つの壁（高額な推論コスト、個社ごとの複雑なルールの再現精度、同期処理による長い待機時間）に対し、ベクトルDBを用いたRAG構成（過去伝票の模倣によるFew-Shot学習）、既存の強固なルールベース機能とAIを組み合わせた「Human-in-the-Loop」構成、およびKEDAを用いたイベント駆動型の非同期アーキテクチャの採用により突破しました。さらに、全社的なAI活用を見据え、モデルのフォールバック制御を行う「LLMゲートウェイ」や、OpenTelemetryを活用した推論プロセスの可視化基盤を構築。個別最適に留まらない、組織全体のAIネイティブ化を推進するプラットフォーム設計の重要性を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "RAG",
+      "システムアーキテクチャ",
+      "KEDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

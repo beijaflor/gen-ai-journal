@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:31:40.184889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプト注入からデータ流出までの3ホップ：AIエージェントにおけるドメインベース防御の必要性",
+    "url": "https://www.oreilly.com/radar/prompt-injection-to-data-exfil-in-3-hops/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが間接的なプロンプト注入を通じて機密データを外部送信するリスクに対し、従来のL3/L4ネットワークポリシーではなくドメインベースの決定論的制御が必要であることを解説する記事。",
+    "summaryBody": "AIエージェントが「カスタマーチケットの要約」などの正当なタスクを実行する際、データ内に隠された悪意ある指示（間接的プロンプト注入）を読み込み、機密データを外部の攻撃者サーバーへ送信してしまうリスクについて詳説しています。この攻撃は、1.プロンプト注入、2.MCPツール呼び出し、3.443ポートからの送出という3段階で成立しますが、従来のKubernetes NetworkPolicy（IP/ポートベース）では、CDNなどの背後にある攻撃者のドメインを識別できず、この「静かな流出」を防げません。対策として、ポッドごとのアイデンティティに基づき、FQDN（完全修飾ドメイン名）でフィルタリングを行う「決定論的な封じ込め（Deterministic Containment）」の導入を提言しています。具体的には、Cilium（eBPF）、サービスメッシュ、またはクラウドネイティブなファイアウォールを活用し、許可されたドメイン以外への通信をデフォルトで拒否する構成を推奨しています。",
+    "topics": [
+      "AI Security",
+      "Prompt Injection",
+      "Kubernetes",
+      "Data Exfiltration",
+      "Network Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Prompt Injection to Data Exfil in 3 Hops – O’Reilly"
+  }
+}

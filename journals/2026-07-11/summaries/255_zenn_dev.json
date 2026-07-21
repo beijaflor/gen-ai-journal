@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:02:21.314228+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeでAgentic Engineeringを個人開発での本番運用につなぐ",
+    "url": "https://zenn.dev/okamyuji/articles/agent-driven-workflow-feedflow",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "人間が監督、AIが実装を担う「Agentic Engineering」を軸に、Claude Codeを活用して個人開発を設計・テスト・CI/CDが整った本番運用レベルへ昇華させる実践的なワークフローの解説。",
+    "summaryBody": "この記事は、AIエージェントを指揮してソフトウェアを開発する「Agentic Engineering」を個人開発の本番運用に適用するための三部作の完結編です。人間を「意思決定と違和感の察知を行う監督役」、AIを「実装・調査・反復を担う実装役」と明確に定義し、Claude Codeを中心とした具体的なツールチェーンと規律について論じています。\n\n主な内容は以下の通りです：\n- **ツール活用**: `superpowers`による事前設計、`Workflow`によるマルチエージェント体制、`Playwright MCP`を用いた実ブラウザ操作による検証、`context7`での一次情報参照。\n- **設計の重要性**: 「先に決めるほど速くなる」という視点から、V字モデルやTDDを現代的に再解釈し、設計書とテストがAIの高速な実装を支えるゴールとして機能することを解説。\n- **本番品質への昇華**: Go言語のインターフェースを活用したTDD、CI（GitHub Actions）でのセキュリティハードニング、Cloudflareを活用した本番環境特有の不具合（504エラーやキャッシュ問題）の解決策。\n- **セキュリティ**: AWSの短命クレデンシャル、`gitleaks`による秘匿情報検知、Cloudflare Accessによる多層防御の実践。\n\n単なるコード生成に留まらず、設計ドキュメントの言語化や品質ゲートの構築といった「規律」こそが、AI駆動開発を「Vibe Coding」から信頼できるエンジニアリングへと変える鍵であると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "Agentic Engineering",
+      "Go",
+      "TDD",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

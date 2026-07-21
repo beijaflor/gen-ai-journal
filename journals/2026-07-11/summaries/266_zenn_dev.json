@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:53:41.036702+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ISMSの運用を、GitHub×Claudeで“ラクで楽しい”ものにする【前編】",
+    "url": "https://zenn.dev/sonicgarden/articles/682b080ec34a37",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ソニックガーデン社が、ExcelによるISMS運用の限界をGitHubでのデータ管理とClaude（AI）による自動編集で解決し、運用の効率化と質の向上を実現した手法を紹介しています。",
+    "summaryBody": "ISMS運用におけるExcel管理の課題（履歴の欠如、計算ミス、二重管理、属人化）を解消するための具体的なシステム構成を解説しています。主な特徴は、正データをYAML形式で保持し、閲覧用レポートを自動生成する「データと表示の分離」です。編集作業は「Claude Code」を用い、自然言語で指示を出すだけで、あらかじめ定義された「スキル（手順）」に基づきAIがデータの更新、再計算、レポート生成を完結させます。さらに、AIの広範な知識を活用してリスク分析の観点を広げたり、複数のマニュアル間での記述の矛盾をチェックさせたりするなど、単なる省力化を超えて運用の質を高める取り組みが詳述されています。",
+    "topics": [
+      "ISMS",
+      "GitHub",
+      "Claude",
+      "YAML",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

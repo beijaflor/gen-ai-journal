@@ -1,0 +1,24 @@
+# Curated Annex Selected (x-only, machine-fed for STEP_06) - 2026-07-11
+
+- [x] 016. https://www.nytimes.com/2026/07/05/business/philosophy-majors-ai-jobs.html
+- [x] 017. https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals
+- [x] 021. https://sitedex.dev/insights/robots-txt-2023-war-memorial
+- [x] 025. https://odra.dev/slopfix/
+- [x] 036. https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html
+- [x] 048. https://hy.tencent.com/research/hy3
+- [x] 058. https://addyosmani.com/blog/agentic-autonomy-levels/
+- [x] 062. https://uxdesign.cc/wait-who-made-this-705a30d74220
+- [x] 065. https://arxiv.org/abs/2605.20049
+- [x] 082. https://zenn.dev/kairininja/articles/zenn-codex-vertical-mv-quality-gate
+- [x] 089. https://www.hunk.dev/
+- [x] 147. https://www.bona-books.com/news/we-bought-an-ai-story
+- [x] 148. https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
+- [x] 162. https://github.com/JustVugg/colibri
+- [x] 164. https://tejassuds.com/blog/ai-cannot-forget
+- [x] 198. https://www.anthropic.com/research/off-switch-dual-use
+- [x] 203. https://creators.bengo4.com/entry/2026/07/09/084206
+- [x] 204. https://uga-box.hatenablog.com/entry/2026/02/03/000000
+- [x] 208. https://ax.yusuke.run/
+- [x] 223. https://evilmartians.com/chronicles/storybook-workbench-audit-vibe-coded-uis-and-find-hidden-bugs-in-hours
+- [x] 237. https://www.mixfont.com/ghost-font
+- [x] 249. https://qiita.com/takahirom/items/177d10248bbddca84144

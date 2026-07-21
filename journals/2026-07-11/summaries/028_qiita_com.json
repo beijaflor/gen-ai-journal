@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:31:15.769239+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code向けセキュリティ監査プラグイン「security-guidance」による脆弱性の自動検出と修正",
+    "url": "https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが公開したClaude Code用の公式プラグインを活用し、AI生成コード特有のリスクを3層の防御レイヤーでリアルタイムに検知・修正する手法を解説した記事。",
+    "summaryBody": "Anthropicが2026年5月に公開したClaude Code用プラグイン「security-guidance」の導入と運用に関する詳細な解説です。本プラグインは、ファイル編集・ターン終了・コミット/プッシュという開発フローの3段階で脆弱性を自動検出し、AIによる直接修正を可能にします。AI生成コード特有の「流暢さによる警戒心の低下」や「存在しないパッケージへの依存（slopsquatting）」といった新しい脅威モデルに対し、開発中の文脈を保持したまま即時フィードバックを行う点が特徴です。SnykやCodeQLなどの既存SASTツールとの棲み分けについても、「決定論的な再現性」と「生成時の文脈対応」という思想の違いから整理されており、確率的なAIの挙動に頼り切らない「封じ込め設計」の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "DevSecOps",
+      "脆弱性診断",
+      "Anthropic",
+      "AIセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

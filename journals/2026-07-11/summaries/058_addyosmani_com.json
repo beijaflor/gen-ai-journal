@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:22:57.051051+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティック・オートノミー・レベル：AIエージェントの自律性における6つの段階",
+    "url": "https://addyosmani.com/blog/agentic-autonomy-levels/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの活用がプロンプト入力から運用へと移行する中、エージェントの自律性と複数調整能力を軸にした6段階の階層モデルを提唱し、安全な委任のあり方を定義する。",
+    "summaryBody": "Addy Osmani氏による、AIエージェントの自律性を評価・導入するためのフレームワークに関する論考です。AIがソフトウェア開発に深く統合されるにつれ、エンジニアの役割はプロンプトの作成から「自律プロセスの運用」へと変化しています。本記事では、自律性を「Agency（単体エージェントの試行錯誤能力）」と「Orchestration（複数エージェントを調整する能力）」の2軸で捉え、レベル0（アシスト）からレベル5（例外管理による自動化工場）までの6段階を定義しています。\n\n### 自律性の6つのレベル\n1. **Level 0 (Assist):** 提案のみを行い、人間がすべてを判断する（補完等）。\n2. **Level 1 (Supervised Action):** エージェントが実行するが、一歩ごとに承認を求める。\n3. **Level 2 (Scoped Task Delegation):** 境界の明確なタスクを委任し、エージェントは証拠（テスト結果等）を提出する。\n4. **Level 3 (Goal-driven Autonomy):** 目標達成のために自律的に反復・試行錯誤を行う。\n5. **Level 4 (Parallel Delegation):** 複数のエージェントを並列に走らせ、各作業を独立して管理する。\n6. **Level 5 (Managed-by-exception):** マネージャーエージェントが全体を統括し、人間は失敗時のみ介入する。\n\n### 導入のポイントと注意点\n自律性を高める際の最大のボトルネックは「検証（Verification）」です。筆者は、自律レベルをタスク名ではなく「検証プロセスの堅牢さ」に基づいて決定すべきだと強調しています。また、承認疲れによる「権限の垂れ流し」や、詳細を見ずに要約だけで判断する「サマリー代用」などのアンチパターンに警鐘を鳴らし、MTBI（介入までの平均時間）やトークンコストといった指標による定量的な管理を推奨しています。最終的に、エンジニアの技能は「どのレベルの自律性が適切かを見極め、防御的なガードレールを構築する能力」に集約されます。",
+    "topics": [
+      "AIエージェント",
+      "エージェンティック・エンジニアリング",
+      "自律性レベル",
+      "オーケストレーション",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Agentic Autonomy Levels"
+  }
+}

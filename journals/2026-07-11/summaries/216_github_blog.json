@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:31:00.346124+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic Workflowsによるリポジトリ横断ドキュメント作成の自動化",
+    "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHubのAgentic Workflowsを活用し、コードの変更内容をLLMエージェントが分析して別リポジトリのドキュメントPRを自動生成する、安全で高効率なワークフローの構築事例。",
+    "summaryBody": "GitHubのAspireチームが導入した、AIエージェントによるドキュメント更新の自動化手法について解説しています。GitHub Nextチームが開発した「GitHub Agentic Workflows」を使用し、Markdownベースの指示（Prompt）とGitHub Actionsを組み合わせたエージェントを構築しました。この仕組みの特徴は、エージェントに直接の書き込み権限を与えず、「safe-outputs」という制限付きのコントラクトを介してGitHub App経由でPRを作成する点にあります。マイルストーン情報を利用してリリースブランチを自動特定し、コードのDiffからドキュメント案を作成。開発者をレビュアーとして指名することで、精度を担保しつつドキュメント作成の遅延を大幅に削減しました。実績として、13.3/13.4リリースのドキュメントPRにおいて100%のマージ率と、中央値44.8時間という迅速な更新を実現しています。",
+    "topics": [
+      "GitHub Agentic Workflows",
+      "LLM Agents",
+      "DevOps",
+      "Documentation",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 70,
+      "overall": 95
+    },
+    "originalTitle": "Automating cross-repo documentation with GitHub Agentic Workflows - The GitHub Blog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:07:05.232774+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotによるコードレビューの効率化：プロンプト調整による20%のコスト削減事例",
+    "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubがCopilotのコードレビュー機能をUnix風の共通ツールへ移行した際、指示（プロンプト）をレビュー担当者の思考プロセスに合わせて最適化することで、品質を維持しつつ20%のコスト削減を実現した事例の紹介。",
+    "summaryBody": "GitHubは、Copilotによるコードレビューの基盤をCLIと共通のUnix風ツール（grep、glob、view）へ統合しました。しかし、単純な移行当初は、エージェントが広範囲な探索を行う「ブラウジング・ループ」に陥り、コストが増大して精度が低下する課題に直面しました。調査の結果、問題の原因はツール自体ではなく、指示（プロンプト）が汎用的なコーディング・アシスタント向けだった点にあることが判明しました。そこで、「プルリクエストの差分（diff）を起点とする」「安価なツールで候補を絞り込んでから読み込む」といった、実際の人間が行うコードレビューのワークフローに基づいた指示へ書き換えたところ、レビューの品質を保ちながら平均コストを約20%削減することに成功しました。本記事は、AIエージェントの開発において、ツールの説明やシステム指示がいかにコストや振る舞いに大きな影響を与えるかを実証しています。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Code Review",
+      "Prompt Engineering",
+      "Agentic Workflow",
+      "LLM Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Better tools made Copilot code review worse. Here's how we actually improved it."
+  }
+}

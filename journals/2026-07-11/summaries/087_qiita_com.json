@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:13:29.445998+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリング入門 — Agent = Model + Harness で読み解くAIエージェント運用",
+    "url": "https://qiita.com/ryoji9702/items/065b1f2218f132d1bd3b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの性能を決定づける「ハーネス（足場）」の設計思想を軸に、Feedback Flywheelや認知的負債、SPDDといったThoughtworks周辺の高度な運用フレームワークを体系的に解説した記事。",
+    "summaryBody": "本記事は、AIエージェントの運用を「Agent = Model + Harness（ハーネス）」という数式で定義し、モデル以外の周辺環境（足場）をどう設計・運用すべきかを整理した解説記事です。ThoughtworksのBirgitta Böckelerらが提唱する概念群をベースに、以下の主要ポイントを提示しています。\n\n1. **ハーネスの構造化**: エージェントの制御を「guides（事前統制：CLAUDE.md等）」と「sensors（事後検知：テストや静的解析）」に分け、それぞれ決定論的・推論的なベクトルで設計する手法。\n2. **Feedback Flywheel**: AIとの対話を単発で終わらせず、得られた知見を共有アーティファクトに還流させて組織・チームの習熟度を高める維持機構。\n3. **Cognitive Debt（認知的負債）**: AIが生成する「動くが誰も理解していないコード」によってチームのシステム理解が失われるリスクとその対策。\n4. **SPDD（Structured Prompt-Driven Development）**: プロンプトを第一級の資産として管理し、テスト駆動・リファクタリングを前提としたAI時代の開発手法。\n\n記事では、モデルの優劣が短期間で陳腐化する中で、これらのハーネス資産と運用能力こそが、長期的な競争力（筋肉）になると強調しています。",
+    "topics": [
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "生成AI",
+      "ソフトウェア開発",
+      "Thoughtworks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

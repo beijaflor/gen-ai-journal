@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:46:07.986322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grok 4.5、GPT-5.5、Claudeによるコーディング比較：同一アプリ開発による性能・コスト検証",
+    "url": "https://www.tryai.dev/blog/grok-4.5-vs-gpt-5.5-vs-claude-build-off",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年の主要AIモデルを対象に、ワンショットでのアプリ開発能力、生成速度、コストを直接比較した実証レポート。",
+    "summaryBody": "xAIのGrok 4.5、OpenAIのGPT-5.5、AnthropicのClaude Opus 4.8およびFable 5を用いて、同一プロンプトから単一HTMLファイルで動作する3種類のアプリ（3Dルービックキューブ、重力シミュレーション、ブロック崩し）を作成させる比較テストの結果です。主なトピックは以下の通りです。\\n- **コーディングの正確性**: Claude勢が最も安定しており、難易度の高い3Dルービックキューブを初回で完遂。Grok 4.5は1度のリトライを要し、GPT-5.5は描画に失敗しました。\\n- **速度とコスト**: Grok 4.5が圧倒的なパフォーマンスを示し、約110 tokens/sという他モデルの2倍以上の生成速度と最安のコストを記録しました。\\n- **モデル特性**: GPT-5.5は「視覚的なセンス」で高く評価され、Fable 5は空間的想像力やユーモアにおいて優れた結果を出しています。開発ボリュームが大きく、コストと速度を優先するケースではGrok 4.5、複雑なロジックの正確性を求めるならClaudeという棲み分けが明確になりました。",
+    "topics": [
+      "LLM比較",
+      "Grok 4.5",
+      "GPT-5.5",
+      "Claude",
+      "コーディング性能"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "We made Grok 4.5, GPT-5.5, and Claude build the same apps"
+  }
+}

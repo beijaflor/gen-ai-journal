@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:38:59.262006+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの自己正当化バイアスを防ぐ：Claude Codeで「結論を伏せたセカンドオピニオン」を得るSkillの構築",
+    "url": "https://zenn.dev/atrae/articles/08f2b2c3f2217d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIの自己正当化バイアスを排除するため、メインモデルの結論を隠した状態で上位モデル（Fable 5）に独立した見解を求め、エンジニアの意思決定を支援するClaude Code用Skillの事例。",
+    "summaryBody": "AIによる開発効率向上の一方で、大量のコード生成に伴う認知負荷の増大と「AIの回答が本当に正しいか」という不安が課題となっています。本記事では、AI特有の「自身の結論を正当化しようとするバイアス」を打破するため、Claude Codeに実装したカスタムSkill「second-opinion」を紹介しています。\n\nこのSkillの核心は、メインモデルが導き出した結論や誘導的な文脈を意図的に削ぎ落とし、上位モデルであるFable 5に対して「ブラインド査読」の形で独立した見解を求める点にあります。公式の `/advisor` 機能が全履歴を参照してサポートを行うのに対し、本Skillは情報の独立性を担保し、異なる2つの視点をユーザーに並列提示することで、客観的な裁定を可能にします。設計判断やトレードオフが伴う重要な局面に絞って自律的に発動するよう設計されており、エンジニアが「背中を押してもらえる」環境を構築する実践的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "Fable 5",
+      "AIバイアス",
+      "プロンプトエンジニアリング",
+      "意思決定支援"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:07:24.870986+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rustを全く知らない私が、AIにPHPをRustで再実装させている話",
+    "url": "https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rustの知識がない開発者が、LLMとPHP公式の膨大なテストスイートを組み合わせることで、WordPressを動作させるレベルのPHPインタープリタ「Phargo」を構築した実験的記録。",
+    "summaryBody": "著者はRustの知識やコンパイラ理論の経験がない中、AI（Claude）を主体とした開発手法でRust製のPHPエンジン「Phargo」を構築しました。このプロジェクトの鍵は、AIの出力を人間がレビューするのではなく、PHP公式が提供する約22,000もの膨大なテストスイート（.phpt）を「絶対的な審判（オラクル）」として利用することにあります。AIが生成したコードが既存のテストをパスするかどうかという客観的な指標のみで進捗を管理し、人間は失敗パターンの提示と改善の指示に専念します。実装過程では、見かけだけ動く「ポチョムキン・ビルトイン（機能の空実装）」や、Windowsの改行コードによるテスト誤判定、テストコードによるリソース枯渇などの課題に直面しましたが、現在はテストスイートの17.4%をパスし、WordPressのフロントページおよび管理画面の描画に成功しています。AI時代の開発において、人間が理解できない規模や言語のコードであっても、既存の厳格なテストセットがあれば品質を担保できる可能性を示唆しています。",
+    "topics": [
+      "AI Coding",
+      "Rust",
+      "PHP",
+      "LLM Agents",
+      "Software Testing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "I Don't Know Rust. My AI Is Rewriting PHP in It Anyway."
+  }
+}

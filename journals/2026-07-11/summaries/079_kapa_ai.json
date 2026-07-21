@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:17:31.116010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "小規模LLMを活用してRAGコンテキストの68%を削減した手法",
+    "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "kapa.aiは、安価な小規模LLMを用いてRAGの検索チャンクを68%削減し、コストを34%抑えつつ96%のリコールを維持する「リスト評価型プルーニング」手法を導入しました。",
+    "summaryBody": "RAG（検索拡張生成）システムにおいて、リトリーバーが取得する情報の多くは最終的な回答に寄与しないノイズであり、これが高価な生成LLMのコスト増大を招いています。kapa.aiはこの問題に対し、リトリーバーと生成器の間に「小規模LLMによる評価ステップ」を追加する手法を開発しました。\n\n従来のリランカー（再順位付け）は、各チャンクを個別に評価するため、複数のチャンクが組み合わさって初めて意味を成す「依存関係」を無視しがちでした。新手法では、安価な小規模LLMに質問と全チャンクを同時に与え、5段階のスケールでセット全体としての有用性を評価させます。この「リスト形式」の評価により、単体ではスコアの低い補足情報なども正しく保持できるようになりました。\n\n検証の結果、検索チャンクの68%を削除し、クエリあたりのコストを34%削減（プルーナー自体のコスト込）。回答に必要な情報の保持率（リコール）は96%を維持しており、約0.7秒のレイテンシ増加と引き換えに、極めて高い効率化を実現しています。このアプローチは、特にツール呼び出しが多くコンテキストが肥大化しやすいAIエージェント環境において非常に強力です。",
+    "topics": [
+      "RAG",
+      "LLM Optimization",
+      "Context Pruning",
+      "Cost Reduction",
+      "Information Retrieval"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "How we taught a small LLM to throw away 68% of our RAG context"
+  }
+}

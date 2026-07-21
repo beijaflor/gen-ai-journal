@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:02:43.943388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexが年640TBをSSDに書いていた、原因のTRACEログを追う",
+    "url": "https://zenn.dev/okssusucha/articles/20260701-openai-codex-sqlite-trace-log-ssd-wear",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAI Codex CLIがデフォルトでTRACEレベルのログをSQLiteに記録し続け、SSDの寿命を激しく削っていた問題の技術的背景と対策のまとめ。",
+    "summaryBody": "OpenAI Codex CLIにおいて、ユーザーが気づかないうちに膨大な量のログ（TRACEレベル）がローカルのSQLiteに書き込まれ、年間換算で約640TBに達するという衝撃的な事例が報告されました。GitHub Issue #28224の分析によると、DBは古い行を自動的に削除するためファイルサイズ自体は肥大化しませんが、内部では15秒間に約3.6万行の挿入・削除が繰り返されており、これが深刻な書き込み増幅（Write Amplification）を引き起こしていました。原因はログ出力設定の初期化時にデフォルトでTRACEレベルが指定されていたことにあり、APIの生ペイロードや依存ライブラリの内部ログまで全て記録されていた点です。現在はバージョン0.142.0以降で修正されていますが、開発ツールにおけるログ設計がハードウェアの物理的寿命に直結するという教訓を示しています。",
+    "topics": [
+      "OpenAI Codex",
+      "SSD寿命",
+      "SQLite",
+      "Logging",
+      "Write Amplification"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

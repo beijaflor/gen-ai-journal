@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:40:31.073756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "電話による問い合わせへの対応はAIで自動化できるのか検証してみた",
+    "url": "https://zenn.dev/govtechtokyo/articles/ffe9cc8fcd30a1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自治体職員の電話対応負担を軽減するため、Amazon Connectと生成AIを組み合わせた音声応答プロトタイプを構築。回答精度81%達成までのナレッジ整備手法や、応答遅延といった技術的課題への対策を解説している。",
+    "summaryBody": "GovTech東京による自治体向け電話応対自動化の検証レポート。Amazon Connect、Lex、Q in Connectを用いたRAG構成のプロトタイプを構築し、庁内問い合わせを対象に実証実験を行った。初期段階では認識精度やレスポンス速度に課題があったが、FAQナレッジのXMLタグ付けや類義語辞書の導入、プロンプトの最適化により回答精度を大幅に改善した。また、応答までの無音時間を埋める発話の実装や外部STT/TTSの活用など、ユーザー体験向上のための実用的な工夫も紹介。現時点での日本語STS（Speech-to-Speech）の限界と将来の展望についても言及されており、ボイスAI開発の現場知見が凝縮されている。",
+    "topics": [
+      "GovTech",
+      "AWS",
+      "Amazon Connect",
+      "生成AI",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:12:04.839294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによるコード変更の高度な解説：explain-diff システムプロンプト",
+    "url": "https://gist.github.com/geoffreylitt/a29df1b5f9865506e8952488eac3d524",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Geoffrey Litt氏による、AIエージェントがコードの変更点（PR/Diff）をMartin Kleppmann風の明快な文体とインタラクティブなHTML/Notion形式で解説するためのシステムプロンプト。",
+    "summaryBody": "Geoffrey Litt氏が公開した「explain-diff」は、AIエージェントに対してコードの変更点（diffやプルリクエスト）を、単なる要約ではなく「教育的な教材」として出力させるための高度なシステムプロンプトです。このプロンプトはAIに対し、背景知識の解説、トイデータを用いた直感的な説明、論理的なコードウォークスルー、そして理解度を確認するためのインタラクティブな5問クイズを含む構成を要求します。\n\n特筆すべきは、著名な技術書『データ指向アプリケーションデザイン』の著者Martin Kleppmannのような、明快で物語性のある文体を指定している点です。出力形式はCSS/JSを内包したスタンドアロンなHTMLファイル、またはNotion MCPツールを介したNotionページに対応しています。開発者のオンボーディングや、複雑なコードベースの変更内容をチームに深く理解させるための強力なツールとして機能します。",
+    "topics": [
+      "AI Agents",
+      "Prompt Engineering",
+      "Code Review",
+      "Developer Experience",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "explain-diff-html.md"
+  }
+}

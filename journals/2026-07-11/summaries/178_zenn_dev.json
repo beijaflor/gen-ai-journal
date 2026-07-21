@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:39:57.552950+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年7月版 Claude CodeによるAI駆動開発フロー改善の記録",
+    "url": "https://zenn.dev/taroosg/articles/20260708203628-86db8756331c10",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとFableを活用し、実装・テスト・レビューの各工程を独立したAIエージェントに分担させることで、人間の介入を最小化した自律型開発フローの構築記録。",
+    "summaryBody": "本記事は、AIエージェントによる自動開発において課題となる「AIの未検証報告」や「人間側のレビュー負荷増大」を解決するための高度なワークフローを提案しています。中核となるのは、メインAI（Fable）が設計と監査を担い、実装とレビューを別々のサブエージェントに委任する「役割分離」と「情報の非対称性」の活用です。レビュアーには実装者の意図や自己評価を渡さず、自ら反証を試みるプロセスを組み込むことで、AI同士の忖度を防ぎ品質を担保します。また、Git Hooksを用いた機械的なルール強制や、テストファースト（Red証跡の確認）の徹底により、人間はIssueの定義と最終的なPR承認のみに集中できる環境を実現しています。実例として4,000行超の変更をAI主導で完遂した事例も紹介されており、実用性の高い知見がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "Fable",
+      "ソフトウェアエンジニアリング",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

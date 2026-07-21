@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:48:43.608304+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ユーザーインタビューが終わって「20分」で図解レポートが出てくるAIワークフローを作ってみた",
+    "url": "https://goodpatch.com/blog/2026-07-research-ai-workflow",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google Apps ScriptとClaudeのRoutinesを連携させ、ユーザーインタビュー後の文字起こし整形から要約、示唆抽出、HTML図解レポート作成までを約20分で自動化する高度なAIワークフローの構築事例。",
+    "summaryBody": "Goodpatchのサービスデザイナーが、ユーザーインタビュー後の分析工程を効率化するために構築したAIワークフローを紹介しています。\n\n### システム構成と仕組み\nこのワークフローは、Google Meetの文字起こしドキュメントをGAS（Google Apps Script）が検知し、GitHubのPull Requestを自動作成することから始まります。これをトリガーにClaudeの「Routines（ルーティン）」機能が起動し、プロジェクトの背景資料（戦略資料や市場分析等）をコンテキストとして読み込んだ上で、整形済み議事録、要約、事実ベースの示唆、施策のアイデア種、そしてこれらを統合したHTML形式の図解レポートを生成し、Slackに通知します。\n\n### 運用の工夫と重要性\nAIによる「それらしい」アウトプット（AI Slop）を避けるため、発言のニュアンスを残す整形ルールや、推測と事実を分けるプロンプト設計が施されています。自動化によって事務的な分析作業を20分に短縮することで、チームで一次情報（ユーザーの声）に向き合い、人間ならではの解像度で議論を深める「Human in the Loop」の時間を最大化しているのが特徴です。",
+    "topics": [
+      "生成AI",
+      "UXデザイン",
+      "Claude Routines",
+      "UXリサーチ",
+      "業務自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:42:26.040928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の記事24本を集めて数えた「とりあえずこれやっとけ」 #AI - Qiita",
+    "url": "https://qiita.com/sgrs38/items/5dc277ed4ecc00a5498b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeに関する24の有力記事をメタ分析し、CLAUDE.mdの最適化、Hooksによる自動化、権限設定の勘所など、2026年時点での「実戦で本当に役立つ」共通設定と最新の落とし穴を凝縮して解説した決定版ガイド。",
+    "summaryBody": "この記事は、Claude Codeに関する国内外の有力な記事24本を精読し、推奨事項の「登場数」をカウントすることで、本当に価値のある設定を抽出したメタ分析レポートです。\n\n主な内容は以下の通りです：\n- **CLAUDE.mdの最適化**: 1ファイル200行未満を目安とし、コードから推測できないプロジェクト固有の「罠」や「規約」に絞って記述する運用術を解説。200行を超える場合は`.claude/rules/`へ分割することを推奨。\n- **Hooksによる自動化**: `PostToolUse`での自動フォーマットや、`Stop/Notification`での完了通知など、LLMの判断に依存しない「決定論的な自動化」が最も効果的であると指摘。\n- **権限管理の安全網**: `permissions.allow`でWeb検索などの頻出操作を許可しつつ、`deny`で破壊的コマンド（rm -rf等）をブロックする二段構えの設定例を紹介。\n- **「今は動かない」Tipsの検証**: 過去の「保存版」記事で広まっているものの、現行仕様（2026年7月時点）では無効な環境変数や仕様（$CLAUDE_FILE_PATHの不在、@importの挙動など）を一次情報に基づき訂正。\n\n最終的に、派手なMCPの導入よりも、コンテキストを清潔に保ち、検証ループ（テスト実行）を自動化する地味な設定こそが、AIエージェントの品質向上に直結すると結論づけています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "生成AI",
+      "開発効率化",
+      "CLAUDE.md"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

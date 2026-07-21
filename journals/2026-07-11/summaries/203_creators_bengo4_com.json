@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:33:56.728628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "隔離モデルによる仮想環境の分類 - Apple Container で Claude Code をサンドボックス化するまで",
+    "url": "https://creators.bengo4.com/entry/2026/07/09/084206",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AppleがOSSとして公開しているApple Containerの隔離モデル（MicroVM）を解説し、Claude Codeを安全なサンドボックス環境で実行する手順を紹介しています。",
+    "summaryBody": "本記事では、仮想環境を「隔離なし」「プロセスサンドボックス」「コンテナ」「VM」「MicroVM」の5つの隔離モデルに分類し、それぞれの構造とセキュリティ境界の違いを技術的に詳説しています。特に、ホストカーネルを共有するコンテナに対し、ハイパーバイザ隔離とOCIイメージの利便性を両立するMicroVM（Apple Container）の優位性を強調しています。後半では、macOS上でApple Containerをセットアップし、Node.jsベースのAIエージェントであるClaude Codeを独立したカーネル上で実行する実践的なチュートリアルが記載されており、`boot_id`や`uptime`の確認を通じて、実行のたびに新しいカーネルが起動するMicroVM特有の挙動を実証しています。",
+    "topics": [
+      "Apple Container",
+      "MicroVM",
+      "Claude Code",
+      "Sandboxing",
+      "macOS Virtualization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

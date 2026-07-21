@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:30:16.669711+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIペンテスト選定ガイド：AIペンテストベンダーを評価する方法",
+    "url": "https://www.aikido.dev/blog/ai-pentesting-buyers-guide",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "継続的なリリースサイクルに対応するため、AIペンテストベンダーを評価する際のソースコード活用の有無やスコープ制御、CI/CD統合などの重要指標を解説したガイド。",
+    "summaryBody": "現代のソフトウェア開発では週次や日次のデプロイが一般的になり、数ヶ月に一度の「点」でのペンテストではセキュリティギャップが生じています。本記事は、この課題を解決するAIペンテストの導入を検討している企業向けに、適切なベンダー評価基準を提供します。\n\n### 評価の主要ポイント\n- **ホワイトボックス方式の有効性**: ソースコードにアクセスするホワイトボックス型は、グレーボックス型に比べ7倍の脆弱性を発見するというデータに基づき、コード活用の詳細を確認すべきです。\n- **技術的なスコープ制限**: AIエージェントが定義された範囲外を攻撃しないよう、プロンプトベースではなく技術的な制御（ホワイトリスト等）が備わっているかが重要です。\n- **開発プロセスへの適応**: CI/CDへの統合、新機能追加時の自動再テスト、修正後の即時検証が可能かどうかが、運用効率を左右します。\n\n### 警戒すべきレッドフラグ\n発見事項の検証方法が不明確な場合や、ビジネスロジックのテスト実績が乏しいベンダーには注意が必要です。AIが単なるOWASP Top 10の走査に留まらず、アプリケーション固有の挙動を理解できるかを評価することが推奨されます。",
+    "topics": [
+      "AI Pentesting",
+      "Application Security",
+      "Whitebox Testing",
+      "DevSecOps",
+      "Vulnerability Management"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "AI Pentesting Buyer's Guide: How to evaluate AI pentesting vendors"
+  }
+}

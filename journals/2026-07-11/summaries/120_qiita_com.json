@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:04:17.417645+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが作ったアプリ、セキュリティの穴は誰が塞ぐ？",
+    "url": "https://qiita.com/skmtwork0/items/88c18a34555ceb7467a0",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI生成コードに潜むセキュリティ上の欠陥と、それらを防ぐために人間が果たすべき「責任の境界線」の理解と検証の重要性を説いた記事。",
+    "summaryBody": "AIによるアプリケーション開発が容易になる一方で、AIが生成したコードのセキュリティ品質を誰が保証するのかという課題を解説しています。AIは「動作」を優先し、「防御」を軽視する傾向があるため、内部的な権限管理の不備や暗号化漏れ、さらにはSQLインジェクションや認可の抜け（IDOR）といった深刻な脆弱性が残る可能性を指摘。Next.jsやSupabase等のモダンな構成による自動的な保護の恩恵を受けつつも、最終的には人間が仕様を理解し、テストや設定の確認（RLSの有効化など）を行う「最後の砦」である必要性を論じています。AI時代のエンジニアには、コードを書く力以上に、セキュリティ設計の妥当性を判断するリテラシーが求められています。",
+    "topics": [
+      "AI開発",
+      "セキュリティ",
+      "Web開発",
+      "脆弱性対策",
+      "エンジニアの役割"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 82
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:07:46.475773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.5 Codexにおける推論トークン数の特定値への偏りと性能低下の指摘",
+    "url": "https://github.com/openai/codex/issues/30364",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.5において推論トークン数が516などの固定値に異常に集中する「クラスタリング」現象が確認され、複雑なタスクでの性能低下との関連が指摘されています。",
+    "summaryBody": "GitHubのOpenAI Codexリポジトリにて、GPT-5.5の推論トークン（reasoning_output_tokens）が516、1034、1552といった特定の数値に不自然に集中しているという分析結果が報告されました。約39万件のレスポンスを分析した結果、GPT-5.5では516トークン以上の回答のうち44%が正確に「516」で終了しており、これは他のモデル（gpt-5.2等）の1.3%以下という数値と比較して極めて異常です。この現象は2026年5月以降に急増しており、推論リソースの強制的な打ち切りや内部的な予算制限、あるいはスケジューリングの閾値に起因する可能性が示唆されています。また、この固定値で推論が終了するケースでは、複雑なタスクにおいて誤回答を導く傾向（性能低下）が確認されており、開発者コミュニティからはOpenAIに対し、これが意図的な制限なのかバグなのかの調査が求められています。",
+    "topics": [
+      "GPT-5.5",
+      "Codex",
+      "Reasoning Tokens",
+      "LLM性能分析",
+      "トークン制限"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GPT-5.5 Codex reasoning-token clustering at 516/1034/1552 may be leading to degraded performance on complex tasks · Issue #30364 · openai/codex · GitHub"
+  }
+}

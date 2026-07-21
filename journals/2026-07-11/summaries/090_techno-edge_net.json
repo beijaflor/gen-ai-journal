@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:12:40.321650+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIグラビアをグラビアカメラマンが作るとどうなる？第70回：Krea 2の勢いがもうどうにも止まらない（西川和久）",
+    "url": "https://www.techno-edge.net/article/2026/07/06/5256.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2026年に登場した新型画像生成モデル「Krea 2」のエコシステムが急速に拡大しており、ComfyUIで利用可能な最新のチェックポイント、LoRA、カスタムノードの実践的な活用法を解説している。",
+    "summaryBody": "画像生成AIモデル「Krea 2」のリリースから間もないにもかかわらず、CivitaiやHugging Face、GitHubで関連リソースが爆発的に増加している現状をプロの視点でレポートしている。\n\n### 主な内容\n1. **チェックポイントとLoRAの多様化**: 高速生成が可能な「RedCraft」や、FP8環境でBF16相当の描画を実現する「Hybrid TextFusion」、低VRAM向けのGGUF版などを比較。また、美女生成に特化したLoRAやリアリズム向上エンハンサーの検証も行っている。\n2. **テキストエンコーダーとVAE**: Qwen3-VL-4Bベースのテキストエンコーダーの調整版や、Wan2.1系のVAEを流用したアップスケール手法など、他モデルとの技術的互換性と応用を紹介。\n3. **ComfyUIカスタムノードの進化**: 画像解析をプロンプトに統合する「Krea2TexTEncoder」や、負の重み付けを可能にする「negpip」など、生成の制御性を飛躍的に高めるノードを推奨している。\n\nプロのグラビアカメラマンによる具体的なワークフローと設定比較を通じて、Krea 2が実写系AIグラビアにおいて有力な選択肢となったことを示している。",
+    "topics": [
+      "Krea 2",
+      "ComfyUI",
+      "生成AIグラビア",
+      "LoRA",
+      "画像生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

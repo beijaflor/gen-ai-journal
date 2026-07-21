@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:03:33.272689+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BunはZig 53万行をどう11日でRustに書き換えたのか。64並列Claude Codeの事例から学べたこと、まだ真似できないこと",
+    "url": "https://zenn.dev/assign/articles/bun-rust-rewrite-harness-engineering",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "BunがAIエージェントを駆使して53万行のZigコードを11日間でRustへ移植した事例から、自動化された開発フローと品質保証の設計指針を解説しています。",
+    "summaryBody": "Jarred Sumner氏によるBunのRustへのフルリプレイス事例を分析した記事です。64並列のClaude Codeを用い、11日間で100万行超のdiffを生み出した手法の核心は、「実装・レビュー・修正」の役割分離と、言語非依存の膨大なテストスイートによる品質担保にあります。特に、レビューの独立性を保つために文脈を共有しない「敵対的レビュー」や、個別のコード修正ではなくプロンプトや規範ドキュメントを修正してプロセス全体を改善する運用は、今後のAI駆動開発における重要な示唆を与えています。APIコストや既存の正解（テストや旧コード）の存在など、一般のプロジェクトで再現する際の留意点も整理されています。",
+    "topics": [
+      "Bun",
+      "Rust",
+      "AI Agent",
+      "Claude Code",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

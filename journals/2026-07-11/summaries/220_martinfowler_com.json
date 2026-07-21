@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:30:04.171118+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングにおけるローカルモデル活用の実践記録：エージェント型開発の可能性と限界",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Thoughtworksのエンジニアが、M3/M5 Mac環境でQwenやGemmaなどの小規模モデルをローカル実行し、エージェント型コーディングにおける実用的価値と課題を多角的に検証したレポート。",
+    "summaryBody": "本記事は、Thoughtworksの技術者がローカルLLMを用いた「エージェント型コーディング」の実用性を検証した連載の第2回です。M3 Max (48GB RAM) および M5 Pro (64GB RAM) を使用し、Qwen 3.6 35B MoEやGemma 4などのモデルを対象に、独自の評価基準「実行可能性ファンネル」を通じてテストを行っています。\\n\\n**主な結果と洞察:**\\n1. **タスクの適性:** BashやPythonのスクリプト作成、小規模な既存コードの修正には有用ですが、複雑なロジックや大規模なファイル編集ではコンテキストウィンドウの圧迫により精度が低下します。\\n2. **ハードウェアの影響:** 同一モデル設定でも、RAM容量に余裕があるマシンの方が高い成功率を示すという、興味深い出力品質の差が確認されました。\\n3. **意図的な制約の利点:** 高性能なクラウドモデルに依存しすぎず、あえて「弱い」ローカルモデルを使うことで、開発者がコード理解を深め、より丁寧にレビューを行う「デトックス」的な効果が報告されています。\\n\\n結論として、まだ「プラグアンドプレイ」で誰にでも推奨できる段階ではありませんが、適切なタスク選定とワークフローの構築により、ローカル環境での自律的開発は十分に検討に値する選択肢となりつつあります。",
+    "topics": [
+      "Local LLM",
+      "Agentic Coding",
+      "Thoughtworks",
+      "Software Development",
+      "AI Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Experiences with local models for coding"
+  }
+}

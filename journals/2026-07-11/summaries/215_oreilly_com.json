@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:31:13.872674+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントになぜ今なお明確な仕様が必要なのか",
+    "url": "https://www.oreilly.com/radar/why-ai-coding-agents-still-need-clear-specs/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる開発では、曖昧な指示が修正コストや計算資源を浪費させるため、検証可能な仕様策定こそが真のボトルネックになる。",
+    "summaryBody": "AIエージェントの台頭によりコードの実装コストは低下しましたが、ソフトウェア開発の本質的な難所である「仕様の定義」は依然として重要です。本記事では、仕様を疎かにすることで発生する『後払いのコスト（修正ループやトークン消費）』と、事前定義による『先払いのコスト』の損益分岐点を分析しています。特に、人間がすべての出力を目視確認するのではなく、BDD（振る舞い駆動開発）のような自動検証可能な基準（オラクル）を用意することで、スケールする検証体制を構築すべきだと説いています。また、エージェントに仕様のドラフト作成や敵対的レビューを行わせる手法や、マルチエージェント体制において「エージェント間の契約」として仕様が機能する重要性についても論じています。",
+    "topics": [
+      "AIコーディングエージェント",
+      "ソフトウェア工学",
+      "仕様策定",
+      "BDD",
+      "マルチエージェントシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Why AI Coding Agents Still Need Clear Specs – O’Reilly"
+  }
+}

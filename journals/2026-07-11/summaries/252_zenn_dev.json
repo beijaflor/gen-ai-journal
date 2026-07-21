@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:03:03.733533+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「昨日の続き」を思い出させるローカル知識ベースCLI「lk」を作った",
+    "url": "https://zenn.dev/syarihu/articles/a811f2d2d9f149",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude Codeのセッション間でコンテキストや設計判断を共有・永続化するための、Rust製ローカル知識ベースCLI「lk」の開発背景と機能が紹介されています。",
+    "summaryBody": "Claude Codeの使用中に発生する「セッションごとの記憶リセット」や「コンテキスト肥大による精度低下」を解決するため、外部記憶として機能するCLIツール「lk」が開発されました。SQLiteをバックエンドに使用し、Rustで実装されたこのツールは、プロジェクトごとの設計判断（ADR）、作業の続き（context）、将来の計画（plan）をローカルで高速に検索・保存します。特に、チーム共有が必要な知識はMarkdownとしてエクスポートしてGit管理し、使い捨ての調査キャッシュはDBのみに保持するハイブリッドな設計が特徴です。FTS5による日本語全文検索や、MCPサーバー対応、最終更新からの日数によるStale（陳腐化）検知など、AIとの協調を前提とした実用的な工夫が凝らされています。",
+    "topics": [
+      "Claude Code",
+      "Rust",
+      "SQLite",
+      "MCP",
+      "ナレッジマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

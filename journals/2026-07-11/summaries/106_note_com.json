@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:08:02.338231+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "16GB のノートPC でも、Claude Code + ローカル LLM は本気で使える — CodeRouter で Tool Call が安定するまで(2026年7月版)",
+    "url": "https://note.com/zephel01/n/n0d53c62dca07",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "16GBメモリのPC環境でClaude CodeとローカルLLM（Qwen/Gemma4等）を実用化するため、Tool Callの構文エラーを自動修復する「CodeRouter」を活用した最新のセットアップ手法を解説。",
+    "summaryBody": "16GB RAM搭載のMacやWindowsノートPCにおいて、Claude CodeをローカルLLMで快適に動作させるための実用ガイドです。7B〜9Bクラスの小規模モデルは、ツール呼び出し（Tool Call）の際にJSON形式を崩す傾向がありますが、中間層として「CodeRouter」を導入することで、これら壊れたリクエストを自動修復し、実測で成功率を0%から100%へと劇的に向上させます。記事では、Qwen2.5-coderやGemma4 MoEといった2026年7月時点の推奨モデル選び、OllamaとCodeRouterを組み合わせた具体的な構築ステップ、メモリ不足（OOM）を回避する事前ガード機能などのノウハウが詳述されています。月額費用ゼロでプライバシーを重視した開発環境を、一般的なスペックのPCで実現する具体的なソリューションを提供しています。",
+    "topics": [
+      "Claude Code",
+      "ローカルLLM",
+      "CodeRouter",
+      "Tool Calling",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

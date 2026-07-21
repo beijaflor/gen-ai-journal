@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:27:24.477401+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "15個の仕込みバグで比較：ClaudeとCodexのコードレビューは、モデルより「レビュー方式」で差が出た",
+    "url": "https://qiita.com/kunitomo926/items/7dfc85770cf5132f3d1c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとCodexを使い、15個の意図的なバグを仕込んだコードで検証した結果、検出精度はモデル自体の差よりも「レビューの聞き方（方式）」に大きく左右されることが判明しました。",
+    "summaryBody": "Claude Codeのネイティブ機能と、OpenAI公式プラグイン経由のCodexを用い、URL短縮サービスに仕込んだ15種類のバグ（正確性、並行処理、セキュリティ、設計、プライバシー）の検出力を比較検証した記事です。\n\n主な発見は以下の通りです：\n- **方式によるスコープの差**: 正確性や並行処理のバグはどの方式でも検出されましたが、設計やドメイン寄りの指摘（列挙攻撃の可能性やレイヤリングの欠如など）は「観点を明示した自由記述プロンプト」のみが拾い上げました。\n- **専用コマンドの特性**: `/code-review`や`/codex:review`といった純正コマンドは、確信度の高いバグやクリーンアップに最適化されており、設計判断は守備範囲外である可能性が高いことが示唆されました。\n- **敵対的レビューの価値**: `/codex:adversarial-review`はバグ検出数こそ少ないものの、設定ファイルの権限不備といった「信頼境界」に関する独自の指摘を行う強みがあります。\n\n結論として、AIレビューの運用では、バグ検出には純正コマンド、設計・ドメイン検証には詳細な自由記述、前提の揺さぶりには敵対的レビューと、用途に応じて方式を使い分けることが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "コードレビュー",
+      "AI駆動開発",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

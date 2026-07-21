@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:04:45.678825+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5 のクセに合わせた Agent Skills を作った",
+    "url": "https://qiita.com/pani_py/items/d17b29898af7eeb62721",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Fable 5の高い指示忠実度と特有の挙動に対応するため、公式ガイドの推奨に基づき、過剰な指示を削ぎ落として自律性を高める10種類のAIエージェント用スキルを開発・公開した解説記事。",
+    "summaryBody": "この記事では、Claude Fable 5向けに最適化されたAIエージェント用スキルセット（Agent Skills）の開発背景と詳細を紹介しています。Fable 5は旧モデル（Sonnet/Opus等）に比べ指示忠実度が極めて高い反面、古い形式の「ステップバイステップ」指示が逆に過剰な思考やコスト増を招く「負債」になる点を指摘。公式のプロンプティングガイドに基づき、意図と境界のみを短く定義するアプローチで、進捗報告の証拠拘束（捏造防止）、不要なリファクタリングの抑制、並列サブエージェントの委譲、無人実行の完走ルールなど、実戦的な10のスキルを構築しています。Claude Codeプラグインや手動コピーでの導入が可能で、各スキルの設計思想には公式ドキュメントとの照合検証結果が反映されています。",
+    "topics": [
+      "Claude Fable 5",
+      "LLM",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

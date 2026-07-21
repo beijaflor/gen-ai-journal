@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:02:29.257437+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code (Opus 4.8) が数分固まる問題、188セッション実測したら原因はAPIでもネットワークでもなかった",
+    "url": "https://zenn.dev/yuki_fujisawa/articles/a155d388e61acc",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code（特にOpus 4.8）で発生する数分間のフリーズ現象をログ解析により調査し、原因が通信環境ではなく長考に伴う大量トークン生成であることを解明、subagentを活用した回避策を提案しています。",
+    "summaryBody": "Claude Codeを利用中に応答が「無音」になる問題について、著者が188セッション・約1.4万ターンのログを解析した実測レポートです。分析の結果、60秒以上の停滞の99%以上はAPI待ちやサーバー混雑ではなく、モデルが背後で思考（thinking）や大量の本文を生成し続けている「生成中」の状態であることが判明しました。特にOpus 4.8は複雑な依頼に対して長考する傾向が強く、画面上に進捗が出ないまま数分を要することが「固まっている」ように見えていたのが正体です。\n\nこの「重いターン」を解消するための対策として、以下の3層構造による運用が提案されています。\n1. **探索専任subagentの定義**: Sonnet等の軽量モデルを使い、読み取り専用の役割を固定する。\n2. **委譲規則の明文化**: CLAUDE.mdに「5ファイル以上読むなら委譲」といった定量的な発火条件を記述する。\n3. **hooksによる監視**: `Stop`フックとスクリプトを用い、委譲なしに探索ツールを使いすぎている場合に事後警告を表示させる。\n\nこれにより、親ターンの思考量を削り、UXの改善とコスト削減を両立させる手法を具体的に解説しています。",
+    "topics": [
+      "Claude Code",
+      "LLM Agent",
+      "Claude 3.5 Opus",
+      "パフォーマンス最適化",
+      "ログ分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    }
+  }
+}

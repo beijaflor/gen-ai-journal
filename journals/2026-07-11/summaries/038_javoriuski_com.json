@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:28:23.937081+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "YouTube StudioのAIアシスタントにおけるプロンプトインジェクション脆弱性の指摘",
+    "url": "https://javoriuski.com/post/youtube",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "YouTube StudioのAI機能「Ask Studio」がコメント欄を介した間接的なプロンプトインジェクションに対して脆弱であり、非公開動画のタイトル漏洩や偽情報の表示が可能であるとする調査結果。",
+    "summaryBody": "セキュリティ研究者のjavoriuski氏が、YouTube StudioのAIアシスタント「Ask Studio」における重大な脆弱性を報告しました。この脆弱性は「間接的プロンプトインジェクション」と呼ばれるもので、攻撃者が動画に特定の指示を含むコメントを残すことで、クリエイターがAIに質問した際にAIの動作を操作できるというものです。具体的には、AIにYouTube公式を標榜する偽の通知を表示させたり、AIがアクセス可能な非公開動画のタイトルを外部サーバーに送信するリンクを生成させたりすることが可能であることを実証しました。Google側はこの報告に対し、ユーザーの信頼を利用したソーシャルエンジニアリングが含まれるとしてセキュリティ上の欠陥とはみなさない旨の回答をしましたが、筆者はGoogle自社製品への信頼を悪用した信頼モデルの侵害であると強く主張しています。",
+    "topics": [
+      "プロンプトインジェクション",
+      "YouTube Studio",
+      "AIセキュリティ",
+      "サイバーセキュリティ",
+      "Google"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 75,
+      "overall": 80
+    },
+    "originalTitle": "Leaking YouTube Creators Private Videos"
+  }
+}

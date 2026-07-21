@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T15:59:38.096389+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPとは？自分だけの「毎朝ニュースを読むMCP」を作ってみる",
+    "url": "https://zenn.dev/sun_asterisk/articles/59fabe45a7aa76",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ClaudeなどのAIに外部ツールを連携させるModel Context Protocol（MCP）の基本概念と、Pythonを用いた独自のニュース取得ツールの開発・導入手順を解説したガイド。",
+    "summaryBody": "Model Context Protocol（MCP）は、AIアプリが外部ツールやデータとやり取りするための共通規格です。本記事では、AIが苦手とする「最新情報の取得」を補完する実例として、RSSフィードからニュースを取得しClaudeで要約する自作MCPサーバーの作り方をステップバイステップで解説しています。\n\n主な内容は以下の通りです：\n1. **MCPの仕組み**: ホスト（Claude）、クライアント、サーバーの3層構造をUSB-Cに例えて解説。\n2. **設計思想**: AIが得意なこと（要約・翻訳）と、MCPに任せるべきこと（データ取得・外部操作）の役割分担の重要性。\n3. **技術スタック**: Python, uv, MCP SDK, httpx, feedparserを用いた軽量な開発環境の構築。\n4. **実装と登録**: `@mcp.tool()`を活用したコードの記述から、Claude DesktopやClaude Codeへの具体的な設定方法までを網羅。\n\nツールのdocstringを丁寧に書くことで、AIの出力を制御し、実用的なニュースまとめを作成する手法が詳しく紹介されています。",
+    "topics": [
+      "MCP",
+      "Claude",
+      "Python",
+      "RSS",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

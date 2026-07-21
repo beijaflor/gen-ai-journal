@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:05:36.066503+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Safari MCP サーバーでエージェントが Safari ブラウザを操作できるようにする",
+    "url": "https://azukiazusa.dev/blog/safari-mcp-server/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Safari Technology Preview 247で導入されたSafari MCPサーバーを利用し、AIエージェントがSafariブラウザを直接操作してWebアプリの検証やデバッグを行う手法を解説した記事。",
+    "summaryBody": "Safari Technology Preview 247にて、Model Context Protocol（MCP）に対応したSafari MCPサーバーが導入されました。これにより、AIエージェントはsafaridriverを介してSafariブラウザを直接制御できるようになります。記事では、Chromium依存の既存ツールとは異なり、Safari特有のレンダリングやAPIの検証が自動化できるメリットを強調しています。具体的なセットアップ手順（safaridriver --mcpの実行）から、タブ操作、DOM要素の取得、スクリーンショット保存、コンソールメッセージの監視といった主要ツールの機能まで詳しく紹介されており、Claude Codeなどのエージェントを用いた実用的な開発フローが示されています。Web標準の差異を確認するクロスブラウザテストをAIで行う上で、非常に強力なツールとなります。",
+    "topics": [
+      "MCP",
+      "Safari",
+      "Model Context Protocol",
+      "AIエージェント",
+      "Web開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T16:05:18.673188+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI SDK の MCP Apps 対応でインタラクティブな UI を返す",
+    "url": "https://azukiazusa.dev/blog/ai-sdk-mcp-apps/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel AI SDK v7に導入されたMCP Apps対応を用いて、AIモデルがツール経由でインタラクティブなUIを安全なサンドボックス環境に描画する実装手順を解説。",
+    "summaryBody": "Vercel AI SDK v7で追加されたMCP Apps機能により、モデルのツール呼び出し結果としてテキスト以外のインタラクティブなUIを提供可能になりました。本記事では、MCPサーバーで`ui://`リソースを登録し、Next.js環境でセキュアな二重iframeサンドボックスを構築する具体的な実装方法を詳しく紹介しています。特に、モデルには非表示でUI内JSからのみ操作可能な「App専用ツール」の定義や、セキュリティを担保するためのホストブリッジAPI、`experimental_MCPAppRenderer`の使用法など、実用的なコード例が豊富に含まれています。セキュリティ面での注意点として、同一オリジン制約の回避やpostMessageの送信元検証の重要性についても深く掘り下げられています。",
+    "topics": [
+      "AI SDK",
+      "Model Context Protocol (MCP)",
+      "Vercel",
+      "Next.js",
+      "Interactive UI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

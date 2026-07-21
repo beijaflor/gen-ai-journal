@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T03:28:21.007745+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Agent SDKにおけるMCPサーバー接続フローとalwaysLoadパラメータについて",
+    "url": "https://qiita.com/har1101/items/05be8c42ac9c4c2dc5e1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Agent SDKでMCPサーバーが「pending」状態になる挙動の理由と、セッション開始時からツールを即座に利用可能にする「alwaysLoad」パラメータの詳細を解説しています。",
+    "summaryBody": "Claude Agent SDK（TypeScript版）を用いてMCPサーバーに接続する際、初期化（init）メッセージでステータスが「pending」と表示され、ツール一覧が空になる挙動の仕組みと解決策を解説した記事です。これはSDKがデフォルトで非ブロッキングな遅延ロード（tool-search deferral）を採用しているためであり、必要に応じてバックグラウンドで接続が行われます。特定のツールを常に最初から利用可能にしたい場合は、設定ファイル（.mcp.json）で「alwaysLoad: true」を指定することで、起動時に接続をブロッキングし、コンテキストにツール定義を常駐させることができます。Claude Codeのアップデートに関連するパラメータであり、コンテキスト消費と利便性のトレードオフについても触れられています。",
+    "topics": [
+      "Claude Agent SDK",
+      "MCP",
+      "TypeScript",
+      "Claude Code",
+      "LLM Tool Use"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

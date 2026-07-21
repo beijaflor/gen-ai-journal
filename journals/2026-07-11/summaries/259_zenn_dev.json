@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-12T04:01:18.543852+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Fable 5 が教えてくれた FastEnum の高速化テクニック (1) - 文字列のハッシュ値生成",
+    "url": "https://zenn.dev/xin9le/articles/6fb2045805996c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI（Claude Fable 5）の提案を受け、FastEnumの文字列ハッシュ生成を文字列全体走査から特定位置のサンプリングによるO(1)実装へ変更し、最大8.5倍の高速化を達成した技術解説。",
+    "summaryBody": "C#のenum高速化ライブラリ「FastEnum」の内部実装における文字列ハッシュ生成の最適化手法を解説しています。標準のstring.GetHashCodeが文字列全体を走査するのに対し、enum名の特性（比較的短く、フィールド数が限られている）に着目。文字列の長さと、先頭・中間・末尾の3文字のみをビット演算で組み合わせる定数時間（O(1)）の独自ハッシュ関数を導入しました。この変更により、Case Sensitiveな比較では約8.5倍、Case Insensitiveな比較では約4倍の劇的なパフォーマンス向上をベンチマークで確認しています。また、.NETの内部メソッドを低コストで呼び出すためのUnsafeAccessorの活用など、高度なチューニングテクニックについても詳述されています。",
+    "topics": [
+      ".NET",
+      "C#",
+      "パフォーマンスチューニング",
+      "アルゴリズム",
+      "FastEnum"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

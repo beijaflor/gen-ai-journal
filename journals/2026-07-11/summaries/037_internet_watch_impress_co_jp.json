@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-10T05:28:36.604200+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIAが大型化するGPUのため採用した「Scale-up Network」とは何か？",
+    "url": "https://internet.watch.impress.co.jp/docs/column/nettech/2115397.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAが推進する、複数GPU間でメモリ共有とキャッシュ一貫性を維持し、システム全体を1つの巨大なGPUとして機能させる「Scale-up Network」の技術的背景を解説する連載。",
+    "summaryBody": "本記事では、AI学習などで需要が急増している「Scale-up Network」の概念について、コンピューターアーキテクチャの歴史を交えて詳説しています。一般的に、単体マシンの性能を上げる「Scale-up」と台数を増やす「Scale-out」がありますが、ネットワークの世界ではScale-upはあまり馴染みがありませんでした。しかし、GPUの巨大化に伴い、複数のGPUを相互接続して一つの巨大なメモリ空間を共有するニーズが高まっています。ここで課題となるのが「キャッシュ一貫性（Cache Coherency）」の維持です。CPUの世界ではスヌーピングなどの手法が用いられてきましたが、接続数が増えるほどオーバーヘッドが指数関数的に増大する問題がありました。NVIDIAはNVLinkとNVSwitchを用いることで、この課題を解決し、GPU間を高速かつ低遅延なメモリ共有ネットワークで結ぶ「Scale-up Network」を実現しました。これにより、AIモデルが単一GPUのメモリ容量を超える問題を、物理的な境界を超えたメモリリソースの統合によって克服しています。",
+    "topics": [
+      "NVIDIA",
+      "NVLink",
+      "Scale-up Network",
+      "キャッシュ一貫性",
+      "GPUアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
