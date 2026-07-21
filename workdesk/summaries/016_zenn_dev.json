@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:09:54.277517+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code デスクトップのブラウザ機能は Playwright の代わりになるか",
+    "url": "https://zenn.dev/marvelousu/articles/claude-browser-pane-review",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code の Browser pane を実機検証し、テキスト抽出やローカル開発連携には強力だが、非表示時のスクリーンショット撮影に制約があるため Playwright の完全な代替にはならないことを解説しています。",
+    "summaryBody": "2026年7月のアップデートで Claude Code デスクトップアプリに追加された「Browser pane」の性能と、Playwright との使い分けについて実機検証に基づき解説しています。内蔵ブラウザは Electron 42 / Chromium 148 をベースとしており、テキストや DOM の取得、JavaScript 実行、アクセシビリティツリーの読み取りはスムーズに行えます。しかし、ブラウザペインが画面に表示されていない（裏側に回っている）状態では、Chromium の描画停止仕様によりスクリーンショットが30秒でタイムアウトする問題が確認されました。そのため、バックグラウンドでの安定した画像処理やログイン済み操作が必要な場合は Playwright が適しており、一方でローカル開発サーバの即時プレビューやクリーンな環境での簡易検証には Browser pane が優れていると結論付けています。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "ブラウザ自動化",
+      "Chromium",
+      "Electron"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

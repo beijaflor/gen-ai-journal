@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:21:10.118962+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステム・コントラクト：コンポーネントはFigmaにもコードにも存在しない",
+    "url": "https://uxdesign.cc/design-system-contracts-the-component-lives-in-neither-figma-nor-code-3032d94ca067",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Figmaと実装コードの乖離を防ぐため、両者の中立的な「契約」としてJSON/YAMLデータを中央に置く、AI時代に適した新しいデザインシステムの管理手法。",
+    "summaryBody": "デザインシステムにおけるFigmaのコンポーネントと実装コードの「乖離（ドリフト）」は長年の課題だが、本書ではその解決策として「デザインシステム・コントラクト」という概念を提案している。これは、Figmaでもコードでもなく、独立したJSONやYAMLファイルを唯一の真実のソース（SSOT）とする手法である。このデータファイルにはプロパティやトークン、振る舞いの定義が記述され、Figmaプラグインとコード生成スクリプトの両方がこの「設計図」から自動的に成果物を出力する。特にAI（エージェント）がデザインシステムを用いて画面を構築する際、この厳格なルールセット（契約）を与えることで、AIの出力精度が劇的に向上することが実験で示されている。現在は手動での管理やエンジニアリングの知識が必要な段階だが、デザインシステムの維持管理を自動化し、デザイナーとエンジニアの合意形成を効率化する未来の標準として期待される。",
+    "topics": [
+      "Design Systems",
+      "Figma",
+      "Agentic AI",
+      "SSOT",
+      "JSON/YAML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Design system contracts: the component lives in neither Figma nor code"
+  }
+}

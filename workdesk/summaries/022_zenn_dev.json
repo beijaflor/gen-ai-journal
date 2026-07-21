@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:08:17.532469+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6のReact習熟度を測った結果：SolとLunaが健闘、中位Terraが沈む意外な展開",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-11",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.6の3モデルを用いたReact実装ベンチマークの結果、最上位Solと最小Lunaが中位Terraを上回る特殊な序列となり、アクセシビリティに強みを持つ一方でコンポーネント設計ではClaude勢に劣る傾向が示された。",
+    "summaryBody": "uhyo氏によるReact習熟度ベンチマークシリーズの第11弾。OpenAIの最新モデルGPT-5.6（Sol/Terra/Luna）を対象に、Codex CLI経由で`effort=high`設定での計測を実施。結果、Sol (76.9) と Luna (76.5) が中位の Terra (73.4) を上回るという「非単調な序列」が確認された。Lunaは簡易なタスクで、Solは複雑な状態管理を伴う重量級タスクで強みを発揮する。カテゴリ別分析では、アクセシビリティ（a11y）においてClaudeの現行上位モデル（Fable 5等）を凌駕する高い性能を示す一方、コンポーネントの責務分割や再利用性（コンポーネント設計）のスコアが顕著に低く、これが総合スコアでClaude Opus 4.8やFable 5に届かない主因となっている。本検証はn=3の複数回試行で精度を担保しており、今後は最高設定である`effort=max`での逆転劇があるかどうかが焦点となる。",
+    "topics": [
+      "React",
+      "GPT-5.6",
+      "LLMベンチマーク",
+      "OpenAI",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

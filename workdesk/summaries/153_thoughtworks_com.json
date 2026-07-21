@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:14:12.289038+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント時代におけるオープンソースの「ゼロコストの誤謬」",
+    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "生成AIによるコード生成の工業化が、オープンソースは維持コストがかからないという「ゼロコストの誤謬」を露呈させ、メンテナーの疲弊と信頼モデルの崩壊を招いていると警鐘を鳴らす論考。",
+    "summaryBody": "### 構造的な疲弊と経済的誤解\nオープンソース（OSS）は「配布コストがゼロであるため無料であるべき」という誤解（ゼロコストの誤謬）に晒されてきましたが、実際には維持に多大な人間的コストがかかります。MITやApacheのような許容型ライセンスが企業の搾取を許容する土壌となり、巨大企業が利益を得る一方で、重要なインフラを支えるメンテナーが無償労働と燃え尽き症候群に直面しています。\n\n### 生成AIがもたらす「スロップ」の氾濫\nAIエージェントの台頭により、低品質なAI生成プルリクエスト（スロップ）が急増し、メンテナーはコードを書く時間ではなく、大量のゴミを査読する時間に追われています。また、GitHubのスター数などの伝統的な信頼指標がAIによるハイプで操作可能になり、OSSの信頼エコシステムが根本から崩壊しつつあります。\n\n### 企業が取るべき防衛的・能動的姿勢\nこれからのエージェント時代において、企業はOSSを「無料の贈り物」ではなく「自社で雇用したコード」として扱うべきです。具体的な推奨事項は以下の通りです：\n- **受動的な消費から能動的な所有へ**: メンテナーが不在になっても自社でフォーク・修正できる体制を整える。\n- **厳格なサプライチェーン監査**: 自動サンドボックス化やパッケージ起源の検証を徹底する。\n- **パトロネージ（支援）の予算化**: リスク軽減策として、利用しているOSSプロジェクトへの直接的な資金支援を形式化する。",
+    "topics": [
+      "Open Source Sustainability",
+      "Generative AI",
+      "Software Licensing",
+      "Supply Chain Security",
+      "Maintainer Burnout"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The zero-cost fallacy: Open source software in the agentic era | Thoughtworks"
+  }
+}

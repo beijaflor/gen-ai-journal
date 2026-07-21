@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:26:08.450361+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モジュール式プロンプト・トランスパイルによるスケーラブルなAIエージェントの構築",
+    "url": "https://developers.googleblog.com/building-scalable-ai-agents-with-modular-prompt-transpilation/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントのプロンプトを単一の巨大なファイルからコードのようなモジュール構造へと転換し、トランスパイラによる静的検証とCI/CDを導入することで開発の信頼性を高める手法の提案。",
+    "summaryBody": "AIエージェントのプロンプトが大規模化・複雑化するにつれ、単一のファイル（モノリス）で管理することは、変更の影響範囲が不明確になり、保守性が低下する原因となります。本記事では、プロンプトを「静的なテキスト」ではなく「ソフトウェアのビルド成果物」として扱うアプローチを提唱しています。\n\n主なポイントは以下の通りです：\n- **モジュール化**: プロンプトを安全ポリシーやドメインルールなどの「スキル」単位に分割し、テンプレートエンジンを用いて構成。これにより、再利用性と責務の分離を実現します。\n- **静的検証とトランスパイル**: ビルドプロセスにおいて、インポートの欠落や循環参照をチェックし、実行環境に依存しない確定的なプロンプトを生成。CI/CDパイプラインでの差分チェック（Golden Fileの活用）が可能になります。\n- **段階的開示と動的読み込み**: 推論時には基本プロンプトのみを読み込み、必要に応じてツール経由で動的にスキルをロードすることで、コンテキストの消費を抑え精度を向上させます。\n- **自己改善ループ**: エージェントが自身の改善策をプルリクエスト形式で提案し、人間がレビュー・検証した上でマージされる、堅牢な開発サイクルの構築を展望しています。",
+    "topics": [
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "CI/CD",
+      "トランスパイラ",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 45,
+      "overall": 92
+    },
+    "originalTitle": "Building scalable AI agents with modular prompt transpilation"
+  }
+}

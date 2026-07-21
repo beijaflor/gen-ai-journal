@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:03:39.175524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Voicebox: 音声入力・自動整形・自動ペーストを実現するmacOS向けデスクトップツール",
+    "url": "https://github.com/PrestigePvP/Voicebox",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "音声をWhisperで文字起こしし、LLMで文脈に合わせて整形した上で、現在開いているアプリへ自動ペーストするオープンソースのmacOS向けツール。",
+    "summaryBody": "Voiceboxは、macOS上での入力を効率化するAI音声入力ツールです。Wails（Go + React）で構築されたデスクトップアプリと、Cloudflare Workersを活用したバックエンドで構成されています。ユーザーがホットキーを押しながら話すと、音声データがクラウド上のWhisperモデルで文字起こしされ、さらにLLM（Qwen等）が現在フォーカスされているアプリの文脈（アプリ名や入力項目の役割など）を考慮してテキストを整形します。最終的なテキストは自動的にクリップボードへコピーされ、元のアプリに直接ペーストされます。アクセシビリティAPIを活用した文脈把握と、シームレスな自動貼り付けが大きな特徴です。",
+    "topics": [
+      "macOS",
+      "Whisper",
+      "LLM",
+      "Cloudflare Workers",
+      "Wails"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "GitHub - PrestigePvP/Voicebox"
+  }
+}

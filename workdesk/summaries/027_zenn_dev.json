@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:06:59.072057+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "頂上決戦！　effort=max同士の対決でGPT-5.6はClaudeに勝てるのか（React習熟度ベンチマーク）",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-12",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.6の最高思考設定（effort=max）を用いたReact習熟度ベンチマークの結果、依然としてClaudeの最上位モデルには及ばず、設計面での世代的な課題が浮き彫りとなった。",
+    "summaryBody": "エンジニアのuhyo氏によるReact習熟度ベンチマークシリーズの第12弾。今回はGPT-5.6の三層モデル（Sol, Terra, Luna）に対し、最大思考設定である「effort=max」を適用して性能を検証した。結果、最上位のGPT-5.6 Solはスコア80.18を記録したが、Claude Fable 5 (86.67) やOpus 4.8 (84.03) の最高設定には及ばなかった。GPT-5.6はeffortを上げてもコンポーネント設計の質が劇的に向上することはなく、むしろReact 19の新APIを採用せずReact 18世代の書き癖（手動メモ化等）に留まる傾向が確認された。一方でアクセシビリティや型定義の品質は思考量に応じて向上しており、モデルごとの得意領域と「設計の粒度」におけるClaudeとの構造的な差が明確になった。",
+    "topics": [
+      "React",
+      "LLMベンチマーク",
+      "GPT-5.6",
+      "Claude 5",
+      "フロントエンド開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

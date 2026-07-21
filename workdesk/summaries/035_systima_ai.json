@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:04:52.301621+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeはOpenCodeの4.7倍のトークンを消費：エージェント開発ツールの効率性比較",
+    "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの公式ツールClaude Codeは、システムプロンプトやツール定義が巨大であるため、ユーザーの入力を読み取る前からOpenCodeの約4.7倍のトークンを消費し、キャッシュの効率も大幅に低いことが実測調査で明らかになりました。",
+    "summaryBody": "本記事は、Anthropicが提供するClaude CodeとオープンソースのOpenCodeを、API境界での実測値に基づき比較した詳細な調査結果です。主な発見として、Claude Codeは起動時に約33,000トークンを消費するのに対し、OpenCodeは約7,000トークンに留まることが示されました。この差は巨大なツール定義（27種類）や広範なシステムプロンプトに起因します。さらに、Claude Codeはセッション中にキャッシュプレフィックスを頻繁に書き換えるため、OpenCodeと比較して最大54倍のキャッシュ書き込みコストが発生するケースも確認されました。一方で、複数ステップのタスクではClaude Codeがツール呼び出しをバッチ化してリクエスト数を減らす利点も見られましたが、最新モデル（Claude Fable 5）での検証ではその優位性が失われるなど、モデル依存の挙動も確認されています。エージェントAIの運用コストやコンテキスト窓の消費を最適化するためには、ツールのランタイム挙動を正確に把握することが重要であると結論付けています。",
+    "topics": [
+      "Claude Code",
+      "OpenCode",
+      "エージェントAI",
+      "LLMコスト最適化",
+      "プロンプトキャッシング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": "Claude Code Sends 4.7x More Tokens Than OpenCode Before Reading Your Prompt | Systima Blog"
+  }
+}

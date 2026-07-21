@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:11:54.354278+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "adrafinil: AIコーディングエージェントの稼働中のみMacのスリープを抑制するツール",
+    "url": "https://github.com/kageroumado/adrafinil",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCursorなどのAIエージェントがタスク実行中のみMacのスリープ（リッドクローズ状態を含む）を自動で抑制し、作業終了後に即座にスリープを許可するオープンソースのmacOSユーティリティ。",
+    "summaryBody": "adrafinilは、AIエージェントによる長時間タスク（ビルドやデプロイなど）の実行中にMacが意図せずスリープして中断されるのを防ぐためのツールです。従来のcaffeinateやAmphetamineのような常時オンのツールとは異なり、エージェントのフック（Claude Code、Cursor、Aider、Clineなど9種に対応）を利用して、活動中のみ動的にスリープを抑制します。特筆すべきはリッド（蓋）を閉じた状態（クラムシェルモード）でも動作を維持できる点で、特権ヘルパーを使用してルート権限でスリープを制御します。安全面では、デバイスの温度が上昇しすぎた際に強制解除するサーマルカットアウト機能や、プロセスの終了を検知するアイドルリリース機能を備えています。CLI、MCP、およびメニューバーからの手動操作もサポートしており、開発者の「寝ている間にエージェントに働かせる」ワークフローを最適化します。",
+    "topics": [
+      "macOS",
+      "AI Agents",
+      "Claude Code",
+      "Cursor",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - kageroumado/adrafinil: Keep your Mac awake only while AI coding agents are working"
+  }
+}

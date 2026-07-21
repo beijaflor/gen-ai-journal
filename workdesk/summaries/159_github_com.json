@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:12:17.953268+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けに最適化された構造化データ（XML/JSON）出力CLIツール「aict」",
+    "url": "https://github.com/synseqack/aict",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが解析しやすいように、Unixの標準ツール（lsやgrep等）の出力をXMLやJSONの構造化データとして提供するCLIツール。",
+    "summaryBody": "aictは、AIエージェントが効率的にコマンド結果を処理できるように設計された、Go言語製の新しいUnixコアユーティリティ群です。従来のls、grep、catなどのツールは人間が読むことを前提としており、AIエージェントが利用する際にはトークンを消費して列の位置を解析したり、フィールド幅を推測したりする必要がありました。aictはこれらの33種類のツールを再実装し、デフォルトでXML属性形式（トークン効率が良い）やJSONで結果を出力します。すべてのパスは絶対パスで示され、タイムスタンプはUnix整数、MIMEタイプやプログラミング言語も自動検出されます。また、MCP（Model Context Protocol）サーバー機能も内蔵しており、Claude DesktopやClaude CodeなどのAIアシスタントに直接統合してネイティブツールとして利用することが可能です。AIエージェントの推論回数を減らし、より正確なタスク実行を支援します。",
+    "topics": [
+      "AI Agent",
+      "MCP",
+      "CLI",
+      "Developer Tools",
+      "Structured Data"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - synseqack/aict: A CLI tool that outputs XML/JSON, built for AI agents to consume directly."
+  }
+}

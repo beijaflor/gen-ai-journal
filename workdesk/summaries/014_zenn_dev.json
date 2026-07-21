@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:10:29.198593+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにルールファイルを数ヶ月自動更新させ続けたら、ルールは\"良く\"育ったのか",
+    "url": "https://zenn.dev/r_kaga/articles/c9fcb75f1ff284",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント用のルールファイルを数ヶ月間自動更新し続けた結果、不整合の修正には極めて有効だが、真の「改善」には実装を通じた事後評価のループが不可欠であることが明らかになった。",
+    "summaryBody": "リポジトリのルールファイル（CLAUDE.md等）をAIに自動更新させる「Agentic Automation」を数ヶ月運用した結果の考察です。不整合や古いパスを修正する「harness-entropy」と、失敗から改善案を出す「harness-feedback」の2軸で運用したところ、現状のコードと照らし合わせて正誤が判断できる「消す・整理する変更」は高いマージ率（約68%）でメンテ効率を向上させました。一方で、新しいルールを「足す変更」は、その効果が未来の実装結果に依存するため判断が難しく、現在は変更前後で同じタスクを実装・比較させるA/Bテスト形式の評価ループを導入し、ルールの有効性を検証するフェーズに移行しています。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "CLAUDE.md",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

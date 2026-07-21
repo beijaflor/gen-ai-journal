@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:15:52.741893+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの「耳障りな定型句」を自動置換する方法：Claude CLIのフック機能を活用したカスタマイズ",
+    "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CLIのMessageDisplayフックを利用して、AI特有の「honest take」や「load-bearing」といった定型的な表現を自動的に別の言葉へ置換・修正する技術的な手法を紹介しています。",
+    "summaryBody": "Claudeの応答に含まれる「honest take（正直なところ）」や「load-bearing（耐力的な/重要な）」といった、しばしば鼻につく特定のフレーズを、Claude CLIのカスタマイズ機能を用いて自動的に書き換える方法の解説です。具体的には、Pythonスクリプトを作成して正規表現でテキストを置換し、それを`~/.claude/settings.json`の`MessageDisplay`フックに登録することで、表示されるテキストを動的に変更します。これにより、AI特有の語彙の偏りを視覚的に排除したり、ユーモラスな表現に置き換えたりすることが可能になります。CLIツールとしての拡張性を活かした、実用的かつ遊び心のあるハックです。",
+    "topics": [
+      "Claude",
+      "LLM",
+      "CLI",
+      "Python",
+      "カスタマイズ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 80
+    },
+    "originalTitle": "How to stop Claude from saying load-bearing | jola.dev"
+  }
+}

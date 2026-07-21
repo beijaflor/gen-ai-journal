@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:25:28.670739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen 3.5-397B MoEをIronwood (TPU v7x)で最適化するシステムエンジニアリング・プレイブック",
+    "url": "https://developers.googleblog.com/systems-engineering-playbook-optimizing-qwen-35-397b-moe-on-ironwood-tpu7x/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GoogleがQwen 3.5-397B MoEモデルを最新のTPU v7x (Ironwood)上で最適化し、JAX/Pallasカーネルや新並列化手法により推論スループットを最大4.7倍向上させた技術報告。",
+    "summaryBody": "Googleのパフォーマンスエンジニアリングチームが、巨大なMoEモデルであるQwen 3.5-397BをTPU v7xで効率的に動作させるための手法を公開しました。Qwen 3.5は75%のGated DeltaNet（線形注意）と25%のGQA（Grouped Query Attention）を組み合わせた特殊なハイブリッド構造を持ちます。チームは、GQAのKVヘッド数制限を克服するためにAttention DP（データ並列）とEP（エキスパート並列）を組み合わせたハイブリッド・シャーディングを導入しました。さらに、JAX/Pallasを用いて、SparseCoreを活用したトークンルーティングのオフロード、Conv1Dと再帰更新を統合したGDN融合カーネル、ページサイズを最適化したRagged Page Attentionなどを実装。その結果、理論的なルーフライン限界の約80%に達する効率を実現し、デコード性能を3.1倍、プリフィル性能を4.7倍向上させました。これらの成果はvLLMなどのオープンソーススタックにも統合され、大規模エンタープライズ推論の効率化に寄与します。",
+    "topics": [
+      "Qwen 3.5",
+      "Google Cloud TPU",
+      "Mixture of Experts",
+      "JAX/Pallas",
+      "推論最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Systems Engineering Playbook: Optimizing Qwen 3.5-397B MoE on Ironwood (TPU7x)"
+  }
+}

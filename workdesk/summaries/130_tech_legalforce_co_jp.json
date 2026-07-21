@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:20:36.252505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "非エンジニアのサポート担当者がCodex + Datadogでログ調査できるようになった話",
+    "url": "https://tech.legalforce.co.jp/entry/support-team-datadog-analysis-with-codex",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントCodexとDatadogのMCP連携により、非エンジニアのサポート担当者が自力で高度なログ調査と原因特定を行える体制を構築した事例。",
+    "summaryBody": "LegalOn Technologiesにおける、非エンジニアのカスタマーリレーション担当者がAIエージェント「Codex」を活用してDatadogのログ調査を行う取り組みの紹介。従来、技術的な調査はCRE（Customer Reliability Engineering）に依存しており、情報のやり取りによるタイムラグが課題となっていた。この解決策として、MCP（Model Context Protocol）サーバーを介してCodexからDatadogへ自然言語でアクセスできる環境を整備。これにより、メールの受信失敗原因の特定やアドインのエラー調査などをサポート担当者が自ら遂行可能となり、一次対応の迅速化とエンジニアの負担軽減を同時に実現した。技術的な障壁をLLMが吸収することで、ドメイン知識を持つ非エンジニアが直接技術データを活用できる強力な事例となっている。",
+    "topics": [
+      "Codex",
+      "Datadog",
+      "MCP",
+      "AIエージェント",
+      "カスタマーサポート"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

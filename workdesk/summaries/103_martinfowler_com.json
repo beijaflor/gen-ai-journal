@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:28:25.176360+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Archaeologist’s Copilot: AIとDockerを用いた20年前のJavaレガシーコードの修復",
+    "url": "https://martinfowler.com/articles/archaeologist-copilot.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIに丸投げするのではなく、考古学的な分析とDockerによる環境固定を組み合わせ、20年前のJava 1.5コードを段階的に近代化する実践的なアプローチの解説。",
+    "summaryBody": "この記事では、2005年頃のJava 1.5で書かれた「大きな泥団子（Big Ball of Mud）」状態のコードベースを、AIとDockerを駆使して現代の環境で動作・テスト可能な状態に修復した経験が詳細に語られています。著者はまず、AIに安易に解決策を求める「観光客プロンプト」の失敗から、コードを歴史的遺物として分析する「考古学者プロンプト」へと転換し、詳細なフォレンジック監査を実施。次に、コードを修正せずに当時の環境を再現する「タイムカプセル戦略」としてDocker環境を構築し、検証可能なベースラインを確立しました。その後、Java 8への移行、Gradleの導入、そしてAIとコンパイラのフィードバックループを利用した型安全性（ジェネリクス）の適用、JUnitへの移行を段階的に進めることで、安全に近代化を達成しました。AIの役割を「全知全能の解決策」ではなく、人間が戦略的に制御する「増幅器」として位置づけている点が非常に示唆に富んでいます。",
+    "topics": [
+      "Legacy Modernization",
+      "Refactoring",
+      "Generative AI",
+      "Docker",
+      "Java"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "The Archaeologist’s Copilot"
+  }
+}

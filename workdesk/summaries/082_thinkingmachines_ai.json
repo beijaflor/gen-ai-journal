@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:34:22.450604+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Inkling: Thinking Machines Labによるオープンウェイトのマルチモーダル基盤モデル",
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Thinking Machines Labは、思考努力量の制御が可能で、高度な推論とマルチモーダル能力を備えた975BパラメータのオープンウェイトMoEモデル「Inkling」を公開しました。",
+    "summaryBody": "Thinking Machines Labが発表した「Inkling」は、45兆トークンのマルチモーダルデータで学習された975Bパラメータ（アクティブ41B）の混合エキスパート（MoE）モデルです。最大100万トークンのコンテキストウィンドウに対応し、テキスト、画像、音声、ビデオをネイティブに処理するエンコーダーレス・アーキテクチャを採用しています。\n\n主な特徴と性能：\n- **思考努力の制御**: ユーザーが「Effort」設定を調整することで、推論時の計算量と精度のバランスを最適化できます。これにより、Nemotron 3 Ultra等の他モデルと比較して、より少ないトークン数で同等の推論性能を達成可能です。\n- **高度なエージェント能力**: コーディングやブラウザ操作に優れ、1回の指示でWebアプリを構築し、自らその操作を行うことが可能です。また、Tinkerプラットフォーム上でモデル自身が自己ファインチューニングを行うデモも公開されています。\n- **信頼性と安全性**: 予測（Forecasting）における高いキャリブレーション性能を持ち、不確実な情報に対して適切に回答を控える学習がなされています。また、検閲への耐性や、有害な要求に対する高い拒絶性能も備えています。\n\n同時に、12Bアクティブパラメータの軽量版「Inkling-Small」も発表され、一部のベンチマークで上位モデルに迫る性能を示しています。重みはHugging Faceで公開されています。",
+    "topics": [
+      "Large Language Models",
+      "Open Weights",
+      "Multimodal AI",
+      "Mixture of Experts",
+      "AI Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Inkling: Our Open-Weights Model"
+  }
+}

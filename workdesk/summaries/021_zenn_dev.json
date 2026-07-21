@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:08:29.849417+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM の可観測性ツールを決めきれないので、OpenTelemetry で決めない構成にした",
+    "url": "https://zenn.dev/optimisuke/articles/8f2ce41b9a7d30",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMの可観測性ツール選定を保留しつつ、OpenTelemetryを活用してアプリ側の変更なしにLangfuseやGrafana等の送信先を柔軟に切り替えられる「決めない構成」の解説。",
+    "summaryBody": "OpenTelemetry (OTel) を導入し、LLM API呼び出しのプロンプト・出力・トークン数・所要時間を、特定のベンダーSDKに依存せずに記録するアーキテクチャを紹介しています。アプリ（Next.js）は共通形式であるOTLPを喋るだけに留め、データの振り分けはOTel Collectorに集約。これにより、最初はOSSのGrafanaスタック（Tempo/Loki/Prometheus）でローカル開発を行い、後からアプリのコード変更ゼロでLangfuse（LLM特化ツール）を送信先に追加することに成功しています。実装面では `gen_ai` semantic conventions に準拠した属性名を使用することで、ベンダー間の互換性を担保する重要性を説いています。",
+    "topics": [
+      "OpenTelemetry",
+      "LLM",
+      "Observability",
+      "Langfuse",
+      "Grafana"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

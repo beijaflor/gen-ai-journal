@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:24:54.906500+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント開発における最適な仕様策定のあり方",
+    "url": "https://www.oreilly.com/radar/the-right-amount-of-spec-for-agentic-development/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによるコード生成が低コスト化する中で、開発のボトルネックは実装から「何が正しいか」を定義し検証する仕様策定と契約の設計へと移行している。",
+    "summaryBody": "AIエージェントの普及により、コードの実装コストは劇的に低下しましたが、一方で「何が正しい成果物か」を定義するコストが相対的に増大しています。本記事では、曖昧な指示による「雰囲気でのコーディング（vibe-coding）」が招く修正ループのコストを指摘し、エージェント開発における適切な仕様（Spec）のバランスについて論じています。\n\n主なポイントは以下の通りです：\n1. **ボトルネックの移動**: 開発の難しさは、タイピングや実装から、トレードオフの判断や「完了」の定義へと移りました。\n2. **仕様の検証**: 仕様自体に矛盾や漏れがないか、実装前に別のエージェントを使って「攻撃的」に検証させるステップが重要です。\n3. **マルチエージェント間の契約**: 複数のエージェントが連携する場合、解釈のズレが連鎖するため、スキーマや不変条件を含む強力な「契約」としての仕様が不可欠です。\n4. **文脈の腐敗（Context Rot）への対策**: 仕様が肥大化するとモデルが混乱するため、コードが書かれた後は仕様を削ぎ落とし、API設計自体をAIが理解しやすい「自己記述的」なものにする必要があります。\n5. **Agile/XPの再定義**: 儀式的な会議ではなく、テストファーストや短いフィードバックサイクルといった「エラー検出」のための手法が、高速なAI開発においてより重要になります。",
+    "topics": [
+      "Agentic AI",
+      "Software Engineering",
+      "Specification",
+      "Multi-agent Systems",
+      "API Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Right Amount of Spec for Agentic Development"
+  }
+}

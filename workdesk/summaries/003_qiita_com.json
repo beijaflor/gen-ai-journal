@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:13:49.393620+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとCodexでskills・rulesを一元管理する",
+    "url": "https://qiita.com/natume_nat/items/19b3d0cd8d3dcb6ecdc4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとCodexという複数のAIエージェント間で、skillsやrulesの実体を`.agents`ディレクトリに集約し、シンボリックリンクや独自Hookを用いて一元管理する構成案を紹介しています。",
+    "summaryBody": "AIコーディングエージェントの増加に伴い、エージェントごとに重複する設定ファイル（skillsやrules）の管理が煩雑になる課題を解決する手法の解説です。実体をプロジェクトルートの`.agents`ディレクトリに集約し、Claude Codeではシンボリックリンクや`CLAUDE.md`からのインポートを活用します。一方、CodexではSessionStartフックと独自のリゾルバー（JavaScript）を組み合わせることで、Claude Code形式のMarkdownルール（フロントマター付き）を解析し、適切なコンテキストとして読み込ませる方法を提案しています。これにより、エージェント固有の接続部のみを記述し、核となる指示内容は一箇所で編集可能な運用を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "生成AI",
+      "開発プロセス",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:11:09.851840+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカル LLM を構築した",
+    "url": "https://zenn.dev/neet/articles/11bafab8645995",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "2枚のRTX 3090を用いたVRAM 48GB構成で、最新のQwen3.6-27BをvLLMでホストし、LibreChatやNeovimと連携させるローカルLLM環境の完全構築ガイド。",
+    "summaryBody": "### 概要\n著者がAI企業の倫理的問題やハイプから距離を置きつつ、技術をキャッチアップするために自宅サーバーでローカルLLM環境を構築した記録です。最新のオープンモデル「Qwen3.6-27B-FP8」を目標に据え、ハードウェア選定から推論サーバーの構築、日常利用のためのアプリケーション連携までを詳述しています。\n\n### 技術的ハイライト\n- **ハードウェア構成**: 中古のRTX 3090を2枚採用しVRAM 48GBを確保。PCIeレーンの分割(x8/x8)や電源容量(1200W)など、マルチGPU運用における注意点を解説。\n- **推論エンジンの最適化**: vLLMを用いてOpenAI API互換サーバーを構築。KVキャッシュやモデル重みの計算に基づいたVRAM見積もりを行い、約33.2 tokens/sの推論速度を実現。\n- **実用的な連携**: ブラウザから利用できる「LibreChat」や、NeovimでAI補完を行う「Minuet」プラグインとの連携方法を紹介し、日常的な開発フローへの組み込みを実証。\n\n### 結論\n58万円超の投資による自作環境ながら、商用AIに依存せず高性能なモデルを自由に扱える環境を整備。構成はAnsible Playbookとしても公開されています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen3.6",
+      "vLLM",
+      "RTX 3090",
+      "自作PC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

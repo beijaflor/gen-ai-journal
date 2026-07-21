@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:11:51.029702+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent-as-a-Judgeは本当に必要なのか — 評価にエージェントを使う意味を考える",
+    "url": "https://zenn.dev/takkuhiro/articles/agent-as-a-judge-necessity",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エージェント評価において判定器がツールを使い証拠を能動的に収集する「Agent-as-a-Judge」の真価が、エージェント性よりも「証拠へのアクセス能力」にあることを解き明かした論考。",
+    "summaryBody": "2024年にMeta AIらが提唱した「Agent-as-a-Judge」は、判定器自身がツールを駆使して実行軌跡や環境の状態変化を調査する評価手法です。本記事では、アブレーション・スタディに基づき、判定精度を65%から90%へ引き上げた要因は「計画」や「記憶」といった性質ではなく、あくまで「証拠アクセスのモジュール群」であると分析しています。学術的には副作用の検出や失敗原因の特定（デバッグ）、報酬信号への転用として定着しつつありますが、産業界では「軌跡評価（trajectory evaluation）」としての部分的な浸透に留まっています。検証条件を事前に固定できない開放的な要件において、従来のLLM-as-a-Judgeを「直観から実行による検証」へと進化させる重要なアプローチとして位置付けられています。",
+    "topics": [
+      "Agent-as-a-Judge",
+      "LLM評価",
+      "AIエージェント",
+      "DevAI",
+      "証拠に基づく判定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

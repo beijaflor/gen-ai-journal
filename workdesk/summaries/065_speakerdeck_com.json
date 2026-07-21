@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:39:34.761474+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Ready なはずだったアーキテクチャと、見えてきた課題・次に目指す状態",
+    "url": "https://speakerdeck.com/wxyzzz/2026-07-15-ai-ready-nahasutatutaakitekutiyato-jian-etekitake-ti-ci-nimu-zhi-suzhuang-tai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI Readyなデータ基盤を構築した結果生じた「個人の効率化と組織のガバナンス低下」というジレンマに対し、IVRyがどのように組織全体の最適化へ舵を切っているかを解説した資料です。",
+    "summaryBody": "株式会社IVRyの和田氏による、AI活用を見据えたデータ分析基盤の構築事例と、運用後に直面したリアルな課題に関する登壇資料です。当初、同社ではDatabricksやdbtを用い、ビジネス文脈に合わせたMart層を整備することで、AI（Databricks Genie）が正確に回答できる「AI Ready」な環境を構築しました。しかし、AIによるセルフサービス化が進んだことで、ユーザーがセマンティックレイヤーの制約を回避するためにRaw Dataを直接参照したり、外部AIを独自に使い始めたりする現象が発生。結果として、データの信頼性低下、データチームによる「資産化プロセス」の消失、組織全体のコスト効率悪化という新たな課題が浮き彫りになりました。これに対し、現在は「AIで個人が早い」状態から「AIで組織が早い」状態への転換を目指し、クエリのAI評価や、組織全体のエコシステムを含めた「ゴールデンパス」の再設計に取り組んでいます。",
+    "topics": [
+      "データ基盤",
+      "AI Ready",
+      "Databricks",
+      "セマンティックレイヤー",
+      "dbt"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

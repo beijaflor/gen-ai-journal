@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:03:22.694124+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはコンピュータ・アーキテクチャ論文の深い技術的理解が可能か？",
+    "url": "https://arxiv.org/abs/2607.11859",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "5つの専門家エージェントと敵対的合成を用いるパイプライン「Gauntlet」により、LLMが人間を超えうる精度でコンピュータ・アーキテクチャ論文の核心を突き、批判的に分析できることを示した。",
+    "summaryBody": "本論文は、LLMが単なる要約を超え、コンピュータ・アーキテクチャ分野の論文に対して深い技術的理解（核心メカニズムの特定、隠れた前提の露出、スコープ外への接続など）を伴う批判的分析を行えるかを調査した研究である。著者らは、5つの独立した専門家ペルソナ・レビュアーと敵対的合成ステージからなるオープンソースのパイプライン「Gauntlet」を構築した。ISCA 2025およびHPCA 2026の最新論文20本を対象に、10名の研究者が書いた人間による分析とGauntletの結果をブラインドテストで比較したところ、20件中15件でGauntletの分析が好まれるという結果になった。特に「批判的厳密さ」においてLLMの優位性が顕著であり、人間が勝る点は主に「信頼感」や「有用性」といった要素に留まった。また、98本の論文を用いた自動化アブレーション解析により、この高い性能は単一の高性能モデルではなく、マルチエージェント構造とその合成プロセスに起因することが証明されている。全データ、評価指標、パイプラインはリソースとして公開されている。",
+    "topics": [
+      "LLM",
+      "マルチエージェントシステム",
+      "コンピュータ・アーキテクチャ",
+      "AI査読",
+      "Gauntlet"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": "Can LLMs Perform Deep Technical Comprehension of Computer Architecture Papers?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:54:54.075993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、継続的なクライアント信号でAIエージェントの行動を検知する「Precursor」を発表",
+    "url": "https://blog.cloudflare.com/introducing-precursor/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareが発表した「Precursor」は、セッション全体のマウスの動きや入力リズムなどのクライアントサイド信号を継続的に収集・分析することで、高度なボットやAIエージェントを精度高く検知する新機能です。",
+    "summaryBody": "Cloudflareは、ボット対策の新機軸として「Precursor」を導入しました。従来の対策がログインやチェックアウトなどの特定ポイントでの検証（Turnstile等）に依存していたのに対し、PrecursorはWebページに軽量なJavaScriptを自動注入し、ユーザーのセッション全体を通じて行動シグナルを継続的に監視します。具体的には、マウスの動きの物理的な軌跡（手首の回転による弧など）、キー入力のタイミング、入力フィールドへのフォーカスといった微細な挙動を分析します。数学的に完璧な動きや不自然なランダム性を伴うボットの動きと、生理的な震えや認知負荷による遅延が生じる人間らしい動きをリアルタイムに区別します。プライバシーを重視した設計となっており、キー入力の内容自体は取得せず、リズムのみを評価に使用します。これにより、単発のCAPTCHAを突破できる高度なAIボットの検知精度が飛躍的に向上します。",
+    "topics": [
+      "Cloudflare",
+      "Bot Management",
+      "Cybersecurity",
+      "AIエージェント",
+      "ユーザー行動分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 93
+    },
+    "originalTitle": "Introducing Precursor: detecting agentic behavior with continuous client-side signals"
+  }
+}

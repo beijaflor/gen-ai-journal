@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:58:54.107488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最近の AI コーディングで実践している、設計を中心とした開発の進め方",
+    "url": "https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIコーディングエージェントの進化を受け、実装から設計・検証環境の整備へと比重を移し、並列開発と自律的検証を組み合わせた実践的なワークフローを解説している。",
+    "summaryBody": "AIエージェントの自律性が向上したことで、開発者の役割は「コードを書くこと」から「AIと設計を議論し、環境を整えること」へシフトしています。著者が実践する最新のフローでは、まずAIとの徹底的な設計セッションを行い、タスクを独立した単位に分解します。その後、Git worktreeとClaude Desktopを併用して複数のエージェントを並列稼働させ、ブラウザ操作やAPIテストを含む検証プロセスまでAIに自律実行させます。\n\n特に注目すべき点は、人間がボトルネックにならないための工夫です。コードレビューを階層化し、人間は高リスクな設計判断に集中し、局所的なロジックはAIに一次チェックを委ねます。また、CLAUDE.mdやカスタムスキルの整備を通じてプロジェクト固有の知識をAIに同期させる重要性も説かれています。最終的には、AIにとっても扱いやすい「責務が分離され、依存関係が整理された優れたアーキテクチャ」がこれまで以上に重要になると結論付けています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェア設計",
+      "Claude",
+      "開発プロセス",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:28:08.586992+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの信頼性を高めるドメイン特化言語（DSL）の活用",
+    "url": "https://martinfowler.com/articles/llm-and-dsls.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMのコード生成における不確実性を抑制し信頼性を担保するためには、ドメイン特化言語（DSL）を「ガードレール」および「検証可能なインターフェース」として活用することが極めて有効である。",
+    "summaryBody": "LLMは高速なコード生成を可能にする一方で、大規模システムの複雑な設計判断をすべてプロンプトで制御することには限界がある。本記事では、LLMの出力を制約し、信頼性を高めるための手段としてドメイン特化言語（DSL）の重要性を説いている。DSLは語彙を限定し、バリエーションを削ぎ落とすことで、LLMがわずかなコンテキストからでも正確なコードを生成できるように導く。また、コンパイラやパーサといった決定論的なバリデータと組み合わせることで、LLMが自律的にエラーを修正するループを構築できる。具体例として、分散システムのテスト用DSL「Tickloom」を挙げ、設計段階ではLLMを思考のパートナーとし、語彙の確立後はLLMをDSLへの自然言語インターフェースとして活用する2フェーズのアプローチを提案している。最終的に、プロンプトではなくDSLを「信頼できる唯一の情報源（Source of Truth）」として維持することが、長期的な保守性の鍵となる。",
+    "topics": [
+      "DSL",
+      "LLM",
+      "Software Architecture",
+      "Distributed Systems",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "DSLs Enable Reliable Use of LLMs"
+  }
+}

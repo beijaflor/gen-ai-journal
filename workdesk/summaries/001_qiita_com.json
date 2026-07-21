@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:14:20.091846+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Project に突っ込んだタスクを自動で消化する Loop Engineering 環境を構築した",
+    "url": "https://qiita.com/tomoasleep/items/7f7b6c157b318428a9f6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Projectのカラム操作をトリガーに、AIエージェントが自律的にタスクの実装から検証までを繰り返す「Loop Engineering」環境の構築事例。",
+    "summaryBody": "OpenAIが公開したオーケストレーター「Symphony」をベースに、GitHub Projectと連携した自律型開発環境を構築した技術解説です。特定のカラム（Implement, Verifyなど）にタスクを移動させるとAIエージェントが自動起動し、実装やCIチェック、修正を繰り返すワークフローを実現しています。技術スタックとして、SymphonyのTypeScript再実装、ターミナルマルチプレクサ「herdr」によるClaude Codeの制御、GitHub Issueをメモリ（進捗記録）として活用する手法が紹介されています。プロンプトの手動入力から解放され、開発者が「他のエンジニアにタスクを委託する」感覚でプロジェクトを進行できる点が最大の特徴です。",
+    "topics": [
+      "Loop Engineering",
+      "GitHub Projects",
+      "Symphony",
+      "AI Agent",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

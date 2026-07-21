@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:12:23.603907+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネスエンジニアリングとループエンジニアリングの違いとは？ aws aidlc workflow kitから整理する",
+    "url": "https://zenn.dev/tacky_exception/articles/4d77fef5a36e42",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSのaidlc-workflowsの実装経験から、AIが働く環境を整える「ハーネス」と、目的達成まで自律的に動く「ループ」の2つのエンジニアリング観点を体系化した記事。",
+    "summaryBody": "著者はAWSのAI-DLC（AI駆動開発ライフサイクル）向けワークフロー集「aidlc-workflows」の利用を通じ、AIの出力精度がモデル自体の進化だけでなく「外側の設計」に依存していることを指摘しています。本記事では、AIが適切に働くための環境設計を「ハーネスエンジニアリング」、AIが目的達成まで反復・前進する実行フローの設計を「ループエンジニアリング」と定義し、それぞれを5つの構成要素に分解して解説しています。ハーネスではコンテキスト制御、ツール、ガードレール、フィードバック、記憶（状態）の重要性を説き、ループではゴールの定義、タスク分解、オーケストレーション、検証、ハンドオフの設計が鍵であると述べています。安価なモデルでもこれらの構造化によって安定した開発が可能になるという、実践的なAIエージェント設計の知見を提供しています。",
+    "topics": [
+      "AI-DLC",
+      "aidlc-workflows",
+      "ハーネスエンジニアリング",
+      "ループエンジニアリング",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

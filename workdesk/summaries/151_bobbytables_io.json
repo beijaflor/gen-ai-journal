@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:14:40.731278+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティック・ループ：3つのループが隠されたエージェントの基本構造",
+    "url": "https://www.bobbytables.io/p/the-agentic-loop-three-loops-in-a",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの実体は、推論、ツール実行、そして人間の承認という、階層的で役割の異なる3つのループから構成されていることを解説する。",
+    "summaryBody": "自律型エージェントの構築は単一のループではなく、実際には役割の異なる3つの「入れ子状」のループの組み合わせである。第一に「推論ループ (Inference Loop)」は、LLMのAPIを呼び出し、ステートレスなモデルに対して会話履歴とコンテキストを管理する。第二に「ツールループ (Tool Loop)」は、モデルからのツール使用要求を受け取り、実際の関数を実行してその結果（またはエラー）をモデルに返す役割を担う。第三に「ヒューマンループ (Human Loop)」は、重要アクションの承認や方向修正を人間が行うためのステップであり、実装上は長期的な待機を処理するTemporalのような耐久性のある実行フレームワークが重要となる。これら3つのレイヤーを正しく理解し実装することが、信頼性の高いエージェント開発の鍵である。",
+    "topics": [
+      "AI Agents",
+      "LLM Architecture",
+      "Tool Use",
+      "Human-in-the-loop",
+      "Software Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "The Agentic Loop: Three loops in a trench coat"
+  }
+}

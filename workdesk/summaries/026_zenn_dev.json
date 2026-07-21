@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:07:11.559749+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Plan モードをループエンジニアリングで楽にする",
+    "url": "https://zenn.dev/k_yoshiya/articles/claude-code-plan-mode-loop",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのフック機能を活用し、質問による要件詰め、サブエージェントへの実装委譲、プランのHTML自動可視化を組み合わせた「ループエンジニアリング」による開発効率化手法の提案。",
+    "summaryBody": "この記事では、Claude Codeの「Planモード」における人間への負荷を軽減し、成果物の精度を高めるための3つのループエンジニアリング手法を紹介しています。具体的には、1. `UserPromptSubmit`フックを使用して、要件が明確になるまで`AskUserQuestion`で自動的に質問を繰り返させるルールを注入する。2. `PostToolUse`フックを活用し、プランが確定したタイミングでMarkdownをHTMLへ変換・レンダリングし、ブラウザで視覚的に確認できるようにする。3. 実装フェーズをメインセッションから切り離し、サブエージェント（`claude --bg`等）に委譲することで、コンテキストの汚れを防ぎつつオーケストレーションを行う。これらの実装により、計画の不備による手戻りを防ぎ、トークン使用量の削減と高効率な開発フローの両立を実現しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "エンジニアリング",
+      "自動化",
+      "プログラミングツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

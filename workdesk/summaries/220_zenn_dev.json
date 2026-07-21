@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:12:08.914713+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "開発現場のAIセキュリティを見直す",
+    "url": "https://zenn.dev/nenene01/articles/ai-security-2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる開発が一般化する中、AWSの技術構成や「Lethal Trifecta」の概念を用いて、情報露出のリスク管理と安全な運用設計を具体的に定義したガイド。",
+    "summaryBody": "AIエージェントに開発を任せる際のセキュリティを、「AI事業者への露出（ガバナンス）」と「攻撃者への露出（技術設計）」の2軸で整理した解説記事です。ソースコードの資産価値の変化を前提としつつ、学習不使用契約とデータ保持期間（ZDR）の区別、プロンプトや実行結果に含まれる個人情報のマスキング、DB権限による技術的強制の重要性を説いています。また、AWSを活用した実戦的な対策として、IAM Identity Centerによる短命な認証、Secrets Managerによるキー名と値の分離、SSM Session Managerによる経路の一本化を提示。さらに、Simon Willison氏の「Lethal Trifecta（致命的な三要素）」理論に基づき、機密データアクセス・信頼できないコンテンツ・外部送信能力を同時に揃わせない設計の必要性を強調しています。2026年を見据えたMCP（Model Context Protocol）の信頼性確認やサプライチェーン攻撃への対策を含む、実践的な安全利用チェックリストも完備されています。",
+    "topics": [
+      "AIセキュリティ",
+      "AIエージェント",
+      "AWS",
+      "MCP",
+      "Lethal Trifecta"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:07:42.150405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "非同期パーソナルエージェントのススメ",
+    "url": "https://zenn.dev/mkj/articles/7a8f55591e6baf",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "チャット形式の同期的な対話を超え、Cronを活用した定期実行、非同期指示、暗黙的フィードバックという3つのパターンを通じて、パーソナルエージェントとの効率的な非同期インタラクションを提案する。",
+    "summaryBody": "松尾研究所のシニアデータサイエンティストが実践する、パーソナルエージェントとの「非同期」な関わり方を解説した記事。従来のチャットUIによる1対1の同期的なやり取りは、作業の中断やコンテキストスイッチの負荷が高いという課題に対し、ユーザーとエージェントの実行タイミングを分離するアプローチを提案。Obsidian等のPersonal Knowledge Base (PKB) をハブとし、(1)夜間にログを集約・更新する「定期実行」、(2)ノート内に#hermesタグで指示を書き残す「非同期指示」、(3)人間の編集差分からエージェントが意図を汲み取り自己を更新する「暗黙的フィードバック」の3つの形態を具体的に紹介している。特に、エージェントがユーザーの意図を察してメモリやスキルを自己改善するプロセスの重要性と、現状のモデルにおける意図理解の限界や課題についても考察されている。",
+    "topics": [
+      "Personal Agent",
+      "LLM",
+      "Personal Knowledge Base",
+      "Obsidian",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

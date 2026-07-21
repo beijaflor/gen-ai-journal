@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:01:19.710986+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sentinel: コードを読み込みビジネスフローを自動生成するオープンソースQAエージェント",
+    "url": "https://blog.simbastack.com/announcing-sentinel/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "リポジトリのソースコードを解析してビジネスロジックを理解し、フロントエンドとバックエンドの両面から自律的にエンドツーエンドテストを実行するAI搭載QAツール「Sentinel」が登場。",
+    "summaryBody": "### 概要\nSentinelは、単にブラウザを操作するだけでなく、プロダクトのソースコード（ルート、API定義、DBスキーマなど）を読み取って製品の「真のビジネスフロー」を理解し、テストを自律的に設計・実行するオープンソースのQAエージェントです。MITライセンスで提供されています。\n\n### 主な特徴と機能\n- **コードベースの解析**: リポジトリを静的解析し、モデルが製品の構造を把握した上で、予約ライフサイクルや決済フローなどの重要なビジネスシナリオを自動的に導出します。\n- **フロント&バックエンドの同時検証**: PlaywrightによるUI操作に加え、サーバーの状態をAPI経由で直接チェックします。「UI上は成功しているが、バックエンドの状態遷移が不完全」といった不整合を検出可能です。\n- **Web3/DApps対応**: ブラウザ拡張機能を必要とせず、エージェントが制御可能な「バーナーウォレット」を注入することで、MetaMask等の操作が必要なアプリもテスト可能です。\n- **デザインレビュー**: マルチモーダルモデルを活用し、視覚的なヒエラルキーやアクセシビリティ（コントラスト等）の評価も同時に行います。\n\n### 技術構成と実装\nTypeScriptとPlaywrightをベースに、デフォルトではXiaomiのMimoモデルを使用（OpenAI互換APIなら差し替え可能）。コスト効率を重視しており、1回の詳細なテストランでも数ドル程度のコストで実行できるよう設計されています。",
+    "topics": [
+      "AIエージェント",
+      "QA自動化",
+      "ソフトウェアテスト",
+      "オープンソース",
+      "Web3"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Sentinel: an open-source QA agent that reads your code before it clicks anything — simbastack"
+  }
+}

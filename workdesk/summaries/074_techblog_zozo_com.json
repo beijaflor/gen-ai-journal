@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:36:36.190286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる工数削減を計測して見えた結果と考察",
+    "url": "https://techblog.zozo.com/entry/rethinking-ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ZOZOのエンジニアチームが1年間にわたりAIによる工数削減を定量計測し、月間最大約0.58人分の削減効果と、作業内容による効率の差を明らかにした事例報告。",
+    "summaryBody": "ZOZOのMA推薦ブロックにて実施された、AI活用の効果を定量化する取り組みの成果報告です。GitHub Projectsを活用し「AIを使わなかった場合の想定工数」と「実質工数」の差分を記録する仕組みを構築。1年間の運用で、AIによる工数削減時間は半年間で約2.1倍（212時間から440時間）へ成長しました。分析の結果、テックブログ執筆やデータ分析など「成果物が明確なタスク」ほど削減効率が高く、逆に要件定義や設計などの「意思決定を伴うタスク」は効果が出にくい傾向が判明。また、実装が高速化してもレビュー待ちなどの人間がボトルネックになる課題も浮き彫りになりました。今後は「仕様の明文化（Spec）」と「品質評価の自動化（Eval）」を強化し、AIが自律的に動く状態の構築を目指すとしています。",
+    "topics": [
+      "AI生産性",
+      "工数計測",
+      "GitHub Projects",
+      "LLM活用",
+      "チーム運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

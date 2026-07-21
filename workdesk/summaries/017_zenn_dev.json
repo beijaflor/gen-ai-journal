@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:09:40.153431+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのstatusLineのすゝめ-コンテキスト残量とレートリミットを1画面で把握する",
+    "url": "https://zenn.dev/zozotech/articles/cb767af383bc78",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのstatusLineをbashとjqでカスタマイズし、コンテキスト使用率や5時間・7日のレートリミット、gitブランチ情報を効率的に常時表示する方法を解説しています。",
+    "summaryBody": "Claude Codeのターミナル下部に常時表示される「statusLine」を、bashとjqを用いて自作する方法を解説した記事です。設定ファイル（~/.claude/settings.json）から外部コマンドを呼び出し、標準入力経由で渡されるセッション情報を加工する仕組みを利用します。具体的なカスタマイズとして、1行目にディレクトリとGitブランチ、2行目にモデル名、コンテキスト使用率、5時間および7日間のレートリミット使用状況（リセット時間含む）、コンテキスト圧縮回数を表示する2行構成のインターフェースを紹介。実装のポイントとして、Gitのindex.lock衝突を避けるための環境変数設定や、半ブロックを用いた視覚的なゲージ表示、状態管理におけるバグ回避のコツなど、実用的なノウハウが凝縮されています。情報を詰め込みすぎず、本当に必要な指標だけに絞り込む「引き算の設計」の重要性についても言及されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "bash",
+      "jq"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

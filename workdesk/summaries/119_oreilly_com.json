@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:23:45.716024+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年におけるオープンソースAIエージェント・ツールキット",
+    "url": "https://www.oreilly.com/radar/the-open-source-agent-toolkit-in-2026/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2026年のAIエージェント開発における、オーケストレーションから推論エンジンまで7つの主要レイヤーごとに最適なオープンソースツールの選定基準と推奨スタックを解説した技術ガイド。",
+    "summaryBody": "この記事は、2026年時点でのAIエージェント構築におけるオープンソースのエコシステムを、7つのレイヤー（オーケストレーション、メモリ、ツールインターフェース、ブラウザ操作、コーディング、評価・オブザーバビリティ、推論）に分けて解説しています。主な推奨ツールとして、オーケストレーションには堅牢な状態管理が可能な「LangGraph」、メモリ管理には低レイテンシの「Mem0」や時系列推論に強い「Zep/Graphiti」、ツール接続には標準規格となった「MCP (Model Context Protocol)」を挙げています。また、ブラウザ操作の「Browser Use」や、コーディングエージェントの「OpenHands」など、特定のユースケースに応じた選択肢を提示しています。著者は、単一のツールで全てをカバーするのではなく、レイテンシ、監査トレイル、ポータビリティ、言語スタックという4つの制約に基づいて、レイヤーごとに最適なツールを組み合わせる「独立した決定」の重要性を説いています。特にプロダクション環境では、初日からトレーシング（Langfuse等）を導入し、状態遷移の記録を確実に行うことが成功の鍵であると強調されています。",
+    "topics": [
+      "AIエージェント",
+      "オープンソース",
+      "LangGraph",
+      "MCP (Model Context Protocol)",
+      "LLMオーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "The Open Source Agent Toolkit in 2026"
+  }
+}

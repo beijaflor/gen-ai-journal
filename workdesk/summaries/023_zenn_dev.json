@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:07:55.920204+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのskillをskillでレビューする ― 静的チェック×LLMレビュー×git hooksの3層ゲート",
+    "url": "https://zenn.dev/aldagram_tech/articles/c407ae672c9c0e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「skill」の品質劣化を防ぐため、静的解析・LLMレビュー・git hooksによる強制を組み合わせた3層の品質管理ゲートを構築した事例紹介。",
+    "summaryBody": "アルダグラム社による、AIエージェントの指示書である「skill」の品質を維持するための仕組みの解説です。skillの増加に伴い、肥大化やリンク切れ、LLMの解釈ブレといった「コードの劣化」に似た課題が発生。これを解決するため、①Pythonによる機械的な静的チェック（命名規則やパス確認）、②読み取り専用サブエージェントによるLLMレビュー（ベストプラクティス遵守確認）、③pre-push hookによるレビュー強制、という3段階のガードを構築しました。単なる自動化に留まらず、レビュー指摘に原因と再発防止ルールを明記させて観点表を育てるなど、QAプロセスの知見をAIエージェントの保守に応用した実践的な内容です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "QA",
+      "Git Hooks",
+      "LLMプロンプト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

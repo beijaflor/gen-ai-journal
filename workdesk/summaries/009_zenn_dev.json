@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:12:04.637676+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClaw で GPT-5.6 Sol/Terra/Luna を使おうとしたらハマったのでまとめておく",
+    "url": "https://zenn.dev/ryu1maniwa25/articles/openclaw-gpt-5-6-sol-terra-luna",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GPT-5.6の3モデル体制をOpenClawのサブエージェント構成で活用する際、モデル選択が反映されない問題の回避策として、ベータ版の導入とランタイム設定の変更が必要であることを解説。",
+    "summaryBody": "GPT-5.6（Sol/Terra/Luna）のマルチモデル構成をOpenClawで実現する際に直面する技術的な課題とその解決策をまとめた記事です。\n\n主な課題は2点あります。1つ目は、Codexの`spawn_agent`ツールではデフォルトでサブエージェントのモデル指定メタデータが隠蔽されるため、親と同じSolモデルが強制的に使われてしまう問題です。2つ目は、OpenClawの安定版（2026.6.11）ではGPT-5.6がカタログに含まれておらず、組み込みランタイムへの切り替え時にエラーが発生する点です。\n\n解決策として、OpenClawをベータ版（2026.7.1-beta.6以降）にアップデートし、設定で`agentRuntime.id: \"openclaw\"`を明示することを推奨しています。これにより、Codexネイティブの経路を回避して`sessions_spawn`経由で正しくモデルを呼び出し、プッシュ型通知などの機能も正常に動作するようになります。",
+    "topics": [
+      "OpenClaw",
+      "GPT-5.6",
+      "Codex",
+      "マルチエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

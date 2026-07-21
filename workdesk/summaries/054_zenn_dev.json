@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:54:39.284287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでレガシーシステムの刷新を進めた方法",
+    "url": "https://zenn.dev/knowledgesense/articles/67c61463d9c664",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "カナダ・アルバータ州政府の膨大なレガシーシステムに対し、Claude Codeを用いて脆弱性調査、テスト自動化、マルチエージェントによる継続的保守を実現した事例の紹介。",
+    "summaryBody": "カナダの州政府が抱える約1,280のアプリケーション（4億6,600万行）の脆弱性と保守性課題をClaude Codeで解決した事例を解説しています。主な手法として、静的解析とClaudeによる文脈理解を組み合わせた調査、回帰テストの自動生成、ビジネスルールを整理した上での最新言語への再構築が挙げられます。また、レッドチーム（攻撃視点）とブルーチーム（防御視点）のエージェントを使い分ける保守体制を構築。成果として、5ヶ月を要したシステムのプロトタイプを4日間で再構築するなど、最大25倍の開発効率向上が報告されています。人間が最終確認を行うプロセスを組み込むことで、大規模システムの安全性と速度を両立させている点が特徴です。",
+    "topics": [
+      "Claude Code",
+      "レガシーシステム刷新",
+      "AIエージェント",
+      "セキュリティ",
+      "自動テスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

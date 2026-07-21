@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:23:20.126148+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントはユーザーが見ているものを理解すべき：Sentryにおける「構造化コンテキスト」への移行",
+    "url": "https://blog.sentry.io/seer-agent-page-context/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SentryのAIエージェント「Seer」は、画面内容をASCII図解で読み取る方式から、UIコンポーネントが自ら意味情報を記述する構造化コンテキスト方式へ移行し、トークン消費を劇的に削減しました。",
+    "summaryBody": "SentryのAIエージェント「Seer」における、画面コンテキスト把握の技術的な進化についての解説です。従来はDOMをパースしてASCIIグリッドとしてLLMに渡していましたが、数万トークンを消費する上に、LLMの文脈が劣化する「コンテキスト・ロット」が課題でした。新方式では、Reactコンポーネントがタイトル、フィルター状態、キー数値などの意味情報（セマンティック・コンテキスト）を自ら記述し、JSON経由でMarkdownとしてエージェントに提供します。この結果、トークン消費量を75%〜85%削減しつつ、会話の質を維持することに成功。さらに、エージェントがユーザーに代わってダッシュボードを自動生成・更新するといった、UI操作を伴うアクションへの道を開きました。現在はSentryの主要な24ページに適用されています。",
+    "topics": [
+      "AI Agent",
+      "LLM Context Optimization",
+      "Sentry",
+      "UI Engineering",
+      "Observability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Your agent should understand what you see"
+  }
+}

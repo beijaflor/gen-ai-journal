@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:27:32.954606+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "13のAIモデルによる既知のCVE検出ベンチマーク：GPT-5.6とKimi K3が最高スコアを記録",
+    "url": "https://www.aikido.dev/blog/benchmarking-ai-models-known-cves",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Aikido Securityが最新の13モデルを用いて26件の既知の脆弱性（CVE）検出能力を検証した結果、GPT-5.6とKimi K3が88.5%の最高検出率を記録し、安価なモデルの複数回実行による効率性も示された。",
+    "summaryBody": "Aikido Securityは、OpenAIのGPT-5.6シリーズ、AnthropicのClaude、GoogleのGemini、xAIのGrok、およびオープンウェイトのGLMやKimiを含む主要なAIモデルを対象に、実際のコードリポジトリに含まれる26件の既知脆弱性（CVE）をどれだけ再発見できるかのベンチマークを実施した。\n\n### 主な調査結果\n- **最高性能:** GPT-5.6 (Sol) と Kimi K3 が23/26（88.5%）の脆弱性を検出し、トップとなった。特にKimi K3はGPT-5.6と同等の性能を4分の1のコストで実現している。\n- **プーリングの効果 (pass@3):** 高価なフラッグシップモデルを1回実行するよりも、GPT-5.4-nanoのような安価なモデルを3回実行して結果を統合する方が、より多くの脆弱性を低コストで発見できる傾向がある。\n- **推論の限界:** 単純なパターン認識で済む脆弱性は全モデルが検出したが、複雑なロジックチェーンや「欠落しているチェック」の特定には高度な推論能力が必要とされる。\n\n本調査は、AIをセキュリティ診断に組み込む際、単一の高性能モデルに依存するのではなく、適切な「ハーネス（実行基盤）」によるエージェントの並列実行と結果の集約が極めて有効であることを示唆している。",
+    "topics": [
+      "AIセキュリティ",
+      "LLMベンチマーク",
+      "脆弱性診断",
+      "CVE",
+      "AI SAST"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Benchmarking 13 AI models on rediscovering known CVEs"
+  }
+}
