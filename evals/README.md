@@ -104,12 +104,20 @@ with `added:` date and `reason:`, rebuild fixtures, commit the new
 article text. Never silently replace existing entries; frozen article
 text is what keeps runs comparable over time.
 
-## CI
+## No CI (deliberate)
 
-`.github/workflows/prompt-eval.yml` runs the Layer-① eval on PRs touching
-prompt-affecting paths (**warn-only** — results go to the job summary).
-Needs the `GEMINI_API_KEY` repository secret. Flip to blocking once
-trusted; judge rubrics enter CI only after passing calibration.
+Prompt changes are rare and evals make live Gemini calls (with
+occasional multi-minute hangs — see the known flake above), so there is
+no automated trigger: run `npm run eval` / `npm run eval:compare`
+manually whenever `prompts/`, `criteria/`, `EDITOR_PERSONALITY.md`, or
+the schema change. The network-free guard can be run any time:
+
+```bash
+uv run python -m unittest tests.test_promptfoo_bridge
+```
+
+Revisit CI (or a pre-commit hook for the parity test) only if prompt
+churn increases enough that manual runs get forgotten.
 
 ## Out of scope / deferred
 
