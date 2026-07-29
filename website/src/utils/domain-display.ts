@@ -23,7 +23,7 @@ export function formatDomainDisplay(url: string): string {
     const hostname = urlObj.hostname.toLowerCase();
     const pathname = urlObj.pathname;
 
-    // Special handling for zenn.dev, qiita.com, github.com, and note.com
+    // Special handling for zenn.dev, qiita.com, github.com, note.com, and sizu.me
     if (hostname === 'zenn.dev' || hostname === 'www.zenn.dev') {
       // Extract first path segment: /hoge/muge → /hoge
       const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
@@ -58,6 +58,15 @@ export function formatDomainDisplay(url: string): string {
         return `note.com/${pathSegments[0]}`;
       }
       return 'note.com';
+    }
+
+    if (hostname === 'sizu.me' || hostname === 'www.sizu.me') {
+      // Extract first path segment: /username/posts/abc123 → /username
+      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
+      if (pathSegments.length > 0) {
+        return `sizu.me/${pathSegments[0]}`;
+      }
+      return 'sizu.me';
     }
 
     // General case: remove www prefix and return clean domain
