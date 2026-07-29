@@ -11,7 +11,7 @@ Prompts are rendered through the **production assembly path**
 via `lib/call_gemini_bridge.py`), so what the eval sends is byte-identical
 to production. `tests/test_promptfoo_bridge.py` guards that parity.
 
-## One-time setup
+## One-time setup (per machine)
 
 ```bash
 uv sync                                   # repo .venv (assertions/prompt fns run in it)
@@ -23,40 +23,100 @@ promptfoo's google provider reads `GOOGLE_API_KEY` by default; the
 configs set `apiKeyEnvar: GEMINI_API_KEY`, but if your promptfoo version
 ignores it, bridge with: `export GOOGLE_API_KEY="$GEMINI_API_KEY"`.
 
-Fixtures and `response-schema.json` are committed — rebuild only when
-the dataset or `get_gemini_schema()` changes:
+Fixtures and `response-schema.json` are committed — nothing else is
+needed. Regenerate the schema copy only when `get_gemini_schema()`
+changes:
 
 ```bash
-uv run --with pyyaml,pypdf evals/fixtures/build_fixtures.py   # --refresh to re-fetch
 uv run evals/tools/gen_response_schema.py
 ```
 
-## Daily commands (from evals/)
+## Workflows
 
-| Command | What it does | Live calls |
-|---|---|---|
-| `npm run eval` | Layer-① regression on the current prompt | ~11 |
-| `npm run eval:compare` | current vs `candidates/summarize-json.candidate.prompt`, side-by-side | ~22 |
-| `npm run eval:judge` | Layer-② rubrics on judge_subset fixtures, ×3 repeats | ~12 + grader |
-| `npm run view` | Web UI (side-by-side columns, per-assertion reasons) | 0 |
+### A — Regression check
 
-Typical prompt-change workflow (`evals/candidates/` is gitignored —
-it's your local experiment scratch, never committed):
+When you touch anything prompt-adjacent (`criteria/*.md`,
+`EDITOR_PERSONALITY.md`, `schema/`) and want to confirm nothing broke:
 
 ```bash
-mkdir -p evals/candidates
-cp prompts/summarize-json.prompt evals/candidates/summarize-json.candidate.prompt
-# edit the candidate…
-cd evals && npm run eval:compare && npm run view
-# happy? copy the candidate back over prompts/summarize-json.prompt and PR it
+cd evals && npm run eval && npm run view
 ```
 
-Repeat runs are free: the promptfoo cache (`evals/.promptfoo-cache/`,
-gitignored) keys on rendered prompt + provider; editing the candidate
-only invalidates that column. Use `npx promptfoo eval -c … --no-cache`
-to force fresh calls.
+~11 Gemini calls, ~1.5 min (2 s on a cached rerun). Hard assertions
+(schema, enums, originalTitle invariant) should stay green; compare the
+soft metrics against the baseline (2026-07-29, gemini-3-flash-preview:
+`url_fidelity` ≈ 4/11, `hallucination_clean` ≈ 9/11).
 
-## Assertion semantics (mirrors the production repair layer)
+### B — Prompt experiment (A/B compare)
+
+The candidate file is your local workbench — `evals/candidates/` is
+gitignored and never committed; only the winning change to
+`prompts/summarize-json.prompt` gets PR'd.
+
+```bash
+mkdir -p evals/candidates    # first time on a machine
+cp prompts/summarize-json.prompt evals/candidates/summarize-json.candidate.prompt
+# …edit the candidate…
+cd evals && npm run eval:compare && npm run view
+```
+
+The `view` UI shows current vs candidate as two columns over the same
+fixtures — per-fixture pass/fail and named metrics side by side.
+Iterate and re-run: only the candidate column re-hits the API (current
+is cached). When the candidate wins:
+
+```bash
+cp evals/candidates/summarize-json.candidate.prompt prompts/summarize-json.prompt
+# commit + PR the production prompt change
+```
+
+### C — Judge + calibration
+
+Three single-criterion `llm-rubric` graders (`assertions/rubrics/`):
+faithfulness, thesis-anchoring, editorial quality — grader pinned to
+Gemini, applied only to the `judge_subset` fixtures.
+
+```bash
+cd evals && npm run eval:judge        # rubrics ×3 repeats on the judge subset
+npm run view                           # read the outputs YOURSELF, form your own verdicts
+# record your pass/fail per (fixture × rubric) in calibration/human_labels.yaml
+uv run --with pyyaml evals/calibration/agreement.py results/latest-judge.json
+```
+
+**Judge scores are advisory-only until calibrated.** Gate per rubric:
+percent agreement ≥ 0.8 AND Cohen's κ ≥ 0.4 against your labels. κ ≈ 0
+means the judge is effectively random for that rubric — rewrite the
+rubric, don't trust it.
+
+### D — Growing the dataset (append-mostly)
+
+When a weekly cycle catches a bad summary — hallucination, wrong thesis
+anchor, blocked-page fabrication — append it to `fixtures/selection.yaml`
+with `added:` date and `reason:`, then:
+
+```bash
+uv run --with pyyaml,pypdf evals/fixtures/build_fixtures.py   # fetches only the new entry
+git add evals/fixtures/    # frozen article text + manifest are committed
+```
+
+Never silently replace existing entries; frozen article text is what
+keeps runs comparable over time (`--refresh` re-fetches deliberately).
+This is the failure-feedback loop: the dataset grows from real errors,
+and every future experiment is tested against every past failure.
+
+## Reference
+
+### Commands & cost
+
+| Command (from evals/) | What it does | Live calls |
+|---|---|---|
+| `npm run eval` | Layer-① regression, all fixtures | ~11 |
+| `npm run eval:compare` | current vs candidate, side-by-side | ~22 |
+| `npm run eval:judge` | Layer-② rubrics on judge subset, ×3 repeats | ~12 + grader |
+| `npm run view` | Web UI | 0 |
+| `uv run python -m unittest tests.test_promptfoo_bridge` | prompt-parity guard | 0 |
+
+### Assertion semantics (mirrors the production repair layer)
 
 Production (`scripts/call-gemini.py:1011-1057`) silently repairs some
 model mistakes. The assertions encode that asymmetry — things production
@@ -72,21 +132,11 @@ ships broken **hard-fail**; things it silently fixes are **soft metrics**
 | `url_fidelity` | soft metric | production pins the URL; metric measures how often the prompt's #1 CRITICAL rule is honored |
 | `hallucination_clean` (via `scripts/summary_review.py`) | soft metric | heuristic — human-review signal by contract |
 
-## Judge layer (advisory until calibrated)
+### Caching
 
-`npm run eval:judge` grades judge_subset fixtures on three single-criterion
-rubrics (`assertions/rubrics/`): faithfulness, thesis-anchoring, editorial
-quality — grader pinned to Gemini. **Judge scores are advisory-only until
-calibrated**: fill `calibration/human_labels.yaml` from a run you reviewed
-yourself, then
-
-```bash
-uv run --with pyyaml evals/calibration/agreement.py results/latest-judge.json
-```
-
-Gate: percent agreement ≥ 0.8 AND Cohen's κ ≥ 0.4 per rubric before any
-judge score is used for gating decisions. κ ≈ 0 = the judge is random for
-that rubric; rewrite the rubric.
+The promptfoo cache (`evals/.promptfoo-cache/`, gitignored) keys on
+rendered prompt + provider; unchanged reruns are free, and editing the
+candidate only invalidates that column. `--no-cache` forces fresh calls.
 
 **Known flake**: `gemini-3-flash-preview` occasionally hangs generating
 for a fixture (observed on the thin-content stress fixture; requests
@@ -98,28 +148,14 @@ with an old request id, re-run just that fixture with the cache bypassed:
 npx promptfoo eval -c promptfooconfig.judge.yaml --filter-pattern "011" --no-cache
 ```
 
-## Growing the dataset (append-mostly)
-
-When a weekly cycle catches a bad summary — hallucination, wrong thesis
-anchor, blocked-page fabrication — append it to `fixtures/selection.yaml`
-with `added:` date and `reason:`, rebuild fixtures, commit the new
-article text. Never silently replace existing entries; frozen article
-text is what keeps runs comparable over time.
-
 ## No CI (deliberate)
 
-Prompt changes are rare and evals make live Gemini calls (with
-occasional multi-minute hangs — see the known flake above), so there is
-no automated trigger: run `npm run eval` / `npm run eval:compare`
-manually whenever `prompts/`, `criteria/`, `EDITOR_PERSONALITY.md`, or
-the schema change. The network-free guard can be run any time:
-
-```bash
-uv run python -m unittest tests.test_promptfoo_bridge
-```
-
-Revisit CI (or a pre-commit hook for the parity test) only if prompt
-churn increases enough that manual runs get forgotten.
+Prompt changes are rare and evals make live Gemini calls (with the
+occasional hang above), so there is no automated trigger — run workflow
+A/B manually whenever prompt-affecting files change. The network-free
+parity guard can run any time. Revisit CI (or a pre-commit hook for the
+parity test) only if prompt churn increases enough that manual runs get
+forgotten.
 
 ## Out of scope / deferred
 
