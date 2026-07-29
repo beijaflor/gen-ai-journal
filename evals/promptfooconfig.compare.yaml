@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: "summarize-json.prompt — current vs candidate side-by-side (replaces the hand-rolled experiments/ A/B)"
+
+prompts:
+  - id: file://prompts/build_prompt.py:build_current
+    label: "current (prompts/summarize-json.prompt)"
+  - id: file://prompts/build_prompt.py:build_candidate
+    label: "candidate (evals/candidates/summarize-json.candidate.prompt)"
+
+providers:
+  - id: google:gemini-3-flash-preview
+    config:
+      apiKeyEnvar: GEMINI_API_KEY
+      generationConfig:
+        response_mime_type: application/json
+      responseSchema: file://response-schema.json
+
+tests: file://tests/generate_tests.py:generate_tests
+
+defaultTest:
+  assert:
+    - type: python
+      value: file://assertions/schema_valid.py:get_assert
+      metric: schema_valid
+    - type: python
+      value: file://assertions/language_enum.py:get_assert
+      metric: language_enum
+    - type: python
+      value: file://assertions/content_type_enum.py:get_assert
+      metric: content_type_enum
+    - type: python
+      value: file://assertions/original_title_invariant.py:get_assert
+      metric: original_title_invariant
+    - type: python
+      value: file://assertions/url_fidelity.py:get_assert
+      metric: url_fidelity
+    - type: python
+      value: file://assertions/hallucination_heuristic.py:get_assert
+      metric: hallucination_clean
+
+outputPath: results/latest-compare.json

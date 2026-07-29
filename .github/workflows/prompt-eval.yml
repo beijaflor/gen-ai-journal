@@ -1,0 +1,101 @@
+name: Prompt Eval
+
+# Layer-① regression eval on prompt-affecting changes (LLMOps doc §4.3).
+# WARN-ONLY for now: the eval step never fails the PR; results land in
+# the job summary. Flip `continue-on-error` to false once the harness
+# has proven itself over a few real prompt iterations. Judge rubrics
+# (promptfooconfig.judge.yaml) stay out of CI until calibrated
+# (evals/calibration/).
+#
+# Requires the GEMINI_API_KEY repository secret.
+
+on:
+  pull_request:
+    paths:
+      - 'prompts/**'
+      - 'criteria/**'
+      - 'EDITOR_PERSONALITY.md'
+      - 'schema/**'
+      - 'scripts/call-gemini.py'
+      - 'evals/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "prompt-eval-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+          cache: 'npm'
+          cache-dependency-path: 'evals/package-lock.json'
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install Python deps
+        run: uv sync
+
+      - name: Install promptfoo
+        run: npm ci
+        working-directory: ./evals
+
+      - name: Bridge parity tests (network-free)
+        run: uv run python -m unittest tests.test_promptfoo_bridge
+
+      - name: Restore promptfoo cache
+        uses: actions/cache@v4
+        with:
+          path: evals/.promptfoo-cache
+          key: promptfoo-cache-${{ hashFiles('prompts/**', 'criteria/**', 'EDITOR_PERSONALITY.md', 'evals/response-schema.json', 'evals/fixtures/manifest.json') }}
+          restore-keys: |
+            promptfoo-cache-
+
+      - name: Run Layer-① eval (warn-only)
+        id: eval
+        continue-on-error: true
+        run: npm run eval
+        working-directory: ./evals
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Post results to job summary
+        if: always()
+        run: |
+          {
+            echo "## Prompt Eval (Layer ①, warn-only)"
+            if [ -f evals/results/latest-eval.json ]; then
+              node -e '
+                const r = require("./evals/results/latest-eval.json");
+                const res = (r.results && r.results.results) || r.results || [];
+                const rows = Array.isArray(res) ? res : [];
+                const pass = rows.filter(x => x.success).length;
+                console.log(`**${pass}/${rows.length} fixtures passed hard assertions**`);
+                console.log("");
+                console.log("| fixture | ok | detail |");
+                console.log("|---|---|---|");
+                for (const x of rows) {
+                  const id = (x.testCase && x.testCase.metadata && x.testCase.metadata.fixture_id) || "?";
+                  const reason = ((x.gradingResult && x.gradingResult.reason) || "").replace(/\|/g, "\\|").slice(0, 120);
+                  console.log(`| ${id} | ${x.success ? "✅" : "❌"} | ${reason} |`);
+                }
+              '
+            else
+              echo "No results file produced — eval step failed before writing output."
+            fi
+            if [ "${{ steps.eval.outcome }}" = "failure" ]; then
+              echo ""
+              echo "> ⚠️ Eval reported failures (warn-only — not blocking this PR)."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

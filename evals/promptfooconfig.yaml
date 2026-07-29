@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: "summarize-json.prompt — Layer-① regression eval (deterministic assertions, all fixtures)"
+
+prompts:
+  - id: file://prompts/build_prompt.py:build_current
+    label: current
+
+providers:
+  - id: google:gemini-3-flash-preview
+    config:
+      # promptfoo's google provider defaults to GOOGLE_API_KEY; this repo
+      # uses GEMINI_API_KEY everywhere. If apiKeyEnvar is ignored by your
+      # promptfoo version, run: export GOOGLE_API_KEY="$GEMINI_API_KEY"
+      apiKeyEnvar: GEMINI_API_KEY
+      generationConfig:
+        response_mime_type: application/json
+      # Generated from get_gemini_schema() — regenerate with:
+      #   uv run evals/tools/gen_response_schema.py
+      responseSchema: file://response-schema.json
+
+tests: file://tests/generate_tests.py:generate_tests
+
+defaultTest:
+  assert:
+    # Hard fails — production ships broken (or exits) when these fail
+    - type: python
+      value: file://assertions/schema_valid.py:get_assert
+      metric: schema_valid
+    - type: python
+      value: file://assertions/language_enum.py:get_assert
+      metric: language_enum
+    - type: python
+      value: file://assertions/content_type_enum.py:get_assert
+      metric: content_type_enum
+    - type: python
+      value: file://assertions/original_title_invariant.py:get_assert
+      metric: original_title_invariant
+    # Soft metrics — the assertion code always returns pass=true, so these
+    # can never fail a row; the score (0/1) tracks drift production would
+    # silently repair. (No weight:0 here — it would zero out namedScores.)
+    - type: python
+      value: file://assertions/url_fidelity.py:get_assert
+      metric: url_fidelity
+    - type: python
+      value: file://assertions/hallucination_heuristic.py:get_assert
+      metric: hallucination_clean
+
+outputPath: results/latest-eval.json
