@@ -40,9 +40,11 @@ uv run evals/tools/gen_response_schema.py
 | `npm run eval:judge` | Layer-② rubrics on judge_subset fixtures, ×3 repeats | ~12 + grader |
 | `npm run view` | Web UI (side-by-side columns, per-assertion reasons) | 0 |
 
-Typical prompt-change workflow:
+Typical prompt-change workflow (`evals/candidates/` is gitignored —
+it's your local experiment scratch, never committed):
 
 ```bash
+mkdir -p evals/candidates
 cp prompts/summarize-json.prompt evals/candidates/summarize-json.candidate.prompt
 # edit the candidate…
 cd evals && npm run eval:compare && npm run view

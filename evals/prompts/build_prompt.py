@@ -39,7 +39,8 @@ def build_candidate(context):
     if not CANDIDATE_PROMPT.exists():
         raise FileNotFoundError(
             f"Candidate prompt not found: {CANDIDATE_PROMPT}\n"
-            "Create it first, e.g.:\n"
+            "The candidates/ dir is gitignored (local experiment scratch). Create it first:\n"
+            "  mkdir -p evals/candidates\n"
             "  cp prompts/summarize-json.prompt evals/candidates/summarize-json.candidate.prompt"
         )
     return _build(context, prompt_path=str(CANDIDATE_PROMPT))

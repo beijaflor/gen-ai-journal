@@ -22,9 +22,11 @@ dist/
 .envrc
 .env
 
-# promptfoo eval harness (evals/) — local cache and run outputs
+# promptfoo eval harness (evals/) — local cache, run outputs, and the
+# candidate prompt workbench (local experiment scratch, never committed)
 evals/.promptfoo-cache/
 evals/results/
+evals/candidates/
 
 # Playwright MCP artifacts (page snapshots, console logs, evaluate outputs)
 .playwright-mcp/
