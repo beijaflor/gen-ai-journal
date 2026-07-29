@@ -20,22 +20,22 @@ tests: file://tests/generate_tests.py:generate_tests
 defaultTest:
   assert:
     - type: python
-      value: file://assertions/schema_valid.py:get_assert
+      value: file://assertions/checks.py:schema_valid
       metric: schema_valid
     - type: python
-      value: file://assertions/language_enum.py:get_assert
+      value: file://assertions/checks.py:language_enum
       metric: language_enum
     - type: python
-      value: file://assertions/content_type_enum.py:get_assert
+      value: file://assertions/checks.py:content_type_enum
       metric: content_type_enum
     - type: python
-      value: file://assertions/original_title_invariant.py:get_assert
+      value: file://assertions/checks.py:original_title_invariant
       metric: original_title_invariant
     - type: python
-      value: file://assertions/url_fidelity.py:get_assert
+      value: file://assertions/checks.py:url_fidelity
       metric: url_fidelity
     - type: python
-      value: file://assertions/hallucination_heuristic.py:get_assert
+      value: file://assertions/checks.py:hallucination_clean
       metric: hallucination_clean
 
 outputPath: results/latest-compare.json
