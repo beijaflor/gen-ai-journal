@@ -3,6 +3,18 @@
  */
 
 /**
+ * Domains where the first path segment identifies the author/org,
+ * displayed as e.g. zenn.dev/username instead of the bare domain.
+ */
+const FIRST_PATH_SEGMENT_DOMAINS = new Set([
+  'zenn.dev',
+  'qiita.com',
+  'github.com',
+  'note.com',
+  'sizu.me',
+]);
+
+/**
  * Formats a URL's domain for display with special handling for certain domains
  * @param url - The full URL or domain string
  * @returns Formatted domain string for display
@@ -11,7 +23,7 @@ export function formatDomainDisplay(url: string): string {
   try {
     // Handle both full URLs and domain-only strings
     let urlToProcess: string;
-    
+
     if (url.startsWith('http://') || url.startsWith('https://')) {
       urlToProcess = url;
     } else {
@@ -20,68 +32,28 @@ export function formatDomainDisplay(url: string): string {
     }
 
     const urlObj = new URL(urlToProcess);
-    const hostname = urlObj.hostname.toLowerCase();
-    const pathname = urlObj.pathname;
+    const hostname = urlObj.hostname.toLowerCase().replace(/^www\./, '');
 
-    // Special handling for zenn.dev, qiita.com, github.com, note.com, and sizu.me
-    if (hostname === 'zenn.dev' || hostname === 'www.zenn.dev') {
-      // Extract first path segment: /hoge/muge → /hoge
-      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
-      if (pathSegments.length > 0) {
-        return `zenn.dev/${pathSegments[0]}`;
+    if (FIRST_PATH_SEGMENT_DOMAINS.has(hostname)) {
+      const firstSegment = urlObj.pathname
+        .split('/')
+        .find(segment => segment.length > 0);
+      if (firstSegment) {
+        return `${hostname}/${firstSegment}`;
       }
-      return 'zenn.dev';
     }
 
-    if (hostname === 'qiita.com' || hostname === 'www.qiita.com') {
-      // Extract first path segment: /user/articles/123 → /user
-      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
-      if (pathSegments.length > 0) {
-        return `qiita.com/${pathSegments[0]}`;
-      }
-      return 'qiita.com';
-    }
-
-    if (hostname === 'github.com' || hostname === 'www.github.com') {
-      // Extract first path segment: /user/repo → /user
-      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
-      if (pathSegments.length > 0) {
-        return `github.com/${pathSegments[0]}`;
-      }
-      return 'github.com';
-    }
-
-    if (hostname === 'note.com' || hostname === 'www.note.com') {
-      // Extract first path segment: /username/n/abc123 → /username
-      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
-      if (pathSegments.length > 0) {
-        return `note.com/${pathSegments[0]}`;
-      }
-      return 'note.com';
-    }
-
-    if (hostname === 'sizu.me' || hostname === 'www.sizu.me') {
-      // Extract first path segment: /username/posts/abc123 → /username
-      const pathSegments = pathname.split('/').filter(segment => segment.length > 0);
-      if (pathSegments.length > 0) {
-        return `sizu.me/${pathSegments[0]}`;
-      }
-      return 'sizu.me';
-    }
-
-    // General case: remove www prefix and return clean domain
-    return hostname.replace(/^www\./, '');
-    
+    return hostname;
   } catch (error) {
     // Fallback: if URL parsing fails, try to clean up the input string
     console.warn(`Failed to parse URL for domain display: ${url}`, error);
-    
+
     // Remove common prefixes and protocols as fallback
     const cleaned = url
       .replace(/^https?:\/\//, '')
       .replace(/^www\./, '')
       .split('/')[0]; // Take only the domain part
-    
+
     return cleaned || url;
   }
 }
@@ -97,13 +69,13 @@ export function extractDomain(url: string): string {
     return urlObj.hostname.replace(/^www\./, '');
   } catch (error) {
     console.warn(`Failed to extract domain from URL: ${url}`, error);
-    
+
     // Fallback: extract domain from string
     const cleaned = url
       .replace(/^https?:\/\//, '')
       .replace(/^www\./, '')
       .split('/')[0];
-    
+
     return cleaned || url;
   }
 }
