@@ -19,5 +19,37 @@
     "bindings": [{ "name": "SUMMARIZER", "class_name": "SummarizerDO" }]
   },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SummarizerDO"] }],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+
+  // Staging environment (#177). Deploy: `wrangler deploy --env staging` →
+  // Worker "gen-ai-journal-pipeline-staging" (name auto-suffixed from --env).
+  // Worker environments do NOT inherit binding-type keys (vars, d1_databases,
+  // ai, durable_objects, migrations) — each must be repeated here, else the
+  // staging Worker deploys without them. Only the D1 id differs from prod: the
+  // staging Worker writes to the staging collection, never production D1.
+  "env": {
+    "staging": {
+      "vars": {
+        // Kept identical to prod for a faithful mirror. Flip to a "@cf/*"
+        // Workers AI model to rehearse the pipeline with zero Gemini spend
+        // (model routing is prefix-based — see IMPLEMENTATION_GUIDE §7).
+        "SUMMARIZE_MODEL": "gemini-3-flash-preview",
+        "MIN_CONTENT_CHARS": "200",
+        "MAX_CONTENT_CHARS": "20000"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "gen-ai-journal-db-staging",
+          "database_id": "8217e2ac-9d3e-4114-900a-459d5511d4c2"
+        }
+      ],
+      "ai": { "binding": "AI" },
+      "durable_objects": {
+        "bindings": [{ "name": "SUMMARIZER", "class_name": "SummarizerDO" }]
+      },
+      "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SummarizerDO"] }],
+      "observability": { "enabled": true }
+    }
+  }
 }

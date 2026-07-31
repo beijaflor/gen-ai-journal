@@ -29,5 +29,48 @@
       "binding": "REBUILD_THROTTLE",
       "id": "1d583e6976fb4e6f84c45e3cdd9ecaec"
     }
-  ]
+  ],
+
+  // Staging front-end = the Pages "preview" environment (#177). Deploy to any
+  // non-production branch: `wrangler pages deploy ./public --branch staging` →
+  // https://staging.gen-ai-journal.pages.dev. Pages picks this block for
+  // preview deployments; the top-level block stays production (--branch main).
+  // Bindings are NOT inherited into preview — repeat them, pointed at staging.
+  // CRITICAL: the DO script_name targets the STAGING pipeline Worker, so the
+  // staging UI enqueues into the staging pipeline (→ staging D1), never prod.
+  // TEAM_DOMAIN/POLICY_AUD stay identical: staging shares the same Zero Trust
+  // team + Access application (add staging.gen-ai-journal.pages.dev to it).
+  "env": {
+    "preview": {
+      "vars": {
+        "TEAM_DOMAIN": "https://gentle-hill-7034.cloudflareaccess.com",
+        // Staging Access application's own AUD (separate app from prod, #177).
+        "POLICY_AUD": "86817f76a5ae56c75fccb76e7825df63866e87b02cf3125bdbd181b2686642b4",
+        "AUTO_SUMMARIZE": "true"
+      },
+      "durable_objects": {
+        "bindings": [
+          {
+            "name": "SUMMARIZER",
+            "class_name": "SummarizerDO",
+            "script_name": "gen-ai-journal-pipeline-staging"
+          }
+        ]
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "gen-ai-journal-db-staging",
+          "database_id": "8217e2ac-9d3e-4114-900a-459d5511d4c2",
+          "migrations_dir": "./migrations"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "REBUILD_THROTTLE",
+          "id": "65760529fc7344bca1a5d9491638665c"
+        }
+      ]
+    }
+  }
 }

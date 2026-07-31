@@ -1,6 +1,9 @@
-// Summary detail page renderer (#173) — pure HTML-building for
-// /admin/summaries/<NNN>. Kept out of the route file so vitest can pin the
-// invariants (dismissed hides body, user content is escaped) without a D1.
+// Link detail page renderer (#173) — pure HTML-building for
+// /admin/links/<id>. Keyed by link id so EVERY submitted link — blocked and
+// failed runs included, which never earn an NNN — has an inspectable page
+// with its per-run summarization log. Kept out of the route file so vitest
+// can pin the invariants (dismissed hides body, user content is escaped)
+// without a D1.
 //
 // Everything that originates from the DB or the LLM goes through esc();
 // the only unescaped interpolations are safeJson() (for the client script)
@@ -22,6 +25,7 @@ export interface LinkRow {
   note: string | null;
   status: string; // new | queued | summarized | blocked | dismissed
   error: string | null;
+  summary_id: string | null;
   submitted_at: string | null;
   processed_at: string | null;
   fetch_ms: number | null;
@@ -71,6 +75,7 @@ const STYLE = `
     :root { --accent: #d96b0b; --line: #ddd8ce; --muted: #6a6f7a; --ok: #22633c; --bad: #a33326; }
     body { font-family: system-ui, sans-serif; max-width: 860px; margin: 5vh auto; padding: 0 20px 60px; color: #21252d; line-height: 1.6; }
     h1 { font-size: 22px; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+    h1 .nnn { font-size: 15px; color: var(--accent); }
     p.sub { color: var(--muted); margin: 0 0 20px; font-size: 13.5px; }
     section { border: 1px solid var(--line); border-radius: 6px; padding: 16px 20px; margin-bottom: 16px; background: #fff; }
     section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 0 0 10px; }
@@ -88,6 +93,11 @@ const STYLE = `
     .pill.blocked { background: #fbe9e7; color: var(--bad); }
     .pill.dismissed { background: #f0f0ee; color: #888; }
     .notice { border: 1px dashed var(--line); border-radius: 6px; background: #faf9f6; color: var(--muted); padding: 14px 18px; font-size: 14px; margin-bottom: 16px; }
+    /* Result headline tinted by outcome (st-<link.status> on #result). */
+    #result.st-blocked .notice { border: 1px solid #efc4bd; background: #fbe9e7; color: var(--bad); }
+    #result.st-summarized .notice { border: 1px solid #bfd8c6; background: #e7f2ea; color: var(--ok); }
+    #result.st-new .notice, #result.st-queued .notice { border: 1px solid #ecd9b6; background: #fdf3e4; color: #8a5307; }
+    #result.st-dismissed .notice { border: 1px solid var(--line); background: #f0f0ee; color: #777; }
     pre.raw { background: #faf9f6; border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; font-size: 12.5px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
     table { border-collapse: collapse; width: 100%; font-size: 13px; }
     th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 5px 10px 5px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
@@ -101,12 +111,23 @@ const STYLE = `
     .actions button { font-size: 13px; border: 1px solid var(--line); background: #fff; border-radius: 5px; padding: 5px 14px; cursor: pointer; }
     .actions button.warn { border-color: var(--accent); color: var(--accent); font-weight: 600; }
     .actions .hint { font-size: 12px; color: var(--muted); align-self: center; }
-    #log td.ts { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
-    #log td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; }
+    /* The log is the page's main content — unwrap it from the card look so
+       it doesn't read as just another parallel section. */
+    #log { border: none; border-radius: 0; background: transparent; padding: 6px 0 10px; }
+    /* One line per row (#178): fixed layout + nowrap/ellipsis on the flexible
+       cells; hovering a row shows the full content in the popover. */
+    #log table { table-layout: fixed; }
+    #log td.ts { white-space: nowrap; overflow: hidden; color: var(--muted); font-variant-numeric: tabular-nums; }
+    #log td.ev { font-family: ui-monospace, monospace; font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #log td.ev.step { color: var(--muted); }
     #log .pill.editor { background: #e8eef5; color: #33567a; }
     #log .pill.pipeline { background: #fdf3e4; color: #8a5307; }
     #log .pill.system { background: #f0f0ee; color: #888; }
-    #log td.detail { color: #444; font-size: 12.5px; word-break: break-word; }
+    #log td.detail { color: #444; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #log-pop { position: fixed; z-index: 20; max-width: min(560px, 90vw); max-height: 60vh; overflow: auto;
+      background: #21252d; color: #f2efe9; font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.5;
+      padding: 10px 12px; border-radius: 6px; white-space: pre-wrap; word-break: break-word;
+      box-shadow: 0 4px 18px rgba(0,0,0,.3); pointer-events: none; }
     nav { margin-top: 22px; font-size: 13.5px; }
     nav a { color: var(--accent); margin-right: 16px; }
 `;
@@ -128,20 +149,19 @@ ${body}
 `;
 }
 
-export function renderErrorPage(id: string, message: string): string {
+export function renderErrorPage(subject: string, message: string): string {
   return shell(
-    `Summary ${id} — gen-ai-journal`,
-    `  <h1>Summary ${esc(id)}</h1>
+    `${subject} — gen-ai-journal`,
+    `  <h1>${esc(subject)}</h1>
   <div class="notice">${esc(message)}</div>
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/admin/logs">events log</a></nav>`,
   );
 }
 
-/** Rich render of summary-v1 JSON; falls back to <pre> for stubs/unparseable. */
+/** Rich render of summary-v1 JSON; falls back to <pre> for stubs/unparseable.
+ * Pure content — show or nothing; all status messaging lives in the result
+ * overview. Callers skip this entirely for dismissed summaries. */
 function contentHtml(s: SummaryRow): string {
-  if (s.status === "dismissed") {
-    return `<div class="notice">Content hidden while dismissed — re-open the link below to restore it. The row (and its content) still exists.</div>`;
-  }
   const raw = s.content ?? "";
   if (raw.trimStart().startsWith("BLOCKED")) {
     return `<section><h2>Blocked stub</h2><pre class="raw">${esc(raw)}</pre></section>`;
@@ -186,6 +206,45 @@ function contentHtml(s: SummaryRow): string {
   </section>`;
 }
 
+/** Result overview — the run's outcome at a glance, shown FIRST (before the
+ * log): status headline for every state (blocked reason, success NNN,
+ * dismissed, generating/queued) plus the last-run metrics. */
+function resultOverviewHtml(link: LinkRow, summary: SummaryRow | null): string {
+  let headline: string;
+  if (link.status === "blocked") {
+    headline = `<div class="notice"><span class="err" style="font-weight:600">blocked</span> —
+    fail-closed: no summary was written, no NNN spent. Retry below, or regenerate locally and push (#168).</div>`;
+  } else if (link.status === "dismissed") {
+    headline = summary
+      ? `<div class="notice">Dismissed — content hidden while dismissed. Re-open below to restore it instantly (no regeneration, no token spend; the row still exists).</div>`
+      : `<div class="notice">Dismissed before a summary was produced — re-open below to queue it.</div>`;
+  } else if (summary) {
+    headline = `<div class="notice">Summarized into <span class="nnn">NNN ${esc(summary.id)}</span> — content below the log.</div>`;
+  } else {
+    headline = `<div class="notice">No summary yet — the pipeline ${link.status === "queued" ? "has queued this link" : "will pick this link up shortly"}.</div>`;
+  }
+
+  const rows: string[] = [];
+  if (link.status === "blocked") {
+    rows.push(`<tr><td>reason</td><td class="err">${esc(link.error ?? "(no reason recorded)")}</td></tr>`);
+  }
+  if (summary) {
+    rows.push(
+      `<tr><td>summary</td><td><span class="nnn">NNN ${esc(summary.id)}</span> <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span></td></tr>`,
+    );
+  }
+  if (link.processed_at) {
+    rows.push(
+      `<tr><td>last run</td><td>${fmtTs(link.processed_at)} · fetch ${fmtMs(link.fetch_ms)} + ai ${fmtMs(link.ai_ms)} · tokens ${link.tokens_in != null ? `${esc(link.tokens_in)}/${esc(link.tokens_out ?? "–")}` : "–"}</td></tr>`,
+    );
+  }
+
+  return `<section id="result" class="st-${esc(link.status)}"><h2>Result</h2>
+    ${headline}${rows.length ? `\n    <table class="kv"><tbody>\n      ${rows.join("\n      ")}\n    </tbody></table>` : ""}
+    ${actionButtons(link)}
+  </section>`;
+}
+
 function actionButtons(link: LinkRow): string {
   const btn = (label: string, status: string, confirmMsg: string, warn = false) =>
     `<button data-status="${esc(status)}" data-confirm="${esc(confirmMsg)}"${warn ? ' class="warn"' : ""}>${esc(label)}</button>`;
@@ -215,23 +274,15 @@ function actionButtons(link: LinkRow): string {
   return `<div class="actions">${btns.join("")}${hint ? `<span class="hint">${esc(hint)}</span>` : ""}</div>`;
 }
 
-function linkSectionHtml(link: LinkRow | null): string {
-  if (!link) {
-    return `<section><h2>Link</h2>
-    <div class="notice" style="border:none;padding:0;margin:0">No link row references this NNN (deleted, or pushed via the local fallback). Actions unavailable.</div>
-  </section>`;
-  }
+function linkSectionHtml(link: LinkRow): string {
   const label = link.status === "new" ? "generating" : link.status;
   return `<section><h2>Link</h2>
     <table class="kv"><tbody>
       <tr><td>url</td><td>${urlHtml(link.url)}</td></tr>
       <tr><td>link</td><td>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span></td></tr>
       ${link.note ? `<tr><td>note</td><td>${esc(link.note)}</td></tr>` : ""}
-      ${link.error ? `<tr><td>error</td><td class="err">${esc(link.error)}</td></tr>` : ""}
       <tr><td>submitted</td><td>${fmtTs(link.submitted_at)}</td></tr>
-      <tr><td>last run</td><td>${fmtTs(link.processed_at)} · fetch ${fmtMs(link.fetch_ms)} + ai ${fmtMs(link.ai_ms)} · tokens ${link.tokens_in != null ? `${esc(link.tokens_in)}/${esc(link.tokens_out ?? "–")}` : "–"}</td></tr>
     </tbody></table>
-    ${actionButtons(link)}
   </section>`;
 }
 
@@ -263,9 +314,29 @@ const CLIENT_SCRIPT = `
         .join(" · ");
     }
 
+    // Hover popover (#178): rows are one line (ellipsized); hovering shows the
+    // full event name, timestamp, and pretty-printed detail JSON. Content is
+    // set via textContent only — never innerHTML of user data.
+    const pop = document.getElementById("log-pop");
+    const STEP_EVENTS = new Set(["pipeline.run_started", "pipeline.fetched", "pipeline.extracted", "pipeline.model_requested", "pipeline.model_responded"]);
+    function popText(e) {
+      let detail = e.detail || "";
+      try { detail = JSON.stringify(JSON.parse(detail), null, 2); } catch { /* leave raw */ }
+      return e.event + "\\n" + (e.ts || "") + " · " + e.actor + (detail ? "\\n\\n" + detail : "");
+    }
+    function placePop(x, y) {
+      pop.style.left = Math.max(8, Math.min(x + 14, window.innerWidth - pop.offsetWidth - 10)) + "px";
+      pop.style.top = Math.max(8, Math.min(y + 14, window.innerHeight - pop.offsetHeight - 10)) + "px";
+    }
+    function attachPop(tr, e) {
+      tr.addEventListener("mouseenter", (m) => { pop.textContent = popText(e); pop.hidden = false; placePop(m.clientX, m.clientY); });
+      tr.addEventListener("mousemove", (m) => placePop(m.clientX, m.clientY));
+      tr.addEventListener("mouseleave", () => { pop.hidden = true; });
+    }
+
     async function loadLog() {
-      const qs = ["summary_id=" + encodeURIComponent(PAGE.summaryId)];
-      if (PAGE.linkId != null) qs.push("link_id=" + PAGE.linkId);
+      const qs = ["link_id=" + PAGE.linkId];
+      if (PAGE.summaryId != null) qs.push("summary_id=" + encodeURIComponent(PAGE.summaryId));
       const lists = await Promise.all(qs.map(async (q) => {
         const res = await fetch("/api/events?limit=200&" + q, { credentials: "same-origin" });
         return res.ok ? (await res.json()).events : [];
@@ -287,36 +358,46 @@ const CLIENT_SCRIPT = `
         const actor = document.createElement("td");
         const pill = document.createElement("span"); pill.className = "pill " + e.actor; pill.textContent = e.actor;
         actor.appendChild(pill);
-        const ev = document.createElement("td"); ev.className = "ev"; ev.textContent = e.event;
+        const ev = document.createElement("td"); ev.className = STEP_EVENTS.has(e.event) ? "ev step" : "ev"; ev.textContent = e.event;
         const detail = document.createElement("td"); detail.className = "detail"; detail.textContent = fmtDetail(e.detail);
+        detail.title = fmtDetail(e.detail); // native tooltip as a supplement to the popover
         tr.appendChild(ts); tr.appendChild(actor); tr.appendChild(ev); tr.appendChild(detail);
+        attachPop(tr, e);
         rows.appendChild(tr);
       }
     }
     loadLog();
 `;
 
-export function renderSummaryPage(summary: SummaryRow, link: LinkRow | null): string {
-  const page = { summaryId: summary.id, linkId: link ? link.id : null };
-  const body = `  <h1>Summary ${esc(summary.id)} <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span></h1>
-  <p class="sub">${summary.journal_date ? `journal ${esc(summary.journal_date)}` : "workdesk (current cycle)"} · pushed ${fmtTs(summary.pushed_at)} · updated ${fmtTs(summary.updated_at)} · <a href="/api/summaries/${esc(summary.id)}" target="_blank" style="color:var(--accent)">raw JSON</a></p>
+export function renderLinkPage(link: LinkRow, summary: SummaryRow | null): string {
+  const page = { linkId: link.id, summaryId: summary ? summary.id : null };
+  const label = link.status === "new" ? "generating" : link.status;
+  const sub = summary
+    ? `${summary.journal_date ? `journal ${esc(summary.journal_date)}` : "workdesk (current cycle)"} · summary <span class="pill ${esc(summary.status)}">${esc(summary.status)}</span> · pushed ${fmtTs(summary.pushed_at)} · updated ${fmtTs(summary.updated_at)} · <a href="/api/summaries/${esc(summary.id)}" target="_blank" style="color:var(--accent)">raw JSON</a>`
+    : `no NNN allocated${link.status === "blocked" ? " (fail-closed — nothing spent)" : ""} · submitted ${fmtTs(link.submitted_at)}`;
+  const body = `  <h1>L${Number(link.id)} <span class="pill ${esc(link.status)}">${esc(label)}</span>${summary ? ` <span class="nnn">NNN ${esc(summary.id)}</span>` : ""}</h1>
+  <p class="sub">${sub}</p>
 
-${contentHtml(summary)}
-
-${linkSectionHtml(link)}
+${resultOverviewHtml(link, summary)}
 
   <section id="log"><h2>Summarization log</h2>
     <div class="tbl-wrap"><table>
+      <colgroup><col style="width:152px"><col style="width:76px"><col style="width:186px"><col></colgroup>
       <thead><tr><th>time (UTC)</th><th>actor</th><th>event</th><th>detail</th></tr></thead>
       <tbody id="log-rows"></tbody>
     </table></div>
-    <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this NNN.</div>
+    <div id="log-empty" hidden style="color:var(--muted);font-size:13px;padding:10px 0 0">No events recorded for this link.</div>
+    <div id="log-pop" hidden></div>
   </section>
+
+${summary && summary.status !== "dismissed" ? contentHtml(summary) : ""}
+
+${linkSectionHtml(link)}
 
   <nav><a href="/admin/pipeline">console</a><a href="/inbox">inbox</a><a href="/admin/logs">events log</a><a href="/submit">submit</a></nav>
 
   <script>
     const PAGE = ${safeJson(page)};
 ${CLIENT_SCRIPT}  </script>`;
-  return shell(`Summary ${summary.id} — gen-ai-journal`, body);
+  return shell(`Link L${Number(link.id)} — gen-ai-journal`, body);
 }

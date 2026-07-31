@@ -5,7 +5,13 @@
 
 export interface EventInput {
   actor: "editor" | "pipeline" | "system";
-  event: string; // link.submitted | link.dismissed | link.reopened | summary.created | summary.dismissed | summary.restored | pipeline.blocked | cycle.rolled
+  // link.submitted | link.dismissed | link.reopened
+  // summary.created | summary.updated | summary.dismissed | summary.restored
+  // pipeline.run_started | pipeline.fetched | pipeline.extracted |
+  //   pipeline.model_requested | pipeline.model_responded | pipeline.blocked
+  //   (step events + the closing event share a `run` marker in detail — #178)
+  // cycle.rolled
+  event: string;
   linkId?: number | null;
   summaryId?: string | null;
   detail?: Record<string, unknown> | null;

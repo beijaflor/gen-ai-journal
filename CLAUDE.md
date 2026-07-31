@@ -2,6 +2,18 @@
 
 This repository creates weekly curated journals about Generative AI in coding, following a systematic 14-step workflow.
 
+## Cloud Summarization Platform (in progress — epic #155)
+
+STEP_02 (gather + summarize) is being ported to a Cloudflare platform under
+`platform/`: submit a URL from anywhere → it is summarized in the cloud
+(Gemini) into a D1 collection, viewable at gen-ai-journal.pages.dev. The local
+editorial workflow (STEP_03 onward) is unchanged and remains canonical until
+the staged cutover (#165). **Before working on `platform/`, read
+[platform/IMPLEMENTATION_GUIDE.md](platform/IMPLEMENTATION_GUIDE.md)** — the
+knowledge doc covering architecture, the NNN-vs-link-id numbering semantics,
+dismiss/re-open behavior, the model decision, deploy workflow, and the gotchas
+learned building it. `platform/README.md` is the terse operational reference.
+
 # Editorial Guidelines
 
 ## Language Requirements

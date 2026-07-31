@@ -23,6 +23,7 @@
     th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--line); white-space: nowrap; }
     td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
     td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    td.num a { color: #1f4e79; }
     .pill { font-size: 11px; padding: 1px 9px; border-radius: 20px; background: #eee; white-space: nowrap; }
     .pill.new { background: #e7f2ea; color: var(--ok); }
     .pill.queued { background: #fdf3e4; color: #8a5307; }
@@ -62,7 +63,7 @@
   </div>
 
   <div class="tbl-wrap"><table>
-    <thead><tr><th>NNN</th><th>status</th><th>url / note / error</th><th>run</th><th>tokens</th><th>actions</th></tr></thead>
+    <thead><tr><th>NNN / L</th><th>status</th><th>url / note / error</th><th>run</th><th>tokens</th><th>actions</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
 
@@ -108,11 +109,11 @@
       for (const l of rows) {
         const tr = document.createElement("tr");
         // Read-mostly list (#173): dismiss/re-open/re-summarize live on the
-        // summary detail page; only retry-on-blocked stays here.
+        // link detail page (every row has one); only retry-on-blocked stays here.
         const acts = [];
         if (l.status === "blocked") acts.push(`<button data-a="retry" data-id="${l.id}">retry</button>`);
         tr.innerHTML = `
-          <td class="num">${l.summary_id ? `<a href="/admin/summaries/${encodeURIComponent(l.summary_id)}" target="_blank"><b>${l.summary_id}</b></a>` : "–"}</td>
+          <td class="num">${l.summary_id ? `<b>${l.summary_id}</b> · ` : ""}<a href="/admin/links/${l.id}" target="_blank">L${l.id}</a></td>
           <td><span class="pill ${l.status}">${l.status === "new" ? "generating" : l.status}</span></td>
           <td><div class="u"><a href="${l.url}" target="_blank" rel="noreferrer">${l.url}</a></div>
               ${l.note ? `<div style="font-size:12px;color:var(--muted)">${escapeHtml(l.note)}</div>` : ""}

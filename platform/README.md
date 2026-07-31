@@ -6,6 +6,7 @@ decided in #167), admin console (#161). The journal website is NOT hosted
 here yet — see the epic for later phases.
 
 Live: **https://gen-ai-journal.pages.dev** · Pipeline worker: `gen-ai-journal-pipeline`
+Staging (#177): **https://staging.gen-ai-journal.pages.dev** · worker `gen-ai-journal-pipeline-staging` · isolated D1 `gen-ai-journal-db-staging`
 
 ## Layout
 
@@ -25,16 +26,21 @@ functions/            Pages Functions = the HTTP API
   api/cycle.ts        GET registry state, POST rollover (seed counter per #165 rule)
   api/pipeline.ts     joined operational view for the console
   api/events.ts       GET audit trail: ?limit= (≤200) &event= &summary_id= &link_id=
-  admin/summaries/    GET /admin/summaries/:id — server-rendered summary detail
-                      page (#173): content, link + run metrics, actions
-                      (dismiss / re-open / re-summarize), per-run event log
-  _lib/summary_page.ts  pure HTML renderer for the detail page (unit-tested)
+  admin/links/        GET /admin/links/:id — server-rendered detail page (#173),
+                      keyed by link id so EVERY run — blocked/failed included —
+                      is inspectable: status, content (when summarized), run
+                      metrics, actions (dismiss / re-open / retry / re-summarize),
+                      per-run event log
+  admin/summaries/    GET /admin/summaries/:NNN → 302 to the latest link's
+                      /admin/links/:id (raw JSON stays at /api/summaries/:NNN)
+  _lib/summary_page.ts  pure HTML renderer for the link detail page (unit-tested)
 public/               static, Access-protected where sensitive
   submit/ inbox/      link intake UI + bookmarklet (+ latest-events panel)
   admin/pipeline/     operations console: states, errors, metrics, retry, rollover
   admin/logs/         events log: full audit trail, filterable, auto-refresh
-                      Lists are read-mostly (#173): NNN links navigate to the
-                      detail page; only retry-on-blocked stays on the console
+                      Lists are read-mostly (#173): L<n> tokens navigate to the
+                      link detail page (NNN stays as text); only retry-on-blocked
+                      stays on the console
 worker/               companion Worker "gen-ai-journal-pipeline"
   src/index.ts        SummarizerDO: alarm-driven queue (debounce 20s, serial,
                       stale-claim recovery, infra-retry via alarm backoff)
@@ -52,7 +58,10 @@ npm run check          # tsc --noEmit (run before every deploy)
 npm test               # vitest unit tests
 npm run deploy         # Pages (functions + static)
 npm run deploy:worker  # pipeline worker (DO)
-wrangler d1 migrations apply gen-ai-journal-db --remote   # after adding migrations/NNNN_*.sql
+npm run deploy:staging         # staging Pages preview (#177)
+npm run deploy:worker:staging  # staging pipeline worker
+wrangler d1 migrations apply gen-ai-journal-db --remote                 # after adding migrations/NNNN_*.sql
+wrangler d1 migrations apply gen-ai-journal-db-staging --remote --env preview  # …and the staging mirror (#177)
 wrangler tail gen-ai-journal-pipeline                     # live structured run logs
 ```
 
@@ -78,8 +87,18 @@ wrangler tail gen-ai-journal-pipeline                     # live structured run 
 - Blocked = fail-closed with a reason on the link; PDFs & bot-blocked pages
   are regenerated locally and pushed (#168, permanent fallback path).
 - Every summarization-lifecycle interaction lands in the append-only `events`
-  table (#172): link submitted/dismissed/reopened, summary created/dismissed/
-  restored, pipeline blocked (with metrics), cycle rolled. Events survive link
-  deletion; scope is summarization only until the publish phase (#163) adds
-  journal events. View at `/admin/logs`, query via `GET /api/events`.
+  table (#172): link submitted/dismissed/reopened/retried/resummarize_requested
+  (the `→ new` trigger is named by the editor's intent, from prior status),
+  summary created/updated/dismissed/restored, pipeline blocked (with metrics),
+  cycle rolled. Each
+  pipeline run also emits step events (#178) — `pipeline.run_started` →
+  `.fetched` → `.extracted` → `.model_requested` → `.model_responded` — all
+  sharing a `run` marker (ISO ts captured at claim) in `detail` with the
+  closing created/updated/blocked event, so retries group into distinct runs.
+  `summary.updated` = overwrite under an existing NNN (re-summarize);
+  `summary.created` stays for first writes. The worker `/eval` path passes no
+  step emitter → persists nothing. Events survive link deletion; scope is
+  summarization only until the publish phase (#163) adds journal events. View
+  at `/admin/logs` (one-line rows, hover for full detail; step noise hidden
+  by default), query via `GET /api/events`.
 - Secrets: `API_BEARER_TOKEN` (Pages + worker), `GEMINI_API_KEY` (worker).

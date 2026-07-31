@@ -1,11 +1,10 @@
-// GET /admin/summaries/:id (#173) — server-rendered summary detail page.
-// The primary wall is Cloudflare Access on /admin/* (edge 302 before this
-// runs); authorize() here is defense-in-depth only. Raw JSON stays at
-// /api/summaries/:id — this page is the human view: content, link + run
-// metrics, actions (dismiss / re-open / re-summarize), per-run event log.
+// GET /admin/summaries/:NNN (#173) — legacy entry point. The detail page is
+// keyed by link id (/admin/links/:id) so blocked/failed runs are inspectable
+// too; this route resolves the NNN to its latest link and 302s there.
+// Raw JSON stays at /api/summaries/:NNN — untouched.
 
 import { authorize, type Env } from "../../_lib/auth";
-import { renderErrorPage, renderSummaryPage, type LinkRow, type SummaryRow } from "../../_lib/summary_page";
+import { renderErrorPage } from "../../_lib/summary_page";
 
 function html(markup: string, status = 200): Response {
   return new Response(markup, { status, headers: { "content-type": "text/html; charset=utf-8" } });
@@ -16,24 +15,20 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, params })
   if (!who) return new Response("unauthorized", { status: 401 });
 
   const id = String(params.id);
-  if (!/^\d{3,}$/.test(id)) return html(renderErrorPage(id, "Invalid id — expected a zero-padded NNN like 003."), 400);
+  if (!/^\d{3,}$/.test(id)) return html(renderErrorPage(`Summary ${id}`, "Invalid id — expected a zero-padded NNN like 003."), 400);
 
-  // The admin detail covers the current cycle: the workdesk row only.
-  // Published rows remain reachable via /api/summaries/:id?journal_date=….
-  const summary = await env.DB.prepare(
-    "SELECT id, journal_date, url, content, status, pushed_at, updated_at FROM summaries WHERE id = ? AND journal_date IS NULL",
-  )
+  const link = await env.DB.prepare("SELECT id FROM links WHERE summary_id = ? ORDER BY id DESC LIMIT 1")
     .bind(id)
-    .first<SummaryRow>();
-  if (!summary) {
-    return html(renderErrorPage(id, "No workdesk summary with this NNN. Published rows: /api/summaries/" + id + "?journal_date=YYYY-MM-DD."), 404);
+    .first<{ id: number }>();
+  if (!link) {
+    return html(
+      renderErrorPage(
+        `Summary ${id}`,
+        "No link references this NNN (deleted, or pushed via the local fallback). Raw JSON: /api/summaries/" + id + ".",
+      ),
+      404,
+    );
   }
 
-  const link = await env.DB.prepare(
-    "SELECT id, url, note, status, error, submitted_at, processed_at, fetch_ms, ai_ms, tokens_in, tokens_out FROM links WHERE summary_id = ? ORDER BY id DESC LIMIT 1",
-  )
-    .bind(id)
-    .first<LinkRow>();
-
-  return html(renderSummaryPage(summary, link ?? null));
+  return new Response(null, { status: 302, headers: { location: `/admin/links/${link.id}` } });
 };
