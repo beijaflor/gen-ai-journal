@@ -1,32 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-07-21T15:05:52.608643+00:00",
+    "generatedAt": "2026-08-01T06:19:01.785943+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Cloudflareによるx.aiへのアクセスブロック通知",
+    "title": "Grok Build コーディングエージェントとCLIのオープンソース化",
     "url": "https://x.ai/open-source",
     "language": "en",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "Cloudflareのセキュリティフィルタリングにより、x.aiへのアクセスが制限された際に表示されるエラーページの内容です。",
-    "summaryBody": "提供されたテキストは、x.aiのウェブサイトにアクセスしようとした際にCloudflareのセキュリティサービスによってブロックされたことを通知するエラーページです。不正なデータ送信やSQLコマンドの疑いなど、セキュリティ上の懸念があるアクションがトリガーとなった場合に表示されます。Ray IDやIPアドレスを含む技術的な情報が表示されており、正規のユーザーが誤ってブロックされた場合はサイト管理者に連絡するよう促す内容となっています。コンテンツ自体にはAI関連の具体的な最新情報は含まれていません。",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "xAI（SpaceXAI）は、Rustで構築された強力なコーディングエージェントおよびCLIツール「Grok Build」をオープンソースとして公開しました。",
+    "summaryBody": "xAIは、自社のコーディングエージェントおよびコマンドラインインターフェース（CLI）ツールである「Grok Build」をオープンソース化したことを発表しました。このツールはRust言語で記述されており、GitHub上の`xai-org/grok-build`リポジトリで管理されています。開発者は`cargo`コマンドを通じて、ビルド（xai-grok-pager-bin）、検証、リンティング、フォーマットなどの操作を直接ターミナルから実行可能です。AIを活用した開発フローを効率化するためのエージェント機能と、エンジニアが日常的に使用するCLIツールの両面を兼ね備えており、xAIのエコシステムをより広く開発コミュニティに開放する動きとして注目されます。",
     "topics": [
-      "Cloudflare",
-      "Network Security",
-      "Access Control",
-      "x.ai"
+      "Grok Build",
+      "xAI",
+      "オープンソース",
+      "コーディングエージェント",
+      "Rust"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 5,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 5
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
     },
-    "originalTitle": "Attention Required! | Cloudflare"
+    "originalTitle": "Open Source: Grok Build Coding Agent & CLI"
   }
 }
