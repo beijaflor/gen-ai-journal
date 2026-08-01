@@ -46,7 +46,6 @@
 - [x] 191. https://tech.layerx.co.jp/entry/langfuse-clickhouse-read-skip
 - [x] 190. https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/
 - [x] 189. https://pydantic.dev/articles/the-human-in-the-loop-is-tired
-- [x] 188. https://imdanielkendall.com/the-great-software-regress-how-move-fast-and-break-things-broke-our-lives/
 - [x] 187. https://artificialanalysis.ai/models/kimi-k3
 - [x] 186. https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6
 - [x] 185. https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/
