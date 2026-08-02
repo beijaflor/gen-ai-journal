@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:14:45.264833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WASTE: NVMeストリーミングにより2.78兆パラメータのKimi K3を一般PCで動作させる推論エンジン",
+    "url": "https://github.com/sqliteai/waste",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "高速なNVMeストレージから必要な重みを動的にストリーミングすることで、RAM容量を大幅に超える2.78兆パラメータの巨大LLM「Kimi K3」を一般のMacBook等で動作可能にするC言語製の推論エンジン。",
+    "summaryBody": "WASTE (Weight-Aware Streaming Tensor Engine) は、2.78兆ものパラメータを持つ超巨大モデル「Kimi K3」を、64GB程度のRAMを搭載した一般向けハードウェアで実行することを目指した推論エンジンです。Mixture-of-Experts (MoE) モデルの特性（1トークンあたり4%程度のパラメータのみが活性化する点）を利用し、共有の重みをメモリに保持しつつ、必要となる専門家（エキスパート）層の重みのみを高速なNVMeからオンデマンドで読み込む手法を採用しています。3ビットの残差ベクトル量子化やルックアヘッド・ルーターによる先行読み込み、Kimi Delta AttentionによるKVキャッシュの大幅な削減など、高度な最適化が施されています。依存関係のないスタンドアロンなCライブラリとして設計されており、OpenAI互換のAPIサーバー機能も提供しています。",
+    "topics": [
+      "LLM Inference",
+      "Kimi K3",
+      "MoE (Mixture of Experts)",
+      "NVMe Streaming",
+      "Weight Quantization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - sqliteai/waste: Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine."
+  }
+}

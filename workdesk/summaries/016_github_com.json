@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:25:08.030667+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SimpleEnglish: LLMに「航空機マニュアル級」の簡潔な技術英語を書かせるエージェントツール",
+    "url": "https://github.com/AminBlg/SimpleEnglish",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLM特有の冗長な表現（AI slop）を排除し、航空宇宙産業の標準規格「ASD-STE100」に準拠した極めて簡潔で誤解のない技術文書を生成させるためのスキルセット。",
+    "summaryBody": "LLMが生成しがちな冗長で曖昧な表現（通称 AI slop）を抑制し、航空機メンテナンスマニュアルのような厳格な「簡略技術英語（Simplified Technical English）」を出力させるためのエージェントスキルです。1983年から航空業界で採用されているASD-STE100規格に基づき、「1文20語以内」「能動態の徹底」「一語一義の原則」「-ing形の禁止」といった53の厳格なルールをプロンプトとして適用します。Claude CodeやCursor、GitHub Copilotなどの主要なAIツールに導入可能で、ベンチマークではSTE違反を平均72.9%削減し、トークン消費量も抑えられることが示されています。技術文書の明快さを向上させるだけでなく、非ネイティブへの配慮や翻訳コストの削減にも寄与します。",
+    "topics": [
+      "LLM",
+      "ASD-STE100",
+      "Technical Writing",
+      "AI Agents",
+      "Documentation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - AminBlg/SimpleEnglish: Agent skill: make LLMs write docs in ASD-STE100 Simplified Technical English — no AI slop"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:42:36.216009+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hallmark: Claude CodeやCursor向けの「AI臭さ」を排除するデザインツール",
+    "url": "https://github.com/Nutlope/hallmark",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが生成しがちな画一的なテンプレート感を排除し、Claude CodeやCursorで独自性の高いUIを構築するためのオープンソース・デザインスキル。",
+    "summaryBody": "Hallmarkは、Claude Code、Cursor、CodexなどのAIエディタ向けに開発された「Anti-AI-slop（AI特有の質の低いデザインの排除）」を実現するためのリソースです。LLMが学習データの影響で出力しがちな「どこかで見たようなテンプレート感」を回避し、20種類のテーマと57項目の「slop-test（低質判定）」、自己批判プロンプトを用いて、プロジェクトごとに異なる指紋を持つ独自のデザインを生成します。主な機能には、新規UIを構築する `build`、既存コードのアンチパターンを特定する `audit`、構造を維持しつつデザインを一新する `redesign`、外部サイトの設計思想を抽出する `study` の4つが含まれます。MITライセンスで公開されており、バニラなHTML/CSSによる軽量でユニークなフロントエンド開発を支援します。",
+    "topics": [
+      "AI Design",
+      "Claude Code",
+      "Cursor",
+      "UI/UX",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Nutlope/hallmark: Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
+  }
+}

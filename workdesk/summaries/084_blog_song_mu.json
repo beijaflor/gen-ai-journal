@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:08:10.138435+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのハーネスをシンプルに保つ - 縦串のAGENTS.mdと横串のAgent Skills",
+    "url": "https://blog.song.mu/entry/agents-md-and-agent-skills",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントへの指示（ハーネス）を、オープンスタンダードなAGENTS.mdとAgent Skillsを活用してシンプルに管理し、ソフトウェアのように継続的にリファクタリングすべきだと提唱する記事です。",
+    "summaryBody": "AIエージェントに的確なコンテキストを与えるための『ハーネス』整備において、ベンダー独自の仕様に依存せず、オープンスタンダードを活用する重要性を説いています。具体的には、ファイルツリーに沿ってルールを適用する『AGENTS.md』（縦串）と、特定機能を横断的に提供する『Agent Skills』（横串）の2軸で整理することを推奨しています。指示ファイルは一度作って終わりではなく、ソフトウェアと同様に「必要最小限から始める」「定期的に見直す」「不必要になったら削除する」といったメンテナンスを行い、シンプルさを保つことがAI時代の技術的負債を防ぐ鍵となります。",
+    "topics": [
+      "AIエージェント",
+      "AGENTS.md",
+      "Agent Skills",
+      "プロンプトエンジニアリング",
+      "技術選定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

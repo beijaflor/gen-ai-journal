@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:41:20.870358+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2TパラメータのLLMはいつ100GBに収まるか ― LLM推論のメモリ階層管理はCPUマイクロアーキテクチャ史を再演している",
+    "url": "https://qiita.com/sukimaengineer/items/207bf475d3bf2757afe6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの巨大な重みとKVキャッシュが、量子化・構造最適化・SSDオフロード等の技術により100GB級へ圧縮される過程を、CPUマイクロアーキテクチャの進化史になぞらえて詳細に分析した論考。",
+    "summaryBody": "本記事は、2026年時点のフロンティア級LLM（約2兆パラメータ）が、いかにして100GB程度のメモリに収まるかを技術的・歴史的視点から考察しています。モデル圧縮を駆動する「量子化」「能力密度の向上」「推論時計算（Long CoT）」の3要素により、2027年半ばから2028年頃には4bit量子化された200B級モデル（約100GB）が現行の2T級モデルと同等性能に達すると予測。また、KVキャッシュのMLA（Multi-head Latent Attention）による劇的な縮小や、MoE重みのSSD退避における予測プリフェッチの重要性を算術的に示しています。最大のハイライトは、現在のLLM推論スタックの進化が、1980〜90年代のCPUが辿った仮想記憶、分岐予測、投機実行、メモ化といったマイクロアーキテクチャの歴史を30倍以上の速度で再演しているという指摘です。Google TPU 8iやNVIDIA Rubin/LPXといったハードウェアのシリコン化の進展も踏まえ、今後は投機デコードやエキスパート予測器の固定機能化が焦点になると結論づけています。",
+    "topics": [
+      "LLM",
+      "MoE",
+      "メモリ階層管理",
+      "マイクロアーキテクチャ",
+      "推論最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

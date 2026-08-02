@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:05:54.942355+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クラウドLLMに頼りきらない開発体験をつくる （AI Shift Local LLM Meetup #2 レポート）",
+    "url": "https://zenn.dev/aishift/articles/b2c3b23776bdce",
+    "language": "ja",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "クラウドLLMの利用リスクに備え、ローカル環境でのAI開発体験の可能性と限界を1時間のハッカソンを通じて検証した実践レポート。",
+    "summaryBody": "AI Shiftが開催した「Local LLM Meetup #2」のイベントレポートです。FableやMythosのアクセス停止騒動など、商用クラウドLLMへの過度な依存リスクが顕在化する中、「どこまでローカルで開発できるか」をテーマに、OllamaやMLXなどの環境を用いたハッカソンが実施されました。\n\n### 5つの主要な知見\n1. **「1から作り直させる」方が早い**: ローカルLLMのコンテキスト制限下では、微修正の繰り返しよりも指示を再提示して0から生成させる方が効率的であるケースが多い。\n2. **「直したふり」への警戒**: バグ指摘に対し「修正しました」と言いつつ同じコードを返す論理崩壊が起きやすく、人間の介入が必要。\n3. **軽量モデル（Gemma等）の有用性**: パラメータ数だけでなく、指示追従性の高い軽量モデル（4B/9Bクラス）が特定タスクで中規模モデルを凌駕することがある。\n4. **ナレッジカットオフ**: uvなどの最新ツールの導入は、LLMの学習データに含まれていないため人間が補完する必要がある。\n5. **ハードウェア負荷**: M4チップ搭載Macでもファンが回るほどの高負荷が発生し、並列作業には課題が残る。\n\n### 結論\n開発体験における課題はあるものの、データの機密性やコントロールの自由度から、ローカルLLMを「引き出し」として持っておく価値が強調されています。",
+    "topics": [
+      "Local LLM",
+      "Gemma",
+      "Ollama",
+      "AI開発",
+      "ハッカソン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

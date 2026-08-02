@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:56:58.482892+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "システムプロンプト8割削減でも無問題 —Claude 5世代のコンテキストエンジニアリング新ルール",
+    "url": "https://qiita.com/ryoji9702/items/3d88827240464fb6320e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude 5世代モデルの登場に伴い、システムプロンプトを大幅に削減してモデルの自律的判断を促す「Unhobble Claude」という新たなコンテキストエンジニアリング手法の解説。",
+    "summaryBody": "Anthropicが発表したClaude 5（Opus 5等）向けの新しいコンテキスト設計指針「Unhobble Claude」を整理した記事です。従来の「ルールの網羅と厳格なガードレール」から「判断基準の提示とモデルへの委譲」へのパラダイムシフトを提唱しており、Claude Codeのシステムプロンプトを80%以上削減しても精度が維持される実測結果が示されました。主な転換点として、段階的開示（Skillsへの分離）、インターフェース設計（型定義）による制約、重複指示の排除など6つのポイントを挙げています。また、System Prompt、CLAUDE.md、Skills、Referencesの4層構造による設計を推奨し、プロンプトを最小限の高シグナルなトークンに最適化することの重要性を説いています。",
+    "topics": [
+      "Claude 5",
+      "Anthropic",
+      "コンテキストエンジニアリング",
+      "Claude Code",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

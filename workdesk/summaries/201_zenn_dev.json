@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:39:41.399797+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【速報】Opus 5、React習熟度ベンチマークで余裕のFable 5超え",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-14",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "新モデルClaude Opus 5がReact習熟度ベンチマークで史上最高の90点台を記録し、アクセシビリティや設計面で前世代を圧倒した。",
+    "summaryBody": "uhyo氏によるAIモデルのReact習熟度計測シリーズ第14弾。新モデル「Claude Opus 5」を検証した結果、effort=high設定で前世代のFable 5 maxを上回るスコアを記録し、本ベンチマーク初の90点台に到達した。特にアクセシビリティ（a11y）とコンポーネント設計が大幅に向上しており、従来Claude系が弱点としていた領域を克服している。一方で、React 19.2で登場したuseEffectEventを自主的に使用し始めるなど進歩は見られるものの、依然として手動メモ化に頼るReact 18世代の書き方が主流であり、パフォーマンス意識には改善の余地がある。現行の評価指標（v1）が飽和状態にあることも示唆されており、今後React Compiler等を前提とした次世代ベンチマークv2への移行が提言されている。",
+    "topics": [
+      "React",
+      "Claude Opus 5",
+      "LLMベンチマーク",
+      "フロントエンド開発",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

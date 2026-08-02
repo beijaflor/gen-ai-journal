@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:01:44.980970+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "真理は方向ではない：LLMプローブに対するタルスキ攻撃",
+    "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの埋め込み空間から真実を抽出する「真理プローブ」に対し、タルスキの真理不可定義性定理を用いた対角線論法によって、その理論的な限界と自己矛盾を指摘する論考。",
+    "summaryBody": "LLMの内部表現において「真実」が特定のベクトル方向に対応するという「線形表現仮説」への批判的分析です。著者は、タルスキの真理不可定義性定理やゲーデルの不完全性定理を現代のLLM解釈可能性研究に当てはめ、「この文に対する真理プローブのスコアは偽である」といった自己言及的な文（対角線攻撃）を構成することで、いかなる定義可能なプローブも完全な「真理の神託」にはなり得ないことを論証しています。Qwen3.5を用いた実験では、通常の真偽判定には高い精度を示すプローブが、こうした攻撃文に対しては無効化されることが示されました。本稿は、真理プローブがAIアライメント等のツールとして有用であることを認めつつも、数学的・論理的な制約からその万能性を否定しています。",
+    "topics": [
+      "LLMプローブ",
+      "線形表現仮説",
+      "タルスキの真理不可定義性定理",
+      "AI安全性",
+      "解釈可能性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Truth is not a direction: a Tarski attack on LLM probes"
+  }
+}

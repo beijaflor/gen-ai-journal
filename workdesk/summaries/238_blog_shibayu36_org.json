@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:31:42.339071+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Actionで使うSkillを、リポジトリにコミットせずgh skill installで実行時に入れる",
+    "url": "https://blog.shibayu36.org/entry/2026/07/27/163000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code Actionで利用する共通Skillをリポジトリにコミットせず、GitHub Actionsの実行時にGitHub CLIで動的にインストールして利用する方法を解説しています。",
+    "summaryBody": "GitHub Pull RequestのセキュリティレビューなどをClaude Code Actionで自動化する際、共通化したSkillを各リポジトリに個別にコミットするとメンテナンスが煩雑になります。この記事では、GitHub Actionsのワークフロー内で`gh skill install`コマンドを使用し、実行時にSkillを動的に導入する手法を提案しています。特に、実行環境の制約を回避するために`--scope user`オプションを活用する点や、`--allowedTools`でインストールしたSkillを明示的に許可する設定など、組織展開を容易にするための具体的なTipsが網羅されています。このアプローチにより、最小限のワークフロー定義だけで最新の共通プロンプトやロジックを各リポジトリに適用可能になります。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AIエージェント",
+      "GitHub CLI",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

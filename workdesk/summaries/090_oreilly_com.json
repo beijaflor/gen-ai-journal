@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:06:48.613766+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「ループ」とは一体何なのか？ AIエンジニアリングにおける4つの階層",
+    "url": "https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエンジニアリングで急速に普及している「ループ」という概念を、実行、タスク、製品、システムの4つのアーキテクチャ階層に分類し、それぞれの役割と人間の介入ポイントを明確化した論考。",
+    "summaryBody": "AIエンジニアリング界隈で「ループ（Loop）」という用語が多用されているが、その定義は文脈により様々である。本記事では、現在議論されている「ループ」を4つの明確なアーキテクチャに分類している。\n\n1. **実行ループ (Execution Loop)**: エージェントがツールを呼び出し、結果を観察して次を決定する最小単位のサイクル。\n2. **タスクループ (Task Loop)**: 仕様を満たすまでエージェントを（コンテキストをリセットして）再起動し続けるプロセス。\n3. **製品ループ (Product Loop)**: 開発ライフサイクル全体を自律化する「ソフトウェアファクトリー」の概念。\n4. **システムループ (System Loop)**: プロンプトや評価指標自体をAIが改善する「自己研究（Autoresearch）」。\n\n著者は、これらを統合する最上位に人間が目標設定や予算配分を行う「監視ループ」を置き、自律性を「ダイヤル」のように各階層で調整することが、今後の設計の鍵になると説いている。",
+    "topics": [
+      "AI Engineering",
+      "AI Agents",
+      "Loop Engineering",
+      "Software Factory",
+      "Autoresearch"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "What the Hell Is a Loop, Anyway?"
+  }
+}

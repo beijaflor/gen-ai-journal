@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:04:53.751530+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに最適化されたエージェントネイティブな課題管理・Wiki「Projektor」",
+    "url": "https://tajd.github.io/projektor/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントがMCP経由で直接操作することを前提に設計された、Cloudflare Workers上で動作する軽量かつ高機能な課題管理システム。",
+    "summaryBody": "Projektorは、AIエージェントを「第一級のクライアント」として定義する新しいコンセプトの課題管理・Wikiツールです。Jiraのようなプロジェクト横断的な管理機能と、Gitトラッカーのようなエージェントへの親和性を両立しています。最大の特徴はModel Context Protocol (MCP)サーバーを主要インターフェースとして提供している点で、エージェントが人間に代わってチケットの起票やスプリント計画、Wikiの検索などを自律的に実行できます。システム構成はCloudflare Workers (Hono, D1, KV, R2) を採用しており、エッジ環境で動作するため低コストかつ数分でセルフホストが可能です。複数エージェントの並列作業を調整するレジストリ機能も備え、次世代のAI駆動型開発に適したインフラを提供します。",
+    "topics": [
+      "AI Agent",
+      "Issue Tracker",
+      "MCP",
+      "Cloudflare Workers",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Projektor | Projektor"
+  }
+}

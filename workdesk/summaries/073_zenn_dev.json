@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:12:23.472622+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeをシークレットモードで起動する方法",
+    "url": "https://zenn.dev/branbran/articles/9cbead89e05cba",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの自動メモリ機能や履歴保存を環境変数で無効化し、過去のコンテキストに影響されないクリーンなセッションを立ち上げる方法の解説。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」において、ブラウザのシークレットモードのような「履歴を残さない」「過去のメモリを参照しない」状態で起動する手法を紹介しています。公式には専用モードが存在しませんが、`CLAUDE_CODE_SKIP_PROMPT_HISTORY=1`（履歴保存停止）と`CLAUDE_CODE_DISABLE_AUTO_MEMORY=1`（メモリ機能停止）の2つの環境変数を組み合わせることで実現可能です。また、`CLAUDE.md`の読み込みも停止する`CLAUDE_CODE_DISABLE_CLAUDE_MDS=1`についても触れられており、試行錯誤時に意図しない情報を学習・継承させたくない場合に非常に実用的なテクニックです。`claude --bare`フラグとの挙動の違いについても簡潔に整理されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "CLI",
+      "AIエージェント",
+      "生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:54:23.339812+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Routinesを活用したサブスク枠内でのGitHub自動コードレビュー",
+    "url": "https://zenn.dev/rehabforjapan/articles/claude-code-routines-pr-review-202607",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code RoutinesのGitHubトリガー機能を利用し、追加コストを抑えながら既存のサブスクリプション枠内でPR作成時に自動でコードレビューを実行する手法。",
+    "summaryBody": "Claude Codeの「Routines」機能を用いて、GitHubのPull Request（PR）作成やDraft解除をトリガーに、自動でコードレビューを行う方法を紹介しています。主なメリットとして、専用のAIレビューサービスを別途契約することなく、Claude MaxやTeamプラン等の既存サブスクリプションの利用枠内でレビューを回せる点が挙げられます。設定はclaude.aiの管理画面から行い、特定のAuthorフィルタやレビュー用スキルを指示文（Instructions）に含めることで、実装セッションとは独立したクリーンな環境でのレビューを実現します。AIレビュー特有の確率的な挙動や、コネクタの権限管理、リサーチプレビュー段階である点などの注意点も解説されています。予算制約のあるチームや個人開発者が、手軽にAIレビューをワークフローに組み込むための実践的なガイドです。",
+    "topics": [
+      "Claude Code",
+      "GitHub",
+      "コードレビュー",
+      "自動化",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

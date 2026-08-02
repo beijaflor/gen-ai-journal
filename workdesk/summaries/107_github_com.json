@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:02:53.279727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Codex Security: コード脆弱性の発見・検証・修正を自動化するCLIとTypeScript SDK",
+    "url": "https://github.com/openai/codex-security",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIが開発した、AI（Codex）を活用してソースコードのセキュリティ脆弱性を自動的に検出し、検証、修正までを行うためのCLIツールおよびTypeScript SDK。",
+    "summaryBody": "OpenAIから公開された「Codex Security」は、開発ライフサイクルに直接組み込める高度なセキュリティ解析ツールです。単なる静的解析（SAST）を超え、GPT-5.6-terra（プレビュー）などの高度なモデルを使用して、脆弱性の特定から修正案の提示までを自動化します。主な特徴として、マルチエージェントによる深層スキャンモード、CI/CD環境向けのAPIキー認証、Dockerを使用した大規模なリポジトリのスキャン、そしてプログラムから直接操作可能なTypeScript SDKを提供します。スキャン履歴の比較機能により、既存の脆弱性が修正されたか、あるいは再発したかを容易に追跡でき、DevSecOpsの効率を劇的に向上させます。",
+    "topics": [
+      "OpenAI",
+      "Cybersecurity",
+      "DevSecOps",
+      "LLM-based Tooling",
+      "Vulnerability Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - openai/codex-security: OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security · GitHub"
+  }
+}

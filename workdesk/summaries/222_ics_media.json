@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:35:04.034876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIがChromeを自分で見る時代へ。Chrome DevTools for agents入門",
+    "url": "https://ics.media/entry/260727/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがChromeの画面やコンソールを直接操作・検証できる技術「Chrome DevTools for agents」の導入から、レイアウト修正や自動テストへの活用法までを解説したガイド。",
+    "summaryBody": "「Chrome DevTools for agents」は、AIエージェントがブラウザのデベロッパーツールを介してウェブサイトを操作・解析するための基盤技術です。主な特徴として、MCP（Model Context Protocol）サーバーとCLIの2形態を提供し、AIが画面のスクリーンショット、DOM構造、コンソールエラー、Lighthouseスコアなどを直接確認しながら、自律的にコード修正やデバッグを行うことが可能になります。既存のChromeインスタンスに接続することで、ログイン状態やCookieを維持したままの調査も行えます。記事内ではClaude CodeやCodex CLIでの導入手順に加え、AIがレイアウト崩れを自動修正したり、フォームの入力検証から送信テストまでを一貫して代行したりするデモが紹介されています。特にCLIはMCPに比べトークン消費を抑えられるメリットがあり、フロントエンド開発の自動化を大きく進展させるツールです。",
+    "topics": [
+      "Chrome DevTools for agents",
+      "AIエージェント",
+      "MCP",
+      "フロントエンド開発",
+      "自動テスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

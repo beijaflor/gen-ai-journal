@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:40:36.494458+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex/ClaudeとローカルLLMをつなげてみた #ClaudeCode",
+    "url": "https://qiita.com/ichiken26/items/5bfc4baad0c487475355",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Ollama等のローカルLLMをCodex CLIやClaude Codeのメインモデルとして据え、難解なタスクのみをクラウドモデルへ委譲することでコストと制限を回避するAI開発ワークフローの構築ガイド。",
+    "summaryBody": "AIコーディングエージェント（Codex CLI、Claude Code）の利用におけるクラウドLLMのトークン消費や利用上限を抑えるための、ローカルLLM（Ollama）とのハイブリッド構成について解説しています。Qwen2.5-Coderなどのローカルモデルを日常的な実装や単体テスト、エラー修正などの「軽量タスク」に割り当て、複雑な設計や高度なセキュリティが絡むタスクのみをGPT-4やClaude Opus等のクラウドモデルへ自動・半自動でエスカレーションする運用ルール（AGENTS.mdやCLAUDE.md）の定義方法を紹介しています。セッションの分離やサブエージェント機能を活用し、開発効率とコスト、品質のバランスを最適化する実践的な手法がまとめられています。",
+    "topics": [
+      "Ollama",
+      "Claude Code",
+      "Codex CLI",
+      "ローカルLLM",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

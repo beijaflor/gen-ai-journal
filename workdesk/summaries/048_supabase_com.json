@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:18:00.558216+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Supabase Evalsの導入：AIエージェントによる開発体験を測定・改善する評価フレームワーク",
+    "url": "https://supabase.com/blog/introducing-supabase-evals",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Supabaseは、AIエージェントがスキーマ構築やデバッグなどの実タスクをどの程度遂行できるかを実環境で測定・スコアリングするオープンソースのベンチマークフレームワーク「Supabase Evals」を公開しました。",
+    "summaryBody": "Supabaseが発表した「supabase/evals」は、Claude CodeやCodexといったAIエージェントがSupabaseを用いた開発をどの程度正確に行えるかを評価するためのフレームワークです。単なるコード生成の評価にとどまらず、実際のコンテナ環境でホストされたSupabaseスタックとCLIを起動し、RLSポリシーの修正やEdge Functionsのデバッグなど、実際のユーザーが直面するシナリオでエージェントをテストします。評価は決定論的な整合性チェックとLLM-as-a-judgeを組み合わせて行われ、広範な性能を測る「ベンチマーク」と、特定の失敗を監視する「リグレッション」の2つのスイートで構成されます。初期の調査では、エージェントが宣言的スキーマよりも手動マイグレーションを好む傾向や、ドキュメント参照頻度のばらつきなどの課題が浮き彫りになっており、これらを基にMCPサーバーのスキル改善やドキュメントの最適化が進められています。",
+    "topics": [
+      "Supabase",
+      "AI Agent",
+      "LLM Evaluation",
+      "Benchmark",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Supabase Evals"
+  }
+}

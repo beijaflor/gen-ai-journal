@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:59:59.061635+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Physical AIにおけるGPT-5.6対Claude Fable 5：どちらが最高の結果を出すか？",
+    "url": "https://juliahub.com/blog/frontier-models-physical-ai-evaluation",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "JuliaHubによる物理AIのベンチマークにおいて、Claude Fable 5が最高精度を記録する一方で、GPT-5.6 Solが圧倒的なコストパフォーマンスを示し、さらに実行基盤（ハーネス）の重要性が再確認されました。",
+    "summaryBody": "### 物理AIモデリングにおけるフロンティアモデルの比較評価\nJuliaHubは、OpenAIの**GPT-5.6**シリーズ（Terra, Sol, Luna）とAnthropicの**Claude Fable 5**を対象に、エンジニアリング分野の物理モデリングおよびシミュレーション能力を測定する厳格なベンチマークを実施しました。NASAのHL-20飛行体の動的シミュレーションを含む5つの難易度別問題（P1〜P5）を用い、物理法則の導出から検証までのプロセスを評価しています。\n\n#### 主要な分析結果\n- **最高性能**: Claude Fable 5が加重スコア0.889で首位。徹底した独立検証と高い精度が特徴ですが、1試行あたり9.60ドルと高額です。\n- **最高コスパ**: GPT-5.6 Solがスコア0.814で2位。Fableの約5分の1のコスト（1.74ドル）で動作し、実務における最適なバランスを提供します。\n- **期待外れの結果**: GPT-5.6 Lunaは、精度・コスト・速度のすべての軸において最下位という結果でした。\n\n#### 「ハーネス（実行基盤）」の決定的役割\n本調査の最も重要な結論は、モデル間の性能差（0.162ポイント）よりも、専用の**Dyad AIハーネス**を使用するかどうかの差（0.366ポイント）の方が大きいという点です。物理AIにおいては、単なるコード生成能力以上に、ソルバーのフィードバックをループさせる検証プロセスが「物理的に正しい」解を導くための鍵となります。",
+    "topics": [
+      "物理AI",
+      "LLMベンチマーク",
+      "GPT-5.6",
+      "Claude Fable 5",
+      "JuliaHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": "GPT-5.6 vs Claude Fable 5 for Physical AI, which performs best? - Blog | JuliaHub"
+  }
+}

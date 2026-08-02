@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:56:42.996197+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mac mini (M4 Pro / 48GB) で完全ローカルの LLM + RAG 環境を構築してみた",
+    "url": "https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Silicon M4 Pro のユニファイドメモリ特性を活かし、Ollama と LlamaIndex を組み合わせて外部通信なしのセキュアな RAG 環境を構築するガイド。",
+    "summaryBody": "最新の Mac mini (M4 Pro / 48GB) を使用し、セキュリティ・コスト・オフライン動作の利点を持つ「完全ローカル」な LLM および RAG（検索拡張生成）環境を構築する手順を解説しています。Apple Silicon のユニファイドメモリを活用することで、14B〜32Bクラスのモデルを実用的な速度で動作させることが可能です。推論エンジンに Ollama、生成モデルに Qwen3-14B、埋め込みモデルに BGE-M3、フレームワークに LlamaIndex を採用し、Python スクリプトによる実装からメモリ最適化のコツまでを網羅しています。実際に手を動かすことで RAG の主要パラメータ（チャンク化や検索件数）の影響を体感できる実践的な内容です。",
+    "topics": [
+      "ローカルLLM",
+      "RAG",
+      "Mac mini M4 Pro",
+      "Ollama",
+      "LlamaIndex"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

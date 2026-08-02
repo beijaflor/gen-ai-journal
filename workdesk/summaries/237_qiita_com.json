@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:31:56.141090+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 3090（24GB）で7Bモデル学習を成立― 個人GPUで大規模Transformerを動かすための実践記録",
+    "url": "https://qiita.com/nakatada-lab/items/9f45910262d238964997",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 3090（VRAM 24GB）1枚で7B規模のTransformerモデルを事前学習させる際に遭遇した、メモリ管理や通信帯域、フレームワークの相性に関する8つの技術的課題とその解決策をまとめた実践記録。",
+    "summaryBody": "本記事は、個人環境（WSL2/RTX 3090）で7Bパラメータの大規模言語モデルを事前学習させるための工学的試行錯誤を詳細に記録したものです。筆者は、8-bit AdamWやDeepSpeed ZeRO、CPU Offloadといった一般的なメモリ節約手法が、単一GPU環境やWSL2特有の制約によって「動かない」あるいは「極端に遅い」という現実に直面しました。最終的には、Optimizer stateそのものをMB単位まで削減するAdafactorの独自実装、DataLoaderのボトルネック解消、非同期プロファイリングの正確な実施などを通じて、22.6GBのVRAM使用量で1770 tok/sという安定したスループットを実現しています。理論上の見積もりと実効ピークVRAMの乖離や、PCIe帯域の限界、torch.compileと動的グラフの不整合など、実務に直結する8つの教訓が提示されています。",
+    "topics": [
+      "LLM",
+      "PyTorch",
+      "DeepLearning",
+      "RTX 3090",
+      "最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    }
+  }
+}

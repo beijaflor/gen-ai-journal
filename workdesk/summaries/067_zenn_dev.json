@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:13:43.028825+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHubにスタック型プルリクエストが登場。gh stackでPRを分割して積み上げよう",
+    "url": "https://zenn.dev/ubie_dev/articles/gh-stack-introduction",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHubの新機能「スタック型プルリクエスト」により、巨大な変更を依存関係のある小さなPR群に分割し、CLIやAIエージェントを用いて効率的に管理・同期できるようになりました。",
+    "summaryBody": "GitHub公式から「スタック型プルリクエスト（Stacked pull requests）」がパブリックプレビューとして発表されました。これは、大きな開発変更を意味のある小さな単位に分割し、階層構造（スタック）として積み上げるワークフローを公式にサポートするものです。\n\n主な特徴と機能：\n- **CLI管理**: `gh extension install github/gh-stack`で導入でき、`gh stack init/add`でPRを積み上げ、`gh stack submit`で一括作成が可能です。\n- **自動同期 (`gh stack sync`)**: 下位のPRで行った変更や修正を、上位のすべてのPRに対して自動でrebaseし、GitHub上へ同期する強力な機能を備えています。\n- **UI統合**: GitHubのWeb画面上でスタック構造が可視化され、一括マージなどの操作も容易になります。\n- **AIエージェント対応**: Claude CodeやCodexなどのAIエージェント向けのスキルが提供されており、自然言語でのスタック操作が可能です。\n\nこれにより、レビュアーの負担を軽減しつつ、AI時代に加速する開発サイクルにおいてもコードの品質とトレーサビリティを維持しやすくなります。",
+    "topics": [
+      "GitHub",
+      "Git",
+      "Pull Request",
+      "GitHub CLI",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

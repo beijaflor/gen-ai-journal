@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:23:49.329987+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スキルは増やしすぎると使われなくなるのか？実測したら原因はトークンではなかった",
+    "url": "https://zenn.dev/canly/articles/43bef1eacdae44",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのスキル運用において、ボトルネックはトークン消費ではなく「スキルの識別性（弁別性）」にあることを実測データから証明し、その対策とライフサイクル管理を解説した記事。",
+    "summaryBody": "株式会社カンリーのSREチームが、自社開発のClaude Code用スキル（sre-plugin）の運用経験から得た知見をまとめています。当初、スキル増加による「トークン費用の増大」を懸念していましたが、実測の結果、50個のスキルでもコンテキスト消費は全体の0.5%に過ぎないことが判明しました。真の課題は、AIが類似したスキルの説明文（frontmatter）を正しく区別できなくなる「弁別性の低下」による誤ルーティングでした。これに対し、作成時の4つのゲート（反復性、アップリフト、区別可能性、オーナーシップ）、命名規約の統一、OpenTelemetryを用いた利用状況の可視化といった「ルールからループへ」の運用改善策を提示。AI資産をソフトウェア資産と同様に計測・管理する重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "LLMエージェント",
+      "AIエンジニアリング",
+      "SRE",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

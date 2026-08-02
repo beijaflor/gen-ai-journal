@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:51:06.502184+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの「共有された会話」が検索エンジンにインデックスされる：プライバシー露出の懸念",
+    "url": "https://www.cnet.com/tech/services-and-software/private-claude-conversations-have-been-indexed-by-search-engines/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicのAI「Claude」でユーザーが共有設定にした会話が、GoogleやBingなどの検索エンジンにインデックスされ、機密情報が誰でも検索可能な状態になっていたことが報じられました。",
+    "summaryBody": "Anthropicが提供するAIチャット「Claude」において、ユーザーが「リンクを知っている全員」に共有した会話が、GoogleやBingなどの検索エンジンによってインデックスされていたことが判明しました。これにより、医療記録、企業の内部データ、個人の機密情報などが特定の検索クエリ（site:claude.ai/share）を通じて誰でも閲覧できる状態になっていました。\n\nこの問題の背景には、技術的な設定の不備が指摘されています。SEO専門家によると、Anthropicは`robots.txt`ファイルを使用してボットのクロールをブロックしていましたが、検索エンジンはページの内容を読み込まずともURL自体をインデックスすることが可能です。検索結果への露出を確実に防ぐには、HTMLメタタグで`noindex`を指定する必要がありました。Anthropic側は「共有リンクは公開を前提としたものである」と説明していますが、ユーザーは意図せず広範囲に情報が公開されるリスクを再認識し、過去の共有チャットの削除や設定の確認が推奨されます。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "プライバシー",
+      "情報漏洩",
+      "SEO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Private Claude Conversations Have Been Indexed by Search Engines"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:57:11.861436+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code用ローカルマージキュー「claude-code-merge-queue」の公開",
+    "url": "https://github.com/funador/claude-code-merge-queue",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のClaude Codeエージェントが並行して作業する際の競合やテストの不安定さを防ぐ、ローカル完結型のマージキューツール。",
+    "summaryBody": "claude-code-merge-queueは、AnthropicのAI開発ツール「Claude Code」のエージェントを複数並行して稼働させる際、そのマージフローを整理・管理するためのオープンソースツールです。主な特徴は以下の通りです。\n\n- **並行作業のシリアライズ**: 複数のエージェント（レーン）からの変更をFIFO（先入れ先出し）形式でリベースおよびプッシュし、プッシュ競合やリソースの奪い合いを防ぎます。\n- **ローカル完結・ゼロコスト**: GitHub Enterpriseなどの高価なマージキュー機能を使わず、自身のローカルマシン上で無料で動作します。\n- **自動化されたガードレール**: 統合ブランチへのマージ前に、指定したテストコマンド（checkCommand）の実行を強制し、品質を担保します。\n- **容易な導入**: `init`コマンドにより、CLAUDE.mdへの命令追加やGit Worktreeの設定、Huskyによるプリプッシュフックなどが自動で行われます。\n\nAIエージェントによる自律的なコード変更が加速する中で、メインブランチの健全性を保ちつつ開発スループットを最大化するための実用的なユーティリティとなっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Git Worktree",
+      "CI/CD",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - funador/claude-code-merge-queue: The local merge queue for parallel Claude Code agents"
+  }
+}

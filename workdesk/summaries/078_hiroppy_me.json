@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:09:38.861483+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数のSymphony（OpenAI AIエージェント）をSlackで一元管理する「Orchestrators」の開発",
+    "url": "https://hiroppy.me/blog/posts/introduce-orchestrators",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIのAIエージェント実行基盤「Symphony」を複数プロジェクトで運用する際の管理コストを削減するため、Slackに情報を集約・操作可能にするツール「Orchestrators」を開発・公開した記録。",
+    "summaryBody": "OpenAIが公開した、Issue Trackerをエージェントの制御盤とするフレームワーク「Symphony」の運用課題を解決する手法が紹介されています。筆者は約10個のSymphonyインスタンスを並列運用する中で、ダッシュボードの分散やコードレビュー時のステータス同期の不備を課題として挙げ、これらを1つのSlackチャンネルに集約・操作可能にする「Orchestrators」を開発しました。このツールにより、SlackからLinearのチケット操作やコメント同期、レビュー後の再開トリガーなどが可能になり、コンテキストスイッチの削減を実現しています。また、Node.jsの`--conditions`フラグを用いた環境ごとの設定切り替えなど、実装上のTipsについても触れられています。",
+    "topics": [
+      "Symphony",
+      "AIエージェント",
+      "OpenAI",
+      "Slack",
+      "Linear"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

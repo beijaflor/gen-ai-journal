@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:11:56.050073+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが書いた大量PRを高速レビュー — 輪郭を先に見るCLI rinkaku を作った",
+    "url": "https://www.m3tech.blog/entry/rinkaku-pr-review",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成する膨大なPRのレビュー負荷を軽減するため、コードの詳細よりも先に「関数のシグネチャや依存関係の変更」という輪郭を可視化・整理するCLIツール「rinkaku」を紹介しています。",
+    "summaryBody": "AIによるコード生成の高速化により、人間がレビューするdiffの行数が肥大化し全体像の把握が困難になっている課題に対し、エムスリーのエンジニアが開発したCLIツール「rinkaku」を解説しています。このツールはtree-sitterを活用し、実装詳細を除いた「シンボルのシグネチャと依存関係」のみをTUIで提示します。ファイル順ではなく依存関係のエントリポイントに近い順で並べるため、上から読むだけで変更の文脈を把握可能です。また、TUI上で書き溜めたメモをMarkdownで出力し、再度AIエージェントへの修正指示として活用する「AI時代のレビューワークフロー」も提案されています。",
+    "topics": [
+      "コードレビュー",
+      "AIエージェント",
+      "CLIツール",
+      "Rust",
+      "tree-sitter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

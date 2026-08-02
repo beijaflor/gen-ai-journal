@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:55:18.183151+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "絵の描き方をさくらのAI Engineに教えてもらいました #ClaudeCode",
+    "url": "https://qiita.com/torifukukaiou/items/c12bb99ef2016e2a3f0d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "さくらのAI EngineとClaude Codeを使い、既存の画像からその構成を模倣した画像生成用プロンプトを自動抽出・再生成するワークフローを紹介しています。",
+    "summaryBody": "この記事は、さくらインターネットが提供する「さくらのAI Engine」とAnthropicの「Claude Code」を組み合わせた実践的な活用事例を紹介しています。著者は、既存のインフォグラフィック画像をAI（モデル：preview/Kimi-K2.7-Code）に解析させ、それを再現するための詳細な日本語プロンプトを作成させる手法を解説しています。このプロンプトをGeminiやChatGPTに投入することで、元の図に近い雰囲気を保ったまま画像を再生成できることを実証しています。また、OpenAI互換SDKを利用した画像プロンプト生成用のPythonスクリプトも公開されており、API経由でマルチモーダル機能を扱う具体的な実装方法を学べます。後半では、AIの「Token」を「闘魂（Tokon）」に昇華させるという著者独自の哲学が綴られており、開発者としての熱意が伝わる内容となっています。",
+    "topics": [
+      "さくらのAI Engine",
+      "Claude Code",
+      "画像生成AI",
+      "プロンプトエンジニアリング",
+      "Python"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 35,
+      "overall": 85
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:20:57.548193+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code「/config」設定の教科書 ― 全42項目を1つずつ解説＋おすすめ設定（v2.1.220対応）",
+    "url": "https://qiita.com/f_uto/items/438336db3684cf662321",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code v2.1.220における全42個の設定項目について、コスト・安全性・生産性の観点から詳細に解説し、用途別の推奨設定を提示する包括的ガイド。",
+    "summaryBody": "Claude Codeの`/config`コマンドで設定可能な全42項目を網羅した解説記事です。設定が個人のプリファレンス（~/.claude.json）からプロジェクト単位（.claude/settings.json）、さらには企業向けのManagedスコープまで5層の優先順位で構成されていることを解説しています。\n\n主な内容は以下の通りです：\n- **全42項目の詳細リファレンス**: 自動要約（Auto-compact）、思考モード（Thinking mode）、動的ワークフロー、権限モード（Default permission mode）など、実行挙動やコストに直結する各項目の意味と設定値を解説。\n- **用途別3プロファイル**: 速度重視の「個人開発者」、再現性を重視する「チーム標準」、ガバナンスを優先する「企業導入」の3つの推奨設定値を提案。\n- **実践的なTips**: チームで共有するための`settings.json`の書き方や、コスト爆発を防ぐためのサブエージェント（teammate）用モデルの選択基準など、実運用に即した知見がまとめられています。\n\n設定を単なる「好み」ではなく「AIの就業規則」として捉え、組織で最適化することの重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "開発ツール",
+      "設定ガイド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

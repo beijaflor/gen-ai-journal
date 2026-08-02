@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:19:18.026858+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Enterprise Agent Platformにおけるエージェントとモデルの評価機能が一般提供開始 (GA)",
+    "url": "https://developers.googleblog.com/agent-and-model-evaluations-in-gemini-enterprise-agent-platform-are-now-ga/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、Gemini Enterprise Agent Platformにおいて、開発から本番運用まで一貫した指標でAIエージェントとモデルの品質を測定・監視できる評価機能の一般提供（GA）を開始した。",
+    "summaryBody": "Googleは、AIエージェントの開発・運用を支援するGemini Enterprise Agent Platformにおいて、評価機能（Evaluations）の一般提供（GA）を発表しました。この機能により、開発時のテストケースから本番環境のライブトラフィックまで、同一のエンジンとメトリクスを用いて品質を継続的に測定・比較することが可能になります。\n主な特徴として、Google DeepMindと共同開発した「アダプティブ・ルーブリック（適応型評価基準）」を含む20以上の事前定義済みメトリクス、ユーザーの挙動や外部環境を再現するシミュレーター、そして本番環境での性能低下を検知するオンラインモニタリング機能が統合されています。評価結果はCloud Storageに保存され、監査や再現性が確保されるほか、独自のPythonコードやLLMを用いたカスタム評価基準の作成もサポートしており、組織全体で統一された品質管理を実現します。",
+    "topics": [
+      "Gemini",
+      "LLM Evaluation",
+      "AI Agent",
+      "Google Cloud",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Agent and Model Evaluations in Gemini Enterprise Agent Platform are now GA"
+  }
+}

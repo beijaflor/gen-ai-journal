@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:20:45.620350+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeによる暗号アルゴリズムの弱点発見：HAWKおよびAESへの攻撃手法の進展",
+    "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの最新モデル「Claude Mythos Preview」が、ポスト量子暗号候補HAWKやAESのラウンド削減版に対して、既存の研究を大幅に上回る新しい数学的攻撃手法を自律的に発見した。",
+    "summaryBody": "Anthropicの研究チームは、次世代モデル「Claude Mythos Preview」を使用し、暗号アルゴリズム自体の数学的欠陥を発見することに成功しました。主な成果として、NISTのポスト量子署名候補である「HAWK」の有効鍵サイズを半減させる攻撃と、7ラウンドに削減されたAES-128に対する攻撃を200〜800倍高速化する手法（Möbius Bridge）が挙げられます。これらの発見は、AIがエージェントとしてPythonやSage等のツールを駆使し、自律的に仮説検証を繰り返した結果得られたものです。研究にかかったコストは各約10万ドルで、人間の専門家が数年かけて見逃してきた脆弱性をわずか数日で特定しました。現時点では稼働中のシステムへの影響はありませんが、AIが暗号規格の策定や安全性評価において極めて強力なツールとなる可能性を示唆しています。また、同社はAIの暗号解読能力を評価するためのベンチマーク「CryptanalysisBench」を公開しました。",
+    "topics": [
+      "Anthropic",
+      "Claude Mythos",
+      "暗号解読",
+      "ポスト量子暗号",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Discovering cryptographic weaknesses with Claude"
+  }
+}

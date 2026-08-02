@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:36:36.862739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepsecBench: サイバーセキュリティ脆弱性の検出におけるAIモデルの性能評価",
+    "url": "https://vercel.com/blog/deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelは、AIモデルがコード内の脆弱性を特定する能力を、再現率重視のスコアリングとコスト・時間の観点から評価するベンチマーク「DeepsecBench」を公開しました。",
+    "summaryBody": "Vercelが公開した「DeepsecBench」は、AIモデルによるコード内のセキュリティ脆弱性検出能力を測定する新しいベンチマークです。このベンチマークは、実際のオープンソースコードの特定のコミット状態を使用し、人間が判定した231件の脆弱性（ゴールデンセット）をモデルがどれだけ発見できるかを評価します。スコアリングには再現率（Recall）を適合率（Precision）の2倍重視したF2スコアを採用しており、これは脆弱性の見逃しがFalse Positiveよりも重大なリスクであるという防御側の視点を反映しています。\n\n評価結果では、GPT-5.6 Solが最高スコアを記録した一方で、Kimi K3やGrok 4.5といったモデルが極めて高いコストパフォーマンスを示しました。記事では、CI/CDプロセスにおけるスキャン戦略として、安価なモデルを頻繁なプルリクエストのスキャンに使い、高性能なフロンティアモデルを定期的な深い監査に利用するといった、モデルを組み合わせたハイブリッドな運用の有効性を提唱しています。また、Vercel AI Gatewayを利用することで、単一のAPIエンドポイントを通じてこれら複数のモデルを効率的に管理・統合できることも強調されています。",
+    "topics": [
+      "DeepsecBench",
+      "サイバーセキュリティ",
+      "LLMベンチマーク",
+      "脆弱性診断",
+      "AI Gateway"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "DeepsecBench: evaluating model performance in finding cybersecurity vulnerabilities"
+  }
+}

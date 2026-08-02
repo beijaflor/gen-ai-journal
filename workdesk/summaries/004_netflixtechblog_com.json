@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:28:10.261381+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMネイティブな推薦システムへ：NetflixにおけるGenRecの開発と成果",
+    "url": "https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Netflixが開発した「GenRec」は、従来の数千の手動特徴量に代わりLLMの文脈理解を活用することで、少ない学習データで既存システムを凌駕する精度を達成した次世代推薦ランカーです。",
+    "summaryBody": "Netflixは、大規模言語モデル（LLM）を基盤とした新しい推薦システム「GenRec」を発表しました。本システムは、膨大な手動設計の特徴量に依存する従来のアーキテクチャから、自然言語によるコンテキスト理解を中心とした「LLMネイティブ」なアプローチへの転換を象徴しています。\n\n### 主な技術的構成\n1. **2フェーズの学習フレームワーク**: Netflix独自のコーパスで事前学習した基盤モデル（Phase 1）を、ランキング専用の目的関数と報酬加重損失を用いて事後学習（Phase 2）する構成です。\n2. **コンテキストエンジニアリング**: ユーザーの視聴履歴やメタデータを自然言語に変換。トークン予算内で重要な情報を圧縮・要約する手法により、推論コストを抑えつつ高い表現力を維持します。\n3. **カタログ対応スコアリング**: モデルがNetflix以外の作品を推薦しないよう、カタログ内のアイテムのみを対象とするスコアリングヘッドを統合し、効率的な計算（Prefill-only mode）を実現しています。\n\n### 実績と意義\nオンラインA/Bテストにおいて、GenRecは既存の高度に調整されたプロダクションモデルに対し、約40分の1の学習データ量で主要指標の有意な改善を達成しました。これにより、推薦システムの開発は「特徴量エンジニアリング」から「プロンプトやコンテキストの設計」へとシフトし、スケーリング則を適用可能な新しいRecSysの時代が到来したことを示しています。",
+    "topics": [
+      "Netflix",
+      "LLM",
+      "推薦システム",
+      "GenRec",
+      "コンテキストエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "GenRec: Towards LLM-Native Recommendation at Netflix"
+  }
+}

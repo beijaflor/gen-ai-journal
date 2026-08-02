@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:34:23.218136+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのサブエージェント運用で効いたのは「賢い指示」より「失敗のカタログ化」だった",
+    "url": "https://qiita.com/clar_biz/items/ae903765f0d5caf5821d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeで11体のサブエージェントを使い分ける中、プロンプトの工夫よりも、過去の失敗を「症状・誤った直感・正しい打ち手」として記録・再利用する「team-lessons」の仕組みが最も成果に繋がったという実践報告。",
+    "summaryBody": "この記事では、Claude Codeを用いた個人開発において、役割の異なる11体のサブエージェントを効率的に運用する手法が紹介されています。特に注目すべきは、洗練されたプロンプトを書くことよりも、「失敗のカタログ化（team-lessons）」を重視している点です。\n\n### 運用の核心：team-lessons\n「症状 → 誤った直感 → 正しい打ち手」という形式で過去の失敗を記録し、それを次回の委任プロンプトに機械的に組み込むことで、同じミスを別のエージェントやコンテキストで繰り返さない仕組みを構築しています。これにより、エージェントが「裏取りをせずに作業を進める」といったリスクを大幅に軽減しています。\n\n### チーム構成とオーケストレーション\n*   **役割分担**: 設計（Architect/Opus）、実装（Builder/Sonnet）、検証（QA-Reviewer/Opus）など、タスクの性質に応じてモデル（Opus/Sonnet）と役割を分離。\n*   **active-team.md**: 誰がどの順序で作業するかという「Orchestration rules」を明文化し、自律的なワークフローを実現。\n*   **SessionStartフック**: `check-in.sh` を通じて、セッション開始時に「使える資産」や「遵守ルール」を自動的にコンテキストへ流し込み、資産の使い漏れを防止。\n\n著者は、OSSの「ccteams」を土台にこれらの設定を構築しており、技術的な賢さよりも「自分のプロジェクト固有の失敗を拾い上げる工程」こそがエージェント運用の本体であると強調しています。",
+    "topics": [
+      "Claude Code",
+      "LLMエージェント",
+      "プロンプトエンジニアリング",
+      "開発プロセス",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

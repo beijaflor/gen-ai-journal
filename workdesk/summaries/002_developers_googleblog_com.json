@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:28:49.463618+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TPU性能評価のためのGoogleマイクロベンチマーク活用法",
+    "url": "https://developers.googleblog.com/how-to-use-google-microbenchmarks-for-evaluating-tpu-performance/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleが公開したTPU向けマイクロベンチマークを用いて、ハードウェアの演算・通信・メモリ性能を詳細に分析し、ボトルネックを特定・解消するための実践的な手法が紹介されています。",
+    "summaryBody": "Googleは、TPUの真の性能を引き出し、理論値と実効性能の乖離を埋めるための「マイクロベンチマークスイート」を公開しました。このツールは、ネットワーク（ICI）、演算（MXU）、メモリ帯域（HBM）、ホスト転送、およびTransformerモデルに特化したAttention演算（RPAv3）の5つの領域を評価します。開発者はルーフラインモデルを用いることで、ワークロードが演算・メモリ・ネットワークのいずれに制約されているかを診断可能です。例えば、最新のTPU v7x（Ironwood）では、行列サイズを256バイトの境界に合わせることでハードウェア効率が最大化されます。110BパラメータのMoE（Mixture of Experts）モデルを用いたケーススタディでは、ベンチマークに基づいた通信のオフロードや特定のAttentionカーネル（Tokamax Splash Attention）の採用により、学習ステップ時間を21.2%削減することに成功しています。このスイートはGitHubで公開されており、大規模展開前の性能予測にも活用可能です。",
+    "topics": [
+      "TPU",
+      "Google Cloud",
+      "パフォーマンス最適化",
+      "ベンチマーク",
+      "Ironwood (TPU v7x)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How to use Google microbenchmarks for evaluating TPU performance"
+  }
+}

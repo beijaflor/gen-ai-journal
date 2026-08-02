@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:36:21.233712+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi K3：オープン・フロンティア・インテリジェンス 技術報告書",
+    "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Kimi K3は、2.8兆パラメータのMoEアーキテクチャと100万トークンのコンテキスト窓を備え、高度な強化学習により商用フロンティアモデルに匹敵する性能を実現した最新のオープンソースモデルである。",
+    "summaryBody": "Moonshot AIによる本報告書は、2.8兆パラメータ（有効104B）を誇るMixture-of-Experts（MoE）モデル『Kimi K3』の技術詳細を詳述している。Kimi Delta Attention（KDA）とAttention Residualsの導入により、系列長と層の深さの両面で情報流を最適化し、前世代（K2）比で約2.5倍の効率化に成功した。\\n\\nポストトレーニングでは、コーディング、エージェント、一般推論の各ドメインで多段階の強化学習（RL）が行われ、100万トークンの文脈下での長期ホライゾン・タスク能力が大幅に向上した。性能評価において、Kimi K3はClaude Fable 5やGPT-5.6 Solといった最新商用モデルに次ぐ位置にあり、Llama系列を含む他のオープンモデルを圧倒する性能を示す。また、MoonViT-V2によるネイティブな視覚理解や、MXFP4量子化によるデプロイ最適化、Million-tokenエージェントRLを支えるインフラ設計など、アーキテクチャからシステム実装まで包括的な革新が盛り込まれている。",
+    "topics": [
+      "Kimi K3",
+      "Mixture-of-Experts",
+      "Long Context",
+      "Reinforcement Learning",
+      "Multimodal"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "KIMIK3: OPENFRONTIERINTELLIGENCE TECHNICALREPORT OFKIMIK3"
+  }
+}

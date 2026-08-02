@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:53:41.927237+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6とBlender MCPで、多少マシな3Dモデリングをさせるまで",
+    "url": "https://zenn.dev/test_myname/articles/gpt-5-6-blender-mcp-modeling",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.6とBlender MCPを組み合わせたマルチエージェント構成により、画像から3Dモデルを4時間以上かけて自律生成する実験とその課題を報告している。",
+    "summaryBody": "VTuberの「ぷらむらいす」氏による、GPT-5.6とBlender MCPを用いた3Dモデリングの自律化実験。単一プロンプトでは単純な図形の羅列（積み木状態）に陥る課題に対し、役割を分担した6つのエージェント（進行・視覚分析・計画・制作・視覚評価・形状検査）によるマルチエージェント構成を構築した。4時間26分におよぶ19回の反復試行（イテレーション）を、人間による介入なしのワンショットで実行。結果として、ボーン構造やUVを含むFBX形式の出力まで完遂した。最終的に「主軸が円柱ではなく四角柱のまま残る」といった視覚的な見落としが発生したが、これは検査項目に具体的な断面形状のチェックが不足していたためと分析。AIに複雑な3D制作を行わせる上でのワークフロー設計、ロールバック、再インポート検証の重要性が示されている。",
+    "topics": [
+      "GPT-5.6",
+      "Blender",
+      "Model Context Protocol",
+      "マルチエージェント",
+      "AIモデリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

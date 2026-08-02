@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:44:28.653100+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude 5世代モデルに向けたコンテキストエンジニアリングの新原則",
+    "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Claude 5世代のモデルにおいてシステムプロンプトを80%以上削減した経験を基に、過剰な制約を排しモデルの判断力と段階的な情報開示を活用する新たなコンテキスト構築手法を提言しています。",
+    "summaryBody": "Anthropicは、Claude 5世代（Opus 5やFable 5など）の高度な推論能力を最大限に引き出すための「コンテキストエンジニアリング」の新原則を公開しました。従来、AIエージェントの制御には詳細なルールや例示を詰め込んだ長いシステムプロンプトが必要でしたが、最新モデルでは逆に過剰な制約がパフォーマンスを低下させることが判明しました。具体的には、(1) 厳密なルールではなく周辺状況からの「判断」に任せる、(2) 具体例を与える代わりにツールの「インターフェース設計」を洗練させる、(3) 情報を一度に与えず必要な時に読み込む「段階的な開示（Progressive Disclosure）」を採用する、といった転換を推奨しています。また、`CLAUDE.md`などの設定ファイルも軽量化し、自動メモリ機能やリッチなコード参照を活用することで、より効率的で精度の高いエージェント開発が可能になるとしています。",
+    "topics": [
+      "Claude 5",
+      "コンテキストエンジニアリング",
+      "プロンプトエンジニアリング",
+      "Claude Code",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "The new rules of context engineering for Claude 5 generation models"
+  }
+}

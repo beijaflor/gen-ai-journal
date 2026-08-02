@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:37:32.331384+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クロード・コード開発者ボリス・チェルニー：Opus 5の衝撃とプロンプト80%削減の舞台裏",
+    "url": "https://www.youtube.com/watch?v=qyPCVqFUyDo",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicの最新モデルOpus 5の性能向上により、Claude Codeのシステムプロンプトの8割が不要になった背景と、数千のエージェントを指揮する未来の開発手法が語られています。",
+    "summaryBody": "AnthropicのBoris Cherny氏が、最新モデル「Opus 5」と開発ツール「Claude Code」の進化について語りました。主なポイントは以下の通りです：\n\n- **Opus 5の進化とプロンプト削減**: モデル自体の知能向上により、以前は挙動を補正するために必要だったシステムプロンプトの80%以上を削除。モデルを信頼し「引き算」で開発するアプローチが推奨されています。\n- **プロンプト・インジェクションの克服**: 調整（Alignment）と、脳の活動を監視するようなメカニスティック・インタプリタビリティの技術により、攻撃的な指示を無効化できる段階に到達しました。\n- **「アンホブリング（足枷を外す）」の概念**: モデルの能力を既存のUIや過剰な指示で制限（ホブリング）せず、広い権限（ターミナルアクセス等）を与えることで、真のポテンシャルを引き出す重要性を説いています。\n- **ダイナミックワークフローの威力**: 11日間連続で数千のエージェントを稼働させ、JavaScriptランタイム「Bun」をZigからRustへ一気に書き換えるといった、人間には不可能な規模のタスクが可能になっています。\n- **実証的な開発スタイル**: 従来の理論的なシステム設計ではなく、AIを同僚として扱い、失敗を観察して微調整する「科学的な試行錯誤」がこれからのエンジニアに求められるスキルです。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Opus 5",
+      "AIエージェント",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Boris Cherny: We Cut 80% of Claude Code's Prompt (Y Combinator Interview)"
+  }
+}

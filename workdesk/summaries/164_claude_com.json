@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:49:09.661543+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP 2026-07-28発表：ステートレス・コアへの移行と標準拡張機能の導入",
+    "url": "https://claude.com/blog/bringing-mcp-2026-07-28-to-claude",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、Model Context Protocol (MCP) の最新仕様を発表し、サーバーレス展開を可能にするステートレス化や、UI表示を可能にするMCP Appsなどの標準拡張機能を導入しました。",
+    "summaryBody": "Anthropicは、AIエージェントとアプリケーションを接続するオープン標準「Model Context Protocol (MCP)」の第5弾となる最新仕様「MCP 2026-07-28」を公開しました。今回のアップデートの最大の核は、従来の双方向の状態保持型（Stateful）から、リクエスト/レスポンス型の「ステートレス・コア」への移行です。これにより、開発者はサーバーレスやエッジインフラ上でのMCPサーバー構築・運用が容易になります。また、インタラクティブなUIをチャット内に描画する「MCP Apps」や長時間実行処理を担う「Tasks」が標準拡張フレームワークとして正式に定義されました。セキュリティ面では、OAuth 2.0やOIDCへの準拠が強化され、EntraやOktaといったエンタープライズIDシステムとの連携が簡素化されています。Claude製品群では、プライベートネットワーク内のツールを公開せずに接続できる「MCP tunnels」のプレビューや、開発者向けの可観測性ダッシュボードなどの新機能も併せて提供が開始されます。",
+    "topics": [
+      "MCP",
+      "Anthropic",
+      "AI Agents",
+      "Serverless",
+      "OAuth 2.0"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Bringing MCP 2026-07-28 to Claude"
+  }
+}

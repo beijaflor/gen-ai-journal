@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:53:29.433329+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最近の開発の流れ (2026年版 AI駆動型開発ワークフローの全貌)",
+    "url": "https://zenn.dev/kimuchan/articles/bc8e98682f8594",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "仕様策定からAIによる実装、多層レビュー、そしてCIがパスするまで自律的に修正を繰り返す「babysit-pr」までを統合した、極めて信頼性の高い次世代開発プロセス。",
+    "summaryBody": "この記事では、LLMを開発の各フェーズに統合した2026年時点の高度なワークフローが詳説されています。主な特徴は、AIがコードベースを事前調査し論点を整理するリファインメント手法「grill」、Claude Codeを用いた実装、そして規範チェックを行うCopilotと構造的欠陥を探るCodexを組み合わせた「多層AIレビュー」です。さらに「babysit-pr」というツールが、CIエラーやAIの指摘を自律的に修正し、完全にGreenな状態になるまでPRの面倒を見ることで、人間のレビュアーは設計や仕様の最終判断といった高レイヤーのタスクに集中できるようになっています。また、人間によるレビューの知見をLintルールやガイドラインに自動還元し、レビュー層を自己進化させる仕組みについても言及されています。",
+    "topics": [
+      "AI駆動開発",
+      "GitHub Copilot",
+      "Claude Code",
+      "CI/CD",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 96
+    }
+  }
+}

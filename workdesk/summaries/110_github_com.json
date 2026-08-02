@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:02:12.354732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Deltafin: 1台のワークステーションで2.8兆パラメータのKimi K3を実行する",
+    "url": "https://github.com/gavamedia/deltafin",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2.8兆パラメータの超巨大MoEモデル「Kimi K3」を、エキスパート・ストリーミングと量子化技術により単一のコンシューマ機で動作可能にするオープンソース・プロジェクト。",
+    "summaryBody": "Deltafinは、Moonshot AIの2.8兆パラメータを持つMixture-of-Experts (MoE) モデル「Kimi K3」を、一般的なワークステーション（Apple Silicon Mac、Linux x86/ARM）で実行するための実験的フレームワークです。1.5TBを超える巨大なモデルを扱うため、推論時に必要なエキスパートのみをSSDからオンデマンドで読み込む「エキスパート・ストリーミング」を採用しています。主な特徴として、非エキスパート重みのInt8量子化、Qwenベースのモデルを用いた投機的デコード（Speculative Decoding）、Metal/CUDA/CPU向けに最適化されたカスタムMXFP4カーネルの実装が挙げられます。性能面では、64GBメモリのM1 Max環境で約3.76秒/トークンの推論速度を達成しており、実用的な速度ではないものの、巨大モデルをローカルで動かす技術実証として非常に高度な最適化が行われています。また、OpenAI互換のAPIサーバー機能も搭載しており、既存のエージェントツールからの利用も可能です。",
+    "topics": [
+      "Kimi K3",
+      "LLM推論",
+      "MoE",
+      "エキスパート・ストリーミング",
+      "投機的デコード"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - gavamedia/deltafin: Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents."
+  }
+}

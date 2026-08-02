@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:27:54.760923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「プロンプト債務」という問題：手動によるプロンプト調整がもたらす技術的落とし穴",
+    "url": "https://www.oreilly.com/radar/the-problem-is-prompt-debt/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自然言語によるプロンプトの手動調整は「プロンプト債務」を生み出し、システムの保守性低下や特定モデルへのロックインを招くため、評価指標や自動生成への移行が必要である。",
+    "summaryBody": "自然言語プロンプトはプロトタイピングを加速させるが、本番運用においては「プロンプト債務（Prompt Debt）」という深刻な技術負債を引き起こす。記事では、手動によるプロンプト調整がもたらす弊害を3点指摘している。1. エッジケース対応でプロンプトが肥大化し開発が停滞する「イテレーションの鈍化」、2. 複雑すぎてチーム共有が困難になる「保守性の低下」、3. 特定モデルの挙動に最適化されすぎる「モデルロックイン」である。これらを解決するには、散文ではなく測定（評価指標・メトリクス）でシステムを定義し、DSPyなどのツールを用いてプロンプト生成を自動化する、従来のソフトウェア開発に近い厳密なアプローチへの転換が不可欠であると説いている。",
+    "topics": [
+      "プロンプト債務",
+      "プロンプトエンジニアリング",
+      "技術負債",
+      "DSPy",
+      "モデルロックイン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "The Problem Is Prompt Debt"
+  }
+}

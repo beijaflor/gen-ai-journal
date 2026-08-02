@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:44:52.551165+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模GenAI評価の教訓：Airbnbにおける「評価駆動開発」の実践ガイド",
+    "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Airbnbが大規模な生成AIプロダクト開発で培った、評価を第一級のエンジニアリング規律とする「評価駆動開発（EDD）」のフレームワークとベストプラクティスの詳解。",
+    "summaryBody": "生成AIシステムは非決定的であり、従来のソフトウェアテスト手法が通用しません。Airbnbはこの課題に対し、テスト駆動開発（TDD）のアナロジーである「評価駆動開発（EDD）」を提唱しています。EDDは、1. プログラムによる構造チェック、2. LLM-as-a-Judge（バーチャル・ジャッジ）による多角的な品質評価、3. 人間による最終検証とキャリブレーション、の3層構造で構成されます。特に重要なのは、バーチャル・ジャッジの信頼性を確保するために、人間との一致率を80-90%に高める調整プロセスです。また、エージェント型システムにおいては、最終回答だけでなくツール呼び出しや推論の「軌跡（Trajectory）」を評価対象とすることの重要性を説いています。汎用的な指標を避け、実際の失敗モードに基づいた独自の評価ルーブリックを作成し、本番環境でも継続的にモニタリングを行うことが推奨されています。",
+    "topics": [
+      "GenAI",
+      "LLM Evaluation",
+      "Eval-driven Development",
+      "LLM-as-a-Judge",
+      "Airbnb Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Eval-driven development: Lessons from evaluating GenAI at scale"
+  }
+}

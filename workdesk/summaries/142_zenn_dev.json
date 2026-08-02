@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:54:38.026854+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)",
+    "url": "https://zenn.dev/explaza/articles/20f7f41cff8428",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとCodexの設定ファイル（AGENTS.md、SKILLS、MCP等）を、Symlinkや独自変換ロジックを用いて自動同期・マージする自作CLIツールの紹介。",
+    "summaryBody": "同一プロジェクト内でClaude CodeとCodexを併用する際、設定ファイルやスキルの内容が乖離する課題を解決するための手法とツール「agents-sync」が公開されました。この記事では、ファイル形式が同じもの（SKILLS等）は実体を一つにするためにSymlinkを活用し、形式が異なるもの（JSONのClaude MCP設定とTOMLのCodex設定等）は指紋（fingerprint）ベースの変換・マージロジックで整合性を保つ方法を提案しています。fswatchとlaunchdを用いた常駐スクリプトによる自動同期機能も備えており、モデルごとのプロンプトガイドの違いを考慮して、同期する項目を個別に制御できる柔軟な設計となっています。AIエージェントの使い分けを効率化したい開発者にとって、実用性の高いリソースです。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "AIエージェント",
+      "環境構築",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    }
+  }
+}

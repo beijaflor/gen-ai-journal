@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:24:41.562838+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JetBrains Context：コーディングエージェントのためのリポジトリ・インテリジェンス層が登場",
+    "url": "https://blog.jetbrains.com/ai/2026/07/introducing-jetbrains-context-repository-intelligence-for-coding-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "JetBrains Contextは、AIエージェントが大規模なコードベースを効率的に理解・探索するためのセマンティック検索インフラであり、実行コストと時間を大幅に削減します。",
+    "summaryBody": "JetBrainsは、コーディングエージェント（Claude Code、Codex、Junie等）の効率と精度を向上させる新しいリポジトリ・インテリジェンス層「JetBrains Context」を早期アクセスで公開しました。これは、リポジトリのセマンティック・インデックスを段階的に構築し、エージェントがファイル探索やキーワード検索を繰り返す代わりに、高度なセマンティック検索を通じて必要な情報に直接アクセスできるようにするものです。主な特徴として、組織内の複数リポジトリを横断して検索できる機能があり、依存関係の検証や既存パターンの再利用を容易にします。SWE-bench等のベンチマークでは、エージェントのターン数を最大68%、実行コストを最大48%削減することに成功しています。ソースコードはJetBrainsのサーバーに保存されない設計となっており、開発者はCLIを通じて利用状況や削減コストを分析することも可能です。",
+    "topics": [
+      "AI Agents",
+      "JetBrains",
+      "Repository Intelligence",
+      "LLM Optimization",
+      "Semantic Search"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing JetBrains Context: Repository Intelligence for Coding Agents"
+  }
+}

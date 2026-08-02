@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:23:11.031218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードベースのナレッジ化なら、LLM Wikiで十分かもしれない",
+    "url": "https://qiita.com/Syoitu/items/ff38655fed51a2920910",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "RAGにおける検索コストや回答の不整合を解決するアプローチとして、エージェントが事前にコードベースをWiki化して管理する「LLM Wiki」の概念と、LangChainのOSSツール「OpenWiki」の活用方法を解説しています。",
+    "summaryBody": "### LLM Wikiによるコードベース管理の刷新\n本記事では、従来のRAG（検索拡張生成）が抱える「検索コストの累積」や「回答の不整合」といった課題を解決する手法として、**LLM Wiki**を提案しています。これは、ユーザーの質問時に情報を検索するのではなく、データ取り込み時にエージェントがMarkdown形式で情報を整理・要約し、Wikiとして保持しておく考え方です。Andrej Karpathy氏が提唱したこの手法は、エージェントがエージェントのために情報をメンテナンスすることを目的としています。\n\n### OpenWikiの導入と機能\nLangChain社が公開したOSS「**OpenWiki**」を使用することで、このLLM Wikiを容易に構築できます。主な特徴は以下の通りです：\n- **Code mode**: リポジトリを解析し、アーキテクチャやドメイン知識を構造化されたMarkdownとして出力します。\n- **自動更新**: GitHub Actionsと連携し、コードの変更に合わせてWikiを最新の状態に保ちます。\n- **指示ファイル連携**: `CLAUDE.md`などのエージェント用指示ファイルにWikiの参照ガイドを自動挿入します。\n\n### 運用のポイントと注意点\n情報の鮮度を保つメンテナンスコストを人からエージェントへ移譲できる点が最大のメリットですが、実行にはLLMのトークンコストが発生するため、更新頻度や対象の制御（`.openwikiignore`の活用）が重要となります。小規模なリポジトリから導入し、RAGの補完または代替手段として検討する価値があります。",
+    "topics": [
+      "LLM Wiki",
+      "RAG",
+      "OpenWiki",
+      "LangChain",
+      "Codebase Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 89
+    }
+  }
+}

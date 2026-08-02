@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:03:24.646476+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに高度なコード操作機能を提供するMCPサーバー「Coding Tools MCP」",
+    "url": "https://github.com/xyTom/coding-tools-mcp",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに対し、安全なファイル操作やGit管理、コマンド実行機能などをModel Context Protocolを通じて一括提供するコーディングランタイム。",
+    "summaryBody": "Coding Tools MCPは、Claude Desktop、Cursor、ClineなどのAIエージェントを、強力なコーディングツールへと進化させるためのModel Context Protocol (MCP) サーバーです。ファイル読み書き、構造化されたマルチファイル・パッチ適用、Git操作、コマンド実行、そして対話的なターミナルセッション（PTY）など、20種類のツールを提供します。ワークスペースの厳格な隔離、権限管理モード、LinuxでのLandlockによるカーネルレベルの保護など、安全性を重視した設計が特徴です。また、LLMのコンテキストウィンドウを効率的に使用するために、結果の要約やページネーション、データサイズの最適化も行われています。ローカル環境だけでなく、Dockerやクラウド（Cloudflare Worker経由）上での動作もサポートしており、リモートからの安全なコード操作を可能にします。",
+    "topics": [
+      "MCP",
+      "AIエージェント",
+      "LLMツール",
+      "ソフトウェア開発",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - xyTom/coding-tools-mcp: Give any AI agent the ability to code"
+  }
+}

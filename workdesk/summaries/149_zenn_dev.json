@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:53:02.828732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【速報】Kimi-K3 を Day0 デプロイ。2.8T モデルは NVIDIA B300 x8 の 1 ノードで動くのか",
+    "url": "https://zenn.dev/fixstars/articles/kimi-k3-benchmark",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Moonshot AIの2.8Tモデル「Kimi-K3」をNVIDIA B300 x8環境へ公開当日にデプロイし、MXFP4量子化によりシングルノードで実用的な推論が可能であることを実証したベンチマークレポート。",
+    "summaryBody": "Moonshot AIが公開したオープンウェイト史上最大の2.8TパラメータMoEモデル「Kimi-K3」を、最新のNVIDIA B300 (Blackwell Ultra) x8ノードで検証した速報記事です。本モデルはSFT段階から量子化認識学習（QAT）を行ったMXFP4精度で配布されており、2.8Tという巨大なモデルでありながらウェイトを約1.6TBに抑制。これにより1ノードのGPUメモリ（2.3TB）内に収まり、追加の量子化作業なしで即座に稼働可能です。推論エンジンにSGLangを採用し、MLA（Multi-head Latent Attention）とKDA（Kimi Delta Attention）のハイブリッド構成をDCP（Decode Context Parallelism）で制御することで、高いメモリ効率と実用的なスループットを実現しています。ベンチマークでは並列数30程度まで良好にスケールすることを確認したほか、コーディング試験ではA*アルゴリズムの複雑な可視化ツールを一発で生成する高い論理性能を示しました。記事内ではメモリ配分パラメータのチューニングといった運用上の注意点も詳説されています。",
+    "topics": [
+      "Kimi-K3",
+      "NVIDIA B300",
+      "LLM",
+      "MoE",
+      "SGLang"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

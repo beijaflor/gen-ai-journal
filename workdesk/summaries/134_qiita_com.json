@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:56:26.412377+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「あの請求書、どこいった？」をなくす。PleasanterとAIでつくる文書OCRツール",
+    "url": "https://qiita.com/k_iwata_office/items/e46945b5fe58555986d5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ローコードツールPleasanter、GAS、OpenAIのgpt-4oを組み合わせ、請求書などの帳票から明細レベルでデータを自動抽出し、検証・管理まで行うOCRシステムの構築事例を紹介しています。",
+    "summaryBody": "この記事では、請求書や見積書などの転記作業を効率化するために開発された「AI文書OCR PoC」システムの構成と知見が共有されています。基盤にローコードツール「Pleasanter」を、仲介役に「Google Apps Script (GAS)」、解析エンジンに「gpt-4o」を採用。単なる文字認識にとどまらず、GAS側で合計金額の検算やインボイス番号の形式チェックを機械的に行うことで、AIの誤認識を補完する「信頼性の高い」設計が特徴です。また、プロンプトインジェクション対策やPleasanter API特有の数値・日付型の扱い、GASでのリトライ処理など、実務で直面した具体的な技術的課題とその解決策についても詳しく解説されています。",
+    "topics": [
+      "Pleasanter",
+      "OpenAI",
+      "GPT-4o",
+      "OCR",
+      "GAS"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

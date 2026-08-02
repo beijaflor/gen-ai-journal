@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:14:31.934370+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMルーターは不要か？Manifestが自動ルーティング機能を廃止した理由",
+    "url": "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMゲートウェイのManifestは、コスト削減を目的としたLLMルーター機能を廃止し、予測可能性やエンジニアによる意図的なモデル選択の重要性を強調している。",
+    "summaryBody": "LLMゲートウェイを提供するManifestは、かつての主要機能であった「LLMルーター」を廃止した経緯を公開しました。現在、多くの企業がコスト削減のためにリクエスト内容に応じて自動でモデルを振り分けるルーター機能を導入していますが、同社は7,000人のユーザーフィードバックを経て、以下の4つの課題を指摘しています。1. プロンプト単体ではタスクの複雑さを判断できない、2. プレフィックスキャッシュの方がルーターよりコスト削減に効果的である、3. モデルの動的変更は出力の振る舞いの一貫性を損なう、4. 予測不能な挙動は評価やプロンプト管理のメンテナンスコストを増大させる。結論として、エンジニアが意図を持ってモデルを選択し、その特性に習熟するアプローチの方が、長期的な品質と信頼性の観点から優れていると主張しています。",
+    "topics": [
+      "LLM Routing",
+      "LLM Gateway",
+      "Cost Optimization",
+      "Software Engineering",
+      "AI Reliability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Everyone is building LLM routers, we deprecated ours"
+  }
+}

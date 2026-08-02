@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:06:22.631761+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Figmaの内部システムをAIエージェントで保護する方法",
+    "url": "https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Figmaがセキュリティ運用の自動化にAIエージェントを導入し、アラート解決時間の71%短縮とオンコール負荷の大幅な削減を実現した手法を解説。",
+    "summaryBody": "Figmaのセキュリティエンジニアリングチームは、増大する内部システムの脅威に対処するため、LLMベースの自律型エージェントシステムを構築しました。このシステムは、SIEM（Panther）からのアラートを受け取り、過去の対応履歴を検索するRAGレイヤー、OktaやWizなどのツールを操作するエージェントレイヤー、そして独自のメモリシステムで構成されています。特に「手続き型メモリ」により、セキュリティデータレイク（Snowflake）の複雑なスキーマをエージェントが自己学習し、自然言語からのSQL生成・調査を効率化しています。また、エージェントは調査結果に基づき、許可リストの更新や設定変更のためのプルリクエストを自動作成する機能も備えています。すべてのツール実行には決定論的なガードレールが設けられており、例えばPRは必ず「ドラフト」状態で作成されるなど、安全性と効率性のバランスが保たれています。導入の結果、アラート解決時間は71%短縮され、エンジニアの役割は「ゼロからの調査」から「エージェントの成果物のレビュー」へと劇的に変化しました。",
+    "topics": [
+      "Security AI",
+      "AI Agents",
+      "LLM",
+      "DevSecOps",
+      "Tines"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 95
+    },
+    "originalTitle": "How We Secure Figma’s Internal Systems With Agents | Figma Blog"
+  }
+}

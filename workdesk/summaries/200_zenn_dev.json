@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:39:56.668891+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 5では今までのプロンプトが逆効果に。「検証して」を消して「簡潔に」と書くべし。公式プロンプトガイドを読み解く",
+    "url": "https://zenn.dev/little_hand_s/articles/72646a09f49d2a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 5の公式ガイドに基づき、応答を簡潔にする指示の追加や自動検証機能を踏まえた「検証指示」の削除など、新モデルで成果を出すためのプロンプト修正ポイントを解説しています。",
+    "summaryBody": "Claude Opus 5の公式プロンプティングガイドの内容を詳細に分析した解説記事です。主な変更点として、1) Opus 5はデフォルトで応答が長くなるため、プロンプトに「簡潔さ」の指示を標準化すること、2) モデルが自律的に検証を行うため、従来の「ダブルチェックして」といった指示はトークンの無駄として削除が推奨されること、3) 思考（Thinking）機能はデフォルトで有効にし、effortパラメータを最適化することが挙げられています。旧モデル（Opus 4.8等）向けのプロンプト資産をそのまま使うと、過剰な検証や不要なサブエージェント委任によりコストと時間が増大するリスクを指摘し、モデルの進化に合わせた「足す」から「削る」へのプロンプト設計の転換を提唱しています。",
+    "topics": [
+      "Claude Opus 5",
+      "プロンプトエンジニアリング",
+      "Anthropic",
+      "LLM",
+      "AI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
