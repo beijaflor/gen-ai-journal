@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:15:41.569211+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Trains AI: 強化学習エージェント自体を強化学習で訓練し、別のAIを訓練させる試み",
+    "url": "https://github.com/Danau5tin/ai-trains-ai",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルの訓練ジョブ（報酬設計、環境、ハイパーパラメータ）を作成する「トレーナーAI」を、その訓練結果の質を報酬として強化学習（RL）で最適化するオープンソースプロジェクト。",
+    "summaryBody": "このプロジェクトは、AIがAIを訓練する「再帰的な強化学習（RL）ループ」を構築する実験的な試みです。システムは二層構造で構成されています。まず「外部ループ」では、Tinkerを使用してQwen3.6-35B-A3B（トレーナー）を訓練します。その際の報酬は、トレーナーが作成した訓練設定を用いて実際に訓練された「内部モデル（学生）」の性能向上に基づきます。「内部ループ」では、トレーナーが生成したコードと構成をもとに、Prime-RL（GRPO）を用いて小型のQwenモデルをRunpod GPU上で訓練します。\n\n54ステップの訓練の結果、トレーナーエージェントは単に有効なコードを生成するだけでなく、より高い性能を引き出すハイパーパラメータやモデルの選択方法を学習しました。また、訓練中には遭遇しなかった未知のタスクに対しても学習したスキルが転移することが確認されています。LoRAアダプタの重み、GPUのオーケストレーションコード、詳細なコスト分析、そして失敗を含む開発ログまで全てが公開されており、自律的なAI改善の未来を示唆する内容となっています。",
+    "topics": [
+      "Reinforcement Learning",
+      "GRPO",
+      "AI Agent",
+      "LLM Training",
+      "Self-Improving AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - Danau5tin/ai-trains-ai: RL-training an AI agent to RL-train AI agents. · GitHub"
+  }
+}

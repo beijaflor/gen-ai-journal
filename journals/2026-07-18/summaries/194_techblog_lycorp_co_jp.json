@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:57:52.143190+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ID-JAG The Hard Way：失敗から学ぶAIエージェントのセキュリティハンズオン",
+    "url": "https://techblog.lycorp.co.jp/ja/20260714a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "次世代認可プロトコル「ID-JAG」を用いて、AIエージェントが安全にAPIへアクセスするための仕組みを、失敗の再現と修正を通じて深く学ぶハンズオン形式の解説記事。",
+    "summaryBody": "LINEヤフーによる、AIエージェントのセキュリティ課題を解決する次世代標準案「ID-JAG（Identity Assertion JWT Authorization Grant）」の実践ガイドです。AIエージェントがユーザーに代わって自律的にAPIを呼び出す際、過剰な権限付与や同意プロセスの複雑化といった課題が生じますが、ID-JAGはOAuth 2.0 Token Exchangeを拡張し、企業ポリシーに基づいた最小権限の委譲を実現します。本記事で紹介されるハンズオン「id-jag-the-hard-way」では、KeycloakとAthenzを組み合わせた環境で、意図的にポリシーを欠落させてエラーを発生させる「失敗から学ぶ」アプローチを採用しており、認証データと認可権限の分離や、トークン交換の厳密なフローを実体験として理解できる構成になっています。",
+    "topics": [
+      "ID-JAG",
+      "AIエージェント",
+      "OAuth 2.0",
+      "Athenz",
+      "APIセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

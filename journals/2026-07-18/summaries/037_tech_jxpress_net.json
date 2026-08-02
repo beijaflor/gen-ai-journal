@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:04:23.526136+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Workers は AI 搭載の Slack ボットを簡単に作れていいぞ",
+    "url": "https://tech.jxpress.net/entry/2026/07/13/113000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cloudflare Workersの各種機能をフル活用し、LLMによる高精度な記事選別を行うSlackボットをサーバーレスで構築する手法を解説した記事です。",
+    "summaryBody": "JX通信社におけるRSS監視の誤検知（約61%がノイズ）をLLMで解決した実践的な事例紹介です。Cloudflare Workersを基盤とし、以下のコンポーネントを組み合わせた「AIエージェント」の構築手法が解説されています。\n\n- **Workers AI**: APIキー管理不要でLLM（Llama 3.3等）を直接バインディング経由で実行。\n- **Cloudflare KV & Cron Triggers**: 記事の重複排除管理と15分おきの定期ポーリングをサーバーレスで実現。\n- **HTMLRewriter**: 外部ライブラリなしで記事本文のクリーニングとテキスト抽出を実施。\n- **Agents SDK**: Durable ObjectsベースのステートフルなSlackエージェントを構築し、対話型のインターフェースを提供。\n\n自然言語によるフィルタリングルールの動的変更（Function Calling）や、信頼できないソースに対するプロンプトインジェクション対策など、実運用上の知見が豊富に含まれています。Cloudflareのエコシステムだけで完結するため、低コストかつ高い開発体験を維持できる点が強調されています。",
+    "topics": [
+      "Cloudflare Workers",
+      "Workers AI",
+      "Slack Bot",
+      "LLM",
+      "Serverless"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

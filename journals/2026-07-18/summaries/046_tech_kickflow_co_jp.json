@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:01:36.817277+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Asanaにたまるバグチケを、月一でAIに棚卸しさせる",
+    "url": "https://tech.kickflow.co.jp/entry/2026/07/10/145536",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Asanaのバックログに溜まったバグチケットを、Claude Codeを用いてGitHubの修正履歴や現行コードと照合し、クローズ候補を自動提案する「棚卸しBot」の導入事例。",
+    "summaryBody": "kickflowのQAチームが開発した、Asana上の古いバグチケットを月に一度AIが自動チェックするBotの紹介です。プロジェクトに放置されがちな「修正済みだが未完了」のチケットを特定するため、Claude Code、Asana API、GitHub APIを連携。AIは単に判定するだけでなく、マージ済みのPRやコードの改修箇所といった「根拠」と「確信度（高・中・参考）」をセットでSlackに投稿します。誤判定による意図しないクローズを防ぐため、Botは候補提示に留め、最終判断を人間が行う運用を採用。数百件のチケットを処理するためにサブエージェントによる分散処理を行うなど、大規模なバックログにも対応可能な実用的な工夫が凝らされています。2026年7月の実行では、262件の対象から11件の候補を出し、実際に8件をクローズできたとしています。",
+    "topics": [
+      "Asana",
+      "Claude Code",
+      "QA",
+      "GitHub API",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

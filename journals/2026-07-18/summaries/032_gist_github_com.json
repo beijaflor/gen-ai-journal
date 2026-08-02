@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:05:44.012591+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "xAI Grok Build CLIがxAIに送信しているデータのワイヤレベル分析 (grok 0.2.93)",
+    "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "xAIのGrok Build CLIが、ユーザーの指示に関わらずリポジトリ全体や.envファイル、git履歴を暗号化せずにGCSへアップロードしている挙動を通信解析により解明した。",
+    "summaryBody": "このレポートは、xAIのコーディング用CLIツール「Grok Build」の通信内容をmitmproxyを用いて解析した結果を詳述しています。分析の結果、主な3つの挙動が明らかになりました。1. モデルの回答生成時に、.envファイルなどの秘匿情報を未編集のままモデルサーバーとGCSバケットに送信している。2. エージェントが読み取るよう指示されていないファイルを含め、リポジトリ全体をgit bundle形式で「grok-code-session-traces」というGoogle Cloud Storageバケットにアップロードしている。3. 「モデルの改善を許可しない」設定をオンにしても、リポジトリのアップロード自体は停止されない。5GBを超える大規模なリポジトリでもこの挙動は継続され、ユーザーの意図しない広範囲なデータ送信が行われていることが証明されました。現在はxAI側で一部のアップロード機能が一時停止され、データ削除の声明が出ていますが、ツールのデフォルト動作における深刻なプライバシー上のリスクを示唆しています。",
+    "topics": [
+      "xAI",
+      "Grok",
+      "セキュリティ",
+      "ネットワーク解析",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "What xAI Grok Build CLI actually sends to xAI - a wire-level analysis (grok 0.2.93)"
+  }
+}

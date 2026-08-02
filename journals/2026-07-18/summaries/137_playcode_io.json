@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:18:49.837503+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeScriptのトークンコストはClaudeの方がGPTより73%高い：Playcodeによるベンチマーク調査",
+    "url": "https://playcode.io/blog/real-price-of-frontier-models",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルのトークナイザーの差異により、同一のTypeScriptコードを処理する際のトークン数がClaudeではGPTより73%多くなり、カタログ価格以上に実質的なコスト差が生じている実態を明らかにする調査データ。",
+    "summaryBody": "AIモデルの利用料金は「トークン単価 × トークン数」で決まりますが、同じテキストを何トークンに分割するか（トークナイザーの効率）はベンダーごとに異なります。Playcodeが行った最新のベンチマーク調査によると、Anthropicの新しいトークナイザー（Sonnet 5, Opus 4.8, Fable 5）は、従来のバージョンよりも約30%多くのトークンを生成し、リスト価格が同じでも実質的な値上げとなっています。特にコード領域での効率差が顕著で、TypeScriptファイルにおいてはOpenAIのGPTモデル（o200k_base）と比較して、Claudeは1.73倍のトークンを消費します。この結果、カタログ上の1Mトークンあたりの価格が安く見えても、実行タスクあたりの支払い額はClaudeの方が遥かに高くなる逆転現象が発生しています。記事では、英語プログラミングエージェントの一般的なワークロードにおいて、Opus 4.8の実効価格はGPT-5.5の1.5倍に達すると分析しており、モデル選択時には「1トークンあたりの単価」ではなく「完了タスクあたりのコスト」で評価すべきだと結論付けています。",
+    "topics": [
+      "トークナイザー",
+      "LLMコスト比較",
+      "Anthropic",
+      "OpenAI",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "The Same TypeScript Costs 73% More on Claude Than on GPT"
+  }
+}

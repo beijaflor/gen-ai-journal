@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:17:33.317973+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MIT、児童性的虐待画像（CSAM）を生成せずにその学習済みモデルを特定する新手法を開発",
+    "url": "https://insideai.news/news/ai-safety/mits-new-method-flags-ai-models-trained-on-child-abuse-imagery-without-generating-it/3869/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MITの研究チームが開発した「Gaussian probing」は、違法な画像を一切生成することなく、児童性的虐待画像（CSAM）の生成用に微調整されたAIモデルを100%の精度で特定できる画期的な手法です。",
+    "summaryBody": "MITの研究者らは、モデルの内部構造を解析することで、児童性的虐待画像（CSAM）の生成に特化した微調整（LoRAなど）が行われたAIモデルを特定する「Gaussian probing（ガウス・プローブ法）」を開発しました。従来、特定のモデルが有害な画像を生成するかをテストするには、実際にその画像を生成させる必要があり、法的な違法性や倫理的なリスクが監査の大きな障壁となっていました。本手法は、ランダムなデータポイントをモデルに流し込み、LoRAアダプターによって生じる内部表現のシフトを分析することで、画像を生成することなくモデルの意図を「指紋」のように特定します。\n\n国際機械学習会議（ICML）で発表されたこの手法は、テストにおいて100%の精度を記録し、他の有害なコンテンツ用モデルとCSAM用モデルを正確に区別することに成功しました。Hugging FaceやCivitaiなどのモデル共有プラットフォームにこの技術を統合することで、有害なモデルのアップロードを自動的にブロックし、拡散を未然に防ぐスケーラブルな防護策としての活用が期待されています。モデル生成という違法行為を回避しながら安全性を検証できるため、法執行機関やプラットフォーム運営者にとって重要なツールとなります。",
+    "topics": [
+      "AI Safety",
+      "Gaussian Probing",
+      "CSAM Detection",
+      "LoRA",
+      "Model Auditing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "MIT’s New Method Flags AI Models Trained on Child Abuse Imagery Without Generating It"
+  }
+}

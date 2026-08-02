@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:10:45.418538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "調査用スキルを作ってみた - TOKIUMプロダクトチーム テックブログ",
+    "url": "https://zenn.dev/tokium_dev/articles/building-a-research-skill",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "一次情報の精査やセキュリティ対策、段階的な用語解説機能を備えた、調査・サーベイ業務を効率化するClaude Code用カスタムスキル「collecting-research-notes」の設計と実装を公開。",
+    "summaryBody": "TOKIUMのエンジニアが、arXiv論文や公式ドキュメントなど多岐にわたる情報源から正確な調査ノートを自動生成するためのClaude Code向けスキルを開発。このスキルは「媒体横断の収集フロー」「一次情報と二次情報の厳格な区別」「取得コンテンツの実行を制限するセキュリティハーネス」「3段階の用語解説オプション」の4つを柱として設計されている。具体的には、数値や主張が一次ソース（論文本体や公式発表）に基づいているかを自動判定し、二次情報の不確実性を明記する機能を備える。また、Web取得データに含まれる悪意ある指示の実行を防ぐ安全策も内蔵。実際の使用例では、最新モデルのベンチマーク調査において、Bashコマンド等の実行を抑えつつ、信頼性の高い出典付きノートを生成できることが示されている。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM",
+      "リサーチ",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

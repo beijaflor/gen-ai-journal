@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:09:26.499063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "役割ごとにFableとGPT-5.6を使い分けるAgent Teamの設計",
+    "url": "https://zenn.dev/discus0434/articles/customizable-agent-teams",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "開発工程を11の役割に細分化し、Fable 5やGPT-5.6の各ティアをコスト・性能比に基づき最適配置する、次世代のマルチエージェント開発テンプレートの設計思想。",
+    "summaryBody": "本記事は、単一のAIエージェントに全ての開発工程を任せる限界（コンテキスト肥大化による忘却や品質低下）を指摘し、責務を11の役割に分散させる「customizable-agent-teams」を提案しています。窓口となるLeadには対話精度の高いClaude Fable 5、大量の実装・調査タスクには安価で高速なGPT-5.6 Luna、判断の中枢や難所には推論能力の高いGPT-5.6 Solを割り当てるなど、Paretoフロンティアに基づいたモデル配置が特徴です。また、役割間の連携をgitベースの検証付きプロセスにすることで、指示の形骸化を防ぎ、自律的な開発サイクルを実現。実際のプロダクト開発でも、人間が一切コードを書かずに、調査に基づいた正確な機能実装とテスト完走を確認した実例が紹介されています。",
+    "topics": [
+      "マルチエージェント",
+      "Claude Code",
+      "Codex",
+      "ソフトウェア開発",
+      "LLM運用最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

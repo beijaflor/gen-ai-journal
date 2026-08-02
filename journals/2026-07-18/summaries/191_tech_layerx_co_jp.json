@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:58:36.390886+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Langfuse トレース取り込み処理の改善による ClickHouse の負荷低減",
+    "url": "https://tech.layerx.co.jp/entry/langfuse-clickhouse-read-skip",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Langfuseのトレース取り込みにおいて、ClickHouseへの頻繁な単一レコード検索を環境変数でスキップすることで、深刻な処理遅延とDB負荷を劇的に改善した事例を紹介します。",
+    "summaryBody": "LayerXにおけるLLMOpsプラットフォーム「Langfuse」のセルフホスト運用における改善事例です。LLM機能の拡大に伴い、トレース反映に最大1日の遅延が発生し、Redisの滞留やClickHouseの負荷上昇が課題となりました。調査の結果、Langfuse workerがイベントごとにClickHouseへ最新レコードを確認するSELECTクエリを発行しており、ClickHouseが苦手とする高頻度な単一検索がボトルネックであることが判明しました。対策として、S3に全イベントが保存されているv3環境の特性を利用し、環境変数「LANGFUSE_SKIP_INGESTION_CLICKHOUSE_READ_MIN_PROJECT_CREATE_DATE」を設定してDB検索をスキップ。結果、ClickHouseのCPU負荷が1桁台まで急減し、遅延の解消とインフラコストの最適化を同時に実現しました。",
+    "topics": [
+      "Langfuse",
+      "ClickHouse",
+      "LLMOps",
+      "SRE",
+      "パフォーマンス改善"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

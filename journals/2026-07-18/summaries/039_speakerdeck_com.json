@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:03:37.408023+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DMM.com 購入改善推進チーム におけるCodeRabbitを用いた レビューフロー改善の一例",
+    "url": "https://speakerdeck.com/ysknsid25/dmm-dot-com-gou-ru-gai-shan-tui-jin-timu-niokerucoderabbitwoyong-ita-rebiyuhurogai-shan-no-li",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "DMM.comのチームが、CodeRabbitのノイズ指摘と人間との二重レビューを解消するために行った、設定ファイルの最適化とGitHub Actionsによる「AI to Human」フローの構築事例。",
+    "summaryBody": "DMM.comの購入改善推進チームがAIコードレビューツール「CodeRabbit」を導入した際の改善事例です。当初、コンテキスト不足による「ノイズの多い大量の指摘」と、人間とAIが同時にレビューを開始する「二重レビュー」が課題となっていました。これに対し、`.coderabbit.yaml`を育ててパスごとの指示やコーディング規約（CLAUDE.md等）を具体化することで指摘の質を向上。さらに、独自に作成・公開したGitHub Actionを用いて、CodeRabbitの指摘が解消された後にラベル（ReviewReady）を介して人間をアサインする「AI to Human」のフローを構築しました。この改善により、人間が本質的なロジックのレビューに集中できる環境を実現しています。",
+    "topics": [
+      "CodeRabbit",
+      "コードレビュー",
+      "GitHub Actions",
+      "DMM.com",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

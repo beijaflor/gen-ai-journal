@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:11:39.994129+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代の「会社のOS」をつくる 〜Open Knowledge Format（OKF）とRAGで組織知を配れる形にする〜",
+    "url": "https://zenn.dev/yamitake/articles/okf-open-knowledge-format-corporate-os",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Cloudが提唱したOpen Knowledge Format（OKF）とRAGを組み合わせ、組織内の知識をAIエージェントが統一的に参照できる「会社のOS」として構築する手法を解説した記事。",
+    "summaryBody": "この記事では、2026年（※原文ママ）に発表されたGoogle Cloudのオープン仕様「Open Knowledge Format (OKF)」を用いた、AI時代の組織知管理のあり方を提案しています。OKFは、組織のルールや指標、プロセスなどをYAMLフロントマター付きのMarkdownファイル（Concept）として構造化して梱包（Bundle）する形式です。筆者は、OKFを「知識の保存形式（上流）」、RAGを「検索・推論のランタイム（下流）」と位置づけ、これらを組み合わせることで、特定のベンダーに依存せずあらゆるAIエージェントが共通の知識を参照できる「Corporate OS（会社のOS）」が実現できると説いています。前回の記事で紹介した「1ディレクトリ1インデックス」の思想がOKFの標準仕様と合致している点や、具体的なタグ戦略、アーキテクチャ構成についても触れられています。",
+    "topics": [
+      "OKF",
+      "RAG",
+      "ナレッジマネジメント",
+      "LLM",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:13:20.979131+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "月額110ドルで構築する自己改善型開発パイプライン",
+    "url": "https://andywidjaja.com/blog/110-pipeline",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとVPSを組み合わせ、GitHub Issueのトリアージから実装、テスト、プルリクエスト作成までを月額約110ドルで自動化した開発ループの構築事例。",
+    "summaryBody": "ソフトウェアエンジニアのAndy Widjaja氏が、Claude Code CLIを活用して開発フローを自動化した「autoloop」システムを紹介しています。月額100ドルのClaudeライセンスと約10ドルのVPSという低コストで運用されており、複雑なオーケストレーションフレームワークを排し、systemdタイマーによるシンプルな定時実行で制御されています。\n\nシステムは、GitHub Issueを読み取って難易度推定やタスク分割を行う「トリアージ（Sonnet）」と、実際にコードを書きテストをパスさせる「実装（Opus）」の2段階で動作します。2週間の運用で27件のPRを自動生成・マージし、1課題あたり平均1.61ドルのコストを実現しました。\n\n重要な教訓として、AIエージェントのパフォーマンスのボトルネックはモデルの知能よりも「Issue（指示書）の品質」にあると指摘しています。また、自分自身のコードや設定ファイルを変更できない「保護パス」を設定することで、安全性を担保した自己改善ループを実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "GitHubワークフロー",
+      "ソフトウェアエンジニアリング",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "The $110/month self-improving pipeline"
+  }
+}

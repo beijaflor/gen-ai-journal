@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:10:09.951469+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "herdr を活用した Codex とのオーケストレーション用 Claude Code Plugin を作ってみた",
+    "url": "https://zenn.dev/genda_jp/articles/46745564b7a9dd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ターミナルマルチプレクサ herdr を基盤に、Claude Code と Codex (GPT-5.6) を連携・並列実行させるオーケストレーション用プラグイン「baton」の開発と運用の記録。",
+    "summaryBody": "株式会社GENDAのエンジニアによる、AIコーディングエージェントのオーケストレーション事例です。ターミナルマルチプレクサ「herdr」を活用し、メインの実装を担う Claude Code と、高い推論能力を持つ Codex (GPT-5.6) を「相談役・レビュー役」として並走させる仕組みを構築しました。開発されたプラグイン「baton」は、要件定義を行う親タブと、Issue単位で分割された実装を行う子タブの2層構造を持ち、各層で Claude と Codex がペアを組みます。エージェント間の連携は、直接的な記述ではなくファイルベースの「契約 (Contract)」と herdr CLI を介した操作で疎結合に実装されています。具体的なスキル定義（kickoff, codex-buddy, escalate）のプロンプトも公開されており、複数Issueの並列処理において実用的な成果が得られたことが報告されています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "herdr",
+      "AIエージェント",
+      "オーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

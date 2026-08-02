@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:11:35.349929+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のObservability設計 - PIIとAIの検索性を両立させ、自動修復する（実践編）",
+    "url": "https://zenn.dev/aircloset/articles/3b8e60fcaab4b7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが観測データを安全に活用できるよう、PII（個人情報）をHMACハッシュ化で保護しつつ検索性を維持し、自動修復まで繋げる実践的なObservability設計を解説している。",
+    "summaryBody": "エアークローゼット社におけるAI向けObservability設計の実践編。AIがログやトレースを扱う際、非エンジニアがPIIにアクセスするリスクやモデルへの漏洩を防ぐため、6つの層（BQ Policy Tag、DLP、ログハッシュ化等）による多層防御を構築。特に、書き込み時と検索時の両端でHMACハッシュ化を行うことで、平文PIIを信頼境界（MCPサーバー内）に留めたままAIが特定の顧客ログを検索・相関分析できる仕組みを実現した。これにより、CI失敗やアラート検知からAIエージェントが自動で修正PRを作成する「自動修復」の基盤が整う。課題として、エラー設計（stacktraceの保持等）がAI運用の質を左右することを挙げている。また、議論セクションではキーローテーションやログの保持期間（Retention）と暗号的境界の整合性についても深く言及されている。",
+    "topics": [
+      "Observability",
+      "AI Agent",
+      "PII保護",
+      "MCP",
+      "自動修復"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

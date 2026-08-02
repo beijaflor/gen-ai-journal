@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:45:22.354959+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI 時代に増え続ける「作業状態の管理負荷」を、GTD × AI エージェントで軽くする",
+    "url": "https://techblog.lycorp.co.jp/ja/20260713a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの普及に伴い増大する開発者の認知負荷を、GTD手法とAIエージェントによるタスク管理の自動化によって軽減する検証事例の紹介。",
+    "summaryBody": "AIによる開発速度の向上に伴い、並行するタスクやプルリクエスト（PR）の数が増え、開発者の「作業状態を管理する負荷（認知負荷）」が課題となっています。本記事では、この負荷を軽減するためにタスク管理手法「GTD（Getting Things Done）」をAIエージェントで自動化する試みを解説しています。具体的には、GitHubのPR状態やメールの内容をローカルのAIエージェントが解析し、Google Apps Script (GAS) を介してGoogle ToDoリストの「NextAction」や「Waiting」へ自動的に振り分けるシステム（MVP）を構築。AIの判断と実際のデータ操作（副作用）を分離し、GAS側にガードを設けることで、AIの出力の揺らぎによる誤操作を防ぐ設計がなされています。また、リスト管理だけでなく、PRの要約やレビューの勘所を自動生成するタスク遂行支援まで踏み込んでおり、技術者の生産性向上に対する実用的なアプローチを提示しています。",
+    "topics": [
+      "GTD",
+      "AIエージェント",
+      "認知負荷",
+      "GitHub",
+      "Google Apps Script"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

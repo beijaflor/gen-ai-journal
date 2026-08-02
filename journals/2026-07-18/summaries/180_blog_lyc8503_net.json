@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:01:32.714619+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「古典的」機械学習を用いたLLM生成Web小説の検出（AIGCテキスト検出）",
+    "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "scikit-learnのSVMとTF-IDFを活用し、LLM特有の統計的パターンを識別することで約85%の精度でAI生成テキストを検出する手法の実証実験報告。",
+    "summaryBody": "著者は、2026年時点のLLM生成テキストが持つ強い統計的パターンに着目し、モダンな巨大モデルではなくscikit-learnのLinearSVCを用いた「古典的」な機械学習によるAIGC（AI生成コンテンツ）検出器を構築しました。1万件以上の人間によるテキストと、Gemini、Qwen、GLM、DeepSeekなど複数のLLMで生成されたデータを学習させた結果、文単位で約85%の精度を達成。さらに、モデルを軽量化してブラウザ上で動作するJavaScript版のデモも公開しています。実際のWeb小説投稿サイト（Lofter）のデータを分析したところ、トレンド上位の記事の約32%が50%以上の確率でAI生成である可能性が示唆されました。翻訳を介したロンダリングや「AIらしさを消す」プロンプトに対しても一定の検出能力を維持しており、統計的アプローチの堅牢性が確認されています。",
+    "topics": [
+      "AIGC検出",
+      "機械学習",
+      "scikit-learn",
+      "自然言語処理",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    },
+    "originalTitle": "Detecting LLM-Generated Web Fiction with \"Classical\" Machine Learning (AIGC Text Detection)"
+  }
+}

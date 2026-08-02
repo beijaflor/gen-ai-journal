@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:09:59.395510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "食べログが「Deal Provider」を構築した理由──「AIがなければ踏み出せなかった」DDDという20年前からの設計思想への挑戦",
+    "url": "https://tech-blog.tabelog.com/entry/deal-provider-responsibility-separation-design",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "食べログがAIを活用してDDDの実装・運用コストを克服し、ビジネスロジックをカプセル化した中間データ層「Deal Provider」を構築した事例。",
+    "summaryBody": "食べログの販売管理システムにおいて、各サブシステムへのビジネスロジック流出やコード重複を解決するため、中間データ層「Deal Provider」を導入。従来、DDD（ドメイン駆動設計）は学習コストとルール遵守の難しさから導入が困難とされてきたが、AIを「ルールの番人」として活用することで、Port/Adapter・Usecase・DomainServiceの4層構造を厳格に維持。ADR（設計意思決定記録）とコーディングルールをAIに学習させることで、設計意図に沿った高精度なコード生成を実現し、開発効率を約30%向上させた。AIがDDDの実践を支え、DDDがAIの精度を高めるという「好循環」について詳述されている。",
+    "topics": [
+      "DDD (ドメイン駆動設計)",
+      "アーキテクチャ",
+      "生成AI",
+      "バックエンド",
+      "ADR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

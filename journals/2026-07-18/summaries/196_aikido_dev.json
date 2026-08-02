@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:57:25.007434+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコードとバイブコーディング時代におけるコード品質基準の維持方法",
+    "url": "https://www.aikido.dev/blog/code-quality-when-vibe-coding",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる高速開発（バイブコーディング）で蓄積される技術的負債を防ぐため、ルールベースのLLM評価やベンチマーク済みプロンプトを活用した一貫性のあるコード品質管理の重要性を解説している。",
+    "summaryBody": "AIを活用して非開発者でもアプリを構築できる「バイブコーディング（Vibe Coding）」の普及に伴い、コードの品質管理が新たな課題となっています。AIが生成したコードを十分にレビューせずにマージし続けると、技術的負債が急激に積み重なり、数ヶ月後には開発速度が逆転するリスクがあります。本記事では、汎用的なLLM（ClaudeやCursor等）によるレビューの限界を指摘し、Aikido Platformが採用する解決策を提示しています。具体的には、リポジトリ全体を一括で評価するのではなく「ルールごとに個別のLLMコール」を実行することで精度を高め、さらに「可読性か重複排除か」といった組織特有の「グレーゾーン」な基準を反映させるためのベンチマーク済みプロンプトの重要性を説いています。今後は、デプロイ直前の最終チェックとして、ロジックバグや権限不備を自律的に追跡するエージェント機能の活用が鍵となります。",
+    "topics": [
+      "Vibe Coding",
+      "AI Code Quality",
+      "Technical Debt",
+      "LLM Review",
+      "AppSec"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 82,
+      "annexPotential": 45,
+      "overall": 80
+    },
+    "originalTitle": "How to maintain code quality standards with AI code and vibe coding"
+  }
+}

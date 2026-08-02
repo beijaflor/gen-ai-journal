@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:11:16.186971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "deja-vu: 12種類のコーディングエージェントに対応した過去の会話履歴の高速検索・記憶ツール",
+    "url": "https://github.com/vshulcz/deja-vu/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "様々なAIコーディングエージェントの過去の対話ログを高速にインデックス化し、MCP経由で「記憶」として再利用可能にするローカル完結型ツール。",
+    "summaryBody": "deja-vu（通称deja）は、Claude Code、Cursor、aider、Copilot CLIなどの多様なコーディングエージェントの過去の会話履歴を自動でインデックス化し、現在の対話に活用可能にする「レトロアクティブ・メモリ（遡及的記憶）」ツールです。主な特徴は以下の通りです：\n\n1. **遡及的な記憶活用**: インストール前にローカルに蓄積されていた数ヶ月分のログを即座にインデックス化し、数GBのデータから約12msで検索可能です。\n2. **MCP (Model Context Protocol) 統合**: 検索した過去の知見をMCPツールを介してエージェントに直接提供。エージェントは「3週間前に解決した同様のバグ」を自ら参照し、再デバッグを防ぎます。\n3. **ローカルとプライバシー**: 依存関係のない単一のバイナリで動作し、すべてローカルで処理されます。インデックス作成時にAPIキーやJWT、秘密鍵などの機密情報を自動的に検出し、伏せ字（Redaction）処理を行います。\n4. **マルチマシン同期**: SSHや共有フォルダ経由で異なるマシン間の「記憶」を同期可能です。\n5. **セマンティック検索の拡張性**: OllamaやLM Studioなどのローカルエンドポイントを指定することで、意味ベースの検索もオプションで利用可能です。",
+    "topics": [
+      "AI Coding Agents",
+      "MCP (Model Context Protocol)",
+      "Local Indexing",
+      "Developer Experience",
+      "Privacy-focused AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - vshulcz/deja-vu: Your agents already solved this. deja finds it — retroactive memory for twelve coding agents: search and MCP recall over the sessions they already wrote, an audit log of what they were served, secrets redacted. One zero-dep binary, fully local. · GitHub"
+  }
+}

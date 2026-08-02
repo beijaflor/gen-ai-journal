@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:55:43.567725+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "100行のLispで作るAIエージェント：25年前の教えが現代に繋がる理由",
+    "url": "https://thebeach.dev/posts/lisp-agent/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Lispの「コードとデータが同一である」という特性を活用し、わずか100行のコードで自己進化するツール群と再帰的なループを備えたAIエージェントを構築する試みの記録。",
+    "summaryBody": "この記事は、25年前に大学でLispを学んだ著者が、現代のLLMエージェント構築においてLispがいかに理想的な言語であるかを実験した記録です。著者は、複雑なフレームワークを排し、エージェントの本質を「履歴を引数とする再帰関数」と定義しました。\n\n最大の特徴は、Lispの同型性（ホモアイコニック）を利用した自己進化能力です。エージェントには`eval`という唯一のツールのみが与えられ、必要に応じて自らCommon Lispの関数（Web検索機能など）を書き、実行環境に定義して即座に利用します。このアプローチでは、ツールのカタログは設計時に固定されるのではなく、会話の文脈の中で動的に構築されます。\n\nまた、エージェントの「能力」は実行環境のメモリ上だけでなく、会話のトランスクリプト（履歴）としても保存されます。新しいセッションが始まると、エージェントは過去の履歴を読み込み、以前自分で書いた関数を再定義することで能力を「再構成」します。シンボリックAIの黄金時代は過ぎましたが、Lispという言語が持つ「プログラムを操作するプログラム」という思想が、LLMという推論エンジンを動かす基盤として今なお強力であることを証明しています。",
+    "topics": [
+      "Lisp",
+      "AIエージェント",
+      "LLM",
+      "ホモアイコニック",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "An Agent in 100 Lines of Lisp, or How my Prof was Right - Just 25 Years Early"
+  }
+}

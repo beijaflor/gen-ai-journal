@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:24:05.180694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの商用利用に向けた運用基盤の重要性：OpenClaw Superstreamからの教訓",
+    "url": "https://www.oreilly.com/radar/dont-neglect-the-operational-groundwork/",
+    "language": "en",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "O'Reillyのイベントで、自律型AIエージェントを本番環境で安全に運用するためには、プロンプト改善よりも実行レイヤーのセキュリティやサプライチェーン管理、地道な運用基盤の整備が重要であると提言されました。",
+    "summaryBody": "O'Reillyが開催した「OpenClaw Superstream」の内容を基に、自律型AIエージェントの導入におけるセキュリティと運用の課題を解説しています。主な要点は以下の通りです。\n\n1. **実行レイヤーの保護**: プロンプトインジェクション対策だけでは不十分であり、エージェントがOSに対して行うアクションをAgentSHのようなツールで監視・制限し、実行ログを確実に取得する必要があります。\n2. **サプライチェーン・リスク**: ClawHubなどのスキルマーケットプレイスには悪意あるパッケージが紛れ込んでおり、導入前のコード監査や、設定ファイルによる権限制限（skillsAllowed/Denyセクション）が必須です。\n3. **運用上の「衛生管理」**: 外部への露出設定やバージョン固定、トークンコストの管理など、基本的な設定ミスが原因でプロジェクトが失敗するケースが多く、これら地味な作業こそが成功の鍵を握ります。\n4. **正確性の担保と人間の介在**: 金融等の規制環境では、AIの「もっともらしさ」を鵜呑みにせず、決定論的な計算ロジックと多層的な検証プロセス、そして最終的な人間によるレビューをワークフローに組み込むことが推奨されています。",
+    "topics": [
+      "AI Agents",
+      "AI Security",
+      "MLOps",
+      "OpenClaw",
+      "AI Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Don’t Neglect the Operational Groundwork"
+  }
+}

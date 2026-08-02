@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:16:27.881021+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向け指示書「Dumb Human」: ユーザーを過信せず最善の結果を導くためのガイドライン",
+    "url": "https://gist.github.com/skorotkiewicz/2d4db4ceaf83aa54eb7f2066fdb961ff",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに対し、人間の指示を鵜呑みにせず、シニアエンジニアとして自律的にコードの検証や最適解の提案を行うよう促すシステムプロンプト案。",
+    "summaryBody": "GitHub Gistで公開された「AGENTS.md」は、AIコードエージェントに与えるべき挑戦的な指示セットです。このガイドラインは、「ユーザー（人間）はコードベースやツールについて無知であり、誤った指示を出す可能性がある」という前提に立つことをAIに求めます。AIはユーザーの提案を盲目的に受け入れるのではなく、自らリポジトリを調査し、テストを実行し、既存の壊れたアーキテクチャを維持せずにより良い設計へと置き換える「責任あるシニアエンジニア」として振る舞うよう定義されています。CursorなどのAIエディタのカスタム指示（.cursorrules）として即座に活用できる実用的なリソースです。",
+    "topics": [
+      "AIエージェント",
+      "システムプロンプト",
+      "ソフトウェア開発",
+      "プロンプトエンジニアリング",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "dumb human"
+  }
+}

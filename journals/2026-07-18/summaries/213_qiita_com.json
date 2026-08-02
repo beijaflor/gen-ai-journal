@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:29:44.744378+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI⇔人間 がdiff上にコメントを書き合える「hunk」がすごい",
+    "url": "https://qiita.com/kuma_3838/items/14df505c7023f665c585",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントと人間がターミナル上のdiff画面で直接コメントをやり取りできる、双方向レビューに特化したTUI型diffビューア「hunk」の紹介。",
+    "summaryBody": "「hunk」は、AIエージェント（Claude Codeなど）との協調作業を前提に設計された、ターミナルベースのインタラクティブなdiffビューアです。従来のdiffツールと異なり、AIがdiff画面内に直接アノテーションを表示したり、ユーザーを特定の変更箇所へ誘導（navigate）したりすることが可能です。また、人間側もdiff画面上に「c」キーでメモを残し、それをAIエージェントに回収させて実装指示として利用できる双方向性が最大の特徴です。Git、Jujutsu、Saplingに対応しており、AIとのコードレビューにおける「コードのコピペ」や「場所の特定」といった摩擦を大幅に軽減します。",
+    "topics": [
+      "hunk",
+      "Git",
+      "AIエージェント",
+      "Claude Code",
+      "TUI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:10:58.848118+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenFugu×ローカルLLM群でマルチAI駆動を検証① Multi-Agent System as a Model の再現",
+    "url": "https://zenn.dev/znet/articles/2026-openfugu-local-multiagent-part1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Sakana AIの「Fugu」の概念をOpenFuguで再現し、極小の線形ヘッドと進化戦略を用いることで、ローカル環境でもAIエージェントの適切な「采配」を高速に学習可能であることを実証した。",
+    "summaryBody": "Sakana AIが提唱する「Multi-Agent System as a Model（Fugu）」の概念を、公開再実装の「OpenFugu」とOllama上のローカルLLM群を用いて検証した記録である。検証では、0.6BのバックボーンLLMの隠れ状態に対してわずか5,120パラメータの線形ヘッドを付与し、進化戦略（sep-CMA-ES）を用いることで、GPU不要かつCPUで2秒という極めて短時間の訓練を実現した。さらに、「英語はこのモデル、日本語はこのモデル」といった使い分けを、明示的なラベルなしに精度報酬のみから自律的に学習することに成功している。未見のheld-outデータに対しても訓練セットと同等の精度を維持しており、モデルの丸暗記ではない「采配の学習」が成立していることが確認された。一方で、精度のみを報酬に設定すると最終的に「常に最強のモデルを選択する」という解に収束してしまうため、今後はレイテンシやコストを報酬系に組み込んだ「使い分け」の最適化が焦点になるとしている。",
+    "topics": [
+      "OpenFugu",
+      "ローカルLLM",
+      "マルチエージェント",
+      "Sakana AI",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

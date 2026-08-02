@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:07:25.286507+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SQL MCP Server が GA したらしい",
+    "url": "https://zenn.dev/microsoft/articles/1113250e1e63dc",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Data API Builderの一部としてGAされたSQL MCP Serverにより、AIエージェントから安全にデータベースを操作・連携させる仕組みを解説しています。",
+    "summaryBody": "2026年6月にGA（一般提供）された「SQL MCP Server」の概要と、実践的な活用方法を紹介する記事です。本ツールはData API Builder (DAB) の一機能として提供され、SQL Server、PostgreSQL、MySQL、Azure Cosmos DBなどのデータベースをAIエージェントから操作可能にします。\n\n主な特徴として、標準で7つのDMLツール（CRUDや集計、ストアド実行など）が公開されますが、構成ファイル（`dab-config.json`）の設定により、特定の操作（更新や削除など）をエージェントに見せないよう制御できる安全性を備えています。\n\n特に著者が推奨しているのは、ストアドプロシージャを「カスタムツール」として公開する方法です。これにより、複数テーブルにまたがるトランザクションなどの複雑な処理を、AIにクエリを生成させることなく、カプセル化された確実な手法で実行させることが可能になります。Azure Container Appsでの運用やローカルでのDAB CLIによるテストについても言及されています。",
+    "topics": [
+      "SQL MCP Server",
+      "Model Context Protocol",
+      "Data API Builder",
+      "AIエージェント",
+      "Azure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

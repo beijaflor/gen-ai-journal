@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:09:43.270084+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Fable 5でFab 4楽曲ジェネレーターを作ってみた。ビートルズっぽい楽曲はAI学習を使わないアルゴリズムでもできる？（CloseBox）",
+    "url": "https://www.techno-edge.net/article/2026/07/13/5285.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Fable 5を用いて、ビートルズ各メンバーの音楽的特徴をアルゴリズムとして定義し、学習データに頼らずに「らしさ」を再現する楽曲ジェネレーターの開発過程を紹介する記事。",
+    "summaryBody": "著者は、Claude Fable 5を活用してビートルズ（Fab 4）風の楽曲を生成するツールを制作しました。この試みの特徴は、膨大なデータによるAI学習（Suno等）ではなく、ポールの「同音連打とコード変化」「モーダル・インターチェンジ」、ジョンの「同音反復と半音の揺れ」といった具体的な音楽理論的特徴をアルゴリズムとして実装している点です。開発されたアプリは、ピアノ、ギター、ベースの伴奏パターンを生成し、WAVやMIDIでの書き出しに対応。生成した素材をSunoのCover機能やDAWに取り込むことで、ユーザーがコード進行やメロディを制御しながら、特定のアーティストらしい楽曲を構築できる手法を提示しています。記事後半では、松任谷由実（ユーミン）風のメロディ跳躍アルゴリズムの実装についても触れられており、LLMを用いた「音楽スタイルのルール化」の可能性を示唆しています。",
+    "topics": [
+      "Claude Fable 5",
+      "AI楽曲生成",
+      "音楽理論",
+      "ビートルズ",
+      "Suno AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

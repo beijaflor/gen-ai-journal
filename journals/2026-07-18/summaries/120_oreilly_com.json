@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:23:33.643632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI支援開発におけるフロントエンド検証のギャップ",
+    "url": "https://www.oreilly.com/radar/the-frontend-verification-gap-in-ai-assisted-development/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるUI生成が高速化する一方で、アクセシビリティやエッジケースといった「実際に正しく動作するか」の検証が疎かになる課題と、その対策としての設計システムや自動テストの重要性を説く記事。",
+    "summaryBody": "AIによるフロントエンド開発は、コード生成を劇的に高速化させたが、その結果「見た目は完成しているが、実際には品質基準を満たさない」という「検証のギャップ」が生まれている。AIはアクセシビリティ、キーボード操作、エラーハンドリング、複雑な状態変化といったユーザー体験に直結する細部の実装を見落としがちであり、また生成されたコードの「洗練された見た目」が、レビュー時の油断を招くリスクもある。著者はこの課題に対し、1. プロンプトに永続的なエンジニアリング基準（CLAUDE.md等）を組み込むこと、2. 独自実装ではなく検証済みのデザインシステムを基盤に生成させること、3. 内部構造ではなく「ユーザーの行動（Playwright等）」に基づくエンドツーエンドのテストを重視することの3点を提唱している。AI時代におけるフロントエンドエンジニアの価値は、単なるコーディングから、堅牢な検証ループの構築とコンポーネント設計へとシフトしている。",
+    "topics": [
+      "Frontend Development",
+      "AI-Assisted Development",
+      "Software Verification",
+      "Accessibility",
+      "Design Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Frontend Verification Gap in AI-Assisted Development"
+  }
+}

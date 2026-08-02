@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:29:58.768967+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AIは動画をちゃんと見ない」問題を解決する「claude-real-video」、WebサイトにAI組み込める軽量ライブラリ「ternlight」など生成AI技術5つを解説（生成AIウィークリー）",
+    "url": "https://www.techno-edge.net/article/2026/07/17/5304.html",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "テンセントの巨大MoEモデル「Hy3」や、ブラウザ完結型の軽量AI検索「ternlight」、動画の重要シーンを抽出する「claude-real-video」など、実用性に焦点を当てた最新AI技術5選を紹介。",
+    "summaryBody": "本記事は、テクノエッジの連載「生成AIウィークリー」第152回として、注目すべき5つの最新技術を紹介しています。\n\n1. **ternlight**: 5〜7MBという極小サイズで、外部API不要・CPUのみで動作するWebAssemblyベースのAI検索ライブラリ。プライバシーを保ちつつブラウザ上で高速な推論が可能です。\n2. **Hy3**: テンセントが公開した2950億パラメータのMoEモデル。プログラミングやシステム開発に強く、ハルシネーション（情報の捏造）を大幅に抑制しています。\n3. **claude-real-video (crv)**: AIが動画を「正しく見る」ためのツール。フレームの重複を省いて意味のある変化点のみを抽出し、LLMに最適なデータとして渡すことで分析精度を向上させます。\n4. **LingBot-World 2.0**: 1時間を超える操作でも映像が崩れない、高精度かつリアルタイムなインタラクティブ・ワールドモデル。ゲームのような自律的な世界展開が可能です。\n5. **colibrì**: 7440億パラメータもの超巨大LLMを、わずか25GBのメモリを積んだ家庭用PCで動作させるための効率化ツール。\n\n各技術は、単なるモデルの大型化ではなく、動作の軽量化、特定タスクの最適化、あるいは長時間の一貫性保持といった、AIの実用性を一段階引き上げるアプローチが共通しています。",
+    "topics": [
+      "生成AI",
+      "LLM",
+      "動画解析",
+      "エッジコンピューティング",
+      "ワールドモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

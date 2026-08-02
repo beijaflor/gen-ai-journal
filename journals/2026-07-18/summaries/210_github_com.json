@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:45:44.584340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "nanoGPT-Seis: 地震科学に特化した小型GPTモデルの学習ライフサイクル全工程の解説",
+    "url": "https://github.com/jiazhe868/nanogpt-seis",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "地震科学をテーマに、データ収集からモデル実装、学習、スケーリング則の検証まで、113MパラメータのGPTモデル構築プロセスを詳細に解説した教育用リポジトリ。",
+    "summaryBody": "本リポジトリは、地震科学（Seismology）を対象とした113Mパラメータの小型LLM「nanoGPT-Seis」の構築工程をゼロから網羅したガイドです。Karpathy氏のnanoGPTに触発されつつ、現代的なLlama系アーキテクチャ（GQA、RoPE、RMSNorm、SwiGLU）を採用し、4096トークンの長いコンテキストに対応しています。\n\n主な内容は以下の6段階に分かれています：\n1. **データ収集**: CrossrefやarXiv、Substack等から学術論文や専門テキストを自動収集するスレッドセーフなクローラーの実装。\n2. **前処理**: MinHashとLSHを用いた重複削除、PDFからのテキスト抽出とクリーニング。\n3. **トークナイザー**: ドメインに特化した16kボキャブラリのBPEトークナイザーの自作。\n4. **モデル実装**: FlashAttentionを含むアテンション機構や各種正規化レイヤーの解説。\n5. **学習**: 2基のNVIDIA A30を用いたDDP（分散データ並列）による効率的な学習と、VRAM消費の予測手法。\n6. **推論**: KVキャッシュやストリーミング出力、アンチリピート制御を備えた推論エンジン。\n\nさらに、muP（Maximal-Update Parametrization）を用いたスケーリング則の実験も含まれており、計算資源（IsoFLOP）に応じた最適なモデルサイズとデータ量の推定など、実務的なLLM開発の知見が凝縮されています。",
+    "topics": [
+      "LLM",
+      "地震科学",
+      "Transformer",
+      "PyTorch",
+      "スケーリング則"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "GitHub - jiazhe868/nanogpt-seis: Train a small GPT for earthquake science — the entire LLM lifecycle, from a blank folder to a talking model, explained block by block."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:12:41.398886+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdによるClaude Codeの探索コスト削減を実測",
+    "url": "https://qiita.com/eiji-noguchi/items/ad30cd311f083cd269d0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CLAUDE.mdにリポジトリ構成を記述することで、Claude CodeのAPI呼び出し回数とトークン消費量を約半分に削減できることが実証されました。",
+    "summaryBody": "### 概要\nClaude Codeにおいて、プロジェクトの構成やルールを記述する`CLAUDE.md`がトークン消費量やモデル呼び出し回数に与える影響を実測した検証記事です。FastAPI + Reactのテンプレートを使用し、ログイン機能の調査タスクを通じて比較を行っています。\n\n### 主な検証結果\n- **API呼び出し数**: 14回から6回へと約57%減少。\n- **合計トークン数**: 約67万から約36万へと約46%減少。\n- **分析**: `CLAUDE.md`がインデックスとして機能することで、サブエージェント（Explore AI）による手探りのファイル探索が省略され、直接的なファイル読み取りに移行したことが大きな要因です。\n\n### トークン節約のポイント\n1. **モデルとの往復回数の削減**: ツール実行のたびに巨大なコンテキストが再送されるため、ターン数を減らすことが最もコスト削減に効きます。\n2. **並列処理の活用**: 入口となるファイルを特定させることで、1ターンで複数のファイルを並列Readする効率的な挙動を誘発できます。\n3. **インデックスとしての記述**: 実装の詳細ではなく、ディレクトリの役割や機能の入口ファイルを簡潔に書くことが、AIの調査経路を最適化する鍵となります。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "Anthropic",
+      "トークン削減",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

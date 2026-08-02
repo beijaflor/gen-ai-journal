@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:13:19.726262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAI Engine無料枠でgpt-oss-120bを使う ― Anthropic SDKはauth_token=必須の罠",
+    "url": "https://qiita.com/nomurasan/items/63654a3f9457a8b5ed35",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "さくらのAI Engineの無料枠でgpt-oss-120bを利用する際の手順と、クレジットカード登録の仕様、Anthropic SDK利用時の認証およびレスポンス処理の注意点を解説した記事。",
+    "summaryBody": "さくらのAI Engine（月3,000回無料）で、OpenAIのオープンウェイトモデル「gpt-oss-120b」を利用する際の実践的な知見をまとめたガイドです。主なポイントは以下の3点に集約されます。1. **クレジットカード登録の誤解**: 本人確認のため登録は必須ですが、「基盤モデル無償プラン」を選択していれば、無料枠を超過しても自動課金されずレートリミットがかかるのみです。2. **Anthropic SDKの認証**: SDKで呼び出す際、一般的な `api_key=` ではなく `auth_token=` を明示的に指定しないと認証エラー（401）が発生します。3. **思考プロセスの処理**: gpt-oss-120bは思考ブロックを返すため、レスポンスの `content[0]` が `thinking` になることがあり、テキスト取得にはタイプ判定が必要です。記事内ではPythonによる具体的な実装コードも紹介されています。",
+    "topics": [
+      "さくらのAI Engine",
+      "gpt-oss-120b",
+      "Anthropic SDK",
+      "Python",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:06:39.917822+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントのためのAPI設計 — 人間中心設計からの脱却",
+    "url": "https://www.freestyle.sh/blog/opinion/designing-apis-for-agents",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントがAPIの主要な消費者となった現在、人間向けの「簡潔さ」よりも、明示的なパラメータ、厳密なエラー、そして具体的な命名といった「明確さ」を最優先すべきであるという設計論の転換。",
+    "summaryBody": "API設計のパラダイムが、人間によるプログラミングからAIエージェントによるコード生成へと移行しています。著者は、従来の「50行で動く」「複雑さを隠蔽する」人間中心の設計（StripeやTwilio等）は、エージェントにとっては不適切であると主張します。エージェント向けの優れたAPIは以下の4要素を備えるべきです。1) **デフォルト値の排除**: エージェントは全フィールドを埋める労力を厭わないため、挙動を明示させる。2) **厳密なエラー**: 曖昧な自動補完を避け、エラーを通じて正しいパスを学習させる。3) **具体的な命名**: `name`のような汎用的な語を避け、`displayName`や`externalId`など、ハルシネーションを防ぐ具体的な名前を付ける。4) **事実の提供**: ユーティリティSDKよりも、基盤となる事実（仮想マシンの起動など）を直接操作させる。Freestyle社自体のSDKも、抽象化レイヤーを廃止し、ドキュメントと生のエグゼキューションを組み合わせる手法へ転換した事例が紹介されています。",
+    "topics": [
+      "API Design",
+      "AI Agents",
+      "Developer Experience",
+      "LLM",
+      "SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Designing APIs for Agents - Freestyle Blog"
+  }
+}

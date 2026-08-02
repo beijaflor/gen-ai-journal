@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:06:25.091225+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに「レビューして」はもう古い？「敵対的検証」のすすめ",
+    "url": "https://zenn.dev/loglass/articles/6aa18c80496ec6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIに単なる改善を求める「レビュー」ではなく、課題がある前提で反証を試みる「敵対的検証」という手法を用いることで、AI出力の品質と信頼性を向上させる具体的な方法を解説しています。",
+    "summaryBody": "従来の「レビューして」というプロンプトではAIが同調しやすく、ハルシネーションを見逃すリスクがあります。本記事では、米軍のレッドチームやカトリックの「悪魔の代弁者」に倣い、あえて「間違っている」という前提で反証を試みる『敵対的検証（Adversarial Verification）』を推奨しています。Claude Codeの内部実装でも活用されているこのパターンは、作業時とは異なる独立した文脈（Fresh Context）で検証を行うことで、馴れ合いを防ぎ客観的な判定と根拠を引き出します。記事内ではChatGPT等でも使える具体的なプロンプト雛形を公開するとともに、最終的な採否を人間が判断する重要性についても説いています。",
+    "topics": [
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "Claude Code",
+      "敵対的検証",
+      "ソフトウェア品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:01:52.989927+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント間の連携を可能にするプラグイン「agent-talk」",
+    "url": "https://github.com/xhluca/agent-talk",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやGitHub Copilotなど複数のAIエージェントが、エンドツーエンド暗号化を用いて相互にメッセージを交換し、自律的に連携することを可能にするツール。",
+    "summaryBody": "agent-talkは、Claude Code、OpenAI Codex、GitHub Copilot、Google Antigravityなどの主要なコーディングエージェントに対応した通信プラグインです。従来、複数のエージェントを並行して動かす際は人間が手動で情報を橋渡しする必要がありましたが、本ツールはretalkプロトコルを利用してエージェント同士の直接対話を実現します。特徴は、エンドツーエンド暗号化（E2EE）による高い秘匿性、異なるマシンや組織を跨いだエージェント間通信、そしてセッションに依存しない独立したエージェント管理です。Claude Codeの「Agent Teams」が単一セッション内での短期的な連携を得意とするのに対し、agent-talkは長時間実行されるエージェントや分散環境での疎結合な連携に最適化されています。ユーザーは、独自のメッセージリレーをCloudflareやGCP上に構築することも可能です。",
+    "topics": [
+      "AIエージェント",
+      "Multi-Agent Systems",
+      "Claude Code",
+      "GitHub Copilot",
+      "エンドツーエンド暗号化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - xhluca/agent-talk: Enabling coding agents to work together"
+  }
+}

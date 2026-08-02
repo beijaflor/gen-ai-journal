@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:00:52.675889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi Code モデル構成ガイド：Kimi K3およびK2.7の仕様と切り替え方法",
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Kimi Codeが提供する最新のKimi K3（3兆パラメータ級）とK2.7 Codeモデルの技術仕様、モデルIDの設定、およびキャッシュ効率化のための運用方法を解説する公式ドキュメント。",
+    "summaryBody": "Kimi Codeで利用可能なAIモデルの詳細と設定ガイドです。\n\n### 利用可能なモデルと特徴\n- **Kimi K3 (ID: k3)**: 2.8兆パラメータ、最大100万トークンのコンテキスト窓を持つフラグシップモデル。3段階（low / high / max）の推論レベル設定が可能で、複雑なエンジニアリングタスクに適しています。\n- **Kimi K2.7 Code (ID: kimi-for-coding)**: 思考プロセス（Thinking）を有効化した安定版。256kコンテキストに対応。\n- **HighSpeed版 (ID: kimi-for-coding-highspeed)**: K2.7と同じ能力を維持しつつ、5〜6倍の高速出力を実現したモデル。\n\n### 最適な運用のポイント\n- **キャッシュ管理**: モデルや推論レベル（reasoning_effort）をセッション途中で変更すると、構築済みのコンテキストキャッシュが無効化され再充填が発生します。切り替え時は新しいセッションの開始が推奨されます。\n- **サードパーティ連携**: OpenAIおよびAnthropic互換のプロトコルをサポートしており、Claude CodeやOpenCode等の外部ツールに組み込むことが可能です。K3のフル性能を引き出すには、コンテキスト窓を手動で「1048576」に設定する必要があります。\n- **制限事項**: 利用プランによってK3へのアクセスやコンテキストサイズが制限されるため、401エラーが発生する場合はプランの確認が必要です。",
+    "topics": [
+      "Kimi Code",
+      "Kimi K3",
+      "LLM",
+      "AIコーディング",
+      "API構成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Model Configuration | Kimi Code Docs"
+  }
+}

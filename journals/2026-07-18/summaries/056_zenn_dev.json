@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:54:02.262655+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ScratchでLLM（TinyStories）を動かした",
+    "url": "https://zenn.dev/ohakon_fake/articles/d791446eb3c16a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Scratchの5MB制限を回避するために重みデータを画像として埋め込み、スプライトの接触判定を利用して高速に読み出すことで、300万パラメータのLLMを動作させるプロジェクトの解説。",
+    "summaryBody": "Scratch 3.0においてプロジェクトファイルの容量制限（5MB）を回避しつつ、300万パラメータの言語モデル「TinyStories-3M」を動作させる試みの記録です。主な手法として、モデルの重み（バイナリデータ）を画像（SVG/PNG）のピクセル情報として埋め込み、Scratchのアセット制限（1枚10MB）を逆手に取って大容量データをロードする手法を提案しています。データ読み出しの高速化のために、通常の色判定ではなくスプライト同士の接触判定（&lt;touching&gt;ブロック）を利用し、1,000,000 bit/sec程度の速度を実現。さらにQ4_0風の量子化を施すことで、ロード時間を48秒、出力速度を3.5秒/tokenまで短縮しています。記事内ではPythonによる重み変換スクリプト、JSONパーサーの実装、BPEトークナイザーのScratch上での再現など、詳細な技術スタックが公開されています。",
+    "topics": [
+      "Scratch",
+      "LLM",
+      "TinyStories",
+      "量子化",
+      "TurboWarp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:37:12.085083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのハーネスを育てるアプリを作ってみた 〜~/.claudeには宝が眠っている〜",
+    "url": "https://engineering.dena.com/blog/2026/07/claude-code-harness-app/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの使用履歴やメモリを解析してCLAUDE.mdやスキルを自動改善し、組織内で共有可能にするデスクトップアプリ「geniハーネスくん」の開発事例。",
+    "summaryBody": "Claude Codeの利用に伴い、ローカルの`~/.claude`ディレクトリに蓄積されるセッションログやメモリを、AIを制御するための「ハーネス」として再利用・育成するためのデスクトップアプリ「geniハーネスくん」が紹介されています。このアプリはElectronとClaude Agent SDKを用いて構築されており、利用状況の可視化に加え、AIが過去のやり取りから`CLAUDE.md`の改善案や新規スキルを自動生成し、ワンクリックで適用できる仕組みを提供します。さらに、個人が育てたルールやナレッジを組織のリポジトリで共有・レコメンドする機能を備えており、属人化しがちなAI活用ノウハウを組織全体の資産へと変える「育成ループ」の構築を目指しています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent SDK",
+      "ナレッジマネジメント",
+      "Electron",
+      "DeNA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

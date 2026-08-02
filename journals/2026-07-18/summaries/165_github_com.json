@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T15:06:08.787781+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "libargus.cc: Java 22+向けゼロアロケーション・マルチモーダル推論ランタイム",
+    "url": "https://github.com/projectargus-cc/libargus.cc",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Java 22以降のProject Panama FFM APIを活用し、LLM、音声、画像、動画の推論をゼロコピーかつGC負荷なしで実現するネイティブ推論ライブラリ。",
+    "summaryBody": "libargus.ccは、Java 22以上のProject Panama (FFM API) を基盤とした、高性能なAI推論ランタイムです。llama.cppやwhisper.cppといった強力なC++エンジンを単一のネイティブ境界に統合し、テキスト生成、音声認識(ASR)、マルチモーダル（画像・動画・音声）の処理をJavaから直接、ゼロコピーで行うことができます。主な特徴として、JVMのヒープを介さない「ゼロアロケーション」によるGCオーバーヘッドの排除、VRAM断片化を防ぐ統合バックエンド管理、および動画のフレーム単位ストリーミング処理が挙げられます。開発手法として「人間による設計とAIによるボイラープレート生成」のハイブリッドを採用しており、高いパフォーマンスと開発速度を両立しています。",
+    "topics": [
+      "Java",
+      "Project Panama",
+      "AI Inference",
+      "Multimodal",
+      "GGML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - ProjectArgus-cc/libargus.cc: A unified, unmanaged multimodal runtime. Zero-allocation native AI inference for Java 22+. · GitHub"
+  }
+}

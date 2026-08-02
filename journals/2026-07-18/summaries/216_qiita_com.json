@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T14:23:45.140727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "もうClaudeのモデル選びで迷わない — Anthropicが教える独自Eval（評価テスト）と「期待通りに完了したタスク1件あたりのコスト」の測り方",
+    "url": "https://qiita.com/nogataka/items/6cd8c6ea583221e45def",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが提唱する、公開ベンチマークに頼らず独自Evalを用いて「成功1件あたりのコスト」でLLMモデルを選定・最適化する実践的な手法の解説。",
+    "summaryBody": "AnthropicのApplied AIチームによるセッション内容に基づき、LLM（特にClaude）のモデル選定における「真の指標」を解説した記事です。主な主張は、公開ベンチマークではなく自社の実タスクを代表する「独自Eval」を構築し、評価軸を「トークン単価」から「期待通りに完了したタスク1件あたりのコスト」へ転換すべきであるという点です。\n\n記事では、モデルの『Thinking（思考）』や『Effort（労力）』といったパラメータを調整することで、コストと精度のトレードオフを動かせることを示しています。また、プロンプトキャッシングの活用や、コンテキストエンジニアリング（不要な情報の削減や整形）が、コスト削減だけでなく精度向上にも直結することを実例で紹介しています。特に、高性能モデルの方が少ないターン数でタスクを完了するため、結果的に小規模モデルよりも「End-to-End」で高速かつ安価になるケースがあるという指摘は、実務上のモデル選定において非常に重要な示唆を与えています。",
+    "topics": [
+      "LLM",
+      "Claude",
+      "Anthropic",
+      "Eval",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

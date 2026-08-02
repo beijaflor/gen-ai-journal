@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-07-21T16:12:23.478404+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測",
+    "url": "https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI特有の不自然さは語彙ではなく文の長短のリズム（バースト性）に現れることを実証し、それを検知・修正するツール「natural-japanese」とその分析結果を解説した記事。",
+    "summaryBody": "最新のLLMは「翻訳調」や「特定の定型句」といった表層的なAI臭さを克服しつつありますが、依然として「文の長さが均質すぎる」というリズム面での特徴（低バースト性）が残っています。筆者は、人間とAIの文章コーパスを比較分析し、文長の分散や段落構造を機械的に診断するLintツール「natural-japanese」を開発しました。本記事では、GPT-5.6を含む7つの最新モデルを実測し、高性能なモデルほど語彙は自然でもリズムが単調で「AI臭い」と判定される傾向を明らかにしています。\n\nまた、従来の「AI臭さの常識」を覆す発見として、(1) 体言止めはAIの方が少なく人間の方が多い、(2) 文頭の反復は人間の方が好んで使う、(3) 「最後に」「まさに」といった語彙はむしろ人間の方が多用している、といった実測データを提示しています。モデル選びだけでは解決できない「リズムの均質さ」を、検知・修正・再検知のループ（Agent Skill）によって解消するアプローチを提案しており、Claude Code等で利用可能なプラグインも公開されています。",
+    "topics": [
+      "LLM",
+      "生成AI",
+      "プロンプトエンジニアリング",
+      "日本語処理",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}
