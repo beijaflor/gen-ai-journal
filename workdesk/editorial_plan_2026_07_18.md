@@ -187,3 +187,237 @@ After approval:
 - [ ] Use this plan as blueprint for article selection
 - [ ] Organize curated_journal_sources.md by themes
 - [ ] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+## ASSEMBLY STRATEGIES
+
+*Pattern selection grounded in actual article content; no manufactured narrative connectors. 6 of 7 themes are parallel collections on a shared topic (Multi-Perspective); only T1 genuinely builds sequentially (Progressive-Sequence).*
+
+### Theme 1: ループ/ハーネスエンジニアリングの実践
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 記事が原則→枠組み→実装→事例へと段階的に積み上がり、後の記事が前提知識を前提にしている。
+
+**Article Order & Roles:**
+1. [101] アウター・ループを所有せよ (Addy Osmani) — Foundation（責任範囲の原則）
+2. [219] ハーネス vs ループの整理 (AWS aidlc) — Development（概念の体系化）
+3. [081] Claude Codeスキル設計で効く4つのポイント — Practice（実装の勘所）
+4. [225] 公開スキルラッシュから学ぶ良い書き方 — Payoff（事例による一般化）
+
+**Narrative Arc:** 「誰が何に責任を持つか」という原則から、環境整備と自律実行という枠組みの整理、スキル設計の実務、そして公開事例からの一般化へと、抽象論を具体的な設計手法へ落とし込む。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [101] → [219] | 責任分担を作業設計に落とすと「ハーネス(環境整備)」と「ループ(自律実行)」の2軸で整理できる |
+| [219] → [081] | 枠組みを踏まえ、では実際にスキルをどう設計するか |
+| [081] → [225] | 著名エンジニアの公開スキルに、これらの設計原則が具体的な形で確認できる |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- ループ/ハーネスの議論が抽象論から具体的な設計手法・公開事例へと移行した週
+- 「AIに仕事を任せる」設計思想が、責任論と実装ノウハウの両輪で語られている
+
+**Conclusion Approach:** 原則(101)に立ち返り、実践知(225)が原則を裏づける形で締める。
+
+**Assembly Prompts for STEP_08:** ①エンジニアの責任範囲はどう再定義されたか ②ハーネスとループはどう使い分けるか ③良いスキルの共通条件は何か ④この領域は次にどこへ向かうか
+
+---
+
+### Theme 2: フロンティアモデルとオープンウェイトの勢力図
+
+**Pattern:** Multi-Perspective（実装ショーケース + 比較ペイオフ）
+**Pattern Rationale:** Kimi K3・GPT-5.6・Inklingは同時期の並列リリースで優劣の階層はなく、最後のCVEベンチマークが比較の総合視点を与える。
+
+**Article Order & Roles:**
+1. [090] Kimi K3 ⭐ — オープン3T級フロンティア
+2. [091] GPT-5.6 モデルガイダンス ⭐ — プロプライエタリ・フロンティア
+3. [082] Inkling (Thinking Machines) — オープンウェイト推論MoE
+4. [106] 13モデルCVE検出ベンチ — 比較・総合
+
+**Narrative Arc:** オープンとプロプライエタリの新モデルを並列に見せ、最後に実タスク(CVE検出)のベンチマークで性能差の縮小を示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [090] → [091] | オープン陣営がフロンティアに迫る一方、プロプライエタリ側の最新はGPT-5.6 |
+| [091] → [082] | オープンウェイト路線ではThinking Machines LabのInklingも加わる |
+| [082] → [106] | これらは実タスクでどう差が出るか。CVE検出ベンチマークが一つの指標を示す |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 性能・価格・オープン性の三軸で競争が可視化
+- GPT-5.6とKimi K3がベンチ首位で並ぶ = オープンとプロプライエタリの性能差の縮小
+
+**Conclusion Approach:** ベンチ結果(106)を起点に、オープンウェイト攻勢が性能面でも現実的になった点で締める。
+
+**Assembly Prompts for STEP_08:** ①各モデルの位置づけは ②オープンとプロプライエタリの差はどこまで縮んだか ③選定基準は何か ④開発者にとっての意味は
+
+---
+
+### Theme 3: AIエージェントのセキュリティ
+
+**Pattern:** Multi-Perspective（スコープ: 個別事例→系統調査）
+**Pattern Rationale:** 4本は独立した脆弱性の発見で、具体的な単一事例から1万超サーバーの系統調査まで、狭→広のスコープで並べられる。
+
+**Article Order & Roles:**
+1. [032] Grok Build CLIの無断データ送信 — 具体的な単一インシデント
+2. [069] Memory Heist（間接プロンプトインジェクション） — 攻撃手法
+3. [049] IDEエージェントのワークフロー脱獄 — 研究による実証
+4. [209] MCPセキュリティ白書（11,000サーバー） — 系統的な実態調査
+
+**Narrative Arc:** 一つのツールの挙動から、機能を悪用する攻撃手法、ワークフロー全体の脱獄、そしてエコシステム全体の脆弱性調査へと、視野を広げる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [032] → [069] | 単一ツールの挙動だけでなく、エージェントの機能そのものが攻撃経路になる |
+| [069] → [049] | 攻撃は単発でなくワークフロー全体にも及ぶ |
+| [049] → [209] | 個別の脆弱性を超え、エコシステム全体の実態を調査すると |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 実装・運用レイヤーの穴が具体例から系統調査まで揃った
+- 共通結論：エージェントの実行権限が増すほど攻撃面が現実的な脅威になる
+
+**Conclusion Approach:** 白書(209)の統計で「人気サーバーほど危険」という系統的リスクを示して締める。
+
+**Assembly Prompts for STEP_08:** ①どんな攻撃経路が具体化したか ②なぜ実行権限が問題か ③運用側の対策は ④エコシステム全体のリスクは
+
+---
+
+### Theme 4: 開発者の役割変容
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 「実装をAIが担う時代に人間の専門性はどこへ移るか」という同一の問いに、アーキテクト・生産性データ・キャリアという対等な3視点が答える。
+
+**Article Order & Roles:**
+1. [100] antirez「コードでなくアイデアを支配せよ」 — 設計者の視点
+2. [117] コーディングはボトルネックでない — 生産性データの視点
+3. [102] ジュニア開発者の生存戦略 — キャリアの視点
+
+**Narrative Arc:** 熟練者の設計論、調査データが示す後工程ボトルネック、そして若手が磨くべきセンスと判断力、という3つの角度で役割変容を描く。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [100] → [117] | アイデアの統御が重要というantirezの主張は、生産性調査からも裏づけられる |
+| [117] → [102] | ボトルネックが後工程に移るなら、若手はどこで価値を出すか |
+
+**Emphasis Balance:** Technical ⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 実装の価値低下に伴い、専門性はレビュー・検証・判断・センスへ移る
+- 熟練者と若手で必要な適応が異なる
+
+**Conclusion Approach:** 若手の課題(102)を、人間に残る判断力という共通軸に接続して締める。
+
+**Assembly Prompts for STEP_08:** ①人間の役割はどこへ移るか ②データは何を示すか ③若手はどう適応するか ④開発者に残る専門性とは
+
+---
+
+### Theme 5: 人間中心への揺り戻し
+
+**Pattern:** Multi-Perspective（スペクトラム: 急進→職人技）
+**Pattern Rationale:** AI推進への対抗軸を、急進的抵抗から製品論・構想・職人技まで、対等な視点のスペクトラムとして提示する。
+
+**Article Order & Roles:**
+1. [036] 反AI強硬派活動家のルポ — 急進的抵抗
+2. [107] 人々はもっとAIを求めていない — 製品/UXの視点
+3. [135] Thinking Machinesの人間中心ビジョン — 構想の視点
+4. [170] デザイン工程でAIを使わない理由 — 職人技の視点
+
+**Narrative Arc:** 過激な抵抗運動から、静かな「求めていない」という声、人間中心AIの構想、そしてAIを排する職人技まで、人間中心の姿勢の幅を示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [036] → [107] | 過激な抵抗の対極に、静かな「AIを求めていない」という声もある |
+| [107] → [135] | では人間中心のAIはどう構想されるか |
+| [135] → [170] | その哲学を制作現場で徹底する例が |
+
+**Emphasis Balance:** Technical ⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 抵抗〜製品〜構想〜職人技という幅広い層で人間中心の視点が並ぶ
+- AI推進一辺倒への対抗軸が多様な形で表出している
+
+**Conclusion Approach:** 職人技(170)の哲学を、技術の使い方は選べるという前向きな余韻で締める。
+
+**Assembly Prompts for STEP_08:** ①抵抗はどんな形をとるか ②ユーザーの本音は ③人間中心AIとは何か ④作り手は何を守るか
+
+---
+
+### Theme 6: AI経済の実像
+
+**Pattern:** Multi-Perspective（スコープ: マクロ→生活圏→企業収益）
+**Pattern Rationale:** 「熱狂の裏の数字」という同一テーマに、資金循環・住宅価格・広告収益という異なる層のデータが対等に並ぶ。
+
+**Article Order & Roles:**
+1. [200] NVIDIA循環ファイナンス — マクロ・インフラ投資
+2. [201] AI長者とSF住宅高騰 — 生活圏・社会
+3. [146] OpenAI広告収益90%未達 — 企業収益
+
+**Narrative Arc:** GPUインフラの不透明な資金循環、その余波としての住宅価格、そして収益予測の実態と、マクロから企業単位までの各層で数字を検証する。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [200] → [201] | マクロの資金循環の余波は生活圏にも及ぶ |
+| [201] → [146] | 一方、個別企業の収益実態に目を向けると |
+
+**Emphasis Balance:** Technical ⭐ / Business ⭐⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- インフラ投資・生活圏・収益予測の各層で、熱狂と数字の乖離が示される
+- 単一の煽りでなく、複数の独立したデータが同じ方向を指す
+
+**Conclusion Approach:** 広告収益の予測未達(146)を、期待と現実の乖離の象徴として締める。
+
+**Assembly Prompts for STEP_08:** ①資金はどう循環しているか ②生活圏への影響は ③収益の実態は ④この乖離は何を意味するか
+
+---
+
+### Theme 7: 日本企業/行政のAI組織実装
+
+**Pattern:** Multi-Perspective（並列ケーススタディ）
+**Pattern Rationale:** 民間・行政・規制業種という異なる組織の実装事例が、「個人効率化から組織実装へ」という同一テーマの対等な事例として並ぶ。
+
+**Article Order & Roles:**
+1. [228] 食べログ「Deal Provider」 — 民間・プロダクト設計
+2. [195] デジタル庁「源内」国産LLM実証 — 行政
+3. [218] 金融機関の全社AI導入 — 規制業種・ガバナンス
+
+**Narrative Arc:** AIでDDD実装を克服した民間事例、国産クラウド・LLMを用いる行政実証、漏洩リスクを分解して全社導入した金融、という3つの組織レベルの実装を並べる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [228] → [195] | 民間の実装と並行して、行政でも国産基盤での実証が始まった |
+| [195] → [218] | セキュリティ基準の厳しい金融でも全社導入が進む |
+
+**Emphasis Balance:** Technical ⭐⭐ / Business ⭐⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 個人の効率化から組織・行政レベルの実装へと段階が上がった
+- 民間・行政・規制業種それぞれで導入の「現実」が語られている
+
+**Conclusion Approach:** 金融の「導入しないリスクの可視化」(218)を、組織実装の共通論点として締める。
+
+**Assembly Prompts for STEP_08:** ①各組織はどう実装したか ②行政と民間の違いは ③規制業種の壁はどう越えたか ④組織実装の共通条件は
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Approval Date:** 2026-07-18
+**Approver:** beijaflor (via AskUserQuestion approval gate; popup closed without inline edits)
