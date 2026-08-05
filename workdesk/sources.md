@@ -42,7 +42,6 @@
 - [x] 208. https://blog.shin1x1.com/entry/dont-let-go-of-understanding
 - [x] 207. https://github.com/marcelroed/gigatoken
 - [x] 206. https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf
-- [x] 205. https://zenn.dev/fixstars/articles/kame-benchmark
 - [x] 204. https://zenn.dev/team_soda/articles/cc5fead918f71c
 - [x] 203. https://zenn.dev/mhackit/articles/neural-network-to-llm
 - [x] 202. https://zenn.dev/tak3/articles/2686517823d1e7
