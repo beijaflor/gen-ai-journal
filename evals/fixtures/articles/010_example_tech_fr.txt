@@ -1,0 +1,21 @@
+Programmation en binôme avec une IA : retour d'expérience après six mois
+
+Depuis six mois, notre équipe de douze développeurs utilise quotidiennement des
+assistants de codage basés sur des modèles de langage. Voici un bilan honnête,
+loin des promesses marketing.
+
+Les gains sont réels mais inégaux. Sur les tâches de migration et les tests
+unitaires, nous mesurons un gain de temps d'environ trente pour cent. En revanche,
+sur la conception d'architecture, l'assistant propose souvent des solutions
+génériques qui ignorent nos contraintes métier. Deux incidents de production
+ont été causés par du code généré accepté sans relecture approfondie.
+
+Notre règle d'or désormais : l'IA rédige, l'humain décide. Chaque suggestion
+passe par une revue de code classique, et les prompts efficaces sont partagés
+dans un dépôt interne versionné. Nous avons également constaté que les juniors
+progressent moins vite lorsqu'ils délèguent trop tôt les exercices fondamentaux
+à l'assistant — un point de vigilance pour les managers.
+
+Prochaine étape : évaluer systématiquement la qualité des réponses de nos
+prompts internes avant chaque montée de version du modèle, plutôt que de
+découvrir les régressions en production.

@@ -1,0 +1,16 @@
+You are grading a Japanese summary (JSON) of a source article on ONE criterion only: EDITORIAL QUALITY of the Japanese text.
+
+Criterion: `content.title`, `content.oneSentenceSummary`, and `content.summaryBody` must read as natural, professional Japanese written by a senior engineer-editor — concise, concrete, no hype amplification, no filler. Captures "why it matters", not just "what happened".
+
+Pass boundary:
+- PASS (score 1.0): natural Japanese, concrete and information-dense, neutral tone; a Japanese engineer would not guess it was machine-written.
+- PASS (score 0.7): understandable and accurate but with mild translation-ese (訳語臭), redundant phrasing, or one hype-y superlative.
+- FAIL (score ≤ 0.3): stiff word-for-word translation-ese, marketing hype amplified beyond the source, vague filler sentences ("〜が注目されています" with no substance), or broken Japanese.
+
+Examples:
+- "本稿では、開発者がAIを活用することの重要性について述べられています。" as the whole substance → FAIL (filler, no information).
+- "レビューなしでマージしたエージェント生成コードが決済バグを起こした事例を踏まえ、人によるレビューを必須化した" → PASS (concrete, natural).
+
+Grade ONLY the Japanese writing quality and information density. Do not re-grade factual accuracy (a separate rubric covers that).
+
+State your verdict with a brief rationale quoting the specific phrase(s) that determined it.
