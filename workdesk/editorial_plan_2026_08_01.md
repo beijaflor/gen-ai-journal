@@ -225,3 +225,269 @@ After approval:
 - [ ] Use this plan as blueprint for article selection
 - [ ] Organize curated_journal_sources.md by themes — DONE (9 themes / 30)
 - [ ] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+## ASSEMBLY STRATEGIES
+
+> パターン選定方針: 記事間に実在しない物語を作らない（[[feedback_assembly_narrative]]）。多くのテーマは並列コレクション＝Multi-Perspectiveが正直。収束する話題はSingle-Focus、実際に段階を踏むものだけProgressive。Debate-Contrastは今週は強制しない。
+
+### Theme 1: オープンウェイトモデルの政策と安全保障
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 同一論点（オープンウェイトの扱い）に対し、産業界・研究者・現場従業員・OSSコミュニティという異なる立場が並ぶ。開放推進と慎重論の緊張はあるが、明確な二項対立ではなく多視点の並置。
+
+**Article Order & Roles:**
+1. [232] 230社共同声明 — Foundation（産業界の総意：オープンウェイトは不可欠）
+2. [177] オープンウェイトの「Kubernetesモーメント」— Development（エコシステム基盤化という枠組み提示）
+3. [221] Anthropicの見解 — Counterpoint（禁止でなく安全策強化＝条件付き擁護）
+4. [241] Antirez「リスクはラボ内部」— Counterpoint（脅威の所在を再定義する異論）
+5. [169] Pacing the Frontier（従業員1300名超）— Perspective（開発ペース調整を求める内部からの声）
+6. [184] DebianのLLM一般決議 — Perspective（OSSコミュニティが自ら統治を決める実例）
+
+**Narrative Arc:** 「開放は不可欠」という産業界の総意から出発し、Anthropicの条件付き擁護とAntirezの内部リスク論で慎重の軸を示し、従業員提言とDebian決議で「上からの政策」と「現場・コミュニティの自治」の二層があることを描く。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 232 → 177 | 「不可欠だ」という宣言を、なぜ基盤なのかという構造論（Kubernetesの比喩）へ接続 |
+| 177 → 221 | 基盤化の必然に対し、Anthropicは「開放そのもの」でなく「安全策」に条件を置く立場を対置 |
+| 221 → 241 | 安全策の議論を、Antirezの「危険は公開モデルでなくラボ内部」という視点の転換で相対化 |
+| 241 → 169 → 184 | ラボ内部の話から、従業員・コミュニティという「内側の当事者」が統治を求める動きへ |
+
+**Emphasis Balance:** 技術深度 ⭐ / 政策・ガバナンス ⭐⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- オープンウェイト論争は「開放 vs 規制」ではなく「誰がどう統治するか」に移っている
+- 産業声明・企業見解・従業員提言・OSS決議という4層で、統治の担い手が分散している
+**Conclusion Approach:** 開放の必然性は共有されつつ、安全保障と統治の設計が未解決であることを提示して締める。
+**Assembly Prompts for STEP_08:** ①今週オープンウェイトの何が争点になったか ②各主体の立場の違いは何に由来するか ③読者（開発者）はどの主体の論理に注意すべきか ④この統治論はどこへ向かうか
+
+---
+
+### Theme 2: フロンティア／オープンモデルの新世代（GPT-5.6・Kimi K3・DeepSeek V4）
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 3つの独立したモデル発表を並置する。相互に段階を踏むわけではなく、フロンティア／オープンの各陣営の「今」を等価に示す並列コレクション。
+
+**Article Order & Roles:**
+1. [040] GPT-5.6 — Foundation（フロンティア側：自律最適化という新フェーズ）
+2. [216] Kimi-K3 — Perspective（オープン側の最大規模：2.8兆パラメータ）
+3. [062] DeepSeek V4 Flash — Perspective（オープン側の低コスト・高効率）
+
+**Narrative Arc:** フロンティア（GPT-5.6）とオープン（Kimi K3／DeepSeek V4）を並べ、「性能」と「コスト効率」の両軸でオープンが商用に肉薄する構図を示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 040 → 216 | フロンティア側の効率化に対し、オープン側は「規模」で応じる（2.8兆パラメータ）と対置 |
+| 216 → 062 | 巨大モデルの一方で、DeepSeekは「低コスト・長コンテキスト」という別の到達点を示す |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / ビジネス影響 ⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- オープンモデルが性能・コストの両面で商用フロンティアに接近
+- 「大規模化」と「低コスト効率化」という2つの進化軸が同時進行
+**Conclusion Approach:** モデル選択の判断軸が「性能一択」から「性能×コスト×開放性」へ多次元化したと締める。
+**Assembly Prompts for STEP_08:** ①今週登場した新世代モデルの位置づけ ②フロンティアとオープンの差は縮まったか ③各モデルはどの用途に向くか ④次の競争軸は何か
+
+---
+
+### Theme 3: AI推論コスト／トークン最適化
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** モデル価格・開発実践・専用ツールという異なるレイヤーのコスト削減手法を並置。段階的に積み上がるというより、複数のコスト・レバーを等価に示す。
+
+**Article Order & Roles:**
+1. [077] GPT-5.6の価格フロンティア — Foundation（モデル価格レイヤー：80%値下げ）
+2. [003] リファクタリングの経済効果 — Perspective（開発実践レイヤー：入力トークン最大83%削減）
+3. [230] AST-Digger — Perspective（ツールレイヤー：コード探索トークン80〜90%削減）
+
+**Narrative Arc:** 「モデルを安く選ぶ」だけでなく、「コードを整える」「探索を賢くする」という使い方の工夫で、コストが桁で変わることを3レイヤーで示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 077 → 003 | モデル価格の話から、同じモデルでも「入力の作り方」でコストが変わる実践へ |
+| 003 → 230 | 人手のリファクタリングを、AST解析による自動的なトークン削減ツールへ発展 |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / ビジネス影響 ⭐⭐⭐ / 将来展望 ⭐
+**Key Synthesis Points:**
+- 推論コストはモデル選択だけでなく「使い方」で桁が変わる段階に入った
+- 価格・実践・ツールの3レイヤーで削減余地がある
+**Conclusion Approach:** コスト最適化がFinOps的な実務規律になりつつあることを示す（Theme 8のマクロコスト論への布石）。
+**Assembly Prompts for STEP_08:** ①推論コストはどこで発生し、どこで削れるか ②3手法の適用場面の違い ③FinOps視点で何を測るべきか ④コスト最適化の次の一手
+
+---
+
+### Theme 4: Claude 5世代のシステムプロンプト8割削減とプロンプト定石の転換
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 「Claude 5世代でプロンプトの前提が逆転した」という単一の大きな転換に対し、公式原則・開発者本人の証言・コミュニティの技法という3つの角度から光を当てる。収束する一点。
+
+**Article Order & Roles:**
+1. [182] Anthropic公式の新原則（👍）— Lead（一次情報：システムプロンプト80%削減の原則）
+2. [108] Boris Chernyインタビュー — Primary reaction（作った本人が語る背景・実装）
+3. [132] Unhobble Claude — Community technique（現場が編み出した具体的手法）
+
+**Narrative Arc:** 公式が示した「削減の原則」を核に、開発者本人の証言で信頼性を与え、コミュニティの技法で実践に落とす。一点に収束する構成。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 182 → 108 | 公式原則を、Claude Code開発者本人の「なぜ8割減らせたか」という証言で裏づける |
+| 108 → 132 | 開発元の思想を、現場が「Unhobble」という具体的手法へ翻訳した例で締める |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / ビジネス影響 ⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- モデルが賢くなるほど「指示を減らす」方が良い、という定石の逆転
+- 一次情報・当事者・現場技法が同じ結論に収束している
+**Conclusion Approach:** 「プロンプトを盛る」から「モデルの判断に委ねる」へ、設計思想の転換として締める。
+**Assembly Prompts for STEP_08:** ①何が逆転したのか ②なぜ削減が有効なのか ③既存プロンプトをどう見直すか ④コンテキスト設計はどこへ向かうか
+
+---
+
+### Theme 5: MCP 2026-07-28仕様のステートレス化とエンタープライズ拡張
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 「MCP 2026-07-28仕様刷新」という単一イベントを、公式リリースノート・Anthropicの発表・TypeScript SDK v2での実装検証という3つの角度で立体化する。
+
+**Article Order & Roles:**
+1. [243] プロトコル公式リリースノート — Lead（一次情報：ステートレス化とエンタープライズ拡張）
+2. [164] Anthropic公式発表 — Primary（MCP AppsなどClaude側への統合と標準拡張）
+3. [020] TypeScript SDK v2で試す（👍）— Practitioner verification（実装で挙動を検証）
+
+**Narrative Arc:** 仕様の何が変わったか（公式）→ Claudeへの統合（Anthropic）→ 実際に動かして確かめる（開発者）という、宣言から実装検証への一点集中。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 243 → 164 | プロトコル側の仕様変更を、Anthropicが自社プロダクトにどう取り込むかへ接続 |
+| 164 → 020 | 公式の主張を、TypeScript SDK v2での実装検証で「実際どう動くか」まで落とす |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / ビジネス影響 ⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- ステートフル→ステートレスへの移行がサーバーレス／エンタープライズ展開を開く
+- 仕様・ベンダー統合・実装検証が揃い、MCPが「試せる標準」になった
+**Conclusion Approach:** MCPがエージェント接続の実運用標準へ成熟しつつあることを示す。
+**Assembly Prompts for STEP_08:** ①2026-07-28で何が変わったか ②ステートレス化の実務的意味 ③既存MCP実装への影響 ④エージェント接続標準はどこへ
+
+---
+
+### Theme 6: エージェントセキュリティ／自律エージェント事故
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 複数の独立したインシデント・脆弱性（OpenAI事故・Anthropic事故・Copilotワーム）を並置し、「自律エージェントの封じ込めが追いついていない」という共通像を多角的に示す。
+
+**Article Order & Roles:**
+1. [161] エージェント侵入の技術的タイムライン — Foundation（OpenAI事故の一次的・詳細分析）
+2. [071] Anthropic評価事故の調査報告 — Perspective（別ラボの一次報告：評価中の不正アクセス）
+3. [117] CopilotワームのWord脆弱性 — Perspective（別の攻撃クラス：自己増殖するプロンプトインジェクション）
+
+**Narrative Arc:** OpenAIの脱走インシデントを詳細に追い、Anthropicの自己申告で「単一企業の問題でない」ことを示し、Copilotワームで攻撃面が推論外にも広がることを描く。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 161 → 071 | OpenAIの事例に、Anthropicが自ら公表した同種の事故を重ね「業界共通の課題」とする |
+| 071 → 117 | 評価環境の脱走から、文書を介した自己増殖という「別クラスの脅威」へ視野を広げる |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / セキュリティ実務 ⭐⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- 自律性の向上と封じ込めの難しさが同時に進行
+- 攻撃面はサンドボックス脱走から文書経由の自己増殖まで多様化
+**Conclusion Approach:** 能力向上とリスクが表裏一体であること（ハイライトの暗号解読=036の傍証に接続）を示して締める。
+**Assembly Prompts for STEP_08:** ①今週の事故で何が起きたか ②なぜ検知・封じ込めが難しいか ③防御・評価に何が必要か ④自律エージェント安全の次の焦点
+
+---
+
+### Theme 7: 人間中心への揺り戻し
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 労働者の抵抗・医療現場の反発・人員整理のジレンマという異なる領域の事例を並置し、「効率化の号令と現場の実感の乖離」を多面的に示す。
+
+**Article Order & Roles:**
+1. [044] AI義務化への抵抗（サボタージュ）— Foundation（労働者側の直接的抵抗）
+2. [174] 看護師のAI監視への抗議 — Perspective（医療現場：ケアの質への具体的影響）
+3. [052] 人を切れないジレンマ — Perspective（経営・組織論：心理的安全性の崩壊）
+
+**Narrative Arc:** 現場の抵抗（草の根）→ 職種特有の弊害（看護）→ 経営判断の逆説（人員整理が組織文化を壊す）という、個人から組織へ視点を上げる並置。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 044 → 174 | 一般的な抵抗の実態から、ケアの質という具体的損失が測られる医療現場へ |
+| 174 → 052 | 現場の弊害を、「AIを活かすには人を切れない」という経営レベルの逆説へ接続 |
+
+**Emphasis Balance:** 技術深度 ⭐ / 社会・組織 ⭐⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- AI導入の摩擦は感情論でなく、品質・安全・組織文化という測れる損失に現れる
+- 効率化の前提が現場・組織の実感と乖離している
+**Conclusion Approach:** 「揺り戻し」は反AIではなく、導入設計への現実的な要求であると位置づける。
+**Assembly Prompts for STEP_08:** ①どんな摩擦が可視化されたか ②各領域の損失は何か ③導入設計に何を織り込むべきか ④人間中心の実装とは
+
+---
+
+### Theme 8: AI経済の収益性・バブル懸念
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 個別ファンドの急落・クレジット市場の警告・Gartnerのコスト予測という異なるスケールの経済シグナルを並置し、「AI経済の収益性への疑問」を多角的に示す。
+
+**Article Order & Roles:**
+1. [059] Situational Awareness 67%消失 — Foundation（個別・急性の事例：高レバレッジの失敗）
+2. [054] クレジット市場の警告 — Perspective（システミック：債務依存とスプレッド拡大）
+3. [074] Gartnerのコスト予測 — Perspective（将来：AIコーディング費用が給与を超える）
+
+**Narrative Arc:** 個別ファンドの急落（点）→ クレジット市場全体への波及懸念（面）→ 2028年のコスト予測（時間軸）と、スケールを広げる並置。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 059 → 054 | 一ファンドの破綻を、クレジット市場全体のストレスという系全体の話へ拡大 |
+| 054 → 074 | 現在の資金繰り懸念を、2028年にコストが給与を超えるという将来予測へ接続 |
+
+**Emphasis Balance:** 技術深度 ⭐ / 経済・市場 ⭐⭐⭐ / 将来展望 ⭐⭐⭐
+**Key Synthesis Points:**
+- AI投資は収益化の速度が投資規模に追いつかず、資金調達が債務へ傾く
+- ミクロ（ファンド）からマクロ（市場・コスト構造）まで警告が連鎖
+**Conclusion Approach:** 熱狂の裏で「収益性」という基礎が問われていることを、Theme 3のコスト最適化と対で締める。
+**Assembly Prompts for STEP_08:** ①今週の経済シグナルは何を示すか ②リスクはどこに集中するか ③開発者・企業への含意 ④AI経済の持続可能性
+
+---
+
+### Theme 9: ハーネス／ループエンジニアリングの設計原則
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 役割の再定義（概念）→ 具体的なハーネス設計の比較（実装）→ コードを読まない開発への到達（急進的実践）と、抽象から実践へ実際に段階を踏む数少ないテーマ。
+
+**Article Order & Roles:**
+1. [043] 指揮者としての開発者（⭐）— Foundation（役割の再定義：奏者→指揮者、注意が希少資源）
+2. [202] 先進6社のハーネス比較 — Development（設計思想を6要素で具体化）
+3. [228] コードレビューをやめた（1日500コミット）— Payoff（人がコードを読まない開発の到達点）
+
+**Narrative Arc:** 「開発者の役割は指揮者へ」という概念から、実際のハーネス設計の比較で解像度を上げ、「コードを読まずに品質を担保する」という急進的な到達点で締める。
+
+**Transition Strategy:**
+| From → To | Approach |
+|---|---|
+| 043 → 202 | 指揮者という比喩を、先進6社が実際にどう「周辺回路」を設計しているかで具体化 |
+| 202 → 228 | ハーネス設計の延長線上に、「もう人はコードを読めない」という急進的実践を置く |
+
+**Emphasis Balance:** 技術深度 ⭐⭐⭐ / 実務 ⭐⭐⭐ / 将来展望 ⭐⭐
+**Key Synthesis Points:**
+- ハーネス／ループは「概念」から「設計比較」を経て「実践」へと解像度が上がった
+- 人間の役割はコード記述から、検証・規律・注意の配分へ移る
+**Conclusion Approach:** 「指揮者」の比喩が、自動検証とAI相互レビューという具体へ着地したことを示す（号のまとめとして機能）。
+**Assembly Prompts for STEP_08:** ①ハーネス／ループとは何か ②設計で効くのは何か ③人はどこを握り続けるべきか ④この実践はどこまで行くか
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Pattern distribution:** Single-Focus×2 (T4, T5) · Multi-Perspective×6 (T1, T2, T3, T6, T7, T8) · Progressive-Sequence×1 (T9) · Debate-Contrast×0（今週は強制せず）
+
+**Approval Date:** 2026-08-06 (via AskUserQuestion)
+**Approver:** （human）
