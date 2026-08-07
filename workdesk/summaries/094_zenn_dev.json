@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:17:01.960424+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【RAG】話題の米国AIベンチャーで実践される「社内ナレッジ」管理",
+    "url": "https://zenn.dev/knowledgesense/articles/7c1a8f7720b119",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI半導体ベンチャーのCerebras社が、専用のベクトルDBを使わずPostgreSQLに集約して構築した、実用的な社内ナレッジ検索（RAG）の仕組みを解説しています。",
+    "summaryBody": "米国のAI半導体ベンチャーCerebras社が公開した社内ナレッジ基盤「Cerebras Knowledge」の構築事例をまとめた記事です。同社は1日15,000件以上のクエリを処理するシステムを、Pinecone等の専用ベクトルDBではなく、PostgreSQL（pgvector + GINインデックス）というシンプルな構成で実現しています。特にSlack等の非構造データへの対策として、LLMによるスレッドの要約・構造化、特定の条件（リアクション数やIDF値等）に基づいたチャンク化、キーワード・ベクトル・IDF・鮮度の4要素を組み合わせたRRF（Reciprocal Rank Fusion）による検索精度の向上策など、実運用に即した具体的な手法が紹介されています。",
+    "topics": [
+      "RAG",
+      "PostgreSQL",
+      "pgvector",
+      "ナレッジマネジメント",
+      "Cerebras"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

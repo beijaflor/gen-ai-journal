@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:12:06.819399+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TIMEがAIボット専用の別サイトを配信：広告入りMarkdownとトークン課金広告の登場",
+    "url": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "TIME誌がAIクローラー向けに、モデルが処理しやすいMarkdown形式で人間には見えない「トークン課金型」の広告を埋め込んだ専用サイトを提供していることが判明しました。",
+    "summaryBody": "ソフトウェア開発者のVincent Schmalbach氏が、TIME誌のウェブサイトがUser-Agentヘッダーによってコンテンツを出し分けている実態を報告しています。通常のブラウザやGooglebotには303KBのフルHTMLを返しますが、ClaudeBotやPerplexityBotなどのAIアシスタント用クローラーには、約13KBの軽量なMarkdown版を提供しています。このMarkdown版には「Mobian」というアドテク企業が提供する広告が埋め込まれており、Ally Bankなどのスポンサー内容がLLMの応答に馴染みやすいFAQ形式やJSON-LD形式で記述されています。これは「ページビュー」ではなく、モデルに消費された「トークン」を単位とする新たな広告インプレッションの仕組み（トークン・インプレッション）を導入したものであり、人間ではなくAIが主要な読者となる「二重のウェブ」への変遷を象徴しています。",
+    "topics": [
+      "AIクローラー",
+      "トークン広告",
+      "Mobian",
+      "SEO",
+      "LLM経済"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "TIME Is Serving AI Bots a Different Website, With Ads Built In"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:19:43.440956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Leanカーネルの健全性バグ#14576に関するポストモーテム",
+    "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Leanカーネルの入れ子になった誘導型の処理に存在した、偽の命題を証明可能にする健全性の脆弱性とその修正、およびAIを活用したさらなるバグ発見の取り組みについての報告。",
+    "summaryBody": "### 概要\nLean 4のカーネルにおいて、入れ子になった誘導型（nested inductive types）のパラメータ処理に不備があり、健全性が損なわれるバグ（#14576）が発見・修正されました。このバグは、AIを用いて生成されたコラッツ予想の「偽の証明」をきっかけに特定されました。\n\n### 技術的詳細\nバグの本質は、カーネルが入れ子になった出現箇所を処理する際、パラメータがコンストラクタのフィールドに現れない「ファントムパラメータ」である場合に、生成された補助型からこれらが消失し、型チェックをすり抜けてしまう点にありました。これにより、不適切な引数を用いて `False` の証明をカーネルに受理させることが可能になっていました。これはメタ理論の欠陥ではなく、実装上の不備です。\n\n### 検証と対策\n- **独立したチェッカー**: Rust実装の `nanoda` も偶然別のバグを抱えていましたが、修正されました。複数の独立したカーネルによる検証の有効性が改めて示されました。\n- **AIによる監査**: OpenAIのサイバーセキュリティ専門AIを活用し、他にも複数のプログラミングミスを特定・修正しました。これらはメタプログラミング経由でのみ到達可能なものでした。\n- **今後の展望**: Lean FROはカーネルの不変条件を強化し、`lean4lean`（Lean自身によるLeanの形式化）などのプロジェクトを通じて、検証済みカーネルの構築に向けた支援を継続します。",
+    "topics": [
+      "Lean4",
+      "形式手法",
+      "定理証明機",
+      "脆弱性分析",
+      "AIによるバグ発見"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "Postmortem for Kernel Soundness Bug #14576"
+  }
+}

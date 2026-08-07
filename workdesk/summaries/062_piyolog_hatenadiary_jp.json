@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:25:19.517915+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unit 42が報告したAI悪用の自律型攻撃キャンペーンについてまとめてみた",
+    "url": "https://piyolog.hatenadiary.jp/entry/2026/08/04/025755",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "中国語話者の脅威アクターがDeepSeekとHermes Agentを組み合わせ、標的の列挙から攻撃実行までを自律的にこなすサイバー攻撃の仕組みが明らかになった。",
+    "summaryBody": "Palo Alto NetworksのUnit 42による、AIを悪用した自律型攻撃キャンペーンの分析報告のまとめ。脅威アクター（knaithe/KnYuan）は、DeepSeekを推論エンジン、Hermes Agentをフレームワークとして使用し、Telegram経由の指示だけで脆弱性評価、標的選定、意思決定、コード生成を人手の介在なく実行していました。攻撃者はGitHubからPoCを取得し、FOFAで特定の脆弱なサーバーを抽出、n8nやLangflowなどのプラットフォームに対して自動攻撃を試みていました。Unit 42は、攻撃者が設定ミスにより自らのホームディレクトリをHTTPファイルサーバーとして露出させたことから、AIツールの設定やログ、APIキー、シェル履歴などの全容を把握。自律的なAI攻撃サイクルが既に実運用可能な段階にあると結論づけています。",
+    "topics": [
+      "DeepSeek",
+      "Hermes Agent",
+      "Unit 42",
+      "自律型攻撃",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

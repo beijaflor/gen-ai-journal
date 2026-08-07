@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:48:06.621786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クラウドフレア、AIエージェント向けのローカルトレーシング機能を発表 — Workersのデバッグが効率化",
+    "url": "https://blog.cloudflare.com/local-tracing/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIコーディングエージェントがWorkersのローカル開発中にOpenTelemetryトレースを自動取得し、SQLでデバッグ・検証を行える「Local Explorer API」を導入しました。",
+    "summaryBody": "Cloudflareは「Agents Week」の一環として、AIエージェントがWorkersのデバッグを容易に行うためのローカルトレーシング機能を発表しました。wrangler devやvite devを使用すると、OpenTelemetryトレースが自動的にキャプチャされ、エージェントは「Local Explorer API」を介してこれらのデータをSQLでクエリできるようになります。これにより、SDKの導入や手動のログ追加、クラウドへのデプロイを介さずに、KV、D1、Queuesなどのバインディング呼び出しやHTTPリクエストのエラーをローカル環境のみで特定・修正・検証することが可能です。内部的にはオープンソースのランタイムworkerdとMiniflareを活用しており、人間向けにはブラウザベースの可視化インターフェースも提供されます。",
+    "topics": [
+      "Cloudflare Workers",
+      "AI Agents",
+      "OpenTelemetry",
+      "Observability",
+      "Wrangler"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Your agent can now debug Workers with local tracing | Cloudflare Blog"
+  }
+}

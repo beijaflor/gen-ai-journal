@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:08:24.490890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIプログラミングに関する正直なレビュー",
+    "url": "https://mropert.github.io/2026/08/04/an_honest_review_of_ai_programming/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ゲーム開発とC++の専門家が、AI（Claude等）を3ヶ月使用した結果、検索やナレッジ探索には有用だが、コード生成、特に専門性の高い分野では論理の欠如とデータの偏りから「過剰に複雑で誤った」結果を出すと指摘する現実的な評価。",
+    "summaryBody": "現役のC++エンジニア・ゲーム開発者である著者が、職場でのAI導入を機にClaude等のLLMを3ヶ月間試用した結果をまとめています。主な論点は以下の3点です。1. **「賢い検索」としての価値**: SEOに汚染された一般の検索エンジンや、情報の埋もれがちな社内Wiki・Slackログから、自然言語で情報を探し出し要約する能力は極めて高く、生産性向上に寄与する。2. **コード生成の重大な欠点**: AIは統計的な確率でトークンを生成しているに過ぎず、論理的推論は行わない。特にAAAタイトルのソースコードのような非公開データが少ないゲーム開発分野では、ホビー層の古いコードや不適切なOOPパターンを適用しようとする傾向があり、実用性に乏しい。3. **専門家の目による検証の必要性**: AIは専門外の人間には正解に見える「自信満々の嘘（ハルシネーション）」をつく。著者は、ボイラープレートをAIに書かせる必要があるなら、AIに頼る前にAPI設計を改善すべきだと結論付けています。",
+    "topics": [
+      "AI Programming",
+      "C++",
+      "Game Development",
+      "LLM Limitations",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "An Honest Review of AI Programming"
+  }
+}

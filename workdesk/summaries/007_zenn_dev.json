@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:40:49.604822+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+    "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "超巨大モデルKimi K3（1bit量子化版）をREAP手法により441GBまで枝刈りし、512GBメモリのMac Studio 1台で実用的なコード生成能力を維持しつつ動作させた検証記録。",
+    "summaryBody": "### 概要\n594GBものサイズを持つKimi K3（1bit量子化版）を、512GB RAMを搭載したMac Studio (M3 Ultra) 1台で動かすための最適化プロセス。Expert数を896から640へ29%削減し、441GBに軽量化することでシングルマシンでの推論を実現した。\n\n### 枝刈りの手法と技術詳細\n- **REAP (Relative Expert Amplification and Pruning)**: 英語とプログラミングコードに特化した校正コーパスを使用し、各層で重要度の低いExpertを削除。この際、Expert軸でのスライスが容易なGGUF形式の特性を活かしている。\n- **量子化**: Unslothの1bit版 (IQ1_S) をベースに採用。重要度の高い層を保護するdynamic量子化設計が施されている。\n- **ランタイム**: `llama.cpp`のUnslothフォークを使用。KDA（線形アテンション）の再帰状態の破損を防ぐため、`--cache-reuse 0`が必須設定となる。\n\n### 検証結果\n- **SWE-Lancerパフォーマンス**: 正解率5/8、報酬$3,500を獲得。前世代のK2.7(2bit)では解けなかった課題も、枝刈り後のK3(1bit)で解決可能であることを実証。\n- **処理速度**: デコード約3.0 tok/s、プリフィル約47 tok/s。実用範囲内だが、MoEの巨大さゆえに全ベンチマーク完走には膨大な時間を要する。",
+    "topics": [
+      "Kimi K3",
+      "LLM",
+      "枝刈り",
+      "量子化",
+      "Mac Studio"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

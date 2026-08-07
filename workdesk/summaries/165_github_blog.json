@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:47:34.639869+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "巨大なAI生成プルリクエストをレビュー可能な「スタック」へ：GitHub Stacked PRsの活用術",
+    "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成する肥大化したプルリクエストを、論理的な階層に分割してレビュー効率を高める「スタック」管理手法とツールを紹介しています。",
+    "summaryBody": "AIコーディングエージェントの普及により、一度に1,000行を超えるような大規模なプルリクエスト（PR）が生成される問題に対し、GitHubは「Stacked Pull Requests（スタックPR）」による解決策を提示しています。これは一つの大きな変更を、データモデル、API、UIなどの論理的なレイヤー（階層）に分解し、依存関係を持つ一連の小さなPRとして管理する手法です。記事では、`gh-stack` CLI拡張機能を用いた具体的なワークフローや、AIエージェントにスタック作成のスキルを学習させる方法を解説しています。また、下位レイヤーでの変更を上位に自動反映させる `gh stack sync` などのコマンドにより、手動でのコンフリクト解消や同期作業を大幅に軽減し、レビュアーと開発者双方の生産性を向上させる仕組みについて詳述しています。",
+    "topics": [
+      "GitHub",
+      "Stacked Pull Requests",
+      "AI Coding Agents",
+      "Code Review",
+      "Developer Experience"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Turn one giant AI-generated pull request to a reviewable stack"
+  }
+}

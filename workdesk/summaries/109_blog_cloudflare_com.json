@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:13:15.469372+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・アクセス・モデル（AAM）：AIエージェント時代に向けたセキュリティの進化",
+    "url": "https://blog.cloudflare.com/the-agent-access-model/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが提唱するAAMは、人間向けのZero TrustモデルをAIエージェントに最適化し、タスク単位のクレデンシャルと「トラストラチェット」による動的な権限制限を導入する。",
+    "summaryBody": "Cloudflareは、人間を前提とした従来のZero Trust（BeyondCorp）モデルでは不十分な、AIエージェント専用の新しいセキュリティフレームワーク「Agent Access Model (AAM)」を提唱しました。AIエージェントは短寿命でありながら高速かつ多段階の権限委譲を行うため、従来の手法では過剰な権限付与や検知の遅れが課題となります。\n\n### AAMの主要なコンポーネントと仕組み\n1. **タスク単位のアイデンティティ**: タスク実行時のみ有効な、送信元制限（Sender-constrained）付きの短寿命トークンを発行します。\n2. **トラストラチェット (Trust Ratchet)**: 本モデルの核心であり、エージェントが機密データに触れた際、そのタスクの残りの能力（外部へのデータ送信など）を一方向に自動制限します。これにより、機密情報へのアクセスと外部通信の同時成立を防ぎます。\n3. **プロンプトではなく基盤で制御**: 制限はプロンプト（AIへの指示）ではなく、ハーネス（実行環境）とネットワーク層で強制されます。\n4. **継続的な最小権限の改善**: 実際の行動ログ（Agent Activity Log）を分析し、将来のタスクテンプレートに対して権限の過不足を提案するループを回します。\n\n現時点では、共有ワークスペースにおける「マルチプレイヤー・アクセス制御（複数ユーザーの権限混在）」が大きな技術的課題として残されていますが、AAMはエージェントを制御可能な「計測されたソフトウェア」として扱うための道筋を示しています。",
+    "topics": [
+      "AI Agents",
+      "Zero Trust",
+      "Access Control",
+      "Cloudflare One",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "The Agent Access Model"
+  }
+}

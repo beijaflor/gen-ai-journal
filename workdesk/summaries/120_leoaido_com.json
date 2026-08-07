@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:09:59.385719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "フレーム選択こそがすべて：LLMに動画を「見せる」ためのエンジニアリング・ノート",
+    "url": "https://leoaido.com/how-llms-watch-video/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ビジョンLLMのトークン制限内で動画を正確に理解させるため、一律のサンプリングではなく「どの150枚のフレームを選ぶか」という選択アルゴリズムと実装の勘所を解説した技術ノート。",
+    "summaryBody": "ビジョンLLMに動画を解析させる際、最大の制約はトークン予算であり、現実的には1動画につき100〜150枚程度のフレームに絞り込む必要があります。本稿は、オープンソースのローカルパイプライン「claude-real-video」の開発を通じて得られた、効果的なフレーム選択の知見をまとめています。単なる一定間隔のサンプリングでは、重要な変化を見逃すか、不要な冗長フレームでコンテキストを埋めてしまうため、著者はffmpegのシーンスコアを用いた動的しきい値によるシーン検出や、3つのレイヤー（グローバルな変化、小さな被写体の動き、UIなどの静的な状態更新）による重複排除アルゴリズムを提案しています。さらに、Whisperによる音声書き起こしとフレームをタイムスタンプで厳密に結合することで、LLMが「動画を直接見た」かのような精度で内容を把握できる環境を構築しています。MCP（Model Context Protocol）サーバーとしての提供により、Claude Desktop等から容易に利用可能です。",
+    "topics": [
+      "Vision LLM",
+      "Video Understanding",
+      "Frame Selection",
+      "Machine Learning Engineering",
+      "MCP (Model Context Protocol)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Frame selection is the whole game: engineering notes from making LLMs watch video"
+  }
+}

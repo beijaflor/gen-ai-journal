@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:16:29.980281+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "入出力フォーマットで LLM トークンはどれだけ変わるのか",
+    "url": "https://zenn.dev/aiforall/articles/8cbeb63f5cbc00",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Haiku 4.5を用い、テキストとJSON形式（Structured Output）の組み合わせがトークン消費量に与える影響を実測値で検証した記事。",
+    "summaryBody": "LLMの入出力をテキストとJSONで組み合わせた4パターン（text2text, text2json, json2text, json2json）でのトークン消費量をBedrock Converse APIを用いて検証しています。主な知見として、Structured Output（JSON出力）を使用すると、内部的に送信されるスキーマ定義によって入力トークンが基準の約3倍（+1,000トークン以上）に膨れ上がることが判明。一方で、入力形式（テキスト対JSON）自体のトークン数への影響は軽微ですが、JSON入力はモデルがより詳細な情報を保持しようとする傾向があることが示されました。開発者がコストと精度のバランスを考慮してフォーマットを選択するための実用的な指標を提供しています。",
+    "topics": [
+      "LLM",
+      "Claude",
+      "Amazon Bedrock",
+      "トークンコスト",
+      "Structured Output"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

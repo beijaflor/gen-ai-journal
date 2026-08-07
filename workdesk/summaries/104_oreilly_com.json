@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:14:26.256112+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "組織知能の構築：AIと専門家フレームワークを融合させた意思決定支援",
+    "url": "https://www.oreilly.com/radar/building-organizational-intelligence/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "内部データへのアクセス（MCP）と専門的な実務フレームワークを組み合わせることで、単なるデータ集計を超えた「根拠があり実行可能な」組織的提言を生み出すAIシステムの構築手法を解説しています。",
+    "summaryBody": "O'Reillyのエンジニアリング・ディレクターが、AIを活用して組織の意思決定を高度化する「組織知能（Organizational Intelligence）」の構築事例を報告しています。従来のAI生成レポートは「データに基づく現状報告」に留まり、具体的な行動指針に欠ける傾向がありました。著者はこれを解決するために、4つのステップからなるレシピを提案しています。\n\n1. **情報階層の構築**: 戦略（Roadmap）から実行（Jira）、実装（GitHub）に至る各システムの役割を定義します。\n2. **MCPによる接続と推論スキルの定義**: Model Context Protocol (MCP) を通じてデータをAIに繋ぎ、スキームに従った推論を行う「スキルファイル」を作成します。\n3. **エキスパート・レイヤーの追加**: O'Reilly Expert MCPを介して、Google SREやTeam Topologiesなどの実績あるフレームワークを適用します。これにより、「人員不足」という表面的な結論ではなく、「トイル（苦役）が50%を超えているため構造的改善が必要」といった、理論に裏打ちされた具体的な勧告が可能になります。\n4. **人間によるレビュー（Superanswers）**: GitHubを活用し、AIの提案に対して人間がフィードバックを行い、その議論過程もAIが学習・反映できる仕組みを構築します。\n\nこのアプローチは、組織内の「ローカルな証拠」と専門家による「普遍的な知恵」を橋渡しし、AIを単なるタスク自動化ツールから、信頼に足る意思決定パートナーへと進化させます。",
+    "topics": [
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "ナレッジマネジメント",
+      "組織開発",
+      "意思決定支援"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Building Organizational Intelligence"
+  }
+}

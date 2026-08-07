@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:12:25.136953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FigmaのMCPにおけるCode Connectの利点：より良いコードを、より少ないトークンで",
+    "url": "https://www.figma.com/blog/the-benefits-of-code-connect-in-mcp/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "FigmaのMCPサーバーにCode Connectを統合してAIエージェントに本番コードの文脈を与えることで、生成コードの品質が向上し、トークン消費量と作業時間が大幅に削減されることが実証されました。",
+    "summaryBody": "Figmaは、同社のMCP（Model Context Protocol）サーバーと、デザインと実際のコードを紐付ける「Code Connect」を組み合わせた際の、AIエージェントによるコード生成のパフォーマンス測定結果を公開しました。通常、AIエージェントはデザインからコードを生成する際、既存のコンポーネントライブラリの文脈を持たないため、プリミティブな要素を使ってUIを再構築してしまい、保守性や一貫性が損なわれる課題があります。\n\n検証の結果、Code Connectを通じて本番環境のコードスニペットをエージェントに提供することで、以下の劇的な改善が確認されました：\n- **コード品質**: 4段階評価で中央値が「2(Poor)」から「3(Good)」へと1ポイント向上。\n- **トークン使用量**: 中央値で29.5%の削減を実現。\n- **作業時間**: タスク完了までの時間が19.6%短縮。\n\nCode Connectがセットアップされていると、エージェントはコンポーネントの構造を推測したりドキュメントを検索したりする手間が省け、正確なインポート文とプロパティを使用してコードを記述できるようになります。この結果は、AIエージェントに高品質な出力を期待するには、単なる視覚情報だけでなく、構造化された「コードの文脈」を与えることが不可欠であることを示唆しています。",
+    "topics": [
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "Code Connect",
+      "AI Coding Agents",
+      "Design Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Better Code, Fewer Tokens: The Benefits of Code Connect in MCP"
+  }
+}

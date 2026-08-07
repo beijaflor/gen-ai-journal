@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:09:44.185644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "iPhoneやMacの低メモリ環境で35B/80BのQwenモデルを動かすランタイム「Swiftlet」",
+    "url": "https://github.com/leonickson1/Swiftlet",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AppleデバイスのSSDからMixture-of-Expertsの重みをオンデマンドでストリーミングすることで、iPhoneなどの小容量RAMでもQwen3.6等の巨大LLMを実行可能にするSwift/Metal製ランタイム。",
+    "summaryBody": "Swiftletは、Qwen3.5/3.6やQwen3-NextといったMixture-of-Experts (MoE) 構造を持つ大規模言語モデルを、RAM容量の少ないiPhoneやMacで動作させるためのSwift + Metal実装ランタイムです。最大の特徴は「Expert Streaming」技術で、モデルの密なコア部分のみをメモリに常駐させ、各トークン推論時に必要なエキスパート重みをSSDからオンデマンドでロードします。これにより、35Bモデル（4-bitで18GB）をわずか2.6GBのRAMで、80Bモデル（42GB）を4.3GBのRAMで動作させることが可能です。M5 Macでは毎秒4〜11トークン、iPhone 17でも毎秒約1トークンの速度を達成しています。ライブラリとしての利用、CLI、OpenAI互換サーバー、およびiOSアプリ「Priv AI」への統合など、実用的な形態で提供されています。",
+    "topics": [
+      "LLM",
+      "Edge AI",
+      "Mixture-of-Experts",
+      "Metal",
+      "iOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - leonickson1/Swiftlet"
+  }
+}

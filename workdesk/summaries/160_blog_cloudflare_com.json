@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:48:54.856400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareにおけるエージェント開発ライフサイクル（ADLC）の到来",
+    "url": "https://blog.cloudflare.com/agent-development-lifecycle/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントがソフトウェア開発の全工程を自律的に管理する「エージェント開発ライフサイクル（ADLC）」を提唱し、その実現に向けた新ツール群を発表しました。",
+    "summaryBody": "Cloudflareは、従来のソフトウェア開発ライフサイクル（SDLC）に代わる、AIエージェントを主役とした「ADLC (Agent Development Lifecycle)」という概念を打ち出しました。これは、人間が逐一指示を出す「人間中心の自動化」から、エージェントが自律的にコードの生成・テスト・デプロイ・保守を行う「ソフトウェア・ファクトリー（ソフトウェア工場）」への移行を目指すものです。主な新機能として、Cloudflare Workflowsを利用して数百万のレポジトリでCI/CDを実行し、失敗時にエージェントが自己修復を試みる「@cloudflare/ci」、エージェントの挙動を詳細にデバッグ・監視するための「Agent Traces」、そしてローカル開発環境と本番環境の差異を埋める各種ツールが紹介されています。同社は、エージェントが安全かつスケーラブルに開発を主導できるよう、プログラム可能なAPI、再現性のある環境、リアルタイムのプッシュ通知といったプリミティブを統合的に提供することで、開発プロセスの劇的な加速を支援します。",
+    "topics": [
+      "ADLC",
+      "Cloudflare Workflows",
+      "AI Agents",
+      "Software Factory",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The Agent Development Lifecycle has arrived on Cloudflare"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:17:14.543877+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けのツールを、MCPではなくCLIとして作った — 設計の3原則",
+    "url": "https://zenn.dev/codatum/articles/80b99faba75704",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント向けツールの開発において、MCPではなくCLIを採用した理由と、コンテキスト節約・自己修正・工程の単純化という3つの設計原則を解説しています。",
+    "summaryBody": "データ分析プラットフォーム「Codatum」が提供するCLIツール「cdm」の設計思想に関する記事です。現在主流のMCP（Model Context Protocol）ではなくCLIを選択した最大の理由は、ファイルを中間表現として扱うことでAIエージェントのコンテキスト（トークン）消費を抑え、人・CI・エージェントが共通のインターフェースを利用できる点にあります。設計の3原則として、1. モデルの事前学習を活かせるマークダウン形式の採用やドキュメント取得機能による「コンテキストの節約」、2. 詳細なエラーメッセージや画像出力による「自己修正ループの構築」、3. 多段の手順を1コマンドに統合する「ワークフローの一本道化」を挙げています。エージェントが「間違える」ことを前提としつつ、自律的に判断・修正できる環境を整える実戦的なアプローチが共有されています。",
+    "topics": [
+      "AIエージェント",
+      "CLI",
+      "MCP",
+      "ソフトウェア設計",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

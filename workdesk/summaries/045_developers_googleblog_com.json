@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:29:57.917638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セッションを考慮したロードバランシングによるリアルタイムAIエージェントのスケーリング",
+    "url": "https://developers.googleblog.com/scaling-real-time-ai-agents-with-session-aware-load-balancing/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "リアルタイムAI特有の長時間かつ双方向のセッションに対し、従来のQPSベースではなくアクティブセッション数とリソース利用率を組み合わせた負荷分散手法を提案しています。",
+    "summaryBody": "リアルタイムAIエージェントは、音声や動画などの双方向ストリーミングを扱うため、従来のステートレスなWeb APIとは異なる負荷分散のアプローチが必要です。この記事では、従来の指標であるQPS（秒間リクエスト数）だけでは、長時間にわたるセッションの負荷を正確に測定できない問題を指摘しています。代わりに、アプリケーション層でアクティブなセッション数を追跡し、CPU利用率と組み合わせたハイブリッドな負荷分散モデルを導入することを推奨しています。具体的には、セッションごとの平均コストと『セーフティスケーラー（安全係数）』を用いた数式を提示し、急激な負荷スパイクを防ぎながら、各バックエンドサーバーに最適に負荷を割り振る方法を解説しています。また、JVMにおけるカウンターの競合対策や、長時間セッションを前提としたベンチマーク手法など、SRE（サイト信頼性エンジニアリング）の観点から実践的な実装上の留意点についても深く掘り下げています。",
+    "topics": [
+      "AI Infrastructure",
+      "Load Balancing",
+      "SRE",
+      "Real-time AI",
+      "Scalability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Scaling real-time AI agents with session-aware load balancing"
+  }
+}

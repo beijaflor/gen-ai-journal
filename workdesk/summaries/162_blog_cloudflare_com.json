@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:48:18.679459+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Agentsの発表：AIエージェントの展開と観測を容易にする新プラットフォーム",
+    "url": "https://blog.cloudflare.com/agents-on-cloudflare/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントのデプロイ、管理、観測を一元化する「Cloudflare Agents」を発表し、OpenTelemetry互換のトレーシング機能によりエージェントの内部動作の可視化を実現しました。",
+    "summaryBody": "CloudflareがAIエージェント専用のプラットフォーム「Cloudflare Agents」をリリースしました。これまで培ってきたWorkersの開発者プラットフォームを基盤に、エージェントの実行に不可欠なモデルアクセス、耐久性のあるランタイム、サンドボックス実行などを統合しています。目玉となる「エージェント・トレーシング」機能では、OpenTelemetryを活用してモデル呼び出し、ツールの実行、トークン使用量、サブエージェントへの委譲などを詳細に可視化可能です。これにより、HTTPステータスだけでは判別不可能な「誤ったツールの選択」や「リトライループによるトークンの浪費」といった複雑なエージェントの振る舞いをデバッグできます。現在、Think、Flue、AI SDKなどの主要フレームワークをサポートしており、2026年10月まではベータ版として無料で提供されます。",
+    "topics": [
+      "Cloudflare",
+      "AI Agents",
+      "Observability",
+      "OpenTelemetry",
+      "Serverless"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Introducing: Cloudflare Agents"
+  }
+}

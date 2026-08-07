@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:26:53.889502+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SQLiteの致命的なCVEは『AIによるスロップ（ゴミ）』か？ — JFrogが脆弱性の捏造を暴く",
+    "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "JFrogのセキュリティ調査により、SQLiteに関する複数の高深刻度CVEが、AIによって生成された実体のない「スロップ（ゴミ）」であり、現在の脆弱性報告エコシステムの不備を突いている実態が明らかになった。",
+    "summaryBody": "JFrog Security Researchは、GitHub上の特定のレポジトリから発行されたSQLiteに関する一連のCVE（CVE-2026-51302など）を調査した結果、そのほとんどがAIによって生成された虚偽の情報であると断定した。\\n\\n主な調査結果：\\n- **実体のないコード**: 報告された脆弱性の多くは、対象とされるSQLiteのバージョンには存在しない関数や、実際のファイルサイズを超える行番号を引用していた。\\n- **機能しないPoC**: 提示された概念実証（PoC）コードを検証したところ、メモリ不具合を再現できない、あるいは構文エラーで実行すらできない「偽物」であった。\\n- **エコシステムの課題**: 2024年2月以降のNVD（米国国家脆弱性データベース）における分析の遅延や、PoCの提出を義務付けない脆弱性登録プロセスの脆弱さが、こうした「AIスロップ」の拡散を許している。\\n\\nJFrogは、組織に対して未知のソースによるCVEを盲信せず、ベンダーの公式情報との照合や実機での検証を行うよう警告している。また、AIエージェントによる脆弱性管理の自動化が、こうした虚偽データによって誤った修正や不必要な作業を引き起こすリスクについても警鐘を鳴らしている。",
+    "topics": [
+      "SQLite",
+      "CVE",
+      "LLM Slop",
+      "Vulnerability Management",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "SQLite Critical CVEs or LLM Slop? - JFrog Security Research"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:32:23.686875+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メモリは「堀（Moat）」となるか？ — AMD MI355XによるKimi K3（2.8T）推論の最適化とB200との比較",
+    "url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2.8兆パラメータの超巨大モデルKimi K3の推論において、AMD MI355XがNVIDIA Blackwell世代を上回る費用対効果とノードあたりのスループットを達成した事例報告。",
+    "summaryBody": "Wafer社による、2.8兆（2.8T）パラメータのオープンソースモデル「Kimi K3」をAMD MI355Xで動作させた技術レポートです。主な内容は以下の3点です。1. **ハードウェア性能の優位性**: Kimi K3の巨大な重み（1.5TB以上）は、HBM容量の小さいNVIDIA B200では1ノードに収まらず2ノード（TP16）を要しますが、288GBのHBMを持つMI355Xは1ノード（TP8）で稼働可能です。これにより、通信オーバーヘッドを抑え、B200比で約3.8倍のノードスループットを実現しました。2. **コスト効率**: MI355XはNVIDIAのB300と比較してGPU単価が約2.4倍安く、ドルあたりのパフォーマンスで圧倒しています。3. **ソフトウェアの障壁と解決**: ROCm環境での投機的デコードのバグ（NameError）や、MLA（Multi-head Latent Attention）カーネルの形状不一致によるプリフィルの遅延問題を、PyTorchレベルの修正やパディング処理で解決しました。AMDのソフトウェア・エコシステムが急速に成熟し、最先端モデルへの「Day-0」サポートが現実的になっていることを示唆しています。",
+    "topics": [
+      "AMD MI355X",
+      "Kimi K3",
+      "LLM推論",
+      "ROCm",
+      "NVIDIA B200"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Is memory the moat?"
+  }
+}

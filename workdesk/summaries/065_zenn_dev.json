@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:24:35.477184+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オントロジーで AI に業務知識を渡す — AWS の OSS「Context Ontology Accelerator」を試してみた",
+    "url": "https://zenn.dev/aws_japan/articles/context-ontology-accelerator-deploy",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWSが公開したOSS「Context Ontology Accelerator」を用い、オントロジーとナレッジグラフによって生成AIエージェントに業務コンテキストを正確に伝える仕組みと実証結果を詳説しています。",
+    "summaryBody": "LLMを用いたText-to-SQLやAIエージェントの実装において、データベースのスキーマだけでは「売上」の定義や複雑な業務ルールといった『意味の層』が伝わらず精度が低下する課題があります。AWSのOSSであるContext Ontology Accelerator (COA)は、この課題を解決するためにオントロジー（概念・関係・ルールの定義）をLLMで自動生成し、Amazon NeptuneやOpenSearch Serverless上に知識基盤を構築するツールです。本記事では、COAのScan（データ接続）、Model（オントロジー生成・承認）、Serve（クエリ解決）のアーキテクチャを実測値を交えて解説。検証の結果、Glue Data Catalogには存在しない外部キーをAIが正しく推論してSQLのJOINに反映させたほか、定義済みメトリクスを用いることで、LLMによる計算ロジックのブレ（検証では53%もの差が発生）を防ぎ、決定的な回答を得られることが示されました。",
+    "topics": [
+      "AWS",
+      "生成AI",
+      "オントロジー",
+      "ナレッジグラフ",
+      "Text-to-SQL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

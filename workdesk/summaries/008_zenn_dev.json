@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:40:28.634241+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI フレンドリーな CLI を開発するテクニック",
+    "url": "https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが自律的にドキュメントを参照して正確なトラブルシューティングを行えるよう、CLI内にドキュメントを埋め込み、誘導メッセージを配置する実装テクニックの紹介。",
+    "summaryBody": "OSS開発者のShunsuke Suzuki氏が、Coding Agent（AIエージェント）との親和性を高めるためのCLI設計手法を解説しています。AIが外部Webサイトをフェッチする際の情報の欠落や非効率さを解消するため、CLI内部にドキュメントを保持させる「AIフレンドリー」なアプローチを提案。具体的には、Goの`embed`機能を利用したMarkdownドキュメントのバイナリ埋め込み、ドキュメントの一覧と詳細を表示する`docs`サブコマンドの実装、そして`--help`や`--version`、エラーメッセージ内にエージェント向けの「導線」となるメッセージを含める手法を紹介しています。これにより、エージェントが自らドキュメントを見つけ出し、コンテキストを理解した上で正確な回答を生成できるようになります。また、Agent Skillを介した連携の最適化についても触れられています。",
+    "topics": [
+      "CLI",
+      "AI Agents",
+      "OSS",
+      "Go",
+      "Documentation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:26:18.762397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AirLLM: 4GBのVRAMで70B超の巨大LLMを推論可能にするライブラリ",
+    "url": "https://github.com/lyogavin/airllm",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "単一の安価なGPUで、層単位のストリーミング読み込みにより70Bから最大2.8Tクラスの超巨大言語モデルを推論可能にするPythonライブラリ。",
+    "summaryBody": "AirLLMは、VRAM容量の制限を打破し、4GB程度のメモリしか持たないコンシューマー向けGPUで超大規模LLMを動作させるためのツールです。本プロジェクトは、モデル全体をVRAMにロードするのではなく、推論時に必要なレイヤーやExpertのみを順次ディスクから読み込んで実行する「Layer-wise inference」を採用しています。これにより、量子化や蒸留を行わずにLlama 3.1 405Bを8GB VRAMで、さらに最新のMoEモデルであるKimi K3 (2.8T)を約3.7GBのVRAMで動作させることが可能です。最新版ではDeepSeek-V3やQwen3などの最新モデル、FP8サポート、macOS (Apple Silicon) への対応、CPU推論などが統合されており、リソースが極めて限られた環境での大規模モデル検証に革命をもたらします。",
+    "topics": [
+      "LLM",
+      "Inference",
+      "GPU Memory",
+      "DeepSeek-V3",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - lyogavin/airllm: AirLLM 70B inference with single 4GB GPU"
+  }
+}

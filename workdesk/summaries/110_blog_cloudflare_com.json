@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:12:55.546670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの異常行動を特定：Cloudflare AI GatewayのID認識型分析機能が登場",
+    "url": "https://blog.cloudflare.com/identity-aware-ai-gateway/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AI GatewayにID認識機能を追加し、ユーザーごとの予算制限や異常な行動パターンを検知する「User Insights」機能の提供を開始しました。",
+    "summaryBody": "Cloudflareは、AI Gatewayのガバナンスとセキュリティを強化する2つの新機能を発表しました。1つ目の「Identity-aware AI Gateway（オープンベータ）」は、Cloudflare Accessと統合することで、Okta等のIDプロバイダーを通じた個々のユーザー識別を可能にし、ユーザー単位の予算制限やアクセス制御を実現します。2つ目の「User Insights（一般提供）」は、AI Gatewayを通過するトラフィックから各アカウントの行動ベースラインを自動的に構築し、通常から大きく逸脱したセッション（コスト急増など）を「異常行動」として検知します。これにより、暴走したAIエージェントや資格情報の流出、不適切な利用の早期発見が可能になります。将来的には、タスクベースのスマートルーティングやプロンプト分類機能の追加も予定されています。",
+    "topics": [
+      "Cloudflare",
+      "AI Gateway",
+      "AI Governance",
+      "Security Analytics",
+      "Cost Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Catching rogue AI behavior with identity-aware analytics | Cloudflare Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:35:22.973132+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自分のPCだけで動く「自分専用AI」を Ollama × Docker で動かしてみた",
+    "url": "https://qiita.com/y104autumn/items/6132bcc74fb8d43d4cd3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "外部サーバーへデータを送信せずプライバシーを確保しながら、DockerとOllamaを用いてローカルPC上でLLMを実行する環境構築手順を分かりやすく解説したガイドです。",
+    "summaryBody": "### 概要\nクラウドAI（ChatGPTやClaude等）を利用する際のプライバシー懸念を解消するため、PC内で完結する「ローカルLLM」を構築する手順を紹介しています。Docker DesktopとOllamaを組み合わせることで、GPUがない一般的なノートPCでも「自分専用AI」を動かすことが可能です。\n\n### 主な内容\n1. **環境構築**: Docker Desktopのインストールから、コンテナ管理のための`docker-compose.yml`の作成方法までを網羅。CPU動作を前提とした設定ファイルを提示しています。\n2. **Ollamaの起動とモデル導入**: `llama3`などのモデルをプルし、ターミナル上で即座に対話を開始する手順を解説。1バイトもインターネットに送らない境界線を確認できます。\n3. **UIの拡張**: ブラウザから直感的に操作できる「Open WebUI」のコンテナ追加方法についても触れており、ChatGPTライクなUIでローカルAIを利用可能です。\n\n### 結論\n性能面ではクラウドAPIに譲るものの、「自分のデータを外に出さずに試せる」という安心感は、機密性の高いコードや下書きを扱う上で大きな価値となります。初心者でもコピペで再現可能なステップバイステップの構成です。",
+    "topics": [
+      "Ollama",
+      "Docker",
+      "LLM",
+      "ローカルLLM",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

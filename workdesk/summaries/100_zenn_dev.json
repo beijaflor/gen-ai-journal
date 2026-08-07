@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:15:25.560462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AskUserQuestionをもっと見やすくわかりやすく：Claude Codeの質問を図表を駆使したウィザードUIに",
+    "url": "https://zenn.dev/uehaj/articles/claude-code-review-wizard-plugin",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのターミナルベースの質問を、ブラウザ上の視覚的なウィザードUI（図表や比較表付き）に置き換え、認知負荷を軽減するプラグイン「review-wizard」の紹介。",
+    "summaryBody": "Claude Code標準の「AskUserQuestion」はターミナル上での対話のため、複数の選択肢の比較や複雑な質問には限界があります。本記事で紹介される「review-wizard」は、AIからの質問をブラウザ上のウィザード形式に変換するプラグインです。一時的なローカルHTTPサーバを立ち上げ、インラインSVGや比較表を用いたリッチなUIで質問を提示します。外部ライブラリに依存せず、回答送信後に即座に終了する軽量設計が特徴。質問が3問以上、あるいは複雑な比較が必要な場合にのみ自動で起動するよう最適化されており、開発者の認知負荷を大幅に下げることが可能です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "UI/UX",
+      "Node.js",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

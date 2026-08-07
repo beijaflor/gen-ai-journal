@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:10:26.172169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIラボは「ペリカン・マックス」しているのか？ — SVGベンチマークの不正疑惑を検証",
+    "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI界で有名な非公式ベンチマーク「自転車に乗るペリカンのSVG生成」に対し、AI各社がモデルを特定プロンプトに最適化（過学習）させているかという疑惑を、48通りの組み合わせを用いた実験で検証したレポート。",
+    "summaryBody": "Simon Willison氏が提唱した「自転車に乗るペリカンのSVGを描いて」というプロンプトは、LLMの能力を測る有名な非公式ベンチマークとなっている。本記事では、AIラボがこの特定のベンチマークに最適化（ペリカン・マックス）しているかを確認するため、8種の動物と6種の乗り物を組み合わせた計48パターンのプロンプトを用いて、GPT-5.6、Claude 5、Gemini 3.5等の7つの最先端モデルで1,008個のSVGを生成し、統計的に分析した。\n\n検証の結果、ペリカンの描画品質は全動物中6位、自転車は乗り物の中でワースト2位であり、難易度を調整した回帰分析でも「ペリカン×自転車」の組み合わせに特異なスコア向上は見られなかった。また、構図の固定化（常に右を向く等）についても、他の動物や乗り物の組み合わせで見られる傾向の範囲内であった。結論として、特定のベンチマークを狙い撃ちした最適化の証拠は乏しく、モデルの進化はSVG生成能力全般の向上によるものと推察される。",
+    "topics": [
+      "LLMベンチマーク",
+      "SVG生成",
+      "データ汚染 (Data Contamination)",
+      "画像評価",
+      "AIモデル比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Are AI labs pelicanmaxxing?"
+  }
+}

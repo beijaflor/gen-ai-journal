@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:48:42.273382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用したエンジニアリング標準の強制：Cloudflare Codexとそのエージェント群",
+    "url": "https://blog.cloudflare.com/engineering-standards-enforcement/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareは、エンジニアリング標準を統合管理する「Cloudflare Codex」を構築し、AIエージェントを用いて設計から実装、障害報告までの自動検証と品質担保を実現している。",
+    "summaryBody": "Cloudflareは、社内に分散していたエンジニアリング知識を「Cloudflare Codex」として統合し、AIエージェントが開発ライフサイクルの各段階で標準を自動検証する仕組みを構築しました。CodexはRFCプロセスを通じて管理され、承認された基準は「AIコードレビュアー」「スペックレビュアー」「障害報告レビュアー」といったエージェントによって適用されます。例えばAIコードレビュアーは、4ヶ月間で約25万件の基準違反を検知し、1万6千件のマージをブロックする成果を上げています。技術的には、膨大な標準ドキュメントをLLMが扱いやすいJSON形式に構造化して抽出・メタデータ化することで、コンテキスト注入の効率化を実現しています。この取り組みにより、エンジニアは機械的なルールチェックから解放され、より本質的な設計や判断に集中できるようになっています。今後は製品やセキュリティ、コンプライアンスといったエンジニアリング以外の領域への拡大も予定されており、組織全体のガバナンス強化を目指しています。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "コードレビュー",
+      "エンジニアリング標準",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "How Cloudflare enforces engineering standards using AI | Cloudflare Blog"
+  }
+}

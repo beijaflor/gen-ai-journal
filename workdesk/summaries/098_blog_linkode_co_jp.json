@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:15:59.573829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIは、中身で止める",
+    "url": "https://blog.linkode.co.jp/entry/2026/08/03/173332",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのフック機能を活用し、一律の機能制限ではなく「中身」に基づいてAIの動作を動的に制御する、実戦的なAIセキュリティ設計を提案・検証する。",
+    "summaryBody": "Anthropic社の開発ツール「Claude Code」に備わっているフック機能を使い、AIが外部へ情報を出す直前に「検問」を差し込む手法を解説した記事。従来の機能単位での禁止（ハサミを取り上げる手法）では業務効率が下がるため、Pythonスクリプトで個人情報を検知して動的にブロックする実装を紹介している。組織的な配布方法（Managed settings）についても詳述されており、管理者による強制力の担保が可能。一方で、パターンマッチングの限界や、AIによる判定自体の揺らぎについても実証的に触れており、検問（門）の先にある環境分離（囲い）という設計思想への布石となっている。",
+    "topics": [
+      "AIガバナンス",
+      "Claude Code",
+      "データセキュリティ",
+      "Python",
+      "情報漏洩対策"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:16:14.774343+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "散らばった議論を LLM-Wiki でフル活用する AI 時代のデザインシステムのカタチ",
+    "url": "https://zenn.dev/cybozu_frontend/articles/llm-wiki-for-design-systems",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "散らばった議論や意思決定プロセスをLLM-Wikiによって構造化・集約し、デザインシステムの背景情報を誰でも容易に参照可能にする手法とその実践例を紹介しています。",
+    "summaryBody": "サイボウズのkintoneデザインシステム（kDS）チームによる、AI時代のドキュメンテーション手法「LLM-Wiki」の導入事例を紹介しています。これまでGitHub、Slack、Confluenceなど複数のプラットフォームに分散し、属人化していたデザインの意思決定背景を、LLMを用いて構造化・検索可能にする試みです。Andrej Karpathy氏が提唱するLLM-Wikiの概念をベースに、一次資料（Raw）から人間が読みやすいWikiをLLMが生成・保守するワークフローを構築。運用の工夫として、データの確度（マージ済みPR &gt; ADR &gt; チャット）に基づいた重み付け、プラットフォームを跨ぐ双方向リンク、Git履歴の統合などが盛り込まれています。これにより、デザイナーやエンジニアが過去の複雑な経緯を数分で把握できるようになり、コミュニケーションコストの大幅な削減と、一貫性のある迅速な意思決定を実現しています。",
+    "topics": [
+      "デザインシステム",
+      "LLM-Wiki",
+      "ドキュメンテーション",
+      "知識管理",
+      "サイボウズ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

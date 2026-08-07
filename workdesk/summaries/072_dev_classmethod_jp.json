@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:22:40.134912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI 時代の docs のために、Zero Config なドキュメントサーバー「Tsumugu」を作った — Semantic AST で Markdown・HTML・MDX・OpenAPI をつなぐ",
+    "url": "https://dev.classmethod.jp/articles/ai-era-docs-tsumugu/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "「Tsumugu」は、MarkdownやOpenAPIをSemantic ASTで統一管理し、人間とAI双方に最適な体験を提供する設定不要のドキュメントサーバーです。",
+    "summaryBody": "エンジニアの37108氏が開発した、AI時代の開発スタイルに特化したドキュメントツール「Tsumugu」の紹介記事です。\n\n### 主な特徴と設計思想\n- **Zero Config**: ディレクトリ構造がそのままURLになり、設定ファイルなしで即座に動作します。\n- **Semantic ASTによる統一**: Markdown、HTML、MDX、OpenAPIを共通の「意味を扱う抽象構文木（Semantic AST）」に変換。これにより、人間向けのHTMLだけでなく、AI向けの `llms.txt` や検索インデックスも一貫した構造で生成されます。\n- **徹底したセキュリティ**: 「コンテンツは実行しない」を原則とし、厳格なCSP（Content Security Policy）とハッシュによるスクリプト検証を導入。信頼済み（--trust）の場合のみMDXやJavaScriptを許可する設計です。\n- **軽量な独自実装**: 依存関係を最小限に抑えるため、Mermaidのサブセットを描画する独自トランスフォーマーや、わずか2.6KBのクライアントサイド検索機能を備えています。\n\n### AI駆動の開発プロセス\n開発者自身がコードを1行も書かず、Claude Code等のAIに実装を任せる一方で、設計の意思決定と930項目以上のテストコード、そして成果物のレビューに注力するという、現代的な開発手法が取られています。",
+    "topics": [
+      "Tsumugu",
+      "ドキュメントツール",
+      "Semantic AST",
+      "AI駆動開発",
+      "静的サイトジェネレータ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

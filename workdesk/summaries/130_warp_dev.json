@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:06:58.507073+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Warp Agent CLIの発表：あらゆるターミナルで動作するマルチプレクサ型AIエージェント",
+    "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Warpが既存のあらゆるターミナルで動作する「Warp Agent CLI」をリリース。マルチプレクサ技術により、AIエージェントによる対話型アプリの操作やリモート環境での実行を可能にします。",
+    "summaryBody": "Warpは、これまで自社ターミナル内限定だったAIエージェント機能を、GhosttyやiTerm 2、VS Codeなど好みの環境で利用可能にする「Warp Agent CLI」を発表しました。本ツールの最大の特徴は、tmuxのようなマルチプレクサ（pty管理）構造を基盤としている点にあります。これにより、従来のCLIエージェントでは困難だった「エージェントセッション内でのディレクトリ移動」や、「vim、sqlite、gdbといったフルスクリーン・インタラクティブアプリの操作」、「リモートマシンへのバイナリインストール不要な実行」を実現しています。\n\n機能面では、タスクの複雑さに応じてモデルを自動選択するルーティング、Claude Code等の他社ハーフネスとのマルチエージェント・オーケストレーション、自然言語とコマンドの自動判別入力をサポート。また、クラウドエージェントへの作業引き継ぎも可能です。料金体系は、月額サブスクリプション、プリペイドのクレジット購入、または独自のAPIキーを持ち込むBYOK（Bring Your Own Key）から選択できます。",
+    "topics": [
+      "Warp",
+      "AIエージェント",
+      "CLIツール",
+      "開発効率化",
+      "LLMオーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Introducing the Warp Agent CLI: a CLI coding agent that does what others can't"
+  }
+}

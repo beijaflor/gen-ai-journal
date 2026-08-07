@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:14:44.074306+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPのステートレス化によるAIエージェント・インフラのスケーリング：2026年7月アップデート",
+    "url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、Model Context Protocol (MCP) をステートレスな設計へと刷新し、クラウドネイティブな環境での大規模スケーリングとサーバーレス運用を容易にする新仕様「2026-07-28」を発表しました。",
+    "summaryBody": "Googleと業界パートナーにより構成されたMCP Transports Working Groupは、Model Context Protocol (MCP) の最新仕様（2026-07-28版）を公開しました。このアップデートの核心は、プロトコル層からのセッション管理の完全な排除とステートレス化です。\n\n従来のMCPはセッション維持のために「ハンドシェイク」や「スティッキーセッション」を必要としており、これがKubernetes上での負荷分散やサーバーレス環境（Cloud Run等）へのデプロイにおいて大きな障害となっていました。新仕様では、全てのメタデータ（プロトコルバージョン、機能、クライアント情報）を各リクエストの `_meta` フィールドに含めることで、リクエスト単位での独立性を確保しました。\n\nさらに、サーバーからのユーザーへの問い合わせをステートレスに処理する「マルチラウンドトリップ・リクエスト (MRTR)」、時間のかかる処理をバックグラウンドで実行する「Tasks拡張」、HTTP標準に基づいたキャッシュ制御機能 (`ttlMs`) など、実用性を高める機能が多数追加されています。これにより、数百万規模の同時クエリを捌くエンタープライズ級のAIエージェント基盤の構築が可能になります。",
+    "topics": [
+      "Model Context Protocol (MCP)",
+      "Stateless Architecture",
+      "AI Agents",
+      "Cloud Native Infrastructure",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Scaling AI Agent Infrastructure with the MCP Stateless updates - Google Developers Blog"
+  }
+}

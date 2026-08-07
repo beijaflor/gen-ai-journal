@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:17:31.844995+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenCode × Amazon Bedrock で好きなモデルを選べる AI コーディング環境を構築する！",
+    "url": "https://zenn.dev/aws_japan/articles/opencode-bedrock-lab",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "オープンソースのコーディングエージェント「OpenCode」と Amazon Bedrock を組み合わせ、特定ベンダーに依存しない柔軟な開発環境の構築と、プロンプトキャッシュによる高いコスト削減効果を実証した記事。",
+    "summaryBody": "本記事は、複数のAIプロバイダーに接続可能なOSSコーディングエージェント「OpenCode」をAmazon Bedrockと連携させる方法を解説しています。主な検証内容は、モデルの解決方法、プロンプトキャッシュによるコスト削減、Claude Codeとの品質比較、およびIAMベースの権限モデルの4点です。実測の結果、Bedrock経由でもプロンプトキャッシュが正常に機能し、非キャッシュ時と比較して約77%（4.4倍）のコスト削減が可能であることを確認しました。また、Claude 3.5 Sonnetを用いた比較検証では、タスクの完遂能力においてツール間の差は小さく、モデル自体の性能が支配的であることが示されています。セキュリティ面では、IAMによる認証や監査ログの活用がメリットとして挙げられる一方、OpenCodeのデフォルト権限が「allow（許可）」寄りであるため、導入時の適切な設定（permission）が重要であると指摘しています。",
+    "topics": [
+      "Amazon Bedrock",
+      "OpenCode",
+      "生成AI",
+      "AIコーディングエージェント",
+      "プロンプトキャッシュ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 75,
+      "overall": 92
+    }
+  }
+}

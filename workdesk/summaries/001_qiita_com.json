@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:42:29.221124+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ガバメントクラウドでのAWS DevOps Agentの活用",
+    "url": "https://qiita.com/infra365/items/70eb40b12d6f9c0011ca",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ガバメントクラウドの複雑なマルチアカウント環境において、AWS DevOps Agentを活用してログ分析や障害調査を自律化し、運用負荷を大幅に軽減する手法を解説。",
+    "summaryBody": "本記事は、ガバメントクラウド運用におけるマルチアカウント・閉域ネットワーク・マルチベンダーといった特有の制約と、それによる運用負荷の増大を解決するための「AWS DevOps Agent」活用法をまとめたものです。主なポイントは以下の通りです。\\n1. **エージェントスペースの設計**: 共同利用方式（ASP）と単独利用方式（自治体）それぞれの構成において、調査スコープを定義するAgent Spaceをどのように配置し、クロスアカウントアクセスを設計すべきかを提示。\\n2. **多層防御のセキュリティ**: IAMロールによるAssumeRoleに加え、エージェントが実行可能な権限の上限を定義する「セッションポリシー（ガードレール）」による最小権限の原則の徹底。\\n3. **実用的なユースケース**: 「自分の管理するアカウント側に問題がないことの証明」という、マルチベンダー環境で頻発する問い合わせに対し、AIが各種メトリクスや変更履歴を調査して迅速に回答する具体例を紹介しています。自前でのログ集計ツール構築を不要にし、AIによる運用高度化を提唱する内容です。",
+    "topics": [
+      "AWS",
+      "DevOps Agent",
+      "ガバメントクラウド",
+      "運用自動化",
+      "CloudTrail"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

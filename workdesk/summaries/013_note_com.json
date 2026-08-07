@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:39:02.651183+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.mdとAGENTS.mdを削ったら、AIコーディングがグンと賢くなった",
+    "url": "https://note.com/o_ob/n/nd19cba8e11d7",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントの指示ファイル（CLAUDE.md等）から動的な進捗や不要な情報を削ぎ落とし、設計思想や地雷原の特定に絞ることでAIの「体感的な賢さ」を向上させる実践的なコンテキスト管理術。",
+    "summaryBody": "AIコーディングエージェント（Claude Code等）で使われる指示ファイル（CLAUDE.md/AGENTS.md）が肥大化し、AIの性能を阻害する問題への対策を解説しています。主な手法として、1. 進捗やタスク等の流動的な情報をIssueやログに分離し、指示書には不変のルールのみを残す「静動分離」。2. グローバル設定からプロジェクト固有のルールを排除。3. コードから推測可能な説明を省き、過去の事故や運用上の「禁止事項」などコードに現れない意図を重点的に残す。4. 大規模な仕様書は別ファイル化し、必要時のみ参照させる「段階的開示」を提唱しています。情報を詰め込むのではなく、AIが最短で正しい制約に到達できるよう「情報の配置」を最適化するコンテキストエンジニアリングの重要性を説いています。",
+    "topics": [
+      "AIコーディング",
+      "Claude Code",
+      "コンテキストエンジニアリング",
+      "プロンプトエンジニアリング",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

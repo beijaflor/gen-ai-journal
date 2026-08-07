@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:18:03.831058+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプトエンジニアリングのすすめかた",
+    "url": "https://zenn.dev/nrs/articles/70db94beb7b76d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "プロンプトエンジニアリングを「感覚」ではなく、promptfooを用いたテスト駆動開発（TDD）と同様の計測・評価サイクルとして定義し、その実践的なワークフローを解説しています。",
+    "summaryBody": "LLMプロダクト（TAKT）の開発において、プロンプト修正による副作用や回帰（デグレード）を防ぐための体系的なアプローチが紹介されています。筆者は、プロンプトエンジニアリングの実態を「文章術」ではなく「計測の仕組み作り」と定義しています。具体的な手法として、OSSツールである「promptfoo」を活用し、(1)実運用でのミス観測、(2)評価ケースへの落とし込み、(3)修正前の失敗（Red）確認、(4)最小限のプロンプト修正、(5)成功（Green）と回帰テストの実行、という一連のサイクルを回す重要性を説いています。特にLLM as a Judgeを用いた評価のコツや、評価ケースを資産として蓄積することで、モデルの挙動を安定させ、複雑なエージェントのループ問題を解消するプロセスが詳細に記述されています。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "LLM",
+      "promptfoo",
+      "テスト駆動開発",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

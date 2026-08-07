@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:24:19.806979+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdr で止まらず、精度の高い開発を進める工夫 ─ intent-cli で意図をもとに開発する",
+    "url": "https://zenn.dev/jtechjapan_pub/articles/intent-cli-herdr-orchestration",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "4体のAIエージェントを自律的に協調させる「intent-cli」開発フローにおいて、ターミナル管理ツール「herdr」を活用し、メッセージ駆動による停止しない自動開発ループを構築する技術的知見の解説。",
+    "summaryBody": "J-Tech JapanのCTOが、AIエージェント（設計・オーケストレーション・実装・レビュー）を組み合わせた高度な自動開発手法を公開しています。従来のagmsgベースの通信から、ターミナルワークスペース管理ツール「herdr」を用いた「herdr-only」モードへ移行した経緯と、その過程で発生した「エージェントが停止する」問題の解決策を詳説。具体的には、①完了報告、②ステータス変化の購読、③定期的な失速チェックという3段階の冗長な「起動経路」を設けることで、メッセージの取りこぼしを防止。また、エージェント間での作業場所の分離、メタデータとコードのブランチ管理、承認プロンプトへの人間介入ルールなど、1台のマシンで複数のドメイン開発を並行・自律稼働させるための実践的な工夫が網羅されています。",
+    "topics": [
+      "AIエージェント",
+      "intent-cli",
+      "herdr",
+      "自律開発",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

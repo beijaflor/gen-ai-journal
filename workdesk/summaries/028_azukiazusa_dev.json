@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:34:45.252137+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Flue 2.0 で導入された hook ベースのエージェントフレームワーク",
+    "url": "https://azukiazusa.dev/blog/flue-2-0-hook-agent-framework/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Flue 2.0は、ReactのHooksにインスパイアされた「Agent Hooks」を導入し、AIエージェントの状態管理や複雑なワークフローをTypeScriptで直感的に記述可能にするフレームワークです。",
+    "summaryBody": "### Flue 2.0 の概要\nAstroの制作者によるTypeScript製AIエージェントフレームワーク「Flue」がメジャーアップデートされました。最大の変更点は、Reactの設計思想を取り入れた「Agent Hooks」の導入です。\n\n### 主な特徴とメリット\n- **Agent Hooks**: `useModel`、`useTool`、`usePersistentState`などのフックを使い、関数としてエージェントを定義します。React同様に、カスタムフックによるロジックの再利用が可能です。\n- **柔軟な動的制御**: Reactの制約とは異なり、条件分岐（if文）内でのフック呼び出しが許可されています。これにより、状態に応じてツールやモデルを動的に切り替えることが容易です。\n- **複雑なワークフローの簡素化**: 専用のDSLを使わずに、通常のTypeScriptの制御構文でステートマシンのような多段階の対話フロー（聞き取り、提案、予約など）を実装できます。\n- **状態の永続化**: ステートはデフォルトでSQLite等に自動保存されるため、エージェントの再起動後も文脈を維持したやり取りが可能です。",
+    "topics": [
+      "Flue",
+      "AIエージェント",
+      "TypeScript",
+      "React Hooks",
+      "ステートマシン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

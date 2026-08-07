@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:13:29.645724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WriteGuard: MCPサーバーのためのきめ細かな書き込み制御機能",
+    "url": "https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントによるMCPサーバー経由の書き込み操作を安全に管理・監査するための新しい制御レイヤー「WriteGuard」を発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントが外部ツールと連携する際の標準規格であるMCP（Model Context Protocol）において、書き込み権限を安全に管理するための新機能「WriteGuard」を導入しました。エージェントが誤って大量のチケットを閉じたり、データベースを破壊したりするリスクを防ぐため、WriteGuardはツールごとにリスクティア（読み取り専用、最小影響、限定的書き込み、クリティカル）を設定し、ポリシーに基づいた実行可否の判断、実行時のラベル付け（アトリビューション）、および中央集中型の監査ログを提供します。これにより、ユーザーの権限を継承しつつ「どのエージェントがいつ何をしたか」を明確に追跡可能にし、人手による監視なしでの安全な自動化を支援します。現在はプライベートベータとして提供が開始されています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Cloudflare",
+      "AI Agent Security",
+      "Governance",
+      "WriteGuard"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "WriteGuard: Fine-grained controls for MCP Servers"
+  }
+}

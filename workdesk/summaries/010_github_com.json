@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:39:51.408672+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕事のためのマルチプレイヤーAIエージェント基盤「QM」",
+    "url": "https://github.com/yc-software/qm",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "組織内の個人やチームが、SlackやWebを通じて安全かつ協調的にAIエージェントを運用できる、サンドボックス完備のオープンソース実行基盤。",
+    "summaryBody": "QMは、スタートアップなどの組織利用を前提に設計されたマルチプレイヤー型AIエージェント実行基盤（ハーネス）です。主な特徴は、ユーザーごとに隔離された個人用ワークスペースと、Slackチャンネル等での共有ワークスペースを両立させている点にあります。各スコープには独自のメモリ、ファイル、権限、そして永続的なサンドボックス（仮想実行環境）が割り当てられ、他のユーザーに影響を与えずにコード実行やツール利用が可能です。\n\nアーキテクチャ面では、ヘッドレスなコアとPostgresによる永続層、そして隔離されたサンドボックスで構成されています。Pi、OpenCode、Claude Codeといった既存のエージェントエンジンをバックエンドとして切り替えて利用できるベンダーニュートラルな設計が特徴です。また、組織レベルでのセキュリティポリシー設定（厳格・自動・危険）や、監査ログの保持、内部Webアプリの構築・公開機能など、業務利用に不可欠なガバナンス機能も備えています。",
+    "topics": [
+      "AIエージェント",
+      "LLM基盤",
+      "Slack統合",
+      "サンドボックス",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - yc-software/qm: Multiplayer agent harness for work"
+  }
+}
