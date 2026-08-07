@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:47:02.685149+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ラズパイ3台でエヴァのMAGIを作る｜ローカルLLMで動く合議AIシステム",
+    "url": "https://tech-lab.sios.jp/archives/53583",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Raspberry Pi 3台とローカルLLM（Ollama）を用い、エヴァンゲリオンの合議制コンピュータ「MAGI」をLangGraphによるマルチエージェント構成で物理的に再現した構築事例。",
+    "summaryBody": "この記事では、3台のRaspberry Piをそれぞれ独立した人格（Melchior, Balthasar, Casper）に見立て、ローカルLLM（Ollama）とLangGraphを組み合わせて多数決を行う「合議AIシステム」の構築プロセスを解説しています。主な技術的ポイントとして、非力なRaspberry Piで推論速度を確保するためのコンテキスト長制限（1024）や生成トークン数の制限、モデルのRAM常駐化（keep_alive=-1）といったチューニング手法を紹介。また、0.5Bクラスの極小モデルで発生しやすい「理由と結論の矛盾」を、プロンプトの出力順序（reason → vote）の変更によって解決する実践的な知見を提供しています。ネットワーク設定やOllamaのサービス管理など、実機3台を並列動作させる際に直面した具体的なトラブルシューティングも網羅されており、エッジ環境でのLLM活用に非常に有益な内容となっています。",
+    "topics": [
+      "Raspberry Pi",
+      "Ollama",
+      "LangGraph",
+      "ローカルLLM",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:11:09.820931+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1日500コミットは、もう読めない ── だからコードレビューをやめた",
+    "url": "https://zenn.dev/singularity/articles/stopped-reviewing-my-code",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる超高速な開発サイクルにおいて、人間がコードを読まずに品質を担保するための、厳格な自動検証とAI同士の相互レビューを軸とした新しい開発パラダイムの提言。",
+    "summaryBody": "AIエージェントを並列稼働させ、1日500件ものコミットが生成される環境では、人間によるコードレビューは物理的に不可能です。本記事では「読まなくても壊れない」状態を維持するための具体的な戦略が公開されています。主な手法として、①AI用の規約ファイル（CLAUDE.md）によるスタックの統一、②ESLintやSonarJSを用いた「人間なら耐えられないほど厳しい」静的解析、③ロジックをPure関数に集約し、AIにエッジケースを網羅させるテスト設計、④実装したAIとは別のモデルによるGitHub Actions上での自動レビュー、の4点が挙げられています。著者は、ボトルネックが「書く速度」から「判断と統合の速度」へ移行したことを指摘し、エンジニアの役割が「コードを読む」から「動く画面を見て判断する」ものへと変容している現状をリアルな実体験に基づいて綴っています。",
+    "topics": [
+      "AIエージェント",
+      "Vibe Coding",
+      "コードレビュー自動化",
+      "静的解析",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 98
+    }
+  }
+}

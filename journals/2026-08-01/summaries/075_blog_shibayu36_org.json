@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:12:08.759736+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにGCPの調査を任せるため、readonly専用のgcloud configurationを用意する",
+    "url": "https://blog.shibayu36.org/entry/2026/07/29/173000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントにGCPの調査を安全に任せるため、閲覧専用のサービスアカウントを借用するgcloud configurationの構築手順。",
+    "summaryBody": "Claude CodeなどのコーディングエージェントにGCPの調査を依頼する際、AIの誤操作によって本番環境のリソースが変更されるリスクを回避する手法を紹介している。具体的には、`roles/viewer`のみを付与したサービスアカウントを作成し、そのアカウントとして振る舞う（Service Account Impersonation）専用の`gcloud configuration`を構築する方法を解説。これにより、コマンド一つで「読み取り専用」の状態と通常の作業状態を切り替えることが可能になり、安全にAIエージェントを活用できる環境を整えられる。設定コマンドの例や、書き込みが拒否されることの検証結果も含まれている。",
+    "topics": [
+      "GCP",
+      "gcloud",
+      "AI Agent",
+      "Security",
+      "IAM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

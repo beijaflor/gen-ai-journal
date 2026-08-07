@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:57:35.745787+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6、Claude、Gemini、Grokによる「モナ・リザ」描画能力の比較検証",
+    "url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.6、Claude Fable 5、Grok 4.5、Gemini 3.6 Flashの4モデルに仮想色鉛筆で絵を描かせ、その精度とコストを徹底比較した調査。",
+    "summaryBody": "2026年の主要AIモデル群を対象に、仮想の色鉛筆ツールを使用して白紙からモナ・リザ等の画像を再現する「描画アリーナ」の実験結果が報告されました。各モデルのツール使用法、実行コスト、出力品質が詳細に分析されています。総合的にはGPT-5.6 Solが最も優れた成果を上げ、高品質な描画を約7.7ドルの低コストで実現しました。対照的にClaude Fable 5は品質こそ高いものの、コストが160ドル以上と他モデルの20倍近くかかり、効率面で課題が見られました。Gemini 3.6 Flashは技術的な類似度（SSIM）で最高値を記録したものの、視覚的な美しさはGPTに劣る結果となり、Grok 4.5は実用レベルに達していないことが判明しました。興味深い発見として、モデルが自身の描画を何度も「確認」して修正を重ねても、ある時点で品質がピークに達し、最終的には最良の状態から劣化してしまうという現象が全てのモデルで共通して見られ、これは自律的なタスク遂行における推論の限界を示唆しています。",
+    "topics": [
+      "LLMベンチマーク",
+      "AI描画",
+      "ツール利用",
+      "コスト比較",
+      "推論能力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": "\"Drawing\" the Mona Lisa with GPT-5.6, Claude, Gemini, and Grok"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:55:45.095393+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeとサブエージェントを活用した「小規模開発チーム」基盤の構築",
+    "url": "https://qiita.com/su3-hokkaido/items/89fcfd2702ecba65c74d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのサブエージェント機能を使い、PdM・設計・開発・QAなど7つの役割を定義してファイルベースで連携させることで、高品質な自律開発を可能にするチーム基盤の構築事例。",
+    "summaryBody": "Claude Codeのサブエージェント機能を用いて、プロダクトマネージャー(PdM)からQAまで7つの専門役割を持つ「仮想開発チーム」を構築する試みが紹介されています。各エージェントは役割、責務、入出力、エスカレーション基準などの共通フォーマットで定義されています。特筆すべきは、エージェント間の直接通信ができない制約を「ファイルベースのパイプライン」と「メインセッションによるオーケストレーション」で解決している点です。判断・設計系にはClaude 3 Opus、実行・検証系にはClaude 3.5 Sonnetを割り当てることでコスト効率を最適化。また、人間が「計画承認」と「完了承認」のゲートを担い、gitへの書き込みを制限することで、AIの暴走を防ぎつつ品質を担保する堅牢なワークフローを実現しています。プロジェクト非依存のテンプレートとして設計されており、既存のガードレール（CLAUDE.md等）とも親和性が高い実用的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "マルチエージェント",
+      "ソフトウェア開発",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

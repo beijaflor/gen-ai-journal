@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:53:15.752493+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenClawなどに飽き足らず、エージェントアプリを自作してみた！",
+    "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2128302.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PC Watchコラムニストの西川氏が、既存のAIエージェントの肥大化に不満を感じ、軽量で実用的な自作エージェントをNode/TypeScriptで開発した記録。",
+    "summaryBody": "PC Watchの人気連載「西川和久の不定期コラム」において、既存のエージェントツール（OpenClaw等）の肥大化や機能的な不満を解消するため、独自のAIエージェントアプリをフルスクラッチで開発する過程が詳述されています。\n\n### 主な技術仕様と特徴\n- **技術スタック**: GUI対応やマルチプラットフォーム展開を考慮し、PythonではなくNode.js/TypeScriptを採用。esbuildと@yao-pkg/pkgを用いてバイナリ化。 \n- **オーケストレーション**: 推論特化モデルをメインに据えつつ、画像解析が必要な時のみ「Vision対応モデル」をツールとして呼び出す構成。コーディングや文書作成など、得意分野に応じたモデルの使い分けが可能。\n- **課題解決**: Windows/macOSの両対応におけるシェル操作の違い、ブラウザ自動操作時のロボット判定回避（ウォームアップ機能）、長時間利用に伴うコンテキスト圧縮（履歴の自動要約）など、実用上のハードルを一つずつ解消。\n- **機能拡張**: Gmail送信、MarkdownのPDF出力、cronによるタスク自動実行、メディア再生などを搭載。\n\n結論として、大規模なフレームワークを使わずとも、個人の日常使いに特化すれば約2,300行程度のコードで十分に実用的なエージェントが構築可能であることを示しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "TypeScript",
+      "ブラウザ自動操作",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

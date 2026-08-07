@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:22:54.089019+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.md は21セクションか、8行か — 公式ドキュメントで決着をつけた",
+    "url": "https://qiita.com/jqit_suwa/items/cea574550613de33a114",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの設定ファイル「CLAUDE.md」について、公式の推奨に基づき、冗長な指示を省いて簡潔に保つことがAIの精度と効率を最大化する鍵であると解説しています。",
+    "summaryBody": "Claude Codeがセッション開始時に読み込む設定ファイル「CLAUDE.md」の最適な記述量について、公式ドキュメントの見解を交えて解説した記事です。筆者は、20項目以上の網羅的なテンプレートよりも、10行以内の最小限の指示に留めるべきだと主張します。その理由は、CLAUDE.mdが毎リクエストのコンテキストに含まれるため、肥大化はトークンコストの増大を招くだけでなく、モデルの注意力を希薄化させ、肝心な指示を無視される原因になるからです。特に最新のClaude Opus 5等のモデルでは、自己検証や過度な強調（MUST/CRITICAL）の指示が逆にリソースの浪費や過剰反応を招く「逆効果」になる点に触れ、モデルが推測できないプロジェクト固有の前提や出力形式に絞り込む運用のコツをまとめています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "Anthropic",
+      "プロンプトエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

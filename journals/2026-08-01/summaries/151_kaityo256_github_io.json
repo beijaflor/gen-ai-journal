@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:52:30.683045+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "説明可能AI(XAI)の現状と展望",
+    "url": "https://kaityo256.github.io/explainable-ai-review",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "機械学習のブラックボックス問題を解決する『説明可能AI（XAI）』の定義や歴史、統計力学を用いた物理学的アプローチ、そしてEU AI Act等の最新規制動向を網羅的に解説した論考。",
+    "summaryBody": "AIが高度化・複雑化しブラックボックス化する中で、その判断根拠を人間が理解可能にする『説明可能AI（XAI）』の重要性が増しています。本記事では、XAIを「説明可能性」「信頼性」「確実性」の3軸で定義し、エキスパートシステムから2017年のDARPAプロジェクト、現在の深層学習に至る歴史を辿ります。ハルシネーションや敵対的サンプル、偽の相関（狼とハスキーの例）といった課題に対し、Grad-CAM等の可視化手法が提案されていますが、これら自体も欺瞞が可能であるという脆弱性が指摘されています。興味深い視点として、統計力学（イジングモデル等）を用いてニューラルネットワークの内部重みや相転移を解析する物理学的アプローチが、嘘のつけない「客観的な理解」として紹介されています。最後に、EU AI Actのリスク分類やNISTのXAI四原則といった法規制・基準の整備状況についても詳しく述べています。",
+    "topics": [
+      "XAI",
+      "統計力学",
+      "機械学習",
+      "EU AI Act",
+      "ハルシネーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 55,
+      "overall": 92
+    }
+  }
+}

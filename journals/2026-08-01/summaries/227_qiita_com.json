@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:33:56.027940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADK エージェントを Agent Registry に登録しようとしたら想定以上に複雑だった話",
+    "url": "https://qiita.com/re-watanabe/items/e2318f43535690879076",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ADKエージェントをGemini Enterpriseのスケジューラーと連携させるためAgent Registryへの登録を試みた結果、Agent Gatewayの構成やA2Aプロトコル対応といった高いハードルの存在が判明した。",
+    "summaryBody": "Google CloudのAgent Development Kit (ADK)で作成したエージェントをGemini Enterprise (GE)のスケジューラーに繋げるための検証記録です。GE上で作成したエージェント以外に「スケジュール編集」メニューが出ない問題を解決するため、Agent Registryへの統合を試みましたが、以下の障壁が確認されました。まず、Agent Registryへの登録自体（Non-a2a）は可能ですが、GEから参照するにはプロジェクト全体に影響を及ぼし得る「Agent Gateway」の構成が必要となります。さらに、正式な統合にはAgent2Agent (A2A)プロトコルに対応し、エージェントカード（.well-known/agent-card.json）を介したメタデータの公開が求められます。筆者は、ADKエージェントを直接GEに統合する複雑さを考慮し、Cloud Run JobとCloud Schedulerを組み合わせる代替策が現実的であると結論づけています。",
+    "topics": [
+      "Google Cloud",
+      "Vertex AI",
+      "ADK",
+      "Gemini Enterprise",
+      "Agent Registry"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 70,
+      "annexPotential": 90,
+      "overall": 82
+    }
+  }
+}

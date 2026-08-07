@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:48:13.178003+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェント時代のデジタルアイデンティティ",
+    "url": "https://speakerdeck.com/fujie/ai-ezientoshi-dai-nodezitaruaidenteitei",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが自律的に行動する時代において、人間の意図を反映し、適切な権限管理と説明責任を果たすためのアイデンティティ基盤と標準技術の活用を解説。",
+    "summaryBody": "AIエージェントが人間の代理として自律的にツールやデータを選択・実行する時代における、アイデンティティ管理（IDM）の重要性と実装の方向性を提示しています。従来のサービスアカウント（NHI）が決定論的な処理を行うのに対し、AIエージェントは推論に基づき動的に権限を要求・行使するため、意図とスコープの不一致による過剰権限や、Prompt Injectionを通じたConfused Deputy（混同代理人）問題が発生しやすくなります。また、AIの高度な探索能力により、匿名データの再特定リスクが劇的に高まる点も指摘されています。解決策として、既存のOAuth 2.1やOpenID ConnectをベースにToken Exchangeを用いて権限を縮小・短寿命化する設計や、Model Context Protocol (MCP)、A2Aプロトコル、さらに将来的なドラフトであるAAuth、OIDC-A、Delegate SD-JWTといった、エージェントを独立した主体として扱う技術動向が紹介されています。単なる技術仕様に留まらず、技術・契約・運用の3軸からなるトラストフレームワークの構築や、リスクに応じたHuman in the Loopの設計が、AI時代に人間中心のデータエコシステムを維持するための鍵となります。",
+    "topics": [
+      "デジタルアイデンティティ",
+      "AIエージェント",
+      "OpenID Connect",
+      "OAuth",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    }
+  }
+}

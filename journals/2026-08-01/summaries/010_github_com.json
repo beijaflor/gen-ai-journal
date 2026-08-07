@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:26:45.773175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grafana AI SDK for Go: Vercel AI SDK互換のGo言語向けAI開発キット",
+    "url": "https://github.com/grafana/ai-sdk",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercel AI SDKと互換性を持ち、Go言語でストリーミング、ツール呼び出し、構造化出力などを実現するフルスタックAIアプリケーション開発用SDK。",
+    "summaryBody": "Grafanaが公開した「AI SDK for Go」は、Vercel AI SDKの設計を踏襲し、Go言語でAIバックエンドを構築するためのライブラリです。最大の特長は、フロントエンドの`@ai-sdk/react`（`useChat`など）と直接通信可能なServer-Sent Events (SSE) プロトコルをサポートしている点にあり、既存のReactフロントエンドを維持したまま、バックエンドをTypeScriptからGoへシームレスに移行・統合できます。Anthropic、Amazon Bedrock、OpenAIといった主要なモデルプロバイダーに対応しており、Goのプレーンな関数をAIツールとして実行する機能や、スキーマ検証済みの構造化出力、リトライ処理、Prometheusメトリクス、Agent Observabilityなどの本番環境向け機能が統合されています。Goエンジニアが型安全かつ高性能なAIサービスを構築するための強力なツールセットです。",
+    "topics": [
+      "Go",
+      "Vercel AI SDK",
+      "Grafana",
+      "LLM",
+      "Full-stack Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - grafana/ai-sdk: Grafana AI SDK for Go — streaming, tool-calling AI backends that speak fluent @ai-sdk/react"
+  }
+}

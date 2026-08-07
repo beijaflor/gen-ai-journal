@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:41:33.073468+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cursor-bridge: CursorのサブスクリプションでClaude Codeを利用可能にするCLIツール",
+    "url": "https://github.com/hkc5/cursor-bridge",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cursorの有料プランに含まれる「Auto」モデル枠を活用し、AnthropicのClaude Code CLIを追加のAPIコストなしで実行可能にするRust製のブリッジツールです。",
+    "summaryBody": "cursor-bridgeは、AnthropicがリリースしたCLIエージェント「Claude Code」を、Cursorのサブスクリプション権限を利用して動かすためのツールです。通常Claude Codeの利用には別途AnthropicのAPIクレジットが必要ですが、本ツールはリクエストをCursorのバックエンドへ透過的にプロキシすることで、定額料金内での利用を可能にします。Rustで書かれた単一の軽量バイナリで提供され、macOSではキーチェーンから自動で認証トークンを取得するため設定が不要。既存のNode.jsベースのプロキシサーバーとは異なり、コマンド実行時にのみ一時的なプロキシとして機能し、終了時に自動でクリーンアップされる利便性の高さが特徴です。",
+    "topics": [
+      "Cursor",
+      "Claude Code",
+      "AIエージェント",
+      "Rust",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - hkc5/cursor-bridge: Claude Code that runs on your Cursor subscription. One Rust binary, zero config."
+  }
+}

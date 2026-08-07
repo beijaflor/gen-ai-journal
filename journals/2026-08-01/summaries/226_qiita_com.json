@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:34:10.425027+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実験！Claude Code各モデルの消費トークン比較してみた！",
+    "url": "https://qiita.com/tamashiro_nobuyuki/items/602e632ed24243cbb97c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおいて、Opus 4.8、Sonnet 5、Haiku 4.5の各モデルの消費トークン量を、質問タスクとツール作成タスクの2パターンで比較検証した記事です。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」を用い、異なるモデル間でのトークン消費傾向を調査。単純な質問タスクではSonnet 5が、試行錯誤を伴うツール作成タスクではOpus 4.8が最も多くのトークンを消費するという結果が得られました。単純な「高性能＝高消費」という図式ではなく、タスクの性質やターンの回数によって消費量が変動することが示されており、特にキャッシュの重みを考慮した独自集計による分析が特徴です。消費量が多いほど、より深い思考や検証が行われている傾向も見受けられ、モデル選択の新しい指標を提示しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "トークン",
+      "比較検証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

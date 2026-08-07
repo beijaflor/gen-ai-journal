@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:20:06.838340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hermes Agent ウェイクワード機能（「Hey Hermes」）の設定と解説",
+    "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/wake-word",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Hermes Agentをハンズフリーで操作可能にする、オンデバイス動作のウェイクワード機能の設定、エンジン選択、およびトラブルシューティングに関する包括的なガイド。",
+    "summaryBody": "Hermes Agentのウェイクワード機能は、CLI、TUI、およびデスクトップアプリを「Hey Siri」や「Alexa」のようなハンズフリーアシスタントに変える機能です。主な特徴として、プライバシーに配慮した完全なオンデバイス検出、デフォルトの『openWakeWord』のほか、任意のフレーズが使える『sherpa』や高精度な『Porcupine』といった複数の検出エンジンのサポートが挙げられます。デスクトップアプリではプロファイルごとに異なるウェイクワードを設定して切り替えることも可能です。設定ファイル（config.yaml）やコマンドラインでの詳細なカスタマイズ方法に加えて、macOSでのマイク権限の問題やWindowsでの入力デバイス選択といった、導入時に遭遇しやすいトラブルへの対処法も詳しく解説されています。音声合成（TTS）と音声認識（STT）の両方が準備できている場合にのみ有効化され、バックグラウンドで待機しつつもユーザーのコマンド開始まで音声データが送信されることはありません。",
+    "topics": [
+      "Hermes Agent",
+      "ウェイクワード",
+      "音声操作",
+      "AIエージェント",
+      "オンデバイスAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "Wake Word | Hermes Agent"
+  }
+}

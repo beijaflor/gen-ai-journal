@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:38:00.496631+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gigatoken: GB/s 単位の圧倒的な高速化を実現した言語モデルトークナイザー",
+    "url": "https://github.com/marcelroed/gigatoken",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "SIMDの活用やキャッシュ階層の最適化により、HuggingFaceのトークナイザーと比較して最大1000倍、GB/s単位の処理速度を実現したRust製トークナイザー。",
+    "summaryBody": "Gigatokenは、大規模言語モデル（LLM）のトークナイズ処理を極限まで高速化したライブラリです。Rustで実装され、Pythonからも容易に利用可能です。最大の特徴は、従来のHuggingFaceやtiktokenと比較して数百倍から千倍以上のスループットを誇る点で、AMD EPYCサーバー環境では24 GB/sを超える速度を記録しています。これは、SIMDを用いたプレトークナイズの最適化、分岐の最小化、および効率的なプレトークンキャッシュ階層の導入によって実現されました。HuggingFaceやtiktokenとの互換モードを備えており、既存のコードへの導入も容易です。Llama 3、Qwen、DeepSeek、GLMなどの主要なBPEトークナイザーを広くサポートしており、大規模データセットのプリトレーニングやファインチューニングにおけるボトルネックを解消します。",
+    "topics": [
+      "LLM",
+      "Tokenization",
+      "Rust",
+      "Performance Optimization",
+      "NLP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "marcelroed/gigatoken: Language model tokenization at GB/s"
+  }
+}

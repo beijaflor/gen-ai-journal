@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:26:04.922366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-manager: tmuxを活用したAIコーディングエージェント管理用TUIツール",
+    "url": "https://github.com/YoanWai/agent-manager",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやGemini CLI等の複数AIエージェントをtmuxセッション上で一括管理し、ライブステータス監視や差分レビューを可能にするTUIツール。",
+    "summaryBody": "agent-managerは、Claude Code、OpenCode、Codex、Grok、Gemini CLIなどの各種AIコーディングエージェントを効率的に運用するためのターミナルUI（TUI）です。各エージェントは独立したtmuxセッションとしてバックグラウンドで動作するため、ツール自体を終了しても処理が中断されません。主な機能として、複数セッションのライブステータス表示、ディレクトリごとのグループ管理、セッションにアタッチせず直接指示を送れる「クイックプロンプト」、そしてコード変更箇所のシンタックスハイライト付き差分（diff）レビュー機能を備えています。レビュー機能では、特定の行にコメントを付けてAIに再考を促すワークフローも統合されています。既存のCLIツールをそのままラップして使用するため、既存の設定やMCPサーバーとの互換性も維持されます。",
+    "topics": [
+      "AIエージェント",
+      "TUI",
+      "tmux",
+      "開発ツール",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - YoanWai/agent-manager: Terminal UI to manage AI coding-agent sessions (Claude Code, OpenCode, Codex, Grok, Gemini CLI) in tmux: live status, group tree, quick prompts, diff review. macOS, Linux, Windows via WSL2."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:13:17.906161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の仕組み — ハーネスの動作と Claude API",
+    "url": "https://qiita.com/megmogmog1965/items/7db66f5a5aa306c68eb8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのCLIツール「Claude Code」が、ステートレスなAPI、状態管理を担うハーネス、JSONL形式のログをどのように組み合わせて自律的な動作を実現しているかを詳説した技術解説。",
+    "summaryBody": "この記事は、Claude Codeの内部構造を「Claude API」「ハーネス」「セッションログ」の3層構造として体系的に解説しています。主な内容は以下の通りです。\n\n- **ステートレスなAPIとプロンプトキャッシュ**: Messages API自体は会話履歴を保持しないため、ハーネスが毎回全履歴を送信。コスト抑制のためにサーバーサイドのプロンプトキャッシュをcache_controlで制御する仕組みを詳述。\n- **Agentic Loopの二重構造**: ハーネス側で回る「ツール実行ループ」と、API応答内で完結する「thinking（推論）」の役割分担を整理。\n- **セッションとJSONL構造**: 会話履歴が連結リスト形式のJSONLで保存される仕組みを解明。`/compact`による要約置換や、`/rewind`によるファイルスナップショットと履歴の分岐管理を視覚的に説明。\n- **コンテキスト注入技術**: システムプロンプトやCLAUDE.md、`&lt;system-reminder&gt;`タグを用いた動的な情報の差し込み、および不要な再読込を防ぐ設計（pull型設計）について解説。\n\nClaude Codeが単なるラッパーではなく、高度なコンテキスト管理を行う「エージェント用馬具（harness）」であることを技術的側面から浮き彫りにしています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLMエージェント",
+      "アーキテクチャ",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 5,
+      "overall": 96
+    }
+  }
+}

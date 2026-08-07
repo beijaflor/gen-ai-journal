@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:20:19.826877+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIにおけるHTML/画像出力の必要性と改善案としてのRHW(reviewable-html-workbench)の紹介",
+    "url": "https://zenn.dev/u1/articles/rhw-reviewable-html-workbench",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMの出力増大による人間の認知負荷を軽減するため、Artifactsの課題を解消し資料内での直接対話やローカル管理を実現するツール「RHW」を提案する。",
+    "summaryBody": "本記事は、生成AI（特にClaude Code等のエージェント）との協働において、テキストのみの対話が引き起こす「外在的な認知負荷」の課題と、その解決策としてのHTML出力の重要性を論じています。\n\n主なポイントは以下の通りです：\n1. **認知負荷の最適化**: 膨大なテキスト出力は「情報の投げ落とし」となり、人間の理解を妨げます。HTMLによる構造化・視覚化により、提示の悪さから生じる負荷を下げ、本質的な検討（germane load）にリソースを割く必要性を説いています。\n2. **Artifactsの利点と限界**: ClaudeのArtifactsは共有や版管理に優れていますが、「資料上での直接的な対話が不可」「生成物がローカルに残らない」「機密情報の意図しない公開リスク」といった課題を指摘しています。\n3. **RHW (Reviewable HTML Workbench) の紹介**: 著者が開発したRHWは、Artifactsの利便性を維持しつつ、箇所を選択してコメントできる対話機能、ローカル完結によるセキュリティとGit連携、マルチエージェント対応を実現しています。\n\nAIが生成した内容を「ただ受け取る」のではなく、人間が効率的に検証し、精度を高めるためのワークフロー改善を提案する内容となっています。",
+    "topics": [
+      "生成AI",
+      "Claude Code",
+      "RHW",
+      "認知負荷",
+      "Artifacts"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

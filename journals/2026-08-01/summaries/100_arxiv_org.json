@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:04:41.447848+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi Linear: 表現力と効率性を両立したアテンション・アーキテクチャ",
+    "url": "https://arxiv.org/abs/2510.26692",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Kimi Linearは、独自の線形アテンションKDAとMLAを融合させることで、フルアテンションを凌駕する性能と100万トークン下での6倍の推論速度を両立した革新的なモデルです。",
+    "summaryBody": "Kimi Teamが発表した「Kimi Linear」は、線形アテンションをベースとしたハイブリッドアーキテクチャであり、短文・長文・強化学習の各シナリオにおいて、従来のフルアテンション（MLA）を初めて上回る性能を達成しました。技術の中核は「Kimi Delta Attention (KDA)」で、Gated DeltaNetに細粒度ゲート機構を導入し、RNN形式の有限状態メモリを極限まで活用します。また、ハードウェア効率を最適化するため、Diagonal-Plus-Low-Rank (DPLR) 行列の特殊なバリアントを用いた独自のチャンク計算アルゴリズムを開発しました。3Bアクティブパラメータ／48B総パラメータのモデルを用いた実験では、KVキャッシュを最大75%削減し、長文脈（1Mトークン）におけるスループットを6倍に向上させています。モデルのチェックポイントやカーネル実装はオープンソース化されており、既存のアテンション機構を置き換える実用的な選択肢となります。",
+    "topics": [
+      "Linear Attention",
+      "Kimi Linear",
+      "Large Language Models",
+      "Transformer Efficiency",
+      "Long Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "Kimi Linear: An Expressive, Efficient Attention Architecture"
+  }
+}

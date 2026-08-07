@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:02:28.582725+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 5に「---」を送ると地図製作者に関する5,000トークンの文章が生成される現象の調査",
+    "url": "https://austinsnerdythings.com/2026/07/28/claude-opus-5-dangling-document-effect/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 5が「---」などの特定のマークダウン記号をユーザーの入力不足ではなく「未完の文書フラグメント」と誤認し、地図製作などをテーマにした膨大なテキストを勝手に補完生成する特異な挙動を分析したレポート。",
+    "summaryBody": "この記事は、Claude Opus 5（仮）において、特定の区切り記号を送信するとAIが対話モードを逸脱し、長大な創作文書を生成し始める現象を600回以上のAPIコールを通じて調査したものです。\n\n### 主な発見\n- **トリガーの正体**: この現象は「水平線」という概念ではなく、マークダウンの文法（`---`や`##`）によって引き起こされます。HTMLの`&lt;hr&gt;`では発生しません。AIはこれらを「補完が必要な文書ファイルの一部」と見なしています。\n- **「地図製作者」への偏り**: 生成されるタイトルの約9%に「地図製作者（Cartographer）」が含まれ、特に「不在」や「未完成」をテーマにした創作（例：存在しない場所の地図）を好む傾向があります。これは表現者（地図製作者、司書など）の役割を持つ名詞ほど顕著です。\n- **境界の混乱**: AIが自分の生成したテキストをユーザーの発言だと誤認して自問自答を始めるケースや、特定の文字列（例：Maintenance Log 447）に対して謎のコンテンツ拒否（Refusal）が発生する事例が確認されました。\n\n### 対策\nこの挙動は、システムプロンプトで「あなたは対話型アシスタントである」という文脈を明示的に与えることで完全に抑制できます。ベアメタルなAPI利用時におけるプロンプトの重要性を浮き彫りにしています。",
+    "topics": [
+      "LLM挙動解析",
+      "Claude Opus 5",
+      "マークダウン補完",
+      "プロンプトエンジニアリング",
+      "ハルシネーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "I sent Claude Opus 5 “- – -” and it wrote me 5k tokens about a cartographer"
+  }
+}

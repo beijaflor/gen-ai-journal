@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:25:52.873146+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Git worktreeはコーディングエージェントの隔離境界にはならない",
+    "url": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Git worktreeは設定やフックを共有するためAIエージェントの隔離には不十分であり、安全性のためにローカルクローンを使用すべきであると説く技術解説。",
+    "summaryBody": "AIコーディングエージェントを並列実行する際、多くのツールがGit worktreeを利用して環境を分離しているが、筆者はこれがセキュリティ上の隔離境界にならないことを警告している。worktreeは`.git/hooks`や`.git/config`、スタッシュなどを元のリポジトリと共有するため、エージェントがホストマシン上で任意のコードを実行したり、ユーザーのコミット情報を書き換えたりすることが可能だ。検証の結果、ローカルでの`git clone --shared`はworktreeとほぼ同等のディスクコストと生成速度でありながら、設定やフックを適切に隔離できる。人間が操作する場合はworktreeが適しているが、自動化されたエージェントにはクローンを使用すべきだと結論付けている。",
+    "topics": [
+      "Git",
+      "AIエージェント",
+      "セキュリティ",
+      "開発ツール",
+      "ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Git worktrees are not an isolation boundary for coding agents"
+  }
+}

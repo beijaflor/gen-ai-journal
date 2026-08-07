@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:52:45.704408+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを使うべきか？導入を判断するための6つの質問フレームワーク",
+    "url": "https://cameronmpalmer.medium.com/should-you-even-use-an-llm-b4f3b7914f4d",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMの柔軟性と引き換えになる決定論の欠如を正しく理解し、真に曖昧さの解決が必要な箇所にのみ適用するための6つの評価基準を提案しています。",
+    "summaryBody": "AI導入のコンサルタントである著者が、自身のリード獲得システムをすべてLLMエージェントで構築し失敗した経験から、LLM導入の是非を判断するための実践的なフレームワークを提示しています。LLMは「柔軟性（柔軟な解釈や推論）」を得るために「決定論（再現性・確実性）」を犠牲にするツールであり、従来のコードより低速で高コスト、かつテストが困難です。著者は、ワークフローが事前に定義可能か、同一の出力が必要か、実行中に曖昧な解釈が必要か、検証コストは低いか、誤出力のリスク、既存代替案との比較という6つの質問を通じて導入を検討すべきだと説いています。結論として、すべての工程をAI化するのではなく、検索やDB挿入などの決定論的な処理はコードで行い、ターゲットの適合性判断などの「曖昧さが残る箇所」にのみLLMを活用するハイブリッドな設計を推奨しています。",
+    "topics": [
+      "LLMアーキテクチャ",
+      "AI導入戦略",
+      "決定論と柔軟性",
+      "ソフトウェアエンジニアリング",
+      "意思決定フレームワーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Should you even use an LLM?. A six-question framework for deciding… | by Cameron Palmer | Jul, 2026 | Medium"
+  }
+}

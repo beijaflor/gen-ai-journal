@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:13:59.619351+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【解説】Claude Mythos が暗号アルゴリズムを解読？！ 耐量子計算機暗号 HAWK 編",
+    "url": "https://qiita.com/satokan3/items/d306f067086272e6aa8a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAI「Claude Mythos」が、耐量子計算機暗号HAWKの格子構造に潜む未使用の対称性を発見し、鍵回復攻撃を大幅に改善して標準化撤退に追い込んだ経緯の技術解説。",
+    "summaryBody": "AnthropicがAIモデル「Claude Mythos Preview」を用いて、NISTの耐量子計算機暗号（PQC）署名候補であった「HAWK」の脆弱性を発見した事例の解説です。AIは、HAWKの基盤となる円分体のガロア群に存在する3つの対合のうち、既存研究で注目されていなかった「τ（タウ）」を利用した攻撃手法を提案。これにより、鍵回復に必要な計算量（SVPオラクル次元）が理論上半分に削減されました。実証実験ではHAWK-256の等価鍵が実際に復元され、HAWKチームはNISTの標準化プロセスからの撤退を表明しました。本記事は、この発見が既存の暗号学的な『逃げ道』を AI が正確に突き進んだ結果であることを数学的背景とともに詳述し、Falconなど他方式への影響や、AIによる暗号研究の可能性についても論じています。",
+    "topics": [
+      "耐量子計算機暗号 (PQC)",
+      "Claude Mythos",
+      "HAWK",
+      "格子暗号",
+      "AIによる暗号解読"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

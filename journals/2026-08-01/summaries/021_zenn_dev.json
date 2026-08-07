@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:24:02.952451+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "agent-browserはもう古い？ Web調査をコマンドに変えるOpenCLI",
+    "url": "https://zenn.dev/nasubikun/articles/opencli-web-research",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがブラウザで行った調査プロセスを、再利用可能なサイト専用コマンド（アダプター）へと昇華させる「OpenCLI」とその周辺技術のトレンドを解説した記事。",
+    "summaryBody": "AIエージェントによるブラウザ操作のフェーズは、単なる「画面操作」から「調査結果の資産化」へと進化しています。本記事では、WebサイトをCLIコマンドとして扱えるようにするOSS「OpenCLI」を中心に、最新の自動化トレンドを紹介しています。\n\n### 主なトピック\n- **OpenCLIの革新性**: ブラウザでの探索で得た知見を「アダプター」として保存し、次回から `opencli twitter bookmarks` のような直接的なコマンドで情報を取得可能にします。\n- **競合ツールとの比較**: \n  - **agent-browser**: `derive-client` により通信を解析し、内部APIを叩く独立したクライアントを生成可能。\n  - **Webwright**: 操作手順をPlaywrightプログラム（code-as-action）として残すアプローチ。\n- **メンテナンスの共通化**: サイトの仕様変更に対し、AIエージェントがアダプターを修復する「自己修復」の仕組みが重要視されています。\n\nブラウザという人間向けのインターフェースを、AIがいかに効率よく、かつ持続的に利用するかという課題に対する、現代的な回答が提示されています。",
+    "topics": [
+      "OpenCLI",
+      "AIエージェント",
+      "agent-browser",
+      "ブラウザ自動化",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:21:28.994936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI前提でE2Eテストを設計し直した話",
+    "url": "https://zenn.dev/asuene/articles/e2e-test-ai-driven-management",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントによるテスト作成・保守の低コスト化を前提とし、広範囲な正常系カバーとYAMLベースの管理を軸に再設計されたE2Eテストの事例紹介。",
+    "summaryBody": "AI時代の到来によりE2Eテストの運用コストが劇的に低下することを見越し、アスエネ株式会社で行われたE2Eテストの再設計手法を解説しています。主な特徴として、従来は「コスト面からクリティカルパスに絞る」のが定石だったテスト範囲を、AI前提で「正常系を広くカバーする」方針へと転換。テストケースを構造化されたYAML形式（Gherkin構文）で管理し、スキーマ検証を通じてAI生成物の整合性を機械的に担保しています。また、役割分担として「人間が仕様（YAML）をレビューし、AIが実装（コード）と仕様の照合を行う」体制を構築。テストケースIDとPlaywrightのタグを紐付けることで、仕様とコードの乖離を自動で検出可能にするなど、AIと人間が協調して品質を担保する具体的なアーキテクチャが示されています。",
+    "topics": [
+      "E2Eテスト",
+      "AIコーディングエージェント",
+      "Playwright",
+      "Gherkin",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

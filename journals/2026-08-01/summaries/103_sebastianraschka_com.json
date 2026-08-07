@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:03:49.143420+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kimi K3のアーキテクチャ解説：2.8兆パラメータの巨大オープンモデルの構造",
+    "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2.8兆パラメータを誇る史上最大のオープンウェイトモデル「Kimi K3」の、LatentMoEやNoPEの採用を含む推論効率と性能を両立したアーキテクチャの詳細を解説。",
+    "summaryBody": "Sebastian Raschka氏が、Moonshot AIが公開した2.8兆パラメータの巨大モデル「Kimi K3」の構造を分析。前身のKimi Linearをスケールアップし、推論効率を追求した設計が特徴です。主な技術的特徴として、線形層を圧縮する「LatentMoE」、RoPE（回転位置埋め込み）を完全に廃止した「NoPE」の採用、および層間の残差接続をアテンションスコアで動的に重み付けする「Attention residuals」が挙げられます。DeepSeek V4などの最新トレンドを汲みつつ、マルチモーダル対応や巨大規模での効率化を実現しており、オープンウェイトモデルの新たなマイルストーンとなる構成を紐解いています。",
+    "topics": [
+      "Kimi K3",
+      "LLM Architecture",
+      "LatentMoE",
+      "NoPE",
+      "Open-Weight Models"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 45,
+      "overall": 92
+    },
+    "originalTitle": "Kimi K3 Architecture Notes | Sebastian Raschka, PhD"
+  }
+}

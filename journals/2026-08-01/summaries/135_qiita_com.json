@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:56:13.124142+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「最後に検証して」はもう書かなくていい — Claude Opus 5 でプロンプトの常識が逆転した4つのこと",
+    "url": "https://qiita.com/jqit_suwa/items/74a96ce83dde5245407a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Opus 5の進化により、従来の「自己検証の指示」や「過剰なタスク分担」が逆にコスト増や精度低下を招くようになった、新しいプロンプトの定石を解説する。",
+    "summaryBody": "最新モデルClaude Opus 5におけるプロンプトエンジニアリングの大きな変化を4つの観点で解説しています。1. モデルが自動で検証を行うため「自己検証」の指示は二重コストになる、2. 自律的な分担機能により「分担の指示」は過剰なオーバーヘッドを生む、3. 応答の長さ調整には「effort」値より直接的な文章指示が有効、4. 「重大な問題のみ報告」という制約はモデルのフィルタリングを過敏にし見逃しを増やす、という実態を指摘。また、内部思考（thinking）の標準化に伴うmax_tokensの設計変更や、拒絶（refusal）時のAPIエラーハンドリングの見直しなど、開発者が直面する具体的な破壊的変更についても触れています。",
+    "topics": [
+      "Claude",
+      "Prompt Engineering",
+      "LLM",
+      "Anthropic",
+      "API設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

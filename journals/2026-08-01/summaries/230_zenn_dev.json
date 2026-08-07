@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:33:17.943208+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント用コード探索CLI「AST-Digger」を作ってトークン消費を激減させた話",
+    "url": "https://zenn.dev/snaga/articles/2026-07-25-ast-digger-agent-native-cli",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントのコード探索におけるトークン消費を、Tree-sitterを活用したAST解析により80〜90%削減するCLIツール「AST-Digger」の開発背景と効果を解説。",
+    "summaryBody": "AIエージェントにソースコードを全文読み込ませる従来の手法は、コンテキストの肥大化によるコスト増大とノイズによる精度低下（Denoising-Firstの課題）が深刻なボトルネックとなっていた。本記事では、この問題を解決するために開発されたGo製のCLIツール「AST-Digger」を紹介している。Tree-sitterを用いて抽象構文木（AST）を高速解析し、関数のシグネチャのみを抽出する「骨格抽出」や、特定のメソッドのみを切り出す「ピンポイント抽出」を可能にする。実運用ではトークン消費量を80〜90%削減し、LLMの迷走を抑制して開発効率を大幅に向上させた。JSON出力、リミッター、エージェント自身が機能を把握できる「agent-context」機能など、AIエージェントが自律的に利用することを前提としたAgent-Nativeな設計が特徴である。",
+    "topics": [
+      "AIエージェント",
+      "Tree-sitter",
+      "Go",
+      "AST",
+      "トークン削減"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

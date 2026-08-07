@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:39:25.877630+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cursor・Manus・Spotifyの「ハーネス」を読み比べた",
+    "url": "https://zenn.dev/tak3/articles/2686517823d1e7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cursor、Manus、Spotifyなど先進6社のエンジニアリングブログから、AIエージェントの性能を左右する「ハーネス（周辺回路）」の設計思想を6つの要素で解像度高く比較・分析した記事。",
+    "summaryBody": "この記事は、AIエージェントの実装における「ハーネス（harness）」、すなわちモデルの周囲を固めるループ、ツール、コンテキスト管理、ガードレールなどの設計思想を、先進企業6社（Cursor, Manus, Mozilla, Spotify, Ramp, Shopify）の公開情報を元に比較・整理しています。\n\n### ハーネスを構成する6要素\n著者はハーネスを「ループ」「ツール実行系」「コンテキスト管理」「統制」「状態・実行環境」「観測」の6要素に分解し、各社の強みを分析しています。\n\n### 各社の特徴的な設計\n- **Cursor**: モデルの癖（パッチ形式か置換か等）に合わせた個別最適化と、「Keep Rate」等の独自の観測指標を重視。\n- **Manus**: KVキャッシュヒット率を最重要視し、ファイルシステムを究極のコンテキストとして扱う設計。\n- **Mozilla**: セキュリティバグ修正のため、エージェント自身に「再現テスト」を実行させ仮説検証を行うループを構築。\n- **Spotify**: Claude Agent SDKを自社ラッパーで包み、ビルドやテストが通らない限りPRを出さない厳格な検証ゲート（統制）を設置。\n- **Ramp**: エージェントをモデル知能の限界まで解放するため、全SaaSツールを配線し全コンテキストを渡す思想。\n- **Shopify**: システムプロンプトの肥大化を防ぐため、ツール実行時に必要な指示を動的に渡す「JIT instructions」を提唱。\n\n### 結論\nエージェントの信頼性は、モデルの賢さ以上に「出す前に検証し、通らなければ出さない」という検証ループの有無に依存しており、ハーネスは進化し続けるモデルへの追従装置として機能していると結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Harness Engineering",
+      "ソフトウェアアーキテクチャ",
+      "Cursor"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

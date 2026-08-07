@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:41:04.094619+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code・Codexに動作確認まで自走させる｜ビルド・操作・録画・証跡を残す開発フロー",
+    "url": "https://qiita.com/vivinko/items/7300b32de1d127acc421",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCodexにアプリのビルド、起動、自動操作、画面録画、構造化ログ取得までを自走させ、人間が最終判断を下すための証跡を自動生成する高度な開発フローを解説しています。",
+    "summaryBody": "この記事では、Claude CodeやCodexといったAIエージェントを用いた開発において、コード生成だけでなく動作確認までを自動化する実践的な手法が紹介されています。筆者はWindows環境を対象に、PowerShell、Python、UI Automation、録画ソフトなどを組み合わせ、AIが自らアプリを操作し、その証跡を残す仕組みを構築しています。\n\n主なフローの特徴は以下の通りです：\n1. **定義の厳格化**: SPEC（仕様）、PLAN（計画）、TASK（タスク）、TEST（テスト）、REVIEW（レビュー）に資料を分け、AIが参照する優先順位を固定する。\n2. **Gate判定**: 実装前に「Gate 0」を設け、baseline（変更前）のビルド成功や録画取得を確認してから実装を開始する。\n3. **自動化された検証**: 録画前のpreflight（ウィンドウ位置やDPIの固定）から、自動操作、フレーム単位の画像抽出、構造化ログによる性能判定までをAIに実行させる。\n4. **証跡の管理**: 修正のたびに「attempt」単位でフォルダを分け、ビルドログ、録画、アセットのチェックサム等を一式保存する。\n\nAIに最終判断を任せるのではなく、人間が承認するために必要な「判断材料」を完璧に揃えさせることに主眼を置いており、AI駆動開発の信頼性を大幅に高めるアプローチとなっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "AI駆動開発",
+      "自動テスト",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 45,
+      "overall": 95
+    }
+  }
+}

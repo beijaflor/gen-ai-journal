@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:05:21.107914+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの確信度スコアを私が嫌う理由",
+    "url": "https://justinflick.com/2026/07/27/llm-confidence-scores.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLM自身に0〜100の確信度スコアを出力させる手法は、科学的根拠が乏しく実用性も低いため、ユーザーを惑わすだけの「心理的な気休め」に過ぎないと批判する記事。",
+    "summaryBody": "著者のJustin Flick氏は、LLMにJSON形式などで確信度（Confidence Score）を算出させる一般的な手法について、その無意味さを強く主張しています。主な論点として、第一にLLMが自身の内部状態を正確に定量化できる科学的根拠がないこと（自己修正機能の限界）、第二に「確信度」の定義が曖昧で、スコアが「情報の正確性」なのか「文章の流暢さ」なのか不明確であることを挙げています。多くの研究でも、モデルが出力する数値は特定の丸い数字（100や80など）に偏る傾向があり、連続的な信頼尺度として機能していないことが示されています。著者は、もしモデルが自身の誤りに気づけるのであれば、スコアを出すのではなく回答を修正すべきだと指摘し、信頼性を求めるならプロンプトの調整ではなく、検索（RAG）精度の向上や外部的な検証プロセスに注力すべきだと結論づけています。",
+    "topics": [
+      "LLM",
+      "確信度スコア",
+      "RAG",
+      "ハルシネーション",
+      "キャリブレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Why I Hate LLM Confidence Scores"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:38:55.147413+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SODA における Devin の活用事例",
+    "url": "https://zenn.dev/team_soda/articles/cc5fead918f71c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自律型AIエンジニア「Devin」をGitHub ActionsやSlackと連携させ、エラー調査やレビュー指摘のルール化、依存関係更新の分析を自動化したSODA社の実践的な活用事例。",
+    "summaryBody": "SODA株式会社における自律型AIエージェント「Devin」の具体的な導入事例を紹介しています。同社では、単なるチャット利用にとどまらず、GitHub ActionsやSlack、Datadogと組み合わせた4つのワークフローを構築しています。\n\n1. **GitHubメンション起動**: IssueやPRのコメントから@devinaiと呼ぶだけで、文脈を引き継いだセッションを開始。デグレチェックや議論のルール化に活用しています。\n2. **エラー自動調査（Auto-Triage）**: DatadogからのSlackアラートを監視し、ブラウザ拡張等のノイズとコード修正が必要なエラーを自動で選別。原因調査からPR作成まで自律的に行います。\n3. **レビュー指摘の自動ルール化**: 定期実行により、PRでの指摘事項を収集・分析し、コード規約（Markdown）へ追記するPRを自動生成。AIと人間の協調による品質向上ループを構築しています。\n4. **依存関係更新PRのレビュー**: Renovate等のPRに対し、リリースノートやChangeLogなどの一次情報を収集し、マージ安全度を3段階で評価・報告します。\n\n運用上のノウハウとして、「禁止事項（Forbidden Actions）」の明示、出力フォーマットの固定、最終判断は人間が行うといった、AI特有のハルシネーションや制御不能を防ぐための実践的なTipsが共有されています。",
+    "topics": [
+      "Devin",
+      "AIエージェント",
+      "GitHub Actions",
+      "自動化",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

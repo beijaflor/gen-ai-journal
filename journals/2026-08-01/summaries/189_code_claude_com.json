@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:42:49.030292+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのデータ利用ポリシーとプライバシー設定ガイド",
+    "url": "https://code.claude.com/docs/en/data-usage",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが提供するCLIツール「Claude Code」におけるデータのトレーニング利用、保持期間、テレメトリ制御、および商用環境でのプライバシー保護の詳細を解説する公式ドキュメント。",
+    "summaryBody": "Claude Codeにおけるデータの取り扱いに関する包括的なガイドです。主なポイントは以下の通りです。1. **トレーニング方針**: 個人ユーザー（Free/Pro/Max）は設定でトレーニングへの協力可否を選択できますが、商用ユーザー（Team/Enterprise/API）のデータは明示的なオプトインがない限りモデル学習に使用されません。2. **データ保持**: 標準の保持期間は30日間ですが、個人ユーザーが学習を許可した場合は5年間となります。Enterpriseプランではゼロデータ保持（ZDR）設定も可能です。3. **テレメトリと制御**: 使用状況メトリクスやエラーレポートは環境変数（`DISABLE_TELEMETRY`等）で完全に無効化でき、企業のセキュリティ要件に合わせた運用が可能です。4. **マルチクラウド対応**: Amazon BedrockやGoogle Cloud Vertex AI等のサードパーティプロバイダー経由で利用する場合、デフォルトでテレメトリはオフになります。5. **セキュリティ**: 通信はTLS 1.2+で暗号化され、ローカル実行時のデータフローやWebFetchツールの安全性チェックの仕組みも詳述されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "データプライバシー",
+      "AIガバナンス",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Data usage - Claude Code Docs"
+  }
+}

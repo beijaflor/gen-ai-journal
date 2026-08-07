@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:16:07.952110+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のChromeセキュリティ：脆弱性の発見、トリアージ、修正をAIで加速",
+    "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GoogleはAI（LLM）を活用してChromeの脆弱性発見からトリアージ、修正パッチ生成までのプロセスを自動化し、メモリ安全性とリリース速度の向上を推進している。",
+    "summaryBody": "Google Chromeのセキュリティチームは、AI時代の脅威に対抗するための包括的な戦略を公開しました。主な取り組みは、脆弱性の「発見」「トリアージ」「修正」「リリース」の各段階にAIを統合することです。具体的には、Geminiベースのエージェント「Big Sleep」を用いて13年以上潜伏していたバグを特定し、AIによる自動トリアージで開発者の工数を月間数百時間削減しています。また、AIエージェントによる修正パッチとテストコードの自動生成により、最新のChrome 149/150では過去23リリース分を上回る1,000件以上のバグ修正を実現しました。さらに、ブラウザの再起動を不要にする「動的パッチ（Dynamic Patching）」や、C++コードの安全性向上（MiraclePtr、spanification）、Rustへの移行といった構造的なメモリ安全性の強化も継続しています。これにより、攻撃者のAI利用に対抗し、防御側の優位性を確保することを目指しています。",
+    "topics": [
+      "Chrome Security",
+      "LLM",
+      "Gemini",
+      "Vulnerability Discovery",
+      "Memory Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Stronger with every update: How we’re making Chrome and the web safer in the AI Era"
+  }
+}

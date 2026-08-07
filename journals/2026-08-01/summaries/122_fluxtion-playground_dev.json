@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:11:22.317985+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "グラフエンジニアリングにはコンパイラが必要だ — Fluxtionブログ",
+    "url": "https://fluxtion-playground.dev/blog/2026-07-29-graph-engineering-needs-a-compiler",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成が容易になる一方でシステムの複雑性が増す中、グラフ構造から決定論的な実行コードを自動生成する「コンパイルされたオーケストレーション」の必要性を論じている。",
+    "summaryBody": "AIの普及によりローカルなコード生成コストは低下したが、複数のコンポーネントが組み合わさった際のグローバルな振る舞いを人間が把握することは困難になっている。LangChainやLangGraphのようなグラフエンジニアリングは構造を可視化するが、Fluxtionはさらに一歩進め、グラフから決定論的なJava実行コードを直接生成する「実行推論（Execution Inference）」を提唱している。これにより、イベントの伝播、リトライ、ライフサイクル、状態管理などの複雑なオーケストレーションを開発者が手書きするのではなく、静的な依存関係からコンパイラが導出できるようになる。筆者は、不確実なAI（確率的な島）を決定論的なコンパイル済みの実行環境（確実な海）で囲むことで、AI駆動型開発における安全性と信頼性を担保できると主張している。",
+    "topics": [
+      "Graph Engineering",
+      "AI Engineering",
+      "Compiler Theory",
+      "Fluxtion",
+      "Deterministic Orchestration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Graph Engineering Needs a Compiler — Fluxtion blog"
+  }
+}

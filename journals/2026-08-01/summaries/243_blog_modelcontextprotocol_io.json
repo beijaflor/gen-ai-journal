@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:30:32.507031+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP 2026-07-28 仕様のリリース：ステートレス化とエンタープライズ向け拡張性の向上",
+    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Model Context Protocol (MCP) がステートフルからステートレスなアーキテクチャへと刷新され、スケーラビリティ、キャッシュ効率、およびセキュリティが大幅に強化されました。",
+    "summaryBody": "Model Context Protocol (MCP) の最新仕様「2026-07-28」が発表されました。本リリースの最大の特徴は、従来の双方向ステートフルなプロトコルから、HTTPフレンドリーな**ステートレスなプロトコルコア**への移行です。これにより、サーバーはセッション管理のオーバーヘッドなしにロードバランサー配下で容易にスケール可能となります。\n\n主な技術的アップデートは以下の通りです：\n- **MRTR (Multi Round-Trip Requests):** 永続的な接続を維持せずに、ツール実行時のユーザー確認や情報補完を可能にする新しいリクエスト方式を導入。\n- **ヘッダーベースのルーティング:** HTTPヘッダーにメソッド名やツール名を含めることで、ペイロードを解析せずにゲートウェイやWAFでのルーティングと認可が可能に。\n- **キャッシュ機能の強化:** リスト取得結果にTTL（有効期限）とキャッシュスコープを導入し、クライアント側の効率的なキャッシュとプロンプトの安定性を実現。\n- **セキュリティの厳格化:** RFC 9207準拠の認証バリデーションや、CIMD（Client ID Metadata Documents）への移行による認可フローの堅牢化。\n\nまた、TypeScript、Python、Go、C#の主要SDKが新仕様に対応し、AWS (Bedrock)、Google Cloud、Cloudflare、Microsoft (Foundry) などの主要企業が即時サポートを表明しています。AIエージェントの社会実装に向けた、プロトコルの成熟を象徴する重要なマイルストーンです。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Stateless Architecture",
+      "AI Agents",
+      "API Specification"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "The 2026-07-28 Specification"
+  }
+}

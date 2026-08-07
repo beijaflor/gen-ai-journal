@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:43:48.223987+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "8ドルのマイコンESP32-S3で28.9MパラメータのLLMを動作させる「esp32-ai」",
+    "url": "https://github.com/slvDev/esp32-ai",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google GemmaのPer-Layer Embeddings手法を応用し、安価なESP32-S3マイコン上で28.9MパラメータのLLMを約9.5 tok/sで動作させた画期的なプロジェクト。",
+    "summaryBody": "本プロジェクトは、わずか8ドル程度のマイコン「ESP32-S3」上で、2,890万（28.9M）パラメータを持つLLMを動作させる試みです。従来、同様のチップで動作するモデルは26万パラメータ程度が限界でしたが、本プロジェクトではGoogleのGemmaモデルで採用されている「Per-Layer Embeddings」手法を導入することで、この壁を打破しました。\n\n推論の仕組みとして、モデルの大部分（2,500万パラメータ分）を低速なフラッシュメモリ上のルックアップテーブルとして保持し、推論の各ステップで必要な約450バイトのみを高速なSRAMに読み込むことで、メモリ消費を劇的に抑えています。これにより、4ビット量子化された14.9MBのモデルを、外部サーバーなしの完全ローカル環境で毎秒約9.5トークンという実用的な速度で実行可能です。\n\nモデルはTinyStoriesデータセットで学習されており、短い物語の生成に特化しています。高度な推論やコード生成はできませんが、アーキテクチャの工夫によってエッジデバイスにおけるAIの可能性を大きく広げる成果といえます。",
+    "topics": [
+      "Edge AI",
+      "LLM",
+      "ESP32-S3",
+      "TinyML",
+      "Gemma"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - slvDev/esp32-ai"
+  }
+}

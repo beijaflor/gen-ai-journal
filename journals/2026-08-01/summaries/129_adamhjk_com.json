@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:57:46.675212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン消費を削減するための実践ガイド：AIエージェントのコストを8分の1にする手法",
+    "url": "https://www.adamhjk.com/blog/a-practical-guide-to-reducing-token-spend/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの非決定論的なループを決定論的なコードに置き換える「Swamp」フレームワークを活用し、トークン消費を8倍、実行時間を2倍改善する方法を解説した実用ガイド。",
+    "summaryBody": "LLMベースのエージェントにおいて、複雑なワークフローやロジックを「スキル（指示）」だけで実装することは極めて非効率であり、コスト増大の要因となります。本記事では、Sentryでの高額なAPIコスト事例を引き合いに、エージェントのコーディネーター役をLLMに任せるのではなく、決定論的なコード（Swampワークフロー）に移行すべきだと主張しています。具体例としてコードレビューツール「Garfield」を挙げ、450万トークン・12分かかっていた処理を、Swampを導入することで50万トークン・6.5分まで削減した実績を示しています。既存スキルの理解、Swamp拡張機能への変換、ブラックボックステストによる計測、そしてリファクタリングという4つのステップを通じて、高価なLLMの知能を必要な場所にのみ配置し、コストパフォーマンスを最大化する設計指針を提供しています。",
+    "topics": [
+      "AI Agent",
+      "Cost Optimization",
+      "Token Management",
+      "Swamp Framework",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "A Practical Guide to Reducing Token Spend"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T07:53:54.348558+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自作APIをChatGPTからアクセス可能にする「Super MCP」",
+    "url": "https://zenn.dev/reizt/articles/super-mcp-chatgpt",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数の自作APIを単一のMCPサーバーに統合し、OpenAPI定義から動的にツールを生成・認証管理する個人用基盤「Super MCP」の構築事例。",
+    "summaryBody": "個人の食事記録やトレーニング履歴などの自作APIをChatGPTから利用する際、APIごとにMCPサーバーの実装やOAuth設定を行う手間を解消するために開発された「Super MCP」についての解説記事です。この基盤はCloudflare（Hono, D1, Workers）上で構築されており、WebコンソールからOpenAPI仕様と認証情報を登録するだけで、ChatGPTから各APIを呼び出せるようになります。\n\n主な特徴として、MCPツールの肥大化を防ぐために公開ツールを`list_commands`と`call_command`の2つに固定し、モデルが必要な操作を動的に検索・実行する設計を採用しています。また、ChatGPTからSuper MCPへの認証と、Super MCPから各APIへの認証という「二方向のOAuth」を分離して管理する実装についても詳述されています。セキュリティ上の観点から現在は個人利用に限定されていますが、自作APIのプロトタイピングや書き込み処理の集約に特化した効率的なアプローチが提示されています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "ChatGPT",
+      "Cloudflare Workers",
+      "OpenAPI",
+      "OAuth"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-02T08:24:16.882726+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPの大型アップデート（2026-07-28）で何が変わったか —— TypeScript SDK v2で試す",
+    "url": "https://zenn.dev/komlock_lab/articles/mcp-stateless-spec-2026",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "2026年7月28日のMCP仕様変更によるステートレス化、ハンドシェイクの廃止、MRTRの導入といった主要な変更点と、TypeScript SDK v2での実装・挙動が解説されています。",
+    "summaryBody": "2026年7月28日に公開されたModel Context Protocol (MCP) の大規模な仕様変更についてエンジニア視点で解説した記事です。最大の変更点は「完全なステートレス化」であり、従来のinitializeハンドシェイクやMcp-Session-Idが廃止され、各リクエストが単体で完結するモデルに移行しました。これに伴い、状態が必要な処理は『ハンドル』の持ち回りや、新設された『Multi Round-Trip Requests (MRTR)』によるリクエストのリトライ（requestStateの受け渡し）で実現する設計に変わっています。また、Roots・Sampling・Loggingがコア機能から非推奨となり、認可の強化（RFC 9207準拠等）やヘッダーベースルーティングの導入も行われました。記事内ではTypeScript SDK v2を用いた実装例を紹介し、サーバープロセスを強制終了しても別プロセスで処理を継続できるステートレス性の利点を実証しています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "TypeScript",
+      "AI Agent",
+      "API Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
