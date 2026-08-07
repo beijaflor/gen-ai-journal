@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:37:42.343400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "修正PRを食べてレビュースキルが賢くなる：Claude Codeによる自己改善サイクル",
+    "url": "https://speakerdeck.com/yuyaumetsu/xiu-zheng-prwoshi-heterehiyusukirukaxian-kunaru-claude-codeniyoruzi-ji-gai-shan-saikuru",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、不具合修正PRから見落とし原因を分析してコードレビュー用のチェック観点を自動更新する「自己改善サイクル」の構築事例。",
+    "summaryBody": "メルペイのQAエンジニアが提唱する、AIエージェント（Claude Code）を用いた開発プロセスの改善事例です。主な仕組みは、チーム固有の設計パターンに基づくレビューを実行する「/review-pr」スキルと、不具合修正PRを分析してレビュー観点を自ら更新する「/improve-review-pr」スキル、そしてGitHub Actionsを用いた修正PRの自動検出ワークフローの3つで構成されます。AIが生成した更新案に対し、あえて人間の承認を挟む『Human-in-the-Loop』設計を採用することで、スキルの品質維持とチームへの知識定着を両立しています。単にAIにレビューを任せるだけでなく、AIが失敗から学び、永続的に賢くなるサイクルを実用的なワークフローとして構築している点が特徴です。",
+    "topics": [
+      "Claude Code",
+      "コードレビュー",
+      "GitHub Actions",
+      "QA改善",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

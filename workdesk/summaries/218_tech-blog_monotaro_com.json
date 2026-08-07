@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:41:16.328695+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "シニアエンジニア目線をAIレビューへ 〜 判断を移植した社内エージェント「Makasetaro」の設計",
+    "url": "https://tech-blog.monotaro.com/entry/2026/08/05/090000",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AI駆動開発で急増したPRレビューによるシニアエンジニアの疲弊を解消するため、判断プロセスを移植し、文脈を解する社内AIエージェント「Makasetaro」を開発・導入した事例。",
+    "summaryBody": "MonotaRO社が、AIツール普及に伴う「PR増によるシニアエンジニアのレビュー負荷」を解決するために開発したAIレビューエージェントの設計詳細です。Claude Agent SDKをベースに、GitHubを直接操作させない「ハーネス設計」を採用し、安全かつ確実なレビュー動作を担保。設計の核心は「インナーループ（1実行内での精度向上）」と「アウターループ（PR全体の文脈継承）」の二重構造にあり、過去の議論やコメント履歴を踏まえた人間らしい合意形成を再現しています。また、コストガバナンスとエンゲージメント（Actioned/Engaged）を可視化することで、組織的な運用持続性を確保しています。",
+    "topics": [
+      "AIエージェント",
+      "コードレビュー",
+      "Claude",
+      "LLM",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

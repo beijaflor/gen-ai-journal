@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:45:26.568092+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM Wikiパターンの標準化 OKF(Open Knowledge Format) の解説",
+    "url": "https://zenn.dev/finatext/articles/2ea88e4b1c2e5b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Cloudが発表したOpen Knowledge Format (OKF)は、LLMが再利用・更新可能な構造化知識を蓄積する「LLM Wiki」パターンの標準化を目指す新仕様である。",
+    "summaryBody": "Google Cloudが2026年6月に発表した「Open Knowledge Format (OKF)」について、その背景となるLLM Wikiの概念から詳細に解説した記事です。従来のRAGが抱える「チャンク間の文脈欠如」や「推論の重複」といった課題に対し、OKFはMarkdownとYAMLを用いて知識を構造化・永続化する「第二の脳」の役割を果たします。Andrej Karpathyが提唱したLLM Wikiの思想を具現化したものであり、情報のポータビリティ向上に寄与します。一方で、構文のみの標準化に留まり語彙の意味までは規定していない点や、更新の仕組みが仕様に含まれていない点など、現状の盲点についても冷静に分析されています。",
+    "topics": [
+      "OKF",
+      "LLM Wiki",
+      "RAG",
+      "Google Cloud",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

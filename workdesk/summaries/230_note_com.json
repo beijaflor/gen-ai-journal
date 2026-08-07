@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:38:07.385371+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ComfyUIでMiniMax H3の動画生成（T2V）をテスト",
+    "url": "https://note.com/mayu_hiraizumi/n/nd66cfebfe5d0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ComfyUIで最新の動画生成モデル「MiniMax H3」を使用し、音声付き動画（T2V）を生成するための環境構築、モデル設置、および実用的なワークフローの解説。",
+    "summaryBody": "この記事は、MiniMax社が公開した映像と音声を同時に生成できる最新モデル「MiniMax H3」をComfyUI上で動作させるための詳細なガイドです。\n\n### 主な内容\n- **モデルの概要**: 1回の推論で映像・台詞・効果音・BGMを同期させて出力するH3モデルの特徴（fl2va, ref2va）を紹介。\n- **推奨環境**: VRAM 24GB以上が推奨されますが、オフロード機能により8-12GBでも動作可能。メインRAMは64GB以上が推奨されています。\n- **モデルの設置**: Comfy Org版の軽量モデル（int8/fp16等）のダウンロード先と、適切な配置フォルダの指定。\n- **実用ワークフロー**: 著者が作成した修正済みのJSONワークフロー（t2v_minimax-h3_test0a.json）の配布と、解像度・長さ設定のコツ、Easy Cacheによる高速化の解説。\n- **プロンプト作成術**: Google Geminiを活用し、H3のプロンプトガイドに沿った詳細なストーリーボード形式のプロンプトを生成する手法を提案。\n\n著者のRTX 5060Ti 16GB環境では、約5秒の動画生成に約3分（185〜194秒）を要するとのことです。家庭用PCで高品質な音声付き動画を生成できる強力な選択肢として評価されています。",
+    "topics": [
+      "MiniMax H3",
+      "ComfyUI",
+      "動画生成AI",
+      "T2V",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 86
+    }
+  }
+}

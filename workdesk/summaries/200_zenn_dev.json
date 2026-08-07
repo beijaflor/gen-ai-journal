@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:45:57.073499+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "脆弱性を作り込まないために、Claude公式「Security Guidance Plugin」を導入した話",
+    "url": "https://zenn.dev/rakko_inc/articles/claude-code-security-guidance-intro",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeにセキュリティレビュー機能を統合する公式プラグイン「Security Guidance Plugin」の仕組みと、実運用における検知精度やノイズの検証結果を解説した実戦的ガイド。",
+    "summaryBody": "AI駆動開発におけるセキュリティレビューの負荷増大を背景に、Anthropic公式の「Security Guidance Plugin」を導入した際の知見をまとめています。このプラグインは、編集直後の文字列チェック、AIサブエージェントによる差分レビュー、コミット時の検証という3段階のガードレールを開発フローに組み込みます。著者の検証では、SSRFやSQLインジェクションなどの意図的な脆弱性を100%検知できた一方、実運用での警告頻度は約2.7%と低く、開発を阻害しないことが示されました。設定ファイル1行で導入可能で、自律的な修正提案まで行う仕組みや、コメント内の単語への誤検知、Bashコマンド経由の編集が検知を外れるといった運用上の注意点についても詳しく言及されています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "脆弱性診断",
+      "AI駆動開発",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

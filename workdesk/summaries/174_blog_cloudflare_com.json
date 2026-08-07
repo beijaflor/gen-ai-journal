@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T10:02:16.329764+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "次世代MCP（Model Context Protocol）の登場：ステートレス化による進化とCloudflareの対応",
+    "url": "https://blog.cloudflare.com/mcp-v2/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Model Context Protocol (MCP) の新仕様「2026-07-28」によりプロトコルが完全ステートレス化され、Cloudflare Workers上でのスケーラブルかつ低コストな運用が可能になりました。",
+    "summaryBody": "Cloudflareは、エージェントと外部サービスの相互運用の標準であるMCP（Model Context Protocol）の最新仕様「2026-07-28」のリリースと、それへの全面対応を発表しました。最大の前進は「完全ステートレス化」です。従来の仕様ではセッション維持やスティッキーセッションを必要としていましたが、新仕様ではハンドシェイクが不要になり、Cloudflare Workersのようなリクエスト単位のインフラでより効率的に動作します。また、追加情報を求める「elicitation（聞き出し）」プロセスも、ストリーム維持を必要としないMulti Round-Trip Requests (MRTR) 方式に刷新されました。さらに、HTTPヘッダーにメソッド名を明示することでWAFやレート制限の適用を容易にする改善や、RFC 9207に基づく認可の強化、明確な機能ライフサイクルの導入が行われ、エンタープライズ環境での実運用に適した成熟したプロトコルへと進化を遂げています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Cloudflare Workers",
+      "AI Agents",
+      "Serverless"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "The next generation of MCP"
+  }
+}

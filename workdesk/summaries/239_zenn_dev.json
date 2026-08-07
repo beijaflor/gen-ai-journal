@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:35:59.754704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "58% の Pull Request を AI が承認するようになった",
+    "url": "https://zenn.dev/she_techblog/articles/937836550dfdf3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SHE株式会社が、PRレビューのボトルネック解消のためAIによる自動承認システムを導入し、58%のPRをAIが承認する体制を構築した事例。",
+    "summaryBody": "PRレビューが開発リードタイムのボトルネックとなっていた課題に対し、SHE株式会社はAIによる自動コードレビューと承認判断（Approve）を導入しました。過去のPRを分析した結果、約60%が無言のapproveであった実態を受け、「人間がレビューすべき箇所」を決定的なロジックとLLM（Claude）による8項目の判定で定義。AIの意見（Approve/Pending/Need fix）と、人間レビューの要否（Required/Optional）という独立した2軸で管理するフローを構築しました。導入から2週間で全体の58%のPRがAIによって承認されるようになり、品質を担保しつつ開発速度を大幅に向上させています。また、AIが疑問点を確認する「pending」ステータスを設けることで、文脈に応じた対話型の審査も実現しています。",
+    "topics": [
+      "AIコードレビュー",
+      "GitHub Actions",
+      "生産性向上",
+      "LLM",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

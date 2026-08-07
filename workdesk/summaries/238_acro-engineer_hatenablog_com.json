@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:36:13.743595+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自然言語だけでKibanaダッシュボードを作成！Elastic DashBuilder MCP Appを試してみた",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/08/07/120000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIアシスタントがMCP経由でElasticsearchのデータを解析し、対話形式の指示だけでKibanaダッシュボードを自動生成できるツール「Elastic DashBuilder MCP App」の実践レビュー。",
+    "summaryBody": "Elastic DashBuilder MCP Appは、MCP（Model Context Protocol）を利用してAIアシスタントがElasticsearchのデータ構造を理解し、ES|QLによる分析や可視化、ダッシュボード作成を自動化するサンプルアプリケーションです。本記事では、ECサイトのサンプルデータを用い、フィールド情報の確認からKPIメトリクス、時系列グラフ、カテゴリ別売上などのパネル生成、そしてKibanaへのエクスポートまでの一連の流れを検証しています。自然言語で「売上状況を把握できるダッシュボードを作って」と指示するだけで、AIが最適なフィールドを選定し、レイアウト調整まで対話的に実行できる点が大きな特徴です。ダッシュボード作成の工数削減や、Kibana操作に不慣れなユーザーへの支援ツールとしての高い可能性を示唆する一方、最終的な集計ロジックの正確性については人間によるES|QLのレビューが不可欠であると結論づけています。",
+    "topics": [
+      "Elasticsearch",
+      "Kibana",
+      "MCP",
+      "AIエージェント",
+      "データ可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

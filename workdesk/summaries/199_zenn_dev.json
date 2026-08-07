@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:46:09.037274+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SkillをGitHub Copilotで\"育てる\" — 実証的プロンプト改善の実践レポート",
+    "url": "https://zenn.dev/aiforall/articles/cb36b724e20a43",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotの指示（Skill）を「白紙の実行者」を用いた反復的なテスト駆動開発手法「empirical-prompt-tuning」で改善し、精度を向上させる実践的なプロセスを解説。",
+    "summaryBody": "GitHub Copilot Chatにおける指示（Skill）の品質を向上させるため、mizchi氏が提唱する「empirical-prompt-tuning」を応用した実践レポートです。執筆者バイアスを排除するため、改善作業用とは別の「新規チャット（白紙の実行者）」を用いてSkillの挙動を検証し、単純なOK/NG判定だけでなく「実行者の裁量補完（False Positive）」まで特定してフィードバックするワークフローを定義しています。正規表現生成Skill（regex-builder）を例に、抽象的な指示を「部品ごとの値域検討」や「検証ステップの追加」へと具体化することで、初期の低精度から汎化性能の高い100%の精度へと育てるプロセスを詳しく解説しています。プロンプトを「なんとなく」書く状態から、テスト駆動で堅牢化する手法として非常に有用です。",
+    "topics": [
+      "GitHub Copilot",
+      "Prompt Engineering",
+      "Empirical Prompt Tuning",
+      "LLM",
+      "テスト駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

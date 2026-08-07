@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:44:50.347786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レスポンシブな音声AIのためのリアルタイムシステムを6ヶ月で構築した手法",
+    "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが開発した第3世代音声システム「GPT-Live」における、フルデュプレックス・ストリーミング・アーキテクチャと低レイテンシ化の技術的詳細の解説。",
+    "summaryBody": "OpenAIは、人間のような自然な対話を実現する最新の音声AIシステム「GPT-Live」のアーキテクチャを公開しました。従来のシステムが抱えていた「ターン検出器」による判断の遅れを、聴取と発話を同時に行うフルデュプレックス・モデルの採用により根本から解消しています。\n\n技術的側面では、メディア処理とアプリケーションロジックを分離し、WebRTCをベースとした高速なメディアパスを構築。深い思考が必要な場合には、会話を中断せずにGPT-5.5等のフロンティアモデルへ非同期で処理を委譲（Delegation）する仕組みを導入しています。さらに通信プロトコル面では、接続確立を劇的に短縮する「WARP」や「Instant Connect」を独自開発しました。\n\n本番環境でのサイレントテストを通じて、GPUのスループットだけでなく、CPU負荷や地理的近接性がエンドツーエンドのレスポンス性能に与える影響を特定・最適化しており、この基盤は今後のエージェント連携やマルチモーダル体験の核心となります。",
+    "topics": [
+      "GPT-Live",
+      "リアルタイム通信",
+      "WebRTC",
+      "低レイテンシ",
+      "フルデュプレックス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "How we built a realtime system for responsive voice AI in six months | OpenAI"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:49:54.173446+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMは共通鍵暗号を突破できない：Anthropicの解読成果と構造的障壁",
+    "url": "https://www.bfswa.blog/p/llms-wont-break-symmetric-crypto",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのLLMによる暗号解読成果を評価しつつも、共通鍵暗号の持つ「数学的構造の欠如」や「経験的な性質」から、LLMが主要な暗号を破ることは困難であると論じる記事。",
+    "summaryBody": "著名な暗号学者JP Aumasson氏が、Anthropic社のLLM「Claude Mythos」による最新の暗号解読成果を分析し、共通鍵暗号の将来を考察した。Anthropicは格子ベース署名候補「HAWK」の安全性評価を下げ、7段AES-128への攻撃を改良したが、これらは実用上の脅威には至っていない。著者は、LLMがAESやSHA-3等の主要アルゴリズムを破れない理由として、1. 高レベル構造の安全性、2. 数学的構造を持たない意図的な「乱雑さ」、3. 攻撃手法が既知の差分解読に集約されていること、4. 統計的な試行錯誤を要する経験的な性質、5. 長年の検証実績、の5点を挙げる。結論として、LLMは暗号解読よりも、セキュリティ証明のバグ発見や、分析が不十分なポスト量子暗号候補の検証に活用すべきだと主張している。",
+    "topics": [
+      "LLM",
+      "暗号解読",
+      "共通鍵暗号",
+      "Anthropic",
+      "AES"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "LLMs won't break symmetric crypto - by JP Aumasson"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:36:49.223579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Plugins: AIエージェント向けポータブル・プラグイン規格",
+    "url": "https://agent-plugins.org/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Amazon、Microsoft、OpenAI、Vercelらが主導する、AIエージェントのスキルやMCPサーバーを複数のクライアント間で共通利用可能にするためのオープンなパッケージ規格。",
+    "summaryBody": "Agent Pluginsは、AIエージェント向けの再利用可能なコンポーネントをパッケージ化するためのベンダーニュートラルな標準規格（v1.0.0）です。これまでクライアントごとに独自の形式が存在していたプラグイン構造を統一し、一度の開発で多様なAIクライアントに対応させることを目的としています。\n\n主な特徴は以下の通りです：\n- **標準的なパッケージ構成**: `plugin.json`を核に、`skills/`ディレクトリや`mcp.json`（Model Context Protocol）を含めるディレクトリ構造を定義。\n- **高い互換性**: Amazon、Cursor、Microsoft、OpenAI、Vercelといった主要な開発者が技術運営委員会に参加し、エコシステム全体での相互運用性を確保。\n- **拡張性**: 逆ドメイン形式の拡張名前空間により、共通のコア機能を維持したままクライアント固有の動作（hooks）を追加可能。\n\nこれにより、開発者は特定のプラットフォームに縛られず、汎用的な「AIツール」を配布・展開できるようになります。",
+    "topics": [
+      "AI Agent",
+      "MCP",
+      "Standardization",
+      "Interoperability",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Agent Plugins"
+  }
+}

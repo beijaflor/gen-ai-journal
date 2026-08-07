@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:39:44.783079+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アラート疲弊からの脱却へーSOC業務におけるAIエージェント活用の実践",
+    "url": "https://speakerdeck.com/kintotechdev/aratopi-bi-karanotuo-que-hesocye-wu-niokeru-ai-esientohuo-yong-noshi-jian-v2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "攻撃の高速化に対し、Amazon Bedrockを用いた自社製マルチエージェントを導入することで、SOCのトリアージ業務を15分以内に短縮し、人間の判断を支援する実践的な設計手法を提示している。",
+    "summaryBody": "KINTOテクノロジーズが、高度化・高速化するサイバー攻撃に対抗するために構築したSOC（Security Operations Center）向けAIエージェントの事例紹介です。\n\n### 主な内容\n1. **現状の課題**: 生成AIの悪用により攻撃側の速度が「秒・分」単位に加速している一方、防御側は依然として「時間・日」単位で動いており、速度の非対称性が顕著になっています。\n2. **自社開発の意義**: 組織固有の判断基準、分散したログ（GuardDuty, CloudTrail, Splunk等）の統合、ナレッジの資産化を目的として、既存ベンダー製品に頼るだけでなく、自社で文脈を繋ぐレイヤーを持つ設計を採用しました。\n3. **技術的アプローチ**: Amazon Bedrock AgentCore Runtimeを採用し、サブエージェントへ役割を委譲するマルチエージェント構成を実現。コンテキストウィンドウの制約（Context Rot）を回避するため、MCP（Model Context Protocol）の活用やツールの出力制限、処理の分割による徹底したトークン削減を行っています。\n4. **成果**: 従来1〜2時間要していた一次対応が15分以内に短縮され、「調べる」作業から「判断する」作業へのシフトを実現しました。また、LLM Opsとしてトークン消費や遅延の計測を運用に組み込む重要性も強調されています。",
+    "topics": [
+      "SOC",
+      "AIエージェント",
+      "Amazon Bedrock",
+      "クラウドセキュリティ",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

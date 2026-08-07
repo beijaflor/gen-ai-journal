@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:42:33.151603+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "-AIが認証し、AIが認証を書く- AI Agent 時代の認証ライブラリ Better Authを理解する",
+    "url": "https://speakerdeck.com/sc30gsw/aigaren-zheng-si-aigaren-zheng-woshu-ku-ai-agent-shi-dai-noren-zheng-raiburari-better-authwoli-jie-suru",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelに買収された次世代認証ライブラリ「Better Auth」の概要と、AIエージェントが自ら認証を行う未来に向けた新プロトコル「Agent Auth」の技術的な解説資料です。",
+    "summaryBody": "TypeScriptファーストの包括的な認証フレームワーク「Better Auth」を徹底解説したプレゼンテーション資料です。Auth.js（NextAuth）の課題解決から始まった背景、Vercelによる買収と垂直統合、そして最大の特徴である「AI時代の認証」へのアプローチが詳述されています。内容は主に2軸で構成されており、1つ目はAIが認証実装を補助する開発体験（CLI、MCP、Skills）、2つ目はAIエージェント自身が認証の主体となる「Agent Auth Protocol」や「auth.md」といった次世代標準プロトコルです。人間中心のセッションモデルから、エージェント固有のIdentityとCapability（権限範囲）に基づく認可モデルへの移行を提唱しています。後半のAppendixでは、2FA、マルチテナント、Stripe連携などの豊富なプラグイン群や、有料の運用基盤「Infrastructure」についても網羅されています。",
+    "topics": [
+      "Better Auth",
+      "Vercel",
+      "AI Agent",
+      "Authentication",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:45:13.543876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "面白くない自作パズルをAIに8,000回プレイさせたら原因がわかった！",
+    "url": "https://zenn.dev/xtone/articles/masshiro-ai-playtest",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自作パズルの「面白くなさ」の原因を特定するため、ゲームロジックをUnityから切り離してAIに8,000回試行させ、連鎖が理論上発生しない設計ミスを数値で証明した事例。",
+    "summaryBody": "Unity1週間ゲームジャム向けに開発したパズルゲームが「面白くない」という課題に対し、著者はゲームロジックをCLI環境へ分離して高速シミュレータを構築。AIを活用した8,000回の自動プレイを通じて統計データを取得した結果、連鎖が一度も発生していないことや、適当な連打が最適解を狙うAIよりも高スコアを出すという、ゲームデザイン上の致命的な欠陥を可視化した。演出ではなくルール層の問題を「数値」で特定し、改善に繋げた実践的なデバッグ・分析手法を紹介している。",
+    "topics": [
+      "Unity",
+      "ゲーム開発",
+      "AI",
+      "シミュレーション",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

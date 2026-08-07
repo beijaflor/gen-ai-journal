@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:40:48.452804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ふとした出会いで生まれたSkillが、社内利用1位になるまで",
+    "url": "https://speakerdeck.com/mikimhk/how-a-skill-born-from-a-chance-encounter-became-the-most-used-tool-in-the-company",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "タイミー社において、Claude Codeを活用した自然言語によるデータ分析ツール「bq-analysis」が、エンジニア以上にPdM層の支持を得て社内利用率トップに成長した背景と運用の勘所を解説した資料。",
+    "summaryBody": "株式会社タイミーのAgent Harness Groupによる、Claude Code専用の自作スキル「bq-analysis」の活用事例です。このツールは自然言語での入力からテーブル特定、SQL生成、実行、考察までを一貫して行います。成功の鍵は高度なプログラミングではなく、約4,400行に及ぶMarkdown形式の「社内コンテキスト（用語辞書、指標定義、計測仕様）」の徹底的な言語化にあります。これにより、AIが社内特有の定義（例：「クライアント」＝「店舗」）を正しく理解可能となりました。導入後、エンジニアよりもPdM（プロダクトマネージャー）やデザイナーといった非エンジニア層に深く浸透し、利用率65%を達成。ユーザー自身が改善提案や勉強会を自発的に行う「自律的な広がり」を見せています。",
+    "topics": [
+      "Claude Code",
+      "BigQuery",
+      "LLM",
+      "データ分析",
+      "タイミー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

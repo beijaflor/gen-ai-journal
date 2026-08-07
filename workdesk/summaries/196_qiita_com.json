@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:46:51.390512+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI が原因を当てても、「思いついた」わけじゃない —— 推論の3分類で見分ける",
+    "url": "https://qiita.com/jqit_suwa/items/aefb1adac27a34646cf3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMは演繹や帰納には長けているが、結果から未知の原因を導き出す「仮説形成（アブダクション）」の能力には構造的な限界があることを、Google DeepMindの論文を基に解説する記事。",
+    "summaryBody": "Google DeepMindの研究者Tom Zahavy氏による論文『LLMs can't jump』の内容を軸に、推論の3形態（演繹・帰納・仮説形成）からAIの能力を分析した解説。LLMは学習データに基づくパターンマッチング（帰納）や論理的展開（演繹）は得意だが、身体的な経験や試行錯誤を伴う「やってみて考える」プロセス（Manipulative Abduction）が欠如しているため、真の意味で未知の原因を「思いつく」ことは構造的に不可能であると指摘されている。バグの原因特定などの場面でAIが正解を出すのは、アブダクションによる発見ではなく、単に類似の事例を学習済みである「帰納」の結果である可能性が高く、ユーザーはAIの回答を鵜呑みにせず、それが記憶によるものか推論によるものかを慎重に見極めるべきだと結論づけている。",
+    "topics": [
+      "LLM",
+      "推論",
+      "アブダクション",
+      "機械学習",
+      "DeepMind"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}
