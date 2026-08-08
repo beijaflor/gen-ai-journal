@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:58:20.158958+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Workers AIとAI Gatewayの統合による、単一のAIコントロールプレーンの構築",
+    "url": "https://blog.cloudflare.com/workers-ai-gateway-unification/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、推論インフラのWorkers AIと管理レイヤーのAI Gatewayを統合し、モデルの呼び出し、可視化、課金を一元化する新しいAIコントロールプレーンを発表しました。",
+    "summaryBody": "Cloudflareは、これまで別々の製品として提供してきた推論サービス「Workers AI」とプロキシ管理ツール「AI Gateway」の統合を発表しました。これにより、開発者は同一のWorkers bindingやREST APIを通じて、Cloudflare上のモデルと外部プロバイダー（OpenAIやAnthropicなど）の両方を透過的に利用できるようになります。主な新機能として、デフォルト設定での自動的な可視化（オブザーバビリティ）、AI GatewayクレジットによるWorkers AIの統合課金、そして高いレート制限の適用が含まれます。さらに今後のロードマップとして、特定のプロバイダーに依存せずモデル名でルーティングを行う「Model-first routing」や、プロンプトの内容から最適なモデルを自動選択する「Smart routing」の導入も予定されています。",
+    "topics": [
+      "Cloudflare",
+      "Workers AI",
+      "AI Gateway",
+      "LLM",
+      "Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Unifying Workers AI and AI Gateway into a single AI control plane"
+  }
+}

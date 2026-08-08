@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:58:44.215309+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、自然言語でインターネット統計を分析できるAIツール「Radar Researcher」を発表",
+    "url": "https://blog.cloudflare.com/introducing-radar-researcher/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflare Radarの膨大なインターネットデータを、専門知識不要で対話形式により可視化・分析できるAIエージェント「Radar Researcher」がベータ版として登場しました。",
+    "summaryBody": "Cloudflareは、世界中のインターネットトラフィック状況を公開している「Cloudflare Radar」の新機能として、自然言語でのデータ探索を可能にするAIツール「Radar Researcher」をリリースしました。ユーザーは複雑なフィルタ設定やAPI仕様の理解を必要とせず、「特定の国のインターネット品質はどうなっているか？」といった質問を投げるだけで、AIが適切なデータを取得し、インタラクティブなチャートと共に解説を提供します。\n\n技術面では、Cloudflareの開発者プラットフォーム（Workers, Agents SDK, Durable Objects, Workers AIなど）をフル活用しており、モデルにはWorkers AI経由でKimi K2.7などのオープンモデルを多重化して使用しています。また、Model Context Protocol (MCP) を通じて数百のAPIエンドポイントと動的に連携するほか、新標準のWebMCPを採用することで、外部のAIエージェントからもウェブサイトを操作しやすくする「エージェント・レディ」な設計が特徴です。",
+    "topics": [
+      "Cloudflare Radar",
+      "AIエージェント",
+      "データ分析",
+      "Model Context Protocol (MCP)",
+      "Cloudflare Workers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing Radar Researcher: An AI tool for exploring Internet data in plain language | Cloudflare Blog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:56:30.424566+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek V4 Flash 0731 - ARC-AGI 評価結果",
+    "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek V4 Flash 0731が、ARC-AGI-1で89.0%、ARC-AGI-2で61.4%という高スコアを極めて低い計算コストで達成したことを報告しています。",
+    "summaryBody": "DeepSeek V4 Flash 0731モデルによるARC-AGI（Abstraction and Reasoning Corpus）ベンチマークの最新結果が公開されました。本モデルは「Max Effort」設定において、ARC-AGI-1 Semi-Privateテストで89.0%（1タスクあたり0.02ドル）、より難易度の高いARC-AGI-2 Semi-Privateテストで61.4%（1タスクあたり0.04ドル）という極めて優れたスコアを記録しました。推論バリアントとしてMax、High、Lowの3段階が設定されており、計算資源の投入量に応じた性能向上が確認できます。特に、ARC-AGI-2における60%超えの達成は、抽象的な推論能力における大きな進展を示しています。記事では、ARC-AGI-1（400タスク）およびARC-AGI-2（120タスク）のパブリック評価用タスク各々に対する、各推論レベルでの詳細なPass/Failリストが提示されており、モデルの汎用的な問題解決能力が可視化されています。",
+    "topics": [
+      "ARC-AGI",
+      "DeepSeek",
+      "LLM",
+      "抽象的推論",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "DeepSeek V4 Flash 0731 - ARC-AGI Results"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:55:39.900422+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自宅RTX 5090にvLLM+Open WebUI のローカルLLMサーバーを立てて Tailnet 経由でスマホから使う",
+    "url": "https://zenn.dev/kaerururu/articles/2b2a82ba6f3ba2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "RTX 5090搭載の自宅PCにvLLMとOpen WebUIを構築し、Claude Code Remote ControlとTailscaleを組み合わせて、外部公開なしにスマホからセキュアかつ効率的にLLMを操作・利用するガイド。",
+    "summaryBody": "RTX 5090 (32GB VRAM) を搭載した自宅マシンを、外出先のスマホからClaude CodeのRemote Control機能を用いてセットアップし、ローカルLLMサーバー（vLLM + Open WebUI）として運用する事例です。技術的なハイライトとして、長時間タスクを効率化するためのtmuxを用いた「dispatcherパターン」の導入、32GB VRAMに最適化されたgpt-oss-20bの選定、そしてドメイン取得やリバースプロキシ設定を不要にするTailscaleによる閉域網接続が挙げられます。また、GPU作業用Dockerコンテナとホスト間のネットワーク分離をsocatによるポートフォワードで解決する実践的なトラブルシューティングも詳述されています。外部公開のリスクを避けつつ、最新GPUの性能をスマホから手軽に引き出す構成が実現されています。",
+    "topics": [
+      "RTX 5090",
+      "vLLM",
+      "Tailscale",
+      "Claude Code",
+      "Open WebUI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

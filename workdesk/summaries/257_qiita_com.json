@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:56:04.109773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "夏休みの自由研究:AWSの「Kiro Crew」がよくわからなかったので、自分で作ってみた #ClaudeCode",
+    "url": "https://qiita.com/yama3133/items/47a3b303a3d8a0eb02b2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AWSのAIエージェント・オーケストレーター「Kiro Crew」の概念を深く理解するため、Claude Codeをベースにセキュリティと永続性を備えた独自実装「claude-crew」を開発した技術検証記録。",
+    "summaryBody": "AWSが発表したAIエージェント・オーケストレーター「Kiro Crew」の仕組みを理解するため、著者がClaude Code CLIを用いてその機能を再構築したプロセスを詳細に解説しています。Kiro Crewの本質を「永続的・多窓口・オーケストレータ」と捉え、常駐プロセスによるセッション維持や、Cron的なタスク実行、承認ワークフローを実装。特にセキュリティ面を重視し、PreToolUseゲート、OSレベルのサンドボックス（macOSのSeatbeltやLinuxのbubblewrap）、ハッシュチェーンを用いた改ざん検知可能な監査ログの3段階の防御策を導入しています。UIはあえて1980年代のMS-DOS風に仕立てつつ、クラウドではなくローカルPC内での運用とTailscaleによるリモートアクセスに限定するなど、実用性と安全性を考慮した設計思想が共有されています。",
+    "topics": [
+      "AWS",
+      "Kiro Crew",
+      "Claude Code",
+      "AI Agent",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

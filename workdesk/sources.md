@@ -2,6 +2,33 @@
 
 ## Main List
 
+- [x] 269. https://www.watch.impress.co.jp/docs/news/2131538.html
+- [x] 268. https://www.huffingtonpost.jp/entry/story_jp_6a6aa57ae4b01948ae99ee9d
+- [x] 267. https://www.itmedia.co.jp/news/article/2608/07/2000000449/
+- [x] 266. https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
+- [x] 265. https://pc.watch.impress.co.jp/docs/news/2131478.html
+- [x] 264. https://blog.adobe.com/jp/publish/2026/08/07/cc-adobe-plugin-in-chatgpt
+- [x] 263. https://tech-blog.rakus.co.jp/entry/20260807/aicon_summer
+- [x] 262. https://tech.pepabo.com/2026/08/05/training-2026/
+- [x] 261. https://www.gizmodo.jp/article/resume_hacks_targeting_ai/
+- [x] 260. https://www.watch.impress.co.jp/docs/news/2131300.html
+- [x] 259. https://zenn.dev/kaerururu/articles/2b2a82ba6f3ba2
+- [x] 258. https://qiita.com/jqit_suwa/items/ac7d1201bd14e9a4e1ac
+- [x] 257. https://qiita.com/yama3133/items/47a3b303a3d8a0eb02b2
+- [x] 256. https://www.databricks.com/blog/managing-ai-coding-costs-scale
+- [x] 255. https://arcprize.org/results/deepseek-v4-flash-0731
+- [x] 254. https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code
+- [x] 253. https://sfstandard.com/pacific-standard-time/2026/08/07/sf-ai-billboards-dystopian-not-funny/
+- [x] 252. https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots
+- [x] 251. https://whatever.scalzi.com/2026/08/06/generative-ai-the-guitar-hero-of-creativity/
+- [x] 250. https://mccormick.cx/news/entries/why-i-won-t-read-llm-authored-fiction
+- [x] 249. https://supabase.com/blog/supabase-is-now-a-connector-on-perplexity-computer
+- [x] 248. https://www.oreilly.com/radar/ai-on-the-pi-build-your-own-local-voice-agent/
+- [x] 247. https://www.oreilly.com/radar/this-week-in-ai-who-controls-ai/
+- [x] 246. https://blog.cloudflare.com/workers-ai-gateway-unification/
+- [x] 245. https://blog.cloudflare.com/good-and-bad-agentic-behaviors/
+- [x] 244. https://blog.cloudflare.com/introducing-radar-researcher/
+- [x] 243. https://1password.com/blog/evolving-ai-maturity-for-our-user-experience-team
 - [x] 242. https://techblog.recerqa.com/blog/20260710-ai-dlc-two-months-retrospective/
 - [x] 241. https://note.com/fladdict/n/n6d8555da6bd9
 - [x] 240. https://www.shopify.com/enterprise/blog/ai-search-insights

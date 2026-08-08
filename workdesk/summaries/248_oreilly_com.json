@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:57:55.037333+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raspberry PiでAIを動かす：独自のローカル音声エージェントの構築",
+    "url": "https://www.oreilly.com/radar/ai-on-the-pi-build-your-own-local-voice-agent/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "軽量・高速な音声認識モデル「Moonshine」を活用し、Raspberry Pi上でモニター不要のネットワーク設定を実現するローカル音声エージェントの構築方法を解説しています。",
+    "summaryBody": "この記事では、Pete Warden氏が、Raspberry Pi上で動作する実用的なローカル音声エージェントの構築について紹介しています。従来、エッジデバイスのセットアップ（WiFi設定やIPアドレスの確認など）にはモニターやキーボードの接続が必要で、教育現場やIoT導入の大きな障壁となっていました。著者のスタートアップが開発した「Moonshine」モデルは、OpenAIのWhisperよりも大幅に軽量で、Raspberry Pi 5上で約800ミリ秒という低遅延な音声認識を実現します。記事中では、PythonとMoonshine Voiceフレームワークを使用し、「IPアドレスを教えて」「WiFiに接続して」といった指示を音声で行うための具体的なコード例も公開されています。オフラインで動作し、プライバシーを保護しつつ、IoTデバイスの利便性を劇的に向上させる手法として注目されます。",
+    "topics": [
+      "Raspberry Pi",
+      "Edge AI",
+      "Speech-to-Text",
+      "Moonshine",
+      "IoT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "AI on the Pi: Build Your Own Local Voice Agent"
+  }
+}
