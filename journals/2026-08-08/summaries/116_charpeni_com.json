@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:11:14.891491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Garminデータの可視化とパーソナルAIトレーニングアシスタントの構築",
+    "url": "https://charpeni.com/blog/visualizing-garmin-data-and-building-a-personal-ai-training-assistant",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Garminデータを自己ホストし、Grafana MCPを通じてAIエージェントと連携させることで、自然言語で高度なトレーニング分析を行う仕組み。",
+    "summaryBody": "Garmin ConnectやStravaの機能制限やサブスクリプション費用を回避するため、著者はInfluxDBとGrafanaを用いた自作のデータ分析基盤を構築しました。まず `garmin-grafana` ライブラリを使用してデータを取得・蓄積し、次に Model Context Protocol (MCP) を活用してAIエージェントにGrafanaのデータソースを読み取らせる仕組みを導入しています。これにより、ユーザーは「このライドでの心拍数とペースの変化は？」や「過去の同じルートとの比較は？」といった質問を自然言語で行い、複雑なグラフを読み解く代わりにAIから直接的な洞察を得ることが可能になりました。ダッシュボードによる視覚化とAIによる対話型分析を組み合わせた、新しいパーソナル・アナリティクスの事例です。",
+    "topics": [
+      "Garmin",
+      "Grafana",
+      "Model Context Protocol (MCP)",
+      "InfluxDB",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 55,
+      "overall": 82
+    },
+    "originalTitle": "Visualizing Garmin Data and Building a Personal AI Training Assistant"
+  }
+}

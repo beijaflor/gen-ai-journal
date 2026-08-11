@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:24:01.926224+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeのSkillsは「手順書」だったので、/article コマンドを作ってみた",
+    "url": "https://zenn.dev/osakayakyu/articles/e6aa9835c04d73",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「スキル」機能がMarkdown形式の手順書（SKILL.md）である点に着目し、開発セッションの学びを機密情報を除いたZenn用下書きとして自動生成・GitHubへpushするカスタムコマンドの活用法を紹介しています。",
+    "summaryBody": "### 概要\nClaude Codeの「Skills」機能は、複雑なプログラムを書くのではなく、`SKILL.md`というMarkdownファイルに「手順」を記すことでAIの動作を規定する仕組みです。筆者はこの特性を活かし、現在のセッション内容からZennの記事下書きを生成する`/article`コマンドを作成しました。\n\n### 主な機能とワークフロー\n1. **セッションの振り返り**: 対話履歴から記事化の価値がある技術的知見を自動抽出。\n2. **機密情報の除去**: 社名やパスワードなどの固有情報を一般的な表現やサンプルコードに置換。\n3. **下書き生成とデプロイ**: Zennのフロントマター（`published: false`）を含むMarkdownを作成し、ユーザー確認を経てGitHub連携リポジトリへpush。\n\n### 知見と安全ルール\n- **自動化の再定義**: スキルは「処理」ではなく「作業ルール」の定義である点が最大の特徴。\n- **人間による最終確認**: 公開判断や機密情報の有無はAIに任せきりにせず、必ず人間がレビューを行うフローを組み込むことで安全性を担保。\n- **執筆のハードル低下**: セッション中の細かな学びを即座に「下書き」という形に残すことで、技術発信の心理的障壁を下げることが可能になります。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Zenn",
+      "AI自動化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:40:34.538660+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「純粋リファクタリング」をAIに証明させて自動マージする",
+    "url": "https://engineering.nature.global/entry/2026/07/prove-pure-refactoring-with-ai-and-auto-merge",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントを活用してリファクタリングPRの等価性を証明し、レビューから自動マージまでを完結させるGitHub Actionsの仕組みとその運用実績の紹介。",
+    "summaryBody": "Nature社において、AIによる開発加速に伴うレビューのボトルネックを解消するために導入された「review-refactoring」スキルの解説です。この仕組みでは、GitHub Actions上でClaudeを活用し、PRが「純粋なリファクタリング（挙動の変更がない変更）」であるかを厳密に検証します。プロンプトエンジニアリングによりAIを「懐疑的な第三者レビュアー」として定義し、テストコードの変化や参照箇所の網羅的なチェックを行わせることで、検証の信頼性を担保しています。検証をパスしたPRは自動でApproveおよびマージが実行され、導入3ヶ月半でバックエンドPRの約3割がこのフローで処理されるなど、開発サイクルの劇的な高速化と、設計改善を頻繁に行う文化の醸成に成功しています。",
+    "topics": [
+      "AIエージェント",
+      "リファクタリング",
+      "GitHub Actions",
+      "Claude",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

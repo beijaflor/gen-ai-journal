@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:08:41.347429+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AMD MI300X 1枚で DeepSeek-V4-Flash を動作させる最適化スタック: deepseek-v4-flash-mi300x",
+    "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AMD MI300X単体でDeepSeek-V4-Flash（304B）を動作させるため、FP8形式の修正やカーネルチューニングを施した本番用構成とパッチセット。",
+    "summaryBody": "DeepSeek-V4-Flash-0731をAMD MI300X GPU（192GB HBM3）1枚で効率的に運用するためのリポジトリです。MI300X特有のFP8形式（FNUZ）の互換性修正やMoEルーティングのバグ修正、AITERカーネルのチューニングテーブルなどが含まれています。DSpark-7投機的デコーディングの活用により、シングルストリームで168.6 tok/s、プリフィルで約8K tok/s以上の高いパフォーマンスを実現しています。20GBのGPU KVキャッシュと96GiBのCPUオフロードを組み合わせることで、最大256Kのコンテキスト長を検証済みです。vLLM ROCm nightlyをベースとしたDocker Composeスタックが提供されており、即座にデプロイ可能な構成となっています。",
+    "topics": [
+      "DeepSeek-V4",
+      "AMD MI300X",
+      "vLLM",
+      "ROCm",
+      "LLM Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - ryanzhou/deepseek-v4-flash-mi300x"
+  }
+}

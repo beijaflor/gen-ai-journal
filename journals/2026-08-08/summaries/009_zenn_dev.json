@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:40:13.429275+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PR 数が 4 倍に増えても AI レビュー代を爆発させないために、レビューをサブスクに相乗りさせた話",
+    "url": "https://zenn.dev/dinii/articles/4aafd4c4fda4d2",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "急増するPRへのAIレビューコストを抑えるため、従量課金APIから開発者の定額サブスクリプション枠（Claude等）を活用する構成へ転換し、開発効率と経済性を両立させたダイニー社の事例。",
+    "summaryBody": "ダイニー社におけるAIコードレビュー基盤「Approver」の運用と、急増するプルリクエスト（PR）に伴うコスト爆発を回避する設計手法についての解説です。月間3,100本を超えるPRに対し、CIでのAPI従量課金によるレビューでは多額のコストが発生するため、レビュー実行を開発者のClaude定額サブスクリプション枠を活用する「ローカル」および「定期実行」へ移行しました。MCPサーバーをCloud Runで運用し、推論をサブスク側のエージェントに任せることで、追加コストなしでの早期レビューやマージ後の自動修正提案、全ファイルの役割インデックスの構築を実現しています。現状のROIは0.73倍ですが、コストを気にせず試行回数を増やせる環境が開発の自由度を高めています。",
+    "topics": [
+      "AI Review",
+      "Claude",
+      "Cost Optimization",
+      "MCP",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    }
+  }
+}

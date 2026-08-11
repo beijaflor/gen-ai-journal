@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:25:48.877287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MirrorCode: AIは自律的にどこまで大規模なソフトウェアを開発できるのか？",
+    "url": "https://epoch.ai/MirrorCode",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MirrorCodeは、AIが元のソースコードを参照せずに外部挙動のみからプログラム全体を自律的に再構築できるかを測定する、長期・大規模タスク向けの新しいベンチマークである。",
+    "summaryBody": "Epoch AIとMETRが共同開発したMirrorCodeは、従来の「バグ修正」や「機能追加」といった断片的なタスクではなく、プログラム全体の「ゼロからの再実装」をAIに課すベンチマークです。最大で19日間の自律作業や数千ドルの推論予算を許容する設計となっており、Claude Opus 4.7（仮称）が約16,000行のバイオインフォマティクス用ツールキットをわずか14時間でほぼ完璧に再構築した結果などが示されています。既存のベンチマークよりもはるかに複雑で長期的なソフトウェアエンジニアリング能力を評価することを目的としており、メモリエーション（学習データの記憶）の影響を慎重に検証しながらも、AIによる自律的な大規模開発の可能性を浮き彫りにしています。",
+    "topics": [
+      "MirrorCode",
+      "AIベンチマーク",
+      "自律的ソフトウェア開発",
+      "Epoch AI",
+      "大規模言語モデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "MirrorCode: What's the largest software project AI can complete on its own?"
+  }
+}

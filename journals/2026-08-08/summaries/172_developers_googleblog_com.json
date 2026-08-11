@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T10:02:47.582271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Plugins 1.0.0の発表：スキルとMCPサーバーをパッケージ化するオープン仕様",
+    "url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google、OpenAI、Microsoftらが共同で、AIエージェントのスキルやMCPサーバーをベンダーに依存せずポータブルにパッケージ化するための新仕様「Agent Plugins 1.0.0」を発表しました。",
+    "summaryBody": "Googleは、Amazon、Microsoft、OpenAI、Vercelらが主導する「Agent Plugins 1.0.0」仕様のコアメンテナーとして参画したことを発表しました。この仕様は、AIエージェントの「スキル（指示とリソース）」と「MCPサーバー（ツールとサービス接続）」を一貫したディレクトリ構造でパッケージ化するための、ベンダー中立なオープンスタンダードです。\n\nこれまで、個別のスキルやMCPサーバー自体はポータブルでしたが、それらをまとめるマニフェスト形式がクライアント（IDEやCLIなど）ごとに異なっていたため、開発者は各環境向けに重複したメンテナンスを強いられていました。Agent Pluginsは、最小限の`plugin.json`マニフェストと、固定されたディレクトリレイアウト（`skills/`, `mcp.json`）を定義することでこの問題を解決します。あえてインストール機構や信頼性検証などの複雑な要素をスコープから外し、パッケージングの標準化に特化しているのが特徴です。\n\nGoogleはすでに「Agents CLI」および「Data Agent Kit」でこのフォーマットのサポートを開始しており、今後さらに多くの製品へ展開する予定です。",
+    "topics": [
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "標準化",
+      "Google Cloud",
+      "開発者ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Agent Plugins package your skills, tools, and more"
+  }
+}

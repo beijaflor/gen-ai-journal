@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:45:45.425288+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自作言語で AI エージェントをオーケストレーションしよう！",
+    "url": "https://zenn.dev/yukikurage/articles/201f6f9155f3db",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントのオーケストレーションに特化した自作DSL「Katari」の紹介記事で、再起動耐性、Effect System、MCP連携などの強力な機能を備えています。",
+    "summaryBody": "AIエージェントや複雑なワークフローを記述するための新しいドメイン固有言語（DSL）「Katari」が発表されました。既存のYAMLベースのオーケストレーターにおける型安全性の欠如や、TypeScriptライブラリにおける再起動耐性の実装の難しさを解決することを目指しています。\n\n主な特徴は以下の通りです：\n- **再起動耐性**: 実行状態が永続化され、サーバー再起動後もワークフローを継続可能。FFI以外の殆どの関数が標準でこの性質を持ちます。\n- **Effect System**: Algebraic Effectsの概念を取り入れ、Human-in-the-Loop（人の介入）や文脈依存の実装切り替えを柔軟に記述できます。\n- **AIツール化**: 定義した関数は自動的にJSON Schemaが導出され、AIのツールとして即座に利用可能です。\n- **MCP連携**: Model Context Protocolを標準サポートし、外部ツールの動的・静的な取り込みが容易です。\n\n現在はv0.1段階であり、LSPやVSCode拡張、Webコンソールを含むツールチェーンも提供されています。今後は、エージェントを木構造として捉える「Component Based」な言語への進化が予定されています。",
+    "topics": [
+      "AIエージェント",
+      "Katari",
+      "オーケストレーション",
+      "Model Context Protocol",
+      "自作言語"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

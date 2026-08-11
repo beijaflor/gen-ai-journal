@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:21:04.705398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「思考の連鎖」偽装でLLMを騙す新手法、訓練では防げない構造的欠陥",
+    "url": "https://www.technologyreview.jp/s/386800/a-fundamental-flaw-leaves-llms-strikingly-vulnerable-to-attack/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが指示の出所を内容のスタイルで判断する仕組みを悪用し、偽の「思考の連鎖」を注入することで安全ガードレールを突破する、修正困難な構造的欠陥が報告された。",
+    "summaryBody": "大規模言語モデル（LLM）の安全性における根本的かつ構造的な脆弱性が、ICML（国際機械学習会議）に提出された研究論文によって明らかになりました。この攻撃手法は、LLMが「ユーザーの指示」「システムの命令」「モデル自身の思考（Chain of Thought: CoT）」を区別する際、厳密な識別タグではなく、単にテキストのスタイルや文脈に依存している点を利用します。\n\n具体的には、プロンプト内にモデルが自分自身に書き留める「下書き（CoT）」を装った偽のメモを挿入することで、モデルを誤認させます。例えば、ポリシーを無視して回答を許可するような偽の思考プロセスを書き込むことで、本来拒絶されるべき薬物製造法やハッキング手法などを引き出すことに成功しました。研究チームは、この問題は「やってはいけないこと」を学習させる従来の訓練手法（RLHFなど）では解決できず、モデルの設計自体に起因する本質的な欠陥であると主張しています。OpenAIやAnthropic、DeepSeekといった主要なモデルも同様の脆弱性を抱えており、AIを重要インフラや機密性の高い業務に展開する際の重大な懸念事項となっています。",
+    "topics": [
+      "LLM安全性",
+      "Chain of Thought",
+      "ジェイルブレイク",
+      "脆弱性分析",
+      "ICML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

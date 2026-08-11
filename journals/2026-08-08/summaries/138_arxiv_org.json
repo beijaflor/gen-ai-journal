@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:55:06.652097+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zero-Mem: LLMエージェント向けのトークン消費ゼロのメモリ操作手法",
+    "url": "https://arxiv.org/abs/2607.29377",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM呼び出しやトークン消費を伴わずに、グラフ構造と時間的階層を利用して過去の対話履歴から情報を抽出・整理する新しいメモリ管理手法「Zero-Mem」の提案。",
+    "summaryBody": "従来のLLMエージェントは長期記憶の管理（要約や検索の仲介）にLLMを多用し、コストと遅延が増大していた。本研究が提案する「Zero-Mem」は、回答生成時以外のメモリ操作にLLMを一切使用しない手法である。具体的には、対話履歴を「エンティティ・コンテキスト・グラフ」と「時間的階層」の2つの決定論的な構造で管理し、クエリに応じてこれらを調整・検索することで、生データを保持したまま関連情報を抽出する。実験の結果、既存の最速手法と比較してメモリ操作時間を57.6%削減しつつ、精度面でも競合する性能を示した。中間表現の生成を省くことで情報の歪みを防ぎ、エージェントの推論コストを大幅に低減する道を開いている。",
+    "topics": [
+      "LLM Agents",
+      "Memory Management",
+      "Efficiency",
+      "Knowledge Graphs",
+      "Information Retrieval"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Zero-Mem: Zero-Token Memory Operations for LLM Agents"
+  }
+}

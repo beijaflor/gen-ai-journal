@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:18:32.661418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「ガバメントAI 源内」における国産クラウドを活用した国産基盤モデルの試用環境",
+    "url": "https://digital-gov.note.jp/n/nf1a953fae8b7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "デジタル庁のガバメントAI「源内」において、国産クラウド「さくらのクラウド」を活用した国産LLMのセキュアな検証環境と公平なA/Bテストの仕組みが公開されました。",
+    "summaryBody": "デジタル庁は「ガバメントAI 源内」において、日本語の表現や日本の価値観に適合した国産基盤モデル（LLM）の活用を支援するため、さくらのクラウド上での試用環境を構築しました。この環境では、NVIDIA H100を搭載した「高火力VRT」を使用し、機密性2情報を扱うための高度なセキュリティ対策が施されています。具体的には、AWS IAM Roles Anywhereを用いたセキュアなS3アクセスや、HTTP Message Signaturesによる認証、Model Routerによる推論リクエストのルーティングを実装。さらに、評価の公平性を担保するため、応答速度の平準化やモデルIDのマスキング、コードベースの分離など、開発者に対してもブラインド化された徹底的なA/Bテスト環境を実現している点が特徴です。",
+    "topics": [
+      "デジタル庁",
+      "ガバメントAI源内",
+      "さくらのクラウド",
+      "国産LLM",
+      "マルチクラウドアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

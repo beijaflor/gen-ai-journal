@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:41:35.743265+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code／Codexに中～大規模開発を任せるためのタスク管理",
+    "url": "https://qiita.com/Y-Y-dev/items/d526fb7cdbe35a3f9384",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeやCodexを用いた中〜大規模開発において、タスクの混乱を防ぎ、確実な進捗管理を実現するための具体的な運用ルールと「task-list.md」を活用した管理手法を解説する記事。",
+    "summaryBody": "AIコーディングエージェント（Claude CodeやCodex）を大規模プロジェクトで活用する際の管理上の課題と、その解決策を提示した記事だ。著者は単なるプロンプトの工夫ではなく、リポジトリ内に置く「task-list.md」を唯一の正本（Single Source of Truth）と定義し、タスクID・状態・完了条件・証拠を厳密に管理する運用を提案する。具体的には、並行作業を避けて原則1件ずつ処理することでコンテキストの混乱（タスクの断片化）を防ぎ、指示は目的・変更範囲・禁止事項・完了条件・テスト方法・停止条件の6項目を明文化する。また「実装済み」と「完了」を分離し、自動テストの成功（ローカル検証）と実環境での動作確認を区別してエビデンスベースで判定する。さらに、要件定義・実装・レビューといった役割をAIごとに明確に分け、情報の受け渡しを最小限に絞ることで精度向上とコスト削減を図る「マルチAI運用の境界線」も論点となる。開発の自律性を高めつつ、人間が「何を、どこまで、何をもって完了とするか」を制御するための、実務に即した包括的なガイドラインとなっている。",
+    "topics": [
+      "Claude Code",
+      "AIコーディングエージェント",
+      "タスク管理",
+      "ソフトウェア開発",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

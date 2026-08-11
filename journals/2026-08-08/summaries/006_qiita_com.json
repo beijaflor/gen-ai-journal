@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:41:05.333508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの権限モード解説：各モードの動作と保護パスの仕様",
+    "url": "https://qiita.com/moritalous/items/9e9fcae121ec4d44e6de",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeにおける各種権限モード（default, auto, acceptEdits等）の挙動の違いと、.git等の保護パスの制限仕様について整理・解説した記事。",
+    "summaryBody": "AnthropicのAIエージェント「Claude Code」が備える権限モードについて、公式情報をベースに分かりやすく整理しています。作業ディレクトリ内を読み取り専用とする「default」、書き込みを許可する「acceptEdits」、別モデルが実行可否を判断する「auto」、そして自動化用の「dontAsk」など、各モードがアクセスできる範囲やツールの実行権限を詳説。また、.gitや.vscodeといった重要なディレクトリが「保護パス」として特別に保護される仕様についても触れており、誤って環境を破壊しないための安全設計についても理解を深めることができます。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "CLIツール",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

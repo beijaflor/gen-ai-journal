@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:37:15.787928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ナレッジグラフを活用してClaude Codeのトークンを10分の1にする",
+    "url": "https://zenn.dev/nocodesolutions/articles/19f0d415af42be",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのトークン消費を抑えるため、リポジトリをナレッジグラフ化してMCPサーバー経由で効率的に探索・照会させる手法とその劇的な削減効果を解説。",
+    "summaryBody": "AIコーディングエージェントがファイル探索やgrepを繰り返すことで発生する膨大なトークン消費を解決するため、コードベースを「ナレッジグラフ（コードグラフ）」として構造化する手法を紹介しています。主なポイントは以下の通りです。\\n1. **課題の特定**: 従来の探索型エージェントは、コード構造を理解しないままファイル走査を行うため、1回の問い合わせで数千トークンを浪費する。\\n2. **解決策**: 関数やクラスをノード、呼び出しや包含をエッジとするグラフを構築し、エージェントが必要な箇所のみをクエリで取得できるようにする。\\n3. **研究裏付け**: RepoGraph（ICLR 2025）等の論文を引用し、トークン使用量を1/10に削減しつつ、コーディング課題の解決率を平均32.8%向上させた実績を提示。\\n4. **実装ガイド**: PythonのAST（抽象構文木）を用いたグラフ構築や、MCP（Model Context Protocol）サーバーとしてClaude Codeに接続する具体的な手順を解説。\\n大規模リポジトリの影響範囲分析など、構造的な理解が必要なタスクで特に高い投資対効果（ROI）を発揮します。",
+    "topics": [
+      "Claude Code",
+      "ナレッジグラフ",
+      "Model Context Protocol (MCP)",
+      "トークン削減",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:08:08.237295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADLC Team Skills — エンジニアリングチーム向けのエージェンティックSDLCフレームワーク",
+    "url": "https://github.com/tikalk/adlc-team-skills",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントにチーム固有のコンテキストや規約を効率的に提供し、開発サイクル全体の品質を向上させるためのAgentic SDLCツールセット。",
+    "summaryBody": "ADLC (Agentic SDLC) Team Skillsは、Claude CodeやGitHub CopilotなどのAIエージェントが、チームの規約や設計判断を理解した状態で動作できるようにするフレームワークです。主な特徴は以下の通りです。1. 動的なコンテキスト注入: 全てのルールを一度に読み込まず、インデックスを介して必要な時だけ詳細をロードすることでLLMの精度低下を防ぎます。2. 意思決定の構造化: アーキテクチャ決定(ADR)や製品要件(PDR)を管理し、コードとの整合性を保ちます。3. 学習の自動抽出: 開発セッション中に得られた知見をCDRとして記録し、次回のセッションに活かす自己改善サイクルを提供します。4. 評価の自動化: PromptFoo等のツールを用いて、エージェントの成果物をコードベースで検証するスイートを構築します。これにより、エージェントが「知らない外部の人」のように振る舞う問題を解決し、チームの一員としての開発を可能にします。",
+    "topics": [
+      "Agentic SDLC",
+      "AI Coding Agents",
+      "Context Engineering",
+      "ADR",
+      "LLM Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "tikalk/adlc-team-skills: 🐙 ADLC Team Skills — Agentic SDLC for Engineering Teams"
+  }
+}

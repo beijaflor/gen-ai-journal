@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:06:29.606366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mistral AIが次世代の安全性モデル「Shieldstral」を発表 — 3Bサイズでポリシー適応型",
+    "url": "https://mistral.ai/news/shieldstral/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Mistral AIがリリースしたShieldstralは、3Bパラメータながら推論時に自然言語でポリシーを定義できる柔軟性を持ち、テキストと画像の両方に対応した高性能なオープンソース安全性モデルです。",
+    "summaryBody": "Shieldstralは、コンテンツモデレーションを「ポリシー適応型の質問応答（QA）」として再定義する30億パラメータのマルチモーダル安全性分類モデルです。従来のガードレールモデルが固定された有害性カテゴリに依存していたのに対し、Shieldstralは推論時に自然言語でポリシー（例：「このコンテンツは暴力を助長するか？」）を指定できるため、追加の再学習なしでデプロイ環境に合わせた柔軟な調整が可能です。テキストだけでなく画像の安全性評価にも対応し、単一のトークンから校正された安全スコアを算出します。16GBのGPU1枚で効率的に動作しながら、自身の7倍以上のサイズを持つモデルと同等以上の性能をベンチマークで示しており、Apache 2.0ライセンスで公開されています。開発には同社のプラットフォーム「Forge」が活用されました。",
+    "topics": [
+      "Mistral AI",
+      "Shieldstral",
+      "AI Safety",
+      "Multimodal AI",
+      "Open Weights"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Shieldstral."
+  }
+}

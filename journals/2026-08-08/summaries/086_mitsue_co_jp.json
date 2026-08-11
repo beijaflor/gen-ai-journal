@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:19:06.741441+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CursorのAuto-reviewとは？承認を減らしながら安全にエージェントを動かす仕組み",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202608/04_1030.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cursor 3.6で導入された「Auto-review」は、サンドボックスとLLM分類器を組み合わせることで、開発者の承認負荷を抑えつつ安全にエージェントを実行する新機能です。",
+    "summaryBody": "Cursorの最新実行モード「Auto-review」の仕組みと設定方法についての解説記事です。この機能は、エージェントによるシェルコマンド実行時の「利便性と安全性のジレンマ」を解消するために設計されました。実行フローは、①Allowlistによる即時実行、②サンドボックス内での実行、③LLM分類器（Classifier）による判断、の3段階で構成されます。特にClassifierは、`permissions.json`を通じて「プロジェクト外のファイル変更は禁止」といった自然言語による制御が可能です。また、サンドボックス利用時のパフォーマンス低下を防ぐためのビルドキャッシュ共有設定（`sandbox.json`）や、Windows環境における技術的背景、MicrosoftのMXCなど業界全体のトレンドについても触れられています。",
+    "topics": [
+      "Cursor",
+      "AI Agent",
+      "Auto-review",
+      "Sandbox",
+      "LLM Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

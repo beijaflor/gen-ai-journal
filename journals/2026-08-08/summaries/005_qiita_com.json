@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:41:19.489138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek V4 Flash 0731 のロスレスMXFP4版をSSDストリーミングで動かしてみた",
+    "url": "https://qiita.com/sukimaengineer/items/c97f3e6aafdc63b7ac17",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek V4 Flash 0731のMXFP4版を、DwarfStarのSSDストリーミング機能を活用して128GBメモリのMacでロスレスかつ実用的な速度で動作させた検証記録。",
+    "summaryBody": "DeepSeek V4 Flash 0731の公式重みとビット単位で同一な「ロスレスMXFP4版」GGUFを、M5 Max搭載MacBook Pro（128GBメモリ）で動作させた技術レポートです。モデルサイズ145.3 GiBに対し、DwarfStarエンジンの「--ssd-streaming」機能を用いてルーテッドエキスパートをSSDから動的供給することで、メモリ容量を超えた推論を可能にしています。実測では、エキスパートキャッシュのヒット率により生成速度18〜20 t/s、バルクプレフィル約194 t/sという、SSD経由とは思えない実用的なパフォーマンスを達成。記事ではMetal向けMXFP4推論カーネルの挙動や、投機的デコード（DSpark）との排他制約、KVキャッシュが自動キャッシュ計算に含まれない仕様など、実装レベルの知見が共有されています。",
+    "topics": [
+      "DeepSeek-V4-Flash",
+      "DwarfStar",
+      "MXFP4",
+      "SSD Streaming",
+      "Apple Silicon"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

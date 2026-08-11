@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:30:36.288332+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "0.09ドルと290.12ドル：LLM推論コストを決定づける5つの要因",
+    "url": "https://runinfra.ai/news/inference-cost-truth",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "100万トークンあたりのコストが0.09ドルから290.12ドルまで激しく変動する要因を、ハードウェア、プロバイダー、バッチ設定、稼働率、推理トークンの5つの視点から詳細に分析したレポート。",
+    "summaryBody": "LLMの推論コストにおける巨大な価格差（最大約3200倍）は、単なるモデルの差ではなく、5つの主要な「レバー」によって生じています。1.アクセラレータ（2.3倍）：NVIDIA B200に対しAMD MI355Xは半額以下で高いスループットを出す事例がある。2.プロバイダー（3.2倍）：同一モデルでもAPI提供元により価格が大きく異なる。3.バッチ設定（3.5倍）：同時実行数の設定変更は、ハードウェアの選定以上にコストに影響する。4.稼働率（9倍）：自社ホストがAPIより安くなるかは、この「実稼働率」で決まる。5.推理（Reasoning）トークン（14.3倍）：見えない思考トークンが課金対象となるため、コスト計算を最も狂わせる要因となる。結論として、稼働率が30%を下回る一般的な用途ではAPI利用が依然として経済的であり、コスト最適化の鍵はハードウェアの調達ではなくソフトウェアスタックの最適化にあると指摘しています。",
+    "topics": [
+      "LLM推論コスト",
+      "GPU",
+      "AMD MI355X",
+      "コスト最適化",
+      "自社ホスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "$0.09 and $290.12: What Actually Moves Your Inference Bill"
+  }
+}

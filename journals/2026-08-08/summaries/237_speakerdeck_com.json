@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:36:38.575278+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様駆動開発の消費期限",
+    "url": "https://speakerdeck.com/watany/expiration-date-of-sdd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを用いた仕様駆動開発の現在地を整理し、チーム開発における認知負債の抑制と、手法がボトルネック化した際の「消費期限」後の展望を提示したスライド資料。",
+    "summaryBody": "2025年に提唱された仕様駆動開発（SDD）は、AIエージェントに設計やタスク分解を指示するフレームワークとして注目を集めたが、2026年のGPT-5やClaude 4.5といった高性能モデルの登場により、詳細な仕様を介さずに進める「Planモード」への統合が進みつつある。もっとも、チーム開発ではAIの生成速度に人間の理解が追いつかない「認知負債（Comprehension Debt）」がボトルネックとなり、AIのブラックボックス化やプロジェクトの文脈に合わないコードの採用を防ぐ「型」として、仕様記述は依然として重要だと著者は指摘する。その実践としては、重厚なAI-DLCと自由な指示の中間解にあたる実用的な「OpenSpec」の採用を勧める一方、仕様が実装と乖離するドリフトが生じたり、仕様記述そのものがAIの性能を阻害し始めた時こそがSDDの「消費期限」だとする。チームが習熟した後は、仕様に縛られない次のフェーズへ進むべきだと結論づけている。",
+    "topics": [
+      "仕様駆動開発",
+      "AIエージェント",
+      "OpenSpec",
+      "認知負債",
+      "AI-DLC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

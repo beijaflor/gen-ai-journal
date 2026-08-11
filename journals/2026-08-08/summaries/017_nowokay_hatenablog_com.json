@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:37:59.212745+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4-Flash-0731を試す。コーディングにはお勧めできない。",
+    "url": "https://nowokay.hatenablog.com/entry/2026/08/02/002257",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek-V4-Flash-0731を検証し、推論(Thinking)に頼った強引なコード生成やトークン消費量の多さから、コーディング用途には不向きであると結論づけています。",
+    "summaryBody": "DeepSeek-V4-Flash-0731の正式版をローカル環境（llama.cpp/DwarfStar）で試用したレビューです。本モデルはThinkingプロセスを長く取ることで性能を補っていますが、根本的なコーディング能力が不足しており、指示の見逃しや不自然なバグの混入が目立ちます。また、Thinkingによるトークン消費量が他モデルと比較して数倍（TODOアプリ作成例で約5倍）に膨らむため、トークン単価の安さを相殺してしまう懸念があります。Javaのカットオフは2024年5月頃と推測され、表現力や地域知識は標準的ですが、開発実務にはHy3やStep-3.7-Flashなどの他モデルの方が適していると評価されています。",
+    "topics": [
+      "DeepSeek-V4-Flash",
+      "ローカルLLM",
+      "コーディング",
+      "推論モデル",
+      "モデル比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

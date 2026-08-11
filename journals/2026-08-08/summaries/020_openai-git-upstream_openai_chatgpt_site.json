@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:37:21.462849+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIによるGitの大規模リポジトリ向け最適化パッチとアップストリーム状況",
+    "url": "https://openai-git-upstream.openai.chatgpt.site/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIが自社の大規模なモノレポを効率化するために開発したGitの最適化パッチ群の、技術的な詳細とアップストリーム（本家）への統合状況をまとめた資料。",
+    "summaryBody": "OpenAIは、巨大なリポジトリにおけるGitのパフォーマンス問題を解消するため、独自のパッチセットを管理しています。このドキュメントでは、本家にマージ済みのものから、現在開発中（Cooking）のものまで30のトピックが紹介されています。\n\n主な最適化項目は以下の通りです：\n- **Git Statusの劇的な高速化**: ファイルシステムモニター（FSMonitor）の活用、インデックスの並列ロード、一括スキャンにより、105ものパッチを重ねて最適化を図っています。\n- **インデックスとキャッシュの改善**: スパースインデックスの拡張を回避する`git stash`の修正や、`TREE`と`UNTR`（未追跡キャッシュ）の並列デコードを実現しています。\n- **パッキングとビットマップの最適化**: 履歴の重みに基づくビットマップ選択により、MIDXビットマップの書き込み時間を984秒から200秒へ短縮するなどの成果を上げています。\n- **バグ修正とCI改善**: 特定の静的解析（Coccinelle）が6時間でタイムアウトする問題の解消など、実務に即した修正が含まれています。\n\nこれらの成果は順次本家Gitへ提案・統合されており、大規模リポジトリを扱うエンジニアにとって極めて価値の高い技術情報となっています。",
+    "topics": [
+      "Git",
+      "OpenAI",
+      "Performance Optimization",
+      "Monorepo",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "OpenAI Git · patches & notes"
+  }
+}

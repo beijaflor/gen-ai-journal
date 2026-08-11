@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:39:11.288047+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オープンソースAIの開発事情 (2026-07-22 @NLPコロキウム)",
+    "url": "https://speakerdeck.com/odashi/opunsosuainokai-fa-shi-qing-2026-07-22-at-nlpkorokiumu",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "国立情報学研究所（NII）のLLM-jpプロジェクトにおける最新モデル開発の進捗と、真の「オープンソースAI」の定義（OSAID）に基づく透明性確保の取り組みについて解説した資料です。",
+    "summaryBody": "本資料は、NII主導のオープンサイエンス組織「LLM-jp」による大規模言語モデル開発の現状をまとめたものです。主な内容は以下の3点に集約されます。\n\n1. **モデル開発の進展**: 12兆トークンで学習した「LLM-jp-4」シリーズの開発状況を報告。LLM-jp-3と比較して事前学習ステージの多段階化やReasoning対応など、性能向上のための技術的変遷が示されています。\n2. **オープンソースの定義と課題**: Meta社のLlamaなどが「オープンソース」を自称しながらもライセンス制限を設けている「オープンウォッシング」を批判。2024年に策定された「Open Source AI Definition (OSAID)」に基づき、学習データの情報、学習手順、推論手順、パラメータのすべてが公開されることの重要性を強調しています。\n3. **厳格なデータ管理と実験手法**: OSAID準拠のために、データの来歴調査やライセンスに基づく「リリースレベル（L1-LZ）」管理を徹底。また、一部実施要因計画法を用いた「コーパスアブレーション実験」により、各データセットがモデル性能に与える影響を定量的に評価する高度な手法を紹介しています。\n\n研究リソースとしてチェックポイントを数千個保存・公開する方針など、学術機関ならではの透明性と再現性を重視した開発姿勢が示されています。",
+    "topics": [
+      "LLM-jp",
+      "OSAID",
+      "オープンソースAI",
+      "大規模言語モデル",
+      "コーパスアブレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    }
+  }
+}

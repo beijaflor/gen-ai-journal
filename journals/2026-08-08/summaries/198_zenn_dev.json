@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:46:22.919736+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕様書から保証台帳へ、GDD（保証駆動開発）のすすめ",
+    "url": "https://zenn.dev/yktsnet/articles/202608-guarantee-driven-development",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる高速な開発で増大する手戻りを防ぐため、テストが裏付ける「振る舞いの約束」を自然言語の台帳で管理し、人間が裁可してから実装する「保証駆動開発（GDD）」を提唱する。",
+    "summaryBody": "AI（Claude Code等）を用いた開発では実装速度が飛躍的に向上する一方、既存機能の破壊や「現在何が守られているか」の把握が困難になる課題が生じます。筆者は開発を流動的な「MVP期」と、安定性を重視する「Issueドリブン期」に分け、後者において『保証台帳（docs/guarantees.md）』を用いる『保証駆動開発（GDD）』を提案しています。\n\n保証台帳は、テストコードから「人間が読める約束事」だけを抽出した索引です。かつての実行可能な仕様書（Cucumber等）は人間による二重管理コストで破綻しましたが、GDDではそのコストをAIが肩代わりします。実装前に人間が「新たに宣言する保証」と「維持する保証」を裁可し、AIに実装・テスト・台帳更新を一括で行わせることで、開発の境界線を明確にします。自然言語ベースゆえの実装との乖離リスクは残るものの、AIと共に開発する上での「信頼の地図」として機能する手法です。",
+    "topics": [
+      "GDD (保証駆動開発)",
+      "AI開発",
+      "Claude Code",
+      "ソフトウェア設計",
+      "テスト自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

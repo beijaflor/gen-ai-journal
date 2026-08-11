@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:42:11.394626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MacBook Air M5にDockerフリーなローカルLLM+Web検索環境を構築",
+    "url": "https://qiita.com/tcmmmtc9/items/a937f38ca3dc44fb7f2b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MacBook Air M5環境において、Dockerを使わずにuvやLaunchAgentsを活用して、llama.cpp、OpenWebUI、SearXNGを組み合わせた軽量なローカルLLM検索環境を構築する手順の解説。",
+    "summaryBody": "MacBook Air M5上で、リソース消費を抑えるためにDocker Desktopを避け、Python管理ツール「uv」を用いたDockerフリーなローカルLLM環境の構築ガイドです。推論エンジンにllama.cpp、複数モデルの管理にllama-swap、UIにOpenWebUI、ウェブ検索連携（RAG）にSearXNGを採用しています。各コンポーネントのインストール方法から、macOSのLaunchAgentsを利用したバックグラウンド実行設定、OpenWebUIでのAPI連携設定まで、具体的かつ実践的なワークフローを網羅。Mシリーズチップの性能を活かしつつ、ネイティブ環境でモデルを動かすための知見がまとめられています。",
+    "topics": [
+      "ローカルLLM",
+      "MacBook Air",
+      "llama.cpp",
+      "OpenWebUI",
+      "SearXNG"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

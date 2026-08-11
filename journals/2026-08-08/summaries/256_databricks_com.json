@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T23:56:17.584442+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模におけるAIコーディングコストの管理：持続可能な開発効率の実現",
+    "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングツールの普及に伴うコストの指数関数的増大を抑制するため、モデルの柔軟な切り替え、動的ルーティング、開発者への可視化、トークン削減という4つの主要なコスト管理レバーを解説。",
+    "summaryBody": "AIコーディングツールは開発速度を劇的に向上させる一方で、そのコスト管理が企業の大きな課題となっています。Databricks、Stripe、Uberなどの事例に基づき、生産性を損なわずにコストを制御する「デュアル・マンデート（二重の義務）」を達成するための4つのアプローチが示されています。\n\n1. **効率フロンティアへの移行**: 最高峰の知能（インテリジェンス・フロンティア）を追うのではなく、知能あたりの単価が最も優れた「効率フロンティア」のモデル（オープンソースを含む）を迅速に採用すること。\n2. **動的ルーティング**: リクエストやタスクの複雑度に応じて、最も安価で能力が十分なモデルへ自動的に振り分ける仕組みの導入。\n3. **可視化と段階的な摩擦**: ハードな予算制限ではなく、消費状況の可視化や「ダウンシフト（上限に達した際に安価なモデルへ切り替える）」によって開発者の行動を促す。\n4. **トークンオーバーヘッドの削減**: 文脈の圧縮、冗長なツール呼び出しの削減、プロンプトキャッシュの最適化により、推論コストを最大50%削減可能。\n\nこれらを統合的に管理するインフラとして「AI Gateway」パターンの重要性を説き、Unity AI GatewayやOmnigentといったツールの活用を推奨しています。",
+    "topics": [
+      "AI Coding",
+      "Cost Optimization",
+      "LLM Ops",
+      "Databricks",
+      "Enterprise AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Managing AI Coding Costs at Scale | Databricks Blog"
+  }
+}

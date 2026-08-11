@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:35:51.810334+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AppleのUIをSkill化して「AI臭いUI」を脱しようとチャレンジした #ClaudeCode",
+    "url": "https://qiita.com/t2murata/items/0f6a7551da98464cc54e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのSkill機能を用いてAppleのHuman Interface GuidelinesをAIに学習させ、生成AI特有の不自然なUI（AI臭いUI）を改善する試みの記録。",
+    "summaryBody": "この記事では、Claude Codeの「Skill」機能を活用して、AppleのHuman Interface Guidelines (HIG) をAIに定義・読み込ませることで、UIデザインの質を向上させる手法を解説しています。AIが生成するUIにありがちな「過剰な角丸」「不適切な余白」「不揃いなアイテム」といった、いわゆる『AI臭いUI』を脱却するため、著者はHIGをMarkdown化してSkillとして導入しました。実際のWebサービス『ゆめぐり帳』の改善プロセスでは、Playwrightを用いた実測に基づくレイアウト修正や、HIGのルールに沿ったメニュー構成の再構築に成功しています。一方で、アイコンへの絵文字使用の禁止といった細かなルールの見落としや、実機操作時の違和感の検知など、AIの限界についても率直な検証結果が共有されています。",
+    "topics": [
+      "ClaudeCode",
+      "Apple HIG",
+      "UI/UX",
+      "AI開発",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

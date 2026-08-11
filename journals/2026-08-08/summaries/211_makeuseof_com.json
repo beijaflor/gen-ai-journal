@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:43:06.361835+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeで写真を編集：MCPを活用してDarktableをAI操作する次世代のワークフロー",
+    "url": "https://www.makeuseof.com/claude-edit-photos-makes-darktable-like-lightroom/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのClaudeとオープンソースのDarktableをMCPで連携させ、自然言語でRAW現像やバッチ処理を行う革新的な手法が公開されました。",
+    "summaryBody": "Adobe Lightroomのサブスクリプションモデルからの脱却を目指す筆者が、オープンソースのRAW現像ソフト「Darktable」をClaudeで操作する新しい手法を提案しています。Darktableは高機能ですが操作の習得が難しいという課題があります。筆者はModel Context Protocol (MCP) を使用して、ClaudeがDarktableのCLI (darktable-cli) を介して直接画像を編集できるサーバー「darktable-mcp」を構築しました。これにより、ユーザーはスライダーをいじる代わりに「特定の雰囲気にする」「一括でJPEGに変換してリサイズする」といった自然言語の指示でプロ級の編集が可能になります。編集内容はXMPファイルとして保存されるため、後からDarktableのGUIで手動調整することも可能です。AIがツールの壁を取り払い、専門的なソフトの学習コストを大幅に下げる好例といえます。",
+    "topics": [
+      "Claude",
+      "Darktable",
+      "MCP (Model Context Protocol)",
+      "AI写真編集",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "Claude can edit your photos now — and it makes Darktable feel like Lightroom"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:54:51.919895+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "rust-lang/rustにおけるLLM（大規模言語モデル）利用ポリシーの導入",
+    "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Rustプロジェクトは、主要リポジトリへの貢献におけるLLM利用について、「分析や改善には許容し、生成には厳格な制限を設ける」という新ポリシーを採択しました。",
+    "summaryBody": "Rustプロジェクトの5つのチームが、`rust-lang/rust`モノレポへの貢献におけるLLM利用ポリシーを導入しました。このポリシーの核心は「質問、分析、洗練、チェック、提案、レビューへの利用は認めるが、作成（Create）には制限を課す」という点にあります。導入の背景には、LLM生成物によるレビュー負荷の増大、貢献者のコード理解度に対する信頼の低下、および機械的なコピペによるコミュニケーションの阻害という3つの大きな課題がありました。規定では、LLM利用の開示を義務付け、生成されたコードには通常より高いテスト基準を求め、健全性に寄与する重要な変更への利用を禁止しています。また、査読者はLLM生成PRを自身の裁量で拒否できる権利を持つことも明文化されました。これはAIを全面禁止するのではなく、人間の理解とコミュニティの質を最優先するためのガバナンスの試みです。",
+    "topics": [
+      "Rust",
+      "LLM",
+      "オープンソースガバナンス",
+      "AIポリシー",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "rust-lang/rust is adopting an LLM policy"
+  }
+}

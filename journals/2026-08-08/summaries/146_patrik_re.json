@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:53:12.281122+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WordPressが陥落したとき、Mythosはどこにいたのか？",
+    "url": "https://patrik.re/where-was-mythos-when-wordpress-fell/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicが鳴り物入りで発表したセキュリティ特化型AI「Mythos」が、WordPressの重大な脆弱性を見逃した事実を引き合いに、AIのマーケティング的喧伝と実態の乖離を批判する。",
+    "summaryBody": "Anthropicが2026年に発表したセキュリティ特化型モデル「Mythos」は、1,000以上のオープンソースプロジェクトをスキャンし「セキュリティを解決する」と謳われた。しかし、実際にはWordPress 7.0.2で修正された深刻なRCE脆弱性（wp2shell）を特定できず、発見したのはGPT-5.6を使用した別のセキュリティ研究者であった。著者は、Anthropicが公表した「数千件の脆弱性発見」という数字の信憑性を、独立した専門家による検証率の低さ（約25%）や、実態がFirefox等の一部プロジェクトに偏っている点を挙げて疑問視している。また、AIが自動生成する大量のレポートがオープンソース維持管理者の負担を増大させている現状を指摘。AIセキュリティ企業による「20分で解決した」といった後出しの主張を退け、単なるモデルの能力（マーケティング）よりも、現実の複雑なエクスプロイトチェーンを構築できる実用的な制御とプロンプト技術の重要性を説いている。",
+    "topics": [
+      "AIセキュリティ",
+      "Anthropic Mythos",
+      "脆弱性診断",
+      "WordPress",
+      "AIマーケティング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Where was Mythos when WordPress fell? · patrik.re"
+  }
+}

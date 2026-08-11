@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:27:25.422412+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レガシーコード移行における決定論的検証のためのエージェント的手法",
+    "url": "https://arxiv.org/abs/2607.28271",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが実行パスを自動探索し、COBOLからJavaへの移行前後で動作が一致することを決定論的に検証する「Locksmith Loop」手法の提案。",
+    "summaryBody": "本研究は、COBOLからJavaへのレガシーコード移行におけるテストデータ不足と検証の困難さを解決するため、AIエージェントを活用したテスト合成手法「Locksmith Loop」を提案しています。この手法は、COBOLソースと生成されたJavaターゲットの両方にモックを組み込み、エージェントが『Witness Search』を用いて未知の実行パスを探索、さらにパリティを維持した変異を行うことでテストケースを自動生成します。探索が飽和した際には、進展を阻害する条件（Locked Paragraph）を特定し、動的に解決します。評価実験では、最大4,114行のプログラムに対して91.90%のブランチカバレッジを達成し、全ての採用テストケースにおいてJavaとCOBOLの決定論的な挙動の一致（パリティ）を確認しました。これは、AIによるコード生成出力を決定論的なオラクルで検証する新しいアプローチを示しています。",
+    "topics": [
+      "LLM",
+      "Legacy Migration",
+      "COBOL",
+      "Software Testing",
+      "Agentic Workflow"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Agentic Method for Deterministic Validation of Legacy Code Migration"
+  }
+}

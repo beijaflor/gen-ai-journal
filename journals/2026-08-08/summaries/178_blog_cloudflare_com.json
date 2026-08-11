@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:51:20.368935+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "任意のWebサイトにWebMCPインターフェースを：Cloudflareが開発者プレビューを公開",
+    "url": "https://blog.cloudflare.com/webmcp/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントがWebサイトをスクレイピングではなく構造化されたツールを介して操作可能にする「WebMCP」のデベロッパープレビューをリリースしました。",
+    "summaryBody": "Cloudflareは、AIエージェントがWebサイトと対話するための新しいブラウザ標準「WebMCP」のデベロッパープレビューを発表しました。通常、AIエージェントは人間向けのHTMLを解析（スクレイピング）して情報を取得しますが、WebMCPを利用することで、サイト側が明示的に定義した「ツール（API）」をエージェントに公開できます。\n\n主な特徴と仕組み：\n- **エッジでの自動注入:** CloudflareのHTMLRewriterを使用して、オリジンのコードを一切変更せずに、ページにブリッジスクリプトを自動挿入します。\n- **document.modelContext:** Chrome 146で実験的に導入されるこのAPIを介して、ブラウザエージェントがサイトの提供するツールを認識・実行します。\n- **ツールパック:** 画像のメタデータを解析する「Content Credentials」や、既存のMCPサーバーと連携するパックが提供され、これらはすべて訪問者のブラウザ内でローカルに動作します。\n- **BrowserRunとの連携:** Cloudflareのヘッドレスブラウザ「BrowserRun」と組み合わせることで、エージェントによる自律的な操作環境を構築可能です。\n\nこれにより、開発者は再構築の手間なく、AIフレンドリーなWebサイト体験を提供できるようになります。",
+    "topics": [
+      "Cloudflare",
+      "MCP",
+      "WebMCP",
+      "AI Agents",
+      "Browser Rendering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Give any website a WebMCP interface"
+  }
+}

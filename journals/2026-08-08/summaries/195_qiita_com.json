@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:47:04.262664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareに学ぶ、オープンウェイトモデルの使い方 — 1兆パラメータMoEを「小さく・速く・安全に」回す",
+    "url": "https://qiita.com/sukimaengineer/items/c1a812deb9f9111c0c31",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが1兆パラメータ級の巨大MoEモデル（Kimi K2.6 / GLM 5.2）を商用運用するために採用した、prefillとdecodeで精度を分ける非対称量子化やKVキャッシュの整合性チェック技術の詳解。",
+    "summaryBody": "Cloudflareのエンジニアリングブログを基に、1兆パラメータ規模の巨大MoEモデルを効率的に推論させるための運用ノウハウを整理した解説記事。主な技術的ポイントは3点に集約される。1つ目は、演算律速のprefill（FP8）とメモリ帯域律速のdecode（INT4）で数値フォーマットを使い分ける「非対称レシピ」により、スループットと精度のトレードオフを最適化した点。2つ目は、FP8 KVキャッシュの導入により収容可能コンテキストを倍増させ、ノード全体の経済性を向上させた点。3つ目は、共有KVキャッシュの誤読み出しを防ぐために物理ページに世代タグを付与する実行時検証を導入し、大規模運用特有のバグに対処した点。これらの知見は、メモリ帯域がボトルネックとなるローカルLLM運用者にとっても、量子化の選択やリソース管理の観点で極めて有用な示唆を含んでいる。",
+    "topics": [
+      "LLM",
+      "Cloudflare",
+      "MoE",
+      "量子化",
+      "推論最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

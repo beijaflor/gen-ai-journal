@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T09:46:38.527289+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gpt-5.6-sol の high に「ウルトラ」と入力して「ソウル」と話させる技術：Microsoft Agent Framework 徹底活用術",
+    "url": "https://zenn.dev/microsoft/articles/agent-framework-ultra-soul",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Microsoft Agent Framework (C#/.NET) を活用し、LLMに特定の応答を強制させるためのシステム指示、ツール、ContextProvider、スキル、ループ評価などの多様なカスタマイズ手法を解説するチュートリアルです。",
+    "summaryBody": "この記事は、将来のモデルを想定したネタ記事の体裁を取りつつ、Microsoft Agent Frameworkを用いた高度なAIエージェント開発の実践的なテクニックを網羅的に解説しています。主な内容は以下の通りです。\n\n1. **エージェントの基本構成**: .NET 10とHarnessAgentを用いたエージェントの立ち上げ。\n2. **制御手法のバリエーション**: システム指示(Instructions)の付与、関数呼び出し(Tools)による意図の注入、再利用可能な`AIContextProvider`によるコンテキスト管理、ファイルベースのメモリ操作など。\n3. **高度な自律制御**: `LoopAgent`と`LoopEvaluator`を用いた、目的達成（特定の回答が得られる）までの自動的なフィードバックとループ実行。\n4. **Agent Skills**: スキルソース（インメモリ、ファイル、MCP等）を用いた標準的な拡張方法。\n5. **可観測性とホスティング**: .NET Aspire DashboardによるOpenTelemetryトレースの確認、Responses APIとしての公開、およびDevUIを用いた開発用チャット画面の構築。\n\n単なる応答の制御に留まらず、エージェントをどのようにAPI化し、監視し、管理するかというエンタープライズ向けのアーキテクチャまで踏み込んだ内容となっています。",
+    "topics": [
+      "Microsoft Agent Framework",
+      ".NET",
+      "C#",
+      ".NET Aspire",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

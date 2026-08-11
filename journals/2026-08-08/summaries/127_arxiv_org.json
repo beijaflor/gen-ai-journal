@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:07:47.790883+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIベンチマークの飽和に関する系統的研究：進歩を測定し続けるための設計指針",
+    "url": "https://arxiv.org/abs/2602.16763",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIの性能評価指標が急速に限界に達する「飽和」現象を60のベンチマークで調査し、寿命を延ばす鍵はデータ秘匿ではなく専門家によるキュレーションであることを明らかにしました。",
+    "summaryBody": "本研究は、AIモデルの進化を測定する上で重要な役割を果たすベンチマークが、短期間で性能の差を識別できなくなる「飽和」状態に陥る現象を系統的に分析したものです。60の言語モデル向けベンチマークを対象に14の特性から調査した結果、約半数が飽和状態にあり、その速度はベンチマークの公開期間が長くなるほど加速する傾向が確認されました。特筆すべき発見は、ベンチマークの寿命（レジリエンス）を高める要因が、テストデータの非公開性（データリークの防止）ではなく、専門家による厳格な問題設計（キュレーション）にあるという点です。ICML 2026で発表されたこの成果は、モデル性能の真の進歩を正しく評価し続けるための、より耐久性の高い評価アプローチと設計指針を提示しています。",
+    "topics": [
+      "AI評価",
+      "ベンチマーク飽和",
+      "LLM",
+      "ICML 2026",
+      "データ品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:18:16.492255+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の「無駄」を可視化するツール cclens を作った",
+    "url": "https://zenn.dev/lambdalisue/articles/introduce-cclens",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのセッションログを解析し、未使用の設定や過剰なトークン消費、ツールの失敗といった「無駄」を定量的に可視化・改善提案するRust製CLIツール「cclens」が登場。",
+    "summaryBody": "Claude Codeにおけるカスタムルールやスキルの設定は、非決定的なAIの性質上、効果検証や棚卸しが困難であるという課題があります。cclensは、普段のセッションログ（トランスクリプト）をSQLiteベースで解析し、設定の「静的コスト」と実際の「ランタイムコスト」を突き合わせることで、最適化の余地を可視化します。主な機能として、全体の健康診断を行う`doctor`、トークンの固定費を分析する`overhead`、AI自身に修正案を出させる`optimize`などを備えています。設計面では、Claude Codeのアップデートによるフォーマット変更に強いレイヤー分離構造を採用し、データは完全にローカルで処理されます。自分では気づきにくい「cdコマンドの乱発」や「過剰な禁止ルール」などをデータに基づいて特定し、開発効率とコストの改善を支援します。",
+    "topics": [
+      "Claude Code",
+      "Rust",
+      "LLM",
+      "開発ツール",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

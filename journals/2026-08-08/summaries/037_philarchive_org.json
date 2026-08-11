@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T07:14:31.123989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンヌの剛性定理：OpenAIおよびAnthropicによる反例の反証（および予想の証明案）",
+    "url": "https://philarchive.org/archive/NIEWTCv17",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIやAnthropicが提示したコンヌ剛性予想の反例を数学的・論理的欠陥から論破し、同時に同予想の一般的な証明を提案する研究論文。",
+    "summaryBody": "本論文は、作用素環論における重要な未解決問題である「コンヌの剛性予想（Connes' Rigidity Conjecture）」を巡る論争に終止符を打とうとするものである。著者であるJenny Lorraine Nielsenは、まずOpenAI、Anthropic、およびZhouによって近年提示されたとされる「反例」を詳細に検討し、それらが数学的に無効であることを証明する。具体的には、Leanコードの内部的な仕様の不備や、ICC（Infinite Conjugacy Class）性、カジュダン特性(T)の欠如などを指摘し、Ioanaの分類定理やマルグリスの超剛性定理、シュアの補題などの古典的定理を用いて、反例とされる群フォン・ノイマン環が実際には同型になり得ないことを帰謬法で導き出している。\n\nさらに、論文の後半部では、任意の可算離散ICC特性(T)群がW*-超剛性であることの一般的証明を提示している。著者は、ベルヌーイ作用を伴う crossed product に持ち上げることでカルタン部分環の不在という古典的な障壁を回避し、Ioanaの分類理論（2011）を拡張・適用することで、群の同型性を導き出した。この結論が正しければ、量子場理論におけるゲージ群の再構成など、数理物理学の基礎理論の整合性を強化するものとなる。",
+    "topics": [
+      "コンヌ剛性予想",
+      "フォン・ノイマン環",
+      "カジュダン特性(T)",
+      "AIによる数学的検証",
+      "W*-超剛性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Conne's Rigidity Theorem: Disproof of the Open AI and Anthropic Counterexamples (with Proposed Proof of the Conjecture)"
+  }
+}

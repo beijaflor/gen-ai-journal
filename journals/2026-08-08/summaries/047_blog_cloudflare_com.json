@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:29:19.118564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントにはコンテナではなく「コンピュータ」が必要：@cloudflare/computer の導入",
+    "url": "https://blog.cloudflare.com/cloudflare-computer/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントにスケーラブルな実行環境を提供する「@cloudflare/computer」を発表し、アイソレートとコンテナを最適に使い分ける新しいランタイム基盤を導入しました。",
+    "summaryBody": "Cloudflareが発表した「@cloudflare/computer」は、AIエージェントに専用の「コンピュータ（仮想ファイルシステムと実行環境）」を提供するオープンソースパッケージです。従来のエージェント構築ではエージェントごとにコンテナを起動するのが一般的でしたが、リソース消費が激しく数億単位の同時稼働には耐えられません。本ソリューションは、Cloudflareが得意とする軽量な「アイソレート（Workers/Durable Objects）」をベースにしつつ、必要に応じてLinuxユーザーランドを備えた「コンテナ」をオンデマンドでツールとして呼び出すハイブリッド構成を採用しています。SQLiteベースの共有ファイルシステムを介してアイソレートとコンテナが連携し、コード編集やgit操作はアイソレートで、重量級のバイナリ実行はコンテナで行うといった、効率的でコストパフォーマンスに優れたエージェント開発が可能になります。",
+    "topics": [
+      "AIエージェント",
+      "Cloudflare Workers",
+      "Durable Objects",
+      "サーバーレス",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Your agent needs a computer, not a container — introducing @cloudflare/computer"
+  }
+}

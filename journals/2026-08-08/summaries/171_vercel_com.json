@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T10:37:42.923248+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Pluginsの導入：AIエージェント拡張機能の共通規格",
+    "url": "https://vercel.com/blog/introducing-agent-plugins",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "VercelやOpenAIらが主導する「Agent Plugins 1.0.0」は、AIエージェントのスキルやツール接続（MCP）を標準化し、複数のクライアント間でポータブルにするためのオープンなパッケージ規格です。",
+    "summaryBody": "Vercel、AWS、GitHub、Microsoft、OpenAIなどが共同で策定した「Agent Plugins 1.0.0」が発表されました。これはAIエージェントの拡張機能をパッケージ化するためのベンダー中立な標準規格です。主な特徴は、エージェントの指示セットである「Agent Skills」と、外部ツール接続を担う「MCP（Model Context Protocol）サーバー」を、単一の`plugin.json`マニフェストと定義されたディレクトリ構造で管理できる点にあります。これにより、開発者は一度プラグインを作成すれば、ChatGPT、Cursor、GitHub Copilot、VS Codeといった対応クライアントすべてで共通して動作させることが可能になります。特定のクライアント固有の機能が必要な場合は、名前空間を利用した拡張メカニズムで柔軟に対応しつつ、コアなポータビリティを維持します。本プロジェクトはオープンライセンスで提供され、技術運営委員会によって中立的に管理されます。",
+    "topics": [
+      "Agent Plugins",
+      "AI Agents",
+      "MCP",
+      "Vercel",
+      "Open Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 94
+    },
+    "originalTitle": "Introducing Agent Plugins"
+  }
+}

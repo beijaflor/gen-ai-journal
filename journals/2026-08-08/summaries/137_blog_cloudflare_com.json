@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:55:20.219790+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Walletsの発表：自律型エージェントのためのプログラム可能なウォレット",
+    "url": "https://blog.cloudflare.com/wallets/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントがAPIやコンテンツの支払いを自律的に行い、永続的な身元を証明できるマイクロペイメント対応ウォレット「Cloudflare Wallets」を発表しました。",
+    "summaryBody": "Cloudflareは「Agents Week」の一環として、AIエージェント向けの決済基盤「Cloudflare Wallets」を発表しました。従来のインターネットは人間向けに設計されており、エージェントによるAPIの試用や支払いが困難でしたが、本機能はx402プロトコルを活用したマイクロペイメントにより、この摩擦を解消します。\n\nシステムは、人間が資金を管理する「Account Wallets」と、エージェントがAPIキー経由で利用する「Virtual Wallets」の2層構造で構成されます。ユーザーはエージェントに対して予算（アローワンス）や許可リストなどのガードレールを設定でき、エージェントはその範囲内で自律的に最適なAPIを探索・購入できます。\n\nまた、`cloudflare.pay`というハンドルネームを通じた身元確認機能も提供されます。これにより、エージェントは加盟店に対して「どこの組織のエージェントか」という永続的な識別子を提示でき、信頼性の向上や無料トライアルの適用、不正検知の最適化が可能になります。本機能は、Cloudflareが提唱する「エージェント型インターネット（Agentic Internet）」における経済活動の重要なビルディングブロックとなります。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "x402プロトコル",
+      "マイクロペイメント",
+      "API経済"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Announcing Cloudflare Wallets: The programmable wallet for the agentic Internet"
+  }
+}

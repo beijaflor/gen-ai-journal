@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:20:35.869025+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オントロジーは「先に決める」か「データから起こす」か",
+    "url": "https://zenn.dev/knowledge_graph/articles/ontology-define-first-vs-induce",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの精度向上に不可欠なオントロジー構築において、人間が設計する「明示型」とAIが生成する「推論型」を組み合わせたハイブリッド戦略の重要性を説く記事。",
+    "summaryBody": "AIエージェントを業務利用する際、部署間の用語定義のズレやハルシネーションを防ぐためのオントロジー設計手法を解説しています。事前に型を定義する「明示型」は信頼性が高い一方で設計負荷が重く、データから構造を抽出する「推論型」は迅速ですが精度の管理が課題となります。実務的な解として、システムの「コア」となる重要なエンティティは人間が設計し、データの追加に伴う「周辺」部分はAIに起案させて人間が承認するハイブリッドアプローチを推奨。AWSの「Context Ontology Accelerator」などの具体例を挙げつつ、GraphRAGとの違いや索引時点でのハルシネーションリスクについても深く考察しています。",
+    "topics": [
+      "オントロジー",
+      "生成AI",
+      "ナレッジグラフ",
+      "AIエージェント",
+      "データモデリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

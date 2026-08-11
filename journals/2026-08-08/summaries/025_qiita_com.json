@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:35:39.226270+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "設計レビューがHTMLで返る improve-codebase-architecture が良い #ClaudeCode - Qiita",
+    "url": "https://qiita.com/ryoji9702/items/0a989976c3587c0319ef",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code向けスキル「improve-codebase-architecture」が採用する、HTMLレポート出力と厳格な語彙制限による視覚的・構造的な設計レビュー手法を解説した記事。",
+    "summaryBody": "Matt Pocock氏が開発した、コードベースの設計を改善するためのClaude Code用スキルについて詳しく解説しています。本スキルは一般的なMarkdown出力ではなく、Tailwind CSSとMermaid.jsを用いた自己完結型HTMLレポートを生成するのが最大の特徴です。最近のコミット履歴からホットスポットを特定し、「そのモジュールを削除した際に複雑さが呼び出し側に分散するか（深いモジュールか）」を判定する『deletion test』を用いて、真にリファクタリング価値のある箇所を抽出します。また、LLM特有の表記ゆれを防ぐために『module』や『interface』といった特定の語彙以外を禁止する設計、図を主体とした説明責任の持たせ方など、AIエージェントによるソフトウェア・エントロピーの増大を抑制する実戦的な工夫が凝らされています。",
+    "topics": [
+      "Claude Code",
+      "ソフトウェアアーキテクチャ",
+      "AI駆動開発",
+      "Mermaid",
+      "技術負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

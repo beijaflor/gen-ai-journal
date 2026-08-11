@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T06:29:05.485669+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "KimiとGLMを大規模に、より小さく、速く、安全に実行する | Cloudflare Blog",
+    "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "CloudflareがWorkers AIにおいて、KimiやGLMといった大規模モデルの推論を効率化するために採用した、KVキャッシュのFP8量子化、重みのINT4圧縮、および整合性チェック技術の解説。",
+    "summaryBody": "Cloudflareは、メモリ消費が激しく提供が困難な大規模・長コンテキストモデル（MoonshotのKimiやZ.aiのGLM）をWorkers AIで効率的に実行するための最適化技術を公表しました。主な取り組みは3点です。第一に、KVキャッシュをFP8で量子化することでメモリ使用量を半減させ、精度を落とさずに同時実行リクエスト数を最大2倍に拡大しました。第二に、GLMモデルの重みをINT4に圧縮し、デコード時のメモリ帯域幅のボトルネックを解消して推論速度を最大55%向上させています。第三に、多数のリクエストが物理メモリを共有する環境下での安全性を確保するため、1%未満のオーバーヘッドで動作するKVキャッシュ整合性チェック層を導入しました。これらの最適化は推論フレームワーク「SGLang」を用いて実装されており、Prefill（計算負荷高）とDecode（メモリ負荷高）のフェーズを分離して実行することで、それぞれの特性に合わせた最適な精度・圧縮形式を選択可能にしています。",
+    "topics": [
+      "Cloudflare Workers AI",
+      "LLM推論最適化",
+      "KVキャッシュ量子化",
+      "モデル圧縮",
+      "SGLang"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Smaller, faster, safer: running Kimi and GLM at scale | Cloudflare Blog"
+  }
+}

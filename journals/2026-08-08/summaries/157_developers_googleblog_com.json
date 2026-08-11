@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-07T05:49:45.188068+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIモデルルーティングのための統合API",
+    "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google Cloud API Gatewayが、OpenAI互換リクエストをGeminiやClaude等の複数モデルへ動的にルーティングし、スキーマ変換まで自動化する新機能を公開。",
+    "summaryBody": "Google Cloud API Gatewayにて、マルチモデル運用を簡素化する「モデルルーティング」機能がパブリックプレビューとなりました。この機能は、OpenAI互換の入力を受け取り、OpenAPI 3.xの仕様に基づいて定義されたルールに従ってGemini、Claude、OSSモデル（Vertex AI等にホストされたもの）へ動的にリクエストを振り分けます。サーバーレスかつ軽量なインプレイスレイヤーとして動作し、ゲートウェイ側でペイロードを各バックエンドのネイティブ形式に自動変換（トランスコード）するため、アプリケーション側のハードコーディングを排除できます。また、レート制限、トークン追跡、セキュリティガバナンスのためのAgent Gateway連携などのエンタープライズ機能もサポートされています。",
+    "topics": [
+      "Google Cloud API Gateway",
+      "LLM Routing",
+      "Gemini",
+      "Vertex AI",
+      "Multi-LLM Strategy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "A unified API for AI model routing"
+  }
+}
