@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:20:02.743520+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "楽楽精算AIエージェントを支える、LLMOpsとインフラの選択肢",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260805/aicon_summer",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ラクスの「楽楽精算」AIエージェント開発において、既存のEKS資産を活かしたインフラ選定やKEDAによるスケーリング、OpenTelemetryを用いた高度な可観測性基盤の構築手法が語られました。",
+    "summaryBody": "株式会社ラクスの「RAKUS AI Conference 2026 Summer」における、経費精算AIエージェントの本番運用に向けた技術選定とLLMOpsの実践報告です。主なポイントは以下の3点です。\n\n1. **地に足のついたインフラ選定**: AI専用のマネージドサービスではなく、社内に知見が豊富なAmazon EKS、ArgoCD、GitHub Actionsを採用。既存のCI/CD資産やKubernetes運用のノウハウを最大限活用することで、開発速度と確実性を優先しました。\n2. **KEDAによるイベント駆動スケーリング**: 伝票作成の非同期処理において、従来のポーリング方式からKEDA（Kubernetes Event Driven Autoscaling）によるジョブ起動制御へ移行。キューの滞留数に応じた柔軟なスケーリングにより、UXの向上とコスト最適化を両立しています。\n3. **LLM時代の可観測性（Observability）**: 非決定的なAIの挙動を追跡するため、OpenTelemetryによる分散トレースを初期から導入。エラー時やLLM呼び出しのトレースを100%収集しつつ、正常系のサンプリング率を調整することで、コストを抑えながら障害調査やオフライン評価用データの抽出に役立てています。",
+    "topics": [
+      "LLMOps",
+      "Kubernetes",
+      "EKS",
+      "KEDA",
+      "OpenTelemetry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

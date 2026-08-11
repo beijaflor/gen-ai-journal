@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:24:15.602036+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Needle 2：小型デバイス向けの14MBエージェンティックLLM",
+    "url": "https://cactuscompute.com/needle",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "14MBという極小サイズでありながら、スマートホームやウェアラブル機器でのツール実行やデータ抽出に特化した、45MパラメータのエージェンティックLLM「Needle 2」が公開されました。",
+    "summaryBody": "Cactus Computeは、IoTや格安スマートフォンなどのリソース制限が厳しいデバイス向けに設計されたエージェンティックLLM「Needle 2」をリリースしました。このモデルは45Mパラメータで、バイナリサイズはわずか14MB、実行時のRAM使用量も28MB以下に抑えられています。Simple Attention Network（SAN）とCactus Quantsによる独自の2ビット量子化を採用しており、Raspberry Pi 5で毎秒500トークン以上の高速推論が可能です。機能面ではツール呼び出し（Tool Calling）や構造化データの抽出に特化しており、ベンチマークではApple FMやFunctionGemmaといった5倍から70倍大きいモデルに匹敵、あるいは上回る精度を記録しています。Apache 2.0ライセンスで公開されており、ESP32-S3のようなマイクロコントローラからWebAssemblyまで幅広い環境で動作します。",
+    "topics": [
+      "Edge AI",
+      "TinyML",
+      "LLM",
+      "Tool Calling",
+      "IoT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices"
+  }
+}

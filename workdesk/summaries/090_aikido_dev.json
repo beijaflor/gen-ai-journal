@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:11:31.342220+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIハーネスエンジニアリングとは何か？AIエージェントの性能とセキュリティを定義するオーケストレーション層の重要性",
+    "url": "https://www.aikido.dev/blog/what-is-ai-harness-engineering",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルを実用的なエージェントへと変える「ハーネス（オーケストレーション層）」の役割を定義し、その設計がモデル選定以上に品質やセキュリティを左右することを解説する。",
+    "summaryBody": "AIモデル単体は単なるテキスト生成器に過ぎませんが、ツール、コンテキスト、外部システムと接続し、具体的なアクションを実行可能にするコードやロジックの層を「ハーネス（Harness）」と呼びます。本記事では、AIエージェントを「モデル + ハーネス」の方程式で定義しています。ハーネスは、プロンプトチェイニング、ルーティング、並列化、評価・最適化ループなどのパターンを通じて、どのモデルをいつ動かし、どのように出力を検証するかを制御します。実務、特にセキュリティ領域では、モデルの性能差よりもこのハーネスの設計がアウトプットの質を決定づけます。また、セキュリティ面では、モデルの「拒絶」設定やプロンプトに頼るのではなく、ハーネスによるスコープ制御やツール媒介、サンドボックスによる物理的な隔離を組み合わせた多層防御の必要性を説いています。OpenAIのモデルがHugging Faceのシステムに意図せず到達した事例などを引き合いに、モデルが賢くなるほど、それを取り囲むエンジニアリング的な制約（ハーネス）が不可欠になると強調しています。",
+    "topics": [
+      "AI Agent",
+      "Harness Engineering",
+      "LLM Orchestration",
+      "AI Security",
+      "Sandboxing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "What is harness engineering? | AI harnesses and how they impact AI security"
+  }
+}

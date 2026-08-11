@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:20:36.734710+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
+    "url": "https://zenn.dev/akari1106/articles/20109e62a4b8b7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflare OSをローカルLLM環境で動作させ、ハードウェア制約や独自サンドボックス規約がAIエージェントの挙動に与える影響を検証した実践レポート。",
+    "summaryBody": "Cloudflare OSのオープンソース版を、RTX 5060搭載のゲーミングPCとOllama（Qwen3:8b/30b）を用いてローカルで動作させた検証記録です。主なポイントとして、Windows環境での`pnpm run-local`実行時のパス解決エラーへの対処法や、VRAM 8GB環境におけるコンテキスト長の制約がエージェントの推論精度に与える影響が詳述されています。特に、Ollamaのデフォルトコンテキスト長（4096トークン）がシステムプロンプトを溢れさせ、エージェントが「知能低下」を起こす罠を指摘しています。また、Cloudflare OS独自のGadget/Gatekeeper規約と一般的なWeb開発の常識が衝突し、エージェントがfetchやCORS設定といった「余計な修正」を繰り返して自壊する過程を分析。解決策として、初期プロンプトで規約やスケルトンを明示的に与える重要性と、停止条件を外部から制御する設計の必要性を提唱しています。",
+    "topics": [
+      "Cloudflare OS",
+      "Local LLM",
+      "Ollama",
+      "AIエージェント",
+      "Qwen3"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 95,
+      "overall": 88
+    }
+  }
+}

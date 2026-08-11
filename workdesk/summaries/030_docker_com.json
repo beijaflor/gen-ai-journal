@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:26:58.576938+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント専用の隔離実行環境「Docker Sandboxes」が登場",
+    "url": "https://www.docker.com/products/docker-sandboxes/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Claude CodeやCopilot CLIなどのAIエージェントを、MicroVMによる隔離環境で安全かつ自律的に実行可能にする「Docker Sandboxes」が発表されました。",
+    "summaryBody": "Dockerは、AIコーディングエージェントをローカル環境から完全に隔離して実行するための「Docker Sandboxes」を発表しました。これは軽量なMicroVMを活用した使い捨て可能な実行環境で、エージェントがホストOSのファイルシステムやネットワークに直接干渉することを防ぎます。\n\n### 主な特徴とメリット\n- **MicroVMによる強力な隔離**: 各エージェントは専用の隔離境界内で動作し、プロジェクトのワークスペースのみがマウントされます。これにより、エージェントに高い権限を与える「YOLOモード」でも安全に実行できます。\n- **Docker in Dockerのサポート**: サンドボックス内でさらにDockerコンテナを起動・管理することが可能で、複雑な開発ワークフローに対応します。\n- **主要エージェントとの互換性**: Claude Code、Copilot CLI、Gemini CLI、OpenCodeなどの主要ツールを標準サポートしています。\n- **簡単な導入と破棄**: CLIツール（`sbx`）を通じて数秒で起動でき、作業終了後はワンコマンドで環境を完全に破棄できます。\n\nまた、企業向けには「Docker AI Governance」を通じて、ネットワークポリシーやファイルアクセス制限を組織全体で一括管理する機能も提供されます。",
+    "topics": [
+      "Docker",
+      "AI Agents",
+      "MicroVM",
+      "Sandbox",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Docker Sandboxes | Sandboxes for Coding Agents | Docker"
+  }
+}

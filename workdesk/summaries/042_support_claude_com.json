@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:24:03.945013+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeによるAI生成コンテンツの識別・マーキング手法について",
+    "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicはEU AI法への準拠に向け、Claudeが生成するテキストへの不可視な電子透かしの埋め込みや、画像ファイルへのC2PA標準メタデータの付与による透明性向上策を発表しました。",
+    "summaryBody": "AnthropicはEU AI法（EU AI Act）第50条(2)の透明性に関する行動規範に署名し、AI生成コンテンツを識別可能にするための具体的な計画を公開しました。主な技術的アプローチは2点あり、1つは生成テキストに人間には感知できない形で埋め込まれ、コピー＆ペースト後も保持される「埋め込み型ウォーターマーク（電子透かし）」、もう1つは画像ファイル（SVG, PNG, JPG等）に付与される業界標準「C2PA」に基づいた署名付きプロバンスメタデータです。これらの機能は2026年8月以降に提供される新モデルに標準搭載されるほか、既存モデルへの遡及適用も進められています。これにより、開発者やユーザーはコンテンツがClaudeによって処理されたものかを判断する手がかりを得られますが、大幅な加工や短文などの場合には検出限界があることも示されています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "EU AI Act",
+      "AI透明性",
+      "ウォーターマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "How Claude marks AI-generated content | Claude Help Center"
+  }
+}

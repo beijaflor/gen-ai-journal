@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:21:10.749953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Walletsは何を提供するのか：エージェント経済圏における制御面の掌握戦略",
+    "url": "https://zenn.dev/komlock_lab/articles/cloudflare-wallets-agent-payments",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが発表したWalletsとcloudflare.payについて、自社で決済レールを持たず、名前解決と支出認可という「制御面」をエッジで押さえることでAIエージェント経済のインフラを狙う戦略を解説しています。",
+    "summaryBody": "Cloudflareが2026年8月に発表した「Cloudflare Wallets」の技術的背景と戦略的意図を深く分析した記事です。CloudflareはCoinbase主導の決済標準「x402」を採用し、決済レールそのものは中立化させる一方、エージェントの「身元（名前空間）」と「支出の認可点（ガードレール）」という2つの重要な制御レイヤーを自社製品として確保しようとしています。具体的には、Web Bot Authを流用した身元確認や、DNSに類する識別子「cloudflare.pay」の提供により、エッジネットワーク上でリクエストがオリジンに届く前に決済と認証を完結させる構図を描いています。著者は、現状は機能が限定的で名前の先着予約のみが動いている状態であると指摘しつつ、名前空間は一度取られると取り返しがつかないため、早期のハンドル確保を推奨しています。",
+    "topics": [
+      "Cloudflare",
+      "AIエージェント",
+      "ブロックチェーン",
+      "x402",
+      "Web Bot Auth"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

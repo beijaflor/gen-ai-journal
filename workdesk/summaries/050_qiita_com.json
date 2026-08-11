@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:21:54.115618+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BedrockのOpenAIモデルでWeb検索が使えるようになったので、Tavilyと比べてみた",
+    "url": "https://qiita.com/manaty/items/dde0f3f0b032ac91d56e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazon BedrockのOpenAIモデル向け組み込みWeb検索機能を、Tavily+ClaudeやNova Web Groundingと220問のテストで比較検証し、精度と言語間特性の違いを明らかにしています。",
+    "summaryBody": "Amazon BedrockでOpenAIモデル（GPT-5.4〜5.6）向けに提供が開始された組み込みWeb検索機能について、外部APIのTavilyおよびNova Web Groundingとの比較検証を行った記事です。日本語・英語計220問を用いた「LLM-as-a-Judge」による評価の結果、Bedrock Web SearchとTavily+Claudeは総合スコアでほぼ互角でした。Bedrock Web Searchは事実の正確性や網羅性に強みを持ち、Tavilyは引用の品質や情報の鮮度、日本語での安定性において優位性を示しています。また、Bedrockの組み込み機能は英語の方が精度が高い傾向にあることや、検索を自動でスキップする場合があるといった運用上の注意点も詳細に解説されています。",
+    "topics": [
+      "Amazon Bedrock",
+      "OpenAI",
+      "Tavily",
+      "LLM",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

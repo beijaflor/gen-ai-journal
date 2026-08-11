@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:32:26.712646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code セッション間メッセージ送信機能の解説",
+    "url": "https://code.claude.com/docs/en/cross-session-messaging",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code v2.1.224以降で導入された、独立したセッション間でAIエージェントがテキストメッセージをやり取りし、進捗や意思決定を共有できる機能の技術仕様。",
+    "summaryBody": "Claude Codeの「セッション間メッセージング」機能に関する公式ドキュメントです。この機能により、ローカル、クラウド、または別マシンで稼働中の異なるセッション間で、Claudeが自律的に（またはユーザーの指示により）情報を共有できます。例えば、あるセッションでの破壊的変更を他方に通知したり、バックグラウンドでのテスト完了を報告したりすることが可能です。通信はプレーンテキストに限定され、会話履歴やファイルは共有されません。セキュリティ面では、受信メッセージの承認フロー（accept/hold/refuse）や、マシンを跨ぐ通信を制限する isolatePeerMachines 等の細かい制御が可能です。macOSとLinuxに対応し、マルチタスクな開発環境におけるエージェント間の連携を強化します。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "マルチエージェント",
+      "Anthropic",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Message your other Claude Code sessions"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:20:55.702864+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raspberry Pi 5でClaude Codeを動かす",
+    "url": "https://zenn.dev/gsy0911/articles/a4dc76f0639576",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Raspberry Pi 5にNixOSを導入し、Claude Codeを常時稼働させるための宣言的な構成管理と具体的なセットアップ手順の解説。",
+    "summaryBody": "Raspberry Pi 5を低消費電力なClaude Code専用のエージェント実行環境として構築するガイドです。主な技術スタックとしてNixOSを採用し、システム全体をコードで定義することで、SDカードの故障時にも即座に復旧可能な再現性を確保しています。\n\n主な構成要素は以下の通りです：\n- **クロスビルド環境**: Apple Silicon Mac上のDocker（Linuxビルダー）を使用してaarch64-linuxイメージをビルドするフロー。\n- **システムの自動化**: 起動時にGitHubから最新コードをプルする `git-pull-on-boot` サービスや、公式ケースのファン制御を含むハードウェア設定の記述。\n- **Claude Codeの常駐化**: headless環境に適した `claude remote-control` モードをsystemdサービスとして定義。外部（スマホやWeb）から常時アクセス可能なAIエージェント環境を実現しています。\n- **実運用のノウハウ**: RTCを持たないPi特有の時刻同期待ち処理や、ベンダーカーネルとDTBの整合性確保など、実機特有のハマりどころをカバーしています。\n\nメインマシンのスリープに依存せず、セキュアに隔離された環境でAIエージェントを運用したいユーザーにとって、極めて実用的な構成案となっています。",
+    "topics": [
+      "Raspberry Pi 5",
+      "NixOS",
+      "Claude Code",
+      "LLM",
+      "Infrastructure as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 95
+    }
+  }
+}

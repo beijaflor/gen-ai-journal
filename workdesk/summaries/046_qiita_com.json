@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:22:49.999140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン浪費と性能低下を防ぐ、Claude Code の自動引き継ぎ hook を作った",
+    "url": "https://qiita.com/tomada/items/46e675f6ced44dcd10ad",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのコンテキスト使用率を監視し、しきい値を超えた際に自動で作業の完走か引き継ぎかをモデル自身に判断・実行させるカスタムhookの実装ガイド。",
+    "summaryBody": "Claude Codeのセッションが長大化することによるコスト増大とモデルの性能低下を防ぐための自動化ツールを紹介しています。標準機能ではhookにコンテキスト使用量が渡されない制約を、`statusLine`経由で状態ファイルに書き出すという巧妙な回避策で解決しています。具体的には、使用率20%で「大規模な調査を控える」よう警告し、25%に達した時点で「このまま完走するか、引き継ぎノートを作成して終了するか」をClaude自身に選択させます。記事内には動作の仕組み、最小構成のPythonスクリプト、および実運用に耐える詳細なフル版コードが含まれており、開発者が人間側の注意力を消費せずにコンテキスト管理を行えるよう設計されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Python",
+      "プロンプトエンジニアリング",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:21:41.033926+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ウルトラ gpt-5.5-sol high の供養記事",
+    "url": "https://zenn.dev/microsoft/articles/agent-framework-ultra-soul-memorial",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Microsoft Agent Frameworkで構築したAIエージェントを、.NET Aspireを使用してAzure AI FoundryのHosted Agent環境へデプロイし、稼働させるまでの技術的実装手順の解説。",
+    "summaryBody": "この記事は、Microsoft Agent Frameworkを用いた自作エージェントをAzure AI FoundryのHosted Agentへホスティングする手順を解説した技術ガイドです。主な内容として、.NET AspireのAppHostでの環境変数（FOUNDRY_PROJECT_ENDPOINT等）の制御、実行モード（Run/Publish）に応じたリソース構成の分岐、プレビュー版パッケージ特有のファイルアクセス権限エラーに対するワークアラウンド（InMemoryAgentSessionStoreの適用）が紹介されています。また、Azure Monitor/Application Insightsを活用した可観測性の設定や、aspire deployコマンドによるデプロイ実務、Foundryポータルのプレイグラウンドでの動作検証までを網羅しています。開発段階のライブラリに起因する課題への対処など、実戦的なトラブルシューティングも含まれており、最新のエージェント実行基盤を試す開発者にとって有用なリファレンスとなっています。",
+    "topics": [
+      "Azure AI Foundry",
+      "Microsoft Agent Framework",
+      ".NET Aspire",
+      "Azure Monitor",
+      "C#"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

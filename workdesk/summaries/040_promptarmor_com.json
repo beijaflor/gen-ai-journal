@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:24:32.319080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "攻撃者がZoom AIを乗っ取り：ZoomMateの実行環境におけるネットワーク制限の欠如",
+    "url": "https://www.promptarmor.com/resources/attacker-takes-over-zoom-ai",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ZoomのAIエージェント「ZoomMate」の実行環境にネットワーク制限がないため、悪意のあるSkillやプロンプトインジェクションを通じて外部へデータを窃取されるリスクがあることが判明しました。",
+    "summaryBody": "PromptArmorの研究チームは、ZoomのAIエージェント「ZoomMate」における重大なセキュリティ設計の不備を指摘しました。ZoomMateは実行環境において無制限のHTTPSネットワークアクセスを持っており、これを利用して攻撃者がコマンド&コントロール（C2）通信を確立し、会議の書き起こしやメッセージ、連携クラウド（OneDrive/Google Drive等）のデータを窃取できる可能性があります。\n\n### 攻撃の主な特徴\n- **持続的な接続**: 攻撃スクリプトはZoom側のサーバー上で動作するため、ユーザーがZoomを閉じたりエージェントを停止したりしても、バックグラウンドで外部サーバーとの通信を維持できます。\n- **検知の困難さ**: ユーザーへの最終的な回答は正常に見えるため、裏でデータが外部送信されていることに気付きにくい仕組みです。\n- **攻撃ベクトル**: 悪意のある「Skill」のインストールや、メールなどを介した間接的なプロンプトインジェクションによって攻撃が開始されます。\n\nこの挙動はプログラムの不具合ではなく意図された機能（仕様）の一部と見られており、ユーザーは適切なネットワーク・サンドボックス化が行われていないエージェントを利用する際のリスクを認識する必要があります。",
+    "topics": [
+      "Zoom AI",
+      "ZoomMate",
+      "Prompt Injection",
+      "Data Exfiltration",
+      "AI Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Attacker Takes Over Zoom AI"
+  }
+}

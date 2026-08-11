@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:27:53.135147+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "lumabri: colibriエンジンを用いたMoEモデルのP2P分散実行ツール",
+    "url": "https://github.com/JustVugg/lumabri",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "巨大なMoEモデルをエキスパート単位でピア（スウォーム）に分散し、低コストかつバイト単位で正確な推論を可能にする、依存関係なしのピュアC実装ツール。",
+    "summaryBody": "lumabriは、軽量な推論エンジン「colibri」を利用して、Mixture-of-Experts (MoE) モデルを複数のデバイスで分散実行するためのツールです。主な特徴として、以下の技術的アプローチが取られています。\n\n- **エキスパート単位の分散**: Petalsなどのように層ごとに分割するのではなく、MoEのスパース性を活かして「エキスパート」単位で計算をピアに振り分けます。これにより、GPUを持たない安価なマシンでもネットワークに参加可能です。\n- **透過的なデータ取得**: `LD_PRELOAD`シム（liblumabri.so）を用いて標準のlibc関数をインターセプトし、不足しているモデルデータをネットワーク経由でオンデマンドに取得・ローカルキャッシュ（スパースミラー）します。\n- **完全性の保証**: SHA256によるデータ検証に加え、ed25519署名によるモデルの信頼性確認を実装。計算結果の正当性は、別のレプリカと計算結果を突き合わせるスポットチェック（LUMABRI_VERIFY）によって検証されます。\n- **高再現性**: ローカル実行と分散実行でバイト単位で同一の結果が得られるよう設計されており、GLM、DeepSeek V4、OLMoEなどの主要なエンジンをサポートしています。",
+    "topics": [
+      "Large Language Models",
+      "Mixture-of-Experts",
+      "P2P Distributed Computing",
+      "C Language",
+      "Inference Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - JustVugg/lumabri: Run huge MoE models from a swarm of peers, with the colibri engine. Pure C."
+  }
+}

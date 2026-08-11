@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:10:03.757938+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel Sandboxにおけるネットワーク境界の重要性と実装技術",
+    "url": "https://vercel.com/blog/a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、AIエージェントなどの信頼できないコードを実行するサンドボックスにおいて、計算資源の隔離だけでなく、ネットワークの出口制御（エグレス管理）がセキュリティの根幹であると提唱しています。",
+    "summaryBody": "Vercelは、microVMによる計算資源の隔離だけでは、データの外部流出や内部ネットワークへの攻撃を防げないとし、ネットワーク境界の制御を「Vercel Sandbox」の核心機能として実装しました。このアーキテクチャでは、ホスト側で動作するファイアウォールがDNSクエリやTLSハンドシェイクのSNIを検査し、ドメインやCIDRベースの動的なフィルタリングを行います。特筆すべきは「認証情報の外部保持」で、APIキーをサンドボックス内の環境変数に置かず、ネットワーク境界で動的に注入することで、悪意あるコードによる資格情報の窃取を防止します。また、カスタムプロキシへのリクエスト転送により、ペイロードの検査や監査ログの記録といった高度なガバナンスも可能にしています。",
+    "topics": [
+      "Vercel Sandbox",
+      "Network Security",
+      "AI Agents",
+      "MicroVM",
+      "Cloud Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "A sandbox without a network boundary is only half a sandbox"
+  }
+}

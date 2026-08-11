@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:22:35.497382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex CLI /goalの6状態を実例で理解する --- Blockedからの再開、BudgetLimited、Completeの違い",
+    "url": "https://qiita.com/ootakazuhiko/items/5503f23814ef4420cfdb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codex CLIの`/goal`コマンドにおける6つのライフサイクル状態（Active, Paused, Blocked, UsageLimited, BudgetLimited, Complete）の定義と、実務での適切な運用・復旧方法を詳説したガイド。",
+    "summaryBody": "本記事は、AIエージェントによる長時間タスク実行を制御するCodex CLIの`/goal`機能について、その内部状態を詳細に解説しています。主な内容は以下の通りです。\\n\\n1. **6つの状態の定義**: 自動継続可能な`Active`、手動停止の`Paused`、外部要因で進行不能な`Blocked`、サービス制限の`UsageLimited`、予算上限到達の`BudgetLimited`、そして証拠に基づき完了した`Complete`の各意味を明確化しています。\\n2. **実務上の3大原則**: 「Blockedは失敗ではない」「BudgetLimitedは完了ではない」「Completeは人間の承認（マージ権限等）とは別物である」という、AIエージェント運用で誤解されやすい境界線を定義しています。\\n3. **運用フローと復旧**: `Blocked`時には再開条件を報告させること、`BudgetLimited`時にはチェックポイントを残すことなど、各状態から安全に作業を継続・終了するための具体的なランブックを提示しています。\\n4. **完了述語の重要性**: 単なるモデルの自己申告ではなく、テスト成功や環境の整合性などの「証拠（Evidence）」をもって完了と判定する設計手法を推奨しています。\\n\\n単なるコマンド解説に留まらず、AIと人間の権限境界や作業継続性を設計するための実用的な知見がまとめられています。",
+    "topics": [
+      "Codex CLI",
+      "OpenAI",
+      "AIエージェント",
+      "状態遷移",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}
