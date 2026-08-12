@@ -61,7 +61,6 @@
 - [x] 041. https://cactuscompute.com/needle
 - [x] 040. https://www.promptarmor.com/resources/attacker-takes-over-zoom-ai
 - [x] 039. https://ai-updates.net/ai-fortunes-philanthropy-private-power/
-- [x] 038. https://finance.yahoo.com/healthcare/articles/harvard-study-links-glp-1-123000637.html
 - [x] 037. https://github.com/AntigmaLabs/ante
 - [x] 036. https://sunilpai.dev/posts/every-company-needs-a-cassandra/
 - [x] 035. https://blog.sshh.io/p/exploring-claudegpt-knowledge-cutoffs
