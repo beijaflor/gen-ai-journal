@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:21:05.973637+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント用スキルをパッケージとして公開する方法：ディスカバリインデックス、ダイジェスト、導入ソース",
+    "url": "https://evilmartians.com/chronicles/publishing-agent-skills-discovery-index",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントに特定の開発作法を教える「エージェント・スキル」を、標準化されたインデックスと整合性チェックを用いて自身のドメインから安全に配布するための実践的なガイド。",
+    "summaryBody": "Evil Martiansによる、AIエージェント向けの「スキル」配布に関する技術解説。エージェント・スキルとは、Anthropicが提唱した「SKILL.md」形式の指示書であり、特定の開発プラクティスをAIに再利用可能な形で提供するものです。本記事では、これらを自身のドメインで公開し、発見可能にするための仕組みを詳述しています。具体的には、`.well-known/agent-skills/index.json`というディスカバリ用ファイルを用いた公開手法、SHA-256ダイジェストによる整合性の保証、そして単一ファイル・アーカイブ・バンドルという3つのパッケージング形態について解説。GitHubなどのリポジトリで管理しつつも、自身のドメインから直接配信することで、アクセス解析や整合性管理を最適化するメリットを強調しています。また、`npx skills`やClaudeプラグインなど、多様なインストール経路を提供することで、AIエージェントとの協業をより円滑にするためのエンジニアリング・プラクティスを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "SKILL.md",
+      "LLM",
+      "開発ツール",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Ship agent skills like packages: discovery index, digests, and install sources"
+  }
+}

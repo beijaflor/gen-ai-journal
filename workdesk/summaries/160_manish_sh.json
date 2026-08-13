@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:44:43.400428+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeekの内部構造：対話によるリバースエンジニアリングと論文検証",
+    "url": "https://manish.sh/writings/models/inside-deepseek-reverse-engineering-an-ai-assistant-by-interviewing-itself",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeekへの直接インタビューと公開論文の比較を通じて、AIが自己を語る際の「内省」の限界と、MLAやMoEといった独自アーキテクチャの真実を浮き彫りにする技術的分析。",
+    "summaryBody": "DeepSeek-V3などのモデルが自身の構造をどのように認識しているかを調査し、それを公式のテクニカルレポートと比較検証した記事です。筆者は、モデルが自己のアーキテクチャを語る際に「観察・推論・推測」を切り分けて回答する誠実さを評価しつつも、具体的なパラメータ数（671B）やエキスパート数（256）などの数値については、モデルの自己報告よりもarXivの論文の方が圧倒的に正確であることを示しています。\n\n主な技術的解説ポイント：\n- **Multi-head Latent Attention (MLA)**: KVキャッシュを圧縮し、メモリ効率を劇的に向上させるDeepSeek独自の技術。\n- **Mixture of Experts (MoE)**: 256のエキスパートのうち、各トークンで少数のエキスパートのみを活性化させる仕組み。\n- **内省の限界**: モデルは自身の重みや内部ルーティング、logitsに直接アクセスできず、回答はあくまで学習データに基づいた「推測」である点。\n- **隠れた思考の定義**: DeepSeek-R1のような「思考トークン」と、全モデルに共通する「潜在的な活性化ベクトル」の混同に対する注意喚起。\n\n結論として、AIとの対話はモデルの「振る舞い」を知るには有用だが、正確な設計仕様については公式論文を優先すべきであると説いています。",
+    "topics": [
+      "DeepSeek",
+      "LLM Architecture",
+      "Mixture of Experts (MoE)",
+      "Multi-head Latent Attention (MLA)",
+      "Reverse Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Inside DeepSeek: Reverse Engineering an AI Assistant by Interviewing Itself"
+  }
+}

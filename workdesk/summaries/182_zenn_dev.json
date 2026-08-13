@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:39:01.028532+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GenRecの技術的詳細: Netflixが目指すLLMネイティブな推薦システム",
+    "url": "https://zenn.dev/catatsuy/scraps/7a1bb37421789b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NetflixのGenRecは、ユーザー履歴を自然言語化しLLMを履歴エンコーダーとして活用することで、カタログ内作品を直接ランキングする次世代の推薦システムである。",
+    "summaryBody": "Netflixが開発した「GenRec」は、従来の複雑な手作り特徴量に依存する推薦システムを、LLMの意味理解能力に基づいたシステムへと刷新する試みです。本システムは、LLMに作品名をテキスト生成させるのではなく、LLMを巨大な「履歴・文脈エンコーダー」として利用し、その出力にカタログ限定のスコアリングヘッドを接続してランキングを行います。\n\n主な特徴と技術的詳細は以下の通りです：\n- **2段階の学習**: Netflixドメインの知識を学習させる「Phase 1」と、ランキング品質と長期的な満足度を最適化する「Phase 2」に分かれています。\n- **Context Engineering**: 従来の数値的な特徴量設計に代わり、ユーザー行動を文章化し、コンテキストウィンドウ内を「特徴量予算」として圧縮・最適化して入力します。\n- **Prefill-only推論**: vLLMを活用し、トークン生成（Decode）を伴わない推論を行うことで、レイテンシとハルシネーションの問題を回避しています。\n- **複数目的の最適化**: ランキング損失、言語モデル損失に加え、報酬モデルを用いた長期的なユーザー価値を最大化する損失を組み合わせて学習します。\n\nオフライン評価では、成熟した既存モデルに対して1.6%のMRR改善を達成しており、より少ない学習データで高い適応能力を示しています。",
+    "topics": [
+      "推薦システム",
+      "LLM",
+      "Netflix",
+      "機械学習",
+      "Ranking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

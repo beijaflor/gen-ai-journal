@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:47:56.854730+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raspberry Pi 5上でLiteRTとGemmaを用いた高性能エッジAIを構築する",
+    "url": "https://developers.googleblog.com/mastering-edge-ai-on-raspberry-pi-with-litert-and-gemma/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleは、LiteRTと最新のGemmaモデルを組み合わせることで、Raspberry Pi 5上で完全オフラインかつリアルタイムに動作する高度なエッジAIの構築手法を公開しました。",
+    "summaryBody": "この記事では、Googleの推論エンジン「LiteRT」と軽量LLM「Gemma」ファミリーを使用し、Raspberry Pi 5で高性能なエッジAIを実現する方法を解説しています。特に、最新のGemma 4 E2Bモデルを最適化することで、CPUのみでも人間の会話速度を超えるテキスト生成性能（約9 tokens/sec）を達成。Reachy Miniロボットのデモでは、GPUで物体検出を行い、CPUでLLM推論と音声処理を行う並列アーキテクチャを紹介しています。また、開発プロセスを簡略化するLiteRT CLIツールや、将来的なHailo AIアクセラレータへの対応についても触れられており、セキュアで低遅延な自律型システムの構築を支援する内容となっています。",
+    "topics": [
+      "Edge AI",
+      "Raspberry Pi",
+      "LiteRT",
+      "Gemma",
+      "Robotics"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Mastering Edge AI on Raspberry Pi with LiteRT and Gemma"
+  }
+}

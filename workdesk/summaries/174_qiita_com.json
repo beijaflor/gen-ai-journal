@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:41:08.956147+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAI Engine「3,000リクエスト無料」を使い倒す ― 1回に11万トークン詰め込んでAIにWeb情報を丸飲みさせてみた",
+    "url": "https://qiita.com/shibacorgi/items/c32fa94841f6d132741b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "さくらのAI Engineのリクエストベース無料枠を活用し、11万トークン超の超長文コンテキストを1回のリクエストで処理するコスト効率の高いAI活用手法を提案・実証した記事。",
+    "summaryBody": "本記事は、さくらインターネットが提供する「さくらのAI Engine」の月間3,000リクエスト無料枠を最大限に活用するための技術的なアプローチを解説しています。著者は、OpenAI互換APIエンドポイントを持つこのサービスの特性を活かし、VS Code拡張のClineから利用するためのプロキシサーバーを構築。さらにTavily Search APIと連携させ、30件近いWebソースから抽出した約11万トークンの情報を1回のリクエストに詰め込み、シリコンバレーのAIツール利用動向を分析させる実証実験を行いました。リクエスト単位の課金体系においてLong Contextモデル（Kimi-K2.6）を利用することで、トークン従量課金のGPT-4o等と比較して非常に高い「実質価値」を引き出せることを、具体的なコードとベンチマーク結果（TTFTや処理時間）を交えて示しています。",
+    "topics": [
+      "さくらのAI Engine",
+      "LLM",
+      "Python",
+      "Cline",
+      "Long Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

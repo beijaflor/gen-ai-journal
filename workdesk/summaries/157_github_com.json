@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:45:14.846830+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MiniMax-H3推論エンジン「h3.c」：Apple Silicon向けの高速・省メモリ実装",
+    "url": "https://github.com/antirez/h3.c",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Redisの作者として知られるantirez氏が開発した、Apple Siliconに最適化されたMiniMax-H3動画・音声生成モデルの高速・省メモリなC言語推論エンジン。",
+    "summaryBody": "Redisの生みの親であるSalvatore Sanfilippo (antirez) 氏による、MiniMax-H3モデルのApple Silicon（Mac）向けネイティブ推論エンジンです。Metal APIを直接叩くことでApple Siliconの性能を最大限に引き出し、M3/M5 Maxチップ等での高速動作を実現しています。主な技術的特徴として、レイヤーの間引き（Layer Thinning）やトークン削減による高速化、int8量子化による効率化、さらにはSSDストリーミング機能によるVRAM節約が実装されています。これにより、通常は膨大なメモリを必要とする動画生成モデルをMac上で実用的な速度とリソースで実行可能です。テキストからの動画生成（T2V）に加え、最初と最後のフレームを指定した補完生成（FL2VA）や、既存動画の続きを生成する機能（Ref2VA）、オーディオ生成など、MiniMax-H3の多才な機能をフルサポートしています。",
+    "topics": [
+      "Apple Silicon",
+      "Metal",
+      "MiniMax-H3",
+      "Video Generation",
+      "Inference Engine"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 98
+    },
+    "originalTitle": "GitHub - antirez/h3.c: MiniMax H3 inference engine for Mac computers"
+  }
+}

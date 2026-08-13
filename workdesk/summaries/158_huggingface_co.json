@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:44:59.642251+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Liquid AIが2.6Bの超軽量・高性能エージェントモデル「LFM2.5-2.6B」を公開",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Liquid AIが、2.6Bという小型サイズながら上位モデルに匹敵するエージェント能力と、Apple M5 Maxで220 tok/sを叩き出す圧倒的な推論速度を備えたハイブリッドモデル「LFM2.5-2.6B」をリリースしました。",
+    "summaryBody": "Liquid AIによる新しいハイブリッドアーキテクチャ「LFM2」を採用した2.6Bパラメータのモデルが登場しました。このモデルは、デバイス上（オンデバイス）での実行を想定して設計されており、128Kの長いコンテキストウィンドウをサポートしています。最大の特徴は、独自の「エージェント型強化学習（Agentic RL）」によって、ツール使用やマルチステップの推論タスクにおいて、自身の4倍近いサイズを持つモデルに匹敵する性能を実現している点です。推論効率も極めて高く、Apple M5 Maxで220 tokens/s、一般的なRyzen CPUでも113 tokens/sという驚異的な速度で動作します。また、量子化（GGUF）、ONNX、Apple Silicon向け（MLX）など、多様なデプロイメント形式が同時に提供されており、日本語を含む16言語に対応しています。",
+    "topics": [
+      "Liquid AI",
+      "LFM2.5",
+      "エッジAI",
+      "AIエージェント",
+      "オンデバイス推論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "LiquidAI/LFM2.5-2.6B · Hugging Face"
+  }
+}

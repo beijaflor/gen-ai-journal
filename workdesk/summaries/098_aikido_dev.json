@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:21:25.893841+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "脆弱性診断ツールの適切な選び方：SASTからAIペンテストまで、各ステージでの使い分けガイド",
+    "url": "https://www.aikido.dev/blog/which-security-tool-do-you-need",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "SAST、Deep PR Review、AIコード分析、AIペンテストという4つのツールの違いを構造・深度・コストの観点から整理し、開発ライフサイクルのどの段階で何を導入すべきかを解説。",
+    "summaryBody": "現代のアプリケーションセキュリティにおいて重要となる4つのテスト手法の特性と活用シーンを解説しています。主な内容は以下の通りです。 **1. SAST (静的解析):** 既知のパターンを高速・安価に検出。CI/CDのゲートとして最適ですが、論理的な脆弱性（IDOR等）の検出には不向きです。 **2. Deep PR Review:** プルリクエスト単位で変更内容が既存コードに与える影響を推論し、ビジネスロジックの欠陥を早期に発見します。 **3. AI Code Analysis (AI SAST):** リポジトリ全体を対象に熟練エンジニアのようにロジックを分析。ライブ環境が不要で、モバイルやスマートコントラクトにも対応します。 **4. AI Pentest (AIペンテスト):** 稼働中のライブシステムに対して実攻撃を試行し、脆弱性を実証。コンプライアンス（SOC2/ISO 27001）要件を満たします。これらは補完関係にあり、開発フェーズに合わせて多層的に組み合わせることで、誤検知を減らしつつ確実なセキュリティ担保が可能になります。",
+    "topics": [
+      "セキュリティテスト",
+      "SAST",
+      "AIペンテスト",
+      "AppSec",
+      "脆弱性管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Finding vulnerabilities at every stage: what to run, and when"
+  }
+}

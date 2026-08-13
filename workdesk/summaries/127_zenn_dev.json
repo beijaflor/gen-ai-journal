@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:13:01.527032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1日500コミットを日常にするツール「ever-better」：AI駆動開発の品質を支える足回り",
+    "url": "https://zenn.dev/singularity/articles/ever-better-pm2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIによる高速なコード生成を支えるため、既存の負債を凍結し、新規コードの品質を機械的に担保しながら段階的な改善を可能にするツール「ever-better」の紹介。",
+    "summaryBody": "AIエージェント（Claude Code等）を活用した超高速開発を実現するための「足回り」を整備するツール `ever-better` が公開されました。既存リポジトリに厳しい静的解析（ESLint/TypeScript）を導入する際、大量の既存エラーを「天井（baseline）」として記録・凍結することで、既存コードを維持したまま、新規追加分にのみ厳格なルールを適用する仕組みを提供します。ツールは「数値管理や合否判定」などの機械的処理を担い、AIエージェントに「コードの修正やテスト記述」などの柔軟なスキルを分担させる設計が特徴です。13年以上の歴史を持つ `pm2` や最新のTypeScriptプロジェクトでの実験を通じ、プロトタイプ汚染によるバグや正規表現の計算量爆発など、型チェックだけでは防げない潜在的リスクを効率的に排除する具体的な手法が解説されています。",
+    "topics": [
+      "ever-better",
+      "Claude Code",
+      "AI駆動開発",
+      "ESLint",
+      "技術負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

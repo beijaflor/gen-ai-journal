@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:20:45.550843+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raspberry Pi 5のGPUでエッジAIを実現：IgaliaがWebGPU対応を強化",
+    "url": "https://www.igalia.com/2026/08/12/Bringing-Edge-AI-to-the-Raspberry-Pi-GPU.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "IgaliaがRaspberry Pi 5のV3DV VulkanドライバにおけるWebGPUサポートを強化し、LiteRTを用いたGPU上での効率的なAI推論を可能にしました。",
+    "summaryBody": "Google AI EdgeとRaspberry Piの共同発表を受け、IgaliaはRaspberry Pi 5のVideoCore VII GPU上でAIモデルを高速化するための技術的詳細を公開しました。具体的には、Googleのオンデバイス推論ランタイム「LiteRT」のWebGPUバックエンドが動作するよう、MesaのV3DV Vulkanドライバに実験的なWebGPUサポートを追加しました。これにより、物体検出などの継続的なワークロードをGPUにオフロードし、CPUのリソースをGemmaのような大規模言語モデル（LLM）やアプリケーションロジックに割くことが可能になります。本機能は最新のRaspberry Pi OSにて環境変数 `V3D_WEBGPU_OVERRIDE=1` を設定することで有効化でき、アップストリームのMesaプロジェクトにも貢献が反映されています。",
+    "topics": [
+      "Raspberry Pi 5",
+      "LiteRT",
+      "WebGPU",
+      "Mesa",
+      "Edge AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Bringing Edge AI to the Raspberry Pi GPU"
+  }
+}

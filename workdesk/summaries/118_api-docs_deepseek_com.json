@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:15:34.619294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek APIでのResponses APIの使用方法と仕様",
+    "url": "https://api-docs.deepseek.com/guides/responses_api/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "DeepSeek APIがOpenAIのResponses APIフォーマットに対応し、Web検索や推論プロセスの統合、ストリーミングレスポンスを標準的なSDKで利用可能になりました。",
+    "summaryBody": "DeepSeekのAPIドキュメントにおいて、OpenAIが提唱する「Responses API」フォーマットへの対応が発表されました。主な特徴は以下の通りです。\\n\\n1. **SDK互換性**: OpenAI Python SDK（`client.responses.create`）を使用して、`deepseek-v4-flash`や`deepseek-v4-pro`モデルを呼び出せます。\\n2. **高度な機能**: サーバーサイドでのWeb検索（`web_search`）や、Chain-of-Thought（思考プロセス）のストリーミング取得（`reasoning_text.delta`）が可能です。\\n3. **ストリーミング**: 従来の`data: [DONE]`形式ではなく、`response.completed`などのセマンティックなイベントによる詳細なストリーミング制御が提供されます。\\n4. **制約事項**: ステートレスな設計のため、`conversation`や`previous_response_id`には対応していません。\\n\\n既存のOpenAIクライアントからの移行が容易であり、Web検索や推論データの活用に特化したインターフェースとなっています。",
+    "topics": [
+      "DeepSeek",
+      "LLM API",
+      "OpenAI API互換",
+      "Web検索",
+      "推論プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Using the Responses API | DeepSeek API Docs"
+  }
+}

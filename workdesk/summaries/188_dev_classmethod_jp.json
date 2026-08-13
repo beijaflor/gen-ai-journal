@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:37:31.894469+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "284B の DeepSeek V4 Flash-0731 を DGX Spark 2 台で動かしてみた",
+    "url": "https://dev.classmethod.jp/articles/dgx-spark-2node-deepseek-v4-flash-0731/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DGX Spark 2台を用いて巨大なDeepSeek V4 Flash-0731（284B）の推論環境を構築し、vLLMで76 tok/sの高速生成と90万トークンの長文処理を実現した。",
+    "summaryBody": "NVIDIA DGX Spark 2台をRDMAで接続し、284Bの超巨大モデル『DeepSeek V4 Flash-0731』を動かした検証レポートです。llama.cpp (RPC) と vLLM (テンソル並列) の2つの構成を比較し、性能や実用性を評価しています。特に vLLM 構成では、公式の FP8 モデルを用いて 76 tok/s の高速デコードと、最大90万トークンのプロンプト処理に成功しました。推論エンジンの最適化や量子化技術（nvfp4_ds_mla等）の恩恵により、284Bクラスのモデルがローカル環境でも待機を感じさせない実務レベルの速度で動作することを示しています。分散推論時のネットワークコストや並列リクエスト時のスループットについても詳細なベンチマーク結果が公開されています。",
+    "topics": [
+      "DeepSeek-V4",
+      "DGX Spark",
+      "vLLM",
+      "分散推論",
+      "llama.cpp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

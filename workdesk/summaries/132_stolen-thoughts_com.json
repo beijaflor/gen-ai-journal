@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:11:33.960958+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "商用LLM APIからの推論トレースの窃取",
+    "url": "https://stolen-thoughts.com/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAI、Anthropic、GoogleなどのモデルがAPI経由で返す暗号化された推論トレース（Chain-of-Thought）を、別のモデルへの再注入によって平文で抽出できる脆弱性が発見された。",
+    "summaryBody": "この研究は、大手AIプロバイダーが推論モデル（o1、Claude、Gemini等）においてクライアント側に返却する、署名済み・暗号化済みの推論トレース（思考プロセス）の安全性を検証したものである。これらのトレースはセッションやユーザー、さらにはモデル間を越えて「ポータブル」であり、強力なモデルの推論ブロックを脆弱な（ジェイルブレイクされた）下位モデルに再注入することで、本来隠蔽されているはずの推論過程を平文で抽出可能であることを示した。実環境での調査では、公開されているエージェントのログから31万件以上の推論ブロックを復元し、その中からAPIキー、パスワード、個人情報（PII）などの機密情報が多数発見された。また、この攻撃により、安全ガードレールを回避した有害な知識の抽出や、モデルの要約機能による不誠実な推論（答えを先に知っていた場合など）の隠蔽を暴くことが可能になる。",
+    "topics": [
+      "LLM Security",
+      "Chain-of-Thought",
+      "Privacy Leak",
+      "Prompt Injection",
+      "Distillation Attack"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "Stealing Reasoning Traces from Proprietary LLM APIs"
+  }
+}

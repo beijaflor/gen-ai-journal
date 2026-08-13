@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:48:58.255269+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オントロジーと知識グラフ入門：URI から RDF、RDFS、OWL、推論、SPARQL まで整理して学ぶ",
+    "url": "https://qiita.com/haystacker/items/376d86bcbeefc3885183",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "セマンティックWebを構成するURI、RDF、RDFS、OWL、SPARQLなどの技術要素を階層構造として整理し、Pythonによる実装例を交えて体系的に解説する入門ガイド。",
+    "summaryBody": "この記事では、難解になりがちな「オントロジー」と「知識グラフ」を、ITエンジニアの視点でレイヤ構造として再整理しています。識別子(URI/IRI)による一意な命名から始まり、RDFによるトリプル表現、TurtleやJSON-LDといった保存形式、そしてデータの設計図となるRDFS/OWLによるスキーマ定義までを段階的に説明しています。\n\n中盤では、単なるデータの集合を「知識」へと昇華させる「推論（Reasoning）」に焦点を当て、Pythonの`rdflib`や`owlrl`を用いた実践的なチュートリアルを提供。記述されていない事実を論理的に導き出すプロセスをコードで示しています。さらに、グラフパターンマッチングによる検索言語SPARQLの基礎や、LLM（大規模言語モデル）のハルシネーション抑制における知識グラフの有用性についても言及しており、現代的な技術スタックにおけるセマンティック技術の立ち位置を明確にしています。",
+    "topics": [
+      "オントロジー",
+      "知識グラフ",
+      "RDF",
+      "SPARQL",
+      "セマンティックWeb"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

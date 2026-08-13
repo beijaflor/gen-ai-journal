@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:39:17.807064+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Muse-Glimmer-30B：Metaによるローカル実行に最適化された30Bマルチモーダル・エージェントモデル",
+    "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Metaが公開したMuse-Glimmer-30Bは、消費者向けハードウェアでのローカル動作に最適化され、高度な推論とツール利用、マルチモーダル理解を統合した300億パラメータの自律型エージェントモデルです。",
+    "summaryBody": "Meta Superintelligence Labが、300億パラメータのマルチモーダルAIモデル「Muse-Glimmer-30B」をApache 2.0ライセンスで公開しました。本モデルは、クラウドを介さず消費者向けハードウェア（RTX 5090やMac M4/M5 Max等）で自律型エージェントとして動作することを目的に設計されています。\n\n主な特徴は以下の通りです：\n1. **高度なエージェント能力**: マルチステップの推論、精密なツール呼び出し（Function Calling）、エラー発生時の自己修正機能を備え、SWE-bench等のコーディングやタスク実行で高い成功率を示します。\n2. **ローカル実行への最適化**: 4bit量子化によりモデルを20GB以下に圧縮可能で、24GB〜32GBのVRAM環境でKVキャッシュや画像エンコーダを含めた運用が可能です。\n3. **爆速な生成スピード**: 「DFlash」と呼ばれるブロック拡散型ドラフトモデルを用いた投機的デコードにより、標準的な生成に比べ最大3.1倍（RTX 5090で約233 tok/s）の高速化を実現しています。\n4. **マルチモーダル対応**: 1.8Bの専用知覚エンコーダ（ViT-G/14）を搭載し、テキストと画像を織り交ぜた入力や、スクリーンショット、図表の高度な理解が可能です。\n\nベンチマーク評価では、Gemma 4-31BやQwen 3.6-27Bといった同規模のモデルを多くのエージェント関連指標で上回る性能を記録しています。",
+    "topics": [
+      "AIエージェント",
+      "マルチモーダルLLM",
+      "Meta",
+      "投機的デコード",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "meta-models/Muse-Glimmer-30B · Hugging Face"
+  }
+}

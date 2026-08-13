@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:20:13.018700+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI SDKのための「ソフトウェア・ファクトリー」を構築する：Vercelによる自律型開発プロセスの実例",
+    "url": "https://vercel.com/blog/building-a-software-factory-for-ai-sdk",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "VercelがAI SDKのメンテナンス負荷を軽減するために構築した、エージェントによる自動開発基盤「ソフトウェア・ファクトリー」の仕組みと、マージされるPRの3割以上を自動化する成果を紹介。",
+    "summaryBody": "Vercelは、爆発的に増加するAI SDKのIssueやプルリクエスト（PR）に対処するため、AIエージェントを活用した「ソフトウェア・ファクトリー」を構築しました。このシステムは、Issueの分類、技術的な再現・分析、コード実装、自動レビュー、そしてバックポート作成といった一連の開発工程を自律的なエージェント群が担当します。各エージェントは独立したVercel Sandbox内で実行され、外部からの攻撃や秘密情報の漏洩を防止するセキュリティ対策が施されています。運用開始から4週間で、週にマージされるPRの25〜35%をファクトリーが生成し、Issueの7割以上をクローズする驚異的な成果を上げています。開発者の役割は「手動でコードを書くこと」から、エージェントが失敗した際のフィードバックを通じて「ファクトリー自体を改善すること」へとシフトしており、AI時代のソフトウェア開発ライフサイクルの新たな標準を提示しています。",
+    "topics": [
+      "AI SDK",
+      "Vercel",
+      "AI Agents",
+      "Software Engineering",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Building a software factory for AI SDK"
+  }
+}

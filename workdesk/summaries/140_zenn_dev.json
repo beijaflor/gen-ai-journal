@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:55:27.584665+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude がテキストに電子透かしを入れ始めたので、LLM ウォーターマーキングの仕組みを調べた",
+    "url": "https://zenn.dev/hellorusk/articles/3328866ca9e922",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude導入を機に、生成品質を損なわずテキストに統計的な「癖」を埋め込むLLM電子透かし技術の仕組みと、最新の耐攻撃・追跡研究の動向を解説した技術記事。",
+    "summaryBody": "AnthropicがEU AI Actへの準拠を背景にClaudeへの電子透かし導入を発表したことを受け、LLM生成テキストにおけるウォーターマーキング技術の変遷と現状をまとめています。\n\n### 主な内容\n- **基本原理**: 次の単語を選ぶ際の「揺らぎ」を秘密鍵に基づいた疑似乱数で偏らせ、統計的な有意差として検出する仕組み（KGW法など）。\n- **品質と検出の両立**: 生成分布を数学的に一切変えない「Gumbel-Maxトリック」や、GoogleがGeminiで実用化している「Tournament sampling」などのDistortion-free（歪みなし）手法を詳しく解説。\n- **耐性向上へのアプローチ**: 単語の言い換え攻撃に対抗するため、トークン単位ではなく「意味空間（Embedding space）」に情報を埋め込む手法（SemStamp, PASA）を紹介。\n- **最新トレンド**: ユーザーIDなどを埋め込む「マルチビット追跡」や、モデルの内部パラメータに触れずにAPI経由で透かしを入れる「SAEMark」などの最先端研究に言及。\n\nClaudeの透かしは現時点では「意味や品質を変えない」ことを優先しており、大幅な編集や翻訳には脆弱である可能性が高いと分析。技術の進歩により「実用化は無理」とされた領域が商用レベルに達したことを示唆しています。",
+    "topics": [
+      "LLM",
+      "Claude",
+      "SynthID-Text",
+      "電子透かし",
+      "AIガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

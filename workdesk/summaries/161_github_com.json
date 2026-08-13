@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:44:26.086947+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mcptoon: トークン効率に優れたMCP CLIクライアント (97%の削減を実現)",
+    "url": "https://github.com/activeing123/mcptoon",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCPツール利用時のコンテキスト消費を劇的に削減する、TOONフォーマット採用の軽量CLIクライアント。",
+    "summaryBody": "mcptoonは、Model Context Protocol (MCP) を利用するAIエージェント向けの、トークン効率を極限まで高めたCLIクライアントです。従来のMCPクライアントでは、ツール発見時に膨大なJSONスキーマがコンテキストに注入され、数万トークンを無駄に消費する課題がありました。mcptoonは、スキーマをローカルディスクに保持し、AIには独自開発の「TOON (Token-Oriented Object Notation)」形式で情報を渡すことで、ツール発見時のトークンを最大97%、実行結果を40-60%削減します。\n\n主な特徴として、Python標準ライブラリのみで構築されたゼロ依存（50KB）の設計、認証情報の漏洩検知やプロンプトインジェクション保護などのセキュリティ機能、Claude CodeやCursorといった主要AIエージェントへの容易な統合が挙げられます。設定は一箇所で行い、複数のエージェントで共有可能です。エージェント自身がツールを動的に追加・管理することも可能で、自律的なワークフローを支援します。",
+    "topics": [
+      "MCP",
+      "LLM",
+      "Token Optimization",
+      "CLI Tool",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "activeing123/mcptoon: Token-efficient MCP CLI client. 97% less tokens on tool discovery, 40-60% on results. Zero deps. Cross-platform. Works with every AI agent."
+  }
+}

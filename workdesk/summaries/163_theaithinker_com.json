@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:43:55.153282+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロダクトマネジメントにおけるClaude Codeの整理術：プロンプトより「整理」が成果を分ける理由",
+    "url": "https://www.theaithinker.com/p/how-to-organize-claude-code-for-product",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、プロダクトマネジメント業務を「プロンプトの調整」から「ファイル構造の設計」へと移行させ、学習と改善が蓄積されるワークスペースを構築する手法の解説。",
+    "summaryBody": "ClaudeのチャットUIでは不可能な「情報の蓄積」と「業務の自動化」を、Claude Code（CLIツール）と適切なディレクトリ構造で実現するガイドです。筆者は、プロンプトの質よりも『ファイルの整理方法』がAIの出力精度と継続的な生産性に直結すると説いています。\n\n### ワークスペースの基本構造\n1. **Context（名詞）**: 製品、ユーザー、競合、個人の嗜好など、変化の遅い情報を格納。一度教えれば二度と説明する必要がなくなります。\n2. **Projects**: タスクと成果物を分離。進行中のプロジェクトごとにフォルダを作成し、コンテキストの汚染を防ぎます。\n3. **Operations**: 議事録など、時間の経過とともに古くなる情報を日付順に管理。\n4. **Skills（動詞）**: ステータス更新、PRDレビュー、インタビュー要約など、繰り返しの手順を自動実行可能なスクリプトとして定義。\n\n### 運用の鍵となるプラクティス\n- **フィードバックの永続化**: Claudeへの修正指示を`/file-feedback`スキル経由で`preferences.md`等に自動記録し、同じ間違いを二度とさせない仕組みを作ります。\n- **情報の変化速度で分類**: 情報のトピックではなく「変化の速さ」でフォルダを分けることで、AIが古い情報を参照するミスを防ぎます。\n- **プランモードの活用**: 大きな変更を加える前に`Shift+Tab`でプランモードに切り替え、AIの計画をレビューすることで制御性を高めます。",
+    "topics": [
+      "Claude Code",
+      "プロダクトマネジメント",
+      "ナレッジマネジメント",
+      "AIワークフロー",
+      "MCP (Model Context Protocol)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "How to organize Claude Code for product work"
+  }
+}

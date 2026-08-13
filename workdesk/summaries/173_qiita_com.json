@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:41:25.730936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strands AgentsのLLMリスク分類機能：AIエージェントの危険なツール呼び出しを動的に制御する",
+    "url": "https://qiita.com/manaty/items/694668a58aa40e0e44ce",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Strands Agents SDKの新機能「LLM-driven risk classifier」を使い、ツール呼び出しの引数に基づき危険な操作のみを動的に判断して人間の承認を求める仕組みとその実用性を検証しています。",
+    "summaryBody": "Strands Agents SDK v1.51.0で導入された「LLMリスク分類機能（LLM-driven risk classifier）」の技術検証記事です。従来のツール名ベースの制限（allowed_tools）では不十分だった「特定のパス（/tmp等）への操作は許可し、重要ディレクトリへの操作は制限する」といった、パラメータに基づく柔軟なHuman-in-the-Loop制御が可能になります。記事では、Claude 3.5 Sonnetを用いた検証結果から、分類の安定性、レスポンスタイムへの影響（平均+3.3秒の遅延）、および決定論的なAgentCore Policyやカスタム分類関数との使い分けについて詳しく考察しています。不確実な判断にはLLM分類を用い、厳格な境界には決定論的な仕組みを組み合わせる多層的なセキュリティ設計を推奨しています。",
+    "topics": [
+      "Strands Agents",
+      "AWS Bedrock",
+      "AIエージェント",
+      "LLMセキュリティ",
+      "Human-in-the-Loop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

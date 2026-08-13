@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:41:39.365906+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAI Engineで自作MCPサーバー×LangGraphエージェントを構築した話",
+    "url": "https://qiita.com/shibacorgi/items/21ec803d0c38980a9f9a",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "さくらのAI Engineの無料枠を活用し、独自MCPサーバーとLangGraphを組み合わせた実用的なAI調査レポート生成システムの構築と多モデル検証の記録。",
+    "summaryBody": "「さくらのAI Engine」が提供する月3,000リクエストの無料枠を活用し、技術調査を自動化するAIエージェントを開発した事例です。TavilyによるWeb検索、モデルごとの要約、レポート統合、そして独自実装のMCP（Model Context Protocol）サーバーを通じたファイル保存までをLangGraphのStateGraphで制御しています。記事内ではgpt-oss-120b、Qwen3.6、Kimi-K2.6、llm-jp-3.1など7種類のモデルを同一テーマで比較し、思考プロセス（reasoning）の抽出方法やmax_tokens制限による空レスポンス対策など、実運用に不可欠なトラブルシューティングも詳細に記述されています。",
+    "topics": [
+      "さくらのAI Engine",
+      "MCP",
+      "LangGraph",
+      "AIエージェント",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

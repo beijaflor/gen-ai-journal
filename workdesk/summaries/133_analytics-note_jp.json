@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:11:22.883313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Readyなデータ基盤とオントロジー実装入門 ─ Knowledge Graphで「意味のわかるデータ」を作る",
+    "url": "https://analytics-note.jp/blog/ai-ready-data-infrastructure-ontology/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIがデータの意味や関係性を機械的に理解できる「AI Ready」な状態を目指し、オントロジーやナレッジグラフを用いたデータ基盤の構築手法を段階的に解説する実践ガイド。",
+    "summaryBody": "## 概要\n本記事は、AIが単にデータを処理するだけでなく、その意味や背景、データの繋がりを「理解」できる状態にするためのデータ基盤構築手法を解説しています。従来のDWHにデータを蓄積するだけでは不十分であり、セマンティック技術を用いた「意味のネットワーク」の構築が必要であると説いています。\n\n## 主要なポイント\n- **AI Readyの定義**: データの意味、関係、由来、品質が機械可読であり、AIが「何を意味し、どこまで信頼できるか」を判断できる状態。\n- **5層構造アーキテクチャ**: 物理的なDWH層から、メタデータ/カタログ層、ビジネスセマンティクス層、オントロジー/KG層、そしてAIが利用するServing層までの5段階で整理。\n- **実装アプローチ**: 複雑な設計から始めず、「答えたい問い（Competency Question）」を定義し、最小限のオントロジー（リード、案件、請求などの関係）から構築する手順を提示。\n- **技術スタックの詳細**: RDF/OWLによる意味定義、SHACLによるデータバリデーション、R2RMLを用いた既存DWHとのマッピング、Virtual KG（仮想ナレッジグラフ）による運用コストの抑制など、具体的な技術仕様とコード例を紹介。\n\n## 結論\nAI Readyな基盤の本質は「意味のネットワーク」の整備にあります。個人や小規模チームでも、用語集の作成から段階的に取り組むことで、AIの回答精度と信頼性を抜本的に高める基盤構築が可能であることを示しています。",
+    "topics": [
+      "AI Ready",
+      "データ基盤",
+      "オントロジー",
+      "Knowledge Graph",
+      "Semantic Web"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
