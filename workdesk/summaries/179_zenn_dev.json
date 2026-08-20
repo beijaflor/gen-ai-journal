@@ -10,7 +10,7 @@
     "language": "ja",
     "contentType": "🔬 Research & Analysis (研究・分析)",
     "oneSentenceSummary": "AIエージェントの拡張機能をパッケージ化する新標準「Agent Plugins 1.0.0」の仕様を、マニフェスト構成からエラー設計、業界動向まで詳細に分析・解説した深掘り記事。",
-    "summaryBody": "2026年8月に公開されたAIエージェントの拡張機能パッケージング規格「Agent Plugins 1.0.0」について、仕様書（spec/1.0.0.md）を精読した解説記事です。主な要点は以下の通りです。### 規格の核心。本規格は、Anthropicが主導する「Agent Skills（中身）」と、Anthropic/OpenAIらが提唱する「MCP（接続）」を一つにまとめる「箱」の役割を果たします。具体的には、plugin.jsonというマニフェストファイルと、固定のディレクトリ構造（skills/, mcp.json）を定義しています。### 標準化された領域と設計。最小主義のディレクトリ構成を採用し、コンポーネント発見のルールを簡素化しています。また、一部が壊れても全体を動かす「エラーの局所化」や、PLUGIN_ROOTとPLUGIN_DATAによる状態管理の分離、パスの封じ込めによるセキュリティ確保が盛り込まれています。### 標準化されなかった「空白」。HooksやSubagents、認証、マーケットプレイスの仕組みはあえてスコープ外とされ、クライアント独自の拡張（extensions）に委ねられています。### 業界構造。OpenAI、AWS、Microsoft、Cursor、Vercelの5社が運営する一方、AnthropicがTSCに含まれていないという構造的な「ねじれ」についても考察されています。",
+    "summaryBody": "2026年8月に公開されたAIエージェントの拡張機能パッケージング規格「Agent Plugins 1.0.0」について、仕様書（spec/1.0.0.md）を精読した解説記事。本規格は、Anthropicが主導する「Agent Skills（中身）」と、Anthropic/OpenAIらが提唱する「MCP（接続）」を一つにまとめる「箱」の役割を果たし、plugin.jsonというマニフェストファイルと固定のディレクトリ構造（skills/, mcp.json）を定義している。設計面では最小主義のディレクトリ構成を採用してコンポーネント発見のルールを簡素化し、一部が壊れても全体を動かす「エラーの局所化」、PLUGIN_ROOTとPLUGIN_DATAによる状態管理の分離、パスの封じ込めによるセキュリティ確保が盛り込まれている。一方で、HooksやSubagents、認証、マーケットプレイスの仕組みはあえてスコープ外とされ、クライアント独自の拡張（extensions）に委ねられた。運営はOpenAI、AWS、Microsoft、Cursor、Vercelの5社が担うが、AnthropicがTSCに含まれていないという構造的な「ねじれ」についても考察している。",
     "topics": [
       "Agent Plugins",
       "Model Context Protocol",
