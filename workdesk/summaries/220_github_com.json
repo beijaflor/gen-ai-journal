@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:39:28.246991+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Graft: AIコーディングエージェントの探索コストを削減し、精度を向上させるコードベース構造化ツール",
+    "url": "https://github.com/NanoNets/Graft",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Graftは、リポジトリの構造をLLMが理解しやすいMarkdown形式のグラフとして抽出し、Claude CodeやCursor等のエージェントの動作を高速化・低コスト化するツールです。",
+    "summaryBody": "Graftは、AIコーディングエージェント（Claude Code、Cursor、Geminiなど）がコードベースを理解するための「コンテキスト」を最適化するツールです。エージェントがタスクのたびにコードを探索・再読込する無駄を省くため、コードの依存関係や機能を人間が読めるMarkdown形式のグラフとして事前に構築します。ベンチマークでは、従来の探索手法と比較してコストを最大4倍削減、速度を3倍向上させ、SWE-bench Verifiedにおける正解率を54%から66%へ引き上げることに成功しました。主な特徴として、データベース不要でローカルキャッシュ（graft/フォルダ）として動作すること、Tree-sitterによる21以上の言語サポート、MCP（Model Context Protocol）サーバーとしての統合、そしてLSP連携による高精度な呼び出し関係の抽出が挙げられます。開発者は『graft init』を実行するだけで、既存のエージェントにこの強力なコンテキスト理解を組み込むことが可能です。",
+    "topics": [
+      "AIエージェント",
+      "コンテキストエンジニアリング",
+      "Claude Code",
+      "MCP",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - NanoNets/Graft: Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase. · GitHub"
+  }
+}

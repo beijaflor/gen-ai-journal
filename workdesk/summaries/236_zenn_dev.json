@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:35:33.645028+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 5 よりも Sonnet 5 を選ぶ理由——QCD を 240 試行で比較する（オトナの自由研究 #34）",
+    "url": "https://zenn.dev/nnakapa/articles/lab-34-opus5-sonnet5-qcd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを用い、Sonnet 5とOpus 5の品質・コスト・速度を多角的に比較し、適切な設定下でSonnet 5が最も高い費用対効果を持つことを実証した検証レポート。",
+    "summaryBody": "Claude Code v2.1.226を使用し、DB処理のエッジケースを含む3つのタスクについて、Sonnet 5とOpus 5を計240試行（+補足150試行）で比較検証。Sonnet 5はeffort levelを「xhigh」に設定することで、Opus 5の最上位設定に匹敵する品質を維持しいつつ、コストを約1/2以下、実行速度を約2.8倍に抑えられることが判明した。Sonnet 5は設定を上げることで「罠に気づく確率」が向上する一方、Opus 5は「low」設定時に稀な実装漏れが発生するというモデル特有の挙動も観測。実運用においては、価格据え置きが決定したSonnet 5を「xhigh」で活用することが、現状で最もQCDバランスに優れると結論づけている。",
+    "topics": [
+      "Claude 5",
+      "Claude Code",
+      "LLM比較",
+      "ベンチマーク",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:29:03.646626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIテキストの電子透かしは常に無効化可能：EU AI法と技術的限界",
+    "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "2026年施行のEU AI法で義務化されるAI生成テキストの電子透かしは、SynthIDやUnicodeトリックなどの手法を問わず、パラフレーズや文字正規化によって容易に除去可能である。",
+    "summaryBody": "2026年8月に本格施行されるEU AI法（第50条）では、AI生成コンテンツに「検出可能であること」が義務付けられます。これに対し、Googleの「SynthID」のようにトークンサンプリングの確率に数学的バイアスをかける手法や、OpenAI・Anthropicが使用していると推測される「ホモグラフ（同形異義字）」を用いたUnicodeレベルのトリックが注目されています。しかし、著者はこれらの技術的限界を指摘します。Unicodeベースの透かしは文字置換（正規化）で、SynthIDのような高度な手法も別の軽量LLMを用いた「言い換え（パラフレーズ）」によって統計的特徴が消去され、容易に無効化されます。結論として、法規制による実装は進むものの、テキストという情報の密度が高く圧縮された媒体において、除去不可能な透かしを実現することは技術的に不可能であると論じています。",
+    "topics": [
+      "EU AI法",
+      "SynthID",
+      "電子透かし",
+      "LLM",
+      "AI安全性"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 85
+    },
+    "originalTitle": "Text AI watermarks will always be trivial to remove"
+  }
+}

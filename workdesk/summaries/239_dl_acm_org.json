@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:52:24.244899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "中立性が牙を剥く：AI生成の動物物語におけるジェンダー表現の分析",
+    "url": "https://dl.acm.org/doi/10.1145/3805689.3812287",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMによる動物物語の生成において、バイアス回避を目的とした中立的表現の採用が、結果として女性キャラクターの消失と極端な男性偏重を招いている実態を明らかにした研究。",
+    "summaryBody": "本研究は、FAccT '26で発表された、大規模言語モデル（LLM）におけるジェンダー・バイアスの実態を調査した論文です。研究チームは6つの主要なLLMを使用し、性別が指定されていない擬人化された動物を主人公とした23,800件の物語を生成させました。その結果、モデルは平均38.2%の割合で「it」などの性中立的な表現を使用し、直接的なジェンダー割り当てを避ける傾向があることが判明しました。しかし、性別が明示的に割り当てられたケースに着目すると、男性キャラクターが40.6%を占めるのに対し、女性キャラクターはわずか2.2%という極端な格差が生じていました。著者らは、バイアス対策としての「中立性（Neutrality）」が、実際にはマイノリティや特定のアイデンティティの「消去（Erasure）」に繋がり、既存の偏見を強化してしまうという『Neutrality Bites（中立性の弊害）』を指摘しています。公平性を実現するためには、単なる中立化の追求ではなく、多様な属性を意図的に分散させる新たな生成戦略が必要であると提言しています。",
+    "topics": [
+      "Large Language Models",
+      "Gender Bias",
+      "AI Fairness",
+      "Natural Language Generation",
+      "Anthropomorphism"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Neutrality Bites: Gender Representation in AI-Generated Animal Stories"
+  }
+}

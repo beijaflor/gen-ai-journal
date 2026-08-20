@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:26:49.033004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "⾏政⼿続等調査データ（約75,000件）をMCPで⾃然⾔語分析可能に",
+    "url": "https://digital-gov.note.jp/n/n56aaf580bfb6",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "デジタル庁が、約7.5万件の行政手続調査データをMCP（Model Context Protocol）を用いて自然言語で分析・可視化できる技術検証ツールを公開。",
+    "summaryBody": "デジタル庁は、行政手続のオンライン化状況を調査した悉皆調査データ（約75,000件）を、対話形式で分析できる技術検証用の実装例を公開しました。本ツールは、AIとデータソースを接続する標準プロトコル「MCP（Model Context Protocol）」を活用しており、LLMに集計条件を指定させつつ実際の計算はMCPサーバー側で行うことで、データの誤読や集計ミスを抑制しています。さらに、MCP Apps拡張を用いたグラフや表の動的表示、Webブラウザ内蔵AI（Prompt API）によるローカル環境でのテスト実行もサポート。SDMX（統計データとメタデータ交換の国際標準）の考え方に基づき、データの意味定義や品質情報をAIに適切に伝える「AI-ready」なデータ提供手法を検証しています。ソースコードはGitHubで公開されています。",
+    "topics": [
+      "MCP",
+      "デジタル庁",
+      "LLM",
+      "データ分析",
+      "AI-ready"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

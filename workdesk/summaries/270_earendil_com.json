@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:27:32.830122+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント「Pi」におけるコンパクション（文脈圧縮）の仕組み",
+    "url": "https://earendil.com/posts/compaction-in-pi/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェント「Pi」がLLMの文脈制限に対処するため、履歴を要約してトークン消費を抑制する「コンパクション」の技術的実装とプロンプトキャッシュへの影響を詳説している。",
+    "summaryBody": "LLMを使用したコーディングエージェントにおいて、会話履歴の累積によるコンテキストウィンドウの枯渇は避けられない課題である。本稿では、Earendil Engineeringが開発するエージェント「Pi」が採用している「コンパクション（Compaction）」という解決策を解説している。\n\n### コンパクションのメカニズム\nコンパクションとは、会話履歴の古い部分をLLMによって要約し、より小さな表現に置き換えるプロセスである。Piでは以下の手順で実行される：\n1. **トリガー**: コンテキスト制限に近づいた際、またはユーザーの`/compact`コマンドにより発動する。\n2. **履歴の保持**: 直近の約20,000トークン（5～20ターン程度）をそのまま維持し、それ以前の履歴を要約対象とする。\n3. **要約プロンプト**: 「文脈要約アシスタント」という専用のシステムプロンプトを用い、目標・進捗・重要な決定事項を構造的に抽出する。\n\n### プロンプトキャッシュへの影響\nコンパクション後の履歴はプレフィックス（接頭辞）が変化するため、LLMプロバイダーの「プロンプトキャッシュ」は一時的に無効化される。しかし、圧縮された新しい文脈でのリクエストが続くにつれ、再びキャッシュによるコスト削減の恩恵が受けられるようになる。この仕組みにより、長いセッションでも精度を維持しつつ継続的な作業が可能となっている。",
+    "topics": [
+      "Coding Agent",
+      "LLM Context Management",
+      "Prompt Engineering",
+      "Pi",
+      "Prompt Caching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "How Compaction Works in Pi"
+  }
+}

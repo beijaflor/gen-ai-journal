@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:36:22.839823+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "同じ Sonnet 5 でも Claude Code と GitHub Copilot では使い方が違った（オトナの自由研究 #35）",
+    "url": "https://zenn.dev/nnakapa/articles/lab-35-claude-copilot-sonnet5-qcd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude 3.5 Sonnetを搭載した2つのAI CLIを比較し、Claude Codeはeffort levelに応じて思考を深化させる一方、Copilot CLIは挙動の変化が乏しく品質の安定性に差が出ることを明らかにした。",
+    "summaryBody": "本記事は、Raspberry Pi 5環境下でClaude CodeとGitHub Copilot CLIの性能を比較した実験記録である。同一モデル（Claude 3.5 Sonnet）を使用しながら、Claude Codeはeffort levelの向上に伴って1リクエストあたりの出力トークン量と推論時間を大幅に増加させて品質を安定させるのに対し、GitHub Copilot CLIは変化が乏しく、高負荷タスクでの成功率が低下する傾向が確認された。OpenTelemetryのトレース分析により、実行時間の差が主にAPI応答待ち時間に起因し、思考の深さに直結していることを解明している。モデルの性能だけでなく、CLIというラッパーがいかに挙動を左右するかを定量的に示した貴重なレポートである。",
+    "topics": [
+      "Claude Code",
+      "GitHub Copilot",
+      "Claude 3.5 Sonnet",
+      "OpenTelemetry",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 92
+    }
+  }
+}

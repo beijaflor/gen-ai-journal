@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:51:40.873948+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HashAgent — プライベートなAIエージェントをURLで共有",
+    "url": "https://hashagent.pages.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの構成をURLのハッシュフラグメントに完全格納し、WebGPUを用いてブラウザ上のローカル環境で実行・共有できるオープンソースツール。",
+    "summaryBody": "HashAgentは、AIエージェントの定義（プロンプトや設定）をBase64urlエンコードしてURLのハッシュ部分（#）に埋め込むことで、サーバーを介さずにエージェントを配布・実行できる革新的なプラットフォームです。WebGPUを活用することで、ブラウザ上で360Mから8Bパラメータ規模のモデルを直接動作させ、データはメモリ内のみで処理されるため、高いプライバシーが確保されます。URL自体がエージェントのすべての情報を持っているため、サーバーへのデータ送信がなく、Cookieや分析ツールも排除されています。画像やカメラ入力にも対応しており、MITライセンスの下でオープンソースとして公開されています。",
+    "topics": [
+      "AI Agent",
+      "WebGPU",
+      "Privacy-first AI",
+      "Local LLM",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "HashAgent — Share a private AI agent as a URL"
+  }
+}

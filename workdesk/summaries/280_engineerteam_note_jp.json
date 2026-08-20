@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:25:11.900038+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Browserを使って動作確認しよう｜noteエンジニアチームの技術記事",
+    "url": "https://engineerteam.note.jp/n/n25f4fb782c81",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "note社が導入した、Agent BrowserとAIを活用して検証環境での手動動作確認を自動化し、確認項目生成から実行台本の保存までを一貫して行う仕組みの解説。",
+    "summaryBody": "noteエンジニアチームによる、ブラウザ操作AI「Agent Browser」を用いた動作確認の自動化事例です。開発フローにおける「実際に動くか」を確認する第3段階の課題（待ち時間、反復操作、基準の属人化）を解決するため、作業を「何を確認すべきか（uat-checklist）」と「実際に確認する（uat-explore-replay）」に分離しました。前者はPRの差分からP0〜P3の優先度付きリストを生成し、後者はVercel LabsのAgent Browserで操作を実行します。判定結果に「blocked」や「skipped」を設けることでAIの曖昧な判断を排除し、最終的な操作台本をコードと共にリポジトリへ保存することで、動作確認を「再現可能な資産」へと昇華させています。",
+    "topics": [
+      "Agent Browser",
+      "AI自動化",
+      "フロントエンド",
+      "品質保証",
+      "note"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

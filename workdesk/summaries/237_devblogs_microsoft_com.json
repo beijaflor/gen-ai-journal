@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:35:19.298982+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Intelligent Terminal 0.2が登場：ローカルモデル対応、WSL統合、タブごとのエージェント切り替えが可能に",
+    "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-is-here-with-local-model-support/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Microsoftの次世代ターミナル「Intelligent Terminal 0.2」が公開され、ローカルLLMのサポートやWSL内でのエージェント実行、操作性の向上など大幅な進化を遂げました。",
+    "summaryBody": "Microsoftは、AI統合型ターミナル「Intelligent Terminal」の初のマイナーアップデートとなるバージョン0.2をリリースしました。本アップデートの目玉は「ローカルモデル対応」で、OllamaなどのOpenAI互換APIを提供するサーバーと連携し、オフラインかつプライベートな環境でAIエージェントを利用できます。また、新コマンド`/agent`によりタブごとに異なるAI（GitHub CopilotやClaude等）を使い分けられるほか、WSL（Windows Subsystem for Linux）内でのエージェント実行にも対応しました。UI面では画像のクリップボード貼り付けによるマルチモーダル入力、マウス操作によるスクロールやコピー、トークン使用量の表示機能が追加されています。さらに、コマンドの失敗をAIが分析して修正を提案する「Autofix」機能の精度も向上し、PowerShell 5.1やBashの特定エラーにも対応しました。",
+    "topics": [
+      "Windows Terminal",
+      "LLM",
+      "Local AI",
+      "WSL",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Intelligent Terminal 0.2 is here with local model support"
+  }
+}

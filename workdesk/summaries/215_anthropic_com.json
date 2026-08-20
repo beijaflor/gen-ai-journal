@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:40:38.079327+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeにおけるテキストウォーターマーク（電子透かし）の仕組み",
+    "url": "https://www.anthropic.com/news/claude-text-watermark",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、EU AI法への準拠を目的に、Claudeの生成テキストに品質やコストを損なうことなく不可視の統計的パターンを埋め込む「電子透かし」技術の導入と詳細を公開しました。",
+    "summaryBody": "Anthropicは、将来のClaudeモデルに導入されるテキストウォーターマーク（電子透かし）の技術的詳細を解説しました。この施策はEU AI法（EU AI Act）への準拠を目的としており、Google DeepMindが提唱した「SynthID-Text」手法に基づいています。\n\n### 技術の仕組み\nLLMが次の単語を選択する際の「ランダム性のソース」に特定の鍵を用いることで、人間には判別不能だが、特定のキーを持つ検証者には検出可能な統計的パターンを埋め込みます。文章の品質、創造性、生成速度、コストには一切影響を与えません。\n\n### 特徴と制限\n1. **プライバシー**: ユーザーや組織を特定する情報は含まれず、あくまで「Claudeが生成に関与したか」のみを判定します。\n2. **適用条件**: 事実に基づく記述やコード生成のように選択肢が限られる場合は、透かしの強度が弱まります。\n3. **堅牢性**: 軽微な編集では消失しませんが、完全な書き換えによって除去される可能性があります。\n\n### 今後の展開\nAnthropicは、この透かしを検証するためのAPIを近日中に提供する予定です。また、画像等のファイルについてはC2PA標準に基づいたメタデータ付与も実施しています。",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "AI Watermarking",
+      "EU AI Act",
+      "SynthID"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "How Claude's text watermarking works"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:26:33.007279+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "証明付きバイブコーディングで証明支援系「ZFCert」を構築：Rocqによる健全性証明とLLMの活用",
+    "url": "https://qiita.com/mrkbc/items/3545af61b8f2e256c750",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LLM（Codex）を活用した「バイブコーディング」により、Rocqで論理コアの健全性を形式的に証明した一階述語論理・ZFC集合論ベースの証明支援系「ZFCert」が開発されました。",
+    "summaryBody": "LLMを用いた「バイブコーディング」手法によって、新しい証明支援系「ZFCert」を開発した事例です。このツールの最大の特徴は、論理のコア部分をRocq（旧Coq）で実装し、「ZFCertで証明可能な命題はRocqでも証明可能である」という健全性を形式的に証明している点にあります。RocqからOCamlにコードを抽出（Extraction）し、さらにOCaml側で強力なタクティクやUIを実装する構成を採っています。内部状態を型システムで秘匿することで、LLMが生成したUI等のコードによる論理的整合性の破壊を防いでいます。一階述語論理やZFC公理系を自然演繹ベースで扱えるため、型理論ベースのRocqやLeanとは異なる教育的価値を提供します。Web（Wasm）、VS Code、Emacsなどのマルチプラットフォームで動作し、自動証明タクティク（resolution）も備えています。筆者は、LLMに実装を任せつつ設計と検証に人間が集中する開発スタイルの有効性を強調しています。",
+    "topics": [
+      "ZFCert",
+      "Rocq",
+      "LLM",
+      "証明支援系",
+      "バイブコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

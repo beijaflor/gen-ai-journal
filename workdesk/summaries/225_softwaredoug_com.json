@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:38:26.047756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "分類せず、あえて「幻覚」させる：LLMによる低コストな商品分類の新手法",
+    "url": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMに厳密な分類を強制するのではなく、自由に「それらしい分類名」を生成（幻覚）させ、それをベクトル検索で正規のタクソノミーにマッピングする効率的な手法を紹介。",
+    "summaryBody": "LLMを用いたECサイトなどの商品カテゴリ分類において、数百から数千ある正規の分類項目（タクソノミー）をすべてプロンプトに含めたり、PydanticのLiteralで制約をかけたりする従来の手法は、コストが高く、モデルのコンテキスト制限にも阻まれがちです。\n\n本記事で提案されている「Don't classify. Hallucinate!」手法は、以下のプロセスをとります：\n1. 安価な小型LLMに対し、クエリ（例：brown coffee table）に最も適した「架空の分類名」を自由に生成させる。\n2. あらかじめ正規の分類項目をベクトル化（Embeddings）しておき、生成された「架空の分類名」とのベクトル類似度（ドット積など）を計算する。\n3. 最も類似度の高い正規の分類項目を採用する。\n\nこの手法により、高性能なモデルに頼らずとも、大規模な分類体系へのマッピングを高速かつ安価に実現できます。WayfairのWANDSデータセットを用いた具体例を交え、構造化出力の限界を超える実戦的なアプローチを解説しています。",
+    "topics": [
+      "LLM",
+      "Vector Search",
+      "Classification",
+      "Embeddings",
+      "Cost Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Don't classify. Hallucinate!"
+  }
+}

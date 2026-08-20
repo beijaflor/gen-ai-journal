@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:45:40.585041+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Access for Workersにより、すべての社内アプリケーションをワンクリックで保護可能に",
+    "url": "https://blog.cloudflare.com/workers-protected-by-access/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflare Workersに対して個別のWorkerやアカウント全体にCloudflare Accessの認証を直接適用できる新機能が発表され、開発者が意識せずとも全ての社内アプリをデフォルトでセキュアに保てるようになりました。",
+    "summaryBody": "Cloudflareは、Cloudflare Workersに直接Cloudflare Accessの認証ポリシーを適用できる新機能を発表しました。これまでホスト名（ドメイン）ごとに設定が必要だった認証を、Worker単位またはアカウント全体で一括設定できるようになります。\n\n### 主な特徴とメリット\n- **アカウントレベルのポリシー**: アカウント内の全Workerに対し、プレビューURLや本番環境を含めてデフォルトで認証を必須化し、意図しない外部公開を防ぎます。\n- **Worker単位の保護**: 特定のWorkerに関連付けられたすべてのドメインやルートに対し、一貫した認証を強制します。\n- **ユーザー情報の直接取得**: `ctx.access.getIdentity()` を通じて、JWTの手動検証なしにコード内でユーザーのメールアドレスや属性を直接取得可能です。\n- **ローカル開発の強化**: `wrangler dev` で認証ユーザーのシミュレーションが可能になり、本番に近い環境でのテストが容易になります。\n\nこの機能は、Rustベースの新しいプロキシ「FL2」への移行により、ルーティングと実行の分離が可能になったことで実現されました。開発スピードを維持しつつ、社内ツールやプロトタイプのガバナンスを大幅に強化します。",
+    "topics": [
+      "Cloudflare Workers",
+      "Cloudflare Access",
+      "Zero Trust",
+      "Web Security",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Secure all your internal vibe-coded applications — in one click | Cloudflare Blog"
+  }
+}

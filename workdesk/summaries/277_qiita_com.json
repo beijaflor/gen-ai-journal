@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:25:50.379005+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "(ずんだもん通知くん)Claude Codeにずんだもんの声をつけた話",
+    "url": "https://qiita.com/yama3133/items/6459627a4029eb5cbee7",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの動作状況をVOICEVOXの「ずんだもん」が音声とデスクトップマスコット形式で通知するシステムの開発記録です。",
+    "summaryBody": "AIコーディングエージェント「Claude Code」による長時間タスクの完了やユーザー入力を待つタイミングを把握するため、VOICEVOXのずんだもんを用いた通知システムを構築した事例。Claude Codeが提供するフック（Stop, SubagentStop, Notification）をトリガーに、Pythonスクリプトを介して音声合成とキャラクター表示を行います。開発過程で遭遇した、英語の読み上げ崩壊、正規表現による意図しない数字の削除、VOICEVOXのユーザー辞書優先度問題、エンジンの死活監視、画像素材の透過余白による位置ずれなど、実機検証を通じて初めて発見された細かなトラブルとその解決策が具体的にまとめられています。",
+    "topics": [
+      "Claude Code",
+      "VOICEVOX",
+      "Python",
+      "AIエージェント",
+      "ずんだもん"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 86
+    }
+  }
+}

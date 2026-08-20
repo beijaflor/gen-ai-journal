@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:33:23.244764+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの計算はほぼ全部 GEMM (General Matrix Multiply) である #NVFP4",
+    "url": "https://qiita.com/sukimaengineer/items/2708b7d559c70697e105",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの推論プロセス、特に演算強度の高いprefillフェーズがGEMM（一般行列積）に支配されている構造を解説し、MXFP4等の低精度演算器がハードウェア性能の鍵となる理由を論じる。",
+    "summaryBody": "LLM（Transformer）の推論は、その大部分がGEMM（一般行列積）演算で構成されている。特にプロンプトを一括処理する「prefill」フェーズは、重みを再利用するため演算強度が高く、演算性能（FLOPS）がボトルネックとなるCompute-boundな特性を持つ。対して「decode」フェーズは1トークンずつの生成であるためMemory-boundとなる。\\n\\n本記事では、NVIDIA BlackwellのFP4 Tensor CoreやApple M5のNeural Acceleratorといった最新ハードウェアを例に、MXFP4/NVFP4といった低精度ブロックスケール形式がいかにprefillを高速化するかを詳述。著者は、演算重視のGPUと帯域重視のApple Siliconを分離するアーキテクチャ（ds4-prefillerd）の有効性を提唱し、次世代のM7 Max等には展開なしのネイティブMXFP4積和ユニットの搭載が不可避であると予測している。",
+    "topics": [
+      "LLM",
+      "GEMM",
+      "MXFP4",
+      "Apple Silicon",
+      "GPU"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

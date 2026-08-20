@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:23:04.221008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code セルフホスト環境機能が登場。EC2インスタンスを実行環境にしてみた",
+    "url": "https://dev.classmethod.jp/articles/claude-code-self-hosted-runner/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの実行環境を自社インフラに構築できる「セルフホスト環境」機能が公開され、AWS EC2を用いた具体的な導入手順とGit認証の設定ポイントが解説されています。",
+    "summaryBody": "Claude Code v2.1.224以降で導入された「セルフホスト環境（Public Beta）」の構築ガイドです。この機能により、従来Anthropic側がホストしていたセッション実行環境を自社のAWS EC2などのインフラ上に移行できます。主なメリットとして、社内ネットワーク内のDBやツールへの直接アクセス、カスタムイメージによる環境構築、そしてリポジトリ情報の自社管理が可能になります。記事では、EC2（Ubuntu 24.04）をベースにしたランナーのセットアップ手順、`--use-anthropic-git-proxy`オプションを用いたGit認証の解決、実際にclaude.aiからセルフホスト環境を選択して実行するまでの流れを検証しています。また、実運用に向けたsystemd化や同時実行数の制限といった改善点についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AWS",
+      "EC2",
+      "セルフホスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}
