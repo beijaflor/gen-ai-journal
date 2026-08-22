@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:40:08.706353+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLI 上の Claude Code で Computer Use を再現する（追加課金ゼロ、441 行のエージェント）",
+    "url": "https://zenn.dev/tokium_dev/articles/gui-agent-zero-extra-cost",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの対話セッションを「頭脳」として活用し、追加のAPI課金なしでWindows 11のGUIを自律操作する軽量なエージェントの実装方法を解説した記事。",
+    "summaryBody": "### 概要\nAnthropicの「Computer Use」を、APIの従量課金なしでClaude Codeのサブスクリプション枠のみで実現するアプローチの解説です。追加の実装はPythonによる441行のヘルパーCLIのみで、APIキーも不要な点が特徴です。\n\n### 技術的ポイント\n- **セッション駆動の仕組み**: AIエージェントの「思考」部分にClaude Codeの既存セッションを利用。Bashツール経由でスクショ撮影（`snap.py`）とGUI操作（`act.py`）を実行します。\n- **リソースの最適化**: 画面を1366×768にダウンスケールすることで、1枚あたりの画像トークンを約1,372に抑制。必要に応じて`--crop`で部分拡大することで精度を補完します。\n- **安全性と実用性**: DPI awareness（スケーリング問題）の解決、APIキー等の秘匿情報入力拒否リスト、Bash承認UIによる人間介在型の実行管理など、実環境での運用を考慮した設計になっています。\n\n### 結論\nメモ帳への自動入力タスクにおいて、リカバリを含めた自律動作を確認。完全無人化はできませんが、コストを抑えつつネイティブWindowsアプリの自動化を手軽に試す手段として有効です。",
+    "topics": [
+      "Claude Code",
+      "Computer Use",
+      "pyautogui",
+      "LLM Agent",
+      "GUI Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

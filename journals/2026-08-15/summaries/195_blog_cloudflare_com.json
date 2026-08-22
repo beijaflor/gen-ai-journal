@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:45:27.403341+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareによるMCPトラフィックの検出とセキュリティ強化機能の発表",
+    "url": "https://blog.cloudflare.com/mcp-security-updates/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェント向けのModel Context Protocol (MCP) トラフィックを識別・可視化し、管理されたポータル経由の接続のみを強制する新しいセキュリティ制御機能を導入しました。",
+    "summaryBody": "AIエージェントがMCPサーバーを介してツールやデータにアクセスする際、人間の判断速度や予測可能性を超えたリスクが生じます。Cloudflareはこの課題に対応するため、Cloudflare Oneに以下の新機能を実装しました。\n\n1. **プロトコルベースの検出**: HTTPヘッダー（MCP-Protocol-Version等）を解析することで、特定のURLやパスに依存せず、通常のHTTPS通信の中からMCPトラフィックを正確に識別します。\n2. **可視化とダッシュボード**: ネットワーク内でどのユーザーがどのMCPサーバーに接続しているか、承認済みの「MCPポータル」を経由しているかなどを一覧できる専用ダッシュボードを提供します。\n3. **Gatewayによる制御**: `experimental.is_mcp` セレクターを用いることで、管理されていない直接的なMCP接続（シャドーMCP）をブロックし、ガバナンスの効いたポータル経由の通信のみを許可するポリシーを適用可能です。\n4. **最新仕様への対応**: 最新のステートレスなMCP仕様（2026-07-28）をサポートするAgents SDK v0.20.0をリリースし、プライベートネットワーク上のMCPサーバーへの接続機能も開発中です。\n\nこれにより、企業はAIエージェントによる意図しないアクションやデータ漏洩を未然に防ぐことが可能になります。",
+    "topics": [
+      "Model Context Protocol (MCP)",
+      "Cloudflare One",
+      "AIエージェント",
+      "Zero Trust",
+      "Cloudflare Gateway"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "How Cloudflare detects MCP traffic and helps secure it"
+  }
+}

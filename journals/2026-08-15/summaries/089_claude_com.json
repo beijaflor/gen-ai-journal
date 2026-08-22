@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:11:43.477468+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon BedrockとGoogle Cloud向け「Claude apps gateway」が登場 — Claude Codeのエンタープライズ管理を容易に",
+    "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Amazon BedrockやGoogle Cloud上でClaude Codeを利用する企業向けに、SSO連携やコスト管理、ポリシーの一元適用を可能にするセルフホスト型ゲートウェイが発表されました。",
+    "summaryBody": "Anthropicは、Amazon BedrockおよびGoogle Cloud上で「Claude Code」を運用する組織の管理を効率化する「Claude apps gateway」をリリースしました。従来、各開発者の環境ごとに必要だったクラウド認証情報の管理や設定の同期、コストの可視化といった課題を解決します。本ゲートウェイはLinux上で動作するステートレスなコンテナとして提供され、PostgreSQLをバックエンドに使用します。主な機能として、OIDCプロバイダー（Okta, Microsoft Entra ID等）によるSSO連携、ポリシーや利用モデルの一元管理、OTLPによるユーザー単位のテレメトリ収集、および日次・週次・月次の支出制限設定が可能です。これにより、開発者のマシンに長期的な秘密情報を残さず、エンタープライズレベルの統制とセキュリティを確保したままClaude Codeを利用できるようになります。",
+    "topics": [
+      "Claude Code",
+      "Amazon Bedrock",
+      "Google Cloud",
+      "AI Governance",
+      "Enterprise"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing the Claude apps gateway for Amazon Bedrock and Google Cloud"
+  }
+}

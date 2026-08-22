@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:19:57.288753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステムにおけるAI活用の現状：2026年7月フィールドスタディ",
+    "url": "https://state-of-ai-in-design-systems.netlify.app/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要20種のデザインシステムを対象に、MCPサーバーやllms.txt、エージェント用スキルなど、AIエージェントへの最適化状況を調査した2026年時点のレポート。",
+    "summaryBody": "Kaelig Deloumeau-Prigent氏による本調査は、デザインシステムが「AIエージェント」に対してどのような機能を提供しているかを20のプロジェクト（Ant Design、Carbon、MUI、shadcn/ui等）について詳細に分析したものです。\n\n主な調査項目と普及率は以下の通りです：\n- **MCPサーバー (19/20):** ほぼ全てのシステムが、LLMとローカルツールを接続するModel Context Protocolに対応済み。\n- **llms.txt (14/20):** AI向けの簡潔なドキュメント定義が一般的になっています。\n- **エージェント・スキル (18/20):** コンポーネント生成やマイグレーションを自動化するツールが提供されています。\n- **AGENTS.md / CLAUDE.md (15/20):** リポジトリ内にAI向けの振る舞い定義ファイルを持つことが標準化しています。\n\n一方で、Figma Code Connectのようなデザインとコードの直接的な紐付けは2件に留まり、AI対応はまず「開発効率の向上」から進んでいることが分かります。デザインシステムは人間が読むドキュメントから、機械が自律的に利用・貢献するための「インフラ」へと進化しています。",
+    "topics": [
+      "デザインシステム",
+      "MCP (Model Context Protocol)",
+      "LLMエージェント",
+      "llms.txt",
+      "開発者エクスペリエンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "State of AI in Design Systems · July 2026"
+  }
+}

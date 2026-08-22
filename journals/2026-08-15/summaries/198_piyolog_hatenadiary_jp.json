@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:44:50.745342+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが生成した脆弱性修正パッチの品質検証結果についてまとめてみた",
+    "url": "https://piyolog.hatenadiary.jp/entry/2026/08/15/075403",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "1Passwordの研究チームによる検証で、AIが生成した脆弱性修正パッチの「クリーンな修正」は約46%にとどまり、逆に新たな脆弱性を混入させるリスクがあることが明らかになりました。",
+    "summaryBody": "1Passwordの社内研究チーム「Off-by-1 Labs」が、Claude CodeやCodex（ChatGPT 5.5ベース）などの最新AIモデルを用い、実在する6件の複雑な脆弱性に対する修正パッチの品質を検証しました。独自パイプライン「FLAWED」を用いた解析の結果、脆弱性を完全に修正し悪影響を与えない「クリーンな修正」の割合は46.1%でした。一方で、修正の過程で新たな脆弱性を作り込んでしまうケースが4.5%確認されており、特にLinuxカーネルの脆弱性修正では、過去に人間が犯したのと同様のミス（off-by-oneエラー）を再現する例も見られました。freenginxを対象としたケーススタディでは、生成された270件のパッチすべてに何らかの欠陥が含まれていました。研究では、AIの生成能力が検証能力を上回っている現状を指摘し、専門家によるレビューと実行ベースの動的検証の重要性を強調しています。",
+    "topics": [
+      "AIセキュリティ",
+      "脆弱性修正",
+      "LLM",
+      "1Password",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

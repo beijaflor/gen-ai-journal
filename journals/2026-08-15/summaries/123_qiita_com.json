@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:14:15.447189+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「違反できないコード」を書かせる：ガイドとセンサーの設計",
+    "url": "https://qiita.com/shun123/items/7aa06b6982dfd1730af0",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIにコードを書かせる際に、規約違反が物理的に不可能な環境（ハーネス）を静的解析ツールとLLMレビューで構築し、AI駆動開発の品質を自動担保する手法の解説。",
+    "summaryBody": "この記事は、Claude Codeを用いたAI駆動開発において、人間がレビューのボトルネックにならないための「ハーネス（仕組み）」の設計手法を解説するチュートリアルです。HonoとTypeScriptによるオニオンアーキテクチャの実装を題材に、ESLintやdependency-cruiser、scriptsによる「計算的センサー（高速な自動検証）」と、AI自身による「推論的センサー（意味論的レビュー）」を組み合わせる方法を詳述しています。AIに「規約を守ってほしい」と頼むのではなく、型定義や依存関係チェックによって「規約を守る以外の道がない」状態を作り出すことで、ドメイン駆動設計の整合性を自動的に維持する実践的なプロセスを提案しています。",
+    "topics": [
+      "Claude Code",
+      "TypeScript",
+      "オニオンアーキテクチャ",
+      "AI駆動開発",
+      "Hono"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

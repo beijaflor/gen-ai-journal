@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:40:54.277177+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAI Engine × Three.js(VRM)でモーションと音声が同期する3D AIチャットを作ってみた",
+    "url": "https://qiita.com/neko-pudding/items/0b5a8521a52815d93ca6",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "さくらのAI Engine、Three.js、VOICEVOXを連携させ、3Dアバターが音声とモーションを同期させて応答するインタラクティブなAIチャットの構築手法を解説。",
+    "summaryBody": "この記事は、さくらインターネットが提供する「さくらのAI Engine」を中核に据え、Webブラウザ上で動作する3D AIキャラクターの開発過程を紹介しています。技術スタックとして、3D描画にThree.js（VRM形式）、音声合成にVOICEVOX、バックエンドにNode.jsを採用しています。特に、LLMからのレスポンスをJSON形式で強制することで、発話内容と特定のモーションIDを同時に取得し、キャラクターの動きと声を同期させる実装方法が具体的です。また、OpenAI互換APIによる導入の容易さや、GeminiおよびOllama（ローカルLLM）との応答速度・精度の比較検証も行われており、個人開発におけるクラウドLLMの利便性が強調されています。",
+    "topics": [
+      "さくらのAI Engine",
+      "Three.js",
+      "VRM",
+      "VOICEVOX",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

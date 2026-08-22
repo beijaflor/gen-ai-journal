@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:11:59.048442+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【備忘録】AIで編集しやすいWBSの作り方 - 機能軸・工程軸で工数を集計するMarkdown表",
+    "url": "https://qiita.com/Tadataka_Takahashi/items/6be2bf42e6b9751accc8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによる編集とGitでの差分管理を最適化するため、1行1タスクのフラットなMarkdown形式でWBSを構築し、スクリプトで多角的な工数集計を行う手法の解説。",
+    "summaryBody": "スプレッドシート管理のWBSが抱える「属人化」「差分把握の困難さ」「AI親和性の低さ」を解決するため、Markdownの表を活用した管理手法を提案しています。具体的には、セル結合を廃して1行1タスクのフラットな構造とし、機能軸・工程軸を列として定義することで、AIが理解しやすく、かつGitで変更履歴を追跡可能な形式を推奨しています。また、Markdownの仕様に起因するAIの編集ミス（列の崩れや非数値の混入）を機械的に検知するためのPythonバリデーションスクリプトや、Excelでのピボット分析に繋げるためのCSV変換手順も網羅。AIに見積もりや構造レビューを依頼する際の具体的なプロンプト例も示されており、実務的なプロジェクト管理の自動化・効率化を支援する内容となっています。",
+    "topics": [
+      "WBS",
+      "Markdown",
+      "生成AI",
+      "プロジェクト管理",
+      "工数管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

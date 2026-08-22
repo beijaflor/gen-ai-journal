@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:29:33.118235+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "概念的推論の評価指標「Conceptual Reasoning Index (CRI)」の導入",
+    "url": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Redwood ResearchとAnthropicは、AIの安全性向上に不可欠な、実証的検証が困難な領域での推論能力を測定するベンチマーク群「Conceptual Reasoning Index (CRI)」を発表した。",
+    "summaryBody": "Redwood ResearchとAnthropicが共同開発した「Conceptual Reasoning Index (CRI)」は、哲学やAI安全性、意思決定理論など、実証的なフィードバックが容易に得られない「概念的推論」の能力を評価するためのスイートです。この指標は3つのコンポーネントで構成されています。1つ目の「LMCA」は、専門家が評価した概念的な議論のデータセットで、モデルの議論判断能力を測定します。2つ目の「ACCoRD」は、モデルの信念や選好における論理的一貫性を評価します。3つ目の「DTBench」は、高度な意思決定理論と自己予測に関する問題群です。現在のリーダーボードではAnthropicのClaude Opus 5が最高スコア（73.6）を記録していますが、人間の専門家レベルとされる推定天井値（約91）には達していません。このベンチマークは、AIが将来的に直面する未踏のリスクを管理し、高度な推論を自動化するための重要な指標として位置付けられています。",
+    "topics": [
+      "AI Alignment",
+      "Conceptual Reasoning",
+      "Benchmarking",
+      "Decision Theory",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Introducing the Conceptual Reasoning Index"
+  }
+}

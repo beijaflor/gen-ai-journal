@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:25:21.673962+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ante: Rust製の超軽量・自己完結型ターミナルAIエージェント",
+    "url": "https://github.com/AntigmaLabs/ante",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anteは、Rustで書かれた約15MBの単一バイナリで動作し、ローカルLLM（llama.cpp内蔵）や主要APIに対応した、高速かつ依存関係のない自己完結型コーディングエージェントです。",
+    "summaryBody": "Antigma Labsが開発した「Ante」は、Claude CodeやCodexに代わる軽量なターミナルエージェントです。Rustでゼロから構築されており、Grepやgitを内蔵することで、Node.jsやPythonベースのツールに比べ圧倒的に少ないリソース（メモリ約1/7、CPU約1/9）で動作します。最大の特徴は、llama.cppを内蔵しており、GGUF形式のモデルを用意するだけで完全オフライン環境での実行が可能な点です。また、マルチエージェントのオーケストレーション、Slack/Discord連携、JSONLプロトコルによるサーバーモードなど、拡張性も備えています。現在はアルファ版として提供されており、コア部分はバイナリ配布ですが、プロトコルやSDKはApache 2.0でオープンソース化されています。",
+    "topics": [
+      "AIエージェント",
+      "Rust",
+      "ローカルLLM",
+      "llama.cpp",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - AntigmaLabs/ante: Ghost in your shell. Ante is a self-contained agent harness with a highly optimized core. It works like Claude Code or Codex, with none of their dependencies or model constraints."
+  }
+}

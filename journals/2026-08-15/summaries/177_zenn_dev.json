@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:40:26.485727+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BM25を使用してCodexのトークン消費を30%抑える：ナレッジセンスによるRAG実装検証",
+    "url": "https://zenn.dev/knowledgesense/articles/9e55a3bb67729c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模コードベースの探索にBM25を導入することで、Codexの回答品質を維持したままトークン消費量を約3割削減し、検索効率を大幅に向上させた実証結果。",
+    "summaryBody": "最新の論文「BM25 Wins at Scale」の知見を基に、コーディングエージェント（Codex）の検索基盤へBM25を統合した検証記事です。従来、CodexがGrepやGlobを用いて直接ファイルを探索していたプロセスを、BM25による事前ランク付けに置き換えることで、エージェントが読むべき情報を早期に絞り込むことに成功しました。7,500ファイル規模のリポジトリで検証した結果、全タスクで正解を維持しつつ、セッション全体のトークン消費量を平均29.2%削減。実装面では、SQLiteによるインデックス構築を27秒で完了させ、camelCaseの分割や日本語への二文字分かち書き対応など、コード探索に特化したチューニングが施されています。この役割分担により、複雑な因果関係の調査においても効率的な情報収集が可能となることが示されました。",
+    "topics": [
+      "RAG",
+      "BM25",
+      "Codex",
+      "LLM",
+      "検索アルゴリズム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

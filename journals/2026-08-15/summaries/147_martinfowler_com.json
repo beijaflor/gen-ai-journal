@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:47:40.597348+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントのループ内でのTDDは形骸化しているのか、それとも実質的な価値があるのか？",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントにTDD（テスト駆動開発）プロセスを強制することが、コードの品質向上に寄与するのか、あるいは単なるトークンの無駄なのかを実験とデータに基づき考察した記事。",
+    "summaryBody": "Thoughtworksのエンジニアによる実験に基づき、AIエージェントによるTDDの有効性を検証しています。実験では、Sonnet 3.5を用いてTDDあり・なしの両パターンでコードを生成させ、Claude 3 Opusがその品質を評価しました。結果として、TDDを強制しても設計品質やテストの網羅性に明確な向上は見られず、むしろ非TDDの方が事前に全体設計を検討するため、より優れた設計を導き出す傾向が確認されました。人間にとってのTDDのメリット（恐怖の管理、設計の強制、テスト容易性の確保）が、人間不在のエージェント内ループでは機能しにくいことが指摘されています。結論として、エージェントに特定のプロセスを強いるよりも、ミューテーションテストによる回帰テストの質の監視や、静的解析を活用したリファクタリングのトリガーなど、成果物（アウトカム）ベースの評価とフィードバックループの構築に注力すべきだと提言しています。",
+    "topics": [
+      "TDD",
+      "AI Agents",
+      "LLM",
+      "Software Engineering",
+      "Testing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "TDD inside the agent loop - theater or actual value?"
+  }
+}

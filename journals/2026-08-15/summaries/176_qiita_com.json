@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:40:40.123394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Plugins 1.0、Anthropicだけ仲間はずれ？ 実際にClaude Codeで動くか検証してみた",
+    "url": "https://qiita.com/yama3133/items/36c1a407016c6d796055",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSやOpenAIらが発表した「Agent Plugins 1.0.0」規格のパッケージが、策定メンバー外であるAnthropicのClaude Codeで動作するかを技術的に検証し、高い互換性を確認したレポート。",
+    "summaryBody": "2026年8月にAWS、OpenAI、Googleらが発表したAIエージェントの共通規格「Agent Plugins 1.0.0」について、主要ベンダーの中で唯一名を連ねていないAnthropicの環境（Claude Code）で利用可能かを検証した記事です。著者は仕様書を詳細に比較し、両者の差異がマニフェストファイルの配置場所、MCP設定のファイル名、プレースホルダー変数の命名規則という3点のみに集約されることを突き止めました。実際に変換スクリプトを作成して検証した結果、公式サンプルがClaude Code上で正常に認識・ロードされることを実証しています。新規格自体がAnthropicの提唱した「Agent Skills」を土台にしているため、現時点では「非参加」による実害はほぼなく、高度な互換性が保たれていると結論付けています。",
+    "topics": [
+      "Agent Plugins",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "Anthropic",
+      "標準化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

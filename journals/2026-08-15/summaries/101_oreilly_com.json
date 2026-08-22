@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:20:28.746675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ポストトレーニングの2つの柱：強化学習（RL）と教師あり微調整（SFT）",
+    "url": "https://www.oreilly.com/radar/the-two-pillars-of-post-training-reinforcement-learning-and-supervised-fine-tuning/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模言語モデル（LLM）の挙動を最適化するポストトレーニングの核心である「強化学習（RL）」と「教師あり微調整（SFT）」の仕組み、主要アルゴリズム、およびそれらを組み合わせる重要性を解説した技術記事。",
+    "summaryBody": "この記事は、事前学習後のLLMを実用的なものにするための「ポストトレーニング」の2つの主要なアプローチを詳説しています。強化学習（RL）は、モデルの回答に対して報酬（Reward）を与えることで試行錯誤を通じて学ばせる手法で、PPO、DPO、およびDeepSeekが導入したGRPOといったアルゴリズムの差異や、人間やLLMによる評価（RLAIF）の役割を説明しています。対して教師あり微調整（SFT）は、理想的な回答例を模倣させる手法であり、高品質なデモンストレーションデータや合成データの活用、リジェクションサンプリングの有効性に触れています。結論として、最新のフロンティアモデルは、SFTによる安定した初期学習と、RLによる高度な推論能力や安全性向上の両方を組み合わせた多段階のパイプラインによって構築されていることを強調しています。",
+    "topics": [
+      "Post-training",
+      "Reinforcement Learning (RL)",
+      "Supervised Fine-Tuning (SFT)",
+      "RLHF",
+      "LLM Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "The Two Pillars of Post-training: Reinforcement Learning and Supervised Fine-Tuning"
+  }
+}

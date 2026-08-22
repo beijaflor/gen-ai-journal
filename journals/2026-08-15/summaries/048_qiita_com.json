@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:22:18.965444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント開発環境「Orca」のプラグインを自作してみた",
+    "url": "https://qiita.com/tamakiiii/items/12fd39f66cb095a7fc02",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント開発環境「Orca」において、HTML/JSを用いたサイドバーパネルやバックグラウンドワーカーなどの独自プラグインを開発・導入するための詳細な手順と仕様を解説したチュートリアル。",
+    "summaryBody": "AIエージェント開発プラットフォーム「Orca」のプラグインシステムを開発者の視点から徹底解説しています。ビルドツール不要で、マニフェストファイル（orca-plugin.json）とHTML/JSの2ファイルから始められる最小構成を提示。サイドバーに表示する「パネル」の作成方法を主軸に、厳格なCSPによる制限（外部通信やストレージの不可）、テーマ追従のためのCSS変数、postMessageを用いたホストAPI（通知、ワークスペース情報取得等）との連携手法を詳述しています。実践例として「ブロック崩し」ゲームの実装を通じ、実験的機能であるプラグイン開発の勘所や、Node.jsプロセスとして動作する「ワーカー」の構成についても網羅しています。",
+    "topics": [
+      "Orca",
+      "AIエージェント",
+      "プラグイン開発",
+      "JavaScript",
+      "Qiita"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

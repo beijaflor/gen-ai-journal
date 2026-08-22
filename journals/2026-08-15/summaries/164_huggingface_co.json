@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T04:43:41.046201+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIA Nemotron-3.5-Lightning-30B-A3B-NVFP4: Mamba-2搭載の30BハイブリッドMoEモデル",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAは、Mamba-2とMoEを組み合わせたハイブリッドアーキテクチャを採用し、最大100万トークンのコンテキストに対応した30Bパラメータ（活性3B）の軽量・高速LLMを公開しました。",
+    "summaryBody": "NVIDIAが公開した「Nemotron-3.5-Lightning-30B-A3B-NVFP4」は、総パラメータ数30B（300億）、活性パラメータ数3B（30億）のMixture-of-Experts（MoE）モデルです。最大の特徴は、Mamba-2、MoE、Attention層を組み合わせたハイブリッドアーキテクチャを採用している点にあり、100万トークンの超長文コンテキストウィンドウをサポートします。推論最適化としてNVFP4（4ビット浮動小数点）量子化が施されており、NVIDIA BlackwellやHopper、Ampereアーキテクチャでの高速な動作を実現しています。また、DSparkやDFlashといった高度な投機的デコーディング手法をサポートし、リアルタイム性が求められるエージェントやチャット用途に最適化されています。ベンチマークではMMLU Proで81.62、GPQA Diamondで75.57を記録するなど、同クラスのモデルの中で極めて高い推論能力を示しています。商用利用可能なOpenMDW-1.1ライセンスで提供され、vLLM、TensorRT-LLM、llama.cpp、Ollamaなど主要な推論エンジンで即座に利用可能です。",
+    "topics": [
+      "LLM",
+      "NVIDIA",
+      "Mamba-2",
+      "Mixture-of-Experts",
+      "推論最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    },
+    "originalTitle": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 · Hugging Face"
+  }
+}

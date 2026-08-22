@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:21:55.314725+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "中古サーバ用GPUでローカルLLM環境を作る試算（MI50 / P40 / P100 / V100 / CMP 170HX）",
+    "url": "https://zenn.dev/phpmyadmin/articles/used-server-gpu-local-llm",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "中古のサーバー用GPUを活用し、最新のハイエンドGPUの数分の一のコストでDeepSeek V4-Flash等の巨大モデルを動かすための構成と費用対効果を詳細に比較・試算した記事。",
+    "summaryBody": "データセンターやマイニングで役目を終えた中古GPU（Tesla P100, V100, CMP 170HX等）を活用し、安価にローカルLLM環境を構築するためのシミュレーション記事です。記事では「オフィスワーク用（32GB VRAM）」と「DeepSeek V4-Flash（142GB以上）」の2つの目標を設定し、最新のRTX 5090やDGX Sparkと比較しています。\n\n主な結論として、中古V100（32GB）を使用すればホスト機込みで14万円（RTX 5090構成の約1/7）でオフィス環境が構築可能であり、さらにCMP 170HXを3〜4枚組み合わせることで、数百万円するプロ向け機材の2割以下の予算で巨大なDeepSeekモデルを実用速度で動作させられる可能性を示しています。単なる価格比較に留まらず、メモリ帯域と推論速度の関係、推論エンジン（llama.cpp vs vLLM）によるパフォーマンスの劇的な違い、さらには消費電力による電気代を含めた中長期的なコスト逆転についても論じており、ハードウェア構成を検討する上での極めて実践的なガイドとなっています。",
+    "topics": [
+      "ローカルLLM",
+      "GPU",
+      "自作PC",
+      "DeepSeek",
+      "コストパフォーマンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

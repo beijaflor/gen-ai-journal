@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:30:03.067336+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Us vs. Them: AIと人間の記述箇所をGit履歴から特定するラインレベルの来歴管理ツール",
+    "url": "https://github.com/eighttrigrams/us-vs-them",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Gitのコミット履歴を解析することで、AIエージェントによる自動生成箇所と人間が記述した「聖域」箇所を、マークアップなしに特定・評価するツールです。",
+    "summaryBody": "「Us vs. Them」は、AIエージェントによるコードやドキュメントの編集が普及する中で、どの行が人間によって書かれ、どの行がAIによる生成物なのかを明確にするためのCLIツールおよびライブラリです。Gitの履歴から作成者（オーサー）の情報を抽出し、ファイル内に特別なメタデータを埋め込むことなく、各行の「人間性」を0.0から1.0のスコアで算出します。開発のコンセプトとして、人間が書いたテキストを「聖域（島）」、AIが生成したものを「海」と例え、編集による影響の希釈（dilution）も考慮した高度なプロベナンス（来歴）管理を実現しています。これにより、エージェントが書き換えてはいけない重要なコード範囲をプログラムで認識させることが可能になります。",
+    "topics": [
+      "AI Agents",
+      "Git History",
+      "Provenance",
+      "Code Ownership",
+      "CLI Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "eighttrigrams/us-vs-them: Line-level provenance for text under agentic editing — who wrote this line, us or them? — derived from version history, not from markup in the file."
+  }
+}

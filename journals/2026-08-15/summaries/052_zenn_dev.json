@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:21:22.917440+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code で「ループエンジニアリング」を実践してみた",
+    "url": "https://zenn.dev/tetsu_don/articles/e40b95dfc726ac",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用して「ループエンジニアリング」を実装し、Maker-Checker構成によって自律的なバグ検出・修正フローの有効性を検証した実践レポート。",
+    "summaryBody": "GoogleのAddy Osmani氏が提唱した「ループエンジニアリング（人間がプロンプトを打つ代わりに、エージェントを回すシステムを設計する概念）」をClaude Codeで実践した記録です。実装役（Maker）と検証役（Checker）を分離し、サブエージェント機能を用いて物理的にコンテキストと権限を分けることで、自己採点バイアスを防ぐ設計を採用しています。具体的には、Cloud Loggingのエラーを検知し、仕様書と照らし合わせて「想定内の異常」か「本物のバグ」かを判定、修正から回帰テストまでを完結させています。全角数字をバリデーションで素通りさせてしまうという細かなバグに対し、エージェントが自律的に仕様の齟齬を見つけ、半角限定チェックへの修正とテスト追加までを成功させた事例が紹介されています。AIエージェントに主導権を渡す際の「性質判定の重要性」や「権限制限による役割分担」など、実践的な知見が豊富に含まれています。",
+    "topics": [
+      "Claude Code",
+      "ループエンジニアリング",
+      "AIエージェント",
+      "ソフトウェアテスト",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

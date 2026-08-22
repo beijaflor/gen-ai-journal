@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:16:19.185458+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-2.4T-A95B: 2.4兆パラメータ・95B活性化のQwen3.8-Maxモデル公開",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Qwen3.8-Maxは、2.4Tの総パラメータ（95B活性化）と強制的な推論（Thinking）モードを備え、コーディングやエージェントタスクでGPT-5.6クラスの性能を実現した最新のMoEモデルです。",
+    "summaryBody": "AlibabaのQwenチームから、Qwen-Maxクラスの性能を持つオープンモデル「Qwen3.8-2.4T-A95B」がリリースされました。本モデルは総パラメータ数2.4兆（MoEにより活性化されるのは950億）という巨大なスケールを誇り、Gated DeltaNetとGated Attentionを組み合わせた高度なアーキテクチャを採用しています。\n\n### 主な特徴と技術仕様\n- **Mandatory Thinking:** すべての対話で`&lt;think&gt;`タグによる推論が必須化されており、`reasoning_effort`パラメータ（xhigh, medium, low）で推論の深さを調整可能です。\n- **コンテキスト長:** ネイティブで262,144トークンをサポートし、最大101万トークンまで拡張可能です。\n- **ベンチマーク性能:** Coding Agent (Terminal Bench 2.1) や SWE-bench Pro において、GPT-5.6 SolやClaude Fable 5を凌駕または匹敵する圧倒的な数値を記録しています。\n- **デプロイ:** vLLM、SGLang、TokenSpeedなどの主要な推論フレームワークに対応しており、Transformers経由での直接利用も可能です。\n\nソフトウェアエンジニアリング能力（QwenSWEBench）やエージェントとしての自律的な実行能力が大幅に強化されており、複雑な多段階タスクの完遂に最適化されています。",
+    "topics": [
+      "Qwen3.8",
+      "LLM",
+      "Mixture of Experts",
+      "Reasoning Model",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face"
+  }
+}

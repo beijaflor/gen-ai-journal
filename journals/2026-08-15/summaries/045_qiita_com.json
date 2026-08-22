@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:23:09.391530+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JetBrains Context で Claude と Codex に同じコードベース知識を持たせる",
+    "url": "https://qiita.com/nattogohan123/items/fdeda32ceb783a6c8981",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "JetBrains Contextを活用して、Claude CodeやOpenAI Codexなどの複数AIエージェントに共通のセマンティックインデックスを提供し、コード探索を効率化する方法を解説した記事です。",
+    "summaryBody": "### JetBrains Contextによる高度なコード探索の実現\n\n本記事では、2026年7月に発表された「JetBrains Context」を利用して、複数のコーディングエージェント間でリポジトリ知識を共有する方法について解説しています。JetBrains Contextは、リポジトリを事前に読み込んで「意味（ベクトル）」でコードを探索できる状態にする「リポジトリインテリジェンス層」として機能します。\n\n#### 主な特徴と機能\n- **セマンティック検索**: 文字列の完全一致を求めるgrepとは異なり、自然言語のクエリで「意味が近い」コードの実装箇所を特定できます。\n- **マルチエージェント共有**: Claude Code、OpenAI Codex、Junieなど、複数のACP互換エージェントで同じインデックスを共有可能です。片方のエージェントで行った探索結果を別のエージェントでも活用できます。\n- **クローン不要の検索**: KafkaやSparkなど、主要なOSSリポジトリはJetBrains側で事前インデックスされており、ローカルにクローンすることなく内部構造を検索可能です。\n- **導入効果の分析**: `jbcontext analyze`コマンドにより、過去のセッション履歴からコード探索に費やした時間やコストの削減見込みを試算できます。\n\n#### プライバシーと導入方法\nソースコードそのものではなく、ベクトル化されたコードチャンクやファイルパスのみを保存し、14日間検索されないとデータは自動削除されます。インストールはPowerShellやcURLから数行で完了し、プロジェクト単位またはユーザー単位で適用範囲を選択できます。",
+    "topics": [
+      "JetBrains Context",
+      "Claude Code",
+      "OpenAI Codex",
+      "AIエージェント",
+      "セマンティック検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

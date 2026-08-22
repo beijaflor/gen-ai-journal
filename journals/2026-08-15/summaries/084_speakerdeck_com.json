@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:13:09.122585+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIインフラの最新技術動向2026 (OCP China)",
+    "url": "https://speakerdeck.com/markunet/aiinhuranozui-xin-ji-shu-dong-xiang-2026-ocp-china",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "2026年のOCP Chinaでの議論に基づき、Agentic AIの実運用化が牽引する計算・記憶・給電・冷却・管理の6つの破壊的技術トレンドを網羅的に解説する資料。",
+    "summaryBody": "本レポートは、2026年7月に開催された「OCTS 2026 (OCP China Day)」における最新のAIインフラ動向をまとめたものである。最大のパラダイムシフトは、推論処理から「Agentic AI（自律エージェント）」の実運用への移行である。これにより、インフラ設計は以下の6つの軸で再定義されている。\n\n1. **計算:** GPU中心からCPU-GPU協調へ。エージェントのプランニングやツール実行によりCPU負荷が増大し、数量比が1:1へ近づく。\n2. **記憶:** KV Cacheの爆発的増加がボトルネックとなり、HBM外へのメモリプール化（CXL等）と階層化（SCM/SSD活用）が必須に。\n3. **接続:** 1,000基規模のGPUを収容する「スーパーノード」がラック設計の標準単位となり、XPO等の新世代光インターコネクトが登場。\n4. **電力:** 1ラック1MWという極限の電力需要に対し、54Vから800V高圧直流（HVDC）給電への世代交代が進行。\n5. **冷却:** 空冷の限界（40-50kW）を超え、部品レベルで液冷を前提に設計し直す「ネイティブ液冷」が標準化。\n6. **管理:** 運用管理（RAS API）やファームウェアがOCPの正式領域となり、GW級AIデータセンターの統合運用に向けた標準化が加速している。\n\nこれらの動向は単なる予測ではなく、ByteDanceの大禹2.0やAlibaba Cloudの磐久UMXなど、中国の主要ハイパースケーラーによる実稼働事例に基づいた具体的なロードマップとして提示されている点が極めて重要である。",
+    "topics": [
+      "AIインフラ",
+      "OCP China",
+      "AIエージェント",
+      "液冷",
+      "次世代給電"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 94
+    }
+  }
+}

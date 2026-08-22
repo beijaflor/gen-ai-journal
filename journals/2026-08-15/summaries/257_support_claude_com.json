@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:30:47.461614+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの出力をAIモデルのトレーニングに使用できるか？Anthropicのポリシー解説",
+    "url": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicは、Claudeの出力を競合するAIモデルの開発に使用することを禁止していますが、特定の非競合的なタスク（分類や要約など）への利用は許可しています。",
+    "summaryBody": "Anthropicのヘルプセンターが公開した本記事では、Claudeの生成したコンテンツ（出力）をAIモデルのトレーニングに利用する際のポリシーを明確にしています。ユーザーは自身の入力から生成された出力の所有権を持ちますが、Anthropicの書面による許可なく、競合するAIモデルの開発に出力を利用することは禁止されています。この記事では、制限の主な理由として「安全性の担保」と「商業的保護」を挙げています。Claudeに組み込まれた安全対策は、その出力を利用して独自に訓練されたモデルには引き継がれないため、リスク管理が困難になるためです。一方で、感情分析、要約、情報の抽出、異常検知などの、Anthropicの主要モデルと直接競合しない「特化型ツール」の開発には、出力を活用することが認められています。開発者や企業は、自社の製品機能の強化や社内ワークフローの改善にClaudeの出力を役立てることができますが、汎用チャットボットや自由形式のテキスト生成モデルの学習データとして使用することは規約違反となります。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "AI学習",
+      "利用規約",
+      "モデル蒸留"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Can I use my Outputs to train an AI model?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:40:24.729055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成GPUカーネルの厳格な検証器とBlackwell向けGated-Linear-Recurrence後方パスの実装",
+    "url": "https://arxiv.org/abs/2608.12700",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが生成したGPUカーネルの多くに潜在的な欠陥があることを12の厳格な検証基準で暴き、同時にBlackwell世代向けの高精度な線形再帰カーネルを実現した研究。",
+    "summaryBody": "本論文は、LLMによるGPUカーネル生成の信頼性を根本から見直す「契約級検証器（Contract-Grade Verifier）」を提案しています。現在の標準的なテスト（少数の入力に対する出力値の近似チェック）は極めて緩く、形状変更時の破損や浮動小数点精度の不一致を検知できません。提案された検証器を用いて公開済みカーネル2,638個を監査したところ、39.5%が致命的に破損しており、62.1%に何らかの違反があることが判明しました。さらに、この検証器を活用し、NVIDIA Blackwellアーキテクチャ（tcgen05）をネイティブにサポートしたGated-Linear-Recurrence (GDN) ファミリー向けの後方パスを実装。従来はフォールバック処理に頼っていたステージもカバーし、倍精度オラクルを用いた厳密な正当性検証により、実用的な高性能カーネルとしての品質を担保しています。生成AI時代のカーネル開発における品質管理の重要性と、最新ハードウェア最適化の具体例を提示しています。",
+    "topics": [
+      "GPUカーネル",
+      "LLM生成コード検証",
+      "NVIDIA Blackwell",
+      "Gated-Linear-Recurrence",
+      "低レイヤ最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family"
+  }
+}

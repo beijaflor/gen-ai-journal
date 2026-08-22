@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:17:00.081720+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-2.4T-A95B: 2.4兆パラメータ・95B活性化の次世代MoEモデルが公開",
+    "url": "https://modelscope.cn/models/Qwen/Qwen3.8-2.4T-A95B",
+    "language": "zh",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "アリババのQwenチームが、2.4兆の総パラメータと95Bの活性化パラメータを持つ、コーディングとエージェントタスクに特化した最新のMoEモデル「Qwen3.8-2.4T-A95B」を発表しました。",
+    "summaryBody": "アリババのQwenチームは、最新のオープンモデル「Qwen3.8-2.4T-A95B」をリリースしました。このモデルは総パラメータ数2.4兆、同時活性化パラメータ数95Bという巨大なMixture of Experts (MoE) 構成を採用しています。技術的にはGated DeltaNetとGated Attentionを組み合わせた革新的なレイアウトを持ち、Multi-Token Prediction (MTP) 技術によって訓練されています。コンテキスト長は標準で262,144トークン、最大101万トークンまで拡張可能です。\n\nベンチマークでは、コーディング能力（SWE-bench Pro等）やエージェント実行能力（Terminal Bench等）において、GPT-5.6 SolやClaude 5といった将来の競合モデルに匹敵、あるいは凌駕する性能を示しています。また、本モデルは「思考モード（Thinking Mode）」が強制されており、すべての応答の前に推論過程を出力する仕様です。開発者は`reasoning_effort`パラメータを用いることで、推論の深さと計算コストを制御できます。vLLMやSGLangなどの推論エンジンで即時利用可能です。",
+    "topics": [
+      "Qwen3.8",
+      "LLM",
+      "MoE",
+      "AIエージェント",
+      "コーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "千问3.8-2.4T-A95B · 模型库"
+  }
+}

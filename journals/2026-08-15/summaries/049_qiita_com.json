@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:22:05.758600+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAI Engine「Text-to-Speech」の無償枠(月50リクエスト)、超過後のレートリミットを実際に調べてみた",
+    "url": "https://qiita.com/torifukukaiou/items/518673f87bc789e30184",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "さくらのAI EngineのTTS無償枠（月50回）超過後に適用されるレートリミットの挙動を検証し、ヘッダー指定の60秒を超えた約30分の間隔が必要であることを明らかにしました。",
+    "summaryBody": "さくらのAI Engine「基盤モデル無償プラン」における、Audio speeches (TTS) の利用制限に関する実証レポートです。月間50リクエストの無償枠を使い切った後、システムは「429 Too Many Requests」を返し、レスポンスヘッダーには `retry-after: 60`（60秒後の再試行）が記録されます。しかし、筆者が実際に検証したところ、指定通りの60秒〜120秒程度の待機では不十分であり、安定してリクエストを成功させるには約30分以上の間隔を空ける必要があることが分かりました。本記事では「ずんだもん」モデルを利用した具体的なcurlコマンド例や、Claude Codeとの連携による調査手法、日常的な目覚まし運用での成功例を交えて解説されています。",
+    "topics": [
+      "さくらのAI Engine",
+      "TTS",
+      "レートリミット",
+      "API検証",
+      "ずんだもん"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 82
+    }
+  }
+}

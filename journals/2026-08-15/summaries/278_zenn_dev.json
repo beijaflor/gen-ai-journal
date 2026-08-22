@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:25:36.408267+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに「同じ指摘を二度させない」仕組みをhookで自作する",
+    "url": "https://zenn.dev/nozomi720/articles/claude_code_hooks_feedback",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのhook機能を活用し、AIへの指摘事項をファイル化して違反回数に応じた段階的な制約（警告・確認・禁止）を自動適用する仕組みの解説。",
+    "summaryBody": "Claude Codeにおける「同じ指摘を繰り返す」ストレスを解消するため、独自のhookシステムを構築した事例記事です。指摘内容をMarkdownファイルとして永続化し、指摘回数（count）に応じてhookの強制力を段階的に引き上げる仕組み（warn → ask → deny）を導入しています。\n\n具体的には以下の3つのhookを組み合わせています：\n1. **UserPromptSubmit**: 確定したルールをコンテキストに自動注入。\n2. **PreToolUse**: ツール実行前にルールの違反を検知し、必要に応じてブロック。\n3. **Stop**: 完了時に特定条件（GitHub ActionsのSHAピン留め等）を満たしているか最終チェック。\n\nまた、正規表現による誤検知への対策や、コンテキスト圧迫を防ぐための優先度付きルール要約、hook自体のバグで作業を停止させないための例外処理など、実用的な設計の工夫が詳しく解説されています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "Python",
+      "Automation",
+      "TDD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

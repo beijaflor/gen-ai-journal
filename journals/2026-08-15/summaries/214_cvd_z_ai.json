@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:40:51.866309+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Z.ai Security 脆弱性公開台帳：平均26.6年間潜伏する既知・未知の脆弱性統計",
+    "url": "https://cvd.z.ai/",
+    "language": "zh",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Z.ai Securityが公開した統計データによれば、2,436件の脆弱性の平均潜伏期間は26.6年に及び、最古のものは1981年から存在しています。",
+    "summaryBody": "Z.ai Securityが発表した「披露账本（公開台帳）」の統計データによると、現在までに2,436件の脆弱性が収録されており、そのうち2,383件は依然として未公開の状態にあります。特筆すべき点は脆弱性の「潜伏期間」で、発見されるまで平均26.6年、最長で1981年から45年間にわたり存在し続けていたことが判明しました。これらには107件の緊急（Critical）、990件の高（High）リスク脆弱性が含まれ、Linuxカーネル、FreeBSD、WebKit、GStreamerといった主要なオープンソースプロジェクト269件に影響を及ぼしています。具体的な事例として、11年間潜伏していたLinux 6lowpanのUse-after-freeや、Apple SafariのWebKitにおけるメモリ処理の欠陥などが報告されています。",
+    "topics": [
+      "脆弱性統計",
+      "サイバーセキュリティ",
+      "オープンソース",
+      "ゼロデイ",
+      "レガシーコード"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": "Z.ai Security 披露账本总览"
+  }
+}

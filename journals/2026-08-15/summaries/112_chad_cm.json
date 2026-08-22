@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:17:30.488002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Chad ArimuraによるAIエージェント・スタックの構築：6体のエージェントとNostr/Obsidianによる業務自動化",
+    "url": "https://chad.cm/posts/2026-8-11-my-agent-setup",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Chad Arimura氏が、6体の特化型AIエージェントを、ObsidianのナレッジベースやNostrベースの通信ツール「Buzz」と連携させて構築した、個人開発をスケールさせるための自律型チーム構成を公開しています。",
+    "summaryBody": "この記事では、複数のプロダクトや非営利活動を最小限の人数で運営するために構築された、6体のAIエージェントによる「仮想スタッフ」体制が解説されています。事務(ea)、運用(ops)、開発(dev)、マーケティング(gtm)、調査(research)、インフラ管理(vps)と役割を分担させ、最小権限の原則に基づいた設計がなされています。\n\n技術スタックとしては、OpenAIのGPT-5.6 Sol/Terraをモデルに使用し、DigitalOcean上のDropletでホスト。エージェントの「記憶」や「業務マニュアル」としてObsidianを、エージェント間の通信と人間からの指示のインターフェースとしてNostrプロトコルを採用したオープンソースの「Buzz」を活用しています。Sentryのアラート対応やLinearのタスク管理、日報生成など、具体的なワークフローが構築されており、特定のAIベンダーへの依存を避けつつ、ポータビリティと自律性を重視したアーキテクチャが特徴です。",
+    "topics": [
+      "AIエージェント",
+      "Nostr",
+      "Obsidian",
+      "自律型エージェント",
+      "LLMスタック"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "My agent setup"
+  }
+}

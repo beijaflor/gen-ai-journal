@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:27:04.102376+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIテキスト電子透かしの仕組み：ビジュアルガイド",
+    "url": "https://declaude.org/watermarking/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するテキストに不可視の統計的パターンを埋め込む「電子透かし」の技術的原理と、その検出・除去の仕組みを視覚的に解説。",
+    "summaryBody": "GoogleのGeminiやAnthropicのClaudeなどで採用されているAIテキスト電子透かしの仕組みを解説したガイド。テキストにはピクセルやメタデータが存在しないため、透かしは「単語選択の確率」に埋め込まれます。\n\n### 主な仕組み\n1. **単語選択の操作**: モデルが次の単語を選ぶ際、秘密鍵を用いて候補を「赤」と「緑」のグループにランダムに分け、内容を損なわない範囲で「緑」の単語を優先的に選択させます。\n2. **統計的検出**: 秘密鍵を持つ者は、テキスト内の「緑」の単語の出現頻度を確認し、それが偶然（コイン投げ）の結果か、意図的な偏りかを判定します。\n3. **編集の影響**: 透かしは前後の単語の連なりに依存するため、コピー＆ペーストや軽微な修正では消えませんが、意味を維持したまま文章を根本から書き換える（Re-composition）ことで除去可能です。\n\n### 留意点\n- **プライバシー**: 検出にはプロバイダーの秘密鍵が必要であり、一般的なAIチェッカー（GPTZero等）とは原理が異なります。\n- **限界**: 文脈の選択肢が少ない短文やコード、事実の羅列などには透かしを埋め込む「遊び」が少ないため、効果が限定的になります。",
+    "topics": [
+      "AI Watermarking",
+      "Large Language Models",
+      "SynthID",
+      "Claude",
+      "Generative AI Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "How AI text watermarking works: a visual guide"
+  }
+}

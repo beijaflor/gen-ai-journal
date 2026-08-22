@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:15:27.540330+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Beads でタスク進行管理はどこまで自動化できるか確かめた",
+    "url": "https://dev.classmethod.jp/articles/beads-agent-state-management-automation-scope/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェント向け課題管理ツール「Beads」を導入し、開発セッションの状態復元の自動化と運用上の課題、改善策を検証したレポート。",
+    "summaryBody": "AIエージェントとの協調開発における「引き継ぎドキュメント（HANDOFF.md等）の管理」や「コンパクション（文脈要約）による情報の欠落」という課題に対し、エージェント専用の課題管理ツール**Beads**を用いた検証結果がまとめられています。検証では、セッション開始時の状態復元は自動化に成功したものの、タスク完了などの状態更新はエージェントが自律的に行わないという限界が示されました。これに対し、事実確定時の即時記録、記録を促すフックの導入、情報の記録先（永続メモリ）の厳密化といった具体的な解決策を提示し、AIとの「状態管理」のあり方を考察しています。",
+    "topics": [
+      "Beads",
+      "AIコーディングエージェント",
+      "Claude Code",
+      "タスク管理",
+      "状態管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

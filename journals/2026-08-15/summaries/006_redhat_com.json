@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:33:32.889722+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CPUの逆襲：LLM推論におけるCPUとGPUの役割分担を再考する",
+    "url": "https://www.redhat.com/en/blog/cpu-back-rethinking-cpu-gpu-split-llm-inference",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エージェント型AIの台頭に伴い、オーケストレーションやツール実行に適したCPUの重要性が再評価されており、推論インフラの比重が従来のGPU中心からCPUへと大きくシフトしています。",
+    "summaryBody": "LLM推論においてGPUが主役であった時代が変わりつつあります。本記事は、エージェント型AIや推論ワークロードの進化に伴い、CPUが果たす役割が劇的に拡大している背景を解説しています。主な要因として、エージェント型システムにおける「ツール呼び出し」や「推論ループ」の制御といったロジック処理がエンドツーエンドのレイテンシの50〜90%を占めることが挙げられます。Intelのデータによれば、CPU:GPUの比率は従来の1:8から、エージェント型ワークロードでは1:1にまで近づいています。\n\nさらに、プライバシー、コスト、ネットワーク遅延の制約から、エッジ環境での小規模言語モデル（SLM）の利用が増加しており、既存のCPUインフラを活用した推論が経済的な解となっています。NVIDIAの「Vera CPU」やArmの「AGI CPU」の登場、さらにはvLLMのようなソフトウェアスタックでのCPU最適化（AVX-512やAMXの活用）がこの流れを後押ししています。推論が単一のモデル実行から「思考と行動のループ」へと進化したことで、CPUはAIシステムの司令塔として再び重要性を増しています。",
+    "topics": [
+      "LLM推論",
+      "エージェント型AI",
+      "CPU最適化",
+      "vLLM",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "The CPU is back: Rethinking the CPU-GPU split for LLM inference"
+  }
+}

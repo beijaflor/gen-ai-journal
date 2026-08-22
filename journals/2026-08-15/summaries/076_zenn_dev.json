@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:14:56.428433+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "あの --- は、いつのまにか AI エージェントの入り口になっていた",
+    "url": "https://zenn.dev/awesome_kou/articles/7a5bb472fcdfa8",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "ブログでおなじみのFront Matter（---）が、AIエージェントの時代において人間向けのメタデータから「AIがスキルを起動するためのスイッチ」へと役割を変容させている背景を解説。",
+    "summaryBody": "静的サイトジェネレーターやZennでおなじみのYAML形式のメタデータ記述「Front Matter」が、AIエージェント開発において新たな役割を担い始めています。かつては人間が記事を整理・検索するための補助情報だったものが、Claude Codeなどのエージェント環境では、スキルの起動条件をAI自身が判断するための「名札」として機能しています。本記事では、この役割の変化を「人間が探すため」から「AIが選ぶため」へのシフトと定義し、トークン節約の観点からメタデータのみを先に読み込む設計の合理性を説明しています。また、OpenAI CodexのAGENTS.mdが採用するディレクトリ構造によるスコープ管理との比較や、AIに正しくスキルを選択させるための効果的なdescription（何をするか＋いつ使うか）の書き方など、開発者にとって実践的な洞察が提供されています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Front Matter",
+      "YAML",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

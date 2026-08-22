@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-11T16:28:45.678094+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "unYOLO - AIエージェント向け認証情報ブローカーおよびプロキシ構築用フレームワーク",
+    "url": "https://unyolo.io/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに直接認証情報を渡さず、ポリシーに基づく制限と人間による承認フローを介してGitHub等の操作を安全に代行させるためのセキュリティフレームワーク。",
+    "summaryBody": "unYOLOは、GitHubやHugging Faceといった外部サービスをAIエージェントが利用する際に、認証情報を安全に管理するためのブローカー構築フレームワークです。エージェント自身に強力なトークンを持たせるのではなく、ブローカーを介在させることで「認証情報の境界」を構築します。\n\n主な機能と特徴は以下の通りです：\n1. **ポリシーベースの制御**: JSON形式のルールファイルで、エージェントが実行可能な操作（特定のブランチへのプッシュのみ許可など）を厳密に定義できます。\n2. **人間による承認フロー**: リスクの高い操作に対して、人間がTelegramや専用インターフェースを介してリアルタイムで承認・拒否を行える仕組みを提供します。\n3. **既存ツールの提供**: `gh-broker`（GitHub）、`hf-broker`（Hugging Face）、`sudo-broker`（Unixコマンド実行）が同梱されており、すぐに導入可能です。\n4. **カスタム拡張性**: Go言語ベースのフレームワークを使用して、独自の社内APIやクラウドサービス向けのカスタムブローカーを構築できます。\n\nこれにより、エージェントの誤操作や暴走によるアカウント全体の侵害リスクを大幅に低減しつつ、自律的なワークフローを実現します。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティ",
+      "認証情報管理",
+      "GitHub",
+      "LLMアプリケーション開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "unYOLO"
+  }
+}

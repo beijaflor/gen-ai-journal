@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:32:41.750597+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude RoutinesとAgent Tracingを活用したAIエージェントの自動トリアージ",
+    "url": "https://blog.sentry.io/claude-routines-agent-triage/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "SentryがAIエージェント「Seer」の運用において、Claude RoutinesとSentry MCPを組み合わせ、ログ分析から不具合のチケット起票までを自動化したワークフローの解説。",
+    "summaryBody": "Sentryの開発チームが、自社のAIエージェント「Seer」の信頼性を向上させるために構築した自動トリアージシステムについて紹介しています。従来、エージェントのトレース解析は手動で行われており、ツール呼び出しのエラーやハルシネーションの特定に多大な労力を要していました。これを解決するため、AnthropicのClaude RoutinesとSentryのMCP（Model Context Protocol）サーバーを連携。毎朝Claudeが自動で前夜の会話ログをクエリし、ツールエラーの集計、異常なレイテンシの特定、そして「成功したと見なされる会話」の論理的整合性をサンプリングしてチェックします。この仕組みにより、リポジトリ名の推測ミスによるエラーなどを早期に発見し、即日修正可能なフィードバックループを実現しました。LLMにはデータ取得ロジックではなく「判断」に集中させるプロンプト設計が成功の鍵となっています。",
+    "topics": [
+      "AIエージェント",
+      "LLM Observability",
+      "Claude Routines",
+      "Sentry",
+      "MCP (Model Context Protocol)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Automated agent triage with Agent Tracing and Claude Routines"
+  }
+}

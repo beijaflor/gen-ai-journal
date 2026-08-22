@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:14:30.656591+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM生成によるとみられる多数の虚偽CVE登録についてまとめてみた",
+    "url": "https://piyolog.hatenadiary.jp/entry/2026/08/13/073841",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "GitHubの特定アカウントがLLMで生成したとみられる大量の虚偽脆弱性（CVE）を申請し、SQLite開発者やMITREを巻き込む混乱を招いた事案の詳細と現状のまとめ。",
+    "summaryBody": "2026年7月末、GitHubアカウント「programmervuln」が公開したSQLite等に関する虚偽の脆弱性アドバイザリが、CVEとして正式登録され、NVDやGitHub Advisory Database等に取り込まれる事案が発生しました。JFrog等の調査により、これらは存在しない関数の参照や矛盾したコード引用を含む、LLMによる「スロップ（捏造されたゴミ情報）」であると結論付けられています。\n\n事案の背景には、MITREの「CNA of Last Resort」制度が性善説に基づいて運用されており、実効性のある検証プロセスを欠いているという構造的課題があります。SQLite開発チームはMITREからの接触が一切なかったことを証言しており、自動化された脆弱性管理ツールを利用する組織において、こうした虚偽CVEが不要なインシデント対応負荷（アラート疲れ）を招くリスクが浮き彫りになりました。MITREは該当のCVEをREJECTED（却下）としましたが、一部のデータベースでは依然として深刻度が「Critical」のまま残存しているなどの課題も指摘されています。",
+    "topics": [
+      "CVE",
+      "LLM",
+      "脆弱性管理",
+      "SQLite",
+      "MITRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

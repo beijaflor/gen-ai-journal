@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-19T05:40:10.133226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeセッションの価値を最大化する方法",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeにおけるトークン効率を高めるためのプロンプトキャッシュの仕組みと、コストを抑えつつ開発速度を上げるための具体的な運用テクニックの解説。",
+    "summaryBody": "Anthropicが提供するエージェント型コーディングツール「Claude Code」において、トークン消費を最適化し、セッションのパフォーマンスを最大化するためのガイドです。効率の鍵は「プロンプトキャッシュ」の理解にあり、キャッシュのヒット率を高めることで入力コストを10分の1に抑えることができます。記事では、タスク間の `/clear` 実行による不要なコンテキストの削除、ファイル参照時の `@-mention` 利用によるReadコールの削減、ノイズの多いコマンド実行時のサブエージェント活用など、具体的で実践的なベストプラクティスが紹介されています。また、モデルやエフォートレベルの変更がキャッシュを破棄するタイミングについても詳しく説明されており、開発者が意図せずコストを増大させるのを防ぐための指針となっています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "プロンプトキャッシュ",
+      "コスト最適化",
+      "AIコーディングツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Maximizing the value of your Claude Code sessions"
+  }
+}

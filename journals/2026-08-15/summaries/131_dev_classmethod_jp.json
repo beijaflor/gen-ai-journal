@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:11:50.261191+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの新機能「クロスセッションメッセージング機能」を試してみた",
+    "url": "https://dev.classmethod.jp/articles/claude-code-cross-session-messaging/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code v2.1.224で導入された、異なるターミナルセッション間でClaude同士が情報をやり取りできる「クロスセッションメッセージング機能」の挙動を詳しく検証した技術記事。",
+    "summaryBody": "Claude Code v2.1.224でデフォルト有効化された新機能「クロスセッションメッセージング（Cross-session messaging）」の動作検証レポートです。この機能により、同じマシン上あるいはRemote Control経由の別マシンで動作するClaudeセッション間で、`ListAgents`や`SendMessage`ツールを用いてテキストメッセージを直接やり取りできるようになります。記事では、同一リポジトリでの2セッション間の相互認識、特定のセッションへの明示的・自律的なメッセージ送信、および受信側の制御（accept/hold/refuse）を検証しています。また、Amazon Bedrock環境では現時点で機能自体が提供されていない点や、ヘッドレスモードでの常駐受信に関する制限事項など、実運用上の注意点も整理されています。セッション間の文脈を人間が橋渡しする手間を省く、効率的な開発ワークフローの可能性を示唆しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "クロスセッションメッセージング",
+      "DevelopersIO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

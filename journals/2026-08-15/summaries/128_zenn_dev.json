@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-13T05:12:42.647940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェント（Cursor / Claude Code）をクラウド版で動かしてみた（2026年8月版）",
+    "url": "https://zenn.dev/satoshi_tech/articles/20260811-zenn-article-cloud-agents",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cursor Cloud AgentsとClaude Code on the webを比較し、隔離VM上での自走型コーディングのセットアップ方法や実戦での使い分けを解説した実践レポート。",
+    "summaryBody": "この記事では、2026年8月時点における2つの主要なクラウド型コーディングエージェント、Cursor Cloud AgentsとClaude Code on the webの使用体験を比較しています。主な知見として、CursorはUI・セットアップの動線が洗練されており、個人開発におけるPR作成までの自走において安定性が高いことが挙げられています。一方で、Claude Code on the webは現時点で『research preview』という位置付けであり、セットアップスクリプトの調整やサイレントなフォールバック、GitHub認証の仕様など、実運用における特有の『落とし穴』が多いことが指摘されています。クラウド実行のメリットとして、PCを閉じても作業が継続できる点を強調しつつ、ローカル実行（設計議論・実機確認）とクラウド実行（まとまった実装・PR作成）の適切な使い分けを提案しています。また、エージェントがGitHub Issueの本文を直接読み取れない制約など、サンドボックス環境特有の権限仕様についても具体的に解説されています。",
+    "topics": [
+      "Cursor",
+      "Claude Code",
+      "AIコーディング",
+      "GitHub",
+      "クラウド開発環境"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 75,
+      "overall": 90
+    }
+  }
+}
