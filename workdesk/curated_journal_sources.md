@@ -27,6 +27,7 @@
 
 - [ ] 215. https://www.anthropic.com/news/claude-text-watermark
 - [ ] 187. https://www.techno-edge.net/article/2026/08/11/5382.html
+- [ ] 140. https://zenn.dev/hellorusk/articles/3328866ca9e922
 - [ ] 258. https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/
 - [ ] 264. https://www.seangoedecke.com/text-ai-watermarks/
 

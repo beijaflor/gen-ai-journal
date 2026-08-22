@@ -135,7 +135,6 @@
 - [x] 143. https://qiita.com/haystacker/items/376d86bcbeefc3885183
 - [x] 142. https://tech-blog.rakus.co.jp/entry/20260812/ai
 - [x] 141. https://forest.watch.impress.co.jp/docs/news/2132154.html
-- [x] 140. https://zenn.dev/hellorusk/articles/3328866ca9e922
 - [x] 139. https://www.anthropic.com/research/riemann-zeta
 - [x] 138. https://www.theguardian.com/technology/2026/aug/06/students-ai-cheating-schools-denmark
 - [x] 137. https://ai.watch.impress.co.jp/docs/news/2132067.html
