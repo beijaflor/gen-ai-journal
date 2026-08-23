@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:09:33.822938+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HeyGenとGoogle CloudによるAvatar IVのTPU最適化：1.86倍の高速化を実現",
+    "url": "https://developers.googleblog.com/heygen-x-google-cloud-bringing-avatar-iv-to-tpus/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "HeyGenがGoogle Cloudと協力し、180億パラメータの動画生成モデル「Avatar IV」をTPU v6eに移植、独自のカーネル最適化により画質を維持しつつ1.86倍の高速化と25%のコスト効率向上を達成した。",
+    "summaryBody": "### 概要\nHeyGenとGoogle CloudのAIインフラ最適化チームは、動画生成AI「Avatar IV」を最新のTPU（Trillium v6e）へ移植し、大幅なパフォーマンス向上を実現しました。既存のGPU向けPyTorchコードを`torchax`（JAX上のフロントエンド）を介してXLAコンパイラに統合し、1.86倍の高速化を達成しています。\n\n### 主な最適化手法\n1.  **集団通信のパイプライン化**: Ulysses並列化におけるAll-to-All通信をグループ化し、アテンション演算の裏で非同期に実行することで、通信コストを計算流の中に隠蔽しました。\n2.  **スパース・アテンションのマスク削除**: ブロックサイズをフレーム境界に整列（アライメント）させることで、複雑なマスク処理やパディングを不要にし、カーネルの実行効率を理論限界の86%まで高めました。\n3.  **Softmaxの直列依存性の解消**: Cauchy-Schwarz不等式を用いて事前に上限値を計算する手法を導入。Online Softmaxに特有の逐次的な再スケーリング処理を排除し、並列実行を可能にしました。\n\n### 成果と品質管理\nこの最適化により、8台のH100構成に匹敵するストリーミング性能を、25%優れたコスト効率で提供可能になりました。また、出力ビデオがビット単位で一致するか、あるいは許容される類似性範囲内にあるかを検証する厳格な「品質ゲート」を設けることで、画質を犠牲にしない高速化を担保しています。",
+    "topics": [
+      "TPU",
+      "HeyGen",
+      "Google Cloud",
+      "Performance Optimization",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "HeyGen x Google Cloud: Bringing Avatar IV to TPUs"
+  }
+}

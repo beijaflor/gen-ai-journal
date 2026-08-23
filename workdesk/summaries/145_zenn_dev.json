@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:42:51.531590+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが吐いたHTMLとMarkdownを「見たまま」直せるエディタを作った話",
+    "url": "https://zenn.dev/genshi_ai/articles/cfa3ab74646b39",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIが生成したHTMLやMarkdownを、コードを意識せず直感的に編集・パッケージ化できるデスクトップエディタ「Velq」の開発経緯と技術的な工夫の解説。",
+    "summaryBody": "元医師のエンジニアが開発した、MarkdownとHTMLのWYSIWYGエディタ「Velq」の紹介記事です。AI（ChatGPTやClaude）が出力する資料を、VS Code等のエディタを開かずに直接修正したいという課題を解決します。最大の特徴は、画像やCSSなどの依存リソースを1つのファイルにまとめる独自形式「.velq」（実体はZIP）により、リンク切れを防ぎつつ共有を容易にした点です。技術面ではTauri v2とRustを採用しており、DOMの変更を元のソースコードに1バイト単位で正確に書き戻す「TextRun」マッピングロジックや、Rustでのマルチバイト文字スライスによるパニックの回避、WKWebView（macOS）特有のCSP制約への対処など、デスクトップアプリ開発における深い知見が共有されています。",
+    "topics": [
+      "Tauri",
+      "Rust",
+      "WYSIWYG",
+      "Markdown",
+      "開発秘話"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

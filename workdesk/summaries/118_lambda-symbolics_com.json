@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:49:41.928155+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Autolith: Common Lispベースのライブランタイムを備えたプログラミングエージェント",
+    "url": "https://www.lambda-symbolics.com/autolith",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Common Lispのライブランタイムを活用し、大規模な文脈の処理や自己修復機能を備えた、ターミナル完結型の高度なプログラミングエージェント。",
+    "summaryBody": "Autolithは、Common Lisp（SBCL）の強力なライブデバッグ・イントロスペクション機能を最大限に活用した、リポジトリ作業に特化型のAIプログラミングエージェントです。\n\n主な特徴は以下の通りです：\n1. **ライブランタイムの統合**: エージェント自身が動作しているSBCL環境を直接検査・拡張・修正でき、実行中のコードを即座に更新・検証可能です。\n2. **大規模文脈の処理 (Recursive Inference)**: モデルのコンテキストウィンドウを超える膨大なソースコードに対し、スライス化や検索を組み合わせた再帰的推論を行うことで、LLMの制限に縛られずプロジェクト全体を把握した回答を実現します。\n3. **状態管理と継続性**: 会話ログ、メモリ（事実・設定）、アジェンダ（タスク管理）、そして「プライベートイメージコミット」と呼ばれる実行環境の変更記録を個別に管理。これにより、プロセスの再起動やクラッシュからの確実な復旧が可能です。\n4. **開発ワークフローの最適化**: ターミナル内で動作し、ファイル操作、シェル実行、Rust製ライブラリによる高速な検索をシームレスに統合しています。\n\n単なるLLMのラッパーではなく、Lispの伝統的な対話型開発手法を現代のAIエージェントに融合させた、極めて実用的かつユニークなアーキテクチャを持つツールです。",
+    "topics": [
+      "Common Lisp",
+      "AI Agent",
+      "SBCL",
+      "LLM",
+      "Software Development Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Autolith: a Common Lisp programming agent · Lambda Symbolics OÜ"
+  }
+}

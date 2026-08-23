@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:04:40.930572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LittleLearner: 教育的に制御された知識露出下における言語モデル",
+    "url": "https://littlelearner-ll.github.io/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "米国小学校5年生までの学習範囲に限定したデータでLLMを訓練し、事前学習データの境界がモデルの能力の「天井」を決定することを明らかにした研究。",
+    "summaryBody": "現代のLLMは膨大なデータセットで一括学習されるため、特定の能力が学習によって得られたのか、単に既存知識が引き出されただけなのかの区別が困難である。本研究では、FineWeb-Eduから抽出した88BトークンのK-5（小学5年生以下）カリキュラム限定データ「LittleCurriculum」を構築し、0.6Bから5B規模のモデルをゼロから訓練した。実験の結果、モデルサイズのスケーリング、GRPOによる事後学習、コンテキスト内学習（ICL）のいずれも、事前学習に含まれる知識を増幅させる効果はあるものの、学習範囲外の高度な能力（中学レベル以上の知識等）を習得させることはできないことが判明した。これは、事前学習データのフィルタリングがモデルの能力の絶対的な上限を規定することを示唆している。本プロジェクトは、知識獲得プロセスや継続学習のベンチマークとして有用なオープンソースのサンドボックスを提供している。",
+    "topics": [
+      "LLM",
+      "事前学習",
+      "教育工学",
+      "知識獲得",
+      "スケーリング則"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "LittleLearner: Language Models Under Pedagogically-Controlled Knowledge Exposure"
+  }
+}

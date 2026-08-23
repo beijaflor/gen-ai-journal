@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:12:07.752478+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実践におけるプリンシパル・ドリフト：AI主導のSDLCにおける認知負債の克服",
+    "url": "https://www.oreilly.com/radar/principal-drift-in-practice/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成の急増が招く「認知負債」と、人間がシステムの制御と理解を失う「プリンシパル・ドリフト」のリスクを警告し、リスクベースのタスクルーティングによる新たなガバナンス手法を提案する。",
+    "summaryBody": "AIエージェントによるコード生成が「無料」に近いコストで可能になった結果、開発現場ではシステムの複雑さがチームの理解力を上回る「認知負債」が急増しています。本記事では、2026年という近未来の視点から、AI生成コードに起因する本番障害の増加や、エンジニアがアーキテクチャの制御を失う「プリンシパル・ドリフト」の危険性を詳述しています。\n\nこの課題に対し、著者は「タスクルーティング」フレームワークを提唱しています。これは、セキュリティやデータ整合性に直結する変更（Tier 1）には人間による厳密なレビューと理解を義務付け、それ以外（Tier 2）にはシステムによる検査を割り当てる手法です。また、コードを生成したエージェントに自らレビューをさせない「作成者と査読者の分離」や、AIにコードの意図を解説させる「リテレート解説」、挙動を可視化するツールの活用など、人間のエピステミック・エージェンシー（認識的主体性）を維持するための具体的な戦術が示されています。\n\n最終的に、このガバナンスの構築は現場レベルではなく、CTOやエンジニアリング幹部が主導すべき戦略的イニシアチブであり、CI/CDによる強制力や評価制度との連動が必要であると結論付けています。",
+    "topics": [
+      "AI Engineering",
+      "SDLC",
+      "Cognitive Debt",
+      "Software Governance",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Principal Drift in Practice"
+  }
+}

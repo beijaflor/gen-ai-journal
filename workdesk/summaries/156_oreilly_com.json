@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:09:18.396510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プロンプト負債と「重みとの戦い」：AI開発における新たな技術的負債",
+    "url": "https://www.oreilly.com/radar/prompt-debt-and-fighting-the-weights/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "プロンプト負債（Prompt Debt）とは、モデルのデフォルト挙動を制御するための場当たり的な指示の蓄積であり、開発の柔軟性低下やモデル移行の障壁となる技術的負債の一種である。",
+    "summaryBody": "Tim O'Reilly氏が、Drew Breunig氏との対話を通じて「プロンプト負債（Prompt Debt）」という概念を解説しています。これは、LLMの学習バイアス（重み）に対抗して期待通りの挙動をさせるために、プロンプト内に追加された複雑なルールや繰り返しの指示が蓄積することを指します。この負債は、開発の反復速度を低下させ、プロンプトの属人化を招くだけでなく、特定のモデルに最適化されすぎるために最新モデルへのアップグレードを困難にする「モデル・ロックイン」を引き起こします。また、AI企業がモデルに標準的な挙動を学習させることで、出力が平均化され創造性が失われる「モノカルチャー化」のリスクも指摘されています。対策として、プロンプトを「文章」ではなく「計測可能なタスク定義」として扱うDSPyのような手法や、タスクの分解（Decomposition）、そしてモデルのデフォルトから意図的に逸脱させる人間の役割の重要性が説かれています。",
+    "topics": [
+      "Prompt Engineering",
+      "Technical Debt",
+      "LLM",
+      "DSPy",
+      "Context Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Prompt Debt and “Fighting the Weights” – O’Reilly"
+  }
+}

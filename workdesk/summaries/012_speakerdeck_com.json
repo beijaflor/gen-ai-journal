@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:16:00.245010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの出力を\"いい感じに\"する技術 / Taming LLM Output: AI Agent Design Patterns with FastAPI",
+    "url": "https://speakerdeck.com/shinyorke/taming-llm-output-ai-agent-design-patterns-with-fastapi",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMアプリ特有の「遅さ」と「不安定さ」を、SSEによるセクション配信と『減らす・縛る・守る』の設計パターンで解決する実用的な開発手法の解説。",
+    "summaryBody": "PyCon JP 2026での発表資料で、野球解説AI Agent「The Scouter 3」の開発事例を基に、LLMをプロダクトに組み込む際の設計知見を共有しています。主な解決策として、1)レスポンスの遅さを改善するために、計算済みStatsを先出しし、AIレポートをSSEでセクション単位で逐次配信する設計、2)出力の不安定さを克服するために、計算をPythonに任せる（減らす）、プロンプトを仕様書として書く（縛る）、出口でパースと型定義を行う（守る）という3つのステップを提唱しています。また、LangChain等のフレームワークは最初から導入せず、マルチモデル対応やAgentの高度化が必要になった時点で検討すべきという実利的な技術選定の考え方も示されています。",
+    "topics": [
+      "LLM",
+      "FastAPI",
+      "AI Agent",
+      "Python",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

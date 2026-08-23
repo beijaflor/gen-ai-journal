@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:05:05.389789+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "25万行を超えるレガシー気象シミュレーションコードにおける検証中心のAI支援GPU移植",
+    "url": "https://arxiv.org/abs/2608.13122",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを活用し、25万行のレガシーFortranコードを科学的妥当性を維持しつつGPUへ移植する、数値検証を核としたワークフローを提案。",
+    "summaryBody": "### 概要\\n本研究は、25万行を超える巨大なレガシーFortranコード（気象シミュレーションモデル CReSS）を対象に、AIエージェントを用いてGPU環境へ移植する手法を提案している。科学計算において最重要となる「計算結果の妥当性」を確保するため、検証プロセスをワークフローの中心に据えている点が特徴である。\\n\\n### 手法とプロセス\\nAIエージェントが既存のOpenMP領域を特定し、特定の物理状態からダンプデータを用いた単体ベンチマークを自動生成する。その後、AIがOpenACC変換を適用し、生成されたコードと元のコードの実行結果を要素レベルで比較検証する。この自動化されたループにより、大規模コードの移植に伴う人的コストとエラーを削減する。\\n\\n### 成果と知見\\n台風シミュレーションの実例において、162個のカーネルを数値的に検証しつつ移植し、アプリケーション全体で5.1倍の高速化を達成した。また、浮動小数点演算や組み込み関数の差異に起因する5つの数値的不一致を検出し、開発者へのフィードバックを可能にした。AI支援移植の成功には、単なるコード生成能力だけでなく、実行状態の再構成や厳密な検証を統合したワークフロー設計が不可欠であることを示唆している。",
+    "topics": [
+      "HPC",
+      "GPU Porting",
+      "AI Agent",
+      "Fortran",
+      "Weather Simulation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Validation-Centric AI-Assisted GPU Porting of a 250,000+ Line Legacy Weather Simulation Code"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:44:13.485626+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の hook で作る「書いたら直る」ループ — 日本語明晰化プラグインを題材に",
+    "url": "https://zenn.dev/bamboo_nova/articles/ee2fbc5daf4f45",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのhook機能を活用し、textlintによる自動検出とLLMによる修正を組み合わせた、日本語ドキュメントの品質向上フィードバックループの設計手法を解説。",
+    "summaryBody": "Claude Codeの`PostToolUse` hookを利用して、Markdownの記述内容を自動で検査・修正させるワークフローの構築方法を解説しています。主な構成は以下の通りです。\n\n### 1. hookによる強制フィードバック\n`PostToolUse`で`decision: \"block\"`を返すことで、モデルの判断を介さず「修正が必要である」という事実を確実にモデルへ届け、修正ループを回します。\n\n### 2. 検出と修正の分離設計\n検出（いつ直すか）は決定論的なtextlintが行い、修正（どう直すか）は文脈を考慮できるClaude本体（meisekiスキル）が担当する役割分担を採用。これにより、hook内で再度LLMを呼ぶコストと再帰の複雑さを回避しています。\n\n### 3. 実装の安全弁と運用\n無限ループを防ぐための回数制限、オフライン時などのフェイルオープン設計、環境変数による脱出ハッチなど、自動化に伴う暴走を防ぐ実戦的なTipsが紹介されています。指示（CLAUDE.md）だけでは徹底できない記述ルールをシステムの仕組みとして強制できる点が強力です。",
+    "topics": [
+      "Claude Code",
+      "textlint",
+      "LLM",
+      "自動化",
+      "プラグイン開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

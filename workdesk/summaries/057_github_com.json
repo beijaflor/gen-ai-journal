@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:04:27.994065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "grafana-agento11y-hermes: Hermes Agent向け非公式Grafana Agent Observabilityプラグイン",
+    "url": "https://github.com/alexander-akhmetov/grafana-agento11y-hermes",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェント「Hermes」のLLM呼び出しやツール実行をOpenTelemetry経由でGrafanaに記録・可視化するための非公式プラグイン。",
+    "summaryBody": "このリポジトリは、CLIベースのAIエージェント「Hermes Agent」に観測機能（Observability）を追加するプラグインを提供します。Grafana Cloudの「Agent Observability」アプリと連携し、LLMの呼び出し、ツール実行、システムプロンプト、レスポンスなどをOpenTelemetryのトレースおよびメトリクスとして送信します。主な機能として、会話フローの可視化、実行コストやパフォーマンスの追跡が可能です。セキュリティ面では、機密情報保護のためにプロンプト内容を除外しメタデータのみを記録する「metadata_only」モードを搭載しています。インストールはpipから行い、Hermesの設定ファイルを編集することで簡単に有効化できます。",
+    "topics": [
+      "Hermes Agent",
+      "Grafana",
+      "Observability",
+      "OpenTelemetry",
+      "LLM Monitoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 40,
+      "overall": 85
+    },
+    "originalTitle": "GitHub - alexander-akhmetov/grafana-agento11y-hermes: Unofficial Grafana Agent Observability plugin for Hermes Agent"
+  }
+}

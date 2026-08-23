@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:17:36.833051+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed Agentsで作る問い合わせ調査エージェント — 全体構成とAgent定義の管理",
+    "url": "https://tech.findy.co.jp/entry/2026/08/21/070000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのManaged Agentsを活用し、GitHub Actionsと連携してエンジニアの「問い合わせ調査」を自動化する仕組みとその定義管理（IaC）の手法を紹介。",
+    "summaryBody": "Anthropicが提供するエージェント実行基盤「Managed Agents」を用いた、開発トイル削減の実践例です。エージェントのループ実行やサンドボックス環境をAnthropic側に委ねることで、常時稼働インフラを不要にしつつ、GitHub Actionsをトリガーとしたオンデマンドな実行を実現しています。\\n\\n### 主な特徴\\n- **サーバーレス構成**: GitHub ActionsからSessions APIを叩くだけで起動。待機コストがゼロ。\\n- **MCP連携**: GitHubおよびSlackのMCPツールを介して、エージェントが自律的にIssueを読み、リポジトリを検索し、回答を投稿。\\n- **IaCによる管理**: エージェントのシステムプロンプトやツール定義をリポジトリ内のJSONで管理し、独自開発のスキルで`diff`/`apply`を行うことで、エージェントの変更履歴を透明化しています。\\n\\n従来、自前で構築が必要だったエージェントの実行環境や状態管理をマネージドサービスへ寄せることで、開発者はエージェントの振る舞い（プロンプトやツール選択）の定義に集中できる点が大きなメリットです。",
+    "topics": [
+      "Claude Managed Agents",
+      "Anthropic",
+      "GitHub Actions",
+      "MCP (Model Context Protocol)",
+      "IaC (Infrastructure as Code)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    }
+  }
+}

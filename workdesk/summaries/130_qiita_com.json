@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:47:03.117174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【無料AI】DeepSeekが値上げしたのでさくらで代替できるか試してみた",
+    "url": "https://qiita.com/daizu-007/items/360edde76395a64df6e7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "DeepSeek APIの価格改定に伴い、月間3000リクエストの無料枠を提供する「さくらのAI Engine」を代替として導入し、AIエージェントでの実用性を検証したガイド。",
+    "summaryBody": "DeepSeekのAPI価格高騰とそれに伴うサードパーティサービス（OpenCode Go等）の制限強化を受け、国内サービスである「さくらのAI Engine」を暫定的な代替案として活用する方法を解説しています。\\n\\n### さくらのAI Engineの特長\\nさくらインターネットが提供するこのサービスは、国内完結型のLLM APIであり、OpenAI/Anthropic互換形式を採用しています。最大の特徴は、基盤モデル無償プランにおいて月間3,000リクエストまで無料で利用できる点です。\\n\\n### 導入手順と設定\\n記事では、会員ID作成から電話番号認証、クレジットカード登録（無料枠利用でも必要）、アクセストークンの発行までの詳細なフローを紹介。さらに、ChatBoxやPi Coding AgentといったAIクライアント・エージェント環境に組み込む手順を具体的に示しています。特にPi向けには著者が作成した専用の拡張機能も公開されています。\\n\\n### 実用性の検証\\nKimi-K2.7-Codeなどのモデルを用い、AIエージェントによるコード修正や校閲タスクを実行した結果、1タスクあたり平均15〜23リクエストを消費することを確認。月間約200タスク程度の運用が可能であり、DeepSeekの価格変動に対する有力なバックアップ手段になり得ると結論付けています。",
+    "topics": [
+      "DeepSeek",
+      "さくらのAI Engine",
+      "AIエージェント",
+      "LLM API",
+      "Pi Coding Agent"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

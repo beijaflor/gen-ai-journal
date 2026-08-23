@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:47:42.976846+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オントロジー × グラフ × LLM の実装と評価（基礎編）",
+    "url": "https://qiita.com/haystacker/items/853234c38ae36adbca1f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ベクトルの類似度検索（Plain RAG）の限界を、オントロジーによる知識の構造化とグラフ探索で補完し、複雑な依存関係や網羅的な質問への回答精度を向上させる手法を実装コード付きで解説します。",
+    "summaryBody": "本記事は、通常のベクトル検索を用いた RAG（Plain RAG）と、オントロジー（クラス階層）およびナレッジグラフを組み合わせた RAG の比較・実装チュートリアルです。Plain RAG の構造的な弱点として「多段の依存関係を追跡できない（経路情報の欠如）」および「top-k 取得制限による網羅性の欠如」を指摘し、それをオントロジーの T-box（型定義）と A-box（事実）による決定的なグラフ探索で解決する手法を提案しています。具体的には、Python を用いてベクトルの類似度計算から、グラフの推移閉包（Transitive Closure）や包摂（Subsumption）を用いた部分グラフ抽出までをフルスクラッチで実装します。さらに、質問の種類（単一事実、型網羅、多段結合など）に応じて RAG 方式を切り替えるルーターの構築や、Precision/Recall/F1 スコアを用いた定量的評価、モデル（Gemma 2B vs GPT-4相当）ごとの推論力の差異についても深い考察がなされています。ライブラリに頼らず、RAG とナレッジグラフの役割分担を明確に理解できる構成となっています。",
+    "topics": [
+      "GraphRAG",
+      "Ontology",
+      "LLM",
+      "Python",
+      "知識グラフ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

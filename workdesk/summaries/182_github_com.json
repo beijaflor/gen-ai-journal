@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:35:49.354876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude使用におけるコスト最適化ガイド",
+    "url": "https://github.com/anthropics/claude-cookbooks/blob/main/cost_optimization/cost_optimization.ipynb",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicが提供する、Claude APIのコストを削減するためのモデル選定、プロンプト・キャッシング、Batch APIなどの実践的な手法をまとめた公式ガイド。",
+    "summaryBody": "このガイドは、Claude APIを利用する開発者がパフォーマンスを維持しながら運用コストを最小化するための戦略を解説しています。主な手法として、タスクの複雑さに応じたモデル（Haiku, Sonnet, Opus）の使い分け、同一のコンテキストを再利用する際の料金を大幅に削減する「Prompt Caching（プロンプト・キャッシング）」、リアルタイム性を必要としない処理を50%のコストで実行できる「Message Batches API」の活用方法が詳しく説明されています。また、出力トークン数を制御するシステムプロンプトの設計や、Pythonを用いた具体的な実装コードが提供されており、LLM運用の経済性を高めるための実用的なリソースとなっています。",
+    "topics": [
+      "Claude",
+      "Cost Optimization",
+      "Prompt Caching",
+      "LLMOps",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "claude-cookbooks/cost_optimization/cost_optimization.ipynb at main · anthropics/claude-cookbooks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:40:56.243265+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8 27B に Reasoning Effort を実装してみる",
+    "url": "https://zenn.dev/shogo0x2e/articles/qwen38-27b-stop-overthinking",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Qwen3.8 27Bの「考えすぎ」による生成中断問題を、llama.cppのreasoning budget機能を用いて制御し、自律的なタスク遂行を実現する手法の解説。",
+    "summaryBody": "Qwen3.8 27Bなどの推論モデルが、抽象的なタスクにおいて思考（thinking）が長引いた結果、出力トークン上限に達して回答やツール実行が中断される課題を解決する手法を紹介しています。主な解決策として、`llama.cpp` の `reasoning_budget_tokens` と `reasoning_budget_message` 機能を活用し、推論プロセスを強制的に切り上げ、回答フェーズへ誘導する設定を解説。ベンチマーク（OptimalThinkingBench）を用いた検証では、4096トークン程度のバジェット設定が精度と速度のバランスにおいて最適であることを示しています。また、OpenCodeでのUI実装例や、システムプロンプトやLogit Biasを用いた他の推論制御アプローチについても考察されており、ローカルLLMの実用性を高めるための具体的な実装ガイドとなっています。",
+    "topics": [
+      "Qwen3.8",
+      "llama.cpp",
+      "Local LLM",
+      "Reasoning Effort",
+      "OpenCode"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

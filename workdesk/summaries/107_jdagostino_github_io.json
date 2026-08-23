@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:52:21.554170+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自宅AI第2章：マルチGPUドリフト走行（低スペックGPUでの推論最適化）",
+    "url": "https://jdagostino.github.io/ai-pt2-multi-gpu-drifting/index.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "中古のAMD製GPUを複数枚用いた自宅サーバー環境で、PCIe通信や投機的デコード、BIOS設定を調整してLLMの推論速度を最大2倍以上に向上させた技術実証記録。",
+    "summaryBody": "この記事は、中古のAMD Radeon Pro V620を4枚搭載した自作サーバーで、大規模言語モデル（LLM）の推論速度を最大化するための技術的な試行錯誤をまとめたレポートです。著者はまず、LLMの推論が計算能力よりもメモリ帯域幅に依存している現状を説明し、レイヤー並列とテンソル並列の特性を比較しています。PCIe 3.0という低帯域な接続環境において、データ移動のオーバーヘッドを抑えるための工夫が詳細に語られています。\n\n主な最適化手法として、DSparkやMTPを用いた投機的デコード（Speculative Decoding）の導入、BIOSでのMMIO High Base設定の変更、カーネルパラメータでのIOMMU調整によるPCIe Peer-to-Peer通信の有効化などが挙げられています。これらの改善により、初期状態で10 tok/s程度だったDeepseek V4 Flashが20 tok/s以上に、Gemma 4 31Bが45 tok/s以上で動作するようになりました。llama.cppの特定PRのビルドや詳細な設定フラグのベンチマークなど、実践的なノウハウが凝縮されています。",
+    "topics": [
+      "LLM",
+      "Multi-GPU",
+      "llama.cpp",
+      "ROCm",
+      "Inference Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "No, We Have AI At Home Chapter 2: Multi-GPU Drifting"
+  }
+}

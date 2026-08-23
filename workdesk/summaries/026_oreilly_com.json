@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:12:34.515427+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのガードレールが「過剰」になる時 — 利便性と安全性のジレンマ",
+    "url": "https://www.oreilly.com/radar/when-guardrails-go-wrong/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIモデルの過剰なセキュリティガードレールが正当なワークフローを停止させてしまう現状に対し、安全性と実用性のバランス、および予測可能性の重要性を論じた記事。",
+    "summaryBody": "O'Reilly RadarのMike Loukides氏は、自身が作成したニュース要約ツールがClaudeのガードレールによって突然使用不能になった実体験を報告しています。原因は、AI自身が生成した「脆弱性」という単語を含むサイト説明文が、セキュリティリスクとして誤判定されたことでした。筆者は、受信者操作特性（ROC）曲線の概念を引き合いに出し、真の脅威を完全に排除しようとすれば、必ず偽陽性（正当な活動の拒絶）が増えることを指摘しています。開発環境としてのAIにおいて、予告なしにルールが変更され、過去に動作していたコードが突然壊れる「不安定さ」は大きな障害です。リスク回避を優先するあまり「足かせをはめられた（Hamstrung）AI」を提供することは、イノベーションを阻害する可能性があると警鐘を鳴らしています。",
+    "topics": [
+      "AI Safety",
+      "LLM Guardrails",
+      "Claude",
+      "AI Reliability",
+      "ROC Curve"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    },
+    "originalTitle": "When Guardrails Go Wrong"
+  }
+}

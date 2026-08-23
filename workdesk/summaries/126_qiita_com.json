@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:47:55.795489+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "14MBの超軽量ツール呼び出しAIモデル「Needle 2」の検証：DLL一つで動作する驚異の軽量性と日本語対応の限界",
+    "url": "https://qiita.com/jqit_suwa/items/acb61138c4550eef4803",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "14MBのバイナリにエンジンと重みを凝縮した45MパラメータのAIモデル「Needle 2」を検証し、RAM 37MBでの高速動作と、日本語に対する精度の欠如を報告しています。",
+    "summaryBody": "GitHubで話題の超軽量ツール呼び出し特化型AI「Needle 2」の実機検証記事です。モデル全体が約14MBのDLL1個に収まっており、依存ライブラリなしでRAM 37MB、1推論約0.5秒という驚異的なパフォーマンスで動作します。英語のツール呼び出しでは高い実用性を示す一方、日本語入力では正解率0%となり、誤答に対して高い確信度（Confidence）を出してしまうという課題も浮き彫りになりました。また、通常のpip installではJAX等の依存関係で570MBまで膨らみWindowsでエラーが出るため、推論のみなら`--no-deps`での導入が推奨されています。エッジデバイスやオフライン環境での英語コマンド制御などの用途に特化したツールといえます。",
+    "topics": [
+      "LLM",
+      "エッジAI",
+      "Needle",
+      "Python",
+      "軽量モデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

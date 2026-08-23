@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:55:11.461871+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bun 1.4のRust書き換えが難航：AI主導開発とリリースの遅延に対する懸念",
+    "url": "https://tipiirai.com/writing/bun-rust-rewrite-worries",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "JavaScriptランタイムBunのv1.4におけるZigからRustへの移行について、AI主導の開発手法によるコード品質の低下と、繰り返されるリリースの延期を批判的に検証した記事。",
+    "summaryBody": "JavaScriptランタイム『Bun』の開発状況について、初期からの支持者である著者が強い懸念を表明しています。次期バージョン1.4で行われているZigからRustへの大規模な書き換えにおいて、開発者Jarred Sumner氏が「明日リリースする」という約束を数ヶ月にわたり破り続けている現状を指摘。最大の問題として、開発プロセスの極端なAI（Claude）依存を挙げており、1.5万件を超える自動生成コミットや5,000件以上のオープンなPRがプロジェクトを不透明にしていると述べています。Zigの創始者Andrew Kelley氏による「Bunのコードはハックの積み重ねである」という厳しい指摘を引用しつつ、Rust移行の目的であったメモリ安全性も、コード内の大量の`unsafe`ブロックによって疑問視されています。この記事は、人間による理解を離れたAIエージェント主導の開発が、実際のプロダクトにどのようなリスクをもたらすかという重要な視点を提供しています。",
+    "topics": [
+      "Bun",
+      "Rust",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "Zig"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 82
+    },
+    "originalTitle": "Bun 1.4 Rust rewrite is not looking good"
+  }
+}

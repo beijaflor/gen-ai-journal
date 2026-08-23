@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:02:07.684311+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6 \"Sol\" はOpenAI史上最高のビジョンモデル：Roboflowによるベンチマーク分析",
+    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIの最新モデルGPT-5.6「Sol」は、物体検出や計数能力が飛躍的に向上し、従来の弱点を克服して実用的なコンピュータビジョン能力を備えています。",
+    "summaryBody": "OpenAIが発表したGPT-5.6シリーズ（Sol, Terra, Luna）について、Roboflowが独自のビジョンベンチマークを用いて詳細に検証しました。最上位モデルの「Sol」は、物体検出においてGPT-5.5の13.8 mAPから46.2 mAPへと劇的な進化を遂げ、ドキュメントのレイアウト解析や密集したシーンでのカウントでも高い精度を示しました。実用上のポイントとして、絶対座標（XYXY）の使用が推奨される一方で、2,000ピクセルを超える高解像度画像では検出が不安定になる課題も指摘されています。コストとレイテンシの面では依然としてGemini 3.5 Flashが優位に立つケースがあるものの、GPT-5.6はエージェント機能や視覚的推論におけるOpenAIの強力な前進を証明しています。",
+    "topics": [
+      "GPT-5.6",
+      "OpenAI",
+      "Computer Vision",
+      "Object Detection",
+      "VLM Benchmark"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released"
+  }
+}

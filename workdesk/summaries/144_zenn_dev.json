@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:43:09.788714+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM編成が単独のフロンティアAIを超えた日",
+    "url": "https://zenn.dev/nrs/articles/b920540a64e1a1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "マルチエージェントオーケストレーターTAKTを用い、実装とレビューをローカルLLMに、判断を商用モデルに分担させることで、単体のフロンティアAIを凌駕するコード品質と高コスパを実現できることを検証した。",
+    "summaryBody": "本記事は、仮想の最新モデルGPT-5.6-Sol単体と、複数のローカルLLM（DeepSeek-V4-Flash、Gemma4等）をTAKTでオーケストレーションした編成の性能を比較した詳細なベンチマーク報告です。約9万行のプロダクトへの機能追加を題材とした実験の結果、ローカルLLMを実装役に据えた編成（得点70.3）が、単独のフロンティアモデル（62.6）の品質を大きく上回りました。この品質向上は、計画段階での境界ケース列挙や、実装とレビューの分離といった構造的アプローチによって、モデル単体の『思い込み』を排除したことによるものです。また、物量が必要な工程をトークン課金のないローカルモデルが担い、重要な裁定のみを商用モデルに任せる『ハイブリッド編成』が、コストを7分の1以下に抑えつつ最高水準の出力を得るための最適解であると結論付けています。",
+    "topics": [
+      "ローカルLLM",
+      "TAKT",
+      "マルチエージェント",
+      "ベンチマーク",
+      "DeepSeek"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

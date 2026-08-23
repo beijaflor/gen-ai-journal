@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:15:13.810648+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サイバーセキュリティ向けAIモデルの大規模ベンチマーク：DeepSeekとGLM-5.3が最前線に",
+    "url": "https://www.aikido.dev/blog/ai-model-benchmarks-aug-21-2026",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Aikidoが117億トークンを投じて10種のAIモデルの脆弱性発見能力を検証し、DeepSeek V4 ProやGLM-5.3がクローズドな最先端モデルを凌駕する性能を示した。",
+    "summaryBody": "Aikido Securityが実施した、32件の実際の脆弱性（CVE）を用いたAIモデルのベンチマーク調査結果です。10種類の主要モデルを対象に3回の試行を繰り返した結果、DeepSeek V4 Pro 0813が32件中28件を特定し最高のリコール率を記録しました。特筆すべき点として、単一実行では見逃しがあるものの、複数回の実行結果を統合することで発見率が劇的に向上する「LLMの分散の活用」が有効であることが示されました。また、DeepSeekやGLM-5.3、Qwenといったオープンウェイトモデルが、Claude Opus 5やGPT系のクローズドモデルに匹敵、あるいは一部上回る成果を4割から7割低いコストで実現しています。ただし、安価なモデルはノイズ（誤検知）が増える傾向にあり、実用化にはモデルを制御する「ハーネス（足場）」の設計が不可欠であると結論づけています。",
+    "topics": [
+      "AIベンチマーク",
+      "サイバーセキュリティ",
+      "脆弱性診断",
+      "DeepSeek",
+      "LLM比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "We burned 11.7bn tokens to find the best cyber AI model | GLM5.3 and DeepSeek are now frontier"
+  }
+}

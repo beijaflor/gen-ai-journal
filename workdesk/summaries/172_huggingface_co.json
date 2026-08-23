@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:38:08.789575+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-27B AbliteratedのRidge式混合量子化GGUF (3.69bpw / 12GB)",
+    "url": "https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AEON-7の無検閲27Bモデルをベースに、Gated-DeltaNetの特性を最適化した混合量子化を施し、12GB VRAMでの運用を可能にしたGGUFモデル。",
+    "summaryBody": "本リポジトリは、AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16をベースに、empero-aiの「Ridge」手法を参考にした混合量子化（Mixed Quantization）を適用したGGUFモデルです。Gated-DeltaNet（GDN）の壊れやすい経路やAttentionの重要テンソルに高ビットを割り当てつつ、FFN層をIQ2_S/IQ3_Sに抑えることで、3.69bpw（約11.7GiB）という軽量さと推論品質の維持を両立しています。Multi-Token Prediction (MTP) も維持されており、llama.cppのdraft-mtp機能による高速な推論が可能です。英語および日本語のWikipediaを含むコーパスでキャリブレーションされており、無検閲（Refusal-removed）仕様のため、ローカル環境での自由な対話に適しています。",
+    "topics": [
+      "LLM",
+      "Qwen3.8",
+      "GGUF",
+      "Quantization",
+      "llama.cpp"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 60,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": "soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf · Hugging Face"
+  }
+}

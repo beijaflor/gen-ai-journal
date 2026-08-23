@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:50:00.196292+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ドキュメント内でAIエージェントに直接指示を出す「囁き」は効果的か？：実験による検証",
+    "url": "https://passo.uno/if-you-are-an-agent-read-this/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ドキュメント内に「AI向け」というラベルや直接的な呼びかけを追加しても、指示内容自体が明確であればAIの挙動に有意な差は生じないことを実験で示した記事。",
+    "summaryBody": "ドキュメントやREADMEにおいて「AIエージェントよ、この指示に従え」といった直接的な呼びかけ（Whispering）を行う傾向が増えているが、著者はこの有効性を実験で検証した。Claude Sonnetを用いたテストの結果、特定の選択肢を推奨する「指示」そのものはモデルの挙動を100%制御するほど強力だが、そのセクションを「AI向け」とラベル付けしたり、構造的に隔離したりしても、通常の明確な指示以上の追加効果は見られなかった。つまり、AIエージェントは人間向けの記述とAI向けの記述を区別して優先することはない。著者は、人間向けの可読性を損なってまでAIに媚びる必要はなく、簡潔で正確な説明、充実したコード例、そしてアクセシビリティを考慮した構造化こそが、人間とAIの両方にとって最善のドキュメント作成術であると結論づけている。",
+    "topics": [
+      "AIエージェント",
+      "テクニカルライティング",
+      "LLM最適化",
+      "RAG",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Does whispering to agents in docs help?"
+  }
+}

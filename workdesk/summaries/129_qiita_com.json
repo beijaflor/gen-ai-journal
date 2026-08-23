@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:47:15.125077+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Claude Code】sqzでトークン23%削減",
+    "url": "https://qiita.com/yuhisato/items/a324d39bf9418fc4b62a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのトークン消費を平均約23%削減するツール「sqz」の仕組み、導入方法、および他ツールとの比較を解説した実用ガイド。",
+    "summaryBody": "Claude Code利用時のコスト削減とコンテキスト効率化を実現するツール「sqz」を紹介しています。sqzは、コマンド出力の圧縮、同一内容を13〜14トークンのハッシュ（§ref:HASH§）に置き換えるdedupキャッシュ、差分のみを送るデルタエンコード、依存ファイルを事前に読み込むプリキャッシュの4つの仕組みにより、筆者の環境で平均23.5%のトークン削減を達成しました。特にdedupキャッシュは、モデル側のコンパクション状況を考慮して再送を判断する高度な管理を行っています。設定はClaude CodeのPreToolUseフックとMCPサーバーの登録のみで完結し、競合するrtkと比較してプロジェクト内の設定ファイルを汚しにくいという利点があります。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "MCP",
+      "トークン削減",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

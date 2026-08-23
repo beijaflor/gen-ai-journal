@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:47:27.248756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最新のOCR・Document AI 4手法の技術解説（Qwen3-VL / GOT-OCR2.0 / DeepSeek-OCR / PP-OCR）",
+    "url": "https://qiita.com/terurl/items/42f8ca935e30888fdbd1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点の主要なOCR・Document AI 4手法（Qwen3-VL, GOT-OCR2.0, DeepSeek-OCR, PP-OCR）について、技術的課題へのアプローチと進化の方向性を比較解説した記事。",
+    "summaryBody": "本記事は2026年時点におけるOCRおよびDocument AIの主要4手法を技術的な観点から解説しています。Qwen3-VLは「Interleaved-MRoPE」により文書内の微細な位置関係の把握を可能にし、GOT-OCR2.0は言語モデルの補完に依存せず視覚エンコーダ単体で記号を正しく認識させる学習プロセスを採用。DeepSeek-OCRは大量のテキスト情報を少数の視覚トークンに圧縮する「Contexts Optical Compression」により、LLMの長文脈制限を克服しています。対してPP-OCRv5は、あえてVLMに移行せず、VLMの視覚表現を知識蒸留しつつ、決定論的で軽量なパイプラインを維持する手法をとっています。各手法が、生成型モデル特有のハルシネーション問題とどう向き合い、精度と実用性のバランスを追求しているかが浮き彫りになっています。",
+    "topics": [
+      "OCR",
+      "Document AI",
+      "VLM",
+      "Qwen3-VL",
+      "DeepSeek-OCR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

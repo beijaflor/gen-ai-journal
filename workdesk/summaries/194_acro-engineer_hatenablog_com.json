@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:32:33.319252+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Microsoft FoundryのHosted Agentを使ってエージェントを簡単にデプロイする",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/08/20/120000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Microsoft Foundryの新機能「Hosted Agent」を用いて、インフラ管理を意識せずに独自実装のAIエージェントをAzure上にデプロイし、Excel操作などの高度なタスクを自動化する手順の解説。",
+    "summaryBody": "Microsoft Foundryのパブリックプレビュー機能「Hosted Agent」の概要と、具体的な実装・デプロイ手順を解説するチュートリアル記事です。Hosted Agentは、開発者が記述したエージェントロジックをAzure上のマネージドなコンテナ環境で実行できるサービスで、インフラの構築やスケーリング、コンテナ管理を自動化します。OpenAI互換のAPIや任意のJSON入出力に対応しており、既存のワークフローへの組み込みが容易な点が特徴です。\n\n記事内では、アップロードされたExcelファイルの問い合わせ内容を分析し、カテゴリ分け・要約・優先度を付与して再出力するエージェントを例に挙げています。Azure Developer CLI（azd）を用いたプロジェクトの初期化から、Pythonとopenpyxlによるデータ処理ロジックの実装、リソースのプロビジョニング、そしてセッション管理機能を活用したファイルのアップロード・ダウンロードまでの一連の流れを詳細に説明しています。サーバーレスに近い従量課金体系や、15分間の非アクティブ後も状態を保持する仕様など、実用的な運用仕様についても言及されています。",
+    "topics": [
+      "Microsoft Foundry",
+      "AIエージェント",
+      "Azure",
+      "Python",
+      "サーバーレス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 86
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:45:00.659820+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MacBook Air M5 RAM32GBで実用的なローカルLLMを探す 生成速度測定編",
+    "url": "https://zenn.dev/koki_n22/articles/493f85b9f875ca",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MacBook Air M5 (RAM 32GB) において、27Bクラスのdenseモデルより35B級のMoEモデルが圧倒的に高速に動作することをベンチマークで明らかにした。",
+    "summaryBody": "MacBook Air M5 (RAM 32GB) 環境におけるローカルLLMの推論速度を比較検証したレポート。27.8Bのdenseモデル（Qwen 3.6）では生成速度が約6 tokens/sに留まったのに対し、総パラメータ数が大きいMoEモデル（north-mini-code-1.0やQwen 35B-A3B等）では40〜50 tokens/sという実用的な推論速度が可能であることを示した。この記事は、単に「メモリ容量に収まるか」だけでなく、推論時に有効なパラメータ数が少ないMoEアーキテクチャがApple Siliconでのローカル利用に極めて有効であることを示唆している。計測に使用したシェルスクリプトやTTFT、表示文字数/秒などの詳細データも公開されており、ハードウェアの限界性能を知る上で貴重な資料となっている。",
+    "topics": [
+      "LLM",
+      "MacBook Air M5",
+      "MoE",
+      "Benchmark",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

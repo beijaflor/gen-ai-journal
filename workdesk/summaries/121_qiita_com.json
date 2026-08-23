@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:49:00.503968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで個人開発を1ヶ月やって、たどり着いた開発プロセスの話",
+    "url": "https://qiita.com/ebichan_88/items/eead0724e9b5eb0d0120",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Codeを1ヶ月活用し、人間がコードを書かず「要件定義・回答・承認」に専念できる、AIレビュー・自動修正・品質保証を統合した開発プロセスを構築した。",
+    "summaryBody": "著者がClaude Codeを個人開発で1ヶ月間試行錯誤しながら構築した、AI主体の開発ライフサイクル（AI-DLC）に関する記録です。初期のドキュメント生成から始まり、AIがPRをレビューして自動修正する「reviewer/fixer」構成、テストカバレッジや受け入れ基準（AC）を機械的に検証する品質保証の仕組み、そして実装前の「Plan PR」による合意形成プロセスまで、段階的な進化が詳細に綴られています。UIの手戻りを防ぐためのStorybook/VRT活用や、AIによるテストの弱体化を防ぐ安全弁の設計など、実用的な知見が豊富です。最終的に、人間はコードを直接書くことなく、要件提示と意思決定に集中する開発スタイルに到達しています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "個人開発",
+      "CI/CD",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

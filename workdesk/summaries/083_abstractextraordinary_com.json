@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:57:38.182339+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Muse Glimmerのアーキテクチャ：30B級AIエージェントをデバイスに収める手法",
+    "url": "https://abstractextraordinary.com/blog/how-muse-glimmer-fits-an-agent-on-your-device/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MetaのMuse Glimmerは、階層的メモリ構造とハイブリッド注意機構を駆使し、30B規模のモデルを量子化によって家庭用デバイスの24-32GBメモリ枠に収める自律型マルチモーダル・エージェントです。",
+    "summaryBody": "Muse Glimmerは、クラウドを介さずコンシューマ向けハードウェアで動作するように設計された300億パラメータ規模のマルチモーダルモデルです。その核となるのは、30BのTransformerを「階層的メモリシステム」として再定義した独創的なアーキテクチャにあります。\n\n主な特徴は以下の通りです：\n\n1. **ハイブリッド注意機構**: 全52層のうち、3層は2,048トークンのローカルな「スライディングウィンドウ注意」を行い、4層目ごとに全コンテキストを対象とする「グローバル注意」を行うサイクルを繰り返します。これにより、KVキャッシュの肥大化を抑えつつ、13.1万トークンの長いコンテキストを実現しています。\n2. **NoPE（位置エンコーディングなし）の採用**: グローバル注意層ではRoPE（回転位置埋め込み）をあえて排除し、距離に依存しないセマンティックな検索を可能にしています。一方、順序が重要なローカル層にはRoPEを残すことで役割を分担しています。\n3. **極限まで絞られたKVヘッド**: 32個のクエリヘッドに対し、KVヘッドをわずか2個に絞るGrouped-Query Attentionを採用。トークンあたりのKVキャッシュを1KiBまで削減しました。\n4. **視覚情報の圧縮**: 1.85Bのビジョンタワーからの出力を、2×2のパッチ結合によって4:1に圧縮して言語デコーダに渡すことで、視覚推論の計算コストとメモリ消費を劇的に抑えています。\n\nこのモデルは疎（Sparsity）に頼るのではなく、パラメータ密度を維持しながら「状態（State）」と「通信（Communication）」を効率化することで、4ビット量子化時のパフォーマンス劣化を最小限に抑えつつ、実用的なデバイス上での動作を可能にしています。",
+    "topics": [
+      "Muse Glimmer",
+      "LLM Architecture",
+      "On-device AI",
+      "Multimodal AI",
+      "Memory Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "How Muse Glimmer Fits an Agent on Your Device"
+  }
+}

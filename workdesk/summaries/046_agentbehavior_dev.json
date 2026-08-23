@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:07:31.247611+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent behavior: AIエージェントの振る舞いを定義するための標準フォーマット",
+    "url": "https://www.agentbehavior.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが従うべき振る舞いの基準をMarkdown形式で記述し、コードと共に管理・評価するための標準仕様「Agent behavior」が提案されました。",
+    "summaryBody": "「Agent behavior」は、AIエージェントが一連の対話において遵守すべき一貫した行動基準を定義するための新しいフォーマットです。この仕様では、プロジェクトの`.agents/behaviors/`ディレクトリ内に`BEHAVIOR.md`ファイルを配置し、YAMLフロントマターとMarkdown形式で振る舞いを記述します。実行時の指示（システムプロンプト）とは異なり、主に開発者や評価システムがトレースをレビューし、評価基準（Eval）を策定し、プロンプトを調整するための「共有された期待値」として機能します。\n\n各定義は「Intent（意図）」「Evidence（証拠収集）」「Decision（判断）」「Execution（実行）」「Recovery（回復）」といった推奨される5つの項目で構成され、コストのかかるアクションの防止や本番環境への変更確認、事実確認の徹底など、エラーが許されない重要な挙動を具体化します。これにより、曖昧になりがちなエージェントの品質を、コードと同様にバージョン管理可能な形で客観的に測定・改善することが可能になります。",
+    "topics": [
+      "AIエージェント",
+      "LLM開発",
+      "プロンプトエンジニアリング",
+      "品質保証",
+      "標準化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agent behavior"
+  }
+}

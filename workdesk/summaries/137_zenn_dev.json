@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:44:43.464832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントの「認可疲れ」に効く処方箋 : 理論から実装まで",
+    "url": "https://zenn.dev/aws_japan/articles/2b62886aa8735e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが複数サービスと連携する際の「認可の手間」を、RFC 8693（Token Exchange）に基づくOBO方式を用いることで、最初の1回の認証のみで安全に実現する理論とAWS実装を解説したガイド。",
+    "summaryBody": "### AIエージェントにおける認可の課題\nAIエージェントがGitHubやSlack、社内システムなどの外部サービスと連携する際、ツール実行のたびにユーザーへ認可（Consent）を求める「認可疲れ」がボトルネックとなります。これを解決するために、ブラウザのCookieに頼らないAIエージェント向けのシングルサインオン（SSO）体験が必要とされています。\n\n### 理論：OBO（On-Behalf-Of）による解決\n解決策として、RFC 8693で定義される「トークン交換（Token Exchange）」が挙げられます。これは、ユーザーがAIエージェントの利用開始時に取得した `id_token` を、認可サーバーを介して特定のサービス宛の `access_token` へ交換するプロセスです。これにより、ユーザーの関与なしに、かつユーザーの権限範囲内での代理実行が可能になります。\n\n### AWSでの実装と実務的考慮事項\nAmazon Bedrock AgentCore Identityを活用した実装例では、カスタムプロバイダーを登録し、`@requires_access_token` デコレーターを用いることで、エージェント側で複雑なトークン処理を書かずに認可フローを構成できます。本番運用に向けては、なりすましや権限昇格を防ぐための署名鍵の管理（KMSの活用）、トークンの短命化、そして「誰が・誰の代理で・何の権限を」行使したかを一貫して追跡する監視設計が不可欠です。",
+    "topics": [
+      "AIエージェント",
+      "OAuth2.0",
+      "AWS",
+      "Security",
+      "OBO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

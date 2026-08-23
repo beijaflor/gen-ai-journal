@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:43:47.546659+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが作ったHTMLの社内共有、みんな一回自作するやつをちゃんと作った",
+    "url": "https://zenn.dev/coji/articles/artifact-share-release",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIが生成したHTML成果物の共有におけるバージョン管理問題を、CloudflareスタックとAIエージェント連携を活用した低コストな専用プラットフォーム「Artifact Share」で解決した事例。",
+    "summaryBody": "Claude Code等のAIが生成するHTMLファイルを共有する際、Slack上でのファイル散乱（どれが最新か不明になる問題）を解決するための専用ツール「Artifact Share」の構築記録です。Cloudflare Workers、D1、R2を主軸に据え、待機コストを最小化しつつDAU100万人でも低コスト運用可能なアーキテクチャを実現。主な機能として、固定URLでのバージョン更新、コメント内容のAIエージェント（CLI）へのフィードバック、組織を横断した柔軟なアクセス制御を備えています。開発過程でのD1の評価や、Better Authでのトラブル、実際のコスト試算についても詳細に解説されています。",
+    "topics": [
+      "Cloudflare",
+      "Claude Code",
+      "個人開発",
+      "Artifact Share",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}
