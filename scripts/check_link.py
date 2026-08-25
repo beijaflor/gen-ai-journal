@@ -77,7 +77,11 @@ def sanitize_url(url):
     else:
         # Parse and filter query parameters for other sites
         query_params = parse_qs(parsed_url.query)
-        tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source', 'hl']
+        # 'via' and 'dub_' (e.g. dub_id) are dub.co link-tracking/affiliate
+        # params that rotate per-share and never affect page content; without
+        # stripping them, the same URL dedups as "new" every cycle (granola.ai
+        # was submitted 3x with a different dub_id each time).
+        tracking_params = ['utm_', 'fbclid', 'gclid', 'mc_', 'ref', 'source', 'hl', 'via', 'dub_']
         sanitized_params = {
             k: v for k, v in query_params.items()
             if not any(k.startswith(prefix) for prefix in tracking_params)
