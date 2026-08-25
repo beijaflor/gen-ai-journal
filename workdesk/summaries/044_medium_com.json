@@ -1,32 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-08-22T14:08:06.128651+00:00",
+    "generatedAt": "2026-08-25T16:20:16.653564+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "Cloudflareによるアクセス制限通知 (Medium.com)",
+    "title": "デザインシステムをAIエージェント対応にする方法",
     "url": "https://medium.com/design-bootcamp/how-to-make-your-design-system-agent-ready-ea4cfc062270",
     "language": "en",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "Cloudflareのセキュリティ機能により、Medium.comへのアクセスが制限された際に表示されるエラー通知画面です。",
-    "summaryBody": "このページは実際の記事ではなく、Cloudflareが提供するWebサイト保護サービスのブロック通知画面です。特定の操作がセキュリティルールに抵触した際に表示され、ユーザーのIPアドレス、Ray ID、およびブロックの理由（不正なリクエストやSQLコマンドの疑いなど）についての説明が含まれています。記事のコンテンツ自体は読み込まれておらず、アクセスが拒否された状態を示しています。",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが製品固有の設計ルールを正しく理解し適用できるよう、デザインシステムを構造化されたMarkdownとトークンで再定義する手法の提案。",
+    "summaryBody": "AIによるUI生成は「それらしい」ものは作れますが、製品独自の細かな設計ルールや振る舞いを再現するには、人間向けのデザインシステムでは不十分です。本記事では、AIエージェントが読み取れる「Specification（仕様）」レイヤーの重要性を説いています。具体的には、`tokens.json`による見た目の定義に加え、`design.md`（全体原則）や各コンポーネント・テンプレートごとの個別の`.md`ファイルを作成し、動作・構造・アクセシビリティのルールを記述するアプローチを提案。これにより、AIが必要なコンテキストのみを読み取って正確に推論できる環境を構築し、設計から実装への自動化をより高度なレベルで実現する方法を解説しています。",
     "topics": [
-      "Cloudflare",
-      "Webセキュリティ",
-      "アクセスブロック",
-      "エラーメッセージ"
+      "Design Systems",
+      "AI Agents",
+      "Markdown Specification",
+      "Design-to-Code",
+      "Information Architecture"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 5,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
     },
-    "originalTitle": "Attention Required! | Cloudflare"
+    "originalTitle": "How to Make Your Design System Agent-Ready"
   }
 }
