@@ -50,7 +50,6 @@
 - [x] 151. https://zenn.dev/factory_dx_eng/articles/ai-productivity-team-divide
 - [x] 150. https://zenn.dev/watany/articles/8809b00df25dab
 - [x] 149. https://zenn.dev/rb_engineering/articles/f5e5fa60ae0d96
-- [x] 148. https://zenn.dev/mizchi/articles/quint-application-modeling
 - [x] 147. https://zenn.dev/pksha/articles/e5c8f9b2a41d73
 - [x] 146. https://zenn.dev/green_tea/articles/a994964786cb4f
 - [x] 145. https://zenn.dev/genshi_ai/articles/cfa3ab74646b39
