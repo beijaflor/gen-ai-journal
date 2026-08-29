@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.nytimes.com/2026/08/19/technology/personaltech/google-pixel-11-review.html
-- Reason: extracted text too short (54 chars < 500 threshold); page is likely an un-hydrated SPA shell or anti-bot challenge
-- Fetcher: curl+bs4
-- Extracted chars: 54
-- Raw bytes: 771
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-29T09:32:29.535792+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Googleの新型スマホはAI満載：果たしてそれは求められているのか？",
+    "url": "https://www.nytimes.com/2026/08/19/technology/personaltech/google-pixel-11-review.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Google Pixel 11が提示する「代理実行型AI」の野心的な機能と、それに対するユーザー需要や実用性への懐疑的な視点を分析したレビュー記事。",
+    "summaryBody": "Googleが発表した最新スマートフォン「Pixel 11」は、AIアシスタント『Gemini』がユーザーに代わって食料品の注文やレストランの予約、配車依頼などを実行するエージェント機能を中核に据えています。これはAIが従来のOSに代わり、アプリ操作の主体をユーザーから引き受けるというGoogleの野心的なビジョンの現れです。しかし、NYTのコラムニストであるBrian X. Chen氏は、こうした高度な自動化やAIによる写真選別機能（Magic Capture）が、一般ユーザーにとって本当に望ましい進化なのか、あるいは一過性の流行に過ぎないのかと疑問を投げかけています。Appleも『Siri AI』で同様の方向性を目指す中、AI主導のコンピューティングがもたらす利便性とユーザーの主体性の乖離について警鐘を鳴らす内容となっています。",
+    "topics": [
+      "Google Pixel 11",
+      "エージェントAI",
+      "Gemini",
+      "スマートフォン市場",
+      "ユーザー体験"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 80,
+      "annexPotential": 30,
+      "overall": 82
+    },
+    "originalTitle": "Google's New Phone Comes With Plenty of A.I. Does Anyone Want That?"
+  }
+}
