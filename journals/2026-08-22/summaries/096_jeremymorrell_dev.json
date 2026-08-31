@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:54:45.170972+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM時代の拡張可能ソフトウェア：ユーザーが自ら定義する「Software for One」の実現",
+    "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによるコード生成能力を活用し、ユーザーが個別のニーズに合わせてアプリケーションを安全かつ動的に拡張できる「拡張可能ソフトウェア」の概念と技術的要件を解説する。",
+    "summaryBody": "現代のソフトウェアは大多数のニーズを優先するため、個々のユーザーが抱える「ロングテール」な需要に応えきれていません。本記事では、LLM（大規模言語モデル）の登場により、ユーザーが自然言語でコードを生成し、アプリを即座にカスタマイズする「Software for One（個人のためのソフトウェア）」の可能性を提唱しています。これをウェブ上で実現するためには、かつてのSalesforceが提供したApexのようなプログラマブルな環境が必要であり、V8 Isolates、WASM、MicroVMsなどのサンドボックス技術がその中核を担います。特にセキュリティ面では、APIキーを直接渡す代わりに、特定の機能への参照のみを渡す「オブジェクト・ケイパビリティ（Object Capability）」モデルが重要であると指摘されています。著者はCloudflareのDynamic Workersを例に、低コスト・高速・安全な隔離環境こそが、次世代の拡張可能なウェブアプリケーションの基盤になると結論付けています。",
+    "topics": [
+      "LLM",
+      "Software Extensibility",
+      "Cloudflare Workers",
+      "Sandboxing",
+      "Object Capability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Extensible Software in the age of LLMs"
+  }
+}

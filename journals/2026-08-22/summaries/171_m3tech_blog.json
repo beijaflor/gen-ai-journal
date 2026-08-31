@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:41:21.145389+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「このアラート、何？」を実現するClaude Codeプラグインを育てる",
+    "url": "https://www.m3tech.blog/entry/2026/08/17/110000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "エムスリーが開発した、Claude Codeを活用してAWSの障害一次調査を自動化・標準化するプラグイン「u4sre」の設計思想と実装、運用効果の紹介。",
+    "summaryBody": "エムスリーは、SREの経験知をAIエージェントに継承させるため、Claude Code用プラグイン「u4sre」を開発しました。このツールは、ALBの5xxエラーやRDSの負荷上昇などのアラートに対し、AWS CLIやAthena、CloudWatch Logsを組み合わせて自動で一次調査を行います。実装上の工夫として、定型的な処理はGo製CLIで固めてエージェントの試行錯誤を減らし、状況判断や切り分けのロジックはSKILL.md（ドキュメント）を通じてLLMに任せる構成をとっています。また、エージェントが陥りやすいUTC/JSTの混同対策や、調査結果のGoogleカレンダー自動記録機能なども備えています。運用により、経験の浅いメンバーでも迅速な障害調査が可能になったほか、熟練メンバーが人間系タスクに集中できる「調査の並行化」という大きな成果が得られています。知見を蓄積してプラグインを「育てる」運用の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "SRE",
+      "AWS",
+      "生成AI",
+      "障害調査"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:15:27.672942+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIと壁打ちしながら進めるコスト管理",
+    "url": "https://speakerdeck.com/fufuhu/ai-to-kabe-uchi-shi-nagara-susumeru-kosuto-kanri",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "生成AIを「壁打ち」の相手として活用し、クラウドインフラの構成情報やコストデータを分析することで、短期間でAWSコストを大幅に削減する実践的な手法を解説しています。",
+    "summaryBody": "MNTSQ株式会社の藤原氏が、生成AIを活用したクラウドコスト最適化の具体的なプロセスを共有した資料です。コスト削減のサイクル（施策列挙・効果見積もり・回収期間の算出・優先順位付け・評価）の各フェーズにおいて、AIを議論のパートナーとして活用する方法を提唱しています。\n\n主なポイントは以下の通りです：\n- **AI活用の前提条件**: IaC（Terraform等）やAWS Cost Explorerなどのテキスト化された構成・コスト情報をAIが参照できる環境が重要であること。\n- **壁打ちによる精度向上**: 魔法のような一撃を期待するのではなく、地道な削減策のリストアップやリスク評価（ミスサイジング、変更影響）をAIと繰り返し議論し、精度を高める。\n- **ROIの重視**: 人件費と削減額を天秤にかけ、投資回収期間（ROI）に基づいて優先順位を判断する。最終的な「決断」は人間が行う。\n- **成果**: 作業期間2週間でAWS総コストの20%を削減し、最終的には35%の削減を達成。構成変更のドラフト作成をAIに任せることでスピードアップを実現しています。",
+    "topics": [
+      "AWS",
+      "コスト最適化",
+      "生成AI",
+      "SRE",
+      "FinOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

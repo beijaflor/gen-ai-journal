@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:38:49.243815+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentに社内知識をオンボーディングする：SkillsとEvalの設計",
+    "url": "https://zenn.dev/mkj/articles/aad5698672aef3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに社内知識を「オンボーディング」させる手法として、Notion検索と構造化された「Skills」を比較検証し、精度・速度・コスト面でのSkillsの優位性を実証した調査報告。",
+    "summaryBody": "松尾研究所が、AIエージェントを「新入社員」と見立てて社内オンボーディングを行う実験結果をまとめています。「知識なし」「Notion都度検索」「Skills化」の3条件を15の実務課題で比較。結果、Skills化により項目正解率96.0%を達成し、Notion検索（87.3%）を上回る精度と、大幅な応答速度の向上、トークン消費の削減（約78%減）が確認されました。評価手法として、一問一答ではなくRubricを用いた自由回答型のEval設計の重要性を説いており、Agentが実務で「危険な回答」をしないためのCritical項目の設定など、実用化に向けた具体的な知見を共有しています。",
+    "topics": [
+      "AI Agent",
+      "LLM-as-a-judge",
+      "Evaluation",
+      "RAG",
+      "松尾研究所"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    }
+  }
+}

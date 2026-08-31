@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:51:09.689448+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek Vision API ガイド: deepseek-v4-flash-vision-exp モデルによる画像解析",
+    "url": "https://api-docs.deepseek.com/guides/vision/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "DeepSeekの新しいマルチモーダルモデル「deepseek-v4-flash-vision-exp」の公式ガイドで、画像入力の方法、トークン計算、制限事項、OpenAI/Anthropic互換APIでの利用手順を解説しています。",
+    "summaryBody": "このドキュメントは、DeepSeekの新型ビジョンモデル「deepseek-v4-flash-vision-exp」の利用方法を網羅的に解説しています。主な画像入力方法として、Base64エンコードによるインライン送信、外部URLの指定、およびFiles APIによる事前アップロードの3種類が提供されており、特に大容量ファイル（最大64MiB）や再利用時にはFiles APIの使用が推奨されます。画像は推論前に自動的にリサイズ（約800x800相当）され、1枚あたり一律で最大384トークンとして計算されるため、コスト見積もりが容易です。OpenAI互換形式に加え、Anthropic互換のメッセージAPIやDeepSeek独自のResponses APIでも利用可能です。対応フォーマットはJPEG、PNG、GIF、WebPで、リクエストあたり最大600枚までの同時入力がサポートされています。",
+    "topics": [
+      "DeepSeek",
+      "Vision AI",
+      "Multimodal",
+      "API Integration",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Vision | DeepSeek API Docs"
+  }
+}

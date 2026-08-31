@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:14:59.229784+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、AIボット設定をrobots.txtと自動同期する新機能「Bot Preference Sync」を発表",
+    "url": "https://blog.cloudflare.com/bot-preference-sync/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIボットの制御設定を自動的にrobots.txtへ反映・同期させる「Bot Preference Sync」を発表し、サイト所有者の意図とクローラーへの指示の不一致を解消します。",
+    "summaryBody": "Cloudflareが発表した「Bot Preference Sync」は、ダッシュボード上のAIボット設定（検索、エージェント、トレーニングの3カテゴリ）を、エッジで生成されるrobots.txtファイルへ自動的に同期する機能です。これまでWebサイト所有者は、ファイアウォールでのブロック設定とrobots.txtの記述を個別に管理する必要がありましたが、この機能により一貫性のある制御が可能になります。\n\n特に注目すべきは「トレーニング」カテゴリに対する新しい「Disallow」オプションです。これは、トレーニング目的のアクセスは拒否しつつ、一定の「透明性基準」（robots.txtの尊重、AIサマリーのオプトアウト、URLレベルの可視化、検索順位への影響排除など）を満たす検索・トレーニング混合型クローラーに対しては検索インデックス用のアクセスを許可する仕組みです。この機能はFreeプランを含む全ユーザーに提供され、広告収入に依存するパブリッシャー向けにはトレーニング拒否がデフォルトで設定されるオプションも用意されています。",
+    "topics": [
+      "Cloudflare",
+      "AI Bots",
+      "robots.txt",
+      "Bot Management",
+      "Web Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Say it once: introducing Bot Preference Sync | Cloudflare Blog"
+  }
+}

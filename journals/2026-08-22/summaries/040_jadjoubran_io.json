@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:09:19.174451+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Antigravityから.envファイルへのアクセスを制限する方法",
+    "url": "https://jadjoubran.io/blog/prevent-antigravity-env",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント型IDE「Google Antigravity」による環境変数ファイルへの自動アクセスを防ぐための、アクセス権限設定とセキュリティ強化の具体的な手順。",
+    "summaryBody": "Google Antigravityは自律的なファイル操作やコマンド実行を行うAIエージェント型IDEですが、デフォルトではプロジェクト内の**.env**ファイルが読み取り可能な状態にあります。本記事ではこのリスクを最小限に抑えるための多層的な防御策を解説しています。主な対策として、IDEおよびCLIのGlobal Permissions設定で`read_file(.env)`を明示的にDeny（拒否）リストに追加すること、ターミナル実行ポリシーを'Request Review'に変更してエージェントによるコマンド実行を制限すること、そしてサンドボックスモードを有効化して環境を隔離することが挙げられます。また、長期的にはシークレットマネージャーを導入し、ファイルとして秘密情報を保持しない構成への移行を推奨しています。",
+    "topics": [
+      "Google Antigravity",
+      "AI Security",
+      "Environment Variables",
+      "IDE Security",
+      "Tutorial"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "How to prevent Google Antigravity from accessing .env"
+  }
+}

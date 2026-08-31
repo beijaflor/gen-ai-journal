@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:45:29.432968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "5ヶ月育てたClaude CodeのCLAUDE.md/skills/rulesをOpus 5向けにClaude自身に棚卸しさせた",
+    "url": "https://zenn.dev/koki_n22/articles/986f61d16989cb",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの肥大化した設定をOpus 5自身の監査機能を活用して72%削減し、最新モデルの性能を最大限引き出すための最適化手法を紹介。",
+    "summaryBody": "Claude Codeで5ヶ月間蓄積してきた大量のカスタムスキル（40個）やCLAUDE.mdの指示が、新モデル「Opus 5」では過剰な制約となり、逆にパフォーマンスを下げていることに気づいた筆者が、Claude自身にプロンプトの棚卸しをさせた実践記録。主な手法として、/claude-api prompt-audit コマンドを使用。単なる文章の短縮だけでなく、モデルの進歩によって不要になった「圧力表現」や「自己検証指示」をよしなに整理させた。さらに、利用履歴を分析させることで、直近1ヶ月で一度も使われていないスキルの9割を特定・アーカイブした。結果として常時ロードするトークン量を約72%削減し、既存の複雑な仕組みを標準機能の /goal などで代替可能であることを特定。新世代モデルへの移行においては「仕組み自体の必要性」を問うことが重要であると結論づけている。",
+    "topics": [
+      "Claude Code",
+      "Opus 5",
+      "Prompt Engineering",
+      "Optimization",
+      "AI Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

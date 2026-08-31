@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:15:44.895272+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "claude のメモリを棚卸しする",
+    "url": "https://zenn.dev/cureapp/articles/c1e963064d05fd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Desktop/CLIの自動メモリ機能において、情報の陳腐化による精度低下を防ぐためにGitHub CLI等を活用して情報の鮮度を検証・整理する自作スキルとその運用手法の提案。",
+    "summaryBody": "Claudeの自動メモリ機能（~/.claude/projects/）は、`MEMORY.md`をインデックスとしてセッション開始時に読み込みますが、整理を怠ると完了済みのIssueやマージ済みのPRといった「過去の事実」がノイズとなり、Claudeが誤った前提で回答する原因となります。本記事では、標準スキルの限界を補うカスタムスキル「memory-inventory」を紹介しています。\n\n### 主な内容と提案手法\n- **メモリの構造理解**: `MEMORY.md`（上限200行/25KB）が唯一の入口であり、この目次の鮮度が回答精度に直結する。\n- **外部情報の検証**: `gh`コマンド（GitHub CLI）を使い、メモリ内のPRやIssueのステータスを確認して「終わったプロジェクト」を自動的にアーカイブ候補にする。\n- **整理の設計則**: 不可逆な削除は行わず`_archive/`へ退避すること、また目次のフック文を「内容の要約」ではなく「どのような状況で参照すべきか（発動条件）」として記述する重要性を解説。\n- **チーム共有への移行**: 個人のメモリに残っている恒久的な知見は、チーム共有の`.claude/rules/`へ移行すべきという判断基準を提示。\n\n「古い記憶は、無いより悪い」という視点から、月1回程度の定期的なメンテナンスルーティンを推奨しています。",
+    "topics": [
+      "Claude",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "開発効率化",
+      "CureApp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

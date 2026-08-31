@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:38:58.185350+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカル LLM 雑感 (2026-08)：DeepSeek V4 Flashの実用的な24時間運用",
+    "url": "https://voluntas.ghost.io/local-llm-2026-08/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "DGX Spark互換機2台でDeepSeek V4 Flashを運用し、日中は社員利用、夜間は自動コードレビューに活用する24時間稼働のローカルLLM実践事例。",
+    "summaryBody": "NVIDIA DGX Spark互換機を2台クラスター化し、DeepSeek V4 Flash 0731をローカル運用する際の知見が共有されています。FP8重みとNVFP4 MLA KVを組み合わせた構成により、最大114 tok/sという実用的な推論速度を達成。日中はTailscale経由で社員が安心して使えるクローズドなAI環境として機能し、夜間はGitHub Actionsと連携してコードやIssueの自動レビューを行う「24/365体制」を構築しています。約200万円の機材投資が必要でコスト面ではAPI利用に劣るものの、セキュリティ面の安心感と、営業時間外にも休まず働く「疲れないレビュワー」としての価値が強調されています。",
+    "topics": [
+      "ローカルLLM",
+      "DeepSeek",
+      "DGX Spark",
+      "自動コードレビュー",
+      "プライベートAI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

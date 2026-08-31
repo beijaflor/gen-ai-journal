@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:49:28.698625+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【ローカルLLM】Qwen3.8-27Bの推論性能をテストする（WSL2 + Ollama + RTX 5070 Ti）",
+    "url": "https://qiita.com/h-nabata/items/390b3558be49c30f85a7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "WSL2上のOllama環境でQwen3.8-27Bの推論性能を、数学、科学、歴史など多岐にわたるタスクで詳細に検証した技術レビュー記事。",
+    "summaryBody": "本記事では、WSL2とOllamaを用いたローカル環境において、最新の「Qwen3.8-27B」モデルの推論性能を検証しています。RTX 5070 Ti (16GB VRAM) というハードウェア制約下で、WSLへのメモリ割り当て拡張やKVキャッシュの量子化設定、Flash Attentionの有効化など、27Bクラスのモデルを実用的に動作させるための具体的な最適化手法を解説しています。\n\n推論テストでは、数学（連立方程式、平方数の和）、科学（化学量論、反応機構）、歴史、一般常識、さらには量子化学計算ソフトGaussian用の入力ファイル生成まで幅広く実施しました。検証の結果、自然言語による専門的な推論能力は極めて高い一方、特定ソフトウェアの厳密なキーワード体系や数値データの生成には課題（幻覚やループ現象）があることを指摘しています。また、Qwen3.8でデフォルト有効となっている「Thinking（思考）モード」が常に有効とは限らず、タスクに応じた適切なコンテキスト長の設定と思考強度の管理が重要であると結論づけています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen",
+      "Ollama",
+      "推論性能検証",
+      "WSL2"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:11:27.972205+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントがソフトウェア・サプライチェーンの攻撃対象領域をどのように拡大させるか",
+    "url": "https://socket.dev/blog/ai-agents-supply-chain-attack-surface",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが開発者の介入なしに依存関係の選択やコード実行を行う「マシンスピード」の開発環境において、既存のセキュリティモデルが直面する新たな脆弱性とリスクを分析している。",
+    "summaryBody": "SocketのCEOであるFeross Aboukhadijeh氏がAI Council 2026で発表した、AIコーディングエージェントによるサプライチェーンリスクの変遷に関するレポート。主な懸念点として、エージェントがMCP（Model Context Protocol）サーバーへの接続、スキルのインストール、開発者権限でのコード実行を人間によるレビューなしに行う点が挙げられている。2026年に発生したAxiosやTanStack、Trivyに関連する侵害事例を紐解き、プロンプトインジェクションや悪意のある推移的依存関係がエージェントを通じてどのように拡散するかを詳述。一方で、防御側もAIを活用することで、オープンソースコードの解析や脆弱性の優先順位付けを高度化できるという展望も示されている。",
+    "topics": [
+      "AI Security",
+      "Software Supply Chain",
+      "MCP Server",
+      "AI Agents",
+      "Dependency Management"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 85
+    },
+    "originalTitle": "How AI Agents Expand the Software Supply Chain Attack Surface"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:10:44.985917+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OraがVercel上で主要なAIエージェントをどのようにベンチマークしているか",
+    "url": "https://vercel.com/customers/how-ora-benchmarks-every-major-ai-agent-on-vercel",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Oraは、Vercelのインフラを活用して主要なAIエージェントのWeb操作性能を比較検証するベンチマーク基盤を構築し、Webサイトの「エージェント対応度」を可視化しています。",
+    "summaryBody": "### AIエージェントのWeb対応力を測定する「Ora」\nOraは、AIエージェントがWebサイト上で製品へのサインアップや支払いなどのタスクをどの程度遂行できるかを測定するプラットフォームを提供しています。共同創業者のAssaf Elovic氏によれば、現状のWebサイトの99%はAIエージェントが操作することを想定しておらず、Oraはそれらのサイトでエージェントが失敗する原因を特定・改善することを目指しています。\n\n### 主要エージェントの比較とVercel「eve」の評価\nOraは、Claude Code、ChatGPT、Gemini、Hermes、そしてVercelの新しいエージェントフレームワーク「eve」などを同一条件でベンチマークしています。Vercel上で構築されたテスト環境において、eveはClaude Codeと比較して「ゴール達成までのステップ数が7%減少」「外部検索に頼らないネイティブな成功率が2倍」「有効なエンドポイント発見率が9%向上」といった優れた結果を示しました。\n\n### 効率的な開発体制とAIエージェントの活用\nOraの16人のエンジニアチームは、Vercelのスタックを統合することで、AIコーディングエージェントを用いたデバッグやデプロイ、環境変数の変更を自動化し、1日に数百回のコミットを行う高速な開発サイクルを実現しています。現在はプラットフォームのマイクロサービス化を進め、さらなる拡張を図っています。",
+    "topics": [
+      "AIエージェント",
+      "ベンチマーク",
+      "Vercel",
+      "eve",
+      "Web自動化"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "How Ora benchmarks every major AI agent on Vercel | Customers | Vercel"
+  }
+}

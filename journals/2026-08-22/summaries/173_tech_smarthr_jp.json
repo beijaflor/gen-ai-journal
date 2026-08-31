@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:37:55.933418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sandboxテスト 〜フロントエンドとAI時代の変化の激しさへの挑戦〜",
+    "url": "https://tech.smarthr.jp/entry/2026/08/17/080914",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SmartHRがNext.jsとOpenAPI/Prismを組み合わせ、AI時代に適応するポータビリティの高いフロントエンド結合テスト「Sandboxテスト」を構築した手法とその課題。",
+    "summaryBody": "SmartHRのAIアシスタント開発チームによる、フロントエンドに閉じた結合テスト「Sandboxテスト」の導入事例。バックエンドにRailsを用いつつ、テスト実行時はPrismによるOpenAPIモックサーバーを利用。Next.jsのApp Router環境（RSC/Server Functions）において、PlaywrightからCookie経由でモック設定を渡し、Node.js側のglobalThis.fetchをインターセプトしてリクエストを制御する独自の仕組みを構築している。AIによるコード生成やフレームワークの変化が激しい現状に対し、コンポーネント単位の微細なテストよりも、アプリケーションの振る舞いを抽象化して担保する「ポータビリティ」を重視した戦略が語られている。",
+    "topics": [
+      "フロントエンドテスト",
+      "Next.js",
+      "OpenAPI",
+      "Playwright",
+      "Prism"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:55:56.905819+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "microgpt-c: 依存関係なしの純粋なC言語による最小構成のGPT実装",
+    "url": "https://github.com/vixhal-baraiya/microgpt-c",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "libc以外の外部ライブラリを一切使用せず、学習と推論の全プロセスを単一のCファイルで完結させた極めて軽量な文字レベルGPTの実装。",
+    "summaryBody": "microgpt-cは、外部依存関係を持たずに純粋なC言語のみで書かれたGPT（Transformer）の最小実装です。単一のCファイル内に、順伝播、逆伝播、Adam最適化アルゴリズム、サンプリング機能がすべて含まれています。4,192という極めて少ないパラメータ数ながら、32,000件超の名前データセットを用いた学習において、統計的なトライグラムモデルを上回る汎化性能を発揮します。また、ARM64（NEON）やx86-64（AVX2）といったCPU命令セットへの最適化が施されており、Apple Mプロセッサなどの環境では秒間1,000万トークンを超える高速な推論を実現しています。LLMの動作原理をコードレベルで深く理解したいエンジニアや、リソースの制限が厳しい環境でのAI実装に最適なリソースです。",
+    "topics": [
+      "C言語",
+      "Transformer",
+      "LLM",
+      "機械学習実装",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "microgpt-c: The most atomic way to train and inference a GPT in pure, dependency-free C"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:48:34.207890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの新機能、\"仕事の引き継ぎ\"じゃありません — 公式ドキュメントで確認した3つのズレ",
+    "url": "https://qiita.com/jqit_suwa/items/b919d0b4cdc0a26ec988",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude Codeの「セッション間メッセージング」機能について、巷の噂と公式ドキュメントの定義にある「履歴は渡らない」「Windows非対応」などの乖離を一次情報に基づき解説した記事。",
+    "summaryBody": "Claude Code v2.1.224で導入された「cross-session messaging（セッション間メッセージング）」機能について、公式ドキュメントを基に誤解を解く解説記事です。主なポイントとして、(1) 渡せるのはテキスト1通のみで、会話履歴やファイル、コンテキストは共有されないこと、(2) ネイティブWindowsには非対応（WSL 2が必要）であること、(3) 役割分担のリレーは「agent teams」の管轄であり、本機能は独立したセッション間の簡易的な連絡手段であることを指摘しています。文脈を引き継ぎたい場合は `/resume` を使うべきであるとし、機能の具体的なユースケースや、無限ループ防止・権限代行不可といったセキュリティ設計についても詳述されています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "LLM",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

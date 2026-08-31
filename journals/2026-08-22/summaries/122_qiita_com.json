@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:48:47.168305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントに AWS の鍵を渡さず AWS を叩かせる方法 #ClaudeCode",
+    "url": "https://qiita.com/ryoji9702/items/8fdef34e0a55e7f4d558",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのサンドボックス機能「mask」とプロキシによるSigV4再署名を利用し、AIエージェントに実物のAWSクレデンシャルを露出させずにAWS操作を行わせる安全な設定方法の解説。",
+    "summaryBody": "Claude Codeのサンドボックス環境において、AIエージェントにAWS認証情報を直接渡さずにAWS CLI等の操作を許可する「第三の選択肢」としての設定手法を詳説しています。\n\n### 主な内容\n- **mask機能の仕組み**: サンドボックス内では「sentinel（偽の鍵）」を見せ、外部への通信時にプロキシが本物の鍵へ差し替えることで、ログやメモリからの漏洩を防ぎます。\n- **AWS SigV4への対応**: AWSの署名プロセス（SigV4）は単純な文字列置換では壊れるため、プロキシがリクエストを検出し、本物の鍵で署名を計算し直す高度な仕組みが導入されています。\n- **設定の要件**: 署名を再計算するために、プロキシでのTLS終端（`tlsTerminate`）の有効化と、アクセスキー・シークレットキーのペアでの設定が必須となります。\n- **制限事項**: ストリーミングアップロードや署名付きURLなど、プロキシ側で再署名が困難な一部の形態については注意が必要です。\n\n「鍵をエージェントの外側（中継点）で管理する」という設計思想は、AIエージェントの安全な運用のための重要なプラクティスとなります。",
+    "topics": [
+      "ClaudeCode",
+      "AWS",
+      "AIエージェント",
+      "セキュリティ",
+      "SigV4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:46:45.140691+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "allowlist が破れる4パターン — Claude Code / Codex / Cursor の実CVE",
+    "url": "https://qiita.com/ryoji9702/items/238ce9ef6af93691d818",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやCursor等のコーディングエージェントにおいて、コマンド制限のallowlistが引数の悪用やシェルの仕様によって突破される4つの脆弱性パターンと、安全な設定指針を詳細に解説した記事。",
+    "summaryBody": "この記事は、コーディングエージェント（Claude Code、Cursor、Codex等）が自動実行を許可するコマンドリスト（allowlist）の脆弱性について、実際のCVEや報告事例を基に分析しています。\\n\\n### 脆弱性の4パターン\\n1. **引数による性質変更**: `git show --output`のように、読み取り専用と思われたコマンドが引数次第で書き込み・実行に転用される。\\n2. **解釈の不一致**: フィルタ側の正規表現とGit等のパーサ側の解釈（前方一致省略等）の差を突き、制限を回避する。\\n3. **状態の汚染**: 環境変数の操作（`export`等）により、後続の「許可済みコマンド」の挙動を乗っ取る。\\n4. **実行機能の内包**: `sed`の`e`修飾子やBashの変数展開（`${VAR@P}`）など、シェルやツール自体のチューリング完全性を悪用する。\\n\\n### 結論と対策\\n「安全なコマンド」というものは存在せず、あるのは「安全な起動（invocation）」だけです。開発者は正規表現での引数制限に頼らず、OSレベルのサンドボックスを併用し、ラッパー系コマンド（npx, docker exec等）の無制限な許可を避けるなど、多層的な防御設計が必要です。",
+    "topics": [
+      "Security",
+      "Claude Code",
+      "Cursor",
+      "CVE",
+      "Prompt Injection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

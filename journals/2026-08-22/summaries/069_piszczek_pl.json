@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:01:22.494975+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8 27Bを256Kコンテキスト・50 TPSで24GB GPU上で動作させる最適化手法",
+    "url": "https://piszczek.pl/blog/qwen38-27b-256k-50-tps-24gb-gpu",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "24GB VRAMの単一GPUでQwen3.8 27Bの256Kコンテキストを維持しつつ、MTPやハイブリッド量子化を用いて50 TPSの高速推論を実現した最適化の記録。",
+    "summaryBody": "この記事は、NVIDIA RTX PRO 4000 Blackwell (24GB VRAM) を使用し、Qwen3.8 27Bモデルで256Kの超ロングコンテキストと50.44 TPSという高スループットを両立させる実験を詳細に解説しています。主な成果として、MTP（Multi-Token Prediction）を用いた投機的デコードによる2.81倍の高速化、および重要度行列（iMatrix）を用いたNVFP4、Q5_K、Q6_Kのハイブリッド量子化による精度とメモリ効率の最適化が挙げられています。特に、ドラフトモデルの精度を上げすぎるとターゲットモデルとの不一致により逆にスループットが低下するという逆説的な発見や、llama.cppへの特定のパッチ適用による21.97%の性能向上など、実務的な推論インフラの構築における重要な知見が共有されています。また、256Kコンテキストを「ロードするだけ」ではなく、実際にキャッシュを埋めた状態でのデコード速度（12.61 TPS）まで検証している点が特徴です。",
+    "topics": [
+      "Qwen3.8",
+      "LLM推論最適化",
+      "llama.cpp",
+      "NVFP4",
+      "MTP (Multi-Token Prediction)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Qwen3.8 27B at 256K: 50 TPS on a 24 GB GPU"
+  }
+}

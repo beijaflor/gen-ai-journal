@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:49:13.236398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "さくらのAIと話したかっただけなのに。。。人生初APIで、会話履歴をJSON保存し始めたセキュリティエンジニアの話",
+    "url": "https://qiita.com/Maruhoppe8/items/70b9777bac0159c840ab",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "API初心者のセキュリティエンジニアが、さくらのAI Engineを用いて会話履歴を保存・可視化できる自分専用のチャット環境を構築した試行錯誤の記録です。",
+    "summaryBody": "この記事は、API実装経験がほぼないセキュリティエンジニアが「さくらのAI Engine」を使い、生成AIとの会話履歴を保持できるシステムを構築するまでの体験談です。ブラウザ版Playgroundでは履歴が残らないという課題を解決するため、Pythonを用いて『prompt.txtからの入力』『JSON形式での履歴保存』『HTMLでの対話可視化』を実装しました。APIの基本的なパラメータ解説から、セキュリティエンジニアの視点によるトークン管理（.envの活用）や、プロンプトインジェクションへの意識といった実戦的な学びも共有されています。単なる技術解説に留まらず、学習のプロセスや『リクエスト数ベース』の課金体系が初心者にもたらす心理的メリットについても考察されています。",
+    "topics": [
+      "さくらのAI Engine",
+      "API初心者",
+      "Python",
+      "生成AI",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 82
+    }
+  }
+}

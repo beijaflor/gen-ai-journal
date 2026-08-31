@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:07:53.614385+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・エクスペリエンス（AX）における「失敗のアフォーダンス」の必要性",
+    "url": "https://blog.ronbronson.com/agent-experience-needs-failure-affordances",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが限界や異常を検知した際に、強引にタスクを続行せず適切に人間へ介入を要請できる「失敗のためのエスカレーション経路」を設計することの重要性を説く記事。",
+    "summaryBody": "AIエージェントの設計（Agent Experience: AX）において、現在は「いかにタスクを成功させるか」という点に注力されがちだが、著者のRon Bronson氏は「いかに失敗を伝え、エスカレーションするか」という**失敗のアフォーダンス**の欠如を指摘している。主な論点は以下の通り。 **1. アルゲドニック・シグナリング**: スタッフォード・ビールの生存システムモデル（VSM）を引用し、システムが想定外の状態に陥った際に通常の制御構造をバイパスして異常を知らせるチャネルの必要性を提示。 **2. 判断ルーターと例外チャネル**: 権限を確認する「ゲート」としての判断ルーターだけでなく、エージェント自身も予期しない異常（APIの矛盾や脆弱性の発見など）を報告する「出口」としての例外チャネルが必要である。 **3. 実装の重要性**: 単に「人間が介在する」という曖昧な表現ではなく、エージェントがいつ、どのように停止し、判断を仰ぐかという「信頼の配管（Trust Plumbing）」を構造化することが、実社会での安全な運用には不可欠である。",
+    "topics": [
+      "Agent Experience",
+      "AI Agents",
+      "System Design",
+      "Error Handling",
+      "Escalation"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Agent Experience Needs Failure Affordances"
+  }
+}

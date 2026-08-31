@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:08:49.643527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Valibotをコーディングエージェントにとって使いやすくするための改善",
+    "url": "https://valibot.dev/blog/making-valibot-easier-for-coding-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Valibotが、MCPサーバーの導入やMarkdown形式の最適化、llms.txtのサポートなど、AIエージェントが効率的にドキュメントを利用できるようにするための大規模な刷新を行いました。",
+    "summaryBody": "TypeScript向けスキーマライブラリ「Valibot」が、AIコーディングエージェント（ClaudeやCursor等）による利用を最適化するためのドキュメント更新を発表しました。主な取り組みは以下の通りです：\n- **MCPサーバーの提供**: `search_docs`や`get_doc`といったツールを備えたMCPサーバーを公開し、エージェントが最小限の手順で正確な情報にアクセス可能にしました。\n- **Markdownネイティブ対応**: 全てのHTMLページをMarkdown形式（`.md`）で提供。HTMLのナビゲーションやスクリプトを排除しつつ、型定義などの動的コンポーネントをコンテンツとして含めることで、エージェントの消費トークンを抑えつつ正確性を維持します。\n- **LLM向けメタデータの拡充**: ドキュメントの全体像を示す`llms.txt`や、推奨パターンをまとめた`agent-skills`を標準的な場所に配置し、エージェントが自律的に発見・学習できるようにしました。\n- **リファレンスの整合性修正**: 28個のファイルとリンクの不備を修正し、ライブラリの最新コードとドキュメントの同期を徹底しました。\nサイト全体の静的化により、エージェントの要求に対して約80msの高速レスポンスを実現しています。",
+    "topics": [
+      "Valibot",
+      "MCP",
+      "AI Coding Agents",
+      "LLMs",
+      "Documentation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Making Valibot easier for coding agents to use"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:40:44.688190+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "首掛け型ウェアラブル THINKLET と OpenAI Realtime API で「目の前を一緒に見ながら相談できる相方」を作る",
+    "url": "https://zenn.dev/yujif/articles/90696ac3f098e2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "首掛け型デバイスTHINKLETとOpenAI Realtime APIを連携させ、一人称視点の映像を共有しながらハンズフリーで音声対話できるAIコンパニオンの実装事例。",
+    "summaryBody": "首掛け型ウェアラブルデバイス「THINKLET」のカメラとマイクをOpenAI Realtime APIに接続し、ユーザーと同じ視界を共有するAIエージェントを開発した記録です。主な活用例として、両手が塞がる調理中のレシピ相談や、目の前の光景を題材にした即興英語練習が紹介されています。実装面ではAndroid（Kotlin/CameraX）を使用し、コスト抑制のために動画ではなく2秒間隔の静止画（640x480）を送信する工夫や、API利用料が一定額に達した際の自動停止機能を導入しています。実際の使用検証から、調理現場での騒音問題やネットワーク帯域（5GHz帯の推奨）といったハードウェア・環境特有の知見も共有されており、ソースコードはOSSとして公開されています。",
+    "topics": [
+      "THINKLET",
+      "OpenAI Realtime API",
+      "ウェアラブル",
+      "Android",
+      "エッジAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

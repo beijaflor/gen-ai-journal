@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:52:33.425634+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの冗長な出力をローカルLLMで整理するツール「Vomit」",
+    "url": "https://github.com/zachahn/vomit",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeなどが生成する過剰で冗長な出力を、ローカルLLMを介して読みやすい形式に変換・クリーンアップするCLIツール。",
+    "summaryBody": "Vomitは、Claude（特にClaude Code等のCLI環境）が出力する「トークンの吐瀉物（Vomit）」と揶揄されるような冗長なテキストを、ローカルLLMにパイプして簡潔な表現に変換するGo製のツールです。OllamaやLlama.app、OpenAI互換APIをバックエンドとして利用でき、完全にローカルで動作するためプライバシーも保たれます。Claudeの出力をフックしてリアルタイムに書き換える「scrub」モードや、既存のセッションを監視して翻訳・整理する「tail」モードを備えています。Claudeの饒舌すぎる回答による可読性の低下や、開発者の認知負荷を軽減することを目的としています。",
+    "topics": [
+      "Claude",
+      "LLM",
+      "CLIツール",
+      "トークン最適化",
+      "ローカルAI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 78,
+      "annexPotential": 40,
+      "overall": 82
+    },
+    "originalTitle": "GitHub - zachahn/vomit: Clean up Claude 5's token vomit with a separate LLM. Save your tokens, Claude 5 is hopeless"
+  }
+}

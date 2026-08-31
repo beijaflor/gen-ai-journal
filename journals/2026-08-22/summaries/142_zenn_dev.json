@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:43:35.561833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントが実装するUIの品質を上げるためにやったこと",
+    "url": "https://zenn.dev/moshjp/articles/39972d023f0440",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "デザインシステムの情報一元化、AI専用プロンプト（Agent Skill）の定義、Linterによる制約、テンプレート生成の組み合わせにより、コーディングエージェントによるUI実装の精度を向上させた事例。",
+    "summaryBody": "MOSH株式会社が、AI（コーディングエージェント）によるUI実装の品質を向上させるために取り組んだ一連の施策を解説しています。主な課題は、Figma、Notion、Storybookに情報が分散していることや、AIがデザインガイドラインを無視して独自の実装を行うことでした。これを解決するために、まずStorybookのJSDocにFigma/NotionのURLを紐付けてAIが参照可能にしました。次に、Claude Code等のエージェントに「design-context」「design-review」「design-principles」といった特定の役割（Skill）を与え、実装方針の策定やガイドラインに基づいたレビューを自動化。さらに、BiomeのLinterルールをカスタマイズして不適切なスタイル指定を機械的に排除し、Plopを用いたレイアウトテンプレートの自動生成（add-routeコマンド）を導入することで、ワンショットで高品質なUIが生成できる環境を構築しました。最終的に、エンジニア以外でもプロトタイプを作成しやすく、実装へ転用しやすいフローを実現しています。",
+    "topics": [
+      "デザインシステム",
+      "コーディングエージェント",
+      "Claude Code",
+      "フロントエンド",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

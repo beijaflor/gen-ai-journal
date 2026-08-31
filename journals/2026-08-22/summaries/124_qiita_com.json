@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:48:21.467556+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに動画を見せる /watch-video、実は「渡すだけ」じゃなかった — 3つの深さを使い分ける",
+    "url": "https://qiita.com/jqit_suwa/items/fe5975104ffefa49f632",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの動画解析スキル「/watch-video」における3つの解析モード（transcript, visual, multimodal）の仕様と、コスト・用途に応じた最適な使い分けを詳しく解説しています。",
+    "summaryBody": "Claude Codeの拡張プラグイン「Maker Skills」に含まれる`/watch-video`コマンドの内部仕様と使いこなしに関する解説です。本コマンドは単に動画を投げるだけではなく、用途に応じて3つの深度設定（transcript、visual、multimodal）を使い分ける必要があります。既定の`transcript`モードでは文字起こしとメタデータのみを取得するため、画像解析が必要なデモ動画などでは明示的に`visual`以上を指定しなければなりません。記事では、動画の性質（画面共有、トーク等）に応じてフレーム抽出の間隔が5秒から30秒まで自動調整される仕組みや、`yt-dlp`や`ffmpeg`といった必要な外部ツール、そしてYouTube等のプラットフォーム字幕を優先的に利用する効率的な文字起こしプロセスについても触れています。解析結果を`/decide`や`/pm`といった他のスキルに受け渡す、AIエージェントとしての実用的なワークフロー設計が示されています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "makerskills",
+      "動画解析",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

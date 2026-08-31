@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:00:05.491326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのテールレイテンシを改善するシンプルな修正方法",
+    "url": "https://engineering.myhoai.com/posts/a-simple-fix-for-llm-tail-latency/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "高価な優先ティアを契約する代わりに、同じLLMリクエストを並列で2回送信し、速い方のレスポンスを採用することでテールレイテンシを劇的に改善できる。",
+    "summaryBody": "音声AIエージェントのようにリアルタイム性が極めて重要なプロダクトにおいて、稀に発生するLLMの応答遅延（テールレイテンシ）はユーザー体験を大きく損なう原因となる。この記事では、OpenAIやAnthropicが提供する高コストな「優先ティア（Priority Tier）」を利用するよりも、標準ティアで「リクエストを同時に2回送信し、先に返ってきた方を採用する」というヘッジング手法の方が、P99（上位1%の遅延）を大幅に短縮できることを実証している。ベンチマークの結果、最悪ケースの応答完了時間は9.8秒から3.5秒へと削減され、コストが2倍になる点は優先ティアと同じでありながら、より高い安定性を確保できることが示された。",
+    "topics": [
+      "LLM",
+      "Latency Optimization",
+      "Real-time AI",
+      "Performance Benchmarking",
+      "Voice Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "A simple fix for LLM tail latency"
+  }
+}

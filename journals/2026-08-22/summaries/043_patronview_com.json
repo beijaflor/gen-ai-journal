@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:08:19.488377+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ウェブサイトトラフィックの99%がボットだった話：150万ページの個人サイトによる1年間の死闘記録",
+    "url": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "150万ページを抱えるデータベースサイトの運営者が、AIクローラーやボットネットによる膨大なアクセスを遮断し、サーバー負荷と闘った1年間の技術的な詳細を公開しています。",
+    "summaryBody": "米国慈善家データベース「PatronView」の運営者による、Webサイトへのボット攻撃との戦いの記録です。実トラフィックの99%以上がボットであり、特にClaudeやAmazonなどのAIクローラーがリファラルをほとんど送らずに膨大なページをスクレイピングしている現状を、「ページクロール数対流入数」の比率で数値化しています。記事では、Cloudflareを活用した具体的な対策として、特定の国のブロック、データセンターASNの制限、古いブラウザ（Frozen User-Agents）へのチャレンジ発行、レート制限などのWAFルールをコードレベルで公開。また、JavaScriptベースの解析ツールでは見えないサーバー負荷の実態や、ボット対策スクリプトがサイトパフォーマンスを低下させていた事例など、運用面での貴重な教訓がまとめられています。",
+    "topics": [
+      "Web Scraping",
+      "Bot Mitigation",
+      "Cloudflare WAF",
+      "AI Crawlers",
+      "Website Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "99% of My Website Traffic Is Bots"
+  }
+}

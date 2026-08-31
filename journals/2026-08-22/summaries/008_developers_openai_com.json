@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:17:07.186397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プラットフォームとしてのCodex：オープンなエージェント・ハーネス上での構築",
+    "url": "https://developers.openai.com/blog/codex-as-a-platform",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは、Codexを単なるアプリではなくプラットフォームとして定義し、推論やツール利用を制御するオープンソースの「ハーネス」を通じて、既存の専門的なワークフローにAIエージェントを統合する手法を公開しました。",
+    "summaryBody": "OpenAIは、Codexの基盤となる実行システム「ハーネス（Harness）」をオープンソースとして提供し、開発者が独自のアプリケーションに高度なエージェント機能を組み込めるようにしました。ハーネスは、モデルがコンテキストを収集し、推論を行い、ツールを操作し、人間の承認を得るための一連のループを管理します。この設計の最適化により、GPT-5.6 SolのARC-AGI-3スコアが13.3%から38.3%に向上するなど、モデルの性能を最大限に引き出すことが実証されています。\n\n開発者は以下の3つのレイヤーで統合を選択できます：\n1. **codex exec**: CI/CDやバックグラウンドタスクなどの非対話型ジョブ用。\n2. **Codex SDK**: アプリケーションからプログラム的にエージェントタスクを開始・管理。\n3. **Codex app-server**: 永続的な会話、イベントストリーミング、複雑な承認フローを伴う製品統合用。\n\nこれにより、汎用的なチャットUIに頼るのではなく、セキュリティ調査、顧客サポート、税務業務など、既存のダッシュボードや専門ツールの中にエージェントを自然な形で配置することが可能になります。すでにGitHubやCisco、Thrive Holdingsなどがこの仕組みを活用し、実務に特化したAI統合を実現しています。",
+    "topics": [
+      "OpenAI",
+      "Codex",
+      "AIエージェント",
+      "オープンソース",
+      "SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Codex as a platform: build on the open agent harness"
+  }
+}

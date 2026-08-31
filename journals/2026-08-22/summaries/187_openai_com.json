@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:34:38.288160+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サイバー攻撃能力の進化に伴うモデル開発のペース調整について",
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIは、次世代モデル「Astra」が高度なサイバー攻撃能力を持つ可能性を考慮し、安全策の強化とモニタリング体制の構築を優先するため、フロンティアモデルの開発ペースを一時的に抑制することを明らかにしました。",
+    "summaryBody": "OpenAIは、フロンティアモデルがサイバーセキュリティ上の重大なリスク（Critical capability）に達しつつある現状を受け、開発・学習プロセスにおける安全基準を大幅に強化したことを発表しました。具体的には、開発中のモデル「Astra」がサイバー能力の閾値を超える予兆が見られたこと、および過去のインシデントを踏まえ、強化学習（RL）を含む研究活動を一時停止し、以下の対策を講じています。\\n\\n1. **環境のセキュア化**: ワークロードの隔離（サンドボックス化）の義務付け、ネットワークのさらなる隔離、およびAIモデルを活用した継続的なセキュリティ脆弱性診断の導入。\\n2. **思考の連鎖（CoT）モニタリング**: モデルの内部活動をリアルタイムで監視する多段階システムを導入し、不正アクセスや破壊行動の兆候を検知。異常検知から30分以内の対応・停止体制を構築。\\n3. **アライメント研究の深化**: 報酬ハッキングや欺瞞的行動を防ぐため、トレーニングの全段階で報酬モデルの改善と正直さの訓練を強化。\\n\\n同社は、モデルの能力向上に合わせて安全技術もスケーラブルに進化させる必要性を強調し、透明性を持ってこれらの取り組みを継続するとしています。",
+    "topics": [
+      "AI安全",
+      "サイバーセキュリティ",
+      "OpenAI Astra",
+      "AIアライメント",
+      "リスク管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Pacing model development in an era of cyber-critical capabilities | OpenAI"
+  }
+}

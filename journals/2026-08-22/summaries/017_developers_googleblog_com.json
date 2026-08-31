@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:14:46.371798+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GoogleのAgent Development Kit (ADK) を使用したゼロトラストAIエージェントの構築",
+    "url": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントが自律的に実行・操作を行う環境において、システムプロンプトに頼らない3つのセキュリティレイヤー（署名・隔離・検証）によるゼロトラスト・アーキテクチャの構築手法を解説しています。",
+    "summaryBody": "AIエージェントがデータベースの更新や動的なコード実行を伴うようになる中、従来の境界型セキュリティやシステムプロンプトのみによる制約は、プロンプトインジェクション等の攻撃に対して不十分です。本記事では、GoogleのAgent Development Kit (ADK) を用いて、モデルが侵害されたことを前提とした「ゼロトラスト」な防御レイヤーを構築する手法を提案しています。具体的には、以下の3つの柱で構成されます。\n\n1. **暗号化された書き込み署名**: Cloud KMSを使用し、エージェントによる全てのDB操作にハードウェアベースの署名を付与することで、非否認性と改ざん検知を保証します。\n2. **gVisorによるコード実行の隔離**: エージェントが生成したコードを、ネットワーク接続を遮断しリソースを制限したユーザー空間カーネル（gVisor）で実行し、ホスト環境への影響を防ぎます。\n3. **決定論的なセマンティック・ゲートウェイ**: LLMの入出力をフィルタリングし、PIIの漏洩やビジネスルール（返金上限など）の逸脱を決定論的なルールでブロックします。\n\nこれらの手法により、自律的な推論能力を活かしつつ、インフラ層での硬い制約によってセキュリティを担保する設計が可能になります。",
+    "topics": [
+      "AI Agents",
+      "Zero Trust",
+      "Google Cloud",
+      "ADK",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Build zero-trust AI agents with Google's Agent Development Kit"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:43:23.366843+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS の新ポリシー言語 Dogwood を試す",
+    "url": "https://zenn.dev/exwzd/articles/20260813-dogwood-agent-policy",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSが発表した「Dogwood」は、AIエージェントの過去の行動履歴（temporal条件）に基づいた認可制御を可能にするCedar互換のポリシー言語です。",
+    "summaryBody": "2026年8月にAWSが発表したオープンソースのポリシー言語「Dogwood」についての技術解説記事です。従来の認可言語Cedarが単一リクエストを独立して評価する「Point-in-Time」認可であったのに対し、Dogwoodは『過去1時間以内に承認を得ているか』や『機密情報を閲覧した後は外部送信を禁止する』といった、実行履歴に依存する制約を宣言的に記述できます。記事では、Rust製のCLIを用いたローカル環境でのポリシー検証、イベント履歴（トレース）に基づく判定のシミュレーション（replay）、さらにAmazon Bedrock AgentCoreでの「temporal policies」としての運用について解説。ステートフルになることによるパフォーマンスや解析上のトレードオフについても触れています。",
+    "topics": [
+      "AWS",
+      "Dogwood",
+      "Cedar",
+      "AI Agent",
+      "認可 (Authorization)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

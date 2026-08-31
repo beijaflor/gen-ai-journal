@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T14:13:31.115851+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIがコードを書く時代、仕様書には「退場戦略」が必要だ",
+    "url": "https://www.oreilly.com/radar/when-ai-writes-the-code-specifications-need-an-exit-strategy/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるコード生成が加速する中、自然言語の仕様書をコードの永続的なコピーとして維持するのではなく、変更時の「デルタ」を定義する一時的な存在とし、完了後はエンジニアリング資産へ知識を移行すべきだと説く。",
+    "summaryBody": "AIを活用したソフトウェア開発では、仕様書や設計メモなどのMarkdownファイルが大量に生成され、実際のコードとの乖離が急速に進む「文書の肥大化」が課題となっている。著者のMarkus Eisele氏は、自然言語の仕様書を「永続的なソフトウェアのコピー」として扱うのではなく、次の変更内容（デルタ）を定義するための一時的な「チェンジブリーフ」として運用することを提言している。開発完了後は、重要な知識をOpenAPI等のスキーマ、テストコード、アクセスポリシー、テレメトリといった「実行可能で維持可能なエンジニアリング資産」へと移行し、不要になった思考プロセスはコンテキストから排除すべきである。これにより、AIエージェントの限られたコンテキストウィンドウを有効活用し、情報のノイズを減らして開発の正確性を高めることができる。",
+    "topics": [
+      "AI Coding Agents",
+      "Software Specification",
+      "Documentation Strategy",
+      "Context Engineering",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "When AI Writes the Code, Specifications Need an Exit Strategy"
+  }
+}

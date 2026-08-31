@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-22T13:42:37.691961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに見せない技術: AIに入力できないデータを分析する",
+    "url": "https://zenn.dev/green_tea/articles/a994964786cb4f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeで機密データをAIから遮断しつつ安全にデータ分析を行うための5層の防御策と、その設定が劣化していないかを自動検証する仕組みを解説した実践的なガイド。",
+    "summaryBody": "Claude Codeを用いたデータ分析において、個人情報などの機密データをAIに送信せずに安全に作業するための多層防御（Defense in Depth）戦略を解説しています。主な対策は以下の5つのレイヤーで構成されます。1. **データ分離(L0)**: 機密データをプロジェクト外に隔離し、ダミーデータと.envによるパス切り替えで運用。2. **permissions(L1)**: settings.jsonのdeny設定でツールからの直接読み取りを制限。3. **sandbox(L2)**: OSレベルの隔離機構でサブプロセス経由の読み取りや外部通信を遮断。4. **hooks(L3)**: PreToolUseフックを用い、参照先が機密データのままの実行やNotebookの実行結果が残った状態を検知して停止。5. **運用ルール(L4)**: 実データ実行は人間が行い、AIにはスキーマ情報のみを共有する。さらに、これらの設定が有効であることをUserPromptSubmitやCIで自動検証し、カナリアテストで遮断の実効性を確認する仕組みについても詳述されています。",
+    "topics": [
+      "Claude Code",
+      "生成AIセキュリティ",
+      "データ分析",
+      "多層防御",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

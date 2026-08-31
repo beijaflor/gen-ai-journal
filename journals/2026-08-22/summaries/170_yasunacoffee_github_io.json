@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-08-23T00:38:33.443422+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自作ルール1本をOpus 5のときだけ注入したら、いい感じになった",
+    "url": "https://yasunacoffee.github.io/yasuna-tech/posts/agent-rule-1hon-de-iikanji/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのUserPromptSubmitフックを用いて、Opus 5使用時のみ過去の失敗パターンに基づくカスタムルールを自動注入し、エージェントの挙動を劇的に改善した手法の紹介。",
+    "summaryBody": "本記事は、AIエージェント「Claude Code」において、特定のモデル（Opus 5）の特性に合わせた最適化手法を解説しています。主な内容は、`UserPromptSubmit`フックを利用してモデルIDを動的に判定し、特定のルールを毎発話の直前に挿入する仕組みの構築です。ルールの中身は「あるべき論」ではなく、自身の800MBに及ぶセッションログから抽出した「6つの失敗パターン（描写の定型化や役割の誤認など）」に基づいています。これにより、トークンコストを抑えつつ、モデルが指示を無視したり思考を端折ったりする問題を効果的に抑制できました。実装の詳細（シェルスクリプトによるモデル判定の工夫や、表記ゆれへの対応）や、導入後の効果測定についても具体的な痕跡（Trace）を元に論じています。",
+    "topics": [
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "Claude 3 Opus",
+      "カスタマイズ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    }
+  }
+}
