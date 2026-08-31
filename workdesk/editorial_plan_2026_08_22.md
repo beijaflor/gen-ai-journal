@@ -237,6 +237,29 @@ Claude Code／Cursor／Codexのallowlistが破れる実CVE、プロンプトイ�
 
 ---
 
+## STEP_04 Curation Result
+
+**Curated main = 36 articles across 8 themes** (candidate pool 45 → trimmed 9 to annex).
+Partition clean: main 36 + non_main 157 = 193, 0 overlap, union == all.
+
+**Final main counts:** T1=4 (008/077/066/187) · T2=4 (009/125/072/087) ·
+T3=5 (069/159/083/144/136) · T4=5 (191/190/175/161/196) · T5=3 (095/192/049) ·
+T6=5 (060/023/186/140/121) · T7=5 (131/132/137/122/146) · T8=5 (073/102/112/058/195).
+
+**Trimmed from candidate pool → annex (theme-overflow, STEP_05 decides):**
+- 093 (Sol/Devin promo — weakest of T1, marketing)
+- 108 (Ox Alpha stealth) + 164 (Qwen 30億DL adoption-news) — T2 kept the 4 perf/price analyses
+- 119 (Qwen WSL2 review — 3rd Qwen-local, kept 069+159)
+- 165 (Trump AI-bloc — geopolitics, kept T4 LLM-focused)
+- 100 (AI exhaust — leadership hot-take, kept 5 stronger dev pieces)
+- 143 (AWS Dogwood — 3rd AWS-authz piece, kept OBO 137 + masking 122)
+- 106 (Vomit — dup cleanup tool vs Unslop 058) + 180 (write-for-humans — writing guide)
+
+*36 is at the top of the ~30–36 target, consistent with prior 8-theme cycles (31/35/36).*
+*Note: T7 carries three ryoji9702 pieces (131/132/122) — distinct sub-topics (CVE/injection/masking).*
+
+---
+
 ## Review Notes (Human Editor)
 
 **Date Reviewed:** 2026-08-30
