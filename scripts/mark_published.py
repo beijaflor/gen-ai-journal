@@ -94,14 +94,25 @@ def mark_all_null(journal_date: str) -> int:
     return len(response.data) if response.data else 0
 
 
+def parse_args(argv):
+    """Parse CLI args → (journal_date, all_null, assume_yes).
+
+    Raises ValueError if there is not exactly one positional date argument.
+    """
+    all_null = "--all-null" in argv
+    assume_yes = ("--yes" in argv) or ("-y" in argv)
+    positional = [a for a in argv if a not in ("--all-null", "--yes", "-y")]
+    if len(positional) != 1:
+        raise ValueError("expected exactly one positional YYYY-MM-DD argument")
+    return positional[0], all_null, assume_yes
+
+
 def main():
-    args = sys.argv[1:]
-    all_null = "--all-null" in args
-    args = [a for a in args if a != "--all-null"]
-    if len(args) != 1:
-        print("Usage: uv run scripts/mark_published.py YYYY-MM-DD [--all-null]")
+    try:
+        journal_date, all_null, assume_yes = parse_args(sys.argv[1:])
+    except ValueError:
+        print("Usage: uv run scripts/mark_published.py YYYY-MM-DD [--all-null] [--yes|-y]")
         sys.exit(1)
-    journal_date = args[0]
     if not validate_date_format(journal_date):
         print(f"❌ Invalid date format: {journal_date}  (expected YYYY-MM-DD)")
         sys.exit(1)
@@ -113,10 +124,13 @@ def main():
     if all_null:
         print("⚠️  --all-null can sweep unrelated unmarked rows into this date. Use only intentionally.")
     print("")
-    confirm = input(f"Set journal_date={journal_date} for {mode}? Continue? (yes/no): ")
-    if confirm.lower() not in ["yes", "y"]:
-        print("Cancelled.")
-        sys.exit(0)
+    if assume_yes:
+        print(f"Set journal_date={journal_date} for {mode}? --yes given, proceeding.")
+    else:
+        confirm = input(f"Set journal_date={journal_date} for {mode}? Continue? (yes/no): ")
+        if confirm.lower() not in ["yes", "y"]:
+            print("Cancelled.")
+            sys.exit(0)
 
     try:
         count = (mark_all_null if all_null else mark_scoped)(journal_date)
