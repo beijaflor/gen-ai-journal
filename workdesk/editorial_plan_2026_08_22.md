@@ -19,6 +19,11 @@
 > - **Dropped the LLM内部構造・創発 theme** (003/174/056) → flagged for annex.
 > - Approved the remaining **8 themes**.
 >
+> **Round 3 revision (during STEP_05 annex review, user-directed):**
+> - **Promoted a new main theme from annex candidates**: T9 AI学習データ (068/110/052/075).
+>   User spotted 068/110 as a standalone story; scoped to 4 (books-focused) via
+>   AskUserQuestion. Main total → **40 across 9 themes**.
+>
 > Candidate pools total ~45. STEP_04 trims each theme to ~4–5 leads,
 > targeting ~30–36 main articles; the remainder joins the annex.
 
@@ -162,6 +167,24 @@ Claude Code／Cursor／Codexのallowlistが破れる実CVE、プロンプトイ�
 
 ---
 
+### Theme 9: 希少本破壊・Anna's Archive・Meta×Newsmaxに見るAI学習データの調達と汚染
+
+**Articles (IDs):** 068, 110, 052, 075
+
+**Theme Introduction (2-3 sentences):**
+AIの学習データはどこから来るのか。404 Mediaの追跡調査が暴いたAmazonによる希少本の買い占めとスキャン後の破壊、それに抗して破壊前の書籍をデジタル保存しようと呼びかけるAnna's Archive、右派メディアNewsmaxを学習データに採用したMeta、そしてAIチャットボットを狙った偽シンクタンクによる情報汚染工作を扱う。データの取得手段とその整合性という、モデルの土台を巡る攻防を追う。
+
+**Editorial Notes:**
+- 068: 希少本を追跡して判明したAmazonのAI学習施設——スキャン後に書籍を破壊（404 Media 調査報道）
+- 110: AI企業による物理書籍の破壊に対し、Anna's Archiveが有志のデジタル保存を呼びかけ
+- 052: MetaがAI学習データとして右派メディアNewsmaxと提携——誤情報反映の懸念
+- 075: イスラエルが偽シンクタンクを設立、AIチャットボットへの情報汚染（LLM poisoning）工作
+
+*Round 3 addition (user-directed during STEP_05). Scoped to 4 books/data-focused
+articles; the web-scraping layer (016/043/105) was offered but left in annex.*
+
+---
+
 ## Highlight Draft ("今週のハイライト")
 
 **今週の主な話題:**
@@ -177,6 +200,7 @@ Claude Code／Cursor／Codexのallowlistが破れる実CVE、プロンプトイ�
 3. コーディングエージェントのセキュリティ・認可（allowlist CVE / OBO / Dogwood）
 4. AIと数学（タオのエッセイ / Lean形式化 / ワーキングメモリ）
 5. AI;DR・AIブラインドに見る無編集AI生成物への拒絶（今週は特に厚い）
+6. AI学習データの調達と汚染（希少本破壊 / Anna's Archive / Meta×Newsmax / LLM汚染工作）
 
 ---
 
@@ -220,31 +244,34 @@ Claude Code／Cursor／Codexのallowlistが破れる実CVE、プロンプトイ�
 - Main Journal: ~30–36 articles across 8 themes（候補45、STEP_04で各テーマ4–5本に絞る）
 - Annex Journal: 上記 annex-bound + Supabase 24候補を STEP_05 で確定
 
-**Candidate Count by Theme (pre-trim):**
-- Theme 1 (OpenAI): 5
-- Theme 2 (他モデル): 6
-- Theme 3 (ローカル/エッジ): 6
-- Theme 4 (日本語/ソブリン): 6
+**Final Main Count by Theme:**
+- Theme 1 (OpenAI): 4
+- Theme 2 (他モデル): 4
+- Theme 3 (ローカル/エッジ): 5
+- Theme 4 (日本語/ソブリン): 5
 - Theme 5 (AI×数学): 3
-- Theme 6 (開発の役割転換): 6
-- Theme 7 (セキュリティ/認可): 6
-- Theme 8 (AI;DR): 7
+- Theme 6 (開発の役割転換): 5
+- Theme 7 (セキュリティ/認可): 5
+- Theme 8 (AI;DR): 5
+- Theme 9 (AI学習データ): 4
 
-**Total candidate pool:** 45
-**Planned Main after STEP_04 trim:** ~30–36
+**Total main:** 40 across 9 themes
+**Non-main:** 153
 
-*Note: 8 themes, within the 5–8 guideline. Theme 5 (AI×math) is a 3-article theme with documented justification above.*
+*Note: 9 themes (one above the 5–8 guideline) after the Round 3 training-data addition.
+Theme 5 (AI×math) is a 3-article theme with documented justification above.*
 
 ---
 
 ## STEP_04 Curation Result
 
-**Curated main = 36 articles across 8 themes** (candidate pool 45 → trimmed 9 to annex).
-Partition clean: main 36 + non_main 157 = 193, 0 overlap, union == all.
+**Curated main = 40 articles across 9 themes** (Round 3 added T9 training-data theme).
+Partition clean: main 40 + non_main 153 = 193, 0 overlap, union == all.
 
 **Final main counts:** T1=4 (008/077/066/187) · T2=4 (009/125/072/087) ·
 T3=5 (069/159/083/144/136) · T4=5 (191/190/175/161/196) · T5=3 (095/192/049) ·
-T6=5 (060/023/186/140/121) · T7=5 (131/132/137/122/146) · T8=5 (073/102/112/058/195).
+T6=5 (060/023/186/140/121) · T7=5 (131/132/137/122/146) · T8=5 (073/102/112/058/195) ·
+T9=4 (068/110/052/075).
 
 **Trimmed from candidate pool → annex (theme-overflow, STEP_05 decides):**
 - 093 (Sol/Devin promo — weakest of T1, marketing)
@@ -268,6 +295,7 @@ T6=5 (060/023/186/140/121) · T7=5 (131/132/137/122/146) · T8=5 (073/102/112/05
 **Changes Made:**
 - Round 1: split old T1 → OpenAI + Other models; dropped economy/regulation/watermark theme → annex; split internals/math → 内部構造 + AI×数学; tightened local/edge, Japan, dev (role-shift), security (execution+authz); refocused AI;DR
 - Round 2: dropped the LLM内部構造・創発 theme (003/174/056) → annex; approved the remaining 8 themes
+- Round 3 (during STEP_05): promoted a new main theme T9 AI学習データ (068/110/052/075) from annex candidates; main → 40 across 9 themes
 
 **Approval:** ✅ APPROVED
 

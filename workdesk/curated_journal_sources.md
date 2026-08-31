@@ -59,3 +59,10 @@
 - [ ] 112. https://cymerys.com/w/im-becoming-ai-blind
 - [ ] 058. https://unslopai.com/
 - [ ] 195. https://forbesjapan.com/articles/detail/103028
+
+## Theme T9: 希少本破壊・Anna's Archive・Meta×Newsmaxに見るAI学習データの調達と汚染
+
+- [ ] 068. https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility/
+- [ ] 110. https://annas-archive.gl/blog/physical-destruction.html
+- [ ] 052. https://popular.info/p/meta-will-train-its-ai-on-far-right
+- [ ] 075. https://responsiblestatecraft.org/israel-influence-chatgpt/
