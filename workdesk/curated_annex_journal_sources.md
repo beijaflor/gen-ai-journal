@@ -2,8 +2,11 @@
 
 ## Curation Status
 - [x] AI candidate pool generated
-- [ ] Human review completed
-- [ ] APPROVED - Ready for STEP_06
+- [x] Human review completed
+- [x] APPROVED - Ready for STEP_06
+
+<!-- Approved 2026-08-31: 34 selected (see curated_annex_selected.md). Human curated in Zed. -->
+<!-- 068/110/075 promoted to main T9 (Round 3); 052 was never in this pool. -->
 
 <!-- Review: check [x] to include, remove line to exclude. Target ~25-35 final. -->
 <!-- Pre-checked = confident include; unchecked [ ] = borderline/adjacent/dup, opt-in. -->
