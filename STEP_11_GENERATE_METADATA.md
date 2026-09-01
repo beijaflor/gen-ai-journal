@@ -1,5 +1,15 @@
 # Step 11: Generate Journal Metadata
 
+> **⚠️ DEPRECATED (folded into STEP_10, #209).**
+> `journal-metadata.json` is now written **and validated** automatically by
+> `scripts/archive_journal.py` as part of STEP_10 archiving — you no longer run a
+> separate metadata step. The script counts `mainSummaries`/`annexSummaries` from
+> the assembled `00`/`01` files (H3 count), `omittedSummaries` from the freshly
+> built `02_omitted_summaries.md`, and `totalSummaries` from the archived
+> `summaries/*.json`, then asserts `main + annex + omitted == total`. The workflow
+> is now **13 steps** (STEP_01 → STEP_10 → STEP_12 → …). This file is kept only as
+> a description of the metadata format the script produces.
+
 This step creates the mandatory `journal-metadata.json` file containing summary statistics for the journal. This file is **required** for the website to build correctly.
 
 ### Process
