@@ -1,6 +1,6 @@
 ---
 name: human-review-gate
-description: Blocking human review gate for AI-drafted planning documents. Opens the file in a tmux popup with vim, blocks until the editor closes, and verifies an approval marker. Use at every "AI drafts → human reviews → AI proceeds" handoff (STEP_03b editorial plan, STEP_07 assembly strategy, etc.).
+description: Blocking human review gate for AI-drafted planning documents. Default path is a chat-based AskUserQuestion approval (human reviews in their own editor — Zed, VS Code, etc.); a tmux+vim popup is an alternative. Verifies an approval marker on disk. Use at every "AI drafts → human reviews → AI proceeds" handoff (STEP_03b editorial plan, STEP_07 assembly strategy, etc.).
 allowed-tools: Bash, Read, Edit, AskUserQuestion
 ---
 
@@ -26,6 +26,21 @@ Do **not** use this skill for:
 - Quick yes/no confirmations (use `AskUserQuestion` directly).
 - Reviewing diffs or PRs (use `gh pr review`).
 - Soliciting feedback on a draft that has not yet been written to a file.
+
+## Two paths (AskUserQuestion is the default)
+
+Both paths end with a verified approval marker on disk and an auditable trail:
+
+1. **`AskUserQuestion` approval (default / first-class).** The human reviews the
+   file in their own editor (Zed, VS Code, JetBrains, plain terminal — anything),
+   then selects "Approved" in a structured `AskUserQuestion` that names the file;
+   the agent flips the marker with `Edit` and re-greps. **Use this by default**,
+   and always when not inside tmux or when the human uses a GUI editor.
+2. **tmux + vim popup (alternative).** For users running Claude Code inside tmux
+   who prefer to edit in place, `scripts/review_in_popup.sh` opens the file in a
+   blocking vim popup where the human flips the marker.
+
+Take the popup only when the human opts into it; otherwise use `AskUserQuestion`.
 
 ## Contract
 
@@ -167,9 +182,10 @@ captured by this skill or an explicit `AskUserQuestion`-mediated approval.
 - ❌ Does NOT silently retry on failure; on exit 1, surface the failure to
   the user and ask through `AskUserQuestion` before retrying or flipping.
 
-## Why a tmux Popup (Primary Path)
+## Why a tmux Popup (Alternative Path)
 
-The popup gives, when used:
+The default is `AskUserQuestion` (§ Two paths). The popup is an alternative for
+tmux users; when used it gives:
 
 - **Synchronous blocking.** The agent's `Bash` call only returns when vim exits.
 - **Full-file context.** The human sees the entire document in one place.

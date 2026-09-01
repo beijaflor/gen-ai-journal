@@ -4,7 +4,7 @@ This step introduces strategic editorial planning by identifying weekly themes B
 
 ## Objective
 
-Analyze all collected summaries, identify 5-8 cohesive themes, and create an editorial roadmap that guides subsequent curation and assembly steps.
+Analyze all collected summaries, identify 6-9 cohesive themes, and create an editorial roadmap that guides subsequent curation and assembly steps. (Observed range; the golden 2026-08-22 cycle ran 9 themes.)
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Analyze all collected summaries, identify 5-8 cohesive themes, and create an edi
 
 #### 3. Generate Initial Theme Proposals
 
-**AI Task:** Identify 5-8 potential themes based on:
+**AI Task:** Identify 6-9 potential themes based on:
 
 - **Human Curation Signals** (from curation_flags.md, if available):
   - ⭐ Standout articles should anchor or define themes
@@ -158,7 +158,7 @@ Other working patterns (when the items themselves naturally signal the topic):
 #### 4. Map Articles to Themes
 
 - [ ] For each proposed theme, list candidate article IDs
-- [ ] Ensure coverage: aim for 18-25 articles in main journal themes
+- [ ] Ensure coverage: aim for ~30–40 articles across 6–9 main journal themes
 - [ ] Flag articles for annex journal (unique perspectives, niche topics)
 - [ ] Identify articles that span multiple themes
 
@@ -194,11 +194,22 @@ For each theme:
 **⚠️ WORKFLOW STOPS HERE - HUMAN APPROVAL REQUIRED ⚠️**
 
 This gate is enforced by the **`human-review-gate` skill**
-(`.claude/skills/human-review-gate/SKILL.md`). The agent invokes the skill;
-the skill opens the planning document in a tmux popup running vim, blocks
-until the human closes the editor, and verifies that a checked approval line
-is present. The agent **must not** check the approval line itself — the human
-authors it inside vim.
+(`.claude/skills/human-review-gate/SKILL.md`). The agent invokes the skill; the
+human reviews the planning document and approves it.
+
+**The default path is chat-based `AskUserQuestion` approval** — the human opens
+the file in their own editor (Zed, VS Code, etc.), reviews it, and selects
+"Approved" in the structured `AskUserQuestion`, after which the agent flips the
+approval marker. The **tmux + vim popup** (`scripts/review_in_popup.sh`) is an
+alternative for users running Claude Code inside tmux who prefer to edit in
+place; it is not required. Either way, the agent verifies the checked approval
+line on disk before proceeding, and never approves on its own judgment.
+The `AskUserQuestion` and popup paths both leave an auditable trail (the
+recorded choice + the file `git diff`).
+
+Below, the vim-popup steps are written out; if you are on the default
+`AskUserQuestion` path, the human reviews in their own editor and the agent
+flips the marker after the "Approved" selection (see the skill's §3/§4).
 
 #### 8. Review and Refine Editorial Plan (in vim popup)
 
@@ -229,7 +240,7 @@ The popup opens vim on the planning document. While inside the popup, the
   - Check: Do titles name specific technologies, people, events, or numbers?
   - Check: Are titles factual, not dramatic or narrative-heavy?
 - [ ] Are theme introductions factual and concise (not narrative-driven)?
-- [ ] Is the article distribution appropriate (18-25 main, rest annex)?
+- [ ] Is the article distribution appropriate (~30–40 main across 6–9 themes, rest annex)?
 - [ ] If any theme has fewer than 3 articles, is there documented justification? (Single-article themes are permitted for truly exceptional content — see STEP_04 Section 4 for criteria.)
 - [ ] Do themes align with curation_criteria.md principles?
 
@@ -353,7 +364,7 @@ When creating `workdesk/editorial_plan_YYYY_MM_DD.md`, use this structure:
 ## Theme Coverage Summary
 
 **Target Distribution:**
-- Main Journal: 18-25 articles across 6-7 themes
+- Main Journal: ~30–40 articles across 6–9 themes
 - Annex Journal: Remaining articles across 5-6 themes
 
 **Article Count by Theme (Planned):**

@@ -42,6 +42,9 @@ Notes:
 - `journal-metadata.json` is asserted `main + annex + omitted == total`.
 - Use `git rm` (not a bulk `rm`) for workdesk cleanup — the script does this and
   leaves `workdesk/.gitkeep`.
+- Naming convention (the script handles both): the journal **directory** and URL
+  segments are **hyphenated** (`journals/2026-08-22/…/main/`), while the archived
+  **filenames** are **underscore-dated** (`00_weekly_journal_2026_08_22.md`).
 - `--into DIR` is an **eval-only** target that skips every production side
   effect (used to reproduce a golden cycle into a temp dir).
 

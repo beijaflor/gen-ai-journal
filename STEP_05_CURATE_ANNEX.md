@@ -88,6 +88,14 @@ After writing the file, check off "AI candidate pool generated" in Curation Stat
 
 **Stop here. Do not proceed to STEP_06 until the human reviews and approves.**
 
+This gate uses the **`human-review-gate` skill**. The **default path** is a
+chat-based `AskUserQuestion` approval: the human reviews the annex selection in
+their own editor (Zed, VS Code, etc.) and selects "Approved", after which the
+agent flips the approval marker and verifies it on disk. The tmux+vim popup is
+an alternative for tmux users. After approving, regenerate `non_main_sources.md`
+and re-assert the partition (`uv run python -m scripts.workflow.partition
+YYYY-MM-DD`) so annex/omitted stay disjoint from main.
+
 Human review tasks:
 - [ ] Read each candidate and editorial comment
 - [ ] Check `[x]` on articles to include
