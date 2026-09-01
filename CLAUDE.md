@@ -1,6 +1,6 @@
 # Project Overview
 
-This repository creates weekly curated journals about Generative AI in coding, following a systematic 14-step workflow.
+This repository creates weekly curated journals about Generative AI in coding, following a systematic 13-step workflow (STEP_11 metadata generation is folded into STEP_10's `archive_journal.py`, #209).
 
 # Editorial Guidelines
 

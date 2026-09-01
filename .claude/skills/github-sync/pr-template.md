@@ -20,7 +20,7 @@ Examples:
 
 **Current Stage**: STEP_XX - [Stage Name]
 
-**Overall Progress**: X/14 steps (Y%)
+**Overall Progress**: X/13 steps (Y%)
 
 ---
 
@@ -106,7 +106,7 @@ When creating a new PR:
 Replace placeholders:
 - `YYYY-MM-DD`: Extract from sources.md title
 - `STEP_XX`: Current workflow step
-- `X/14 steps`: Count completed milestones
+- `X/13 steps`: Count completed milestones
 - Checklist: Mark completed steps with `[x]`, pending with `[ ]`
 - Metrics table: Fill with current counts from workdesk analysis
 - Recent updates: Compare with previous commit messages or list what changed
