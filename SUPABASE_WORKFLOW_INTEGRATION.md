@@ -1,6 +1,6 @@
 # Supabase Admin System - Workflow Integration Guide
 
-This document explains how the Supabase admin system integrates with the 14-step journal curation workflow.
+This document explains how the Supabase admin system integrates with the 13-step journal curation workflow.
 
 ## Overview
 
