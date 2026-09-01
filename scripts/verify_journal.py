@@ -238,23 +238,27 @@ def check_urls(rep, urls, workers=16):
               f"{len(broken)} broken" if broken else f"{len(ok)} ok / {len(blocked)} blocked")
 
 
-def verify(date, journals_dir="journals", skip_urls=False):
-    rep = Report()
-    weekly, annex, main_src, annex_src = _resolve_files(date, journals_dir)
+def verify_paths(date, weekly, annex, main_src, annex_src, skip_urls=False):
+    """Run every check against explicit file paths. Returns a Report.
 
+    Shared by verify_journal (post-archive) and stitch_qa (pre-archive, on the
+    just-assembled files), so both run exactly the same quality gate.
+    """
+    rep = Report()
     for label, p in (("weekly", weekly), ("annex", annex),
                      ("curated main", main_src), ("curated annex", annex_src)):
-        if not p.exists():
+        if not Path(p).exists():
             rep.check(False, f"input present: {label}", f"missing {p}")
     if not rep.ok:
         return rep
 
-    all_urls = check_coverage(rep, date, weekly, annex, main_src, annex_src)
-    check_leaks(rep, weekly, annex)
-    check_hierarchy(rep, "weekly", weekly)
-    check_hierarchy(rep, "annex", annex)
-    check_encoding(rep, "weekly", weekly)
-    check_encoding(rep, "annex", annex)
+    all_urls = check_coverage(rep, date, Path(weekly), Path(annex),
+                              Path(main_src), Path(annex_src))
+    check_leaks(rep, Path(weekly), Path(annex))
+    check_hierarchy(rep, "weekly", Path(weekly))
+    check_hierarchy(rep, "annex", Path(annex))
+    check_encoding(rep, "weekly", Path(weekly))
+    check_encoding(rep, "annex", Path(annex))
 
     if skip_urls:
         rep.note("   URL health: skipped (--skip-urls)")
@@ -262,6 +266,11 @@ def verify(date, journals_dir="journals", skip_urls=False):
         check_urls(rep, sorted(all_urls))
 
     return rep
+
+
+def verify(date, journals_dir="journals", skip_urls=False):
+    weekly, annex, main_src, annex_src = _resolve_files(date, journals_dir)
+    return verify_paths(date, weekly, annex, main_src, annex_src, skip_urls=skip_urls)
 
 
 def main():
