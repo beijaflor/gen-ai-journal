@@ -17,7 +17,7 @@ Create publication-ready journals that match the format of published examples (s
 - **Human Curation Flags:** `workdesk/curation_flags.md` (⭐ standout, 👍 upvote, 👎 downvote signals)
 - **Pattern Library:** `patterns/assembly/*.md` (reference for assembly strategies)
 - **Article Summaries:**
-  - `workdesk/unified_summaries_main.md` (18-25 articles)
+  - `workdesk/unified_summaries_main.md` (~30–40 articles)
   - `workdesk/unified_summaries_annex.md` (remaining articles)
 - **Source Lists:**
   - `workdesk/curated_journal_sources.md` (theme-organized from STEP_04)
@@ -68,7 +68,19 @@ STEP_08 is a **manual editorial process** split into 3 sub-steps:
 
 ### 2. Verify Assembly Strategies Make Sense
 
-**For Main Journal** (6-7 themes with assembly strategies):
+> **Source of truth for theme membership:** use
+> `workdesk/curated_journal_sources.md` for which article IDs belong to each
+> theme. The editorial plan's "Identified Themes" candidate lists go **stale**
+> after STEP_04 trims — do not assemble from them. (If you crossed a partition
+> boundary mid-cycle, that happened via
+> [STEP_04b_THEME_REVISION.md](STEP_04b_THEME_REVISION.md), which already
+> updated `curated_journal_sources.md`.)
+>
+> **Scaffolding:** `uv run scripts/gen_writer_prompts.py YYYY-MM-DD` emits one
+> writer prompt per theme (+ per annex section) carrying the theme intro,
+> assembly strategy, and article JSON paths — the writing itself stays editorial.
+
+**For Main Journal** (up to ~9 themes with assembly strategies):
 
 - [ ] Review each theme's assembly strategy in editorial plan:
   - Does the pattern choice still make sense?
@@ -547,7 +559,23 @@ rm temp_annex_journal_urls.txt temp_annex_sources.txt
 
 ## Automation Support (Optional)
 
-For teams preferring script-assisted assembly:
+**Stitch + QA (recommended).** When the theme/section drafts are written as
+fragments in a scratch dir (`weekly_header.md`, `main_theme_NN.md`,
+`weekly_outro.md`; `annex_header.md`, `annex_sec_NN.md`, `annex_outro.md`), one
+command concatenates them into the finished journals and runs the full
+pre-archive quality gate (coverage / leak-scan / hierarchy / encoding, and URL
+health unless `--skip-urls`):
+
+```bash
+uv run scripts/stitch_qa.py YYYY-MM-DD               # scratch=scratchpad/, out=workdesk/
+uv run scripts/gen_writer_prompts.py YYYY-MM-DD      # emit the writer prompts first
+```
+
+`stitch_qa` exits non-zero on any QA fault, so a leak or broken hierarchy is
+caught before archiving. It runs the **same** checks as `verify_journal`
+(STEP_09), on the just-assembled files.
+
+For teams preferring script-assisted extraction:
 
 ```python
 # Pseudocode for extraction script
@@ -586,7 +614,7 @@ Final journals must:
 - [ ] Include ALL URLs from curated source lists
 - [ ] Have no metadata remnants (scores, tags, etc.)
 - [ ] Contain 3-4 paragraph "今週のハイライト" meta-analysis
-- [ ] Organize articles into 5-7 thematic sections
+- [ ] Organize articles into 6-9 thematic sections (weekly); annex ~5-6 sections
 - [ ] Maintain consistent editorial voice throughout
 - [ ] Be ready for direct publication
 - [ ] Each theme section has `#### 参考リンク` with all theme articles listed

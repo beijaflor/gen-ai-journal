@@ -4,7 +4,15 @@ This step selects the most important and valuable articles for the main journal 
 
 ## Objective
 
-Select 18-25 articles that fit the approved themes, providing essential insights, significant developments, and high-value content for the primary audience.
+Select **~30–40 articles across 6–9 themes** that fit the approved themes,
+providing essential insights, significant developments, and high-value content
+for the primary audience. (Observed range; the golden 2026-08-22 cycle ran 40
+articles across 9 themes. The older "18–25" target is superseded.)
+
+> Crossing a partition boundary mid-cycle (promote an annex/omitted article to a
+> new main theme, or demote a main article to the annex) is **not** ordinary
+> curation — follow [STEP_04b_THEME_REVISION.md](STEP_04b_THEME_REVISION.md),
+> which re-gates the change and re-asserts the partition invariant.
 
 ## Input Files
 
@@ -29,7 +37,7 @@ Select 18-25 articles that fit the approved themes, providing essential insights
 - [ ] Review approved editorial plan: `workdesk/editorial_plan_YYYY_MM_DD.md`
   - Note identified themes and article mappings
   - Understand the week's narrative arc
-  - Review planned article distribution (18-25 articles across 6-7 themes)
+  - Review planned article distribution (~30–40 articles across 6–9 themes)
 
 ### Optional: Export Admin Flags
 
@@ -67,7 +75,7 @@ See [SUPABASE_WORKFLOW_INTEGRATION.md](SUPABASE_WORKFLOW_INTEGRATION.md) for det
 
 ### 2. Finalize Article Selection
 
-- [ ] Verify total selection: 18-25 articles
+- [ ] Verify total selection: ~30–40 articles across 6–9 themes
 - [ ] Ensure thematic coherence across all selected articles
 - [ ] Check for unintentional duplicates or redundancy within and across themes
 - [ ] Confirm each theme has adequate coverage (typically 3-5 articles per theme)
@@ -176,7 +184,7 @@ This command:
 
 ## Verification
 
-- [ ] Confirm 18-25 articles selected
+- [ ] Confirm ~30–40 articles selected across 6–9 themes
 - [ ] All articles align with approved themes from STEP_03b
 - [ ] Theme organization in curated_journal_sources.md matches editorial plan
 - [ ] No duplicate topics within same theme or across themes

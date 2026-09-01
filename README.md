@@ -7,7 +7,7 @@ A weekly curated journal of AI and coding developments, featuring high-impact ar
 **Live Publication**: [https://beijaflor.github.io/gen-ai-journal/](https://beijaflor.github.io/gen-ai-journal/)
 
 Browse our weekly curated collections of AI coding developments:
-- **Main Journal**: 18-25 high-impact articles with essential industry insights
+- **Main Journal**: ~30–40 high-impact articles across 6–9 themes with essential industry insights
 - **Annex Journal**: Catalog of unique perspectives - compact entries (80-120 words) for quick scanning
 - **Archives**: Complete collection of past weeks organized by date
 
@@ -45,17 +45,21 @@ graph LR
 1. **[Create Branch](STEP_01_CREATE_BRANCH.md)** - Create dedicated branch for journal week
 2. **[Add Links Individually](STEP_02_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
 3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
-3b. **[Plan Editorial Themes](STEP_03b_PLAN_THEMES.md)** - Identify 5-8 themes, map articles to themes, create editorial roadmap with human review gate
-4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select 18-25 articles using theme-driven approach from approved editorial plan
+3b. **[Plan Editorial Themes](STEP_03b_PLAN_THEMES.md)** - Identify 6-9 themes, map articles to themes, create editorial roadmap with human review gate
+4. **[Curate Main Journal](STEP_04_CURATE_MAIN.md)** - Select ~30–40 articles across 6–9 themes using theme-driven approach from approved editorial plan (see also [STEP_04b Theme Revision](STEP_04b_THEME_REVISION.md) for mid-cycle promote/demote)
 5. **[Curate Annex Journal](STEP_05_CURATE_ANNEX.md)** - Select "B-side" articles with unique perspectives
-6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - Generate unified summaries for each journal
+6. **[Create Focused Summaries](STEP_06_CREATE_FOCUSED_SUMMARIES.md)** - `build_focused.py` — unified summaries for each journal + partition check
 7. **[Assembly Planning](STEP_07_ASSEMBLY_PLANNING.md)** - Select assembly patterns and plan narrative structure for each theme
-8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready journals using pre-planned themes
-9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - Quality control, URL verification, and final checks
-10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - Archive to journals/ directory and clean workspace
-11. **[Generate Metadata](STEP_11_GENERATE_METADATA.md)** - Create mandatory journal-metadata.json with summary statistics
-12. **[Create Pull Request](STEP_12_PULL_REQUEST.md)** - Convert draft PR to ready for review, or create new PR if not created early (human handles merge)
-13. **[Tag & Publish](STEP_13_TAG_PUBLISH.md)** - Tag release and publish journal after merge
+8. **[Assemble Final Journals](STEP_08_ASSEMBLE.md)** - Create publication-ready journals (`gen_writer_prompts.py` + `stitch_qa.py`)
+9. **[Verify URLs & Quality](STEP_09_VERIFY.md)** - `verify_journal.py` — coverage, leaks, hierarchy, encoding, URL health (one exit code)
+10. **[Archive & Cleanup](STEP_10_CLEANUP.md)** - `archive_journal.py` — archive to journals/, build 99/02, write+validate `journal-metadata.json` (STEP_11 folded in), `mark_published`, clean workspace
+11. **[Create Pull Request](STEP_12_PULL_REQUEST.md)** - Convert draft PR to ready for review, or create new PR if not created early (human handles merge)
+12. **[Tag & Publish](STEP_13_TAG_PUBLISH.md)** - `release_journal.py` — tag, delete branch, draft release after merge
+
+> **13-step workflow** (down from 14): STEP_11 metadata generation is folded into
+> STEP_10's `archive_journal.py` (#209). The per-step commit→push→label→comment
+> ritual is a single `sync_step.py` call. See
+> [docs/workflow-automation/HANDOFF.md](docs/workflow-automation/HANDOFF.md).
 
 ## Quick Start
 
@@ -101,6 +105,20 @@ python3 scripts/check_link.py "https://example.com/article-about-ai"
 - `scripts/call-gemini.py` - One-shot URL summarization using Gemini (supports --output for file output)
 - `scripts/list_urls.py` - Extract URLs from markdown files
 - `scripts/remove_urls.py` - Remove specific URLs from files (used with list_urls.py for workflow management)
+
+**Workflow-automation scripts** (see [docs/workflow-automation/](docs/workflow-automation/HANDOFF.md)):
+- `scripts/workflow/` - shared lib: `urls.py` (the URL regex), `partition.py` (the main/annex/omitted invariant), `git_gh.py` (gh-cred plumbing), `journal_paths.py` (paths + blob/Pages URLs)
+- `scripts/sync_step.py` - the per-step commit → push → label → comment ritual, idempotent, `--dry-run`
+- `scripts/build_focused.py` - STEP_06 focused summaries + partition check
+- `scripts/gen_writer_prompts.py` / `scripts/stitch_qa.py` - STEP_08 writer-prompt scaffolding + stitch/QA
+- `scripts/verify_journal.py` - STEP_09 quality gate (one exit code)
+- `scripts/archive_journal.py` - STEP_10 archive + metadata (STEP_11 folded in), `--dry-run`/`--into`
+- `scripts/release_journal.py` - STEP_13/14 tag + draft release, `--dry-run`
+
+```bash
+# Per-step sync ritual (replaces the manual commit/push/label/comment):
+uv run scripts/sync_step.py 06 "STEP_06: focused summaries" --issue <N> --dry-run
+```
 
 ### Output Structure
 ```

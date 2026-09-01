@@ -6,6 +6,23 @@ This step performs comprehensive quality control, URL verification, and final ch
 
 Ensure all URLs work correctly, verify content accuracy, and perform final quality checks on the assembled journals.
 
+## Automated (recommended)
+
+One command runs the whole gate — coverage (参考リンク IDs == curated main; every
+curated URL present as plain text), leak scan (原題/score-objects in the weekly;
+recovery-URL hosts in either journal), heading hierarchy, encoding, and
+concurrent URL health (2xx / blocked-403 anti-bot / broken) — and exits non-zero
+on any real failure:
+
+```bash
+uv run scripts/verify_journal.py YYYY-MM-DD              # full gate incl. live URL health
+uv run scripts/verify_journal.py YYYY-MM-DD --skip-urls  # offline checks only
+```
+
+A 403 from an anti-bot host is reported as *blocked* (non-fatal); only genuine
+breakage (404/5xx/connection errors) fails the run. The manual checklist below
+documents the same checks.
+
 ## Input Files
 
 - **Main Journal:** `workdesk/weekly_journal_YYYY_MM_DD.md`
@@ -41,7 +58,7 @@ Ensure all URLs work correctly, verify content accuracy, and perform final quali
 - [ ] **Flow & Structure:** Confirm logical progression and smooth transitions
 
 #### Completeness Checks
-- [ ] **Main Journal:** Verify 18-25 articles included
+- [ ] **Main Journal:** Verify ~30–40 articles included
 - [ ] **Annex Journal:** Confirm B-side character maintained
 - [ ] **All Summaries:** Check that every curated URL has corresponding content
 - [ ] **No Duplicates:** Ensure no overlap between main and annex journals

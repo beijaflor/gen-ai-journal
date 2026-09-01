@@ -233,9 +233,12 @@ For each theme, add to editorial plan:
 
   This is a **re-review** of the same file approved at STEP_03b — the
   STEP_03b approval does not cover the new ASSEMBLY STRATEGIES section.
-  The skill opens the file in a tmux popup running vim, blocks until the
-  editor closes, and verifies the human flipped
-  `- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08` to `- [x] ...`.
+
+  **Default path:** the human reviews in their own editor (Zed, VS Code, etc.)
+  and approves via the skill's `AskUserQuestion`, after which the agent flips
+  `- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08` to `- [x] ...`. The tmux+vim
+  popup shown above is the alternative for tmux users. Either way the agent
+  verifies the checked marker on disk before proceeding.
 
   - Exit `0` → proceed to STEP_08.
   - Exit `1` → revise the assembly strategies based on the human's edits
