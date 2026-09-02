@@ -406,17 +406,49 @@ export function parseJournalByDate(date: string): JournalArchive | null {
         return a.filename.localeCompare(b.filename);
       });
 
-      // Assign status based on metadata counts and sorted position
-      summaries = summariesWithIds.map(({ summary }, sortedIndex) => {
-        if (sortedIndex < metadata.statistics.mainSummaries) {
-          summary.status = 'main';
-        } else if (sortedIndex < metadata.statistics.mainSummaries + metadata.statistics.annexSummaries) {
-          summary.status = 'annex';
-        } else {
-          summary.status = 'omitted';
+      // Assign status from the actual curated source files (the editorial
+      // selection by importance/theme), NOT by sorted ID position. The old
+      // position heuristic mislabeled the first N summaries as "main"
+      // regardless of curation. Journals whose sources/ lack the curated
+      // files fall back to the legacy position + metadata-count logic.
+      const sourcesDir = join(journalDir, 'sources');
+      const readCuratedIds = (name: string): Set<string> | null => {
+        const p = join(sourcesDir, name);
+        if (!existsSync(p)) return null;
+        const ids = new Set<string>();
+        for (const line of readFileSync(p, 'utf-8').split('\n')) {
+          const m = line.match(/^\s*-\s*\[[ xX]\]\s*(\d+)\./);
+          if (m) ids.add(String(parseInt(m[1], 10)));
         }
-        return summary;
-      });
+        return ids;
+      };
+      const mainIds = readCuratedIds('curated_journal_sources.md');
+      const annexIds = readCuratedIds('curated_annex_selected.md');
+
+      if (mainIds && annexIds) {
+        // Membership-based: reflects the real editorial curation.
+        summaries = summariesWithIds.map(({ summary }) => {
+          const nid = String(parseInt(summary.id, 10));
+          summary.status = mainIds.has(nid)
+            ? 'main'
+            : annexIds.has(nid)
+              ? 'annex'
+              : 'omitted';
+          return summary;
+        });
+      } else {
+        // Legacy fallback: assign by sorted position + metadata counts.
+        summaries = summariesWithIds.map(({ summary }, sortedIndex) => {
+          if (sortedIndex < metadata.statistics.mainSummaries) {
+            summary.status = 'main';
+          } else if (sortedIndex < metadata.statistics.mainSummaries + metadata.statistics.annexSummaries) {
+            summary.status = 'annex';
+          } else {
+            summary.status = 'omitted';
+          }
+          return summary;
+        });
+      }
 
       // Validate that we have the expected number of summaries
       if (summaries.length !== metadata.totalSummaries) {
