@@ -5,6 +5,7 @@ import { getAllJournalDates, parseJournalByDate, type JournalArchive, type Summa
 import { getAllWorkdeskSummaries, type WorkdeskSummary } from '@/utils/workdesk-parser';
 import { getNextJournalDate, isNextJournalDate, getJournalStatusLabel, formatJapaneseDateDisplay } from '@/utils/journal-date';
 import { formatDomainDisplay } from '@/utils/domain-display';
+import { getSummaryNeighbours, type NavigableSummary } from '@/utils/summary-navigation';
 import SummaryEditControls from '@/components/admin/SummaryEditControls.astro';
 import '@/styles/global.css';
 import DOMPurify from 'dompurify';
@@ -142,18 +143,13 @@ const title = `${summary.title} - GenAI週刊`;
 const description = summary.excerpt;
 
 // Navigation data
-const allWorkdeskSummaries = isWorkdeskSummary ? getAllWorkdeskSummaries() : [];
-const currentIndex = isWorkdeskSummary
-  ? allWorkdeskSummaries.findIndex(s => s.id === id)
-  : journalContext?.summaries.findIndex((s: SummaryEntry) => s.id === id) ?? -1;
-
-const prevSummary = currentIndex >= 0 && currentIndex < (isWorkdeskSummary ? allWorkdeskSummaries.length - 1 : (journalContext?.summaries.length ?? 0) - 1)
-  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex + 1] : journalContext?.summaries[currentIndex + 1])
-  : null;
-
-const nextSummary = currentIndex > 0 
-  ? (isWorkdeskSummary ? allWorkdeskSummaries[currentIndex - 1] : journalContext?.summaries[currentIndex - 1])
-  : null;
+// Workdesk summaries are newest-first while published journal summaries are
+// oldest-first, so neighbours are resolved in canonical ascending-ID order
+// (prev = lower ID, next = higher ID) instead of by raw list position (#218).
+const navigationSummaries: NavigableSummary[] = isWorkdeskSummary
+  ? getAllWorkdeskSummaries()
+  : (journalContext?.summaries ?? []);
+const { prev: prevSummary, next: nextSummary } = getSummaryNeighbours(navigationSummaries, id);
 ---
 
 <BaseLayout title={title} description={description}>
