@@ -95,4 +95,4 @@ AIとどう向き合うかを問う、批判的・人間中心の論考が今週
 
 ---
 
-- [ ] APPROVED - Ready for STEP_04 curation
+- [x] APPROVED - Ready for STEP_04 curation
