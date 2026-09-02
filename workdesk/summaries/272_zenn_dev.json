@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:58:34.711063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "家族で使うAIエージェントのDiscord運用",
+    "url": "https://zenn.dev/kimushun1101/articles/family-ai-agents-on-discord",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicの規約を遵守しつつ、個人用(Max)と家族用(API)のbotを使い分ける、実用的な家庭内AIエージェントの構築・運用ガイド。",
+    "summaryBody": "この記事では、OSSの「xangi」を活用し、Discord上で家族と共有可能なAIエージェントを構築・運用する手法を詳説しています。最大のポイントはAnthropicの利用規約への対応で、個人定額プラン(Max)をバックエンドとする自分専用botと、APIを利用した家族共有botの2体を使い分けることで、規約違反を避けつつコスト効率を最大化しています。OSユーザーレベルでの権限分離、Discordのチャンネル権限によるプライバシー確保、スレッド機能を用いたTODO管理、そしてGitを用いた会話ログの永続化など、単なる導入に留まらない高度な運用プラクティスが紹介されています。自宅サーバーやVPSを用いたホスト構成、APIコストの抑制策など、即座に実践可能な知見が豊富に含まれています。",
+    "topics": [
+      "Claude",
+      "Discord",
+      "xangi",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

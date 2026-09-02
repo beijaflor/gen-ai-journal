@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:01:57.021718+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "お金で解決？Claude Codeの「/fast」モード仕様と課金体系の徹底解説",
+    "url": "https://qiita.com/inoyu-qiita/items/1cf056e4c4210f0643fd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「/fast」コマンドは、月額プランとは別枠の従量課金（Usage credits）を利用して、Opusモデルの応答速度を最大2.5倍に高速化する機能である。",
+    "summaryBody": "Anthropicが提供するCLIツール「Claude Code」に搭載されている高速化オプション「/fast」モードの仕組みと注意点を解説した記事です。このモードは軽量モデルへの切り替えではなく、同一のOpusモデルを「速度優先」のAPI設定で動作させるもので、レスポンスを最大2.5倍向上させます。特筆すべきは課金体系で、ProやMaxなどの月額プランの利用枠は適用されず、常に「Usage credits（従量課金）」から直接引き落とされる仕組みになっています。会話の途中でONにすると、それまでのコンテキスト全体に課金が発生するためセッション冒頭での利用が推奨されており、単純な修正を繰り返すデバッグ作業など、対話のテンポを最優先したい場面での活用が適しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI駆動開発",
+      "従量課金",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:20:44.237192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1人用のソフトウェア：AIが実現する「手料理」のようなアプリ開発",
+    "url": "https://www.ajwaxman.com/writing/software-for-one",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIコーディングツールの進化により、既存の汎用アプリでは満足できない個人の細かなニーズを解決する「自分専用のソフトウェア」を短期間で構築・運用できる時代が到来しています。",
+    "summaryBody": "### 概要\\n2020年に提唱された「手料理のようなアプリ（Home-cooked software）」という概念が、AIエージェントの進化によって現実味を帯びています。筆者のAdam Waxman氏は、睡眠管理、フィットネス、マラソン計画、ジャズの練習など、汎用的なSaaSでは対応しきれない極めて個人的なニーズを、AIを活用して自作したアプリで解決しています。\\n\\n### 主なポイント\\n- **開発ハードルの劇的な低下**: Claude Code等のツールにより、かつて数ヶ月を要した開発が数晩で完了するようになりました。維持管理もAIへのフィードバックで容易に行えます。\\n- **パーソナルなデータの統合**: 複数のAPI（Strava, Oura, FatSecret等）からデータを集約し、LLMを用いて自分だけの文脈に沿った洞察（例：朝のランニング距離に応じたスムージーの分量計算）を生成します。\\n- **エフェメラルな利用の許容**: 開発コストが低いため、特定の数ヶ月間だけ必要なアプリを構築し、役割を終えたら廃棄するという贅沢な使い方が可能になりました。\\n- **技術スタック**: Next.js, Vercel, Neon, Claude Code等を使用し、月額約160ドル（主にClaude Pro/Max代）で運用されています。\\n\\n### 結論\\n汎用アプリがユーザーの個別の文脈を無視するのに対し、パーソナルソフトウェアは「自分だけのコンテキスト」を理解します。AIツールの普及により、今後は「自分専用のアプリを構築すること」が消費者の新たな標準になる可能性があります。",
+    "topics": [
+      "AIコーディング",
+      "パーソナルソフトウェア",
+      "LLM",
+      "個人開発",
+      "Next.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Software for One - Adam Waxman"
+  }
+}

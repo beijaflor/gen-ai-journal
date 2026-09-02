@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:50:19.223675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが生成したWebサイトの品質を数値化する — ルーブリック × LLM-as-a-Judge による評価駆動開発",
+    "url": "https://tech.pepabo.com/2026/08/28/llm-as-a-judge-quality-score/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GMOペパボが、AI生成Webサイトの「なんとなくイマイチ」を打破するため、ルーブリックとGeminiによる自動評価（LLM-as-a-Judge）を導入し、定量的な評価駆動開発を実現した事例です。",
+    "summaryBody": "GMOペパボが提供する「ロリポップ！AIホームページ」における、AI生成Webサイトの品質評価手法の詳解です。従来、Webデザインの良し悪しは主観に頼りがちでしたが、本取り組みではデザイナーの暗黙知を約170項目の「ルーブリック（評価基準表）」として言語化しました。評価プロセスには「LLM-as-a-Judge」を採用。トップページのフルキャプチャ画像を用いて全体品質を測る『完成品スコア』と、開発工程の中間生成物（JSON）を高速に評価する『工程スコア』の2段構えで運用しています。これにより、プロンプト改修の効果測定やモデル移行時の品質劣化判定が定量的に行えるようになりました。記事では、スコア算出の加重平均ロジックや、Geminiを用いた自動採点の実装、さらには改善サイクルの実例まで具体的に解説されており、AIプロダクトにおける評価駆動開発（EDD）の非常に実践的なガイドとなっています。今後は、人間による採点とのキャリブレーションや、評価に基づく自動改善ループの構築を目指しています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "評価駆動開発",
+      "ルーブリック",
+      "Gemini",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

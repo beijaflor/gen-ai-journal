@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:49:18.877710+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCP: AIエージェントとWebサイトを繋ぐ新しい標準規格",
+    "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "WebMCPは、AIエージェントがDOMスクレイピングに頼らず、Webサイトが定義した構造化ツールを直接呼び出すことで、より堅牢で安全な対話を実現する新しい標準提案です。",
+    "summaryBody": "WebMCPは、GoogleとMicrosoftがW3C Web Machine Learning Community Groupで共同開発している新しいWeb標準案です。これまでAIエージェントがWebサイトを操作する際は、不安定なDOMの解析やスクレイピングに依存していましたが、WebMCPではサイト側がJavaScript APIを通じて利用可能な「ツール」とその入力スキーマを明示的に定義します。これにより、AIはJSON Schemaに基づいた正確な引数で機能を実行でき、UIの変更にも影響を受けない安定した操作が可能になります。また、ユーザーがログイン済みのブラウザセッション内で実行されるため、セキュリティと利便性の両立が図られています。現在Chrome 149以降でオリジントライアルが実施されており、ChatGPTなどの主要なAIプラットフォームも対応を開始しています。",
+    "topics": [
+      "WebMCP",
+      "AI Agents",
+      "Web Standards",
+      "MCP",
+      "Browser Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    },
+    "originalTitle": "WebMCP: Teaching Your Website to Talk to AI Agents"
+  }
+}

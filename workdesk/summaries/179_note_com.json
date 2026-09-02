@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:14:27.606842+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM向け Mac Studio の選び方",
+    "url": "https://note.com/npaka/n/nc1391a7f24ad",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "M5世代のMac Studioを用いたローカルLLM環境構築について、ユニファイドメモリの利点やNVIDIA GPUとの比較、最適なメモリ構成の選び方を詳説したガイド。",
+    "summaryBody": "M5 Max/Ultraチップを搭載した最新のMac Studioを対象に、ローカルLLM実行マシンとしての選定基準を解説しています。Apple Silicon特有の「ユニファイドメモリ」が、VRAM容量に制限のあるNVIDIA GPUに対して、大規模モデルの実行においていかに有利に働くかを詳細に説明。M5 Ultraで1.2TB/sに達したメモリ帯域や、Neural AcceleratorによるPrefill（入力処理）の高速化など、世代ごとの進化点も網羅しています。また、8Bから数百Bクラスまでのモデルサイズに応じた推奨メモリ容量（128GB〜512GB）の指針や、CUDA環境とのエコシステムの差についても比較しており、実用的な購入判断材料を提供しています。",
+    "topics": [
+      "ローカルLLM",
+      "Mac Studio",
+      "Apple Silicon",
+      "ユニファイドメモリ",
+      "M5 Ultra"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:39:00.915309+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8 27BをMac Studioでローカル実行：実測ベンチマークと活用ガイド",
+    "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mac Studio M3 Ultraを用いて最新のQwen3.8 27Bモデルを検証し、前世代との速度比較や1-bit量子化の限界、実用的なRAM要件を明らかにした詳細レポート。",
+    "summaryBody": "Mac Studio M3 Ultra (256GB RAM) を使用し、27.3Bパラメータの最新モデル「Qwen3.8 27B」のローカル実行性能を詳細に検証した記事です。主な結果として、Q4_K_M量子化での生成速度は約14 tokens/sであり、前世代のQwen3.6より速度は低下しているものの、回答が簡潔になったことで実質的な完了時間は同等という興味深い結果が出ています。また、Unslothの1-bit量子化（通称：脳損傷量子化）の実験では、速度は倍増する一方で論理的一貫性が著しく低下し、エージェント用途には不向きであることを示唆しています。推奨ハードウェアとして、Q4利用には32GB、Q2なら16GBのRAMを挙げています。262kの広大なコンテキストを活かしたRSS要約やPDF整理など、実運用における有用性についても言及されており、最新アーキテクチャ「qwen35」への対応として最新ランタイムの導入が必須であると注意喚起しています。",
+    "topics": [
+      "Qwen3.8",
+      "ローカルLLM",
+      "Mac Studio",
+      "ベンチマーク",
+      "量子化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Run Qwen3.8 27B locally: real numbers from my Mac Studio"
+  }
+}

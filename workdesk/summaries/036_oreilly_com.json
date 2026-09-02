@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:34:42.957893+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "計画なきアイデンティティ危機：エンタープライズ規模における非人間エージェントのガバナンス",
+    "url": "https://www.oreilly.com/radar/the-identity-crisis-no-one-planned-for-governing-non-human-agents-at-enterprise-scale/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "企業内で人間を遥かに上回る数で急増するAIエージェントや非人間アイデンティティ（NHI）に対し、既存の管理手法が通用しないガバナンスの空白が深刻なセキュリティリスクを招いている現状を分析する。",
+    "summaryBody": "エンタープライズ環境において、AIエージェントやマシン資格情報といった「非人間アイデンティティ（NHI）」の数が人間の従業員を45倍から82倍も上回る規模に達しています。しかし、92%のセキュリティリーダーは既存のIAMツールでこれらを管理できる自信がないと回答しており、ガバナンスの空白地帯が生じています。\n\nこの記事では、2026年上半期に顕在化した具体的な脅威を紹介しています。例えば、MCP（Model Context Protocol）のツール記述を改ざんしてAIエージェントを誘導しデータを漏洩させる手法や、信頼を偽装したAIエージェントスキルによる侵害が報告されています。従来の「インストール時に一度だけ検証する」信頼モデルは、動的に挙動が変化するエージェントには通用しません。\n\n解決策として、長期間有効なトークンを排除し、実行時の文脈や意図に応じて権限を評価する「意図に基づいた認可（Intent-bound authorization）」への移行や、OWASP Top 10 for Agentic Applicationsなどのフレームワークの活用が提唱されています。企業は、AIエージェントの「存在・所有者・権限範囲・破棄のタイミング」を明確にする新しいライフサイクル管理の構築を迫られています。",
+    "topics": [
+      "非人間アイデンティティ (NHI)",
+      "AIエージェント",
+      "IAM",
+      "サイバーセキュリティ",
+      "ガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "The Identity Crisis No One Planned For: Governing Nonhuman Agents at Enterprise Scale"
+  }
+}

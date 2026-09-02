@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:00:24.286603+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub EnterpriseにおけるCopilotの統制：AI ControlsとManaged Settings",
+    "url": "https://zenn.dev/microsoft/articles/copilot-enterprise-managed-settings0827",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Enterprise管理者がCopilotの利用を「機能のオンオフ（AI Controls）」と「詳細な構成（Enterprise managed settings）」の両面から統制する方法を解説した技術ガイド。",
+    "summaryBody": "この記事では、GitHub EnterpriseにおけるCopilot運用のための2つの主要な統制機能について詳しく解説しています。1つ目の「AI Controls」は、Agentやモデル、MCPサーバーなどの機能を「使わせるか否か」を組織レベルでオンオフするゲートウェイ的な役割を担います。2つ目の「Enterprise managed settings」は、JSON形式の構成ファイルを用いて、バイパスモード（YOLOモード）の禁止、特定のプラグインやMCPサーバーの許可リスト化、テレメトリの送信先設定、Copilot CLIのサンドボックス制約など、よりセキュアで詳細な利用条件を定義するものです。記事では設定の優先順位やチーム単位での上書きルール、具体的な構成例に加え、対話形式で設定ファイルを作成できるCopilot Skillも紹介されており、企業のセキュリティポリシーに合わせたCopilotの導入・運用に役立つ内容となっています。",
+    "topics": [
+      "GitHub Copilot",
+      "GitHub Enterprise",
+      "Governance",
+      "AI Controls",
+      "Enterprise managed settings"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

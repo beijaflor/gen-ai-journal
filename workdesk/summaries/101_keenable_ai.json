@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:53:12.575357+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NEEDLE：検索エンジンが暗記不可能なAIエージェント向けライブ・ベンチマーク",
+    "url": "https://keenable.ai/blog/needle-the-benchmark-your-search-engine-can-t-memorize",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Keenableが発表した「NEEDLE」は、既存の静的ベンチマークの脆弱性を克服し、AIエージェント特有の検索行動を評価するために設計された継続更新型のオープンソース評価指標です。",
+    "summaryBody": "従来の検索ベンチマークは静的であるため、モデルによるデータの暗記やデータ漏洩（リーク）の影響を受けやすく、真の検索能力を測定できなくなっています。Keenableが導入した「NEEDLE」は、ニュース、金融、学術、ニッチな実用例（AgenticRare）、法務の5つのカテゴリにおいて、RSSフィードや最新トレンド、APIから取得した「生きたデータ」を用いて1時間または1日単位でクエリを更新します。これにより、AIエージェントが情報の鮮度や特殊な意図に基づいて検索を行う際の精度を正確に測定します。同社は、AIエージェントは人間とは異なり、短時間に大量のクエリを発行し、論理演算子を駆使して深掘りを行うため、従来の「クリック数重視」の検索エンジンでは不十分であり、独自のインデックスを持つ「学習する検索エンジン」が必要であると主張しています。",
+    "topics": [
+      "AIエージェント",
+      "検索ベンチマーク",
+      "NEEDLE",
+      "Keenable",
+      "データリーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "NEEDLE: The benchmark your search engine can't memorize"
+  }
+}

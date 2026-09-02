@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:01:44.826238+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "作って理解するCoding Agent 〜フレームワークに頼らないピュア Python での実装〜",
+    "url": "https://speakerdeck.com/takapy/tsuku-te-rikai-suru-coding-agent-furemu-waku-ni-tayoranai-pyua-python-deno-jissou",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "外部フレームワークを使わず、PythonとLLM SDKのみでCoding Agentを構築するプロセスを通じて、エージェントの内部構造と高度な拡張手法を解説する資料。",
+    "summaryBody": "PyCon JP 2026での登壇資料。LangChain等のフレームワークに依存せず、OpenAI/Anthropic/GoogleのSDKを直接利用してCoding Agentを実装する方法を詳説しています。エージェントを「LLM APIとの対話」「ツール実行」「思考ループ」「ガードレール」の4要素に分解し、各社のSDK差異を吸収する設計や、自律回復のための例外処理、差分編集ツール（editFile）の実装ポイントをコードベースで解説。さらに、REPL、コンテキスト圧縮、Sub Agentによる調査の分離、MCP（Model Context Protocol）対応といった実用的な拡張構成についても触れており、ブラックボックスになりがちなエージェントの仕組みを「自作できる」レベルまで解き明かしています。",
+    "topics": [
+      "Coding Agent",
+      "Python",
+      "LLM SDK",
+      "Agentic Loop",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

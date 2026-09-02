@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:59:07.410519+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルでの開発やめませんか？Claude Code / Cursorで開発の8割をクラウドに移した話",
+    "url": "https://zenn.dev/sc30gsw/articles/953334f11df507",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Claude CodeやCursorのクラウドエージェントを活用し、開発の大部分を専用VM環境へ移行することで、PC負荷の軽減と非同期的な自動開発を実現する手法を解説した記事。",
+    "summaryBody": "### 概要\n本記事は、Claude CodeやCursorの「クラウドエージェント」機能を活用し、開発ワークフローの8割をローカルからクラウドへ移行した実体験に基づく解説です。専用の仮想マシン（VM）上でエージェントを自律的に動作させることで、従来のローカル開発にはない多くのメリットを享受できるとしています。\n\n### 主要なメリット\n- **PCを閉じても続く自動化**: VM上で動作するため、指示を出した後はPCを閉じてもビルド・テスト・PR作成までが完結し、翌朝レビューするだけの状態が作れます。\n- **リソースの解放**: ローカルPCで重いビルドや並列作業を行う必要がなくなり、バッテリー消費や熱、メモリ不足の悩みから解放されます。\n- **Computer UseによるUI検証**: AIがブラウザを直接操作し、動作確認の録画をPRに添付することで、ローカルでブランチをチェックアウトせずにマージ可能になります。\n- **セキュリティの隔離**: コマンドの打ち間違いや事故が起きても壊れるのはVM内だけであり、ローカル環境が保護されます。\n\n### ワークフローの分担\n著者は、試行錯誤と頻繁な対話が必要な「計画（Planning）」や、数ピクセル単位の調整が必要な「UI実装」はローカルに残し、それ以外の「実行（Execution）」をクラウドに任せるという役割分担を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "AIエージェント",
+      "クラウド開発",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

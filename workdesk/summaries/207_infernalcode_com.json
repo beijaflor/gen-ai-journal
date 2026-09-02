@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:31:57.035739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに「ルート権限」を与えてはいけない：MCPサーバーのセキュリティリスクと対策",
+    "url": "https://infernalcode.com/posts/your-ai-agent-has-root/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPサーバーをデフォルト設定で運用するとAIエージェントがユーザーと同じ権限を持つことになり、プロンプトインジェクション等で機密情報が窃取される危険性があることを警告し、その解決策を提示しています。",
+    "summaryBody": "この記事では、ClaudeなどのAIエージェントがツールを利用するための「Model Context Protocol (MCP)」における重大なセキュリティリスクを詳説しています。多くのユーザーがMCPサーバーを自身のユーザー権限（UID）で実行しており、これは実質的にエージェントにSSH鍵やクラウド認証情報への全アクセス権を与えているのと同義です。特に「プロンプトインジェクション」は深刻な脅威で、外部ファイルを読み込ませるだけで、攻撃者の命令をユーザー権限で実行させることが可能になります。筆者はこの対策として、デフォルトで全ての権限を剥奪し、ネットワークや特定ディレクトリへのアクセスを明示的に許可するコンテナ化ツール「mcp-box」を開発し、サンドボックス化の重要性を説いています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AI Security",
+      "Prompt Injection",
+      "Sandboxing",
+      "Docker/Containers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Your AI Agent Has Root"
+  }
+}

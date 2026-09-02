@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:57:22.053577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
+    "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "semantic-routerとQdrantを活用し、LLMを介さず埋め込みモデルの類似性判定のみで高速かつ安価に問い合わせを自動振り分けする手法の解説と検証結果。",
+    "summaryBody": "この記事では、LLMによる推論を介さずに、ベクトル検索（埋め込み）を用いて問い合わせのルーティングを高速化するライブラリ「semantic-router」の使い方を詳説しています。バックエンドにベクトルデータベースのQdrantを採用することで、永続化やマルチテナント対応を実現する方法を紹介しています。実際の日本語データを用いた検証では、LLM（GPT-5.6想定）と比較して精度では及ばないものの（LLM 100% vs ルーター 67.5%）、レイテンシを約11倍（1,048msから94ms）に短縮できることを示しています。また、実運用に欠かせない閾値（score_threshold）の最適化手法や、固有名詞の判定を強化するHybridRouter、動的ルートによる関数引数の抽出についても触れており、コストと速度のバランスを重視するエージェント開発に有用な知見がまとまっています。",
+    "topics": [
+      "semantic-router",
+      "Qdrant",
+      "LLM",
+      "埋め込みベクトル",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

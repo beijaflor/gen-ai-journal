@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:35:13.617358+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "小規模モデルが勝利するとき：チェス、LoRA、そして特化型AIの意義",
+    "url": "https://www.oreilly.com/radar/when-smaller-models-win/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "巨大な汎用LLMがチェスでルールを無視する問題を例に、特定のタスクに特化した100億パラメータ未満の小規模モデルが、コスト・速度・性能の面で汎用モデルを凌駕する現状を解説しています。",
+    "summaryBody": "最新の巨大LLMがチェスで「ズル」をしてしまう現象を入り口に、汎用知能が必ずしも専門タスクに適していないことを指摘しています。NVIDIAの研究に基づき、10B（100億）パラメータ未満の小規模モデルがエージェントAIの未来であり、給与交渉やドキュメント抽出などの特定ドメインではGPT-5級のモデルを上回る成果を出している事例を紹介。LoRA（Low-Rank Adaptation）を活用した効率的な微調整や、コンシューマ向けGPUでのローカル実行、そしてAPI経由では不可能な「推論プロセスの詳細な制御」が、開発者にとっての大きな武器になると説いています。単に「より賢い汎用モデル」を待つのではなく、特定の課題に合わせてパイプライン全体を最適化する「特化型AI」の重要性を強調する内容です。",
+    "topics": [
+      "Small Language Models (SLM)",
+      "LoRA",
+      "Fine-tuning",
+      "Edge AI",
+      "Model Specialization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "When Smaller Models Win"
+  }
+}

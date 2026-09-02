@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:03:21.665468+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIは安全に拒否した。それが攻撃者の狙いだった——PyCon JP 2026スプリント参加記",
+    "url": "https://qiita.com/zazen_inu/items/9357c8145dd0db206279",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを用いた悪意あるPyPIパッケージ解析中に、AIの安全装置を意図的に作動させて解析を免れる『LLMスキャナ対策』の手口に遭遇し、人間同士の対話がその打破に繋がった体験記。",
+    "summaryBody": "PyCon JP 2026のスプリントにおいて、悪意あるPyPIパッケージをAIエージェント（Claude Code）で静的解析した際の記録である。解析中、AIが安全ガイドラインへの抵触を理由に応答を拒否し停止したが、これは攻撃者がAI支援型の解析ツールを妨害するために仕組んだ『LLMスキャナ対策』のプロンプトインジェクションだった。当初は自身の利用規約違反を懸念した著者だが、チームメンバーとの対話を通じて、AIの拒否自体が攻撃者の設計した回避策であることを見抜いた。結果として、メンテナーアカウントの乗っ取りによる一括汚染という攻撃の全貌を解明するに至った。本記事は、AIが普及する今後のセキュリティ調査において、AIの判断を解釈し直す人間のメタ的な視点と、コミュニティにおける対面議論の重要性を強調している。",
+    "topics": [
+      "セキュリティ",
+      "AIエージェント",
+      "PyPI",
+      "プロンプトインジェクション",
+      "PyCon JP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

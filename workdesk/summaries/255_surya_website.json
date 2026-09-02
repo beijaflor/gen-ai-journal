@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:54:05.365914+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードで絵を描くAIの訓練：強化学習による創造的タスクへの挑戦",
+    "url": "https://surya.website/rling-qwen-to-paint-with-code",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "言語モデルにJavaScriptを出力させ、水彩画を描画させる強化学習プロセスを通じて、美学的判断を報酬関数に組み込む手法を提案している。",
+    "summaryBody": "AI画像生成において「プロンプトでしか操作できない」という制約を解消するため、Qwen 3.5 35BをベースにJavaScript（p5.brush）を生成する強化学習（GRPO）を実施した研究記録です。研究の核心は、正解のない「美」という指標をいかに報酬にするかという点にあります。初期の多角的な絶対評価スコアでは学習が停滞しましたが、手動でレーティングしたリファレンス画像との「ペアワイズ評価（二者択一）」に切り替えることで、ダイナミックレンジが向上し、学習が劇的に進展しました。また、プロンプトエンジニアリングにおいて、詳細なAPIドキュメントを与えるよりも、厳選された許可リスト（Allowlist）に絞る方がモデルのハルシネーションを抑制し、簡潔で洗練されたコードを生成できることを発見しています。最終的に、13,500トークンあったコードを2,000トークン以下に圧縮しつつ、質の高い水彩画を生成することに成功しました。",
+    "topics": [
+      "強化学習",
+      "GRPO",
+      "プログラマブル・アート",
+      "プロンプトエンジニアリング",
+      "報酬関数の設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Training AI to Paint with Code"
+  }
+}

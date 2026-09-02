@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:56:05.841697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングの「知識カットオフ」を埋める Context7 MCP Server",
+    "url": "https://qiita.com/tomada/items/42537e0b14b38797d218",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Context7 MCP Serverを利用することで、AIコーディングアシスタントの知識不足（カットオフ）を補い、常に最新のライブラリドキュメントに基づいたコード生成が可能になります。",
+    "summaryBody": "AIコーディングアシスタントが古いバージョンのライブラリ仕様を提案してしまう「知識カットオフ」の問題を解決する、Upstash開発の『Context7 MCP Server』の導入・活用ガイドです。このツールは15,000以上のライブラリの最新ドキュメントに対応しており、プロンプトに「use context7」と添えるだけで、AIがリアルタイムで最新情報を参照できるようになります。記事内では、Cursor、Claude Desktop、Claude Codeの各環境における具体的なセットアップ手順（JSON設定やコマンド）と、React 19やTypeScript 5.5などの新機能を用いた実践的なプロンプト例が紹介されています。最新のベストプラクティスに従った正確なコード生成を実現し、デバッグ時間を大幅に短縮できる有用なリソースです。",
+    "topics": [
+      "MCP",
+      "Claude Code",
+      "Cursor",
+      "Context7",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

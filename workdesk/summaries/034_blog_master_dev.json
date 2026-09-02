@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:34:09.494982+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sandcastleの紹介：AIエージェント並列実行のためのオーケストレーション・ツール",
+    "url": "https://blog.master.dev/introducing-sandcastle/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Sandcastleは、Git WorktreeとDockerを活用して複数のAIエージェントを安全に並列実行し、GitHub Issueの自動解決などを可能にする低レイヤーなオーケストレーション・ライブラリです。",
+    "summaryBody": "Sandcastleは、複数のAIエージェント（Claude Codeなど）を同時に稼働させる際の競合問題を解決するツールです。主な特徴は、Gitの「Worktrees」機能を活用し、同一リポジトリ内で異なるブランチを物理的に別のディレクトリとして展開することで、エージェント同士が同じファイルを書き換える衝突を防ぐ点にあります。さらにDockerサンドボックスによる実行環境の分離もサポートしています。記事内では、GitHub CLIと組み合わせて未解決のIssueを自動取得し、ユーザーが選択した複数のタスクに対して並列でエージェントを起動、コード修正からプルリクエスト作成までを自動化する実用的なスクリプト例が紹介されています。魔法のような高レベルツールではなく、開発者が独自のワークフローを構築するための「プリミティブ（基本要素）」として提供されています。",
+    "topics": [
+      "AI Agents",
+      "Orchestration",
+      "Git Worktrees",
+      "GitHub Automation",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Introducing Sandcastle – Master.dev Blog"
+  }
+}

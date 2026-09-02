@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:35:00.385498+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Advanced MCP (Model Context Protocol) 活用のための実践的パターン集",
+    "url": "https://www.oreilly.com/radar/effective-patterns-for-advanced-mcp-usage/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicが提唱するModel Context Protocol (MCP) を、複数のクライアントとサーバーが混在する複雑な環境で効率的に運用するための高度な設計パターンとツール群を解説する。",
+    "summaryBody": "Model Context Protocol (MCP) は単一の統合を超え、複数のツールとインターフェースを横断することで真価を発揮します。本記事では、MCPをスケールさせるための主要なパターンを紹介しています。具体的には、ローカルサーバーをリモート化・多要素認証対応にする `mcp-auth-wrapper`、設定を簡素化する `install-mcp`、複数のツールを一括管理して認証を統合する `mcp-aggregator` などの活用法を解説しています。また、API未対応のサービスに対する「Computer Use」によるフォールバックや、トークン消費を抑えるためのコード実行環境の統合（Context Bloat対策）など、実用的な運用ノウハウについても詳述されており、個人からエンタープライズまで適用可能なエージェント基盤のアーキテクチャを提案しています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "AI Agents",
+      "Anthropic",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "Effective Patterns for Advanced MCP Usage"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:58:05.408805+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
+    "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5090環境下でMoE特化型推論エンジンFreeTokenを検証し、VRAM容量を超える120B級巨大モデルにおいて驚異的な推論速度を実現する有用性を確認したベンチマークレポート。",
+    "summaryBody": "最新のRTX 5090（32GB VRAM）を用い、MoE（Mixture-of-Experts）モデルのExpertをメインメモリにオフロードして推論する「FreeToken」の性能を検証した記事です。主な検証結果として、モデルがVRAMに収まるOrnith 1.5 (35B)では既存のvLLMやllama.cppの方が高速ですが、VRAM容量を大幅に超えるgpt-oss-120b（約65GB）では単発127.1 tok/sという極めて高いパフォーマンスを記録しました。一方で、Qwen3.5-122B-A10Bのようにアクティブパラメータや参照Expert数が多いモデルでは、PCIe転送がボトルネックとなり速度が低下する特性も浮き彫りになりました。FreeTokenは単なる高速化ツールではなく、コンシューマ向けGPUで実用的な速度を維持しつつ、扱えるモデルサイズの上限を劇的に引き上げるソリューションとして評価されています。",
+    "topics": [
+      "RTX 5090",
+      "FreeToken",
+      "MoE",
+      "LLM推論",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

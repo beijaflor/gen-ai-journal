@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:01:03.998322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "modelmap: Hugging Faceモデルの構造可視化とGPUメモリ使用量推定ツール",
+    "url": "https://modelmap.cc/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Hugging Face上のモデルをダウンロードすることなく、その内部構造の可視化やGPUメモリ消費（重み・KVキャッシュ・活性化）をシミュレーションできる強力なツール。",
+    "summaryBody": "modelmapは、Hugging FaceのモデルIDを指定するだけで、モデルのアーキテクチャ全体をネットワークマップとして可視化し、フォワードパスの挙動を追跡できるオープンソースツールです。最大の特徴は、重みファイルを実際にダウンロードすることなく、メタデータとフェイクのフォワードパス（traced fake forward pass）を用いてメモリ使用量を推定する点にあります。H100やRTX 4090などの主要なGPUを選択し、特定のモデルがメモリに収まるかどうかを「重み」「KVキャッシュ」「アクティベーション」の各要素から精緻に判定します。DeepSeek-V3のような超巨大MoEモデルやQwen2.5-VLなどのマルチモーダルモデルにも対応しており、CLI、REST API、MCP（Model Context Protocol）サーバーとしても利用可能です。Webブラウザ上で動作するインタラクティブなマップにより、開発者は複雑なトランスフォーマー構造を直感的に理解できます。",
+    "topics": [
+      "LLM",
+      "GPUメモリ",
+      "Hugging Face",
+      "可視化ツール",
+      "DeepSeek"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "modelmap"
+  }
+}

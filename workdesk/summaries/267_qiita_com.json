@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:57:22.649418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【ローカルLLM】国産LLM「LLM-jp-4-33B」と「Qwen3.8-27B」の推論性能比較（RTX 5070 Ti + RTX 3070 Ti）",
+    "url": "https://qiita.com/h-nabata/items/b80484406e839ee6507b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "国産のLLM-jp-4-33BとQwen3.8-27BをRTX 5070 Ti/3070 Ti環境で比較し、両者が同等の高い推論能力を持ちつつ、簡潔なLLM-jpと高精度だが長考しがちなQwenという異なる特性を持つことを明らかにしています。",
+    "summaryBody": "本記事は、新しく公開された国産の大規模言語モデル「LLM-jp-4-33B」と、最新のオープンモデル「Qwen3.8-27B」の推論性能を、コンシューマー向けGPU（RTX 5070 Ti + 3070 Ti）環境で詳細に比較した検証レポートです。\n\n### 検証の概要\n128問の基本問題と80問の応用問題からなる独自のテストセットを用い、両モデルをllama.cpp上で動作させ、正答率、推論速度、エネルギー効率を測定しています。\n\n### 主な比較結果\n- **性能の均衡**: 合計正答率は両モデルとも188/208（約90.4%）で同数となり、極めて高い推論能力を示しました。LLM-jpは基本問題で、Qwenは数学・コーディングの応用問題で優位性が見られました。\n- **モデル特性の違い**: LLM-jpは「推論が簡潔」であり、4kトークンの制限内で安定して回答を完遂します。対してQwen3.8は「深い思考（Overthinking）」が特徴で、数値計算で非常に高い精度を見せる反面、執拗な自己検証によりトークン上限に達して推論が打ち切られる（truncation）傾向があります。\n- **実行効率**: Qwenはトークン生成スループットで勝りますが、1問あたりの消費トークン数が多いため、実用上の解決時間はLLM-jpの方が短いという興味深い逆転現象も確認されました。\n\n### 技術的知見\nRTX 50シリーズ（Blackwell）におけるllama.cppのクラッシュ回避策（cuBLAS強制）や、メモリ容量の異なるデュアルGPU環境での最適な層配置（Tensor-split）など、ローカルLLM運用における極めて実用的な最適化ノウハウが含まれています。",
+    "topics": [
+      "LLM",
+      "LLM-jp",
+      "Qwen",
+      "ベンチマーク",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

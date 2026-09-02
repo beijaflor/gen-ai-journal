@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:37:46.956326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ワークフロー・ラボ：エージェントを活用したデザインとコードのシームレスな連携",
+    "url": "https://www.figma.com/blog/workflow-lab-moving-between-design-and-code-with-agents/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "FigmaのMCPサーバーとCode Connectを組み合わせ、AIコーディングエージェントにデザインコンテキストを直接提供することで、プロダクション準備の整ったコードを生成する手法を解説します。",
+    "summaryBody": "Figma公式ブログによる、AIエージェント時代におけるデザインとエンジニアリングの乖離を防ぐための新しいワークフローの提案です。AIによるコード生成は迅速ですが、デザイン仕様から逸脱しやすいという課題があります。この記事では、FigmaのMCP（Model Context Protocol）サーバーを利用して、エージェントにコンポーネント、トークン、レイアウトといったデザインの文脈を直接与える方法を紹介しています。主なプロセスとして、FigJamを用いたエージェントとのプランニング、Code ConnectによるFigmaコンポーネントと実際のコードのマッピング、そして`get_variable_defs`を用いたデザイン変更の自動検知などが挙げられます。これにより、手動での調整時間を削減し、デザインシステムに基づいた一貫性のある実装をAIに指示することが可能になります。",
+    "topics": [
+      "Figma",
+      "MCP (Model Context Protocol)",
+      "Code Connect",
+      "AI Agents",
+      "Design Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Workflow Lab: Moving Between Design and Code With Agents | Figma Blog"
+  }
+}

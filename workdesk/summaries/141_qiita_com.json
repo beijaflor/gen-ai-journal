@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:04:25.009941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeCode のセキュリティ監視ダッシュボードを作ってみた -- 自分を信用しないための個人ツール",
+    "url": "https://qiita.com/sp-n-taka/items/80facf8dcf2183dcd280",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ClaudeCodeの動作状況を基板風のデザインでリアルタイム可視化し、破壊的な操作を自動的にブロック・警告するセキュリティ監視ツール「CC Pipeline」の構築事例。",
+    "summaryBody": "AIエージェントであるClaudeCodeの複数セッション並行利用における「停止箇所の把握」と「無意識な実行承認」という課題を解決するための個人開発ツールの解説記事です。Python標準ライブラリのみを使用し、ClaudeCodeのhooks機能を活用して構築されています。第1部では、SVGを用いた基板風ダッシュボードで実行フェーズ（THINK, GATE, EDIT等）を可視化する仕組みを解説。第2部では、同期/非同期フックを使い分けることで、致命的なシステム破壊（rm -rf / 等）をミリ秒単位でブロックし、不審な操作（.envアクセス等）を警告表示する「防御」の仕組みを実装しています。開発過程で判明したWindows固有の落とし穴や、ClaudeCodeとのペアプログラミングを効率化する「SPEC.md」駆動の開発フローについても詳しく共有されています。",
+    "topics": [
+      "ClaudeCode",
+      "Python",
+      "セキュリティ",
+      "AIエージェント",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

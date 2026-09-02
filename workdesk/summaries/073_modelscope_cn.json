@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:45:05.461885+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-Flash-Next: Qwen4の礎となる新アーキテクチャを採用した実験的プレビューモデル",
+    "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+    "language": "zh",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Qwen3.8-Flash-Nextは、Qwen4の基盤となる革新的なハイブリッド・アテンションとN-gram埋め込みを採用し、極めて高いコスト効率と最大100万トークンの文脈処理を実現した125BパラメータのマルチモーダルLLMです。",
+    "summaryBody": "AlibabaのQwenチームが発表した「Qwen3.8-Flash-Next」は、次世代フラグシップモデル『Qwen4』のプロトタイプとなる実験的モデルです。主な技術革新として、Gated DeltaNetとQwen Sparse Attention（QSA）を組み合わせたハイブリッド・アーキテクチャ、効率的なパラメータ拡張を実現する2,000万個のN-gram埋め込み、そしてデータの依存性を考慮したゲート付き残差接続（Gated Residual）を導入しています。総パラメータ数は125Bですが、MoE（Expert混合）とスパースアテンションにより、推論時のアクティブパラメータ数はわずか6Bに抑制されています。ベンチマークでは、コーディング能力（SWE-bench Proで62.5%）やエージェントタスク、視覚理解において、既存のQwen3.8-27Bや競合の軽量・中量級モデルを凌駕する性能を示しています。また、デフォルトで「思考モード（Reasoning）」を搭載し、複雑な推論を伴う応答が可能です。ネイティブで262k、YaRNを用いることで1Mトークンの長文脈処理をサポートしており、商用利用可能なQwenコミュニティライセンスで公開されています。",
+    "topics": [
+      "Qwen3.8-Flash-Next",
+      "LLMアーキテクチャ",
+      "Qwen Sparse Attention",
+      "マルチモーダルAI",
+      "オープンソースモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 95
+    },
+    "originalTitle": "Qwen/Qwen3.8-Flash-Next"
+  }
+}

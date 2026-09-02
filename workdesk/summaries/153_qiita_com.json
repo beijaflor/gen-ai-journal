@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:07:42.522541+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grill-me に丸コゲにされた俺は、もっと軽くて速いスキルを作った #AIエージェント",
+    "url": "https://qiita.com/magicant/items/0f93dd0b38fda076174f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "コーディングエージェントの設計工程を効率化するため、Q&A中心の「grill-me」手法を改善し、エージェントの意思決定を人間が並行レビューする「sear-and-build」ワークフローの提案。",
+    "summaryBody": "AIエージェントに実装方針を詰めさせる「grill-me」スキルの冗長さを解決するため、筆者が開発した「sear-and-build」スキルを紹介している。この手法では、エージェントが仕様や規約に基づいて自律的に判断を下し、人間への質問を最小限に抑えつつ即座に実装を開始する。人間は実装と並行してエージェントの判断リスト（採用しなかった代替案を含む）をレビューすることで、待ち時間を減らしながら設計意図を確実に把握できる仕組みだ。実装完了後には判断内容と具体的なコード箇所の対応も示され、大規模な差分確認の負担も軽減される。エージェント主導の意思決定に人間が効率的に「付いていく」ための、実践的なプロンプト活用の事例である。",
+    "topics": [
+      "AIエージェント",
+      "Claude",
+      "プロンプトエンジニアリング",
+      "システム設計",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 94
+    }
+  }
+}

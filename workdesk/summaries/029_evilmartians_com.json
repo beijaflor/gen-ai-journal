@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:32:47.877519+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RailsにおけるAIエージェントのアクセス制御：Action PolicyによるSQL実行の制限",
+    "url": "https://evilmartians.com/chronicles/access-control-for-ai-on-rails-gating-sql-with-action-policy",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Railsアプリ内AIにSQL実行を許可する際、単なる読み取り専用ではなくAction Policyを用いてユーザー毎の行・列レベルの認可を強制する実装手法の解説。",
+    "summaryBody": "Evil Martiansは、自社開発のAIアシスタント「Ocean」におけるデータ漏洩リスクを解決するため、Ruby on Railsの認可フレームワークである「Action Policy」を活用したアクセス制御手法を確立しました。従来、AIには読み取り専用のSQL実行権限を与えていましたが、それだけでは「どのユーザーがどのデータを見る権利があるか」を制御できず、本来非公開であるべきピアレビューなどの機密情報が抽出される課題がありました。本記事では、プロンプトではなくRubyコード側でデータ境界（行スコープおよび許可された列）を定義する`ocean_access`メソッドの導入や、機密データ用の`authorized_model_query`と公開データ用の`database_query`という二重の実行経路の設計、そしてRSpecを用いた「決定論的な漏洩テスト」による検証プロセスまで、実戦的なセキュリティ設計を詳説しています。",
+    "topics": [
+      "Rails",
+      "Ruby",
+      "LLM",
+      "Action Policy",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Access control for AI agents on Rails: gating SQL with Action Policy"
+  }
+}

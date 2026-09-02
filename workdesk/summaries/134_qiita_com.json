@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:02:15.224290+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "/model を1度でも押すと ANTHROPIC_DEFAULT_MODEL は効きません",
+    "url": "https://qiita.com/jqit_suwa/items/7ecdfc6067e09aed00a1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの環境変数`ANTHROPIC_DEFAULT_MODEL`は優先順位が低く、一度でも`/model`コマンドを使用し設定ファイルが更新されると機能しなくなる仕様を解説しています。",
+    "summaryBody": "Claude Code v2.1.236で導入された環境変数`ANTHROPIC_DEFAULT_MODEL`の優先順位と挙動に関する検証記事です。\\n\\n### 主な内容\\n- **優先順位の仕組み**: 当該変数は最も優先順位が低く、`--model`フラグ、`ANTHROPIC_MODEL`、および`settings.json`内の設定が存在する場合、それらが優先されます。\\n- **`/model`による上書き**: `/model`コマンドでモデルを選択すると`~/.claude/settings.json`に値が書き込まれます。この状態では、環境変数でデフォルト値を指定しても無視されることになります。\\n- **無視されるキーワード**: `haiku`や`opusplan`といった特定の文字列をこの変数に設定しても、黙って無視される仕様がドキュメントに明記されています。\\n- **適切な使い分け**: 強制的にモデルを固定したい場合は`ANTHROPIC_MODEL`を、初期値として設定したい場合は設定ファイルの`model`キーを削除した上で`ANTHROPIC_DEFAULT_MODEL`を使用する必要があります。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "環境変数",
+      "CLI",
+      "設定管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

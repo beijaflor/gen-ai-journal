@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:11:46.738392+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードレビューでトークンを浪費するのをやめる：カスタムリンターがもたらす開発効率の最適化",
+    "url": "https://swizec.com/blog/stop-burning-tokens-on-code-review",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる高コストで低速なコードレビューの代わりに、AIを活用して作成したプロジェクト固有のカスタムリンターを導入することで、開発サイクルを劇的に高速化・効率化する手法を提案しています。",
+    "summaryBody": "## 概要\nエンジニアリングチームが作成するコード量が急増する中、LLM（大規模言語モデル）によるコードレビューのコストとノイズが新たな課題となっています。Swizec Teller氏は、高価で実行が遅いAIレビューから、AIを活用して構築した「カスタムリンター」へ移行すべきだと主張しています。\n\n## LLMレビューの限界\n- **コストと速度**: 1日1000ドルのコストがかかるケースもあり、結果が出るまで10〜30分待たされることがザラにある。\n- **ノイズの多さ**: 些細な指摘や過剰な防御的コードの推奨など、人間が「AIの指摘をレビューする」という二度手間が発生する。\n- **非決定論的**: 同一のルールに対しても出力が一定ではなく、開発者の認知負荷を高める。\n\n## カスタムリンターによる解決策\nLLMに設計ドキュメント（DESIGN.mdなど）を読み込ませ、決定論的なリンタールールを生成させるアプローチです。\n- **高速なフィードバック**: 実行時間は数秒。エディタ内やpre-commitフックで実行でき、問題を「左（開発の早期段階）」にシフトできる。\n- **具体例**: デザインシステムの遵守（no-raw-color）、非推奨のuseEffectの検知（no-setter-only-effect）、冗長な文章の排除（vale-de-blab）など。\n\n## 結論\nAIを直接のレビュアーにするのではなく、AIを使って「高速かつ安価なガードレール」を構築することで、人間とAIエージェントが共存できる安全な開発環境を実現できます。",
+    "topics": [
+      "Software Architecture",
+      "Code Review",
+      "Static Analysis",
+      "Developer Experience",
+      "LLM Efficiency"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Stop burning tokens on code review"
+  }
+}

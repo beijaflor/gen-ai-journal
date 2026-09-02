@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:01:27.974967+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-27B におすすめのハーネス",
+    "url": "https://note.com/npaka/n/nf7108e6bd18e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ローカルLLM「Qwen3.8-27B」をコーディングエージェントとして活用するために推奨される、軽量かつ多機能な各種ハーネス（実行フレームワーク）を比較紹介しています。",
+    "summaryBody": "### ローカルLLMの能力を引き出す「ハーネス」の選定 Qwen3.8-27Bは単体でも高性能ですが、ツール利用や自律実行を担う「ハーネス」と組み合わせることで、より高度なコーディング支援が可能になります。本記事では、特に推奨される以下のツールを特徴別に紹介しています。1. **Pi**: 機能を最小限に絞った極めて軽量なハーネス。コンテキスト消費を抑えられるため、ローカルLLMでの使用に最適。 2. **OpenCode**: 検索やサブエージェント機能を備えた多機能なオープンソース版。 3. **Claude Code / Qwen Code**: 公式ベンチマーク環境の再現や、Qwen固有の機能（MCPやLSP対応など）を最大限活かすための選択肢。 4. **DeepSeek Harness**: コンテキスト圧縮に対応しており、ローカル環境でのアプリ構築例もあります。結論として、軽量性重視なら「Pi」、多機能性なら「OpenCode」や「Qwen Code」が有力な選択肢となります。",
+    "topics": [
+      "Qwen3.8-27B",
+      "AIエージェント",
+      "ローカルLLM",
+      "コーディングエージェント",
+      "LLMハーネス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

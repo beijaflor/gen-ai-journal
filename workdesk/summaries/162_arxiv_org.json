@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:10:14.759008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FreeToken: 帯域幅適応型実行による効率的なエッジネイティブMoEサービング",
+    "url": "https://arxiv.org/html/2608.16157v1",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "個人のPCやノートPC等の消費者向けハードウェアで、DeepSeek-V4やGLM-5.2などの超大規模MoEモデルを効率的に動作させるための、帯域幅適応型推論最適化フレームワーク。",
+    "summaryBody": "### 概要\\nFreeTokenは、エッジデバイス（消費者向けGPU搭載PC）の限られたリソースで巨大な混合専門家（MoE）モデルを効率的に提供するシステムです。モデル全体がVRAMに収まらない状況でも、計算リソースを動的に管理することで高いパフォーマンスを実現します。\\n\\n### 技術的イノベーション\\n1. **帯域幅適応型実行 (q*ポリシー)**: 欠落したExpertを「PCIe経由でGPUにロード」するか「CPUで直接計算」するかを、デバイスの実測帯域幅に基づき層単位で動的に最適化。\\n2. **セマンティック・アウェア・キャッシュ**: 思考プロセスやツール呼び出し等の論理境界で再帰状態をチェックポイント化し、エージェント特有の文脈編集に伴う再計算（再プリフィル）を最小化。\\n3. **パイプライン化されたプリフィル**: 計算中に次層のExpertをロードするダブルバッファリングにより、転送ボトルネックを隠蔽。\\n\\n### 評価結果\\n- 8GB VRAMのノートPCで35Bモデル、単一GPUのワークステーションで753Bモデルの対話的な実行に成功。\\n- llama.cppやKTransformers等の既存エンジンに対し、デコードスループットで1.5〜2.3倍の性能向上を達成。",
+    "topics": [
+      "MoE (Mixture of Experts)",
+      "Edge AI",
+      "Inference Optimization",
+      "GPU/CPU Hybrid",
+      "System Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution"
+  }
+}

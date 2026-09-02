@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:57:49.013572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ターミナルを閉じてもClaude Codeが動き続ける理由、supervisorデーモンとAgent viewについて",
+    "url": "https://zenn.dev/uehaj/articles/claude-code-supervisor-agent-view",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのバックグラウンド実行を支えるsupervisorデーモンとAgent viewの仕組みを解説し、セッション維持の技術的背景と実用的な並列処理手法を紹介しています。",
+    "summaryBody": "Claude Code v2.1.220における「supervisorデーモン」と「Agent view」の内部構造を深く掘り下げた解説記事です。主な内容は以下の通りです。\n\n- **supervisorデーモンの役割**: ユーザーごとに1つの常駐プロセス（`claude daemon run`）が立ち上がり、バックグラウンドセッションを管理します。これはtmuxのように、ターミナルの終了やPCのスリープ、さらにはバイナリの更新を跨いでもセッション（会話履歴と状態）を維持する仕組みを提供します。\n- **Agent viewと操作性**: `claude agents`で起動する管理画面から、全バックグラウンドセッションの監視・アタッチ・停止が可能です。入力欄が空の際の「←」キーや`/bg`コマンドによるセッションの裏送りについても詳述されています。\n- **セッションとプロセスの分離**: セッションの実体はtranscript（全記録）と台帳データであり、プロセスは使い捨ての実行体であるという設計思想を解説。アイドル状態のプロセスを回収し、必要時に再起動するリソース効率の高さが特徴です。\n- **高度な並列処理**: `/fork`を用いた文脈のコピーと並行実行、`git worktree`による自動的な作業領域の隔離など、実務で役立つ具体的なワークフローを提案しています。\n\n単なるツールの紹介に留まらず、エージェントがOS化していく過程における状態管理の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "デーモン",
+      "セッション管理",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:17:03.213657+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを使ったナレッジ中心設計を試してみた",
+    "url": "https://future-architect.github.io/articles/20260827b/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの処理効率を最大化するため、OKFをベースに設計情報を細分化・構造化した「AI中心」のドキュメント管理と開発ワークフローの実践報告。",
+    "summaryBody": "本記事は、AIエージェントとの協働を前提とした「ナレッジ中心設計」の実験的取り組みを詳説しています。Googleが提唱するOpen Knowledge Format (OKF) を参考に、設計書を人間向けの長大な文書から、AIが高速に検索・解読できる極小単位のMarkdown/YAMLファイルの集合へと再定義しました。具体的には、自作のWebフレームワーク「Popcorn Web」を含む3つのリポジトリ開発において、要件定義から実装、フィードバックまでをAI中心のサイクルで回すワークフローを構築。リポジトリを跨ぐ開発では、複数のAIエージェントに独自の知識を持たせ、提案書を通じて「対立」や「合意」を形成させることで設計を洗練させるマルチエージェント的なアプローチの有効性も示されています。ソースコードを唯一の真実（SSoT）とするのではなく、AIが理解しやすい構造化された知識を核に据える、AIネイティブ時代の新しいソフトウェア開発の姿を提示しています。",
+    "topics": [
+      "AIエージェント",
+      "ナレッジ中心設計",
+      "OKF",
+      "ソフトウェアアーキテクチャ",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

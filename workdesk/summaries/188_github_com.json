@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:16:44.145313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Archify: AIエージェント向けの高機能・検証可能なシステム構成図生成ツール",
+    "url": "https://github.com/tt-a1i/archify",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成したJSONを元に、検証済みの美しいシステム構成図やワークフロー図をインタラクティブなHTMLとして出力するレンダリングツール。",
+    "summaryBody": "Archifyは、Cursor、Claude Code、DeepSeek HarnessなどのAIエージェントに「図解スキル」を追加するためのツールキットです。エージェントが生成した型定義済みのJSON IR（中間表現）を、決定論的なアルゴリズムでHTMLやSVGへコンパイルします。一般的な自動レイアウト（Mermaid等）とは異なり、エージェントによる意図的な配置・強調を重視しつつ、スキーマ検証やラベルの重なりチェックを自動で行います。主な機能として、5つの図解タイプ（アーキテクチャ、ワークフロー、シーケンス、データフロー、ライフサイクル）、ダーク/ライトテーマの切り替え、PRレビュー用の差分比較（Architecture Delta）、ノードの依存関係追跡（Upstream/Downstream）などを備えています。出力は自己完結型のHTMLであり、PNGやSVG、SNS共有用のカードとしてもエクスポート可能です。",
+    "topics": [
+      "Architecture as Code",
+      "AI Agents",
+      "System Design",
+      "Diagramming",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "GitHub - tt-a1i/archify: Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export."
+  }
+}

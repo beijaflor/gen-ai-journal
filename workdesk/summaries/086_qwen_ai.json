@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:48:42.825490+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-Flash-Next: 究極のコスト効率を目指した新アーキテクチャ、Qwen4の先行プレビューが公開",
+    "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Qwen3.8-Flash-Nextは、GDN+QSAアテンション、Gated Residual、N-gram埋め込みを採用し、計算コストを劇的に抑えつつコーディングや推論性能を大幅に向上させた次世代AIアーキテクチャです。",
+    "summaryBody": "Qwenチームは、将来のQwen4の基盤となる新設計を導入したモデル「Qwen3.8-Flash-Next」のウェイトを公開しました。本モデルは125Bの総パラメータ（うち51BがN-gram埋め込み）を持ちつつ、トークンあたりの有効パラメータ数を6Bに抑えた高度なMoEモデルです。主要な技術革新として、Gated DeltaNet (GDN)とQwen Sparse Attention (QSA)を組み合わせたハイブリッドアテンション、4つの並列ブランチで情報流を制御するGated Residual (GR)、そして計算負荷を増やさずに記憶容量を拡大するN-gram Embeddingが導入されています。また、Muonオプティマイザの最適化により、学習効率が従来の9倍に向上。ベンチマークではQwen3.7-Plusを上回るコーディング性能とエージェント能力を示しており、特に長文脈（最大100万トークン）での処理性能が劇的に強化されています。このリリースにより、コミュニティは次世代モデルの基本設計を先行して検証することが可能になります。",
+    "topics": [
+      "Qwen",
+      "LLMアーキテクチャ",
+      "Mixture of Experts",
+      "疎なアテンション",
+      "効率的学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:46:47.502586+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティック・コンテキスト管理：メモリとコストの問題をライフサイクルとアーキテクチャの課題として解決する",
+    "url": "https://arxiv.org/abs/2607.21503",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントのコンテキスト肥大化とコスト増を、単なる検索の問題ではなく、情報の忘却や圧縮を含む「ライフサイクル管理」として捉える「Agentic Context Management (ACM)」を提唱する研究。",
+    "summaryBody": "本論文は、実運用におけるAIエージェントの失敗の主要因が、推論能力の不足よりも、会話履歴やツール出力といった「コンテキスト」の不適切な管理にあると指摘しています。従来のストレージ・検索中心のアプローチに対し、筆者は「Agentic Context Management (ACM)」という新しい枠組みを提唱しました。ACMは、情報の抽出、適切なストアの選択、忘却、次に来る情報の予測、そして予算内へのコンテキスト圧縮といった一連のライフサイクルとして管理を行うものです。具体的には「アーキテクチャ構築」「取り込み」「スコーピング」「予測」「圧縮・統合」という5つのプリミティブに分解されます。この手法により、単純な履歴蓄積で発生するトークンコストの二次関数的な増大を抑え、精度を維持しながら線形なコスト構造を実現します。リファレンス実装の『Maximem Synap』は、LongMemEvalで92%、LoCoMoで93.2%という高い性能を示しました。",
+    "topics": [
+      "AIエージェント",
+      "コンテキスト管理",
+      "LLMメモリ",
+      "トークンコスト最適化",
+      "Maximem Synap"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems"
+  }
+}

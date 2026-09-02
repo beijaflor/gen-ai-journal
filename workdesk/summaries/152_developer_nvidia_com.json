@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:07:23.661207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIAの汎用エージェントアーキテクチャ「AVO」がARC-AGI-3で100%を達成",
+    "url": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAが開発した「AVO」アーキテクチャは、永続メモリと監視機構を統合することで、GPUカーネル最適化から複雑な推論ベンチマークまで、長期にわたるタスクを完遂する汎用AIエージェントの有効性を実証した。",
+    "summaryBody": "NVIDIAの研究プロジェクト「AVO（Agentic Variation Operators）」は、モデル単体の能力ではなく、システム全体の設計によって高度な自律性を実現する汎用エージェントアーキテクチャです。このシステムは「永続メモリ」と「監視（Supervisor）」という2つの主要なメカニズムを備えており、数日間にわたる長期タスクでも進捗を維持できます。\n\n主な成果として、GPUカーネルの自動最適化ではFlashAttention-4を最大10.5%上回る性能を達成しました。さらに、未知の環境で推論能力を問う「ARC-AGI-3」ベンチマークのパブリックセットにおいて、全25環境・183レベルを完遂し、スコア100.00を記録しました。これは、Claude Opus 5を単体で用いた場合の約30%というベースラインを、システム設計によって大幅に引き上げた結果です。\n\n本研究は、エージェントの性能がLLM自体の能力のみならず、コンテキスト管理、ツール利用、フィードバックに基づく自己修正といった「ハーネス（枠組み）」の質に大きく依存することを強調しています。ドメイン固有の知識ではなく、自律的な進歩を支える「機械（マシナリー）」の汎用性が、次世代AIエージェントの鍵となることを示唆しています。",
+    "topics": [
+      "Agentic AI",
+      "ARC-AGI",
+      "NVIDIA Research",
+      "Autonomous Agents",
+      "GPU Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents"
+  }
+}

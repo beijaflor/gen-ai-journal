@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:16:06.152028+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIとの対話履歴を資産にする。DDR（Design Decision Record）自動記録の仕組み",
+    "url": "https://zenn.dev/softbank/articles/ee93e87a9d5dac",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIとの対話に含まれるデザインの意思決定を、ADRの概念を応用した「DDR（Design Decision Record）」として自動記録し、組織の資産に変える仕組みを解説。",
+    "summaryBody": "ソフトバンクのデザインチームによる、AIとの対話履歴からデザインの判断背景（DDR: Design Decision Record）を自動生成する手法の紹介です。AIツール利用時に「なぜそのデザインにしたか」という文脈が欠落しやすい課題に対し、ソフトウェア開発のADR（アーキテクチャ意思決定記録）の思想をデザイン領域に転用しました。具体的には、AIエージェントへの指示書（instructions.md）やGitのpre-commit hookを組み合わせることで、開発フローの中で自然に意思決定の下書きを作成・管理する仕組みを構築しています。これにより、個人の記憶や一時的なチャット履歴に依存していた検討プロセスを可視化し、組織的な知見として継承可能にすることを目指しています。",
+    "topics": [
+      "DDR",
+      "Design Decision Record",
+      "AIエージェント",
+      "デザインプロセス",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

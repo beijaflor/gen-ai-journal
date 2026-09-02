@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:53:28.525590+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エッジAIエージェントのメモリ：型定義による決定論的アプローチとpolign_db",
+    "url": "https://polign.com/blog-edge-agent-memory",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エッジ環境で動作するAIエージェントにおいて、LLMの不確実性を排除し、低リソースで高精度な記憶管理を実現するための「型定義されたメモリ」と軽量データベースの必要性を解説している。",
+    "summaryBody": "AIエージェントがクラウドからエッジデバイスへと移行する中で、メモリ（記憶）の管理手法も再構築が必要です。著者は、現状のLLMによるセマンティック検索（ベクトル検索）依存のメモリ管理には、情報の矛盾や上書きの失敗といった不確実性があると指摘します。解決策として提案されているのが、スキーマに基づいた「型定義されたメモリ」です。これにより、情報の修正や優先順位の判断をモデルに委ねず、データベース側で決定論的に処理できます。具体例として紹介されている「polign_db」は、ベクトル検索とBM25を組み合わせつつ、S3などのオブジェクトストレージ上で動作する極めて軽量なエンジンです。1250万件の検索をわずか37MiBのメモリ使用量で実行でき、2GBのARMマシンでも十分に動作します。将来的には、ローカルLLMとこの型定義メモリを組み合わせた、ユーザーが完全に所有・管理可能なエージェントスタックの普及が期待されます。",
+    "topics": [
+      "AIエージェント",
+      "エッジAI",
+      "ベクトルデータベース",
+      "LLMメモリ",
+      "記憶管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Agents are moving to the edge. Their memory should too."
+  }
+}

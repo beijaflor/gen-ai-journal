@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:57:02.102654+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「データを国外に出せない」現場のAI窓口、さくらのAI Engineだけで一晩で作ってみた",
+    "url": "https://qiita.com/ktdatascience/items/b1e36ac1ba7661bb90ba",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "国内完結型API「さくらのAI Engine」を活用し、データレジデンシー要件を満たす自治体向けAI窓口（RAG）を構築・検証した実践的な技術レポート。",
+    "summaryBody": "本記事は、データの国外移転が制限される業務環境を想定し、さくらのクラウドが提供する国産APIのみでRAGシステムを構築する手法を詳細に解説しています。実装では埋め込み（multilingual-e5-large）、LLM（gpt-oss-120b / llm-jp）、音声認識（Whisper）、音声合成（VOICEVOX）を組み合わせ、架空の自治体窓口システムを試作。E5モデル使用時のプレフィックスの有無による検索精度の変化や、国産モデルllm-jpの指示遵守特性、VOICEVOX利用時のコントロールパネルでの規約同意といった、実際に手を動かさないと気付きにくい技術的ハマりどころが共有されています。最終的に、音声入力から回答まで3〜5秒という実用的なレイテンシで国内完結型のAI処理が可能であることを実証しています。",
+    "topics": [
+      "さくらのAI Engine",
+      "RAG",
+      "データレジデンシー",
+      "国産LLM",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

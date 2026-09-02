@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:17:17.675778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLM向けの NVIDIA GPU の選び方",
+    "url": "https://note.com/npaka/n/nec1c1fb7000b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "NVIDIAのBlackwell世代（RTX 50シリーズ）を中心に、VRAM容量、メモリ帯域、推論エンジンの特性からローカルLLMに最適なGPU選定基準を詳説するガイド。",
+    "summaryBody": "ローカルLLMの実行に最適なNVIDIA GPUの選定基準を、技術的指標と世代別モデルの比較から解説しています。\n\n### 選定の重要指標\n- **VRAM容量**: モデルのサイズを決定する最重要項目。27Bモデルを16bitで動かすには54GB、4bit量子化なら14GB程度が必要になります。\n- **メモリ帯域**: 生成速度（Decode）に直結します。RTX 5090は約1.8TB/sの帯域を持ち、高速な推論が可能です。\n- **PrefillとDecode**: プロンプト読み込み時の演算性能（Prefill）と、1トークンずつの生成速度（Decode）の違いを理解することが重要です。\n\n### 世代別・用途別比較\n- **RTX 50シリーズ**: 最新のBlackwell世代。RTX 5090（32GB VRAM）はFP4に対応し、個人向けとしては現時点で最高峰の選択肢です。\n- **RTX 30/40シリーズ**: RTX 3090（24GB）は中古市場で安価にVRAMを確保する選択肢として依然有力です。\n- **GeForce vs RTX PRO**: 32GBを超える単一VRAMが必要な場合は、96GBを搭載するRTX PRO 6000等の業務用モデルが候補になります。\n\n### 特殊な実行手法\n- **FreeToken**: VRAMに収まらない超巨大MoEモデル（DeepSeek-V4-Flash等）を、一部のExpertのみをVRAMにキャッシュして実行する手法を紹介しています。これによりRTX 5090 1枚でも実用的な速度で動作可能です。\n- **対Mac Studio**: 速度とエコシステムのNVIDIAに対し、Macは大容量ユニファイドメモリによる「巨大モデルの搭載能力」が強みであると棲み分けを整理しています。",
+    "topics": [
+      "ローカルLLM",
+      "NVIDIA GPU",
+      "RTX 5090",
+      "VRAM",
+      "推論エンジン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

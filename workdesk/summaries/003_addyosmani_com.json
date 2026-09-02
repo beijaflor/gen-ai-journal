@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:26:11.731558+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のコード品質管理：制約（Constraints）による品質保証",
+    "url": "https://addyosmani.com/blog/agentic-code-quality/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが生成する膨大なコードに対して、人間によるレビューの代替として「制約（Quality Gates）」をシステム的に構築し、自動化されたフィードバックループを通じて品質を担保する手法を解説しています。",
+    "summaryBody": "Google Cloud AIのAddy Osmani氏が、AIエージェントによるソフトウェア開発時代の新たな品質管理モデルを提唱しています。エージェントが生成する膨大なコード変更を人間がすべてレビューすることは不可能なため、品質管理の焦点を「人間による目視」から「システム的な制約（Constraints）」へ移す必要があると説いています。\n\n### 主要なポイント\n- **制約としての品質ゲート**: 単体テスト、プロパティテスト、ミューテーションテスト、循環的複雑度などのメトリクスを、エージェントが従うべき「制約」として定義します。\n- **信頼できる環境の構築**: エージェントが安全に失敗し、信頼できるフィードバックを得られるハーネス（検証環境）を構築することが、自律的な開発ループには不可欠です。\n- **人間レビューの役割の変化**: 人間の貴重な注意力は定型的なチェックではなく、意図、アーキテクチャ、主観的な「味」などの高度な判断にのみ振り向けるべきです。\n- **バックプレッシャーの早期適用**: パイプラインの最終段階ではなく、開発プロセスの初期段階からコンパイラやセキュリティポリシーによる「逆圧」をかけることで、スケールと品質を両立させます。\n\n最終的に、AIがもたらす「速度」を維持しつつ「スロップ（質の低い生成物）」を防ぐには、チームがいかに厳格で意図的な制約を設計できるかが鍵となります。",
+    "topics": [
+      "AI Agents",
+      "Code Quality",
+      "Software Engineering",
+      "Automated Testing",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Agentic Code Quality"
+  }
+}

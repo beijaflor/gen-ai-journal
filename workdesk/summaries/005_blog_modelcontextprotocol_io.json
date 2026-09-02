@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:26:42.355300+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP (Model Context Protocol) の最新ロードマップ：AIエージェントの相互運用性とセキュリティの強化",
+    "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Model Context Protocol (MCP) は、ステートレスなHTTP通信への統一、エージェント独自のアイデンティティ管理、および複雑なワークフローを支える高度なメッセージング機能の拡充に向けた最新ロードマップを公開しました。",
+    "summaryBody": "MCP（Model Context Protocol）のコアメンテナーは、次世代の仕様策定に向けた5つの重点領域を定義した新しいロードマップを発表しました。過去のアップデートでサーバーのステートレス化やタスク機能の公式拡張化などの進展がありましたが、今後はさらに「自律的なAIエージェント」が実務で活用されるための基盤構築を加速させます。\n\n主な注力分野は以下の通りです：\n1. **エージェント・メッセージング**: Webhookやチャネルを用いたサーバー主導のイベント送信、長期実行されるタスク管理などのプリミティブを強化。\n2. **HTTPネイティブ輸送の統一**: リモートおよびローカル（stdio）の両環境でHTTPベースの通信に統一し、インフラ運用の簡素化を図る。\n3. **エージェント・アイデンティティとセキュリティ**: DPoPやWorkload Identity Federationを導入し、ユーザーが介在しないクラウドワークロード間での安全な権限委譲を標準化。\n4. **プリミティブの改善**: ツール呼び出し結果の形式統一や、膨大なツールカタログから必要なものだけを段階的に発見する仕組みの導入。\n5. **SDKの体験向上**: 開発者がAIを活用してコード生成を行うことを想定した、より直感的でConformance（準拠性）の高いSDKの提供。\n\nこれにより、MCPは単なるデータ連携規格を超え、エンタープライズレベルのエージェントエコシステムを実現する標準プロトコルとしての地位を固める狙いです。",
+    "topics": [
+      "Model Context Protocol",
+      "AIエージェント",
+      "API標準化",
+      "サイバーセキュリティ",
+      "分散システム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "The New MCP Roadmap | Model Context Protocol Blog"
+  }
+}

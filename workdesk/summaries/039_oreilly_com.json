@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:35:31.402532+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成UIのコントロールプレーンとしてのデザインシステム",
+    "url": "https://www.oreilly.com/radar/the-design-system-as-the-control-plane-for-ai-generated-ui/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるUI生成の加速に伴う一貫性の欠如を防ぐため、デザインシステムをAIエージェントの決定を導く「コントロールプレーン」として機能させるべきである。",
+    "summaryBody": "AIによるフロントエンド開発の高速化は、独自のコンポーネントや一貫性のないインタラクションが量産されるリスクを伴います。本記事では、デザインシステムを単なるスタイルガイドではなく、AIエージェントの出力を制御する「コントロールプレーン」として再定義することを提唱しています。具体的には、アクセシビリティ、インタラクション、コンテンツの規約をシステムにコード化し、CLAUDE.mdなどのプロジェクト指示ファイルを通じてAIに学習させることで、AIにゼロからコードを書かせるのではなく、既存パターンを再利用させる仕組みを構築します。これにより、フロントエンドエンジニアの役割は手作業のコーディングから、システムのアーキテクチャ設計やガバナンスへとシフトしていくと述べています。",
+    "topics": [
+      "Design Systems",
+      "Generative AI",
+      "Frontend Engineering",
+      "UX Design",
+      "AI Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 88
+    },
+    "originalTitle": "The Design System as the Control Plane for AI-Generated UI"
+  }
+}

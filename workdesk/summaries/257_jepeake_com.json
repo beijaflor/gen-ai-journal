@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:54:33.963227+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIチップ・アーキテクチャの全貌：NVIDIA、TPU、AMD、Cerebras、Trainium、Groqの技術詳解",
+    "url": "https://www.jepeake.com/ai-chip-architectures",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIA GPU、Google TPU、AMD Instinct、Cerebras WSE、AWS Trainium、Groq LPUの設計哲学、演算ユニット、メモリ階層、スケーリング戦略を技術的深部まで徹底比較した包括的な調査レポート。",
+    "summaryBody": "本記事は、ムーアの法則の終焉と『ドメイン特化型アーキテクチャ（DSA）の黄金時代』の到来を背景に、主要なAIチップがいかに「メモリの壁」という物理的制約を克服しようとしているかを詳細に論じている。NVIDIAはプログラム可能性とNVLinkによる強力なスケールアップを武器にトップを走り、Google TPUはシストリック・アレイとコンパイラ主導の静的スケジューリングで効率を極限まで高めている。AMDはHBM容量と3DパッケージングでNVIDIAを追随し、Cerebrasはチップをウェハーサイズに拡張することでHBMのボトルネックを完全に回避する。AWSのTrainiumはクラウド垂直統合の経済性を追求し、Groqは決定論的な命令実行によって超低遅延推論を実現する。各アーキテクチャの比較を通じて、AIモデルの学習と推論（Prefill/Decode）における演算強度の差が、いかにハードウェア設計のトレードオフ（SRAM vs HBM、クロスバー vs トーラス、コンパイラ vs ハードウェアスケジューラ）に直結しているかを解き明かしている。",
+    "topics": [
+      "AI Chip Architectures",
+      "NVIDIA Blackwell",
+      "Google TPU v8",
+      "Memory Wall",
+      "Domain Specific Architectures"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "AI Chip Architectures - Jacob Peake"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:13:41.087702+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用した自動テストのセルフヒーリング",
+    "url": "https://blog.paypay.ne.jp/ai-driven-self-healing-for-automation-testing-at-paypay/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "PayPayのQAチームがLLMを活用し、UI変更によるテスト失敗を自動修復する「セルフヒーリング」機能を構築し、保守工数削減とテスト作成高速化を実現した事例。",
+    "summaryBody": "PayPayのQAチームにおける、AIを用いた自動テストの保守効率化に関する実践的な取り組みが紹介されています。フロントエンドの変更によりボタンのIDやXPathが頻繁に変わることでテストが失敗する課題に対し、LLM（大規模言語モデル）を活用した自己修復エンジンを開発しました。テスト失敗時にDOM、スクリーンショット、スタックトレースなどをLLMに送信し、最適なロケータを再特定してテストを継続させます。特にプロンプトエンジニアリングにおいて、詳細なコンテキスト提供と構造化出力（JSON）による信頼度制御を徹底することで精度を高めています。また、副次的な効果として、ロケータを空のまま実行してAIに特定させる「逆アプローチ」によるテストスクリプト作成の高速化や、専用のIDEプラグイン開発といった発展的な活用についても触れられています。",
+    "topics": [
+      "AI",
+      "QA",
+      "自動テスト",
+      "セルフヒーリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

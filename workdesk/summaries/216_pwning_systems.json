@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T18:11:55.692322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのメモリ管理をプログラム解析手法へと転換した試み：Datalogを用いた論理的状態維持",
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの記憶を単なる履歴のベクトル検索ではなく、Datalogを用いた論理的な「状態」として管理することで、複雑な推論の整合性を保ち、前提変更時の自動更新を可能にする新手法の提案。",
+    "summaryBody": "脆弱性調査のような長時間かつ複雑なタスクにおいて、LLMが過去に確立した事実や前提を忘れ、矛盾した推論を始める問題に対処するため、宣言型論理言語Datalogを用いたメモリシステム「Lemmalog」を構築した事例。LLMを自然言語から構造化された「事実」を抽出するフロントエンドとし、Datalogエンジンを決定論的な推論と状態維持を担うバックエンドとして分離している。これにより、ある事実が否定された際にそれに基づく結論を自動的に無効化するインクリメンタル評価や、なぜその結論に至ったかを示す「プロバナンス（由来）」の追跡が可能になった。ベンチマークでは、全履歴をプロンプトに入れる手法の約38分の1のトークン消費量で、知識更新や時間的推論において優れた性能を示した。単なる情報の検索ではなく、プログラム解析のように「現在の状態」を計算・維持することの有効性が示されている。",
+    "topics": [
+      "LLM Memory",
+      "Datalog",
+      "Program Analysis",
+      "Vulnerability Research",
+      "Lemmalog"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "I accidentally turned LLM memory into program analysis"
+  }
+}

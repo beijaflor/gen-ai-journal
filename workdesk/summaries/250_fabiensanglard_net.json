@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:52:12.580083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMによるコーディング品質向上のための agent.md 活用法",
+    "url": "https://fabiensanglard.net/agent.md/index.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMとのコーディングセッションにおいて、コード品質やスタイル規約をまとめた `agent.md` ファイルを読み込ませることで、繰り返しのアドバイスを省き、一貫したコード生成を実現する手法。",
+    "summaryBody": "エンジニアのFabien Sanglard氏による、AIエージェントを用いたコーディング支援の効率化に関する考察。当初LLMが生成するコードの品質（スパゲッティコードやコメント不足）に不満を持っていた著者が、プロジェクトのルートディレクトリに `agent.md` という設定ファイルを配置し、IDE（AntigravityやClaude Codeなど）に読み込ませる解決策を提示している。このファイルには、マジックナンバーの禁止、早期リターン、短い関数名、テスト駆動開発の強制、コミットメッセージの書式など、自身の好みのコーディングスタイルを詳細に定義する。これにより、セッションごとに同じ指摘を繰り返す手間が省け、開発者はコードの細部ではなくアーキテクチャや設計に集中できるようになる。また、LLMの「コンテキストの希釈」問題への対策として、セッションを短く保つことや、明示的な再読み込みの重要性についても解説している。",
+    "topics": [
+      "AI Coding Assistant",
+      "Code Quality",
+      "LLM Prompt Engineering",
+      "Software Development",
+      "Agentic IDE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "My agent.md to improve LLM-assisted code quality"
+  }
+}

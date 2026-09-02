@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:00:11.640477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 5090 + RAM 128GBでQwen3.8-Flash-Nextをllama.cppで動かしてみた",
+    "url": "https://zenn.dev/holy_fox/articles/04887ff8177b87",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5090と128GB RAMを搭載したPCで125B規模のMoEモデル「Qwen3.8-Flash-Next」を動作させ、40 tokens/s超の推論速度を実現する最適化設定を検証した技術レポート。",
+    "summaryBody": "最新のGPU NVIDIA GeForce RTX 5090 (32GB) と大容量の128GB RAM環境を用い、125Bパラメータ（活性6B）のMoEモデル「Qwen3.8-Flash-Next」をllama.cppで動かす検証記事です。UnslothによるUD-Q2_K_XL量子化モデルを使用し、GPUへ配置するMoEエキスパート数（-ncmoe）の調整やCPUスレッドの最適化、コア固定を実施。結果、64kコンテキストにおいて短文生成で約48.0 tokens/s、16kトークン入力後の長文推論でも約43.3 tokens/sという、単一GPUかつホストRAMオフロード環境としては非常に高いパフォーマンスを記録しました。また、n-gram投機デコードが本構成では逆効果になる点や、物理コア数に合わせたスレッド設定の重要性など、実用的なチューニングの知見が網羅されています。",
+    "topics": [
+      "RTX 5090",
+      "llama.cpp",
+      "Qwen3.8-Flash-Next",
+      "ローカルLLM",
+      "MoE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    }
+  }
+}

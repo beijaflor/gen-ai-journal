@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:37:11.716941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "本番導入前にLLMを評価する方法：GitHubのシークレットスキャンにおける実戦的教訓",
+    "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubがシークレットスキャンの誤検知削減（95%減）を実現する過程で確立した、プロダクトの意思決定に直結するLLM評価の7つの実践的ベストプラクティスを解説しています。",
+    "summaryBody": "LLMを本番環境にデプロイする際、既存のベンチマークだけでは不十分です。本記事では、GitHubがシークレットスキャン機能の精度向上のために構築した評価フレームワークを詳述しています。\n\n### 主なポイント\n1. **プロダクトの意思決定を優先する**: 単なる精度（Precision）だけでなく、セキュリティ上のガードレール（Recall）を定義し、トレードオフを明確にします。\n2. **オフライン評価を統合テストとして扱う**: プロンプトやモデルの変更をコードと同様にバージョン管理し、再現可能なベースラインと比較します。\n3. **本番に近い環境の維持**: 曖昧な入力やノイズ、周辺コンテキストを含めた、本番同様のデータ分布でテストを行います。\n4. **エラー分析の徹底**: 失敗を「モデル、プロンプト、パイプライン、ラベル」などのカテゴリに分類し、具体的なエンジニアリングタスクへ落とし込みます。\n5. **LLM-as-judgeの活用**: すべてを人間がレビューするのではなく、LLMを審判として使いつつ、高リスクなケースや矛盾するケースに人間のリソースを集中させるハイブリッド型を採用します。\n\nこれらの手法を適用することで、GitHubはリコールを維持したまま誤検知を95%削減することに成功しました。AIシステムを信頼可能なレベルまで引き上げるための、具体的かつ実用的なガイドです。",
+    "topics": [
+      "LLM Evaluation",
+      "Secret Scanning",
+      "MLOps",
+      "AI Security",
+      "Product Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "How to evaluate LLMs before production - The GitHub Blog"
+  }
+}

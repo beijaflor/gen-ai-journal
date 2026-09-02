@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:03:51.409778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1億2500万パラメータのピアノ自動補完モデルの学習記録：リアルタイム実行とDPOの適用",
+    "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "iPhone 15でリアルタイム動作する1.25億パラメータのピアノ演奏補完モデルを開発し、データ表現の工夫とDPOによる最適化で実用的な精度を実現した過程の記録。",
+    "summaryBody": "本記事は、MIDIキーボードの演奏をリアルタイムで補完する「ピアノ版GitHub Copilot」のようなモデルの開発記です。著者は14回もの実験を経て、iPhone 15上で毎秒約108音を生成可能な1.25億パラメータのTransformerモデルを構築しました。\n\n主な技術的知見は以下の通りです：\n1. **MIDI表現の最適化**: 従来のNote-on/off方式はドリフト（音の消し忘れ）が発生しやすいため、音高、発音間隔（デルタ）、持続時間、ベロシティを1つの「Noteトークン」として扱う独自の表現を採用。1つの音符につき1回のTransformerパスで済むアーキテクチャにより高速化を実現しています。\n2. **データ品質の重要性**: 単純なデータ拡張よりも、クラシック曲を中心とした厳格なクリーニングと重複削除がモデルの性能に大きく寄与しました。\n3. **DPO（直接選好最適化）の導入**: 事後学習としてDPOを適用し、Geminiを用いたペア評価によるフィードバックを行うことで、演奏の継続性と音楽的クオリティを大幅に改善しました。\n\n最終的に「RollTab」というiOSアプリとして公開されており、INT8量子化されたモデルがオンデバイスで低遅延に動作します。",
+    "topics": [
+      "Music Generation",
+      "Transformer",
+      "DPO",
+      "On-device AI",
+      "MIDI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Training a 125M-parameter Model to Autocomplete Piano"
+  }
+}

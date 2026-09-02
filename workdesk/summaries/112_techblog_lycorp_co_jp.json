@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:56:26.287865+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LINEヤフーのAgent iを支えるAIエージェント基盤：「誰でも作れる」と「安全に動かせる」をどう両立したか",
+    "url": "https://techblog.lycorp.co.jp/ja/20260826a",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "LINEヤフーは、非エンジニアでもAIエージェントを構築・運用できる内製基盤「Agent Builder」と「Agent Runtime」の設計思想と技術構成を公開しました。",
+    "summaryBody": "LINEヤフーが開発するAIエージェントサービス「Agent i」の裏側にある、AIエージェント開発・実行基盤の詳細が解説されています。当初はマルチエージェント連携を目標としていましたが、開発の難易度自体がボトルネックであったため、「エージェントを量産できる環境」の構築へ方針を転換しました。基盤は、React Flowを用いたノーコードのワークフロー編集ツール「Agent Builder」と、独自の中間表現（IR）を介してLangGraphで処理を実行する「Agent Runtime」で構成されています。特に運用面では、Kubernetes Namespaceを用いた論理的なサンドボックス化により、セキュリティ確保とリソース効率の両立を図っています。この基盤の導入により、企画職や営業職が自らプロトタイプを作成可能になり、開発サイクルの劇的な高速化を実現しました。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "ノーコード",
+      "LangGraph",
+      "システム構成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

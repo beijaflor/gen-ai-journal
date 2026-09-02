@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:55:36.825117+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT デスクトップの Codex から WebMCP 対応 TODO アプリを操作する",
+    "url": "https://azukiazusa.dev/blog/chatgpt-desktop-codex-webmcp-todo-app/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ChatGPT デスクトップの「Site tools」機能を用い、WebMCP API を通じてブラウザ上の TODO アプリを AI エージェントから操作する実装方法と動作検証の解説。",
+    "summaryBody": "ChatGPT デスクトップの内蔵ブラウザが対応した「Site tools (WebMCP)」機能について、TODO アプリの実装例を交えて解説した記事です。WebMCP は Web サイトのロジックを AI エージェント用のツールとして公開するための JavaScript API であり、`document.modelContext.registerTool()` を用いてメソッドを登録することで、AI が画面の推測ではなく構造化されたツールとして機能を呼び出せるようになります。記事では、Codex が自然言語の指示からツールの引数を生成し、実際に TODO の追加や完了、削除（削除時は安全性の確認プロンプトが介入）を行う実行履歴を詳しく分析しています。",
+    "topics": [
+      "ChatGPT",
+      "WebMCP",
+      "Codex",
+      "Site tools",
+      "Web Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

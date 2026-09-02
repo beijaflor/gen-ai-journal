@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:56:10.192263+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "お前のループエンジニアリングは間違っている",
+    "url": "https://zenn.dev/t_hayashi/articles/20ec8fbebbeabb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeからの指摘を機に、開発フローをループエンジニアリングの原則に沿って再設計し、自律的なAI開発を実現するための知見とツール開発についてまとめた記録。",
+    "summaryBody": "本記事は、Claude Codeから自身の開発手法が「ループエンジニアリング」の原則から逸脱しているとフィードバックを受けた著者が、真の自律型AI開発フローを構築する過程を詳説したものです。Addy Osmani氏の提唱する原則に基づき、Automations（自動化）やMemory（状態管理）などのコア要素をどう実装すべきかを分析。特に「実装者と評価者の分離」「可逆性と影響範囲に基づく人間介入の濃淡付け」「仕事の自律発見（Issue起票の自動化）」といった具体的なプラクティスが提示されています。また、エージェントの自己申告の危険性と客観的な機械検証の重要性を説き、それらを統合して自動開発サイクルを回すための「ハーネスキット」の概念とアーキテクチャについても触れています。AIエージェントを単なる補助ツールではなく、自律的な開発組織として機能させるための実践的なガイドとなっています。",
+    "topics": [
+      "ループエンジニアリング",
+      "Claude Code",
+      "AIエージェント",
+      "自律開発",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:04:10.190909+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにAPIキーを渡さない — trustlessを作った理由",
+    "url": "https://zenn.dev/neomaru/articles/trustless-why-no-secrets-for-agents",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントに直接APIキーを渡さず、ブローカーを介して実行時にのみ値を注入し、出力から秘密情報を自動消去するセキュアなCLIツール「trustless」の設計思想。",
+    "summaryBody": "AIエージェント（特にMCPサーバ）の利用において、APIキーが設定ファイル、プロセス、会話履歴、ログの3箇所に平文で残ってしまうセキュリティリスクを解決するためのツール「trustless」を紹介しています。このツールは、エージェントには「キー名」だけを伝え、実際の値はブローカーが実行時のみプロセス環境変数やHTTPヘッダに注入し、さらに出力に含まれるシークレットをDLP機能で自動マスク（REDACTED）する仕組みを提供します。\n\n主な機能と設計判断：\n- **保管ではなく注入と遮断**: passやBitwarden等の既存ストアをバックエンドに利用し、渡し方だけを安全にする。\n- **2つの注入経路**: STDIO（子プロセスのenv）とHTTP（プロキシ経由のヘッダ注入）に対応。\n- **最小の依存**: Pure Goかつ単一依存のみで構築され、監査が容易な静的バイナリを提供。\n- **DLP（データ損失防止）**: LLMへの送信前やログ保存前に、既知のシークレットや正規表現パターンで値を秘匿化する。\n\n既存のVault系ツールが解決しきれなかった「エージェントのコンテキストにキーを載せない」という課題に対し、実用的なアプローチを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "MCP",
+      "セキュリティ",
+      "秘密情報管理",
+      "Go"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

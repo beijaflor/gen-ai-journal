@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:33:40.476149+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントAIに対応するためのデータ基盤構築：Thoughtworksによるガイド",
+    "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自律型AIエージェントがデータを正確かつ安全に利用し、意思決定を行えるようにするための「AI-Ready」なデータアーキテクチャの4つの主要構成要素について解説した詳細なガイド。",
+    "summaryBody": "### AIエージェントに最適化されたデータ基盤の構築\n\n従来のデータシステムは、コンテキストや判断力を備えた人間を対象に設計されてきましたが、AIエージェントにはその「直感」が欠けています。Thoughtworksのエンジニアは、AIが誤ったデータに基づいて自信満々に行動することを防ぐため、以下の4つのレイヤーを提案しています。\n\n1. **信頼と品質（Trusted）**: データ契約（Data Contracts）をコードとして扱い、鮮度SLAや品質ルールを厳格に適用します。品質基準を満たさないデータを隔離する「クアランティン（検疫）パターン」を採用し、AIに汚染されたデータを与えないようにします。\n2. **追跡可能性とガバナンス（Traceable & Governed）**: 単なるログではなく、「なぜその判断をしたか」という推論過程を含む「エージェント・リネージ」を記録します。また、権限委譲やジャストインタイム認証を用いてセキュリティを強化します。\n3. **コンテキスト層（Context Layer）**: セマンティックモデル、ドメインモデル、機能モデルの3つを構築し、メトリクスの定義（例：収益の計算式）やビジネスルールをAIに明示的に提供します。\n4. **アクション可能なアクセス（Operational）**: 単なるRAG（検索）を超え、MCP（Model Context Protocol）などを活用してリアルタイムのクエリやシステムへの書き込み（アクション）を段階的な自律性の下で行えるようにします。\n\nこれらの層をボトムアップで構築し、初日からオブザーバビリティを確保することが、実用的なエージェントAI実現の鍵となります。",
+    "topics": [
+      "AIエージェント",
+      "データアーキテクチャ",
+      "データガバナンス",
+      "セマンティック層",
+      "MCP (Model Context Protocol)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Making Your Data Ready for Agentic AI"
+  }
+}

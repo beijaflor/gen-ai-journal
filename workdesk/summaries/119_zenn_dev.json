@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:58:04.880197+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "敵対的検証をLLMコードレビューで試すと何が起きるのか",
+    "url": "https://zenn.dev/knowledgesense/articles/0cb441713c9fee",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMによるコードレビューの精度を向上させるため、レビュアーと反論役（Critic）がコードの証拠に基づき議論・合意形成を行う「Adversarial Review」手法の有効性と検証結果を紹介しています。",
+    "summaryBody": "本記事では、LLMエージェントを用いたコードレビューの精度向上手法「Adversarial Review」について解説しています。従来の敵対的検証は指摘の網羅性に優れる一方、根拠の薄い誤指摘（ハルシネーション）が多いという課題がありました。本手法では「Reviewer（指摘役）」と、コード上の証拠を基に反論する「Critic（反論役）」の2段階構成を採用し、両者が合意するまでやり取りを繰り返します。検証の結果、F1スコアで3ポイントの精度向上を確認した一方で、消費トークンが約4.5倍に増加するというコスト面のトレードオフも明らかになりました。エージェントによる自動生成コードが増える中、人間側のレビュー負荷を下げるための実践的なアプローチとして提案されています。",
+    "topics": [
+      "LLM",
+      "コードレビュー",
+      "AIエージェント",
+      "敵対的検証",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

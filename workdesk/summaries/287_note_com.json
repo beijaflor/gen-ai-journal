@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:02:47.674280+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FreeTokenの概要：VRAM容量を超える大型MoEモデルを高速推論する新エンジン",
+    "url": "https://note.com/npaka/n/n6064bfdb71ed",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "NVIDIA GPUのVRAM容量を超える大型MoEモデルを、エキスパートの動的キャッシュとCPU/GPU協調により高速に推論する「FreeToken」の機能と導入手順の解説。",
+    "summaryBody": "FreeTokenは、NVIDIA GPUにおいてVRAMに収まりきらない大型のMixture-of-Experts (MoE) モデルをローカルで高速推論するためのAI推論エンジンです。MoEが推論時に特定のエキスパートのみを呼び出す特性を利用し、エキスパートを効率的にGPUへキャッシュしつつCPUと協調動作させることで、16GB VRAMの環境で約23.5GBのモデルを動作させるなど、メモリ制約のある環境でも高いパフォーマンスを発揮します。実際にRTX 3080 Laptop GPU (16GB) を用いたQwen3.6-35B-A3B-NVFP4の検証では、平均72.18 tok/sという実用的な生成速度が確認されています。DeepSeek-V4やGLM-5.2、Qwen3.6 MoEなどの最新モデルにも対応しており、個人環境での大規模LLM活用を大きく前進させるツールです。",
+    "topics": [
+      "FreeToken",
+      "MoE",
+      "Local LLM",
+      "NVIDIA GPU",
+      "AI推論エンジン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

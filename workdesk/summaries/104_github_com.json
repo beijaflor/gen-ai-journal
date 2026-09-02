@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:54:23.189248+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "config-drift-checker: Claude Codeの設定（CLAUDE.md/スキル）を継続的にテストするCIツール",
+    "url": "https://github.com/jameskomo/config-drift-checker",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのCLAUDE.mdやカスタムスキル、フックなどの設定が、モデルの更新やツール自体のアップデートによって意図せず変化（ドリフト）していないかを自動で検証・監視するCIツール。",
+    "summaryBody": "Claude CodeなどのAIコーディングエージェントにおいて、エージェントの挙動を制御する「CLAUDE.md」、カスタムスキル、フックといった設定ファイルの品質を担保するためのツールです。Claude Code自体の頻繁なアップデートや、背後にあるモデルのサイレントな変更、あるいはチームメンバーによる編集によって、エージェントが期待通りに動かなくなる「設定ドリフト（Config Drift）」を防ぐことを目的としています。\n\n主な機能として、Anthropic公式のeval形式を用いたテストケースの実行、GitHub ActionsによるCI連携、Claude Codeの新規リリース監視、および設定の寄与度を測るためのアブレーション分析（設定の有無による比較）を備えています。`/config-drift-checker:setup`コマンドを実行するだけで、既存の環境からテストケースとワークフローが自動生成されるため、導入も容易です。テスト結果は詳細なHTMLレポートやSlack通知、傾向管理ダッシュボードとして出力され、回帰バグの早期発見を支援します。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "LLM Evals",
+      "CI/CD",
+      "Configuration Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - jameskomo/config-drift-checker: Config Drift Checker for coding-agent setups: CI for your Claude Code configuration (CLAUDE.md, skills, hooks) — eval cases, release-watch, regression alerts"
+  }
+}

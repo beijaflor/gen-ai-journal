@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:05:14.241668+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リーナス・トーバルズ氏、AIを活用して「地獄のようなデバッグ」を完遂",
+    "url": "https://www.phoronix.com/news/Linus-Torvalds-Debug-AI",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "リーナス・トーバルズ氏がIntel Xeグラフィックスドライバーの深刻なバグを修正する際、AIを「根気強い助手」として活用し、24個のデバッグパッチと18回の再起動を経て解決したことを報告した。",
+    "summaryBody": "Linuxカーネルの生みの親であるリーナス・トーバルズ氏が、Intel Xeカーネルグラフィックスドライバーのバグ修正においてAIを活用したエピソードが話題となっています。Battlemage G21グラフィックスカードで発生していた、GDM（ディスプレイマネージャー）が無限に再起動するという「地獄のようなデバッグセッション」において、リーナス氏はAIにデバッグコードの生成やログ分析などの「単純作業（grunt-work）」を任せました。AIは途中で「解決不可能である」と数回匙を投げたものの、リーナス氏の粘り強いプッシュにより作業を継続。最終的には、わずか1行の修正（`round_up()`から`round_down()`への変更）に辿り着きました。リーナス氏は、AIを非常に有用なツールとして評価しており、今回のコミットメッセージの作成もAIに任せています。この修正はLinux 7.3以降に適用される予定です。",
+    "topics": [
+      "Linux",
+      "Linus Torvalds",
+      "AI",
+      "Intel Xe Driver",
+      "Debugging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Linus Torvalds Endures A Debug Session From Hell, \"Enormously Helped\" By AI"
+  }
+}

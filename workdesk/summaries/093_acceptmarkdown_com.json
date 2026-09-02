@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:50:13.054017+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Accept: text/markdown - HTTPコンテンツ交渉によるAIエージェントへのMarkdown配信",
+    "url": "https://acceptmarkdown.com/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "HTTPのContent Negotiationを活用し、AIエージェントに対して不要なHTMLを除去したクリーンなMarkdownを配信するための標準化手法と実装ガイドを提供するプロジェクト。",
+    "summaryBody": "### 概要\nこのプロジェクトは、HTTPヘッダーの `Accept: text/markdown` を利用して、ブラウザにはHTMLを、AIエージェントにはMarkdownを同じURLから出し分ける「コンテンツ交渉」の普及を目的としています。\n\n### AIエージェント最適化の3つのメリット\n1. **トークンの削減**: ナビゲーション、スタイル、スクリプト、複雑なレイアウトを排除し、本文のみを送信。LLMのコンテキストウィンドウを効率的に使用できます。\n2. **検索精度（RAG）の向上**: 広告やサイドバーなどのノイズが除去されるため、RAGパイプラインにおける埋め込み（Embedding）の質が向上します。\n3. **レイテンシの低減**: 転送データ量と解析負荷が減り、モデルが思考を開始するまでの時間を短縮します。\n\n### 実装とリソース\nサイト内では、Nginx、Cloudflare、Next.js、Django、Goなど、多岐にわたるプラットフォーム向けの具体的な実装コード（レシピ）が提供されています。また、指定したURLがこの仕様に準拠しているかをチェックする検証ツールも公開されており、AI時代のWeb標準の一つとして提案されています。",
+    "topics": [
+      "AI Agents",
+      "Markdown",
+      "Content Negotiation",
+      "RAG",
+      "Web Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Serve Markdown to AI Agents with Accept Headers"
+  }
+}
