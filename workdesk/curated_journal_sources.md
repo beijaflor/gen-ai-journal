@@ -57,7 +57,7 @@
 - [ ] 058. https://corkmac.app/our-ai-stance/
 - [ ] 105. https://www.bloodinthemachine.com/p/with-the-backlash-to-data-centers
 
-## テーマ8: GitHub・ペパボ・SmartHRが磨くAI生成物の検証と評価
+## テーマ8: GitHub・ペパボが磨くAI生成物の検証と評価
 
 - [ ] 054. https://about.gitlab.com/ja-jp/blog/when-code-is-abundant/
 - [ ] 095. https://revyl.com/blog/product-development-is-being-rewritten/
