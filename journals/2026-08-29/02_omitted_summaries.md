@@ -796,16 +796,6 @@ imageat（旧名関連：INFINITE PHASE LLC運営）は、Alibaba CloudのQwen�
 
 ---
 
-## 098_nytimes_com
-
-**オーストラリアのAI音楽チャート規制に関するNYT記事（本文取得不可）**
-
-出典: https://www.nytimes.com/2026/08/25/world/australia/australia-ai-music-chart-ban.html
-
-この記事はペイウォールおよびアンチボット制御により本文を取得できず、要約を生成していません。URLは記録・監査の目的でomit（不採用）として保持しています。掲載には手動での再取得または購読が必要です。本エントリはメイン／アネックスには含まれません。
-
----
-
 ## 100_ac2protocol_org
 
 **AC2 Protocol - エージェントのための自己非保管型署名と意図検証プロトコル**
@@ -1374,11 +1364,11 @@ go-llamaは、人気の高い推論エンジンllama.cppをPure Goで動作さ�
 
 ## 163_ft_com
 
-**Financial Times 記事（本文取得不可）**
+**Anthropicの最上位AIモデル、低価格ツールの台頭で利用者獲得に苦戦（FT）**
 
 出典: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245
 
-この記事はペイウォールおよびアンチボット制御により本文を取得できず、要約を生成していません。URLは記録・監査の目的でomit（不採用）として保持しています。掲載には手動での再取得または購読が必要です。本エントリはメイン／アネックスには含まれません。
+FTの記事。見出しは「Anthropic’s best AI model struggles to attract users as cheaper tools thrive」。本文はFTのペイウォール（Subscribe to read）により取得できず、見出し以外の本文要約は生成していない（本文からの捏造を避けるため）。記録・監査の目的でomit（不採用）として保持する。掲載には購読による本文取得が必要。本エントリはメイン／アネックスには含まれない。
 
 ---
 
@@ -2022,11 +2012,11 @@ Simon Willison氏は、Claude CodeやOpenAI Codexのようにコードを生成�
 
 ## 249_ft_com
 
-**Financial Times 記事（本文取得不可）**
+**AIエージェントに法人格を与えてはならない（FT）**
 
 出典: https://www.ft.com/content/b8cc4bf4-6d3c-4974-8428-9a091983c473
 
-この記事はペイウォールおよびアンチボット制御により本文を取得できず、要約を生成していません。URLは記録・監査の目的でomit（不採用）として保持しています。掲載には手動での再取得または購読が必要です。本エントリはメイン／アネックスには含まれません。
+FTの記事。見出しは「We must not grant AI agents legal personhood」。本文はFTのペイウォール（Subscribe to read）により取得できず、見出し以外の本文要約は生成していない（本文からの捏造を避けるため）。記録・監査の目的でomit（不採用）として保持する。掲載には購読による本文取得が必要。本エントリはメイン／アネックスには含まれない。
 
 ---
 

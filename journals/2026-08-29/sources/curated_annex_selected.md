@@ -56,6 +56,7 @@ AI-curated (Supabase had no flags). Round-2 revision: promoted a dedicated local
 - [ ] 180. https://xtech.nikkei.com/atcl/nxt/column/18/00157/082500111/
 - [ ] 237. https://yamdas.hatenablog.com/entry/20260824/liberal-democracy-in-the-ai-era
 - [ ] 285. https://techjusticelaw.org/press-releases/pastor-sues-after-openai-ai-chatgpt-allegedly-discouraged-him-from-seeking-medical-care-during-life-threatening-blood-clots/
+- [ ] 098. https://www.nytimes.com/2026/08/25/world/australia/australia-ai-music-chart-ban.html
 
 ## 8. AIインフラ・シリコン
 

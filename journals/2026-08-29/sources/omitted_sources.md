@@ -1,6 +1,6 @@
 # Omitted Sources — 2026-08-29
 
-Sources not curated into main or annex (incl. BLOCKED paywalls 098/163/249 and Gates dup 091).
+Sources not curated into main or annex (incl. FT paywalls 163/249 and Gates dup 091).
 
 - [ ] 001. https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/
 - [ ] 002. https://addyosmani.com/blog/practical-loop-engineering/
@@ -66,7 +66,6 @@ Sources not curated into main or annex (incl. BLOCKED paywalls 098/163/249 and G
 - [ ] 091. https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make
 - [ ] 092. https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/the-risks-of-ai-are-real-but-manageable
 - [ ] 096. https://imageat.com/models/qwen-3-8-27b-uncensored
-- [ ] 098. https://www.nytimes.com/2026/08/25/world/australia/australia-ai-music-chart-ban.html
 - [ ] 100. https://www.ac2protocol.org/
 - [ ] 101. https://keenable.ai/blog/needle-the-benchmark-your-search-engine-can-t-memorize
 - [ ] 102. https://polign.com/blog-edge-agent-memory
