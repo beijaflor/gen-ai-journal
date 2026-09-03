@@ -77,7 +77,6 @@
 - [x] 087. https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/
 - [x] 089. https://artificialanalysis.ai/models/glm-5-3-flash
 - [x] 090. https://www.ssp.sh/brain/using-obsidian-with-ai/
-- [x] 091. https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make
 - [x] 092. https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/the-risks-of-ai-are-real-but-manageable
 - [x] 094. https://openai.com/ja-JP/webmcp-challenge/
 - [x] 096. https://imageat.com/models/qwen-3-8-27b-uncensored

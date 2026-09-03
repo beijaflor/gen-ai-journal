@@ -90,7 +90,6 @@
 - [x] 088. https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/
 - [x] 089. https://artificialanalysis.ai/models/glm-5-3-flash
 - [x] 090. https://www.ssp.sh/brain/using-obsidian-with-ai/
-- [x] 091. https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make
 - [x] 092. https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/the-risks-of-ai-are-real-but-manageable
 - [x] 093. https://acceptmarkdown.com/
 - [x] 094. https://openai.com/ja-JP/webmcp-challenge/

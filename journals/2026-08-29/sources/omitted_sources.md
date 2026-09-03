@@ -1,6 +1,6 @@
 # Omitted Sources — 2026-08-29
 
-Sources not curated into main or annex (incl. FT paywalls 163/249 and Gates dup 091).
+Sources not curated into main or annex (incl. FT paywalls 163/249).
 
 - [ ] 001. https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/
 - [ ] 002. https://addyosmani.com/blog/practical-loop-engineering/
@@ -63,7 +63,6 @@ Sources not curated into main or annex (incl. FT paywalls 163/249 and Gates dup 
 - [ ] 082. https://pauldix.com/the-end-of-programming
 - [ ] 087. https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/
 - [ ] 090. https://www.ssp.sh/brain/using-obsidian-with-ai/
-- [ ] 091. https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make
 - [ ] 092. https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/the-risks-of-ai-are-real-but-manageable
 - [ ] 096. https://imageat.com/models/qwen-3-8-27b-uncensored
 - [ ] 100. https://www.ac2protocol.org/
