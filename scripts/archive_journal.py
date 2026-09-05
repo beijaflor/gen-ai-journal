@@ -71,7 +71,8 @@ def build_99(summary_files, date):
     out = [f"# 全記事要約 {jp_date(date)}\n\n"
            "この週に収集・要約された全記事の完全なアーカイブです。\n\n---\n"]
     for f in summary_files:
-        obj = json.load(open(f, encoding="utf-8"))
+        with open(f, encoding="utf-8") as fh:
+            obj = json.load(fh)
         out.append(_entry(Path(f).stem, obj))
     return "".join(out)
 
@@ -85,7 +86,8 @@ def build_02(summary_files, omitted_ids, date):
         stem = Path(f).stem
         idnum = re.match(r"(\d+)_", stem)
         if idnum and idnum.group(1) in omitted_ids:
-            obj = json.load(open(f, encoding="utf-8"))
+            with open(f, encoding="utf-8") as fh:
+                obj = json.load(fh)
             out.append(_entry(stem, obj))
             n += 1
     return "".join(out), n
@@ -200,8 +202,10 @@ def archive(date, into=None, dry_run=False, assume_yes=False, journals_root="jou
     eval_mode = into is not None
     inp, copies, built, out_dir = plan(date, out_base, journals_root=journals_root)
 
-    print(f"Archiving cycle {date} -> {out_dir}"
-          + ("  [DRY-RUN]" if dry_run else "  [eval]" if eval_mode else "  [live]"))
+    mode = ("DRY-RUN" if dry_run else "eval" if eval_mode
+            else "live" if inp.live else "replay: rebuild 99/02/metadata in place")
+    print(f"Archiving cycle {date} -> {out_dir}  [{mode}]")
+    print(f"  inputs: {'workdesk/' if inp.live else Path(journals_root) / date}")
 
     if dry_run:
         for _, dst in copies:
@@ -214,8 +218,11 @@ def archive(date, into=None, dry_run=False, assume_yes=False, journals_root="jou
         print(f"  ({len(copies)} copies + {len(built)} built files)")
         return out_dir
 
-    # 1. copies
+    # 1. copies (a replay onto the existing archive resolves src == dst for
+    #    every copied file; skip those instead of crashing with SameFileError)
     for src, dst in copies:
+        if dst.exists() and src.resolve() == dst.resolve():
+            continue
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
 

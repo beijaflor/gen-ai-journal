@@ -110,18 +110,60 @@ Signal guide for reviewers:
 - `annexPotential ≥ 90` — AI scored highly for annex fit
 - No signals noted — AI selected on criteria alone; scrutinize more carefully
 
-### Step 3: Proceed to STEP_06
+### Step 3: Write the approved selection → `workdesk/curated_annex_selected.md`
 
-Once the human has approved the file (all three Curation Status boxes checked), proceed to STEP_06 with the `[x]`-marked articles as the final annex list.
+Once the human has approved the pool (all three Curation Status boxes checked),
+write the **final annex selection** — only the `[x]`-marked articles — to
+`workdesk/curated_annex_selected.md`, grouped under the section headings the
+curator chose. This file (not the candidate pool) is what every downstream
+script reads as the annex set: `scripts/workflow/partition.py`,
+`build_focused.py` (STEP_06), `gen_writer_prompts.py` / `stitch_qa.py`
+(STEP_08), `verify_journal.py` (STEP_09), `archive_journal.py` (STEP_10) and
+the website's summary-status derivation.
+
+```markdown
+# Curated Annex Journal Sources (Selected) - YYYY-MM-DD
+
+## 1. <section title as the curator grouped it>
+
+- [ ] 006. https://...
+- [ ] 016. https://...
+
+## 2. <next section>
+
+- [ ] 052. https://...
+```
+
+Only `- [ ] NNN. url` / `- [x] NNN. url` lines are parsed (checkbox state is
+ignored); the `##` headings become the annex section scaffold for STEP_08's
+writer prompts. Then regenerate `non_main_sources.md` and re-assert the
+partition:
+
+```bash
+uv run scripts/list_urls.py workdesk/curated_journal_sources.md | uv run scripts/remove_urls.py workdesk/sources.md workdesk/non_main_sources.md
+uv run python -m scripts.workflow.partition YYYY-MM-DD   # main + annex + omitted == all, disjoint
+```
+
+If the partition check fails, an ID is in two sets (or in none) — fix the
+curated files, never the check. Mid-cycle promotions/demotions between main and
+annex follow `STEP_04b_THEME_REVISION.md`.
+
+### Step 4: Proceed to STEP_06
+
+With `curated_annex_selected.md` written and the partition green, proceed to STEP_06.
 
 ---
 
 ## Output Files
 
-- `workdesk/curated_annex_journal_sources.md`
+- `workdesk/curated_annex_journal_sources.md` — the reviewed **candidate pool**
   - Flat list with editorial comments
   - Curation Status section with approval markers
   - Brief Japanese comments explaining each selection and which signals applied
+- `workdesk/curated_annex_selected.md` — the **approved selection** (required by
+  every later step; see Step 3)
+  - `## ` section headings as grouped by the curator, `- [ ] NNN. url` lines only
+- `workdesk/non_main_sources.md` — regenerated after the selection
 
 ## Verification
 
@@ -130,6 +172,8 @@ Once the human has approved the file (all three Curation Status boxes checked), 
 - [ ] AI candidate pool written (~40–50 articles) with signal annotations
 - [ ] "AI candidate pool generated" checked in Curation Status
 - [ ] Human has reviewed and checked off "APPROVED" before proceeding
+- [ ] `workdesk/curated_annex_selected.md` written from the `[x]` articles (Step 3)
+- [ ] `uv run python -m scripts.workflow.partition YYYY-MM-DD` is green
 - [ ] No overlap with main journal selections
 - [ ] Each selected article has a clear editorial comment
 

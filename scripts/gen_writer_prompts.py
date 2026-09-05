@@ -132,6 +132,20 @@ def generate(date, sources_dir, plan_path, summaries_dir, out_dir,
     main_intros = parse_plan_blocks(plan_path, "Identified Themes")
     main_strats = parse_plan_blocks(plan_path, "ASSEMBLY STRATEGIES")
 
+    if not main_sections:
+        raise ValueError(f"no '## theme' sections with ID lines found in "
+                         f"{sources_dir / 'curated_journal_sources.md'}")
+    # Intros/strategies are paired with curated themes BY POSITION (i-th theme
+    # <-> i-th plan block). Warn when the counts differ so a mid-cycle theme
+    # add/remove/reorder (STEP_04b) cannot silently mis-pair them.
+    for label, blocks in (("Identified Themes", main_intros),
+                          ("ASSEMBLY STRATEGIES", main_strats)):
+        if blocks and len(blocks) != len(main_sections):
+            print(f"⚠️  plan has {len(blocks)} '{label}' blocks but curated file has "
+                  f"{len(main_sections)} themes — intros/strategies are paired by "
+                  f"position; check each prompt's heading against its theme title.",
+                  file=sys.stderr)
+
     out = {}
     for i, (title, ids) in enumerate(main_sections, 1):
         intro = main_intros[i - 1] if i - 1 < len(main_intros) else None
@@ -178,8 +192,12 @@ def main():
     out_dir = Path(opts["--out"])
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    prompts = generate(date, sources_dir, plan_path, summaries_dir, str(out_dir),
-                       scratch_out=str(out_dir))
+    try:
+        prompts = generate(date, sources_dir, plan_path, summaries_dir, str(out_dir),
+                           scratch_out=str(out_dir))
+    except (ValueError, FileNotFoundError) as e:
+        print(f"❌ gen_writer_prompts: {e}")
+        sys.exit(1)
     for name, content in prompts.items():
         (out_dir / name).write_text(content, encoding="utf-8")
     n_main = sum(1 for k in prompts if k.startswith("prompt_main_theme"))

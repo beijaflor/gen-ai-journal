@@ -65,5 +65,34 @@ class TestSeededLeak(unittest.TestCase):
         self.assertTrue(any("原題" in f or "score-object" in f for f in rep.failures))
 
 
+class TestFragmentNumbering(unittest.TestCase):
+    def _scratch(self):
+        scratch = Path(tempfile.mkdtemp()) / "scratch"
+        shutil.copytree(SCRATCH, scratch)
+        return scratch
+
+    def test_stray_extra_fragment_fails(self):
+        scratch = self._scratch()
+        (scratch / "main_theme_99.md").write_text("## stray\n", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            stitch_qa.stitch("2026-08-22", scratch, tempfile.mkdtemp())
+
+    def test_gap_in_numbering_fails(self):
+        scratch = self._scratch()
+        (scratch / "annex_sec_03.md").unlink()
+        with self.assertRaises(ValueError):
+            stitch_qa.stitch("2026-08-22", scratch, tempfile.mkdtemp())
+
+    def test_numeric_order_beyond_nine(self):
+        """main_theme_10 must follow main_theme_09 (numeric, not lexical)."""
+        scratch = self._scratch()
+        (scratch / "main_theme_10.md").write_text("### TENTH-THEME-MARKER\n",
+                                                  encoding="utf-8")
+        wk, _ = stitch_qa.stitch("2026-08-22", scratch, tempfile.mkdtemp())
+        text = wk.read_text(encoding="utf-8")
+        ninth = (scratch / "main_theme_09.md").read_text(encoding="utf-8")[:40]
+        self.assertGreater(text.index("TENTH-THEME-MARKER"), text.index(ninth))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -26,9 +26,28 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from verify_journal import verify_paths  # noqa: E402
 
 
+def _numbered(scratch, glob_pat):
+    """Fragments matching ``<prefix>_NN.md`` in numeric order; fail loudly if the
+    numbering is not exactly 01..N (a stray extra or renumbered fragment would
+    otherwise be silently stitched into the journal)."""
+    stem = glob_pat.replace("*.md", "")
+    frags = []
+    for frag in scratch.glob(glob_pat):
+        num = frag.stem[len(stem):]
+        if not num.isdigit():
+            raise ValueError(f"fragment not numbered {stem}NN.md: {frag.name}")
+        frags.append((int(num), frag))
+    frags.sort()
+    nums = [n for n, _ in frags]
+    if nums != list(range(1, len(nums) + 1)):
+        raise ValueError(f"{stem}NN.md must be numbered 01..N contiguously, got "
+                         f"{[f.name for _, f in frags]}")
+    return [f for _, f in frags]
+
+
 def _concat(scratch, header, glob_pat, outro):
     parts = [(scratch / header).read_text(encoding="utf-8")]
-    for frag in sorted(scratch.glob(glob_pat)):
+    for frag in _numbered(scratch, glob_pat):
         parts.append(frag.read_text(encoding="utf-8"))
     parts.append((scratch / outro).read_text(encoding="utf-8"))
     return "".join(parts)
@@ -89,8 +108,12 @@ def main():
               "[--out DIR] [--sources-dir DIR] [--skip-urls]")
         sys.exit(1)
 
-    rep = run(positional[0], scratch=opts["--scratch"], out_dir=opts["--out"],
-              sources_dir=opts["--sources-dir"], skip_urls=skip_urls)
+    try:
+        rep = run(positional[0], scratch=opts["--scratch"], out_dir=opts["--out"],
+                  sources_dir=opts["--sources-dir"], skip_urls=skip_urls)
+    except (ValueError, FileNotFoundError) as e:
+        print(f"❌ stitch_qa: {e}")
+        sys.exit(1)
     print("\n".join(rep.notes))
     if rep.ok:
         print("\n✅ stitch_qa: assembled journals pass QA")

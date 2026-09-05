@@ -85,6 +85,7 @@ def _resolve_files(date, journals_dir):
     us = date.replace("-", "_")
     arc = Path(journals_dir) / date
     if (arc / f"00_weekly_journal_{us}.md").exists():
+        print(f"  inputs: archived tree {arc}/")
         return (
             arc / f"00_weekly_journal_{us}.md",
             arc / f"01_annex_journal_{us}.md",
@@ -92,6 +93,7 @@ def _resolve_files(date, journals_dir):
             arc / "sources" / "curated_annex_selected.md",
         )
     wd = Path("workdesk")
+    print("  inputs: live workdesk/ (no archived tree found)")
     return (
         wd / f"weekly_journal_{us}.md",
         wd / f"annex_journal_{us}.md",

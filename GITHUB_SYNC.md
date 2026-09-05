@@ -92,7 +92,7 @@ Simply request: `"Sync workdesk/sources.md to GitHub issue"` and Claude Code han
    - Enables collaborative editing throughout workflow
 
 3. **Before Final Review**:
-   - Complete all workflow steps (STEP_04-11)
+   - Complete all workflow steps (STEP_04-10)
    - Convert PR from draft to "Ready for review"
    - Human reviewer can then approve and merge
 
@@ -106,7 +106,7 @@ Simply request: `"Sync workdesk/sources.md to GitHub issue"` and Claude Code han
 
 When working with pull requests:
 - **Draft PRs**: Create early (after STEP_03) and keep as draft during development
-- **Ready for Review**: Convert from draft only when journal is complete (after STEP_11)
+- **Ready for Review**: Convert from draft only when journal is complete (after STEP_10 archive; this is STEP_12)
 - **Open PRs**: Update existing open pull requests with current progress
 - **Closed PRs**: Never attempt to update closed pull requests
 - **Status Check**: Always verify PR status before attempting updates
