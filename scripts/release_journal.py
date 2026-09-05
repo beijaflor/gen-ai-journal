@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """STEP_13/14 — tag, clean up the branch, and draft the GitHub release.
 
-A live run (after the PR is merged): fast-forwards local main, creates the
-annotated ``<date>`` tag, pushes it, deletes the feature branch, and creates a
-**draft** release from the standard two-section template (computing the Japanese
-曜日), then checks the six published links resolve.
+A live run (after the PR is merged): fast-forwards local main, **verifies the
+cycle actually landed on main** (``journals/<date>/journal-metadata.json`` must
+exist there — otherwise it aborts before tagging or deleting anything), creates
+the annotated ``<date>`` tag, pushes it, deletes the feature branch, and creates
+a **draft** release from the standard two-section template (computing the
+Japanese 曜日), then checks the six published links resolve.
 
     --dry-run  print the tag, the full release body, and the six URLs; mutate
                nothing (this is the eval path).
@@ -60,6 +62,11 @@ def build_release_body(date):
     )
 
 
+def landed_on_main(date):
+    """True if the archived cycle exists in the checked-out main tree."""
+    return Paths(date).metadata.exists()
+
+
 def _verify_links(links):
     from verify_journal import _check_url
     ok = True
@@ -102,6 +109,15 @@ def release(date, dry_run=False, assume_yes=False, branch=None, verify_links=Fal
     git_gh.run(["git", "-c", f"credential.helper={git_gh.CRED_HELPER}",
                 "pull", "--ff-only", git_gh.REMOTE_URL, "main"])
 
+    # 1b. guard: the cycle must be on main before we tag it or delete the
+    #     feature branch. An unmerged PR would otherwise be tagged as a stale
+    #     main and lose its branch (ff-only "succeeds" on an unchanged main).
+    if not landed_on_main(date):
+        raise SystemExit(
+            f"❌ journals/{date}/journal-metadata.json is not on main after "
+            f"fast-forward — is PR for {branch} merged? Aborting before tag / "
+            f"branch delete / release.")
+
     # 2. annotated tag (idempotent) + push
     existing = git_gh._exec(["git", "tag", "-l", date], capture=True).stdout.strip()
     if existing == date:
@@ -121,15 +137,19 @@ def release(date, dry_run=False, assume_yes=False, branch=None, verify_links=Fal
                                      encoding="utf-8") as fh:
         fh.write(body)
         notes = fh.name
-    git_gh.run(["gh", "release", "create", date, "--title", date,
-                "--notes-file", notes, "--draft"], check=False)
+    rel = git_gh.run(["gh", "release", "create", date, "--title", date,
+                      "--notes-file", notes, "--draft"], check=False)
 
     # 5. verify links
     if verify_links:
         print("Verifying published links:")
         _verify_links(links)
 
-    print(f"✅ draft release {date} created — human publishes it after review.")
+    if rel.returncode == 0:
+        print(f"✅ draft release {date} created — human publishes it after review.")
+    else:
+        print(f"⚠️  gh release create exited {rel.returncode} (already exists?) — "
+              f"check `gh release view {date}` before publishing.")
     return body
 
 

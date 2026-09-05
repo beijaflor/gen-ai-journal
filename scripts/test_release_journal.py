@@ -67,5 +67,34 @@ class TestDryRun(unittest.TestCase):
         self.assertIn("[dry-run] no tag", out)
 
 
+class TestMergeGuard(unittest.TestCase):
+    """Live path must abort before tag/branch-delete when the cycle is not on main."""
+
+    def setUp(self):
+        self._real = git_gh._exec
+        self.calls = []
+        # every git/gh call is recorded (and "succeeds") — nothing real runs
+        git_gh._exec = lambda argv, **k: (self.calls.append(list(argv))
+                                          or type("R", (), {"returncode": 0,
+                                                            "stdout": ""})())
+
+    def tearDown(self):
+        git_gh._exec = self._real
+
+    def test_unmerged_cycle_aborts_before_tag_and_delete(self):
+        buf = io.StringIO()
+        with redirect_stdout(buf), self.assertRaises(SystemExit):
+            R.release("2099-12-31", assume_yes=True)  # no journals/2099-12-31 on main
+        flat = [" ".join(c) for c in self.calls]
+        self.assertTrue(any("checkout main" in c for c in flat))
+        self.assertFalse(any("tag -a" in c for c in flat))
+        self.assertFalse(any("--delete" in c or "branch -D" in c for c in flat))
+        self.assertFalse(any("release create" in c for c in flat))
+
+    def test_landed_on_main_true_for_archived_cycle(self):
+        self.assertTrue(R.landed_on_main("2026-08-22"))
+        self.assertFalse(R.landed_on_main("2099-12-31"))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

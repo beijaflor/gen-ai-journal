@@ -78,6 +78,41 @@ class TestFixtureArchive(unittest.TestCase):
         self.assertEqual((out / "02_omitted_summaries.md").read_text().count("\n## "), 2)
 
 
+class TestReplayInPlace(unittest.TestCase):
+    def test_replay_onto_existing_archive_is_idempotent(self):
+        """A clean workdesk + existing journals/<date>/ == replay in place
+        (rebuild 99/02/metadata after an archive correction). Must not raise
+        SameFileError and must leave the tree byte-identical."""
+        import shutil
+        root = tempfile.mkdtemp()
+        shutil.copytree(FIX, Path(root) / "2099-01-01")
+        before = {p: p.read_bytes() for p in Path(root).rglob("*") if p.is_file()}
+        cwd = os.getcwd()
+        try:
+            os.chdir(root)  # no workdesk/ here -> replay mode
+            A.archive("2099-01-01", into=root, journals_root=root)
+        finally:
+            os.chdir(cwd)
+        after = {p: p.read_bytes() for p in Path(root).rglob("*") if p.is_file()}
+        built = {"99_unified_summaries.md", "02_omitted_summaries.md",
+                 "journal-metadata.json"}
+        # every input is untouched; only the three built files are added
+        for p, b in before.items():
+            self.assertEqual(after[p], b, p)
+        self.assertEqual({p.name for p in set(after) - set(before)}, built)
+        meta = json.loads((Path(root) / "2099-01-01" / "journal-metadata.json")
+                          .read_text(encoding="utf-8"))
+        self.assertEqual(meta["totalSummaries"], 6)
+        # second replay (now with 99/02/metadata present) is byte-idempotent
+        try:
+            os.chdir(root)
+            A.archive("2099-01-01", into=root, journals_root=root)
+        finally:
+            os.chdir(cwd)
+        again = {p: p.read_bytes() for p in Path(root).rglob("*") if p.is_file()}
+        self.assertEqual(again, after)
+
+
 class TestDryRunZeroMutation(unittest.TestCase):
     def test_dry_run_writes_nothing(self):
         into = tempfile.mkdtemp()

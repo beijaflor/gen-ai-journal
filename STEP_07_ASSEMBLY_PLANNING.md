@@ -317,8 +317,10 @@ For each theme, add to editorial plan:
 - [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08
 
 > The agent leaves `ASSEMBLY PLAN APPROVED` **unchecked** when generating the
-> document. The human flips it to `[x]` inside the `human-review-gate` vim
-> popup; the agent must not check it.
+> document. It is flipped to `[x]` only after the human approves through the
+> `human-review-gate` skill (default: the human selects "Approved" in
+> `AskUserQuestion`, then the agent flips and re-verifies the marker;
+> alternative: the human edits it in the tmux+vim popup).
 
 **Approval Date:** [YYYY-MM-DD]
 **Approver:** [Human Editor Name]

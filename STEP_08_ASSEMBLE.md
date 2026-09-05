@@ -550,7 +550,7 @@ rm temp_annex_journal_urls.txt temp_annex_sources.txt
 - `journals/2025-12-06/01_annex_journal_2025_12_06.md` - Annex journal format
 
 **Key patterns to replicate**:
-- Section structure (6-7 sections for main, 5-6 for annex)
+- Section structure (6-9 sections for main, ~5-6 for annex)
 - Article format (title, URL, summary with no metadata)
 - Meta-commentary style in highlights and conclusions
 - Editorial voice and tone

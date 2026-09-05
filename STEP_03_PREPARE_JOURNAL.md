@@ -95,7 +95,7 @@ git push origin journal/YYYY-MM-DD
 - Continuous visibility into journal development
 - Enable collaborative editing throughout workflow
 - Track progress through commits
-- Keep PR in draft status until STEP_11 complete
+- Keep PR in draft status until STEP_10 (archive + metadata) is complete
 - Convert to "Ready for review" before final merge
 
 See [GITHUB_SYNC.md](GITHUB_SYNC.md) for detailed pull request workflow.

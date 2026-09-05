@@ -57,6 +57,7 @@ def build(date, sources_dir=None, summaries_dir=None, out_dir=None):
     summaries_dir = Path(summaries_dir) if summaries_dir else _default_dir(date, "summaries")
     out_dir = Path(out_dir) if out_dir else Path("workdesk")
     out_dir.mkdir(parents=True, exist_ok=True)
+    print(f"  inputs: sources={sources_dir}  summaries={summaries_dir}  -> {out_dir}")
 
     sets = {
         "main": partition.read_ids(sources_dir / partition.MAIN_FILE),
@@ -115,6 +116,12 @@ def main():
               summaries_dir=opts["--summaries-dir"], out_dir=opts["--out"])
     except AssertionError as e:
         print(f"❌ {e}")
+        sys.exit(1)
+    except FileNotFoundError as e:
+        print(f"❌ missing input: {e.filename or e}")
+        print("   STEP_04 writes curated_journal_sources.md; STEP_05 writes "
+              "curated_annex_selected.md (approved annex selection) and "
+              "export_curation_flags.py writes omitted_sources.md.")
         sys.exit(1)
 
 

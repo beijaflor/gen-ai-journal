@@ -32,9 +32,8 @@ graph LR
     F --> G[07. Assembly Planning]
     G --> H[08. Assemble Final Journals]
     H --> I[09. Verify URLs & Quality]
-    I --> J[10. Archive & Cleanup]
-    J --> K[11. Generate Metadata]
-    K --> L[12. PR Ready for Review]
+    I --> J[10. Archive & Cleanup + Metadata]
+    J --> L[12. PR Ready for Review]
     L --> M[13. Tag & Publish]
 ```
 
