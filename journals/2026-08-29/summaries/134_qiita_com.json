@@ -10,7 +10,7 @@
     "language": "ja",
     "contentType": "💡 Tutorial & How-to (チュートリアル)",
     "oneSentenceSummary": "Claude Codeの環境変数`ANTHROPIC_DEFAULT_MODEL`は優先順位が低く、一度でも`/model`コマンドを使用し設定ファイルが更新されると機能しなくなる仕様を解説しています。",
-    "summaryBody": "Claude Code v2.1.236で導入された環境変数`ANTHROPIC_DEFAULT_MODEL`の優先順位と挙動に関する検証記事です。\\n\\n### 主な内容\\n- **優先順位の仕組み**: 当該変数は最も優先順位が低く、`--model`フラグ、`ANTHROPIC_MODEL`、および`settings.json`内の設定が存在する場合、それらが優先されます。\\n- **`/model`による上書き**: `/model`コマンドでモデルを選択すると`~/.claude/settings.json`に値が書き込まれます。この状態では、環境変数でデフォルト値を指定しても無視されることになります。\\n- **無視されるキーワード**: `haiku`や`opusplan`といった特定の文字列をこの変数に設定しても、黙って無視される仕様がドキュメントに明記されています。\\n- **適切な使い分け**: 強制的にモデルを固定したい場合は`ANTHROPIC_MODEL`を、初期値として設定したい場合は設定ファイルの`model`キーを削除した上で`ANTHROPIC_DEFAULT_MODEL`を使用する必要があります。",
+    "summaryBody": "Claude Code v2.1.236で導入された環境変数`ANTHROPIC_DEFAULT_MODEL`の優先順位と挙動に関する検証記事である。\n\n- **優先順位の仕組み**: 当該変数は最も優先順位が低く、`--model`フラグ、`ANTHROPIC_MODEL`、および`settings.json`内の設定が存在する場合、それらが優先される。\n- **`/model`による上書き**: `/model`コマンドでモデルを選択すると`~/.claude/settings.json`に値が書き込まれる。この状態では、環境変数でデフォルト値を指定しても無視されることになる。\n- **無視されるキーワード**: `haiku`や`opusplan`といった特定の文字列をこの変数に設定しても、黙って無視される仕様がドキュメントに明記されている。\n\n強制的にモデルを固定したい場合は`ANTHROPIC_MODEL`を、初期値として設定したい場合は設定ファイルの`model`キーを削除した上で`ANTHROPIC_DEFAULT_MODEL`を使用するなど、目的に応じた適切な使い分けが求められる。",
     "topics": [
       "Claude Code",
       "Anthropic",
