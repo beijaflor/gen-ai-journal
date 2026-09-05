@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:01:46.751987+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「お前がみろ」はAIに効くのか。高圧的なプロンプトで回答精度を検証した",
+    "url": "https://qiita.com/inoyu-qiita/items/e8315b7bf4acee70c164",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIに対して高圧的な口調で命令することが回答精度に与える影響を、Claude Codeの実際の挙動と複数の学術論文の比較から分析した考察記事です。",
+    "summaryBody": "この記事は、同僚がClaude Codeに対して放った「お前がみろ」という強い口調のプロンプトをきっかけに、AIへの態度の丁寧さが精度にどう影響するかを検証しています。実際のセッション分析では、高圧的な口調そのものよりも、その中に含まれる「ユーザーに聞き返さない」「元画像と比較する」「現状を自ら調査する」といった具体的な指示内容が精度向上に寄与していることが判明しました。また、2024年から2025年に発表された3つの研究論文を比較し、モデルや言語、タスクの種類によって「失礼な方が良い」「丁寧な方が良い」という結果が分かれている現状を解説しています。最終的に、語気を強めるよりも、検証方法や完了条件を明確に定義することが最も再現性の高い改善策であると結論付けています。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "Claude Code",
+      "LLM",
+      "AI駆動開発",
+      "コミュニケーション"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:49:48.766855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【要約・解説編】",
+    "url": "https://zenn.dev/highreso/articles/9d74b825b83e8f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年リリースの最新30B級ローカルLLM4種を用い、実務での要約・解説タスクにおける精度と推論速度を比較検証したレポート。",
+    "summaryBody": "株式会社ハイレゾによる、最新の30BクラスローカルLLMの性能比較記事。対象モデルはQwen3.8-27B、Qwen3.6-27B、Muse Glimmer-30B、Gemma4-31B-it。Ornith-1.5に関する技術記事の要約・解説タスクにおいて、推論速度、内容の深さ、実用性を検証した。結果、Metaの「Muse Glimmer-30B」が最速の推論速度（16.5 token/sec）と、エンジニアにとって有用な数式・専門用語の正確な解説で最高評価を得た。「Qwen3.8-27B」は思考モードを有効化することで最も充実した情報整理を見せたが、推論時間の長さが課題。一方で「Gemma4-31B-it」は簡潔ながら情報量に物足りなさが残る結果となった。30BクラスのモデルがA100環境で2〜3分程度で高品質なレポートを生成可能であり、現場での情報収集ツールとして実用的であることを示唆している。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen3.8",
+      "Muse Glimmer",
+      "Gemma4",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

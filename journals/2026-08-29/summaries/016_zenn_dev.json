@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:29:35.274623+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ドキュメントを書くのをやめて、育てることにした──AI駆動開発におけるWiki管理、CodeAlmanacを試してみた",
+    "url": "https://zenn.dev/explaza/articles/5ccd14f81a6dc7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントに設計背景や文脈を共有するためのWikiツール「CodeAlmanac」の、実戦的な導入手順と開発ワークフローへの統合方法を解説した記事。",
+    "summaryBody": "この記事では、AI駆動開発におけるコンテキスト共有を円滑にするツール「CodeAlmanac」の検証結果をまとめています。CodeAlmanacは、コードやGitの差分だけでなく、Claude CodeやCodexとの対話履歴をソースとして、プロジェクト独自の知識（設計判断の理由や注意点）をWiki形式で構造化・蓄積するツールです。検証では、実際のチーム開発を想定し、デフォルトの自動コミット・自動更新を無効化して、手動でのインジェストやPRベースの運用を行う際の設定やコマンドを具体的に紹介しています。AIにコード以外の文脈を適切に「食べさせる」ことで実装精度を高める手法として、ドキュメント管理の新しい形を提案しています。",
+    "topics": [
+      "CodeAlmanac",
+      "AI駆動開発",
+      "Claude Code",
+      "Wiki管理",
+      "ドキュメンテーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    }
+  }
+}

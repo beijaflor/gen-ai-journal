@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:33:21.236645+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google ADKにおけるライブ・ボイスエージェントの評価方法",
+    "url": "https://developers.googleblog.com/how-to-evaluate-live-voice-agents-in-adk/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GoogleのAgent Development Kit (ADK) に追加された、シミュレートされたユーザー音声を用いてボイスエージェントの挙動を自動評価する新機能の実装手順が公開されました。",
+    "summaryBody": "GoogleのAgent Development Kit (ADK) において、音声ベースのライブエージェントを実環境に近い形で評価するための新機能が導入されました。デモレベルの動作確認を超え、プロダクション環境に必要な信頼性を確保するための「ライブ評価ループ」を構築する手法が解説されています。\n\n主な特徴と実装手順は以下の通りです：\n- **音声ベースのシミュレーション**: シミュレートされたユーザーが音声でエージェントと対話し、タイミングやリカバリー、ツール実行の正確性を多ターンにわたりテストできます。\n- **柔軟な評価セット**: ユーザーペルソナ（初心者など）を指定してアドリブで会話させる「シナリオ形式」と、発話を固定する「スクリプト形式」の両方をサポートします。\n- **Gemini TTSの活用**: ユーザーシミュレーターにはGeminiのTTS（Text-to-Speech）が統合されており、特定の音声や言語、アクセントによるエージェントの反応を検証可能です。\n- **視覚的なデバッグ**: ADK Webを利用することで、評価結果を音声付きのトランスクリプトとして確認でき、エージェントの「内容」だけでなく「聞こえ方」も含めて評価できます。\n\nこの機能により、CI/CDパイプラインに音声評価を組み込むことが可能になり、プロンプトの調整やモデルのアップデートによるデグラデーションを定量的に防ぐことが可能になります。",
+    "topics": [
+      "ADK",
+      "Google Cloud",
+      "Gemini Live",
+      "LLM Evaluation",
+      "Voice AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How to Evaluate Live & Voice Agents in ADK"
+  }
+}

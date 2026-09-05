@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:59:35.073884+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントは夜に夢を見て記憶を整理する — Perplexity Brainの設計と最小実装",
+    "url": "https://zenn.dev/uguisu_blog/articles/c553bcbf119ce4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Perplexity Brainの「記憶をWikiとして継続的に推敲する」設計をPythonで最小実装し、情報の統合と検証における技術的課題と解決策を詳解しています。",
+    "summaryBody": "本記事は、Perplexityが公開したエージェント記憶システム「Brain」の設計思想を解説し、それを630行のPythonコードで再現・検証した記録です。従来のベクタDBによる検索（RAG）の限界を、Markdown形式のWiki、Gitによる版管理、および「Dream」と呼ばれるバックグラウンドでの記憶統合によって解決する手法を詳述しています。\n\n著者は実装を通じて、日本語環境における単なるキーワード検索（grep）の脆弱性や、意味的検証ゲートが正当な更新を誤ってブロックする故障モードなど、実務的な5つの落とし穴を特定。特に、LLMが自身の記憶を書き換える際、古い情報を「矛盾」と誤認して更新を拒絶する問題に対し、プロンプト改善による解決策を実測データ（計120回の試験）に基づき提案しています。単なる情報の蓄積ではなく、矛盾を解消し「編集され続けるドキュメント」として記憶を維持する設計の有効性を論じています。",
+    "topics": [
+      "AIエージェント",
+      "長期記憶",
+      "Perplexity Brain",
+      "RAG",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:07:08.055462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RustでのAI駆動Webアプリケーション開発",
+    "url": "https://tech.hello.ai/entry/2026/08/24/230852",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "株式会社ハローが決済基盤「HelloPay」の開発において、RustとClaude Code等のAIを組み合わせることで、高いメモリ効率と開発スピードを両立した実践事例の紹介。",
+    "summaryBody": "株式会社ハローのCTOが、自社の新決済基盤「HelloPay」においてRustを採用し、AIエージェントをフル活用して開発した過程を詳説している。従来のRuby/Rails環境と比較し、Rustの低メモリ消費（1プロセス50MB程度）と高い型安全性が高トラフィックな決済処理に適していると判断。かつてRust導入の壁であった「所有権概念や記述量の多さ」によるリードタイムの低下を、Claude Code（Opus 4.5等）にコーディングを移譲することで克服した。技術構成はaxum、tokio、sqlxを軸とし、newtypeパターンやSQLのコンパイル時検証を徹底。また、GitHub Actionsを用いたAIコードレビュー、DBスキーマ検証、セキュリティ診断を自動化し、エンジニアがアーキテクチャ設計と理解に集中できる体制を構築している。",
+    "topics": [
+      "Rust",
+      "AI-driven Development",
+      "Claude Code",
+      "Web Architecture",
+      "Backend Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

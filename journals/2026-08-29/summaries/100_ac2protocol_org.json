@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:52:56.842249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AC2 Protocol - エージェントのための自己非保管型署名と意図検証プロトコル",
+    "url": "https://www.ac2protocol.org/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントに秘密鍵を渡すことなく、FIDO2ベースのハードウェア署名を通じてユーザーの意図を安全かつ検証可能に伝えるオープンプロトコル。",
+    "summaryBody": "Algorand Foundationが開発したAC2（Agentic Communication + Control Protocol）は、AIエージェントによる操作の安全性を高めるための自己非保管型（セルフカストディアル）署名プロトコルです。従来、自律型エージェントに決済やコード署名などの機密操作を任せるには資格情報の共有というリスクがありましたが、AC2はDIDComm v2.0とFIDO2（パスキー）を活用し、秘密鍵をデバイスのセキュア・エンクレーブ内に隔離したまま署名を実現します。ユーザーはエージェントからのリクエストをスマートフォンなどのWalletアプリで確認し、生体認証等で承認することで、誰が、いつ、何を許可したかの暗号的な証明（意図の検証）を生成できます。OpenClaw等の既存フレームワークへのプラグイン提供に加え、ブロックチェーンを介さないP2P通信をサポートしている点も特徴です。",
+    "topics": [
+      "AIエージェント",
+      "セルフカストディ",
+      "FIDO2",
+      "DIDComm",
+      "Algorand"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "AC2 Protocol"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:01:30.171374+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "anthropic SDK が httpx をやめました。移行しても動くので気づけません #Python - Qiita",
+    "url": "https://qiita.com/jqit_suwa/items/5edf6037203a15c3fdfd",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicのPython SDK v1.0.0でHTTP層がhttpxからhttpx2へ変更された際、環境に残った旧版のせいで移行漏れに気づかない「サイレントな不整合」のリスクと対処法を解説。",
+    "summaryBody": "AnthropicのPython SDKがバージョン1.0.0に到達し、HTTPレイヤーがPydanticチームのメンテナンスする`httpx2`へと移行されました。この記事では、SDKをアップデートした直後は以前の`httpx`が環境に「残骸」として残るため、コードを修正しなくてもエラーが出ず、クリーンな環境やCI環境で突然動作しなくなるリスクを指摘しています。対応として`import httpx2 as httpx`と1行書き換えるだけで互換性が維持できることや、Anthropic側が主張する「httpxは非推奨」という見解の検証、Claude Codeを用いた自動移行手順についても紹介されており、実務的な移行ガイドとなっています。",
+    "topics": [
+      "Anthropic",
+      "Python",
+      "httpx",
+      "httpx2",
+      "SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

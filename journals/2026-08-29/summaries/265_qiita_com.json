@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:56:44.996384+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Googleアカウントに紐づく自分の情報を吐き出してClaude Codeに読ませてみた #初心者",
+    "url": "https://qiita.com/ktdatascience/items/53b4a8eba35611db600c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google Takeoutで取得した行動ログを要約し、Claude Codeのコンテキストに組み込むことで、自己申告の限界を超えた高度なパーソナライズを実現する手法の提案。",
+    "summaryBody": "AIエージェント（Claude Code）に与えるコンテキスト（CLAUDE.md等）を、手動の記述から「客観的な行動ログ」へと拡張する試みを解説した記事です。Google Takeoutを利用して、検索履歴、YouTubeの視聴記録、マップの活動などのデータをエクスポートし、AIに読ませるためのフローを提示しています。ポイントは、膨大な生ログをそのまま渡すのではなく「要約」してから渡すこと、そしてGoogleの定期エクスポート機能を使い、コンテキストを自動更新し続ける仕組みを構築することにあります。自身の記憶（思い出せること）以外の無意識の嗜好や行動パターンをAIに学習させることで、開発体験をより深化させる実践的なアプローチです。",
+    "topics": [
+      "Claude Code",
+      "Google Takeout",
+      "CLAUDE.md",
+      "コンテキストエンジニアリング",
+      "パーソナライズ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

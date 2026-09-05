@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:16:27.478999+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードを書くのもレビューも大好きだったのについに全部AIの仕事になった",
+    "url": "https://zenn.dev/ttlg/articles/4077fffd458d61",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントを大規模に並列稼働させ、タスクの切り出しから実装、クロスレビュー、E2E検証までを自律的に実行するIDE「AGI Cockpit」の実装と、それによる開発プロセスの劇的な変化。",
+    "summaryBody": "13年の開発経験を持つエンジニアが、AIエージェントの爆発的な生産性に適応するために開発したIDE「AGI Cockpit」の運用報告です。人間がコードを読まずに開発を回すための4つの仕組み（大量タスクの並列管理、AIによるタスク分割、モバイル連携による人間への質疑、そして複数モデルによるブラインドクロスレビューとE2E検証）が解説されています。特筆すべきは「MAGI」のような合議制レビューシステムで、Claude、GPT、Grokなどの異種モデルを戦わせることで、人間によるチェックなしで84%の完走率を実現しています。筆者の役割はコードの読み書きから、目標設定と優先順位判断を行うプロジェクトマネージャーへと移行し、コードは「人間が読み書きするもの」から「意図から生成される中間表現（アセンブラ）」へと変化したと述べられています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェア開発",
+      "AGI Cockpit",
+      "自動化",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

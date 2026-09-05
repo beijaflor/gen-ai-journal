@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:50:03.119916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Auto mode を解剖する ― 誰が、どんなルールで許可を出しているのか",
+    "url": "https://qiita.com/tatsuya582/items/cf74c9b6fc9c370e67e6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのAuto modeにおける実行許可判定の仕組みを、非公式に抽出されたシステムプロンプトや公式ドキュメントから技術的に分析し、効率的な設定方法を解説した記事。",
+    "summaryBody": "この記事では、AnthropicのCLIツール「Claude Code」のAuto modeで、コマンド実行の許可判定がどのように行われているかを詳述しています。判定はメインモデルとは別の「classifier」（既定はSonnet 5）が担当しており、単一トークンの高速判定とChain-of-Thought（CoT）による詳細判定の2段階構成であることが判明しました。システムプロンプトの解析により、判定基準として「質問や沈黙を同意と見なさない」厳格なユーザー意図の定義や、HARD/SOFT BLOCKという2階層のセキュリティ境界が存在することが明らかになっています。また、ユーザーが`permissions.allow`（ツール単位の除外）と`autoMode.allow`（散文による状況的許可）を適切に使い分けることで、安全性を保ちつつ不要な確認プロンプトを削減する具体的な手法を提案しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "システムプロンプト",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:58:48.984307+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIスライド作成、新時代へ ― AIで作ったスライドを、高精度で“編集できるPPTX”に変換する方法",
+    "url": "https://zenn.dev/flux/articles/5446dba24b5100",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIにHTML/CSSでスライドを生成させ、ブラウザのDOM情報を基に編集可能なPowerPoint形式へ高精度に変換する画期的な手法を解説しています。",
+    "summaryBody": "従来の生成AIによるスライド作成は、見た目が綺麗でも実態が「画像」であるため、一部の修正が困難という課題がありました。本記事では、AIが最も得意とするHTML/CSSを中間フォーマットとして利用し、Puppeteer等のブラウザ操作ツールを用いて、ブラウザが計算したDOM（位置、色、フォントの確定値）を直接PowerPointの図形として書き出す手法を提案しています。この「推測ではなく答えを写す」アプローチにより、画像化による劣化を防ぎつつ、文字や図形を自由に編集できるPPTXファイルを作成可能です。業務フロー図やKPIダッシュボード等の実例を通じ、体裁調整時間を数時間から数分に短縮できる実用性と、OSSライブラリを用いた低コストな実装方法を紹介しています。",
+    "topics": [
+      "生成AI",
+      "PowerPoint",
+      "DOM",
+      "Puppeteer",
+      "業務効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

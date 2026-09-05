@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:42:13.133817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kindleのハイライト輸出制限を回避するClaude Code用プラグイン「kindle-highlights」",
+    "url": "https://github.com/l3a0/claude-plugins",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Amazonによる輸出制限で切り詰められたり非表示になったKindleのハイライトを、ローカルDBの解析とOCRを用いて完全に復元・抽出するClaude Code向けプラグイン。",
+    "summaryBody": "このリポジトリは、AnthropicのCLIツール『Claude Code』で使用できるカスタムスキル「kindle-highlights」を公開しています。KindleのWebノートブックからハイライトをエクスポートする際、Amazonの制限により一部のテキストが切り詰められたり非表示になる問題を解決します。このツールは、Mac版KindleアプリのSQLiteデータベースから正確な位置情報を読み取り、Chrome経由でCloud Readerを操作、Apple VisionフレームワークによるローカルOCRを組み合わせることで、欠落したハイライトを1文字単位の精度で復元します。出力は位置情報付きのMarkdown形式で、個人のナレッジ管理（PKM）に最適化されています。利用にはmacOS、Chrome、最新のMac版Kindleアプリが必要です。",
+    "topics": [
+      "Claude Code",
+      "Kindle",
+      "OCR",
+      "PKM",
+      "macOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - l3a0/claude-plugins: l3a0's Claude Code plugin marketplace — kindle-highlights: verbatim Kindle highlight extraction with truncation recovery"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:00:57.316692+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Spring AIでLLMの出力品質をテストする — 回帰検知と自動リトライ",
+    "url": "https://qiita.com/ryoji9702/items/3c296a6e002064e20090",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Spring AIにおけるLLM出力品質の評価手法として、JUnitを用いた回帰テスト(Evaluator)と実行時の自動リトライ(Recursive Advisors)の2つのアプローチを、具体的な実装コードと注意点とともに解説しています。",
+    "summaryBody": "Spring AIを用いたLLMアプリケーションの品質評価手法を技術的に深掘りした記事です。非決定的なLLMの出力を「LLM-as-a-Judge」の手法で評価する2つのレイヤーを解説しています。\n\n### 主な内容\n- **JUnitによる回帰テスト:** `RelevancyEvaluator`（関連性判定）や`FactCheckingEvaluator`（ハルシネーション検出）を使用し、CIプロセスで出力品質をアサーションする方法。最新バージョンで動作しない公式コードの修正案も提供されています。\n- **Recursive Advisorsによる実行時リトライ:** 生成→評価→フィードバック→再生成のループを構成する実験的機能の仕組み。特定の基準（rating）を満たすまでLLMが自律的に回答を改善するフローの実装が紹介されています。\n- **実践的な知見:** 自己選好バイアスを避けるための「生成モデルと評価モデルの分離」、評価の一貫性を保つための「temperature=0」の設定、コスト管理と無限ループ対策の重要性など、実務で直面する落とし穴への対策が詳細にまとめられています。\n\n既存のテスト基盤にLLM評価を組み込む具体的な道筋を示しており、Spring AIをプロダクション環境で利用する開発者にとって非常に有用なガイドです。",
+    "topics": [
+      "Spring AI",
+      "LLM",
+      "JUnit5",
+      "RAG",
+      "Spring Boot"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

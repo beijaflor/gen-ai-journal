@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:59:02.139064+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIでイベントカタログを279件自動生成し、成果物の検証を設計した話",
+    "url": "https://zenn.dev/tribeau/articles/d7cd180e53f719",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "4つのプロダクトリポジトリからAIを用いてイベントカタログを自動生成し、ハルシネーションや漏れを防ぐための4層の検証パイプラインを構築した技術事例。",
+    "summaryBody": "美容医療アプリ「トリビュー」における、Google AnalyticsやBraze等の計測定義カタログの自動生成と検証設計の記録です。AIにコードを読ませてドキュメント化する際の課題である「出力の揺れ」と「ハルシネーション」に対し、AIには抽出（JSON化）のみを担当させ、Markdown化や統合は決定論的なスクリプトで処理する構成を採用しました。検証面では、(1)スキーマ設計での実在シンボル要求、(2)Pythonによる機械的な実在チェック、(3)独立したAIエージェントによるコード側からの逆引き列挙（完全性検証）、(4)用語対応表に基づく意味の検証、という4つのレイヤーを設けています。この仕組みにより、ドキュメントの正確性向上だけでなく、二重送信や未使用の定義といった実装上の不備も発見可能になりました。",
+    "topics": [
+      "LLM",
+      "AIエージェント",
+      "ドキュメンテーション",
+      "イベント計測",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

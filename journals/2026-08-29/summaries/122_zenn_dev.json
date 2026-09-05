@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:58:52.437926+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの規律をhookに降ろしたら、Haikuでも壊れなくなった",
+    "url": "https://zenn.dev/yui/articles/97597aa13b9802",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeのPostToolUseフックを利用して機械的な規律を自動チェック化することで、軽量モデルのHaikuでも高品質なコード生成とコスト削減を両立する手法。",
+    "summaryBody": "AIエージェントの指示を「確率的なプロンプト」と「決定的なフック」に分離するアプローチを紹介しています。従来はすべてのコーディング規約をプロンプトに含めていましたが、コンテキストの肥大化に伴う遵守率の低下やトークンコストの増大が課題でした。ccteams v0.3.0では、Claude Codeのhooks機能を活用し、編集のたびにgrep等の機械的チェックを実行して即座にフィードバックを返す仕組みを導入。これにより、Haikuのような軽量モデルでも100%のルール遵守が可能になり、実行係（builder）と判断係（reviewer）のモデルを動的に切り替えるプロファイル機能と組み合わせることで、開発効率とコストパフォーマンスを劇的に向上させています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM",
+      "プロンプトエンジニアリング",
+      "ccteams"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 85,
+      "overall": 94
+    }
+  }
+}

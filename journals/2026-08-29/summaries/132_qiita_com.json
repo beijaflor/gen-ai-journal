@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:01:44.727219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに数学採点させる！さくらのAI Engineで自動採点できる数学演習アプリを作った",
+    "url": "https://qiita.com/azubiwa/items/b8ab8457b7c9ecc05018",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "さくらのAI Engineを活用し、大学数学の証明・記述問題を自動採点できる個人向け演習アプリを開発した事例。",
+    "summaryBody": "数学科の学生が、大学数学の演習量不足を解消するために開発したAtCoder形式の学習アプリの紹介記事です。技術スタックはGitHub Pages、Supabase、そして「さくらのAI Engine（gpt-oss-120b）」で構成されています。特に注力されているのは証明問題の自動採点で、LLM（gpt-oss-120b）を使用。TeXの細かな表記ミスを許容しつつ、論理的な正当性や数学的同値性を評価するための詳細なプロンプト設計が公開されています。また、誘導形式で特定の大問を解き進める「テーマ演習」など、学習者目線の機能も実装されています。",
+    "topics": [
+      "LLM",
+      "さくらのAI Engine",
+      "数学",
+      "個人開発",
+      "Supabase"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

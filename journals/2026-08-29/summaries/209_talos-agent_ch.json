@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T21:06:14.668768+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Talos: 権限カーネルにより安全性を極限まで高めたAIエージェント",
+    "url": "https://talos-agent.ch/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Talosは、LLMを介さない決定論的な許可ゲートとサンドボックス化された実行環境を備え、セキュリティと検証可能性を最優先に設計されたAIエージェントです。",
+    "summaryBody": "Talosは「まずゲートを作る」というセキュリティ第一の思想で構築されたAIエージェントです。最大の特徴は、エージェントがツールを実行する前に必ず「許可カーネル」が署名を行う仕組みです。この判定ロジックはLLMによる推論ではなく決定論的なコードで実装されており、ハルシネーションによる意図しない操作を防ぎます。シェルコマンドはbubblewrapやsandbox-execによりサンドボックス化され、リスクの高い操作（ファイルの書き込み、外部通信、スキルの追加など）には、人間による物理的な承認が必要となります。Telegram、WhatsApp、メール、ターミナルの4つのチャネルに対応し、208項目の敵対的テストをパスする堅牢さを備えています。インストール時にすべてのテストが実行され、ユーザーの制御下にないデフォルトの許可リストを持たないなど、徹底した「アンチ・ハイプ」な設計がなされています。",
+    "topics": [
+      "AI Agent",
+      "AI Security",
+      "Sandbox",
+      "Open Source",
+      "Autonomous Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    },
+    "originalTitle": "Talos — an AI agent with a permission kernel"
+  }
+}

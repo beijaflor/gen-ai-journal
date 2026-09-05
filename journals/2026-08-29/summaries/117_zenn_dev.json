@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:57:34.335985+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GASからGoogle Cloudへ移行してみよう：Slackデータの定期取得を例に学ぶ",
+    "url": "https://zenn.dev/a03/articles/4714ea330d6791",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GASの実行時間制限やセキュリティ上の課題を解決するため、Slackデータ取得処理をGoogle Cloudのサーバーレス構成（Cloud Run functions等）へ移行する具体的手順を解説したガイド。",
+    "summaryBody": "Google Apps Script (GAS) の「6分制限」や機密情報管理の課題を克服するため、Google Cloud（旧GCP）への移行方法を実践的に解説しています。具体的には、Cloud Run functions (実行基盤)、Secret Manager (トークン管理)、Cloud Scheduler (定期実行) を組み合わせた構成を提案。Slackのパブリックチャンネル一覧をスプレッドシートに書き出す処理を例に、Node.jsを用いた実装コード、サービスアカウントの権限設定、環境変数の管理など、移行に必要な一連のステップを網羅しています。GASの手軽さとGoogle Cloudのスケーラビリティを比較し、適材適所の使い分けについても言及されています。",
+    "topics": [
+      "GAS",
+      "Google Cloud",
+      "Cloud Run functions",
+      "Slack API",
+      "Node.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

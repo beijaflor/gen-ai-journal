@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T18:11:24.679233+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チーム向けAIエージェント・ガバナンス「ConductAI」: ポリシー制御、監査、LLMプロキシ機能を統合",
+    "url": "https://github.com/sseshachala/conductai",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ConductAIは、AIエージェントの行動を事前に制御する「Conduct Guard」やLLMプロキシを備え、署名済みポリシーとハッシュチェーンによる監査で高度なガバナンスを実現するオープンソースツールです。",
+    "summaryBody": "ConductAIは、AIエージェントの実行におけるセキュリティとコンプライアンスを強化するためのコントロールプレーンを提供します。従来の監視ツールが「何が起きたか」を記録するのに対し、ConductAIの「Conduct Guard」は、LLM呼び出しやシェルツールの実行前にポリシーを照合し、許可されていない操作を事前にブロックする「ランタイム・ファイアウォール」として機能します。特徴的な点として、改ざん不可能なハッシュチェーンによる監査ログ、フェイルクローズ（異常時に停止）設計、SOC 2やHIPAA、EU AI Actに対応した20以上のコンプライアンスパックが挙げられます。また、AnthropicやOpenAIなどのSDKをそのまま利用できるLLMプロキシ「Router」や、ワークスペースの状態を可視化する「Lens」UIも備えており、CursorやCopilotといった既存の開発ツールと統合してガバナンスを即座に導入可能です。",
+    "topics": [
+      "AI Governance",
+      "LLM Security",
+      "Agentic AI",
+      "Compliance",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - sseshachala/conductai: AI agent governance for teams. Runtime firewalls tell you what happened; Conduct Guard controls what can happen — signed policy, verified chain, fail-closed by default. Ships with Router (LLM proxy), 20+ compliance packs, canvas UI, and a playbook engine."
+  }
+}

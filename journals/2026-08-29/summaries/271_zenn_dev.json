@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:58:20.771765+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のデスクトップ操作、内蔵の computer-use ではなく Windows-MCP を使っている理由",
+    "url": "https://zenn.dev/marvelousu/articles/windows-mcp-vs-computer-use",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeでデスクトップを操作する際、内蔵のcomputer-useに代わりWindows-MCPを利用することで、UI Automationによる構造解析を通じた効率的かつ正確な自動化を実現する方法を解説しています。",
+    "summaryBody": "この記事では、Claude Codeを用いたデスクトップ操作における「computer-use」と「Windows-MCP」のパフォーマンス比較を行っています。標準のcomputer-useが画像ベースで座標を推定し、位置の確認やクリックに多数のステップを要するのに対し、Windows-MCPはWindowsのUI Automation API（Snapshot）を利用してUIを構造として読み取ります。同一タスク（メモ帳への入力）の検証では、computer-useの5操作に対してWindows-MCPはわずか2操作で完了し、操作精度とトークン効率の向上が確認されました。また、日本語環境における文字コード問題（PYTHONUTF8=1）や、初回起動時のタイムアウトといった導入時の具体的なトラブルシューティング、ブラウザ操作（Playwright MCP）との使い分けについても言及されており、実践的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "Model Context Protocol",
+      "Windows-MCP",
+      "UI Automation",
+      "デスクトップ自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

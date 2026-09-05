@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:32:11.557546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Python SDKのHTTPX2移行ガイド",
+    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAI Python SDKの内部HTTPクライアントがHTTPX2へ移行し、TLS検証方式の変更やクラスの置き換えが必要となる重要な変更が加えられました。",
+    "summaryBody": "OpenAI Python SDKは、同期および非同期のHTTP通信に利用するライブラリを従来の`httpx`から`httpx2`へ移行しました。これにより、SDKインストール時に`httpx`は自動インストールされなくなります。主な変更点は、TLS証明書の検証が従来の`certifi`ではなくOS標準のトラストストアを使用するように変更された点です。カスタムクライアントを使用している場合、`httpx.Client`や`httpx.Timeout`などのオブジェクトを対応する`httpx2`のものに置き換える必要があります。また、`aiohttp`サポートもHTTPX2ネイティブなトランスポートへ更新されています。既存の`httpx`に依存するツールやテスト（RESPX等）を使用しているユーザー向けに、型チェックの回避が必要な一時的な「レガシー・エスケープハッチ」も用意されていますが、早期の移行が推奨されます。",
+    "topics": [
+      "OpenAI",
+      "Python SDK",
+      "HTTPX2",
+      "API",
+      "Migration Guide"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "openai-python/httpx2.md at main · openai/openai-python · GitHub"
+  }
+}

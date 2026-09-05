@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:30:27.935717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の承認待ちを見逃さないために、光る Clawd を机に置いた",
+    "url": "https://zenn.dev/lincwell_inc/articles/79092d88245748",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの承認待ち状態を物理デバイスで可視化するため、M5Atom Liteとカスタムフックを組み合わせた実用的なインジケーター製作と、フックの挙動に関する詳細な技術解説。",
+    "summaryBody": "Claude Codeの実行中に発生する「承認待ち」の見逃しを防ぐため、M5Atom Lite（ESP32）を内蔵した3Dプリント製フィギュア「Clawd」を製作したプロジェクトの紹介です。ターミナル通知ではなく、物理的なデバイスの状態（LEDの色や点滅パターン）を視界の端に置くことで、作業の停滞を解消しています。\n\n主な技術的ポイント：\n- **hooks機能の活用**: `~/.claude/settings.json` のhooksを利用し、状態変化をWiFi経由でデバイスへHTTP送信。シリアル通信ではなくWiFiを採用することで、リセット問題を回避し設置の自由度を向上。\n- **詳細なライフサイクル分析**: 公式ドキュメントにないイベント発火のタイミングを実測。承認待ち検知には `Notification` ではなく `PermissionRequest` が最適であることや、フックだけでは検知できない「承認・拒否」の瞬間を補完するためのトランスクリプト（JSONL）監視手法を解説。\n- **実運用での工夫**: サブエージェント実行時のイベント重複対策や、非同期フックの着弾順序保証（タイムスタンプによる棄却処理）など、実用性を高めるためのロジックを実装。\n\nハードウェア構成はM5Atom Lite単体とシンプルでありながら、ソフトウェア側でClaude Codeの内部挙動に深く踏み込んだ、非常に実用性の高いハックとなっています。",
+    "topics": [
+      "Claude Code",
+      "M5Stack",
+      "IoT",
+      "電子工作",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

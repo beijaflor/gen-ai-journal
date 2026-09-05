@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:09:55.265300+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "goccy/go-llama: llama.cppをPure Goで動作させるライブラリ",
+    "url": "https://github.com/goccy/go-llama",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "cgoを介さずWebAssembly経由でGoに変換することで、llama.cppをPure Go環境で動作可能にする革新的なライブラリ。",
+    "summaryBody": "go-llamaは、人気の高い推論エンジンllama.cppをPure Goで動作させるためのプロジェクトです。cgoや外部共有ライブラリを必要とせず、単一の静的バイナリとして配布・実行できるのが最大の特徴です。これはllama.cppをWebAssemblyにコンパイルし、それをllamawasm2goを用いてGoに変換するというアプローチで実現されています。GGUFモデルの読み込み、ストリーミング出力、投機的サンプリング、LoRAアダプタ、GBNFグラマー、マルチコンテキストのサポートなど、本家llama.cppに近い豊富な機能を備えています。実行性能面では、arm64のNEONやamd64のSSEなどのSIMD命令をネイティブに活用できるよう最適化されています。ただし、Wasmの制約によりメモリは4GiBまでに制限されるため、3B程度の量子化モデルが推奨されます。",
+    "topics": [
+      "Go",
+      "llama.cpp",
+      "WebAssembly",
+      "LLM",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - goccy/go-llama: llama.cpp in pure Go"
+  }
+}

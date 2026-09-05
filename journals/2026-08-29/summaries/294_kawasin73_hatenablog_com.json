@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:04:42.023441+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "適当に作ったスキルはない方がマシ：AIエージェントの性能劣化を防ぐためのEvalの重要性",
+    "url": "https://kawasin73.hatenablog.com/entry/2026/08/24/171022",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code向けに作成したAIスキルが、不適切な設計によってかえってトークン消費やターン数を増大させた実例を通じ、AIエージェントにおけるスキルの評価（Eval）とスリム化の重要性を解説しています。",
+    "summaryBody": "著者のkawasin73氏が、Claude Desktop/Code向けに作成した「セッションタイトルを変更するスキル」が、意図に反してエージェントの性能を劣化させていたという実体験に基づく検証記事です。実験データによると、クラウド環境ではスキルなしの方がトークン消費が少なく、デスクトップ環境でも特定の読み取り機能以外はスキルがない方が効率的であることが判明しました。これは、スキルの説明文がコンテキストを圧迫したり、モデルが標準で持っている能力をノイズで阻害したりするためです。\n\n著者はこの問題の対策として、スキルを「Capability uplift skills（能力向上）」と「Encoded preference skills（好みの反映）」に分類し、特に前者は成否基準が明確なため Eval（評価）を義務付けるべきだと提言しています。モデルの進化に伴って「かつて必要だったスキル」が負債化するリスクを指摘しており、定量的な計測に基づいたスキル管理の必要性を説く、実践的なケーススタディとなっています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "MCP",
+      "LLM Evaluation",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

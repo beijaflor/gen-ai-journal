@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:56:52.687338+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの「中の人」になってみる",
+    "url": "https://zenn.dev/poipoionigiri/articles/7aba96291e6cf6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人間がGitHub Copilot CLIのLLMプロバイダーとして振る舞う実験を通じ、AIエージェントが受ける膨大なコンテキスト情報の内訳やツール呼び出しの仕組み、効率的なプロンプト設計の本質を紐解いた記事。",
+    "summaryBody": "著者が開発したローカルのOpenAI互換プロバイダー「youarellm」を用いて、GitHub Copilot CLIの応答を「人間（自分自身）」が代行する実験の記録です。AIエージェントが1回の推論で受け取る情報の全容（システム指示、プロジェクト固有ルール、ツール定義、履歴、実行結果）を人間が実際に読み解くことで、LLMの視点からプロンプトエンジニアリングの要諦を分析しています。技術面では、Chat Completions APIと新形式のResponses APIの比較、Tool Callが単なる実行依頼に過ぎない仕組み、そしてトークン削減よりも「次に何が必要か」という状態（根拠・未確認事項・目標）の伝達が手戻りを防ぐ鍵であることを解説しています。最後には、この「具体的な指示と根拠の提示」という考え方が、対LLMだけでなく対人間のコミュニケーションにも極めて有効であると結論づけています。",
+    "topics": [
+      "GitHub Copilot",
+      "LLM",
+      "AIエージェント",
+      ".NET",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:52:43.454542+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネス・エンジニアリング：AI支援型開発における一貫性と正確性の維持",
+    "url": "https://habitat-thinking.github.io/ai-literacy-superpowers/plugins/ai-literacy-superpowers/explanation/harness-engineering/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成の品質低下（ドリフト）を防ぐため、決定論的なツール、エージェントによるレビュー、定期的なエントロピーチェックを組み合わせた「ハーネス（馬具・安全帯）」を構築するエンジニアリング手法。",
+    "summaryBody": "ハーネス・エンジニアリングは、Birgitta Boeckeler氏の着想に基づき、AIアシスタントが生成するコードが時間の経過とともにアーキテクチャや命名規則から逸脱する「ドリフト」を防ぐための実践体系です。主な構成要素は次の3つです。\n\n- **コンテキスト・エンジニアリング**: AIに知識を与えるための専用基盤（HARNESS.md）の維持。\n- **アーキテクチャ制約**: 「検証スロット」を設け、決定論的ツールやAIエージェントによってコードの妥当性をチェックする仕組み。\n- **ガベージコレクション**: スケジュールに基づきコードベースの不整合を排除するプロセス。\n\n本手法の特徴は「漸進的硬化（Progressive Hardening）」にあり、制約を「未検証」から「エージェントによるレビュー」、そして最終的には「決定論的な自動チェック（CIなど）」へと昇格させていく成熟度モデルを提唱しています。また、開発セッションの振り返り（/reflect）を通じてハーネス自体を自己改善させるループも組み込まれています。",
+    "topics": [
+      "Harness Engineering",
+      "AI-Assisted Development",
+      "Code Quality",
+      "LLM Governance",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "Harness Engineering"
+  }
+}

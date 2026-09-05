@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:54:18.747197+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-2を純粋なCMakeで実装：gpt2.cmake",
+    "url": "https://github.com/AlpinDale/gpt2.cmake",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ビルドシステム記述言語であるCMakeのみを用いて、Q16.16固定小数点演算によるGPT-2推論を実現した実験的プロジェクトです。",
+    "summaryBody": "このプロジェクトは、ビルド設定ファイルとして広く知られるCMakeを計算エンジンとして活用し、GPT-2モデルの推論を実装しています。主な特徴は、Q16.16の整数算術を用いた演算処理であり、外部のC++ライブラリなどを使用せず、`cmake -P`（スクリプトモード）だけで動作します。Hugging Faceからモデルの重みをダウンロードして実行する手順が提供されており、実用性よりも「CMakeでどこまでできるか」という技術的探究心とエンジニアリングの遊び心に満ちたリポジトリとなっています。",
+    "topics": [
+      "CMake",
+      "GPT-2",
+      "Large Language Model",
+      "Esoteric Programming",
+      "Machine Learning"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 1,
+      "antiHype": 4,
+      "mainJournal": 30,
+      "annexPotential": 90,
+      "overall": 75
+    },
+    "originalTitle": "AlpinDale/gpt2.cmake: Implementation of the GPT-2 model in pure CMake"
+  }
+}

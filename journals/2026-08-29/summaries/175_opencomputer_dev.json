@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:13:26.917245+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenComputer：TypeScriptで記述・デプロイ可能な「エージェント版Vercel」プラットフォーム",
+    "url": "https://opencomputer.dev/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeScript関数としてAIエージェントを記述し、フル機能のLinuxマイクロVM上で即座に実行・スケジューリングできる、Vercelのような開発体験を提供するプラットフォーム。",
+    "summaryBody": "OpenComputerは、AIエージェントの開発と実行を簡素化するマネージドプラットフォームです。開発者はTypeScriptでエージェントを定義し、コマンド一つでデプロイできます。最大の特徴は、各エージェントセッションがファイルシステム、ネットワーク、パッケージ管理（apt, npm, pip）を備えた本物のLinuxマシン（サンドボックス）上で動作する点です。これにより、ブラウザの操作、リポジトリのクローン、ffmpegの実行といった複雑なタスクをエージェントに行わせることが可能です。また、秘匿情報をエージェントに直接読み取らせることなく、特定のオリジンへのリクエスト時にのみ注入する安全な接続機能や、セッションの中断・再開、MCP（Model Context Protocol）のサポートも備えています。エージェントだけでなく、独自のランタイムを動かすためのベアなサンドボックスとしても利用可能です。",
+    "topics": [
+      "AI Agents",
+      "TypeScript",
+      "Sandboxing",
+      "Cloud Infrastructure",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Vercel for agents – OpenComputer"
+  }
+}

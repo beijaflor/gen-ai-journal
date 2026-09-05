@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:48:50.138931+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにGoogle Cloudの操作を任せるためのガードレール ─ Google Cloud PAMの導入",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/65362/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる誤操作リスクを低減するため、Google Cloud PAMを導入して本番環境の強権限を恒常付与からJIT（一時昇格）方式へ移行したエンジニアリング事例。",
+    "summaryBody": "株式会社AJAにおけるAIエージェントの活用拡大に伴い、本番環境の安全性を担保するための権限管理の取り組みを紹介しています。従来は人間に付与されていた強権限（Editor等）をAIエージェントがそのまま利用できてしまうリスクを重く見て、Google Cloud Privileged Access Manager（PAM）を採用。作業目的ごとに「entitlement」を定義し、Terraformでの管理、Slackによる承認フロー、JIT（Just-In-Time）による一時的な権限昇格を実現しました。これにより、調査は可能だが変更には申請が必要という境界を明確化し、AIエージェント利用時の心理的安全性の向上と作業目的の透明化に成功しています。",
+    "topics": [
+      "Google Cloud",
+      "PAM",
+      "AIエージェント",
+      "IAM",
+      "Terraform"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:52:27.731753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIとインフラエンジニアリング",
+    "url": "https://omegion.dev/2026/08/ai-and-infrastructure-engineering/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIがインフラの実装や構文記述を抽象化する現状を、かつてKubernetesがサーバー管理を抽象化した歴史になぞらえ、エンジニアの役割が「実装」から「方向性の決定」へと移行していることを考察しています。",
+    "summaryBody": "この記事は、AIがインフラエンジニアリングに与える影響を、物理サーバー管理を不要にしたKubernetesやサーバーレスの歴史的な流れと比較して論じています。筆者は、AI（Claudeなど）がTerraformやHelmチャートの複雑な構文作成、変更履歴の確認といった「検索と実装」の作業を代替することで、開発速度が飛躍的に向上したと述べています。一方で、手動でHCL（HashiCorp Configuration Language）を書く能力やSSHでのデバッグスキルが衰えるというトレードオフも認めています。現在は人間が「全体の設計と方向性」を指示する役割を担っていますが、リポジトリに文脈を与える`AGENTS.md`のような取り組みが進むことで、将来的にAIがより長期的な意思決定やアーキテクチャ設計まで担う可能性についても示唆しています。",
+    "topics": [
+      "AI",
+      "Infrastructure Engineering",
+      "Terraform",
+      "Kubernetes",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "AI and Infrastructure Engineering"
+  }
+}

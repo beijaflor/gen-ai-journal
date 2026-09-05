@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:00:33.837822+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sentry 互換の GlitchTip を AI 開発のハーネスにする",
+    "url": "https://blog.starry.blue/entry/2026/08/21/110000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Sentry互換のエラートラッカーGlitchTipをローカルに導入し、AIエージェントが実行時エラーを自動で検知・修正できる開発環境を構築する手法の提案。",
+    "summaryBody": "AIコーディングエージェント（Claude Code等）による大規模開発では、静的解析で拾えない実行時エラーの監視が課題となります。本記事では、軽量なSentry互換ツール「GlitchTip」をローカル開発環境に導入し、エージェントのための「エラー検知ハーネス」を構築する方法を解説しています。主な工夫として、Docker Composeを用いたDSN（接続先URL）の固定化や、前回チェック時からの新規エラーのみを抽出するシェルスクリプトの作成を挙げています。これらを`CLAUDE.md`などのエージェント向け指示書に組み込むことで、PR作成前にエージェントが自律的に実行時エラーの不存在を確認し、必要に応じて修正を行うワークフローを実現しています。本番用ツールを開発フェーズの品質担保に転用する、非常に実用的なアプローチです。",
+    "topics": [
+      "GlitchTip",
+      "Sentry",
+      "AIコーディングエージェント",
+      "デバッグ",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

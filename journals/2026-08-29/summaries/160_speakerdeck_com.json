@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:09:39.202819+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "go-spidermonkeyでAIエージェントのCode Modeを実装する",
+    "url": "https://speakerdeck.com/syumai/go-spidermonkey-de-ai-ejento-no-code-mode-o-jissou-suru",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMにツール呼び出しコードを生成・実行させる「Code Mode」の利点と、Go言語環境にてgo-spidermonkeyを用いたJavaScriptサンドボックスの実装方法を解説する資料です。",
+    "summaryBody": "AIエージェントの新たな実行方式である「Code Mode」の実装手法に関するスライド資料です。Code Modeとは、LLMが個別のツールを逐次呼び出すのではなく、ツール呼び出しを含む一連のJavaScriptコードを生成し、それをサンドボックス環境で一括実行する手法を指します。本資料では、この方式がトークン効率の向上や複雑な制御フロー（ループやソートなど）の実現、LLMのコード生成能力の活用に寄与することを説明しています。Go言語での実装において、SpiderMonkeyをPure Goに変換したライブラリ「go-spidermonkey」を軽量なサンドボックスとして採用し、MCP（Model Context Protocol）ツールと連携させる具体的なアーキテクチャや、「funcbox-agent」における実装例（Genkit GoやVercel AI SDKの併用）が紹介されています。",
+    "topics": [
+      "Code Mode",
+      "AIエージェント",
+      "go-spidermonkey",
+      "JavaScript Sandbox",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T18:28:24.538824+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Gateway「Bifrost」の本番導入で、Technical Project Manager が担ったこと",
+    "url": "https://tech.layerx.co.jp/entry/2026/08/28/180027",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "LayerXにおけるAI Gateway「Bifrost」の本番導入プロジェクトを例に、TPMが技術的な不確実性を排除し、意思決定や役割分担を整理してプロジェクトを推進する実務プロセスを解説しています。",
+    "summaryBody": "LayerXのAi Workforce事業部におけるAI Gateway「Bifrost」の導入事例を通じ、Technical Project Manager（TPM）が技術選定やプロジェクト推進において果たす役割を詳説した記事です。導入の背景には、テナントごとのデータレジデンシー制御、LLMプロバイダーの障害対応（フェイルオーバー）、利用状況の可視化という3つの課題がありました。技術選定では、Azure API ManagementやLiteLLMなどの代替案と比較し、Go製で依存コンポーネントが少なく、構成がシンプルなOSSであるBifrostを採用。ADR（Architecture Decision Record）を用いた意思決定の文書化、Managed Identityによるセキュリティ確保、OpenTelemetryを活用した観測性の構築など、具体的な設計ポイントが紹介されています。TPMの役割を「技術を理解した上でプロジェクトを前に進める活動の積み重ね」と定義し、専門家間の調整やリハーサルの重要性を説いています。",
+    "topics": [
+      "AI Gateway",
+      "Bifrost",
+      "Technical Project Manager",
+      "LLM",
+      "LayerX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 90
+    }
+  }
+}

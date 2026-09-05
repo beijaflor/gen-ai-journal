@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:46:34.070444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIの推論用ASIC「Jalapeño」：Nvidia Blackwellを凌駕する性能と効率性",
+    "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIが自社開発した推論特化型ASIC「Jalapeño」は、HBM4の採用と高度なハード・ソフト協調設計により、NvidiaのBlackwellやRubinを超える電力効率とスループットを実現している。",
+    "summaryBody": "OpenAIはHot Chipsにて、自社設計の推論用ASIC「Jalapeño（ハラペーニョ）」の詳細を公開した。Broadcomとの提携により、わずか16ヶ月という短期間で開発されたこのチップは、TSMCのN3Pプロセスと次世代メモリHBM4（帯域幅15.4TB/s）を採用している。特筆すべきは、NvidiaのBlackwellやRubinを電力効率（Perf/W）で上回るベンチマーク結果である。アーキテクチャ面では、あえてPrefillとDecodeを分離せず、小規模バッチや低レイテンシ環境でも高いスループットを維持する設計を選択。ソフトウェア層ではTritonベースの新言語「Gluon」を使用し、AI（Codex）による自動カーネル最適化を組み合わせることで、極めて高い開発速度を実現している。2,048 XPUまでスケールアップ可能なラックシステム構成も明らかにされており、2027年に向けて本格的な生産が予定されている。",
+    "topics": [
+      "OpenAI",
+      "Jalapeño",
+      "推論用ASIC",
+      "NVIDIA Blackwell",
+      "HBM4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "OpenAI Jalapeño: Better Than Nvidia Blackwell"
+  }
+}

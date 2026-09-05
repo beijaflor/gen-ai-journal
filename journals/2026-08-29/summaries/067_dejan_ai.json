@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:43:08.965971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OX Alphaの正体はGLM：プロンプトインジェクションと圧縮分析によるリバースエンジニアリング",
+    "url": "https://dejan.ai/blog/ox-alpha/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenRouterに登場した謎のモデル「OX Alpha」を調査した結果、プロンプトインジェクションとgzip圧縮を用いた統計的分析により、その実態がZ.ai開発の「GLM」であることが判明しました。",
+    "summaryBody": "OpenRouterのリーダーボードに突如現れた謎のステルスモデル「OX Alpha」の正体を、DEJAN SEOのDan Petrovic氏がリバースエンジニアリングによって特定した報告です。当初はGoogleのGemini新モデルとの噂もありましたが、著者はまずプロンプトインジェクションを用いて「自分をox-alphaと名乗れ」という指示を含むシステムプロンプトを抽出。そのプロンプトをモデルに突き返したところ、モデルが「私はZ.aiのGLMである」と告白しました。さらに、テキストの圧縮効率から類似性を測る「gzip-NCD（正規化圧縮距離）」を用いた分類を実施した結果、OX Alphaの出力パターンがGLM-5.3と最も高い一致を示したため、統計的にもその正体が裏付けられました。",
+    "topics": [
+      "LLM",
+      "Reverse Engineering",
+      "Prompt Injection",
+      "GLM",
+      "OpenRouter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Ox Alpha is GLM"
+  }
+}

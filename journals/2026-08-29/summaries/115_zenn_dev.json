@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:57:06.865084+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントのためのUIコンポーネントライブラリ「DeMiA UI」の設計と実装",
+    "url": "https://zenn.dev/demia/articles/6c1291f0dae964",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントによるUI実装でのデザイン劣化を防ぐため、スタイル上書きを制限し、エージェント向けコンテキストドキュメントを同梱した独自UIライブラリの事例。",
+    "summaryBody": "株式会社DeMiAが開発した「DeMiA UI」は、コーディングエージェントによるフロントエンド開発の品質を安定させるためのコンポーネントライブラリです。最大の特徴は、classNameやstyle属性の受け入れを禁止し、型定義されたセマンティックなprops（variantやsizeなど）のみを許可することで、エージェントによる勝手なスタイル変更を物理的に防いでいる点にあります。また、独自コマンドを通じてエージェントに読み込ませる「Skill（ドキュメント群）」を配布し、学習データに存在しない社内ライブラリの適切な利用を促しています。開発フローにおいても、VRT（Visual Regression Testing）やoxlintを用いたカスタムリンターを活用し、デザインシステムとの一貫性を機械的に担保する仕組みを構築しています。",
+    "topics": [
+      "AIエージェント",
+      "React",
+      "デザインシステム",
+      "フロントエンド開発",
+      "コンポーネントライブラリ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

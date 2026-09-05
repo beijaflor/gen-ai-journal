@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:50:24.166317+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMが本来の性能より低く感じられる理由：推論実装による精度の乖離",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ハードウェア、CUDAカーネル、量子化手法の僅かな違いがLLMの出力ロジットに累積的な乖離を生じさせ、ツール実行の失敗や知能の低下を招くことを実験的に明らかにしています。",
+    "summaryBody": "ローカル環境でLLMを実行する際、量子化や推論エンジンの設定によって「モデルが馬鹿になった」と感じる現象を、数学的・実験的に分析したレポートです。主な要因として、FlashAttention 2やTriton、Flash Inferenceといったアテンションバックエンドの選択や、GPUの計算ユニット（SM）数に基づくパーティショニングの違いが、浮動小数点の丸め誤差を通じてロジットに乖離（KLダイバージェンス）を生じさせることを示しています。特に40kトークンを超える長文コンテキストでは、これらの微細な誤差が蓄積して「トークンフリップ（最適トークンの入れ替わり）」を引き起こし、ネットワーク機器の設定ミスなど致命的な推論エラーに繋がる様子を実証しました。また、一部のオープンソースモデルやエンジンの実装において、正規化スケールの扱い（RMSNorm）にバグがあり、推論精度を損なっていた事例も報告しています。単なるベンチマーク値だけでなく、ハードウェアとソフトウェアが一体となった「実装の厳密さ」が、エージェント的タスクの成功率に直結することを警告しています。",
+    "topics": [
+      "LLM推論",
+      "量子化",
+      "FlashAttention",
+      "KLダイバージェンス",
+      "GPUハードウェア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Why your local LLM feels dumber than it is - Machine Learning, LLMs, & AI - Level1Techs Forums"
+  }
+}

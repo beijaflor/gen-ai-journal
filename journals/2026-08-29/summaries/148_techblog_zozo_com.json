@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:06:22.212344+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "複数チームで1つのClaude Codeプラグインマーケットプレイスを育てる ── 共同運用で直面した5つの課題と対策",
+    "url": "https://techblog.zozo.com/entry/cc-plugin-marketplace",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "複数チームによるClaude Codeプラグインマーケットプレイスの共同運用において、ディレクトリ構造の整理、カタログの自動生成、CIによる静的バリデーションや破壊的変更チェックを通じて、開発資産の効率的な共有と保守性を両立した事例の紹介。",
+    "summaryBody": "ZOZOにおけるClaude Codeプラグインマーケットプレイスの共同運用事例。数百名規模の利用に伴い、チーム間の資産共有が課題となった。本記事では、責任範囲の不明確さや設定ファイルのコンフリクト、構造エラーの波及といった5つの主要な課題を特定。対策として、1. チーム別ディレクトリによる責任分離、2. marketplace.jsonの自動生成スクリプト、3. CIでの公式CLIを用いた静的バリデーション、4. LLMを活用した「やりたいこと」から逆引きできるスキル検索インデックス、5. PR時の破壊的変更自動チェックを導入した。これにより、他チームの知見の横展開が促進され、開発の属人化解消とオンボーディングの迅速化に成功している。",
+    "topics": [
+      "Claude Code",
+      "プラグインマーケットプレイス",
+      "AI開発ツール",
+      "プラットフォームエンジニアリング",
+      "チーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:59:49.569404+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "インフラのモニタリングをAIと伴走する",
+    "url": "https://zenn.dev/genda_jp/articles/f3c141688591a5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントのDevinを活用し、Datadogのメトリクス分析とSlackへの定期レポートを自動化する仕組みの構築方法と運用知見を紹介する記事。",
+    "summaryBody": "株式会社GENDAのエンジニアによる、インフラ監視の解像度を上げるためのAI活用事例。AIエージェント「Devin」のAutomation機能とDatadog MCPを組み合わせ、毎朝APMやAWSコストの分析結果をSlackへ投稿する仕組みを構築している。\\n\\n主な工夫として、GitHubで管理される「SKILL.md（振る舞い定義）」と「reference.md（ノウハウ・定数）」の2ファイル構成を採用。AIに対して「憶測を排除し事実ベースで記述すること」や「ベースラインとの比較」を徹底させることで、信頼性の高いレポート出力を実現している。また、運用を通じて得られたDatadogのクエリ仕様やAWSコストメトリクスの挙動などの知見をreference.mdに蓄積し、AIを継続的に「賢く」するループを組み込んでいるのが特徴。",
+    "topics": [
+      "Devin",
+      "Datadog",
+      "AIエージェント",
+      "SRE",
+      "インフラ監視"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:29:21.224080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデル・ハードウェア標準（MHS）のプレビュー：AIエージェントによる物理デバイス操作の共通規格",
+    "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、AIエージェントが研究室や製造現場の多種多様な物理デバイスを安全かつシームレスに操作・連携させるための共通規格「Model Hardware Standard (MHS)」を発表し、研究プレビューを公開した。",
+    "summaryBody": "Anthropicは、AIエージェントが顕微鏡、液体ハンドラー、ロボットアームなどの物理機器を操作するための共通仕様「Model Hardware Standard (MHS)」を発表しました。従来、異なるベンダーの機器を統合するには数週間から数ヶ月を要していましたが、MHSはこれを数分に短縮します。\n\n主な特徴と成果は以下の通りです：\n\n- **標準化されたインターフェース**: 機器の機能を「read/write」などのシンプルなプリミティブに翻訳し、自然言語での機器特性の記述を可能にします。Model Context Protocol (MCP) 等の標準プロトコルを通じて、モデルを問わずアクセス可能です。\n- **自律的な実験とエラー復帰**: GenentechやCMU等の事例では、AIがリアルタイムでパラメータを更新し、気泡の発生などの物理的エラーから自律的に復帰して実験を完遂できることが示されました。\n- **多分野での実証**: 量子コンピュータのレーザー安定化（QuEra）、自動顕微鏡による神経活動モニタリング（HHMI Janelia）、環境汚染のプロファイリング（Tetsuwan）など、広範な科学分野で統合コストの劇的な削減と精度の向上が確認されています。\n\n現在は特定の研究室やメーカー向けにプレビュー公開されており、今後、安全性の評価とベストプラクティスの構築を経てオープンソース化される予定です。",
+    "topics": [
+      "AIエージェント",
+      "Model Hardware Standard (MHS)",
+      "ロボティクス",
+      "ラボオートメーション",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Previewing the Model Hardware Standard"
+  }
+}

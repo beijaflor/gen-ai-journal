@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:42:28.728411+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Lightning: 既存のAIエージェントに一切の変更を加えず強化学習を可能にする軽量フレームワーク",
+    "url": "https://github.com/microsoft/agent-lightning",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ツールや環境などの既存資産をそのまま活用し、APIプロキシ経由でAIエージェントの強化学習を実現する、Microsoft提供の軽量なRLフレームワーク。",
+    "summaryBody": "Microsoftが公開した「Agent Lightning」は、AIエージェントの強化学習（Agentic RL）を簡素化するためのオープンソースフレームワークです。最大の特徴は、既存のエージェントコードやツール、制御フローを一切変更することなく、API Gatewayをプロキシとして介在させるだけで学習データを収集・トレーニングできる点にあります。約3,500行という極めて軽量な実装ながら、Kubernetes上での分散実行をネイティブサポートしており、スケーラビリティも確保されています。実績として、SWE-bench VerifiedにおいてQwen3.5-9Bベースのワークフローを41.8%から56.4%へと向上させるなど、コーディングや検索、推論タスクにおいて実用的な性能向上が確認されています。",
+    "topics": [
+      "AI Agent",
+      "Reinforcement Learning",
+      "LLM",
+      "MLOps",
+      "Microsoft"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - microsoft/agent-lightning: The absolute trainer to light up AI agents. · GitHub"
+  }
+}

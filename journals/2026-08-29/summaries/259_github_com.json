@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:55:09.550874+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "誰がフォームを埋めるのか — モデルが起草したものに署名するだけでは不十分な理由",
+    "url": "https://github.com/Jang-woo-AnnaSoft/execution-state-preflight/blob/main/who-fills-in-the-form.md",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの実行における「推論による情報補完」を排除し、外部のチェックリストと厳格なルックアップ手順によって実行の正当性を担保する新しい設計思想の提案。",
+    "summaryBody": "AIモデルが実行に必要な情報を自ら判断して「推論」で埋めてしまう現状の課題に対し、モデルから実行の起草（ドラフト）権限を剥奪するアーキテクチャを提案しています。主な論点は、実行に必要な項目（スロット）を外部リストとして定義し、それらを「ホワイトリスト化されたソース」からのみ取得するように制限することです。モデルが何を尋ねるかを決定するのではなく、外部コードが不足（Unknown）を検知してユーザーに問いかける仕組みを構築することで、ハルシネーションによる誤実行を防ぎ、監査可能な実行記録（Verdict）を生成することを強調しています。これは、AIの能力向上に頼るのではなく、実行プロセスの構造自体を堅牢にするアプローチです。",
+    "topics": [
+      "AIエージェント",
+      "実行安全性",
+      "ハルシネーション対策",
+      "システム設計",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Who Fills In the Form — We Only Sign What the Model Drafted"
+  }
+}

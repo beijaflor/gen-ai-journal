@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:27:21.444685+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code から Cloud Run 上の MCP サーバを使うための認可構成",
+    "url": "https://www.m3tech.blog/entry/2026/08/26/110000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloud Run上で運用するMCPサーバに対し、Claude Codeからの認可を実現するためのOAuth 2.1に基づいた実装方法を解説しています。",
+    "summaryBody": "この記事では、Claude CodeなどのMCPクライアントをGoogle Cloud Run上のMCPサーバに安全に接続するための認可構成について詳述しています。MCPの認可仕様（OAuth 2.1準拠）では、Protected Resource MetadataやClient ID Metadata Documents (CIMD) といった動的な解決メカニズムがMUSTとされています。Cloud Run標準のIAMやIAPではこれらの仕様に完全に対応できないため、筆者は「GoogleをIdPとして利用しつつ認可サーバを自前実装する（OAuth Proxy構成）」、または「Auth0等のMCP対応外部IdPを利用する」という2つの実戦的なアプローチを提案し、それぞれのシーケンスや実装のポイントを比較検討しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "Cloud Run",
+      "OAuth 2.1",
+      "認証・認可"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

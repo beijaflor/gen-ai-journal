@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:51:09.784778+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen 3.8 27Bに高度なリバースエンジニアリングを依頼した結果、わずか30分で完了",
+    "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "270億パラメータのローカルLLM「Qwen 3.8」が、商業アプリのライセンス認証を静的解析のみで突破し、自己修正を繰り返しながら30分でバイパスに成功した衝撃的な検証報告。",
+    "summaryBody": "XDAの技術編集者Adam Conway氏が、最新のオープンウェイトモデル「Qwen 3.8 27B」の能力を検証。Nvidia GB10 Grace Blackwellチップを搭載したローカル環境で、商用アプリのライセンスチェック回避という、通常はフロンティアモデル（GPT-4クラス）が必要とされる高度なリバースエンジニアリングを試行した。結果、モデルは数千行のarm64アセンブリを静的解析し、隠蔽されていた暗号鍵を特定。途中の推論エラーを自ら発見・修正する高度な推論能力を見せ、わずか30分で動作するPoCを完成させた。この記事は、17GB程度のVRAMで動作する中規模モデルが、機密性の高いオフライン環境でサイバーセキュリティ上の脅威や解析ツールとして極めて実用的になったことを示唆している。",
+    "topics": [
+      "Qwen 3.8",
+      "リバースエンジニアリング",
+      "ローカルLLM",
+      "サイバーセキュリティ",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "I gave Qwen 3.8 27B a reverse-engineering job I assumed needed a frontier model, and it finished in 30 minutes"
+  }
+}

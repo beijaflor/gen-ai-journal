@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:40:59.190232+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントはモデルではない：AIシステムの階層構造を理解する",
+    "url": "https://code.joejag.com/2026/your-agent-is-not-the-model.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント、ハーネス、推論サービス、モデルという用語を明確に区別し、システムの問題を特定・改善しやすくするための概念的枠組みを解説した記事。",
+    "summaryBody": "AI開発において混同されがちな「エージェント」と「モデル」という言葉の定義を整理し、AIシステムを4つの階層で捉えることを提案しています。\n\n- **モデル (Model)**: 入力トークンを出力トークンに変換する数学的関数（Claude Sonnet, GPT-4など）。\n- **推論サービス (Inference Service)**: モデルを実行し、API提供や課金管理を行うホスト環境（AWS Bedrock, Anthropic APIなど）。\n- **ハーネス (Harness)**: 入力を整形し、出力を解釈し、MCP（Model Context Protocol）やツール実行などのロジックを担うソフトウェア層（Claude Desktop, Cursorなど）。\n- **エージェントシステム (Agent System)**: これら3つが統合された全体像。\n\n著者は、この階層化によって「推論が遅い（サービスの問題）」「ツールが使えない（ハーネスの問題）」「回答の質が低い（モデルまたはハーネスの文脈不足）」といった切り分けが可能になり、より効率的にAIシステムを改善できると説いています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "ソフトウェアアーキテクチャ",
+      "MCP",
+      "AIエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Your Agent Is Not the Model"
+  }
+}

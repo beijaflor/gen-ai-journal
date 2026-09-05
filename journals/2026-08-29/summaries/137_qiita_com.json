@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:02:56.688609+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの思考ログは、暗号化されているから安全ではなかった",
+    "url": "https://qiita.com/jqit_suwa/items/92a59e7a464fac9731da",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの暗号化された推論トレース（Chain-of-Thought）を別モデル経由で復号し、機密情報を抽出する攻撃手法とその対策について解説した記事。",
+    "summaryBody": "最新の研究論文（arXiv:2608.09867）を基に、Claude Codeなどのツールが生成する暗号化された推論ログ（thinkingブロック）の脆弱性を解説しています。攻撃者は、あるモデルの暗号化された署名を、同一プロバイダのより安価で制限の緩いモデル（例：Opus 4.8からHaikuへ）に注入することで、平文として内容を書き写させることが可能です。実際に公開されたログからAPIキーやパスワードが多数復元されており、ユーザーは「暗号化されているから安全」と過信せず、ログを公開・共有する前にこれらのブロックを削除するなどの対策が求められます。",
+    "topics": [
+      "LLM Security",
+      "Chain of Thought",
+      "Claude Code",
+      "Vulnerability",
+      "Information Leakage"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

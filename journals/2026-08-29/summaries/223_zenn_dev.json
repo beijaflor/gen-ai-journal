@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T19:01:32.128406+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MacBook Pro 128GB でローカル LLM がついに実用になった ─ Qwen3.8 Flash Next 実測",
+    "url": "https://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MacBook Pro 128GB環境で、MoE採用のQwen3.8 Flash Nextを用いることにより、ローカル環境でも実用的な速度でコーディングエージェントのワークフローを自律的に完結可能であることを示した実測レポート。",
+    "summaryBody": "## 概要\\nApple Silicon Mac（M4 Max 128GB RAM）上で、巨大なパラメータ数を持つMoE（Mixture of Experts）モデルである「Qwen3.8 Flash Next」をローカル実行し、実際の開発業務に適用した詳細なレポート。\\n\\n## 主な検証内容と結果\\n- **モデル構成**: 約90GBのUD-Q3_K_XL量子化GGUFモデルをllama.cppで実行。MoEの採用により、巨大な知識量を保持しつつ実用的な推論速度（約10 tok/s）を両立。\\n- **実務検証**: 自身のOSSのIssueを課題に、リポジトリ探索、コード実装、ビルド、テスト、PR作成、レビュー対応までの全工程を人間の介入なしに完結。\\n- **パフォーマンス分析**: プレフィル（入力処理）とデコード速度、KVキャッシュのメモリ消費、llama.cppとoMLXの性能比較など、エンジニア向けに詳細な数値データを提供。\\n- **Denseモデルとの比較**: 同等の課題で27BクラスのDenseモデルは速度不足によりワークフローが収束しなかったが、MoEモデルは実時間内での「閉じた」運用が可能であった。\\n\\n## 結論\\n128GB RAM搭載のMacBook Proにおいて、MoEアーキテクチャのLLMはメモリ容量と実行速度のトレードオフを解消する鍵であり、開発補助としてのローカルLLM利用が現実的な実用フェーズに入ったことを示している。",
+    "topics": [
+      "ローカルLLM",
+      "MacBook Pro",
+      "Qwen",
+      "MoE",
+      "llama.cpp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 96
+    }
+  }
+}

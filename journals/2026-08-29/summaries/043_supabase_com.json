@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:36:43.607020+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Supabase MCPサーバー向けの企業管理認証機能を発表",
+    "url": "https://supabase.com/blog/enterprise-managed-auth-for-the-supabase-mcp-server",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SupabaseがClaude用MCPサーバーにOkta連携の企業管理認証を導入し、組織全体でのセキュアかつ一元的なアクセス制御を可能にしました。",
+    "summaryBody": "Supabaseは、ClaudeなどのAIツールで利用されるMCP（Model Context Protocol）サーバーに対し、OktaなどのIDプロバイダー（IdP）を介した「企業管理認証」の一般提供を開始しました。これにより、IT管理者は個別のOAuth承認に頼ることなく、組織全体のアクセス権限を一箇所で管理・制限・取り消しできるようになります。従業員は、自分自身の既存のSupabaseロールと権限に基づいた操作をAI（Claude）経由で行えるため、最小権限の原則を維持したまま開発効率を向上させることが可能です。セキュリティ面では、Oktaのグループ管理を通じたオフボーディングやアクセス監査が可能になり、エンタープライズレベルのガバナンスをAIツール利用に適用できます。現在はTeamおよびEnterpriseプランで利用可能です。",
+    "topics": [
+      "Supabase",
+      "MCP (Model Context Protocol)",
+      "Okta",
+      "SSO",
+      "Enterprise Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Enterprise-managed auth for the Supabase MCP server"
+  }
+}

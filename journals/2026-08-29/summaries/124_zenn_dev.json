@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:59:20.385247+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI開発を10並列で回すためのgit worktree活用術：ポート衝突やDocker管理の「5つの壁」を突破する",
+    "url": "https://zenn.dev/ceres_tech_blog/articles/8cb3ce7bc4c937",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code等のAI開発セッションを大量並列で回す際に発生するポート衝突やDockerの競合、ディスク肥大化といった課題をgit worktreeと自動化スクリプトで解決する実践的ノウハウ。",
+    "summaryBody": "AIによる自動開発を10並列で運用する過程で発生した「5つの技術的課題」とその解決策を詳説しています。git worktreeを活用して作業ディレクトリを分離しつつ、共通の`.git`ディレクトリをレジストリとして利用してポート番号を自動割り当てる仕組みや、Docker Composeのプロジェクト名・コンテナ名の動的上書きによる環境干渉の防止策を紹介。また、並列化に伴うDockerのディスク消費問題への対処や、AIエージェントが本体リポジトリを誤操作しないための指示の定型化についても触れています。最終的に開発工程の多くをAIに委ねられる環境を構築した結果、人間の役割が「実装」から「意思決定とコードの検証」へと変化した実体験を共有しています。",
+    "topics": [
+      "git worktree",
+      "Claude Code",
+      "Docker Compose",
+      "AI駆動開発",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

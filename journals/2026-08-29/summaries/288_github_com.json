@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T20:03:02.387499+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FreeToken: 消費者向けハードウェアで巨大MoEモデルを高速実行するエッジネイティブ推論エンジン",
+    "url": "https://github.com/FlashML-org/FreeToken",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "FreeTokenは、独自の帯域適応型実行アルゴリズムにより、ゲーミングPC等の消費者向けハードウェアで290B規模の巨大なMoEモデルを高速かつ効率的に動作させる推論エンジンです。",
+    "summaryBody": "FreeTokenは、データセンター級の巨大な混合専門家（MoE）モデルを、個人のデスクトップPCやノートPCで実行可能にするオープンソースのエッジネイティブ推論エンジンです。主な技術的特徴として、GPUとCPUの計算資源を統合し、通信帯域に応じて動的に実行を最適化する「q*ポリシー」、コンテキストの再計算を抑制する「セマンティック・アウェア・キャッシュ」、そしてVRAMを動的に再配分する弾力的なメモリ管理機能を備えています。これにより、DeepSeek-V4やQwen3.6、GLM-5.2といった最新の巨大モデルを、メモリ制約のある消費者向けハードウェア（NVIDIA RTX 30/40/50シリーズ）上で対話的な速度で提供します。OpenAI/Anthropic互換APIをサポートしており、既存のAIエージェントやツールとの統合も容易です。",
+    "topics": [
+      "MoE",
+      "LLM Inference",
+      "Edge AI",
+      "DeepSeek",
+      "NVIDIA RTX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - FlashML-org/FreeToken: FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. · GitHub"
+  }
+}

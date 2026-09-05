@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:03:52.886632+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに作らせたコードを、まっさらな環境で動かしてみた",
+    "url": "https://qiita.com/jqit_suwa/items/e11d49c9bb7eb7aaea37",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI生成コードの再現性に関する論文の追試を行い、最新のClaude Opus 5では論文の成功率68.3%を大幅に上回る100%の動作を実現した要因を分析しています。",
+    "summaryBody": "AI生成コードが「クリーンな環境」で依存関係の問題により動かないという論文（arXiv:2512.22387）の結果を受け、著者がClaude Codeを用いて追試を行った記録。論文では300プロジェクト中68.3%の成功率だったのに対し、本検証では4プロジェクトすべてが一発で動作した。この差異の要因として、最新モデルが「自らテストを書いて実行・修正したこと」や「標準ライブラリを活用し外部依存を減らしたこと」を挙げている。論文の失敗要因の5割以上が依存関係ではなく単純なコードのバグであったことから、AIエージェントがテストを自律的に回すことで再現性が劇的に向上することを示唆している。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM",
+      "再現性",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

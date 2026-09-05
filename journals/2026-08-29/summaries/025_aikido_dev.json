@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:31:43.251572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AikidoがClaude Security (Mythos) を凌駕、半分のコストでより多くの脆弱性を検出",
+    "url": "https://www.aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Aikidoは、最新のClaude Mythosモデルを搭載したClaude Securityに対し、独自のマルチエージェント型アーキテクチャを用いることで、半分の費用でより高い脆弱性検出率（76%）を達成しました。",
+    "summaryBody": "Aikido Securityが行った最新のベンチマーク調査によると、同社のAIコード監査ツールが、Anthropicの最高峰モデル「Mythos」を採用したClaude Securityを検出精度とコストの両面で上回りました。89件の脆弱性を含むプライベートリポジトリのテストで、Aikidoは76%（68件）を検出したのに対し、Claude Securityは67%（60件）に留まりました。コスト面では、Claudeの157ドルに対し、Aikidoは75ドルと半分以下の費用で実行されています。この差は、全てのタスクに高価なフロンティアモデルを当てるのではなく、特定のタスクに最適化された小規模なエージェント群を活用し、重要な推論が必要な場面のみに強力なモデルを割り当てる「ハーネス（システム設計）」の優位性によるものです。また、Aikidoは実行前にコスト見積もりを提示し、予算に合わせて深度を調整できる実用的な機能も備えています。",
+    "topics": [
+      "AIセキュリティ",
+      "脆弱性スキャン",
+      "Claude Mythos",
+      "LLMエージェント",
+      "コストパフォーマンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "How Aikido finds more vulnerabilities than Claude Security with Mythos at half the cost"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:25:57.930489+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実践的ループ・エンジニアリング：AIエージェントによる自律的な自動化手法",
+    "url": "https://addyosmani.com/blog/practical-loop-engineering/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに自己修正を繰り返させ、定義した目標を達成するまで自律的に動作させる「ループ・エンジニアリング」の実践的な手法と、人間が維持すべき判断の境界線を解説。",
+    "summaryBody": "Addy Osmani氏による、AIエージェントの運用を効率化する「ループ・エンジニアリング」の実践ガイドです。ループとは、AIエージェントが目標を達成するまで「実行・テスト・調整」を繰り返す自律的なフィードバックサイクルを指します。記事では、Claude Codeに搭載された3つの主要プリミティブ（目標を定義する/goal、時間ベースで実行する/loop、クラウドで永続化する/schedule）の使い分けを詳説。特に、成功基準をLighthouseスコアやテスト通過数など決定論的な指標で定義することの重要性を強調しています。また、タスクの実行と検証を別々のエージェントに担当させる手法や、UI変更をブラウザ操作を通じて実機検証させるワークフローなど、高度な自動化における信頼性の担保についても言及。結論として、タスクは委譲しても「センス（良し悪しの判断）」や「最終的な品質責任」は人間に残るべきであり、ループを盲目的に回すのではなく、明確な停止条件と人間によるレビューを組み合わせるべきだと説いています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Loop Engineering",
+      "自動化",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Practical Loop Engineering"
+  }
+}

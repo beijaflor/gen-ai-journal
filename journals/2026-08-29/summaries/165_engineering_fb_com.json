@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:10:51.342833+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MetaRoCE: AI大規模イーサネット向けに設計された新しいRDMAトランスポートプロトコル",
+    "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Metaは、数百万基のGPUスケールに対応し、標準的なイーサネット上で高効率・低遅延な通信を実現する新しいRDMAトランスポートプロトコル「MetaRoCE」を発表しました。",
+    "summaryBody": "MetaRoCEは、AIワークロードに最適化されたクリーンシート設計のRDMAトランスポートプロトコルです。従来のRoCEv2が依存していたロスレスネットワーク（PFC）や順序通りのパケット配送の制約を排除し、ネイティブな「アウトオブオーダ（順序不同）配送」と「マルチパス（パケットスプレー）」をサポートします。これにより、パケットロス発生時でもパフォーマンスが急落せず、数千から数百万のGPUを跨ぐ大規模なAIトレーニングや推論において、高いスループットと低いテールレイテンシを維持します。また、ECNと受信側主導のレートヒントを組み合わせた輻輳制御により、インキャスト問題にも迅速に対応します。Metaはこの仕様をOpen Compute Project (OCP) を通じて公開し、AMD製ハードウェアでの実装や参照ソフトウェア実装を提供することで、業界全体でのオープンなAIインフラの構築を推進しています。",
+    "topics": [
+      "MetaRoCE",
+      "RDMA",
+      "AI Infrastructure",
+      "Ethernet",
+      "Network Protocol"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet - Engineering at Meta"
+  }
+}

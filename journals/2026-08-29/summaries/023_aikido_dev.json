@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:31:16.694098+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AikidoがAndroidアプリ向けの自律型AIペネトレーションテスト機能を発表",
+    "url": "https://www.aikido.dev/blog/aikido-launches-agentic-pentesting-for-android-apps",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Aikido Securityは、AIエージェントがAndroidアプリとバックエンドAPIを統合的に解析し、脆弱性の発見から修正コードの生成までを自律的に行う新しいペネトレーションテスト機能を導入しました。",
+    "summaryBody": "Aikido Securityが、WebアプリやAPIに続き、Androidアプリケーション向けの「エージェント型（Agentic）ペネトレーションテスト」機能の提供を開始しました。この機能は、AIエージェントが実際の攻撃者のように振る舞い、APKをインストールしてログインし、アプリとその背後にあるバックエンドAPIの両方を一連の実行パスとして検証します。\n\n主な特徴は以下の通りです：\n- **統合的なスキャン**: アプリ単体ではなくバックエンドとの相互作用を含めてテストすることで、認証不備やロジック上の欠陥を高い精度で特定します。\n- **再現手順の自動提供**: 発見された脆弱性には、ADB（Android Debug Bridge）コマンドを含む具体的な再現ステップが付随し、エンジニアのデバッグを支援します。\n- **AutoFix連携**: 修正案をプルリクエストとして自動生成する機能が含まれており、修復までの時間を短縮します。\n\n現在はホワイトボックス形式（ソースコードが必要）での提供ですが、ブラックボックス対応やiOS版のサポートも予定されています。手動診断に頼っていたモバイルセキュリティを、より迅速かつ継続的なプロセスへと進化させる取り組みです。",
+    "topics": [
+      "Android Security",
+      "AI Pentesting",
+      "Mobile AppSec",
+      "Vulnerability Management",
+      "AutoFix"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Aikido launches agentic pentesting for Android apps"
+  }
+}

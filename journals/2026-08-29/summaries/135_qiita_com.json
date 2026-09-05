@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:02:28.988503+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにテストを書かせると、決まって同じ場所が抜ける #ClaudeCode",
+    "url": "https://qiita.com/jqit_suwa/items/a0fa9752528e2b3def71",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるテスト生成の特性をISTQB等の国際規格に照らして検証し、AIが「妥当性を判断する」のではなく「規格項目を数え上げる」形式の監査手法の有効性と限界を論じた分析記事。",
+    "summaryBody": "Claude Codeを使用してファイル添付機能のテスト仕様書を作成させた結果、78件中26件の指摘事項が発見されました。分析により、AIは「要件に明示されたvalidなケースや上限値」には強い一方、「invalidなケース」「下限値」「複合条件（デシジョンテーブルの全規則）」などが構造的に抜け落ちる傾向があることが判明しました。また、AIに自身の成果物をレビューさせる際、同一プロバイダのモデルでは認知バイアスが共通するため、ISTQBの定義する「独立性」が十分に確保されないリスクを指摘。この解決策として、AIに正誤を判断させるのではなく、同値分割や境界値分析などの技法に基づき網羅性を「数えさせる」静的監査の仕組みを提案しています。記事の後半では、監査ツール自体の誤り（規格の引き間違い）にも言及し、人間による最終判断の重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェアテスト",
+      "ClaudeCode",
+      "テスト自動化",
+      "ISTQB"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

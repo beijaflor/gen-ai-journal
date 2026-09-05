@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:03:39.771777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スキルの採点ツールは、書いてある内容が正しいかを見ていない",
+    "url": "https://qiita.com/jqit_suwa/items/9cf8152a99b1d178a4fd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント用スキルの評価ツールは構造や具体性を採点するが、記述内容の事実関係の誤りを見落とす傾向があることを実験により明らかにした記事。",
+    "summaryBody": "AIエージェントのスキル品質を測定するツール（darwin-skillなど）の限界を検証した実験記録です。境界値分析の定義をあえて正反対に記述した状態で採点にかけたところ、評価指標である「具体性」や「形式」が整っているために高得点を得てしまう事象を確認しました。一方で、ルーブリック評価とは別に「矛盾の指摘」を明示的に指示するとAIは誤りを発見できたことから、現在の評価指標が「構造」に偏っており「事実の正当性」を十分にカバーしていない現状を指摘しています。AIによる自動評価を過信せず、中身の正誤確認を別のプロセスとして組み込む重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "ソフトウェアテスト",
+      "LLM評価",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

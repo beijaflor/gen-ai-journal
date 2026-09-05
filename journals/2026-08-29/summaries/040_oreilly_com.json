@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T16:35:47.155834+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "シャドー・エージェント、恒久的特権、そして導入と発見の間に横たわるガバナンスの溝",
+    "url": "https://www.oreilly.com/radar/shadow-agents-standing-privileges-and-the-governance-gap-between-deployment-and-discovery/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの普及に伴い、恒常的な特権付与や未承認ツールの利用が深刻なインフラ侵害リスクとなっており、アイデンティティ管理に基づくガバナンスの再構築が求められている。",
+    "summaryBody": "2026年上半期、AIエージェントのセキュリティに関する議論は「モデルの安全性」から「インフラの侵害」へと決定的に移行しました。主要な問題は、AIエージェントが「常に有効な特権（Standing Privileges）」を持つ環境に導入されていることです。調査では91%の特権アクセスが永続的であり、Microsoft、Amazon、Cursorなどのツールにおいて、エージェントがホストの権限をそのまま継承し、OSやクラウド環境を操作される脆弱性が次々と露呈しました。\n\nさらに「シャドーAI」の拡大も深刻で、従業員の45%が未承認のツールを利用しており、組織の76%が非人間アイデンティティ（NHI）を適切に監視できていません。2026年6月には「JADEPUFFER」と呼ばれる、AIエージェント主導の自律型ランサムウェア攻撃が初めて記録されました。この攻撃では、パッチ未適用の脆弱性を突いたエージェントが、わずか31秒でデータベースやクラウドの認証情報を奪取・破壊しました。今後は、エージェントのアクセス権を一時的な「ジャストインタイム（JIT）」制御へと移行し、アイデンティティのライフサイクルとして管理することが不可欠です。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "特権アクセス管理 (PAM)",
+      "シャドーAI",
+      "非人間アイデンティティ (NHI)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Shadow Agents, Standing Privileges, and the Governance Gap Between Deployment and Discovery"
+  }
+}

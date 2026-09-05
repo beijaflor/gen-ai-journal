@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-01T17:18:25.449961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenExecutive - 8つのAI専門家エージェントによる仮想経営チーム",
+    "url": "https://github.com/SenteLabsAI/OpenExecutive",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのClaudeを基盤とし、CSOやCFOなど8つの専門エージェントを統合して一貫した経営アドバイスを提供するAI仮想経営チームのオープンソース実装。",
+    "summaryBody": "OpenExecutiveは、企業にMBAレベルの知識を持つ「仮想経営チーム」を提供するオープンソースプロジェクトです。単一の経営者人格（Executive Persona）の背後で、戦略(CSO)、財務(CFO)、人事(CHRO)、法務(GC)、運営(COO)、マーケティング(CMO)、製品(CPO)、取締役会対応の8つの専門Claudeエージェントが連携して動作します。\n\n主な特徴は以下の通りです：\n- **マルチエージェント・アーキテクチャ**: Claude 3.5 Sonnetをオーケストレーターとし、各専門領域に特化したエージェントがChromaDBからRAG（検索拡張生成）を行い、最適な回答を生成します。\n- **記憶と自律性**: SQLiteによるエピソード記憶を持ち、過去の決定事項を考慮したアドバイスが可能です。また、スケジューラーによるプロアクティブなフォローアップ機能も備えています。\n- **多様なインターフェース**: Web UIに加え、Slack、Discord、Telegram、Google Chat、メール、CLIからアクセス可能です。社内コミュニケーションツールに直接統合できる点が強力です。\n- **柔軟なモデル選択**: Anthropic APIだけでなく、OllamaやvLLMなどを通じてLlama 3.3やQwenなどのローカルLLMの利用もサポートしています。",
+    "topics": [
+      "AIエージェント",
+      "マルチエージェント",
+      "経営支援",
+      "RAG",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - SenteLabsAI/OpenExecutive: AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist Claude agents (FastAPI + Next.js)."
+  }
+}
