@@ -19,6 +19,37 @@ Move completed journals and supporting materials to the permanent archive struct
   - `workdesk/summaries/` directory
   - `workdesk/omitted_summaries_unified.md`
 
+## Automated Archive (recommended)
+
+One script now performs the entire archive — directory creation, journal/plan
+copy, the `sources/` set, all `summaries/*.json`, the **Python-built**
+`99_unified_summaries.md` + `02_omitted_summaries.md` (replacing the old
+jq/echo loop), and the validated `journal-metadata.json` (STEP_11 folded in via
+#209) — then, in a live run, `mark_published --yes` and a `git rm` workdesk
+cleanup:
+
+```bash
+# Preview the plan (writes nothing):
+uv run scripts/archive_journal.py YYYY-MM-DD --dry-run
+
+# Real archive into journals/YYYY-MM-DD/ (prompts before Supabase + git rm):
+uv run scripts/archive_journal.py YYYY-MM-DD
+```
+
+Notes:
+- `02_omitted_summaries.md` is built directly from the `omitted_sources.md`
+  partition (not a URL set-difference), so it always matches the invariant.
+- `journal-metadata.json` is asserted `main + annex + omitted == total`.
+- Use `git rm` (not a bulk `rm`) for workdesk cleanup — the script does this and
+  leaves `workdesk/.gitkeep`.
+- Naming convention (the script handles both): the journal **directory** and URL
+  segments are **hyphenated** (`journals/2026-08-22/…/main/`), while the archived
+  **filenames** are **underscore-dated** (`00_weekly_journal_2026_08_22.md`).
+- `--into DIR` is an **eval-only** target that skips every production side
+  effect (used to reproduce a golden cycle into a temp dir).
+
+The manual steps below remain as a reference for what the script automates.
+
 ## Archive Process
 
 ### 1. Create Archive Directory
@@ -448,4 +479,8 @@ After cleanup, the workspace is ready for the next weekly cycle:
 
 ## Next Step
 
-Proceed to [STEP_11_GENERATE_METADATA.md](STEP_11_GENERATE_METADATA.md) to generate the mandatory metadata file before creating the pull request.
+`journal-metadata.json` is now written by `archive_journal.py` above (STEP_11
+folded in, #209), so proceed directly to
+[STEP_12_PULL_REQUEST.md](STEP_12_PULL_REQUEST.md) to open the PR.
+(The deprecated [STEP_11_GENERATE_METADATA.md](STEP_11_GENERATE_METADATA.md)
+remains only as a description of the metadata format.)

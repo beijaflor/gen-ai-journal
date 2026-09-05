@@ -21,7 +21,8 @@ Quick reference to all project documentation files.
 - **[STEP_08_ASSEMBLE.md](STEP_08_ASSEMBLE.md)** - Create final journals
 - **[STEP_09_VERIFY.md](STEP_09_VERIFY.md)** - Quality control and verification
 - **[STEP_10_CLEANUP.md](STEP_10_CLEANUP.md)** - Archive and clean workspace
-- **[STEP_11_MERGE.md](STEP_11_MERGE.md)** - Create PR and merge
+- **[STEP_12_PULL_REQUEST.md](STEP_12_PULL_REQUEST.md)** - Convert the draft PR to ready-for-review and merge
+- **[STEP_13_TAG_PUBLISH.md](STEP_13_TAG_PUBLISH.md)** / **[STEP_14_RELEASE.md](STEP_14_RELEASE.md)** - Tag, release (`scripts/release_journal.py`)
 
 ## Curation Criteria
 

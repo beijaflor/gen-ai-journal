@@ -10,32 +10,24 @@ Arguments:
 
 Output:
     Prints the urls to the console
+
+The URL regex and cleaning live in scripts/workflow/urls.py so this script and
+remove_urls.py can never disagree about what counts as a URL.
 """
 
+import os
 import sys
-import re
 
-def extract_urls(file_path):
-    """Extract all URLs from a file."""
-    urls = []
-    
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from workflow.urls import extract_urls  # noqa: E402
+
+
+def extract_urls_from_file(file_path):
+    """Extract all cleaned URLs from a file."""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read()
-            
-        # Regular expression to match URLs
-        url_pattern = r'https?://[^\s\[\]()]+(?:\([^\)]*\))?[^\s\[\]()]*'
-        urls = re.findall(url_pattern, content)
-        
-        # Clean up URLs (remove trailing punctuation)
-        cleaned_urls = []
-        for url in urls:
-            # Remove trailing punctuation
-            url = re.sub(r'[.,;:!?)]+$', '', url)
-            cleaned_urls.append(url)
-            
-        return cleaned_urls
-        
+        return extract_urls(content)
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
         return []
@@ -43,19 +35,21 @@ def extract_urls(file_path):
         print(f"Error reading file: {e}")
         return []
 
+
 def main():
     if len(sys.argv) != 2:
         print("Usage: python list_urls.py <file_path>")
         sys.exit(1)
-    
+
     file_path = sys.argv[1]
-    urls = extract_urls(file_path)
-    
+    urls = extract_urls_from_file(file_path)
+
     if urls:
         for url in urls:
             print(url)
     else:
         print("No URLs found.")
+
 
 if __name__ == "__main__":
     main()

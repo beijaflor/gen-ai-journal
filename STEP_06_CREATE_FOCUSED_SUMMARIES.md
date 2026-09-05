@@ -13,6 +13,22 @@ Create focused, unified summary documents that contain only the summaries for ar
 - **All Summaries Directory:** `workdesk/summaries/`
 - **Original Unified Summaries:** `workdesk/unified_summaries.md` (reference)
 
+## Automated (recommended)
+
+One command builds all three focused files (main / annex / omitted), asserts
+every curated URL resolved to a summary, and re-asserts the partition invariant:
+
+```bash
+uv run scripts/build_focused.py YYYY-MM-DD
+# -> workdesk/unified_summaries_main.md   (curated_journal_sources.md)
+#    workdesk/unified_summaries_annex.md  (curated_annex_selected.md)
+#    workdesk/omitted_summaries_unified.md (omitted_sources.md)
+# Reports the authoritative summary count (unite_summaries's tally); a raw
+# `grep -c '^## '` over-counts because some summary bodies contain their own H2s.
+```
+
+The manual steps below document what the script automates.
+
 ## Process
 
 ### 1. Create Main Journal Focused Summaries

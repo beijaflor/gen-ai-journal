@@ -233,9 +233,12 @@ For each theme, add to editorial plan:
 
   This is a **re-review** of the same file approved at STEP_03b — the
   STEP_03b approval does not cover the new ASSEMBLY STRATEGIES section.
-  The skill opens the file in a tmux popup running vim, blocks until the
-  editor closes, and verifies the human flipped
-  `- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08` to `- [x] ...`.
+
+  **Default path:** the human reviews in their own editor (Zed, VS Code, etc.)
+  and approves via the skill's `AskUserQuestion`, after which the agent flips
+  `- [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08` to `- [x] ...`. The tmux+vim
+  popup shown above is the alternative for tmux users. Either way the agent
+  verifies the checked marker on disk before proceeding.
 
   - Exit `0` → proceed to STEP_08.
   - Exit `1` → revise the assembly strategies based on the human's edits
@@ -314,8 +317,10 @@ For each theme, add to editorial plan:
 - [ ] ASSEMBLY PLAN APPROVED - Ready for STEP_08
 
 > The agent leaves `ASSEMBLY PLAN APPROVED` **unchecked** when generating the
-> document. The human flips it to `[x]` inside the `human-review-gate` vim
-> popup; the agent must not check it.
+> document. It is flipped to `[x]` only after the human approves through the
+> `human-review-gate` skill (default: the human selects "Approved" in
+> `AskUserQuestion`, then the agent flips and re-verifies the marker;
+> alternative: the human edits it in the tmux+vim popup).
 
 **Approval Date:** [YYYY-MM-DD]
 **Approver:** [Human Editor Name]

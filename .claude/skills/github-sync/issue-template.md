@@ -15,7 +15,7 @@ Journal Workflow - Week of YYYY-MM-DD
 
 **Current Stage**: STEP_XX - [Stage Name]
 
-**Overall Progress**: X/14 steps completed (Y%)
+**Overall Progress**: X/13 steps completed (Y%)
 
 ---
 
@@ -117,7 +117,7 @@ Journal Workflow - Week of YYYY-MM-DD
 
 Replace placeholders:
 - `YYYY-MM-DD`: Extract from `# Sources for Journal YYYY-MM-DD` in sources.md
-- `X/14 steps`: Count completed workflow milestones
+- `X/13 steps`: Count completed workflow milestones
 - Link counts: Parse `- [x]` vs `- [ ]` in sources.md
 - File statuses: Check file existence with `ls` or Read tool
 - Word/summary counts: Parse files if they exist

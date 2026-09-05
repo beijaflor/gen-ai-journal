@@ -1,6 +1,6 @@
 # Project Overview
 
-This repository creates weekly curated journals about Generative AI in coding, following a systematic 14-step workflow.
+This repository creates weekly curated journals about Generative AI in coding, following a systematic 13-step workflow (STEP_11 metadata generation is folded into STEP_10's `archive_journal.py`, #209).
 
 # Editorial Guidelines
 
@@ -59,14 +59,14 @@ This repository creates weekly curated journals about Generative AI in coding, f
   - Invoked at every "AI drafts → human reviews → AI proceeds" handoff
     (currently STEP_03b editorial plan approval and STEP_07 assembly strategy
     approval; any future planning gate must use this skill)
-  - Opens the file in a tmux popup running vim via
-    `scripts/review_in_popup.sh`, blocks until the human closes vim, then
-    verifies a checked approval line (`- [x] APPROVED ...`) exists
-  - **Hard rule: the agent must NOT write the `[x]` itself** — the human
-    authors the approval marker inside vim. The agent writes the line as
-    `- [ ]` only; flipping it is the human's signal.
-  - Falls back to chat-based `AskUserQuestion` confirmation (still file-based
-    grep-checked) when not running inside a tmux session
+  - **Default path:** the human reviews the file in their own editor and
+    selects "Approved" in the skill's `AskUserQuestion`; only then does the
+    agent flip the marker to `- [x] APPROVED ...` and re-grep it on disk
+  - **Alternative (tmux users):** `scripts/review_in_popup.sh` opens the file
+    in a blocking vim popup where the human flips the marker themselves
+  - **Hard rule: the agent writes the line as `- [ ]` when drafting and never
+    checks it pre-emptively** — the `[x]` exists only after an explicit human
+    approval (the `AskUserQuestion` selection or the vim edit)
   - If the agent edits a planning document after a successful gate, the prior
     approval does not cover the new content — re-invoke the skill
 
