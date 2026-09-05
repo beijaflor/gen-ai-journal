@@ -489,6 +489,81 @@ uv run scripts/validate_summaries.py workdesk/summaries --quiet
 - Validate after manual edits
 - CI/CD pipeline integration
 
+## Post-generation QA checklist (4 checks)
+
+`validate_summaries.py` only checks the **schema** (required fields, score
+ranges, topic count, length bounds). A summary can be schema-valid and still be
+wrong. After generating summaries — and again before STEP_03 curation — verify
+these four things for each source. Any failure → re-generate (see
+[Re-generation Workflow](#re-generation-workflow)) or omit the source.
+
+### 1. Not a dead link (404)
+The source URL must resolve (2xx/3xx). A 404/410 means the page is gone — omit or
+replace it; never summarize a redirect-to-home. Note: **401/403 is usually a
+paywall/anti-bot wall, not a dead link** (see check 3), and a host can 403 an
+automated request yet load fine in a real browser — retry before declaring it dead.
+
+```bash
+uv run scripts/verify_urls.py workdesk/sources.md   # batch live health (reports broken vs blocked)
+uv run scripts/check_link.py "<URL>"                # single URL
+```
+
+### 2. Title matches the original article
+The summary's `title` (and `originalTitle` for English pieces) must describe the
+**actual article**, not a guess from the URL/domain. Red flags: a title like
+"Qiitaの記事" or the bare domain name, or `content.url` ≠ the input URL.
+`call-gemini.py` already enforces `content.url == input URL` (auto-retries once);
+for the *title*, cross-check against the page's real `<title>`:
+
+```bash
+curl -sL --max-time 10 -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' "<URL>" \
+  | grep -oiE '<title>[^<]*' | head -1
+python3 -c "import json;c=json.load(open('workdesk/summaries/<ID>_<dom>.json'))['content'];print('title:',c['title']);print('orig :',c.get('originalTitle'));print('url  :',c['url'])"
+```
+
+If the title doesn't correspond to the page, the fetch likely failed → re-generate.
+
+### 3. Not blocked by a paywall / anti-bot wall
+The summary must describe the article, not a "Subscribe to read" / login /
+Cloudflare / "Enable JavaScript" interstitial. Red flags: a `BLOCKED-*` stub, a
+summary that describes the company/product instead of the article, generic
+landing-page content, or a 401/403.
+
+```bash
+uv run scripts/summary_review.py workdesk/summaries/ --only-suspicious   # flags thin/fabricated rows
+grep -rlE "Subscribe to read|Enable JavaScript|Just a moment|Cloudflare|アクセスが|BLOCKED" workdesk/summaries/
+```
+
+Recover a genuinely gated page with the real browser (Playwright MCP: navigate →
+`() => document.body.innerText`) fed back through
+`call-gemini.py --url "<URL>" --content <captured.txt>`; if the body is truly
+inaccessible (hard paywall), omit it. **Retry in a real browser before declaring
+a page blocked** — cold-session 403s are often transient.
+
+### 4. summaryBody is not mis-formatted
+`summaryBody` must render cleanly on the detail page: **real line breaks**, no
+literal `\n` escape sequences, and no inline `###` headers or `1. **item**`
+lists mashed onto one line. Schema validation does **not** catch this, so scan
+for it explicitly and reformat any hit into intro paragraph → bullet list
+(bold labels) → closing paragraph with real newlines (preserving every fact):
+
+```bash
+python3 - <<'PY'
+import json, glob, re
+for fp in sorted(glob.glob("workdesk/summaries/*.json")):
+    try: b = json.load(open(fp))["content"]["summaryBody"]
+    except Exception: continue
+    literal = "\\n" in b                                            # literal backslash-n as text
+    mashed  = (("### " in b) or bool(re.search(r"\d+\.\s*\*\*", b))) and ("\n" not in b)
+    has_h3  = "### " in b                                           # ### headers don't belong inside a body
+    if literal or mashed or has_h3:
+        print(fp, {"literal_backslash_n": literal, "mashed_one_line": bool(mashed), "has_###": has_h3})
+PY
+```
+
+(Run the same scan against `journals/<date>/summaries/*.json` to audit an
+already-archived cycle.)
+
 ## Error Handling
 
 - If summary generation fails, report the error but continue with remaining URLs
