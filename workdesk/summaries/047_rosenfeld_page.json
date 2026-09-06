@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:13:02.553812+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントと「決して行われないリファクタリング」：失われゆく自浄作用への警鐘",
+    "url": "https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントは複雑なコードでも迷わずに修正できてしまうため、人間が「理解不能」を感じた際に発動していたリファクタリングの自浄作用が失われつつあると指摘する論考。",
+    "summaryBody": "人間のワーキングメモリの限界は、ソフトウェアを理解可能なサイズに分割・整理（モジュール化）させる強力な動機となってきた。しかし、AIエージェントは人間が「迷子」になるような複雑で絡み合ったコードでも文脈を維持し、パッチを当て続けることができてしまう。この特性により、従来ならリファクタリングが行われていたはずのタイミングで修正が強行され、システムが人間には理解不可能なブラックボックスへと変貌するリスクが生じている。筆者は、クリーンなコードはAIにとってもトークンコストの削減や精度の向上に繋がる実利があるとし、AI任せにせず、人間が「今もこのシステムを理解できているか」を意図的に問い直す重要性を説いている。",
+    "topics": [
+      "AI Agents",
+      "Refactoring",
+      "Software Engineering",
+      "Technical Debt",
+      "Cognitive Load"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 95
+    },
+    "originalTitle": "AI Agents and the Refactoring That Never Happens"
+  }
+}

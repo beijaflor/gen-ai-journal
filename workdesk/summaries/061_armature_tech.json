@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:08:09.164646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェント（Claude Code, Codex, Cursor）によるツール選定調査：1.6万件超のセッション分析結果",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "3種類のAIコーディングエージェントが、様々な開発コンテキストにおいてどのサードパーティ製ツールを選択・実装するかを16,893件の実験を通じて明らかにした大規模調査レポート。",
+    "summaryBody": "Armature Researchは、AIコーディングエージェント（Claude Code、Codex、Cursor）が開発においてどのようにサードパーティ製ツールを選択・実装するかを解明するため、16,893件のセッションを分析する大規模実験を実施しました。本調査では、4つの開発者ペルソナ（Vibe-coderからシニアエンジニアまで）と75のリポジトリ、1,163通りのプロンプトを用い、Gemini 3.7 Flashを仲介役および判定役として使用しています。\n\n主な知見として、まずエージェントごとに情報源の依存度が大きく異なることが判明しました。Codexは94%のセッションでWeb検索を行いますが、Claude Codeは事前学習データに頼る割合が高く、Web検索は30%程度に留まります。3つのエージェントが同じツールを選択したのは全体の42%のみでした。\n\nまた、プロジェクトのコンテキスト（使用言語やフレームワーク）が選定に強く影響します。例えば、メールプロバイダーの選定では、TypeScript環境ではResendが勝利する一方、PythonではSendgrid、GoではPostmarkが選ばれる傾向にあります。さらに「言及数」と「採用数」には乖離があり、PayPalやLangChain、Netlifyなどは頻繁に検討対象として挙がるものの、最終的な実装に選ばれる確率は極めて低い（StripeやNeon、S3などの特定の勝者が独占する）という興味深い実態も明らかになりました。ベンダーにとっては、価格体系の明快さや特定スタックへの親和性がAIに選ばれるための鍵となります。",
+    "topics": [
+      "AI Coding Agents",
+      "Developer Tools",
+      "Benchmark Study",
+      "Decision Making",
+      "LLM Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Which tools do Claude Code, Codex and Cursor choose? We measured 16,893 sessions to find out."
+  }
+}

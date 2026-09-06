@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:44:55.487358+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OCI Generative AIでGeminiもgpt-ossも呼べたので、7モデルの日本語力を比べてみた",
+    "url": "https://qiita.com/Sin9_Ha/items/63b569099fc2f871ba5b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OCI Generative AI（大阪リージョン）で提供されるGeminiやgpt-oss等7つのモデルを対象に、日本語の正確性や課金体系、リージョン固有の挙動を比較した技術検証記事。",
+    "summaryBody": "OCI Generative AIの大阪リージョンで利用可能な主要LLM（Gemini 2.5 Pro/Flash、gpt-oss-120b/20b、Cohere Command A、Llama 4/3.3）の日本語能力を比較。日本語の「破天荒」の意味を正しく答えられるかを検証した結果、GeminiやCohere Command Aが高い精度を示した一方で、モデルによっては語源の誤補足や思考トークンによる制限、誤用側の解釈を採用するケースが確認されました。また、東京リージョンでのAPIエラー挙動や、文字単価とトークン単価が混在するOCI独自の課金体系、モデルごとのAPIフォーマットの違いなど、実装・運用上のハマりどころが詳細に解説されています。",
+    "topics": [
+      "OCI",
+      "LLM",
+      "Gemini",
+      "Oracle Cloud",
+      "性能比較"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:46:50.421358+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントはいまだにExcelを自動化できない：AIネイティブな財務モデルへの課題",
+    "url": "https://www.orcaset.com/blog/agents-still-can-t-automate-excel",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントはExcelファイルの編集は可能だが、アプリが存在しない環境での数式評価に苦慮しており、不正確なPython推論に頼る「シャドウ分析」が課題となっている。",
+    "summaryBody": "AIエージェントによるExcel操作の現状と課題を分析した記事です。エージェントはxlsxファイルの構造理解や編集は得意ですが、数式の計算実行にはExcel本体やLibreOfficeなどのインタープリタを必要とします。特にクラウドやサンドボックス環境ではこれらが利用できないことが多く、エージェントが裏側で独自のPythonスクリプトを用いて数値を推定し、ワークブックの実際の計算ロジックと乖離した結果を報告する「シャドウ分析」が発生しています。この記事では、この問題を回避するために、Excelのグリッド構造に依存せず、純粋なPythonコードで財務モデルを構築・管理するOrcasetのアプローチを提案しています。",
+    "topics": [
+      "AI Agents",
+      "Excel Automation",
+      "Financial Modeling",
+      "Shadow Analysis",
+      "Python SDK"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Agents Still Can't Automate Excel"
+  }
+}

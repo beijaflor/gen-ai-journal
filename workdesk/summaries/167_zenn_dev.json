@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:42:32.600534+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人向け Coding Agent サブスクリプションのコストパフォーマンス比較",
+    "url": "https://zenn.dev/kimuson/articles/compare-ai-subscription-20260818",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "主要LLMベンダーのサブスクリプション枠を実測値に基づきAPI単価へ換算し、コーディングエージェント利用におけるコストパフォーマンスを「Fable/Opus/Sonnet」の3階層で詳細に分析した比較記事。",
+    "summaryBody": "### 概要\\nこの記事は、2026年時点での主要LLMベンダー（OpenAI, Anthropic, xAI, Moonshot等）の個人向けサブスクリプションにおけるコストパフォーマンスを徹底比較しています。\\n\\n### 主な分析内容\\n1. **サブスクリプションの経済性**: 従量課金のAPIよりもサブスクリプションの方が10倍〜40倍近く安価に利用できるケースが多く、大量利用時のサブスク契約は必須であることを強調。\\n2. **OpenAIの圧倒的優位**: Codex Proプランは、Sol/Terra/Luna全ての階層において利用枠（API換算）が最も大きく、コストパフォーマンスにおいて他社を圧倒しています。\\n3. **階層別モデル評価**: モデルをFable/Opus/Sonnet級に分類。DeepSeek V4 Flashなどの安価なモデルでも、サブスクリプションのレバレッジを含めるとOpenAIのLunaプランの方がコスパが高くなる現象を具体的な数値で示しています。\\n4. **実測に基づく逆算**: 各社のブラックボックスな利用枠を、ユーザーログベースのトークン消費量と残使用率から逆算し、具体的な「月間利用可能トークン量」として算出し、比較の透明性を高めています。\\n\\n### 結論\\n特定のモデル（ClaudeのFable等）に強いこだわりがない限り、OpenAIのCodexサブスクリプションを選択することが、現在のコーディングエージェント利用において最も合理的な投資であると結論づけています。",
+    "topics": [
+      "LLM",
+      "Coding Agent",
+      "コスト分析",
+      "OpenAI",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

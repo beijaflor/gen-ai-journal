@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:36:58.987612+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWSの Moca で AgentCore ベースのマルチエージェント・オーケストレーションを学ぶ",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/08/31/120000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreを活用したマルチエージェント基盤「Moca」のアーキテクチャから、Strands Agents SDKによるエージェント間の連携・ツール実行の仕組みまでを徹底解説。",
+    "summaryBody": "### Mocaの概要と構成\nMulti-agent Orchestration Chat on AgentCore (Moca) は、AWSが公開したエージェント実行基盤「AgentCore Runtime」上で動作する、TypeScriptベースのマルチエージェント開発用プラットフォームです。Strands Agents SDKを利用し、エージェントの作成、チャット、メモリ管理、MCP（Model Context Protocol）によるツール連携、スケジュール実行までを統合した環境を提供します。\n\n### マルチエージェントの連携メカニズム\n中心となる「Multi-Agent Orchestrator」がユーザーの依頼を分析し、`call_agent`ツールを通じて複数のサブエージェントへ処理を非同期で委譲します。特筆すべき点として、サブエージェントは同一のRuntimeプロセス内で動作しつつ、個別のセッションIDを持つことで会話の文脈を分離しながら、ユーザーの作業フォルダなどのリソースは共有できる仕組みになっています。\n\n### ツール連携と拡張性\n「AgentCore Gateway」を介することで、Lambda関数やOpenAPI定義された外部APIを共通のMCPツールとしてエージェントに公開可能です。これにより、エージェント側は個別のAPI仕様を意識せずに機能を呼び出すことができます。\n\n### 導入の注意点\nPoCレベルでは非常に強力ですが、現時点でのタスク状態管理はインメモリで行われているため、プロセス再起動を跨ぐ長期的なワークフローには、別途タスクの永続化やリトライ処理の実装が必要であると指摘されています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AgentCore",
+      "AIエージェント",
+      "マルチエージェント",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

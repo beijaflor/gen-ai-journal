@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:01:06.497324+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Orca 実践ガイド: Claude Code や Codex を並列運用する ADE の使いこなし術",
+    "url": "https://blog.techscore.com/entry/2026/07/15/080000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェント専用のADE「Orca」を活用し、git worktreeによるタスク隔離とCLIによるマルチエージェントの並列オーケストレーションを実現するための実践的ガイド。",
+    "summaryBody": "### エージェント運用を最適化する「ADE」という発想\n本記事は、Stably AIが提唱するAgent Development Environment (ADE)「Orca」の実践的な活用法を詳説しています。従来のIDEが人間の編集を中心に据えるのに対し、ADEはAIエージェントの実行と監視を中核に置く新しい開発環境です。\n\n### ワークフローの革新：Worktreeとマルチエージェント\n1. **Worktree-native:** `git worktree`を基盤とし、タスクごとに作業ディレクトリを物理的に隔離することで、複数エージェントの同時稼働によるファイル衝突を防ぎます。\n2. **マルチエージェント運用:** Claude CodeやCodexなど、任意のCLIエージェントをタスクの性質に応じて使い分け、進捗状況を「Inbox」で一括管理することで認知負荷を劇的に低減します。\n3. **Design Modeとブラウザ統合:** 各worktreeに紐付いた独立したブラウザを備え、UI要素をクリックするだけで関連するHTML/CSSやソースコードを行単位でエージェントに送信できる機能により、フロントエンド開発のフィードバックループを高速化します。\n\n### 自動化とリモート拡張\n`orca` CLIを用いることで、エージェント自身に他のエージェントを制御させる高度なオーケストレーションや、リモートSSHホストでの実行、モバイルコンパニオンを通じた外出先からの監視が可能です。単なる「AI機能付きエディタ」を超え、開発者がAIチームを指揮するための司令塔としてOrcaを定義しています。",
+    "topics": [
+      "Orca",
+      "AI Agent",
+      "ADE",
+      "git worktree",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    }
+  }
+}

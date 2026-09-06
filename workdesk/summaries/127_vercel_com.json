@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:52:08.748435+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VercelにおけるAIエージェントのデザイン一貫性を保つ「design.md」と評価ループの仕組み",
+    "url": "https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Vercelが、外部のAIエージェントに自社ブランド基準のデザインを出力させるために開発した、公開Markdownガイドライン「design.md」と評価ループを用いた運用の全容。",
+    "summaryBody": "Vercelは、リポジトリ外部で動作するAIエージェントが、Vercelらしいタイポグラフィ、カラー、構成を再現できるようにするための仕組み「design.md」を公開しました。このシステムは、(1) ページの構造やコピーの書き方を規定する「design.md」本体、(2) エージェントが独自のスタイルを捏造するのを防ぐ「公開スタイルシート」、(3) 人間のフィードバックを反映し続ける「評価ループ」の3つの要素で構成されています。特に評価ループでは、実際のユースケースに基づいた7つの評価シナリオを用意し、人間によるブラインド比較テストと機械的なチェックを繰り返すことで、デザインの失敗を57%削減することに成功しました。この記事では、独自の「design.md」を構築するための具体的なステップも紹介されており、AIを活用したUI生成における品質管理のモデルケースを提示しています。",
+    "topics": [
+      "Vercel",
+      "AIエージェント",
+      "デザインシステム",
+      "LLM評価",
+      "UI/UX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How our agents build on-brand pages with design.md"
+  }
+}

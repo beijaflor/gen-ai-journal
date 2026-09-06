@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:45:08.199615+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMが「1+1」を計算するとき、中で何が起きているのか",
+    "url": "https://qiita.com/nolanlover0527/items/7650fe71fa0bca85a727",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMが計算を行う際、人間のような筆算ではなく、数値の範囲の推定と下1桁の精密計算という異なる経路を並列させて処理している実態をAnthropicの研究に基づき解説する。",
+    "summaryBody": "大規模言語モデル（LLM）が計算を行う際の内部メカニズムについて、Anthropic社が公開したClaude 3.5 Haikuの解釈可能性研究「Tracing the thoughts of a large language model」を基に解説した記事です。LLMは数字を数式ではなくトークンの並びとして認識し、学習データに基づいた統計的パターンで次に出力すべき数値を導き出します。具体的には、30代+50代なら答えはこの範囲という「大まかな見積もり」と、末尾の計算のみに特化した「精密計算」の2つの経路が内部で並列に走り、それらが組み合わさって最終回答が生成されます。モデルが自己説明する計算プロセス（筆算など）と実際の内部挙動が乖離している点も指摘されており、AIの思考プロセスを理解する上での重要な知見が示されています。",
+    "topics": [
+      "LLM",
+      "機械学習",
+      "Anthropic",
+      "解釈可能性",
+      "Transformer"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 85
+    }
+  }
+}

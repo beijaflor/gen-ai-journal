@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:10:39.334466+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIネイティブなSDLCはインフラストラクチャから始まる",
+    "url": "https://metalbear.com/blog/ai-native-sdlc-infrastructure/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントを活用した開発サイクルにおいて、モック環境ではなく本番に近い実環境での検証を可能にするインフラ整備が、エージェントの自律性とコード品質を左右することを提言している。",
+    "summaryBody": "Anthropicが提唱するAIエージェント向けのSDLC（ソフトウェア開発ライフサイクル）プレイブックを軸に、AI時代における開発インフラの重要性を論じた記事です。執筆者は、コード生成が高速化された現在、ボトルネックは「検証（フィードバックループ）」へ移行したと指摘しています。\n\n主な内容は以下の通りです：\n- **検証の限界**: 従来の開発で用いられるフェイクやモック環境では、実環境との乖離によりAIエージェントが「テストは通るが本番では動かない」コードを出力するリスクがある。\n- **mirrordによる解決**: ローカルのコードをKubernetesクラスターに接続するmirrordを活用することで、エージェントは実際のサービス、環境変数、データベースを直接利用してテストが可能になり、エージェントの判断精度が飛躍的に向上する。\n- **スケーラブルな開発基盤**: mirrord Operatorを使用することで、トラフィックのフィルタリングやデータベースのブランチ化を行い、複数のAIエージェントが同一のステージング環境で干渉せずに並行稼働できる仕組みを構築できる。\n\nAIにコードを書かせるだけでなく、それを正確に検証できる環境（Stage 4の自動化）の構築こそが、AIネイティブな開発組織への鍵となります。",
+    "topics": [
+      "AIエージェント",
+      "SDLC",
+      "Kubernetes",
+      "mirrord",
+      "開発インフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "The AI-Native SDLC Starts With Your Infrastructure"
+  }
+}

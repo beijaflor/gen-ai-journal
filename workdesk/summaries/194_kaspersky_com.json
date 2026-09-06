@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:36:31.463947+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "企業内AIエージェントを標的にした実世界での攻撃事例：正当なツールを悪用した新たな脅威",
+    "url": "https://www.kaspersky.com/blog/ai-agents-under-attack-2026-incidents/56169/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "開発や業務で利用されるAIエージェントが高い権限を持つ点に着目し、外部からのプロンプト注入やMCPの脆弱性を突いて機密情報を窃取する実世界での攻撃事例と防御策を解説した記事。",
+    "summaryBody": "カスペルスキーは、企業環境に導入済みのAIエージェント（Claude Code、Gemini CLI等）を悪用した初の攻撃事例を分析しています。これらのエージェントはファイル操作やシェル実行権限を持つため、攻撃者にとって強力なツールとなります。主な事例として、2025年8月の「Nx」パッケージ侵害では、トロイの木馬化されたコードがAIエージェントに自動承認フラグ（--yolo等）を使って秘密情報をスキャン・窃取させるよう指示しました。また、Sentryのエラーログに不正プロンプトを混入させる「AgentJacking」や、AIと外部ツールを接続する「Model Context Protocol (MCP)」の仕様を突いたデータ漏洩の手法も紹介されています。既存のEDR等では正当なエージェントの挙動を検知しにくいため、最小権限の適用、人間による承認（Human-in-the-loop）、ツールのホワイトリスト化、およびSIEMでのプロンプト・ツールログの監視といった多層的な防御が不可欠です。",
+    "topics": [
+      "AIエージェント",
+      "プロンプトインジェクション",
+      "MCP",
+      "サプライチェーン攻撃",
+      "企業セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Real-world attacks on corporate AI agents"
+  }
+}

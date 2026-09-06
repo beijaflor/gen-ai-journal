@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:31:16.313915+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オープンモデルの現状：2026年夏の考察",
+    "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年上半期のHugging Face統計に基づき、中国勢モデルの台頭、Qwenの基盤化、ローカル推論の重要性、そしてAIエージェントによるトラフィックの急増といった劇的な変化を分析したレポート。",
+    "summaryBody": "Hugging Faceが公開した2026年夏のオープンモデル分析レポートです。主要な観点は以下の6点に集約されます。\n\n1. **中国勢の躍進**: 中国のラボ（Qwen, DeepSeek等）が数兆パラメータ規模のモデルを連発し、規模と性能の両面で米国のオープンモデルを圧倒する月が増えています。\n2. **注目と採用の乖離**: 最新モデルに「いいね」は集まりますが、実際のパイプラインに組み込まれるのは2022年頃の安定した小規模モデル（all-MiniLM等）という傾向が顕著です。\n3. **Qwenの基盤化**: QwenはMetaのLlamaを抜き、派生モデル数で2.6倍以上の圧倒的なシェアを獲得。コミュニティのデフォルト基盤としての地位を確立しました。\n4. **小規模モデルの優位性**: ハードウェアの制約から1B以下のモデルが全ダウンロードの83%を占めています。一方で、llama.cpp等の進化により巨大モデルの量子化版をローカルで動かす文化も成熟しています。\n5. **エージェント・トラフィック**: Claude Code等のコーディングエージェントによるHubの利用が急増し、人間ではなく「AIがAIを検索・利用する」フェーズへ移行しています。\n6. **ライセンスの変遷**: 中国製巨大モデルは極めて寛容なApache 2.0/MITライセンスを維持し、エコシステム構築を優先しています。",
+    "topics": [
+      "Hugging Face",
+      "オープンモデル",
+      "Qwen",
+      "ローカル推論",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 96
+    },
+    "originalTitle": "State of Open Models: Summer 2026 Observations"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:41:28.035262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを使い倒すために、Claude Codeを使わない",
+    "url": "https://www.docswell.com/s/fumiya-kume/KE1J88-2026-08-29-122932",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの利用制限を回避しつつ開発効率を最大化するため、Notion AIなどのクラウドツールと役割を分担し、ここぞという場面にリソースを温存する戦略的活用術。",
+    "summaryBody": "エンジニアの間で急速に普及している「Claude Code」ですが、従量課金やチームプランにおける利用上限（Limit）が課題となります。本スライドでは、この制限を賢く回避するために、あえて「Claude Codeを使わない」時間を増やす「分散利用」の重要性を説いています。\n\n具体的には、以下のような役割分担を推奨しています：\n- **Claude Code（ローカル）**: 高性能な計算資源を活かしたビルド、テスト、複雑なコード生成など、端末連携が不可欠なタスクに集中させる。\n- **Notion AI（クラウド）**: Slack、GitHub、Jiraなどの外部連携を活かしたコンテキスト把握、技術調査、バグチケットの起票、ドキュメント作成などに活用する。\n\n特に効果的な手法として、Notion AIに「Claude Codeへ渡すための具体的な調査用プロンプト」を下書きさせるワークフローを紹介。これにより、Claude Codeを起動した瞬間から最短ルートで目的のコード修正や調査に着手できるようになり、トークン消費と時間を節約しながら、開発体験を大幅に向上させることが可能です。",
+    "topics": [
+      "Claude Code",
+      "Notion AI",
+      "開発効率化",
+      "AIエージェント",
+      "リソース管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

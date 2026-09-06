@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:50:00.319326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WarpがClaudeで構築する「自己改善型エージェント」：スキルベースの学習ループの仕組み",
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Warpは、Claudeを活用して人間のフィードバックから自律的にスキルファイルを更新・洗練させる、再利用可能な「自己改善型エージェント」のアーキテクチャを開発・公開しました。",
+    "summaryBody": "AI開発環境を提供するWarp社は、エージェントの品質向上に不可欠な「自己改善ループ」の実装パターンを共有しました。従来のプロンプト調整だけではスケーラビリティに欠けるため、彼らは「ベーススキル」と「改善（Improver）スキル」の2層構造を採用しています。ベーススキルにはドメイン知識を記述し、改善スキルは定期的に実行されて人間からのフィードバックを分析、ベーススキルを自動で更新するPRを作成します。この仕組みにより、PRレビューや課題のトリアージといったタスクにおいて、エージェントはエンジニアの慣習や修正意図を学習し、時間の経過とともに精度を向上させます。成功の鍵は、ルールではなく『なぜそうするのか』という原則を教えることと、最終的なスキルの更新には必ず人間の査読を介して制御性を保つことにあります。",
+    "topics": [
+      "AIエージェント",
+      "Claude",
+      "Warp",
+      "自己改善",
+      "LLMデザインパターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "How Warp builds self-improving agents on Claude"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:49:47.944161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ドメイン駆動エージェント：DDDを活用してAIエージェントにレガシーコードを解読させる手法",
+    "url": "https://coldtake.dev/blog/domain-driven-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "レガシーコードにおけるLLMの推論ミスを、DDD（ドメイン駆動設計）のマニフェストとコンテキストマップを導入することで解消し、AIエージェントによる戦略的な開発改善を実現するアプローチ。",
+    "summaryBody": "LLMは新規開発では高い生産性を示す一方、既存の巨大なコードベース（ブラウンフィールド）では、一貫性のない用語や暗黙的な依存関係によって誤った推論を生成しがちです。著者はこの課題に対し、DDDの概念をAIワークフローに組み込む手法を提案しています。具体的には、各リポジトリに`.workflow.json`と`CONTEXT.md`を配置し、境界づけられたコンテキスト、用語集、他コンテキストとの接続点（エッジ）を明示的に定義します。これにより、AIエージェントは自身の立ち位置と使用すべき「ユビキタス言語」を正確に把握できるようになります。開発プロセスを人間の「戦略的作業（意思決定）」とAIの「戦術的作業（実装）」に分離し、コンテキストマップの不整合を検知してAIが自動的に修正PRを作成する、持続的なコード改善サイクルを構築する方法について詳述しています。",
+    "topics": [
+      "Domain-Driven Design",
+      "AI Agents",
+      "Legacy Code",
+      "Software Architecture",
+      "Refactoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Domain-Driven Agents"
+  }
+}

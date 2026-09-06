@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:03:27.478921+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic、顧客管理環境でのデータ保持と安全性を両立する「Enterprise Frontier Safeguards (EFS)」を発表",
+    "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、顧客自身のクラウドインフラ内にデータを保持しながら、高度なAIモデルの悪用を自動検知するエンタープライズ向け新ソリューション「EFS」を発表しました。",
+    "summaryBody": "Anthropicが発表した「Enterprise Frontier Safeguards (EFS)」は、AIモデルの高度化に伴う悪用リスクと、企業のプライバシー要件の対立を解消する新機軸のソリューションです。従来、高度な悪用（サイバー攻撃や生物学的脅威の策動など）を検知するには一定期間のデータ保持が必要でしたが、EFSではデータをAnthropicではなく顧客が管理するクラウド（AWS S3、Azure Blob、Google Cloud Storage等）に保存するアーキテクチャを採用しました。これにより、ゼロデータ保持（ZDR）と同等の機密性を確保しつつ、自動化された監視システムが異常を検知した際のアラートのみを顧客に通知します。Anthropicの従業員による人間レビューを介さず、規制の厳しい金融・医療業界などの企業が自社基準で運用できる点が特徴です。2026年秋より段階的にロールアウトが開始されます。",
+    "topics": [
+      "Anthropic",
+      "AI安全法",
+      "データプライバシー",
+      "エンタープライズAI",
+      "クラウドセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Developing Enterprise Frontier Safeguards with our customers"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:53:40.526163+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI compiler に向けたとりくみ",
+    "url": "https://www.preferred.jp/ja/blog/tech/towards-ai-compiler",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが自律的にMN-Core向け計算カーネルを生成・最適化する「AI compiler」の実現に向けた、Preferred Networksの取り組みと独自DSL「LEIR」の開発について。",
+    "summaryBody": "Preferred Networks（PFN）は、AIエージェントをコード生成に利用し、独自プロセッサ「MN-Core」向けのコンパイルと最適化を自動化する「AI compiler」の開発を進めています。本記事では、31BパラメータのLLM「PLaMo 3 31B」をMN-Core L1000向けに全自動でポーティングし、エミュレータ上で推論結果の一致を確認した成果を報告しています。\n\n主なアプローチは以下の4点です：\n1. **CPT/SFT**: MN-Coreに特化したドメイン特化型LLMの訓練。\n2. **AI向け知識基盤**: エージェントの挙動を補強するためのドキュメント整備。\n3. **LEIR (DSL)**: Pythonで記述可能で、テンソル単位の演算やメモリレイアウト等のハードウェア制約を明示的に表現できる独自DSLの開発。\n4. **エージェントの全面適用**: 開発フローそのものにAIを組み込み、エージェントがつまずいた箇所をインフラ改善に繋げる循環サイクルの構築。\n\n特に、探索空間を制限しつつハードウェア情報を露出させる「LEIR」は、Triton等と同様の抽象化レベルを目指しており、人間が方針を出し、AIが詳細を探索・実装するという開発スタイルの変化が強調されています。",
+    "topics": [
+      "MN-Core",
+      "AIコンパイラ",
+      "LEIR",
+      "AIエージェント",
+      "PLaMo"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

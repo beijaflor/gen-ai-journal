@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:41:01.497664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeやCodexの完了通知に直前の返信を表示し、クリックで元の画面へ戻れるようにした",
+    "url": "https://blog.shibayu36.org/entry/2026/08/29/170916",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやCodexの完了通知をカスタマイズし、エージェントの返信内容を表示するとともに、通知クリックで該当のターミナルやペインへ自動復帰する仕組みを構築しました。",
+    "summaryBody": "Claude CodeやCodexを複数セッションで並行稼働させる際、標準の通知では「どのセッションが何を終えたか」が判別しづらく、元の画面への復帰も手間であるという課題を解決する手法を紹介しています。著者は`alerter`とシェルスクリプトを組み合わせ、各ツールのhooks（Claude CodeのNotification hookおよびCodexのStop hook）から自作スクリプトを呼び出す仕組みを構築しました。このスクリプトは、`jq`を用いてトランスクリプトやフック入力から最後のメッセージを抽出して通知本文に表示します。さらに、通知クリック時には起動元アプリ（ターミナルやClaude Desktop等）を特定してフォーカスを戻し、特に`herdr`を使用している場合は該当するペインまで自動でフォーカスする機能を実装しています。これにより、エージェントの処理状況を一目で把握し、即座に作業を再開できる効率的な開発環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "CLI Tools",
+      "Workflow Automation",
+      "herdr"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

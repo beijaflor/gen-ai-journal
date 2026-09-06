@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:41:15.100046+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "業務時間外もAIに働いてもらう話",
+    "url": "https://speakerdeck.com/colorful12/gyoumu-jikangai-mo-ai-ni-hatarai-te-morau-hanashi",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "PRにラベルを貼るだけで、夜間にClaude Codeが自動で細かいタスク（nit）を実装し、AIレビューを経てマージまで完結させる自動化の試み。",
+    "summaryBody": "GMOペパボのエンジニアによる、AIエージェント「Claude Code」とGitHub Actionsを組み合わせた開発自動化の事例紹介です。日中のコードレビューで発生した「後で直す」程度の細かい修正事項（nit）に対し、特定のラベルを付与しておくと、深夜にAIがそのPRの文脈を読み取って自動実装。そのまま既存の「AIレビュー＆自動マージ」のパイプラインに乗せることで、翌朝にはタスクが完了している状態を作り出しています。Issueを丁寧に書く手間を省き、レビューコメントという既存の情報を活用するアプローチが特徴です。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AIエージェント",
+      "オートメーション",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

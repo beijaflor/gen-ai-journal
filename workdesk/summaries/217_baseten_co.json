@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:11:38.621439+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM推論の効率的フロンティア：レイテンシとスループットのトレードオフ管理手法",
+    "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM推論における「効率的フロンティア」の概念に基づき、レイテンシとスループットのトレードオフを最適化する手法と、システム全体の性能を底上げする技術的アプローチを体系的に解説しています。",
+    "summaryBody": "LLM推論エンジニアリングにおける最適化の枠組みを、経済学の「効率的フロンティア」になぞらえて解説した記事です。推論技術は大きく2つのカテゴリに分類されます。\n\n1. **トレードオフの管理（フロンティア上の移動）**: バッチサイズの調整、テンソル並列（TP）やアテンションデータ並列（ADP）といった並列化戦略、そしてMXFP4等の高精度な量子化を用いて、レイテンシ（速度）とスループット（コスト）のバランスを特定のニーズに合わせて選択する手法です。\n2. **フロンティアの拡張（全体的な効率向上）**: カーネル最適化やランタイムの改善、EAGLE-3等の投機的デコード、さらにプリフィル（Prefill）とデコード（Decode）の処理を分離する「P/D disaggregation」により、トレードオフそのものを改善し、全ての指標で高いパフォーマンスを実現する手法です。\n\nこれらの技術を組み合わせることで、エージェントによるコーディングなど、特定のユースケースに最適な推論インフラを構築するための指針が示されています。",
+    "topics": [
+      "LLM推論",
+      "推論最適化",
+      "投機的デコード",
+      "量子化",
+      "分散推論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "The efficient frontier of LLM inference"
+  }
+}

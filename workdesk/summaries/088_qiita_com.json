@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:01:46.819897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeのキャッシュを使い倒す",
+    "url": "https://qiita.com/cvusk/items/7f149b4ef5e1e71dd039",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude APIのプロンプトキャッシュ機能を最大限に活用し、コストを最大90%削減しつつパフォーマンスを向上させるための設計・運用戦略を網羅した詳細ガイド。",
+    "summaryBody": "Claude APIの「プロンプトキャッシュ（Prompt Caching）」の仕組みと実戦的な活用法を解説した技術記事です。キャッシュの正体である「プレフィックスの再利用」の仕組みから、TTL（5分/1時間）の選択基準、コスト削減の損益分岐点、さらに「静的→動的」の一方向レイアウト設計の重要性を詳説しています。具体的には、最小トークン数の制約、バイト単位の一致条件、エージェントループでの実装、Batch APIとの併用による実質95%オフの実現方法まで言及。また、単なる節約術に留まらず、キャッシュによって浮いたリソースを多量のfew-shot例（quality investment）に充てる考え方や、CIでのキャッシュ破壊検知、max_tokens: 0によるプレウォームといった高度な運用プラクティスまで提案しています。2026年時点の最新モデル群を前提とした実測データに基づく、開発者必携の最適化バイブルです。",
+    "topics": [
+      "Claude API",
+      "LLM",
+      "Prompt Caching",
+      "コスト最適化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:02:17.852431+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grillingで詰まったら、推測せず分岐する - Algomatic Tech Blog",
+    "url": "https://tech.algomatic.jp/entry/2026/08/31/185832",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが要件定義（Grilling）で不確実性に直面した際、推測で進めず「学習」「質問票」「試作」の3つの外部セッションへ分岐させて根拠を固める手法を解説。",
+    "summaryBody": "AI駆動開発において、エージェントが曖昧な要件から未決定事項を特定する「/grilling」スキルを活用する際、回答できない問いに対して「推測」で埋めてしまうことが品質低下の大きな要因となります。本記事ではMatt Pocock氏が提案する「mattpocock/skills」をベースに、不確実性の原因を3分類し、それぞれ適切な専門セッションへhandoffするワークフローを提唱しています。具体的には、概念理解が不足していれば「学習（/teach）」、権限や知識がなければ人間への「質問票（/to-questionnaire）」、技術的検証が必要なら「試作（/prototype）」へと分岐させます。各セッションで得られた結論や根拠のみを元のメインセッションへ統合することで、開発コンテキストを清潔に保ちつつ、誤った前提による誤実装を未然に防ぐことが可能です。",
+    "topics": [
+      "AIエージェント",
+      "AgentSkills",
+      "AI駆動開発",
+      "要件定義",
+      "LLMプロダクト開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

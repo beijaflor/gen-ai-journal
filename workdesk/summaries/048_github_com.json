@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:12:49.033190+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる3D世界構築：Fable 5.1が切り拓く「コードとしての世界」",
+    "url": "https://github.com/PhiloLabs/fable51-worlds",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "プロンプトや画像から現実の地理データに基づいた3D空間をThree.jsコードとして生成し、ブラウザ上で歩行可能にするAIエージェント基盤。",
+    "summaryBody": "Fable 5.1は、テキスト、画像、動画といった任意の入力から、AIエージェント群が協調して3D世界を構築するシステムです。最大の特徴は、ピクセルを生成するのではなく「コード（Three.js）」として世界を出力する点にあります。システム内では、地理情報の調査、アセット生成、ランタイム構築、そして自動検証を行う複数のエージェントが稼働します。これにより、従来の生成AIでは困難だった「特定の建物の形状だけをコード修正で変更する」といった編集が可能になり、OpenStreetMapなどの現実のデータに基づいた高い再現性と検証可能性（Verifiable）を実現しています。リポジトリでは京都やサンフランシスコの事例が公開されており、Web標準技術のみで動作するデジタルツインの新しい形を提示しています。",
+    "topics": [
+      "Three.js",
+      "AI Agents",
+      "Procedural Generation",
+      "Digital Twin",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "PhiloLabs/fable51-worlds: worlds via code, from fable 5.1"
+  }
+}

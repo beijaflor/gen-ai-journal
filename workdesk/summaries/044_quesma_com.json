@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:13:47.423467+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMによるキノコ狩りの危険性：視覚モデルの識別精度ベンチマーク",
+    "url": "https://quesma.com/blog/mushroom-llm-vision/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新の視覚LLMを用いたキノコ識別ベンチマークの結果、Gemini 3.8 Flashが最高精度を記録したものの、依然として毒キノコを食用と誤認する致命的なリスクがあることが明らかになった。",
+    "summaryBody": "この記事では、最新のマルチモーダルLLMがキノコの画像をどの程度正確に識別できるかを、FungiTasticデータセット（約34万件の観察データ）を用いて検証しています。ベンチマークの結果、GoogleのGemini 3.8/3.7 Flashが、Claude Fable 5やGPT-5.6-Solといった主要モデルを上回る最高精度（正解率約65%）を記録しました。しかし、特筆すべきは安全性の欠如です。最高性能のGeminiであっても、毒キノコを食用と判定する「最も危険な誤認」が12%の割合で発生しており、一部のモデル（Qwen3.8 27Bなど）ではその割合は36%に達します。ドクツルタケ（Amanita virosa）やコレラタケ（Galerina marginata）といった猛毒種が外見の似た食用種と誤認されるケースが確認されており、著者は「AIの判断を信じてキノコを食べることは、肝臓移植が必要になるリスクを冒す行為である」と強く警告しています。AIは学習ツールとして活用すべきであり、生命に関わる判断を委ねるべきではないと結論付けています。",
+    "topics": [
+      "LLMベンチマーク",
+      "Gemini 3.8 Flash",
+      "視覚AI",
+      "AI安全性",
+      "コンピュータビジョン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Mushroom hunting with LLMs: what can go wrong?"
+  }
+}

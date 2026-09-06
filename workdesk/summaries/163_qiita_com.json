@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:43:28.513205+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Cloud の Data Agent Kit を Claude Code から使ってみた",
+    "url": "https://qiita.com/asahide/items/ac483a79cd8cf40977c7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeでGoogle CloudのData Agent Kitを検証し、BigQuery操作におけるスキルの有用性と導入・認証の注意点を明らかにした記事。",
+    "summaryBody": "Google Cloudの「Data Agent Kit」をClaude Codeに導入し、BigQueryの公開データセットを用いた実証実験の結果をまとめたレポートです。本ツールの実体はMCPサーバーではなく、Node.jsスクリプト経由でMCP Toolboxを一時起動する「スキル」群であり、Windows/WSL混在環境での導入にはパス長制限の回避や認証情報のUNCパス指定といった特有のノウハウが必要となります。検証の結果、キットを導入することでClaude CodeがBigQueryへのクエリ実行と結果取得を完結できることが確認されました。モデルが本来持つSQL生成能力に対し、不足していた「実行環境」と「認証」を補完できる点が最大のメリットです。一方で、プロンプトで明示的にデータ基盤を指定しないと既存のWeb検索やPython実行に流れてしまうエージェントの特性も示されており、実運用における指示の出し方の重要性についても考察されています。",
+    "topics": [
+      "Google Cloud",
+      "Data Agent Kit",
+      "Claude Code",
+      "BigQuery",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

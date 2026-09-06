@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:06:41.831913+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "IBM Bob に hooks 強制機能が来たので、OpenTelemetry で AI エージェントの利用ログを取れるようにした",
+    "url": "https://qiita.com/r-nakayamasan/items/35acc5252c1fb2574884",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "IBM Bobの新機能「EnforcedHooks」を活用し、AIエージェントのプロンプトや操作ログをOpenTelemetry形式で統合的に記録・管理する実装方法の解説。",
+    "summaryBody": "IBM Bob 2.0.2 で追加された「EnforcedHooks」グループポリシー機能を利用し、AIエージェントの利用状況を透過的に監査・監視する仕組みについて解説しています。既存のOSSである`opentelemetry-hooks`にBob用アダプターを実装することで、依頼文、ツール実行内容、ファイル変更の差分、エージェントの最終応答をOpenTelemetryのトレースおよびログとして収集可能にしました。\n\n主な特徴は以下の通りです：\n1. **強制適用**: 管理者が指定したhook登録を全ユーザーのIDEに強制配布し、利用者による上書きや削除を防止します。\n2. **柔軟なプライバシー制御**: プロンプト本文の取得範囲を、ハッシュのみ、マスキング済み、全文取得などの段階から選択可能です。\n3. **実装の工夫**: Bob特有のhookペイロード（`tool_input`, `last_assistant_message`等）を標準的なAIセマンティックコンベンションに変換し、モデルへの干渉を防ぐためにstdout制御を行っています。\n\n記事内では具体的な設定ファイル（otel_config.json）の構成、MDMやレジストリを用いた組織展開の手順、パフォーマンス影響（1ホックあたり約150ms）についても詳細に述べられています。",
+    "topics": [
+      "IBM Bob",
+      "OpenTelemetry",
+      "AIエージェント",
+      "オブザーバビリティ",
+      "ガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

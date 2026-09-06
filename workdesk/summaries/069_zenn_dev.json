@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:06:15.454723+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "無音で文字起こしすると「ご視聴ありがとうございました」になる理由を検証",
+    "url": "https://zenn.dev/trtd56/articles/994f43aebd2057",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Whisperが無音時に特定の定型句を出力する「幻覚」現象について、学習データ、デコーダ構造、VADの効果といった多角的な視点から実験的に原因を究明した検証記事。",
+    "summaryBody": "OpenAIのWhisperモデルが音声のない区間で「ご視聴ありがとうございました」といった出力を生成する現象を、実証実験に基づいて解説しています。主な結論として、1. YouTube等の動画字幕を学習したデータに由来すること（言語設定を英語にすると同じ意味の英語が出力される）、2. デコーダの言語モデルが「音響的根拠のない場所」で高頻度の定型句を生成していること、3. モデルサイズが大きいほど流暢な幻覚になりやすいことが示されています。また、CTCモデル（wav2vec2）ではこの現象が発生しないことや、標準の抑制ロジックが「確信を持った幻覚」を素通りさせてしまう構造、そしてVAD（音声区間検出）が咳や笑い声で誤判定されるリスクなど、実務上の注意点についても深く掘り下げています。",
+    "topics": [
+      "Whisper",
+      "ASR",
+      "ハルシネーション",
+      "音声認識",
+      "ディープラーニング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

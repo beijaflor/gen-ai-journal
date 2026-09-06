@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:45:54.452386+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiro５兄弟のいまどきのセキュリティ基礎知識 ― Kiro CLIとDraw.io MCPで信頼境界を描くまで",
+    "url": "https://qiita.com/kamogashira/items/519a52614ba113bfe9cb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント「Kiro」シリーズの5つの形態におけるセキュリティ設計の差異と、Draw.io MCPを用いた信頼境界図の自動生成手法を詳しく解説した技術記事。",
+    "summaryBody": "Kiroシリーズ（IDE, CLI, Web, Mobile, Crew）のセキュリティ体系を整理し、現在進行中の「Unified Agent Harness」への統合プロセスと権限管理（permissions.yaml）の実態を解説しています。特に、常駐型エージェントであるKiro Crew特有のガバナンス層（Plane A）やOSサンドボックスの仕組み、判定プロセスのバイパス可能性といった深い技術的洞察が含まれています。また、調査リポジトリに蓄積した根拠情報をベースに、Kiro CLIとDraw.io MCP Serverを組み合わせて、論理・物理構成図やシーケンス図を一貫した配色と番号で自動生成する実践的なワークフローを提唱しています。「サンドボックスだから安全」という過信を排し、各実行環境でどの強制点を通るかを確認する重要性を説いています。",
+    "topics": [
+      "Kiro",
+      "AI Agent",
+      "AWS",
+      "Cybersecurity",
+      "Draw.io"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

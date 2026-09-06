@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:43:12.876361+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "肥大化し続けるCLAUDE.md",
+    "url": "https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「CLAUDE.md」が肥大化する問題を解決するため、フック機能を用いてファイルサイズを自動監視し、上限超過時にルールを他ファイルへ自動整理させる仕組みを紹介しています。",
+    "summaryBody": "Claude Codeのプロジェクト指示書である「CLAUDE.md」は、開発が進むにつれて肥大化しやすく、コンテキストの消費や指示の遵守率低下を招きます。本記事では、この問題を解決するためにClaude Codeの「フック機能（PostToolUse）」を活用した自動整理術を解説しています。\n\n具体的には、ファイル書き込みが発生した瞬間にシェルスクリプトを走らせ、CLAUDE.mdのバイトサイズが設定値を超えた場合にアラートを出す仕組みを構築します。単にサイズを制限するだけでなく、上限を超えた際にはClaudeに対して「削除ではなく、docs/フォルダや.claude/rules/へルールを移動し、本体には参照用の1行のみを残す」よう指示を出すのがポイントです。これにより、公式が推奨する200行以下という目安を機械的に維持しつつ、重要な情報の消失を防ぎます。筆者の検証では、導入後に181.8%の増加傾向にあったファイルサイズが1.2%の増加に抑えられるなど、リバウンド防止に高い効果が確認されています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "LLM",
+      "自動化",
+      "開発生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

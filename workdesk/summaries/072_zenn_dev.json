@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:05:29.799024+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google提唱の「SKILL.state」：AIエージェントの会話履歴を「型定義された状態」に置き換える新手法",
+    "url": "https://zenn.dev/knowledgesense/articles/ad123283bdea26",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "長時間稼働するAIエージェントの精度低下を防ぐため、会話履歴を破棄し、型定義された構造化データ（JSON）として「状態」のみを管理・更新する手法「SKILL.state」の解説。",
+    "summaryBody": "Googleとパデュー大学の研究者が提案した「SKILL.state」は、AIエージェントのコンテキスト膨張問題を根本から解決するアプローチです。従来のAIエージェントは過去の履歴を全てコンテキストに詰め込むため、ステップ数が増えるほど精度が劣化し、トークン消費が激増する課題がありました。本手法では、タスクごとに「状態（State）」の型（JSONスキーマ）を事前定義。LLMには履歴を渡さず、「固定指示」「現在のState」「最新の観測」の3点のみを入力します。LLMは行動と共に「Stateの更新パッチ」を出力し、履歴を破棄して常に最新のStateのみを保持します。実験では、200ステップのタスクで従来手法が精度を落とす中、SKILL.stateは高精度を維持し、トークン消費を最大98%削減。ノイズ混入環境や外部からの状況変化にも強い、極めて実用的な設計となっています。",
+    "topics": [
+      "AIエージェント",
+      "SKILL.state",
+      "コンテキスト管理",
+      "状態遷移",
+      "LLM効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

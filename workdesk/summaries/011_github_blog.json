@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:22:02.154347+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングのコスト効率を品質を維持しつつ向上させるGitHubの取り組み",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "個別のツール呼び出しの短縮ではなく、タスク全体の完了を最適化することで、GitHub Copilotの品質を落とさずにコスト効率を高める4つの具体的なエンジニアリング手法を紹介しています。",
+    "summaryBody": "GitHubのエンジニアリングチームが、GitHub CopilotにおけるAIコーディングの効率化手法を解説しています。最大の教訓は「ローカルメトリックの罠」を避けることです。つまり、個別のツール応答（トークン数）を短くしても、必要な情報が欠けてエージェントが再試行（リカバリー）を行えば、タスク全体では逆にコストが増大します。これを踏まえ、同社は4つの施策を実施しました。1. ソースコード以外のビルド・テストログを選択的に圧縮しつつ復元パスを用意する「選択的出力圧縮」、2. 現代のエージェントが使用しなくなった行番号プレフィックスなどの「不要なフォーマットの削除」、3. メタプロンプティングを用いて挙動を維持したまま指示文を半減させる「プロンプトの軽量化」、4. バックグラウンド処理の結果をモデルに直接渡すことで余計な確認ターンを省く「オーケストレーションの最適化」です。これらの変更はオフラインベンチマークとオンライン実験で検証され、品質を維持しながら大幅な推論コスト削減を実現しました。",
+    "topics": [
+      "GitHub Copilot",
+      "AI Agents",
+      "LLM Optimization",
+      "Cost Engineering",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "How we make AI coding more cost efficient without sacrificing task quality"
+  }
+}

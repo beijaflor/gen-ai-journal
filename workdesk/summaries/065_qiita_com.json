@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:07:06.431826+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにアンケートの生データを丸投げしたら、対応表を読んで前処理を一瞬で終わらせてくれた話",
+    "url": "https://qiita.com/IkuyaM/items/655665c108a1972f04ca",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Exploratoryの「AI データ」機能を使い、コード化されたアンケートの生データと対応表から自動でラベル変換や構造把握を行い、数時間の前処理を数分で自動化した体験記。",
+    "summaryBody": "アンケート集計において最も手間のかかる「コード値（1, 2...）を回答ラベルに変換する」前処理を、AIエージェントを用いて自動化した事例の紹介。データ分析ツール「Exploratory」の新機能を使用し、CSVデータと対応表を読み込ませるだけで、AIが項目の関係性や質問タイプ（単一回答/複数回答/数値等）を自動判別してRスクリプトを生成する。単なる一括置換ではなく、対応表の不備（空欄の補完など）も自律的に判断して処理を行う。作業内容がスクリプトとして残るため再現性が高く、同様のデータ形式に対して「スキル」として再利用可能な点が大きなメリットである。",
+    "topics": [
+      "データ分析",
+      "AI活用",
+      "Exploratory",
+      "アンケート集計",
+      "データ前処理"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

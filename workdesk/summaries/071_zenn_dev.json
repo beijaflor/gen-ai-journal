@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:05:46.823564+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PRレビューもエラー調査も定額で自動化する、Claude Codeのroutine活用実例",
+    "url": "https://zenn.dev/atamaplus/articles/6be03483c0110b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのroutine機能を活用し、定額プランの範囲内でPRレビューやエラー調査などの開発周辺業務を自動化する具体的な8つの手法を紹介しています。",
+    "summaryBody": "Claude Codeの新機能「routine」（スケジュール、GitHubイベント、APIトリガーによる自動実行）を実業務に導入したatama plus社の事例紹介です。主な活用例として、毎朝の利用枠確保、E2Eテストの自動調査と再試行、Datadog連携によるエラー一次調査、PRの背景解説作成や自動コードレビューなどが挙げられています。特に、GitHub Actions等の従量課金APIを避け、定額プランの範囲内で高度な自動化を実現する運用上のメリットが強調されています。一方で、routineが個人アカウントに紐づくといった共有面での課題と、それをリポジトリ内のskill参照で補完する工夫についても触れており、コーディングエージェントをチーム開発に組み込むための実践的なガイドとなっています。",
+    "topics": [
+      "Claude Code",
+      "routine",
+      "自動化",
+      "業務効率化",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

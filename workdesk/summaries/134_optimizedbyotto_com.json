@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:50:14.434996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIハイプとソフトウェアエンジニアリングの現実：オープンソース界隈でのAI禁止の背景",
+    "url": "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMが生成する一見正しく見えるが誤ったコード（AI slop）が開発者の負担を増大させている現状を受け、DebianやLinuxカーネル等の主要OSプロジェクトでAI利用の制限や禁止が進んでいる理由を技術的・倫理的視点から考察している。",
+    "summaryBody": "### 概要\n金融市場やビジネス界でのAI熱狂とは対照的に、ソフトウェアエンジニアリングの最前線ではAIへの警戒感が高まっています。Debian、GCC、Gentooなどの著名なオープンソースプロジェクトでは、AI生成によるコードやドキュメントの投稿を禁止、あるいは厳格に制限する動きが加速しています。\n\n### 主な論点\n1. **情報の非対称性と「AI Slop」**: LLMは専門知識のないユーザーが「もっともらしいゴミ（AI slop）」を大量生産することを可能にしました。これにより、シニア開発者がその誤りを修正・検証するために膨大な時間を奪われるという「時間の非対称性」が生じています。\n2. **擬人化と温度設定の誤解**: 人間はLLMを擬人化して過信しがちですが、本質的には統計的な予測マシンに過ぎません。温度（Temperature）設定による確率的な出力であることを理解し、盲信を避けるべきだと説いています。\n3. **ベンチマークの限界**: SWE-bench等の高いスコアは必ずしも実用性を保証しません。エンジニアリングにおいては「1/3が間違っている」ツールは、修正コストが作成コストを上回るため、極めて非効率になる場合があります。\n\n### 結論\n深い洞察力とオープンソースへの多大な貢献で知られるOtto Kekäläinen氏は、AIを全否定するのではなく、人間の判断が及ぶ範囲でのみ利用すべきだと主張しています。同氏の技術に対する真摯な姿勢と、コミュニティの持続可能性を重視する視点は、現代のAI狂騒曲において極めて重要な指針となります。",
+    "topics": [
+      "LLM",
+      "オープンソース",
+      "Debian",
+      "ソフトウェアエンジニアリング",
+      "AI倫理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "The growing divide between AI hype and software engineering reality"
+  }
+}

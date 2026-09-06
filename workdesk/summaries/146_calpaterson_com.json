@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:47:21.923549+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントの記憶をファイルフォーマットとして定義する：ポータブルな「Memoryfield」の提案",
+    "url": "https://calpaterson.com/memoryfields.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの記憶を複雑なシステムやAPIではなく、MarkdownとSQLiteをベースとした「Memoryfield」というシンプルなファイルフォーマットとして扱うべきだという提案。",
+    "summaryBody": "著者のCal Paterson氏は、現在のAIエージェントの記憶システムがベンダーロックイン、過度な複雑さ、あるいは文脈の欠如（ナレッジグラフ化による断片化）に陥っていると指摘しています。これに対し、記憶をプロセスではなく「データ」として捉える「Memoryfield」形式を提唱しています。\n\n### 主な設計思想と特徴\n1. **プロンプトによる記述（Prose）**: 記憶を事実の断片ではなく、エージェント自身がMarkdown形式で記述した文章として保持します。これにより、複雑なチャンク分割や要約プロセスを不要にします。\n2. **セマンティック・ジャンプ**: ナレッジグラフを辿る（トラバーサル）手法は推論コストと時間がかかるため、ベクトル検索を用いて必要なページを一括で取得する手法を採用しています。\n3. **低メカニズム（Low Mechanism）**: 独自のAPIや複雑なデータベースインターフェースを避け、エージェントが既存のスキル（Bash、SQL、Markdown操作）をそのまま活かせるようにします。\n4. **オープンでポータブル**: 記憶はzip形式（Markdown群 + SQLiteベクトルインデックス）で配布・共有可能であり、S3やローカル、HTTPなどトランスポート層を選びません。\n\n「フローチャートを見せるのではなく、テーブル（データ構造）を見せよ」という思想に基づき、モデルの進化に合わせてエージェントが自律的に活用方法を拡張できる、シンプルかつ堅牢な記憶のあり方を提示しています。",
+    "topics": [
+      "AI Agents",
+      "Memory Systems",
+      "RAG",
+      "Vector Search",
+      "Markdown"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agent memory as a file format"
+  }
+}

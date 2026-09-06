@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:08:23.543541+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 Astra ベンチマーク：Artificial Analysis による評価結果",
+    "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6 Astraはコーディング能力で劇的なトークン効率の向上を達成した一方、2.5倍の価格設定により汎用推論のコスト効率は前世代モデルを下回る結果となりました。",
+    "summaryBody": "Artificial AnalysisによるGPT-6 Astraの詳細なベンチマーク結果が公開されました。主要な分析結果は以下の通りです。\n\n- **コーディング・エージェントの進化**: 独自のCoding Agent IndexにおいてFable 5に匹敵する性能を達成。特筆すべきはトークン効率で、GPT-5.6 Solの約3倍、Claude Opus 5の約5倍の効率性を誇り、タスクあたりのコストを大幅に抑えています。\n- **知能指数とコストのジレンマ**: Intelligence IndexのスコアはGPT-5.6 Solと同等（61）に留まりました。価格が100万トークンあたり入力$10/出力$50と、前世代比で2.5倍に設定されたため、汎用タスクのコスト効率は低下しています。\n- **信頼性と幻覚の改善**: 幻覚率が92%から51%へと劇的に減少。同時に正解率も4ポイント向上しており、AA-Omniscience評価で大きな飛躍を見せました。また、長期的なプロジェクトを評価するAA-Briefcaseでも分析品質が大幅に向上しています。\n- **一部性能の退行**: 数学や科学の評価セットでは改善が見られる一方、GDPval-AA（経済的価値タスク）で約80 Eloの低下が見られたほか、顧客サポートや長文推論など、一部のドメインで性能の低下（リグレッション）が確認されています。\n\n総評として、Astraはエージェント特化型のタスクで真価を発揮するものの、汎用的な知能とコストのバランスにおいては評価が分かれるモデルとなっています。",
+    "topics": [
+      "OpenAI",
+      "GPT-6 Astra",
+      "ベンチマーク",
+      "LLM",
+      "コスト効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Benchmarking GPT-6 Astra | Artificial Analysis"
+  }
+}

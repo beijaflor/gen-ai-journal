@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:39:18.344961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "6ヶ月間AIエージェントのみでコードを書き続けた記録：エンジニアリングの本質への回帰",
+    "url": "https://blog.exe.dev/engineering-with-ai",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自らコードを書くことを禁じ、半年間AIエージェントのみで開発を続けた著者が、設計・制約・意思決定というエンジニアリングの本質的な役割への変化を語る。",
+    "summaryBody": "著者は2024年2月から「コードを一行も手書きしない」というルールを課し、開発プロセスを完全にAIエージェント主体へと移行させた体験を詳述している。初期の「Vibe Coding（雰囲気による開発）」がもたらすメンテナンス不能なコードの罠を指摘し、代わりにアーキテクチャ、インターフェース、制約を人間が定義する「Agentic Engineering」の重要性を説く。並列に動く複数のエージェントを管理するために、独立した使い捨てのLinux VM（exe.dev）と独自の管理ツール「botd」を活用。テストの役割が実装の検証から不変条件（Invariants）の担保へとシフトし、ピアレビューが形骸化する一方で、設計段階での議論がより重要になったと述べている。最終的に、コードの細部への精通は失われたものの、より高次のシステム設計と「何を構築すべきか」という戦略的な意思決定に集中できるようになったと結論づけている。",
+    "topics": [
+      "AIエージェント",
+      "AIネイティブ開発",
+      "ソフトウェアエンジニアリング",
+      "LLM",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "Six Months of Writing Code Exclusively With Agents"
+  }
+}

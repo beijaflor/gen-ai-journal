@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:56:25.133349+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティックAIに強固なアイデンティティ基盤が必要な理由：NISTによる提言",
+    "url": "https://www.nist.gov/blogs/cybersecurity-insights/back-future-why-agentic-ai-needs-strong-identity-foundation",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "NISTは、AIエージェントの普及において認証情報の共有や静的トークンの利用といった旧来のIAM（アイデンティティ管理）の不備が再燃していると指摘し、既存および新興のセキュリティ標準に基づく強固な基盤構築を求めています。",
+    "summaryBody": "NIST（米国国立標準技術研究所）の専門家は、エージェンティックAIの導入が急進する中で、セキュリティよりも機能開発とROIが優先される傾向に警鐘を鳴らしています。記事では、AIエージェントにおける主要なIAM（アイデンティティ・アクセス管理）の課題として、「ユーザー認証情報の共有による責任の不透明化」「静的で長寿命なAPIキーの使用」「広すぎるアクセス権限（最小特権原則の欠如）」などを挙げています。\n\nこれらの課題を解決するために、NISTはOAuth 2.0やSPIFFEといった既存の強固な認証プロトコルの活用を推奨しています。さらに、エージェントが動的にツールを切り替える際の権限管理に対応するWIMSEやAuthZen、Rich Authorization Requests (RAR)といった新興規格の重要性についても言及しています。また、「人間が介在する（Human-in-the-Loop）」モデルが「同意疲れ」を引き起こし、かえってセキュリティを形骸化させるリスクについても論じており、AIエージェントを第一級のエンティティとして扱うゼロトラスト・アーキテクチャへの移行を提唱しています。",
+    "topics": [
+      "Agentic AI",
+      "IAM",
+      "Cybersecurity",
+      "Zero Trust",
+      "NIST"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Back to the Future: Why Agentic AI Needs a Strong Identity Foundation"
+  }
+}

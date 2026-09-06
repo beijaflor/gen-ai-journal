@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:59:45.500113+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeがコミットに埋め込む「Claude-Session」URL、リポジトリに残っていませんか？",
+    "url": "https://zenn.dev/khasegawa/articles/985d970d6cc4a2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeがコミットメッセージに自動挿入するセッションURLのリスクと、GitHub CLIを用いた一括検索方法、および設定による無効化手順の解説。",
+    "summaryBody": "Claude Codeの特定のバージョンや環境において、コミットメッセージに会話セッションへのURL（Claude-Session）が自動で付与される挙動が確認されました。このURLは閲覧にログインが必要であるものの、公開リポジトリの履歴に永久に残るため、認可制御の脆弱性が生じた際のリスクやプライバシーの観点から望ましくありません。本記事では、GitHub CLI (`gh api`) を用いて自身のリポジトリから該当するコミットを横断的に検索する方法を提示。また、v2.1.183で追加された `attribution.sessionUrl` 設定を `false` にすることで、このセッションURLの挿入を抑制できる解決策を解説しています。公式ドキュメントに未記載の項目であるため、ユーザーへの注意喚起となる内容です。",
+    "topics": [
+      "Claude Code",
+      "GitHub",
+      "Git",
+      "セキュリティ",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

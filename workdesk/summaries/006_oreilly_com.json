@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:23:09.824244+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Dark Code Factory」におけるユーザーストーリーの真のコスト",
+    "url": "https://www.oreilly.com/radar/what-a-user-story-actually-costs-in-a-dark-code-factory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自律型SDLCフレームワークを用いた開発において、1ユーザーストーリーの出荷コストが約11ドルであることや、コスト最適化の鍵がキャッシュ管理にあることを実データに基づき解説しています。",
+    "summaryBody": "著者のFrançois-Xavier Martin氏が、Claude Codeを基盤とした自律型SDLCフレームワークを用いて、実際の開発プロジェクトから得られたコストデータを詳細に分析したレポートです。主な結論として、1ユーザーストーリーあたりの平均コストは10.88ドル（API換算）であり、ストーリーポイントとコストには必ずしも相関がないことが示されました。特筆すべきはトークン消費の構造で、全トークンの95.4%が「キャッシュ読み取り」であり、コストの77%がキャッシュ関連によって占められています。このことから、エージェント型開発におけるコスト最適化の本質は、プロンプトの推敲（短縮）ではなく、コンテキストの規律やキャッシュ層の管理にあると指摘しています。また、リワークや失敗によるコストは全体の約13%に留まり、AIによる自動化工場を運用する上での経済的な実現可能性を論じています。",
+    "topics": [
+      "AIエージェント",
+      "SDLC",
+      "コスト分析",
+      "Claude",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "What a User Story Actually Costs in a Dark Code Factory"
+  }
+}

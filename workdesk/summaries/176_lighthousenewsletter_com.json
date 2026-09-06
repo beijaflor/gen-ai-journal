@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:40:22.904062+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "6つのRAGアーキテクチャ：過剰エンジニアリングを回避するための実装ガイド",
+    "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "RAG構築における過剰エンジニアリングを警鐘し、データの特性や要件に応じた6つのアーキテクチャの選択基準と、全文検索から始めるMVPアプローチの利点を解説する。",
+    "summaryBody": "RAG（検索拡張生成）の実装において、多くの開発者が最初からベクトル検索や高度なパイプラインを導入し、過剰に複雑化させている現状を指摘。適切な手法を選択するための5つの決定要因（データの鮮度、コーパスの特性、クエリパターン、規模とパフォーマンス、チームの能力）を提示している。具体例として、最もシンプルな「MVP（最小機能製品）」構成である全文検索（BM25等）のみのアーキテクチャを推奨。これはAPIコストが不要でデバッグが容易、かつチャンク戦略の複雑さを回避できるため、多くのユースケースで非常に有効であるとしている。盲目的に最新技術を追うのではなく、ビジネス課題に対して最適なツールを選ぶエンジニアリングの基本原則をRAGに適用することを提案している。",
+    "topics": [
+      "RAG",
+      "LLM",
+      "Architecture",
+      "Information Retrieval",
+      "System Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "6 RAG Architectures — and How to Avoid Over-Engineering"
+  }
+}

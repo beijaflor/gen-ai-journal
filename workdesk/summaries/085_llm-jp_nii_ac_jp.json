@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:02:30.378599+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM-jp-4-VL 9Bリリース",
+    "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-vl-9b/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LLM-jpは、推論特化型モデルをベースにした新たな視覚言語モデル「LLM-jp-4-VL 9B」を公開し、ライセンス精査と品質向上を施したデータセット「RefinedVision」も併せて提供開始しました。",
+    "summaryBody": "LLM-jpプロジェクトは、国産の大規模言語モデル「llm-jp-4-8b-thinking」をベースとした視覚言語モデル（VLM）である「LLM-jp-4-VL 9B」をリリースしました。本モデルは、従来のbeta版からベースLLMの刷新や、学習ステップ数の1.33倍増加、データセットの改良が行われています。特に注目すべきは、オープンソースAIの定義に基づき、ライセンス上の懸念や品質に問題のあるデータを排除・再生成した約1,200万事例の英語マルチモーダルデータセット「RefinedVision」の構築です。評価の結果、beta版と比較してテキストのみのタスクや高難度図表理解（HakushoBench等）の性能が大きく向上しました。一方で、Qwen3.5-9Bなどの海外勢の最先端モデルとは依然としてSTEM領域等で性能差があることも明示しており、再現性と透明性を重視した開発姿勢が示されています。モデル、データセット、評価フレームワークはHugging FaceおよびGitHubで公開されています。",
+    "topics": [
+      "LLM-jp",
+      "VLM",
+      "マルチモーダル",
+      "オープンソース",
+      "RefinedVision"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:41:57.897989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "会話セッションを邪魔せずに Claude Code / Codex / Cursor を外部イベントで動かすCLIの作り方まとめ",
+    "url": "https://zenn.dev/coji/articles/artifactshare-preview-claude-codex-cursor",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントとの対話を維持しつつ、外部からの指摘をトリガーに編集タスクを自動実行させるための、各エージェント特有の待機・起動プロトコルの実装手法を解説。",
+    "summaryBody": "開発中のツール「Artifact Share」のCLIに、ブラウザ上の指摘をAIエージェントへ自動反映させる `preview` コマンドを実装した際の知見をまとめた記事です。最大の特徴は、エージェントの会話セッションを占有せずに「外部イベント（ユーザーの指摘）」を待機し、届いた瞬間に編集を開始させる仕組みです。Claude Codeのバックグラウンドタスク完了通知、Codexのメッセージキュー、CursorのACP（Agent Client Protocol）など、エージェントごとに異なる再開手段を調査・実装した具体的な手法を紹介しています。また、常駐デーモンを排した設計や、編集による要素位置の変化に対応するアンカー管理など、実用的なAIエージェント統合の設計判断も詳述されています。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "Codex",
+      "AIエージェント",
+      "CLI開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    }
+  }
+}

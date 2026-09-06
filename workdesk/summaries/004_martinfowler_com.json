@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:23:43.479792+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードレビューはもう不要なのか？ AI時代の開発プロセス再考",
+    "url": "https://martinfowler.com/rachels-ramblings/code-review.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるコード生成の急増でボトルネック化したコードレビューを見直し、ペアプログラミングや共同設計による「フィードバックのシフトレフト」を提唱する論考。",
+    "summaryBody": "ThoughtworksのCTO、Rachel Laycock氏による、AI時代のソフトウェア開発プロセスに関する提言です。AIの普及により人間がレビューしきれないほどのコードが生成される中、従来の「プルリクエスト（PR）」を中心とした開発サイクルが限界に達していると指摘しています。氏は、これまでコードレビューが担ってきた「知識共有」「教育」「アーキテクチャの整合性」といった機能を、コード完成後のレビューではなく、開発のより早い段階（シフトレフト）に移動すべきだと主張します。\n\n具体的には、ペアプログラミングやモブプログラミング、ホワイトボードを用いた共同設計、実行可能なフィットネス関数による制約の自動検証などを推奨しています。人間が全ての変更を検査するのではなく、セキュリティ境界や重大なアーキテクチャ変更など、重要な例外のみを人間がレビューする「Review by Exception」への移行を促しています。AIがコードを10倍生成しても、人間がレビューで詰まれば組織の生産性は向上しません。開発者は「diff（差分）」の確認に追われるのではなく、システム全体の理解と意図の共有に注力すべきであると結論づけています。",
+    "topics": [
+      "コードレビュー",
+      "AI支援開発",
+      "ペアプログラミング",
+      "シフトレフト",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Maybe We Shouldn't Be Reviewing All This Code"
+  }
+}

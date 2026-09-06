@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:51:54.579020+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "数十万時間の音声を現実的なコストでLLMにより24時間監視するまで ― ピグパーティのAIボイス監視システム",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/65422/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "サイバーエージェントが、LLMのModel Cascade構成と音声前処理技術を組み合わせ、月数十万時間のボイスチャットを低コストかつ高精度に監視する24時間体制を構築した事例。",
+    "summaryBody": "アバターSNS『ピグパーティ』における音声監視の自動化プロセスを詳細に解説した記事です。従来の有人監視の限界を、AIを活用した「Model Cascade（階層型モデル）」構成で解決しています。具体的には、1. Silero VADによる無音除去、2. ランダムサンプリング、3. 音声の倍速処理という3つの前処理を組み合わせることで、STT（音声文字起こし）に渡すデータ量を最大約90%削減しました。判定フェーズでは、低コストな軽量モデルから精密な高性能モデルへと段階的に判定を回すことで、LLMコストと有人レビュー量を共に約7割削減しつつ、レビューキュー内の違反的中率を約3.6倍に向上させています。また、単純な二値判定ではなく「スペクトラムスコアリング」を採用し、曖昧な発言をスコア化することで運用基準の柔軟な調整を可能にしています。最終判断は人が行う人間中心の設計であり、大規模サービスにおける生成AI実装の現実的かつ高度なプラクティスが示されています。",
+    "topics": [
+      "LLM",
+      "音声認識 (STT)",
+      "Model Cascade",
+      "コミュニティ監視",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:07:41.174287+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ゲーム制作における Herdrとgit worktreeの自立型マルチエージェント環境",
+    "url": "https://qiita.com/yuji_yasuhara/items/99c589264a006658a15a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Herdrとgit worktreeを活用し、AIエージェントの役割分担と実機検証を仕組みで自動化する、Godot向け自立型マルチエージェント開発環境の構築ガイド。",
+    "summaryBody": "複数のコーディングエージェントを並列稼働させてGodotゲームを開発する際、コードの破綻よりも「誰が何をしているか分からない」といった調整の破綻が最大の課題となる。本記事ではこれを解決するため、Herdr（エージェント用ターミナル管理ツール）とgit worktree（作業環境の隔離）を基盤とした自律型マルチエージェント環境を提案している。独自ツール「MyKanban」により、計画とレビューを担うリーダーと、実装と証拠に基づく報告を行うワーカーの責務を厳格に分離。特に、ワーカーが自己採点できないよう完了判定をリーダーに限定するワークフローや、サンドボックス内のワーカーが実機の見た目を確認するためのGUIブローカー「GodotPlayOnCodexOnHerdr」の仕組みは、実戦的なエージェント運用の知見に満ちている。記事内にはMyKanbanの仕様や各種スキルの全文が公開されており、再現可能なレベルで解説されている。",
+    "topics": [
+      "Herdr",
+      "git worktree",
+      "Claude Code",
+      "Godot",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

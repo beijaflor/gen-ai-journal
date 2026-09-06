@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:46:38.367592+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeとレトロコンピューティング：QIC-117テープドライブのエミュレーション",
+    "url": "https://dmitrybrant.com/2026/08/23/claude-x-retrocomputing-emulating-a-qic-117-tape-drive",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LLM（Claude）を活用してQIC-117規格のテープドライブを解析・エミュレートし、86Box上でレトロなバックアップ環境を再現したプロジェクトの記録。",
+    "summaryBody": "Dmitry Brant氏が、PCエミュレータ「86Box」においてQIC-117テープドライブ（Colorado 250やIomega Ditto等）のエミュレーションを実現した過程を詳述しています。最大の特徴は、仕様書に記載されていないメーカー固有の診断コマンドを解析するためにClaude 3.5 Opusを活用した点です。Claudeを用いてドライブのROMを逆アセンブルし、Intel 8051やZilog Z8向けのカスタムデコーダーを生成させることで、複雑なハードウェア挙動を解明しました。これにより、DOSやWindows 95時代のバックアップソフトを仮想環境で完全に動作させることが可能になり、デジタル保存（Digital Preservation）の新たなツールを提供しています。GitHubでは解析結果や仮想テープイメージ作成スクリプトも公開されています。",
+    "topics": [
+      "86Box",
+      "レトロコンピューティング",
+      "Claude",
+      "エミュレーション",
+      "リバースエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Claude × retrocomputing: emulating a QIC-117 tape drive"
+  }
+}

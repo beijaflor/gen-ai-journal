@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T22:11:56.943204+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント標準規格の必要性：同じフォームを4回開発するのはもうやめよう",
+    "url": "https://uxdesign.cc/the-call-for-an-agentic-standard-we-need-to-stop-shipping-the-same-form-four-different-times-be5b9d40e370",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントのUI実装における各プラットフォームの断片化が開発コスト（表面税）を増大させていると指摘し、中立なUI標準規格「A2UI」の必要性を説く論評。",
+    "summaryBody": "AIエージェントがUIを生成・表示する際、ChatGPT、Claude、Slack、Teamsといったプラットフォームごとに独自のレンダリング手法が存在し、開発者は同じUIを何度も作り直す「表面税（Surface Tax）」を強いられています。著者はこの現状を1990年代のブラウザ戦争になぞらえ、Googleが提唱する「A2UI（Agent-to-UI）」という宣言的JSONフォーマットによる標準化を提言しています。\n\n記事では現在のUIレンダリングを4つの手法（A2UI、サンドボックス化されたHTML、ベンダー独自の宣言的JSON、生成コード）に分類。MicrosoftのAdaptive CardsやSlackのBlock Kitが証明した「構造を送り、クライアントが描画する」モデルの有効性を認めつつ、特定のベンダーに依存しない中立なカタログ定義が重要であると説いています。最終的に、個別の画面を設計するのではなく、エージェントが必要とする「12の基本コンポーネント」のカタログを作成し、マルチプラットフォームに対応できる体制を整えるべきだと主張しています。",
+    "topics": [
+      "A2UI",
+      "Agentic UI",
+      "Design Systems",
+      "MCP (Model Context Protocol)",
+      "UI Standards"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "The call for an agentic standard: We need to stop shipping the same form four different times"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:20:26.235190+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Quine Clique: 51 言語が互いに出力しあう巨大 multi-quine",
+    "url": "https://mametter.hatenablog.com/entry/2026/09/02/095452",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rubyや難解言語を含む51種類のプログラミング言語が、互いのソースコードを自在に再生成し合える巨大な「multiquine」プロジェクトの紹介。",
+    "summaryBody": "プログラミング言語の魔術師として知られる遠藤侑介（mame）氏が、51言語が互いを出力しあう驚異的なQuineの集合体「Quine Clique」を発表しました。通常のQuineは自分自身を出力しますが、本プロジェクトは51の言語（Ruby, Python, Rust, Go, Brainfuck, Piet等）がどの組み合わせでも互いのコードを出力できる「完全グラフ（クリーク）」のような関係性を構築しています。この実現のために、Quine生成に特化した極小VM言語「QCLang」を考案し、各言語でそのインタプリタを実装する手法が採られました。2016年からの構想でしたが、AI（Claude Code等）の力を借りることで、51言語分のインタプリタ実装という膨大な作業を完遂し、実用的な実行時間とファイルサイズでの動作を実現しています。GitHub Actionsでは全2,601通りの変換テストがパスされています。",
+    "topics": [
+      "Quine",
+      "プログラミング言語",
+      "esolang",
+      "Ruby",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 1,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

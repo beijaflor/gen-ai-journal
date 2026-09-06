@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:42:14.316677+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの品質、どう測る？ Google ADKの評価機能を使い倒す",
+    "url": "https://zenn.dev/phper8080/articles/91ffb94fe75b45",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google ADKを活用し、AIエージェントの品質を6つの観点と14のメトリクスで定量的に評価・改善するための実践的なフレームワークを紹介。",
+    "summaryBody": "Google ADK (Agent Development Kit) v2.7.1を用いた、ECデータ分析エージェントの品質評価手法を詳説した記事です。評価軸を「数値の正確性」「根拠の有無」「意思決定への有用性」「問いの適切さ」「安全性」「完遂性」の6点に整理し、組み込みメトリクスとカスタムメトリクスを使い分ける設計を提案しています。特にLLM-as-a-Judgeの不確実性を排除するため、判定モデルにGemini 2.5 Proを採用することや、セキュリティガード等のクリティカルな項目には決定論的なカスタムメトリクスを用いる重要性を強調。また、1回きりの評価ではなく複数回の試行によるPASS率の推移で精度を測る実務的なアプローチについても言及しています。",
+    "topics": [
+      "Google ADK",
+      "AIエージェント",
+      "LLM-as-a-Judge",
+      "評価メトリクス",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 93
+    }
+  }
+}

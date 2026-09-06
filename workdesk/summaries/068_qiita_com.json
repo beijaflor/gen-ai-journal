@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:06:28.234704+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン課金を気にせず生成AIを使いたい！OpenAI互換APIで“社内生成AI”を構築できるOracle Private AI Services Containerを試してみた",
+    "url": "https://qiita.com/ssfujita/items/1b902f20dfc2c64ad44f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Oracle Private AI Services Containerを用いて、トークン課金なし・閉域環境対応のOpenAI互換なAI推論基盤を構築・検証する技術ガイド。",
+    "summaryBody": "本記事は、オラクルが提供するコンテナ型のプライベートAI推論基盤「Oracle Private AI Services Container」の導入方法と機能検証をまとめた技術レビューです。この製品は無償で提供され、OpenAI互換APIを備えているため、既存のアプリケーション資産を活かしつつ「データを外に出さない」「トークン料金を気にしない」自社専用のAI環境を構築できます。検証ではOCI上のLinux環境を使用し、テキスト生成（Gemma-4/3）、VLM（画像解析）、リランク、テキスト分類、マルチモーダルEmbeddingといった多様な機能を各モデルのセットアップ手順とともに解説。config.jsonによるモデル管理や、vLLM・Llama.cppといったランタイムの使い分けについても実例を交えて詳しく紹介されています。",
+    "topics": [
+      "Oracle Private AI Services Container",
+      "OpenAI互換API",
+      "LLM",
+      "OCI",
+      "セルフホストAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}
