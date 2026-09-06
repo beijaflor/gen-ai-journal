@@ -2,6 +2,8 @@
 
 ## Main List
 
+- [x] 223. https://news.ycombinator.com/item?id=49554119
+- [x] 222. https://news.ycombinator.com/item?id=49542443
 - [x] 221. https://metalbear.com/blog/ai-native-sdlc-infrastructure/
 - [x] 220. https://spectrum.ieee.org/ai-engineer-skills
 - [x] 219. https://arcprize.org/blog/astra
