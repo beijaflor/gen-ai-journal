@@ -6,61 +6,49 @@
 
 - 004. https://martinfowler.com/rachels-ramblings/code-review.html
 - 016. https://uxdesign.cc/ai-took-away-engineerings-right-to-say-no-839b9b6256f2
-- 030. https://www.anthropic.com/claude-fable-and-mythos-5-1
 - 040. https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/
 - 047. https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/
 - 054. https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman
+- 057. https://openai.com/index/gpt-6-astra/
 - 099. https://tech.bm-sms.co.jp/entry/2026/09/02/110000
 - 129. https://www.seangoedecke.com/you-have-to-beat-the-models-at-something/
 - 134. https://optimizedbyotto.com/post/why-open-source-projects-ban-ai/
 - 144. https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
 - 170. https://qiita.com/ktdatascience/items/02b6b45e2ca7d34ad146
-- 182. https://blog.exe.dev/engineering-with-ai
 - 215. https://www.anthropic.com/news/improving-alignment-security-efforts
 
 ## 👍 Upvoted Articles
 
-- 002. https://blog.cloudflare.com/vulnerability-discovery-remediation/
-- 003. https://evilmartians.com/chronicles/ten-anti-ai-slop-moves-for-frontend-projects-going-faster-than-humans-can-review
 - 006. https://www.oreilly.com/radar/what-a-user-story-actually-costs-in-a-dark-code-factory/
 - 011. https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/
 - 019. https://shopify.engineering/river-vulnerability-remediation
+- 030. https://www.anthropic.com/claude-fable-and-mythos-5-1
 - 035. https://simonwillison.net/2026/Sep/1/claude-fable-5-1/
+- 036. https://arxiv.org/abs/2608.31016
+- 038. https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model
 - 039. https://openteams.com/intelligence-vs-cost/
 - 052. https://internetofbugs.substack.com/p/noai-agents-did-not-build-secret
-- 057. https://openai.com/index/gpt-6-astra/
 - 058. https://deploymentsafety.openai.com/gpt-6-astra
 - 060. https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra
-- 062. https://mail.cyberneticforests.com/models-dont-go-rogue/
-- 074. https://zenn.dev/pepabo/articles/minne-ai-native-org-2026
-- 075. https://zenn.dev/activecore/articles/claude-code-resident-cost
-- 083. https://note.com/danimal141/n/n3abf92dcd7e0
-- 101. https://tech-blog.tabelog.com/entry/autonomous-ai-agent-pipeline-cost-verification_55
+- 080. https://www.itmedia.co.jp/aiplus/article/2609/01/2000000898/
 - 104. https://cloud.google.com/blog/ja/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access
 - 112. https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/
-- 124. https://www.oreilly.com/radar/inside-a-software-factory/
-- 126. https://www.oreilly.com/radar/architectural-guardrails-for-ai-generated-code/
-- 135. https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
+- 130. https://www.nngroup.com/articles/ai-ux-debt/
 - 140. https://noaifridays.com/
-- 142. https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/
-- 152. https://www.checklyhq.com/blog/agentic-rewrite-nodejs-to-go/
-- 167. https://zenn.dev/kimuson/articles/compare-ai-subscription-20260818
-- 175. https://speakerdeck.com/kinopeee/hanesu-sekkei-nyuumon-kontekisuto-no-tsugi
-- 194. https://www.kaspersky.com/blog/ai-agents-under-attack-2026-incidents/56169/
-- 197. https://techfeed.io/entries/6a94b314877bc8b0b7db7299
-- 205. https://www.uber.com/us/en/blog/efficient-software-factory/
+- 180. https://www.economist.com/by-invitation/2026/08/20/humanity-has-the-debate-about-ai-consciousness-backwards
+- 181. https://www.economist.com/by-invitation/2026/08/20/dont-mistake-chatbot-intelligence-for-consciousness
+- 187. https://www.itmedia.co.jp/news/article/2608/31/2000000865/
+- 196. https://joisino.hatenablog.com/entry/kasu
 - 206. https://ledge.ai/articles/openai_altman_agi_astra_2026
 - 216. https://huggingface.co/blog/state-of-open-models-summer-2026
-- 218. https://kix.codes/anthropic-banned-me-for-suspicious-signals/
-- 219. https://arcprize.org/blog/astra
 - 220. https://spectrum.ieee.org/ai-engineer-skills
+- 222. https://news.ycombinator.com/item?id=49542443
 
 ## Omitted Articles
 
 - 001. https://1password.com/blog/5-ways-to-optimize-ai-costs
 - 005. https://martinfowler.com/fragments/2026-09-01.html
 - 007. https://www.oreilly.com/radar/radar-trends-to-watch-september-2026/
-- 008. https://supabase.com/blog/are-supabase-docs-agent-friendly
 - 010. https://blog.mozilla.org/en/firefox/firefox-ai-on-your-terms/
 - 012. https://www.mitsue.co.jp/knowledge/blog/x-tech/202609/03_1730.html
 - 013. https://www.figma.com/blog/how-coinbase-used-code-connect-to-shrink-token-costs/
@@ -69,14 +57,11 @@
 - 018. https://mametter.hatenablog.com/entry/2026/09/02/095452
 - 020. https://people.kernel.org/monsieuricon/creepy-crawlies
 - 021. https://ngrok.com/blog/compression-is-prediction
-- 022. https://christophhellmuth.com/open-design-system-bench/
 - 023. https://www.stripeeconomics.com/p/ai-and-the-city
 - 024. https://commandline.microsoft.com/design-product-simplicity-seamless-ux-ui-agentic-ai-azure-developer-services-foundry/
 - 026. https://judgmentkit.ai/
 - 027. https://the-brandidentity.com/typeface/ren%C3%A9-bieders-neurath-x-is-a-geometric-typeface-made-for-the-age-of-ai
 - 033. https://danluu.com/zitron/
-- 034. https://wadler.blogspot.com/2026/08/there-is-no-ai.html
-- 036. https://arxiv.org/abs/2608.31016
 - 037. https://sabot.media/post/banca-etica-statement-english
 - 044. https://quesma.com/blog/mushroom-llm-vision/
 - 053. https://claude.com/blog/claude-for-commerce-agents
@@ -93,7 +78,6 @@
 - 071. https://zenn.dev/atamaplus/articles/6be03483c0110b
 - 076. https://zenn.dev/nexta_/articles/d0b88ea83ee861
 - 077. https://zenn.dev/yesodco/articles/ed0eb2f6b7621a
-- 078. https://www.nikkei.com/article/DGXZQOUC069TH0W6A800C2000000/
 - 079. https://www.m3tech.blog/entry/claude-budget-tags
 - 081. https://www.anthropic.com/news/enterprise-frontier-safeguards
 - 082. https://www.techno-edge.net/article/2026/09/02/5456.html
@@ -154,11 +138,9 @@
 - 183. https://blog-dry.com/entry/2026/08/30/140903
 - 185. https://uepon.hatenadiary.com/entry/2026/08/29/001732
 - 186. https://blog.shibayu36.org/entry/2026/08/30/173000
-- 187. https://www.itmedia.co.jp/news/article/2608/31/2000000865/
 - 188. https://itrend.kikkakeagent.co.jp/articles/223
 - 189. https://wccftech.com/openai-hoarding-tens-of-thousands-of-apple-mac-mini-and-mac-studio-devices-as-asus-and-msi-burn-through-their-entire-first-batch-of-nvidia-rtx-spark-chip-and-beg-for-more/
 - 190. https://gori.me/macmini/169502
-- 191. https://dentsu-ho.com/articles/9835
 - 192. https://acro-engineer.hatenablog.com/entry/2026/08/31/120000
 - 193. https://chenxiachan.github.io/thoughtdag/
 - 195. https://k-tai.watch.impress.co.jp/docs/column/fujioka/2136502.html
