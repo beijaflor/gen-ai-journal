@@ -64,7 +64,9 @@
 - 033. https://danluu.com/zitron/
 - 037. https://sabot.media/post/banca-etica-statement-english
 - 044. https://quesma.com/blog/mushroom-llm-vision/
+- 049. https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html
 - 053. https://claude.com/blog/claude-for-commerce-agents
+- 055. https://www.ft.com/content/55ab40c0-59e2-4c0b-97c9-4f4f5a71a8bb?sharetype=blocked
 - 059. https://zed.dev/blog/agentic-xanadu
 - 061. https://armature.tech/blog/which-tools-coding-agents-install
 - 063. https://qiita.com/yuji_yasuhara/items/99c589264a006658a15a
@@ -153,4 +155,5 @@
 - 209. https://www.itmedia.co.jp/news/article/2609/01/2000000743/
 - 211. https://arxiv.org/abs/2511.15352
 - 221. https://metalbear.com/blog/ai-native-sdlc-infrastructure/
+- 223. https://news.ycombinator.com/item?id=49554119
 
