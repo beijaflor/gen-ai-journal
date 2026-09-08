@@ -2106,15 +2106,22 @@ OpenAIの次世代AIモデル『Astra』に採用されたと報じられてい�
 
 ---
 
-## [本文取得不可] OpenAIのAstraはAGIと呼べるか（FT論説）
+## OpenAI、新モデル「Astra」を発表：コンピュータ操作とコーディングに特化、AGI到達の示唆も
 
-https://www.ft.com/content/55ab40c0-59e2-4c0b-97c9-4f4f5a71a8bb?sharetype=blocked
+https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/
 
-**Original Title**: OpenAI Claims Latest Model Astra Could Be Considered AGI
+**Original Title**: OpenAI launches Astra, its powerful (and controversial) new model | TechCrunch
 
-FT本文はペイウォールで取得不可のため要約を抑制（omit）。同主題はテーマ1が十分に被覆している。
+OpenAIが「Astra」をリリースし、コンピュータ操作やソフトウェア開発における最高性能を主張するとともに、経営陣が事実上のAGI到達を示唆した。
 
-OpenAIのGPT-6 AstraがAGIと呼べるかを論じたFT記事だが、FT本文はペイウォールで取得できず要約を抑制した（omit扱い）。GPT-6 Astra／AGIというテーマ自体は、本号のテーマ1（054・057・058・060・206・219）が公開情報源で十分に扱っているため、本記事を欠いても号全体の被覆に影響はない。この項目はブロックされたソースの記録として残す。
+OpenAIは、同社史上最も強力で多機能なAIモデル「Astra」を発表しました。このモデルはコンピュータやブラウザの自律的な操作において「新たなフロンティア」を切り拓くとされ、特にソフトウェアエンジニアリング能力では既存の自社モデルやAnthropicのモデルを凌駕するベンチマーク結果を示しています。
+
+**注目すべきポイント:**
+- **サイバーセキュリティ能力:** ゼロデイ脆弱性の特定や修正支援が可能で、まずは同社のセキュリティプログラム「Daybreak」ユーザー向けに先行提供されます。
+- **透明性の課題:** 「Opaque Recurrence（不透明な再帰）」と呼ばれる推論手法を採用しており、従来の「思考の連鎖（Chain of Thought）」の監視が困難になっている点が研究者の間で議論を呼んでいます。
+- **AGI（汎用人工知能）への言及:** グレッグ・ブロックマン社長は、Microsoftとの契約上のAGI条項に触れつつ、個人的な見解として「AGIに到達した」と述べています。
+
+来週よりProやEnterpriseプラン、APIを通じた一般提供が開始される予定です。
 
 ---
 

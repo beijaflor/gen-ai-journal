@@ -43,7 +43,7 @@
 
 - [ ] 053. https://claude.com/blog/claude-for-commerce-agents
 
-- [ ] 055. https://www.ft.com/content/55ab40c0-59e2-4c0b-97c9-4f4f5a71a8bb?sharetype=blocked
+- [ ] 055. https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/
 
 - [ ] 059. https://zed.dev/blog/agentic-xanadu
 
