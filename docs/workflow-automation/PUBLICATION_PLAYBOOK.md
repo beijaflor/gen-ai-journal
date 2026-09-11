@@ -1,8 +1,8 @@
 # Publication Automation Playbook
 
 Operational lessons for running the scripted journal cycle, captured from the
-2026-08-29 cycle. These are corrections and refinements to the STEP docs and
-skills — read them alongside the per-step docs, not instead of them.
+2026-08-29 and 2026-09-05 cycles. These are corrections and refinements to the
+STEP docs and skills — read them alongside the per-step docs, not instead of them.
 
 ## QA: schema-valid is not the same as correct
 
@@ -87,3 +87,80 @@ tag, and release to it.
   organization rather than a fixed count.
 - **Present articles as-is** in theme intros; do not manufacture narrative.
   Anchor satirical/thought-experiment pieces on the thesis, not the hook.
+
+---
+
+## Lessons from the 2026-09-05 cycle
+
+### A schema-invalid summary silently 404s the site — now gated in verify_journal
+
+The website's `json-v1` parser **silently drops** any summary that fails v1.0
+validation; its `/journals/<date>/<id>/` page then **404s with no error** ("the
+article doesn't show up"). The schema requires, in `content`:
+`title, url, language (enum), contentType (enum), oneSentenceSummary,
+summaryBody (100–1200 chars), topics (1–5), scores{signal,depth,uniqueness,
+practical,antiHype 0–5; mainJournal,annexPotential,overall 0–100}`. Any summary
+written **outside `validate_summary.py`** can miss these — hand-made blocked-source
+stubs are the usual offenders (this cycle: 049/055/223 stubs lacked
+`language/contentType/topics/scores` and had a <100-char body, so all three pages
+404'd). Fix: **`verify_journal.py` now runs the v1.0 validator on every summary**
+(new gate `schema: all summaries valid v1.0`), so an incomplete summary fails the
+pre-archive check instead of on the live site. **Never hand-write a summary JSON
+without running `scripts/validate_summary.py` on it.**
+
+### Blocked/omit sources: recover → replace → drop, never fabricate a stub
+
+`validate_summary.py` checks **structure, not truth**: a placeholder that invents
+`contentType`/`topics`/zeroed `scores` *passes* validation while being
+semantically empty. So don't leave fabricated stubs. In order of preference:
+
+1. **Recover** the text in a real browser (Playwright MCP `navigate` →
+   `() => document.body.innerText`), feed via
+   `call-gemini.py --url <URL> --content <captured.txt>`. This cycle recovered 8
+   pages this way (JS-rendered SPA shells: LessWrong, OpenAI; paywall *teasers*
+   that still carry the thesis: Economist, Springer).
+2. **Replace** with an accessible source on the same story. Find an HN thread by
+   URL via the Algolia API:
+   `https://hn.algolia.com/api/v1/search?query=<url-or-slug>&restrictSearchableAttributes=url&tags=story`
+   (NYT school-AI-ban → a 220-pt HN thread, kept as a **main** source); or swap
+   outlets (FT's paywalled "Astra = AGI" → TechCrunch's accessible coverage).
+3. **Drop** the source if its story is already covered elsewhere (this cycle the
+   empty FT→HN thread was removed once the FT was replaced; deleting a source
+   means: summary file + `sources.md`/`omitted_sources.md`/`non_main_sources.md`
+   lines + Supabase row + metadata counts, then rebuild 99/02).
+
+### Cloudflare challenge pages get summarized *as* the article
+
+uxdesign.cc / medium.com front articles with a `cf-mitigated: challenge`. The
+block page carries enough text to clear the length threshold, so it is summarized
+as if it were the article — tell-tale title like
+"Cloudflareによるアクセス制限の通知". The Playwright auto-fallback only fires
+*under* the char threshold, so these pass schema-valid and slip through. Detect by
+the interstitial title/signature and re-fetch via the Playwright MCP. (This cycle:
+4 uxdesign/medium summaries were block-page artifacts, recovered on retry.)
+
+### verify_journal: HN-leak false-positive, and coverage catches corruption
+
+- **HN "recovery-host" leak is a false-positive for a deliberate HN main source.**
+  When a blocked primary is intentionally replaced by its HN discussion *as a main
+  article* (this cycle: NYT → its 220-pt thread), the hard-coded `news.ycombinator`
+  leak rule flags it. Decide per case: keep and accept the flag (document it), move
+  the HN source to the annex (rule not enforced there), or swap to a primary URL.
+  *(Follow-up: allowlist an HN URL that is a curated main source.)*
+- **Coverage catches content corruption, not just missing articles.** The
+  `every curated main URL present in weekly` check surfaced a stray-keystroke edit
+  this cycle — an editor artifact had overwritten one article's URL line in
+  `00_weekly` with a single character, dropping its URL. Re-run `verify_journal.py`
+  after any manual edit to an archived journal; the coverage + schema gates catch
+  corruption a visual skim misses.
+
+### git push fallback when the ssh-agent drops its key
+
+If `git push` to an `ssh://`/`git@` remote starts failing with
+`Permission denied (publickey)` / `Could not read from remote repository` mid-session,
+check `ssh-add -l` (often "The agent has no identities" after an idle/refresh).
+Push over HTTPS with the keyring instead:
+`GITHUB_TOKEN="" git push https://github.com/<owner>/<repo>.git <branch>`. Note this
+does **not** update the local `origin/<branch>` tracking ref, so `git status` may
+show a false "unpushed" — confirm the real remote state with
+`git ls-remote https://github.com/<owner>/<repo>.git <branch>`.
