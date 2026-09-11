@@ -2,7 +2,6 @@
 
 ## Main List
 
-- [x] 223. https://news.ycombinator.com/item?id=49554119
 - [x] 221. https://metalbear.com/blog/ai-native-sdlc-infrastructure/
 - [x] 219. https://arcprize.org/blog/astra
 - [x] 218. https://kix.codes/anthropic-banned-me-for-suspicious-signals/

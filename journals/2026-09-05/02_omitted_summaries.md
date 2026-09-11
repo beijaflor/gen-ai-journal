@@ -1336,15 +1336,3 @@ Anthropicが提唱するAIエージェント向けのSDLC（ソフトウェア�
 - **スケーラブルな開発基盤**: mirrord Operatorを使用することで、トラフィックのフィルタリングやデータベースのブランチ化を行い、複数のAIエージェントが同一のステージング環境で干渉せずに並行稼働できる仕組みを構築できる。
 
 AIにコードを書かせるだけでなく、それを正確に検証できる環境（Stage 4の自動化）の構築こそが、AIネイティブな開発組織への鍵となります。
-
----
-
-## [取得内容不足] FT代替HNスレッド（GPT-6 Astra=AGI）
-
-https://news.ycombinator.com/item?id=49554119
-
-**Original Title**: OpenAI Claims Latest Model Astra Could Be Considered AGI (HN)
-
-FT記事の代替HNスレッドだが本文が乏しくomit扱いとした。
-
-ペイウォールで取得できなかったFT記事（GPT-6 Astra＝AGI）の代替として追加したHacker Newsスレッドだが、投稿はごく少数でコメントもほぼ無く、要約に足る本文が得られなかったためomit扱いとした。同テーマはメインジャーナルのテーマ1が別ソースで扱っている。この項目は取得内容不足の記録として残す。

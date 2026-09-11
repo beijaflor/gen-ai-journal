@@ -221,5 +221,4 @@
 
 - [ ] 221. https://metalbear.com/blog/ai-native-sdlc-infrastructure/
 
-- [ ] 223. https://news.ycombinator.com/item?id=49554119
 

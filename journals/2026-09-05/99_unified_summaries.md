@@ -1,15 +1,3 @@
-## [取得内容不足] FT代替HNスレッド（GPT-6 Astra=AGI）
-
-https://news.ycombinator.com/item?id=49554119
-
-**Original Title**: OpenAI Claims Latest Model Astra Could Be Considered AGI (HN)
-
-FT記事の代替HNスレッドだが本文が乏しくomit扱いとした。
-
-ペイウォールで取得できなかったFT記事（GPT-6 Astra＝AGI）の代替として追加したHacker Newsスレッドだが、投稿はごく少数でコメントもほぼ無く、要約に足る本文が得られなかったためomit扱いとした。同テーマはメインジャーナルのテーマ1が別ソースで扱っている。この項目は取得内容不足の記録として残す。
-
----
-
 ## ニューヨーク市の小中学校でAI利用が禁止へ — マムダニ氏らが主導、基礎学習の保護を優先
 
 https://news.ycombinator.com/item?id=49542443
