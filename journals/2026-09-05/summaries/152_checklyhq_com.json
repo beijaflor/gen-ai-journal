@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:46:08.660585+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1日9,200万メッセージを処理するNode.jsサービスをAIエージェントでGoに書き換え：障害ゼロで移行した手法",
+    "url": "https://www.checklyhq.com/blog/agentic-rewrite-nodejs-to-go/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChecklyがAIエージェントを活用し、高負荷なNode.jsサービスをGo言語へ安全に移行した過程と、それを支えた厳格なテストハーネスの設計原則を解説しています。",
+    "summaryBody": "監視プラットフォームを提供するChecklyは、1日9,200万件のメッセージを処理するクリティカルなサービス「Results Daemon」をNode.jsからGoへと書き換えました。この刷新にはAIエージェント（Claude Code）が活用され、最終的に実行ポッド数の70%削減とDB負荷の低減、安定性の向上を実現しました。\n\n成功の鍵は、AIにコードを書かせる前に構築した「テストハーネス」にあります。このハーネスはブラックボックス形式で、既存のレガシーシステムから生成した「ゴールデンファイル」とのバイト単位での出力比較を行い、100%に近いコードカバレッジを目標としました。また、DBやキューなどの外部境界（Boundaries）には本物のコンテナを使用し、Toxiproxyでネットワーク障害時の挙動も検証可能にしました。\n\nAIによる13,000行におよぶコード生成後、人間による監視とリファクタリング、段階的なデプロイ戦略を組み合わせることで、本番環境での重大なインシデントを回避しました。AIエージェントを大規模なリライトに活用する際の強力なケーススタディとなっています。",
+    "topics": [
+      "AIエージェント",
+      "Go言語",
+      "システム刷新",
+      "テスト自動化",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "We Let AI Agents Rewrite a 92M-Message-a-Day Service in Go. Zero Incidents."
+  }
+}

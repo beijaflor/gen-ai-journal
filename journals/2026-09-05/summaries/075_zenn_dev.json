@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:04:48.679678+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のトークン節約でやっている 9 つのこと — 起動 7 万トークンの内訳と計測つき",
+    "url": "https://zenn.dev/activecore/articles/claude-code-resident-cost",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの起動時に発生する約7万トークンの「常駐費」を削減するため、実測データに基づいた9つの具体的な最適化手法と運用ルールを紹介しています。",
+    "summaryBody": "Claude Codeを日常的に利用するエンジニア向けに、起動時や会話継続時に消費される「トークン」を節約するための実践的な知見をまとめた記事です。著者は、会話を開始する前から消費されているトークンを「常駐費」と定義し、その内訳が本体側のツール定義と、ユーザー設定側の規則（CLAUDE.md等）やスキル一覧で構成されていることを解明しました。\n\n紹介されている主な手法は以下の通りです：\n1. **計測の徹底**: Pythonスクリプトを用いてセッション開始時のトークン総量を可視化する。\n2. **常駐ファイルの整理**: 常駐の規則ファイルを削り、必要時のみ読み込むパス指定（scoped rules）に移行する。\n3. **スキルの絞り込み**: `skillOverrides`を活用し、使用頻度の低いスキルを一覧から除外または名前のみにする。\n4. **参照ドキュメントの工夫**: 大容量ファイルは索引から部分読みする構成にする。\n5. **運用の門番**: 設定が肥大化しないよう、週次の計測結果に基づいた自動ガード（hook）を設ける。\n\n「減らす仕組みより先に、増えたことに気づく仕組みを置く」という継続的な計測の重要性が強調されており、闇雲な削減ではなくデータに基づいた効率的なLLM利用のあり方を提示しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "トークン最適化",
+      "Anthropic",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

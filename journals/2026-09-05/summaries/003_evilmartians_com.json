@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:23:58.384498+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成コードの「質の低下」を防ぐ：フロントエンド開発を加速させる10の自動化戦略",
+    "url": "https://evilmartians.com/chronicles/ten-anti-ai-slop-moves-for-frontend-projects-going-faster-than-humans-can-review",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIによる大量のコード生成に伴う品質低下（AI slop）を防ぎ、TypeScript/Reactプロジェクトの信頼性と保守性を維持するための10の自動チェック手法を解説したガイド。",
+    "summaryBody": "AIエージェントが人間を上回るスピードでコードを生成する時代において、Evil Martiansのチームが実践するコード品質維持の戦略を紹介しています。主な手法として、OpenAPIによる厳格なAPI契約と型生成、TypeScriptのstrictモード活用、eslint-plugin-boundariesを用いたレイヤー境界の強制、Knipによるデッドコード検出、そしてjscpdによる重複コードの防止などが挙げられます。特に注目すべきは「変異テスト（Mutation Testing）」の活用で、AIが生成した『通るだけのテスト』が実際にバグを検知できるか検証することの重要性を説いています。これらはAIを単なる生成ツールから、プロジェクトの設計ルールに従う「良き共同開発者」へと変えるためのガードレールとして機能します。",
+    "topics": [
+      "AIエージェント",
+      "TypeScript",
+      "コード品質",
+      "フロントエンド開発",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "10 anti-AI slop moves for frontend projects going faster than humans can review"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:58:07.654344+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeで作成されたファイルかどうかを確認するツールの公開",
+    "url": "https://claude.com/check-files",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropicは、画像、動画、音声ファイルがClaudeによって生成・処理されたかを判定する、C2PA標準に基づいた検証ツールを公開しました。",
+    "summaryBody": "Anthropicが公開した「Check if files were made with Claude」は、アップロードされたファイルのメタデータに含まれるC2PA（Content Provenance and Authenticity）認証情報を読み取り、Claudeによる生成物かどうかを即座に判定するツールです。JPG、PNG、MP4、MP3などの主要なフォーマットに対応しており、ファイル自体はデバイス外に送信されないプライバシー保護設計となっています。また、テキストに関しては独自の透かし技術（Watermark）を採用しており、適格な組織向けにDetection APIの提供も開始されています。AIコンテンツの透明性を高める業界標準への対応を示す重要なリリースです。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "C2PA",
+      "AI生成検知",
+      "コンテンツ認証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "Check if files were made with Claude"
+  }
+}

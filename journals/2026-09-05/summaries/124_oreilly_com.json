@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:52:48.454705+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソフトウェア・ファクトリーの内部：バイブ・コーディングからクリーンな自律型開発へ",
+    "url": "https://www.oreilly.com/radar/inside-a-software-factory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントをSDLC全体に統合し、人間が戦略（計画・設計）を担当しエージェントが実行を担う「ソフトウェア・ファクトリー」の構築手法とその重要性を詳説する。",
+    "summaryBody": "AIによるコーディング支援は、断片的な生成を行う「バイブ・コーディング」から、ソフトウェア開発ライフサイクル（SDLC）全体を自律的に運用する「ソフトウェア・ファクトリー」へと進化しています。本記事では、トリアージから実装、リリース、監視に至る8つのステージで構成される工場の設計図を提示。特に重要なのは「コンテキスト層」であり、LLM Wiki等を通じて知識を構造化することがエージェントの精度を左右します。著者は「人間が舵を取り、エージェントが実行する」という原則を掲げ、ブレインストーミングや計画といった「テイスト（価値判断）」が問われる領域に人間が集中すべきだと説いています。また、過度な自動化による制御不能を避けるための粒度の細かいループ設計や、組織規模に応じたツールの「自作か購入か」の判断基準についても実務的な知見を共有しています。",
+    "topics": [
+      "AIコーディングエージェント",
+      "SDLC",
+      "ソフトウェア・ファクトリー",
+      "LLM Wiki",
+      "開発プロセス自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Inside a Software Factory"
+  }
+}

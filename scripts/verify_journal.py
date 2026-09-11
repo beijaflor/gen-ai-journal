@@ -240,6 +240,40 @@ def check_urls(rep, urls, workers=16):
               f"{len(broken)} broken" if broken else f"{len(ok)} ok / {len(blocked)} blocked")
 
 
+def check_summaries_schema(rep, summaries_dir):
+    """Every summary JSON must pass the v1.0 schema validator.
+
+    The website's json-v1 parser silently drops any summary that fails
+    validation — its ``/journals/<date>/<id>/`` page then 404s (does not show
+    up). Hand-written stubs for blocked/paywalled sources are the usual
+    offenders (missing language/contentType/topics/scores or a too-short body).
+    Running the same validator here catches them at the pre-archive gate instead
+    of on the live site.
+    """
+    import json as _json
+    from validate_summary import validate_first_error  # scripts/ is on sys.path
+
+    sdir = Path(summaries_dir)
+    if not sdir.is_dir():
+        rep.check(False, "schema: summaries dir present", f"missing {sdir}")
+        return
+    files = sorted(sdir.glob("*.json"))
+    invalid = []
+    for f in files:
+        try:
+            ok, err = validate_first_error(_json.loads(f.read_text(encoding="utf-8")))
+        except Exception as e:  # unreadable / not JSON
+            ok, err = False, str(e)
+        if not ok:
+            invalid.append(f"{f.name}: {err}")
+    rep.check(
+        not invalid,
+        "schema: all summaries valid v1.0",
+        f"{len(files)} ok" if not invalid
+        else f"{len(invalid)}/{len(files)} invalid — " + "; ".join(invalid[:6]),
+    )
+
+
 def verify_paths(date, weekly, annex, main_src, annex_src, skip_urls=False):
     """Run every check against explicit file paths. Returns a Report.
 
@@ -261,6 +295,7 @@ def verify_paths(date, weekly, annex, main_src, annex_src, skip_urls=False):
     check_hierarchy(rep, "annex", Path(annex))
     check_encoding(rep, "weekly", Path(weekly))
     check_encoding(rep, "annex", Path(annex))
+    check_summaries_schema(rep, Path(weekly).parent / "summaries")
 
     if skip_urls:
         rep.note("   URL health: skipped (--skip-urls)")

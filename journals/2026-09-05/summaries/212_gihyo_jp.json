@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:32:00.096535+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自宅でローカルLLMを動かしてみた ローカルなら実現できる遊びとこだわり",
+    "url": "https://gihyo.jp/article/2026/09/home-local-llm-guide",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点の技術状況を背景に、VRAM 16GBクラスのハードウェアで実用的なコーディングエージェントを運用するローカルLLMの構築手法と、その独自の価値を解説しています。",
+    "summaryBody": "この記事は、クラウドLLMのコスト増とオープンウェイトモデルの進化を背景に、自宅でローカルLLMを運用する意義と具体的な構成を詳説しています。2025年後半から登場したReasoningモデルや効率的な量子化技術、MTP Drafterなどの推論加速技術により、VRAM 16GB（RTX 4070やRX 7600 XT等）のミドルレンジ環境でも、コーディングエージェント（OpenCodeなど）を介した自律的なタスク遂行が可能になった点を強調しています。具体例として、Playwrightを用いたE2Eテストの自動生成や、翻訳特化型モデルの活用事例を紹介。また、Transformerの構造的弱点（Prefillの遅延）を実体感することで、クラウド側の資本力の凄まじさを理解しつつ、ローカル環境での試行錯誤をエンジニアの差別化要因として捉える独自の視点を提供しています。",
+    "topics": [
+      "ローカルLLM",
+      "GPU",
+      "llama.cpp",
+      "OpenCode",
+      "Playwright"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

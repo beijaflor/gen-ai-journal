@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:16:06.566943+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AnthropicのClaude Fable 5.1：推論レベルの違いがSVG生成に与える劇的な影響の検証",
+    "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Fable 5.1の5段階の推論レベルが、SVG生成の品質、コスト、および実行時間に与える劇的な影響を、独自の「ペリカン」ベンチマークを通じて詳細に比較・検証しています。",
+    "summaryBody": "Anthropicから新たにリリースされた「Claude Fable 5.1」の推論能力を、著者独自の「自転車に乗るペリカンのSVGを生成する」というタスクで検証した記事です。本モデルには5段階の推論設定（low, medium, high, xhigh, max）が用意されており、設定によって結果が大きく異なります。Low/Mediumでは推論プロセスが省略され安価（約0.10ドル）で高速ですが、Max設定では13分以上の時間と約3.30ドルのコストを消費し、65,000トークンを超える詳細な内部推論（自己修正や細部へのこだわり）を経て非常に高品質なSVGが出力されることが示されました。記事では、コスト・時間・品質のトレードオフや、科学ベンチマークにおける飛躍的なスコア向上、さらには生成されたSVGのアニメーション化についても言及されています。",
+    "topics": [
+      "Claude Fable 5.1",
+      "Anthropic",
+      "LLM Reasoning",
+      "SVG Generation",
+      "Benchmarking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Claude Fable 5.1 made me a really nice animated pelican"
+  }
+}

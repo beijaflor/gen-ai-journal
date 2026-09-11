@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:42:45.020966+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年8月時点でのClaude Code個人的設定まとめ",
+    "url": "https://zenn.dev/kawarimidoll/articles/d3f1a7542de71a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを自律的に動作させ、人間をボトルネックにしないためのハードウェア連携、サンドボックス制限、自動化フロー等の高度なカスタマイズ設定集。",
+    "summaryBody": "Claude Codeを効率的に使いこなすための、2026年8月時点における開発者の個人的な設定が網羅されています。主な内容は以下の通りです。\n\n- **ハードウェア連携**: 8bitdo microコントローラーを用いたターミナル操作や、SidePulse（SDスロットLED）によるエージェント稼働状況の可視化。\n- **自律動作の最適化**: `permissions: auto` と `viewMode: focus` を設定し、人間が監視しなくてもバックグラウンドで実装を進める環境を構築。Macのスリープ制御もエージェントの稼働状況に連動。\n- **安全性と品質管理**: `cage` や `guard-and-guide` によるサンドボックス制限で暴走を抑えつつ、`ponytail` 等のツールで冗長な実装を監視。動作確認には `agent-browser` や `terminal-use` を活用し自律化。\n- **環境の可視化**: statuslineでのトークン消費量表示（電池絵文字）や、外部ディスプレイへの「エージェントオフィス」表示など、AIとの共同作業を楽しくする工夫。\n- **ワークフローの定型化**: `/address` や `/reply-review` といったカスタムコマンドや、GitHub Actionsのバリデーション、コミット整理などの自動化ルールを運用しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "生産性向上",
+      "サンドボックス",
+      "dotfiles"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    }
+  }
+}

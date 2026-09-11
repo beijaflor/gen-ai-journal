@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:45:40.992347+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMアプリ、雰囲気で運用してませんか? 〜2026年のLLMOpsの現在地〜",
+    "url": "https://qiita.com/taka_yayoi/items/a349cf0801e76f372ca7",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "2026年時点のLLMOpsの現状を、OpenTelemetryによる標準化やエージェント可観測性の向上といった3つのトレンドと共に解説し、具体的な改善ステップを提示する記事。",
+    "summaryBody": "本記事は、2026年におけるLLMOpsの到達点を、DatabricksやMLflowの最新機能を交えて解説したものです。LLMアプリの運用が感覚的（雰囲気）になりがちな理由として、出力の非決定性や品質の多次元性を挙げ、それを「計測と根拠」に変えるための4つの柱（トレーシング、評価、プロンプト管理、監視）を提唱しています。2026年のトレンドとして、OpenTelemetry GenAIセマンティック規約への収斂、LLM-as-a-Judgeの普及による評価の民主化、さらにはコーディングエージェントまでを含む可観測性の拡大が詳述されています。具体的な実装例としてMLflowを用いたトレース取得コードも掲載されており、明日から始められるアクション（5件の評価データ作成やコストの可視化など）も具体的に示されています。可観測性を高めることで「なんとなく」の改善から脱却し、エンジニアリングとしてLLMアプリを最適化するための指針となる内容です。",
+    "topics": [
+      "LLMOps",
+      "MLflow",
+      "Databricks",
+      "OpenTelemetry",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

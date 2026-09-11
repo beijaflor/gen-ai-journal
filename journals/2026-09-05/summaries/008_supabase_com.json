@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:22:44.333737+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SupabaseドキュメントはAIエージェントに最適化されているか？：評価と改善の記録",
+    "url": "https://supabase.com/blog/are-supabase-docs-agent-friendly",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SupabaseがAIエージェントによるドキュメント利用実態を調査し、より安全で確実なコード生成を促すためのドキュメント構造の最適化手法を公開しました。",
+    "summaryBody": "昨今の開発者がドキュメントを精読する代わりにAIエージェント（CursorやClaude Code等）を介して情報を取得している現状を鑑み、Supabaseはドキュメントの「エージェント親和性」を測定するプロジェクトを実施しました。特に行セキュリティ（RLS）ガイドを対象に、自社開発の評価フレームワーク『supabase/evals』を用いてAIの行動を分析。その結果、エージェントは情報を断片的に取得し、重要なセキュリティ設定を読み飛ばす傾向があることが判明しました。これを受け、重要な指示をコードスニペットの直近に配置する構造変更や、明示的なサインポストの設置を行うことで、AIと人間の双方にとってミスを防ぎやすいドキュメントへと改善しています。",
+    "topics": [
+      "AI Agents",
+      "Supabase",
+      "Technical Writing",
+      "Developer Experience",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "Are Supabase docs agent-friendly? We didn't know, so we checked"
+  }
+}

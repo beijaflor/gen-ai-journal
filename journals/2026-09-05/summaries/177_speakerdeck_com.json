@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:40:08.813801+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "指示待ちから変化に応じるClaude Codeへ！~環境からAgentへの帰り道を作る~",
+    "url": "https://speakerdeck.com/gotalab555/shijimachi-kara-henka-ni-oujiru-claude-code-he-kankyou-kara-agent-heno-kaerimichi-o-tsukuru",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを単なる指示待ちツールではなく、環境の変化（CI、レビュー、外部状態）に自律的に反応し、自律的に作業を再開・完結させる「Agent」へと進化させるための設計思想と技術手法の解説。",
+    "summaryBody": "本スライドは、AIコーディングエージェントであるClaude Codeの活用を一歩進め、人間が作業の中継地点（ボトルネック）にならないためのフィードバックループ構築法を解説しています。主な内容として、編集の瞬間に指摘を返すLSP（Language Server Protocol）、ツール実行後の検証を行うHooks、外部サービスやCIの復旧を監視するMonitor、そして複数のAgent間で連携するCross-session messagingなどの具体的な機能活用を紹介。単なる自動化ではなく、「何が起きたら動くか（トリガー）」「何を成功とするか（判定基準）」「次は何をするか（継続）」という3点を環境側へ定義し、エージェントへの『帰り道』を整備することで、開発者の認知負荷を下げつつ開発サイクルを閉じる手法を提唱しています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "AI駆動開発",
+      "LSP (Language Server Protocol)",
+      "自動化ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:19:57.719889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIクローラーの脅威：git.kernel.orgを蝕む「デジタル・バッタの群れ」の実態",
+    "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AI学習用の「非AI生成データ」を求めるクローラーが、git.kernel.orgの計算リソースの20%以上を非効率なHTMLスクレイピングで浪費させている現状を詳述。",
+    "summaryBody": "Linuxカーネルのインフラ担当者であるKonstantin Ryabitsev氏が、AIクローラーによる深刻なシステム負荷増大を報告しています。LLMの学習において、AI生成物を含まない「純粋な人間のデータ」であるカーネルソースは極めて価値が高いとされています。しかし、クローラーは効率的なgit cloneではなく、cgitを介したHTMLレンダリングという極めて非効率な手法で数百万件のコミットをスクレイピングしています。現在、5つの分散ノード全体で常に14〜16コアのCPUがスクレイパーのレンダリングのためだけに消費されており、これは正規のアクセスを大幅に上回る規模です。対策としてPoW（Proof of Work）を用いた「Anubis」チャレンジを導入していますが、ボット側も計算資源を投じてこれを突破し始めており、住宅用IPプロキシの悪用も進んでいます。この事態を受け、運営側は匿名アクセスの機能制限といった、ユーザーの利便性を損なう厳しい対策を余儀なくされています。",
+    "topics": [
+      "git.kernel.org",
+      "AI Scraping",
+      "Web Crawlers",
+      "Infrastructure",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 92
+    },
+    "originalTitle": "Creepy crawlies — Konstantin Ryabitsev"
+  }
+}

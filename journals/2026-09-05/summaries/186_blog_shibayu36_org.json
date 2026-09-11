@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:38:25.994711+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに機密情報を渡してよいか、判断の軸を自分なりに整理してみた",
+    "url": "https://blog.shibayu36.org/entry/2026/08/30/173000",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIへの機密情報の入力を「情報分類」「LLM環境」「Tool Callの露出範囲」の3つの軸で整理し、セキュリティと利便性を両立させるための判断枠組みを提案する記事です。",
+    "summaryBody": "業務でAIを利用する際、一律の禁止や「学習OFFなら安全」といった単純な線引きではなく、適切にリスクを評価するための3軸フレームワークを解説しています。著者は「許可していない相手に渡さないこと」を目的とし、以下の3点を確認すべきとしています。1. 情報分類（Public/Internal/Confidential）：その情報の重要度は？ 2. LLM環境（Managed/Unmanaged）：組織が管理・制御可能な経路か？ 3. Tool Callの露出範囲（露出系/取込系）：AIエージェントが情報をどこへ運び、何を取り込むか？ 特に、Tool Call単位でデータの流出経路（メール送信やURLフェッチなど）を制御する考え方は、AIエージェントの安全な運用において極めて実用的な指針となります。具体的なOK/NG例も示されており、組織のAIガバナンス構築に役立つ内容です。",
+    "topics": [
+      "AIセキュリティ",
+      "LLM",
+      "データガバナンス",
+      "AIエージェント",
+      "情報セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

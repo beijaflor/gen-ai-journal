@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:58:24.430829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで気づかぬうちにトークンを浪費する4つの「隠れた原因」とその対策",
+    "url": "https://www.makeuseof.com/checked-claude-code-usage-found-four-hidden-token-drains-never-knew-about/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AnthropicのClaude Codeにおいて、プロンプト入力前からトークンを消費してしまう4つのデフォルト設定（CLAUDE.md、MCP、スケジュールタスク、スキルリスト）とその節約術を解説。",
+    "summaryBody": "Anthropicのエージェント型コーディングツール「Claude Code」を使用する際、ユーザーが気づかないうちにトークン制限を圧迫する要因が4つ存在します。第一に、カスタム指示を格納する**CLAUDE.md**は、内容の関連性に関わらずセッション開始時に毎回ロードされます。第二に、**MCPサーバー**の自動接続機能で、未使用のサーバーがコンテキストを占有します。第三に、バックグラウンドで実行される**スケジュールタスク**が定期的にトークンを消費します。最後に、インストールされた**スキルリスト**の説明が初回メッセージ時に送信される仕組みです。これらを改善するには、`/context`や`/usage`、`/doctor`といった内蔵コマンドを使い、不要な指示をスキルに変換したり、MCP接続を制限したりする最適化が不可欠です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLMトークン管理",
+      "MCP",
+      "コーディング補助"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "I checked my Claude Code usage and found four hidden token drains I never knew about"
+  }
+}

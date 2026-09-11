@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:13:17.931239+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "FirefoxのAIスイッチはオフでも、テレメトリはオフではない",
+    "url": "https://marius.blog/firefox-155-ai-kill-switch-retest/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Firefox 155の調査により、AI機能を無効化するスイッチが生成AI以外のテレメトリや広告追跡、ユーザー実験の継続を止めていない実態が明らかになりました。",
+    "summaryBody": "この記事は、Firefox 155に導入された「AIキルスイッチ」の技術的実効性をWiresharkによるトラフィック解析で検証したレポートです。主な調査結果として、AIスイッチを有効にしてもテレメトリ（データ収集）の送信頻度は変わらず、Temuなどの広告関連ドメインへのDNSプリフェッチも継続されていることが判明しました。また、実験システム「Nimbus」への登録も維持されており、ユーザーがAIをブロックしたという事実自体がテレメトリとして収集されています。MozillaのCEOは「オフにする機能」の重要性を説いていますが、実際には初期起動から数秒でAIインフラへの通信が発生しており、真の「オプトイン」形式にはなっていないと著者は指摘しています。プライバシーを重視するユーザーに対し、設定画面上のスイッチだけでは不十分であり、依然として詳細な設定や監視が必要であると警鐘を鳴らしています。",
+    "topics": [
+      "Firefox",
+      "Mozilla",
+      "プライバシー",
+      "テレメトリ",
+      "AIキルスイッチ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Firefox’s AI Switch Is Off. Telemetry Isn’t."
+  }
+}

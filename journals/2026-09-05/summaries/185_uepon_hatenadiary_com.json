@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:38:42.133181+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 4070 TiからRadeon AI PRO R9700へ。32GB VRAMでローカルLLMベンチの値はどう変わったか？",
+    "url": "https://uepon.hatenadiary.com/entry/2026/08/29/001732",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPUをRTX 4070 Ti（12GB）からRadeon AI PRO R9700（32GB）に換装し、VRAM容量の拡大が32Bクラスのモデルや長文コンテキストの実行性能を劇的に改善することを実証したベンチマークレポート。",
+    "summaryBody": "### 概要\nRTX 4070 Ti (12GB)からRadeon AI PRO R9700 (32GB)への換装に伴い、llama.cppを用いたローカルLLMのベンチマークを実施。CUDAからAMD環境（Vulkan/ROCm）への移行による性能変化を詳細に比較しています。\n\n### 検証結果のポイント\n- **32Bモデルの実用化**: 12GB環境では3.2 t/sと実用外だったQwen3-32Bが、全レイヤーのGPUオフロードにより29.8 t/sを記録。読む速度を超えるレベルに到達しました。\n- **コンテキスト破綻の解消**: 14Bモデルにおいて、12GB環境で発生していたKVキャッシュ溢れによる性能暴落（32kトークン時）が解消。64kトークンでも30.6 t/sを維持し、VRAM容量が性能の境界線であることを示しました。\n- **バックエンドの特性**: Windows環境ではVulkanがトークン生成速度（tg）でROCmを全サイズで上回り、セットアップも容易です。一方、プロンプト処理（pp）ではROCmがVulkanより高速ですが、依然としてCUDAの優位性が残ります。\n- **消費電力**: R9700は動作時にTBP 300W付近に張り付く傾向があり、小型モデル（4B/8B）のワットパフォーマンスでは4070 Tiに劣ります。\n\n### 結論\nAMD環境でのLLM運用において、大容量VRAMによる「大型モデルや長文の安定動作」は、プロンプト処理速度やエコシステムの差を補って余りある価値を提供します。",
+    "topics": [
+      "ローカルLLM",
+      "GPUベンチマーク",
+      "Radeon AI PRO R9700",
+      "VRAM",
+      "llama.cpp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

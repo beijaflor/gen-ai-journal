@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:34:00.993346+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "老害フォレンジッカーはAI羊の夢を見るか？",
+    "url": "https://speakerdeck.com/tadmaddad/lao-hai-huorenzitukahaaiyang-nomeng-wojian-ruka",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」がローカル端末に残すプロンプト履歴やファイル変更履歴等のアーティファクト構造を明らかにし、フォレンジック調査の手法を提示する。",
+    "summaryBody": "本資料は、AIの悪用が現実化する時代におけるデジタルフォレンジックの重要性と、具体的な調査対象について解説しています。特にAnthropicのCLIツール「Claude Code」に焦点を当て、`%USERPROFILE%\\.claude`配下に保存される`history.jsonl`（プロンプト履歴）、`paste-cache`（貼り付け内容）、`file-history`（変更前ファイルのスナップショット）のデータ構造を詳細に分析しています。インシデント発生時に「誰が、何をしたか」を特定するための証拠（アーティファクト）の場所を特定し、Rust製ツール「Washizukami-Collector」を用いた効率的な証拠収集の手法についても具体例を挙げて紹介しています。",
+    "topics": [
+      "デジタルフォレンジック",
+      "Claude Code",
+      "アーティファクト分析",
+      "インシデント対応",
+      "AIセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

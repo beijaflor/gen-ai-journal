@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:44:08.700098+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「いい感じに分けといて」と頼まれたので、「いい感じ」を定義してみた",
+    "url": "https://qiita.com/KYoshiyama/items/50f50f39fd0da34e3dce",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "曖昧な「いい感じに分けて」という依頼を、ハード・ソフト制約の分類とペナルティスコアの数値化によって定義し、山登り法で最適化する手法を解説した実戦的な記事。",
+    "summaryBody": "社内のシャッフルランチのグループ分けを例に、抽象的な「いい感じ」という要求をエンジニアリングで解決するプロセスを詳説しています。まず要望を、破ると運用が壊れる「ハード制約」と、価値を左右する「ソフト制約」に分類。グループ数やサイズの決定をデータ構造レベルで固定することで探索範囲を最小化し、残ったソフト制約（過去の同席履歴や所属部署）には「嫌さの点数（ペナルティ）」を割り当てました。最適化には山登り法（局所探索法）を採用し、GAS上で高速に動作させつつ、12ヶ月連続で重複ペアゼロという高い精度を実現しています。アルゴリズム選定だけでなく、問題を「解く前に削る」重要性を説いています。",
+    "topics": [
+      "組合せ最適化",
+      "JavaScript",
+      "アルゴリズム",
+      "山登り法",
+      "Google Apps Script"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:55:06.441004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チームの人数が減っても仕事を回す ── AIとGitHub Actionsによる開発ワークフロー改善",
+    "url": "https://techblog.zozo.com/entry/wear-web-fe-adjust-workflow",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "メンバー減少による負荷を軽減するため、AIエージェントとGitHub Actionsを活用して企画・レビュー・監視・振り返りの各工程を自動化し、開発リードタイム短縮と会議の効率化を実現した事例。",
+    "summaryBody": "ZOZOのWEAR開発チームが取り組んだ、少人数体制でも開発速度を維持するためのワークフロー改善事例です。主に5つの領域でAIと自動化を導入しています。1. **AIによるアイデア出し**: Confluenceのコンテキストと過去の採用・不採用アイデアをAIに学習させ、スコアリング機能付きで施策案を自動生成。2. **レビュー放置の防止**: GitHub Actionsで定期的に未着手PRをチェックし、3時間経過でSlack通知。3. **動的なApprove数判定**: 修正ファイルやAIによるリスク評価に基づき、必要な承認数を1件または2件に動的に変更し、軽微な修正の滞留を解消。4. **エラー監視の効率化**: Sentry/Datadog/Splunkの情報をAIが収集・分析しSlackにレポートすることで、朝会のエラー確認時間を60分から20分へ短縮。5. **KPTの深化**: Miroの付箋内容をAIが深掘りし、議論の種となる問いを自動追加。これらの施策により、PRマージまでのリードタイムが30時間から20時間以内へ改善するなどの成果を得ています。",
+    "topics": [
+      "AI活用",
+      "GitHub Actions",
+      "開発プロセス改善",
+      "自動化",
+      "チームビルディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

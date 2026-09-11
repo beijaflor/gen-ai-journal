@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:20:13.845717+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ShopifyのAIエージェント「River」による脆弱性修正の自動化：検知からマージまでを完結させる手法",
+    "url": "https://shopify.engineering/river-vulnerability-remediation",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ShopifyはAIエージェント「River」を用いて、脆弱性の検知のみならず、依存関係の更新、パッチ適用、CIの修正、そしてマージ後の最終検証までを自律的に実行するセキュリティワークフローを構築した。",
+    "summaryBody": "Shopifyのエンジニアリングチームが開発したAIエージェント「River」は、Slackを通じて脆弱性の修正プロセスを自動化します。従来のツールが検知やパッチの提案に留まっていたのに対し、RiverはShopifyのモノレポ環境で開発者と同じツールや規約を用いて動作し、修正を「マージ」して「完了」させるまでを担います。具体的には、依存関係の更新に伴うロックファイルの競合解消や、CIの失敗に対する修正を自律的に行います。導入後11日間で依存関係のバックログが70%削減され、セキュリティ関連のマージ成功率は10%から80%へと劇的に向上しました。Riverは全ての判断を自動化するのではなく、リスク判断やプロダクトの文脈が必要な場合には、それまでの調査経緯を含めた詳細なコンテキストを添えて人間に引き継ぐよう設計されています。この記事では、編集前の状態再検証、SHAに基づいた証跡管理、そして意図的な人間へのハンドオフという、実用的なエージェント構築の3つの原則を提示しています。",
+    "topics": [
+      "AI Agent",
+      "Vulnerability Remediation",
+      "DevSecOps",
+      "Shopify",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "How River takes security work from a fix to merge (2026) - Shopify"
+  }
+}

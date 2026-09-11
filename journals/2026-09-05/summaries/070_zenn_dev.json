@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:06:00.667707+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiroに野良MCPを繋がせない。AWS Agent Registry × Kiro for Enterpriseで配布を統制する",
+    "url": "https://zenn.dev/aws_japan/articles/agent-registry-kiro-governance",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWS Agent RegistryとKiro for Enterpriseを組み合わせ、組織内におけるMCPサーバーやSkillsの配布にガバナンスと検索性をもたらす構成・運用方法を解説した記事。",
+    "summaryBody": "2026年8月にGAとなった「AWS Agent Registry」を活用し、AIエージェントの拡張機能であるMCP（Model Context Protocol）やスキルの配布に統制をかける手法を解説しています。主な内容は以下の3点です。第一に、Agent Registryの「承認済みレコードのみがディスカバリープレーンに公開される」仕組みを利用した、セキュリティスキャンや重複チェックを含む承認ワークフローの構築。第二に、KiroからRegistryのMCPエンドポイントを検索し、組織で承認されたツールを開発者が発見・利用するプロセス。第三に、Kiro for Enterpriseの許可リスト機能との棲み分けです。Registryを「組織横断の台帳・承認基盤」とし、そこからKiroの許可リストJSONを自動生成・配置することで、発見可能性と強制力の両立を実現するアーキテクチャを提案しています。開発効率を落とさずに『野良MCP』を排除し、組織全体でエージェント資産を安全に再利用するための実践的なガイドとなっています。",
+    "topics": [
+      "AWS Agent Registry",
+      "Model Context Protocol",
+      "Kiro",
+      "ガバナンス",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

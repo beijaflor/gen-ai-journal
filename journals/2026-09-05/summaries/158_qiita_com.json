@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:44:41.264337+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "900件のテストが緑でも、本番では壊れる──LLM製プロダクトの品質保証で学んだこと",
+    "url": "https://qiita.com/tanabata-kitajima/items/89edab6694989422af69",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMがコードとテストを生成する開発体制において、900件以上のテストをパスしても本番環境で発生した不具合から得た、品質保証の本質的な課題と対策をまとめた実践レポート。",
+    "summaryBody": "株式会社七夕研究所による、LLM（Large Language Models）に実装とテストコードの両方を生成させる開発体制での品質管理に関する考察です。3層の仕様定義、TDD、別系統LLMによる複数回のコードレビューといった厳格なプロセスを導入し、900件を超えるテストをパスした状態でも、本番環境では「テストダブルと本番の契約の乖離」「監視情報の偽陽性」「例外の握りつぶしによる異常検知の失敗」「コンテナ終了処理の未実行」という、テストの観測範囲外の不具合が発生しました。筆者は、LLMによってコード作成の限界費用が下がることで、相対的に『何を保証するか』という人間の判断の重みが増していると指摘。テストの数ではなく、本番の契約をいかに検証するか、失敗を型としてどう表現するかといった、品質判断の重要性を説いています。",
+    "topics": [
+      "LLM",
+      "ソフトウェアテスト",
+      "品質保証",
+      "Python",
+      "TDD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

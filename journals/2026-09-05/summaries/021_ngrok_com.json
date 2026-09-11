@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:19:44.912530+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "圧縮は予測である：データ圧縮と大規模言語モデル（LLM）の深い関係",
+    "url": "https://ngrok.com/blog/compression-is-prediction",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "データ圧縮とLLMの本質的な共通点が「予測」にあることを、情報理論の基礎から最新の言語モデルの仕組みまで紐解いて解説する記事。",
+    "summaryBody": "この記事は、データ圧縮と大規模言語モデル（LLM）が本質的に同じ「予測」という数学的問題を解いていることを詳細に解説しています。まず、ランレングス法や算術符号などの圧縮アルゴリズムの基礎を紹介し、データの「冗長性」を確率としてモデル化することで情報量を最小化（エントロピーの削減）できることを示します。次に、LLMが次トークンを予測する仕組みは高度な文脈依存型の確率モデルそのものであり、理論上は極めて高い圧縮率を実現できることを明らかにします。一方で、LLMを実際のファイル圧縮に利用するにはモデル自体のサイズや計算リソースが膨大になるという実用的な制約についても言及しており、理論と現実のギャップをバランスよく説明しています。",
+    "topics": [
+      "データ圧縮",
+      "LLM",
+      "算術符号",
+      "情報理論",
+      "シャノンエントロピー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Compression is prediction | ngrok blog"
+  }
+}

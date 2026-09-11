@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:02:04.191327+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Muse Voice Transcribe の発表：Meta によるリアルタイム多言語音声認識・話者分離モデル",
+    "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Meta Superintelligence Labsは、25以上の多言語に対応し、20人以上の同時話者分離やシームレスなコードスイッチングを低遅延で実現する次世代音声知覚モデル「Muse Voice Transcribe」を発表しました。",
+    "summaryBody": "Metaは、音声知覚における画期的なマイルストーンとなる「Muse Voice Transcribe」を発表しました。このモデルは、ストリーミングASR（自動音声認識）、話者分離（ダイアリゼーション）、エンドポインティング（発話終了検知）をリアルタイムで実行する自己回帰型マルチモーダルモデルです。\n\n### 主な技術的特徴\n- **アーキテクチャ**: Muse Sparkファミリーを継承。音声は80ms（12.5Hz）のチャンクとして処理され、各チャンクで「聞き続ける」か「テキストトークンを出力する」かをモデルが動的に決定します。\n- **アダプティブ・ディレイ**: 強化学習（RL）を用いて、単語の難易度に応じて精度と遅延のバランスを動的に調整。これにより、速度と精度のトレードオフにおけるパレート最適を実現しています。\n- **高度な知覚能力**: 20人以上の同時話者を分離可能で、25の検証済み言語（計70言語以上）をサポート。文中での言語切り替え（コードスイッチング）にもネイティブに対応しています。\n\n### 応用と展開\n現在、Meta Model API、Meta AI for Mac、およびMuse Codeを通じて提供されており、Meta AIの音声入力基盤として統合されています。特に「コンテキスト・バイアス」機能により、ユーザー固有のキーワードや場所の名前などの認識精度が大幅に向上しています。",
+    "topics": [
+      "音声認識",
+      "話者分離",
+      "Meta AI",
+      "マルチモーダルAI",
+      "低遅延"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Muse Voice Transcribe | Meta AI Research"
+  }
+}

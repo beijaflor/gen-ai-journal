@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:39:55.895961+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年8月後半のLLM利用状況",
+    "url": "https://voluntas.ghost.io/2026-08-second-half-llm/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2026年後半における最新のLLMスタックとして、GPT-5.6やDeepSeek V4、そしてローカルLLMを活用した自動コードレビュー体制の構築事例が紹介されています。",
+    "summaryBody": "2026年8月時点でのLLM利用環境をまとめたレポートです。著者はCursor（Grok 4.6 xhigh搭載）やChatGPT Business（GPT 5.6 Sol max搭載）をサブスクリプションで併用しつつ、APIではDeepSeek V4 Flashを主力としています。特に注力されているのがローカル環境で、DGX Spark互換機2台にDeepSeek V4 Flashをデプロイし、FP8精度・vLLM構成で運用。OpenCodeを経由した社内利用に加え、GitHub Actions（Self-hosted runner）と連携させることで、電気代のみで稼働する24時間365日の自動コードレビュー・イシューレビュー体制を実現している点が非常にユニークです。",
+    "topics": [
+      "LLM",
+      "DeepSeek",
+      "ローカルLLM",
+      "Cursor",
+      "AI開発環境"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

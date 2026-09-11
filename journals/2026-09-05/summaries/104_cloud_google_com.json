@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:57:54.787249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GTIG AI 脅威トラッカー: 攻撃者による脆弱性悪用、オペレーションの強化、初期アクセスのための AI 活用",
+    "url": "https://cloud.google.com/blog/ja/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleの脅威分析チーム（GTIG）は、攻撃者がAIを実験段階から産業規模の運用へと移行させ、ゼロデイ脆弱性の発見や自律型マルウェア、AIサプライチェーン攻撃に活用している現状を報告しました。",
+    "summaryBody": "Google Threat Intelligence Group (GTIG) による最新レポートは、AIが攻撃者のワークフローにおいて「産業規模のエンジン」として定着したことを警告しています。主な動向は以下の通りです：\n\n1. **AI生成エクスプロイト**: AIを用いて開発されたと考えられるゼロデイエクスプロイトが初めて特定されました。PRCやDPRK関連のアクターが特に強い関心を示しています。\n2. **自律型マルウェアの出現**: Androidバックドア「PROMPTSPY」は、Gemini APIを介してシステム状態を解釈し、リアルタイムでコマンドを生成・実行する自律型エージェント機能を備えています。\n3. **防御回避の高度化**: LLMを利用して生成された「おとりコード」を含むマルウェア（CANFAIL, LONGSTREAM）が確認されており、検知を困難にしています。\n4. **AIインフラへの攻撃**: LiteLLMやOpenClawなどのAI統合ライブラリやサプライチェーンを標的とした攻撃が活発化しており、認証情報の窃取やランサムウェアの展開に繋がっています。\n\nGoogleはこれに対し、脆弱性発見AI「Big Sleep」や自動修正ツール「CodeMender」を投入し、AIによる防御の自動化で対抗しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "生成AI",
+      "脅威インテリジェンス",
+      "マルウェア",
+      "サプライチェーン攻撃"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

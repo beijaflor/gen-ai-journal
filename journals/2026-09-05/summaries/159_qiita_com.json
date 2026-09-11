@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:44:28.154910+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでモデルを切り替えると、そのターンだけ書き直しが287倍になる挙動の検証",
+    "url": "https://qiita.com/suwa_nobu/items/5fe930eb46d064b3da06",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code 2.1.251で可視化されたプロンプトキャッシュ機能を使い、モデル切り替えやTTL設定変更がトークン消費コストに与える影響を実測データで詳細に解説しています。",
+    "summaryBody": "Claude Codeのアップデート（v2.1.251）により、`/usage`コマンドでプロンプトキャッシュの統計（ヒット率や書き直し数）が確認可能になりました。この記事では、同一セッション内でモデルを切り替えた際の挙動を検証しており、切り替え直後のターンではキャッシュの再構築が必要になるため、書き直しトークンが約287倍に急増することを実証しています。一方で、元のモデルに戻す際はキャッシュが有効なため低コストで済むことや、環境変数（FORCE_PROMPT_CACHING_5M）でTTLを変更するとキャッシュが別バケットとして扱われる仕様も明らかにされています。また、`claude -p`による単発実行に比べ、セッションを継続（`--resume`）することで書き直しトークンを約400分の1にまで削減できる効率性が示されており、開発者がLLMコストを最適化するための具体的な指針を提供しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Prompt Caching",
+      "LLM Ops",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

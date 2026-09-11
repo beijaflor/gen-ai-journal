@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:43:41.501158+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LangGraphが渡すのは、設計図",
+    "url": "https://qiita.com/haru-qiita/items/e93ba2ec0cc317d8cac1",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントの挙動をブラックボックス化させず、LangGraphのノード、エッジ、Stateを用いて「追跡・制御可能な設計図」として構築する重要性を説く記事。",
+    "summaryBody": "AIエージェントの開発において、モデルに処理を丸投げするのではなく、LangGraphを用いて明示的な「設計図」を書くことの価値を解説しています。主なポイントは、処理を「ノード」、遷移を「エッジ」、情報を「State」として定義することで、失敗時の原因特定や途中からの再開、人間による介入（Human-in-the-loop）を可能にすることです。特に、チェックポイント機能による状態保存や、副作用を持つ処理の再実行を考慮した設計（冪等性）など、プロトタイプから本番運用へ移行する際に不可欠な「制御性」と「観測性」に焦点が当てられています。まずは4〜5個のノードから始め、判断基準を一文で説明できるレベルまで分解することを推奨しています。",
+    "topics": [
+      "LangGraph",
+      "AIエージェント",
+      "LLM",
+      "Python",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

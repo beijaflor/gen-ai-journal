@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:19:29.948264+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "open-design-system-bench: デザインシステムのAI対応度を測定・評価するオープンベンチマーク",
+    "url": "https://christophhellmuth.com/open-design-system-bench/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントがデザインシステムをどれだけ正しく利用できるかを、静的解析と実動作ベンチマークの両面から数値化するオープンソースツール。",
+    "summaryBody": "open-design-system-benchは、AIエージェントによるUI生成が、企業のデザインシステムやコンポーネントライブラリの規約にどれだけ準拠しているかを定量化するためのツールです。評価は、数秒で完了する「静的監査（Tier 1）」と、実際にLLMを動かしてコードを生成・評価する「生成ベンチマーク（Tier 2）」の二段構えとなっています。静的監査では、エクスポートの整合性やトークンの機械可読性、AI向けの指示ファイル（AGENTS.md等）をチェックします。生成ベンチマークでは、意図のみを伝えるプロンプトからAIが正しくシステムを利用できるかを、インポートの正確性、API遵守、アクセシビリティ、コンパイル成否などの多角的な指標で採点します。先行する4つのシステムへの実施結果では、すべてのシステムで未知のバグ（エクスポート漏れ等）が発見されたほか、現状で「AIネイティブ」と呼べるスコアに達したシステムは一つも存在しないことが明らかになりました。",
+    "topics": [
+      "デザインシステム",
+      "AIエージェント",
+      "ベンチマーク",
+      "React",
+      "LLMエバリュエーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "open-design-system-bench How AI-ready is your design system?"
+  }
+}

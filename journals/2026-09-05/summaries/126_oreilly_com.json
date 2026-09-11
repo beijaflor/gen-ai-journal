@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:52:21.700181+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成コードにおけるアーキテクチャのガードレール：ドリフトを防ぐガバナンス層の必要性",
+    "url": "https://www.oreilly.com/radar/architectural-guardrails-for-ai-generated-code/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するコードが組織の既存の設計決定を無視することで発生する「アーキテクチャのドリフト」を防ぐため、決定事項を機械読み取り可能かつ決定論的に強制する「エンジニアリング・ガバナンス層」の構築を提唱する。",
+    "summaryBody": "AI支援開発の普及により、コードの生成速度は向上しましたが、同時に「コードチャーン（追加後すぐに削除・修正されるコード）」が861%も増加しているという調査結果があります。この主な原因は、AIが個別の関数としては正しくても、組織が過去に決定したアーキテクチャ上のルール（ADR：アーキテクチャ決定記録）を無視してコードを生成してしまう「アーキテクチャのドリフト」にあります。\n\n既存のLinterやAIによるコードレビューだけでは、これらの「文脈に依存する設計判断」を完全に捉えることはできません。著者は、以下の4つの機能を備えた**エンジニアリング・ガバナンス層**の必要性を説いています。\n1. **構造化されたコーパス**: 決定事項を優先順位やライフサイクルと共に保持する。\n2. **確実な検索**: 生成時に適切な決定事項を呼び出す。\n3. **コンテキスト注入**: AIがコードを書く前にルールを提示する。\n4. **決定論的な強制**: CI/CDプロセスにおいて、AIの推論ではなく「証拠に基づいたルール」で違反をブロックする。\n\nAIモデルの性能向上を待つのではなく、組織の意思決定をAIが遵守できるような「システム側のガードレール」を構築することが、長期的な品質維持には不可欠です。",
+    "topics": [
+      "AI-assisted development",
+      "Software Architecture",
+      "Engineering Governance",
+      "LLM",
+      "ADR (Architectural Decision Records)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Architectural Guardrails for AI-Generated Code – O’Reilly"
+  }
+}

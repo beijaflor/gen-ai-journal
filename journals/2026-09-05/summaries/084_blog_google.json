@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:02:45.573409+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Geminiにおけるエージェント型ビデオ理解機能の導入",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、動画を動的にスキャンすることでトークン消費を最大88%、コストを最大66%削減しつつ精度を向上させる「エージェント型ビデオ理解」機能をGemini 3.7 Flash等に導入しました。",
+    "summaryBody": "Google DeepMindは、Gemini 3.7 Flash、3.6 Flash、3.5 Flash-Lite向けに「エージェント型ビデオ理解 (Agentic Video Understanding)」機能を発表しました。従来の固定フレームレート（1 FPS等）による静的な処理とは異なり、モデルが特定の目的を持って動画内の必要なセグメントやモダリティ（フレーム、音声、文字起こし）を動的に選択・スキャンする「エージェント・ループ」を採用しています。これにより、長尺動画の分析においてトークン消費を最大88%、コストを最大66%削減しながら、精度を最大7%向上させることに成功しました。主なユースケースとして、1秒未満の瞬間的なシーン検索、異常検知、高精度なオブジェクトカウント、そして数時間に及ぶ動画からの特定情報の抽出（Needle-in-a-haystack）が挙げられます。現在、Google AI StudioのGemini APIおよびGemini Enterprise Agent Platformで利用可能であり、設定を 'agentic' に変更するだけで適用できます。",
+    "topics": [
+      "Gemini 3.7 Flash",
+      "マルチモーダルAI",
+      "動画理解",
+      "Google DeepMind",
+      "エージェントAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Introducing agentic video understanding with Gemini"
+  }
+}

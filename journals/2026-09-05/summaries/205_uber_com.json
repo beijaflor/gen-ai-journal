@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:33:48.854548+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Uberにおける大規模なソフトウェア・ファクトリーの効率的な運用",
+    "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Uberは、AIエージェントをSDLCに深く統合し、利用者数が7倍に拡大する中で、独自のコスト方程式と最適化技術を用いてコスト効率と品質を両立させる「ソフトウェア・ファクトリー」を実現しています。",
+    "summaryBody": "Uberは、開発サイクルの全段階にAIツールを導入した「ソフトウェア・ファクトリー」の運用知見を公開しました。現在、プルリクエストの70%以上にエージェントが関与し、1日3万回以上のエージェントスキルが実行されています。本稿では、AI利用の急増（ユーザー数7倍、リクエスト数9.4倍）に対し、コストを安定させた具体的な最適化戦略が示されています。\n\n主な取り組みは以下の4点です：\n1. **モデル選択の最適化**: 独自のSWEベンチマークに基づき、コストと品質のパレート曲線から最適なモデルを動的に選択。\n2. **トークン消費の抑制**: 1時間のTTLを持つプロンプトキャッシュの活用、400Kトークンでの自動コンテキスト圧縮、推論努力（Reasoning Effort）のデフォルト設定調整などを実施。\n3. **MCP（Model Context Protocol）の効率化**: スキーマ肥大化を防ぐためのCLI経由のツール解決や、Pythonループを用いてツール呼び出しをバッチ化する「Code-mode」により、トークン使用量を50〜90%削減。\n4. **グラウンディングの強化**: 2,400万ノード規模の「AI Context Graph」を構築し、エージェントが情報を探すための無駄な試行（ターン数）を劇的に減少させています。\n\nまた、開発者向けにリアルタイムのコスト可視化ダッシュボードを提供し、非効率なパターンを自動検知する仕組みも構築されています。",
+    "topics": [
+      "AI Agents",
+      "Software Engineering",
+      "LLM Optimization",
+      "Cost Engineering",
+      "Uber Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Running a Software Factory Efficiently at Uber Scale"
+  }
+}

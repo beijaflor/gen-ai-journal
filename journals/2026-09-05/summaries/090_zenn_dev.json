@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:01:18.523039+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "証明できる指摘だけを出す仮説駆動セキュリティアセスメントを Claude Code Skill にした",
+    "url": "https://zenn.dev/toshipon/articles/claude-code-security-assessment-skill",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code向けに開発された、パターンマッチングに頼らず「反証可能性」と「証拠グレード」に基づいた確実な脆弱性のみを指摘するセキュリティアセスメントスキルの解説。",
+    "summaryBody": "AIによるセキュリティレビューにおける「偽陽性の量産」と「サイレントな見落とし」という課題を解決するためのClaude Code用スキル「security-assessment」が公開されました。このツールは、単なる脆弱性スキャンではなく、攻撃者の能力に関する反証可能な仮説（falsifier）を先に立てる「仮説駆動」アプローチを採用しています。特徴として、確認できなかった領域を『安全』と決めつけず『UNKNOWN』として管理するレジストリ機能や、ツールの出力を鵜呑みにせず挙動の直接観測（E1/E2グレード）を要求する証拠管理システムを搭載しています。マルチエージェント構成により、サブエージェントが収集した候補をメインのオーケストレーターが実ファイルに基づいて最終検証することで、論理的に証明可能な高品質な指摘のみを抽出することを可能にしています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティアセスメント",
+      "AIエージェント",
+      "脆弱性診断",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

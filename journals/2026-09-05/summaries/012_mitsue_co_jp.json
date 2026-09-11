@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:21:46.488911+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Figma Motionで作ったアニメーションを、Figma MCPで取得する",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202609/03_1730.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Figma Motionで作成したアニメーション詳細を、Figma MCP Serverのget_motion_contextを利用して開発用コードとして抽出・活用する方法を紹介。",
+    "summaryBody": "Figma Motion（2026年発表のタイムライン形式アニメーション設計機能）で作成されたアニメーション情報を、Figma MCP Serverを通じて取得する手法を解説しています。従来の`get_design_context`では静的なレイアウトやスタイル情報の取得に限定されていましたが、新たに提供された`get_motion_context`を使用することで、キーフレーム、イージング、タイミングといった動的なデータを取得できます。出力にはFramer Motion用のコード断片やCSS @keyframesが含まれており、AIがアニメーションの意図を推測することなく、数値に基づいた正確なフロントエンド実装を実現できる点が大きなメリットです。アノテーション（注釈）による曖昧な伝達を廃し、より「AIフレンドリー」な開発フローを提案しています。",
+    "topics": [
+      "Figma",
+      "Figma Motion",
+      "Figma MCP",
+      "Framer Motion",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

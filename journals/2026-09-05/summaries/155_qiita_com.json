@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:45:21.265993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スター6万のAgent Skillを入れたら、呼ぶたびに9万トークン必要だった",
+    "url": "https://qiita.com/suwa_nobu/items/817a26e02cd1f08c7edd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubで人気のClaude Code用スキルを検証し、実行時に9万トークンを消費する実態や、指示書型と実装型スキルの設計思想のトレードオフを解説。",
+    "summaryBody": "GitHubで6万以上のスターを集めるClaude Code用プラグイン「last30days-skill」の導入検証記事です。著者の自作スキル（指示書型）が起動時に約3,225トークンを消費するのに対し、このプラグイン（実装型）はRedditやYouTube等の19以上のソースを自前で処理するため、1回の呼び出しで約9万トークンを消費することが判明しました。また、Python 3.12以上の環境を厳密に要求し、依存関係を満たさない場合は代替手段で誤魔化さないという設計上のこだわりや、アンインストール後もキャッシュ（32MB）が残る点などの注意点が示されています。導入前に`claude plugin details`コマンドでトークンコストを確認する重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "トークンコスト",
+      "Python",
+      "LLMプラグイン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

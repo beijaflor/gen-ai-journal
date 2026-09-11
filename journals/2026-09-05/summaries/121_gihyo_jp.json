@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:53:26.482452+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Alibaba、AIエージェントも利用できるローカル検索ツール「zg」をオープンソースとして公開",
+    "url": "https://gihyo.jp/article/2026/09/zg",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Alibabaは、意味検索と文字列検索を統合し、MCP経由でAIエージェントからも利用可能なローカル検索ツール「zg」をオープンソース公開した。",
+    "summaryBody": "AlibabaのベクトルデータベースZvec開発チームが、ローカル検索ツール「zg（zvec-grep）」を公開しました。このツールは、従来のripgrep（rg）のような高速な文字列・正規表現検索に加え、埋め込みモデルを活用した意味検索、BM25、およびそれらをRRFで統合するハイブリッド検索を一つのCLIツールで提供します。\n\n大きな特徴は、インプロセス型ベクトルDB「Zvec」を基盤に、ファイルの読み取りからベクトル変換、索引保存までをローカル端末内で完結できる点です。これによりプライバシーを保ちつつ、キーワードが不明なコードやドキュメントも自然言語で検索可能です。また、Model Context Protocol（MCP）に対応しており、Claude CodeやCursor、OpenCodeなどのAIエージェントと簡単に連携できます。開発元のベンチマークでは、zgの導入によりエージェントのツール呼び出し回数や入力トークンを約半分に削減しつつ、回答品質を向上させる結果が示されています。現在は主要プログラミング言語やMarkdownに対応しており、今後はPDFやOfficeファイルへの対応、OCR機能などの拡張が計画されています。",
+    "topics": [
+      "AIエージェント",
+      "ベクトル検索",
+      "MCP",
+      "オープンソース",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

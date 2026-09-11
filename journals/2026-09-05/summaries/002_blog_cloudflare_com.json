@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:24:12.959736+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Managed DefenseとOpenAI Daybreakによるコンテキストを考慮した脆弱性の発見と修正の導入",
+    "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareがOpenAIの最新モデルを活用し、実際のネットワークトラフィックとコード分析を組み合わせて脆弱性を優先順位付け・修正する新サービス「Vulnerability Discovery and Remediation」を発表しました。",
+    "summaryBody": "Cloudflareは、Managed Defenseの一環として「Vulnerability Discovery and Remediation (VDR)」の早期アクセスを開始しました。このサービスは、OpenAIの次世代モデル「GPT-5.6 Cyber」を含むDaybreak Defense Networkを利用し、顧客が許可したコードベース内の脆弱性を自動で検出・検証します。\n\n最大の特徴は、静的なコードスキャンにCloudflareのネットワークコンテキストを統合している点です。WAFやWeb Assets、Workers Observabilityのデータを活用することで、その脆弱性が「実際に本番環境で稼働しているか」「どの程度のトラフィックを受けているか」「現在攻撃の標的になっているか」をリアルタイムで把握し、真に緊急性の高い問題から優先的に対処できるようにします。\n\n検出された脆弱性に対しては、AIが具体的なコードパッチと、即座に適用可能なWAFカスタムルールを提案します。すべての提案はCloudflareの専門チームによる検証を経て提示され、最終的な適用判断はユーザーが行う「Human-in-the-loop」の形式をとっています。これにより、AIによる迅速な脆弱性発見と、本番環境への安全なデプロイを両立させています。",
+    "topics": [
+      "Cloudflare",
+      "OpenAI Daybreak",
+      "脆弱性管理",
+      "AIセキュリティ",
+      "WAF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak Models | Cloudflare Blog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:55:33.166820+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "humanlayerのAIエージェント向け可視化スキル「show-me」の定義仕様",
+    "url": "https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがユーザーに対して、図解や擬似コード、HTMLなどを駆使して視覚的かつ簡潔に情報を伝えるためのガイドライン。",
+    "summaryBody": "humanlayerのリポジトリで公開されている「show-me」スキルの定義ファイルです。AIエージェントが複雑な概念や構造を説明する際、長々とした文章（プローズ）を避け、最小限の記述で最大の理解を得るための手法を規定しています。具体的には、ロジックを説明するための擬似コード、制御フローを示すコールツリー、UI構造を表現するコンポーネントツリー、ディレクトリ構成、Mermaidを用いたシーケンス図、そしてコードの変更点を示すDiff形式の使い分けが詳細に指示されています。さらに、Mermaidでは表現しきれない複雑なUIやレイアウトについては、専用のHTMLファイルを生成してブラウザで開く（openコマンド）というアプローチも提示されています。AIがユーザーの文脈に合わせて「どの視覚化手法を選択すべきか」の判断基準が含まれており、実用的なプロンプトエンジニアリングの好例となっています。",
+    "topics": [
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "Mermaid",
+      "図解",
+      "humanlayer"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "skills/plugins/show-me/skills/show-me/SKILL.md at main · humanlayer/skills · GitHub"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:36:43.763027+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ThoughtDAG — LLMの文脈を可視化し、編集可能にする",
+    "url": "https://chenxiachan.github.io/thoughtdag/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMのチャット履歴や文脈を有向非巡回グラフ（DAG）として可視化し、モデルに送る情報をノード単位で選択・編集できるオープンソースツール。",
+    "summaryBody": "ThoughtDAGは、LLMとの対話における「コンテキスト（文脈）」をブラックボックスから解放し、ユーザーが直接制御できるようにするツールです。従来のチャットインターフェースでは不可視だった履歴の選択プロセスを、有向グラフとして視覚化します。ユーザーは特定のドキュメント、過去の回答、あるいは特定の思考の断片をノードとして扱い、それらを繋いだり（Wire）削除したり（Prune）することで、モデルに渡される文脈を厳密に定義できます。主要な機能として、Claude CodeやDeepSeek Harnessといった複数のエージェントのセッションを統合する「Session Atlas」、特定のコンテキストがモデルに与える影響を検証する「Context Repair Pilot」などが含まれます。これにより、無関係な情報の混入を防ぎ、推論の精度と再現性を高めることが可能です。ローカルでのインデックス構築、CLIツール、主要OS向けのデスクトップアプリも提供されています。",
+    "topics": [
+      "LLM Context Management",
+      "DAG",
+      "AI Interface",
+      "Context Engineering",
+      "Open Source Tool"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "ThoughtDAG — Make LLM context visible and editable"
+  }
+}

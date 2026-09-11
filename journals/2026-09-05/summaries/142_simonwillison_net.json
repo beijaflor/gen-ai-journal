@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:48:13.822353+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT Workの仕組みを理解する",
+    "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Simon Willison氏が、OpenAIの強力な新サービス「ChatGPT Work」が持つ、自由なネットアクセス、ブラウザ操作、永続ストレージといった既存のChatを凌駕する機能を詳細に解説しています。",
+    "summaryBody": "Simon Willison氏による、OpenAIの「ChatGPT Work」に関する詳細なレビュー記事です。ChatGPT Workは、従来のChatとは一線を画す「タスク完遂」のためのプロダクトとして位置付けられています。主な特徴として、まずインターネット接続が完全に許可されたコード実行環境が挙げられ、GitHubリポジトリのクローンやAPI連携が可能です。また、ヘッドレスChromeを操作しJavaScriptを実行できるブラウザツール、セッション間で共有される永続的なファイルシステム、Cloudflare Workersを用いたWebサイト構築機能（ChatGPT Sites）など、極めて強力なツール群が統合されています。モデル面ではGPT-5.6（Sol, Luna, Terra）の各推論レベルが選択可能。一方で著者は、機密データへのアクセスと外部通信が組み合わさることによるプロンプトインジェクション攻撃への脆弱性（Lethal Trifecta）についても懸念を示しており、機能の強力さと引き換えにセキュリティ面での理解が不可欠であると説いています。",
+    "topics": [
+      "ChatGPT Work",
+      "OpenAI",
+      "GPT-5.6",
+      "AI Agents",
+      "Code Interpreter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Understanding ChatGPT Work"
+  }
+}

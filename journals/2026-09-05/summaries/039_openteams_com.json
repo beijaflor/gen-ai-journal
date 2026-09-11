@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:14:59.912821+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの知能対コスト：線形スケールで見えてくる「収穫逓減」の現実",
+    "url": "https://openteams.com/intelligence-vs-cost/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年時点のLLM市場を分析し、知能スコアと運用コストの相関を線形スケールで可視化することで、高額モデルの投資対効果の低さとローカルモデルの経済的優位性を論じている。",
+    "summaryBody": "ArtificialAnalysisのベンチマークデータを基に、従来の「対数スケール」によるコスト比較が如何に実態（巨大な価格差）を隠蔽しているかを鋭く指摘する記事。著者は、OpenRouter等のアグリゲーター価格や、ローカルハードウェアでの消費電力（電気代）に基づく独自の計算式を用い、線形スケールでの再プロットを試みた。\n\n主な分析結果として、最上位のFable 5.1（知能スコア66）は中位のGLM-5.3（スコア60）の約7.5倍、さらに安価なFlash版（スコア55）の160倍のコストがかかることが判明。知能の差が「わずかな性能向上」に留まる一方で、コストは指数関数的に増大する「収穫逓減の法則」が明確に示されている。特に、高度な専門タスクを除けば、RTX 3090などのコンシューマー機で動くローカルモデル（Qwen3.8-27B等）が多くの用途において十分な費用対効果を持つと結論づけている。",
+    "topics": [
+      "LLMベンチマーク",
+      "コスト分析",
+      "ローカルLLM",
+      "収穫逓減",
+      "GPU推論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "LLMs: Intelligence vs. cost"
+  }
+}

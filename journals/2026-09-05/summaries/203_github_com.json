@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:34:17.219352+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "kern: AI生成コードや信頼できないコードのための高速・ルートレスなサンドボックス環境",
+    "url": "https://github.com/getkern/kern",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Rust製の単一バイナリで動作し、OCIイメージを3.5msで起動可能な、AI生成コードの実行に最適な高速・ルートレス・デーモンレスのサンドボックス環境。",
+    "summaryBody": "kernは、信頼できないコードやAIが生成したコードを安全かつ高速に実行するために設計された、Rust製のサンドボックスおよび仮想リソースランタイムです。\n\n### 主な特徴\n- **超高速な起動**: OCIイメージからの起動が約3.4ms、ベア環境では約2.4msと、DockerやPodmanと比較して100倍近く高速です。AIエージェントのツール実行ごとに個別の環境を割り当てる運用が現実的になります。\n- **デーモンレス & ルートレス**: 単一の静的バイナリのみで動作し、バックグラウンドプロセスを必要としません。常に非特権ユーザー（rootレス）で動作するため、ホストOSへの影響を最小限に抑えます。\n- **AI・開発ツールとの統合**: Python、Node.js、MCP（Model Context Protocol）向けのライブラリを提供。LangChainやエディタ（Cursor等）からローカルなコードインタープリタとして容易に利用可能です。\n- **カーネルによる強力な隔離**: Linuxの名前空間（Namespace）、cgroup v2、seccomp（デフォルト拒否）、Landlockなどの機能を活用。リソース制限やネットワーク遮断をカーネルレベルで強制します。\n\n### 補足\nlibc以外の依存関係を持たない純粋なRust実装であり、Docker Composeファイルをそのまま読み込んでスタックを起動する互換機能も備えています。Linux、WSL2、ARM（Raspberry Pi等）をサポートしています。",
+    "topics": [
+      "Sandbox",
+      "Container Runtime",
+      "AI Agents",
+      "Rust",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - getkern/kern: A fast, rootless sandbox and virtual resource runtime for any workload, including untrusted and AI-generated code. Daemonless: a real, kernel-enforced container in ~3.5 ms from an OCI image, out of one static binary"
+  }
+}

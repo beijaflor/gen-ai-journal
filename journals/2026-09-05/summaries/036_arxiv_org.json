@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:15:49.728542+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMは「存在」は確認できるが「不在」は見落とす：臨床記録におけるAIの記載漏れとその克服法",
+    "url": "https://arxiv.org/abs/2608.31016",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる臨床記録の自動生成において、LLM評価者は情報の「記載漏れ（omission）」を検出するのが著しく苦手であることを明らかにし、その解決策を提案した研究。",
+    "summaryBody": "臨床現場でのAI scribe（自動記録ツール）の普及に伴い、生成された記録の正確性をLLMで評価する手法が一般的になっているが、本研究はLLMが「存在しない情報」を見つけることに極めて弱い「Omission Blindness（記載漏れ盲目）」を持つことを実証した。実験の結果、標準的なLLM評価者は捏造や改変の検出には優れる（精度0.79〜0.94）一方で、記載漏れの検出はほぼランダムに近い（精度0.50〜0.63）ことが判明。この課題に対し、著者らは「まず音声文字起こしから事実をリストアップし、その後に記録との照合を行う」というステップを経ることで、記載漏れの検出精度を劇的に改善できることを示した。GEPAで最適化されたシングルコールプロンプトは、従来の8つの設計よりも低い誤検知率で、より多くの記載漏れを検出することに成功している。",
+    "topics": [
+      "LLM評価者",
+      "臨床記録",
+      "記載漏れ検出",
+      "AIメディカル",
+      "プロンプト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers It"
+  }
+}

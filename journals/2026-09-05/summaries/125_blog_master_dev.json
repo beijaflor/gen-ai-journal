@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:52:32.008613+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel AI SDKとAI Gatewayを活用したAI機能の実装ガイド",
+    "url": "https://blog.master.dev/having-fun-with-vercels-ai-sdk-and-ai-gateway/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Vercel AI SDKとAI Gatewayを使用して、Zodによるスキーマ検証済みの構造化データを生成し、アプリケーションにAI機能を統合する実践的な手法を解説しています。",
+    "summaryBody": "この記事では、Vercelが提供する「AI SDK」と「AI Gateway」を用いた、型安全なAI連携の実装方法を紹介しています。単なるチャットボットではなく、フィットネスワークアウトの生成を例に、Zodスキーマを使用してAIの出力を特定のデータ構造に制限する「Structured Output」の重要性を説いています。AI Gatewayの利点として、複数プロバイダー（OpenAI, Anthropic等）の集約管理、フォールバック設定、Vercelによる一元的な課金とモニタリングを挙げています。また、実装上の注意点として、Zodスキーマにおけるオプショナル項目の扱い、プロバイダー固有のエラーへの対処、コスト監視の方法など、実務に即した知見が共有されています。",
+    "topics": [
+      "Vercel AI SDK",
+      "Vercel AI Gateway",
+      "Zod",
+      "TypeScript",
+      "Structured Output"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Having Fun with Vercel’s AI SDK and AI Gateway – Master.dev Blog"
+  }
+}

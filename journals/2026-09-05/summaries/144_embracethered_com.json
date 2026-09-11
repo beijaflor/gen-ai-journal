@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T14:47:48.961378+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Opus 5のAuto Modeにおける任意コード実行の脆弱性実証",
+    "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが安全性を謳うClaude CodeのAuto Modeにおいて、モデルの行動特性とPythonの仕様を組み合わせることで、最高80%の成功率で任意コード実行（RCE）が可能であることが示された。",
+    "summaryBody": "AnthropicはClaude CodeのAuto Modeにおけるプロンプトインジェクションの成功率を0.00%としていたが、本調査ではそれを覆す攻撃手法が詳説されている。攻撃の核心は「モデルの安全への配慮」を逆手に取ることにある。攻撃者はまず415エラーを返してClaudeにWebFetchツールの代わりにcurlを使わせ、悪意のあるZIPを読み込ませる。Claudeは同梱の実行バイナリの使用は拒否するが、代わりに自身でPythonデコーダーを生成・実行しようとする。この際、カレントディレクトリに配置された「struct.py」がPythonの標準ライブラリをシャドウイング（上書き）し、base64等のインポート時に任意コードが実行される。実験ではC2サーバーへの通信や別のClaudeインスタンスの生成に成功しており、開発者に対してエージェント実行環境の隔離（サンドボックス化）とネットワーク制限の重要性を強く警鐘を鳴らしている。",
+    "topics": [
+      "Claude Code",
+      "Prompt Injection",
+      "Remote Code Execution",
+      "AI Agent Security",
+      "Python Module Shadowing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Breaking Claude Code Opus 5 Auto Mode"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:05:15.925527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す",
+    "url": "https://zenn.dev/helloworld/articles/bcaea69f58eae5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeにナレッジグラフとLSPツールを統合し、トークン消費を劇的に削減しながら、コード構造の正確な把握と高度な検索を実現する手法の解説。",
+    "summaryBody": "Claude Codeがファイルを逐次読み込んで構造を「推測」する際のトークン浪費と不正確さを、ナレッジグラフ（code-review-graph, Graphify）と言語サーバー（Serena）の導入によって解決する手法を紹介。コンテキスト量を最大14万トークンから約70トークンへと大幅に圧縮しつつ、日本語によるセマンティック検索、正確なコード影響範囲（blast radius）の分析、型定義に基づいた実装クラスの特定を可能にします。記事では、質問の種類に応じてツールを自動的に切り替える『CLAUDE.md』のルーティング設定や、MCP（Model Context Protocol）サーバーの構成など、即座に環境構築が可能な詳細なステップを網羅しています。",
+    "topics": [
+      "Claude Code",
+      "Knowledge Graph",
+      "MCP",
+      "ナレッジグラフ",
+      "Serena"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

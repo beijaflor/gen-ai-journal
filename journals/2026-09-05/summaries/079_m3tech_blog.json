@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:03:56.163063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでトークンリミットが頻発したので、作業ごとにリミットを設定した",
+    "url": "https://www.m3tech.blog/entry/claude-budget-tags",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの5時間/7日間トークン制限を効率的に管理するため、セッションごとに「タグ」を付けて使用率の予算を配分・制限する自作ツールを導入した事例紹介。",
+    "summaryBody": "Claude Codeを利用した並列タスクやバックグラウンドエージェントの稼働により、メインの作業枠（5時間/7日間制限）が枯渇する問題への対策記事です。Claude Codeの標準機能であるstatusLineや各種フック（UserPromptSubmit, PreToolUse）を活用し、セッションに割り当てたタグごとに「枠の何%まで使用を許可するか」を設定できる仕組みを構築。公式の使用率データを、ローカルのトークン積算重みに基づいてタグごとに按分して計算するロジックや、ツール実行前に遮断して余計な消費を防ぐ実装の詳細が解説されています。これにより、特定のサブタスクが全体のクォータを使い切ることを防ぎ、メイン開発の継続性を確保しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "トークン制限",
+      "AIエージェント",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

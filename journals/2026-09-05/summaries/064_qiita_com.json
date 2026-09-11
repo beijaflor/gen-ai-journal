@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-06T15:07:21.491072+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のサブエージェント、モデルの固定手段が4日で戻ってきた",
+    "url": "https://qiita.com/suwa_nobu/items/e0e1ca2287fb4da46852",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code v2.1.257で導入された新環境変数により、エージェント定義の設定を無視してサブエージェントのモデルを強制的に固定・統一することが可能になりました。",
+    "summaryBody": "Claude Codeのアップデート（v2.1.251）で一度失われた「サブエージェントのモデル固定機能」が、わずか4日後のv2.1.257にて新変数 `CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1` として再実装されました。このフラグを立てることで、エージェント側で `model:` が明示されている場合や、組み込みの Explore/Plan タスクであっても、`CLAUDE_CODE_SUBAGENT_MODEL` で指定したモデルで強制動作させることができます。検証の結果、`fork` タイプのサブエージェント（メイン会話モデルを維持）を除き、ほぼすべての定義を上書きできることが確認されました。また、`fork` を有効にするための未ドキュメントの変数 `CLAUDE_CODE_FORK_SUBAGENT=1` の必要性についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "LLM",
+      "Qiita"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
