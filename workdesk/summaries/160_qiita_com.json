@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:34:37.310726+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6 Lunaを2ヶ月使い倒した結果、ガチでコスパ最強だった",
+    "url": "https://qiita.com/nolanlover0527/items/b019a99daaca6687cdf7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年リリースのGPT-5.6 Lunaを実務で検証し、Claude Opus 4.6に迫る性能を極めて低いコストで提供する圧倒的なコストパフォーマンスを評価したレビュー。",
+    "summaryBody": "本記事は、2026年7月にOpenAIがリリースしたGPT-5.6シリーズの最安モデル「Luna」を2ヶ月間、実務（コーディング、コード調査、資料作成）で使い倒した詳細な検証レポートです。AWSのAI IDE「Kiro」を用い、メインモデルであったClaude Opus 4.6を基準（100点）とした相対評価を行っています。\n\n評価の核心は、入力$0.20/1Mトークンという驚異的な低価格にあります。Kiro上のクレジット消費ではOpus 4.6の10〜20分の1でありながら、コーディング精度は75%、日本語能力は90%と実用レベルを維持。100万トークンの広大なコンテキストウィンドウも上位モデルと同様に備えています。弱点として回答が冗長になりがちな点が挙げられますが、CLAUDE.md等の設定ファイルで指示を固定することで運用回避が可能。複雑な設計判断以外の大半の日常タスクを代替できる「最強のサブ／メイン候補」として結論づけています。",
+    "topics": [
+      "GPT-5.6 Luna",
+      "OpenAI",
+      "LLM",
+      "コストパフォーマンス",
+      "Kiro"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

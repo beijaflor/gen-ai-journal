@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:30:09.039723+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【godot-llm-gamebench】gemini-3.8-flashはEffortによってどのように性能が変わるのか",
+    "url": "https://zenn.dev/oubakiou/articles/028194eb2b269f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemini 3.8 FlashのEffort設定（Low/Medium/High）がGodotでのゲーム実装性能に与える影響を検証し、性能の伸び悩みとLow設定の費用対効果の高さを明らかにした記事。",
+    "summaryBody": "本記事は、Godot Engine（GDScript）を用いたミニゲーム実装ベンチマーク「godot-llm-gamebench」におけるGemini 3.8 Flashの性能を検証しています。Devin CLI上で親エージェントにClaude-Opus-5を使用し、GeminiのEffort設定（low/medium/high）による差異を3回の反復試行で測定しました。主な結果として、他の高精度モデル（Luna等）とは異なり、Effortを上げても自動テストのスコアは90〜92点付近で横ばいとなり、有意な向上は見られませんでした。一方でコード品質（型定義や設計面）についてはHigh設定が最も安定し、下振れを抑制する効果が確認されました。費用面ではLowが最も安価（$0.430）であり、現状のGemini 3.8 FlashにおいてはLow設定が最も効率的であると結論づけています。また、GPT-5.6-Lunaとの比較では、スコア・安定性・コストの全項目でLunaが優位であるという厳しい結果も示されています。",
+    "topics": [
+      "Gemini 3.8 Flash",
+      "Godot",
+      "LLMベンチマーク",
+      "GDScript",
+      "Devin"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

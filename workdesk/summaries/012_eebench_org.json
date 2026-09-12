@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:15:25.796494+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはすでに回路設計ができるのか？ — EEBench V1 リーダーボードと評価手法",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "EEBenchは、AIモデルが実際の電子回路設計をどの程度遂行できるかを、シミュレーションとコードベースの設計ツールを用いて客観的に評価するベンチマークです。",
+    "summaryBody": "OpenAIのGPT-6 AstraやxAIのGrok 4.6など、最新のAIモデルが電子工作分野に進出する中、その実用性を測定するためのベンチマーク「EEBench」が注目されています。従来のGUI操作ではなく、宣言的コード（atopile）を使用することで、AIがコンポーネント、接続、電気的制約を直接操作し、SPICEシミュレーションによる厳格な自動評価を可能にしています。評価には現実世界の部品特性（公差や電圧による容量変化）やコスト効率も含まれており、単なる理論値ではない「エンジニアリングとしてのトレードオフ」を測定します。最新のリーダーボードではClaude Opus 5が首位（61.6%）を獲得し、xAIのGrok 4.6がそれに続く結果となりました。AIによる回路設計は「実用的な範囲」に入りつつあり、今後より複雑なタスクへの対応が期待されています。",
+    "topics": [
+      "EEBench",
+      "AIによる回路設計",
+      "atopile",
+      "電子工作",
+      "ハードウェア自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Can AI design circuit boards yet? — EEBench"
+  }
+}

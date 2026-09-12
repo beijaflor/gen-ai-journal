@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:10:11.635214+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Git の main ブランチを汚さない AI 振り返り台帳管理",
+    "url": "https://kawasin73.hatenablog.com/entry/2026/09/02/125317",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitのOrphanブランチを活用し、AIエージェントの試行錯誤を記録する「振り返り台帳」をメイン履歴から分離・共有するアーキテクチャの提案。",
+    "summaryBody": "AIによる開発（ハーネスエンジニアリング）を効率化するための「振り返り台帳」の管理設計を紹介しています。従来のセッションごとの振り返りでは、コンテキストの肥大化や、デバイス間（ローカルとクラウド）での台帳共有の欠如が課題となっていました。この解決策として、GitのOrphanブランチを2層構造で使用する手法を提案しています。追記専用でコンフリクトを回避する `harness/journal` ブランチと、情報を集約・管理する `harness/ledger` ブランチに分離することで、mainブランチのコミットログを汚さずにデータの整合性と共有性を確保します。また、LLMがGit操作を容易かつ低コストに行えるよう、操作を抽象化したシェルスクリプトを介在させる運用の実用性についても言及しています。",
+    "topics": [
+      "Git",
+      "LLM",
+      "Harness Engineering",
+      "Orphan Branch",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

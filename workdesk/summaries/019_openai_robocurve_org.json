@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:14:04.823970+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 Astraによるロボットアーム制御：Claude Fableとの比較検証",
+    "url": "https://openai.robocurve.org/gpt-6-astra/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのGPT-6 Astraをロボット制御に適用した実験で、単純な移動タスクではClaude Fableを圧倒する効率性を示したが、精密な嵌め込み作業では同等の課題に直面することが判明した。",
+    "summaryBody": "OpenAIの次世代モデル「GPT-6 Astra」を用い、2基のロボットアーム（YAM arms）を制御して物理的タスクの性能を検証したレポート。AnthropicのClaude Fable 5および5.1との比較実験が行われた。「ブロックをボウルに入れる」という比較的単純なタスクにおいて、Astraは95%（19/20回）という高い成功率を記録し、Fable 5.1の40%を大きく引き離した。さらに、1試行あたりのコストは約0.94ドルとFableの半分以下に抑えられ、実行速度も2倍以上に向上している。一方で、高精度な位置合わせを要する「パズルピースの埋め込み」タスクでは、成功率は10%に留まり、Fableと同様に最終段階での微調整に課題を残した。Astraの強みは出力トークンの極端な少なさによる推論の効率化にあり、これがコストと速度の優位性に直結している。",
+    "topics": [
+      "GPT-6 Astra",
+      "ロボット制御",
+      "Claude Fable",
+      "ベンチマーク",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "GPT-6 Astra on robot arms | Robocurve"
+  }
+}

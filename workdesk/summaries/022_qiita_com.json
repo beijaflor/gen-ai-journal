@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:13:21.418688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに設計を任せるときに気をつけたい。「正しく動く」と「増えても耐えられる」は別だった",
+    "url": "https://qiita.com/adgjmptw0/items/365a4437aad4c939d1cc",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "生成AIによる設計では「動作の正しさ」だけでなく、スケール時のパフォーマンスやN+1問題の発生を人間が意識的にレビューする必要があることを説く。",
+    "summaryBody": "生成AIを用いてプッシュ通知機能を設計した際、1ユーザーあたり最大11回のDB問い合わせが発生する非効率な構造（N+1問題の変種）が提案された事例を紹介しています。AIは各ステップの論理性は担保するものの、データ量が増加した際のバッチ処理や通信コストの最適化を自動で行わない場合があります。著者は、AIを活用することで開発速度が向上するからこそ、人間が「対象人数が100倍・1000倍になった時にどうなるか」という視点で設計を監査することや、AI自身に性能面に特化したレビューを依頼する重要性を強調しています。",
+    "topics": [
+      "生成AI",
+      "システム設計",
+      "データベース",
+      "N+1問題",
+      "パフォーマンス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 82
+    }
+  }
+}

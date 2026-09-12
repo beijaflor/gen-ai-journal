@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:10:17.154938+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TradingAgents: 多エージェントLLM金融トレーディングフレームワーク",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のLLMエージェントが専門知識を活かして市場分析から取引の意思決定までを自律的に行う、LangGraphベースのオープンソース金融トレーディングフレームワーク。",
+    "summaryBody": "TradingAgentsは、現実の投資会社のような役割分担をLLMエージェントで再現したマルチエージェント・フレームワークです。ファンダメンタル、センチメント、ニュース、テクニカルの各アナリストエージェントが市場を多角的に分析し、強気派と弱気派の調査員が議論を交わすことでリスクとリターンを精査します。最終的にはポートフォリオマネージャーが取引の承認を行い、シミュレートされた取引所にオーダーを送る仕組みです。LangGraphを利用した拡張性の高いアーキテクチャを持ち、GPT-5、Gemini 3、Claude 4といった最新（将来モデル含む）のLLMをサポート。意思決定ログの保存による過去の教訓の継承や、処理の中断から再開できるチェックポイント機能など、研究用途として高度な機能を備えています。",
+    "topics": [
+      "Multi-Agent Systems",
+      "LLM",
+      "Financial Technology",
+      "LangGraph",
+      "Quantitative Trading"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - TauricResearch/TradingAgents: TradingAgents: Multi-Agents LLM Financial Trading Framework"
+  }
+}

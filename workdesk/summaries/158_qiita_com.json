@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:35:07.398972+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最近取り入れたClaude Codeの個人的tips 4選",
+    "url": "https://qiita.com/kuma_3838/items/00cb0b8d61ca76769c88",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの利便性を高めるセッション名の自動化、ステータスラインのカスタマイズ、レートリミット対策、そして管理ツールOrcaの導入という4つの実戦的なTipsを紹介しています。",
+    "summaryBody": "この記事では、AIコーディングアシスタント「Claude Code」をより効率的に活用するための4つのテクニックが解説されています。1. **セッション名の自動付与**: フック機能（UserPromptSubmit）とBashスクリプトを組み合わせ、1往復目の後に生成されるai-titleを自動的にカスタムタイトルに反映させ、ブランチ名からIssue番号を付与する方法。2. **ステータスラインのリンク化**: OSC 8エスケープシーケンスを用いて、ステータスラインにGitHubのIssueやPRへの直接リンクを表示する工夫。3. **レートリミットの最適化**: 5時間のローリングウィンドウを制御するため、毎朝決まった時間にpingを送信してリセット時間を固定する運用。4. **Orcaの導入**: 複数ワークツリーやエージェントを一元管理できるデスクトップアプリの活用。これらを通じて、開発ワークフローの認知負荷を下げる具体的な実装案が提示されています。",
+    "topics": [
+      "Claude Code",
+      "生成AI",
+      "Bash",
+      "GitHub",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

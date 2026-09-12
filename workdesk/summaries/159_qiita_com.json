@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:34:54.909044+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに判断を任せるな",
+    "url": "https://qiita.com/sai029/items/f0073f1ea5ad30f71ac5",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント開発において、生成はAIに任せつつも、最終的な判断や検証を決定論的なプログラムで行うことで信頼性とテスト可能性を担保する設計手法の提案。",
+    "summaryBody": "Google Cloud主催のハッカソンで特別賞を受賞した著者が、AIエージェント開発における「AIとプログラム（機械）の境界線」について解説した記事。最大の本質的教訓は、LLMに『判断』を任せず、『生成（材料作り）』に留めることにある。LLMの出力には再現性がなく、テストが困難であり、さらに『LLM-as-a-Judge』による検証自体もブレるという課題を指摘。解決策として、AIにはスコア付けや文章作成のみを行わせ、最終的なフィルタリング、ルビの形式チェック、数値のハルシネーション確認、パーソナライズの重み計算などはすべてif文や数式などの「機械的ロジック」で処理する設計を推奨している。このガードレール設計こそが、本番運用における品質保証の鍵となる。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "ソフトウェアアーキテクチャ",
+      "DevOps",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

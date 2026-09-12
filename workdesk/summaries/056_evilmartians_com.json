@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:21:23.588937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "The Golden Switch: GatsbyからAstroへ9¾日以内で移行した記録",
+    "url": "https://evilmartians.com/chronicles/golden-switch-or-migrating-from-gatsby-to-astro-in-under-9-days",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Evil Martians社が、GatsbyからAstroへの大規模な移行を、LLM（Claude）と徹底した事前準備（画像処理の分離やスナップショットテスト）を組み合わせることで、実質2週間で完遂した事例報告。",
+    "summaryBody": "Evil Martians社が自社サイトをGatsbyからAstroへ移行した際の技術レポートです。AI（Claude）を活用し、わずか8営業日で移行を完了させた戦略が詳細に語られています。成功の柱となったのは、単なるコード変換ではなく「3つの事前準備」です。具体的には、1) 画像処理を`imgproxy`へ移譲してビルド時間を短縮、2) ビルド結果をバイト単位で比較する「決定論的スナップショット・ハーネス」の構築、3) 1,100行に及ぶ詳細な移行計画の策定です。AIは機械的なリファクタリングを大幅に加速させましたが、CSSの優先順位問題やCDNのキャッシュ競合によるバグなど、AIでは検知できない「4つの落とし穴」については人間のエンジニアによる高度な判断が不可欠でした。最終的にJavaScript量を61%削減し、Lighthouseスコアを66から90へ向上させることに成功しました。",
+    "topics": [
+      "Astro",
+      "Gatsby",
+      "LLM",
+      "Web Performance",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "The Golden Switch, or migrating from Gatsby to Astro in under 9¾ days"
+  }
+}

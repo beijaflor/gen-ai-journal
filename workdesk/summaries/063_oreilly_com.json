@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:19:18.449505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実行状態としての動作モード：エンタープライズAIのためのコントラクト",
+    "url": "https://www.oreilly.com/radar/operating-mode-as-runtime-state-a-contract-for-enterprise/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エンタープライズAIエージェントにおいて、障害対応などの一時的な例外処理が永続化する「例外ドリフト」を防ぐため、組織の動作モードを明示的なランタイム状態として定義するアーキテクチャを提案する。",
+    "summaryBody": "エンタープライズシステムでは、障害発生時に承認プロセスを簡略化するなどの「例外ルート」が設定されることがあるが、これらがインシデント終了後も放置される「例外ドリフト」がリスクとなっている。特に自律的にツールを選択するAIエージェントにおいて、この傾向は顕著である。本記事では、AIエージェントの実行コンテキストに、アイデンティティや権限と同様に「動作モード（通常、インシデント、リカバリ等）」を明示的なランタイム入力として注入する設計パターンを提案している。この「例外認識型（Exception-Aware）」のアーキテクチャでは、例外のスコープ、承認者、有効期限を定義した共通のコントラクトを導入し、プラットフォーム側で一元管理する。これにより、エージェントはプロンプトの推論に頼ることなく、組織の状態に基づいたガバナンスを遵守した行動を選択でき、障害復旧後の正常状態への復帰も自動的かつ検証可能な形で実現可能となる。",
+    "topics": [
+      "AIエージェント",
+      "ガバナンス",
+      "エンタープライズアーキテクチャ",
+      "インシデント管理",
+      "例外ドリフト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Operating Mode as Runtime State: A Contract for Enterprise"
+  }
+}

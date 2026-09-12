@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:29:39.956804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Skillは振る舞いとナレッジを分けて設計する",
+    "url": "https://zenn.dev/socialplus/articles/f5d9e28470eb99",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントのスキル設計において「振る舞い」と「ナレッジ」を分離し、ソフトウェア設計の原則を適用することで、メンテナンス性とチーム開発効率を高める手法を提案している。",
+    "summaryBody": "Claude CodeなどのAIエージェントで利用する『スキル』の設計方針に関する技術解説。初期のスキル開発では一つのファイルに手順と観点が混在し、メンテナンス性が低下する『神スキル（God ClassならぬGod Skill）』問題が発生しやすい。筆者はこの課題に対し、ソフトウェア設計の原則（SOLID原則や関心の分離）を応用し、手順を記述する『振る舞い（SKILL.md）』と、具体的な判断基準を記述する『ナレッジ（references/*.md）』にファイルを分割する手法を推奨している。この設計により、自然言語による曖昧な指示の肥大化を防ぎ、特定ツールへの依存を排除（依存性逆転）できる。さらに、職能を超えたスキルの再利用やチームでの継続的なナレッジ蓄積が可能になる。この構成はAnthropicやOpenAIの公式スキルベストプラクティスとも合致しており、実務でエージェントを運用する上での有用なパターンである。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "ソフトウェア設計",
+      "SOLID原則"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

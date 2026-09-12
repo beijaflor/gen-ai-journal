@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:28:43.231120+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Nuxt.js から Next.js へ ── フロントエンド技術リプレイスにおけるハーネスエンジニアリングと理解負債",
+    "url": "https://zenn.dev/mediba/articles/7d0d7d70678546",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを用いたNuxtからNextへの技術リプレイスにおいて、ハーネスエンジニアリングによる効率化とAI依存で生じる「理解負債」への対策を詳説した記事。",
+    "summaryBody": "株式会社medibaにおける、Nuxt.jsからNext.jsへの大規模リプレイスプロジェクトの知見です。AIコーディングツール「Claude Code」を最適化するため、ルール、コンテキスト、フィードバック、スキルを整理する『ハーネスエンジニアリング』を採用しています。具体的には、画面仕様書の自動マークダウン化、Playwrightとreg-cliを用いたUIの自動比較検証など、開発フロー自体をスキルとして自動化。AI活用により移植精度の向上と高速化、属人化防止という大きなメリットを得る一方、技術負債の自動継承や、開発者が仕様を深く把握しなくなる『理解負債』が課題となっています。これに対し、現行システムの意図的な操作、網羅的なモックデータ構築、mermaidによる図解、全関連リポジトリのClaudeへの集約といった泥臭い取り組みを通じて、AI時代のコード理解と品質維持を両立させています。",
+    "topics": [
+      "Next.js",
+      "Claude Code",
+      "リプレイス",
+      "AIコーディング",
+      "ハーネスエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

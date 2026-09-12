@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:34:10.584226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHubトレンドのスキル集を入れたら、自分のスキル2本の説明が消えた",
+    "url": "https://qiita.com/suwa_nobu/items/0424c506333a31da0d04",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeに多数のスキルを追加すると、内部的な文字数予算制限により使用頻度の低いスキルの説明文が自動的に削られ、スキルの呼び出し精度が低下する場合があることを実証した。",
+    "summaryBody": "Claude Codeのスキル管理機能における「文字数予算（Budget）」の挙動を詳細に検証したレポートです。GitHubトレンドにあるスキル集（37本）を自作スキル（47本）に加えたところ、総入力トークン数が逆に減少する現象を確認。調査の結果、Claude Codeはシステムプロンプト内のスキル一覧を一定の文字数内に収めるため、使用頻度の低いスキルから順に説明文（Description）を削除・短縮する仕様であることが分かりました。スキル名自体は維持されるものの、説明に含まれるキーワードが失われることでAIが適切にツールを選択できなくなるリスクが生じます。対策として、設定値（skillListingBudgetFraction）の調整や、各スキルの説明文を簡潔に保つことの重要性を指摘しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "生成AI",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

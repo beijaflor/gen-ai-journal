@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:14:36.812496+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeの新しいシステムプロンプト：歌詞再現の禁止と著作権保護の強化",
+    "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが公開したClaudeの最新システムプロンプトの変更点を分析し、歌詞や著作権キャラクターの複製禁止、応答スタイルの洗練、安全性ガイドラインの更新を明らかにしています。",
+    "summaryBody": "Simon Willison氏が、Anthropicが公開したClaude (Fable 5.1等) のシステムプロンプトの変遷を詳細に分析しました。最大の変更点は著作権保護の強化で、歌詞、詩、書籍の一節の複製が厳格に禁止されたほか、SVGやコードを用いた著作権キャラクターの描画も制限されました。これは音楽出版社等による訴訟への対策と見られます。また、応答スタイルでは「honestly」などの修飾語を避け、簡潔かつ直接的な回答が求められるようになりました。安全性面では、薬物に関する問い合わせに対して特定のハームリダクション（害低減）サイトへ誘導するURLが含まれるようになった点や、不当に攻撃的なユーザーに対して過度に卑屈にならず自尊心を保つよう指示が変更された点が注目されます。著者はこれらの変更を追跡・比較するためのGitリポジトリを公開し、AIを用いた自動差分要約の仕組みも構築しています。",
+    "topics": [
+      "Claude",
+      "システムプロンプト",
+      "Anthropic",
+      "著作権",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Claude’s new system prompt really doesn’t want to reproduce song lyrics"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:06:15.637572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スキルを43個作っても越えられない、仕様駆動開発の4つの壁",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260903/sdd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "仕様駆動開発（SDD）による実装の完全自動化を目指したラクスのチームが、4つの構造的課題に直面し、プロセスの改善から「ナレッジを自動でSKILL化する環境整備」へと舵を切った実践記録。",
+    "summaryBody": "ラクスの「楽楽請求」開発チームによる、Claude Code（cc-sdd）を用いた仕様駆動開発（SDD）導入の試行錯誤をまとめた記事です。当初「実装の完全自動化」を目標に43個の独自スキルを構築したものの、「品質の再現性」「レビューの肥大化」「完了基準の不在」「プロセスの重厚さ」という4つの壁に直面しました。特に、個人の生産性は上がるが組織的な資産が蓄積されない「Planモードへの回帰」という課題に対し、戦略を「SDDプロセスの改善」から「SDDが持続的に回るための環境整備」へと転換。具体的には、プルリクエストのレビュー指摘をLLM Wikiへ自動収集し、一定条件を満たしたものをSKILLへ昇格させるパイプラインを構築しました。暗黙知を形式知化し、AIエージェントの品質を組織として担保する仕組み作りが進められています。",
+    "topics": [
+      "仕様駆動開発 (SDD)",
+      "Claude Code",
+      "AI駆動開発",
+      "技術広報",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

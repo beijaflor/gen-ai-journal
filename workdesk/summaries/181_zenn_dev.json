@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:29:26.516643+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 Astra x Unityでゲームを作る",
+    "url": "https://zenn.dev/tkada/articles/d0c31e6533fb62",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6 AstraのPC操作機能を活用し、Unity上で仕様書から3Dアクションゲームを完全自動で作成する実験の記録。",
+    "summaryBody": "OpenAIの次世代モデル「GPT-6 Astra」を用いて、Unityでのゲーム開発を完全自動化する試みのレポートです。従来のようにMCP（Model Context Protocol）を介するのではなく、Astraが直接PCを操作してUnityエディタを動かす手法を採用しています。3D障害物アクションゲーム「Jump Run」の仕様書とUI画像を入力した結果、わずか20分でBGMやSE、外部アセットを含むプレイ可能なゲームが完成しました。特筆すべきは、作業中にMacの画面がロックされた際、AIが自律的にCLI経由の別ディレクトリで検証作業を継続するという驚異的な適応能力を見せた点です。約574万トークンを消費し、費用は約8.39ドルと実用的なコスト感も示されています。",
+    "topics": [
+      "GPT-6 Astra",
+      "Unity",
+      "AIエージェント",
+      "自動開発",
+      "ゲーム制作"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

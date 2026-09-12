@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:31:02.827313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdr × git worktree × Claude Codeの相性がいい話",
+    "url": "https://zenn.dev/gemcook/articles/herdr-worktree-parallel",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeとgit worktreeをHerdrで統合し、AIエージェントによる並列開発を効率化するための具体的な構成とカスタマイズ術を紹介する記事です。",
+    "summaryBody": "AIエージェント「Claude Code」を複数並列で稼働させる際に発生するブランチ切り替えの競合問題を、git worktreeとAI向けターミナルマルチプレクサ「Herdr」を組み合わせて解決する手法を解説しています。HerdrのAgent Skillを利用することで、Claude Code自らがworktreeの作成・削除やペイン操作を行えるようになります。また、Claude CodeのSessionStartフックを活用し、同じリポジトリのworktreeを1つのSpace（画面）に集約し、自動リサイズやブランチ名に基づく色付きラベルの付与を行うシェルスクリプトの実装例も提供されています。これにより、手動のコンテキストスイッチを最小限に抑え、視認性の高い並列開発環境を構築できます。",
+    "topics": [
+      "Claude Code",
+      "Git",
+      "Herdr",
+      "git-worktree",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

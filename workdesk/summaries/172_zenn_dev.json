@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:31:31.555879+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Astra時代のコードファースト3Dモデリング",
+    "url": "https://zenn.dev/koher/articles/code-first-3d-modeling",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6 Astraなどの最新AIとSwift専用ライブラリを用い、GUIツールを使わずコードのみで高品質な3Dモデルを生成する「コードファースト3Dモデリング」の可能性と手法を解説。",
+    "summaryBody": "GPT-6 Astraの登場を機に、AIが直接Swiftコード（RealityKit）を記述して3Dモデリングを行う「コードファースト3Dモデリング」の有効性を検証した記事です。筆者は、AIが押し出しやベベルなどの高度な造形操作をコードで実行できるようにするライブラリ『Realitizer』を開発。これにより、従来の単純な形状の組み合わせを超え、ボーンアニメーションを含む複雑なキャラクターや建物をワンショットで生成することに成功しました。記事内では、コード完結型モデリングの利点（アセット管理の不要さ、アプリロジックとの統合性）と課題（実行時の計算負荷、移植性）を整理しています。また、造形能力ではAstraが勝るものの、ゲームの『面白さ』の設計においてはClaude Opus 5の方が優れているといった、モデルごとの特性に関する興味深い比較も行われています。",
+    "topics": [
+      "GPT-6 Astra",
+      "RealityKit",
+      "Swift",
+      "3Dモデリング",
+      "AIモデリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:28:58.578739+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 Astraは何を待ち、いつ指示を取り込むのか — async tool callingとmid-turn steeringを実測",
+    "url": "https://zenn.dev/peoplex_blog/articles/65768c769de4b0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6 Astraの新機能であるAsync Tool CallingとMid-turn Steeringの仕様を、Node.jsによる実測を通じて詳細に検証し、エージェント設計の指針を提示したレポート。",
+    "summaryBody": "OpenAIのGPT-6 Astraで導入された「Async Tool Calling」と「Mid-turn Steering」の挙動を技術的に深掘りした記事です。Async Tool Callingは、ツール実行中もモデルが生成を中断せず、ツール結果に依存しない回答を先行して出力できる機能ですが、ツール結果自体を実行中のレスポンスに即時投入することはできず、後続のターンで反映される仕様であることを実測で証明しています。また、Mid-turn Steeringは生成中の指示変更を可能にしますが、実際には現在の出力アイテム（メッセージ等）の完了（Safe output boundary）を待ってから後続レスポンスで反映される仕組みです。検証の結果、ツール遅延が極めて長い場合にはユーザーへの初動を早める効果がある一方、数秒程度の遅延では従来の同期方式（Sync）の方がコストや全体の所要時間で有利なケースもあることを指摘し、機能の名称から受ける印象と実挙動の差異に注意を促しています。",
+    "topics": [
+      "GPT-6 Astra",
+      "OpenAI API",
+      "Async Tool Calling",
+      "Mid-turn Steering",
+      "LLMエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

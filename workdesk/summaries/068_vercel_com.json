@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:18:02.773953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VercelでOpenAI Agents APIを利用したエージェント構築が可能に",
+    "url": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "VercelがOpenAI Agents APIとの統合を発表し、セッション管理とVercel Sandboxによる分離されたコード実行環境を組み合わせたスケーラブルなAIエージェントの開発が可能になりました。",
+    "summaryBody": "Vercelは、OpenAI Agents APIを利用して長期間稼働し、ツールを活用するAIエージェントの構築・デプロイへの対応を開始しました。この統合では、OpenAIがエージェントのループ処理とセッション状態を管理し、Vercelがアプリケーションのホスティングと「Vercel Sandbox」によるコード実行およびファイルアクセスを提供します。\n\n主な利点は以下の通りです：\n- **効率的な統合**: 署名付きWebhookとVercel Queuesを介した信頼性の高いSandboxの作成と再接続。\n- **分離された実行環境**: 各エージェントセッションに独立した安全なSandboxを提供。\n- **永続的なワークスペース**: セッションを跨いでファイルを保持し、継続的な指示に対応可能。\n- **ゼロスケール・アーキテクチャ**: 常時稼働のワーカーを必要とせず、実行時のみリソースを消費するコスト効率の高い構成。\n\nこれにより、開発者はインフラ管理の手間を省きながら、高度なツール利用機能を備えたエージェントを迅速に展開できます。",
+    "topics": [
+      "Vercel",
+      "OpenAI",
+      "AI Agents",
+      "Serverless",
+      "Vercel Sandbox"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Build with OpenAI Agents API on Vercel"
+  }
+}

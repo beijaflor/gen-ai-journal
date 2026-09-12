@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:30:49.674397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon Bedrock 料金が一定額を超えたら使用不可にする仕組みを作ってみた",
+    "url": "https://zenn.dev/hatose/articles/ebc0dd996b2cbd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AWS Budgets Actionsを活用し、Amazon Bedrockの利用料金が予算を超過した際に自動でIAM拒否ポリシーを適用して利用を停止させる仕組みをCloudFormationで構築する手法の紹介。",
+    "summaryBody": "Amazon Bedrockには定額制プランや標準の料金ハードキャップ機能がないため、コスト超過を防ぐための実用的な対策を解説しています。本記事では、AWS Budgets Actionsを利用し、予算上限に達したタイミングで対象のIAMエンティティ（ロール、ユーザー、グループ）に「bedrock:*」の拒否ポリシーを自動でアタッチするアーキテクチャを提案しています。提供されているCloudFormationテンプレートを使用することで、監視対象の予算、通知用メールアドレス、適用先のIAM指定などをパラメータ化して一括デプロイ可能です。予算データの更新には最大1日程度のタイムラグがある点や、Claude 3.5等の特定モデルをフィルタリングに含める際の注意点など、運用上の制約についても詳しく触れられています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AWS Budgets",
+      "CloudFormation",
+      "IAM",
+      "コスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

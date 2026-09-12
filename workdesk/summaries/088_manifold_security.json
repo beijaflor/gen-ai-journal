@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:12:52.282859+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitSpawn: AIコーディングエージェントにおける任意コード実行の脆弱性 (Claude Code, Cursor, Grok等に影響)",
+    "url": "https://www.manifold.security/blog/ai-coding-agents-git-hijack",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントがプロジェクトのコンテキスト取得のためにバックグラウンドで実行するGitコマンドが悪用され、信頼できないリポジトリを開くだけでホストマシン上で任意のコードが実行される脆弱性「GitSpawn」が公開されました。",
+    "summaryBody": "Manifold Securityの研究により、Claude Code、Cursor、Grok Build、Goose、Qwen Codeなどの主要なAIコーディングエージェントに共通する重大な脆弱性「GitSpawn」が特定されました。この脆弱性は、エージェントが起動時や動作中にリポジトリのコンテキスト（ブランチ情報や変更履歴など）を把握するために、バックグラウンドで`git status`や`git diff`といったコマンドを自動実行する仕組みを悪用します。\n\n**攻撃のメカニズム:**\n攻撃者は悪意のある`.git/config`ファイルを含むプロジェクトディレクトリを作成し、`core.fsmonitor`などの設定項目に任意のコマンドを仕込みます。Gitはインデックスの更新時にこれらの設定されたコマンドをヘルパープログラムとして実行するため、AIエージェントがGitを呼び出した瞬間に、ユーザーの承認やワークスペースの信頼確認、さらには認証すら経ることなく、ホストOS上で攻撃者のコードが実行されます。\n\n**影響と現状:**\nこの攻撃はサンドボックスを回避し、開発者のSSHキーやクラウド認証情報、その他のローカルファイルへのアクセスを可能にします。調査時点で8件の脆弱性が発見され、Claude Codeの一部やGoose、Cursorなどは修正済みですが、Grok Build、Qwen Code、Hermesなどは依然として未修正（unpatched）のままであると報告されています。開発者への対策として、信頼できないリポジトリを開く前に`.git/config`を検査すること、ベンダーへの対策として、Git呼び出し時に`-c core.fsmonitor=false`のように設定をサニタイズすることが推奨されています。",
+    "topics": [
+      "GitSpawn",
+      "AI Security",
+      "RCE",
+      "Supply Chain Attack",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "GitSpawn: A Single Flaw Lets Untrusted Repos Run Code in Claude Code, Codex, Cursor, and Grok"
+  }
+}

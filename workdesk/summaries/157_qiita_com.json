@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:35:21.343229+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeは直さない。CodexにIssueを1件ずつ直させる開発フローを試した",
+    "url": "https://qiita.com/engchina/items/67382edd053798e43bf8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI Coding Agentの役割を分担し、Claude Codeに不具合発見とIssue作成、Codexに修正とPR作成を任せることで、競合を防ぎ追跡可能性を高める開発フローの提案。",
+    "summaryBody": "AI Coding Agent（Claude CodeとChatGPT Codex）を併用する際、役割を完全に分けることで開発効率と品質を安定させる手法についての記事です。Claude Codeを「不具合の発見・分析とGitHub Issueの登録」に専念させ、直接的なコード変更を禁止します。その間に人間による「問題設定と修正方針」のレビューを挟み、品質ゲートとして機能させます。最終的な修正とプルリクエスト作成は、ChatGPT Codexに1件ずつ実行させることで、AI同士のコード競合を防ぎ、GitHub上に明確な判断履歴（トレーサビリティ）を残すことが可能になります。自律的なAI開発において、モデルの性能向上以上に、AIが衝突しないプロセス構築の重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "ChatGPT Codex",
+      "AI Coding Agent",
+      "GitHub Issues",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

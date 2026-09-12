@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:34:23.304887+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ジュニアの「AIが書いたコードが理解できない」問題の対応策",
+    "url": "https://qiita.com/im_yoneda/items/f27e52d2f852ba017a7e",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIにコードを生成させる前に「dig（深掘り）」と「ADR（設計記録）」を用いることで、実装範囲を明確にし、生成されたコードのブラックボックス化を防ぐ手法の提案。",
+    "summaryBody": "エンジニア歴1年の著者が、AI生成コードが理解できない原因は「コードの読み方」ではなく「依頼前の準備不足」にあると分析しています。AIに丸投げすると発生しやすいオーバーエンジニアリングを防ぐため、実装前にAIと対話して要件や例外処理を整理する「digフェーズ」を導入。決定事項をADR（Architecture Decision Record）としてドキュメント化することで、生成コードと自分の意図を照らし合わせることが可能になります。このプロセスにより、コードの理解度が向上し、シニアエンジニアへのレビュー依頼時の説明もスムーズになるという実践的な知見を共有しています。",
+    "topics": [
+      "AIエージェント",
+      "ジュニアエンジニア",
+      "ADR",
+      "プロンプトエンジニアリング",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

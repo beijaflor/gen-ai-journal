@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:24:27.952832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Geiger: ローカルマシン内のAIエージェントやMCPサーバーを可視化するインベントリスキャナー",
+    "url": "https://github.com/Atomburstofficial/geiger",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "マシン上のAIエージェント、MCPサーバー、IDE拡張機能、ブラウザプラグインなどの設定をスキャンし、実行権限や機密情報の有無を一覧化するセキュリティツール。",
+    "summaryBody": "Geigerは、ローカル環境にインストールされた多種多様なAIツール（エージェント、MCPサーバー、IDE拡張、CLIツール等）の構成を1つのコマンドでインベントリ化するオープンソースのCLIツールです。Claude Code、Cursor、Windsurf、VS Code、ブラウザ拡張など、主要なAIエコシステムの構成ファイルを読み取り、それらが「コード実行権限を持っているか」「広範なファイルシステムにアクセスできるか」「設定ファイルに機密情報を保持しているか」をプレーンテキスト、JSON、またはHTML形式でレポートします。読み取り専用でテレメトリ送信がないため、セキュリティ意識の高い開発者や企業組織が、自身のマシンやフリート内の『シャドーAI』や過剰な権限設定を特定するのに役立ちます。また、以前の実行結果との差分を比較する機能（--diff）を備えており、CIやcronに組み込むことで構成の変更を監視することも可能です。",
+    "topics": [
+      "AI Agents",
+      "MCP (Model Context Protocol)",
+      "Cybersecurity",
+      "Developer Tools",
+      "Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Atomburstofficial/geiger: A Geiger counter for AI agents — one read-only command that inventories every agent, MCP server, plugin, and AI extension on a machine"
+  }
+}

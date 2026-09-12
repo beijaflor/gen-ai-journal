@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:12:39.696065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ルールではなくskillに指示を書くことで、Claudeのコメントを減らせた話",
+    "url": "https://zenn.dev/uzu_tech/articles/58a84a9346b910",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの冗長なコメントを抑制するため、静的なルール定義ではなく、カスタムskill内で機械的にコメントを抽出・点検する手順を組み込む手法が有効であることを定量的に検証した記録。",
+    "summaryBody": "Claude Codeが生成する過剰なコメント（1行の設定に18行の解説が付く等）を削減するための試行錯誤をまとめた記事です。当初は`.claude/rules/`や`CLAUDE.md`に「コードから復元できない情報のみ書く」という禁止ルールを定義しましたが、PRの差分を集計した結果、コメント比率はほぼ変わらず効果が薄いことが判明しました。\n\nそこで著者は、PR作成用のカスタムskill（`/pr`）に、`git diff`を用いて追加されたコメント行を機械的に抽出し、1行ずつ「残す/消す」を判定させるチェック手順を組み込みました。この「実装の瞬間ではなく、書いた後に点検を強制する」アプローチにより、1PRあたりのコメント行数や、可読性を下げる大きなコメントの塊を有意に減少させることに成功しました。ただし、タスクIDのような正規表現で判定可能な項目には効果が高い一方、主観的な判断を要する項目は依然として残る傾向も報告されています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "AIコーディング",
+      "プロンプトエンジニアリング",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

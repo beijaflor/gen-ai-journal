@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:10:00.262355+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMサービスからLLMプラットフォームへ：BizReachはいかにして本番AIを標準化したか",
+    "url": "https://engineering.visional.inc/blog/734/ai-platform-engineering-at-bizreach/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ビズリーチが、LLMサービスの本番運用における課題を解決するため、独自の「SARアーキテクチャ」を用いた共有プラットフォームを構築し、ランタイムリスクの標準化と開発のスケールを実現した軌跡。",
+    "summaryBody": "ビズリーチにおけるLLM活用の進化、特に単一のAPIラッパーから全社共通の「LLMプラットフォーム」への移行プロセスを解説した技術記事です。\n\n### 1. SAR（Sender-Agent-Receiver）アーキテクチャ\n当初のレジュメ自動作成機能の開発で培われた、非同期実行モデル「SAR」をプラットフォームの核に据えています。リクエスト受付（Sender）、非同期実行（Agent）、結果取得（Receiver）を分離することで、長時間かかるLLM処理のライフサイクルを一貫して管理し、スケーラビリティと耐障害性を向上させました。\n\n### 2. ランタイムリスクの「シフトダウン」\n各プロダクトチームが個別にLLMの運用課題（タイムアウト、モデレーション、ステータス管理等）を解決するのではなく、プラットフォーム側へこれらの責務を「シフトダウン」しました。プロダクトチームは「Configuration as Code」に基づき、プロンプトやスキーマなどのドメイン固有の意図のみを定義し、実行モデルの複雑さから解放されます。\n\n### 3. 組織とガバナンス\nチームトポロジーを採用し、プラットフォームチームが専門性の高い基盤を提供し、ストリームアラインドなプロダクトチームが迅速に機能をリリースできる体制を構築。これにより、人員を比例させずに多様なAI機能を支える基盤を確立しました。",
+    "topics": [
+      "LLM",
+      "プラットフォームエンジニアリング",
+      "アーキテクチャ",
+      "生成AI",
+      "ビズリーチ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

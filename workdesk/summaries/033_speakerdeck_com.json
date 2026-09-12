@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:10:49.787836+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの開発・提供におけるセキュリティリスクの論点と対策",
+    "url": "https://speakerdeck.com/flatt_security/security-risks-and-countermeasures-in-the-development-and-provision-of-ai-agents",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自律型AIエージェントが実世界に副作用をもたらす際の4つの主要リスク（スコープ逸脱、危険な処理、ハルシネーション、トークン暴走）とその具体的な技術的防御策を解説した資料。",
+    "summaryBody": "GMO Flatt Securityによる、セキュリティAIエージェント「Takumi」の開発知見に基づいた技術解説資料です。AIエージェントが「計画・ツール実行・実世界への作用」を行う過程で生じる、意図しない対象への攻撃（スコープ逸脱）や、環境汚染、偽の報告（ハルシネーション）、リソースの無駄遣い（トークン暴走）といったリスクを特定。これらの対策として、プロンプト等の「ソフトな制御」に加え、Firecrackerを用いたmicroVMによる環境隔離、機械的な正誤判定（Deterministic Oracle）、トークン消費の段階的制限といった「ハードな制御」を組み合わせる設計指針を提唱しています。OWASP Agentic Top 10 (2026) にも対応しており、実戦的なセキュリティ設計の要諦がまとまっています。",
+    "topics": [
+      "AIエージェント",
+      "LLMセキュリティ",
+      "サンドボックス",
+      "自律型システム",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

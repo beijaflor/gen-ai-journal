@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:31:44.879178+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "テストを生成するな、信頼を生成しろ",
+    "url": "https://zenn.dev/nakurei/articles/generate-trust-not-tests",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIにテストコードを生成させる際、その内容が仕様を正しく検証しているか確認せずにレビューへ回すことは、エンジニアとしての信頼を損なう行為であると指摘する提言。",
+    "summaryBody": "AIによる自動コーディングが普及する中で、筆者は「中身のない無意味なAI生成テスト」がレビューに持ち込まれる現状に強い懸念を示しています。AIはテストを「通すこと」自体を目的化する傾向があり、内部実装をすべてモック化したり、些末な値の固定に終始したりする「常に成功するだけのテストコレクション」を生成しがちです。筆者は、テストの真の価値は「リファクタリング時に挙動の変更を検知できる信頼性」にあり、その信頼を担保するのはAIではなく人間（実装者とレビュワー）の責任であると主張。ドメイン知識やリスク許容度に基づいた、意味のある検証レイヤーとしてのテスト構築を求めています。",
+    "topics": [
+      "AIコーディング",
+      "ユニットテスト",
+      "コードレビュー",
+      "ソフトウェア品質",
+      "エンジニアの倫理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

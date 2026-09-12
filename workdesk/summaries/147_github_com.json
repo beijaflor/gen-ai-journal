@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:38:16.854202+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "litelm: litellmから不要な機能を削ぎ落とした、約2,900行の軽量なLLMルーティング・翻訳ライブラリ",
+    "url": "https://github.com/kennethwolters/litelm",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "10万行を超えるlitellmからルーティングとメッセージ変換のコア機能のみを抽出し、依存関係を最小化した軽量代替ライブラリ。",
+    "summaryBody": "litelmは、多機能だが肥大化した『litellm』から、プロキシ、キャッシュ、コスト追跡、ガードレールなどの付加機能を排除し、モデル間のルーティングとフォーマット翻訳機能（約2,900行）のみに特化したライブラリです。依存パッケージを`openai`と`httpx`の2つに絞っており、軽量かつ高速な動作を特徴としています。既存のlitellmユーザーは、インポート文を1文字書き換えるだけでそのまま移行可能で、Anthropic、Bedrock、Groqなど19以上のプロバイダーに対応。ストリーミング、ツール呼び出し（Function Calling）、非同期処理、Embeddingsなどの主要な機能は維持されています。",
+    "topics": [
+      "LLM",
+      "Python",
+      "litellm",
+      "API Routing",
+      "Machine Learning Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - kennethwolters/litelm: litellm without the bloat · GitHub"
+  }
+}

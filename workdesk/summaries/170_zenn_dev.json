@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:31:57.236414+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 5060 Ti 16GBでローカルLLM(Qwen3.8 27B)にもう一度挑んだ話",
+    "url": "https://zenn.dev/yumeno/articles/rtx5060ti-qwen38-ollama-context-tuning",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5060 Ti 16GB環境において、Qwen3.8 27Bの推論パフォーマンスを最大化するためのOllamaの設定最適化と各種バックエンドの比較検証結果。",
+    "summaryBody": "RTX 5060 Ti 16GBを導入し、Qwen3.8 27Bをローカル環境で実用的に動作させるための技術検証レポートです。著者はvLLM(AWQ)やCafe llama.cppなど複数の実行環境を比較した結果、速度と安定性のバランスからOllama(GGUF)を選択。推論速度が大幅に低下する問題に対し、Ollamaの保守的なVRAM自動見積もりが原因で一部レイヤーがCPUに追い出されていることを突き止めました。Modelfileで`num_gpu`を明示的に全層（66層）指定し、コンテキスト長を116Kまで拡張してもVRAM内に収めることで、生成速度を約8倍（30 tok/s）まで改善することに成功しています。また、MTP（Multi-Token Prediction）やNVFP4などの最新技術に関する考察も含まれています。",
+    "topics": [
+      "ローカルLLM",
+      "RTX 5060 Ti",
+      "Ollama",
+      "Qwen3.8",
+      "VRAM最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

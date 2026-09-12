@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:12:14.116794+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ループエンジニアリング（ralph loop）で業務システムのUIを一新してみた",
+    "url": "https://zenn.dev/sompojapan_dx/articles/846c6038fee45d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeとralph-loopを用いた「ループエンジニアリング」により、40画面に及ぶ業務システムのUI刷新とテストをわずか1日で完遂した実践事例。",
+    "summaryBody": "SOMPO Digital Labによる、AI主導の開発手法「ループエンジニアリング」の実践レポートです。React JSON Schema Formで構築された40画面の管理機能を、独自デザインシステムに基づくReactコンポーネントへ移行するプロジェクトにおいて、当初は手動のエージェント連携で失敗しましたが、ツール「ralph-loop」の導入により劇的な成果を上げました。成功の鍵は、進捗管理用のMarkdownファイルを用いてAIに「逃げ道」と「継続条件」を明確に与えたことにあります。エージェントが自ら手順を改善しながら、SubAgentを活用してテストを並列実行する自律的なプロセスを構築したことで、数ヶ月かかる規模のタスクを1日で完遂しました。AIに大きなタスクを任せる際の具体的な構成案（プロンプトや管理ファイル）が詳しく解説されています。",
+    "topics": [
+      "Loop Engineering",
+      "Claude Code",
+      "ralph-loop",
+      "AI駆動開発",
+      "UI刷新"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
