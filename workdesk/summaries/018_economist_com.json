@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.economist.com/leaders/2026/08/06/how-ai-is-breaking-the-british-state
-- Reason: interstitial signature detected: 'Enable JavaScript and cookies to continue'
-- Fetcher: curl+bs4
-- Extracted chars: 57
-- Raw bytes: 5936
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-13T06:10:09.059438+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが英国政府を崩壊させる仕組み：市民のAI利用による「エージェントの氾濫」",
+    "url": "https://www.economist.com/leaders/2026/08/06/how-ai-is-breaking-the-british-state",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "市民がAIエージェントを駆使して大量の不服申し立てや権利主張を行う「エージェントの氾濫」により、既存の行政システムが麻痺しつつある現状と、国家がAIを導入して対抗する必要性を論じている。",
+    "summaryBody": "英国では、AIを活用して行政に異議を申し立てる市民の急増により、政府機関がかつてない危機に直面している。この現象は「エージェントの氾濫（agentic flooding）」と呼ばれ、駐車違反の異議申し立てから給付金の申請、労働裁判の提訴まで、あらゆる行政手続きに波及している。従来の行政システムは、市民が手間やコストをかけて手続きを行うことを前提とした「アナログ」な設計であった。しかし、AIエージェントは専門家レベルの書類を瞬時に、かつ低コストで大量に生成できるため、システムは容易にパンクしてしまう。その結果、労働裁判の待機期間が数年に及んだり、建設プロジェクトがAIによる反対意見の洪水で停滞したりするといった「コモンズの悲劇」が起きている。著者は、政府はこの事態に対して単なる手続きの効率化ではなく、国家そのもののあり方をAI前提で再構築すべきだと主張する。例えば、煩雑な不服申し立て制度を簡素化し、乱用を防ぐための手数料を導入することや、AI自らが計画承認や福祉提供をパーソナライズして行う「洪水耐性（flood-proof）」のある行政への移行が不可欠であるとしている。",
+    "topics": [
+      "AIエージェント",
+      "行政改革",
+      "英国政治",
+      "電子政府",
+      "コモンズの悲劇"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "How AI is breaking the British state"
+  }
+}

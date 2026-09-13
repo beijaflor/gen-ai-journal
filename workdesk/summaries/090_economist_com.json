@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here
-- Reason: interstitial signature detected: 'Enable JavaScript and cookies to continue'
-- Fetcher: curl+bs4
-- Extracted chars: 57
-- Raw bytes: 6080
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-13T06:10:22.275832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる「仕事の終末」は延期、雇用ブームが到来している",
+    "url": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIは一部の事務職を代替しているものの、インフラ投資や新たな専門職の需要によって、米国では差し引き100万近い雇用を創出している。",
+    "summaryBody": "エコノミスト誌の分析によると、AIによる「大量失業」の懸念に反し、米国市場ではAIが雇用の純増をもたらしている。2023年半ば以降、AIに関連した解雇は約20万件とされるが、一方で創出された雇用は約100万件に達すると推定される。このブームを支えるのは主に3つの要因である。第一に、データセンターや電力網への巨額投資により、電気工やインフラ技術者の需要が急増している点。第二に、AIエンジニアやデータ注釈者といった新たな職種が台頭している点。第三に、AIによる生産性向上がサービスの低価格化を招き、パラリーガルや市場調査員などの専門職への需要を逆に押し上げている点だ。一方で、カスタマーサービスや一般事務などのルーチン業務は減少傾向にあり、AIは「仕事の消失」ではなく「仕事の構造的再編」を加速させている。",
+    "topics": [
+      "AI雇用",
+      "労働市場",
+      "データセンター",
+      "経済予測",
+      "生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "The jobs apocalypse is postponed. An AI jobs boom is here"
+  }
+}

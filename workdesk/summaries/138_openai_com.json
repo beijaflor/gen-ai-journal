@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://openai.com/index/introducing-gpt-live-1-in-the-api/
-- Reason: extracted text too short (65 chars < 500 threshold); page is likely an un-hydrated SPA shell or anti-bot challenge
-- Fetcher: playwright
-- Extracted chars: 65
-- Raw bytes: 0
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-13T06:10:50.808152+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-Live-1 APIの提供開始：自然な同時並行会話（フルデュプレックス）を実現する音声モデル",
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは、聞き取りと発話を同時に行うフルデュプレックス機能を備えた音声モデル「GPT-Live-1」をAPIで公開し、複雑な音声システム構成の簡素化と遅延の大幅な削減を実現した。",
+    "summaryBody": "OpenAIは、リアルタイムでの自然な音声対話を実現するAPI向け新モデル「GPT-Live-1」を発表しました。このモデルの最大の特徴は、従来の「STT（音声認識）→ LLM（推論）→ TTS（音声合成）」という多段構成を、聞き取りと発話を同時に処理する単一のフルデュプレックスモデルに統合した点にあります。これにより、ユーザーからの自然な割り込み（インターラプション）への対応精度が飛躍的に向上しました。\\n\\n### 主な特徴とメリット\\n- **アーキテクチャの簡素化**: 音声処理レイヤーを統合することで、開発コードを最大80%削減し、従来のシステムで発生していたハンドオフによる遅延やエラーを最小化します。\\n- **推論の委譲（Delegation）**: 音声対話はGPT-Live-1が担当しつつ、深い推論やツール実行が必要な場合はバックエンドの「GPT-6 Astra」等へ処理を委譲できる柔軟な設計を採用しています。\\n- **多様なカスタマイズ**: システムプロンプトを通じてエージェントのトーン、ペース、会話スタイルを制御可能。新たに多数の音声オプションも追加されました。\\n\\nベンチマークでは前世代比で30%の性能向上を記録しており、価格は1分あたり0.05ドルから。カスタマーサポート、教育、予約システムなど、実用的な音声AIエージェントの開発を加速させます。",
+    "topics": [
+      "OpenAI",
+      "GPT-Live-1",
+      "Conversational AI",
+      "Voice API",
+      "Full Duplex"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Build more natural voice experiences with GPT‑Live‑1 in the API"
+  }
+}

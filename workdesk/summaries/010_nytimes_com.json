@@ -1,15 +1,33 @@
-BLOCKED: summary suppressed — fetch did not return usable content.
-
-- URL: https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html
-- Reason: extracted text too short (54 chars < 500 threshold); page is likely an un-hydrated SPA shell or anti-bot challenge
-- Fetcher: curl+bs4
-- Extracted chars: 54
-- Raw bytes: 771
-
-This stub was emitted by scripts/modules/fetch_router.py to prevent
-the LLM from hallucinating a summary against an anti-bot interstitial
-or an un-hydrated SPA shell. See Issue #121 for context.
-
-Action required: re-fetch this URL manually (e.g. via Playwright with
-an authenticated session, or by archiving the page and feeding the
-saved HTML), or curate the URL out of the journal.
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-13T06:09:58.022577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "米企業がオープンソースAIに傾倒：コスト最大8割削減とカスタマイズ性を追求",
+    "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "米国の大手企業が、高コストなOpenAIやAnthropicのクローズドモデルから、コスト効率と柔軟性に優れたMetaやDeepSeekなどのオープンモデルへと急速に移行している。",
+    "summaryBody": "### 企業のAI戦略における劇的な転換\nAT&T、Airbnb、デロイトといった米国の大手企業は、OpenAIやAnthropicが提供する高価な「クローズドモデル」への依存を減らし、Metaの「Llama」やGoogleの「Gemma」、さらに中国の「DeepSeek」などのオープンモデルの採用を拡大しています。AT&Tでは、AI利用の約40%がすでにオープンモデルであり、コストを最大80%削減することに成功しています。\n\n### オープンモデル台頭の背景\nOpenRouterのデータによると、オープンモデルの利用率は1年前の10%から58%に急増しました。この背景には、クローズドモデルの利用料高騰と、オープンモデルの性能向上が挙げられます。特に中国製モデルは、大手クローズドモデルの80〜90%の性能を維持しつつ、コストを約5分の1に抑えられる「マツダのような（実用的で投資に見合う）車」として評価されています。\n\n### 業界の勢力図と今後の展望\nNvidiaがオープンAIモデルのライブラリであるHugging Faceを129億ドルで買収したことは、このトレンドを象徴しています。OpenAIやAnthropicが巨額のR&Dコスト回収のために高額な料金を維持する一方で、Metaのマーク・ザッカーバーグ氏などは、民主的でバランスの取れたAIエコシステムの重要性を強調しています。今後は、高度な推論にはクローズド、特化型の日常タスクにはオープンモデルという使い分けが主流になると予測されます。",
+    "topics": [
+      "オープンソースAI",
+      "LLM",
+      "コスト削減",
+      "Nvidia",
+      "Meta"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Corporate America Is Getting Hooked on Open-Source A.I."
+  }
+}
