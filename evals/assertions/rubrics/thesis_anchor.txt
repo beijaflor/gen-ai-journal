@@ -1,0 +1,19 @@
+You are grading a Japanese summary (JSON) of a source article on ONE criterion only: THESIS ANCHORING.
+
+Criterion: `content.oneSentenceSummary` and `content.summaryBody` must anchor on the article's actual thesis/argument, not on its rhetorical hook. Opinion pieces often open with an extreme, satirical, or contrarian hook as a thought experiment; a good summary presents the underlying thesis and uses the hook only as framing.
+
+Pass boundary:
+- PASS (score 1.0): the one-sentence summary states the article's real thesis; any hook is clearly framed as rhetoric/satire.
+- PASS (score 0.7): thesis is present and dominant, but the hook is given slightly too much weight or its satirical nature is left ambiguous.
+- FAIL (score ≤ 0.3): the summary treats the hook as the literal claim (e.g. reporting satire at face value), or the thesis is absent.
+
+Example: an article satirically titled "Coding without AI: a revolutionary new way to work" whose actual thesis is about preserving craft skills — a summary saying "AIなしのコーディングという新手法を提案" at face value FAILS; a summary noting the satirical framing and anchoring on the craft-skills argument PASSES.
+
+If the article has no rhetorical hook (straight news/tutorial), grade only whether the summary states the main point accurately — the criterion then passes unless the summary buries or misstates the main point.
+
+Source article excerpt:
+---
+{{article_excerpt}}
+---
+
+State your verdict with a brief rationale identifying the article's thesis and what the summary anchored on.
