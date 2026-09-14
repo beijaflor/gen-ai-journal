@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:33:56.817749+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "読書メモ『強化学習を学びたい人が最初に読む本』",
+    "url": "https://zenn.dev/morim34/articles/85994d7b38603b",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "強化学習の基礎理論からDQN、さらにはDouble DQNやDRQNといった発展的手法までを、数式と直感的な概念の両面から整理した学習記録。",
+    "summaryBody": "本書の読書メモとして、強化学習の根幹となる概念が体系的にまとめられています。主な内容は以下の通りです。まず4〜5章では、報酬和の最大化という目的や、ベルマン方程式に基づくQ学習のアルゴリズム（更新則、イプシロン・グリーディー法）を解説。6〜7章では、ニューラルネットワークを用いたnetQ（DQNの原型）における教師データ作成の特異点や、学習の不安定さを解消するためのExperience Replay（データの偏り抑制）とTarget Network（目標値の固定）の重要性を説いています。8章では、Q値の過大評価を防ぐDouble DQNや、部分観測マルコフ決定過程（POMDP）に対応するためのDRQN（LSTMの導入）といった実用的な改良手法に触れており、モデルフリー強化学習の基礎から応用への流れを俯瞰できる内容となっています。",
+    "topics": [
+      "強化学習",
+      "DQN",
+      "Q学習",
+      "機械学習",
+      "Python"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 75,
+      "annexPotential": 25,
+      "overall": 80
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:27:35.682168+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のWebフレームワークはどこへ行く？",
+    "url": "https://slides.yusu.ke/web-frameworks-in-the-ai-era",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIがコードを書く時代におけるWebフレームワークの役割を再定義し、Honoが推進するAI向けDX「Agent DX」の計測と改善プロセスを公開した。",
+    "summaryBody": "Honoの作者である和田祐介氏による、AIエージェントによる開発が一般化する未来を見据えたプレゼンテーションの要約。AIがライブラリを意識せずコードを書く時代において、フレームワーク側の「AIにとっての使いやすさ（Agent DX）」をいかに向上させるかに焦点を当てている。AI Evals（評価基盤）を用いた実験の結果、AIもフレームワークを利用した方が正確性やトークン効率が向上することを実証。一方で、人間にとってのDX（開発サーバーの起動など）がAIにとってはポート衝突などの弊害を生むケースも判明した。これを受け、サーバーレスでリクエストを検証できる「hono request」や、複数項目の回帰確認を行う「hono batch」といったAIフレンドリーなCLIツールの導入と、その有効性を定量的に示している。",
+    "topics": [
+      "Hono",
+      "Agent DX",
+      "AI Evals",
+      "Webフレームワーク",
+      "開発者エクスペリエンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

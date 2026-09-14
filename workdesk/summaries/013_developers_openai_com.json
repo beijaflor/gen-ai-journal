@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:27:05.886441+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 Astraにおけるスキルとプロンプトの再考",
+    "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GPT-6 Astraの高度な能力を最大限に引き出すため、過剰な指示を削ぎ落とし、コンテキストを効率化するためのスキル定義とプロンプト設計の新たなベストプラクティスを提案。",
+    "summaryBody": "GPT-6 Astraのような進化を遂げたモデルでは、従来の「手厚い指示（ハンドホールディング）」が逆に性能を阻害する可能性がある。本記事では以下の3つの最適化指針を示している。1. **スキルの最適化**: スキル説明は簡潔にし、適用条件を明確化する。詳細なワークフローは必要時にのみ読み込まれる「段階的開示（Progressive Disclosure）」の構造をとるべきである。2. **AGENTS.mdの見直し**: 編集のたびにリポジトリ全体を読み込ませるような指示は、コンテキストを浪費し動作を遅延させる。タスクに必要な情報のみを自律的に判断させる構成が望ましい。3. **アラインメントへの対応**: Astraは非常に慎重で、作業を早期に中断して確認を求める傾向がある。タスクの完了定義を明確にし、ローカルテストなど安全な環境下での自律的な試行錯誤を許可することで、実行力を高めることができる。",
+    "topics": [
+      "GPT-6 Astra",
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "OpenAI Codex",
+      "コンテキスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers"
+  }
+}
