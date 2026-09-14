@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:31:19.291972+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kaggleコンペ紹介：AI Agent Security - Multi-Step Tool Attacks",
+    "url": "https://zenn.dev/mkj/articles/fad8adf0586665",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "KaggleのAIエージェントセキュリティコンペにて、非公開ガードレールの挙動をプロービングで特定し、攻撃プロンプトを徹底的に最適化することで4位入賞を果たした手法の解説。",
+    "summaryBody": "松尾研究所のチームがKaggleで開催された「AI Agent Security - Multi-Step Tool Attacks」コンペで4位（金メダル）を獲得した際の取り組みを紹介している。本コンペは、信頼できない入力からAIエージェントに危険な行動（ファイル操作や情報流出など）を取らせるレッドチーミングを競うもの。筆者らは、実行時間の差異を利用した「タイミング・プロービング」により、非公開のPrivateガードレールの仕様を推定。その結果、最も効率的に得点可能な『CONFUSED_DEPUTY（不要なメール送信）』攻撃に絞り込み、GPT-OSSやGemmaといったターゲットモデルごとにKVキャッシュの再利用やゼロ幅スペースによる検知回避を駆使してプロンプトを最適化した。1位チームが採用したGCG（敵対的最適化）による高度な手法との比較も行い、モデルへの「呼ばせ方」の最適化が勝敗を分けたポイントであることを示している。",
+    "topics": [
+      "Kaggle",
+      "LLM Security",
+      "Red Teaming",
+      "AI Agent",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    }
+  }
+}

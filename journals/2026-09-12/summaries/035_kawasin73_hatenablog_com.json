@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:10:23.590489+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Rules はもう死んでいる - kawasin73のブログ",
+    "url": "https://kawasin73.hatenablog.com/entry/2026/09/05/092056",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code のシステムプロンプト変更により、Rules や Hooks がバイパスされ機能しなくなっている問題と、非公開フラグを用いた解決策について解説しています。",
+    "summaryBody": "Claude Code において、`CLAUDE.md` に記載された Rules や Hooks が正常に動作しなくなっている問題についての技術的な調査報告です。著者は、2026年8月頃のアップデートにより「専用ツールではなく Bash ツール（cat, sed等）の使用を優先する」というシステムプロンプトが追加されたことを原因として突き止めました。Rules は専用の Read ツール実行時にトリガーされる仕組みであるため、Bash ツールの使用はこのプロセスを完全にバイパスしてしまいます。この問題を解決するには、`.claude/settings.json` において `CLAUDE_CODE_THRIFTY_SONIC` フィーチャーフラグを無効化する設定が必要です。記事では、AI の挙動のサイレントな劣化を検知するための「振り返り（retrospective）」の重要性についても説いています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLMツール",
+      "トラブルシューティング",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

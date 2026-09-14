@@ -61,6 +61,28 @@ def test_csharp_prose_not_flagged_as_header():
     assert lint_body(body) == []
 
 
+def test_glued_header_single_line_flagged():
+    # #064 pattern: '### ' headers glued to the preceding full-stop with no
+    # space, whole body on one line — escaped the old "(?:^|\s)#" anchor.
+    body = (
+        "導入文です。主な内容は以下の通りです。### 第一の論点: 説明が続く。"
+        "### 第二の論点: さらに説明。### 第三の論点: 結論。"
+    )
+    assert lint_body(body) == ["mashed-single-line"]
+
+
+def test_glued_header_mid_multiline_flagged():
+    # A header glued to text (no leading space) on one line of a multi-line body.
+    body = "導入の段落。\n本文が続きます。### 見出し が紛れている。\n結び。"
+    assert "inline-header" in lint_body(body)
+
+
+def test_in_word_hashes_without_trailing_space_not_flagged():
+    # A '##' glued inside a token with no trailing space is not a header marker.
+    body = "URL は https://example.com/page##frag を参照。\n本文が続く。"
+    assert lint_body(body) == []
+
+
 def _write(dirpath, name, body):
     doc = {"content": {"summaryBody": body}}
     with open(os.path.join(dirpath, name), "w", encoding="utf-8") as f:

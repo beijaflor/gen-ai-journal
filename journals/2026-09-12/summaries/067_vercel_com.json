@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:18:16.086474+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TailscaleがVercel AI Gatewayを活用して顧客向けAIモデルルーター「Aperture」を構築した事例",
+    "url": "https://vercel.com/customers/how-tailscale-built-a-customer-facing-model-router-on-ai-gateway",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "TailscaleはVercel AI GatewayとSandboxを採用することで、自社ネットワークIDに基づいたセキュアなAIモデルルーター「Aperture」を数ヶ月で商用化し、複雑なAPI管理とセキュリティ課題を解決しました。",
+    "summaryBody": "VPNサービスのTailscaleが、AIモデルへのアクセスをネットワーク・アイデンティティ（tailnet）で制御する新製品「Aperture」の基盤としてVercelを採用した事例です。当初、自社でのルーティング層構築を検討していましたが、各プロバイダー間のAPI仕様の差異やコスト算出の複雑さ、そしてデータ漏洩リスク（lethal trifecta）への対応が課題となりました。Vercel AI Gatewayの導入により、数百のモデルに対する統一API、プロバイダーごとのコスト透明性、および「Zero Data Retention (ZDR)」への対応を容易に実現しました。また、エージェントの安全な実行環境としてVercel Sandboxを統合し、APIキーを払い出すことなくプライベートネットワーク内でのAI活用を可能にしています。これにより、同社はインフラ構築ではなく、プロダクトの本質的な価値である「ユーザー登録から最初のトークン（あるいはアプリ）生成までの時間短縮」に注力できるようになりました。",
+    "topics": [
+      "Tailscale",
+      "Vercel AI Gateway",
+      "Model Routing",
+      "AI Security",
+      "Network Identity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    },
+    "originalTitle": "How Tailscale built a customer-facing model router on AI Gateway"
+  }
+}

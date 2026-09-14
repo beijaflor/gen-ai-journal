@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:41:29.648055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4.1-Flash-UNCENSORED-FP8: ガードレールを排除したDeepSeek-V4.1-FlashのFP8量子化モデル",
+    "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DeepSeek-V4.1-Flashの安全ガードレールを重みレベルのアブリレーションにより除去し、推論や視覚能力を維持したまま100%の遵守率を実現した検閲なしモデル。",
+    "summaryBody": "dealignaiチームによって公開されたこのモデルは、DeepSeek-V4.1-Flashの安全性回路を外科的に除去（アブリレーション）した「検閲なし」バージョンです。ランタイムフックやステアリングベクトルを使用せず、チェックポイントの重みレベルで修正が行われており、標準的なモデルとしてロード可能です。\n\n主な特徴と検証結果は以下の通りです：\n- **性能維持**: MMLUスコアはベースモデルの86.96%に対し82.74%と、能力の低下を最小限（倫理関連を除けば約-1.1pp）に抑えています。\n- **高い遵守率**: HarmBench-320において、ベースモデルが拒否する有害なプロンプトに対しても100%の遵守率を達成しました。\n- **技術仕様**: 552Bパラメータ（アクティブ8B/16B）のMoEアーキテクチャ、100万トークンのコンテキスト窓、ネイティブFP8精度を維持しています。視覚機能や推論思考プロセス（DSpark）も完全に動作します。\n- **デプロイ**: SGLang（previewブランチ）やvLLMでの動作が確認されており、H200などのハイエンドGPU環境での具体的な最適化設定（--ep-sizeの指定、Engramホストテーブルの利用など）が公開されています。",
+    "topics": [
+      "DeepSeek-V4.1-Flash",
+      "Uncensored LLM",
+      "Weight Abliterated",
+      "FP8 Quantization",
+      "SGLang"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8 · Hugging Face"
+  }
+}

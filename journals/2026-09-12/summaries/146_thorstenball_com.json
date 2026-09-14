@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:38:36.211990+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Think Harder: How I Prompt — AIエージェントに99%の開発を任せる極意",
+    "url": "https://thorstenball.com/talks/how-i-prompt/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "コーディングエージェント「Amp」の作者が、AIを「コンテキストのないシニアエンジニア」として扱い、知識をコードベース側に移行させることで、プロンプトを効率化する手法を解説する。",
+    "summaryBody": "Thorsten Ball氏による、AIエージェントを最大限に活用するためのエンジニアリング手法の紹介です。彼は自社製品『Amp』のコードの99%をAIで書いており、その核心は「AIモデルはどこから情報を得るべきか？」を常に意識させることにあります。具体的には、AIを「技術力は高いが状況を全く知らない、誘拐されたエンジニア」に見立てるメンタルモデルを提唱しています。主なテクニックとして、ディレクトリやドキュメントを直接指定する詳細なプロンプト、最初に情報を探させてからタスクを振る『One-Two Punch』、UI修正のための積極的なスクリーンショット活用、そして『AGENTS.md』ファイルをコード内に配置して開発ルールをAIに自動参照させる方法を挙げています。最終的にプロンプトから「やり方」を排除し、コードベース自体に知識を蓄積させることが、真のプロンプトエンジニアリングであると説いています。",
+    "topics": [
+      "Prompt Engineering",
+      "AI Coding Agents",
+      "Software Development",
+      "LLM Context Management",
+      "Amp"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Think Harder: How I Prompt — Thorsten Ball, Laracon US 2026"
+  }
+}

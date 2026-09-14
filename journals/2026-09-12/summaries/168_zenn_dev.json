@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:32:27.159522+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える",
+    "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-03-rope",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-2ベースのモデルから絶対位置Embeddingを廃止しRoPEに変更する実験により、検証Lossと正解率の明確な改善を確認したが、一方で学習・推論速度が低下するトレードオフも明らかになった。",
+    "summaryBody": "GPT-2からQwen2へと段階的にモデル構造を近づける実験の第3弾。今回は学習可能な絶対位置Embeddingを廃止し、Rotary Position Embedding (RoPE) を導入した。実験結果として、検証Loss（中央値2.216→2.045）およびTop-1正解率が全seedで改善し、パラメータ数も32,768削減された。しかし、計算負荷の増大により学習時間は約16%増加し、推論スループットも低下した。記事内ではRoPEの数理的背景として、2次元および4次元での回転処理、複数の回転周波数の役割、KV Cacheとの親和性について実装コードを交えて深く解説している。生成品質に関しては、文脈維持の改善が見られる一方で反復が悪化する例もあり、自動評価指標の向上と生成文の自然さが必ずしも一致しない可能性を指摘している。",
+    "topics": [
+      "RoPE",
+      "Transformer",
+      "LLM",
+      "機械学習",
+      "PyTorch"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    }
+  }
+}

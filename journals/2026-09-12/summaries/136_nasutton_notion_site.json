@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-13T06:10:38.963241+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "9つのコーディング用ハーネスをラップトップで比較：ローカルLLMにおける「プリフィル」の壁",
+    "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ローカル環境におけるコーディングエージェントの性能を比較し、巨大なシステムプロンプトやツール定義がプリフィル時間を増大させ、実用性を損なう問題を技術的に検証。",
+    "summaryBody": "本稿は、M4 MacBook Proを用いてQwen 2.5 27Bモデル上で9種類のコーディングエージェント（Cline, Goose, Chad等）の性能を実測・分析したレポートです。API利用を前提とした「重量級」のシステムプロンプトやツール定義が、ローカル環境では数分単位の待機時間（プリフィル遅延）を招くボトルネックを指摘しています。主要な知見として、軽量なツール（pi, chad等）は96%以上のキャッシュ再利用率を維持し実用的な応答速度を保つ一方、OpenCode等は数千トークンの読込により初動が極端に遅くなることが示されました。筆者開発の「chad」は、MLXエンジンとの密結合やDFlash2ドラフティングの活用により、従来のllama.cpp経由を大幅に上回る最大17.4 tokens/sの実行速度を達成。ローカルLLM活用の鍵は、プロンプトの軽量化とエンジン層の最適化にあると結論づけています。",
+    "topics": [
+      "Local LLM",
+      "Coding Agents",
+      "Benchmark",
+      "Apple Silicon",
+      "LLM Performance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Nine coding harnesses vs. your laptop"
+  }
+}

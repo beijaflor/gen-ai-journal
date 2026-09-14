@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:20:23.373862+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネス・エンジニアリングの解剖学：AIコーディング・エージェントの評価・反復・保護手法",
+    "url": "https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディング・エージェントの開発において、最終的な正誤（ベンチマーク）だけでなく、ツールの使用やプロセスを評価する「振る舞い評価」を取り入れることで、信頼性と開発速度を向上させる手法を解説しています。",
+    "summaryBody": "Googleのエンジニアが、AIコーディング・エージェントの信頼性を高めるための「ハーネス（評価環境）・エンジニアリング」について解説しています。従来のEnd-to-End（E2E）ベンチマークは最終スコアを出す「通知表」のようなものですが、スコア低下の原因を特定しにくいという欠点があります。これに対し、特定のツール呼び出しや確認手順の実行といった「離散的な振る舞い」を評価する「Behavioral Evaluation（振る舞い評価）」を、ソフトウェアのユニットテストのように活用することを提唱しています。具体的なアプローチとして、失敗パターンの特定、柔軟なアサーションの実装、バッチ実行による安定性監視の3ステップを挙げ、モデルやプロンプトの更新に伴うデグレードを防ぐ堅牢な開発サイクルの構築方法を詳述しています。",
+    "topics": [
+      "AI Agents",
+      "LLM Evaluation",
+      "Software Engineering",
+      "Harness Engineering",
+      "Testing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents"
+  }
+}

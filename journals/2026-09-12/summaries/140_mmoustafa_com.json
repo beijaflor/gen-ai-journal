@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:40:28.648918+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenRouter利用の深淵：1,800万メッセージの運用で判明した「同じモデルでもプロバイダーごとに異なる」現実",
+    "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenRouterを通じて同一のLLMを利用しても、プロバイダーによって性能や挙動が劇的に異なる実態と、それを回避するための10の実践的な教訓を解説したエンジニア必読のガイド。",
+    "summaryBody": "OpenRouterは複数のプロバイダーから同一モデルを提供しますが、実際の性能（ベンチマーク、画像認識、ツール利用能力）はプロバイダーの実装や最適化によって大きく異なります。1,800万件以上のメッセージを処理した経験に基づき、以下の教訓が示されています。1.同一モデルでもプロバイダー間でスコアに20点以上の差が出るため、ワークロードに近いベンチマークを確認すべきである。2.ビジョンモデルが画像を見逃したり、推論の努力設定を無視したりする「隠れた不備」がある。3.量子化精度（fp4/fp8等）は品質の指標にならず、実際のスコアを重視すべき。4.200 OKを返しながら中身が空のレスポンスや、ツール呼び出しがプレーンテキストとして出力される現象があり、クライアント側での高度なパースと再試行が不可欠。5.プロバイダー独自の履歴ルールやレート制限が存在するため、特定プロバイダーへの固定は避け、本番環境から直接ベンチマークを行うべきである。",
+    "topics": [
+      "OpenRouter",
+      "LLM",
+      "DeepSeek",
+      "ベンチマーク",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "So you want to use OpenRouter? — Mo Moustafa"
+  }
+}

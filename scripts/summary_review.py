@@ -31,11 +31,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
+
+# Reuse the render-format linter so the review table also catches bodies that
+# will display as literal markup (escaped-newline / mashed-single-line /
+# inline-header). Without this the table only judges *content* (title, length,
+# site-descriptor) and passes a body that renders broken (2026-09-12 cycle, #064).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from check_summary_format import lint_body  # noqa: E402
 
 # Heuristic vocabulary: words that, when present without a specific event,
 # suggest the summary is describing a service/site rather than an article.
@@ -178,6 +186,11 @@ def evaluate_suspicion(content: Dict[str, Any]) -> Tuple[bool, List[str]]:
     # The schema enforces >= 100 chars but anything below ~200 is worth a look.
     if 0 < len(summary_body) < 200:
         reasons.append("short-body")
+
+    # Render-format defects: a body that is schema-valid but will display as
+    # literal markup (e.g. headers glued mid-line, escaped "\n", a single
+    # mashed line). Prefix so it's distinct from content reasons above.
+    reasons.extend(f"body-format:{d}" for d in lint_body(summary_body))
 
     return (len(reasons) > 0, reasons)
 

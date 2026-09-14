@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:12:38.355729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "engrim - 複数のAIエージェント間で共有可能なローカルファーストの外部エピソード記憶エンジン",
+    "url": "https://github.com/timgordontg/engrim",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "様々なAIエージェント間でプロジェクトの意思決定や状態を共有し、コンテキストの肥大化と忘却を防ぐSQLiteベースのローカル外部メモリ。",
+    "summaryBody": "engrimは、Google Antigravity、Claude Code、Cursor、Windsurf、Codexなどの異なるAIツールを跨いで「エピソード記憶」を保持するオープンソースのツールです。プロジェクト固有の重要な意思決定や制約をローカルのSQLiteに保存し、ハイブリッド検索（FTS5によるキーワード検索 + model2vecによるベクトル検索）を用いて、必要な情報のみを4,000文字程度の「メモリパック」としてAIに注入します。これにより、100万トークンを超えるような巨大なコンテキストウィンドウによる推論精度の低下やコスト増を回避しつつ、モデルを切り替えても開発の文脈をシームレスに引き継ぐことが可能です。Model Context Protocol (MCP) をサポートしており、既存のAIコーディングツールと容易に統合できます。",
+    "topics": [
+      "AIエージェント",
+      "コンテキスト管理",
+      "SQLite",
+      "MCP",
+      "LLM開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - timgordontg/engrim: The Universal Cross-Model Episodic Memory Standard. Local-first, project-scoped SQLite memory engine for Google Antigravity, Claude Code, Cursor, Windsurf, and Codex. Zero cloud lock-in."
+  }
+}

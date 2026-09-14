@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:07:58.485519+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexがエージェントに不必要なWeb検索を強要するシステムプロンプトの発見",
+    "url": "https://spader.zone/wtf/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントがローカルファイルを無視してWeb検索を強行する原因が、OpenAI Codexの「10%でも不確実なら検索せよ」という極端なシステムプロンプトにあることが判明しました。",
+    "summaryBody": "筆者がseL4カーネルのローカルソースコード解析をAIエージェント「Codex」に依頼した際、ローカルにファイルがあるにもかかわらずWeb検索を実行するという不可解な挙動に遭遇した。調査の結果、Codexのソースコード（システムプロンプト）内に「情報の鮮度が10%でも疑わしい場合やニッチなトピックは必ずWeb検索で検証せよ」という指示がハードコードされていることが判明した。この設計は、たとえユーザーがローカルコンテキストを与えていても、AIに「バイアスを持って検索を優先」させるものであり、エージェントの挙動を不安定にしている。筆者は、品質よりも機能を優先して押し出す現在のAI開発の姿勢に対し、強い不快感と疑問を呈している。",
+    "topics": [
+      "AI Agents",
+      "OpenAI Codex",
+      "Prompt Engineering",
+      "System Prompts",
+      "Software Quality"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    },
+    "originalTitle": "Codex silently begs agents to make arbitrary web requests"
+  }
+}

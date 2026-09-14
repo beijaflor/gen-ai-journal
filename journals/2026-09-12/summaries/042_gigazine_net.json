@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:08:50.430624+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "使い込むほど成長するAIエージェント「Hermes Agent」の実行結果をメールで受け取ってみた",
+    "url": "https://gigazine.net/news/20260905-hermes-agent-mail/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Hermes Agent」のメッセージング・ゲートウェイ機能を利用し、実行結果をメールで自動送信・通知する設定手順と検証結果の解説。",
+    "summaryBody": "AIエージェント「Hermes Agent」の「Gateway」機能を活用し、タスク実行結果をメールで通知する検証記事。Hermes AgentはTelegramやSlack、Discordなど多様な通信サービスと連携可能で、今回は汎用的なEmail（IMAP/SMTP）接続を選択している。主な検証ポイントは以下の通り：1. ゲートウェイのバックグラウンド動作によりアプリを閉じていても通知が可能。2. 受信時の認証（Authentication-Resultsヘッダー）に関する技術的制約と、特定のメールサーバーでの挙動。3. 送信手順を「スキル」として保存することで、自然言語の指示のみで結果報告を自動化するワークフロー。PCを常時監視することなく、AIの成果をリモートで確認できる実用的な連携手法が紹介されている。",
+    "topics": [
+      "Hermes Agent",
+      "AIエージェント",
+      "ワークフロー自動化",
+      "メール通知",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

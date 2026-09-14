@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:21:00.136628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TunixとTPUを活用したLLMの自律的な事後学習：autofinetuneによる最適化の自動化",
+    "url": "https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleは、AIエージェントがCloud TPU上でLLMのファインチューニングや強化学習のハイパーパラメータを自律的に探索・改善するプロジェクト「autofinetune」を発表しました。",
+    "summaryBody": "Google Developers Blogは、LLMの事後学習（Post-training）を自律的に実行するプロジェクト「autofinetune」を紹介しています。従来、LoRAのランク選定や学習率の調整は手動の試行錯誤に頼っていましたが、本手法ではAIエージェント（Gemini 3.7 Flash等）がMarkdownで記述された指示に基づき、実験の実行、評価、コードの修正をループ状に繰り返します。\n\n記事ではTunixライブラリとGemmaモデル、Cloud TPU (v5e/v6e) を使用した2つの事例を解説しています。1つ目は、関数呼び出しモデル（FunctionGemma）のSFTにおいて、LoRA設定やオプティマイザを自動調整し精度を向上させた例。2つ目は、GRPOを用いた数学的推論の強化学習において、ロールアウト温度やKLペナルティなどの複雑な変数を自動最適化し、報酬を約10%向上させた例です。人間が介在せずにリサーチサイクルを回す「自律的研究ループ」の有効性が実証されています。",
+    "topics": [
+      "LLM",
+      "Post-training",
+      "TPU",
+      "Gemma",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Autonomous LLM post-training with Tunix on TPUs"
+  }
+}

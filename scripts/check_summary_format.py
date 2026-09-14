@@ -16,7 +16,9 @@ fine and is left alone). Three defects, all observed in the 2026-08-29 cycle:
      newline), so none of it renders.
   3. ``inline-header`` — a ``##``–``######`` header marker sits mid-line (text
      before it on the same line), so it renders as literal ``###`` instead of a
-     heading. Line-start headers are NOT flagged.
+     heading. Line-start headers are NOT flagged. This includes a header
+     glued directly to the preceding text with no space (e.g. ``…です。### 見出し``,
+     observed in the 2026-09-12 cycle, #064): the marker still renders literally.
 
 Schema validation passes all three; this linter fails them. Run it as a QA gate
 after generation (see the summarize-source skill's post-generation QA checklist)
@@ -37,9 +39,15 @@ import os
 import re
 import sys
 
-# A markdown header marker (## .. ######) at line start or after whitespace.
-# Requires 2+ '#' so single-'#' prose ("C#", "#1") does not match.
-_HEADER = re.compile(r"(?:^|\s)#{2,6}\s")
+# A markdown header marker: a run of 2-6 '#' followed by whitespace, matched
+# anywhere on the line — line start, after whitespace, OR glued directly to
+# preceding text (e.g. "…です。### 見出し"). The glued case is the worst: it
+# escapes a "(?:^|\s)#" anchor yet still renders as a literal "###" (see #064).
+# Requiring 2+ '#' keeps single-'#' prose ("C#", "#1") from matching; requiring
+# a trailing space keeps in-word runs ("page##frag") from matching. Line-start
+# headers are excluded downstream in _line_has_inline_header, so widening the
+# match here only adds the genuinely-broken mid-line/glued cases.
+_HEADER = re.compile(r"#{2,6}\s")
 # "1. **Label**" — a numbered + bold list item (the mashed-list signature).
 _NUM_BOLD_LIST = re.compile(r"\d+\.\s*\*\*")
 

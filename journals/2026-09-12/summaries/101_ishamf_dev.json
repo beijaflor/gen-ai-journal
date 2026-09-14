@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:09:49.185575+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのAttention（注意）機構を可視化するインタラクティブツール",
+    "url": "https://ishamf.dev/p/llm-attention-visualizer/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "トランスフォーマーモデルがテキスト生成時にどのトークンに注目しているかを、ブラウザ上でリアルタイムに可視化・体験できるツール。",
+    "summaryBody": "大規模言語モデル（LLM）の核心であるアテンション機構を視覚的に理解するための実験的なプロジェクトです。Transformers.jsを用いてブラウザ上でモデルを動かし、生成された各トークンが過去のどのトークンから影響を受けたかを、重みに基づく不透明度で表示します。具体例として、モデルが住所などを「コピー」する際に元データに強く注目する様子や、複数のフレーズから意味を統合して新しい単語を生成する過程を可視化しています。技術的には、通常のTransformers.jsではアクセスできない内部のアテンション重みを抽出するため、ONNXモデルをスクリプトで改変して特定の中間出力を露出させるというユニークな手法を採っています。軽量なモデル（600Mパラメータ）を使用しつつ、あらかじめ計算済みのプロンプトも用意することで、ブラウザでの即時体験を可能にしています。",
+    "topics": [
+      "Attention Mechanism",
+      "Large Language Models",
+      "Transformers.js",
+      "Data Visualization",
+      "ONNX"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "LLM Attention Visualization"
+  }
+}

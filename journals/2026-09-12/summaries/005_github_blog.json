@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:16:35.196655+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Project HydraFusion: マルチモデル・オーケストレーションによるフロンティア級の品質実現",
+    "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Copilotの新機能「Project HydraFusion」は、複数のLLMを動的に組み合わせることで、コストを大幅に抑えつつ最高峰モデルを凌駕するコーディング品質を実現します。",
+    "summaryBody": "GitHubは、実行時に複数のモデルを動的に組み合わせるマルチモデル・オーケストレーション技術「Project HydraFusion」をリサーチプレビューとして発表しました。このシステムは、タスクに応じて「Single（直接解決）」「Cascade（効率的モデルから強力なモデルへの段階的実行）」「Critique（別モデルによるレビューと修正）」の3つのパターンを自動選択します。\n\nベンチマークの結果、TerminalBench 2.1においてClaude Opus 5と比較して、品質を4.9ポイント向上させつつ、推定コストを67%削減することに成功しました。開発者は複雑な背後の処理を意識することなく、HydraFusionを一つのモデルとして選択するだけで、パフォーマンス、コスト、レイテンシが最適化された恩恵を受けられます。\n\n現在はGitHub Copilot CLIの`/experimental`コマンドから利用可能で、使用量に基づいた標準レートで課金されます。リポジトリレベルの作業に耐えうるよう、分離されたレビュー環境や失敗時の安全なロールバックなどの設計原則に基づいて構築されています。",
+    "topics": [
+      "GitHub Copilot",
+      "HydraFusion",
+      "LLM Orchestration",
+      "Multi-model AI",
+      "AI Coding Assistant"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Project HydraFusion: Frontier quality via multi-model orchestration - The GitHub Blog"
+  }
+}

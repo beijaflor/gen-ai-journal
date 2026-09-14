@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:12:28.452513+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMでカタログPDFから構造化データを抽出する：プロンプト設計と後処理の実践",
+    "url": "https://zenn.dev/optimax/articles/0fc6979bd6e0eb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMによるPDFからの構造化データ抽出において、プロンプトの限界を後処理（正規化・バリデーション）で補完し、実運用に耐えうるパイプラインを構築する手法を解説しています。",
+    "summaryBody": "アパレルカタログから商品情報を抽出する実プロジェクトを題材に、LLM（Gemini）の不安定さを克服するための具体的な実装テクニックを紹介しています。プロンプト設計では「など」という曖昧な表現の排除や閉集合制約の導入、原文への明示的な参照指示などの工夫を詳述。それ以上に重要となる「後処理」の設計として、約40件に及ぶカラム名の正規化マップ、メタ情報の強制上書き、JSONパース失敗時のLLMによる自己修復、2段階呼び出しにおけるインデックス紐付けなど、泥臭くも実践的なエンジニアリング手法が網羅されています。また、大規模データを安定して処理するための再開設計や、誤ったデータを出力するくらいなら出力しないという品質優先の判断基準についても言及されています。",
+    "topics": [
+      "LLM",
+      "Gemini",
+      "OCR",
+      "構造化データ抽出",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

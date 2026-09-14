@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:29:54.292733+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを加えたモブプロでの役割分担と課題：人間には疲れる仕事だけが残る問題への挑戦",
+    "url": "https://zenn.dev/lincwell_inc/articles/fddaae539e6e9c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIを導入したモブプロにおいて、実装等の作業がAI化される一方で人間の認知的負荷が増大する課題に対し、役割の再定義や非同期作業の活用で解決を図る実践記録。",
+    "summaryBody": "Linc'well社による、AI（Claude）を組み込んだモブプログラミングの実践報告です。従来のモブプロ体制にAIが加わることで、人間には「判断・思考」という疲労度の高い仕事のみが残るという新たな課題に直面しています。具体的には、AIアカウント交代時のコンテキスト消失、AIのレスポンス待ちによる時間の浪費、そして「ドライバー（操作役）」の役割がAIに移行することで人間側の役割が曖昧になる問題が挙げられています。これに対し、プランファイルの明示的な引き継ぎ、時間のかかるAI作業の非同期化（モブ時間外での実行）、定型指示のSkill化、そして人間側のドライバーを「AIへの指示役」として再定義するなどの対策を試行しています。AI前提の開発フローにおける、物理的作業の消失と認知的負荷の偏りという過渡期特有の知見がまとめられています。",
+    "topics": [
+      "モブプログラミング",
+      "AI協働開発",
+      "Claude",
+      "チーム開発",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

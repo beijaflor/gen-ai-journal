@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:11:15.216243+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向け一時ファイル共有ツール「aispace」のオープンソースCLIクライアント",
+    "url": "https://github.com/aispace-sh/aispace-client",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントと人間の間で、大容量データや構造化ファイルをセキュアに受け渡すためのMCP対応CLIツール。",
+    "summaryBody": "aispace-clientは、AIチャットのコンテキスト制限を超えるような大きなファイルや、一時的な構造化データを安全に共有するための「aispace.sh」用クライアントツールです。AIエージェントによる自動化を最優先に設計されており、機械可読なJSON出力、安定した終了コード、Model Context Protocol (MCP) へのネイティブ対応が特徴です。主な機能として、有効期限付きリンクの生成、ダウンロード回数制限、age（X25519）を用いたローカルでのエンドツーエンド暗号化、そして「sealed transfer」と呼ばれる秘密鍵の安全な受け渡しフローをサポートしています。Go言語で書かれており、単一のバイナリで動作するため、CI/CD環境やAIエージェントの外部ツールとしての統合が容易です。",
+    "topics": [
+      "AI Agent",
+      "Model Context Protocol (MCP)",
+      "File Sharing",
+      "CLI Tool",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "aispace-sh/aispace-client: Open-source CLI and agent skill for aispace.sh"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:08:16.956444+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のコードレビューを設計する",
+    "url": "https://speakerdeck.com/nogu66/ai-ejento-jidai-no-kodo-rebyu-o-sekkei-suru",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントをコードレビューに統合する際の設計思想として、タイミング・観点・検証・独立性の4要素を軸に、人間とAIの役割分担を最適化する手法を解説した資料。",
+    "summaryBody": "AIネイティブ開発時代におけるコードレビューの再設計を提案する資料です。AIエージェントを単に導入するのではなく、コンテキスト・ツール・検証（Hook）を制御する「ハーネス」の設計が重要であると説いています。具体的には、AIが得意とする「正しさ・品質・安全性」の確認と、人間が担うべき「設計意図・知識共有」を明確に分離。運用のポイントとして、レビュー観点の固定（Agent Skill化）、CI/CDやHookへの組み込み、さらには特定ドメインに特化したサブエージェントによる相互レビュー体制の構築などを挙げています。最終的な説明責任は人間に残しつつ、網羅的で高速なフィードバックサイクルを実現するための具体的な4ステップを提示しています。",
+    "topics": [
+      "AIエージェント",
+      "コードレビュー",
+      "Claude Code",
+      "ソフトウェアエンジニアリング",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

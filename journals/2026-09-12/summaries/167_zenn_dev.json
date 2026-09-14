@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:32:41.026627+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人PCのClaude Codeの設定ファイルと設定の動機",
+    "url": "https://zenn.dev/yuki82511988/articles/45a5a464514ac1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを安全に利用するため、Managed設定やサンドボックス機能を活用した多層防御の構成例と、機密情報を守るための具体的な設定意図を解説する。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」を安全に運用するための設定ガイドです。著者はWebエンジニアの視点で、AIエージェントによる予期せぬコマンド実行やファイル読み取りを防ぐための設定を詳述しています。主な工夫として、root権限が必要な`managed-settings.json`を用いた自己編集の防止、OSレベルで制限をかけるサンドボックス機能の強制有効化、さらに`permissions.deny`とサンドボックスのファイル制限を併用する二重の防護策を紹介しています。また、`git push`の禁止や通信制限の徹底など、実機での検証ログに基づいた具体的なプラクティスが提示されており、セキュアなAI駆動開発環境を構築したいユーザーにとって非常に有益な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "セキュリティ",
+      "サンドボックス",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

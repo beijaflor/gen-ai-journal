@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:23:56.401899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコードコメント検出器の改良：統計的特徴量による人間とLLMの識別手法",
+    "url": "https://entropicthoughts.com/better-ai-comment-classifier",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "公開データと高度な統計的特徴量抽出を組み合わせ、ブラウザ上で動作する軽量かつ高精度なAI生成コードコメント検出器を構築した開発記録。",
+    "summaryBody": "ソフトウェア開発者のkqr氏が、以前開発したAIコメント分類器を公開データに基づいて再構築したプロセスを詳述しています。この検出器は、単語長分布、文字n-gram、品詞（POS）タグのn-gramなど、文体に関する多様な統計的特徴量を組み合わせてロジスティック回帰モデルを訓練したものです。データ収集における「トピック漏洩（特定のトピックが特定のモデルに偏る問題）」を回避するための工夫や、モデルをブラウザで動作させるための量子化（355KBへの軽量化）が特徴です。性能面では、実環境の検証において88%の精度を達成しており、個別の判定結果に対して信頼度（較正された確率）を提示します。また、GPT、Claude、Gemini、Grokなど複数のモデルを識別した上で、最終的に人間かロボットかの二値判定に統合する手法を採用しています。",
+    "topics": [
+      "AI検出",
+      "コードコメント",
+      "機械学習",
+      "自然言語処理",
+      "特徴量エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Better AI code comment detector"
+  }
+}

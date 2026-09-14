@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T18:19:36.677664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント相互運用規格の到来：AI開発の焦点は能力からインターフェースへ",
+    "url": "https://www.oreilly.com/radar/the-interfaces-are-arriving/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIエージェント間の接続を標準化するMCPやA2Aプロトコルの登場により、開発の焦点はモデルの能力向上から、再利用可能なインターフェースとエコシステムの構築へと移行している。",
+    "summaryBody": "AIエージェント開発は、これまでモデルのプランニング能力やツール利用といった「能力」に注力してきましたが、現在は「インターフェースの標準化」という大きな転換点を迎えています。Anthropicが寄贈した「Model Context Protocol (MCP)」やGoogle主導の「Agent2Agent (A2A)」が、Linux Foundation傘下の「Agentic AI Foundation」で管理されるようになり、ベンダーを超えた相互運用性が確保されつつあります。\n\n### 主なプロトコルの役割\n- **Model Context Protocol (MCP)**: AIアプリケーションとツールやコンテキスト間の接続を標準化します。LSP（Language Server Protocol）に倣い、一度の実装で複数のIDEやチャットアプリに対応可能にします。\n- **Agent2Agent (A2A)**: 異なるベンダーのエージェント同士が発見し合い、通信するための仕様です。署名付きの「Agent Cards」による身元確認などを提供します。\n\n### 開発チームへの影響と展望\nこの標準化により、統合（インテグレーション）が特定のモデルに依存しない「再利用可能な資産」となります。また、OAuth 2.1やPKCEなどの既存のセキュリティ規格を適用しやすくなるメリットもあります。一方で、プロトコルは現在も急速に進化しており（MCPは2年で5回改訂）、開発者は今後の仕様変更やセキュリティ境界の設計に注視し続ける必要があります。",
+    "topics": [
+      "AIエージェント",
+      "Model Context Protocol (MCP)",
+      "標準化",
+      "相互運用性",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Interfaces Are Arriving – O’Reilly"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:32:14.318903+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ルービックキューブを一撃で解く専用LLM「CUBE ZERO」の開発",
+    "url": "https://zenn.dev/turing_motors/articles/4178a603322b8e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Turing社CEOが開発した、独自の「状態埋め込み」と自己学習ループによってルービックキューブを99.83%の精度で解く専用LLM「CUBE ZERO」の技術解説。",
+    "summaryBody": "自動運転AIを開発するTuring社のCEO山本一成氏による、ルービックキューブ専用LLM「CUBE ZERO」の開発記録です。従来のLLMのように盤面をトークン列として扱うのではなく、54面の状態を「State Encoder」で1つのベクトルに変換し、TransformerのAdaLN等を通じて注入する独自のアーキテクチャを採用しています。学習面では、8つの試行から最短の成功例を選ぶ「Best of 8」方式と、成功率に応じて問題の難易度を動的に調整するカリキュラム学習を組み合わせ、報酬設計なしのシンプルな自己学習のみで、未知の局面をほぼ確実に解く方策の獲得に成功しました。最短解（神の数字）を目指すのではなく、長くても安定して完成に至るパターンを学習させている点が特徴です。",
+    "topics": [
+      "LLM",
+      "ルービックキューブ",
+      "自己学習",
+      "Transformer",
+      "ワールドモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

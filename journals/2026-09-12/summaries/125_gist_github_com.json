@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T15:03:21.721353+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オープンモデルにおける推論プリフィルの実験 v1.1：モデル間の蒸留と汚染の検証",
+    "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-5.5 Proの推論プロセスの冒頭をオープンモデルに注入し、回答の一致率の変化から学習データの由来や蒸留の可能性を分析した実験報告。",
+    "summaryBody": "このレポートは、LLMの推論チャネルに教師モデル（GPT-5.5 Pro）の推論開始部分（最初の1%）をプリフィル（事前入力）として挿入し、その後の生成回答がどの程度教師モデルと一致するかを調査した実験の結果です。対象となったのはDeepSeek V4 Flash、Kimi K3、Qwen3.8 A95Bなどのオープンモデルです。実験の結果、Qwen3.8はプリフィルによって一致率が18.18ポイントも急上昇し、特にSTEM分野や独自のパズル問題で顕著な効果が見られました。これはQwenがGPT-5.5 Proまたはそれに近いモデルから蒸留学習を行っている可能性を強く示唆しています。一方で、Kimi K3はプリフィルの有無に関わらず元から高い一致率を示していることが明らかになりました。",
+    "topics": [
+      "LLM",
+      "推論モデル",
+      "蒸留学習",
+      "Qwen",
+      "モデル評価"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 90,
+      "overall": 82
+    },
+    "originalTitle": "Reasoning prefills on a few open models, v1.1"
+  }
+}

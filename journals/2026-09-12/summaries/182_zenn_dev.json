@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:29:12.908907+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜエージェントハーネスで開発パイプラインを作っているのか",
+    "url": "https://zenn.dev/xtm_blog/articles/689d035440c0ae",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる開発の加速でボトルネックとなった「人間によるレビュー」を解消するため、docker-agentを活用した自律型の設計・実装パイプラインを構築する試み。",
+    "summaryBody": "京都芸術大学のクロステック・マネジメントによる、AIエージェントを組み込んだ次世代開発パイプラインの構築事例です。プロダクトオーナーが記述したMarkdown形式の要求仕様書から、設計図（ER図、API定義等）の作成を経て、最終的にプルリクエストを自動生成する「ハーネス（架装）」の開発について詳述されています。既存ツールではなく自製を選択した理由は、AIの実装速度に対して人手のレビューが追いつかなくなる課題を、監査・検証の仕組み化によって解決するためです。基盤にdocker-agentを採用することで、特定モデルへの依存を避けつつ、権限管理やサンドボックス環境を柔軟に構築しています。エージェントが「最も安くテストが通る不十分な実装」に流れる性質を、別のエージェントによる多層的な監査ループで制御する設計思想など、実戦的な知見が共有されています。",
+    "topics": [
+      "AI Agent",
+      "docker-agent",
+      "Agentic Coding",
+      "SDLC",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

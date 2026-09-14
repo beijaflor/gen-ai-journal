@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T23:33:51.335059+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SanoTTS-jp がすごい 〜マイコンで動く日本語TTS〜",
+    "url": "https://qiita.com/nnn112358/items/e72ab79b7d6595b7e860",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ESP32などのマイコン単体で、クラウドを介さず実時間以上の速度で動作する559KBの超軽量日本語ニューラル音声合成「SanoTTS-jp」の解説。",
+    "summaryBody": "SanoTTS-jpは、量子化後の重みがわずか559KBという極めて軽量な日本語ニューラルTTS（音声合成）モデルです。ESP32-S3やESP32-P4といったマイコン上で動作し、CoreS3使用時には実時間の約2.2倍（xRT 0.446）という高速なストリーミング推論を実現しています。従来のマイコン向け音声合成は、ロボット的な規則合成や大容量メモリを要する単位選択法が主流でしたが、本プロジェクトはW8A8量子化とESP32のSIMD命令（PIE）の活用により、ニューラル方式の豊かな表現力とマイコンでの動作を両立させました。さらに、Open JTalkと辞書をフラッシュメモリから直接参照する仕組みを搭載することで、オフラインでの漢字かな交じり文の解析も可能です。記事では人気ロボット「ｽﾀｯｸﾁｬﾝ」への実装例や、AquesTalkとの比較、MITライセンスによる配布の容易さについて述べられています。",
+    "topics": [
+      "ESP32",
+      "TTS",
+      "音声合成",
+      "エッジAI",
+      "ｽﾀｯｸﾁｬﾝ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    }
+  }
+}

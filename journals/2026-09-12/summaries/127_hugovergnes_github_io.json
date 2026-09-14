@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T15:02:54.423627+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "$998で3.8BパラメータのLLMを訓練し、COREスコア0.384を達成した技術記録",
+    "url": "https://hugovergnes.github.io/little-lm-3-8b/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "予算1,000ドル以下、43時間のB200レンタルで3.8BパラメータのLLMをゼロから訓練し、GPT-2を凌駕する性能を実現した最適化の全工程。",
+    "summaryBody": "エンジニアのHugo Vergnes氏が、約1,000ドルの予算で3.8BパラメータのLLM「little-lm」をスクラッチ訓練した詳細な報告です。B200 GPUを使用し、65Bトークンの学習でCOREスコア0.384を達成（GPT-2は0.2565）。Llamaスタイルのアーキテクチャに、独自の「値埋め込み（Value Embeddings）」やMuon最適化、台形型学習率スケジューラ、FP8トレーニングを導入しています。特にスループット向上のための実装（Liger Fused Linear CE、ボキャブラリパディング等）の微細な工夫や、文脈長がベンチマーク結果に与える影響、失敗に終わった手法（document-boundary masking等）の分析が極めて実践的にまとめられています。7年前の最先端技術が、今や個人の数日間のプロジェクトで再現可能になったことを証明する内容です。",
+    "topics": [
+      "LLM訓練",
+      "低コストAI",
+      "Muon最適化",
+      "B200",
+      "ディープラーニング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Training a 3.8B LLM to 0.384 CORE for $998"
+  }
+}

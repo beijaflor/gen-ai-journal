@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:17:03.813473+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Next.jsが1ヶ月で1,500件のGitHub Issueをクローズした方法",
+    "url": "https://nextjs.org/blog/how-we-closed-1500-github-issues",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Next.js開発チームがAIエージェント「closability」を活用し、膨大なGitHub Issueの調査と再現テストを自動化することで、1ヶ月に1,500件のバックログを削減した事例紹介。",
+    "summaryBody": "Next.jsのGitHubリポジトリでは、利用者増加に伴いIssueのバックログが最大3,109件に達していました。従来の「放置期間に基づく自動クローズ」では必要な課題まで消してしまう問題があったため、Vercelの自社フレームワーク「eve」を用いたAIエージェント「closability」を開発。このエージェントは、サンドボックス環境でコードを実行し、過去のPRやコミット履歴を検索、現在のバージョンでバグが再現するかを確認した上で、根拠を添えた信頼スコアを提示します。GPT-5.6 Lunaを活用した200セッションの並列実行により、1ヶ月で1,462件を処理。そのうち再オープンされたのはわずか3件（0.2%）と極めて高い精度を記録しました。現在は、信頼スコア80以上の案件をAIが自動クローズする運用も試験導入されています。",
+    "topics": [
+      "Next.js",
+      "AI Agents",
+      "GitHub Management",
+      "LLM",
+      "Open Source Maintenance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 95
+    },
+    "originalTitle": "How we closed 1,500 GitHub issues in one month | Next.js"
+  }
+}

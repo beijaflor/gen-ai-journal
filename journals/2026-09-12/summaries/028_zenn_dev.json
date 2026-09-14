@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-12T01:12:01.019217+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Rules が黙って死ぬのは、Claude が Read ツールを使っていないから",
+    "url": "https://zenn.dev/odacchi/articles/claude-code-rules-read-tool",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおいて、トークン節約を目的としたBashコマンドへの迂回指示により、Readツールに紐付いたカスタムルールやCLAUDE.mdが読み込まれなくなる問題の原因と回避策を詳解しています。",
+    "summaryBody": "この記事は、Claude Codeのカスタムルール（paths付きRules）やサブディレクトリのCLAUDE.mdが意図通りに動作しない「サイレントな機能不全」を分析しています。根本的な原因は、Claudeがファイルを読み取る際に専用の`Read`ツールではなく、Bashの`cat`や`sed`を優先して使うよう指示されるシステムプロンプトにあります。Rulesの発火は`Read`ツールの実行に紐付いているため、Bashコマンドで代用されるとフックが作動しません。この挙動は`CLAUDE_CODE_THRIFTY_SONIC`というフィーチャーフラグによって制御されており、セッション単位のA/Bテスト（特にOpusモデルなど）によって発生の有無が決まります。対策として、プロンプトで`Read`ツールの優先を明示するか、環境変数でフラグを`false`または`0`に設定して機能を無効化することを推奨しています。特にサブエージェント構成では親セッションの割り当てを継承するため、影響が広範囲に及ぶ点に注意が必要です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM",
+      "Debugging",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}
