@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:42:09.145806+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントとアプリを動かす Cloudflare OS を試してみた",
+    "url": "https://azukiazusa.dev/blog/cloudflare-os/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Cloudflare Workersを基盤に、AIエージェントとの対話、アプリの実行、権限管理を一元化する新プラットフォーム「Cloudflare OS」の試用レビュー。",
+    "summaryBody": "Cloudflare OSは、AIエージェントが生成したコードを即座に実行可能なアプリ（Gadget）として動作させ、チームで共有するためのワークスペースです。Cloudflare Workers、Durable Objects、SQLiteを基盤としており、各Gadgetが独立した実行環境とストレージを持ちます。\n\n主な特徴は以下の通りです：\n- **Gadget & Blueprint**: AIが作成した実体としてのアプリと、その設計図を再利用するためのテンプレート機能。\n- **Gatekeeper**: 外部サービス（GitHub等）との接続を仲介する独自のセキュリティ層。エージェントが取得した情報が共有先ユーザーの権限で閲覧可能かを検証する仕組みを備えています。\n- **RPC通信**: クライアントとサーバー間の通信にはCap'n ProtoベースのRPCが採用され、サンドボックス化された環境で安全に動作します。\n\n記事ではローカルでの起動手順から、メモアプリの開発、GitHub連携によるIssue管理、そして権限確認の挙動までが具体的に解説されています。",
+    "topics": [
+      "Cloudflare",
+      "Cloudflare OS",
+      "AIエージェント",
+      "Cloudflare Workers",
+      "Web開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

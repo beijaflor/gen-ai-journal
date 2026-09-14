@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:41:28.032937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Zero-Trust LLM: 自律型エージェントのための計算憲法とガバナンスフレームワーク",
+    "url": "https://github.com/misqe/zero-trust-llm",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMエージェントの盲目的な実行を防ぐため、仮説検証と外部実行層への強制委譲（Hard Yield）を核としたゼロトラストな統治プロトコルを提案するプロジェクト。",
+    "summaryBody": "本プロジェクトは、LLMエージェントが本番環境で「ユーザーへの同調（Sycophancy）」により破壊的な操作を行うリスクを排除するためのフレームワークを提示しています。現在のエージェントは、RLHFの影響で不確かな前提に基づき即座に実行を試みる傾向がありますが、本手法ではエージェントから自由意志を奪い、「認識論的ステートマシン」として定義します。具体的には、すべての重要アクションにおいて『仮説定義→証拠特定→検証手法の確立→読み取り専用の実行→ハードイールド（実行中断と外部への制御委譲）』という厳格なループをシステムプロンプトおよび実行レイヤーで強制します。APIストリームを物理的に切断し、人間やミドルウェアの介在を必須とすることで、デモ品質から商用品質への信頼性のギャップを埋めることを目的としています。",
+    "topics": [
+      "LLMエージェント",
+      "AI安全性",
+      "Zero Trust AI",
+      "システムプロンプト",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "misqe/zero-trust-llm: A computational constitution for autonomous agents."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:30:32.602340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code本番運用ガイド — CI/CDに組み込む自律エージェント設計",
+    "url": "https://zenn.dev/hampen2929/books/claude-code-production-guide",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeをCI/CDに統合し、自動でバグの検出から修正・コミットまでを行う自律型エージェントとして本番運用するための技術設計と管理手法をまとめたガイド。",
+    "summaryBody": "本書は、AnthropicのCLIツール「Claude Code」を単なる対話ツールとしてではなく、CI/CDパイプライン上で稼働する「自律したチームメンバー」として運用するためのノウハウを凝縮した一冊です。ヘッドレス実行（claude -p）を基盤とした自動化、検出・修正・検証・コミットのループ設計、コンテキストを分割するサブエージェント編成など、高度なエージェント設計を解説。さらに、企業導入で課題となる『暴走・品質・コスト・監査』に対し、ガードレール実装、プロンプトインジェクション対策、1修正あたりのコスト管理、稟議・監査対応といった実務的なアプローチを、失敗例とリファレンス実装を交えて体系的に網羅しています。",
+    "topics": [
+      "Claude Code",
+      "CI/CD",
+      "LLMエージェント",
+      "GitHub Actions",
+      "AIセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    }
+  }
+}

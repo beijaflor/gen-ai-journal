@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:28:08.590209+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Intent as Code - Agentic Coding 時代における安全な権限管理",
+    "url": "https://speakerdeck.com/shoppingjaws/intent-as-code",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる自動化が進む中、従来の権限（Permission）では不十分な安全性を、タスクの実行境界を定義する「Intent（意図）」で制御する新しいセキュリティ手法の提案。",
+    "summaryBody": "AIエージェント（Agentic AI）が開発環境で自律的に動く時代において、従来のRBACなどの権限管理（Permission）は「できること」が広すぎ、AIの誤判断や攻撃に対する防御として不十分であることを指摘しています。著者は、Permissionの内側に「どこまでしてよいか」という境界を設ける「Intent（意図）」の概念を導入し、それをコードで定義する『Intent as Code』を提唱しています。\n\n具体的には、GitHub Issueの操作、Terraformの実行、git push、WebFetchの4つのリスクシナリオを挙げ、それぞれに対し `safe-gh` や `safe-push` といった動的なCLIラッパーを用いて、実行前にコンテキストを機械的に検証し、意図しない操作（CI定義の書き換えや外部への情報送信など）をブロックまたは承認制にする実装例を解説しています。最終的には、これらがPlatform Engineeringの新しい責務として、AIがEvilになっても壊れない開発環境を提供することの重要性を説いています。",
+    "topics": [
+      "AI Agent",
+      "Security",
+      "Platform Engineering",
+      "DevSecOps",
+      "Intent as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
