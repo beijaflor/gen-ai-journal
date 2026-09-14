@@ -41,6 +41,7 @@
 - [ ] 118. https://entropicthoughts.com/better-ai-comment-classifier
 - [ ] 116. https://github.com/Atomburstofficial/geiger
 - [ ] 115. https://www.cambridge.org/jp/universitypress/about-us/news-and-blogs/do-people-prefer-stories-written-by-ai
+- [ ] 114. https://news.ycombinator.com/item?id=49624603
 - [ ] 113. https://www.cbsnews.com/news/ai-kill-humans-anthropic-researcher-more-than-ten-percent-chance/
 - [ ] 108. https://mhacevedo.com/posts/the-discovery-problem
 - [ ] 107. https://spader.zone/wtf/

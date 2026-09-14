@@ -1,23 +1,3 @@
-## DeepSeekが「DeepSeek-V4.1 Flash」を発表：V4 Proを凌駕する性能と驚異的な低価格を実現
-
-https://news.ycombinator.com/item?id=49624603
-
-**Original Title**: DeepSeek launching v4.1 flash cheaper and more capable than v4 pro | Hacker News
-
-DeepSeekは、既存のProモデルを超える性能とさらなる低価格化を実現した新モデル「V4.1 Flash」を2026年9月にリリースし、APIリクエストの自動移行を行うことを発表しました。
-
-DeepSeekは、最新の軽量モデル「DeepSeek-V4.1 Flash」のリリース計画を発表しました。内部および外部テストの結果、このFlashモデルはパフォーマンス、コスト、速度、タスク完了時間のすべての主要指標において、既存の上位モデルである「V4 Pro」を全面的に上回ったとしています。
-
-### 主な特徴と変更点
-- **Proモデルの自動置換**: V4.1 Proがリリースされるまでの間、既存のV4 ProへのAPIリクエストは自動的にV4.1 Flashにルーティングされ、料金もFlashの低価格帯が適用されます。
-- **大幅な値下げ**: オフピーク時の価格は、入力キャッシュヒット $0.003/1M、キャッシュミス $0.15/1M、出力 $0.6/1M となり、従来のFlashモデルからもさらに値下げされます（ピーク時は2倍）。
-- **驚異的なスループット**: ベータテスターからは 300～400 TPS（Tokens Per Second）を超える速度が報告されており、Gemini Flashなどの競合を上回る可能性があります。
-
-### コミュニティの反応
-Hacker Newsの議論では、その圧倒的なコストパフォーマンスを歓迎する声が多い一方、特定言語（英語）でのプロンプトに対し中国語で思考・回答してしまう「言語追従性」の課題や、プロダクション環境において予告なくモデルが自動変更されることへの運用上の懸念も示されています。
-
----
-
 ## Mistral AIが30億ユーロを調達、欧州史上最大の資金調達により「ソブリンAI」の確立を加速
 
 https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/

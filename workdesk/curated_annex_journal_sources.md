@@ -11,7 +11,7 @@
 
 ## §1 モデル・基盤モデルの新展開
 
-- [x] 114. https://news.ycombinator.com/item?id=49624603
+- [ ] 114. https://news.ycombinator.com/item?id=49624603
   <!-- DeepSeekがV4 Proを超える性能を低価格で投入し、APIを自動移行。中国勢の価格攻勢の最新手。 -->
 - [x] 097. https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/
   <!-- 欧州最大の30億ユーロ調達で「ソブリンAI」を加速。地政学とオープンウェイトの交点。 Signals: annex_flag ⭐ -->

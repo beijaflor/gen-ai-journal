@@ -2,7 +2,6 @@
 
 ## 1. モデル・基盤モデルの新展開
 
-- [ ] 114. https://news.ycombinator.com/item?id=49624603
 - [ ] 097. https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/
 - [ ] 137. https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - [ ] 109. https://openai.com/index/codex-quantum-computing-experiments/
