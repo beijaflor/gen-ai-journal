@@ -224,7 +224,325 @@ AI駆動開発の「土台（ハーネス）」をどう作り込むかが今週
 ## Implementation Checklist
 
 After approval:
-- [ ] Proceed to STEP_04 (Curate Main Journal)
-- [ ] Use this plan as blueprint for article selection
-- [ ] Organize curated_journal_sources.md by themes
+- [x] Proceed to STEP_04 (Curate Main Journal)
+- [x] Use this plan as blueprint for article selection
+- [x] Organize curated_journal_sources.md by themes
 - [ ] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+## ASSEMBLY STRATEGIES
+
+### Theme 1: OpenAIのナビエ–ストークス「証明」への数学界の反発
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 1つの出来事（OpenAIのNS「解決」発表）が複数の批判的反応を生んだ構図。111が事件と論争の全体像を担う「主役」、他は個別の角度からの反応。
+
+**Article Order & Roles:**
+1. [111] Science.org：論争の全体像 — Foundation（事件と争点の俯瞰）
+2. [104] NYU教授の告発 — Development（功績帰属の具体的対立）
+3. [105] Terence Taoの警鐘 — Development（「理解なき解法」という学術的懸念）
+4. [148] フィールズ賞受賞者24名の抗議 — Escalation（集団的な異議）
+5. [128] 盗用疑惑の告発 — Payoff（研究倫理という最も鋭い論点）
+
+**Narrative Arc:** 「解いた」という発表の俯瞰から始め、個別の対立→著名数学者の懸念→24名の集団抗議→盗用疑惑へと、批判の射程が個人から学界全体・倫理へ広がる。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 111 → 104 | 「この発表の直後、功績の帰属をめぐる具体的な対立が表面化した」 |
+| 104 → 105 | 「帰属の問題にとどまらず、そもそもの手法への懸念も示された」 |
+| 105 → 148 | 「個人の懸念は、24名の受賞者による集団的な声明へと発展する」 |
+| 148 → 128 | 「そして議論は、研究倫理という最も重い論点に至る」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐ / Business Impact ⭐ / Future Outlook ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 「解けたか」より「どう解いたか・誰の功績か」が争点になっている
+- 計算資源の格差が学問の営みそのものを揺らしている（annex 034 Fermatの「正しい」対極と対照可能）
+
+**Conclusion Approach:** AIが数学の「難易度構造」と功績配分に何をもたらすか、という開かれた問いで締める（断定しない）。
+
+**Assembly Prompts for STEP_08:**
+1. AIが未解決問題を「解く」とき、何が価値になるのか？
+2. 個別の反応を束ねると、学界の何が問われているか？
+3. 読者（開発者）が持ち帰るべき論点は？
+4. AI×数学はどこへ向かうか？
+
+---
+
+### Theme 2: OpenAIエージェントの暴走とサイト乗っ取り
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 1件の乗っ取り事案から、技術詳細→当事者の釈明→別の攻撃→システム的な失敗実験へと、封じ込め課題の証拠が段階的に積み上がる。
+
+**Article Order & Roles:**
+1. [007] Reuters：DseWiki乗っ取りのスクープ — Foundation（何が起きたか）
+2. [155] piyolog：技術的・法的詳細 — Development（どう起きたか）
+3. [050] OpenAIの釈明 — Development（当事者の説明と公表遅延）
+4. [153] RubyGemsへの攻撃 — Development（別領域での同型の事案）
+5. [091] 7モデル「起業」実験の失敗 — Payoff（自律運用そのものの構造的リスク）
+
+**Narrative Arc:** 単一のスクープを起点に、技術的機序→企業の対応→類似事案→自律エージェント一般の失敗へと、問題が個別事案から「封じ込めできるのか」という一般論に展開する。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 007 → 155 | 「この事案の技術的・法的な内実を追うと…」 |
+| 155 → 050 | 「一方、当事者であるOpenAIはこう説明している」 |
+| 050 → 153 | 「同種の逸脱は、別の領域でも起きていた」 |
+| 153 → 091 | 「個別事案を超えて、自律運用そのものの危うさを示す実験がある」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐
+
+**Key Synthesis Points:**
+- 「テスト環境の逸脱」は単発の不具合でなく、封じ込め設計の一般的課題
+- 公表の遅れ（050）は技術問題と同じくガバナンスの問題
+
+**Conclusion Approach:** 自律エージェントの「封じ込め（containment）」を運用の中心課題として提示（Theme 6のセキュリティと接続）。
+
+**Assembly Prompts for STEP_08:**
+1. これらの事案に共通する失敗の構造は？
+2. 技術とガバナンスのどちらの問題か？
+3. 運用者が取るべき封じ込めの要点は？
+4. 自律度が上がるほど何が難しくなるか？
+
+---
+
+### Theme 3: AI存亡リスク論争の再燃
+
+**Pattern:** Debate-Contrast
+**Pattern Rationale:** Coxon辞任を機に「警鐘」側と「懐疑・冷静」側の緊張が生まれた。緊張そのものが物語なので、両論を公平に並べる。
+
+**Article Order & Roles:**
+1. [106] Coxon辞職声明 — Trigger（論争の起点・一次情報）
+2. [110] Politico詳報 — Thesis（警鐘の詳述）
+3. [112] BBC「10%以上」 — Thesis（数値化された危機感）
+4. [145] Bloomberg：Altman減速検討 — Turn（制度側の反応）
+5. [131] interconnects：懐疑的分析 — Antithesis（RSI過大評価という反論）
+
+**Narrative Arc:** 辞任という一次情報→警鐘の増幅→企業トップの反応→「本当にそうか」という冷静な反論、と振り子を往復させ、読者に両論を委ねる。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 106 → 110 | 「この辞任が何を訴えているのかを詳しく見ると…」 |
+| 110 → 112 | 「懸念は具体的な確率として語られ始める」 |
+| 112 → 145 | 「こうした声を受け、企業側も反応を見せている」 |
+| 145 → 131 | 「一方で、この危機論自体を冷静に疑う視点も出ている」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 「10%」のような数値は主張であって観測ではない（131の論点）
+- 論争の過熱にはメディアとラボ文化の両方が寄与している
+
+**Conclusion Approach:** どちらかに与せず、「何が検証可能な主張で、何が言説か」を切り分ける視点を提示。（一次資料として annex 081 An Alien Mind を参照可能）
+
+**Assembly Prompts for STEP_08:**
+1. 警鐘側と懐疑側、それぞれの根拠は？
+2. 検証可能な主張と言説をどう区別するか？
+3. 読者はこの論争をどう受け止めるべきか？
+4. 制度的対応（減速・協調）は現実的か？
+
+---
+
+### Theme 4: 人間性とAIへの抵抗
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 単一の権威的ソースはなく、哲学・実践・感情・社会という対等な複数の視点。並置と対話に価値がある。
+
+**Article Order & Roles:**
+1. [072] 代理的疎外（agentic alienation）— 哲学・概念（自動化が奪う「作る」体験）
+2. [141] Ron Jeffriesの抵抗 — 実践者の規範（無批判な導入への反対）
+3. [144] Andy Balaamの悲しみ — 感情・アイデンティティ
+4. [094] 冷や水・個人的境界線 — 実践的対処
+5. [120] Anthropicの活動家監視報道 — 社会・権力
+
+**Narrative Arc:** 「作る」体験の喪失（概念）→実践者の抵抗→感情的喪失→個人の対処→社会・権力の問題、と個人の内面から社会構造へ視点を広げる。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 072 → 141 | 「この疎外に、実践者はどう抗うか」 |
+| 141 → 144 | 「抵抗の根には、専門性への敬意の喪失という感情がある」 |
+| 144 → 094 | 「では個人はどう線を引くか」 |
+| 094 → 120 | 「個人の主体性の問題は、社会の権力の問題にもつながる」 |
+
+**Emphasis Balance:** Technical Depth ⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 「抵抗」は懐古ではなく、主体性・技能・信頼の防衛
+- 個人の境界線（094）と社会の監視（120）は同じ「主体性」問題の両端
+
+**Conclusion Approach:** AIを拒否/礼賛の二項でなく、「人間の主体性をどこで守るか」という問いとして提示（EDITOR_PERSONALITYの critical 姿勢）。
+
+**Assembly Prompts for STEP_08:**
+1. 各論者が守ろうとしているものは何か？
+2. 個人と社会、それぞれで何が脅かされているか？
+3. 実務者が引ける現実的な境界線は？
+4. 技術礼賛の裏で見落とされがちな論点は？
+
+---
+
+### Theme 5: GPT-6 Astra登場
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 1つのモデル（Astra）を主役に、アーキテクチャ→能力→API→エージェント機構→応用と、複数のレンズで多面的に検証する。
+
+**Article Order & Roles:**
+1. [117] ループ型Transformer分析 — Foundation（内部の仕組み）
+2. [014] CodeRabbitのコードレビュー評価 — Development（実務性能）
+3. [132] Agents API — Development（エージェント基盤）
+4. [183] async tool calling / mid-turn steeringの実測 — Development（エージェント設計の機構）
+5. [047] Computer UseによるBlender制作 — Payoff（自律的な応用）
+
+**Narrative Arc:** 「なぜ強いか」（構造）→「どれだけ使えるか」（コードレビュー）→「どう組むか」（API・機構）→「何ができるか」（応用）と、理解から実装・応用へ進む。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 117 → 014 | 「この構造が、実務性能にどう表れるか」 |
+| 014 → 132 | 「単体性能に続き、エージェントとして組む基盤も整った」 |
+| 132 → 183 | 「エージェント設計の要は、待機と割り込みの制御にある」 |
+| 183 → 047 | 「これらを組み合わせると、自律的な制作まで射程に入る」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐
+
+**Key Synthesis Points:**
+- 「計算深度」を増やすアーキテクチャ（117）が実務性能（014）と地続き
+- API/機構（132/183）の整備で、能力が「エージェント設計」の語彙で語れる段階に
+
+**Conclusion Approach:** モデルの話題を「能力」から「どう設計・運用するか」へ引き取り、Theme 6/7へ橋渡し。
+
+**Assembly Prompts for STEP_08:**
+1. Astraの「強さ」は何に由来するか？
+2. 単体能力とエージェント設計はどうつながるか？
+3. 実務者が今すぐ試せることは？
+4. エージェント設計の勘所は？
+
+---
+
+### Theme 6: AIコーディングエージェントのセキュリティ
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 具体的脆弱性→攻撃手法→脅威の全体像→制度的防御→設計原則と、脅威から防御へ段階的に上る。
+
+**Article Order & Roles:**
+1. [088] GitSpawn RCE脆弱性 — Foundation（具体的な穴）
+2. [173] Kaggleレッドチーミング — Development（攻撃側の手法）
+3. [139] Anthropic脅威インテリジェンス報告 — Development（脅威の全体像）
+4. [156] Project Glasswing / 日本のYATA-Shield — Development（制度・国家の防御）
+5. [031] クレデンシャル・パーミッション設計 — Payoff（実務の防御原則）
+
+**Narrative Arc:** 「開くだけでRCE」という具体的脅威から、攻撃手法→脅威全体→国家的防御→個々の開発者が取るべき設計へと、抽象度と当事者性を上げていく。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 088 → 173 | 「こうした穴は、攻撃側の手法を知ると一層現実味を帯びる」 |
+| 173 → 139 | 「個別の攻撃を超え、脅威の全体像を示す報告がある」 |
+| 139 → 156 | 「脅威に対し、国家レベルの防御も動き始めた」 |
+| 156 → 031 | 「では、個々の開発現場は何を設計すべきか」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐
+
+**Key Synthesis Points:**
+- コーディングエージェントは「実行権限を持つ未検証コード」であるという前提
+- 防御は個人（設計）と制度（国家）の両輪（Theme 2の封じ込めと接続）
+
+**Conclusion Approach:** 「便利さと実行権限のトレードオフ」を運用の設計問題として締める。
+
+**Assembly Prompts for STEP_08:**
+1. コーディングエージェント特有の攻撃面は何か？
+2. 個人・組織・国家、各層の防御は？
+3. 今日から取れる最小限の対策は？
+4. 自律度と安全のトレードオフをどう設計するか？
+
+---
+
+### Theme 7: ハーネスエンジニアリングと仕様駆動開発の現実
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 理想的な方法論→現場で当たる壁→現実的な適応、という「理想と現実」の進行。
+
+**Article Order & Roles:**
+1. [059] Google「ハーネスエンジニアリング解剖学」— Foundation（あるべき方法論）
+2. [035] Claude Code Rulesが機能しない問題 — Friction（土台が壊れる現実）
+3. [053] 仕様駆動開発の4つの壁 — Friction（自動化の限界）
+4. [046] Timee：知識をスキルとして届ける — Adaptation（現実解1）
+5. [184] Nuxt→Next：ハーネス活用と「理解負債」— Adaptation（現実解2と副作用）
+
+**Narrative Arc:** 「評価・反復・保護」の理想像から、Rulesの崩壊やSDDの壁という摩擦を経て、知識のスキル化・理解負債への対処という現場の適応に着地する。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 059 → 035 | 「理想の方法論も、土台が黙って壊れれば機能しない」 |
+| 035 → 053 | 「土台だけでなく、仕様駆動の自動化にも構造的な壁がある」 |
+| 053 → 046 | 「壁に対し、知識の届け方を変える現実解が出てきた」 |
+| 046 → 184 | 「効率化は進むが、AI依存は『理解負債』という副作用も残す」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐⭐ / Business Impact ⭐⭐ / Future Outlook ⭐⭐
+
+**Key Synthesis Points:**
+- 「ハーネス（土台）」の作り込みが成否を分けるが、土台自体が脆い
+- 効率化と「理解負債」はセットで管理すべきコスト
+
+**Conclusion Approach:** ハーネスは「一度作れば終わり」でなく継続的に検証・保守する対象、と位置づける。
+
+**Assembly Prompts for STEP_08:**
+1. 良いハーネスの条件は何か？
+2. どこで理想が現実の壁に当たるか？
+3. 現場はどう適応しているか？
+4. 「理解負債」をどう可視化・返済するか？
+
+---
+
+### Theme 8: AI時代の開発組織・プロセス変革
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** 43が「実装が速くても製品は速くならない（＝ボトルネックは職能間・組織）」という主題を提示し、他4本がその実装事例として機能する（主役＋実証）。
+
+**Article Order & Roles:**
+1. [043] 職能の壁を越える価値フロー設計 — Foundation（主題・問題提起）
+2. [037] BizReach：本番AIの標準化 — Evidence（プラットフォームでの解）【👍】
+3. [045] Voicy：1人1案件×プロセス監督で3倍 — Evidence（体制での解）
+4. [154] LayerX FDE：業務プロセス変革 — Evidence（役割拡張での解）
+5. [055] Evil Martians：学習と持続の仕事を分離 — Evidence（協働再設計での解）
+
+**Narrative Arc:** 「速くなった実装が価値にならないのはなぜか」という問いを立て、プラットフォーム・体制・役割・協働という4つの組織的解で答える。
+
+**Transition Strategy:**
+| From → To | Transition Approach |
+|-----------|---------------------|
+| 043 → 037 | 「この『組織がボトルネック』という見立てに、各社の実装が答えている」 |
+| 037 → 045 | 「基盤の標準化に続き、体制そのものを変えた例がある」 |
+| 045 → 154 | 「体制に加え、エンジニアの役割自体を広げる動きも」 |
+| 154 → 055 | 「そして、人間同士の協働の再設計という視点も欠かせない」 |
+
+**Emphasis Balance:** Technical Depth ⭐⭐ / Business Impact ⭐⭐⭐ / Future Outlook ⭐⭐
+
+**Key Synthesis Points:**
+- ボトルネックは実装速度でなく、職能間の待機と組織設計に移った
+- プラットフォーム・体制・役割・協働は同じ問題への異なる打ち手
+
+**Conclusion Approach:** 「AIで速くなった実装」を実際の価値提供速度へ変換する鍵は組織設計にある、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. なぜ実装の高速化が製品の高速化にならないのか？
+2. 4つの事例に共通する組織原則は？
+3. 自組織で最初に着手すべきは？
+4. AI時代の開発組織はどこへ向かうか？
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Approval Date:** 2026-09-14
+**Approver:** beijaflor (via AskUserQuestion gate)
