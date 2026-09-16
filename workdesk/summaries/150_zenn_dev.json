@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:33:25.908857+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "今話題の SkillSpector で agent skills の安全性をチェックしてみた",
+    "url": "https://zenn.dev/gemcook/articles/try-skillspector-agent-skills-security",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAが公開したAIエージェント・スキルのセキュリティスキャナー「SkillSpector」を用い、著名なライブラリや悪意あるサンプルを対象にその検出精度と実用的な運用方法を検証したレポート。",
+    "summaryBody": "この記事では、NVIDIAが公開したAIエージェント用スキルの脆弱性診断ツール「SkillSpector」の検証結果をまとめています。執筆者は、静的解析機能（--no-llm）に焦点を当て、著名な『mattpocock/skills』と意図的に脆弱性を含ませたテスト用サンプル（fixtures）を比較。リポジトリ全体のスキャンでは、READMEや依存関係の定義に過剰に反応し「CRITICAL」判定が出るノイズの多さを指摘しつつも、個別のスキル単位でのスキャンや、悪意あるコード（プロンプト・インジェクションや環境変数の窃取試行）の検知には非常に有効であることを示しています。導入前の「ざっくりとした自動検知」として有用でありながら、最終的には人間やLLMによる多角的な確認が必要であると結論付けています。",
+    "topics": [
+      "SkillSpector",
+      "AI Agent",
+      "Security",
+      "NVIDIA",
+      "Static Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

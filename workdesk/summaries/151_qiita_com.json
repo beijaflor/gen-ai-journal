@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:33:44.037465+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のスキルを47本運用して測った、7つのこと",
+    "url": "https://qiita.com/suwa_nobu/items/08e3bd535dbc79e0c738",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeに47本以上のスキルを導入し、トークン消費量、説明文の自動消去、実装型スキルの高負荷、公式評価ツールの特性などを1ヶ月間にわたり詳細に検証したレポート。",
+    "summaryBody": "Claude Codeの実運用における「スキルの限界と挙動」を47本以上の自作・公開スキルを用いて徹底検証した記事です。主な発見として、1. スキルを増やしても一覧表示の予算制限（Budget）によりトークン消費は増えないが、代わりに呼び出し実績の少ないスキルの説明文が「無警告で消去」され機能しなくなること、2. 指示書型と実装型（Python等）では起動時のトークン消費に約28倍の差があること、3. --restrictedモードでは自作スキルが全消去されること、などを指摘しています。また、2026年9月に追加された公式評価コマンド`claude plugin eval`についても触れ、定性的な再現性の確認には有効だが、トークン削減量などの「量」の計測には不向きであるといった、開発者目線の実践的な洞察がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLM",
+      "Anthropic",
+      "パフォーマンス計測"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 97
+    }
+  }
+}

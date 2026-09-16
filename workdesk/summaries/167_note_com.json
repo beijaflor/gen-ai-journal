@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:38:21.378988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントと「意味の空白地帯」：RAGで露呈した問題は繰り返される",
+    "url": "https://note.com/agile_gibbon8247/n/n03080558d772",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェント導入の真の障壁は技術的な構築ではなく、変化する業務ルールに合わせてAIが参照する「意味」を更新し続ける責任体制（Semantic Ownership）の欠如にある。",
+    "summaryBody": "### AIエージェントが直面するRAGの再来\nRAG（検索拡張生成）で露呈した「情報の鮮度と正確性を維持し続けることの難しさ」は、AIエージェントにおいてさらに深刻化します。エージェントは検索だけでなく「判断と実行」を伴うため、データの定義のみならず、変化し続ける業務判断のルールを機械が扱える形で同期させる必要があります。\n\n### Semantic Ownership（意味の所有責任）の必要性\n業務知識を持つ現場と実装を担うIT側の間で、業務ルールをAIに反映・維持する責任が宙に浮く「意味の空白地帯」が生じがちです。これを解消するには、Data Ownership（データの所有権）を超えた「Semantic Ownership（意味の所有責任）」を定義し、誰が判断基準の正しさに責任を持つかを明確にしなければなりません。\n\n### 「静かな失敗」を防ぐガバナンス\nAIエージェントの失敗はシステムエラーではなく、環境変化による「判断のズレ」として静かに現れます。これを防ぐには、リスクに応じた管理レベルを設定し、管理の入り口を一本化する「Single Point of Governance」の構築が不可欠です。AIに仕事を理解させるのではなく、企業側が自らの仕事を定義し続ける姿勢が問われています。",
+    "topics": [
+      "AIエージェント",
+      "RAG",
+      "セマンティック層",
+      "データガバナンス",
+      "Semantic Ownership"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

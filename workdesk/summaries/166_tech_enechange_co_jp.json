@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:37:56.778962+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "検算ハーネス：AI にも人にも、正しさを判定させない",
+    "url": "https://tech.enechange.co.jp/entry/2026/09/13/003945",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成の正しさを、人間やAIの主観ではなく既存システムの出力を「正解」として機械的に突き合わせる「検算ハーネス（Golden Master）」の手法と運用指針。",
+    "summaryBody": "AIがコードを書く速度は向上したが、検証の速度は追いついていない。本記事では、請求計算のような1円の誤差も許されないシステムにおいて、AIやエンジニア自身に正誤を判定させず、既存システムの実行結果を期待値とする「Golden Master」方式を用いた検証手法を紹介。100%一致を基本とし、発生した差分を「実装ミス」「マスタ不備」「既存の癖」に人間が分類することで、業務ロジックの正当性を担保する。また、計算結果に差が出ない実装の選択（丸め位置等）を「検算が弁別できない選択」として検知し、安易に自動化せず人間に判断を仰ぐ規律についても詳述。AI時代の品質保証における「機械に任せる範囲」と「人間が決めるべき境界線」を明確に示している。",
+    "topics": [
+      "AI活用",
+      "テスト設計",
+      "品質保証",
+      "Golden Master",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

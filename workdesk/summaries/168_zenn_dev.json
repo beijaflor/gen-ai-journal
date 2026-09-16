@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:38:40.542817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのテスト観点を「決定論的」にする - テスト観点カタログを作った",
+    "url": "https://zenn.dev/aldagram_tech/articles/316c4d944fd9d5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによるテスト設計で発生しがちな「仕様書にない振る舞いの漏れ」を、UI要素と役割に基づいた決定論的なカタログを導入することで解決した事例。",
+    "summaryBody": "株式会社アルダグラムにおける、AIエージェント「qa-orchestrator」の精度向上への取り組みです。AIが仕様書に書かれていない汎用的な振る舞い（追加読み込みやバリデーション等）を見落とす課題に対し、動作確認を「UI要素の役割から決まる決定論的な部分」と「業務固有のロジック」に分離。前者を「UI要素種別 × 役割」をキーとした『テスト観点カタログ』として定義しました。このカタログには、AIが役割を判定するためのトリガー情報や、適用条件、具体的な値を埋めるためのテンプレートが含まれています。実装済みの20エントリを用いた試行では、全観点の約半分、低リスク観点の約8割がカタログ由来となり、レビューでのカタログ由来観点の削除が0件という、高い網羅性と精度を実証しました。",
+    "topics": [
+      "QA",
+      "テスト設計",
+      "AIエージェント",
+      "ソフトウェアテスト",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

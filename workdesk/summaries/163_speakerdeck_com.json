@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:37:11.143639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント時代のPlatform Engineering：LLM基盤とプロダクトの責務境界線",
+    "url": "https://speakerdeck.com/kanfab1/20260914-ai-ejento-jidai-no-platform-engineering-llm-kiban-to-purodakuto-no-sekimu-kyoukaisen",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント開発において、プラットフォームが「統制（守り）」と「評価（攻め）」を担い、プロダクトが「ドメインロジック」を担うという、試行錯誤に基づく最適な責務境界の設計指針。",
+    "summaryBody": "株式会社ログラスにおける8ヶ月間のLLM基盤開発の変遷をまとめた資料です。AIエージェント時代におけるPlatform Engineeringの役割を「ドメインは任せ、統制を担い、評価を共創する」ことと定義しています。主な構成要素として、APIキー管理やコスト制限を行う『LLM Gateway』、ツールの認可と監査を担う『MCP Gateway』、そしてLangfuseを活用した『Eval（評価）基盤』の3軸を提示しています。当初はエージェントの実行機能まで基盤側で抱え込みましたが、ドメイン知識の密結合や技術の未成熟さを理由に、実行系はプロダクト側に返却するという意思決定プロセスが詳細に記されています。不確実性の高いAI領域において、あえて疎結合やプロキシといった「枯れた技術」を採用し、変化に対応し続けるアーキテクチャの重要性を説いています。",
+    "topics": [
+      "Platform Engineering",
+      "LLM基盤",
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "Langfuse"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

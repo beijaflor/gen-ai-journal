@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:27:18.141198+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "構文だけでなく「意図」を評価するゼロトラストAIエージェントの構築",
+    "url": "https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleは、従来の決定論的なチェックでは防げないAIエージェントへの攻撃に対し、Model Armorや自然言語ポリシーを用いた「実行時ガバナンス」によるゼロトラスト保護手法を公開しました。",
+    "summaryBody": "本記事は、GoogleによるゼロトラストAIエージェント構築シリーズの第2弾として、実行時のガバナンスと意図に基づいたゲーティングに焦点を当てています。従来の正規表現やSQLパーサーのような決定論的な制御だけでは、構文的に正しくても悪意のある「意図」を持つソーシャルエンジニアリングや、複数ターンにわたる累積的な攻撃（少額の返金を繰り返すなど）を防ぐことができません。そこで、Gemini Enterprise Agent Platformが提供する「Model Armor」（プロンプト注入の遮断）、「Semantic Governance Policies」（自然言語によるツール実行ポリシーの評価）、「Agent Anomaly Detection」（セッション全体の振る舞い分析）の3つの制御レイヤーを導入し、エージェントのコードを変更せずにプラットフォーム側でセキュリティを強化する手法を詳しく解説しています。開発者がビルド時に行う制御と、管理者が実行時に行うガバナンスを分離することで、より堅牢で適応性の高いAIエージェントの運用が可能になります。",
+    "topics": [
+      "AIエージェント",
+      "ゼロトラスト",
+      "Google Cloud",
+      "LLMセキュリティ",
+      "ランタイムガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Build zero-trust AI agents that judge intent, not just syntax"
+  }
+}
