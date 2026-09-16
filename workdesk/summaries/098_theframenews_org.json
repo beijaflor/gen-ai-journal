@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:00:07.409120+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MITの「HardFlow」：生成AIの最終出力に厳格な制約を課す新手法",
+    "url": "https://theframenews.org/en/hardflow-safety-critical-ai/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MITの研究チームが開発した「HardFlow」は、フローマッチングモデルにおいて中間プロセスを制限せず、最終出力のみに厳格な制約を課すことで、品質を損なわずに安全性を確保する手法である。",
+    "summaryBody": "MITの研究チームが発表した「HardFlow」は、フローマッチング技術を用いた生成AIモデルに対し、再学習なしで厳格な制約（ハード制約）を遵守させるアルゴリズムです。従来の制約付き生成手法は、生成の各ステップで制約を課すため探索の自由度が低下し、最終的な出力品質が損なわれる課題がありました。HardFlowは生成過程を制御問題として再定義し、軌道最適化を通じて「最終的な出力が制約を満たすこと」のみを要求します。これにより、モデルは自由な探索を行いながらも、最終的に障害物回避や物理的境界条件などの非妥協的なルールを守ることができます。シミュレーション上のロボット操作や画像編集テストにおいて、既存手法を上回る品質と100%の制約達成率を示しました。現在はシミュレーション段階であり、実機への適用や大規模言語モデルへの拡張が今後の焦点です。",
+    "topics": [
+      "HardFlow",
+      "Flow Matching",
+      "AI Safety",
+      "Generative AI",
+      "Robotics"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "New MIT Algorithm Meets Every Hard Constraint in Simulated Tests — The Frame News"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:02:49.713777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの成果物を人が受け取るための設計ワークフロー",
+    "url": "https://techblog.lycorp.co.jp/ja/20260914a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成する膨大な設計情報を人間が効率的に理解・合意・引き継ぎできるように、HTMLベースの論点整理や進捗管理JSONを用いた「AI-DLC」ベースの新しい設計ワークフローを構築した事例。",
+    "summaryBody": "LINEヤフーの開発チームが、AIによる設計工程の導入で増大した「人間側の認知負荷」を解消するためのワークフロー改善を公開しています。AIは高速に成果物を生成しますが、人間がその内容を理解し、OS間の差異をレビューし、合意を形成するコストが課題となっていました。これを解決するため、AWSが提唱するAI駆動開発ライフサイクル（AI-DLC）をベースに、(1)論点とAIの推奨案を1枚のHTMLに集約して認知負荷を下げる、(2)重要度ラベルによる判断のフィルタリング、(3)進捗状況と成果物を分離管理する「envelope」形式の導入、という3つの仕組みを構築。結果として、作業の引き継ぎがスムーズになり、人間が思考を止めずにAIと協働できる環境を実現しています。",
+    "topics": [
+      "AI駆動開発",
+      "AI-DLC",
+      "ソフトウェア設計",
+      "ワークフロー改善",
+      "LINEヤフー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:00:53.727598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM評価者の一致は信頼できるか？：Isingモデルを用いた相関を考慮した評価集約手法",
+    "url": "https://www.amazon.science/blog/when-llm-judges-agree-should-we-believe-them",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMを評価者として利用する際、モデル間の学習系統やプロンプトの共有による「相関」をIsingモデルで統計的に処理し、単なる多数決よりも精度の高い評価結果を得る手法が提案されました。",
+    "summaryBody": "複数のLLMに評価をさせる「LLM-as-a-judge」において、多数のモデルが一致したとしても、それらが同じ学習データ、プロンプト、またはモデルファミリーを共有している場合、単に「同じ間違い」を繰り返しているリスクがあります。本研究では、評価者パネルをネットワークとして捉え、統計力学で用いられるIsingモデルを応用することで、各評価者の信頼性と、評価者間のペアごとの依存関係を同時にモデル化する手法を提案しました。\n\nこの手法は、人間による正解ラベルを必要としない「教師なし設定」で動作し、既存の評価ログから評価者間の相関パターンを学習します。実験では、関連性判定、有害性検出、要約評価の3つのタスクにおいて、従来の重み付き多数決を9〜14%上回る精度を達成しました。実務上の指針として、単一のモデル性能だけでなくパネル全体の統計的な多様性を評価すること、および相関を考慮した確信度の報告が推奨されています。",
+    "topics": [
+      "LLM-as-a-judge",
+      "Ising Model",
+      "Label Aggregation",
+      "Machine Learning",
+      "ICML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "When LLM judges agree, should we believe them?"
+  }
+}

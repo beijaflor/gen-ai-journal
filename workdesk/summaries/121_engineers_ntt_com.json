@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:07:43.967789+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Local LLMを部署内に提供！ Local LLM Model as a Serviceとその取り組みについて",
+    "url": "https://engineers.ntt.com/entry/202607-local-llm-maas/entry",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NTTドコモビジネスにおいて、データ主権の確保とリソース効率化を目的に、vLLMやLiteLLM Proxyを活用して構築された部署内向け「Local LLM MaaS」の構成と運用知見を紹介する記事。",
+    "summaryBody": "NTTドコモビジネスのイノベーションセンターによる、部署内向けLocal LLM基盤（MaaS）の構築事例です。データレジデンシーの確保、利用実態の把握、供給の安定性を目的に、Open Weightモデルを自組織のGPU基盤で提供しています。技術構成として、推論エンジンにvLLM、ゲートウェイにLiteLLM Proxy、チャットUIにOpen WebUIを採用。特に、PagedAttentionによるKVキャッシュ管理や、モデル間フォールバック、4ビット量子化の積極採用により、限られたGPUリソースで複数の高性能モデル（tsuzumi 2, DeepSeek-V4-Pro, GLM-5.2等）を効率的に運用しています。運用を通じて、新規モデル追加時に利用が集中する傾向などが明らかになり、クラウド型サービスと併用しつつ自組織でLLMを動かす「ソブリンAI」的アプローチの有効性と、運用の勘所が詳述されています。",
+    "topics": [
+      "Local LLM",
+      "vLLM",
+      "LiteLLM",
+      "GPUリソース最適化",
+      "ソブリンAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

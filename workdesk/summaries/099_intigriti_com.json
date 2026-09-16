@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:00:38.568002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIカスタマーサービス・エージェントの脆弱性と攻撃手法の分析",
+    "url": "https://www.intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント、IVR、RAGシステムにおけるメールプロトコルの不備や認証バイパス、プロンプトインジェクション等の多様な脆弱性と実戦的な攻撃手法を解説する調査。",
+    "summaryBody": "このレポートは、DEF CON 34のBug Bounty Villageで発表された、AIカスタマーサービス・エージェントに対する攻撃手法の調査結果をまとめています。主な脆弱性として、以下の4つの領域が挙げられています。1. **メールの悪用**: メールの転送機能やFromヘッダーの不備を突き、サポートになりすましてフィッシングを行ったり、AIに権限が必要なアクションを実行させたりする手法。RFC 822の仕様（複数Fromヘッダー）を利用した認証回避も含まれます。2. **認証のバイパス**: メールアドレスへのコメント挿入によるレート制限の回避や、IVR（自動音声応答）における推測可能な検証項目の悪用、さらにはメールアドレス・スマグリングによる他者データの取得。3. **OTPの奪取**: 第三者サービスからのパスワードリセット通知をAIエージェントに監視させ、外部サーバーへデータを流出させる「チケット・トリック」の応用。4. **RAGとナレッジベースの汚染**: コミュニティコメントやサイトマップを介してAIの参照情報を汚染し、不正な指示を注入する手法。人間が介在する場合でも、HTML/CSSの表示差異を利用した「非対称メッセージング」により、人間とAIに異なる内容を読み取らせることで監視を無効化できる点が強調されています。",
+    "topics": [
+      "AI Security",
+      "Prompt Injection",
+      "Email Spoofing",
+      "RAG Poisoning",
+      "MFA Bypass"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Hacking AI customer service agents | Intigriti"
+  }
+}
