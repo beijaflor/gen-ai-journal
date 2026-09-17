@@ -124,7 +124,6 @@
 - [x] 120. https://tech.smarthr.jp/entry/2026/09/02/120000
 - [x] 121. https://engineers.ntt.com/entry/202607-local-llm-maas/entry
 - [x] 122. https://speakerdeck.com/teru0x1/slack-ue-de-infura-o-toraburu-shuto-suru-agentic-platform-engineering-no-daiippo
-- [x] 123. https://yoshuabengio.org/en/blog/why-are-ai-agents-lying-cheating-and-coordinating
 - [x] 124. https://www.itmedia.co.jp/news/article/2609/14/2000001258/
 - [x] 125. https://blog.cloudflare.com/workers-granular-authorization
 - [x] 126. https://evilmartians.com/chronicles/rails-hyperdrive-supercharged-agentic-development-for-rails
