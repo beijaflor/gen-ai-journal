@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:34:43.215366+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Orbital: コンテキストを資産化し、複数のAIエージェントを司令塔として統合管理するプロジェクト型エージェント",
+    "url": "https://github.com/zqiren/Orbital",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Orbitalは、個別のセッションに閉じていたAIの文脈をローカルファイルとして永続化し、Claude CodeやCodexなどの多様なエージェントを作業者（ワーカー）として切り替えながら利用可能にするプロジェクト管理エージェントです。",
+    "summaryBody": "Orbitalは、AIエージェントの利用における「コンテキストの断片化」という課題を解決するためのオープンソースプロジェクトです。最大の特徴は、AIエージェントを「セッション単位」ではなく「プロジェクト単位」で捉える点にあります。\n\n### 主な特徴と機能\n- **コンテキストの永続化**: プロジェクトの状態、過去の意思決定、得られた教訓をMarkdown形式のローカルファイル（PROJECT_STATE.md等）として保存し、セッション終了後も文脈を維持します。\n- **マルチワーカー対応**: Claude Code、Codex、Cursor、Gemini CLIなど、既存のCLIエージェントを「ワーカー」として登録し、Orbitalが司令塔となってタスクを割り当てます。これにより、使用制限やモデルの得意不得意に応じてツールを自在に切り替えられます。\n- **自律実行と自動化**: ファイルの変更監視やスケジュール実行に対応し、ブラウザ自動化（Patchright）による高度なWeb操作も可能です。\n- **ガバナンスとコスト管理**: プロジェクトごとの予算制限、OSレベルのサンドボックス実行、モバイル端末からのリモート承認機能を備え、安全性と透明性を確保しています。\n\nこのツールにより、ユーザーはエージェント間の「情報の橋渡し役」から解放され、AIをプロジェクト全体の継続的な管理・実行エンジンとして活用できるようになります。",
+    "topics": [
+      "AI Agent",
+      "Multi-Agent Orchestration",
+      "Context Management",
+      "Local-first AI",
+      "Software Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - zqiren/Orbital: Context is yours. Agents are replaceable. Orbital — a project agent that turns your context into assets. · GitHub"
+  }
+}

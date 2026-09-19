@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:35:00.737870+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文章を生成しないAI「Jev」はなぜ速い？日本語で12項目をまとめて判定させてみた",
+    "url": "https://qiita.com/harupython/items/2728bf499ab9a6782b0b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "テキスト生成を行わず判断と確率の出力に特化した新AIモデル『Jev』の仕組みを解説し、日本語での多項目同時判定による圧倒的な高速性能を検証した記事です。",
+    "summaryBody": "2026年9月にTypeSafe AIが発表した新モデル『Jev』を実証的に解説した記事です。Jevは『System One Model』と呼ばれ、一般的なLLMと異なりテキストの逐次生成を行わず、選択（Choice）、評価（Score）、真偽（Noul）という3種類の判断と、その「校正された確率」を直接出力することに特化しています。著者は記事の執筆企画をJevに評価させ、12項目（技術的深さ、実装の重視度、投稿媒体の推奨など）を日本語で同時に判定させたところ、約300msという極めて短いレスポンス時間を確認しました。この記事では、従来のStructured Outputsとの違いや、RLCD（判断用強化学習）による確率の正確性、並列サンプリングによる高速化の理由、さらにPython SDKを用いた実装例まで幅広くカバーしています。生成AIの「判断機能」のみを切り出してソフトウェアに組み込む際の有用性と、そのコストパフォーマンスが強調されています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "機械学習",
+      "LLM",
+      "AIベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:05:35.648673+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev（TypeSafe AI）はみんなどうやって使っているのか？",
+    "url": "https://qiita.com/hisashi-ito/items/3d8d26ea591009e7a58e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIが発表した「判断特化型」モデルJevの初期動向を調査し、エージェントの意思決定やブラウザ操作、安価な料金を活かした新しい設計手法について解説した記事。",
+    "summaryBody": "2026年9月に登場したTypeSafe AIの「Jev」は、テキスト生成を行わず、入力された「状態」と「質問」に対して確率と信頼度のみを返す特化型モデルです。本記事は、リリースから2日間でGitHubに登場した383件のリポジトリを分析し、その活用実態を分類しています。主な用途はコーディングエージェントの判断器（MCPサーバ、コマンドの安全審査など）や、Browser Use等を用いた低コストなブラウザ操作、履歴書の自動審査といった業務判断です。Jevの最大の特徴は、出力が無料かつ入力が極めて安価（100万トークンで0.042ドル）な点にあり、従来のLLMのようにプロンプトを長くするのではなく、小さな判断を多数並列に実行してコード側で合成するという「システム設計」へのパラダイムシフトを提唱しています。ただし、単発の質問ではLLMに精度で劣る場合があることや、日本からの物理的な通信遅延といった制約についても言及されています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "AIエージェント",
+      "LLM",
+      "意思決定モデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

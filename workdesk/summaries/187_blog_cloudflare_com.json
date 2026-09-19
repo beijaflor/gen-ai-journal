@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:41:11.971544+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "検索の発見可能性を維持しながらAI学習を拒否する：Cloudflareが新設定を発表",
+    "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、検索エンジンによるインデックス登録を維持しつつ、AIモデルの学習目的のスクレイピングのみを制限できる新機能「Disallow AI Training」を導入しました。",
+    "summaryBody": "これまでウェブサイト運営者は、GoogleやMicrosoftなどの「混合用途クローラー」に対し、検索結果への露出を維持するためにAI学習を許可するか、検索露出を犠牲にしてAI学習を完全に拒否するかの困難な選択を迫られてきました。Cloudflareが発表した「Disallow AI Training」設定は、このジレンマを解消します。この機能は、Apple、Google、Microsoftなどの「責任ある（Accountable）」と認定されたクローラーに対し、検索目的の巡回は許可しつつ、学習目的のデータ利用のみを拒否するよう指示します。また、Amazon、Anthropic、Meta、OpenAIなどの学習専用クローラーについては、検索に影響を与えずブロック可能です。Cloudflareは今後、検索結果内の「AI要約」におけるコンテンツ利用量の制御機能も提供する予定であり、コンテンツ所有者が自身のデータの使われ方をより細かく制御できる環境の構築を目指しています。",
+    "topics": [
+      "Cloudflare",
+      "AI Bots",
+      "SEO",
+      "Crawler Control",
+      "Content Protection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Have it both ways: stay discoverable in search while disallowing AI training | Cloudflare Blog"
+  }
+}

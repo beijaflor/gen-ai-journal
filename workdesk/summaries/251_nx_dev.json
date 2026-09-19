@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T08:30:38.250109+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによる再利用可能なNxジェネレーターの自動抽出とコード品質の向上",
+    "url": "https://nx.dev/blog/agent-extract-nx-generator",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに既存のコードパターンを学習させてNxジェネレーターを自動生成させることで、モノレポ内でのコードの整合性を低コストかつ確実に維持する手法を提案しています。",
+    "summaryBody": "Nxの強力な機能である「ジェネレーター（スキャフォールディング用テンプレート）」をAIエージェントと組み合わせて活用する新しいパラダイムについて解説しています。AIはコード生成に優れていますが、非決定論的な性質により一貫性を欠く場合があります。そこで、既存の理想的なプロジェクト構成（Vite、TypeScript設定、エクスポート規則など）をAIに読み込ませ、決定論的な「Nxローカルジェネレーター」を作成させるアプローチを紹介。これにより、トークンコストを抑えつつ、AIの柔軟性とツールの正確性を両立させた効率的な開発フローが可能になります。記事では、具体的なプロンプト例や、Nx Devkitを利用した自動化のメリットが強調されています。",
+    "topics": [
+      "Nx",
+      "AI Agents",
+      "Monorepo",
+      "Code Scaffolding",
+      "Developer Productivity"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 85
+    },
+    "originalTitle": "Let AI Agents Extract Reusable Nx Generators"
+  }
+}

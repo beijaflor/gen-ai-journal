@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T11:34:54.959828+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jev-ultrafast: TypeSafeを活用した超高速ブラウザ操作AIエージェント",
+    "url": "https://github.com/browser-use/jev-ultrafast",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "DOM解析の最適化とTypeSafeな意思決定プロセスにより、Google Flightsの検索をわずか7秒で完了させる超高速ブラウザオートメーションエージェント。",
+    "summaryBody": "browser-useが公開した本リポジトリは、ブラウザ操作AIエージェントの実行速度を極限まで高めるためのアーキテクチャ「Jev」を実装しています。従来のスクリーンショットベースの解析ではなく、DOMから抽出した構造化された要素テーブルを直接モデルに供給し、TypeSafeなリクエストによって「操作（CLICK/TYPE等）」と「対象要素」を1回のネットワークラウンドトリップで決定します。テキスト生成が必要な場合のみ小型LLM（GeminiやDeepSeek等）を呼び出す設計により、Google Flightsでのフライト検索を約7.1秒で完了させるという驚異的なパフォーマンスを実現。現在、標準的なHTML/ARIAコントロールに対応しており、Shadow DOMやCanvasといった複雑な要素への対応は将来の課題とされています。",
+    "topics": [
+      "AI Agent",
+      "Browser Automation",
+      "DOM Analysis",
+      "TypeSafe API",
+      "LLM Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - browser-use/jev-ultrafast: i. am. speed."
+  }
+}

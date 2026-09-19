@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:43:34.333720+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1.58ビットの壁を打破：3値LLMのための新たな圧縮手法BITCOS",
+    "url": "https://arxiv.org/abs/2609.16338",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "3値LLMの重み分布における「0」の多さに着目し、ビットマップと符号ベクトルの組み合わせにより理論限界に近い圧縮効率と高速なハードウェア展開を実現する手法「BITCOS」を提案する研究。",
+    "summaryBody": "本研究は、重みを{-1, 0, +1}の3値で保持するLLM（3値LLM）において、情報理論的な限界とされる約1.58ビットの壁を実効的に打破するレイアウト手法「BITCOS」を提案しています。従来、3値モデルは5つの重みを1バイトにパッキングする手法（1.625ビット/要素）が一般的でしたが、これは全記号が等確率で出現することを前提としていました。著者らが29種類の3値モデルを調査した結果、最大51.5%の重みが「0」であることが判明しました。BITCOSはこの分布の偏りを利用し、「非ゼロの場所を示すビットマップ」と「非ゼロ要素の符号」を分離して保持します。これにより、最も疎なモデルで1.485ビット/要素という高い圧縮率を達成しました。さらに、AVX-512、AVX2、Intel Xe2 GPU向けに最適化されたアンパッキング処理を開発し、既存のカーネルに対して最大1.28倍の行列ベクトル演算の高速化、推論全体で最大1.27倍のスループット向上を実現しています。",
+    "topics": [
+      "LLM",
+      "Model Compression",
+      "Quantization",
+      "Ternary Weights",
+      "Inference Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Breaking the 1.58-bit Barrier for Ternary LLMs"
+  }
+}

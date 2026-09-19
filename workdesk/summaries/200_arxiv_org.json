@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:44:04.401816+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "無限パラメータLLM：リアルタイムデータから重みを生成・適応させる新アーキテクチャ",
+    "url": "https://arxiv.org/abs/2609.18842",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "対話データから動的にモデルの重みを生成・更新する「Infinite-Parameter LLM」を提案し、固定されたパラメータの枠組みを超えてライブデータに即時適応する手法を提示する研究。",
+    "summaryBody": "本論文は、学習後の重みが固定されている従来のLLMの限界に対し、ハイパーネットワークを用いて対話データから低ランクの重み変調を動的に生成する「Infinite-Parameter LLM」を提案しています。Mixture-of-Experts（MoE）に着想を得つつも、固定された巨大なパラメータバンクを持つのではなく、実行時の情報をベイズ的な潜在コードとして保持し、セッションが進むにつれてオンラインで更新し続ける点が特徴です。これにより、RAGやインコンテキスト学習（ICL）のようにプロンプトに情報を詰め込む必要がなくなり、計算コストの償却、コンテキスト窓の解放、そしてターンを跨いだ情報の持続と高い汎化性能を実現します。実質的に無限のパラメータを、ライブデータからその場で「コンパイル」する新しいAIモデルの在り方を論じています。",
+    "topics": [
+      "LLM",
+      "Hypernetworks",
+      "Dynamic Weights",
+      "In-Context Learning",
+      "Bayesian Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data"
+  }
+}

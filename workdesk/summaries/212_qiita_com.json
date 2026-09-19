@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:59:50.430390+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevってなんだ？ — 文章を書かないAIに、LLMのif文判定を任せられるか",
+    "url": "https://qiita.com/GeneLab_999/items/116aa006fbf93b68d791",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeSafe AIが発表した文章を生成せず「型付きの判断」のみを返す新モデルJevについて、既存LLMとの違いやPythonでの実戦的な活用法を解説した技術記事。",
+    "summaryBody": "Jevは文章生成を行わず、分類や判断といった論理分岐に特化した「System One Model」です。LLMをif文などの条件分岐に利用する際の「パースの不安定さ」「高コスト」「遅延」という課題を、事前に定義した型（Choice/Score/Noul）と確率値を返すことで解決します。記事では、公式ドキュメントの矛盾点（確信度算出式の不整合やSDKのバリデーション仕様）を鋭く指摘。その上で、実務的な対策として「自前での確信度再計算」や「操作の危険度（破壊的か否か）に応じた閾値設定」といった安全な組み込みパターンをコード付きで提案しています。記述式ではなくマークシート形式で回答するAIという独自の立ち位置を活かし、エージェントのツール選択やガードレールとしての活用可能性を示唆しています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "TypeSafe AI",
+      "Python",
+      "条件分岐"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:22:26.440329+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeSafe AIによるエージェントのスキル選択の最適化：大規模カタログからの効率的な選別手法",
+    "url": "https://docs.typesafe.ai/cookbooks/skill_suggestion",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "180以上のスキルを持つAIエージェントに対し、TypeSafe AIを用いて「全件の高速ランク付け」と「上位候補の精査」の2段階プロセスを導入することで、スキルの誤選択率を半分以下に削減する手法を解説しています。",
+    "summaryBody": "大規模なスキルカタログ（Nous ResearchのHermesなど）を持つAIエージェントにおいて、全てのスキル説明をプロンプトに詰め込むとコスト増と精度低下を招きます。本ガイドでは、TypeSafe AIを活用した「Progressive Disclosure（段階的開示）」パターンを提案しています。まず1回目のリクエストで全182スキルの簡易的なランキングとスキルの必要性判定（Noul/Choice質問）を行い、次に上位3件のみを詳細な説明文と共に再検証する2段階アプローチを採用しています。実験の結果、スキルの誤ロード（Wrong Load）は16.8%から7.3%へ、不要なロード（Needless Load）は9.8%から4.0%へと改善されました。記事内にはPython SDKを用いた具体的な実装コード、ベンチマーク結果、キャッシュ管理の手法が詳細に記述されています。",
+    "topics": [
+      "AIエージェント",
+      "TypeSafe AI",
+      "スキル選択 (Skill Selection)",
+      "プロンプト最適化",
+      "LLMベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    },
+    "originalTitle": "Skill suggestion - TypeSafe AI"
+  }
+}

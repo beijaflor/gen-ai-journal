@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T09:43:11.718225+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "typesafe-computer-use: 1ステップわずか0.0002ドルでmacOSを自動操作する超低コストAIエージェント",
+    "url": "https://github.com/awlevin/typesafe-computer-use",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "スクリーンショットを大規模モデルに送らず、ローカルOCRと軽量な決定モデルを組み合わせることで、従来の100倍以上の低コストかつ高速なmacOS操作自動化を実現するツール。",
+    "summaryBody": "typesafe-computer-useは、macOS上で動作する革新的なAIエージェントツールです。Claudeなどのフロンティアモデルを使用する従来の手法（1ステップ数セント）とは異なり、決定論的なOCR処理とTypeSafe社の軽量な分類モデルを組み合わせることで、1ステップあたり約0.0002ドルという驚異的な低コスト化を実現しています。具体的には、画面上のテキストやアクセシビリティツリーを解析して次に取るべきアクション（クリック、スクロール、入力等）を選択し、自由なテキスト生成が必要な時のみLLM（Claude等）を呼び出すハイブリッドな仕組みを採用しています。これにより、既存手法と比較してコストは170〜390倍安く、レイテンシは14〜40倍高速であるとされています。macOS 14以降、Python 3.12環境で動作し、ブラウザ操作やアプリ実行を自然言語の指示から自動化できます。",
+    "topics": [
+      "AIエージェント",
+      "Computer Use",
+      "macOS",
+      "OCR",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - awlevin/typesafe-computer-use: Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS."
+  }
+}

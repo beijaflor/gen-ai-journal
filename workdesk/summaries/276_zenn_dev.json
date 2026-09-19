@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:05:48.263788+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare WorkersでJevを使ったら高速か検証してみた",
+    "url": "https://zenn.dev/henteko/articles/1d159d10413312",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "超高速LLM「Jev」をCloudflare Workers環境で動かし、直接接続・AI Gateway経由・Node.js環境でのレイテンシを比較検証した技術レポート。",
+    "summaryBody": "超高速なLLM推論APIである「Jev」をCloudflare Workers経由で呼び出した際のパフォーマンス検証記事です。Jevのサーバーが米国西海岸（オレゴン）に位置するため、日本国内のクライアントからのアクセスにおいてエッジサーバー（Workers）の活用がどう影響するかを実測しています。\n\n検証の結果、以下の点が明らかになりました：\n- **Workersからの直接アクセスが最速**: 日本からのアクセスでp50が約200ms。Cloudflareのバックボーンネットワークを利用することで、Node.js環境よりも安定して高速な通信が可能。\n- **AI Gatewayのオーバーヘッド**: AI Gateway経由は管理面で便利ですが、リクエスト間隔が空く（sporadicパターン）と接続の維持が切れてしまい、直接アクセスの2倍以上の遅延が発生する傾向があります。\n- **プロトコルの影響**: WorkersはJevとの通信にHTTP/2（h2）を利用して多重化するため、同時リクエスト時のコストがNode.js（デフォルトHTTP/1.1）よりも低いことが確認されました。\n\n結論として、日本からの利用では物理的な距離の壁はあるものの、Workersを活用することでバックボーン経由の最適化と多重化の恩恵を受けられることが示されています。",
+    "topics": [
+      "Cloudflare Workers",
+      "Jev",
+      "LLM",
+      "レイテンシ",
+      "AI Gateway"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

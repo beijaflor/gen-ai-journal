@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:17:02.504520+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにWikiを書かせて半年、一番役に立った画面はLLMの文章を使っていなかった",
+    "url": "https://zenn.dev/rescuenow/articles/5aa26aebd7ae78",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMに個人Wikiの保守を任せた半年間の試行錯誤から、生成された本文よりもLLMが裏方として整理した「タグの構造」や「関心の可視化」こそが真に価値があったとする実証的考察。",
+    "summaryBody": "個人開発で蓄積した数千件の記録を基に、LLMが自動でタグごとのWikiページを生成・保守するシステムを運用した振り返り。Andrej Karpathyの「LLM Wiki」概念を参考に、ローカルLLMを用いてタグの正規化や要約の要約を自動化した。運用した結果、LLMによる本文生成自体は内容が平坦になりがちで満足度が低かった一方、LLMが分類・構造化したデータを活用した「可視化画面」が極めて有用であることを発見した。特に、最近触れていない関心事を可視化して興味の移り変わりを自覚させる機能や、共通の出典を持つタグ同士のネットワーク探索が、自己のナレッジを客観視する助けになった。LLMの真価は創造的な執筆よりも、人間が意味を見出すための「構造化」という事務作業の代行にあると結論づけている。",
+    "topics": [
+      "LLM",
+      "Wiki",
+      "ナレッジマネジメント",
+      "データ可視化",
+      "ナレッジグラフ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

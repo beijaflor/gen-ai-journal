@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:17:27.789373+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ShapeLearn-Liteは堅調、ShapeLearnはさらに向上：Qwen 3.8 27Bの量子化ベンチマーク",
+    "url": "https://byteshape.com/blogs/Qwen3.8-27B/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ByteShapeがQwen 3.8 27B向け量子化モデル「ShapeLearn」をリリースし、先行のLite版や競合他社を凌駕する推論速度と精度のバランス、および投機的デコードによる劇的な高速化を実証した。",
+    "summaryBody": "ByteShapeは、Qwen 3.8 27Bモデルに対して最適化された新しい量子化モデル群「ShapeLearn」の詳細なベンチマーク結果を公開しました。先行リリースされた「Lite版」と比較して、フル版のShapeLearnはさらに推論速度と精度のトレードオフ曲線を改善しており、主要なGPU（RTX 4090/5090等）において業界トップクラスの性能（フロンティア）を達成しています。\n\n主な分析ポイントは以下の3点です：\n1. **量子化精度の極致**: 特に「GPU-5 (IQ4_XS)」設定では、BF16オリジナルの99.63%という驚異的な精度を維持しながら、実用的なスループットを確保しています。\n2. **投機的デコードの効果**: MTPおよびDFlash2の導入により、ベースライン比で1.34倍から最大2.10倍の推論高速化を実現。VRAM容量やマルチモーダル対応の有無に応じた最適なデコーダーの選択指針が示されています。\n3. **指標の批判的分析**: KLダイバージェンス（KLD）などの「忠実度指標」が、必ずしも実際のタスク性能（ベンチマーク）と一致しないことを実例とともに指摘。先行したLite版がKLDの劣勢に反して実タスクで堅調だった事実から、量子化モデル評価におけるベンチマークの重要性を強調しています。\n\n本記事は、リソース制限下での大規模言語モデル運用における、ハードウェアに特化した最適化の重要性を浮き彫りにしています。",
+    "topics": [
+      "量子化 (Quantization)",
+      "Qwen 3.8",
+      "ベンチマーク",
+      "推論高速化",
+      "投機的デコード"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "ShapeLearn-Lite Held Up. ShapeLearn Did Better: Qwen 3.8 27B"
+  }
+}

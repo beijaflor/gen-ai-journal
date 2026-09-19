@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T11:17:18.714814+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "速く作れる。その次は、速く確かめられる開発へ 〜AIネイティブ開発を支える、Shift Down〜",
+    "url": "https://speakerdeck.com/rkaga/can-build-fast-next-moving-to-development-where-we-can-verify-fast",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる実装の高速化に伴いボトルネックとなる品質確認を、開発者個人から共通基盤へと移譲する「Shift Down」という概念と、その実践的なアプローチを解説。",
+    "summaryBody": "AIエンジニアリングの普及によりコード生成が劇的に速まった現在、人間の手による品質確認（QA）が開発プロセスの新たな停滞ポイントとなっています。本資料では、インフラやセキュリティと同様に、検証の負担を開発者から共通基盤へと引き受ける「Shift Down」という考え方を提唱しています。具体的には、Browserbase等のクラウド型ブラウザ基盤を活用し、全PRに対してAIエージェントが自動で画面QAを実行する仕組みを構築。操作担当AIと判定担当AIを分離し、合格条件と証拠（エビデンス）を定義することで、AIが自律的に「実装・検証・修正」のサイクルを回す『ソフトウェアファクトリー』の実現に向けた知見が共有されています。単に作る速さを競うのではなく、顧客に届けて仮説を確かめるまでの時間を最小化することを目的としています。",
+    "topics": [
+      "AIネイティブ開発",
+      "Shift Down",
+      "AIエージェント",
+      "品質保証 (QA)",
+      "プラットフォームエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T13:05:07.054250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIへのハッキング：ヒープオーバーフローとSSOの不備による内部リポジトリの侵害",
+    "url": "https://www.hacktron.ai/blog/hacking-openai",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Hacktronの研究チームが、画像処理ライブラリlibheifの脆弱性とOpenAIのSSO設定ミスを組み合わせ、AIエージェントを活用してOpenAIの内部モノリポジトリへのアクセスに成功した事例の報告。",
+    "summaryBody": "このレポートは、Hacktron AIチームによるOpenAIへの擬似攻撃（バグバウンティ）の過程を詳述しています。攻撃の起点は、OpenAIのコミュニティフォーラム（Discourse）で使用されていた画像処理ライブラリ「libheif」に存在するヒープバッファオーバーフローの脆弱性でした。研究者は次世代AIモデル（Claude Opus 5等）を活用し、ASLRが有効な環境下での複雑なRCE（リモートコード実行）エクスプロイトを短期間で開発しました。\n\nさらに、OpenAIのIdentityインフラストラクチャにおけるSSO（シングルサインオン）の不備を突くことで、フォーラムの権限をChatGPTやCodexの企業アカウントへのアクセスにエスカレーションしました。その結果、研究チームはOpenAIの内部GitHubリポジトリでプルリクエストを作成できるまでの権限を掌握しました。この事例は、AIが脆弱性の調査からエクスプロイトの作成、さらには横移動までを劇的に加速させる「AI駆動型ハッキング」の脅威を実証しています。OpenAIはこの報告に対し、6,500ドルの報奨金を支払っています。",
+    "topics": [
+      "OpenAI",
+      "libheif",
+      "RCE",
+      "AI Security",
+      "SSO Misconfiguration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "Hacking OpenAI"
+  }
+}
