@@ -302,3 +302,4 @@
 - [x] 299. https://github.com/browser-use/jev-ultrafast
 - [x] 300. https://journal.supa.ai/jev-classifier-benchmark/
 - [x] 301. https://www.hacktron.ai/blog/hacking-openai
+- [x] 302. https://note.com/shi3zblog/n/nd5fc5341b342
