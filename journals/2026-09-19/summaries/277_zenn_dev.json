@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:35:15.770509+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevでハーネスエンジニアリング",
+    "url": "https://zenn.dev/watany/articles/36e11a20ce3743",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeSafe AIが提供する高速・低コストな意思決定モデル「Jev」を活用し、AIエージェントのガードレールや要件定義の評価を効率化する手法の紹介。",
+    "summaryBody": "Jevは、TypeSafe AIが開発した「System One Model」と呼ばれる意思決定に特化したモデルです。状態と質問を入力すると、型定義された回答を確率値とともに返します。最大の特長は、GPT-5.6などの汎用LLMと比較して入力コストが約8割安く、出力が無料で非常に高速である点です。\n\n本記事では、このJevを「ハーネスエンジニアリング（AIシステムの制御・接続）」に適用する実例を紹介しています。具体的には、Claude Codeのような自動操作の許可判定を行うガードレール機能や、AIエージェントが作成した要件定義案を高速に評価する「grill-jev」などの実装例を解説。Vercel AI GatewayやCloudflare経由での利用方法についても触れられており、LLMを単なるチャットではなく、高速な分類器やプログラマブルなif文として活用する新たな可能性を提示しています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "AIエージェント",
+      "ハーネスエンジニアリング",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

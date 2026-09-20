@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:35:56.205982+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIソフトウェアファクトリーの構築方法：PRの作成・レビュー・マージを自動化するエージェント運用ガイド",
+    "url": "https://www.firecrawl.dev/blog/ai-software-factory",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントを単なるツールから組織的な生産ラインへと進化させるための5つの構築ステージと、StripeやSpotify等の先行事例に基づく実践的なフレームワークを解説しています。",
+    "summaryBody": "この記事では、コーディングエージェントを単独で実行する段階を超え、スケーラブルな開発基盤である「AIソフトウェアファクトリー」を構築するための5つの重要ステージを解説しています。\n\n1. **インテーク**: どの課題をエージェントに割り当てるかを判断するフィルター。Sentry等の事例を挙げ、何でも着手させるのではなく品質スコアによる事前選別を推奨しています。\n2. **アイソレーション**: Git worktreesやコンテナ、クラウドサンドボックスを用いて、エージェント同士の衝突を防ぐ独立した作業環境を提供します。\n3. **ツール層**: MCP（Model Context Protocol）を活用し、エージェントにリポジトリだけでなく、テスト、テレメトリ、ドキュメント検索（Firecrawl等）へのアクセス権限を付与します。\n4. **検証**: 生成されたコードが人間に届く前に、決定論的なテストとLLMによる審判（LLM Judge）を組み合わせた多重のフィードバックループを構築します。\n5. **マージゲート**: 最終的な説明責任を果たすための人間による承認プロセス。Faire社のように「AI作成のPRには2名の人間レビューを必須とする」といった具体的なポリシー設計を提示しています。\n\n最大の本質的課題は「AIによるコード生成は安価だが、人間によるレビューは依然として高価である」という非対称性にあり、このボトルネックを解消するためのゲート設計こそがファクトリー成功の鍵であると強調しています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェアエンジニアリング",
+      "GitHubワークフロー",
+      "MCP",
+      "開発プロセス自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "How to Build an AI Software Factory: Agents That Open, Review, and Merge PRs"
+  }
+}

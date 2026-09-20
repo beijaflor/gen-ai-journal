@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:26:27.906773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Workers向けのきめ細かなリソースレベルのアクセス制御機能の導入",
+    "url": "https://blog.cloudflare.com/workers-granular-authorization",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、特定のWorker単位でアクセス権限を付与できるリソースレベルのアクセス制御機能を導入し、チームメンバーやAIエージェントに必要最小限の権限を割り当てることが可能になりました。",
+    "summaryBody": "Cloudflareは、Developer Platformにおけるセキュリティを強化するため、Cloudflare Workersにおけるリソースレベルのアクセス制御機能を発表しました。これまでアカウント単位だった権限管理が、特定のWorkerごとに設定可能になります。新たに4つのロール（Metadata Read-Only、Content Read-Only、Editor、Admin）が定義され、例えば「ソースコードは見せずにメトリクスやログのみを閲覧させる（Metadata Read-Only）」や「コードの変更は許可するが削除は禁止する（Editor）」といった、最小権限の原則に基づいた運用が容易になります。この機能はAIエージェントやCI/CDシステムへの権限付与にも最適化されており、今後はD1、R2、KVなどの他のプロダクトにも同様のモデルが拡張される予定です。また、権限不足時のエラーメッセージにドキュメントへのリンクが含まれるようになり、トラブルシューティングも改善されています。",
+    "topics": [
+      "Cloudflare Workers",
+      "IAM",
+      "セキュリティ",
+      "AIエージェント",
+      "開発者プラットフォーム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Give every teammate and agent the right level of access to your Workers"
+  }
+}

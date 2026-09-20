@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:20:31.267969+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを使い果たしたからローカルDeepSeek v4.1 FlashでClaude Codeを使うことにした話",
+    "url": "https://note.com/shi3zblog/n/n93b0161463b4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの利用制限を機に、A100環境下のローカルDeepSeek v4.1 Flashをバックエンドとして統合し、100万コンテキスト対応のキャッシュ機構を構築した技術実践記。",
+    "summaryBody": "著者はClaude Codeの月間制限に達したため、代替としてローカルで動作するDeepSeek v4.1 Flashをバックエンドに採用する試みを詳述しています。主な技術的焦点は、AIエージェントとしての実用性を高めるための『Prefill（プロンプト処理）』の高速化です。DeepSeek特有のMoE構造や圧縮KV Cacheなど、74種類の内部状態を『Persistent State』として管理し、/dev/shm（RAMDISK）を活用したPrefix Cache（スナップショット）機構を実装。100万トークンという巨大なコンテキストに対応させる過程で遭遇した、CUDA Graphのメモリ制約やインデックスエラーといった低レイヤーな最適化の苦闘と、AIの内部挙動を正確にモデル化することの重要性が語られています。",
+    "topics": [
+      "DeepSeek",
+      "Claude Code",
+      "Local LLM",
+      "KV Cache",
+      "GPU最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

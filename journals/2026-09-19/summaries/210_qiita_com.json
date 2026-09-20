@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:01:03.314512+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発におけるPlatform Engineering ── AIが迷わず、安全に、検証可能な形で開発できる環境をどう作るか",
+    "url": "https://qiita.com/nogataka/items/7a6c115e3f988b2188f6",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI Coding Agentが主要な利用者となる時代において、Platform Engineeringの目的は「人間への抽象化」から「AIの探索空間の削減と安全な検証環境の提供」へと進化する。",
+    "summaryBody": "AI Coding AgentがIaCやCLIを直接操作可能になったことで、従来の「複雑さを隠蔽する抽象化」の価値が変化しています。これからのPlatform Engineeringは、AIが誤った判断をしないよう「探索空間を小さくすること」が最重要課題となります。記事では、AI時代のプラットフォームが担う6つの役割（Knowledge, Golden Path, Reusable Components, Security, Verification, Runtime Governance）を定義。特に、AIの権限そのものをIdentityやPolicyで制御するセキュリティ境界の設計や、AIが理解・検証しやすい「機械可読性」の重要性を説いています。プラットフォームを厚くしすぎることによる認知負荷のリスクにも言及し、AIと人間が共存する開発環境のロードマップを提示しています。",
+    "topics": [
+      "Platform Engineering",
+      "AI駆動開発",
+      "AI Coding Agent",
+      "Golden Path",
+      "Guardrails"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

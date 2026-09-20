@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:18:22.945095+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで開発期間を2.5か月から1か月に縮めた「ハーネス」の設計手法",
+    "url": "https://tech.smarthr.jp/entry/2026/09/16/110205",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」の性能を最大化する周辺環境設計「ハーネス」を導入し、2.5か月の見積もりを1か月に短縮したSmartHRの事例。",
+    "summaryBody": "SmartHRのエンジニアが、AIエージェント「Claude Code」を用いた大規模な機能開発において、コンテキスト制限やデグレのリスクを克服するために構築した設計手法「ハーネス」を解説しています。ハーネスは、手順を定義したスキルファイル、進行状態を管理するJSON、完了条件を判定するシェルスクリプトの3要素で構成されます。大きな特徴は、1タスクごとにエージェントを新規起動してコンテキストをリセットする運用の徹底、テスト駆動開発（TDD）による精度の担保、そしてAIを使わず実行結果のみで合否を判定する「機械検査」の導入です。この仕組みにより、開発中の手戻りを最小化し、当初の工数見積もりを60%削減することに成功しました。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "TDD",
+      "開発プロセス",
+      "SmartHR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T11:17:45.901443+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevを無理やり言語モデルにしてみた",
+    "url": "https://dev.classmethod.jp/articles/jev-forced-language-model/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AIであるJevに対し、選択肢として文字を与えることで強引に文章を生成させる試みとその限界をまとめた技術検証。",
+    "summaryBody": "本記事では、文章生成を行わず判断（スコアや確率の返却）のみに特化したAIモデル「Jev」を、無理やり言語モデルとして動作させるユニークな実験を行っています。ひらがなや記号など88個の選択肢から1文字ずつJevに選ばせるループ処理を実装した結果、「日本の首都は？」という問いに対して「しいし」といった支離滅裂な回答が生成されました。\n\n興味深いのは、同じJevに対して多肢選択形式（東京・大阪などから選ばせる）やYes/No形式で問うと、非常に高い確率で「東京」を正解として選べる点です。このことから、Jevは知識自体は保持しているものの、その出力は「どの選択肢が正しいか」の判断確率であり、LLMのような「次のトークンの予測確率」ではないため、逐次的な生成には適さないという結論を導いています。モデルの特性を逆手に取った、生成AIの本質を理解するのに役立つ検証内容です。",
+    "topics": [
+      "Jev",
+      "生成AI",
+      "LLM",
+      "技術検証",
+      "クラスメソッド"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 82
+    }
+  }
+}

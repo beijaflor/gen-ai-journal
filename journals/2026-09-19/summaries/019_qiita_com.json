@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:28:43.552253+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動開発のためのオントロジー",
+    "url": "https://qiita.com/Syoitu/items/d41d234876e1bfadbf32",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの判断ロジックを、プロンプトによる推論だけでなく、機械的に検証可能な「概念・関係・制約」の知識モデル（オントロジー）で堅牢にする手法と実装例を紹介しています。",
+    "summaryBody": "本記事では、AI駆動開発における「オントロジー」の定義と重要性を詳しく解説しています。オントロジーとは、特定のデータドメインにおける概念や関係、ルールを形式的に記述した知識モデルです。著者は、LLMの推論（プロンプトベースの指示）だけでは限界がある組織固有のルールや複雑な制約を、グラフデータやSPARQLクエリ、あるいはコードベースの実行条件（Preconditions）として永続化する利点を強調しています。記事内ではTypeScriptを用いた軽量な実装例「operational-ontology」を通じ、AIエージェントが「出荷済みの注文をキャンセルする」といった不適切な操作を試みた際に、ビジネスルールによって物理的にブロックされる様子がデモされています。また、AWSが公開している「context-ontology-accelerator」についても触れ、Amazon NeptuneやMCPを活用した大規模運用のアーキテクチャやコスト面についても言及しています。",
+    "topics": [
+      "AI駆動開発",
+      "オントロジー",
+      "AIエージェント",
+      "AWS",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

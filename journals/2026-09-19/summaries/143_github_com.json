@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:31:36.725618+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pizza Bot: 長時間実行AIエージェントのためのローカルファースト・インボックス",
+    "url": "https://github.com/pizza-bot-app/pizza-bot",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Amazonが開発しオープンソース化したPizza Botは、LangGraphを活用して長時間稼働するAIエージェントの進捗管理や人間による承認をローカル環境で統合管理できるツールです。",
+    "summaryBody": "Pizza Botは、自律的に動作するAIエージェントとの対話を効率化するための「インボックス」を提供するプロジェクトです。最大の特徴は「非同期ワークフロー」に最適化されている点で、エージェントが長時間にわたるタスクを実行している間、ユーザーはクライアントを閉じていても問題ありません。完了した作業は「既読」キューに、承認が必要なステップは「アクション」キューに整理されます。\n\n技術面ではLangGraph/DeepAgentsランタイムを採用し、Electronによるデスクトップ版、ブラウザ版、CLIを提供。データはローカルに保存される「ローカルファースト」設計で、プライバシーに配慮されています。また、MCP (Model Context Protocol) サーバーの追加や独自の「スキル」開発による拡張が可能で、Amazon Bedrock、Anthropic、OpenAI、Ollamaなど幅広いモデルプロバイダーに対応しています。ファイルアクセスも明示的な権限付与が必要な設計となっており、セキュアなエージェント運用を支援します。",
+    "topics": [
+      "AI Agents",
+      "LangGraph",
+      "Local-first",
+      "MCP",
+      "Amazon"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - pizza-bot-app/pizza-bot: A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph. · GitHub"
+  }
+}

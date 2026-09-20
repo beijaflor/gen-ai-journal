@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:07:59.375845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Slack上でインフラをトラブルシュートする！ Agentic Platform Engineeringの第一歩",
+    "url": "https://speakerdeck.com/teru0x1/slack-ue-de-infura-o-toraburu-shuto-suru-agentic-platform-engineering-no-daiippo",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "UbieにおけるAIエージェント「infra-agent」の導入事例を通じ、セキュリティを担保しつつインフラ運用を自動化するAgentic Platform Engineeringの実践手法を紹介しています。",
+    "summaryBody": "Ubie社で開発・運用されている内製AIエージェント「infra-agent」の設計と成果に関するプレゼンテーション資料です。SREチームへの過度な問い合わせやトラブルシューティング負荷を軽減するため、Slackをインターフェースに、GCP、GitHub、Sentry、社内ドキュメント等の多岐にわたるリソースへアクセス可能なエージェントを構築しました。技術的な特筆点として、エージェント本体に自由なツール利用を許容する一方で、通信レイヤにDeep Packet Inspection（DPI）を行うプロキシを挟むことで、リポジトリ単位でのフィルタリングなど高度なセキュリティポリシーを強制するアーキテクチャを採用しています。導入後、リリース失敗に関する人間への問い合わせ数が大幅に減少し、マージ率約70%という実用性の高い自動PR生成を実現しています。成功の鍵として、既存プロセスへの統合、拡張可能なスキル基盤、そして社内ナレッジ（コンテキスト）の整備が挙げられています。",
+    "topics": [
+      "AI Agent",
+      "Platform Engineering",
+      "SRE",
+      "LLM",
+      "Cloud Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

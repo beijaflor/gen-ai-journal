@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:46:28.538087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeに920万件規模のニュース記事を解析させた事例が話題に【大規模データ分析】",
+    "url": "https://qiita.com/nolanlover0527/items/4603b903c01c2e7da7be",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "920万件ものニュース記事を独自パイプラインで構造化し、Claudeを用いて高度な解釈や重要度スコアリングを行った大規模データ分析の事例。",
+    "summaryBody": "Redditで注目を集めたCLSTRプロジェクトによる、920万件規模のニュースデータ分析手法を紹介。生データを直接LLMに投入するのではなく、「重複排除」「クラスタリング（出来事単位）」「ストーリー化（時系列）」という5つの前処理フェーズを経てデータを圧縮。最終的に集計された数値と代表サンプルのみをClaudeに渡すことで、コンテキスト制限やコストを抑えつつ、LLMに「傾向の解釈」や「仮説立案」という得意分野を分担させる設計思想が特徴。大規模データをAIで扱う際の現実的かつ効率的なパイプライン構築の好例となっている。",
+    "topics": [
+      "Claude",
+      "大規模データ分析",
+      "LLM",
+      "データパイプライン",
+      "CLSTR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

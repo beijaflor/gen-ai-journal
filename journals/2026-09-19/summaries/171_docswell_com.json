@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:39:26.858855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIレビューは３層でまわす",
+    "url": "https://www.docswell.com/s/3402128/KVJYJ3-2026-09-15-202358",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "既存のAIサブスクリプションを組み合わせ、ローカル・PR時・デイリーの3つの時間軸でコードレビューを多層化・自動化する実践的な運用フレームワーク。",
+    "summaryBody": "AIによるコードレビューを、実行タイミングと役割に応じて「ローカル（push前）」「PR時（自動化）」「デイリー（定期巡回）」の3層で構成する手法を提案しています。Claude CodeやCodexなどの既存ツールを使い分け、特にローカル層では複数のAIモデルに並列でレビューさせ、意見が割れた箇所を重点的に確認する「突合レビュー」を推奨しています。また、OWASP Benchmarkを用いた各モデルの脆弱性検知能力の定量評価に基づき、再現率重視のモデルと誤検知の少なさを重視するモデルを使い分ける具体的な役割分担を解説しています。追加課金を抑えつつ、ヒューマンエラーを仕組みで防ぐ「スイスチーズモデル」の考え方を開発プロセスに導入するガイドです。",
+    "topics": [
+      "AIコードレビュー",
+      "DevSecOps",
+      "Claude Code",
+      "GitHub Actions",
+      "ソフトウェア品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

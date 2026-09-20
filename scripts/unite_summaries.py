@@ -26,55 +26,60 @@ input_file = sys.argv[1]
 summaries_dir = sys.argv[2]
 output_file = sys.argv[3]
 
-# Extract URLs from input file
-with open(input_file, 'r', encoding='utf-8') as f:
-    content = f.read()
-    input_urls = re.findall(r'https?://[^\s\]]+', content)
+import json
 
-# Build URL to content mapping from summaries
-url_to_content = {}
-for filename in os.listdir(summaries_dir):
+# Parse the sources file into ordered (id, url) entries. Matching is by the
+# NNN_ id prefix (authoritative), NOT by content.url: a summary produced via a
+# paywall fallback (e.g. an HN-thread swap) has content.url pointing at the
+# proxy, so URL-based matching would silently drop it. The id prefix ties each
+# summary file to its sources line regardless of what content.url ended up being,
+# and is also immune to trailing-slash / canonicalization drift.
+entries = []  # (id, source_url) in sources-file order
+with open(input_file, 'r', encoding='utf-8') as f:
+    for line in f:
+        m = re.match(r'^\s*- \[.\] (\d{3})\. (\S+)', line)
+        if m:
+            entries.append((m.group(1), m.group(2)))
+
+# Render each summary file, keyed by its NNN id prefix.
+summary_by_id = {}
+for filename in sorted(os.listdir(summaries_dir)):
+    m = re.match(r'(\d{3})_', filename)
+    if not m:
+        continue
+    fid = m.group(1)
     filepath = os.path.join(summaries_dir, filename)
 
-    if filename.endswith('.md'):
+    if filename.endswith('.json'):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue  # non-JSON (e.g. a fail-closed BLOCKED stub) -> treated as missing
+        c = data.get('content', {})
+        url = c.get('url', '')
+        title = c.get('title', 'Untitled')
+        original_title = c.get('originalTitle')
+        one_sentence = c.get('oneSentenceSummary', '')
+        summary_body = c.get('summaryBody', '')
+        markdown = f"## {title}\n\n{url}\n\n"
+        if original_title:
+            markdown += f"**Original Title**: {original_title}\n\n"
+        markdown += f"{one_sentence}\n\n{summary_body}"
+        summary_by_id[fid] = markdown
+
+    elif filename.endswith('.md'):
         with open(filepath, 'r', encoding='utf-8') as f:
-            summary_content = f.read()
-            # Find URL in the summary content
-            urls = re.findall(r'https?://[^\s\]]+', summary_content)
-            if urls:
-                # Take the first URL found (each summary should have only one)
-                url = urls[0]
-                url_to_content[url] = summary_content
+            summary_by_id[fid] = f.read()
 
-    elif filename.endswith('.json'):
-        import json
-        with open(filepath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            url = data.get('content', {}).get('url')
-            if url:
-                # Convert JSON to markdown format for unified display
-                title = data.get('content', {}).get('title', 'Untitled')
-                original_title = data.get('content', {}).get('originalTitle')
-                one_sentence = data.get('content', {}).get('oneSentenceSummary', '')
-                summary_body = data.get('content', {}).get('summaryBody', '')
-
-                # Format as markdown
-                markdown = f"## {title}\n\n{url}\n\n"
-                if original_title:
-                    markdown += f"**Original Title**: {original_title}\n\n"
-                markdown += f"{one_sentence}\n\n{summary_body}"
-
-                url_to_content[url] = markdown
-
-# Process input URLs
+# Assemble in sources-file order, matching by id.
 found_summaries = []
-missing_urls = []
-
-for url in input_urls:
-    if url in url_to_content:
-        found_summaries.append(url_to_content[url])
+missing = []  # (id, url)
+for fid, url in entries:
+    if fid in summary_by_id:
+        found_summaries.append(summary_by_id[fid])
     else:
-        missing_urls.append(url)
+        missing.append((fid, url))
 
 # Write unified summaries
 with open(output_file, 'w', encoding='utf-8') as f:
@@ -82,9 +87,9 @@ with open(output_file, 'w', encoding='utf-8') as f:
 
 # Report results
 print(f"Created {output_file} with {len(found_summaries)} summaries")
-if missing_urls:
-    print(f"Missing summaries ({len(missing_urls)}):")
-    for url in missing_urls:
-        print(f"  - {url}")
+if missing:
+    print(f"Missing summaries ({len(missing)}):")
+    for fid, url in missing:
+        print(f"  - {fid}: {url}")
 else:
     print("All summaries found!")

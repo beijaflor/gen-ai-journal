@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:27:48.285538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングが「解決」された後の課題：AI生成コードの「粗雑さ（Slop）」を測定する",
+    "url": "https://earendil.com/posts/measuring-code-sloppiness/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIは機能的に正しいコードを生成できるようになったが、冗長性や複雑性が増大する「スロップ」問題に対し、VerbosityやErosionといった定量的指標を用いた評価の重要性を説く。",
+    "summaryBody": "LLMによるコード生成が普及する中で、機能的な正しさ（テストの通過）だけでは測れない「コードの粗雑さ（Slop）」が新たな課題となっている。本記事では、AIを評価者とする既存手法の限界を指摘し、代わりに「Verbosity（冗長性：重複や不要な行の割合）」と「Erosion（浸食：複雑な関数へのコード集中度）」という2つの定量的指標を提案。SlopCodeBenchのデータに基づき、AI生成コードは人間のコードと比較して約2倍冗長で複雑であることを示している。開発プロセスが反復されるにつれて、これらの負の遺産が蓄積し、最新のモデルであっても長期的にはプロジェクトの完遂が困難になるリスクを警告している。",
+    "topics": [
+      "AI Coding",
+      "Code Quality Metrics",
+      "LLM Evaluation",
+      "SlopCodeBench",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "If coding is solved, what now?: Measuring the sloppiness of code"
+  }
+}

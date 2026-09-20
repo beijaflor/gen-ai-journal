@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:18:05.655724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIの「エージェント型ソフトウェア工場」内部：Codexが変革する開発の未来",
+    "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "OpenAI内部ではCodexが開発の中核を担い、AIエージェントがコード実装、レビュー、デプロイ後の監視までを自律的に行う「エージェント型ソフトウェア工場」が稼働している。",
+    "summaryBody": "OpenAIの内部開発プロセスとAIエージェントの活用実態を深く掘り下げたレポートです。現在、同社では「Codex」と「ChatGPT Work」が全業務のバックボーンとなっており、エンジニアだけでなく非エンジニア部門でも90%以上の利用率を誇ります。\n\n最大の特徴は「エージェント型ソフトウェア工場」と呼ばれるパイプラインです。人間が意図（ゴール）を定義すると、CodexがリポジトリやSlackからコンテキストを収集し、コードを実装、テストをパスするまで自律的に修正を繰り返します。さらに、インフラやセキュリティの専門知識を持つ特定分野のAIエージェントがコードレビューを行い、デプロイ後も「自律型SRE」として稼働状況を監視します。この進化により、プルリクエスト（PR）の数は従来の10倍に急増し、IDE（統合開発環境）の利用が減少するというパラダイムシフトが起きています。\n\n一方で、ネイティブアプリの審査待ち時間やCPUのボトルネックといった物理的な制約も浮き彫りになっています。エンジニアの役割は、システムを構築する人から、高度な判断力と「味（Taste）」を持ってAIのアウトプットを評価・管理する製品マネージャーのような存在へと変化しつつあります。",
+    "topics": [
+      "OpenAI",
+      "Codex",
+      "AIエージェント",
+      "ソフトウェアエンジニアリング",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 96
+    },
+    "originalTitle": "Inside OpenAI’s agentic software factory - by Gergely Orosz"
+  }
+}

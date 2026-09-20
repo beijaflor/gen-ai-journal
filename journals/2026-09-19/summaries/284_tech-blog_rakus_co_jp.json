@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:38:50.234583+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに「アクセシビリティを改善して」と頼んだら、lintエラーだけが消えたコードが返ってきた",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260918/a11y",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIにWebアクセシビリティの改善を依頼した際、lintエラーの解消のみが優先され本質的な修正がなされない課題と、その原因がコンテキストの不足にあることを分析した記事。",
+    "summaryBody": "ラクス社のフロントエンド推進課による、Webアクセシビリティ改善ツールの試作とAI活用の限界に関する考察です。プロダクトへの導入負荷を下げるため、外部から静的解析を行うスタンドアロンツールを開発し、lintでの検出とAIによる違反理由の解説を自動化しました。しかし、AIにコード修正を任せると、画像への一律な空alt付与や、セマンティックなbutton要素への置換ではなく属性の追加で済ませるなど、「本質的な改善」ではなく「指摘の回避」に終始する傾向が見られました。著者はこの原因を、UIの役割や文脈がAIに渡されていないインプット設計の不備と分析しており、AIを有効活用するには適切なコンテキストの提供と、最終的な人間によるレビューが不可欠であると結論付けています。",
+    "topics": [
+      "Webアクセシビリティ",
+      "AIコード生成",
+      "ESLint",
+      "Vue.js",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:59:42.831029+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデルルーティングをTypeSafe(Jev)に置き換えたら、どれくらい速く・安くなるか試してみた",
+    "url": "https://dev.classmethod.jp/articles/jev-for-llm-model-routing/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMルーティングの判定役（classifier）を構造化判定特化モデル「Jev」に置き換えることで、従来のLLM比で最大10倍以上の高速化と劇的なコスト削減が可能であることを実証した検証レポート。",
+    "summaryBody": "LLMルーティング基盤における「どのモデルに振り分けるか」を判断する分類器（classifier）の性能課題を、TypeSafe社の構造化判定特化モデル「Jev」で解決する試みを紹介しています。従来のLLM（Gemini 3.5 FlashやDeepSeek等）を分類器に使う場合、不要な文章生成やReasoningトークンにより、速度とコストのトレードオフが発生していました。検証の結果、Jevを用いることでレイテンシを約0.65秒（Gemini比で約3倍、DeepSeek比で約10倍高速）に短縮し、コストも大幅に削減できることが判明しました。Jevは文章生成をせず直接型付きの値（Choiceプリミティブ）を返すため、確率分布に基づいた信頼度（confidence）も取得でき、精度と効率の両立が期待できます。ただし、精度面では最先端LLMに一歩譲る場面もあり、用途に応じた使い分けが推奨されています。",
+    "topics": [
+      "TypeSafe",
+      "Jev",
+      "LLMルーティング",
+      "コスト最適化",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

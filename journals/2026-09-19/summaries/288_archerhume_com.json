@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:44:11.203531+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevのアーキテクチャを解明する：1万回のAPIプロービングによる技術検証",
+    "url": "https://archerhume.com/posts/jevs-architecture-unmasked/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe社の意思決定特化型AI「Jev」のブラックボックスAPIを1万回以上の呼び出しで解析し、共有ステートと並列読み出しを採用した独自アーキテクチャを推測した技術レポート。",
+    "summaryBody": "Archer Hume氏による、TypeSafe社が提供する意思決定モデル「Jev」のリバースエンジニアリング記録です。筆者は1万回以上のAPIプロービング（レイテンシ、トークン計測、プロンプト介入等）を実施し、Jevが従来の自己回帰型LLMとは根本的に異なる「決定特化型」の設計であることを明らかにしました。\n\n### 推測される主なアーキテクチャ的特徴\n- **並列読み出し（Direct Readout）**: テキストを逐次生成するのではなく、共有されたステートに対して複数の質問を並列で処理し、最終レイヤーの内部表現から直接確率分布を出力します。\n- **共有ステートのKVキャッシュ**: 共通の背景情報を一度だけエンコードし、各質問（ブランチ）で再利用することで、計算コストを劇的に削減しています。\n- **RLCD（Reinforcement Learning for Calibrated Decisions）**: 出力される確率が実際の正答率と整合するよう、アウトカム（結果）ベースで最適化されており、MMLU-Proで84.6%という高い精度と較正（Calibration）を実現しています。\n- **スパースMoEバックボーン**: 処理速度の解析から、内部には疎な混合エキスパート（Mixture-of-Experts）構造のトランスフォーマーが採用されている可能性が高いと結論づけています。\n\nこの分析は、LLMが「自信満々に間違える」問題を、生成プロセスを介さない数値的なリードアウトによって解決しようとするJevの設計思想を浮き彫りにしています。",
+    "topics": [
+      "Jev",
+      "リバースエンジニアリング",
+      "AIアーキテクチャ",
+      "意思決定モデル",
+      "RLCD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 98
+    },
+    "originalTitle": "Jev’s Architecture Unmasked — archerhume"
+  }
+}

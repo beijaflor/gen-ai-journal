@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:33:43.311391+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークンをケチってレビューをローカルLLMにやらせた話",
+    "url": "https://zenn.dev/k_motoki/articles/11de0ba46dd1ee",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "APIコスト削減のため、GeForce 3060環境でOllamaとQwen2.5-coder:14bを活用し、重大な不具合のみを検出するJSON出力型のローカルコードレビュー環境を構築した事例。",
+    "summaryBody": "17万行規模のプロダクト開発において、生成AIによるコードレビューのコスト（トークン消費）を抑えるべく、ローカルLLMを導入した実践記録です。Ollama上で「Qwen2.5-coder:14b」を使用し、Modelfileで厳格なシステムプロンプトを定義することで、データ損失やセキュリティ、ElectronのIPC境界破壊といった重大なリスクのみをJSON配列で出力させる仕組みを構築しています。運用面では、コンテキスト制限（8192トークン）による「指摘なし」と「処理失敗」の判別不能問題を解決するため、PowerShellスクリプト側で差分をファイル・ハンク・行単位で分割処理し、終了コードで状態を管理する工夫が紹介されています。特に、不要なコンテキスト行（unified=80）を削り、モデルが確実に差分を把握できるように調整するなどの実務的な知見が共有されています。",
+    "topics": [
+      "Ollama",
+      "Qwen2.5-coder",
+      "Local LLM",
+      "コードレビュー",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

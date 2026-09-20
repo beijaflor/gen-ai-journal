@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:39:30.827988+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "言語化不可能な知識のためのアーキテクチャ設計",
+    "url": "https://www.oreilly.com/radar/architecting-for-the-knowledge-you-cant-capture/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "企業AIにおいて、専門家の暗黙知を収集・表現・提供・伝達する4層のアーキテクチャを提案し、文書化されない判断基準をシステムに組み込む手法を解説している。",
+    "summaryBody": "企業が直面する「ベテランの退職による知識喪失」や「RAG等のAIシステムが表面的な回答に留まる」という課題に対し、言語化が困難な「暗黙知（Tacit Knowledge）」を扱うための設計指針を提示している。筆者は、マイケル・ポランニーの「ポランニーのパラドックス」を引き合いに出し、形式知だけでは補えない「判断の閾値」「例外条件」「観察される証拠」「エスカレーション先」の4点を重点的に抽出するインタビュープロトコルを提唱。アーキテクチャを「収集」「表現」「提供」「伝達」の4プレーンに分割し、AIが回答不能な場合に適切な専門家へ繋ぐルートの確保や、インシデント再現による評価ループの重要性を説いている。単なるデータの蓄積ではなく、組織の競争力の源泉である「現場の判断力」をどう継承・自動化するかという、高度なナレッジマネジメントの視点を提供している。",
+    "topics": [
+      "暗黙知 (Tacit Knowledge)",
+      "ナレッジマネジメント",
+      "エンタープライズAI",
+      "ソフトウェアアーキテクチャ",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Architecting for the Knowledge You Can’t Capture"
+  }
+}

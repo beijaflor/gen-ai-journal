@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:22:08.905944+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの Agent Skills は、ときどき見直したほうがいい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「Agent Skills」を肥大化させず健全に保つため、/skill-doctorコマンドによる利用状況の可視化やモデル更新に合わせた指示の「引き算」メンテナンスの重要性を解説しています。",
+    "summaryBody": "Claude Codeにおける「Agent Skills」の管理と最適化に関する実践的なガイドです。Skillsが増えすぎると、コンテキストの消費や不要な呼び出しといった管理コストが増大するため、以下のメンテナンス手法を推奨しています。\n\n- **/skill-doctorによる分析**: v2.1.252以降で導入されたこのコマンドを使用し、各Skillの文脈量と呼び出し頻度を照らし合わせ、不要なものや説明が不適切なものを特定します。\n- **呼び出しの制御**: `disable-model-invocation: true` 設定による手動起動への限定や、`/skills` コマンドを用いた「名前のみ表示（name-only）」など、モデルへの見せ方を最適化する手法を紹介しています。\n- **モデル更新時の見直し**: モデルの性能が上がると、以前の失敗を回避するために追加した詳細な補助指示が逆に作業を停滞させることがあります。モデル更新のたびに既存のSkillが「今のモデルでも必要か」を検証し、不要な指示を削ぎ落とす運用の重要性を強調しています。\n\n単に機能を追加するだけでなく、実務の依頼内容とモデルの能力に合わせて継続的にSkillを微調整することが、快適なエージェント利用の鍵となります。",
+    "topics": [
+      "Claude Code",
+      "Agent Skills",
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:35:16.962460+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Block Runner: AIエージェントによるHTMLからのWordPressブロック生成・検証ツール",
+    "url": "https://www.accelerateplugin.com/block-runner/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成したHTMLを、Gutenberg互換の有効なWordPressブロックに変換・検証する、Human Made開発のオープンソースCLIツール。",
+    "summaryBody": "Block Runnerは、AIエージェントやデザインツールから出力されたHTMLを、WordPressのネイティブなGutenbergブロックに変換するためのオープンソースライブラリです。主な特徴は以下の通りです：\n\n- **ネイティブ変換と検証**: 生成されたHTML/CSSをCover、Group、Buttonsなどの標準ブロックに変換します。出力は「headless Gutenberg」を使用して検証され、WordPressエディタ上で即座に編集可能な「有効なブロック」であることを保証します。\n- **2つの利用モード**: ページコンテンツとしてプレーンなブロックを生成する「Convert」と、プラグイン内で編集可能なフィールドを制限した再利用可能ブロックを作成する「Author」モードを備えています。\n- **テーマ統合**: `theme.json`を参照することで、インラインスタイルをテーマ固有のカラーパレットやフォントサイズのスラグに自動的にマッピングします。\n- **開発ワークフローへの統合**: CLIツールとしてGitHub ActionsなどのCI環境や、Claude Code、CursorといったAIエージェントから直接呼び出すことができ、LLMが苦手とする「WordPress固有のマークアップ生成」を補完します。\n\nこれにより、開発者はAIを活用しつつ、WordPressの標準仕様に準拠した高品質なサイト構築を自動化できます。",
+    "topics": [
+      "WordPress",
+      "Gutenberg",
+      "AIエージェント",
+      "エンジニアリング",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    },
+    "originalTitle": "Block Runner: turn HTML into valid WordPress blocks, from inside your AI agent"
+  }
+}

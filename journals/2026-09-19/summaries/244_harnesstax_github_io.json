@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:56:41.535504+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HarnessTax: コーディングエージェントにおける「ハーネス」の重要性とコストへの影響",
+    "url": "https://harnesstax.github.io/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "UC Berkeleyの研究チームは、コーディングエージェントの制御基盤である「ハーネス」が、モデルの成功率よりもコスト（最大5倍の差）に大きな影響を与える「ハーネス税」の存在を明らかにした。",
+    "summaryBody": "コーディングエージェントは、推論を担う「モデル」と、ツール利用やコンテキストを管理する「ハーネス」の組み合わせで構成されます。本研究（HarnessTax）は、7つのモデルと3つのハーネス（Claude Code, Codex CLI, Pi）を組み合わせた21のペアをSWE-bench Lite等で評価しました。その結果、1. ハーネスの選択はタスク成功率にほとんど影響しない一方で、コストには最大5倍の開きが生じる「ハーネス税（Harness Tax）」が発生すること、2. わずか4つのツールしか持たないシンプルなハーネス「Pi」が、公式の複雑なハーネスと同等以上の性能を低コストで実現すること、3. モデル提供元が自社モデルに最適化したはずの公式ハーネスよりも、他社やオープンソースのハーネスの方が高い成功率を記録するケースが頻発することが判明しました。この結果は、エージェントの評価において知能（モデル）だけでなく、制御レイヤーの効率性も厳密に比較すべきであることを示唆しています。",
+    "topics": [
+      "Coding Agents",
+      "LLM Evaluation",
+      "HarnessTax",
+      "SWE-bench",
+      "Cost Efficiency"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "HarnessTax: How Much Does the Harness Matter for Coding Agents?"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:44:57.607926+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bend：AIによるミスを数学的証明で防ぐ、高速並列プログラミング言語",
+    "url": "https://bend-lang.com/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントによるコード生成の誤りを形式証明で防ぎつつ、複雑な並列化処理を自動でGPUやマルチコアへ展開する、Pythonライクな高速言語。",
+    "summaryBody": "Bendは、ポストAGI時代における「人間がコードを読まず、AIに指示を出す」開発スタイルを想定して設計された新しいプログラミング言語です。最大の特徴は、高速な並列ランタイムと、LeanやRocqにインスパイアされた依存型システムによる形式証明の統合です。開発者は『LAWS.bend』で不変条件（例：ゲームで勝利条件を満たさない限り勝てない）を定義し、AIにそれを満たす証明コードを生成させることで、AIが意図しないバグや仕様変更を混入させることを数学的に阻止します。また、スレッドやロックを意識せずに記述したコードが、自動的にCPUの全コアや数千のGPUコア（CUDA）で並列実行される高いパフォーマンスを誇ります。",
+    "topics": [
+      "Bend",
+      "形式手法",
+      "AI駆動開発",
+      "GPUコンピューティング",
+      "並列処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Bend"
+  }
+}

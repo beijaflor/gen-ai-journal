@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:26:43.384681+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rails Hyperdrive: Railsにおけるエージェント開発を加速する開発支援ツール",
+    "url": "https://evilmartians.com/chronicles/rails-hyperdrive-supercharged-agentic-development-for-rails",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rails Hyperdriveは、MCPサーバーとGemベースのスキル配布システムを統合し、AIエージェントがRailsアプリの構造やライブラリのベストプラクティスを正確に理解できるようにする開発者用エンジンです。",
+    "summaryBody": "Evil Martiansが発表した「Rails Hyperdrive」は、AIエージェントによるRailsアプリケーション開発を劇的に改善するツールです。主な特徴は以下の通りです：\n\n1. **MCP (Model Context Protocol) サーバー**: 起動中のRailsアプリからルーティングやDBスキーマ、ログなどの生データをエージェントに提供します。\n2. **Gemベースの知識配布**: 開発中のアプリが使用しているGemに紐づく「スキル（Markdown）」を自動的にインストールします。これにより、エージェントはGemfileに応じた最適な知識をコストゼロで取得できます。\n3. **高度な同期と衝突解決**: ユーザーが編集したスキルファイルと、Gemのアップデートによる上流の変更をGitのような3-wayマージやサイドカーファイルで賢く同期します。\n4. **Gem作者向けのエコシステム**: `gemspec`にメタデータを追加するだけで、既存のGemをエージェント対応にでき、開発者がAIを使って正しくライブラリを利用できるよう支援します。\n\n本ツールは開発環境専用で、Claude Codeなどのエージェントと組み合わせて、ボイラープレートの削減やドキュメント参照の自動化を実現します。",
+    "topics": [
+      "Ruby on Rails",
+      "AI Agent",
+      "MCP (Model Context Protocol)",
+      "LLM",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    },
+    "originalTitle": "Rails Hyperdrive: supercharged agentic development for Rails—Martian Chronicles, Evil Martians’ team blog"
+  }
+}

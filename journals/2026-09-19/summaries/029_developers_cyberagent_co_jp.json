@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T22:45:32.665571+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MVP から始める、障害対応における AI 活用",
+    "url": "https://developers.cyberagent.co.jp/blog/archives/64920/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "サイバーエージェントのSREチームが、GitHub ActionsとClaude Code、n8nを組み合わせたMVPアプローチにより、障害の一次調査をAIに委譲してオンコール負荷と属人化を解消した事例。",
+    "summaryBody": "AJA DSPチームのSREが、深夜や休日のオンコールにおける定型的な一次調査を生成AIで自動化した取り組みを紹介しています。初期投資を抑えるため、まずはGitHub IssueのラベルをトリガーにGitHub ActionsでClaude Codeを動かすMVP構成から開始。ログ、メトリクス、ソースコード、過去の障害事例を横断的に調査させ、影響範囲や推奨アクションをIssueにコメントさせる仕組みを構築しました。精度確認後にn8nを導入してSlackからの完全自動化を実現。単なる負担軽減だけでなく、AIが提示する調査仮説によって若手エンジニアが調査に参加しやすくなるという「育成・属人化解消」の副次的効果も得られています。技術的には読み取り専用権限の徹底や、ドメイン知識のプロンプト注入、Platform Engineeringの視点での段階的な導入が鍵となっています。",
+    "topics": [
+      "SRE",
+      "生成AI",
+      "Claude Code",
+      "GitHub Actions",
+      "n8n"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:16:48.311867+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "🥒gherkin と skills でエージェントがブラウザを操作してテストする",
+    "url": "https://zenn.dev/sonicmoov/articles/57a9c2d0d281b5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "自然言語のGherkin記法で書かれたテストケースをAIエージェントに読み込ませ、Playwrightを介して自律的にブラウザ操作とバグ検出を行うE2Eテストの試行。",
+    "summaryBody": "### 概要\nフロントエンド開発におけるE2Eテストのメンテナンス負荷を軽減するため、AIエージェントが自律的にテストを実行する仕組みを構築した事例。BDDで用いられるGherkin記法を採用し、AIへのプロンプトとして活用することで、ノーコードに近い形でのテスト自動化を目指している。\n\n### 主な内容\n- **Gherkinの採用理由**: Given/When/Thenの構造がAIに理解されやすく、非エンジニアでも仕様レビューが可能なため、自然言語プロンプトとして借用。\n- **実装手法**: AIエージェントにPlaywrightを操作する「スキル」を付与。URLへの直接遷移や、PC/SPのビューポート切り替えなどをカスタムキーワードで制御している。\n- **検証結果**: バグを意図的に仕込んだ12シナリオで検証した結果、見逃し・誤検知ともに0件を記録。画面遷移の不備や文言の誤り、検索機能の不具合などを正確に検出した。\n- **考察**: モデルはgpt-5.6 Luna Mediumという低コストなものでも十分な精度を発揮。今後はレイアウト崩れや、画面上では見えないAPIレベルの保存成功確認などが課題となる。",
+    "topics": [
+      "AI",
+      "E2Eテスト",
+      "Playwright",
+      "Gherkin",
+      "自律エージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

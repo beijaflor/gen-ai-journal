@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:17:50.221459+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Routinesを用いてIssueを自動で解消する仕組みを展開した話",
+    "url": "https://tech-blog.rakus.co.jp/entry/20260916/ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAIエージェント「Claude Code」のRoutines機能を活用し、GitHub Issueの調査からプルリクエスト作成までを自動化するパイプラインの構築事例と、導入後の成果・課題を共有しています。",
+    "summaryBody": "株式会社ラクスのエンジニアが、開発効率向上のためClaude Codeの「Routines」機能を用いたIssue自動解消フローを構築しました。このフローは2段階に分かれており、まずAIがIssueを調査して修正方針と確認事項を提示し、人間がGOサインを出した後にAIが実装・セルフレビュー・ドラフトPR作成までを完遂します。導入により、夜間の自動処理による並列開発や、調査過程のログ化、環境依存の排除といったメリットが得られました。一方で、AIが生成したコードがドメイン知識に即しているかを判断する「レビュー負荷」が新たな課題として浮上しており、今後は実装意図のドキュメント化の徹底や仕様駆動開発（Spec Driven Development）への応用を通じて、人間とAIの協働プロセスを最適化していく方針です。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "GitHub",
+      "自動化",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

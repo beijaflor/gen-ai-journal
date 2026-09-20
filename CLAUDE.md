@@ -89,6 +89,10 @@ uv run scripts/bulk_summarize.py
 # Dry run to see what would be processed
 uv run scripts/bulk_summarize.py --dry-run
 
+# STEP_02 post-generation gates: format lint + paywall review (human decides)
+uv run scripts/check_summary_format.py workdesk/summaries
+uv run scripts/list_paywalled_sources.py --out workdesk/paywall_review.md  # then route via human-review-gate skill
+
 # One-shot URL summarization (for single URL)
 uv run scripts/call-gemini.py --url "https://example.com/article" --output workdesk/summaries/XXX_domain.md
 

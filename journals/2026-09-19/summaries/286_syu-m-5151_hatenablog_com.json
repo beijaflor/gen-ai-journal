@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:43:38.689458+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの Rules と Auto memory は、書きっぱなしにしないほうがいい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのカスタムルールや自動記憶機能を、プロジェクトの変化やモデルの更新に合わせて定期的にメンテナンスし、陳腐化を防ぐための実践的な管理手法を解説しています。",
+    "summaryBody": "Claude Codeにおける`.claude/rules/`とAuto memoryは、一度設定して終わりではなく、開発状況に応じた「棚卸し」が必要です。本記事では、Rulesの適用範囲を`paths`で適切に制限する方法、個人用とチーム用の設定の使い分け、そしてAuto memoryに蓄積された古い情報の整理術について詳しく解説しています。特に、モデル更新時には過去の回避策（プロンプトでの補強）が不要になる可能性があるため見直すべきであることや、CLIの特定バージョンにおけるバグ（Bash優先によるRules読み込み漏れ）への具体的な環境変数での対処法など、実運用に基づいた高度なTipsが網羅されています。指示を書くだけでなく、それが正しく読み込まれているかを`/context`や`/memory`で確認し、常に現状に即した状態に保つ重要性を説いています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "開発プロセス",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

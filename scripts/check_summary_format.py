@@ -11,9 +11,13 @@ fine and is left alone). Three defects, all observed in the 2026-08-29 cycle:
      break (JSON had ``\\\\n``), so it renders as a literal "\\n". Flagged when
      ``\\n\\n`` appears or ``\\n`` occurs 2+ times (a one-off prose mention of
      ``\\n`` is not flagged).
-  2. ``mashed-single-line`` — markdown structure (a ``##``–``######`` header or a
-     ``N. **`` list) is present while the whole body is a single line (no real
-     newline), so none of it renders.
+  2. ``mashed-single-line`` — markdown structure is crammed onto one line so it
+     will not render. Two shapes: (a) the whole body is a single line (no real
+     newline) while it contains a ``##``–``######`` header or a ``N. **`` list;
+     or (b) an individual line crams structure onto itself — 2+ ``N. **`` list
+     items on one line, or a header sharing its line with a ``N. **`` item (e.g.
+     ``### 主な特徴 1. **…**``). Shape (b) is caught even when the rest of the body
+     has real newlines (a *partially* mashed body), which shape (a) alone missed.
   3. ``inline-header`` — a ``##``–``######`` header marker sits mid-line (text
      before it on the same line), so it renders as literal ``###`` instead of a
      heading. Line-start headers are NOT flagged. This includes a header
@@ -59,6 +63,22 @@ def _line_has_inline_header(line: str) -> bool:
     return bool(_HEADER.search(line))
 
 
+def _line_is_mashed(line: str) -> bool:
+    """True if a *single* line crams markdown structure onto itself so it will
+    not render as structure. Two signatures: 2+ ``N. **`` list items on one line,
+    or a header sharing its line with a ``N. **`` list item (e.g.
+    ``### 主な特徴 1. **フル自律運営**: …``). A properly formatted body puts each
+    header and each list item on its own line, so neither signature fires on
+    clean output. This catches a *partially* mashed body — one crammed line while
+    the rest of the body has real newlines — which the whole-body single-line
+    check in ``lint_body`` misses.
+    """
+    n_items = len(_NUM_BOLD_LIST.findall(line))
+    if n_items >= 2:
+        return True
+    return n_items >= 1 and bool(_HEADER.search(line))
+
+
 def lint_body(body: str) -> list[str]:
     """Return the ordered list of defect labels for a summaryBody (empty = clean)."""
     defects = []
@@ -66,9 +86,15 @@ def lint_body(body: str) -> list[str]:
         defects.append("escaped-newline")
     has_structure = bool(_HEADER.search(body)) or bool(_NUM_BOLD_LIST.search(body))
     if has_structure and "\n" not in body:
+        # Whole body is one line yet carries structure: nothing renders.
         defects.append("mashed-single-line")
-    elif any(_line_has_inline_header(line) for line in body.split("\n")):
-        defects.append("inline-header")
+    else:
+        # Body has real newlines: check each line for structure crammed onto it.
+        lines = body.split("\n")
+        if any(_line_is_mashed(line) for line in lines):
+            defects.append("mashed-single-line")
+        if any(_line_has_inline_header(line) for line in lines):
+            defects.append("inline-header")
     return list(dict.fromkeys(defects))  # de-dup, preserve order
 
 
