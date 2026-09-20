@@ -294,7 +294,6 @@
 - [x] 293. https://monoist.itmedia.co.jp/mn/articles/2609/18/news012.html
 - [x] 294. https://dev.classmethod.jp/articles/jev-forced-language-model/
 - [x] 295. https://wirelesswire.jp/2026/09/94513/
-- [x] 296. https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment
 - [x] 297. https://www.itmedia.co.jp/news/article/2609/18/2000001618/
 - [x] 298. https://www.pewresearch.org/global/2026/09/17/globally-more-people-expect-ai-to-cause-job-loss-than-growth/
 - [x] 299. https://github.com/browser-use/jev-ultrafast
