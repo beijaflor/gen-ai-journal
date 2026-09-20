@@ -112,7 +112,6 @@
 - [x] 108. https://zenn.dev/k_motoki/articles/ef60bbbc0ad7ec
 - [x] 109. https://qiita.com/masazero/items/145cec6aa549c0fd9ef2
 - [x] 110. https://qiita.com/carol0226/items/c0f0101bf5f237b44acb
-- [ ] 111. https://qiita.com/ShigemoriMasato/items/0a7f44f0f554c8e4a9b7
 - [x] 112. https://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5
 - [x] 113. https://qiita.com/topsales_ai/items/cfef9688334d242c8382
 - [x] 114. https://pc.watch.impress.co.jp/docs/column/hothot/2140325.html
@@ -237,7 +236,6 @@
 - [x] 234. https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings/
 - [x] 235. https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2141084.html
 - [x] 236. https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349
-- [ ] 237. https://www.reuters.com/legal/litigation/eu-is-set-propose-ban-social-media-ai-chatbots-under-15s-2026-09-14/
 - [x] 238. https://automaton-media.com/articles/newsjp/20260917-468379/
 - [x] 239. https://www.itmedia.co.jp/aiplus/article/2609/17/2000001587/
 - [x] 240. https://zenn.dev/mizchi/articles/jev-plays-gomoku
@@ -303,3 +301,6 @@
 - [x] 300. https://journal.supa.ai/jev-classifier-benchmark/
 - [x] 301. https://www.hacktron.ai/blog/hacking-openai
 - [x] 302. https://note.com/shi3zblog/n/nd5fc5341b342
+- [x] 303. https://blog.sentry.io/debugging-our-ai-search-assistant-with-agent-tracing/
+- [x] 304. https://www.oreilly.com/radar/zero-to-agent-in-30-minutes-build-a-shared-knowledge-base-for-all-your-agents-with-sajal-sharma/
+- [x] 305. https://www.oreilly.com/radar/enterprise-analytics-beyond-dashboards-intelligent-data-orchestration-with-llms/

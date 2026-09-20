@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T23:02:37.435382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ダッシュボードを超えた企業分析：LLMによるインテリジェントなデータオーケストレーション",
+    "url": "https://www.oreilly.com/radar/enterprise-analytics-beyond-dashboards-intelligent-data-orchestration-with-llms/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "データを一箇所に統合するのではなく、LLMをオーケストレーション層として活用し、グラフDBやベクター検索などの分散したデータソースを横断して推論・分析を行う次世代の企業データアーキテクチャの提案。",
+    "summaryBody": "### 概要\n従来の企業データ分析は、データを単一のウェアハウスに集約することに注力してきましたが、多様なシステムの情報を組み合わせて複雑なビジネス上の問いに答えるには限界がありました。本記事では、LLMを「インテリジェントなオーケストレーション層」として配置し、データは各システム（グラフDB、ベクター検索、DWH等）に保持したまま、アクセスパターンのみを統合するリファレンスアーキテクチャを提示しています。\n\n### 主なアーキテクチャの構成\n1. **意図解釈と分解**: 自然言語の問いから必要なデータソースを特定し、各ソースに最適化されたサブクエリへと動的に分解します。\n2. **並列実行とセキュリティ**: 複数のデータソースを並列で実行しつつ、LLMに渡す前にデータベースレベルで決定論的な行レベルセキュリティを適用し、情報漏洩を防ぎます。\n3. **GraphRAGの活用**: ナレッジグラフを利用することで、複数のシステムにまたがる複雑な関係性を辿り、監査可能で根拠のある推論を実現します。\n4. **セマンティック統合**: 各ソースからの結果をLLMが統合・要約し、単なる数字の羅列ではなく「なぜその変化が起きたのか」という背景まで説明する回答を生成します。\n\n### 実装の要点\n特定のLLMプロバイダーへのロックインを避け、推論コストを管理するために意図解釈と要約でモデルを使い分けることや、データの鮮度管理、オブザーバビリティの確保が実用化の鍵となります。",
+    "topics": [
+      "LLM",
+      "データオーケストレーション",
+      "GraphRAG",
+      "エンタープライズAI",
+      "データアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Enterprise Analytics Beyond Dashboards: Intelligent Data Orchestration with LLMs"
+  }
+}
