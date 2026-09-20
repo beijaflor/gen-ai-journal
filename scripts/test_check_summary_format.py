@@ -83,6 +83,63 @@ def test_in_word_hashes_without_trailing_space_not_flagged():
     assert lint_body(body) == []
 
 
+def test_canonical_correct_example_clean():
+    # The exact "CORRECT" example from prompts/summarize-json.prompt and the
+    # SKILL.md canonical spec: heading + list, real newlines, blank lines
+    # between blocks. Must be fully clean.
+    body = (
+        "### 検証の概要\n\n"
+        "**Claude Code** を使った大規模リファクタリングの実例を検証した記事。\n\n"
+        "- **対象**: 10万行規模のモノリポ\n"
+        "- **手法**: エージェントによる段階的な移行\n\n"
+        "既存のワークフローに組み込みたいチームは必読。"
+    )
+    assert lint_body(body) == []
+
+
+def test_partial_mash_two_numbered_bold_items_one_line_flagged():
+    # The body has real newlines elsewhere, but one line crams two
+    # "N. **label**" list items together -- neither renders as a list item.
+    body = "導入文。\n\n1. **A**: 説明。 2. **B**: 説明。\n\n結び。"
+    assert lint_body(body) == ["mashed-single-line"]
+
+
+def test_partial_mash_heading_glued_to_numbered_list_flagged():
+    # A heading and a list item crammed onto the same physical line, even
+    # though the body has real newlines elsewhere (before/after this line).
+    body = "導入文。\n\n## 主な結果 1. **初期**: 良好という結果\n\n結び。"
+    assert "mashed-single-line" in lint_body(body)
+
+
+def test_partial_mash_heading_glued_to_bullet_flagged():
+    body = "導入文。\n\n## 主な結果 - 初期は良好 - 推論はやや遅い\n\n結び。"
+    assert "mashed-single-line" in lint_body(body)
+
+
+def test_glued_heading_forward_sentence_flagged():
+    # The heading label runs directly into the first sentence with no break
+    # at all, e.g. "## 記事の概要PC Watch編集部が...". The heading is at true
+    # line-start (not mid-line), so this is distinct from
+    # test_glued_header_mid_multiline_flagged (glued to PRECEDING text);
+    # here it's glued to the FOLLOWING text instead.
+    body = (
+        "## 記事の概要PC Watch編集部が高性能な生成AIモデルを"
+        "徹底的に検証した記事を紹介する。\n\n"
+        "### 主な結果\n\n"
+        "- **推論速度**: 大幅に向上。"
+    )
+    assert "inline-header" in lint_body(body)
+
+
+def test_clean_heading_without_trailing_period_not_flagged_as_glued():
+    # A short heading label with no sentence-ending punctuation is a
+    # legitimate heading, even though it's followed by a blank line and
+    # then a sentence that itself ends in "。" (that "。" is on a different
+    # line, not the heading's own line).
+    body = "### 主な結果\n\n推論速度が向上した。"
+    assert lint_body(body) == []
+
+
 def _write(dirpath, name, body):
     doc = {"content": {"summaryBody": body}}
     with open(os.path.join(dirpath, name), "w", encoding="utf-8") as f:

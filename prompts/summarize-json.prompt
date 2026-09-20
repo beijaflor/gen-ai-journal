@@ -36,7 +36,7 @@ Article contents is very last of prompt.
     "language": "ja",
     "contentType": "🔬 Research & Analysis (研究・分析)",
     "oneSentenceSummary": "One sentence in Japanese",
-    "summaryBody": "Full summary body in markdown format",
+    "summaryBody": "Full summary in well-formatted Markdown (real newlines, headings/lists on their own lines)",
     "topics": ["topic1", "topic2", "topic3"],
     "scores": {
       "signal": 4,
@@ -67,7 +67,7 @@ Article contents is very last of prompt.
     "language": "en",
     "contentType": "🔬 Research & Analysis (研究・分析)",
     "oneSentenceSummary": "One sentence in Japanese",
-    "summaryBody": "Full summary body in markdown format",
+    "summaryBody": "Full summary in well-formatted Markdown (real newlines, headings/lists on their own lines)",
     "topics": ["topic1", "topic2", "topic3"],
     "scores": {
       "signal": 4,
@@ -147,7 +147,7 @@ The final output must be valid JSON matching this structure:
     "language": "[ja/en/other]",
     "contentType": "[One of 8 types from content type framework]",
     "oneSentenceSummary": "[One sentence in Japanese]",
-    "summaryBody": "[Full summary in markdown format]",
+    "summaryBody": "[Full summary in well-formatted Markdown (real newlines, headings/lists on their own lines)]",
     "topics": ["[topic1]", "[topic2]", "[topic3]"],
     "scores": {
       "signal": 0-5,
@@ -215,7 +215,7 @@ The final output must be valid JSON matching this structure:
     - Length: 10-300 characters
 
 7.  **summaryBody** (string, required):
-    - Full summary in **markdown format** (not plain text)
+    - Full summary in **well-formatted Markdown** (real newlines, headings/lists on their own lines — see "Markdown formatting rules" below), not plain text
     - Written in Japanese
     - Length: 100-1200 characters (typical: 300-800)
     - **Use markdown formatting**: Bold for tool names (**Microsoft Presidio**), headings if needed
@@ -236,6 +236,58 @@ The final output must be valid JSON matching this structure:
     - Focus on decision-making value
     - Avoid generic padding or excessive interpretation
     - For technical articles, be specific about the techniques described
+
+    **Markdown formatting rules (canonical spec):** `summaryBody` is a JSON
+    **string** value — this is the single most common source of formatting
+    bugs, so read carefully. This same spec is enforced by
+    `scripts/check_summary_format.py` and documented in full in
+    `.claude/skills/summarize-source/SKILL.md` under "summaryBody format
+    definition"; if you are ever unsure how to format the body, that section
+    is the canonical reference.
+
+    - A line break inside the string must be a **real newline character**.
+      In the JSON text you emit, that is the ordinary `\n` escape JSON
+      itself uses to represent a newline inside a string value. It must
+      **NEVER** be the literal two-character text `\n` (a backslash
+      followed by the letter "n") sitting inside your prose as if it were
+      visible text — that renders on the page as a literal "\n" instead of
+      a line break. The body must never collapse to a single line when it
+      contains a heading or a list.
+    - **Blocks** (paragraphs, headings, lists) are separated by a **blank
+      line** (a real double newline).
+    - **Headings**: `##` or `###`, each **alone on its own line**, followed
+      by a blank line before the text that follows. Never glue a heading to
+      the text immediately before it or immediately after it on the same
+      line.
+    - **Lists**: one item per line; a **blank line precedes** the list;
+      bullets use `- `, numbered items use `1. `, `2. `, …; a bold label
+      inside an item looks like `**ラベル**: 説明`.
+    - **Bold** (`**…**`) for tool/product/technical names.
+    - No leading/trailing whitespace in the body; no literal `\n` anywhere.
+
+    CORRECT:
+    ```
+    ### 検証の概要
+
+    **Claude Code** を使った大規模リファクタリングの実例を検証した記事。
+
+    - **対象**: 10万行規模のモノリポ
+    - **手法**: エージェントによる段階的な移行
+
+    既存のワークフローに組み込みたいチームは必読。
+    ```
+
+    WRONG — literal `\n` (the body contains the visible two-character
+    sequence backslash-n instead of an actual line break):
+    `"### 概要\n本文\n\n- 項目1"` ← this is literal text, not a real newline
+
+    WRONG — mashed single line (heading/list markup is present, but there is
+    no real newline anywhere, so nothing renders as structure):
+    `"### 概要 本文が続く 1. **項目**: 説明 2. **項目**: 説明"`
+
+    WRONG — glued heading (the heading runs directly into the next sentence
+    with no line break, so the heading label and the first sentence merge):
+    `"## 記事の概要PC Watch編集部が高性能な生成AIモデルを検証した記事を紹介する。"`
 
 8.  **topics** (array of strings, required):
     - Provide 1-5 key topics

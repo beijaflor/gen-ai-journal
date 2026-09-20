@@ -489,6 +489,80 @@ uv run scripts/validate_summaries.py workdesk/summaries --quiet
 - Validate after manual edits
 - CI/CD pipeline integration
 
+## summaryBody format definition
+
+**This is the single source-of-truth definition for how `summaryBody`
+Markdown must be represented inside the JSON string.** Two other places
+implement this exact spec and must be kept in sync with it:
+
+- `prompts/summarize-json.prompt` — the "Markdown formatting rules"
+  subsection under the `summaryBody` field instructions (item 7) tells the
+  generating model to follow this spec.
+- `scripts/check_summary_format.py` — the format linter (`lint_body`) that
+  enforces this spec as a QA gate (see check 4 below).
+
+If the spec ever needs to change, update this section first, then the
+prompt and the linter to match.
+
+`summaryBody` is GitHub-flavored Markdown, written in Japanese, stored as a
+JSON string value:
+
+- **Line breaks are real newline characters.** In the JSON text they appear
+  as the ordinary `\n` escape JSON itself uses to represent a newline inside
+  a string — **never** the literal two-character text `\n` (a backslash
+  followed by the letter "n") sitting inside otherwise-unescaped prose. The
+  body is never a single line when it contains any heading or list.
+- **Blocks** (paragraphs, headings, lists) are separated by a **blank
+  line** — a real double newline (`\n\n` once JSON-decoded).
+- **Headings**: `##` or `###`, each **alone on its own line**, followed by a
+  blank line before the body text that follows it. A heading is never glued
+  to the text before it (`…です。## 見出し`) or the text after it
+  (`## 見出し本文が続く。`).
+- **Lists**: each item on its **own line**; a blank line precedes the list;
+  bullets use `- `, numbered items use `1. `, `2. `, …; a bold label inside
+  an item is `**ラベル**: 説明`.
+- **Bold** (`**…**`) marks tool/product/technical names.
+- No leading/trailing whitespace in the body; no literal `\n` anywhere.
+
+### Correct example (JSON string value, decoded)
+
+```markdown
+### 検証の概要
+
+**Claude Code** を使った大規模リファクタリングの実例を検証した記事。
+
+- **対象**: 10万行規模のモノリポ
+- **手法**: エージェントによる段階的な移行
+
+既存のワークフローに組み込みたいチームは必読。
+```
+
+### Wrong — do not do these
+
+1. **Literal `\n`** — the two characters backslash-n appear as visible text
+   instead of a real newline: `"### 概要\n本文\n\n- 項目1"` where `\n` here
+   is literal text, not an actual line break.
+2. **Mashed single line** — a heading or list is present but the whole body
+   has no real newline anywhere, OR a heading/multiple list items are
+   crammed onto one physical line even though other lines elsewhere do have
+   real breaks: `"### 概要 本文が続く 1. **項目**: 説明 2. **項目**: 説明"`.
+3. **Glued heading** — a heading runs directly into the text immediately
+   before or after it with no line break, merging the heading label with a
+   sentence: `"## 記事の概要PC Watch編集部が高性能な生成AIモデルを検証した記事を紹介する。"`.
+
+### Rendering contract (for the website repo)
+
+This repo only produces the JSON; the **detail-page renderer lives in a
+separate website repo** and cannot be changed from here. That renderer MUST
+treat every real newline in `summaryBody` as Markdown block structure — a
+blank line starts a new paragraph/heading/list block — and must NOT collapse
+newlines or display them as literal text. Because a spec-compliant body
+never contains a literal `\n`, the renderer should never need any special
+handling for that escape sequence. If a published page shows a visible `\n`
+or a heading merged into body text, the JSON itself violates this spec —
+verify with `scripts/check_summary_format.py` and fix the source JSON;
+don't work around it in the renderer.
+
 ## Post-generation QA checklist (4 checks)
 
 `validate_summaries.py` only checks the **schema** (required fields, score
@@ -541,27 +615,20 @@ inaccessible (hard paywall), omit it. **Retry in a real browser before declaring
 a page blocked** — cold-session 403s are often transient.
 
 ### 4. summaryBody is not mis-formatted
-`summaryBody` must render cleanly on the detail page: **real line breaks**, no
-literal `\n` escape sequences, and no inline `###` headers or `1. **item**`
-lists mashed onto one line. Schema validation does **not** catch this, so scan
-for it explicitly and reformat any hit into intro paragraph → bullet list
-(bold labels) → closing paragraph with real newlines (preserving every fact):
+`summaryBody` must render cleanly on the detail page per the canonical
+[summaryBody format definition](#summarybody-format-definition) above: **real
+line breaks**, no literal `\n` escape sequences, no heading glued to
+adjacent text, and no `1. **item**` lists or headings mashed onto one line.
+Schema validation does **not** catch this. Run the format linter — the same
+one used as this repo's QA gate — instead of scanning manually, and
+reformat any hit into intro paragraph → bullet list (bold labels) → closing
+paragraph with real newlines (preserving every fact):
 
 ```bash
-python3 - <<'PY'
-import json, glob, re
-for fp in sorted(glob.glob("workdesk/summaries/*.json")):
-    try: b = json.load(open(fp))["content"]["summaryBody"]
-    except Exception: continue
-    literal = "\\n" in b                                            # literal backslash-n as text
-    mashed  = (("### " in b) or bool(re.search(r"\d+\.\s*\*\*", b))) and ("\n" not in b)
-    has_h3  = "### " in b                                           # ### headers don't belong inside a body
-    if literal or mashed or has_h3:
-        print(fp, {"literal_backslash_n": literal, "mashed_one_line": bool(mashed), "has_###": has_h3})
-PY
+uv run scripts/check_summary_format.py workdesk/summaries
 ```
 
-(Run the same scan against `journals/<date>/summaries/*.json` to audit an
+(Run the same check against `journals/<date>/summaries/*.json` to audit an
 already-archived cycle.)
 
 ## Error Handling
