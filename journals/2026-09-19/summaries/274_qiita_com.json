@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:05:21.613692+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「LLMじゃないAI」が来た! TypeSafe AI「Jev」はなぜ文字列生成を捨てたのか",
+    "url": "https://qiita.com/shinkai_/items/61994be44d61c76716d3",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAI出身者が開発した、自己回帰的なテキスト生成を捨てて「型安全な高速判断」に特化した新カテゴリのAIモデル「Jev」の解説。",
+    "summaryBody": "TypeSafe AIが発表した「Jev」は、従来のLLM（大規模言語モデル）のようなトークン逐次生成をあえて行わない「System One Models」という新クラスのモデルです。InstructGPTの共著者であるDiogo Almeida氏らが手掛けており、文字列生成の柔軟性を犠牲にする代わりに、並列サンプラーとRLCD（確率精度の最適化）を用いることで、ミリ秒単位の超高速レスポンスと極めて低いコストを実現しています。最大の特徴は、出力が事前に定義されたスキーマ（型）に固定される「型付き構造化出力」であり、ハルシネーションやパースエラーを構造的に排除しています。自然な対話ではなく、システム内の感情検知やリスク判定といった「高速で確実な条件分岐」としてのAI利用を再定義する試みです。",
+    "topics": [
+      "TypeSafe AI",
+      "Jev",
+      "生成AI",
+      "LLM",
+      "構造化データ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

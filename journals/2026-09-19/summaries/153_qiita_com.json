@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:34:13.758361+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "[初心者] AIコーディングが遅くなった？「読む量」を減らして速さを取り戻すIRV #ClaudeCode - Qiita",
+    "url": "https://qiita.com/ShigemoriMasato/items/b8faed66e36023085ef5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングの速度低下を、1つのIssue解決にAIが読み解くべき情報量「IRV」を管理・削減する設計手法によって解決するガイド。",
+    "summaryBody": "AI駆動開発において、プロジェクトの肥大化に伴いAIが「関係のないファイルまで読み込み、調査に時間がかかる」問題を、**IRV (Issue Reading Volume)** という概念で定義し、その対策を解説しています。IRVは1つのタスクを完結させるためにAIが読んだコードや仕様の総量を指し、これを小さく保つことがAIのパフォーマンス維持に直結します。\n\n具体的には以下の3つのテクニックを提案しています：\n1. **ルールの持ち主を決める**: 特定のロジックを管理する場所を1つに集約し、AIが迷う「知識のフラグメンテーション」を防ぐ。\n2. **部品どうしの約束（契約）を書く**: 中身を読まなくても使い方がわかるようインターフェースや事前条件を明確にする。\n3. **変更理由が同じ知識を集める**: 「知識のデフラグ」により、AIが一度に読むべき範囲を最小化する。\n\n単に読む量を減らすだけでなく、品質を維持しながら「不要な内部事情を読まずに済む状態」を設計で作る重要性を強調しています。",
+    "topics": [
+      "AI駆動開発",
+      "IRV",
+      "Claude Code",
+      "ソフトウェア設計",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

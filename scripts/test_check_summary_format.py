@@ -116,6 +116,41 @@ def test_partial_mash_heading_glued_to_bullet_flagged():
     assert "mashed-single-line" in lint_body(body)
 
 
+def test_partially_mashed_list_line_flagged():
+    # Body HAS real newlines (so the whole-body single-line check misses it),
+    # but one line crams 2+ numbered-bold list items together.
+    body = "導入の段落です。\n1. **A**: 説明。 2. **B**: 説明。 3. **C**: 説明。\n結び。"
+    assert "mashed-single-line" in lint_body(body)
+
+
+def test_header_glued_to_list_item_on_line_flagged():
+    # #219 pattern: a line-start header shares its line with a list item, while
+    # the rest of the body has real newlines. Missed by both the whole-body
+    # single-line check and the (line-start) inline-header check before hardening.
+    body = (
+        "導入の段落です。\n"
+        "### 主な特徴 1. **フル自律運営**: AIが実行する。\n"
+        "2. **統合インフラ**: ツールが完備。\n"
+        "結びの段落。"
+    )
+    assert "mashed-single-line" in lint_body(body)
+
+
+def test_clean_multiline_header_and_numbered_list_not_flagged():
+    # The correctly-formatted #219 shape: header on its own line, one numbered
+    # list item per line. Must NOT be flagged.
+    body = (
+        "導入の段落です。\n\n"
+        "### 主な特徴\n\n"
+        "1. **フル自律運営**: AIが実行する。\n"
+        "2. **階層型管理**: 間接的に管理できる。\n"
+        "3. **統合インフラ**: ツールが完備。\n\n"
+        "### 実績と展望\n\n"
+        "研究プレビューを実施中。"
+    )
+    assert lint_body(body) == []
+
+
 def test_glued_heading_forward_sentence_flagged():
     # The heading label runs directly into the first sentence with no break
     # at all, e.g. "## 記事の概要PC Watch編集部が...". The heading is at true

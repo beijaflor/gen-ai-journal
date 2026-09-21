@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T09:16:35.704855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bend 2と「バイブ・コーディング」の罠",
+    "url": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI時代のプログラミング言語「Bend 2」を例に、既存の形式検証技術の知見を無視してLLMに依存した非効率な設計に陥る「バイブ・コーディング」の危険性を論じている。",
+    "summaryBody": "著者は、AIが実装と証明を生成するプログラミング言語「Bend 2」の設計を、「バイブ・コーディング（雰囲気主導の開発）」の典型的な罠として批判しています。Bend 2は「人間が法律を書き、AIが証明を書く」という仕組みですが、単純なデモに数百行の冗長な証明コードを必要とします。一方で、既存の形式検証言語であるSPARK (Ada)を使用すれば、LLMによる膨大な証明生成を介さずとも、より簡潔かつ強力な自動検証が可能です。本記事は、十分な先行研究（形式検証など）の調査を怠り、LLMとの対話による「感覚的」な進歩に頼ることで、数十年前に確立された技術より劣る「車輪の再発明」をしてしまう現代の開発リスクを鋭く指摘しています。",
+    "topics": [
+      "Bend 2",
+      "Formal Verification (形式検証)",
+      "Vibe-coding",
+      "SPARK/Ada",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Bend 2 and the Vibe-Coding Trap | Liam Powell's Blog"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:40:06.014388+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot自身を活用したGitHub CopilotランタイムのRustへの移行",
+    "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Copilot自身のAIエージェント機能を活用し、GitHub Copilotのランタイムを80万行以上のRustコードへ移行することで、劇的なパフォーマンス向上と開発コストの削減を達成した事例。",
+    "summaryBody": "GitHubは、Copilot CLIやSDKの基盤である「Copilotエージェントランタイム」をTypeScriptからRustへ完全に移行しました。このプロジェクトの最大の特徴は、80万行を超えるプロダクションコードの大部分をAIエージェントが生成した点にあります。開発者1名がAIを指揮する体制で、数ヶ月という短期間で完了。移行により起動速度は最大21倍向上し、メモリ使用量は10分の1以下へと劇的に改善しました。プロセスは「インプレース移植」戦略で行われ、napi-rsを用いて既存のTypeScriptコードと段階的に置換。AI活用の教訓として、AIはコード生成よりも「調査」に時間を割くこと、E2Eテストが移行の正当性担保に不可欠であること、そしてAIの意思決定には依然として人間の監督が必要であることが示されています。",
+    "topics": [
+      "Rust",
+      "GitHub Copilot",
+      "AIエージェント",
+      "ソフトウェア移行",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 35,
+      "overall": 98
+    },
+    "originalTitle": "Migrating the GitHub Copilot runtime to Rust, using Copilot"
+  }
+}

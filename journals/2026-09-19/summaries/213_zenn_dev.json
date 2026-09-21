@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:00:02.203469+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バイブコーディングで GUI が壊れていく理由とその対策プロンプト",
+    "url": "https://zenn.dev/nrs/articles/9ba91aea587bf5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIに依存した「バイブコーディング」によるGUI開発の破綻を防ぐため、古典的な設計パターンをAIに強制させる「魔法のプロンプト」とその理論的背景を解説する記事。",
+    "summaryBody": "AI（ClaudeやGPT）を用いた「バイブコーディング」において、デスクトップアプリやゲームなどの複雑なGUI開発を進めると、画面間の干渉や状態の不整合が発生しやすくなります。これはAIが学習データの多いWeb開発に偏った、コンポーネントが相互に干渉し合う不安定な構造を出力しがちなためです。著者はこの問題を解決するために、以下の4つの古典的な設計パターンを組み合わせてAIに指示することを提唱しています：\n\n1. **Passive View (MVP)**: Viewに判断を持たせず、受動的に描画のみを行う。\n2. **Root階層構造**: Presenterを親子関係の木構造で組織し、最上位のRootで統括する。\n3. **Chain of Responsibility**: イベントを子から親へバブリングさせ、適切な階層で処理する。\n4. **Mediator & ステートマシン**: 仲介役（Mediator）が状態遷移（ステートマシン）に基づいて一括して判断を下す。\n\nこれらの概念を盛り込んだ特定のプロンプトをAIに与えることで、連打によるフリーズや予期せぬポップアップの消滅を防ぎ、バイブコーディングでもメンテナンス可能な堅牢なGUIアーキテクチャを実現できるとしています。",
+    "topics": [
+      "Vibe Coding",
+      "GUI設計",
+      "ソフトウェアアーキテクチャ",
+      "LLM",
+      "デザインパターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

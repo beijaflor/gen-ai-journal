@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:01:43.416351+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-5.6 Luna vs GPT-6 Astra：$1.20のモデルはコードレビューに耐えうるか？",
+    "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "格安モデルのGPT-5.6 Lunaと高性能なGPT-6 Astraをコードレビューで比較し、Lunaは低コストで多くのバグを発見するものの、セキュリティ面や精度で課題があることを示した調査。",
+    "summaryBody": "Entelligence AIによる、コードレビューにおけるLLMのコストパフォーマンスベンチマーク調査。\\n\\n### 主な比較結果\\n50件のプルリクエストを対象としたテストで、格安モデルのGPT-5.6 Luna（出力100万トークンあたり$1.20）は、高性能モデルのGPT-6 Astra（同$50）の約4%のコストで、Astraが発見したバグの75%（69件）を検出しました。PR1件あたりの平均コストはLunaが$0.0041に対し、Astraは$0.113と28倍の差があります。\\n\\n### モデルの得意・不得意\\nLunaはデータや論理エラー、並行処理のバグ検出には健闘しましたが、セキュリティ関連のバグ（認証や権限管理など）についてはAstraの19件に対し9件しか発見できませんでした。また、Lunaは「誤報（ノイズ）」が多く、指摘の約4回に1回（26%）は誤りでした。\\n\\n### 実用的インサイト\\n日常的なロジック確認には安価なモデルで十分ですが、セキュリティが重要な箇所には強力なモデルを割り当てる「モデルルーター」の活用がエンジニアリングのROI最大化に繋がります。",
+    "topics": [
+      "LLMベンチマーク",
+      "コードレビュー",
+      "AIコスト削減",
+      "GPT-6",
+      "セキュリティ分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GPT-5.6 Luna vs GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?"
+  }
+}

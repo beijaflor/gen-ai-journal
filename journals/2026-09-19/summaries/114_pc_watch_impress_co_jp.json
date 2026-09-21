@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:05:02.440918+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "名刺サイズでAIを動かせるLunar Lake搭載モジュール「LattePanda Mu Ultra」レビュー",
+    "url": "https://pc.watch.impress.co.jp/docs/column/hothot/2140325.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Intelの最新SoC「Lunar Lake」を搭載し、名刺サイズながら強力なNPUと拡張性を備えたコンピュートモジュールの実力をベンチマークとAI性能から検証。",
+    "summaryBody": "LattePanda Mu Ultraは、CPUにCore Ultra 5 226V（Lunar Lake）を採用した名刺サイズのコンピュートモジュールです。メモリをパッケージ内に統合することで小型化を実現しつつ、14フェーズの強力な電源回路を搭載しています。キャリアボードとの組み合わせにより、2.5GbEやUSB PD、OCuLinkによるeGPU接続など豊富な拡張性を備えます。\n\n実機レビューでは、Intel N100搭載の前モデルから大幅な性能向上を確認。AI性能の検証では、NPUを利用したWhisperによる高速な文字起こしや、iGPUによる9BクラスのLLM（約14tok/s）の動作が確認されました。一部のAIライブラリ（GPT-SoVITS等）におけるArc GPUのドライバ相性や高負荷時のファン騒音といった課題はあるものの、メインPCのメモリを消費せずにローカルAIを常時稼働させる「小型AIノード」としての高いポテンシャルを秘めています。",
+    "topics": [
+      "LattePanda Mu Ultra",
+      "Lunar Lake",
+      "Core Ultra 5 226V",
+      "エッジAI",
+      "OCuLink"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

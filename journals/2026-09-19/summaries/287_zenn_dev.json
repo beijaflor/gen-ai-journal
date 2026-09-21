@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:43:52.975295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "128GBのMacにおけるDeepSeek V4.1 Flashの検証と開発構成の選定",
+    "url": "https://zenn.dev/jtechjapan_pub/articles/deepseek-v41-vs-flash-next-m4max",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "128GBメモリのM4 Max搭載MacでDeepSeek V4.1 Flashを評価し、SSDストリーミングでの動作を確認した一方で、開発効率の観点からQwen3.8 Flash NextとoMLXの組み合わせを選択した理由を詳述。",
+    "summaryBody": "M4 Max (128GB RAM) 環境において、SSDストリーミング技術を用いたDwarfStarによるDeepSeek V4.1 Flashの動作検証レポート。128GBのメモリ制約下でもQ2量子化モデルを用いれば100万トークンのコンテキストで動作することを確認し、プレフィル速度（最大163 tok/s）やデコード速度（約10 tok/s）を実測。また、内蔵SSDと外付けSSDでのパフォーマンス差や、実際の開発タスク（コード生成・テスト）の完走率を評価している。最終的に、生成速度が2〜3倍速く、複数セッションの並行処理が可能なoMLXとQwen3.8 Flash Nextの組み合わせを常用構成に選定。OpenCodeのバックグラウンド実行時の標準入力の落とし穴や、llama.cppのFlash Attention設定（-fa on）の重要性など、実用的な知見も共有されている。",
+    "topics": [
+      "DeepSeek V4.1 Flash",
+      "DwarfStar",
+      "oMLX",
+      "ローカルLLM",
+      "M4 Max"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

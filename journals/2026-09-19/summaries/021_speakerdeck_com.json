@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:29:16.391143+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agent時代のリアーキテクチャ戦略と実践",
+    "url": "https://speakerdeck.com/hokaccha/ai-agent-jidai-no-senryaku-to-jissen",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI Agentが自律的に開発を進めるための「環境設計」を重視し、テストと設計によって大規模リアーキテクチャを完遂する戦略と実践事例を解説しています。",
+    "summaryBody": "AI Agentによる開発が高度化する中、大規模なリアーキテクチャをAIに主導させるための戦略をまとめたスライドです。筆者は、AIを単に操作するのではなく、AIが自走できる「レール」としての設計（Design Doc）とテスト（判定環境）を整える「Harness Engineering」の重要性を説いています。具体的事例として、AdventarのAWSからCloudflareへの移行では、新旧システムの出力を比較する「Snapshot Testing」や、ピクセル単位での「Visual Regression Testing」を駆使し、AIが自律的に修正・検証ループを回せる仕組みを構築。2週間での移行を実現しました。また、非決定的な要素（時刻、ID等）の正規化や、LLMを用いた判定（LLM as a Judge）、ランダムテストによる網羅性の担保など、AI時代特有の品質保証プラクティスが体系化されています。最終的に「人間がどこで判断を下せば最もレバレッジが効くか」を見極めることの重要性を強調しています。",
+    "topics": [
+      "AI Agent",
+      "リアーキテクチャ",
+      "回帰テスト",
+      "ソフトウェア設計",
+      "Cloudflare"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 98
+    }
+  }
+}

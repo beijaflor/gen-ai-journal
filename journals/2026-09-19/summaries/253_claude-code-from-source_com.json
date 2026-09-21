@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T08:41:41.449204+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのアーキテクチャ解析：大規模AIエージェントの内部構造とパターン",
+    "url": "https://claude-code-from-source.com/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが開発したAIエージェント「Claude Code」をソースマップから逆コンパイルし、その洗練されたループ構造、並列ツール実行、コスト削減のためのキャッシュ戦略などを詳細に分析した技術ドキュメント。",
+    "summaryBody": "本書は、npmで公開されたClaude Codeのソースマップから抽出された情報を基に、商用グレードのAIエージェントがどのように構築されているかを解明しています。主な特徴として、AsyncGeneratorを用いたストリーミング型のエージェントループ、読み取り専用ツールの投機的実行（モデル推論中の先行実行）、そして複数のエージェント間でプロンプトキャッシュのプレフィックスを共有することでコストを95%削減する「フォークエージェント」パターンが挙げられます。また、コンテキストを効率的に管理するための4段階の圧縮アルゴリズム（snip, microcompact, collapse, autocompact）や、DBを使わずにSonnetのサイドクエリで実現するメモリ管理、240ms以内の起動を実現する並列I/O、セキュリティを担保する2フェーズのスキルロードなど、パフォーマンスと堅牢性に特化した設計思想が詳細に記述されています。AIエージェントの実装における高度なデザインパターンを学ぶための極めて価値の高いリソースです。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "LLMアーキテクチャ",
+      "プロンプトキャッシュ",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Claude Code from Source — Architecture, Patterns & Internals"
+  }
+}

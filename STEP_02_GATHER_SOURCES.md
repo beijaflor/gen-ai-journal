@@ -103,9 +103,29 @@ You can sync your sources to GitHub for progress tracking at any time:
 
 For detailed sync workflow, see [GITHUB_SYNC.md](GITHUB_SYNC.md).
 
+## Paywall Review Gate (after summaries)
+
+Paywalled / anti-bot sources are handled by the `summarize-source` skill's
+fallback chain — but those workarounds are **editorial decisions** (a Hacker News
+swap summarizes a discussion, not the article; a paywalled link walls the reader),
+so they must not be resolved silently. After summaries are generated, list every
+paywalled / proxy-summarized source and let a human decide each one:
+
+```bash
+# Generate the review sheet (buckets: HN-proxied / unfetchable / paywall-domain)
+uv run scripts/list_paywalled_sources.py --out workdesk/paywall_review.md
+```
+
+Then route `workdesk/paywall_review.md` through the **human-review-gate** skill:
+AI drafts the list → human marks `keep` / `drop` / `full-text` / `annotate` per
+source → AI applies the decisions. See the `summarize-source` skill's
+"Post-generation QA gates" section for details. Do NOT auto-resolve these.
+
 ## Next Steps
 
 Once you have added sufficient links (typically 30-50 for a weekly journal):
 - Review and categorize links in `workdesk/sources.md`
+- Run the format lint (`uv run scripts/check_summary_format.py workdesk/summaries`)
+  and the **Paywall Review Gate** above
 - Sync to GitHub issue for progress tracking
 - Continue to [STEP_03_PREPARE_JOURNAL.md](STEP_03_PREPARE_JOURNAL.md) for journal preparation

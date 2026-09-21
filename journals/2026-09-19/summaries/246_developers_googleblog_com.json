@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T08:12:49.382215+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クライアントSDK生成をオープンにすべき理由：GoogleがSpeakeasyと提携しツールをオープンソース化",
+    "url": "https://developers.googleblog.com/why-client-sdk-generation-belongs-in-the-open/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、プロプライエタリなツールの突然の終了リスクを回避し、API開発のエコシステムを強化するため、Speakeasy社と協力して同社のSDK生成スイートをオープンソース化した。",
+    "summaryBody": "Google Developers Blogは、OpenAPI仕様から高品質なSDKを生成するためのツールスイート「Speakeasy」のオープンソース化を発表しました。かつて利用していた生成ツールの買収・終了に伴うプラットフォームリスクを背景に、GoogleはSDK生成ツールのオープン化を決定。SpeakeasyはPython、TypeScript、Goなど7言語のSDK生成に加え、CLI生成やMCP（Model Context Protocol）サーバー生成にも対応しています。DeepMindの開発フローでは、型安全性と決定論を確保するためにこの生成器をコアに据え、カスタム部分にのみAIエージェントを組み合わせることで、従来数名で行っていたSDK保守を1名のエンジニアで完結させています。AGPLv3ライセンスで公開され、生成されたコードのライセンスは開発者が自由に選択可能です。",
+    "topics": [
+      "SDK生成",
+      "OpenAPI",
+      "オープンソース",
+      "Google Cloud",
+      "Speakeasy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Why client SDK generation belongs in the open"
+  }
+}

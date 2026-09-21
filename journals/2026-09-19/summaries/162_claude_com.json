@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:36:53.809494+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェンティック・コーディングがCIを圧迫：Anthropicにおけるテスト影響分析のスケーリング手法",
+    "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによるコード生成の爆発的増加に伴うCI負荷の増大に対し、Anthropicがテスト選択サービスをステートレスな分散アーキテクチャへと再設計し、25倍の負荷に対応した事例を紹介しています。",
+    "summaryBody": "Anthropicでは、Claudeがコードの80%を執筆し、エンジニアの出荷量が従来の8倍に増加したことで、CIジョブが6ヶ月で25倍に急増しました。当初のテスト影響分析サービスは単一プロセス（シングルトン）で動作しており、リスナーの遅延やメモリ不足により限界に達しました。同社は、マシンの増強やパッケージ単位のシャーディングといった一時的な対策を経て、最終的にサービスを再設計しました。具体的には、インメモリデータストアを導入して状態（State）をプロセスから切り離し、リスナーをステートレス化することで水平スケーラビリティを確保しました。この経験から得られた教訓として、AIエージェントの普及に伴う「指数関数的な負荷増加」を前提としたアーキテクチャ設計、AIによるサービスの監視、そしてプロセスのステートレス維持の重要性を強調しています。",
+    "topics": [
+      "AIエージェント",
+      "CI/CD",
+      "スケーラビリティ",
+      "Anthropic",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic"
+  }
+}

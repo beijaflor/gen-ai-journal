@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:43:37.807226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "coding agentをherdrでどんな風に運用してるか",
+    "url": "https://note.com/taki4416/n/na566c5e5f4c3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI IDE版tmuxともいえるツール「herdr」を軸に、タスク起票から実装用サーバの切り分け、モバイルからの操作まで、AIコーディングエージェントを自作環境で効率的に運用するための手法が詳説されています。",
+    "summaryBody": "エンジニアのimpactaky氏が、AIコーディングエージェントの運用基盤としての「herdr」の活用方法を解説しています。主なフローは、herdrのスペース機能をタスク管理（Kanban代わり）として使い、エージェントに直接タスクを起票させることから始まります。議論には「grill-with-docs」を用い、全プロジェクトの知識を持つリポジトリから実装計画を策定。実装セッションは視認性を保つために別サーバに切り出し、スマホからは「moshi」を通じてチャット形式で操作可能な環境を構築しています。また、記事後半では同一ホスト内でのリクエスト/レスポンス規約である「Agent Exchange」の具体的な技術仕様やsystemdによるLauncher運用についても触れられており、ローカル環境での高度なエージェント制御の実装例として非常に価値が高い内容です。",
+    "topics": [
+      "herdr",
+      "AI Coding Agent",
+      "LLM Ops",
+      "tmux",
+      "Terminal Interface"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

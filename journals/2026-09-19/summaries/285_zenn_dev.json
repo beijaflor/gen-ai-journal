@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:39:04.022937+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI ネイティブなデータ分析基盤を作った話",
+    "url": "https://zenn.dev/pksha/articles/5a1dc6470019d6",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "PKSHA Technology が開発した、dbt と Lightdash を基盤に AI クライアント (MCP) からの自然言語クエリを可能にした次世代データ分析基盤「Laplace」の構築事例。",
+    "summaryBody": "PKSHA Technology が、データ量の増大に伴う分析の民主化とガバナンスの両立を目指して構築したデータ分析基盤「Laplace」の全容が紹介されています。主な特徴は以下の通りです。1. **セマンティックレイヤーの統合**: dbt の schema.yml を唯一の定義源とし、Lightdash を用いて指標定義を一元化することで、AI が正しくデータを解釈できる土台を構築。2. **AI ネイティブな分析環境**: Model Context Protocol (MCP) サーバを自前で用意し、LLM から自然言語で定義済み指標を呼び出せる仕組みを実現。3. **高度なガバナンス**: PII（個人情報）を専用テーブルに隔離し、期限付きの属性ベース権限管理を BI 層で実装。4. **LLM 駆動の開発プロセス**: 1 人月という短期間で、Claude Code を最大限活用して 500 本以上の dbt モデルを含む基盤を構築。また、運用初期に発生した BigQuery CDC の高額課金問題とその解決策（max_staleness の調整や特定列の除外）についても詳細に共有されており、実務に即した知見が豊富です。",
+    "topics": [
+      "BigQuery",
+      "dbt",
+      "Lightdash",
+      "Model Context Protocol",
+      "データエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

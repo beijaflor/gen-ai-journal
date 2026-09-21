@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T12:57:52.185087+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AppleのSiri、ClaudeやChatGPTへの置き換えが可能に：iOS 27のコードから判明",
+    "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "iOS 27とmacOS Golden Gateの内部コードから、SiriのバックエンドをClaudeやChatGPTなどのサードパーティ製AIモデルへ完全に置き換える新機能の存在が明らかになりました。",
+    "summaryBody": "iOS 27およびmacOS Golden Gateの内部フレームワーク内に、Siriのアーキテクチャを外部AIモデルと深く統合するための2つの新しいプロトコルが発見されました。\\n\\n1つ目の「Model Delegation」は、ClaudeなどのモデルをSiriのエクステンションとして動作させる仕組みです。デモンストレーションでは、Claudeがユーザーの自然言語によるリマインダー作成依頼を解釈し、システム操作が必要な段階でタスクをSiriに差し戻して実行する連携が確認されました。\\n\\n2つ目の「Inference Providing」は、Apple独自のサーバーサイドSiriモデルそのものをGPT-5.6などの外部モデルに完全に置換する強力なプロトコルです。これにより、外部AIがAppleのネイティブなプランナープロンプトやツール定義を直接受け取り、連絡先へのメッセージ送信やメールの要約といった高度なシステム操作をSiriの音声・UIを介して実行可能になります。\\n\\nこの背景には、欧州のデジタル市場法（DMA）が求めるサードパーティへの公平なアクセス権が影響していると見られており、AppleのエコシステムにおけるAIの自由度が大きく前進する可能性があります。",
+    "topics": [
+      "Siri",
+      "iOS 27",
+      "Apple Intelligence",
+      "ChatGPT",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows - MacRumors"
+  }
+}

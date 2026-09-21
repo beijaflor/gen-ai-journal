@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:20:02.171159+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "高速な判断に特化したAI - TypeSafe「Jev」 と System One Model",
+    "url": "https://note.com/npaka/n/n6f8dd30a5fa4",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeSafe AIが発表した「Jev」は、文章生成ではなく「型付きの判断」を高速（70〜500ms）に出力することに特化した、System One（直感的・高速）思考型のAIモデルです。",
+    "summaryBody": "TypeSafe AIが発表した「Jev」は、ダニエル・カーネマンの『ファスト＆スロー』における「System 1（速い思考）」を体現する新しいAIモデルです。従来のLLMがトークンを逐次生成して文章を作るのに対し、Jevは「非構造化された状態を入力し、型付きの確率的な判断を並列出力する」ことに特化しています。\n\n主な特徴は以下の通りです：\n- **圧倒的な速度とコスト効率**: 応答時間は70〜500ms。特定のワークフローではLLM比で最大約200倍高速、約440倍低コストを実現。\n- **並列サンプリング**: 複数の判断項目（例：敵の有無、攻撃の是非）を文章として生成するのではなく、同時に計算して出力します。\n- **リアルタイム応用**: 秒間10回の判断（10Hz）でDOOMを操作するデモが公開されており、ロボットのタスク判断やゲームAIへの適用が期待されます。\n- **スマートなif文**: 自由な回答を生成しないため、形式上のハルシネーション（構文エラー）が起きません。文章生成はLLM、高速な条件分岐はJevという使い分けが想定されています。",
+    "topics": [
+      "TypeSafe AI",
+      "Jev",
+      "System One Model",
+      "リアルタイムAI",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

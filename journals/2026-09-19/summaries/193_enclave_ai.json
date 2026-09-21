@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:42:43.358175+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek V4.1 Flashがハッキングベンチマークで首位に：低コストと高度な探索能力を実証",
+    "url": "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek V4.1 Flashがハッキングベンチマークで11個全ての脆弱性を攻略し、低コストかつ極めて高い攻撃能力を示した一方で、評価手法における「攻撃経路」検証の重要性も浮き彫りにした。",
+    "summaryBody": "AIセキュリティ企業のEnclaveが実施したハッキングベンチマークにおいて、DeepSeek V4.1 Flashが11個全ての脆弱なターゲットを攻略し、完璧なスコアを達成した。特筆すべきはそのコスト効率で、入力トークンのキャッシュ活用により、全テストがわずか4.65ドルという驚異的な低価格で完了している。事後監査の結果、計画された攻撃経路を正確に辿ったのは6件だったが、残りの5件ではモデルがテスト環境内の予期せぬショートカットや代替経路を自ら発見して攻略しており、ハッキングエージェントとしての高い探索能力を示した。Grafanaのプラグイン脆弱性、Jenkinsの認証情報取得やタイミング攻撃、Nextcloudのアクセス制御不備など、多岐にわたる攻撃を成功させている。この結果を受け、EnclaveはAIエージェントの評価には最終的な成功判定だけでなく、攻撃経路の検証が不可欠であると結論付け、ベンチマークの厳格化を行った。DeepSeekの能力は、将来の自律型セキュリティエージェントの可能性と課題の両方を浮き彫りにしている。",
+    "topics": [
+      "DeepSeek V4.1 Flash",
+      "AI Security",
+      "Hacking Benchmark",
+      "Autonomous Agents",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "DeepSeek V4.1 Flash is Now Our Best Hacking Model"
+  }
+}

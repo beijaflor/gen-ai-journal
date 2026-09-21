@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:43:21.150256+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevlike: 動的に変化する選択肢から1つを選ぶ、高速なシングルパス・スコアリングモデル",
+    "url": "https://github.com/vinnylarouge/jevlike",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMのような逐次生成ではなく、動的に変わる選択肢リストに対して一度の推論でスコアを算出し、高速に選択・分類を行うための学習フレームワーク。",
+    "summaryBody": "Jevlikeは、TypeSafe社の商用モデル「Jev」の設計を参考に、独立して開発された小規模モデル学習用ツールキットです。最大の特徴は、文脈とN個のテキスト選択肢を入力し、1回のパス（シングルパス）で各選択肢の確率を算出する点にあります。従来の自動回帰的なデコーダー（1語ずつ生成する方式）に比べ、推論速度を約100倍高速化できる可能性を秘めています。アーキテクチャは、各選択肢をクエリとして文脈へのアテンションを計算し、共有ドット積でスコアリングを行う仕組みです。独自のバイトエンコーダーのほか、Qwenなどの事前学習済みモデルをエンコーダーとして活用することも可能です。用途はテキスト分類にとどまらず、Doomやチェスの操作（画像パッチをボタンの選択肢として扱う）といった、動的な意思決定タスクへの応用も実証されています。",
+    "topics": [
+      "機械学習",
+      "NLP",
+      "推論高速化",
+      "分類モデル",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "vinnylarouge/jevlike: Train a small model that chooses among a changing list of text options."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T12:46:01.489303+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeSafeのJevを正しく驚く、それってLLMでできませんか？",
+    "url": "https://zenn.dev/nwn/articles/824026c76116e0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの構造化データ出力特化型モデル「Jev」に対し、既存LLMのLogit抽出やバッチ推論を用いた高速化手法でどこまで肉薄できるかを実証・考察した記事です。",
+    "summaryBody": "本記事は、テキスト生成ではなく判断と確率を高速に返すTypeSafe AIの新モデル「Jev」の独自性を、既存LLMの最適化手法と比較検証しています。著者は、Jevの高速なJSON出力のデモに対し、LLMで回答候補のLogit（1トークン目）のみを抽出する手法とKV Cacheの再利用、バッチ推論を組み合わせることで、Gemma 3 270Mを用いて通常のJSON出力比77倍の高速化を達成できることを示しました。また、リアルタイム性が求められるゲーム（マリオ）のプレイ環境においても、JevとLlama 3.1 8BなどのLLMを比較。Jevが最良のスコアを記録したものの、API経由のLLMも肉薄する結果となっています。最後に、Jevの提唱する「正しく較正された確率（Calibrated Probability）」という強みについても触れ、サイコロの出目予測などの具体例を引用しながら、専用モデルとしての価値と現状の課題、LLMの最適化との境界線を鋭く考察しています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "推論高速化",
+      "JSON出力",
+      "確率較正"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

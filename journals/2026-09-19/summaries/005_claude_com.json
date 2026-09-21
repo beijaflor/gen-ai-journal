@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:25:09.903510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeオンコール：Claude TagがAnthropicのCI/CD障害の初動対応を担う方法",
+    "url": "https://claude.com/blog/ai-ci-cd-on-call",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、AIエージェント「Claude Tag」をCI/CDのオンコールに導入し、障害の検知からトリアージ、修正、報告までを自動化するワークフローを構築しました。",
+    "summaryBody": "AnthropicのCIチームは、CI/CDの障害発生時に24時間体制で稼働する「Claude Tag」を用いたAIオンコール体制を構築しました。このシステムは、単なる通知ツールではなく、以下のプロセスを自律的かつ協調的に実行します。\n\n- **高度な検知とフィルタリング**: 大量のアラートを分析し、即時対応が必要なものと翌朝で良いものを判断してアラート疲れを軽減します。\n- **証拠に基づくトリアージ**: MCP（Model Context Protocol）を介してGrafana、Datadog、GitHub、Kubernetes等の外部ツールと連携し、障害発生から平均14分で根本原因の仮説を含む状況報告書（SITREP）を作成します。\n- **自動解決とPR作成**: Claude Codeを利用して機能フラグの切り替えやバグ修正PRの作成を自律的に行い、カナリアリリースの監視も担当します。\n- **知見の蓄積と共有**: 過去の障害履歴をmarkdownファイルとして学習し続け、調査の精度を高めるとともに、人間向けの週次引き継ぎレポートも自動生成します。\n\nこの取り組みにより、エンジニアは繰り返される単純な障害対応から解放され、より重要なアーキテクチャ設計に集中できる環境を実現しています。",
+    "topics": [
+      "Claude Tag",
+      "CI/CD",
+      "AI Agents",
+      "MCP Connectors",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Claude on call: How Claude Tag serves as Anthropic’s first responder for CI/CD failures"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:29:40.855073+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「覚え直さなくていい」を最優先にしたAI導入 ― アラート一次調査の自動化",
+    "url": "https://tech.asken.inc/entry/2026/09/11/170000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "既存のSlackワークフローを維持したままAWS DevOps Agentでアラート一次調査を自動化し、情報共有のリードタイムを約91.6%削減した事例紹介。",
+    "summaryBody": "株式会社askenが、システム監視におけるアラートの一次調査をAIで自動化した取り組みの記録です。最大の特徴は「AIの精度」よりも「ユーザー体験（既存の運用フローを変えないこと）」を最優先した設計にあります。Slackの特定スタンプをトリガーにAIがログやトレースを分析し、概要・原因・推奨対処を要約してスレッドに投稿、Notionへ自動記録する仕組みを構築しました。結果として、調査結果が共有されるまでの時間が中央値で156.5分から13.2分へと劇的に短縮。AIはあくまで判断材料を揃える役割に徹し、最終判断は人間が行うという責任境界を明確にしています。",
+    "topics": [
+      "AI自動化",
+      "SRE",
+      "AWS DevOps Agent",
+      "Slackワークフロー",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

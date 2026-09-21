@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T09:16:08.256201+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザ完結のローカルLLMによる意思決定実験プロジェクト「SemIf」",
+    "url": "https://openjev.com/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ブラウザ上で動作するローカルLLMを用いて、ロジットの直接読み取りとテキスト生成による意思決定の速度・精度を比較検証できる実験的なツール。",
+    "summaryBody": "SemIf（旧OpenJev）は、ブラウザ内のGPU上でローカルLLMを実行し、構造化された意思決定を行うための研究プロジェクトです。WllamaとGGUF形式の重みを利用し、QwenやMiniCPMといったオープンモデルをサーバーなしで実行します。最大の特徴は、モデルの出力ロジットから選択肢の確率を直接計算する「Direct readout」と、JSON形式で回答を生成させる「Generation」の2つの手法を同一モデルで比較できる点にあります。デコードを伴わない直接読み取りと、トークン生成による推論のパフォーマンス差をユーザーの環境で実測可能です。データはブラウザ内に留まるため、高いプライバシーを維持したまま、エッジAIによる『意味的な条件分岐（Semantic ifs）』の可能性を探ることができます。",
+    "topics": [
+      "Local LLM",
+      "Browser AI",
+      "WebAssembly",
+      "Wllama",
+      "Structured Outputs"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "SemIf — local decisions in your browser"
+  }
+}

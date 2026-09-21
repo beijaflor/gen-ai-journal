@@ -435,6 +435,33 @@ The validator API:
 
 The rules enforced (extracted from the original inline checks): required top-level/metadata/content fields, version `1.0`, dimension scores 0-5, composite scores 0-100, topics array length 1-5, and the title / oneSentenceSummary / summaryBody length bounds.
 
+## Post-generation QA gates
+
+After a batch (or single-URL) generation, run these two review gates before treating STEP_02 as complete. Unlike the schema validator above (a hard, mechanical gate), these are **review** gates: the first is a lint you fix, the second routes *editorial* decisions to a human.
+
+### 1. Format lint (rendering)
+
+`validate_summary.py` checks the JSON schema but NOT whether `summaryBody` renders cleanly on the detail page. Run the format linter and fix any flagged body (reformat mashed/escaped-newline bodies into real newlines — see its docstring for the three defects):
+
+```bash
+uv run scripts/check_summary_format.py workdesk/summaries
+```
+
+### 2. Paywall review gate — human decides (do NOT auto-resolve)
+
+Paywall / anti-bot workarounds are **editorial, not mechanical**: a Step-3 Hacker News swap summarizes a *discussion thread*, not the article, and a paywalled-domain link walls the reader out. The automatic fallback chain must NOT decide these silently. After generation, list every paywalled / proxy-summarized source and route it through the **`human-review-gate`** skill so a human decides each one:
+
+```bash
+uv run scripts/list_paywalled_sources.py --out workdesk/paywall_review.md
+```
+
+The sheet groups sources into three buckets:
+- **A. HN-proxied** — `content.url` is a Hacker News thread; the summary describes the discussion, not the article (Step-3 swaps).
+- **B. Unfetchable** — fail-closed `BLOCKED:` stub or dead link (no content, no proxy).
+- **C. Paywalled-domain link** — a real summary was produced but the reader-facing link is gated; `⚠` marks a body that may actually be a block-page summary (verify it).
+
+For each source the human marks a decision: `keep` (accept the HN proxy / gated link as-is) · `drop` (remove the source + summary, leave an ID gap) · `full-text` (human supplies the real article text → re-summarize via Step 5 `--content`) · `annotate` (keep but note the paywall for readers). Then invoke the `human-review-gate` skill on `workdesk/paywall_review.md`: **AI drafts the list → human reviews & marks decisions → AI applies them.** Only after the gate is approved is STEP_02 done.
+
 ## JSON Validation
 
 When using JSON format (default), summaries are automatically validated against the v1.0 schema:

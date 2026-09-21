@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T23:02:25.399321+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "30分でAIエージェントを構築：複数エージェントで共有するナレッジベースの作り方",
+    "url": "https://www.oreilly.com/radar/zero-to-agent-in-30-minutes-build-a-shared-knowledge-base-for-all-your-agents-with-sajal-sharma/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエンジニアのSajal Sharma氏が、複数のAIエージェント間でコンテキストやタスクを同期させるための「共有脳（ナレッジベース）」の構築手法を解説しています。",
+    "summaryBody": "AIエージェント（Claude Code、OpenClaw、Hermesなど）を併用する際、ツール間で情報が分断される課題を解決するため、全てのツールが参照できる「共有ナレッジベース」の構築が提案されています。主な手法として、1. ワークスペースの構造を記した「AGENTS.md」の作成、2. トークン節約のためのメモの階層的な要約、3. ツール固有設定（CLAUDE.md等）から共有ファイルへのリンク、4. 繰り返し手順の「スキル」化、5. Git等による同期と書き込み前の一貫性チェックが挙げられています。この「共有脳」パターンは、LangChainのOpenWikiやGarry Tan氏のGBrainといった最新プロジェクトとも共通する、エージェント運用の重要なトレンドです。",
+    "topics": [
+      "AIエージェント",
+      "ナレッジマネジメント",
+      "Claude Code",
+      "LLM",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Zero to Agent in 30 Minutes: Build a Shared Knowledge Base for All Your Agents with Sajal Sharma"
+  }
+}

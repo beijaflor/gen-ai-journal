@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:45:42.333797+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PrismMLが「Bonsai 2 27B」を発表：9倍の圧縮率で性能劣化を最小限に抑えた27Bモデル",
+    "url": "https://prismml.com/news/bonsai-2-27b",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "27Bパラメータのモデルをわずか5.9GBに圧縮しながら、フル精度モデルの98.2%の性能を維持し、ローカル環境での高度なエージェント実行を可能にする三値（Ternary）モデルが公開されました。",
+    "summaryBody": "PrismMLは、Qwen3.8 27Bをベースとした新しい量子化モデル「Ternary Bonsai 2 27B」をリリースしました。主な特徴は以下の通りです：\n\n- **三値量子化による極限の圧縮**: 重みを{-1, 0, +1}の3値（実質1.76ビット）で表現することで、モデルサイズを5.9GBまで削減しました。これは元のモデルの約9分の1のサイズです。\n- **「ほぼロスレス」な性能維持**: 推論、コーディング、マルチモーダル、エージェント機能を含むベンチマークで、フル精度版の98.2%という極めて高い性能維持率を達成しています。\n- **卓越した実行効率**: NVIDIA RTX 5090で143 tokens/s、M5 Maxで46.8 tokens/sの高速推論を実現。RTX 4090での電力効率は、8Bモデルをフル精度で動かすよりも40%優れています。\n- **実用的なローカルAI**: 262Kのコンテキストウィンドウ、画像・テキストのマルチモーダル対応、Apache 2.0ライセンスでの公開により、プライベートな環境での高度な自動化エージェント運用を促進します。\n\n独自の低ビットカーネル（CUDA/MLX）により、ワークステーションやコンシューマ向けデバイスで27Bクラスの知能を実用的な速度で動作させることが可能になりました。",
+    "topics": [
+      "LLM",
+      "Quantization",
+      "Edge AI",
+      "Bonsai 2 27B",
+      "PrismML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 95
+    },
+    "originalTitle": "PrismML — Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint"
+  }
+}

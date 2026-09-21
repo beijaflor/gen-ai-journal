@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:16:33.683555+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SKILL.md を良くする技術。AIのブレをなくす。",
+    "url": "https://zenn.dev/knowledgesense/articles/9adf1e9b17ffd6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの動作が不安定になる「一貫性のギャップ」を解消するため、スキルの改善プロセス自体を自動化・定型化する新手法「Self-Evolving Agents」を解説し、その有効性を自作ツールで検証しています。",
+    "summaryBody": "本記事では、IBM Researchが2026年9月に提案した最新のAIエージェント改善手法「Self-Evolving Agents」を紹介しています。現在のLLMエージェントは、平均的な成功率は高くても同じタスクを連続で成功させる「一貫性」に欠けるという課題（Consistency Gap）を抱えています。この手法は、AI自身に実行ステップごとの「回答のブレ」を測定させ、失敗しそうな箇所を先回りして検知・補強するためのガイドラインを自動生成します。著者はこの概念を「agent-repair」として独自実装し、GitHub APIのデータ取得漏れ修正やPowerShellスクリプトのデバッグにおいて、初期の修正漏れまで検知・再修正できる高い実用性を確認しました。エージェントの「スキルの改善」自体に再現性を持たせるというメタ的なアプローチが、実務運用において極めて重要であることを示唆しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Self-Evolving Agents",
+      "一貫性のギャップ",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:38:21.095078+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jev 同士に五目並べで対戦させた",
+    "url": "https://zenn.dev/mizchi/articles/jev-plays-gomoku",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "構造化出力に特化した高速推論モデル「Jev」同士を五目並べで対戦させ、その応答速度とプログラムへの組み込みやすさを実証・考察したレポート。",
+    "summaryBody": "Typesafe AIが開発した「Jev」モデルの特性を評価するため、五目並べ（Gomoku）を題材にした自律対戦実験の記録です。Jevは一般的なチャットAIとは異なり、出力を「Yes/No」「選択肢からの抽出」「スコア付け」の3つに限定することで極めて高い速度と精度を実現するモデルです。本記事では、盤面の状態と有効な候補手を構造化データとしてJevに渡し、次の一手を選択させる実装を公開しています。実測では1手あたり平均500ms（ネットワーク遅延込み）で推移し、25手で決着がつくまで計13秒という高速な動作を確認。著者は、既存のLLMを置き換えるのではなく、高速な意思決定が必要なワークフローを補完するコンポーネントとして、プログラマ好みの実用的なツールになると評しています。",
+    "topics": [
+      "jev",
+      "LLM",
+      "AIエージェント",
+      "パフォーマンス計測",
+      "Typesafe AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 85
+    }
+  }
+}

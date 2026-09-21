@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T10:22:13.430260+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1年半かけて育ててきたAI開発フロー",
+    "url": "https://zenn.dev/sprix_it/articles/db685b8fd6bffe",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、人間が介在する箇所を仕様合意と最終確認に絞ることで、AI主体で自走・完結させる高度な開発ワークフローの構築手法。",
+    "summaryBody": "Claude Codeを用いたAI駆動開発を1年半継続した著者が、AIの自律性を高めて開発スピードを最大化させるためのワークフローを解説しています。以前の「ステップごとに人間が介在する」手法から、人間の役割を「仕様の合意」と「最終的なPR確認」の2点に集約し、実装ループをAIに完全に任せる体制へ進化させました。メインエージェントが全体の指揮を執り、工程ごとにコンテキストを分離したサブエージェント（要件分析、テスト設計、レビュー等）を呼び出す設計により、コンテキスト汚染を防ぎつつ精度の高いアウトプットを実現しています。AIが迷わず判断できるよう、受入条件を明記した「使い捨ての仕様ドキュメント」を基準とし、どのような場合に人間を呼び戻して停止すべきかの条件を機械的に定義することで、安全性と速度を両立させています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "AIエージェント",
+      "LLM",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

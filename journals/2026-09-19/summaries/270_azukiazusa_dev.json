@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T09:48:02.325496+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeSafe AI の Jev を TypeScript で試してみた",
+    "url": "https://azukiazusa.dev/blog/jev-support-routing/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TypeSafe AIが提供する「System One」モデルであるJevをTypeScriptから利用し、顧客問い合わせを構造化データとして評価・分類する実装方法を解説しています。",
+    "summaryBody": "TypeSafe AIの「Jev」は、入力されたコンテキストに対し「選択肢の判定（Choice）」「真偽の確率（Noul）」「段階評価（Score）」という、ソフトウェア制御に適した構造化された回答を返すモデルです。本記事では、TypeScript SDKを用いて問い合わせ文から「担当部署」「緊急性」「不満の程度」を抽出する具体的なコード例を紹介しています。特に、LLMの生成結果を解析する従来の手法とは異なり、モデルが持つ「確信度（confidence）」を閾値として利用することで、判断が難しいケースを自動で人間による確認（手動レビュー）へ振り分けるなど、実運用に即したロジックの構築方法が詳しく解説されています。",
+    "topics": [
+      "TypeSafe AI",
+      "Jev",
+      "TypeScript",
+      "LLM",
+      "構造化データ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

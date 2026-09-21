@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:31:18.495385+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "次世代の「System One」モデルとJevの発表：TypeSafe AIによる高速・構造化意思決定AI",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeSafe AIは、ソフトウェア自動化に特化した超高速かつ型安全な構造化意思決定モデル「Jev」と、その基盤となるSystem One Modelアーキテクチャを発表しました。",
+    "summaryBody": "TypeSafe AI（元OpenAIのリサーチリーダーDiogo Almeida氏が設立）は、従来のチャット中心のLLMとは一線を画す、新しいクラスのフロンティアモデル「System One Model」の第一弾「Jev」をリリースしました。Jevは、テキスト（文字列）の生成をあえて放棄することで、構造化されたデータ（型付きの意思決定）の出力に特化しています。\n\n主な特徴は以下の通りです：\n1. **圧倒的なパフォーマンス**: 従来のLLMと比較して40倍から200倍高速（70ms〜500msの応答速度）であり、出力トークンコストは実質無料です。\n2. **型安全と信頼性**: 並列サンプラーを採用し、数学的に型エラーやハルシネーションが発生しない設計となっています。また、すべての出力に較正された「確信度（確率）」が付与されます。\n3. **新しい学習手法**: Reinforcement Learning for Calibrated Decisions (RLCD) と呼ばれる独自の学習アルゴリズムを採用し、認識論的に誠実な確率出力を最適化しています。\n\nJevは、スマートな条件分岐（If-statements）、データ分類、リアルタイムアプリケーション、LLMの出力検証（ガードレール）など、人間の介在を必要としない「ソフトウェアによる自動化」に最適なツールとして設計されています。",
+    "topics": [
+      "TypeSafe AI",
+      "Jev",
+      "System One Models",
+      "AI自動化",
+      "構造化出力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing System One Models & Jev"
+  }
+}

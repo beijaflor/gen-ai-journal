@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:25:24.906817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに丸投げしたら1日でできた。ミニPCで作る「サブスク不要」のAI監視カメラ",
+    "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2140075.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ClaudeなどのAIツールを活用し、ミニPCとローカルLLMを組み合わせてサブスク料金不要かつプライバシー保護に優れた自作AI監視カメラを構築するプロジェクトの解説。",
+    "summaryBody": "この記事では、市販のネットワークカメラとミニPCを使い、クラウドサービスに依存しない「ローカル完結型」のAI監視カメラシステムを構築するプロセスを詳説しています。開発の核心は、ClaudeやCodexといったAIコーディング支援ツールを最大限に活用し、複雑な設計・実装をわずか1日で完了させた点にあります。\n\n**主なシステム構成と技術スタック:**\n- **ハードウェア**: Core Ultra 5 125U搭載のミニPC（GMKtec NucBox K15）とTP-Link製ネットワークカメラを使用。推論加速のためにeGPUの検証も実施。\n- **ソフトウェア**: Docker Desktop上で、物体検知の「Frigate」、スマートホームハブの「Home Assistant」、AI推論基盤の「Ollama」を連携。\n- **AIモデル**: 視覚言語モデル（VLM）である「Qwen2-VL 4B Instruct」を採用し、検知した映像の内容を文章で説明・通知する機能を実装。\n\n**検証結果と考察:**\nCPU、内蔵GPU（iGPU）、NPU、eGPUでの処理速度と消費電力を比較。eGPUは最高速ですが、常時稼働のコストとバランスを考慮すると、ミニPCの内蔵GPUを利用するのが最も効率的であると結論づけています。このシステムにより、プライバシーを確保しつつ、独自の検知条件や通知内容を自由にカスタマイズできる自前環境の利便性を提示しています。",
+    "topics": [
+      "AI監視カメラ",
+      "ミニPC",
+      "ローカルLLM",
+      "Home Assistant",
+      "VLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

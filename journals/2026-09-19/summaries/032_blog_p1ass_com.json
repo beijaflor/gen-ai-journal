@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:32:45.374369+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが書いた日本語に頻出する単語を指摘するtextlintプリセットを作った",
+    "url": "https://blog.p1ass.com/posts/textlint-rule-preset-ai-words-ja/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI生成テキスト特有の不自然な単語や言い回しを形態素解析で検出し、技術文書の品質を向上させるtextlintプリセット「textlint-rule-preset-ai-words-ja」が公開されました。",
+    "summaryBody": "AIが書いた日本語に現れやすい、特有の語彙や言い回し（「入口」「道具」「踏み込む」など）を自動検出するtextlintプリセットの紹介記事です。\\n- **決定論的な検知**: プロンプトでの制御が難しい「AIらしい表現」を、textlintを用いて確実に特定します。\\n- **形態素解析の活用**: `kuromojin`を使用し、単語の基本形を判定することで「効く」「効かない」といった活用形もまとめて検出可能です。\\n- **カスタマイズ性**: 特定の単語の除外（allows）や、独自の辞書追加、特定範囲の無効化にも対応しています。\\n- **実用的な連携**: Claude Codeのhooks（PostToolUse）を利用し、AIがファイルを編集した直後に自動でチェックをかけ、再修正を促すワークフローを構築できます。\\n\\n辞書の選定には、Qiitaの統計データに基づいた分析も取り入れられており、エンジニアリング分野の文書作成において精度の高い推敲を支援します。",
+    "topics": [
+      "textlint",
+      "生成AI",
+      "LLM",
+      "形態素解析",
+      "OSS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

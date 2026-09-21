@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:29:42.680063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの制御における形式手法の活用：OpenShell Researchの知見",
+    "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-09-10-learning-formal-methods-agent-policy-prover/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの行動ポリシーをSMTソルバー（Z3）を用いて形式的に検証することで、確率的なAIレビューの限界を超えた決定論的なセキュリティ制御を実現する手法の解説。",
+    "summaryBody": "NVIDIAのOpenShellプロジェクトによる、AIエージェントの権限管理に形式手法（Formal Methods）を適用した研究成果の報告です。エージェントが自律的に動作するスケールが拡大する中、人間によるレビューは限界を迎えつつあります。OpenShellチームは、AWSのZelkovaなどの先行事例を参考に、Microsoft ResearchのZ3ソルバーを活用してエージェントのポリシーを論理式に変換。提案された新しいポリシーが、あらかじめ承認された「安全なポリシー」の範囲内に収まっているかをミリ秒単位で数学的に証明する仕組みを構築しました。記事では、GitHub APIへのアクセス制限を例に、RESTレベルの制限が下位のL4プロトコル（git-remote-https等）によって回避されるリスクを論理的に特定する方法を解説しています。この手法は、トークン消費なしで高速に動作し、文脈による誤認を許さない、強固な監査・制御レイヤーを提供します。",
+    "topics": [
+      "AI Agents",
+      "Formal Methods",
+      "Z3 Solver",
+      "Cybersecurity",
+      "NVIDIA OpenShell"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "What we have learned applying formal methods to control AI agents - OpenShell Research"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:17:15.876113+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCPを試してみた感想。フロントエンドの必須技術になりそうな予感。",
+    "url": "https://zenn.dev/chot/articles/268804cd6694ab",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "WebMCPを用いて自社CMSの操作をAIに最適化した検証報告で、GUI操作と比較して作業時間が約半分に短縮されるなど、AIエージェント連携におけるフロントエンド実装の有用性が示されています。",
+    "summaryBody": "WebMCP（Model Context Protocol for Web）を自社のCMS「Orizm」に試験導入した検証レポートです。WebMCPは、ブラウザ上でAIエージェント向けの操作（ツール）を直接提供する仕組みであり、従来のサーバーサイドMCPとは異なり、ログイン済みのセッションや未保存のフロントエンドデータを直接扱える利点があります。\n\n記事では「宣言型（HTML属性）」と「命令型（JavaScript）」の2種類の実装方法を解説し、実際にAIエージェント（Codex/GPT-6 Astra）を用いてページ作成タスクの比較検証を行っています。AIが人間と同様にGUIを操作する場合（5分52秒）に比べ、WebMCPで定義されたツールを介して操作する場合（3分9秒）は約半分の時間で完了しました。特に、単なる操作ツールだけでなく、現在の状態を取得する「参照系ツール」を揃えることで、AIが『観察→計画→実行』のサイクルを効率的に回せるようになる点が強調されています。今後のフロントエンド開発において、AI連携は必須技術になると考察されています。",
+    "topics": [
+      "WebMCP",
+      "AIエージェント",
+      "フロントエンド",
+      "MCP",
+      "CMS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

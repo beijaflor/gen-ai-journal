@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T23:02:00.053021+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・トレーシングを用いたAI検索アシスタントのデバッグ手法：Sentryの事例",
+    "url": "https://blog.sentry.io/debugging-our-ai-search-assistant-with-agent-tracing/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Sentryの開発チームが、自然言語を検索クエリに変換するAIアシスタントのバグを、自社の「Agent Tracing」機能を用いて効率的に特定・修正したプロセスを解説しています。",
+    "summaryBody": "Sentryは自然言語を独自の検索構文に変換する「Search Query Assistant」を開発しましたが、LLMの出力が非決定的であるため、特定のカスタム属性が正しく処理されないなどのバグ発生時に原因特定が困難でした。この記事では、Sentryの新機能「Agent Tracing」を活用したデバッグ手法を紹介しています。\n\n具体的には、AI Conversationビューを用いて、システムプロンプト、LLMの生成過程、ツール呼び出し（APIリクエスト）をタイムライン形式で可視化しました。これにより、APIからのフィールド名が検索構文として正しくマッピングされていない根本原因を迅速に特定。従来のバックエンドトレースとAIの対話を紐付けることで、ローカル開発環境から本番環境まで一貫した監視と改善が可能になったとしています。AIエージェントの挙動をブラックボックス化させず、既存の監視ツールと統合する実用的なアプローチが示されています。",
+    "topics": [
+      "Sentry",
+      "LLM",
+      "Agent Tracing",
+      "AI Observability",
+      "Debugging"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "Debugging Our AI Search Assistant with Agent Tracing | Sentry Blog"
+  }
+}

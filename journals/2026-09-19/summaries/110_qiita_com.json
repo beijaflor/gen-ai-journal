@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T13:03:49.952934+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "[GSA: Internet] AI エージェントの検出 を試してみた ～ 本当に AI エージェントを検出できるのか？",
+    "url": "https://qiita.com/carol0226/items/c0f0101bf5f237b44acb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Microsoft Entra Global Secure Accessのプレビュー機能「AIエージェントの検出」を使い、デバイス上で動作するAIエージェントの可視化と通信監視が可能か検証した実践レポート。",
+    "summaryBody": "本記事では、Microsoft Entra Global Secure Access (GSA) に追加された「AIエージェントの検出（プレビュー）」機能について、設定手順から実際の検出挙動までを解説しています。従来のシャドウAI検出が宛先URLに基づいたサービス利用状況を確認するのに対し、本機能は端末上で実行されるプロセス（AIエージェント）そのものを識別し、その通信先やユーザー、デバイス情報を可視化します。検証ではClaude Desktopをターゲットとし、GSAのフルスペック（TLSインスペクションやWebコンテンツフィルタリング等）を有効にした環境で、追加設定なしに数分でエージェントとして識別・記録されることを実証しました。組織内における管理外のAIエージェント利用を把握し、セキュリティガバナンスを強化する有効な手段として期待されます。",
+    "topics": [
+      "Microsoft Entra",
+      "Global Secure Access",
+      "AIエージェント",
+      "シャドウIT",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

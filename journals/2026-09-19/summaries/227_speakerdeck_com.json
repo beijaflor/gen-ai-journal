@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T07:19:39.235639+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SREは、MCPとAutopilotをこう使え！",
+    "url": "https://speakerdeck.com/kazumax55/sre-ha-mcp-to-autopilot-o-kou-tsukae",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "New RelicのAI機能「MCP」と「Autopilot」を活用し、自然言語による調査の自動化やSlackへの自動分析レポート投稿を実現することで、SREのインシデント対応負荷を劇的に軽減する実践事例を紹介しています。",
+    "summaryBody": "本スライドは、New Relicの生成AI機能である「MCP（New Relic AI）」と、自動調査エージェント「Autopilot（旧SRE Agent）」を現場のSRE業務に導入した成果をまとめた資料です。主なポイントは、自然言語による調査の民主化と、オンコール対応の負担軽減です。MCPを用いることで、NRQL等の専門知識がなくてもログやエンティティを横断した高度な調査が可能になります。さらにAutopilotをSlackと連携させ、アラート発生時に自動で原因調査とレポート作成をスレッドに投稿する仕組みを構築したことで、夜間の障害対応において「PCを開かずにスマホだけで状況を把握し、二度寝できるか判断する」といった運用を実現しています。AIを有効活用するための前提条件として、APMやログなどのオブザーバビリティデータが十分に蓄積されている重要性についても強調されています。",
+    "topics": [
+      "New Relic",
+      "SRE",
+      "AI",
+      "オブザーバビリティ",
+      "インシデント対応"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

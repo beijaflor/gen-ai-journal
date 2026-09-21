@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:37:41.047731+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの自己改善をどう設計するか / How to Design Self-Improvement for AI Agents",
+    "url": "https://speakerdeck.com/22mi/how-to-design-self-improvement-for-ai-agents",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが初期設計の枠組みを超えて効果的に自己改善を継続するための、深層学習の概念を応用した「ハーネス（評価・改善基盤）」の設計手法を提案。",
+    "summaryBody": "AIエージェントの自己改善において、単なるプロンプトの微調整に留まり根本的な設計変更ができない「局所最適化」と「アンカリング・バイアス」の課題を指摘しています。これを打破するために、深層学習のループ（訓練データ・最適化・探索・評価）をエージェントに適用するフレームワークを解説。実行ログから汎用的な手順を抽出する「Training Data」、編集量と検証を制御する「Optimizer」、複数候補を保持し探索範囲を広げる「Search Strategy」、そして「業務上の正解」を定義する「Evaluation」の4要素を定義。特に、人間が「正確性・完全性・適切性」などの評価基準をいかに定義するかが、改善の方向性を決定づける極めて重要な役割を果たすと強調しています。",
+    "topics": [
+      "AIエージェント",
+      "自己改善",
+      "LLM",
+      "システム設計",
+      "評価設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

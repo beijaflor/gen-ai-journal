@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T12:59:05.697941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "35kbの巨大プロンプトをAnthropic/OpenAIから自己ホスト型のOllama+opencodeへ移行するための技術メモ",
+    "url": "https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "プライバシー保護とAIの「過度な拒絶」を回避するため、クラウドLLMからローカル環境へ移行する際に直面するコンテキスト制限の課題と、プロンプト分割などの具体的な解決策を解説した記事。",
+    "summaryBody": "### 移行の動機と背景\n大手AIプロバイダー（OpenAIやAnthropic）によるユーザーデータの学習利用疑惑や、セキュリティ研究における「倫理的拒絶（Safety Refusal）」が防衛側を不利にしている現状を批判。真のプライバシーと自由な研究環境を確保するには、自己ホスト型のハードウェアで推論を行う必要があると提唱しています。\n\n### ローカル環境における技術的課題\nAMD Ryzen AI MAX+ 395（128GB RAM）環境でも、35kbに及ぶ巨大なプロンプトをそのままローカルのOllama環境に持ち込むと、コンテキスト窓（65kトークン等）を即座に圧迫。結果として、同じツールを何度も呼び出す「スラッシング」や、直前の指示を忘却する現象が発生します。\n\n### 解決策としての「SOP (Single Objective Prompting)」\n1. **プロンプトの分割**: 巨大なプロンプトを単一目的のユニットに分割し、宣言的なエージェント定義を行う。\n2. **コンテキストの最適化**: Ollamaのコンテキスト長を明示的に調整し、セッション状態をディスクに保存してハンドオフを容易にする。\n3. **命令の正準化**: 「〜しないで」という否定命令を「〜だけ実行して」という肯定命令に書き換え、ツール呼び出しの回数を最小限に抑える。\n\nクラウドの巨大なコンテキスト窓とCoT（思考の連鎖）に依存した「非効率なプロンプト」を、ローカル環境に合わせて最適化する手法が重要となります。",
+    "topics": [
+      "Ollama",
+      "Self-Hosting",
+      "Prompt Engineering",
+      "AI Privacy",
+      "Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Notes on migrating 35kb prompts away from Anthropic/OpenAI to Self-Hosted Ollama+opencode"
+  }
+}

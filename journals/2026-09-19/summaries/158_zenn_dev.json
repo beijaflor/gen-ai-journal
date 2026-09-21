@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:35:40.384108+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1日の開発の流れをスキル化してみたら、想像以上に快適だった",
+    "url": "https://zenn.dev/tenkei/articles/9f8921926bb003",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHubのIssue管理から実装、コードレビュー、PR作成までの開発フローをClaude Codeの「スキル」として自動化し、開発者が「指示」から「確認」へと役割をシフトさせる手法の紹介。",
+    "summaryBody": "### 開発フローの自動化\\n筆者のTenkei氏は、GitHubのIssue管理から実装、レビュー、PR作成に至る一連の開発工程を、Claude Codeの「スキル」として定義・自動化しました。これにより、開発の中心が人間からAIへと移り、人間はAIからの質問への回答や最終的なレビューに集中できるようになりました。\\n\\n### スキルの詳細構成\\n`~/.claude/skills/` 配下に配置された汎用的なスキル `todays-work` は、以下のステップを自律的に実行します。\\n1. **Issue把握**: `gh`コマンドでIssue内容を取得し、親Issueとの関係性を含めて解析。\\n2. **ブランチ作成**: 接頭辞に基づき適切なベースブランチを選択し、自動で切り替え。\\n3. **実装と検証**: Claude Codeが実装を行い、動作確認も実施。\\n4. **クロスレビュー**: Claudeによる実装を、Codex（AI）と人間（`crit`ツールを使用）がそれぞれ独立してレビュー。\\n\\n### 導入のメリットと変化\\nAIが工程全体を把握しているため、人間がレビューしている間にPRの素案を先回りして作成するなど、自律的なエージェントとしての挙動が見られるようになりました。以前は個別に指示を出していたClaudeとCodexの連携がスキル内で完結し、開発者の認知負荷が大幅に軽減されたと報告されています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "GitHub",
+      "自動化",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

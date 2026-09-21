@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:37:25.326679+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI sloppingのコツ｜株式会社HERP公式note",
+    "url": "https://note.herp.co.jp/n/na751e51ea47f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングツールを駆使し、4ヶ月間で764件のプルリクエストと計110万行のコード変更を通じて技術的負債を爆速で解消したHERP社の実践記録。",
+    "summaryBody": "株式会社HERPのエンジニアによる、AIを活用した大規模なコードベース刷新の記録です。Claude CodeやCursorといったAIツールをターミナルマルチプレクサ（tmux）で並列稼働させ、4ヶ月間で全社のマージ済みPRの約14.5%に相当する764件のPRを完遂しました。主な作業内容は、Yarn v1からpnpmへの移行、fp-tsの除去とzodへの置換、TypeScript 7.0へのアップデート、CIの高速化、Visual Regression Testing（VRT）の整備など多岐にわたります。AIによる大量の変更を支える鍵として、テスト基盤（VRTやスナップショットテスト）の充実と、上長との阿吽の呼吸による「爆速レビュー」体制の構築が挙げられています。最終的にはAIという『魔法』を活かすための、泥臭い『気合い』と『事前準備』の重要性を説いています。",
+    "topics": [
+      "AI Coding",
+      "Technical Debt",
+      "Claude Code",
+      "pnpm",
+      "Engineering Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

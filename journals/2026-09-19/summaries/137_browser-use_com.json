@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:29:56.937667+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザエージェントにおける『苦い教訓』",
+    "url": "https://browser-use.com/posts/bitter-lesson-browser-agents",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ブラウザエージェントの設計において、人間が定義した固定的なアクションや状態表現を捨て、モデルに直接CDP（Chrome DevTools Protocol）を操作させる汎用的なアプローチへの転換とその重要性を解説しています。",
+    "summaryBody": "Browser UseのCTOによる、ブラウザ操作AIエージェントの進化と設計思想の転換に関する論説です。初期のブラウザエージェントは、開発者が「クリック」や「スクロール」といったアクションや、モデルに見せるページ状態（アクセシビリティツリー等）を厳密に定義していましたが、これはウェブサイトの多様なエッジケースに対応できず限界がありました。モデルのコーディング能力向上に伴い、現在はモデル自身がCDP（Chrome DevTools Protocol）を介して直接ブラウザを操作・観察する手法へ移行しています。これにより、Playwright等のフレームワークではアクセス困難なShadow DOMの操作なども可能になりました。Rich Suttonの『苦い教訓』を引用し、人間が設計したヒューリスティックな手法よりも、計算資源とモデルの知能を最大化できる汎用的なインターフェース（この場合は生に近いブラウザ制御）を提供することが、長期的に優れた結果をもたらすと結論づけています。",
+    "topics": [
+      "Browser Agents",
+      "CDP",
+      "LLM",
+      "Automation Architecture",
+      "Software Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The Bitter Lesson of Browser Agents"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:34:57.908865+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MiniMax H3の生成時間を3ステップLoRAで半減。RTX 5090でのAI動画対話システム構築",
+    "url": "https://www.techno-edge.net/article/2026/09/14/5495.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MiniMax H3の動画生成を3ステップLoRAで高速化し、RTX 5090環境で高精度なリップシンクを実現するAI動画対話システムを構築した報告。",
+    "summaryBody": "アリババのTaoLive AIGCチームが公開した「TaoMate-H3」から、ComfyUI形式に変換された3ステップ蒸留LoRAを抽出・検証。RTX 5090環境において、従来のTurbo 8ステップ比で2.2倍、FastH3 (4ステップ) 比でも大幅な高速化を達成した。技術面では、diffusers形式とComfyUI形式のテンソル変換におけるビット一致を確認し、CFG 1.0やSigmaShiftを用いた最適なスケジュール設定を特定している。この高速化を基盤に、LLMの返答をチャンク分割せず一括で動画生成する「AI動画対話システム」を開発。母音と口の開きの相関を実写データに基づき評価し、遅延は約14秒発生するものの、極めて自然で高精度なリップシンクを実現している。待機時間中のループ動画生成やシード固定による一貫性の維持など、実用的なワークフローが詳述されている。",
+    "topics": [
+      "MiniMax H3",
+      "LoRA",
+      "RTX 5090",
+      "AI動画生成",
+      "リップシンク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

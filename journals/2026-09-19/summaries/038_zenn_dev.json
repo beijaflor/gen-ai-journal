@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:34:09.664844+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "フィールドレポート 法律事務所の今",
+    "url": "https://zenn.dev/fdsa/articles/37db858e04678e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Legal Agent 法律事務所における、弁護士の主要ツールであるOffice製品とLLMエージェントをCOM経由で高度に連携させ、実務に適した「協働」と「最小差分での編集」を実現するための技術的挑戦の記録。",
+    "summaryBody": "法律業務の現場（主にWindowsデスクトップ版Office）にLLMエージェントを導入する際の、具体的かつ高度なエンジニアリング事例です。当初検討されたOOXML直接編集やOffice.js（Webアドイン）の課題（UXや安全性、協働の難しさ）を整理し、最終的にRust製のMCPサーバーを通じたCOM（Component Object Model）経由の操作を選択。QuickJSをサンドボックスとして利用し、ホワイトリスト化したCOM APIのみをエージェントに公開することで、自由度と安全性を両立させています。特にWordの「変更履歴」機能を重視し、段落丸ごとの書き換えではなく、人間と同様に「最小差分での挿入・削除」を行わせるための独自ツール群（word_insert_text等）の実装により、弁護士との高度な協働を可能にしました。また、コンテキスト探索のためにDrive上のファイルやガイドラインPDFを「目次から読む」仕組みも整備されています。",
+    "topics": [
+      "LegalTech",
+      "LLM Agent",
+      "MCP (Model Context Protocol)",
+      "Office COM",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

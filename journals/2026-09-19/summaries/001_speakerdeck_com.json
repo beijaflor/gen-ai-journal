@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:23:49.778516+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに丸投げしないトイル削減 / Eliminating Toil Without Leaving It All to AI",
+    "url": "https://speakerdeck.com/kohbis/eliminating-toil-without-leaving-it-all-to-ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SREのトイル削減において、AIに全行程を任せず、業務をレイヤー分解して「判定」はロジックで、「修正」のみをAIに担当させることで確実性を高めるアプローチを解説した資料。",
+    "summaryBody": "SRE（Site Reliability Engineering）における「トイル」の削減に生成AIを活用する際の実践的なアプローチを紹介しています。AIに全ての工程を丸投げすると、品質のブレや誤った方針への暴走、コンテキストの肥大化といった課題が生じます。これに対し、業務を「蓄積・抽出・判定・修正・レビュー」の5つのレイヤーに分解することを提唱しています。具体的には、「判定」まではPrometheusなどの既存データを用いた確定的なロジックに寄せ、AIの役割を「修正（コードの書き換え等）」という局所的なタスクに限定します。事例として、K8sリソース最適化、スローテスト改善、コンテナイメージ削減、およびレビュー指摘事項をAIエージェントの指示書として自動蓄積する「AGENTS.md」の運用が挙げられています。このように業務を分解することで、AIが不要な箇所や、ガードレールを設けてAIに任せるべき箇所を明確にし、信頼性の高い自動化を実現できるとしています。",
+    "topics": [
+      "SRE",
+      "トイル削減",
+      "生成AI活用",
+      "自動化",
+      "プラットフォームエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

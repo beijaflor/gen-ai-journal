@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-16T14:30:45.121769+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの強化学習における「困難な問題」の克服：Never Give Upによるマタイ効果の解消",
+    "url": "https://mnoukhov.github.io/posts/ngu/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの強化学習において簡単な問題の精度向上に偏る「マタイ効果」を指摘し、困難な問題に対して適応的に計算資源を配分する手法「Never Give Up (NGU)」を提案。",
+    "summaryBody": "LLMの強化学習（RL）において、モデルが初期状態で解きやすい問題ほど精度が向上し、困難な問題が放置される「マタイ効果（Matthew Effect）」という現象を明らかにしました。従来のGRPO等の手法では、サンプリング数（k）を増やしても、簡単な問題の稀な誤りに対する学習に計算資源が浪費される「シグナル効率」の悪さが課題となります。本論文が提案する「Never Give Up (NGU)」は、問題を解けるまで適応的にサンプリングを継続する手法です。これにより、簡単な問題は少ないサンプルで即座にフィルタリングし、困難な問題にのみ多くの計算資源を集中させることが可能になります。数学（AIME）やコード生成（Manufactoria）のタスクにおいて、NGUは標準的なGRPOを凌駕し、モデルの停滞を打破してより困難な問題を解決できることを実証しました。また、この現象はモデルの可塑性（Plasticity）の喪失ではなく、計算資源の配分問題であることも示唆しています。",
+    "topics": [
+      "Reinforcement Learning",
+      "LLM",
+      "Matthew Effect",
+      "GRPO",
+      "Never Give Up"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Learning to Solve Hard Problems in RL for LLMs by Never Giving Up"
+  }
+}

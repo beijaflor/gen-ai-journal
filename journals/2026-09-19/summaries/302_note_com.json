@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T22:44:36.314004+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek v4.1 Flashを動かしたくてFP4に対応していないA100を、33tok/sから673 tok/sまで持っていって気がつくと公式APIより速くなっていた話",
+    "url": "https://note.com/shi3zblog/n/nd5fc5341b342",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "FP4非対応のNVIDIA A100環境でDeepSeek v4.1 Flashを最適化し、CPU演算の活用やカーネル起動の削減により、公式APIを超える最大673tok/sの爆速推論を実現した技術検証記録。",
+    "summaryBody": "DeepSeek v4.1 Flashの登場を受け、著者が所有する旧世代のNVIDIA A100（Ampere）環境で極限の最適化に挑んだ記録。当初はFP4非対応により低速だったが、ボトルネックがPCIe帯域にあることを特定。1.7TBの広帯域RAMとXeon CPU（AVX-512/VNNI）を活用したハイブリッド推論に切り替え、さらに1トークンあたり2000回にも及んでいた冗長なCUDAカーネル起動を整理。データ構造の再配置を行うことで、当初の33tok/sから公式API（400tok/s）を凌駕する単独165tok/s、並列最大1000tok/s超のスループットを達成した。ハードウェアの限界をソフトウェアの工夫で突破する、低レイヤエンジニアリングの醍醐味が詳述されている。",
+    "topics": [
+      "DeepSeek v4.1 Flash",
+      "NVIDIA A100",
+      "LLM最適化",
+      "CUDA",
+      "ヘテロジニアス・コンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

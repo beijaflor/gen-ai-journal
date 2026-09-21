@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T11:35:10.358226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた",
+    "url": "https://journal.supa.ai/jev-classifier-benchmark/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの判断特化型モデル「Jev」と最新の軽量LLM群を4つの分類タスクで比較し、精度・レイテンシ・確信度の有用性を実測ベースで解説した検証レポートです。",
+    "summaryBody": "TypeSafe AIが公開した、生成を行わず型定義された判断のみを返す「Jev」モデルの性能検証記事です。Claude Haiku 4.5、GPT-5.6 Luna、Gemini 3.5 Flash-Lite、Qwen3.7 Flashを相手に、ルーティングやDOOMの状況判断など208件のテストを実施しています。検証の結果、Jevは軽量LLMと比較して精度は同等、レイテンシは3〜4倍（300ms台）高速であり、特に「確信度」のスコアが実際の正解率と強く相関している（ECEが低い）点が優位性として挙げられています。これにより、高確信度のみ自動処理し、低確信度は人間や重いモデルに回すといった『賢いif文』としての運用に適していることが示されました。一方で、Qwen等の極低価格モデルと比較するとコスト面で劣るケースや、複雑な数値計算・日付処理には不向きといった制約も明らかにされています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "LLMベンチマーク",
+      "分類器",
+      "推論基盤"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

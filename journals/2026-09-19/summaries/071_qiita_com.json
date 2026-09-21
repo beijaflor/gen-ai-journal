@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-14T15:42:39.950943+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Managed AgentsにIaC的に管理する機能が追加されたゾ!!",
+    "url": "https://qiita.com/moritalous/items/2168025729eb840d5143",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Anthropic CLIに導入された`apply`コマンドにより、Claude Managed AgentsのリソースをTerraformのような宣言的なファイル形式で管理・同期できるようになりました。",
+    "summaryBody": "Anthropic CLI (`ant`) v1.30.0以降で追加された、Claude Managed AgentsをInfrastructure as Code (IaC) として管理する新機能についての解説です。開発者はエージェント定義（Markdown形式）やサンドボックス環境の設定（YAML形式）をコードとして記述し、`ant apply`コマンドで反映させることができます。この機能は`claude-lock.json`というロックファイルを使用してリソースの状態を管理しており、その挙動はAWS CloudFormationよりもTerraformに近い特性を持っています。管理対象はエージェント、環境、メモリストア、デプロイメント、スキルの5種類に限定されており、セッションデータや機密情報などは対象外です。既存リソースを移行する際は、コンソールからコードとしてエクスポートする機能を利用することが推奨されています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "IaC",
+      "Managed Agents",
+      "ant CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

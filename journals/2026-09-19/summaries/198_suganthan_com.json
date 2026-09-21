@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-19T06:43:47.871301+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントへの有料課金実験：x402プロトコルによる1ページ1セントの自動決済",
+    "url": "https://suganthan.com/blog/x402-pay-per-crawl/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "HTTP 402ステータスコードとx402プロトコルを利用し、AIエージェントがWebページを閲覧する際に自動で1セントを支払う仕組みを構築・実証した実験レポート。",
+    "summaryBody": "SEO専門家のSuganthan Mohanadasan氏による、AIクローラーへの直接課金に関する先駆的な実験の記録です。筆者は、HTTP 402 (Payment Required) を活用した「x402」プロトコルを自身のサイトに実装し、AIエージェントがコンテンツにアクセスする際にUSDCでの支払いを要求する仕組みを構築しました。実験では、Claude Codeを使用したエージェントが、設定された予算の範囲内で自動的に1セントを支払い、コンテンツを取得することに成功しています。これは、Googleの不透明な収益分配プログラム（AI contribution pilot）とは対照的に、パブリッシャーが自ら価格を決定し、ブロックチェーン上で取引を検証できる透明性の高いモデルを提示しています。Cloudflareが開発中の「Wallets」や「Monetization Gateway」などのインフラ普及を見据え、AI時代の新しいWeb経済圏の可能性を論じています。",
+    "topics": [
+      "AI収益化",
+      "x402プロトコル",
+      "AIクローラー",
+      "Cloudflare",
+      "Web経済"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "I made my website charge AI agents a penny per page. Then I watched Claude pay it."
+  }
+}

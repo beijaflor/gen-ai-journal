@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-15T12:55:15.244678+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社内向けLLMチャットアプリ「Teruha」を構築しました",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202609/14_0955.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "ミツエーリンクスは、セキュリティとコストの最適化を目的に、Open WebUIとvLLMを活用した内製LLMチャット基盤「Teruha」を構築し、全社展開を開始しました。",
+    "summaryBody": "ミツエーリンクスが開発した「Teruha」は、社内ネットワークから安全に生成AIを利用できるチャットプラットフォームです。主な特徴として、会話履歴の保存、Web検索（SearXNG）、社内資料を参照するRAG（Open WebUIのナレッジ機能）を備えています。システム構成には推論基盤としてvLLM、UIにOpen WebUI、データベースにPostgreSQLを採用。日常的な用途には量子化した「Gemma 4 26B」などのローカルLLMを社内GPU上で動作させることで、外部APIのコスト抑制とデータ安全性の確保を両立しています。構築過程ではGPUメモリと回答品質のバランス調整に注力し、Qwen 3からGemma 4への移行による品質向上を図るなど、実運用を見据えた最適化が行われています。",
+    "topics": [
+      "Local LLM",
+      "RAG",
+      "vLLM",
+      "Open WebUI",
+      "社内ツール"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 82
+    }
+  }
+}
