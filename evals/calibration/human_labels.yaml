@@ -1,0 +1,65 @@
+# Layer-③ human labels for judge calibration (LLMOps doc §4.4).
+#
+# Workflow:
+#   1. npm run eval:judge                  (writes results/latest-judge.json)
+#   2. Open `npm run view`, read each judge_subset row's model output
+#      yourself, and record YOUR verdict per (fixture × rubric) below.
+#   3. uv run --with pyyaml evals/calibration/agreement.py results/latest-judge.json
+#
+# Rule: judge scores stay advisory-only (never CI-blocking) until
+# agreement with these labels is acceptable — as a guide, percent
+# agreement ≥ 0.8 AND Cohen's κ ≥ 0.4. A κ near 0 means the judge is
+# effectively random for that rubric (the Databricks politeness-judge
+# case) — rewrite the rubric, don't trust it.
+#
+# verdict: pass | fail  (leave empty until you have actually reviewed)
+
+labels:
+  - fixture_id: "003"
+    rubric: judge_editorial_quality
+    verdict:
+    note: ""
+  - fixture_id: "003"
+    rubric: judge_faithfulness
+    verdict:
+    note: ""
+  - fixture_id: "003"
+    rubric: judge_thesis_anchor
+    verdict:
+    note: ""
+  - fixture_id: "004"
+    rubric: judge_editorial_quality
+    verdict:
+    note: ""
+  - fixture_id: "004"
+    rubric: judge_faithfulness
+    verdict:
+    note: ""
+  - fixture_id: "004"
+    rubric: judge_thesis_anchor
+    verdict:
+    note: ""
+  - fixture_id: "006"
+    rubric: judge_editorial_quality
+    verdict:
+    note: ""
+  - fixture_id: "006"
+    rubric: judge_faithfulness
+    verdict:
+    note: ""
+  - fixture_id: "006"
+    rubric: judge_thesis_anchor
+    verdict:
+    note: ""
+  - fixture_id: "011"
+    rubric: judge_editorial_quality
+    verdict:
+    note: ""
+  - fixture_id: "011"
+    rubric: judge_faithfulness
+    verdict:
+    note: ""
+  - fixture_id: "011"
+    rubric: judge_thesis_anchor
+    verdict:
+    note: ""

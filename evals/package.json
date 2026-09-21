@@ -1,0 +1,14 @@
+{
+  "name": "gen-ai-journal-evals",
+  "private": true,
+  "description": "promptfoo evaluation harness for prompts/summarize-json.prompt",
+  "scripts": {
+    "eval": "PROMPTFOO_CACHE_PATH=.promptfoo-cache PROMPTFOO_PYTHON=../.venv/bin/python promptfoo eval -c promptfooconfig.yaml",
+    "eval:compare": "PROMPTFOO_CACHE_PATH=.promptfoo-cache PROMPTFOO_PYTHON=../.venv/bin/python promptfoo eval -c promptfooconfig.compare.yaml",
+    "eval:judge": "PROMPTFOO_CACHE_PATH=.promptfoo-cache PROMPTFOO_PYTHON=../.venv/bin/python promptfoo eval -c promptfooconfig.judge.yaml --repeat 3",
+    "view": "PROMPTFOO_CACHE_PATH=.promptfoo-cache promptfoo view"
+  },
+  "devDependencies": {
+    "promptfoo": "^0.121.19"
+  }
+}

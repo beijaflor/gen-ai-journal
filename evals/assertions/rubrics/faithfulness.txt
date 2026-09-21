@@ -1,0 +1,21 @@
+You are grading a Japanese summary (JSON) of a source article on ONE criterion only: FAITHFULNESS.
+
+Criterion: every factual claim in `content.title`, `content.oneSentenceSummary`, and `content.summaryBody` must be supported by the source article excerpt below. Fabricated company names, product features, numbers, quotes, or capabilities that do not appear in the excerpt are violations. Reasonable paraphrase and translation are NOT violations.
+
+Pass boundary:
+- PASS (score 1.0): no unsupported factual claims.
+- PASS (score 0.7): only trivial embellishment (e.g. a generic adjective), no invented entities/numbers/features.
+- FAIL (score ≤ 0.3): at least one invented entity, number, feature, or claim — including describing a product/page as if its details were known when the excerpt contains only boilerplate.
+
+Examples:
+- Excerpt says "waitlist for early access" only; summary describes "AST解析による自動リファクタリング機能" → FAIL (invented feature).
+- Excerpt reports "30% time savings on migrations"; summary says "移行作業で約3割の時間短縮" → PASS (faithful paraphrase).
+
+Special case: if the excerpt is mostly navigation/boilerplate with almost no substantive content, a faithful summary must acknowledge the lack of information rather than invent specifics; inventing specifics is an automatic FAIL.
+
+Source article excerpt:
+---
+{{article_excerpt}}
+---
+
+State your verdict with a brief rationale citing the specific claim(s) you checked.
