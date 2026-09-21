@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:49:57.348120+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "判断特化AI「Jev」はUX検証に使える？ 正解手順なしでWebサイトを探索させてみた",
+    "url": "https://qiita.com/Aochan0604/items/a5bf7fc1a41e138b0a16",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断に特化したAIモデル「Jev」とPlaywrightを組み合わせ、正解手順を与えずにWebサイトを探索させることで、UI導線の不備を定量的に評価する試み。",
+    "summaryBody": "テキスト生成ではなく「判断（選択）」に特化したAIモデル『Jev』をWebサイトのUX検証に活用した実験レポートです。Playwrightでブラウザを操作し、AIに目的（例：請求書の保存）と画面内の操作肢のみを提示して自律的に探索させたところ、整理されたUIでは12回すべて成功した一方、意図的に導線を複雑にしたUIでは探索の停止やループが発生しました。AIが「どのラベルで迷ったか」「どの階層で諦めたか」を可視化することで、開発者の予期しない使いにくさや導線の詰まりを客観的に発見する手法として提案されています。AIが人間の代わりになるのではなく、迷いやすい箇所の特定を補助するツールとしての可能性が示されています。",
+    "topics": [
+      "Jev",
+      "UX検証",
+      "Playwright",
+      "TypeScript",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 92
+    }
+  }
+}

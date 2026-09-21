@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:25:41.806598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevはサイコロを振らない｜「較正された確率」の意外な落とし穴",
+    "url": "https://note.com/kantahayashiai/n/n4c54eed30787",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの判断特化型モデル「Jev」が、情報の乏しい状況で不当に高い確率を報告する「較正（キャリブレーション）」の脆弱性を実験を通じて明らかにした分析記事。",
+    "summaryBody": "判断特化型AIモデル「Jev」の信頼性の核心である「較正（キャリブレーション）」の精度を検証したレポートです。筆者は、公平なサイコロの出目を当てる実験を行い、Jevが正解を知る手がかりがないにもかかわらず、選択した出目に80%以上の高い確率を付与し、実際の正答率（約16.7%）と大きく乖離する「自信過剰」な挙動を確認しました。また、業務シナリオを模した文書読解テストでは、元文書に含まれる30%のリスク確率がJevを通すと5%に縮小されるなど、確率分布を極端に0か100へ倒す傾向が示されています。記事では、モデルの正答率だけでなく、出力された確率値が実際の生起確率と一致しているかを検証することの重要性を説き、自動化システムに組み込む際の注意点を提言しています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "キャリブレーション",
+      "LLM",
+      "確率統計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

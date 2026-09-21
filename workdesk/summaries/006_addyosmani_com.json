@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:22:48.327686+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント設定ファイルの監査：CLAUDE.mdやスキルの「劣化」を防ぐ方法",
+    "url": "https://addyosmani.com/blog/audit-your-agent-files/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントの設定ファイルやスキルは時間とともに「劣化」し精度を落とすため、定期的に内容を監査し、不要なルールを削ぎ落とす必要がある。",
+    "summaryBody": "AnthropicのエンジニアであるAddy Osmani氏が、AIエージェントの構成ファイル（CLAUDE.md、AGENTS.mdなど）やカスタムスキルの保守方法について解説しています。主な課題は、エラーのたびにルールを追加することでファイルが肥大化し、逆にエージェントのパフォーマンスを低下させる「設定の劣化」です。研究によれば、指示の80%を削除しても性能が落ちないケースや、個人の好みに特化したスキルよりも汎用的なベストプラクティスの方が有効な場合が多いことが示されています。対策として、Claude Codeの`/doctor`コマンドなどを用いた定期的な監査、コンテキストを200行以内に抑えること、モデルがコードから推測できない情報（高コストなコマンドやプロジェクト特有の境界条件）に絞って記述することを推奨しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "Agentic Engineering",
+      "開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    },
+    "originalTitle": "Audit your Agent files"
+  }
+}

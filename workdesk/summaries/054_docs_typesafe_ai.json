@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:26:50.323084+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ナレッジグラフにおけるエンティティ・アライメント",
+    "url": "https://docs.typesafe.ai/cookbooks/entity_alignment",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TypeSafe AIのScore質問とNoul質問を活用し、意味論的なレベル定義によって閾値調整不要なエンティティ名寄せ（アライメント）を実現するワークフローの紹介。",
+    "summaryBody": "この記事は、ナレッジグラフにおけるエンティティ・アライメント（同一性判定）をLLMで行うための実践的なガイドです。TypeSafe AIの「Score質問」機能を使用し、「別物」「要確認」「同一」という3段階のセマンティックなラベルを定義することで、従来の確率閾値による判定の難しさを解消しています。ビール製品のデータセットを用いた具体例では、Python SDKを用いた実装コードや、名前、醸造所、スタイルといった個別のフィールド一致度を判定する「Noul質問」を並行して実行する手法が解説されています。人間によるキュレーションが必要な境界線上のデータを自動で抽出する実用的なプロセスが特徴です。",
+    "topics": [
+      "Knowledge Graph",
+      "Entity Alignment",
+      "TypeSafe AI",
+      "Data Deduplication",
+      "LLM Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Knowledge graph entity alignment"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:23:45.001479+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIグラビアをグラビアカメラマンが作るとどうなる？第74回：MiniMax H3高速化、15枚参照ほか多彩なテクニックを紹介（西川和久）",
+    "url": "https://www.techno-edge.net/article/2026/09/20/5510.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ComfyUIを用いたMiniMax H3動画生成において、INT8 VAEやSparse Attentionによる高速化、VOSR2での顔修復、参照画像の15枚拡張など、実践的なワークフローを解説。",
+    "summaryBody": "プロカメラマン西川和久氏による連載の第74回。MiniMax H3を用いた動画生成の質と速度を向上させる具体的なComfyUIワークフローが紹介されています。主な内容は以下の4点です。\n\n1. **生成速度の高速化**: Turboモデルの活用に加え、INT8精度のVAE Decodeへの置き換え、ComfyUI標準の「Model Sparse Attention」を適用することで、クオリティを維持しつつ生成時間を大幅に短縮する手法を提示。\n2. **顔のディテール修復**: 引きの構図で崩れがちな顔パーツに対し、VOSR2とMiniMax H3の再レンダリングを組み合わせた「Face Refiner」フローを紹介。\n3. **参照制限の拡張**: 公式では最大9枚とされる参照画像を、自作のカスタムノード「minimax_h3_ref_extend」を用いることで最大15枚まで拡張し、複雑なシーン構成に対応。\n4. **尺の延長と接続**: 15秒制限を超える動画作成のための「Extender」や、異なるカット間を補完して繋ぐ「Bridge」など、演出の幅を広げるテクニックを網羅しています。",
+    "topics": [
+      "MiniMax H3",
+      "ComfyUI",
+      "動画生成AI",
+      "AIグラビア",
+      "高速化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

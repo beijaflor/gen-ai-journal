@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:37:38.774725+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ternary Bonsai 2 27BをM1Pro・16GBで動かす",
+    "url": "https://zenn.dev/okame_rara/articles/bonsai_2_27b_m1",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "M1 Pro (16GB RAM) の Mac 環境において、PrismML 版 llama.cpp をビルドし、27B クラスの Ternary Bonsai 2 モデルをローカルで動かす手順の解説。",
+    "summaryBody": "M1 Proチップと16GBメモリを搭載したMacBook Proで、27Bという大規模なパラメータを持つ「Ternary Bonsai 2 27B」モデルを動作させるための実践的なチュートリアルです。通常のOllamaや本家llama.cppではHadamard変換の未対応によりエラー（tensor size overflow）が発生するため、PrismML公式のllama.cpp forkを使用する点が鍵となります。記事では、Metalバックエンドを有効にしたビルド手順、Hugging Faceからの特定GGUF（PQ2_0）のダウンロードと検証、そして推論実行用のスクリプト作成までを網羅。実際の生成速度は 8.1〜9.6 tokens/s 程度と、16GBメモリ環境でも2bit量子化（Ternary）技術によって実用的な動作が可能であることを示しています。",
+    "topics": [
+      "llama.cpp",
+      "Apple Silicon",
+      "Local LLM",
+      "Ternary Bonsai 2",
+      "PrismML"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:27:04.902976+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "意味で検索できる多言語対応grepツール「jev-semgrep」",
+    "url": "https://github.com/uehaj/jev-semgrep",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeSafe Jevモデルを利用し、正規表現ではなく「意味」に基づいた検索を多言語間（日本語で英語を探す等）で行えるコマンドラインツール。",
+    "summaryBody": "uehaj氏によって公開された`jev-semgrep`は、TypeSafe AIの「Jev」モデルを使用して、テキストを行単位で「意味」に基づきフィルタリングするgrepツールです。従来の正規表現によるマッチングとは異なり、「顧客が怒っている」「返金に関する内容」といった概念的なクエリで検索が可能です。\n\n主な特徴は以下の通りです：\n1. **多言語対応**: 日本語のクエリで英語や多言語のログ・テキストを検索でき、その逆も可能です。内部で翻訳を介さず、概念レベルで比較を行います。\n2. **論理演算**: AND、OR、NOT（-e, -a, -vオプション）を組み合わせて、複雑な意味条件を指定できます。\n3. **高精度な判定**: 単なるベクトルの類似度（バイエンコーダ）ではなく、クエリと文脈をセットで評価するクロスエンコーダに近い仕組みを採用しているため、否定表現や主体の違いも識別可能です。\n4. **実用性**: Node.js環境があればnpxで即座に実行可能。Claude Codeのスキル（プラグイン）としても利用でき、自然言語での修正箇所探しなどに活用できます。\n\nインデックス構築が不要なため、手元のログファイルやソースコードに対して即座にセマンティック検索を適用できる点が強力です。",
+    "topics": [
+      "セマンティック検索",
+      "CLIツール",
+      "TypeSafe Jev",
+      "多言語検索",
+      "LLMツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - uehaj/jev-semgrep: grep by meaning, across languages. TypeSafe Jev scores every line against a meaning; combine meanings with AND/OR/NOT. 意味で探す grep。日本語で英語を、英語で日本語を検索できる"
+  }
+}
