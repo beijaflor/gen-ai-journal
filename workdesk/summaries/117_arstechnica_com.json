@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:58:13.886604+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MetaのAIアシスタント「Muse」に深刻なゼロデイ脆弱性：macOS上の特権が完全に奪われる恐れ",
+    "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Metaが発表したmacOS向けAIアシスタント「Muse」において、ローカルアプリが認証トークンを奪取し、カメラやメッセージへのアクセス権を完全に掌握できる重大な脆弱性が発見された。",
+    "summaryBody": "Metaがセキュリティとプライバシーを強調して発表したAIアシスタント「Muse」に、極めて深刻なゼロデイ脆弱性が存在することがセキュリティ研究者のPatrick Wardle氏によって明らかになりました。この脆弱性は、macOS上の任意のアプリやターミナルコマンドが、Museの認証トークンを窃取できるというものです。具体的には、文書化されていない設定を操作して文字起こしのエンドポイントを攻撃者のサーバーに書き換えることで、アカウントの全権限を奪取されます。これにより、Museが持つWhatsApp、メール、カレンダー、カメラ、マイクへの広範なアクセス権が攻撃者に悪用される危険性があります。Metaは報告から12時間後に修正パッチを配布しましたが、macOS標準のオンデバイス処理を利用せずクラウド処理を選択した設計上の不備が、専門家から厳しく批判されています。",
+    "topics": [
+      "Meta Muse",
+      "AIエージェント",
+      "ゼロデイ脆弱性",
+      "macOSセキュリティ",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day"
+  }
+}

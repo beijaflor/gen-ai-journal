@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:54:58.095271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "あらゆるCLIを「jev化」するツール jany を作った",
+    "url": "https://qiita.com/yukihirop/items/e0d8ffb121c1a753075a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複雑なCLIコマンドの引数を覚える手間を省くため、自然言語をLLMで解析し、実行可能なコマンドをシェルの入力行に展開するRust製ツール「jany」の紹介。",
+    "summaryBody": "janyは、findやcurl、docker runといった引数が複雑になりがちなCLIコマンドを、自然な言葉の羅列から組み立てるためのツールです。最大の特徴は、LLM（Jev）に全てを丸投げするのではなく、スキーマに基づいた規則的な分類とLLMによる曖昧さの補完を組み合わせる「ハイブリッド解析」を採用している点にあります。また、コマンドを直接実行せず、シェルのプロンプト上に展開することで、ユーザーが内容を確認・修正してから実行できる安全性を重視した設計となっています。コマンド定義は外部ファイル（TOMLやシェルスクリプト）として切り出されており、Rustのコードを書き直すことなく、tarやgitといった新しいコマンドの挙動をカスタマイズ・追加することが可能です。現在は実験的な段階ですが、CLI操作における「忘却」のコストを下げ、人間が主導権を握ったままLLMの恩恵を受ける新しいアプローチを提示しています。",
+    "topics": [
+      "Rust",
+      "LLM",
+      "CLI",
+      "Jev",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:59:25.201462+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev：テキストの代わりに数値を返す新しいAI「意思決定モデル」の登場",
+    "url": "https://simonwillison.net/2026/Sep/21/jev/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "テキストではなく分類結果やスコアを浮動小数点数で出力する、TypeSafe AIの超低コストな「意思決定モデル」Jevが注目を集めています。",
+    "summaryBody": "TypeSafe AIが発表した「Jev」は、従来のLLMのようにテキストを生成するのではなく、入力データに対して「Yes/No」「選択」「スコアリング」といった意思決定を数値（浮動小数点数）で返す新しいカテゴリのモデル（System Oneモデル）です。100万トークンあたり0.042ドルという、GPT-5 Nanoをも下回る圧倒的な低コストと高速性が特徴です。スパム検出や検索のリランキング、優先順位付けなど、構造化データへの分類タスクに最適化されています。一方で、出力が数値のみであるため「なぜその結論に至ったか」の説明が不可能というブラックボックス性が強く、バイアスの検証や厳密な評価（Evals）が不可欠となります。すでにオープンソース版の「Kev」が登場したり、2048ゲームをプレイさせるなどのユニークな活用例が報告されたりと、AI活用の新しい潮流として期待されています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "Decision Models",
+      "System One",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Jev introduces a new shape of LLM—System One, aka Decision Models"
+  }
+}
