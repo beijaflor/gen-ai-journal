@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:04:44.038065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "全部LLMにしない判断設計 — ハッカソンでJevを選んだ理由",
+    "url": "https://qiita.com/Kazeneko/items/869f2d0bc2150818e886",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ハッカソンにおけるAIエージェント開発において、生成を行わず判断と確率のみを返す「Jev」をLLMと使い分ける設計思想とメリットを解説した記事。",
+    "summaryBody": "TypeSafe AIが公開した判断特化型AIモデル「Jev」を、ハッカソンの開発に導入した際の設計と考察をまとめた記事です。Jevは文章生成をせず、Choice（選択）やNoul（真偽判断）といった型付きの判断と信頼度を返す「System One」モデルであり、LLM、古典的機械学習、ルールベースとの使い分けが重要となります。著者は、ラベルがないが意味的な判断が必要な「判定ゲート」にJevを配置することで、フルLLM構成と比較してコスト抑制、低レイテンシ、パースの安定化を実現できると指摘。特に短期間のハッカソンでは、学習時間が不要で一般的な判断に強いJevが、エージェントの制御層（振り分けや検査）において強力な武器になることを実体験から共有しています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "AIエージェント",
+      "システム設計",
+      "ハッカソン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

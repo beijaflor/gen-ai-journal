@@ -2,6 +2,37 @@
 
 ## Main List
 
+- [x] 099. https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258
+- [x] 098. https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746
+- [x] 097. https://zenn.dev/mizchi/articles/jev-test-filter-intro
+- [x] 096. https://www.sankei.com/article/20260920-HN3RTI4KZBBHPPRNBLZ3KPNZOQ/
+- [x] 095. https://github.com/mizorewww/laya-mlx
+- [x] 094. https://pc.watch.impress.co.jp/docs/column/nishikawa/2142517.html
+- [x] 093. https://www.obsidianui.dev/
+- [x] 092. https://zenn.dev/cybernetics/articles/71ea975d935414
+- [x] 091. https://zenn.dev/jackojacko05/articles/08df79d47f4219
+- [x] 090. https://qiita.com/Kazeneko/items/869f2d0bc2150818e886
+- [x] 089. https://qiita.com/yosuke-suzuki/items/967afcce827878f64e99
+- [x] 088. https://qiita.com/moritalous/items/41c9402a5dd9d80fc7a9
+- [x] 087. https://qiita.com/Takumi-9505/items/97191f0b5e201f6483d4
+- [x] 086. https://azukiazusa.dev/blog/mcp-skills-extension/
+- [x] 085. https://mimo.xiaomi.com/mimo-v2-6
+- [x] 084. https://timdettmers.com/2026/09/21/dlab-open-source-week/
+- [x] 083. https://artificialanalysis.ai/models/grok-4-7
+- [x] 082. https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/
+- [x] 081. https://x.ai/news/grok-4-7
+- [x] 080. https://pluralistic.net/2026/09/21/sunsetting/
+- [x] 079. https://paulbakker.io/writing/no-ai-for-writing/
+- [x] 078. https://github.com/jaredpalmer/kev/tree/main
+- [x] 077. https://www.ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666
+- [x] 076. https://www.chabad.org/library/article_cdo/aid/7288064/jewish/Can-I-Let-My-AI-Agent-Run-on-Shabbat.htm
+- [x] 075. https://www.bbc.com/news/articles/cm5y7qj54klpo
+- [x] 074. https://buttondown.com/hillelwayne/archive/the-llms-yearn-for-the-spines/
+- [x] 073. https://shopify.engineering/helix
+- [x] 072. https://www.oreilly.com/radar/the-post-training-process-openai-used-for-chatgpt/
+- [x] 071. https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/
+- [x] 070. https://linear.app/now/ci-bottleneck-reworked
+- [x] 069. https://www.aikido.dev/blog/aikido-altar-open-weight-ai-sovereign-security
 - [x] 068. https://note.com/stoyofuku/n/nc437dd84ec86
 - [x] 067. https://zenn.dev/mizchi/articles/laya-mlx-60fps
 - [x] 066. https://www.techno-edge.net/article/2026/09/20/5510.html

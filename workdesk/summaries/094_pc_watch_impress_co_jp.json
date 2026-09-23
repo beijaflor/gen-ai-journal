@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:03:48.918539+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8で動画解析→生成AI動画プロンプト化してみた。LM Studioも対応",
+    "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2142517.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "マルチモーダルLLM「Qwen3.8」等を用いて既存動画を解析し、MiniMax-H3等の動画生成AI向け詳細プロンプトを自動生成する高度なワークフローを解説。",
+    "summaryBody": "### 概要\n本記事は、動画Vision対応のLLM（Qwen3.8やGemma4系）を活用し、既存動画から「動画生成AI用プロンプト」をリバースエンジニアリングする手法を紹介しています。MiniMax-H3等の最新モデルで求められる複雑な構成のプロンプトを、AIに解析・記述させることで制作効率を大幅に向上させます。\n\n### 構築されたワークフロー\n1. **映像解析**: vLLM環境下のQwen3.8-Flash-Nextによる直接動画解析、またはLM Studio等で利用可能な「1fpsフレーム抽出+画像Vision解析」の2パターンを提示。\n2. **マルチモーダル統合**: `mlx-whisper`による高精度な音声文字起こしと、`panns-inference`による環境音のタグ付けを組み合わせ、映像と音響を統合した構造化データを生成。\n3. **プロンプト変換**: 解析されたシーン情報を、AIエージェント（Qwen3.8-27B等）がMiniMax-H3等の特定モデルが解釈しやすい「Shot/Soundscape」形式に変換出力。\n\n### 実用性と課題\nこの手法により、元動画の構図や動きの質感を維持しつつ、プロンプト上の被写体や衣装を書き換えるだけでバリエーション豊かな動画生成が可能になります。現状、動きの速いシーンやタイポグラフィの解析には限界があるものの、15秒程度の短尺Vlog形式では極めて高い再現性を発揮します。",
+    "topics": [
+      "生成AI",
+      "動画生成",
+      "Qwen3.8",
+      "プロンプトエンジニアリング",
+      "マルチモーダルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

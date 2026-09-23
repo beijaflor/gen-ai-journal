@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:09:31.868575+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIセキュリティのためのオープンウェイトモデル「Altar」を発表：機密環境での脆弱性診断を実現",
+    "url": "https://www.aikido.dev/blog/aikido-altar-open-weight-ai-sovereign-security",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Aikido Securityが、オンプレミス環境での高度な脆弱性診断を実現する、GLM-5.3ベースの軽量・高性能なオープンウェイトセキュリティモデル「Altar」を公開しました。",
+    "summaryBody": "Aikido Securityは、企業の自社インフラ内で完結する「主権型セキュリティAI」を実現するため、初のオープンウェイトモデル「Altar」を発表しました。このモデルは、最先端のクローズドモデルに依存せず、機密性の高いコードやインフラ構成を外部に送信することなく高度な診断を行うことを目的としています。\n\n主な技術的ハイライトは以下の通りです：\n- **劇的なモデル圧縮**: 元のGLM-5.3（1.51 TB）に対し、量子化（AWQ INT4）とエキスパート・プルーニング（REAP法）を適用。推論の推論精度を維持しつつ、328 GBまでサイズを削減（約78.2%の削減）しました。\n- **性能の維持**: 32.8%の重みを削減した後も、元のモデルが持つ脆弱性検出能力（Recall）の約92%を維持。実際のクライアント環境でのテストでもクリティカルな脆弱性を発見しています。\n- **デプロイの柔軟性**: 4枚のH200ノードで動作可能。エアギャップ環境やデータレジデンシ要件の厳しい金融・医療機関での利用に最適化されています。\n\nAltarは同社の自律型ペネトレーションテスト製品「Aikido Machine」の心臓部として統合されるほか、モデルウェイトも公開されています。",
+    "topics": [
+      "AI Security",
+      "LLM",
+      "Vulnerability Detection",
+      "Open Source",
+      "Quantization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Aikido Altar: the model that makes sovereign security intelligence possible"
+  }
+}

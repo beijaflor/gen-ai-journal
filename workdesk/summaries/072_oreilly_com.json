@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:08:47.091322+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPTに使用されたOpenAIのポストトレーニング・プロセス",
+    "url": "https://www.oreilly.com/radar/the-post-training-process-openai-used-for-chatgpt/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChatGPTをGPT-3から飛躍させたOpenAIのポストトレーニング（事後学習）手法について、SFT、報酬モデルの構築、RLHFという3段階のパイプラインを技術的に詳説。",
+    "summaryBody": "この記事は、OpenAIがChatGPT（およびその基礎となったInstructGPT）で採用したポストトレーニングの工程を解説しています。主なプロセスは以下の3つのステージで構成されています。\n\n1. **教師ありファインチューニング (SFT):** 人間のラベラーが作成した理想的な回答デモンストレーション（約13,000件）を用いて、ベースモデルに指示に従う能力を学習させます。\n2. **報酬モデル (RM) の構築:** モデルが生成した複数の回答を人間がランク付けし、その好みを予測する6Bパラメータの報酬モデルを訓練します。これにより、ペアワイズ比較を用いた効率的な学習が可能になります。\n3. **人間からのフィードバックによる強化学習 (RLHF):** PPOアルゴリズムを用い、報酬モデルのスコアを最大化するようにモデルを最適化します。ここでは「報酬ハッキング」を防ぐためのKL発散ペナルティや、忘却を防ぐための事前学習データの混合といった技術的工夫が凝らされています。\n\nまた、最近のトレンドとして、ツール利用（MCP等）や、OpenAI o1のような推論（Thinking）モデルへの応用、そしてモデルの安全性を担保するアライメントの重要性についても言及しています。RLHFを適用した1.3Bのモデルが、SFTのみの175Bモデルを上回る評価を得るなど、学習手法の重要性を強調しています。",
+    "topics": [
+      "RLHF",
+      "PPO",
+      "SFT",
+      "InstructGPT",
+      "Large Language Models"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "The Post-training Process OpenAI Used for ChatGPT"
+  }
+}

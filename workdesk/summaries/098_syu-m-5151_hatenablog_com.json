@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:02:52.756803+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexを使うなら、権限プロファイルとRulesを押さえておきたい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "生成AIエージェントCodexにおいて、サンドボックスの境界を定める「権限プロファイル」とコマンド実行の可否を制御する「Rules」の設定方法、およびClaude Codeとの設計思想の違いを解説。",
+    "summaryBody": "生成AIエージェント「Codex」を安全かつ効率的に運用するための、権限管理の核心的な設定について解説した記事です。主な内容は以下の通りです。\n\n- **権限プロファイルとRulesの役割分担**: 前者が「アクセス可能なファイルや通信先」という環境の境界を定め、後者が「特定のコマンド実行に対する許可・確認・禁止」の判断ロジックを担うことを整理しています。\n- **Claude Codeとの比較**: Claude Codeがツール操作単位（allow/ask/deny）で許可を構成するのに対し、Codexはサンドボックスの範囲設計を起点とする思想の違いを指摘しています。\n- **具体的な設定手法**: `extends`を用いた既定プロファイルの再利用、`network_proxy`による通信先のドメイン制限、`prefix_rule`を用いた引数ベースのコマンド制御など、実用的なConfig例を提示しています。\n- **運用の考え方**: 権限を広げることは「失敗しないこと」ではなく「失敗時の影響を最小化すること」であり、自動化の深さを「調査」「ローカル変更」「外部作用」の3段階に分けて設計すべきだと説いています。\n\n確認画面を減らすための無分別な許可ではなく、人間が判断すべき「境界」を明示するための設定指針として非常に有用です。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "セキュリティ設定",
+      "サンドボックス",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}
