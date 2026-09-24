@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:36:29.259433+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevの確率は校正（キャリブレーション）されていない",
+    "url": "https://www.alexmolas.com/2026/09/23/jev-cant-be-calibrated.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "TypeSafeの新モデル「Jev」が提供する「校正済み確率」という主張に対し、データ分布の依存性からその理論的限界と実務的な対処法を指摘する論評。",
+    "summaryBody": "TypeSafeが発表した「Jev」は、非構造化入力から型定義された意思決定と確率を返す「System One Model」として注目されている。学習データなしで汎用分類器として機能する利便性は高いが、筆者はその「確率の校正（Calibration）」の正確性に異議を唱えている。校正はモデル単体ではなく、適用するデータ分布との関係で決まるため、ある環境で校正されていても、異なるユーザー環境（データ分布）では理論上ズレが生じる。実際に、公正なコインの確率を誤認する例も報告されている。結論として、Jevの出力は「絶対的な確率」ではなく「相対的なスコア」として扱い、厳密な判断が必要な場合はプラット・スケーリング（Platt scaling）等による事後の再校正を行うべきだと提唱している。",
+    "topics": [
+      "Jev",
+      "TypeSafe",
+      "確率校正",
+      "機械学習",
+      "分類モデル"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Jev can't be calibrated"
+  }
+}

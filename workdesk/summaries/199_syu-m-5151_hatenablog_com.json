@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:28:31.607225+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexを使うなら、SkillsとPluginsを押さえておきたい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Codexにおける「Skill」と「Plugin」の使い分け、作成基準、および配布方法について、具体的な設計思想と実装手順を解説した実践的なガイド。",
+    "summaryBody": "生成AIエージェント「Codex」を効率的に活用するための「Skill（特定の仕事の手順）」と「Plugin（配布・管理の単位）」の設計指針に関する解説記事です。\n主なポイントは以下の通りです：\n1. **Skillの役割と配置**: 全ての指示を共通ファイル（AGENTS.md）に詰め込むのではなく、特定の状況で動的に呼び出されるSkillに分離することで、コンテキストの消費を抑えつつ精度を高める手法を提示。\n2. **Skill化の5つの判断軸**: モデルの知識不足、組織固有の判断基準、複数工程の自動化、独自ツールの操作、繰り返す失敗への対処という5つの観点から、Skill化すべき対象を整理。\n3. **設計と評価**: 呼び出し条件を定義する`description`と実行手順の本文を切り分け、入力不足時に「推測せず未確認と報告できるか」といった具体的な品質評価を行う重要性を強調。\n4. **Pluginによる配布**: `plugin.json`や`marketplace.json`を用いたパッケージ化と、ローカル環境でのインストール・更新手順。\nAIに「何をさせるか」だけでなく、「いつ、どの基準で選ばせるか」というメタな指示設計の重要性を説いています。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "プロンプトエンジニアリング",
+      "自動化",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

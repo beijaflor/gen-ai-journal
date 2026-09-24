@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:32:26.841762+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare AI Gateway 予算ベースAIモデルルーティング",
+    "url": "https://zenn.dev/takaakisuzuki/articles/e6939a04f9ea9b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cloudflare AI GatewayのSpend LimitsとDynamic Routingを組み合わせ、設定した予算上限に達した際に高価格モデルから安価なモデルへ自動フォールバックさせる手法の解説。",
+    "summaryBody": "Cloudflare AI Gatewayを使用して、LLMの利用コストに応じたモデルの自動切り替えを実現する方法を解説したガイドです。主に「Spend Limits（ドル建ての予算管理）」と「Dynamic Routing（動的ルーティング）」の2機能を組み合わせ、予算超過時に高性能モデル（Claude Sonnet等）から安価なモデル（Workers AI等）へ透過的にフォールバックさせる設定手順を紹介しています。さらに、3段階のカスケード構成、ユーザーやチームごとの個別予算設定（Dimensions）、プロバイダごとの挙動の違い（fail-open/fail-closed）など、本番運用を見据えた実践的な設定例と注意点がまとめられています。",
+    "topics": [
+      "Cloudflare",
+      "AI Gateway",
+      "LLM",
+      "コスト最適化",
+      "AIインフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

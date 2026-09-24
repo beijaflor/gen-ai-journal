@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:35:16.731678+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クロードを2週間で3倍高速化：AnthropicによるAI駆動のパフォーマンス改善手法",
+    "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが自社AI「Claude」を活用し、2週間で主要なユーザー体験を3倍高速化させた際の、決定論的なベンチマーク手法とAI協調開発のプロセスを詳説。",
+    "summaryBody": "Anthropicのエンジニアリングチームは、2週間のスプリントでClaude.aiの主要なユーザー体験を平均3.1倍高速化させた。この成果は、自社AI（内部研究モデルOpus 5.5相当）を開発ループに深く組み込むことで達成された。AIはボトルネックの特定、ベンチマークの構築、改善用PRの作成を担当し、人間がその意思決定と安全性を管理する体制を構築した。\n\n特筆すべきは、「CPU命令数」などの決定論的な指標を導入し、AIが「山登り法（Hill Climbing）」で性能を追求できる環境を整えた点だ。これにより、React初期化前の入力を可能にする静的コンポーザーの導入や、V8エンジンにおけるUTF-16文字列の処理最適化など、3,000件以上の変更をインシデントなしに反映した。AI自身がコードを最適化し、人間がガードレールとして機能する新しいエンジニアリングの形を提示している。",
+    "topics": [
+      "AI駆動開発",
+      "パフォーマンス最適化",
+      "Anthropic",
+      "ソフトウェア工学",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 97
+    },
+    "originalTitle": "How we made claude.ai 3x faster in two weeks"
+  }
+}

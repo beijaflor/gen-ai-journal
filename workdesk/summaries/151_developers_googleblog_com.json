@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:40:17.535174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Antigravity SDKがローカルAIモデルに対応：Gemma 4 26BとLiteRTによるオフライン・エージェント開発が可能に",
+    "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleのAntigravity SDKがLiteRTとGemma 4 26Bを用いたローカル実行に対応し、プライバシーとコスト効率に優れた完全オフラインのAIエージェント構築が可能になりました。",
+    "summaryBody": "Googleは、エージェント開発用フレームワーク「Antigravity SDK」において、ローカルLLMのサポートを正式に発表しました。LiteRT（旧TensorFlow Lite）と最適化されたGemma 4 26B A4Bモデルを利用することで、ローカルGPUを活用した高度な推論がオフラインで実行可能です。特筆すべきは「ハイブリッド・オーケストレーション」構成で、クラウド上のGemini 3.8 Flashがプランナーとなり、ローカルのGemmaインスタンスがコード修正などの実作業を担うことで、トークンコストを抑えつつソースコードの秘匿性を維持できます。また、OllamaやLM Studio等のOpenAI互換サーバーとの連携もプラグアンドプレイで対応しており、既存の推論バックエンドを柔軟に統合できる点も大きな特徴です。",
+    "topics": [
+      "Antigravity SDK",
+      "Gemma 4",
+      "LiteRT",
+      "Local LLM",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing Support for Local AI Models in the Antigravity SDK"
+  }
+}

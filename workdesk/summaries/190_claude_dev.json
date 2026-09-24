@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:31:06.202726+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude および Claude Code で Opus 5.5 を最大限に活用するためのガイド",
+    "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Opus 5.5の自律性と推論能力を最大限に引き出すための、プロンプト設計、Claude Codeでのワークフロー管理、および高度な検証手法に関する実践的なプレイブック。",
+    "summaryBody": "Opus 5.5 は、Claude アプリおよび CLI ツールである Claude Code において、より長時間の自律作業と高度な推論を可能にするモデルです。本ガイドでは、Opus 5.5 の特性を活かしたワークフローの最適化手法を解説しています。主なポイントとして、まずプロンプトから「深く考えて」といった指示を削除することが推奨されています。モデルが自動で推論を行うため、代わりに明確な「完了条件（Finish Line）」を提示することが重要です。また、Claude Code では `CLAUDE.md` を用いて自律実行の境界を定義したり、`TASKS.md` で進捗を管理したりする手法が有効です。さらに、図表の読み取りやドキュメント間の矛盾検知、コードレビューにおける精度向上についても詳述されており、エラー発生時のセーフガード挙動や高速モードの利用方法についてもカバーされています。",
+    "topics": [
+      "Claude 5.5",
+      "Opus 5.5",
+      "Claude Code",
+      "プロンプトエンジニアリング",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Getting the most out of Opus 5.5 in Claude and Claude Code"
+  }
+}

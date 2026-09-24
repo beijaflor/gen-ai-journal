@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:31:47.200298+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 5.5によるピクセルアニメーション生成の検証",
+    "url": "https://zenn.dev/aki1990/articles/1bc5c181ad19f0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Opus 5.5を用いて、自律的な生態系シミュレーションを含む高度なピクセルアートアニメーションを単一HTMLで生成する検証結果を詳説。",
+    "summaryBody": "Claude Opus 5.5の描画・コーディング能力を検証するため、「サンゴ礁の一日」をテーマにしたCanvasアニメーションの生成を行った記録です。外部ライブラリや画像ファイルを一切使用せず、単一のHTMLファイル内にスプライトデータ、Boidsアルゴリズムによる群泳シミュレーション、昼夜の環境変化、捕食者への回避行動などを実装しています。特筆すべきはAIの自己改善能力で、プロンプトで指定していなかったウツボの追加やタコの墨といった独自のアレンジが加えられた点です。技術面では、Canvas 2Dによる整数倍スケーリング、ディザリングを用いた背景描画、レイヤー合成による発光表現など、低解像度ピクセルアート特有の表現手法が的確にコード化されていることが示されています。",
+    "topics": [
+      "Claude",
+      "生成AI",
+      "Canvas",
+      "JavaScript",
+      "ピクセルアート"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}
