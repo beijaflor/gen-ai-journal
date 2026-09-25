@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:03:04.097101+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jev-test-filter: git diff から関連するテストだけを抽出する",
+    "url": "https://zenn.dev/mizchi/articles/jev-test-filter-intro",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI（LLM）を用いてgit diffの差分から影響を受けるテストケースのみを自動選別し、テスト実行を効率化するツール「jev-test-filter」の紹介。",
+    "summaryBody": "mizchi氏によって開発された、Gitの変更差分（diff）を解析して関連するテストだけを実行可能にするCLIツールです。内部で独自のLLMインターフェース「jev」を活用しており、単一のリクエストで大量のテスト項目と差分の関連性を判定できるため、低コストかつ高速なフィルタリングを実現しています。Vitest、Jest、Node:test、Playwright、Cargo test、Go testなどの主要なテストランナーに対応しており、全件実行が困難な大規模プロジェクトや、pre-commit hookでの利用、E2Eテストの絞り込みなどに特に有効です。実際のデモでは、Playwright環境でロジック変更に関連する1件のテストのみを正確に抽出・失敗させており、高い精度を示しています。",
+    "topics": [
+      "AI",
+      "Testing",
+      "Git",
+      "Developer Experience",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

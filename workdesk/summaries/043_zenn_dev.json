@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:48:00.166464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevを、自然言語で分類基準を渡せる識別モデルとして使う",
+    "url": "https://zenn.dev/cybernetics/articles/4f3762bd470fc4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Jevは、質問と分類基準を自然言語で定義することで、高精度な確率値を出力しながら多様なタスクに対応できる、実務適性の高い識別モデルである。",
+    "summaryBody": "Jevは、自然言語によって分類タスクやラベルの定義を柔軟に変更できる識別モデルです。従来の固定された分類器とは異なり、入力データ（state）に加えて質問（instructions）と選択肢の説明（criteria）を渡すことで、条件付き確率 $p(y|x,q,C)$ に基づく推論を行います。\n\n主な特徴は、RLCD（Reinforcement Learning from Contrastive Distillation）を用いた確率のキャリブレーションです。出力される確率値が実際の正解率と整合するように学習されているため、ビジネスロジックにおいて自動化の閾値設定や、確信度が低い事例のみを人間に回すといった運用設計が容易になります。記事では、カスタマーサポートのルーティングや、実験報告書からの特定条件の抽出といった具体的なユースケースを挙げ、構造化された「識別」に特化したJevの利点を解説しています。また、今後はDSPyやGEPAなどのフレームワークを用いて、自然言語による分類基準を自動最適化する手法についても期待が寄せられています。",
+    "topics": [
+      "Jev",
+      "機械学習",
+      "自然言語処理",
+      "識別モデル",
+      "RLCD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

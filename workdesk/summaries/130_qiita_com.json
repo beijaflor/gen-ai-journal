@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:54:43.058942+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevをStrands Agentsの権限管理に組み込んでみる #AWS - Qiita",
+    "url": "https://qiita.com/ShotaOki/items/7403d7bae56b312ac190",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Strands Agentsのフック機能を活用し、Jevを組み込んでツールの実行権限を動的に制御する方法と、Amazon Bedrockとのレスポンス性能比較を解説しています。",
+    "summaryBody": "AWSのAIエージェント構築用ライブラリ「Strands Agents」に、意思決定エンジン「Jev」を組み込む実装ガイドです。StrandsのHook機能を使い、ツールの実行前にJevを介して特定のディレクトリ外へのアクセスを制限する権限管理手法を紹介しています。また、Jevの優位性を検証するため、Amazon Bedrock（Nova Pro）でLatency最適化フラグやMax Token制限を適用した構成とのパフォーマンス比較を行い、Jevが約0.6秒、最適化Bedrockが約1.1秒と、Jevの方が高速に応答することを確認しています。コードベースで具体的な統合方法が示されており、実用的なセキュリティ実装の検討に役立ちます。",
+    "topics": [
+      "Strands Agents",
+      "AWS",
+      "Jev",
+      "Amazon Bedrock",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

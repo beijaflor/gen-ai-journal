@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:37:00.308664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev、LangGraph、Tenuoを用いた安全なエージェント委譲の実践：依存関係更新エージェントの構築",
+    "url": "https://tenuo.ai/blog/jev-scoped-authority",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "意思決定（Jev）、フロー制御（LangGraph）、権限管理（Tenuo）を分離し、依存関係の更新を安全に自動化するエージェントの設計パターンと実装例を解説しています。",
+    "summaryBody": "この記事では、依存関係の更新を自動化するエージェント「safe-upgrade」の実装を通じ、AIエージェントの安全な委譲（Delegation）を実現するアーキテクチャを提案しています。設計の根幹は「判断（Jevによる型定義された意思決定）」「制御フロー（LangGraphによる状態管理）」「権限（Tenuoによるタスク限定の認可）」の3つを分離することにあります。Jevはリポジトリのコンテキストから最適な次の一手を信頼度スコア付きで選択し、LangGraphがそのワークフローを管理。そしてTenuoが各タスク（テスト作成、コード修正等）に対し、最小限かつ短期間の実行権限（Warrant）を付与することで、CI環境等での不正な操作や過剰な権限行使を防ぎます。特に、AIの不確実な判断を確定的コードで検証し、最小権限のサンドボックスで実行させるモデルは、信頼性の高いエージェント開発の重要な指針となります。",
+    "topics": [
+      "AIエージェント",
+      "LangGraph",
+      "Jev",
+      "Tenuo",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Jev in practice: typed decisions, scoped authority"
+  }
+}

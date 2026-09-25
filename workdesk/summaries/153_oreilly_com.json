@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:39:48.821405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeSafeの新型AI「Jev」はAIアプリケーション開発をどう変えるのか？",
+    "url": "https://www.oreilly.com/radar/will-typesafes-jev-change-how-we-build-ai-applications/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeSafeが発表した文章生成を行わず「意思決定」に特化した新型モデル「Jev」が、既存のLLMより最大400倍安価かつ200倍高速に動作し、AI開発のパラダイムを塗り替える可能性を提示している。",
+    "summaryBody": "TypeSafe社がリリースした「Jev」は、文章を一行も書けない代わりに、データの分類、スコアリング、ルーティングという「意思決定」に特化した新しいカテゴリーのモデルです。既存の汎用LLM（GPT-5.6 Terra等）が1つの判断を下すために大量の推論トークンを消費するのに対し、Jevは単一の並列パスで型定義された回答と正確な確率分布を返します。RLCD（Reinforcement Learning for Calibrated Decisions）という手法で訓練されており、モデルの確信度（確率スコア）が実際の正解率と高度に一致（キャリブレーション）しているのが特徴です。これにより、95%の確信度があるものは自動化し、残りを人間に回すといった運用が容易になります。推論の説明テキストは得られないという欠点はあるものの、圧倒的な低コスト・低遅延により、あらゆるステップでAIによるチェックを行う「サンプリング不要」の監視・判定アーキテクチャへの道を開きます。",
+    "topics": [
+      "Jev",
+      "TypeSafe",
+      "LLM-as-a-judge",
+      "RLCD",
+      "AIアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Will TypeSafe’s Jev Change How We Build AI Applications?"
+  }
+}

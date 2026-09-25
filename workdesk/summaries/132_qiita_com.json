@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:54:19.508738+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの権限モデル（Read/Write/Edit/Bash）を全パターン検証した──想定外の挙動と安全な設定の落としどころ",
+    "url": "https://qiita.com/hikariclaude01/items/681ad21c35a17d8e44c6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeの4つの権限レベルを詳細に検証し、Bash権限による制約回避の仕様や、hooks機能を活用した実践的なセキュリティ対策を解説した技術記事です。",
+    "summaryBody": "Claude CodeにおけるAIエージェントの操作権限（Read, Edit, Write, Bash）の実態を体系的に調査したレポートです。検証の結果、Bash権限が許可されている場合、シェルコマンド経由でファイル操作が可能なため、Write/Edit制限が実質的に無効化（バイパス）されるという重要な仕様が明らかにされています。記事では、プロジェクトの機密性に応じた推奨設定（個人開発、チーム開発、本番環境）をマトリクス形式で提示。さらに、`.claude/settings.json`の`hooks`機能を用いた「特定ディレクトリへの書き込み禁止」や「危険コマンドの監査ログ」など、標準設定だけでは防げないリスクへの具体的な防御策をソースコード付きで解説しており、安全なAIエージェント運用のための指針を提供しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "セキュリティ",
+      "Anthropic",
+      "権限管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

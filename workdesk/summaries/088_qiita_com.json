@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:05:24.976644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカル動作するJevっぽいものを調べてたら、なんとマルチモーダル対応もできてた！ #llama.cpp",
+    "url": "https://qiita.com/moritalous/items/41c9402a5dd9d80fc7a9",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "llama.cppとQwen3-VLを用い、1トークン制限とlogprobsを活用することで、ローカル環境で画像入力にも対応した「Jev」風の確率分布型推論を実現する方法を解説しています。",
+    "summaryBody": "本記事では、選択肢ごとの確率分布を1回の推論で返すAIツール「Jev」の機能を、llama.cppとQwen3-VL-4Bを用いてローカル環境で再現する手法を解説しています。出力を1トークンに制限し、logprobsとtop_logprobsオプションを利用して各選択肢のトークン出現確率を取得・正規化することで、約110msという極めて高速な判定を可能にします。特筆すべきはマルチモーダルモデルへの応用で、画像を入力として選択肢形式で回答させる仕組みを構築しています。また、最新のQwen3.5ではなく旧世代のQwen3を選択した理由として、llama.cppのKVキャッシュにおける挙動の違い（ハイブリッド構造による再計算の発生）を実測データから分析しており、エンジニアにとって非常に示唆に富む内容となっています。",
+    "topics": [
+      "llama.cpp",
+      "Qwen3-VL",
+      "Jev",
+      "マルチモーダル",
+      "ローカルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

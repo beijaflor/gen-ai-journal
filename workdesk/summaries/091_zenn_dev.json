@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:04:27.904845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "最近話題のJevはBigQueryのAI関数を安くできるのか？",
+    "url": "https://zenn.dev/jackojacko05/articles/08df79d47f4219",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "意思決定特化型の軽量モデル「Jev」をBigQuery環境で検証し、Gemini 2.5 Flash-Liteと同等の精度を保ちつつ、コストを約4割、レイテンシを約半分に削減できることを示した比較記事。",
+    "summaryBody": "本記事は、判断・選択に特化した小規模AIモデル「Jev」と、Google CloudのGemini各モデルをBigQuery上でのデータ分類タスクで比較した技術検証レポートです。Stack Overflowの質問タグ分類（200件）を用いた実験において、Jevは86.5%の精度を記録し、Gemini 2.5 Flash-Lite（86.0%）を僅かに上回る結果となりました。特筆すべきは費用対効果で、Jevは理論上の推論コストをGemini 2.5 Flash-Liteより約41%削減し、中央レイテンシも約2倍高速化しています。また、最新のGemini 3.1 Proとの比較では、Proが最高精度（87.0%）を出したものの、コストがJevの約61倍に跳ね上がることも判明。BigQueryのRemote Functionを利用した実装方法や、構造化出力を扱う際の注意点など、実務的な知見が豊富に盛り込まれています。",
+    "topics": [
+      "Jev",
+      "BigQuery",
+      "Gemini",
+      "LLM",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

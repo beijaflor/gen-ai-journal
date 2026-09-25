@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:50:37.709948+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングタスクにおいて安価なモデルが逆に高コストになる理由：Fiddler AIによる調査レポート",
+    "url": "https://www.fiddler.ai/blog/cheaper-ai-models-coding-agent-cost",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "トークン単価が安いLLMは、冗長な回答や「架空のセッション」生成によってコンテキストを肥大化させ、最終的なタスク完了あたりのコストが上位モデルより高くなる場合があることが明らかになりました。",
+    "summaryBody": "Fiddler AIは、複数のLLM（ClaudeやGeminiの次世代モデルを想定したシミュレーション）を用いて、コーディングエージェントの実行コストと成功率を調査しました。その結果、トークン単価が安価な「Haiku」クラスのモデルは、1ターンで大量の回答（時に2万トークン以上）を生成し、実行されていないコマンドの結果を勝手に捏造して予測し続ける「架空のセッション」という挙動を示しました。これにより、後続のターンでの入力コンテキストが急増し、結果としてタスク完了あたりのコストが「Sonnet」クラスの上位モデルの10倍近くに達するケースが確認されました。また、公開テストはパスしても隠されたテストで失敗する「静かな失敗（Quiet Failure）」の存在も指摘されており、単純な単価比較ではなく、エージェントのループ全体を通じた観測と評価が不可欠であると結論付けています。",
+    "topics": [
+      "LLM Economics",
+      "Agentic AI",
+      "Cost Optimization",
+      "Benchmarking",
+      "Observability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Why Cheaper Models Cost More to Complete Coding Tasks | Fiddler AI Blog"
+  }
+}

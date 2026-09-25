@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:32:53.776830+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grok 4.7 500k が Cursor に追加：料金体系とエフォート設定の詳細解説",
+    "url": "https://zenn.dev/yukkie1114/articles/41664f5d08819e",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AIエディタCursorに最新モデルGrok 4.7の500kコンテキスト版が追加され、利用条件に応じて通常料金の2倍から3倍のコストが発生する料金体系の詳細が明らかになりました。",
+    "summaryBody": "### 概要\nCursorにおいて最新のAIモデル「Grok 4.7」が利用可能になりました。本記事では、特筆すべき変更点である「500kロングコンテキスト」の導入と、それに伴う複雑な料金構造を解説しています。\n\n### 料金とコンテキストの仕組み\n- **価格変動**: 標準の256kコンテキストに対し、500kを選択するとトークン単価が2倍になります。さらにFastモードを有効にすると、最大で通常モデルの3倍の料金が適用されます。\n- **エフォート設定**: 4段階（low / medium / high / xhigh）の思考レベル設定により、精度とコストのトレードオフを調整可能です。高レベルほど思考トークンが増え、実質的なコストが増加します。\n- **APIとの比較**: SpaceXAIのAPI直接利用時と同様、特定トークン数（20万トークン）を超えると自動的にロングコンテキスト料金が適用される仕組みがCursor側でも整備されました。\n\n### 今後の見通し\nCursor独自の「Composer」シリーズとGrokの住み分けについても触れられており、速度重視のComposerと、先端性能のGrokという棲み分けが継続される一方、長期的には統合の可能性についても考察されています。",
+    "topics": [
+      "Cursor",
+      "Grok 4.7",
+      "SpaceXAI",
+      "LLM料金体系",
+      "AI開発ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

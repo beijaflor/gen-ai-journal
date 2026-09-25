@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:25:00.149524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT Webの逆引きエンジニアリング：OpenAIはいかにして10億人のユーザーに対応したか",
+    "url": "https://performance.dev/chatgpt",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChatGPTウェブ版がNext.jsからReact Routerへ移行し、徹底したSSRとサーバー評価の機能フラグ、そして高度なBot対策によって10億人規模のトラフィックを処理する技術的舞台裏を詳説した記事。",
+    "summaryBody": "ChatGPTウェブ版のフロントエンド・アーキテクチャを詳細に分析した本記事では、OpenAIが「世界中の誰もが即座にAIを利用できる」という目標をいかに技術で解決したかを明らかにしています。主な技術的特徴は以下の通りです。\n\n1. フレームワークの変遷: 初期はNext.jsでしたが、現在はReact Router 7（旧Remix）を採用し、強力なストリーミングSSRを活用しています。\n2. 技術スタック: React 19、Tailwind CSS、Radix UI、TanStack Queryといった標準的なライブラリを組み合わせつつ、構成要素を極限まで最適化。入力欄にはProseMirror、回答のコードブロックにはCodeMirrorを使用しています。\n3. パフォーマンスへの執着: Webフォントを排除してシステムフォントを使用し、テーマ切り替え用スクリプトをインライン化。また「コンポーザーが入力可能になるまでの時間（TTFI）」を最重要指標とし、不要なインポートを徹底して遅延させています。\n4. 大規模実験システム: 500以上の機能フラグをサーバーサイドで評価し、HTMLにインライン化。実験データの欠落を防ぐため、独自のドメイン経由でロギングを行っています。\n5. セキュリティと摩擦の排除: ログイン不要で利用可能にするため、Cloudflareのチャレンジや独自システム「Sentinel」をバックグラウンドで実行し、ユーザー体験を損なわずに強力なBot対策を講じています。\n\n総じて、独自のカスタムフレームワークに頼るのではなく、標準的なツールを極限まで使いこなし、計測と最適化を繰り返すことで世界最大級のウェブアプリを構築している点が強調されています。",
+    "topics": [
+      "React Router",
+      "Web Performance",
+      "OpenAI",
+      "Server-Side Rendering",
+      "Frontend Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Reverse Engineering ChatGPT Web: How OpenAI Built for a Billion Users"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:49:13.314581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevで水平思考クイズのWebアプリを作ったよ【ウミガメのスープ】",
+    "url": "https://qiita.com/tetsuro731/items/daa5c5938d874af3a335",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "判断に特化した新型AIモデル「Jev」を活用し、ユーザーの質問に対して「はい/いいえ」で回答する水平思考クイズ（ウミガメのスープ）のWebアプリを構築した事例紹介。",
+    "summaryBody": "TypeSafe AIが公開した、文章生成を行わず「判断」に特化した高速・安価なAIモデル「Jev」を用いたWebアプリの開発記録です。水平思考クイズ（ウミガメのスープ）において、ユーザーからの自由な質問に対し「Yes/No」を判定するロジックを、従来のLLMよりも高精度かつ低コストに実装しています。技術構成にはFastAPIとVercelを採用し、日本語の否定疑問文における「Yes/No」の解釈の違いといった、多言語対応モデル特有の落とし穴とその解決策についても共有されています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "FastAPI",
+      "水平思考クイズ",
+      "TypeSafe AI"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

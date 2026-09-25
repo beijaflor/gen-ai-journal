@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:27:18.720946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "全社に OpenCode + LiteLLM を導入してコストを抑えつつ AI 活用を進めている話",
+    "url": "https://zenn.dev/jtcc/articles/7e74fef42580a1",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "日本トレカセンターが、OpenCode と LiteLLM を組み合わせた AI ゲートウェイ基盤を構築し、ガバナンスの確保と AI 利用コストを 10 分の 1 以下に削減した事例。",
+    "summaryBody": "日本トレカセンターにおける、AI ツールの乱立とコスト増大を解決するための全社的な AI 導入事例です。フロントエンドに AI エージェントの「OpenCode」、バックエンドに LLM ゲートウェイの「LiteLLM」を採用し、全社員約 200 名が同一の入り口から AI を利用する環境を整えました。LiteLLM の採用により、各社員への週次予算上限設定、プロンプトのログ取得、モデルの動的切り替えが可能になっています。特に、モデルを直接指定せず「Low/Mid/High/XHigh」といった「effort（労力）」ベースの名称で抽象化することで、利用者の設定を変えずに裏側のモデル（DeepSeek 等）を最適化できる運用を実現しています。また、Cloudflare の MCP portal を利用した MCP サーバーの一本化や、非エンジニアでも容易なワンライナーによる配布など、運用の効率化とコスト削減（導入前の 10 分の 1 以下）を両立させた構成となっています。",
+    "topics": [
+      "LiteLLM",
+      "OpenCode",
+      "AI Gateway",
+      "MCP",
+      "コスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    }
+  }
+}

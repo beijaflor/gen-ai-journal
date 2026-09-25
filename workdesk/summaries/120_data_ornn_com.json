@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:57:30.789780+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オープンウェイト推論の経済学とGPUの有効寿命：旧世代ハードウェアが価値を維持する理由",
+    "url": "https://data.ornn.com/publications/the-economics-of-open-weight-inference",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "オープンウェイトモデルの台頭により、A100などの旧世代GPUが特定の推論ワークロードにおいて最新世代を上回る経済合理性を示し、ハードウェアの収益寿命が大幅に延びている。",
+    "summaryBody": "Ornn Dataによる本レポートは、NVIDIAの旧世代GPU（特にAmpere世代）が、最新のHopperやBlackwell世代の登場後も依然として高い経済的価値を維持している現状を分析しています。主な発見として、オープンウェイト（OW）モデルを自前でホストする場合、クローズドモデルの約5分の1のコストで運用できるケースがあり、特に「gpt-oss-120b」のようなスパース（学習済み疎結合）モデルでは、A100がH100よりもトークンあたりのコストが低くなる逆転現象が確認されました。市場データではA100の稼働率が90%に達しており、5年間の長期リース価格の維持率も80.2%と、最新世代より安定しています。これは、エージェントやバッチ処理、強化学習といった「レイテンシに寛容なワークロード」が、コスト効率の高い旧型ハードウェアを好んで利用しているためです。結論として、ハードウェアの有用性はチップの年数ではなく、その上で走るワークロードの需要とコストによって決まり、オープンソース化の流れが旧型GPUの「減価償却」の常識を覆しつつあります。",
+    "topics": [
+      "GPU Economics",
+      "Open-Weight Models",
+      "NVIDIA A100",
+      "AI Inference Cost",
+      "Compute Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "Open-Weight Inference Economics & GPU Useful Life | Ornn Data"
+  }
+}

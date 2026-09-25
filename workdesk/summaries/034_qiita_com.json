@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:26:10.834807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevで要件定義書をレビューするアプリを作った",
+    "url": "https://qiita.com/miso_taku/items/b5e2150055933b51fba3",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "文章生成を行わず「判断」に特化したAIモデル「Jev」を活用し、要件定義書を19の観点で高速・安価に並列レビューするStreamlitアプリの開発事例。",
+    "summaryBody": "本記事は、TypeSafe AIが2026年9月に公開した「Jev」という『文章を生成しない』AIモデル（System Oneモデル）を用いた、要件定義書の自動レビューアプリの実装解説です。Jevは心理学のシステム1（直感・判断）に相当する処理を担い、Yes/Noの確率判定（Noul）、スコアリング、カテゴリ分類のみを出力します。これにより、従来のLLMで課題となっていたJSONパースの失敗やハルシネーション、コンテキストの劣化を数学的に回避できるのが最大の特徴です。アプリはStreamlitとPythonで構築されており、要件定義書を19の独立した観点（目的、スコープ、異常系、セキュリティ等）から並列評価し、結果をレーダーチャート等で可視化します。アドバイス文面はAIに生成させず、AIの判断結果に人間が定義した固定の改善ガイダンスを紐付けることで、安定した品質のレビュー体験を実現しています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "Streamlit",
+      "要件定義",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

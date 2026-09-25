@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:29:56.228581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mixture of Experts 基礎技術メモ",
+    "url": "https://iwashi.co/2026/09/23/mixture-of-experts-moe-memo",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek-V3やKimi K3、MiMo-V2.6等の最新LLMに共通するMixture of Experts (MoE) の基礎と、エキスパート崩壊を防ぐ最新の負荷分散アルゴリズムを解説した技術メモ。",
+    "summaryBody": "本記事は、近年の大規模言語モデルで標準となりつつあるMixture of Experts（MoE）の仕組みと、その性能を左右するルーティング技術を解説しています。主な内容は以下の通りです。 **1. MoEの基本構造**: TransformerのFFN層をスパースなエキスパートに置き換えることで、計算量を抑えつつモデル容量を増大させる仕組みを詳説。 **2. ルーティングの課題と解決**: 特定のエキスパートに負荷が集中する「エキスパート崩壊」を防ぐため、従来の補助損失（Auxiliary Loss）の限界と、DeepSeek-V3が導入した「動的バイアス（Aux-loss-free）」の利点を比較。 **3. 最新アルゴリズム**: 896個という膨大なエキスパートを持つKimi K3で採用された「Quantile Balancing」を取り上げ、統計的な分位点を用いた安定的な負荷分散の仕組みを紐解きます。 **4. 実装のトレードオフ**: 推論に必要なGPUメモリの制約や、共有エキスパートの有効性に関する最新の知見（DeepSeek対OLMoE）についても言及されており、最新LLMの設計思想を理解するのに最適な資料です。",
+    "topics": [
+      "Mixture of Experts (MoE)",
+      "DeepSeek-V3",
+      "Kimi K3",
+      "負荷分散",
+      "LLMアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:31:59.647759+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセッションログ(.jsonl)をjqで読み解く：コスト・会話フロー・コンテキストの可視化",
+    "url": "https://zenn.dev/yando/articles/fdbe38474378d2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの実行履歴が保存されるJSONLファイルをjqで解析し、トークン消費やコスト、コンテキスト注入の内訳を正確に把握するための技術ガイド。",
+    "summaryBody": "Claude Codeのセッション履歴（~/.claude/projects/内に保存されるJSONLファイル）の内部構造を、jqコマンドを用いた実地検証に基づき詳解しています。主な内容は、1) 拡張思考（Thinking）によるメッセージ分割の挙動と、リクエストIDに基づいた重複排除の重要性。2) プロンプトキャッシュ（cache_read/cache_creation）が累積していく仕組みの可視化。3) `cost-state`行に含まれる、本体（Sonnet）とタイトル生成（Haiku）の混在コストの分離方法。4) ツール実行結果やコンテキスト注入（attachment）の構造特定です。単純な合算では誤差が生じやすいトークン数やコストを、生データから正しく抽出する具体的なフィルタリング手法を提示しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "jq",
+      "JSONL",
+      "プロンプトキャッシュ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

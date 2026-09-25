@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:48:15.477740+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMによる「Jev」風判断モデルの可能性検証：Gemma 3を用いた3つのアプローチ比較",
+    "url": "https://zenn.dev/hakotech/articles/5c2fe2eb8a6051",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemma 3 270Mを用い、文章生成を介さずに選択肢の確率を直接出力する「Jev」のような判断モデルの構築手法を、3つの構成で比較検証した技術レポート。",
+    "summaryBody": "この記事では、文章を長々と生成する代わりに判断結果と確率を直接返す「Jev」の思想を、ローカルLLM（Gemma 3 270M IT）で実現するための3つの実装案（案A：Logit読み取り、案B：分類ヘッド置換、案C：候補ごとの共有採点ヘッド）を比較検証しています。日本語の3択分類タスク（JNLI）を用いた実験の結果、LoRAによる追加学習を行うことで、全ての案で8割以上の正答率を達成しました。特に案B（固定クラスヘッド）と案C（共有採点ヘッド）は、精度と推論速度（中央値約28ms）の両面で通常生成を上回る結果を示しています。また、Temperature Scalingによる確率校正の重要性や、プロンプト内の選択肢順序に対する頑健性の評価も行われており、実用的な判断専用モデルを構築するための具体的な知見がまとめられています。単なる精度の比較に留まらず、生成ループを排除することによる速度変化やメモリ使用量まで踏み込んだ詳細な分析が特徴です。",
+    "topics": [
+      "Gemma",
+      "LLM",
+      "LoRA",
+      "機械学習",
+      "自然言語処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

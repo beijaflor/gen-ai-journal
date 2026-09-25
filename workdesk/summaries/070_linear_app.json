@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:09:17.341664+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングがCIをボトルネックにする：Linearが取り組んだCI再構築の記録",
+    "url": "https://linear.app/now/ci-bottleneck-reworked",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる開発加速で顕在化したCIの遅延を解消するため、Linear社がインフラ刷新、依存関係の最適化、テスト並列化の改善によりPR待機時間を短縮した技術ドキュメント。",
+    "summaryBody": "AIエージェントの普及によりコード生成が加速する中、Linear社はCI（継続的インテグレーション）が開発のボトルネックとなり、コストと待機時間が増大する課題に直面しました。同社はこの問題に対し、4つの主要な改善策を講じました。第一に、インフラをGitHub Actionsから高速なサードパーティ製ランナーへ移行し、コンパイラをtsgoへ刷新。第二に、リンターを型情報に依存しない静的解析ベース（Oxlint等）へ移行し、メモリ使用量と実行時間を大幅に削減。第三に、モノレポでの依存関係インストールの最適化や「キャッシュより再ビルドの方が速い」ケースの特定により、セットアップ時間を44%削減。最後に、Vitestのテスト実行においてファイル分割による負荷の均一化と、安全なテストにおける分離（Isolation）の無効化を導入しました。これらの結果、テストスイートが4倍に増加したにもかかわらず、PR待機時間を5分台に短縮し、ランナー稼働時間を大幅に削減することに成功しました。AI時代の開発においてCIの効率化が必須であることを示す具体的な事例です。",
+    "topics": [
+      "CI/CD",
+      "Linear",
+      "Performance Optimization",
+      "TypeScript",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 95
+    },
+    "originalTitle": "AI coding has made CI a bottleneck, so we reworked ours to keep up"
+  }
+}

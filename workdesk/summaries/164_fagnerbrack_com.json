@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:44:44.820407+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI-Nativeな開発の極致：20年の経験とAIを融合させた「Readplace」の構築事例",
+    "url": "https://fagnerbrack.com/heres-what-ai-native-with-stable-infra-looks-like-9f17cdb61459",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "20年のエンジニア経験を持つ開発者が、AIと高度な自動化を駆使して、通常なら数億円の予算が必要な規模の読書ツール「Readplace」をわずか7ヶ月で単独構築した手法の全貌。",
+    "summaryBody": "20年の経験を持つシニアエンジニアが、AI（Claude等）と堅牢なエンジニアリング・プラクティスを組み合わせることで、1人で大規模チームに匹敵する成果を出す「AI-Native」な開発手法を詳細に解説しています。構築された「Readplace」は、TLSフィンガープリントまで考慮した高度なWebクローラー、並列OCR、OAuth 2.1サーバー、そしてPulumiによる大規模なAWS環境（52のLambda、71のキュー等）を備えた本格的なSaaSです。13,000件以上のテストによる100%近いカバレッジの維持や、AIによるコードレビュー・CIエラーの自動修正ワークフローなど、AIを「単なるコード生成」ではなく「開発プロセスの構成要素」として深く組み込んでいます。インフラ、テスト、デプロイの自動化にAIを統合することで、圧倒的な生産性と99.9%の稼働率を両立させる、次世代のエンジニアリング像を提示しています。",
+    "topics": [
+      "AI-Native Engineering",
+      "LLM Automation",
+      "DevOps",
+      "AWS Pulumi",
+      "Software Quality Assurance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Here's What AI-Native Looks Like — How I use AI with 20 years of engineering experience"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:43:38.675546+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソフトウェア・ファクトリー・パターンの試行：AIエージェントによる自律的なプロジェクト推進",
+    "url": "https://lethain.com/software-factory-experiment/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントがプロジェクトの目標定義から指標の監視、タスクの実行までを自律的にループさせる「ソフトウェア・ファクトリー・パターン」の概念と実装、その依存関係を解説した記事。",
+    "summaryBody": "エンジニアリング管理の第一人者であるWill Larson氏による、2026年時点の最先端なAI活用事例の紹介です。著者は「ソフトウェア・ファクトリー・パターン」を、広範な目標に対してエージェント駆動のハーネス（Agent Fleet）をループさせ、進捗を自動化する手法と定義しています。このプロセスには、NotionのRFCとDatadog/Snowflakeの指標を用いたプロジェクトの監査、Linearでのタスク自動生成・更新、そしてPR作成やレビュー依頼などの実作業が含まれます。成功の鍵は、MCP（Model Context Protocol）を通じたデータアクセス、Linearへの全社的な移行、そして個人のPCに依存しないオーケストレーション環境の構築という「複数の技術要素の積み重ね」にあると説いています。リリース後の継続的な指標監視にも有効であり、属人的な状態把握を排除する組織的なメリットも強調されています。",
+    "topics": [
+      "AI Agents",
+      "Software Factory Pattern",
+      "Engineering Management",
+      "MCP (Model Context Protocol)",
+      "Linear"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Trying the Software factory pattern."
+  }
+}

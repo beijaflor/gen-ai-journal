@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:56:01.504477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unreal Agent — 非同期ツール管理によるエージェントの低コスト化と高速化",
+    "url": "https://unreallabs.ai/blog/unreal-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Unreal Agentは、ツール呼び出しを完全に非同期化する独自のハーネス設計により、性能を損なうことなく最大40%のコスト削減を実現する次世代のAIエージェントフレームワークです。",
+    "summaryBody": "Unreal Labsが開発した「Unreal Agent」は、AIエージェントの実行におけるツール管理のオーバーヘッドを削減するためのハーネス（実行基盤）です。従来のSDKとは異なり、ツールの実行をバックグラウンドで非同期に行い、モデルが実行完了を待機したりポーリングしたりする際のトークン消費を抑制します。これにより、ユーザーはツール実行中もエージェントに指示を出し続けることが可能になり、GPT-6 Astraを用いたベンチマーク（Terminal-BenchやSWE-Atlasなど）では、Codex比で最大40%のコスト削減を達成しました。Go言語ライブラリや実行用バイナリとして提供され、プロダクション環境での効率的なエージェント運用を支援します。",
+    "topics": [
+      "AI Agents",
+      "LLM Harness",
+      "Cost Efficiency",
+      "GPT-6",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Unreal Agent — Unreal Labs"
+  }
+}

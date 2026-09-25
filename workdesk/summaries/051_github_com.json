@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:27:32.786274+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LocalJev: DiffusionGemmaを活用したJev互換のローカル意思決定APIブリッジ",
+    "url": "https://github.com/githubnext/localjev",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "DiffusionGemmaを用いてJevプロトコルの構造化意思決定を実現する、TypeScript/Bun製のローカルAPIブリッジ。",
+    "summaryBody": "GitHub Nextによる「LocalJev」は、構造化された意思決定APIであるJevプロトコルを、DiffusionGemmaなどのモデルを動かすOpenAI互換エンドポイント（oMLX等）で利用可能にするブリッジです。本来のOpenJevがロジットを直接読み取るのに対し、LocalJevはプロンプトを通じてモデルに確率を自己報告させ、JSON形式で結果を取得・検証するアプローチをとっています。これにより、専用のvLLM拡張がない環境でもポータブルにJevの型付き意思決定（分類、スコア、確信度計算など）をエミュレートできます。Bun 1.2+で動作し、Mac上でのローカル推論に最適化されています。",
+    "topics": [
+      "DiffusionGemma",
+      "LLM",
+      "GitHub Next",
+      "Jev Protocol",
+      "Bun"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - githubnext/localjev: A local, Jev-compatible POST /v1/systemone API written in TypeScript for Bun, backed by DiffusionGemma through an OpenAI-compatible Chat Completions endpoint."
+  }
+}

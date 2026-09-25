@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:50:51.956408+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DocJev: Jevを使用した高速なドキュメント分類・分割ツール",
+    "url": "https://github.com/jerryjliu/docjev",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "JevエンジンとローカルOCRを組み合わせ、PDFやOffice文書の高速な分類および論理的な分割を実現するPythonライブラリ。",
+    "summaryBody": "DocJevは、Jevエンジンを活用した高速なドキュメント分類・分割のためのオープンソースツールです。PDF、DOCX、PPTX形式に対応し、自然言語で記述されたルールに基づき、ドキュメントのカテゴリ判定や、1つのファイル内に含まれる複数文書の境界特定（スプリット）を行います。特筆すべきは、GPT-5.6 Luna等の最新LLMと比較して同等の精度を維持しつつ、4〜6倍の高速な推論（100〜300ms程度）を実現している点です。ローカルOCRのLiteParseを標準とし、難読な文書にはLlamaParse（クラウドOCR）も併用可能です。実行結果をブラウザで視覚的に確認・比較できるデモアプリも同梱されています。",
+    "topics": [
+      "ドキュメント分類",
+      "PDF分割",
+      "OCR",
+      "Python",
+      "Jev"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - jerryjliu/docjev: A very fast document classifier/splitter using Jev · GitHub"
+  }
+}

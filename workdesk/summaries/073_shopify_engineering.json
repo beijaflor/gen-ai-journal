@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:10:47.748107+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Helix: Shopifyアプリのネイティブ移行を支える内部ツール",
+    "url": "https://shopify.engineering/helix",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ShopifyがReact NativeからSwift/Kotlinへの大規模な移行を加速させるために開発した、LLMと4つの厳格な品質ゲートを組み合わせた内部ツール「Helix」の詳解。",
+    "summaryBody": "Shopifyは、大規模アプリをReact Nativeからネイティブ（Swift/Kotlin）に再構築するプロジェクトにおいて、LLMを活用した社内ツール「Helix」を導入しました。Helixは、大規模なタスクを「チェックポイント」という小さな作業単位に分割し、1回で完璧なコードを出力するのではなく、反復的な検証を通じて品質を「収束」させる設計思想を持っています。各チェックポイントは、CLIテストによる振る舞いの検証、Geminiの視覚能力を用いたUI比較レビュー、2つの独立したエージェントによる敵対的コードレビュー、そして最終的な人間のエンジニアによる承認という4つの厳格なゲートを通過する必要があります。この仕組みにより、高いコード品質とデザインの一貫性を維持しながら、従来では不可能な速度での移行を実現しています。",
+    "topics": [
+      "Shopify",
+      "LLM",
+      "ネイティブ移行",
+      "AIエージェント",
+      "モバイルアプリ開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Helix: The internal tool powering our Shopify app's native migration (2026)"
+  }
+}

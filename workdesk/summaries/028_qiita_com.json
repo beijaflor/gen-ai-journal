@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:23:16.073487+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMの代わりになる？ 文章を生成しないAI「Jev」を日本語で試してみた",
+    "url": "https://qiita.com/harupython/items/fbe98be6d136d5b9d14a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIが発表した、文章生成を行わず「判断」と「確率」の出力に特化した新しいAIモデル「Jev」の仕組みと日本語での検証結果を紹介する記事です。",
+    "summaryBody": "TypeSafe AIが2026年9月に発表した「System One Model」であるJevの解説と検証レポートです。Jevは一般的なLLMとは異なり、テキストやコードを生成せず、あらかじめ定義された型（Choice、Score、Noul）に沿って分類や評価、Yes/No判定を返します。独自のアーキテクチャにより、LLMの構造化出力よりも高速かつ安価（100万トークンあたり0.042ドル）に動作し、判断の確率分布（校正された確率）を返すのが特徴です。記事内では日本語による12項目の同時判定をPlaygroundおよびPython SDKから実行し、QiitaとZennの投稿先選定や技術的深さのスコア化が実用的な精度で行えることを示しています。また、RLCD（確率校正のための強化学習）による信頼性の向上や、Discord Botでのスパム判定などの具体的な活用イメージについても触れられています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "機械学習",
+      "LLM",
+      "構造化出力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

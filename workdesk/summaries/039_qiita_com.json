@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:49:01.425130+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevは学習なしに使えるカテゴリ分類器だ！ということでMNISTやらせてみたらダメダメだった件",
+    "url": "https://qiita.com/segavvy/items/b08eee93a0abe0c0726d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AI「Jev」に対し、MNISTの画像データをASCIIアートや数値行列などのテキスト形式に変換して分類を試みたが、精度が低く画像認識タスクへの適用は困難であると結論づけた検証記事。",
+    "summaryBody": "学習不要のカテゴリ分類器「Jev」の性能を検証するため、手書き数字データセット（MNIST）を用いた実験結果をまとめています。Jevはテキストベースのモデルであるため、画像をASCIIアート、2次元の数値行列、濃淡文字、座標配列といった様々なテキスト形式に変換して入力しましたが、正解率は38%程度と振るわない結果となりました。記事では比較としてGPT-5 nanoやGPT-5.6 Luna（推論指定含む）を用いた検証も行っていますが、テキスト経由での図形認識には限界があることを指摘しています。画像入力が可能なマルチモーダルモデルと比較しても、テキスト化による解釈は精度・コスト・速度の面でメリットが薄く、餅は餅屋（画像は画像認識モデル）という結論を裏付ける内容となっています。",
+    "topics": [
+      "Jev",
+      "MNIST",
+      "機械学習",
+      "ゼロショット分類",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 60,
+      "annexPotential": 90,
+      "overall": 75
+    }
+  }
+}

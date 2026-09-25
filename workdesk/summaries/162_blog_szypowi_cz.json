@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:37:49.807281+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeにおけるAGENTS.md読み込みの制約とテレメトリ設定の影響",
+    "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code 2.1.277以降のAGENTS.mdサポートは、テレメトリが無効だとリモート機能フラグを取得できず、ローカルファイルを静かに無視する仕様であることが判明しました。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」がバージョン2.1.277で導入したAGENTS.md（複数エージェント用設定ファイル）のサポートについて、重大な挙動が報告されています。この機能は内部的にリモートの機能フラグ（tengu_agents_md_mod）に依存しており、テレメトリ（DISABLE_TELEMETRY）や非必須通信（CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC）を無効化している場合、フラグの取得に失敗してAGENTS.mdが読み込まれません。この際、警告等は一切出ず、ローカルにあるファイルが黙って無視されます。筆者はバイナリの解析とカナリアテストを通じてこの挙動を特定しました。回避策として、CLAUDE.mdに「@AGENTS.md」と1行記述して明示的にインポートする方法を提示しつつ、ローカルファイルの読み取りがリモートフラグに依存する設計を批判しています。",
+    "topics": [
+      "Claude Code",
+      "AGENTS.md",
+      "Anthropic",
+      "Telemetry",
+      "Command Line Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Claude Code reads AGENTS.md only when telemetry is on"
+  }
+}

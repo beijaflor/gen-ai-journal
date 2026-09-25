@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:23:31.329053+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeek-V4.1 Flash: KVキャッシュ圧縮の限界を追求するアーキテクチャ詳解",
+    "url": "https://zartbot.github.io/blog/model_arch/dsv41flash_arch/en.html",
+    "language": "zh",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeek-V4.1 Flashは、Causal Encoder-Decoder、CSA2、階層型インデクサー、FP4 KVキャッシュを組み合わせ、KVキャッシュ量をトークンあたり890バイトまで圧縮し、推論効率を極限まで高めたモデルである。",
+    "summaryBody": "DeepSeek-V4.1 Flashの技術レポートに基づき、KVキャッシュ圧縮の極限に挑むアーキテクチャを詳細に分析している。本モデルは、ロングコンテキストにおけるエージェント・ワークフローのコストと遅延を削減することを主目的としている。核となる革新は以下の4点に集約される：\n1. **Causal Encoder-Decoder (CED)**: 前半20層をEncoder、後半20層をDecoderとし、DecoderのGlobal KVをEncoderの最終隠れ状態から生成することで、プリフィル時の計算量を大幅に削減（アクティブパラメータはプリフィル時8B、デコード時16B）。\n2. **CSA2 (Compressed Sparse Attention 2)**: チャンネル、シーケンス、レイヤーの3次元で圧縮を実施。「Full」「Reindex」「Reuse」の3モードを使い分け、特定のレイヤー間でKVやインデックスを共有する「クロスレイヤー再利用」を導入した。\n3. **Hierarchical Sparse Indexer (HSI)**: 超長文コンテキストにおいて、ブロック単位の粗いフィルタリングとトークン単位の精緻な選択を組み合わせることで、デコード時の計算ボトルネックであるインデックス計算を定数時間化している。\n4. **FP4量子化**: 精度劣化を最小限に抑えつつメインKVキャッシュをFP4形式で保持し、メモリ使用量を従来のFP8からさらに半減させた。\nこれらの統合により、従来のモデルに比べKVキャッシュのメモリ占有率を1/4〜1/8に削減し、100万トークンのコンテキスト処理を極めて効率的なコストで実現している。",
+    "topics": [
+      "DeepSeek-V4.1 Flash",
+      "KV Cache Compression",
+      "CSA2",
+      "Causal Encoder-Decoder",
+      "Sparse Attention"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "DeepSeek-V4.1 Flash: Pushing the Limits of KV Cache Compression"
+  }
+}

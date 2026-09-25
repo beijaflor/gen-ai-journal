@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:30:24.826509+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev的なDecision Modelの実現方式を分類してみる",
+    "url": "https://blog.monochromegane.com/blog/2026/09/21/jev/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "意思決定特化型AI「Jev」の推論速度と汎用性を再現するための手法を、LLMのLogitを直接利用する方式と専用のDecision Headを学習する方式の2系統に整理・解説。",
+    "summaryBody": "TypeSafe AI社が発表した意思決定モデル「Jev」のアーキテクチャを解明・再現しようとする試みを技術的に分類した記事です。主な分類として、学習済みLLMの語彙logitsを利用してdecode過程を省く「Direct Logit型」と、BERT等のEncoderやQwen等のDecoderの潜在表現から専用の分類ヘッドを構築する「Decision Head型」の2つを提示しています。Direct Logit型はオープンモデルの知識をそのまま活用できる汎用性が魅力ですが、複数質問への並列化やスコアのキャリブレーションに課題が残ります。一方、Decision Head型は計算効率や確信度の推定において優位性がありますが、タスクに応じたファインチューニングの必要性が高まる傾向にあります。記事内ではlayaやkevといった具体的な再現実装例が紹介されており、特に「確信度（Confidence）」を実務に組み込む重要性が強調されています。",
+    "topics": [
+      "Jev",
+      "意思決定モデル",
+      "LLMアーキテクチャ",
+      "機械学習",
+      "推論の高速化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

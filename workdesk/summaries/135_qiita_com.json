@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:53:37.614956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevを用いたRSSフィードのスコアリング：Claude Haiku 4.5との比較検証",
+    "url": "https://qiita.com/canadie/items/b2dafc4995b15b2dbb53",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RSSフィードの自動スコアリングにおいて、JevはClaude Haiku 4.5に対し圧倒的な低コスト・高速性を実現し、構造化データによる柔軟な重み付け調整を可能にする。",
+    "summaryBody": "本記事では、RSSフィードの記事評価を自動化するツールとして、構造化データの評価・返却に特化した「Jev」を検証し、Claude Haiku 4.5との比較を行っています。150件のリクエストを用いた実測では、JevがHaikuに対して速度で約5.5倍、コストで約25.5倍という極めて高い優位性を示しました。LLMが抱える出力フォーマットの不安定さやプロンプトエンジニアリングの難しさを解消し、数値化された評価項目をロジック側で調整できるメリットがあります。課題として最新用語の追従性に弱点があるものの、RSSランカーのような定型的な評価タスクにおいて非常に強力な選択肢であることが示されています。",
+    "topics": [
+      "Jev",
+      "RSS",
+      "Python",
+      "Claude",
+      "AIスコアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

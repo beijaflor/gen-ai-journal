@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:49:37.892633+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "やっぱりJevと話したい！",
+    "url": "https://qiita.com/Syuparn/items/f4a6c4ad408d36957d41",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "判断特化型でテキストを返さないAI「Jev」を使い、感情選択やスコアリング機能を活用して言葉を交わさない恋愛シミュレーターを構築したユニークな試み。",
+    "summaryBody": "LLMとは異なり、テキスト生成ではなく「判断（Yes/No、選択、スコアリング）」に特化したAIモデル『Jev』を活用した開発事例です。Jevは高速・低コストで動作する反面、言葉での対話ができません。筆者はこの制約を逆手に取り、ユーザーの入力を受けてJevに『現在の感情』を選択させ、『親密度の変化』をスコアリングさせることで、表情の変化や親密度で反応を返す恋愛シミュレーターを実装しました。記事では、感情の選択肢（choice）や親密度（score）、状態（state）の受け渡しを含む具体的なAPIリクエストとレスポンスの構造、感情を変化させるためのプロンプトの工夫などが紹介されています。",
+    "topics": [
+      "Jev",
+      "AI",
+      "個人開発",
+      "API",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 82,
+      "annexPotential": 18,
+      "overall": 85
+    }
+  }
+}
