@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:57:58.267474+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vibe-Coding-Production-Kit: AIによる「バイブコーディング」を本番品質のエンジニアリングへ昇華させるフレームワーク",
+    "url": "https://github.com/Moeeryani/Vibe-Coding-Production-Kit",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIとの対話的な開発プロセスに仕様、アーキテクチャ、検証ゲートを導入し、場当たり的なコード生成を再現性のある堅牢なソフトウェア開発サイクルへと変換するフレームワーク。",
+    "summaryBody": "Vibe-Coding-Production-Kit (VCP) は、近年注目されている「バイブコーディング（AIとの試行錯誤による開発）」を、本番環境に耐えうる品質のエンジニアリングへと昇華させるためのCLIツールおよびOS的なフレームワークです。単なるチャット形式の開発から脱却し、仕様(Spec)、アーキテクチャ、セキュリティ、CI/CDを統合したライフサイクルを提供します。\n\n### 主な特徴と機能\n- **仕様中心のアプローチ**: AIにコードを書かせる前に、`vcp ready`コマンドによる計画・実装段階のゲートチェックを行い、アーキテクチャやドメインモデルの整合性を確認します。\n- **境界のあるタスク管理**: `vcp task`を通じてAIの作業範囲を限定し、大規模な「丸投げ」による品質低下を防ぎます。\n- **検証の証跡**: `vcp verify`によりテスト実行結果を証跡として記録し、独立したレビュープロセスを可能にします。\n- **安全なアップデート**: `vcp update`エンジンを備え、テンプレートの更新時に3-way mergeやロールバックをサポート。継続的なメンテナンスを容易にします。\n\n「AIにプロジェクトを作らせるのではなく、AIが間違えるのを困難にするシステムを構築する」という思想のもと、Claude CodeやCursor、GitHub Copilot等の主要なエージェントと組み合わせて動作するように設計されています。",
+    "topics": [
+      "Vibe Coding",
+      "AI-driven Development",
+      "Software Engineering",
+      "LLM Agents",
+      "SDLC"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 85,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - Moeeryani/Vibe-Coding-Production-Kit: Production-grade vibe coding framework with specs, architecture, AI agents, testing, security, code review, CI/CD, and battle-tested workflows — from idea to production."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:47:58.520002+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "定型作業の自動化スクリプトを選ぶタスクを Jev に任せたら Codex の 52% の時間でできた話",
+    "url": "https://dev.classmethod.jp/articles/jev-codex-script-selection-time-reduction/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判定特化型モデル「Jev」をCodexの前段に配置してスクリプト選択を任せることで、正答率を維持しながら実行時間を48%削減し、コストを約36%に抑えた検証レポート。",
+    "summaryBody": "LLM（Codex）が担っていた「ユーザーの依頼に合わせて既存の自動化スクリプトを選択する」という判断タスクを、TypeSafeの選択肢判定モデル「Jev」に代替させる検証記事です。120本のスクリプト定義と270件のテスト用リクエストを用いた実験において、Jevは全件で正しいスクリプトを選択、または必要に応じて適切にCodexへ処理を引き継ぎました。結果として、Codexを毎回呼び出す構成と比較して、実行時間は21分38秒から11分13秒（51.8%）へ、コストは4.946 USDから1.779 USD（36.0%）へと大幅な改善が見られました。自由な対話よりも「定義済みの選択肢からの抽出」が求められるワークフローにおいて、専用モデルをルーティングに組み込むことの有効性が示されています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "業務自動化",
+      "コスト最適化",
+      "TypeSafe"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}
