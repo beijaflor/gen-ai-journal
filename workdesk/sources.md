@@ -37,7 +37,6 @@
 - [x] 234. https://zenn.dev/toshipon/articles/jev-paper-screening-vs-llm
 - [x] 233. https://zenn.dev/ainellc/articles/9e5f856b2f2de2
 - [x] 232. https://zenn.dev/unsoluble_sugar/articles/jev-system-one-model-intro
-- [x] 231. https://zenn.dev/peoplex_blog/articles/1bc5c181ad19f0
 - [x] 230. https://qiita.com/aktsmm/items/bccfc0e945545fe17e58
 - [x] 229. https://qiita.com/ktdatascience/items/b512f9c79f549df3a985
 - [x] 228. https://qiita.com/shuway00/items/d291961b9141a51f173b
