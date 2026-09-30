@@ -23,9 +23,15 @@ import signal
 import argparse
 import subprocess
 import re
+import json
 from pathlib import Path
 from typing import List, Tuple, Dict
 from urllib.parse import urlparse
+
+# The format linter lives beside this script; make it importable whether we're
+# run as `uv run scripts/bulk_summarize.py` or imported as a module.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from check_summary_format import lint_body
 
 def find_unchecked_urls(sources_file: Path) -> List[Tuple[int, str]]:
     """
@@ -50,6 +56,44 @@ def find_unchecked_urls(sources_file: Path) -> List[Tuple[int, str]]:
                 unchecked.append((url_id, url))
 
     return unchecked
+
+def summary_gate(output_path: Path) -> str:
+    """Post-generation acceptance gate for a freshly written summary file.
+
+    call-gemini writes the file and exits 0 even when it fails closed — a
+    ``BLOCKED:`` stub for an unfetchable page, or a schema-valid JSON whose
+    body is mis-formatted. Neither should be silently marked checked. Return a
+    short error string when the summary must be rejected, or "" when it passes.
+
+    Checks:
+      1. BLOCKED stub — a plain-text fail-closed stub (fetch was an interstitial
+         / too short). Surface it so a human can recover or drop, instead of
+         marking the source done.
+      2. Format lint — a schema-valid body can still carry literal ``\\n``
+         escapes or headings glued to prose (see check_summary_format.lint_body).
+    """
+    try:
+        raw = output_path.read_text(encoding='utf-8')
+    except OSError as e:
+        return f"could not read output ({e})"
+
+    if raw.lstrip().startswith('BLOCKED:'):
+        first = raw.lstrip().splitlines()[0].strip()
+        return f"fetch blocked, stub written ({first}); left unchecked for recovery"
+
+    try:
+        body = json.loads(raw).get('content', {}).get('summaryBody', '')
+    except ValueError:
+        # Not JSON and not a BLOCKED stub — let schema validation (call-gemini)
+        # own that failure; don't invent one here.
+        return ""
+
+    if isinstance(body, str) and body:
+        issues = lint_body(body)
+        if issues:
+            return f"format lint failed ({', '.join(issues)})"
+    return ""
+
 
 def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, str]:
     """Generate summary for URL.
@@ -105,6 +149,9 @@ def generate_summary(url: str, url_id: int, summaries_dir: Path) -> Tuple[bool, 
             return False, "ERROR: Timeout generating summary"
 
         if proc.returncode == 0 and output_path.exists():
+            gate_error = summary_gate(output_path)
+            if gate_error:
+                return False, f"ERROR: {gate_error}"
             return True, str(output_path)
         else:
             return False, f"ERROR: {stderr}"

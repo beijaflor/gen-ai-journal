@@ -164,6 +164,38 @@ class LooksBlockedSignatureTest(unittest.TestCase):
         self.assertTrue(blocked)
         self.assertIn("Checking your browser", reason)
 
+    def test_cloudflare_waf_attention_required(self) -> None:
+        # The Cloudflare WAF *block* page (not the JS challenge) carries the
+        # full "you have been blocked" boilerplate, so it is well over the
+        # length threshold — only the signature can catch it. Regression for
+        # the #014 / 105 / 164 leak where these were summarized as valid
+        # (title "Attention Required!", signal 0).
+        text = (
+            "Attention Required! | Cloudflare Sorry, you have been blocked "
+            "You are unable to access this website. " + ("word " * 200)
+            + " Performance & security by Cloudflare"
+        )
+        blocked, reason = looks_blocked(text)
+        self.assertTrue(blocked, msg=f"reason={reason!r}")
+        self.assertIn("Attention Required", reason)
+
+    def test_reddit_prove_your_humanity(self) -> None:
+        text = "Prove your humanity We're committed to safety and security. " + ("word " * 200)
+        blocked, reason = looks_blocked(text)
+        self.assertTrue(blocked)
+        self.assertIn("Prove your humanity", reason)
+
+    def test_article_merely_mentioning_cloudflare_is_NOT_blocked(self) -> None:
+        # A genuine article that only *mentions* Cloudflare must not trip the
+        # WAF signatures — only block-page-specific phrases do. Regression for
+        # the 100 blog.cloudflare / 184 zenn false positives.
+        text = (
+            "Cloudflare announced Worker Previews, isolated preview environments "
+            "for every change an agent makes. " + ("detail " * 200)
+        )
+        blocked, reason = looks_blocked(text)
+        self.assertFalse(blocked, msg=f"false positive: {reason!r}")
+
     def test_empty_text_is_blocked(self) -> None:
         blocked, reason = looks_blocked("")
         self.assertTrue(blocked)

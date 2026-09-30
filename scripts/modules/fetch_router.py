@@ -70,9 +70,24 @@ BLOCKED_MIN_CHARS = 500
 INTERSTITIAL_SIGNATURES = (
     # OpenAI's anti-bot gate (literal text confirmed in Issue #121).
     "Enable JavaScript and cookies to continue",
-    # Cloudflare's challenge page common phrases.
+    # Cloudflare's JS-challenge page ("Just a moment...", "Checking your browser").
     "Just a moment...",
     "Checking your browser",
+    # Cloudflare WAF *block* page ("Attention Required! | Cloudflare"). Unlike
+    # the JS challenge above, these pages carry the full "you have been blocked"
+    # boilerplate — well over BLOCKED_MIN_CHARS — so the length check never
+    # fires and, without a signature, the block text gets summarized into a
+    # schema-valid summary *of the block page* (signal 0). Observed on
+    # Cloudflare-fronted Medium sites: pub.towardsai.net, uxdesign.cc,
+    # fagnerbrack.com. These phrases are block-page-specific and do not appear
+    # in genuine articles about Cloudflare.
+    "Attention Required!",
+    "Sorry, you have been blocked",
+    "Performance & security by Cloudflare",
+    # Reddit's anti-bot interstitial (observed on r/ClaudeAI threads).
+    "Prove your humanity",
+    # Generic "are you human" / Turnstile walls.
+    "Verify you are human",
 )
 
 

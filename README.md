@@ -21,7 +21,7 @@ This project follows a systematic workflow to create weekly journals using branc
 
 ```mermaid
 graph LR
-    A[01. Create Branch] --> B[02. Add Links]
+    A[01. Create Branch + Tracking Issue] --> B[02. Add Links]
     B --> C[03. Prepare Working Files]
     C --> C1[03b. Plan Editorial Themes]
     C1 --> C2[Human Review Gate]
@@ -37,11 +37,11 @@ graph LR
     L --> M[13. Tag & Publish]
 ```
 
-**Modern Workflow**: After Step 03, use Step 03b to identify editorial themes with mandatory human review. Create a draft PR (optional but recommended) to enable collaborative editing throughout the process. Convert to "Ready for review" at Step 12.
+**Modern Workflow**: Each week is tracked by a `Journal Workflow - Week of YYYY-MM-DD` GitHub issue created at Step 01. After Step 03, use Step 03b to identify editorial themes with mandatory human review. Create a draft PR (recommended) — cross-linked to the tracking issue — to enable collaborative editing throughout the process. Convert to "Ready for review" at Step 12; the tag and release (Step 13) reference the same issue.
 
 ## Workflow Steps
 
-1. **[Create Branch](STEP_01_CREATE_BRANCH.md)** - Create dedicated branch for journal week
+1. **[Create Branch](STEP_01_CREATE_BRANCH.md)** - Create dedicated branch for journal week + open the weekly `Journal Workflow - Week of YYYY-MM-DD` tracking issue
 2. **[Add Links Individually](STEP_02_GATHER_SOURCES.md)** - Add and process links one by one with automatic summarization
 3. **[Prepare Working Files](STEP_03_PREPARE_JOURNAL.md)** - Set up journal templates and workspace
 3b. **[Plan Editorial Themes](STEP_03b_PLAN_THEMES.md)** - Identify 6-9 themes, map articles to themes, create editorial roadmap with human review gate
