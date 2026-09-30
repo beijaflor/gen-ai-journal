@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:03:32.751149+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Laya-MLX: Apple Silicon向けネイティブMLXランタイムによる高速な型定義済み意思決定モデル",
+    "url": "https://github.com/mizorewww/laya-mlx",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Apple SiliconのMLXを活用し、生成AIではなく分類やスコアリングに特化した意思決定モデルをM3 Max上で最短7msという超低遅延で実行できるネイティブランタイム。",
+    "summaryBody": "laya-mlxは、Convai Innovationsが提供する意思決定モデル「Laya」をApple Silicon環境（macOS）で最適に動作させるための、MLXベースのネイティブランタイムです。本ツールは従来のLLMのような逐次的なテキスト生成（Autoregressive decoding）を行わず、双方向エンコーダ（ModernBERTなど）と意思決定専用のヘッドを用いることで、テキストの分類、スコアリング、真偽値判定といった「型定義された意思決定（Typed Decisions）」を、M3 Max上で7ms〜14msという極めて低いレイテンシで処理します。PyTorchやTransformers、クラウドAPIを一切必要とせず、1GB以下のメモリ消費で完全にローカルで動作するのが特徴です。Python APIおよびCLIが提供されており、スネークゲームの自動操作デモなど、リアルタイム性が求められる用途への適用が示されています。",
+    "topics": [
+      "MLX",
+      "Apple Silicon",
+      "Edge AI",
+      "ModernBERT",
+      "Laya"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - mizorewww/laya-mlx: Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API."
+  }
+}

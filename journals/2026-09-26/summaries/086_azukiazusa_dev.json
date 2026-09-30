@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:05:52.218559+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP サーバーからエージェントスキルを配布する Skills Extension",
+    "url": "https://azukiazusa.dev/blog/mcp-skills-extension/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "MCPサーバーからAIエージェントの操作手順や判断基準（Agent Skills）を配布するための拡張仕様「Skills Extension（SEP-2640）」の設計背景と実装方法を解説する記事。",
+    "summaryBody": "Model Context Protocol (MCP) において、ツールの使用手順や判断基準を記した「Agent Skills」をサーバー経由で配布するための拡張仕様「Skills Extension」について解説しています。この仕様（SEP-2640）は2026年9月にFinalとなり、ツールを提供するサーバーがその「使い方の知識」も併せて提供することを可能にします。\n\n主な内容は以下の通りです：\n- **設計思想:** 既存の Resources 機能を流用し、URIベースでスキルファイルを管理。必要な情報のみを段階的に取得する「Progressive disclosure」を採用しています。\n- **通信プロトコル:** 新設された `skills/list` および `skills/get` メソッドでメタデータを取得し、実際のファイル内容は `resources/read` で取得します。\n- **セキュリティ:** マニフェストに含まれるSHA-256ハッシュとファイルサイズを用いて、取得したコンテンツの整合性を検証する仕組みが組み込まれています。\n- **実践:** Node.js を使用したサーバー・クライアントの実装サンプルと、MCP Inspector を用いた動作検証の手順が詳しく紹介されています。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Agent Skills",
+      "SEP-2640",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

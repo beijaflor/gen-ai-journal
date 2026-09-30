@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:54:32.038678+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント評価で見落とされがちな手法",
+    "url": "https://qiita.com/cvusk/items/97ede7da8bfca772237a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの評価において、最終結果だけでなく実行過程、環境の忠実度、時間的変化を多角的に検証する手法とその実証結果を詳細に解説した記事。",
+    "summaryBody": "AIエージェントは「結果が正しくても過程に問題がある（非効率・危険）」場合があるため、アウトプットの正誤だけでは不十分です。本記事では、30件の実験に基づき、エージェント評価の高度化手法を提案しています。主要なトピックとして、過去の軌跡から実行すべきテストを絞り込む「Predictive Test Selection (PTS)」、LLMを使わず決定的に実行ログを検証する「軌跡リンター」、逐次確率比検定（SPRT）による試行回数削減などが挙げられます。検証の結果、軌跡リンターは違反検出率100%と高い有効性を示しました。一方で、シミュレータと実API（Claude）の合否一致率は0.817に留まり、評価環境自体の妥当性を継続的に監視する「評価システムの製品管理」という視点の重要性を強調しています。",
+    "topics": [
+      "AIエージェント",
+      "LLM評価",
+      "ソフトウェアテスト",
+      "PTS",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    }
+  }
+}

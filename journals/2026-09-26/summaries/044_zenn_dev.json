@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:25:53.232617+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP × Claude Code × BedrockでPlaywrightの自動化フローを構築",
+    "url": "https://zenn.dev/hirata_infosys/articles/598068e56ae342",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Playwrightによるブラウザ自動化にMCPとClaude Code、Bedrockを組み合わせ、LLMをガードレールとして活用することで高精度な業務自動化フローを実現する手法の検証報告。",
+    "summaryBody": "本記事は、既存システムの更新系操作をAIエージェントで自動化するための構成とノウハウを解説しています。Dockerコンテナ上でPlaywright、MCP、Node.js、Pythonを統合し、noVNCでリアルタイム監視可能な開発環境を構築。開発フローとして、MCPサーバーを用いて画面操作からコードの骨組みを生成し、Claude Codeで詳細なロジックを実装する役割分担を提案しています。特に、LLM（Amazon Bedrock）を「人の判断」の代替として組み込む際、二次元テーブルをJSON構造化して解析させるマルチターン解析や、スクリーンショットとHTMLソースの一部を併用して動的セレクタを特定する手法など、実運用における精度向上のための具体的なテクニックが共有されています。検証の結果、93.3%の成功率を達成し、開発工数の削減と判断ミスによる誤操作の防止を両立できることが示されました。",
+    "topics": [
+      "Playwright",
+      "Model Context Protocol (MCP)",
+      "Claude Code",
+      "Amazon Bedrock",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    }
+  }
+}

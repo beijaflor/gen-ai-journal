@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T17:05:31.466825+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Security Lab Taskflow Agentを活用したAI駆動型ファジングの導入",
+    "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHub Security Labは、C/C++プロジェクトの脆弱性探索を自律的に実行し、ハーネス作成からカバレッジ向上、クラッシュ分析までを自動化するAIエージェント「Fuzzing Taskflow」を公開しました。",
+    "summaryBody": "GitHub Security Labが開発した「Fuzzing Taskflow」は、LLMエージェントを活用してファジングプロセスを完全に自動化するフレームワークです。従来、ファジングはカバレッジの監視やハーネス（テスト用コード）の記述、クラッシュの選別（トリアージ）に多大な人的リソースを必要としていました。本ツールは、GitHubリポジトリを指定するだけで、AIがエントリポイントの特定、ビルドシステムの分析、AFL++を用いた実行、カバレッジに基づくハーネスの改善、そして最終的な脆弱性レポートの作成までを自律的に行います。内部的にはClaude 3.5 Sonnetをデフォルトモデルとして採用し、MCP（Model Context Protocol）ツールを介して実行環境を操作する構成となっており、構造化データの入力を考慮したカスタムミューテータの生成なども備えています。利用にあたっては、任意コード実行のリスクを考慮し、GitHub Codespacesなどの使い捨て環境での実行が推奨されています。",
+    "topics": [
+      "AI Agents",
+      "Fuzzing",
+      "GitHub Security Lab",
+      "Vulnerability Research",
+      "LLM Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:32:12.485188+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の日本語処理を Gemini 3.8 に任せる",
+    "url": "https://zenn.dev/toshipon/articles/claude-code-japanese-gemini-3-8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeによる執筆の癖を排除するため、Antigravity CLIを介してGemini 3.8に日本語の推敲や構成レビューを委託する自動化ワークフローの解説。",
+    "summaryBody": "Claude Codeで日本語ドキュメントを作成する際、同一モデルによる自己修正で発生する文章の「癖」を解消するため、Gemini 3.8を外部レビュアーとして活用する手法を紹介しています。廃止されたGemini CLIに代わり、現在推奨されているAntigravity CLI (agy) を使用して、APIキーなしでGemini 3.8 Flash/Proを呼び出すシェルスクリプトの作成方法を詳述。さらに、Claude Codeの「skill」機能として登録することで、執筆プロセス中に自動でGeminiの推敲・レビュー・構成チェックを走らせる具体的な連携手順を解説しています。AIによる事実確認の不確実性や、モデルを「権威ではなく異なる視点」として扱う重要性についても言及されています。",
+    "topics": [
+      "Claude Code",
+      "Gemini 3.8",
+      "Antigravity CLI",
+      "LLM執筆",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

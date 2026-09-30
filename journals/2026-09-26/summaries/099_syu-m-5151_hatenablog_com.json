@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:02:38.629070+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの Agent view とセッション間通信は使ったほうがいい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeにおける複数セッション管理機能「Agent view」とセッション間通信を活用し、Git Worktreeと組み合わせて効率的に並行作業を進める実践的な手法を解説しています。",
+    "summaryBody": "Claude Codeを用いた並行開発において、作業の切り替えコストと認知負荷を抑えるための高度な運用術が紹介されています。\n\n主な解説内容は以下の通りです：\n- **Agent viewの活用**: `claude agents`コマンドにより、複数のバックグラウンドセッションの状態（Working / Needs input / Completed）を一覧管理し、入力を必要とするタスクへ即座に移動する方法を説明しています。\n- **Git Worktreeによる環境分離**: 並行して複数のエージェントを動かす際、同一ディレクトリでの編集競合を避けるために`--worktree`を活用し、物理的な作業場所を分離する運用の重要性を説いています。\n- **セッション間通信**: `@mention`を用いたメッセージ機能により、あるセッションでの決定事項（API仕様の確定など）を別のセッションへ伝達する連携手法を解説しています。\n- **ツールの使い分け**: 端末プロセスを永続化する「herdr」や、エージェントとクライアントを接続する「ACP (Agent Client Protocol)」など、周辺技術との役割の違いを整理しています。\n\n単にAIに任せるだけでなく、人間が「目標状態」と「観測可能な証拠」を定義し、最終的な統合と検証を責任を持って行うための開発サイクルを提案する内容となっています。",
+    "topics": [
+      "Claude Code",
+      "AI Agent",
+      "Git Worktree",
+      "開発プロセス",
+      "並行開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

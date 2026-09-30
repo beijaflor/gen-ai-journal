@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:31:18.382953+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "一日の作業をMarkdownに自動記録するAmbient Contextが良さげかも",
+    "url": "https://kawarimidoll.com/posts/202609222/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "macOS上での作業内容をAccessibility API経由で取得し、Markdown形式のログとして自動蓄積・AI要約できるメニューバーアプリ「Ambient Context」の紹介。",
+    "summaryBody": "macOS向けのメニューバーアプリ「Ambient Context」についての紹介記事です。このツールはTauriで構築されており、Accessibility APIを利用してフォーカス中のウィンドウからテキスト情報を数秒おきに抽出・記録します。スクリーンショットやOCRを使わないため、テキストベースでの重複排除や秘匿情報の自動マスク（[redacted]置換）が可能な点が特徴です。記録されたデータは、Claude CodeなどのAIエージェントからMCPサーバー経由で参照でき、日々の作業まとめやナレッジ管理を自動化できます。ただし、GPUレンダリングを使用するターミナル等からはテキストが取得しにくいという制限についても言及されています。",
+    "topics": [
+      "macOS",
+      "Markdown",
+      "AI",
+      "生産性向上",
+      "Tauri"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    }
+  }
+}

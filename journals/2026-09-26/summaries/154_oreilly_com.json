@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:39:34.140390+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPは単なるAPI標準ではない：エージェント時代の新たな統合パラダイム",
+    "url": "https://www.oreilly.com/radar/mcp-is-not-just-another-api-standard/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPは単なるツール接続の仕組みではなく、AIエージェントが実行時に動的に統合を構成する「記述がインターフェースとなる」新しい開発のあり方を提示している。",
+    "summaryBody": "Model Context Protocol (MCP)は、LLMエージェントと外部システム間の通信を標準化するJSON-RPCベースのプロトコルです。筆者は、MCPの真の革新性は「統合の決定権が人間からモデルに移譲されたこと」にあると主張しています。従来のAPIが事前定義された契約に基づつのに対し、MCPではエージェントが実行時にツールの説明文（自然言語）を読み、どのツールをどの順序で使うかを判断します。そのため、開発者にはコードだけでなく「技術的な記述（Technical Writing）」としてのインターフェース設計が求められます。2026年の最新仕様ではステートレス化やUI統合、認可の強化などが盛り込まれ、運用面での成熟が進んでいますが、一方でパス・トラバーサルや設定の汚染といったセキュリティリスクも顕在化しており、厳格なガバナンスとテストが不可欠です。",
+    "topics": [
+      "MCP",
+      "AIエージェント",
+      "API標準",
+      "LLM",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "MCP Is Not Just Another API Standard"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:28:45.942784+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "イラストで理解するAmazon Bedrock AgentCoreの役割と仕組み",
+    "url": "https://dev.classmethod.jp/articles/Illust-bedrock-agentcore/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Amazon Bedrock AgentCoreをAIエージェントの実行基盤と定義し、Runtime、Memory、Identity、Gatewayといった主要機能のメリットをイラストで分かりやすく解説した記事です。",
+    "summaryBody": "本記事では、Amazon Bedrock AgentCoreを単なるチャットアプリではなく、AIエージェントを動かすための「インフラ基盤」として解説しています。AIエージェントが自律的に計画・行動する仕組みを整理した上で、AgentCoreが提供する主要コンポーネントを紹介。セッションごとに分離されたmicroVMで最大8時間の実行を可能にする「Runtime」、対話履歴やユーザーの好みを保持する「Memory」、安全な認証・認可を管理する「Identity」、そして外部ツール接続やレート制限を担う「Gateway」の役割を詳述しています。開発者がスケーリングやセッション管理などのインフラ構築負荷を軽減し、エージェントの制御ロジック開発に専念できるメリットを強調しています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AI Agent",
+      "AWS",
+      "サーバーレス基盤",
+      "生成AIアプリ開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

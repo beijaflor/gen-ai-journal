@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:40:33.393694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代に必須となるデザインシステムのガードレール：Evil Martiansによる実装フレームワーク",
+    "url": "https://evilmartians.com/chronicles/ai-makes-design-system-guardrails-mandatory-this-framework-delivers-them",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントによる開発で発生しがちなデザインの不整合（スロップ）を防ぐため、コンポーネントの「設計意図」を明文化し、自動化されたチェックとログ記録を導入する実践的なフレームワークの解説。",
+    "summaryBody": "AI（LLMやエージェント）を活用した開発では、コード生成速度は飛躍的に向上した一方で、デザインシステムのルールを無視した「その場しのぎの不整合なコード」が混入しやすくなっています。本書では、この問題を解決するためにEvil Martiansが考案した、AIフレンドリーなデザインシステム運用のための8つの戦略を紹介しています。\n\n主なポイントは以下の通りです：\n- **ワークフローの分離**: デザインシステムを改善する「craft」と、それを使って画面を構築する「use」のパスを分け、エージェントの目的を明確にします。\n- **コンポーネント・コントラクト**: AIが理解できるよう、実装コードだけでなく「どのような時に使うべきか（When to use）」という設計意図をMarkdownで記述します。\n- **インベントリ（目録）の提供**: エージェントが既存の部品を見落として新しい部品を捏造しないよう、インデックスファイルを用意します。\n- **決定論的チェックの外部化**: 色の指定ミスなどの機械的なルールはAIに任せず、Linter（design-lint）やスクリプトで自動的に強制します。\n- **制御された例外処理**: やむを得ない例外には、理由の記述を必須とする専用のprops（designSystemException）を設け、後に人間がレビューできるように可視化します。\n\nこのフレームワークを導入することで、AIのスピードを活かしつつ、長期的な製品の整合性と保守性を維持することが可能になります。",
+    "topics": [
+      "Design Systems",
+      "AI Agents",
+      "LLM-driven Development",
+      "Frontend Engineering",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI makes design system guardrails mandatory; this framework delivers them—Martian Chronicles, Evil Martians’ team blog"
+  }
+}

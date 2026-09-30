@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:04:14.858218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevを「分類器」ではなく、確率モデルの部品として見る",
+    "url": "https://zenn.dev/cybernetics/articles/71ea975d935414",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIのJevを単なる高速分類器としてではなく、非構造データを意味のある確率変数へ変換し既存の統計・確率モデルに組み込むためのコンポーネントとして捉え直す考察。",
+    "summaryBody": "TypeSafe AIが公開した高速な確率的判断モデル「Jev」について、その本質を「非構造情報から解釈可能な確率変数を取り出すデバイス」と定義する試論です。著者は、Jevを単一の分類器として使うのではなく、複雑な判断を小さな条件付き確率分布（CPD）に分解し、それらをベイズネットワークや統計モデルの部品として統合する設計を提案しています。これにより、Embeddingのようなブラックボックスな特徴量ではなく、意味の通る軸で推論過程を構築でき、Foundation Modelの柔軟性と古典的な数理モデルの堅牢性を融合させることが可能になります。不確実性を確率のまま後段に流せる点や、特定のドメインに合わせて事後的にキャリブレーションできる点など、実用的なシステム設計におけるJevのポテンシャルを深く掘り下げています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "確率モデリング",
+      "ベイズ推論",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

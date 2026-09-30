@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:39:21.560013+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Copilotアプリで100万行超の巨大なPRを高速にレンダリングする技術",
+    "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Copilotアプリにおいて、100万行の差分と数百のコメントを持つ巨大なプルリクエストを高速かつスムーズに描画するための、新しい仮想化レンダリングアーキテクチャが解説されています。",
+    "summaryBody": "GitHubのエンジニアリングチームは、巨大なプルリクエスト（PR）の閲覧体験を改善するため、レンダリングエンジンを再構築しました。主な技術的ブレイクスルーは、行高さが既知のコード部分と、描画されるまで高さが不明なコメント部分を分離して管理する「二重ジオメトリ（Dual Geometry）」システムです。これにより、コードの高速な仮想化描画を維持しつつ、動的なコメント挿入によるレイアウトの崩れやスクロールのジャンプを防いでいます。また、ResizeObserverによる無闇なリフローを避けるための「アイドル/スクロール連動型計測スケジューラ」や、表示箇所をピクセルではなくIDで固定する「スクロールアンカリング」を実装。さらに、ヘッドレスプロンプトとオートパイロットを用いた自動計測ループを構築することで、手動では発見困難なパフォーマンスのボトルネックを機械的に特定・修正するワークフローを確立しました。",
+    "topics": [
+      "GitHub Copilot",
+      "Frontend Performance",
+      "Virtualization",
+      "Engineering Deep Dive",
+      "Web Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Rendering huge pull requests in the GitHub Copilot app - The GitHub Blog"
+  }
+}

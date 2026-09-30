@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T02:02:43.129253+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Worker Previewsの導入：エージェントが行うすべての変更に対応する隔離されたプレビュー環境",
+    "url": "https://blog.cloudflare.com/worker-previews/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、Gitブランチごとに本番同様の隔離環境を自動構築し、Durable Objectsのステートや設定を完全に独立させてテスト可能にする「Worker Previews」を発表しました。",
+    "summaryBody": "Cloudflareは、開発者がGitブランチごとに本番環境に近い隔離された実行環境を構築できる「Worker Previews」を発表しました。従来のプレビュー機能とは異なり、単なるコードの反映だけでなく、Durable ObjectsやContainersといったステートフルなリソースもブランチごとに個別の名前空間として完全に隔離されます。これにより、スキーマ変更やデータ移行のテストを本番環境へ影響を与えることなく安全に実施できます。主な機能として、`npx wrangler preview`によるデプロイ、ブランチ固有の固定URL、Cloudflare Accessによる保護、そして個別のプレビュー環境に紐付いた詳細なオブザーバビリティ（ログ、トレース、メトリクス）が提供されます。特にAIエージェントによる開発サイクル（ADLC）を想定しており、エージェントが自律的にデプロイ・テスト・デバッグ・修正を繰り返すための強力なインフラとなります。また、ベース設定を各プレビューで上書きできる柔軟な構成管理も備えています。",
+    "topics": [
+      "Cloudflare Workers",
+      "Serverless",
+      "Developer Experience",
+      "CI/CD",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Introducing Worker Previews: isolated preview environments for every change your agent makes | Cloudflare Blog"
+  }
+}

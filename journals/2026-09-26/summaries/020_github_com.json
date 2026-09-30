@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:43:52.336777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevをチャットボット化する「jevchat」: スコアリングモデルによる逐次的な文字列生成の実験",
+    "url": "https://github.com/kyle-pena-nlp/jevchat/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "本来は文章生成用ではない意思決定・スコアリングモデル「Jev」に対し、次に続く文字を繰り返し問いかけることで強引にチャットボットとして動作させる実験的ツール。",
+    "summaryBody": "jevchatは、TypeSafeの意思決定モデル「Jev」をテキスト生成に使用するユニークなオープンソースプロジェクトです。Jevは与えられた選択肢をスコアリングする能力に特化したモデルですが、本ツールは「現在の返答の次に続くべき記号はどれか？」という問いをJevに繰り返し投げることで、チャットボットとしての機能を実現しています。\n\n主な特徴:\n- **多様なサンプリング戦略**: アルファベット全域から一発で選ぶ「choice」、二分探索的に絞り込む「bisect」、大きな語彙を分割処理する「buckets」などのアルゴリズムを実装。\n- **提示方法の最適化**: 単一文字ではなく、結合後の文章（仮説）を評価させることで生成精度を向上させる「hypothesis」モードを搭載。\n- **リアルタイム解析**: 生成中のトークンレート、API呼び出しのレイテンシ、Jevによるスコア分布をCLI上でリアルタイムに監視可能。\n\n実用性よりも「非生成モデルからいかに言葉を引き出すか」という実験的側面に重きが置かれており、APIコストは高いものの、非常にユニークで興味深い挙動を示します。",
+    "topics": [
+      "Natural Language Processing",
+      "LLM",
+      "Chatbot",
+      "Experimental AI",
+      "Scoring Model"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 75
+    },
+    "originalTitle": "GitHub - kyle-pena-nlp/jevchat: Turns Jev into a chatbot"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:52:31.504691+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevでAIエージェントのハーネスはどう変わるのか",
+    "url": "https://note.com/npaka/n/ne4547ea3c6f5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの「Jev」登場により、AIエージェントの設計が「1つの大規模LLM」への依存から、高速な型付き判断モデルとコードを組み合わせた「判断の分解と分業」へと進化する可能性を解説。",
+    "summaryBody": "TypeSafe AIが発表した「Jev」は、非構造化データから「型付きの確率的判断」を高速（70-500ms）に導き出す特化型モデルです。従来、AIエージェントにおけるツール選択や完了判定などの「小さな判断」は、柔軟性に欠けるif文か、低速・高コストな大規模LLMのどちらかに頼る必要がありました。Jevはこの中間を埋め、複雑な推論はLLM、曖昧だが定型的な判断はJev、確定的な処理はコードという「知能の分業」を可能にします。具体的には、ツールルーティング、セーフティゲートでの人間介入の閾値判定、実行後のトレース監視などのハーネス（制御層）への適用が期待されます。エージェント開発の焦点は、単一モデルの性能から、複数の知能をどう組み合わせるかという「ハーネスエンジニアリング」へと移行していくと指摘しています。",
+    "topics": [
+      "Jev",
+      "AIエージェント",
+      "TypeSafe AI",
+      "オーケストレーション",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

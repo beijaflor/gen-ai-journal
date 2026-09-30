@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:27:51.097670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Mods 入門 | Claude Codeを自由にカスタマイズする",
+    "url": "https://zenn.dev/nogu66/articles/claude-code-function-hooks-claude-mods",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの機能やUIをTypeScriptで高度にカスタマイズできる新機能「Claude Mods (Function Hooks)」の仕組み、実装方法、活用事例を網羅的に解説したガイド。",
+    "summaryBody": "## Claude Mods (Function Hooks) の概要\nClaude Modsは、Claude Codeの動作や外観をTypeScript関数で拡張できるプラグイン機構です。従来の外部プロセスを介したHooksとは異なり、エンジンのメモリ空間で直接動作するため、画面描画の変更、新規ツールの追加、状態管理といった深いカスタマイズが可能になります。現在、早期アクセス機能として提供されています。\n\n## 主要な特徴と仕組み\n- **ミドルウェアパターン**: `register(on, options)` 内で `($, e, next)` を受け取り、`next()` を呼ぶことで処理を連鎖させます。ExpressやKoaに似たオニオンモデルを採用しており、前処理・後処理・早期リターンの制御が容易です。\n- **5層の階層構造**: セキュリティと権限管理のため、Modは `prepend`, `user`, `append`, `builtin`, `core` の5層で管理されます。組織ポリシーが個人のModを制限できる安全な設計です。\n- **$ (エンジン窓口)**: UI操作、ファイルシステム、ツール実行などはすべて `$` オブジェクトを経由して行われ、これがAPIの安全性と統一性を担保しています。\n\n## 実装と活用例\n公式の `/diff` コマンドや `AGENTS.md` サポートもModとして実装されており、コミュニティではターミナル内ブラウザやゲームなどの拡張も開発されています。開発には `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS` の有効化が必要です。",
+    "topics": [
+      "Claude Code",
+      "Claude Mods",
+      "TypeScript",
+      "LLMエージェント",
+      "プラグイン開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

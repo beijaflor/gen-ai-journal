@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:44:12.104370+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen-Image-2.1: 7Bパラメータで画像生成と編集を統合した軽量・高性能モデル",
+    "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Qwen-Image-2.1は、7Bという軽量なパラメータ数ながら、テキストからの画像生成、透過画像の直接作成、そして最大10枚の参照画像を用いた高度な編集機能を統合したマルチモーダル画像生成モデルです。",
+    "summaryBody": "Qwen-Image-2.1は、生成品質、推論効率、コストのバランスを最適化した最新の画像生成モデルです。32層のSingle-Stream DiTを採用した7Bパラメータの軽量アーキテクチャにより、高い描画性能を維持しつつ低コストな運用を可能にしています。最大の特徴は「ネイティブ透過（RGBA）対応」と「生成・編集の統合」にあり、プロンプトだけで背景透過画像を生成したり、既存画像から被写体を切り抜いたり、透過レイヤー上のテキストのみを編集したりすることが可能です。また、混合粒度アテンションとKVキャッシュの再利用により、最大10枚の参照画像を扱う複雑な編集（バーチャル試着やインテリア配置など）も効率的に処理します。タイポグラフィの精度やポートレートの質感も向上しており、デザインやEC、ストーリーテリングなど幅広い実用シーンに対応しています。オープンソースとして、GitHub、Hugging Face、ModelScopeで公開されています。",
+    "topics": [
+      "Qwen-Image-2.1",
+      "画像生成AI",
+      "画像編集",
+      "透過画像",
+      "マルチモーダルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T02:01:39.616960+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LovableがViteの開発サーバをRustで再実装した「OJ」を公開、AIがOSSフォークのコストを下げる時代へ",
+    "url": "https://socket.dev/blog/oj-vite-rust",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Lovableは、AIによるコード生成の進化を背景に、Viteの開発サーバ層をRustで再構築した「OJ」を開発し、メモリ使用量の大幅な削減とプレビュー環境の高速化を実現した。",
+    "summaryBody": "Lovableは、1日100万件以上の開発プレビュー環境を効率的に運用するため、Viteの開発サーバ機能をRustで再実装したツール「OJ」を公開した。OJは、ファイルウォッチャー、モジュールグラフ、ホットアップデート、WebSocketハンドリングなどをRustバイナリに移行し、既存のvite.config.tsとの互換性を維持しつつ、メモリ使用量を約6.5倍削減、起動時間を大幅に短縮した。Viteの作者であるEvan You氏は、AIの進化によってOSSの特定用途向け再実装（テーラード・プロジェクション）のコストが劇的に下がっていると指摘。今後は開発者が本家へのプルリクエストよりも、独自に最適化された「スロップ・フォーク」を維持する傾向が強まると予測しており、ツールの断片化と同時に各社のニーズへの最適化が加速する新たなフェーズに入ったことを示唆している。",
+    "topics": [
+      "Vite",
+      "Rust",
+      "OJ",
+      "AI Coding Agents",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "Lovable’s OJ Rewrites Vite’s Dev Server in Rust as AI Lowers the Cost of Forking Open Source"
+  }
+}

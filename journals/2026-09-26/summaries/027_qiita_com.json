@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:26:25.697068+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI コーディングエージェントの1タスクが8時間かかる理由を、45日分のセッション履歴から測ってみた",
+    "url": "https://qiita.com/dahatake/items/a2e8acbda75b647a67cc",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントの作業が長時間化する原因を、45日分の実データに基づきSQLで徹底分析し、コンテキストの肥大化と完了条件の不備が主因であることを明らかにした記事。",
+    "summaryBody": "著者が自身のAIエージェント（GitHub Copilot等）の利用ログ318セッションを分析した結果、作業時間の7割以上が一部の長時間セッションに集中していることが判明しました。主な要因として、セッションの継続によるコンテキストの肥大化（100kトークン超の呼び出しが遅延の83%を占める）、ターミナル出力による文脈の汚染、フォルダ階層ミスによる検証Skillの未ロード、そして「完了条件」の未設定によるエージェントの無限ループが挙げられています。特に、指示に「検証コマンド」と「時間上限」を含めるだけで暴走を劇的に抑制できることを示唆。感想や仮説に頼らず、実測データに基づき「AIとの対話」を「工学的なプロセス」へと最適化する手法を具体的に解説しています。",
+    "topics": [
+      "AI駆動開発",
+      "GitHub Copilot",
+      "LLMコンテキスト",
+      "生産性分析",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

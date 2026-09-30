@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:50:10.898559+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "HarnessRouter: AIエージェント実行環境を統合するセルフホスト型インフラストラクチャ",
+    "url": "https://github.com/HarnessRouter/harnessrouter",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "複数のAIエージェント実行環境（ハーネス）を一つのOpenAI互換APIで統合管理できる、Apache-2.0ライセンスのセルフホスト用ミドルウェア。",
+    "summaryBody": "HarnessRouterは、Codex、Claude Code、Hermes、DeepSeek Harnessなど、異なるAIエージェントの実行環境（ハーネス）を統一されたインターフェースで利用可能にするオープンソース・プロジェクトです。主な特徴は以下の通りです：\n\n1. **統一プロトコル**: 公開標準であるUnified Harness Protocol (UHP) を実装し、OpenAI Responses互換のAPIを提供。既存のSDKやツールをそのまま利用可能です。\n2. **高度な機能管理**: セッションの永続化、リアルタイムストリーミング、ファイルのやり取り、実行のキャンセル、構造化されたエラーハンドリングを標準でサポートします。\n3. **セルフホストとプライバシー**: Docker経由で自身のインフラに構築でき、APIキーや実行データ、成果物を完全にユーザー側で制御できます。\n4. **拡張性**: MCP (Model Context Protocol) サーバーの統合や、独自のカスタムハーネスの作成に対応。既存のハーネスを「プラグアンドプレイ」なバックエンドとして、自社製品に組み込む工程を簡略化します。",
+    "topics": [
+      "AIエージェント",
+      "LLMインフラ",
+      "オープンソース",
+      "UHP",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - HarnessRouter/harnessrouter: HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, streaming, files, cancellation, and failure handling. Implements the Unified Harness Protocol (UHP), an open standard. Your keys, your infrastructure. · GitHub"
+  }
+}

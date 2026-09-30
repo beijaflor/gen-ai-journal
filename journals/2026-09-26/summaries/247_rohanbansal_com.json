@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:49:39.235715+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Postgresより81%高速なクエリプランを生成する4Bモデルの学習",
+    "url": "https://rohanbansal.com/qorl",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "4Bパラメータの小型LLMに対し、GPT-6 Astraからの蒸留とエージェント型強化学習を用いることで、Postgresの標準オプティマイザを大幅に上回るクエリ実行プランの生成に成功した研究報告。",
+    "summaryBody": "Rohan Bansal氏による、LLMを用いたデータベースクエリ最適化の実験記録です。クエリ最適化（特に結合順序の決定）はNP困難な課題であり、Postgresの統計ベースのヒューリスティックが失敗するケースに着目しています。筆者は4Bの小型モデル（Qwen 3.5/3.8ベース）に対し、まずGPT-6 Astraの推論トレースを用いたオフポリシー蒸留（SFT）を行い、次に`pg_hint_plan`を介して実際にPostgres上で実行時間を計測し報酬を与えるエージェント型強化学習（RL）を実施しました。ノイズの多い実行環境下での測定を安定させるため、カスタム版のGRPOアルゴリズムを導入。結果として、Join Order Benchmark (JOB) において、Postgresのデフォルト設定よりも累積実行時間を44.7%削減（1.81倍の高速化）することに成功しました。この成果は、ドメイン固有のタスクにおいて、小型モデルでも適切なRL環境を構築すれば商用・既存ツールを凌駕する性能を発揮できる可能性を示唆しています。",
+    "topics": [
+      "Query Optimization",
+      "Reinforcement Learning",
+      "PostgreSQL",
+      "LLM Distillation",
+      "GRPO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Training a 4B model to produce 81% faster query plans than Postgres"
+  }
+}

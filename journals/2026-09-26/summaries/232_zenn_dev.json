@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:56:09.074174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "みんなJevの話してる。やってないの俺だけ",
+    "url": "https://zenn.dev/unsoluble_sugar/articles/jev-system-one-model-intro",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Jevは文章生成を行わず、構造化データに対して高速・低コストで型定義された確率的判断を返す「System One」意思決定モデルであり、LLMのガードレールや高速な分類タスクに特化している。",
+    "summaryBody": "## 概要\nTypeSafe AIが開発した「Jev」は、従来のLLMとは異なり「文章を書かない」意思決定特化型モデルです。元OpenAIのDiogo Almeida氏らによって開発され、人間との対話ではなく、プログラムが直接利用する「システム1（直感的・高速な思考）」の代替を目指しています。\n\n## 主な特徴と利点\n- **型安全な3つのプリミティブ:** `noul` (Yes/No)、`choice` (選択肢)、`score` (評価尺度) の3形式のみをサポートし、パースエラーのない構造化データを返します。\n- **圧倒的なパフォーマンス:** LLM比で40〜200倍高速（レイテンシ100ms前後）であり、出力トークンは無料、入力コストも極めて安価です。\n- **較正（Calibration）された確率:** 算出される確率スコアが実際の正解率と一致するように訓練されており、信頼度に基づいた自動化の分岐処理が容易です。\n\n## 活用事例と限界\nLLMエージェントのガードレール設置、リアルタイムなゲームAI判断、大量のレビュー分類などに適しています。一方で、文章の要約や翻訳、計算、画像処理などの「生成」や「推論」を伴うタスクには向かず、LLMと役割を分担して使用することが推奨されます。\n\n## 結論\nJevは「LLMが賢くなりすぎて過剰性能になっている判断タスク」を効率化するツールです。ハルシネーションの概念を出力形式レベルで排除し、実用的なワークフローのボトルネックを解消する可能性を秘めています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "System One モデル",
+      "意思決定モデル",
+      "LLMガードレール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

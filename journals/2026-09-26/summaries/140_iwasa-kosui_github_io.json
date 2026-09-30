@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:52:18.675994+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "tanteki — 業務のための文書を端的に本文へ移動",
+    "url": "https://iwasa-kosui.github.io/tanteki/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "tantekiは、Design DocやADRなどの業務文書から、生成AI特有のノイズや不要な進捗情報を除去し、本質的な決定事項と制約のみを抽出・整理するGitHub CLIツールおよびガイドラインです。",
+    "summaryBody": "tantekiは、生成AIによって肥大化しがちな業務文書（ADR、Design Doc、手順書など）を、真に価値のある情報だけに絞り込むためのツールおよび手法です。GitHub CLI拡張として提供され、Node.js環境で動作します。\n\n主な特徴：\n1. **文書種別ごとの厳格な定義**: PRD、Design Doc、ADR、Runbookなど、各文書に「書くべき情報」と「書くべきではない情報（進捗報告や課題ID、根拠のない断定など）」を定義し、本質を維持します。\n2. **三段階の作成原則**: 「読者と種類の決定」「構成の検査」「事実の正確性チェック」というステップを踏み、推測による情報追加を防ぎながらtextlint等で品質を担保します。\n3. **実証的な比較**: 開発の経緯や作業メモが混在した草稿から、将来の保守者が判断基準として利用できる純度の高い文書へと変換する具体例が豊富に示されています。\n\nAIが生成した冗長な文章に悩む開発現場において、ドキュメントの「シグナル」を最大化し、メンテナンスコストを下げるための実戦的なソリューションです。",
+    "topics": [
+      "ADR",
+      "Design Doc",
+      "GitHub CLI",
+      "ドキュメンテーション",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

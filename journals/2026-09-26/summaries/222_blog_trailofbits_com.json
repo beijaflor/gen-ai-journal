@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:59:22.891359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「十分に」有用なAI時代の監査：Miden zkVMのセキュリティレビューにおけるAIエージェントの活用",
+    "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Trail of Bitsが、AIエージェントを活用してカスタムツールや形式検証モデルをゼロから構築し、Miden zkVMの深刻な脆弱性を特定した革新的な監査手法を解説しています。",
+    "summaryBody": "Trail of Bitsによる、Miden zkVM（ゼロ知識証明仮想マシン）のセキュリティ監査におけるAI活用のケーススタディです。独自のスタック型アセンブリ言語（MASM）で書かれたMiden VMには開発ツールが欠如していたため、同チームはClaudeやCodexなどのAIエージェントを使い、6ヶ月かけてLSPサーバー、デコンパイラ、静的解析エンジン、そしてLeanを用いた形式検証モデルを構築しました。このAI主導のツール開発により、署名偽造につながる高深刻度の脆弱性や、400件以上のバリデーション不備を特定。さらに、95個の機械チェック済み正当性証明を作成することに成功しました。かつてはコスト面で不可能だった「監査専用の高度なツール群の構築」が、AIによって実行可能な選択肢になったことを示唆しています。",
+    "topics": [
+      "AIエージェント",
+      "zkVM",
+      "セキュリティ監査",
+      "形式検証",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Auditing in the age of (good enough) AI - The Trail of Bits Blog"
+  }
+}

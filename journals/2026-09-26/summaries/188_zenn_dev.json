@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:31:33.496533+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Remote Control（claude rc）だとアーティファクトが使えない原因と対処",
+    "url": "https://zenn.dev/zozotech/articles/0a7eb12ee4343e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのRemote Control使用時にアーティファクトが使えない原因をコード解析で特定し、非公開の環境変数を用いて有効化する解決策を提示。",
+    "summaryBody": "Claude Codeをリモート操作する`claude rc`環境において、便利な「アーティファクト」機能がデフォルトで無効化される問題について解説しています。著者がバージョン2.1.280のソースコードを調査した結果、`rc`経由の子セッションが「SDKモード」として起動されるため、既定でアーティファクトが除外されるロジックになっていることが判明しました。この制限を回避するには、`~/.claude/settings.json`内の`env`項目に、内部フラグである`CLAUDE_CODE_ARTIFACT: \"1\"`を追記することで、リモートセッションでもアーティファクトを正常に使用できるようになります。ドキュメント化されていない挙動をバイナリ解析から特定した、実践的なトラブルシューティング記事です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Artifacts",
+      "Remote Control",
+      "Troubleshooting"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

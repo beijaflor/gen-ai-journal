@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:53:06.797807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "macOS 27にはローカルLLMが入っている",
+    "url": "https://qiita.com/chibicco/items/ef1a9e40c4cdf15d8e21",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "2026年想定のmacOS 27に標準搭載されたAppleの独自言語モデル（AFM）を、Terminalから直接操作できる「fm」コマンドの機能と活用法についての技術解説。",
+    "summaryBody": "この記事は、2026年にリリースされたと仮定した「macOS 27」に搭載されている、Apple独自の言語モデル操作ツール `fm` コマンドについての解説です。サードパーティ製ツールやAPIキーを必要とせず、OS標準の機能としてオンデバイスLLM（Apple Foundation Model）を利用できる点が最大の特徴です。\n\n主な機能：\n- **fm respond / chat**: 単発の質問や対話形式でのLLM実行。ターミナル上で完結する利便性を提供。\n- **マルチモーダル対応**: `--image` フラグによる画像解析が可能。スクリーンショット内の要素抽出などに活用できる。\n- **fm schema**: 出力されるJSONの構造を定義し、スクリプトから扱いやすい形式で結果を取得可能。\n- **fm serve**: モデルをローカルAPIサーバーとして起動し、外部ツールからの呼び出しを容易にする。\n\n記事内の検証では「AFM 3 Core Advanced」モデルが動作しており、コンテキスト長は8,192トークン。M3チップ以降、メモリ12GB以上のMacが推奨環境とされています。OSレベルでのAI統合がもたらす開発効率の向上が示唆されています。",
+    "topics": [
+      "macOS",
+      "LLM",
+      "Apple Foundation Model",
+      "CLI",
+      "Apple Intelligence"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}
