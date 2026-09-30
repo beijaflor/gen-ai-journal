@@ -142,6 +142,42 @@ def follow_redirects(url, timeout=10):
             return None, None
 
 
+# Zenn cross-posts the same article under an author path AND a
+# company/publication path, with an identical article slug, e.g.:
+#   zenn.dev/aki1990/articles/1bc5c181ad19f0
+#   zenn.dev/peoplex_blog/articles/1bc5c181ad19f0
+# The slug is globally unique on zenn.dev, so it's a safe dedup key for this
+# host. This is intentionally NOT a blanket "last path segment" rule — that
+# would risk colliding unrelated articles on other hosts, so it's scoped to
+# zenn.dev only.
+ZENN_ARTICLE_PATH_RE = re.compile(r'^/[^/]+/articles/([A-Za-z0-9_-]+)/?$')
+ZENN_ARTICLE_SLUG_IN_TEXT_RE = re.compile(
+    r'zenn\.dev/[^/\s"\'()<>]+/articles/([A-Za-z0-9_-]+)'
+)
+
+
+def zenn_article_slug(url):
+    """Return the zenn.dev article slug for a Zenn article URL, or None if
+    `url` isn't a zenn.dev article path (or is some other host)."""
+    parsed = urlparse(url)
+    if parsed.hostname != 'zenn.dev':
+        return None
+    match = ZENN_ARTICLE_PATH_RE.match(parsed.path)
+    return match.group(1) if match else None
+
+
+def _content_has_duplicate(content, url):
+    """True if `content` contains `url` verbatim, or — for a zenn.dev
+    article URL — references the same article slug under a different
+    author/publication path segment (see ZENN_ARTICLE_PATH_RE above)."""
+    if url in content:
+        return True
+    slug = zenn_article_slug(url)
+    if slug is None:
+        return False
+    return slug in ZENN_ARTICLE_SLUG_IN_TEXT_RE.findall(content)
+
+
 def check_duplicate(sanitized_url, final_url=None):
     """
     Check if URL already exists in sources or summaries.
@@ -162,7 +198,7 @@ def check_duplicate(sanitized_url, final_url=None):
             with open(sources_file, 'r') as f:
                 content = f.read()
                 for url in urls_to_check:
-                    if url in content:
+                    if _content_has_duplicate(content, url):
                         duplicate_locations.append(("workdesk/sources.md", url))
         except:
             pass
@@ -175,7 +211,7 @@ def check_duplicate(sanitized_url, final_url=None):
                 with open(file, 'r') as f:
                     content = f.read()
                     for url in urls_to_check:
-                        if url in content:
+                        if _content_has_duplicate(content, url):
                             duplicate_locations.append((f"workdesk/summaries/{file.name}", url))
             except:
                 continue
@@ -188,7 +224,7 @@ def check_duplicate(sanitized_url, final_url=None):
                 with open(sources_file, 'r') as f:
                     content = f.read()
                     for url in urls_to_check:
-                        if url in content:
+                        if _content_has_duplicate(content, url):
                             duplicate_locations.append((str(sources_file), url))
             except:
                 continue
