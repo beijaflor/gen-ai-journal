@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:33:00.565912+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.3-FlashをJevのような「システム1」意思決定モデルとして活用する手法",
+    "url": "https://www.privatemode.ai/blog/system-one-from-glm-flash",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMのロジット（確率分布）を直接読み取ることで、GLM-5.3-Flashを単一トークンで高速かつ確信度付きの意思決定を行う「システム1」モデルへと変換する手法とそのベンチマークが公開されました。",
+    "summaryBody": "Edgeless Systemsは、汎用LLMであるGLM-5.3-Flashを、Jevのような高速・高精度な意思決定専用モデルとして動作させる手法を発表しました。従来のLLMによるJSON形式の回答生成は、推論コストと速度に課題がありましたが、本手法ではプロンプトの末尾を「choice_index:」で事前入力（Prefill）し、次に出現する単一トークンの確率分布（Logits）をvLLM経由で直接取得します。これにより、1回のフォワードパスで「どの選択肢か」という回答と、その「確信度（確率）」を同時に得ることが可能です。29のデータセットを用いた検証では、専用モデルであるJevと同等の精度を維持しつつ、LLMの特性を活かしたマルチモーダル（画像）への対応も実現しています。実装にはvLLMの拡張APIを活用しており、機密コンピューティング環境（Privatemode）での実行も想定されています。",
+    "topics": [
+      "LLM",
+      "GLM-5.3-Flash",
+      "意思決定モデル",
+      "vLLM",
+      "機密コンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Turn GLM-5.3-Flash into a Jev-like System One model"
+  }
+}

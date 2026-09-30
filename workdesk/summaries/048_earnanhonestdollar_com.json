@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:34:54.384083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「推測しないでください」の一言でAIのデータ捏造が70.7%から20.2%へ激減：Web抽出の最新ベンチマーク",
+    "url": "https://earnanhonestdollar.com/bench",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Web抽出タスクにおいて、プロンプトに「推測禁止」の指示を加えるだけでAIモデルのハルシネーション（捏造）率が劇的に低下することが、16種類のモデルと3つのAPIの比較調査で判明した。",
+    "summaryBody": "マーケットプレイス「Earn an Honest Dollar」が実施した最新のベンチマーク調査によると、AIによるWebデータ抽出における「値の捏造」問題は、単純なプロンプトの追加で大幅に改善できることが示された。調査では、正解が存在しない「おとり（デコイ）」情報を含むペアページを用意。Gemini 3.8 Flash、GPT-6 Luna、Claude 5 Sonnet等の16モデルを検証した結果、 「Do not guess（推測しないでください）」という指示がない場合の捏造率は70.7%に達したが、指示ありでは20.2%まで抑制された。特にGemini 3.8 FlashやGLM 5.3が高い誠実性を示した一方で、Firecrawlのような特化型APIが汎用モデルよりも高い捏造率を記録する意外な結果も出ている。また、抽出結果をさらに別の安価なLLMで事後検証（セルフチェック）させる手法の有効性も実証された。",
+    "topics": [
+      "AIハルシネーション",
+      "LLMベンチマーク",
+      "Webスクレイピング",
+      "プロンプトエンジニアリング",
+      "データ抽出"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Calling the AI bluff: \"Do not guess\" cut made-up fields from 70.7% to 20.2%"
+  }
+}
