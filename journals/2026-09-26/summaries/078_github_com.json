@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:07:35.090989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kev: Qwen3.5ベースのJev風小型意思決定モデル（ローカル実行・訓練可能）",
+    "url": "https://github.com/jaredpalmer/kev/tree/main",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Qwen3.5を基盤とし、Jevのアーキテクチャを採用した、ローカルでの訓練と実行が可能な小型意思決定モデルシリーズ。",
+    "summaryBody": "Kevは、Jevのアーキテクチャに着想を得た、Qwen3.5ベースの小型意思決定モデル群（0.8B、4B、9B）です。従来のチャットモデルとは異なり、Yes/No判断（noul）、多肢選択（choice）、スコアリング（score）といった特定の意思決定タスクに特化しており、TypeSafeのSystem One APIと互換性があります。\n\n主な特徴と機能：\n- **効率的な推論**: 独自のアテンション制御により、同一の入力テキスト（State）に対して複数の質問を独立かつ効率的に処理できます。\n- **ローカル動作**: CUDA、ROCmに加えてApple Silicon（Mac）での実行をサポートしており、プライバシーと低レイテンシを両立します。\n- **カスタマイズ性**: LoRAを用いた少量のデータ（数百例程度）によるファインチューニングが可能で、独自の分類ルールやトーン判定に容易に適応できます。\n- **信頼性の可視化**: 出力される確率はキャリブレーションされており、判断の自信度に基づいた自動化の閾値設定が可能です。\n\n既存の汎用LLMではコストや速度が課題となる、サポートチケットのルーティングやコンテンツモデレーション、自動的な重要度判定などのタスクに最適なリソースです。",
+    "topics": [
+      "LLM",
+      "Decision Models",
+      "Qwen3.5",
+      "LoRA",
+      "Local AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - jaredpalmer/kev: tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own"
+  }
+}

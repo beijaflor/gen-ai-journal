@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:58:19.623352+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LaunchVideo: URLやプロンプトから製品紹介動画を自動生成するAIエージェント",
+    "url": "https://launchvideo.io/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "URLやプロンプトからClaude Opus 5.5が動画構成コードを書き、OpenComputerのエージェントがブラウザ上でレンダリングしてMP4を出力する、コードベースの自動動画生成ツール。",
+    "summaryBody": "LaunchVideoは、製品のURLや説明文を入力するだけで高品質な紹介動画を作成できるオープンソースのサーバーレスエージェントです。最大の特徴は、動画生成AI（Diffusion Model等）を使用せず、Claude Opus 5.5にHTML/CSS/JSで動画を「記述」させ、それをOpenComputer上のheadless Chromiumで実行してレンダリングする手法にあります。\n\n### 主な技術的特徴\n- **決定論的レンダリング**: 仮想クロックを用いることで、ブラウザ内のアニメーション（requestAnimationFrameやCSSアニメーション）をフレーム単位で正確にシークし、1920x1080/30fpsのJPEGフレームをffmpegでMP4に結合します。\n- **サーバーレスアーキテクチャ**: OpenComputer上で動作するTypeScript製エージェントが、動的にmicroVMを立ち上げ、Playwrightのインストールからレンダリング、Vercel Blobへのアップロードまでを自動化します。\n- **効率的なフロー**: 1ビデオあたり約4分で生成。約9万トークンの入力と1.5万トークンの出力（主にHTMLコード）を消費します。\n\nGitHubでソースコードが公開されており、誰でも自分の環境にデプロイして「コードが動画を作る」プロセスを試すことが可能です。",
+    "topics": [
+      "AI Agents",
+      "OpenComputer",
+      "Video Generation",
+      "Claude 3.5 Opus",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "LaunchVideo"
+  }
+}

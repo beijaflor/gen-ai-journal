@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:24:44.666096+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントが再発見したサーバーレス #serverlessjp",
+    "url": "https://www.docswell.com/s/nekoruri/ZDMVQV-serverlessdays2026",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの実行基盤に求められる技術特性が、サーバーレスが10年間培ってきた知見と合致している現状を「再発見」と定義し、最新の技術動向を既存知識で読み解くための体系的地図を提示しています。",
+    "summaryBody": "### サーバーレス技術とAIエージェントの融合\n2026年のServerlessDays Tokyoでの講演資料です。AIエージェントの実行環境（例：AWS Lambda MicroVMs）に求められる「マイクロVM」「スナップショット」「ゼロスケール」といった要素は、サーバーレスが長年磨いてきた道具そのものであると指摘しています。断続的な負荷やサンドボックスでのコード実行といったエージェントの要求が、サーバーレスが解決してきた課題と収斂進化している現状を解説します。\n\n### 「再発見」と「再発明」の整理\n既存の知識を整理する枠組みとして、以下の2点を提唱しています：\n- **再発見**: 既存の仕組み（例：SnapStart）を、会話セッションの中断・再開といった新しい文脈で活用すること。\n- **再発明**: 実行モデル自体をエージェント向けに最適化し、Durable Execution（持続的実行）のように状態管理の履歴を記録する仕組みとして再構築すること。\n\n### 既存知識を活かすための地図\nMCP（Model Context Protocol）のステートレス化や、マイクロVMによる高速なサンドボックス化など、各社の最新実装を比較・分析。過去のサーバーレスのベストプラクティスがどこまで通用し、どこからが新しい設計思想（DSL、ストリーミング、非同期処理など）であるかを明確にし、技術選定の指針となる知識地図を提供しています。",
+    "topics": [
+      "サーバーレス",
+      "AIエージェント",
+      "AWS Lambda",
+      "MicroVM",
+      "Durable Execution"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

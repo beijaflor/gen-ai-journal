@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:37:24.999316+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jev-lint: コード中の命名やコメントが嘘になってないかを高速に確認",
+    "url": "https://zenn.dev/mizchi/articles/jev-lint-intro",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ast-grepによるコード抽出とLLM（Jev）による自然言語評価を組み合わせ、命名と実装の不一致などを高速・安価に検知するLintツール「jev-lint」が登場。",
+    "summaryBody": "mizchi氏が開発した「jev-lint」は、従来の静的解析では困難だった『コードの意図（命名・コメント）と実態の乖離』をLLMを用いて検証するツールです。ast-grepで抽出したコード断片に対し、自然言語で記述されたルールをJevを通じて一括評価することで、1万行規模のコードベースでも数秒かつ数円単位の低コストで検査を完了させます。関数名が実装と矛盾していないか、テスト名が内容を正しく反映しているかといった、人間の論理的判断が必要な領域を自動化します。LLMの非決定性に対しては、複数回試行（retry）や記録（record/replay）機能で実用性を確保しており、Pre-commitやPRのアドバイザリーとしての活用が推奨されています。",
+    "topics": [
+      "jev-lint",
+      "LLM",
+      "ast-grep",
+      "TypeScript",
+      "静的解析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

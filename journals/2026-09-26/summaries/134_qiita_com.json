@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:53:51.264666+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "APEXlangでVibe Coding：ADBとJevをつないだゲームを作ってみた",
+    "url": "https://qiita.com/araidon/items/00725392aeb56b24f133",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Oracle APEXのコードベース定義ツール「APEXlang」と判断特化型AI「Jev」を組み合わせ、自律型データベース上で動作する2048ゲームの自動プレイ環境を構築した事例の紹介。",
+    "summaryBody": "本記事では、Oracle APEXのアプリケーション定義を管理する「APEXlang」を用い、判断特化型AIモデル「Jev」とOracle Autonomous Database (ADB) を連携させた2048ゲームの開発プロセスを紹介しています。\n\n主な技術的特徴は以下の通りです：\n- **Jevの活用**: 文章生成ではなく、提示された選択肢から最適な判断と確率を返すTypeSafe AI「Jev」を採用し、2048の次の一手（移動方向）の意思決定を委ねています。\n- **ADBとの統合**: PL/SQLの `DBMS_CLOUD.SEND_REQUEST` を使用してJevのAPIを呼び出しており、OCIのコンポーネントをADB内で完結させています。\n- **AI駆動開発 (Vibe Coding)**: Codexに実装を相談しながらAPEXlangで定義を生成し、SQLcl経由でADBへインポートするモダンな開発フローを実践しています。\n\n実行画面ではゲーム盤面だけでなく、APIのレイテンシや消費トークン、推定コストをリアルタイムで可視化しており、ADB上でのAIエージェント構築における実用的な構成案を示しています。",
+    "topics": [
+      "APEXlang",
+      "Oracle APEX",
+      "Autonomous Database",
+      "Jev",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 82
+    }
+  }
+}

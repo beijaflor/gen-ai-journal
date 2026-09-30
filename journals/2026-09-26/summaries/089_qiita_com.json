@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-22T00:05:00.915641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Jev】文章を書かない判断AIに記述問題を採点してもらいたい！ #AWS - Qiita",
+    "url": "https://qiita.com/yosuke-suzuki/items/967afcce827878f64e99",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AI「Jev」を活用し、AWS認定試験の記述式回答を高速・低コスト・高精度に自動採点する設計手法と、日本語での検証結果を解説しています。",
+    "summaryBody": "本記事は、文章を生成せずに判断と確信度のみを返す「System One Model」のJevを、学習アプリの記述問題採点に活用した事例を紹介しています。\n\n### 主な特徴とメリット\n- **圧倒的な効率性**: 1回あたり約0.01円、応答速度約250msと、汎用LLM（System Two）に比べ極めて低コストかつ高速です。\n- **高い判定精度**: 日本語の回答を用いた検証で、個別の評価観点に対する一致率は99.2%に達しました。\n- **型安全な設計**: Yes/Noの確率やスコアを返すため、プログラムでの後処理や論理合成が容易です。\n\n### 運用の工夫と知見\n- **複合採点の推奨**: 総合スコア（Score）は誤答に対しても加点される傾向があるため、複数のYes/No判定（Noul）をプログラム側で組み合わせることで精度を担保しています。\n- **役割の分担**: 判断はJevが行い、不足点の解説文などは生成AI（Claude等）が作成した固定文を用いるといった、判定型と生成型の使い分けが重要です。\n- **プロンプトのコツ**: 「1つの質問に複数の条件を入れない」という制約が、日本語環境でも精度を維持する鍵となります。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "AI採点",
+      "AWS認定試験",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

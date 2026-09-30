@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:29:19.380990+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Opus 5.5におけるタスクコストと運用の最適化",
+    "url": "https://claude.com/blog/what-a-task-costs-on-opus-5-5",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "AnthropicのOpus 5.5は前世代より安価なトークン単価を実現しており、特にキャッシュ読み取り費用の大幅な削減とEffortレベルの調整により、実用的なタスク実行コストの最適化が可能になっています。",
+    "summaryBody": "Anthropicが公開したこの記事では、次世代モデル「Opus 5.5」を用いた開発におけるコスト構造と効率化の具体策が詳細に解説されています。Opus 5.5はOpus 5と比較して、入力・出力トークンが20%安価になり、キャッシュ読み取り（Cache Reads）に至っては60%もの大幅なコスト削減が図られています。\n\n記事では、タスクコストを決定する4つの主要因として「ターン数」「キャッシュヒット率」「出力トークン（思考プロセスを含む）」「モデル選択」を挙げています。開発における実用的な最適化手法として、高価なモデルに切り替える前に、まず「Effort（労力）」設定を調整して思考の深さを管理すること、`/usage`コマンドでリアルタイムにコストを監視すること、そして`/compact`コマンドで古い履歴を要約しキャッシュ効率を高めることを推奨しています。\n\nまた、適材適所のモデル利用についても言及されており、判断を伴う主要なコード編集にはOpus 5.5を、検索やログ解析などの補助的タスクにはSonnetやHaikuを、そして難易度の極めて高い課題にはFable 5.1を使い分ける戦略が提示されています。",
+    "topics": [
+      "Opus 5.5",
+      "Claude Code",
+      "コスト最適化",
+      "プロンプトキャッシュ",
+      "AI開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "What a task costs on Opus 5.5"
+  }
+}

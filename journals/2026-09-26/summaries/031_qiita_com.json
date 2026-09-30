@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:06:09.116855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code が AGENTS.md を読むようになった。ただし1回目のセッションでは読まれない",
+    "url": "https://qiita.com/suwa_nobu/items/c795cf89d0fd4091c9cb",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code 2.1.277で導入されたAGENTS.mdサポートの動作検証により、CLAUDE.mdとの優先順位や初回セッション時に読み込まれない特異な仕様が明らかになりました。",
+    "summaryBody": "Claude Codeのバージョン2.1.277（2026年9月18日リリース）から導入された`AGENTS.md`サポートについて、詳細な挙動が検証されています。主な仕様として、`CLAUDE.md`が存在しないプロジェクトでは`AGENTS.md`が読み込まれますが、アップデート後またはインストール後の「最初のセッション」では読み込まれず、2回目以降のセッションから有効になるという落とし穴があります。また、`CLAUDE.local.md`を1つでも置くと、デフォルトでは`AGENTS.md`が無視されるため、チーム共通の設定を維持しつつローカル設定を追加するには`~/.claude/settings.json`での明示的な設定変更が必要です。検証では、合言葉を用いた厳密なツール制限環境下での挙動確認が行われており、公式ドキュメントにある例外条件が網羅的に解説されています。",
+    "topics": [
+      "Claude Code",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "AIエージェント",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

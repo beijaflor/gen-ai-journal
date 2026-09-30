@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:57:09.373888+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "商品名のカテゴリ判定をLLMからJevに移した際の精度と確信度の検証",
+    "url": "https://qiita.com/ktdatascience/items/b512f9c79f549df3a985",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "商品名のカテゴリ判定において、JevはLLMに精度で劣るものの、確信度を用いたフィルタリングにより実運用での自動化効率と信頼性を高められることを100件の検証で示した。",
+    "summaryBody": "商品マスタのカテゴリ分類を「正規表現」「LLM（Opus 5 / gpt-5.6-luna）」「Jev」の4手法で比較検証したレポートです。100件の食品データを用いた結果、正答率はLLMが93%と最も高かった一方、Jev（85%）は出力に含まれる「確信度」が実際の的中率と強く相関するという特徴を示しました。確信度0.5以上のみを自動処理対象とすることで、的中率を92.0%まで向上させつつ、目視確認が必要な件数を12%に抑えることが可能です。単なる精度比較に留まらず、運用面での「確実な自動化」と「効率的な人手確認」のバランスをデータで実証しています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "カテゴリ分類",
+      "確信度",
+      "データクレンジング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    }
+  }
+}

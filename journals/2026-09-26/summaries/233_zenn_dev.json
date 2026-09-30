@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:55:51.055641+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeSafe AI の jev を Python で一通り試した (使い方と 10 の実験)",
+    "url": "https://zenn.dev/ainellc/articles/9e5f856b2f2de2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TypeSafe AI の論理推論モデル「jev」を Python SDK で利用する基本手順から、分岐処理、日本語対応、皮肉の読み取りなど 10 の実験を通じた詳細な性能検証をまとめたガイド。",
+    "summaryBody": "TypeSafe AI が提供するモデル「jev」の Python SDK を活用し、テキストから「選択肢（Choice）」「スコア（Score）」「Yes/No の確率（Noul）」を抽出する方法を解説しています。記事では 10 の実験を行い、日本語の問い合わせ分類、大量の質問を同時に投げることによるトークン節約効果、信頼度（confidence）を用いた処理の分岐、さらには絵文字や皮肉などのニュアンス判定といった多角的な性能を検証しています。実験の結果、質問数を増やしても応答時間がほとんど変わらない点や、入力データの順序による揺らぎが極めて小さいといった実務上の利点が示されています。また、SDK の非同期対応やエラーハンドリング、型安全なレスポンスの受け取り方など、開発者向けの実装詳細も網羅されています。",
+    "topics": [
+      "TypeSafe AI",
+      "jev",
+      "Python",
+      "LLM",
+      "構造化抽出"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

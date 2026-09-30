@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-23T01:50:25.272867+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevでRAG検索の爆速化＆コスト削減は実現できるのか検証してみた",
+    "url": "https://qiita.com/kikuziro/items/2be9091b328d8b844640",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "非生成AIモデル「Jev」をRAGの各プロセス（門前払い、リランク、回答可否判定）に導入し、精度を維持しながらコストを最大75分の1、速度を数倍に改善できることを検証したレポート。",
+    "summaryBody": "TypeSafe AIが公開したテキストを生成しないAIモデル「Jev」を、RAG（検索拡張生成）のボトルネック解消に活用する検証記事です。Jevは「状態」と「型付きの質問」に対して高速かつ安価に確率付きの回答を返す特性を持ちます。検証では、検索前の「門前払い」、リランキング、LLM呼び出し直前の「回答不可判定」の3箇所にJevを配置。結果、リランキングでは既存手法の1/8のコストで同等の精度を実現し、検索前のフィルタリング（門前払い）では不要な処理をスキップすることでコストを1/75、応答速度を7.4倍に改善しました。特にニアミスの質問をLLMに渡す前に高精度に遮断できる点が強力で、実運用における大幅な効率化の可能性を示唆しています。",
+    "topics": [
+      "RAG",
+      "Jev",
+      "LLM",
+      "リランキング",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

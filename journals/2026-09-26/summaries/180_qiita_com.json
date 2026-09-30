@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:33:24.059457+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「これ本当にAPEX？」Codexで作るモダンUIをOCI Always Freeで動かす",
+    "url": "https://qiita.com/itokazu/items/5f204a466c22a2b774de",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Codex」とアプリケーション定義言語「APEXlang」を使い、Oracle APEXでモダンなUIのアプリをOCI無料枠に素早く構築する方法の解説。",
+    "summaryBody": "### 概要\n本記事は、Oracleのローコード開発基盤「Oracle APEX」において、AIコーディングツール「Codex」とAIフレンドリーな定義言語「APEXlang」を活用し、標準的なAPEXの印象を覆すモダンなUIを持つアプリケーションを構築する手順を紹介しています。\n\n### 主な内容\n- **OCI環境の自動構築**: GitHub上のIaC（Terraform）を利用し、OCI Resource Manager経由でAutonomous Databaseや開発用VM（ARMインスタンス）を約10分でデプロイ可能にしています。\n- **AIによる開発体験**: Codexと対話しながら自然言語で指示を出すことで、APEXlang形式のアプリケーション定義やDBスキーマ、カスタムCSSを生成。従来の複雑なGUI設定をスキップし、テキストベースで高速にプロトタイピングを行う手法を解説しています。\n- **成果物**: 1〜1.5時間程度で、Todoist風の独自デザインを持つタスク管理アプリを生成。APEXロゴの非表示やドロワー形式のUIなど、高度なカスタマイズがAI主導で実現できることを実証しています。\n\n### 結論\nAIの活用により、APEX開発の学習コストや設定の手間を大幅に削減し、開発者が「何を作るか」に集中できる新しいローコード開発の姿を提示しています。",
+    "topics": [
+      "Oracle APEX",
+      "OCI",
+      "Codex",
+      "APEXlang",
+      "ローコード"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

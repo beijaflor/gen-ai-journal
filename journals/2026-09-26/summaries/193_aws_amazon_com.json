@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:30:11.094227+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon CloudWatch Omniの発表：生成AIとエージェントワークロード向けAI駆動型オブザーバビリティ",
+    "url": "https://aws.amazon.com/jp/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWSは、AIエージェントの非決定的な挙動を可視化し、IDEや独立したウェブUIから評価・実験・運用を統合管理できる新サービス「Amazon CloudWatch Omni」を発表しました。",
+    "summaryBody": "Amazon CloudWatch Omniは、生成AIアプリケーションやAIエージェントの設計、評価、運用を支援するために構築された新しいオブザーバビリティソリューションです。従来の監視ツールでは困難だった「プロンプト変更による品質劣化」などの問題を、OpenTelemetryベースのトレース可視化と17種類の組み込み評価指標（正確性、一貫性、ツール選択の適切性など）によって解決します。VS Code等のIDE拡張機能と、AWSコンソールを介さずSSOでアクセス可能なスタンドアロンWeb UIの2つのインターフェースを提供。LangChain、CrewAI、Amazon Bedrock AgentCoreなどの主要フレームワークに対応し、ローカルでの開発・実験からクラウド上での本番監視までをシームレスにつなぎます。プロンプト管理機能やサイドバイサイドの実験機能も備え、エージェント開発のライフサイクル全体を最適化します。",
+    "topics": [
+      "Amazon CloudWatch Omni",
+      "生成AI",
+      "AIエージェント",
+      "オブザーバビリティ",
+      "AWS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-28T16:53:03.840862+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code クラウドセッション、使ってみて！",
+    "url": "https://zenn.dev/goat_eat_any/articles/claude-code-cloud-sessions",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeをAnthropicのクラウドVM上で実行できる「クラウドセッション」機能の概要、環境設定、セキュリティ、および高度な活用テクニックを解説する実践ガイド。",
+    "summaryBody": "Claude Code クラウドセッションは、Anthropicが管理するクラウドVM（Ubuntu 24.04、4 vCPU / 16GB RAM）上でClaude Codeを動作させる機能です。PCを閉じても処理が継続し、デスクトップ、ブラウザ、モバイルの各アプリ間でセッションを同期できるのが最大の特徴です。\n\n主な設定と活用ポイント：\n- **環境構築**: GitHub Appを連携し、リポジトリ単位で環境を作成。ネットワークアクセスは「Trusted」「Full」「Custom」から選択でき、ドメイン制限によるセキュリティ強化が可能です。\n- **セキュリティ**: 「API認証情報」機能により、APIキーをVM内の環境変数に置かずプロキシ経由で安全に利用できます。\n- **カスタマイズ**: `TZ=Asia/Tokyo`による日本時間設定や、ルート権限で動く「セットアップスクリプト」による追加パッケージ（apt install等）の導入に対応しています。\n- **自動化**: `SessionStart`フックを利用したローカル/クラウド共通の初期化や、定期実行（ルーティン）機能によるトレンド収集など、AIによる自律的なワークフローを構築できます。\n\nPro/Max/Teamプランのサブスクリプション内で利用可能であり、開発の場所を選ばない新しいコーディング体験を提供します。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI開発",
+      "クラウドセッション",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

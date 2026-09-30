@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:38:21.260384+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIソフトウェアファクトリーとは何か？：3つのクライアント導入から得られた教訓",
+    "url": "https://camplight.net/ai/ai-software-factory/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントと人間、既存のツールを統合し、要件定義からリリース、フィードバックまでを一貫した「システム」として管理するAIソフトウェアファクトリーの概念と7つの評価基準を解説しています。",
+    "summaryBody": "Camplight社が過去9ヶ月間の3件の導入実績をもとに、AIソフトウェアファクトリーの概念的モデル「Nest」を提示し、その重要要素を解説した記事です。単なるコーディングエージェント（Copilot等）との最大の違いは、エージェント単体の機能ではなく、意図の定義、文脈の提供、実行、検証、承認、リリース、フィードバックという「ワークフロー全体を繋ぐシステム」である点にあります。\n\n記事では評価すべき7つの構成要素を挙げています：1.運用の可視化（ダッシュボード）、2.明確な責任を持つエージェント管理、3.権限と安全性を担保する設定、4.情報の文脈を維持するプロジェクト単位の管理、5.最小限の能力を組み合わせたチーム編成、6.再利用可能なスキルと自動化、7.人間による適切な介入（ハドル）。\n\n特に「人間主導（Human-led）」であることを強調しており、AIが勝手にプロダクション環境を書き換えるのではなく、既存のCI/CDや検証プロセスと連携し、人間が最終的な説明責任を負う設計の重要性を説いています。導入コストは4万〜25万ユーロ程度とされ、特定の境界が明確なワークフローからスモールスタートすることを推奨しています。",
+    "topics": [
+      "AI Software Factory",
+      "AI Agents",
+      "Digital Transformation",
+      "SDLC Automation",
+      "Human-in-the-loop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "What Is an AI Software Factory? Lessons From 3 Client Deployments"
+  }
+}

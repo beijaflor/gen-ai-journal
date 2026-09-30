@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:05:40.119768+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ｽﾀｯｸﾁｬﾝの会話の判断を Jev に任せてみた #AIエージェント",
+    "url": "https://qiita.com/kamo-shika/items/99b9a1e6213857126c66",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AI「Jev」をスタックチャンの意思決定に導入し、安価なLLMでも高精度なツール利用と表情制御を高速かつ低コストで実現するアーキテクチャの試行。",
+    "summaryBody": "コミュニケーションロボット「スタックチャンの」会話制御において、判断のみに特化した新世代AIモデル「Jev（System One Model）」を活用した事例です。従来のLLM（qwen3-30b等）では不安定だった『ツール呼び出し（健康データの参照や天気予報）』と『表情選択』の判断をJevに切り出し、LLMには回答文の生成のみを任せる「判断と文章生成の分離（Routingパターン）」を構築しています。Jevは172〜436msという極めて高速なレスポンスと、出力トークン無料という価格体系が特徴です。Cloudflare Workers、Databricks、Fitbitを組み合わせ、実用的なAIエージェントとしての応答速度とコストパフォーマンスを両立させています。",
+    "topics": [
+      "Jev",
+      "AIエージェント",
+      "Cloudflare Workers",
+      "ｽﾀｯｸﾁｬﾝ",
+      "M5Stack"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

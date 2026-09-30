@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:49:25.426498+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevのオープンウェイトモデルOpenJevを開発した話",
+    "url": "https://qiita.com/xeje/items/48c9835a3e5c7b3d5489",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeSafe AIの「Jev」を参考に、既存のLLMを高速・高精度な確率分布ベースの判断モデルとして動作させるオープンソース実装「OpenJev」が公開されました。",
+    "summaryBody": "TypeSafe AIが発表した「System Oneモデル」Jevを、Hugging Face上の任意のモデル（Qwen, Llama等）で再現する「OpenJev」の開発記録です。テキスト生成を行わず、事前定義された型（Yes/No、選択、スコア）に対してロジットから算出された確率分布を直接返すことで、70〜500msという極めて高速な推論と、スキーマ外の回答を生成しない「幻覚率0%」の構造化出力を実現しています。\n\n技術的特徴として、共通のコンテキスト（State）に対するKVキャッシュの共有により、質問数が増えても計算コストがほぼ一定である点が挙げられます。また、出力の信頼性を高めるための温度スケーリングやLoRAによる校正（Calibration）学習機能も備えており、公式SDKとワイヤ互換であるため、既存のワークフローへの組み込みも容易です。",
+    "topics": [
+      "LLM",
+      "OpenJev",
+      "TypeSafe AI",
+      "機械学習",
+      "構造化出力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 45,
+      "overall": 92
+    }
+  }
+}

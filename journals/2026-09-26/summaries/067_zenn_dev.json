@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:23:32.396222+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev クローンの Laya をローカルで60fpsで動かせるか？",
+    "url": "https://zenn.dev/mizchi/articles/laya-mlx-60fps",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "選択肢スコアリングに特化したLLM「Laya」を検証し、Apple Silicon環境下で60fps超、ブラウザのWebGPU環境で約20fpsの推論性能を確認したレポート。",
+    "summaryBody": "この記事では、Jevのような「自然言語を生成せず、用意された選択肢にスコアを付ける」ことに特化したオープンウェイトモデル「Laya」のパフォーマンスを検証しています。LayaはModernBERTやmmBERT（322M〜421Mパラメータ）をベースにしており、Apple SiliconのMLX環境では1判断あたり約8ms（90fps超）という極めて高いレスポンスを実現しました。また、ONNX runtime-webとWebGPUを用いたブラウザ版のデモ（スネークゲーム、チェス）も構築され、ブラウザ上でも20fps程度の動作が可能なことが示されています。一方で、モデルサイズの肥大化（約650MB）や、判断の精度が選択肢の説明文（プロンプト）の質に強く依存するといった課題も指摘されています。学習なしで高度な意思決定を行える「ガードレール」や「ゲームAI」としての活用の可能性を実証する内容です。",
+    "topics": [
+      "Laya",
+      "MLX",
+      "WebGPU",
+      "ONNX",
+      "Edge AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

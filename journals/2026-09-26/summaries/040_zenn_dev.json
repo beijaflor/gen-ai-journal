@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:48:47.145646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "高速判断AI Jevのユースケースとオープン実装を雑にまとめる",
+    "url": "https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeSafe AIが発表した、文章生成を行わずに定義済みの選択肢や確率を高速に返す「System One Model」Jevの概要と、活用事例、オープンな類似実装のまとめ。",
+    "summaryBody": "### Jevの概要と「System One」アプローチ\nJevは、従来のLLMのように1トークンずつ文章を生成するのではなく、プログラムから与えられた選択肢（Choice）、尺度（Score）、真偽（Noul）に対する判断と確率分布を直接返す「賢いif文」のようなモデルです。文章生成とパースのプロセスを省くことで、70〜500msという低遅延かつ低コストな動作を実現しています。\n\n### ユースケースと応用事例\nハルシネーションを構造的に抑制しつつ、高速な意思決定が必要な領域で活用されています。具体例として、要件定義書の多角的レビュー、ロボット（スタックチャン）の感情判断、ブラウザ拡張による意図検索、そしてマリオやVampire Survivorsといったリアルタイム性が求められるゲームの操作エージェントなどが挙げられています。\n\n### オープンな代替実装の広がり\nJev自体はクローズドですが、既存のLLMのロジット（Logits）を利用したり、専用のエンコーダーヘッドを学習させたりすることで同様の機能を実現する「オープンな類似実装」が急速に増えています。LocalJev、System One Lite、Laya、typed-decisionsなど、ローカル実行や特定タスクに特化した多様なプロジェクトが紹介されており、この分野の関心の高さが伺えます。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "System One Model",
+      "LLMエージェント",
+      "構造化出力"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

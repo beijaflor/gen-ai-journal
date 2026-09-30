@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:39:02.971978+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "json-render と Jev で UI を組み立ててみた",
+    "url": "https://azukiazusa.dev/blog/json-render-jev/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIがコンポーネントの候補から最適なものを選択・配置してUIを構築する、json-renderとTypeSafe AIの新モデル「Jev」の連携および実装方法を解説した記事。",
+    "summaryBody": "この記事では、Generative UIのためのライブラリ「json-render」と、TypeSafe AI社が発表した意思決定モデル「Jev」を組み合わせた新しいUI生成手法を紹介しています。従来のjson-renderがLLMにPropsを含めたJSONをゼロから生成させていたのに対し、Jev連携（experimental_composeSpec）では、あらかじめ定義されたコンポーネントの「候補（Candidates）」の中から、AIに選択とレイアウトのみを任せるのが特徴です。実装セクションでは、カタログ定義、JevによるSpec生成、Reactでの`useBoundProp`を用いた双方向データバインディング、そしてVercel AI Gateway経由でのモデル利用方法まで、コード例を交えて具体的に解説されています。この手法により、プロンプトエンジニアリングの負担を減らし、より構造化された予測可能なUI構築が可能になります。",
+    "topics": [
+      "json-render",
+      "Jev",
+      "Generative UI",
+      "React",
+      "TypeSafe AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

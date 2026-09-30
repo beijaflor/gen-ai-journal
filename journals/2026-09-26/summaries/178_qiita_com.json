@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-24T11:33:55.499742+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「それ、先に聞いておけば」を減らしたい。確認と整理を自律的に支援するAI「Reqlogue」 #ハッカソン",
+    "url": "https://qiita.com/ai-related-26/items/269beeaa11ff4b8c51e4",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "要件定義会議での認識齟齬を防ぐため、AIがリアルタイムで発言を分析し、確認すべき論点のアドバイスやマインドマップの自動更新を行う自律支援ツール「Reqlogue」。",
+    "summaryBody": "要件定義における「言った言わない」や認識のズレを解消するために開発されたAIツール「Reqlogue」の紹介です。このツールは、会議中の音声をリアルタイムでテキスト化・分析し、定義が曖昧な言葉や情報の不足を自動で検出します。特徴は、AIが直接顧客に質問するのではなく、聞き手（PMやSE）に対して「今、確認すべきこと」をカンバン形式のアドバイスとして提示し、さらに会話の流れに合わせてマインドマップを自動で差分更新する点にあります。技術面ではOrcaRouterを活用し、処理の内容に応じてコスト重視と品質重視のモデルを使い分けるルーティングを実現。PIIマスキングによるセキュリティ対策や、AIの出力を鵜呑みにせず人間が最終判断を下す「Human-in-the-loop」の設計思想が取り入れられており、開発現場の意思決定を高度に支援することを目指しています。",
+    "topics": [
+      "生成AI",
+      "要件定義",
+      "LLM",
+      "ハッカソン",
+      "プロジェクトマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

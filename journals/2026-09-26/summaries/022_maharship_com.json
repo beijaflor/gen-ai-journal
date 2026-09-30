@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:39:49.214465+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP（Model Context Protocol）が最初から「悪いアイデア」だった理由",
+    "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "MCPはLLMの能力が低かった時代の過渡的なプロトコルであり、モデルが直接APIを呼び出しコードを実行できる現在では、既存のHTTP標準やCLIの活用に回帰すべきだと主張する論考。",
+    "summaryBody": "本記事は、Anthropicが提唱したModel Context Protocol（MCP）に対し、技術史的な視点から批判的な再検討を行っています。著者は、MCPが2024年末に登場した背景として、当時のLLMが外部ツールを自律的に扱う能力に欠けていたことを指摘します。しかし、モデルの推論能力が向上し、自らスクリプトを記述してAPIを叩き、`--help`コマンドでCLI仕様を自己学習できるようになった現在、MCPという「中間層」はコンテキストの肥大化を招くだけの不要なオーバーヘッドになりつつあると論じています。\n\n著者が提案するのは、独自プロトコルの維持ではなく、既存のウェブ標準の拡張です。具体的には、`Accept: text/markdown`ヘッダーによるエージェント向けレスポンスの切り替えや、`Accept-Language`を用いた開発言語の優先指定など、HTTPプロトコルに則った「AIフレンドリーな通信」への移行を推奨しています。最終的に、エージェントは専用のサーバーを介さずとも、ドキュメント化されたAPIやCLIを直接操作する方が柔軟かつ強力であると結論付けています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AI Agents",
+      "API Design",
+      "Anthropic",
+      "Web Standards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    },
+    "originalTitle": "Why MCP Was Always a Bad Idea"
+  }
+}

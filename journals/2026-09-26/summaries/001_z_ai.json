@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T03:24:14.474032+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "再帰的自己改善への道：GLMがいかにして自らの推論インフラを構築したか",
+    "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GLM-5.3を活用した「Infra Agent」が、10万基規模の中国製AIアクセラレータ上での推論システム構築と最適化を自律的に行い、わずか2週間でスループットを3倍に向上させた技術的詳細を公開。",
+    "summaryBody": "本記事は、AIモデルが自らの実行環境を改善する「再帰的自己改善（RSI）」の初期段階の実例を報告しています。Z.aiは、10万基を超える中国製AIアクセラレータで構成されるクラスタ上にGLM-5.3-Flashの推論サービスを構築する際、エンジニアチームだけでなく「Infra Agent（GLM-5.3駆動）」を投入しました。開発の核となったのは、疎なエンドツーエンド指標を、カーネル・サブシステム単位の「密なフィードバック（Dense Feedback）」に変換する手法です。\n\n主な成果と技術的ポイントは以下の通りです：\n- **性能向上**: 基盤となる中国製チップのメモリ帯域制限や未成熟なエコシステムという課題に対し、Encode-Prefill-Decode (EPD) 分離アーキテクチャやW8A8量子化を導入。最終的に初期比3倍のスループットを達成しました。\n- **具体的な修正例**: Agentは、並列処理時の数値精度問題（KDAカーネルのTF32計算誤差）の特定や、Python/C++境界におけるGIL（Global Interpreter Lock）によるKV転送のボトルネック解消、さらには既存の最適化知見を「最適化スケルトン」として抽出・適用するプロセスを自律的に実行しました。\n- **Agentのワークフロー**: 単なるコード生成に留まらず、フィードバックループ（仮説検証、マイクロベンチマーク、トレース分析）を構築し、システムエンジニアリングのサイクルを劇的に短縮しました。",
+    "topics": [
+      "Recursive Self-Improvement",
+      "GLM-5.3",
+      "AI Infrastructure",
+      "Inference Optimization",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 94
+    },
+    "originalTitle": "Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure"
+  }
+}

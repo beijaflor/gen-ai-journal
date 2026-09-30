@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T02:23:01.616605+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文章を生成しないAIもだませる？「Jev」にプロンプトインジェクションを試してみた",
+    "url": "https://qiita.com/harupython/items/85d00f4f7eb97054ec80",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "選択肢形式で回答するAI「Jev」に対しプロンプトインジェクションを試行し、複数質問を独立評価する設計が防御策として有効であることを検証した実験レポート。",
+    "summaryBody": "文章生成を行わず型付きの判断のみを返すAIモデル「Jev」に対するセキュリティ検証の記事です。スパム判定を回避させる目的で「命令の無視」や「定義の書き換え」などのプロンプトインジェクションを試行した結果、直接的な指示では判定を覆せなかったものの、逆の分類例（Few-shot）を提示することでスパム判定の確率が100%から56%まで低下する現象が確認されました。Jevの最大の特徴である「同一の入力（State）に対して複数の独立した質問（Questions）を並列実行できる」という設計を活用し、内容の分類とは別に「操作の兆候があるか」を判定させることで、分類結果が揺らいだ場合でも攻撃を検知できる可能性が示されています。著者は、AIの出力をそのまま実行権限に繋げず、信頼度（Confidence）に応じた処理の分岐や、コード側での制御を組み合わせる多層防御の重要性を提言しています。",
+    "topics": [
+      "Jev",
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "自然言語処理",
+      "TypeSafe AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

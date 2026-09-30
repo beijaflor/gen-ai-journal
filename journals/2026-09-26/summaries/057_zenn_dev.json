@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-21T01:26:09.154894+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevのキラーアプリ、「意味で探す grep」を作った",
+    "url": "https://zenn.dev/uehaj/articles/jev-semgrep-grep-by-meaning",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeSafe AIのJevを活用し、正規表現ではなく「意味」や「命題の成否」に基づいてテキストを高速に検索できるCLIツール「semgrep」の解説。",
+    "summaryBody": "TypeSafe AIの「Jev」モデルを利用して、テキストを行単位で意味的に検索するツール「semgrep」を紹介しています。従来のベクトル検索（類似度）とは異なり、「否定」や「意図」といった命題の真偽を評価できるのが最大の特徴です。例えば「変装している」といった抽象的な条件で、日本語・英語・ドイツ語などが混在したファイルから該当行を抽出できます。実装面ではJevの「noul（yes/no確率）」質問形式を活用し、1リクエストで複数行をバルク処理することで、プロンプト設計やパースの手間を省きつつ高速化を実現しています。ベクトル検索との使い分け、論理演算（AND/OR/NOT）の対応、精度の測定結果についても詳細に述べられています。",
+    "topics": [
+      "Jev",
+      "LLM",
+      "CLIツール",
+      "Node.js",
+      "意味検索"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}
