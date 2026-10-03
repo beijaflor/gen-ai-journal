@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:29:37.289156+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントはスプレッドシートをどう操作しているか",
+    "url": "https://tech.layerx.co.jp/entry/coding-agent-for-spreadsheet",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントがOpenAIのSpreadsheets skillに基づき、コード実行と画像検証を組み合わせて自律的にスプレッドシートを操作・検証する内部プロセスを詳細に解説。",
+    "summaryBody": "本記事は、コーディングエージェントがGUIではなくJavaScriptコードの実行を通じてExcelファイルを操作する際の具体的な動作原理を解説しています。OpenAIの「Spreadsheets skill」に基づき、エージェントは数値を直接書き込まずセル参照と数式を用いること、編集処理を単一のスクリプトに集約すること、そして専用ライブラリ「Artifact Tool」を活用することという3つの主要ルールを遵守します。実際の実験（gpt-5.6-sol使用）では、探索・編集・視覚的検証（PNG変換）・値の検証という4ステップを経て、人間が気づくような表示形式の不備まで画像認識で修正する様子が示されています。実行速度や複雑な依存関係への対応など現時点の課題も挙げられており、エンジニアリングによる改善の余地と業務自動化への展望が述べられています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "OpenAI",
+      "自動化",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

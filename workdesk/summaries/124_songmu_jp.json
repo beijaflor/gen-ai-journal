@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:59:41.839401+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "UNIXパイプにAIを組み込む - sagepipe",
+    "url": "https://songmu.jp/riji/entry/2026-09-27-sagepipe.html",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "JSONLとJSON Schemaを活用し、UNIXパイプラインの中でAIによる構造化データの変換・加工を安全かつ確実に行うためのCLIツール「sagepipe」の紹介。",
+    "summaryBody": "UNIXコマンドラインのワークフローにLLMを組み込む際、出力の不安定さを解消するために開発されたツール「sagepipe」についての解説です。このツールは、標準入出力にJSONLを採用し、JSON Schemaを用いて入力と出力の型を厳密に定義することで、AIによるデータ変換の信頼性を担保します。設定はフロントマッター付きのMarkdownで行い、プロンプトだけでなく使用するモデルやスキーマパス、並列数などを指定可能です。出力がスキーマに適合しない場合のリトライ処理やフィルタリング機能を備えており、自動化パイプラインにおいて「決定論的なスクリプト」と「AIによる非定型処理」をシームレスに連携させるための強力な基盤を提供します。Copilot、Claude、ACPなど複数のエージェントに対応しており、GitHub Actionsでの利用も想定されています。",
+    "topics": [
+      "CLI",
+      "LLM",
+      "JSON Schema",
+      "UNIXパイプ",
+      "Structured Outputs"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

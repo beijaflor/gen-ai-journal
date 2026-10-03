@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:30:18.799262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev は LLM ジャッジに使えるか、紛らわしい誤答72件で確かめた #Databricks - Qiita",
+    "url": "https://qiita.com/taka_yayoi/items/3cc901e872209835491a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AIモデル「Jev」をLLMジャッジとして検証し、高いコストパフォーマンスと高速性を維持しながら、信頼スコアに基づき高性能LLMと組み合わせる実用的な運用手法を解説しています。",
+    "summaryBody": "Databricksのエンジニアが、文章生成を行わず選択肢の確率のみを返す特化型モデル「Jev」をLLMジャッジとして検証した記録です。72件の日本語・英語の評価データを用いた検証の結果、Jevは数値の誤りや結論の反転などの明らかな間違いを確実に見抜く一方、回答の一部だけが誤っている複雑なケースを見逃す傾向があることが分かりました。しかし、Jevが出力する「正しい」とする確率（Confidence Score）が0.5〜0.8の中途半端な判定のみを高性能なLLMジャッジに回すハイブリッド構成をとることで、コストとレイテンシを大幅に抑えつつ（Jevは1,000件で約2セント、速度はLLMの約7倍）、精度を100%に引き上げられることを示しています。記事内ではOpenRouterのDecisions APIを用いた具体的な実装コードや、MLflowでの評価パイプラインへの組み込み方法も紹介されており、実運用に即した内容となっています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "Jev",
+      "Databricks",
+      "MLflow",
+      "OpenRouter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

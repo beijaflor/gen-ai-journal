@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:33:50.412447+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「Jev、BERTでよくない？」と言われていたので、違いを調べてみた",
+    "url": "https://zenn.dev/blackleg/articles/4282a0f7e79737",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "非生成型AIモデル「Jev」とBERTやLLMの違いについて、アーキテクチャ、NLIによるゼロショット分類、RLCDを用いた学習手法などの観点から技術的に比較・解説した記事。",
+    "summaryBody": "話題の非生成型AI「Jev」について、既存のBERTやLLMによる分類手法との違いを技術的に深掘りしています。主な論点として、BERTでも[CLS]トークンを用いた固定ラベル分類や、自然言語推論（NLI）を用いたゼロショット分類が可能であることを指摘した上で、Jevの独自性を「RLCD（Reinforcement Learning for Calibrated Decisions）」による確率の較正（Calibration）や、自然言語で基準を与えつつ複数の判断を並列・高速に実行できるAPI設計に見出しています。また、自己回帰型LLMとの比較においては、生成（decode）プロセスの有無が速度差の要因であることを解説しつつ、公平な比較のための条件整理の重要性を説いています。結論として、固定ラベルで学習データが豊富な場合はBERT、自然言語による柔軟な基準と確度が必要な振り分け処理などにはJevといった使い分けの指針を提示しています。",
+    "topics": [
+      "Jev",
+      "BERT",
+      "Transformer",
+      "LLM",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}
