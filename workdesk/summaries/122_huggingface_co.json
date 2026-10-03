@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:59:14.709562+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "lev: Qwen3.5-4Bベースの高速なゼロショット分類・ルーティング用LoRAアダプター",
+    "url": "https://huggingface.co/interfaze-ai/lev",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Qwen3.5-4Bをベースとし、トークン生成を行わずにロジットから直接回答を抽出することで、超高速かつ高精度な分類と意思決定を実現するLoRAアダプター。",
+    "summaryBody": "levはInterfazeが開発した、Qwen3.5-4B用のオープンソースLoRAアダプターです。最大の特徴は「ゼロトークン生成」による推論プロセスにあります。テキストを生成してパースする代わりに、定義された選択肢のロジットから直接回答を読み取ることで、単一のフォワードパスで複数の質問（Yes/No、多肢選択、スコアリング）に回答可能です。これにより、JSONパースエラーやモデルの脱線を防ぎつつ、69msという極めて低いレイテンシを実現しています。S1Benchベンチマークにおいて26B-35Bクラスのモデルに匹敵する性能を示しており、確率はキャリブレーション済みであるため、信頼度に基づく自動ワークフローのゲートとしても利用可能です。Apache-2.0ライセンスで公開されています。",
+    "topics": [
+      "LLM",
+      "ゼロショット分類",
+      "LoRA",
+      "推論最適化",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 94
+    },
+    "originalTitle": "interfaze-ai/lev · Hugging Face"
+  }
+}

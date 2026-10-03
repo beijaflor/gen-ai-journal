@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:41:38.228960+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPTが広告コレクターを通じて他サイトでの行動を追跡している実態の調査報告",
+    "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが「__obi」クッキーを使用して、外部サイト上のユーザー行動（閲覧、検索、購入など）をChatGPTアカウントと紐付けて追跡している技術的仕組みを詳述した調査レポート。",
+    "summaryBody": "OpenAIの広告プラットフォーム「Bazaar」に関連するドメイン `bzr.openai.com` が、特定の識別子を含む `__obi` クッキーをユーザーのブラウザに設置していることが判明しました。このクッキーは `SameSite=none` 属性を持ち、OpenAIの広告ピクセルが設置された外部サイトを訪問した際、ブラウザによって自動的にOpenAIサーバーへ送信されます。調査では、JWTトークンを用いてChatGPTアカウントと識別子が紐付けられるプロセスや、外部サイトからメールアドレス、電話番号（ハッシュ化）、閲覧URLなどのデータが収集されている実態が示されています。特に、OpenAIのプライバシーポリシーで「分析用（Analytics）」と分類されているため、マーケティング同意を拒否しているユーザーでも追跡対象となる可能性が指摘されており、AIチャットという機密性の高い情報を扱うサービスにおけるアドテック導入の倫理的・プライバシー上の懸念が強調されています。",
+    "topics": [
+      "OpenAI",
+      "プライバシー",
+      "アドテック",
+      "データトラッキング",
+      "ChatGPT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "ChatGPT now knows what you do on other websites via ad collector"
+  }
+}

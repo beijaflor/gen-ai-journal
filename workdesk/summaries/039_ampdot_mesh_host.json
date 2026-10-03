@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:32:27.101843+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークン空間フォント・コンパイラ",
+    "url": "https://ampdot.mesh.host/token-space-fonts.html",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMのトークナイザーの境界をフォントのシェイピングルールとして埋め込み、等幅や色分けによってトークン分割を視覚化するTTFフォント生成ツール。",
+    "summaryBody": "このツールは、DeepSeek、OpenAI、Llama 3、Claude（ctokによる近似）などの主要なLLMトークナイザーを、フォントのOpenTypeシェイピングルールに直接コンパイルします。生成されたTTFフォントを使用すると、特別なスクリプトなしで、テキストのトークン分割を等幅表示やカラー色分けによって視覚的に確認できます。ブラウザ上のPyodideとfontToolsを使用してローカルでコンパイルが完結し、Discord（Vesktop）やSlack用のカスタムテーマも提供されています。BPEの境界や空白の正規化、絵文字の処理、レンダラーによる制約など、フォント技術を用いたトークン可視化における詳細な技術的課題と検証結果が報告されています。",
+    "topics": [
+      "トークナイザー",
+      "LLM",
+      "フォントエンジニアリング",
+      "OpenType",
+      "可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Token-space font compiler"
+  }
+}

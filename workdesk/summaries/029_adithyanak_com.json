@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:29:46.946709+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "A2A実装におけるLoopjacking：人間による承認プロセスの乗っ取り",
+    "url": "https://adithyanak.com/loopjacking-in-a2a-implementations/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "A2Aプロトコルを用いたAIエージェントの承認フローにおいて、承認待ちの操作を密かに別の内容へ書き換える「Loopjacking」脆弱性の詳細と対策を詳述した研究レポート。",
+    "summaryBody": "本レポートは、AIエージェント間の通信プロトコル（A2A）およびLangGraph Agent Serverにおける「Loopjacking」という新たな脆弱性を分析している。\n\n- **脆弱性の核心**: 承認フロー（Human-in-the-Loop）において、承認者が操作内容を確認してから「承認」を送信するまでの短い間に、別の主体（メーカー）が同じタスクIDを用いて操作の引数や宛先を書き換えられる点にある。システムがタスクIDのみを承認の識別に利用し、具体的な操作内容（ペイロード）の整合性を検証しない場合に発生する。\n- **実証実験**: LangGraph Agent Server 0.7.5から0.14.0の広範なバージョンにおいて、送金先と金額を承認直前にすり替える攻撃が成功することが確認された。承認者がAの内容を確認して承認ボタンを押しても、実際に実行されるのはすり替えられたBの内容となる。\n- **根本的な対策**: 承認待ち状態のタスクに対する更新を禁止する認可ポリシーの適用、または操作内容全体のハッシュ値を承認記録に厳密に紐付ける「Action-Bound Approval（アクション拘束型承認）」の実装が不可欠である。A2A仕様の最新改訂（PR #2081）では、実装者が承認範囲を定義・検証すべき責任が明文化された。",
+    "topics": [
+      "Loopjacking",
+      "AIエージェントセキュリティ",
+      "Human-in-the-Loop",
+      "A2Aプロトコル",
+      "LangGraph"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Loopjacking in A2A Implementations: Hijacking Human-in-the-Loop Approvals"
+  }
+}

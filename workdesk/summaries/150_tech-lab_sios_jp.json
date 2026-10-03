@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:06:26.780211+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オレのClaude Code作業環境、控えめにいって最高すぎる〜Stream Deckでherdrを操作、完了はずんだもんが読み上げ〜",
+    "url": "https://tech-lab.sios.jp/archives/54936",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code、herdr、Stream Deck、VOICEVOXを連携させ、複数AIタスクの状態を物理ボタンで管理・可視化し、進捗をずんだもんの声で通知する高度な自動化環境の構築ガイド。",
+    "summaryBody": "この記事では、AIコーディングエージェント「Claude Code」での並行作業を効率化するための自作環境を紹介しています。主な構成要素は、AIエージェント向けターミナル管理ツール「herdr」、物理ボタンデバイス「Stream Deck Neo」、ローカルLLM（Ollama）、そして音声合成ソフト「VOICEVOX（ずんだもん）」です。Stream Deck上のボタンに各タスクの進行状況（作業中、確認待ち、完了など）をドット絵アニメーションで表示し、ボタン一つで対象のターミナルへ即座に移動可能。さらに、タスク完了時や確認待ち時にはLLMがターミナルの内容を解析し、ずんだもんが「何をしたか、次に何をすべきか」を音声で教えてくれます。記事内では、このシステムを実現するためのアーキテクチャ詳細に加え、Claude Code自身にプラグインを作成させるための3ステップのプロンプトも公開されています。",
+    "topics": [
+      "Claude Code",
+      "Stream Deck",
+      "herdr",
+      "VOICEVOX",
+      "Ollama"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

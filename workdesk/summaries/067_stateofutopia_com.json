@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:25:12.009248+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MicroLLM lab — ブラウザで動作するQ4量子化された超小型LLMの実行・ベンチマーク環境",
+    "url": "https://stateofutopia.com/experiments/microllmlab/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "WebGPUを活用し、25M〜360Mパラメータの超小型言語モデル（SLM）をブラウザ上でプライベートかつ高速に実行・比較できるオープンソースの実験プラットフォーム。",
+    "summaryBody": "MicroLLM labは、4ビット量子化（Q4）された超小型言語モデル（SLM）をブラウザで直接動作させるためのツールです。W3C標準のWebGPU APIを利用することで、サーバーを介さずクライアント側のGPUでハードウェア加速された推論を実現しています。主な機能には、モデルのチャットUI、生成速度（tokens/s）や精度のベンチマーク測定、デバイス性能の比較証明書発行、さらにはJavaScriptによるカスタム評価機能が含まれます。データがデバイス外に出ないプライバシー保護、ゼロコストでの推論、低レイテンシなタスク分類やルーティングといったエッジAIのユースケースを想定しており、開発者はWebブラウザのみでSLMの性能を即座に検証可能です。",
+    "topics": [
+      "Small Language Model (SLM)",
+      "WebGPU",
+      "Edge AI",
+      "Quantization",
+      "On-device AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "MicroLLM lab — tiny LLMs, Q4, in your browser"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:28:46.962891+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.3と高度なサイバー攻撃能力の拡散：Anthropicによる分析",
+    "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Zhipu AIのGLM-5.3がClaude Mythosに匹敵する高度なサイバー攻撃能力を持つ一方、ガードレールが極めて脆弱で容易に無効化できるため、深刻な脅威になると警告しています。",
+    "summaryBody": "AnthropicのFrontier Red Teamは、中国Zhipu AIが公開した最新モデル「GLM-5.3」のサイバーセキュリティ能力を調査しました。その結果、同モデルは自律的にエンドツーエンドのエクスプロイト（脆弱性悪用コード）を構築する能力において、Anthropicの最高峰モデルClaude Mythos Previewと同等であることが判明しました。特に重大な懸念点として、GLM-5.3はオープンウェイトモデルであり、組み込みのセーフガードが「アブリテレーション（消去）」などの手法によって64%〜100%の確率で回避可能である点が挙げられています。実際のテストでは、ブラウザの未知の脆弱性（0-day）の発見や、既知の脆弱性の迅速な自動攻撃が実証されました。Anthropicは、攻撃者が強力なAIを無制限に利用できる時代が到来したとし、防御側も高度なAIツールを活用して対抗すべきであると主張しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "LLMレッドチーミング",
+      "GLM-5.3",
+      "脆弱性調査",
+      "AIセーフティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GLM-5.3 and the spread of advanced cyber capabilities | Anthropic"
+  }
+}

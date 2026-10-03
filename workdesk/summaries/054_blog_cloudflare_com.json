@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:21:37.168059+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、オープンソース脅威インテリジェンスを自動化する「Threat Signals」を発表 — 全アカウントに無料で提供",
+    "url": "https://blog.cloudflare.com/threat-signals/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントを活用してRSSフィード等の非構造化脅威レポートから自動的にIoC抽出や要約を行う「Threat Signals」を全ユーザーに無料公開しました。",
+    "summaryBody": "Cloudflareは、オープンソースの脅威情報をアクション可能なインテリジェンスに変換する新機能「Threat Signals」の一般提供を開始しました。従来、セキュリティアナリストが手動で行っていたセキュリティブログやリサーチ結果の読み込み、要約、IoC（侵害指標）の抽出、正規化、タグ付けといったワークフローを、AIエージェントの「スキル」を用いて自動化します。ユーザーは任意のRSSフィードを登録でき、AIがその内容を解析してコンテキストを保持したままプライベートなデータセットとして保存します。抽出されたIoCは即座にWAFルールに適用可能です。すべてのCloudflareアカウントで1つのRSSフィード登録と30日間のデータ保存が無料で利用でき、エンタープライズプランでは追加のフィードやCloudforce Oneの独自データへのアクセスも可能になります。これにより、情報の発見から防御の適用までのタイムラグを劇的に短縮します。",
+    "topics": [
+      "Cloudflare",
+      "Threat Intelligence",
+      "AI Agents",
+      "Security Operations",
+      "OSINT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account | Cloudflare Blog"
+  }
+}

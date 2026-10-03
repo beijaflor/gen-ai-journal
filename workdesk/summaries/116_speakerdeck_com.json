@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:42:40.032916+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メルカリにおけるAI時代の高速プロトタイピング基盤「Arca」",
+    "url": "https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントと人間が共働して高速にプロトタイピングを行うための、安全かつ共有可能なVPSライクな社内基盤「Arca」の設計と運用事例。",
+    "summaryBody": "メルカリが構築した「Arca」は、エンジニアだけでなくPdMやデザイナーもAIエージェント（Claude Code等）を駆使して自律的にプロトタイプを開発・公開できるプラットフォームです。技術的にはGKE Sandbox (gVisor) をベースとしたVPSライクな環境を提供し、エージェントによる意図しない外部通信やデータ漏洩を防ぐため、CEL（Common Expression Language）を用いた透過型HTTPプロキシによる厳格な通信制御と、マシン内へのAPIキー配置を不要にする仕組みを導入しています。また、コスト面では24時間無通信時の自動停止、永続ボリュームのスナップショット化、LiteLLMを通じたLLM利用予算の管理などを徹底。社内ハッカソンや新機能のクイックな検証に活用されており、AI時代のプラットフォームエンジニアリングにおける一つの理想形を提示しています。",
+    "topics": [
+      "プラットフォームエンジニアリング",
+      "AIエージェント",
+      "GKE",
+      "セキュリティ",
+      "プロトタイピング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}
