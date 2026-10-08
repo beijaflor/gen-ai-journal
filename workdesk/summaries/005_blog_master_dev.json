@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:23:35.400979+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Durable ObjectsとVercel AI SDKを用いたAIワークアウトプラン作成ツールの構築",
+    "url": "https://blog.master.dev/making-the-most-of-vercels-ai-sdk-with-cloudflare-durable-objects/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cloudflare Durable Objectsの永続ストレージ(SQLite)とWebSocket機能を活用し、Vercel AI SDKによる長時間実行されるAI処理の状態管理とリアルタイム通知を実現する方法を解説しています。",
+    "summaryBody": "この記事では、Vercel AI SDKによるAI生成プロセスにおいて、Cloudflare Durable Objects (DO) を活用してユーザー体験を向上させる手法を解説しています。通常、AIの生成には数十秒を要し、サーバーレス関数のタイムアウトやページ遷移による状態喪失が課題となります。DOを導入することで、個々のユーザーやセッションごとに永続的なSQLiteデータベースとWebSocket接続を提供し、リクエストの進捗を保存しながらリアルタイムで結果をクライアントに通知できます。具体的な実装として、Drizzle ORMを用いたデータ操作、WebSocketの確立、プロンプト実行のフローなどがコード例と共に紹介されており、堅牢なAIアプリケーションのアーキテクチャ設計に役立つ内容となっています。",
+    "topics": [
+      "Cloudflare Durable Objects",
+      "Vercel AI SDK",
+      "SQLite",
+      "WebSockets",
+      "Drizzle ORM"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Create AI Workout Plans with Cloudflare Durable Objects"
+  }
+}

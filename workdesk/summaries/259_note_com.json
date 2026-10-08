@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:33:24.708389+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mac・DGX SparkでLLM推論を最大3倍高速化する「TensorFold」の概要",
+    "url": "https://note.com/npaka/n/n3d3e09549bdd",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Apple SiliconとNVIDIA GPU向けに最適化されたLLM推論エンジン「TensorFold」は、投機的デコーディングとMoEの選択的読み込みにより、最大3倍の高速化と巨大モデルの省メモリ実行を実現します。",
+    "summaryBody": "TensorFoldは、Apple Silicon（MLX）とNVIDIA GPU（CUDA）の両環境で動作するオープンソースのLLM推論エンジンです。主な特徴は「Speculative Decoding（投機的デコーディング）」による生成の高速化で、Drafterモデルが先行してトークンを予測することで、Target Modelの実行回数を減らし、vLLM比較で最大約3倍の速度向上を記録しています。また、Mac環境では「Selective Streaming」機能を備え、MoEモデルの必要なエキスパートのみをメモリに読み込むことで、24GBのメモリで35Bモデル、256GBのMac Studioで550B規模のモデルを動作させるなど、リソース制約下での大規模モデル実行を可能にします。OpenAI互換APIも提供しており、既存のエージェントやアプリから容易に利用可能です。",
+    "topics": [
+      "TensorFold",
+      "ローカルLLM",
+      "推論高速化",
+      "MLX",
+      "Apple Silicon"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

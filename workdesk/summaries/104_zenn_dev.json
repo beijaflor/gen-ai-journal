@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:34:35.613069+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RX 5500 XTからV100S×4まで、4台の計算機でローカルLLMを測り比べた話",
+    "url": "https://zenn.dev/c4n4242/articles/75659aebdd62d4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "世代やメーカーが異なる4種のGPU環境（RX 5500 XT、RTX 5060、RX 9070 XT、V100S×4）を用い、llama.cppでの推論速度やコンテキスト長の影響を徹底比較した検証記録。",
+    "summaryBody": "世代もメーカーも異なる4台の計算機（Radeon RX 5500 XT, RTX 5060, RX 9070 XT, Tesla V100S×4）を使い、llama.cppを用いたローカルLLMの性能を実測・比較しています。\n\n### 主な検証結果と知見\n- **推論性能の規定要因**: Prompt processing (pp) は行列演算器の有無、Text generation (tg) はメモリ帯域に支配されます。2019年のV100Sが最新のエントリーGPUより高速なケースもあり、HBM2の帯域の強さが示されました。\n- **バックエンドの差異**: RDNA4世代のRX 9070 XTでは、現状ROCm 7.2.4よりもVulkanの方が高速であるという興味深い結果が出ています。\n- **マルチGPUの挙動**: llama.cppのデフォルト設定ではマルチGPUは速度向上よりも「VRAM容量の拡大（扱えるモデルやコンテキスト長の増加）」に寄与します。\n- **コンテキスト長の影響**: 行列演算器を持たない古いGPU（RX 5500 XT等）では、KVキャッシュが深くなるにつれAttention計算が指数関数的に遅くなり、VRAMに載ることと実用性は別であることが強調されています。\n- **実運用での注意点**: ベンチマーク数値だけでなく、思考モデル（Qwen 2.5/3.0等）の思考トークン消費や、サーバーの並列実行設定が実効速度に大きく影響することが報告されています。",
+    "topics": [
+      "ローカルLLM",
+      "llama.cpp",
+      "GPUベンチマーク",
+      "ROCm",
+      "CUDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

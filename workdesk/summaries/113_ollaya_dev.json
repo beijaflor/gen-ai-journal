@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:41:52.452888+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ollaya - 意思決定モデルをローカルで実行するためのオープンソースツール",
+    "url": "https://ollaya.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Ollamaから着想を得た、テキスト分類や感情分析に特化した「意思決定モデル」をローカル環境で高速かつセキュアに実行できるオープンソースのランタイム。",
+    "summaryBody": "Ollayaは、テキストやJSONデータに対して「意図抽出」「緊急度判定」「感情分析」などの意思決定（分類）を高速に行うためのローカル実行ツールです。Ollamaのデザインを継承し、単一のバイナリでモデルのプルと実行、API提供が完結します。\n\n主な特徴は以下の通りです：\n1. **高速・低遅延**: 生成を行わない「意思決定モデル」を採用しているため、RTX 4090環境で数ミリ秒〜100ミリ秒以下という圧倒的な速さで回答を返します。\n2. **高精度な較正**: 単なるSoftmax値ではなく、各モデルの著者が調整した温度パラメータにより信頼性の高い確率（Confidence）を出力します。\n3. **TypeSafe API互換**: TypeSafeのAPI形状をサポートしており、既存のSDKをエンドポイントの変更のみで利用可能です。\n4. **多様なモデル対応**: Winnow, Laya, Decider, Kevといった、エンコーダーおよびデコーダーベースの最新の意思決定モデルを幅広くサポートしています。\n5. **プライバシー**: 100%ローカルで動作するため、顧客データやメール内容などの機密情報を外部に送信せずに処理できます。",
+    "topics": [
+      "Ollaya",
+      "ローカルLLM",
+      "意思決定モデル",
+      "テキスト分類",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Ollaya · Run decision models locally"
+  }
+}

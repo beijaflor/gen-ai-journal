@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:40:28.458176+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI意思決定モデルと従来のガードレールのベンチマーク比較：Red Hatによる調査",
+    "url": "https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Red HatのAIセーフティチームが、新興の意思決定モデル（Jev等）と従来の事前学習済み分類器、LLM-as-a-judgeを比較し、ガードレールとしての精度と効率性を検証した。",
+    "summaryBody": "生成AIのプロダクション運用において、柔軟な「LLM-as-a-judge」と高速・安価な「伝統的分類器」の利点を併せ持つ「意思決定モデル（Decision Models）」が注目されています。TypeSafe AIのJevに代表されるこの手法は、テキスト生成ではなく型定義された数値（確率など）を直接出力します。Red Hatによるベンチマークの結果、プロンプト注入対策ではDeBERTaベースの小型分類器（200M）が巨大なLLM（Qwen 35B）に匹敵する精度を圧倒的な低レイテンシで実現しました。一方で、コンテンツ安全性においてはJevやオープンソースのDiffusionGemmaが最高精度を記録し、ゼロショット性能の高さを示しました。特定のタスクに特化したデータがある場合は小型分類器が最適ですが、多様なリスクに即座に対応する必要がある場面では、Jevのような新しい意思決定モデルが強力な選択肢となることが明らかになりました。",
+    "topics": [
+      "AI Safety",
+      "Guardrails",
+      "Benchmarking",
+      "LLM Ops",
+      "Red Hat OpenShift AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    },
+    "originalTitle": "Benchmarking AI decision models against traditional guardrails | Red Hat Developer"
+  }
+}

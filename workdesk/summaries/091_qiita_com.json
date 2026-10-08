@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:31:09.631482+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "業務DBを読み取り専用MCPにしてClaudeから参照する",
+    "url": "https://qiita.com/TechStudioLab/items/906d86684fbcb92eedbd",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "業務データベースをAIから安全に参照するため、MCPを用いて「読み取り専用接続」と「特定の業務操作」に制限したPythonサーバーを構築する手法の解説。",
+    "summaryBody": "この記事は、業務データベースをClaude（Model Context Protocol経由）に接続する際、安全性を確保するための具体的な実装アプローチを解説したガイドです。最大のポイントは、AIに広範なSQL実行権限を与えず、特定のビジネスロジックに基づいた読み取り専用ツール（`get_customer`、`list_open_tasks`など）のみを公開する設計思想にあります。\n\n### 主な内容：\n- **多層的な防御**: SQLiteのURIパラメータ（`mode=ro`）を利用したDB接続レベルでの書き込み禁止と、サーバー側でのSELECT文限定の実装による安全性の確保。\n- **関心の分離**: DBスキーマを直接公開せず、業務操作をツール名としてカプセル化することで、DB構造の変更によるAI側への影響を最小限に抑制。\n- **実装と運用**: Claude Codeを用いたローカル環境での設定手順に加え、本番導入時に必須となるセキュリティ・チェックリスト（ユーザー分離、件数制限、監査ログ等）を提示。\n\n「プロンプトによる指示」に頼るのではなく、システム的な制約によってAIの振る舞いを制御する、実務に即したセキュアなAI連携のあり方を提案しています。",
+    "topics": [
+      "MCP",
+      "Claude",
+      "Python",
+      "Security",
+      "SQLite"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

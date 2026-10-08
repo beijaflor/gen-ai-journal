@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:42:19.242076+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "技術選定の現場から「AIにも人間にも最適なWebフレームワークはどれ？」",
+    "url": "https://kakehashi-dev.hatenablog.com/entry/2026/09/24/090000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディング時代におけるWebフレームワーク選定基準として、規約の強さがAIの判断コストやトークン消費量に与える影響をFastAPIとDjango Ninjaの比較検証から考察した記事。",
+    "summaryBody": "カケハシ社のエンジニアが、社内アプリ開発においてFastAPIとDjango NinjaのどちらがAI（Claude Code）による開発効率が高いかを実測したレポートです。「自由度の高いフレームワークはAIにとっても判断コストが高いのではないか」という仮説のもと、初期実装から5段階の追加要望までを各フレームワークでAIに実装させ、費用・ターン数・トークン量を比較しました。結果、規約（CoC）が強いDjango Ninjaの方がわずかにコストと手数で優位性を示しましたが、AIモデルをClaude 3.5から上位モデルにアップグレードするとフレームワーク間の性能差がほぼ消失するという興味深い結論に至っています。技術選定の新たな軸として「AIにとっての迷いの少なさ」を提示しつつ、モデルの進化がフレームワークの制約を凌駕する可能性を指摘しています。",
+    "topics": [
+      "Python",
+      "FastAPI",
+      "Django Ninja",
+      "Claude Code",
+      "技術選定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

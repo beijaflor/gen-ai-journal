@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:32:38.504613+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「AI生成コードがダメすぎる」それは既存実装のせい。Voicyのバックエンド・リアーキテクトのすべて",
+    "url": "https://tech-blog.voicy.jp/entry/2026/09/30/231259",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するコードの質は既存実装の質に依存するという洞察に基づき、Voicyが「AIネイティブな開発」を実現するために推進したバックエンドのモジュラーモノリス化とアーキテクチャ刷新の全貌。",
+    "summaryBody": "AI生成コードが既存の低品質なパターンを模倣するという課題に対し、VoicyはAIが「正しい実装」を理解・生成できる環境を構築するためのリアーキテクトを断行しました。主な取り組みとして、分散モノリスをGo言語によるモジュラーモノリス『noah』へ統合し、副作用を分離する『Functional Core, Imperative Shell』の設計思想を徹底。さらに、理想的なアーキテクチャを定義したリファレンス実装『gofer』や、人間とAI双方の教科書となるコーディング指針『compass』を整備しました。インフラ面でも、DBをTiDBに集約してAIの情報アクセシビリティを高め、EKSとKarpenterによる柔軟なスケーリングを実現。これらにより、AIへの指示コストとレビュー工数を大幅に削減し、本質的な価値開発に集中できる体制を構築しています。",
+    "topics": [
+      "Backend Architecture",
+      "AI-Native Development",
+      "Go",
+      "TiDB",
+      "Modular Monolith"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

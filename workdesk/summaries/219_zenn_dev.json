@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:23:51.915026+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の使用量はどう数えられているのか ── Max 20x で実測した重みは API 料金表と違った",
+    "url": "https://zenn.dev/tksfjt1024/articles/25c0ab111c277c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeのサブスクリプション枠における使用量計算式を実測から導き出し、モデル別の重みやAPI料金体系との乖離、Headlessモードの影響などを詳細に分析した技術記事。",
+    "summaryBody": "Claude CodeのPro/Maxプランで設定されている「5時間セッション制限」と「週間使用制限」の消費メカニズムを、実測データに基づき詳細に解析したレポートです。主な発見として、使用量は「モデル重み × (input + cache write × 1.25 + output × 5 + cache read × 0.025)」という数式で定義可能であり、モデルごとの重み（Haiku 4.5を1とした場合、Sonnet 5.5は1.5、Opus 5.5は2.2など）は公式のAPI料金比率とは異なることが判明しました。また、Headlessモード（CLI/SDK）での利用は対話モードに比べ、5時間枠で2倍以上、週間枠で1.25倍の速さで制限を消費することや、平日の日本時間21:00〜03:00のピーク時間帯にはさらに倍率が上がることが確認されています。2026年9月に予告なく計算手法が変更された経緯を含め、ユーザーが効率的に枠を運用するための極めて具体的な知見を提供しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "LLM使用量制限",
+      "トークン計算",
+      "リバースエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

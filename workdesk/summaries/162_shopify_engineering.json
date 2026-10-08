@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:11:23.923183+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ShopGym: ショッピングエージェントのための現実的で再現可能なサンドボックス環境",
+    "url": "https://shopify.engineering/shopgym",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ShopGymは、実世界のECサイトを模した匿名化サンドボックスを自動生成し、AIショッピングエージェントの訓練と評価を安定化させるフレームワークです。",
+    "summaryBody": "Shopifyが発表したShopGymは、AIショッピングエージェントの開発において大きな障壁となっている「実環境の流動性」と「再現性の欠如」を解決するためのツールセットです。このシステムは2つの主要構成要素から成ります。ShopArenaは、実在の店舗から構造やデザイン仕様を抽出し、それらを元に匿名化された独立したサンドボックス環境を構築します。もう一つのShopGuruは、その環境固有の在庫、ナビゲーション、ポリシーに基づいたタスク（特定の商品の検索、フィルタリング、カート投入など）を自動生成します。生成プロセスにはLLMを活用した実行・検証ループが組み込まれており、現実のサイトが持つ複雑なインタラクションを維持しつつ、Bot検知などに阻害されない安定したテスト環境を提供します。構造解析とエージェントの行動評価の結果、生成された合成環境でのパフォーマンスは実環境と高い相関を持つことが確認されています。",
+    "topics": [
+      "AIエージェント",
+      "Eコマース",
+      "シミュレーション",
+      "ベンチマーク",
+      "Shopify"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "ShopGym: Realistic, reproducible sandboxes for shopping agents (2026) - Shopify"
+  }
+}

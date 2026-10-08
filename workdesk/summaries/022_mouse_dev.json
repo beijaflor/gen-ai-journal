@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:27:54.522268+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Metaの「Muse」は密かにOpenAIのモデルを実行しているのか？",
+    "url": "https://mouse.dev/blog/muse-special/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MetaのパーソナルAIエージェント「Muse」のランタイムを解析した結果、特定のタスクでAzure経由のOpenAIモデルが使用されている形跡や、未発表モデルを含む膨大な外部API連携コードが発見された。",
+    "summaryBody": "開発者のPeter James氏が、MetaのAIエージェント「Muse」のファイルシステムと実行ログを詳細に調査したレポートです。調査によれば、Museのセッションの多くはMeta独自の「Avocado」モデルで処理されていますが、特定のサブエージェントにおいて「azure/muse-special」というモデルが呼び出されていることが判明しました。このログにはOpenAI特有のID形式や暗号化されたペイロードが含まれており、Azure OpenAI Serviceの活用が強く示唆されています。また、Museのバイナリ内にはClaude 4.xやGPT-5.x系といった次世代モデルへの参照コードや、Anthropic用のクライアント実装も含まれていました。筆者は、これらが特定のタスクにおける精度補完や、蒸留（Distillation）および強化学習（RL）のためのデータ収集、あるいはA/Bテスト目的で実装されている可能性を指摘しています。ただし、外部モデルの思考プロセス（Chain of Thought）は暗号化されており、Metaが直接その内部ロジックを学習に転用している証拠は見当たらないと結論づけています。",
+    "topics": [
+      "Meta Muse",
+      "OpenAI",
+      "AIエージェント",
+      "リバースエンジニアリング",
+      "LLMインフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Is Meta’s Muse secretly running an OpenAI model?"
+  }
+}

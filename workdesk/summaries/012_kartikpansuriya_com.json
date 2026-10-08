@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:25:14.308559+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevとSystem Oneモデル：精度より「較正（キャリブレーション）」が重要な理由",
+    "url": "https://www.kartikpansuriya.com/blog/jev-system-one-model-calibrated-decisions",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIが発表した非自己回帰型モデル「Jev」を例に、LLMを実運用する際のボトルネックである「確率出力の信頼性（較正）」の重要性と検証方法を解説した技術記事。",
+    "summaryBody": "TypeSafe AIが発表した「Jev」は、自由記述やステップバイステップの思考を行わず、構造化された問いに対して単一のフォワードパスで回答と確率を返す「System Oneモデル」です。筆者は、多くのプロダクション環境の分類タスクにおいて、単純な「精度」よりも、モデルが提示する確率が実際の的中率と一致しているかという「較正（キャリブレーション）」こそが重要であると説いています。JevはRLCD（Reinforcement Learning for Calibrated Decisions）によりこの課題に挑んでおり、チャット型LLMよりも低遅延かつ低コストで動作します。記事内では、著者が過去に発表した「プルリクエストの承認予測」タスクをベンチマークとして、Jevの真の有用性を古典的モデル（ランダムフォレスト等）と比較検証する実験計画も提示されています。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "System One Model",
+      "Model Calibration",
+      "Machine Learning Operations"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Jev and System One Models: Calibration Beats Accuracy"
+  }
+}

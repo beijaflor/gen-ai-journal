@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:30:35.482966+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev完全ガイド：GPTやClaudeとは違う「判断するAI」は何を変えるのか!?",
+    "url": "https://qiita.com/ryosuke_ohori/items/72ec59a33f8efb9d008a",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "TypeSafe AIが発表した、テキスト生成ではなく型付きの意思決定と確率の出力に特化した高速・低コストな「System One」AIモデル「Jev」の徹底解説。",
+    "summaryBody": "TypeSafe AIによる新モデル「Jev」は、従来のLLMとは異なり「文章を作らない」意思決定特化型AIです。プログラムの状態（State）と型定義された質問を渡すと、並列処理により70〜500msという高速さで型付きの回答を返します。最大の特徴は、事前に定義した選択肢（Choice）、尺度（Score）、肯定確率（Noul）の3種類の質問形式のみに制限することで、ハルシネーションによる構造破壊を防ぎ、解析や検証のコードを大幅に削減できる点にあります。また、RLCD（意思決定のための強化学習）により回答の信頼度（Confidence）が高度にキャリブレーションされており、信頼度に基づいた「カスケード・アーキテクチャ（安価なJevで一次判断し、難易度が高い場合のみ高価なモデルへ渡す）」の構築が可能です。100万トークンあたり約6円という圧倒的な低コストにより、これまでコストや速度の面でAI導入が難しかった微細なシステム判断への活用が期待されます。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "LLM",
+      "AIエージェント",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

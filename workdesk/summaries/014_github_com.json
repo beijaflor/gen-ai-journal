@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:25:55.092286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev Code Reviewer: AIエージェントの膨大なPRを優先度分類・自然言語解説するレビュー支援ツール",
+    "url": "https://github.com/egma-ai/jev-code-reviewer",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "大規模なプルリクエスト、特にAIエージェントによる大量の変更を、重要度（P0-P2）で分類し自然言語で解説することで、人間のレビュー負荷を大幅に軽減するツール。",
+    "summaryBody": "Jev Code Reviewerは、AIエージェントが生成する数百ファイルに及ぶようなプルリクエスト（PR）の「理解の限界」を解決するツールです。主な機能として、変更内容を重要度（P0/P1/P2）に基づいて分類し、P0などの重要な変更のみをデフォルトで表示します。また、コードの差分（diff）をOpenAIを利用して自然言語による論理説明に変換し、レビュー担当者が「コードの書き換え」ではなく「振る舞いの変化」を素早く把握できるようにします。ローカルCLIとブラウザ拡張機能を組み合わせて動作し、GitHubの「Files changed」ページに独自のUIを統合します。データは外部APIに送信されますが、結果の表示はローカルサーバー経由で行われ、GitHubには情報を投稿しない仕組みとなっています。",
+    "topics": [
+      "Code Review",
+      "AI Agents",
+      "Developer Tools",
+      "GitHub Extension",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "egma-ai/jev-code-reviewer: Review behavior, not just diffs. Jev prioritizes human attention; OpenAI explains the changes. Local CLI + agent skill + GitHub extension."
+  }
+}

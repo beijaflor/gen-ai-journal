@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:10:08.893419+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントにおける意思決定記録（ADR）の重要性と活用法",
+    "url": "https://www.oreilly.com/radar/coding-agents-love-decision-records/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIコーディングエージェントが設計意図を正しく理解し、一貫性を保つためには、簡潔で人間にも可読なアーキテクチャ意思決定記録（ADR）の管理が不可欠である。",
+    "summaryBody": "アーキテクチャ意思決定記録（ADR）は、これまで人間チームの文脈共有に使われてきたが、AIコーディングエージェントにとっても極めて有効なツールである。エージェントはコードベースの断片的な情報しか持たないことが多いため、ADRを参照することで「なぜその設計になったか」という意図を明示的に理解でき、不要な推測や誤った実装を防ぐことができる。\n\n一方で、エージェント特有の課題も存在する。一つは、古くなったADRに過剰に固執し、矛盾が生じても強引に適用しようとする「オーバーフィッティング」だ。もう一つは、エージェントに更新を任せると、議論の経緯をすべて書き込み、人間にとって読みにくい冗長な文書（オーバーリティゲーション）を作成してしまう傾向がある。\n\n筆者は、AGENTS.mdなどを通じてエージェントに明確なルールを与えることを推奨している。具体的には、ADRは現在の決定事項のみを簡潔に記述し、履歴管理はGitに任せること、そして現状に合わない古い決定事項には疑問を呈する権限をエージェントに与えることが、AIとの効果的な協働には不可欠である。",
+    "topics": [
+      "AI Coding Agents",
+      "ADR (Architectural Decision Records)",
+      "Software Architecture",
+      "Prompt Engineering",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Coding Agents Love Decision Records – O’Reilly"
+  }
+}

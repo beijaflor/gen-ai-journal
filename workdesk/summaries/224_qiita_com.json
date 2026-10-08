@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:25:12.871989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev のような判定モデルを SQL から呼べる ai_decide を日本語で試した",
+    "url": "https://qiita.com/taka_yayoi/items/5e5b4baa7781ff6008bd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Databricksの新機能 `ai_decide` 関数を用いて、日本語テキストの分類やスコアリングの精度、挙動の安定性を検証した技術記事。",
+    "summaryBody": "DatabricksのAI Functionsに追加された `ai_decide`（ベータ版）の検証レポートです。この関数はLLMによるテキスト生成ではなく、与えられたテキストに対して構造化された判定（分類・確率・スコア）を返します。記事では日本語レビューの感情分析やポリシー遵守判定を例に、英語・日本語プロンプトによる結果の差異や、実行ごとの非決定的な挙動（結果の揺れ）を詳しく調査しています。特に「confidence」が正解率ではなく入力の裏付け度合いを指す点や、曖昧な入力に対して結果が変動しやすいという実用上の注意点が示唆に富んでいます。",
+    "topics": [
+      "Databricks",
+      "ai_decide",
+      "LLM",
+      "SQL",
+      "LLMジャッジ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

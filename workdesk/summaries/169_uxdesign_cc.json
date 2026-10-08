@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:37:36.868572+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの遅さをモデルのせいにするのをやめよう：ドハティの閾値をガイドラインとしたUX設計",
+    "url": "https://uxdesign.cc/stop-blaming-the-model-for-slow-ai-heres-how-to-design-for-it-doherty-s-threshold-as-a-guideline-5fa6d52e23fc",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIの推論速度よりもUI側の応答速度（400ms以内）を優先し、ユーザーの注意力を維持することが、効果的なAI体験の鍵である。",
+    "summaryBody": "生成AIの普及によりモデルの推論待ち時間が数秒かかることが一般的となったが、著者は1982年に提唱された「ドハティの閾値（400ミリ秒）」が依然として重要であると主張する。この閾値はマシンの処理能力ではなく人間の注意力が持続する限界を示すもので、それを超えるとユーザーは思考の糸が切れ、コンテキストを再構築するために余計な認知負荷を強いられる。AIとの対話は「受付（Turn）」と「処理（Work）」の2段階に分解される。モデルの推論に数秒かかるとしても、インターフェース側の応答は100ミリ秒以内に行うことが可能であり、この「受付の即時性」こそが、AIの誤りを人間が適切に監視するための注意力を繋ぎ止める。高価な推論の高速化を待つよりも、フロントエンドでの適切なフィードバック設計こそが製品体験を向上させる。",
+    "topics": [
+      "UI/UXデザイン",
+      "ドハティの閾値",
+      "AIインタラクション",
+      "認知負荷",
+      "フロントエンド設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "Stop blaming the model for slow AI. Use Doherty's threshold as a guideline. | UX Collective"
+  }
+}

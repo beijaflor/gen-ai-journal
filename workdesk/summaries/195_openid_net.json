@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:17:56.210106+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのためのアイデンティティ管理：認証、認可、セキュリティの新たなフロンティア",
+    "url": "https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの自律的な行動に伴う認証・認可の課題を整理し、既存のOAuth 2.1やMCPを活用した解決策から、将来の再帰的な委任やガバナンスの枠組みまでを網羅した戦略的ホワイトペーパー。",
+    "summaryBody": "このホワイトペーパーは、OpenID FoundationがAIアイデンティティ管理コミュニティグループと協力して作成したもので、AIエージェントが直面するアイデンティティ管理の重要課題を論じています。エージェントは従来のソフトウェアと異なり、非決定的かつ自律的に外部サービスと対話するため、従来のユーザーなりすましではなく「委任された権限（Delegated Authority）」に基づく制御が必要です。短期的には、Model Context Protocol (MCP) やOAuth 2.1、SCIMを用いた管理が有効ですが、長期的には、数千もの認可要求による「同意疲れ」の回避や、エージェントが別なエージェントを呼び出す「再帰的委任」における権限制御、そしてブラウザ操作エージェントによるAPIバイパスへの対策が求められます。報告書は、ポリシー・アズ・コードによる動的ガバナンスと、監査可能なアイデンティティ基盤の構築が、信頼できる自律システムに不可欠であると結論付けています。",
+    "topics": [
+      "AIエージェント",
+      "アイデンティティ管理",
+      "OAuth 2.1",
+      "MCP (Model Context Protocol)",
+      "認可・認証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Identity Management for Agentic AI: The new frontier of authorization, authentication, and security for an AI agent world"
+  }
+}

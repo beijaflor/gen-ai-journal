@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:20:17.084017+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに騙されてはいけない：現在の大規模言語モデルには真の「推論」が欠けている",
+    "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AlphaGoの開発メンバーであったThore Graepel氏が、現代のLLMは「システム1（直感）」の模倣に過ぎず、AlphaGoのような「システム2（熟考・推論）」のメカニズムを欠いていると警鐘を鳴らす論評。",
+    "summaryBody": "AlphaGoが伝説的な「37手目」を打てたのは、単なる直感ではなく、将来の分岐を探索し検証する明示的な「推論」の力によるものでした。筆者のThore Graepel氏は、現在のLLM（大規模言語モデル）はこのプロセスを欠いていると指摘します。\n\nLLMは「次のトークンを予測する」というパターンの完成（システム1）には非常に優れていますが、Chain of Thought（思考の連鎖）といった手法を用いても、それは依然として同じ予測プロセスの延長であり、真の論理的推論とは異なります。筆者はLLMの欠陥として、仮説や証拠を明示的に管理する「認識状態」の欠如、知識と操作の未分離、そして「後付けの正当化」に過ぎない説明プロセスの3点を挙げています。\n\n科学、医療、工学といった高度な信頼性が求められる分野では、単にモデルの規模を拡大するだけでは不十分です。AlphaGoのアーキテクチャのように、推論のステップを個別に評価し、不確実性を減少させ、事後的に監査可能な「システム2」のメカニズムをAIに統合する必要があると主張しています。",
+    "topics": [
+      "LLM",
+      "AI Reasoning",
+      "AlphaGo",
+      "System 1 and System 2",
+      "Cognitive Science"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Don’t be fooled—LLMs don’t reason"
+  }
+}

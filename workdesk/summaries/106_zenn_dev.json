@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:35:12.598801+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code / Codexで「私のlimit、減りすぎ…？」と思ったときに見る記事",
+    "url": "https://zenn.dev/tokium_dev/articles/ai-agent-usage-limit-long-sessions",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやCodexのトークン消費メカニズムをログデータに基づき解析し、プロンプトキャッシュの仕様やコンテキスト肥大化が利用制限に与える影響と対策をまとめた実践的ガイド。",
+    "summaryBody": "AIエージェントであるClaude CodeやCodexを利用する際、予想以上に早く利用制限（Limit）に達する原因を、実測データに基づき詳細に解説した記事です。主なポイントとして、以下の3点が指摘されています。1) **ツール実行ごとの全履歴再送**: 1つの指示で数十回のリクエストが発生し、毎回全会話履歴が送られるため、キャッシュ済みのトークンも（通常の1/10の料率で）累積的に課金される。2) **コンテキストサイズの影響**: コンテキストが大きくなるほど1リクエストあたりの消費が増加し、使用率が9割を超えるとリクエストごとのコストが約2倍に達する。3) **キャッシュの時間制限**: Claudeは1時間、Codexは30分の保持時間を過ぎると再計算が必要になり、大きなセッションの再開時に大量のトークンを消費する。これらを踏まえ、コンテキスト使用率70%でのセッション切り替え、サブエージェントへの重い処理の委譲、長時間放置後の新規セッション開始といった具体的な運用対策を提案しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "プロンプトキャッシュ",
+      "トークン最適化",
+      "LLMコスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

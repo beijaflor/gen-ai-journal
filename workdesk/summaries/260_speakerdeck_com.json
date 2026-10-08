@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:33:39.527825+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPゲートウェイを作って運用してわかったこと — Agent時代の権限管理の現在地",
+    "url": "https://speakerdeck.com/mtpooh/20261001-des37-mcpass",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが社内データへアクセスする際のセキュリティと権限管理の課題を解決するため、MCPゲートウェイ「MCPass」の設計と運用から得られた知見を共有する資料です。",
+    "summaryBody": "AIエージェントが社内の多種多様なSaaSやDWHにアクセスする際、従来の「データを一箇所に集約して統制する」手法は、非構造データの増大や権限情報の消失により限界を迎えています。本資料では、データを集約するのではなく「AIの通り道（ゲートウェイ）」を1つに絞るアプローチを提案。独自開発のMCPゲートウェイ「MCPass」を通じて、ツール単位の認可(RBAC)、入出力に対するDLP、レートリミット、そしてAI専用の身分証（サービスアカウント）による監査ログの記録といった具体的な実装パターンを解説しています。特に、本人の権限をベースにしつつ、ゲートウェイでガードレールを重ねる二段構えの設計思想は、エンタープライズにおけるAI活用とガバナンスの両立において極めて示唆に富んでいます。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "データガバナンス",
+      "セキュリティ",
+      "MCPass"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    }
+  }
+}

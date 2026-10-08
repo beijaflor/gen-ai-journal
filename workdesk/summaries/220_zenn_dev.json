@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:24:05.829044+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オブザーバビリティのAIエージェントをどう評価するか",
+    "url": "https://zenn.dev/ymotongpoo/articles/20261001-agent-eval-loop",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの評価において、最終回答だけでなく実行過程の手順全体をシナリオとグレーダーで検証し、品質・コスト・レイテンシのトレードオフを可視化する手法を解説。",
+    "summaryBody": "AIエージェントの評価は、最終的な応答が「もっともらしく見える」失敗を含むため、回答単体では不十分です。Grafana Assistantの開発事例では、プロンプトから仕様を切り離し、「シナリオ」と「グレーダー」を用いた評価ループを構築しています。評価は、ツール呼び出しやクエリ構造を検証する「決定的な採点」と、具体的なルーブリック（評価基準）を用いた「LLM-as-a-judge」を使い分け、エージェントの実行過程全体を対象にします。また、オープンソースのベンチマーク『o11y-bench』に見られるように、現実のワークフローに基づいた少数の高品質なタスクセットを維持し、AIの提案を人間が審査するループを回すことが、継続的な品質改善の鍵となります。オブザーバビリティのドメイン知識を活かし、インフラと同様にエージェントの振る舞いを計装・観測・改善する姿勢が求められます。",
+    "topics": [
+      "AIエージェント",
+      "オブザーバビリティ",
+      "LLM評価",
+      "Grafana",
+      "o11y-bench"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

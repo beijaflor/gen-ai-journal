@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:31:06.014826+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "livenerf: 公開後のAIモデルの性能劣化（ナーフ）を追跡するベンチマーク",
+    "url": "https://github.com/ninjahawk/livenerf",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルがリリース後に密かに性能を落とされていないかを検証するため、決定論的な環境と統計的手法を用いて継続的な性能測定を行うオープンソースプロジェクト。",
+    "summaryBody": "livenerfは、AIモデル（現在はClaude 5.5 Opusが対象）がリリース後に「ナーフ（性能抑制）」されたというユーザーの主観的な懸念を、客観的なデータで検証するためのベンチマークツールです。UK AI Security Instituteの「Inspect」フレームワークを基盤とし、固定されたプロンプト、固定されたCLIバージョン、および統計的有意差の検証（エラーバーの追加）を組み合わせています。主な測定指標は正答率と出力トークン数で、特にモデルが「思考を簡略化した」兆候をトークン数の減少から捉えることを重視しています。手法を事前に登録（Pre-registration）し、結果をDiscord等で公開することで、モデル提供側の透明性を外部から監視する仕組みを提供します。",
+    "topics": [
+      "AI Benchmarking",
+      "LLM Performance",
+      "Claude 5.5 Opus",
+      "Model Drift",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "livenerf: Benchmark for tracking model capability after release."
+  }
+}

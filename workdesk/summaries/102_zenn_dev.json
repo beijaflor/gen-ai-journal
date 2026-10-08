@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:34:04.332382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "x402の従量課金(upto)を見送り、Jevによる動的な価格付けを採用した話",
+    "url": "https://zenn.dev/ncdc/articles/9c7568850fa80f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント決済プロトコルx402の従量課金仕様の課題を分析し、代替案として超高速な判断特化型モデル「Jev」を用いた動的な価格階層判定の有用性を検証しています。",
+    "summaryBody": "AIエージェントが自律的に支払いを行う『Agentic Payments』の実装において、決済プロトコルx402の従量課金方式（upto）が抱える信頼性の問題（売り手側の誠実さへの依存）と、AWS AgentCore Paymentsなどのウォレット側での予算枠管理の不備を指摘しています。筆者はこれを解決するため、固定額決済（exact）を維持しつつ、リクエストの内容から動的に価格帯（松竹梅）を判定する手法を提案。その判定モデルとして、文章生成を行わず選択や評価に特化したSystem Oneモデル『Jev』を採用し、Claude 4.5 Haikuと比較してコスト14分の1、速度2倍という高いパフォーマンスを確認しました。最終的には、低単価・大量取引になるほどJevのような判断特化型モデルが経済的合理性を持つと結論付けています。",
+    "topics": [
+      "x402",
+      "Agentic Payments",
+      "Jev",
+      "Claude 4.5 Haiku",
+      "Amazon Bedrock"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

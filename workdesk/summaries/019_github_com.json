@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:27:06.989229+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jevmem：Claude Code、Cursor、Codex向けの自動プロジェクトメモリ管理ツール",
+    "url": "https://github.com/Avinash-jetwani/jevmem",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントとの対話から意思決定や制約を自動抽出し、コンテキストを永続化・最適化する、高速かつセキュアなプロジェクトメモリツールです。",
+    "summaryBody": "jevmemは、Claude CodeやCursorなどのAIコーディングエージェントが、過去の意思決定、技術的制約、バグ、TODOなどを「忘れる」問題を解決するための自動メモリ管理ツールです。主な特徴は、対話終了時に重要な情報を抽出し、`JEVMEM.md`ファイルに自動保存する点にあります。\n\n独自の軽量AIモデル（Jev）を利用することで、GPT-4クラスのLLMを使用する場合と比較して約1/10のコストと300msという極めて低いレイテンシで、保存すべき情報の判別を行います。更新された情報は「置換（superseded）」としてマークされ履歴が残るため、プロジェクトの変遷を追跡可能です。\n\nセキュリティ面も考慮されており、送信前にAPIキーやパスワードをスクラブする機能や、プルリクエストなどを通じて混入する悪意ある指示（プロンプトインジェクション）をAIが読み込まないように検知する「ポイズニング・チェック」ガードレールを備えています。現在、AnthropicのClaudeプラグインディレクトリにも登録されており、MCP（Model Context Protocol）を介した柔軟な統合が可能です。",
+    "topics": [
+      "Claude Code",
+      "Cursor",
+      "MCP",
+      "Project Memory",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Avinash-jetwani/jevmem: Automatic project memory for Claude Code. Also works with Cursor and Codex. Now in Anthropic's Claude plugin directory. · GitHub"
+  }
+}

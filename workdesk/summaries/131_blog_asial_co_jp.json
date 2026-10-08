@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:01:21.739732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OllamaとPythonで作る、領収書をローカルAIでCSV化するツール",
+    "url": "https://blog.asial.co.jp/7094/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OllamaとQwen2.5-VLを活用し、プライバシーを保護しながらローカル環境で領収書画像を解析・CSV化するツールの構築方法を解説したチュートリアル。",
+    "summaryBody": "この記事では、クラウドサービスを使わず、自分のノートPC上で完結する「領収書抽出ツール」の作り方を解説しています。エンジンにOllama、モデルにビジョン対応のQwen2.5-VL（7bまたは3b）を採用し、PythonとStreamlitでUIを構築します。日本語・英語・ドイツ語といった多言語や異なる通貨形式にも対応しており、プロンプトによって販売元、日付、合計金額などをJSON形式で正確に抽出可能です。環境構築（Mac/Windows）からライセンスの注意点、データの正規化処理を行うPythonコードの実装まで、実用的なステップが網羅されています。外部サーバーに財務データをアップロードすることなく、低コストで高精度な帳簿入力の自動化を実現する手法が提示されています。",
+    "topics": [
+      "Ollama",
+      "Qwen2.5-VL",
+      "ローカルLLM",
+      "Python",
+      "領収書OCR"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

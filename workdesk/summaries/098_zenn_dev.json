@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:33:00.191340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "情シス依頼の一次受付をAI Agentに任せるっきゅ！：松尾研究所におけるキャラクター性を活かしたAI活用事例",
+    "url": "https://zenn.dev/mkj/articles/4477dd49091031",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "松尾研究所が開発した、キャラクター性を備えたAIエージェント「あざらし」による情シス一次受付の自動化と、非エンジニアを巻き込んだ改善サイクルの構築事例を紹介しています。",
+    "summaryBody": "松尾研究所のIT基盤チームは、情シス業務の負担軽減を目的に、Slack上で動作するAIエージェント「あざらし」を導入しました。この取り組みの最大の特徴は、AIに「おっちょこちょいなアザラシ」という明確なキャラクター性を与えることで、依頼者の心理的ハードルを下げ、潜在的な相談を掘り起こした点にあります。技術的にはClaude Agent SDKを採用し、依頼者が陥りがちな「XY問題（手段を目的と誤認して相談すること）」を回避するため、背景や目的を深くヒアリングする設計がなされています。また、運用面では「Hermes」という別のエージェントを介し、非エンジニアの担当者が自然言語でBotの振る舞いを修正・改善できるワークフロー（PR生成型）を構築しました。これにより、現場の知見を即座にAIの挙動に反映させ、一次解決率の向上とコミュニケーションコストの削減を両立しています。",
+    "topics": [
+      "AI Agent",
+      "情シス",
+      "Claude",
+      "Slack",
+      "XY問題"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

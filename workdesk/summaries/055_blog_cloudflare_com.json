@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:21:50.335946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自社のWAFを最新のAIモデルでテスト：Cloudflareの調査結果",
+    "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareが最新のLLMを攻撃者として利用し自社のWAFをテストした結果、大半の攻撃を防御できたものの、SSRFなどの特定の領域でAIが生成した難読化によるバイパスを発見し、防御機能を強化しました。",
+    "summaryBody": "Cloudflareは、最新のAIモデル（LLM）を「ハッカー」に見立て、自社のWAF（Web Application Firewall）の防御能力を検証する動的セキュリティテストを実施しました。このテストでは、LLMがHTTPレスポンスを受け取って攻撃手法を反復・改善する「アダプティブ・ループ」システムを構築。SQLインジェクション、XSS、SSRF、CMDiなど6つの攻撃カテゴリにわたり1,107回の試行を行いました。\n\n検証の結果、大部分の攻撃は既存の管理ルールでブロックされましたが、49件の調査が必要なケースが特定されました。特にSSRF（サーバーサイドリクエストフォージェリ）において、IPアドレスの整数表記や末尾のドットを利用した難読化によりWAFを回避するパターンが発見されました。Cloudflareはこれらの知見に基づき、Managed Rulesetの更新や新たな検出ロジックの実装を行い、防御能力を向上させました。本記事は、AIが攻撃のバリエーション生成を高速化させる現状において、多層防御とソフトウェアパッチの重要性を改めて強調しています。",
+    "topics": [
+      "WAF",
+      "LLM",
+      "SSRF",
+      "脆弱性テスト",
+      "Cloudflare"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "We tested our own WAF with frontier AI models. Here’s what we found | Cloudflare Blog"
+  }
+}
