@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:30:27.529359+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Magnitude: デバイスごとにカーネルを最適化し、llama.cppより最大2倍高速なエージェント用推論エンジン",
+    "url": "https://github.com/magnitudedev/magnitude",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ユーザーのハードウェアに合わせてカーネルを自動コンパイル・チューニングすることで、llama.cppと比較して最大2倍の推論速度を実現するエージェント特化型のオープンソース推論エンジン。",
+    "summaryBody": "Magnitudeは、個々のハードウェア構成に最適化されたカーネルをデバイス上で動的にコンパイル・チューニングする画期的な推論エンジンです。一般的な推論エンジンが汎用的な事前コンパイル済みカーネルを使用するのに対し、Magnitudeは実行環境のチップ性能を最大限に引き出すよう調整されるため、Metal環境で最大92%、CUDAで19%の高速化を実現しています。\n\n主な特徴は以下の通りです：\n- **高度な最適化**: 特定のモデルファミリー向けにハンドメイドされたカーネルと、デバイス上でのリアルタイムチューニング。\n- **優れたリソース効率**: エージェントあたりのメモリ消費を27%削減し、セッション間でのプレフィックスキャッシュ共有により並行処理を高速化。\n- **幅広い互換性**: Apple Silicon、NVIDIA、AMD、CPUのみの環境をサポート。macOS、Windows、Linuxで動作します。\n- **エージェント連携**: Cline、Pi、OpenCodeなどの主要エージェントとワンクリックで接続可能。OpenAI互換APIも備えています。\n\nプライバシーに配慮し、すべての処理は完全にローカルで実行されるApache 2.0ライセンスのプロジェクトです。",
+    "topics": [
+      "LLM推論",
+      "AIエージェント",
+      "パフォーマンス最適化",
+      "オープンソース",
+      "エッジコンピューティング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - magnitudedev/magnitude: Open source inference engine for agents that optimizes itself for your exact hardware. Compiles and tunes its kernels on your device, so open models run up to 2x faster than llama.cpp. Works on Apple Silicon, NVIDIA, AMD, or just a CPU. · GitHub"
+  }
+}

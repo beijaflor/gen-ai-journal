@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:12:53.421395+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人で育てたAIエージェント設定を、チームの資産にする（APMによるSkill・指示・MCPの配布とマルチエディタ展開）",
+    "url": "https://techblog.lycorp.co.jp/ja/20260930a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MicrosoftのAgent Package Manager（APM）を活用し、個人で最適化したAIエージェントのSkillやMCP設定をチーム全体で共有・配布し、マルチエディタ環境で同期・再利用する方法を解説。",
+    "summaryBody": "AIエージェントの利用が一般化する中で課題となる「設定の属人化」を解消するため、MicrosoftがOSSとして公開したAgent Package Manager (APM)の活用法を紹介しています。APMは、AIエージェントのSkill、指示（規約）、MCPなどの設定を`apm.yml`で宣言的に管理し、Claude Code、Codex、GitHub Copilot、Cursorといった異なるエディタや環境へ一括展開・同期できるツールです。記事では、具体的なインストール手順や更新フロー、新メンバーへの配布方法をハンズオン形式で解説しており、誰かが改善したSkillをチーム全体で即座に共有し、AI開発環境を共同で育てていくためのプラクティスを提示しています。",
+    "topics": [
+      "Microsoft APM",
+      "AIエージェント",
+      "MCP",
+      "Claude Code",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

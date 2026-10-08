@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:33:59.505161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "e2e: 決定論的コードとAIエージェントを融合したオープンソースの次世代E2Eテストフレームワーク",
+    "url": "https://tester.army/e2e",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェントの柔軟性と決定論的テストの堅牢性を組み合わせ、実行履歴のキャッシュによってコストと安定性の問題を解決する次世代のE2Eテストフレームワーク。",
+    "summaryBody": "TesterArmyが開発した「e2e」は、従来の決定論的なテスト手法とAIエージェントによるテストを融合させたオープンソースのフレームワークです。最大の特徴は、AIエージェントが一度実行したアクションを記録（キャッシュ）し、次回以降の実行でモデルを再呼び出しせずにリプレイできる「アクション・キャッシュ」機能です。これにより、AIテストにおけるトークン消費コストの増大と、推論による実行速度の低下や不安定さという課題を解決しています。\n\n主な機能：\n- **ハイブリッドAPI**: 明示的なロケータによるコードと、自然言語（agent.act）による曖昧な指示を同じテスト内で併用可能。\n- **マルチプラットフォーム対応**: Web、iOS（シミュレータ）、Android（エミュレータ）を単一のAPIでサポート。\n- **BYOM（モデル持ち込み）**: OpenAI、Claude、Geminiなどの主要モデルに加え、Vercel AI GatewayやOpenRouter、ローカルサーバー経由での利用が可能。\n- **既存ツールからの移行**: Playwright、Cypress、Selenium、Detox、Maestroなどからの移行ガイドを提供。\n\nAIにすべてを任せるのではなく、確定的な検証とAIの柔軟な操作を使い分ける「検証エンジニアリング」を体現したツールとなっています。",
+    "topics": [
+      "E2Eテスト",
+      "AIエージェント",
+      "テスト自動化",
+      "TypeScript",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "e2e: The open source AI testing framework"
+  }
+}

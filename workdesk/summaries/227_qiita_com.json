@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:25:52.894271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevで動く1,000人の街を作って、仮想住民にインタビューできるようにしてみた",
+    "url": "https://qiita.com/nogataka/items/db0cea4c9c93e078786c",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflare Workersと判断用AI「Jev」を活用し、1,000人の仮想住民が暮らす街で市場調査の仮説検証や個別インタビューが行えるシミュレーター「Japan Scale」の開発記録。",
+    "summaryBody": "市場調査の前に商品企画の仮説を具体化するためのWebサービス「Japan Scale」の紹介記事です。Cloudflare Workers、D1、PixiJSを基盤に、TypeSafeが提供する判断特化型AI「Jev」を組み込んでいます。Jevは住民の「次の行き先」の決定や、インタビュー時の「回答方針（ポジティブ、慎重など）」の選択を担い、実際の回答文生成はLLMが担当する役割分担がなされています。1,000人の住民は属性に基づき自律的に行動し、ユーザーは価格や認知率を変えた際の反応をシミュレーションしたり、特定の属性を持つ住民に深掘りインタビューを行ったりすることが可能です。",
+    "topics": [
+      "Jev",
+      "Cloudflare Workers",
+      "LLM",
+      "マルチエージェント",
+      "市場調査"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:21:15.721298+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPT-6 AstraがWorld of Warcraftを初プレイ：LLMエージェントによる自律攻略の実験",
+    "url": "https://agent-wow.sh/gpt-6-astra-plays-world-of-warcraft-for-the-first-time-with-agent-wow/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6 Astraが「agent-wow」フレームワークを使い、ゲームプロトコルの直接操作やコード生成を通じてWorld of Warcraftの初期ゾーンを自律的に完全攻略した実験報告。",
+    "summaryBody": "LLMベースのエージェントが複雑な仮想環境でどこまで通用するかを検証するプロジェクト「agent-wow」の記録です。GPT-6 Astra（xhigh）を用いた実験では、画像認識やマウス操作ではなく、WoWのネットワークプロトコルを直接解釈・発行するアプローチが取られました。エージェントは自らAzerothCoreのSQLデータを解析してクエストの座標や条件を抽出し、さらにC++を用いて経路探索（Detourライブラリを利用）を行うヘルパープログラムを生成・コンパイルするなど、高度な自律性を示しました。結果として、オークの開始地点の全クエストを40分で、一度の死亡もなくクリアすることに成功。今後はレベル80までの育成や、マルチエージェントによる大規模レイド「Icecrown Citadel」の攻略を目指すとしています。",
+    "topics": [
+      "LLM Agents",
+      "World of Warcraft",
+      "Autonomous AI",
+      "GPT-6",
+      "Game Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GPT-6 Astra plays World of Warcraft for the first time with agent-wow"
+  }
+}

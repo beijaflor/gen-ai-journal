@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:33:11.463855+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Hugging FaceのローカルLLMモデル名「Q4_K_M」「A3B」の読み方と失敗しない選び方",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/02/news004.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Hugging Faceで公開されているローカルLLMの複雑なモデル名に含まれる、規模、世代、量子化、ファイル形式といった記号の意味を解説し、PCスペックに合わせた最適な選び方を提示するガイド。",
+    "summaryBody": "ローカルLLMの普及に伴い、Hugging Faceで「Qwen3.8-27B-Q4_K_M.gguf」のように複雑化するモデル名の解読が重要になっています。この記事では、モデル選びの核となる3要素として、パラメーター数（9Bや27B）、量子化の度合い（Q4_K_M等）、配布フォーマット（GGUF等）を解説しています。特に、MoE構造を示す「A3B」といった表記では、必要なメモリ量は総パラメーター数で決まり、動作速度はアクティブパラメーター数で決まるという特性を理解することが重要です。また、PCのVRAM/RAM容量に合わせた具体的な選定基準として、迷った際は「Q4_K_M」を基準とし、「小さいモデルのQ8精度」よりも「大きいモデルのQ4精度」を選ぶ方が性能面で有利であるといった実践的な鉄則を紹介しています。最新のQwenシリーズを例に、組織名やInstruct/Thinkingといった種類の見分け方、信頼できる配布元の選び方まで網羅されています。",
+    "topics": [
+      "Hugging Face",
+      "ローカルLLM",
+      "量子化",
+      "GGUF",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

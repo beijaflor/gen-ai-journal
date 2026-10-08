@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:10:52.783854+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成フロントエンドコードの評価：実際に何をテストすべきか",
+    "url": "https://www.oreilly.com/radar/evaluating-ai-generated-frontend-code-what-should-we-actually-test/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するフロントエンドコードの見かけの完成度に惑わされず、アクセシビリティやエラーハンドリングなど、ユーザー体験の本質を評価するための体系的な基準を解説する。",
+    "summaryBody": "AIは指示から即座に洗練されたUIを生成できるが、その「磨き上げられた外見」は、アクセシビリティや状態管理の不備を隠してしまうリスクがある。本記事では、AI生成コードを評価する際の重要ポイントとして、セマンティックなHTML構造の維持、キーボード操作の網羅性、モーダル開閉時のフォーカス管理、そして通信遅延やエラー時の挙動（ハッピーパス以外の考慮）を挙げている。また、AIが生成したテストコードそのものの妥当性を疑い、単なる実装の追認ではなくユーザー行動を保護できているかを確認する必要性を強調している。AIによるコーディングの高速化を、エンジニアがより深い品質評価とUXの検討に時間を割くための機会として捉えるべきだと提言している。",
+    "topics": [
+      "Frontend Development",
+      "Generative AI",
+      "Software Testing",
+      "Accessibility",
+      "UX Design"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "Evaluating AI-Generated Frontend Code: What Should We Actually Test?"
+  }
+}

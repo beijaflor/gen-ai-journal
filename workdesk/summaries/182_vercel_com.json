@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:15:04.014012+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PythonエンジニアのためのJev - Vercel",
+    "url": "https://vercel.com/blog/jev-for-python-engineers",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、構造化された意思決定と分類に特化した新しいAIモデル「Jev」をPython AI SDKでサポートし、その実用性と実験的な活用例を公開しました。",
+    "summaryBody": "VercelのPythonチームは、新しいAIモデル「Jev」を扱うための実験的な`evaluate()` APIをPython AI SDKに追加しました。Jevは、従来のテキスト生成を行うLLMとは異なり、与えられたデータに対して多肢選択式で回答し、その確信度を返す「ユニバーサル・クラシファイア（汎用分類器）」として設計されています。主な特徴は以下の通りです：\n\n1. **構造化された意思決定**: 自由なテキストではなく、定義した選択肢（Choice）、スコア（Score）、真偽の確率（Noul）をJSON形式で返却します。\n2. **高速かつ安価**: 事前学習済みの重みを活用するため、特定のタスクに向けた再学習なしで高度な分類が可能です。\n3. **実験的ユースケース**: 記事では「入力がPythonコードか英語かの判別」や、AST（抽象構文木）をJevに選択させて「プログラムを構築する」といったユニークな試みが紹介されています。\n\n開発者は `uv add ai` でSDKを導入し、AI Gatewayを介してこの新しい推論モデルを試すことができます。",
+    "topics": [
+      "Jev",
+      "Vercel AI SDK",
+      "Python",
+      "Machine Learning",
+      "Classification"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Jev for Python engineers"
+  }
+}

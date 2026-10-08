@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:16:53.590312+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Machtiani: 電子メールをインターフェースとしてAIエージェントを操作する実験的フレームワーク",
+    "url": "https://github.com/tursomari/machtiani/tree/main",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "使い慣れた電子メールをUIとして既存のAIエージェントを指揮し、Gitベースのローカルメモリを活用して複雑な長時間タスクを管理できる実験的プラットフォーム。",
+    "summaryBody": "Machtianiは、コンピュータとの対話インターフェースとして電子メールを再定義する野心的なプロジェクトです。ユーザーは自分のコンピュータにメールを送るだけで、Claude CodeやCodex CLIといった既存のAIエージェントを介して操作を行えます。主なコンポーネントは、メール応答を担うローカルクライアント「Dear Machine」と、セッション管理を行う基盤「Machtiani」で構成されます。技術的な核心は、Gitを活用したシンプルかつ効果的なメモリモデルと、階層的なReActワーカー構造にあります。インストラクター（プランナー）がワーカーをタスクごとに分離して実行するため、シェルコマンドやツール実行の履歴がメインのコンテキストを圧迫せず、長時間のセッションでも効率を維持できます。既存のメールアカウントと連携し、モバイル端末からの遠隔操作や複数エージェントを交えたグループ会話も可能です。",
+    "topics": [
+      "Autonomous Agents",
+      "AI Interface",
+      "Git-based Memory",
+      "ReAct Pattern",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - tursomari/machtiani: Empowering users."
+  }
+}

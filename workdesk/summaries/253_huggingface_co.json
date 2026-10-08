@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:31:45.058750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare/clef: 多モーダルな意志決定に特化した27B構造化出力モデル",
+    "url": "https://huggingface.co/Cloudflare/clef",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "テキスト、画像、動画を入力とし、自由形式のテキスト生成を介さずに定義されたスキーマに基づいた意志決定の確率を直接出力する、Cloudflare開発の27B多モーダルモデル。",
+    "summaryBody": "Cloudflareが発表した「Clef」は、Qwen3.8-27Bをベースにした意志決定特化型の多モーダルモデルです。最大の特徴は、自由形式のテキストを生成してパースするのではなく、入力された「状態（テキスト、JSON、画像、動画）」と「質問スキーマ」に対し、各選択肢の確率を直接出力する点にあります。これにより、LLMの課題である出力フォーマットの不備やハルシネーションを構造的に回避しています。内部的には、バックボーンの最終隠れ状態を読み取る「Joint schema head」という小さなトランスフォーマー層を追加しており、単一のフォワードパスで複数の意志決定を同時に行えます。請求書処理、カスタマーサービス、セキュリティなどの実用的なワークフローにおいて、従来のLLMを上回る精度と低いレイテンシを実証しています。Apache-2.0ライセンスで公開され、vLLMやSGLangなどのライブラリもサポートされています。",
+    "topics": [
+      "Cloudflare",
+      "Clef",
+      "Multimodal AI",
+      "Structured Output",
+      "Decision Intelligence"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Cloudflare/clef · Hugging Face"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:27:38.328355+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のコードレビューは人に向けるな、仕組みに向けろ",
+    "url": "https://speakerdeck.com/texmeijin/ai-jidai-no-kodo-rebyu-ha-hito-ni-mukeru-na-shikumi-ni-mukero",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントによる自動生成が普及する時代において、個別のコード修正ではなく、AIが参照する指示（CLAUDE.md等）や検知ツール（CI/Linter）という「仕組み」自体をレビュー対象にすべきという新たな開発パラダイムの提案。",
+    "summaryBody": "Claude CodeなどのCoding Agentが普及する中、従来の「人に対するレビュー」のあり方をアップデートする必要性を説いています。主な論点は、AIは個別の指摘を恒久的に学習しないため、指摘をその場限りにせず、AIが二度と同じミスをしない「仕組み」に昇華させることの重要性です。\n\n具体的には開発を3つのフェーズに分け、それぞれの仕組み改善を推奨しています。\n1. **コード編集前**: CLAUDE.mdや独自Skill（スクリプト）による最上位指示の整備、DB設計等のリファレンス化。\n2. **コード編集中**: Agent Hooksを活用したリアルタイムなフィードバックの自動化。\n3. **コード編集後**: レビューで見つけた問題をASTベースのカスタムLinterやCIルールに転換し、資産化する。\n\nAIに漫然とコードを書かせるのではなく、レビューで見つかった問題をどのフェーズの仕組みで防ぐべきかを問い続けることで、AI時代の開発体験と品質を最大化する戦略が示されています。",
+    "topics": [
+      "AI駆動開発",
+      "コードレビュー",
+      "Claude Code",
+      "開発プロセス",
+      "DX (Developer Experience)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

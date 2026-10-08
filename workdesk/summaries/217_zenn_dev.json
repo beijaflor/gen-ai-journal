@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:23:22.794878+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ゲーミングPC向けで LLMとデプロイ環境を最適化してみた話",
+    "url": "https://zenn.dev/knowledgework/articles/2691721311c2e4",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ゲーミングPCの限られたVRAM環境で高品質な翻訳LLMを動かすため、モデル構造の削減、語彙の最適化、量子化、およびランタイムの軽量化を組み合わせ、VRAM消費を約70%削減した実践記録。",
+    "summaryBody": "オンラインゲーム中のチャット翻訳を目的とした、翻訳特化型LLM「MiLMMT-46」のゲーミングPC向け最適化プロセスを解説した記事です。ゲームとVRAMを共有する制約下で、以下の3段階の最適化を実施しています。\n\n1. **モデルファイルの最適化**: 不要なVisionモジュールの削除に加え、日・英・韓の3言語に絞った語彙削減（26万→13万トークン）を実施。さらにimatrixを用いた重要度ベースの量子化（Q4_K_S）により、精度を99.8%維持しつつサイズを73%削減しました。\n2. **プロセスメモリの削減**: 推論時の`ubatch`サイズを128まで下げることでKVキャッシュ等のオーバーヘッドを抑制。VRAM消費を9.02GBから2.7GBまで低減させました。\n3. **ランタイムの軽量化**: llama.cppのCUDAビルドからcuBLAS等の重い依存ライブラリを排除し、必要最小限のカーネルのみをカスタムビルドすることで、ランタイムのサイズを843MBから11MBへと劇的に縮小しました。\n\n最終的に、2〜3GBのVRAMで商用レベルの翻訳精度を維持しつつ、ゲームとの並行動作が可能なデプロイ環境を実現しています。",
+    "topics": [
+      "llama.cpp",
+      "LLM",
+      "量子化",
+      "VRAM最適化",
+      "GGUF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:26:23.014813+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェント向けGoogle Cloud Developer Pluginの発表",
+    "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google Cloudが、AIエージェントにクラウド操作スキルと公式ドキュメント知識を統合提供する、オープン標準準拠の「Google Cloud Developer Plugin」を発表しました。",
+    "summaryBody": "Google Cloudは、AIコーディングエージェントの能力を拡張するための新しいプラグインをリリースしました。このプラグインは「Agent Plugins」というオープンかつベンダーニュートラルな仕様に基づいて設計されており、個別のエージェントスキルやMCP（Model Context Protocol）サーバーを、再利用可能な一つのパッケージとして統合します。\n\n今回発表された「google-cloud-developer」プラグインの主な特徴は以下の通りです：\n1. **統合されたツール群**: 認証、プロジェクト管理、gcloud CLI操作のガードレール、および公式ドキュメントに基づく「Developer Knowledge MCP server」へのアクセスが含まれます。\n2. **環境認識と安全性**: エージェントがライブ環境の事前条件をチェックし、IAMのベストプラクティスに従った操作を提案・実行します。\n3. **幅広い互換性**: Antigravity CLI、Claude Code、Codex CLIなど、主要なAI開発者ツールへ簡単に導入可能です。\n\nこれにより、開発者は複雑な依存関係を管理することなく、特定のクラウド製品に特化した高度な支援をAIエージェントから受けることが可能になります。",
+    "topics": [
+      "Google Cloud",
+      "AI Coding Agents",
+      "MCP",
+      "Agent Plugins",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing the Google Cloud Developer Plugin for AI Coding Agents"
+  }
+}
