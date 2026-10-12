@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:05:39.285226+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jeff: 0.8Bの軽量モデルでミリ秒単位の意思決定を実現するオープンな「システム1」モデル",
+    "url": "https://github.com/firelex/jeff",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "0.8Bパラメータの軽量LLMを用い、LoRAアダプタの切り替えによって多様な分類・意思決定タスクをミリ秒単位で実行できる「System 1」思考モデルが登場しました。",
+    "summaryBody": "Jeffは、迅速な意思決定（System 1思考）に特化した0.8BパラメータのオープンソースLLMです。一般的なLLMのようにテキストを生成するのではなく、与えられた選択肢から最適なものを単一のフォワードパスで確率的に算出します。LoRAアダプタを活用することで、ガードレールの適用、トリアージ、ツール選択、グラウンディング確認といった特定のタスクにおいて、Qwen 27Bのような大型モデルの約38倍の速度かつ高精度な判定が可能です。不確実な場合のみ大型モデル（System 2）に処理を渡すルーティング構成をとることで、システム全体のコストとレイテンシを大幅に削減できます。Apple M4 MaxやNVIDIA RTX 6000などのローカル環境での動作が最適化されており、チェスやDoomのプレイといったリアルタイム性が求められる用途でも性能が実証されています。",
+    "topics": [
+      "LLM",
+      "Efficiency",
+      "Classification",
+      "LoRA",
+      "Edge AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "GitHub - firelex/jeff: Millisecond decisions, any domain: a 0.8B open \"System 1\" model that picks between your options with calibrated probabilities. One base, swappable LoRA adapters, on your own hardware."
+  }
+}

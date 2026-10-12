@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:09:08.423780+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "User InsightsによるAIモデル過剰使用の特定 | Cloudflare Blog",
+    "url": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareのAI Gatewayに追加された新機能「User Insights」は、タスクの種類やコストを分析することで、高機能モデルの不必要な使用（オーバースペック）を特定し、コスト最適化を支援します。",
+    "summaryBody": "Cloudflareは、AI Gatewayの「User Insights」機能を拡張し、AI利用の効率化を支援するツールを導入しました。目玉となる「Model Overkill」ビューでは、単純な要約やデータ処理に高価な推論モデルを使用しているケースを可視化し、より安価で高速なモデルへの切り替えを促します。また、会話の内容を自動分類するタスク分析機能により、コーディング、リサーチ、執筆などの業務カテゴリごとの利用実態を把握できます。さらに、これらの分析シグナルを基に最適なモデルへ自動でリクエストを振り分ける「Auto Router」のクローズドベータ版も発表されました。これにより、ユーザーはパフォーマンスを損なうことなく、AI運用コストの戦略的な削減が可能になります。",
+    "topics": [
+      "Cloudflare",
+      "AI Gateway",
+      "LLM最適化",
+      "コスト管理",
+      "User Insights"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Identify AI model overuse with User Insights"
+  }
+}

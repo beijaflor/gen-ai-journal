@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:32:16.997221+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文章を返さないAI「Jev」を試してみた ── 社内問い合わせのエスカレーション先は判定できるか",
+    "url": "https://zenn.dev/yesodco/articles/yesod-jev-typesafe-inquiry-triage",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "文章ではなく確率やスコアのみを返す「Jev」を活用し、社内問い合わせの自動振り分けロジックを構築・検証した技術レポート。",
+    "summaryBody": "TypeSafe AIが公開した「System One Model」である「Jev」の評価記事です。JevはLLMとは異なり、定義された問いに対して数値（確率やスコア）のみを返す性質を持ちます。本記事では、CSから開発チームへの問い合わせエスカレーション判定にJevを導入し、Pythonを用いた実装例を紹介しています。\n\n### 主なポイント\n- **Jevの利点**: 出力が構造化されておりパースが不要、LLMに比べて圧倒的に低コスト（1000件で$0.05程度）、かつ応答が高速である点。\n- **実装手法**: 「カテゴリ」「ドキュメントでの解決可否」「エンジニア権限の必要性」などの判断材料をJevに抽出させ、最終的なルーティングはコード側の閾値（閾値判定）で行う設計。\n- **検証結果**: 8件のケーススタディを通じ、モデル自体の判定は概ね妥当であるものの、日本語精度の制約や、コード側の分岐ロジックの設計（死んだ枝の発生など）が精度に大きく影響することを明らかにしています。\n- **結論**: 定型的な判断を繰り返すタスクに向いており、判断根拠を数値で管理できるためロジックの調整が容易である一方、確信度（Confidence）によるフィルタリングなどの運用設計が不可欠です。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "LLM",
+      "エスカレーション自動化",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

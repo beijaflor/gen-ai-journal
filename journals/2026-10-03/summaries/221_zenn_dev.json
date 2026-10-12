@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:24:21.207413+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Cursor pstack】AIエージェントに開発を任せる環境をつくる ―月2,500件のPRを支えた開発基盤とは？",
+    "url": "https://zenn.dev/sc30gsw/books/080faba713547b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "月間2,500件のPR生成を可能にしたCursor開発基盤「pstack」の設計思想と、AIエージェントを自律的に動かすための検証駆動型フレームワークを解説する実践ガイド。",
+    "summaryBody": "本書は、AIエージェントに開発タスクを大幅に委任するためのフレームワーク「pstack」を詳説する技術書です。「エージェントではなく、成果物を検証する仕組みを信頼する」という検証駆動（Verification-driven）の思想を核に、月間2,500件のプルリクエストを処理する驚異的な生産性の裏側を公開しています。pstackは、定型的な手順を定義する「Playbook」、判断の指針となる「Principle」、具体的な実行能力を拡張する「Skill」の3要素で構成されます。これらをリポジトリに組み込むことで、AIが自ら問題を調査し、テストで検証し、修正PRを作成する自律的なワークフローを構築できます。単なるツール紹介を超え、AI時代のコード品質管理や設計のあり方を再定義する内容となっています。",
+    "topics": [
+      "Cursor",
+      "AIエージェント",
+      "pstack",
+      "自動化",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

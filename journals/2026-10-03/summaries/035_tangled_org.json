@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:31:26.499035+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "drawgent: ライブExcalidrawキャンバス上のコーディングエージェント",
+    "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Excalidrawのキャンバス上でAIエージェントと対話し、図解の操作やコードとの動機、レーザーポインターによるジェスチャー操作を可能にするAI開発支援ツール。",
+    "summaryBody": "drawgentは、ExcalidrawのホワイトボードとAIコーディングエージェント（Claude Code、Codex、opencode）を直接連携させるRust製のツールです。ユーザーはチャットでの対話に加え、キャンバス上の要素をレーザーポインターで囲む・消すといった直感的なジェスチャーでAIに指示を出せます。図内のボックスをコードの特定のファイルやシンボルにリンクさせる「Code links」機能を備え、図の変更をコードに反映させたり（Build what I drew）、リポジトリ構造を可視化（Repo map）したりすることが可能です。シングルバイナリで動作し、ブラウザ拡張機能を介して共有ルームでの共同作業もサポート。MCP（Model Context Protocol）を活用して既存のエージェントと接続できる点が特徴です。",
+    "topics": [
+      "AIエージェント",
+      "Excalidraw",
+      "システム設計",
+      "Claude Code",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "yanndegat.tngl.sh/drawgent at main · Tangled alpha"
+  }
+}

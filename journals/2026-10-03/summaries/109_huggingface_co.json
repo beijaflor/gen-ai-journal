@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:41:06.322421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIA Nemotron 3 Diarizationによるリアルタイム・マルチスピーカーAIの構築",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAが公開した1億パラメータの「Nemotron 3 Diarization」は、最大8人の話者をリアルタイムかつ高精度に識別でき、VoiceArenaで首位の性能を記録しています。",
+    "summaryBody": "NVIDIAは、オープンウェイトの最新話者ダイアリゼーションモデル「Nemotron 3 Diarization」を発表しました。このモデルは100Mパラメータという軽量設計ながら、VoiceArenaのリーダーボードでDER（Diarization Error Rate）14.72%を記録し、トップにランクインしています。\n\n主な特徴は以下の通りです：\n- **高度な話者対応**: 最大8人までの話者を識別可能で、音声の重なり（オーバーラップ）も自然に処理します。\n- **低遅延ストリーミング**: 最短0.32秒のレイテンシで動作し、リアルタイムの議事録作成や対話型AIに適しています。\n- **Sortformerアーキテクチャ**: 話者の出現順にチャネルを割り当てる手法により、ストリーミング中の話者ラベルの安定性を確保しています。\n- **簡単な統合**: NVIDIA NeMoツールキットやArgmax SDKを通じて利用可能で、Parakeet ASRなどの音声認識モデルと組み合わせることで「誰が何を言ったか」まで含めた完全な書き起こしパイプラインを構築できます。\n\nベンチマークでは、従来のSortformer v2.1と比較してDERを平均40%削減しており、多人数が参加する複雑な会議環境においても高い信頼性を発揮します。",
+    "topics": [
+      "NVIDIA",
+      "Speaker Diarization",
+      "Nemotron 3",
+      "NeMo",
+      "Automatic Speech Recognition"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    },
+    "originalTitle": "Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization"
+  }
+}

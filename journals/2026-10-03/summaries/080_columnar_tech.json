@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:28:20.503547+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JevがApache Arrowを話せたらどうなるか？",
+    "url": "https://columnar.tech/blog/what-if-jev-spoke-arrow/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの意思決定モデル「Jev」の出力を高速なApache Arrow形式で扱うための実験的プロキシ「Jevaro」の設計とパフォーマンスについて解説した記事。",
+    "summaryBody": "TypeSafe AIが開発した「Jev」は、自然言語やアプリケーションの状態を、型定義された意思決定（確率やスコア）へと変換する新しいAIプリミティブです。本記事では、現状のJSONベースのAPIが抱えるシリアライズのオーバーヘッド（JSON税）を解消するため、高性能なメモリストレージ形式であるApache Arrowとの統合を提案しています。\n\n具体的には、Jevの3つの回答タイプ（Choice, Noul, Score）をArrowのExtension Typesやメタデータにマッピングするスキーマ設計を行い、大量のデータを効率的に処理する手法を検討しています。また、バルク処理を可能にするPythonプロキシ「Jevaro」を構築し、1万件のメッセージを約21.5秒で処理する実験結果を示しました。Jevのような確率的な意思決定モデルが、ネイティブにArrow形式のストリームをサポートすることで、データパイプラインや分析ワークフローとの統合が劇的に高速化される未来を展望しています。",
+    "topics": [
+      "Jev",
+      "Apache Arrow",
+      "TypeSafe AI",
+      "Data Engineering",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 75,
+      "annexPotential": 85,
+      "overall": 82
+    },
+    "originalTitle": "What if Jev spoke Arrow?"
+  }
+}

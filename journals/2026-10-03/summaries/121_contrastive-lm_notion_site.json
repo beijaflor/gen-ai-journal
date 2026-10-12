@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:10:52.481870+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "対照学習言語モデル（CLM）：高速で汎用的な意思決定を実現するSystem 1モデル",
+    "url": "https://contrastive-lm.notion.site/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "スタンフォード大とNVIDIAは、状態と行動の対照学習により、従来比9倍の低遅延と高い汎用性を両立した意思決定モデル「CLM」を発表しました。",
+    "summaryBody": "## 概要\nスタンフォード大学とNVIDIAの研究チームは、状態（State）と行動（Action）を対照学習（InfoNCE）によって結びつける新しいアーキテクチャ「Contrastive Language Models (CLM)」を提案しました。これは人間の直感的な判断に相当する「System 1」モデルとして設計されています。\n\n## 技術的ハイライト\n- **学習レシピ**: 6000万のQ&A、3000万のハードネガティブ、100万のエージェント実行軌跡を用いた3段階の学習プロセスを採用。\n- **効率性**: 状態と行動のエンコーダーを分離し、埋め込みを個別にキャッシュ・再利用可能にすることで、既存のJevモデル比で最大9倍の低遅延化に成功しました。\n- **スケーリング則**: テスト時の対照学習損失が、計算量、モデルサイズ、データセット量に対してべき乗則に従うことを実証しました。\n\n## 評価結果\nCLM-8Bはコンピュータ操作やゲームにおいて優れた性能を示し、エージェント用報酬モデルとして微調整した際にはDeepSWE (81.6%) やTerminal Bench 2.1 (87.6%) といったベンチマークでSOTAを記録しました。",
+    "topics": [
+      "Contrastive Learning",
+      "AI Agents",
+      "System 1 AI",
+      "Model Efficiency",
+      "Scaling Laws"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Contrastive Language Models — A System One Model for Fast and Generalizable Decision-Making"
+  }
+}

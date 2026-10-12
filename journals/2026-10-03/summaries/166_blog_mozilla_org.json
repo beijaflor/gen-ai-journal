@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:12:17.421561+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Firefoxの「振って要約」機能：レシピ向けプロンプト・チューニングの舞台裏",
+    "url": "https://blog.mozilla.org/en/firefox/firefox-ai/prompt-tuning-firefox-shake-to-summarize-recipes/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mozillaは、Firefoxの「Shake to Summarize」機能において、レシピサイトの重要な詳細を正確に抽出するために、構造化データを活用したプロンプト・ルーティングとチューニングの手法を公開しました。",
+    "summaryBody": "Firefoxのモバイル版に導入された「Shake to Summarize（振って要約）」機能の改善プロセスに関する解説記事です。開発チームは、小規模言語モデル（LLM）を使用する際、汎用的な要約プロンプトではレシピの材料や分量といった重要な情報が省略されやすいという課題に直面しました。この解決策として、Webサイトのメタデータを基にコンテンツを分類し、レシピ専用のプロンプトへ自動的に振り分ける「プロンプト・ルーティング」を導入。これにより、従来の2倍以上の精度で完全な要約を生成することに成功しました。この事例は、モデルの規模を大きくするだけでなく、システム設計とタスクの明確化（アンビギュイティの削減）がいかにAIの性能向上に寄与するかを示唆しています。",
+    "topics": [
+      "Firefox",
+      "プロンプトエンジニアリング",
+      "LLM",
+      "Mozilla",
+      "要約アルゴリズム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "Prompt Tuning Firefox Shake to Summarize for Recipes"
+  }
+}

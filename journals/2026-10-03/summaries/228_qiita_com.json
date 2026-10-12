@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:26:04.147180+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code ModsとJevを活用した、サブスク内モデルルーターの構築",
+    "url": "https://qiita.com/moritalous/items/8b663db633dde3c49d62",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの新機能「Mods」と判断特化AI「Jev」を組み合わせ、プロンプトの難易度に応じてモデルを自動で切り替える「モデルルーター」を構築する手法の紹介。",
+    "summaryBody": "Claude Codeの拡張機能である「Mods」を利用して、入力内容の複雑さに応じてSonnet、Opus、Haikuといったモデルを自動的に使い分ける仕組みを解説しています。記事では判断特化AI「Jev」を用いた実装から、Mods内部のAPIである`$.model.classify`を活用したよりシンプルな実装方法までを検討。この構築により、外部APIキーを利用せずサブスクリプションの範囲内でトークン消費の最適化（エフォートルーター）が可能になります。一方で、モデルを頻繁に切り替えるとプロンプトキャッシュが効かなくなるという実用上の注意点についても言及されています。",
+    "topics": [
+      "Claude Code",
+      "LLM Router",
+      "Jev",
+      "AI開発ツール",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

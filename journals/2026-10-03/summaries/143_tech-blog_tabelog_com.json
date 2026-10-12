@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:04:33.840485+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIで要件定義を実践して分かった、大量のアウトプットを捌くための\"問い\"の作り方",
+    "url": "https://tech-blog.tabelog.com/entry/ai-requirements-definition-with-questions",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "食べログの開発チームが、AIに要件定義書を書かせるのではなく「人間が判断すべき問い」を抽出・優先順位付けさせることで、大規模開発の上流工程を効率化した実践記録。",
+    "summaryBody": "食べログにおけるAIエージェント（DevinやClaude Code等）を活用した要件定義の試行錯誤をまとめた記事。当初はAIに文書を直接生成させたが、不正確な断定や根拠の欠如が課題となった。解決策として、AIに「人間が決めるべき問い」を抽出させる方式へ転換。さらに、50問を超える問いによる認知負荷を制御するため、「工程」と「優先度」によるタグ付けルールを導入し、要件定義段階で向き合うべき論点を数件に絞り込む手法を確立した。AGENTS.mdやスキルファイルを用いた具体的な指示の出し方、Slackでの運用実態まで踏み込んで解説されており、AIを「網羅的な調査・提案者」として、人間を「最終判断者」として位置づけるAI駆動型開発の高度な実践例となっている。この手法により、後工程での考慮漏れが激減し、実装までの一気通貫な進行が加速した。",
+    "topics": [
+      "生成AI",
+      "要件定義",
+      "プロダクト開発",
+      "AIエージェント",
+      "Devin"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

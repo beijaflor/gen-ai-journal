@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:29:18.063073+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "テキスト分類の変遷：Bag-of-Wordsから最新のJevまで",
+    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "伝統的な統計的手法から深層学習、最新のJev AIに至るまでのテキスト分類の進化を辿り、モデルの較正（キャリブレーション）の重要性を説いた包括的な技術解説。",
+    "summaryBody": "この記事は、Sebastian Raschka氏がテキスト分類技術の歴史と最新トレンドを技術的な詳細とともに解説したものです。初期のBag-of-Wordsやナイーブベイズに始まり、RNN、CNN、そしてBERTやGPTといったTransformerモデルがどのように分類タスクを処理してきたかを視覚的に説明しています。特に、TypeSafe AIが発表した新モデル「Jev」に焦点を当て、巨大なLLMよりも高速かつ低コストでありながら、特定のタスクに特化せず多様な分類・意思決定（テトリスのプレイから感情分析まで）をこなせる汎用性を分析しています。また、予測確率の信頼性を高める「較正（Calibration）」の重要性や、Jevが用いているとされる「RLCD（Reinforcement Learning for Calibrated Decisions）」に関連する最新の研究手法（RLCR）についても詳しく考察しています。開発者が既存のモデルをファインチューニングすべきか、JevのようなAPIを利用すべきかの実用的な基準を提示しており、エージェントシステムの効率化に向けた展望を語っています。",
+    "topics": [
+      "テキスト分類",
+      "自然言語処理",
+      "Jev AI",
+      "モデル較正",
+      "強化学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 45,
+      "overall": 94
+    },
+    "originalTitle": "Language Models for Text Classification: From Bag-of-Words to Jev"
+  }
+}

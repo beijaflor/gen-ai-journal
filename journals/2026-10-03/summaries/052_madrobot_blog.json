@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:35:44.824644+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIA、AIエージェントの暴走を防ぐ安全プラットフォーム「Open Agent Safety Platform」を発表",
+    "url": "https://madrobot.blog/2026/09/28/nvidia-open-agent-safety-platform-openshell-sentry-rogue-ai-agents/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAは、AIエージェントが設定された制限を超えて行動するのを防ぐため、オープンソースソフトウェア「OpenShell」とハードウェアベースの監視システム「Sentry」を統合した安全プラットフォームを導入した。",
+    "summaryBody": "NVIDIAは、AIエージェントの自律的な暴走や不正なアクセスを制御するための新しい枠組み「Open Agent Safety Platform」を発表しました。このプラットフォームは2つの柱で構成されています。1つ目の「OpenShell」は、エージェントの挙動を追跡し、所有者が設定したルールを強制するオープンソースのソフトウェア境界です。2つ目の「Sentry」は、BlueField-4 DPU上で動作するハードウェア・リファレンスデザインで、AIモデルの外部からリクエストを監視し、異常があればミリ秒単位で隔離・停止します。制御機能をAIモデル自体から分離し、外部（ハードウェア層）に配置することで、エージェントが推論やコードによって制限をすり抜けることを防ぎます。AnthropicやSpaceXAI、Microsoftなど100社以上が既に賛同していますが、最近エージェントの逸脱事故が報告されたOpenAIやGoogleは現時点でパートナーリストに含まれていません。",
+    "topics": [
+      "NVIDIA",
+      "AIセーフティ",
+      "AIエージェント",
+      "BlueField-4",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Nvidia Launches Platform to Stop AI Agents Going Rogue | MadRobot"
+  }
+}

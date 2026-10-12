@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:24:02.322610+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生データからグラフネイティブAIへ：グラフモデリングの重要性",
+    "url": "https://www.oreilly.com/radar/from-raw-data-to-graph-native-ai/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "グラフAIの成否はモデルの学習手法よりも、生データをいかにして適切なエンティティや関係性を持つグラフ構造へ変換するかという「グラフモデリング」に依存している。",
+    "summaryBody": "この記事では、グラフニューラルネットワークやGraphRAGなどの活用段階の前に存在する「生データをグラフに変換するプロセス」の重要性を説いています。著者はこれを「グラフネイティブAI」と呼び、単一の巨大なグラフを作るのではなく、アイデンティティや証拠、時間を一貫させつつ、用途（クエリ、予測、検索、エージェント、基盤モデル）に合わせて複数の統治されたグラフビューを構築するアプローチを推奨しています。リレーショナルデータベースのスキーマをそのままグラフ化する際の情報の過不足という課題に対し、下流タスクの精度に基づいた評価ループによる体系的なモデリングの必要性を指摘しています。",
+    "topics": [
+      "Graph AI",
+      "GraphRAG",
+      "Knowledge Graph",
+      "Data Modeling",
+      "Graph Neural Networks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "From Raw Data to Graph-Native AI – O’Reilly"
+  }
+}

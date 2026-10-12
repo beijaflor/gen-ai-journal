@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:18:27.795249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pi Durable: 長期実行・永続化・協調作業を可能にするAIエージェント開発用フレームワーク",
+    "url": "https://earendil.com/posts/pi-durable/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Pi Durableは、プロセスの再起動やクラッシュを跨いで状態を維持し、複数ユーザーによる同時操作や長時間実行を前提とした、TypeScriptベースの軽量で柔軟なAIエージェント開発フレームワークです。",
+    "summaryBody": "Earendil社が、コーディングエージェント「Pi」の1.0リリースと併せて発表した新しい実験的パッケージ「Pi Durable」の解説記事です。Pi Durableは、単一のプロセスで完結しない「どこでも、いつまでも動作する」エージェントを構築するための「ハーネス（基盤）」を提供します。\n\n主な特徴は以下の通りです：\n1. **永続性と回復力**: 全ての処理がチェックポイント付きの「タスク」として管理され、クラッシュや再起動後も中断した箇所から正確に再開可能です。\n2. **並行性とフォーク**: 1つのハーネスで複数の会話を並行して実行でき、Gitのように特定の時点から会話をフォークして別の試行を行うことができます。\n3. **拡張性と柔軟性**: ツール、システムプロンプト、フックなどを拡張機能としてプラグイン可能。実行中にエージェントのロジック（コード）を差し替えることも可能です。\n4. **マルチプレイヤー対応**: 複数のクライアント（UI）が同じ会話に接続し、リアルタイムでエージェントの状態を監視したり、割り込んで指示を修正（ステアリング）したりできます。\n\nソースコードは約1.5万行と軽量で、エージェント自身が自身のコードを理解して自己修正や機能拡張を行いやすい設計になっています。SQLiteやNode.js環境のほか、Cloudflare Workersなどのエッジ環境でも動作します。",
+    "topics": [
+      "AIエージェント",
+      "TypeScript",
+      "状態管理",
+      "Pi Durable",
+      "Earendil"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Pi Durable"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:03:03.272688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Jevでコンピュータ操作】Jevでスピード1.8倍速・使用トークン85%減の高効率コンピュータ操作を実現できた",
+    "url": "https://zenn.dev/rimon/articles/1a528468ea5996",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MCP「beans-picker」は、行動候補のリスト化によりLLMのコンテキストを削減し、コンピュータ操作の1.8倍高速化と85%のコストカットを実現します。",
+    "summaryBody": "株式会社フォワードのCTO・堀越氏が、LLMによるコンピュータ操作を劇的に効率化するMCP（Model Context Protocol）ツール「beans-picker」を公開しました。従来のコンピュータ操作は画面全体をLLMに読み込ませるためトークン消費と処理時間が膨大でしたが、本ツールは「次の行動候補」を短いリストとして抽出しLLMに判断させる仕組みを採用しています。これにより、cua-driver単体利用と比較して、実行時間を約半分（50秒→28秒）に短縮し、コストを約1/6（58円→9円）に抑えることに成功。デフォルトでバックグラウンド実行されるため、作業を邪魔しない点も特徴です。uvコマンドで簡単にインストールでき、Jev APIやClaude Codeと組み合わせて即座に利用可能です。",
+    "topics": [
+      "MCP",
+      "Computer Use",
+      "Jev",
+      "LLM",
+      "beans-picker"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    }
+  }
+}

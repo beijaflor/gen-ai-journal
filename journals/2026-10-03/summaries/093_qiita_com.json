@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:31:43.110500+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "画像生成を使わずにアーキ図をAIに描かせる #AWS - Qiita",
+    "url": "https://qiita.com/sc-nakamura/items/8fdef470b4bfcb95eb53",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "画像生成AIを使わず、draw.ioのXML形式を直接AIに操作させることで、正確かつ編集可能なAWSアーキテクチャ図を生成・更新する手法の解説。",
+    "summaryBody": "### 概要\nAIにアーキテクチャ図を作成させる際、画像として出力するのではなく、draw.io（diagrams.net）のXMLデータを生成・編集させる手法を紹介しています。画像生成では困難な構成の正確性や、後からの微調整を可能にします。\n\n### 技術的ポイント\n- **.drawio.pngの仕組み**: PNGファイルのメタデータ（tEXt/zTXtチャンク）に図面のXMLが埋め込まれている性質を利用し、画像としても図面データとしても扱える1ファイル管理を実現します。\n- **AIによるXML操作**: ClaudeなどのAIにdraw.io形式のXMLを書かせることで、AWS標準アイコン（mxgraph.aws4）やVPC・サブネットの階層構造を正確に反映した図面を作成できます。\n- **既存図面の修正**: PNGからXMLを抽出するPythonスクリプトを介してAIに情報を渡すことで、既存の図面を「理解」させた上で、リソースの追加や配置変更を対話的に行わせることが可能です。\n\n### 利点\n画像生成AIと比較して、構成情報の網羅性が高く、生成後に人間がdraw.ioやVSCode上で簡単に修正できる点が最大のメリットです。また、Claude CodeのようなAIエージェントと組み合わせることで、ドキュメントの自動更新フローの構築も示唆されています。",
+    "topics": [
+      "AWS",
+      "draw.io",
+      "生成AI",
+      "Claude",
+      "システム構成図"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

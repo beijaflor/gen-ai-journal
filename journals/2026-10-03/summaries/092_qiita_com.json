@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:31:27.235340+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Autopilot が最高だった...私の Vibe Coding の常識が、また変わった! タスク分割の Prompt はもう要らない。トークンと時間を半日溶かして分かったこと",
+    "url": "https://qiita.com/dahatake/items/81df308d05c131eb8cb6",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIの進化により、これまで必要だった複雑なタスク分割や管理フレームワーク（ATG）はかえって非効率であり、シンプルな指示と出力制限の配慮こそが成功の鍵であることを実測データで示した検証記事。",
+    "summaryBody": "筆者が自作したコーディングエージェント用タスク管理ツール「Autonomous Task Graph (ATG)」の有効性を、最新モデル（Claude 3.5相当の未来モデル設定）で再検証した記録。家計簿アプリ、表計算エンジン、SQLエンジンという3つの難易度のタスクで比較した結果、ATGなどの「足場」は小・中規模タスクにおいて時間とコストを2〜3倍に増大させるだけで、品質向上には寄与しないことが判明した。特に「モデルの能力を超える」とされる大規模開発での失敗原因は、32,000トークンの出力制限内で推論がリソースを使い果たし、実際のファイル書き込み（ツール呼び出し）に到達しない点にある。これを解決するには、複雑な手順書よりも「1回の書き込みを300行以内に制限する」というシンプルな一文をプロンプトに加えるだけで、完成率が大幅に向上した。結論として、AIモデルの進化に伴い、既存のフレームワークを捨てて「最小限のプロンプト」と「明確な完了条件（exit code）」に立ち返るべきだと提唱している。",
+    "topics": [
+      "Vibe Coding",
+      "GitHub Copilot",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "Claude 3.5"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

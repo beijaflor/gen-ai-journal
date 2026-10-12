@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:30:50.161031+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI はダンスバトルのジャッジができるか？",
+    "url": "https://qiita.com/kentodelic/items/c1fb2d23cea8ee033a4f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemini APIを利用してストリートダンス（Popping）のバトル判定の精度を検証し、AIによる動画解析の現状の限界と可能性をデータサイエンティスト兼ダンサーの視点で考察した記事です。",
+    "summaryBody": "現役ダンサーでありデータサイエンティストでもある筆者が、Gemini 3.8 Flashおよび3.1 Pro Previewを用いて、YouTube上のPoppingダンスバトルの勝敗判定を試行した実験レポート。プロンプトに5つの評価観点（技術・構成・実行力・音楽性・独自性）を定義し、フレームレートを最大24fpsまで振り分けて検証。結果、Gemini Flashの勝敗正解率は50%程度に留まり、動きの名称や大まかな構成は理解できるものの、ヒット（Pop）の質感や音との微細な一致度（音楽性）の判別には大きな課題があることが判明した。一方で、AIによる講評は自主練習のフィードバックとして活用できるレベルにあり、今後の姿勢推定や音声解析との組み合わせによる精度向上に期待を寄せている。",
+    "topics": [
+      "Gemini",
+      "Python",
+      "動画解析",
+      "ストリートダンス",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    }
+  }
+}

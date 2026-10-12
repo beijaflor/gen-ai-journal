@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:06:11.825746+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる概念説明を効率化するツールキット「explainer」",
+    "url": "https://github.com/mizchi/explainer",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが、読者の既知の知識を考慮しつつ、検証可能な図解や実行可能なコードを用いて「その人が知らないことだけ」を効率的に説明するためのツールセットです。",
+    "summaryBody": "このリポジトリは、AI（特にClaude Code）が人間に概念を説明する際の効率と信頼性を高めるためのスキルおよびツール群を提供します。現代のコーディングエージェントが人間が理解できる速度を超えてアウトプットを生成する現状に対し、「理解のボトルネック」を解消することを目的としています。\n\n主な特徴は以下の通りです：\n- **Personaベースの最適化**: 読者の既知情報を定義したペルソナファイルに基づき、不要な説明を省き、ターゲットが知らない核心部分のみを抽出して解説します。\n- **高度な図解生成と自動検証**: D2、Mermaid、vlmkit-animなどを活用し、単なる画像生成ではなく「コードや事実に基づいた整合性」を自動検証する仕組み（`verify-doc.mjs`）を備えています。特に、形式手法（TLA+/Z3）の状態遷移図を自動生成し、反例の検証結果を図に反映させる機能などは、高度な技術解説に役立ちます。\n- **学習体験の評価**: `first-reader`機能により、公開前にシミュレートされた読者がどの段落で離脱するか、何が記憶に残ったかを評価できます。\n\n単なるドキュメント生成ツールに留まらず、AIが書いた説明が正しいことを実効コードや事実確認用のシートと照合する、極めて実用的かつ「アンチ・ハンプ（非誇張）」な設計が特徴です。",
+    "topics": [
+      "Claude Code",
+      "AI Documentation",
+      "Knowledge Transfer",
+      "Data Visualization",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - mizchi/explainer: Skills and tools for explaining concepts from an AI to a human."
+  }
+}
