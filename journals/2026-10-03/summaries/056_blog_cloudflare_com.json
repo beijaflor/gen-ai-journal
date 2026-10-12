@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:22:04.179853+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代の適応型アプリケーションセキュリティ：Cloudflareによるコード、トラフィック、インテリジェンスの統合",
+    "url": "https://blog.cloudflare.com/ai-era-framework/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントによる高度な自律的攻撃に対抗するため、発見・統治・保護・調査の4段階を統合した適応型アプリケーションセキュリティフレームワークを発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントが脆弱性の発見から資格情報の奪取、攻撃の調整までを自律的に行う新たな脅威に対し、従来のツール単体では不十分であると指摘しています。これに対処するため、以下の4つのステージを連結したフレームワークを導入します。\n\n1. **発見と優先順位付け**: ソフトウェアの依存関係リスクの特定や、LLMを用いたリアルタイムなペネトレーションテスト（Adaptive Security）を実施し、本番環境で到達可能な脆弱性を優先的に修正します。\n2. **アクセスとエージェントの統治**: 「Botbase」によるエージェントのアイデンティティ管理や、人間とボットの行動パターンの差異（タイピング速度など）に基づく信頼性評価を行います。\n3. **実行時の保護**: アプリケーションの構造を自動学習する「Application Profiles」や、LLM特有の攻撃（プロンプトインジェクション等）を防ぐAIセキュリティ機能をWAFに統合します。\n4. **調査と対応**: 自律的なセキュリティ運用フレームワークにより、隔離されたアラート間の相関関係を分析し、一連の攻撃キャンペーンとして迅速に特定・隔離します。\n\nこれらの機能により、攻撃者がAIを利用して防御を回避するスピードを上回る、適応型の防御体制を構築することを目指しています。",
+    "topics": [
+      "Application Security",
+      "Artificial Intelligence",
+      "Cloudflare",
+      "Cybersecurity",
+      "Web Application Firewall"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks | Cloudflare Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:34:19.144719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Playwright Test Agents × GitHub Actions：E2E テスト生成・修復の自動化",
+    "url": "https://zenn.dev/sun_asterisk/articles/e9b50f09839def",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Playwright 1.56のAIエージェント機能を、GitHub Actions上で安全かつ無人で運用するためのガードレール設計と実装ガイド。",
+    "summaryBody": "Playwright 1.56で導入された「Playwright Test Agents（Planner, Generator, Healer）」をGitHub Actionsで実運用するための設計指針を紹介しています。AIによる不適切なテスト修正やセキュリティリスクを回避するため、以下の3つの柱を中心に解説しています。\n\n- **独自のガードレール (scripts/guard.mjs)**: TypeScriptのAST解析を用いて、AIによる「test.skip」の勝手な追加や、ページオブジェクト以外へのコード改ざんを機械的に遮断します。\n- **失敗の自動分類 (scripts/classify.mjs)**: テスト失敗が「AIで修復可能なロケーター変更」か、「人間が対応すべきプロダクトのバグ」かを、終了コードやトレースから判定し、不必要なAI修復を抑制します。\n- **セキュアなCIワークフロー**: GitHub Environmentsを用いてトークン利用をmainブランチに制限し、パッチ作成と検証ジョブを分離することで、万が一のAIの暴走が判定結果に影響しない構造を構築しています。\n\n即座に試せる詳細なコードサンプルと、実プロジェクトでのハマりどころ（GitHubトークンの権限やCopilot CLIの自動更新挙動など）についても詳述されています。",
+    "topics": [
+      "Playwright",
+      "GitHub Actions",
+      "AI Agent",
+      "GitHub Copilot",
+      "E2Eテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 35,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:35:30.198464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI 駆動開発で「設計」はどこに書くのか ― 振る舞いをテストで検証できる「仕様」にしてみる",
+    "url": "https://zenn.dev/softbank/articles/6f98cf7c4ebfd3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI駆動開発において設計の重要性が増す中、Mermaidのシーケンス図を仕様として定義し、Pythonの実行トレースを用いて実装の振る舞いを決定的に検証する手法を提案している。",
+    "summaryBody": "AIがコード実装を担うようになる中、開発のボトルネックは「書くこと」から「何を実装するかを決めること（設計）」へと移りつつあります。本記事では、自然言語の曖昧さを補うため、Mermaidのシーケンス図を「実行可能な仕様」として定義し、Python 3.12で導入された`sys.monitoring`を活用してテスト実行時の内部処理（関数呼び出し順序）を自動検証する手法を紹介しています。これにより、AIによる大量のコード生成に対しても、人間はコードの詳細レビューではなく「仕様（図）の妥当性」という高レイヤーな判断に注力することが可能になります。AIの推論による柔軟な実装と、決定的なプログラムによる振る舞い検証を組み合わせた、AI時代の新しい開発プロセスを提示する内容となっています。",
+    "topics": [
+      "AI駆動開発",
+      "ソフトウェア設計",
+      "Python",
+      "Mermaid",
+      "テスト自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    }
+  }
+}

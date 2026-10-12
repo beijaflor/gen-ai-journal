@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:15:15.890798+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PSSA: Rustで構築された新しい再帰型状態空間AIアーキテクチャ",
+    "url": "https://github.com/Sparticle62ops/pssa",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Rustを用いてフルスクラッチで開発された、トランスフォーマーに代わる高効率な再帰型状態空間アーキテクチャ（PSSA）の実装プロジェクト。",
+    "summaryBody": "PSSA（Plastic State-Space Architecture）は、PyTorchやTensorFlowなどの既存フレームワークに依存せず、Rustでゼロから記述された新しい言語モデルアーキテクチャです。トランスフォーマーの二次的な計算コストを解決するため、固定サイズの再帰状態を持つ選択的状態空間モデル（SSM）を核としています。特徴として、ポアンカレ球を用いた双曲空間でのエピソードメモリ管理、入力に応じて重みを書き換える「プラスチック」な性質、そして高速な学習を永続的な知識に統合するリッジ回帰ベースの「固定化（Consolidation）」プロセスを備えています。1.5Mパラメータ規模の比較実験では、標準的なトランスフォーマーよりも少ない学習トークン数で低い損失率を達成し、CPU上での推論速度は約12倍という圧倒的なパフォーマンスを示しています。現在は研究プロトタイプの段階ですが、学習効率と汎用性の向上において非常にユニークなアプローチをとっています。",
+    "topics": [
+      "State Space Models",
+      "Rust",
+      "Machine Learning Architecture",
+      "Neural Networks",
+      "Deep Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - Sparticle62ops/pssa: A custom AI architecture being developed in rust · GitHub"
+  }
+}

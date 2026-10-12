@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:03:42.211688+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "開発者とSREが同じ仕組みを使う、ローカルに閉じない自律AIエージェントのつくり方",
+    "url": "https://www.docswell.com/s/WN_Tech-PR/ZY8QXP-2026-09-07-111839",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ウェルスナビが構築した、Slackを基盤に開発者とSREが共同利用し、調査からプルリクエスト作成までを自律的に行うAIエージェント「Clione」の設計と運用知見の紹介。",
+    "summaryBody": "ウェルスナビ株式会社が開発した内製AIエージェント「Clione」の事例紹介です。従来の開発者ポータルやドキュメントだけでは解決しきれなかったSREへの問い合わせ業務を、AIエージェントが自律的に肩代わりする仕組みを構築しました。Slackをインターフェースに採用することで、習熟度に依存せず誰でも利用でき、SREが背後でサポート可能な環境を実現しています。技術スタックはAmazon Bedrock (Claude) を中心に、MCP (Model Context Protocol) やBedrock AgentCore Memoryを活用し、Datadogアラートを起点とした調査やGitHubでのPR作成を自動化しています。特に、LLMの外部に設けた「多層防御」によるセキュリティ設計（ログのマスキング、通信先の許可リスト化、GitOpsによる人手レビューの強制）が強調されており、実運用において一次回答までの待ち時間を約92%短縮するという顕著な成果を報告しています。",
+    "topics": [
+      "AIエージェント",
+      "SRE",
+      "Platform Engineering",
+      "Amazon Bedrock",
+      "Slack"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

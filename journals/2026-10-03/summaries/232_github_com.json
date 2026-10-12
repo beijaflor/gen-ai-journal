@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:27:01.724977+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mantis: AIエージェントによる脆弱性の自動発見・再現・パッチ適用を実現するツールキット",
+    "url": "https://github.com/google/mantis",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Googleが公開したMantisは、AIエージェントが自律的にコードの脆弱性を調査し、再現コードの作成からパッチ適用、深刻度の較正までを自動化するモジュール型ツールキットです。",
+    "summaryBody": "Mantisは、AIコーディングエージェントがソフトウェアのセキュリティ脆弱性を自律的に管理するためのスタックに依存しないツールキットです。単なる静的解析に留まらず、脅威モデリング、仮説検証、脆弱性の再現（PoC作成）、さらには修正パッチの生成と検証までをカバーします。\n\n主な特徴は以下の通りです：\n- **モジュール構造**: 調査、再現、パッチ、レビューなどの各工程が独立した「スキル」として提供され、柔軟に組み合わせ可能です。\n- **自律的ワークフロー**: ADK（Agent Development Kit）を基盤とし、特定の目的に応じたエージェントグラフを動的に生成できます。\n- **品質管理**: LLM特有のハルシネーション（過剰な深刻度評価など）を抑制するため、静的検証や独自の評価基準（ルブリック）によるキャリブレーション機能を備えています。\n- **敵対的ループ**: 修正パッチが本当に脆弱性を解決したか、実際に再試行して検証する機能を持ちます。\n\n本プロジェクトはGoogleの公式製品ではなく、自律的なコード実行を伴うため、高度に隔離されたサンドボックス環境での使用が前提とされています。",
+    "topics": [
+      "AI Agents",
+      "Vulnerability Discovery",
+      "DevSecOps",
+      "LLM Security",
+      "Auto-patching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 95
+    },
+    "originalTitle": "google/mantis: A modular, stack-agnostic toolkit for AI coding agents to autonomously find, reproduce, and patch vulnerabilities."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:31:18.293310+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "dotfiles を AI agent のために作り変えた",
+    "url": "https://tellme.tokyo/post/2026/10/01/ai-agent-first-dotfiles/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ターミナルの主たる利用者が AI agent になった現状に合わせ、環境設定を「AI 向けをデフォルト、人間用を opt-in」へと再設計し、Nix で管理する手法の解説。",
+    "summaryBody": "ターミナルでの作業の大部分を Claude Code 等の AI が担うようになった現代において、人間向けの便利な設定（エイリアスや対話型コマンド）が AI の動作を阻害する問題を解決するための取り組みが紹介されています。筆者は dotfiles を AI ファーストに作り変え、以下の 3 点を実施しました。\n\n1. **AI デフォルト・人間 opt-in**: `.zshenv` で TTY や環境変数を使い、人間か AI かを判定。AI には最小限の構成を提供し、人間用設定は明示的に読み込むことで、シェルの起動高速化と AI の誤作動防止を両立。\n2. **コマンドの最適化**: AI の学習済み知識に合わせ、不要な GNU エイリアスを排除。一方で、`rm` を自作のゴミ箱移動ツール `gomi` に偽装させることで、AI の挙動を損なわずに安全性を確保。\n3. **Nix による管理の統合**: Nix (home-manager) を活用し、ツールのインストール、設定（人間用/AI用）、および AI への使い方指示（Agent Skills）を 1 ファイルにまとめる（co-location）仕組みを構築。\n\nこの構成により、AI のための環境整備と人間にとっての利便性を高度に分離・共存させています。",
+    "topics": [
+      "dotfiles",
+      "AI Agent",
+      "Nix",
+      "Claude Code",
+      "Zsh"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:34:15.078792+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIによるコード生成に依存しすぎず、Rustの所有権や型システムを対話形式で深く学ぶためのCodex/Claude Code向けプラグイン「Rust Learning Lab」が公開されました。",
+    "summaryBody": "AIによる自動コード生成が普及する中で、エンジニアがRustの「所有権」や「型システム」といった本質的な概念を学び続けるためのツール「Rust Learning Lab」の開発背景と機能が解説されています。\n\n主な特徴は以下の通りです：\n1. **対話型学習**: 手元のコードを題材に、AI（CodexやClaude Code）へ「なぜこの型なのか」「誰が値を渡しているのか」といった深い問いかけを促すプロンプトおよびプラグイン。単に動くコードを得るだけでなく、その背後にある言語仕様の理解を深めます。\n2. **能動的な練習の組み込み**: AIにすぐ完成形を出させるのではなく、ヒントの提示や穴埋め問題の作成、条件を変えた際の影響を予測させるなど、ユーザーが手を動かす機会を意図的に残す仕組みを提供します。\n3. **設計判断の整理**: PRの差分から、動作説明だけでなく「なぜその案を採用したか」「どういう条件下でその設計が崩れるか」といった設計意図をMarkdown形式で抽出・整理し、チームでの議論や個人の学習に役立てます。\n\n著者は、AIに作業を任せて効率化しつつも、道具の専門家として「判断の理由」を自ら説明できる力を保ち続けるための、新しい学習と実務の境界線について提案しています。",
+    "topics": [
+      "Rust",
+      "AI学習",
+      "Claude Code",
+      "Codex",
+      "プログラミング教育"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

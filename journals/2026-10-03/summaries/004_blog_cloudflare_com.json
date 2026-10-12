@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:23:23.292307+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflareの全APIに対応するAIエージェント向けCLI「cf」の発表",
+    "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェントによる操作を最適化し、3,000以上の全API操作とTypeScriptによる型安全な設定を可能にする次世代CLI「cf」を発表しました。",
+    "summaryBody": "Cloudflareは、AIエージェントによるCLI利用の急増を受け、エージェント向けに最適化された新しいCLI「cf」を公開しました。従来のWranglerが約280コマンドに限定されていたのに対し、新CLIはForgeパイプラインを活用することで、3,000以上の全API操作を網羅しています。JSON出力をデフォルトとし、自然言語でコマンドを検索できる「cf cli search」機能を搭載するなど、エージェントがトークンを節約しながら効率的に動作するよう設計されています。また、設定ファイルはTypeScriptベースの「cloudflare.config.ts」へと刷新され、Viteを標準のビルドツールとして採用。既存のWranglerプロジェクトからの移行パスも提供されます。",
+    "topics": [
+      "Cloudflare",
+      "CLI",
+      "AIエージェント",
+      "TypeScript",
+      "Vite"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "Introducing cf: the agentic CLI for the entire Cloudflare API"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:25:00.707123+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スキルの名前を verify にするだけで、Claude Code はコミット前にそれを実行する",
+    "url": "https://qiita.com/suwa_nobu/items/cc0fb4a9e10100991bba",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Code 2.1.286以降、スキル名を「verify」に設定するだけでコミット直前に自動実行される仕様を実地検証により特定しました。",
+    "summaryBody": "### 概要\nClaude Code 2.1.286のアップデートに含まれる「コミット直前の自動検証機能」についての詳細な検証記事です。プロジェクトまたはユーザースキルの中に `verify` という名前のスキルが存在する場合、コードの変更を伴うコミットの直前に、Claudeがそのスキルを自律的に実行する仕様が追加されました。\n\n### 検証で判明した挙動\n- **名前がトリガー:** スキルの中身や説明文ではなく、ディレクトリ名や `name` フィールドが `verify` であることが実行のトリガーとなります。`verify2` など名前に変更を加えると自動実行されません。\n- **バージョン限定:** この挙動は v2.1.286 から導入されており、旧版では動作しません。\n- **除外設定:** changelogの記載通り、ドキュメントのみ（docs/）やテストのみ（tests/）の変更時には実行されない仕様が確認されました。\n- **注意点:** スキルの説明文に 'before commit' などのキーワードを含めると、名前に関わらず通常の推論で実行されるため、名前による規約とは区別する必要があります。\n\n### 結論\n開発者は `verify` という名前のスキルを定義するだけで、リポジトリ固有のチェック処理をコミットフローに統合できます。既存のスキル名が `verify` の場合は意図せず実行回数が増えるため、処理の重さに応じて名前の変更などの対策が推奨されます。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AI駆動開発",
+      "Git",
+      "プリコミット"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

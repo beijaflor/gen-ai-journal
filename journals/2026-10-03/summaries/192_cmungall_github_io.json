@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:17:21.522707+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jevotron: コマンドラインでのワンショット異常検知ツール",
+    "url": "https://cmungall.github.io/jevotron/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "CSVやJSONなどの構造化データに対し、LLMを活用してフィールド単位の異常検知や品質評価をワンショットで実行できるCLIツール。",
+    "summaryBody": "jevotronは、構造化データ（CSV、YAML、JSON、TOML、OBO等）に含まれる異常値をコマンドラインから特定するためのツールです。LLMへの指示（ガイダンス）に基づき、各フィールドに異常確率スコアを付与します。主な特徴として、APIコストを抑えるためのキャッシュ機能、SQLiteへの結果保存、フィールド選択機能、そして既存のシェルパイプラインとの親和性が挙げられます。特定のデータ形式に対するカスタムパーサーの作成も可能で、エージェントの実行トレース分析では約80%のラベル一致率を達成するなど、実用的な精度を備えています。",
+    "topics": [
+      "異常検知",
+      "LLM",
+      "データクレンジング",
+      "CLI",
+      "構造化データ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 70,
+      "overall": 90
+    },
+    "originalTitle": "jevotron - One-shot anomaly detection on the command line"
+  }
+}

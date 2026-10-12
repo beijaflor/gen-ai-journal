@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:25:41.299661+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【LLM-as-a-Judge】AIによるプロンプト自動評価で、監視からテスト・改善まで回す",
+    "url": "https://qiita.com/yusuke-kobayashi0117/items/550f50edd7b1dc4a3b54",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMを用いたプロンプト評価の形骸化やモデルの揺らぎを、LLM評価と決定論的チェックの併用、および統計的アプローチによって克服し、実効的な改善サイクルを構築する実践手法。",
+    "summaryBody": "本記事は、AI会議ファシリテーターの開発におけるプロンプト自動評価システム「LLM-as-a-Judge」の導入と運用ノウハウを詳説しています。LLM評価だけではスコアが満点に偏り改善箇所が見えなくなる課題に対し、「悪いことをしていないか（LLM評価）」と「期待する行動をとったか（正規表現による達成判定）」を分離する手法を提案。また、評価器と生成モデルの両方に存在する「揺らぎ（Jitter）」を統計的に分析し、誤検知を防ぐための複数回試行（15回程度）と判定マージンの設定、さらには低得点ログからプロンプト修正案を自動生成する仕組みまで、LLM開発の現場で直面する課題に対する具体的かつ高度な解決策を提示しています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "プロンプトエンジニアリング",
+      "Gemini",
+      "Genkit",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 92
+    }
+  }
+}

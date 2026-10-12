@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:11:07.623593+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Seer、Sentry MCP、CLI、またはコーディングエージェント：それぞれの使い分け",
+    "url": "https://blog.sentry.io/seer-mcp-cli-or-coding-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SentryのAIデバッグエンジン「Seer」を中心に、MCPや新しいCLI、Autofix機能がどのように連携してエラーの根本原因特定からPR作成までを自動化するかを解説したガイド。",
+    "summaryBody": "Sentryが提供するAI機能群の役割と、開発ワークフローへの統合方法が詳細に解説されています。中心となる「Seer」は、単なるデータ取得ではなく、スタックトレース、ログ、プロファイル、リポジトリを横断的に推論し、エラーの根本原因を特定するAIエンジンです。\n\n主なコンポーネントは以下の通りです：\n1. **Seer Agent**: SlackやUI上のチャット形式で、インシデントの状況把握やアラート設定、ダッシュボード作成などを対話的に実行可能。\n2. **Autofix**: エラー解析から修正案の提示、PR作成までを自律的に行います。\n3. **Sentry MCP & AI Plugin**: CursorやClaude Codeなどの外部AIエージェントにSentryのコンテキストを提供し、エディタ内でデバッグを完結させます。\n4. **新CLI**: 自然言語による操作に対応し、ターミナルから直接Seerの解析結果を呼び出せます。\n\n「Seerが診断（なぜ起きたか）を行い、外部エージェントや人間が実装（どう直すか）を担当する」という役割分担により、複雑な分散システムのデバッグ効率を最大化できる点が強調されています。",
+    "topics": [
+      "Sentry",
+      "AI Debugging",
+      "Model Context Protocol (MCP)",
+      "Observability",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Seer, the Sentry MCP and CLI, or your coding agent | Sentry Blog"
+  }
+}

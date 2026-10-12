@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:00:07.637653+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMのためのメモリ基礎知識",
+    "url": "https://note.com/npaka/n/n0ee92a316be3",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ローカルLLM実行に不可欠なCPU/GPUとRAM/VRAMの関係、ユニファイドメモリの特性、そしてメモリ容量と帯域幅が推論性能に与える影響を体系的に解説したガイド。",
+    "summaryBody": "この記事では、ローカル環境で大規模言語モデル（LLM）を動かす際に重要となるメモリの基礎知識を包括的に解説しています。まず、計算を担うCPU/GPUとデータを保持するRAM/VRAMの役割分担を整理し、Apple Silicon等で採用されている「ユニファイドメモリ」がデータのコピーを減らし大型モデルの扱いに適している点を説明しています。LLMがメモリを消費する内訳として、モデルの重み、文脈長に比例するKVキャッシュ、推論時の一時領域の3要素を挙げ、メモリ不足時の対策として量子化やメインメモリ（RAM）へのオフロード手法を紹介。最後に、メモリ「容量」が扱えるモデルのサイズを決め、メモリ「帯域幅」が推論（トークン生成）の速度を左右するという、性能評価において見落とされがちな重要な違いを強調しています。",
+    "topics": [
+      "ローカルLLM",
+      "VRAM",
+      "ユニファイドメモリ",
+      "量子化",
+      "メモリ帯域幅"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

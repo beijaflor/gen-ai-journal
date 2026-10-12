@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T18:00:20.159431+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIデバッグはなぜ収束しないのか - P2がいつまでも消えない理由",
+    "url": "https://note.com/npaka/n/n557fb948c3cf",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコードレビューで中優先度の問題（P2）が無限に発生し続ける原因を分析し、デバッグプロセスを確実に収束させるための3つの戦略を提示する。",
+    "summaryBody": "AIエージェントによるデバッグループにおいて、修正を繰り返しても優先度P2の問題が消えない現象の要因を解説。AIが一度に全ての問題を発見しない「小出しの発見」、修正に伴う新たなバグの発生、そしてプロンプトや文脈による「判定基準の揺らぎ」がその背景にある。この記事では、AIデバッグを収束させるための具体的な手法として、レビューと修正の工程を分離すること、発見された問題をテストコードとして固定し再現性を担保すること、そして「AIの指摘がゼロになること」以外に明確な終了条件を設けることの重要性を説いている。",
+    "topics": [
+      "AIデバッグ",
+      "AIエージェント",
+      "コードレビュー",
+      "ソフトウェア品質管理",
+      "Codex"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

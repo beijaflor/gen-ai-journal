@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:23:47.253749+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIセキュリティエージェントで24件のAndroid脆弱性を発見：GitHubの事例",
+    "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHub Security Labが、自社開発のAIエージェント「Taskflow Agent」を用いてAndroidアプリから24件の脆弱性を発見した成果と、その背後にある技術的アプローチを公開しました。",
+    "summaryBody": "### 概要\nGitHubのセキュリティ研究チームは、LLMの推論プロセスを制御・自動化する「GitHub Security Lab Taskflow Agent」を活用し、Androidアプリの監査を実施しました。その結果、OsmAndやWikipediaなどの著名なアプリケーションから計24件の脆弱性を特定することに成功しました。\n\n### 技術的アプローチ\n研究チームは、モバイルアプリ特有の攻撃面（インテントやディープリンクなど）を重点的に調査させるため、カスタムの「タスクフロー」を作成しました。これにより、AIに対して「エントリポイントの分離」や「特定の脆弱性クラス（混同代理攻撃など）の重点確認」を指示し、LLM単体では見落としがちな複雑な論理バグの発見を可能にしました。\n\n### 発見された脆弱性の例\n- **OsmAnd:** 悪意のあるアプリが設定ファイルを不正にインポートさせることで、ユーザーの現在地や移動経路を無断で外部サーバーに送信できる脆弱性。\n- **Wikipedia:** ディープリンクの解析ロジックの不備を突き、攻撃者が制御するドメインにユーザーを誘導。クッキーを奪取することでアカウントを乗っ取れる脆弱性。\n\n### AIの利点と限界\nAIはAPIの挙動に精通しておりPoC生成能力も高い一方、脆弱性の深刻度を誤認する傾向があるため、専門家によるレビューが不可欠であると結論付けています。",
+    "topics": [
+      "Androidセキュリティ",
+      "AIエージェント",
+      "脆弱性診断",
+      "GitHub Security Lab",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "How we found 24 Android vulnerabilities using our open source AI security agent"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:24:01.527394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "チームの記憶を検索可能にしたら、AIにタスクを丸ごと任せられるようになった",
+    "url": "https://techblog.lycorp.co.jp/ja/20260929a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LINEヤフーが開発した社内RAG「team-brain」は、散在するドキュメントやソースコードをAIエージェントが参照可能にすることで、高度な調査やタスクの自走化を実現しました。",
+    "summaryBody": "LINEヤフーのメトリクスチームが、Confluence、GitHub、Slack、Jiraに点在する知識を統合して検索できるRAG（Retrieval-Augmented Generation）基盤「team-brain」を構築した事例。このシステムは生成機能を持たず、検索に特化することでClaude CodeなどのAIエージェントに正確な一次情報を渡す役割を担います。\n\n### 技術的特徴と工夫\n- **ハイブリッド検索**: OpenSearchを採用し、キーワード（BM25）とベクトル（kNN）を組み合わせることで、エラーメッセージ等の固有名詞と自然文の意図の両方に対応。\n- **差分埋め込みと冪等パイプライン**: 毎日11万チャンクを更新するバッチ処理において、ハッシュによる差分検知やupsert処理を導入し、運用コストの削減と信頼性を両立。\n- **評価指標の導入**: gold set（正解ペア）を用いたrecall@5やMRR@5の計測により、定量的かつ客観的な改善サイクルを確立。\n\n### 導入効果\n調査時間が平均65%削減され、AIエージェントが過去の経緯を自律的に調べて環境構築等のストーリーを完走できるなど、チーム開発における「属人化の解消」と「AIによるタスク代行」の両面で大きな成果を挙げています。",
+    "topics": [
+      "RAG",
+      "OpenSearch",
+      "AI Agent",
+      "Claude Code",
+      "LLMOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

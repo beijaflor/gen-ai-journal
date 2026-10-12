@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:23:01.600549+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI×Blenderでゲーム用キャラ素体の作成に挑戦した記録",
+    "url": "https://zenn.dev/yy7613/articles/c150ef962ccc1f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント（Claude Code等）とBlenderを連携させ、断面グラフによる形状検査と数学的な修正指示を繰り返すことで高品質なキャラクター素体を構築する、次世代の3Dモデリング手法の記録。",
+    "summaryBody": "この記事は、Blenderと最新の生成AI（Claude Opus 5.5やGPT-6 Astra等）を組み合わせ、ゲーム用アニメキャラクターの素体を論理的に構築するワークフローを解説しています。主な特徴は、人間の感性による「違和感」を断面グラフや曲がり角の数値として可視化し、AIに形状修正を指示する点にあります。具体的には、Dijkstra法を用いたトポロジー設計、薄板スプラインやラプラシアン平滑化による面質の向上、MPFB2を用いたボディ生成、そしてAIへの画像ベースの指示方法などが詳細に記されています。単なる自動生成ではなく、AIを高度な道具として使いこなし、数値的な合格基準（検査一覧）を設けることで、再現性とクオリティを両立させる実践的な知見がまとめられています。",
+    "topics": [
+      "Blender",
+      "Claude Code",
+      "3Dモデリング",
+      "Python",
+      "Generative AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

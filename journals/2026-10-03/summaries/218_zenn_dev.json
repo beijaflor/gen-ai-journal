@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:23:38.886013+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【最新v1.0.5公開】AI-Slopな日本語を構造レベルで読みやすくするSkill『yomiyasu（よみやす）』を作りました",
+    "url": "https://zenn.dev/algoartis/articles/0b1c731881b25c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AI特有の不自然な日本語（AI-Slop）を、単なる単語の禁止ではなく、文の構造から解体・再構築することで自然な文章へと変換する推敲ツール『yomiyasu』の設計思想と実装解説。",
+    "summaryBody": "AIが生成する「AI-Slop」と呼ばれる不自然な日本語を改善するためのAIエージェント用スキル『yomiyasu』についての解説記事です。著者は、Qiitaの大量データ分析に基づき、AI特有の読みにくさの原因を「非生物主語と身体性比喩動詞」「名詞の過剰な連続」「形式の過剰装飾」の3点に集約。従来の特定ワードを禁止するブラックリスト方式では解決できない文章構造の問題に対し、行為者の特定と主述関係の復元を行う「解体と再構築」アプローチを提案しています。また、Lookaround（肯定・否定の先読み/後読み）を活用した正規表現により、日常語の誤検出を抑えた静的リンターの実装についても詳述。Claude CodeやCursor等の環境に導入可能で、エンジニアの執筆における認知負荷を大幅に軽減することを目指しています。",
+    "topics": [
+      "AI-Slop",
+      "LLM",
+      "自然言語処理",
+      "プロンプトエンジニアリング",
+      "執筆支援"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

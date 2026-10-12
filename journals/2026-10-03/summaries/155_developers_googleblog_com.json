@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:09:38.795212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TPUにおける動画拡散モデルの時空間アテンション加速化",
+    "url": "https://developers.googleblog.com/accelerating-spatio-temporal-attention-for-video-diffusion-on-tpus/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが動画拡散モデルのセルフアテンションをTPU向けに最適化し、疎なアテンションを効率的なハードウェア実行に変換することで、2K動画生成において最大1.69倍の高速化を実現。",
+    "summaryBody": "動画生成モデルの解像度増大に伴い、セルフアテンションの計算コスト（特にO(N²)の計算量）が推論のボトルネックとなっています。本記事では、Sparse VideoGen (SVG) をベースとした疎なアテンション（Sparse Attention）を、TPU v6e上でいかにして物理的な推論速度向上に結びつけるかの詳細なケーススタディが紹介されています。\n\n主な最適化技術は以下の3点です。第一に、JAX/Pallasを用いたタイルベースの最適化です。アテンション行列をタイル単位で「フル」「境界」「スキップ可能」に分類し、マスク不要な「フル」タイルに高速パスを設けることでVPUの負荷を軽減しました。第二に、マスクのタイルアライメントです。計算の境界をハードウェアのタイルサイズに合わせることで、タイル内のマスク処理を大幅に削減し、カーネル単位で2.4倍の高速化を達成しました。第三に、トークンレイアウトの変換です。データの並びを空間優先から時間優先に変換することで、時間軸方向のメモリアクセスを連続化しています。\n\nこれらの最適化の結果、1440p（2K）解像度の動画生成において、品質を維持しながら1本当たり約16分の処理時間を短縮することに成功しました。理論上のスパース性をハードウェアの実行効率に落とし込むための実用的なアプローチが示されています。",
+    "topics": [
+      "TPU",
+      "Video Diffusion",
+      "Sparse Attention",
+      "JAX",
+      "Pallas"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs"
+  }
+}

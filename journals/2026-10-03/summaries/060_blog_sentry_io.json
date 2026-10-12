@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:23:04.928729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Seer Agentの大幅なアップデート：SentryのAIアシスタントが書き込み操作や外部連携に対応",
+    "url": "https://blog.sentry.io/big-improvements-to-seer-agent/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "SentryのAIアシスタント「Seer Agent」が、ダッシュボード作成などの書き込み操作や、Datadog/GCPといった外部インフラデータの統合に対応しました。",
+    "summaryBody": "Sentryは、AIデバッグアシスタント「Seer Agent」の機能を大幅に拡張しました。これまで情報の取得が主だったSeer Agentが、Sentry APIを介してダッシュボードやウィジェットの作成、アラートの設定、Issueの割り当てや解決といった書き込み操作をユーザーに代わって実行できるようになりました。また、新たに導入された「Seer Connectors」により、DatadogやGoogle Cloud Platform (GCP)からインフラデータを取得し、アプリケーションのエラーとインフラの状況を紐付けて診断することが可能です。セキュリティ面では、操作権限はユーザー自身の権限に基づき、書き込み時には明示的な許可を求める仕組みとなっています。これにより、単なる相談相手（ラバーダック）から、実務をこなすフルタイムのデバッグアシスタントへと進化を遂げました。",
+    "topics": [
+      "Sentry",
+      "Seer Agent",
+      "AI Agent",
+      "Observability",
+      "AIOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Big improvements to Seer Agent | Sentry Blog"
+  }
+}

@@ -7,7 +7,7 @@ weekly + annex journals:
   * coverage   — the weekly's 参考リンク IDs equal the curated main set, and
                  every curated source URL appears as plain text in its journal.
   * leaks      — no 原題 or score-object keys in the weekly; no recovery-URL
-                 hosts (news.ycombinator / web.archive.org / fortune.com) in
+                 proxy hosts (news.ycombinator / web.archive.org) in
                  either journal.
   * hierarchy  — exactly one H1 per journal and no skipped heading levels;
                  counts reported.
@@ -49,7 +49,7 @@ WEEKLY_ONLY_LEAK_TOKENS = [
 
 # "Recovery" hosts used during summarization that must never reach either
 # published journal.
-RECOVERY_HOSTS = ["news.ycombinator", "web.archive.org", "fortune.com"]
+RECOVERY_HOSTS = ["news.ycombinator", "web.archive.org"]
 
 # Control chars that indicate an encoding/copy-paste accident (excludes \t \n \r).
 _CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")

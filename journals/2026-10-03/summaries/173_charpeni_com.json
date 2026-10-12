@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:13:06.533652+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevを活用した自然言語によるベストプラクティスの自動ガードレール化",
+    "url": "https://charpeni.com/blog/enforcing-best-practices-with-jev-as-a-linter",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "自然言語で記述されたルールをJevというモデルを用いてLintルールとして実行し、AI時代における開発のベストプラクティスを自動で強制する手法の紹介。",
+    "summaryBody": "従来のASTベースのLintルールでは記述が困難な、意味論的な「ベストプラクティス」を自然言語で強制する方法を解説しています。AIエージェントによるコード生成が増える中、ドキュメントによる指示だけでは不十分であるという課題に対し、著者は『oxlint-plugin-jev』を採用。これは、平易な英語の質問（例：ReactのuseStateをuseBooleanStateに置き換えるべきか？）に対してJevというモデルが「違反の確率」を返す仕組みです。記事では、具体的な設定方法、違反箇所の特定を可能にする改良、そして1実行あたり約0.2セントという極めて低い運用コストについても触れており、AI時代の新しい静的解析のあり方を提示しています。",
+    "topics": [
+      "Oxlint",
+      "Jev",
+      "Linter",
+      "Static Analysis",
+      "AI Code Review"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Enforcing Best Practices with Jev as a Linter"
+  }
+}

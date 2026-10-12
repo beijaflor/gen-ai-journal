@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:32:45.798923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevにゲームをやらせるな！LLMを蒸留してみよう！",
+    "url": "https://zenn.dev/nwn/articles/e49154653ecea9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "低遅延LLM「Jev」の代わりに、LLM（DeepSeek）の判断をLightGBMに蒸留することで、1000倍高速でクリア率100%のスーパーマリオAIを構築した検証記事。",
+    "summaryBody": "この記事では、低遅延を売りとするLLM「Jev」を用いたリアルタイムゲーム制御の限界を指摘し、より効率的な手法として「LLMからの蒸留」を提案・検証しています。具体的には、スーパーマリオブラザーズを題材に、ゲーム状態（RAM情報）をJSON化してLLMに渡し、その判断（操作）を教師データとしてLightGBM（勾配ブースティング決定木）に学習させています。\n\n検証の結果、Jevはネットワーク遅延の影響でリアルタイムプレイでのクリアが困難であったのに対し、DeepSeek-V4.1-Flashを教師として学習したLightGBMモデルは、推論時間わずか0.25ms（Jevの約1000倍の速さ）で動作し、100回連続クリアを達成しました。著者は、自然言語を介さない数値制御タスクにおいては、LLMを直接推論に使うのではなく、高性能LLMを教師とした古典的な機械学習手法への蒸留が、コスト・速度・精度の面で極めて有効であることを示しています。また、Jevの利用規約における蒸留禁止条項についても注意喚起を行っています。",
+    "topics": [
+      "LLM",
+      "知識蒸留",
+      "LightGBM",
+      "機械学習",
+      "ゲームAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

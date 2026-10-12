@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-04T11:28:12.542480+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Liquid AIの「ディシジョンモデル（Decision Models）」：構造化された意思決定に特化した新モデル",
+    "url": "https://docs.liquid.ai/lfm/models/decision-models",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Liquid AIが発表した「d1」は、テキスト生成を行わず、分類・ルーティング・スコアリングといった構造化された意思決定を確率値として直接返す新しいAIモデルです。",
+    "summaryBody": "Liquid AIの「ディシジョンモデル」は、従来のLLMのようにトークンを逐次生成するのではなく、与えられたコンテキストに対して特定の選択肢やスコアを単一の推論ステップで評価する新しいクラスのモデルです。主要なプリミティブとして、はい/いいえの確率を返す「Noul」、複数カテゴリから選択する「Choice」、順序付けられた尺度で評価する「Score」の3種類が提供されています。このモデルの最大の特徴は、生成トークンがゼロであるため、遅延が極めて少なく、計算コストを抑えつつ確率分布に基づいた精度の高い判断が可能な点です。カスタマーサポートのチケット分類、コンテンツモデレーション、優先度評価など、従来のLLMで行っていた「LLM-as-a-judge」的なタスクを、より確実かつ構造化された形で実行するのに適しています。",
+    "topics": [
+      "Liquid AI",
+      "Decision Models",
+      "Machine Learning",
+      "Classification",
+      "API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "Decision Models - Liquid Docs"
+  }
+}

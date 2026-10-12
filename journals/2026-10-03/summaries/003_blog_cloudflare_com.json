@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-09-30T04:23:06.138160+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント向けブラウザへの道：Kitesurfの最新アップデート",
+    "url": "https://blog.cloudflare.com/kitesurf-update/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、AIエージェント専用ブラウザ「Kitesurf」の大幅アップデートを発表し、WebMCP対応やWeb標準テストの合格数拡大、ターミナルでのレンダリング機能などを追加しました。",
+    "summaryBody": "Cloudflare Workers上で動作するAIエージェント向け軽量ブラウザ「Kitesurf」の最新進捗が公開されました。主な変更点として、サイト機能を直接呼び出し可能にするWebMCP (Model Context Protocol for the Web) への対応が挙げられ、AIエージェントが複雑なUI操作を介さずにサイトとやり取りできるようになりました。技術面では、Web Platform Tests (WPT) の合格数が50万件増加し、計73万件を突破するなどWeb標準への互換性が飛躍的に向上。また、JavaScriptエンジン(Boa)とWasm DOM間の連携最適化により、効率的なメモ管理と低レイテンシな実行を実現しています。さらに、レンダリング機能を分離し、Kittyなどの高度なターミナル上でWebページを直接表示・操作できるCLIツールとしての側面も強化されました。現在はベータ版としてBrowser Run経由で利用可能です。",
+    "topics": [
+      "Cloudflare Workers",
+      "AI Agents",
+      "WebMCP",
+      "WebAssembly",
+      "Browser Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "The road to the agentic browser: A Kitesurf update | Cloudflare Blog"
+  }
+}

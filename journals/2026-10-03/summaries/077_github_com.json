@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-02T17:27:35.689798+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オフェンシブ・セキュリティ向けAIモデル：検閲なし・特化型モデルの集約リスト",
+    "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "サイバーセキュリティの実務やレッドチーム活動向けに、検閲解除や特化型の微調整が施された最新のLLMを網羅的にまとめたGitHubリポジトリ。",
+    "summaryBody": "このリポジトリは、サイバーセキュリティの攻撃側（オフェンシブ・セキュリティ）に特化した、検閲なし（Uncensored）のAIモデルや専門的な微調整を施したモデルの情報を集約したカタログです。ペネトレーションテスト、脆弱性調査、マルウェア解析、OSINT分析など、通常のAIモデルでは拒絶されやすいタスクを実行可能なモデルが多数紹介されています。\n\n主な掲載内容と特徴は以下の通りです：\n- **特化型モデル:** DeepHat V2、BugTraceAI、CYBER-FROSTなど、HackerOneのレポートやCVEデータ、ペネテストのログで学習された20種類以上のモデルの仕様（パラメータ数、VRAM要件、コンテキスト長、手法）を掲載。\n- **最新手法の適用:** 教師あり微調整（SFT）だけでなく、モデルの重みから拒絶反応の方向を削除する「Abliteration（アブリテレーション）」手法を用いたモデルを多数紹介。\n- **実用性:** Qwen、Llama、Mistralベースのモデルが中心で、Ollamaやllama.cpp、vLLMなどのローカル環境でのデプロイ方法や、APIプロバイダーの情報も網羅。\n- **機能性:** 単なるチャットだけでなく、ツール呼び出し（Tool Calling）、Nucleiテンプレート生成、PoCコードの作成、チェーンオブソート（CoT）による思考ブロックを備えたモデルも含まれています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "LLM",
+      "ペネトレーションテスト",
+      "レッドチーム",
+      "オープンソースAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models or those fine-tuned for cybersecurity tasks. · GitHub"
+  }
+}
