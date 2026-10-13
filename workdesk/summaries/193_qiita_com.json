@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:02:41.428578+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMのJSON Schemaを厳しくしても業務検証を消せない理由",
+    "url": "https://qiita.com/TechStudioLab/items/0bbf128791023cc90893",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのStructured OutputsなどでJSON Schemaによる構造保証を厳格化しても、日付の前後関係や入力根拠の有無といった業務ロジックの検証は依然としてアプリケーション層で必要であることを解説した記事。",
+    "summaryBody": "LLMからの出力を構造化データとして受け取る際、OpenAIのStructured Outputsなどの仕組みを利用することで、JSONの形式不備、必須キーの欠如、enum外の値といった「構造上の失敗」をほぼゼロにできます。しかし、JSON Schemaだけでは「開始日より期限日が前である」といった複数フィールド間の整合性や、入力テキストに根拠がない値をAIが捏造（補完）してしまうリスクまではカバーできません。記事では、設計において「構造検証（Structured Outputs）」と「業務ルール検証（Domain Validator）」を明確に分離する重要性を説いています。構造検証でモデルとの境界を固定し、後続のドメインバリデータでビジネスロジックの不変条件をチェックすることで、コードの堅牢性と見通しが向上します。",
+    "topics": [
+      "LLM",
+      "JSON Schema",
+      "OpenAI",
+      "Python",
+      "バリデーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

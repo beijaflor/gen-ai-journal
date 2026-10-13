@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:48:17.770313+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでプロジェクト全体を読み込ませるのをやめたら、利用制限が一日中持つようになった",
+    "url": "https://www.makeuseof.com/stopped-claude-code-read-my-whole-project-usage-limit-lasted-all-day/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの使用制限を長持ちさせるため、全ファイルの自動読み込みを避け、検索やスコープ制限を活用してトークン消費を劇的に削減する手法を紹介。",
+    "summaryBody": "エージェント型コーディングツール「Claude Code」において、コンテキストウィンドウの肥大化が利用制限に与える影響を検証した記事です。筆者は、Flaskリポジトリを例に「全ファイルを読み込ませる方法」と「特定の関数を検索（grep）させる方法」を比較しました。その結果、全読み込みではコンテキストが約24万トークンに達し、API換算で0.97ドルのコストがかかったのに対し、必要な箇所のみを特定するアプローチでは約0.32ドルと、コストを約1/3まで抑えることに成功しました。\n\n効率的な運用のための具体的なベストプラクティスとして、以下の5点が挙げられています：\n1. `/context`コマンドで現在のコンテキスト内訳を確認する。\n2. `/usage`で制限までの残り時間やセッションコストを把握する。\n3. ファイル名や関数名を指定し、読み込み前に検索を実行させる。\n4. プロジェクトの設定で不要なディレクトリ（docs、tests等）にアクセス拒否（deny）ルールを設定する。\n5. タスク切り替え時には`/clear`で履歴をリセットする。\n\nツールの利便性に任せてプロジェクト全体を読み込ませるのではなく、意図的にコンテキストを管理することが、プロプランやAPIの制限を回避する鍵となります。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "トークン最適化",
+      "LLM効率化",
+      "コーディングツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "I stopped letting Claude Code read my whole project, and my usage limit suddenly lasted all day"
+  }
+}

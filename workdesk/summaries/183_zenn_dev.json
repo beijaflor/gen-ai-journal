@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:05:23.205777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの軽い作業をCodexへ回す：規則を書くだけでは0件でした",
+    "url": "https://zenn.dev/yamato_snow/articles/claude-code-codex-sol-delegation",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeからCodex CLIへタスクを効率的に委譲するために必要な、ラッパー作成・指示文の最適化・hookによる通知という3つの具体的な実装手法と運用上の注意点を解説しています。",
+    "summaryBody": "Claude Codeで「軽い作業をCodexに委譲する」という規則をCLAUDE.mdに記述しただけでは委譲が発生しなかった経験から、実用的な委譲プロセスを構築する手法を提示しています。解決策として、1) モードや禁止事項を固定するシェルスクリプトのラッパー作成、2) 「許容」ではなく「命令」形式へのプロンプト変更、3) PreToolUse hookを用いた自動通知の仕組みの3点を導入。これにより実務での委譲が動作し始めたことを報告しています。また、セキュリティ対策としてサンドボックスの制限や承認ポリシー設定、自己改変を検知する自動許可モードの挙動、委譲結果を親エージェントが必ず検証する運用の重要性についても詳しく述べています。",
+    "topics": [
+      "Claude Code",
+      "Codex CLI",
+      "AIエージェント",
+      "タスク委譲",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

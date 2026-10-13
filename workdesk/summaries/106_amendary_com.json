@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T19:43:32.397913+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMがあるのに、なぜドキュメントは今でも間違っているのか？",
+    "url": "https://amendary.com/blog/keeping-docs-in-sync-with-code",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMによる文章生成は容易になったものの、コードの変更に合わせて多岐にわたるドキュメントを正確に同期し続けるという本質的な課題と、その解決に向けた設計思想を説いています。",
+    "summaryBody": "LLMの普及により、コードからドキュメントの初稿を作成することは非常に簡単になりました。しかし、真の課題は「継続的なメンテナンス」にあります。コードの変更（Diff）がドキュメントに与える影響は、対象とする読者（エンジニア、顧客、運用担当）やドキュメントの種類によって異なります。単純なベクトル検索やRAGでは、似た記述を見つけることはできても、その内容が現在のコードに対して「正しいか」を判断するコンテキストが欠けています。\n\n著者が開発する『Amendary』は、GitHubとNotionなどのドキュメントツールを直接結びつけ、コード変更に基づいた修正案を「根拠」と共に提示します。単にLLMが文章を書き換えるのではなく、どのリポジトリのどの変更が影響したのかを可視化し、人間がレビューしやすい形で提供することで、ドキュメントの陳腐化を防ぐワークフローを構築しようとしています。自動化にすべてを委ねるのではなく、所有者が「有用で正確な説明」に集中できる環境作りが重要であると強調しています。",
+    "topics": [
+      "LLM",
+      "Documentation",
+      "Software Engineering",
+      "Developer Experience",
+      "Amendary"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "We have LLMs now. Why are the docs still wrong? · Amendary"
+  }
+}
