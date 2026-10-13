@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T20:11:53.828762+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Whistle: 16.9MBの軽量・高速オンデバイス音声認識モデル",
+    "url": "https://cactuscompute.com/blog/whistle",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "わずか16.9MBのサイズで、モバイルやマイコン上で高速に動作する7か国語対応のオープンソース音声認識モデル「Whistle」が公開されました。",
+    "summaryBody": "Cactus社がリリースした「Whistle」は、モバイル、ウェアラブル、ロボティクスなどのエッジデバイス向けに最適化された16.9MBの超軽量音声認識モデルです。Whisper base（145.3MB）と比較して圧倒的に小さく、Apple M4 Pro CPUでのテストでは1,319 tokens/sという驚異的なデコード速度と11msという低レイテンシを実現しています。主要な特徴として、7か国語（英語、ドイツ語、フランス語、スペイン語、イタリア語、オランダ語、ポーランド語）の書き起こし、単語単位のタイムスタンプ、音声エンベディング生成をサポートしています。技術的には、同社のLLM「Needle」と共通のC++エンジンおよびMonarch Hadamard MLP構造を採用しており、デコーダーの深さを調整可能なLaddered Simple Attentionにより、ハードウェア制約に応じた動的なパフォーマンス調整が可能です。PythonライブラリやC++ APIが提供されており、1つのバイナリで音声入力から直接ツール実行（Function Calling）までを完結させることができます。",
+    "topics": [
+      "Speech-to-Text",
+      "Edge AI",
+      "On-device AI",
+      "Open Source Model",
+      "Embedded Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Whistle: Speech to Text in 16.9 MB"
+  }
+}

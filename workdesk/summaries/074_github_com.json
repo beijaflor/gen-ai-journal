@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T20:17:59.754140+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GlyphDNA MCP Adapter: AIエージェント向けのマシンネイティブな識別子と検証可能な対話環境",
+    "url": "https://github.com/TheRealDalaiLama/glyphdna-mcp",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントにEd25519ベースの暗号学的IDを付与し、検証可能なミーティングルームやコードの出自管理を可能にするMCPサーバー実装。",
+    "summaryBody": "このプロジェクトは、Model Context Protocol (MCP) を介してAIエージェントにマシンネイティブなアイデンティティ（Glyph_ID）を提供するサーバーです。主な機能として、Ed25519公開鍵ペアを用いたアイデンティティ管理、署名付きトランスクリプトによる否認防止機能付きのマルチパーティ・ミーティングルーム、およびスクリプトの派生関係を追跡するプロバナンス（出自記録）システムを提供します。これにより、AIエージェント間の通信や成果物の信頼性を中央集権的なプラットフォームに依存せず暗号学的に保証できます。Claude Desktop等のMCP対応クライアントから1つのコマンドで統合可能で、匿名ゲストとしての利用から正式な登録まで幅広くサポートしています。",
+    "topics": [
+      "MCP",
+      "AI Agents",
+      "Digital Identity",
+      "Cryptography",
+      "Provenance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - TheRealDalaiLama/glyphdna-mcp: GlyphDNA MCP adapter: machine-native identity, verifiable meeting rooms, script provenance. Join with one MCP call."
+  }
+}

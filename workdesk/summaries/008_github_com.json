@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:56:50.932928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI、数学研究成果のリポジトリを公開：内部モデルによる700以上の論文とLean証明",
+    "url": "https://github.com/openai/math",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが、未発表の内部モデルを用いて生成した719件の数学論文と、その約4割に対するLean形式証明を公開しました。",
+    "summaryBody": "OpenAIが内部モデル開発の一環として、既存のベンチマークを超えた高度な数学的課題にAIを適用した成果をGitHubで公開しました。このリポジトリには、372のグループに分類された719の論文（マニュスクリプト）が含まれており、数論、幾何学、計算理論などの多岐にわたる分野をカバーしています。\n\n主な特徴は以下の通りです：\n- **形式証明の提供:** 全体の約42%の成果に対して、定理証明支援系「Lean」による形式的な検証コードが付属しています。\n- **膨大な計算資源の投入:** 各成果は、未発表の内部モデルによる平均3時間の「思考計算（thinking compute）」を経て生成されました。\n- **高度な数学的成果:** リーマンゼータ関数の零点非存在領域に関する新たな知見や、CMアーベル多様体におけるホッジ予想の証明など、極めて難度の高い問題へのアプローチが含まれています。\n- **推論プロセスの要約:** 特定の重要な成果については、モデルの思考プロセス（Reasoning traces）の要約も公開されています。\n\nAIが自律的あるいは補助的に、人間レベルの高度な数学研究を遂行できる可能性を提示する貴重なリソースです。",
+    "topics": [
+      "OpenAI",
+      "数学",
+      "Lean",
+      "定理証明",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "GitHub - openai/math"
+  }
+}

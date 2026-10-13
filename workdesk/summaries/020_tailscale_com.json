@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:48:31.477157+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIのCodex CloudがTailscaleに「勝手に対応」：事前連絡なしでの統合の背景と仕組み",
+    "url": "https://tailscale.com/blog/codex-cloud-tailscale",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "OpenAIが発表したCodex Cloudが、事前の提携や連絡なしにTailscaleを唯一のVPNとして統合し、クラウド開発環境からプライベートリソースへのアクセスを可能にしました。",
+    "summaryBody": "OpenAIが新たにリリースした「Codex Cloud」が、Tailscaleとの事前の公式な協力関係なしに、TailscaleをVPNプロバイダーとして標準統合していたことが判明しました。Tailscale側もSlackでのエンジニアの指摘により初めてこの事実を知るという、非常に珍しい形での「Day 0」サポートとなりました。Codex CloudはChatGPTの有料アカウント向けに提供されるクラウド開発環境で、Tailscaleの認証キー（ReusableおよびEphemeralを推奨）を設定することで、ユーザーのTailnet内にあるAPIやテストサービスにアクセス可能になります。現時点ではHTTP/HTTPSおよびプロキシ経由のTCP接続、IPv4のみがサポートされており、UDPやICMP、MagicDNS、SSH、およびインバウンド接続には対応していません。Tailscaleは、エージェント型ツールに対するセキュリティ対策として、タグ付けやアクセス許可（grants）の設定、ネットワークログの監視を推奨しています。",
+    "topics": [
+      "Tailscale",
+      "OpenAI",
+      "Codex Cloud",
+      "VPN",
+      "Zero Trust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "Codex Cloud shipped with Tailscale support. Nobody told us."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:44:58.039911+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "アイデンティティではなく意図を：AIエージェント時代のセキュリティ",
+    "url": "https://www.oreilly.com/radar/intent-not-identity/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが人間のように振る舞い自律的に判断する時代において、セキュリティの焦点は「誰がアクセスしているか」から「どのような意図で実行されているか」へと移行する必要がある。",
+    "summaryBody": "AIエージェントの普及により、インターネット上の非人間トラフィックが人間を圧倒する中、従来の人間か固定ロジックかを前提としたセキュリティモデルが機能不全に陥っています。エージェントは人間のブラウザ環境を模倣するため、技術的な指紋による識別が困難であり、署名による認証だけではプロンプトインジェクション等による悪意ある操作を防げません。本記事では、この課題に対し以下の5つの戦略を提案しています。1. 短寿命の資格情報を用いた実行時のマシンアイデンティティ管理。2. Web Bot Auth等の暗号化による認証。3. ネットワーク層ではなくブラウザ層での意図分類。4. LLM入力チャネルのサニタイズによるインジェクション対策。5. FACT（Framework for Agentic Commerce Trust）のような新しい信頼フレームワークの採用。最終的に、企業は「接続しているのは誰か」ではなく「このリクエストの目的は何か、成功した場合に何が起きるか」を問うべきだと強調しています。",
+    "topics": [
+      "AI Agents",
+      "Cybersecurity",
+      "Identity Management",
+      "Prompt Injection",
+      "AI Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Intent, Not Identity"
+  }
+}

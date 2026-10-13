@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:04:42.843964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Snowflake Agent Identity 徹底解説",
+    "url": "https://zenn.dev/finatext/articles/snowflake-agent-identity-introduction",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SnowflakeでAIエージェントを安全に運用するための「Agent Identity」機能について、識別・監査・保護・制御の4つの観点から詳細に解説し、最適な認証構成を提案する記事です。",
+    "summaryBody": "AIエージェント（Claude Code等）がSnowflakeに接続する際、人間の認証情報を使い回すことで生じるセキュリティ上の課題を解決するための「Agent Identity」機能を網羅的に解説しています。内容は「Identify（識別）」「Audit（監査）」「Govern（データ保護）」「Control（制御）」の4つの柱で構成されています。\n\n1. **識別と監査**: セッションをエージェントによるものと判定し、クエリ履歴やアクセス履歴でエージェント種別を追跡可能にします。\n2. **データ保護と制御**: IS_AGENT_ACTIVATED関数を用いたマスキングポリシーや、Restricted Session Scope (RSS) による権限の上限設定（Permissions Boundaryに近い概念）について詳述。\n3. **認証方式の選定**: 複数の認証パターンを比較し、トレーサビリティとセキュリティのバランスから「PERSONユーザー + Snowflake OAuth (IS_AGENTIC = TRUE)」が最適であると結論付け、具体的な設定例を提示しています。\n\n実務的なDevContainerでの運用方法や、RSS設定時の注意点など、データエンジニアが直面する具体的なユースケースに即したガイドとなっています。",
+    "topics": [
+      "Snowflake",
+      "AI Security",
+      "Agent Identity",
+      "OAuth",
+      "Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

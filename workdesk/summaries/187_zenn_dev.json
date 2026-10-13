@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:04:16.662399+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code Routines で Notion や Slack から AI に仕事を依頼できる仕組みを作った",
+    "url": "https://zenn.dev/terass_dev/articles/6e6562d54d5505",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code Routinesを活用し、NotionやSlackから自然文でAIに実装・調査を依頼してPR作成まで自動完結させる、コスト効率の高いチーム運用基盤の構築事例。",
+    "summaryBody": "Claude Codeの「Routines」機能を活用し、NotionチケットやSlackスレッドからAIエンジニアに業務を依頼できる仕組みの構築・運用事例です。最大の特徴は、APIの従量課金ではなくClaudeサブスクリプション枠のクラウドセッションを利用することで、コストを大幅（月間数千ドル相当を$110程度に）削減している点です。技術的にはCloud Runで構築したリレーサーバーが各利用者のルーティンを呼び出す構成を採り、プロンプト管理をリポジトリ側に集約することで指示の更新を容易にしています。また、NotionとSlack間で会話履歴を同期・転記する仕組みにより、チーム内での透明性と文脈維持の両立を実現しています。クラウドセッション上での動作確認に課題はあるものの、バグ修正や定型作業の自動化において高い実用性を示しています。",
+    "topics": [
+      "Claude Code",
+      "Claude Code Routines",
+      "AIエージェント",
+      "Notion",
+      "Slack連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

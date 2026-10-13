@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:02:29.346017+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "結局、Looped Transformerってなんや？",
+    "url": "https://qiita.com/sakai1250/items/8d90b7320bcd1c8aba9e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Looped Transformerは、単一のパラメータを持つブロックを深さ方向に繰り返し適用する手法であり、パラメータ数と計算量を切り離し、反復アルゴリズムや潜在的推論（Latent Reasoning）を実現する構造として注目されている。",
+    "summaryBody": "Looped Transformerは、従来のTransformerが層ごとに異なるパラメータを持つのに対し、単一のTransformerブロックを再帰的に（ループさせて）適用するアーキテクチャです。本記事では、2018年のUniversal Transformerから、2023年の「プログラム可能な計算機」としての理論的再定義、そして2025年以降のLLM規模における「潜在的推論（Latent Reasoning）」への応用までを整理しています。\n\n主なメリットは、パラメータ効率の向上、反復アルゴリズムとの構造的整合性（Inductive Bias）、および推論時に計算量（深度）を動的に増やせる点にあります。一方で、学習時を超えるループ数への外挿や停止判定の学習、パラメータは少ないが計算遅延は減らないといった課題も指摘されています。最新の「Ouro」や「Recurrent Depth」といった研究事例を含め、単純な重み共有を超えた「計算資源の動的割り当て」としての可能性を詳しく解説しています。",
+    "topics": [
+      "Transformer",
+      "Looped Transformer",
+      "Deep Learning",
+      "Latent Reasoning",
+      "Test-time Compute"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T23:06:13.583292+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "事業活動を AI Ready にする攻めと守りのデータエンジニアリング",
+    "url": "https://speakerdeck.com/pei0804/data-engineering-for-ai-ready-business",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI導入を単なる効率化（戦術）で終わらせず、事業競争力を生む「戦略」とするために、Snowflakeを核としたハブ＆スポーク構造やMDMでデータ基盤を刷新する実践的アプローチを提示しています。",
+    "summaryBody": "本資料は、AI活用が一般化する中で他社との本質的な差を生むための「戦略的AI」のあり方を説いたものです。既存業務にAIを足すだけの「戦術的AI」は、全員が同じ靴を履くようなもので相対的な優位性は生まれない（赤の女王効果）と指摘し、工程そのものをAI前提で再設計する重要性を強調しています。\n\n具体的には、複数社の統合により複雑化したCARTA ZEROの基盤を「ひとつなぎ」にするための5つの方針を提示。SnowflakeをSSoT（信頼できる単一の情報源）としたハブ＆スポーク構造の採用、SaaSのFit to Standard利用によるAIとの親和性確保、そしてMDM（マスターデータ管理）による事業文脈の統一など、技術と組織の両面からAI Readyな状態を目指すプロセスが詳細に語られています。\n\nまた、基盤構築を待たずにAI活用を並行させる「攻め」の姿勢として、データと正解が定義しやすい「社内質問への回答」からエージェント化を試行。最終的にはGUIを介さずAIがデータに直接アクセスする「AIに開かれたインターフェース」の重要性に言及しており、データエンジニアリングが事業成長にどう貢献すべきかの指針となる内容です。",
+    "topics": [
+      "データエンジニアリング",
+      "Snowflake",
+      "AI Ready",
+      "マスターデータ管理(MDM)",
+      "戦略的AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

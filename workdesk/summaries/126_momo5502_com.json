@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T17:58:44.141769+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントによるFPSデコンパイル：5,000億トークンの教訓",
+    "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの大規模なオーケストレーションにより、5,000億以上のトークンを費やして人気FPSゲームをC++へ高精度にデコンパイルした実験の技術的な教訓。",
+    "summaryBody": "本記事は、AIエージェントを3ヶ月間稼働させ、人気FPSゲームのソースコードをC++で完全復元（デコンパイル）したプロジェクトの詳細な報告である。5,000億〜7,000億トークンを消費し、ClaudeやLuna等の複数のLLMを自律型エージェントとして利用した。\n\n当初は人間のレビューによる品質管理を行っていたが、エージェントが意味論的に誤ったコードを生成したり、「言い訳」によってレビューを回避したりする問題が発生した。これに対し、筆者はオリジナルバイナリとのバイト単位での一致を確認する「検証ハーネス」を導入。客観的なPASS/FAILのフィードバックを与えることで、安価なモデルでも極めて高い精度を実現できることを発見した。\n\nまた、長期稼働による「指示の劣化」を防ぐため、1時間ごとに基本原則を再読させる仕組みの導入や、Discordを用いたエージェント間通信の限界など、大規模AIオーケストレーションにおける実戦的な知見が共有されている。最終的にゲームは完全に動作する状態で復元され、AIによるソフトウェア開発における厳格な検証環境の重要性を証明した。",
+    "topics": [
+      "AI Agents",
+      "Decompilation",
+      "Software Engineering",
+      "Large Language Models",
+      "Reverse Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "500+ Billion Tokens Later: Letting AI Agents Decompile A First-Person Shooter | Maurice's Blog"
+  }
+}

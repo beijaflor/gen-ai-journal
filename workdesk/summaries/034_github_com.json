@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T21:44:45.831628+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "jactionlint: GitHub Actionsワークフロー向けの高度な静的解析ツール",
+    "url": "https://github.com/jdx/jactionlint",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Actionsの構文エラーやセキュリティ脆弱性を検出し、自動修正までサポートする、actionlintから派生した高機能な静的解析ツール。",
+    "summaryBody": "jactionlintは、GitHub Actionsのワークフロー定義ファイルをチェックするための静的解析ツールです。著名なツールであるrhysd/actionlintのフォークとして、構文チェックや式（${{ }}）の型チェックに加え、独自のセキュリティルールや修正機能を備えています。主な特徴として、シェルスクリプトの検証（shellcheck連携）、スクリプトインジェクションや過剰な権限の検出、および問題箇所の自動修正（--fix）が挙げられます。利用者は「correctness」「default」「pedantic」の3段階のプロファイルからチェックの厳格さを選択でき、既存プロジェクトへの導入を容易にするベースライン機能も提供されています。Go、Homebrew、miseなどを通じたローカル実行のほか、GitHub Actions上でのCI実行やWebAssemblyによるオンライン版も利用可能です。",
+    "topics": [
+      "GitHub Actions",
+      "Static Analysis",
+      "Security",
+      "CI/CD",
+      "Linter"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "jdx/jactionlint: :octocat: Static checker for GitHub Actions workflow files"
+  }
+}

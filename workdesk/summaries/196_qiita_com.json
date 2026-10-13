@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:01:58.318302+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の WebFetch は、長いページの10万字より後ろを読まずに「書いていない」と答えていた",
+    "url": "https://qiita.com/suwa_nobu/items/35a1824f5b1d41caa10f",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのWebFetch機能が10万文字制限により内容を黙って切り捨てていた挙動が2.1.290で改善され、オフセット読み込みに対応したものの、コストが数倍に増加することを実証。",
+    "summaryBody": "Claude Code 2.1.289以前のWebFetchツールには、Webページの先頭10万文字以降を黙って切り捨ててしまい、検索対象が後半にある場合に「存在しない」と誤回答する致命的な挙動があった。本記事では、2.1.290へのアップデートでこの制限がどのように修正されたかを詳細に検証している。\n\n最新版（2.1.290以降）では、読み飛ばした範囲の通知とオフセット指定による再試行が可能になり、長いドキュメント（例：93万文字のCHANGELOG）も最後まで読み取れるようになった。しかし、その代償として要約用モデル（Claude 4.5 Haiku等）の実行回数が増えるため、10万文字以上のページを全読した場合のAPI費用は約6倍、処理時間は約3.8倍に増加する。\n\n「書いていない」というAIの回答が、コンテンツの不在なのか、ツールの読み取り制限によるものなのかを正確に判断するための重要な知見を提供している。特に「〇〇はあるか？」という形式の質問において、旧バージョンが非常にリスクが高いことが浮き彫りになった。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "WebFetch",
+      "AIツール検証",
+      "LLM制限"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T15:58:14.509956+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026 年 10 月前半の LLM 利用状況",
+    "url": "https://voluntas.ghost.io/2026-10-first-half-llm/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "2026年10月時点でのGPT 6.1やDeepSeek V4.1等の活用状況、Ollama Cloudを中心としたAPI運用、およびローカルLLMによる自動レビュー体制を詳解する。",
+    "summaryBody": "2026年10月の激動するLLM利用環境を記録したレポート。サブスクリプション面では、Ollama Cloudのチームプランを主軸にDeepSeek V4.1 FlashやGLM 5.3 Flashを運用し、時差を利用したコスト最適化を図っている。また、GPT 6.1 Sol Maxを利用可能なCodex（ChatGPT Business Premium）やCursorを併用。開発環境では、独自に拡張したDeepSeek Harness (DSH) をエージェントとして活用している。特筆すべきはローカルLLMの運用で、DGX Spark互換機2台にDeepSeek V4 Flash Vision Expをデプロイ。GitHub Actionsと連携し、24時間体制でコードやイシューの自動レビューを行う実用的なワークフローを構築している。ハードウェアの温度管理やコンテキスト調整など、安定稼働のための具体的レシピも示されている。",
+    "topics": [
+      "LLM",
+      "DeepSeek",
+      "Ollama Cloud",
+      "GPT-6",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}
