@@ -195,7 +195,6 @@
 - [x] 037. https://ghuntley.com/replaced/
 - [x] 036. https://zenn.dev/muit_techblog/articles/6ea28887c79457
 - [x] 035. https://speakerdeck.com/terurou/ai-kudou-kaihatsu-no-jidai-ni-nata-node-toyota-seisan-houshiki-kara-minaosu
-- [x] 034. https://github.com/jdx/jactionlint
 - [x] 033. https://speakerdeck.com/pei0804/data-engineering-for-ai-ready-business
 - [x] 032. https://future-architect.github.io/articles/20261009a/
 - [x] 031. https://claude.dev/blog/building-effective-agent-automations/
