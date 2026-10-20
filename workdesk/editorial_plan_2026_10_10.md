@@ -124,12 +124,12 @@ Anthropic が利用規約を改訂し、Claude への「残酷な行為」の禁
 
 ---
 
-### Theme 7: OpenAI安全リーダーの連続辞任、収益200億ドル下振れとAI株下落
+### Theme 7: OpenAI安全リーダーの連続辞任、収益見通しの下振れとAI株下落
 
 **Articles (IDs):** 002, 050, 110, 062, 103
 
 **Theme Introduction:**
-OpenAIをめぐる組織と市場の両面で動揺が表面化した。安全性責任者の辞任と「文化は壊れている」という警告（当事者の論考とGuardian報道）、解雇された研究者による疑惑否定と「萎縮効果」の指摘、サム・アルトマンの「多少の不都合は許容すべき」という発言、そして年換算収益が従来予測を200億ドル下回ったことを受けたNvidia・Oracle等のAI株下落を収録する。
+OpenAIをめぐる組織と市場の両面で動揺が表面化した。安全性責任者の辞任と「文化は壊れている」という警告（当事者の論考とGuardian報道）、解雇された研究者による疑惑否定と「萎縮効果」の指摘、サム・アルトマンの「多少の不都合は許容すべき」という発言、そして年換算収益が従来報道を下回ったことを受けたNvidia・Oracle等のAI株下落を収録する。
 
 **Editorial Notes:**
 - 002: The Atlantic — 元安全性責任者「OpenAIを辞めた理由」— リード候補
@@ -272,7 +272,7 @@ After approval:
 
 ---
 
-## Assembly Strategies (STEP_07)
+## ASSEMBLY STRATEGIES (STEP_07)
 
 Pattern selection per theme for STEP_08. Transitions are starting points, not
 scripts; all arcs are grounded in the actual article content (no manufactured

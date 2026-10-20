@@ -52,7 +52,7 @@
 - [ ] 047. https://www.telegraph.co.uk/business/2026/10/02/anthropic-lobbied-pope-to-argue-ai-conscious-being/
 - [ ] 053. https://www.404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet/
 
-## Theme 7: OpenAI安全リーダーの連続辞任、収益200億ドル下振れとAI株下落
+## Theme 7: OpenAI安全リーダーの連続辞任、収益見通しの下振れとAI株下落
 
 - [ ] 002. https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/
 - [ ] 050. https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken
