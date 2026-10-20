@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: "summarize-json.prompt — Layer-② LLM-as-a-Judge rubrics (judge_subset fixtures only)"
+
+# Judge scores are ADVISORY until calibrated against human labels
+# (evals/calibration/ — LLMOps doc §4.4: never gate on an uncalibrated
+# judge). Run with --repeat 3 (npm run eval:judge) to expose grader
+# variance before trusting a verdict.
+
+prompts:
+  - id: file://prompts/build_prompt.py:build_current
+    label: current
+
+providers:
+  - id: google:gemini-3-flash-preview
+    config:
+      apiKeyEnvar: GEMINI_API_KEY
+      generationConfig:
+        response_mime_type: application/json
+      responseSchema: file://response-schema.json
+
+tests: file://tests/generate_tests.py:generate_judge_tests
+
+defaultTest:
+  options:
+    # Pin the grader to Gemini — promptfoo's default grader is an OpenAI
+    # model and this repo only holds a Gemini key.
+    provider: google:gemini-3-flash-preview
+  assert:
+    - type: llm-rubric
+      value: file://assertions/rubrics/faithfulness.txt
+      metric: judge_faithfulness
+      threshold: 0.7
+    - type: llm-rubric
+      value: file://assertions/rubrics/thesis_anchor.txt
+      metric: judge_thesis_anchor
+      threshold: 0.7
+    - type: llm-rubric
+      value: file://assertions/rubrics/editorial_quality.txt
+      metric: judge_editorial_quality
+      threshold: 0.7
+
+outputPath: results/latest-judge.json

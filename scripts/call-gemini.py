@@ -302,7 +302,7 @@ def fetch_url_content(url: str, timeout: int = 30) -> str:
         logging.error(error_msg)
         return f"[ERROR: {error_msg}]"
 
-def _build_url_mode_prompt_with_text(url: str, article_text: str, script_dir: str) -> str:
+def _build_url_mode_prompt_with_text(url: str, article_text: str, script_dir: str, prompt_path: Optional[str] = None) -> str:
     """Assemble the URL-mode JSON prompt with externally supplied article text.
 
     Issue #141: the URL-mode pipeline (URL pinning, originalTitle enforcement,
@@ -320,8 +320,13 @@ def _build_url_mode_prompt_with_text(url: str, article_text: str, script_dir: st
     The caller is responsible for url pinning / language invariants /
     schema validation in the post-processing layer — those run uniformly
     on whatever this function produces.
+
+    ``prompt_path`` overrides the template location; the eval harness
+    (evals/) uses it to render candidate prompt variants through the
+    exact production assembly path.
     """
-    prompt_path = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
+    if prompt_path is None:
+        prompt_path = os.path.join(script_dir, '..', 'prompts', 'summarize-json.prompt')
     if not os.path.exists(prompt_path):
         raise FileNotFoundError(f"Prompt template not found: {prompt_path}")
 
