@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:55:18.193534+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文章で要件定義するのをやめた。AIでモックを先に作ったら、認識ズレが実装前に全部見つかった",
+    "url": "https://qiita.com/kazuki_ogawa/items/f1a15a199d9f91fe6080",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI（Claude Code）によりモック制作コストが激減したことを活用し、文章の前に高精度なモックを提示することで認識ズレを早期発見する新しい開発プロセスを提唱。",
+    "summaryBody": "従来の「文章で要件定義をしてから実装する」プロセスでは、同じ文章でも人によって解釈が異なり、完成後に「思っていたのと違う」事態が発生しやすい。本記事では Claude Code 等のAIコーディングツールを用いて、先に「本物そっくりのモック」を作成し、視覚的に仕様を詰める5ステップを解説している。1. データの持ち方に影響する分岐のみ先に決める、2. 実物のデザイントークンでモックを作る、3. 確認事項を分けて文章化する、4. DB設計は「動き」でレビューする、5. 実装後に仕様がズレたら要件書を更新する、という流れ。これにより、実装前に3回もの認識ズレを濾し取ることが可能になり、開発のスピードと品質が劇的に向上した実体験が語られている。",
+    "topics": [
+      "AI駆動開発",
+      "要件定義",
+      "Claude Code",
+      "開発プロセス",
+      "UI/UXモックアップ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

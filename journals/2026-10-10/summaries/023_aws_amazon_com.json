@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:31:37.024998+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI脆弱性テストハーネスの構築：スキャナーのノイズを削減し信頼性を高める3レイヤー・パイプライン（パート1）",
+    "url": "https://aws.amazon.com/jp/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSは、AIを活用して脆弱性スキャナーのノイズをフィルタリングし、コード構造とインフラ構成の両面から実効性を検証する3層の自動化パイプラインの設計指針を提案しています。",
+    "summaryBody": "従来の脆弱性スキャナーは大量のノイズ（誤検知）を生成し、開発チームの負荷を増大させています。本記事では、この課題を解決するためにAIを組み込んだ「テストハーネス」の構築方法を解説しています。パイプラインは3つの層で構成されます。第1層「複数スキャナーの一致」では複数のツールで妥当性を確認し、第2層「構造検証」ではAST（抽象構文木）を用いてコード上の到達可能性を確認、第3層「デプロイメント・コンテキスト」ではIaC（TerraformやCloudFormation）を参照してWAFやIAMなどの既存の防御策が攻撃を無効化していないかを評価します。この体系的なフィルタリングにより、AIのハルシネーションを抑制しつつ、実効性のある脆弱性のみを特定し、セキュリティ対応の迅速化を実現します。",
+    "topics": [
+      "AWS Security",
+      "Vulnerability Management",
+      "Generative AI",
+      "DevSecOps",
+      "Static Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Building your AI vulnerability harness, Part 1 | AWS Security Blog"
+  }
+}

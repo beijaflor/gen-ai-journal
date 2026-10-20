@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T15:57:09.213689+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIが「MCP Events」を発表：ChatGPTが外部サーバーのイベントをリアルタイムで購読可能に",
+    "url": "https://developers.openai.com/plugins/build/mcp-events",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIは、MCP 2.0を通じてChatGPTが外部サーバーの更新（メッセージ作成やステータス変更等）をリアルタイムで購読し、自動アクションを実行できる「MCP Events」機能を導入した。",
+    "summaryBody": "OpenAIは、Model Context Protocol (MCP)の新機能として、外部システムのイベントをリアルタイムに検知・処理する「MCP Events」を公開しました。これにより、ChatGPTはMCPサーバーからの通知（Webhook）をトリガーにして、「フィードバックをGitHubのプルリクエストに変換する」といったワークフローを自動化できます。\n\n主な技術的特徴は以下の通りです：\n- **MCP 2.0対応**: プロトコルバージョン 2026-07-28 以降が必要です。\n- **主要メソッド**: `events/list`（イベント定義の公開）、`events/subscribe`（購読の開始）、`events/unsubscribe`（購読の停止）の実装が求められます。\n- **セキュアな配送**: Standard Webhooks規格に基づいた署名検証を行い、コールバックURLの検証プロセスが含まれます。\n- **利用環境**: ChatGPT Webの「Work」チャット、またはデスクトップアプリのCloud環境、およびdotsで利用可能です。\n\n開発者はサーバー側にイベント定義を記述し、ChatGPT側でユーザーが「何を見守り、何を行うか」を指示することで、静的なツール呼び出しを超えた動的なエージェント機能を実現できます。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "OpenAI",
+      "Webhooks",
+      "ChatGPT Plugins",
+      "Event-driven Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "MCP Events – Plugins | OpenAI Developers"
+  }
+}

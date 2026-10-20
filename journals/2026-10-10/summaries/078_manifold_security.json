@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T20:16:56.405271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMがマルウェアを判定する際、内部では「道徳的」な処理機構が働いている",
+    "url": "https://www.manifold.security/blog/do-models-consider-morality-malware",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Mixture-of-Experts (MoE) モデルにおいて、コードが悪意あるものか判断するプロセスは、脆弱性や論理性の判断よりも道徳的な問いで使われる内部経路（エキスパート）を強く利用している。",
+    "summaryBody": "本記事は、MoE（混合エキスパート）モデルがコードの「悪意（Malice）」をどのように判断しているかを分析した研究結果を報告しています。調査の結果、OLMoEやDeepSeek-V2-Liteといったモデルは、コードが悪意あるか問われた際、道徳的（Morality）な問いを投げた場合と酷似したエキスパートのルーティング経路を選択することが判明しました。この「道徳経路」は脆弱性や適法性の判断よりも優先的に使用されており、ルーティングを強制的に別の経路（食事や詩など）に入れ替えるとモデルの回答が変化することから、ルーターの選択自体が判断に重要な役割を担っていることが示唆されています。一方で、モデルの作業メモリ（残差ストリーム）内では、道徳的な概念ではなく「マルウェア」や「攻撃者」といった具体的な概念が保持されており、構造的な判断（ルーティング）と意味的な表現が分離して機能している興味深い実態が浮き彫りになりました。",
+    "topics": [
+      "LLM",
+      "Mixture of Experts",
+      "Malware Detection",
+      "Interpretability",
+      "AI Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Models Judge Malware With Their Moral Machinery"
+  }
+}

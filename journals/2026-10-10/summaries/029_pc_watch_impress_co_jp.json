@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T23:06:28.337179+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8-27Bを8GBに凝縮！メモリ16GBのノートで動く「Saluki 27B」",
+    "url": "https://pc.watch.impress.co.jp/docs/news/2147095.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Underdog社が、Qwen3.8-27Bを約2bitへ量子化し、メモリ16GBのノートPCでも動作可能にしたGGUF形式のLLM「Saluki 27B」を公開しました。",
+    "summaryBody": "Underdogが発表した「Underdog Saluki 27B 1.0」は、Alibabaの高性能LLM「Qwen3.8-27B」をベースに、約2bitまで量子化したオープンウェイトモデルです。最大の特徴は、元のファイルサイズ54GBを7.89GB（約1/7）まで削減し、一般的な16GBメモリ搭載のノートPCで動作可能にした点です。オーストリア科学技術研究所（ISTA）のDASLabが公開した量子化技術をベースに独自改良を施しており、標準的なllama.cppでそのまま動作するGGUF形式を採用しています。性能面ではツール呼び出しの精度を重視しており、独自ベンチマークや指示追従能力（IFEval）において、フル精度版を上回るスコアを記録。思考モードも搭載されていますが、高度な数学的推論や複雑なコーディング、文字パズルには課題があることも公開されています。Apache 2.0ライセンスでHugging Faceにて配布されています。",
+    "topics": [
+      "LLM",
+      "量子化",
+      "Qwen",
+      "エッジAI",
+      "Underdog"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

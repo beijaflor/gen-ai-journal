@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T18:59:38.976643+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAIコーディングエージェントはこれほどまでに「無能」なのか？",
+    "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIモデル自体の進化に対し、それをシステムに繋ぎ実行を担う「エージェント」側の設計が非効率で未熟なままである現状を、開発者の視点から鋭く批判する論考。",
+    "summaryBody": "ソフトウェアエンジニアのMichael Lynch氏による、AIコーディングエージェントの現状に対する批判的分析です。筆者は「モデル（知能）」と「エージェント（実行体）」を区別し、現在のボトルネックはエージェント側にあると指摘しています。主な問題点として、並列実行可能なタスクを逐次処理する非効率性、コストや難易度に応じたモデルの自動選択（委任）ができない点、自身の仕様を把握していない点、そしてセキュリティが「AIへの要望」レベルに留まり厳格なサンドボックス化がなされていない点を挙げています。筆者は、人間が読みやすい計画の立案、OSレベルのセキュリティ境界、離席中でも自律動作する「AFKモード」などを備えた『理想のエージェント』の要件を定義し、AI企業がデモ映えやベンチマークを優先し、現場の開発者の生産性を軽視している現状に警鐘を鳴らしています。",
+    "topics": [
+      "Coding Agents",
+      "AI Software Development",
+      "LLM Integration",
+      "Developer Productivity",
+      "Security Sandboxing"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Why Are Coding Agents So Dumb?"
+  }
+}
