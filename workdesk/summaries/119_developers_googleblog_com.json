@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:55:25.606310+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント評価のベストプラクティス：「雰囲気チェック」からの脱却",
+    "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの評価において、主観的な「雰囲気」による確認から、Boolean評価や自動化ツールを用いた定量的・体系的な評価フレームワークへの移行を提案するガイド。",
+    "summaryBody": "AIエージェントは従来のソフトウェアと異なり、出力が正しく見えても内部で無限ループや不要なツール実行、過剰なトークン消費が発生する「サイレントな失敗」が起こり得ます。この記事では、Googleの開発者チームが単なる「雰囲気（Vibe）」での確認を卒業し、確実な評価パイプラインを構築するための3段階のロードマップを提示しています。\n\n1. **Day 0 (CUJとシミュレーション)**: 重要なユーザージャーニー（CUJ）を定義し、ユーザーシミュレーターを用いてトレースを取得。人間の目（Red Pen）で実行過程を精査します。\n2. **Day 1 (Boolean評価と定型化)**: LLMによる曖昧な5段階評価ではなく、「Yes/No」のBoolean評価や、遅延・コスト・トークン消費量などの決定論的なメトリクスを導入します。\n3. **Day 2 (CI/CD統合と監視)**: 評価をCI/CDのプルリクエストゲートに組み込み、パフォーマンスの回帰を防ぎつつ、本番環境のデータを再び評価データセットに還元するループを構築します。\n\nオープンソースの `agent-eval` ツールキットと Gemini プラットフォームを活用することで、オーケストレーション・フレームワーク（LangGraph等）に依存しない標準的な評価が可能になります。",
+    "topics": [
+      "AI Agent Evaluation",
+      "LLM-as-a-Judge",
+      "agent-eval toolkit",
+      "MLOps",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Evaluating AI agents: moving past the vibe check"
+  }
+}

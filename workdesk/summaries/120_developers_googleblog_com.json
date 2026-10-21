@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:27:25.743378+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google CloudのAIエージェント開発を加速する3層構造リポジトリ「google/adk-recipes」の全貌",
+    "url": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudのAgent Platformを支える新しいリポジトリ「adk-recipes」が公開され、基盤パターン、業界特化型スキル、デプロイ可能なサービスの3層構造により、開発者とAIアシスタント双方に最適化されたエージェント構築環境を提供します。",
+    "summaryBody": "google/adk-recipesは、Google CloudのAgents CLI、Agent Garden、Gemini Enterpriseアプリを支える単一のソースオブトゥルースとして設計されたリポジトリです。その構造は3つの層に分かれています。(1)「core/」：長期的な記憶保持やサンドボックス実行などの基盤パターン（Horizonハーネスなど）を提供、(2)「plugins/」：Agent Plugins v1.0.0規格に準拠した、リテール向け製品検索やバーチャル試着などの業界特化型スキルを提供、(3)「contrib/」：これらを組み合わせたエンドツーエンドでデプロイ可能なサービス例を多言語で提供します。最大の特徴は、人間だけでなくAIコーディングアシスタント（Claude Code、Cursor、Windsurf等）が読み取って自動的に利用することを前提に、AGENTS.mdやmanifest.yamlといった機械可読なドキュメントを完備している点です。これにより、開発者は対話形式のインストールや迅速なプロトタイプからプロダクションへの移行が可能になります。",
+    "topics": [
+      "Google Cloud",
+      "AI Agents",
+      "Gemini Enterprise",
+      "adk-recipes",
+      "Agent Plugins"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 90
+    },
+    "originalTitle": "Three layers, one repo: a tour of google/adk-recipes"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:39:52.259009+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Grok Botを仕事の入口にする：Dots・Claude・CodexにつなぐUI/UXと運用設計",
+    "url": "https://qiita.com/noujiru/items/d56eacaf3e1e02be37b3",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Grok Botの直感的なUIを入口とし、Dotsによる文脈管理やClaude/Codexによる実作業を組み合わせることで、再説明のコストを最小化するAIエージェントの運用設計案。",
+    "summaryBody": "本記事は、Grok BotのLINE風UIを「仕事の入口」として活用し、OpenAIのDotsやAnthropicのClaude、GitHub Codex等の複数のAIエージェントを連携させる運用設計を提案しています。\n\n著者は、AIを増やすことによる「伝言係」としての負担増を懸念し、担当（Bot）ごとに役割を明確化することを重視しています。具体的には、Grok Botを受付・調整役、Dotsを過去の文脈や資料の整理役、Claude/Codexを実際のコード修正や検証役として配置する構成を提示。\n\n運用上の肝として、依頼メモに「やりたいこと」「分かっていること」「まだ分からないこと」「返してほしいもの」を明文化し、AI間での引き継ぎ精度を高める手法を解説しています。また、日々のやり取りから「聞き直されたこと」を振り返り、プロンプトやルールを改善し続けるループの重要性についても言及しています。ツール間の自動連携が未実装な段階からでも始められる、人間を介した『手渡し』の運用を現実的な第一歩としています。",
+    "topics": [
+      "AIエージェント",
+      "Grok",
+      "Dots",
+      "運用設計",
+      "UI/UX"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 82
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:49:01.652207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Janas: 高速なC言語製LLM推論エンジン (Qwen3-Next-80Bを32GB RAMで動作)",
+    "url": "https://github.com/prabanta-dev/janas",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Janasは、NVMeストリーミングと投機的デコードを駆使し、メモリ容量を超える巨大なLLMを一般的なノートPCで高速に実行できるC言語製の推論エンジンです。",
+    "summaryBody": "Janas（Janas-LLM）は、外部依存関係のない純粋なC言語で記述された、高効率なLLM推論プラットフォームです。最大の特徴は、32GBのRAMしか搭載していないノートPC上で、48GBサイズのQwen3-Next-80Bモデルを37 tok/s（投機的デコード使用時）という驚異的な速度で動作させる能力にあります。これは、NVMe SSDからMixture-of-Experts (MoE) のエキスパートを動的にストリーミングし、頻繁に使用される重みをメモリにキャッシュする独自設計によって実現されています。CPU（AVX2/VNNI）およびGPU（Vulkan）をサポートし、多くのベンチマークでllama.cppを大幅に上回るパフォーマンスを記録しています。チャット、HTTPサーバー、MCPサーバー、コード補完連携、ベンチマークツールなどの機能を備えており、ローカル環境での大規模モデル運用に特化した設計となっています。",
+    "topics": [
+      "LLM",
+      "Inference Engine",
+      "C language",
+      "MoE",
+      "Local AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - prabanta-dev/janas: 37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than your RAM, pure C, CPU or GPU."
+  }
+}

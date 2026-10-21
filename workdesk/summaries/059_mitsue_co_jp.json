@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:41:33.044876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Python + Cursor CLI + Playwright CLIで、ブラウザ操作の一部をAIに任せる",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202610/16_1717.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "定型的なブラウザ操作はPythonで行い、セレクタ変更が懸念されるフォーム入力などの動的作業のみをCursor CLIとPlaywright CLIを通じてAIに実行させるハイブリッドな自動化手法を解説しています。",
+    "summaryBody": "ウェブブラウザの自動化において、頻繁なページ更新によるセレクタ変更はメンテナンスの大きな負担となります。本記事では、ブラウザの起動やページ遷移といった「安定した部分」を従来のPythonスクリプトで記述し、フォーム入力など「変更の影響を受けやすい部分」をCursor CLIとPlaywright CLIを組み合わせたAIエージェントに任せる手法を提案しています。ChromeのRemote Debuggingポートを利用して外部からブラウザを操作する具体的なコード例とともに、AIの柔軟な解釈力と定型処理の確実性を使い分けることで、自動化のメンテナンス性を高めるアプローチを紹介しています。",
+    "topics": [
+      "Python",
+      "Cursor CLI",
+      "Playwright CLI",
+      "ブラウザ自動化",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

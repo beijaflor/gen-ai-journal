@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:20:46.630738+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Microsoft-Decision-1でAI-OCRの品質ゲートを作ってみた",
+    "url": "https://zenn.dev/headwaters/articles/6e889f79ee9f2e",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Microsoftの新モデル「Microsoft-Decision-1」を用いてOCRの読み取り品質を高速に判定し、低品質データをLLMに渡す前に検知する「品質ゲート」の実装方法と検証結果を解説。",
+    "summaryBody": "Microsoft Foundryから提供された意思決定特化型モデル「Microsoft-Decision-1」をAI-OCRのパイプラインに組み込む手法を紹介しています。OCR（Document Intelligence）の結果をLLMで処理する前に、Decision-1を用いて「読み取り品質が許容範囲か」および「主な問題点」を判定する「品質ゲート」を構築することで、低品質データによるLLMのハルシネーション（もっともらしい誤答）を防止します。検証の結果、Decision-1はGPT-5-miniと比較して約8倍高速（レスポンス中央値0.4秒）であり、構造化された判定を低コストで行えることが示されました。記事では具体的なPython実装コード、プロンプト構成、ラベルを用いた精度検証の結果まで詳細に公開されています。",
+    "topics": [
+      "Microsoft-Decision-1",
+      "Azure AI Foundry",
+      "AI-OCR",
+      "GPT-5-mini",
+      "品質管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

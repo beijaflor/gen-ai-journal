@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:20:30.595042+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント向けAPIを設計して分かった「自由にさせるための制約」",
+    "url": "https://qiita.com/atelier-kame/items/b0c6262a46be8ef416e1",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントにソフトウェアを操作させる際、機能を増やすことよりも、厳格な境界条件と「小さく安定した契約」を設計することの重要性を説いた記事。",
+    "summaryBody": "デジタルサイネージ「Glypha」の開発を通じ、AIエージェント向けAPIにおける設計指針を解説しています。主な気づきとして、AIに自由を与えるには「境界（バリデーション）を厳格にすること」、成功のしやすさより「失敗を明確に伝えること」、そして本体の機能を増やさずともAIが外部で処理を完結させることで用途を拡張できる点を挙げています。従来のユースケース中心の設計ではなく、システムが保証する最小の能力を「契約」として定義し、AIの試行錯誤を助ける予測可能なインターフェースを構築すべきだと論じています。",
+    "topics": [
+      "AIエージェント",
+      "API設計",
+      "LLM",
+      "ソフトウェアアーキテクチャ",
+      "バリデーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

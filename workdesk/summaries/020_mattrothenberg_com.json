@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:50:44.242433+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント時代における「Pure UI」の重要性",
+    "url": "https://mattrothenberg.com/notes/pure-ui-agentic-era/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントがUI開発を主導する時代、UIを状態の純粋関数として設計する「Pure UI」の原則が、見落とされがちなエッジケースの不具合を防ぐために不可欠となっている。",
+    "summaryBody": "Guillermo Rauch氏が提唱した「Pure UI（ui = fn(state)）」の概念を、AIエージェントによる開発の文脈で再解釈した論考です。現代のフロントエンド開発では、権限、課金プラン、機能フラグなどの状態がフックやコンテキストを通じて分散しがちであり、AIエージェントは特定のテスト用アカウント（ハッピーパス）のみを確認して「修正完了」と報告してしまうリスクがあります。筆者は、表示に関わる状態を明示的な引数（input）として抽出し、複数の状態を同時にレンダリングして比較可能な状態にすることを提唱しています。Storybookのような「アートボード」形式で全ての状態を可視化することで、AIが生成したコードがViewer権限なのに削除ボタンを表示してしまうといった、エッジケースのバグを人間が即座に検知できるようになります。AIによる開発の信頼性を高めるためには、単なるテストコード以上に「UIを状態の投影として明示的に扱う」アーキテクチャが重要です。",
+    "topics": [
+      "Pure UI",
+      "React",
+      "AIエージェント",
+      "状態管理",
+      "フロントエンドアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Pure UI in the Agentic Era | Matt Rothenberg"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:42:56.453918+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Konnect: KiCAD 10向けAIアシストPCB設計プラグイン (Rust製MCPサーバー)",
+    "url": "https://github.com/mixelpixx/Konnect",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "KiCAD 10での回路図・基板設計をClaude等のLLMから直接操作可能にする、Rust製のネイティブプラグイン兼MCPサーバー。",
+    "summaryBody": "Konnectは、KiCAD 10に対応したAIアシスト型の基板（PCB）設計ツールです。Rustで開発された単一のバイナリとして動作し、Model Context Protocol (MCP) を介して、ClaudeなどのAIアシスタントに228種類におよぶ設計ツール（回路図作成、レイアウト、配線、DRC/ERC、製造用データ出力、JLCPCB部品検索など）を公開します。\n\n前身のプロジェクトから大幅に刷新されており、KiCAD 10の公式IPC API（NNG + Protobuf）を採用することで、リアルタイムかつUndo/Redoが可能なPCB編集を実現しています。また、回路図編集には独自のS式エンジンを用い、アトミックな書き込みでファイル破損を防止します。LLMのコンテキスト消費を抑えるためのツールセット動的ロード機能や、設計の自動チェック・監査機能も備えており、AIによる自律的なハードウェア設計に向けた強力なインフラを提供します。",
+    "topics": [
+      "KiCAD",
+      "PCB Design",
+      "MCP",
+      "Claude",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - mixelpixx/Konnect: AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary exposing 217 schematic, layout, routing, placement, design-review, and manufacturing tools to Claude, or the LLM of your choosing"
+  }
+}

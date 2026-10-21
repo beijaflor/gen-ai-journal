@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:31:34.604897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント開発ループ：AI時代におけるコード品質管理の再定義",
+    "url": "https://haydenbleasel.com/writing/ultracite",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントがコード編集と静的解析・テストを高速に繰り返す「エージェント開発ループ」の概念と、それを支える厳格かつ高速な開発環境の必要性を提唱する。",
+    "summaryBody": "1978年に誕生したLintの歴史から説き起こし、AIエージェントが開発の主体となる時代におけるコード品質チェックの在り方を論じています。\n\n### エージェント開発ループの核\n人間が手動で行うには煩わしい「厳格なコードチェック」を、AIエージェントに自律的に実行・修正させるサイクルを指します。エージェントが人間へコードを渡す前に、高速なフィードバックループ（編集→静的解析→型チェック→テスト）を回すことで、信頼性の高いアウトプットを実現します。\n\n### 重要な3つの要素\n1. **高速性**: エージェントを待たせないために、ESLintからOxlintのような超高速ツールへの移行が不可欠です。\n2. **厳格性**: 人間が嫌う複雑度チェックやソート順などのルールをあえて有効化し、エージェントの出力を型システムやルールで縛ることで、人間によるレビュー負荷を軽減します。\n3. **回避の防止**: `as any`や`@ts-ignore`といったエージェントによる「逃げ」を禁止し、型の安全性やセキュリティチェック（Ghosts of Departed Proofsなど）を強制する仕組みを導入します。\n\n最終的に、開発者はエージェントが「正しく作ったか」の確認に集中できる環境を構築することが、今後のソフトウェア開発の鍵になると述べています。",
+    "topics": [
+      "AI Agents",
+      "Software Development Lifecycle",
+      "Linting",
+      "TypeScript",
+      "Ultracite"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "The agentic development loop"
+  }
+}

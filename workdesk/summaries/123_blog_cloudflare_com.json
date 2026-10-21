@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:26:43.711291+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare LogpushのTransformers機能：エクスポート前のログフィルタリング、整形、編集が可能に",
+    "url": "https://blog.cloudflare.com/transformers-on-logpush/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、SQLクエリを使用してログのエクスポート前にデータのフィルタリング、秘匿化、構造変換をリアルタイムで行える新機能「Transformers」をLogpushに導入しました。",
+    "summaryBody": "Cloudflareは、ログ転送サービス「Logpush」において、エクスポート前にログを直接加工できる「Transformers」機能を一般公開しました。従来、SIEMやストレージに転送した後に必要だった不要データの除去（ヘルスチェックの除外など）、機密情報の秘匿化、スキーマの整形を、転送パイプライン内でSQLを用いて直接実行できるようになります。技術的には、Rust製の高速クエリエンジン「Apache DataFusion」とメモリフォーマット「Apache Arrow」を、Go言語で構築された配信サービス「Bufstream」にインプロセスで組み込んでいます。これにより、外部サービスへのネットワーク呼び出しを回避し、毎秒1億件以上のレコードを処理する高スループットな環境でも信頼性と低レイテンシを維持しています。本機能はFree、Pro、Business、Enterpriseの全プランで利用可能で、ダウンストリームのストレージコスト削減と分析の効率化に寄与します。",
+    "topics": [
+      "Cloudflare",
+      "Logpush",
+      "Apache DataFusion",
+      "Apache Arrow",
+      "可観測性 (Observability)"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Filter, reshape, and redact logs before export with Transformers"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:19:12.955832+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "claude -p を無人で動かして分かった 6 つのこと。Discord のメンションを先読みさせる道具を作った",
+    "url": "https://qiita.com/umezu_y/items/4a8a01a79e91a72f9294",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code (claude -p) を定期実行して Discord のメンションを自動仕分けするツールを構築し、セキュリティ対策や認証管理、API 節約術など無人運用で得た 6 つの実践的なノウハウを紹介した記事。",
+    "summaryBody": "Claude Code (`claude -p`) をバッチ処理や定期実行で活用する際の実践的な知見をまとめた記事です。Discord のメンションを 2 分おきに監視し、内容を「返信の下書き」「スタンプで十分」「対応不要」などに仕分けるツールを題材に、以下の 6 点を解説しています。\n\n- **セキュリティ**: メンション本文によるプロンプト・インジェクションを防ぐため、AI に与えるツールの権限を絞り、外部送信などの重要処理は Python 側で制御する。\n- **リソース管理**: 2 分おきの見回りは軽量な Python で行い、新着がある時のみ AI を起動してトークン消費を抑える。\n- **認証と課金**: 環境変数の API キーによる意図しない従量課金を防ぐ方法や、長期有効なトークンを用いた安定稼働の手法。\n- **エラーハンドリング**: 利用枠切れや API 障害時にリトライ回数を無駄に消費しないための判定ロジック。\n- **デバッグと可視化**: 無人実行されたセッションをデスクトップ版 Claude に取り込み、後から判断の理由を確認できるようにする方法。\n\nWindows 環境でのコマンド実行の注意点や、Discord のセルフボット禁止規約を遵守するための設計（ボットによる読み取り専用）など、実用性の高い情報が網羅されています。",
+    "topics": [
+      "Claude Code",
+      "Discord",
+      "Python",
+      "LLM",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

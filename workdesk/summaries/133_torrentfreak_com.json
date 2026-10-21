@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:24:24.283409+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用したトレント検索サイト「TorrentClaw」—ダウンロード内容の検証でマルウェアを排除",
+    "url": "https://torrentfreak.com/ai-built-torrent-site-looks-inside-downloads-to-catch-fakes-and-malware/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIで構築された新興トレント検索エンジン「TorrentClaw」は、ダウンロード内容の一部を解析してマルウェアや偽の動画ファイルを自動検知する機能を搭載している。",
+    "summaryBody": "AI（Claude CodeやローカルLLM）を基盤に開発された新しいトレント検索エンジン「TorrentClaw」が、セキュリティに特化した新機能を公開しました。核となる「TrueSpec」機能は、トレントの冒頭10〜20MBを自動的にダウンロードして解析し、動画のメタデータが正確か、あるいは悪意のある実行ファイルが含まれていないかを検証します。特に、本物のVLCメディアプレーヤーを囮にして悪意のあるDLLを読み込ませる「DLLハイジャッキング」の手口を数多く特定し、ユーザーに警告を発しています。また、このサイトはMCP（Model Context Protocol）サーバーを提供しており、ClaudeやCursorなどのAIアシスタントから直接検索・取得が可能です。運営面でも著作権削除要請の処理にAIを導入するなど、AI技術をサイトの隅々にまで統合しています。",
+    "topics": [
+      "AI",
+      "トレント",
+      "マルウェア検知",
+      "サイバーセキュリティ",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 80
+    },
+    "originalTitle": "AI-Built Torrent Site Looks Inside Downloads to Catch Fakes and Malware"
+  }
+}

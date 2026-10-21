@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:43:55.430063+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用したハードウェアのリバースエンジニアリング：Linuxドライバ開発の新たな手法",
+    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI（Claude）を活用してWindows上の動作ログを解析・比較することで、Linux用のスキャナドライバやMIPIカメラドライバを効率的に開発・修正した手法の紹介。",
+    "summaryBody": "Red HatのChristian F.K. Schaller氏が、AI（主にClaude）を利用してLinux向けのハードウェアドライバを開発・修正した実践的な事例を報告しています。従来のリバースエンジニアリングは、バスの通信ログ（16進数ダンプ）を人間が数週間かけて分析する過酷な作業でしたが、AIはこの「退屈で膨大なパターンの解析」に非常に適していることが示されました。具体的には、KVM仮想マシン上で公式のWindowsドライバを動かし、ホスト側からUSB通信（usbmon）をキャプチャ。その正常な動作ログをAIに読み込ませ、Linux側の不完全なドライバの挙動と比較させることで、レジスタ設定の誤りや不足している初期化コードを特定しました。この手法を用いて、Plustek製のフォトスキャナや、最新のThinkPad X1 Carbonに搭載されたMIPIカメラの画質問題（ゲイン調整やホワイトバランスの不備）を解決するパッチの作成に成功しています。氏は、ハードウェアの挙動を観察して構成データを抽出するこの「hw-harness」アプローチが、文書化されていないデバイスのドライバ開発を大幅に加速させると述べています。",
+    "topics": [
+      "AI",
+      "Linux Kernel",
+      "Reverse Engineering",
+      "Claude",
+      "Device Drivers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 60,
+      "overall": 92
+    },
+    "originalTitle": "Using Artificial Intelligence to reverse engineer hardware"
+  }
+}

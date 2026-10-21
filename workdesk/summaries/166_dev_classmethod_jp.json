@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:16:39.705772+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「知識の地図を描く ─ オントロジーとは何か？」というタイトルで DevelopersIO 2026 Sapporo に登壇しました #devio2026",
+    "url": "https://dev.classmethod.jp/articles/20261009-devio2026-ontology/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに業務上の正しい判断をさせるための「コンテキストレイヤー」として、オントロジーの役割、他技術との違い、AWS Context Ontology Acceleratorによる実証結果を解説したレポート。",
+    "summaryBody": "AIエージェントが「SQLは正しいのに業務的には誤った回答」をする問題を防ぐため、データの背後にある意味（コンテキスト）を定義する「オントロジー」の重要性を説いた登壇レポートです。\n\n主な内容は以下の通りです：\n- **コンテキストの4階層**: データカタログ、セマンティックレイヤー、ナレッジグラフ、オントロジーの各役割を整理。オントロジーは「概念・関係・ルール」を機械が検証可能な形で定義する「知識の地図」として機能します。\n- **オントロジーの要素**: RDF/OWL/SHACLなどのW3C標準に基づき、クラス、プロパティ、制約・公理を用いることで、論理推論器による整合性検証が可能になります。\n- **AWS Context Ontology Accelerator (COA) の検証**: OSSであるCOAを用い、LLMがオントロジーを提案し、推論器が検証、人間が承認するフローを実演。検証では、人間が定義した「指標（Tier 1）」を通ることで、単なるRAG（Tier 3）やLLMの生成（Tier 2）よりも高い精度で回答が得られることが示されました。\n- **LLM Wikiとの比較**: Karpathy氏提唱のLLM Wiki（LLM主導の緩い構造）と、オントロジー（人間主導の厳密な枠組み）の使い分けについても言及しています。\n\n結論として、AIに社内データを使わせる際は、まず定義を間違えると困る業務用語（売上高など）から順に機械可読な定義を付与していくアプローチが推奨されています。",
+    "topics": [
+      "オントロジー",
+      "生成AI",
+      "ナレッジグラフ",
+      "AWS Context",
+      "データマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

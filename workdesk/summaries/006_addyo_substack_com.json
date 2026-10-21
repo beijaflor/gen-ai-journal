@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:53:00.982818+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント時代のコード品質管理：人間によるレビューから「制約」による統制へ",
+    "url": "https://addyo.substack.com/p/agentic-code-quality",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが大量のコードを生成する未来では、人間による1行ずつのコードレビューは破綻するため、決定論的な「制約（クオリティゲート）」による自動検証システムの構築が品質維持の鍵となる。",
+    "summaryBody": "GoogleのエンジニアリングリーダーであるAddy Osmani氏は、AIエージェントによる開発が普及する中で、ソフトウェア品質の概念が「人間の査読」から「システム的な制約（Constraints）」へと移行していると論じています。エージェントは1日に数千、数万の変更を生成する可能性があり、人間がそのすべてをチェックすることは不可能です。そのため、ユニットテスト、プロパティテスト、ミューテーションテスト、さらには複雑度やセキュリティといった決定論的なメトリクスを「クオリティゲート」としてCI/CDパイプラインに組み込むことが重要になります。\n\nこのモデルにおいて、品質は「エージェントの周囲にどのような制約を課すか」に依存します。エージェントが提案する変更に対し、環境（OSやハーネス）が即座にフィードバック（バックプレッシャー）を返すことで、エージェントは自律的に修正を繰り返すことができます。人間は将来、1行ずつのコードを読む作業から解放され、代わりに「どのような制約を設定すべきか」「アーキテクチャの意図は正しいか」といった、より高度で主観的な判断（Judgement）に注力することになります。品質管理をスケールさせるには、検証システム自体のキャパシティを向上させるか、エージェントの生成速度を調整する、あるいは品質のバーを動的に変更するといった戦略的なトレードオフが必要になると述べています。",
+    "topics": [
+      "AI Agents",
+      "Software Quality",
+      "Code Review",
+      "Quality Gates",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Agentic Code Quality - by Addy Osmani - Elevate"
+  }
+}

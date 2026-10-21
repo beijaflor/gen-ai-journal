@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:52:03.015821+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Baselineがソフトウェアファクトリ向けのセキュリティ・リファレンスアーキテクチャを公開",
+    "url": "https://socket.dev/blog/agent-baseline-software-factory",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが開発の主体となる「ソフトウェアファクトリ」において、エージェントの外部インフラで4つの境界を強制する新しいセキュリティフレームワーク。",
+    "summaryBody": "AIエージェントによるコード生成が急増する中、Socket、Docker、Barclaysなどの専門家が参加するAgent Baselineは、AI主導の開発環境（ソフトウェアファクトリ）を保護するためのリファレンスアーキテクチャを公開した。本フレームワークの核となるのは「エージェントを信頼しない」という原則であり、エージェント自身の意思決定ループの外側にあるインフラ層で、サンドボックス、ネットワーク、サプライチェーン、ID・アクセスの4つの境界を強制する。特に、エージェントが未承認のパッケージを取得したり、機密情報を用いて外部アクセスを行ったりするリスクに対し、エージェントが設定変更できないプロキシやファイアウォールを通じて「エージェントが提案し、ポリシーが承認し、インフラが強制する」構造を提唱している。",
+    "topics": [
+      "AIエージェント",
+      "サプライチェーンセキュリティ",
+      "セキュリティアーキテクチャ",
+      "DevSecOps",
+      "Socket"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Agent Baseline Publishes Security Reference Architecture for Software Factories | Socket"
+  }
+}

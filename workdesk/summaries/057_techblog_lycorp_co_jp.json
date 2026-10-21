@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:41:59.128914+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セキュリティ業務向けAIエージェント基盤「SAGE」の開発記 第1弾：判断は人間に委ねる設計",
+    "url": "https://techblog.lycorp.co.jp/ja/20261015d",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LINEヤフーが開発した、セキュリティ業務の一次対応や資料整理をAIが行い、最終判断を人間に委ねるマルチエージェント基盤「SAGE」の設計思想と運用体制の紹介。",
+    "summaryBody": "LINEヤフーは、セキュリティ業務の効率化と品質均一化を目的に、AIエージェント基盤「SAGE」を構築しました。従来、担当者はConfluenceやJira、Slackに分散した膨大な規定や過去事例の検索に多大な時間を費やしていましたが、SAGEはこれらを自動収集・整理し、人間が判断を下すための準備を支援します。システムはJiraベースの相談支援、Slackベースの運用案内、Web UIの分析ツールの3つの入口で構成され、いずれも「AIが断定的な回答をせず、確認すべき観点や根拠を提示する」というポリシーを徹底しています。技術面ではLangflowやGPT-4系モデル、MCP（Model Context Protocol）を活用し、RAGによる検索精度とWiki原文のリアルタイム照合を両立。運用チームのフィードバックを即座に反映できるプロンプト分離設計を採用し、人間が品質改善サイクルの中核を担うHuman-in-the-Loop構成を実現しています。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティガバナンス",
+      "LLM",
+      "RAG",
+      "マルチエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

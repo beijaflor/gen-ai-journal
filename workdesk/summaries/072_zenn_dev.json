@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:38:25.204255+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "改めて考える、AIエンジニアリングの今",
+    "url": "https://zenn.dev/r_kaga/articles/2fd185c50cea7c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエンジニアリングが単なる職種から広範なスキルセットへと進化し、評価（Evals）を中心とした開発プロセスやエージェント活用、特定用途向けのファインチューニングが重要視される現状を解説しています。",
+    "summaryBody": "本書は、オライリー『AIエンジニアリング』の翻訳者である著者が、過去1年間のAIエンジニアリングを取り巻く環境の変化を総括した記事です。主なポイントは以下の通りです。\n\n1. **スキルセットとしてのAIエンジニアリング**: Andrew Ngの提唱に基づき、AIエンジニアリングを職種ではなく「AIアプリ構築・デプロイ」「ソフトウェア基礎」「コーディングエージェント活用」「仕様策定」の4つのスキルセットとして定義しています。\n2. **評価（Evals）の中心的役割**: AIの予測不可能な出力を制御するため、機能実装よりも先に評価指標とエラー分析のループを確立することの重要性が増しています。\n3. **開発プロセスのAI化**: AIエンジニアリングの対象がプロダクト内部だけでなく、開発プロセス自体（Software Factory）やコーディングエージェントの活用へと広がっています。\n4. **インターフェースと責任の再定義**: チャットUIから、人がいない間に動く「アンビエントエージェント」や、委任と承認を管理する「Agent Inbox」といった形態へ進化し、責任の所在を明確にする設計が求められています。\n5. **ファインチューニングの再評価**: 独自データを持つ企業が、オープンモデル（Qwen, Kimi等）をベースに特定のボトルネックを解消するための強化学習や微調整を行う動きが本格化しています。",
+    "topics": [
+      "AI Engineering",
+      "LLM Evaluation",
+      "AI Agents",
+      "Software Factory",
+      "Fine-tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

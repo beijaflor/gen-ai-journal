@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:30:11.516865+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "速くて安いAI「Jev」でQAを自動化してみた",
+    "url": "https://tech.every.tv/entry/2026/10/15/125805",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "文章生成を行わず確率的な選択肢のみを返す高速・低コストなAIモデル「Jev」を用いて、iOSアプリの自律的な探索QAツールを構築した技術検証レポート。",
+    "summaryBody": "TypeSafe AIが開発した「System One Model」であるJevを活用した、iOSアプリのQA自動化の試みについての記事です。Jevは一般的なLLMとは異なり、状態と定義済みの質問（noul, choice, score型）を渡すと、回答を確率付きで返す特化型モデルです。1ステップ数百ミリ秒という速さと極めて安価な料金（100万トークンあたり$0.042）が特徴です。\n\n本記事では、iOSシミュレータのアクセシビリティ情報を取得するツール「AXe」とJevを組み合わせたPythonスクリプト「jev-qa」の実装について解説しています。特定のシナリオ検証だけでなく、未踏の画面遷移を優先して巡回する「探索モード」の実装や、Claudeとの速度・コスト・役割の比較が詳細に述べられています。結論として、Jevは「広く速く触って異常を見つける」用途に向いており、Claude等の高度なLLMと使い分けることで効率的なQA体制が構築できることを示唆しています。",
+    "topics": [
+      "Jev",
+      "QA自動化",
+      "iOS",
+      "TypeSafe AI",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

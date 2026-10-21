@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:26:56.913128+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "gdp-ts: TypeScriptでのGhosts of Departed Proofsによるコンパイル時認可検証ライブラリ",
+    "url": "https://github.com/rauchg/gdp-ts/tree/main",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeScriptの型システムを用いて、認可チェックの証拠をコンパイル時に要求することで、権限管理のバグを未然に防ぐ軽量ライブラリとリンターのセット。",
+    "summaryBody": "VercelのCEOであるGuillermo Rauch氏が公開した、TypeScriptで「Ghosts of Departed Proofs (GDP)」パターンを実現するためのライブラリです。この手法では、特定のリソースに対する操作権限（例：管理権限）があることを示す「証明（Proof）」オブジェクトを型として定義します。機密性の高い関数が実行される際に、適切な証明を引数として強制することで、認可漏れやパラメータの取り違えをコンパイルエラーとして検出できます。実行時のオーバーヘッドはほぼゼロであり、ESLint/Oxlintプリセットを併用することで、型キャストによる「証明の偽造」も防止可能です。AIコーディングエージェント向けの指示書（Skill）も含まれており、現代的な開発フローへの統合が考慮されています。",
+    "topics": [
+      "TypeScript",
+      "Authorization",
+      "Type Safety",
+      "Ghosts of Departed Proofs",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - rauchg/gdp-ts"
+  }
+}

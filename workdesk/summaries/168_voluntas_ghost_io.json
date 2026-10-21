@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:16:12.471579+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenCode から Pi への CLI ハーネス移行と LLM 利用環境の整理",
+    "url": "https://voluntas.ghost.io/migrate-opencode-to-pi/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "多機能化が進んだ OpenCode からシンプルさを求めて CLI ハーネスを Pi へ移行し、メインの DeepSeek Harness と使い分ける LLM 運用環境の最適化事例。",
+    "summaryBody": "本記事は、開発ワークフローにおける LLM ハーネスツールの選定と運用の変化を記録したものです。著者は、これまで CLI 用に利用していた OpenCode が v2 へのアップデートでデーモン起動や多機能化が進み、シンプルさを求める自身の用途に合わなくなったことから、より軽量な Pi への移行を決定しました。Pi ではプラグインを最小限（Web検索のみ）に留め、Ollama Cloud 上の DeepSeek V4.1 Flash を利用することで、CLI 特有の「無駄なトークン消費感」を抑えつつ満足のいく操作感を得ています。また、業務の 99% を占めるブラウザベースの作業には引き続き DeepSeek Harness (DSH) の自社フォークを活用。ローカル LLM を用いた自動レビューシステムも OpenCode から DSH へ移行したことで、3時間に及ぶ長時間レビューの安定性が向上したと報告されています。",
+    "topics": [
+      "LLM",
+      "DeepSeek",
+      "CLIツール",
+      "開発環境",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 70,
+      "annexPotential": 85,
+      "overall": 82
+    }
+  }
+}

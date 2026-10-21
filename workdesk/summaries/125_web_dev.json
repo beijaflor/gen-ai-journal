@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:26:16.608294+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを活用してInterop 2027に提案すべきWeb機能を見つけ出す方法",
+    "url": "https://web.dev/blog/coding-agents-interop-proposals",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Interop 2027の提案募集にあたり、AIコーディングエージェントを使用して自社コード内のポリフィルや回避策をスキャンし、優先的に改善すべきWeb標準機能を特定するワークフローが紹介されています。",
+    "summaryBody": "Webプラットフォームの相互運用性を向上させる「Interop 2027」に向けた提案期間（9月23日締切）に際し、開発者が自身のコードベースから効率的に改善要望を特定するための手法を解説しています。主な内容は、AIコーディングエージェント（IDEやターミナル内）に特定のプロンプトを与え、LighthouseのBaseline監査、既存のGitHub提案との照合、および未提案のギャップ（独自実装やライブラリで代用している箇所）を抽出させるというものです。これにより、どの既存提案に賛成票を投じるべきか、あるいは新たに何を提案すべきかを定量的・実務的な視点で判断できるようになります。最終的には、人間が内容を精査した上でコミュニティへフィードバックすることが推奨されています。",
+    "topics": [
+      "Interop 2027",
+      "Web Standards",
+      "AI Agents",
+      "Baseline",
+      "Browser Interoperability"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 82
+    },
+    "originalTitle": "Find features to support for Interop 2027 with your coding agent"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:17:21.936113+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実践！ SRE × AI - ABEMA における AIOps -",
+    "url": "https://speakerdeck.com/tetsuya28/jissen-sre-x-ai-abema-niokeru-aiops",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ABEMAが実践するAIOpsの取り組みについて、AIがシステムを理解するための「データの整備」という泥臭くも重要な基盤投資の重要性と、具体的な障害対応の自動化事例を紹介しています。",
+    "summaryBody": "本資料は、ABEMAにおけるSREチームのAI活用（AIOps）の実践事例をまとめたものです。AIを障害対応に活用する（Bits AIなど）ことで、インシデント起票から10秒後には自動調査が開始され、専門外のエンジニアでも数分で原因特定が可能になる成果を上げています。\n\n特筆すべきは、AIを「銀の弾丸」として導入するのではなく、AIが参照するデータを整えるための泥臭い投資を強調している点です。具体的には、共通SDKの開発、数百のマイクロサービスへの「Unified Service Tagging（service, env, version）」の徹底（網羅率95%以上）、ログとトレースの紐付けなど、オブザーバビリティ基盤の構築に注力してきました。\n\n今後は、システムの状態だけでなく、要件定義やドメイン知識など「人間の中にしかない情報」もAIが扱えるように統合し、自律型AIオーケストレーション基盤への挑戦を目指すとしています。AI時代におけるSREの役割が「人間を助けるためのオブザーバビリティ」から「AIにシステムを理解させるためのオブザーバビリティ」へとシフトしていく視座を提供しています。",
+    "topics": [
+      "SRE",
+      "AIOps",
+      "Observability",
+      "Datadog",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

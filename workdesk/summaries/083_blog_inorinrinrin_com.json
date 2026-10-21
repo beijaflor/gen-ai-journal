@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:35:50.359310+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub Agentic Workflows で issue の triage を自動化しながらいろいろ試してみる",
+    "url": "https://blog.inorinrinrin.com/entry/512918a2-7cf0-f36a-8ac1-db78fea2e289",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Agentic Workflowsを利用してGitHub Issuesのラベル付けを自動化し、AIによる変更理由の記録や信頼度に基づく承認ワークフローの実装手順と注意点を解説した記事。",
+    "summaryBody": "GitHub Agentic Workflowsを用いて、GitHub Issuesのトリアージ（自動ラベル付与とコメント入力）を試行した記録です。主な内容は以下の通りです。\n\n- **セットアップ**: `gh aw` 拡張機能を使用し、Markdown形式の定義ファイルをコンパイルしてGitHub Actionsを構築する手順を紹介。\n- **Staged Mode**: `staged: true` 設定により、実際のリポジトリに変更を加えず実行結果をプレビューする方法を解説。\n- **issue-intent の活用**: AIが下した判断の「理由(Rationale)」と「信頼度(Confidence)」を必須化する設定方法を確認。信頼度に応じて人間が承認または拒否できるフローの重要性に触れています。\n- **考察**: デフォルトのCopilotだけでなくClaudeやGeminiも利用可能。一方で、OSSリポジトリでは意図しないトリガーによる課金リスクがあるため、現状はプライベートリポジトリでの運用が適していると提言しています。",
+    "topics": [
+      "GitHub Agentic Workflows",
+      "GitHub Issues",
+      "AI Agent",
+      "GitHub Actions",
+      "Automation"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

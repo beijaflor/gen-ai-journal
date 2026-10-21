@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:19:25.184207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "EmbeddingGemma2 vs. Gemini Embedding 2：実用的な多言語テキスト・画像検索の比較検証",
+    "url": "https://qiita.com/quan_le/items/3e91d8da1639b00fc877",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GoogleのオープンウェイトモデルEmbeddingGemma 2と商用APIのGemini Embedding 2を、日本語・ベトナム語を含むマルチモーダル検索タスクで比較し、実用的な性能差を検証したレポート。",
+    "summaryBody": "Googleが公開したオープンウェイトモデル「EmbeddingGemma 2」と、マネージドAPI「Gemini Embedding 2」の性能を、768次元の設定で比較検証した記事です。テキスト検索、テキスト・画像相互検索の3パターンにおいて、ベトナム語と日本語のデータセットを用いて精度（hit@k, MRR, nDCG）と推論コストを測定しています。結果として、純粋な精度ではGemini Embedding 2が全指標で優位にあるものの、EmbeddingGemma 2も実用レベル（画像検索のhit@5で95%超）の性能を示しました。GPU環境があればローカルでの高速推論が可能であり、データプライバシーやコスト固定化を重視する場合にはEmbeddingGemma 2が、運用の手軽さと最高精度を求める場合にはGemini APIが適していると結論づけています。",
+    "topics": [
+      "Embedding",
+      "Gemma",
+      "Gemini",
+      "RAG",
+      "Multimodal Search"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 45,
+      "overall": 92
+    }
+  }
+}

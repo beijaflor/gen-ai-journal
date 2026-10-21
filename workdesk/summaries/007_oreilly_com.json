@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:52:48.090353+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リアルワールドの生成AI：Charity Majorsと語るAIのためのオブザーバビリティ",
+    "url": "https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-observability-for-ai-with-charity-majors/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "生成AIによるコード生成の加速がソフトウェアの信頼性に与える影響と、非決定的なAIシステムを管理するためのオブザーバビリティの重要性について解説。",
+    "summaryBody": "Honeycombの共同創設者兼CTOであるCharity Majors氏が、AI時代のソフトウェア開発における「オブザーバビリティ（観測性）」の役割を論じています。AIによってコードの生成コストが「実質無料」かつ瞬時になる一方で、チームがそれらのコードを理解し、検証し、サポートする能力が新たなボトルネックとなっています。\n\nMajors氏は、従来のしきい値ベースのモニタリングではなく、「未知の未知」を探索するためのオブザーバビリティが必要であると強調します。特にAIエージェントのような非決定的なシステムにおいては、より高度な厳格さが求められます。OpenTelemetryを活用してエージェントの意思決定プロセスをトレース化し、人間が単に「ループの中にいる（In the loop）」だけでなく、システムを能動的に理解・制御する「責任ある所有者（Owner on the loop）」として振る舞うことの重要性を説いています。また、インフラ由来のデータとビジネスロジック由来のデータを区別し、後者の「関係性」を維持するためのテレメトリ戦略についても言及しています。",
+    "topics": [
+      "AI Observability",
+      "Generative AI",
+      "Software Engineering",
+      "OpenTelemetry",
+      "Reliability Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Generative AI in the Real World: Observability for AI with Charity Majors"
+  }
+}

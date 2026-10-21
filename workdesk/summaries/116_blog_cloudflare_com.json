@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:28:23.864724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、認証済みボットに対する継続的な説明責任評価システムを発表",
+    "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、認証済みボットがサイト所有者の意図や負荷制限を継続的に尊重しているかを評価・スコア化し、信頼性を可視化する新システムを導入しました。",
+    "summaryBody": "Cloudflareは、認証済みボット（Verified Bots）が「誰であるか」というアイデンティティの確認だけでなく、「信頼できる振る舞いをしているか」を継続的に評価する仕組みを導入しました。このシステムは、ボットがrobots.txtによるクローリング制限を遵守しているか、また過負荷を示すHTTP 429（Too Many Requests）レスポンスに対して適切にリクエスト速度を落としているかを監視します。蓄積されたデータは「信頼バンド（Trust Band）」として可視化され、一過性のエラーではなく持続的な行動パターンに基づいてボットの信頼性が判断されます。これにより、サイト所有者は認証済みであっても行儀の悪いボットを適切に制御できるようになり、健全なWebエコシステムの維持を目指します。",
+    "topics": [
+      "Cloudflare",
+      "ボット管理",
+      "サイバーセキュリティ",
+      "AIクローラー",
+      "Web標準"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Continuous accountability for Verified bots | Cloudflare Blog"
+  }
+}

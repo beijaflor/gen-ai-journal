@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:42:14.723161+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeチームにおけるコードレビューの手法：AIによる大規模開発の品質管理",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude Codeチームが、AIによる膨大なコード生成に対応するため、人間の時間を「希少資源」と位置づけ、リスクに基づいた7層の自動化レビューと人間による最終的な説明責任を組み合わせたワークフローを公開しました。",
+    "summaryBody": "Anthropicが、開発の約90%をAI（Claude）が担うプロジェクト「Claude Code」におけるコードレビューの最適化プロセスを解説しています。主な戦略は、人間のレビューを「最終ゲート」ではなく「継続的な監視」と位置づけ、自動化レイヤーを重ねることで人間が介入すべきリスクの高い変更を絞り込むことです。\n\nプロセスの要点は以下の通りです：\n1. **リスクベースの承認フロー**: AIが変更内容の重要度を分類し、低リスクなら人間不要、高リスクなら2名以上の承認を要求する仕組み。\n2. **多層的なチェック**: AIによる事前検証、複数のエージェントによる並列バグハント、セキュリティ専用レビュー、そして標準的なCIを組み合わせています。\n3. **収束（Convergence）への工夫**: AI作者とAIレビュアーが無限に修正を繰り返さないよう、レビュー回数の上限設定や差分のみの再評価を導入。\n4. **フィードバックループ**: インシデントやリバートが発生するたびに、それを「評価用データ（Eval）」に追加し、自動レビュアーのプロンプトやモデルを日々改善しています。\n\nこれにより、マージされたプルリクエスト数が倍増した一方で、リバート率は40%以上減少するという成果を上げています。人間はアーキテクチャの方向性や責任の所在、非常にデリケートな箇所の精査に集中できる環境を構築しています。",
+    "topics": [
+      "AI-Assisted Development",
+      "Code Review",
+      "LLM Agents",
+      "Software Engineering",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "How the Claude Code team does code review"
+  }
+}
