@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:39:10.131183+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインハーネスを個人開発で組んだ — AI が作る画面のずれを止めるまで",
+    "url": "https://zenn.dev/yoshihiko555/articles/e9801e0ad1efb8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIによるUI生成で発生するデザインの微細な不整合を防ぐため、設計・実装・検査の三段階で構成される自動ガードレール「デザインハーネス」を個人開発に導入した実践事例。",
+    "summaryBody": "AIエージェント（Claude CodeやCodex）を用いたUI開発において、生成ごとに発生する余白や色の「ずれ」を解消する仕組みを解説しています。主な取り組みは3点です。第一に、AIに複数の画像案を出させて方向性を決定し、計測してデザインファイル（.pen）へ転記する「作る」プロセス。第二に、見た目はデザイン、具体的な値はコードを正本（Source of Truth）として分離し、同期テストで不整合を防ぐ「見直す」プロセス。第三に、lint・アクセシビリティ検査・VRT（視覚的リグレッションテスト）をCIに組み込み、AIがデザインから逸脱した際に自動で検知・停止する「守る」プロセス（デザインハーネス）です。特にTailwind CSS v4の@theme機能を活用してAIが勝手な色を使えないように制限するなど、個人開発でも持続可能なAI駆動開発の品質管理手法が示されています。",
+    "topics": [
+      "AI駆動開発",
+      "デザインハーネス",
+      "Tailwind CSS",
+      "Claude Code",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

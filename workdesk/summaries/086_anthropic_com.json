@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:35:08.567202+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicにおけるソース管理の再設計：AIエージェント規模に対応するVCS「Scion」の構築",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、AIエージェントによる爆発的なコード増加に対応するため、Gitの限界を超えた独自の常時オンライン型ソース管理システム「Scion」を開発・移行しました。",
+    "summaryBody": "Claudeによるコード生成の高速化により、1日あたりのマージ数が3万件を超えるなど、従来のGitベースのインフラがボトルネックとなったため、Anthropicは5ヶ月間で新システム「Scion」を構築しました。Scionは「クライアントは常にオンラインである」という前提に立ち、履歴計算やマージ処理をサーバー側に集約するクライアント・サーバー非対称アーキテクチャを採用しています。これにより、Gitミラーリングに比べてインフラ負荷を200分の1に削減し、CIでのチェックアウト速度を2桁向上させました。また、開発プロセス自体にもClaudeをフル活用しており、エンジニアはAIの生成物を監督し、設計レベルの意思決定に集中するスタイルへと移行しています。この取り組みは、AIが開発の主役となる「エージェント・スケール」の時代における、新しいインフラの在り方を提示しています。",
+    "topics": [
+      "VCS",
+      "Engineering Infrastructure",
+      "AI-driven Development",
+      "Scion",
+      "Monorepo"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    },
+    "originalTitle": "Redesigning source control at Anthropic"
+  }
+}

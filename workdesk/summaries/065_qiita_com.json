@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:40:09.243223+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "弾幕シューティングゲームを Microsoft-Decision-1 にやらせてみた",
+    "url": "https://qiita.com/shyamagu/items/b0801dc6016e700d2d61",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoftの判断特化型AI「Microsoft-Decision-1」を用いて弾幕STGを操作させ、データ構造の工夫や判断基準の最適化により1面クリアを達成した検証記録。",
+    "summaryBody": "Microsoftの新しい判断型AIモデル「Microsoft-Decision-1」を、高い即時性が求められる弾幕シューティングゲームの操作に適用した実験記事です。このモデルはLLMと異なり、状況データと質問を渡すと特定の選択肢や確率のみを返す「判断」に特化した性質を持ちます。著者は、ゲーム内の座標情報をJSON化し、17通りの飛行プランに対する『衝突予測リスク』を計算してモデルに提示する構成を採用しました。当初は回避行動を取らなかったAIが、プロンプト上の優先順位付けや入力データの加工（前処理）を改善することで、最終的に1面のボスを撃破するに至っています。文章生成を行わないためプログラム制御が容易である反面、精度の維持には情報の見せ方（コンテキストの整理）が重要であることを示唆しています。",
+    "topics": [
+      "Microsoft-Decision-1",
+      "ゲームAI",
+      "GitHub Copilot",
+      "機械学習",
+      "Azure Foundry"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 86
+    }
+  }
+}

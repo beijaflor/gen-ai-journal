@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:25:09.323155+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "plimsoll: AIエージェント用コード実行サンドボックスと隔離レベル検証",
+    "url": "https://github.com/plimsollmark/plimsoll",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが生成した信頼できないコードを、実行ごとに隔離強度のエビデンスを報告しつつ安全に実行・管理できるサンドボックスサービス。",
+    "summaryBody": "plimsollは、AIエージェントによる自動生成コードを安全に実行するためのオープンソース・サンドボックス環境です。船の「満載喫水線（Plimsoll line）」のように、実行環境の隔離強度を可視化することを重視しており、process、container、kernel、vmの4つのティアで隔離レベルを報告します。リクエスト時に最低限必要な隔離レベルを指定可能で、条件を満たさない場合は実行を拒否する「隔離フロア」機能を備えています。\n\n主な技術的特徴は以下の通りです：\n- **多様なバックエンド**: QuickJS (Wasm)、Docker (runc/gVisor)、E2B (Firecracker)、Kubernetesなどをサポート。\n- **Capability Grants**: サンドボックス内のコードにクレデンシャルを渡さず、ホスト側のブローカーが認証を代行する安全なAPIアクセス制御。\n- **広範なSDK対応**: Vercel AI SDK、Google ADK、CrewAI、Trigger.devといった主要フレームワーク用のツールを提供。\n- **整合性検証**: 実行リクエストと結果のSHA-256ハッシュを記録・署名し、実行の再現性と改ざん検知を保証。\n\n単なる隔離環境の提供に留まらず、AIエージェントの出力がどのような安全基準で実行されたかを明確にする、信頼チェーンの構築を目指したツールです。",
+    "topics": [
+      "AI Agents",
+      "Sandbox",
+      "Security",
+      "Code Execution",
+      "WebAssembly"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - plimsollmark/plimsoll: A sandbox service for running untrusted, agent-authored code that reports the isolation boundary each run executed behind. Lessons, no clone needed: https://plimsollmark.github.io/plimsoll/trainers/ · GitHub"
+  }
+}

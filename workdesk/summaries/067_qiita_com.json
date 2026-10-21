@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:39:39.544918+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini 4 Argonでロボットアームを動かしてみた",
+    "url": "https://qiita.com/kentaro_kawamura/items/118144a5e0c707de12dd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemini 4 Argonの視覚推論能力と物理シミュレータMuJoCoを組み合わせ、自然言語の指示からロボットアームに正確なPick & Place動作を行わせる検証。",
+    "summaryBody": "2026年10月に発表された新モデル「Gemini 4 Argon」をロボット制御に活用する実験記事です。Geminiを高レベルな「認知・判断（タスクプランナー）」、Pythonコントローラを低レベルな「動作実行（軌道生成・物理演算）」として役割分離したハイブリッドアーキテクチャを提案しています。MuJoCoシミュレータ上のカメラ画像から、Geminiが「一番左にあるキューブ」といった曖昧な指示を解釈し、操作対象と目的地をJSON形式で出力。その判断に基づき、Franka Pandaアームが逆運動学を用いて物理法則に従った正確な搬送を行うことに成功しました。VLM（視覚言語モデル）が物理世界のコンテキストを理解し、実世界の行動を導くエージェントとして高い有効性を持つことを示しています。",
+    "topics": [
+      "Gemini 4 Argon",
+      "ロボティクス",
+      "MuJoCo",
+      "Physical AI",
+      "マルチモーダルAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:29:48.386555+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIで引ければいい、から始めた運用ナレッジ",
+    "url": "https://tech-blog.rakus.co.jp/entry/20261016/claude-code",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "属人化していた運用ナレッジをAI（Claude Code/MCP）で検索可能にし、開発の概要設計フローに運用影響確認を自動で組み込んだ実践的な取り組みの紹介。",
+    "summaryBody": "長年提供されているサービスにおいて、特定のメンバーに依存していた運用知識の属人化を解消するための取り組みが解説されています。Claude CodeとMCP（Model Context Protocol）サーバを組み合わせたRAG（検索拡張生成）構成を構築し、単にツールを用意するだけでなく、AIが自発的にナレッジを参照するようにシステムプロンプト（案内文）を最適化。さらに、開発の概要設計段階でAIが運用影響をチェックする工程をワークフローに組み込むことで、手戻りの削減と運用の安定化を図っています。設計文書と運用手順書の用語の差異を自然文への変換で解決する工夫など、実務への導入における具体的な試行錯誤が共有されています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "MCP (Model Context Protocol)",
+      "RAG",
+      "運用自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}

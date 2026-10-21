@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:58:48.993382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Netflixにおける「LLM-as-a-Judge」のライフサイクル：大規模な構築、アライメント、モニタリング",
+    "url": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508?gi=669157fdc00c",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Netflixは、レコメンデーション理由の生成品質を担保するため、人間による評価を基盤としたLLM評価モデル（LLM-as-a-Judge）のライフサイクル管理と、推論過程の一致を重視した独自のチューニング手法「RART」を公開しました。",
+    "summaryBody": "Netflixの技術ブログによる本記事では、大規模なLLM生成コンテンツを評価するための「LLM-as-a-Judge」の体系的な運用フレームワークが解説されています。単にモデルを導入するだけでなく、以下の4つのフェーズからなるライフサイクルが重要であると提唱しています。\n\n1. **Birth（誕生）**: 専門家によるガイドライン作成と、境界線上の事例や敵対的な事例を含む高品質なベンチマークデータセットの構築。\n2. **Training（訓練）**: 独自の「Reasoning-Aligned Rubric Tuning (RART)」を用い、正解ラベルだけでなく「なぜその評価をしたか」という推論（Rationale）を人間に一致させるように評価ルーブリックを反復的に改善します。\n3. **Deployment（展開）**: 評価モデルを、低品質な出力を遮断する「ゲート」と、生成モデルへ改善フィードバックを与える「批評家」の2つの役割で運用します。\n4. **Monitoring（監視）**: 毎週人間によるレビューを実施し、データのドリフト（質の変化）を検知。人間同士の不一致度を基準に評価モデルの精度を測定します。\n\n結論として、評価の自動化は責任の放棄ではなく、人間が基準を定め、監視し続ける「Human-in-the-Loop」の設計こそが、大規模運用における信頼性の鍵であると強調しています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "Netflix",
+      "LLM評価",
+      "Human-in-the-Loop",
+      "レコメンデーションシステム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale"
+  }
+}

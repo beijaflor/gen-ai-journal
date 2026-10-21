@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:21:14.677473+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strands BoxをEC2 Macで実測 — Dogwoodポリシーが効く経路を仕分け",
+    "url": "https://zenn.dev/nttdata_tech/articles/fc2d097da71f30?redirected=1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWSが公開したAIエージェント用サンドボックス「Strands Box」の実効性を、EC2 Mac上での詳細な検証を通じて、ポリシー制御（Dogwood）とOS層の境界線を明確にした技術レポート。",
+    "summaryBody": "AWSのAIエージェント向けサンドボックス「Strands Box」と、そのポリシー言語「Dogwood」の挙動をEC2 Mac（M1インスタンス）環境で詳細に検証した記事です。主な焦点は、設定ファイル（box.toml）によるOS層の隔離と、Dogwood（policy.dw）によるポリシー層の判定が、実際の実行経路ごとにどのように機能するかを「仕分ける」ことにあります。\n\n検証の結果、DogwoodポリシーはStrands ShellやPython実行環境（Monty）を経由する操作を厳密に制御できる一方、`shell:spawn`で許可されたホストプログラムが直接行うファイル操作はポリシー判定をバイパスし、OS層の権限設定に依存することが実証されました。また、過去の操作履歴に基づく「 temporal rules（読み取り後の送信禁止や書き込み回数制限）」の有効性を確認したものの、Strands ShellとMontyでは記録されるイベント属性（descriptor_issued等）が異なるため、ルール設計には注意が必要であると指摘しています。さらに、EC2環境特有のIMDS（インスタンスメタデータ）保護についても、組み込みコマンドとホストプログラムでの挙動の差異を明らかにしており、多層防御の重要性を説いています。",
+    "topics": [
+      "Strands Box",
+      "Dogwood",
+      "AI Agent",
+      "AWS",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

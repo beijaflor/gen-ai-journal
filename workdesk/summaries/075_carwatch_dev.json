@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:37:43.416206+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CarWatch: Raspberry PiとローカルLLMで車をチャットエージェント化する完全オフラインのオープンソースプロジェクト",
+    "url": "https://carwatch.dev/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Raspberry Pi 5上で35BパラメータのローカルLLMを動かし、OBD-II経由で車のデータを読み取ってチャットに参加させる、プライバシー重視の完全オフライン車載AIエージェント。",
+    "summaryBody": "CarWatchは、Raspberry Pi 5を使用して車を対話可能なチャットエージェントに変えるオープンソースプロジェクト（AGPL-3.0）です。OBD-IIポートから取得したリアルタイムのテレメトリ（速度、回転数、バッテリー残量など）と車載マニュアルのデータを基に、35BクラスのローカルLLMが車自身の「声」として家族のチャットルームなどで応答します。クラウドを一切介さない完全オフライン動作が特徴で、プライバシーを保護しながら、音声での質問応答や、異常検知時の自発的な報告、他家製エージェントとの連携を実現します。現在はMercedes E 300eなどの実車で動作検証されており、CANバスのデコードや機能拡張に協力するコミュニティを募集しています。",
+    "topics": [
+      "Raspberry Pi",
+      "Local LLM",
+      "OBD-II",
+      "Edge AI",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "CarWatch — your car as a chat-room agent, fully offline"
+  }
+}

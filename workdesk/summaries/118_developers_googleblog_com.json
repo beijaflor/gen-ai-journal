@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:27:57.234006+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Apigee hybridでのMCPサポート開始：自社クラスターで動作するAIエージェント用ツール",
+    "url": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Apigee hybrid 1.17.0においてModel Context Protocol (MCP)がサポートされ、既存のAPIをAIエージェント用ツールとして自社Kubernetes環境内でセキュアに公開可能になりました。",
+    "summaryBody": "Googleは、Apigee hybrid 1.17.0にてModel Context Protocol (MCP)のサポートをリリースしました。これにより、OpenAPI 3.0仕様からAIエージェントが発見・呼び出し可能な「MCPツール」をコードレスで生成し、自社のKubernetesクラスター内で実行できるようになります。MCPデータプレーンがローカルで動作するため、リクエストトラフィックが外部に出ることなく、データレジデンシ要件を満たしながらAIエージェントを活用できます。既存のOAuth 2.0、APIキー検証、クォータ制限といったガバナンス機能をそのままエージェントツールに適用できるほか、API insightsによる分析やW3Cトレースコンテキストを用いた分散トレーシングにも対応しており、運用の透明性とセキュリティを両立しています。",
+    "topics": [
+      "Apigee",
+      "Model Context Protocol (MCP)",
+      "AI Agents",
+      "Kubernetes",
+      "API Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster"
+  }
+}

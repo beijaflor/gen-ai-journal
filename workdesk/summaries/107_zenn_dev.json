@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:30:27.161128+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【LocalLLM】Claude Codeの代わりになる？精度・同時人数・費用を検証",
+    "url": "https://zenn.dev/solvio/articles/6d374a9224327a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIA B200を用いてQwen3.5等のLocalLLMを動かし、Claude Codeと比較した際のコーディング精度、同時利用人数（最大16人）、コストを実証した検証結果。",
+    "summaryBody": "本記事は、NVIDIA B200 GPU 1枚を用いてLocalLLM（Qwen3.5-122Bおよびgpt-oss-120b）を運用し、Claude Codeの代替としての実用性を検証したレポートである。主な検証結果として、Qwen3.5は小規模なバグ修正課題において18回中17回合格し、Claude Opus 5.5（全問合格）に近い精度を示した。同時接続数の検証では、vLLMの効率的な推論エンジンにより、1枚のB200で16人程度まで実用的なレスポンス速度を維持できることが判明した。運用コストは月額約87万円（レンタル換算）と推定され、1人あたり月額1.4万円程度となる計算である。データ秘匿性が高く社外送信が制限される組織にとってLocalLLMは有力な選択肢となるが、Claudeと比較して処理時間が約2.6倍かかる点や、要約タスクにおけるハルシネーションの発生率がやや高いといった課題も考慮する必要がある。",
+    "topics": [
+      "LocalLLM",
+      "Claude Code",
+      "NVIDIA B200",
+      "Qwen3.5",
+      "vLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:52:17.131163+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicが「OSS Scanner」を公開、AI（Mythos）によるオープンソース脆弱性診断を無料提供",
+    "url": "https://socket.dev/blog/anthropic-oss-scanner",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、最強のClaude（Mythos）モデルを用いてオープンソースプロジェクトの脆弱性を自動検出し、再現手順と修正案を維持管理者に提供する無料サービス「OSS Scanner」を開始しました。",
+    "summaryBody": "Anthropicが提供を開始した「OSS Scanner」は、AIによる脆弱性診断と修正プロセスを加速させるオプトイン形式の無料サービスです。最新モデル「Mythos」を活用し、参加プロジェクトに対して脆弱性の報告だけでなく、再現方法や修正パッチの提案を直接送信します。これまで同社は6ヶ月間で29,000件以上の脆弱性候補を特定しましたが、手動レビューのボトルネックにより維持管理者への報告が遅れていました。この新サービスにより、検証を待たずに報告を受け取ることが可能になります。\n\n実績として、MozillaのFirefoxチームが初期評価で271件の脆弱性を修正したほか、PostgreSQLやwolfSSLでも有効性が確認されています。維持管理者は、GitHubを通じて自身のプロジェクトの構成や脅威モデル（threat_model.md）を提供することで、AIの誤検知を減らしつつ精度の高い監査を受けることができます。一方で、AIによる大量の報告が維持管理者の負担になる懸念（High-Quality Chaos）に対し、AnthropicはPythonやApache、OpenSSFといった財団への資金提供を行い、エコシステム全体の支援も進めています。",
+    "topics": [
+      "Anthropic",
+      "Claude Mythos",
+      "Open Source Security",
+      "Vulnerability Management",
+      "AI for Cybersecurity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Anthropic Gives Open Source Maintainers a Fast Track to Mythos Vulnerability Findings"
+  }
+}

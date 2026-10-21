@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:18:30.144923+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実体験から学ぶ分析エージェントの開発と運⽤",
+    "url": "https://speakerdeck.com/recruitengineers/data-engineering-summit2026-zenyasai-yamamoto",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "リクルートにおけるGoogle CloudのADKを活用した分析エージェントの開発事例で、コスト最適化や敵対的レビューによる品質担保、運用の効率化について詳説している。",
+    "summaryBody": "リクルートのデータ推進室が開発した、自然言語でデータ要求を行いBigQueryから自動でSQL生成・実行・可視化を行う「分析エージェント」の実践的な知見をまとめた資料。技術スタックにはGoogle CloudのAgent Development Kit (ADK)を採用し、既存のデータ閲覧ポリシーをOAuth連携で維持するセキュアなアーキテクチャを構築。コスト削減のために不要ツールの除外やクエリのスキャン量制限を実装し、品質面では別モデルによる「敵対的レビュー」を導入して因果関係の誤認などの分析エラーを防止している。さらに、利用ログ自体をエージェントに分析させることで改善サイクルを効率化している点が特徴的である。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "BigQuery",
+      "Google Cloud",
+      "データエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

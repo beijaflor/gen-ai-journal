@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:46:01.159732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "QuEraがAIエージェントを活用した量子コンピュータのレーザー制御自動化に成功",
+    "url": "https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and-tune-our-quantum-computers-lasers",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "QuEraは、AIエージェント（Claude）とModel Hardware Standard (MHS) を用いて中性原子量子コンピュータのレーザー再ロックとチューニングを自動化し、復旧時間を分単位から秒単位へ短縮しました。",
+    "summaryBody": "中性原子方式の量子コンピュータを安定稼働させるには、レーザー周波数を極めて高い精度で維持（ロック）する必要があります。従来、外部要因でこのロックが外れた際の復旧は専門家による手動作業に依存しており、スケーラビリティの課題となっていました。QuEraは、Anthropicらが提唱する『Model Hardware Standard (MHS)』を活用し、AIエージェントが実機ハードウェアを自律的に制御・試行錯誤できる環境を構築しました。その結果、再ロックの成功率は99.3%に達し、人間の専門家が5〜10分かけていた復旧作業を最短1秒以下、最長でも14秒以内に短縮することに成功しました。さらに、AIによるチューニングは専門家が見逃していた残留ノイズも特定・抑制し、ノイズレベルを5分の1に低減しています。この成果は、将来的な論理量子ビットの長時間演算に必要な高い稼働率と、専門家不在の環境でも運用可能な量子コンピュータの普及に向けた重要な一歩となります。",
+    "topics": [
+      "中性原子量子コンピュータ",
+      "AIエージェント",
+      "レーザー制御",
+      "Claude",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Holding the Light: Teaching an AI to Lock and Tune our Quantum Computer’s Lasers"
+  }
+}

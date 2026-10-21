@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:42:41.703668+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropic Consoleの国際化入力バグによりクレジットカードに100倍の金額が誤請求される",
+    "url": "https://news.ycombinator.com/item?id=50121562",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Anthropic Consoleの数値入力における国際化対応の不備により、5.04ドルのチャージが504ドルとして誤認識され、確認画面なしに即時決済されるトラブルが発生した。",
+    "summaryBody": "Anthropic APIの管理画面において、数値入力フィールドの国際化（i18n）対応の不備に起因する重大なバグが報告されました。コスタリカのユーザーが5.04ドルをチャージしようとした際、地域設定（カンマを小数点に利用）と実際の入力（ドットを利用）の不整合により、システムが小数点を無視して504.00ドルを即時請求しました。\n\n本件の主な問題点は以下の3点です：\n1. **バリデーションの欠如**: 入力値のサニタイズが不十分で、曖昧な入力に対してエラーを返さず100倍の金額として処理された点。\n2. **UXの設計ミス**: 重大な金融取引において、最終確認画面（確認モーダル）なしにシングルクリックで決済が完了する設計になっていた点。\n3. **サポートの自動化問題**: 当初の返金依頼がAIボットによって機械的に拒否され、人間による対応を得るためにHacker Newsへの投稿という「公開処刑」を余儀なくされた点。\n\nAnthropicのスタッフが本スレッドで不備を認め修正を約束しましたが、決済システムの信頼性や過度なサポート自動化のリスクについて多くの批判が集まっています。",
+    "topics": [
+      "Anthropic",
+      "i18n",
+      "UI/UX Bug",
+      "Payment Systems",
+      "Customer Support"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Anthropic Console overcharged my card 100x due to internationalization input bug | Hacker News"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:42:25.867418+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeがECDSA標準曲線のシード値の起源を解明",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicの研究用モデルClaudeが、25年以上にわたり謎とされていたNISTのECDSA標準曲線のシード値が、Unixタイムスタンプをシードとした古いC言語ライブラリの乱数生成器から生成されていたことを突き止めた。",
+    "summaryBody": "暗号コミュニティで長年議論の的となっていたNIST（米国国立標準技術研究所）のECDSA標準曲線におけるシード値の由来について、AnthropicのClaudeがその謎を解明した。これまでNSAによるバックドアの存在が懸念されていたが、Claudeは1990年代のC言語標準ライブラリにある疑似乱数生成器`lrand48`の出力パターンを認識し、格子問題解決アルゴリズム（LLL）を用いて内部状態を復元。その結果、シード値が1997年から1998年のUnixタイムスタンプをシードとした極めて単純な方法で生成されていたことを証明した。この発見により、シード値が意図的に脆弱な曲線を選ぶために細工されたものではないことが裏付けられ、既存の暗号標準への信頼性が高まった。また、一部の曲線におけるベースポイントの生成プロセスも特定されている。",
+    "topics": [
+      "ECDSA",
+      "暗号理論",
+      "NIST",
+      "サイバーセキュリティ",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Claude reveals ECDSA curve origins"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:51:21.815024+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NetflixによるAIコーディングエージェントの効率化：JetBrainsのヘッドレスIDEエンジンの活用事例",
+    "url": "https://blog.jetbrains.com/ai/2026/10/how-netflix-made-ai-coding-agents-more-efficient/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NetflixはJetBrainsのIntelliJ IDEAエンジンをヘッドレスでAIエージェントに統合し、Java/Kotlinコードの解析精度を高めることで、トークン消費と実行時間を20〜30%削減した。",
+    "summaryBody": "Netflixは、Claude CodeやCodexなどのAIコーディングエージェントが、コンパイル済みのライブラリ（JAR）境界を越えたJava/Kotlinコードのナビゲーションに苦労している課題を特定した。この解決策として、IntelliJ IDEAを支えるコードインテリジェンスエンジンをヘッドレス（IDE非起動）状態でエージェントに統合した。Netflixは、LSP（Language Server Protocol）の呼び出しを効率化するための独自のデーモンとCLIを構築し、インデックスのウォームスタートを実現した。実環境のコードベースを用いたベンチマークの結果、エージェントはより少ないツール呼び出しで正解に到達できるようになり、効率性は平均20〜30%、最大で65%向上した。この成果は、AIエージェントにとって単なるテキスト位置ベースのLSPではなく、プログラム構造を深く理解する「コードエンジン」の重要性を裏付けている。",
+    "topics": [
+      "AI Coding Agents",
+      "Netflix",
+      "JetBrains",
+      "IntelliJ IDEA",
+      "LSP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "How Netflix Made AI Coding Agents More Efficient with JetBrains IDE Intelligence"
+  }
+}

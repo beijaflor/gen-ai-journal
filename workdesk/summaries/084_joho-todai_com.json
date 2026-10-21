@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:35:37.923289+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トーバルズ、「説いた通りにやった」。LLMでLinuxの13年来のバグ4件を発見",
+    "url": "https://joho-todai.com/torvalds-llm-linux-13-year-old-bugs-fixed/",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "リーナス・トーバルズ氏がClaude CodeなどのLLMを用いてLinuxカーネルの難解なコードをリファクタリングし、2013年から13年間埋もれていた計4件のバグを発見した。",
+    "summaryBody": "リーナス・トーバルズ氏は、Linuxカーネルの連想配列ライブラリ（assoc_array）において、報告された修正パッチが難解で理解できなかったため、LLMを活用してコードの可読化とテストハーネスの作成を行いました。その過程で、2013年の初回コミット時から存在していた、これまで13年間発見されなかった計4件のバグを特定することに成功しました。トーバルズ氏は単にAIに解決策を求めるのではなく、コードを「読める状態」に整理させ、自身でテストを回すことで問題を特定しています。また、同週末にはClaude Codeと協働してページキャッシュの参照カウント競合を解消する新パッチの作成も進めており、AIをデバッグから新機能設計まで幅広く活用し始めていることを示しました。氏は「AIは道具であり、判断と責任は人間にある」という自身の哲学を体現しています。",
+    "topics": [
+      "Linux",
+      "Linus Torvalds",
+      "LLM",
+      "Claude Code",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

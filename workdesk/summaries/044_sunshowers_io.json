@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:45:06.149596+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicの新VCS「Scion」はMononokeから強い影響を受けている",
+    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicが発表した新しいバージョン管理システム「Scion」の設計が、元Metaのエンジニアが開発した「Mononoke」に酷似しており、適切なクレジットが欠如していることを指摘する批判的論評。",
+    "summaryBody": "### 概要\nMetaでバージョン管理システム（VCS）サーバー「Mononoke」の開発に携わったエンジニアが、Anthropicの最新VCS「Scion」における「派生データ（derived data）」を用いた設計が、Mononokeのアイデアを強く模倣していると指摘しています。\n\n### 詳細\n- **技術的類似性**: Scionがblame操作などを効率化するために導入した「derived data」の概念は、著者が2022年にMononokeについて説明した設計資料と極めて類似しています。\n- **クレジットの欠如**: AnthropicはSaplingについては言及しているものの、設計の根幹を成すMononokeについては触れていません。著者は、ClaudeのようなLLMが既存のオープンソース設計を学習・模倣する現代において、これは盗作に近い行為であると批判しています。\n- **LLM時代の設計倫理**: LLMが過去の優れた設計を簡単に引用できるようになった今、先人への適切なクレジット表示は、以前よりも容易であり、かつ重要になっていると結論づけています。\n\n### 結論\n設計が採用されること自体は「優れたアイデアの普及」として歓迎しつつも、LLMを介したシステム設計において「誰の成果に基づいているか」を明示する責任を開発者は負うべきだとしています。",
+    "topics": [
+      "Anthropic",
+      "Scion",
+      "Version Control System",
+      "Mononoke",
+      "AI Ethics"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 4,
+      "mainJournal": 70,
+      "annexPotential": 90,
+      "overall": 80
+    },
+    "originalTitle": "Anthropic's Scion is heavily inspired by Mononoke"
+  }
+}

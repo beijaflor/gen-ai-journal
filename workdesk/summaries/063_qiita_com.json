@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:40:34.654966+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにssh先端末を操作させる #ClaudeCode",
+    "url": "https://qiita.com/kzmasa/items/d1e793705b50f00d9da4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "SSH接続済みのscreenセッションをAIエージェントに共有させることで、外部ツールをインストールできないリモート環境を安全かつ効率的に操作する手法。",
+    "summaryBody": "商用環境やステージング環境など、直接AIツールを導入できないリモートサーバーにおいて、AI（Claude CodeやCodex）に操作を代行させるための具体的なワークフローが解説されています。\n\n主な仕組みは、ローカルのWSL2上で`screen`セッションを開始し、そこで対象サーバーへSSHログインした状態を作っておくというものです。AIはこのscreenセッションにアタッチして操作を行います。Claude Codeが現状PTY（擬似端末）をサポートしていない問題に対しては、`ptyai`というMCPを導入することで解決しています。\n\nまた、AIが暴走しないための安全策として、`AGENTS.md`を用いた詳細な指示（コマンド実行前の`uname -n`によるホスト確認や実行前の承認フローなど）が紹介されており、人間とAIが同じセッションを共有してリアルタイムに監視・介入できる実用的な手法となっています。パスワード入力などの機密操作を人間が行い、その後の調査や設定をAIに任せるといった、シームレスな「人間とAIの交代」が可能です。",
+    "topics": [
+      "Claude Code",
+      "SSH",
+      "GNU screen",
+      "AIエージェント",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:40:47.443082+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ちょっぴりお馬鹿な国産LLM Sarashinaの速さの秘密",
+    "url": "https://qiita.com/kotowazaman/items/5e2ec143012d661f1e0a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SB Intuitionsが開発した国産LLM「Sarashina3」の圧倒的な応答速度（TTFT）の要因を、ネットワーク遅延とサーバー側処理の観点からClaude等と比較検証した解析記事。",
+    "summaryBody": "国産LLM「Sarashina3」の体感的な速さを解明するため、Claude 5.5系やGLM-5.3と比較検証を行っています。主な知見は以下の3点です。第一に、最初の1文字が出るまでの時間（TTFT）が約0.1秒と極めて速く、Claude Haikuの約7分の1です。この高速化の要因は国内サーバーによるネットワーク特性が3〜5割、残りはサーバー側の処理速度に起因します。第二に、書き出し後の生成速度（文字/秒）ではSarashina3 miniはHaikuに劣るものの、nanoモデルはHaikuの3〜4倍という圧倒的な速度を記録しました。第三に、トークナイザーの効率が非常に高く、日本語をClaudeの約半分のトークン数で表現可能です。結論として、Sarashinaの「速さ」の正体は物理的な距離と最適化された初期応答にあると分析されています。",
+    "topics": [
+      "LLM",
+      "Sarashina3",
+      "ベンチマーク",
+      "TTFT",
+      "国産AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 85
+    }
+  }
+}

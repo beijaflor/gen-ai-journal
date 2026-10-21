@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:39:23.024449+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Whisperの文字起こしにJevで話者ラベルを付けようとしたら、Jevは要らなかった",
+    "url": "https://zenn.dev/ik11235/articles/whisper-jev-speaker-label",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Whisperの文字起こしにJev（TypeSafe System One）で話者ラベルを付与する試行錯誤の結果、声紋分析のみで高い精度が得られ、既存のWhisperXで十分であるという結論に至った技術検証。",
+    "summaryBody": "### 概要\nWhisper単体では不可能な「話者特定」を、声紋分析と確率的推論モデル「Jev」を組み合わせて実現しようとした検証記事です。最終的に、声紋分析のみで文字数ベース93.5%の精度が得られ、さらに既存ツール「WhisperX」の存在に気づくという、開発における「車輪の再発明」と「不要な技術の削ぎ落とし」を学べる内容となっています。\n\n### 主な検証内容\n- **実装アプローチ**: `whisper-cli`のJSON出力（トークン時刻付き）を句読点で区切り、`sherpa-onnx`による声紋重心と、Jevによる文脈判定を組み合わせて話者を推定。\n- **Jevの役割**: 文脈から「この発言は誰か」を確率で返す。短い断片（「はい」「が」など）の補完には有効だったが、全体精度としては声紋分析を上回る劇的な効果は薄かった。\n- **WhisperXとの比較**: pyannote-audioを内蔵するWhisperXの方が多機能だが、今回の自作スクリプトの方がCPU環境での実行速度や、合成音声（VOICEVOX）に対する精度で勝る面もあった。\n\n### 結論\n「安いから・新しいから足しておく」ではなく、必要最小限の構成で目的を達成すべきという教訓を提示しています。ソースコードも公開されており、Whisperでの話者分離を自作したい人にとって有用な知見が凝縮されています。",
+    "topics": [
+      "Whisper",
+      "話者分離",
+      "Python",
+      "Jev",
+      "WhisperX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

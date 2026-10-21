@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:34:54.972356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM の 23 秒を 0.3 秒にした — decision-only モデル Jev を日本語校正プラグインに実測投入した話",
+    "url": "https://zenn.dev/bamboo_nova/articles/c6176164dcffd0",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "日本語校正プラグイン「meiseki」の文脈判断に非生成型の判定特化モデルJevを導入し、精度を保ちつつ処理速度を約77倍（23秒から0.3秒）へ高速化した実測レポート。",
+    "summaryBody": "### 概要\n自作の日本語校正プラグイン「meiseki」において、LLM（Claude）が行っていた文脈判断プロセスを、TypeSafe AIの判定特化型モデル「Jev」に置き換えた検証記録です。\n\n### 主な成果と知見\n- **驚異的な高速化**: LLMで約23秒かかっていた20問の文脈判断を、Jevのバッチ処理により約0.3秒（300ms前後）で完了。中央値比較で約77倍の高速化を達成しました。\n- **判定特化モデルの特性**: Jevはテキスト生成を行わず、構造化された判定（Yes/No、選択、スコア）のみを返すため、パースの手間がなく低レイテンシ・低コスト（100万トークン$0.042）です。\n- **確信度によるハイブリッド設計**: Jevが苦手とする「不確信な判定（確率0.2〜0.8）」についてはLLMにフォールバックさせるゲート設計を導入。これにより、速度を稼ぎつつ精度をLLMと同等に維持しています。\n- **実装のコツ**: 1問ずつAPIを叩くのではなく、「全問を1リクエストに束ねて投げる」設計が最もパフォーマンスに寄与します。\n\n### 結論\n「生成は不要だが、文脈に基づく判断だけが必要」というユースケースにおいて、JevのようなDecision-onlyモデルは非常に強力な武器となります。",
+    "topics": [
+      "LLM",
+      "Jev",
+      "自然言語処理",
+      "textlint",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 12,
+      "overall": 95
+    }
+  }
+}

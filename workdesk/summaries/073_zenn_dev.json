@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:38:11.988130+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "国産モデル sarashina3-mini は日本語の推敲で何を変えるのか？",
+    "url": "https://zenn.dev/algoartis/articles/03ca12150ccbee",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SB Intuitionsが公開した国産LLM「sarashina3-mini」の日本語推敲能力を、GeminiやClaudeと比較検証し、大幅な書き換え傾向や丁寧な語調への変換といった独自の特性を明らかにした分析レポート。",
+    "summaryBody": "SB Intuitionsの国産LLM「Sarashina」シリーズのAPI公開を受け、標準モデル「sarashina3-mini」の推敲性能を、Gemini 4 Argon、Gemini 3.8 Flash、Claude Opus 5.5と比較検証した記録です。推敲ツール『yomiyasu』の指示書を用いた実験の結果、sarashina3-miniは他モデルに比べて「書き換え量」が圧倒的に多く、特に常体を敬体に揃えたり、ビジネス向けの硬い表現に変換する傾向が強いことが判明しました。一方で、「本文のみ出力」という指示を無視して追加の解説を付与したり、文脈の「確かさ（推量か断定か）」を書き換えてしまうといった課題も確認されています。しかし、応答速度が中央値4.2秒と非常に高速で安定していることや、数値・日付の正確性、日本語トークン効率の高さといった優れた側面もあり、社内文書の文体統一などの用途における有用性が示唆されています。",
+    "topics": [
+      "sarashina3-mini",
+      "LLM",
+      "日本語モデル",
+      "推敲",
+      "比較検証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:21:34.951905+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "React習熟度ベンチマークでHaiku 5.5が見せた底力",
+    "url": "https://zenn.dev/uhyo/articles/react-profession-bench-20",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Haiku 5.5がReact習熟度ベンチマークにおいて、同じeffort設定のSonnet 5.5を上回るスコアを記録し、廉価モデルの枠を超えた実力を示したことを報告する。",
+    "summaryBody": "この記事は、Claudeの最新廉価モデル「Haiku 5.5」を用いたReact習熟度ベンチマークの結果を詳細に分析したレポートです。主な結果として、Haiku 5.5 (effort=high) が総合スコア83.82を記録し、上位モデルであるSonnet 5.5 (high) の81.08を上回る「下克上」が発生しました。この要因として、Sonnet 5.5 (high) が極めて短時間で回答を生成するのに対し、Haiku 5.5は2倍以上の時間をかけて丁寧に実装を行うという特性が挙げられています。一方で、effortをmaxに設定した際のスコアの伸びは限定的であり、主にuseEffectEvent等の最新React APIの網羅性向上に留まることも判明しました。全体として、Claude 5.5世代は下位モデルでもGPT-6シリーズを凌駕する性能を維持しており、Haiku 5.5のコストパフォーマンスの高さが強調されています。",
+    "topics": [
+      "React",
+      "Claude 3.5 Haiku",
+      "LLMベンチマーク",
+      "フロントエンド開発",
+      "AIコーディング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

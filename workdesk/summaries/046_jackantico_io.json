@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:44:40.300732+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Garminの活動データを分析する「自作MCP」の構築：プラットフォームの壁を越えるエージェントの可能性",
+    "url": "https://jackantico.io/garmin-mcp",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Garminの非公式APIとClaudeを連携させ、ヘルスケアデータの対話型分析や週次レポート送付を自動化するシステムの構築過程と、MCPが変える未来のUXについて論じた記事。",
+    "summaryBody": "ガーミン公式のMCP（Model Context Protocol）が提供されていない課題を解決するため、著者は非公式APIとAnthropicのAPI（Claude）を組み合わせた独自の分析システムを構築しました。このシステムは、ユーザーの質問に応じて「活動の要約」「健康状態の取得」などのツールをClaudeが自律的に呼び出すエージェント構造を持っており、単なるデータの可視化を超えた対話的な洞察を可能にします。技術的な実装に加え、著者は複数のWebサービスを横断するMCPの利便性を強調。その一方で、広告収益や顧客囲い込みのためにユーザーインターフェースの独占を狙う巨大プラットフォーマー（Amazon、Meta、金融機関等）が公式なMCP提供に抵抗する可能性を指摘しています。結論として、企業の制限を回避するための「非公式MCP」や、プライバシーを確保しながらパーソナルデータを扱うための「ローカルLLM」の重要性が今後高まると予測しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Garmin API",
+      "Claude",
+      "AI Agent",
+      "Quantified Self"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 82
+    },
+    "originalTitle": "Building a Garmin \"MCP\""
+  }
+}

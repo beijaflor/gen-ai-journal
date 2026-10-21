@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:36:59.476356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicによる「蒸留攻撃」に対する防御強化：推論プロセスの盗用を最大99%削減",
+    "url": "https://www.anthropic.com/research/distillation-defenses",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Claudeの思考プロセスを盗用して安価なモデルを訓練する「蒸留攻撃」に対し、推論内容の保護や高度な分類器を導入することで、抽出されるデータ量を90〜99%削減したと発表しました。",
+    "summaryBody": "Anthropicは、フロンティアモデルの能力を不正に複製する「蒸留攻撃」に対する新たな多層的な防御策を公開しました。蒸留攻撃は、Claudeなどの高性能モデルの推論ステップ（思考プロセス）を大量に収集し、低コストで同様の能力を持つモデルを構築する手法で、海外の研究所が米国の技術に追従するために悪用している現状があります。これに対しAnthropicは、(1)過去の推論コンテキストの編集を制限する「保存された思考（Preserved Thinking）」、(2)抽出の試みを検知する「2段階分類器」、(3)攻撃的なアカウントへの利用制限と課金適用、という3つの対策を導入しました。これにより、攻撃者に抽出される推論トークン数は10分の1から100分の1に減少しました。同社は、蒸留されたモデルが十分な安全策なしにサイバー攻撃やバイオ兵器開発に転用されるリスク、および国家安全保障上の懸念を強調し、業界全体の足並みを揃えた対策を呼びかけています。",
+    "topics": [
+      "Anthropic",
+      "Claude",
+      "AI Security",
+      "Distillation Attacks",
+      "Safeguards"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 92
+    },
+    "originalTitle": "Strengthening our defenses against distillation attacks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:41:04.062541+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev vs Gemini Flash Lite — DeepEvalでLLM-as-a-Judgeを比較してみた",
+    "url": "https://qiita.com/take-yoda/items/136d1f5a4deea203c718",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AI「Jev」とGemini 3.5 Flash LiteをDeepEval上で比較し、Jevが圧倒的なコスト効率と速度、実用的な評価精度を持つことを実証した記事。",
+    "summaryBody": "DeepEvalを用いたLLM-as-a-Judge（AIによる自動評価）において、判断特化型モデル「Jev」とGemini 3.5 Flash Liteの性能を比較検証しています。連想ゲーム「マジカルバナナ」の回答を対象に、毒性・バイアス・関連性・多様性の4指標で評価を実施。結果、JevはGeminiと比較してコストを約1/48、評価時間を約1/113にまで削減可能であることが判明しました。また、Jevは構造化された確率値を返す特性上、従来のLLMが陥りやすい過敏なバイアス判定（「宗教→お坊さん」を不合格とする等）を避け、文脈に即した現実的な判断を下す傾向が示されています。詳細な推論理由の出力は不要で、高速・低コストな評価パイプラインを構築したい場合にJevが極めて有効な選択肢であることが結論付けられています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "DeepEval",
+      "Jev",
+      "Gemini 3.5 Flash Lite",
+      "AI評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

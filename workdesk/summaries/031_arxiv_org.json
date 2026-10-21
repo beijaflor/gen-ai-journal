@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:48:13.963218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIモデルが任意の能力を証明可能に隠蔽できることの示唆：暗号学的バックドアの脅威",
+    "url": "https://arxiv.org/abs/2610.13928",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "暗号学的な「デジタルロッカー」を用いることで、AIモデルの重みの中に特定のトリガーなしでは検知不可能な任意の能力を埋め込めることを証明し、従来の評価手法の限界を指摘した研究。",
+    "summaryBody": "本研究は、AIの安全性評価における「隠れた能力は引き出し可能である」という根本的な前提に対し、暗号学的な観点から異を唱えるものである。著者らは、ホストモデルの重みの中に暗号化されたニューラルネットワーク（回路）を埋め込む手法を提案した。この回路は特定のシークレットトリガーを受け取った場合のみ復号され実行されるが、それ以外の場合は暗号学的仮定に基づき、モデルの重みにフルアクセスできたとしても、既存の解釈可能性手法や評価手法（ファインチューニング、勾配ベースの探索、潜在的敵対的訓練など）では検知・抽出できない。化学反応予測タスク（CBRN関連能力の代用）を用いた実験では、これらの防御・検知手法に対する強固な耐性が示された。この結果は、現在のエピステミックな評価に基づくAIガバナンスが、意図的に隠蔽された危険な能力に対して無力である可能性を示唆しており、より強固な防御策の必要性を説いている。",
+    "topics": [
+      "AI Safety",
+      "Backdoor Attacks",
+      "Cryptography",
+      "Capability Elicitation",
+      "Model Interpretability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "AI Models Can Provably Hide Arbitrary Capabilities"
+  }
+}

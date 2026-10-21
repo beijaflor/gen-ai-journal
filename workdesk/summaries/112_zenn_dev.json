@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:29:21.728602+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに過去の会話を思い出させるbabarot",
+    "url": "https://zenn.dev/babarot/articles/claude-code-session-recall",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの会話履歴をSQLiteで管理し、MCPやTUIを通じて過去のコンテキストを効率的に検索・再開できるツール「claude-recall」の解説記事です。",
+    "summaryBody": "Claude Codeが一時的に保存する会話ログ（transcript）をSQLiteへ自動取り込みし、過去の技術決定や調査ログを容易に検索可能にするツール「claude-recall」を紹介しています。標準のgrep検索や、LLMによる要約注入（claude-mem）とは異なる「必要な時に必要な情報を引き出す（pull型）」設計思想が特徴です。MCPサーバーとしての動作に加え、TUIやWeb UIを備え、削除されたworktreeのセッションを擬似的に再開する機能も提供します。技術スタックにはGoとSQLite FTS5を採用し、複数セッション間での監視制御（リーダー選出）など、実用的な実装工夫が凝らされています。",
+    "topics": [
+      "Claude Code",
+      "MCP",
+      "SQLite",
+      "Go",
+      "ツール開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

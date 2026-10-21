@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:18:54.095740+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Haiku 5.5 は判断特化モデルの代わりになるのか？",
+    "url": "https://qiita.com/kikuziro/items/53465eeb52b464757555",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大幅に低価格化したClaude Haiku 5.5を、分類・判定に特化した「ジャッジモデル」として運用できるかを検証し、Jev等の専門モデルとの比較結果を公開しています。",
+    "summaryBody": "2026年10月に登場したClaude Haiku 5.5の低コスト性（旧版の1/10）に着目し、テキスト生成ではなく「判断（分類・ルーティング）」に特化した用途での実力値を検証した記事です。検証では、max_tokensを1に制限する手法やプロンプトキャッシュの効果に触れ、速度面では特化型モデル（Jev）に譲るものの、多肢選択（300択）や方言の理解度では汎用LLMならではの高い精度を示しました。AWS環境内で完結させつつコストを抑えたい場合の、有力なジャッジモデルの選択肢として紹介されています。",
+    "topics": [
+      "Claude Haiku 5.5",
+      "LLM",
+      "AWS Bedrock",
+      "ジャッジモデル",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

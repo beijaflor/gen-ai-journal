@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:48:28.921598+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeでGitHubを自律的開発工場に変える「Instant Software Factory」",
+    "url": "https://github.com/mikolalysenko/instant-factory",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのルーチン機能を活用し、8種類の自律エージェントをリポジトリに配備して、バグ修正や性能改善、CI最適化を継続的に実行する開発自動化フレームワーク。",
+    "summaryBody": "「Instant Software Factory」は、GitHubリポジトリを自律的に成長させるためのAIエージェント・システムです。Claude Codeの「クラウド・ルーチン」を利用し、QA、実装、レビュー、マネジメントなどの役割を持つ8つのエージェントを自動設定します。最大の特徴は、単発のタスク解決ではなく、リポジトリの状態を常に監視し、アーキテクチャの簡素化やパフォーマンス改善、CIの不具合修正などをバックグラウンドで継続的に行う「継続的な目的（Standing Objectives）」に基づいた設計にあります。人間が最終的なマージ権限を保持することで安全性を確保しており、プロトタイプからプロダクションレベルへの品質向上をAIが担う仕組みを提供します。セットアップは指定されたプロンプトをClaude Codeで実行するだけで完了し、CIの修正やパフォーマンスのベースライン測定、依存関係の整理など、人間にとって負荷の高い保守作業をAIが肩代わりします。",
+    "topics": [
+      "Claude Code",
+      "AI Agents",
+      "Autonomous Development",
+      "GitHub Actions",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - mikolalysenko/instant-factory: One prompt that turns a GitHub repo into a Claude Code routine software factory"
+  }
+}

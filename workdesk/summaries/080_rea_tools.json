@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:36:30.725810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "REA — コーディングエージェントのためのリバースエンジニアリング支援ツール",
+    "url": "https://rea.tools/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "REAは、AIコーディングエージェントがバイナリ、JavaScript、Androidアプリなどの内部コードを解析・理解し、そのロジックを再構築できるようにする強力なツールキットです。",
+    "summaryBody": "REA (Reverse Engineering for Your Coding Agent) は、AIエージェントが「ソフトウェアがどのように動作するか」を直接調査し、理解できるようにするためのツール群です。従来の開発手法では困難だった、ソースコードのないバイナリやコンパイル済みのアプリケーションの解析をAIとの対話形式で実現します。\n\n**主な特徴と機能:**\n- **多様なターゲット:** Windowsのネイティブバイナリ(x64)、JavaScript/Electronアプリ、Android(APK)、ブラウザ上のWebサイトを解析可能です。\n- **エージェントへの統合:** `npx rea-agents@latest setup` を通じてCursorや他のAIエージェントに接続し、AIが直接関数、文字列、リファレンス、呼び出し関係を検査できるようにします。\n- **動作解析:** 電卓アプリの計算ロジック（例：なぜ200+10%が220になるのか）や、ゲームの加速ルールなど、実行時の挙動をAIが追跡し、理解しやすい形式で説明・再現します。\n- **活用シーン:** 既存アプリの機能コピー、レガシーコードのドキュメント化、バグ調査、セキュリティ分析などに活用できます。",
+    "topics": [
+      "Reverse Engineering",
+      "AI Coding Agent",
+      "Software Analysis",
+      "Binary Inspection",
+      "LLM Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "REA — Reverse Engineering for Your Coding Agent"
+  }
+}

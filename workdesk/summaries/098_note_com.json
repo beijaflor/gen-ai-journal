@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:32:25.658654+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Decision Modelの課題と強化学習：Jevの検証とGRPOによる性能向上",
+    "url": "https://note.com/hatti8/n/ne67f960dc486",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe Jev等のDecision Modelが外部コードの補助に依存している現状を指摘し、GRPOを用いた強化学習によってモデル単体での判断能力を向上させる手法を検証した記事。",
+    "summaryBody": "TypeSafe社のJevに代表される「Decision Model」の公開デモ（マリオやDoom等）を詳細に分析し、実際には外部コードが選択肢の結果を事前計算してプロンプトに挿入している「誇大広告」的な側面があることを指摘。検証実験により、補助なしのJevは極めて単純な先読みも困難であることを明らかにした。これに対し、筆者はLLM向けの強化学習手法であるGRPOをDecision Model（NanoJev）に適用。複数ステップの判断を1エピソードとして報酬を分配する学習により、手本データを用いたSFTを上回る成功率（19%から79%へ改善）を達成し、モデルの重み自体に戦略を学習させる有効性を示している。",
+    "topics": [
+      "Decision Model",
+      "Jev",
+      "GRPO",
+      "強化学習",
+      "TypeSafe AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

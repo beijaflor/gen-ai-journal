@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:59:26.967759+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Netflixのパーソナライゼーション基盤モデル：プロダクション導入に向けた3つのアプローチ",
+    "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Netflixが開発したパーソナライゼーション用基盤モデルを、実プロダクトへ効率的に統合するための3つの戦略（埋め込み、サブグラフ、ファインチューニング）とその性能・コスト面のトレードオフを解説した記事。",
+    "summaryBody": "Netflixは個別のモデルの維持・更新コストを削減し、一貫したユーザー表現を活用するために大規模な基盤モデルを導入しました。本記事では、このモデルを実プロダクトに統合する際の3つの手法を提案しています。\n\n1. **埋め込み (Embeddings)**: Embedding Storeを介してプロフィール・アイテム表現を提供。導入コストが低い一方で、データの鮮度や学習ごとの安定性（ドリフト対策）が課題となります。\n2. **サブグラフ (Subgraph)**: アプリケーション側のモデルの一部として基盤モデルを組み込む。リアルタイム性に優れ、モデルの全能力を引き出せますが、推論コストとエンジニアリングの複雑性が増大します。\n3. **ファインチューニング (Fine-tuning)**: 特定のドメインデータで再学習。新規アプリの強力なベースラインとなりますが、維持管理するパイプラインが増大します。\n\n現在は、推論の低遅延化に向けた蒸留モデルの開発や、リアルタイム埋め込み生成フレームワークの構築など、さらなる最適化が進められています。",
+    "topics": [
+      "Netflix",
+      "Foundation Model",
+      "Machine Learning",
+      "Recommendation Systems",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Integrating Netflix’s Foundation Model into Personalization applications"
+  }
+}
