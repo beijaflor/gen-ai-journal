@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:05:34.729754+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Mods で Claude Code のセッションごとに管理できるメモ帳を作った",
+    "url": "https://zenn.dev/yesodco/articles/da634d752874b2",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの新機能「Mods」を活用し、セッションごとにTODOやメモをMarkdown形式で管理・同期できる拡張機能の実装事例とTipsを紹介しています。",
+    "summaryBody": "Claude Codeのデスクトップアプリやターミナルを拡張できる「Mods」機能を用いて、セッション単位で独立したメモ帳「session-memo」を開発した記録です。Raycast Notes等では困難だった「セッションとメモの紐付け」を解決しています。\n\n主な特徴は以下の通りです：\n- **UI統合**: 入力欄上部の「帯（AbovePrompt）」にTODO件数を表示し、サイドペインで詳細を編集可能。\n- **データ管理**: 作業ディレクトリ内の `.session-memo/` 以下にMarkdownとして保存。ファイルペインからの直接編集もサポート。\n- **AIによる開発**: Claude Codeに「modを作って」と依頼することで、プロンプトベースで初期コードの大部分を生成。\n\n実装上の注意点として、現在のMods APIにおけるUIコンポーネントの制約（textareaがない、テキスト選択ができない等）や、ファイル編集権限に関する回避策（.claudeディレクトリ外への保存）など、実践的なノウハウが共有されています。",
+    "topics": [
+      "Claude Code",
+      "Mods",
+      "TypeScript",
+      "AI拡張",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

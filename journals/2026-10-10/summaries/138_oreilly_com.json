@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:45:38.874305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "本番環境で信頼性の高いAIエージェントシステムを構築する方法",
+    "url": "https://www.oreilly.com/radar/how-to-build-reliable-ai-agent-systems-for-production/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの信頼性はプロンプト調整だけでは不十分であり、決定権限の分離、文脈の検証、最小権限の原則、状態の保存といった堅牢なシステム設計が不可欠である。",
+    "summaryBody": "AIエージェントを実験段階から本番環境へ移行させるためには、モデルの出力に依存しすぎない「システムとしての設計」が重要です。本記事では、信頼性を確保するための具体的なアプローチを提唱しています。\n\n1. **決定層の分離**: モデルにはアクションを提案させ、決定・執行は決定論的なポリシーサービスで行う分離構造を導入します。\n2. **信頼できない文脈の管理**: エージェントが参照するメモリやファイルは「信頼できない入力」として扱い、履歴（Provenance）の記録と検証を行います。\n3. **最小権限の原則**: 広範なAPIスコープではなく、特定のタスクに限定された、使い捨ての「狭い能力（Narrow Capabilities）」を付与します。\n4. **正常な停止と回復**: 信頼度が低い場合の人間へのエスカレーションや、冪等性キーを用いた状態保存により、エラー時でも途中から安全に再開できる仕組みを構築します。\n5. **可観測性の確保**: 会話ログだけでなく、コンテキスト・グラフを用いて「なぜその決定が下されたか」という根拠を追跡可能にします。\n\n最後に、MCP（Model Context Protocol）のようなオープンな仕様を活用し、モデルやランタイムが変わっても制御のポータビリティを維持することを推奨しています。",
+    "topics": [
+      "AIエージェント",
+      "AI信頼性",
+      "システム設計",
+      "LLMセキュリティー",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "How to Build Reliable AI Agent Systems for Production – O’Reilly"
+  }
+}

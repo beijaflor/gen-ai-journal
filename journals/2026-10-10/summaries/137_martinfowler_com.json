@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T17:03:06.402438+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Martin Fowlerによる考察：AIの「育成」とLLM時代におけるコードの存在意義",
+    "url": "https://martinfowler.com/fragments/2026-10-04.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Martin Fowler氏が、決定論的な構築から推論的な育成へと変化するAI開発の性質や、LLM時代においても概念モデルとして機能し続けるコードの重要性について考察しています。",
+    "summaryBody": "マーチン・ファウラー氏による定期コラムです。主な内容は以下の通りです。\n\n1. **AIの「育成」へのシフト**: 従来のソフトウェアが決定論的な「構築」であったのに対し、LLMは推論的なシステムであり、「育成（Nurture）」に近いアプローチが必要です。バグを修正・無効化できる構築型システムと異なり、LLMの予期せぬ挙動を制御することの困難さを古典SF映画『禁断の惑星』を引用して警告しています。\n2. **LLM時代のコードの役割**: LLMがコードを生成する時代において「人間がコードを読む必要はあるか」という議論に対し、コードは単なる機械への命令ではなく、問題ドメインの「概念モデル」を明示化するためのボキャブラリーとして、より重要になると説いています。Railsのような高レベルな記述は、AIが扱う上でもコンパクトで正確な仕様として機能し続けます。\n3. **Ola Bini氏の強制送還**: 友人でありセキュリティ専門家のOla Bini氏がエクアドルから不当な手続きで強制送還されたニュースに触れ、深刻な懸念を表明しています。\n4. **LLMの信頼性**: Gemini 4 Argonなどの最新モデルにおいて、正解率そのものよりも「知らないことを知らないと言える（ハルシネーション率の低さ）」特性が実用上の信頼性に繋がると評価しています。",
+    "topics": [
+      "Generative AI",
+      "Software Engineering",
+      "Conceptual Modeling",
+      "Ethics",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Fragments: October 4"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:55:45.499049+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google、マルチモーダル埋め込みモデル「EmbeddingGemma 2」を公開 — テキスト・画像・動画・音声を共通空間に写像",
+    "url": "https://huggingface.co/google/embeddinggemma-2",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google DeepMindが、テキスト・画像・動画・音声を単一の768次元ベクトル空間に統合する、7.4億パラメータの軽量マルチモーダル埋め込みモデル「EmbeddingGemma 2」をリリースしました。",
+    "summaryBody": "Google DeepMindが発表した「EmbeddingGemma 2」は、テキスト（コードを含む）、画像、動画、音声を共通の768次元ベクトル空間に写像するオープンなマルチモーダル埋め込みモデルです。7.4億（740M）のパラメータを持ち、2.7億のテキストバックボーンに、必要に応じて選択可能な画像（1.7億）および音声（3億）エンコーダを組み合わせて構成されています。Matryoshka Representation Learning (MRL) を採用しており、128dから768dまでの動的な次元切り出しに対応し、精度を維持しつつストレージコストを最大6分の1に削減可能です。8Kトークンのコンテキストウィンドウ、100以上の言語サポート、タスク別の命令（Prefix）による最適化機能を備え、RAG、検索、分類、クラスタリングなどの用途に適しています。軽量設計により、モバイルやノートPCなどのコンシューマ向けハードウェアでの動作が想定されています。",
+    "topics": [
+      "EmbeddingGemma 2",
+      "Multimodal Embedding",
+      "Google DeepMind",
+      "Matryoshka Representation Learning",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "google/embeddinggemma-2 · Hugging Face"
+  }
+}

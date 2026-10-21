@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T22:57:58.448520+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "git worktree大増殖で困っていた - エムスリーテックブログ",
+    "url": "https://www.m3tech.blog/entry/git-worktree-gc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント開発などで乱立するgit worktreeを、マージ状況や作業状態を判定して自動で整理・削除する自作ツールとその活用法を紹介しています。",
+    "summaryBody": "Gitのworktree機能は並列作業に非常に強力ですが、複数のAIエージェント（Claude Code等）を併用するとディレクトリが急増し、管理が煩雑になる課題があります。本記事では、この「worktree大増殖問題」を解決するために作成されたBashスクリプト『git-worktree-gc』を公開しています。このスクリプトは、単にディレクトリを消すのではなく、対象がmainブランチにマージ済みか、未コミットの変更がないか、detached HEADでないか、さらにClaudeのセッションが走っていないかといった安全性を機械的に判定して整理を行います。また、新規worktreeの作成・ブランチ切り・ディレクトリ移動を一挙に行う『kickoff』コマンドも紹介されており、開発効率を落とさずに環境を清潔に保つための具体的なTipsが凝縮されています。",
+    "topics": [
+      "git",
+      "worktree",
+      "automation",
+      "Bash",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

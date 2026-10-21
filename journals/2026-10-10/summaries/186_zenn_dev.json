@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:04:28.335703+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した",
+    "url": "https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Haiku 5.5の登場と大幅な値下げを受け、開発ワークフローにおけるサブエージェントの役割分担をコストと精度の観点から再定義・最適化した実践的な記録。",
+    "summaryBody": "Claude Haiku 5.5のリリース（従来比1/10の低価格化）を機に、Claude Code環境下で運用していた3つのサブエージェント（テスト実行、調査、実装）のモデル構成を見直した検証記事です。テスト実行役は低コストなHaikuへ移行し、実装役は精度重視でSonnetを維持。中間的な調査役については、プロンプトで「事実と推論の分離」や「検索ログの提示」を義務付けることで、Haikuでも信頼性を担保しつつコストを抑える運用フローを提案しています。単なるモデルの置き換えに留まらず、モデルの特性に合わせて「呼び出し元との役割分担」まで踏み込んで再定義している点が特徴です。",
+    "topics": [
+      "Claude 3.5 Haiku",
+      "Claude Code",
+      "LLMエージェント",
+      "コスト最適化",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

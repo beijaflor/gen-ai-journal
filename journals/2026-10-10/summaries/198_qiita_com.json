@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:01:28.518180+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのモデル使い分けによる成果物とトークン消費の比較検証",
+    "url": "https://qiita.com/inoyu-qiita/items/c86cfa9a4df7af042f9b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおいて「計画はOpus、実装はSonnet」と「全てOpus」の2パターンで開発を比較した結果、前者が品質を維持しつつコストを約3割削減できることが示された検証記事。",
+    "summaryBody": "Claude Codeを用いたAI駆動開発において、モデルの使い分けがコストと品質に与える影響を検証した記事です。「条件分岐付きフォームビルダー」という具体的なアプリ開発を題材に、「計画・設計はOpus、実装以降はSonnet」と「全てOpus」の2パターンで比較を行っています。結果として、Opus＋Sonnet構成は全てOpus構成に比べ、推定コストを約31%、トークン消費を約23%削減できました。品質面では、全てOpusの方がUIの気配りや初期サンプルの充実度で僅かに勝る一方、Opus＋Sonnetの方はテストコードがより手厚く生成される傾向が見られました。最終的に「計画さえOpusで行えば、実装はSonnetで十分な品質が確保できる」と結論づけており、公式のopusplanエイリアスの有効性を裏付ける内容となっています。",
+    "topics": [
+      "Claude Code",
+      "Claude 3 Opus",
+      "Claude 3.5 Sonnet",
+      "AI駆動開発",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

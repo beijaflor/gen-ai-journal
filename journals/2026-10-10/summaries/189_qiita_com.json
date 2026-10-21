@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-12T16:03:47.905107+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【ServiceNow】Build Agent に\"設計書\"を渡したら、ホロスコープ占いアプリが本気の仕上がりになった🔮(前編)",
+    "url": "https://qiita.com/j45delight/items/59c989d4d9413660badc",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "ServiceNowのBuild Agentと外部LLM（Claude）を組み合わせ、詳細な設計プロンプトを通じて高度な天文計算とAI解説機能を備えたホロスコープアプリを効率的に構築する手法の解説。",
+    "summaryBody": "ServiceNowのAI開発支援ツール「Build Agent」を活用したホロスコープアプリ開発の実践記録（前編）です。Build Agentの実行回数制限を回避するため、まずClaudeを用いて技術調査と詳細な設計図（プロンプト）を作成し、実装のみをBuild Agentに担当させる「役割分担」戦略を採用しています。記事では、npmライブラリを用いたクライアントサイドでの天体計算、セキュリティを考慮したScripted REST APIによるAI連携、カスタムテーブル構築、そして「数値付きの完了条件」を含む効果的なプロンプトの書き方までが具体的に示されています。単なる自動生成に留まらず、開発者がいかにAIエージェントをコントロールして意図通りのプロダクトをビルドするかという、AIネイティブな開発フロー（バイブコーディング）の好例となっています。",
+    "topics": [
+      "ServiceNow",
+      "Build Agent",
+      "生成AI",
+      "Vibe Coding",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

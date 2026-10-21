@@ -13,8 +13,9 @@ weekly + annex journals:
                  counts reported.
   * encoding   — no U+FFFD replacement chars or stray control characters.
   * URL health — concurrent check of the curated main+annex URLs, bucketed
-                 ok (2xx) / blocked (401/403/429 anti-bot, non-fatal) /
-                 broken (everything else, fatal). Skip with --skip-urls.
+                 ok (2xx) / blocked (401/402/403/406/429 anti-bot or
+                 paywall, non-fatal) / broken (everything else, fatal).
+                 Skip with --skip-urls.
 
 Exit code is non-zero on any real failure, so it drops straight into CI or a
 pre-archive gate. Verify-only: it never writes anything.
@@ -226,7 +227,7 @@ def check_urls(rep, urls, workers=16):
     for url, status in zip(urls, results):
         if 200 <= status < 400:
             ok.append((url, status))
-        elif status in (401, 403, 429):
+        elif status in (401, 402, 403, 406, 429):
             blocked.append((url, status))
         else:
             broken.append((url, status))
