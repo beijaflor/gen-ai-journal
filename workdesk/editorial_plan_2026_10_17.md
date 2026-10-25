@@ -6,6 +6,7 @@
 - [x] Article-to-theme mapping complete
 - [x] Revision round 1 (reorder: Physical-AI/Argon lead; add self-improvement theme)
 - [x] Revision round 2 (drop AI経済; merge self-replication into Theme 2; restore デザイン再定義)
+- [x] Revision round 3 (promote 国産・ローカルLLM to new Theme 5; 10 themes total)
 - [x] Human review and refinement
 - [x] APPROVED - Ready for STEP_04 curation
 
@@ -21,14 +22,15 @@ the industry's attention has moved to the *layers around generation* — physica
 control, self-improvement and self-replication, harnesses and constraints, judgment and
 verification, security boundaries, and the human questions of value and craft.
 
-Proposed structure: **9 main themes**, led by フィジカルAI/Gemini 4 Argon. The AI経済
-(bubble/economics) cluster, 国産/ローカルLLM coverage, Japanese enterprise case studies,
-and the 22 curator-flagged items form the annex pool. Final main/annex/omit partition is
-decided in STEP_04/05; this plan maps candidates.
+Proposed structure: **10 main themes**, led by フィジカルAI/Gemini 4 Argon. The AI経済
+(bubble/economics) cluster, Japanese enterprise case studies, and the curator-flagged
+items form the annex pool. Final main/annex/omit partition is decided in STEP_04/05; this
+plan maps candidates.
 
 **Revision history (AI-applied per editor):**
 - Round 1: Gemini 4 Argon / Physical-AI → Theme 1 (lead). Added self-improvement theme. Design → annex (temp). Scion → self-improvement.
 - Round 2: Dropped AI経済 theme (→ annex). Merged self-replication (082/033) into Theme 2 to resolve its overlap with the self-improvement theme; refocused the security theme on defense/boundaries. Restored デザイン再定義 as Theme 9.
+- Round 3: Promoted 国産・ローカルLLM from annex to a new Theme 5 (Sarashina/LLM-jp-4/local-run; 081/073/070/107/028). Now 10 themes; former Themes 5–9 shift to 6–10. 062 (Sarashina速度解析) stays in annex.
 
 ---
 
@@ -127,7 +129,29 @@ AnthropicのFrontier Red Teamは、300億パラメータ以下のモデルが安
 
 ---
 
-### Theme 5: Linus Torvalds・ClaudeのECDSA解明・東方再構築に見る難問攻略とリバースエンジニアリング
+### Theme 5: Sarashina・LLM-jp-4・Qwen3.5が示す国産・ローカルLLMという選択肢
+
+**Articles (IDs):** 081, 073, 070, 107, 028
+
+**Theme Introduction (2-3 sentences in Japanese):**
+フロンティアモデルのコストと海外依存が意識されるなか、国産・自前運用のLLMが実用段階に入ってきた。SB
+Intuitionsは日本語特化の国産LLM「Sarashina」6モデルを無償ベータで公開し、推敲比較ではGemini/Claudeとは
+異なる大幅な書き換え傾向と、中央値4.2秒の高速・安定した応答が確認された。国立情報学研究所のLLM-jp-4は
+事前学習・事後学習データの中身まで公開され、オープンな国産モデルの検証を可能にしている。さらにNVIDIA B200で
+Qwen3.5を動かしてClaude Codeの代替可能性を実証した事例や、32GB RAMのノートPCで80Bモデルを動かすC製推論
+エンジンJanasなど、ローカル運用を現実的な選択肢に変える土台も整いつつある。
+
+**Editorial Notes:**
+- 081: sarashina.ai「Sarashina」。SB Intuitionsの日本語特化国産LLM6モデル（mini/nano/guard/embedding/rerank/translate）、無償ベータ（アンカー: 国産モデル発表）
+- 073: zenn「sarashina3-miniは日本語推敲で何を変えるか」。Gemini/Claude比で書き換え量が突出、敬体化傾向と指示無視の課題、応答中央値4.2秒
+- 070: zenn「LLM-jp-4の公開CPT・SFTデータを読んでみた」。NII公開データの構成と品質、日本語モデル開発の具体的留意点（depth）
+- 107: zenn「LocalLLMはClaude Codeの代わりになるか」。B200×Qwen3.5-122Bが18問中17問合格、16人同時・1人月1.4万円、処理2.6倍の実証
+- 028: GitHub「Janas」。外部依存なしのC製推論エンジン、NVMeストリーミングで32GB RAMに80Bを37tok/s、llama.cpp超え
+- Annex candidates: 062（Sarashina3の速さ/TTFT解析, 073と重複気味で付録へ）, 154
+
+---
+
+### Theme 6: Linus Torvalds・ClaudeのECDSA解明・東方再構築に見る難問攻略とリバースエンジニアリング
 
 **Articles (IDs):** 106, 084, 055, 085, 080
 
@@ -148,7 +172,7 @@ Linuxカーネルのメモリ管理を改善し、13年埋もれていたバグ4
 
 ---
 
-### Theme 6: Rich Hickey・バークレー研究・Current Affairsが投げかけるAIへの異議申し立て
+### Theme 7: Rich Hickey・バークレー研究・Current Affairsが投げかけるAIへの異議申し立て
 
 **Articles (IDs):** 142, 026, 025, 051, 047
 
@@ -169,7 +193,7 @@ AI掲載を全面禁止したCurrent Affairs、物理学徒の警鐘など、学
 
 ---
 
-### Theme 7: WebMCP・Cloudflare・Interop 2027が形づくるエージェンティックWeb
+### Theme 8: WebMCP・Cloudflare・Interop 2027が形づくるエージェンティックWeb
 
 **Articles (IDs):** 002, 124, 115, 116, 126
 
@@ -190,7 +214,7 @@ OpenAIと連携した効率的なクロール発見や、認証済みボット�
 
 ---
 
-### Theme 8: Agent Baseline・Anthropic OSS Scanner・1Passwordに見るエージェント実行のセキュリティ境界
+### Theme 9: Agent Baseline・Anthropic OSS Scanner・1Passwordに見るエージェント実行のセキュリティ境界
 
 **Articles (IDs):** 010, 103, 114, 009, 130
 
@@ -211,7 +235,7 @@ Baselineは「エージェントを信頼しない」4境界（サンドボッ�
 
 ---
 
-### Theme 9: 「センスより判断」論・Anthropic Design・Figma Specsが示すAI時代のデザイン再定義
+### Theme 10: 「センスより判断」論・Anthropic Design・Figma Specsが示すAI時代のデザイン再定義
 
 **Articles (IDs):** 017, 023, 020, 016, 014
 
@@ -247,6 +271,10 @@ Linus TorvaldsはClaude Codeでカーネルの13年来のバグを掘り当て�
 校正・OCR・QAに実戦投入され始めた。共通するのは、コードを増やすことより「間違いにすぐ気づける構造」と「安全に
 止められる境界」に価値が移ったという認識だ。
 
+生成が安くなった裏返しとして、コストと海外依存を見据えた国産・ローカルLLMも実用の手触りを帯びてきた。SB
+Intuitionsの国産モデル「Sarashina」、学習データまで公開された国立情報学研究所のLLM-jp-4に加え、NVIDIA B200で
+Qwen3.5をClaude Codeの代替として走らせる実証や、32GB RAMのノートPCで80Bモデルを動かす推論エンジンまで現れた。
+
 そして人間の側からの異議申し立ても厚い。Rich HickeyはLLMを人間のスキルを奪う「自動化」と断じ、バークレーの
 無作為化試験は「10分AIに頼るだけで難問を粘り続ける力が落ちる」と示した。デザインの世界でも「センス」より説明
 可能な「判断」が価値になるという議論が重なる。自律的に動き、自ら直り・複製し、物理世界にまで手を伸ばすAIが
@@ -258,6 +286,7 @@ Linus TorvaldsはClaude Codeでカーネルの13年来のバグを掘り当て�
 2. 自己改善・自己複製: RSI予測（ジャック・クラーク）、自己改善型ソフトウェア、Instant Software Factory、Scion、自己複製ワーム
 3. 「生成を縛る層」: ハーネス/制約（Fowler・Osmani）、判定モデル、難問攻略（Torvalds・ECDSA）、セキュリティ境界（Agent Baseline）
 4. 人間とデザイン: Hickey批判、バークレー研究、「センスより判断」論、Anthropic Design
+5. 国産・ローカルLLM: Sarashina（SB Intuitions）、LLM-jp-4（NII）、B200×Qwen3.5のClaude Code代替、Janas（32GB RAMで80B）
 
 ---
 
@@ -285,8 +314,8 @@ Linus TorvaldsはClaude Codeでカーネルの13年来のバグを掘り当て�
 ## Theme Coverage Summary
 
 **Target Distribution:**
-- Main Journal: ~40–46 articles across 9 themes（各テーマ main leads 5件前後 + supporting数件）
-- Annex Journal: AI経済（バブル/収益性）、国産/ローカルLLM、日本企業の実装事例、ツール紹介、curator flag群 ほか ~36–42件
+- Main Journal: ~46–52 articles across 10 themes（各テーマ main leads 5件前後 + supporting数件）
+- Annex Journal: AI経済（バブル/収益性）、日本企業の実装事例、ツール紹介、curator flag群 ほか ~30–36件
 - Omit: 入門/日記的記事、重複、汎用ニュース（STEP_04/05で確定）
 
 **Main lead count by theme (planned):**
@@ -294,18 +323,19 @@ Linus TorvaldsはClaude Codeでカーネルの13年来のバグを掘り当て�
 - Theme 2（自己改善・自己複製・再生成）: 7
 - Theme 3（ハーネス/制約）: 8（うち056はリード格上げ候補）
 - Theme 4（判定特化モデル）: 6
-- Theme 5（Torvalds/ECDSA/RE）: 5
-- Theme 6（異議申し立て）: 5
-- Theme 7（エージェンティックWeb）: 5
-- Theme 8（セキュリティ境界）: 5
-- Theme 9（デザイン再定義）: 5
+- Theme 5（国産・ローカルLLM）: 5
+- Theme 6（Torvalds/ECDSA/RE）: 5
+- Theme 7（異議申し立て）: 5
+- Theme 8（エージェンティックWeb）: 5
+- Theme 9（セキュリティ境界）: 5
+- Theme 10（デザイン再定義）: 5
 
-**Total main leads:** ~51（supporting候補を含め、STEP_04で~40–46へ精選）
+**Total main leads:** ~56（supporting候補を含め、STEP_04で~46–52へ精選）
 
 **Annex pool candidates (representative):**
 - AI経済/バブル（旧Theme6を降格）: 032（IMF）, 053（Anthropicジャンク格付け）, 109（Accenture $29）, 088（AI投資4割頓挫）, 141（Meta Muse 62%減）, 076（半導体ディストピア）, 019（Nobody wants AI app）, 170（Microsoft Maia 300）, 097（Karpathy funnel, Theme6へ移設可）, 139（Harvard, Theme3へ移設可）
 - AI時代のデザイン補完: 018, 128
-- 国産/ローカルLLM: 081, 073, 062, 070, 107, 028, 154
+- 国産/ローカルLLM: → Theme 5へ昇格（081, 073, 070, 107, 028）。付録残置は 062（Sarashina速度, 073と重複気味）, 154
 - 日本企業の実装事例: 163, 166, 158, 110, 074, 057, 058, 071, 090
 - ツール/ワークフロー紹介: 151, 155, 153, 150, 063, 059, 066, 167, 105, 094, 024, 131, 112, 100, 159, 162, 079, 005, 045, 168, 169, 144, 145, 060, 120, 118
 - その他ユニーク: 127（Hassabis伝記）, 129（Worth building）, 135（Just Ask Claude）, 132（Photoshopクローン/flag）, 093（Anthropic日本）, 096（デジハリ）, 137（GLM-Legal）, 133（TorrentClaw）, 027（Intel GPU D-series）, 111（Deep Review/flag）, 136, 012（/flag）, 072（/flag）, 147（/flag）
@@ -320,9 +350,10 @@ Linus TorvaldsはClaude Codeでカーネルの13年来のバグを掘り当て�
 **Changes Made:**
 - Round 1 (AI-applied): Theme 1 = Argon/Physical-AI (lead); added self-improvement theme; Design → annex (temp); Scion → self-improvement.
 - Round 2 (AI-applied): dropped AI経済 theme (→ annex); merged self-replication (082/033) into Theme 2; refocused security theme on defense/boundaries; restored デザイン再定義 (Theme 9).
+- Round 3 (AI-applied, 2026-10-25): promoted 国産・ローカルLLM to a new Theme 5 (081/073/070/107/028); former Themes 5–9 → 6–10; 062 kept in annex.
 - （追加の改名/統合、記事の再割り当て、main/annexの境界など）
 
-**Approval:** ✅ APPROVED (2026-10-25, via AskUserQuestion; Argon lead + self-improvement theme + design restored, AI経済 → annex)
+**Approval:** ✅ APPROVED (2026-10-25, via AskUserQuestion). Round 2 approved earlier same day; Round 3 (new Theme 5「国産・ローカルLLM」, 10 themes) re-approved via the review gate.
 
 ---
 
