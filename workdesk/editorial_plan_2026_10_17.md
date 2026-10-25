@@ -364,3 +364,411 @@ After approval:
 - [ ] Use this plan as blueprint for article selection
 - [ ] Organize curated_journal_sources.md by themes
 - [ ] Carry forward theme introductions to STEP_08 (Assembly)
+
+---
+
+## ASSEMBLY STRATEGIES
+
+### Theme 1: Gemini 4 Argon・QuEra・MHSが進めるフィジカルAIとロボティクス制御
+
+**Pattern:** Single-Focus
+**Pattern Rationale:** Gemini 4 Argonのモデル発表（034）が中心的な出来事で、残り4本はその能力がロボティクス・既存コードベース・物理ハードウェアへどう波及したかを示す応用・検証。
+
+**Article Order & Roles:**
+1. [034] Gemini 4 Argon発表 — Foundation（基礎能力: 100万トークン出力窓、長文脈・高推論）
+2. [036] Argon for Robotics — Development（ERQA 87%、Real2Sim、Boston Dynamics Spot制御）
+3. [067] Argonでロボットアーム — Development（VLM×MuJoCoの日本語ハンズオン、036を個人が実機で追試）
+4. [117] 20万行Pythonを一晩で最適化 — Development（コードベースへの応用、/goalモードで11時間自律実行）
+5. [040] QuEra量子レーザー制御 — Payoff（MHS経由で物理ハードを直接制御、復旧を分→秒）
+
+**Narrative Arc:** 新フロンティアモデルの能力が、ソフト（コード最適化）と物理世界（ロボット・量子ハード）の両方で実装段階に入ったことを、発表→応用→実機検証の順で示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [034] → [036] | 基礎能力の提示から、それを最初に向けたロボティクス特化版へ |
+| [036] → [067] | 公式ベンチマークを、個人開発者の実機追試が裏づける流れ |
+| [067] → [117] | 物理制御から、同じ推論能力が既存コードベースに向かう応用へ |
+| [117] → [040] | ソフト最適化から、MHSでAIが物理ハードを直接チューニングする事例へ |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- Argonの長文脈・高推論が、コードと物理制御という別領域で同じように効いている
+- MHS（Model Hardware Standard）がAIと物理ハードの接点を標準化しつつある
+- 公式発表（034/036）と個人の実機検証（067）が食い違わない——誇張でなく実装が進んでいる
+
+**Conclusion Approach:** 生成の次は制御——視覚推論とコード生成を軸に、シミュレーションと実機を往復するワークフローが現実に動き始めた、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 新モデルの能力はソフトと物理のどちらにどう効いているか
+2. MHSは何を標準化し何を可能にしたか
+3. 「フィジカルAI」が実験段階を越えたことをどう受け止めるべきか
+4. この領域は次にどこへ向かうか
+
+---
+
+### Theme 2: ジャック・クラーク・Boris Tane・Anthropic自己複製研究が示すAIの自己改善・自己複製・自律再生成
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 「AIが自分自身へ向かう」という一つの現象を、概念→時期の予測→実装→リスクの順に一段ずつ積み上げる。恩恵の面を語る基盤が、そのまま脅威モデルの前提になる。
+
+**Article Order & Roles:**
+1. [157] Boris Tane 自己改善型ソフトウェアの必然性 — Foundation（概念: 運用信号のback-prop自動化、人間は適応度関数を定義）
+2. [092] ジャック・クラーク RSI予測 — Development（時期: 再帰的自己改善の予測を2027年50%超へ前倒し）
+3. [030] Instant Software Factory — Development（実装: 自律的にコードを再生成する実験）
+4. [086] Anthropic Scion/source control再設計 — Development（スケール: 1日3万件超のマージに耐える再生成前提のVCS）
+5. [082] Anthropic 自己複製AI研究 — Payoff/Risk（裏面: 30B以下モデルが安価なIoT機器で自己複製しうる脅威モデル）
+
+**Narrative Arc:** 自己改善という概念が、時期の予測と実装基盤を伴って現実味を帯び、最後に同じ能力が持つ脅威（自己複製）で閉じる——恩恵と脅威は地続き。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [157] → [092] | 概念の提示から、それが「いつ」起きるかの定量的予測へ |
+| [092] → [030] | 予測から、すでに動いている自律再生成の実装へ |
+| [030] → [086] | 個別実験から、本番規模（Scion）の再生成基盤へ |
+| [086] → [082] | 「自らを作り直す」明るい面から、「自らを複製する」脅威の面へ（同じ能力の裏返し） |
+
+**Emphasis Balance:** Technical ⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- 自己改善と自己複製は同一能力の表裏——恩恵を語る基盤がそのまま脅威モデルになる
+- 「人間は適応度関数を定義する側に回る」という役割変化が通底する
+- クラークの時期前倒しとScionの実在が、概念を思弁でなく現在進行形にしている
+
+**Conclusion Approach:** AIが自分自身へ向かう動きは多面的に立ち上がっており、恩恵と脅威を切り離さずに見る必要がある、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 自己改善は概念から実装までどこまで来たか
+2. 恩恵と脅威はなぜ地続きなのか
+3. 人間の役割はどう変わるか
+4. 2027年に向けて何を見るべきか
+
+---
+
+### Theme 3: Martin Fowler・Addy Osmaniが示すハーネスと制約によるAIコード品質管理
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 「AIコードの品質をどう担保するか」という共通の問いに、思想家・媒体・企業・ツール・現場が別々の立場から答え、「逐次レビューより制約とハーネス」という同じ方向へ収斂する。
+
+**Article Order & Roles:**
+1. [001] Fowler ハーネスはコストに見合うか — Lead（思想: ハーネスの費用対効果を問う）
+2. [006] Addy Osmani agentic code quality — Lead（思想: エージェント時代の品質設計）
+3. [008] O'Reilly コードが安くなった後のレビュー — Perspective（媒体: レビュー観の転換）
+4. [056] Anthropic 社内コードレビュー — Perspective（企業の実践: 大半がAIコードの状況をどう捌くか）
+5. [102] ultracite — Perspective（ツール: 決定論的な制約の具体化）
+6. [091] findy aisaji-gota_bara — Perspective（日本の現場視点）
+
+**Narrative Arc:** 立場の異なる複数の声が「人間の逐次レビューは限界、制約とハーネスで縛る」という同じ結論を指す様を重ねる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [001] → [006] | ハーネスの費用対効果という問いを、品質設計の原則へ接続 |
+| [006] → [008] | 原則論から、レビューという具体的工程の転換へ |
+| [008] → [056] | 媒体の論から、Anthropicが社内で実際にどう回しているかへ |
+| [056] → [102] | 人手のプロセスから、決定論的ツール（ultracite）による自動化へ |
+| [102] → [091] | 海外の議論を、日本の現場の実感で受け止める |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 立場は違っても結論は一致——「間違いにすぐ気づける構造」に価値が移った
+- 思想（Fowler/Osmani）と実装（Anthropic/ultracite）が同じ設計思想を共有
+- レビューは「人が全部読む」から「機械が縛る＋人は要所」へ
+
+**Conclusion Approach:** 生成が安くなった分、品質の重心はレビューから制約設計へ移った、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. なぜ逐次レビューでは足りないのか
+2. ハーネス/制約とは具体的に何か
+3. 現場は何を変えるべきか
+4. 品質保証はどこへ向かうか
+
+---
+
+### Theme 4: Jev・Microsoft-Decision-1・Haiku 5.5が担う判定特化モデルの実戦投入
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 具体的な実戦投入→汎用モデルで代替できるかの検証→大規模運用と評価方法、と抽象度が一段ずつ上がる。
+
+**Article Order & Roles:**
+1. [087] Jev日本語校正 23秒→0.3秒 — Foundation（具体: 判定特化モデルの実測投入、確信度ゲート）
+2. [148] Microsoft-Decision-1 OCR品質ゲート — Development（別用途: GPT-5-mini比8倍）
+3. [156] Haiku 5.5は判定特化の代わりになるか — Development（対比: 汎用LLMで代替できるかの検証）
+4. [003] Netflix LLM-as-a-Judgeのライフサイクル — Development（運用: 大規模な評価の構築・整合・監視）
+5. [119] Google vibe checkからの脱却 — Payoff（方法論: Boolean評価と決定論的メトリクス）
+
+**Narrative Arc:** 「生成せず判断だけ」のモデルが、個別の高速化事例から、汎用代替の是非、そして評価の規律へと議論を深める。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [087] → [148] | 日本語校正の高速化から、OCR品質ゲートという別工程の同型事例へ |
+| [148] → [156] | 専用モデルの成果を、「汎用のHaikuでも足りるのでは」という問いで相対化 |
+| [156] → [003] | 単体の性能比較から、判定モデルを本番で運用し続ける仕組み（Netflix）へ |
+| [003] → [119] | 運用から、そもそも何をどう評価するかの方法論へ |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 「生成を伴わない判断」に独立した価値領域が生まれている
+- 専用モデルと汎用モデルの境界は用途とコストで決まる（156の問い）
+- 判定モデルは「作る」より「評価し運用し続ける」段階に入った
+
+**Conclusion Approach:** 判定特化モデルは実戦投入から、運用・評価の規律の段階へ移りつつある、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 判定特化モデルは何を速く/安くしたか
+2. 汎用LLMとの使い分けの軸は何か
+3. judgeをどう評価・監視するか
+4. この領域の次の課題は何か
+
+---
+
+### Theme 5: Sarashina・LLM-jp-4・Qwen3.5が示す国産・ローカルLLMという選択肢
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 国産モデルの登場→実力検証→オープンな研究モデルの中身→自前で動かす選択肢、と「国産・ローカル」を現実の選択肢に変える道筋を段階的にたどる。
+
+**Article Order & Roles:**
+1. [081] Sarashina発表 — Foundation（登場: SB Intuitionsの日本語特化6モデル）
+2. [073] sarashina3-mini推敲比較 — Development（実力: Gemini/Claude比の書き換え傾向と課題、中央値4.2秒）
+3. [070] LLM-jp-4公開データ — Development（中身: NII公開の学習データ構成と品質、開発の留意点）
+4. [107] LocalLLM Claude Code代替検証 — Development（運用: B200×Qwen3.5が18問中17問、16人同時・1人月1.4万円）
+5. [028] Janas C製推論エンジン — Payoff（土台: 32GB RAMで80Bを37tok/s、ローカル運用の裾野）
+
+**Narrative Arc:** 国産モデルの発表から実力検証、オープン研究モデルの内部、そして一般的なハードで自前運用する技術まで、コストと主権を軸に「選択肢」が具体化する。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [081] → [073] | 6モデルの発表から、標準モデルの実力を他社比較で検証する具体へ |
+| [073] → [070] | SB Intuitionsの製品から、NIIのオープンモデルと学習データの中身へ |
+| [070] → [107] | 国産モデルの話から、オープンモデル全般をローカルで動かす実証へ |
+| [107] → [028] | B200のような高性能環境から、普通のノートPCでも動かす推論エンジンへ（裾野の拡大） |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 「国産」と「ローカル」はコストと海外依存への具体的な回答として束ねられる
+- 発表（081）だけでなく実測（073/107）と内部公開（070）が揃い、検証可能になった
+- ローカル運用の裾野が高性能GPUからノートPCまで広がりつつある
+
+**Conclusion Approach:** フロンティアモデル一択ではなく、用途・コスト・データ主権で国産・ローカルを選ぶ現実味が出てきた、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 国産・ローカルLLMは今どこまで実用的か
+2. フロンティアモデルとの使い分けの軸は何か
+3. 自前運用のコストと制約は何か
+4. この選択肢は次にどう広がるか
+
+---
+
+### Theme 6: Linus Torvalds・ClaudeのECDSA解明・東方再構築に見る難問攻略とリバースエンジニアリング
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 「AIが長年の難問や文書化されていない対象に挑む」という共通軸を、カーネル・暗号標準・ゲーム・ハードウェアという別領域の事例で多面的に見せる。互いに対立しない並列の事例群。
+
+**Article Order & Roles:**
+1. [106] Torvalds×Claude Code（Phoronix報道） — Case（事実: カーネルのメモリ管理改善）
+2. [084] Torvalds 13年バグ4件（日本語解説） — Case（深掘り: 106の中身を日本語で）
+3. [055] Claude ECDSA曲線の起源解明 — Case（暗号: 25年来のシード値の謎を格子問題で）
+4. [085] 東方再構築（REA tools） — Case（RE: 文書のない既存コードの再構築）
+5. [049] Red Hat ハードウェアRE — Case（RE: ハードウェアのリバースエンジニアリング）
+
+**Narrative Arc:** 分野の異なる事例を並べ、AIが「誰も解けなかった/記録のない」対象に実際に食い込んでいる広がりを事実ベースで示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [106] → [084] | 事実報道から、その中身（13年埋もれたバグ4件）を日本語で掘り下げる |
+| [084] → [055] | コードの難問から、暗号標準という別種の長年の謎へ |
+| [055] → [085] | 解明から、文書のない既存コードの再構築（RE）へ |
+| [085] → [049] | ソフトのREから、ハードウェアのREへ領域を広げる |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 難問攻略の共通点は「長文脈＋根気のいる探索」をAIが肩代わりする点
+- 対象はコード・暗号・ゲーム・ハードと広く、特定分野の話ではない
+- 人間の専門家の役割は「問いの設定と検証」に寄っていく
+
+**Conclusion Approach:** AIが難問・未文書領域に食い込む事例が領域横断で増えている、と事実ベースで締める（過度な一般化はしない）。
+
+**Assembly Prompts for STEP_08:**
+1. AIはどんな難問に実際に効いたか
+2. 共通する攻略の構造は何か
+3. 人間の専門家の役割はどう変わるか
+4. リバースエンジニアリングはどこまで来たか
+
+---
+
+### Theme 7: Rich Hickey・バークレー研究・Current Affairsが投げかけるAIへの異議申し立て
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** AIへの批判・懐疑という立場で一致する複数の声（思想・実証研究・学問・組織・個人）を重ね、本誌の技術楽観への意図的な対置軸とする。各記事は互いに対立せず、同じ方向から異議を唱える。
+
+**Article Order & Roles:**
+1. [142] Rich Hickey AIツール批判 — Lead（思想: LLMは人間のスキルを奪う「自動化」）
+2. [026] バークレー研究 10分で粘る力が落ちる — Evidence（実証: 無作為化試験）
+3. [025] Quanta 数学の終わり？ — Perspective（学問: 数学の営みへの影響）
+4. [051] Current Affairs なぜ我々はAIを禁止するか — Perspective（組織の判断: 禁止の論理）
+5. [047] AI was great until it was not — Perspective（個人の実感: 幻滅の記録）
+
+**Narrative Arc:** 思想的批判から実証研究、学問・組織・個人の各層へ、異議申し立ての具体を広げる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [142] → [026] | 思想的批判に、無作為化試験という実証の裏づけを重ねる |
+| [026] → [025] | 個人の能力の話から、数学という学問の営みへスケールを上げる |
+| [025] → [051] | 学問の懸念から、組織として「使わない」と決めた判断へ |
+| [051] → [047] | 原則的な拒否から、使ってみた個人の幻滅の実感へ |
+
+**Emphasis Balance:** Technical ⭐ / Business ⭐⭐ / Future ⭐⭐⭐（人間と社会への影響）
+
+**Key Synthesis Points:**
+- 批判は感情論でなく、思想・実証・実感の複数層で裏打ちされている
+- 「便利さ」と「能力・自律性の喪失」がトレードオフとして立ち上がる
+- 本誌の他テーマ（自律化・物理制御）への意図的なカウンターバランス
+
+**Conclusion Approach:** AIが約束するもの/奪うものを人間の側から見極める——という問いで締める（誇張や決めつけはしない）。
+
+**Assembly Prompts for STEP_08:**
+1. 批判はどんな根拠に立つのか
+2. 便利さと引き換えに何が失われうるか
+3. 組織・個人はどう距離を取るか
+4. この異議は何を問うているのか
+
+---
+
+### Theme 8: WebMCP・Cloudflare・Interop 2027が形づくるエージェンティックWeb
+
+**Pattern:** Progressive-Sequence
+**Pattern Rationale:** 「なぜ重要か」という概念から、設計指針、支える基盤、信頼・説明責任、UXまで、エージェンティックWebを層として積み上げる。
+
+**Article Order & Roles:**
+1. [002] なぜWebMCPが重要か — Foundation（概念: 人間向けWebをエージェントにも開く意義）
+2. [124] O'Reilly 人とエージェント双方のためのWeb設計 — Development（設計: WebMCPで両対応する作り方）
+3. [115] Cloudflare OpenAI discovery/agentic web — Development（基盤: エージェント流通の仕組み）
+4. [116] Cloudflare Verified Bots/説明責任 — Development（信頼: 正規ボットの検証・説明責任）
+5. [126] ボットのアクセシビリティ — Payoff（UX: 見えないエージェントへの配慮）
+
+**Narrative Arc:** 概念→設計→基盤→信頼→UXと、エージェンティックWebを成立させる層を順に示す。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [002] → [124] | 「なぜ重要か」から「ではどう設計するか」へ |
+| [124] → [115] | サイト側の設計から、流通を支えるインフラ（Cloudflare）へ |
+| [115] → [116] | 流通の仕組みから、誰が正規のエージェントかを検証する信頼層へ |
+| [116] → [126] | 技術的な信頼から、エージェント向けアクセシビリティというUXの配慮へ |
+
+**Emphasis Balance:** Technical ⭐⭐ / Business ⭐⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- Webが「人間が読むもの」から「人間とエージェントの両方が使うもの」へ再設計されつつある
+- 標準（WebMCP）と基盤（Cloudflare）と信頼（Verified Bots）が同時並行で立ち上がっている
+- アクセシビリティの発想がエージェントにも拡張される
+
+**Conclusion Approach:** エージェンティックWebは単一技術でなく、標準・基盤・信頼・UXの層が揃って初めて成立する、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. WebMCPは何を可能にするか
+2. サイト運営者は何を準備すべきか
+3. 正規エージェントの信頼はどう担保するか
+4. エージェンティックWebは次にどこへ向かうか
+
+---
+
+### Theme 9: Agent Baseline・Anthropic OSS Scanner・1Passwordに見るエージェント実行のセキュリティ境界
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 「エージェント実行をどう安全に囲うか」という共通課題に、問題提起（labsが基本を飛ばす）と複数の具体的な防御手段が別角度から答える。
+
+**Article Order & Roles:**
+1. [103] frontier labsが基本を飛ばしている（CSO） — Problem framing（問題提起: 暴走でなく基本の欠落）
+2. [010] Agent Baseline software factory — Response（防御: 実行基盤のベースライン）
+3. [009] Anthropic OSS Scanner — Response（防御: 依存のスキャン）
+4. [114] 1Password AI敵対的エミュレーション — Response（検証: 攻撃者視点のエミュレーション）
+5. [130] plimsoll — Response（ツール: 実行境界を具体的に引く）
+
+**Narrative Arc:** 「なぜ危ういか」という問題提起に、ベースライン・スキャン・敵対的検証・境界ツールという複数の防御が応答する構図。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [103] → [010] | 「基本を飛ばしている」という問題提起に、実行基盤のベースラインで応える |
+| [010] → [009] | 実行環境の整備から、依存コードのスキャンへ |
+| [009] → [114] | 守りの整備から、攻撃者視点で検証するエミュレーションへ |
+| [114] → [130] | 検証から、実行境界を具体的に引くツールへ |
+
+**Emphasis Balance:** Technical ⭐⭐⭐ / Business ⭐⭐ / Future ⭐⭐
+
+**Key Synthesis Points:**
+- 問題は「AIの暴走」より「基本的なセキュリティの欠落」——地味だが実務的
+- 防御はベースライン・スキャン・敵対的検証・境界ツールの組み合わせ
+- 「安全に止められる境界」がエージェント実行の前提になりつつある
+
+**Conclusion Approach:** エージェント実行の安全は派手な脅威対策でなく、基本の徹底と明確な境界にある、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 何が「基本の欠落」なのか
+2. どんな境界/防御が現実的か
+3. 攻撃者視点の検証は何を見つけるか
+4. エージェント実行の安全設計はどこへ向かうか
+
+---
+
+### Theme 10: 「センスより判断」論・Anthropic Design・Figma Specsが示すAI時代のデザイン再定義
+
+**Pattern:** Multi-Perspective
+**Pattern Rationale:** 「AI時代にデザインの価値は何か」という問いに、思想（センスより判断）・企業の実践・UIのあり方・歴史的比喩・ツールが別角度から答え、「説明可能な判断」という方向へ収斂する。
+
+**Article Order & Roles:**
+1. [017] センスはデザイン手法ではない — Lead thesis（思想: 「センス」より説明可能な「判断」）
+2. [023] Anthropicのデザイン — Perspective（企業の実践: AI企業のデザイン組織）
+3. [020] エージェント時代のPure UI — Perspective（UIのあり方）
+4. [016] 誰もが持つが誰もプログラムできなかったシンセ — Perspective（歴史的比喩でAIデザインを照らす）
+5. [014] Figma Specs — Payoff（ツール: 仕様をデザインに落とす具体）
+
+**Narrative Arc:** 「センスより判断」という中心命題を、企業実践・UI論・歴史的比喩で裏づけ、最後にFigma Specsという具体ツールへ着地させる。
+
+**Transition Strategy:**
+| From → To | Approach |
+|-----------|----------|
+| [017] → [023] | 「判断」の命題を、AI企業（Anthropic）の実際のデザイン実践で受ける |
+| [023] → [020] | 組織の話から、エージェント時代のUIのあり方へ |
+| [020] → [016] | 現在のUI論に、歴史的な比喩（シンセ）で遠近法を与える |
+| [016] → [014] | 概念・比喩から、仕様を形にする具体ツール（Figma Specs）へ |
+
+**Emphasis Balance:** Technical ⭐⭐ / Business ⭐⭐ / Future ⭐⭐⭐
+
+**Key Synthesis Points:**
+- デザインの価値が「感覚（センス）」から「説明できる判断」へ移る
+- AI時代のUIは「作り込み」より「仕様と判断の明示」に寄る
+- ツール（Figma Specs）が判断の明示化を後押しする
+
+**Conclusion Approach:** AI時代のデザインは、センスの神秘化をやめ、判断を説明可能にする方向へ再定義されつつある、と締める。
+
+**Assembly Prompts for STEP_08:**
+1. 「センスより判断」とは具体的に何か
+2. AI時代のUIはどう変わるか
+3. デザイナーの価値はどこに移るか
+4. ツールは判断の明示をどう支えるか
+
+---
+
+## Assembly Plan Status
+
+- [x] Phase 1: Pattern library reviewed
+- [x] Phase 2: Patterns selected and customized for all themes
+- [x] Phase 3: Assembly strategies documented
+- [x] ASSEMBLY PLAN APPROVED - Ready for STEP_08
+
+**Pattern distribution:** Single-Focus ×1 (T1); Progressive-Sequence ×4 (T2, T4, T5, T8); Multi-Perspective ×5 (T3, T6, T7, T9, T10).
+
+**Approval Date:** 2026-10-25 (via AskUserQuestion)
+**Approver:** beijaflor
