@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:24:53.968959+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pensieve: AIエージェントに分散した開発文脈を統合提供するローカルMCPサーバー",
+    "url": "https://pensieve.tools/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが開発時の文脈を失わないよう、SlackやJira、GitHubなどの情報を一つのスレッドに統合し、MCP経由で最適なコンテキストを提供するローカルツール。",
+    "summaryBody": "Pensieveは、Claude Code、Cursor、WindsurfなどのAIコーディングエージェント向けに、プロジェクトの文脈（コンテキスト）を効率的に管理・提供するローカルMCP（Model Context Protocol）サーバーです。\n\n### 主な機能とメリット\n- **情報のスレッド化**: Slackのスレッド、Jiraのチケット、GitHubのPR、過去のエージェントセッションなど、複数のツールに散らばった情報を特定のゴール（タスク）ごとに「スレッド」として集約します。\n- **エージェントのパフォーマンス向上**: 単純なgrep検索に頼る場合と比較して、ツール呼び出しを47%削減、トークンコストを23%削減、タスク解決時間を29%高速化するというベンチマーク結果が出ています。\n- **コンテキスト共有**: 調査した文脈をHTMLファイルとしてエクスポートし、チームメンバーやそのAIエージェントに「JSONを含むスレッド」としてそのまま受け渡すことが可能です。 \n- **ローカルファーストの設計**: インデックス作成や検索モデルはMac上でローカルに動作し、プライバシーを確保。オープンソース（MITライセンス）で提供されています。\n\n### 導入環境\nApple Silicon搭載Macに最適化されていますが、LinuxやIntel Macでもバックエンドの利用が可能です。主要なMCPクライアントに対応しており、開発者はエージェントを通じて情報の検索や要約をシームレスに行えます。",
+    "topics": [
+      "MCP",
+      "AI Agents",
+      "Claude Code",
+      "Developer Tools",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Pensieve: never lose the thread · MCP server for AI agents"
+  }
+}

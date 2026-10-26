@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:38:56.726713+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM-jp-4 の公開CPT・SFTデータを読んでみた",
+    "url": "https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM-jp-4および4.1の事前学習・中間学習・事後学習データの内部構成や品質を実サンプルに基づき詳細に調査し、開発時の注意点をまとめたレポート。",
+    "summaryBody": "国立情報学研究所（NII）らが公開したLLM-jp-4/4.1のデータセット構造を詳細に分析した記事です。\n\n- **事前学習データ**: 日本語は約688Bトークン（全体の3.5%）で、Web、特許、PDF（WARP）等が主。PDF由来データには段組み崩れ等のノイズが含まれる実態を指摘しています。\n- **中間学習**: 英語の数学やコードに加え、指示データをgpt-oss-120bで再生成したものが事前学習と同じ形式で含まれています。\n- **SFT/DPOデータ**: 思考（analysis）と最終回答（final）を分けた形式を採用。日本語の問いに対しても思考は英語で行われる傾向や、4.1での回答の簡潔化、DPOにおける同一回答ペアの存在など、学習に流用する際の留意点が具体的に示されています。\n- **実践的アドバイス**: 装飾の多い回答の除去、PDFの正規化、DPOデータのフィルタリングなど、日本語モデル開発に向けた具体的な指針を提供しています。",
+    "topics": [
+      "LLM-jp-4",
+      "データセット分析",
+      "SFT",
+      "DPO",
+      "日本語LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:56:23.332532+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCPが重要な理由：AIエージェントのためのWebパフォーマンス",
+    "url": "https://blog.yoav.ws/posts/why_webmcp_matters/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "WebMCPは、AIエージェントがWebサイトと直接対話するためのJavaScriptツールを提供し、従来のブラウザ自動化よりも劇的な高速化と低コスト化を実現する新しい標準提案です。",
+    "summaryBody": "ShopifyのYoav Weiss氏による、AIエージェント時代のWeb標準「WebMCP (Model Context Protocol for the Web)」の意義を説いた解説記事です。\n\n- **WebMCPの仕組み**: サイト側がエージェントに対し、入力・出力スキーマを定義した明示的なJSツールを登録します。これにより、エージェントはDOM解析やスクリーンショットに頼ることなく、直接かつ確実に機能を呼び出せます。\n- **劇的なパフォーマンス向上**: ShopifyのCheckoutチームの検証では、従来のブラウザ自動化と比較して速度が2.7倍向上、コストが58%削減、さらに成功率も向上（60回中60回成功）したことが示されています。\n- **ブラウザベンダー間の議論**: WebKit（Apple）などの「HTMLセマンティクスで解決すべき」という立場に対し、著者は「エージェントであることを明示的に識別できる」ことが、ボット判定による誤ブロックを防ぎ、UXを最大化するために不可欠であると反論しています。\n- **Webの未来**: ユーザーが使い慣れたエージェントを通じてWebを操作する「共同ブラウジング（Co-browsing）」体験を最適化することが、Webが今後もコンピューティングプラットフォームとして勝ち残るための鍵であると強調しています。",
+    "topics": [
+      "WebMCP",
+      "AI Agents",
+      "Web Performance",
+      "Shopify",
+      "W3C"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Why WebMCP matters"
+  }
+}

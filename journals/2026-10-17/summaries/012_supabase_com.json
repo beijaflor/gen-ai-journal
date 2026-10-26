@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:51:33.658610+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントごとにローカルSupabaseプロジェクトを：Dockerの有無にかかわらず実行可能に",
+    "url": "https://supabase.com/blog/local-supabase-project-per-agent-with-or-without-docker",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Supabase CLIがGitワークツリーごとの複数プロジェクト並行実行と、Docker不要のネイティブ実行に対応し、AIエージェントやCI環境に最適な高速・省メモリな開発環境を実現しました。",
+    "summaryBody": "Supabase CLI v2.119.0にて導入された「実験的スタック」により、ローカル開発環境の柔軟性が飛躍的に向上しました。主なアップデートとして、1つのマシン上でGitワークツリーごとに独立したプロジェクト（Postgres、Storage、Edge Functions等）を起動できるようになり、開発エージェントが互いに干渉せずテストや移行を行えます。また、新たに「ネイティブ実行」モードをサポートし、Dockerなしで13の全サービスを直接実行可能になりました。これにより、メモリ使用量は従来の約10分の1に削減され、起動時間も数秒に短縮されています。さらに、GitHubのプルリクエスト時に作成されるリモートブランチの準備速度も5倍近く高速化され、設定や関数、ネットワーク制限の同期も強化されました。これにより、個別のサンドボックスやCI環境での運用がより実用的になっています。",
+    "topics": [
+      "Supabase",
+      "Supabase CLI",
+      "Local Development",
+      "AI Agents",
+      "Docker"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 93
+    },
+    "originalTitle": "A local Supabase project per agent, with or without Docker"
+  }
+}

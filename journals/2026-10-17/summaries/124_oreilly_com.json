@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:26:32.267796+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WebMCPで人間とAIエージェントの両方に最適化されたウェブサイトを設計する",
+    "url": "https://www.oreilly.com/radar/designing-websites-for-people-and-ai-agents-with-webmcp/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "WebMCPを利用して、AIエージェントがウェブサイトの機能を構造化されたツールとして呼び出せるようにし、人間とAIが共存できる新しいウェブインターフェースの設計手法を解説する。",
+    "summaryBody": "この記事は、AIエージェントがウェブサイトを操作する際の効率と精度を向上させる新標準「WebMCP」について解説しています。従来のAIエージェントは画面解析やDOM操作に依存していましたが、WebMCPでは開発者が`document.modelContext.registerTool`を用いて、検索やフォーム送信などの機能を明示的なスキーマを持つ「ツール」として登録できます。これにより、エージェントは正確な引数で機能を直接実行でき、トークン消費の削減とエラー率の低下が期待できます。また、既存のHTMLフォームに特定の属性を追加するだけでエージェント対応にする宣言的な手法や、人間による確認プロセスを維持する設計指針、ChromeやCloudflareでの実験的な実装状況についても触れられています。",
+    "topics": [
+      "WebMCP",
+      "AI Agents",
+      "MCP",
+      "Web Standards",
+      "Agentic AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Designing Websites for People and AI Agents with WebMCP – O’Reilly"
+  }
+}

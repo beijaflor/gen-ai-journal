@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:19:39.260156+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT の dots に Gmail・カレンダー・Slack・Notion をつないで、何ができて何ができないかを確かめた",
+    "url": "https://qiita.com/chooser/items/52de55a56647586b5187",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChatGPTの新機能「dots」を用い、GmailやNotion等の実務ツールと連携して3日間の検証を行った結果、情報の要約は優秀だが破壊的操作の即時実行や確認フローに注意が必要であることが判明した。",
+    "summaryBody": "ChatGPTに実装されたパーソナライズAI担当者機能「dots」を、実際の業務環境（Gmail、Googleカレンダー、Slack、Notion、GitHub等）で3日間運用した詳細な検証レポートです。要約や検索、GitHubのコミット数集計といった「読み取り・まとめ」のタスクは極めて正確に実行可能でした。一方で、書き込み操作に関しては「削除」や「送信」が確認なしで即座に実行されるリスクがあることや、権限の許可画面がメインスレッド以外の「子の会話」に表示されるため、気づかずに作業が止まる可能性がある点が課題として挙げられています。また、デスクトップアプリを介してローカルのMacを操作する場合、操作ログがユーザー本人の名前で残る仕様や、定期実行の数分程度の遅延、ChatGPT Pro（月額$200）プラン内でのクレジット消費についても言及されており、AIエージェントを実務に導入する際の具体的な勘所がまとめられています。",
+    "topics": [
+      "ChatGPT",
+      "AIエージェント",
+      "dots",
+      "業務自動化",
+      "ChatGPT Pro"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

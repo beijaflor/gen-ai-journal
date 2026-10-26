@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:22:53.998915+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェント、コード量は増やすがソフトウェア成果物は増やさないとの研究結果",
+    "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ハーバード大学の研究により、AIコーディングエージェントはコード生成量を劇的に増やす一方で、人間によるレビュー負荷を増大させ、最終的なソフトウェア成果物の量には寄与していない実態が明らかになった。",
+    "summaryBody": "ハーバード大学のFiona Chen氏とJames Stratton氏による、700社以上のエンジニアリングデータを分析した研究結果の報告。AIコーディングエージェントの導入により、コード行数は30%、プルリクエスト（PR）数は23%増加したが、Jira等で管理される課題解決率には統計的に有意な変化が見られなかった。この乖離の主な要因は「人間によるレビューのボトルネック」にある。AI導入後、PR提出からマージまでのレビュー時間は平均49%増加し、修正要求の割合はほぼ倍増、コメント数も35%増加した。AIが生成する大量かつ不確実なコードを人間が精査するコストが、コーディング自体の効率化を相殺している。また、AIによるレビュー補助の効果は現時点では限定的であり、企業の雇用数にも大きな変化は見られない。AIエージェントによる開発の加速は、下流工程の制約によって「吸収」されているのが現状である。",
+    "topics": [
+      "AIコーディングエージェント",
+      "ソフトウェアエンジニアリング",
+      "生産性分析",
+      "コードレビュー",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "AI coding agents generate more code, but not more software - Ars Technica"
+  }
+}

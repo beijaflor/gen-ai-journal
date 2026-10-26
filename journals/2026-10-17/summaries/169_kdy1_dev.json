@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:15:58.364476+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIでUIを構築する方法：SWC作者の自動化ワークフロー",
+    "url": "https://kdy1.dev/2026-10-12-ai-ui",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "SWCの作者DongYun Kang氏が、画像生成AIによるモック承認と独自スクリプトによる並列実装を組み合わせた、高速なUI開発ワークフローを公開しました。",
+    "summaryBody": "SWCの作成者として知られるDongYun Kang氏（kdy1）が、AIを活用してUI開発を効率化する独自のプロセスを解説しています。主なステップは以下の通りです。\n\n### 3段階のワークフロー\n1. **モックアップの承認 (`$design-ui`)**: AIが画像生成AI（imagegen）を用いてUIの試案を作成し、人間に承認を求めます。これにより、コードを書く前に視覚的な合意形成を行います。\n2. **Issueへの登録 (`$add-issue`)**: 承認されたモックと指示プロンプトをGitHub Issueに自動で紐付けます。\n3. **並列実装 (`$slop-fix-batch`)**: 登録された複数のIssueをAIが並列で自動実装します。\n\n### ポイント\n最大の特徴は、AIにいきなりコードを書かせるのではなく「画像での承認」を先に挟むことで、手戻り（バックアンドフォース）を最小限に抑えている点です。氏は現在、このフローを活用して個別のレビューを挟まずに直接メインブランチへマージする運用を実現しています。",
+    "topics": [
+      "AI Workflow",
+      "UI Development",
+      "LLM Automation",
+      "SWC",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "How I Build UIs with AI"
+  }
+}

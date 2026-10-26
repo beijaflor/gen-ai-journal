@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:41:45.610874+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模テキストデータを活用したサービス特化型言語モデルの社内共有プロジェクト：Moegi",
+    "url": "https://techblog.lycorp.co.jp/ja/20261015a",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LINEヤフーが自社サービスの大規模データを活用し、高精度かつ低コストなサービス特化型BERTモデルを社内共有するプロジェクト「Moegi」の取り組みを紹介。",
+    "summaryBody": "LINEヤフーでは、Yahoo!ショッピングやYahoo!検索などの特定ドメインに最適化した事前学習済み言語モデルを社内共有するプロジェクト「Moegi」を運用している。汎用モデルでは不足しがちなサービス特有の語彙や表記ゆれに対応するため、軽量なBERT系モデルを中心にドメイン適応を実施。性能評価では、公開されている日本語BERTモデルを全てのタスクで上回る精度を確認した。また、最新の商用LLM（GPT-4/5世代相当）と比較しても、実用タスクで同等の精度を維持しながら、推論コストを約900分の1〜1700分の1に削減できることを実証した。現在は商品属性推定や検索サジェスト改善など、多くの実サービスで活用され、開発の重複排除と運用効率化に寄与している。",
+    "topics": [
+      "自然言語処理",
+      "BERT",
+      "ドメイン適応",
+      "LINEヤフー",
+      "機械学習インフラ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

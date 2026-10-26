@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:53:15.365381+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAIはヨーダのような話し方で書くのか？",
+    "url": "https://www.oreilly.com/radar/why-does-ai-write-like-yoda/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成する「ヨーダ」のような倒置表現や不自然な構文の原因を、LLMの逐次的な単語予測とアテンション機構の特性から解き明かし、それを逆手に取った執筆プロセスを提案する。",
+    "summaryBody": "著者のAndrew Stellman氏は、AIの「文章力の低さ」を逆手に取り、アウトラインの代わりに不自然なAIドラフトを生成させてプレースホルダーとして利用する執筆手法を紹介しています。記事の核心は、AIがなぜ「ヨーダ記法」と呼ばれる独特の倒置や不自然なカンマ区切りのフレーズを生成するのかという技術的分析です。LLMは自己回帰（Autoregression）により一語ずつ単語を生成するため、一度出力した単語を修正できず、後から思い出した情報を文末に無理やり付け加えることで構文が崩れます。また、著者の実験により、入力データの「形状（文章か断片か）」がアテンション機構に影響を与え、出力の不自然さを助長することが示されました。AIが回答の直後に「より良い表現」を再提示することが多いのは、確定した過去のトークンを書き直せないというLLMの根本的な制約を補うための挙動であると指摘しています。",
+    "topics": [
+      "生成AI",
+      "大規模言語モデル (LLM)",
+      "ライティング",
+      "アテンション機構",
+      "自己回帰モデル"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Why Does AI Write Like Yoda?"
+  }
+}

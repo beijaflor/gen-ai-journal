@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:47:14.449981+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに「読める」ゲーム開発：ゲームをハーネス（基盤）化する技術的アプローチ",
+    "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ゲームをAIエージェントが理解・操作しやすい「ハーネス」として再構築するための、決定論的設計やデータ駆動型アーキテクチャ、シミュレーションの分離といった具体的な技術手法を解説しています。",
+    "summaryBody": "LLMはWeb開発には強力ですが、ゲーム開発ではその複雑さや不透明な資産のために苦戦することがあります。本記事は、ゲーム自体をAIエージェントが効率的に操作・検証できる「ハーネス（基盤）」として設計し直すためのフレームワークを提示しています。主な戦略として、決定論的な再現性を確保するための「固定シード値の乱数」、視覚的変化を定量化する「画像差分（odiff）」、AIのコンテキストを汚染しないための単一オブジェクト型（Fat Structs）の採用、コンパイルなしで調整可能な「外部データ管理（Depot）」、そしてゲーム機密をエンジンから切り離す「ブラックボックス・アーキテクチャ」が挙げられます。これらの手法により、エージェントが数秒で「変更・実行・検証」のループを回せるようになり、開発効率が劇的に向上することを説いています。",
+    "topics": [
+      "AIエージェント",
+      "ゲーム開発アーキテクチャ",
+      "決定論",
+      "データ駆動型開発",
+      "LLMワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "Your Game Is A Harness"
+  }
+}

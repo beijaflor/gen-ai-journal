@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:31:57.417593+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "imozuru: 知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
+    "url": "https://github.com/MaryCache/imozuru",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "図書館情報学の理論を応用し、要約に頼らず一次資料を芋づる式に収集・整理してClaude Codeでの深い調査を支援する自動探索ツール。",
+    "summaryBody": "imozuruは、Claude Code上で動作する、未知の分野を深く調査するためのカスタムスキルです。BatesのベリーピッキングやKuhlthauの探索過程モデルなど、図書館情報学の研究知見を設計に組み込んでいる点が特徴です。従来のLLMが得意とする「要約」ではなく、用語・人物・場所をマッピングした上で、引用やリンクを辿り原文（一次資料）を直接収集することに特化しています。収集した資料は加工せず保存され、最終的に主張と原文の行番号を紐付けた「抜き書きレポート」を生成します。これにより、情報の欠落やハルシネーションを防ぎつつ、ユーザー自身が根拠に基づいて判断できる環境を提供します。PDFのOCR処理やYouTube字幕の取得にも対応し、学術的な調査から技術ブログの探索まで幅広く活用可能です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "情報探索",
+      "図書館情報学",
+      "一次資料"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

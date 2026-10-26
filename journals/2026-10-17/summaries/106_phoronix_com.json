@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:30:40.118009+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リーナス・トーバルズ氏、Claude Codeを活用してLinuxカーネルのメモリ管理を大幅改善",
+    "url": "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "リーナス・トーバルズ氏がAIアシスタント「Claude Code」を駆使し、ページキャッシュ読み取り時の参照カウントによるボトルネックを解消する画期的なカーネルパッチを開発しました。",
+    "summaryBody": "Linuxの創始者であるリーナス・トーバルズ氏が、AnthropicのAIコーディングアシスタント「Claude Code」を利用してLinuxカーネルの大幅なパフォーマンス向上に取り組んでいます。\n\n### 開発の背景と内容\n- **技術的課題:** 多数のスレッドが単一のファイルを細かく読み出す際、ページキャッシュの管理単位である「folio」の参照カウント操作が競合し、パフォーマンスを低下させる問題がありました。\n- **AIの役割:** リーナス氏は新設されたブランチ `noref-filemap-read-with-llm` において、Claude Codeを活用。コードの実装だけでなく、テストプログラムの作成、コードレビュー、さらにはパッチ送信時のカバーレターの初稿作成までAIの支援を受けています。\n- **劇的な改善:** リーナス氏自身の測定によると、特定の条件下でスループットが数倍に向上するなどの顕著な成果が得られました。\n\n### AI活用に対する姿勢\nリーナス氏はAIを「便利なツール」として肯定的に捉えており、今回の改善はAIが実験的なコードだけでなく、OSのコア部分の最適化においても実用的な段階に達していることを示唆しています。この変更は、Linux 7.4の次期マージウィンドウでの統合が期待されています。",
+    "topics": [
+      "Linux Kernel",
+      "Linus Torvalds",
+      "Claude Code",
+      "AI Coding",
+      "Performance Tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code"
+  }
+}

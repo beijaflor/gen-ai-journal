@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:53:48.403185+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ハーネス（行動制御・検証ツール）にコストをかける価値はあるか？",
+    "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コーディングエージェントにおいて、安価なモデル（GPT-6 Luna）に実行可能なフィードバックループ（ハーネス）を導入することで、高価なモデル（GPT-6 Sol）を上回るコスト効率と高い信頼性を実現できることを実証した研究。",
+    "summaryBody": "本記事は、AIコーディングエージェントの開発プロセスに「行動ハーネス（behavioral harness）」を組み込むことの経済的・技術的な価値を検証した実験レポートです。フロンティアモデルであるGPT-6 Solは、ハーネスなしでも複雑なBFFの実装を完璧にこなしましたが、コスト最適化モデルのGPT-6 Lunaは単体では成功率30%に留まりました。しかし、OpenAPI/AsyncAPI等の仕様に基づいたガイドとセンサー（ハーネス）を提供することで、Lunaの成功率は100%へと飛躍しました。特筆すべきは、ハーネスによるトークン増分を含めても、Lunaを使用した方がSolの単体利用より33%低コストで同等の信頼性を得られた点です。結論として、モデルの能力に応じて、開発中の「実行可能な注意（executable attention）」としてハーネスを常用するか、あるいは最終確認ゲートとしてのみ利用するかを使い分ける戦略を提唱しています。",
+    "topics": [
+      "AI Coding Agents",
+      "Software Architecture",
+      "Cost Optimization",
+      "GPT-6",
+      "Test Driven Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Are Harnesses Worth the Cost?"
+  }
+}

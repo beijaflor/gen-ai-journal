@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:36:45.605551+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに読みやすい文章を書かせるためのスキルなど 2026年9月版",
+    "url": "https://eiji.page/blog/face-ai-sentence-2026-09/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI特有の不自然な言い回しや読みづらさを、形態素解析ベースのスキルやtextlintのカスタムルールを活用して改善する実用的な手法の紹介。",
+    "summaryBody": "AIが生成する文章の「読みづらさ」を解消するために著者が実践している手法が解説されています。主なアプローチとして、文章のリズムを整える「natural-japanese」と、AIが多用しがちな不自然な語彙（例：「〜の口を呼ぶ」「掛かる」など）を検知する「textlint-rule-preset-ai-words-ja」を組み合わせて使用しています。これらの設定は「agent-skills-nix」を通じてNixで管理されており、既存のスキルに対して独自の禁止・推奨ルールを柔軟に統合するワークフローが示されています。AI臭さを完全に取り除くのではなく、あくまで人間にとって読みやすい品質を効率的に確保することに主眼を置いています。",
+    "topics": [
+      "AIライティング",
+      "textlint",
+      "Nix",
+      "プロンプトエンジニアリング",
+      "校正ツール"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 82
+    }
+  }
+}

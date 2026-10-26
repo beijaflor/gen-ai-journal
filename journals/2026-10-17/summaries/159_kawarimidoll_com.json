@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:18:17.286845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントにコミット整理を教えるgit-surgeonが良さげかも",
+    "url": "https://kawarimidoll.com/posts/202610051/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが対話型UIを介さずにGitのhunk単位でのステージングやコミット分割を精密に行えるようにする、Rust製の非対話型CLIツール「git-surgeon」の紹介記事。",
+    "summaryBody": "git-surgeonは、自律型コーディングエージェント（AIエージェント）向けに設計されたGit操作用プリミティブを提供するツールです。通常のGitでは`git add -p`のように対話的な操作が必要なhunk単位のステージングやコミット分割を、非対話的なコマンド（hunk指定や行範囲指定など）で実行可能にします。これにより、AIエージェントが変更を不適切にまとめてしまったり、必要な変更を消去したりする問題を回避できます。主な機能として、特定行のステージ/アンステージ、既存コミットの分割・統合、チェックアウトなしでの別ブランチへのコミットなどが含まれます。Claude Code向けプラグインも同梱されており、エージェントによるGit操作の精度向上に寄与します。",
+    "topics": [
+      "Git",
+      "AI Agent",
+      "Rust",
+      "Claude Code",
+      "Developer Tools"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

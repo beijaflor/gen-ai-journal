@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-21T10:20:02.763996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの全セッションを1画面で管理するローカルダッシュボードをNext.jsで実装する",
+    "url": "https://qiita.com/masakazuimai/items/cd80e1e913532864b615",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Next.jsとClaude Code CLIを連携させ、DBを使わずにローカルのセッション一覧表示やバックグラウンド起動、ログ閲覧を行うダッシュボードの実装解説。",
+    "summaryBody": "Claude Codeを複数プロジェクトで並行利用する際の状態管理を容易にするため、Next.js（App Router）で構築するローカルダッシュボードの設計・実装法を解説しています。主な特徴は、データベースを介さず `claude agents --json` コマンドや `~/.claude` 下のJSONLログを直接パースして状態を表示する点です。zodを用いたCLI出力の正規化、`spawn`による安全なバックグラウンドセッションの起動、ディレクトリの信頼済み判定の落とし穴、さらにはDNSリバインディング対策を含むセキュリティの実装まで、実用的なコード例とともに詳述されています。開発効率を高めるための「AIと人間の共同管理」を支えるツールとしての側面が強調されています。",
+    "topics": [
+      "Claude Code",
+      "Next.js",
+      "TypeScript",
+      "AIエージェント",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 90
+    }
+  }
+}
