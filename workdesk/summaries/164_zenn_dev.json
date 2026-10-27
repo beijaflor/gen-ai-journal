@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:04:33.859993+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIペネトレーションテストツール「Strix」を試してみた",
+    "url": "https://zenn.dev/turquoise123/articles/df481032f6b405",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントが自律的にWebアプリの脆弱性を調査・検証するOSSペネトレーションテストツール「Strix」の導入方法と、Railsアプリに対する実戦的なレビュー。",
+    "summaryBody": "マルチエージェント構成（Graph of Agents）を採用した自律型AIハッカーツール「Strix」の試用レポートです。Strixは偵察・攻撃・検証をエージェント間で分担し、単なる静的解析に留まらず実際にPoC（実証コード）を作成して脆弱性を検証する点が特徴です。記事では、あえて脆弱性を仕込んだRailsアプリに対し、OpenAIのモデル（GPT-5系）を介してブラックボックス診断を実施。OSコマンドインジェクションやIDOR、XSSなどの検出に成功し、日本語での詳細なレポート出力も確認されました。一方で、1回の実行に約20ドルというLLMトークンコストがかかる点や、画面からリンクされていないエンドポイントの発見にはソースコードを読み込ませる「グレーボックス診断」や指示（instruction）の工夫が必要であるといった実用上の課題と対策も示されています。",
+    "topics": [
+      "AISecurity",
+      "Strix",
+      "ペネトレーションテスト",
+      "脆弱性診断",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

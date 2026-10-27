@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:06:17.612677+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIとコンテストに参加する",
+    "url": "https://zenn.dev/attgm/articles/d28df25b88254a",
+    "language": "ja",
+    "contentType": "🌐 Community & Events (コミュニティ・イベント)",
+    "oneSentenceSummary": "AtCoderの生成AI利用ルール試行コンテストに参加し、Codexを実装補助として活用しながらヒューリスティック問題に取り組んだ体験記。",
+    "summaryBody": "AtCoder Heuristic Contest (AHC) で検討中の「生成AI利用ルール」を評価するための試行コンテストへの参加レポートです。著者は、解法の考案・判断は人間が行い、AI（Codex）は実装・デバッグ・分析を補助するというルールに基づき、サイコロで荷物を運ぶパズル問題に挑戦しました。\n\n主なプロセスは以下の通りです：\n1. **ルール管理**: AGENTS.mdに利用規約を記載し、AIがルールを遵守しているか都度確認するフローを構築。\n2. **アルゴリズム改善**: 焼きなまし法による配送順の最適化、マンハッタン距離を用いたコスト評価、盤面の4隅からの探索など、人間が指示したロジックをAIに実装・リファクタリングさせる。\n3. **分析**: 荷物密度とクリア率の関係をAIに集計・可視化させ、次の方針（配送順の優先度見直し）を決定。\n\n最終的に、AIは仕様の不備指摘やルーチンコードの作成に非常に有用である一方、複雑な指示は人間が書く方が早い場面もあるとし、「思考は人間、実装はAI」という役割分担の感触が語られています。",
+    "topics": [
+      "AtCoder",
+      "AHC",
+      "生成AI",
+      "Codex",
+      "競技プログラミング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

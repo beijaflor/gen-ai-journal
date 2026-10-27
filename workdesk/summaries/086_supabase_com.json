@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:24:15.876684+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Supabase: コーディングエージェントによる本番環境の運用・監視自動化機能を発表",
+    "url": "https://supabase.com/blog/operate-with-confidence-check-production-with-your-coding-agent",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Supabaseが、AIエージェントを活用して本番環境のログ監視、セキュリティ診断、パフォーマンス最適化を自動化する「Agent prompts」や新ツール群をリリースしました。",
+    "summaryBody": "Supabaseは、ClaudeやCursorといったコーディングエージェントが本番環境のプロジェクトを自律的に監視・運用できるようにする一連のアップデートを公開しました。主な新機能は以下の5点です。\n\n1. **Agent prompts**: 健康状態、セキュリティ、パフォーマンス、リソース増減をエージェントにチェックさせるための専用プロンプト集。\n2. **query_logs**: 過去24時間のログに対してSQLで読み取り専用クエリを実行できる新しいMCPツール。\n3. **更新されたエージェントスキル**: PostgreSQLのエラーコードやRLSのブロック原因などを最新のドキュメントに基づいて診断可能に。\n4. **Health Check Advisors**: ダッシュボードに新設された「Health」タブでAPIやAuthのエラー率を可視化。\n5. **Database Connections**: ブロックされたクエリや長時間実行されているセッションをダッシュボードから直接管理・終了できる機能。\n\nこれらはMCP（Model Context Protocol）サーバーを通じて設定でき、スケジュール実行による定期監視も可能です。",
+    "topics": [
+      "Supabase",
+      "AI Agent",
+      "MCP (Model Context Protocol)",
+      "Observability",
+      "PostgreSQL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Operate with confidence: check production with your coding agent"
+  }
+}

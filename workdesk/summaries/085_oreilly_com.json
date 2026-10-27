@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:24:29.754897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはコードの書き方を変えたが、チームの協力のあり方はまだ変えていない",
+    "url": "https://www.oreilly.com/radar/ai-changed-how-we-code-it-hasnt-changed-how-we-work-together/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる開発の高速化に伴い、分散チーム間で失われがちな「開発の意図や背景（コンテキスト）」を、会議録画からトピック単位で抽出し共有する実験的ツール「ContextCue」の有効性を説く。",
+    "summaryBody": "ソフトウェア開発においてAIはコード生成やレビューを劇的に高速化したが、分散したチーム間での「なぜその変更が必要か」という背景情報の共有は依然として人間系の課題として残っている。O'Reillyのインターンである著者は、この情報の断絶を埋めるための実験的ツール「ContextCue」を開発した。このツールは、会議の録画からWhisperによる文字起こしだけでなく、Qwen VL等の視覚モデルを用いて画面共有のコンテキスト（何を指し示しているか）を抽出する。最大の特徴は、情報を「会議単位」ではなく「要望」や「決定事項」といった「トピック単位」で整理し、Markdown形式で保存することにある。これにより、後の工程を担当するチームやAIエージェントが、正確な意図を把握した上で作業を行えるようになる。技術的にはModel Context Protocol (MCP) やQdrantを用いたベクトル検索を活用しており、単なる議事録作成を超えた「共有された組織の記憶」としてのAI活用を提案している。",
+    "topics": [
+      "生成AI",
+      "ソフトウェア開発プロセス",
+      "チームコラボレーション",
+      "ナレッジマネジメント",
+      "ContextCue"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 88
+    },
+    "originalTitle": "AI Changed How We Code. It Hasn’t Changed How We Work Together."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:54:53.654670+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepInfer: DeepSeekモデル向けの大規模・高性能推論フレームワーク",
+    "url": "https://github.com/deepseek-ai/DeepInfer",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "DeepSeek-AIが公開した、NVIDIA SM100やHuawei Ascend 950に最適化された商用グレードのオープンソース大規模推論フレームワーク。",
+    "summaryBody": "DeepInferは、DeepSeekの商用サービスを支えるバックエンドをオープンソース化した高性能な推論フレームワークです。DeepSeek-V4.1-Flashなどの大規模モデルに最適化されており、FlashMLAやDeepGEMM、DeepEPといった独自開発の高速カーネルを搭載しています。MoE（Expert Parallelism）やDSparkによる投機的デコーディング、バッチ不変の推論（Batch-invariant inference）、構造化出力など、スケーラブルなサービングに不可欠な機能を網羅しています。ハードウェア面ではNVIDIAの最新GPU（SM100）やHuawei Ascend 950をサポートしている点が特徴で、vLLM、SGLang、TensorRT-LLMなどの既存フレームワークの知見を統合して構築されています。",
+    "topics": [
+      "DeepSeek",
+      "LLM Inference",
+      "NVIDIA Blackwell",
+      "Huawei Ascend",
+      "Machine Learning Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models"
+  }
+}

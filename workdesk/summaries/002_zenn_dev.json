@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:46:09.269360+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon Bedrock Guardrails を AnswerCarefully で試してみた",
+    "url": "https://zenn.dev/aws_japan/articles/bedrock-guardrails-japanese-tier",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazon Bedrock Guardrailsの日本語対応性能を安全性評価データセット「AnswerCarefully」で検証し、Standard Tierの有効性と過剰ブロックのトレードオフを詳解した実証レポート。",
+    "summaryBody": "Amazon Bedrock Guardrailsの日本語における検知精度を、LLM-jpの安全性評価データセット「AnswerCarefully」を用いて検証した記事です。主な知見として、日本語を適切に判定するには「Standard Tier」の明示的な指定が必須であり、Standard Tierでは有害な質問の遮断率が64.5%に達する一方、Classic Tierではわずか0.4%に留まることが示されました。一方で、政治や歴史といったデリケートな話題に対する「過剰ブロック」も顕在化しており、その主因が自然言語で定義する「Denied Topics」にあることを突き止めています。実運用における改善策として、入力段階では明白なリスクのみをフィルタリングし、文脈依存の判断が必要な内容はモデルの出力側で判定させることで、安全性を維持しつつ過剰ブロックを半減させるアプローチを提案しています。",
+    "topics": [
+      "Amazon Bedrock",
+      "LLM Safety",
+      "Guardrails",
+      "AnswerCarefully",
+      "AWS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

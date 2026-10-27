@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:05:29.550964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを利用したレガシーコード改善",
+    "url": "https://zenn.dev/naoyuki1212/articles/20261019-legacy-code-with-ai",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeを活用し、テスト不在のレガシーなExcel比較ツールに対して、特性テストによる現状固定、不具合修正、そしてSvelteからTypeScriptへの刷新を含む大規模なリファクタリングを完遂した事例報告。",
+    "summaryBody": "この記事は、Claude Code（エージェント型AI）を用いて、テストがなく依存関係が古いGo/Wails/Svelte製の自作アプリを改善したプロセスを詳述しています。まず「テストがないコードはレガシー」という定義に基づき、ユーザーイベントを起点とした特性テストとゴールデンファイルを導入してカバレッジ100%を達成。この「安全網」を構築した上で、AIが検知した挙動の矛盾（10件のバグ）を人間が判断して修正しました。さらに、AIの提案によるパッケージ分割やCLAUDE.mdの導入、UIフレームワーク（Svelte）から純粋なTypeScriptへの移行といった大幅なリファクタリングを実施。AIに現状の仕様を機械的に記録させることで、破壊的変更を伴う近代化を安全かつ効率的に進められることを実証しています。",
+    "topics": [
+      "Claude Code",
+      "レガシーコード改善",
+      "ユニットテスト",
+      "Wails",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

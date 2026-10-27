@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:38:04.084528+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ZOZOTOWNフロントエンドのPR自動レビュー ── AIへの指示が守られない前提で、強制と指示を分ける設計",
+    "url": "https://techblog.zozo.com/entry/zozotown-frontend-ai-review",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ZOZOTOWNの開発チームが、AI（Claude Code）によるPR自動レビューにおいて、AIへのプロンプト指示が守られないことを前提に、権限分離やフックを用いた「機械的な強制」を組み合わせた堅牢なシステム設計を解説しています。",
+    "summaryBody": "ZOZOTOWNのフロントエンド開発における、Claude CodeとGitHub Actionsを活用したPull Request（PR）自動レビューの設計手法についての詳報です。AIが指示を逸脱したり、プロンプトインジェクションの影響を受ける可能性を前提に、「指示」と「機械的な強制」を分離する設計思想を採用しています。具体的には、レビュー生成ジョブから書き込み権限を剥奪し、検証ジョブを介してのみ投稿を行う権限分離、Claude Codeの設定（deny）による特定ディレクトリの読み取り制限、フック（PreToolUse）を用いた調査試行回数の制限などを実装。AIの不確実性をシステム構造で補完し、Auto Approveの試験運用における安全性を高めるアプローチを紹介しています。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "AI Code Review",
+      "Security",
+      "Front-end Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

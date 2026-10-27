@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:01:10.818807+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevにウォーリーを探させたら0.4秒で見つけやがった!!",
+    "url": "https://qiita.com/kikuziro/items/c1b47d4bfaa64960ca18",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "判断特化型AI「Jev」の新機能を用い、ウォーリー風の画像からターゲットをわずか0.4秒で検出する検証を行い、その驚異的な速度とコスト効率を明らかにしています。",
+    "summaryBody": "判断特化型AI「Jev」に搭載された画像入力および位置特定（box質問タイプ）機能の性能を検証した技術レポートです。AI生成された「ウォーリーを探せ」風の画像を使用し、特定のキャラクターを探索させた結果、AWS Lambda環境下で約400ms（0.4秒）という極めて高速なレスポンスを確認しました。記事ではPython SDKを用いた具体的な実装例、画像サイズに基づいた消費トークン数の分析、そして1回のリクエストあたり約0.05円という圧倒的な低コスト性について解説されています。精度面では、対象が小さすぎる場合や絵柄が異なる際にバウンディングボックスが微修正を要する課題はあるものの、人間が確認する前の一次スクリーニングとして非常に高い実用性を持つと結論付けています。",
+    "topics": [
+      "AI",
+      "Jev",
+      "画像認識",
+      "オブジェクト検出",
+      "パフォーマンス検証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    }
+  }
+}

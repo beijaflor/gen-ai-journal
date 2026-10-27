@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:52:36.046428+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バイブコーディングを6週間続けたら、Mac の起動が20分かかるようになった",
+    "url": "https://zenn.dev/singularity/articles/vibe-coding-mac-boot-20min",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIツールを駆使した超高速開発により一時ファイルが数百万規模で蓄積し、OS起動時の削除処理でMacが20分間フリーズした原因を特定した技術ドキュメント。",
+    "summaryBody": "AIと対話しながら高速に開発を進める「バイブコーディング」を6週間継続した結果、Macの起動時間が20分にまで肥大化した事象の調査報告です。著者はClaude Codeを活用し、OSの診断ログ（forceReset）から起動プロセスを解析しました。\n\n主な原因は、Claude Codeが安全のために作成する作業用ディレクトリ（scratchpad）にありました。リポジトリのクローンと`yarn install`を繰り返したことで、`/private/tmp`内に数百万ものファイル（主に`node_modules`）が蓄積。macOSの起動時にこれらを一括削除する`dirhelper`がボトルネックとなっていました。\n\nまた、SSDの消耗（1日約600GBの書き込み）や、セキュリティ審査（syspolicyd）によるCPU負荷の増大についても触れられており、AI主導の爆速開発がハードウェアやOSの仕様にもたらす予期せぬ影響と、その対策（一時ファイルの管理、CPUコア数の重要性）が詳述されています。",
+    "topics": [
+      "Vibe Coding",
+      "Claude Code",
+      "macOS",
+      "パフォーマンス診断",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

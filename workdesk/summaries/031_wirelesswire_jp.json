@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:38:17.342177+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【PHPはオワコン】AIが書いたコードをなぜ信用できるのか？数学的証明で守る新しいサーバーサイド言語「QED Script」を作った",
+    "url": "https://wirelesswire.jp/2026/10/94824/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するコードの不確実性に対し、数学的証明と独立した検証器を組み合わせることで安全性を担保する、seL4ベースの新サーバー実行環境「QED Script」の実験的試み。",
+    "summaryBody": "プログラマーの清水亮氏による、AI時代の新しいサーバーサイド開発の在り方を問う論考です。従来のPHP等が持つ過剰な権限と脆弱性、そして今後ASI（人工超知能）が生成するコードに潜むリスクを指摘。これに対し、数学的証明（形式検証）をAIに生成させ、それを単純な検証器で機械的にチェックする「QED Script」という仕組みを提唱しています。OSレベルでは高信頼マイクロカーネル「seL4」を採用した「QEDOS」上で動作し、制限されたWasm実行環境を提供。AIを盲信するのではなく、数学的に正しさを担保することで、人間より賢いAIが作るコードの安全性を制御することを目指しています。現在は実験段階でGitHubに公開されており、今後の形式検証の高度化が期待されます。",
+    "topics": [
+      "QED Script",
+      "形式検証",
+      "seL4",
+      "AI生成コード",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 18,
+      "overall": 90
+    }
+  }
+}

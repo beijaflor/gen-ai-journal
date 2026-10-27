@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:22:00.702618+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIプロダクト開発から学んだ38の教訓：PostHogにおける4年間の実践的知見",
+    "url": "https://newsletter.posthog.com/p/38-things-weve-learned-about-building",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "PostHogが10以上のAI機能を月間10万人に提供する中で得た、エージェント・ファーストへの設計転換、コンテキストの重要性、UIの役割の変化など、具体的かつ実用的な38の教訓。",
+    "summaryBody": "### AIプロダクト構築の本質\nPostHogが4年間にわたり10以上のAIプロダクトを開発・運用して得た知見の集大成です。単なる機能追加ではなく、製品の設計思想そのものを「AIエージェントが利用すること」を前提に再定義する重要性を説いています。\n\n### 主要な学びと戦略\n- **エージェント・ファーストの設計**: 「AIをどう追加するか」ではなく「エージェント・ネイティブな製品ならどうあるべきか」を問い、MCP（Model Context Protocol）のようなAIが理解しやすいインターフェースを優先的に構築すべきです。\n- **コンテキストが真の「堀（Moat）」**: LLM自体はコモディティ化しますが、製品独自のデータ、ツール、ワークフローといった「コンテキスト」こそが競合に対する差別化要因となります。プロンプトに情報を詰め込むのではなく、エージェントが必要な情報を自ら検索できる仕組みを整えるべきです。\n- **UIの役割変化**: AIの台頭により、UIは「ユーザーが操作する場所」から、エージェントが行った処理を「確認・承認・修正」するためのインターフェースへと役割を変えていきます。\n- **信頼性と評価（Evals）**: 派手なデモよりも、一貫した動作と信頼性が重要です。初期段階からLLMの呼び出しをトレースし、小さなデータセットからでもエバリュエーション（評価）を開始することで、品質を劇的に向上させられます。\n\n### 組織と開発プロセス\n共通のAIインフラ（プロンプト管理、ストリーミング、コスト分析など）を構築し、各プロダクトチームが自由に拡張できるようにすることで、開発速度を維持できます。また、モデルの進化は既存の前提を破壊するため、柔軟にアーキテクチャを変更できる準備が必要です。",
+    "topics": [
+      "AI Product Development",
+      "AI Agents",
+      "MCP (Model Context Protocol)",
+      "LLM Infrastructure",
+      "PostHog"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 97
+    },
+    "originalTitle": "38 things we've learned about building AI products"
+  }
+}

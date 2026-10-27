@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:34:24.213646+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Supabaseアプリに独自のMCPサーバーを構築：AIエージェントからの直接操作が可能に",
+    "url": "https://supabase.com/blog/give-your-supabase-app-its-own-mcp-server",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Supabaseは、アプリの機能をAIエージェント（ChatGPTやClaude）へ公開できるMCPサーバー構築機能を発表し、既存の認証やRLSを維持したままシームレスな統合を実現しました。",
+    "summaryBody": "Supabase Selectにて、自社のアプリケーションにModel Context Protocol (MCP) サーバーを統合する新機能が発表されました。これにより、ユーザーはChatGPTやClaudeなどのMCPクライアントから、自分のアカウントでサインインして直接アプリを操作できるようになります。最大の特徴は、Supabase AuthおよびPostgresのRow-Level Security (RLS) と完全に統合されている点です。ツール呼び出しは常にサインインしたユーザーとして実行されるため、開発者は複雑な認可ロジックを再構築することなく、既存のセキュリティポリシーをそのままAIエージェントに適用できます。また、`npx shadcn`ライクなコマンドでEdge FunctionsとしてMCPサーバーを即座にデプロイできるほか、\"MCP Apps\"拡張を利用してチャット内にアプリのReactコンポーネントを表示することも可能です。",
+    "topics": [
+      "Supabase",
+      "MCP (Model Context Protocol)",
+      "AI Agents",
+      "Edge Functions",
+      "OAuth 2.1"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Give your Supabase app its own MCP server"
+  }
+}

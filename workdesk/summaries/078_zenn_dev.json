@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:26:14.098123+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "cronのclaude -pが\"ok\"だけで4万トークン——--safe-modeと--tools \"\"で98%削減",
+    "url": "https://zenn.dev/yosiki/articles/claude-p-cron-token-diet",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code CLIを自動化ジョブで使用する際、CLAUDE.mdやツール定義による隠れたトークン消費を特定オプションで98%削減する手法の解説。",
+    "summaryBody": "Claude Code CLI (`claude -p`) をmacOSのLaunchAgentなどで定期実行すると、プロンプトが数文字でも、背後で読み込まれる`CLAUDE.md`やMCPサーバ、デフォルトのツール定義によって数万トークンを消費してしまう問題があります。本記事では、`--safe-mode`で個人設定の読み込みを停止し、`--tools \"\"`で組み込みツール定義を無効化、さらに`--system-prompt`の置換や`--effort low`を組み合わせることで、1回あたりの消費量を約4万トークンから737トークン（98%削減）まで軽量化する具体的なコマンドライン引数と、その実測値を提示しています。自動化におけるコスト管理と、不要な「思考（thinking）」トークンの抑制についても触れられています。",
+    "topics": [
+      "Claude Code",
+      "CLI",
+      "コスト最適化",
+      "自動化",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

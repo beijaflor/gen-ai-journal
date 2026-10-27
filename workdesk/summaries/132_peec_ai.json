@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:13:35.777123+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "統計データを公開して引用を勝ち取る：私のデータがウェブ中に拡散した戦術",
+    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "5万件の架空の統計データを掲載したサイトが、Googleから除外されながらもChatGPTに頻繁に引用され、大手企業の被リンクや学術論文への掲載に至った実験から、AI時代の検索最適化（GEO）の力学を解説。",
+    "summaryBody": "### AI検索における統計データの威力\nPeec AIの研究員が行った実験により、LLM（大規模言語モデル）が回答の根拠を求めて検索（Grounding）を行う際、統計データを極めて優先的に引用する性質が明らかになりました。筆者はGPT-4を用いて5万件の「完全に架空の統計」を掲載したサイト『StateGlobe』を作成。このサイトはGoogleからはスパムとしてインデックスを削除されましたが、ChatGPTのリアルタイム検索用ボット（ChatGPT-User）はアクセスを続け、結果的に1万回以上のセッションと、ShopifyやDHLを含む330以上のドメインからのリンクを獲得しました。\n\n### GEO（AI検索最適化）への示唆\n1. **検索順位と検索性は別物**: Googleでの順位が低くても、LLMがプロンプトを分解して行う「ファンアウト・クエリ」に合致すれば、引用の候補として選ばれます。\n2. **引用ロンダリングの発生**: 架空のデータであっても、LLMが引用し、それを元に学術論文や銀行のレポートが言及することで、偽のデータが「事実」として社会に定着してしまうリスク（引用ロンダリング）が浮き彫りになりました。\n3. **実践的な対策**: 独自の一次データを、LLMが解析しやすい「1文1データ」の形式で公開し、見出しに「[トピック] 統計 [年]」を含めることで、高い引用率（GEO効果）を狙うことができます。",
+    "topics": [
+      "GEO (AI検索エンジン最適化)",
+      "ChatGPT",
+      "AI検索",
+      "コンテンツ戦略",
+      "情報の信頼性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Publish stats, get cited: The tactic that put my data all over the web"
+  }
+}

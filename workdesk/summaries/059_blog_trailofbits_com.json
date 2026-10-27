@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:30:52.537249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントがバグを修正しても、他に何が変わったのか？ - Trail of Bits Blog",
+    "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Trail of Bitsは、AIエージェントによる自動パッチ生成と回帰テストの精度を向上させ、標準化する2つの新しいツール「patching-bugs」と「regression-hunt」を公開した。",
+    "summaryBody": "Trail of Bitsは、OpenAIとの共同イニシアチブ「Patch the Planet」の成果として、AIエージェントにパッチ開発と回帰チェックを委任できる2つのプラグインをリリースしました。主な特徴は以下の通りです：\n\n- **regression-hunt**: 変更されたコードから影響範囲を追跡し、ライブ環境でのPoC実行を通じて回帰（デグレ）を特定します。従来の「回帰がないか確認して」という単純なプロンプトに比べ、偽陽性を25%削減することに成功しました。\n- **patching-bugs**: 数千件のエンジニアセッションから得たベストプラクティスを凝縮し、バグの再現、パッチ適用、および「三段階の証明（元の失敗、修正後の成功、リバート後の再失敗）」を用いて修正の正当性を検証します。\n- **標準化と設計原則**: 厳格な入出力スキーマとモジュール化を採用し、すべての主張にライブ環境での実行証拠を求めます。これにより、LLMの出力のばらつきを抑え、信頼性を高めています。\n\nメンテナンス担当者がリポジトリに「脅威モデル」や「パッチ適用ガイドライン」のMarkdownファイルを用意することで、プロジェクト固有のコンテキストをエージェントに学習させ、より高精度な出力を得ることが可能です。",
+    "topics": [
+      "AIエージェント",
+      "脆弱性修正",
+      "回帰テスト",
+      "オープンソースセキュリティ",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Your AI agent fixed the bug, but what else did it change? - The Trail of Bits Blog"
+  }
+}

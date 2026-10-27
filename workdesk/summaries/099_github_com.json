@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:21:30.198801+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "shev: Apple SiliconローカルまたはDeepSeekを利用したシンプルなJSON意思決定支援ツール",
+    "url": "https://github.com/aditauqir/shev",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "shevは、Apple Silicon上でのローカル動作またはDeepSeek APIを介して、入力されたテキストに対しJSON形式で明確な意思決定を出力するRust製の軽量ツールです。",
+    "summaryBody": "shevは、AIエージェントのような複雑さを排除し、「1つのメッセージに対して1つの判断を下す」ことに特化した意思決定支援ツールです。メールやサポートチケット、ドキュメントなどを入力すると、アクションの要否(take_action)、信頼度(confidence)、具体的な返信案(generated_response)などを含む構造化されたJSONを出力します。\n\n主な特徴は以下の通りです：\n- **ハイブリッドなバックエンド**: Apple Silicon環境ではMLXを利用したローカルモデル「Bonsai (2.2B)」が高速に動作し、それ以外ではDeepSeek APIを利用可能です。\n- **MCPサポート**: Model Context Protocolに対応しており、OpenCodeやCodexといった他のAIツールから過去の判断履歴を検索・参照できます。\n- **直感的なインターフェース**: 独自のTUI（テキストユーザインターフェース）に加え、パイプ処理が可能なCLIを提供します。\n- **拡張性**: 既存のMarkdown形式のスキルファイルを読み込んで判断のガイドラインにしたり、読み取り専用の外部MCPツールを呼び出してコンテキストを補強したりすることが可能です。",
+    "topics": [
+      "LLM",
+      "Rust",
+      "MLX",
+      "MCP",
+      "AIツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - aditauqir/shev: A simple Jev-like decision maker. Without the hype."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:00:36.416157+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソフトウェア ファクトリー - 再現性のあるソフトウェアの工場づくり / Software factory",
+    "url": "https://speakerdeck.com/iktakahiro/software-factory",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントとTypeScriptスタックを高度に統合し、高品質なソフトウェア開発を高速かつ再現性高く行う「ソフトウェアファクトリー」の概念と実践手法をまとめた資料。",
+    "summaryBody": "### 概要\n池内孝啓氏（@iktakahiro）による、AI時代のソフトウェア開発を「工場」として定義し、再現性を高めるための手法を解説したスライド資料です。複数のプロダクト開発を通じて、実装期間を大幅に短縮（2ヶ月から数日へ）しながら品質を維持する具体的なプロセスが示されています。\n\n### 主な内容\n- **T-Stackによるモノレポ構成:** TypeScriptを中心に、TanStack Start、Bun、ConnectRPCなどを組み合わせた効率的な技術スタックの採用。\n- **AIエージェントのスキル化:** コードレビュー、E2Eテスト、セキュリティ監査などの作業手順をリポジトリ内に「スキル」としてコード化し、AIに実行させる仕組み。\n- **ドキュメント駆動の自動化:** 文脈（Context）をdocsフォルダに集約し、AIがそれを参照して製造を行うことで、仕様と実装の乖離を防止。\n- **人間の役割の変遷:** 人間は「製造ラインの構築」と「アーキテクチャの全体像把握」という責任を担い、具体的な「製造（コーディング）」はAIが担当する分業モデルの提唱。\n\n### 結論\n再利用可能な部品（アセット）を蓄積し、検証と運用のフローを自動化することで、AIネイティブな組織におけるソフトウェアの「出荷」効率を最大化できるとしています。",
+    "topics": [
+      "AI駆動開発",
+      "ソフトウェアファクトリー",
+      "TypeScript",
+      "LLMエージェント",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

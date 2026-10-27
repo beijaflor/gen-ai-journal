@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:54:14.967733+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cairnの深層：AI駆動のサイバー攻撃オペレーションの実態",
+    "url": "https://norforge.com/blog/inside_cairn",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI駆動の自律型侵入テストツール「Cairn」の公開された管理パネルを分析した結果、中国やアフリカ拠点の攻撃者がAIエージェントを指揮して世界中のECサイトや金融機関を自動攻撃している実態が明らかになりました。",
+    "summaryBody": "セキュリティ企業NorForgeの調査により、AI駆動のハッキング・ハーネス「Cairn」が悪意あるサイバー攻撃に利用されている詳細な実態が判明しました。Cairnはターゲットと目標を与えるだけで、AIエージェント（DeepSeek v4.1 Flash等のモデルを使用）が自律的に偵察、脆弱性特定、侵入を試みるシステムです。\n\n調査では、攻撃者が管理パネルをインターネット上に誤って公開していたことで、その活動が露呈しました。主な攻撃者グループの一つ「AIA0001」は中国語を使い、日本、米国、豪州のECサイトを標的に1,100以上のプロジェクトを実行。平均23時間以内にウェブシェルの設置に成功しており、その成功率は約10%に達します。エージェントはPlaywrightによるブラウザ自動化やNmap、カスタム脆弱性スキャナを駆使していました。\n\n特筆すべきは、攻撃者側のセキュリティ意識の低さです。公開されたパネルからは、侵害されたサイトの認証情報やAPIキー、さらには攻撃指令システム自体へのアクセスが可能になっていました。この報告は、AIが攻撃の敷居を下げ、速度を上げている一方で、攻撃者自身の運用セキュリティ（OPSEC）もまた不完全であることを示唆しています。",
+    "topics": [
+      "AIセキュリティ",
+      "自律型エージェント",
+      "サイバー攻撃",
+      "Cairn",
+      "DeepSeek"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Inside Cairn: Open Windows into massive AI-Driven Cyber Operations"
+  }
+}

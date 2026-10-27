@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:14:49.568424+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・モニタリング：AIエージェントが実現する次世代のシステム運用",
+    "url": "https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicの「スーパーファン」の事例を元に、LLMエージェントが24時間体制でログやコードを解析し、従来の監視ツールでは不可能な精度でシステム異常を検知・修正する未来を解説。",
+    "summaryBody": "本記事は、ソフトウェア運用の新しいパラダイムである「エージェント・モニタリング」について論じています。筆者はAnthropicの事例を引き合いに出し、特定のシステムコンポーネントを「偏執的に」監視する専用AI（スーパーファン）の有用性を強調しています。現代のシステムは複雑すぎて人間が完全に把握することは困難ですが、エージェントは安価なトークンコストでログをスキャンし、動的に監視クエリを作成し、人間以上のスピードでインシデント調査を並列実行できます。特にリリース時などの「変更点」における監視において、エージェントは高い再現率と精度を両立します。将来的には、単なる読み取り専用の監視から、自動ロールバックやインスタンス調整といった書き込み権限を持つ「自己修復システム」へと進化し、運用コストを劇的に下げつつ信頼性を向上させることが期待されています。",
+    "topics": [
+      "Agentic Monitoring",
+      "LLM Agents",
+      "Observability",
+      "SRE",
+      "Anthropic Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Agentic Monitoring"
+  }
+}
