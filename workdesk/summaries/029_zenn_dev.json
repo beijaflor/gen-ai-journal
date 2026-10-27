@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:38:52.670753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Better AuthをMCPの認可サーバーにして、AI Agent からOAuthでアプリを操作させる",
+    "url": "https://zenn.dev/sakagi/articles/8caa896e649005",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Better AuthのMCPプラグインを活用し、AIエージェントがOAuth経由でWebアプリを安全に操作できる認可サーバーの実装方法とセキュリティ強化の勘所を解説する。",
+    "summaryBody": "WebアプリにModel Context Protocol (MCP)サーバーを統合し、AIエージェント（Claude等）が利用者本人としてツールを実行可能にするための実装ガイドです。認証基盤にMicrosoft Entra ID、認可サーバーにBetter Authの`@better-auth/mcp`プラグインを採用した構成を紹介しています。\n\n標準プラグインの挙動において課題となる「リソース指定のない認可要求の許可」や「同意撤回後のリフレッシュトークン生存」といったセキュリティ上の懸念に対し、`hooks.before`を用いたカスタムバリデーションやDB照合による解決策を提示しています。また、Honoを使用したステートレスなMCPサーバーでのトークン検証（Opaqueトークンの採用）や、Claude Desktop/Codeからの接続手順、不要なAPIエンドポイントの無効化など、実戦的なTipsがコード例とともに詳説されています。",
+    "topics": [
+      "Better Auth",
+      "Model Context Protocol",
+      "OAuth",
+      "AIエージェント",
+      "Hono"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

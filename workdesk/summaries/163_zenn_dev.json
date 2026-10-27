@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:04:51.967810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPサーバーを理解してみる さらに自作MCPサーバーを作ってみよう",
+    "url": "https://zenn.dev/mosayan/articles/mcp-server-001",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Model Context Protocol (MCP)の基本概念から、Python SDKを用いたZenn記事検索サーバーの構築、Claude Desktopでの動作検証までを解説した実践的ガイド。",
+    "summaryBody": "この記事では、生成AIと外部サービスを接続する標準規格「Model Context Protocol (MCP)」の仕組みと実装方法を詳しく解説しています。MCPを「AIアプリケーションにとってのUSB-Cポート」と定義し、AIモデルが直接通信するのではなく、クライアント（Claude Desktop等）が媒介となる構造を説明。実践編では、Python SDKを使用して自身のZenn記事を検索・取得するローカルMCPサーバーを構築します。特に、ユーザーの曖昧な指示に対してClaudeがどのようにツールを選択し、必要に応じて複数回サーバーとやり取りを行うかという「動作プロセス」をログレベルで検証している点が非常に有益です。後半では、記事の続きを取得するためのオフセット実装に関する議論も含まれており、実用的なツール開発の参考になります。",
+    "topics": [
+      "MCP",
+      "Claude",
+      "Python",
+      "LLM",
+      "Zenn"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

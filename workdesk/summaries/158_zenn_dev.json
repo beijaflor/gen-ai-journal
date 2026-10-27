@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:06:33.598915+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでプロンプトインジェクションに備える",
+    "url": "https://zenn.dev/luxiar/articles/a341a2df29dcfe",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code利用時におけるプロンプトインジェクションのリスクと、開発者個人が設定ファイルやsandbox機能を通じて実施できる具体的な防御策を解説した記事です。",
+    "summaryBody": "本記事は、Claude Codeを用いた開発において懸念されるプロンプトインジェクション（外部データ等に紛れ込んだ悪意ある命令によるAIの誤動作）への対策を解説しています。著者は自身の体験に基づき、公式ドキュメントが推奨する以下の重層的な防御策を提示しています：1. 機密操作をユーザーが確認する「Manualモード」の活用、2. ツール出力を指示ではなく「データ」として扱うようCLAUDE.mdに明示する、3. 信頼できないコンテンツをパイプ経由で直接入力しない、4. settings.jsonのdenyルールでcurl等の特定コマンドを制限する、5. sandbox機能を有効化しOSレベルでファイルシステムとネットワークを隔離する。利便性と安全性のトレードオフを理解した上で、これらを段階的に導入することを推奨しています。",
+    "topics": [
+      "Claude Code",
+      "プロンプトインジェクション",
+      "AIセキュリティ",
+      "sandbox",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

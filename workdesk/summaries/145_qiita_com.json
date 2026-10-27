@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:10:33.914508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeの.envを読ませない設定がどこまで効くのか試してみた",
+    "url": "https://qiita.com/yakumo_09/items/5a86ca330b449db0e6bc",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeにおける`.env`ファイル保護設定の効果を、permissions.denyとサンドボックスを組み合わせた3つの条件下で48回の試行により詳細に検証したレポート。",
+    "summaryBody": "本記事は、Anthropicが提供するCLIツール「Claude Code」のセキュリティ設定について、機密情報（.envファイル）の漏洩をどこまで防げるかを検証した実験結果です。検証では「設定なし(C0)」「permissions.denyのみ(C1)」「deny＋サンドボックス(C2)」の3パターンを比較。結果として、deny設定のみではglobパターンによる検索や、実行したPythonスクリプトのエラー出力を通じた情報の漏洩を防ぎきれないことが判明しました。サンドボックスを有効にするとOSレベルで拒否され安全性は高まりますが、アプリのデバッグができなくなるトレードオフが生じます。筆者は、全プロジェクトへのdeny設定に加え、機密性の高いプロジェクトでのサンドボックス併用、さらには1Password等の外部シークレットマネージャーの活用による「脱・平文.env」を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Security",
+      ".env",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

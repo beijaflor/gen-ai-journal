@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:26:01.537419+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを「AIニュース係」にしたら、毎朝0円でSlackに届くようになった",
+    "url": "https://zenn.dev/edash_tech_blog/articles/3476d88801674d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの「routines」とGitHub Actionsを組み合わせ、追加費用なしで最新のAIニュースを毎朝Slackに自動配信する堅牢なシステムの構築事例。",
+    "summaryBody": "### 概要\nClaude Codeのクラウド実行機能「routines」を活用し、毎朝AI関連の最新情報を収集・要約してSlackへ届ける「AIニュース係」の構築手法を解説した記事です。手元のPCを起動させず、サブスクリプションの利用枠内で「追加費用0円」の運用を実現しています。\n\n### 構成と工夫\n- **クラウド実行と状態管理**: Anthropicのクラウド上で定期実行し、実行履歴や既読情報は専用リポジトリへのGitコミットで管理。環境が実行ごとにリセットされる制約を逆手に取った設計です。\n- **配信リレー構成**: クラウドサンドボックスの外部通信制限を回避するため、レポートをGitHubへpushし、GitHub ActionsをリレーとしてSlackへ配信。秘密情報もActions側に集約し、セキュリティを確保しています。\n- **堅牢性の向上**: LLMの「指示遵守の確率性」に対処するため、日付計算やJSONのマージ、履歴削除などの定型処理はPythonスクリプトで実装。LLMの判断ミスによるシステム崩壊を防いでいます。\n- **Slack Canvasへの対応**: API特有のMarkdown制限に対し、二分探索デバッグによる原因特定と、三段構えのフォールバック（Canvas作成→分割追記→スレッド投稿）を導入しています。\n\n### 教訓\n「判断はLLMに、固定の処理はコードに」という役割分担が重要です。単なるプロンプト調整ではなく、監視（デッドマンスイッチ）や多重ガードなどの地道なエンジニアリングが安定運用の鍵となります。",
+    "topics": [
+      "Claude Code",
+      "GitHub Actions",
+      "Slack API",
+      "LLM自動化",
+      "システム設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

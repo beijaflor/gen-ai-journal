@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:36:12.909864+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "任意のフレームワークでエージェント開発ライフサイクルを強化：Agents CLIの拡張システムとLangChain対応",
+    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudのAgents CLIが拡張システムを導入し、ADK以外のLangChainなどのフレームワークでも統一されたデプロイ・評価ワークフローを利用可能になりました。",
+    "summaryBody": "Google Cloudのエージェント開発ツール「Agents CLI（v1.5.0以降）」に、特定のフレームワークへの依存を解消する「拡張システム（Extension System）」が導入されました。これまでAgent Development Kit (ADK)に特化していたデプロイ、評価、モニタリングの統合ワークフローを、LangChain、LangGraph、Deep Agents、あるいは自社独自のフレームワークでも利用できるようになります。このシステムでは、YAMLマニフェストを用いて既存コマンドのオーバーライドや新規コマンドの追加が可能で、Gitリポジトリを介して配布・管理されます。記事では、v1.8.0で提供された公式LangChain拡張を用いたプロジェクト作成から、Cloud Runへのデプロイ、評価の実行、さらにはSBOMスキャンを組み込んだカスタムデプロイポリシーの実装まで、具体的なステップが解説されています。これにより、企業はガバナンスを維持しつつ、チームごとに最適な開発ツールを選択できる柔軟性を得られます。",
+    "topics": [
+      "Agents CLI",
+      "LangChain",
+      "Google Cloud",
+      "AIエージェント",
+      "CI/CD"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond"
+  }
+}

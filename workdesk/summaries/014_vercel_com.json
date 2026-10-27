@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:43:05.810753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercel Agentの本番環境への安全なアクセス制御メカニズム",
+    "url": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel Agentは、読み取り専用の事前調査と、ユーザー承認に基づく具体的な「プラン」単位の権限付与を組み合わせることで、本番環境での安全なAI操作を実現しています。",
+    "summaryBody": "Vercel Agentが本番環境で安全に動作するためのセキュリティアーキテクチャについて詳説されています。AIエージェントに過剰な権限を与えるリスクと、ステップごとの承認による利便性の低下という課題に対し、Vercelは「プランベースの承認モデル」を採用しました。\n\n主な仕組みは以下の通りです：\n1. **多段階のプロセス**: エージェントはまず読み取り専用権限で問題を調査し、解決のための具体的な「プラン（作業内容と必要な権限のセット）」をユーザーに提示します。\n2. **スコープに基づく権限付与**: ユーザーがプランを承認して初めて、書き込み権限を含む一時的なOAuthトークンが発行されます。エージェントが実行できる操作は、常にそのユーザー自身の権限内に限定されます。\n3. **動的なバリデーション**: Vercelのスコープレジストリと同期したカタログを使用し、プラン作成時に権限の妥当性をチェックします。これにより、古い権限の要求や不正な操作を未然に防ぎます。\n4. **ランタイムによる強制**: エージェントの実行環境（ランタイム）が、プランがアクティブであることを確認した上で認証情報を選択し、API側でも厳格なチェックが行われます。\n\nこのモデルにより、ユーザーはAIが何を行うかを事前に把握・制御でき、万が一の誤動作や悪意のある指示による影響を最小限に抑えることが可能になります。",
+    "topics": [
+      "Vercel Agent",
+      "AI Security",
+      "OAuth",
+      "Cloud Infrastructure",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "How Vercel Agent accesses production safely"
+  }
+}

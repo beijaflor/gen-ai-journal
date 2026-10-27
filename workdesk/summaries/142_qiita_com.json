@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:11:21.199089+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レビューの終わりとは何か — AIレビューの停止と品質の完了条件",
+    "url": "https://qiita.com/kayowa/items/3c997b135b78eab24542",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI駆動開発におけるコードレビューの「終了条件」をテーマに、AIによる修正と再レビューの無限ループを回避し、品質を保証するための現実的な運用ルールと課題を考察した記事。",
+    "summaryBody": "AIが実装とレビューの両方を担当する開発フローにおいて、どの時点でレビューを完了とするかは重要な課題です。著者は家計簿アプリの開発実験を通じ、「Human-on-Exception」モデルにおいて修正のたびに新たな指摘が出る「レビューの収束」問題に直面しました。修正後のheadをどこまで再レビューすべきかという問いに対し、初回の統合レビューは全面実施し、以降は影響範囲を独立して判断し証拠を再利用するという新しいルールを提案しています。また、AnthropicのClaude Codeチームの事例（レビューが50周以上続く問題への対策）も参照し、AIレビューをランタイム化する際の「停止判断」の重要性と、未完了リスクを別ゲート（CIや人間による承認）で扱う設計の必要性を説いています。",
+    "topics": [
+      "AI駆動開発",
+      "コードレビュー",
+      "ClaudeCode",
+      "Human-on-Exception",
+      "ソフトウェア品質"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    }
+  }
+}

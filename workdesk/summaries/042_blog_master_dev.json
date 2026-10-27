@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:35:27.333940+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが生成したHTMLを安全にプレビューするための分離環境の構築方法",
+    "url": "https://blog.master.dev/building-an-isolated-preview-for-ai-generated-html/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが生成した信頼できないHTMLを、iframeのsandbox属性とContent Security Policy（CSP）を駆使して安全にレンダリングする手法を解説した技術ブログです。",
+    "summaryBody": "AIがUIやHTMLを生成する機能を持つプロダクトにおいて、生成されたコードを自サイトと同じドメインで安易に表示することは、セッション情報の窃取や不正操作のリスクを招きます。本記事では、この問題を解決するための「4つの壁」を用いた防御手法を提案しています。1つ目は`sandbox`属性の最小化で、`allow-scripts`のみを与え`allow-same-origin`を避けることでホストから隔離します。2つ目はContent Security Policy（CSP）の導入で、サンドボックスだけでは防げないネットワークへの「持ち出し」を制限します。3つ目は専用ドメイン（別オリジン）での配信により、物理的な境界を設けること。4つ目は、`postMessage`通信における`event.source`の厳格な検証です。単なる実装方法に留まらず、なぜその設定が必要なのかを具体的な攻撃シナリオ（DOM読み取り、トップレベル遷移、ネットワーク通信）と共にデモを交えて詳しく解説しています。",
+    "topics": [
+      "Webセキュリティ",
+      "iframe",
+      "Content Security Policy",
+      "AI開発",
+      "フロントエンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 90
+    },
+    "originalTitle": "Building an Isolated Preview for AI-Generated HTML – Master.dev Blog"
+  }
+}

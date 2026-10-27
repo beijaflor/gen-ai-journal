@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:27:56.336172+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenShell: 自律型AIエージェントのための安全でプライベートな実行環境",
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAが公開したOpenShellは、カーネルレベルの制御と形式検証を用いて、自律型AIエージェントの動作を安全に分離・管理するオープンソースの実行環境です。",
+    "summaryBody": "OpenShellは、AIエージェントがファイル読み書き、パッケージインストール、API呼び出し、認証情報の利用を行う際に、システム全体への無制限なアクセスを防ぐためのサンドボックス環境を提供します。主に2つの防御機構を備えています。1つはカーネルレベルの強制力で、すべてのファイルアクセス、システムコール、ネットワーク接続をランタイムで監視・制限します。もう1つは形式検証（Formal Verification）を用いたポリシーチェックで、アクセスポリシーの変更が予期せぬリスクを招かないか事前に検証します。エージェント自身は生の認証情報（Credentials）に直接触れることはできず、承認されたエンドポイントへのリクエスト時のみOpenShellが必要な情報を付与する仕組みです。Python, TypeScript, Go, Rust向けのSDKが提供されており、既存のAIアプリケーション開発に統合可能です。",
+    "topics": [
+      "AIエージェント",
+      "サンドボックス",
+      "NVIDIA",
+      "サイバーセキュリティ",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - NVIDIA/OpenShell: OpenShell is the safe, private runtime for autonomous AI agents."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:08:31.772213+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "社内の Slack と GitHub を LLM に読ませて技術ブログの題材を探す：モデルに任せたこと、任せなかったこと",
+    "url": "https://zenn.dev/salt2/articles/slack-github-llm-bb912760",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "社内のSlackやGitHubの活動から、LLMを用いて技術ブログの最適な執筆者と題材を自動抽出し、実用的な記事案を生成する仕組みの構築と運用における工夫の記録。",
+    "summaryBody": "SALT2社が、社内コミュニケーションツール（Slack、GitHub、会議メモ）のデータをLLMに解析させ、技術ブログのネタを掘り起こすシステムを開発した記録です。単にデータを渡すだけでは「GitHubの変更履歴に内容が偏る」「人名の誤認」「守秘義務の判定ミス」といった課題が生じるため、システム設計において「モデルに推測させる範囲」を厳密に制限しています。具体的には、Slackでの対話から仕事の文脈を補完し、日本語特有の単語境界問題にはバイグラム（2文字組）での比較を導入。また、最終的な執筆可否の判断やプライバシーに関わる部分は人間に委ねるなど、AIと人間の役割を明確に分けることで、現場の一次情報を活かした質の高い技術発信を継続する仕組みを実現しています。",
+    "topics": [
+      "LLM",
+      "Slack",
+      "GitHub",
+      "技術ブログ",
+      "AI活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:54:00.514677+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Indra OCR - CPUで動作する高速・軽量な多言語対応ドキュメント解析モデル",
+    "url": "https://huggingface.co/datalab-to/indra-ocr",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "CPUのみで高速動作し、80以上の言語や手書き文字、レイアウト解析に対応した、Markdown出力可能な超軽量OCRモデル。",
+    "summaryBody": "Indra OCRは、Datalabが公開したドキュメント解析用の超軽量モデルです。わずか100万〜700万パラメータというサイズながら、GPUを必要とせずCPUのみで驚異的なパフォーマンスを発揮します。\n\n### 主な特徴と性能\n- **高速処理**: 32コアCPU環境で1秒間に約44ページを処理。Tesseractの15倍、PaddleOCRの10倍の速度を誇ります。\n- **多言語・多機能**: 日本語を含む80以上の言語、手書き文字、数式（LaTeX出力）、複雑なレイアウト（表、リスト、見出し）を認識し、MarkdownやJSON形式で出力可能です。\n- **軽量な構成**: PyTorchに依存せず、ONNX RuntimeとOpenCV、pypdfium2のみで動作します。モデルサイズも全体で約76MBと非常にコンパクトです。\n- **高い実用性**: デジタルPDFのテキストレイヤー活用とOCRを自動で切り替えるハイブリッドモードを搭載しています。\n\n### ライセンスと利用形態\nコードはApache 2.0、モデルの重みは修正OpenRAIL-Mライセンス（研究、個人、売上2000万ドル未満のスタートアップは無料）で提供されています。より高度な精度が必要な場合は、上位モデルのChandraも提供されています。",
+    "topics": [
+      "OCR",
+      "Document Intelligence",
+      "ONNX",
+      "Markdown",
+      "CPU Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "datalab-to/indra-ocr · Hugging Face"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:26:28.623590+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "安くて速い Jev を6回チューニングしたら、最後に Claude の grep に2倍差で負けた話",
+    "url": "https://zenn.dev/koudai0711/articles/f7a5cc10496820",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Obsidianのノート選定を高速・安価な判断モデル「Jev」で最適化しようと6回の試行錯誤を重ねた結果、最終的に既存のClaudeによるgrep手法に精度で完敗し、新モデル導入前に現状を計測することの重要性を説いた実践記録。",
+    "summaryBody": "本記事は、ObsidianのナレッジをClaude Codeに効率的に読み込ませる仕組みを構築する中で、判断特化型モデル「Jev」の性能検証と、その限界をまとめた記録です。筆者は当初、安価で高速なJev（応答速度0.5秒以下）を用いて、約400件のノートから適切な文脈を抽出する「スキルルーター」の構築を目指しました。プロンプトの工夫、階層的な分類、リンク構造の活用など6段階の改善を行い、一時は「外れ率0%」を記録しましたが、100件規模のデータで再検証すると精度が大幅に低下。最終的に、既存のClaude (Opus) による単純なgrep実行と比較したところ、正解のノートを当てた数はOpusが52件に対し、Jevは24件と2倍以上の差で敗北しました。この結果から、Jevは文脈が不要で高速な分類が求められる場面には適している一方、複雑な文脈理解を要するタスクでは既存LLMの方が優れていることを示唆しています。筆者は、新しいモデルを導入する前に「現在のやり方をまず測ること」の重要性を強く提唱しています。",
+    "topics": [
+      "Jev",
+      "Claude Code",
+      "Obsidian",
+      "LLM",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

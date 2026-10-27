@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:16:27.498861+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI特有の書き癖（スロップ）を排除した「Qwen3-4B-deslop」の公開",
+    "url": "https://100toolkit.com/blog/deslop-model/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIにありがちな「not X, but Y」や冗長なリスト表現などの不自然な書き癖（スロップ）を、学習を通じて排除したQwen3-4Bの微調整モデルが登場しました。",
+    "summaryBody": "Qwen3-4B-Instructをベースに、AI特有の定型的な文章スタイルを削ぎ落としたモデル「qwen3-4b-deslop」が開発されました。開発者のErik Markus Kannike氏は、エムダッシュの多用や「delve」といった特定のキーワード、三箇条のリストなどを検出する独自の「スロップ検出器」を作成。MacBook Air上で、この検出器とステアリング手法を用いた蒸留（Distillation）を行い、わずか161件の厳選された回答でLoRA微調整を施しました。その結果、1000語あたりのスロップスコアは121から12.5（人間レベルは15未満）へと劇的に低下し、エムダッシュの出現率はゼロになりました。モデルはGGUF形式で公開されており、Ollama等のツールを用いてローカル環境で動作可能です。ただし、文章が平坦になりすぎる点や、固有名詞の捏造といった課題も残されています。",
+    "topics": [
+      "LLM",
+      "Fine-tuning",
+      "AI Slop",
+      "Qwen",
+      "Local LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Qwen3-4B with the AI writing tics trained out"
+  }
+}

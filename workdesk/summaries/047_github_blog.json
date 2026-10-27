@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:34:12.109786+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント規模のGitインフラへの架け橋",
+    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubがAIエージェントによるトラフィック増に対応するため、クォーラムの参照単位化とオブジェクトストレージによるストレージ・計算分離を進める新アーキテクチャを解説。",
+    "summaryBody": "GitHubはAIエージェントによる書き込み負荷の急増に対応するため、Gitインフラを自社データセンターからAzureへ移行し、アーキテクチャを刷新している。従来のSpokesシステムではリポジトリ単位でロックをかけていたが、これを「参照（reference）単位」のクォーラムに変更することで、異なるブランチへの同時書き込みを可能にし、地理的分散環境下でもスループットを3〜4倍向上させた。また、Azure Blob Storageを「仮想レプリカ」としてクォーラムに組み込むことで、計算リソースとストレージを分離。これにより、読み取り専用レプリカをオンデマンドで拡張できる柔軟性を確保している。現在は書き込みスループットのさらなる向上を目指し、イミュータブルなGitオブジェクトの特性を活かした順序制御の最適化に取り組んでいる。",
+    "topics": [
+      "GitHub",
+      "Git Infrastructure",
+      "Distributed Systems",
+      "Azure",
+      "Cloud Migration"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 95
+    },
+    "originalTitle": "The bridge to agent-scale Git infrastructure - The GitHub Blog"
+  }
+}

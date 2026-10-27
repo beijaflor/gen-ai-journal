@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:23:50.370694+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントの継続性を実現する「durable-harness」：Vercelが発表したエージェント実行の永続化ツール",
+    "url": "https://vercel.com/blog/making-every-harness-durable",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、AIコーディングエージェントのクラッシュやタイムアウトからの中断を防止し、状態を維持して正確な地点から再開可能にするオープンソースライブラリ「durable-harness」を発表しました。",
+    "summaryBody": "Vercelは、Pi、Claude Code、OpenCodeなどのAIコーディングエージェント（ハーネス）をクラウド上で長時間安定して実行するための新ツール「durable-harness」をリリースしました。従来、クラウド上のエージェント実行はタイムアウトやネットワークエラーによる作業の損失が課題でしたが、本ツールはVercel Workflow SDKの「World」インターフェースを利用し、実行の各ステップ（モデル呼び出しやツール実行）を永続ログに記録します。これにより、プロセスが中断されても完了済みの作業をスキップし、二重課金を防ぎながら正確な地点から再開できます。主な機能として、モデル呼び出しの再利用、ツールの再実行制御（safe/never）、Vercel Sandboxや仮想ファイルシステムによるファイル状態の保持、セッション情報を共有・永続化する「Documents」機能などが提供されます。Vercel環境に加えて、PostgresやMongoDB、Redis、Tursoなどの自己ホスト型バックエンドにも対応しており、高い移植性を備えています。",
+    "topics": [
+      "AI Agents",
+      "Vercel",
+      "Durable Computing",
+      "Workflow SDK",
+      "Cloud Infrastructure"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Making every harness durable - Vercel"
+  }
+}

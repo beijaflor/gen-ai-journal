@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:25:13.931288+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TanStack AIにおける構造化出力の探索：ストリーミングガイド",
+    "url": "https://blog.master.dev/structured-output-with-tanstack-ai/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "TanStack AIとZodを使用して、LLMの応答を定義された型に強制し、不完全なデータ状態でもストリーミング表示する方法を解説するガイド。",
+    "summaryBody": "この記事はTanStack AI入門シリーズの第2部であり、LLMからの応答を特定のデータ構造に強制する「構造化出力（Structured Output）」に焦点を当てています。具体的には、Zodを使用してワークアウト計画のスキーマを定義し、それをサーバー側とフロントエンドの両方で適用する方法を解説しています。特筆すべきはストリーミング機能の実装で、LLMがJSONを生成している途中の「不完全な状態」であっても、TanStack AIが自動的にタグを補完してパース可能な状態を維持する仕組みを紹介しています。開発者は`DeepPartial`型を用いることで、データの到着に合わせて段階的にUIを更新する、スムーズなユーザー体験を実現できます。",
+    "topics": [
+      "TanStack AI",
+      "TypeScript",
+      "Zod",
+      "Structured Output",
+      "Streaming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 90
+    },
+    "originalTitle": "Exploring Structured Output in TanStack AI: Streaming Guide"
+  }
+}

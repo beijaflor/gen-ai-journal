@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:29:27.806872+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ポケモン2v2環境におけるマルチエージェントLLMの協調",
+    "url": "https://olivergrabner.com/research/pokemon/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ポケモンShowdownのダブルバトルを舞台に、LLMエージェント同士が対話を通じて戦略を補完し合い、協調することで勝率が大幅に向上することを明らかにした研究。",
+    "summaryBody": "この研究は、マルチエージェントLLMが複雑な環境下でどのように協調・交渉するかを、ポケモンの2v2（ダブルバトル）形式を用いて評価したものです。不完全情報ゲームであるポケモンを舞台に、エージェント間の「対話」が戦略に与える影響を検証しました。Qwen3.8-27Bを用いた実験の結果、自由にチャット可能な「Free talk」モードが64%の勝率を記録し、対話なし（42%）や単一モデルによる2体操作（54%）を上回る結果となりました。具体的には、エージェントが互いのタイプ相性の誤解を訂正したり、標的を分散させたりする高度な協調行動が確認されています。一方で、自由な対話は1バトルあたり約100万トークンを消費するというコスト面の課題も浮き彫りになりました。今後は、この環境をベンチマークとして活用し、強化学習（RL）を通じて協調行動を促進する試みが予定されています。",
+    "topics": [
+      "LLMエージェント",
+      "マルチエージェントシステム",
+      "ポケモンShowdown",
+      "ゲーム理論",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    },
+    "originalTitle": "Multi-agent LLM coordination in a Pokémon 2v2 environment"
+  }
+}

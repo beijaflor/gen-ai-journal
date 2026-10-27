@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:27:07.232079+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントスキル集 pstack の開発原則と使い方",
+    "url": "https://azukiazusa.dev/blog/pstack-agent-skills/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "pstackは、AIエージェントに品質の高いコードを生成させるための開発原則と、調査・設計・実装・検証を自動化するスキルセットのガイドです。",
+    "summaryBody": "この記事では、AIエージェント向けスキル集「pstack」の開発原則と具体的な活用方法が解説されています。pstackは、MetaやNetflix等での大規模開発経験に基づき、生成コードの量よりも「品質」と「最小限の変更」を重視します。\n\n主な特徴と原則は以下の通りです：\n- **実装前の理解と設計**: `how`スキルによる既存コードの調査や、`architect`スキルによるデータ構造の先行定義を重視します。\n- **Laziness Protocol**: 変更を最小限に留め、不必要な抽象化を避けます。\n- **Prove It Works**: コンパイル成功だけでなく、再現スクリプトや実際の動作確認による検証を必須とします。\n- **複数モデルによる評価**: `interrogate`スキルにより、複数AIモデルの指摘を統合・分類して品質を高めます。\n\nClaude CodeやCursorへの導入手順も紹介されており、`poteto-mode`を実行することでタスクに応じた最適な「プレイブック（作業手順書）」が自動選択される仕組みとなっています。",
+    "topics": [
+      "AIエージェント",
+      "pstack",
+      "Claude Code",
+      "ソフトウェア開発",
+      "Cursor"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

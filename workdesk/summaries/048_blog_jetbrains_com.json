@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:33:49.672186+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントのベンチマークはユーザーのタスクフローに即したものであるべき：JetBrains Researchによる提案",
+    "url": "https://blog.jetbrains.com/research/2026/10/user-task-flow-paper/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "JetBrainsは実際の開発者の対話データを分析し、既存の単発型ベンチマークを、より現実的な複数ターンの対話フローへと変換する「SWE-TaskFlow」を提案しました。",
+    "summaryBody": "### 概要\nJetBrains Researchは、IDE内でソフトウェアエンジニアが行った4,782件のエージェントセッションを分析しました。その結果、既存のSWE-Bench Proのようなベンチマークが「1つの完璧な指示」から始まるのに対し、実際はバグ修正や機能追加は全体の半分以下であり、コードの解説、計画、コードレビューなどの多様な意図が複数ターンにわたって混在していることが判明しました。\n\n### SWE-TaskFlowの提案\nこのギャップを埋めるため、既存のIssueベースのベンチマークを現実的なフローに変換する手法「SWE-TaskFlow」を開発しました。\n- **Issueの分割**: 1つの大きな課題を、論理的な順序を持つ3つの連続したリクエストに分割します。\n- **リポジトリ質問の追加**: コードベースの理解を問う質問を挿入し、エージェントの把握能力を測定します。\n- **フローの最適化**: 実際のユーザー統計に合わせて、メッセージの長さや遷移確率を調整します。\n\n### 実験結果\nGPTやGeminiを用いた検証の結果、課題を分割することでモデルの計算コストは2倍以上に増加し、解決率はわずかに低下しました。これは、段階的な情報開示がエージェントにとってより現実的で高い負荷となることを示しており、単なるパッチ作成能力を超えた、エージェントの適応力や記憶力の評価を可能にします。",
+    "topics": [
+      "Coding Agent",
+      "Benchmark",
+      "SWE-bench",
+      "Software Development",
+      "LLM Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "Coding-Agent Benchmarks Should Match Their Users’ Task Flows"
+  }
+}

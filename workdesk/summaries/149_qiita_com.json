@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:09:30.048185+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのcross-session messagingで、1つの文書を複数のセッションと並列に編集する",
+    "url": "https://qiita.com/megmogmog1965/items/503394c2e67881949b95",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeの新機能「cross-session messaging」を活用し、複数のAIセッション間で情報を同期しながら1つの文書を効率的に並列編集・校正するワークフローの解説。",
+    "summaryBody": "Claude Codeを用いた複数セッションによる文書の並列編集手法を提案する記事です。単一セッションでの作業におけるAIの応答待ちや論点の逐次処理といったボトルネックを、セッションの分離によって解消します。具体的には、`--fork-session`による設定の引き継ぎと、Unixドメインソケットを介したセッション間通信（cross-session messaging）を組み合わせることで、各セッションが独立して動きつつ決定事項をリアルタイムに共有する仕組みを構築します。また、「書き込みの衝突」と「意味の衝突」を避けるためのツール選択（Editツールの活用）や、日本語の校正に特化した「reviewセッション」を並走させる自動化手法についても詳しく解説されています。著者はこの手順を容易に実行できるClaude Code用のプラグインも公開しており、AIエージェントを用いた高度な共同編集のあり方を示しています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "AIエージェント",
+      "cross-session messaging",
+      "並列開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

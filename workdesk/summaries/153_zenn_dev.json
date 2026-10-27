@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:08:03.570681+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コネクタも API も無いサービスを、Claude Code に操作させる",
+    "url": "https://zenn.dev/edash_tech_blog/articles/6250fc61ccf009",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのChrome拡張連携機能を活用し、APIが未提供の管理画面やローコードツールの操作をAIに任せる自動化手法と、運用上の境界線について解説しています。",
+    "summaryBody": "Claude Codeの「--chrome」オプションを利用したブラウザ連携機能の活用事例を紹介する記事です。通常、APIやMCPコネクタが存在しないサービスは自動化が困難ですが、この機能を使うことで、ログイン済みの普段のChromeブラウザをAIが直接操作可能になります。具体的には、ローコードツールの管理画面での設定複製、保存、テスト実行の自動化や、デプロイ後の動作確認、管理画面からの設定調査などに活用されています。また、セキュリティや責任の観点から「認証情報は渡さない」「本番環境は人が操作する」といった運用のルール作りや、OSレベルのダイアログやクロスオリジンiframeが操作できないといった技術的制限、接続トラブルの対処法についても詳しく述べられています。",
+    "topics": [
+      "Claude Code",
+      "ブラウザ自動化",
+      "Chrome拡張機能",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

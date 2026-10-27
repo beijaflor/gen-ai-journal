@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:11:45.663138+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の Mods で Claude Code 自身に機能を追加する",
+    "url": "https://azukiazusa.dev/blog/claude-code-mods/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Code 内部で動作する TypeScript/JavaScript 製プラグイン「Mods」の仕組みを、実用的な Mod 開発例や設計背景を交えて解説する技術記事。",
+    "summaryBody": "この記事では、Claude Code の機能を内部から拡張できる仕組み「Mods」について詳しく解説しています。Mods は、TypeScript や JavaScript でイベントをフックし、ツール呼び出しの書き換え、独自の UI 描画、プロンプト送信の制御などが可能です。Koa 等の Web フレームワークで馴染みのある「オニオンモデル」を採用しており、複数の Mod を連鎖させて処理できます。記事内では、危険な Bash コマンド（rm -rf 等）を検知してブロックし、その件数をターミナル上のプロンプト上部に表示する具体的な Mod の作成・テスト・デバッグ手順を紹介。また、静的解析によるセキュリティ検証ツール `claude plugin validate` や、自動テスト `claude plugin test` の活用方法、Claude 自身に Mod を生成させる組み込み Skill についても言及されています。",
+    "topics": [
+      "Claude Code",
+      "TypeScript",
+      "LLM Tools",
+      "CLI Customization",
+      "Claude Mods"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    }
+  }
+}

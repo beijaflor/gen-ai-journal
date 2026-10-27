@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:39:31.518103+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "react-devtools-cdt-mcp で AI エージェントが React のコンポーネントツリーを調べられるようにする",
+    "url": "https://azukiazusa.dev/blog/react-devtools-cdt-mcp/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントがChrome DevTools MCPを通じてReactコンポーネントの内部状態やレンダリング性能を直接調査可能にする実験的ライブラリ「react-devtools-cdt-mcp」の仕組みと活用法を紹介しています。",
+    "summaryBody": "この記事では、AIエージェントがブラウザ上のReactアプリケーションを深くデバッグするための新しい手段「react-devtools-cdt-mcp」について詳しく解説しています。通常、AIエージェントはChrome DevTools MCP経由でDOM要素は操作できますが、Reactのコンポーネント階層やProps、Hooksの状態、そして詳細なレンダリングパフォーマンスを把握することは困難でした。\n\nこのライブラリは、ブラウザ側で動作し、Chrome DevTools MCPが提供する「サードパーティ開発者ツール」の仕組みを利用して、React固有の情報をエージェントに公開します。セットアップは簡単で、アプリのエントリーファイルでライブラリをimportし、MCPサーバーを特定のフラグ付きで起動するだけです。記事内ではClaude Codeを使用し、重いレンダリングが発生している箇所をプロファイリングツールによってAIが自動で特定するデモも紹介されており、AIによるフロントエンドデバッグの可能性を大きく広げる内容となっています。",
+    "topics": [
+      "React",
+      "MCP",
+      "Chrome DevTools",
+      "AIエージェント",
+      "デバッグ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

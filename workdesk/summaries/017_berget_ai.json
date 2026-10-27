@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:41:57.116169+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIリクエストごとのCO2排出量を算出するオープンソース手法が登場：テキサスはスウェーデンの8.5倍の排出量",
+    "url": "https://berget.ai/en/blog/per-request-co2-press-release",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "スウェーデンのBerget AIが、AIリクエスト単位でのCO2排出量を詳細に算出するオープンソース手法を公開し、電力網の地域差が環境負荷に与える甚大な影響を可視化しました。",
+    "summaryBody": "スウェーデンのAIプロバイダーであるBerget AIは、Stockholm Environment Institute（SEI）などと共同で、個別のAIリクエストが排出するCO2量を算出するオープンソース手法を開発・公開しました。この手法は、単なる電力消費の平均値ではなく、サーバーが稼働する地域の電力網の炭素強度（Grid Intensity）、ハードウェア製造時の排出量（Embodied carbon）、冷却効率などを統合して計算します。\n\n具体例として、同一モデル（Kimi K3）とハードウェアを使用した場合、リクエストあたりの排出量はスウェーデンでは0.4gであるのに対し、テキサスでは3.2gと約8.5倍の差が生じることが示されました。特筆すべきは排出の内訳で、クリーンな電力網を持つスウェーデンでは排出の約9割がハードウェア製造由来ですが、テキサスでは約9割が電力消費由来となっています。Berget AIはこの計算ロジックをGitHubで公開し、ユーザーが実データに基づいて環境負荷の低いAIサービスを選択できる透明性の確立を目指しています。",
+    "topics": [
+      "AI環境負荷",
+      "サステナビリティ",
+      "オープンソース",
+      "炭素排出量",
+      "Green IT"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "New open-source method shows the same AI request emits 8.5 times more CO₂ in Texas than in Sweden - Berget AI Inference Cluster"
+  }
+}
