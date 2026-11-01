@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T04:59:49.765220+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「スマホを向けるだけ」で麻雀の点数を出したくて、牌認識をブラウザの中だけで動かした",
+    "url": "https://qiita.com/hiroshiasayadev-prog/items/d792cc85dde2d7cfd75c",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "麻雀の点数計算を「スマホを向けるだけ」で完結させるため、ブラウザ内推論に特化した超軽量モデルの開発とPWA実装のプロセスをまとめた技術記事。",
+    "summaryBody": "麻雀の点数計算の手間を省くため、カメラをかざすだけで牌を認識し点数を算出するWebアプリ「mjtensu」の開発事例です。ユーザー体験を損なわないよう、サーバー通信を排除したブラウザ完結型の推論（PWA）を選択。モデルを検出器と2つの分類器の3つに分割し、トータル約5.9MBという極めて軽量な構成を実現しています。これは既存サービスと比較して約14分の1のサイズです。iPhone実機での推論速度を重視し、1回140ms以下の高速処理を達成。開発過程における「向けておくだけ」という抽象的な要求の数値化、評価指標の策定、実験データの管理、そしてPCと実機での推論速度の傾向差など、実用的な機械学習アプリを個人で開発するための具体的なノウハウが詳しく解説されています。",
+    "topics": [
+      "機械学習",
+      "麻雀",
+      "PWA",
+      "画像認識",
+      "ONNX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:53:45.835075+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMは本当に騒がれてるほどか？ Qwen3.8-Flash-Nextの4bit版を家で動かして確かめた",
+    "url": "https://zenn.dev/yumeno/articles/strata-flash-next-iq4xs-80gb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "125B級MoEモデルのQwen3.8-Flash-NextをStrataエンジンで4bit量子化動作させ、量子化の精度への影響とフロンティア級モデルとの体感差を実地検証したレポート。",
+    "summaryBody": "本記事は、125Bのパラメータを持つ最新のMoEモデル「Qwen3.8-Flash-Next」を、専用推論エンジン「Strata」を用いて家庭用PC（RTX 5060 Ti 16GB + 80GB RAM）で動かした検証記録です。主な内容は以下の3点に集約されます。\n\n1. **技術的実装**: 公式でサポートされていないOrcaRouter版GGUFを、Strata付属のツールで手動パッキング（iq_pack.py）して4bit (IQ4_XS) 動作させる手順を解説。VRAM、RAM、SSDを階層的に利用するStrataの仕組みについても触れています。\n2. **精度検証**: 3bit版で発生していた「AI自身の発言をユーザーの指示と誤認する」という文脈の取り違えが、4bit版に上げても、あるいは推論時の省略処理（ROUTE_TAIL_SKIP）を無効化しても改善されないことを確認しました。\n3. **考察**: ベンチマーク数値ではフロンティア級とされるモデルも、ローカルで量子化して動かす限りは依然として実用上の信頼性に課題があることを指摘。この差が量子化によるものか、あるいはMoEの有効パラメータ数（約6B）の限界によるものかを問い直しています。",
+    "topics": [
+      "ローカルLLM",
+      "Qwen3.8",
+      "Strata",
+      "量子化",
+      "MoE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

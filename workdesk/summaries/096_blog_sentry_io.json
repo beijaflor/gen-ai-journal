@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:35:14.396382+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SentryのAgent Tracingで実現できる5つのこと",
+    "url": "https://blog.sentry.io/agent-tracing-use-cases/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Sentryの「Agent Tracing」を活用し、AIエージェントの挙動可視化、コスト監視、評価用データセット構築、自動トリアージなど、開発効率を高める5つの手法を紹介しています。",
+    "summaryBody": "Sentryが提供する「Agent Tracing」は、AIエージェントのプロンプト、ツール呼び出し、出力をアプリケーション全体のトレースと紐付けて可視化する機能です。本記事では、この機能を活用する5つの具体的なユースケース（レシピ）を解説しています。\n\n1. **評価データセットの構築**: 本番環境の会話データをSentry CLIでエクスポートし、Braintrust等の評価プラットフォームに流し込むことで、現実のデータに基づいたテストを自動化します。\n2. **自動トリアージの実現**: Claudeのルーチン機能とSentry MCPを連携させ、夜間の会話からエラーや推論の失敗を自動分析し、Linearなどのツールでチケットを発行します。\n3. **Vercel AI SDKのコスト追跡**: 会話単位でのトークン使用量やモデルごとの推定コストを可視化し、どの機能がコストを押し上げているかを特定します。\n4. **監視ダッシュボードとアラート**: コストのスパイクや予算超過を即座に検知するダッシュボードを構築し、異常時に自動で通知を受け取ります。\n5. **OpenTelemetryとの統合**: 既存のOTelパイプラインを維持したまま、SentryにAI固有のテレメトリを送信し、フルスタックな観測性を維持します。\n\nこれらのレシピは、ブラックボックス化しがちなAIエージェントの運用をデバッグ可能で透明性の高いものに変える具体的なガイドとなっています。",
+    "topics": [
+      "Sentry",
+      "AI Observability",
+      "Agent Tracing",
+      "Vercel AI SDK",
+      "LLM Evals"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Five things you can do with Sentry’s Agent Tracing"
+  }
+}

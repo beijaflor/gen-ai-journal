@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:57:18.388477+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code で MCP Tasks と Elicitation を試す",
+    "url": "https://azukiazusa.dev/blog/claude-mcp-tasks-elicitations/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeがサポートを開始したMCPの「Tasks（非同期実行）」と「Elicitation（ユーザーへの入力要求）」の仕組みと、TypeScript SDKを用いた実装方法を詳しく解説する記事です。",
+    "summaryBody": "MCP（Model Context Protocol）の高度な機能である「Tasks」と「Elicitation」について、仕様の解説から実装、動作検証までを網羅したガイドです。\n\n### 主な内容\n- **MCP Tasks**: ツール実行を非同期化し、タスクIDを用いたポーリング（`tasks/get`）で進捗管理や結果取得を行う仕組み。タイムアウトを避け、長時間かかる処理（調査、CI実行等）に適しています。\n- **Elicitation**: ツール実行中にユーザーへ追加入力を求める仕組み。JSON Schemaを用いた「formモード」と、セキュリティ上の理由からトークン等を直接扱う「URLモード」があります。2026-07-28仕様におけるMRTR（Multi Round-Trip Requests）とTasks経由の2つの配送方法を解説しています。\n- **実装例**: TypeScript SDK v2.3を使用し、SDKが未対応のTasksメソッド（`tasks/get`, `tasks/update`, `tasks/cancel`）をカスタムハンドラーで実装する方法を紹介。`deep_research`ツールを例に、処理途中でユーザーに公開範囲を選択させる対話型フローを実現しています。\n\nClaude Code CLIでの挙動として、タスク実行中のステータス表示や、入力要求時のダイアログ表示、ポーリング間隔の制御などが具体的に示されています。",
+    "topics": [
+      "MCP",
+      "Claude Code",
+      "TypeScript",
+      "Model Context Protocol",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

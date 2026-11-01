@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T04:15:27.212524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "SEC.govにおける自動化ツールの利用とアクセス制限に関するガイドライン",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "米国証券取引委員会（SEC）は、EDGAR等のデータへの公平なアクセスを維持するため、未宣言の自動化ツールを制限し、秒間10リクエストの制限を設けています。",
+    "summaryBody": "米国証券取引委員会（SEC）は、システムのリソースを公平に分配し、全てのユーザーが安定してアクセスできるようにするためのアクセス制限ポリシーを公開しています。主な要件として、自動スクリプトを使用する場合はユーザーエージェントに会社情報を明記してトラフィックを宣言することが求められます。また、同一IPアドレスからのリクエストは秒間10回までに制限されており、これを超えると一時的にブロックされる可能性があります。開発者は公式のベストプラクティスに従い、効率的なデータ取得を行うことが推奨されています。",
+    "topics": [
+      "SEC",
+      "EDGAR",
+      "ウェブスクレイピング",
+      "API制限",
+      "データアクセス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 2,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 65,
+      "annexPotential": 85,
+      "overall": 70
+    },
+    "originalTitle": "SEC.gov | Your Request Originates from an Undeclared Automated Tool"
+  }
+}

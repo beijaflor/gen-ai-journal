@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:30:16.754946+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGENTS.mdを278行から51行にした：AIエージェントに「必要な分だけ読ませる」ドキュメント設計 #ClaudeCode",
+    "url": "https://qiita.com/blackcats-lab/items/069d2640e1e7cf8ce21d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントへの指示ファイルを「ルーター」として再設計し、手順や仕様を分離することでコンテキスト消費を抑えつつ保守性を高めるドキュメント設計手法の提案。",
+    "summaryBody": "Claude CodeやCodexなどのAIエージェント向け指示ファイル（AGENTS.mdやCLAUDE.md）が肥大化し、コンテキストを圧迫したり指示が埋もれたりする問題を解決するための設計手法を解説しています。著者は指示書を「知識の本体」ではなく「ルーター（案内役）」と位置づけ、AGENTS.mdには共通原則とタスク別の参照先のみを記述。手順は「skills/」、仕様は「docs/specs/」、設計判断は「docs/adr/」のように情報を種類ごとに分離し、必要な時にだけエージェントが読みに行く構造へ移行しました。これにより、常時読み込まれる行数を大幅に削減しつつ、複数エージェント間での知識共有と情報の整合性維持を実現しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "ドキュメント設計",
+      "プロンプトエンジニアリング",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

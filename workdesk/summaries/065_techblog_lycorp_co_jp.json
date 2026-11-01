@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T04:13:40.908054+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIDDで開発プロセスを再設計する — AI駆動開発の試行錯誤から得た学び",
+    "url": "https://techblog.lycorp.co.jp/ja/20261027a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Yahoo!ショッピングにおけるAI駆動開発（AIDD）の導入事例を通じ、ドメイン知識の「AI Ready化」と既存の承認フローへの統合による開発工数削減のプロセスを解説しています。",
+    "summaryBody": "Yahoo!ショッピングの開発チームが取り組んだAI駆動開発（AIDD）の導入プロセスに関する詳細なレポートです。27年の歴史を持つ大規模かつ複雑な既存システム（ブラウンフィールド）において、AIを設計工程に組み込むための課題と解決策が示されています。特に、AIに正確な文脈を伝えるための「ドメイン知識のAI Ready化」として、MCP（Model Context Protocol）を活用した情報基盤の整備が重要な鍵となりました。また、AWSのAI-DLCをベースにしつつ、既存の多段階承認フローとの整合性を保つための「Phase制」の導入や、レビュー負荷を軽減するための設計、デザイナーの観点を取り入れたカスタマージャーニー生成の統合など、組織の実情に合わせたカスタマイズが行われています。この取り組みの結果、企画から全体設計承認までの工数が従来の約2ヶ月から1ヶ月へと大幅に短縮されました。",
+    "topics": [
+      "AIDD",
+      "AI-DLC",
+      "MCP (Model Context Protocol)",
+      "開発プロセス",
+      "Yahoo!ショッピング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

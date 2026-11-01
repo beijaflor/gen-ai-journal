@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:55:24.098837+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev にゲームをプレイさせてみたい！",
+    "url": "https://qiita.com/yu-Matsu/items/5c0915a70cc3afba4552",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TypeSafe AIの「Jev」の画像認識機能を活用し、横スクロールゲームの回避判断を自動化する実験を通じ、判定基準の最適化や通信ラグの補正手法を解説した技術記事。",
+    "summaryBody": "TypeSafe AIが公開した判断特化型AIモデル「Jev」の画像入力機能（Danger Zone）を使い、横スクロールゲームの自律走行に挑戦した実験記録。当初は「ジャンプすべきか」という単純な二値判定のみで挑んだものの、距離感の欠如や通信ラグ（約170ms）により障害物を回避できず失敗。改善策として、判定基準（criteria）に見本画像を添えることで認識精度を大幅に向上させ、さらに「box」形式を用いて障害物の座標を取得、ゲーム側のロジックで移動速度に基づいた遅延補正を行うハイブリッド構成を導入。その結果、高速なゲーム設定でも安定して障害物を回避可能になった。大量のAPIコールを行ってもコストが1ドル未満という圧倒的なコストパフォーマンスも実証されている。",
+    "topics": [
+      "Jev",
+      "TypeSafe AI",
+      "画像認識",
+      "ゲームAI",
+      "システムOneモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:04:43.049897+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "A2UIとCopilotKitを用いたジェネレーティブUIアプリケーションの構築",
+    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleの新しいUI標準「A2UI」と「CopilotKit」を組み合わせ、AIエージェントが動的にリッチなユーザーインターフェースを生成・操作するための技術スタックと実装方法を解説しています。",
+    "summaryBody": "AIエージェントの応答を従来のテキストから、地図や入力フォームなどのリッチな「ジェネレーティブUI」へと進化させる手法についての技術解説です。中核となるのは、Googleが提唱するフレームワーク不問のオープン標準「A2UI (Agent-to-UI)」と、エージェントとフロントエンドを接続する「CopilotKit」です。\n\n**主なポイント:**\n- **A2UIの仕組み:** UIの意図を宣言的なデータ形式（JSON）で記述。クライアント側が持つ既存のコンポーネントカタログを参照して描画するため、デザインの一貫性とセキュリティ（コード実行を避ける）を両立します。\n- **双方向の対話:** 単なる一方的な表示ではなく、ユーザーの入力をエージェントに返し、UIを動的に更新するマルチステップなフローが可能です。\n- **実装の柔軟性:** Google ADK、LangChain、Mastra等の主要なエージェントフレームワークに対応し、ReactやAngularなどのフロントエンドから利用できます。\n- **開発効率:** UIの最小構成要素（プリミティブ）を定義しておけば、エージェントがそれらを組み合わせて、文脈に応じた最適なUIを動的に組み立てます。",
+    "topics": [
+      "Generative UI",
+      "A2UI",
+      "CopilotKit",
+      "AI Agents",
+      "Google ADK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Build Generative UI Apps with A2UI & CopilotKit Agents"
+  }
+}

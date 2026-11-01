@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:10:30.701695+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "書き手が人でもAIでも正しくなる道、 SREを埋め込んだDeveloper Platform / tech drivers day8",
+    "url": "https://speakerdeck.com/chmikata/tech-drivers-day8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる設定変更が急増する開発環境において、SREのベストプラクティスをプラットフォーム側に「仕組み」として埋め込むことで、人間とAI双方の不確実性を制御し安全なリリースを実現する手法を解説しています。",
+    "summaryBody": "株式会社ログラスによる、AI時代のプラットフォームエンジニアリングの実践事例です。同社では設定変更の92%にAIが関与するようになり、従来の「人間の意志と自由度」を前提とした仕組みでは、AIによる予期せぬ設定や判断の揺れを制御しきれないという課題に直面しました。これに対し、SREの専門知識を開発プラットフォームに組み込むことで、「努力」ではなく「仕組み」で信頼性を担保するアプローチを提唱しています。具体的には、責務の分離（テンプレートと値の分離）、CODEOWNERSによる境界の明確化、権限の移譲、そしてスキーマ検証やポリシー検査といった「決定論的なガードレール」の設置という4つの柱で構成されています。自由度を制限し「道を狭める」ことで、書き手が誰であっても標準的な信頼性を維持できる体制を構築しています。",
+    "topics": [
+      "SRE",
+      "Platform Engineering",
+      "AI-assisted Development",
+      "Kubernetes",
+      "GitOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

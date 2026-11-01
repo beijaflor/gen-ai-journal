@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:54:40.077700+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIはどれくらい動画編集ができるのか!? Claude CodeでYouTube動画編集した話",
+    "url": "https://qiita.com/tsukasa_japan/items/b8bca096170d087e271d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用してCapCutのプロジェクトファイルを生成し、YouTube動画編集をAI主導で行うワークフローの構築と検証結果。",
+    "summaryBody": "株式会社Sapeetのエンジニアによる、AIエージェント「Claude Code」を用いた動画編集の自動化実験の記録です。動画編集ソフトCapCutのプロジェクトファイル（JSON形式）をAIに直接操作・生成させることで、カット、字幕、扉絵の配置などを自動化する試みを紹介しています。Whisperを用いた文字起こしに基づき、YAML形式でカット表や字幕表を管理し、AIが無音箇所を判別して自然なカットを行うスクリプトや、人間による修正内容をAI側のデータに同期させる逆引きスクリプトなどの実践的な仕組みを解説しています。結果として、即座に工数が激減したわけではなく（約10時間の作業、50回以上の修正指示）、AI特有の「違和感」を人間が修正するコストが依然として高いことを示唆しつつも、フローの標準化による今後の可能性を示しています。",
+    "topics": [
+      "Claude Code",
+      "動画編集",
+      "生成AI",
+      "CapCut",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

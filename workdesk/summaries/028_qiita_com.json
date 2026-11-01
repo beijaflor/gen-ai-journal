@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:00:31.651845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "eMudhra事件でWebアプリ開発者が点検すべきこと",
+    "url": "https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "認証局eMudhraの中間CA鍵が極めて脆弱だった問題を受け、ブラウザだけでなく、言語ランタイム、CLIツール、コンテナ環境など広範囲にわたる証明書ストアの点検と更新の必要性を説く解説記事。",
+    "summaryBody": "2026年10月に発覚したインドの認証局eMudhraによる、推測容易な中間CA秘密鍵の生成問題は、インターネットの信頼基盤に重大な影響を及ぼしました。この問題により、攻撃者は正規ドメインの証明書を偽造して中間者攻撃を仕掛けることが可能になります。主要なブラウザは既に対策を講じていますが、開発者はOS外の独自ストアを持つJava、Python、Node.jsなどのランタイムや、curl、Git、AWS CLIといったツール、さらにDockerコンテナやElectronアプリ内の証明書設定を個別に点検し、該当する中間CA（およびSectigoのクロス署名）を信頼解除・更新しなければなりません。不特定のネットワークで動作する環境を最優先に、サプライチェーン全体での証明書検証経路の棚卸しが推奨されています。",
+    "topics": [
+      "eMudhra",
+      "HTTPS",
+      "PKI",
+      "セキュリティ",
+      "SSL/TLS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

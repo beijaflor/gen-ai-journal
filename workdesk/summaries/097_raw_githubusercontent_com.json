@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:35:00.464698+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHubリポジトリへの変更からプルリクエストを自動作成するGitHub Action「Create Pull Request」",
+    "url": "https://raw.githubusercontent.com/peter-evans/create-pull-request/v8/README.md",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub Actions実行中に発生したファイルの変更や新規ファイルを自動的に検知し、新しいブランチの作成とプルリクエストの発行を自動化するツールです。",
+    "summaryBody": "このGitHub Actionは、ワークフロー内で生成・変更されたファイルをリポジトリへ反映させるプロセスを完全に自動化します。主な機能には、未追跡ファイルや変更されたファイルの自動検知、新しいブランチへの自動コミット、およびプルリクエストの作成・更新が含まれます。デフォルトでは固定ブランチ名を使用しますが、タイムスタンプやハッシュを用いた動的なブランチ名生成も可能です。また、コミットメッセージ、作成者、ラベル、レビュー担当者の指定に加え、フォーク先へのプッシュや特定パスの含み・除外設定など、柔軟なカスタマイズに対応しています。GitHub Actionsの権限設定を適切に行うことで、ドキュメントの自動更新や依存関係の整理、コードフォーマットの自動反映などを効率化できます。",
+    "topics": [
+      "GitHub Actions",
+      "CI/CD",
+      "Automation",
+      "Git",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Create Pull Request"
+  }
+}

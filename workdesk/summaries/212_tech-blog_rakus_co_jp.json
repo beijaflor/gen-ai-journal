@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:50:14.575029+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ERROR ログ1行から障害の一次対応を下準備する Claude Code スキルを作った",
+    "url": "https://tech-blog.rakus.co.jp/entry/20261030/errorlog",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "ERRORログを1行渡すだけで、既知のIssue検索から障害対応シートの自動作成までを一括で行うClaude Code用スキル「error-triage」の開発事例。",
+    "summaryBody": "本記事では、株式会社ラクスの開発チームが、本番環境で発生したエラーへの一次対応を効率化するために構築したClaude Codeのカスタムスキル「error-triage」を紹介しています。従来、手作業で行われていたGitHub Issueの検索、ソースコードの調査、およびGoogleスプレッドシートによる障害対応シートの作成・転記作業をAIエージェントに統合。Google Workspace CLI (gws) を用いた外部ツール連携や、プログレッシブディスクロージャー（段階的開示）の考え方を採用した手順書の分割、ハルシネーションを防ぐためのdry-runステップの導入といった、実運用に即した具体的な設計工夫が解説されています。導入により準備時間が30分から10分に短縮されるなど、担当者がより高度な判断や復旧対応に集中できる環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "障害対応",
+      "自動化",
+      "gws"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}
