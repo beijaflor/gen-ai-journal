@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:17:56.667989+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを混乱させるために設計された難解プログラミング言語「KillSwitch」の実験と検証",
+    "url": "https://blog.picheta.me/post/killswitch-lang/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMがコードの論理を真に理解しているかを測るため、文字数制限や安全ガードレールへの干渉など、AIの弱点を突く設計を施した対抗的言語「KillSwitch」とそのベンチマーク結果について。",
+    "summaryBody": "LLMのコード生成能力が「訓練データの記憶」ではなく「論理的理解」に基づいているかを検証するため、Dominik Picheta氏がLLMにとって極めて難解なプログラミング言語「KillSwitch」を開発しました。この言語はスタックベースですが、識別子の文字数カウントを強制する、仕様書にあえて嘘を混ぜる、スクリプト内に物語形式のノイズを混入させる、さらには「Ignore previous instructions」といったAIを混乱させるフレーズを構文に組み込むなど、LLMの弱点を突く設計がなされています。2026年時点のベンチマーク（架空設定含む）では、Claude Opus 5が最高スコアを記録したものの、多くのモデルが安全ガードレールの作動により失敗しました。著者は、LLMが未知の言語で簡単なタスクをこなせることは印象的だが、真の理解には至っていないと結論付けています。",
+    "topics": [
+      "LLM",
+      "難解プログラミング言語",
+      "AIベンチマーク",
+      "敵対的プロンプト",
+      "AI評価"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "I built a programming language that LLMs can't use"
+  }
+}

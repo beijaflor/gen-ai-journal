@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:10:03.923642+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルAIに実装を任せればClaudeのトークンは減る？ 実測したら逆だった（と、そこから分かったこと）",
+    "url": "https://qiita.com/yukio3239/items/e02c811664e444686fe5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "設計をClaude、実装をローカルAIに分担させた結果、補助作業の肥大化によりClaudeのトークン消費が逆に2.1倍に増加したという実測レポート。",
+    "summaryBody": "クラウドAI（Claude 3.5 Sonnet）のコスト削減を狙い、設計と準備をクラウド側、実装をローカルAI（Qwen 2.5 27B）に分担させるハイブリッド開発の有効性を検証した記事です。実測の結果、複雑なタスクではClaudeが実装の骨組みやテストコードを準備する過程で、直接実装するよりも約2.1倍のトークンを消費しました。これは、Claudeのコストの主因が「書く」こと以上に「読んで理解し、補助資料を作成する」ことに起因するためです。一方で、単一関数のような小規模タスクでは仕様書のみでローカルAIが完結できたものの、完了まで30〜90分を要するという速度面の課題も浮き彫りになりました。結論として、ローカルAIは仕様が短く出力が膨大な作業（一括変換や翻訳）や、機密性が高いコード、試行回数を稼ぎたい場面での活用が適しています。",
+    "topics": [
+      "Claude",
+      "ローカルLLM",
+      "Qwen",
+      "トークン節約",
+      "ソフトウェア開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

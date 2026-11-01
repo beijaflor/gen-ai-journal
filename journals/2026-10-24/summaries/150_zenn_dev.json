@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:09:11.788345+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにとって書きやすい構文とは何か：end と end func foo を1,000回以上比べてみた",
+    "url": "https://zenn.dev/nextbeat/articles/2026-10-syntax-locality-llm",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "未知のプログラミング言語を用いた生成実験により、LLMは単純な閉じ記号よりも「何を閉じたか」を明示する冗長な名前付き閉じ構文の方が、深いネスト構造を正確に生成できることを明らかにした研究。",
+    "summaryBody": "LLMにとって生成しやすいプログラミング言語の構文設計を調査するため、学習データに含まれない未知の言語を用いた生成実験が行われた。具体的には、ブロックを閉じる際に単なる `end` や `{}` を使う場合と、`end func foo` のように開き行の情報を繰り返す「名前付き閉じ」を使う場合で、生成精度がどう変化するかを比較している。実験の結果、ネストが深い（深さ8以上）プログラムにおいて、単純な閉じ方では全滅する一方で、名前付き閉じを採用するとほぼ100%の精度で生成できることが示された。著者はこの理由を、LLMにとって重要なのは「依存距離の短縮」そのものよりも、各行で構造を自己照合できる「冗長な手がかり（Local clues）」の存在であると分析。Scala 3の `end` マーカーやJavaの完全修飾名のような冗長さが、LLMの生成精度向上に寄与する可能性を示唆している。",
+    "topics": [
+      "LLM",
+      "プログラミング言語設計",
+      "構文解析",
+      "In-Context Learning",
+      "コード生成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

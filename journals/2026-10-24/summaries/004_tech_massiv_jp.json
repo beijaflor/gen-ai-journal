@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:45:43.601696+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにガイドラインを渡すだけでなく、lintでチェックする",
+    "url": "https://tech.massiv.jp/posts/2026-10-19-static-checks/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる自動コード生成の品質を担保するため、ガイドラインの内容を機械的に判定可能なlintルールや依存解析ツールへ落とし込み、CI/CDで厳密に検証するMassiv社の取り組みの詳解。",
+    "summaryBody": "Massiv株式会社における、AIエージェント（Claude Code等）を前提とした開発プロセスと、その品質管理手法が紹介されています。AIへの指示（プロンプトやガイドライン）だけでは不十分なケースがあるため、同社では「機械的に判定できるものはすべて自動チェックする」という方針を徹底しています。具体的には、oxlintのJSプラグインを用いた自作ルールによる独自コンポーネントの使用強制、fallowを用いた依存関係の可視化とデッドコード削除、sqlfluffによるSQLのスタイル修正、さらにはtextlintによるドキュメントの校正まで多岐にわたります。開発者はhkやmiseを通じてコミットフックで修正を行い、CIでは互換性チェック（buf breaking等）や機密情報検知を実行することで、AIが生成するコードの不確実性を効率的に制御し、保守性の高いコードベースを維持しています。",
+    "topics": [
+      "AIエージェント",
+      "Linting",
+      "oxlint",
+      "開発プロセス",
+      "TypeScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

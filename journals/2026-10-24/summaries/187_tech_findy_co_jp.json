@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:58:46.482476+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "施策立案からQAまで：AIエージェントで回す開発フローの全体像とアーキテクチャ",
+    "url": "https://tech.findy.co.jp/entry/2026/10/16/120000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ファインディ株式会社が実践する、施策の立案からIssue生成、AIエージェントによる並列実装、そしてQAまでを統合したAI駆動型開発フローのアーキテクチャとその役割分担の解説。",
+    "summaryBody": "本記事では、ファインディ社が構築したAIエージェントによる一気通貫の開発フローの全容が公開されています。開発プロセスは「PM向け」「開発向け」「QA向け」の3つのプラグインで構成されており、情報の収集、設計案作成、コード実装、テスト実行といった実作業をAIエージェントに委任しています。GitHubのIssue依存関係機能（blocked_by）を活用した並列実装の制御や、スタックプルリクエストを用いたレビュー効率化、Playwright MCPによる自動QAなど、具体的な実装手法が詳述されています。最も重要な点として、AIが作業を担いつつも、施策の採択やマージの判断、最終的なQA確認は人間が行うという「AIが委任、人間が判断」という明確な役割分担の設計指針が示されています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェア開発プロセス",
+      "GitHub",
+      "Playwright",
+      "エンジニアリングマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

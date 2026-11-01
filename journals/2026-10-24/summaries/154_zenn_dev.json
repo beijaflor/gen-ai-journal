@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:07:50.081879+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AFM（Apple Foundation Models）を活用したテキストアドベンチャーゲームの開発【第2回】自由入力を台本の選択肢につなぐ",
+    "url": "https://zenn.dev/gritchbreed/articles/ced633f449178f",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Apple Foundation Modelsのオンデバイスモデルを活用し、プレイヤーの自由なテキスト入力をゲーム内の特定の意図や移動アクションに変換・分類する実装手法を解説した連載の第2回記事です。",
+    "summaryBody": "この記事では、Apple Foundation Models（AFM）を用いたテキストアドベンチャーゲームにおける「入力の解釈」フェーズに焦点を当てています。主な内容は、1. `scenario.json`による話題・定型台詞・知識の定義、2. 動的な候補生成と`DynamicGenerationSchema`を用いた構造化出力によるLLMの制約、3. LLMの誤判定を補正するためのルールベースのガードレール実装です。特に、オンデバイスモデルのコンテキスト制限に配慮したプロンプトの調整や、temperatureを0に設定して選択の再現性を高める手法など、実戦的なSwift実装の詳細がコード付きで解説されています。自由な会話とゲームとしての制御（台本）を両立させるための「解釈層」の設計が本稿の核となっています。",
+    "topics": [
+      "Apple Foundation Models",
+      "Swift",
+      "ゲーム開発",
+      "オンデバイスAI",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

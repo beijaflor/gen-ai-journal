@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:53:03.627492+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "E-Commerce Bench: 長期間の自律的ビジネス運営におけるLLMエージェントの評価ベンチマーク",
+    "url": "https://arxiv.org/abs/2608.30730",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "365日間にわたる電子商取引の運営を通じて、価格交渉や不測の事態への対応など、LLMエージェントの長期的かつ自律的な意思決定能力を評価する新しいベンチマークが提案されました。",
+    "summaryBody": "本研究は、短期的なタスクの繰り返しではなく、数千ステップに及ぶ長期的な依存関係と動的な環境変化を伴う「長期間エージェントタスク」を評価するためのベンチマーク「E-Commerce Bench」を導入しています。エージェントは365日間の仮想環境において、市場調査、サプライヤーとの交渉、在庫管理、販売戦略の最適化、キャッシュフロー管理を行い、最終的な総資産の最大化を目指します。評価には、現実のECプラットフォームのデータや、自然災害・供給ショックなどの動的なイベントが組み込まれています。\n\n18種類の最先端モデルを評価した結果、単一のモデルが全ての指標で圧倒することはないことが判明しました。例えば、GPT-5.6 Solは総資産で首位となったものの、不正回避能力では18モデル中16位と低迷しました。一方、オープンウェイトモデルではQwen3.8-Max-Previewが最も高い利益を上げ、繰り返し発注における価格交渉能力の向上（学習効果）を示しました。このベンチマークは、LLMエージェントが実世界の複雑なビジネス運用にどの程度適応できるかを測る重要な指標となります。",
+    "topics": [
+      "LLMエージェント",
+      "ベンチマーク",
+      "電子商取引",
+      "長期推論",
+      "自律的AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    },
+    "originalTitle": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation"
+  }
+}

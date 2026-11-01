@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:58:21.365447+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeNAにおけるAI時代のネットワーク管理システム [DeNA インフラ SRE]",
+    "url": "https://engineering.dena.com/blog/2026/10/nwcli/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの活用を前提に、設定の抽象化を廃止し生のConfig運用へと回帰したDeNAの内製ネットワーク管理ツール「nwcli」の進化と、AI社員による自動運用の取り組み。",
+    "summaryBody": "DeNAのネットワークグループ（NOC）が、数千台規模の機器管理を支える内製ツール「nwcli」のAI時代における進化について詳説しています。最大の転換点は、従来人間が管理しやすいように行っていた「設定の構造化・共通化」を廃止し、「生のConfig」をそのまま扱う方針に切り替えたことです。LLMがコード生成を担うことで冗長な記述の管理コストが下がり、逆に共通化による意図しない波及リスクを排除できるようになったという知見は非常にユニークです。\n\n技術スタック面では、Goへの書き換えやAWS Lambda上でのAnsible実行（仮想デバイスのモンキーパッチによる実現）、機器に擬態するキャッシュサーバー「kagemusya」の導入など、スケーラビリティと検証速度を向上させる工夫が凝らされています。また、MCP（Model Context Protocol）サーバーの実装により、社内の「AI社員」がネットワークの状態を把握し、差分の解消判断やPR作成まで自動で行う運用フローを確立しています。人間の役割が「オペレーション」から「AIによる判断のレビュー」へとシフトしている実例を示す内容です。",
+    "topics": [
+      "ネットワーク自動化",
+      "LLM",
+      "Infrastructure as Code",
+      "Ansible",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

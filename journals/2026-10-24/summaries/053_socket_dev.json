@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:32:44.842230+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "vlt 1.5.0がエージェント・スキル管理機能を追加：Socketデータで悪意あるパッケージを排除",
+    "url": "https://socket.dev/blog/vlt-skills",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "JavaScriptパッケージマネージャーのvlt 1.5.0が、依存関係に含まれるAIエージェント向けスキル情報を管理・リンクし、Socketのデータで安全性を担保する機能を導入しました。",
+    "summaryBody": "JavaScriptパッケージマネージャーの「vlt」は、最新バージョン1.5.0において、AIエージェントへの指示（スキル）を管理する新機能を発表しました。これは、npmパッケージ内に含まれる`SKILL.md`などの指示ファイルを検出し、Cursor、GitHub Copilot、Gemini CLIといったエージェントが読み取るディレクトリへ自動的にシンボリックリンクを張る機能です。これにより、ライブラリのバージョン更新とエージェントの振る舞いに関するドキュメントを同期させることが容易になります。\n\nセキュリティ面では、開発元であるSocketの脅威インテリジェンスを活用しています。デフォルトで、マルウェアとしてフラグが立てられたパッケージからのスキル取得をブロックするフィルタリング機能を備えています。また、スキルの選択は`vlt.json`に保存されるため、CI環境やチームメンバー間での一貫性も保証されます。パッケージマネージャーが、単なるコードの依存関係解決だけでなく、AIエージェントとの安全な統合を担う新たな役割を示しています。",
+    "topics": [
+      "vlt",
+      "Package Manager",
+      "AI Agents",
+      "JavaScript Security",
+      "Socket"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "vlt 1.5.0 Adds Agent Skills Management"
+  }
+}

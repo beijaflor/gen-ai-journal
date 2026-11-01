@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:05:09.936687+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】",
+    "url": "https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "GitHub ActionsとClaude Codeを用い、テスト環境の最適化やDBキャッシュ、ジョブ並列化を通じてCI実行時間を約70%削減した実践的な改善記録。",
+    "summaryBody": "本記事は、e-dash社のエンジニアがNext.jsプロジェクトにおいて、肥大化したCIの実行時間を18分から4分台へと短縮したプロセスを詳しく解説しています。Claude Codeを使用したボトルネックの計測により、実行時間の多くがテスト環境（jsdom）の起動やDBセットアップのオーバーヘッドにあることを特定。これに対し、ユニットテストの実行環境分離（Node/jsdom）、DBマイグレーション済みデータのキャッシュ、ジョブの並列化（sharding）、およびnode_modules自体のキャッシュといった多角的な施策を実施しました。また、GitHub Actionsのキャッシュ容量上限に達した際の具体的な削減対応など、運用上のトラブルシューティングについても言及されており、CI/CD環境の最適化を目指す開発者にとって極めて再現性の高い知見を提供しています。",
+    "topics": [
+      "GitHub Actions",
+      "CI/CD",
+      "Vitest",
+      "Claude Code",
+      "パフォーマンス改善"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

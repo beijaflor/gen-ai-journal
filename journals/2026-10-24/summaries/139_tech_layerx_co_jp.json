@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:12:00.630176+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI が書き、レビューし、QA する開発で、私は「監督」の役割を考え始めた",
+    "url": "https://tech.layerx.co.jp/entry/engineer-as-director",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIエージェントが開発プロセスの大部分を担い、1日平均13本以上のPRがマージされる環境において、エンジニアの役割が「コードを書く・読む」ことから、成果物の品質を「味見」し意思決定を行う「監督」へと変化している実体験に基づく考察。",
+    "summaryBody": "LayerXのAi Workforce事業部における、AIエージェントをフル活用した圧倒的な開発スピード（16営業日で211件のPRマージ）と、その中でのエンジニアの役割の変化について詳述されています。 \n\n主なポイントは以下の通りです：\n- **AI駆動の自律型開発**: Claude Codeのスキル（ship, plan-checker, pr-checker, devqa）を組み合わせ、チケットの調査から実装、テスト、マージ後のQAまでをAIがほぼ自動で行う体制を構築。\n- **エンジニアの役割の変化**: 膨大なコードを一行ずつ読むのをやめ、AIが「何を決定し、何を確かめたか」というログの監視と、最終的なプロダクトの「手触り（味見）」を重視する「監督」の役割へ移行。\n- **自動化の限界と失敗**: AIが誤ったコンテキストでレビューを行うなどの失敗事例を通じ、AIが何をしているかを監視する重要性を再確認。人間は仕様の決定や、AIでは判断できない「心地よさ」の検証に注力する。\n- **Software Factoryの概念**: 人が関与しない「Dark Factory」ではなく、人間が判断に関わり続ける「Lit Factory（明かりのついた工場）」としての開発組織の在り方を提唱。\n\n「コードを書く10年選手」でもAIの速度と質に驚かされる現状を認めつつ、それでも人間が責任と価値判断を担う新しいエンジニア像が描かれています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "ソフトウェア開発プロセス",
+      "LayerX",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

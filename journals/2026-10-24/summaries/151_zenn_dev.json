@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:08:52.641034+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Strata でできること：ローカル LLMの実行とアプリ連携",
+    "url": "https://zenn.dev/jtcc/articles/strata-local-llm-app-integration",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Strataを用いたローカルLLMの構築から、PythonによるAPI連携手法、そしてRTX 4090環境下での入力トークン長による応答性能（TTFT・スループット）の定量的な計測結果を解説しています。",
+    "summaryBody": "この記事では、ローカルLLM実行環境「Strata」を活用したアプリ開発と性能評価について詳しく解説しています。内容は主に以下の4点で構成されています。\n\n- **Strataの機能**: Qwen等のモデルを実行し、OpenAI/Anthropic互換APIを提供。ブラウザチャットやモニタリング、画像入力にも対応しています。\n- **アプリ連携の具体例**: Python標準ライブラリを用いたAPI呼び出しや、仕様書から注文取消条件をJSON形式で抽出する実践的なプロンプト設計、出力バリデーションの重要性に触れています。\n- **詳細なベンチマーク計測**: RTX 4090環境において、入力長（短文・2k・8.5kトークン）を変えた際の性能を比較。長文入力では生成速度（decode）よりも入力処理（prefill）が待ち時間のボトルネックになることを定量的に示しています。\n- **実運用の知見**: トークン数と文字数の違い、VRAM/RAMの動的管理、キャッシュ再利用がない場合のリアルな挙動など、ローカル環境特有の注意点を網羅しています。",
+    "topics": [
+      "Strata",
+      "ローカルLLM",
+      "LLMベンチマーク",
+      "Python",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

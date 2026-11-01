@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:55:34.571634+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub、プルリクエスト向け「AI Scan」を一般提供",
+    "url": "https://codezine.jp/news/detail/30045",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHubは、CodeQLを補完してPHPやTerraformなどの広範な言語の脆弱性を検出する「AI Scan for pull requests」を一般公開しました。",
+    "summaryBody": "GitHubは10月15日、プルリクエスト時の脆弱性検知機能「AI Scan for pull requests」の一般提供を開始しました。この機能は従来のCodeQLを補完するもので、PHP、Shell/Bash、Terraform (HCL)、Dockerfile、C# (Blazor)など、CodeQLが未対応の言語やフレームワークを対象に自動スキャンを行います。検出結果にはセキュリティリスクの説明や修正候補（autofix）が含まれる場合がありますが、チェックの失敗によるマージのブロックは行われない助言的なツールとして位置付けられています。パブリックリポジトリでは無料で利用でき、プライベートリポジトリではGitHub Code Security等の特定のライセンスが必要となります。",
+    "topics": [
+      "GitHub",
+      "AI Scan",
+      "脆弱性診断",
+      "Code Security",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

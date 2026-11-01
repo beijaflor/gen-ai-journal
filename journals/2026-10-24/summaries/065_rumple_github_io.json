@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:29:14.515790+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMに自信度（信頼度スコア）を尋ねてはいけない理由",
+    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "LLMが生成する自信度スコアは、内部的な確信度ではなく「もっともらしいテキスト」の生成結果に過ぎないため、外部的なメタデータと過去の実績に基づいた独自の算出ルールを構築すべきである。",
+    "summaryBody": "LLMに自身の回答の自信度（Confidence）を数値化させても、それは信頼できる指標にはなりません。LLMは自己回帰的にテキストを生成しているだけであり、その数値は「次に続くもっともらしいトークン」として出力されたものに過ぎず、モデル内部の正確性を測定した結果ではないからです。同じ質問でも言い回しが変わるだけで数値が変動したり、根拠なく高い数値を出したりする問題（キャリブレーションの欠如）が指摘されています。\n\n真に信頼できる自信度スコアを得るためには、LLMに直接尋ねるのではなく、以下のステップで外部的に構築する必要があります：\n1. **客観的な情報の選定**: 検索結果の有無や、複数回回答させた際の一致度など、LLMの感想ではないメタデータを収集する。\n2. **過去データとの照合**: 特定の条件（例：検索結果あり＋回答が一致）において、過去にどの程度の割合で正解していたかの実績値を算出する。\n3. **継続的な改善**: 定期的に予測した自信度と実際の正答率を比較し、スコア算出のルールを微調整し続ける。\n\n結論として、自信度スコアはLLMから引き出すものではなく、客観的な観測と実績の記録から「計算」されるべきものです。",
+    "topics": [
+      "LLM",
+      "Confidence Score",
+      "Calibration",
+      "Reliability",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Asking LLM for confidence"
+  }
+}

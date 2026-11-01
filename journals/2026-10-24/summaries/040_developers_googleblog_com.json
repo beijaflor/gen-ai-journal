@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:35:56.032881+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TorchTitanにおけるTorchTPUの統合とTPU向けモデル最適化",
+    "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Metaの学習用リファレンス実装TorchTitanにTorchTPUが統合され、PyTorchネイティブなコードでJAXに匹敵する高効率な大規模モデル学習がGoogle Cloud TPU上で実現可能になりました。",
+    "summaryBody": "MetaとGoogleの協力により、PyTorchベースの学習プラットフォーム「TorchTitan」がGoogle Cloud TPUにネイティブ対応しました。新開発のTorchTPU（torch.device(\"tpu\")）により、JAXへの書き換えなしでTPUの性能を最大限に引き出せます。主な技術的進歩として、コンパイラ向けに最適化された「SimpleFSDP」、学習ステップ全体を単一のXLAプログラムとしてキャプチャする「Graph Trainer」、そしてPallasを用いたSplash Attentionなどの高性能カスタムカーネルの統合が挙げられます。これにより、Llama 3 405BやQwen 3 235B（MoE）といった超大規模モデルにおいて、数千チップ規模でも高いMFU（Model Flops Utilization）とスケーリング効率を達成しています。また、Hugging FaceモデルをTPU向けに自動最適化するバックエンドも提供されます。",
+    "topics": [
+      "TorchTitan",
+      "TorchTPU",
+      "Google Cloud TPU",
+      "FSDP",
+      "LLM Training"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:33:01.479578+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Shopifyがオープンモデルを特定タスクの専門家へ進化させる手法：コスト90%削減と高速化の実現",
+    "url": "https://shopify.engineering/open-model-task-experts",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Shopifyは、Sidekickの特定タスクをオープンモデルにオフロードし、継続的な学習ループとNVIDIAの最新ハードウェアを活用することで、フロンティアモデルを凌駕する性能と圧倒的なコスト効率を実現した。",
+    "summaryBody": "Shopifyは、AIアシスタント「Sidekick」の性能向上とコスト削減のため、フロンティアモデルから特定のタスクに特化したオープンソースLLM（SLM）へ処理を移行する「Model Optimization Flywheel」戦略を詳解しています。このループでは、まずフロンティアモデルで性能の限界を押し広げ、その後NVIDIA Nemotron 3.5 Lightning等のオープンモデルを選定。推論をTensorRT-LLMやBlackwell GPUで最適化し、本番環境の失敗例を自動で修復・学習データ化（Self-healing）することで精度を高め続けます。GraphQLサブエージェントの例では、フロンティアモデルと比較して精度で上回り、応答速度は7倍、コストは90%削減という劇的な成果を報告しています。",
+    "topics": [
+      "Shopify",
+      "LLM",
+      "NVIDIA Blackwell",
+      "Model Optimization",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "How Shopify turns open models into task experts (2026)"
+  }
+}

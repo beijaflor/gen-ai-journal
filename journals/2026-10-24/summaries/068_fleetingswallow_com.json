@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:28:32.810541+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Minotaur AI深掘り：言語モデルに頼らない推論の実現",
+    "url": "https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Minotaurは、言語モデルやGPUに依存せず、ELC（駆動・論理・制約）フレームワークを用いてシステム構造を直接扱うことで、証明可能かつ高効率な推論を実現する次世代AIアーキテクチャである。",
+    "summaryBody": "Minotaur AIは、大規模言語モデル（LLM）のようなテキスト予測ではなく、システムの物理的・論理的構造を直接モデル化して推論を行う新しいAIアーキテクチャである。ELC（Energy：駆動、Logic：論理、Control：制約）という3つの役割に基づく最小表現（MINOS）を採用し、GPUを必要とせず一般的なCPUコア1つで高速に動作する。このシステムの核心は「沈降（settling）」と呼ばれる単一の演算にあり、これにより演繹、帰納、診断、そしてジューディア・パールが提唱した「介入（doing）」と「観察（seeing）」の区別といった高度な因果推論を統合的に実行する。LLMが人間の記述パターンを模倣しバイアスを継承するのに対し、Minotaurは事実に基づき、推論過程を「証明書」として出力できる透明性を持つ。実験では、警察の聴取による記憶変容の追跡や、生産ラインのデータからの故障箇所の特定において、LLMと同等以上の精度を証明した。過去70年のAI研究の限界を、学習可能な構造化モデルというアプローチで突破することを目指している。",
+    "topics": [
+      "Minotaur AI",
+      "ELCアーキテクチャ",
+      "因果推論",
+      "ベイズネットワーク",
+      "記号的AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Minotaur AI Deep Dive: Achieving Reasoning Without a Language Model"
+  }
+}

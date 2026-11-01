@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:13:50.010776+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vite+がAIエージェントによるアプリケーション開発手法をどのように変えたか",
+    "url": "https://janmichalek.com/blog/vite-plus-agentni-vyvoj?lang=en",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントによる開発において、Vite+を導入してツールチェーンを統一することで、指示の簡略化とCI/CDの劇的な高速化を実現した実践的なガイド。",
+    "summaryBody": "ソフトウェアエンジニアのJan Michálek氏による、Vite+（vpコマンド）を用いたAI支援開発の最適化手法に関する記事です。開発現場で散らかりがちなESLint、Prettier、TypeScript、テストランナーなどの設定を、Vite+は単一のツールチェーンに統合します。これにより、AIエージェントに対して「vp check」や「vp build」といった統一されたコマンドを指示するだけで、リンター、フォーマット、型チェックを一貫して実行可能になります。筆者は具体的なプロンプト例を公開しており、AIが「完了」の定義を誤認しないためのワークフローを解説しています。実証結果として、モノレポでのCI時間が4分から50秒へと大幅に短縮され、プリコミットチェックも高速化したことを報告しています。既存の巨大プロジェクトへの盲目的な移行には慎重な姿勢を示しつつも、新規プロジェクトにおけるAIエージェントとの協業において、強力な標準化ツールになると結論づけています。",
+    "topics": [
+      "Vite+",
+      "AI-assisted development",
+      "Oxlint",
+      "Toolchain",
+      "DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "Vite+ changed how I build applications with AI agents"
+  }
+}

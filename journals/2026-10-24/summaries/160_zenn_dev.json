@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:06:00.008074+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コーディングエージェントを用いた開発 2026 下期",
+    "url": "https://zenn.dev/rounda_blog/articles/5f266fb2b9da1d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "複数のAIエージェントを役割ごとに使い分け、メモリ管理の徹底や3種の実装フロー（SDD、パッチ、ダイレクト）を確立することで、開発の高速化と品質維持を両立させた詳細な実践記録。",
+    "summaryBody": "2026年下期における、ClaudeやCodexを活用したコーディングエージェント開発の振り返り。開発リポジトリとは別に、AI用のメモリ管理およびドキュメント管理リポジトリを運用し、情報のコンテキスト過多を防ぐ仕組みを構築している。開発フローは、設計からサブエージェントに実装させる「SDD」、試作後に差分を当てる「パッチ方式」、小規模修正用の「ダイレクト」の3種を状況に応じて使い分ける。特に、モデルの配置（Fableを判断、Opusをレビュー、Sonnetを実装など）が成功の鍵であると分析。また、AIによるコード肥大化を防ぐための行数制限ルールや、Artifactsを用いたUI合意形成、デモ動画制作の自動化など、手戻りを最小化する具体的なプラクティスが詳述されている。失敗事例を含めた詳細な知見は、AIエージェントを実務に導入する開発者にとって極めて有益な内容となっている。",
+    "topics": [
+      "コーディングエージェント",
+      "AIエージェント",
+      "Claude",
+      "ソフトウェア開発フロー",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

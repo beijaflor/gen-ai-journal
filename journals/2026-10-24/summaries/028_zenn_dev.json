@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:39:04.561390+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「読みにくいDB」はAI開発のコストを1.9倍にする――Claude Codeで検証したDB設計の影響",
+    "url": "https://zenn.dev/actbe_tech/articles/8b4a9991d5365d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DB設計の品質がAI開発のコストと精度に与える影響をClaude Codeで検証した結果、適切な命名やコメントのある「読みやすいDB」は、そうでない場合に比べてコストを約半分に抑え、精度も向上することが示された。",
+    "summaryBody": "Claude Code（モデル：Claude 3.5 Sonnet）を用い、ECサイトを題材とした「読みやすいDB」と「読みにくいDB」での開発パフォーマンスを比較検証したレポート。検証の結果、読みにくいDBではAIがデータの意味を推測するために実DBへのBashコマンドによる確認（tinker等）が増加し、開発コストが約1.9倍、所要時間が1.8倍に増大した。また、命名やコメントが不十分な場合、AIが「もっともらしい誤解」をしてバグを生むリスクも確認されている。結論として、人間にとっての「丁寧な設計（適切な命名、外部キー、コメント）」が、AIエージェントによる開発効率を最大化する上でも極めて重要であることがデータで裏付けられた。",
+    "topics": [
+      "DB設計",
+      "Claude Code",
+      "AI開発",
+      "データベース",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

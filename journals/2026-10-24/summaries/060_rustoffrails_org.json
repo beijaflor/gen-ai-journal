@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:30:32.330802+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rust off Rails: AI時代に向けた、強い意見を持ったWebスタック",
+    "url": "https://rustoffrails.org/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントによる自動コード生成を前提に設計された、Ruby on Railsの哲学を継承したRust製フルスタックWeb開発フレームワーク。",
+    "summaryBody": "Rust off Railsは、Claude CodeやCursorといったAIコーディングエージェントがコードを記述することを最適化した新しいWebスタックです。Ruby on RailsやElixir/Phoenixの「設定より規約」という思想をRustの世界に持ち込み、Markdown形式の規約ドキュメント（AGENTS.md）をAIに読み込ませることで、一貫性のあるアプリケーション開発を実現します。\n\n主な特徴は以下の通りです：\n1. **AIネイティブ**: プロンプトでのインタビューを通じてアプリを生成し、AIがテストをパスするまで自動で修正を繰り返すワークフローをサポート。\n2. **堅牢なスタック**: Axum、SeaORM、Tailwindを採用し、SQLiteとPostgresの両方でテストをパスすることを「完了」の定義としています。\n3. **インフラの簡素化**: ジョブキュー、キャッシュ、Pub/Subをデータベースに集約することで、Redisなどの外部依存を最小限に抑え、単一バイナリでのデプロイを容易にします。\n4. **モダンなフロントエンド**: htmx、Inertia.js（React/Svelte）を選択可能で、型安全な通信を提供します。",
+    "topics": [
+      "Rust",
+      "AI Coding",
+      "Web Framework",
+      "Ruby on Rails",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Rust off Rails: the opinionated web stack for the AI era"
+  }
+}

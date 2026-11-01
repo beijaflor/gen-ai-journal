@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:24:44.878734+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "統計データでアメフトの議論を検証するAIアナリストの構築",
+    "url": "https://www.oreilly.com/radar/building-an-ai-analyst-one-football-argument-at-a-time/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NFLの膨大なプレーデータを用いて「ラン攻撃を確立すべきか」といった定説を検証するAIエージェントを構築し、データ分析における定義の重要性とバイアス回避の手法を解説している。",
+    "summaryBody": "O'Reillyが公開したこの記事では、NFLの25万件以上のプレーデータを活用してファンの議論を検証するAIエージェント「The Monday Morning Agent」の開発プロセスを紹介しています。\n\n主なポイントは以下の3点です：\n1. **概念の具体化**: 「ランを確立する」といった曖昧な主張に対し、データで検証可能な定義（例：前半の接戦時におけるラン比率）をAIに与える重要性。 \n2. **因果関係と相関の区別**: 単純な統計では「勝っているチームがランで時間を稼ぐ」という傾向が「ランが勝利を招く」と誤認されやすいため、適切なフィルタリング（例：点差が3点以内の状況に絞る）が不可欠であることを示しています。 \n3. **エージェントの検証**: AIの回答にフィルター条件や使用したコードを含めることで、分析の透明性を確保し、人間の専門家が結果をクロスチェックできる体制を構築しています。\n\nこのプロジェクトは全8回のシリーズとなっており、最終的にはAIが自律的に調査を行い、回答すべきでない問いを正しく拒否できるレベルまで進化させることを目標としています。",
+    "topics": [
+      "AIエージェント",
+      "データ分析",
+      "NFL",
+      "プロンプトエンジニアリング",
+      "統計バイアス"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 86
+    },
+    "originalTitle": "Building an AI Analyst, One Football Argument at a Time – O’Reilly"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:39:17.944450+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "フロア図の画像1枚とClaude Codeで、Mapboxの屋内地図を作ってみた",
+    "url": "https://qiita.com/akiramur/items/ac16f1a58dd7e18516de",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "フロア図の画像1枚からClaude CodeとPythonパイプラインを用いて、Mapbox向けの屋内地図（GeoJSON）を自動生成・編集できるツール「indoor-generator」の紹介。",
+    "summaryBody": "この記事では、Mapboxの屋内地図（Indoor Map）作成を効率化するツール「indoor-generator」の開発と活用法を紹介しています。従来、屋内地図の作成には各部屋のポリゴンを一つずつ描画する手間がありましたが、本ツールはClaude Codeのスキル機能を活用し、自然言語での指示やフロア図画像からMapbox Indoor Data Modelに準拠したGeoJSONを生成します。ClaudeがOSM（OpenStreetMap）やWeb検索を利用して建物の外形や階数、面積を特定し、画像から店舗の輪郭や店名をトレースする仕組みです。生成されたデータはローカルで即座にプレビュー可能で、「会議室を広くして」といった対話形式の修正や、プレビュー画面上での手動編集にも対応しています。PMO新橋IIビルや三井アウトレットパーク多摩南大沢を例に、数分でプロトタイプが完成する様子や、ClaudeのAPI利用コスト、著作権上の注意点についても具体的に解説されており、展示会や社内フロアマップなどの迅速な構築に極めて有用な手法を提示しています。",
+    "topics": [
+      "Mapbox",
+      "Claude Code",
+      "屋内地図",
+      "GeoJSON",
+      "生成AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

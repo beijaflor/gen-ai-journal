@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:46:22.676121+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを活用したコードの攻撃対象領域（アタックサーフェス）の削減",
+    "url": "https://www.anthropic.com/research/attack-surface-reduction",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのFrontier Red Teamは、Claudeを用いてオープンソースソフトウェアの攻撃対象領域を自動分析・削減し、OpenSSH等の主要プロジェクトで未認証から到達可能な不要なコードを特定・修正した成果を公開しました。",
+    "summaryBody": "AnthropicのFrontier Red Teamによる、LLMを用いたソフトウェアセキュリティ向上の研究報告です。未知の脆弱性を個別に修正する従来のアプローチとは異なり、Claudeを活用して「攻撃者が到達可能なコード領域」を自動的に特定し、不要な露出を制限（ゲート化）する手法に焦点を当てています。\n\n主な手法として、以下の3点を挙げています：\n1. **デフォルト設定の分析**: 出荷時の設定で到達可能だが不要な機能を特定。\n2. **設定の相互作用**: 組み合わせによってセキュリティ制御が密かに無効化されるケースを検出。\n3. **早期到達可能性**: 認証前やプロトコルの初期段階で実行される複雑なコードを特定。\n\n25のオープンソースプロジェクト（計500万行超）を分析した結果、493件の問題を発見しました。特筆すべき事例としてOpenSSHが挙げられており、Claudeは未認証のクライアントが到達可能な約4,500行の不要な実験的コード（ML-DSA-44関連）を特定しました。これに対する修正により、デフォルトのsshdにおいて未認証で到達可能なコードの約5分の1を削減することに成功しました。この研究は、LLMがプログラムの動的解析やテストと連携することで、実用的かつ経済的にソフトウェアの安全性を高められることを示唆しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "攻撃対象領域削減",
+      "OpenSSH",
+      "AIによるコード解析",
+      "セキュア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Using Claude to reduce the attack surface of code"
+  }
+}

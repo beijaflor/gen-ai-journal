@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:02:23.281679+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AgentsView: AIコーディングエージェントの活動記録とコスト管理ツール",
+    "url": "https://www.agentsview.io/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "60種類以上のAIコーディングエージェントの活動履歴をローカルに集約・可視化し、実行コストやツール使用状況を詳細に分析・検索できるオープンソースツール。",
+    "summaryBody": "AgentsViewは、Claude Code、Aider、Cursor、Clineなど、60種類以上のAIコーディングエージェントのセッションを自動的に収集・一元管理するローカルファーストのアーカイブプラットフォームです。バックグラウンドサーバーが既存のエージェントのログディレクトリを監視し、SQLiteにデータを集約します。主な特徴は以下の通りです：\n\n1. **活動とコストの可視化**: トークン使用量に基づいたリアルタイムのコスト追跡、エージェントごとの並列実行状況をダッシュボードで確認可能。\n2. **高度な検索・知能**: 全文検索だけでなく、セマンティック検索やハイブリッド検索に対応。過去の決定事項やプロジェクトの事実を抽出する「Recall」機能も備えています。\n3. **広範な連携**: CLI、REST APIに加え、MCP（Model Context Protocol）サーバーとしても機能。エージェント自身が自身の過去の履歴やコストを確認できるようになります。\n4. **柔軟なデプロイ**: 単一のGoバイナリで動作し、個人利用からチームでのPostgreSQL/ClickHouse連携まで幅広く対応。データはデフォルトでローカルに保持されるため、プライバシー面でも優れています。",
+    "topics": [
+      "AI Agents",
+      "Developer Tools",
+      "Observability",
+      "MCP",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "AgentsView: see what your AI coding agents did and what it cost"
+  }
+}

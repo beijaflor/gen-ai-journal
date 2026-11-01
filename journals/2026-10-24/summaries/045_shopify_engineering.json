@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:34:41.370935+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントにモバイル開発環境を：Shopifyの「Remote Dev」",
+    "url": "https://shopify.engineering/remote-dev",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Shopifyは、AIエージェントがモバイルアプリの開発、ビルド、テストを並列かつ自律的に実行できるリモート環境「Remote Dev」を構築し、開発ワークフローを劇的に効率化しました。",
+    "summaryBody": "Shopifyのエンジニアリングチームは、AIエージェント「River」がモバイル開発においてローカルPCのリソース制限（コンパイラやシミュレータの負荷）に直面していた問題を解決するため、リモート開発環境「Remote Dev」を導入しました。このシステムは、クラウド上のMac（iOS用）とLinux VM（Android用）をプールし、ビルド済みの「ウォーム状態」で待機させることで、環境構築時間を30分から数分に短縮。エージェントはコード修正、テスト、PR作成だけでなく、スクリーンショットや3Dレンダリングを用いた解説動画の自動生成まで行います。さらに、WebSocketsを活用した「Live Preview」により、開発環境を持たないメンバーもブラウザから直接アプリを操作可能になりました。この取り組みにより、モバイルのプルリクエストの61%がAIによって生成されるという大きな成果を上げています。",
+    "topics": [
+      "AI Agents",
+      "Mobile Development",
+      "Remote Infrastructure",
+      "Shopify",
+      "LLM Ops"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "We gave AI agents a mobile dev environment (2026) - Shopify"
+  }
+}

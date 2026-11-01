@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:17:03.956941+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "tmuxとClaude CodeによるAIエージェント管理：セッション、send-keys、そして限界点",
+    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェント（Claude Code等）をtmuxで並列実行・自動化するための実践的な設定、スクリプト操作、および既存ターミナルマルチプレクサの限界について解説したガイド。",
+    "summaryBody": "この記事では、Claude CodeなどのAIコーディングエージェントを効率的に運用するためのtmux活用術を解説しています。主な利点として、SSH切断後の永続性、複数エージェントの一元管理、外部スクリプトからの操作性を挙げています。Claude Codeに標準搭載された`--tmux`フラグの使い方はもちろん、手動でのセッション設計、`send-keys`によるエージェントへの命令送信、`capture-pane`を用いた出力内容の取得とパース、ステータスラインによる稼働状況の監視など、高度な自動化手法を詳述しています。一方で、tmuxはエージェントの「承認待ち状態」を認識できないといった、AI特有のワークフローにおける限界についても触れ、専用ツールとの使い分けを提案しています。",
+    "topics": [
+      "tmux",
+      "Claude Code",
+      "AIエージェント",
+      "自動化",
+      "ターミナル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "tmux + Claude Code: Sessions, send-keys, and the Ceiling"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:18:52.449118+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代の開発ワークフロー「Brain Sandwich（脳のサンドイッチ）」：思考を外注しないためのシンプルな手法",
+    "url": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIに作業を丸投げして思考を停止させる「Meat Proxy」化を防ぎ、実装の前後に人間の思考を挟むことで品質とスキルを維持する「Brain Sandwich」というフレームワークを提案。",
+    "summaryBody": "エンジニアがAIにすべての作業を依存し、自らの思考を完全に排除してしまう問題への対策として、エンジニアのEmily氏が提唱する「Brain Sandwich」というフレームワークが紹介されています。この手法は、作業のプロセスを「人間の脳→AI→人間の脳」という3つのステップで構成します。\n\n1. **最初の脳（計画）**: AIに指示を出す前に、まず人間が問題を理解し、大まかな解決の方向性を定めます。これにより、AIによる誤った誘導や、不要な解決策の構築を防ぎます。\n2. **AI（実行）**: 文脈を定義した上で、実装作業をAIに委託します。ここではAIの力を最大限に活用します。\n3. **最後の脳（レビュー）**: AIが出力したコードの差分を読み、複雑さが許容範囲内か、なぜその変更が必要かを人間が確認します。「自分の言葉で変更内容を説明できないなら、レビューに出すべきではない」という基準を設けることで、エンジニアのスキル低下を防ぎ、コードの質を担保します。",
+    "topics": [
+      "AI coding assistants",
+      "Software Engineering",
+      "Developer Productivity",
+      "Code Review",
+      "Best Practices"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 65,
+      "overall": 85
+    },
+    "originalTitle": "The Brain Sandwich – Terrible Software"
+  }
+}

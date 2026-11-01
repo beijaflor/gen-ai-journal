@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:07:34.546810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ClaudeにiOSシミュレーターのスクリーンショットを読ませるのをやめて、操作で増えるコンテキストを43%削減した",
+    "url": "https://zenn.dev/eai/articles/dont-let-agents-see-the-ios-sim-screen",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeによるiOSシミュレーター操作において、画像中心の制御をテキストベースの要素抽出（ダンプ）へ切り替えることでコンテキスト消費を43%削減した手法の記録。",
+    "summaryBody": "Claude CodeなどのAIエージェントがiOSシミュレーターを操作する際、高解像度のスクリーンショット（1枚約2,500トークン）がコンテキストを急速に圧迫する課題に対し、3つの技術的アプローチで改善を試みた。1つ目はアクセシビリティ情報をテキストで抽出するダンプ機能の実装、2つ目は検証時のみ軽量化した低解像度JPEGを送る仕組み、3つ目は特定の画面へ即座に遷移するカスタムURLスキームの活用である。計測の結果、4つの標準的な作業においてコンテキスト増分を43%削減、画像枚数を96%削減することに成功した。また、シミュレーター固有の挙動である「ドラッグ時の慣性」を抑制するために終点で座標を微振動させるテクニックや、アニメーション停止を待機するロジックなど、AIエージェントに正確なGUI操作をさせるための具体的な実装コードと指示（AGENTS.md）が公開されている。",
+    "topics": [
+      "Claude Code",
+      "iOSシミュレータ",
+      "LLMコンテキスト最適化",
+      "AIエージェント",
+      "アクセシビリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

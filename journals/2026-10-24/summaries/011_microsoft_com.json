@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:43:53.016174+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI駆動のARTEXを用いた国家主導の大規模キャンペーンによるサプライチェーン侵害",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "中国背景の攻撃グループStorm-0940が、AIエージェント型ペネトレーションテストフレームワーク「ARTEX」を悪用し、ConnectWiseのサプライチェーンを起点とした大規模かつ高速な多組織への侵害を実行した事例の分析。",
+    "summaryBody": "Microsoftの脅威インテリジェンスチームは、2026年9月頃より観測された中国国家に関連する攻撃グループ「Storm-0940」による大規模な攻撃活動を報告しました。この攻撃の最大の特徴は、オープンソースのAI駆動型ペネトレーションテストフレームワーク「ARTEX」を悪用している点です。ARTEXは自律的なエージェントとして機能し、偵察から脆弱性探索、特権アクセスの取得までを自動化します。Storm-0940は、ConnectWiseのマルチテナント型アプリケーションの信頼関係を侵害することで、数百の顧客組織へ秒速で横展開を行い、標的選定から特権獲得まで3時間未満という驚異的な速さで攻撃を完遂しました。Microsoft Graphを介した偵察や認証情報の追加による永続化が確認されており、AIが攻撃オペレーションを指数関数的に加速させている実態が浮き彫りになりました。報告書には、Microsoft DefenderやSentinel向けの具体的なハンティングクエリおよび対策ガイドが含まれています。",
+    "topics": [
+      "ARTEX",
+      "Storm-0940",
+      "サプライチェーン攻撃",
+      "Agentic AI",
+      "Microsoft Graph"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise"
+  }
+}

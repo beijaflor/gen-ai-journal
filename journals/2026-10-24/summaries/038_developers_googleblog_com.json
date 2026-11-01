@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:36:29.223853+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Cloudにおける統制された自己進化型AIエージェントの構築",
+    "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google Cloudは、障害発生時に自律的にコードを生成・適用し、エージェント自身の構成を動的に進化させる「自己進化型AI」の参照アーキテクチャ（Project Chrysalis）を発表しました。",
+    "summaryBody": "Project Chrysalisは、従来の静的なAIエージェントの限界を超え、本番環境の障害（Black Friday時のキャッシュスタンプード等）に対して自律的に適応・進化するシステムです。主要な3つの研究柱として、BigQueryでの高速シミュレーション（Dream-RSI）、3レイヤーでの自己進化（APEX）、そして介入の効果を数学的に評価するクレジット割り当て（AgentEvolver）を採用しています。エージェントは必要に応じてミドルウェアのパッチを動的に生成し、その効果を検証した上で、成功した戦略をメモリに記録し、自身のマルチエージェント階層（DAG）をメモリ上で再構築します。ガバナンス面では、Model Armorによる入力保護、Cloud KMSによるコード署名、Binary Authorization、そして人間による最終承認（HITL）を組み合わせた「多層防御」を組み込み、セキュリティと信頼性を確保しています。シミュレーションでは、障害復旧時間を数十分から1.8秒へ短縮し、エラー率をゼロにする劇的な性能向上を確認しました。",
+    "topics": [
+      "Self-Evolving AI",
+      "Google Cloud",
+      "AI Agents",
+      "SRE",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Architecting Governed, Self-Evolving AI Agents on Google Cloud"
+  }
+}

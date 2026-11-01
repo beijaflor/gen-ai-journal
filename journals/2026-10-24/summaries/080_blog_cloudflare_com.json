@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:25:46.097442+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、構造化データ抽出に特化したSystem Oneモデル「Clairic」を発表",
+    "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareが発表した「Clairic」は、非構造化データから値の抽出、計算、推定、予測を高速かつ低コストで行う、新しいSystem One型の抽出モデルです。",
+    "summaryBody": "Cloudflareは、推論（System Two）ではなく直感的かつ高速な処理（System One）に特化した新しい抽出モデル「Clairic」のプレビュー版を公開しました。従来のLLMがテキスト生成によって情報を抽出するのに対し、Clairicはシングルパスの順伝播のみで処理を行うため、1秒未満の低遅延かつ低コストで動作します。主な機能として、テキストスパンの抽出、数値や日付の計算、根拠に基づいた値の推定（80%信頼区間付き）、および時系列の予測が可能です。また、信頼度スコアやnull確率を返すため、自動化の判断基準として利用しやすい設計になっています。同社が提唱する「Clairicで抽出し、Clefで判断し、LLMで行動（文章生成）する」というワークフローにより、LLMのみの構成と比較してコストを約半分、速度を約3倍に改善できるとしています。",
+    "topics": [
+      "Cloudflare",
+      "Workers AI",
+      "機械学習モデル",
+      "構造化データ抽出",
+      "System One"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Introducing Clairic, a new System One class of extraction models"
+  }
+}

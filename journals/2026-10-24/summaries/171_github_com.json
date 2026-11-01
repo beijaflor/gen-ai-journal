@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:02:37.919348+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Harness²: 未知のタスクに適応する再帰的なAIエージェント・ハーネシング・フレームワーク",
+    "url": "https://github.com/google-research/harness2",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "モデルの重みを変更せず、実行時の試行錯誤を通じてプロンプトやツール構成などのエージェント制御システム（ハーネス）を再帰的に最適化するフレームワーク。",
+    "summaryBody": "Google Researchが発表した「Harness²」は、LLMをエージェントとして機能させるための周辺要素（プロンプト、ツール、メモリ、スキル等の総称：ハーネス）を自動最適化するプラグアンドプレイ型のフレームワークです。このシステムは2段階の再帰構造を持っています。1つ目の「タスクレベル再帰」では、特定のタスクに対してハーネスの修正案を提示・試行（Propose-Probe）し、実行結果のコントラストから最適な構成を導き出す（Compose）プロセスを繰り返します。2つ目の「ハーネシングレベル再帰」では、各タスクで得られた教訓を永続的に蓄積し、将来のタスクに活用します。Gemini 3.5 FlashやGLM-5を用いた実証実験では、JobBenchやWorkBuddy-Benchなどの実務ベンチマークにおいて最大11.8ポイントの精度向上が確認されており、モデルの重みを更新することなくエージェントの性能を大幅に引き出すことが可能です。",
+    "topics": [
+      "AIエージェント",
+      "Google Research",
+      "大規模言語モデル",
+      "自律的改善",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Harness²: Recursive Agent Harnessing for an Open World"
+  }
+}

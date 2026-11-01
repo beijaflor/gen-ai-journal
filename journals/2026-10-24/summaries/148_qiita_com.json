@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:09:44.781189+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexでゲームを作っていたら、小さなAI開発組織を回す実験になった",
+    "url": "https://qiita.com/Masato_Iwasaki/items/7e5241176f3eead2a2f5",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "CodexとChatGPTを活用し、複数のAIエージェントに役割を分担させてゲーム開発の「スプリント」を回す、自律的な開発組織の構築実験の記録。",
+    "summaryBody": "個人開発でブラウザゲーム『Project Ashfall』を制作する過程で、CodexとChatGPTを単なるコーディング補助ではなく、「組織」として運用する試みを解説しています。当初は単発のプロンプトで指示していましたが、説明の重複を避けるために役割（Producer, Director, Implementer, QA等）を定義し、`AGENTS.md`や`current-sprint.md`といったMarkdownファイルで共通の文脈を管理する手法へ移行しました。これにより、AIが自律的に実装・自己テスト・レビューを行う「スプリント」が機能し、人間は「何を良しとするか」の意思決定（Human Producer）に専念できる体制を構築。QA担当のAIが実装担当の見落とした不具合を発見するなど、多層的なエージェント運用の有効性が示されています。今後はDockerによるサンドボックス化やGitHub Issueとの連携も視野に入れています。",
+    "topics": [
+      "Codex",
+      "ChatGPT",
+      "AIエージェント",
+      "ゲーム開発",
+      "アジャイル開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

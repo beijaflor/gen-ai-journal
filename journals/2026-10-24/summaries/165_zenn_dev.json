@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:04:18.206455+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pi Coding Agentで低コストを追求してスキル&拡張を整えた話(スキル公開あり)",
+    "url": "https://zenn.dev/bcc/articles/7f97598ec4010c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Pi Coding Agentを活用し、高知能モデルを監督・安価なモデルを作業に徹底させる「安委譲」の仕組みを構築することで、開発コストを大幅に削減した実践記録。",
+    "summaryBody": "大規模な新規サービス開発におけるAI利用コストの増大を解決するため、Pi Coding Agentを用いた効率的な開発環境の構築事例を紹介しています。主要な戦略は、Grok 4.5などの高知能モデルに計画とレビューのみを担当させ、実際のコーディング作業をDeepSeek V4 Flashなどの安価なモデルに強制委譲する「安委譲」の仕組みです。さらに、複数課題を並列で進める「レーン制御」や、ObsidianでのWiki管理を自動化するスキルを開発。これにより、月間のAIコストを約8万円から3万円台へと大幅に削減しつつ、高品質なプロダクトのリリースを実現しました。記事内では、これらの制御を行うために作成された実際のスキルと拡張機能のリポジトリも公開されています。",
+    "topics": [
+      "Pi Coding Agent",
+      "LLMコスト削減",
+      "DeepSeek",
+      "Grok",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

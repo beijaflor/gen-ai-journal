@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:06:58.844985+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人で使うClaude Codeの権限設定についてざっくり見直してみた",
+    "url": "https://zenn.dev/takyshu98/articles/915702cf8c84f3",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを個人環境で安全に利用するため、ディレクトリ隔離、サンドボックス、権限設定、および独自のフックによる保護策を体系的にまとめたガイド。",
+    "summaryBody": "Claude Codeを個人端末でライトかつ安全に運用することを目的とした、権限設定の徹底的な見直しガイドです。主な内容は、1. リスク整理（秘匿情報送信、リソース破壊、不正プログラム実行）、2. 隔離ディレクトリ（~/src等）外での起動・読み書きを制限する`PreToolUse`フックと`settings.json`の設定、3. `sandbox.filesystem`や`sandbox.network`を用いたBashコマンドの制御、4. `sandbox.credentials`による環境変数や機密ファイルの保護策です。具体的には、`rm -rf`や`git push --force`といった危険なコマンドのブロック設定や、macOSのキーチェーンからトークンを取得して安全に注入するModsの試みなどが紹介されています。最終的に、これら全ての知見を統合した実用的な`settings.json`の全文が公開されており、開発者がClaude Codeを導入する際のセキュリティ的な叩き台として非常に有用な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "セキュリティ",
+      "サンドボックス",
+      "macOS",
+      "settings.json"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

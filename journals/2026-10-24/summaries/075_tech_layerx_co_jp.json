@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:26:54.663841+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "内製 Background Coding Agent “haro” で拓く未来の開発体験",
+    "url": "https://tech.layerx.co.jp/entry/why-we-built-our-background-agent",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "LayerXが開発したクラウド型Coding Agent「haro」の、モノレポ開発におけるリソース限界の打破からPR作成の6割を担うまでの活用実績と技術構成の全貌。",
+    "summaryBody": "LayerXバクラク事業部における内製AIエージェント「haro」の開発と導入事例を紹介した記事です。大規模なモノレポ開発において、ローカルマシンのメモリ不足や環境構築の負荷が課題となっていました。haroはEKS上のKubernetes環境で動作し、Temporal WorkflowとAI SDKを用いて制御されます。Model Context Protocol (MCP) を活用し、Slack、Notion、Datadogといった社内ツールや独自の内製プラットフォームとシームレスに連携します。導入からわずか数ヶ月で、1日のプルリクエストの約60%（約200件）がharo経由で作成されるまでに浸透しており、エンジニアだけでなくデザイナーやQAエンジニアも活用しています。今後は単なるコード生成に留まらず、自動スキャンや障害調査、意思決定の補助など、プロダクト開発全般のループを閉じる基盤となることを目指しています。",
+    "topics": [
+      "AI Agent",
+      "Platform Engineering",
+      "MCP (Model Context Protocol)",
+      "Temporal",
+      "開発生産性"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    }
+  }
+}

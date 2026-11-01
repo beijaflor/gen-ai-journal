@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:11:03.438796+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code でメモアプリを作って Microsoft Store に公開するまでにやった工夫",
+    "url": "https://qiita.com/morststs/items/246bdb871fef835a77a2",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェント「Claude Code」をフル活用し、Wails製のメモアプリ開発からMicrosoft Storeでの公開までをDocker SandboxやGitHub Actionsを用いて効率化した実践的ノウハウの紹介。",
+    "summaryBody": "AIエージェントであるClaude Codeを主軸に据えた開発ワークフローを解説しています。主なポイントは、Docker Sandboxesを利用して`--dangerously-skip-permissions`フラグを安全に運用し、AIに確認なしでテストやコード修正を任せる仕組み、`CLAUDE.md`を用いたプロジェクト記憶の自動更新、およびGitHub CLI (`gh`) を介したCI/CD連携です。技術スタックにはWails v2、Svelte 5、Monaco Editorを採用。Microsoft Store向けのMSIXパッケージ作成もGitHub Actionsで完結させ、ストア申請に必要な書類作成さえもAIに代行させることで、開発者が「判断」と「設計」に集中できる体制を実現しています。",
+    "topics": [
+      "Claude Code",
+      "Docker",
+      "Wails",
+      "GitHub Actions",
+      "Microsoft Store"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

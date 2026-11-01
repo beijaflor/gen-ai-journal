@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:58:08.713035+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Bot Cosplay：AIボットを装い機密情報を狙う「なりすまし」攻撃の分析",
+    "url": "https://www.fastly.com/blog/ai-bot-cosplay",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIボットのUser-Agentを偽装して.envや資格情報を探索する「AI Bot Cosplay」攻撃が急増しており、FastlyはWAFによる検証と防御策を解説しています。",
+    "summaryBody": "Fastlyのセキュリティ調査によると、1日だけで600万件以上のリクエストがOpenAI、Anthropic、PerplexityなどのAIボットを装い、.envファイルやGitメタデータといった機密情報の探索を行っていることが判明しました。攻撃者は、多くのWebサイトがAIクローラーに対して寛容な制限を設けている点に着目し、User-Agentを偽装してアクセスを試みます。調査された攻撃の94%は特定のクラウドプロバイダーを利用した単一のキャンペーンに由来しており、約1,600のIPアドレスが12種類のAIボットを使い分けて10万以上のサイトをスキャンしていました。対策として、User-Agent文字列を鵜呑みにせず、IPレンジによる「検証済みボット」かどうかの判定が不可欠です。Fastlyは、Next-Gen WAFを用いた具体的な遮断ルールの設定を推奨しています。",
+    "topics": [
+      "Cybersecurity",
+      "AI Bots",
+      "WAF",
+      "Bot Management",
+      "Vulnerability Scanning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "AI Bot Cosplay"
+  }
+}

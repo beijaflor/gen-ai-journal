@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:23:07.292766+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "vlt v1.5.0/v1.6.0 リリース：AIエージェント向け「スキル」の自動連携とモノレポ移行の効率化",
+    "url": "https://www.vlt.io/blog/vlt-skills",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "新世代パッケージマネージャーvltが、依存関係に含まれるAIエージェント用指示書を自動管理する「skills」機能の導入と、モノレポ管理の効率化を実現。",
+    "summaryBody": "JavaScript/TypeScriptの次世代パッケージマネージャーであるvltの最新アップデートでは、AIコーディングエージェントとの親和性を高める「vlt skills」コマンドが追加されました。これは依存パッケージに含まれるSKILL.md等の指示ファイルを、CursorやGitHub Copilotが読み取り可能なディレクトリ（.agents/skills等）へ自動的にシンボリックリンクする機能です。セキュリティ面ではSocket社との連携により、安全性が確認されたスキルのみを許可する仕組みを導入しています。その他、ワークスペース設定のvlt.jsonへの集約、CI環境におけるインストール速度の最大2倍の高速化、Brotli圧縮されたタールボールへの対応など、開発ワークフローの実用性を高める多くの改善が含まれています。",
+    "topics": [
+      "vlt",
+      "Package Manager",
+      "AI Coding Agents",
+      "Monorepo",
+      "JavaScript"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "vlt skills | vlt /vōlt/vlt v1.6.0: global installs and easier monorepo migrations"
+  }
+}

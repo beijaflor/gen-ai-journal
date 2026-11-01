@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:44:32.295303+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "仕組みを理解する動画を、Claude Codeに作らせると便利すぎる",
+    "url": "https://zenn.dev/explaza/articles/c749042ecbe232",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとPlaywright/ffmpegを組み合わせ、アプリのUI操作と内部処理ロジックを同期させた解説動画をコードから自動生成する手法の紹介。",
+    "summaryBody": "アプリケーションの挙動と、その裏側で起きている複雑な処理（構成図やデータの流れ）を交互に見せる解説動画をClaude Codeで自動生成する手法が解説されています。筆者が公開する「animated-arch-diagram」という独自スキルを活用し、実画面の録画ではなく「時刻に応じて描画が変わるWebページ」を生成。それをPlaywrightで1コマずつ撮影しffmpegで結合することで、Screen Studio風のズーム演出や、実際のデータに基づいた動的なグラフ、字幕が含まれた高品質な動画を生成します。指示テンプレートを用いることで、プロンプト一つで仕組みの可視化が可能になり、顧客説明や仕様の理解促進に大きく寄与します。",
+    "topics": [
+      "Claude Code",
+      "Playwright",
+      "ffmpeg",
+      "動画生成",
+      "アーキテクチャ可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:26:41.824219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Excelの機械可読性を判定するツール「Harunobu」のご紹介",
+    "url": "https://digital-gov.note.jp/n/n99cb228cc81c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "デジタル庁が開発した、Excelファイルの機械可読性をルールに基づいて自動判定するオープンソースツール「Harunobu」の概要と、AIを組み合わせた効率的なデータ整備手法を紹介。",
+    "summaryBody": "デジタル庁は、行政データの利活用を阻害する「神Excel」問題を解決するため、Excelの機械可読性を自動判定するツール「Harunobu」を開発・公開しました。このツールは、政府が定めた「行政データにおける機械可読性に関するルール」に基づき、決定論的なロジックで高速にファイルを採点します。判定結果はJSON形式で出力され、どのセルのどの箇所がルール違反であるかを詳細に指摘できるため、データマネジメントの進捗管理に適しています。また、Harunobuの判定結果をAIに読み込ませ、直接データを修正するのではなく「データ整形用のプログラム」を生成させることで、AIの推論に伴う不確実性を排除しつつ、大量のデータを正確かつ効率的にクレンジングする手法も提案されています。名称は多色刷り浮世絵（錦絵）を確立した鈴木春信にちなみ、複数のルールを重ねて美しいデータを作るという意図が込められています。",
+    "topics": [
+      "デジタル庁",
+      "Harunobu",
+      "機械可読性",
+      "オープンデータ",
+      "データエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

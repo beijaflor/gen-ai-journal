@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:03:29.025362+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeが実装したE2Eテストをレビューするツールを自作してみた",
+    "url": "https://www.m3tech.blog/entry/2026/10/14/133340",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claudeが生成したPlaywrightのE2Eテストの正当性を人間やAIが効率的にレビューできるよう、操作箇所のハイライト撮影や非UI操作の可視化を自動化するツールを自作した事例。",
+    "summaryBody": "エムスリーのQAチームが、Claudeで生成されたPlaywrightのE2Eテストコードをレビューするための専用ツールを開発した。LLMが生成したコードは「テスト実行は成功しても操作対象が誤っている」場合があるため、人間による振る舞いの検証を容易にする必要がある。既存のTrace Viewerでは一覧性が低く、非UI（API、メール、ファイル等）の検証が追いづらいという課題に対し、本ツールは以下の解決策を提示する。1. Locator操作時に要素を中央に配置・ハイライトして撮影。2. アサーションのリトライを考慮し、検証成立前後の状態を切り替え表示。3. APIレスポンスやファイル内容等の非UI操作をテスト手順に紐づけて可視化。また、リファクタリング時にClaude自身が新旧のスクリーンショットを比較してデグレを確認する「自己検証」にも活用されている。CI環境ではパフォーマンスと副作用回避のためにTrace Viewerを使い、レビュー時には自作ツールを使うという使い分けがなされている。",
+    "topics": [
+      "Playwright",
+      "E2Eテスト",
+      "Claude",
+      "LLM",
+      "QA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

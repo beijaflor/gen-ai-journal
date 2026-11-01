@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:59:34.575978+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "オンボーディングをAIエージェントに任せたら、もはや別ゲーだった",
+    "url": "https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeとGitHubを活用し、ドキュメントの二重管理を排除しながらAIエージェントが新入社員に併走する、DeNAの次世代オンボーディングの仕組みと設計思想の紹介。",
+    "summaryBody": "DeNAのデータサイエンス部におけるAIエージェント（Claude Code）を活用したオンボーディング刷新の事例紹介です。従来の課題であった情報の散在や、環境構築におけるスキルの個人差、受け入れ側の工数負担を解決するため、GitHubリポジトリをハブとした「AI伴走型」のシステムを構築しました。設計の核心は、ドキュメントの本文をリポジトリにコピーせず、Claude Codeのコネクタ機能を介して常に最新の正本（ConfluenceやDrive）を参照する「DRY原則」の徹底にあります。また、AIが得意な要約や技術相談と、人間が必要な認証・物理操作の境界を明確に定義。実際に中途入社者へ適用した結果、環境構築の爆速化、日報の自動生成による進捗の可視化、心理的ハードルの低下、さらには新入社員自らがリポジトリを改善するフィードバックループの形成といった顕著な成果が得られています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "オンボーディング",
+      "Developer Experience",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

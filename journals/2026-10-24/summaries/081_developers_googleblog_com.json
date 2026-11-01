@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T14:25:31.595512+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TPU向け新vLLMおよびSGLang推論エンジンの発表：TorchTPUによるネイティブPyTorch対応",
+    "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleがPyTorchをTPU上でネイティブ動作させる「TorchTPU」を基盤に、vLLMとSGLangの推論エンジンを最適化し、エージェント型ワークロードや大規模モデルの推論効率を劇的に向上させました。",
+    "summaryBody": "Googleは、TPU上でPyTorchをネイティブに実行可能にする技術スタック「TorchTPU」と、それを利用した「vLLM-TorchTPU」および「SGLang-TorchTPU」を正式に発表しました。これにより、開発者は使い慣れたPyTorchのエコシステムを維持したまま、TPUの高度な計算能力を推論に活用できるようになります。\n\n主な特徴は以下の通りです：\n1. **高度な最適化**: Pallasカスタムカーネルの採用や、KVキャッシュの効率的な管理。特に「TPU Sync」ライブラリにより、ホストメモリやストレージへのKVキャッシュ・オフロードや、プリフィルとデコードを分離するDisaggregated Servingにおける高速な転送を実現しています。\n2. **エージェント型ワークロードへの対応**: 長コンテキストやマルチターン会話に不可欠なプレフィックスキャッシュ、投機的デコード、多種多様な並列化（データ、テンソル、エキスパート並列等）をサポートします。\n3. **高いパフォーマンス**: 最新のTPU v7x（Ironwood）を用いたベンチマークでは、業界トップクラスの低コスト（100万トークンあたり2.01セント）を達成しました。\n\n本プロジェクトは、InferactやRadixArk、Metaとの協力により開発されており、すでにMetaなどの実稼働環境で採用されています。また、vLLMのオープンソースコミュニティへの貢献を促進するため、貢献者向けのTPUキャパシティプールも設立されました。",
+    "topics": [
+      "TPU",
+      "PyTorch",
+      "vLLM",
+      "SGLang",
+      "LLM Inference"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Announcing New vLLM and SGLang Inference Engines on TPU"
+  }
+}

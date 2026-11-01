@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-10-27T13:59:20.029816+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "日本語の業務データが、そのまま日本語のオントロジーに。Context Ontology Accelerator v0.3.6 の日本語対応",
+    "url": "https://zenn.dev/aws_japan/articles/context-ontology-accelerator-multilingual",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWSのOSS「Context Ontology Accelerator (COA) v0.3.6」における日本語ネイティブ対応の詳細と、日本語データをそのままナレッジグラフ化するための実装設計を解説しています。",
+    "summaryBody": "AWSが提供するOSS「Context Ontology Accelerator (COA)」のバージョン0.3.6にて追加された日本語対応機能の詳報です。従来は日本語データを用いてもメタデータが英語で生成される等の課題がありましたが、本アップデートではNamespace単位での言語設定が可能になり、日本語のテーブル名やカラム名を保持したままオントロジー生成・質問回答が可能になりました。実証例として練馬区のオープンデータを活用し、日本語のカラム名がプロパティとして正しく認識される様子や、日本語特有の「分かち書きの欠如」に対応したMetric照合ロジック（文字種変化によるトークナイズ）が紹介されています。また、RDFの言語タグ（@ja）付与基準や、名前空間レベルでの言語固定といった、データ整合性を保つための設計思想についても深く掘り下げられています。",
+    "topics": [
+      "AWS",
+      "Knowledge Graph",
+      "Ontology",
+      "生成AI",
+      "RDF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}
