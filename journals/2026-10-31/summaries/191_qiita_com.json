@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:54:54.428285+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Orchestrator型 vs 自己組織化型 ― Microsoft Research の OSS「Agensh」から考える、Agentic Workflow の行き先",
+    "url": "https://qiita.com/shahin0809/items/145266dc899e8b490e59",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoft Researchが公開した自己組織化型マルチエージェント基盤「Agensh」を軸に、中央司令塔なしで1,024エージェントを協調させる手法と、AIエージェント組織の将来像を解説した記事。",
+    "summaryBody": "Microsoft Researchが2026年10月にOSS化した「Agensh」に焦点を当て、マルチエージェントシステムの新たな設計思想を分析しています。従来のOrchestrator型（司令塔が指示を出す形式）に対し、Agenshは各ワーカーが共有ワークスペース（Git）やメッセージ基盤、共有コンテキストを通じて自律的にタスクを管理する「自己組織化型」を採用。1,024エージェント規模の実験では、エージェント数の増加に伴いテスト通過率が向上し、役割の分担や統合手順の標準化といった組織的進化が自然発生したことが報告されています。記事では、個別の信頼性を高める設計（Codexの/goal等）と組織的規模を拡大する設計（Agensh）の補完関係を指摘し、今後は「薄い司令塔 + 自己組織化ワーカー + 外部シグナル（CI等）による検証」という3層構造のワークフローが主流になると予測しています。",
+    "topics": [
+      "Agensh",
+      "マルチエージェント",
+      "Microsoft Research",
+      "LLM",
+      "Agentic Workflow"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

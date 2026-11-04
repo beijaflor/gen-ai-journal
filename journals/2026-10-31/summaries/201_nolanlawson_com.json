@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:52:33.903325+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "JavaScriptフレームワークの「AIコスト」：AIエージェントによるベンチマーク比較",
+    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントに各種JSフレームワークで同一アプリを開発させ、消費トークン、開発時間、コード量、性能を実測した、データに基づく技術選定の検証レポート。",
+    "summaryBody": "開発者の直感や「バイブス」に頼った技術選定を批判し、証拠に基づいた判断を促すためのベンチマーク検証です。著者のNolan Lawson氏は、AIエージェント（Claude 3.5 Opus / Claude Code）を用いて、Next.js、Nuxt、Astro、SvelteKit、Hono+htmx、Angularなど12の構成で同一のポケモン図鑑アプリを各5回ずつ作成させました。評価指標は、API利用料（コスト）、開発時間、生成されたコードの行数、Lighthouseによるパフォーマンススコアです。結果として、Hono+htmxやAstro、Vanillaといった構成が、開発コスト・コードの少なさ・ランタイム性能の全項目でSPA（Next.jsやAngular）を大きく上回る傾向が示されました。特にAngularは、開発コストが最も高く、生成コードも膨大で、エージェントが開発に失敗するケースもありました。この結果は、AI時代において「書きやすさ（DX）」の制約が薄れる中、出力されるコードの「維持コスト」や「UX」を基準にフレームワークを再評価すべきであることを示唆しています。",
+    "topics": [
+      "JavaScript",
+      "AI Coding",
+      "Benchmark",
+      "Performance",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "The AI cost of JavaScript frameworks | Read the Tea Leaves"
+  }
+}

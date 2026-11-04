@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:39:11.245591+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "経験的プロンプトチューニング (Empirical Prompt Tuning) の手法とワークフロー",
+    "url": "https://github.com/mizchi/skills/blob/main/empirical-prompt-tuning/SKILL-ja.md",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "バイアスを排除したサブエージェントによる実行と多角的な評価指標を用い、プロンプトの曖昧さを反復的に解消する「Empirical Prompt Tuning」の実践ガイド。",
+    "summaryBody": "本ドキュメントは、AIエージェント向けの指示（プロンプト）の品質を客観的に改善するためのフレームワーク「Empirical Prompt Tuning」を詳説しています。開発者自身の主観（バイアス）を排除するため、新規のサブエージェントにプロンプトを実行させ、その「自己申告（不明瞭点）」と「客観的メトリクス（成功率、ステップ数、所要時間）」の両面で評価・反復改善を行います。ワークフローには静的整合性チェック、評価シナリオ準備、失敗パターン台帳への記録が含まれます。特に、ツール呼び出し数（tool_uses）の偏りからプロンプトの構造的欠陥を検知する手法や、連続した成功による収束判定など、AIエージェントの挙動を堅牢化するための具体的かつ実践的なデバッグ指針を提供しています。",
+    "topics": [
+      "プロンプトエンジニアリング",
+      "AIエージェント",
+      "Claude Code",
+      "LLM評価",
+      "ソフトウェア開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    }
+  }
+}

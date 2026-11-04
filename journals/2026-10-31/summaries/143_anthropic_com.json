@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:07:28.464596+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeを用いた重要・実用ソフトウェアにおける脆弱性の発見と実証",
+    "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのFrontier Red Teamが、未公開のClaude研究モデルを使用してChrome、Android、Windows等の主要なシステムで深刻な脆弱性を発見・連鎖させた研究結果の報告。",
+    "summaryBody": "AnthropicのFrontier Red Teamは、内部研究用のClaudeモデルを用いて、Chrome、Safari、Android、Windows、Linuxといった世界的に普及しているソフトウェアのゼロデイ脆弱性を発見・実証しました。報告では5つの攻撃チェーンが詳述されており、V8エンジンの脆弱性を用いたChromeのRCEや、サンドボックス回避、Androidのロック画面バイパス、LinuxカーネルのゼロクリックRCEなどが含まれます。特筆すべきは、AIが専門家レベルの複雑なエクスプロイトの構築を、人手の介在を最小限に抑えて実行できた点です。既に62個のCVEがGoogleによって割り当てられるなどの実害防止に貢献しており、Anthropicは防御側の優位性を保つためにAIを活用した継続的なコードスキャンと専門家へのモデル提供を推奨しています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "脆弱性調査",
+      "AI安全性",
+      "レッドチーム",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude"
+  }
+}

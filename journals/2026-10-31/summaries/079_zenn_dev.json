@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:39:35.236845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "属人化をなくすために作ったAIが、私専用の道具になった話：SOC現場でのAI導入の教訓",
+    "url": "https://zenn.dev/think_node/articles/f35c405ace7f52",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "SOCの属人化解消を狙い開発した不審メール判定AIが、組織的課題や自動化バイアスの懸念により「自分専用」に留まった経緯から、AI導入の本来のあり方を考察する。",
+    "summaryBody": "SOC（Security Operations Center）における不審メール解析の属人化を防ぐため、メールソースから一次判定を行うAIエージェントを開発した著者の内省的記録です。開発したツールは高い精度を持っていましたが、最終的に本番運用には至りませんでした。その理由は、AIの回答が「正解」として扱われることで人間の思考を停止させる「自動化バイアス」への懸念と、そもそも組織内で「属人化が問題である」という認識が共有されていなかったことにあります。著者は、AIに結論を先に言わせるのではなく、人間がまず特定の項目を確認し、AIがそれと答え合わせをする「確認型」のUI設計が教育・運用の観点で重要であると提唱しています。ツールの技術的完成度よりも、課題の可視化と運用ルールの整備がAI導入の鍵であることを示唆しています。",
+    "topics": [
+      "SOC",
+      "AIエージェント",
+      "自動化バイアス",
+      "フィッシング対策",
+      "組織導入"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

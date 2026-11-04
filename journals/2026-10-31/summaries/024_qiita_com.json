@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:01:23.687212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BitwardenのAgent Accessで、クラウドのClaude Codeから安全に認証情報を受け取る",
+    "url": "https://qiita.com/getty104/items/583f2f5ecf473ddc4539",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "BitwardenのAgent Access SDKを活用し、クラウド上のClaude Codeからローカルの認証情報を安全に取得し、Playwright MCPでログインを自動化する方法の解説。",
+    "summaryBody": "Bitwardenが提供する「Agent Access SDK（early preview）」を利用して、クラウド上のAIエージェントからローカルマシンのパスワードマネージャーにある認証情報を安全に取得する方法を解説しています。主な仕組みは、エンドツーエンド暗号化されたトンネルを介して要求を送り、ユーザーが手元で承認した情報のみを環境変数として渡すものです。記事では、Claude Code（クラウド環境）にSDKを導入し、Playwright MCPと連携してブラウザのログイン処理を行う具体的なコード例や、複数一致による「Request denied」への対処法、1Password for Agentsとの比較などが網羅されています。",
+    "topics": [
+      "Bitwarden",
+      "Agent Access",
+      "Claude Code",
+      "Playwright",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:12:25.632994+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "@mizchi/mutator で vitest の mutation test をする",
+    "url": "https://zenn.dev/mizchi/articles/introduce-mutator",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vitestに特化し、差分実行による高速なフィードバックを可能にする国産ミューテーションテストツール「@mizchi/mutator」の紹介。",
+    "summaryBody": "エンジニアのmizchi氏によって開発された、Vitest向けのミューテーションテストツール「@mizchi/mutator」の解説記事です。ミューテーションテストは、実装コードを意図的に微修正（Mutantを作成）し、既存のテストがそれを検知できるかを確認することで「テストの品質」を測定します。本ツールの最大の特徴は、差分実行（--sinceフラグ）に最適化されている点で、開発中の変更箇所に絞って高速にテストを実施できます。StrykerJSとの比較ベンチマークでは、変更後の再実行時間を大幅に短縮しており、AIエージェントへのテスト補強指示を想定したレポート出力機能なども備えています。",
+    "topics": [
+      "Vitest",
+      "ミューテーションテスト",
+      "TypeScript",
+      "テストコード品質",
+      "mizchi"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

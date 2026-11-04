@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:08:39.929008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ブラウザでPDF/Office文書などを表示できるビューアを作りながらAI slopについて考えた",
+    "url": "https://future-architect.github.io/articles/20261027a/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GoとWebAssemblyを活用した高速な独自ドキュメントビューアの開発を通じ、AIによる開発の初期速度と、製品品質（100%）へ昇華させるためのエンジニアリングの重要性を考察している。",
+    "summaryBody": "本記事は、従来LibreOffice等の重い環境を必要としたOfficeファイルのプレビューを、GoとWebAssembly（Wasm）を用いて軽量・高速に実現する独自フォーマット「BDF」の開発記です。Canvas命令に変換可能な中間形式を採用することで、従来の10倍以上の変換速度と劇的なメモリ消費削減を実現しています。\n\n著者は、AI（Claude等）を活用して1-2日でコア機能を構築したものの、実用レベルの品質（パフォーマンス、セキュリティ、アクセシビリティ）に到達させるには、その後10日以上の反復的なブラッシュアップが必要であったと述べています。この過程を通じて、AIが生成する低品質な「AI slop」の問題を指摘。AIが提供するのはあくまで最初の「10%」であり、そこからエンジニアが専門知識をもって「100%」の完成度まで追い込むプロセスこそが、真のAI駆動開発であると結論付けています。",
+    "topics": [
+      "Go言語",
+      "WebAssembly",
+      "生成AI",
+      "PDF",
+      "AI slop"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

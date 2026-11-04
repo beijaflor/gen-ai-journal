@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:54:22.137258+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codex のいいところだけを、Claude Code や Muse から使う",
+    "url": "https://qiita.com/tatsuya582/items/4d79021c9f78f4015992",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Codexの実験的機能である「app-server」を介して、Computer UseやMeetingsなどの独自機能を、Claude CodeやDeepSeek Harnessなどの他社AIエージェントからトークン消費なしで利用する方法の解説。",
+    "summaryBody": "この記事では、Codexが提供する強力な「Computer Use（Macアプリ操作）」や「Meetings（議事録作成）」などの機能を、外部のAIエージェント（Claude Code、Muse、DeepSeek Harness等）から直接呼び出すためのテクニックを紹介しています。具体的には、Codexの実験的機能である`codex app-server`を起動し、JSON-RPC経由でMCP（Model Context Protocol）サーバーとして機能するツールを叩く手法です。この方法を用いると、CodexのLLMモデルを通さずに各ツールを実行できるため、Codexのトークンを消費せず、かつメインで利用しているAIのコンテキストを維持したままOS操作やChatGPTコネクタ機能を利用可能になります。記事内ではPythonとJavaScriptを用いた具体的な実装例や、MuseからSSH経由でリモートMacを操作するユースケース、セキュリティ上の注意点についても触れられています。",
+    "topics": [
+      "Codex",
+      "Claude Code",
+      "MCP",
+      "Computer Use",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

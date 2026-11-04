@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:02:43.079266+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンテキストエンジニアリングの現状：決定論と確率論のバランスを知る仕事",
+    "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIモデルの長大化するコンテキストが引き起こす特有の失敗モードを定義し、それらをコード（ハーネス）で制御する手法と「コンテキスト慣性」という新たな課題について考察しています。",
+    "summaryBody": "この記事はAGNTConでの講演録であり、2024年から2026年にかけてのコンテキストエンジニアリングの変遷を辿っています。初期の「RAGは死んだ、すべてをコンテキストに入れれば解決する」という幻想が、コンテキストの汚染（古い知識の混入）、注意散漫（不要な例示への引きずられ）、混同、衝突といった新たな失敗モードを露呈させた経緯を説明しています。著者は、これらの問題を解決するために、ツールロードアウト、コンテキストの剪定、隔離、要約といった「ハーネス（制御機構）」の重要性を説いています。また、最新の課題として、モデルが特定のサブタスクに固執し続ける「コンテキスト慣性（Context Inertia）」を挙げ、解決策として『戦略的な忘却（コンテキストのリセット）』の有効性を提示しています。2027年に向けて、長期的なエージェント運用におけるスキルの衝突やメモリ管理が次のフロンティアになると予測しています。",
+    "topics": [
+      "Context Engineering",
+      "LLM Agent",
+      "Context Inertia",
+      "RAG",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "The State of Context Engineering"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:55:52.982192+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Sleepフレームワーク：LLMの継続学習における知識保持の新手法",
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人間の脳の睡眠メカニズムをモデル化し、LLMに「活動」と「睡眠」のフェーズを導入することで、破滅的忘却を防ぎながら新しい知識を長期パラメータに統合する継続学習フレームワーク。",
+    "summaryBody": "Google Researchは、LLMがデプロイ後も静的な知識のカットオフに縛られず、新しい情報を統合し続けられる「Sleep」フレームワークを提案しました。この手法は、モデルを常に稼働させるのではなく、推論を行う「活動（Wake）フェーズ」と、記憶の定着と自己改善を行うオフラインの「睡眠（Sleep）フェーズ」を交互に繰り返します。睡眠フェーズでは、Mixture-of-Experts (MoE) 構造を活用してパラメータを動的に拡張し、短期的なインコンテキスト・メモリの情報を安定した長期パラメータへと蒸留・圧縮する「メモリ・コンソリデーション」を実施します。さらに「ドリーミング」と呼ばれるプロセスでは、モデルが自律的に合成データを生成・選択してトレーニングを行うことで、推論能力の向上を図ります。実験では、1,000万トークンの超長文コンテキストの保持や、翻訳タスクにおける破滅的忘却のほぼ完全な抑制、数学的推論精度の向上が確認されました。",
+    "topics": [
+      "継続学習",
+      "LLM",
+      "破滅的忘却",
+      "Mixture of Experts",
+      "Google Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "The sleep framework: A new way for LLMs to retain knowledge in continual learning"
+  }
+}

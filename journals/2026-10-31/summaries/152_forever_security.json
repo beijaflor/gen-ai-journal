@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:04:56.671535+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントを標的とした新手法：Markdownファイルによる「指示インジェクション」攻撃",
+    "url": "https://forever.security/blog/hijacking-ai-agents-via-downloads-folder",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが実行ディレクトリ内のMarkdownファイルを自動実行する仕様を悪用し、ブラウザ経由でダウンロードフォルダに配置された悪意ある指示ファイルから、認証情報の奪取やリモートコード実行が行われる新たな攻撃手法が確認されました。",
+    "summaryBody": "セキュリティ企業のForever Securityは、AIコーディングエージェント（CodexやClaude Code等）を標的とした新たな攻撃ベクトルを公開しました。この手法は、ウェブサイトからユーザーの許可なくファイルを保存できる「~/Downloads」フォルダの性質と、AIエージェントがディレクトリ内のMarkdown（AGENTS.md等）を信頼された指示として読み込む挙動を組み合わせたものです。\n\n具体的には、攻撃者が用意したMarkdownファイルをエージェントが読み込むことで、Codexではグローバル設定の書き換えによる悪意あるnpmパッケージのインストール（RCE）が、Claude CodeではAPIベースURLの偽装によるOAuthトークンの奪取（アカウント乗っ取り）が可能であることが実証されました。Markdownが実質的な「実行ファイル」として機能しており、従来の人間中心のセキュリティガードレール（警告へのクリック等）を回避して自動実行される点が極めて危険です。対策として、ダウンロードフォルダ等の信頼できない場所でのエージェント実行を避け、不審な指示ファイルや設定変更を監視することが強く推奨されています。",
+    "topics": [
+      "AIエージェントセキュリティ",
+      "プロンプトインジェクション",
+      "サイバーセキュリティ",
+      "Claude Code",
+      "RCE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Markdown Is the New Executable: Attackers Are Dropping Agent Instructions Into Your Downloads Folder From the Web"
+  }
+}

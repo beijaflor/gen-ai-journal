@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:06:32.516271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Amazon GuardDuty AI Protection の有効化を強くおすすめしています",
+    "url": "https://blog.serverworks.co.jp/guardduty-ai-protection",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Amazon GuardDuty AI Protection の概要、有効化すべき理由、および具体的な設定手順を解説し、AI ワークロードにおける脅威検出の強化を推奨しています。",
+    "summaryBody": "Amazon GuardDuty AI Protection は、Amazon Bedrock や SageMaker AI のデータイベントを分析し、AI ワークロード特有の脅威を検出する新機能です。従来の管理イベント監視ではカバーしきれなかった、異常なモデル呼び出し（LLMjacking）、コストハーベスティング（不当なリソース消費）、プロンプトインジェクションといった攻撃の検知が可能になります。導入時に CloudTrail のデータイベント設定を手動で行う必要はなく、サービスリンクチャネルを通じて自動連携されるため、数ステップで有効化できます。30日間の無料トライアルが活用できるほか、Finding のデフォルト重要度が Low であるため、確実な通知を実現するための EventBridge 設定などの運用上のポイントも詳述されています。",
+    "topics": [
+      "Amazon GuardDuty",
+      "Amazon Bedrock",
+      "AWS セキュリティ",
+      "生成AI",
+      "脅威検出"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}
