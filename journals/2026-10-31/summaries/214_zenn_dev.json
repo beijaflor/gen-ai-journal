@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:49:45.804545+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに物理キーボードを渡して、BIOS操作からPCのトラブル対応まで丸投げしてみた——M5Stack Tab5のカメラとUSBだけで",
+    "url": "https://zenn.dev/sodeyama/articles/tech-tab5-camera-usb-pc-diagnosis",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "M5Stack Tab5のカメラとUSBエミュレーション機能を活用し、AIが物理画面を視覚的に認識してBIOS操作やOS修復を代行するリモート復旧システムの構築事例。",
+    "summaryBody": "著者の袖山剛氏が、自宅サーバーのファイルシステム障害をきっかけに開発した、M5Stack Tab5とAIを用いた物理リモート操作システムの記録です。ESP32-P4搭載のTab5をUSB HIDデバイスとして機能させ、内蔵カメラで撮影した画面をサーバー側のAI（ローカルLLMまたはクラウド）が解析します。AIが次に打つべきキーボード・マウス操作を決定し、Tab5経由で対象PCに送信することで、OSが起動しないBIOSレベルの状態からでも遠隔でのトラブルシューティングを可能にしました。ネットワークにはTailscaleを採用し、自作OS「sodex」をTab5に移植して制御するなど、ハードウェアとソフトウェアの両面で高度な実装がなされています。検証では、実際にWindowsのPowerShellを通じたディスク検査をAIのみで完結させています。",
+    "topics": [
+      "M5Stack",
+      "ESP32",
+      "LLM",
+      "BIOS",
+      "自作OS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

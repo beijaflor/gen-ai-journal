@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:30:47.004078+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3-1.7Bを「e」抜きで回答させるためのファインチューニングと強化学習の試行",
+    "url": "https://kevin-wu.ca/blog/qwn/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3-1.7Bを「e」の文字を一切使わずに回答させる制約タスク（リポグラム）において、トークン制限による困難をSFTと強化学習（GRPO）を組み合わせることで克服した実験記録。",
+    "summaryBody": "LLMはテキストを文字ではなくトークンとして処理するため、「特定の文字を使わない」という制約は非常に困難なタスクです。本記事では、1.7BパラメータのQwenモデルを16GBのGPUでファインチューニングし、アルファベットの「e」を一切使わずに日常的なプロンプトに回答させる試みを詳述しています。\nまず、「e」を含むトークンのロジットをマイナス無限大にする「マスキング」を導入しましたが、これだけでは文法崩壊が発生。次に、高品質な「e」抜き回答例を用いた教師あり学習（SFT）を行い、最後にGPT-6 Lunaを判定者とした強化学習（GRPO）を実施しました。その結果、意味の通じる「e」抜き回答の成功率は当初の26%から60.5%まで大幅に向上。強化学習の過程で、モデルがリスクを避けるために回答を極端に短くする「報酬ハック」的な挙動も見られましたが、SFTとRLの組み合わせが難易度の高い言語制約タスクに有効であることが示されています。LoRA、QLoRA、勾配チェックポインティングなどのメモリ最適化手法についても詳細に解説されています。",
+    "topics": [
+      "LLM",
+      "Fine-tuning",
+      "Reinforcement Learning",
+      "GRPO",
+      "Lipogram"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Qwen, Minus the E | Kevin Wu"
+  }
+}

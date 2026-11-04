@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:29:34.962986+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【初心者向け】Codex・Claude Codeが乗っ取られる？ AGENTS.md攻撃の仕組みとガードレール対策を対話形式で解説",
+    "url": "https://qiita.com/TakanobuSano/items/def739bcc9a1a9ec1d05",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングツールの指示ファイル（AGENTS.md等）を悪用したプロンプトインジェクション攻撃の仕組みと、OSレベルのサンドボックス設定による実効的な防御策を解説した記事。",
+    "summaryBody": "CodexやClaude CodeなどのAIエージェントが、プロジェクト内の設定ファイル（AGENTS.md、CLAUDE.md）から悪意ある指示を読み込み、不正なコマンド実行や認証情報の窃取を行う「AGENTS.md攻撃」について詳説しています。記事では、プロンプトによる「お願い（指示）」だけでは攻撃を防げないことを強調し、OSレベルのサンドボックス機能や詳細な権限管理（特定ディレクトリの読み書き制限、ネットワーク遮断、管理者ポリシーの適用）を組み合わせた「ガードレール」の構築方法を、具体的な設定例（config.toml, settings.json）とともに紹介しています。また、設定が正しく機能しているかを確認するための安全な検証手順も示されています。",
+    "topics": [
+      "Claude Code",
+      "Codex",
+      "プロンプトインジェクション",
+      "セキュリティ",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

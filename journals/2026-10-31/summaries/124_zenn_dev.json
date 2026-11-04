@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:11:44.746282+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeで半年分のレビュー指摘を分類してみた",
+    "url": "https://zenn.dev/port_inc/articles/a4bc3b39f44459",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ポート株式会社の新卒エンジニアが、Claude Codeを用いて半年分のGitHubレビュー指摘を分析し、頻出する課題の特定と自己レビューの自動化を実現した事例。",
+    "summaryBody": "新卒エンジニアが、実務におけるレビュー指摘による手戻りを減らすため、GitHub APIで取得した約半年分のプルリクエスト（PR）コメントをClaude Codeで分析しました。分析の結果、全指摘の約2割が「既存の書き方・規約との不一致」であり、重大な指摘（MUST）に限ると「不具合・考慮漏れ」が24%を占めることが判明。これらの知見を基に、PR提出前に機械的なチェックを行うClaude Codeの独自スキル（/precheck）を構築しました。単なる自動化に留まらず、実装の種別ごとに意識すべき観点を整理し、自己学習の仕組みとして昇華させている点が特徴です。",
+    "topics": [
+      "Claude Code",
+      "GitHubレビュー",
+      "コード品質",
+      "生産性向上",
+      "新卒研修"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

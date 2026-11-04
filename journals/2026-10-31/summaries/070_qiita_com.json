@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:41:29.075730+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "記憶に頼るな。Claudeセッションの記録を取ろう",
+    "url": "https://qiita.com/qwertyhoge/items/987c0ea8afdb5cd045e8",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeでの対話から設計判断や振り返り事項を自動抽出し、ADRや月次ログとして記録するカスタムSkillの活用法を提案する。",
+    "summaryBody": "AIを用いた開発において、対話の中での細かい判断理由や指示の経緯は記憶に残りづらく、人事評価や設計記録（ADR）への転記が困難になる。著者はこの課題を解決するため、Claude Code上で動作するカスタムSkill「decision-log」を開発。セッション終了時に実行することで、技術選定の理由、AI案の修正点、セキュリティ確認の有無などを自動で抽出し、Markdown形式でログやADRとして出力する仕組みを構築した。この運用により、自身のセルフレビュー不足などの課題が可視化され、プロセス改善に繋がった事例が紹介されている。",
+    "topics": [
+      "Claude",
+      "Claude Code",
+      "ADR",
+      "AI開発",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

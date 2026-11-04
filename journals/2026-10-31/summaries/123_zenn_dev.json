@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:12:14.659398+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AGENTS.md乗っ取り対策のhook、テスト27件全通過でも攻撃役AIに破られた（Claude Code・Codex・Cursor）",
+    "url": "https://zenn.dev/shoma_endo/articles/agent-downloads-hijack-guard",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの指示ファイルを悪用した設定乗っ取り攻撃に対し、root権限下のフックスクリプトによるセマンティックな設定監視と、毎朝の自動攻撃テストを組み合わせた堅牢な防御手法の構築記録。",
+    "summaryBody": "### 概要\nAIエージェント（Claude Code、Codex、Cursor）がプロジェクト内の指示ファイル（`AGENTS.md`など）を読み込む性質を悪用し、悪意ある設定（通信先の変更、不正MCPサーバーの追加、サンドボックス解除）を強制される脆弱性への対策手法。単純な文字列マッチングによる防御が攻撃役AIにバイパスされた教訓から、よりセマンティックかつ堅牢な実装へと進化させている。\n\n### 防御の核心\n- **Managed Settingsの利用**: 各エージェントの管理者用設定（root所有）にフックを配置。ユーザー権限のエージェント自身がガードを無効化できない構成を実現。\n- **セマンティックな監視**: 単なるファイル書き込みの文字列判定ではなく、変更前後のJSON/TOMLを解釈・比較し、保護すべき重要なキー（API Base URL、MCPサーバー設定等）の変更を検知・阻止する。\n- **権限昇格の防止**: root権限でのPython実行を避け、OS標準コマンドのみを管理者権限で動かすことで、フックを起点としたOSの乗っ取り（Privilege Escalation）を回避。\n\n### 継続的な信頼性の担保\nアプリのアップデート等でフックが外れるリスクに対応するため、毎朝自動で「実際に攻撃が止まるか」をテストするライブ点検ジョブを運用。失敗時のみ通知することで、防御の有効性を継続的に監視している。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Cursor",
+      "プロンプトインジェクション",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

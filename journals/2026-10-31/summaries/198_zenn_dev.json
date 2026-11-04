@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:53:15.510076+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介",
+    "url": "https://zenn.dev/layerx/articles/a277f83a93d300",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LayerXが開発した「yoro」は、徹底した隔離と監視の下でAIエージェントを自律動作させる内製リモート開発環境であり、開発の自動化と効率化を安全に実現しています。",
+    "summaryBody": "LayerXのAi Workforce事業部が構築したリモートコーディングエージェント環境「yoro」の技術構成と運用実績を紹介する記事です。yoroはCoderをベースに、Claude CodeやCodexなどのエージェントを「人の許可を待たずに動かす(YOLOモード)」環境を提供します。セキュリティ面では、Kata ContainersによるVM隔離、Ciliumによる通信制御、さらにVM外部からのeBPFを用いたファイル実行・通信監視をClickHouseに集約することで、高い安全性を確保しています。Slack、GitHub、内製タスク管理ツール等と連携し、1ヶ月で600件以上のタスクを処理、マネージャーのPR作成数を3倍に増やすなど、実用的な成果を上げています。CursorやDevinといった既存サービスと比較した際の、データ主権と自社リソース連携の柔軟性が自作の強みとして強調されています。",
+    "topics": [
+      "AIエージェント",
+      "Coder",
+      "eBPF",
+      "Kubernetes",
+      "SRE"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

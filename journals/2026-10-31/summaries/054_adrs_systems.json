@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T04:16:02.512008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ADRs4AI — 思考を蒸発させず、意思決定を蓄積するフレームワーク",
+    "url": "https://adrs.systems/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIとの共同作業における思考過程や意思決定の根拠をADR形式で構造化・保存し、Gitで管理することで知見の蓄積と再利用を可能にするエコシステム。",
+    "summaryBody": "ADRs4AIは、人間とAIのコラボレーションから生まれる貴重な「思考のプロセス」が消失するのを防ぐためのフレームワークです。従来のAIとの対話は一時的なものになりがちですが、本手法ではAIが選択肢、推奨理由、信頼度、反証条件を含む「問い（Question）」を提示し、人間がそれに対して裁定を下すというワークフローを提案しています。\n\n具体的には、ADR（アーキテクチャ決定記録）のテンプレート、VS Code拡張機能、MCP（Model Context Protocol）サーバー、iOSクライアントを提供し、リポジトリベースで意思決定を管理します。これにより、プロジェクトの「なぜその決定がなされたか」という文脈がGit履歴とともに保存され、後からの参照や新しいAIエージェントへの引き継ぎが容易になります。著者はこれを「Deliberative Programming（熟議プログラミング）」と呼び、単なるコード生成を超えた、人間とAIの継続的な知的生産の基盤として位置づけています。",
+    "topics": [
+      "ADR (Architecture Decision Records)",
+      "人間とAIの協働",
+      "知見管理",
+      "Deliberative Programming",
+      "ソフトウェアエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "ADRs4AI — Your thinking stops disappearing. Your decisions start compounding."
+  }
+}

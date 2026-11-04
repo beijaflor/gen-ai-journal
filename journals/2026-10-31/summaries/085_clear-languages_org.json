@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T03:38:05.626042+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "トークナイザー税：同一モデルでも特定言語で最大17倍のコストが発生する格差問題",
+    "url": "https://clear-languages.org/blog/the-tokenizer-tax",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMのトークナイザーが非ラテン文字や低リソース言語に対して非効率であるために生じる『トークナイザー税』の実態を、200言語以上のベンチマーク調査から明らかにした報告。",
+    "summaryBody": "LLMがテキストをトークンに変換する際の効率性が、言語によって大きく異なる「トークナイザー税」の問題を分析した報告書。調査団体CLEARのベンチマークによると、同じ意味の文章でもアムハラ語やマラヤーラム語などは英語に比べて数倍から最大17倍のトークンを消費し、ユーザーに不当な高コストを強いている。主なポイントは以下の通り：\n\n1. **格差の可視化**: FLORES-200を用いた調査で、GoogleのGemini/Gemmaは比較的公平（B評価）だが、GPT-5やLlama 3.3、Mistralなどは最悪レベルのF評価となった。\n2. **スクリプトの不平等**: ラテン文字言語は効率が良いが、ビルマ語やクメール語などは語彙割り当ての設計上、極めて非効率に処理される。\n3. **多重の弊害**: この格差は金銭的コストだけでなく、推論の遅延や、実質的なコンテキストウィンドウの制限を招き、AI活用の地理的格差を拡大させている。\n\nCLEARは解決策として、開発者に対しモデルカードへの公平性指標の掲載や、文字数ベースの課金体系への移行を提唱している。",
+    "topics": [
+      "Tokenizer Tax",
+      "Language Equity",
+      "LLM Pricing",
+      "Multilingual AI",
+      "FLORES-200"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 45,
+      "overall": 95
+    },
+    "originalTitle": "The Tokenizer Tax"
+  }
+}

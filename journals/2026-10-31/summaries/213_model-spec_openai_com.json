@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:50:03.417964+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI モデル・スペック (Model Spec)",
+    "url": "https://model-spec.openai.com/2026-10-29.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが公開した、GPTモデルの望ましい挙動を定義するための設計図であり、人間の意図への忠実さ、害の最小化、透明性の確保を柱とする包括的ガイドライン。",
+    "summaryBody": "本ドキュメントは、OpenAIのモデル（ChatGPTやAPI）がどのように振る舞うべきかを定義した「Model Spec」の詳細な仕様書です。主な目的は、AGIが全人類に利益をもたらすよう、モデルの有用性、安全性、一貫性を維持することにあります。\n\nドキュメントは5つの基本価値観に基づいて構成されています：\n1. **人間の意図に忠実であること**: 階層的な指揮系統（Chain of Command）に従い、ユーザーの意図を正確に汲み取ります。\n2. **害を最小限に抑えること**: 違法行為の助長、性的コンテンツ、プライバシー侵害、情報の危険性を厳格に排除します。\n3. **誠実さと透明性**: 事実を正確に伝え、不確実性や限界を明示します。\n4. **人間の主体性を促進すること**: ユーザーの意思決定を支援し、操作や隠れた誘導を回避します。\n5. **配慮を持って行動すること**: 社会規範に従い、創造的かつ親身に対応します。\n\n特に注目すべきは、指示の優先順位を「Root &gt; System &gt; Developer &gt; User &gt; Guideline」と定義し、プロンプトインジェクション等の「信頼できないデータ」をデフォルトで無視する設計です。また、18歳未満のユーザーに対する追加の安全策や、政治的意見の操作防止など、多岐にわたるリスクシナリオとそれに対する模範的な応答例が示されています。",
+    "topics": [
+      "AI安全・倫理",
+      "モデル・アライメント",
+      "OpenAI",
+      "ガバナンス",
+      "GPT-4/GPT-5"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "Model Spec (2026/10/29)"
+  }
+}

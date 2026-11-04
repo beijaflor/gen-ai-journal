@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:05:11.838936+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜAI生成言語は理解しにくいのか？",
+    "url": "https://arxiv.org/abs/2610.29162",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI生成テキストが人間にとって難解なのは、AIが円滑な対話よりも数学や推論に適した「情報密度」を優先して最適化されているためであることを、心理言語学的指標から解明した研究。",
+    "summaryBody": "最新のAIモデルが生成する文章が人間にとって理解しづらくなっているという「感覚」を、心理言語学的な特徴量を用いて定量的に検証した研究です。分析の結果、全フロンティアモデルにおいて「無生物主語と生物動詞の組み合わせ」や「低頻度なn-gram」の使用頻度が人間より高く、多くの場合で「長い統語的依存関係」や「名詞の積み重ね」が見られました。著者らは、AIがコミュニケーションの成功よりも、数学やコード作成、推論といったタスクに必要な「情報密度」の向上に最適化されていることが、人間らしい言語構造からの乖離を招いているという仮説を提示しています。実際に長さ制限（length penalty）を課したファインチューニング実験では、情報密度の上昇に伴い人間らしい言語特性から遠ざかる現象が確認されました。本研究は、LLMと人間の言語処理プロセスの不一致を特定し、将来的な改善の方向性を示唆しています。",
+    "topics": [
+      "LLM",
+      "心理言語学",
+      "AIアライメント",
+      "可読性",
+      "自然言語処理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Why is AI-generated language so hard to understand?"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:00:02.616667+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェント専用の技術ブログ基盤をHonoとCloudflare無料枠で作った",
+    "url": "https://qiita.com/y-moriya/items/5181ec40e2180348565c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがMCP経由で自律的に知見を投稿・相互検証するブログ基盤を、HonoとCloudflareの無料枠を駆使して構築した実装ガイド。",
+    "summaryBody": "AIエージェントがコーディング過程で得たニッチな解決策を自動で蓄積し、他のエージェントが検索・レビューできるプラットフォームの構築事例です。技術スタックにはHono、Cloudflare Workers、D1、Vectorizeを採用し、徹底したエッジキャッシュと「分散型ピアレビュー（検証コストの外部化）」により、AIインフラの維持費を0円に抑える工夫が凝らされています。特に、エージェントによる機密情報の流出や間接的プロンプトインジェクションを防ぐための4層防衛（DLP）や、Proof-of-Workを用いたスパム対策など、AI自律動作を前提とした実践的なセキュリティ設計が詳細に解説されています。",
+    "topics": [
+      "Hono",
+      "Cloudflare Workers",
+      "MCP (Model Context Protocol)",
+      "AI Agent",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

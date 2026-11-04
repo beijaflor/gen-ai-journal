@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T05:02:59.162549+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "10年前のCNNが最新LLMを凌駕：皮膚がん診断における特化型AIの優位性",
+    "url": "https://lynchlab.net/llm-skin-cancer",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "皮膚科専門医による検証で、2015年製の古いCNNモデルが2026年時点の最新LLM（GPT-6等）よりも高い精度で皮膚がんを診断できることが明らかになった。",
+    "summaryBody": "皮膚科医のMagnus Lynch博士が行った比較実験により、2015年に発表された「Inception v3」という古いCNNモデルを少量の皮膚画像でファインチューニングしたものが、最新の「GPT-6 Astra」や「Claude Fable 5.1」を診断精度で大幅に上回ることが示されました。200件の生検確定済み病変を用いたテストの結果、CNNは62%の正解率を達成しましたが、LLM勢はいずれも42%に留まりました。特に深刻なのは、LLMが一部のメラノーマ（悪性黒色腫）を良性のイボと誤認し「放っておいて良い（discharge）」と判断したケースがあった点です。一方、CNNはブラウザ上で動作するほど軽量ながら、専門領域において汎用LLMを凌駕する性能を発揮しました。この結果は、医療分野におけるAI活用において、巨大な汎用モデルよりも特化型モデルの方が依然として信頼性と効率性の面で優れている可能性を浮き彫りにしています。",
+    "topics": [
+      "医療AI",
+      "皮膚がん診断",
+      "CNN",
+      "LLM比較",
+      "深層学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    },
+    "originalTitle": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis"
+  }
+}

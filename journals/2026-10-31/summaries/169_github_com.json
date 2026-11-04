@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-01T02:59:49.748319+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdr: ターミナルとAIエージェントのための次世代デスクトップアプリ",
+    "url": "https://github.com/herdrdev/herdr-app",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Herdrは、ウィンドウを閉じてもプロセスが持続する「Core」分離設計を採用し、AIエージェントの状態管理やリモート開発に特化した高機能ターミナルアプリです。",
+    "summaryBody": "Herdrは、開発者の作業効率を最大化するために設計された、ターミナルおよびAIエージェント向けのデスクトップアプリケーションです。RustとZigで構築され、UIを表示するAppと実行を担うCoreが分離しているのが特徴です。これにり、ウィンドウを閉じたりラップトップがスリープしたりしても、ターミナルやエージェントの処理を中断せずにバックグラウンドで継続させることができます。\n\n主な特徴:\n- **エージェント管理**: サイドバーでAIエージェントのステータス（実行中、待機中、完了など）をリアルタイムで監視し、必要に応じて「Peek（のぞき見）」表示が可能。\n- **スペースと永続性**: プロジェクト単位で「スペース」を構成し、タブや分割ペインを管理。再起動後も直前のディレクトリや状態を保持します。\n- **シームレスなリモート接続**: SSH経由でリモートマシンのコアに接続し、ローカル環境と同じUI・操作感でリモート開発を行えます。\n- **高度なカスタマイズ**: JavaScriptを使用した「Mod」システムにより、UIレイアウトやメニュー、コマンドを自由に拡張可能です。",
+    "topics": [
+      "ターミナル",
+      "AIエージェント",
+      "Rust",
+      "リモート開発",
+      "生産性ツール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - herdrdev/herdr-app: herdr desktop app"
+  }
+}
