@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:12:11.159671+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAPI Hono というライブラリを作りました",
+    "url": "https://zenn.dev/mini_bg_pro_n/articles/cd79010b1d1b9c",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Honoで型安全なAPI開発とOpenAPIドキュメント生成を両立し、Zod以外の多様なスキーマライブラリや高度なコード生成をサポートする新ライブラリ「OpenAPI Hono」の紹介。",
+    "summaryBody": "TypeScriptフレームワークのHono上で動作する、OpenAPI対応API開発のためのライブラリ「OpenAPI Hono」が公開されました。既存のZod OpenAPI Honoの書き味を継承しつつ、Standard Schema規格を採用することでZod、Valibot、ArkType、Effect Schemaなど複数のスキーマライブラリを自由に選択できるのが最大の特徴です。実行時のリクエスト/レスポンス検証、OpenAPI 3.0/3.1ドキュメントの自動配信、operationIdを用いた型安全なクライアント生成などの機能を備えています。また、専用のCLIツール「openapi-hono-gen」は、oxc-parserによる抽象構文木（AST）解析を用いることで、OpenAPI定義からの再生成時にユーザーが手書きしたハンドラ処理を削除せずにマージする高度な機能を備えています。",
+    "topics": [
+      "Hono",
+      "OpenAPI",
+      "TypeScript",
+      "Zod",
+      "Schema Validation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

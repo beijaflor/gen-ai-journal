@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:11:20.453788+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Leanの定理証明ガードレールで AI エージェントに業務ルールを守らせる",
+    "url": "https://developers.freee.co.jp/entry/lean-formal-verification-ai-agent-guardrails",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "業務ルールを定理証明支援系 Lean の公理系として定義し、AI エージェントに証明を課すことで、複雑な規則への厳密な準拠を保証する「定理証明ガードレール」の提案。",
+    "summaryBody": "LLM を用いた AI エージェントが複雑な業務ルール（金融ドメインなど）において判断を誤る「確率的な揺れ」を、定理証明支援系 Lean を用いて解決する手法について解説しています。本手法は、単に LLM の出力を検証するのではなく、業務ルールそのものを Lean の公理として定義し、会話ごとに「顧客の目的を満たす」という定理を AI に組み立て・証明させます。証明の正当性は Lean のカーネルが数学的に担保するため、公理から導けない不正な操作は実行されません。τ²-bench を用いた検証では、LLM の柔軟な対話能力を活かしつつ、決定論的な整合性を付与できることが示されています。従来の API 型設計と異なり、運用時に関数の組み立て（証明）を行うことで、ルールの準拠と自由度の拡張を両立させる先進的なアプローチです。",
+    "topics": [
+      "Lean",
+      "AIエージェント",
+      "定理証明支援系",
+      "ガードレール",
+      "τ-bench"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

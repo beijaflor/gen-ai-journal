@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:18:36.839889+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントの「余計な寄り道」：コード内の古いTODOがAIの生産性を低下させる",
+    "url": "https://developers.googleblog.com/agent-distraction/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleの調査により、コード内に放置された古いTODOコメントがAIエージェントの注意を逸らし、実行ステップ数やトークン消費を大幅に増大させている実態が明らかになりました。",
+    "summaryBody": "AIエージェントは人間のように不要な情報を読み飛ばすことができず、コード内のTODOやバグ参照を「実行すべきアクション」と誤認して「寄り道」をしてしまう傾向があります。Googleが数百万件のセッションを分析した結果、エージェントがバグ参照に遭遇するケースの約13%でこの現象が発生し、そのうち83%はユーザーからの指示がない自発的な行動（スコープクリープ）でした。これにより、ステップ数は70%、トークン消費量は77%増加し、実行時間も2倍以上に膨れ上がります。特に、既に解決済みのバグを追跡するケースが41%に上り、深刻なリソースの無駄となっています。対策としてGoogleは、バグ管理システムと照合して不要なTODOを自動削除する専用エージェントを運用し、95%以上の人間による承認率でクリーンアップに成功しています。「AIに優しいコードベース」を維持するためには、放置された技術的負債の解消がこれまで以上に重要になっています。",
+    "topics": [
+      "AIエージェント",
+      "LLM効率化",
+      "ソフトウェア工学",
+      "技術的負債",
+      "Google Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agent Distraction"
+  }
+}

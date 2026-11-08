@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:25:44.556757+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexのセキュリティの仕組み - Sandbox・Trust・Approvalを理解する",
+    "url": "https://note.com/npaka/n/n00dcc54360eb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIのAIコーディングエージェント「Codex」における、権限制限（Sandbox）、プロジェクト信頼（Trust）、操作承認（Approval）という3つの主要なセキュリティ層とその相互関係を解説した記事。",
+    "summaryBody": "OpenAIが提供するAIコーディングエージェント「Codex」のセキュリティアーキテクチャについて、公式ドキュメントをベースに体系的に解説した記事です。主な機能として、操作範囲を制限する「Sandbox」、プロジェクト固有設定の適用可否を決める「Trust」、例外的な操作をユーザー（またはAI）が判断する「Approval」の3層構造を紹介しています。特に、利用者が陥りやすい「信頼（Trust）すれば全アクセスが可能になるわけではない」といった勘違いを論理的に解き明かし、実行環境におけるディレクトリ操作の制限範囲やGit管理情報などの保護対象ファイルを具体的に列挙しています。また、AIが代わりに承認を行う「Auto-review」機能についても触れられており、自律型エージェントをローカル環境で安全に運用するための具体的な設定例（config.toml）も提示されています。エージェントが自律的にコマンドを実行する際のリスク管理を理解するのに最適なリソースです。",
+    "topics": [
+      "Codex",
+      "AIエージェント",
+      "セキュリティ",
+      "OpenAI",
+      "サンドボックス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

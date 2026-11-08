@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:23:28.987627+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Reflex：エージェントによるモバイルアプリ開発のためのアーキテクチャ",
+    "url": "https://shopify.engineering/reflex",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Shopifyが公開した「Reflex」は、エージェント（AI）がエミュレータを使わずにヘッドレスでiOS/Androidアプリを構築・テストできるようにする、MVVMベースの革新的なモバイルアーキテクチャである。",
+    "summaryBody": "Shopifyのエンジニアリングチームが発表した「Reflex」は、AIエージェントによるアプリ開発の効率を最大化するために設計されたアーキテクチャです。従来のモバイル開発では、シミュレータの起動やビルド時間がAIのフィードバックループのボトルネックとなっていました。Reflexは、UIに依存しない「コアモジュール」、厳格なViewModelの契約、JSONベースの「Introspection Kit（内省キット）」、そしてプラットフォームに依存しないCLIの4本の柱で構成されます。これにより、Swift（iOS）とKotlin（Android）で別々に書かれたコードを、共通の1つのテストスイートで検証することが可能になりました。1,700以上のテストが約4分で完了する極めて高速な環境を実現し、「コードではなくテストを共有する」という原則のもと、ネイティブアプリの性能を維持しながらAIによる高速な開発サイクルを可能にしています。",
+    "topics": [
+      "モバイルアプリ開発",
+      "AIエージェント",
+      "Shopify",
+      "ソフトウェアアーキテクチャ",
+      "テスト自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "Reflex: an architecture for building mobile apps with agents (2026) - Shopify"
+  }
+}

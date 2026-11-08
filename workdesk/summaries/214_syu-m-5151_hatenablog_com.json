@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:09:16.323405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdrで、複数のエージェントを見守りたい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの多頭飼いを支えるターミナル管理ツール「Herdr」の技術的な使い方と、エージェントとの協調作業における人間側の役割と責任の変化を解説したガイド。",
+    "summaryBody": "エンジニアの業務が「自ら書く」から「エージェントに指示し、差分をレビューする」へと移行する中、複数のエージェントを効率的に管理するツール「Herdr」の活用法を詳しく紹介している記事です。\n\n### 主な内容\n- **Herdrの基本機能**: tmuxのようにサーバー側でプロセスを維持しつつ、Claude CodeやCodexなどのエージェントが「承認待ち(blocked)」か「実行中(working)」かといった状態をサイドバーで可視化します。\n- **構造と操作**: session, workspace, tab, pane, agentという5つの階層構造を理解することで、複雑なマルチタスクを整理。詳細なCLIリファレンスも掲載されています。\n- **高度な活用**: integrationによるセッション再開、worktree機能を用いた並列検証、CLI経由の自動化スクリプトの注意点などが解説されています。\n\n### 著者の洞察\n著者は、Herdrを「次にどこを開くべきかを教える攻略マップ」と定義しています。エージェントを増やしても差分を読む時間は減らず、むしろ「何を作るか決め、結果に責任を持つ」という人間の仕事は重くなります。そのため、作業用とレビュー用のエージェントを分ける、指示をAGENTS.mdに明文化する、テストで完了条件を定義するといった、責任の所在を明確にするワークフローが重要であると説いています。",
+    "topics": [
+      "Herdr",
+      "AIエージェント",
+      "Claude Code",
+      "ターミナル管理",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

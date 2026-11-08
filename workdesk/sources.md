@@ -2,105 +2,103 @@
 
 ## Main List
 
-- [ ] 219. https://www.mobtown.jp/article/old-engineer/
-- [ ] 218. https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/
-- [ ] 217. https://levtech.jp/media/detail_964/
-- [ ] 216. https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
-- [ ] 215. https://hdsr.mitpress.mit.edu/pub/rcu10qkc/release/2
-- [ ] 214. https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239
-- [ ] 213. https://openai.com/ja-JP/index/a-thousand-fewer-paths-to-root/
-- [ ] 212. https://techblog.zozo.com/entry/detect-figma-ui-diff-with-ai
-- [ ] 211. https://gihyo.jp/article/2026/11/pdd-kit
-- [ ] 210. https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/
-- [ ] 209. https://pc.watch.impress.co.jp/docs/topic/feature/2154157.html
-- [ ] 208. https://www.itmedia.co.jp/news/article/2611/06/2000002867/
-- [ ] 207. https://www.itmedia.co.jp/news/article/2611/06/2000002928/
-- [ ] 206. https://developers.freee.co.jp/entry/lean-formal-verification-ai-agent-guardrails
-- [ ] 205. https://zenn.dev/genda_jp/articles/7b423bcd20b532
-- [ ] 204. https://zenn.dev/porters_tech/articles/4f6e5cc83aa74c
-- [ ] 203. https://zenn.dev/salt2/articles/2b6e403e059b10
-- [ ] 202. https://zenn.dev/mini_bg_pro_n/articles/cd79010b1d1b9c
-- [ ] 201. https://qiita.com/takeda_h/items/704ce614cc51f67b863c
-- [ ] 200. https://qiita.com/sheep6box/items/e3e0c443272e3568c86c
-- [ ] 199. https://qiita.com/engchina/items/4f46c257049b4b678abf
-- [ ] 198. https://qiita.com/Dash3/items/82954e7925fe63ad6a13
-- [ ] 197. https://qiita.com/ma2738/items/ee63da706aa64f3784a9
-- [ ] 196. https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai
-- [ ] 195. https://hightouch.com/blog/llm-judges-identity-resolution
-- [ ] 194. https://openai.com/index/partnering-with-hacktron/
-- [ ] 193. https://github.com/anteloc/ldraw-mecha/tree/v0.5.0
-- [ ] 192. https://www.complexsystemspodcast.com/episodes/reading-the-anthropic-s-1-with-zvi-mowshowitz/
-- [ ] 191. https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/
-- [ ] 190. https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work
-- [ ] 189. https://arxiv.org/abs/2610.21375
-- [ ] 188. https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout
-- [ ] 187. https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors
-- [ ] 186. https://github.com/Magnvs7/Promethevs
-- [ ] 185. https://www.anthropic.com/research/how-researchers-use-claude
-- [ ] 184. https://www.phoronix.com/news/OpenAI-948-Linux-LPE-Bugs
-- [ ] 183. https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates
-- [ ] 182. https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/
-- [ ] 181. https://blog.grainulation.org/verify-then-vote/
-- [ ] 180. https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/
-- [ ] 179. https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/
-- [ ] 178. https://longnow.org/ideas/attention-ai-pace-layers/
-- [ ] 177. https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/
-- [ ] 176. https://www.oreilly.com/radar/this-week-in-ai-the-cost-of-progress/
-- [ ] 175. https://developers.googleblog.com/agent-distraction/
-- [ ] 174. https://githubnext.com/projects/pdd-kit/
-- [ ] 173. https://speakerdeck.com/kuracchi_enj1/yokohama-north-meetup-18
-- [ ] 172. https://speakerdeck.com/snoozer05/decision-readiness-revisited
-- [ ] 171. https://blog.mudatobunka.org/entry/2026/11/05/100000
-- [ ] 170. https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99
-- [ ] 169. https://zenn.dev/d_date/articles/e8e2c5d53b424e
-- [ ] 168. https://zenn.dev/zoma/articles/72011082f2b1b7
-- [ ] 167. https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html?guccounter=1
-- [ ] 166. https://github.com/anthropics/claude-code/issues/107757
-- [ ] 165. https://kadhar.dev/blog/multi-agent-systems-from-scratch
-- [ ] 164. https://openai.com/ja-JP/index/updated-model-spec/
-- [ ] 163. https://github.com/sdalberto/ia-da-sobrevivencia/blob/main/README.en.md
-- [ ] 162. https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/
-- [ ] 161. https://stepshots.com/css-feature-clips
-- [ ] 160. https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html
-- [ ] 159. https://iamnoman.com/writing/designing-a-skill
-- [ ] 158. https://mean.app/
-- [ ] 157. https://uxdesign.cc/design-by-numbers-is-ai-ruining-ux-or-just-pouring-gasoline-on-the-fire-24164d49e422
-- [ ] 156. https://shopify.engineering/reflex
-- [ ] 155. https://www.oreilly.com/radar/what-it-takes-to-trust-automatic-model-routing/
-- [ ] 154. https://www.oreilly.com/radar/the-new-knowledge-artifacts-of-the-ai-economy/
-- [ ] 153. https://evilmartians.com/chronicles/why-buildkite-hired-evil-martians-for-an-agentic-first-design-system
-- [ ] 152. https://blog.cloudflare.com/trusted-agent-delegation/
-- [ ] 151. https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/
-- [ ] 150. https://openai.com/ja-JP/index/introducing-images-2-6/
-- [ ] 149. https://www.preferred.jp/ja/blog/tech/plamo-3-translate-weight-release
-- [ ] 148. https://devblog.lac.co.jp/entry/20261104
-- [ ] 147. https://note.com/npaka/n/n00dcc54360eb
-- [ ] 146. https://blog.tinect.jp/?p=91573
-- [ ] 145. https://security.macnica.co.jp/blog/2026/11/web-incidents2026-oct2.html
-- [ ] 144. https://openai.com/ja-JP/index/lifeval/
-- [ ] 143. https://www.anthropic.com/research/provable-inference
-- [ ] 142. https://www.itmedia.co.jp/news/article/2611/04/2000002764/
-- [ ] 141. https://zenn.dev/nrs/articles/33ba79c8b2542e
-- [ ] 140. https://zenn.dev/genda_jp/articles/a5cbba3664748b
-- [ ] 139. https://zenn.dev/nexta_/articles/42a828ca2b8a02
-- [ ] 138. https://qiita.com/Syoitu/items/9364a0a175893bb15219
-- [ ] 137. https://blog.sparkcan.com/posts/ai-poisoning/
-- [ ] 136. https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/
-- [ ] 135. https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/
-- [ ] 134. https://openai.com/ja-JP/index/openai-to-acquire-pierre/
-- [ ] 133. https://hy.tencent.ai/research/hy4
-- [ ] 132. https://replay.io/blog/an-end-to-buggy-web-apps
-- [ ] 131. https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- [ ] 130. https://github.com/Vapmuz/Mocktastic
-- [ ] 129. https://www.youtube.com/watch?v=WxaRn8kX2eI
-- [ ] 128. https://en.andros.dev/blog/94a77341/i-got-banned-from-lobsters-for-writing-like-an-llm/
-- [ ] 127. https://jasonpolak.substack.com/p/disaster-is-still-better-than-ai
-- [ ] 126. https://uxdesign.cc/what-ai-has-changed-in-design-systems-and-what-is-still-up-to-us-d4e8e8f4ceb2
-- [ ] 125. https://uxdesign.cc/ai-can-generate-the-interface-what-makes-it-worth-caring-about-a5f3a3e81986
-- [ ] 124. https://www.figma.com/blog/how-figma-manages-sandboxes-at-scale/
-- [ ] 123. https://blog.jetbrains.com/rust/2026/11/04/ai-for-rust-development/
-- [ ] 122. https://www.oreilly.com/radar/measuring-ais-impact-on-delivery-speed/
-- [ ] 121. https://blog.cloudflare.com/personal-agents-visibility-control/
+- [x] 219. https://www.mobtown.jp/article/old-engineer/
+- [x] 218. https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/
+- [x] 217. https://levtech.jp/media/detail_964/
+- [x] 216. https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
+- [x] 214. https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239
+- [x] 213. https://openai.com/ja-JP/index/a-thousand-fewer-paths-to-root/
+- [x] 212. https://techblog.zozo.com/entry/detect-figma-ui-diff-with-ai
+- [x] 211. https://gihyo.jp/article/2026/11/pdd-kit
+- [x] 210. https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/
+- [x] 209. https://pc.watch.impress.co.jp/docs/topic/feature/2154157.html
+- [x] 208. https://www.itmedia.co.jp/news/article/2611/06/2000002867/
+- [x] 207. https://www.itmedia.co.jp/news/article/2611/06/2000002928/
+- [x] 206. https://developers.freee.co.jp/entry/lean-formal-verification-ai-agent-guardrails
+- [x] 205. https://zenn.dev/genda_jp/articles/7b423bcd20b532
+- [x] 204. https://zenn.dev/porters_tech/articles/4f6e5cc83aa74c
+- [x] 203. https://zenn.dev/salt2/articles/2b6e403e059b10
+- [x] 202. https://zenn.dev/mini_bg_pro_n/articles/cd79010b1d1b9c
+- [x] 201. https://qiita.com/takeda_h/items/704ce614cc51f67b863c
+- [x] 200. https://qiita.com/sheep6box/items/e3e0c443272e3568c86c
+- [x] 199. https://qiita.com/engchina/items/4f46c257049b4b678abf
+- [x] 198. https://qiita.com/Dash3/items/82954e7925fe63ad6a13
+- [x] 197. https://qiita.com/ma2738/items/ee63da706aa64f3784a9
+- [x] 196. https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai
+- [x] 195. https://hightouch.com/blog/llm-judges-identity-resolution
+- [x] 194. https://openai.com/index/partnering-with-hacktron/
+- [x] 193. https://github.com/anteloc/ldraw-mecha/tree/v0.5.0
+- [x] 192. https://www.complexsystemspodcast.com/episodes/reading-the-anthropic-s-1-with-zvi-mowshowitz/
+- [x] 191. https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/
+- [x] 190. https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work
+- [x] 189. https://arxiv.org/abs/2610.21375
+- [x] 188. https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout
+- [x] 187. https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors
+- [x] 186. https://github.com/Magnvs7/Promethevs
+- [x] 185. https://www.anthropic.com/research/how-researchers-use-claude
+- [x] 184. https://www.phoronix.com/news/OpenAI-948-Linux-LPE-Bugs
+- [x] 183. https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates
+- [x] 182. https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/
+- [x] 181. https://blog.grainulation.org/verify-then-vote/
+- [x] 180. https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/
+- [x] 179. https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/
+- [x] 178. https://longnow.org/ideas/attention-ai-pace-layers/
+- [x] 177. https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/
+- [x] 176. https://www.oreilly.com/radar/this-week-in-ai-the-cost-of-progress/
+- [x] 175. https://developers.googleblog.com/agent-distraction/
+- [x] 174. https://githubnext.com/projects/pdd-kit/
+- [x] 173. https://speakerdeck.com/kuracchi_enj1/yokohama-north-meetup-18
+- [x] 172. https://speakerdeck.com/snoozer05/decision-readiness-revisited
+- [x] 171. https://blog.mudatobunka.org/entry/2026/11/05/100000
+- [x] 170. https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99
+- [x] 169. https://zenn.dev/d_date/articles/e8e2c5d53b424e
+- [x] 168. https://zenn.dev/zoma/articles/72011082f2b1b7
+- [x] 167. https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html?guccounter=1
+- [x] 166. https://github.com/anthropics/claude-code/issues/107757
+- [x] 165. https://kadhar.dev/blog/multi-agent-systems-from-scratch
+- [x] 164. https://openai.com/ja-JP/index/updated-model-spec/
+- [x] 163. https://github.com/sdalberto/ia-da-sobrevivencia/blob/main/README.en.md
+- [x] 162. https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/
+- [x] 161. https://stepshots.com/css-feature-clips
+- [x] 160. https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html
+- [x] 159. https://iamnoman.com/writing/designing-a-skill
+- [x] 158. https://mean.app/
+- [x] 157. https://uxdesign.cc/design-by-numbers-is-ai-ruining-ux-or-just-pouring-gasoline-on-the-fire-24164d49e422
+- [x] 156. https://shopify.engineering/reflex
+- [x] 155. https://www.oreilly.com/radar/what-it-takes-to-trust-automatic-model-routing/
+- [x] 154. https://www.oreilly.com/radar/the-new-knowledge-artifacts-of-the-ai-economy/
+- [x] 153. https://evilmartians.com/chronicles/why-buildkite-hired-evil-martians-for-an-agentic-first-design-system
+- [x] 152. https://blog.cloudflare.com/trusted-agent-delegation/
+- [x] 151. https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/
+- [x] 150. https://openai.com/ja-JP/index/introducing-images-2-6/
+- [x] 149. https://www.preferred.jp/ja/blog/tech/plamo-3-translate-weight-release
+- [x] 148. https://devblog.lac.co.jp/entry/20261104
+- [x] 147. https://note.com/npaka/n/n00dcc54360eb
+- [x] 146. https://blog.tinect.jp/?p=91573
+- [x] 145. https://security.macnica.co.jp/blog/2026/11/web-incidents2026-oct2.html
+- [x] 144. https://openai.com/ja-JP/index/lifeval/
+- [x] 143. https://www.anthropic.com/research/provable-inference
+- [x] 142. https://www.itmedia.co.jp/news/article/2611/04/2000002764/
+- [x] 141. https://zenn.dev/nrs/articles/33ba79c8b2542e
+- [x] 140. https://zenn.dev/genda_jp/articles/a5cbba3664748b
+- [x] 139. https://zenn.dev/nexta_/articles/42a828ca2b8a02
+- [x] 138. https://qiita.com/Syoitu/items/9364a0a175893bb15219
+- [x] 136. https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/
+- [x] 135. https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/
+- [x] 134. https://openai.com/ja-JP/index/openai-to-acquire-pierre/
+- [x] 133. https://hy.tencent.ai/research/hy4
+- [x] 132. https://replay.io/blog/an-end-to-buggy-web-apps
+- [x] 131. https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+- [x] 130. https://github.com/Vapmuz/Mocktastic
+- [x] 129. https://www.youtube.com/watch?v=WxaRn8kX2eI
+- [x] 128. https://en.andros.dev/blog/94a77341/i-got-banned-from-lobsters-for-writing-like-an-llm/
+- [x] 127. https://jasonpolak.substack.com/p/disaster-is-still-better-than-ai
+- [x] 126. https://uxdesign.cc/what-ai-has-changed-in-design-systems-and-what-is-still-up-to-us-d4e8e8f4ceb2
+- [x] 125. https://uxdesign.cc/ai-can-generate-the-interface-what-makes-it-worth-caring-about-a5f3a3e81986
+- [x] 124. https://www.figma.com/blog/how-figma-manages-sandboxes-at-scale/
+- [x] 123. https://blog.jetbrains.com/rust/2026/11/04/ai-for-rust-development/
+- [x] 122. https://www.oreilly.com/radar/measuring-ais-impact-on-delivery-speed/
+- [x] 121. https://blog.cloudflare.com/personal-agents-visibility-control/
 - [x] 120. https://yasuhisa.com/could/article/design-format-and-ai/
 - [x] 119. https://www.gizmodo.jp/article/2610-claude-mythos-ai-cot-momentum/
 - [x] 118. https://speakerdeck.com/freee/freee-niokeru-software-factory
@@ -183,6 +181,7 @@
 - [x] 041. https://note.com/npaka/n/n66f6eaffeecb
 - [x] 040. https://speakerdeck.com/nkzn/ai-for-breadth-humans-for-perspective
 - [x] 039. https://note.com/shi3zblog/n/nadf4c6873d6d
+- [x] 038. https://royalsocietypublishing.org/rsos/article/13/9/rsos252491/483310/Cultural-bias-or-universal-traits-Exploring
 - [x] 037. https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise
 - [x] 036. https://imoz.jp/humanizer.ja.txt
 - [x] 035. https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/

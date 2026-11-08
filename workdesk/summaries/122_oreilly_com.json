@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:31:41.320735+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる開発速度への影響を測定する方法",
+    "url": "https://www.oreilly.com/radar/measuring-ais-impact-on-delivery-speed/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIがソフトウェア開発のデリバリースピードを実際にどの程度向上させているかを正確に把握するため、ランダム化比較試験を用いた厳密な測定手法を提案する。",
+    "summaryBody": "AI導入による開発スピードの向上を正確に測定するためのフレームワークを解説した記事です。筆者はまず「デリバリースピードは生産性の一部に過ぎない」と定義し、単なるアウトプット量（PR数やコード行数）の測定を否定します。測定を困難にする要因として、見積もりの不正確さ、個人の作業スタイルの差、AI利用を知ることによる心理的バイアス、プロセス改善による影響の混入の4点を挙げ、これらを排除するために「ランダム化被験者内反復測定（randomized within-subject repeated-measures trial）」を推奨しています。具体的には、タスクを見積もった後にAI利用の有無をランダムに決定し、同一の開発者が両方の条件で作業を行うことで、統計的に有意なデータを収集する手法を提唱しています。AIへの投資額が増大する中で、主観的な印象や誇大広告に惑わされず、ROIを冷徹に評価する重要性を説いています。",
+    "topics": [
+      "AI生産性",
+      "ソフトウェア開発メトリクス",
+      "ROI評価",
+      "エンジニアリングマネジメント",
+      "デリバリースピード"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Measuring AI’s Impact on Delivery Speed"
+  }
+}

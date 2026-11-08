@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:13:14.020057+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Codexに「Claudeにレビューを頼んで」と言ったら、Claude Codeを自動起動してレビューまで完了した話",
+    "url": "https://qiita.com/ma2738/items/ee63da706aa64f3784a9",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントのCodexが、自律的にClaude Code CLIを呼び出し、コードレビューの実行から結果の評価までを人間を介さず完結させた技術検証レポート。",
+    "summaryBody": "本記事は、開発担当AI（Codex）と検証担当AI（Claude Code）を直接連携させた実験の記録です。人間がCodexに指示を出すと、CodexがPythonのsubprocessを使用してClaude Code CLIを非対話モード（-pオプション等）で起動。特定のディレクトリにコピーされたソースコードに対し、制限された権限下（--safe-mode、--restricted等）でレビューを実行させました。結果として、33ターンの推論を経てJSON形式のレポートが出力され、Codexがその内容を「採用・保留・却下」に自動分類しました。AIが別のAIをツールとして使いこなし、結果を評価する『AI間Handoff』の具体例として、詳細なCLI引数や実行ログ、安全性の限界が示されています。",
+    "topics": [
+      "AIエージェント",
+      "ClaudeCode",
+      "Codex",
+      "AI駆動開発",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}
