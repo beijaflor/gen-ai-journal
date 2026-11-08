@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:13:25.034809+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Haas-ja-v1.0: 高速かつ高精度な日本語音声認識オープンモデルの公開",
+    "url": "https://huggingface.co/third-intelligence/Haas-ja-v1.0",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "NVIDIAのParakeet-TDTアーキテクチャをベースにKimi Delta Attentionを統合し、商用APIに匹敵する精度と圧倒的な推論速度を実現した日本語音声認識モデル。",
+    "summaryBody": "Third Intelligence, Inc.が公開した「Haas-ja-v1.0」は、高速性と高精度を両立した日本語音声認識（ASR）モデルです。NVIDIAのParakeet-TDT（FastConformer + Token-and-Duration Transducer）をベースに、予測ネットワークへKimi Delta Attention (KDA) を導入することで、推論速度を維持しながら精度を向上させています。\n\n主な特徴と性能：\n- **ベンチマーク性能**: 5つの公開データセットを用いた評価でCER（文字誤り率）6.12%を達成。これはオープンモデルの中で最高水準であり、一部の商用API（GPT-Transcribe等）に匹敵します。\n- **圧倒的な速度**: Whisper large-v3と比較して約15〜17倍高速に動作し、H200 GPUでRTFx 3,236を記録しています。\n- **学習データ**: ReazonSpeechやCommon Voiceを含む約46,000時間の日本語音声データで学習されています。\n- **実装と利用**: NVIDIA NeMo 2.7環境で動作し、カスタムボキャブラリによる固有名詞のブーストや、話者分離モデルとの統合もサポートしています。\n- **コスト効率**: H200利用時、1時間あたりの文字起こしコストは約0.003〜0.004ドルと見積もられ、商用APIの1/30〜1/100程度のコストで運用可能です。\n\nライセンスはApache 2.0で公開されており、商用利用を含め幅広い用途に活用できます。",
+    "topics": [
+      "音声認識",
+      "ASR",
+      "NVIDIA NeMo",
+      "日本語モデル",
+      "Deep Learning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "third-intelligence/Haas-ja-v1.0 · Hugging Face"
+  }
+}

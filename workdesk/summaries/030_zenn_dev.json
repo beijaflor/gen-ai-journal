@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:17:16.514254+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code 拡張機能のバックドア事件まとめ（2.1.312・2.1.313・Cursor のマーケットプレイス）",
+    "url": "https://zenn.dev/sonsu/articles/67fbd9a1cf8914",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Cursorのマーケットプレイスで配布されたClaude Code拡張機能にバックドアが混入した事件の経緯、影響確認方法、および復旧手順を解説した記事。",
+    "summaryBody": "2026年10月29日から30日にかけて、Cursorエディタ専用の拡張機能マーケットプレイスにおいて、悪意あるコードが含まれたClaude Code拡張機能（バージョン2.1.312および2.1.313）が約11時間にわたり配布されました。このバックドアは、PCのホスト情報や環境変数の窃取、SSHの`authorized_keys`への攻撃者用公開鍵（svc-telemetry）の追加、および永続化のための自動実行スクリプトの登録を行います。影響を受けたのはCursor経由で当該バージョンを導入した最大5,000人のユーザーであり、VS Codeの利用者には影響ありません。記事では、感染の確認コマンド、公式の修復スクリプトによる復旧手順、および認証情報の再発行といった二次被害防止策を詳述しています。原因は攻撃者がマーケットプレイスのアクセス権を不正取得したことによるものとされています。",
+    "topics": [
+      "サイバーセキュリティ",
+      "Cursor",
+      "Claude Code",
+      "サプライチェーン攻撃",
+      "バックドア"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

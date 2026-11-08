@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:10:45.841942+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "実践的ループ・エンジニアリング：AIエージェントを自律的に動作させる手法と規律",
+    "url": "https://addyo.substack.com/p/practical-loop-engineering",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントに「目標」と「時間」に基づいた反復サイクルを持たせ、人間の判断を適切に残しながらタスクを自動完結させる実践的なエンジニアリング手法を解説しています。",
+    "summaryBody": "GoogleのAddy Osmani氏が、Claude Codeなどの最新ツールを用いたAIエージェントの高度な運用手法「ループ・エンジニアリング」について詳説しています。単発の指示ではなく、エージェントが自律的に「試行・テスト・修正」を繰り返すフィードバックサイクルを構築することが核心です。\n\n主な内容は以下の通りです：\n- **2つのプリミティブ**: 特定の成功条件（テスト合格や性能指標など）に達するまで繰り返す「Goal」と、特定の時間間隔で定期実行する「Loop」の使い分け。\n- **検証の分離**: 実装を行うエージェントと、その成果を検証するエージェントを分けることで精度を向上させるパターン。\n- **判断を委譲しない**: タスクの実行は委譲しても、最終的な「コードの味（テイスト）」やセキュリティ、設計判断までエージェントに任せきりにしないことの重要性。\n- **実戦的なワークフロー**: GitHubのイシュー管理、PRの自動レビュー、フロントエンドのパフォーマンス改善など、著者が日々実践している具体的な自動化例を紹介。\n\nエージェントを「放置」するのではなく、明確な停止条件と監視体制を敷くことで、開発効率を劇的に向上させるためのガイドとなっています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "オートメーション",
+      "ソフトウェア開発",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Practical Loop Engineering - by Addy Osmani"
+  }
+}

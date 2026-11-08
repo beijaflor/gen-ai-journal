@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:10:16.284533+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP向けエンタープライズ管理型認証：Claudeが独自にアイデンティティ・アサーションを発行可能に",
+    "url": "https://supabase.com/blog/claude-issued-enterprise-managed-auth-for-mcp",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Supabaseは、Claudeを認証アサーション（ID-JAG）の直接の発行体として登録可能にし、IdPの対応状況に依存せずMCPの管理型認証を利用できる新機能を発表しました。",
+    "summaryBody": "### 概要\nSupabaseは、Model Context Protocol (MCP) を用いたClaudeとの連携において、Claude自体をアイデンティティ・アサーション（ID-JAG）の発行元として設定できる機能を公開しました。これにより、従来はOktaなどの一部のIdentity Provider (IdP) しか対応していなかった「エンタープライズ管理型認証」が、より多くの組織で利用可能になります。\n\n### 主な特徴とメリット\n- **IdPの制約を解消**: IdPがMCP拡張をサポートしていなくても、Claudeが署名済みアサーションを直接発行するため、シームレスなSSO連携が可能です。\n- **ユーザー体験の向上**: 管理者が一度承認すれば、一般ユーザーは個別の認可画面を通さずにSupabaseリソースにアクセスできます。\n- **短命トークンの活用**: Claudeが組織メンバーシップとメールアドレスを確認し、Supabaseがそれを検証して短命のアクセス許可を発行します。\n\n### 運用の注意点\n- **オフボーディング**: IdPでユーザーを無効化しても即座にアクセスは遮断されないため、SupabaseとClaudeの両方の組織から削除する必要があります。\n- **単一の発行体**: SupabaseはSSOプロバイダーごとに1つの発行体のみを信頼するため、Claudeを登録すると既存のIdP経由のアサーションは無効化されます。",
+    "topics": [
+      "MCP",
+      "Supabase",
+      "Claude",
+      "SSO",
+      "Authentication"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Enterprise-managed auth for MCP: Claude can now issue the identity assertion"
+  }
+}

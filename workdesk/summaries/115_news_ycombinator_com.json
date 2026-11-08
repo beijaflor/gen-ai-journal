@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:50:01.164263+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Ask HN: 自分が理解していないAI生成コードをリリースすることにどう対処すべきか？",
+    "url": "https://news.ycombinator.com/item?id=50151036",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Metaのエンジニアによる「AIが書いたブラックボックスなコードをリリースする不安」という投稿をきっかけに、開発者の役割の変化と品質維持の戦略についてHacker Newsで広範な議論が行われた。",
+    "summaryBody": "このスレッドでは、AIコーディングツールの普及に伴い、エンジニアが「詳細を把握せずにコードを納品する」という現状にどう向き合うべきかについて、多くの熟練開発者が持論を展開しています。主な議論として、人間がUMLや抽象化レベルでの設計（Design）を厳密に行い、AIにはその「隙間」を埋めさせることでシステム全体を制御下に置く手法が強く推奨されています。また、開発者の役割が「実装者」から、AIという「ジュニアエンジニア」を指揮・監督する「プリンシパルエンジニア」や「マネージャー」へとシフトしているとの指摘も目立ちます。一方で、テストの徹底（TDDや形式検証）に重心を置くべきという実利的な意見と、技術的負債の爆発や開発者のスキル低下を危惧する保守的な視点が対立しており、単に「動けばいい」という基準で出荷することの危険性についても深い洞察が示されています。",
+    "topics": [
+      "AIコーディング",
+      "ソフトウェアエンジニアリング",
+      "技術的負債",
+      "LLM",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Ask HN: How to deal with shipping AI-written code you don't understand?"
+  }
+}

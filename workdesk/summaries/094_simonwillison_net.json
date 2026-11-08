@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:55:54.825959+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen 3.8 27Bによるニューラルネットワーク重みの直接解釈：ローカルLLMでの検証",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ローカルLLMのQwen 3.8 27Bが、ツールを一切使用せずニューラルネットワークの生の重みデータのみから学習内容を正確に推論できることを実証した。",
+    "summaryBody": "サイモン・ウィリソン氏は、最新論文「Sparks of Weight-Space Programming」の驚くべき主張を検証。ローカル環境のQwen 3.8 27Bを用いて、生のニューラルネットワークの重み（浮動小数点数の羅列）からそのモデルがどのゲーム（BreakoutやPongなど）を学習したものかを特定できるか試行した。結果、Qwenは外部ツールやコード実行を一切行わず、膨大な推論（Reasoning）プロセスのみを経て、見事にゲームの種類を特定した。著者はこの「Weight-Space Programming」という概念の可能性を認めつつも、重みの直接解釈と、コードによるモデル更新の2点は区別して評価すべきだと冷静に指摘している。",
+    "topics": [
+      "Weight-Space Programming",
+      "Qwen 3.8",
+      "Interpretability",
+      "Local LLM",
+      "Neural Networks"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 94
+    },
+    "originalTitle": "Qwen 3.8 27B on my laptop can interpret model weights, too"
+  }
+}

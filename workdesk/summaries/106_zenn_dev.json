@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:52:27.367254+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent DX 〜 AI時代にフレームワークHonoは必要か",
+    "url": "https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの開発者体験「Agent DX」を定義し、AI Evalsを通じてHonoがAIによるコード生成の成功率向上やトークン削減に寄与することを実証した調査レポート。",
+    "summaryBody": "WebフレームワークHonoの作者yusukebe氏による、AIエージェント向けの開発者体験（Agent DX）を改善するためのプロジェクト報告です。AI Evalsという手法を用い、AIがHonoを使用する際の挙動を「採用」「価値」「実践」の3つの観点から検証しています。\n\n主な知見として、AIは適切なヒント（package.jsonなど）があればHonoを選択し、素のコードを書く場合と比較してコード量やトークン消費量を30〜40%削減、さらにタスクの成功率が向上することが明らかになりました。また、人間向けの`dev`コマンドがAIをハングさせる原因になるという「人間とAIのDXの乖離」を指摘。これを解決するために、開発サーバーを介さずにリクエスト検証が可能な「Hono CLI」や「Skills」の有用性を提唱しています。AI時代においてもフレームワークは依然として有用であり、AIに最適化されたインターフェース（Agent DX）の重要性を説く内容となっています。",
+    "topics": [
+      "Hono",
+      "AIエージェント",
+      "Developer Experience (DX)",
+      "AI Evals",
+      "Hono CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

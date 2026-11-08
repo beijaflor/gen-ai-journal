@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:16:45.356092+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "16GB RAM・6GB VRAM のノート PC で gpt-oss-20b とチャットする",
+    "url": "https://zenn.dev/shozotanaka/articles/01877d688dfc65",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "16GBのRAMと6GBのVRAMを搭載したノートPCで、20B規模のMoEモデルを独自エンジンの最適化により実用的な速度で動作させる手法の解説。",
+    "summaryBody": "16GBのRAMと6GBのVRAM（RTX 4050 Laptop）という制約下で、約13.8GBのMoEモデル「gpt-oss-20b」を毎秒5〜6トークンで動作させる技術的取り組みを詳説しています。主な手法は、MoEの専門家（Experts）をCPU、アテンション等の共通重みをGPUに配置するハイブリッド戦略と、mmapによるメモリ消費の抑制です。さらに独自エンジン「ggmlLM」により、会話履歴のKVキャッシュ再利用（KV Reuse）や、min-pサンプリングによる語彙選択の高速化（30msから0.3msへ短縮）を実現。VRAMを重みの単なる置き場ではなくキャッシュとして捉え、重みの役割ごとに配置を制御することで、小規模ハードウェアでも大規模な推論を可能にしています。",
+    "topics": [
+      "ローカルLLM",
+      "MoE",
+      "ggml",
+      "GPU最適化",
+      "推論エンジン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:17:34.809263+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TelegrafをARMv6で使う - 必要なプラグインだけをビルドしてRaspberry Pi Zero Wを最適化する",
+    "url": "https://zenn.dev/nauh_blog/articles/3bf7430510d30a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "リソースの限られたRaspberry Pi Zero W向けに、Telegrafのcustom_builderを使用してバイナリサイズとメモリ使用量を大幅に削減し、AWS IoT Coreへ安定送信するためのビルド手法を解説しています。",
+    "summaryBody": "### 概要\nRaspberry Pi Zero W（ARMv6）のようなリソースが制限されたエッジ端末で、メトリクス収集エージェント「Telegraf」を効率的に運用するためのガイドです。公式の配布バイナリが約260MBと巨大でメモリ消費も多い課題に対し、必要なプラグインのみを組み込むカスタムビルド手法を提案しています。\n\n### 技術的ポイント\n- **リソース削減の効果**: custom_builderを活用することで、バイナリサイズを260.3MBから32.0MBへ、常駐メモリ（RSS）を121.4MBから21.5MBへと大幅に軽量化しています。\n- **ARMv6向けのクロスコンパイル**: 手元のx86_64環境からビルドする際、`GOARM=5`や`GOARCH=arm`を適切に設定し、ビルドツール自体との混同を避けるための2段階ビルドプロセスを詳述しています。\n- **AWS IoT Coreへの最適設定**: 通信障害時のバッファリング設定や、QoS 1の指定、client_idの管理、さらに`layout = \"batch\"`とJSONataを用いたペイロードの整形方法まで、実践的な設定例を公開しています。\n\n### 結論\n適切なビルド最適化により、Telegrafが持つ「障害時の堅牢な再送制御」というメリットを損なうことなく、非力なエッジデバイスでも安定したメトリクス送信基盤を構築できることを実証しています。",
+    "topics": [
+      "Telegraf",
+      "Raspberry Pi",
+      "IoT",
+      "Go",
+      "AWS IoT Core"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}
