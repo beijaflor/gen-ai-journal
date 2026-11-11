@@ -11,10 +11,13 @@
 > Human curation signals this cycle (from `curation_flags.md`): 👍 172, 173 ／ 👎 028, 197, 203 ／ no ⭐ standout, no omit.
 > Supabase annex pre-flags (27, from `curated_annex_journal_sources.md`): 009, 022, 032, 033, 038, 039, 049, 056, 058, 063, 077, 078, 092, 106, 112, 124, 133, 143, 147, 148, 149, 151, 152, 163, 169, 175, 206.
 > **Rev.1 (human direction):** themes reordered by priority to 3→2→6→7→8→1; former Themes 4 & 5 united into one "practical methodology + role" theme placed last (7 themes / 37 articles).
+> **Rev.2 (human direction via AskUserQuestion):** added a local/open-models main theme (Kimi-K3.1 Pro anchor) as Theme 8; 131/149/033/186/180 promoted out of the annex pool (8 themes / 42 articles; "keep 42" chosen over the 40 ceiling). Placement = last; reorder on request.
+> **Rev.3 (human direction via AskUserQuestion):** added a specialized/modality-model theme as Theme 9 (Rime Prism・Haas-ja・Idol・Images 2.6・PLaMo 3); 149 moved from Theme 8 to Theme 9; 037/044/041/150 promoted from omitted (9 themes / 46 articles).
+> **Rev.4 (human direction):** 133 (Tencent Hy4, open-weight model family for game-dev/science) promoted from the annex pool into Theme 9; parenthetical broadened to ゲーム/科学 (9 themes / 47 articles).
 
 ---
 
-## Identified Themes (7 main themes / 37 articles)
+## Identified Themes (9 main themes / 47 articles)
 
 **Reminder: titles are concrete, specific, factual — named anchors + single verb + substantive topic phrase.**
 **Order below = editorial priority (lead theme first).**
@@ -134,6 +137,38 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 
 ---
 
+### Theme 8: Kimi-K3.1 Pro・LFM3のオープン公開とローカル実行、そして「クローズドが価格性能比を独占」の現実
+
+**Articles (IDs):** 131, 033, 186, 180
+
+**Theme Introduction:**
+兆パラメータ級のオープンウェイトモデルの公開が相次いだ。Moonshot AIのKimi-K3.1-Pro（2.8兆パラメータMoE）やLiquid AIのエッジ向けLFM3が重みを公開する一方、PROMETHEVSは510GBのDeepSeek-V4.1-Flashを64GBのゲーミングPCで動かしてみせる。ただし市場分析では、蒸留と規模の経済を武器にクローズドモデルが価格性能比をほぼ独占し、オープンウェイトのシェアは3%に激減しているという対照的な現実も示されている。
+
+**Editorial Notes:**
+- 131: Moonshot AI Kimi-K3.1-Pro。2.8兆パラメータ（活性104B）・100万トークン窓のオープンウェイトMoE、コーディング・推論・エージェント特化（本テーマのリード）
+- 033: Liquid AI LFM3。トライハイブリッド構成のエッジ向けマルチモーダル基盤モデル群 ※Supabase annex pre-flag → 主へ配置（要確認）
+- 186: PROMETHEVS。compress-then-correctで510GBのDeepSeek-V4.1-Flashを64GB RAM＋12GB GPUで実行（出力一致率約98.3%）
+- 180: village.dev。クローズドモデルが価格性能比を独占しオープンウェイトのシェアが3%に激減という市場分析（本テーマの対照軸）
+
+---
+
+### Theme 9: Rime Prism・Haas-ja・Idol・Images 2.6・PLaMo 3が示す特化型モデルの公開（音声・3D・画像・翻訳・ゲーム/科学）
+
+**Articles (IDs):** 037, 044, 041, 150, 149, 133
+
+**Theme Introduction:**
+汎用大規模モデルと並行して、モダリティや用途に特化したモデルの公開も相次いだ。Rimeの「Prism」は300ms低遅延で制御性を両立する企業向けSpeech-to-Speech、Haas-ja v1.0は商用API級の精度を持つ日本語音声認識、Idolは1枚の画像から3D Gaussian Splattingを生成する。OpenAIは画像生成のImages 2.6を、Preferred Networksは翻訳特化のPLaMo 3 Translateを公開しており、音声・3D・画像・翻訳それぞれで実用水準の選択肢が広がっている。さらにテンセントのHy4はゲーム開発・科学研究向けのオープンウェイトとして公開され、用途特化の裾野はモダリティを超えて広がっている。
+
+**Editorial Notes:**
+- 037: Rime Prism。300ms低遅延＋テキストレイヤー制御、自社データでFT可能な世界初のコンポーザブルなSpeech-to-Speech（音声）
+- 044: Haas-ja v1.0。NVIDIA Parakeet-TDTベース＋Kimi Delta Attentionで商用API級精度の日本語ASRをオープン公開（音声認識）
+- 041: Idol。1枚の画像から高品質な3D Gaussian Splattingを高速生成するオープンソースモデル（3D生成）
+- 150: OpenAI Images 2.6。画像内テキストの正確性とプロンプト理解を向上させた最新画像生成モデル（画像生成）
+- 149: Preferred Networks PLaMo 3 Translate。翻訳特化LLMを0.8B〜31Bの全4サイズで重み公開、独自のデータ洗練・蒸留（翻訳）※Supabase annex pre-flag → 主へ配置（要確認）
+- 133: テンセント Hy4。ゲーム開発・科学研究向けのオープンウェイト・モデル群（ゲーム/科学）※Supabase annex pre-flag → Rev.4で主へ配置（要確認）
+
+---
+
 ## Highlight Draft ("今週のハイライト")
 
 **今週の主な話題:**
@@ -142,7 +177,7 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 
 セキュリティでは、OpenAIの自律型AIがLinuxカーネルで948件の脆弱性を特定してエクスプロイトを生成し、CathedralがAnthropicに12時間で侵入、インフォスティーラーVOLTAがLLMで被害者を選別するなど、AIが攻守の両側を担う局面が鮮明になった。デザインの領域では、UIの生成が容易になるなかで価値が「コンテキスト」や「独自の視点」へ移るという議論が続く。同時に、ジャロン・ラニアーやデジタルミニマリズム、カスタマーサポートや大学教育の現場からは、AIとの距離を意図的に取り直す人間中心の声も強まっている。
 
-こうした技術の動きの背景で、AnthropicはIPOに向けたS-1修正届出を公開した。第3四半期売上170億ドルと約8,954億ドルの計算資源コミットメントという規格外の数字が示される一方、想定評価額は選挙後のAI株下落を受けて1.1〜1.3兆ドルへ下方修正され、マイクロソフトのOracle借用縮小とあわせてAI経済の持続性が問われている。開発手法と役割の面では、ハーネス／ループエンジニアリングという「周辺環境」の設計と、ティム・オライリーの「ナレッジ・アーティファクト」論に象徴される役割転換を一つのテーマにまとめた。ローカル/オープンモデルの最前線や各社のエンタープライズ実装は、本号ではannexで扱う。
+こうした技術の動きの背景で、AnthropicはIPOに向けたS-1修正届出を公開した。第3四半期売上170億ドルと約8,954億ドルの計算資源コミットメントという規格外の数字が示される一方、想定評価額は選挙後のAI株下落を受けて1.1〜1.3兆ドルへ下方修正され、マイクロソフトのOracle借用縮小とあわせてAI経済の持続性が問われている。開発手法と役割の面では、ハーネス／ループエンジニアリングという「周辺環境」の設計と、ティム・オライリーの「ナレッジ・アーティファクト」論に象徴される役割転換を一つのテーマにまとめた。モデルの側では、Kimi-K3.1 Pro・LFM3といった兆パラメータ級オープンウェイトの公開とローカル実行が進む一方、価格性能比ではクローズドが依然優位という対照も見える。さらにRime Prism（音声）・Haas-ja（日本語ASR）・Idol（3D）・Images 2.6（画像）・PLaMo 3（翻訳）・Hy4（ゲーム/科学）と、用途特化型モデルの公開も相次いだ。各社のエンタープライズ実装は、本号ではannexで扱う。
 
 ---
 
@@ -157,10 +192,13 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 - 197 → 非掲載候補（CodexがClaude Codeを自動起動。downvote）
 - 203 → 非掲載候補（Premiere Pro全自動編集。downvote、良記事だがannex判断は要確認）
 
-**Supabase annex pre-flag placed in MAIN (require confirmation):**
+**Supabase annex pre-flags placed in MAIN (require confirmation):**
 - 009 → Theme 1（Leo de Mouraインタビュー。形式的検証テーマの概念軸として主へ）
+- 149 → Theme 9（PLaMo 3 Translate。Rev.2で昇格、Rev.3で特化型モデルTheme 9へ移動）
+- 033 → Theme 8（LFM3。エッジ向けマルチモーダル基盤モデル・Rev.2で昇格）
+- 133 → Theme 9（Tencent Hy4。ゲーム開発・科学研究向けオープンウェイト・Rev.4で昇格）
 
-**Supabase annex pre-flags kept in ANNEX pool:** 022, 032, 033, 038, 039, 049, 056, 058, 063, 077, 078, 092, 106, 112, 124, 133, 143, 147, 148, 149, 151, 152, 163, 169, 175, 206
+**Supabase annex pre-flags kept in ANNEX pool:** 022, 032, 038, 039, 049, 056, 058, 063, 077, 078, 092, 106, 112, 124, 143, 147, 148, 151, 152, 163, 169, 175, 206
 - 143 note: FlashProveはLLM出力の「来歴」をzkSNARKで証明するもので、「AI生成コードの正しさの証明」とは主題が異なるためTheme 1に入れず（annex据え置き）。
 
 **Dedup decisions (per criteria §3):**
@@ -181,12 +219,14 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 - Theme 5 (人間中心の視点とAIへの距離): 5
 - Theme 6 (Anthropic IPO / AIバブル): 5
 - Theme 7 (実践知とエンジニアの役割転換 ※旧4+5統合): 7
+- Theme 8 (ローカル/オープンモデルの公開とローカル実行 ※Rev.2): 4
+- Theme 9 (特化型モデルの公開：音声・3D・画像・翻訳・ゲーム/科学 ※Rev.3, Rev.4で133追加): 6
 
-**Total for Main:** 37 articles across 7 themes
-**Remaining for Annex/非掲載:** 176 articles (annex final selection ~25–35 in STEP_05)
+**Total for Main:** 47 articles across 9 themes
+**Remaining for Annex/非掲載:** 166 articles (annex final selection ~25–35 in STEP_05)
 
 **Annex candidate pillars (starting pool = 27 Supabase flags + overflow below; final selection is STEP_05):**
-1. ローカル/オープンモデルとオンデバイス推論: 031, 033, 039, 044, 078, 084, 094, 112, 131, 133, 149, 163, 180, 186
+1. ローカル/オープンモデルとオンデバイス推論: 031, 039, 078, 084, 094, 112, 163　（131/033/186/180はTheme 8、149/044/133はTheme 9へ昇格）
 2. エンタープライズ/業務でのAIエージェント実装: 032, 048, 055, 101, 103, 111, 114, 118, 124, 140, 156, 159, 208, 217
 3. AIエージェント製品・ツール・ターミナル: 015, 019, 022, 049, 052, 056, 070, 079, 098, 102, 106, 113, 116, 134, 142, 165, 169, 171, 190, 209, 214
 4. 形式検証・信頼性の深掘り: 139, 143, 175, 181, 206, 211, 046, 168
@@ -194,7 +234,7 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 6. 社会・規制・批判・労働: 006, 021, 035, 038, 042, 047, 061, 069, 073, 092, 093, 127, 136, 167, 178, 218
 7. UX/デザイン深掘り: 002, 050, 057, 058, 059, 060, 062, 063, 065, 120, 151, 153, 157, 161, 170
 
-**Optional additional theme (reviewer's call):** 「Kimi-K3.1・PLaMo 3 Translate・PROMETHEVSに見るローカル/オープンモデルの最前線」(131, 149, 186, 078/094, 180) — pillar 1 is strong enough to promote to a main theme if preferred; currently routed to annex.
+**Realized as Theme 8 (Rev.2):** the optional local/open-models theme was promoted to main (131, 149, 033, 186, 180).
 
 ---
 
@@ -205,8 +245,11 @@ AI生成コードを信頼可能にする「実践知」と、それに伴うエ
 
 **Changes Made:**
 - Rev.1 (per human direction): priority reorder 3→2→6→7→8→1; former Themes 4 & 5 united into Theme 7 (practical methodology + role), placed last; 170/118/139 routed to annex. Main count 40 → 37.
+- Rev.2 (per human direction via AskUserQuestion): added Theme 8 local/open-models (131, 149, 033, 186, 180; 149/033 promoted from Supabase annex flags). Main count 37 → 42; "keep 42" chosen.
+- Rev.3 (per human direction via AskUserQuestion): added Theme 9 specialized/modality models (037, 044, 041, 150, 149); 149 moved from Theme 8 → Theme 9; 037/044/041/150 promoted from omitted. Main count 42 → 46 / 9 themes.
+- Rev.4 (per human direction): 133 (Tencent Hy4, open-weight model family for game-dev/science) promoted from annex pool → Theme 9; T9 parenthetical broadened to include ゲーム/科学. Main count 46 → 47.
 
-**Approval:** ✅ APPROVED (via AskUserQuestion, 2026-11-11)
+**Approval:** ✅ APPROVED through Rev.4 (via AskUserQuestion, 2026-11-11)
 
 ---
 
