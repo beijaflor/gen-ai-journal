@@ -13,8 +13,10 @@ weekly + annex journals:
                  counts reported.
   * encoding   — no U+FFFD replacement chars or stray control characters.
   * URL health — concurrent check of the curated main+annex URLs, bucketed
-                 ok (2xx) / blocked (401/402/403/406/429 anti-bot or
-                 paywall, non-fatal) / broken (everything else, fatal).
+                 ok (2xx) / blocked (401/402/403/406/429/451 anti-bot, paywall
+                 or legal, plus the non-standard CDN/anti-bot range 520–599 such
+                 as Cloudflare 52x/530 and Tencent-style 567; non-fatal) /
+                 broken (everything else incl. 500–511 and conn errors, fatal).
                  Skip with --skip-urls.
 
 Exit code is non-zero on any real failure, so it drops straight into CI or a
@@ -224,10 +226,17 @@ def check_urls(rep, urls, workers=16):
     ok, blocked, broken = [], [], []
     with ThreadPoolExecutor(max_workers=workers) as ex:
         results = list(ex.map(_check_url, urls))
+    # Anti-bot / edge-block statuses are non-fatal: the resource exists behind a
+    # CDN or bot challenge that refuses our automated request but still serves
+    # human readers. Covers the standard refusals (401/402/403/406/429), legal
+    # blocks (451), and the NON-STANDARD CDN/anti-bot range 520–599 (Cloudflare
+    # 52x/530, Tencent-style 567, etc.). Standard origin errors (500–511) and
+    # connection failures (status 0) stay fatal/broken.
+    antibot = {401, 402, 403, 406, 429, 451}
     for url, status in zip(urls, results):
         if 200 <= status < 400:
             ok.append((url, status))
-        elif status in (401, 402, 403, 406, 429):
+        elif status in antibot or 520 <= status <= 599:
             blocked.append((url, status))
         else:
             broken.append((url, status))
