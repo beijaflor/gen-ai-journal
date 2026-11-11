@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:24:42.915260+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "KubernetesにおけるAIエージェントのセキュリティ：なぜ「プロンプトインジェクション」という言葉は適切ではないのか",
+    "url": "https://www.aikido.dev/blog/ai-agent-security-in-kubernetes-prompt-injection",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Kubernetes環境でのAIエージェント利用において、ログ経由の「プロンプト・ポイズニング」や読み取り専用権限を悪用した機密情報漏洩のリスクを解説し、従来とは異なる対策の必要性を説いています。",
+    "summaryBody": "Kubernetes上のAIエージェントが直面するセキュリティの特異性を分析した記事です。GoogleのAbdel Sghiouar氏は、AIエージェントへの攻撃を「プロンプト・インジェクション」ではなく「プロンプト・ポイズニング」と呼ぶべきだと提唱しています。これは、LLMが命令とデータをSQLのように分離できないため、アプリケーションログなどの外部入力がそのまま攻撃命令として機能してしまうリスクを指します。多くのチームがエージェントに「読み取り専用」権限を付与して安心していますが、これはクラスターの破壊を防ぐだけで、シークレットや環境変数の読み取りと漏洩は防げません。対策として、IaCチェックやシークレットスキャンといった既存のセキュリティに加え、意図的に汚染されたデータを入力して挙動を確認する「AIペンテスト」や、人間による最終確認（Human-in-the-loop）の重要性が強調されています。",
+    "topics": [
+      "Kubernetes",
+      "AI Security",
+      "Prompt Poisoning",
+      "RBAC",
+      "LLM Vulnerabilities"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "AI agent security in Kubernetes: Why prompt injection isn't the right term"
+  }
+}

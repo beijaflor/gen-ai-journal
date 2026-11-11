@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:51:58.243177+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った",
+    "url": "https://zenn.dev/tokium_dev/articles/adr-authoring-guideline",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIが生成するADRが情報の混濁や詳細への埋没により可読性を損なう問題に対し、過去のレビューから抽出した32の規約をガイドライン化し、人間とAI双方のレビュー精度を向上させた実践記録。",
+    "summaryBody": "AIを用いた開発において、意思決定を記録するADR（Architecture Decision Record）のドラフト作成をAIに任せるケースが増えている。しかし、明確なルールがない状態では、AIが「タスク管理を混同する」「実装の詳細まで書き込む」「背景が不明瞭」といった、人間にとって読みづらい文書を量産してしまう課題があった。著者はこの問題を解決するため、過去の34本のPRと830件のレビューコメントを精査し、そこから抽出された頻出の指摘事項を32の規約に整理したガイドラインを策定。各規約にIDと強度（MUST/SHOULD）を付与し、抽象度を判断するための「問い」や作例によるOK/NG例を完備した。さらに、このガイドラインをAIレビュー（CI）やClaude Code等のツールに組み込むことで、AIが規約に基づいた的確な指摘を行える環境を構築。これにより、人間のレビュアーが「書き方の修正」ではなく「意思決定の妥当性」という本質的な議論に集中できる体制を実現している。",
+    "topics": [
+      "ADR",
+      "ドキュメンテーション",
+      "AI駆動開発",
+      "エンジニアリングマネジメント",
+      "GitHub Actions"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

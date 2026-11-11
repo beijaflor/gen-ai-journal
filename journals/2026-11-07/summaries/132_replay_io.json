@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:29:09.465323+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "バグのないWebアプリの終焉：Replay QAによる完璧なオブザーバビリティ",
+    "url": "https://replay.io/blog/an-end-to-buggy-web-apps",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "タイムトラベルデバッガーを活用した「Replay QA」により、Webアプリのバグ検出から根本原因の特定、修正までをAIエージェントで自動化する新たなアプローチが提示されました。",
+    "summaryBody": "Replay社は、ChromiumとNode.jsをフォークして開発したタイムトラベルデバッガーを基盤とする「Replay QA」の一般提供を開始しました。この技術は、アプリの非決定的な入力を記録し、決定論的に再実行することで「完璧なオブザーバビリティ」を実現します。AIエージェントは、推測ではなく正確な実行データ（実行された全ステートメント、状態変化、依存関係）に基づいてバグの根本原因を特定できるようになります。\n\n主な特徴と実績：\n- **自動化されたデバッグ**: ユーザーセッションの再現や自律的な探索により、機能不全、レイアウトシフト、セキュリティホールなどの多様なバグを検出。\n- **確実なエビデンス**: 従来のQAツールが表面的な事象のみを報告するのに対し、Replay QAはコードレベルの根本原因（例：ReactコンポーネントのonClickハンドラ欠落）を証拠と共に提示。\n- **高い検出力**: LovableやReplitなどのツールで作成された40個のアプリをテストし、900件以上のバグを特定。\n\nこのツールにより、AI駆動の開発ライフサイクル（SDLC）における「推測による修正」を排除し、信頼性の高い自動修正環境の構築を目指しています。",
+    "topics": [
+      "Replay QA",
+      "Time Travel Debugging",
+      "Observability",
+      "AI Agent",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "An end to buggy web apps"
+  }
+}

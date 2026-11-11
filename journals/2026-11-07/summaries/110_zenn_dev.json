@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:51:19.202368+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました",
+    "url": "https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ZennがOpenCodeとDockerを活用し、GitHub Actions上でPRごとのAIレビューと週次の自動ペネトレーションテストを実行する高度なセキュリティ自動化基盤を構築。",
+    "summaryBody": "Zenn開発チームによる、AIエージェントを活用した自律的セキュリティ診断システムの導入事例です。プルリクエスト時のAIコードレビューに加え、週次で実行される動的なペネトレーションテストの仕組みを解説しています。主な技術的特徴として、まずGitHub ActionsとDockerを組み合わせ、ネットワーク隔離されたサンドボックス環境でAIエージェント（OpenCode）を動作させることで安全性を担保しています。テスト手法では、NucleiやOWASP ZAP、Playwright等のツールをAIが操作し、認可不備や脆弱性を能動的に探索。本番環境ではなくOSSエミュレータ（fake-gcs-server等）を用いたローカル環境を対象としています。また、Fireworks AIのオープンウェイトモデルを採用することで、1回数円〜数十円という低コスト運用と、セーフガードに縛られない柔軟なテストを両立。さらにAI分類器によるコマンド承認プラグインを自作し、エージェントの暴走リスクを低減する多重ガードを実装しています。AIを「攻撃者」としてシミュレーションさせることで、人間による診断を補完し、迅速な脆弱性検知と修正のサイクルを実現しています。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティ",
+      "GitHub Actions",
+      "Docker",
+      "OpenCode"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 93
+    }
+  }
+}

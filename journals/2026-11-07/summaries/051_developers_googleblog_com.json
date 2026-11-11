@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:11:42.816209+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cost per task: 廉価な分類器を用いたGeminiモデルと推論レベルのルーティング最適化",
+    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントの運用において、トークン単価ではなく「成功タスクあたりのコスト」を最小化するため、Jevなどの高速分類器を用いてGeminiの推論レベルを動的に制御する手法を解説。",
+    "summaryBody": "Google Developers Blogによるこの記事は、自律型エージェントの経済性を改善するための「モデルルーティング」戦略を提案しています。主な論点は以下の3点です。第一に、トークン制限（maxOutputTokens）は推論コストの削減には寄与せず、代わりに`thinkingLevel: \"LOW\"`などの設定を直接制御すべきであること。第二に、正規表現や文字数による単純なルーティングは未知のタスクに弱く、Jevのような構造化出力を提供する軽量分類器で「二値判断（Noul）」を行う方が高精度であること。第三に、ルーティングはコストを下げますが、コンテキストキャッシュの効果を打ち消す可能性があるため、短く独立したタスクに限定して適用するのが望ましいとしています。ベンチマークでは、Gemini 3.5 Flash-Liteと3.8 Flash（Low推論）を組み合わせることで、精度を維持しつつコストとレイテンシを最適化できることが示されました。",
+    "topics": [
+      "Gemini",
+      "LLM Routing",
+      "Cost Optimization",
+      "AI Agents",
+      "Jev"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels"
+  }
+}

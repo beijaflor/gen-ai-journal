@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:21:38.320207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Survival AI (IA da Sobrevivência) - インターネット不要のオフラインサバイバル支援AIアシスタント",
+    "url": "https://github.com/sdalberto/ia-da-sobrevivencia/blob/main/README.en.md",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "災害時やオフライン環境でも、ローカルLLMとKiwixライブラリを組み合わせて医療や生存技術などの膨大な知識を検索・回答できる、オープンソースのサバイバル支援ツール。",
+    "summaryBody": "Survival AIは、インターネット、電力、インフラが停止した極限状況でも、PCやUSBメモリさえあれば動作するように設計されたオフライン専用のAIアシスタントです。llama.cppやOllamaを活用したローカルLLM（Qwen2.5等）と、Wikipediaや医療マニュアル、iFixitなどのオフライン百科事典「Kiwix (.zimファイル)」を連携させ、BM25アルゴリズムを用いたRAG（検索拡張生成）によって、出典に基づいた確実な知識を提供します。水、火、食料、応急処置、無線通信、コミュニティ運営など、生存に不可欠なガイドがあらかじめ同梱されているほか、ユーザーが所有するテキストファイルを追加してインデックス化することも可能です。Python標準ライブラリをベースに構築されており、ローカルネットワーク経由でスマートフォンのブラウザからアクセスすることもできるため、災害時のナレッジ共有拠点として機能します。",
+    "topics": [
+      "サバイバル",
+      "ローカルLLM",
+      "RAG",
+      "Kiwix",
+      "防災"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Survival AI (IA da Sobrevivência) A survival assistant that works 100% without internet — on Windows, Linux and macOS."
+  }
+}

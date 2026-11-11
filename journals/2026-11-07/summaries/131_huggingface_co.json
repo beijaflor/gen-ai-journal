@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:29:21.932954+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Moonshot AI、2.8兆パラメータのオープンウェイトモデル「Kimi-K3.1-Pro」をリリース",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Kimi-K3.1-Proは、2.8兆の総パラメータ（活性104B）と100万トークンのコンテキスト窓を備え、コーディング、推論、エージェント能力に特化した強力なオープンウェイトのマルチモーダルMoEモデルです。",
+    "summaryBody": "Moonshot AIが公開した「Kimi-K3.1-Pro」は、MoE（Mixture-of-Experts）アーキテクチャを採用した最新のネイティブ・マルチモーダル・モデルです。総パラメータ数2.8T、活性パラメータ数104Bという巨大なスケールを誇り、100万トークンの超長文脈ウィンドウに対応しています。\n\n主な技術的特徴と評価は以下の通りです：\n- **高度なアーキテクチャ**: Gated DeepSeek Sparse Attention (Gated DSA) を採用し、効率的な長文脈処理を実現。Vision EncoderにはMoonViT-V2（401M）を使用しています。\n- **圧倒的なパフォーマンス**: SWE Marathon、OSWorld V2.1、GPQA-Diamondなどのベンチマークにおいて、Claude 3.5 OpusやGPT-4クラス（Astra）に匹敵、あるいは特定の指標で上回る性能を記録しています。特にコーディングとエージェントタスクでの強みが顕著です。\n- **柔軟な利用形態**: vLLM、SGLang、TokenSpeedなどの推論エンジンをサポート。また、推論時の思考の深さを指定する「reasoning_effort」オプションが提供されています。\n- **可用性**: Hugging Faceでのオープンウェイト公開に加え、同社のAPIプラットフォームでも提供されています。",
+    "topics": [
+      "Kimi",
+      "Moonshot AI",
+      "LLM",
+      "MoE",
+      "Multimodal"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "moonshotai/Kimi-K3.1-Pro · Hugging Face"
+  }
+}

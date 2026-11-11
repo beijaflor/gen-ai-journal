@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:54:26.045214+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "EmDash Buildに見る、Workers for Platformsを使ったマルチテナントWebサイトホスティング",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/02_1655.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflare EmDash Buildの内部構造を紐解き、Workers for Platformsを活用した効率的かつセキュアなマルチテナントWebホスティングの実現手法を解説する記事です。",
+    "summaryBody": "Cloudflareが発表したAIサイト構築ツール「EmDash Build」のアーキテクチャを詳細に分析した技術ブログです。主な特徴は、Workers for Platformsを中核に据えたマルチテナント・ホスティングの構成にあります。\n\nシステムは、全リクエストの入り口となる「Dispatch Worker」、サイトごとに実運用される「Live Worker」、そしてリリース前の検証用である「Candidate Worker」の3層構造で設計されています。ホスト名に基づいた動的なルーティングにより、各テナントの環境を論理的に分離しつつ、共通のインフラ上で効率的に管理する仕組みが整えられています。\n\nまた、Cloudflare Sandboxによるビルド、R2への成果物保存、Durable Objectsによる状態管理、AI Gatewayの利用など、Cloudflareのエコシステムをフル活用したSaaS基盤の構築例として、エンジニアにとって非常に参考になる内容となっています。単なるツール紹介を超え、スケーラブルなWebサービス設計のベストプラクティスを提示しています。",
+    "topics": [
+      "Cloudflare",
+      "Workers for Platforms",
+      "EmDash",
+      "マルチテナント",
+      "サーバーレスアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 88
+    }
+  }
+}

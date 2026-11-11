@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:19:06.288055+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "EmDash on CloudflareでWebサイトを公開してClaudeからAIで更新してみた #ClaudeCode",
+    "url": "https://qiita.com/tamaoki_t/items/d68f0cf4883100546e7b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "CloudflareのサーバーレスCMS「EmDash」をデプロイし、ClaudeのMCP機能を使ってAIからWebサイトのコンテンツを安全に更新・公開する実践的な手順を解説しています。",
+    "summaryBody": "CloudflareがWordPressの「精神的後継」として開発したサーバーレスCMS『EmDash』の導入からAI連携までを網羅した詳細なチュートリアルです。EmDashはAstro、Workers、D1、R2を基盤としており、ゼロスケールによるコスト最適化と、サンドボックス化されたプラグインによる高い安全性が特徴です。記事では、Windows環境でのプロジェクト作成、Cloudflare Accessによる管理画面の保護、そしてAnthropicが提唱するMCP（Model Context Protocol）を介してClaudeを「カスタムコネクタ」として接続する方法をステップバイステップで説明しています。これにより、自然言語の指示だけで記事の取得・下書き更新・公開というフローを、ブラウザ操作なしで完結させる構成を実現しています。環境構築時のハマりどころや、OAuth認証のバイパス設定など、実用的なトラブルシューティング情報も充実しています。",
+    "topics": [
+      "EmDash",
+      "Cloudflare Workers",
+      "Claude",
+      "MCP (Model Context Protocol)",
+      "Serverless CMS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

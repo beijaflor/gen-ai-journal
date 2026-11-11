@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:20:22.421713+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIルールだけでは守られない規約を、自作lintで縛るようにした",
+    "url": "https://zenn.dev/zoma/articles/72011082f2b1b7",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIへの指示（AIルール）だけでは限界がある規約遵守を、AIを活用して自作したlintルールで機械的に強制し、開発サイクルを改善した事例紹介。",
+    "summaryBody": "AIにコードを書かせる際、自然言語による「AIルール」だけでは規約が守られない課題に対し、著者は「lintによる機械的な制約」という基本に立ち返りました。以前はASTの理解が必要でハードルの高かったカスタムlint作成も、現在はBiomeのGritQLやAI自身の補助により、プロジェクト固有の規約を容易に自動化できる点に注目しています。記事では、Container層での表示文言禁止やディレクトリ配置、通知文言の統一などの具体的な導入例、およびAIルール（設計原則）とlint（機械制約）の役割分担について解説しています。AIエージェント自身がlintエラーを受けて自己修正するワークフローを構築することで、人間によるレビュー負荷を軽減し、開発のフィードバックループを前倒しする実践的なアプローチを提案しています。",
+    "topics": [
+      "AIコーディング",
+      "Linter",
+      "Biome",
+      "GritQL",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

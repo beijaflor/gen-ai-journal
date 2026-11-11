@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:23:41.375219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自動モデルルーティングへの信頼を築くために必要なこと",
+    "url": "https://www.oreilly.com/radar/what-it-takes-to-trust-automatic-model-routing/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI開発においてコストと性能のバランスを最適化する「自動モデルルーティング」に対し、開発者が信頼を置くために必要な透明性、制御、およびコンテキスト管理の重要性を論じている。",
+    "summaryBody": "この記事では、最新のAIモデルを試したいという開発者の欲求と、限られた予算内で効率的に作業を進めたいというニーズを両立させる「自動モデルルーティング」について深く考察しています。RouteLLMやSWE-Routerなどの研究を引用しながら、ルーティングが単なるコスト削減手段ではなく、タスクの難易度に応じて適切なリソースを配分する戦略であることを示しています。筆者は、モデル単体の性能よりも、リポジトリ探索やテスト実行を行う「ハーネス（基盤ソフトウェア）」とモデルの連携が重要であると強調。さらに、開発者がAIの提案を信頼するためには、どのファイルが参照され、どのテストが実行されたのかという活動履歴や、トークン消費量、コンテキストの透明性が不可欠であると説いています。最終的に、日常的な判断はシステムに任せつつ、困難な課題では人間が手動で高性能モデルを選択できる「適度な制御」こそが、AIアシスタントとの信頼構築の鍵であると結論づけています。",
+    "topics": [
+      "LLM Routing",
+      "AI Coding Assistants",
+      "Cost Optimization",
+      "Developer Experience",
+      "Context Management"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 88
+    },
+    "originalTitle": "What It Takes To Trust Automatic Model Routing"
+  }
+}

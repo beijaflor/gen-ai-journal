@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:53:39.412984+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI エージェントがデスクトップアプリを操作する CLI agent-desktop",
+    "url": "https://azukiazusa.dev/blog/agent-desktop-computer-use-cli/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Vercel Labsが公開した、OSのアクセシビリティツリーを介してデスクトップアプリを操作するAIエージェント向けCLI「agent-desktop」の紹介と、Claude Codeによる自動バグ修正の実践を解説する記事。",
+    "summaryBody": "「agent-desktop」は、macOS、Windows、Linuxに対応した、AIエージェント向けのComputer Use用CLIツールです。従来のスクリーンショットとピクセル座標による推定方式とは異なり、OSのアクセシビリティAPI（AX、UIA、AT-SPI）から取得したUI構造をJSONとして読み取り、要素に割り当てられたrefを使用して操作を行います。これにより、動作の高速化とトークン消費の抑制、操作精度の向上が実現されています。記事では、基本的なコマンド体系の解説に加え、SwiftUIで作成した架空の経費管理アプリに対して、Claude Codeが自律的にUIテストを実行し、計算ロジックのバグを特定・修正するワークフローの実例が示されています。AIエージェントがネイティブアプリを直接ビルド・操作して品質保証を行う、新しい開発スタイルの可能性を提示しています。",
+    "topics": [
+      "agent-desktop",
+      "Claude Code",
+      "AIエージェント",
+      "Computer Use",
+      "SwiftUI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

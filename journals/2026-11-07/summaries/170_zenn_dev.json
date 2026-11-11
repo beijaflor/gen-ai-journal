@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:19:45.339154+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成コードを本番品質に保つためのフロントエンド開発の仕組み",
+    "url": "https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AI生成コードの品質はプロンプトよりも「外側の仕組み」で決まるという考えに基づき、コンテキスト管理、機械的なガードレール、自動テスト、レビューの4層で品質を担保する手法を解説。",
+    "summaryBody": "AIによる「仕様の勝手な推測」や「プロジェクト規約からの逸脱」を防ぐための多層的な開発フレームワークを提案しています。具体的には、1. AGENTS.mdを用いたコンテキストの明文化、2. TypeScriptやESLintの厳格な設定とエージェントフック（Claude Code等）による機械的な即時チェック、3. 仕様を起点としたテストコード（Vitest/Storybook/VRT）での振る舞いの固定、4. CIと人間による高レイヤーな判断を行うレビュー体制、の4層構造を紹介。AIの生産性を享受しつつ、半年後もメンテナンス可能な本番品質のコードを維持するための具体的なコード例や設定ファイルが網羅されています。",
+    "topics": [
+      "AI生成コード",
+      "フロントエンド開発",
+      "Next.js",
+      "TypeScript",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

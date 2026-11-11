@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:17:15.216329+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Verify, Then Vote — 小規模LLM群の回答を検証し多数決の精度を向上させる新たな手法",
+    "url": "https://blog.grainulation.org/verify-then-vote/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "5つの小規模ローカルLLMの回答を引用元に基づいて検証・選別することで、単純な多数決よりも高い回答精度を実現する手法「Verify, Then Vote」が提案されました。",
+    "summaryBody": "5つの小規模なローカルLLM（Llama 3.2 3B, Mistral 7B, Gemma 2 2B, Phi-3 mini, Qwen 2.5 3B）を並列に実行し、各モデルが生成した回答とその根拠（Wikipedia等のソース）の整合性を外部モデル（Claude 3.5 Sonnet）でチェックした上で最終回答を決定するパイプラインを提案。単純な多数決では防げない「モデル間での共通の誤り」をソース検証によって排除し、実験では回答精度を77.1%から85.0%へと改善しました。回答生成、検証、選択のプロセスを独立して保存することで、追加のAPIコストをかけずに意思決定ルールのみを高速に再試行（リプレイ）できる点が特徴です。また、選択ルールの論理性は形式証明言語Lean 4を用いて数学的に検証されています。",
+    "topics": [
+      "LLM Ensemble",
+      "Local LLMs",
+      "Source Verification",
+      "Lean 4",
+      "Model Evaluation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Verify, Then Vote — Grainulation Blog"
+  }
+}

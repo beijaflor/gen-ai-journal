@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:49:27.823484+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人情報を扱う常駐型AIエージェント「Muse」のセキュリティの仕組み",
+    "url": "https://note.com/npaka/n/ncccb2783a262",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Metaの常駐型AIエージェント「Muse」が、個人情報や認証情報を安全に扱うために採用している専用VM、権限分離、ユーザー承認フローなどの多層的なセキュリティアーキテクチャの解説。",
+    "summaryBody": "Metaが開発する常駐型AIエージェント「Muse」のセキュリティ設計に関する技術解説です。Museはメール管理や買い物などを自律的に行いますが、高い利便性と引き換えに住所や決済情報などの機密情報を扱います。このリスクに対し、Metaは主に以下の仕組みを導入しています。\n\n- **Muse Secure VM**: ユーザーごとに独立したLinux仮想マシンを用意し、実行環境を完全に隔離。\n- **認証情報の分離 (hatch-authd)**: パスワードやAPIキーをAIから直接見えない場所に保管し、通信時のみ代理トークンを本物に置き換える。\n- **操作権限の制御 (Sentinel & privsep)**: AIの要求を監視し、特定のドメインへの通信や重要操作を制限。特に購入などの重大なアクションは「Human in the Loop」により、独立したUIでユーザーの承認を必須化。\n- **決済保護**: Stripe Linkとの連携による使い捨てカード番号の発行で、決済情報漏洩時の被害を最小化。\n\n現在はMetaの従業員がポリシーに基づきアクセス可能な状態ですが、将来的には暗号技術により運営者すらアクセス不能にする「Confidential VM」の導入も計画されています。プロンプトインジェクションは依然として完全な解決が難しい課題とされていますが、実行環境の分離などの多重防御でリスク低減を図っています。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティアーキテクチャ",
+      "プライバシー保護",
+      "Meta",
+      "Muse"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}
