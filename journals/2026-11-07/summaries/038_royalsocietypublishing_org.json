@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:07:08.144335+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "文化的バイアスか、普遍的特性か？大規模言語モデルのパーソナリティ様プロファイルの探究",
+    "url": "https://royalsocietypublishing.org/rsos/article/13/9/rsos252491/483310/Cultural-bias-or-universal-traits-Exploring",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新のLLM5種を対象に性格診断を実施した結果、共通して向社会的な傾向を示す一方で、使用言語や開発元の文化的背景によってプロファイルに体系的な差異が生じることが明らかになりました。",
+    "summaryBody": "### 研究の目的と手法\n本研究は、大規模言語モデル（LLM）が持つ「性格」の一貫性と、それが文化的・言語的に中立であるかを検証しました。評価対象として、ChatGPT-4o、Gemini 2.0 Flash、DeepSeek-V3、Ernie 3.5、Le Chatの5つのモデルを選定。「Big Five Inventory–2」および「Dark Triad Dirty Dozen」という標準的な心理学尺度を用い、英語・中国語・フランス語の3言語で評価を行いました。\n\n### 主な分析結果\n- **普遍的な向社会的プロファイル**: 全てのモデルにおいて、高い「協調性」と「誠実性」、低い「負の感情性」および「ダーク・トライアド（マキャベリズム等）」という、一貫してポジティブな性格傾向が見られました。\n- **言語と出自によるバイアス**: 性格表現は、評価に使用した言語やモデルの開発元の文化的背景に依存します。欧米モデルは英語入力時に、中国モデルは中国語入力時に、より顕著な特性を示しました。\n- **人間データとの乖離**: いずれのモデルも対象国の人間集団の平均的な性格分布を完全には模倣しておらず、特に中国モデルにおいて文化的乖離が顕著でした。\n\n### 結論と示唆\nLLMの応答には比較的安定した性格的特徴が存在しますが、それは評価言語や開発コンテキストによって変化します。この結果は、AIシステムの公平性や、AIが持つ「心理的な刷り込み」がユーザーに与える影響について慎重な検討が必要であることを示唆しています。",
+    "topics": [
+      "LLM",
+      "性格診断",
+      "文化的バイアス",
+      "Big Five",
+      "心理学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 90
+    },
+    "originalTitle": "Cultural bias or universal traits? Exploring personality-like profiles of large language models"
+  }
+}

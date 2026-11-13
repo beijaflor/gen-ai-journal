@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:09:56.747457+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Figmaを正解にアプリのUIを点検する、Claude Codeで作るUI差分検知",
+    "url": "https://techblog.zozo.com/entry/detect-figma-ui-diff-with-ai",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeのSkillを活用し、Figmaのデザイン画像と実機のスクリーンショットからUI構造を抽出・比較することで、微細な文言や配置の差異を自動検知・修正する仕組みの試作報告。",
+    "summaryBody": "### 概要\nZOZOの開発チームが、Claude CodeのSkill機能を活用してFigmaのデザインとアプリの実装画面の差分を自動検知する仕組みを開発しました。従来、人力で行っていたUIの整合性確認を、マルチモーダルLLMによる構造分析で効率化する試みです。\n\n### 実現方法\n3つのカスタムSkill（構造抽出、差分比較、レポート出力）を構築。画像を直接比較するのではなく、一度JSON形式の構造データに変換してから比較を行う「構造比較型」を採用することで、認識結果の可視化と再比較の容易性を確保しています。ピクセル単位の比較ではなく、要素の有無や文言の不一致といった「ユーザー体験に影響する差異」の特定に特化しています。\n\n### 検証結果と課題\n検証用アプリを用いた実験では、文言の微細な違いや要素の欠落、並び順の相違を正確に検知し、Claude Codeによる自動修正までの一連の流れを確認しました。一方で、100枚程度の処理に相応のAPIコスト（約38ドル）と実行時間を要する点や、CI環境での自動化、機密情報の取り扱い方針の策定が今後の実運用に向けた課題として挙げられています。",
+    "topics": [
+      "Claude Code",
+      "Figma",
+      "UI品質管理",
+      "Android",
+      "マルチモーダルLLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

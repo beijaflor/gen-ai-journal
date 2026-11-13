@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:12:10.113160+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent-Desktop: アクセシビリティツリーを利用したAIエージェント向けPC操作CLI",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "スクリーンショットや画像認識に頼らず、OSのアクセシビリティツリーを介してAIエージェントがデスクトップアプリを正確に操作できるようにするCLIツール。",
+    "summaryBody": "Vercel Labsが開発した「agent-desktop」は、AIエージェントがmacOS、Windows、Linux上のアプリケーションを操作するためのインターフェースを提供します。最大の特徴は、従来の画像認識（Computer Use）ではなく、OSのアクセシビリティAPIを利用してUI構造を解析する点です。UI要素をJSON形式のツリーとして取得し、各要素に一意の「ref ID」を割り当てることで、AIはピクセル座標を計算することなく確実なクリックやテキスト入力が可能です。60以上のコマンド、MCP (Model Context Protocol) サーバー機能、C言語ライブラリ（FFI）を提供しており、ヘッドレス動作による自動化や既存のエージェントフレームワークへの統合が容易に設計されています。",
+    "topics": [
+      "AI Agent",
+      "Computer Use",
+      "Accessibility API",
+      "Automation",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - vercel-labs/agent-desktop: Computer use CLI for AI agents"
+  }
+}

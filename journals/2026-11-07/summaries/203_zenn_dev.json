@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:11:59.507274+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeからPremiere Proを290回動かして、53分のPodcastを全自動編集してみた",
+    "url": "https://zenn.dev/salt2/articles/2b6e403e059b10",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeと自作のCEPブリッジを組み合わせ、スクリプト制御とComputer Useを併用することで、53分の3カメ収録Podcastの本編編集と20本のショート動画制作をほぼ全自動化した事例報告。",
+    "summaryBody": "この記事では、Claude Codeを使用してAdobe Premiere ProとAfter Effectsを操作し、大規模なポッドキャスト編集を自動化した技術スタックとワークフローが解説されています。主な手法として、Premiere内部でHTTPサーバーを起動する自作のCEP拡張（ブリッジ）を介してClaude CodeからExtendScriptを実行する仕組みを構築。スクリプトで対応できないGUI操作はCodexのComputer Useで補完しています。素材の同期にはPythonでのFFT相互相関、文字起こしにはmlx-whisperを使用し、860枚以上の字幕配置やテロップ作成、カット編集を2.5日で完結させています。HDR素材の扱いやMOGRTの動的更新、BudouXを用いた読みやすい改行アルゴリズムなど、実戦的なハマりどころと解決策も詳述されており、AIエージェントによる動画編集の高度な自動化の可能性を示しています。",
+    "topics": [
+      "Claude Code",
+      "Premiere Pro",
+      "After Effects",
+      "ExtendScript",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:27:25.430166+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにいきなり実装させない — kintoneカスタマイズ開発Skillのヒアリング設計",
+    "url": "https://zenn.dev/genda_jp/articles/a5cbba3664748b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "kintoneのJavaScriptカスタマイズをAIで行う際、実装前の「要件ヒアリング」を仕組み化することで手戻りを防ぎ、開発効率を最大化する設計手法を紹介。",
+    "summaryBody": "GENDA社におけるClaude Agent Skillsを用いたkintone開発の自動化事例。ヒアリングからデプロイまでを6フェーズで構成し、特に「実装前に何を確定させるか」に焦点を当てています。ヒアリングを2段階（目的把握と詳細確認）に分け、エッジケースや非機能要件などの抜けがちな項目を固定。また、MCPサーバーを活用してAIが直接アプリ構成を把握することで、ユーザーが技術用語やフィールドコードを意識せずに回答できる設計を構築しています。1問1答形式や選択肢提示により回答負荷を下げるなど、実戦的なプロンプト設計のノウハウが凝縮されています。",
+    "topics": [
+      "kintone",
+      "Claude",
+      "AIエージェント",
+      "MCP (Model Context Protocol)",
+      "要件定義"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

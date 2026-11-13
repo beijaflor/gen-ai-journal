@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:09:40.184387+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "root 権限への経路を 1,000 件削減",
+    "url": "https://openai.com/ja-JP/index/a-thousand-fewer-paths-to-root/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが、インフラの安全性を高めるために特権昇格の経路を1,000件以上特定・排除したセキュリティの取り組みについて詳述しています。",
+    "summaryBody": "OpenAIは、同社のコンピューティング環境におけるセキュリティを強化するため、root権限（最高管理権限）への不要なアクセス経路を大幅に削減するプロジェクトを実施しました。攻撃者がシステム内に侵入した際に特権を奪取するリスクを最小化することを目的としており、具体的には1,000件以上の脆弱な設定や経路を排除しました。このプロセスでは、最小特権の原則（PoLP）に基づき、sudo権限の厳格な管理や、自動化されたスキャンツールによる継続的な監視体制が構築されました。大規模なAI開発環境における攻撃対象領域（アタックサーフェス）を縮小させるための、実践的なインフラセキュリティのケーススタディとなっています。",
+    "topics": [
+      "OpenAI",
+      "サイバーセキュリティ",
+      "特権昇格",
+      "最小特権の原則",
+      "インフラ構成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    }
+  }
+}

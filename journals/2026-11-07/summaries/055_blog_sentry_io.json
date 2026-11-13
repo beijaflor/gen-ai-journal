@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:10:31.433271+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントとSentry MCPを活用したバックエンドパフォーマンスの最適化",
+    "url": "https://blog.sentry.io/performance-wins-traces-coding-agent/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SentryのエンジニアがClaudeとSentry MCPを連携させ、自社のトレースデータを分析することで、週に数億件のクエリ削減と劇的なレスポンス向上を実現した事例を紹介しています。",
+    "summaryBody": "SentryのScott Cooper氏が、AIコーディングエージェント（Claude等）とSentry MCP（Model Context Protocol）を組み合わせて自社サービスのパフォーマンスを改善した手法を解説しています。\n\n### 概要と手法\nエージェントに自社のトレースデータへのアクセス権を与え、「クリティカルパスを見つけて最適化せよ」といった抽象的な指示から分析を開始。エージェントはスパンの実行頻度や所要時間に基づいてホットパスを特定し、関連するファイルやコード行を抽出しました。\n\n### 改善のプロセスと検証\nエージェントは単にコードを提案するだけでなく、読み取り専用のデータベースミラーで `EXPLAIN ANALYZE` を実行し、修正前後のクエリ性能を比較検証しました。また、Git履歴を確認して変更のリスクを評価し、最終的にGitHubのドラフトPRを作成するまでを自動化しました。\n\n### 主な成果\n- **クエリ削減**: 特定のパスで不要なSELECTを週に約1億4300万件削減。\n- **劇的な高速化**: GroupHistoryのルックアップクエリを最適化し、935msから0.4ms（2300倍以上）へ改善。\n- **書き込み効率化**: キャッシュの更新を1件ずつからバルク処理に変更し、51msから1.2msに短縮。\n\nトレースデータをAIエージェントのコンテキストとして活用することで、大規模なコードベースにおいても「最小の変更で最大の効果を得る」改善が効率的に行えることを実証しています。",
+    "topics": [
+      "AI Coding Agent",
+      "Sentry",
+      "Performance Optimization",
+      "Model Context Protocol (MCP)",
+      "Database Tuning"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Finding backend performance wins with a coding agent | Sentry Blog"
+  }
+}

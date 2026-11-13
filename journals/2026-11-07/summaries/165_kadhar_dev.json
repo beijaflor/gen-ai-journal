@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:21:02.349788+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マルチエージェントシステムの構築：3つの主要パターンを分かりやすく解説",
+    "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントを分割して連携させる際の3つの基本パターン（パイプライン、オーケストレーター、ブラックボード）の仕組み、利点、そして実運用での落とし穴を具体例とともに解説しています。",
+    "summaryBody": "AIエージェントの設計において、単一のエージェントからマルチエージェントシステム（MAS）へ移行する際の判断基準と、主要な3つの設計パターンを解説した記事です。\n\n- **Pipeline（パイプライン）**: 組立ラインのように各エージェントが固定の順序で処理を行う。手順が明確な場合に最適。\n- **Orchestrator（オーケストレーター）**: 主導的なエージェントがタスクを計画・分担し、ヘルパーの出力を統合する。動的なリサーチ等に向く。\n- **Blackboard（ブラックボード）**: 共通の作業スペースを全エージェントが参照し、各自が知見を書き込む。デバッグなど、次に何が起こるか予測できない場合に有効。\n\n著者は自身のプロジェクト「Stormwise」での失敗談を交え、データの誤伝播や無限ループ、コスト増大といった実運用の課題を指摘しています。対策として、コードによるデータ検証、ホップ制限、一元化された予算管理などの「ガードレール」を導入することを推奨し、不必要な複雑化を避けるため「まずは単一エージェントから始めること」を強調しています。",
+    "topics": [
+      "AIエージェント",
+      "マルチエージェントシステム",
+      "ソフトウェアアーキテクチャ",
+      "LLM運用",
+      "設計パターン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Building a Multi-Agent System: 3 Patterns, Explained Simply"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:14:20.303800+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ldraw-mecha: AIエージェントによるLEGOメカニズムのBlenderアニメーション自動生成ツール",
+    "url": "https://github.com/anteloc/ldraw-mecha/tree/v0.5.0",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LDraw形式のLEGOモデルをAIエージェントが解析し、Blender上でのリグ構築とアニメーション用Pythonコードを自動生成する革新的なツールセットです。",
+    "summaryBody": "ldraw-mechaは、LEGOのCAD規格であるLDrawのモデルデータ（.mpd）をAIエージェントに読み込ませ、その機構をリバースエンジニアリングしてBlenderで動かすためのオープンソースプロジェクトです。AIがモデルのソースコードから「どのパーツがどの機構を構成しているか」を推論し、部品間の相互作用を計画した上で、Blender上でリグを構築してアニメーションを実行するPythonスクリプトを自動出力します。これにより、複雑なLEGOテクニックなどの機構を、手動のリグ作業なしで動かすことが可能になります。現在はmacOS、Linux、Windows(WSL2)環境に対応しており、Claude 3.5 SonnetなどのLLMを利用して高度な推論プロセスを実現しています。",
+    "topics": [
+      "LEGO",
+      "AI Agents",
+      "Blender",
+      "LDraw",
+      "Reverse Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 60,
+      "overall": 88
+    },
+    "originalTitle": "GitHub - anteloc/ldraw-mecha at v0.5.0"
+  }
+}

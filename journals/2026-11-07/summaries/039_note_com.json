@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:14:42.919785+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GPUで動いてるLLMの中でCPUが動く?・・・何を言ってるかわからねえと思うが、とにかくQwenputerを追試して分かったこと、分からなかったこと",
+    "url": "https://note.com/shi3zblog/n/nadf4c6873d6d",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの内部状態をRAM、重みを論理回路として利用し、RISC-V CPUを埋め込んだ「Qwenputer」の仕組みと動作検証、および微分可能性に関する課題をまとめたレポート。",
+    "summaryBody": "著者のshi3z氏による、LLM内部に32bit RISC-V CPUをコンパイルして埋め込んだモデル「Qwenputer」の追試記録です。主な内容は以下の3点に集約されます。\n\n1. **アーキテクチャの特異性**: Qwen3.5のGated DeltaNetが持つ「デルタルール」をメモリ（RAM）の読み書きに応用し、RISC-Vの命令セットをニューラルネットワークの行列演算として記述（論理合成）することで、学習ではなくコンパイルによってCPU機能を重みに実装しています。\n2. **動作の再現性**: 著者はデルタルールがRAMとして高い精度で動作すること、およびRISC-Vの実行ファイルがトークン生成プロセスとして正しく実行され、基準実装と一致することを確認しました。\n3. **学習可能性の課題**: CPUの演算経路を介した逆伝播（自動微分）を試みた結果、出力ロジットの飽和や勾配の爆発・疎性が発生し、現状では勾配降下法による素直な学習は困難であることが判明しました。\n\nこの試みは、厳密な記号処理と柔軟なニューラルネットワークを同一の計算基盤上で融合させる、新しいニューロシンボリックAIの可能性を示唆しています。",
+    "topics": [
+      "Qwenputer",
+      "RISC-V",
+      "DeltaNet",
+      "ニューロシンボリックAI",
+      "論理合成"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

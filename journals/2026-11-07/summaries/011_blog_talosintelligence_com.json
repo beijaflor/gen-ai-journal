@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:22:16.528449+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる鑑定：インフォスティーラー「VOLTA」におけるモデル駆動型の被害者優先順位付け",
+    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "インフォスティーラー「VOLTA」は、LLMを利用して盗み出した被害者データを分析し、資産価値やセキュリティ耐性を自動的にランク付けする高度な機能を備えている。",
+    "summaryBody": "Cisco Talosは、LLM（大規模言語モデル）を統合して被害者の「収益化価値」を自動評価する新しいインフォスティーラー「VOLTA-AUTODOXER」の分析結果を公開しました。このマルウェアは、ブラウザの認証情報や暗号資産ウォレット等の標準的な窃取に加え、盗んだセッションを悪用してGmailの領収書やデリバリーサービスの注文履歴から住所を特定するなど、詳細なデータ収集を行います。収集されたデータは構造化され、OpenRouter経由でLLMに送信されます。LLMは「フォレンジック・インテリジェンス・アナリスト」として振る舞い、被害者の資産価値を3段階で評価し、セキュリティ意識の低さを指摘するレポートを生成します。特筆すべきは、AIの拒絶反応を回避するためにClaude、Kimi、Geminiを順に試行するフォールバック機能を備えている点です。これはAIが攻撃の「速度」や「規模」の向上だけでなく、これまで人間が行っていた「分析作業」という最もコストのかかる工程を代替（労力の置換）するために実戦投入されていることを示しています。",
+    "topics": [
+      "VOLTA",
+      "インフォスティーラー",
+      "LLM",
+      "サイバー犯罪",
+      "被害者プロファイリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 94
+    },
+    "originalTitle": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer"
+  }
+}

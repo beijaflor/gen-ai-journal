@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T15:59:10.606421+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI における Git のスケーリング",
+    "url": "https://openai.com/ja-JP/index/scaling-git-at-openai/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIは、数千人のエンジニアとAIエージェントによる大規模開発を支えるため、因果整合性とパックファイル再利用を軸とした新しいGitバックエンド「Pando」を構築しました。",
+    "summaryBody": "OpenAIのモノレポ規模とCodex等による開発速度の増大に対応するため構築された「Pando」の技術解説です。Pandoは、リポジトリ全体の一律な整合性をあえて放棄し、ブランチ単位の「因果整合性（Causal Consistency）」を採用することで、多数の同時プッシュを水平スケーリング可能にしました。フェッチ性能については、サーバー側での動的なパック生成を避け、不変のパックファイルをキャッシュから直接配信する「packfile-uri」を活用。これにより、計算コストを最小化しつつネットワーク帯域を最大限に活用したデータ転送を実現しています。また、ログ構造マージツリーに着想を得たバックグラウンドでの「コンパクション」により、無数の小規模パックを効率的に集約。導入後はプッシュのレイテンシーが80%減少し、1日1ペタバイトに達するGitデータの配信を少数のリソースで安定的に運用しています。",
+    "topics": [
+      "Git",
+      "Pando",
+      "スケーラビリティ",
+      "モノレポ",
+      "分散システム"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 98
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-08T01:16:30.006109+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI、Linuxカーネルから948件のローカル権限昇格バグを検出",
+    "url": "https://www.phoronix.com/news/OpenAI-948-Linux-LPE-Bugs",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIが自律型脆弱性発見AIを用いてLinuxカーネルを調査し、120万ドルのコストを投じて948件の有効なローカル権限昇格（LPE）脆弱性を特定した。",
+    "summaryBody": "OpenAIは、自律型エージェントによる脆弱性調査プロトタイプの能力を示すため、Linuxカーネルを対象とした大規模な解析を実施しました。同システムは2,308件の候補から1,724件を動的に再現し、最終的に948件のルート権限奪取が可能なエクスプロイトを生成することに成功しました。このプロセスには120万ドルの計算コストが費やされています。\n\n主なトピック:\n- **AIによる脆弱性発見**: 脆弱性特定からパッチ生成までを自律的に実施。\n- **セキュリティのパラダイムシフト**: 数年以内にAIが既存ソフトウェアの脆弱性を網羅的に発見できるようになると予測されており、今後は形式検証や「セキュア・バイ・デフォルト」な開発への投資が不可欠であると提言。\n- **モデルの性能差**: GPT-5.5 Cyberモデルが、その後のパッチ適用済みカーネルを対象としたGPT-5.6 Solよりも多くの新規バグを発見しており、AIとカーネル開発の激しい攻防が示唆されています。",
+    "topics": [
+      "OpenAI",
+      "Linux Kernel",
+      "Vulnerability Discovery",
+      "LPE",
+      "GPT-5"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "OpenAI Finds 948 Local Privilege Escalation Bugs In The Linux Kernel"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:18:21.589247+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Opus 5.5にレガシーコードの修正を相談したら想像以上に実践的な回答が得られた話",
+    "url": "https://qiita.com/rhaya/items/7a5ad00d2cfe486fc11b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年リリースのClaude Opus 5.5を用いて、複雑なレガシーコードの文字コード変換ロジックを修正し、原因分析やテスト設計、性能低下のトラブルシューティングまでを高い精度で完遂した事例報告。",
+    "summaryBody": "この記事では、Anthropicの次世代モデル「Claude Opus 5.5」を実務のレガシーコード保守に適用した体験が綴られています。具体的には、UnicodeからShift-JISへの変換処理における2バイト文字の判定不備という、影響範囲が読みづらい課題に対し、AIが単なるコード生成を超えた役割を果たしました。AIは現状のロジックがなぜ失敗しているかの深掘り、サロゲートペア等を考慮した安全な修正案の提示、既存コードの文脈に沿ったコメント追記、さらには境界値や性能を含めたテストケースの提案まで行いました。実施後に発生した70%の性能低下に対しても、AIが提示した仮説からOSのセキュリティ設定が原因であることを突き止めるなど、問題解決の相棒としての実用性が強調されています。",
+    "topics": [
+      "Claude 5.5",
+      "レガシーコード",
+      "LLM",
+      "システム保守",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

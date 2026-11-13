@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-04T16:02:32.065777+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIがChatGPTの無制限チャットを廃止する理由？MCPを活用した高度な開発自動化の試み",
+    "url": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "MCP（Model Context Protocol）とセキュアトンネルを活用し、通常のChatGPTを強力な並列開発エージェントへと変貌させた手法と、OpenAIの制限強化による影響を考察する記事。",
+    "summaryBody": "著者はOpenAIが提供する「Secure MCP Tunnel」と「Model Context Protocol (MCP)」を駆使し、通常のChatGPTチャットをローカルマシンのファイル操作やコマンド実行、GUI操作が可能な開発エージェントとして運用する手法を構築しました。具体的には、上位モデルで設計とタスク分割を行い、複数の通常チャット（当時は実質無制限）にGitHub Issueを割り当てて並列でコードを書かせるという、コストを抑えつつ高度な自動化を実現するワークフローです。Desktop CommanderやCUA（Computer Use Agent）といったツールを自前で統合し、ダッシュボードでの監視まで行っていましたが、OpenAIが無制限チャットの廃止とCodex利用との統合を発表したことで、この「使い倒し」のワークフローが困難になったと述べています。著者はこれを受け、より柔軟な利用が可能なClaudeへの移行を示唆しています。",
+    "topics": [
+      "OpenAI",
+      "MCP",
+      "AIエージェント",
+      "ソフトウェア開発",
+      "ChatGPT"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 85
+    },
+    "originalTitle": "I Am the Reason OpenAI Is Killing Unlimited Chats"
+  }
+}
