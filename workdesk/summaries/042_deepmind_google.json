@@ -1,31 +1,33 @@
 {
   "metadata": {
     "version": "1.0",
-    "generatedAt": "2026-11-15T01:41:24.356813+00:00",
+    "generatedAt": "2026-11-15T06:17:59.108780+00:00",
     "generatedBy": "gemini-3-flash-preview"
   },
   "content": {
-    "title": "解析不能なバイナリデータまたは破損テキスト",
+    "title": "AlphaProof Codeの発表：複雑なソフトウェアの深層形式検証における突破口",
     "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-    "language": "other",
-    "contentType": "📊 Industry News (業界ニュース)",
-    "oneSentenceSummary": "提供された入力データが文字化けしたバイナリ形式であり、有効な情報を抽出・要約することができません。",
-    "summaryBody": "入力されたテキストの内容を確認しましたが、大半が制御文字や文字化け（置換文字）で構成されており、言語的な意味をなさないバイナリデータの羅列となっています。これは、PDFやバイナリファイルが不適切なエンコードで貼り付けられた際によく発生する現象です。したがって、記事の内容に基づいた要約の生成、トピックの特定、および各指標のスコアリングを行うことが困難です。情報の抽出には、正しいエンコードでのテキスト提供が必要です。",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Google DeepMindは、AIエージェントを用いてSignalプロトコルの実装コードを数学的に検証する新フレームワーク「AlphaProof Code」を発表し、数年かかる形式検証を4週間に短縮しました。",
+    "summaryBody": "Google DeepMindは、大規模かつ複雑なソフトウェアのセキュリティ特性を数学的に証明するAIエージェントフレームワーク「AlphaProof Code」を発表しました。このフレームワークを用いて、世界で初めてSignalプロトコルの実装コード（コンパイル済みの実行コード）に対する深層形式検証に成功しました。\n\n主な技術的特徴と成果は以下の通りです：\n- **エージェントによる自動証明:** Gemini Carbon搭載のエージェントが、定理証明用言語「Lean」を用いて600万行以上の証明コードを生成。人間は仕様策定とわずか1%の重要箇所のレビューに集中できます。\n- **開発効率の劇的な向上:** 従来、専門家チームが数年を要していた複雑なプロトコルの検証を、わずか4週間で完了させました。既存のバグを再混入させたテストでも、正確に脆弱性を検知する能力が示されています。\n- **設計から実装への橋渡し:** 多くの形式検証が「設計図」のチェックに留まるのに対し、AlphaProof Codeは実際に動作するコードがセキュリティ要件（メッセージの秘匿性や前方秘匿性など）を満たしていることを数学的に保証します。\n\nこの成果は、AIによるサイバー攻撃の脅威が増す中で、電力網や医療機器などの重要インフラの安全性を数学的に担保するための大きな一歩となります。検証用資料はコミュニティ向けにオープンソース化されています。",
     "topics": [
-      "解析不能",
-      "データ破損",
-      "文字化け"
+      "AlphaProof Code",
+      "形式検証 (Formal Verification)",
+      "Signalプロトコル",
+      "Gemini Carbon",
+      "Lean"
     ],
     "scores": {
-      "signal": 0,
-      "depth": 0,
-      "uniqueness": 0,
-      "practical": 0,
-      "antiHype": 0,
-      "mainJournal": 0,
-      "annexPotential": 0,
-      "overall": 0
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
     },
-    "originalTitle": "Corrupted or Binary Input Data"
+    "originalTitle": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth — Google DeepMind"
   }
 }

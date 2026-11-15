@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T06:15:46.625371+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成の冗長なPR説明を&lt;details&gt;タグで隠して可読性を高める方法",
+    "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIが生成する詳細すぎるPR説明を&lt;details&gt;タグで折りたたみ、人間による簡潔な要約を添えることで、情報の透明性と可読性を両立させる実用的なテクニック。",
+    "summaryBody": "AIコーディングエージェント（Claude CodeやGitHub Copilotなど）が生成するプルリクエスト（PR）の説明は、正確かつ網羅的ですが、人間にとっては情報過多で「AIが書いた読みづらい文章（Slop）」に感じられることがあります。Simon Willison氏は、GitHubのMarkdownで利用可能な`&lt;details&gt;&lt;summary&gt;`タグを活用し、この問題を解決する方法を提案しています。\n\n具体的には、PRの冒頭に人間が編集した1〜2文の簡潔な概要と、可能であれば変更内容を視覚的に示すスクリーンショットを配置します。そして、AIが作成した膨大な詳細解説は`&lt;details&gt;`タグの中に隠し、必要な人だけが展開して読めるようにします。この手法により、レビュアーの負担を減らしつつ、AIの提供する詳細な記録をアーカイブとして保持することが可能になります。情報の優先順位付けに「人間の判断」を介在させることの重要性を説く、非常に実践的なガイドです。",
+    "topics": [
+      "GitHub",
+      "AI-assisted Programming",
+      "Markdown",
+      "Pull Request",
+      "Productivity"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Hide your slop PR descriptions behind <details><summary>"
+  }
+}

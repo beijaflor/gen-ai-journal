@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T06:16:52.052750+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Pathwaysとは？：大規模モデルのためのシングルコントローラー学習",
+    "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GoogleがGeminiの学習に使用している分散システム「Pathways」がGoogle Cloudで一般提供され、従来のSPMDモデルの限界を超える柔軟な大規模モデル学習が可能になった。",
+    "summaryBody": "Googleは、大規模モデル学習のための分散ランタイム「Pathways」の一般提供（GA）をGoogle Cloudで開始した。従来の学習で主流だったSPMD（Single Program, Multiple Data）モデルは、パイプライン並列化や強化学習（RL）ループのような非一様なタスクにおいて、アクセラレータの待機時間や調整コストが課題となっていた。Pathwaysは「シングルコントローラー」モデルを採用し、単一のPythonクライアントからクラスタ全体の計算をグラフとして定義することでこれを解決する。\n\n主な特徴は以下の通り：\n1. **仮想デバイスによる柔軟性**: 物理チップから抽象化された仮想デバイス上で計算を定義し、リソースマネージャが動的にマッピングを行う。これにより、学習中のハードウェア故障時にもジョブを停止せず再マッピングする「エラスティック・トレーニング」が可能となる。\n2. **非同期ディスパッチと中央スケジューラ**: 通信と計算を高度にオーバーラップさせ、チップの稼働率を最大化する。また、中央スケジューラが実行順序を制御することでデッドロックを防ぐ。\n3. **開発体験の向上**: 数千のホストを跨ぐ実行でも単一のPythonプロセスとして扱えるため、デバッグや対話的な開発が容易になる。 \n\nなお、Rayとの関係については、Rayがオーケストレーション（タスク配置）を担うのに対し、Pathwaysはチップ上での実行（トレーニングステップの最適化）を担う補完的な関係であると説明されている。",
+    "topics": [
+      "Pathways",
+      "LLM Infrastructure",
+      "Google Cloud",
+      "Distributed Systems",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "What is Pathways? Single-controller training for large models"
+  }
+}

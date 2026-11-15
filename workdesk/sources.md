@@ -2,6 +2,18 @@
 
 ## Main List
 
+- [x] 251. https://levtech.jp/media/detail_965/
+- [x] 250. https://github.com/expo/exact
+- [x] 249. https://engineering.nature.global/entry/2026/11/mcp-architecture-patterns
+- [x] 248. https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2154854.html
+- [x] 247. https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/
+- [x] 246. https://simonwillison.net/2026/Nov/9/details-summary/
+- [x] 245. https://www.watch.impress.co.jp/docs/news/2155063.html
+- [x] 244. https://1password.com/blog/scaling-security-reviews-agentic-pipeline
+- [x] 243. https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/
+- [x] 242. https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/
+- [x] 241. https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/
+- [x] 240. https://zenn.dev/arm_techblog/articles/9c5a29e37d1522
 - [x] 239. https://uxdesign.cc/decision-theatre-or-decision-design-f1604f178685
 - [x] 238. https://www.tak-dcxi.com/article/make-website-agent-ready/
 - [x] 237. https://www.figma.com/blog/ai-role-in-the-creative-process/
