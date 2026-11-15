@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:28:28.302409+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdr.app と hc の上で Claude Code の司令塔を回している",
+    "url": "https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Herdr.appとhc（herdr-core）を活用し、Claude Codeを司令塔として複数エージェントを統括管理する、認知負荷を抑えた運用手法の解説。",
+    "summaryBody": "Herdr.appとherdr-core（hc）を基盤に、Claude Codeを「司令塔」として運用する高度なワークフローが紹介されています。主な特徴は、ユーザーが直接やり取りするエージェントを司令塔の1体に限定し、他の子エージェントへのタスク割り当てや進捗報告の集約を司令塔に任せることで、マルチエージェント運用における管理の手間を大幅に削減している点です。技術的な工夫として、バックグラウンドでの無駄な返答を避けるための「hc wait」の条件分岐や、自作ツール「session-grep」を用いたセッションログの横断検索によるコンテキスト引き継ぎ手法などが具体的に解説されており、実戦的なエージェント運用の知見が得られる内容となっています。",
+    "topics": [
+      "Claude Code",
+      "Herdr.app",
+      "AIエージェント",
+      "LLMオーケストレーション",
+      "herdr-core"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

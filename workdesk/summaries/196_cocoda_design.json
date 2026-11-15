@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:01:23.767538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデルをコントロールできる基盤を構築する。カナリーのUI生成フロー実用化までの検証プロセス",
+    "url": "https://cocoda.design/varhirac/p/pdbe7d84ed4fb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "リードデザイナーの思考を「Skill」として言語化し、レビューと生成のエージェントを分離・高度化することで、実用レベルのUI自動生成を実現した検証プロセスの詳解。",
+    "summaryBody": "株式会社カナリーが取り組む、LLM（Claude Code等）を用いたUIデザイン生成フローの構築事例です。単にプロンプトを投げるのではなく、リードデザイナーの思考プロセスを「Skill」として定義し、LLMを「高度な計算機械」として扱うことで、再現性の高いアウトプットを実現しています。\n\n主な特徴は、まず評価の自動化から着手した「レビューエージェント」の開発です。アクセシビリティや情報設計の観点ごとにサブエージェントを分け、一定の基準を満たすまで生成をループさせる仕組みを構築しました。生成側では、リードデザイナーの暗黙知を言語化してSkillに落とし込み、データモデルやシーケンス図といった中間成果物を経由させることで、論理的なUI設計を可能にしています。また、Agentic Design System「NestUI」を構築し、LLMがデザインルールを正確に参照できる環境を整備。これにより、デザイナー以外のメンバーでも数時間で高品質なUIをFIXできる体制を構築しています。",
+    "topics": [
+      "AIエージェント",
+      "UIデザイン自動化",
+      "デザインシステム",
+      "LLMワークフロー",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

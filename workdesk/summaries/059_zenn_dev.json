@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:37:25.566305+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Weight-Space Programming やってみた(やらせてみた)ヨ💨",
+    "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Astra(GPT-6)を用いてQwen3.5の重みを直接編集し、語尾を「なのだ」風に変更するWeight-Space Programmingの実験と、その数学的・自律的な試行プロセスの解説。",
+    "summaryBody": "本記事は、フロンティアモデルであるGPT-6 Astraを活用し、小型モデル（Qwen3.5-0.8B）の重みを直接書き換えることで挙動を制御する「Weight-Space Programming」の検証レポートです。執筆者は、Astraが自律的にコードを記述し、モデルの内部活性（Activation）を解析して重み差分を計算・適用するプロセスを詳述しています。具体的には、通常体と「なのだ」体の文脈における内部活性の差分から特定の「方向」を抽出し、Gram-Schmidt法を用いて不要な成分を除去。その後、MLPのdown_proj重みに対して外積を用いたランク4の更新を適用し、品詞別の接続制御まで実現しています。結果として、ファインチューニングなしで高い成功率のキャラクター付けに成功しており、AIが他モデルのパラメータを自律的に理解・編集できる可能性を示す画期的な事例となっています。",
+    "topics": [
+      "Weight-Space Programming",
+      "メカニスティック解釈可能性",
+      "Astra",
+      "LLM",
+      "重み編集"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

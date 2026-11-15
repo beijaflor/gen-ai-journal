@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:37:08.956893+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kiro Crew v0.12.0の新機能「Ultra Mode」：自律型マルチエージェントによるタスク管理の仕組み",
+    "url": "https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェント管理ツールKiro Crewの新機能「Ultra Mode」における、指揮役エージェントによるタスク分割と作業台帳（Work Ledger）を用いた並列実行の仕組みを詳説。",
+    "summaryBody": "Kiro Crew v0.12.0で導入された「Ultra Mode」は、1つの大きなゴールを指揮役エージェント（conductor）が細分化し、複数のワーカーエージェントに並列で実行させるマルチエージェント機能です。指揮役はファイル書き込み権限を持たずタスク管理に特化しており、「作業台帳（work ledger）」を通じて進捗を管理します。各タスクには「人の承認（human_approval）」や「PRチェック」などの完了条件を設定でき、判定スクリプト（accept_eval.py）によって自動または半自動で完了が定義されます。従来のサブエージェント機能（spawn_run）が親チャットの文脈に依存していたのに対し、Ultra Modeは各作業が独立したチャットとして残り、長時間のタスクや複雑なプロジェクト管理に適した設計となっています。",
+    "topics": [
+      "Kiro Crew",
+      "マルチエージェント",
+      "AIエージェント",
+      "Claude Code",
+      "オーケストレーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

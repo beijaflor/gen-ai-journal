@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:50:24.230008+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント・メモリーの構成要素：Anthropicが明かすAIの「夢」と記憶の仕組み",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、AIエージェントがアイドル時間に自身の対話ログを振り返り、情報を整理・修正する「夢（Dreaming）」のプロセスを通じて、長期的な記憶を構築・最適化する手法を公開しました。",
+    "summaryBody": "AIエージェントの記憶システムにおいて、Anthropicは人間の脳の統合プロセスに似た「Dreaming（夢）」という概念を導入しています。これは、エージェントがタスクの合間に計算リソース（Sleep-time compute）を使用して、過去のログを分析し、誤りを修正したり、重要な情報を「wiki」のような構造化された形式に変換したりするプロセスです。最新のClaudeモデル（Opus 5.5/Sonnet 5.5など）を用いた評価では、何が重要か（Salience）を判断する能力が飛躍的に向上しており、闇雲にすべてを記録するのではなく、将来のタスクに役立つ戦略や検証済みルールを選択的に記憶することが可能になっています。ポケモンやCL-Bench、大規模な企業文書を用いた評価を通じて、記憶の階層化と定期的なバックグラウンド処理（夢）が、エージェントの長期的なパフォーマンスとコンテキスト効率を劇的に改善することを示しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude",
+      "コンテキスト管理",
+      "長期記憶",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 98
+    },
+    "originalTitle": "The components of agent memory"
+  }
+}

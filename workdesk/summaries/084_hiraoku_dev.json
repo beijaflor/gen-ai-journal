@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:31:29.474876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPはなぜ復権したのか：CLIが支持された理由と、流れを変えた仕様変更",
+    "url": "https://hiraoku.dev/blog/mcp-cli-cloud/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年7月28日の大幅な仕様変更により、MCPが抱えていた状態管理やコンテキスト圧迫の課題が解消され、CLIに対する優位性を再確立した背景と技術的詳細を解説しています。",
+    "summaryBody": "この記事は、Model Context Protocol (MCP) が一度はCLIに押されながらも、なぜ2026年後半に再びAIエージェント接続の標準として評価を固めたのかを深く分析しています。当初、MCPは全てのツール定義をモデルに渡すことによるトークン消費や、セッション管理の複雑さが批判されました。しかし、2026年7月28日版の仕様で「ステートレス化」が実現し、初期化手順の撤去やHTTPヘッダーによる操作識別が導入されたことで、クラウド環境での分散運用が劇的に容易になりました。また、実装面でも「Progressive Tool Discovery（遅延読み込み）」や実行環境での「コードによる結果加工」が浸透したことで、CLIの強みであった「必要な分だけ読み、加工して返す」効率性をMCPが獲得したと指摘しています。結論として、ローカル作業は既存CLI、クラウドでの複数サービス統合はリモートMCPという使い分けが進む現状を提示しています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "AIエージェント",
+      "ステートレスアーキテクチャ",
+      "システム設計",
+      "クラウドネイティブ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

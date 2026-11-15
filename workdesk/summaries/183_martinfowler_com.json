@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:04:09.970929+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "データとしてのテスト：AIコーディングエージェント時代の設計手法",
+    "url": "https://martinfowler.com/articles/tests-as-data.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIがコードとテストの両方を生成・修正する環境において、テストを「実行可能なコード」ではなく「不変のデータ（DSL）」として定義することで、人間の意図を保護し信頼性を担保する手法を提案する。",
+    "summaryBody": "AIコーディングエージェントの普及に伴い、AIがプロダクションコードとテストコードの両方をリファクタリングすることで、テストが本来の検証機能を失い、バグが増加するという課題が顕在化しています。ThoughtworksのMatteo Vaccari氏は、この問題に対し「Tests as Data（データとしてのテスト）」というアプローチを提唱しています。主な主張は3点です：(1) AIがコードを書く時代、開発者はその「顧客」となり、単なるユニットテストではなく「顧客テスト（受け入れテスト）」が人間とAIの主契約となる。(2) テストを実装詳細に依存しないブラックボックス形式とし、表形式や専用のDSL（ドメイン固有言語）などの「データ」として切り出すことで、AIによる意図しない改変を防ぐ。(3) 以前は高コストだったDSLのパーサーやテストランナーの構築を、AI自身に肩代わりさせることで導入障壁を下げる。この記事では、FitやGoのテーブル駆動テスト、Approval Testingといった既存の伝統を再解釈し、AI時代に人間がソフトウェアの制御権を維持するための具体的なプラクティスを解説しています。",
+    "topics": [
+      "Generative AI",
+      "Automated Testing",
+      "Domain Specific Languages (DSL)",
+      "Software Architecture",
+      "Extreme Programming"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 94
+    },
+    "originalTitle": "Tests as data"
+  }
+}

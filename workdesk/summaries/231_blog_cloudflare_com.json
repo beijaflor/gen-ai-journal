@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:54:17.407327+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CloudflareのAIエージェント向けブラウザ「Kitesurf」がオープンソース化",
+    "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Cloudflareは、Workers上で動作するAIエージェント向けのステートレスで軽量なWebブラウザ「Kitesurf」をApache 2.0ライセンスでオープンソース化した。",
+    "summaryBody": "Cloudflareは、2024年8月に発表したAIエージェント向けステートレスブラウザ「Kitesurf」をGitHub上でオープンソース（Apache 2.0ライセンス）として公開しました。KitesurfはCloudflare Workers上で直接動作するように設計されており、コンテナを必要とせず、RustとWebAssembly（WASM）を活用することで従来のブラウザ（Chromiumなど）よりもCPUやメモリの使用を大幅に抑制しています。主な特徴は以下の通りです：\n\n- **コンポーネント**: HTML解析にBlitz、CSSにStylo、JS実行にBoaを採用。\n- **互換性**: Chrome DevTools Protocol (CDP) をサポートし、Puppeteer等の既存ツールから制御可能。\n- **デプロイ**: 開発者はローカル環境での実行に加え、自身のCloudflare Workersアカウント（有料プラン推奨）へデプロイして独自のインスタンスを運用できます。\n\nAIエージェントがWebサイトを効率的に「ブラウズ」するためのインフラとして、Web Platform Test（WPT）を通じた互換性向上や、ベンチマークの更新が今後も進められる予定です。",
+    "topics": [
+      "Cloudflare",
+      "Kitesurf",
+      "AI Agents",
+      "WebAssembly",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Kitesurf is now open source"
+  }
+}

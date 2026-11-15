@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:16:36.619972+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【2026/11/13時点】Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）",
+    "url": "https://zenn.dev/canly/articles/e2bd67c9a4c18b",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AnthropicのAIエージェント「Claude Duet」を組織のTeamプランで検証し、既存環境とのシームレスな連携機能と管理者側で制御可能な範囲、導入時のリスク管理についてまとめた記事。",
+    "summaryBody": "2026年11月13日にClaudeのTeamプラン管理画面に公開された「Claude Duet（ベータ）」の先行試用レポートです。Duetは専用の仮想マシン上で動くエージェントで、既存のClaudeアカウントに紐づくSlackやカレンダー、社内ルール（スキル）を再設定なしでそのまま引き継いで動作します。「Morning brief」や「Daily todo」など、自律的に情報を収集・要約して提案する機能や、リアルタイムの音声会話「Talk」の実力が高く評価されています。一方で、管理者向けの制御機能は現時点で「組織全体のON/OFF」のみに限定されており、特定の操作制限や詳細な監査ログ、ユーザーごとの制限などは未実装です。そのため、組織の指示（プロンプト）による制御や社内テストの実施など、ガバナンスと利便性を両立させるための運用上の工夫が不可欠であると指摘しています。",
+    "topics": [
+      "Claude Duet",
+      "Anthropic",
+      "AIエージェント",
+      "Teamプラン",
+      "ガバナンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

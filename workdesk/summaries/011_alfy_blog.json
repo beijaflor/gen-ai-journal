@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:52:16.600506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ToDoアプリで解説するWebMCP：AIエージェントのための新しいブラウザ標準",
+    "url": "https://alfy.blog/2026/11/08/webmcp-explained-with-a-to-do-app.html",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "WebMCPは、ブラウザ上のAIエージェントがWebページの機能を直接呼び出せるようにする新しいプロトコルであり、従来の画面解析に比べて効率的かつ安全な操作を実現します。",
+    "summaryBody": "WebMCPは、AIエージェントがWebサイトと対話するための新しいブラウザ標準案です。本記事では、TodoMVCアプリを例に、エージェントが画面のスクリーンショットを解析して操作する従来の手法と、WebMCPを使用して定義された「ツール」を直接呼び出す手法を比較しています。\n\n主なポイントは以下の通りです：\n- **実装方法**: HTMLのフォーム属性を使用する「宣言的API」と、JavaScriptを使用する「命令的API」の2種類があり、JSON Schemaを用いて入力パラメータを定義します。\n- **パフォーマンス**: 視覚情報の解析が不要になるため、トークン消費量を大幅に削減し、実行の確実性を高めます。\n- **安全性**: `untrustedContentHint`（ユーザー生成コンテンツの明示）や`consequentialHint`（破壊的操作前の確認）などのヒント機能により、エージェントの誤操作やプロンプトインジェクションのリスクを軽減します。\n- **動的な管理**: アプリの状態（例：完了済みタスクの有無）に応じて、利用可能なツールを動的に登録・削除することが可能です。\n\nWebMCPは、エージェントがWebサイトを「見る」のではなく、サイトが提供する「機能」を直接理解して実行するための強力な基盤となります。",
+    "topics": [
+      "WebMCP",
+      "Model Context Protocol",
+      "AI Agents",
+      "Browser API",
+      "Web Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    },
+    "originalTitle": "WebMCP, Explained with a To-Do App"
+  }
+}

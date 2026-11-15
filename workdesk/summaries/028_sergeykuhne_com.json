@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:44:46.167262+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIによる「脳疲労（Brain Fry）」を防ぐ：Gitベースの優先度キューとエージェント活用術",
+    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントとの多重タスクによる文脈崩壊を防ぐため、すべての作業状態をGitで管理し、人間を「意思決定のみ」に集中させる独自のワークフローの紹介。",
+    "summaryBody": "Claude CodeなどのAIツールをターミナルで使用する際、複数のスレッドが並行して進むことで発生する「脳のメモリ不足（Brain Fry）」への対処法が解説されています。著者はこの問題を解決するため、Gitリポジトリ内にタスクをMarkdownファイルとして記録する「優先度キュー」システムを構築しました。エージェントがコードの調査やテスト、ビルドを行い、人間はClaude Artifactsで自動生成されたUIを通じて意思決定とレビューのみを行います。作業が終わるたびに文脈を閉じ、次のタスクをキューから取り出すことで、AIの速度に振り回されず、一度に一つのことに集中できる環境を実現しています。技術的な実装よりも、AI時代の新しい人間とマシンの協調モデル（Context Management）に焦点を当てた内容です。",
+    "topics": [
+      "AIエージェント",
+      "開発者生産性",
+      "コンテキスト管理",
+      "Claude Code",
+      "ワークフロー設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "How I'm fighting the AI Brain Fry"
+  }
+}

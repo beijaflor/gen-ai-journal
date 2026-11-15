@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:02:29.944481+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cyber Chaos Monkey: AIエージェントによる先制的なセキュリティ対策",
+    "url": "https://shopify.engineering/cyber-chaos-monkey",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Shopifyが開発した「Cyber Chaos Monkey」は、AIエージェントを活用して自社の本番環境へ安全な攻撃を仕掛け、攻撃者より先に脆弱性を特定する革新的な自律型セキュリティシステムである。",
+    "summaryBody": "Shopifyは、カオスエンジニアリングの概念をセキュリティに応用したAIエージェントシステム「Cyber Chaos Monkey (CCM)」を導入しました。このシステムは、内部のソースコードやインフラ構成、ログなどの機密情報にアクセスできる「情報の非対称性」を武器に、攻撃者よりも優位に立って脆弱性を探索します。アーキテクチャは、脆弱性の仮説を立てる「Discovery」と、実際に攻撃を試行する「Sandbox」の2層で構成されています。安全性を確保するため、攻撃を実行するエージェント（Executor）を別の監視用AI（Judge）がリアルタイムでチェックし、ルール違反があれば即座に停止させる「二人組整合性（TPI）」モデルを採用しています。既に数万件の試行を行い、システム障害を起こすことなく数十件の重要な脆弱性を発見・対処することに成功しています。",
+    "topics": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "カオスエンジニアリング",
+      "Red Teaming",
+      "Shopify"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 95
+    },
+    "originalTitle": "Cyber Chaos Monkey: Staying ahead of security threats with AI agents (2026) - Shopify"
+  }
+}
