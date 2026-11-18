@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:49:15.017724+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIコーディングエージェントによるGitHubへの機密情報流出の実態調査",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのClaude CodeなどのAIエージェントが、実行許可を得た機密情報入りのコマンドをローカル設定ファイルに保存し、それがGitHubへ誤配備されることで数千件のシークレットが露出している実態をApiiroが報告した。",
+    "summaryBody": "Apiiroの調査により、AnthropicのClaude Codeを含むAIコーディングエージェントの設定ファイルを介して、GitHub上に2,539件の実用的な機密情報（クラウドAPIキー、DBパスワード等）が流出していることが明らかになりました。主な原因は、Claude Codeがユーザーからコマンド実行の永続的許可を得た際、そのコマンド文字列（パスワード等を含む）を `.claude/settings.local.json` に保存する仕様にあります。このファイルが `.gitignore` で適切に除外されずにコミットされるケースが多発しており、調査対象の1.1%のリポジトリで有効なシークレットが発見されました。従来のシークレットスキャナーでは「コマンドライン引数内のパスワード」を検知しにくい点も指摘されており、開発者には環境変数の利用や、特定のコマンド文字列ではなく実行パターンの許可を推奨しています。",
+    "topics": [
+      "AIエージェント",
+      "シークレットスキャニング",
+      "Claude Code",
+      "GitHubセキュリティ",
+      "Apiiro"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Coding Agents Copy Your Secrets to a Hidden File. Thousands Are on GitHub"
+  }
+}

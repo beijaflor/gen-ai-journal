@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:15:44.543840+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code ハーネス Deep Dive – 君はどこまで制御する？",
+    "url": "https://speakerdeck.com/takateeen_knj/20261110-claude-deepdive",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AnthropicのAIエージェントCLI「Claude Code」を組織で安全に運用するための、設定、フック、サンドボックス、MCPを活用した多層的なガバナンスと制御手法（ハーネス）の解説。",
+    "summaryBody": "本資料は、AIエージェント型CLIツール「Claude Code」を組織導入する際の懸念点（セキュリティ、コスト、品質のばらつき）を、モデルの外側から制御・観測する「ハーネス」という概念で解決する手法を提案しています。具体的には、settings.jsonによる権限管理、OSレベルのサンドボックスによる隔離、フック（hooks）を用いた実行前後の検証、そしてOpenTelemetryによる利用状況の可視化など、多層防御の設計指針を詳細に解説。開発者の自由度を維持しつつ、機密情報の漏洩や破壊的な操作を仕組みで防ぐための具体的な設定例（deny/ask/allowの使い分け）や、成果を定量的に示すための計測指標（トークン消費量と手戻り率）について深く踏み込んだ実践的な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "ガバナンス",
+      "LLMOps",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 98
+    }
+  }
+}

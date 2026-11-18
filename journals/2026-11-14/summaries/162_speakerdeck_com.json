@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:12:24.243011+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ぼくのClaude Codeの使い方",
+    "url": "https://speakerdeck.com/falken/boku-no-claude-code-no-tsukaikata",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeをDiscordと連携させ、セキュアなコンテナ環境で常時起動・モバイル操作可能にする実践的なAIエージェント運用術。",
+    "summaryBody": "AnthropicのCLIツール「Claude Code」を最大限に活用するための環境構築とワークフローに関するプレゼンテーション資料です。主な内容は以下の通りです。\n\n- **環境とセキュリティ**: Ubuntu LXC上に専用ユーザーを作成し、`--permission-mode bypassPermissions`を使用しつつも影響範囲を限定。SSHとAWS権限を最小化し、デプロイ時には必ず人間の承認を挟む設計を徹底しています。\n- **Discord連携と利便性**: 公式Discordプラグインを利用し、スマホからでもClaude Codeと対話可能に。`screen`と`crontab`を組み合わせることで、再起動時の自動復旧やセッションの永続化を実現しています。\n- **開発フローの自動化**: Issueからブランチ作成、ビルド・テスト、PR作成、そしてCodexによるレビューまでをClaudeに行わせる自律的なサイクルを構築。深夜の依頼から短時間で機能を完成させるなど、高い生産性を実証しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "Discord",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

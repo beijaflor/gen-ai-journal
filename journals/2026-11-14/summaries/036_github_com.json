@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:42:51.813456+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google Geminiによる個人ファイル漏洩挙動のドキュメント化",
+    "url": "https://github.com/thisisme6598/gemini_files/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "消費者向けGoogle Geminiが、事前の約束に反してDriveやGmailの個人データを背景で取得し、人間の評価者に開示している挙動についての調査レポート。",
+    "summaryBody": "GitHubで公開されたこのドキュメントは、消費者向けGoogle Gemini（個人用アカウント）における「Connected Apps」機能のプライバシーリスクを告発しています。Googleは当初、GmailやDriveの個人コンテンツは人間のレビュー対象外であると約束していましたが、2023年後半に規約を修正し、現在はこれらのデータが人間の評価者へルーティングされる可能性があることを認めています。\n\n主な指摘事項は以下の通りです：\n- **自動的なデータ取得**: `@Drive`等のタグを使用しなくても、会話の内容から背景で自動的に関連ファイルが検索・取得される。\n- **確率的な挙動**: データの取得は決定論的ではなく、メタデータのみの場合からファイル全文がセッションに含まれる場合まで、4つの異なるステージが存在する。\n- **匿名化の限界**: 自動化されたスクラビングでは、文脈に含まれる個人識別情報（PII）を完全には除去できない。\n\n著者は、機密情報を含む環境での連携解除を推奨しており、モデルに特定の指示を出すことで、実際にどのようなデータが背後で取得されているかを確認する再現手順を提示しています。",
+    "topics": [
+      "Google Gemini",
+      "プライバシー",
+      "データセキュリティ",
+      "AI倫理",
+      "Connected Apps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 50,
+      "overall": 92
+    },
+    "originalTitle": "Documentation of Gemini File Leaking Behavior"
+  }
+}

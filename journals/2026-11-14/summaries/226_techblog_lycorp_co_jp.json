@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:55:15.027291+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMにどこまで任せるべきか：AIエージェントによる広告分析レポート自動化",
+    "url": "https://techblog.lycorp.co.jp/ja/20261111a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LINEヤフーが開発した、LLMとプログラムの役割を分離し、ReAct型エージェントを用いて広告分析レポートの自動生成と品質担保を実現するシステムの設計手法と知見の紹介。",
+    "summaryBody": "LINEヤフーのAdsデータ分析チームによる、広告分析レポート自動化の事例紹介です。従来のLLMへの一括指示では「数値計算の誤り」「重要項目の欠落」「解釈の浅さ」が課題でした。これに対し、計算・集計などの正確性が求められる処理はコードで行い、LLMは検証済みデータの解釈と文章構成のみを行う「計算と解釈の分離」を採用しています。\n\n分析プロセスでは、ReAct（Reasoning and Acting）構造のエージェントを導入。事前に定義された「探索グラフ」に基づき、エージェントが必要に応じてTrinoクエリを実行し、深掘り分析を行います。さらに、分析結果の信頼性を担保するため、変動要因の寄与度を検証する「根拠の等級化（Evidence Grading）」のステップを設け、不確実な情報の拡散を防いでいます。評価面ではLangfuseを用いた実行トレースの可視化と、定量的・定性的基準（Rubric）に基づく評価ループを構築し、プロンプト改善が品質向上に寄与するかを客観的に判断できる体制を整えています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "データ分析",
+      "ReAct",
+      "広告運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

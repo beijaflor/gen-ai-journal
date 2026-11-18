@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T02:39:55.796053+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインシステム内のAIプロトタイピング：デザイン・プロダクトチームのための実践ガイド",
+    "url": "https://uxdesign.cc/ai-prototyping-inside-your-design-system-a-hands-on-guide-for-design-product-teams-44825904c08d",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが既存のコンポーネントを「模倣」するのではなく、MCPとマニフェストを活用して「本物のコード」を用いた実用的なプロトタイプを生成するための実践的手法を解説。",
+    "summaryBody": "AIビルドツールが既存のデザインシステムを「読み込む」と謳っていても、実際にはshadcnなどで「似たような外見」を再構築してしまい、開発者がそのまま使えないという「プロトタイプの壁」が発生しています。この記事では、このギャップを埋めるために2つの要素を提唱しています。1つは、Storybookなどから自動生成されるコンポーネント、プロパティ、デフォルト値の正確な目録である「マニフェスト」。もう1つは、AIが学習データによる推測ではなく、現在のシステムを直接参照するための接続規格「MCP (Model Context Protocol)」です。特にStorybook MCPを活用することで、トークン消費を抑えつつ、開発者がそのままマージ可能な高精度なコードベースのプロトタイピングが可能になります。",
+    "topics": [
+      "Design Systems",
+      "AI Prototyping",
+      "MCP (Model Context Protocol)",
+      "Storybook",
+      "UX Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "AI Prototyping inside your design system. A hands-on guide for design & product teams. | by Christine Vallaure | UX Collective (Nov 2026)"
+  }
+}

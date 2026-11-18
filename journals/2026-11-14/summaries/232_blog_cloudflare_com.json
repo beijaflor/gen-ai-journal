@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:54:03.670320+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIペネトレーションテスト自動化ツールの急増と「モダンセキュリティモデル」による対策",
+    "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Cloudflareは、ARTEX等のAI自律型攻撃フレームワークの急増を報告し、それに対抗するための「モダンセキュリティモデル」の6つの柱を提唱している。",
+    "summaryBody": "Cloudflareの調査により、ARTEXなどのAIを活用した自律型ペネトレーションテストツールの利用が爆発的に増加していることが明らかになりました。2024年10月以降、これらツールによる攻撃リクエストは30倍に急増しており、数千のIPアドレスから50以上のフレームワークファミリーが確認されています。これらのAIエージェントは、環境の列挙、脆弱性の検証、エクスプロイトのプロトタイプ作成を推論速度で並列実行し、人間による操作の限界を超えたスケールでの攻撃を可能にします。\n\n実際のインシデント事例では、CI/CDパイプラインから漏洩した静的トークンをAIツールが悪用し、環境内を高速に横断（ラテラルムーブメント）する様子が観測されました。Cloudflareはこの脅威に対抗するため、以下の6つの柱からなる「モダンセキュリティモデル」の採用を推奨しています。\n\n1. **WAFによる境界防御**: レート制限と高度なルールによるトラフィック制御。\n2. **異常検知**: Webアプリケーションへの不審なアクセスパターンの特定。\n3. **ボット防御**: AIエージェント特有の行動を検知・遮断。\n4. **IDゲート型アクセス**: Zero Trustとマイクロセグメンテーションによる横断的侵害の阻止。\n5. **API検証**: OpenAPIスキーマ検証等による厳格なペイロード検査。\n6. **脅威インテリジェンス**: 外部の攻撃動向をリアルタイムで反映。\n\nAIによる攻撃の自動化は、従来の防御モデルを過去のものにしており、封じ込めを前提としたアイデンティティ中心の防御が不可欠となっています。",
+    "topics": [
+      "AIセキュリティ",
+      "ペネトレーションテスト",
+      "Zero Trust",
+      "Cloudflare",
+      "サイバー攻撃トレンド"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Adapting to AI penetration testing orchestrators: The Modern Security Model | Cloudflare Blog"
+  }
+}

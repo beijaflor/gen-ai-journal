@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:55:44.404850+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "中国の最先端AIモデルに輸出規制対象のNVIDIA Blackwell GPUの「指紋」が発見される",
+    "url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "DeepSeekやMoonshot AIなどの中国の主要AIモデルの重み解析から、米国の輸出規制対象である最新のNVIDIA Blackwell GPUが初期化に使用された技術的証拠が発見された。",
+    "summaryBody": "Unemployment Labsによるフォレンジック調査の結果、DeepSeek、Moonshot AI、MiniMax、Ant Groupがリリースした最新のAIモデルの重みの中に、NVIDIA Blackwellアーキテクチャ特有のハードウェア指紋が特定された。PyTorchの乱数生成器PhiloxがGPUのストリーミングマルチプロセッサ（SM）数に基づいて値を配置する特性を利用したもので、B200/B300（148 SMs）やGB200/GB300（152 SMs）の構成と一致する。2026年4月以降にリリースされたモデルからこのパターンが見られ、従来のHopper世代からの移行が確認されている。この結果は、中国の主要なAI開発企業が何らかの形で最新の輸出規制対象チップにアクセスし、大規模なトレーニングを実行している技術的裏付けとなるが、具体的な入手経路や物理的な所在については特定していない。",
+    "topics": [
+      "NVIDIA Blackwell",
+      "輸出規制",
+      "DeepSeek",
+      "フォレンジック解析",
+      "GPU"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 25,
+      "overall": 92
+    },
+    "originalTitle": "Top Chinese Frontier AI Models Carry the Fingerprint of Export-Controlled NVIDIA Blackwell GPUs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:54:00.674212+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "規模に応じたファクトチェック：より正確で効率的なあらすじ正当性確認システムの構築",
+    "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Netflixが開発した、LLMの専門特化型判事と多段階の検証プロセスを組み合わせることで、あらすじの正確性向上とコスト削減を両立させた新しいファクトチェック・システムの解説。",
+    "summaryBody": "Netflixは、作品のあらすじ（シノプシス）が事実に基づいているかを自動で検証する新しい「カスケード・ファクトチェック・サービス」を導入しました。従来のシステムは、単一の強力なLLMに膨大なコンテキストを読み込ませる「ホリスティック（全体論的）な呼び出し」に依存しており、高いコストと、微妙なニュアンスや含意の誤り（誤解を招く表現など）を見逃すという課題がありました。\n\n新システムでは、文字通りの真偽を判定する「Literal Judge」と、読者に誤った印象を与えないかを判定する「Implicature Judge」に役割を分担させ、自信度が低い判定のみを詳細な検証ステージへ送る「自信度ゲート」を導入しました。さらに、モデルが自身の推論の「不確実な点」を特定し、そこをピンポイントで再検証する第2ステージを設けています。このアプローチにより、コストを52.4%削減しながら、不適切なあらすじの検出能力（Recall-Fail）を0.77から0.86へと向上させました。また、判定の根拠も人間の専門家と82%一致するようになり、自動修正への活用も期待されています。",
+    "topics": [
+      "Netflix",
+      "LLM",
+      "Fact-Checking",
+      "Natural Language Processing",
+      "System Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System"
+  }
+}

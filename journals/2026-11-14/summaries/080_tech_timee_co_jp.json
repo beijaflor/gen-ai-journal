@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:32:15.175291+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "運用しながら改善する LLM-as-a-Judge の構築",
+    "url": "https://tech.timee.co.jp/entry/2026/11/05/101407",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "事前に完璧な正解データを用意するのではなく、運用しながら少数の事例を確認し、評価基準（LLM-as-a-Judge）を段階的に育てていく実践的なアプローチの紹介。",
+    "summaryBody": "タイミー社における求人審査AIの「判定理由」と「判定箇所」の品質を評価するための、LLM-as-a-Judge構築事例です。当初課題となった「メタ評価用データセット準備の膨大な工数」に対し、厳密さをあえて割り切り、隔週サイクルで少数のサンプリング事例を確認・修正する「運用しながら育てる」手法を採用しました。具体的には、CheckEvalの枠組みを参考に評価項目を具体的なYes/No質問に分解。人間との評価のズレを定性分析し、プロンプトの記述や評価観点そのものを継続的にアップデートしました。このプロセスにより、初期設計時には予見できなかった「基準のブレ（Criteria Drift）」を解消し、統計的な完璧さを待たずに実用的な評価システムを構築することに成功しています。",
+    "topics": [
+      "LLM-as-a-Judge",
+      "メタ評価",
+      "プロンプトエンジニアリング",
+      "CheckEval",
+      "評価データセット"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

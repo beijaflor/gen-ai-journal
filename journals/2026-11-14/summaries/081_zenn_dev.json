@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:32:02.864268+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化",
+    "url": "https://zenn.dev/tomipetit/articles/zero-wire-github-actions",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Cloudflare Zero WireのRSSを活用し、GitHub ActionsとClaudeを組み合わせて自社サーバーの脆弱性判定を自動化する実用的なパイプラインの構築方法を解説します。",
+    "summaryBody": "Cloudflare Radarが提供する脆弱性インテリジェンス「Zero Wire」のフィードをもとに、公開サーバーの安全性を自動評価する仕組みを紹介しています。SSHでのサーバー棚卸し、公式データ（Node.js security-wgやUbuntu CVEデータ）を用いた機械的なバージョン照合、そしてClaudeによる文脈を考慮した最終判定という多段構成をとることで、誤検知や「要確認」で止まってしまう問題を解決しています。また、外部データからのプロンプトインジェクション対策や、手動確認済みの項目をスキップする仕組みなど、実運用における細かなハマりどころについても詳しく記述されています。LLMに判断を任せつつ、数値比較などの確定的な処理はコードで保証するという、AI活用のベストプラクティスが示されています。",
+    "topics": [
+      "Cloudflare Zero Wire",
+      "GitHub Actions",
+      "Claude",
+      "セキュリティ自動化",
+      "脆弱性管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

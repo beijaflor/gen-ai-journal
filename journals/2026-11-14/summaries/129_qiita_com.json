@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:22:20.528721+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ちょっと見ない間にClaude APIが進化してた！",
+    "url": "https://qiita.com/moritalous/items/9e7c02b749037238b2bc",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude APIにおいて、会話の途中でシステムプロンプトやツール定義、思考レベルを動的に変更・追記できる最新のベータ機能とその実装方法を紹介しています。",
+    "summaryBody": "この記事では、AnthropicのClaude APIに追加された高度な会話制御機能について解説しています。主な機能として、プロンプトキャッシュを維持したまま会話の途中でシステムプロンプトを追記する方法や、ベータ機能である「インラインツール（会話中でのツールの動的追加・削除）」、「思考レベル（effort）の動的変更」、そして「特定のターンのみ有効なシステムプロンプト（clear_at）」の指定方法が紹介されています。特に、会話の流れに応じてモデルの振る舞いや利用可能なリソースを効率的に管理できる点が強調されており、PythonのSDKを用いた具体的な実装コードと共に、キャッシュ効率を最大化しながら柔軟なプロンプト制御を行う手法がまとめられています。",
+    "topics": [
+      "Claude API",
+      "Anthropic",
+      "LLM",
+      "Prompt Caching",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

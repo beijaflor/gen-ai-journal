@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:08:56.982817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Geminiと制約ソルバを利用して、ファジングをすり抜けるGoのバグを検出する",
+    "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Goの標準ファジングで見逃される境界外アクセスバグを、Geminiによるアセンブリ解析とZ3制約ソルバを用いて効率的に特定する手法の解説。",
+    "summaryBody": "GoogleのKarl Weinmeister氏が、LLM（Gemini 4 Argon）と制約ソルバ（Z3）を組み合わせた高度なバグ探索手法を提唱しています。Goの標準的なファジング（go test -fuzz）は、スライスの背後にある予備キャパシティの影響で、境界外アクセスがパニックにならずに表面化しないという「盲点」があります。この記事では、コンパイラのSSA proveパスを通過してしまった境界チェック（bounds check）を特定し、GeminiにアセンブリコードからZ3の制約スクリプトを生成させることで、バグを再現する入力を自動合成するワークフローを紹介しています。この手法により、通常のファジングでは検出困難だったskill-lint内の潜在的バグを特定することに成功しました。AIを形式手法の補助として使うことで、開発者が手動で証明を書く手間を省きつつ、実用的なバグ発見能力を向上させるアプローチです。",
+    "topics": [
+      "Go言語",
+      "Gemini",
+      "Z3",
+      "ファジング",
+      "形式検証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver"
+  }
+}

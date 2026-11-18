@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:38:52.443115+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeでリポジトリを作らずに試作する",
+    "url": "https://qiita.com/kentasatomi/items/1c3e1ac9244d973ce5e0",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeのクラウドセッションに追加された「No repository」オプションを活用し、リポジトリ作成の手間を省いてPythonロジックのプロトタイプを素早く検証する方法の紹介。",
+    "summaryBody": "Claude Code 2.1.318のアップデートで、Anthropicがホストするクラウド環境においてリポジトリを指定せずにセッションを開始できる「No repository」機能が導入されました。これにより、GitHubに検証用リポジトリを新規作成することなく、独立したPythonスクリプトの実行やロジック検証が可能になります。記事ではCSVのインポートルール（異常データの除外や重複チェック）を例に、具体的なプロンプトを用いた試作の流れを解説。仕様が固まった段階で既存リポジトリへ移行する、効率的なワークフローを提案しています。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "Python",
+      "プロトタイピング",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

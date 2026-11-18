@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:22:10.046168+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "NVIDIAの「長文コンテキスト不要」論文",
+    "url": "https://zenn.dev/knowledgesense/articles/bd917ed6829121",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "コンテキストの膨張によるコストと遅延を抑えるため、情報の圧縮と選択的読み込みを組み合わせたNVIDIAの新手法「意味的状態空間モデル（SSSM）」を解説・検証した記事。",
+    "summaryBody": "NVIDIAの研究チームが発表した論文「You don't need long context」は、LLMエージェントにおけるトークンコスト増大とレスポンス遅延の解決策を提案しています。本記事では、過去の履歴を「引き継ぎ書」として圧縮する手法（EoCC）と、grep等のツールを用いて必要な箇所のみを抽出する「選択的読み込み」を組み合わせた「意味的状態空間モデル（SSSM）」について解説しています。筆者による独自の検証では、全履歴入力に比べてトークンコストを最大36分の1に削減しつつ、複雑な推論タスクや長文翻訳で高い精度を維持できることが示されました。一方で、検索プロセスの繰り返しにより回答までの実行時間が長くなるというトレードオフも指摘されており、実務におけるエージェント設計の重要な指針となります。",
+    "topics": [
+      "LLM",
+      "RAG",
+      "NVIDIA",
+      "AIエージェント",
+      "コンテキスト管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 94
+    }
+  }
+}

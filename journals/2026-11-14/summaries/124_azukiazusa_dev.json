@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:23:25.762029+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントが作り、エージェントが使う Vercel の UI SDK",
+    "url": "https://azukiazusa.dev/blog/ui-sdk-agent-ready-behaviors/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercel Labsが公開した「UI SDK」は、AIエージェントによるコンポーネントの自動生成と、APIを介した直接操作を最適化する新しいヘッドレスUIライブラリです。",
+    "summaryBody": "Vercel Labsから発表された「UI SDK」は、従来のヘッドレスUIライブラリを一歩進め、AIエージェントを「コンポーネントの作り手」および「UIの使い手」として設計に組み込んだライブラリです。コアとなるのは、フォーカス管理やアクセシビリティ対応などの振る舞いを定義する50以上の『behavior』で、これらを組み合わせることで複雑なコンポーネントをエージェントに正しく生成させることが可能です。また、新概念の『エージェントブリッジ（Agent Bridge）』を通じて、エージェントはDOM操作や画像認識を介さず、コンポーネントの状態（snapshot）を読み取り、定義されたアクション（act）を直接実行できます。記事ではClaude Codeを使用したトランスファーリストの実装例を挙げ、エージェントによる操作の自動化やセキュリティ制限の手法についても解説しています。",
+    "topics": [
+      "UI SDK",
+      "Vercel Labs",
+      "AI Agent",
+      "Headless UI",
+      "React"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

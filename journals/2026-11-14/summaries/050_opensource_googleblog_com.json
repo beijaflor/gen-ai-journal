@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:39:37.528733+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "信頼できないAIエージェントの大規模サンドボックス化：GoogleがAgent SubstrateとgVisorをCNCFに寄贈",
+    "url": "https://opensource.googleblog.com/2026/11/sandboxing-untrusted-ai-agents-at-scale.html",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Googleは、AIエージェント特有のアイドルリソース浪費とセキュリティ課題を解決するオーケストレーター「Agent Substrate」とサンドボックス「gVisor」をCNCFに寄贈した。",
+    "summaryBody": "AIエージェントは、推論待ちなどのアイドル時間が長い一方で、メモリやディスクの実行状態を保持し続ける必要があるため、従来のKubernetesのPodモデルでは効率的なスケーリングが困難でした。Googleが開発した「Agent Substrate」は、エージェントの状態を保持する「Actor」と計算資源である「Worker」を分離し、アイドル時に状態をスナップショット保存することで、リソースを解放しつつ500ミリ秒未満での高速な復帰を実現します。また、信頼できないコードの実行からホストを保護するため、ユーザ空間カーネル「gVisor」による隔離を採用。これらの技術をCNCFに寄贈することで、業界全体でのエージェント基盤の標準化を推進します。",
+    "topics": [
+      "AI Agents",
+      "Kubernetes",
+      "CNCF",
+      "gVisor",
+      "Agent Substrate"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Sandboxing Untrusted AI Agents at Scale: Google Donates Agent Substrate and gVisor to the CNCF"
+  }
+}
