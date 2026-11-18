@@ -27,7 +27,7 @@
 - [x] 145. https://www.itmedia.co.jp/news/article/2611/10/2000003040/
 - [x] 189. https://blog.sentry.io/slopware-factory/
 
-## 4. Gemini 4 周辺の学習基盤・ツール（Google、main Theme 2 非収録分）
+## 4. Gemini 4 周辺（解説・学習基盤）
 
 - [x] 166. https://note.com/npaka/n/nf3aa0a193147
 - [x] 241. https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/
@@ -55,7 +55,7 @@
 - [x] 217. https://blog.cip.org/p/ai-models-know-what-women-peace-and
 - [x] 191. https://shopify.engineering/cyber-chaos-monkey
 
-## 8. 全非掲載スイープで追加した独立候補（annexPotential ≥60、STEP_04で未収録だったもの）
+## 8. その他の実践・論考
 
 - [x] 218. https://github.com/hyperionaidev/smolmaxxing/
 - [x] 020. https://antonau.tech/posts/2026/11/agents-microvm-firecracker/
