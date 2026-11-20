@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:18:17.490133+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TencentがHy4 flashを発表：圧倒的なコスト効率を実現した日常の生産性向上向けLLM",
+    "url": "https://hy.tencent.ai/research/hy4-flash",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Tencentが発表したHy4 flashは、224BのMoEアーキテクチャを採用し、極めて低いAPI価格と高い推論速度を両立させながら、実務タスクにおいて高い生産性を発揮するオープンウェイトモデルです。",
+    "summaryBody": "Tencentは、同社の中で最もコスト効率に優れた最新AIモデル「Hy4 flash」を発表しました。このモデルは総パラメータ数224B（アクティブ12B）のMoEアーキテクチャを採用しており、100万トークンのコンテキストウィンドウとネイティブなマルチモーダル機能を備えています。\n\n主な技術的特徴と成果は以下の通りです：\n- **圧倒的な低価格**: 入力100万トークンあたり0.07ドルという、従来のHy4比で約12分の1のAPI価格を実現。\n- **アーキテクチャの最適化**: Hybrid Attention、LatentMoE、Engramの統合により、KVキャッシュをHy4の1/6に削減し、150 tokens/sを超える推論速度を達成。\n- **実務特化型評価**: 公共ベンチマークだけでなく、独自の生産性指標「WorkIndex」において、DeepSeek-V4.1-Flash等の競合を上回るタスク完了効率を実証。\n- **オープンソース展開**: GitHub、HuggingFace等で重みを公開（オープンウェイト）し、Tencent CloudやWorkBuddy等のエコシステムを通じて即座に利用可能。\n\n日常的なドキュメント作成や検索、簡単なコーディングにおいて、精度・速度・コストの最適なバランスを提供することを目指しています。",
+    "topics": [
+      "Hy4 flash",
+      "LLM",
+      "Tencent",
+      "Mixture of Experts (MoE)",
+      "オープンソース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Hy4 flash: Ultimate cost-efficiency for everyday productivity"
+  }
+}

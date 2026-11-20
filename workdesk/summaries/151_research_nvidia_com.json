@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:30:40.812787+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "BirdDreams: 精密な自車制御とリアクティブな交通流を生成する走行世界モデル",
+    "url": "https://research.nvidia.com/labs/sil/projects/birddreams/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "単一のカメラ画像からパースペクティブ映像と鳥瞰図を同時生成し、自車の軌道に応じた周囲車両の反応までシミュレーション可能な新しい自動運転世界モデル。",
+    "summaryBody": "NVIDIAとKAISTの研究チームによって開発された「BirdDreams」は、自動運転のための革新的な自己回帰型世界モデルです。従来の手法とは異なり、周囲車両の将来の軌道を入力することなく、パースペクティブ映像（RGB）と鳥瞰図（BEV）を同時に予測します。これにより、自車の急な割り込みに対して周囲の車が車線を変更して回避するといった「リアクティブ（反応的）な振る舞い」を生成できます。\n\n技術的な特徴として、BEVを幾何学的なインターフェースとして利用し、入力された走行軌道（メートル単位）に合わせてBEVフレームを再投影・条件付けすることで、極めて精密な自車制御を実現しています。評価実験では、既存のベースラインと比較して軌道追従誤差（ADE）を35%削減し、人間による評価でも交通流のリアリズムにおいて高い支持を得ました。さらに、BEV上での車両配置の編集によるシナリオ生成など、高度なシミュレーションツールとしての活用も期待されています。",
+    "topics": [
+      "Autonomous Driving",
+      "World Models",
+      "Bird's-Eye View (BEV)",
+      "Diffusion Transformers",
+      "NVIDIA Research"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 92
+    },
+    "originalTitle": "BirdDreams: A driving world model with precise ego control and traffic that can react"
+  }
+}

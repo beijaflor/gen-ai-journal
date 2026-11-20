@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:01:51.460932+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントAIによるアナログシンセサイザーの設計",
+    "url": "https://cpldcpu.github.io/2026/11/14/touchsynth/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6やClaude 5.5世代のAIエージェントを駆使し、回路設計、シミュレーション、基板レイアウト、自動デバッグまでを統合的に完遂したアナログシンセ製作の技術実証。",
+    "summaryBody": "2026年の次世代AI（GPT-6 AstraやClaude 5.5 Opus）のリリースを受け、AIエージェント「Claude Code」を用いてアナログシンセサイザーをゼロから設計・製作した実験レポートです。\n\n- **設計手法**: 人間が上位概念を指定し、AIがngspiceでのシミュレーション、KiCadを用いた回路図作成、Pythonによる配置最適化、Freeroutingによる基板配線を実行しました。\n- **回路構成**: CH32V00x MCUを核に、JunoスタイルのDCO、Moogスタイルの24dB/octトランジスタラダーフィルター、VCAを実装。部品選定もAIが行いました。\n- **自動化された検証**: 基板製作後、オシロスコープとMCUのフィードバック経路をAIが制御し、自動でキャリブレーションと動作確認を実施しました。 \n\n設計開始から発注までわずか19時間という驚異的な速度で、複雑なミックスドシグナル回路が実用レベルで完成しています。",
+    "topics": [
+      "AIエージェント",
+      "基板設計",
+      "アナログシンセサイザー",
+      "Claude Code",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Agentic AI Designs an Analog Synthesizer · Tim's Blog"
+  }
+}

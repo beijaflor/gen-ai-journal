@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:43:17.312189+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "危険コマンドを止める Claude Code hook を書いたのに、素通ししていた",
+    "url": "https://zenn.dev/minewo/articles/claude-code-hook-fail-open",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのフックにおいて、コマンド抽出失敗時に「exit 0」を返すと危険なコマンドが実行されてしまう問題を解説し、安全なfail-closed実装への改善案を提示する。",
+    "summaryBody": "Claude CodeのPreToolUseフックを用いて危険なコマンドをブロックする際、パースエラーやJSON構造の不一致によって「exit 0」を返してしまうと、本来止めるべきコマンドが素通し（fail-open）されるリスクを解説しています。Claude Codeの仕様上、終了コードが「2」の場合のみブロックされ、その他の非ゼロコードは非ブロッキングエラーとして処理が進む点に注意が必要です。記事では、JSONの階層（tool_input.command）への対応漏れやjq/nodeのパース失敗時の挙動を実測。対策として、抽出失敗時に明示的にexit 2を返すフラグ管理や、trap EXITを用いた異常終了の捕捉、さらに最新のonFailure: \"block\"設定の併用など、AIエージェントのガードレールを確実に機能させるための実装手法を詳しく紹介しています。",
+    "topics": [
+      "Claude Code",
+      "Bash",
+      "セキュリティ",
+      "AI駆動開発",
+      "ガードレール"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

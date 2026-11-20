@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:27:05.710491+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが「知りすぎている」がゆえの落とし穴：専門的な解決策を「ありきたりな回答」にすり替えるLLMの構造的課題",
+    "url": "https://medium.com/@smoking2man/when-ai-knows-more-than-it-can-offer-how-training-turns-an-intelligent-assistant-into-a-generator-7e700f05163e",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "10種類の主要なAIモデルを用いた実験により、専門的なタスクを、訓練データの統計的傾向に基づいた汎用的で「それらしい」無難なシナリオにすり替えてしまうLLMの深刻な課題が明らかになった。",
+    "summaryBody": "著者オレグ・ホリン氏は、ChatGPTを含む10の主要なAIモデルに対し、「文芸翻訳者が出版社へ営業するための宣伝プラン」という具体的なプロンプトを入力する実験を行いました。結果、すべてのモデルが出版社への直接的なアプローチという本来の目的を無視し、ブログ運営や個人ブランド構築といった「一般的な専門家向けのネット集客術」を回答しました。この現象は「目的のすり替え（Objective Substitution）」と呼ばれ、単なる事実誤認であるハルシネーションよりも深刻です。原因として、RLHF（人間によるフィードバック）において、専門的な正解よりも『構造化され、親しみやすく、見慣れた回答』が評価されやすいバイアスが指摘されています。モデルは豊富な知識（情報的能力）を持ちながらも、それを特定の文脈に合わせて戦略的に適用する「運用的能力」に欠けており、結果として「平均的な回答」を出力する傾向が強まっています。AIが真の知的アシスタントになるには、説得力のあるテキスト生成ではなく、ユーザーの本来の目的を精緻に維持し、戦略を選択する能力の向上が不可欠です。",
+    "topics": [
+      "LLM",
+      "RLHF",
+      "AIの限界",
+      "認知バイアス",
+      "戦略的意思決定"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "When AI Knows More Than It Can Offer: How Training Turns an Intelligent Assistant into a Generator of Stock Answers"
+  }
+}

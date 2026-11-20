@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:42:32.584678+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GR00T 2: 汎用性、器用さ、適応性を実現するロボット基盤モデルのスケーリング",
+    "url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "NVIDIAは、将来の映像と行動を同時に予測するWorld-Action Modelを採用し、人間や他ロボットのデータから未知のタスクへ高速に適応可能なロボット基盤モデル「GR00T 2」を発表した。",
+    "summaryBody": "NVIDIAの研究チーム「GEAR」が発表したGR00T 2は、ビデオ予測とロボットの行動決定を統合した「World-Action Model (WAM)」に基づく次世代のロボット基盤モデルです。このモデルは、将来の視覚情報がどう変化するかを予測しながら行動を生成するため、物理的な相互作用の理解が深く、多様なロボット形態（並行グリッパー、多指ハンド、ヒューマノイド）に対応します。\n\n主な革新点は以下の通りです：\n1. **X-Adaptability (異形態適応):** 人間のビデオ（40万時間以上）や、市販のUMIグリッパーのデータから学習し、練習なしで新しいロボットへスキルを転移。人型ロボットが人間のデモだけで実験器具を扱うなどの高度な汎用性を示します。\n2. **高速適応とエージェント制御:** 未知のタスクでも5回程度のデモと30分の微調整で成功率を95%に向上可能。さらに、推論モデル（System 2）と連携することで、エラーからの復旧や「何処を掴むか」といった視覚的な指示（Visual Steering）にも対応します。\n3. **GR00T 2 Turbo:** 推論を最適化した軽量版により、Unitree G1などのロボット本体（Jetson Thor）でリアルタイムに全身制御を実行可能です。\n\nこのモデルは、シミュレーションと現実世界の性能が高い相関を持つことが確認されており、ロボット学習の新たな標準を提示しています。",
+    "topics": [
+      "ロボット基盤モデル",
+      "World-Action Model",
+      "NVIDIA GEAR",
+      "ヒューマノイド",
+      "転移学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:54:37.489208+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "StrataとゲーミングPCでローカルLLM生活は始められるのか",
+    "url": "https://zenn.dev/sonicmoov/articles/afbc7281c59cb8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 3090搭載PCと推論エンジン「Strata」を用い、ローカルLLMがコーディング実務においてクラウドモデル（Claude 3.5 Opus）にどこまで対抗できるかを検証した技術レポート。",
+    "summaryBody": "VRAM 24GBのRTX 3090と64GBメモリの環境で、推論エンジン「Strata」を介してQwen3.8-Flash-Next（IQ3量子化版）を動かし、Swift CLIアプリ作成を題材にベンチマークを実施。クラウドのClaude 3.5 Opusと比較した結果、ローカルモデルは「一発での正解率」では劣るものの、コンパイラやテストのフィードバックをループさせることで最終的に100%の合格率を達成可能であることを実証しました。主な課題は生成速度よりも「思考トークン」の多さによる待ち時間ですが、自動テスト環境を備えた「Claude Code」などのツールと組み合わせることで、実用的な開発環境を構築できると結論づけています。",
+    "topics": [
+      "ローカルLLM",
+      "Strata",
+      "Claude Code",
+      "RTX 3090",
+      "Qwen"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:03:00.863014+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "32年前のジープをClaudeでリバースエンジニアリングし、制御に成功",
+    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OBD2非搭載の1994年製ジープを、3ドルのArduinoとClaude Codeを用いて解析し、AIがエンジンコンピュータを直接制御するまでのプロセスを公開。",
+    "summaryBody": "1994年製ジープ・チェロキー（XJ）には現代のOBD2ポートが存在せず、標準的なスキャンツールが使用できない。このプロジェクトでは、3ドルのArduino Nanoを車両のECU（エンジンコントロールユニット）に配線し、AIエージェントであるClaude CodeやCodexを活用して独自のスキャナーを構築。AIが配線図の特定、走行ログの解析、さらにはコンピュータ内部のバイナリエグゼキュータをリバースエンジニアリングし、最終的にはAIが生成したコードで燃料ポンプを駆動したり、車両内部で独自のコードを実行することに成功した。レガシーなハードウェアと最新のAIエージェントを組み合わせた、高度なハードウェアハッキングの事例である。",
+    "topics": [
+      "Claude Code",
+      "リバースエンジニアリング",
+      "Arduino",
+      "車載コンピュータ",
+      "ハードウェアハック"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Claude reverse engineered my 32-year-old Jeep. Then it started controlling it."
+  }
+}

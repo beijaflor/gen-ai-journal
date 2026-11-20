@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:06:42.662035+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントを保護する：エージェント異常検知（Agent Anomaly Detection）実践ガイド",
+    "url": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google CloudのGeminiプラットフォームにおいて、エージェントの意図しない挙動やデータ漏洩を自動で監視・検知する「Agent Anomaly Detection」の導入からアラート設定までを解説するハンズオンガイド。",
+    "summaryBody": "LLMエージェントの権限が拡大するにつれ、1つの誤った判断が個人情報の流出やアクセス制御のバイパスといった深刻な損害を招くリスクが高まっています。本記事は、Google Cloudが提供する「Agent Anomaly Detection (AAD)」を活用して、これらの異常な振る舞いをリアルタイムで検知・分析するための実践的な手順を解説しています。\n\n主な内容は以下の通りです：\n1. **エージェントのデプロイとテレメトリ有効化**: ログとトレースを収集し、監視を可能にするための環境変数の設定方法。\n2. **異常検知のセットアップ**: LoggingバケットとObservabilityデータセットを連携し、プロジェクト全体で監視を有効化する手順。\n3. **脆弱性のシミュレーション**: 過剰な権限を持つツールを利用し、本来アクセスすべきでない人事データにアクセスしようとする攻撃シナリオの実行。\n4. **検出結果の分析と対策**: ツール悪用（Tool misuse）などの検出結果をコンソールで確認し、推奨される修正案（ツールの制限やガードレールの強化）を適用する方法。\n5. **運用監視の統合**: Cloud Monitoringによるメトリクス監視や、Security Command Centerへのアラート統合による組織的なセキュリティ運用の構築。\n\nこれにより、開発者はシステムクラッシュが発生しない潜在的なセキュリティリスクを早期に発見し、エージェントの安全性を向上させることが可能になります。",
+    "topics": [
+      "Agent Anomaly Detection",
+      "Google Cloud",
+      "Gemini",
+      "LLM Security",
+      "AI Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    },
+    "originalTitle": "Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:32:07.138684+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェント時代におけるセキュアなモバイルアプリ構築 (2026年)",
+    "url": "https://shopify.engineering/secure-agentic-apps",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントにより開発速度が11倍に加速したShopifyが、アタックサーフェスマップとAIスキルを活用してセキュリティをスケーラブルに担保する新しい手法を公開。",
+    "summaryBody": "Shopifyは、AIエージェントの導入により週あたりのコード変更量が前年比11倍（約43.4万行）に急増した事態を受け、従来の人間によるレビューを補完する新たなセキュリティ戦略を導入しました。この戦略の核となるのは、アプリ内のDeep LinkやWebView、保存データなどをカタログ化する「アタックサーフェスマップ」の構築です。OWASP基準や過去のインシデントから得た知見をAIが実行可能な「スキル」として定義し、各変更点を特定かつ詳細なコンテキストでレビューすることで、精度の高い脆弱性検知を実現しています。また、毎日AIモデルが差分を評価し、外部のセキュリティニュースもエージェントが監視して自動でブリーフィングを作成するなど、エージェント主導の開発ペースに合わせた高度なセキュリティ運用を実証しています。",
+    "topics": [
+      "モバイルセキュリティ",
+      "AIエージェント",
+      "脆弱性管理",
+      "Shopify Engineering",
+      "DevSecOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Building secure mobile apps in the agentic era (2026) - Shopify"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:56:24.251835+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIで作った結婚式向けの地図サイトを1年後にコードレビューして分かった3つのこと",
+    "url": "https://zenn.dev/taka26taka/articles/76bceac9cae8aa",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "結婚式ゲスト向けにAIを活用して開発した地図サイトを、1年後に技術的負債や規約遵守の観点から振り返り、ページネーションの罠や外部データ利用規約の重要性を解説した記事です。",
+    "summaryBody": "2025年の結婚式に合わせて開発した、地元スポット紹介サイト（React/CakePHP構成）の技術的な振り返りです。AI（CodexやChatGPT）を用いた開発効率の向上を確認しつつも、1年後の再検証により、CakePHPのpaginate()による意図しないデータ欠損、Leafletにおけるタイルサーバー利用ポリシーの不備、そしてGoogle Places APIのデータを別地図で表示・保存することによる利用規約違反といった重大な見落としが判明しました。AIによるコード生成やドキュメント作成の恩恵を認めつつ、最終的な法的判断や実装の詳細確認には人間の介入が不可欠であることを強調しています。",
+    "topics": [
+      "AI開発",
+      "コードレビュー",
+      "React",
+      "CakePHP",
+      "Google Places API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

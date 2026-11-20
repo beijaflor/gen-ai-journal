@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:55:09.410245+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mizchi/mutator を入れてみた",
+    "url": "https://zenn.dev/polyco/articles/e05cb28c569801",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成するテストの網羅性を検証するため、高速なミューテーションテストツール「mizchi/mutator」を導入し、StrykerJSとの比較や開発ワークフローへの統合手法をまとめた実践レポート。",
+    "summaryBody": "TypeScriptプロジェクトにおけるミューテーションテストツール「mizchi/mutator」の導入事例。AIによるテスト生成の信頼性を高めるため、テストをテストする「ミューテーションテスト」を開発フローに組み込んでいる。\n\n主な検証成果として、重要コード（金額計算や権限判定）におけるテストの穴を約18%特定し、230件以上のテストを追加することで品質を向上させた。性能面ではStrykerJSとの比較を行い、初回実行で約2.6倍の高速化、2回目以降はキャッシュと差分検知により0.5秒という圧倒的な速さを記録している。\n\n運用面では、AIの開発サイクル内に品質ゲートとして統合。`.mutator/`ディレクトリのキャッシュをgit worktree間で引き継ぐ仕組みや、変更差分に基づいた限定実行により、開発のテンポを損なわずに「意味のないテスト」を即座に修正・排除できる環境を構築した。カバレッジ100%でも防げない論理的な漏れを機械的に検出する実用的な知見が共有されている。",
+    "topics": [
+      "mizchi/mutator",
+      "Vitest",
+      "TypeScript",
+      "ミューテーションテスト",
+      "AI開発ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:55:42.778022+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ローカルLLMで動く翻訳拡張機能「Sakutto」を開発した話",
+    "url": "https://zenn.dev/jammaru_lab/articles/sakutto-local-llm-chrome-extension",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "WebGPUやWASMを活用し、ブラウザ上でローカルLLMを動かすことで、プライバシー保護と高速な翻訳を両立した無料・OSSの翻訳拡張機能「Sakutto」の開発背景と最適化手法の解説。",
+    "summaryBody": "個人開発者のじゃむまる氏による、ブラウザ完結型の翻訳拡張機能「Sakutto」の開発記です。PLaMo 3 Translate 0.8Bをモデルに採用し、WebGPUによるGPU加速とWASMによるCPUマルチスレッド処理を駆使することで、従来ローカルLLMの課題であった「遅さ」を克服。Offscreen Documentを利用したメモリ共有や、Firefox特有のWebGPU遅延の回避策など、実践的な最適化テクニックが詳述されています。また、PDFのレイアウトを維持した翻訳や動画字幕のリアルタイム翻訳といった高度な機能の実装、さらにはGrok BotとAIエージェント（Cursor）をフル活用した現代的な開発フローについても紹介されており、ブラウザ上でのAI活用を目指す開発者にとって非常に価値の高い内容となっています。",
+    "topics": [
+      "ローカルLLM",
+      "WebGPU",
+      "Chrome拡張機能",
+      "PLaMo",
+      "個人開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 96
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:30:22.850690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "2026年 AI検索・エージェント対応状況調査：/llms.txt、/agents.md、WAFブロック等の実態",
+    "url": "https://verisource.dev/benchmarks/ai-search-readiness-2026",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年11月時点のWebサイトにおけるAI検索・エージェント対応状況を、/llms.txtや/agents.md、JSON-LDなどの導入率から分析した実証調査結果。",
+    "summaryBody": "2026年11月に実施された40〜500のドメインを対象とした調査により、WebサイトのAI対応（AI Readiness）における深刻なギャップが明らかになりました。B2B SaaSやShopify、SEO代理店など多岐にわたるドメインを調査した結果、50%がカスタムの/llms.txtを公開している一方で、AIエージェントの行動を制御する/agents.mdをカスタマイズしているサイトはわずか5%にとどまっています。 主な技術的知見は以下の通りです： **1. サイレント・ブロックの存在**: 調査対象の5%は、robots.txtで許可しているにもかかわらず、WAF層でGPTBotなどのクローラーを遮断しています。 **2. スキーマの不足**: 82.5%がJSON-LDを実装していますが、AI検索で重要な回答データとなるFAQPageスキーマの導入率は7.5%と極めて低いです。 **3. プラットフォーム間の格差**: ShopifyなどのネイティブCMS利用サイト（平均スコア76.5）に対し、ヘッドレス構成のサイト（平均42.8）はAI対応において大きな「ペナルティ」を受けている実働が浮き彫りになりました。AI検索エンジンやエージェントが情報の真実性を判断するためのプロトコル整備が、今後のWeb戦略において重要になると指摘されています。",
+    "topics": [
+      "AI Search Readiness",
+      "llms.txt",
+      "JSON-LD",
+      "SEO",
+      "AI Agents"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "2026 AI Search & Agent Readiness Study (/llms.txt, /agents.md, GPTBot WAF & JSON-LD) | Verisource"
+  }
+}

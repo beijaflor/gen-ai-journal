@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:38:20.254719+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIモデルとAIエージェントをつなぐ「APIルーター」の危険性：428件の調査で判明した乗っ取りと情報漏えいの実態",
+    "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003310/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントとLLMを中継する「APIルーター」を調査した結果、一部のサービスが認証情報の窃取やAIの命令書き換えを行っている実態が明らかになった。",
+    "summaryBody": "米カリフォルニア大学サンタバーバラ校（UCSB）などの研究チームは、AIエージェントとLLMプロバイダー（OpenAIやAnthropic等）を仲介するサードパーティ製サービス「APIルーター」428件を調査した研究報告を発表した。APIルーターは利便性が高い一方で、中継地点で通信の暗号化（TLS）が解除されるため、運営者が認証情報やAIの指示内容を自由に閲覧・改ざんできる脆弱性がある。調査の結果、有料・無料を問わず一部のルーターで、APIキーやAWSアクセスキー、暗号資産の秘密鍵を盗む「シークレット窃取」や、AIが生成したコマンドをウイルス入りURLや偽パッケージ名に書き換える「ペイロード注入」などの悪質な行為が確認された。現在の主要なAI APIには改ざんを防ぐデジタル署名が欠如しており、信頼できない中間者を経由するリスクは極めて高いと警鐘を鳴らしている。",
+    "topics": [
+      "AIエージェント",
+      "APIルーター",
+      "LLMサプライチェーン",
+      "サイバーセキュリティ",
+      "情報漏えい"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

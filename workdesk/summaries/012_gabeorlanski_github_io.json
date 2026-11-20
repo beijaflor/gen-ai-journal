@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:04:53.113960+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "スロップはスタックの上層へ：AIエージェントによるコード生成の設計課題",
+    "url": "https://gabeorlanski.github.io/posts/slop-moves-up/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが生成するコードにおいて、単純な記述ミス（行レベルのスロップ）は減少しているが、不適切な抽象化や既存ライブラリの無視といった、より高度な設計レイヤーでの品質低下が顕在化している。",
+    "summaryBody": "Gabriel Orlanski氏による本レポートは、最新のAIモデル（GPT-6やClaude 5.5/Fable等）が生成するコードの品質を、SlopCodeBenchなどの独自ベンチマークを用いて詳細に分析したものである。調査の結果、過去1年間で構文ミスや冗長な記述といった「行レベルのスロップ」は大幅に改善されたものの、問題の所在はより抽象的な設計判断へと移行していることが判明した。\n\n主な発見として、第一に、新しいモデルは例外処理を多用するようになったが、それに伴い不要なチェックや仕様にないロジックを勝手に追加し、コードを肥大化させる傾向がある。第二に、ClaudeやGLMといった一部の最新モデルにおいて、現代のPython 3環境で古いPython 2の記述スタイル（%フォーマットやobject継承など）が急増する「先祖返り」現象が見られる。第三に、最も深刻な問題として、既存のライブラリに目的の機能があるにもかかわらず、エージェントはそれを無視して自前で再実装（車輪の再発明）を行う「ライブラリ使用の欠如」が、LibraryUseBenchにおいて73%〜100%の確率で発生している。\n\n今後、エージェントが他者の作成したコードを基に開発を行う機会が増える中で、単なるタスク完遂能力だけでなく、将来の利用や保守を考慮した「ソフトウェア設計の先見性」が評価の重要な指標になると結論づけている。",
+    "topics": [
+      "AI Code Generation",
+      "Software Engineering",
+      "Large Language Models",
+      "Code Quality",
+      "Benchmarking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "Slop Is Moving Up the Stack"
+  }
+}

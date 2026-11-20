@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:50:26.417658+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "24/7稼働エージェント（Always-on agents）の構築ガイド",
+    "url": "https://claude.com/ja/resources/articles/building-always-on-agents",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicが、セッションを跨いで自律的に動作し続ける「Always-on（常時稼働型）エージェント」を実現するための5つの主要な設計原則とアーキテクチャを解説しています。",
+    "summaryBody": "ユーザーの直接的な指示を待たずに自律的にアクションを実行する「Always-onエージェント」の構築方法に関する技術ガイドです。実際には常にプロセスが動作しているわけではなく、イベント駆動で「起動・実行・休止」のサイクルを繰り返すことで、ユーザーには常時稼働しているように見せる手法を提唱しています。アーキテクチャを構成する5つの主要要素（イベントインボックス、タイマー、メモリ、権限、アウトボックス）について詳しく紹介。モデルの判断能力の向上とコストの低下により、長期的なプログラミングタスクなどの自律実行が現実的になった背景を説明し、Claude Codeの実装例を交えながら、権限委譲やユーザー承認（Deferred tool calls）の重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "Anthropic",
+      "システム設計",
+      "自律型AI",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 90
+    },
+    "originalTitle": "Building always-on agents | Claude by Anthropic"
+  }
+}

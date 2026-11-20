@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:04:22.299414+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "生成AIは非英語テキストの処理において、英語よりも多くのエネルギーを消費する：ミシガン大学の研究",
+    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ミシガン大学の研究により、生成AIは非英語テキストの処理に英語の最大180倍のエネルギーを消費し、精度低下とコスト増大という「二重の罰」を非英語圏ユーザーに強いていることが判明した。",
+    "summaryBody": "ミシガン大学の研究チームは、LLM（大規模言語モデル）が英語以外の言語を処理・生成する際のエネルギー効率を調査し、英語と比較して1.4倍から180倍ものエネルギーが必要であることを明らかにした。この格差の主な要因は『トークン化』の非効率性にある。英語に最適化された既存のトークナイザーは、ヒンディー語やベンガル語といった複雑な文字体系を処理する際、1単語あたりにより多くのトークンを割り当てる必要がある。これがメモリ消費量と演算負荷を押し上げ、結果としてエネルギー消費を増大させている。この格差は、非英語圏のユーザーが高い利用料金を課される、あるいはモデルから低品質な回答しか得られないというデジタル格差を助長する懸念がある。研究者らは、特定言語に最適化したモデルの開発や、効率的な翻訳パイプラインの導入を解決策として提言している。",
+    "topics": [
+      "生成AI",
+      "エネルギー効率",
+      "多言語対応",
+      "トークナイザー",
+      "デジタル格差"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Generative AI uses more energy on non-English text"
+  }
+}

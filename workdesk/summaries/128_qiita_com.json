@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:36:28.172969+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIも「一晩寝かせる」と考えがまとまる：Anthropicの「Dreaming」メカニズムとClaude Codeによる追実装",
+    "url": "https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが夜間にログを振り返り、記憶の修正や情報の構造化（Wiki化）を行うことで回答精度と効率を高める手法「Dreaming」の解説と検証。",
+    "summaryBody": "Anthropicが提唱する「Dreaming」は、人間の睡眠中の記憶整理に似たプロセスをAIエージェントに導入する手法です。日中の作業ログを夜間に見返し、誤った情報の修正やWikiへの整理を行うことで、長期的な記憶の精度を向上させます。\n\n### 主なポイント\n- **記憶の4層構造**: ログ、自動メモ、Wiki、コンテキストの4段階で情報を管理し、必要な情報のみをコンテキストに載せる効率的な設計。\n- **精度の向上**: 複数資料を横断する複雑な質問において、Wikiを活用することで回答精度が大幅に向上（検索のみの53%から61%へ）。\n- **Claude Codeによる検証**: 著者が独自に実装した「寝かせる」プロセスにより、トークン消費量を36%削減しつつ、高い回答精度を維持できることを実証。\n\n記事では具体的なプロンプトやコマンド例も公開されており、AIエージェントに実用的な長期記憶を持たせるための知見がまとめられています。",
+    "topics": [
+      "Anthropic",
+      "Dreaming",
+      "Claude Code",
+      "AIエージェント",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

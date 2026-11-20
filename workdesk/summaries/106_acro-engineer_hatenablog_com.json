@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:41:51.068943+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Optimizerを使ってHosted Agentを最適化する",
+    "url": "https://acro-engineer.hatenablog.com/entry/2026/11/18/120000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Microsoft Azure AI FoundryのAgent Optimizerを使用し、評価データに基づいてAIエージェントのプロンプトやツール定義を自動最適化するプロセスとその効果を検証した技術解説。",
+    "summaryBody": "Microsoft Azure AI Foundryの新機能「Agent Optimizer」を用いて、Hosted Agentのパフォーマンスを自動改善する手法を解説しています。Agent Optimizerは、プロンプト、スキルの説明、ツール定義、使用モデルを評価結果に基づき反復的に書き換える機能です。本記事では、Cosmos DBを照会する在庫管理エージェントを対象に、最適化用データと独自の評価器（tool_callsの実行結果まで採点するカスタムプロンプト評価器）を構築し、最適化を実行しています。結果として、スコアが0.561から0.800に向上し、「倉庫名からIDを特定してから照会する」といった高度な振る舞いが自動生成されました。一方で、特定データへの過剰適合（オーバーフィッティング）や、曖昧な問いに対する聞き返しが減るなどの副作用も報告されており、生成された候補をデプロイする前に人間による内容の検証が必要であると強調されています。",
+    "topics": [
+      "Microsoft Azure AI Foundry",
+      "Agent Optimizer",
+      "AIエージェント",
+      "LLM評価",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 90
+    }
+  }
+}

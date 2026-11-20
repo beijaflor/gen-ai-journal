@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:44:22.456089+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用したPerlのGo移植（テスト編）",
+    "url": "https://tech.mirrativ.stream/entry/2026/11/17/100000",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ミラティブがClaude Codeを活用し、250個のPerl E2Eテストを約9.5週間でGoへ完全移植した際のマルチエージェント設計と知見蓄積プロセスを解説。",
+    "summaryBody": "ミラティブ社のバックエンド基盤チームが、PerlからGoへの言語移行の一環として実施したE2Eテストの自動移植プロジェクトの事例紹介です。Claude Codeを活用し、250ファイルのテストを短期間で移植するために構築された「t2go」スキルの設計思想が詳しく述べられています。具体的には、計画・実装・テスト・レビュー・仕上げの5フェーズに分け、SonnetやOpusなどのモデルを役割に応じて使い分けるマルチエージェント構成を採用。また、AIが誤った因果関係をコメントに残す課題に対し、「知見ファイル（pitfalls.md等）」を自己更新させることで精度を向上させる「知見ループ」の仕組みが特徴的です。最終的に人手による確認を最小限に抑えつつ、既存テストの欠陥や形骸化したコードの発見にもつながったことが報告されています。",
+    "topics": [
+      "Claude Code",
+      "Go",
+      "Perl",
+      "AIエージェント",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

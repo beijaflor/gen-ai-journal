@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:26:32.893168+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1人の人間とAIエージェント群が構築した30のライブラリ：データベースからゲームエンジンまで",
+    "url": "https://recursiveai.org/blog/what-my-software-factory-built/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Recursive AIのKurtis Welch氏が、自身が管理するAIエージェントによる「ソフトウェア工場」を用いて、190万行におよぶ30種類の高度なライブラリを短期間で構築・維持している手法を公開した。",
+    "summaryBody": "この記事では、1人の開発者が複数のAIエージェントを指揮し、プロフェッショナルチームが長期間かけて作成するような高度なソフトウェア（SQLite互換DB、確定論的物理エンジン、GPUスタック、MS Officeファイル操作ライブラリ等）を30種類、計190万行以上開発・維持している事例が紹介されています。システムの核となる「ソフトウェア工場」は、プランナー、プロジェクトマネージャー、ビルドリード、エンジニアという役割別のエージェントで構成されており、人間はスマホに届く「Shipカード」を確認し、最終的なリリース判断を下す役割を担っています。特に、異なるプラットフォーム間でもビット単位で一致する確定論的計算（OnePhysics）や、既存ツールとの厳格な互換性テスト（OneLiteのSQLite互換性）など、高い品質基準を自律的に維持している点が特徴です。GitHubでの外部からの指摘に対しても、エージェントが自律的に修正・ビルド・テストを行い、数時間で修正版をリリースするフローが確立されています。",
+    "topics": [
+      "AI Agents",
+      "Software Automation",
+      "C#",
+      "Deterministic Physics",
+      "AI-Native Development"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "What my software factory built: 30 libraries, from a database engine to a game engine"
+  }
+}

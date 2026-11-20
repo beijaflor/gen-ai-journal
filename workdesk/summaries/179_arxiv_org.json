@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:24:16.216810+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PTP: 近似的に正確なプロンプト復元を実現する「前トークン予測」に基づいたLLMインバージョン",
+    "url": "https://arxiv.org/abs/2607.29378",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMの出力から元の入力を逆算するため、順方向の学習とは対称的な「前トークン予測（Previous-Token Prediction）」を用いる新しいブラックボックス型インバージョン手法を提案。",
+    "summaryBody": "大規模言語モデル（LLM）の出力から入力プロンプトを特定する「LLMインバージョン」は、従来は意味的な類似性を追う手法が主流であり、モデル内部の重みやロジットへのアクセスを必要とする場合が多くありました。本論文が提案する「PTP」は、ターゲットモデルをブラックボックスとして扱い、そのモデル自身が生成したデータから「前トークン予測」を行う逆言語モデルをゼロから学習させます。このアプローチにより、順方向の次トークン予測プロセスと対照的な生成リンクを確立し、元のプロンプトを高い忠実度で復元することに成功しました。サンプリングを通じて多様なプロンプト候補を生成可能であり、異なるデータセットやモデル間での汎用性と転送性も実証されています。評価実験では、トークンベースの指標において従来手法を上回る性能を示しています。",
+    "topics": [
+      "LLM Inversion",
+      "Prompt Engineering",
+      "Reverse Engineering",
+      "Privacy & Security",
+      "Model Interpretability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 80,
+      "annexPotential": 90,
+      "overall": 85
+    },
+    "originalTitle": "PTP: Previous-Token Prediction based LLM Inversion for Near-Exact Prompt Reconstruction"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:58:57.491538+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "内製 Background Agent “haro”に アラート対応を任せたら 回すたびに賢くなっていった",
+    "url": "https://tech.layerx.co.jp/entry/haro-alert-loop",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LayerXが開発したAIエージェント「haro」を用い、アラートの調査から修正PR作成、さらにはWikiを介した自己学習ループによる運用改善を実現した事例紹介。",
+    "summaryBody": "LayerX社において、内製Background Coding Agent「haro」をアラート対応業務に導入した実践記録です。このエージェントは1時間おきに起動し、Slackのアラート収集、Datadogやコードを用いた原因調査、そしてドラフトPRの作成までを非同期に実行します。最大の特徴は、エージェントが調査手順や既知の事象をまとめたWikiを自ら更新・参照する「自己改善ループ」を組み込んでいる点です。これにより、過去の失敗を繰り返さず、回を追うごとに調査精度が向上します。約3週間半の運用で、29本の修正PRを起草し、アラートノイズの削減や人間が対応しきれなかった検証環境の監視強化に大きな成果を上げています。エージェントによる改善範囲と人間の承認範囲を明確に分けることで、安全かつ自律的な運用を実現しています。",
+    "topics": [
+      "AI Agent",
+      "LayerX",
+      "開発効率化",
+      "SRE",
+      "LLM活用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

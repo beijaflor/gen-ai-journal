@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:07:15.841397+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TPU上でのビットレベルの学習・推論一致（Zero-TIM）による安定した方策内強化学習の実現",
+    "url": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "TPU上でのLLM強化学習において、サンプラーとトレーナー間の数値的な差異をビットレベルで解消し、学習の安定性を大幅に向上させる手法「Zero-TIM」が発表されました。",
+    "summaryBody": "LLMの強化学習（RL）、特に方策内学習（On-Policy RL）は数値的な不安定さに極めて敏感であり、推論時のトークン生成と学習時の勾配更新の間に生じる微小な差異が学習を停滞させる要因となります。本記事では、Googleの開発チームがCloud TPU向けに構築した「Zero-TIM（Zero Train–Inference Mismatch）」という解決策を解説しています。\n\n浮動小数点演算の非結合性に起因する「ビット単位の不一致」を防ぐため、以下の4つの手法を採用しています：\n1. **シャード内演算の固定**: Pallasカーネルを用いて累積順序と中間精度（float32）を固定し、入力形状に依存しない決定論的な演算を実現。\n2. **通信削減の順序付け**: テンソル並列における各ランク間の部分和の加算順序をプログラム上で明示。\n3. **スコアリングパスの共有**: サンプラー、サービング・プレフィル、トレーナー間で同一のlog-softmax処理とアクション選択パスを共有。\n4. **微分可能なサービング**: サービング用のフォワードパスをJAXのカスタムVJP（ベクトル・ヤコビアン積）でラップし、訓練時にも同一の計算パスを使用。\n\n64台のTPU v5pを用いた検証の結果、サンプラーとトレーナー間の対数確率（logprob）の差異を完全にゼロにし、重要度サンプリング（TIS）などを用いる従来手法よりも高い解決率と学習の安定性を達成しました。この実装はJAXネイティブな強化学習ライブラリ「Tunix」として公開されています。",
+    "topics": [
+      "Reinforcement Learning",
+      "TPU",
+      "JAX",
+      "Pallas",
+      "Numerical Stability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch"
+  }
+}

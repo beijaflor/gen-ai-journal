@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:44:50.971092+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ISUCON2026と私とPostgreSQL",
+    "url": "https://soudai.hatenablog.com/entry/2026/11/16/143354",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "PostgreSQL 18の新機能やJIT、CTE、JSONB等を活用し、ISUCON2026のボトルネック（特にRTT）をデータベース層の改善によって解消した高度な実践記録。",
+    "summaryBody": "ISUCON2026の題材「ISUReal」に対し、PostgreSQL 18へのアップグレードと徹底的なクエリ最適化を行った事例です。主な施策として、JITコンパイルが逆効果となっていた1行テーブルの統計情報修正、RETURNING句やPL/pgSQLによるアプリ・DB間の往復（RTT）削減、CTE（WITH ... AS MATERIALIZED）を用いた集合集計の効率化が挙げられます。また、PostgreSQL 18のcasefold()関数と生成列、pg_bigm拡張を組み合わせた高度な日本語検索の高速化や、JSONBによる通知対象のパッキングなど、DBの機能を最大限に引き出す手法を解説しています。競技の枠を超え、実務におけるDB設計やパフォーマンス改善にも極めて有用な知見が凝縮されています。",
+    "topics": [
+      "PostgreSQL 18",
+      "ISUCON2026",
+      "SQLチューニング",
+      "データベース設計",
+      "パフォーマンス最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

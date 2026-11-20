@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:45:36.506840+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenVessel: ブラウザの中で動くNode.js対応の仮想マシン",
+    "url": "https://kobesoft.co.jp/oss/openvessel/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenVesselは、ブラウザのタブ内でNode.js、npm、シェルを完結して動作させる、Apache-2.0ライセンスのオープンソースなブラウザ内仮想マシンです。",
+    "summaryBody": "神戸ソフトが開発したOpenVesselは、Node.js v26（v26.13.0）に対応したブラウザ内仮想マシンです。開発者のPCにNode.jsをインストールすることなく、URLを開くだけで`npm install`や`npm run dev`などの開発ワークフローを実行できます。技術的特徴として、Node.jsの内部JavaScript実装をそのまま利用し、内部バインディング層のみを再実装する手法を採用。ネイティブモジュールはWebAssembly版を活用し、Service Workerを介した仮想ポートによるプレビュー環境を提供します。オリジン分離によるセキュリティ確保や、他プロジェクトのコードを参照しないクリーンルーム方式の開発も特徴です。CMSへの組み込みや、環境構築不要のチュートリアル、プルリクエストのプレビュー環境構築など、幅広い用途が想定されています。",
+    "topics": [
+      "Node.js",
+      "WebAssembly",
+      "Open Source",
+      "Development Tools",
+      "Virtual Machine"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

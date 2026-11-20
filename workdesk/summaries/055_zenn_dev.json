@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:53:47.852493+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM推論エンジンの内部実装を解読する：LlamaからGemma 4、gpt-ossまでの計算グラフ構築（中編）",
+    "url": "https://zenn.dev/shozotanaka/articles/632191056c62f4",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "自作LLM推論エンジン「ggmlLM」の実装を通じ、Llamaを基本骨格とした主要LLMの計算グラフ構造、KVキャッシュ管理、およびモデル固有の最新最適化手法をコードレベルで詳細に解説する技術記事。",
+    "summaryBody": "本書の中編では、LLM推論エンジンの心臓部である計算グラフの構築とセッション管理に焦点を当てています。\n\n1. **Llamaアーキテクチャの解剖 (第5章)**: ggmlを用いた計算グラフ構築の基本を詳解。埋め込み、RMSNorm、RoPE、Grouped-Query Attention (GQA)、SwiGLU FFNといった各コンポーネントの実装とテンソル形状の変遷を辿ります。\n2. **セッションとKVキャッシュ (第6章)**: 推論の効率化に不可欠なKVキャッシュの管理。スライディングウィンドウ層における循環バッファの活用、マスク処理、チャット履歴を再利用するためのTruncate処理の実装を解説します。\n3. **Gemma 3/4の進化 (第7・8章)**: Llamaとの差異としてGemma系を解説。Gemma 4特有の「層ごとの埋め込み (PLE)」、共有KVレイヤー、混合専門家 (MoE) といった高度な最適化手法、およびメモリ節約技術を紹介します。\n4. **gpt-ossと特殊実装 (第9章)**: OpenAI公開モデルを例に、YaRNによる文脈長拡張、アテンションシンクによる計算安定化、MXFP4量子化の扱いを解説します。\n\n全編を通して、llama.cppとのビット単位での計算結果一致を検証基準としており、推論エンジンの正確な実装方法を学ぶための実践的なガイドとなっています。",
+    "topics": [
+      "LLM",
+      "推論エンジン",
+      "ggml",
+      "Llama",
+      "Gemma"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 45,
+      "overall": 95
+    }
+  }
+}

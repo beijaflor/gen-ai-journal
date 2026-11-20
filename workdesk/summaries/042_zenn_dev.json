@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:57:02.279314+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
+    "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Qwen3.8 Flash Nextが日本語出力時に簡体字や中国語を混入させる問題を、出力層の特定のトークン重みを書き換えることで、他のパラメーターを一切変更せず解消した技術報告。",
+    "summaryBody": "合同会社CAPH TECHが実施した実験の記録。Qwen3.8-Flash-Nextモデルが日本語の回答中に「误って（誤って）」や「啤酒（ビール）」などの中国語を混入させる現象に対し、出力層の重み行列のうち、中国語トークンに対応する25,451行を未使用の行で上書きすることで、混入を完全に防止することに成功した。医療系の問いを用いた評価では、混入率が27%から0%に低下。この手法の特徴は、ターゲットとしたトークン以外の重みを1バイトも変更していない点にあり、モデルの元々の性能や推論結果への意図せぬ影響を最小化している。検証には自社開発のツール『Kestrom』を使用しており、特定のトークンのみが変更されていることのバイナリレベルでの確認や、推論結果の不変性を証明している。",
+    "topics": [
+      "LLM",
+      "Qwen",
+      "MLX",
+      "自然言語処理",
+      "モデル編集"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:34:16.633441+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "QA効率化におけるAI活用事例",
+    "url": "https://zenn.dev/applibot_tech/articles/6b8ec8d196634b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "アプリボットによる、仕様差分検知、不具合予測、データ静的チェックの3事例を通じた、AIとプログラムの最適な役割分担によるQA効率化の実践記録。",
+    "summaryBody": "スマートフォンゲーム開発におけるQA工程を効率化するため、AIを活用した3つの取り組みを詳説しています。1つ目は「仕様書と実装の差分チェック」で、プログラムによる事前フィルタリングでAIに渡すトークン量を1/10に削減しつつ、識別子の正規化や「判定不能」ステータスの導入で誤検知を抑制。2つ目の「不具合起票数の予測」では、統計モデルを主軸に、AIをデータの突合や予測乖離の理由分析に活用し、職種別の不具合発生傾向を可視化。3つ目の「静的チェック」では、10万行近いテストケースとマスターデータの自動照合によりQA工数を3割削減しました。共通して「AIに全てを任せない」「プログラムで検算する」「再現性が必要な処理はAIを避ける」という、コストと信頼性を両立する設計思想が強調されています。",
+    "topics": [
+      "AI",
+      "QA",
+      "Unity",
+      "ゲーム開発",
+      "業務効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

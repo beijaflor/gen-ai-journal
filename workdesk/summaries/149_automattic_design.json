@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:31:12.057445+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "デザインライティング：AIエージェントとの協働 — Automattic Design",
+    "url": "https://automattic.design/2026/11/16/design-writing-working-with-ai-agents/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Automatticのデザインチームが、AI特有の不自然な文章（AI slop）を回避し、UXライティングの品質とブランドの一貫性を保つための「エージェント・スキル」と実装手法を公開。",
+    "summaryBody": "Automatticは、AI生成テキストに見られる特定の語彙（「delve」など）や難解な文章構造、冗長な表現がユーザーの信頼を損なう「AI slop」問題に対処するため、2つのエージェント用スキルを開発しました。UIコピー用の「agentic-ux-copy」と音声スクリプト用の「voiceover-scriptwriting」は、単なる指示の羅列ではなく、決定論的なリンター（禁止ワード集）や、AIが勝手に推測せず人間に質問を投げかける「ask instead of assume」のワークフローを組み込んでいます。また、スタイルガイドを抽象的な文書のままにするのではなく、エージェントが実行可能なコードや具体的なブランドファイルとして実装することで、実務への適用率を劇的に向上させています。研究データに基づき、AIの癖を人間が制御・メンテナンスするための実用的なアプローチが提示されています。",
+    "topics": [
+      "AI Agents",
+      "UX Writing",
+      "Design Systems",
+      "Automattic",
+      "Content Strategy"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Design Writing: Working with AI Agents"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:57:15.481638+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI に書かせたテストは、どれだけ穴を見つけるのか。Claude Code・Codex・Gemini CLI のテストを変異テストで48回採点したら、95%以上を見抜き、仕様を渡すと点が下がった",
+    "url": "https://qiita.com/suwa_nobu/items/faf0d787a602cc5ec74c",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやGemini CLI等のAIにテストを書かせ変異テストで検証した結果、95%以上の高い検出率を記録したが、詳細な仕様を渡すとかえってスコアが下がる傾向が判明した。",
+    "summaryBody": "生成AI（Claude Code, Codex, Gemini CLI）が作成したテストコードの品質を、コードを意図的に改変して検出率を測る「変異テスト（StrykerJS）」を用いて定量的に評価した調査記事です。約35行のNode.jsモジュールに対し、仕様の有無やプロンプトを変えて計48回のテスト生成を試行。結果、Geminiはほぼ100%の変異を検出し、Claudeも極めて高い精度を示しました。興味深い知見として、仕様コメントを渡すとAIが「仕様外の挙動（エラーメッセージの内容等）」をテストしなくなるため、コード単体を渡した際よりも変異テストのスコアが下がるという、AIの忠実さがスコアに逆影響する現象が確認されています。一方、Codexは境界値のテスト漏れや環境依存の実行エラーが見られるなど、モデルごとの特性も明らかになりました。",
+    "topics": [
+      "生成AI",
+      "変異テスト",
+      "Claude Code",
+      "Gemini",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

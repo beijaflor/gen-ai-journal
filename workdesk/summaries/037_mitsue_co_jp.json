@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:58:14.955653+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bergamot Translatorを使ってCPUで英語を日本語に翻訳する",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/17_1849.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Firefoxの翻訳エンジンであるBergamot TranslatorをNode.jsからWebAssembly経由で呼び出し、GPUなしのCPU環境で高速な英日翻訳を実現する実装手法の解説。",
+    "summaryBody": "この記事では、Firefoxの翻訳機能でも採用されているオープンソースの翻訳エンジン「Bergamot Translator」をNode.js環境で動作させる方法を解説しています。主な用途として、クラウドサービスの障害情報を自社サーバー内で収集・翻訳して通知するシステムでの活用を想定しています。技術的な核心として、WebAssemblyモジュールをNode.jsから初期化する際の手順や、Node.jsに不足している行列積（GEMM）処理のフォールバック設定、8ビット量子化モデルを用いたメモリ管理、そして翻訳精度を安定させるためのプレースホルダー処理の実装方法が紹介されています。12th Gen Intel Core i7環境にて、短文の翻訳を約0.8秒で完了できる実用的なパフォーマンスが得られており、外部APIに依存しない軽量な内製翻訳システムの構築に有用な知見を提供しています。",
+    "topics": [
+      "Bergamot Translator",
+      "Node.js",
+      "WebAssembly",
+      "機械翻訳",
+      "CPU推論"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

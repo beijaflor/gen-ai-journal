@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:43:01.644764+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？",
+    "url": "https://zenn.dev/microsoft/articles/ms-decision-1-1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Microsoftの最新Decisionモデル「1.1」のGAに伴い、従来モデルとの推論速度、キャリブレーション精度、画像入力対応などの実機検証結果をまとめています。",
+    "summaryBody": "Microsoft-Decision-1.1の一般提供（GA）開始を受け、従来モデル（1.0）との詳細な比較が行われました。主な更新点として、ベースモデルがGemma 4 26B A4B（MoE）に変更され、画像入力への対応と推論パフォーマンスの向上が謳われています。検証では、入力トークン数が増えるほど1.1の高速性が顕著になり、約30Kトークンの入力で有意な差が確認されました。また、精度面では正解率そのものよりもキャリブレーション（ECE）が大幅に改善されており、モデルが出力する確率の信頼性が高まっています。日本語ベンチマーク（JCoLA/JNLI/JSTS）を用いた検証や、画像入力による「芋煮」の判別テストも実施されており、実運用における移行のメリットと特性が技術的に分析されています。",
+    "topics": [
+      "Microsoft Decision",
+      "Azure AI Foundry",
+      "機械学習モデル検証",
+      "キャリブレーション",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 20,
+      "overall": 90
+    }
+  }
+}

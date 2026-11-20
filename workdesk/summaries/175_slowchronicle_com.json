@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:25:16.712301+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用したリバースエンジニアリングの効率化手法",
+    "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "20年の経験を持つハッカーが、DeepSeekやGhidra MCP bridge等のAIツールを用いて、バイナリ解析やファームウェアの改変を劇的に高速化するワークフローを解説。",
+    "summaryBody": "著者は2026年の視点から、AI（DeepSeek v4.1 Flash等）とリバースエンジニアリング（RE）ツールを融合させた最新のワークフローを紹介している。Ghidra MCP bridgeを使用してAIエージェントに逆コンパイラを操作させ、ドキュメント生成や構造解析を自動化する手法を詳述。特に、AIの迷走を防ぐために「科学的手法」を模倣した『仮説駆動型デバッグ』という独自スキルを導入し、実験と検証のループをCSVで管理することで解析精度を高めている。この手法により、Alphasmart NEOのハックやシンセサイザーのカスタムファームウェア開発など、従来なら数年を要する高度なプロジェクトを短期間で成功させた成果が共有されている。Rustを用いた修正実装や、Python(uv)によるプロトタイピングの有用性についても触れられている。",
+    "topics": [
+      "リバースエンジニアリング",
+      "LLM",
+      "Ghidra",
+      "AIエージェント",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "LLM assisted reverse engineering"
+  }
+}

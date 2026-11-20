@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:56:50.479250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順",
+    "url": "https://zenn.dev/happy_elements/articles/201519107f93de",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicが推奨する、複雑なサブエージェント構成を「Skills」と「MCPツール」を活用した単一エージェントループへ統合し、品質と速度を向上させるための実践的なガイド。",
+    "summaryBody": "Anthropicが公開したブログ記事に基づき、複雑化したマルチエージェント構成から、必要な手順や知識を「Skills」として持つ単一エージェントへ移行（Fold）する際の判断基準と具体的な手順を解説しています。\n\n### 主な内容\n- **サブエージェント構成の課題**: 文脈の欠落、重複、矛盾したプロンプト、遅延、全体の評価（Eval）の困難さといった問題が指摘されています。\n- **移行の4ステップ**: \n  1. **評価セットの構築**: 最小10件のゴールデン例から始め、計測に基づいて移行を判断する。\n  2. **密結合なエージェントの統合**: 頻繁に連携するものを一つにまとめる。\n  3. **ツールとしての呼び出し**: サブエージェントをメインループからツールとして呼ぶ中間段階。\n  4. **Skills/MCPツールへの完全移行**: 手順をプロンプト（Skills）に、API呼び出しをMCPツールに移行し、評価指標が改善する場合のみ統合を維持する。\n- **実装のコツ**: ツール定義を30-50個以下に抑える「段階的な開示（Progressive Disclosure）」や、Claude Codeのような最新モデルの推論能力を活かしたプロンプトの簡素化が推奨されています。",
+    "topics": [
+      "AIエージェント",
+      "Anthropic",
+      "Claude Code",
+      "Model Context Protocol",
+      "LLMアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

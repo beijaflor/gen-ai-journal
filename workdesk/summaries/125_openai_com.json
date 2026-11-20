@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:37:24.209633+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI モデルによるチップ設計の進化",
+    "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIは、GPT-6.2 Astraなどの次世代モデルが独自チップJalapeñoやAMD製プロセッサのRTL設計において専門家レベルの最適化を達成し、PPAを劇的に改善したことを発表しました。",
+    "summaryBody": "OpenAIは、AIモデルを活用して半導体設計を加速させる最新の成果を公開しました。主な実績として、自社の推論チップ「Jalapeño」においてベクトル演算ユニットの面積を約13%、行列ユニットを約10%削減。また、AMDとの提携によりフラッグシップGPUのIPで最大14%のPPA（電力・性能・面積）改善を実現し、通常1年かかる進化を5ヶ月未満で達成しました。\n\nモデルの能力評価では、RISC-Vコア（PicoRV32/Ibex）を用いたベンチマークを実施。GPT-6.2 Astraは、既存コードの最適化および設計仕様からの新規生成の両タスクで、過去のモデル（GPT-5.6やGPT-6 Astra等）を大幅に上回るスループット向上を示しました。さらに、Synopsysと提携してEDAツールに特化した「GPT-Synopsys」の開発を進めており、AIが熟練のマイクロアーキテクトと同様に回路設計・検証ツールを操作できる環境の構築を目指しています。これにより、AIによるハードウェア設計の自動化と最適化が新たなフェーズに入ったことを示唆しています。",
+    "topics": [
+      "OpenAI",
+      "半導体設計",
+      "GPT-6.2 Astra",
+      "RTL最適化",
+      "EDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

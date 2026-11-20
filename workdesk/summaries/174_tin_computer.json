@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:25:33.706093+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Octopus, Gecko, Tortoise: AIキーを狙うスキャナーたちの正体",
+    "url": "https://tin.computer/blog/fake-ai-crawler-secrets-scanners",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIクローラーを装って.envファイルやAIツールの認証情報を盗み出そうとする3種類の高度なスキャナー（Octopus、Gecko、Tortoise）の挙動と対策を解説する詳細レポート。",
+    "summaryBody": "最新の調査により、AIボット（GPTBotやClaudeBot等）になりすまして機密ファイルを組織的に狙うスキャナーの存在が明らかになりました。\n\n1. **Octopus**: Go言語製で、32種類のクローラー名をランダムに使い分けます。サイトの技術スタック（Next.js、Vite等）を判別し、環境変数やクラウド認証情報を効率的にスキャンします。\n2. **Gecko**: .NET製で、Claude CodeやCursor、Gemini CLIといったAIコーディングツールの設定ファイルを標的にします。特定の不自然なUser-Agent文字列で見分けが可能です。\n3. **Tortoise**: 低速かつ隠密にデバッグエンドポイントを探索します。\n\nこれらはいずれも、公開された脆弱性アドバイザリから数週間以内に攻撃を開始しており、開発者は`.env`や`.git`ディレクトリへのアクセス制限、およびソースマップの適切な管理を徹底する必要があります。クローラー名だけを信じるのではなく、IPアドレスによる正当性の検証が不可欠です。",
+    "topics": [
+      "AI Security",
+      "Bot Detection",
+      "API Key Protection",
+      "Cyber Security",
+      "Web Scanners"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 96
+    },
+    "originalTitle": "Octopus, Gecko and Tortoise: the scanners hunting your AI keys"
+  }
+}
