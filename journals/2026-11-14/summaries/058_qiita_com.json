@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:37:37.954511+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【Claude Code】「サブエージェント、まだ分けますか？」Anthropicの「畳む」ガイドからサブエージェントの要否を考える",
+    "url": "https://qiita.com/yosuke-suzuki/items/33fbcc44c1c219f7b104",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "Anthropicが公開した「サブエージェントを統合する」指針に基づき、Claude Codeでの12体のサブエージェント運用コストと効率を実測データから分析した考察記事です。",
+    "summaryBody": "Claude Codeを用いた個人開発において、サブエージェントを分割する従来の慣習（コンテキスト保護）が1Mトークン時代に最適かどうかを、Anthropicの最新ガイドを参考に検証しています。著者は自身の20セッションの記録をスクリプトで解析し、費用の7割がメインループに集中していることや、特定のOpusモデルへの頻繁な起動がコストを押し上げている実態を明らかにしました。結論として、単純な役割分担はプロンプトやツールとしてメインループに「畳む」べきとし、並列化や権限分離、モデルの使い分けが必要な場合のみサブエージェントを残すべきという具体的な判断基準を提示しています。コストの2割弱が「起動時のオーバーヘッド」である点など、実務的な洞察が豊富な内容です。",
+    "topics": [
+      "Claude Code",
+      "Anthropic",
+      "AIエージェント",
+      "生成AI",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

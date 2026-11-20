@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:04:25.672817+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用したドメイン用語集の自動生成：専門知識をLLMに橋渡しする手法",
+    "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "組織固有の専門用語によるLLMの精度低下を防ぐため、既存のドキュメントやコードからLLMに用語集を自動生成させ、人間がレビュー・管理するプラクティスを提案する。",
+    "summaryBody": "マーティン・ファウラー氏は、LLMを特定ドメイン（特に大規模組織の業務）で活用する際の課題として、学習データに含まれない独自の専門用語への対応を挙げている。この解決策として、組織内のドキュメント、メール、チャット、ソースコードをソースとし、LLM自身に用語集を生成させる手法を提唱。LLMには未知の単語だけでなく、既知の単語が特殊な意味で使われているケース（混乱の原因になりやすい）も特定させる。生成された用語集は、ドメイン駆動設計（DDD）の「境界づけられたコンテキスト」に基づいて管理し、単一の標準用語集を作る誘惑を避けるべきだと強調している。人間によるレビューとバージョン管理を経て、他のLLMが参照できる形式で公開することで、エージェントによるコード生成の命名規則の改善や、内部用語の顧客向けUIへの漏洩防止など、エージェンティック・エンジニアリングの基盤として機能する。",
+    "topics": [
+      "LLM",
+      "Domain Driven Design",
+      "Glossary Generation",
+      "Agentic Engineering",
+      "Knowledge Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Generated Glossary"
+  }
+}

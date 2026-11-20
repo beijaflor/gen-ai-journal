@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:57:45.183578+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Googleの「Agent Anomaly Detection」による外部ベンチマークでのセキュリティ性能評価結果",
+    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが提供するAIエージェントの異常検知機能が、5つの外部ベンチマークにおいて有害な指示の実行を87%の精度で検知したことを報告しました。",
+    "summaryBody": "Googleは、Gemini Enterprise Agent Platformの「Agent Anomaly Detection」機能を、自社製ではない5つの公開セキュリティベンチマーク（AgentDojo、InjecAgent等）で評価した結果を公開しました。この機能はエージェントのトレースとログを非同期で読み取り、意図しない境界外の行動をフラグ立てするものです。\n\n**主なハイライト:**\n- **検知能力:** エージェントが有害な指示を実際に実行してしまったケースの87%を検知しました。\n- **分析対象:** ゴールハイジャック（乗っ取り）やツールの悪用に対して高い強度を示しました。\n- **技術的課題:** 長期メモリに注入された指示（Poisoned Memory）の検知率は18件中4件に留まり、微細なアクション（単一のページ訪問など）の検知にも改善の余地があることが判明しました。\n- **防御の推奨事項:** Model Armorによるプロンプトフィルタリングや、Semantic Governance Policyによるツール呼び出しの制限など、多層防御の重要性を説いています。\n\nこの評価は、AIエージェントを狙う「間接的なプロンプト注入」というOWASPのトップリスクに対する有効性を示す重要なステップとなっています。",
+    "topics": [
+      "Agent Anomaly Detection",
+      "AI Security",
+      "Prompt Injection",
+      "Gemini Enterprise",
+      "LLM Benchmarking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "How Agent Anomaly Detection scores on benchmarks we didn't write"
+  }
+}

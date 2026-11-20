@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:03:07.420249+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI導入による予期せぬ副作用の測定方法：保守性と持続可能性の評価",
+    "url": "https://www.oreilly.com/radar/measuring-ais-unintended-consequences/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによる開発効率向上の一方で懸念されるコードの保守性低下やバーンアウト等の副作用を、価値付加率や保守コストモデルを用いて定量的に評価する手法を提案。",
+    "summaryBody": "AIは開発速度を向上させる強力なツールですが、生成されたコードのブラックボックス化や技術的負債の蓄積といった「予期せぬ副作用」を伴うリスクがあります。本記事では、これらのリスクを経済的影響として捉えるための指標を解説しています。主な評価軸として、全作業時間に占める価値創造の割合を示す「価値付加率（Value-add percentage）」、DORAメトリクス、トークン使用量を挙げ、特に保守作業を「将来への税金」と見なす保守性モデルの構築を推奨しています。また、コード行数の爆発的増加やベンダーロックイン、心理的疲弊についてもモデル化の重要性を説く一方、指標を個人評価に使うと形骸化（ゲーミング）を招くため、あくまで手法の評価に留めるべきだと警鐘を鳴らしています。",
+    "topics": [
+      "AIソフトウェア開発",
+      "ソフトウェアメトリクス",
+      "技術的負債",
+      "保守性",
+      "エンジニアリングマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Measuring AI’s Unintended Consequences"
+  }
+}

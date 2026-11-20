@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:10:41.126146+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "#26 Home Repo パターン",
+    "url": "https://blog.lai.so/2026-11-13/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントが複数リポジトリを横断して効率的に作業するための、設定やスキルを集約した「ホームリポジトリ」を起点とする構成パターンを紹介。",
+    "summaryBody": "Matt Pocock氏が提唱する「Home Repoパターン」は、AIコーディングエージェントのワークスペース構成に関する手法です。通常、エージェントは起動したリポジトリの範囲内しか参照できませんが、このパターンでは開発対象とは別に「ホーム」となるリポジトリを用意します。ここにスキル定義、共有ドキュメント（AGENTS.md）、他リポジトリへのポインタを集約し、エージェントはここを起点に作業を開始します。筆者のlaiso氏もこの手法を実践しており、エージェントが特定の作業場（repos/など）でコードを編集する運用は、現代のエージェントの特性に非常に適していると述べています。セットアップ用プロンプトを活用し、素材の棚卸しを行ってから作業を開始するプロセスも推奨されています。",
+    "topics": [
+      "Home Repo Pattern",
+      "AI Agent",
+      "Matt Pocock",
+      "Software Development",
+      "Workspace Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 15,
+      "overall": 85
+    }
+  }
+}

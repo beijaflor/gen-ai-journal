@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:35:57.603065+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLM アプリケーションのプロンプトをどこで管理するか",
+    "url": "https://zenn.dev/painter/articles/663816c3195cec",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMアプリのプロンプト管理について、コード同梱やLangfuse等のツール利用を4つのパターンに整理し、コードとの結合度に基づいた選定基準を提案する。",
+    "summaryBody": "LLMプロンプトの管理場所を「コード同梱」「実行時取得」「Gitから登録」「管理ツールから同期」の4つのパターンに分類し、それぞれのメリット・デメリットを詳細に比較した記事です。プロンプトがコード側のスキーマ（Enumやツールの引数定義）とどの程度密接に結びついているかを重視し、結合度が強い場合はコード管理（Git）を、非エンジニアによる更新や即時反映が求められる場合は管理ツールの利用を推奨しています。また、Langfuse等のツールを使いつつ、ソースコード側でプロンプトのハッシュ値を記録することで、トレーサビリティを確保しながらGit管理の堅牢性を維持する折衷案についても言及されています。",
+    "topics": [
+      "LLM",
+      "プロンプトエンジニアリング",
+      "Langfuse",
+      "LLMOps",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    }
+  }
+}

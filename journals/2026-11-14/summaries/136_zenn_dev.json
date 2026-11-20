@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:18:04.481729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "React Nativeのローカル開発をAIに任せやすくするStimを試してみた",
+    "url": "https://zenn.dev/mybest_dev/articles/6b5d8597681def",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Stimは、Git worktreeごとにMetroポートやシミュレータを分離管理し、AIエージェントによるReact Nativeの並行開発を効率化するツールです。",
+    "summaryBody": "React NativeおよびExpo開発において、複数のGit worktreeを用いた並行開発やAIエージェントによる自動実装を支援するツール『Stim』の紹介記事です。主な特徴として、ワークツリーごとに専用のMetroポートとシミュレータを割り当てることで環境の競合を防ぎつつ、ネイティブビルドの成果物やキャッシュをワークツリー間で共有（@expo/fingerprintを活用）することでビルド時間を大幅に短縮します。また、AIエージェント向けのスキルや手順書生成機能（stim guide agent）を備えており、エージェントが自律的に開発環境を構築・操作できる仕組みを提供します。記事では、実際に4つの環境と5台のデバイスを同時稼働させる具体的な活用事例も紹介されており、開発DXを向上させる実践的な知見が含まれています。",
+    "topics": [
+      "React Native",
+      "Expo",
+      "Stim",
+      "Git worktree",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

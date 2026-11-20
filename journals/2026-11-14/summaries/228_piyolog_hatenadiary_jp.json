@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:54:51.677035+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Notion AIのチャット記録が委託先から流出した可能性についてまとめてみた",
+    "url": "https://piyolog.hatenadiary.jp/entry/2026/11/11/125745",
+    "language": "ja",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Notion AIの委託先であるFireworks AIで発生した二度のセキュリティ侵害により、一部ユーザーのチャット記録やAPIキーが流出した可能性を報じるまとめ記事。",
+    "summaryBody": "Notionが推論基盤として利用していたFireworks AIにおいて、2026年10月に内部認証情報の不正利用と第三者クラウド事業者の侵害という2つの経路で不正アクセスが発生した。この影響により、Notion AIのInsights機能等の処理に使われたチャット記録（プロンプトおよび生成内容）が流出した可能性がある。Notion側は『データ保持を行わない（ZDR）』契約を結んでいたが、Fireworks側の特定エンドポイントにデータが保持されていたことが判明した。影響範囲はNotion全ワークスペースの1%未満とされているが、日本国内でもLRMや日経リサーチなどの複数企業が被害を公表している。NotionはFireworksとの接続を遮断し、対象ワークスペースのオーナーに対し、サイドバーから流出データを確認できるツールを提供して注意を呼びかけている。",
+    "topics": [
+      "Notion AI",
+      "Fireworks AI",
+      "情報漏洩",
+      "サプライチェーン攻撃",
+      "セキュリティインシデント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

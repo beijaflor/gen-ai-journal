@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:57:48.445578+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Decisions API: 高速かつ高精度なマルチモーダル意思決定を実現",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "1回の推論パスで最大1,000件のマルチモーダルな質問を高速かつ極めて安価に処理できる、意思決定専用の「Gemini Decisions API」が登場しました。",
+    "summaryBody": "Googleは、テキスト、画像、音声、動画、PDFを含むマルチモーダルな入力に対して、高速にクローズドな選択（Yes/No、多肢選択、ルーブリック評価）を行うための「Gemini Decisions API」と専用モデル「Gemini Decision 1」を発表しました。従来のようにトークンを逐次生成するのではなく、1回のフォワードパスで選択肢をスコアリングするため、150〜250msという低レイテンシを実現しています。料金体系も特徴的で、入力100万トークンあたり0.10ドル、出力トークン料は無料です。これにより、エージェントのルーティング、ポリシーチェック、コンテンツの自動採点などのタスクを、既存のGemini 3.5 Flash-Lite等と比較して約5倍のコスト効率で実行可能です。各回答には確信度スコアが含まれるため、信頼性の高いシステム構築に寄与します。",
+    "topics": [
+      "Gemini",
+      "API",
+      "マルチモーダル",
+      "機械学習",
+      "Google DeepMind"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Gemini Decisions API: Fast, calibrated multimodal decisions"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:35:45.393527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "週間制限に3日で到達していたClaudeが、ModelとEffortの使い分けで5日持つようになった話",
+    "url": "https://zenn.dev/sun_asterisk/articles/1d1c65b1fe409a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeやチャットの利用制限を回避するため、作業工程ごとにモデルと推論設定（Effort）を最適化し、消費トークンを抑えつつ品質を維持する実践的な運用術。",
+    "summaryBody": "ClaudeのTeamプラン等で頻発する「利用制限」の問題を、設定の使い分けで解決する手法を解説した記事です。著者は、全工程を最高設定（Opus + High Effort）で実行していたことが制限到達の主因であると分析し、以下の戦略を提唱しています。\n\n### 工程別の推奨設定\n- **設計・調査**: Opus + Medium (判断の質を確保しつつトークン消費を抑制)\n- **実装**: Sonnet + High (手数が多い工程を軽量モデルで回す)\n- **レビュー**: Opus + XHigh (実装フェーズの軽量化によるリスクを、最後に最高精度で回収)\n\n### Claude Code運用のTips\n- `/clear` による不要なコンテキストの削除や、`opusplan`（設計はOpus、実行はSonnet）の活用が有効。\n- サブエージェントやMCPサーバーの消費内訳を `/usage` で確認し、コストを可視化する。\n\nこの使い分けにより、著者は週間制限への到達を3日から5日へと延ばし、短時間の制限にも一切掛からないワークフローを実現しました。",
+    "topics": [
+      "Claude",
+      "Claude Code",
+      "LLM",
+      "AI活用",
+      "コスト最適化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:36:14.585250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントに自分の開発環境を作らせ続けた2か月",
+    "url": "https://zenn.dev/otar/articles/switchboard-own-dev-environment",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeとCodexを活用し、GitHub API制限やメモリ管理などの課題を自作ツール「Switchboard」で解決しながら、2か月間で1,300件以上のPRを自動生成・マージした開発環境構築の記録。",
+    "summaryBody": "AIエージェント（Claude Code/Codex）に自らの開発環境「Switchboard」を構築させ続けた2か月の実践記録です。既存ツールの標準機能では対応が難しい「GitHub APIのレート制限回避（SQLiteによるローカル管理）」「LLM使用上限後の自動復帰」「メモリ不足対策としての実行枠制御」「公開リポジトリへの秘密情報流出防止フック」などの課題を、エージェント自身にコードを書かせて解決しました。実装・レビュー・マージ判定までを自動化するパイプラインを構築し、2か月間で3,455コミット、1,355件のマージ済みPRという驚異的なアウトプットを達成。ツールを外部から選ぶだけでなく、AIによる低コストな開発を背景に「自分に最適な環境を自ら作り、改善し続ける」という新たな開発パラダイムの有効性を示しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Codex",
+      "自律型開発",
+      "GitHub API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

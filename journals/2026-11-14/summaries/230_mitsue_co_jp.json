@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T00:54:27.375295+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAI Agents SDKを使い、必要なToolだけを持つブラウザエージェントを作る",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/12_1352.html",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "OpenAI Agents SDKとPlaywright CLIを組み合わせ、実行可能なツールを厳格に制限することで安全かつ特定の業務に特化した自作ブラウザ操作エージェントを構築する方法を解説しています。",
+    "summaryBody": "この記事では、OpenAI Agents SDKを活用して、特定の機能に限定した「ブラウザ操作エージェント」を自作する手法を紹介しています。CursorやClaude Codeのような汎用エージェントは多機能ですが、予期せぬ操作を防ぐための権限管理が難しい場合があります。対して自作エージェントでは、@function_toolデコレーターを使用してPlaywrightの特定操作（URLを開く、スナップショット取得、クリック、入力など）のみをツールとして定義し、エージェントが実行可能な範囲をコードレベルで制限できる利点があります。記事中では、特定のホスト名以外のアクセスをプログラム側で拒絶するバリデーションの実装例なども示されており、AIによる判断と従来のプログラムによる制約を組み合わせた、実用的な自動化のアプローチを提案しています。",
+    "topics": [
+      "OpenAI Agents SDK",
+      "Playwright",
+      "AIエージェント",
+      "Python",
+      "ブラウザ自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

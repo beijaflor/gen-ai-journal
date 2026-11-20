@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:24:46.659763+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DOC-foundry: 敵対的マルチエージェントによる検知エンジニアリング・フレームワーク",
+    "url": "https://github.com/mjha-arya/DOC-foundry",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LLMエージェントによるBlue対Redの敵対的ループと決定論的評価を通じて、実証済みのSigma検知ルールを自動生成する高度なセキュリティ・オートメーション・ツール。",
+    "summaryBody": "DOC-foundryは、LangGraph、Pydantic、Claude/Geminiを活用した「Detection-as-Code」のための先進的なフレームワークです。脅威情報（CVEやATT&CK技術など）を入力として、実効性が数学的・論理的に証明されたSigmaルールを生成します。\n\n### 主な特徴とワークフロー\n1. **敵対的自己修復ループ**: Blue Teamエージェントがルールを作成し、Red Teamエージェントが既知の回避手法（難読化やバイナリ名変更など）で攻撃を試みるサイクルを最大3回繰り返します。\n2. **決定論的レフェリー**: AIの主観ではなく、決定論的なSigmaマッチングエンジンがFP（誤検知）/FN（検知漏れ）を厳密に評価し、カバレッジ判定（Real-coverage / Brittle / Broken）を下します。\n3. **包括的な成果物**: 生成される「証明書付きバンドル」には、Sigmaルール本体、攻撃/正常テレメトリのテストコーパス、回避耐性のレポート、および再現性を保証するハッシュ値が含まれます。\n4. **レビューチェーン**: SOCリードやセキュリティステークホルダーのフィードバックを反映させるための専用パイプラインも備えており、実運用における調整（アラート量と検知精度のトレードオフ）を可視化します。\n\n既存の「AIによるコード生成」に欠けていた「実証」のプロセスを決定論的エンジンで補完している点が、本プロジェクトの最もユニークな点です。",
+    "topics": [
+      "Detection-as-Code",
+      "Sigma-rules",
+      "LangGraph",
+      "Multi-agent-systems",
+      "Security-Automation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "mjha-arya/DOC-foundry: Adversarial multi-agent detection engineering: Blue authors Sigma rules, Red attacks them, a deterministic referee proves coverage, and a stakeholder review chain ships the rule with its review trail."
+  }
+}

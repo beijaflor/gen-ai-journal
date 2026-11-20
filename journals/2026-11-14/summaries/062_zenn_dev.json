@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:36:46.200357+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "静的型付けはAIのバグを減らすか？ TypeScriptとJavaScriptで同じGit互換CLIを3本ずつ書かせて比べた",
+    "url": "https://zenn.dev/torudev/articles/dd45de860fc7c3",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claudeを用いて数千行規模のGit互換CLIをTypeScriptとJavaScriptで開発し、静的型付けがAIのコード品質、バグ発生率、開発コストに与える影響を定量的に比較検証したレポート。",
+    "summaryBody": "AIエージェントに同機能のGit互換CLI「tgit」を、TypeScript（TS）とJavaScript（JS）で各3本ずつ開発させ、その精度とコストを比較した実験。数千行規模（約5,000行）の実装において、TSはJSよりコードが約2割長く、キャッシュ読み込みによるトークン消費が16%増えたものの、最終的な精度に決定的な差は見られなかった。注目すべきは、型検査のないJS側のAIがTS側の約2倍の頻度で単体テストを実行していた点。強力なテスト環境下ではAIが自律的に品質を担保するため、型の有無によるバグ削減効果はこの規模では限定的であることが示唆されている。一方で、規模が拡大するほどJS側のテストコストが増大する可能性も指摘されており、AIによる大規模開発における言語選定の重要な視点を提供している。",
+    "topics": [
+      "TypeScript",
+      "JavaScript",
+      "Claude Code",
+      "AI開発",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

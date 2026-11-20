@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T06:16:36.042191+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MaxTextにおけるTPUを用いた長文脈学習のサポート：コンテキスト並列化による最大1400万トークンへの対応",
+    "url": "https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudはMaxTextにて、TPU 5p/7を活用し最大1400万トークンの学習を可能にする4つのコンテキスト並列化戦略とSplash Attentionの導入を発表しました。",
+    "summaryBody": "Google Cloudは、JAXベースのオープンソース学習フレームワーク「MaxText」において、長文脈学習（Long-context training）を効率化するコンテキスト並列化（CP）のフルサポートを発表しました。数百万トークン規模の学習における計算・メモリ・通信のボトルネックを解決するため、「All-gather」「All-to-All (Ulysses)」「P2P (Ring Attention)」「USP (Unified Sequence Parallelism)」の4つの戦略を実装しています。\n\nこれらの手法は、Tokamaxの「Splash Attention」カーネルと組み合わされており、TPU 5p上のLlama 3.1 8Bにおいて400万トークンで70%のMFUを達成、次世代のTPU 7（Ironwood）では最大1400万トークンまでシームレスに拡張可能です。記事では、KVキャッシュのサイズやモデルのヘッド数に基づいた最適なCP戦略の選択ガイドラインや、メモリ不足時のオフロード手法についても詳細に解説されています。これにより、リポジトリ全体のコード読み込みや長時間ビデオの解析が可能なLLMの構築が加速されます。",
+    "topics": [
+      "MaxText",
+      "TPU",
+      "Context Parallelism",
+      "LLM Training",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Announcing Long-Context Training on TPUs with MaxText Context Parallelism"
+  }
+}

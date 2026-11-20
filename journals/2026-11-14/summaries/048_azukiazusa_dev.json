@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T01:40:02.443039+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "@json-render/chat で AI が組み立てたカードを Slack に投稿する",
+    "url": "https://azukiazusa.dev/blog/json-render-chat-slack/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "@json-render/chat を利用して、LLM が生成した UI 仕様（Spec）を Slack の Block Kit に変換し、テーブルやグラフを含むリッチなカードを投稿・動的に更新するボットの実装ガイド。",
+    "summaryBody": "この記事では、2026年11月に公開された `@json-render/chat` フレームワークを使用して、Slack 上で高度な Generative UI を実現する方法を解説しています。主な内容は、AI にコンポーネントカタログから最適な部品（テーブル、グラフ、ボタン等）を選ばせ、それらを単一のメッセージとして組み立てる仕組みの構築です。\n\n実装のポイントとして、Chat SDK のアダプターを用いた Slack への投稿、AI SDK によるストリーミング出力の処理、および Slack の Block Kit における制約（テーブル数や文字数制限）を超えた際の `CardSpecError` ハンドリングと、エラー内容を AI にフィードバックして再生成させるフローが紹介されています。これにより、従来の「ツールごとに別メッセージで投稿する」制限を回避し、一貫性のあるリッチなユーザー体験をチャット UI 上で提供可能になります。",
+    "topics": [
+      "json-render",
+      "Slack",
+      "Generative UI",
+      "LLM",
+      "Block Kit"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

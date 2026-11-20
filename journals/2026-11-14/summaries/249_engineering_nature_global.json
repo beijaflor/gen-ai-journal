@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-15T06:15:08.754890+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCP を組み込んだアプリを手元で複数動かすための構成パターン",
+    "url": "https://engineering.nature.global/entry/2026/11/mcp-architecture-patterns",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "MCPを組み込んだ複数のアプリをローカル環境で動かす際のポート競合や設定の煩雑さを解消する、プロキシ型ハブ構成を含む5つの設計パターンを解説しています。",
+    "summaryBody": "MCP（Model Context Protocol）を自作ツールやモバイルアプリの開発に組み込む際、複数のアプリを同時に起動するとポートの競合やクライアント設定の肥大化が課題となります。本記事では、この問題を段階的に解決する5つの構成パターンを紹介しています。当初の「直接接続」から始まり、ポートを分ける方法、ハブを介して集約する方法、アプリ側からWebSocketでハブに接続する逆転構成、そして最終的にはハブをツール内容に依存しない「プロキシ」として機能させる高度な構成までを、Node.jsの実装例とともに詳しく解説しています。これにより、アプリ側のツール更新にハブを追随させる手間を省きつつ、動的に複数のMCPサーバーを管理する柔軟な開発環境の構築が可能になります。",
+    "topics": [
+      "MCP",
+      "Model Context Protocol",
+      "Claude Code",
+      "WebSocket",
+      "Node.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}
