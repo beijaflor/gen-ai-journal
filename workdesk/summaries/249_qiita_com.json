@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:35:57.085524+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI に作らせた Skill を「期待値」で評価する #ClaudeCode",
+    "url": "https://qiita.com/rioriver/items/17308685b10b3a413427",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成したClaude Code用Skillの品質を担保するため、質問への回答とそれに対応するファイル編集内容を「期待値」として定義し、AIに自動照合させる評価手法を提案している。",
+    "summaryBody": "AI駆動開発ツール「Claude Code」で使用するSkill（拡張機能）をAIと共同開発する際、生成された指示ファイル（SKILL.md等）の分量や非決定性により、人間が内容の正しさを網羅的に判断することが難しくなります。本記事では、この課題に対し、人間が判断可能な「質問と期待される出力（期待値）」の対応表を作成するアプローチを紹介しています。この過程で、AIが生成した選択肢の中に「実際には動作が変わらない無意味な分岐」や「定義のない曖昧な表現」が混入していることを発見できるという副次的効果も得られました。最終的な整合性チェックをAIに自動化させることで、開発者が評価基準の定義に集中し、AI製ツールの信頼性を客観的に説明できる手法を構築しています。",
+    "topics": [
+      "Claude Code",
+      "AI駆動開発",
+      "ソフトウェアテスト",
+      "LLM",
+      "QA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

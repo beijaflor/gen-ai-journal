@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:33:56.659374+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Decision ModelはFAQの回答の確認と問い合わせの振り分けに使えるか",
+    "url": "https://zenn.dev/genax_corp/articles/20261109-judge-models-faq-check",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "文章生成を行わず判定結果のみを返すDecision Model（Jev等）を、FAQの品質評価や検索フィルター等の実務タスクにおいて生成LLMと比較・検証したレポート。",
+    "summaryBody": "本記事は、JevやAzure OpenAIのDecisions API、Clefといった「Decision Model」を、FAQの運用フローに適用した際の性能検証結果をまとめています。検証の結果、はっきりとした情報の誤りや矛盾の検出において、Jev等のモデルは最高性能の生成LLM（gpt-6-luna）と同等の精度を発揮しつつ、応答時間（中央値0.16秒）やコスト、判定の安定性で大きく上回ることが示されました。一方で、条件が一つ欠けているような「微妙な情報不足」の検出や、多肢選択式のカテゴリー推定においては、生成LLMの方が高い正解率を維持しています。筆者は、大量の回答確認や検索結果の事後フィルターなど、速度とコストが重視される中間処理にはDecision Modelを活用し、より高度な論理判断が必要な箇所には生成LLMを併用する「適材適所」の構成を推奨しています。",
+    "topics": [
+      "Decision Model",
+      "LLM比較検証",
+      "FAQシステム",
+      "Jev",
+      "RAG"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    }
+  }
+}

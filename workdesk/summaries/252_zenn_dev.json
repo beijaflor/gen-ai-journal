@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:34:33.736663+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話",
+    "url": "https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントへの指示ルールをRDFのTurtle構文で構造化し、矛盾や例外の整合性を自動検査する手法と、Markdown記述との遵守率比較について解説した記事。",
+    "summaryBody": "AIエージェント（Claude Code等）に与える指示ファイル（CLAUDE.md/SKILL.md）が肥大化し、指示同士の矛盾や例外管理が困難になる課題を解決するため、W3C標準のデータ記述形式「Turtle」を採用する試みを紹介しています。\n\n### 技術的アプローチ\n- **構造化のメリット:** `must`, `should`, `allowed`, `rationale`（理由）などの述語をOWLで定義することで、ルールの「強さ」「理由」「例外」を一箇所に集約。RDFの階層構造（例：`mustWrite`は`must`の一種）を活用し、機械的な推論を可能にします。\n- **Lintによる自動検査:** Pythonとrdflibを使用した自作スクリプトにより、語彙外の述語、例外の整合性、同一ノード内での必須と禁止の矛盾（T005）などをCIレベルで検知。約260ノード、800行のルール管理を効率化しています。\n- **遵守精度の検証:** Claude Haikuを用いた比較の結果、特に「例外条件を含むルール」においてMarkdownやYAMLよりもTurtle形式の方が遵守率が高い傾向が示されました。\n\n### 留意点\nMarkdown形式に比べトークン消費量が約4割増加する点や、手順のような順序依存の記述には不向きである点が指摘されており、ルールの規模や共有頻度に応じた使い分けが推奨されています。",
+    "topics": [
+      "Claude Code",
+      "Turtle",
+      "RDF",
+      "AI Agents",
+      "Prompt Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:37:22.522690+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Harnessを理解するために、150行ほどのPythonで自作してみた",
+    "url": "https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "LLMを実用的なエージェントとして機能させるための制御基盤「Agent Harness」の概念を整理し、Pythonによる最小実装を通じてその役割を解説する記事。",
+    "summaryBody": "AIコーディングエージェント（Claude Code等）の核となる、モデルと外部環境を繋ぐ「Agent Harness」の仕組みに焦点を当てた技術解説です。筆者は「Agent = LLM + Harness」と定義し、ツール実行、コンテキスト管理、ガードレール、可観測性といった主要素を150行程度のPythonコードで具現化しています。具体的には、Anthropic SDKを用いたループ処理、ワークスペース外へのアクセス制限、コマンド実行の承認フロー、そしてPythonのバイトコードキャッシュによる不整合対策（PYTHONPYCACHEPREFIXの活用）など、実用的なエージェント開発におけるハマりどころとその解決策が示されています。単なるモデルの推論性能だけでなく、周囲の実行環境（Harness）の設計がエージェントの精度や信頼性に直結することを説いています。",
+    "topics": [
+      "AIエージェント",
+      "LLM",
+      "Python",
+      "Claude",
+      "Agent Harness"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

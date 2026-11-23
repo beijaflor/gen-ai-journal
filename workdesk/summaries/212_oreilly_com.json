@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:47:04.079753+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeが文章に透かしを入れる仕組みとその検証の現状",
+    "url": "https://www.oreilly.com/radar/claude-watermarks-your-words-and-you-cant-check-them-yet/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claudeをはじめとする最新のAIモデルが、生成テキストに人間には見えない「電子透かし」を埋め込む仕組み（SynthID-Text）とその技術的背景を詳細に解説する。",
+    "summaryBody": "AnthropicのClaudeを含む主要なAIモデルが、生成した文章に「電子透かし」を埋め込み始めている。本記事では、Google DeepMindが開発した「SynthID-Text」という技術を中心に、その仕組みを詳述している。従来の「グリーンリスト方式（特定の単語の出現確率を上げる）」とは異なり、SynthIDは単語選択の際のランダム性（サンプリング）に特定のパターンを組み込む。これにより、文章の質を落とさずに、統計的な解析のみでAI生成物かどうかを判定可能にする。しかし、この「鍵」が公開されると、透かしを逆手に取った回避や偽装が可能になるため、現在は一般ユーザーによる検出ツールへのアクセスは制限されている。記事では、読者がプログラミングを通じて透かしの概念を体験できるシミュレーション例も提供している。",
+    "topics": [
+      "Claude",
+      "SynthID",
+      "Generative AI",
+      "Digital Watermarking",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Claude Watermarks Your Words, and You Can’t Check Them (Yet) – O’Reilly"
+  }
+}

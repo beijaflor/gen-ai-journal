@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:35:22.641616+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Decision 1でスパム退治！",
+    "url": "https://zenn.dev/satoshi_yoneda/articles/decision-1-anti-spam",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Gemini Decision 1を活用し、従来のフィルタを回避する巧妙なスパムメールをIMAP経由で自動判別・隔離する自作スクリプトの実装と運用方法の解説。",
+    "summaryBody": "従来のSpamassassinやベイジアンフィルタ、DMARC等の技術では防ぎきれない、本文が自然でドメイン認証も通っている巧妙なスパムメールに対処するため、Googleの意思決定特化型モデル「Gemini Decision 1」を導入した事例です。\n\n著者は、メール配送パイプラインに直接LLMを組み込む際のリスク（遅延やAPI障害による不達）を避けるため、IMAP経由で定期的にINBOXを巡回して判定を行うアーキテクチャを採用。あらかじめprocmail等で既知のメールを仕分けた後に残った「未特定のメール」のみをLLMに投げることで、Google AI Proの無料枠（月10ドル分）の範囲内で運用を可能にしています。\n\n記事内では、Pythonによる実装コード（llm_mail_gate.py）が公開されており、ブランドURLの不一致、送信ドメインの不審さ、不自然な日本語、緊急性の煽りといった複数の評価軸に重み付けを行い、スパム判定スコアを算出する具体的なロジックや、systemd Timerを用いた自動実行の設定まで詳細に解説されています。",
+    "topics": [
+      "Gemini Decision 1",
+      "スパム対策",
+      "IMAP",
+      "LLM",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 40,
+      "overall": 88
+    }
+  }
+}

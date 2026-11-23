@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:37:47.339901+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "内製 Background Agent \"haro\" を \"haro\" の中で開発しターミナルを捨てる",
+    "url": "https://tech.layerx.co.jp/entry/haro-in-haro",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LayerXの内製コーディングエージェント「haro」の開発環境を、vClusterとTelepresenceを用いてharo自身の中に構築し、自己完結的な開発フローを実現した事例。",
+    "summaryBody": "LayerXが開発する内製Background Coding Agent「haro」の自己完結型開発環境（haro in haro）の構築プロセスが解説されています。当初はPod内にEKS互換環境を作る fjord を検証しましたが、IAM権限やイメージ取得、APIサーバー接続の課題に直面。最終的に、実際のクラスター上に vCluster で仮想クラスターを動的に作成する構成へ転換しました。ネットワーク面では Envoy を用いて既存のプレビュー経路を活用し、開発中のコントローラー動作確認には Telepresence の replace 機能を採用することで、競合を避けつつ手元のコードを反映させています。リソースの削除は Kubernetes の OwnerReference による GC に任せるなど、既存のエコシステムを巧みに組み合わせたプラットフォームエンジニアリングの実践例です。",
+    "topics": [
+      "AI Agent",
+      "Kubernetes",
+      "vCluster",
+      "Telepresence",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

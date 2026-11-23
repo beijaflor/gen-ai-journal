@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:45:54.270069+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "poppy.json を読む：フィールドごとの解説",
+    "url": "https://uxdaystokyo.com/articles/ux-poppy-1-0-fields/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントが企業サービスと連携するための設定ファイル「poppy.json」の各フィールド、認証方式、セッション管理、拡張機能、タスク案内などの技術仕様を詳細に解説しています。",
+    "summaryBody": "Poppy 1.0仕様書に基づき、企業がAIエージェントに「提供可能な機能と接続方法」を伝える設定ファイル `poppy.json` の構成要素を詳しく解説する記事です。主な構成要素として、認証（auth）やスコープ設計、連携経路（agent, web, apis）、セッション管理、拡張機能（extensions）、エージェントへのガイドライン（tasks.endpoint）が挙げられます。特にスコープ設計では、操作の性質（取り消し可能か等）や個人情報の有無を明示する `scope_hints` が重要です。セッション管理は `Poppy-Session` ヘッダーを通じたJWT形式の検証で行われ、拡張機能によって独自の承認フローや機能追加が可能となる設計になっています。エージェントが作業開始前に参照する `tasks.endpoint` では、自動化対象外のタスク提示や、タスク実行手順を定義した「スキル」のインデックス提供が行われます。",
+    "topics": [
+      "Poppy Protocol",
+      "AIエージェント",
+      "API連携",
+      "JSON仕様",
+      "認証・認可"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

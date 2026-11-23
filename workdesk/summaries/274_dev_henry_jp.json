@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:28:40.144218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜヘンリーのE2Eリポジトリは整理されないまま膨らみ続けたのか。AIで加速した開発とガードレール",
+    "url": "https://dev.henry.jp/entry/e2e-repository",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI活用により開発が加速した一方で生じたE2Eリポジトリの肥大化と管理不足を、Oxlintによるガードレール整備とClaudeによる大規模リファクタリングで解消した事例。",
+    "summaryBody": "株式会社ヘンリーにおける、Playwrightを用いたE2Eテストリポジトリの改善事例を紹介しています。AI（Claude等）の導入によりQAメンバーやデザイナーもPRを作成可能になった一方、ドキュメントの陳腐化や、新規追加分にしか適用されない「Guard」ルールの不徹底により、リポジトリの無秩序な肥大化という課題に直面しました。これに対し、Working Groupを立ち上げて不要なドキュメントの削除、フォルダ構成の刷新、そして従来の部分的なチェックを廃止し、Oxlintを用いた全体適用のカスタムルールへの移行を実施。結果として、Issue 400件、PR 500件に及ぶ大規模な整理をAIの力を借りて完遂しました。AI時代には「ルールを全体に強制する仕組み」と「リポジトリ全体の整理を継続的に行う体制」が不可欠であることを示唆しています。",
+    "topics": [
+      "E2Eテスト",
+      "AI開発",
+      "Playwright",
+      "Oxlint",
+      "技術負債"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

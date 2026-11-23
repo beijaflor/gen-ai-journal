@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:48:43.233331+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "カスタムUIを使用したGemini Enterpriseにおけるユーザー、コネクタ、エージェント認証の処理方法",
+    "url": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemini EnterpriseをカスタムUIに統合する際、StreamAssist API、外部コネクタ、カスタムADKエージェントの3つのレイヤーで認証を実装するための詳細なアーキテクチャとベストプラクティスを解説します。",
+    "summaryBody": "標準のGemini Enterpriseウェブアプリでは自動化されている認証処理を、独自のUIや内部ポータルから利用する場合、開発者がこれらを手動で実装する必要があります。本記事では、主に3つのフェーズにおける認証フローを詳説しています。第一に、StreamAssist APIへの認証として、Google Identity、Workforce Identity Federation、Workload Identity Federationの3パターンを挙げています。第二に、Google DriveやSharePointなどのFederated Connectorsにおける3-Legged OAuth (3LO) 処理を、Geminiの管理下にあるキーストアを利用して実装する方法を解説。第三に、カスタムADKエージェントにおいて、特定のツールが呼び出された時のみオンデマンドで認証を要求する「ツールレベルOAuth」の実装です。これにはVertex AI Agent EngineとGCP Auth ManagerのToken Vaultを組み合わせる手法が推奨されています。GitHubで公開されている実行可能なコードサンプルと共に、企業のセキュリティ要件を満たしつつユーザー体験を損なわない設計指針を提供しています。",
+    "topics": [
+      "Gemini Enterprise",
+      "Google Cloud",
+      "Authentication",
+      "OAuth 2.0",
+      "Vertex AI Agent Engine"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "How to handle user, connector, and agent auth in Gemini Enterprise with a custom UI"
+  }
+}

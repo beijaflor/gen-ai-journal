@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:30:05.195066+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リモートコーディングエージェント yoro で始めるループエンジニアリング",
+    "url": "https://zenn.dev/layerx/articles/loop-by-remote-coding-agent",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "LayerXが開発したリモートコーディングエージェント「yoro」を用い、仕様定義から実装・PR作成までを自律的に繰り返す「ループエンジニアリング」の実践例を紹介。",
+    "summaryBody": "LayerXのAi Workforce事業部で活用されている、リモートコーディングエージェント環境「yoro」における「ループエンジニアリング」の仕組みと成果についての解説です。スペック駆動開発（SDD）の思想に基づき、`tasks.md`に定義されたタスクをAIが自律的に遂行し、テストの合格を確認した上でPull Requestを作成するまでを自動化します。タスクごとにコンテキストを初期化することでLLMの記憶制限を克服し、隔離されたVM環境と人間によるガードレール（計画承認や最終PR確認）を組み合わせることで、安全性と生産性を両立。実案件では40個のタスクを約3時間で処理し、6,000行以上のコードを生成する高いパフォーマンスを実現しています。",
+    "topics": [
+      "yoro",
+      "AIエージェント",
+      "ループエンジニアリング",
+      "LayerX",
+      "ソフトウェア開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

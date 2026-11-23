@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:28:27.416776+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが書いたコードの正しさをどう確かめるか。「証明支援系Lean」という選択肢",
+    "url": "https://levtech.jp/media/detail_974/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるコード生成が普及する中、テストや型検査を超える厳密な検証手法として、数学的証明を用いる「定理証明支援系Lean 4」の仕組みと可能性を解説しています。",
+    "summaryBody": "AIコーディングツールの普及によりコードレビューの負担が増大する中、従来のテストや型検査だけでは不十分なケースが増えています。本記事では、数学的な証明によってプログラムの正しさを保証する「Lean 4」を紹介。AmazonやMicrosoftでの実用事例（暗号ライブラリや分散プロトコルの検証など）を挙げながら、テスト・型検査・証明の検証強度の違いを詳説します。特に、証明の「組み立て（タクティク）」と「厳密な検査（カーネル）」を分離するLeanの構造は、AIに証明の候補を生成させ、機械がそれを厳格に検証するという、AI時代のソフトウェア開発における強力な「ハーネス」としての可能性を秘めています。",
+    "topics": [
+      "Lean 4",
+      "定理証明支援系",
+      "AIコーディング",
+      "形式検証",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

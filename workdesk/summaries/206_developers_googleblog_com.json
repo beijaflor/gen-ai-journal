@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:48:28.874296+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Anomaly Detectionがマルチクラウドに対応：AWSやAzure上のエージェントも保護可能に",
+    "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google Cloudの「Agent Anomaly Detection」が拡張され、AWS LambdaやMicrosoft Foundryなど、他のクラウド上で動作するAIエージェントの異常動作を監視・検知可能になった。",
+    "summaryBody": "Google Cloudが提供する「Agent Anomaly Detection（エージェント異常検知）」が、Google Cloud外（AWS Lambda、Microsoft Foundry、オンプレミスなど）で実行されるAIエージェントの監視に対応しました。この機能は現在プライベートプレビュー中で、エージェントのランタイム自体へのアクセスを必要とせず、テレメトリ（トレースとログ）をGoogle Cloudプロジェクトに送信することで分析を行います。\n\n主な仕組みと特徴：\n- **テレメトリベースの分析**: OpenTelemetryの規約に従い、プロンプトとレスポンスをログイベントとして記録。Telemetry APIを通じてGoogle Cloudへ送信します。\n- **Workload Identity Federation**: サービスアカウントキーを使用せず、AWSロールやMicrosoft Entra IDを利用して安全な認証を実現します。\n- **実例による検証**: AWS Lambdaでのデータスクレイピングや、Foundry上のエージェントに対するプロンプト注入（システム上書きによる不正返金）などを、モデルの実行場所を問わず検知できることが実証されています。\n\n現在はPython用Agent Development Kit (ADK) v2.12.0以降で構築されたエージェントが対象です。",
+    "topics": [
+      "Agent Anomaly Detection",
+      "Google Cloud",
+      "AI Security",
+      "Multi-cloud",
+      "OpenTelemetry"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 75,
+      "overall": 88
+    },
+    "originalTitle": "Agent Anomaly Detection: Safeguarding agents across other clouds"
+  }
+}
