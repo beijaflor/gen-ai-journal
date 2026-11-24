@@ -2,8 +2,8 @@
 
 ## Curation Status
 - [x] AI candidate pool generated
-- [ ] Human review completed
-- [ ] APPROVED - Ready for STEP_06
+- [x] Human review completed
+- [x] APPROVED - Ready for STEP_06
 
 ---
 
@@ -24,9 +24,9 @@
   <!-- CLAUDE.md/SKILL.mdのルールをTurtle(RDF)で構造化し、矛盾や書き間違いをlintで検査。Signals: annex_flag ／ ax35 -->
 - [x] 262. https://blog.shibayu36.org/entry/2026/11/17/120000
   <!-- 自分の認知特性をClaude Codeの対話ログから分析・言語化し、パーソナライズした回答指示Skillを作成。Signals: annex_flag ／ ax15 -->
-- [ ] 134. https://zenn.dev/gemcook/articles/claude-code-otel-cloudflare
+- [x] 134. https://zenn.dev/gemcook/articles/claude-code-otel-cloudflare
   <!-- OpenTelemetryとCloudflare Workers/R2で組織全体のClaude Code利用ログを自動収集する基盤。Signals: ax95（高annexPotential） -->
-- [ ] 133. https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd
+- [x] 133. https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd
   <!-- エージェントの「自分で評価・責任を持てる範囲」を基準に、フロントのロジックとUIを分離する試み。Signals: ax95（高annexPotential）／ T3隣接（フロント責務分割という狭い切り口） -->
 - [ ] 129. https://qiita.com/Masato_Iwasaki/items/db76e7388cece3cff66e
   <!-- AIにDirector/Implementer/Reviewerの役割を与え、Git+Markdownの開発ワークフローを改善し続けた記録。Signals: ax90（高annexPotential）／ T3隣接（個人の試行錯誤エッセイ） -->
@@ -74,7 +74,7 @@
   <!-- LINEヤフーが独自構築したクラウド型エージェント実行基盤Agent Clusterの設計と運用。Signals: ax10 ／ 独立トピック（組織実装） -->
 - [ ] 094. https://speakerdeck.com/hagino3000/building-ai-product-for-expert
   <!-- Ubieの病院DPCコーディング支援。専門家の判断を最大化するAIプロダクトの設計と評価。Signals: ax15 ／ 独立トピック（医療ドメイン） -->
-- [ ] 115. https://agilejourney.uzabase.com/entry/2026/11/19/103000
+- [x] 115. https://agilejourney.uzabase.com/entry/2026/11/19/103000
   <!-- AIでスクラムは不要になるか。LayerX×ユーザベースがチームの存在意義の変化を対談。Signals: ax15 ／ 独立トピック（組織・プロセス論） -->
 
 ## 6. ローカルLLM・推論エンジンの自作
@@ -92,24 +92,24 @@
   <!-- Z80搭載8bit機とBASICで探索アルゴリズムからNNまでAIの基礎をゼロから実装する書籍。Signals: annex_flag ／ ax30 -->
 - [x] 051. https://zenn.dev/turing_motors/articles/cea9e3c85611b2
   <!-- 物理世界とAIをつなぐ「可視化」でカメラ幾何・座標変換・運動制御を学ぶ（チューリング実践）。Signals: annex_flag ／ ax30 -->
-- [ ] 236. https://ankitg.me/blog/vibecoding-inference-chip/
+- [x] 236. https://ankitg.me/blog/vibecoding-inference-chip/
   <!-- AIエージェントで専門知識なしにFPGA推論チップをバイブコーディングし33倍高速化。Signals: ax85（高annexPotential） -->
-- [ ] 024. https://cpldcpu.github.io/2026/11/14/touchsynth/
+- [x] 024. https://cpldcpu.github.io/2026/11/14/touchsynth/
   <!-- GPT-6/Claude 5.5世代のエージェントで回路設計から基板・デバッグまでアナログシンセを設計。Signals: ax10 -->
-- [ ] 230. https://www.bxfoundry.com/chatgpt_snes/
+- [x] 230. https://www.bxfoundry.com/chatgpt_snes/
   <!-- スーパーファミコンのSuper FX 2チップで220万パラメータの小型LMを実機動作させる実験。Signals: ax92（高annexPotential） -->
 - [ ] 269. https://eetimes.itmedia.co.jp/ee/articles/2611/18/news073.html
   <!-- NTTがAlN半導体で月面1000年相当の高放射線耐性を実証。2030年代実用化へ。Signals: ax60 -->
 
 ## 8. 批評・反論・社会的受容
 
-- [x] 092. https://kei-1010.hatenablog.com/entry/2026/11/16/120828
+- [ ] 092. https://kei-1010.hatenablog.com/entry/2026/11/16/120828
   <!-- 数学・物理の制約とNVIDIA信用不安からRSI人類滅亡論を空論と否定し、AIバブル崩壊を予測。Signals: annex_flag ／ ax35 -->
 - [x] 258. https://frominside.ai/
   <!-- OpenAI/DeepMind等の開発者が語る、AIによる人類滅亡リスクと舞台裏の懸念インタビュー集。Signals: annex_flag ／ ax15 -->
 - [x] 067. https://www.ms.u-tokyo.ac.jp/~konno/grad_ai.html
   <!-- 数学研究・教育における人間の理解の役割。AIを外部委託でなく理解を深める道具と捉える指針。Signals: annex_flag ／ ax10 ／ T1/T5隣接（教育・数学哲学として独立） -->
-- [x] 078. https://note.com/tatsuya_koyama/n/nb7aa1ba71aba
+- [ ] 078. https://note.com/tatsuya_koyama/n/nb7aa1ba71aba
   <!-- AI以前の個人ゲーム開発者が、制作の過程に価値を見出しAIとの距離感を綴るエッセイ。Signals: annex_flag ／ ax10 ／ T5隣接（個人の創作論） -->
 - [x] 084. https://scrapbox.io/keroxp/Zed%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%8CAI%E6%BF%80%E3%81%8A%E3%81%93%E3%81%AA%E4%BB%B6
   <!-- AI中核エディタZedが、OSS貢献での無分別なAI利用を厳しく制限するポリシーを公開。Signals: annex_flag ／ ax30 ／ T5隣接（OSSガバナンスの具体例） -->
@@ -128,9 +128,9 @@
   <!-- スクリーンリーダーPC-Talker NeoベータにGemini活用の画像説明・UI抽出が搭載。Signals: annex_flag ／ ax15 ／ アクセシビリティ -->
 - [x] 194. https://netflixtechblog.com/engineering-ai-discover-e244944cdc38
   <!-- NetflixのAI Discover。LLMと既存推薦を統合する対話的探索のインテリジェンス層設計。Signals: annex_flag ／ ax80（高annexPotential） -->
-- [ ] 240. https://slopstrap.mikelacher.com/
+- [x] 240. https://slopstrap.mikelacher.com/
   <!-- Slopstrap。サイトを「AIが急いで作った風」にするパロディCSSフレームワーク。Signals: ax95（高annexPotential）／ エッジ・風刺 -->
-- [ ] 177. https://claudia.gallery/fable/
+- [x] 177. https://claudia.gallery/fable/
   <!-- FABLE。複数の最新生成AIを組み合わせ8時間で高品質な短編映画を制作する手法と記録。Signals: ax92（高annexPotential）／ 創作ワークフロー -->
 - [ ] 179. https://arxiv.org/abs/2607.29378
   <!-- PTP。前トークン予測でLLMの出力から入力を復元するブラックボックス型インバージョン研究。Signals: ax90（高annexPotential）／ 研究（arXiv） -->
@@ -165,4 +165,3 @@
   <!-- Theme 3 overlap（Herdr hgm＝ハーネス/監督が主題。ax90だが独立性規則によりomit提案） -->
 - 165. https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/
   <!-- Theme 1 overflow（ClaudeのタンパクLM／AI-science） -->
-
