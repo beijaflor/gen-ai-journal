@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:47:20.298676+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Modern Web Guidance: AIコーディングエージェントに最新のWeb標準とベストプラクティスを導入する公式ガイド",
+    "url": "https://github.com/googlechrome/modern-web-guidance",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェントが学習データの影響で古いコードを生成するのを防ぎ、GoogleやMDNらが推奨する最新のWebプラットフォームAPIやベストプラクティスを適切に活用させるためのツールキット。",
+    "summaryBody": "LLMは学習データに含まれる膨大なレガシーコードの影響で、既にブラウザ標準で解決可能なタスクに対しても冗長なJavaScriptや古いライブラリを提案しがちです。このプロジェクトは、Google Chrome、Microsoft Edge、Mozilla Firefox、MDNの各チームが協力し、AIエージェントに最新のコンテキストを提供することでこのギャップを埋めます。\n\n主な特徴：\n1. **CLIツール**: `npx`経由で最新のWeb機能（CSS Layout、パフォーマンス、アクセシビリティ、組み込みAIなど）を検索・取得し、エージェントのコンテキストに注入可能。\n2. **膨大なカバレッジ**: View Transitions、Anchor Positioning、Popover APIなど260以上のモダン機能と200以上の実用的なユースケースを網羅。\n3. **エージェント統合**: Claude Code、GitHub Copilot、Geminiなどの主要なAIツールにプラグインとして導入可能。\n4. **実証された効果**: エバリュエーション（評価）の結果、エージェントのタスク成功率が約30%向上することが示されています。\n\n開発者はこのツールを自身の環境やリポジトリに導入することで、AIが生成するコードの品質、パフォーマンス、アクセシビリティを劇的に改善できます。",
+    "topics": [
+      "AI Coding Agents",
+      "Web Development",
+      "Browser APIs",
+      "Google Chrome",
+      "Frontend Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - GoogleChrome/modern-web-guidance: Keep your coding agent up to date with the latest web best practices"
+  }
+}

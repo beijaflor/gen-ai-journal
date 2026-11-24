@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:48:56.831883+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Enterpriseから内部Cloud Run MCPサーバーへ安全に接続する方法",
+    "url": "https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Gemini EnterpriseからVPC内の内部Cloud RunでホストされたMCPサーバーへ、Agent GatewayとPrivate Service Connectを利用して安全かつプライベートに接続する構成ガイド。",
+    "summaryBody": "Google CloudのCloud RunをMCP（Model Context Protocol）サーバーとして利用する際、インターネットに公開せずVPC内に閉じた状態でGemini Enterpriseと連携させるための詳細なアーキテクチャが解説されています。主な課題である「内部限定イングレスの維持」「サービスとユーザーの二重認証（IAM + OAuth 2.0）」「Shared VPCにおけるDNS衝突の回避」に対し、Egress Agent Gateway、PSC Network Attachment、およびFQDNスコープのPrivate Cloud DNSを組み合わせる解決策を提示しています。記事では、サービスIDとユーザーIDを検証する二重ヘッダー認証の仕組みや、Pythonによる実装例、5つの具体的な構築ステップが示されており、エンタープライズレベルのセキュアなAIエージェントインフラの構築を支援します。",
+    "topics": [
+      "Gemini Enterprise",
+      "Model Context Protocol (MCP)",
+      "Cloud Run",
+      "Private Service Connect",
+      "VPC Networking"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "How to securely connect internal Cloud Run MCP servers to Gemini Enterprise"
+  }
+}

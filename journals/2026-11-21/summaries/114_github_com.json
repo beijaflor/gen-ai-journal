@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:40:02.941319+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Bitwarden Agent Access: AIエージェントへ安全に資格情報を提供するためのオープンプロトコル",
+    "url": "https://github.com/bitwarden/agent-access",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Bitwardenが開発した、Vault全体を公開することなくAIエージェントや自動化ツールに特定の資格情報のみを安全に渡すためのオープンプロトコルとツール群。",
+    "summaryBody": "Bitwardenは、AIエージェントやリモートシステムがパスワードマネージャー内の資格情報を安全に利用できるようにするための「Agent Access」を公開しました。本プロジェクトは、オープンプロトコル、CLIツール（aac）、およびSDK（Rust, Python, JS/WASM）で構成されています。Noiseプロトコルを用いたエンドツーエンド暗号化トンネルを構築することで、資格情報プロバイダーとエージェント間をセキュアに接続します。\n\n主な特徴は以下の通りです：\n1. **最小権限の原則**: Vault全体を露出させるのではなく、特定のアイテムへのアクセスのみを許可するペアリングトークンを使用します。\n2. **秘密情報の保護**: `aac run`コマンドを使用することで、資格情報を環境変数として子プロセスに直接注入できます。これにより、標準出力やディスク、LLMのプロンプト履歴に秘密情報が残るリスクを低減します。\n3. **拡張性**: Bitwardenチームによって開発されましたが、他の資格情報プロバイダーも対応可能なオープンな仕様となっています。\n\n現在は早期プレビュー段階であり、AIが自律的にツールを操作する際のセキュリティ課題を解決する手段として注目されます。",
+    "topics": [
+      "Bitwarden",
+      "AIエージェント",
+      "セキュリティ",
+      "資格情報管理",
+      "オープンプロトコル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agent Access is an open protocol, CLI tool, and SDK to provide agents with credentials without exposing their entire vault"
+  }
+}

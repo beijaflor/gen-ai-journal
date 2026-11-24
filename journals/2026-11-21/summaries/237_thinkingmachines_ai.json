@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:38:53.442577+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Inkling 2 Miniの発表：ローカル実行可能なループ型Transformerモデル",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Thinking Machines Labが発表したInkling 2 Miniは、中間層を反復実行するループ型アーキテクチャを採用し、ローカル環境での高度な推論と効率性を実現した26.4Bパラメータのモデルです。",
+    "summaryBody": "Thinking Machines Labは、高い推論能力を持ちながらローカル環境で動作する軽量モデル「Inkling 2 Mini」をリリースしました。このモデルの最大の特徴は、24層のうち中間12層を3回繰り返して実行する「ループ型Transformer」構造にあります。これにより、パラメータ数を抑えつつ計算のシリアル深度を稼ぎ、エージェント的なコーディングタスク（DeepSWE v1.1で48.2%）などで100B未満のオープンモデルとして最高水準の性能を発揮します。\n\n技術的側面では、NVIDIAのGB300プラットフォームを活用したネイティブな4ビット精度（NVFP4）で学習・デプロイされており、約20GBのメモリフットプリントでMacBook等の消費者向けデバイスでも高速に動作します。また、研究用としてループ回数を1〜5回に変更可能な「TML-d24-varloop-research」も同時公開されました。同社の分析によれば、ループ回数を増やすことで推論プロセス（Chain of Thought）が効率化・短縮されるものの、人間による可読性や監視のしやすさ（Monitorability）は損なわれないことが示唆されています。",
+    "topics": [
+      "LLM",
+      "Looped Transformer",
+      "Edge AI",
+      "Quantization",
+      "AI Safety"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    },
+    "originalTitle": "Introducing Inkling 2 Mini"
+  }
+}

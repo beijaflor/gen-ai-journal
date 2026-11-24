@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:31:43.544594+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの返答が理解しづらいので、自分の認知特性をAIに分析させてSkillにした",
+    "url": "https://blog.shibayu36.org/entry/2026/11/17/120000",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIの回答に含まれる抽象的な参照を理解しにくいという自身の認知特性を、Claude Codeの対話ログから分析・言語化し、パーソナライズされた回答指示「Skill」を作成した事例。",
+    "summaryBody": "ソフトウェアエンジニアのshibayu36氏が、Claude Codeからの回答を効率的に理解するために行った「認知特性の分析とSkill化」の手法を解説しています。著者は「案A」といった離れた場所への参照や抽象的な表現で思考が止まってしまう特性に悩み、過去のセッションログから自分が「聞き返した箇所」をAIに抽出・分類させることで、自身の特性（短期記憶の低さ、理解できない語での集中の中断など）を特定しました。その結果を基に「参照箇所は内容を再掲する」「具体例から先に説明する」といった具体的な指示を定義したSkill `writing-for-shibayu36` を作成し、`CLAUDE.md` で常時適用することで回答の可読性を大幅に向上させました。他人のプロンプトを流用するのではなく、自身の実際のログを分析させるというアプローチは、AIとの協働における非常に実用的なパーソナライズ手法です。",
+    "topics": [
+      "Claude Code",
+      "認知特性",
+      "プロンプトエンジニアリング",
+      "パーソナライズ",
+      "生産性向上"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

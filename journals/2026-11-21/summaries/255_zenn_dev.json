@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:33:41.426356+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "100MBで喋るAI「phonon」を使ってみた",
+    "url": "https://zenn.dev/aiforall/articles/96465259cc2167",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Ollamaで利用可能な約100MBの超軽量音声合成モデル「phonon」の、英語および日本語における動作パフォーマンスと品質を検証したレビュー記事です。",
+    "summaryBody": "Ollamaのライブラリに新しく追加された、Gradium開発の超軽量TTS（音声合成）モデル「phonon」の試用レポートです。主な特徴と検証結果は以下の通りです。\n\n- **軽量性とリソース**: モデルサイズは約104MB〜148MBと極めて小さく、メモリ消費も約100MB前後。Apple Silicon Mac環境で非常に軽快に動作します。\n- **対応言語とライセンス**: 英語、仏、独、西、葡の5言語に対応。特に英語の31MモデルはApache 2.0ライセンスで商用利用が可能ですが、多言語版や40MモデルはCC BY-NC 4.0（非商用）である点に注意が必要です。\n- **品質検証**: 英語は短文・長文ともに数秒以内で高品質な音声を生成可能ですが、非対応の日本語についてはノイズが含まれ判別不能な状態であり、現状は使用に適しません。\n\nローカル環境で高速・低リソースな英語の読み上げ機能を実装したい開発者にとって、有力な選択肢となります。",
+    "topics": [
+      "Ollama",
+      "phonon",
+      "TTS",
+      "音声合成",
+      "AIモデル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

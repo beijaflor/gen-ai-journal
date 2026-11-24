@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:40:56.918635+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "認知負荷の減らし方 ～開発にも日常業務にも活かせるノウハウ～",
+    "url": "https://speakerdeck.com/minorun365/2026-11-lab-datsubotorunekku-ningen",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIが出力する大量の情報による人間の判断の遅れを解消するため、HTML化や差分表示の工夫、レビュー対象のシフトを通じて認知負荷を劇的に下げる実践的な手法を解説しています。",
+    "summaryBody": "AIとの共働が日常化する中で、最大のボトルネックとなった「人間の判断待ち」を解消するためのワークフローが提示されています。主な施策として、長文報告をチャット欄ではなく専用のHTMLサイト（HTML共有くん）へ出力させることで可読性を高め、判断すべきポイントをハイライトや選択肢形式で提示させる工夫が紹介されています。また、開発においてはコードを1行ずつ追うレビューから脱却し、実装前の技術選定と実装後のAIによるE2Eテストに注力する「重心の移動」を提唱しています。これらはCLAUDE.md等の設定ファイルに蓄積し、同じ指摘を繰り返さないよう自動検査化することで、AIを単なるツールから自律的な秘書へと進化させる具体的なノウハウが凝縮されています。",
+    "topics": [
+      "AIエージェント",
+      "認知負荷",
+      "Claude Code",
+      "生産性向上",
+      "プロンプトエンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 60,
+      "overall": 94
+    }
+  }
+}

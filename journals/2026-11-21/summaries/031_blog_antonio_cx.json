@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:59:48.365179+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "認証情報を渡さずにリモートでコーディングエージェントを安全に実行する手法とツール「lend」",
+    "url": "https://blog.antonio.cx/running-agents-with-lend",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "リモートVM上のAIエージェントに秘密鍵やAPIトークンを渡すことなく、ローカルPCの認証機能を利用して安全にタスクを実行させるプロキシツール「lend」の紹介。",
+    "summaryBody": "開発者のAntonio Mika氏が、VM上のAIエージェント（Claude Code等）にローカルの認証情報（SSHキーや1Passwordのトークン）を安全に利用させるために開発したツール「lend」について解説しています。従来のSSHエージェントフォワーディングは権限が強すぎるという課題がありましたが、lendはSSHエージェントの仕組みを拡張し、リモートからの実行要求を手元のMacで承認（Touch ID等）した後に実行するフローを実現します。主な特徴として、コマンド実行のポリシー管理、1Passwordからの秘密情報注入、MCP（Model Context Protocol）対応、セッション切断後も動作を継続するソケット管理機能などが挙げられます。これにより、万が一VMが侵害されても認証情報そのものが流出するリスクを最小限に抑えつつ、エージェントに高度な操作を許可できるセキュアなワークフローが構築可能です。",
+    "topics": [
+      "AIエージェント",
+      "セキュリティ",
+      "SSH",
+      "1Password",
+      "MCP"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "Running coding agents without handing them my credentials"
+  }
+}

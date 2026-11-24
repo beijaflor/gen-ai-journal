@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:57:47.604464+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeを会議に参加させる",
+    "url": "https://qiita.com/MasaoSasaki/items/056fdca93221d9a57b4a",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeをmacOSのローカル音声認識と連携させ、会議の文脈を理解しながらリアルタイムで調査やタスク実行を支援する高度なアシスタントの実装ガイド。",
+    "summaryBody": "Claude Codeを実用的な会議アシスタントとして活用するための高度なシステム構成が紹介されています。macOSのCore Audioを利用して自分と相手の音声を分離・取得し、MLXで最適化されたWhisperとParakeetを用いてローカルで高精度な文字起こしを実現。特定の呼びかけや、Haikuモデルによる意図解釈（判定役）をトリガーに、作業中のClaude Codeセッションへ情報を飛ばすことで、プロジェクトの文脈を維持したままの質疑応答や外部ツール操作（GitHub/Slack等）が可能になります。実行前の通知による確認プロセスや、Claude ModsによるUI表示、会議室の自動延長機能など、実運用に即した詳細な設計と「AIエージェント向け」の実装要件がまとめられています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Whisper",
+      "音声認識",
+      "macOS"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

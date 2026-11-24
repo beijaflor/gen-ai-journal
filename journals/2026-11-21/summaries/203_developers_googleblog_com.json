@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:49:11.993045+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "都市間分散LLM学習：MaxTextにおけるStreaming DiLoCoの実装と成果",
+    "url": "https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、地理的に分散したデータセンター間でのLLM学習を効率化する「Streaming DiLoCo」をMaxTextに導入し、通信ボトルネックを排除することで低帯域ネットワーク下での学習速度を大幅に向上させた。",
+    "summaryBody": "Google ResearchとDeepMindが開発したDiLoCo（Distributed Low-Communication）アルゴリズムの進化版「Streaming DiLoCo」が、JAXベースの学習フレームワークMaxTextで利用可能になりました。従来のデータ並列学習は、広域ネットワーク（WAN）のような低帯域・高レイテンシ環境では通信待ちによる性能低下が顕著でしたが、DiLoCoは「インナーループ（ローカル学習）」と「アウターループ（グローバル同期）」を分けることで通信頻度を劇的に削減します。MaxTextの実装では、モデルの重みをフラグメント化し、毎ステップごとに小分けに同期する「ストリーミング」方式を採用することで、通信スパイクを排除。Qwen3-32Bを用いた検証では、10Gbpsの制限下で標準的なデータ並列の9.57倍の高速化を達成しつつ、同期学習と同等の収束性能を維持しました。これにより、地理的に離れた複数のTPUスライスを統合した巨大な計算資源としての活用が可能になります。",
+    "topics": [
+      "LLM学習",
+      "DiLoCo",
+      "MaxText",
+      "分散コンピューティング",
+      "TPU"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText"
+  }
+}

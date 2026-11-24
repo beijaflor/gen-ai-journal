@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:55:57.902876+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントは悪意ある指示を記憶するのか？— AgentCore MemoryとGuardrailsで検証",
+    "url": "https://zenn.dev/takuyousou/articles/agentcore-memory-poisoning-guardrails",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの長期記憶（AgentCore Memory）に悪意ある指示が保存されるリスクと、Amazon Bedrock Guardrailsの「Denied Topics」による防御の有効性を検証した記事。",
+    "summaryBody": "外部資料に含まれる悪意ある指示がAIエージェントの長期記憶にどのように影響するかを検証したレポートです。実験では、外部ドキュメント内の不適切な操作要求が「User Preference Memory」に「ユーザーの好み」として誤って保存されることを確認しました。防御策の検証では、標準的な「Prompt Attack」フィルターでは検出できない文章であっても、業務固有の「Denied Topics（禁止トピック）」を定義することで、メモリへの書き込み前に悪意ある指示を効果的に遮断できることを示しています。また、汚染されたメモリが直ちに誤動作に直結しないケースがあることも判明し、記憶の質と行動制御（Policy）を個別に設計する重要性を考察しています。",
+    "topics": [
+      "Amazon Bedrock",
+      "AgentCore Memory",
+      "Guardrails",
+      "AIエージェント",
+      "プロンプトインジェクション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

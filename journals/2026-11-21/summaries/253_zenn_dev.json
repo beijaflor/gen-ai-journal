@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:34:13.856310+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MetaのMuseを使ってみた: 内部構造とセキュリティの調査",
+    "url": "https://zenn.dev/shoyataguchi/articles/b1bc6a96d4b963",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MetaのAIエージェント「Muse」のパーソナルな体験を支える記憶保持の仕組みと、Linux VMを活用した高度なセキュリティ設計について技術的な側面から詳細に分析した解説記事。",
+    "summaryBody": "Metaが発表したAIエージェント「Muse」について、試用を通じたUXの評価と、公式発表に基づく内部アーキテクチャの解説を行っています。最大の特徴は、単一のメインチャットを軸にした強力なパーソナルアシスタント体験であり、これを実現するためにGraphRAGのような手法で会話から「claim（主張・事実）」を抽出し、ファイルベースで記憶を管理する仕組み（Memory.md等）や、夜間に記憶を整理する「Dream」処理が実装されています。セキュリティ面では、systemd-nspawnによるVMの二層化（Runtime CellとHost-side Services）、eBPFを用いた汚染プロセス追跡（Tainted Egress）、L4/L7レイヤーでの通信監視（Sentinel）といった、エージェントによる意図しないデータ流出を防ぐための堅牢なサンドボックス設計が詳細に解説されています。",
+    "topics": [
+      "Meta Muse",
+      "AIエージェント",
+      "LLM Security",
+      "GraphRAG",
+      "eBPF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

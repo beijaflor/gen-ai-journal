@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:54:03.258427+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeで試験項目の自動消化を試す",
+    "url": "https://zenn.dev/sre_holdings/articles/29458d1ff4cc39",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claudeを用いてソフトウェア試験項目の自動生成から自動実行までを検証し、生成AIによるテスト工程の大幅な効率化と精度の高さを実証したレポート。",
+    "summaryBody": "SREホールディングスのエンジニアによる、Claudeを活用したテスト自動化の検証記事です。画面設計書から約300件の試験項目を10分程度で自動生成し、さらにブラウザ操作（ClaudeのComputer Use等を想定したプラグイン環境）による試験の自動実行までを試行しています。人間とAIによる実行結果の比較検証では、AIが仕様に忠実な判定を行う一方で、期待動作の記述が曖昧な場合に人間と判断が分かれるケースが確認されました。正確な試験結果を得るためには「エラー文言の具体化」などのインプットの質が重要であると指摘。定型的な試験消化をAIに任せ、人間はアドホックテストやUX判断に注力するという、AI時代のテスト分担モデルの可能性を提示しています。",
+    "topics": [
+      "Claude",
+      "テスト自動化",
+      "生成AI",
+      "ソフトウェアテスト",
+      "品質保証"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

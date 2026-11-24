@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:52:37.122637+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "mise + gh skill で、dotfiles から Agent Skills を管理する",
+    "url": "https://zenn.dev/dress_code/articles/30bd78e1a67f87",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "miseとGitHub CLIのgh skill拡張を活用し、Claude CodeやCursor向けのAgent Skillsを公開用・秘密用で分離しつつdotfilesで一括管理する高度な自動化手法の解説。",
+    "summaryBody": "この記事では、開発環境管理ツール「mise」とGitHub CLIの新機能「gh skill」を組み合わせ、AIエージェント用の命令セットであるAgent Skillsをdotfilesでスマートに管理する方法を紹介しています。\n\n主なポイントは以下の通りです：\n- **リポジトリの分離**: スキルを公開用（skills）と機密用（skills-local）に分け、dotfilesの公開性を保ちつつプライベートな規約を安全に管理。\n- **miseによる環境構築**: パッケージ管理、ツール導入、シンボリックリンクの作成をmiseに集約し、`make install`一発で再現可能な環境を実現。\n- **更新と削除の制御**: `gh skill install`のファイルコピー仕様に起因する「削除済みスキルが残る」問題を解決するため、ステージングディレクトリを用いた一括差し替えタスクを実装。\n- **ローカル設定の拡張性**: `mise.local.toml`を利用し、GitHubにプッシュしない特定マシン専用のスキル設定を柔軟に追加。\n\nCursorが`~/.claude/skills`を参照する仕様を活かし、複数のAIエージェント間でスキルを共通化する実用的なワークフローが提示されています。",
+    "topics": [
+      "mise",
+      "dotfiles",
+      "gh-skill",
+      "Claude Code",
+      "Cursor"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:47:31.573097+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レビューは AI が書いて、人が選ぶ",
+    "url": "https://blog.recruit.co.jp/data/articles/ai-review-skills/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeを活用してPRレビューの下書きをAIに作成させ、人間が最終的な内容を選択・調整して投稿する「人間中心のAIレビュー」の運用知見と設計図。",
+    "summaryBody": "リクルートのデータ基盤開発チームにおけるAIエージェント（Claude Code）を用いたPRレビューの自動化と効率化の実践事例です。AIにレビューを丸投げするのではなく、「AIが下書きし、人間が選別・修正して投稿する」というフローを採用することで、AI特有のノイズや不正確さを排除しつつ、レビュワーの工数を約5割削減しています。記事内では、指摘をmust/want/nits/askの4段階に分類する設計指針や、威圧感を与えないための口調のチューニング、要件定義資料（Slackやチケット）とソースコードを突き合わせる実装、さらには実際に使用されているClaude Code用の「skill」定義ファイル（プロンプト）まで公開されており、開発現場ですぐに応用可能な非常に具体的な内容となっています。",
+    "topics": [
+      "Claude Code",
+      "LLM",
+      "AIエージェント",
+      "コードレビュー",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

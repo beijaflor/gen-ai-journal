@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:20:26.396769+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Netflixにおける「AI Discover」のエンジニアリング：AIエージェントによる推薦システムの進化",
+    "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Netflixが導入した、LLMと既存の推薦システムを統合し、ユーザーが対話的にコンテンツを探索できる新機能「AI Discover」を支えるインテリジェンス・レイヤーの設計思想と技術的課題の詳説。",
+    "summaryBody": "Netflixは、従来の受動的なレコメンデーションから脱却し、ユーザーが「テーマ」を選択して能動的に作品を探索できる新機能「AI Discover」の技術的背景を公開しました。この基盤となる「インテリジェンス・レイヤー」は、LLMを単なる推論器としてではなく、複雑なタスクを計画・実行する「エージェント・ハーネス」として機能させます。主な設計上の決定として、LLMの遅延や不確実性を制御するために「実行前にプランを確定・検証するアーキテクチャ」の採用、既存の推薦システムを「Capability」としてコンポーネント化しLLMから呼び出し可能にしたこと、そしてTVデバイスの制約に対応するための非同期ページ生成などが挙げられます。また、独自モデル「MemberLLM」によるユーザーの好みの要約と「Memory Hub」を組み合わせることで、長期的なコンテキストに基づいたパーソナライズを実現しています。このシステムは、LLMの進化に合わせてモデルを容易に交換可能なアグノスティックな設計となっており、安全性と信頼性をコードレベルで強制している点が特徴です。",
+    "topics": [
+      "Netflix",
+      "LLM",
+      "AIエージェント",
+      "推薦システム",
+      "システムアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 80,
+      "overall": 92
+    },
+    "originalTitle": "Engineering AI Discover. The challenges and decisions behind AI…"
+  }
+}

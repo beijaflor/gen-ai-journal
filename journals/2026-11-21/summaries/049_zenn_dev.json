@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:55:30.730250+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった",
+    "url": "https://zenn.dev/kesin11/articles/20261114_github_issue_artifact",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHubのIssueにHTMLやMarkdownをArtifactとして添付し、専用のサイドパネルで直接プレビューできる新機能が登場しました。",
+    "summaryBody": "GitHub Universeで発表された「Issue Artifact」機能（Public Preview）は、IssueやPull RequestにHTML、Markdown、プレーンテキストを添付し、GitHubの画面内でそのまま表示できる機能です。従来、Claude CodeなどのAIエージェントが生成したHTML成果物を確認するには外部サイトへの移動が必要でしたが、本機能によりGitHub上でシームレスなプレビューとレビューが可能になります。\n\n主な特徴：\n1. **CLI連携**: `gh issue artifact create` コマンドを使用して、スクリプトやAIエージェントから自動的にファイルを添付可能。\n2. **多彩な表示**: HTMLによるリッチなレイアウトや、Markdown、ログファイルの表示に対応。\n3. **制約と仕様**: 現時点ではセキュリティ上の理由でHTML内のJavaScript実行や相対パスによる画像参照は制限されていますが、CSS/SVGによるアニメーションやBase64埋め込み画像は動作します。\n\n開発プロセスにおける議論をGitHub内で完結させ、ドキュメントやプロトタイプの共有を劇的に効率化するアップデートです。",
+    "topics": [
+      "GitHub",
+      "GitHub Issues",
+      "Issue Artifacts",
+      "AIエージェント",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:49:27.163110+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TunixとGemma 4によるGoogle TPU上のマルチターン・エージェンティック強化学習",
+    "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Google TunixとCloud TPU v6eを用いて、Gemma 4モデルにマルチターンのツール利用と高度な推論能力を学習させるエージェンティック強化学習（RL）のパイプライン構築手法を解説する。",
+    "summaryBody": "この記事では、Googleの開発したTunixフレームワークを使用して、Gemma 4 E2Bモデルをマルチターン対話とツール利用が可能なAIエージェントへと訓練する方法を解説しています。具体例として「Plane Strike」というボードゲームを題材にし、エージェントが思考プロセス（Thinking mode）を経てツール（strike関数）を呼び出し、環境からのフィードバックに基づいて戦略を適応させるプロセスを構築しています。\n\n主な技術ポイントは以下の通りです：\n1. **エージェンティックRLパイプラインの構築**: 環境定義、ツール/テンプレートパーサー、対話エージェント、およびGRPO（Group Relative Policy Optimization）学習器の4モジュールで構成。\n2. **Gemma 4のネイティブツール呼び出し**: システムプロンプト内でのツール宣言と言語モデルの思考プロセス、レスポンスの統合手法。\n3. **TPUによる最適化**: Cloud TPU v6e-8上でvLLM-TPUを利用し、非同期ロールアウトやプレフィックスキャッシュを有効化することで、計算負荷の高いマルチターンRLの効率的な学習を実現。\n\n学習の結果、初期状態では9.4%だった勝率が、100ステップのGRPOトレーニング後には95%に向上し、クリアまでの平均手数も劇的に短縮されることが示されています。",
+    "topics": [
+      "Tunix",
+      "Gemma 4",
+      "Reinforcement Learning",
+      "Cloud TPU",
+      "GRPO"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs"
+  }
+}

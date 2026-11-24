@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:46:10.832413+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Workflow Lab: SpecsとFigmaエージェントを活用して文脈から実装計画を策定する",
+    "url": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Figmaの新機能「Specs」とAIエージェントを組み合わせ、デザインや要件などの断片的な文脈を統合して、コーディングAIが即座に実装可能な計画を作成する高度なワークフロー。",
+    "summaryBody": "Figmaが提供する新機能「Specs」を活用した、より効率的な開発ワークフローが解説されています。Specsは、PRD、FigJamの図、注釈付きデザイン、インタラクティブなコードレイヤー（Code Layers）など、プロジェクトに関するあらゆる「文脈」をキャンバス上の共有コンテナに集約する機能です。\n\n本事例では、エンジニアがFigmaエージェントと外部データ連携（Hexコネクタ）を使用して分析データを取り込み、複数のソースをSpecに統合。その後、AIエージェントがこれらの情報を読み取って「実装計画」を自動生成します。特筆すべきは、MCP（Model Context Protocol）を介したCodex等のコーディングエージェントとの連携です。これにより、デザインの意図や技術的な詳細を保持したまま一つの共有リンクでAIに指示を出し、正確なコード実装を可能にします。設計から実装までの距離をAIで劇的に短縮する、次世代のプロダクト開発プロセスを示しています。",
+    "topics": [
+      "Figma Specs",
+      "Figma Agent",
+      "AI Workflow",
+      "MCP (Model Context Protocol)",
+      "Code Layers"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Workflow Lab: Turning Context Into a Plan With Specs and the Figma Agent | Figma Blog"
+  }
+}

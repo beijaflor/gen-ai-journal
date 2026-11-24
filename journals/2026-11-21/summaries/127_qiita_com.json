@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:36:45.933218+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini Decisions による動画の判定",
+    "url": "https://qiita.com/kataoka_se_sionic/items/6bd2eb0b767b6e10fe6a",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Geminiの新機能「Decisions API」を用い、動画から料理の作業手順や道具の使用状況を自動判定する精度とコストを検証した技術レポート。",
+    "summaryBody": "Googleが発表した意思決定特化型モデル「Gemini Decisions」を活用し、動画データを入力として特定の作業ミスを検出する実験をまとめています。CaptainCook4Dデータセットの調理動画を用い、マグケーキ作りの工程で「泡立て器」と「スプーン」のどちらを使用しているかを高い精度で識別できることを確認。また、複数項目の同時判定（道具の種類と生地の滑らかさ）や、入力トークン量に基づく具体的なコスト試算（1動画あたり数円程度）、実行速度についても検証しています。JevやOpenAI Decisionsとの比較を交えつつ、実務での手順確認や品質管理への応用可能性を提示する内容となっています。",
+    "topics": [
+      "Gemini",
+      "Decisions API",
+      "動画解析",
+      "LLM",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

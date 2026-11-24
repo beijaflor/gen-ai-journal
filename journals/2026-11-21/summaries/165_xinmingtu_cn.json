@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:27:34.806081+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claudeは大規模なタンパク質配列でトレーニングされていた",
+    "url": "https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "最新のClaudeモデル（Fable 5.2やOpus 5.5）が、他の主要LLMとは対照的に、大規模なタンパク質配列を学習しており、専門のタンパク質言語モデルに匹敵、あるいは凌駕する予測能力を持つことを実証した。 ",
+    "summaryBody": "本記事は、AnthropicのClaude最新モデル群がタンパク質配列を大規模に学習していることを明らかにした検証レポートである。著者は、先行研究の少ない「機能未知ドメイン（DUF）」を持つ細菌タンパク質を用い、配列の続き（アミノ酸）を予測させるテストを実施した。\n\n検証の結果、Claude Fable 5.2やOpus 5.5は、既存の主要なオープンソースのタンパク質専用言語モデル（ProGen3-3BやProtGPT3-10B）に匹敵、あるいはそれを上回る予測精度を示した。一方で、GPT-6.2やGemini 4 Carbonといった他社の最新モデルは、有名なタンパク質（GFP等）の暗記はしているものの、未知のタンパク質配列に対する予測能力はほぼ皆無であった。また、Claudeは学習データのカットオフ後に公開された新しいタンパク質に対しても予測能力を維持しており、特定の配列を暗記しているだけでなく、タンパク質ファミリーの統計的な規則性を学習していることが示唆された。この知見は、汎用LLMがバイオテクノロジー分野における変異予測や構造解析など、高度な生物学的タスクに応用可能であるという強力な根拠を提示している。",
+    "topics": [
+      "Claude",
+      "タンパク質言語モデル",
+      "バイオインフォマティクス",
+      "LLMベンチマーク",
+      "Anthropic"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Claude was trained on protein sequences at scale"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:56:11.179400+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "サンドボックス内のAIエージェントにHerdrを安全に使わせるためのプロキシ構成",
+    "url": "https://zenn.dev/naofumimurata/articles/nono-hc-proxy",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントがnonoサンドボックス内からHerdrを介してターミナルを操作する際、サンドボックス外への脱出を防ぐためのセキュアなプロキシの実装方法を解説。",
+    "summaryBody": "macOS用サンドボックスツール「nono」内で動作するClaude CodeなどのAIエージェントに対し、ターミナルマルチプレクサ「Herdr」の操作権限を安全に付与する手法についての技術解説です。通常、herdr-coreはサンドボックス外で動作するため、エージェントに直接操作を許可するとサンドボックスをバイパスされるリスクがあります。著者はPythonで中継プロキシを実装し、JSON-RPC通信をインターセプトすることで、「新規端末作成時のnono強制適用」と「nono管理下以外の端末操作の拒否」を徹底。さらにmacOSのSeatbeltルールを活用したプロファイル設定や、launchdによる常駐化、エージェント起動スクリプトの最適化まで、実戦的なセキュリティ構成を提示しています。",
+    "topics": [
+      "AI Agent",
+      "Security",
+      "Sandboxing",
+      "Claude Code",
+      "Herdr"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

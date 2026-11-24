@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:43:55.710449+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "おい、 Mutation Test をやれ。テスト品質を、測るために",
+    "url": "https://zenn.dev/mizchi/articles/mutation-test-quality",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIがコードを量産する時代において、単なるカバレッジでは測れない「テストコード自体の品質」を担保するためのミューテーションテストの重要性と、高速な新ツール @mizchi/mutator を紹介する記事。",
+    "summaryBody": "AIによるテスト生成が容易になった現代では、分岐カバレッジだけではテストが実際に正しく振る舞いを検証できているか（意味があるか）を判断できません。本記事では、コードを意図的に書き換えてテストが落ちるかを確認する「ミューテーションテスト」の有用性を説いています。特に、既存ツールStrykerJSの低速さを解消するために開発された、VitestおよびTypeScriptに最適化された高速ツール「@mizchi/mutator」を紹介。Gitの差分検知（--since HEAD）を利用して変更箇所のみを高速に検査する手法や、リファクタリングの指標としての運用方法について具体的に解説しています。",
+    "topics": [
+      "Mutation Testing",
+      "Vitest",
+      "TypeScript",
+      "Software Testing",
+      "Code Quality"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

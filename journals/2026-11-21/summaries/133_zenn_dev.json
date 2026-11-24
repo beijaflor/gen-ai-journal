@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:35:15.400372+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "フロントエンドの logic と UI は、エージェントの責任範囲で分けられるのか",
+    "url": "https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる自律的なフロントエンド開発において、各工程が「自分で評価・責任を持てる範囲」を基準に、ロジックとUIを分離して開発効率を高める試行とその課題を共有しています。",
+    "summaryBody": "京都芸術大学のクロステック・マネジメントによる、AIエージェント開発基盤「エージェントハーネス」での実践レポートです。当初、設計からPR作成までを一括で行う構成でしたが、実行時間の増大と部分的な改善の困難さから、工程の分離を模索。特にフロントエンドにおいて、OpenAPI等の「契約」に基づきモックで単体テスト可能な『logic』と、実際の画面描画や操作を担う『UI』に分離する手法を提案しています。この分離により、バックエンドとの並走や特定モデルの最適化が可能になる一方、E2Eテストのロケーター修正の責任境界、logicとUI間の契約（hookの型等）の自動生成、そして現代的なReactの書き方（Server Components等）との乖離といった、実用化に向けた複数の課題が浮き彫りになっています。",
+    "topics": [
+      "AIエージェント",
+      "フロントエンド開発",
+      "ソフトウェア設計",
+      "React",
+      "E2Eテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 88
+    }
+  }
+}

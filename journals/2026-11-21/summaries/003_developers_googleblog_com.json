@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:06:57.714484+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エージェントはリクエストではなくセッション：AIエージェント向けGKEノードプールのサイジング",
+    "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェント特有の長時間セッションと高い待機時間に対応するため、Agent Substrateを用いてアイドル状態の計算リソースを解放しコストを最適化する方法を解説。",
+    "summaryBody": "AIエージェントはWebリクエストとは異なり、セッションが数時間持続する一方で、実際に動作している時間は全体の約20%に過ぎません。従来の「1セッションにつき1Pod」の構成では待機時間にもコストが発生しますが、新たにGA（一般提供）となった『Agent Substrate』と『AX』を活用することで、アイドル状態のセッション（Actor）をオブジェクトストレージに退避（Park）させ、ノードリソースを効率的に共有できます。記事では、1時間あたり2回のプロンプト送信という条件下でノードコストを約40%削減できる試算を示しています。一方、プロンプト頻度が1時間に4回を超える場合は常駐Podの方が安価になるという境界線も提示されており、実際の利用パターンに基づいたサイジングの重要性を説いています。また、Agent SubstrateはgVisorなどと共にCNCFへの寄贈も発表されています。",
+    "topics": [
+      "AI Agents",
+      "GKE",
+      "Google Cloud",
+      "Agent Substrate",
+      "Cost Optimization"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Agents are sessions, not requests: size GKE node pools for AI agent sessions"
+  }
+}

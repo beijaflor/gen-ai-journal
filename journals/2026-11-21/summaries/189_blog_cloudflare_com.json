@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:21:46.446488+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Cloudflare、データ抽出モデル「Clairic」の更新版と軽量版「Clairic-flash」をオープンウェイトで公開",
+    "url": "https://blog.cloudflare.com/open-clairic/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "CloudflareのWorkers AIチームが、PDFや画像からの高度なデータ抽出に特化したAIモデル「Clairic」の最新版と、9Bパラメータの高速版「Clairic-flash」をオープンウェイトとして公開しました。",
+    "summaryBody": "Cloudflareは、非構造化データからの情報抽出に特化したモデル「Clairic」の大幅なアップデートと、軽量版「Clairic-flash」を発表しました。主な改良点として、PDFや複数画像（最大4ページ/枚）からのデータ抽出に対応し、表、リスト、日付の処理能力が向上しています。技術的には「平行スロット自己回帰生成」という新アーキテクチャを採用し、1秒未満の低レイテンシを維持しながら精度を改善しました。両モデルはWorkers AIで利用可能なほか、Hugging Faceで重みが公開されています。高価な汎用LLMを介さず、低コストで特定の抽出タスクを自動化することを目指しています。",
+    "topics": [
+      "Cloudflare",
+      "Clairic",
+      "データ抽出",
+      "オープンソースAI",
+      "Workers AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team"
+  }
+}

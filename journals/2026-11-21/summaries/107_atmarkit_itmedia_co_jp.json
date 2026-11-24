@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:41:37.264581+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「非公開APIだから安全」はもう通用しない　AIが変える脆弱性発見の常識",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news009.html",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIを活用した解析技術の向上により、非公開APIの秘匿性に頼る防御は限界を迎え、A2B攻撃や激増するCVEへの戦略的な対応が急務となっている。",
+    "summaryBody": "AIの進化により、モバイルアプリからバックエンドサーバを狙う「A2B攻撃（App-to-Backend Attack）」の脅威が増大しています。これまで「非公開API」として秘匿されていた仕様も、AIによるコード解析や通信分析によって容易に露呈する時代となりました。\n\n統計データによると、CVE公開件数は2026年時点で前年の約4倍という爆発的な増加傾向にあります。しかし、実際に悪用が確認された脆弱性（KEV）の増加はそれに比べると限定的であり、防御側には単なる「パッチ適用」を超えた、リスクに基づく優先順位付けが求められています。\n\n特に、パッケージ製品とは異なり、修正プログラムが提供されない「自社開発アプリ・API」の脆弱性は、CVEという公的指標の枠外で深刻なリスクとなっています。企業は「隠れているから安全」という従来の設計思想を捨て、AIによって攻撃者の能力が飛躍的に高まっている現実を直視したセキュリティ戦略の再構築が必要です。",
+    "topics": [
+      "APIセキュリティ",
+      "AIサイバー攻撃",
+      "A2B攻撃",
+      "脆弱性管理",
+      "CVE"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

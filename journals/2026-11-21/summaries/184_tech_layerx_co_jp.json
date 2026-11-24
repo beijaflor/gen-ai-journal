@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:22:59.664781+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "内製 Coding Agent \"haro\" を使った全サービス横断レッドチーミング基盤",
+    "url": "https://tech.layerx.co.jp/entry/haro-readteam",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LayerXが内製AIエージェント「haro」とPromptfooを組み合わせ、全サービスのLLM機能を自動検知・攻撃・判定する自律型レッドチーミング基盤を構築した事例。",
+    "summaryBody": "LayerXは、急増するLLM活用機能の安全性を確保するため、内製Background Coding Agent「haro」を活用した全社横断の自動レッドチーミング基盤を構築しました。従来、各開発チームが個別に行っていたセキュリティ検証を、プラットフォーム側で自動化・スケールさせる仕組みです。\n\n主な特徴は以下の3点です：\n1. **自動検知と環境分離**: モノレポ内からSDKの利用箇所等をスキャンしてLLM利用箇所を自動特定し、haroのWorkspace Pod上で並列に攻撃検証を実行します。\n2. **自律的なテスト実装**: Claudeが対象のコードとプロンプトを解析して、OSSの評価ツール「Promptfoo」のproviderを自動生成し、最適な攻撃ベクトルを決定します。\n3. **決定論的な成功判定**: AIによる判定の誤検知を最小化するため、特定のトークンを出力させる指示など、プログラムによって客観的に攻撃の成否を確認できる手法を採用しています。\n\nこの「Shift-RightなEnabling」アプローチにより、プロダクトチームの開発速度を犠牲にすることなく、リリースのたびに自動で最新の脆弱性検証が行われる体制を実現しました。",
+    "topics": [
+      "LLMセキュリティ",
+      "レッドチーミング",
+      "AIエージェント",
+      "Promptfoo",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

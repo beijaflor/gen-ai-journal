@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:33:44.705045+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agent Host Protocol (AHP) の構築：デバイスを跨いで継続するエージェント・セッションの実現",
+    "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GitHubは、AIエージェントのセッションをモバイル、デスクトップ、クラウド間でシームレスに同期・継続可能にするオープン規格「Agent Host Protocol (AHP)」の詳細を公開しました。",
+    "summaryBody": "GitHubは、AIエージェントとの対話を特定のクライアントやデバイスの制約から解放するため、新しいオープンな通信規格「Agent Host Protocol (AHP)」を開発しました。これまでのGitHub CopilotはVS Codeなどの各エディタに密結合していましたが、AHPの導入により、例えば外出先でモバイルから開始したエージェントのタスクを、オフィスに到着後にPCのVS Codeでそのまま引き継ぐことが可能になります。設計面では、URIで識別される「チャネル」構造とリデューサーベースの状態管理を採用しており、不安定なネットワーク環境での再接続や、複数クライアントからの同時操作に強い耐性を持たせています。すでにTypeScriptとRustによるホスト実装が存在し、多くの言語向けにライブラリが提供されているため、開発者は自身のツールやアプリケーションにこのプロトコルを組み込み、高度なAI連携を実現できます。",
+    "topics": [
+      "Agent Host Protocol",
+      "GitHub Copilot",
+      "AI Agents",
+      "Interoperability",
+      "Software Architecture"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Building the Agent Host Protocol for sessions that continue across devices"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:48:14.206503+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "セマンティック・ガバナンス・ポリシー：AIエージェントのアクションを事前に制御する新機能",
+    "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Geminiプラットフォームの新機能「セマンティック・ガバナンス・ポリシー」は、AIエージェントがツールを実行する前に、自然言語で書かれたルールとユーザーの意図に合致するかをリアルタイムで検証します。",
+    "summaryBody": "Googleは、AIエージェントの安全な運用を実現するためのガードレール機能「セマンティック・ガバナンス・ポリシー」をプレビュー公開しました。この機能は、エージェントがツール（外部APIやメール送信など）を実行する直前に、そのアクションが適切かどうかを検証する独立したチェックレイヤーを提供します。\n\n### 主な特徴と機能\n- **実行前検証**: モデルが提案したツール呼び出しを、Agent Gatewayを介してポリシーエンジンが評価します。不適切な場合は、アクションの実行を阻止し、設定された拒否メッセージを返します。\n- **2つのチェック基準**: 「ユーザーの元の依頼内容と一致しているか（意図の確認）」と「自然言語で記述された組織のポリシー（例：決算前の外部共有禁止）に反していないか」の2点を検証します。\n- **自然言語による管理**: 法務やコンプライアンス担当者が、プログラミングなしに日常的な言葉でルールを記述・更新できます。\n- **インダイレクト・プロンプト・インジェクション対策**: 文書内に隠された悪意のある指示などによってエージェントが予期せぬ行動をとるのを防ぎます。\n- **監査可能性**: 全ての判定結果とLLM裁判官による論理的根拠（Rationale）はCloud Loggingに記録され、後から詳細を確認できます。\n\n従来のIAM権限管理やシステムプロンプトだけでは不十分だった、コンテキストに応じた動的な制御が可能になり、企業におけるAIエージェント活用の安全性が大幅に向上します。",
+    "topics": [
+      "AIエージェント",
+      "ガバナンス",
+      "Gemini",
+      "セキュリティ",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Check what your AI agents do before they do it, with Semantic governance policies"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:28:50.587449+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "全てにLLMが必要なわけではない：意思決定モデル（Decision Models）の活用術",
+    "url": "https://newsletter.posthog.com/p/decision-models",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "PostHogが実践する、高コストなLLMの代わりに軽量な意思決定モデル（Jev等）を導入してコストと速度を劇的に改善する手法の解説。",
+    "summaryBody": "PostHogでは、LLMの冗長性や高コストを避けるため、確率に基づいた構造化データを返す「意思決定モデル（Decision Models）」を積極的に活用しています。記事では、意思決定モデルがLLMより最大444倍安価で193倍高速であることを示し、具体的な4つのユースケースを紹介しています。\n\n1. **LLM呼び出しのゲート**: 個人情報（PII）のスクラビングなどにおいて、まず意思決定モデルで判定を行い、必要な場合のみ高価なLLMへ渡すことで、98.7%のLLM呼び出しを削減。\n2. **モデルルーター**: タスクの難易度に応じて、最も安価なモデルを選択する仕組み。\n3. **フェースバリュー（額面）チェック**: 検索結果の再ランキングなど、複雑な推論を必要としない平坦なデータ判定への適用。\n4. **過剰なLLMの代替**: 決定論的なルール（Regex等）では限界があるが、LLMを使うほどではない曖昧なタスク（SQL結果からのチャート選定など）への活用。\n\n注意点として、しきい値の設定（偽陽性と偽陰性の許容コストに基づく調整）の重要性や、多段階推論には依然としてLLMが適していることが強調されています。",
+    "topics": [
+      "Decision Models",
+      "Cost Optimization",
+      "LLM Efficiency",
+      "PostHog",
+      "AI Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 92,
+      "overall": 90
+    },
+    "originalTitle": "Not everything needs an LLM"
+  }
+}

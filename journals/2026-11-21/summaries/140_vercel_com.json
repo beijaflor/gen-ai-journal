@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:33:31.064765+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Vercelによる、プロダクション対応エージェント構築のためのオープンソースフレームワーク「eve 1.0」の正式リリース",
+    "url": "https://vercel.com/blog/eve-is-now-generally-available",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Vercelは、耐久性のあるワークフロー、マルチプレイヤー機能、主要Webフレームワークとの統合を備えた、実用的なAIエージェント開発のためのオープンソースフレームワーク「eve 1.0」を発表しました。",
+    "summaryBody": "Vercelは、プロダクション環境での利用に耐えうるAIエージェントを構築するためのオープンソースフレームワーク「eve 1.0」を正式リリースしました。2024年6月のパブリックプレビュー以来、多くのフィードバックを反映し、一般提供（GA）が開始されました。\n\n主な特徴は以下の通りです：\n- **堅牢な実行基盤**: ワークフローSDKにより、クラッシュ時も直前のステップから自動再開。Vercel WorkflowsやSandboxとの統合により、隔離環境でのコード実行や耐久性のあるタスク実行を実現します。\n- **マルチプレイヤー & マルチチャネル**: Slack、Teams、GitHubなどの各プラットフォームで、複数ユーザーが1つのエージェントセッションを共有し、個別に承認やサインインを行うことが可能です。\n- **パフォーマンスとコストの最適化**: ベータ版と比較してターンレイテンシを約7.3倍高速化。会話データの増分保存により、ワークフローの実行コストを最大約76%削減しました。\n- **高度な開発者体験**: Next.jsやNuxt等の主要Webフレームワークとのネイティブ統合に加え、OpenTelemetryベースのトレーシングにより、モデルの呼び出しやツール実行のコスト、レイテンシを詳細に可視化できます。\n\n開発者は `npx eve@latest init` を通じてローカルで迅速に開発を開始でき、コーディング支援、社内ナレッジ検索、カスタマーサポートなど、実用的なユースケースに対応したテンプレートも提供されています。",
+    "topics": [
+      "AI Agents",
+      "Vercel",
+      "Open Source",
+      "Next.js",
+      "Workflow SDK"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 95
+    },
+    "originalTitle": "Introducing eve 1.0"
+  }
+}

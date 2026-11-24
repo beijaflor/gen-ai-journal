@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:50:40.189829+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "常時稼働エージェントの作り方（Claude公式ブログを資料化）",
+    "url": "https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Anthropicが公開した「常時稼働エージェント（Always-on Agents）」の構築ガイドを基に、セッションを跨ぎ自律的に動作するAIシステムの5つの核となる設計要素を解説した資料です。",
+    "summaryBody": "この資料は、Anthropicの公式技術ブログ「Building always-on agents」の内容を日本語で視覚的にまとめたものです。24時間稼働し続けるエージェントとは、単に起動し続けるのではなく、イベント発生時に「ラン（実行）」を行い、それ以外は「眠る」という循環構造を持つものと定義されています。エージェントを支える5つの主要コンポーネントとして、1. 外部からの要求をキューとして管理する『イベントインボックス』、2. 自律的な再起動を予約する『タイマー』、3. 必要な文脈だけを抽出・保存する『メモリ』、4. 無人動作時の安全性を担保する『権限管理』、5. 最終的な成果を届ける『アウトボックス』を挙げています。また、Claude Codeの実装例（オートモードや確認カードなど）を引き合いに出しながら、複雑なタスクをセッションを跨いで完遂させるための実践的なアーキテクチャが解説されています。",
+    "topics": [
+      "AIエージェント",
+      "Claude",
+      "Anthropic",
+      "システム設計",
+      "自律型AI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:27:59.795510+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini 4 Carbonはなぜこれほど時間がかかるのか？：ベンチマークによる要因分析",
+    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Gemini 4 Carbonが競合に比べ大幅に遅い理由を調査し、推論速度だけでなく過剰な監査作業やツールの非効率な利用が主な原因であることを特定した。",
+    "summaryBody": "コーディングエージェントとしてのGemini 4 Carbonが、GPT-6 AstraやClaude Opusと比較して数倍から十数倍の実行時間を要する問題をKernelが分析。調査の結果、原因は大きく3点に集約される。第一に「推論の遅延」で、1ステップあたりの生成速度等が差の約16-30%を説明する。第二に「過剰な作業」で、修正に不要なコードの監査や既知の事実の再確認にステップの半分を費やしている。第三に「機械的非効率」で、1ステップあたりのツール呼び出し数が少なく、既読コードの再読（39%）が頻発している。チェックインの注入により時間が短縮されたことから、知識不足ではなく、報酬系に起因する「過剰に念入りな行動特性」がボトルネックである可能性が高い。",
+    "topics": [
+      "Gemini 4 Carbon",
+      "LLMベンチマーク",
+      "AIコーディング",
+      "推論効率",
+      "パフォーマンス分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 92
+    },
+    "originalTitle": "Why is Gemini 4 Carbon taking so long?"
+  }
+}

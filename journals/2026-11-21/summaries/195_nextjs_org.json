@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:20:08.516173+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIを活用したNext.jsのセキュリティ強化への取り組み",
+    "url": "https://nextjs.org/blog/how-were-using-ai-to-make-nextjs-more-secure",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIによる脆弱性発見の加速に対応するため、Next.jsは自動セキュリティレビューボットやAI連携のアップグレードツールの導入により、フレームワークの安全性を抜本的に強化しています。",
+    "summaryBody": "Next.jsは近年のセキュリティアドバイザリ増加を受け、AIを逆手に取った積極的な防御策を導入しました。AIの普及により、過去数年前のコードに眠る「端的なバグ」が容易に発見・攻撃されるようになった現状を踏まえ、Vercelはプルリクエストごとに動作する「敵対的レビューボット」を導入。これにより、人手によるレビューをすり抜ける脆弱性をリリース前に阻止しています。また、脆弱性の温床となりやすい依存ライブラリをメモリ安全なものへ刷新し、開発環境での脆弱性警告や、AIエージェントを利用して自動でパッチを適用する`npx next@canary upgrade --agent`コマンドを提供。既存バグの掃き出しと新規バグの混入防止の両面から、AI時代の安全なウェブ開発環境を構築しています。",
+    "topics": [
+      "Next.js",
+      "AI Security",
+      "Vercel",
+      "Vulnerability Management",
+      "Web Framework"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "How we're using AI to make Next.js more secure"
+  }
+}

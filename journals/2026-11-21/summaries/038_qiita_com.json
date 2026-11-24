@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:58:01.503440+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Kanaryの新機能「/relay」でClaude・Codex・Cursorをつないで往復するのが便利だったので、コードレビューを往復させてみた",
+    "url": "https://qiita.com/inoyu-qiita/items/f2e2d1006407a4d5f28e",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Macアプリ「Kanary」の/relay機能を用い、ClaudeやCodex間で会話コンテキストを維持したままリレー形式でコードレビューを行う効率的なワークフローの紹介。",
+    "summaryBody": "Macのメニューバーアプリ「Kanary」に搭載された新機能「/relay（Agents Relay）」の活用事例を紹介する記事です。この機能は、Claude Desktop、Codex、Cursorといった複数のAIデスクトップアプリ間で、会話履歴や話者（me, claude等）のコンテキストを保持したまま内容を転送できるものです。\n\n著者は、Claudeが生成したTypeScriptコードをCodexへ転送して「認可の抜け道」などを厳格にレビューさせ、その結果を再びClaudeに戻して修正させる「AI間の往復レビュー」を実践しています。手動のコピペでは煩雑になる「文脈の補足」が不要になり、各AIの得意分野を活かしたマルチAI開発がスムーズに行える点が大きな利点です。記事内では、無料枠での利用回数、macOSのアクセシビリティ設定、ターミナル版Claude Codeとの連携方法など、導入時に躓きやすいポイントも詳細に解説されています。",
+    "topics": [
+      "AIエージェント",
+      "Kanary",
+      "Claude",
+      "Codex",
+      "AI駆動開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 86
+    }
+  }
+}

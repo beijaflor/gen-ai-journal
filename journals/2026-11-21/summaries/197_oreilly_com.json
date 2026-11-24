@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:19:39.208506+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI生成データが明日の「正解（Ground Truth）」になるとき",
+    "url": "https://www.oreilly.com/radar/when-ai-generated-data-becomes-tomorrows-ground-truth/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIが生成した結論が企業システム内で「事実」として定着し、誤った意思決定が連鎖するリスクを防ぐため、AIの主張とビジネス上の意思決定の依存関係を追跡する「意思決定リネージ」を提唱する。",
+    "summaryBody": "AIエージェントが文書を読み取り、サプライヤーの適格性などを判断するケースが増えていますが、ここには大きなリスクが潜んでいます。AIによる「生成された主張（Generated Assertion）」が、データベースやダッシュボードを経由する過程で元の文脈や「AI生成である」という属性を失い、確立された「事実（Ground Truth）」として扱われてしまう現象です。これにより、AIの誤った判断が複数のシステムに伝播し、後からAIのミスを修正しても、そのミスに基づいて既に行われた意思決定や作成されたレポートを特定・修正できないという問題が生じます。\n\n本稿はこの課題に対し、「意思決定リネージ（Decision Lineage）」という概念を提案しています。これは従来のデータリネージを拡張し、「どの証拠に基づき、どの権限でAIが主張を行い、どの意思決定がその主張に依存したか」という依存関係を記録する手法です。具体的な実装パターンとして、依存関係レコードの保持、検索インデックスからの自動削除、人間による意思決定の見直しタスクの生成などを挙げています。AI生成データが組織の「事実」となる現在、単なる精度の追求ではなく、誤りが判明した際にその影響範囲を即座に特定し、回復できる仕組み（リカバリーパス）の構築が不可欠であると説いています。",
+    "topics": [
+      "Generative AI",
+      "Data Lineage",
+      "Decision Intelligence",
+      "AI Governance",
+      "Enterprise Systems"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "When AI-Generated Data Becomes Tomorrow’s Ground Truth"
+  }
+}

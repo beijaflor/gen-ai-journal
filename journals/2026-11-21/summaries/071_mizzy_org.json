@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:50:01.212906+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの時代だからこそ、強い型付けのIaCツールをつくっている",
+    "url": "https://mizzy.org/blog/2026/11/02/2/",
+    "language": "ja",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによるインフラコード生成が普及する時代において、人間のレビュー負荷を軽減し、クラウド特有の複雑な仕様（バッドノウハウ）を吸収するために、ドメイン特化の強い型付けを持つIaCツールの重要性を説く。",
+    "summaryBody": "Serverspec開発者のGosuke Miyashita氏が、AI時代におけるIaC（Infrastructure as Code）の役割と「強い型付け」の必要性を論じた記事。主な主張は、1) IaCは単なる構成記述ではなく「意図の記録」と「実行基盤」であり、AIによる変更の承認や再現性に不可欠であること、2) クラウド固有の非同期性や非直感的な仕様（バッドノウハウ）をツール側で吸収する重要性、3) AI生成コードの急増により人間による全レビューが困難になるため、機械的な型検証が防波堤となることである。具体例として、独自ツール「Carina」ではIDやARNをリソースごとに型定義し、デプロイ前の検証能力を高めている。また、著者自身の開発ログを分析し、AI（Claude/Codex）が生成するRustコードの約10%に型エラーが含まれるという実データを示し、静的解析がAI補完の時代でも強力なテストとして機能することを証明している。",
+    "topics": [
+      "IaC",
+      "Infrastructure as Code",
+      "Static Typing",
+      "LLM",
+      "Carina"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

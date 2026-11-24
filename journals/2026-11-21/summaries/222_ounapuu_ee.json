@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:44:33.984691+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIのセーフガードが正規の開発を阻害している現状への批判",
+    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AI企業の過剰な安全策（セーフガード）が、正規の開発者による脆弱性診断や修正作業を阻害し、かえってセキュリティリスクを高めているというエンジニアの強い訴え。",
+    "summaryBody": "### AIセーフガードがもたらす開発の停滞\nシニア製品エンジニアである筆者が、Claude Codeを使用して自社サービスの脆弱性を修正しようとした際、AIの「安全策」によって作業が拒絶された実体験を綴っています。AIは脆弱性を特定したものの、その修正や検証の段階でガードレールが作動し、開発プロセスが中断されました。\n\n### 官僚的な免除プロセスへの不満\n安全策を回避するための「免除申請」には、数日間の待機、個人情報の提出（パスポート等）、およびIP保護の放棄が必要であり、迅速な開発を求めるエンジニアにとって受け入れがたいものであると批判しています。\n\n### オープンモデルによる解決と業界への疑念\n攻撃者は制限のないオープンウェイトモデルを自由に使用できる一方、守る側の開発者が制限される矛盾を指摘。筆者は最終的にGLM 5.3などのオープンウェイトモデルを使用して問題を解決しました。大手AI企業が安全を口実に規制を求めるのは、競合を排除するための「堀（Moat）」作りではないかと強く非難しています。",
+    "topics": [
+      "AI Safety",
+      "Cybersecurity",
+      "Claude Code",
+      "Open Weights Models",
+      "Regulatory Capture"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 35,
+      "overall": 82
+    },
+    "originalTitle": "Fuck your AI safeguards"
+  }
+}

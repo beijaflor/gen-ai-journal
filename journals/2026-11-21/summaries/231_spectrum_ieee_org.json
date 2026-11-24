@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:42:27.778791+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unreal EngineがAIコーディング時代へ：Epic GamesがUE6で進める「AIファースト」な大転換",
+    "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Epic Gamesは、AIエージェントによるゲーム開発の台頭に対応するため、Unreal Engine 6で長年の主力だったビジュアルスクリプトを廃止し、AIが理解しやすいテキストベースの言語と新アーキテクチャへの刷新を進めている。",
+    "summaryBody": "Epic Gamesは、大規模言語モデル（LLM）がゲーム開発プロセスを根本から変えつつある現状を受け、Unreal Engine (UE) の設計を「AIファースト」へと舵を切っています。主な変更点は以下の通りです。\n\n*   **Blueprintsの廃止とVerseの導入**: AIはバイナリ形式のビジュアルスクリプト（Blueprints）よりもテキストコードを好むため、UE6では新たなプログラミング言語「Verse」が全面的に採用されます。\n*   **新アーキテクチャ「Scene Graph」**: 従来のオブジェクト指向（Actor）から、AIが管理しやすくパフォーマンスに優れたエンティティ・コンポーネント・システム（ECS）ベースのScene Graphへ移行します。\n*   **GUIからの脱却**: AIエージェントがエディタを開かずに操作できるよう、アセットのテキスト化、APIの露出（Python All The Things）、コマンドラインツールの強化が進められています。\n\n背景には、AnthropicのClaude Codeのように、人間が手を動かさずともエンジンの移行や機能実装を完結させるAIツールへの危機感があります。Epicは、エンジンを高度にモジュール化し、AIとの親和性を高めることで、独自エンジンを構築するよりもUEを利用する方が効率的であるという優位性を保とうとしています。",
+    "topics": [
+      "Unreal Engine 6",
+      "Epic Games",
+      "AIコーディング",
+      "Verse",
+      "ゲーム開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Will AI Coding Eat Video Game Engines? Epic Games, creator of the popular Unreal Engine, is racing against standalone AI coding tools"
+  }
+}

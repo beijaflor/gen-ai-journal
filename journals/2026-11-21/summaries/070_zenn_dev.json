@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:50:13.879508+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録",
+    "url": "https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI活用により激増したテストケースに対し、ユーザーストーリー単位のリスク評価（RBT）を導入して実行件数を半減させつつ品質を維持した実録。",
+    "summaryBody": "ビジネス映像メディア「PIVOT」におけるQAプロセスの改善事例。AI（Claude Code等）によるテストケース作成を導入した結果、ケース数が爆発的に増加し、リリース前の全件実行が困難になった。この課題に対し、テストケースを単なる確認項目ではなく「仕様書の正本」として維持しつつ、実行対象をリスクベース（影響度×発生確率）で選別する仕組みを構築。当初の「機能単位」での評価から、より細かい「ユーザーストーリー×受け入れ基準」単位へと評価軸を洗練させ、S1（見られない）からS4（付加機能）の4段階影響度マトリクスを策定した。さらに、この選定作業自体もClaude Codeのskillに任せることで自動化を実現。結果として、テスト件数を約半分に抑制しながら、重要不具合の検知率を維持し、浮いたリソースを探索的テストに充てることが可能になった。",
+    "topics": [
+      "QA",
+      "リスクベースドテスト",
+      "Claude Code",
+      "AI生成",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 88
+    }
+  }
+}

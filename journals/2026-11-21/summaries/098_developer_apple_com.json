@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:43:42.826018+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "macOSにおけるデバイス制御、データアクセス、およびフルディスクアクセスの更新",
+    "url": "https://developer.apple.com/news/?id=oqng0zjk",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "macOS 27.3において、ユーザーのプライバシー保護と透明性向上のため、フルディスクアクセスやデバイス制御に関する権限管理プロセスが大幅に刷新されます。",
+    "summaryBody": "macOS 27.3 beta 2より、システム権限の透明性と制御性を高める新機能が導入されます。「デバイス制御とデータアクセス」設定は「システムとアプリ保護のオーバーライド」と「アクセシビリティ」の2つに分割され、ユーザーは特定のアプリやフォルダのみにアクセスを限定できるようになります。また、アクセスが必要な際、毎回ユーザーに確認を求める設定や、アプリが他のアプリを制御している際の透明性インジケーターも追加されます。既存の権限は維持されますが、ディスクバックアップや支援技術を開発するデベロッパは、新規インストール時に従来のUXを提供するための特定のエンタイトルメントの申請が必要になる可能性があります。開発者は、制限されたアクセス状況下でもアプリが適切に動作するよう、オンボーディングの調整が求められます。",
+    "topics": [
+      "macOS",
+      "Apple Developer",
+      "Security",
+      "Privacy",
+      "API"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Updates to Device Control and Data Access, and Full Disk Access in macOS"
+  }
+}

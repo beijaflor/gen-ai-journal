@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:44:37.286286+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "専門家に使ってもらうAIプロダクトをつくる - 病院の医事課向けDPCコーディング支援システムの設計と評価",
+    "url": "https://speakerdeck.com/hagino3000/building-ai-product-for-expert",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Ubie社による、病院のDPCコーディング業務をAIで支援するシステムの設計思想と、専門家の判断を最大化するための実装・評価手法に関する解説。",
+    "summaryBody": "本資料は、Ubie株式会社が開発した「ユビーDPCサポーター」の設計と評価に関する知見をまとめたものです。病院の複雑なDPCコーディング（診断群分類）業務において、AIがカルテ等の非構造データから情報を抽出し、ルールベースのロジックに渡す正規化パイプラインの重要性を説いています。専門家（医事課や診療情報管理士）が「探す・読む・照合する」作業から解放され、最終的な「判断」に集中できるUI/UXを目指す設計思想が示されています。性能評価面では、定量的評価に加えて、ドメインエキスパートである医師が定性的なエラー分析を行い、直接コード修正（ハーネス修正）を行う開発サイクルを構築することで、医療現場で求められる高い信頼性を担保する手法を紹介しています。",
+    "topics": [
+      "DPCコーディング",
+      "医療AI",
+      "自然言語処理",
+      "LLM",
+      "MLOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

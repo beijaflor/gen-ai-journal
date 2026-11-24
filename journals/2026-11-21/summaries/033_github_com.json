@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:59:11.396000+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "tokendoctor: Claude Codeのコストを最大38%削減する最適化ツール",
+    "url": "https://github.com/localixai/tokendoctor",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの過去の利用履歴を分析し、コンテキストウィンドウの最適化や「スライド」機能により、APIコストを大幅に削減するオープンソースツール。",
+    "summaryBody": "Claude Code（AnthropicのCLIエージェント）の利用コストを削減するための最適化ツール「tokendoctor」が登場しました。このツールは、ユーザーのローカルに保存されている過去30日間のセッションログを分析し、コンテキストウィンドウの設定を変更した場合の節約額をシミュレーションします。\n\n主な機能：\n1. **セッション・リプレイ**: `/tokendoctor:sessions`コマンドにより、過去の履歴に基づいて最適なウィンドウサイズを提案します。\n2. **スライド機能（Slide）**: Claude Code標準の「要約（Summarize）」プロセスの代わりに、古いツール出力を削除してコンテキストを維持する手法を採用。これにより、要約に伴う待ち時間（平均79秒）とモデル呼び出しコストを排除します。\n3. **設定の自動監査**: 現在の設定を公式ドキュメントに照らしてチェックし、コスト効率の良い設定（例：サブエージェントにSonnetを使用するなど）を提案します。\n\n分析はすべてローカルで完結し、外部へのデータ送信や追加のAPI費用発生を抑えた設計になっています。開発者の実測値では、コンテキストあたりのトークンを大幅に削減し、38%のコストカットに成功しています。",
+    "topics": [
+      "Claude Code",
+      "LLMコスト最適化",
+      "Anthropic",
+      "開発者ツール",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - localixai/tokendoctor: tokendoctor: the same Claude Code for up to 38% less. Replays your own past sessions to show what each change would have saved, then changes only what you pick"
+  }
+}

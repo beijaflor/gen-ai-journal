@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:56:36.842013+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIの回答が長すぎて、理解しないまま実装している問題（理解負債）",
+    "url": "https://zenn.dev/kent_code/articles/5892898be90cac",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIの長すぎる回答が招く「理解負債」を防ぐため、CLAUDE.mdに回答スタイルを規定し、チャットの簡略化と外部ファイルへの詳細出力を自動化する運用術を提案。",
+    "summaryBody": "AI（特にClaude Code）による詳細すぎる回答が人間の認知能力を超え、内容を深く理解せずに実装を進めてしまう「理解負債」の課題を指摘しています。著者はこの解決策として、CLAUDE.mdに特定の回答ルールを追加することを推奨しています。主なルールは以下の通り：1. チャット回答は結論3行以内に絞り、詳細は別項として提示する。2. 次のアクションを1行で明示する。3. 設計案などの長文はdocs/notes/配下のMarkdownファイルへ自動出力し、チャット側は要約に留める。4. ファイル内に直接質問を書き込むことで文脈を維持したQ&Aを行う。この運用により、チャット行数を約9割削減しつつ、必要な情報をストックとして管理し、開発者が「理解の深さ」を主体的に選択できる環境を実現しています。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "理解負債",
+      "AI開発ワークフロー",
+      "エンジニアリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

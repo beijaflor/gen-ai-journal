@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:36:27.449799+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "家庭用の LLM Wiki を職場に持ち込んだ話：Claude Code を活用したコールセンターのナレッジ管理",
+    "url": "https://qiita.com/ekrsw/items/2b57d7826619cc1f30a5",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "非エンジニアのコールセンター管理職が、Claude Code と GitHub を用いて情報検索と整理を自動化する独自システム「S.C.O.P.E.」を構築し、業務効率化した実践録。",
+    "summaryBody": "コールセンターのマネージャーが、家庭で運用していた「LLM Wiki」の仕組みを職場向けに最適化したツール「S.C.O.P.E.」の導入事例です。Claude Code を基盤に、GitHub による Wiki のバージョン管理と Python による複数ソース（コール履歴、マニュアル、FAQ等）の横断検索を組み合わせています。AI が人間よりも忠実に検索の「型」を守ることで、検索スキルの個人差を埋めることに成功。導入過程で直面した OneDrive の同期不具合や GitHub Free プランの権限制限といった現実的な課題に対し、共有フォルダの活用や環境変数による擬似的な権限管理などで解決を図っています。また、既存の社内公式 RAG との競合を避け、S.C.O.P.E. で精査した情報を RAG にフィードバックする共存戦略を提唱しています。",
+    "topics": [
+      "Claude Code",
+      "LLM Wiki",
+      "ナレッジマネジメント",
+      "コールセンター",
+      "GitHub"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:42:47.873143+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
+    "url": "https://zenn.dev/nttdata_tech/articles/9562962cc181a1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude CodeやCodexを用いたAIエージェントの自律性を高める「ハーネス（実行基盤）」の設計思想を解説し、プロンプトに頼らず構造化されたファイル管理と自律的な検証ループによって「自分の代わり」に動く環境を構築する手法を提案している。",
+    "summaryBody": "本記事は、AIエージェントが自律的にタスクを遂行し、継続的に学習・改善されるための「ハーネス（実行基盤）」の設計思想と実装方法を詳説しています。筆者はプロンプトエンジニアリングの限界を指摘し、代わりに「構造化された置き場」を作る重要性を強調しています。具体的には、規約・台帳・文脈・記録・検査の5つの責務を分けたGitリポジトリ（_harness）を核とし、記憶を階層化することでエージェントが必要な文脈だけを効率的に参照できる仕組みを構築。また、SessionStart/EndなどのHooksを活用して記録の漏れを防ぎ、`harness-doctor`による自動検査で基盤の健全性を維持します。さらに、エージェントが自律的にチームを組み、共有ボードを介してタスクを並列処理する「自律実行ループ」の実践例（スライド作成の自動化など）も紹介されており、実務での高度なAIエージェント運用のための具体的なフレームワークを提供しています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "Harness Engineering",
+      "コンテキストエンジニアリング",
+      "ソフトウェアアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 35,
+      "overall": 97
+    }
+  }
+}

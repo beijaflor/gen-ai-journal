@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:36:11.106804+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに役割を持たせたワークフローを、使うたびに直していたら、止まらなくなった話",
+    "url": "https://qiita.com/Masato_Iwasaki/items/db76e7388cece3cff66e",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIにDirector、Implementer、Reviewerの役割を与え、GitとMarkdownベースの開発ワークフローを構築・改善し、自動化と品質を両立させた試行錯誤の記録。",
+    "summaryBody": "AIに実装だけでなく開発プロセス全体を任せるため、明確な役割分担（ディレクター、実装、レビュー）を定義した独自の開発ワークフローの進化を詳述しています。承認の形骸化を防ぐために「何を承認し、何を承認していないか」を明示するダッシュボードの導入や、テンプレート管理におけるプロジェクト固有設定と共通ロジックの分離、さらにClaude Codeのサブエージェント機能を活用した高度な自動化を実現しました。AI同士のループ防止策として差し戻し回数に上限を設け、重要な判断が必要な際のみ人間に差し戻すガードレールを構築することで、開発効率と品質の底上げを同時に狙っています。",
+    "topics": [
+      "AI駆動開発",
+      "Claude Code",
+      "マルチエージェント",
+      "ワークフロー設計",
+      "Git"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 88
+    }
+  }
+}

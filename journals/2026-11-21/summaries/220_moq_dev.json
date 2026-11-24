@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:45:01.253705+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIが依然としてWebRTCの問題を抱えている理由：Media over QUICによる解決策",
+    "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "音声AIにWebRTCを使用するとパケットロスによる文脈欠如を招くが、Media over QUIC（MoQ）ならAIの高速処理能力を活かした再送制御でUXを劇的に改善できる。",
+    "summaryBody": "WebRTCは人間同士のリアルタイム会議用に設計されており、低遅延を維持するために遅れた音声パケットを容赦なく破棄します。しかし、音声AIにとってはパケットの欠落は「文脈の喪失」を意味し、誤認識や聞き直しの原因となります。本記事では、AIが人間よりも遥かに高速に音声を処理（20倍速など）できる点に着目し、再送を許容する「Media over QUIC (MoQ)」の優位性を説いています。\n\nMoQを使用することで、ネットワークが不安定な状況でも「レイテンシ予算」の範囲内でパケットを再送し、AIに完全なデータを提供できます。また、WebRTCでは困難なTTS（音声合成）の将来的なタイムスタンプによるバッファリングや、トラックの切り替えによる洗練された割り込み処理も実現可能です。Googleが主導するWebRTCの制約から脱却し、AIエージェントの特性に最適化した新しいトランスポート層への投資を、OpenAIやAnthropicなどの主要ラボに提言しています。",
+    "topics": [
+      "WebRTC",
+      "Media over QUIC (MoQ)",
+      "Voice AI",
+      "QUIC",
+      "OpenAI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "OpenAI still has a WebRTC Problem - Media over QUIC"
+  }
+}

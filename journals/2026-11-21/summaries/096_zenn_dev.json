@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:44:09.103527+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Orcaでショットガンフォーメーション開発【西部ワイルドガンマンズあり】",
+    "url": "https://zenn.dev/hidechannu/articles/20261115-orca-shotgun-parallel-worktrees",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントIDE「Orca」とgit worktreeを活用し、複数の開発タスクを並列にAIへ割り振る効率的なワークフローと独自スキル「orca-shotgun」の解説。",
+    "summaryBody": "この記事では、複数のAIエージェントを並列で動かすための「Orca (agent IDE)」を活用した爆速開発手法が紹介されています。筆者は、アメフトのフォーメーションを模したClaude Code用スキル「orca-shotgun」を開発し、1つの依頼から複数のgit worktreeを自動生成して各エージェントにタスクを分散させる仕組みを構築しました。主な内容は以下の通りです。1. Orcaの特徴：git worktreeによる独立環境の確保と複数プロジェクトの一元管理。2. orca-shotgunスキルの役割：命名規則の統一、日本語表示名の設定、詳細な依頼文の自動生成。3. 運用ルール：AIに実装とレビュー（code-review/security-review）を完結させつつ、最終的なコミットとプッシュは人間が手動で確認して行うスタイル。並列開発を成功させる鍵は「タスクチケットの解像度」にあり、モデルの性能以上に何を作るかの定義が重要であると説いています。",
+    "topics": [
+      "Orca",
+      "Claude Code",
+      "git worktree",
+      "AIエージェント",
+      "並列開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:32:42.841380+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "大規模なテキスト匿名化：AirbnbがAI学習における個人データを保護する方法",
+    "url": "https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Airbnbは、AIモデルの学習データに含まれる個人情報（PII）を保護するため、オープンソースのPresidioを拡張し、現実的なダミーデータへの置換を大規模に行うテキスト匿名化システムを構築した。",
+    "summaryBody": "Airbnbのテックブログによる、大規模なテキストデータの匿名化手法の紹介。Microsoftが開発したOSS「Presidio」を基盤に採用し、Airbnb独自の要件に合わせて拡張している。システムは、個人情報（PII）の検出を担う「Analyzer」と、置換を行う「Anonymizer」の2段構成。検出精度向上のため、従来の正規表現やspaCyに加え、ゼロショットNERモデルのGLiNERを導入し、住所や人名の特定能力を高めている。置換処理では、単純なマスキングではなく`faker`ライブラリを用いて現実的な偽データに置き換えることで、ダウンストリームのAIモデルの学習効率を維持している。さらに、同一実行内での一貫性を保つシード管理や、Airbnb特有のリスティングID等への対応も行われており、これらのプロセスは社内のMLオーケストレーターに統合され、匿名化が完了していないデータのデプロイを制限するガードレールとして機能している。",
+    "topics": [
+      "PII (個人情報保護)",
+      "自然言語処理 (NLP)",
+      "機械学習 (ML)",
+      "データエンジニアリング",
+      "プライバシー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 70,
+      "overall": 92
+    },
+    "originalTitle": "De-identifying text at scale: How Airbnb protects personal data in AI training"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:29:56.122652+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "クロード・コード開発チームにおけるコード検証の考え方：エージェントによる品質担保の裏側",
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeチームが、AIエージェントに自らのコードを検証させるためのE2E、プロパティ、デファレンシャルテストの活用法と、検証システムの信頼性を保つ運用プロセスを公開。",
+    "summaryBody": "Claude Codeの開発チームでは、コードの約90%がClaude自身によって作成・レビューされています。この規模で品質を維持するためには、エージェントが「証拠」に基づいて自律的に検証を行うループが不可欠です。本記事では、特に投資価値が高い3つのテスト手法（E2Eテスト、プロパティテスト、デファレンシャルテスト）を解説しています。E2Eテストはシミュレータやブラウザを操作する「verify」スキルを通じて実行され、プロパティテストは人間が見落としがちなエッジケースを特定します。また、検証システム自体の健全性を保つため、「変更内容が自分を評価するテストコードを修正できないようにする」といった厳格なルールや、3回連続で失敗した場合は人間にエスカレーションする仕組み、過去のインシデントに基づく39項目の信頼性チェックリストの運用など、AIネイティブな開発ワークフローの具体像が示されています。",
+    "topics": [
+      "AI Agents",
+      "Software Testing",
+      "Claude Code",
+      "E2E Testing",
+      "LLM Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 94
+    },
+    "originalTitle": "How the Claude Code team thinks about verification"
+  }
+}

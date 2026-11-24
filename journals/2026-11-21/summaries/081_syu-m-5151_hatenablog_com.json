@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:47:45.830016+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Herdrで、エージェントに渡した仕事を受け入れまで見守りたい",
+    "url": "https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントの作業状況を「ゴール」として管理し、制約条件の監視やコンテキストの自動引き継ぎ、人間による受け入れ判断を支援するHerdr用プラグイン「hgm」の紹介。",
+    "summaryBody": "生成AIエージェント（Claude Code, Codex, Copilot）を統合管理するツール「Herdr」向けの新プラグイン「herdr-goal-manager (hgm)」が開発されました。このツールは、人間がアーキテクチャと品質に責任を持つ「agentic engineering」の考え方に基づき、エージェントへの依頼を目標・受け入れ条件・制約（回数や時間の上限）を含む「ループ契約」として記録します。作業中のエージェントを監視し、停止時の自動再指示、コンテキスト上限（既定85%）に達した際のセッション自動引き継ぎ、テストコマンドによる自動検証、そして人間が最終的な「証拠」を確認して受け入れるまでのワークフローを自動化・可視化します。記事内ではHerdrのプラグイン機構の技術仕様についても詳しく解説されており、Rustで実装されたhgmがどのようにHerdrのCLIやソケット通信を利用してエージェントを制御しているかが示されています。",
+    "topics": [
+      "Herdr",
+      "AI Agent",
+      "Rust",
+      "Agentic Engineering",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 90,
+      "overall": 92
+    }
+  }
+}

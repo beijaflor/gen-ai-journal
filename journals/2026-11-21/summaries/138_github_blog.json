@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:33:58.508118+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "メンテナーが必要としているのはAIによるバグ報告ではなく「修正案」である",
+    "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GitHubとMicrosoftは、AIによる脆弱性検知に人間による検証と修正案の作成を組み合わせ、オープンソース開発者の負担を軽減する「Codename MDASH」の試験運用結果を公開しました。",
+    "summaryBody": "昨今、AIによる脆弱性スキャンが容易になった一方で、誤検知や重複を含む大量の報告がオープンソース（OSS）メンテナーの負担となっています。GitHubとMicrosoftはこの問題に対し、修正案までセットで提供するマルチモデル・エージェンシー・スキャニング・ハーネス「Codename MDASH」を開発・試行しました。\n\nこのパイロットプロジェクトでは、以下のプロセスが実施されました：\n1. **検知と提案**: MicrosoftのMAI Cyberモデルを使用して脆弱性を特定し、修正案を生成。\n2. **AIによるフィルタリング**: GitHub Security LabのAIエージェントが重複や低品質な報告を排除。\n3. **人間による検証**: Microsoftの専門リサーチチームが全報告を目視で確認。\n4. **非公開報告**: GitHubのプライベート脆弱性報告（PVR）機能を通じて、実証コードと修正案をセットで送付。\n\n結果として、数千件のAI検出結果から精査された99件が報告され、AutoGPTやCaddy、Expressなどの主要プロジェクトで既にその半数以上（55件）が修正されました。メンテナーからは「ノイズが少なく、修正作業に直結する」と高く評価されており、GitHubは今後この仕組みを「GitHub Secure Open Source Fund」の卒業プロジェクトなどに拡大していく方針です。",
+    "topics": [
+      "GitHub",
+      "Microsoft",
+      "AI Security",
+      "Open Source",
+      "Vulnerability Management"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    },
+    "originalTitle": "Maintainers don't need more AI bug reports. They need fixes. - The GitHub Blog"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:58:43.581489+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "内製 Coding Agent \"haro\" と社内 GPU で、探索的テスト AI Agent をぶん回している",
+    "url": "https://tech.layerx.co.jp/entry/haro-et-agent",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LayerXが内製エージェント「haro」と社内GPU上のQwen3.8-27Bを組み合わせ、大規模な探索的テストを低コストかつ自動で実行する基盤を構築した事例。",
+    "summaryBody": "LayerXは、開発スピードの加速に伴うQAの負荷増大を解決するため、AIエージェントによる探索的テストの自動化を実現しました。本システムは、高度な推論を必要とする「テストシナリオの作成」と「結果の検証（Datadogログ連携含む）」をClaudeに、試行回数が多くコストがかさむ「実際の画面操作」を社内GPUで稼働するオープンウェイトモデル「Qwen3.8-27B」に担当させる役割分担が特徴です。内製コーディングエージェント基盤「haro」の上でこれらをバックグラウンド実行することで、人の手を介さず一晩で数十本のテストシナリオを完走させることが可能になりました。47本のシナリオを10時間実行した検証では、商用LLMのみを利用する場合と比較して4〜7割のコスト削減に成功しつつ、機能横断的な不具合の特定に寄与しています。",
+    "topics": [
+      "AI Agent",
+      "探索的テスト",
+      "Qwen3.8-27B",
+      "Platform Engineering",
+      "QA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 85,
+      "overall": 94
+    }
+  }
+}

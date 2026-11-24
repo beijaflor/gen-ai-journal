@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:34:52.992115+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが爆速で開発する時代の、自動テストとの向き合い方",
+    "url": "https://zenn.dev/daiaoki/articles/webterm-ai-era-testing",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AI（Claude Code）による超高速開発において、品質と速度を両立させるための「テスト可能な設計」と「メタテストによる自動化」の実践的知見。",
+    "summaryBody": "AIによる1日100件以上のコミットに対応するための自動テスト戦略を詳説しています。主なポイントは以下の3点です。\n\n1. **テストしやすい核の設計**: 副作用を排除した「Functional Core」の採用により、シミュレーターの振る舞いを単体テストで堅牢に保護。\n2. **AIに「実行」ではなく「コンパイル」させる**: プロンプトでの指示漏れを防ぐため、演習データからE2Eテストを自動生成する「メタテスト」を構築。AIの判断をプログラムに固定化することで、精度とコストの問題を解決。\n3. **回帰テストの効率化**: 膨大なテストスイートに対し、V8カバレッジを利用して変更箇所に関係するテストのみを選択実行する「Regression Test Selection」を導入。\n\nAIは最短距離での実装には長けていますが、中長期的な保守性を守るための「テストのための回り道（設計）」は、人間が主導すべき重要な役割であると説いています。",
+    "topics": [
+      "Claude Code",
+      "WebTerm",
+      "Playwright",
+      "Vitest",
+      "Regression Test Selection"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    }
+  }
+}

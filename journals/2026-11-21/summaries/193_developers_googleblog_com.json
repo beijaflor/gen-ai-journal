@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:20:40.908634+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TPUモデル設計と最適化のガイド：Ironwoodおよび次世代TPUに向けたベストプラクティス",
+    "url": "https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleは、TPUのアーキテクチャ特性を最大限に活かしてLLMやMoEモデルの学習・推論を高速化するための設計指針「tpu-codesign」を公開した。",
+    "summaryBody": "GoogleのTPU（Tensor Processing Unit）において、最高の投資対効果（TCO）と性能を引き出すためのモデル設計ガイドが公開されました。本ガイドでは、Ironwood (TPU v7x) や次世代の TPU 8 シリーズを対象に、3つの主要な柱で最適化を解説しています。1つ目は「形状ルール」で、MXU（行列演算ユニット）の256x256シストリックアレイに合わせてヘッド次元などの全次元を256の倍数に整列させること。2つ目は「アーキテクチャの選択」で、通信負荷を軽減するLatentMoEの採用や、デコード帯域の壁を越えるための投機的デコード、VPU露出時間の最小化などが挙げられています。3つ目は「並列化の表現」で、物理的なネットワークリンク（ICI、DCN）に合わせたテンソル並列やエキスパート並列の配置戦略を詳述しています。Qwen3やDeepSeek-V3などの最新モデルを例に、具体的な数値目標と最適化によるスループット向上の実証データも提供されています。",
+    "topics": [
+      "TPU",
+      "Model Optimization",
+      "Mixture of Experts (MoE)",
+      "LLM",
+      "Google Cloud"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "TPU Model Design Considerations and Optimization Guide"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:31:25.093177+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIに「モダンなコードの書き方」を教えるModern Web Guidance",
+    "url": "https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/18_1039.html",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleが公開した「Modern Web Guidance」は、AIエージェントに最新のWeb標準を学習させ、レガシーな実装パターンの出力を防ぐためのツールキットです。",
+    "summaryBody": "AI駆動開発において、エージェントが過去の学習データに基づき古いHTML/CSS/JSを提案する問題を解決するため、Googleが「Modern Web Guidance」を公開しました。これはClaude CodeなどのAIエージェントに追加できる「AIスキル」であり、約200本のモダンな実装ガイドが含まれています。主な機能として、最適なガイドを検索する`search`、ドキュメントを読み込む`retrieve`、そしてプロジェクト内の古いコードを検知する`legacy-scan`コマンドを提供します。記事では具体例として、JavaScriptでの座標計算が必要だった「モーダル外側クリックでの閉じる処理」を、最新の`&lt;dialog closedby=\"any\"&gt;`属性へ移行し、未対応ブラウザ向け（Baseline基準）のフォールバックを自動生成する流れを解説しています。AIにブラウザサポートの要件を伝えることで、プロジェクトに応じた最適なモダン化が可能です。",
+    "topics": [
+      "Modern Web Guidance",
+      "AI駆動開発",
+      "フロントエンド",
+      "Google",
+      "Web標準"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    }
+  }
+}

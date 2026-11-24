@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:05:46.497454+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにも渡せる命名の用語表を作る",
+    "url": "https://www.tak-dcxi.com/article/naming-terms-for-ai-workflows/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIとの協働において命名のズレによる誤りを防ぐため、デザインからコードまで一貫した「責務」に基づく用語表の作成とAIワークフローへの組み込み方を解説した記事。",
+    "summaryBody": "AIによるコード生成やデザインからの実装が普及する中、デザインツール、コンポーネント、CSSの各層で命名が食い違うことでAIが文脈を誤読し、誤ったコードを生成する課題を指摘しています。この記事では、Web標準の仕様を尊重し、見た目ではなく「責務」で命名する4つの基準を提示。具体的に `Inner` / `Outer` / `Gutter` / `Gap` といった混同しやすい語の定義を明確にした用語表の例を公開しています。さらに、作成した用語表を `AGENTS.md` や `Claude Code` のカスタムルールとしてAIに読み込ませ、命名のズレが層を越えて蓄積するのを防ぐ具体的なワークフローまでを詳しく解説しています。",
+    "topics": [
+      "AI協働",
+      "命名規則",
+      "フロントエンド設計",
+      "CSS設計",
+      "開発ワークフロー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

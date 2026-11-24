@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:38:01.000207+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "eve 1.0 のフレームワーク統合で Web アプリと AI エージェントを一体開発する",
+    "url": "https://azukiazusa.dev/blog/eve-framework-integration/",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "VercelのAIエージェントフレームワーク「eve 1.0」が提供するWebフレームワーク統合機能を活用し、Next.jsアプリとAIエージェントを単一プロジェクト・同一オリジンで開発・運用する手順を解説した記事。",
+    "summaryBody": "Vercelが提供を開始したAIエージェントフレームワーク「eve 1.0」の核となる『フレームワーク統合』機能に焦点を当てた解説記事です。従来、フロントエンドアプリとAIエージェントは別々のプロジェクトとして管理されることが一般的で、CORSの設定や認証情報の共有が開発上の障壁となっていました。eve 1.0はNext.js、Nuxt、SvelteKit、TanStack Start、Viteを公式にサポートし、`withEve()`設定ラッパーを用いることで、これらを同一オリジンの単一プロジェクトとして統合します。記事ではNext.jsを例に、依存関係の構築からエージェントの定義、`useEveAgent` Reactフックを用いたストリーミング対応のチャットUI実装までをコードベースで詳細に解説しています。エージェントを独立したランタイムとして保ちつつ、開発・デプロイ体験を大幅に効率化する仕組みが詳述されています。",
+    "topics": [
+      "eve",
+      "Next.js",
+      "Vercel",
+      "AIエージェント",
+      "Web開発"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

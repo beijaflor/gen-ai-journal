@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:35:00.502928+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenTelemetryとCloudflareでClaude Codeの利用ログを収集する仕組みの構築",
+    "url": "https://zenn.dev/gemcook/articles/claude-code-otel-cloudflare",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeのOpenTelemetry機能を活用し、Cloudflare WorkersとR2を用いて組織全体の利用ログを自動収集・保存するアーキテクチャの解説。",
+    "summaryBody": "Claude Codeの組織導入に伴い、利用状況を詳細に把握するためのログ収集基盤の構築手順を解説しています。従来のCLIツール（ccusage）と比較し、管理の手間を省くためにOpenTelemetry（OTLP）を採用。Cloudflare WorkersをHTTP/JSONの受け口として利用し、収集した生データをR2へ保存するシンプルな構成を提案しています。また、Claudeの「server-managed settings」機能を用いて、各メンバーの端末設定を中央管理する方法や、取得可能なデータ項目（ユーザー、モデル、トークン数、推定コストなど）についても詳述されています。",
+    "topics": [
+      "Claude Code",
+      "OpenTelemetry",
+      "Cloudflare Workers",
+      "Cloudflare R2",
+      "可視化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

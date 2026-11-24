@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:28:17.340187+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI時代のエンジニアリング指標：アウトプットから価値創出のループを加速させる",
+    "url": "https://octopus.com/blog/engineering-vitals-in-the-age-of-ai",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "AIによる開発の高速化に伴い、従来のDORAメトリクスの限界を指摘し、アウトプットの量、品質、デリバリー速度を軸とした新しいエンジニアリング指標のあり方を提唱する。",
+    "summaryBody": "AIの導入によりソフトウェア開発の「アウトプット」が爆発的に増加する中、Octopus DeployのCTOであるAndrew Best氏は、エンジニアリング組織が測定すべき真の指標（バイタル）について再定義しています。氏は「アウトカム（成果）はアウトプットの継続的なデリバリーによって実現される」とし、AIがもたらす変化を「価値発見ループ」の加速と捉えています。\n\nこの記事で特に注目すべきは、DORAメトリクスの一つである「変更失敗率（Change Failure Rate）」への批判です。AIによってPR（プルリクエスト）の総数が急増すると、失敗率という割合ベースの指標では、顧客が経験する欠陥の絶対数が見えにくくなる「分母の問題」が発生します。そのため、Octopusでは失敗率ではなく「重大な欠陥の絶対数」を直接カウントする手法を採用しています。\n\n提示されている指標は、リードタイムや復旧時間を含む「デリバリー目標」、欠陥数や開発者体験を測る「品質目標」、そして目標設定せず状況を把握するための「トレンド（PRボリューム）」の3層で構成されています。AI時代のリーダーシップには、AIというレバーがデリバリーの各段階にどう影響しているかを具体的に可視化し、組織の実行能力を「バイブス（感覚）」ではなく「データ」で語る姿勢が求められています。",
+    "topics": [
+      "Engineering Metrics",
+      "AI-Driven Development",
+      "DORA Metrics",
+      "Software Quality",
+      "Platform Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Engineering Vitals In The Age Of AI"
+  }
+}

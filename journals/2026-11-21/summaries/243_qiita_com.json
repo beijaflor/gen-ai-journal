@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-23T02:37:34.673290+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeに毎回同じ説明をしていませんか？仕様の手戻りを減らすCLAUDE.mdとタスク設計",
+    "url": "https://qiita.com/yuonozawa/items/e1a69e11e7fe7da06c6d",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeでの開発において、永続的なルールを記述する`CLAUDE.md`と施策ごとのタスクファイルを分離し、ビジネス成果に直結するAI駆動開発の設計手法を解説した記事。",
+    "summaryBody": "AI駆動開発ツール「Claude Code」において、プロンプトの冗長化や認識の乖離を防ぐための実践的なプロジェクト設計術を紹介しています。具体的には、リポジトリに配置する`CLAUDE.md`には「誰のためのサービスか」「何をもって成功とするか（例：ボタンクリックではなく登録完了）」といった普遍的な判断基準を記載。一方で、個別の施策はタスクファイルとして切り出し、「仮説・変更範囲・現状の数値・完了条件」を明記します。このように「不変のルール」と「一時的なタスク」を分けてAIに参照させることで、単なるコード修正に留まらない、マーケティング成果に貢献する効率的な開発が可能になります。",
+    "topics": [
+      "Claude Code",
+      "CLAUDE.md",
+      "AI駆動開発",
+      "プロンプトエンジニアリング",
+      "要件定義"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

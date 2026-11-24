@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:23:42.465208+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AikidoがiOSアプリ向けの「エージェント型ペンテスト」をリリース",
+    "url": "https://www.aikido.dev/blog/aikido-launches-agentic-pentesting-for-ios-apps",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Aikido Securityが、AIエージェントを活用したiOSアプリ向けのペンテスト機能を発表し、Androidと共通のバックエンドを含めた包括的な脆弱性診断が可能になりました。",
+    "summaryBody": "Aikido Securityは、既存のAndroid、Webアプリ、API、外部ネットワーク向け診断に続き、iOSアプリ向けの「エージェント型ペンテスト」の提供を開始しました。これにより、モバイルアプリ本体とそれらが共有するバックエンドAPIを一括してテストできるようになります。\n\n背景として、AIエージェントやオープンソースツールの進化によりモバイルアプリのリバースエンジニアリングが容易になり、iOSアプリへの攻撃率がAndroidとほぼ同等（約86%）まで上昇している現状があります。Aikidoの診断は「ホワイトボックス（ソースコード解析）」形式で行われ、AIエージェントが実際のユーザーとしてログインし、脆弱性を実証（エクスプロイト）することで偽陽性を排除します。\n\n主な特徴は以下の通りです：\n- **包括的なテスト**: Android、iOS、APIを1つのアセスメントで診断し、1つのレポートに統合。\n- **実証済みの知見**: 実際にエクスプロイト可能な脆弱性のみを報告し、再現手順やADBコマンドを提供。\n- **開発者支援**: 修正案の自動生成（AutoFix）や、監査準備に役立つPDFレポートの出力に対応。\n\n利用には、IPAファイル（iOS）またはAPKファイル（Android）に加え、ソースコードリポジトリへのアクセスが必要です。",
+    "topics": [
+      "ペネトレーションテスト",
+      "iOSセキュリティ",
+      "AIセキュリティエージェント",
+      "モバイルアプリ開発",
+      "脆弱性管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Aikido launches agentic pentesting for iOS apps"
+  }
+}

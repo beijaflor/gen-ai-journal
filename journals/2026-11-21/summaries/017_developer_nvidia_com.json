@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T03:03:38.859660+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1枚のGPUでは足りない時：vLLMを使用して2台のNVIDIA DGX StationでGLM-5.3を動かす",
+    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "7530億パラメータを持つ巨大なMoEモデルGLM-5.3を、vLLMとテンソル並列処理を用いて2台のNVIDIA DGX Station間で分散実行するための詳細な構成手順とベンチマークを解説しています。",
+    "summaryBody": "### 概要\n本記事は、単一のGPUメモリ（252GB HBM3e）には収まらない753Bパラメータの巨大モデル「GLM-5.3 NVFP4」を、2台のNVIDIA DGX StationをConnectX-8 RDMAで接続して動かすための技術ガイドです。vLLMを活用し、テンソル並列（TP=2）によってモデルを分割・サービングする方法をステップバイステップで説明しています。\n\n### 主な技術要素\n- **モデル構成**: GLM-5.3は40Bのアクティブパラメータを持つMoEモデルで、量子化版でも約464GBのメモリを必要とします。\n- **インフラ**: 2台のDGX StationをRoCE (RDMA over Converged Ethernet) で接続し、低レイテンシなノード間通信を実現しています。\n- **最適化技術**: vLLMによるマルチトークン予測（MTP）、FP8 KVキャッシュ、およびプレフィックスキャッシュを有効化し、スループットを最大化しています。\n- **ベンチマーク結果**: SPEED-Bench Codingデータセットを用いた検証では、並列数16において最大607.8 tokens/secの出力スループットを記録しています。\n\n### 実装のポイント\nDockerコンテナを用いた環境構築、Hugging Faceからのモデル取得、NCCL設定を含む分散起動スクリプト、そしてAIPerfを用いた性能測定まで、ローカル環境で最先端LLMを運用するための実践的なフローが網羅されています。",
+    "topics": [
+      "vLLM",
+      "GLM-5.3",
+      "DGX Station",
+      "Distributed Inference",
+      "Tensor Parallelism"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM"
+  }
+}

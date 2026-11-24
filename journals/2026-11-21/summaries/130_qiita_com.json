@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:35:54.143191+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人間がボトルネックになった時代のAIエージェント設計",
+    "url": "https://qiita.com/Syoitu/items/5bb47c01a8513e52d1b5",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントの進化により人間の注意力がボトルネック化する中、自律性と生産性を高めるための5つの「スーパーエージェント」設計パターンを提唱している。",
+    "summaryBody": "AIモデルの高性能化に伴い、AIエージェントは自律的にタスクをこなせるようになったが、複数のエージェントを管理・監視する人間の認知負荷が新たな課題となっている。本記事では、この「人間のボトルネック」を解消するためにDeepSeek Harnessチームが提唱する「スーパーエージェント（Super-agent）」の設計思想を5つのパターンで体系化している。具体的には、受付と作業を分ける2階層アーキテクチャ、イベント駆動による能動的な動作、非同期処理による会話の継続、計算・状態・環境の分離、そして外部からの生存・目的監視（ウォッチドッグ）が挙げられる。TypeScriptフレームワーク「Mastra」を用いた実装例も紹介されており、エージェントを単なる道具から、自律して並行作業を行う「同僚」へと進化させるための実践的なアプローチを提示している。",
+    "topics": [
+      "AIエージェント",
+      "Mastra",
+      "システム設計",
+      "TypeScript",
+      "LLMアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

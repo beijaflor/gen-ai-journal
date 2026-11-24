@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-20T02:54:17.459700+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "前編　LLM推論エンジンを作る",
+    "url": "https://zenn.dev/shozotanaka/articles/7e86f85974eebb",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "llama.cppなどの既存ツールに頼らず、ggmlライブラリを直接用いてLLM推論エンジンを自作し、モデル内部の観測や介入を可能にする手法を詳説する技術解説書。",
+    "summaryBody": "本書は、大規模言語モデル（LLM）をローカル環境で動かすための推論エンジン「ggmlLM」を、機械学習ライブラリ「ggml」を用いて自作する過程を解説した技術記事の前編です。既存のllama.cppでは困難な「中間値の取得」「計算過程への介入」を実現することを目的としています。\n主な内容は以下の4つのセクションで構成されています。\n1. **ggmlの基礎**: テンソル管理や計算グラフの仕組み、CPU/GPUバックエンドの使い分け、量子化の扱いを解説。\n2. **全体構成**: Model（重み管理）とSession（推論実行）の分離、PImplイディオムによるカプセル化、IArchインターフェースによる複数モデル（Llama, Gemma 3, Gemma 4等）の抽象化手法を紹介。\n3. **モデルの読み込み**: GGUF形式の解析から、メモリマッピング（mmap）を活用した効率的な重みのロード、CPUとGPUへの層の動的割り当てを詳述。\n4. **トークナイザ**: SentencePieceおよびBPE（Byte Pair Encoding）の実装方法、特に正規表現処理やユニコード分類においてllama.cppと完全に互換性を保つための工夫を解説。\n研究・実験用途に特化し、Transformerの内部構造を透明化する推論基盤の構築プロセスをソースコードベースで紐解いています。",
+    "topics": [
+      "LLM",
+      "ggml",
+      "C++",
+      "推論エンジン",
+      "GGUF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 98
+    }
+  }
+}
