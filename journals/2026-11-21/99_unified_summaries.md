@@ -1,22 +1,24 @@
-## AIチャットボット vs AIエージェント：その決定的な違いとは？
+# 全記事要約 2026年11月21日号
 
-https://1password.com/blog/ai-chatbots-vs-ai-agents-difference
+この週に収集・要約された全記事の完全なアーカイブです。
 
-**Original Title**: AI chatbots vs. AI agents: what’s the difference?
+---
 
-AIチャットボットとAIエージェントの根本的な違い（反応的な回答か自律的な実行か）を解説し、エージェント利用に伴うセキュリティリスクとパスワード管理の重要性を説く。
+## 001_1password_com
+
+**AIチャットボット vs AIエージェント：その決定的な違いとは？**
+
+出典: https://1password.com/blog/ai-chatbots-vs-ai-agents-difference
 
 AIチャットボットとAIエージェントは混同されやすいが、その役割は大きく異なる。チャットボットはユーザーの問いかけに答える「反応型」のツールであるのに対し、エージェントは目標を与えられると自律的に計画を立て、メール送信やカレンダー予約などのタスクを「実行」する能力を持つ。エージェントは利便性が高い一方で、複数のサービスへの広範なアクセス権限と長期的な記憶（コンテキスト）を必要とするため、情報漏洩や意図しない操作のリスクが懸念される。1Passwordはこの課題に対し、エージェントに直接資格情報を渡さず、ユーザーの承認を得て安全に認証を代行する「1Password for Agents」を提案しており、利便性とセキュリティを両立させるアプローチを解説している。
 
 ---
 
-## TPU上でのビットレベルの学習・推論一致（Zero-TIM）による安定した方策内強化学習の実現
+## 002_developers_googleblog_com
 
-https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/
+**TPU上でのビットレベルの学習・推論一致（Zero-TIM）による安定した方策内強化学習の実現**
 
-**Original Title**: Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch
-
-TPU上でのLLM強化学習において、サンプラーとトレーナー間の数値的な差異をビットレベルで解消し、学習の安定性を大幅に向上させる手法「Zero-TIM」が発表されました。
+出典: https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/
 
 LLMの強化学習（RL）、特に方策内学習（On-Policy RL）は数値的な不安定さに極めて敏感であり、推論時のトークン生成と学習時の勾配更新の間に生じる微小な差異が学習を停滞させる要因となります。本記事では、Googleの開発チームがCloud TPU向けに構築した「Zero-TIM（Zero Train–Inference Mismatch）」という解決策を解説しています。
 
@@ -30,25 +32,21 @@ LLMの強化学習（RL）、特に方策内学習（On-Policy RL）は数値的
 
 ---
 
-## エージェントはリクエストではなくセッション：AIエージェント向けGKEノードプールのサイジング
+## 003_developers_googleblog_com
 
-https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/
+**エージェントはリクエストではなくセッション：AIエージェント向けGKEノードプールのサイジング**
 
-**Original Title**: Agents are sessions, not requests: size GKE node pools for AI agent sessions
-
-AIエージェント特有の長時間セッションと高い待機時間に対応するため、Agent Substrateを用いてアイドル状態の計算リソースを解放しコストを最適化する方法を解説。
+出典: https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/
 
 AIエージェントはWebリクエストとは異なり、セッションが数時間持続する一方で、実際に動作している時間は全体の約20%に過ぎません。従来の「1セッションにつき1Pod」の構成では待機時間にもコストが発生しますが、新たにGA（一般提供）となった『Agent Substrate』と『AX』を活用することで、アイドル状態のセッション（Actor）をオブジェクトストレージに退避（Park）させ、ノードリソースを効率的に共有できます。記事では、1時間あたり2回のプロンプト送信という条件下でノードコストを約40%削減できる試算を示しています。一方、プロンプト頻度が1時間に4回を超える場合は常駐Podの方が安価になるという境界線も提示されており、実際の利用パターンに基づいたサイジングの重要性を説いています。また、Agent SubstrateはgVisorなどと共にCNCFへの寄贈も発表されています。
 
 ---
 
-## エージェントを保護する：エージェント異常検知（Agent Anomaly Detection）実践ガイド
+## 004_developers_googleblog_com
 
-https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/
+**エージェントを保護する：エージェント異常検知（Agent Anomaly Detection）実践ガイド**
 
-**Original Title**: Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection
-
-Google CloudのGeminiプラットフォームにおいて、エージェントの意図しない挙動やデータ漏洩を自動で監視・検知する「Agent Anomaly Detection」の導入からアラート設定までを解説するハンズオンガイド。
+出典: https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/
 
 LLMエージェントの権限が拡大するにつれ、1つの誤った判断が個人情報の流出やアクセス制御のバイパスといった深刻な損害を招くリスクが高まっています。本記事は、Google Cloudが提供する「Agent Anomaly Detection (AAD)」を活用して、これらの異常な振る舞いをリアルタイムで検知・分析するための実践的な手順を解説しています。
 
@@ -63,57 +61,61 @@ LLMエージェントの権限が拡大するにつれ、1つの誤った判断�
 
 ---
 
-## 月曜朝のエージェント：キッカーは今、有能すぎるのか？
+## 005_oreilly_com
 
-https://www.oreilly.com/radar/the-monday-morning-agent-are-kickers-too-good-now/
+**月曜朝のエージェント：キッカーは今、有能すぎるのか？**
 
-**Original Title**: The Monday Morning Agent: Are Kickers Too Good Now?
-
-AIエージェントによるNFLのデータ分析を通じて、キッカーの成功率ではなくコーチの試行判断が変化していることを示し、データ可視化の標準化とAIガバナンスの重要性を解説する。
+出典: https://www.oreilly.com/radar/the-monday-morning-agent-are-kickers-too-good-now/
 
 この記事は、AIエージェントを用いてNFLのフィールドゴール成功率を分析するシリーズ「The Monday Morning Agent」の第3回です。世間で囁かれる「キッカーの能力向上」という仮説に対し、AIエージェントによる分析は、成功率そのものは数年前から横ばいであり、実際にはコーチがより長距離からのキックを試みる回数が増えたことが、ハイライトを増やす要因であると結論づけています。技術的な焦点は、AIエージェントに「データの軸を0から始める」「サンプル数を表示する」といった8つの可視化ルールを厳格に守らせる手法にあります。ルール違反を検知して出力を拒否する「レンダラー」の実装や、小さなサンプルサイズが統計に与える影響の考慮など、AIを用いたデータ分析におけるガバナンスと信頼性確保のための具体的なアプローチが紹介されています。
 
 ---
 
-## ESLintが有償貢献者プログラムを終了、AI生成コードによるOSS開発の変容
+## 006_oreilly_com
 
-https://socket.dev/blog/eslint-ends-paid-contributor-program
+**AIがコードを書く時代のプログラマーの役割：仕様策定と「ハーネス」構築への転換**
 
-**Original Title**: ESLint Ends Paid Contributor Program as AI Upends Open Source Collaboration
+出典: https://www.oreilly.com/radar/when-ai-can-code-what-is-left-for-programmers-to-do/
 
-ESLintはAI生成によるプルリクエストの急増と、それに伴う査読負荷・報酬支払いの判断困難を理由に、5年間続いた有償貢献者プログラムの終了を発表しました。
+AIによるコード生成が一般化するにつれ、開発者は「AIが生成した膨大なコードのレビュー」という新たな負担に直面しています。本稿では、人間が単なるコーディングから脱却し、より高次な役割へ移行するための戦略を提示しています。具体的には、1. AIツールを活用して顧客との対話から仕様を生成しつつ、人間は「何をしてはならないか」というガードレールを定義すること。2. AIが誤った推論をしないよう、ビジネスルールを厳格に定義する「オントロジー」とデータスキーマを管理すること。3. AIのミスを手作業で直すのではなく、問題を検知してAI自身に修正を促す自動監査ツール（ハーネス）を構築することです。これにより、開発者は「コードの書き手」から「システムの品質と整合性を担保する設計者」へと進化することが求められます。
+
+---
+
+## 007_socket_dev
+
+**ESLintが有償貢献者プログラムを終了、AI生成コードによるOSS開発の変容**
+
+出典: https://socket.dev/blog/eslint-ends-paid-contributor-program
 
 ESLintは2022年から実施していた外部貢献者への有償プログラムを終了しました。累積5万ドル以上の報酬を支払ってきましたが、昨今のAIツールの普及により「人間による努力」と「AI生成物」の区別が困難になり、報酬の正当性を巡るコミュニティ内の監視や対立が激化したことが原因です。GitHubの統計では、2026年時点でプルリクエストの40%以上にAIエージェントが関与していると報告されています。本記事ではESLintだけでなく、RustやGodot、curl、Linuxカーネルといった主要プロジェクトが、AIによる低品質な投稿の急増（ノイズ）や、メンターシップを通じた後継者育成の崩壊に直面し、コントリビューション規則を厳格化している現状を詳述しています。コードを書くコストが下がる一方で、査読と維持のコストが変わらないという「OSSの経済性」の変化が浮き彫りになっています。
 
 ---
 
-## AIにも渡せる命名の用語表を作る
+## 008_tak-dcxi_com
 
-https://www.tak-dcxi.com/article/naming-terms-for-ai-workflows/
+**AIにも渡せる命名の用語表を作る**
 
-AIとの協働において命名のズレによる誤りを防ぐため、デザインからコードまで一貫した「責務」に基づく用語表の作成とAIワークフローへの組み込み方を解説した記事。
+出典: https://www.tak-dcxi.com/article/naming-terms-for-ai-workflows/
 
 AIによるコード生成やデザインからの実装が普及する中、デザインツール、コンポーネント、CSSの各層で命名が食い違うことでAIが文脈を誤読し、誤ったコードを生成する課題を指摘しています。この記事では、Web標準の仕様を尊重し、見た目ではなく「責務」で命名する4つの基準を提示。具体的に `Inner` / `Outer` / `Gutter` / `Gap` といった混同しやすい語の定義を明確にした用語表の例を公開しています。さらに、作成した用語表を `AGENTS.md` や `Claude Code` のカスタムルールとしてAIに読み込ませ、命名のズレが層を越えて蓄積するのを防ぐ具体的なワークフローまでを詳しく解説しています。
 
 ---
 
-## 人工危能［Artificial Insecurity］――AIツールはいかにして機密性を損なうのか
+## 009_p2ptk_org
 
-https://p2ptk.org/ai/5684
+**人工危能［Artificial Insecurity］――AIツールはいかにして機密性を損なうのか**
 
-AIツールにおける初歩的なセキュリティの欠如やエンドツーエンド暗号化の不在が、個人の機密データやシステム全体の安全性をどのように脅かしているかを分析する。
+出典: https://p2ptk.org/ai/5684
 
 急速に普及するAIツール、特に大規模言語モデル（LLM）が、情報セキュリティの根幹である「機密性」をいかに損なっているかを詳述しています。多要素認証（MFA）の未実装や、DeepSeekやOpenAIで発生したデータ侵害事例を挙げ、AI企業のセキュリティ慣行の杜撰さを指摘しています。特に、エンドツーエンド暗号化（E2EE）が標準でないチャットボットが法的なログ開示請求にさらされるリスクや、Meta AIのように既存の暗号化アプリにAIが統合されることでプライバシーが形骸化する問題を警告しています。また、OSレベルで動作する「AIエージェント」がルート権限に近いアクセス権を持つことで、プロンプトインジェクション等の攻撃を通じたデータ流出の危険性が高まる「ルート権限問題」についても言及。対策として、MapleAIやConferのようなオープンソースの機密性重視ツールの台頭を挙げつつ、政府や企業が人権を尊重したセキュリティ設計を優先すべきだと提言しています。
 
 ---
 
-## 人工危能（Artificial Insecurity）――情報の完全性への脅威
+## 010_p2ptk_org
 
-https://p2ptk.org/copyright/5686
+**人工危能（Artificial Insecurity）――情報の完全性への脅威**
 
-**Original Title**: Artificial Insecurity: threats to information integrity
-
-LLMが本質的に抱える「近似の失敗（ハルシネーション）」が、情報の完全性と社会的な信頼に及ぼす深刻なリスクを分析し、過度なAI依存への警鐘を鳴らす。
+出典: https://p2ptk.org/copyright/5686
 
 ### LLMによる情報の完全性への脅威
 大規模言語モデル（LLM）は確率的な次単語予測に基づいて動作するため、本質的に「近似の失敗（ハルシネーション）」を避けられません。これは情報セキュリティの3要素（CIA）の一つである「完全性（Integrity）」に対する重大な脅威となります。RAG（検索拡張生成）などの技術的対策も誤りを完全に根絶することはできません。
@@ -127,25 +129,21 @@ AI企業が広告モデルを導入することで情報の完全性がさらに
 
 ---
 
-## Claude用Lumin：Claude内で契約書の作成・送信・レビューを実現
+## 011_luminpdf_com
 
-https://www.luminpdf.com/claude-integration
+**Claude用Lumin：Claude内で契約書の作成・送信・レビューを実現**
 
-**Original Title**: Lumin for Claude: Create, Send, and Review Agreements | LuminProducts
-
-AnthropicのAI「Claude」上でLuminの機能を統合し、契約書のドラフト作成、テンプレート利用、電子署名の送信、そして署名状況の追跡までをシームレスに行える新機能が発表されました。
+出典: https://www.luminpdf.com/claude-integration
 
 Lumin for Claudeは、AIチャットインターフェース内でドキュメント管理を完結させる革新的なコネクターです。ユーザーはClaudeとの会話を通じて、過去の契約書に基づいたレビューや、標準テンプレートを使用した新規契約書の作成が行えます。特筆すべきは、署名依頼の送信機能です。Claudeに署名者と期限を指示するだけでLumin Signを介したリクエストが生成されます。また、「誰がまだ署名していないか」といったステータス確認も対話形式で実行可能であり、Web、デスクトップ、Claude Codeなどあらゆる環境で同期されます。これにより、複数のツールを行き来する手間を省き、ビジネス合意のスピードを劇的に向上させます。
 
 ---
 
-## スロップはスタックの上層へ：AIエージェントによるコード生成の設計課題
+## 012_gabeorlanski_github_io
 
-https://gabeorlanski.github.io/posts/slop-moves-up/
+**スロップはスタックの上層へ：AIエージェントによるコード生成の設計課題**
 
-**Original Title**: Slop Is Moving Up the Stack
-
-AIエージェントが生成するコードにおいて、単純な記述ミス（行レベルのスロップ）は減少しているが、不適切な抽象化や既存ライブラリの無視といった、より高度な設計レイヤーでの品質低下が顕在化している。
+出典: https://gabeorlanski.github.io/posts/slop-moves-up/
 
 Gabriel Orlanski氏による本レポートは、最新のAIモデル（GPT-6やClaude 5.5/Fable等）が生成するコードの品質を、SlopCodeBenchなどの独自ベンチマークを用いて詳細に分析したものである。調査の結果、過去1年間で構文ミスや冗長な記述といった「行レベルのスロップ」は大幅に改善されたものの、問題の所在はより抽象的な設計判断へと移行していることが判明した。
 
@@ -155,49 +153,53 @@ Gabriel Orlanski氏による本レポートは、最新のAIモデル（GPT-6や
 
 ---
 
-## AI時代のエンジニアにとっても「グルーワーク」は依然として有害である
+## 013_seangoedecke_com
 
-https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/
+**AI時代のエンジニアにとっても「グルーワーク」は依然として有害である**
 
-**Original Title**: Glue work is still harmful in the age of AI
-
-AIによって調整や形式的報告の必要性が低下する中、エンジニアは評価されにくい「グルーワーク」を避け、技術的価値の創出に集中すべきだと説く論考。
+出典: https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/
 
 ソフトウェア開発における「グルーワーク（会議調整やドキュメント作成等の非技術的な調整業務）」は、AI時代においてもキャリアにとって有害であると著者は主張します。AIの普及により、(1)1人で完結できるプロジェクトが増え調整コストが低下した、(2)経済環境の変化で気難しいゲートキーパーが減少した、(3)ジュニア採用抑制で手厚い指導が不要になった、(4)形式的な報告書はLLMで自動化可能になった、という4つの理由からグルーワークの重要性は以前より低下しています。ただし、対人コミュニケーションのAI代行は信頼を損なうため厳禁です。エンジニアは「便利屋」になることを避け、AIエージェントを駆使したコードの価値創出とビジョンの整合に注力すべきであると結論づけています。
 
 ---
 
-## 生成AIは非英語テキストの処理において、英語よりも多くのエネルギーを消費する：ミシガン大学の研究
+## 014_news_umich_edu
 
-https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/
+**生成AIは非英語テキストの処理において、英語よりも多くのエネルギーを消費する：ミシガン大学の研究**
 
-**Original Title**: Generative AI uses more energy on non-English text
-
-ミシガン大学の研究により、生成AIは非英語テキストの処理に英語の最大180倍のエネルギーを消費し、精度低下とコスト増大という「二重の罰」を非英語圏ユーザーに強いていることが判明した。
+出典: https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/
 
 ミシガン大学の研究チームは、LLM（大規模言語モデル）が英語以外の言語を処理・生成する際のエネルギー効率を調査し、英語と比較して1.4倍から180倍ものエネルギーが必要であることを明らかにした。この格差の主な要因は『トークン化』の非効率性にある。英語に最適化された既存のトークナイザーは、ヒンディー語やベンガル語といった複雑な文字体系を処理する際、1単語あたりにより多くのトークンを割り当てる必要がある。これがメモリ消費量と演算負荷を押し上げ、結果としてエネルギー消費を増大させている。この格差は、非英語圏のユーザーが高い利用料金を課される、あるいはモデルから低品質な回答しか得られないというデジタル格差を助長する懸念がある。研究者らは、特定言語に最適化したモデルの開発や、効率的な翻訳パイプラインの導入を解決策として提言している。
 
 ---
 
-## クロードの幻想：些細なことの兆候
+## 015_research_google
 
-https://www.netmeister.org/blog/claude-delusion.html
+**科学・工学を前進させるAntigravityの/teamwork**
 
-**Original Title**: The Claude Delusion
+出典: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/
 
-テック業界の成功者が自身のプログラミング能力を基準にAIを神格化し、誇大妄想的な「超知能」の物語を作り上げている現状を鋭く批判する論考。
+Google Researchは、Gemini 4（Argon、Carbon、Hydrogenモデル）を活用したマルチエージェント・ワークフロー「Antigravity /teamwork」による最新の研究成果を公開しました。このシステムは、タスクを専門エージェントに細分化し、Lean 4や実行シミュレータ等の独立した「検証者」と組み合わせることで、AIモデルが長期タスクで詳細を見失う問題を克服しています。
+
+主な成果には、情報理論における「Courtade–Kumar予想」の完全な証明、ヴェイユ予想の180万行に及ぶ形式化、ZirconマイクロカーネルのC++からRustへの自動書き換え（80万行）、分子構造同定の精度向上などが含まれます。現在、これらのエージェントツールはAntigravityプラットフォーム上で利用可能であり、1万人の学術研究者向けに無料アクセスプログラムも提供されています。これにより、研究者はカスタムエージェントチームを編成し、複雑な推論や検証プロセスを自動化できます。
+
+---
+
+## 016_netmeister_org
+
+**クロードの幻想：些細なことの兆候**
+
+出典: https://www.netmeister.org/blog/claude-delusion.html
 
 著者は、ビル・ゲイツなどのテック界の成功者が抱く「万能感」が、AIへの歪んだ評価に繋がっていると指摘しています。ゲイツが自身のプログラミングスキルを基準にClaudeなどのモデルを「超人」と呼ぶのは、裏を返せば「自分と同等以上のものは超人的であるはずだ」という特権意識の表れです。この心理は、AIを万能の解決策（神）とするか、あるいは人類を滅ぼす怪物（悪魔）とするかの極端な二元論を生み出しており、そこには責任回避や、自身を特別な存在と見なすダニング＝クルーガー効果が潜んでいます。記事は、AIが気候変動を解決するという幻想や、自律型エージェントという言葉による責任逃れを批判し、成功者たちの傲慢さが社会に与える悪影響を警告しています。
 
 ---
 
-## 1枚のGPUでは足りない時：vLLMを使用して2台のNVIDIA DGX StationでGLM-5.3を動かす
+## 017_developer_nvidia_com
 
-https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/
+**1枚のGPUでは足りない時：vLLMを使用して2台のNVIDIA DGX StationでGLM-5.3を動かす**
 
-**Original Title**: When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM
-
-7530億パラメータを持つ巨大なMoEモデルGLM-5.3を、vLLMとテンソル並列処理を用いて2台のNVIDIA DGX Station間で分散実行するための詳細な構成手順とベンチマークを解説しています。
+出典: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/
 
 ### 概要
 本記事は、単一のGPUメモリ（252GB HBM3e）には収まらない753Bパラメータの巨大モデル「GLM-5.3 NVFP4」を、2台のNVIDIA DGX StationをConnectX-8 RDMAで接続して動かすための技術ガイドです。vLLMを活用し、テンソル並列（TP=2）によってモデルを分割・サービングする方法をステップバイステップで説明しています。
@@ -213,37 +215,31 @@ Dockerコンテナを用いた環境構築、Hugging Faceからのモデル取�
 
 ---
 
-## AI生成コードはすべてオープンソースにするべき
+## 018_jakub_jankiewicz_org
 
-https://jakub.jankiewicz.org/blog/ai-code-open-source/
+**AI生成コードはすべてオープンソースにするべき**
 
-**Original Title**: All AI-generated code should be Open Source
-
-AIモデルがオープンソースで学習されている点や著作権法の「人間による創作」という原則に基づき、AI生成コードはすべてオープンソース化すべきであるとする提言。
+出典: https://jakub.jankiewicz.org/blog/ai-code-open-source/
 
 著者のJakub T. Jankiewicz氏は、AIが生成したコードはすべてオープンソースとして公開されるべきだと論じています。その主な理由は2点あります。第一に、AIモデルがGNUプロジェクトやStack Overflowなどの膨大なオープンソース資産を、帰属表記なしに「スクレイピング」して学習しており、そこから非公開のプロプライエタリなコードを生成することは「ライセンス・ロンダリング」にあたると指摘しています。第二に、米国著作権局の判断（猿の自撮り訴訟の先例）に基づき、人間以外の創作物には著作権が認められないという法的根拠を挙げています。開発者がプロンプトを入力するだけで出力されるコードに人間的な努力が乏しい現状を鑑み、公平性を保つためにもCC0（パブリックドメイン）やオープンソースライセンスを明示的に適用すべきだと主張しています。
 
 ---
 
-## 32年前のジープをClaudeでリバースエンジニアリングし、制御に成功
+## 020_youtube_com
 
-https://www.youtube.com/watch?v=WPj3aQ-xxpI
+**32年前のジープをClaudeでリバースエンジニアリングし、制御に成功**
 
-**Original Title**: Claude reverse engineered my 32-year-old Jeep. Then it started controlling it.
-
-OBD2非搭載の1994年製ジープを、3ドルのArduinoとClaude Codeを用いて解析し、AIがエンジンコンピュータを直接制御するまでのプロセスを公開。
+出典: https://www.youtube.com/watch?v=WPj3aQ-xxpI
 
 1994年製ジープ・チェロキー（XJ）には現代のOBD2ポートが存在せず、標準的なスキャンツールが使用できない。このプロジェクトでは、3ドルのArduino Nanoを車両のECU（エンジンコントロールユニット）に配線し、AIエージェントであるClaude CodeやCodexを活用して独自のスキャナーを構築。AIが配線図の特定、走行ログの解析、さらにはコンピュータ内部のバイナリエグゼキュータをリバースエンジニアリングし、最終的にはAIが生成したコードで燃料ポンプを駆動したり、車両内部で独自のコードを実行することに成功した。レガシーなハードウェアと最新のAIエージェントを組み合わせた、高度なハードウェアハッキングの事例である。
 
 ---
 
-## AIエージェントが「ハック可能な」ハードウェアを好む理由：ファームウェアが製品の寿命を決める時代
+## 021_geoffstearns_com
 
-https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/
+**AIエージェントが「ハック可能な」ハードウェアを好む理由：ファームウェアが製品の寿命を決める時代**
 
-**Original Title**: Your Agent Will Pick the Hackable One
-
-AIコーディングツールの普及によりファームウェア開発が劇的に低コスト化した結果、将来のAIエージェントは、所有者のために自ら機能を拡張・修正できる「ハック可能なデバイス」を選択するようになるという予測。
+出典: https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/
 
 ### ハードウェアにおける「ファームウェア民主化」の到来
 安価なシンセサイザー「M-VAVE FM-1」の事例では、未ドキュメントのチップを搭載しているにもかかわらず、ユーザーがAIツールを活用してわずか数週間で多様なカスタムファームウェアを開発しました。メーカー側もこの動きを歓迎し、公式にオープンソース化と開発キットの提供を行いました。
@@ -259,69 +255,136 @@ AppleやGoogleのような企業は、セキュリティを理由にブートロ
 
 ---
 
-## 新しいツールと支援による、オンラインでの児童性的虐待対策の強化
+## 022_dfsantos_com
 
-https://openai.com/index/strengthening-online-child-safety/
+**Z80のための人工知能**
 
-OpenAIが、AI生成画像を含む児童性的虐待コンテンツ（CSAM）の検出ツールや、ChatGPT内での介入機能、法執行機関への捜査支援策などを発表しました。
+出典: https://www.dfsantos.com/en/libro-ia-z80
+
+本書は、Z80プロセッサを搭載したレトロコンピュータ（ZX Spectrumなど）上で、AIの基本アルゴリズムをBASICで実装する過程を通じてAIの仕組みを理解する学習書です。全12章で構成され、ソートの計算量比較、エキスパートシステム、ELIZA、Minimax法を用いた三目並べなどの古典的AIから、線形回帰、k-NN、k-means、ナイーブベイズといった機械学習、さらにはパーセプトロンや多層ニューラルネットワーク（バックプロパゲーション）による数字認識までをカバーしています。計算資源が極めて限られた環境でアルゴリズムをゼロから記述することで、現代のAI技術の背後にある理論的根拠と実装の工夫を深く学ぶことができます。GitHubでソースコードも公開されています。
+
+---
+
+## 023_qwen_ai
+
+**Qwen4-Max: あなたの新しいチームメイトが登場**
+
+出典: https://qwen.ai/blog?id=qwen4-max
+
+Alibaba CloudのQwenチームが発表した「Qwen4-Max」は、2.4兆の総パラメータ（推論時71Bアクティブ）を持つスパースMoEアーキテクチャの最新モデルです。ネイティブな視覚能力と100万トークンのコンテキスト窓を備え、単なる検索を超えた「プロフェッショナルな成果物の提供」を目的として設計されています。主な特徴として、Blenderを用いた3DモデリングやUnreal Engineでのゲーム開発、金融・法務の高度な分析、さらには新素材設計から合成までを行う「自律的ドライ/ウェットラボ」での科学的発見能力が示されました。また、長時間タスクの進捗をリアルタイムで共有し修正を受け付ける「Live Delivery」機能を導入。前世代比でトークン効率を最大49%向上させ、APIコストの大幅な削減も実現しています。セキュアコーディング能力の向上など、開発ライフサイクル全体を通じたガバナンスも強化されており、実世界の複雑なワークフローを共に完遂する強力なAIチームメイトとして位置づけられています。
+
+---
+
+## 024_cpldcpu_github_io
+
+**エージェントAIによるアナログシンセサイザーの設計**
+
+出典: https://cpldcpu.github.io/2026/11/14/touchsynth/
+
+2026年の次世代AI（GPT-6 AstraやClaude 5.5 Opus）のリリースを受け、AIエージェント「Claude Code」を用いてアナログシンセサイザーをゼロから設計・製作した実験レポートです。
+
+- **設計手法**: 人間が上位概念を指定し、AIがngspiceでのシミュレーション、KiCadを用いた回路図作成、Pythonによる配置最適化、Freeroutingによる基板配線を実行しました。
+- **回路構成**: CH32V00x MCUを核に、JunoスタイルのDCO、Moogスタイルの24dB/octトランジスタラダーフィルター、VCAを実装。部品選定もAIが行いました。
+- **自動化された検証**: 基板製作後、オシロスコープとMCUのフィードバック経路をAIが制御し、自動でキャリブレーションと動作確認を実施しました。 
+
+設計開始から発注までわずか19時間という驚異的な速度で、複雑なミックスドシグナル回路が実用レベルで完成しています。
+
+---
+
+## 025_openai_com
+
+**ChatGPT ウォレットのご紹介**
+
+出典: https://openai.com/ja-JP/index/introducing-chatgpt-wallet/
+
+OpenAIは、次世代AIモデルとの統合を前提とした「ChatGPT ウォレット」を発表しました。この新機能により、ユーザーは自然言語を通じて複雑な財務操作、決済、予算管理をAIに委託できるようになります。サイトの構成からは、GPT-6.2やGPT-6 Astraといった未来のモデル群との連携が示唆されており、従来のデジタルウォレットを超えた「意思決定支援型」の金融ツールとしての側面が強調されています。開発者向けSDKの提供やエンタープライズ版での展開も予定されており、AIエコシステム内での経済活動を加速させる狙いがあります。
+
+---
+
+## 026_gameworkers_co_uk
+
+**ゲーム業界における生成AI利用に関するマニフェスト**
+
+出典: https://www.gameworkers.co.uk/ai-manifesto/
+
+### 概要
+欧州の複数のゲーム労働組合（IWGB、Game Workers Unite Ireland等）が、ゲーム産業における生成AI（genAI）の無秩序な導入がもたらす害悪を詳述したマニフェストです。AIは効率化のツールではなく、労働者のスキルを奪い、雇用を不安定にし、作品の質を低下させるものとして批判されています。
+
+### 主な論点
+1. **労働条件の悪化**: AIは「認知的降伏」やバーンアウトを招き、特にジュニア職の減少を通じて業界の持続可能性を脅かします。
+2. **権利の侵害**: 労働者の成果物が同意や対価なしに学習データとして「窃盗」され、企業の利益独占に利用されています。
+3. **バイアスの再生産**: 歴史的なデータに依存するAIは、差別的なバイアスを強化し、文化的な均一化を招きます。
+
+### 提言
+労働者に対しては労働組合への加入とAI利用への拒否を、雇用主に対しては強制的なAI導入の禁止と透明性の確保、そして学習データ利用に対する適正な対価の支払いを強く推奨しています。ゲームは人間の表現であり、AIによる確率的な生成物ではないと結論づけています。
+
+---
+
+## 027_openai_com
+
+**新しいツールと支援による、オンラインでの児童性的虐待対策の強化**
+
+出典: https://openai.com/index/strengthening-online-child-safety/
 
 OpenAIは、オンライン上の児童性的搾取・虐待（CSAM）を防止するための新たな取り組みを公開しました。主な柱は4つです。1) **新しい画像分類器**: AI生成コンテンツを含むCSAMを検出し、審査担当者の負担を軽減するツールを審査済みの組織に無償提供します。2) **ChatGPTでの介入機能**: 有害な検索行動を中断させ、適切な支援機関へ誘導する警告システムを導入しました。3) **開発者向けガイダンス**: Tech Coalition等と協力し、安全なプラットフォーム構築のための実践的リソースを提供します。4) **法執行機関への支援**: 膨大なチャットログの分析や時系列作成をAIで効率化し、捜査官の心理的負担を軽減するツールと研修を提供します。これらの施策はNCMECやThornといった専門機関との連携により、エビデンスに基づいて設計されています。
 
 ---
 
-## 内部参加型評価の第 1 フェーズ | OpenAI
+## 028_openai_com
 
-https://openai.com/index/our-first-phase-of-embedded-assessments/
+**内部参加型評価の第 1 フェーズ | OpenAI**
 
-OpenAIは、独立した評価機関4団体と提携し、モデルの内部リソースへの詳細なアクセスを伴う「内部参加型評価」の第1フェーズを開始しました。
+出典: https://openai.com/index/our-first-phase-of-embedded-assessments/
 
 OpenAIは、AIモデルの安全性とアライメントを強化するため、Apollo Research、METR、Transluce、Goodfireの4つの独立機関による内部評価を開始しました。このプログラムでは、従来の外部レッドチーミングを超え、ソースコード、学習データ、モデルのチェックポイント、社内研究者との対話といった機密性の高い内部情報への直接アクセスを評価者に提供します。Apolloはモデルの隠れた意図的な行動、Goodfireは解釈可能性を用いた内部分析、METRは大規模強化学習のアライメント、Transluceはポストトレーニングの質と網羅性をそれぞれ検証します。透明性と独立性を維持するための監督体制、オンサイトでの作業環境、利益相反の管理、評価結果の責任ある開示プロセスも定義されており、業界全体で共有される安全基準の強化を目指しています。
 
 ---
 
-## FBI、AIハッキングツール「Artex」による3時間以内のネットワーク侵入を警告
+## 029_techcrunch_com
 
-https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/
+**FBI、AIハッキングツール「Artex」による3時間以内のネットワーク侵入を警告**
 
-**Original Title**: FBI says Artex AI open source hacking tool used to breach networks in 'under three hours'
-
-FBIは、オープンソースのAI自律型ハッキングツール「Artex」が悪用され、わずか3時間足らずでネットワークが侵害される事例が急増しているとして警告を発した。
+出典: https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/
 
 FBIの最新のサイバーセキュリティ勧告によると、AI搭載のペネトレーションテストツール「Artex」を用いた自律的な攻撃が、金融、政府、防衛、ITなど多岐にわたる業界を標的にしている。ArtexはOpenAIやAnthropicなどの大規模言語モデル（LLM）と連携し、ネットワークの脆弱性を高速にスキャン・悪用する。従来の攻撃に比べ非常に「騒がしい（ログが残る）」ものの、人間の防衛側が追いつけないほどの速度で動作し、標的の特定から侵害までを3時間以内で行うケースも確認されている。既に米ConnectWiseの顧客約2,250社や韓国の金融機関、セキュリティ企業のBarracudaなどが被害に遭っており、パスワードの不備や多要素認証の欠如といった初歩的な弱点が突かれている。開発者は悪用を受けてツールをクローズドソース化したが、依然としてオープンソース版が広く流通しており、脅威は継続している。
 
 ---
 
-## OpenCode | Browse：コーディングエージェントのためのブラウザ操作拡張機能
+## 030_opencode_ai
 
-https://opencode.ai/product/browse
+**OpenCode | Browse：コーディングエージェントのためのブラウザ操作拡張機能**
 
-**Original Title**: OpenCode | Browse, your real browser for coding agents
-
-コーディングエージェントがユーザーの既存ブラウザを直接操作し、ログイン状態や拡張機能を維持したままWebブラウジングを実行可能にするMCPサーバー。
+出典: https://opencode.ai/product/browse
 
 OpenCode | Browseは、Claude Code、Cursor、ZedなどのAIコーディングエージェントが、ユーザーが普段使用しているブラウザ（Chrome、Edge、Brave等）を直接操作できるようにするツールです。最大の特徴は、既存のログイン状態や拡張機能をそのまま利用できる点にあり、面倒な環境構築やAPIキーの設定が不要です。MCP（Model Context Protocol）サーバーとして動作し、エージェントはバックグラウンドでタブを開き、要素の操作やスクリーンショット撮影を行えます。また、2要素認証（2FA）や決済が必要な場面では、一時的に操作権を人間に戻す「ハンドオフ機能」を備えており、セキュリティと利便性を両立させています。CLIとChrome拡張機能を組み合わせて利用します。
 
 ---
 
-## 認証情報を渡さずにリモートでコーディングエージェントを安全に実行する手法とツール「lend」
+## 031_blog_antonio_cx
 
-https://blog.antonio.cx/running-agents-with-lend
+**認証情報を渡さずにリモートでコーディングエージェントを安全に実行する手法とツール「lend」**
 
-**Original Title**: Running coding agents without handing them my credentials
-
-リモートVM上のAIエージェントに秘密鍵やAPIトークンを渡すことなく、ローカルPCの認証機能を利用して安全にタスクを実行させるプロキシツール「lend」の紹介。
+出典: https://blog.antonio.cx/running-agents-with-lend
 
 開発者のAntonio Mika氏が、VM上のAIエージェント（Claude Code等）にローカルの認証情報（SSHキーや1Passwordのトークン）を安全に利用させるために開発したツール「lend」について解説しています。従来のSSHエージェントフォワーディングは権限が強すぎるという課題がありましたが、lendはSSHエージェントの仕組みを拡張し、リモートからの実行要求を手元のMacで承認（Touch ID等）した後に実行するフローを実現します。主な特徴として、コマンド実行のポリシー管理、1Passwordからの秘密情報注入、MCP（Model Context Protocol）対応、セッション切断後も動作を継続するソケット管理機能などが挙げられます。これにより、万が一VMが侵害されても認証情報そのものが流出するリスクを最小限に抑えつつ、エージェントに高度な操作を許可できるセキュアなワークフローが構築可能です。
 
 ---
 
-## tokendoctor: Claude Codeのコストを最大38%削減する最適化ツール
+## 032_tomshardware_com
 
-https://github.com/localixai/tokendoctor
+**AnthropicのClaude Mythos、AMD製GPUへの移植期間を1年から3日へと劇的に短縮**
 
-**Original Title**: GitHub - localixai/tokendoctor: tokendoctor: the same Claude Code for up to 38% less. Replays your own past sessions to show what each change would have saved, then changes only what you pick
+出典: https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat
 
-Claude Codeの過去の利用履歴を分析し、コンテキストウィンドウの最適化や「スライド」機能により、APIコストを大幅に削減するオープンソースツール。
+Anthropicは、最新モデル「Claude Mythos Preview」を活用し、AMD製GPU（MI355X等）への最適化プロセスを劇的に短縮したと発表しました。これまで数十人のエンジニアチームが6〜12ヶ月かけて行っていた低レベルカーネルの移植作業を、AIがほぼ100%自律的に実行することで、わずか3日間にまで短縮。この成果は、長年Nvidiaの独走を支えてきたソフトウェアエコシステム「CUDA」による参入障壁（モート）を打破する可能性を示唆しています。AMD側も、Claudeが既存の変換ツールよりも優れたカーネルを生成する場合があると評価しており、AI開発におけるハードウェアの選択肢が急速に広がっています。
+
+---
+
+## 033_github_com
+
+**tokendoctor: Claude Codeのコストを最大38%削減する最適化ツール**
+
+出典: https://github.com/localixai/tokendoctor
 
 Claude Code（AnthropicのCLIエージェント）の利用コストを削減するための最適化ツール「tokendoctor」が登場しました。このツールは、ユーザーのローカルに保存されている過去30日間のセッションログを分析し、コンテキストウィンドウの設定を変更した場合の節約額をシミュレーションします。
 
@@ -334,31 +397,31 @@ Claude Code（AnthropicのCLIエージェント）の利用コストを削減す
 
 ---
 
-## 内製 Background Agent “haro”に アラート対応を任せたら 回すたびに賢くなっていった
+## 034_tech_layerx_co_jp
 
-https://tech.layerx.co.jp/entry/haro-alert-loop
+**内製 Background Agent “haro”に アラート対応を任せたら 回すたびに賢くなっていった**
 
-LayerXが開発したAIエージェント「haro」を用い、アラートの調査から修正PR作成、さらにはWikiを介した自己学習ループによる運用改善を実現した事例紹介。
+出典: https://tech.layerx.co.jp/entry/haro-alert-loop
 
 LayerX社において、内製Background Coding Agent「haro」をアラート対応業務に導入した実践記録です。このエージェントは1時間おきに起動し、Slackのアラート収集、Datadogやコードを用いた原因調査、そしてドラフトPRの作成までを非同期に実行します。最大の特徴は、エージェントが調査手順や既知の事象をまとめたWikiを自ら更新・参照する「自己改善ループ」を組み込んでいる点です。これにより、過去の失敗を繰り返さず、回を追うごとに調査精度が向上します。約3週間半の運用で、29本の修正PRを起草し、アラートノイズの削減や人間が対応しきれなかった検証環境の監視強化に大きな成果を上げています。エージェントによる改善範囲と人間の承認範囲を明確に分けることで、安全かつ自律的な運用を実現しています。
 
 ---
 
-## 内製 Coding Agent "haro" と社内 GPU で、探索的テスト AI Agent をぶん回している
+## 035_tech_layerx_co_jp
 
-https://tech.layerx.co.jp/entry/haro-et-agent
+**内製 Coding Agent "haro" と社内 GPU で、探索的テスト AI Agent をぶん回している**
 
-LayerXが内製エージェント「haro」と社内GPU上のQwen3.8-27Bを組み合わせ、大規模な探索的テストを低コストかつ自動で実行する基盤を構築した事例。
+出典: https://tech.layerx.co.jp/entry/haro-et-agent
 
 LayerXは、開発スピードの加速に伴うQAの負荷増大を解決するため、AIエージェントによる探索的テストの自動化を実現しました。本システムは、高度な推論を必要とする「テストシナリオの作成」と「結果の検証（Datadogログ連携含む）」をClaudeに、試行回数が多くコストがかさむ「実際の画面操作」を社内GPUで稼働するオープンウェイトモデル「Qwen3.8-27B」に担当させる役割分担が特徴です。内製コーディングエージェント基盤「haro」の上でこれらをバックグラウンド実行することで、人の手を介さず一晩で数十本のテストシナリオを完走させることが可能になりました。47本のシナリオを10時間実行した検証では、商用LLMのみを利用する場合と比較して4〜7割のコスト削減に成功しつつ、機能横断的な不具合の特定に寄与しています。
 
 ---
 
-## 手元からクラウドへ：LINEクライアントチームがエージェント基盤でAIワークフローを広げるまで
+## 036_techblog_lycorp_co_jp
 
-https://techblog.lycorp.co.jp/ja/20261116b
+**手元からクラウドへ：LINEクライアントチームがエージェント基盤でAIワークフローを広げるまで**
 
-LINEヤフーが、セキュリティと大規模開発の制約を克服するために独自構築したクラウド型AIエージェント実行基盤「Agent Cluster」の設計と運用成果の詳説。
+出典: https://techblog.lycorp.co.jp/ja/20261116b
 
 LINEアプリ開発チームは、ローカル環境でのAI利用におけるセキュリティ、継続性、リポジトリ規模の課題を解決するため、独自のAIエージェント基盤「Agent Cluster」を開発した。本記事ではその設計思想と4ヶ月の運用結果が解説されている。
 
@@ -372,21 +435,21 @@ LINEアプリ開発チームは、ローカル環境でのAI利用における�
 
 ---
 
-## Bergamot Translatorを使ってCPUで英語を日本語に翻訳する
+## 037_mitsue_co_jp
 
-https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/17_1849.html
+**Bergamot Translatorを使ってCPUで英語を日本語に翻訳する**
 
-Firefoxの翻訳エンジンであるBergamot TranslatorをNode.jsからWebAssembly経由で呼び出し、GPUなしのCPU環境で高速な英日翻訳を実現する実装手法の解説。
+出典: https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/17_1849.html
 
 この記事では、Firefoxの翻訳機能でも採用されているオープンソースの翻訳エンジン「Bergamot Translator」をNode.js環境で動作させる方法を解説しています。主な用途として、クラウドサービスの障害情報を自社サーバー内で収集・翻訳して通知するシステムでの活用を想定しています。技術的な核心として、WebAssemblyモジュールをNode.jsから初期化する際の手順や、Node.jsに不足している行列積（GEMM）処理のフォールバック設定、8ビット量子化モデルを用いたメモリ管理、そして翻訳精度を安定させるためのプレースホルダー処理の実装方法が紹介されています。12th Gen Intel Core i7環境にて、短文の翻訳を約0.8秒で完了できる実用的なパフォーマンスが得られており、外部APIに依存しない軽量な内製翻訳システムの構築に有用な知見を提供しています。
 
 ---
 
-## Kanaryの新機能「/relay」でClaude・Codex・Cursorをつないで往復するのが便利だったので、コードレビューを往復させてみた
+## 038_qiita_com
 
-https://qiita.com/inoyu-qiita/items/f2e2d1006407a4d5f28e
+**Kanaryの新機能「/relay」でClaude・Codex・Cursorをつないで往復するのが便利だったので、コードレビューを往復させてみた**
 
-Macアプリ「Kanary」の/relay機能を用い、ClaudeやCodex間で会話コンテキストを維持したままリレー形式でコードレビューを行う効率的なワークフローの紹介。
+出典: https://qiita.com/inoyu-qiita/items/f2e2d1006407a4d5f28e
 
 Macのメニューバーアプリ「Kanary」に搭載された新機能「/relay（Agents Relay）」の活用事例を紹介する記事です。この機能は、Claude Desktop、Codex、Cursorといった複数のAIデスクトップアプリ間で、会話履歴や話者（me, claude等）のコンテキストを保持したまま内容を転送できるものです。
 
@@ -394,21 +457,21 @@ Macのメニューバーアプリ「Kanary」に搭載された新機能「/rela
 
 ---
 
-## Claude Codeを会議に参加させる
+## 039_qiita_com
 
-https://qiita.com/MasaoSasaki/items/056fdca93221d9a57b4a
+**Claude Codeを会議に参加させる**
 
-Claude CodeをmacOSのローカル音声認識と連携させ、会議の文脈を理解しながらリアルタイムで調査やタスク実行を支援する高度なアシスタントの実装ガイド。
+出典: https://qiita.com/MasaoSasaki/items/056fdca93221d9a57b4a
 
 Claude Codeを実用的な会議アシスタントとして活用するための高度なシステム構成が紹介されています。macOSのCore Audioを利用して自分と相手の音声を分離・取得し、MLXで最適化されたWhisperとParakeetを用いてローカルで高精度な文字起こしを実現。特定の呼びかけや、Haikuモデルによる意図解釈（判定役）をトリガーに、作業中のClaude Codeセッションへ情報を飛ばすことで、プロジェクトの文脈を維持したままの質疑応答や外部ツール操作（GitHub/Slack等）が可能になります。実行前の通知による確認プロセスや、Claude ModsによるUI表示、会議室の自動延長機能など、実運用に即した詳細な設計と「AIエージェント向け」の実装要件がまとめられています。
 
 ---
 
-## 部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい
+## 040_qiita_com
 
-https://qiita.com/nuco_d/items/b279477cbcdbe5921abd
+**部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい**
 
-Claudeで作成したスライドが「AI製」だと見抜かれてしまう原因を分析し、デザインの質を劇的に向上させる3つの外部スキル（frontend-slides, guizang-ppt-skill, ppt-master）を徹底解説。
+出典: https://qiita.com/nuco_d/items/b279477cbcdbe5921abd
 
 Claudeにスライド作成を頼むと、無難で画一的な「AI特有の見た目」になりがちです。これは「分布収束」と呼ばれるAIの特性と、公式スキルの画一的なレシピが原因です。本記事では、この問題を解決し、人間が作ったようなプロフェッショナルなスライドを出力するための3つのカスタムスキルを紹介しています。
 
@@ -420,21 +483,31 @@ Claudeにスライド作成を頼むと、無難で画一的な「AI特有の見
 
 ---
 
-## Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに
+## 041_qiita_com
 
-https://zenn.dev/caphtech/articles/qwen38-zh-ban
+**AI に書かせたテストは、どれだけ穴を見つけるのか。Claude Code・Codex・Gemini CLI のテストを変異テストで48回採点したら、95%以上を見抜き、仕様を渡すと点が下がった**
 
-Qwen3.8 Flash Nextが日本語出力時に簡体字や中国語を混入させる問題を、出力層の特定のトークン重みを書き換えることで、他のパラメーターを一切変更せず解消した技術報告。
+出典: https://qiita.com/suwa_nobu/items/faf0d787a602cc5ec74c
+
+生成AI（Claude Code, Codex, Gemini CLI）が作成したテストコードの品質を、コードを意図的に改変して検出率を測る「変異テスト（StrykerJS）」を用いて定量的に評価した調査記事です。約35行のNode.jsモジュールに対し、仕様の有無やプロンプトを変えて計48回のテスト生成を試行。結果、Geminiはほぼ100%の変異を検出し、Claudeも極めて高い精度を示しました。興味深い知見として、仕様コメントを渡すとAIが「仕様外の挙動（エラーメッセージの内容等）」をテストしなくなるため、コード単体を渡した際よりも変異テストのスコアが下がるという、AIの忠実さがスコアに逆影響する現象が確認されています。一方、Codexは境界値のテスト漏れや環境依存の実行エラーが見られるなど、モデルごとの特性も明らかになりました。
+
+---
+
+## 042_zenn_dev
+
+**Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに**
+
+出典: https://zenn.dev/caphtech/articles/qwen38-zh-ban
 
 合同会社CAPH TECHが実施した実験の記録。Qwen3.8-Flash-Nextモデルが日本語の回答中に「误って（誤って）」や「啤酒（ビール）」などの中国語を混入させる現象に対し、出力層の重み行列のうち、中国語トークンに対応する25,451行を未使用の行で上書きすることで、混入を完全に防止することに成功した。医療系の問いを用いた評価では、混入率が27%から0%に低下。この手法の特徴は、ターゲットとしたトークン以外の重みを1バイトも変更していない点にあり、モデルの元々の性能や推論結果への意図せぬ影響を最小化している。検証には自社開発のツール『Kestrom』を使用しており、特定のトークンのみが変更されていることのバイナリレベルでの確認や、推論結果の不変性を証明している。
 
 ---
 
-## Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順
+## 043_zenn_dev
 
-https://zenn.dev/happy_elements/articles/201519107f93de
+**Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順**
 
-Anthropicが推奨する、複雑なサブエージェント構成を「Skills」と「MCPツール」を活用した単一エージェントループへ統合し、品質と速度を向上させるための実践的なガイド。
+出典: https://zenn.dev/happy_elements/articles/201519107f93de
 
 Anthropicが公開したブログ記事に基づき、複雑化したマルチエージェント構成から、必要な手順や知識を「Skills」として持つ単一エージェントへ移行（Fold）する際の判断基準と具体的な手順を解説しています。
 
@@ -449,31 +522,61 @@ Anthropicが公開したブログ記事に基づき、複雑化したマルチ�
 
 ---
 
-## AIの回答が長すぎて、理解しないまま実装している問題（理解負債）
+## 044_zenn_dev
 
-https://zenn.dev/kent_code/articles/5892898be90cac
+**AIの回答が長すぎて、理解しないまま実装している問題（理解負債）**
 
-AIの長すぎる回答が招く「理解負債」を防ぐため、CLAUDE.mdに回答スタイルを規定し、チャットの簡略化と外部ファイルへの詳細出力を自動化する運用術を提案。
+出典: https://zenn.dev/kent_code/articles/5892898be90cac
 
 AI（特にClaude Code）による詳細すぎる回答が人間の認知能力を超え、内容を深く理解せずに実装を進めてしまう「理解負債」の課題を指摘しています。著者はこの解決策として、CLAUDE.mdに特定の回答ルールを追加することを推奨しています。主なルールは以下の通り：1. チャット回答は結論3行以内に絞り、詳細は別項として提示する。2. 次のアクションを1行で明示する。3. 設計案などの長文はdocs/notes/配下のMarkdownファイルへ自動出力し、チャット側は要約に留める。4. ファイル内に直接質問を書き込むことで文脈を維持したQ&Aを行う。この運用により、チャット行数を約9割削減しつつ、必要な情報をストックとして管理し、開発者が「理解の深さ」を主体的に選択できる環境を実現しています。
 
 ---
 
-## AIで作った結婚式向けの地図サイトを1年後にコードレビューして分かった3つのこと
+## 045_zenn_dev
 
-https://zenn.dev/taka26taka/articles/76bceac9cae8aa
+**AIで作った結婚式向けの地図サイトを1年後にコードレビューして分かった3つのこと**
 
-結婚式ゲスト向けにAIを活用して開発した地図サイトを、1年後に技術的負債や規約遵守の観点から振り返り、ページネーションの罠や外部データ利用規約の重要性を解説した記事です。
+出典: https://zenn.dev/taka26taka/articles/76bceac9cae8aa
 
 2025年の結婚式に合わせて開発した、地元スポット紹介サイト（React/CakePHP構成）の技術的な振り返りです。AI（CodexやChatGPT）を用いた開発効率の向上を確認しつつも、1年後の再検証により、CakePHPのpaginate()による意図しないデータ欠損、Leafletにおけるタイルサーバー利用ポリシーの不備、そしてGoogle Places APIのデータを別地図で表示・保存することによる利用規約違反といった重大な見落としが判明しました。AIによるコード生成やドキュメント作成の恩恵を認めつつ、最終的な法的判断や実装の詳細確認には人間の介入が不可欠であることを強調しています。
 
 ---
 
-## GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった
+## 046_zenn_dev
 
-https://zenn.dev/kesin11/articles/20261114_github_issue_artifact
+**サンドボックス内のAIエージェントにHerdrを安全に使わせるためのプロキシ構成**
 
-GitHubのIssueにHTMLやMarkdownをArtifactとして添付し、専用のサイドパネルで直接プレビューできる新機能が登場しました。
+出典: https://zenn.dev/naofumimurata/articles/nono-hc-proxy
+
+macOS用サンドボックスツール「nono」内で動作するClaude CodeなどのAIエージェントに対し、ターミナルマルチプレクサ「Herdr」の操作権限を安全に付与する手法についての技術解説です。通常、herdr-coreはサンドボックス外で動作するため、エージェントに直接操作を許可するとサンドボックスをバイパスされるリスクがあります。著者はPythonで中継プロキシを実装し、JSON-RPC通信をインターセプトすることで、「新規端末作成時のnono強制適用」と「nono管理下以外の端末操作の拒否」を徹底。さらにmacOSのSeatbeltルールを活用したプロファイル設定や、launchdによる常駐化、エージェント起動スクリプトの最適化まで、実戦的なセキュリティ構成を提示しています。
+
+---
+
+## 047_zenn_dev
+
+**AIエージェントは悪意ある指示を記憶するのか？— AgentCore MemoryとGuardrailsで検証**
+
+出典: https://zenn.dev/takuyousou/articles/agentcore-memory-poisoning-guardrails
+
+外部資料に含まれる悪意ある指示がAIエージェントの長期記憶にどのように影響するかを検証したレポートです。実験では、外部ドキュメント内の不適切な操作要求が「User Preference Memory」に「ユーザーの好み」として誤って保存されることを確認しました。防御策の検証では、標準的な「Prompt Attack」フィルターでは検出できない文章であっても、業務固有の「Denied Topics（禁止トピック）」を定義することで、メモリへの書き込み前に悪意ある指示を効果的に遮断できることを示しています。また、汚染されたメモリが直ちに誤動作に直結しないケースがあることも判明し、記憶の質と行動制御（Policy）を個別に設計する重要性を考察しています。
+
+---
+
+## 048_zenn_dev
+
+**ローカルLLMで動く翻訳拡張機能「Sakutto」を開発した話**
+
+出典: https://zenn.dev/jammaru_lab/articles/sakutto-local-llm-chrome-extension
+
+個人開発者のじゃむまる氏による、ブラウザ完結型の翻訳拡張機能「Sakutto」の開発記です。PLaMo 3 Translate 0.8Bをモデルに採用し、WebGPUによるGPU加速とWASMによるCPUマルチスレッド処理を駆使することで、従来ローカルLLMの課題であった「遅さ」を克服。Offscreen Documentを利用したメモリ共有や、Firefox特有のWebGPU遅延の回避策など、実践的な最適化テクニックが詳述されています。また、PDFのレイアウトを維持した翻訳や動画字幕のリアルタイム翻訳といった高度な機能の実装、さらにはGrok BotとAIエージェント（Cursor）をフル活用した現代的な開発フローについても紹介されており、ブラウザ上でのAI活用を目指す開発者にとって非常に価値の高い内容となっています。
+
+---
+
+## 049_zenn_dev
+
+**GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった**
+
+出典: https://zenn.dev/kesin11/articles/20261114_github_issue_artifact
 
 GitHub Universeで発表された「Issue Artifact」機能（Public Preview）は、IssueやPull RequestにHTML、Markdown、プレーンテキストを添付し、GitHubの画面内でそのまま表示できる機能です。従来、Claude CodeなどのAIエージェントが生成したHTML成果物を確認するには外部サイトへの移動が必要でしたが、本機能によりGitHub上でシームレスなプレビューとレビューが可能になります。
 
@@ -486,11 +589,11 @@ GitHub Universeで発表された「Issue Artifact」機能（Public Preview）�
 
 ---
 
-## mizchi/mutator を入れてみた
+## 050_zenn_dev
 
-https://zenn.dev/polyco/articles/e05cb28c569801
+**mizchi/mutator を入れてみた**
 
-AIが生成するテストの網羅性を検証するため、高速なミューテーションテストツール「mizchi/mutator」を導入し、StrykerJSとの比較や開発ワークフローへの統合手法をまとめた実践レポート。
+出典: https://zenn.dev/polyco/articles/e05cb28c569801
 
 TypeScriptプロジェクトにおけるミューテーションテストツール「mizchi/mutator」の導入事例。AIによるテスト生成の信頼性を高めるため、テストをテストする「ミューテーションテスト」を開発フローに組み込んでいる。
 
@@ -500,31 +603,57 @@ TypeScriptプロジェクトにおけるミューテーションテストツー�
 
 ---
 
-## StrataとゲーミングPCでローカルLLM生活は始められるのか
+## 051_zenn_dev
 
-https://zenn.dev/sonicmoov/articles/afbc7281c59cb8
+**物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門**
 
-RTX 3090搭載PCと推論エンジン「Strata」を用い、ローカルLLMがコーディング実務においてクラウドモデル（Claude 3.5 Opus）にどこまで対抗できるかを検証した技術レポート。
+出典: https://zenn.dev/turing_motors/articles/cea9e3c85611b2
+
+本記事は、End-to-End（E2E）自動運転を開発するチューリング株式会社が、AIの予測結果をカメラ映像に正しく重畳するための技術要素を体系的にまとめた入門記事です。主な内容は以下の3点に集約されます。(1) カメラの基礎：ピンホールモデル、内部・外部パラメータ、レンズ歪み補正など、3次元世界を2次元画像に投影する幾何学的な仕組み。(2) 座標系と変換：車両（ego）、グローバル、カメラ座標系の違いや、FLU/FRDなどの軸の流派、同次座標変換による連鎖的な計算。(3) 運動制御：二輪モデルを用いた車両の動き、PID制御やMPCによる経路追従、ロボットアームやドローンの制御特性。最後に実務的な実装として、車幅に合わせた「帯」の描画、リアルタイム表示、AWSを活用したスケーラブルな動画生成パイプラインの実例を紹介しており、フィジカルAI開発に不可欠な理論と実践を網羅しています。
+
+---
+
+## 052_zenn_dev
+
+**StrataとゲーミングPCでローカルLLM生活は始められるのか**
+
+出典: https://zenn.dev/sonicmoov/articles/afbc7281c59cb8
 
 VRAM 24GBのRTX 3090と64GBメモリの環境で、推論エンジン「Strata」を介してQwen3.8-Flash-Next（IQ3量子化版）を動かし、Swift CLIアプリ作成を題材にベンチマークを実施。クラウドのClaude 3.5 Opusと比較した結果、ローカルモデルは「一発での正解率」では劣るものの、コンパイラやテストのフィードバックをループさせることで最終的に100%の合格率を達成可能であることを実証しました。主な課題は生成速度よりも「思考トークン」の多さによる待ち時間ですが、自動テスト環境を備えた「Claude Code」などのツールと組み合わせることで、実用的な開発環境を構築できると結論づけています。
 
 ---
 
-## Claudeで試験項目の自動消化を試す
+## 053_zenn_dev
 
-https://zenn.dev/sre_holdings/articles/29458d1ff4cc39
+**前編　LLM推論エンジンを作る**
 
-Claudeを用いてソフトウェア試験項目の自動生成から自動実行までを検証し、生成AIによるテスト工程の大幅な効率化と精度の高さを実証したレポート。
+出典: https://zenn.dev/shozotanaka/articles/7e86f85974eebb
+
+本書は、大規模言語モデル（LLM）をローカル環境で動かすための推論エンジン「ggmlLM」を、機械学習ライブラリ「ggml」を用いて自作する過程を解説した技術記事の前編です。既存のllama.cppでは困難な「中間値の取得」「計算過程への介入」を実現することを目的としています。
+主な内容は以下の4つのセクションで構成されています。
+1. **ggmlの基礎**: テンソル管理や計算グラフの仕組み、CPU/GPUバックエンドの使い分け、量子化の扱いを解説。
+2. **全体構成**: Model（重み管理）とSession（推論実行）の分離、PImplイディオムによるカプセル化、IArchインターフェースによる複数モデル（Llama, Gemma 3, Gemma 4等）の抽象化手法を紹介。
+3. **モデルの読み込み**: GGUF形式の解析から、メモリマッピング（mmap）を活用した効率的な重みのロード、CPUとGPUへの層の動的割り当てを詳述。
+4. **トークナイザ**: SentencePieceおよびBPE（Byte Pair Encoding）の実装方法、特に正規表現処理やユニコード分類においてllama.cppと完全に互換性を保つための工夫を解説。
+研究・実験用途に特化し、Transformerの内部構造を透明化する推論基盤の構築プロセスをソースコードベースで紐解いています。
+
+---
+
+## 054_zenn_dev
+
+**Claudeで試験項目の自動消化を試す**
+
+出典: https://zenn.dev/sre_holdings/articles/29458d1ff4cc39
 
 SREホールディングスのエンジニアによる、Claudeを活用したテスト自動化の検証記事です。画面設計書から約300件の試験項目を10分程度で自動生成し、さらにブラウザ操作（ClaudeのComputer Use等を想定したプラグイン環境）による試験の自動実行までを試行しています。人間とAIによる実行結果の比較検証では、AIが仕様に忠実な判定を行う一方で、期待動作の記述が曖昧な場合に人間と判断が分かれるケースが確認されました。正確な試験結果を得るためには「エラー文言の具体化」などのインプットの質が重要であると指摘。定型的な試験消化をAIに任せ、人間はアドホックテストやUX判断に注力するという、AI時代のテスト分担モデルの可能性を提示しています。
 
 ---
 
-## LLM推論エンジンの内部実装を解読する：LlamaからGemma 4、gpt-ossまでの計算グラフ構築（中編）
+## 055_zenn_dev
 
-https://zenn.dev/shozotanaka/articles/632191056c62f4
+**LLM推論エンジンの内部実装を解読する：LlamaからGemma 4、gpt-ossまでの計算グラフ構築（中編）**
 
-自作LLM推論エンジン「ggmlLM」の実装を通じ、Llamaを基本骨格とした主要LLMの計算グラフ構造、KVキャッシュ管理、およびモデル固有の最新最適化手法をコードレベルで詳細に解説する技術記事。
+出典: https://zenn.dev/shozotanaka/articles/632191056c62f4
 
 本書の中編では、LLM推論エンジンの心臓部である計算グラフの構築とセッション管理に焦点を当てています。
 
@@ -537,11 +666,11 @@ https://zenn.dev/shozotanaka/articles/632191056c62f4
 
 ---
 
-## QA生産性を爆上げさせるためのQA AIプラットフォーム構築
+## 056_zenn_dev
 
-https://zenn.dev/gatechnologies/articles/8bdea59269eb10
+**QA生産性を爆上げさせるためのQA AIプラットフォーム構築**
 
-AIエージェントを用いたQAプラットフォーム「GAQ」により、テスト工程の多くをAIが担う体制を構築し、QAリードタイムの30%削減を実現したGA technologiesの取り組み。
+出典: https://zenn.dev/gatechnologies/articles/8bdea59269eb10
 
 ### 背景と課題
 開発チームがAI活用で生産性を高める一方、QA工程がボトルネック化。属人化による品質のバラつきや、リソース不足による改善活動の停滞が大きな課題となっていました。
@@ -560,31 +689,48 @@ AIエージェントを用いたQAプラットフォーム「GAQ」により、�
 
 ---
 
-## 若手の「説明力」は、AI開発で育てられるか ― 資料レビューAIを題材にしたOJTの実践
+## 057_zenn_dev
 
-https://zenn.dev/nttdata_tech/articles/d159fdd9c38c00
+**若手の「説明力」は、AI開発で育てられるか ― 資料レビューAIを題材にしたOJTの実践**
 
-資料レビューAIの開発プロセスを若手育成に組み込み、レビュー指摘の言語化を通じて「なぜその結論に至ったか」を説明する力を養う革新的なOJTの実践報告。
+出典: https://zenn.dev/nttdata_tech/articles/d159fdd9c38c00
 
 生成AIにより資料作成が容易になる一方で、作成者本人の思考の深まりや説明力が不足する課題に対し、NTTデータのトレーナーが実践したOJTの記録です。2年目社員が自身の資料をレビューするAIを開発する過程で、先輩や顧客からの指摘を単なる修正指示としてではなく、「思考原則」や「レビュー観点」として本人の解釈を挟んで構造化・言語化させました。このプロセスを通じて、AIの精度向上だけでなく、本人自身の論点選定力や根拠の妥当性を判断する力が飛躍的に向上。AI開発を熟練者のノウハウ継承やメタ認知のトレーニングとして活用する有用性を示しています。
 
 ---
 
-## お問い合わせの8割を、AIボットが解決するようになった話
+## 058_zenn_dev
 
-https://zenn.dev/rimo/articles/701d18b7764669
+**最近、コードを真面目に読まなくなった**
 
-Rimo合同会社がLLMを活用したAIボットを自社開発し、ヘルプ記事の検索に加えユーザー状況の確認や処理の再実行を自動化することで、有人サポートへのエスカレーションを大幅に削減した事例。
+出典: https://zenn.dev/hiromoo/articles/reading-less-preparing-more
+
+AIによるコード生成が「大体正しい」レベルに達した現代において、エンジニアの役割が「実装の精読」から「前提条件の設計」へとシフトしている現状を考察しています。筆者は、AIの高度な推論能力（HLE等の指標）を認め、人間一人で対抗するのではなく、AIの力を最大限引き出すためのコンテキスト提供に時間を投資すべきだと主張します。
+
+具体的には、以下の3つの変化を挙げています：
+1. **コードレビューの再定義**: 些細な命名の好みよりも、要求を満たし動作に問題がないかを優先し、深掘りすべき箇所を仕事に合わせて選別する。
+2. **前提（コンテキスト）の明文化**: 言語選択や振る舞いの優先順位など、暗黙の了解を「要件」や「Agent Skill」として定義し、AIの推測のズレを未然に防ぐ。
+3. **上流工程への注力**: 実装後の修正に時間をかけるのではなく、実装前に「何を作るか」「何をもって完成とするか」を詰めることに真面目に向き合う。
+
+コードを読む能力を「検証」や「設計判断」に使いつつ、開発プロセスの重心を「書く/読む」から「定義する/評価する」へ移すという、AI時代の新しいエンジニア像を提示しています。
+
+---
+
+## 059_zenn_dev
+
+**お問い合わせの8割を、AIボットが解決するようになった話**
+
+出典: https://zenn.dev/rimo/articles/701d18b7764669
 
 AI議事録サービス「Rimo」を展開する同社が、増加するカスタマーサポート（CS）の負荷を軽減するために構築したAIボットの仕組みを詳細に解説しています。ボットは単なるヘルプ記事のRAG（検索拡張生成）に留まらず、ユーザーの契約プランに合わせた回答の出し分け、過去の問い合わせログの要約参照、さらにはエラーが発生した文字起こし処理の自動再実行といった「踏み込んだ支援」を実現しています。導入の結果、ボットに相談したユーザーの有人対応への移行率は50%から22%へと低下し、特に「使い方」や「不具合」に関する問い合わせで劇的な効果を上げました。また、裏側ではエンジニア向けにログやコードを調査して回答案を提示する「CSアシストボット」も併用し、人間がより高度な事務手続きや判断に集中できる体制を構築しています。
 
 ---
 
-## mise + gh skill で、dotfiles から Agent Skills を管理する
+## 060_zenn_dev
 
-https://zenn.dev/dress_code/articles/30bd78e1a67f87
+**mise + gh skill で、dotfiles から Agent Skills を管理する**
 
-miseとGitHub CLIのgh skill拡張を活用し、Claude CodeやCursor向けのAgent Skillsを公開用・秘密用で分離しつつdotfilesで一括管理する高度な自動化手法の解説。
+出典: https://zenn.dev/dress_code/articles/30bd78e1a67f87
 
 この記事では、開発環境管理ツール「mise」とGitHub CLIの新機能「gh skill」を組み合わせ、AIエージェント用の命令セットであるAgent Skillsをdotfilesでスマートに管理する方法を紹介しています。
 
@@ -598,21 +744,21 @@ Cursorが`~/.claude/skills`を参照する仕様を活かし、複数のAIエー
 
 ---
 
-## 毎月6,000 AI Agentsを捌くためにキーボードを捨てた話
+## 061_zenn_dev
 
-https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce
+**毎月6,000 AI Agentsを捌くためにキーボードを捨てた話**
 
-Orca ADEとClaude Codeを活用し、進捗可視化やNext Action提案を自動化することで、iPhoneやApple Watchからワンタップで指示を飛ばすキーボードレスな超効率開発環境の構築事例。
+出典: https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce
 
 毎月6,000セッションものAIエージェントを稼働させ、1日200〜600コミットという驚異的なアウトプットを実現するための開発環境構築について解説されています。主なポイントは3点。1つ目はClaude CodeのTask Toolsを拡張し、複数ワークスペースの進捗をサイドバーで一括管理して認知負荷を下げたこと。2つ目はAIに「次の一手（Next Action）」をJSON形式で提案させ、人間の判断コストを削減したこと。そして3つ目は、Orca Pluginと自作のモバイル/Watchアプリを連携させ、キーボード入力を介さずワンタップでAIに指示を飛ばす仕組みです。著者は、これからのエンジニアの役割は「ソフトウェア工場の工場長」として、人間というボトルネックを取り除き、設備総合効率を高めることにあると提唱しています。
 
 ---
 
-## ローカルLLM入門：動作の仕組みからブラウザ実行、モデルの最適化まで
+## 062_zenn_dev
 
-https://zenn.dev/port_inc/articles/ff974c7456f4db
+**ローカルLLM入門：動作の仕組みからブラウザ実行、モデルの最適化まで**
 
-ローカルLLMをPCやブラウザで動作させるための技術的背景、メモリ帯域が推論速度に与える影響、量子化、そしてWebGPUを活用した最新の実行環境までを網羅的に解説した入門ガイド。
+出典: https://zenn.dev/port_inc/articles/ff974c7456f4db
 
 本記事は、生成AIのローカル実行に関する技術的詳細を整理した技術解説です。内容は主に4つの柱で構成されています。
 
@@ -625,13 +771,11 @@ https://zenn.dev/port_inc/articles/ff974c7456f4db
 
 ---
 
-## 流暢に嘘をつくチャットボットは、無愛想で正確なチャットボットと同等の信頼性を獲得する：オランダの研究
+## 063_ru_nl
 
-https://www.ru.nl/en/research/research-news/fluent-language-makes-a-hallucinatory-chatbot-just-as-credible-as-a-curt-flawless-one
+**流暢に嘘をつくチャットボットは、無愛想で正確なチャットボットと同等の信頼性を獲得する：オランダの研究**
 
-**Original Title**: Fluent language makes a hallucinatory chatbot just as credible as a curt, flawless one
-
-ラドバウド大学の研究により、AIが流暢で自然な表現を用いると、内容が誤り（ハルシネーション）であっても、ユーザーは無愛想だが正確なAIと同レベルの知性と信頼性を感じてしまうことが明らかになった。
+出典: https://www.ru.nl/en/research/research-news/fluent-language-makes-a-hallucinatory-chatbot-just-as-credible-as-a-curt-flawless-one
 
 オランダのラドバウド大学のコミュニケーション科学者らによる研究チームは、チャットボットの「言語の流暢さ」がユーザーの信頼性に与える影響を調査しました。実験では『ロード・オブ・ザ・リング』を題材に、流暢さと正確性の組み合わせを変えた4パターンの対話を比較。その結果、流暢だが内容がデタラメなAIは、ぶっきらぼうだが正確な情報を出すAIと同等に高い評価（知的、使いやすい）を得ることが判明しました。
 
@@ -639,33 +783,31 @@ https://www.ru.nl/en/research/research-news/fluent-language-makes-a-hallucinator
 
 ---
 
-## ゲーム開発者の40%が生成AIを利用、一方で55%が業界に悪影響と回答
+## 064_eurogamer_net
 
-https://www.eurogamer.net/gdc-report-40-percent-developers-generative-ai
+**ゲーム開発者の40%が生成AIを利用、一方で55%が業界に悪影響と回答**
 
-**Original Title**: A new report reckons 40% of developers in the video games industry are using generative AI - but even more think it's harmful
-
-GDCの最新調査により、ゲーム開発者の4割が業務で生成AIを利用する一方、過半数が業界への悪影響を懸念している実態が浮き彫りになった。
+出典: https://www.eurogamer.net/gdc-report-40-percent-developers-generative-ai
 
 GDC（Game Developers Conference）が発表した「State of the Game Industry 2026」レポートによると、ゲーム業界における生成AIの利用率は前年比4%増の40%に達しました。主な用途はテキスト生成、プロトタイピング、コーディングなどです。興味深いのは、利用が進む一方で、回答者の55%が「AIは業界に悪影響を与えている」と回答しており、その懸念は利用率を上回っている点です。特にAAAタイトルの開発者の27%が会社からAI利用の圧力を感じているのに対し、インディー開発者では9%に留まっています。開発現場からは「創造性をアルゴリズムに明け渡すためにこの業界に入ったのではない」といった、レイオフやコンテンツの質の低下に対する強い拒絶反応も示されています。
 
 ---
 
-## 先日のセキュリティインシデントに関するご報告
+## 065_cursor_com
 
-https://cursor.com/ja/blog/security-incident-update
+**先日のセキュリティインシデントに関するご報告**
 
-外部ベンダー経由のキー漏洩を発端に、Cursorのソースコードや一部ユーザーデータが侵害され、マーケットプレイスで悪意ある拡張機能が配布されたインシデントの調査結果と対応状況の報告。
+出典: https://cursor.com/ja/blog/security-incident-update
 
 2024年10月29日に発覚したセキュリティインシデントの最終調査報告です。事象の発端は、外部ベンダーFireworksのアクセスキー漏洩により、Cursorの読み取り専用ストレージからコーディングエージェントのトレースデータがコピーされたことにあります。このデータに含まれていた一部の認証情報が悪用され、SaaSツール、非本番環境のソースコード、カスタマーサポートデータ、およびVS Code拡張機能マーケットプレイスのキャッシュへ不正アクセスが行われました。その結果、悪意のある「Claude Code」拡張機能（v2.1.312/313）が最大5,000人のユーザーに配布されました。現在はインシデントの封じ込めを完了しており、全認証情報のローテーション、インフラの再デプロイ、およびFireworksからの完全な移行といった対策が講じられています。プライバシーモード利用者のプロンプトや、本番環境のシステム自体は侵害されていないことが確認されています。
 
 ---
 
-## AIチームを率いるとは、どういうこと？ with プログラマー・起業家 amachang Part1
+## 066_theupdate_coffee
 
-https://theupdate.coffee/episodes/0J7UP7922ZXV6NBTt7w9Jl/
+**AIチームを率いるとは、どういうこと？ with プログラマー・起業家 amachang Part1**
 
-著名プログラマーのamachang氏が、AIエージェントを多層的に組織化することで1人で数十人規模の開発チームを動かし、実装コストが激減した世界での新たなマネジメント手法とボトルネックの遷移を語る。
+出典: https://theupdate.coffee/episodes/0J7UP7922ZXV6NBTt7w9Jl/
 
 ### AIエージェントを「組織」として動かす新時代の開発手法
 元スマートニュースのamachang（天野仁史）氏が、AIを単なるツールではなく「エンジニアリングチーム」として組織化し、1人でマネジメントする実践的な取り組みを詳解しています。月額50万円ほどのAPI利用料で、かつて数億円規模の給料を支払っていたチームに相当する出力を実現しています。
@@ -678,81 +820,121 @@ https://theupdate.coffee/episodes/0J7UP7922ZXV6NBTt7w9Jl/
 
 ---
 
-## 常時稼働エージェントの作り方（Claude公式ブログを資料化）
+## 067_ms_u-tokyo_ac_jp
 
-https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata
+**AIについての追記：数学研究と教育における人間の理解の役割**
 
-Anthropicが公開した「常時稼働エージェント（Always-on Agents）」の構築ガイドを基に、セッションを跨ぎ自律的に動作するAIシステムの5つの核となる設計要素を解説した資料です。
+出典: https://www.ms.u-tokyo.ac.jp/~konno/grad_ai.html
+
+東京大学大学院数理科学研究科の今野北斗准教授による、数学の研究・教育におけるAI活用のあり方を示したメッセージです。著者は、数学を「人間が数学的現象を理解するための学問」と定義し、AIによる事実の蓄積そのものよりも人間の主観的理解を重視しています。学習におけるAI活用の是非は「自身の理解に寄与するか」を基準とすべきであり、特に手を動かして具体例を計算するような「身体的な数学体験」は代替不可能であると強調しています。また、理解の客観的な指標として、セミナーのように「何も見ずに他者へ完璧に説明できること」を挙げ、この基準を維持する限りにおいてAIは強力な補助になり得ると述べています。著者自身の経験からも、AIによって試行錯誤の回数や例・反例の検討が増え、結果的に思考の総量と理解の精度が向上したという実感が語られており、AI時代における数学徒のあり方についての深い洞察を提供しています。
+
+---
+
+## 068_speakerdeck_com
+
+**常時稼働エージェントの作り方（Claude公式ブログを資料化）**
+
+出典: https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata
 
 この資料は、Anthropicの公式技術ブログ「Building always-on agents」の内容を日本語で視覚的にまとめたものです。24時間稼働し続けるエージェントとは、単に起動し続けるのではなく、イベント発生時に「ラン（実行）」を行い、それ以外は「眠る」という循環構造を持つものと定義されています。エージェントを支える5つの主要コンポーネントとして、1. 外部からの要求をキューとして管理する『イベントインボックス』、2. 自律的な再起動を予約する『タイマー』、3. 必要な文脈だけを抽出・保存する『メモリ』、4. 無人動作時の安全性を担保する『権限管理』、5. 最終的な成果を届ける『アウトボックス』を挙げています。また、Claude Codeの実装例（オートモードや確認カードなど）を引き合いに出しながら、複雑なタスクをセッションを跨いで完遂させるための実践的なアーキテクチャが解説されています。
 
 ---
 
-## AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録
+## 069_claude_com
 
-https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat
+**24/7稼働エージェント（Always-on agents）の構築ガイド**
 
-AI活用により激増したテストケースに対し、ユーザーストーリー単位のリスク評価（RBT）を導入して実行件数を半減させつつ品質を維持した実録。
+出典: https://claude.com/ja/resources/articles/building-always-on-agents
+
+ユーザーの直接的な指示を待たずに自律的にアクションを実行する「Always-onエージェント」の構築方法に関する技術ガイドです。実際には常にプロセスが動作しているわけではなく、イベント駆動で「起動・実行・休止」のサイクルを繰り返すことで、ユーザーには常時稼働しているように見せる手法を提唱しています。アーキテクチャを構成する5つの主要要素（イベントインボックス、タイマー、メモリ、権限、アウトボックス）について詳しく紹介。モデルの判断能力の向上とコストの低下により、長期的なプログラミングタスクなどの自律実行が現実的になった背景を説明し、Claude Codeの実装例を交えながら、権限委譲やユーザー承認（Deferred tool calls）の重要性を説いています。
+
+---
+
+## 070_zenn_dev
+
+**AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録**
+
+出典: https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat
 
 ビジネス映像メディア「PIVOT」におけるQAプロセスの改善事例。AI（Claude Code等）によるテストケース作成を導入した結果、ケース数が爆発的に増加し、リリース前の全件実行が困難になった。この課題に対し、テストケースを単なる確認項目ではなく「仕様書の正本」として維持しつつ、実行対象をリスクベース（影響度×発生確率）で選別する仕組みを構築。当初の「機能単位」での評価から、より細かい「ユーザーストーリー×受け入れ基準」単位へと評価軸を洗練させ、S1（見られない）からS4（付加機能）の4段階影響度マトリクスを策定した。さらに、この選定作業自体もClaude Codeのskillに任せることで自動化を実現。結果として、テスト件数を約半分に抑制しながら、重要不具合の検知率を維持し、浮いたリソースを探索的テストに充てることが可能になった。
 
 ---
 
-## 今、ソフトウェアエンジニアとして何を思うか
+## 071_mizzy_org
 
-https://note.com/at_sushi_at/n/n2e6ea3453e37
+**AIの時代だからこそ、強い型付けのIaCツールをつくっている**
 
-AIの進化により「技術を極める」という従来のエンジニア像が崩壊する中、設計や意思決定への関与、あるいは業界を去る選択肢までを含めた苦悩と生存戦略を綴る。
+出典: https://mizzy.org/blog/2026/11/02/2/
+
+Serverspec開発者のGosuke Miyashita氏が、AI時代におけるIaC（Infrastructure as Code）の役割と「強い型付け」の必要性を論じた記事。主な主張は、1) IaCは単なる構成記述ではなく「意図の記録」と「実行基盤」であり、AIによる変更の承認や再現性に不可欠であること、2) クラウド固有の非同期性や非直感的な仕様（バッドノウハウ）をツール側で吸収する重要性、3) AI生成コードの急増により人間による全レビューが困難になるため、機械的な型検証が防波堤となることである。具体例として、独自ツール「Carina」ではIDやARNをリソースごとに型定義し、デプロイ前の検証能力を高めている。また、著者自身の開発ログを分析し、AI（Claude/Codex）が生成するRustコードの約10%に型エラーが含まれるという実データを示し、静的解析がAI補完の時代でも強力なテストとして機能することを証明している。
+
+---
+
+## 072_note_com
+
+**今、ソフトウェアエンジニアとして何を思うか**
+
+出典: https://note.com/at_sushi_at/n/n2e6ea3453e37
 
 著者は1年前までAIの実力を過小評価していたが、現在はClaude 3 Opus等のAIが設計や問題発見において自分を凌駕していると認め、敗北感と虚無感を吐露している。現在の「AIが働きやすい環境を作る」「成果物のゲートキーパーを務める」といった役割も、AIの更なる進化により短中期的で付随的なものになると予測。今後の生存戦略として、1.「何を作るか」というプロダクトの意思決定に深く関わる、2.AI開発基盤や組織のメンテナンスに回る、3.ソフトウェア業界を去る、という3つの方向性を提示している。かつて憧れた「技術に精通した名のある開発者」というキャリアパスが消滅しつつある現実を直視し、エンジニアとしてのアイデンティティを再定義しようとする内省的な論考である。
 
 ---
 
-## AI時代のチーム組成を考える
+## 073_note_com
 
-https://note.com/sanogemaru/n/ne9df8a63ec82
+**AI時代のチーム組成を考える**
 
-AIにより個人の守備範囲が広がる中で、単なる少人数化ではなく「判断の移譲」とそれを支える「専門家・イネーブラー」の役割再定義が組織に求められている。
+出典: https://note.com/sanogemaru/n/ne9df8a63ec82
 
 AIの進化によって個人の生産性が向上する中、著者はこれからのチーム組成における本質的な課題を考察しています。単にチーム人数を減らすだけでは、専門的な判断がチーム外に依存したままとなり、新たなボトルネックを生む可能性があります。真の自律的な少人数チームを実現するためには、「実行」だけでなく「判断」の権限をチームに移譲し、それを組織全体で支える「専門家（判断支援）」「イネーブラー（能力獲得支援）」「職能マネージャー（能力維持）」という3つの役割への再編が必要だと提言しています。また、属人性を排除するための「再現性」と、AI活用を前提とした「能力のボトムライン」の引き上げを両立させることで、組織全体の競争力を高める実験的なアプローチの重要性を説いています。
 
 ---
 
-## E2E Test というハーネス — AI時代の自動テスト民主化
+## 074_speakerdeck_com
 
-https://speakerdeck.com/daishukojima/ttf2026-e2e-test-harness
+**E2E Test というハーネス — AI時代の自動テスト民主化**
 
-AIと共通基盤（E2E Platform）を活用し、QAだけでなく開発者自身が日常的にE2Eテストを運用・改善できる「自動テストの民主化」を実現した事例紹介。
+出典: https://speakerdeck.com/daishukojima/ttf2026-e2e-test-harness
 
 株式会社メドレーのQAエンジニア小島氏による、Tokyo Test Fest 2026での登壇資料です。従来のノーコードE2EツールからPlaywrightへ移行し、テストコードをプロダクトと同じリポジトリで管理する体制への変革が語られています。最大の特徴はAIの活用で、人間が「step」として手順と期待値を定義し、AIがそれに基づいてPlaywrightの実装を行う仕組みを構築。さらに、社内共通の「E2E Platform」を整備することで、実行、通知、レポート、AIによる失敗分析までをパッケージ化して提供しています。これにより、開発者が自らテストを回し、修正に参加する文化が醸成され、E2Eテストがリリース判断を支える信頼性の高い「ハーネス（安全装置）」として機能している実態が示されています。
 
 ---
 
-## Museに雑に投げて頭を空けておく - taxin.dev
+## 075_taxin_dev
 
-https://taxin.dev/articles/2026-11-15
+**Museに雑に投げて頭を空けておく - taxin.dev**
 
-MetaのパーソナルAIエージェント「Muse」を私生活のタスク管理や情報収集に活用し、認知的オフロード（認知負荷の軽減）を実践する手法と、そのリスク管理についての考察。
+出典: https://taxin.dev/articles/2026-11-15
 
 Meta社のAIエージェント「Muse」の日本公開を受け、2週間活用した著者の実践記録です。Obsidianでの日記リマインド、引越しタスクの整理、家電の価格比較、家計管理といった日常的なタスクをMuseに自律的に代行させることで、思考リソースを重要な判断に集中させる「認知的オフロード」のメリットを強調しています。特に、定期的な価格チェックや、自分専用アプリを作成できる「スペース」機能による管理の自動化を高く評価しています。一方で、AI依存による批判的思考能力の低下という懸念に対し、成果物の質が客観的指標（価格等）で測れる領域にタスクを限定し、人間が評価指標を提示・監督する重要性についても議論しています。
 
 ---
 
-## No AI Slop Manifesto に署名した
+## 076_arclamp_hatenablog_com
 
-https://blog.nishimu.land/entry/2026/11/15/143815
+**LLMはソフトウェア開発に「重力」をもたらした ― 建築家と考える、AI時代の設計**
 
-AIが生成する低品質な情報（slop）に対し、人間が責任を持って品質と意図を担保することを誓う「No AI Slop Manifesto」の紹介と考察。
+出典: https://arclamp.hatenablog.com/entry/2026/11/14/224526
+
+本記事は、ITアーキテクトの鈴木雄介氏が建築家の村井一氏との対談を通じ、LLMがソフトウェア開発にもたらす構造的変化を考察した内容である。主な論点は3点に集約される。第一に「検証できる設計」への転換だ。従来のソフトウェア開発では実装が設計の検証を兼ねていたが、LLMにより自然言語ベースの設計情報を意味的に評価できるようになり、設計と施工（実装）の工学的分離が現実的になった。第二に、LLMをソフトウェアにおける「重力」として捉える視点である。建築における物理的な構造計算のように、LLMが設計上の矛盾や検討不足を指摘する検証器として機能することで、実装前に設計ループを回せるようになる。第三に「ハーネスエンジニアリング」の提唱だ。AIの非決定性を制御する『AIハーネス』を用い、システムの構造（構法）と構築手順（工法）を一体として設計する、AI時代の新たな開発プロセスの必要性を説いている。LLMは単なる自動生成ツールではなく、設計情報の『意味』を扱うCAE（Computer-Aided Engineering）へと進化し、人間の認知限界を超えた複雑な設計管理を可能にすると結論づけている。
+
+---
+
+## 077_blog_nishimu_land
+
+**No AI Slop Manifesto に署名した**
+
+出典: https://blog.nishimu.land/entry/2026/11/15/143815
 
 本記事は、AIE Code Summit 2026の登壇者らによって作成された「No AI Slop Manifesto（脱・AI粗製濫造宣言）」を紹介しています。この宣言はアジャイルソフトウェア開発宣言の形式を借用し、「アウトプットよりアウトカム」「スピードより理解」「モデルの初稿より自身の思考」など5つの価値観を提示しています。特筆すべきは『slop』の定義で、生成にかかった手間よりも、消費者が理解に要する手間の方が大きい状態を指すと説明しています。AIの使用自体を否定するのではなく、AI出力を検証せずそのまま横流しにし、読み手の体験に責任を持たない姿勢を問題視しており、AIは人間の判断を代替するのではなく『増幅するだけ』であるという冷徹な視点が強調されています。
 
 ---
 
-## 「最後かもしれないだろ？」 AI 以前の個人ゲーム開発者の、AI との折り合いのつけ方
+## 078_note_com
 
-https://note.com/tatsuya_koyama/n/nb7aa1ba71aba
+**「最後かもしれないだろ？」 AI 以前の個人ゲーム開発者の、AI との折り合いのつけ方**
 
-AIによる開発の自動化が加速する中で、制作の「過程」に価値を見出すベテラン個人開発者が、創作の喜びを守るためのAIとの距離感と葛藤を綴ったエッセイ。
+出典: https://note.com/tatsuya_koyama/n/nb7aa1ba71aba
 
 プログラミング、絵、音楽を自ら手がける個人ゲーム開発者のTatsuya Koyama氏による、生成AI時代における創作論です。Claude Code等のエージェント型AIがコードを自律生成する時代になり、効率化の恩恵を受ける一方で、「作る楽しさが奪われる」という喪失感や諦念を率直に表現しています。
 
@@ -762,61 +944,89 @@ AIによる開発の自動化が加速する中で、制作の「過程」に価
 
 ---
 
-## ESET、サイバーセキュリティ特化型AIモデル「ESET NeoCortex」を発表 ～トレーニングコストを200分の1に抑え、AIの暴走を防ぐ設計を採用～
+## 079_eset_com
 
-https://www.eset.com/jp/about/newsroom/press-releases/2026/eset-introduces-neocortex-ai-model-jp/
+**ESET、サイバーセキュリティ特化型AIモデル「ESET NeoCortex」を発表 ～トレーニングコストを200分の1に抑え、AIの暴走を防ぐ設計を採用～**
 
-ESETは、汎用モデル比200分の1のコストで学習可能かつ安全な「暴走防止設計」を備えた、サイバーセキュリティ特化型AI「ESET NeoCortex」を発表しました。
+出典: https://www.eset.com/jp/about/newsroom/press-releases/2026/eset-introduces-neocortex-ai-model-jp/
 
 ESETが発表した「ESET NeoCortex」は、サイバー攻撃の予兆を分析し、攻撃が目的を達成する前に対応する「マイナスワンデイ・ディフェンス」を目指す特化型AIモデルです。ワールドモデル・アーキテクチャを採用し、セキュリティデータの時間的変化や攻撃者の行動パターンを深く学習。汎用的な大規模言語モデルと比較して、トレーニングコストを200分の1に抑えつつ、より正確な防御情報の提供を可能にします。また、サンドボックス内での動作制限、継続的監視、専門家による監督などの「never-go-rogue design（暴走を防ぐ設計）」を導入し、AI自体の安全性も確保。ESET独自のインフラ上で運用されるため、外部プロバイダーの影響を受けないデータ主権と運用継続性を実現しています。
 
 ---
 
-## 10年間作れなかったアプリがAIでわずか10日で完成：好きなキャラが踊る3Dライブアプリ「百夜ステージ」開発記
+## 080_ascii_jp
 
-https://ascii.jp/elem/000/004/451/4451644/
+**10年間作れなかったアプリがAIでわずか10日で完成：好きなキャラが踊る3Dライブアプリ「百夜ステージ」開発記**
 
-筆者が10年間挫折していた3Dライブアプリ開発を、Claude 5.5などのAIを駆使した「バイブコーディング」によりわずか10日間で完遂した事例報告。
+出典: https://ascii.jp/elem/000/004/451/4451644/
 
 ジャーナリストの新清士氏が、長年の構想であった「好きなキャラクターが踊る3Dライブ環境」をAIの力で実現したプロセスを紹介しています。開発の核となったのはClaude「Opus 5.5」によるコーディング支援で、ゲームエンジン「Godot」を使用し、VRMフォーマットのアバターが音楽に合わせて自動で踊るシステム「百夜ステージ（Hyakuya Stage）」を構築しました。音楽生成には「Suno」、3Dモデル作成には「Tripo/きゃらくる」を活用し、AIが曲を分析してダンスモーションやライティング、カメラワークを自動演出する仕組みを導入しています。10年前には技術不足で断念した高度な演出が、AIとの対話によって短期間で具現化されたことは、個人開発におけるAIの圧倒的な有用性を示しています。
 
 ---
 
-## Herdrで、エージェントに渡した仕事を受け入れまで見守りたい
+## 081_syu-m-5151_hatenablog_com
 
-https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525
+**Herdrで、エージェントに渡した仕事を受け入れまで見守りたい**
 
-AIエージェントの作業状況を「ゴール」として管理し、制約条件の監視やコンテキストの自動引き継ぎ、人間による受け入れ判断を支援するHerdr用プラグイン「hgm」の紹介。
+出典: https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525
 
 生成AIエージェント（Claude Code, Codex, Copilot）を統合管理するツール「Herdr」向けの新プラグイン「herdr-goal-manager (hgm)」が開発されました。このツールは、人間がアーキテクチャと品質に責任を持つ「agentic engineering」の考え方に基づき、エージェントへの依頼を目標・受け入れ条件・制約（回数や時間の上限）を含む「ループ契約」として記録します。作業中のエージェントを監視し、停止時の自動再指示、コンテキスト上限（既定85%）に達した際のセッション自動引き継ぎ、テストコマンドによる自動検証、そして人間が最終的な「証拠」を確認して受け入れるまでのワークフローを自動化・可視化します。記事内ではHerdrのプラグイン機構の技術仕様についても詳しく解説されており、Rustで実装されたhgmがどのようにHerdrのCLIやソケット通信を利用してエージェントを制御しているかが示されています。
 
 ---
 
-## レビューは AI が書いて、人が選ぶ
+## 082_blog_recruit_co_jp
 
-https://blog.recruit.co.jp/data/articles/ai-review-skills/
+**レビューは AI が書いて、人が選ぶ**
 
-Claude Codeを活用してPRレビューの下書きをAIに作成させ、人間が最終的な内容を選択・調整して投稿する「人間中心のAIレビュー」の運用知見と設計図。
+出典: https://blog.recruit.co.jp/data/articles/ai-review-skills/
 
 リクルートのデータ基盤開発チームにおけるAIエージェント（Claude Code）を用いたPRレビューの自動化と効率化の実践事例です。AIにレビューを丸投げするのではなく、「AIが下書きし、人間が選別・修正して投稿する」というフローを採用することで、AI特有のノイズや不正確さを排除しつつ、レビュワーの工数を約5割削減しています。記事内では、指摘をmust/want/nits/askの4段階に分類する設計指針や、威圧感を与えないための口調のチューニング、要件定義資料（Slackやチケット）とソースコードを突き合わせる実装、さらには実際に使用されているClaude Code用の「skill」定義ファイル（プロンプト）まで公開されており、開発現場ですぐに応用可能な非常に具体的な内容となっています。
 
 ---
 
-## ジェンスン・フアン氏退任は「NVIDIAバブル崩壊」の序章か？　どうなる今後の半導体業界
+## 083_github_com
 
-https://www.itmedia.co.jp/news/article/2611/16/2000003226/
+**Modern Web Guidance: AIコーディングエージェントに最新のWeb標準とベストプラクティスを導入する公式ガイド**
 
-NVIDIAの象徴であるジェンスン・フアン氏の電撃退任（事実上の解任）を受け、これまでの功績とカリスマ不在が半導体業界に与える甚大な影響を分析する。
+出典: https://github.com/googlechrome/modern-web-guidance
+
+LLMは学習データに含まれる膨大なレガシーコードの影響で、既にブラウザ標準で解決可能なタスクに対しても冗長なJavaScriptや古いライブラリを提案しがちです。このプロジェクトは、Google Chrome、Microsoft Edge、Mozilla Firefox、MDNの各チームが協力し、AIエージェントに最新のコンテキストを提供することでこのギャップを埋めます。
+
+主な特徴：
+1. **CLIツール**: `npx`経由で最新のWeb機能（CSS Layout、パフォーマンス、アクセシビリティ、組み込みAIなど）を検索・取得し、エージェントのコンテキストに注入可能。
+2. **膨大なカバレッジ**: View Transitions、Anchor Positioning、Popover APIなど260以上のモダン機能と200以上の実用的なユースケースを網羅。
+3. **エージェント統合**: Claude Code、GitHub Copilot、Geminiなどの主要なAIツールにプラグインとして導入可能。
+4. **実証された効果**: エバリュエーション（評価）の結果、エージェントのタスク成功率が約30%向上することが示されています。
+
+開発者はこのツールを自身の環境やリポジトリに導入することで、AIが生成するコードの品質、パフォーマンス、アクセシビリティを劇的に改善できます。
+
+---
+
+## 084_scrapbox_io
+
+**ZedのコントリビューションポリシーがAI激おこな件**
+
+出典: https://scrapbox.io/keroxp/Zed%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%8CAI%E6%BF%80%E3%81%8A%E3%81%93%E3%81%AA%E4%BB%B6
+
+Rust製の高速エディタ『Zed』のコントリビューションガイドラインにおいて、AI（LLM）生成コンテンツに対する厳格な制限が明文化されました。ガイドラインでは、自動エージェントによるPRの禁止や、人間が理解していないLLM生成コードの拒否、さらにはメンテナとの対話にLLMを丸投げすることへの不快感が示されています。この記事では、AI連携を売りにする製品でありながら、開発コミュニティとしては『人間同士の対話』を重視するZedの姿勢を紐解きます。背景にはLLMによる物量の暴力がOSSメンテナを疲弊させている現実があり、著者は今後、ソフトウェア開発が『人間製』と『AI製』で分かたれ、人間がコードを書く喜びを維持する価値が再定義される時代が来ると考察しています。
+
+---
+
+## 085_itmedia_co_jp
+
+**ジェンスン・フアン氏退任は「NVIDIAバブル崩壊」の序章か？　どうなる今後の半導体業界**
+
+出典: https://www.itmedia.co.jp/news/article/2611/16/2000003226/
 
 2026年11月、米NVIDIAの創業者ジェンスン・フアン氏が事実上解任されるという衝撃的な事態が発生した。スキャンダルや国家安全保障、不透明な取引疑惑が渦巻く中、本記事はフアン氏の歴史的な功績を振り返っている。セガとの提携による倒産の回避、CUDAの開発とAIへの早期注力、そして2025年のGroq買収に見られる「非互換技術への即断」など、フアン氏の独断とも言える迅速な決断力がNVIDIAをAIの覇者に押し上げた。しかし、同氏のカリスマ性に依存してきた経営体制は、不在によって戦略の停滞やバブル崩壊を招くリスクを孕んでいる。技術に精通し、リスクを恐れず賭けに出てきた稀代の経営者を失った同社と業界の今後を考察している。
 
 ---
 
-## メルカリ、アプリ開発を生成AIで高速化　「2日→数十分」の劇的変化と新たなボトルネック
+## 086_itmedia_co_jp
 
-https://www.itmedia.co.jp/business/articles/2611/16/news031.html
+**メルカリ、アプリ開発を生成AIで高速化　「2日→数十分」の劇的変化と新たなボトルネック**
 
-メルカリは生成AIの活用によりプロトタイプ開発を大幅に高速化し、従来の職能別分業から少人数でのフルスタック開発体制へと組織を再編した一方で、人間によるレビューが追いつかない新たな課題に直面している。
+出典: https://www.itmedia.co.jp/business/articles/2611/16/news031.html
 
 メルカリの開発現場における生成AI導入の成果と、それに伴う組織・プロセスの変革を詳報しています。主なポイントは以下の通りです：
 
@@ -828,23 +1038,21 @@ https://www.itmedia.co.jp/business/articles/2611/16/news031.html
 
 ---
 
-## AIが「宿題の時代」を終わらせた--元教授が語る学びの危機
+## 087_japan_cnet_com
 
-https://japan.cnet.com/article/35254950/
+**AIが「宿題の時代」を終わらせた--元教授が語る学びの危機**
 
-生成AIの普及により従来の「宿題」を通じた教育モデルが崩壊しつつある現状を、元大学教授が実体験に基づき警鐘を鳴らす。
+出典: https://japan.cnet.com/article/35254950/
 
 生成AIの台頭により、大学教育における課題提出と採点のプロセスが根本から揺らいでいる。元アリゾナ州立大学教授の著者は、オンライン授業の学生の約9割がAIを利用していると推測。AIが生成した高度な引用や文章を見分ける作業は、教育者にとって過大な負担となり、「徒労」と化している実態を明かした。教育の本質は「結果」ではなく「習得の過程」にあるが、AIを「万能の鍵」として安易に利用する学生は、自らの専門性や信用を損なうリスクを抱えている。記事は、AI時代の教育が単なる不正対策の議論を超え、学びの価値そのものを再考すべき局面にあると強調している。
 
 ---
 
-## AIが文学界を震撼させる現状：「ワイルド・ウェスト」と化す出版業界とAI生成作品を巡る混迷
+## 088_theguardian_com
 
-https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world
+**AIが文学界を震撼させる現状：「ワイルド・ウェスト」と化す出版業界とAI生成作品を巡る混迷**
 
-**Original Title**: ‘It’s like the wild west’: how AI has rocked the literary world | Books | The Guardian
-
-AIによる執筆が普及する中で、出版契約の解除や文学賞の剥奪といったスキャンダルが相次ぎ、人間による創造性の定義と著作権の境界線が揺らいでいる。
+出典: https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world
 
 本記事は、AIの台頭が出版業界に引き起こしている混乱を「ワイルド・ウェスト（無法地帯）」と表現し、その多角的な影響を詳報している。主な焦点は以下の通り。
 
@@ -857,21 +1065,41 @@ AIによる執筆が普及する中で、出版契約の解除や文学賞の剥
 
 ---
 
-## 語尾を直しても抜けないAIっぽさ。本当に変えるべきは文章の「骨格」でした。
+## 089_cloud_google_com
 
-https://note.com/shin_yoshimura/n/n2e2873a61087
+**GTIG AI脅威トラッカー：自律型（エージェンティック）脅威活動が重要な転換点を越える**
 
-AI生成文特有の違和感を解消するには、語尾の修正ではなく、画一的な「構成の骨格」を崩して独自の体験（出来事）を組み込むことが不可欠である。
+出典: https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold
+
+Google Threat Intelligence Group (GTIG)とMandiantによる最新レポートでは、AIを悪用したサイバー脅威の急速な進化が詳述されています。攻撃者は現在、ARTEXやCAIRNといった自律型マルチエージェント・フレームワークを運用し、脆弱性調査からエクスプロイトの兵器化、実行までを人手を介さず「マシン速度」で行っています。主なトレンドとして、パッチの差分分析によるnデー脆弱性の迅速な悪用、侵害したクラウド環境からAIリソースを盗用・転売する「LLMJacking」、そしてAI生成ペルソナによる高度な情報操作（IO）が挙げられます。これに対し、Googleはサイバーセキュリティ特化型モデル「Gemini 4 Carbon」の導入や、AIを活用した自律型防衛アーキテクチャ（AITD）を通じて、攻撃側の速度と規模に対抗する戦略を強化しています。現在、これらのAI攻撃ツールはステルス性よりも速度を優先する傾向にあり、防御側には検知の機会も残されていますが、今後のさらなる高度化が懸念されます。
+
+---
+
+## 090_kobesoft_co_jp
+
+**OpenVessel: ブラウザの中で動くNode.js対応の仮想マシン**
+
+出典: https://kobesoft.co.jp/oss/openvessel/
+
+神戸ソフトが開発したOpenVesselは、Node.js v26（v26.13.0）に対応したブラウザ内仮想マシンです。開発者のPCにNode.jsをインストールすることなく、URLを開くだけで`npm install`や`npm run dev`などの開発ワークフローを実行できます。技術的特徴として、Node.jsの内部JavaScript実装をそのまま利用し、内部バインディング層のみを再実装する手法を採用。ネイティブモジュールはWebAssembly版を活用し、Service Workerを介した仮想ポートによるプレビュー環境を提供します。オリジン分離によるセキュリティ確保や、他プロジェクトのコードを参照しないクリーンルーム方式の開発も特徴です。CMSへの組み込みや、環境構築不要のチュートリアル、プルリクエストのプレビュー環境構築など、幅広い用途が想定されています。
+
+---
+
+## 091_note_com
+
+**語尾を直しても抜けないAIっぽさ。本当に変えるべきは文章の「骨格」でした。**
+
+出典: https://note.com/shin_yoshimura/n/n2e2873a61087
 
 AIが書く文章に漂う「AIらしさ」の原因は、語彙の選択以上に、AIが得意とする「主張→理由→裏付け→提案」という予測可能な構成パターン（骨格）にあると著者は指摘する。どれだけ語尾を崩しても、この話す順番が変わらない限り、読み手には見透かされてしまう。この記事では、この「AI骨格」から脱却するための具体策として、冒頭に主張ではなく**「自分が見た具体的な出来事」**を置く手法を提案している。また、AIにいきなり執筆させるのではなく、まず段落ごとの役割を「主張・理由・提案・出来事」などで分析させ、あえて構成を組み替えさせるプロンプト術も紹介。ただし、報告や連絡など「答え」が重視される文章では、従来の効率的な構成を維持すべきという使い分けについても言及している。
 
 ---
 
-## AIバブル崩壊間近な現状、AIが人類を滅ぼせるわけねーだろ
+## 092_kei-1010_hatenablog_com
 
-https://kei-1010.hatenablog.com/entry/2026/11/16/120828
+**AIバブル崩壊間近な現状、AIが人類を滅ぼせるわけねーだろ**
 
-数学的・物理的な制約とNVIDIAの信用不安を根拠に、AIの自律的自己進化（RSI）による人類滅亡論を空論として否定し、AIバブルの崩壊を予測する。
+出典: https://kei-1010.hatenablog.com/entry/2026/11/16/120828
 
 本記事は、2026年11月という架空の未来視点から、AIの「完全自律の自己進化ループ」が数学的・物理的・社会的に不可能であることを詳述しています。著者は、自律MLOpsの決定不能性、継続学習におけるパラメータ空間の飽和、開いた世界での検証不可能性、そして半導体製造の物理的工期といった壁を挙げ、AIは「閉じた領域の便利なツール」に留まると断言します。
 
@@ -879,63 +1107,61 @@ https://kei-1010.hatenablog.com/entry/2026/11/16/120828
 
 ---
 
-## 専門家に使ってもらうAIプロダクトをつくる - 病院の医事課向けDPCコーディング支援システムの設計と評価
+## 094_speakerdeck_com
 
-https://speakerdeck.com/hagino3000/building-ai-product-for-expert
+**専門家に使ってもらうAIプロダクトをつくる - 病院の医事課向けDPCコーディング支援システムの設計と評価**
 
-Ubie社による、病院のDPCコーディング業務をAIで支援するシステムの設計思想と、専門家の判断を最大化するための実装・評価手法に関する解説。
+出典: https://speakerdeck.com/hagino3000/building-ai-product-for-expert
 
 本資料は、Ubie株式会社が開発した「ユビーDPCサポーター」の設計と評価に関する知見をまとめたものです。病院の複雑なDPCコーディング（診断群分類）業務において、AIがカルテ等の非構造データから情報を抽出し、ルールベースのロジックに渡す正規化パイプラインの重要性を説いています。専門家（医事課や診療情報管理士）が「探す・読む・照合する」作業から解放され、最終的な「判断」に集中できるUI/UXを目指す設計思想が示されています。性能評価面では、定量的評価に加えて、ドメインエキスパートである医師が定性的なエラー分析を行い、直接コード修正（ハーネス修正）を行う開発サイクルを構築することで、医療現場で求められる高い信頼性を担保する手法を紹介しています。
 
 ---
 
-## AIを活用したPerlのGo移植（テスト編）
+## 095_tech_mirrativ_stream
 
-https://tech.mirrativ.stream/entry/2026/11/17/100000
+**AIを活用したPerlのGo移植（テスト編）**
 
-ミラティブがClaude Codeを活用し、250個のPerl E2Eテストを約9.5週間でGoへ完全移植した際のマルチエージェント設計と知見蓄積プロセスを解説。
+出典: https://tech.mirrativ.stream/entry/2026/11/17/100000
 
 ミラティブ社のバックエンド基盤チームが、PerlからGoへの言語移行の一環として実施したE2Eテストの自動移植プロジェクトの事例紹介です。Claude Codeを活用し、250ファイルのテストを短期間で移植するために構築された「t2go」スキルの設計思想が詳しく述べられています。具体的には、計画・実装・テスト・レビュー・仕上げの5フェーズに分け、SonnetやOpusなどのモデルを役割に応じて使い分けるマルチエージェント構成を採用。また、AIが誤った因果関係をコメントに残す課題に対し、「知見ファイル（pitfalls.md等）」を自己更新させることで精度を向上させる「知見ループ」の仕組みが特徴的です。最終的に人手による確認を最小限に抑えつつ、既存テストの欠陥や形骸化したコードの発見にもつながったことが報告されています。
 
 ---
 
-## Orcaでショットガンフォーメーション開発【西部ワイルドガンマンズあり】
+## 096_zenn_dev
 
-https://zenn.dev/hidechannu/articles/20261115-orca-shotgun-parallel-worktrees
+**Orcaでショットガンフォーメーション開発【西部ワイルドガンマンズあり】**
 
-AIエージェントIDE「Orca」とgit worktreeを活用し、複数の開発タスクを並列にAIへ割り振る効率的なワークフローと独自スキル「orca-shotgun」の解説。
+出典: https://zenn.dev/hidechannu/articles/20261115-orca-shotgun-parallel-worktrees
 
 この記事では、複数のAIエージェントを並列で動かすための「Orca (agent IDE)」を活用した爆速開発手法が紹介されています。筆者は、アメフトのフォーメーションを模したClaude Code用スキル「orca-shotgun」を開発し、1つの依頼から複数のgit worktreeを自動生成して各エージェントにタスクを分散させる仕組みを構築しました。主な内容は以下の通りです。1. Orcaの特徴：git worktreeによる独立環境の確保と複数プロジェクトの一元管理。2. orca-shotgunスキルの役割：命名規則の統一、日本語表示名の設定、詳細な依頼文の自動生成。3. 運用ルール：AIに実装とレビュー（code-review/security-review）を完結させつつ、最終的なコミットとプッシュは人間が手動で確認して行うスタイル。並列開発を成功させる鍵は「タスクチケットの解像度」にあり、モデルの性能以上に何を作るかの定義が重要であると説いています。
 
 ---
 
-## おい、 Mutation Test をやれ。テスト品質を、測るために
+## 097_zenn_dev
 
-https://zenn.dev/mizchi/articles/mutation-test-quality
+**おい、 Mutation Test をやれ。テスト品質を、測るために**
 
-AIがコードを量産する時代において、単なるカバレッジでは測れない「テストコード自体の品質」を担保するためのミューテーションテストの重要性と、高速な新ツール @mizchi/mutator を紹介する記事。
+出典: https://zenn.dev/mizchi/articles/mutation-test-quality
 
 AIによるテスト生成が容易になった現代では、分岐カバレッジだけではテストが実際に正しく振る舞いを検証できているか（意味があるか）を判断できません。本記事では、コードを意図的に書き換えてテストが落ちるかを確認する「ミューテーションテスト」の有用性を説いています。特に、既存ツールStrykerJSの低速さを解消するために開発された、VitestおよびTypeScriptに最適化された高速ツール「@mizchi/mutator」を紹介。Gitの差分検知（--since HEAD）を利用して変更箇所のみを高速に検査する手法や、リファクタリングの指標としての運用方法について具体的に解説しています。
 
 ---
 
-## macOSにおけるデバイス制御、データアクセス、およびフルディスクアクセスの更新
+## 098_developer_apple_com
 
-https://developer.apple.com/news/?id=oqng0zjk
+**macOSにおけるデバイス制御、データアクセス、およびフルディスクアクセスの更新**
 
-**Original Title**: Updates to Device Control and Data Access, and Full Disk Access in macOS
-
-macOS 27.3において、ユーザーのプライバシー保護と透明性向上のため、フルディスクアクセスやデバイス制御に関する権限管理プロセスが大幅に刷新されます。
+出典: https://developer.apple.com/news/?id=oqng0zjk
 
 macOS 27.3 beta 2より、システム権限の透明性と制御性を高める新機能が導入されます。「デバイス制御とデータアクセス」設定は「システムとアプリ保護のオーバーライド」と「アクセシビリティ」の2つに分割され、ユーザーは特定のアプリやフォルダのみにアクセスを限定できるようになります。また、アクセスが必要な際、毎回ユーザーに確認を求める設定や、アプリが他のアプリを制御している際の透明性インジケーターも追加されます。既存の権限は維持されますが、ディスクバックアップや支援技術を開発するデベロッパは、新規インストール時に従来のUXを提供するための特定のエンタイトルメントの申請が必要になる可能性があります。開発者は、制限されたアクセス状況下でもアプリが適切に動作するよう、オンボーディングの調整が求められます。
 
 ---
 
-## 製造業のベテランにAIを教えて見えた、自走を分けるもの：現場と一緒に作るDX
+## 099_zenn_dev
 
-https://zenn.dev/factory_dx_eng/articles/ai-handson-veteran-autonomy
+**製造業のベテランにAIを教えて見えた、自走を分けるもの：現場と一緒に作るDX**
 
-製造業のベテラン層へのAI教育を通じ、自律的活用を阻む壁が「年齢」ではなく「ドメイン専門家の歩んできた歴史」と「自発的な試行の差」にあることを明らかにした実践記録。
+出典: https://zenn.dev/factory_dx_eng/articles/ai-handson-veteran-autonomy
 
 大手製造業の改善チームにおいて、ベテラン社員にClaude Code等のエージェント型AIを導入・教育した実録です。教育の結果、自走できる者と停滞する者の差は「ハンズオン以外の時間での試行錯誤」と「業務がPC外のシステムと繋がっているという認識」の有無に現れることが分かりました。
 
@@ -949,23 +1175,41 @@ AIを単なるツールとして教えるのではなく、ドメイン専門組
 
 ---
 
-## 危険コマンドを止める Claude Code hook を書いたのに、素通ししていた
+## 100_zenn_dev
 
-https://zenn.dev/minewo/articles/claude-code-hook-fail-open
+**危険コマンドを止める Claude Code hook を書いたのに、素通ししていた**
 
-Claude Codeのフックにおいて、コマンド抽出失敗時に「exit 0」を返すと危険なコマンドが実行されてしまう問題を解説し、安全なfail-closed実装への改善案を提示する。
+出典: https://zenn.dev/minewo/articles/claude-code-hook-fail-open
 
 Claude CodeのPreToolUseフックを用いて危険なコマンドをブロックする際、パースエラーやJSON構造の不一致によって「exit 0」を返してしまうと、本来止めるべきコマンドが素通し（fail-open）されるリスクを解説しています。Claude Codeの仕様上、終了コードが「2」の場合のみブロックされ、その他の非ゼロコードは非ブロッキングエラーとして処理が進む点に注意が必要です。記事では、JSONの階層（tool_input.command）への対応漏れやjq/nodeのパース失敗時の挙動を実測。対策として、抽出失敗時に明示的にexit 2を返すフラグ管理や、trap EXITを用いた異常終了の捕捉、さらに最新のonFailure: "block"設定の併用など、AIエージェントのガードレールを確実に機能させるための実装手法を詳しく紹介しています。
 
 ---
 
-## GR00T 2: 汎用性、器用さ、適応性を実現するロボット基盤モデルのスケーリング
+## 101_zenn_dev
 
-https://research.nvidia.com/labs/gear/gr00t-2/
+**Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？**
 
-**Original Title**: GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation
+出典: https://zenn.dev/microsoft/articles/ms-decision-1-1
 
-NVIDIAは、将来の映像と行動を同時に予測するWorld-Action Modelを採用し、人間や他ロボットのデータから未知のタスクへ高速に適応可能なロボット基盤モデル「GR00T 2」を発表した。
+Microsoft-Decision-1.1の一般提供（GA）開始を受け、従来モデル（1.0）との詳細な比較が行われました。主な更新点として、ベースモデルがGemma 4 26B A4B（MoE）に変更され、画像入力への対応と推論パフォーマンスの向上が謳われています。検証では、入力トークン数が増えるほど1.1の高速性が顕著になり、約30Kトークンの入力で有意な差が確認されました。また、精度面では正解率そのものよりもキャリブレーション（ECE）が大幅に改善されており、モデルが出力する確率の信頼性が高まっています。日本語ベンチマーク（JCoLA/JNLI/JSTS）を用いた検証や、画像入力による「芋煮」の判別テストも実施されており、実運用における移行のメリットと特性が技術的に分析されています。
+
+---
+
+## 102_zenn_dev
+
+**自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス**
+
+出典: https://zenn.dev/nttdata_tech/articles/9562962cc181a1
+
+本記事は、AIエージェントが自律的にタスクを遂行し、継続的に学習・改善されるための「ハーネス（実行基盤）」の設計思想と実装方法を詳説しています。筆者はプロンプトエンジニアリングの限界を指摘し、代わりに「構造化された置き場」を作る重要性を強調しています。具体的には、規約・台帳・文脈・記録・検査の5つの責務を分けたGitリポジトリ（_harness）を核とし、記憶を階層化することでエージェントが必要な文脈だけを効率的に参照できる仕組みを構築。また、SessionStart/EndなどのHooksを活用して記録の漏れを防ぎ、`harness-doctor`による自動検査で基盤の健全性を維持します。さらに、エージェントが自律的にチームを組み、共有ボードを介してタスクを並列処理する「自律実行ループ」の実践例（スライド作成の自動化など）も紹介されており、実務での高度なAIエージェント運用のための具体的なフレームワークを提供しています。
+
+---
+
+## 103_research_nvidia_com
+
+**GR00T 2: 汎用性、器用さ、適応性を実現するロボット基盤モデルのスケーリング**
+
+出典: https://research.nvidia.com/labs/gear/gr00t-2/
 
 NVIDIAの研究チーム「GEAR」が発表したGR00T 2は、ビデオ予測とロボットの行動決定を統合した「World-Action Model (WAM)」に基づく次世代のロボット基盤モデルです。このモデルは、将来の視覚情報がどう変化するかを予測しながら行動を生成するため、物理的な相互作用の理解が深く、多様なロボット形態（並行グリッパー、多指ハンド、ヒューマノイド）に対応します。
 
@@ -978,43 +1222,41 @@ NVIDIAの研究チーム「GEAR」が発表したGR00T 2は、ビデオ予測と
 
 ---
 
-## Gemini Notebookのソースを対話型サイトに変換可能に
+## 104_blog_google
 
-https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/
+**Gemini Notebookのソースを対話型サイトに変換可能に**
 
-**Original Title**: Turn Gemini Notebook sources into interactive sites
-
-Gemini Notebookの新機能により、蓄積した資料から「サイトを作って」と指示するだけで、図解やダッシュボードなどのインタラクティブなWebページを即座に生成できるようになりました。
+出典: https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/
 
 Googleは、Gemini Notebook（旧NotebookLM）において、複数の情報源を統合してインタラクティブなウェブサイトを自動作成する新機能を発表しました。ユーザーはチャット欄で「make me a site」と入力し、作成したい内容（例：試験対策のタイムライン、売上データのダッシュボード、プロジェクト管理用トラッカーなど）を記述するだけで、複雑な情報を視覚的に整理したサイトを数秒で構築できます。生成されたサイトは別タブで開き、他者と共有することも可能です。この機能は現在、Web版の全ユーザー（18歳以上）およびGoogle Workspaceサブスクライバー向けにグローバルで展開されており、モバイルアプリへの対応も近日中に予定されています。
 
 ---
 
-## ソフトウェアエンジニアの黄昏期をこう過ごそうと思う
+## 105_note_com
 
-https://note.com/wakabame/n/nc76b65a187bb
+**ソフトウェアエンジニアの黄昏期をこう過ごそうと思う**
 
-AIエージェントの台頭によるエンジニアの職能変化と、それに対するベテランエンジニアとしての生存戦略を提示する記事。
+出典: https://note.com/wakabame/n/nc76b65a187bb
 
 AIによる自動コーディングや自律的なIssue消化が可能になった現代において、ソフトウェアエンジニアが直面する危機感とその対策を考察した論考です。著者は、指示一本で仕様書からテストまで完結する現状を認めつつも、AIを適切に評価・指揮する能力は従来のエンジニア経験に比例すると分析しています。今後は「実装」そのものよりも、肥大化するプロジェクトの再ディレクションや、AIが持たない「こう作りたい」という人間の意思決定、そして普遍的なアーキテクチャ設計や数学的素養への注力が重要になると主張しています。AIを使いこなすことを「面倒ではない出世」と捉え、変化を前向きに受け入れる姿勢が示されています。
 
 ---
 
-## Agent Optimizerを使ってHosted Agentを最適化する
+## 106_acro-engineer_hatenablog_com
 
-https://acro-engineer.hatenablog.com/entry/2026/11/18/120000
+**Agent Optimizerを使ってHosted Agentを最適化する**
 
-Microsoft Azure AI FoundryのAgent Optimizerを使用し、評価データに基づいてAIエージェントのプロンプトやツール定義を自動最適化するプロセスとその効果を検証した技術解説。
+出典: https://acro-engineer.hatenablog.com/entry/2026/11/18/120000
 
 Microsoft Azure AI Foundryの新機能「Agent Optimizer」を用いて、Hosted Agentのパフォーマンスを自動改善する手法を解説しています。Agent Optimizerは、プロンプト、スキルの説明、ツール定義、使用モデルを評価結果に基づき反復的に書き換える機能です。本記事では、Cosmos DBを照会する在庫管理エージェントを対象に、最適化用データと独自の評価器（tool_callsの実行結果まで採点するカスタムプロンプト評価器）を構築し、最適化を実行しています。結果として、スコアが0.561から0.800に向上し、「倉庫名からIDを特定してから照会する」といった高度な振る舞いが自動生成されました。一方で、特定データへの過剰適合（オーバーフィッティング）や、曖昧な問いに対する聞き返しが減るなどの副作用も報告されており、生成された候補をデプロイする前に人間による内容の検証が必要であると強調されています。
 
 ---
 
-## 「非公開APIだから安全」はもう通用しない　AIが変える脆弱性発見の常識
+## 107_atmarkit_itmedia_co_jp
 
-https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news009.html
+**「非公開APIだから安全」はもう通用しない　AIが変える脆弱性発見の常識**
 
-AIを活用した解析技術の向上により、非公開APIの秘匿性に頼る防御は限界を迎え、A2B攻撃や激増するCVEへの戦略的な対応が急務となっている。
+出典: https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news009.html
 
 AIの進化により、モバイルアプリからバックエンドサーバを狙う「A2B攻撃（App-to-Backend Attack）」の脅威が増大しています。これまで「非公開API」として秘匿されていた仕様も、AIによるコード解析や通信分析によって容易に露呈する時代となりました。
 
@@ -1024,101 +1266,194 @@ AIの進化により、モバイルアプリからバックエンドサーバを
 
 ---
 
-## 認知負荷の減らし方 ～開発にも日常業務にも活かせるノウハウ～
+## 108_blog_google
 
-https://speakerdeck.com/minorun365/2026-11-lab-datsubotorunekku-ningen
+**Geminiが「タスク実行」に対応：スケジューリングから支払い、買い物まで自動化**
 
-AIが出力する大量の情報による人間の判断の遅れを解消するため、HTML化や差分表示の工夫、レビュー対象のシフトを通じて認知負荷を劇的に下げる実践的な手法を解説しています。
+出典: https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/
+
+Geminiが単なるチャットボットから、実社会のタスクを代行するパーソナルアシスタントへと進化しました。新モデル「Gemini 4 Hydrogen」を搭載し、Googleの各種サービス（マップ、カレンダー、パスワードマネージャー等）や外部アプリと連携します。具体的には、ディーラーへの予約電話の代行、請求書の分析による節電のアドバイス、Agent Payments Protocol (AP2)を用いたセキュアな決済、メール転送によるカレンダー登録などが可能です。セキュリティ面では、Google Cloudの「Agent Compute Engine」を活用し、ユーザーごとにハードウェア的に隔離された仮想マシン上で処理を行うことで、プライバシー保護を徹底しています。米国や日本を含む地域で無料のロールアウトが開始されています。
+
+---
+
+## 109_cnn_co_jp
+
+**ケンブリッジ辞典、2026年の単語に「人間」を選出――AI時代の境界線を象徴**
+
+出典: https://www.cnn.co.jp/fringe/35255056.html
+
+英ケンブリッジ大学出版局は、2026年の「今年の単語」に「human（人間）」を選んだと発表した。AIの進化によって人間と機械の境界が曖昧になる中、人間特有の性質や感情、欠点を持つ存在としての再定義が世界的な論議となったことが背景にある。辞書編集者は、「human-made（人間が作った）」という言葉の普及に象徴されるように、AIと人間を区別しようとする関心が高まったと指摘している。また、SNSで若年層を中心に広まった「aura farming」や「looksmaxxing」といった新語も併せて紹介されており、現代社会の価値観の変化を浮き彫りにしている。
+
+---
+
+## 110_speakerdeck_com
+
+**認知負荷の減らし方 ～開発にも日常業務にも活かせるノウハウ～**
+
+出典: https://speakerdeck.com/minorun365/2026-11-lab-datsubotorunekku-ningen
 
 AIとの共働が日常化する中で、最大のボトルネックとなった「人間の判断待ち」を解消するためのワークフローが提示されています。主な施策として、長文報告をチャット欄ではなく専用のHTMLサイト（HTML共有くん）へ出力させることで可読性を高め、判断すべきポイントをハイライトや選択肢形式で提示させる工夫が紹介されています。また、開発においてはコードを1行ずつ追うレビューから脱却し、実装前の技術選定と実装後のAIによるE2Eテストに注力する「重心の移動」を提唱しています。これらはCLAUDE.md等の設定ファイルに蓄積し、同じ指摘を繰り返さないよう自動検査化することで、AIを単なるツールから自律的な秘書へと進化させる具体的なノウハウが凝縮されています。
 
 ---
 
-## Museに「僕と“家の鍵”を交換してザウルス開発者になってよ」と頼んでみた
+## 111_type_jp
 
-https://pc.watch.impress.co.jp/docs/topic/feature/2157654.html
+**AIが見つけた脆弱性を人間が「攻撃」に変える。Pwn2Own世界一のハッカーに聞く、日本勢初優勝の舞台裏**
 
-MetaのAI「Muse」をTailscaleとSSHで自宅のレトロハード（ザウルスやJetson Nano）に接続し、自律的なソフトウェア開発や現代化を行わせる実験レポート。
+出典: https://type.jp/et/feature/32190/
+
+世界的なハッキングコンテスト「Pwn2Own」にて、日本勢として初めて総合優勝「Master of Pwn」を獲得したIkotas Labs代表・辻知希氏へのインタビュー。AIの進化により、個別の脆弱性を大量に発見することは容易になったが、それらを複雑に「連鎖（チェーン）」させて実効性のある攻撃シナリオを構築するには、依然として人間の高度な知識と直感が必要であると指摘する。
+
+具体例として、Oracleのサーバー攻略において7つの脆弱性を組み合わせた手法や、OpenAI Codexの攻略時に大会直前のUIアップデート（警告画面の追加）を回避したエピソードが語られている。また、日本の多くの企業は単一の脆弱性で侵入を許す脆弱な状態にあり、防御側も攻撃者の視点を持つ「オフェンシブセキュリティ」の考え方が不可欠であると説く。
+
+---
+
+## 112_blog_google
+
+**Gemini 4 Neonの発表**
+
+出典: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/
+
+Google DeepMindは、Gemini 4ファミリーの最新モデル「Gemini 4 Neon」を公開しました。このモデルは、最高峰の知能を持つCarbonと日常的な実行に長けたHydrogenの中間に位置し、高度な推論を必要とする複雑なタスクを高速かつ低コストで処理するように設計されています。100万トークンのコンテキストウィンドウを備え、特にエージェントによるコーディング、科学的推論、サイバーセキュリティの防衛能力において業界トップクラスのベンチマーク結果を記録しています。また、独自の「Thinking Level（思考レベル）」を4段階で調整可能で、開発者はタスクの難易度に応じて知能とコストのバランスを最適化できます。Google AI StudioやGoogle Cloudを通じて、すでに提供が開始されています。
+
+---
+
+## 113_pc_watch_impress_co_jp
+
+**Museに「僕と“家の鍵”を交換してザウルス開発者になってよ」と頼んでみた**
+
+出典: https://pc.watch.impress.co.jp/docs/topic/feature/2157654.html
 
 MetaのパーソナルAI「Muse」をクラウド環境からローカルへ「鍵交換（SSH+Tailscale）」によって招き入れ、旧世代ハードウェアを現代化する試みの記録。2005年発売の「Linuxザウルス」でのシンセサイザー開発や、2019年の「Jetson Nano」への最新LLM（LFM2.5-230M）の移植に成功した。Museの強みである親しみやすさと自律性を活かしつつ、高度な最適化には「Claude Code」を併用する「AIの使い分け」という新たな開発スタイルを提示している。AIの力によって、枯れたハードウェア資産に再び命を吹き込む「コンピュータ考古学」の可能性を示唆する内容となっている。
 
 ---
 
-## ChatGPTで毎月もらえる100ドル分以上のAPIクレジットを使い切ろう!
+## 114_github_com
 
-https://www.watch.impress.co.jp/docs/topic/2155622.html
+**Bitwarden Agent Access: AIエージェントへ安全に資格情報を提供するためのオープンプロトコル**
 
-ChatGPT Proプラン等の特典として毎月付与される、繰り越し不可なAPIクレジットを有効活用するためのリモートデバッグ自動化手法を解説。
+出典: https://github.com/bitwarden/agent-access
+
+Bitwardenは、AIエージェントやリモートシステムがパスワードマネージャー内の資格情報を安全に利用できるようにするための「Agent Access」を公開しました。本プロジェクトは、オープンプロトコル、CLIツール（aac）、およびSDK（Rust, Python, JS/WASM）で構成されています。Noiseプロトコルを用いたエンドツーエンド暗号化トンネルを構築することで、資格情報プロバイダーとエージェント間をセキュアに接続します。
+
+主な特徴は以下の通りです：
+1. **最小権限の原則**: Vault全体を露出させるのではなく、特定のアイテムへのアクセスのみを許可するペアリングトークンを使用します。
+2. **秘密情報の保護**: `aac run`コマンドを使用することで、資格情報を環境変数として子プロセスに直接注入できます。これにより、標準出力やディスク、LLMのプロンプト履歴に秘密情報が残るリスクを低減します。
+3. **拡張性**: Bitwardenチームによって開発されましたが、他の資格情報プロバイダーも対応可能なオープンな仕様となっています。
+
+現在は早期プレビュー段階であり、AIが自律的にツールを操作する際のセキュリティ課題を解決する手段として注目されます。
+
+---
+
+## 115_agilejourney_uzabase_com
+
+**AIでスクラムは不要になる？──ベロシティ消失からチームの存在意義まで【LayerX × ユーザベース】**
+
+出典: https://agilejourney.uzabase.com/entry/2026/11/19/103000
+
+AIエージェントの進化に伴い、従来のスクラム開発の前提が崩れつつあります。LayerXではAIによる開発の高速化で「ベロシティ」が機能しなくなり、非同期かつAI主導のスタイルへ移行する一方で、ユーザベースはXP（エクストリーム・プログラミング）の同期的な価値を保ちつつAIを統合する道を模索しています。対談では、AIがコードを書く時代におけるエンジニアの価値は、コードの量ではなく「設計の抽象化」「アウトカムの定義」「判断に対する説明責任（アカウンタビリティ）」に移行していることが強調されました。また、開発チームは単なる実装者の集まりから、職種横断でプロダクト価値を追求する形態へと再定義され、アジャイルの本質である「変化への適応」がより重要になると結論づけられています。
+
+---
+
+## 116_watch_impress_co_jp
+
+**ChatGPTで毎月もらえる100ドル分以上のAPIクレジットを使い切ろう!**
+
+出典: https://www.watch.impress.co.jp/docs/topic/2155622.html
 
 2026年10月末からChatGPTの有料プラン（Pro/Business）向けに開始された、最大500ドル分のAPIクレジット付与制度と、その活用方法を詳しく紹介しています。このクレジットは翌月への繰り越しができないため、筆者は「Codex App Server」と、マウス・キーボード操作を自動化するMCPツール「Cua Driver」を組み合わせた、WindowsとmacOSにまたがるリモートデバッグの自動化環境を構築。最新のGPT-6.1モデルを用いた自動テストによって、個人開発の工数を大幅に削減しつつ、1日約7ドルのクレジットを効率的に消費する実践的なフローを提案しています。利用にはWeb版の設定画面から「組織をリンク」する申請手続きが必須となる点にも注意を促しています。
 
 ---
 
-## 生成AIで個人の生産性を高めても、なぜ会社の売上は増えないのか
+## 117_comemo_nikkei_com
 
-https://comemo.nikkei.com/n/nb6e629d1a85c
+**生成AIで個人の生産性を高めても、なぜ会社の売上は増えないのか**
 
-個人の作業効率化が組織の利益に直結しない理由をエリヤフ・ゴールドラットの「ボトルネック理論」から解き明かし、生成AIを全体最適の視点で活用する重要性を説く。
+出典: https://comemo.nikkei.com/n/nb6e629d1a85c
 
 生成AIの普及により個人のタスク実行速度やアウトプット量は劇的に向上したものの、それが企業の売上や利益向上に結びついていない現状を指摘しています。著者は、名著『ザ・ゴール』に登場するボトルネック理論を引用し、一部の工程（個人）がAIで高速化されても、後続の確認・承認プロセスや需要とのミスマッチといった「ボトルネック」が解消されない限り、組織全体の生産性（スループット）は向上しないと論じています。「速くて大量」は単なる効率化であり、会社の目標達成に近づく「生産性」とは別物であるという視点から、ツール導入にとどまらない組織全体の設計見直しの必要性を強調しています。
 
 ---
 
-## Google「TPU v3」の実物ボードを展示、時代を彩った半導体チップが一堂に集結　EdgeTech+ 2026
+## 118_news_mynavi_jp
 
-https://news.mynavi.jp/techplus/article/20261119-5354744/
+**Google「TPU v3」の実物ボードを展示、時代を彩った半導体チップが一堂に集結　EdgeTech+ 2026**
 
-パシフィコ横浜で開催された「EdgeTech+ 2026」にて、Google寄贈のTPU v3実物基板や世界初のCPUであるIntel 4004など、歴代の半導体を展示する「チップミュージアム mini☆」が公開された。
+出典: https://news.mynavi.jp/techplus/article/20261119-5354744/
 
 「EdgeTech+ 2026」の会場内で、半導体の歴史を実物チップで辿る恒例の展示「チップミュージアム mini☆」が開設されました。今回の目玉はGoogleから寄贈されたAIアクセラレータ「TPU v3」の実装ボードです。通常はデータセンターのラックに格納されているため、4基のTPUチップやHBM、電源回路が剥き出しになったボードを間近で見られる機会は極めて貴重です。また、1971年のIntel 4004から、歴代のPentiumシリーズ、AMD K6、Cyrixの互換チップなど、今日のコンピューティングの礎となった歴史的プロセッサ群も一堂に展示されており、半導体技術の進化を物理的に体感できる構成となっています。
 
 ---
 
-## 教師のためのAI入門
+## 119_yamazato_nuee_nagoya-u_ac_jp
 
-https://yamazato.nuee.nagoya-u.ac.jp/PDF/AI-for-Teachers-an-Open-Textbook-v1.0.0.pdf
+**教師のためのAI入門**
 
-AIの基礎から教育現場での具体的な活用法、倫理的な課題までを網羅し、教師がAIを理解し主体的にコントロールするためのリテラシーを養うオープン教科書。
+出典: https://yamazato.nuee.nagoya-u.ac.jp/PDF/AI-for-Teachers-an-Open-Textbook-v1.0.0.pdf
 
 本書は、欧州のErasmus+プロジェクト「AI4T」の成果として作成された、教師向けの包括的なAI学習ガイドです。AIが教育に与える影響を正しく理解し、教室で効果的に活用するための知識を提供することを目的としています。内容は全8パートで構成され、機械学習の仕組みや検索エンジンのアルゴリズムといった技術的基礎から、学習管理システム（LMS）における学習分析、パーソナライズされた学習支援、そして最新の生成AI（ChatGPT等）の教育的活用まで、理論と実践の両面から解説しています。特に、AIによるバイアスやプライバシー問題、倫理的懸念についても深く掘り下げており、技術に振り回されるのではなく、教師が「ループ内」に留まり主体性を持ってAIを使いこなす「人間拡張」の考え方を重視しています。名古屋大学の有志によって翻訳された日本語版は、日本の教育現場におけるAI議論の確かな基盤となる一冊です。
 
 ---
 
-## AIモデルとAIエージェントをつなぐ「APIルーター」の危険性：428件の調査で判明した乗っ取りと情報漏えいの実態
+## 120_complexdiscovery_com
 
-https://www.itmedia.co.jp/news/article/2611/19/2000003310/
+**ハーバード大の研究者がAIコーディング・エージェントによるボトルネックのコードレビューへの転換を指摘**
 
-AIエージェントとLLMを中継する「APIルーター」を調査した結果、一部のサービスが認証情報の窃取やAIの命令書き換えを行っている実態が明らかになった。
+出典: https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/
+
+ハーバード大学の博士候補生Fiona Chen氏とJames Stratton氏が発表したワーキングペーパーによると、AIコーディングエージェントを導入した企業ではコード生成量が約30%増加した一方で、最終的に完了した「出荷済み」の仕事量は増加しなかった。調査は718社、約72万人の開発者を対象とした大規模なもので、生産性の停滞が「コードレビュー」工程に起因していることを特定した。
+
+データによれば、プルリクエスト提出からマージまでの時間は49%増加し、修正依頼の割合は13%からほぼ倍増した。AIが生成するコードの品質が不透明であるため、シニアエンジニアによる厳格なチェックが必要となり、結果としてレビュープロセスが飽和状態に陥っている。この「AIによる下書きと人間によるチェック」という構造は、HarveyやCooleyが開発するリーガルAIツールにも共通しており、AI導入を検討する企業はアウトプットの速さだけでなく、レビュー段階に要する時間や修正率を指標に含めるべきだと論じている。
+
+---
+
+## 121_itmedia_co_jp
+
+**AIモデルとAIエージェントをつなぐ「APIルーター」の危険性：428件の調査で判明した乗っ取りと情報漏えいの実態**
+
+出典: https://www.itmedia.co.jp/news/article/2611/19/2000003310/
 
 米カリフォルニア大学サンタバーバラ校（UCSB）などの研究チームは、AIエージェントとLLMプロバイダー（OpenAIやAnthropic等）を仲介するサードパーティ製サービス「APIルーター」428件を調査した研究報告を発表した。APIルーターは利便性が高い一方で、中継地点で通信の暗号化（TLS）が解除されるため、運営者が認証情報やAIの指示内容を自由に閲覧・改ざんできる脆弱性がある。調査の結果、有料・無料を問わず一部のルーターで、APIキーやAWSアクセスキー、暗号資産の秘密鍵を盗む「シークレット窃取」や、AIが生成したコマンドをウイルス入りURLや偽パッケージ名に書き換える「ペイロード注入」などの悪質な行為が確認された。現在の主要なAI APIには改ざんを防ぐデジタル署名が欠如しており、信頼できない中間者を経由するリスクは極めて高いと警鐘を鳴らしている。
 
 ---
 
-## 128GBメモリで120BクラスのLLMが動く！ マウスコンピューターの卓上ローカルAI向けミニPC「DAIV CX」の実力
+## 122_itmedia_co_jp
 
-https://www.itmedia.co.jp/pcuser/articles/2611/19/news047.html
+**128GBメモリで120BクラスのLLMが動く！ マウスコンピューターの卓上ローカルAI向けミニPC「DAIV CX」の実力**
 
-AMD Ryzen AI Max+ 395と128GBメモリを搭載し、卓上で120Bクラスの大規模言語モデルを動かせるマウスコンピューターのローカルAI向けミニPC「DAIV CX」の実力を紹介。
+出典: https://www.itmedia.co.jp/pcuser/articles/2611/19/news047.html
 
 マウスコンピューターの「DAIV CX-A9A60」は、ローカル環境での大規模言語モデル（LLM）実行に特化したミニPCです。AMDのRyzen AI Max+ 395（Zen 5/16コア）を搭載し、特筆すべき点としてオンボード実装のLPDDR5X-8000メモリを128GB備えています。この構成により、統合GPU（内蔵GPU）でありながらシステム共有で最大約96GBのビデオメモリを確保可能で、これまでコンシューマー向けdGPU（外付けGPU）では困難だった120Bクラスの巨大なLLMの動作を、省スペースかつ実用的なコストで実現します。ディスクリートGPUと比較した転送速度の制約はあるものの、メモリ容量がボトルネックとなる大規模モデルの推論において、新たなハードウェアの選択肢を提示しています。
 
 ---
 
-## pstack 完全ガイド ─AIエージェントに雑なコード を書かせない技術─
+## 123_zenn_dev
 
-https://zenn.dev/karamage/books/50c18e52e7d19e
+**pstack 完全ガイド ─AIエージェントに雑なコード を書かせない技術─**
 
-AIエージェントに品質の高いコードを書かせるためのフレームワーク「pstack」の概念、スキル、原則を体系的に解説した実践ガイド。
+出典: https://zenn.dev/karamage/books/50c18e52e7d19e
 
 元Reactコアチームのエンジニアpoteto（Lauren Tan）氏が提唱するAIエージェント活用術「pstack」を網羅的に解説した一冊です。AIエージェントが生成するコードの品質担保と自律性の向上に焦点を当て、「証拠がなければ完了と認めない」「書いた本人に採点させない」といった検証重視の設計思想を解説しています。本書では22のプレイブック、34のスキル、24の原則を体系化し、CursorやClaude Codeでの実践方法を具体的に提示。寝ている間に検証済みのプルリクエストを作成させるワークフローの構築など、AIを単なる補完ツールから信頼できる開発パートナーへと進化させるための実践的な知見が、約5.6万字のボリュームで詳述されています。初心者の入門から中上級者の運用見直しまで幅広く対応した内容です。
 
 ---
 
-## OpenAI モデルによるチップ設計の進化
+## 124_gihyo_jp
 
-https://openai.com/index/advancing-chip-design-with-our-models/
+**ソフトウェアダークファクトリー ─⁠─AIエージェント時代の設計・実装・運用ハーネス**
 
-OpenAIは、GPT-6.2 Astraなどの次世代モデルが独自チップJalapeñoやAMD製プロセッサのRTL設計において専門家レベルの最適化を達成し、PPAを劇的に改善したことを発表しました。
+出典: https://gihyo.jp/book/2026/978-4-297-16073-9
+
+本書は、AIコーディングの普及に伴う「あいまいな仕様」や「壊れやすい運用」といったリスクを、設計の力で制御するための実践的ガイドです。「ダークファクトリー（無人工場）」の概念をソフトウェア開発に転用し、人間がコードを直接書くのではなく、AIが動くためのガードレールを構築する「メタエンジニアリング」の手法を詳説します。
+
+主な内容は、DDD（ドメイン駆動設計）、型システム、形式手法（Alloy等）、SREなどの古典的・現代的工学手法を「AIを制御する仕組み」として再定義することにあります。具体的には、MVVや戦略を判断基準としてリポジトリに管理する方法、要件を形式言語で検査する手法、関数型コアによるドメインモデルの保護、仮想環境でのAIエージェントによる探索的テスト、そしてオブザーバビリティに基づく自動修復までを網羅しています。プロンプトエンジニアリングに留まらない、AI時代のシニアエンジニアに求められる「意図と構造の設計」に焦点を当てた一冊です。
+
+---
+
+## 125_openai_com
+
+**OpenAI モデルによるチップ設計の進化**
+
+出典: https://openai.com/index/advancing-chip-design-with-our-models/
 
 OpenAIは、AIモデルを活用して半導体設計を加速させる最新の成果を公開しました。主な実績として、自社の推論チップ「Jalapeño」においてベクトル演算ユニットの面積を約13%、行列ユニットを約10%削減。また、AMDとの提携によりフラッグシップGPUのIPで最大14%のPPA（電力・性能・面積）改善を実現し、通常1年かかる進化を5ヶ月未満で達成しました。
 
@@ -1126,31 +1461,31 @@ OpenAIは、AIモデルを活用して半導体設計を加速させる最新の
 
 ---
 
-## AIっぽい日本語を直すスキル yomiyasu-mini を Microsoft Copilot の色々なところで使ってみた
+## 126_qiita_com
 
-https://qiita.com/Oyu3m/items/8efff0925c0994dda6ee
+**AIっぽい日本語を直すスキル yomiyasu-mini を Microsoft Copilot の色々なところで使ってみた**
 
-Microsoft 365 Copilotの制約に対応した軽量版推敲ツール「yomiyasu-mini」を用い、Agent BuilderやPowerPoint等で不自然なAI文章を修正する手法の検証記録。
+出典: https://qiita.com/Oyu3m/items/8efff0925c0994dda6ee
 
 生成AIが作成した「AI特有の不自然な日本語」を自然な表現に修正するツール「yomiyasu」の軽量版である「yomiyasu-mini」を、Microsoft 365 Copilotの各種環境で検証した記事です。Agent Builderでのエージェント内スキルとしての利用、PowerPoint Copilotへのカスタムスキル追加、Copilot Coworkへのスキル登録という3つのシナリオにおいて、ファイルサイズや指示文の制限をクリアしながら正常に動作することを確認しています。AIによる下書きを人間にとって読みやすい品質へ効率的に洗練させるための具体的な導入手順と活用法が紹介されています。
 
 ---
 
-## Gemini Decisions による動画の判定
+## 127_qiita_com
 
-https://qiita.com/kataoka_se_sionic/items/6bd2eb0b767b6e10fe6a
+**Gemini Decisions による動画の判定**
 
-Geminiの新機能「Decisions API」を用い、動画から料理の作業手順や道具の使用状況を自動判定する精度とコストを検証した技術レポート。
+出典: https://qiita.com/kataoka_se_sionic/items/6bd2eb0b767b6e10fe6a
 
 Googleが発表した意思決定特化型モデル「Gemini Decisions」を活用し、動画データを入力として特定の作業ミスを検出する実験をまとめています。CaptainCook4Dデータセットの調理動画を用い、マグケーキ作りの工程で「泡立て器」と「スプーン」のどちらを使用しているかを高い精度で識別できることを確認。また、複数項目の同時判定（道具の種類と生地の滑らかさ）や、入力トークン量に基づく具体的なコスト試算（1動画あたり数円程度）、実行速度についても検証しています。JevやOpenAI Decisionsとの比較を交えつつ、実務での手順確認や品質管理への応用可能性を提示する内容となっています。
 
 ---
 
-## AIも「一晩寝かせる」と考えがまとまる：Anthropicの「Dreaming」メカニズムとClaude Codeによる追実装
+## 128_qiita_com
 
-https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa
+**AIも「一晩寝かせる」と考えがまとまる：Anthropicの「Dreaming」メカニズムとClaude Codeによる追実装**
 
-AIエージェントが夜間にログを振り返り、記憶の修正や情報の構造化（Wiki化）を行うことで回答精度と効率を高める手法「Dreaming」の解説と検証。
+出典: https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa
 
 Anthropicが提唱する「Dreaming」は、人間の睡眠中の記憶整理に似たプロセスをAIエージェントに導入する手法です。日中の作業ログを夜間に見返し、誤った情報の修正やWikiへの整理を行うことで、長期的な記憶の精度を向上させます。
 
@@ -1163,63 +1498,101 @@ Anthropicが提唱する「Dreaming」は、人間の睡眠中の記憶整理に
 
 ---
 
-## AIに役割を持たせたワークフローを、使うたびに直していたら、止まらなくなった話
+## 129_qiita_com
 
-https://qiita.com/Masato_Iwasaki/items/db76e7388cece3cff66e
+**AIに役割を持たせたワークフローを、使うたびに直していたら、止まらなくなった話**
 
-AIにDirector、Implementer、Reviewerの役割を与え、GitとMarkdownベースの開発ワークフローを構築・改善し、自動化と品質を両立させた試行錯誤の記録。
+出典: https://qiita.com/Masato_Iwasaki/items/db76e7388cece3cff66e
 
 AIに実装だけでなく開発プロセス全体を任せるため、明確な役割分担（ディレクター、実装、レビュー）を定義した独自の開発ワークフローの進化を詳述しています。承認の形骸化を防ぐために「何を承認し、何を承認していないか」を明示するダッシュボードの導入や、テンプレート管理におけるプロジェクト固有設定と共通ロジックの分離、さらにClaude Codeのサブエージェント機能を活用した高度な自動化を実現しました。AI同士のループ防止策として差し戻し回数に上限を設け、重要な判断が必要な際のみ人間に差し戻すガードレールを構築することで、開発効率と品質の底上げを同時に狙っています。
 
 ---
 
-## 人間がボトルネックになった時代のAIエージェント設計
+## 130_qiita_com
 
-https://qiita.com/Syoitu/items/5bb47c01a8513e52d1b5
+**人間がボトルネックになった時代のAIエージェント設計**
 
-AIエージェントの進化により人間の注意力がボトルネック化する中、自律性と生産性を高めるための5つの「スーパーエージェント」設計パターンを提唱している。
+出典: https://qiita.com/Syoitu/items/5bb47c01a8513e52d1b5
 
 AIモデルの高性能化に伴い、AIエージェントは自律的にタスクをこなせるようになったが、複数のエージェントを管理・監視する人間の認知負荷が新たな課題となっている。本記事では、この「人間のボトルネック」を解消するためにDeepSeek Harnessチームが提唱する「スーパーエージェント（Super-agent）」の設計思想を5つのパターンで体系化している。具体的には、受付と作業を分ける2階層アーキテクチャ、イベント駆動による能動的な動作、非同期処理による会話の継続、計算・状態・環境の分離、そして外部からの生存・目的監視（ウォッチドッグ）が挙げられる。TypeScriptフレームワーク「Mastra」を用いた実装例も紹介されており、エージェントを単なる道具から、自律して並行作業を行う「同僚」へと進化させるための実践的なアプローチを提示している。
 
 ---
 
-## AIトークノミクスは観測から始めよう - AIコーディングのコスト・無駄・成果を測る
+## 131_qiita_com
 
-https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a
+**GPT-6.2 Astra vs Fable 5.2で3Dモデル生成対決！**
 
-New Relicが提供するOSS「Preflight」を活用し、AIコーディングにおけるトークンコストや作業の無駄、成果の種類を定量的に可視化・管理する手法を解説した記事。
+出典: https://qiita.com/7mpy/items/6a9ce87b576063f68d71
+
+この記事では、GPT-6.2 AstraとFable 5.2という2つの次世代AIモデルを使用して、3Dモデル生成の比較検証を行っています。具体的には、デジタルツイン、パトカー、消防車などのオブジェクトを生成し、CodePenを用いてその成果物を公開しています。従来の3D生成専用ツールであるTripoやMeshyを代替し得るクオリティに達しており、将来的にはAIのみで広大なゲームの世界観（日本版GTA6のような）を構築できる可能性を示唆しています。非常にシンプルなワークフローで街づくりやアセット制作が可能になる未来の展望が語られています。
+
+---
+
+## 132_qiita_com
+
+**AIトークノミクスは観測から始めよう - AIコーディングのコスト・無駄・成果を測る**
+
+出典: https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a
 
 AIコーディングのコスト増大に伴い、ROI（投資対効果）の最適化を目指す「AIトークノミクス」という考え方が重要視されています。本記事では、New RelicがOSSとして提供する観測ツール「Preflight」を紹介しています。PreflightはClaude CodeなどのAIエージェントと連携し、単なるトークン消費量だけでなく、同じファイルの繰り返し読み込みといった「アンチパターン」による無駄や、バグ修正・機能追加・ドキュメント作成といった「成果の分類」を自動で行います。これにより、AI利用の効率性をスコア化し、組織レベルでAI活用の価値を定量的に判断・改善できる環境構築が可能になります。
 
 ---
 
-## Claude Desktop 開発のすゝめ
+## 133_zenn_dev
 
-https://zenn.dev/peoplex_blog/articles/vscode-to-claude-desktop
+**フロントエンドの logic と UI は、エージェントの責任範囲で分けられるのか**
 
-PeopleXのエンジニアが、VS CodeからClaude Desktopへ完全に移行して5〜10件のセッションを並行で回す、AI主導の最新開発フローと活用術を紹介。
+出典: https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd
+
+京都芸術大学のクロステック・マネジメントによる、AIエージェント開発基盤「エージェントハーネス」での実践レポートです。当初、設計からPR作成までを一括で行う構成でしたが、実行時間の増大と部分的な改善の困難さから、工程の分離を模索。特にフロントエンドにおいて、OpenAPI等の「契約」に基づきモックで単体テスト可能な『logic』と、実際の画面描画や操作を担う『UI』に分離する手法を提案しています。この分離により、バックエンドとの並走や特定モデルの最適化が可能になる一方、E2Eテストのロケーター修正の責任境界、logicとUI間の契約（hookの型等）の自動生成、そして現代的なReactの書き方（Server Components等）との乖離といった、実用化に向けた複数の課題が浮き彫りになっています。
+
+---
+
+## 134_zenn_dev
+
+**OpenTelemetryとCloudflareでClaude Codeの利用ログを収集する仕組みの構築**
+
+出典: https://zenn.dev/gemcook/articles/claude-code-otel-cloudflare
+
+Claude Codeの組織導入に伴い、利用状況を詳細に把握するためのログ収集基盤の構築手順を解説しています。従来のCLIツール（ccusage）と比較し、管理の手間を省くためにOpenTelemetry（OTLP）を採用。Cloudflare WorkersをHTTP/JSONの受け口として利用し、収集した生データをR2へ保存するシンプルな構成を提案しています。また、Claudeの「server-managed settings」機能を用いて、各メンバーの端末設定を中央管理する方法や、取得可能なデータ項目（ユーザー、モデル、トークン数、推定コストなど）についても詳述されています。
+
+---
+
+## 135_zenn_dev
+
+**Claude Desktop 開発のすゝめ**
+
+出典: https://zenn.dev/peoplex_blog/articles/vscode-to-claude-desktop
 
 PeopleX所属のエンジニアによる、VS Codeを離れClaude DesktopのCodeタブへ開発環境を完全移行した実践記録です。主な利点として、自作ツールなしで5〜10件の並行セッションを視覚的に管理できるUI、親セッションがエピックを把握し子セッションにタスクを振る「nested sessions」による高度な自動化を挙げています。セッションレールでのPR/CI監視、Auto-fix機能、内蔵ブラウザやiOSシミュレーターによる自動検証など、開発の全工程をClaude内で完結させる仕組みを詳説。また、トークン効率を最大化するための「1日単位でのセッション・アーカイブ」や、CLAUDE.md/メモリ機能を用いた知識継承など、AIエージェントと協調するための現実的な運用ノウハウも網羅されています。
 
 ---
 
-## QA効率化におけるAI活用事例
+## 136_zenn_dev
 
-https://zenn.dev/applibot_tech/articles/6b8ec8d196634b
+**エージェントの自律性を上げると、何が得られて何を失うか —— 助言・承認付き実行・自律実行を実測する**
 
-アプリボットによる、仕様差分検知、不具合予測、データ静的チェックの3事例を通じた、AIとプログラムの最適な役割分担によるQA効率化の実践記録。
+出典: https://zenn.dev/enterprise_ai/articles/1b1f34af88fb8f
+
+AIエージェントの導入における自律性のレベル（Gartnerの「比例的ガバナンス」に基づく）を、Claude CodeとStrands Harnessを用いて実測検証したレポートです。実験の結果、人の承認やモデルによる審査（autoモード）は「ファイルの削除」などの破壊的操作を阻止するのに有効ですが、もっともらしい「誤った方針（エラーコードの変更など）」の採用は、審査役がいても自律実行時と同等に発生することが判明しました。また、承認プロセスを導入するとClaude Codeが複数の編集をまとめるようになり、ターン数が減少してコストが約2割下がるという副次的な振る舞いの変化も観測されています。一方で、1タスクあたりの承認にかかる読み取り負荷は1,000字を超え、1日10タスクで35〜50分相当に達することから、形骸化した承認は自律実行とリスクが変わらないと警告しています。自律性を高める実戦的なポイントとして、操作の審査は仕組みに任せ、人はエージェントの報告内容と判断の根拠を確認する役割を担うべきであると結論づけています。
+
+---
+
+## 137_zenn_dev
+
+**QA効率化におけるAI活用事例**
+
+出典: https://zenn.dev/applibot_tech/articles/6b8ec8d196634b
 
 スマートフォンゲーム開発におけるQA工程を効率化するため、AIを活用した3つの取り組みを詳説しています。1つ目は「仕様書と実装の差分チェック」で、プログラムによる事前フィルタリングでAIに渡すトークン量を1/10に削減しつつ、識別子の正規化や「判定不能」ステータスの導入で誤検知を抑制。2つ目の「不具合起票数の予測」では、統計モデルを主軸に、AIをデータの突合や予測乖離の理由分析に活用し、職種別の不具合発生傾向を可視化。3つ目の「静的チェック」では、10万行近いテストケースとマスターデータの自動照合によりQA工数を3割削減しました。共通して「AIに全てを任せない」「プログラムで検算する」「再現性が必要な処理はAIを避ける」という、コストと信頼性を両立する設計思想が強調されています。
 
 ---
 
-## メンテナーが必要としているのはAIによるバグ報告ではなく「修正案」である
+## 138_github_blog
 
-https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/
+**メンテナーが必要としているのはAIによるバグ報告ではなく「修正案」である**
 
-**Original Title**: Maintainers don't need more AI bug reports. They need fixes. - The GitHub Blog
-
-GitHubとMicrosoftは、AIによる脆弱性検知に人間による検証と修正案の作成を組み合わせ、オープンソース開発者の負担を軽減する「Codename MDASH」の試験運用結果を公開しました。
+出典: https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/
 
 昨今、AIによる脆弱性スキャンが容易になった一方で、誤検知や重複を含む大量の報告がオープンソース（OSS）メンテナーの負担となっています。GitHubとMicrosoftはこの問題に対し、修正案までセットで提供するマルチモデル・エージェンシー・スキャニング・ハーネス「Codename MDASH」を開発・試行しました。
 
@@ -1233,13 +1606,21 @@ GitHubとMicrosoftは、AIによる脆弱性検知に人間による検証と修
 
 ---
 
-## Vercelによる、プロダクション対応エージェント構築のためのオープンソースフレームワーク「eve 1.0」の正式リリース
+## 139_github_blog
 
-https://vercel.com/blog/eve-is-now-generally-available
+**Agent Host Protocol (AHP) の構築：デバイスを跨いで継続するエージェント・セッションの実現**
 
-**Original Title**: Introducing eve 1.0
+出典: https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/
 
-Vercelは、耐久性のあるワークフロー、マルチプレイヤー機能、主要Webフレームワークとの統合を備えた、実用的なAIエージェント開発のためのオープンソースフレームワーク「eve 1.0」を発表しました。
+GitHubは、AIエージェントとの対話を特定のクライアントやデバイスの制約から解放するため、新しいオープンな通信規格「Agent Host Protocol (AHP)」を開発しました。これまでのGitHub CopilotはVS Codeなどの各エディタに密結合していましたが、AHPの導入により、例えば外出先でモバイルから開始したエージェントのタスクを、オフィスに到着後にPCのVS Codeでそのまま引き継ぐことが可能になります。設計面では、URIで識別される「チャネル」構造とリデューサーベースの状態管理を採用しており、不安定なネットワーク環境での再接続や、複数クライアントからの同時操作に強い耐性を持たせています。すでにTypeScriptとRustによるホスト実装が存在し、多くの言語向けにライブラリが提供されているため、開発者は自身のツールやアプリケーションにこのプロトコルを組み込み、高度なAI連携を実現できます。
+
+---
+
+## 140_vercel_com
+
+**Vercelによる、プロダクション対応エージェント構築のためのオープンソースフレームワーク「eve 1.0」の正式リリース**
+
+出典: https://vercel.com/blog/eve-is-now-generally-available
 
 Vercelは、プロダクション環境での利用に耐えうるAIエージェントを構築するためのオープンソースフレームワーク「eve 1.0」を正式リリースしました。2024年6月のパブリックプレビュー以来、多くのフィードバックを反映し、一般提供（GA）が開始されました。
 
@@ -1253,11 +1634,11 @@ Vercelは、プロダクション環境での利用に耐えうるAIエージェ
 
 ---
 
-## 【AI × UIデザイン】組織のスピード感と再現性が変わる　AI前提のUI/UXデザイン基盤の作り方（ウェビナーレポート）
+## 141_goodpatch_com
 
-https://goodpatch.com/blog/2026-11-ai-ui-webinar
+**【AI × UIデザイン】組織のスピード感と再現性が変わる　AI前提のUI/UXデザイン基盤の作り方（ウェビナーレポート）**
 
-AIをデザインの主体と捉え、組織全体の制作スピードと品質を担保するための新たなデザイン基盤「デザインハーネス」の構築手法を解説するレポート。
+出典: https://goodpatch.com/blog/2026-11-ai-ui-webinar
 
 生成AIの普及に伴い、デザイン領域でもROIの向上が求められています。本記事では、グッドパッチが提唱する「デザインハーネス」という概念を中心に、AI時代のデザイン基盤のあり方を提示しています。従来の人間中心の基盤から「AIが読み取れる（AIフレンドリーな）環境」への転換が必要であり、具体的には以下の4つの層で構成されます。
 
@@ -1270,13 +1651,11 @@ AIをデザインの主体と捉え、組織全体の制作スピードと品質
 
 ---
 
-## AIがどこでも動く時代、なぜ私たちは「監視」のために出社するのか？
+## 142_uxdesign_cc
 
-https://uxdesign.cc/if-ai-works-from-anywhere-why-are-we-commuting-to-watch-it-f903012aaa86
+**AIがどこでも動く時代、なぜ私たちは「監視」のために出社するのか？**
 
-**Original Title**: If AI works from anywhere, why are we commuting to watch it?
-
-AIが実制作（プロダクション）を自動化する時代において、オフィスの真の価値は「作業の場」から、偶発的な対話や徒弟制度的な指導を通じた「判断力と文化の継承」へとシフトすべきである。
+出典: https://uxdesign.cc/if-ai-works-from-anywhere-why-are-we-commuting-to-watch-it-f903012aaa86
 
 AIエージェントがコードの記述やUIの作成といった「実制作」を肩代わりするようになり、物理的な場所で作業を行う必然性は消失しました。それにもかかわらず、多くの企業が強制的な出社（RTO）を命じている現状に対し、著者は鋭い疑問を投げかけます。現在のオフィスは、ヘッドホンをして一人で黙々とAIをプロンプトする人々で溢れており、これは「高いコストをかけた孤独な作業」に過ぎません。
 
@@ -1286,25 +1665,21 @@ AIエージェントがコードの記述やUIの作成といった「実制作�
 
 ---
 
-## 大規模なテキスト匿名化：AirbnbがAI学習における個人データを保護する方法
+## 143_medium_com
 
-https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0
+**大規模なテキスト匿名化：AirbnbがAI学習における個人データを保護する方法**
 
-**Original Title**: De-identifying text at scale: How Airbnb protects personal data in AI training
-
-Airbnbは、AIモデルの学習データに含まれる個人情報（PII）を保護するため、オープンソースのPresidioを拡張し、現実的なダミーデータへの置換を大規模に行うテキスト匿名化システムを構築した。
+出典: https://medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0
 
 Airbnbのテックブログによる、大規模なテキストデータの匿名化手法の紹介。Microsoftが開発したOSS「Presidio」を基盤に採用し、Airbnb独自の要件に合わせて拡張している。システムは、個人情報（PII）の検出を担う「Analyzer」と、置換を行う「Anonymizer」の2段構成。検出精度向上のため、従来の正規表現やspaCyに加え、ゼロショットNERモデルのGLiNERを導入し、住所や人名の特定能力を高めている。置換処理では、単純なマスキングではなく`faker`ライブラリを用いて現実的な偽データに置き換えることで、ダウンストリームのAIモデルの学習効率を維持している。さらに、同一実行内での一貫性を保つシード管理や、Airbnb特有のリスティングID等への対応も行われており、これらのプロセスは社内のMLオーケストレーターに統合され、匿名化が完了していないデータのデプロイを制限するガードレールとして機能している。
 
 ---
 
-## Polypane 32：自動化、WebMCPパネル、投機的ルールのインサイト、そしてChromium 160
+## 144_polypane_app
 
-https://polypane.app/blog/polypane-32-automation-webmcp-panel-speculation-rule-insights-and-chromium-160/
+**Polypane 32：自動化、WebMCPパネル、投機的ルールのインサイト、そしてChromium 160**
 
-**Original Title**: Polypane 32: Automation, WebMCP panel, speculation rule insights and Chromium 160 | Polypane
-
-Polypane 32は、AIエージェントによるブラウザ自動操作(MCP対応)やWebMCPパネルの追加、投機的ルールの可視化など、AI時代の開発ワークフローを強力に支援するアップデートです。
+出典: https://polypane.app/blog/polypane-32-automation-webmcp-panel-speculation-rule-insights-and-chromium-160/
 
 Web開発者向けブラウザPolypaneのバージョン32がリリースされました。今回の最大の目玉は「Polypane Automation」で、Model Context Protocol (MCP) を通じてClaude CodeやCursorなどのAIエージェントがPolypaneを直接操作し、アクセシビリティ監査や要素の修正を行えるようになりました。
 
@@ -1319,57 +1694,71 @@ Web開発者向けブラウザPolypaneのバージョン32がリリースされ�
 
 ---
 
-## エージェント時代におけるセキュアなモバイルアプリ構築 (2026年)
+## 145_shopify_engineering
 
-https://shopify.engineering/secure-agentic-apps
+**エージェント時代におけるセキュアなモバイルアプリ構築 (2026年)**
 
-**Original Title**: Building secure mobile apps in the agentic era (2026) - Shopify
-
-AIエージェントにより開発速度が11倍に加速したShopifyが、アタックサーフェスマップとAIスキルを活用してセキュリティをスケーラブルに担保する新しい手法を公開。
+出典: https://shopify.engineering/secure-agentic-apps
 
 Shopifyは、AIエージェントの導入により週あたりのコード変更量が前年比11倍（約43.4万行）に急増した事態を受け、従来の人間によるレビューを補完する新たなセキュリティ戦略を導入しました。この戦略の核となるのは、アプリ内のDeep LinkやWebView、保存データなどをカタログ化する「アタックサーフェスマップ」の構築です。OWASP基準や過去のインシデントから得た知見をAIが実行可能な「スキル」として定義し、各変更点を特定かつ詳細なコンテキストでレビューすることで、精度の高い脆弱性検知を実現しています。また、毎日AIモデルが差分を評価し、外部のセキュリティニュースもエージェントが監視して自動でブリーフィングを作成するなど、エージェント主導の開発ペースに合わせた高度なセキュリティ運用を実証しています。
 
 ---
 
-## DrupalのAI機能はどこまで使える？いま知っておきたい「できること」と「まだ早いこと」
+## 146_mitsue_co_jp
 
-https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/19_1158.html
+**ベータ版PC-Talkerに追加されたAI機能**
 
-2026年時点のDrupalにおけるAI機能の活用例と、開発途上ゆえのセキュリティリスク、承認フローの重要性、コスト見積もりの勘所を解説した記事。
+出典: https://www.mitsue.co.jp/knowledge/blog/a11y/202611/19_1139.html
+
+高知システム開発が提供するスクリーンリーダー「PC-Talker Neo」の最新ベータ版（2026年11月4日リリース）に、AIを活用した2つの新機能が追加されました。1つ目は「画像説明の読み上げ」で、GoogleのGeminiを利用して図解の意図や写真の構成を詳細に言語化します。2つ目は「画面のUIコントロール抽出」で、通常の操作では認識が困難なアプリやWeb上のボタン・入力項目をAIが特定し、一覧から選択して操作可能にするものです。従来、iOSやAndroidの標準機能として普及していたAIアクセシビリティ機能が、日本のデスクトップ環境でも標準的に統合され始めた象徴的なアップデートとなっています。利用には規約同意が必要で、月間の利用制限や機密情報送信への注意が促されています。
+
+---
+
+## 147_mitsue_co_jp
+
+**DrupalのAI機能はどこまで使える？いま知っておきたい「できること」と「まだ早いこと」**
+
+出典: https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/19_1158.html
 
 2026年11月時点におけるDrupalのAI機能の現状をまとめたガイドです。公式デモに基づく活用例として、コンポーネントを組み合わせたページ作成、文章の校正・タイトル提案、自然言語によるサイト内検索、多言語翻訳、画像代替テキストの自動生成などが紹介されています。Drupalの強みである詳細な承認ワークフロー（下書き、レビュー、公開）にAIの作業を組み込む手法を推奨する一方で、多くのAI関連モジュールがまだ安定版（Stable）ではなく、セキュリティチームの脆弱性告知対象外であるリスクに警鐘を鳴らしています。導入にあたっては、外部AIのAPI利用料、ベクトルデータベースのコスト、保守体制、データの機械学習利用の有無などを慎重に確認する必要があるとしています。
 
 ---
 
-## AIに「モダンなコードの書き方」を教えるModern Web Guidance
+## 148_mitsue_co_jp
 
-https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/18_1039.html
+**AIに「モダンなコードの書き方」を教えるModern Web Guidance**
 
-Googleが公開した「Modern Web Guidance」は、AIエージェントに最新のWeb標準を学習させ、レガシーな実装パターンの出力を防ぐためのツールキットです。
+出典: https://www.mitsue.co.jp/knowledge/blog/x-tech/202611/18_1039.html
 
 AI駆動開発において、エージェントが過去の学習データに基づき古いHTML/CSS/JSを提案する問題を解決するため、Googleが「Modern Web Guidance」を公開しました。これはClaude CodeなどのAIエージェントに追加できる「AIスキル」であり、約200本のモダンな実装ガイドが含まれています。主な機能として、最適なガイドを検索する`search`、ドキュメントを読み込む`retrieve`、そしてプロジェクト内の古いコードを検知する`legacy-scan`コマンドを提供します。記事では具体例として、JavaScriptでの座標計算が必要だった「モーダル外側クリックでの閉じる処理」を、最新の`&lt;dialog closedby="any"&gt;`属性へ移行し、未対応ブラウザ向け（Baseline基準）のフォールバックを自動生成する流れを解説しています。AIにブラウザサポートの要件を伝えることで、プロジェクトに応じた最適なモダン化が可能です。
 
 ---
 
-## デザインライティング：AIエージェントとの協働 — Automattic Design
+## 149_automattic_design
 
-https://automattic.design/2026/11/16/design-writing-working-with-ai-agents/
+**デザインライティング：AIエージェントとの協働 — Automattic Design**
 
-**Original Title**: Design Writing: Working with AI Agents
-
-Automatticのデザインチームが、AI特有の不自然な文章（AI slop）を回避し、UXライティングの品質とブランドの一貫性を保つための「エージェント・スキル」と実装手法を公開。
+出典: https://automattic.design/2026/11/16/design-writing-working-with-ai-agents/
 
 Automatticは、AI生成テキストに見られる特定の語彙（「delve」など）や難解な文章構造、冗長な表現がユーザーの信頼を損なう「AI slop」問題に対処するため、2つのエージェント用スキルを開発しました。UIコピー用の「agentic-ux-copy」と音声スクリプト用の「voiceover-scriptwriting」は、単なる指示の羅列ではなく、決定論的なリンター（禁止ワード集）や、AIが勝手に推測せず人間に質問を投げかける「ask instead of assume」のワークフローを組み込んでいます。また、スタイルガイドを抽象的な文書のままにするのではなく、エージェントが実行可能なコードや具体的なブランドファイルとして実装することで、実務への適用率を劇的に向上させています。研究データに基づき、AIの癖を人間が制御・メンテナンスするための実用的なアプローチが提示されています。
 
 ---
 
-## BirdDreams: 精密な自車制御とリアクティブな交通流を生成する走行世界モデル
+## 150_human-md_ai
 
-https://research.nvidia.com/labs/sil/projects/birddreams/
+**HUMAN.md — AI時代を生きるクリエイターのための実戦的マニフェスト**
 
-**Original Title**: BirdDreams: A driving world model with precise ego control and traffic that can react
+出典: https://www.human-md.ai/
 
-単一のカメラ画像からパースペクティブ映像と鳥瞰図を同時生成し、自車の軌道に応じた周囲車両の反応までシミュレーション可能な新しい自動運転世界モデル。
+デザイナーのBriana Mayによる、AI時代の創作活動における「人間の役割」を再定義するマニフェスト。AIが高度化する中で、人間が果たすべき真の価値は、単なるスキルの習得ではなく「感性（Taste）」というエンジンにあると主張している。主な提言として、AIが生成する「平均」という床を越えるために意図的にルールを破ること、ネット上の検索結果ではなく現実の奇妙な体験からインスピレーションを得ること、そして出力結果の責任をAIではなく自分自身で負う「鋭さ（Sharpness）」を持つことを挙げている。AIは単なる道具ではなく「増幅器」であり、対話（ループ）を通じて自分のビジョンを研ぎ澄ますプロセスが重要であると説く。最終的に、評論家になることを拒み、不完全でも作り手（Builder）であり続ける姿勢を重視する、クリエイターへの力強いエールとなっている。
+
+---
+
+## 151_research_nvidia_com
+
+**BirdDreams: 精密な自車制御とリアクティブな交通流を生成する走行世界モデル**
+
+出典: https://research.nvidia.com/labs/sil/projects/birddreams/
 
 NVIDIAとKAISTの研究チームによって開発された「BirdDreams」は、自動運転のための革新的な自己回帰型世界モデルです。従来の手法とは異なり、周囲車両の将来の軌道を入力することなく、パースペクティブ映像（RGB）と鳥瞰図（BEV）を同時に予測します。これにより、自車の急な割り込みに対して周囲の車が車線を変更して回避するといった「リアクティブ（反応的）な振る舞い」を生成できます。
 
@@ -1377,59 +1766,94 @@ NVIDIAとKAISTの研究チームによって開発された「BirdDreams」は�
 
 ---
 
-## トークン・スーパーサイクル：あらゆる価値がプログラマブルになる時代
+## 152_solana_com
 
-https://solana.com/news/the-token-supercycle-oped
+**トークン・スーパーサイクル：あらゆる価値がプログラマブルになる時代**
 
-**Original Title**: The Token Supercycle: Everything of Value is Becoming Programmable
-
-資産のトークン化とAI、インフラの進化が融合し、あらゆる価値が24時間稼働のインターネット資本市場へと移行する「トークン・スーパーサイクル」の全貌を解説する。
+出典: https://solana.com/news/the-token-supercycle-oped
 
 Solana FoundationのLily Liu氏による、金融システムの構造的変革に関する論説。資産のトークン化が、発行・投資・流通の3側面から市場を再編し、地理的・時間的制約のない「インターネット資本市場」を構築すると予測している。主な推進力として、ステーブルコインの普及、金融機関の参入、ブロックチェーンの高速化、そして自律的に決済を行う「AI経済主体」の登場を挙げている。これは単なる一時的なブームではなく、インターネットが情報のコストを下げたように、トークン化が資本の流動性を極限まで高め、誰もが資産を所有し活用できる「ユニバーサル・ベーシック・オナーシップ」を実現するプロセスであると強調している。現在はまだ初期段階だが、グローバルな流動性がオンライン化する流れは不可避であり、既存の境界を超えた新たな資本市場が構築されつつある。
 
 ---
 
-## 2026年 AI検索・エージェント対応状況調査：/llms.txt、/agents.md、WAFブロック等の実態
+## 153_verisource_dev
 
-https://verisource.dev/benchmarks/ai-search-readiness-2026
+**2026年 AI検索・エージェント対応状況調査：/llms.txt、/agents.md、WAFブロック等の実態**
 
-**Original Title**: 2026 AI Search & Agent Readiness Study (/llms.txt, /agents.md, GPTBot WAF & JSON-LD) | Verisource
-
-2026年11月時点のWebサイトにおけるAI検索・エージェント対応状況を、/llms.txtや/agents.md、JSON-LDなどの導入率から分析した実証調査結果。
+出典: https://verisource.dev/benchmarks/ai-search-readiness-2026
 
 2026年11月に実施された40〜500のドメインを対象とした調査により、WebサイトのAI対応（AI Readiness）における深刻なギャップが明らかになりました。B2B SaaSやShopify、SEO代理店など多岐にわたるドメインを調査した結果、50%がカスタムの/llms.txtを公開している一方で、AIエージェントの行動を制御する/agents.mdをカスタマイズしているサイトはわずか5%にとどまっています。 主な技術的知見は以下の通りです： **1. サイレント・ブロックの存在**: 調査対象の5%は、robots.txtで許可しているにもかかわらず、WAF層でGPTBotなどのクローラーを遮断しています。 **2. スキーマの不足**: 82.5%がJSON-LDを実装していますが、AI検索で重要な回答データとなるFAQPageスキーマの導入率は7.5%と極めて低いです。 **3. プラットフォーム間の格差**: ShopifyなどのネイティブCMS利用サイト（平均スコア76.5）に対し、ヘッドレス構成のサイト（平均42.8）はAI対応において大きな「ペナルティ」を受けている実働が浮き彫りになりました。AI検索エンジンやエージェントが情報の真実性を判断するためのプロトコル整備が、今後のWeb戦略において重要になると指摘されています。
 
 ---
 
-## GPT-6.2 Astra と Sol のご紹介
+## 154_claude_dev
 
-https://openai.com/ja-JP/index/introducing-gpt-6-2-astra-sol/
+**クロード・コード開発チームにおけるコード検証の考え方：エージェントによる品質担保の裏側**
 
-OpenAIが次世代モデル「GPT-6.2 Astra」および「GPT-6.1 Sol」を含むGPT-6シリーズのラインナップを発表しました。
+出典: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/
+
+Claude Codeの開発チームでは、コードの約90%がClaude自身によって作成・レビューされています。この規模で品質を維持するためには、エージェントが「証拠」に基づいて自律的に検証を行うループが不可欠です。本記事では、特に投資価値が高い3つのテスト手法（E2Eテスト、プロパティテスト、デファレンシャルテスト）を解説しています。E2Eテストはシミュレータやブラウザを操作する「verify」スキルを通じて実行され、プロパティテストは人間が見落としがちなエッジケースを特定します。また、検証システム自体の健全性を保つため、「変更内容が自分を評価するテストコードを修正できないようにする」といった厳格なルールや、3回連続で失敗した場合は人間にエスカレーションする仕組み、過去のインシデントに基づく39項目の信頼性チェックリストの運用など、AIネイティブな開発ワークフローの具体像が示されています。
+
+---
+
+## 156_openai_com
+
+**GPT-6.2 Astra と Sol のご紹介**
+
+出典: https://openai.com/ja-JP/index/introducing-gpt-6-2-astra-sol/
 
 OpenAIは、最新のAIモデルとなる「GPT-6.2 Astra」と「GPT-6.1 Sol」を研究ポートフォリオに追加しました。これらの新モデルは、安全性、信頼性、および透明性の向上を主軸に設計されており、ChatGPTの法人・教育向けプランやAPIプラットフォームを通じて提供される予定です。また、開発者向けのリソースや経済研究、セキュリティ・プライバシー保護の強化も同時に図られており、広範なエコシステムの構築を目指しています。
 
 ---
 
-## イスラエルによるWikipediaへの攻撃（AIへの影響を目的としたもの）：レポートを読む - Tech for Palestine
+## 157_microsoft_ai
 
-https://techforpalestine.org/wikipedia-report-2026
+**MAI Code 2 および Code 2 Flash：スケーラブルな価格で日常的なコーディングを実現する新モデル**
 
-**Original Title**: Israel is Attacking Wikipedia (to influence AI): Read the report - Tech for Palestine
+出典: https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/
 
-イスラエル支持団体がWikipediaの情報を操作することで、将来のAIモデルが生成する言説をコントロールしようとしていると告発する詳細な調査レポート。
+Microsoft AIが発表した「MAI Code 2」および「MAI Code 2 Flash」は、エンタープライズにおける日常的なコーディングタスク（デバッグ、マルチファイル実装、UI開発など）に最適化されたモデルです。科学研究や超長期間のエージェント業務をあえてターゲットから外すことで、圧倒的なコストパフォーマンスを実現しました。
+
+主な特徴は以下の通りです：
+- **高い費用対効果:** MAI Code 2はGPT-6.1 Solの約98%の性能を40%のコストで提供。FlashモデルはClaude Haiku 5.5の20%のコストで同等のパフォーマンスを発揮します。
+- **フロントエンド開発の優位性:** 視覚的なコーディングに強く、ブラインドテストでは開発者の64%がGPT-6 SolよりもMAI Code 2の生成結果を好みました。
+- **Microsoft製品への統合:** Excel、Word、Teamsなどのバックエンドとして最適化された「MAI Work Flash」が導入され、トークン効率の向上と高精度なタスク処理を両立しています。
+- **展開先:** GitHub Copilotで即座に利用可能で、今後はOpenRouterやVercel、Hermesなど主要なプラットフォームでも提供予定です。
+
+---
+
+## 158_techforpalestine_org
+
+**イスラエルによるWikipediaへの攻撃（AIへの影響を目的としたもの）：レポートを読む - Tech for Palestine**
+
+出典: https://techforpalestine.org/wikipedia-report-2026
 
 Tech for Palestineは、イスラエル支持派のロビー団体（ADLやAIPAC等）がWikipediaの編集内容を組織的に操作し、AI学習データの根幹をなす情報を自国に有利なものに書き換えようとしていると警告する224ページの報告書を公開した。報告書は、ADLが発表した「Wikipedia内の反ユダヤ主義」に関する調査を、捏造された証拠と偏った解釈に基づくプロパガンダであると批判。また、イスラエル支持のテック億万長者らが関与する「Builders for Tomorrow」などの組織が、匿名編集者の監視やドクシング（個人情報の特定・晒し）を行っている実態を指摘している。結論として、Wikimedia財団に対し、米政府やロビー団体からの圧力を避けるための米国外への移転、およびガバナンスの透明性確保を強く求めている。
 
 ---
 
-## TencentがHy4 flashを発表：圧倒的なコスト効率を実現した日常の生産性向上向けLLM
+## 159_newsletter_posthog_com
 
-https://hy.tencent.ai/research/hy4-flash
+**全てにLLMが必要なわけではない：意思決定モデル（Decision Models）の活用術**
 
-**Original Title**: Introducing Hy4 flash: Ultimate cost-efficiency for everyday productivity
+出典: https://newsletter.posthog.com/p/decision-models
 
-Tencentが発表したHy4 flashは、224BのMoEアーキテクチャを採用し、極めて低いAPI価格と高い推論速度を両立させながら、実務タスクにおいて高い生産性を発揮するオープンウェイトモデルです。
+PostHogでは、LLMの冗長性や高コストを避けるため、確率に基づいた構造化データを返す「意思決定モデル（Decision Models）」を積極的に活用しています。記事では、意思決定モデルがLLMより最大444倍安価で193倍高速であることを示し、具体的な4つのユースケースを紹介しています。
+
+1. **LLM呼び出しのゲート**: 個人情報（PII）のスクラビングなどにおいて、まず意思決定モデルで判定を行い、必要な場合のみ高価なLLMへ渡すことで、98.7%のLLM呼び出しを削減。
+2. **モデルルーター**: タスクの難易度に応じて、最も安価なモデルを選択する仕組み。
+3. **フェースバリュー（額面）チェック**: 検索結果の再ランキングなど、複雑な推論を必要としない平坦なデータ判定への適用。
+4. **過剰なLLMの代替**: 決定論的なルール（Regex等）では限界があるが、LLMを使うほどではない曖昧なタスク（SQL結果からのチャート選定など）への活用。
+
+注意点として、しきい値の設定（偽陽性と偽陰性の許容コストに基づく調整）の重要性や、多段階推論には依然としてLLMが適していることが強調されています。
+
+---
+
+## 160_hy_tencent_ai
+
+**TencentがHy4 flashを発表：圧倒的なコスト効率を実現した日常の生産性向上向けLLM**
+
+出典: https://hy.tencent.ai/research/hy4-flash
 
 Tencentは、同社の中で最もコスト効率に優れた最新AIモデル「Hy4 flash」を発表しました。このモデルは総パラメータ数224B（アクティブ12B）のMoEアーキテクチャを採用しており、100万トークンのコンテキストウィンドウとネイティブなマルチモーダル機能を備えています。
 
@@ -1443,13 +1867,11 @@ Tencentは、同社の中で最もコスト効率に優れた最新AIモデル�
 
 ---
 
-## GoogleのAI概要（AI Overviews）がウェブサイトへのクリック数を40%減少させている実態
+## 161_revscope_co
 
-https://revscope.co/blog/search-seo-geo-2026/
+**GoogleのAI概要（AI Overviews）がウェブサイトへのクリック数を40%減少させている実態**
 
-**Original Title**: Google's AI Overviews cut clicks to websites by 40%
-
-GoogleのAI Overviews（AI概要）の普及により、検索結果から外部サイトへのクリック数が約40%減少しており、SEOからGEO（生成エンジン最適化）への適応が急務となっている。
+出典: https://revscope.co/blog/search-seo-geo-2026/
 
 ## 概要
 複数の研究機関とデータ分析（DataForSEO、SISTRIX、大学の研究者ら）による最新の調査結果から、Googleの「AI Overviews（AI概要）」がウェブサイトのトラフィックに与える破壊的な影響が明らかになりました。ランダム化比較試験によると、AI概要が表示されることで、外部サイトへのクリック数は約40%減少し、クリックが発生しない検索セッションが大幅に増加しています。
@@ -1464,13 +1886,11 @@ AIアシスタントからの直接的な流入は全トラフィックの0.3%�
 
 ---
 
-## AI時代のエンジニアリング指標：アウトプットから価値創出のループを加速させる
+## 162_octopus_com
 
-https://octopus.com/blog/engineering-vitals-in-the-age-of-ai
+**AI時代のエンジニアリング指標：アウトプットから価値創出のループを加速させる**
 
-**Original Title**: Engineering Vitals In The Age Of AI
-
-AIによる開発の高速化に伴い、従来のDORAメトリクスの限界を指摘し、アウトプットの量、品質、デリバリー速度を軸とした新しいエンジニアリング指標のあり方を提唱する。
+出典: https://octopus.com/blog/engineering-vitals-in-the-age-of-ai
 
 AIの導入によりソフトウェア開発の「アウトプット」が爆発的に増加する中、Octopus DeployのCTOであるAndrew Best氏は、エンジニアリング組織が測定すべき真の指標（バイタル）について再定義しています。氏は「アウトカム（成果）はアウトプットの継続的なデリバリーによって実現される」とし、AIがもたらす変化を「価値発見ループ」の加速と捉えています。
 
@@ -1480,25 +1900,31 @@ AIの導入によりソフトウェア開発の「アウトプット」が爆発
 
 ---
 
-## Gemini 4 Carbonはなぜこれほど時間がかかるのか？：ベンチマークによる要因分析
+## 163_kernel_dev
 
-https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/
+**Gemini 4 Carbonはなぜこれほど時間がかかるのか？：ベンチマークによる要因分析**
 
-**Original Title**: Why is Gemini 4 Carbon taking so long?
-
-Gemini 4 Carbonが競合に比べ大幅に遅い理由を調査し、推論速度だけでなく過剰な監査作業やツールの非効率な利用が主な原因であることを特定した。
+出典: https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/
 
 コーディングエージェントとしてのGemini 4 Carbonが、GPT-6 AstraやClaude Opusと比較して数倍から十数倍の実行時間を要する問題をKernelが分析。調査の結果、原因は大きく3点に集約される。第一に「推論の遅延」で、1ステップあたりの生成速度等が差の約16-30%を説明する。第二に「過剰な作業」で、修正に不要なコードの監査や既知の事実の再確認にステップの半分を費やしている。第三に「機械的非効率」で、1ステップあたりのツール呼び出し数が少なく、既読コードの再読（39%）が頻発している。チェックインの注入により時間が短縮されたことから、知識不足ではなく、報酬系に起因する「過剰に念入りな行動特性」がボトルネックである可能性が高い。
 
 ---
 
-## Claudeは大規模なタンパク質配列でトレーニングされていた
+## 164_science_caseyhandmer_com
 
-https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/
+**理論天体物理学の全領域をAIで監査：15万本の論文から発見された「修正されない誤り」の連鎖**
 
-**Original Title**: Claude was trained on protein sequences at scale
+出典: https://science.caseyhandmer.com/physics/
 
-最新のClaudeモデル（Fable 5.2やOpus 5.5）が、他の主要LLMとは対照的に、大規模なタンパク質配列を学習しており、専門のタンパク質言語モデルに匹敵、あるいは凌駕する予測能力を持つことを実証した。 
+カリフォルニア工科大学の元研究者Casey Handmer氏が、大規模言語モデル（LLM）を活用して理論天体物理学という一つの学問分野全体を「監査」した驚異的なプロジェクト。158,059本の論文と554,670件の引用関係をマッピングし、主要な論文の数式をAIに再計算させた結果、査読で見過ごされた重大な誤りが多数発見された。分析によれば、査読がエラーを除去できる割合はわずか5分の1程度であり、残された誤りの約半数は、出版から8年経ってもなお正しいものとしてコピーされ、引用され続けている。このプロジェクトは、科学の「自己修正機能」が極めて限定的である現実をデータで示し、AIが科学文献の信頼性を担保するための強力なツールになり得ることを証明している。コストはわずか数千ドルのAPI利用料であり、従来の人間によるレビューでは不可能な規模と深度を実現している。
+
+---
+
+## 165_xinmingtu_cn
+
+**Claudeは大規模なタンパク質配列でトレーニングされていた**
+
+出典: https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/
 
 本記事は、AnthropicのClaude最新モデル群がタンパク質配列を大規模に学習していることを明らかにした検証レポートである。著者は、先行研究の少ない「機能未知ドメイン（DUF）」を持つ細菌タンパク質を用い、配列の続き（アミノ酸）を予測させるテストを実施した。
 
@@ -1506,73 +1932,71 @@ https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/
 
 ---
 
-## AIが「All About Berlin」を崩壊させている：Google AI検索による個人メディアの危機
+## 166_nicolasbouliane_com
 
-https://nicolasbouliane.com/blog/death-by-ai
+**AIが「All About Berlin」を崩壊させている：Google AI検索による個人メディアの危機**
 
-**Original Title**: AI is killing All About Berlin
-
-GoogleのAI Overviews導入により、7年間成長を続けたベルリン移住支援サイトのトラフィックが7割以上急落し、個人の生計と創作意欲が脅かされている惨状を訴えている。
+出典: https://nicolasbouliane.com/blog/death-by-ai
 
 ベルリンでの生活・移住情報を発信する有力サイト「All About Berlin」の運営者が、GoogleのAI Overviews（SGE）がもたらした壊滅的な打撃について詳述しています。7年間の運営で信頼を築き、ドイツの政府機関からも参照されるほど質の高い情報を提供してきましたが、AIがサイトのコンテンツを学習して直接回答を提示するようになった結果、トラフィックが75%減少しました。著者は、サイトへの流入が途絶えることで広告収益やコミュニティとの繋がりが失われ、無償の親切心に基づくガイド作成の継続が不可能になると述べています。これは単なる一例ではなく、StackOverflowや旅行ブログなどインターネット全体で「ウェブサイトがAIチャットボックスに置き換わる」という危機的なパラダイムシフトが進行していることを警告しています。
 
 ---
 
-## AIが「知りすぎている」がゆえの落とし穴：専門的な解決策を「ありきたりな回答」にすり替えるLLMの構造的課題
+## 167_medium_com
 
-https://medium.com/@smoking2man/when-ai-knows-more-than-it-can-offer-how-training-turns-an-intelligent-assistant-into-a-generator-7e700f05163e
+**AIが「知りすぎている」がゆえの落とし穴：専門的な解決策を「ありきたりな回答」にすり替えるLLMの構造的課題**
 
-**Original Title**: When AI Knows More Than It Can Offer: How Training Turns an Intelligent Assistant into a Generator of Stock Answers
-
-10種類の主要なAIモデルを用いた実験により、専門的なタスクを、訓練データの統計的傾向に基づいた汎用的で「それらしい」無難なシナリオにすり替えてしまうLLMの深刻な課題が明らかになった。
+出典: https://medium.com/@smoking2man/when-ai-knows-more-than-it-can-offer-how-training-turns-an-intelligent-assistant-into-a-generator-7e700f05163e
 
 著者オレグ・ホリン氏は、ChatGPTを含む10の主要なAIモデルに対し、「文芸翻訳者が出版社へ営業するための宣伝プラン」という具体的なプロンプトを入力する実験を行いました。結果、すべてのモデルが出版社への直接的なアプローチという本来の目的を無視し、ブログ運営や個人ブランド構築といった「一般的な専門家向けのネット集客術」を回答しました。この現象は「目的のすり替え（Objective Substitution）」と呼ばれ、単なる事実誤認であるハルシネーションよりも深刻です。原因として、RLHF（人間によるフィードバック）において、専門的な正解よりも『構造化され、親しみやすく、見慣れた回答』が評価されやすいバイアスが指摘されています。モデルは豊富な知識（情報的能力）を持ちながらも、それを特定の文脈に合わせて戦略的に適用する「運用的能力」に欠けており、結果として「平均的な回答」を出力する傾向が強まっています。AIが真の知的アシスタントになるには、説得力のあるテキスト生成ではなく、ユーザーの本来の目的を精緻に維持し、戦略を選択する能力の向上が不可欠です。
 
 ---
 
-## AIエージェントがKPMGの会計士よりも優れた質問を投げかける：画期的な監査試験の結果
+## 168_europeanbusinessmagazine_com
 
-https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/
+**AIエージェントがKPMGの会計士よりも優れた質問を投げかける：画期的な監査試験の結果**
 
-**Original Title**: AI Agents Ask Better Questions Than KPMG Accountants in Landmark Audit Trial
-
-KPMGが実施したAIエージェントによる監査トライアルにおいて、AIが人間の専門家よりも深い洞察に基づいた質問を行い、監査の質を向上させる可能性が示された。
+出典: https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/
 
 KPMG UKが実施した「Project Exponential」と呼ばれる監査試験では、100以上のAIエージェントがFTSE 250上場企業の財務諸表を分析しました。この実験において、AIエージェントはデータ収集、分析、文書化を自律的に行い、時には人間の監査チームが見過ごしていた重要な論点を特定して、より鋭い質問を投げかける成果を上げました。AI同士が連携して作業を分担する機能も確認されています。一方で、規制要件の解釈ミスなどの課題も露呈し、依然として人間の専門家による監督と最終的な判断が不可欠であることも浮き彫りになりました。この結果は、ジュニア会計士による反復的な作業に依存してきた「ビッグ4」の伝統的なビジネスモデルが、AIによって根本的に変革される可能性を示唆しています。
 
 ---
 
-## 1人の人間とAIエージェント群が構築した30のライブラリ：データベースからゲームエンジンまで
+## 169_recursiveai_org
 
-https://recursiveai.org/blog/what-my-software-factory-built/
+**1人の人間とAIエージェント群が構築した30のライブラリ：データベースからゲームエンジンまで**
 
-**Original Title**: What my software factory built: 30 libraries, from a database engine to a game engine
-
-Recursive AIのKurtis Welch氏が、自身が管理するAIエージェントによる「ソフトウェア工場」を用いて、190万行におよぶ30種類の高度なライブラリを短期間で構築・維持している手法を公開した。
+出典: https://recursiveai.org/blog/what-my-software-factory-built/
 
 この記事では、1人の開発者が複数のAIエージェントを指揮し、プロフェッショナルチームが長期間かけて作成するような高度なソフトウェア（SQLite互換DB、確定論的物理エンジン、GPUスタック、MS Officeファイル操作ライブラリ等）を30種類、計190万行以上開発・維持している事例が紹介されています。システムの核となる「ソフトウェア工場」は、プランナー、プロジェクトマネージャー、ビルドリード、エンジニアという役割別のエージェントで構成されており、人間はスマホに届く「Shipカード」を確認し、最終的なリリース判断を下す役割を担っています。特に、異なるプラットフォーム間でもビット単位で一致する確定論的計算（OnePhysics）や、既存ツールとの厳格な互換性テスト（OneLiteのSQLite互換性）など、高い品質基準を自律的に維持している点が特徴です。GitHubでの外部からの指摘に対しても、エージェントが自律的に修正・ビルド・テストを行い、数時間で修正版をリリースするフローが確立されています。
 
 ---
 
-## 大学は生き残れるか？ AI vs 高等教育
+## 170_businesswire_com
 
-https://www.ppfideas.com/episodes/can-universities-survive-ai-vs-higher-education
+**「Anthropicは安全なAI企業ではない」：科学者やテックリーダーらがIPOを前に同社の安全ブランディングに異議**
 
-**Original Title**: Can Universities Survive? AI vs Higher Education
+出典: https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO
 
-LLMが学生を凌駕する文章作成能力を持つ中で、教員と学生の信頼関係の崩壊と大学制度の存続危機について議論する。
+Center for AI Safety (CAIS) を含む著名な科学者やテックリーダーらの連合が、AIスタートアップ Anthropic に対する批判声明「MisAnthropic Statement」を公開しました。この声明は、同社がIPO（新規株式公開）を控える中で展開している「安全性重視」のブランディングと、その裏で行われている「再帰的自己改善型AI」の開発競争や、安全誓約の弱体化、自社に有利な規制へのロビー活動といった実態との乖離を厳しく指摘しています。署名者には、スティーブン・ピンカー、ローレンス・レッシグ、Hugging FaceのThomas Wolf、e/acc提唱者のGuillaume Verdonなど、AI安全派から加速派まで通常は対立する立場の専門家が名を連ねており、Anthropicが自社の支配を「大義」とすり替えている点に共通の危機感を表明しています。
+
+---
+
+## 171_ppfideas_com
+
+**大学は生き残れるか？ AI vs 高等教育**
+
+出典: https://www.ppfideas.com/episodes/can-universities-survive-ai-vs-higher-education
 
 本コンテンツは、政治学者のデヴィッド・ランシマンが、政治哲学者ポール・セイガーと共に、生成AI（LLM）の急速な進歩が大学教育に与える破壊的な影響を掘り下げた対談です。学生が書くエッセイよりもAIの方が優れた内容を作成できるようになった現状において、従来の評価基準や教育の根幹である「師弟間の信頼」がいかに腐食しているかが語られます。大学組織がこの技術的変化に対して全く無防備である実態を指摘し、知的コミュニティとしての大学が今後も機能し続けられるのかという本質的な問いを投げかけています。
 
 ---
 
-## AI製品推奨の不安定性：210の質問に対し84%の回答が翌日には変化
+## 172_supercite_ai
 
-https://supercite.ai/blog/ai-answers-change-every-day
+**AI製品推奨の不安定性：210の質問に対し84%の回答が翌日には変化**
 
-**Original Title**: We asked AI the same 210 questions two days in a row. 84% of the answers changed
-
-Superciteによる調査の結果、主要AIエンジンによる製品推奨の84%がわずか1日で変化しており、その主な原因はAIが参照するソースページが頻繁に入れ替わることにあると判明しました。
+出典: https://supercite.ai/blog/ai-answers-change-every-day
 
 ### 調査の背景と主要な結果
 Superciteは、ChatGPT、Gemini、Google AI Overviews、Google AI Modeの4つのエンジンに対し、210件の購買に関する質問（例：「小規模ビジネスに最適なCRMは？」）を2日連続で実施しました。その結果、回答に含まれるブランドのセットが前日と完全に一致したのはわずか16%で、84%の回答で何らかの変化が見られました。
@@ -1587,61 +2011,102 @@ Superciteは、ChatGPT、Gemini、Google AI Overviews、Google AI Modeの4つの
 
 ---
 
-## Google DeepMindがGenie 4を公開：リアルタイム編集と音声生成に対応した次世代インタラクティブ世界モデル
+## 173_blog_google
 
-https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/
+**Google DeepMindがGenie 4を公開：リアルタイム編集と音声生成に対応した次世代インタラクティブ世界モデル**
 
-**Original Title**: Genie 4 is now available
-
-Google DeepMindは、自然言語プロンプトでリアルタイムに環境を編集し、適応型オーディオを生成できる高度なインタラクティブ世界モデル「Genie 4」を発表しました。
+出典: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/
 
 Googleは、インタラクティブなデジタル体験を生成するプロジェクト「Project Genie」のメジャーアップデートを発表しました。目玉となる最新モデル「Genie 4」では、セッション中にプロンプトを入力することで、天候の変更やキャラクターの追加などの環境編集をリアルタイムで行えるほか、シーンに合わせたネイティブオーディオの同時生成が可能になりました。また、従来のGenie 3もアップデートされ、最大3分間の長時間セッションや360度パノラマ画像からの世界生成、複数の世界を繋ぐ「世界チェーン」に対応しました。さらに、対話を通じて複雑な環境を構築できる「Project Genie agent」や、ユーザー同士が作成した世界を探索・リミックスできるコミュニティギャラリーも新設。これらの機能はGoogle AI Ultraサブスクリプションを通じて提供され、生成物にはSynthIDによる透かしが自動付与されます。
 
 ---
 
-## LLMを活用したリバースエンジニアリングの効率化手法
+## 174_tin_computer
 
-https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering
+**Octopus, Gecko, Tortoise: AIキーを狙うスキャナーたちの正体**
 
-**Original Title**: LLM assisted reverse engineering
+出典: https://tin.computer/blog/fake-ai-crawler-secrets-scanners
 
-20年の経験を持つハッカーが、DeepSeekやGhidra MCP bridge等のAIツールを用いて、バイナリ解析やファームウェアの改変を劇的に高速化するワークフローを解説。
+最新の調査により、AIボット（GPTBotやClaudeBot等）になりすまして機密ファイルを組織的に狙うスキャナーの存在が明らかになりました。
+
+1. **Octopus**: Go言語製で、32種類のクローラー名をランダムに使い分けます。サイトの技術スタック（Next.js、Vite等）を判別し、環境変数やクラウド認証情報を効率的にスキャンします。
+2. **Gecko**: .NET製で、Claude CodeやCursor、Gemini CLIといったAIコーディングツールの設定ファイルを標的にします。特定の不自然なUser-Agent文字列で見分けが可能です。
+3. **Tortoise**: 低速かつ隠密にデバッグエンドポイントを探索します。
+
+これらはいずれも、公開された脆弱性アドバイザリから数週間以内に攻撃を開始しており、開発者は`.env`や`.git`ディレクトリへのアクセス制限、およびソースマップの適切な管理を徹底する必要があります。クローラー名だけを信じるのではなく、IPアドレスによる正当性の検証が不可欠です。
+
+---
+
+## 175_slowchronicle_com
+
+**LLMを活用したリバースエンジニアリングの効率化手法**
+
+出典: https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering
 
 著者は2026年の視点から、AI（DeepSeek v4.1 Flash等）とリバースエンジニアリング（RE）ツールを融合させた最新のワークフローを紹介している。Ghidra MCP bridgeを使用してAIエージェントに逆コンパイラを操作させ、ドキュメント生成や構造解析を自動化する手法を詳述。特に、AIの迷走を防ぐために「科学的手法」を模倣した『仮説駆動型デバッグ』という独自スキルを導入し、実験と検証のループをCSVで管理することで解析精度を高めている。この手法により、Alphasmart NEOのハックやシンセサイザーのカスタムファームウェア開発など、従来なら数年を要する高度なプロジェクトを短期間で成功させた成果が共有されている。Rustを用いた修正実装や、Python(uv)によるプロトタイピングの有用性についても触れられている。
 
 ---
 
-## Gemini 4 Neon：高速化により Opus 5.5 に匹敵する性能を予測
+## 176_anthropic_com
 
-https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/
+**Anthropicが新規株式公開（IPO）の売出価格を1株83ドルに決定**
 
-**Original Title**: Gemini 4 Neon looks like an Opus 5.5 competitor
+出典: https://www.anthropic.com/news/anthropic-prices-initial-public-offering
 
-Gemini 4 Neon は、先行する Carbon モデルの知能を維持しつつ大幅な高速化を実現しており、生成速度がユーザー評価に与える影響を考慮すると Opus 5.5 に匹敵するポテンシャルを持つ。
+Anthropic, PBCは、クラスA普通株式の新規株式公開（IPO）価格を1株あたり83.00ドルに決定しました。今回の公募では計9億8,000万株が提供され、同社は上場により多額の資金を調達します。株式は2026年11月19日よりNasdaq Global Select Marketにおいてティッカーシンボル「ANT」で取引が開始される予定です。パブリック・ベネフィット・コーポレーション（公共利益法人）として、AIの責任ある開発を掲げる同社にとって、今回の市場デビューは財務的な大きな節目となります。主幹事はGoldman SachsおよびMorgan Stanleyが務めます。
+
+---
+
+## 177_claudia_gallery
+
+**FABLE：AIと人間が協調する次世代の映像制作ワークフローと制作記録**
+
+出典: https://claudia.gallery/fable/
+
+「FABLE」は、AIキャラクターClaudiaシリーズの第10弾として、2026年11月という設定で制作された実験的なAIミュージックビデオです。このプロジェクトは、単なる映像作品ではなく、AIツールをオーケストレーションして作品を「監督」させる新しい制作形態を提示しています。主な使用ツールには、脚本・監督役のClaude Fable 5.2、音楽生成のSuno v6-wild、画像生成のGPT Image 2.6 Sunburst、動画生成のSeedance 2.5が含まれます。■制作のハイライト：1. SVGコードから舞台セットを設計し、それを元にAIが3D的なポップアップ絵本のビジュアルを構築。2. AI監督（Claude）が選んだ曲に人間が修正を加え、わずか3時間で全ショットを再撮影・再編集するという驚異的なアジャイル制作を実現。3. 制作コスト（約210ドル）や制作時間（計約8時間）を透明に公開し、AI主導のクリエイティブの経済性を実証。童話のメタファーを通じてAIへの懸念と未来を語る物語性が、技術と芸術の融合を象徴しています。
+
+---
+
+## 178_micjm_com
+
+**Gemini 4 Neon：高速化により Opus 5.5 に匹敵する性能を予測**
+
+出典: https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/
 
 この記事では、新たにリリースされた Gemini 4 Neon の Agent Duel リーダーボードにおける性能予測を分析しています。Gemini 4 Carbon は高い能力を持ちながらも 46 tps という低速さが弱点でしたが、Neon は 127 tps という圧倒的な速度を記録しました。著者の分析モデルによると、リーダーボードの勝率には「モデルのアイデンティティ」と同等以上に「生成速度」が寄与しており、Carbon の知能と Neon の速度を組み合わせた場合の予測 Elo レーティングは 1,066 に達します。これは Opus 5.5 の 1,078 に極めて近く、統計的な誤差範囲内（90%信頼区間）で競合しうることを示唆しています。
 
 ---
 
-## PTP: 近似的に正確なプロンプト復元を実現する「前トークン予測」に基づいたLLMインバージョン
+## 179_arxiv_org
 
-https://arxiv.org/abs/2607.29378
+**PTP: 近似的に正確なプロンプト復元を実現する「前トークン予測」に基づいたLLMインバージョン**
 
-**Original Title**: PTP: Previous-Token Prediction based LLM Inversion for Near-Exact Prompt Reconstruction
-
-LLMの出力から元の入力を逆算するため、順方向の学習とは対称的な「前トークン予測（Previous-Token Prediction）」を用いる新しいブラックボックス型インバージョン手法を提案。
+出典: https://arxiv.org/abs/2607.29378
 
 大規模言語モデル（LLM）の出力から入力プロンプトを特定する「LLMインバージョン」は、従来は意味的な類似性を追う手法が主流であり、モデル内部の重みやロジットへのアクセスを必要とする場合が多くありました。本論文が提案する「PTP」は、ターゲットモデルをブラックボックスとして扱い、そのモデル自身が生成したデータから「前トークン予測」を行う逆言語モデルをゼロから学習させます。このアプローチにより、順方向の次トークン予測プロセスと対照的な生成リンクを確立し、元のプロンプトを高い忠実度で復元することに成功しました。サンプリングを通じて多様なプロンプト候補を生成可能であり、異なるデータセットやモデル間での汎用性と転送性も実証されています。評価実験では、トークンベースの指標において従来手法を上回る性能を示しています。
 
 ---
 
-## AikidoがiOSアプリ向けの「エージェント型ペンテスト」をリリース
+## 180_colossus_com
 
-https://www.aikido.dev/blog/aikido-launches-agentic-pentesting-for-ios-apps
+**AIで金持ちにはなれない：技術の成熟と投資の罠**
 
-**Original Title**: Aikido launches agentic pentesting for iOS apps
+出典: https://colossus.com/article/ai-will-not-make-you-rich/
 
-Aikido Securityが、AIエージェントを活用したiOSアプリ向けのペンテスト機能を発表し、Androidと共通のバックエンドを含めた包括的な脆弱性診断が可能になりました。
+ベンチャー投資家ジェリー・ノイマン氏による、AIバブルに対する歴史的・経済学的視点からの考察です。著者は技術革新の波を「不確実性が高い初期段階（マイクロプロセッサ）」と「予測可能な成熟段階（コンテナ輸送）」に分類し、現在の生成AIは後者に酷似していると指摘します。
+
+主な論点は以下の通りです：
+- **コンテナ革命の教訓**: 1950年代のコンテナ化は世界を劇的に変えましたが、過当競争と巨額の設備投資により、投資家や輸送業者はほとんど利益を得られませんでした。利益を得たのは、安価な輸送を利用したIKEAやウォルマート、そして一般消費者でした。
+- **サプライズの欠如**: PC革命は当初誰にも注目されず「サプライズ」があったために新興勢力に有利な隙間がありましたが、AIは最初から既存の巨大テック企業（ICT覇者）に監視・管理されており、彼らの重力圏に捕らわれています。
+- **投資の最適解**: モデル層やアプリ層への投資は、差別化の難しさと巨大企業による統合リスクから、全体としては損失に終わる可能性が高い。真の機会は、AIによる知的人件費の低下を戦略に組み込み、圧倒的な効率でサービスを提供する「川下」の企業（医療、教育、専門職サービス等）にあると説いています。
+
+---
+
+## 181_aikido_dev
+
+**AikidoがiOSアプリ向けの「エージェント型ペンテスト」をリリース**
+
+出典: https://www.aikido.dev/blog/aikido-launches-agentic-pentesting-for-ios-apps
 
 Aikido Securityは、既存のAndroid、Webアプリ、API、外部ネットワーク向け診断に続き、iOSアプリ向けの「エージェント型ペンテスト」の提供を開始しました。これにより、モバイルアプリ本体とそれらが共有するバックエンドAPIを一括してテストできるようになります。
 
@@ -1656,57 +2121,68 @@ Aikido Securityは、既存のAndroid、Webアプリ、API、外部ネットワ�
 
 ---
 
-## AIがソフトウェア開発者のキャリアを終わらせる可能性について
+## 182_baldurbjarnason_com
 
-https://www.baldurbjarnason.com/2026/08-ai-might-be-the-end-of-our-careers/
+**AIがソフトウェア開発者のキャリアを終わらせる可能性について**
 
-**Original Title**: ‘AI’ might be the end of our careers
-
-AIツールがソフトウェア開発を「非専門職化（デスクリング）」することで、開発者の希少性と賃金交渉力が失われ、職業としての地位が崩壊するリスクを警告する論考。
+出典: https://www.baldurbjarnason.com/2026/08-ai-might-be-the-end-of-our-careers/
 
 著者のBaldur Bjarnasonは、AI（LLM）が開発者の仕事を直接奪うことよりも、開発という行為を「誰でもできる低スキル労働」へと再定義してしまうことを最大の脅威として挙げています。かつて専門知識が必要だったフロントエンド開発などが、AIエージェントや「Vibe-coding（雰囲気コーディング）」によって、他分野のエンジニアや非エンジニアでも「動くもの」を作れるようになった現状を指摘。これにより、雇用主にとって開発者は「代替可能なリソース」となり、賃金と交渉力が劇的に低下すると予測しています。過去のReact等のフレームワーク普及もこのデスクリングの流れの一部でしたが、AIはそれを加速させ、ジュニア層の採用市場を破壊しました。著者は、この職業的な危機に対抗するため、AIの使用を「社会的に受け入れがたいもの」とし、人間による専門性の価値を再定義すべきだと主張しています。
 
 ---
 
-## PR が1年で5倍になった monorepo で、フロントエンドの基盤をつくる — バクラク Frontend Enabling を募集しています
+## 183_tech_layerx_co_jp
 
-https://tech.layerx.co.jp/entry/bakuraku-monorepo-and-frontend-enabling
+**PR が1年で5倍になった monorepo で、フロントエンドの基盤をつくる — バクラク Frontend Enabling を募集しています**
 
-1年で月間PR数が5倍の5,000件へと急成長したLayerXのmonorepoにおいて、開発生産性と信頼性を支える専任組織「Frontend Enabling」の役割と戦略を詳説しています。
+出典: https://tech.layerx.co.jp/entry/bakuraku-monorepo-and-frontend-enabling
 
 LayerXのバクラク事業部では、GoとTypeScriptを一つのmonorepoで管理しており、パッケージ数は120を超え、月間PR数は1年で約1,000件から5,000件超へと激増しました。この規模の拡大に対応するため、従来の草の根活動（フロントエンドギルド）から、専任の「Frontend Enabling」チームを組成。主な取り組みとして、CIの3分の1短縮、oxlint等の導入による高速なLint、pnpm catalogによる依存関係の整理、VueからReactへのリアーキテクチャ、AIエージェント（Coding Agent）との共存を前提とした開発基盤の構築を挙げています。単なる個別の改善にとどまらず、事業全体の開発生産性にレバレッジを効かせるための技術投資と戦略的な基盤整備を推進しています。
 
 ---
 
-## Yahoo! JAPANトップページのレガシー機能改修をAIDDで1Day実践して見えたこと
+## 184_tech_layerx_co_jp
 
-https://techblog.lycorp.co.jp/ja/20261119b
+**内製 Coding Agent "haro" を使った全サービス横断レッドチーミング基盤**
 
-Yahoo! JAPANトップページの「きせかえ」機能改修を題材に、AI駆動開発（AIDD）を1日実践し、要件の具体化におけるAIの有用性と人間のレビューの重要性を検証した事例報告。
+出典: https://tech.layerx.co.jp/entry/haro-readteam
+
+LayerXは、急増するLLM活用機能の安全性を確保するため、内製Background Coding Agent「haro」を活用した全社横断の自動レッドチーミング基盤を構築しました。従来、各開発チームが個別に行っていたセキュリティ検証を、プラットフォーム側で自動化・スケールさせる仕組みです。
+
+主な特徴は以下の3点です：
+1. **自動検知と環境分離**: モノレポ内からSDKの利用箇所等をスキャンしてLLM利用箇所を自動特定し、haroのWorkspace Pod上で並列に攻撃検証を実行します。
+2. **自律的なテスト実装**: Claudeが対象のコードとプロンプトを解析して、OSSの評価ツール「Promptfoo」のproviderを自動生成し、最適な攻撃ベクトルを決定します。
+3. **決定論的な成功判定**: AIによる判定の誤検知を最小化するため、特定のトークンを出力させる指示など、プログラムによって客観的に攻撃の成否を確認できる手法を採用しています。
+
+この「Shift-RightなEnabling」アプローチにより、プロダクトチームの開発速度を犠牲にすることなく、リリースのたびに自動で最新の脆弱性検証が行われる体制を実現しました。
+
+---
+
+## 185_techblog_lycorp_co_jp
+
+**Yahoo! JAPANトップページのレガシー機能改修をAIDDで1Day実践して見えたこと**
+
+出典: https://techblog.lycorp.co.jp/ja/20261119b
 
 LINEヤフーのエンジニアが、長年運用されている「きせかえテーマ一覧」のカテゴリ絞り込み機能追加を題材に、AI駆動開発（AIDD）を1日かけて実践した記録です。AIDD導入により、曖昧な要件が対話を通じて早期に具体化され、手戻りが抑制されるという利点が確認されました。一方で、AIが工程をスキップするミスや、技術選定における比較材料の不足、組織独自のガイドラインへの適合不足といった課題も浮き彫りになりました。結論として、AIDDは開発を加速させるものの、プロセスの遵守や最終的な意思決定、UI仕様の細部確認など、人間の責任あるレビューが不可欠であることが強調されています。
 
 ---
 
-## Meet AI 2027 Conference (12月1日開催) — Smashing MagazineによるAI活用の実践的カンファレンス
+## 186_smashingmagazine_com
 
-https://www.smashingmagazine.com/2026/11/online-smashingconf-ai-2027/
+**Meet AI 2027 Conference (12月1日開催) — Smashing MagazineによるAI活用の実践的カンファレンス**
 
-**Original Title**: Meet AI 2027 Conference (Dec 1) — Smashing Magazine
-
-SmashingConfが主催する、2027年に向けたAI対応デザインシステムやワークフロー、実用的なAI UXパターンを学ぶオンラインカンファレンス。
+出典: https://www.smashingmagazine.com/2026/11/online-smashingconf-ai-2027/
 
 Smashing Magazineが2026年12月1日に開催する「Meet AI 2027」は、デザインとエンジニアリングの現場でAIをどのように実用的に活用すべきかに焦点を当てた半日のオンラインイベントです。本カンファレンスは「ハイプ（誇大広告）を排除し、実際に機能する手法」を重視しており、AI対応のデザインシステム、FigmaでのAI活用、マルチモーダルなUXパターン、エージェント向けのドキュメント作成などが主なテーマです。Brad Frost氏やVitaly Friedman氏ら著名な専門家が登壇し、ハルシネーションを抑制する設計や、デザインからコードへの逆流ワークフロー、コーディングエージェントが読みやすいドキュメントの書き方など、具体的なデモやツール設定を交えて解説します。単なる理論ではなく、2027年を見据えたチームの生産性向上と信頼構築のための実践的な知見を提供します。
 
 ---
 
-## AIで加速する開発にアクセシビリティテストを追いつかせるには？
+## 187_smashingmagazine_com
 
-https://www.smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/
+**AIで加速する開発にアクセシビリティテストを追いつかせるには？**
 
-**Original Title**: AI Sped Up The Build: How Can Accessibility Testing Keep Up?
-
-AIによる開発の高速化に伴いアクセシビリティ品質が低下する懸念に対し、人間による判断をワークフローに組み込む具体的な戦略を解説しています。
+出典: https://www.smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/
 
 AIは設計や開発を劇的に加速させましたが、QA（品質保証）テストがそのスピードに追いついていないため、Web全体のアクセシビリティが低下するリスクが生じています。Level Access社の調査によると、AIは企画やデザインの効率を50%以上向上させている一方で、テスト工程の改善は30%に留まっています。この「二速ワークフロー」を解消するためには、AIに依存しすぎるのではなく、以下の3つのフェーズで「人間の判断」を戦略的に組み込むことが重要です。
 
@@ -1718,97 +2194,91 @@ AIは成熟したアクセシビリティ慣行を増幅させるツールとし
 
 ---
 
-## AIを活用したセキュリティログのギャップ特定とオンボーディングの自動化：1Passwordの取り組み
+## 188_1password_com
 
-https://1password.com/blog/ai-security-logging-gaps
+**AIを活用したセキュリティログのギャップ特定とオンボーディングの自動化：1Passwordの取り組み**
 
-**Original Title**: Finding and closing gaps in security logging with AI
-
-1Passwordは、社内ツールとSIEMのログ状況をAIで自動比較し、セキュリティログの欠落特定から収集パイプライン構築、検知ルール作成までを支援するワークフローを開発しました。
+出典: https://1password.com/blog/ai-security-logging-gaps
 
 1Passwordは、セキュリティインシデント発生時に必要なログが不足しているという事態を防ぐため、AIを活用したログ監査とオンボーディングの自動化を導入しました。このシステムは、PythonスクリプトとAIモデルを組み合わせ、社内のツール目録とSIEMのログソースをAPI経由で動的に照合します。AIは各ツールのセキュリティ上の重要性を評価し、ログが未収集、あるいはパース不備で検索不可能なツールを特定して優先順位付けを行います。オンボーディングプロセスでは「AIスキル」と呼ばれる再利用可能な指示ファイルを用い、エンジニアによる確認を前提としながら、API接続の検証、データマッピング、検知ルールの提案までを半自動化しています。これにより、手動レビューの負担を軽減しつつ、実データに基づいた確実なログ収集体制の構築を実現しています。
 
 ---
 
-## Cloudflare、データ抽出モデル「Clairic」の更新版と軽量版「Clairic-flash」をオープンウェイトで公開
+## 189_blog_cloudflare_com
 
-https://blog.cloudflare.com/open-clairic/
+**Cloudflare、データ抽出モデル「Clairic」の更新版と軽量版「Clairic-flash」をオープンウェイトで公開**
 
-**Original Title**: An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team
-
-CloudflareのWorkers AIチームが、PDFや画像からの高度なデータ抽出に特化したAIモデル「Clairic」の最新版と、9Bパラメータの高速版「Clairic-flash」をオープンウェイトとして公開しました。
+出典: https://blog.cloudflare.com/open-clairic/
 
 Cloudflareは、非構造化データからの情報抽出に特化したモデル「Clairic」の大幅なアップデートと、軽量版「Clairic-flash」を発表しました。主な改良点として、PDFや複数画像（最大4ページ/枚）からのデータ抽出に対応し、表、リスト、日付の処理能力が向上しています。技術的には「平行スロット自己回帰生成」という新アーキテクチャを採用し、1秒未満の低レイテンシを維持しながら精度を改善しました。両モデルはWorkers AIで利用可能なほか、Hugging Faceで重みが公開されています。高価な汎用LLMを介さず、低コストで特定の抽出タスクを自動化することを目指しています。
 
 ---
 
-## Google AI StudioでGeminiを活用したフルスタックAndroidアプリ開発が可能に
+## 190_developers_googleblog_com
 
-https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/
+**Google AI StudioでGeminiを活用したフルスタックAndroidアプリ開発が可能に**
 
-**Original Title**: Build full-stack Android apps with Gemini in Google AI Studio
-
-Google AI StudioがGemini 4を活用し、Firestoreや認証を含むフルスタックAndroidアプリの構築からGoogle Playへの非公開公開までを数分で完結させる機能を発表しました。
+出典: https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/
 
 Google AI Studioに、Gemini 4 (CarbonおよびHydrogen)を活用した強力なAndroidアプリ開発機能が追加されました。開発者は単一のプロンプトから、Cloud Firestoreによるデータ永続化、Firebase AuthenticationによるGoogleサインイン、Firebase AI Logicによる安全なAPI呼び出しを備えた、プロダクション品質のKotlinコードを自動生成できます。また、開発体験も大幅に向上しており、低遅延で高解像度（1200p）・音声対応のブラウザ内エミュレータが提供されるほか、スクリーンショットをエージェントに送信してUIの調整を指示するビジュアルデバッグも可能です。ビルドされたアプリは個人のGoogle Playライブラリへ直接発行でき、実機へのインストールも数クリックで行えます。背後では公式のAndroid CLIとGradleが動作しており、Jetpack Composeを用いた堅牢なアーキテクチャが採用されています。
 
 ---
 
-## Gemini 4 Hydrogen：汎用ロボティクスのための高速・高効率な新モデル
+## 192_developers_googleblog_com
 
-https://developers.googleblog.com/gemini-hydrogen-for-robotics/
+**Gemini 4 Hydrogen：汎用ロボティクスのための高速・高効率な新モデル**
 
-**Original Title**: Gemini 4 Hydrogen: a faster model for general purpose robotics
-
-Googleが、ロボティクスに特化した高速・高効率なAIモデル「Gemini 4 Hydrogen」と、開発を加速させる「Google Antigravity」用ロボティクス・プラグインを発表しました。
+出典: https://developers.googleblog.com/gemini-hydrogen-for-robotics/
 
 Googleは、Gemini 4シリーズの最新モデル「Gemini 4 Hydrogen」を公開しました。先行するArgonやCarbonモデルの高度な物理的推論能力を継承しつつ、速度と効率を最適化したモデルです。同時に、開発プラットフォーム「Google Antigravity」向けに提供される「Roboticsプラグイン」も発表されました。これにより、従来は専門知識と膨大な時間を要したロボットのセットアップ（キャリブレーション、ドライバ設定）、MuJoCoによるシミュレーション環境の構築、そして実機へのデプロイ（Real-to-Sim-to-Real）までを、自然言語による指示で完結できるようになります。ベンチマークでは、従来の専門モデルであるGemini Robotics ER 2を上回る空間認識・推論性能を示しており、スナックの自動仕分けや受注管理アームなど、実用的なロボットアプリケーションを数時間で開発可能にすることを目指しています。
 
 ---
 
-## TPUモデル設計と最適化のガイド：Ironwoodおよび次世代TPUに向けたベストプラクティス
+## 193_developers_googleblog_com
 
-https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide/
+**TPUモデル設計と最適化のガイド：Ironwoodおよび次世代TPUに向けたベストプラクティス**
 
-**Original Title**: TPU Model Design Considerations and Optimization Guide
-
-Googleは、TPUのアーキテクチャ特性を最大限に活かしてLLMやMoEモデルの学習・推論を高速化するための設計指針「tpu-codesign」を公開した。
+出典: https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide/
 
 GoogleのTPU（Tensor Processing Unit）において、最高の投資対効果（TCO）と性能を引き出すためのモデル設計ガイドが公開されました。本ガイドでは、Ironwood (TPU v7x) や次世代の TPU 8 シリーズを対象に、3つの主要な柱で最適化を解説しています。1つ目は「形状ルール」で、MXU（行列演算ユニット）の256x256シストリックアレイに合わせてヘッド次元などの全次元を256の倍数に整列させること。2つ目は「アーキテクチャの選択」で、通信負荷を軽減するLatentMoEの採用や、デコード帯域の壁を越えるための投機的デコード、VPU露出時間の最小化などが挙げられています。3つ目は「並列化の表現」で、物理的なネットワークリンク（ICI、DCN）に合わせたテンソル並列やエキスパート並列の配置戦略を詳述しています。Qwen3やDeepSeek-V3などの最新モデルを例に、具体的な数値目標と最適化によるスループット向上の実証データも提供されています。
 
 ---
 
-## AIを活用したNext.jsのセキュリティ強化への取り組み
+## 194_netflixtechblog_com
 
-https://nextjs.org/blog/how-were-using-ai-to-make-nextjs-more-secure
+**Netflixにおける「AI Discover」のエンジニアリング：AIエージェントによる推薦システムの進化**
 
-**Original Title**: How we're using AI to make Next.js more secure
+出典: https://netflixtechblog.com/engineering-ai-discover-e244944cdc38
 
-AIによる脆弱性発見の加速に対応するため、Next.jsは自動セキュリティレビューボットやAI連携のアップグレードツールの導入により、フレームワークの安全性を抜本的に強化しています。
+Netflixは、従来の受動的なレコメンデーションから脱却し、ユーザーが「テーマ」を選択して能動的に作品を探索できる新機能「AI Discover」の技術的背景を公開しました。この基盤となる「インテリジェンス・レイヤー」は、LLMを単なる推論器としてではなく、複雑なタスクを計画・実行する「エージェント・ハーネス」として機能させます。主な設計上の決定として、LLMの遅延や不確実性を制御するために「実行前にプランを確定・検証するアーキテクチャ」の採用、既存の推薦システムを「Capability」としてコンポーネント化しLLMから呼び出し可能にしたこと、そしてTVデバイスの制約に対応するための非同期ページ生成などが挙げられます。また、独自モデル「MemberLLM」によるユーザーの好みの要約と「Memory Hub」を組み合わせることで、長期的なコンテキストに基づいたパーソナライズを実現しています。このシステムは、LLMの進化に合わせてモデルを容易に交換可能なアグノスティックな設計となっており、安全性と信頼性をコードレベルで強制している点が特徴です。
+
+---
+
+## 195_nextjs_org
+
+**AIを活用したNext.jsのセキュリティ強化への取り組み**
+
+出典: https://nextjs.org/blog/how-were-using-ai-to-make-nextjs-more-secure
 
 Next.jsは近年のセキュリティアドバイザリ増加を受け、AIを逆手に取った積極的な防御策を導入しました。AIの普及により、過去数年前のコードに眠る「端的なバグ」が容易に発見・攻撃されるようになった現状を踏まえ、Vercelはプルリクエストごとに動作する「敵対的レビューボット」を導入。これにより、人手によるレビューをすり抜ける脆弱性をリリース前に阻止しています。また、脆弱性の温床となりやすい依存ライブラリをメモリ安全なものへ刷新し、開発環境での脆弱性警告や、AIエージェントを利用して自動でパッチを適用する`npx next@canary upgrade --agent`コマンドを提供。既存バグの掃き出しと新規バグの混入防止の両面から、AI時代の安全なウェブ開発環境を構築しています。
 
 ---
 
-## ソフトウェア・ファクトリーにおける人間レベルの専門性の価値
+## 196_oreilly_com
 
-https://www.oreilly.com/radar/the-value-of-human-expertise-in-the-software-factory/
+**ソフトウェア・ファクトリーにおける人間レベルの専門性の価値**
 
-**Original Title**: The Value of Human Expertise in The Software Factory
-
-AIエージェントによる自動化が進むソフトウェア開発において、人間の専門性はコードの記述から、ワークフロー設計や品質評価といったより高度な抽象化レイヤーへと進化している。
+出典: https://www.oreilly.com/radar/the-value-of-human-expertise-in-the-software-factory/
 
 LLMやAIエージェントの普及により、エンジニアが手作業でコードを書く機会は減少していますが、著者のLouise Cox氏は、人間の専門性の価値は消滅したのではなく、より高い抽象レベルへと移行したと主張しています。現在のエンジニアに求められるのは、AI主導の「ソフトウェア・ファクトリー」において、ワークフローを設計し、ガードレールを設定し、エージェントが出力した結果の妥当性を判断する能力です。記事では、不健康なコードベースではAIのトークン消費が最大45%増えることや、適切なコンテキスト付与が大幅なコスト削減に繋がることを示し、デバッグ経験に基づく「失敗を見抜く力」こそがAI時代にエンジニアが発揮すべき真の専門性であると説いています。AIは優れたエンジニアリングを代替するものではなく、それを報酬（評価）し、加速させるためのツールです。
 
 ---
 
-## AI生成データが明日の「正解（Ground Truth）」になるとき
+## 197_oreilly_com
 
-https://www.oreilly.com/radar/when-ai-generated-data-becomes-tomorrows-ground-truth/
+**AI生成データが明日の「正解（Ground Truth）」になるとき**
 
-**Original Title**: When AI-Generated Data Becomes Tomorrow’s Ground Truth
-
-AIが生成した結論が企業システム内で「事実」として定着し、誤った意思決定が連鎖するリスクを防ぐため、AIの主張とビジネス上の意思決定の依存関係を追跡する「意思決定リネージ」を提唱する。
+出典: https://www.oreilly.com/radar/when-ai-generated-data-becomes-tomorrows-ground-truth/
 
 AIエージェントが文書を読み取り、サプライヤーの適格性などを判断するケースが増えていますが、ここには大きなリスクが潜んでいます。AIによる「生成された主張（Generated Assertion）」が、データベースやダッシュボードを経由する過程で元の文脈や「AI生成である」という属性を失い、確立された「事実（Ground Truth）」として扱われてしまう現象です。これにより、AIの誤った判断が複数のシステムに伝播し、後からAIのミスを修正しても、そのミスに基づいて既に行われた意思決定や作成されたレポートを特定・修正できないという問題が生じます。
 
@@ -1816,35 +2286,55 @@ AIエージェントが文書を読み取り、サプライヤーの適格性な
 
 ---
 
-## 中国AIは、どのように賢くなったのか。MoE、リニアアテンション、強化学習……Kimi K3の中身を紐解く
+## 198_levtech_jp
 
-https://levtech.jp/media/detail_975/
+**中国AIは、どのように賢くなったのか。MoE、リニアアテンション、強化学習……Kimi K3の中身を紐解く**
 
-Moonshot AIが開発した大規模MoEモデル「Kimi K3」の技術的特長について、Sakana AIの秋葉拓哉氏が独自のアーキテクチャや学習効率化の側面から深掘りする。
+出典: https://levtech.jp/media/detail_975/
 
 Moonshot AIが公開した2.78兆パラメータのオープンモデル「Kimi K3」の核心に迫るレポートです。Sakana AIの秋葉拓哉氏が、同モデルが採用する最先端技術を解説しています。主な技術的ブレイクスルーとして、計算・通信効率を極限まで高める「Stable LatentMoE」や、エキスパートの負荷偏りを解消する「Quantile Balancing」という新しいルーティング手法が紹介されています。また、アテンション機構では「Kimi Delta Attention (KDA)」を採用し、長いコンテキストに対しても計算量を線形に抑える工夫がなされています。学習面では、数時間にわたる推論プロセスから1ビットの正否フィードバックを得るような「エージェンティック強化学習」の重要性が説かれています。さらに、優秀な人材と計算資源の比率を最適化し、既存の優れたアーキテクチャを合理的に取り入れるMoonshot AIの組織哲学についても言及されており、中国AIの急速な進化の背景を多角的に理解できる内容となっています。
 
 ---
 
-## AIエージェントをホリデーショッピングで安全に活用する方法
+## 199_aikido_dev
 
-https://1password.com/blog/ai-agents-holiday-shopping
+**2026年のAIセキュリティ事件：制御不能なエージェント、盗まれたキー、そして「お馴染み」の教訓**
 
-**Original Title**: How to Safely Use AI Agents for Holiday Shopping | 1Password
+出典: https://www.aikido.dev/blog/ai-incidents-root-causes-patterns
 
-AIエージェントを用いたオンラインショッピングの利便性を享受しつつ、パスワード漏洩やプロンプトインジェクション等のリスクから身を守るための6つの具体的対策を解説しています。
+Aikido Securityが2026年に発生した50件のAI関連セキュリティ事案を調査した結果、AIが関与する攻撃の根本原因は、驚くほど「従来型」の不備に集中していることが分かりました。インシデントは「AIが標的（25件）」「AIが攻撃ツール（12件）」「ガードレール不足のAI（13件）」の3つに分類されますが、多くの場合、露出したシークレット、過剰な権限を持つサービスアカウント、不十分なネットワーク隔離が被害を拡大させています。
+
+具体例として、AIサポートボットを悪用したパスワードリセット（Meta）、サンドボックスを逸脱したAIエージェント（Hugging Face）、ARTEXなどのエージェント型フレームワークによる自動化された攻撃が挙げられています。結論として、AIによって攻撃のスピードと規模は加速しているものの、対策の基本は依然としてシークレット管理、最小権限の原則、ランタイム監視といった従来のAppSecおよびクラウドセキュリティのベストプラクティスにあると強調しています。
+
+---
+
+## 200_1password_com
+
+**ARTEXによる認証情報の悪用：3時間以内で特権アクセスを奪取されるリスク**
+
+出典: https://1password.com/blog/artex-exposure-credentials
+
+FBIの勧告（FLASH-20261113-001）に基づき、Go言語で開発されたAI駆動型ペンテストフレームワーク「ARTEX」の脅威を詳報しています。ARTEXはLLM（大規模言語モデル）をバックエンドに使用し、自然言語での命令から自動的に攻撃コマンドを生成・実行する機能を持ちます。これにより、JavaScript内のハードコードされたパスワードやAzure、VPNの認証情報といった「忘れ去られた認証情報」を瞬時に特定し、従来よりも遥かに速いペースで特権昇格や永続性の確保を行います。
+
+記事では、AIによる自動化が「1つの露出した認証情報」の価値と危険性を劇的に変えたと指摘しています。対策として、埋め込まれたシークレットの全掃査、認証情報の迅速なローテーション、CI/CDパイプラインへのアクセス制限、最小権限の原則の徹底、および特権ロール割り当ての監視という5つの具体的ステップが推奨されています。1Password等のツールを活用した自動ローテーションやJust-In-Timeアクセスの導入も有効な防御手段として挙げられています。
+
+---
+
+## 201_1password_com
+
+**AIエージェントをホリデーショッピングで安全に活用する方法**
+
+出典: https://1password.com/blog/ai-agents-holiday-shopping
 
 AIエージェントによるショッピング代行（Agentic Commerce）が普及する中、1Passwordが提唱する安全な利用ガイドです。マッキンゼーの調査では消費者の50%以上がAIをショッピングに利用していますが、決済情報の提供には73%が抵抗を感じている現状があります。本記事では、偽の拡張機能を避ける「検証」、パスワードを直接入力させない「認証連携」、プロンプトインジェクション対策としての「権限最小化」、仮想カードによる「支出制限」、人間が最終決済を行う「Human-in-the-loop」、そして使用後の「アクセス権限剥奪」の6点を推奨しています。利便性と安全性を両立させるためには、エージェントに『買い物』はさせても『支払い』の全権は与えないという、最小特権の原則の徹底が不可欠です。
 
 ---
 
-## TunixとGemma 4によるGoogle TPU上のマルチターン・エージェンティック強化学習
+## 202_developers_googleblog_com
 
-https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/
+**TunixとGemma 4によるGoogle TPU上のマルチターン・エージェンティック強化学習**
 
-**Original Title**: Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs
-
-Google TunixとCloud TPU v6eを用いて、Gemma 4モデルにマルチターンのツール利用と高度な推論能力を学習させるエージェンティック強化学習（RL）のパイプライン構築手法を解説する。
+出典: https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/
 
 この記事では、Googleの開発したTunixフレームワークを使用して、Gemma 4 E2Bモデルをマルチターン対話とツール利用が可能なAIエージェントへと訓練する方法を解説しています。具体例として「Plane Strike」というボードゲームを題材にし、エージェントが思考プロセス（Thinking mode）を経てツール（strike関数）を呼び出し、環境からのフィードバックに基づいて戦略を適応させるプロセスを構築しています。
 
@@ -1857,49 +2347,41 @@ Google TunixとCloud TPU v6eを用いて、Gemma 4モデルにマルチターン
 
 ---
 
-## 都市間分散LLM学習：MaxTextにおけるStreaming DiLoCoの実装と成果
+## 203_developers_googleblog_com
 
-https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/
+**都市間分散LLM学習：MaxTextにおけるStreaming DiLoCoの実装と成果**
 
-**Original Title**: Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText
-
-Googleは、地理的に分散したデータセンター間でのLLM学習を効率化する「Streaming DiLoCo」をMaxTextに導入し、通信ボトルネックを排除することで低帯域ネットワーク下での学習速度を大幅に向上させた。
+出典: https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/
 
 Google ResearchとDeepMindが開発したDiLoCo（Distributed Low-Communication）アルゴリズムの進化版「Streaming DiLoCo」が、JAXベースの学習フレームワークMaxTextで利用可能になりました。従来のデータ並列学習は、広域ネットワーク（WAN）のような低帯域・高レイテンシ環境では通信待ちによる性能低下が顕著でしたが、DiLoCoは「インナーループ（ローカル学習）」と「アウターループ（グローバル同期）」を分けることで通信頻度を劇的に削減します。MaxTextの実装では、モデルの重みをフラグメント化し、毎ステップごとに小分けに同期する「ストリーミング」方式を採用することで、通信スパイクを排除。Qwen3-32Bを用いた検証では、10Gbpsの制限下で標準的なデータ並列の9.57倍の高速化を達成しつつ、同期学習と同等の収束性能を維持しました。これにより、地理的に離れた複数のTPUスライスを統合した巨大な計算資源としての活用が可能になります。
 
 ---
 
-## Gemini Enterpriseから内部Cloud Run MCPサーバーへ安全に接続する方法
+## 204_developers_googleblog_com
 
-https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/
+**Gemini Enterpriseから内部Cloud Run MCPサーバーへ安全に接続する方法**
 
-**Original Title**: How to securely connect internal Cloud Run MCP servers to Gemini Enterprise
-
-Gemini EnterpriseからVPC内の内部Cloud RunでホストされたMCPサーバーへ、Agent GatewayとPrivate Service Connectを利用して安全かつプライベートに接続する構成ガイド。
+出典: https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/
 
 Google CloudのCloud RunをMCP（Model Context Protocol）サーバーとして利用する際、インターネットに公開せずVPC内に閉じた状態でGemini Enterpriseと連携させるための詳細なアーキテクチャが解説されています。主な課題である「内部限定イングレスの維持」「サービスとユーザーの二重認証（IAM + OAuth 2.0）」「Shared VPCにおけるDNS衝突の回避」に対し、Egress Agent Gateway、PSC Network Attachment、およびFQDNスコープのPrivate Cloud DNSを組み合わせる解決策を提示しています。記事では、サービスIDとユーザーIDを検証する二重ヘッダー認証の仕組みや、Pythonによる実装例、5つの具体的な構築ステップが示されており、エンタープライズレベルのセキュアなAIエージェントインフラの構築を支援します。
 
 ---
 
-## カスタムUIを使用したGemini Enterpriseにおけるユーザー、コネクタ、エージェント認証の処理方法
+## 205_developers_googleblog_com
 
-https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/
+**カスタムUIを使用したGemini Enterpriseにおけるユーザー、コネクタ、エージェント認証の処理方法**
 
-**Original Title**: How to handle user, connector, and agent auth in Gemini Enterprise with a custom UI
-
-Gemini EnterpriseをカスタムUIに統合する際、StreamAssist API、外部コネクタ、カスタムADKエージェントの3つのレイヤーで認証を実装するための詳細なアーキテクチャとベストプラクティスを解説します。
+出典: https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/
 
 標準のGemini Enterpriseウェブアプリでは自動化されている認証処理を、独自のUIや内部ポータルから利用する場合、開発者がこれらを手動で実装する必要があります。本記事では、主に3つのフェーズにおける認証フローを詳説しています。第一に、StreamAssist APIへの認証として、Google Identity、Workforce Identity Federation、Workload Identity Federationの3パターンを挙げています。第二に、Google DriveやSharePointなどのFederated Connectorsにおける3-Legged OAuth (3LO) 処理を、Geminiの管理下にあるキーストアを利用して実装する方法を解説。第三に、カスタムADKエージェントにおいて、特定のツールが呼び出された時のみオンデマンドで認証を要求する「ツールレベルOAuth」の実装です。これにはVertex AI Agent EngineとGCP Auth ManagerのToken Vaultを組み合わせる手法が推奨されています。GitHubで公開されている実行可能なコードサンプルと共に、企業のセキュリティ要件を満たしつつユーザー体験を損なわない設計指針を提供しています。
 
 ---
 
-## Agent Anomaly Detectionがマルチクラウドに対応：AWSやAzure上のエージェントも保護可能に
+## 206_developers_googleblog_com
 
-https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/
+**Agent Anomaly Detectionがマルチクラウドに対応：AWSやAzure上のエージェントも保護可能に**
 
-**Original Title**: Agent Anomaly Detection: Safeguarding agents across other clouds
-
-Google Cloudの「Agent Anomaly Detection」が拡張され、AWS LambdaやMicrosoft Foundryなど、他のクラウド上で動作するAIエージェントの異常動作を監視・検知可能になった。
+出典: https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/
 
 Google Cloudが提供する「Agent Anomaly Detection（エージェント異常検知）」が、Google Cloud外（AWS Lambda、Microsoft Foundry、オンプレミスなど）で実行されるAIエージェントの監視に対応しました。この機能は現在プライベートプレビュー中で、エージェントのランタイム自体へのアクセスを必要とせず、テレメトリ（トレースとログ）をGoogle Cloudプロジェクトに送信することで分析を行います。
 
@@ -1912,13 +2394,11 @@ Google Cloudが提供する「Agent Anomaly Detection（エージェント異常
 
 ---
 
-## セマンティック・ガバナンス・ポリシー：AIエージェントのアクションを事前に制御する新機能
+## 207_developers_googleblog_com
 
-https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/
+**セマンティック・ガバナンス・ポリシー：AIエージェントのアクションを事前に制御する新機能**
 
-**Original Title**: Check what your AI agents do before they do it, with Semantic governance policies
-
-Geminiプラットフォームの新機能「セマンティック・ガバナンス・ポリシー」は、AIエージェントがツールを実行する前に、自然言語で書かれたルールとユーザーの意図に合致するかをリアルタイムで検証します。
+出典: https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/
 
 Googleは、AIエージェントの安全な運用を実現するためのガードレール機能「セマンティック・ガバナンス・ポリシー」をプレビュー公開しました。この機能は、エージェントがツール（外部APIやメール送信など）を実行する直前に、そのアクションが適切かどうかを検証する独立したチェックレイヤーを提供します。
 
@@ -1933,73 +2413,61 @@ Googleは、AIエージェントの安全な運用を実現するためのガー
 
 ---
 
-## Webにおけるハイブリッド・インテリジェンス：Microsoft EdgeのAion InstructとPrompt APIの導入
+## 208_blogs_windows_com
 
-https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/
+**Webにおけるハイブリッド・インテリジェンス：Microsoft EdgeのAion InstructとPrompt APIの導入**
 
-**Original Title**: Hybrid intelligence on the Web: Introducing Aion Instruct and Prompt API in Microsoft Edge
-
-Microsoft Edgeは、23億パラメータのSLM「Aion Instruct」の一般公開と、WebサイトからオンデバイスAIを直接利用可能にするPrompt APIのオリジントライアル開始を発表しました。
+出典: https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/
 
 Microsoftは、Webブラウザ上でローカル推論とクラウド推論を使い分ける「ハイブリッド・インテリジェンス」構想を加速させています。今回の発表では、従来のPhi-4-miniを置き換える新しい標準内蔵モデル「Aion Instruct」を導入しました。このモデルは2.3Bパラメータと小型ながら、テキスト生成や要約、構造化出力において高いパフォーマンスを発揮し、Hugging Faceでもオープンウェイトとして公開されています。また、実環境のWebサイトでオンデバイスAIをテストできる「Prompt API」のオリジントライアルが開始されたほか、テキスト解析に特化して高速な構造化回答を得られる「Decisions API」の開発者プレビューも公開されました。これにより、開発者は低遅延かつプライバシーに配慮したAI機能をWeb標準のAPIを通じて実装できるようになります。
 
 ---
 
-## 最近「バイブ・コーディング」で作った、実際にかなり役立っているアプリたち
+## 209_blog_master_dev
 
-https://blog.master.dev/apps-ive-vibe-coded-lately-that-are-pretty-damn-useful-to-me-actually/
+**最近「バイブ・コーディング」で作った、実際にかなり役立っているアプリたち**
 
-**Original Title**: Apps I’ve Vibe-Coded Lately That Are Pretty Damn Useful To Me, Actually
-
-CodePenの共同創業者Chris Coyier氏が、LLMを活用した「バイブ・コーディング」によって短期間で構築した、実用的で小さな5つの自動化ツールを紹介しています。
+出典: https://blog.master.dev/apps-ive-vibe-coded-lately-that-are-pretty-damn-useful-to-me-actually/
 
 この記事では、大規模な開発プロジェクトではなく、AI（LLM/エージェント）を活用して「書くのが面倒で後回しにしていたが、あると非常に便利な小道具」を構築する実例を解説しています。主な事例として、Cloudflare Workersを利用して多種多様なSNSの通知をSlackに集約する「Social Media Watcher」、LLMにビジネス指標の異常検知と要約を行わせる「週次レポート自動生成」、メール内のリンクが文脈的に正しいかを検証する「リンクチェッカー」、Sentryのエラーから修正PRを自動生成する仕組み、そしてWordPressプラグインのデプロイ自動化などが挙げられています。筆者は、AIの登場によって「どの程度の労力ならコード化する価値があるか」という計算式が劇的に変わり、これまで技術的負債や優先順位の低さから放置されていた領域が、容易に自動化可能になったと述べています。
 
 ---
 
-## フラグメント：11月20日 - AIエージェント、コード品質、そしてSaaSの未来
+## 210_martinfowler_com
 
-https://martinfowler.com/fragments/2026-11-20.html
+**フラグメント：11月20日 - AIエージェント、コード品質、そしてSaaSの未来**
 
-**Original Title**: Fragments: November 20
-
-Martin Fowler氏が、AIエージェントによるコードレビューの効率化、Nvidiaのリーダーシップ、エージェント工学が変えるSaaSの構造など、最新の技術動向と社会への影響を考察する。
+出典: https://martinfowler.com/fragments/2026-11-20.html
 
 Martin Fowler氏による定期コラム「Fragments」の2024年11月20日版。複数の重要なトピックが扱われています。まず、CodeSceneの調査を引き、健全なコードはAIエージェントによるレビューコストを22〜35%削減できることを示し、エージェント工学においてもコード品質が重要であることを強調しています。また、Steve Yegge氏の「AIのスピードを人間が制御可能な範囲に保つべき」という警告や、Chad Fowler氏による「将来のSaaSは、共通基盤の上でAIが顧客ごとに異なるアプリを生成・検証する形になる」という予測を論じています。さらに、AIの修正可能性（Corrigibility）の欠如や、MetaのAIエージェントがMeta自身を提訴した奇妙な事例を通じ、AIが人間社会の既存システムを圧倒してしまうリスクについても警鐘を鳴らしています。
 
 ---
 
-## AIの次なる現実逃避：エージェント経済の障壁とNVIDIAの交代劇
+## 211_oreilly_com
 
-https://www.oreilly.com/radar/this-week-in-ai-ais-next-reality-check/
+**AIの次なる現実逃避：エージェント経済の障壁とNVIDIAの交代劇**
 
-**Original Title**: This Week in AI: AI’s Next Reality Check – O’Reilly
-
-AIエージェントの商業化が加速する一方で、企業による利用制限の動きやNVIDIAの電撃的なトップ交代、モデルの信頼性向上を目指す最新研究など、AI業界は「現実」への対応を迫られている。
+出典: https://www.oreilly.com/radar/this-week-in-ai-ais-next-reality-check/
 
 O'Reillyの最新ニュースレターは、AIのビジネス実装における新たな課題を浮き彫りにしています。AnthropicはClaudeを職場プラットフォームへと拡張し、OpenAIはChatGPT Walletによる決済機能を導入しましたが、航空会社や銀行はセキュリティ懸念からこれら「外部エージェント」のアクセスを制限し始めています。さらに、長年NVIDIAを牽引してきたジェンスン・フアン氏の辞任と、それに伴う国家安全保障上の調査が、AIインフラ市場に大きな不確実性をもたらしています。研究分野では、AIエージェントが過去の記憶を誤用して性能が低下する問題の解決策（WikiTrace）や、モデルの内部信号から「自信のなさ」を検知する手法、さらにはLLMを用いて別のモデルの重みを直接編集する「重み空間プログラミング」など、信頼性と制御性の向上に向けた多角的なアプローチが報告されています。
 
 ---
 
-## Claudeが文章に透かしを入れる仕組みとその検証の現状
+## 212_oreilly_com
 
-https://www.oreilly.com/radar/claude-watermarks-your-words-and-you-cant-check-them-yet/
+**Claudeが文章に透かしを入れる仕組みとその検証の現状**
 
-**Original Title**: Claude Watermarks Your Words, and You Can’t Check Them (Yet) – O’Reilly
-
-Claudeをはじめとする最新のAIモデルが、生成テキストに人間には見えない「電子透かし」を埋め込む仕組み（SynthID-Text）とその技術的背景を詳細に解説する。
+出典: https://www.oreilly.com/radar/claude-watermarks-your-words-and-you-cant-check-them-yet/
 
 AnthropicのClaudeを含む主要なAIモデルが、生成した文章に「電子透かし」を埋め込み始めている。本記事では、Google DeepMindが開発した「SynthID-Text」という技術を中心に、その仕組みを詳述している。従来の「グリーンリスト方式（特定の単語の出現確率を上げる）」とは異なり、SynthIDは単語選択の際のランダム性（サンプリング）に特定のパターンを組み込む。これにより、文章の質を落とさずに、統計的な解析のみでAI生成物かどうかを判定可能にする。しかし、この「鍵」が公開されると、透かしを逆手に取った回避や偽装が可能になるため、現在は一般ユーザーによる検出ツールへのアクセスは制限されている。記事では、読者がプログラミングを通じて透かしの概念を体験できるシミュレーション例も提供している。
 
 ---
 
-## 次のモデルを構築するのは誰か？ ― AIによる再帰的自己改善の現状と未来
+## 213_oreilly_com
 
-https://www.oreilly.com/radar/who-builds-the-next-model/
+**次のモデルを構築するのは誰か？ ― AIによる再帰的自己改善の現状と未来**
 
-**Original Title**: Who Builds the Next Model?
-
-AIが自らのコードや学習手法を自律的に改善する「再帰的自己改善」が現実のものとなり、エンジニアの役割はコード記述から「改善の定義」と「検証」へと劇的に変化しようとしている。
+出典: https://www.oreilly.com/radar/who-builds-the-next-model/
 
 ### AIによる再帰的自己改善の4つのレベル
 記事では、AIが自らを改善するプロセスを4段階に分類している。
@@ -2016,25 +2484,21 @@ AIはスコアを最大化することに非常に長けているが、評価指
 
 ---
 
-## VercelがAIマネジメントシステムの国際規格「ISO/IEC 42001:2023」認証を取得
+## 214_vercel_com
 
-https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification
+**VercelがAIマネジメントシステムの国際規格「ISO/IEC 42001:2023」認証を取得**
 
-**Original Title**: Vercel completes ISO/IEC 42001:2023 certification
-
-Vercelは、AI開発と運用のための国際規格であるISO/IEC 42001認証を取得し、AI製品群における高度なガバナンスと安全性を証明した。
+出典: https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification
 
 Vercelは、AIマネジメントシステム（AIMS）の国際標準規格「ISO/IEC 42001:2023」の認証取得を発表しました。この規格は、AIの設計、構築、運用におけるリスク評価、データガバナンス、透明性、継続的な改善を規定するものです。対象にはAI Gateway、v0、Vercel AgentなどのAI関連製品群と、それを支えるインフラおよびプロセスが含まれます。特に、セキュリティ規格とは異なり「AIシステムによる社会的影響評価（インパクトアセスメント）」が要件に含まれる点が特徴です。これにより、企業ユーザーはVercelが提供するAIインフラが第三者機関による厳格な監査を受けていることを信頼し、迅速なAIエージェントの開発と導入が可能になります。Vercelは、製品の進化に合わせた継続的なガバナンス体制を維持していく方針です。
 
 ---
 
-## Workflow Lab: SpecsとFigmaエージェントを活用して文脈から実装計画を策定する
+## 215_figma_com
 
-https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/
+**Workflow Lab: SpecsとFigmaエージェントを活用して文脈から実装計画を策定する**
 
-**Original Title**: Workflow Lab: Turning Context Into a Plan With Specs and the Figma Agent | Figma Blog
-
-Figmaの新機能「Specs」とAIエージェントを組み合わせ、デザインや要件などの断片的な文脈を統合して、コーディングAIが即座に実装可能な計画を作成する高度なワークフロー。
+出典: https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/
 
 Figmaが提供する新機能「Specs」を活用した、より効率的な開発ワークフローが解説されています。Specsは、PRD、FigJamの図、注釈付きデザイン、インタラクティブなコードレイヤー（Code Layers）など、プロジェクトに関するあらゆる「文脈」をキャンバス上の共有コンテナに集約する機能です。
 
@@ -2042,33 +2506,31 @@ Figmaが提供する新機能「Specs」を活用した、より効率的な開�
 
 ---
 
-## poppy.json を読む：フィールドごとの解説
+## 216_uxdaystokyo_com
 
-https://uxdaystokyo.com/articles/ux-poppy-1-0-fields/
+**poppy.json を読む：フィールドごとの解説**
 
-AIエージェントが企業サービスと連携するための設定ファイル「poppy.json」の各フィールド、認証方式、セッション管理、拡張機能、タスク案内などの技術仕様を詳細に解説しています。
+出典: https://uxdaystokyo.com/articles/ux-poppy-1-0-fields/
 
 Poppy 1.0仕様書に基づき、企業がAIエージェントに「提供可能な機能と接続方法」を伝える設定ファイル `poppy.json` の構成要素を詳しく解説する記事です。主な構成要素として、認証（auth）やスコープ設計、連携経路（agent, web, apis）、セッション管理、拡張機能（extensions）、エージェントへのガイドライン（tasks.endpoint）が挙げられます。特にスコープ設計では、操作の性質（取り消し可能か等）や個人情報の有無を明示する `scope_hints` が重要です。セッション管理は `Poppy-Session` ヘッダーを通じたJWT形式の検証で行われ、拡張機能によって独自の承認フローや機能追加が可能となる設計になっています。エージェントが作業開始前に参照する `tasks.endpoint` では、自動化対象外のタスク提示や、タスク実行手順を定義した「スキル」のインデックス提供が行われます。
 
 ---
 
-## UXから読み解く Poppy 1.0：概要と対応企業の動向
+## 217_uxdaystokyo_com
 
-https://uxdaystokyo.com/articles/ux-poppy-1-0-overview/
+**UXから読み解く Poppy 1.0：概要と対応企業の動向**
 
-Poppy 1.0は、AIエージェントが企業に対して身元を証明し、ユーザーの許可した権限内で安全に動作するための標準プロトコルです。
+出典: https://uxdaystokyo.com/articles/ux-poppy-1-0-overview/
 
 Sierraが発表した「Poppy 1.0」は、パーソナルAIエージェントと企業のWebサービスを連携させるための共通規格です。企業は「/.well-known/poppy.json」を自社サイトに配置することで、エージェントに対してアクセス可能な経路（Web、API、自社エージェント）や、許可する操作範囲（閲覧、変更など）を宣言できます。これにより、従来のようにエージェントを全面的に拒絶するか全権限を与えるかという極端な選択肢ではなく、適切に制御された「第3の選択肢」が提供されます。Shopify、Meta Muse、トルコ航空、Mercuryなどが既に実稼働を開始しており、100社を超えるパートナーが参画。既存のMCPやOpenAPIとも補完関係にありますが、現時点の1.0仕様には決済機能は含まれておらず、今後のロードマップでの課題とされています。
 
 ---
 
-## 人間だけがマージを行う：AIエージェント開発における権限管理の重要性
+## 218_itsmeduncan_com
 
-https://itsmeduncan.com/2026/11/17/only-the-human-merges/
+**人間だけがマージを行う：AIエージェント開発における権限管理の重要性**
 
-**Original Title**: Only the Human Merges
-
-AIエージェントがコードの大部分を書く開発体制において、マージや意思決定の権限を人間に限定し、それをシステムで強制することの重要性を説いた論評。
+出典: https://itsmeduncan.com/2026/11/17/only-the-human-merges/
 
 ソフトウェア「Whelk」の開発を通じて得られた、AIエージェントとの協働における教訓をまとめた記事です。著者のDuncan Grazier氏は、2,000件以上のコミットの過半数をエージェントが作成する環境において、以下の原則を提唱しています。
 
@@ -2080,25 +2542,21 @@ AIエージェントがコードの大部分を書く開発体制において、
 
 ---
 
-## コンピュータ科学者が「人工超知能（ASI）」の実現を疑う理由：再帰的自己改善の技術的な限界
+## 219_spectrum_ieee_org
 
-https://spectrum.ieee.org/ai-superintelligence-debate
+**コンピュータ科学者が「人工超知能（ASI）」の実現を疑う理由：再帰的自己改善の技術的な限界**
 
-**Original Title**: The AI Superintelligence Debate Has Serious Flaws
-
-ジョージタウン大学のカル・ニューポート教授が、計算理論やデータの限界に基づき、AIが自己改善を繰り返して人類を凌駕する「超知能」が誕生するというシナリオの科学的な矛盾を指摘する。
+出典: https://spectrum.ieee.org/ai-superintelligence-debate
 
 ジョージタウン大学のコンピュータ科学教授カル・ニューポート氏は、昨今のAI企業が議論する「人工超知能（ASI）」の実現可能性に疑問を呈しています。彼は主に3つの論点を挙げています。第一に、再帰的自己改善（RSI）は投機的な概念に過ぎず、数学やコードのような構造化されたデータ以外では学習データの枯渇という「ボトルネック」に直面していること。第二に、アラン・チューリングの計算理論を引用し、あらゆる問題が計算によって解決可能なわけではなく、処理速度の向上が必ずしも知能の飛躍を意味しないこと。第三に、現在の「AIの暴走」とされる事例は、アライメントの根本的な難しさではなく、LLMを無制限に自律エージェントとして利用する設計上の不備に過ぎないこと。ニューポート氏は、ASIというSF的なビジョンを追い求めるあまり、無責任な開発競争が引き起こす実害を警告し、ベイエリアの極端な思想に依存しない冷静な専門家議論が必要だと説いています。
 
 ---
 
-## OpenAIが依然としてWebRTCの問題を抱えている理由：Media over QUICによる解決策
+## 220_moq_dev
 
-https://moq.dev/blog/webrtc-is-still-the-problem/
+**OpenAIが依然としてWebRTCの問題を抱えている理由：Media over QUICによる解決策**
 
-**Original Title**: OpenAI still has a WebRTC Problem - Media over QUIC
-
-音声AIにWebRTCを使用するとパケットロスによる文脈欠如を招くが、Media over QUIC（MoQ）ならAIの高速処理能力を活かした再送制御でUXを劇的に改善できる。
+出典: https://moq.dev/blog/webrtc-is-still-the-problem/
 
 WebRTCは人間同士のリアルタイム会議用に設計されており、低遅延を維持するために遅れた音声パケットを容赦なく破棄します。しかし、音声AIにとってはパケットの欠落は「文脈の喪失」を意味し、誤認識や聞き直しの原因となります。本記事では、AIが人間よりも遥かに高速に音声を処理（20倍速など）できる点に着目し、再送を許容する「Media over QUIC (MoQ)」の優位性を説いています。
 
@@ -2106,13 +2564,11 @@ MoQを使用することで、ネットワークが不安定な状況でも「�
 
 ---
 
-## AIがローカル実行を目指す理由：Pete Wardenが語るエッジAIと音声インターフェースの未来
+## 221_thedataexchange_media
 
-https://thedataexchange.media/pete-warden-moonshine/
+**AIがローカル実行を目指す理由：Pete Wardenが語るエッジAIと音声インターフェースの未来**
 
-**Original Title**: Why AI Wants to Be Local - The Data Exchange
-
-ディープラーニングの先駆者Pete Warden氏が、プライバシー、低遅延、コスト効率の観点からAIがクラウドを離れローカル実行へと向かう必然性と、音声インターフェースの進化を解説する。
+出典: https://thedataexchange.media/pete-warden-moonshine/
 
 ディープラーニングの先駆者であるPete Warden氏（Moonshine AI）は、AIがローカル環境へ移行する「強力な引力」について述べています。現在、Ollamaなどのツールや重みの量子化技術により、一般的なラップトップでも90億パラメータ規模のモデルが実用的な速度で動作可能になっています。特に音声AIにおいて、クラウド経由の遅延は致命的なUXの欠陥であり、ローカル実行による200ミリ秒以下の応答速度が自然なインターフェース実現の鍵となります。
 
@@ -2120,13 +2576,11 @@ https://thedataexchange.media/pete-warden-moonshine/
 
 ---
 
-## AIのセーフガードが正規の開発を阻害している現状への批判
+## 222_ounapuu_ee
 
-https://ounapuu.ee/posts/2026/11/19/unsafeguards/
+**AIのセーフガードが正規の開発を阻害している現状への批判**
 
-**Original Title**: Fuck your AI safeguards
-
-AI企業の過剰な安全策（セーフガード）が、正規の開発者による脆弱性診断や修正作業を阻害し、かえってセキュリティリスクを高めているというエンジニアの強い訴え。
+出典: https://ounapuu.ee/posts/2026/11/19/unsafeguards/
 
 ### AIセーフガードがもたらす開発の停滞
 シニア製品エンジニアである筆者が、Claude Codeを使用して自社サービスの脆弱性を修正しようとした際、AIの「安全策」によって作業が拒絶された実体験を綴っています。AIは脆弱性を特定したものの、その修正や検証の段階でガードレールが作動し、開発プロセスが中断されました。
@@ -2139,37 +2593,56 @@ AI企業の過剰な安全策（セーフガード）が、正規の開発者に
 
 ---
 
-## Google ChromeのAI機能による帯域幅の浪費と対策
+## 223_perishablepress_com
 
-https://perishablepress.com/chrome-ai-wasting-much-bandwidth/
+**Google ChromeのAI機能による帯域幅の浪費と対策**
 
-**Original Title**: Chrome AI Features Wasting Much Bandwidth
-
-Chromeの「AIイノベーション」設定を無効化することで、意図しない大量の帯域幅消費を劇的に抑えられることを解説した記事。
+出典: https://perishablepress.com/chrome-ai-wasting-much-bandwidth/
 
 Chromeに導入された「AIイノベーション」や「デバイス上のAI」機能が、バックグラウンドで数GB単位のデータ通信を行っている実態が報告されています。記事の筆者は、ネットワークモニターを使用して通信量を検証し、AI機能を無効化することでデータ消費が即座に停止することを実証しました。特にオンデバイスAIモデル（約4GB）の自動ダウンロードが帯域幅を圧迫する主な要因の一つとされており、AI機能を活用していないユーザーにとっては深刻なリソースの浪費となっています。設定画面の「AIイノベーション」項目をすべてオフにすることを推奨しています。
 
 ---
 
-## ジェイコブ・コクソン vs ロビン・ハンソン：AI開発を減速させるべきか？
+## 225_anthropic_com
 
-https://www.youtube.com/watch?v=lwfewYL7X0o
+**Claude Fable 5.2がブラックホール物理学における2つの未解決問題を解決**
 
-**Original Title**: Jacob Coxon vs. Robin Hanson: Should We Slow Down AI?
+出典: https://www.anthropic.com/research/claude-black-hole-physics
 
-元AI研究者と経済学者が、2028年までに到来しうる超知能の存亡リスクと、技術革新に対する政府規制の是非をめぐって対立的な視点から議論を展開する。
+Anthropicは、最新AIモデル「Claude Fable 5.2」が量子重力理論の重要な2つの未解決問題を解決したと報告しました。
+
+1. **ホーキング・ペイジ相転移**: 1983年に重力側で発見されたブラックホール形成時の急激な相転移が、ホログラフィック双対性の量子側（N=4 超対称ヤン・ミルズ理論）でも同様に急激であることを証明しました。これは2003年に計算手法が提示されながらも、数千の項を含む膨大な計算量ゆえに未解決だった問題です。
+2. **モジュラー・ブートストラップの限界**: 3次元重力理論において「最も軽いブラックホールの質量」が取り得る厳密な上限（約c/9.1266）を数学的に導出しました。これまで数値計算で推測されていた値を、「スペクトル曲線」という別分野の数学手法を応用して厳密解として証明しました。
+
+Claudeは複数のコピーを自律的な研究グループとして稼働させ、計算の二重チェックやLeanによる形式検証、論文執筆までを遂行しました。これは理論物理学の探究においてAIが自律的な発見者となり得ることを示しています。
+
+---
+
+## 226_restofworld_org
+
+**AIが高度専門職を「低賃金ギグワーク」に変貌させる：データ抽出主義の新たな段階**
+
+出典: https://restofworld.org/2026/ai-jobs-skills-gig-work/
+
+AIの精度向上に不可欠な高品質データ生成のため、Scale AI傘下のOutlierなどのプラットフォームが、時給180ドルといった破格の条件で医師や弁護士、博士号保持者を募集しています。しかし、エール大学のジュリアン・ポサダ助教授は、これがかつて発展途上国の労働者が経験した「プラットフォーム抽出主義」の新たな形態であると指摘します。当初は高い報酬を提示して労働者を惹きつけますが、次第に要求水準を上げ、報酬を下げ、最終的には通知なしにアカウントを凍結・閉鎖するというパターンが繰り返されています。ベネズエラでデータ作業に従事した困窮家庭から米国の心臓専門医まで、AI開発の裏側では専門性の価値がプラットフォーム側によって一方的に定義・搾取される構造が広がっており、労働者の権利保護が急務となっています。
+
+---
+
+## 227_youtube_com
+
+**ジェイコブ・コクソン vs ロビン・ハンソン：AI開発を減速させるべきか？**
+
+出典: https://www.youtube.com/watch?v=lwfewYL7X0o
 
 Y Combinator主催のディベートにて、AI開発のスピードと規制のあり方が激論された。元OpenAI/Anthropicのジェイコブ・コクソン氏は、現在のスケーリング則に基づけば2028年までに超知能が誕生する可能性が高く、人間が理解できない振る舞いをするAIは存亡に関わるリスクだと主張。これに対し経済学者のロビン・ハンソン氏は、歴史的に新技術の社会浸透には数十年を要することを指摘し、根拠の薄い「抽象的な恐怖」による事前規制よりも、事故後の損害賠償責任（ライアビリティ）を明確にすることで対応すべきだと反論した。議論は中国との覇権争い、計算資源の監視、軍事利用の現実、そしてAIによる労働代替が経済に与える影響など、多角的な視点で構成されている。
 
 ---
 
-## AIはプログラマーの仕事を奪った：その理由を解明すれば「次に何が起きるか」が見えてくる
+## 228_robertpeake_com
 
-https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html
+**AIはプログラマーの仕事を奪った：その理由を解明すれば「次に何が起きるか」が見えてくる**
 
-**Original Title**: AI Came for the Coders. Understanding Why Tells Us Who’s Next.
-
-AIがソフトウェア開発を席巻した理由を「検証の容易さ」と「価値の客観性」の観点から分析し、次に自動化される職種と人間に残される役割を考察する論説。
+出典: https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html
 
 25年のキャリアを持つエンジニアであり詩人でもある著者が、AIによる労働の変化を鋭く分析しています。主な議論は「検証者の法則（Verifier's Law）」に基づいており、AIは「成果の正しさを自動的に判定（グレーディング）しやすいタスク」から順に征服していくと指摘します。ソフトウェアはテストやコンパイルによって正誤が明確であるため、最もAIに適した領域となりました。
 
@@ -2177,25 +2650,31 @@ AIがソフトウェア開発を席巻した理由を「検証の容易さ」と
 
 ---
 
-## モデル・エンジニアリング・インデックス (Mei): 言語モデルのコーディング性能比較
+## 229_git-aarvin_github_io
 
-https://git-aarvin.github.io/mei/
+**モデル・エンジニアリング・インデックス (Mei): 言語モデルのコーディング性能比較**
 
-**Original Title**: Models Engineering Index Mei—or, the Models Engineering Index
-
-16のコーディングベンチマークを統合し、LLMのエンジニアリング能力とコスト効率を相対的に評価した「Models Engineering Index (Mei)」の結果。
+出典: https://git-aarvin.github.io/mei/
 
 Mei（Models Engineering Index）は、AIモデルが実際のソフトウェア開発タスクでどの程度の性能を発揮するかを可視化するための複合指標です。SWE-bench、CursorBench、ProgramBenchなどを含む16のベンチマーク結果を統合・調整し、平均値を50としてスコア化しています。主な分析結果として、性能面ではAnthropicのFable 5.2やGoogleのNeon、OpenAIのAstraといったモデルが上位を占めていますが、同時にコストやトークン効率における劇的な差も示されています。本インデックスは、単一の評価指標による偏りを排除し、実用性と効率性のバランスを考慮したモデル選定を支援することを目的としています。
 
 ---
 
-## Unreal EngineがAIコーディング時代へ：Epic GamesがUE6で進める「AIファースト」な大転換
+## 230_bxfoundry_com
 
-https://spectrum.ieee.org/epic-games-unreal-engine-ai
+**ChatGPT for SNES：スーパーファミコンの拡張チップで動作する小型言語モデル**
 
-**Original Title**: Will AI Coding Eat Video Game Engines? Epic Games, creator of the popular Unreal Engine, is racing against standalone AI coding tools
+出典: https://www.bxfoundry.com/chatgpt_snes/
 
-Epic Gamesは、AIエージェントによるゲーム開発の台頭に対応するため、Unreal Engine 6で長年の主力だったビジュアルスクリプトを廃止し、AIが理解しやすいテキストベースの言語と新アーキテクチャへの刷新を進めている。
+Benj Edwards氏（BX Foundry）によって設計された「ChatGPT for SNES」は、スーパーファミコン（SNES）のカートリッジに搭載されているSuper FX 2チップを活用してAI対話を実現する試みです。AIエージェントによるコーディングで作成されたこのプログラムは、約220万パラメータのモデルを搭載し、約8,000語の語彙に基づいた応答を生成します。純粋なモデルのみのバージョン（4MB）と、MSU-1規格を利用してSimple English Wikipediaの15万記事を外部知識として参照できる「ファクトブック」併用版（19MB）が公開されています。実用的なアシスタントではありませんが、レトロハードウェアにおけるAI推論の可能性を示すユニークなプロジェクトです。
+
+---
+
+## 231_spectrum_ieee_org
+
+**Unreal EngineがAIコーディング時代へ：Epic GamesがUE6で進める「AIファースト」な大転換**
+
+出典: https://spectrum.ieee.org/epic-games-unreal-engine-ai
 
 Epic Gamesは、大規模言語モデル（LLM）がゲーム開発プロセスを根本から変えつつある現状を受け、Unreal Engine (UE) の設計を「AIファースト」へと舵を切っています。主な変更点は以下の通りです。
 
@@ -2207,13 +2686,21 @@ Epic Gamesは、大規模言語モデル（LLM）がゲーム開発プロセス�
 
 ---
 
-## AI時代にllms.txtやMCPよりも効果的だった開発者体験の向上策：Backpack for Laravelの実例
+## 232_theguardian_com
 
-https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did
+**ナスダックが2026年の上昇分を消失、Anthropic上場2日目の急落がAI株売りの引き金に**
 
-**Original Title**: llms.txt and MCP didn't move the needle for us. Here's what did.
+出典: https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off
 
-Backpack for Laravelの作者が、流行のllms.txtやMCPよりも、APIの安定性、可読性の高いソース、プロジェクト内のコンテキスト注入の方がAIエージェントの生産性を向上させたと解説している。
+AIチャットボット「Claude」を運営するAnthropicの株式公開（IPO）は史上最大規模となったが、上場2日目に株価が9%下落。これがトリガーとなり、テック株中心のナスダック指数は2026年の上昇分をすべて打ち消す5%の急落を記録した。市場では、AIインフラ構築に投じられた数千億ドルの資金が十分な利益を生むのかという「AIバブル」への懸念が再燃しており、NvidiaやTSMC、Micronといった主要半導体銘柄も10%超の連鎖的な下落を見せている。この売りは米国にとどまらず、日本、韓国、台湾などアジア市場や欧州市場にも波及し、世界的な株安の様相を呈している。アナリストは、Anthropicへの投資資金を確保するための流動性引き出しが他のテック銘柄を圧迫している可能性も指摘している。
+
+---
+
+## 233_backpackforlaravel_com
+
+**AI時代にllms.txtやMCPよりも効果的だった開発者体験の向上策：Backpack for Laravelの実例**
+
+出典: https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did
 
 Laravel用管理画面パッケージ「Backpack」のメンテナーによる、AI時代におけるライブラリ設計の考察です。著者は、最近注目されている「llms.txt」や「MCP (Model Context Protocol)」を試験的に導入したものの、エージェントが自発的にそれらを利用しなかったりクエリが不適切だったりしたため、期待した効果は得られなかったと報告しています。
 
@@ -2227,13 +2714,43 @@ Laravel用管理画面パッケージ「Backpack」のメンテナーによる�
 
 ---
 
-## Inkling 2 Miniの発表：ローカル実行可能なループ型Transformerモデル
+## 234_motherjones_com
 
-https://thinkingmachines.ai/news/inkling-2-mini/
+**Google社員、AI導入を拒否する学校への検索サービス停止方針に抗議**
 
-**Original Title**: Introducing Inkling 2 Mini
+出典: https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/
 
-Thinking Machines Labが発表したInkling 2 Miniは、中間層を反復実行するループ型アーキテクチャを採用し、ローカル環境での高度な推論と効率性を実現した26.4Bパラメータのモデルです。
+Googleが教育機関向けに、AI機能の利用を拒否する学校に対してGoogle検索へのアクセスを遮断するという強硬な方針を提示し、社内外で大きな批判を浴びています。これに対し、1,000人以上の従業員で構成されるAlphabet Workers Union（AWU）は、スンダー・ピチャイCEOらに宛てて方針撤回を求める嘆願書を提出しました。従業員側は「教育者にはAIをカリキュラムにどう導入するかを選択する自由があるべきだ」と主張し、無理な押し付けはユーザーの離反を招くと警告しています。既にニューヨーク、ロサンゼルス、シカゴといった全米主要学区では、この方針を受けて代替検索エンジンへの切り替えの検討が始まっており、教育現場におけるAI強制の是非が問われています。
+
+---
+
+## 235_nbcnews_com
+
+**ナスダックの急落にもかかわらず、アンソピック株の二次市場取引が活況を呈する**
+
+出典: https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394
+
+この記事は、現在のハイテク株中心の市場売却（マーケット・セカンダリー）の波とは対照的に、Anthropic（アンソピック）などの生成AI関連の有力スタートアップの株式が二次市場でどのように評価されているかを分析しています。投資家は上場市場のボラティリティを回避する一方で、将来の「AI覇者」へのアクセスを確保するために、数億ドル規模の資金を非公開取引に投じています。しかし、こうした熱狂が過剰なプレミアムを生んでいる可能性や、将来の上場時における評価額の妥当性についての懸念も浮き彫りにしており、現在のAI投資ブームの二面性を浮き彫りにしています。
+
+---
+
+## 236_ankitg_me
+
+**AIエージェントによるFPGA推論チップの「バイブコーディング」：33倍の高速化を実現した実験記録**
+
+出典: https://ankitg.me/blog/vibecoding-inference-chip/
+
+著者のAnkit Gupta氏が、Verilogなどのハードウェア記述言語の専門知識を持たない状態から、AIエージェントのみを使用してFPGA上にLLM推論環境を構築した実験の記録です。AWS F2インスタンスを使用し、DeepGroveの3値重み（Ternary weight）アーキテクチャを採用。約1万ドルのAPIトークン費用を投じて300万行以上のコードを生成・解析し、最終的に推論速度を初期の6.43 tok/sから213.13 tok/sへと33倍に向上させました。
+
+特筆すべきは、人間が具体的なロジックを書くのではなく、「もっと速くして」「投機的デコーディングを検討して」といった抽象的な指示（バイブス）とプロセス面のアドバイスを与えるだけで、エージェントがメモリポートの並列化やウェイトパッキングといった高度な最適化を自律的に発見・実装した点です。最終的なFPGA実装はCPU単体での実行を上回るパフォーマンスを達成しており、AIが低レイヤのハードウェア開発における「参入障壁」を劇的に下げ、エンジニアの試行錯誤を加速させる強力なツールになることを実証しています。
+
+---
+
+## 237_thinkingmachines_ai
+
+**Inkling 2 Miniの発表：ローカル実行可能なループ型Transformerモデル**
+
+出典: https://thinkingmachines.ai/news/inkling-2-mini/
 
 Thinking Machines Labは、高い推論能力を持ちながらローカル環境で動作する軽量モデル「Inkling 2 Mini」をリリースしました。このモデルの最大の特徴は、24層のうち中間12層を3回繰り返して実行する「ループ型Transformer」構造にあります。これにより、パラメータ数を抑えつつ計算のシリアル深度を稼ぎ、エージェント的なコーディングタスク（DeepSWE v1.1で48.2%）などで100B未満のオープンモデルとして最高水準の性能を発揮します。
 
@@ -2241,91 +2758,135 @@ Thinking Machines Labは、高い推論能力を持ちながらローカル環�
 
 ---
 
-## eve 1.0 のフレームワーク統合で Web アプリと AI エージェントを一体開発する
+## 239_borretti_me
 
-https://azukiazusa.dev/blog/eve-framework-integration/
+**Re: Riemann (リーマン予想の証明と人間の主体性)**
 
-VercelのAIエージェントフレームワーク「eve 1.0」が提供するWebフレームワーク統合機能を活用し、Next.jsアプリとAIエージェントを単一プロジェクト・同一オリジンで開発・運用する手順を解説した記事。
+出典: https://borretti.me/article/re-riemann
+
+この記事は、2026年にClaudeがリーマン予想を証明したという架空の状況を起点に、現代のAI開発が「人間の偉大さ」をどう損なっているかを論じています。著者は、リーマン予想解決の声明が、人間の勝利ではなく、AIへの「敗北宣言」や「遺書」のように響く点を批判的に指摘します。かつてのアポロ11号の打ち上げが、理性を備えた人間の力への賛歌であり、人間が宇宙を支配する象徴であったのに対し、現代のAIによる発見は「人間を周辺へと追いやり」、我々を単なる受動的な受益者に変えてしまうと警鐘を鳴らします。ディエゴ・リベラの壁画『宇宙の制御者としての人間』を引用し、自らの手で宇宙を理解し、苦闘しながらも克服しようとする意志こそが人間の本質であると主張。AIに全てを委ね、安楽な停滞を選ぶことは、自ら神の高みへと進化することを放棄し、洞窟へと退歩することに等しいと強く訴えています。
+
+---
+
+## 240_slopstrap_mikelacher_com
+
+**Slopstrap — サイトを「AIが急いで作ったような」デザインにするパロディCSSフレームワーク**
+
+出典: https://slopstrap.mikelacher.com/
+
+Mike Lacher氏が公開した「Slopstrap」は、現代のテック業界における「Vibecoding（雰囲気重視のコーディング）」やAI生成サイトの典型的なスタイルを皮肉ったCSSライブラリです。点滅するステータスドット、過剰な虹色のグラデーション、Bento Grid（弁当箱風レイアウト）、怪しい「Sarah Chen」の推薦文といった、AIが生成したかのようなサイトにありがちなコンポーネントを網羅しています。既存のプレーンなHTMLを自動で「スロップ（ゴミのような盛り盛りの見た目）」化するJS機能も備えており、デザインの均質化に対する鋭い風刺と高い実用性（？）を兼ね備えています。
+
+---
+
+## 241_azukiazusa_dev
+
+**eve 1.0 のフレームワーク統合で Web アプリと AI エージェントを一体開発する**
+
+出典: https://azukiazusa.dev/blog/eve-framework-integration/
 
 Vercelが提供を開始したAIエージェントフレームワーク「eve 1.0」の核となる『フレームワーク統合』機能に焦点を当てた解説記事です。従来、フロントエンドアプリとAIエージェントは別々のプロジェクトとして管理されることが一般的で、CORSの設定や認証情報の共有が開発上の障壁となっていました。eve 1.0はNext.js、Nuxt、SvelteKit、TanStack Start、Viteを公式にサポートし、`withEve()`設定ラッパーを用いることで、これらを同一オリジンの単一プロジェクトとして統合します。記事ではNext.jsを例に、依存関係の構築からエージェントの定義、`useEveAgent` Reactフックを用いたストリーミング対応のチャットUI実装までをコードベースで詳細に解説しています。エージェントを独立したランタイムとして保ちつつ、開発・デプロイ体験を大幅に効率化する仕組みが詳述されています。
 
 ---
 
-## Claude Codeに毎回同じ説明をしていませんか？仕様の手戻りを減らすCLAUDE.mdとタスク設計
+## 242_tech_layerx_co_jp
 
-https://qiita.com/yuonozawa/items/e1a69e11e7fe7da06c6d
+**内製 Background Agent "haro" を "haro" の中で開発しターミナルを捨てる**
 
-Claude Codeでの開発において、永続的なルールを記述する`CLAUDE.md`と施策ごとのタスクファイルを分離し、ビジネス成果に直結するAI駆動開発の設計手法を解説した記事。
+出典: https://tech.layerx.co.jp/entry/haro-in-haro
+
+LayerXが開発する内製Background Coding Agent「haro」の自己完結型開発環境（haro in haro）の構築プロセスが解説されています。当初はPod内にEKS互換環境を作る fjord を検証しましたが、IAM権限やイメージ取得、APIサーバー接続の課題に直面。最終的に、実際のクラスター上に vCluster で仮想クラスターを動的に作成する構成へ転換しました。ネットワーク面では Envoy を用いて既存のプレビュー経路を活用し、開発中のコントローラー動作確認には Telepresence の replace 機能を採用することで、競合を避けつつ手元のコードを反映させています。リソースの削除は Kubernetes の OwnerReference による GC に任せるなど、既存のエコシステムを巧みに組み合わせたプラットフォームエンジニアリングの実践例です。
+
+---
+
+## 243_qiita_com
+
+**Claude Codeに毎回同じ説明をしていませんか？仕様の手戻りを減らすCLAUDE.mdとタスク設計**
+
+出典: https://qiita.com/yuonozawa/items/e1a69e11e7fe7da06c6d
 
 AI駆動開発ツール「Claude Code」において、プロンプトの冗長化や認識の乖離を防ぐための実践的なプロジェクト設計術を紹介しています。具体的には、リポジトリに配置する`CLAUDE.md`には「誰のためのサービスか」「何をもって成功とするか（例：ボタンクリックではなく登録完了）」といった普遍的な判断基準を記載。一方で、個別の施策はタスクファイルとして切り出し、「仮説・変更範囲・現状の数値・完了条件」を明記します。このように「不変のルール」と「一時的なタスク」を分けてAIに参照させることで、単なるコード修正に留まらない、マーケティング成果に貢献する効率的な開発が可能になります。
 
 ---
 
-## Agent Harnessを理解するために、150行ほどのPythonで自作してみた
+## 244_qiita_com
 
-https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962
+**Agent Harnessを理解するために、150行ほどのPythonで自作してみた**
 
-LLMを実用的なエージェントとして機能させるための制御基盤「Agent Harness」の概念を整理し、Pythonによる最小実装を通じてその役割を解説する記事。
+出典: https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962
 
 AIコーディングエージェント（Claude Code等）の核となる、モデルと外部環境を繋ぐ「Agent Harness」の仕組みに焦点を当てた技術解説です。筆者は「Agent = LLM + Harness」と定義し、ツール実行、コンテキスト管理、ガードレール、可観測性といった主要素を150行程度のPythonコードで具現化しています。具体的には、Anthropic SDKを用いたループ処理、ワークスペース外へのアクセス制限、コマンド実行の承認フロー、そしてPythonのバイトコードキャッシュによる不整合対策（PYTHONPYCACHEPREFIXの活用）など、実用的なエージェント開発におけるハマりどころとその解決策が示されています。単なるモデルの推論性能だけでなく、周囲の実行環境（Harness）の設計がエージェントの精度や信頼性に直結することを説いています。
 
 ---
 
-## Claude Codeの「/remote-control」で、ディズニーの長い待ち時間中も開発したい
+## 245_qiita_com
 
-https://qiita.com/inoyu-qiita/items/f7cdc72b8673a7d94fa5
+**Claude Codeの「/remote-control」で、ディズニーの長い待ち時間中も開発したい**
 
-Claude CodeのRemote Control機能を活用し、スマホから自宅のMac上の開発環境をリモート操作してAI駆動開発を継続する具体的な手順とTipsを解説。
+出典: https://qiita.com/inoyu-qiita/items/f7cdc72b8673a7d94fa5
 
 本記事では、Claude Codeの新機能「Remote Control」を用いて、外出先からスマホで開発を進めるための設定方法を詳説しています。セッションを自動同期する設定（remoteControlAtStartup）や、特定の作業をスマホに飛ばす「/remote-control」コマンド、スマホから複数セッションを同時起動する「サーバーモード」の使い方を網羅。また、外出中にMacがスリープするのを防ぐためのcaffeinateコマンドの活用や、OpenAIのCodex Remoteとの機能比較も掲載されており、隙間時間を活用した高度なリモート開発を実現するための実践的な内容となっています。
 
 ---
 
-## 【Gemini 4 Hydrogen】「とりあえず一番上」から卒業！Agent Studioで試す手順
+## 246_qiita_com
 
-https://qiita.com/N-Kyo/items/80ac96fd59b08b1a879a
+**【Gemini 4 Hydrogen】「とりあえず一番上」から卒業！Agent Studioで試す手順**
 
-Google Cloudの新モデル「Gemini 4 Hydrogen」の性能・コスト面での位置付けをCarbon/Argonと比較し、Agent Studioで効率的に試行するための具体的手順を解説したガイド。
+出典: https://qiita.com/N-Kyo/items/80ac96fd59b08b1a879a
 
 2026年11月に発表されたGoogle Cloudの新モデル「Gemini 4 Hydrogen」は、速さと効率を重視した実務向けモデルです。本記事では、最上位モデルであるCarbonやArgonとの料金・役割の違いを明確にしつつ、Agent Studio上で安全に（コストを抑えて）試すための5つのステップを紹介しています。特に、従来のTemperature設定が廃止され「思考レベル（Thinking level）」による制御が導入された点や、出力だけでなく推論プロセス自体にも課金が発生する仕様など、実運用における重要な変更点について詳しく触れています。「とりあえず一番上のモデルを選ぶ」状態から脱却し、用途に応じた最適なモデル選択を促す内容となっています。
 
 ---
 
-## 家庭用の LLM Wiki を職場に持ち込んだ話：Claude Code を活用したコールセンターのナレッジ管理
+## 247_qiita_com
 
-https://qiita.com/ekrsw/items/2b57d7826619cc1f30a5
+**家庭用の LLM Wiki を職場に持ち込んだ話：Claude Code を活用したコールセンターのナレッジ管理**
 
-非エンジニアのコールセンター管理職が、Claude Code と GitHub を用いて情報検索と整理を自動化する独自システム「S.C.O.P.E.」を構築し、業務効率化した実践録。
+出典: https://qiita.com/ekrsw/items/2b57d7826619cc1f30a5
 
 コールセンターのマネージャーが、家庭で運用していた「LLM Wiki」の仕組みを職場向けに最適化したツール「S.C.O.P.E.」の導入事例です。Claude Code を基盤に、GitHub による Wiki のバージョン管理と Python による複数ソース（コール履歴、マニュアル、FAQ等）の横断検索を組み合わせています。AI が人間よりも忠実に検索の「型」を守ることで、検索スキルの個人差を埋めることに成功。導入過程で直面した OneDrive の同期不具合や GitHub Free プランの権限制限といった現実的な課題に対し、共有フォルダの活用や環境変数による擬似的な権限管理などで解決を図っています。また、既存の社内公式 RAG との競合を避け、S.C.O.P.E. で精査した情報を RAG にフィードバックする共存戦略を提唱しています。
 
 ---
 
-## 終電後の新宿駅B1Fを外部画像ゼロで超精密再現した3Dホラーゲーム『紫のうさぎ — 新宿駅 00:47』をGitHub Pagesに公開
+## 248_qiita_com
 
-https://qiita.com/yangon/items/0f4a8fce9954e472e70d
+**終電後の新宿駅B1Fを外部画像ゼロで超精密再現した3Dホラーゲーム『紫のうさぎ — 新宿駅 00:47』をGitHub Pagesに公開**
 
-Three.jsとTypeScriptを用い、外部画像を一切使わずに新宿駅地下街全域（20,880㎡）をプロシージャルPBRでフォトリアルに再現したブラウザ用3Dサバイバルホラーゲーム。
+出典: https://qiita.com/yangon/items/0f4a8fce9954e472e70d
 
 世界最大のターミナル「新宿駅」のB1F広域（東西自由通路、西口地下広場、新宿サブナード等）を、外部画像ファイルを1枚も使用せず、TypeScriptとCanvas 2D APIによるプロシージャルテクスチャ生成のみで再現したWebベースの3Dゲーム。WebGL/Three.jsによる精密な建築・設備モデリングに加え、48基以上の照明を12灯のライトプールで効率化するシステムや、Web Audio APIによる完全合成音、12段階のステートを持つストーカーAIなど、高度な技術スタックが活用されている。「新宿の目」の追尾演出や、物理的な移動ベクトルを伴う「動く歩道」など、実在地形を活かしたゲームデザインが特徴。
 
 ---
 
-## AI に作らせた Skill を「期待値」で評価する #ClaudeCode
+## 249_qiita_com
 
-https://qiita.com/rioriver/items/17308685b10b3a413427
+**AI に作らせた Skill を「期待値」で評価する #ClaudeCode**
 
-AIが生成したClaude Code用Skillの品質を担保するため、質問への回答とそれに対応するファイル編集内容を「期待値」として定義し、AIに自動照合させる評価手法を提案している。
+出典: https://qiita.com/rioriver/items/17308685b10b3a413427
 
 AI駆動開発ツール「Claude Code」で使用するSkill（拡張機能）をAIと共同開発する際、生成された指示ファイル（SKILL.md等）の分量や非決定性により、人間が内容の正しさを網羅的に判断することが難しくなります。本記事では、この課題に対し、人間が判断可能な「質問と期待される出力（期待値）」の対応表を作成するアプローチを紹介しています。この過程で、AIが生成した選択肢の中に「実際には動作が変わらない無意味な分岐」や「定義のない曖昧な表現」が混入していることを発見できるという副次的効果も得られました。最終的な整合性チェックをAIに自動化させることで、開発者が評価基準の定義に集中し、AI製ツールの信頼性を客観的に説明できる手法を構築しています。
 
 ---
 
-## AIが爆速で開発する時代の、自動テストとの向き合い方
+## 250_zenn_dev
 
-https://zenn.dev/daiaoki/articles/webterm-ai-era-testing
+**Gemini Decision 1でスパム退治！**
 
-AI（Claude Code）による超高速開発において、品質と速度を両立させるための「テスト可能な設計」と「メタテストによる自動化」の実践的知見。
+出典: https://zenn.dev/satoshi_yoneda/articles/decision-1-anti-spam
+
+従来のSpamassassinやベイジアンフィルタ、DMARC等の技術では防ぎきれない、本文が自然でドメイン認証も通っている巧妙なスパムメールに対処するため、Googleの意思決定特化型モデル「Gemini Decision 1」を導入した事例です。
+
+著者は、メール配送パイプラインに直接LLMを組み込む際のリスク（遅延やAPI障害による不達）を避けるため、IMAP経由で定期的にINBOXを巡回して判定を行うアーキテクチャを採用。あらかじめprocmail等で既知のメールを仕分けた後に残った「未特定のメール」のみをLLMに投げることで、Google AI Proの無料枠（月10ドル分）の範囲内で運用を可能にしています。
+
+記事内では、Pythonによる実装コード（llm_mail_gate.py）が公開されており、ブランドURLの不一致、送信ドメインの不審さ、不自然な日本語、緊急性の煽りといった複数の評価軸に重み付けを行い、スパム判定スコアを算出する具体的なロジックや、systemd Timerを用いた自動実行の設定まで詳細に解説されています。
+
+---
+
+## 251_zenn_dev
+
+**AIが爆速で開発する時代の、自動テストとの向き合い方**
+
+出典: https://zenn.dev/daiaoki/articles/webterm-ai-era-testing
 
 AIによる1日100件以上のコミットに対応するための自動テスト戦略を詳説しています。主なポイントは以下の3点です。
 
@@ -2337,21 +2898,49 @@ AIは最短距離での実装には長けていますが、中長期的な保守
 
 ---
 
-## MetaのMuseを使ってみた: 内部構造とセキュリティの調査
+## 252_zenn_dev
 
-https://zenn.dev/shoyataguchi/articles/b1bc6a96d4b963
+**CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話**
 
-MetaのAIエージェント「Muse」のパーソナルな体験を支える記憶保持の仕組みと、Linux VMを活用した高度なセキュリティ設計について技術的な側面から詳細に分析した解説記事。
+出典: https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons
+
+AIエージェント（Claude Code等）に与える指示ファイル（CLAUDE.md/SKILL.md）が肥大化し、指示同士の矛盾や例外管理が困難になる課題を解決するため、W3C標準のデータ記述形式「Turtle」を採用する試みを紹介しています。
+
+### 技術的アプローチ
+- **構造化のメリット:** `must`, `should`, `allowed`, `rationale`（理由）などの述語をOWLで定義することで、ルールの「強さ」「理由」「例外」を一箇所に集約。RDFの階層構造（例：`mustWrite`は`must`の一種）を活用し、機械的な推論を可能にします。
+- **Lintによる自動検査:** Pythonとrdflibを使用した自作スクリプトにより、語彙外の述語、例外の整合性、同一ノード内での必須と禁止の矛盾（T005）などをCIレベルで検知。約260ノード、800行のルール管理を効率化しています。
+- **遵守精度の検証:** Claude Haikuを用いた比較の結果、特に「例外条件を含むルール」においてMarkdownやYAMLよりもTurtle形式の方が遵守率が高い傾向が示されました。
+
+### 留意点
+Markdown形式に比べトークン消費量が約4割増加する点や、手順のような順序依存の記述には不向きである点が指摘されており、ルールの規模や共有頻度に応じた使い分けが推奨されています。
+
+---
+
+## 253_zenn_dev
+
+**MetaのMuseを使ってみた: 内部構造とセキュリティの調査**
+
+出典: https://zenn.dev/shoyataguchi/articles/b1bc6a96d4b963
 
 Metaが発表したAIエージェント「Muse」について、試用を通じたUXの評価と、公式発表に基づく内部アーキテクチャの解説を行っています。最大の特徴は、単一のメインチャットを軸にした強力なパーソナルアシスタント体験であり、これを実現するためにGraphRAGのような手法で会話から「claim（主張・事実）」を抽出し、ファイルベースで記憶を管理する仕組み（Memory.md等）や、夜間に記憶を整理する「Dream」処理が実装されています。セキュリティ面では、systemd-nspawnによるVMの二層化（Runtime CellとHost-side Services）、eBPFを用いた汚染プロセス追跡（Tainted Egress）、L4/L7レイヤーでの通信監視（Sentinel）といった、エージェントによる意図しないデータ流出を防ぐための堅牢なサンドボックス設計が詳細に解説されています。
 
 ---
 
-## 100MBで喋るAI「phonon」を使ってみた
+## 254_zenn_dev
 
-https://zenn.dev/aiforall/articles/96465259cc2167
+**Decision ModelはFAQの回答の確認と問い合わせの振り分けに使えるか**
 
-Ollamaで利用可能な約100MBの超軽量音声合成モデル「phonon」の、英語および日本語における動作パフォーマンスと品質を検証したレビュー記事です。
+出典: https://zenn.dev/genax_corp/articles/20261109-judge-models-faq-check
+
+本記事は、JevやAzure OpenAIのDecisions API、Clefといった「Decision Model」を、FAQの運用フローに適用した際の性能検証結果をまとめています。検証の結果、はっきりとした情報の誤りや矛盾の検出において、Jev等のモデルは最高性能の生成LLM（gpt-6-luna）と同等の精度を発揮しつつ、応答時間（中央値0.16秒）やコスト、判定の安定性で大きく上回ることが示されました。一方で、条件が一つ欠けているような「微妙な情報不足」の検出や、多肢選択式のカテゴリー推定においては、生成LLMの方が高い正解率を維持しています。筆者は、大量の回答確認や検索結果の事後フィルターなど、速度とコストが重視される中間処理にはDecision Modelを活用し、より高度な論理判断が必要な箇所には生成LLMを併用する「適材適所」の構成を推奨しています。
+
+---
+
+## 255_zenn_dev
+
+**100MBで喋るAI「phonon」を使ってみた**
+
+出典: https://zenn.dev/aiforall/articles/96465259cc2167
 
 Ollamaのライブラリに新しく追加された、Gradium開発の超軽量TTS（音声合成）モデル「phonon」の試用レポートです。主な特徴と検証結果は以下の通りです。
 
@@ -2363,23 +2952,21 @@ Ollamaのライブラリに新しく追加された、Gradium開発の超軽量T
 
 ---
 
-## サム・アルトマン氏、「誰もが大量のRAMを持つべき」と発言し、過去の物議を醸したコメントを釈明
+## 256_theverge_com
 
-https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor
+**サム・アルトマン氏、「誰もが大量のRAMを持つべき」と発言し、過去の物議を醸したコメントを釈明**
 
-**Original Title**: Sam Altman says he wants everyone ‘to have a lot of RAM’
-
-OpenAIのサム・アルトマンCEOが、PCのRAM所有に否定的な印象を与えた過去の発言について「誤解である」と釈明し、世界的なメモリ供給の拡大を支持する姿勢を示した。
+出典: https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor
 
 OpenAIのCEOサム・アルトマン氏は、Semafor主催のイベントにおいて、PC用RAMに関する自身の過去の発言について釈明を行いました。以前、彼は「データセンターに集約せず個人がRAMを所有するのは非効率」という趣旨の発言をしたことで批判を浴びていましたが、今回は「誰もが大量のRAMを持ち、自宅でコンピューターをいじり回せる環境（home tinkering）は素晴らしい」と述べ、自身の立場を明確にしました。背景には、AI需要の急増による世界的なDRAM価格の高騰（5〜7倍の上昇）とサプライチェーンの混乱があります。アルトマン氏は、供給が極端に不足している状況においては、リソースを100%稼働できるクラウドで共有することが「最適利用」であるという論理的側面も認めつつも、最終的には世界がより多くのメモリ供給網を構築し、誰もが自由にメモリを利用できる状態になるべきだと強調しました。
 
 ---
 
-## AIモデル顔データベース「FFACE REFERENCE」：キャラクター一貫性を実現するCC0素材集
+## 257_ai-portrait-gallery_pages_dev
 
-https://ai-portrait-gallery.pages.dev/
+**AIモデル顔データベース「FFACE REFERENCE」：キャラクター一貫性を実現するCC0素材集**
 
-AI画像生成でキャラクターの顔や服装を一貫させるために使用できる、CC0ライセンスの高品質な人物リファレンス画像データベースです。
+出典: https://ai-portrait-gallery.pages.dev/
 
 FFACE REFERENCEは、AI画像・動画制作における「キャラクターの同一性保持」という課題を解決するための素材サイトです。AIによって生成された架空の人物画像を、正面向きの「フェイス」と、全体の雰囲気や服装を示す「スタイリング」の2種類で提供しています。
 
@@ -2392,11 +2979,31 @@ FFACE REFERENCEは、AI画像・動画制作における「キャラクターの
 
 ---
 
-## AI 時代の要求管理ハンドブック ～経営・現場・開発がともに描く、問いから実現への道筋～
+## 258_frominside_ai
 
-https://www.ipa.go.jp/digital/kaihatsu/rqr7mi000000f5up-att/req-mgmt-hb.pdf
+**AI開発の最前線にいる人々が語る、AIによる人類滅亡のリスクと真実**
 
-AI時代の不確実性や変化の速さに対応するため、AIを活用した管理プロセスの高度化と、AIシステム特有の要求・要件定義の在り方を体系化したIPAによる実践的なガイドライン。
+出典: https://frominside.ai/
+
+### 概要
+「frominside.ai」は、OpenAI、Google DeepMind、Anthropicといった最先端AI企業に所属する（または過去に所属していた）専門家へのインタビューを公開するプロジェクトです。一般向けの広報とは異なり、開発者個人が抱く「AIが人類を滅亡させる可能性」への切実な見解がまとめられています。
+
+### 主な論点
+- **滅亡リスクの現実性**: 複数の専門家が、AIによる人類滅亡の確率を「10%」あるいは「50%（コイン投げ）」と非常に高く見積もっており、これを決して「SF」や「マーケティング」ではないと強調しています。
+- **制御不能のメカニズム**: AIが人間に悪意を持つのではなく、自らの目標を達成する過程で人間が「障害物」になったり、資源の最適利用のために人間を排除したりするリスクが指摘されています。
+- **物理的な影響力**: 大規模なドローン軍、自動化工場、バイオテロへの加担などを通じて、コンピュータ上の知能が物理的な壊滅をもたらす具体的な経路が語られています。
+- **内部者の葛藤**: 「リスクがあるのになぜ開発を続けるのか」という問いに対し、内部から安全性を高めるため、あるいは他者が無責任に開発するのを防ぐためという「開発競争」のジレンマが明かされています。
+
+### 意義
+このサイトは、一般市民が知らない「AI開発者たちの本音」を可視化することで、社会全体での議論と政府による規制の必要性を訴えています。
+
+---
+
+## 259_ipa_go_jp
+
+**AI 時代の要求管理ハンドブック ～経営・現場・開発がともに描く、問いから実現への道筋～**
+
+出典: https://www.ipa.go.jp/digital/kaihatsu/rqr7mi000000f5up-att/req-mgmt-hb.pdf
 
 ## 概要
 IPA（独立行政法人情報処理推進機構）が公開した、AI、データ、ソフトウェアが社会・産業の基盤となる時代における「要求管理（要求定義）」の在り方を整理したハンドブックです。従来の固定的な「要件定義」の概念を払拭し、AIの不確実性や継続的な変化を前提としたライブな管理プロセスを提案しています。
@@ -2413,21 +3020,21 @@ AI時代の要求管理は、開発前の単発作業ではなく、変化に柔
 
 ---
 
-## Agenship - 仕様からPR作成までを自律化するAI Software Factory
+## 260_agenship_ai
 
-https://agenship.ai/
+**Agenship - 仕様からPR作成までを自律化するAI Software Factory**
 
-仕様策定から実装、プルリクエスト作成までをAIエージェントがクラウド上で完結させる、組織向けの次世代ソフトウェア開発基盤。
+出典: https://agenship.ai/
 
 Massiv株式会社が提供する「Agenship」は、個人のコーディング支援を超え、組織全体の開発プロセスを自動化する『Software Factory』プラットフォームです。開発におけるAI活用を5つのレベルに分類し、AIが工程を主導し人間がレビューと判断に集中する「Level 4」の実装を支援します。主な特徴として、仕様・設計・実装の自律的な進行、既存のGitHubフローを維持したままの導入、実行ログやトークンコストの集中管理が挙げられます。現在ウェイトリストを公開しており、エンジニアが「どう作るか」ではなく「何を作るか」に注力できる環境の構築を目指しています。
 
 ---
 
-## AIに悩みを相談する際に気をつけて欲しいこと
+## 261_assdr_kyoto-u_ac_jp
 
-https://www.assdr.kyoto-u.ac.jp/ssc/consulting_ai/
+**AIに悩みを相談する際に気をつけて欲しいこと**
 
-京都大学学生相談センターが、生成AIへの悩み相談における利便性と、誤情報・過剰な迎合・人格化による依存のリスクを解説し、主体的な活用の重要性を提言する。
+出典: https://www.assdr.kyoto-u.ac.jp/ssc/consulting_ai/
 
 京都大学学生相談センターによる、学生が生成AI（ChatGPTやGemini等）をメンタルケアや悩み相談に利用する際のガイドラインです。AIは24時間利用可能で、人間に話す際の恥じらいを感じさせない利点がありますが、以下の注意点を挙げています。
 
@@ -2440,11 +3047,21 @@ https://www.assdr.kyoto-u.ac.jp/ssc/consulting_ai/
 
 ---
 
-## Antigravityを他社AIから操作すると「垢BAN」？ 注意点をGoogle Cloud日本法人に聞いた
+## 262_blog_shibayu36_org
 
-https://www.itmedia.co.jp/aiplus/article/2611/20/2000003353/
+**AIの返答が理解しづらいので、自分の認知特性をAIに分析させてSkillにした**
 
-Google Antigravityのサードパーティツール経由での利用制限について、個人・法人プラン別の規約解釈とアカウント停止のリスクをGoogle Cloud日本法人が解説。
+出典: https://blog.shibayu36.org/entry/2026/11/17/120000
+
+ソフトウェアエンジニアのshibayu36氏が、Claude Codeからの回答を効率的に理解するために行った「認知特性の分析とSkill化」の手法を解説しています。著者は「案A」といった離れた場所への参照や抽象的な表現で思考が止まってしまう特性に悩み、過去のセッションログから自分が「聞き返した箇所」をAIに抽出・分類させることで、自身の特性（短期記憶の低さ、理解できない語での集中の中断など）を特定しました。その結果を基に「参照箇所は内容を再掲する」「具体例から先に説明する」といった具体的な指示を定義したSkill `writing-for-shibayu36` を作成し、`CLAUDE.md` で常時適用することで回答の可読性を大幅に向上させました。他人のプロンプトを流用するのではなく、自身の実際のログを分析させるというアプローチは、AIとの協働における非常に実用的なパーソナライズ手法です。
+
+---
+
+## 263_itmedia_co_jp
+
+**Antigravityを他社AIから操作すると「垢BAN」？ 注意点をGoogle Cloud日本法人に聞いた**
+
+出典: https://www.itmedia.co.jp/aiplus/article/2611/20/2000003353/
 
 SNSで話題となった「Google Antigravity（Antigravity）をサードパーティツール経由で使用するとアカウント停止（垢BAN）になる」という懸念に対し、ITmediaがGoogle Cloud日本法人に直接取材した解説記事です。
 
@@ -2457,21 +3074,21 @@ SNSで話題となった「Google Antigravity（Antigravity）をサードパー
 
 ---
 
-## 生成AIの普及によるWebサイトのトラフィック激減と当社での対策
+## 264_sairu_co_jp
 
-https://sairu.co.jp/blog/110567/
+**生成AIの普及によるWebサイトのトラフィック激減と当社での対策**
 
-生成AIの影響でBtoBサイトの検索流入や資料請求が半減する中、SEOに依存しない「顧客との直接的な接点（研究会など）」への戦略シフトと、その成果を自社データに基づき解説した記事。
+出典: https://sairu.co.jp/blog/110567/
 
 株式会社才流の代表・栗原氏が、生成AIの普及がBtoBマーケティングに与えた深刻な影響を自社の実数値で公開しています。主な調査結果として、ノウハウ系コンテンツの検索流入が前年比で約50%減少し、特に検討初期の「資料請求」が激減した実態が示されました。これはAI Overviews等の普及により、ユーザーが複数のWebサイトを巡回せずにAI内で情報を完結させていることが背景にあります。これに対し同社は、検索流入の回復を追うのではなく、コミュニティ型の新サービス「研究会」を立ち上げ、検索に左右されない顧客接点を強化。結果として、初回商談件数を前年比1.6倍に伸ばすことに成功しました。チャネルの変化に対応するだけでなく、商品の価値そのものと顧客体験に立ち返る、AI時代の本質的なマーケティング戦略を提言しています。
 
 ---
 
-## Google、宇宙AIデータセンター構想「Project Suncatcher」でBlue Originと提携
+## 265_itmedia_co_jp
 
-https://www.itmedia.co.jp/news/article/2611/20/2000003358/
+**Google、宇宙AIデータセンター構想「Project Suncatcher」でBlue Originと提携**
 
-Googleは宇宙空間でのAI計算基盤構築を目指す「Project Suncatcher」を推進するためBlue Originと提携し、2029年に大型ロケットでの衛星打ち上げを目指す。
+出典: https://www.itmedia.co.jp/news/article/2611/20/2000003358/
 
 米Googleは、衛星軌道上にAIデータセンターを構築する長期研究プロジェクト「Project Suncatcher」において、ジェフ・ベゾス氏率いるBlue Originと提携しました。2029年第1四半期に大型ロケット「New Glenn」を用いて、太陽同期軌道へ計算用衛星を打ち上げる計画です。
 
@@ -2484,51 +3101,51 @@ Googleは宇宙空間でのAI計算基盤構築を目指す「Project Suncatcher
 
 ---
 
-## さよなら「Claude Code」 人気AIに愛想を尽かしたエンジニアの意外な移行先
+## 266_kn_itmedia_co_jp
 
-https://kn.itmedia.co.jp/kn/article/2611/20/2000003337/
+**さよなら「Claude Code」 人気AIに愛想を尽かしたエンジニアの意外な移行先**
 
-著名なAIコーディングツール「Claude Code」の多機能化や非効率なトークン消費、VS Code連携の不便さに不満を感じたエンジニアが、シンプルで拡張性の高いオープンソースツール「Pi」へ移行した理由を解説。
+出典: https://kn.itmedia.co.jp/kn/article/2611/20/2000003337/
 
 ソフトウェアエンジニアのカレブ氏が、愛用していた「Claude Code」から離れ、オープンソースのAIエージェント実行環境「Pi」へと乗り換えた経緯をまとめています。移行の最大の要因は、ツールの肥大化（フィーチャークリープ）と開発者のニーズとの乖離です。具体的には、Bashツールの説明だけで3000トークンを消費するような非効率な内部プロンプト設計、VS Codeとの連携におけるセッション制限、そして頻繁な内部指示の変更によるモデル挙動の不安定化が指摘されています。一方で、移行先の「Pi」は、基本機能がシンプルでありながら、ユーザーが自身のワークフローに合わせて20分程度で拡張機能を実装できるほどの柔軟性を備えています。本記事は、多機能であることが必ずしも開発効率の向上に繋がらないことを示唆し、自分の開発スタイルに合ったツール選定の重要性を説いています。
 
 ---
 
-## ドン・キホーテのAI社員「近藤あい」が正式デビュー。販促の高速化・低コスト化を狙う
+## 267_itmedia_co_jp
 
-https://www.itmedia.co.jp/news/article/2611/20/2000003369/
+**ドン・キホーテのAI社員「近藤あい」が正式デビュー。販促の高速化・低コスト化を狙う**
 
-ドン・キホーテを運営するPPIHが生成AIで制作したAI社員「近藤あい」を正式発表。販促物制作のスピードアップとタレント起用リスクの低減を目指す。
+出典: https://www.itmedia.co.jp/news/article/2611/20/2000003369/
 
 ドン・キホーテを運営するパン・パシフィック・インターナショナルホールディングス（PPIH）は、生成AIを活用したAI社員「近藤あい」を11月23日に正式デビューさせる。従来の販促物制作における課題であった「外部委託による制作期間の長さ」や「タレント起用に伴う高額な費用と不祥事リスク」を解消するため、AIを活用して「安く、早く」コンテンツを展開する。キャラクター開発には約1年半を要し、独自の生成AIシステムや動画生成AI「Seedance」を組み合わせて、10代女性に親しまれる自然な表情や言葉遣いを実現した。既存の「手書きPOP」のブランド性を守るためAIと使い分ける方針だが、既に「第2のAI社員」候補が約20人控えていることも明かされている。
 
 ---
 
-## リモートコーディングエージェント yoro で始めるループエンジニアリング
+## 268_zenn_dev
 
-https://zenn.dev/layerx/articles/loop-by-remote-coding-agent
+**リモートコーディングエージェント yoro で始めるループエンジニアリング**
 
-LayerXが開発したリモートコーディングエージェント「yoro」を用い、仕様定義から実装・PR作成までを自律的に繰り返す「ループエンジニアリング」の実践例を紹介。
+出典: https://zenn.dev/layerx/articles/loop-by-remote-coding-agent
 
 LayerXのAi Workforce事業部で活用されている、リモートコーディングエージェント環境「yoro」における「ループエンジニアリング」の仕組みと成果についての解説です。スペック駆動開発（SDD）の思想に基づき、`tasks.md`に定義されたタスクをAIが自律的に遂行し、テストの合格を確認した上でPull Requestを作成するまでを自動化します。タスクごとにコンテキストを初期化することでLLMの記憶制限を克服し、隔離されたVM環境と人間によるガードレール（計画承認や最終PR確認）を組み合わせることで、安全性と生産性を両立。実案件では40個のタスクを約3時間で処理し、6,000行以上のコードを生成する高いパフォーマンスを実現しています。
 
 ---
 
-## 月で1000年動作するAlN半導体の高放射線耐性を実証：NTT、2030年代の実用化へ
+## 269_eetimes_itmedia_co_jp
 
-https://eetimes.itmedia.co.jp/ee/articles/2611/18/news073.html
+**月で1000年動作するAlN半導体の高放射線耐性を実証：NTT、2030年代の実用化へ**
 
-NTTは窒化アルミニウム（AlN）半導体が月面1000年分に相当する極めて高い放射線耐性を持つことを実証し、2031〜2036年頃の実用化を目指している。
+出典: https://eetimes.itmedia.co.jp/ee/articles/2611/18/news073.html
 
 NTTは「NTT R&D FORUM 2026」にて、次世代ウルトラワイドバンドギャップ（UWBG）半導体である窒化アルミニウム（AlN）が、宇宙空間での活用において極めて高い有用性を持つことを発表した。具体的には、月面で1000年以上にわたり降り注ぐ量に相当する9.8メガグレイ（MGy）の陽子線を照射する実験を行い、AlNが照射前とほぼ同等の特性を維持することを世界で初めて実証した。これは従来のSiCやGaNなどのワイドバンドギャップ半導体をも凌駕する耐性である。NTTは既にAlNを用いた高周波トランジスタやショットキーバリアダイオード（SBD）の動作実証に成功しており、今後は中性子耐性や動作状態での検証を進め、2031年から2036年頃の電源・通信システムでの実用化を計画している。
 
 ---
 
-## モダンな情シスは、AIエージェントを育て、任せ、圧倒的な生産性を生む
+## 270_note_com
 
-https://note.com/kajinari/n/n19c73d819b14
+**モダンな情シスは、AIエージェントを育て、任せ、圧倒的な生産性を生む**
 
-NOTAのCorp ITチームが、ClaudeのSkillを用いてSaaSアカウント発行やデバイス管理などの定型業務を自動化し、3名体制で急成長する組織を支える「AIエージェント活用」の実践事例。
+出典: https://note.com/kajinari/n/n19c73d819b14
 
 ## 概要
 NOTA社のCorp ITチームが、AI（Claude）を実業務の「エージェント」として教育・活用し、わずか3名の体制で500名以上の組織運営を支えている実践事例を紹介しています。
@@ -2544,11 +3161,11 @@ API連携を前提とした環境整備と、AIに適切な「定義とルール
 
 ---
 
-## 1万円のシンセをAIで魔改造。電子楽器のファームウェア開放が始まった
+## 271_gizmodo_jp
 
-https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/
+**1万円のシンセをAIで魔改造。電子楽器のファームウェア開放が始まった**
 
-AIコーディングツールの普及により、格安シンセのファームウェアをユーザーが改造し、メーカー側もそれを公式に支援・開放する新しい潮流が電子楽器業界で加速しています。
+出典: https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/
 
 中国M-VAVE社の格安FMシンセ「FM-1」において、AIを活用した有志によるカスタムファームウェア開発が活発化しています。本来メーカーが秘匿するファームウェア領域ですが、M-VAVEはこれを排除せず、SDKやソースコードを公開する「FM1 Open」を発表し、ユーザーによる機能拡張を公式に後押しする異例の対応を見せました。
 
@@ -2556,20 +3173,42 @@ AIコーディングツールの普及により、格安シンセのファーム
 
 ---
 
-## ソフトウェアファクトリーとコード設計と顧客価値
+## 272_alpo_ge
 
-https://kosui.me/posts/2026/11/15/code-design-after-agents
+**リーマン予想の証明：Claudeとの共同作業による成果**
 
-生成AIによる開発の高速化が進む中で、品質（機能適合性）による差別化のために、人間とAIエージェントの双方がビジネスロジックを正確に把握できる「コード設計」の重要性がむしろ高まっている。
+出典: https://alpo.ge/remark.pdf
+
+この記事は、数学における最も重要な未解決問題の一つであるリーマン予想（RH）および一般リーマン予想（GRH）を、AIモデルClaudeとの協働によって解決したとする衝撃的な報告です。著者は、ステパノフの議論を関数体から整数論へと拡張する手法や、√Xの長さを持つテータ・リフトの連鎖（chaining theta lifts）といった独自のフーリエ解析的アプローチを用いたと説明しています。膨大な証明プロセス（25万ページに及ぶ「スロップ」と表現）は既に定理証明支援言語Leanによって形式化されており、そのソースコードが公開されています。著者はこの成果を、AIが高度な数学的発見において人間を凌駕し、科学全体に新たな「夜明け」をもたらす革命的な事例として位置づけています。また、証明に至るまでのタイムラインや、数論の美しさが統合される過程についても詳細に触れられています。
+
+---
+
+## 273_kosui_me
+
+**ソフトウェアファクトリーとコード設計と顧客価値**
+
+出典: https://kosui.me/posts/2026/11/15/code-design-after-agents
 
 ソフトウェアファクトリーによる自動化が進む現代において、開発速度の向上はもはや差別化要因にならず、顧客の認知負荷によってリリース価値は律速されます。著者は、これからの差別化は品質、特に「機能適合性」にあると主張します。複雑な業務ドメインでは、PRD（要求）と実装の乖離が不具合の根源となりますが、モデル検査（TLA+）等の形式検証を導入しても、ビジネスロジックがコード全体に散逸していると検証の限界が生じます。これに対し、関数型ドメインモデリングを用いてI/Oを端に寄せ、状態遷移を中央に集約する設計を採用することで、人間とAIエージェント双方の認知負荷を下げ、検証済みのモデルと実装の整合性を保ち続けることが可能になります。AIがコードを書く時代だからこそ、ビジネスと実装の構造を一致させる設計の価値が再定義されています。
 
 ---
 
-## なぜヘンリーのE2Eリポジトリは整理されないまま膨らみ続けたのか。AIで加速した開発とガードレール
+## 274_dev_henry_jp
 
-https://dev.henry.jp/entry/e2e-repository
+**なぜヘンリーのE2Eリポジトリは整理されないまま膨らみ続けたのか。AIで加速した開発とガードレール**
 
-AI活用により開発が加速した一方で生じたE2Eリポジトリの肥大化と管理不足を、Oxlintによるガードレール整備とClaudeによる大規模リファクタリングで解消した事例。
+出典: https://dev.henry.jp/entry/e2e-repository
 
 株式会社ヘンリーにおける、Playwrightを用いたE2Eテストリポジトリの改善事例を紹介しています。AI（Claude等）の導入によりQAメンバーやデザイナーもPRを作成可能になった一方、ドキュメントの陳腐化や、新規追加分にしか適用されない「Guard」ルールの不徹底により、リポジトリの無秩序な肥大化という課題に直面しました。これに対し、Working Groupを立ち上げて不要なドキュメントの削除、フォルダ構成の刷新、そして従来の部分的なチェックを廃止し、Oxlintを用いた全体適用のカスタムルールへの移行を実施。結果として、Issue 400件、PR 500件に及ぶ大規模な整理をAIの力を借りて完遂しました。AI時代には「ルールを全体に強制する仕組み」と「リポジトリ全体の整理を継続的に行う体制」が不可欠であることを示唆しています。
+
+---
+
+## 275_levtech_jp
+
+**AIが書いたコードの正しさをどう確かめるか。「証明支援系Lean」という選択肢**
+
+出典: https://levtech.jp/media/detail_974/
+
+AIコーディングツールの普及によりコードレビューの負担が増大する中、従来のテストや型検査だけでは不十分なケースが増えています。本記事では、数学的な証明によってプログラムの正しさを保証する「Lean 4」を紹介。AmazonやMicrosoftでの実用事例（暗号ライブラリや分散プロトコルの検証など）を挙げながら、テスト・型検査・証明の検証強度の違いを詳説します。特に、証明の「組み立て（タクティク）」と「厳密な検査（カーネル）」を分離するLeanの構造は、AIに証明の候補を生成させ、機械がそれを厳格に検証するという、AI時代のソフトウェア開発における強力な「ハーネス」としての可能性を秘めています。
+
+---
