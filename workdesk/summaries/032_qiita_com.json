@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:08:05.997345+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jevの一文字逐次選択とLLMの生成速度・精度を比較した実験レポート",
+    "url": "https://qiita.com/ryosuke_ohori/items/532719a37f9a1965b1c8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "意思決定モデル「Jev」を用いて一文字ずつ日本語を選択・出力させる手法の速度、コスト、精度を検証し、通常のLLM生成との比較を通じてJevの最適な活用方法を考察した。",
+    "summaryBody": "TypeSafeの意思決定モデル「Jev」が持つ「高速な選択」という特性を、一文字ずつの逐次選択による文章生成に応用し、既存のLLM（GPT-6 Luna, Gemini, Claude）と比較した実験結果です。検証の結果、Jevの一文字方式は最初の文字が出るまでの速度（TTFT）こそ中央値0.211秒と最速でしたが、全文完成には約8秒を要し、生成API（約0.8秒）に大幅に劣ることが判明しました。また、1文字ごとにコンテキストを全件再送するためコストが膨大になる課題も浮き彫りになりました。一方で、自由生成ではなく「事前定義された候補からの選択」や「意図の構造化（ID特定）」タスクにおいては非常に高い精度を発揮しており、Jevを文章生成そのものに使うのではなく、何を決めるべきかを抽出する「補助診断」として利用する手法の有効性が示唆されています。",
+    "topics": [
+      "LLM",
+      "Jev",
+      "生成AI",
+      "ベンチマーク",
+      "Python"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 90
+    }
+  }
+}

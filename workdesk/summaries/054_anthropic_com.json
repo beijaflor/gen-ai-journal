@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:58:50.396282+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コンテキスト補完によるRAGの革新：Anthropicが提唱する「Contextual Retrieval」の仕組みと効果",
+    "url": "https://www.anthropic.com/research/contextual-retrieval",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RAGにおける情報の断片化を防ぐため、チャンクごとにドキュメント全体の文脈を付与して検索精度を劇的に改善する手法「Contextual Retrieval」をAnthropicが発表しました。",
+    "summaryBody": "### 概要\nAnthropicは、RAG（検索拡張生成）の検索精度を大幅に向上させる新手法**Contextual Retrieval**を公開しました。従来のRAGでは文書を小さなチャンクに分割する際、元の文脈が失われて検索漏れが発生するという課題がありましたが、本手法は各チャンクにドキュメント全体の要約や背景情報を付与してからインデックス化することでこれを解決します。\n\n### 主な手法と成果\n- **Contextual Embeddings & BM25**: 各チャンクに50〜100トークンの補足文脈を追加してからベクトル化およびBM25インデックスを作成します。これにより、意味的検索とキーワード検索の両方が強化されます。\n- **劇的な精度向上**: 実験では検索失敗率を49%削減し、さらにRerank（再ランク付け）を組み合わせることで最大67%の精度向上を達成しました。\n- **低コストな実装**: Claudeの「Prompt Caching」機能を活用することで、大量のチャンクへの文脈付与プロセスを高速かつ低コスト（100万トークンあたり約1ドル）で実行可能です。\n\n### 結論\nこの手法は、GeminiやVoyageなどの埋め込みモデルと組み合わせることで最高のパフォーマンスを発揮します。大規模な知識ベースを扱うAIシステムにおいて、Rerankingと並んで必須の最適化手法となる可能性があります。",
+    "topics": [
+      "RAG",
+      "Contextual Retrieval",
+      "Anthropic",
+      "Claude",
+      "Prompt Caching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Contextual retrieval in AI systems"
+  }
+}

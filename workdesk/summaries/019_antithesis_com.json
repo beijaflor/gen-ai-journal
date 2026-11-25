@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:14:30.576789+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Raft実装の形式モデルの検証",
+    "url": "https://antithesis.com/blog/2026/verifying-formal-models/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AntithesisがAI、TLA+、および独自のシミュレーション技術を用いて、etcdとHashiCorpのRaft実装における設計の正当性を検証し、バグの発見と安全性の証明に成功した事例を解説。",
+    "summaryBody": "Antithesis社は、AI（Claude Fable 5.2）を活用してetcd-raftおよびHashiCorp Raftの実装からTLA+モデルを自動推論し、形式手法とテストを融合させた高度な検証を実施しました。本プロジェクトの革新的な点は、モデルが実際のソフトウェアと乖離していないかを保証する「トレース検証（Trace Validation）」に、Antithesisの決定論的シミュレーションとフォールトインジェクションを活用したことです。\n\n検証プロセスは、境界付きモデルチェック（TLC）、トレース検証、およびLean（Veil）を用いた定理証明の反復によって行われました。この過程で両ライブラリに潜んでいた計7つのバグを特定・修正し、最終的に「選挙の安全性」や「ログの照合性」といったRaftの核心的な安全プロパティが、実装レベルの設計において数学的に証明されました。本成果は、抽象的な設計の正当性と具体的なコード実装のギャップを埋める、実用的な分散システム検証の新たなパラダイムを示しています。",
+    "topics": [
+      "Raft",
+      "Formal Verification",
+      "TLA+",
+      "Distributed Systems",
+      "Antithesis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Verifying formal models of Raft implementations"
+  }
+}

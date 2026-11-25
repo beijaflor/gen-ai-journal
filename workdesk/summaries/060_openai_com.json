@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:55:46.101442+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIとCiscoがオープンソースのLinux保護ランタイム「Shirudo」を発表",
+    "url": "https://openai.com/index/introducing-shirudo/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "OpenAIとCiscoは、Linuxシステムを再起動や即時のパッチ適用なしに脆弱性から保護する、eBPFを活用したオープンソースランタイム「Shirudo」を発表しました。",
+    "summaryBody": "OpenAIとCiscoが共同開発した「Shirudo（シールド）」は、Linuxシステムの実行中に特定の脆弱なコードパスのみをブロックするオープンソースのセキュリティランタイムです。eBPF技術を活用しており、OSを再起動することなく、攻撃的な振る舞いのみを監視・遮断することが可能です。デモンストレーションでは、Codexが生成した「シールド（保護プログラム）」を用いて、ElasticsearchのJava4Shell脆弱性をサービス停止なしに防御することに成功しました。このプロジェクトは、ハードウェア（TPM）による検証や暗号署名による信頼性の確保を特徴としており、パッチが提供されるまでのギャップを埋めるための革新的な手段として期待されています。BSD 2-Clauseライセンスで公開され、業界全体での協力が呼びかけられています。",
+    "topics": [
+      "Shirudo",
+      "eBPF",
+      "Linux Security",
+      "Cybersecurity",
+      "Open Source"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "OpenAI and Cisco introduce Shirudo | OpenAI"
+  }
+}

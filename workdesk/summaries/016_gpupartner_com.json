@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:15:43.507830+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Unsloth、Qwen、Inklingを使用したローカルAI導入ガイド：初心者向け",
+    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "RTX 5090などの最新GPUとUnsloth Desktopを活用し、自宅のWindows環境でQwen 3.8やInkling 2 Miniをプライベートに構築・共有する方法を解説しています。",
+    "summaryBody": "クラウドLLMのコストやプライバシー制限を回避するため、自宅で自分専用のAI環境（ChatGPTの代替）を構築する手順を解説したガイドです。\n\n### 主な内容\n- **使用ツール**: 初心者でも扱いやすいGUIツール「Unsloth Desktop」を推奨。Python環境やターミナル操作なしでLLMを稼働できます。\n- **ハードウェアとモデル選定**: 32GB VRAMを備えたRTX 5090での利用を想定。Qwen3.8-27Bや、最新のInkling 2 Mini（26.4Bパラメータ）を量子化（4-bit等）して動かすことで、精度と速度、コンテキストウィンドウ（最大128K以上）のバランスを取る手法を紹介しています。\n- **3ステップのセットアップ**: Unslothのインストール、量子化モデルのダウンロード、コンテキストサイズ設定の3段階で完了します。\n- **家庭内ネットワーク共有**: LANアクセス機能を有効にすることで、同一ネットワーク内の家族や友人がブラウザからAIを利用できる環境を構築可能です。\n- **今後の展望**: ローカルエージェントの構築やトンネリングによる外部アクセスについても触れています。",
+    "topics": [
+      "ローカルLLM",
+      "Unsloth Desktop",
+      "Qwen 3.8",
+      "Inkling 2 Mini",
+      "RTX 5090"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "A beginner's guide to Local AI with Inkling, Qwen, and Unsloth"
+  }
+}

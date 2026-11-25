@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:02:27.222223+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "プラガブルで宣言的なソフトウェアファクトリーを支えるTypeScript",
+    "url": "https://speakerdeck.com/timakin/definitive-and-pluggable-software-factory",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによる開発工程をTypeScriptとZodで定義・拡張可能にし、宣言的な「ソフトウェアファクトリー」として構築するアーキテクチャの解説。",
+    "summaryBody": "JSConf 2026での登壇資料。AIエージェント（Opus, Sonnet, Fable等）を組み込んだソフトウェア開発プロセスを「ファクトリー」に見立て、そのオーケストレーションをTypeScriptで実現する手法を解説しています。主な技術的特徴として、YAMLによる宣言的なプロジェクト定義をZodで型安全にパースする設計、プラグイン方式（declarePlugin/defineRunnerPlugin）による機能拡張、そしてCloudflare Workers等のエッジ環境でのサンドボックス実行制御が挙げられます。人間とAIが協調するプロセスを、高度な型推論とバリデーションによってスケーラブルに管理する実践的なアプローチを提示しています。",
+    "topics": [
+      "TypeScript",
+      "AI Agent",
+      "Zod",
+      "Software Factory",
+      "Infrastructure as Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

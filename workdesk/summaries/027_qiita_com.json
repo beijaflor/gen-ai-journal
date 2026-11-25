@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:10:33.775010+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIにコードレビューを頼んだら、仕込んだ脆弱性をいくつ見つけるか実験してみた",
+    "url": "https://qiita.com/Machida-03/items/feaa1fc101e83d09110a",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント（Claude Code）がプログラムに仕込まれた5つの既知の脆弱性をどの程度正確に見つけ出せるかを、実際のコードを用いて多角的に検証した実験レポート。",
+    "summaryBody": "AIエージェント「Claude Code」を用い、開発者が意図的に脆弱性を埋め込んだコードをレビューさせる実験の結果です。FastAPIで作られたAPIに、SQLインジェクション、マルチテナント間でのデータアクセス制御不備、認証トークンの検証漏れなど5つの穴を仕込み、計6回のレビューを試行しました。結果、AIはすべての試行において5つすべての脆弱性を正確に特定しました。しかし、指摘された「重大度」の判定が回によって変動することや、変更箇所の範囲外にある潜在的なセキュリティリスク（ハードコードされた秘密鍵のデフォルト値など）については、指摘が漏れるケースがあることも判明しました。AIレビューは非常に有用な補助ツールですが、判定の揺らぎや既存コードの文脈把握には、人間によるダブルチェックが必要不可欠であることを示唆しています。",
+    "topics": [
+      "Claude Code",
+      "コードレビュー",
+      "脆弱性診断",
+      "AIエージェント",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

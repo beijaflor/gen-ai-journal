@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:56:29.517128+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Anthropicが「Claude Ship」を発表：プルリクエストのレビュー・修正・承認を自動化するAIエージェント群",
+    "url": "https://claude.com/ja/resources/articles/introducing-claude-ship",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Anthropicは、PRの自動レビュー、CIエラーの修正、ポリシーに基づく承認を自律的に行う開発者向けツール「Claude Ship」をリリースしました。",
+    "summaryBody": "Anthropicは、プルリクエスト（PR）作成後のワークフローを自動化する「Claude Ship」を発表しました。このツールは、開発者がコードを書いた後のレビュー待ちや修正のサイクルを短縮することを目的に設計されており、以下の3つの主要コンポーネントで構成されています。 \n\n1. **Code Review**: コードベース全体を考慮した多角的なレビューを行い、問題を特定します（一般公開済み）。\n2. **PR Steward (Beta)**: CIチェックの失敗、マージコンフリクト、レビュー指摘事項に対して自動で修正を試み、PRを常にマージ可能な状態に保ちます。\n3. **Claude Approvals (Beta)**: リポジトリ内に定義されたポリシーに従い、ルーチンな変更の自動承認や、人間による確認が必要なケースの判断を行います。\n\n開発者はClaude Codeから `/ship` コマンドを実行するだけで、これらの一連の流れを起動できます。現在、GitHubを利用しているClaude TeamおよびEnterpriseプランのユーザーが利用可能です。",
+    "topics": [
+      "Claude Ship",
+      "Anthropic",
+      "AIエージェント",
+      "プルリクエスト自動化",
+      "DevOps"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    },
+    "originalTitle": "Introducing Claude Ship | Claude by Anthropic"
+  }
+}

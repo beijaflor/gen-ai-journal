@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:08:32.086440+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。",
+    "url": "https://qiita.com/yamac_tech/items/2f1d598288990c381f2d",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIコーディングエージェント（Claude Code等）を安全かつ自律的に動作させる環境として、MicroVMによる強固な隔離と通信制御を備えた「Docker Sandboxes」の有効性とWindowsでの導入手順を解説しています。",
+    "summaryBody": "AIコーディングエージェント（Claude CodeやCodex）を自律動作させる際、不適切なファイル操作や情報漏洩のリスクを回避するための隔離環境として「Docker Sandboxes (sbx)」を推奨する記事です。主な利点として、MicroVM（軽量仮想マシン）によるカーネルレベルの強力な隔離、デフォルトで通信を制限するホワイトリスト形式のネットワーク制御、GUIダッシュボードによる管理の容易さを挙げています。Windows 11でのインストールから、Claude Codeの起動、ネットワークポリシーの変更、GitHub認証情報の受け渡し、独自スキルの導入まで、実務に即した具体的な手順が網羅されています。企業利用を想定した「AI Governance」機能についても触れられており、Docker Desktopを必要とせずローカルで安全なAI実行環境を構築したいユーザーにとって非常に実用的な内容です。",
+    "topics": [
+      "Claude Code",
+      "Docker Sandboxes",
+      "セキュリティ",
+      "AI Agent",
+      "Windows 11"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:11:05.717168+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentの実行はどこまで追える？ Langfuse・OpenTelemetry・Prometheusで検証してみた【前編】",
+    "url": "https://qiita.com/tishida734/items/ae11c0f9c44d1ae05cd7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Langfuse、OpenTelemetry、Prometheusを組み合わせ、AI Agentの実行トレース、承認フロー、メトリクス監視、品質評価を統合的に管理する手法を検証したPoCの記録。",
+    "summaryBody": "AI Agentがサーバ再起動などの重要な操作を伴う際、その判断根拠や承認プロセスをどのように管理すべきかを検証した技術記事です。Langfuseを用いてLLM呼び出しから人間の承認（Human Approval）までを単一トレースで可視化し、OpenTelemetry Collector経由でPrometheusに実行メトリクスを収集する構成を提案しています。また、タスクが達成されたか（Task Success）や回答が根拠に基づいているか（Groundedness）をLLM-as-a-Judgeで評価し、スコアをLangfuseに記録することで、エージェントの挙動を多角的に評価できることを示しています。将来的な「Agent Control Plane」の構築に向けた、オブザーバビリティと実行統制の基盤づくりに関する実証的な内容です。",
+    "topics": [
+      "AI Agent",
+      "Langfuse",
+      "OpenTelemetry",
+      "Prometheus",
+      "Observability"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 25,
+      "overall": 92
+    }
+  }
+}

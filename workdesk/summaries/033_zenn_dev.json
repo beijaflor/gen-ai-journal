@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:07:45.110148+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "堅牢な受け入れテストを書くには？",
+    "url": "https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIコーディングエージェントに、実装の変更に左右されずバグを正しく検知できる「堅牢な受け入れテスト」を書かせるための4つの手順を解説。",
+    "summaryBody": "AIコーディングエージェント（Claude Code等）が生成するテストが、内部実装の変更ですぐに壊れてしまう問題を解決するための実践的ガイドです。筆者が自身のプロダクトで15日間試行錯誤した結果、テストを強制的に固定（凍結）する仕組みよりも、テストの「書き方」を改善する方が有効であると結論付けています。具体的には、①受け入れ基準を「外から見える振る舞い」のみで記述する、②コード規約などは型検査やLintに任せる、③既存のテストコードを徹底的に模倣させる、④実装前にテストが失敗することを機械的に確認する、という4つのステップを提案。これにより、リファクタリング耐性が高く、メンテナンスコストの低い自動テスト環境をAIと共に構築する手法を示しています。",
+    "topics": [
+      "AIコーディングエージェント",
+      "受け入れテスト",
+      "テスト自動化",
+      "Claude Code",
+      "ソフトウェアテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

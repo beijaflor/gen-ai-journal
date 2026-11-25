@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:05:05.248157+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "形式検証を活用した脆弱性診断LLMのプロトタイプをEthereum Foundationに納品",
+    "url": "https://note.com/nyxfoundation/n/n782d4fb32344",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Nyx Foundationが、形式検証（Lean 4）とLLMを組み合わせた脆弱性診断ツール「SPECA」を開発し、Ethereumの11実装に対する監査とプロトタイプの納品を完了した。",
+    "summaryBody": "Nyx Foundationは、Ethereum Foundationの助成を受け、仕様書からセキュリティプロパティを抽出し、LLMを用いてコードの脆弱性を診断するツール「SPECA」を開発した。このシステムは、定理証明支援系「Lean 4」による形式検証を用いて重大な性質を厳密に定義し、過去の脆弱性データセットを活用してLLMの診断項目を具体化する。診断プロセスは「仕様の読み取り」「実装箇所の特定」「LLMによる3段階のコード調査（対応付け・成立性確認・自己検証）」に分かれており、診断担当者が根拠を追跡可能な設計となっている。実際にEthereumの合意層・実行層計11実装を監査し、複数のバグを報告。成果物はMITライセンスで公開されている。",
+    "topics": [
+      "Ethereum",
+      "形式検証",
+      "LLM",
+      "脆弱性診断",
+      "Lean4"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 5,
+      "overall": 92
+    }
+  }
+}

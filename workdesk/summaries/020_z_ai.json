@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:14:03.619324+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "GLM-5.4: Loop Transformerによる「一般化コーディング」の実現",
+    "url": "https://z.ai/blog/glm-5.4",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "GLM-5.4は、パラメータ数を増やさずに推論の深化を可能にする「Loop Transformer」アーキテクチャを採用し、プログラミングを基盤として数学や3Dモデリング、動画生成など広範なタスクを解く「一般化コーディング」を実現する750B規模の最新フラグシップモデルです。",
+    "summaryBody": "Z.aiが発表したGLM-5.4は、重み共有された層を複数回反復実行する「Loop Transformer」を採用した初のフラグシップモデルです。750Bスケールのモデルにおいて28層のブロックを2回ループさせることで、実質的に2T〜3Tパラメータ級のモデルに匹敵する知能レベルに到達しました。技術的な工夫として、反復時の活性化爆発を防ぐ「Gated Progressive Updates」、メモリ消費を抑える「Hybrid KV Cache」、および「Sparse Attention Index」の再利用が導入されています。これにより、数学や科学的推論などの長鎖推論タスクで高い性能を発揮しつつ、推論トークン数を10〜14%削減（思考の暗黙化）することに成功しました。このモデルは「一般化コーディング（Generalized Coding）」の幕開けと位置づけられ、単なるソフトウェア開発を超え、CAD設計やゲーム制作、物理制御といった高度なエンジニアリング領域への応用が期待されています。",
+    "topics": [
+      "GLM-5.4",
+      "Loop Transformer",
+      "Generalized Coding",
+      "LLM",
+      "AIアーキテクチャ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer"
+  }
+}

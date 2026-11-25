@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:01:56.054265+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Rust の疎ボリュームライブラリ brodo の設計と Claude Code との作り方",
+    "url": "https://zenn.dev/akahmys/articles/454a729a00401f",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Rust製の疎ボリュームライブラリ「brodo」の設計思想に加え、AIエージェント（Claude Code）を高度に統制し、記憶ではなく実測に基づいた堅牢な開発を行うための先進的な手法が解説されています。",
+    "summaryBody": "brodoは3次元の疎なボリュームを扱うRustライブラリで、OpenVDBに似た階層構造を持ちつつ、トポロジー（空間構造）とフィールド（属性データ）を分離することで複数の物理量を柔軟に管理できる設計が特徴です。ゼロコピー読み込みやバイナリレベルでの再現性を重視しています。特筆すべきは、Claude Code等のAIエージェントを主力とした開発プロセスです。AIの不確かな記憶に頼らず、Spikeによる実測、ADR（設計意思決定レコード）による明文化、ARCHITECTURE.mdによる文脈管理を徹底し、チャット履歴なしで開発を継続できる環境を構築しています。また、unwrap禁止やHashMap排除（決定論的実行のため）といった厳格なコーディング制約を課し、これらをコミットフックや変異テスト等の自動監査で保証することで、AI主導でも極めて高いコード品質を維持する実践的な手法を提示しています。",
+    "topics": [
+      "Rust",
+      "Sparse Volume",
+      "Claude Code",
+      "AI-driven Development",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 96,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

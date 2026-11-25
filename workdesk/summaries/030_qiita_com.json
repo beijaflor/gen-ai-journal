@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:08:59.200544+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Codeのセッション名を日本語にするTips。自動生成の設定と /rename の使い方",
+    "url": "https://qiita.com/inoyu-qiita/items/ddd888c6be89c5e35016",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeのセッション管理を効率化するため、設定ファイルによる自動日本語化とコマンドによる手動リネームの手法を解説したガイド。",
+    "summaryBody": "Claude Codeのセッション一覧（/resume）で表示されるセッション名を日本語化し、作業の識別性を高めるためのTipsが紹介されています。\n\n### 主な内容\n1. **自動生成の日本語化**: `~/.claude/settings.json` に `\"language\": \"japanese\"` を追加することで、応答だけでなくセッションタイトルも自動で日本語になります。\n2. **計画モードの注意点**: 計画モード（Plan mode）で承認を行うと、タイトルが英語に上書きされる挙動があるため、手動で名前を固定することが推奨されます。\n3. **リネーム操作**: `/resume` 一覧画面での `Ctrl+R`、実行中の `/rename` コマンド、起動時の `--name` オプションにより、任意の名前を付与できます。\n\nこれらの設定により、過去のセッションを再開する際の「どのセッションが何の作業だったか分からない」という問題を解決し、開発効率を向上させることが可能です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "Anthropic",
+      "生産性向上",
+      "CLI"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

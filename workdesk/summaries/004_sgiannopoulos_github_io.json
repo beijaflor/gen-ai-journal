@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:21:43.368899+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "マシンコード空間でのプログラミング：LLMはバイナリを直接読み書きできる",
+    "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "GPT-6.1等の最新LLMが、逆コンパイラなどのツールを使わずにヘックスダンプから直接マシンコードを理解、修正、新規作成できることを実証した研究。",
+    "summaryBody": "本記事は、LLMがコンパイラやディスアセンブラなどの補助ツールを介さず、16進数ダンプの状態から直接マシンコード（バイナリ）を理解、拡張、作成できることを示した実験報告である。GPT-6.1 Solを用いた実験では、ストリップ済みバイナリからのバグ発見、既存プログラムへのパッチ作成、ELF64バイナリの新規生成に成功した。また、実戦的な応用として、難読化された未知のマルウェアの解析を行い、C2サーバーのIPアドレスや通信プロトコルを正確に特定できることを示した。これは、バイナリをアセンブリに変換して人間が解析するという従来のリバースエンジニアリング工程を、LLMがバイパスできる可能性を示唆している。一方で、文脈ウィンドウ制限が大規模プログラムへの適用における課題であることも指摘されている。",
+    "topics": [
+      "LLM",
+      "Machine Code",
+      "Reverse Engineering",
+      "Malware Analysis",
+      "Binary Patching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "Programming in the Machine Code Space: LLMs can read & write executables byte by byte"
+  }
+}

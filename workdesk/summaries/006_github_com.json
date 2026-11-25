@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:20:30.004141+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LookAtMyQuant: 同じファイルサイズでQ4_K_Mの12倍低いKLダイバージェンスを実現する量子化コンパイラ",
+    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "フィッシャー情報量とトレリス符号化を活用し、極小の精度損失でLLMを極限まで圧縮する、Apple SiliconおよびCUDA最適化済みの量子化コンパイラ。",
+    "summaryBody": "LookAtMyQuant（LAMQ）は、LLMの各パラメータが圧縮時に出力品質へ与える影響（KLダイバージェンス）を測定し、サイズ予算内でダメージを最小化するコードを選択する高度な量子化コンパイラです。主な技術的特徴として、4KB SRAMハッシュ化ブロックベクトル・トレリス符号、フィッシャー情報量に基づく行単位のビット割り当て、およびPTQ後の蒸留プロセスが組み合わされています。Qwen3.5-4Bを1.23GB（約2.3bpw）に圧縮しても高い数学性能を維持し、従来のGGUF（Q4_K_M）と比較して12倍低いKLダイバージェンスを達成しています。Apple Silicon向けの最適化されたMetalカーネルと、NVIDIA GPU向けのTriton/CUDA実装を提供し、Speculative Decoding（投機的デコーディング）やOpenAI互換サーバー機能も標準搭載しています。",
+    "topics": [
+      "LLM",
+      "Quantization",
+      "Machine Learning",
+      "Apple Silicon",
+      "CUDA"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    },
+    "originalTitle": "GitHub - ShinMegamiBoson/lookatmyquant: A quantization compiler that delivers 12× lower KL than Q4_K_M at the same file size"
+  }
+}

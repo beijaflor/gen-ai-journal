@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:57:02.957297+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "競馬予想AI Agentを自分専用競馬新聞プロダクトとして再構築した - PoCから本番への華麗なる移行のはなし",
+    "url": "https://shinyorke.hatenablog.com/entry/keiba-ai-agent-product",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "競馬予想AI AgentをPoCのStreamlitからGoogle Cloud上の本格プロダクトへ移行し、自分専用の競馬新聞として再構築した開発の舞台裏。",
+    "summaryBody": "著者が個人開発していた競馬予想AI Agent「ai-shugoro」を、実運用に耐えうる「自分専用競馬新聞」として再構築した記録です。PoC段階のStreamlit/DuckDB構成から、Next.js/FastAPI/Google Cloud（Cloud Run, BigQuery, IAP）へと刷新されました。開発を短期間で完遂させるため、「自分専用」に徹して不要な機能を大胆に削ぎ落とすスコープ管理、実装前のスパイクによる技術リスク検証、Claudeを活用した設計議論など、AIエージェント時代の効率的な開発プラクティスが紹介されています。特にCloud Run Jobsでのデータ収集や、DuckDBからBigQueryへの確実なデータ移行手順など、実践的な技術知見が豊富に含まれています。",
+    "topics": [
+      "AI Agent",
+      "Google Cloud",
+      "競馬予想",
+      "個人開発",
+      "Next.js"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:00:21.636701+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。",
+    "url": "https://note.com/yamac_/n/n198bdc344c64",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Code などの AI エージェントを安全に自走させる環境として、強力な MicroVM 隔離とネットワーク制御を備えた Docker Sandboxes の導入メリットと具体的な手順を解説しています。",
+    "summaryBody": "AI コーディングエージェント（Claude Code や Codex）の自動実行におけるセキュリティリスクを解消する手段として、Docker 社が提供する「Docker Sandboxes (sbx)」の実用性を紹介する記事です。主な特徴として、通常のコンテナよりも強力な隔離を実現する MicroVM の採用、デフォルトで通信を制限するホワイトリスト形式のネットワーク制御、そして `sbx run claude .` などのコマンドで即座に開始できる導入の容易さが挙げられています。Windows 環境での具体的なセットアップ方法や、シークレット管理、ダッシュボードによるログ確認についても触れられており、ローカル実行であれば商用利用を含め無料で利用可能なため、エンタープライズ環境での AI エージェント活用における現実的な解として提案されています。",
+    "topics": [
+      "Docker Sandboxes",
+      "Claude Code",
+      "AI Coding Agent",
+      "MicroVM",
+      "Security"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

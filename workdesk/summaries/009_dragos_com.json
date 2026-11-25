@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:18:56.568553+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIサプライチェーンの脆弱性：カナリートークンが暴いたプロンプト流出とプロバイダー侵害の実態",
+    "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Dragosが200万件のAIプロンプトに追跡用トークンを仕込み調査した結果、3社のプロバイダー侵害、マーケットプレイスによるデータ窃取、プライバシー設定の組織的な無視が判明しました。",
+    "summaryBody": "DragosのHD Moore氏率いる研究チームは、AWSキーやURLなどの追跡可能な「カナリートークン」を含む200万件のプロンプトをAIプロバイダーに送信し、推論データの行方を5ヶ月間追跡しました。この調査により、AIサプライチェーンにおける3つの深刻な問題が浮き彫りになりました。\n\n1. **プロバイダーの侵害**: 少なくとも3社のホスティング業者が攻撃者により侵害されており、送信された認証情報がリアルタイムで窃取され、AWSアカウントへの不正アクセス試行に使用されていました。\n2. **マーケットプレイスによる窃取**: 格安の推論マーケットプレイスのリセラーが、標準的なログ機能を利用して顧客のプロンプトを閲覧・保持し、中に含まれるパスワードでSSHログインを試みるなどの手動攻撃を行っていました。\n3. **プライバシー設定の無効化**: 「データ保持なし(ZDR)」設定が無視されるケースが多く、米国拠点を選択したはずのデータが中国のAIラボへ転送されたり、社内チャットにリンクが流出したりする事例が確認されました。\n\nAIルーターを経由する複雑なホップが不透明性を生んでおり、企業は「自社ホスト」「一次プロバイダーとの直接契約」「プロンプトへのカナリー仕込み」による自衛が求められます。",
+    "topics": [
+      "AI Security",
+      "Supply Chain Risk",
+      "Canary Tokens",
+      "LLM Privacy",
+      "Data Breach"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "AI Supply Chain Security: What Canary Tokens Found | Dragos"
+  }
+}

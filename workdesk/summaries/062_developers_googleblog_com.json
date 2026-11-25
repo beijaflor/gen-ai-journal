@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:54:26.132058+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Semantic governance policiesによるAIエージェントのインテント・ハイジャック対策",
+    "url": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleが導入したSemantic governance policiesにより、AIエージェントへの間接的なプロンプト注入によるインテント・ハイジャックの成功率を48.7%から0.9%にまで劇的に低下させることが可能になりました。",
+    "summaryBody": "AIエージェントがメールやドキュメントなどの外部データ（信頼できないコンテキスト）を読み取る際、そこに隠された悪意ある命令に従ってしまう「インテント・ハイジャック（間接的プロンプト注入）」が深刻なセキュリティリスクとなっています。Googleはこの対策として「Semantic governance policies」を提案しています。この仕組みは、エージェントがツールを実行する直前に、そのアクションが本来のユーザーの意図と合致しているかをLLMベースのエンジンで判定するガードレールです。公開ベンチマーク「AgentDojo」を用いた検証では、攻撃成功率を48.7%から0.9%へと大幅に削減しつつ、正常なタスクの完遂能力（ユーティリティ）の低下をわずか2.6ポイントに抑えることに成功しました。現在、Geminiプラットフォームでプレビュー版として提供されており、銀行振込やデータ共有、メッセージ送信などの重要なアクションを伴うエージェントの安全性を高める有効な手段となります。",
+    "topics": [
+      "AI Security",
+      "Prompt Injection",
+      "AI Agents",
+      "Gemini",
+      "Governance"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 20,
+      "overall": 92
+    },
+    "originalTitle": "Securing AI agents against intent hijacking with Semantic governance policies"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:13:08.794734+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMはどのようにコンピュータを認識すべきか：スクリーンショットとアクセシビリティツリーの有効性検証",
+    "url": "https://www.greptile.com/blog/trex-computer-use",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLMによるGUI操作において、スクリーンショットだけでなくアクセシビリティツリーと要素IDを併用することが、特に下位モデルの精度を劇的に向上させることを実証した研究。",
+    "summaryBody": "Greptile社による、LLM（AIエージェント）がコンピュータ画面を認識・操作する最適な手法に関する調査報告です。OSWorldベンチマークを使用し、GPT-4oからGPT-6.1 Solまでの複数モデルで「スクリーンショットのみ」「+アクセシビリティツリー」「+要素IDによるクリック」の3段階で性能を比較しました。結果として、GPT-6.1のような最新の強力なモデルは視覚情報のみで80%以上の成功率を達成する一方、GPT-5.2などの下位モデルでは、ツリー情報とID指定クリックを組み合わせることで成功率が15.8%から52.8%へと3倍以上に向上することが明らかになりました。この知見に基づき、同社のQAエージェント「TREX」では、要素がツリーに存在する場合はIDクリックを、Canvasやゲーム等の場合は座標クリックを使い分けるハイブリッドアプローチを採用しています。",
+    "topics": [
+      "LLM",
+      "Computer Use",
+      "GUIエージェント",
+      "アクセシビリティツリー",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 88
+    },
+    "originalTitle": "How Should an LLM See a Computer? | Greptile"
+  }
+}

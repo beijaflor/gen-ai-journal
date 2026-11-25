@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:03:06.496868+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "[AI-Driven Modernization] 既存コードからAIエージェント向けの仕様書を起こす「Reverse Spec Flow」を公開しました",
+    "url": "https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWS Japanが、レガシーコードからAIエージェントが活用可能な高品質な仕様書を生成・検証するワークフロー「Reverse Spec Flow (RSF)」を公開。",
+    "summaryBody": "AWS Japanは、AIを活用したシステム再構築（Reimagine）を支援するオープンソースツール「Reverse Spec Flow (RSF)」を公開しました。これは、ドキュメントが不足しブラックボックス化したレガシーシステムを、AIエージェントを用いて最新技術スタックへ作り直すための「仕様駆動開発」の入口となるワークフローです。\n\nRSFは、取り込み、コードグラフ作成、分析、仕様化、監査の5つのフェーズで構成されます。最大の特徴は、ハルシネーションを抑制するための厳格な検証プロセスです。すべての仕様記述にはソースコード上の根拠（ファイルパスと行番号）を付与し、記述したAIとは別のAIモデルがその妥当性を点検します。また、現行の技術スタックに依存する「実装事実」と、業務ルールなどの「本質」を分離して記述することで、新しい技術での再構築を容易にします。\n\n検証スクリプトによる網羅性のチェック（gates.sh）や、人間が介在するゲート（HITL）を設けることで、AIの出力精度に依存しすぎない規律あるドキュメント生成を実現しています。実際にJavaベースのCMS「Apache Roller」をTypeScript/Next.jsへ移行するプロジェクトでの有効性が実証されており、大規模な金融システム基盤への適用実績も紹介されています。",
+    "topics": [
+      "AI-Driven Modernization",
+      "Reverse Spec Flow",
+      "Amazon Web Services",
+      "Generative AI",
+      "Software Refactoring"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

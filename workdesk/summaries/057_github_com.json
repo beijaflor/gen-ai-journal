@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:57:20.146164+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini API CLI (gemini-api-cli) - Google公式のGemini API用コマンドラインツール",
+    "url": "https://github.com/google-gemini/gemini-api-cli",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントやスクリプトからGeminiのマルチモーダル機能やマネージドエージェントを容易に操作できる、Google製の実験的CLIツール。",
+    "summaryBody": "Googleが公開した、Gemini APIをコマンドラインから操作するための実験的なCLIツールです。テキスト生成のみならず、画像・音声・音楽・動画の生成や編集、ドキュメントの分析、さらに『Deep Research』などのマネージドエージェントの実行と管理をサポートしています。\n\n最大の特徴は、開発者だけでなく「AIエージェント（Claude CodeやCursor、Codex等）」がシェル経由で利用することを強く意識した設計です。`--schema`フラグによるリクエスト構造の自己記述、`--dry-run`によるオフライン検証、JSON/TOON形式での構造化出力、および`--jq`による直接的なフィールド抽出が可能です。これにより、複雑なAIワークフローをシェルスクリプトやCI/CDパイプラインに低コストで統合できます。Goで記述された単一バイナリとして提供され、macOS、Linux、Windowsで動作します。ステートレスな実行モデルを採用しており、継続的な会話状態はAPI側のInteraction IDを利用して管理する仕組みとなっています。",
+    "topics": [
+      "Gemini API",
+      "CLI",
+      "LLM",
+      "AIエージェント",
+      "マルチモーダル"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 90
+    },
+    "originalTitle": "GitHub - google-gemini/gemini-api-cli: An (experimental) CLI for the Gemini API"
+  }
+}

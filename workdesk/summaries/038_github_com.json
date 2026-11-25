@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:05:44.016675+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の出力を付箋ホワイトボードで理解するツール「understand-mode」",
+    "url": "https://github.com/fkubota/understand-mode",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの出力内容やPRの変更点を、付箋形式のホワイトボード上で視覚的に整理・深掘りできる拡張スキル。",
+    "summaryBody": "understand-mode（/understand）は、Claude Codeによる調査内容やコード、Pull Requestの差分などをホワイトボード形式のUIで視覚化し、インタラクティブに理解を深めるための拡張ツールです。主な特徴は以下の通りです。\n\n- **コンテキストを維持した「寄り道」**: 本筋の会話から特定の行や文を選択して付箋を作成し、メインの履歴を汚さずに独立したフォークセッションで詳細な質問が可能です。\n- **リッチな可視化機能**: Mermaidによる図解作成や、SQL実行結果をVega-Liteでグラフ化する機能を搭載しており、複雑なロジックやデータ構造を直感的に把握できます。\n- **シームレスな統合**: PRモードや未コミットの差分レビューに対応しており、ホワイトボードで得た気づきを下書きとしてメインセッションへ書き戻すことができます。\n- **効率的なセッション管理**: 質問ごとにキャッシュを効かせつつ、終了時には不要な分岐セッションの記録のみを削除する仕組みでコストと利便性を両立しています。",
+    "topics": [
+      "Claude Code",
+      "LLM UI",
+      "開発ツール",
+      "GitHub",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    }
+  }
+}

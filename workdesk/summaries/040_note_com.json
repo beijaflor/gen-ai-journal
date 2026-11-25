@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:04:31.411971+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "“リーマン予想の証明”の検証は現在どこまで進んでいるか",
+    "url": "https://note.com/katobungen/n/n9c2bb939b9c7",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2026年11月に発表された、AnthropicのLevent Alpöge氏とAI（Claude）によるリーマン予想のLean証明について、数学者の加藤文元氏が第三者による検証状況を詳細に解説した記事。",
+    "summaryBody": "この記事は、2026年11月20日に発表されたAnthropicの数学者Levent Alpöge氏による「リーマン予想（RH）および一般化リーマン予想（GRH）」の形式的証明の検証進捗をまとめたものです。証明は証明支援系Leanで記述され、1700万行を超える膨大なコードでしたが、発表からわずか1日でMITのAndrew Sutherland氏らにより、複数の独立したカーネル（nanoda、con-leche等）を用いた検証が成功しました。検証では、単にコードが通るだけでなく、Mathlibの定義との照合や、ゼータ関数を介さないRobin・Lagariasの不等式への帰結確認も行われ、形式的な正しさは極めて高い精度で裏付けられています。著者は、コンピュータによる「証明の存在の確認」と、数学者による「証明の核心の理解」には時間的な隔たりがあることを指摘し、今後の人間による解釈の重要性を説いています。",
+    "topics": [
+      "リーマン予想",
+      "Lean",
+      "形式的検証",
+      "数論",
+      "人工知能"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

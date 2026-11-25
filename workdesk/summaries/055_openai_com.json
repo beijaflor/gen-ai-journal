@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T17:58:26.668780+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ChatGPT の速さを支える OpenAI の Performance Factory",
+    "url": "https://openai.com/ja-JP/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "OpenAIが開発した「Performance Factory」は、Codexを活用してパフォーマンス劣化の検知から原因特定、修正、復旧確認までを自動化する自律型システムです。",
+    "summaryBody": "OpenAIは、ChatGPTの応答速度と信頼性を維持するための自動化プラットフォーム「Performance Factory」の詳細を公開しました。このシステムは、従来のエンジニアによる手作業の調査をAIエージェントによる自律型ワークフローに置き換えるものです。\n\n### 主な特徴と構成要素\n- **自律型ワークフロー:** アラートをトリガーにCodexエージェントが起動し、メトリクス、ログ、トレースを解析して根本原因を特定。修正PRの作成からデプロイ後の検証までを実行します。\n- **反証レビュー (Counter-Review):** 診断の誤りを防ぐため、別のエージェントが提示された原因に対して反論・検証を行うステップを導入。これにより人手による評価で70%の正確性を達成しました。\n- **タスク管理と人間との協働:** エンジニアが意思決定に集中できるよう、エージェントの作業状況を可視化し、複雑なアーキテクチャ上の判断が必要な場合のみ人間が介入する仕組みを構築しています。\n\n### 成果と展望\n導入から3ヶ月強で1,700件以上の調査を行い、600件以上の根本原因を特定。毎日平均17件の調査を自動で完結させています。今後は、アラートが出る前に潜在的な最適化箇所を見つけるプロアクティブな監視や、人の介在を最小限にした自動リリースへの拡大を目指しています。",
+    "topics": [
+      "OpenAI",
+      "パフォーマンスエンジニアリング",
+      "AIエージェント",
+      "Codex",
+      "自動化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    }
+  }
+}

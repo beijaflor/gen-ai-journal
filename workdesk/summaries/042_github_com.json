@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:03:51.555773+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS Labs: CodeKB - 複数リポジトリを跨ぐコード理解とAIエージェント統合基盤",
+    "url": "https://github.com/awslabs/codekb",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AWS Labsが公開したCodeKBは、大規模組織の多数のリポジトリを解析し、ビジネスロジックや依存関係を理解してAIエージェントや開発者に提供する基盤ツールである。",
+    "summaryBody": "CodeKBは、単なるコードの全文検索ではなく、大規模なリポジトリ群の「意味的な理解」をAIエージェントや開発者に提供するオープンソースツールです。主な機能として、リポジトリの構造や目的を自動でまとめる「Space Overviews」、キーワードではなく意図で検索できる「セマンティック検索」、そして変更の影響範囲を推論する「Agent Hopper」を備えています。内部的にはTree-sitterを用いてコードをパースし、関数のコールグラフを構築。Amazon BedrockのLLMを活用して各関数の挙動をビジネス言語で記述・ベクトル化することで、高度な検索と理解を実現しています。また、Model Context Protocol (MCP) をサポートしており、Claude Codeなどの外部AIアシスタントから直接この解析データを利用可能です。デプロイはAWS CDKを通じて自身のAWS環境（ECS/Bedrock/S3等）にセキュアに行える構成となっています。",
+    "topics": [
+      "Code Understanding",
+      "LLM",
+      "Amazon Bedrock",
+      "Model Context Protocol (MCP)",
+      "AI Agent"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    },
+    "originalTitle": "GitHub - awslabs/codekb: Code understanding across every repository, for people and agents · GitHub"
+  }
+}

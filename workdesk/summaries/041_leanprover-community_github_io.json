@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:04:11.646845+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "リーマン予想のLeanによる検証",
+    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Lean FROとMathlib Initiativeは、Levent Alpöge氏による1,700万行のLeanコードを用いたリーマン予想の証明が完全に検証されたことを公式に発表した。",
+    "summaryBody": "Leanコミュニティは、数学界の最大級の難問である「リーマン予想」が、Levent Alpöge氏によってLeanで形式化・証明されたことを公式に認定しました。この証明は1,700万行に及ぶ膨大なライブラリで構成されており、Mathlibを直接の依存先としています。検証プロセスでは、以下の4つの厳格な基準が満たされました：(1) Mathlib内の専門家によって精査されたリーマン予想の命題と証明が一致していること、(2) コードがエラーなくコンパイル可能であること、(3) 独立したツールにより証明内容が意図した命題を証明していると確認されたこと、(4) Lean公式カーネルに加え、集合論に対して形式的に妥当性が証明された独立チェッカー（con-lecheやcon-ron等）によって証明の有効性が確認されたことです。これにより、Leanのロジック自体の欠陥を突くような不正な証明の可能性も排除されています。",
+    "topics": [
+      "Lean",
+      "リーマン予想",
+      "形式的手法",
+      "Mathlib",
+      "数学"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 5,
+      "overall": 99
+    },
+    "originalTitle": "Lean verification of the Riemann Hypothesis"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-24T18:12:35.083222+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Modern Web Guidance 1.0 の legacy-scan で既存アプリを AI エージェントにモダナイズさせる",
+    "url": "https://azukiazusa.dev/blog/modern-web-guidance-legacy-scan/",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Modern Web Guidance 1.0の`legacy-scan`を活用し、静的解析とAIエージェントの組み合わせによって既存のWebプロジェクトを最新標準へ安全に移行するワークフローを解説した記事。",
+    "summaryBody": "Google Chromeチームらが公開した「Modern Web Guidance 1.0」の主要機能である`legacy-scan`を、サンプルアプリを用いて実践的に解説しています。このツールは、`field-sizing`や`dialog`の宣言的制御、`structuredClone`といった最新のWeb標準への移行候補を、LLMを使わない高速な静的解析で洗い出します。AIエージェント（Antigravity等）が、各ガイドに付随する「Keep/Drop」基準をもとに文脈を判断し、単なるコード変換だけでなくアクセシビリティ（ARIA）やフォールバックまで含めた高度なリファクタリングを行う様子が紹介されています。",
+    "topics": [
+      "Modern Web Guidance",
+      "Web標準",
+      "AIエージェント",
+      "legacy-scan",
+      "リファクタリング"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}
