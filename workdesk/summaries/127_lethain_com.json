@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:19:57.311443+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "週に100件以上のPRを本番環境へリリース：AIエージェントによる開発ループの最適化",
+    "url": "https://lethain.com/passing-100-prs-in-a-week/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントとクラウド基盤を活用し、開発サイクルの各ボトルネックを段階的に解消することで、フィンテックという厳格な環境下でも週100件以上のプルリクエスト（PR）をリリース可能にする手法の詳説。",
+    "summaryBody": "エンジニアリングマネジメントの権威 Will Larson氏が、AIエージェントを駆使して個人の開発生産性を劇的に向上させた実体験に基づき、開発ループの最適化プロセスを解説しています。主な要点は以下の通りです。\n\n1. **開発ループの現代化**: CI/CDの徹底的な自動化とフィーチャーフラグの活用を前提とし、開発者がローカルでAIを動かす段階から、クラウドベースのオーケストレーション基盤「fleet」へと移行しました。\n2. **コンテキストの純度向上**: AIが不正確な情報（コンテキスト毒）を参照しないよう、RFCやドキュメントをリポジトリ内に配置し、Terraform等のインフラ定義を含めることで情報の正確性を担保しました。\n3. **検証（Verification）の重視**: PRの承認負荷を減らすため、「コードそのもののレビュー」から「AIによる検証結果のレビュー」へとシフト。potetoのpstack等を用いた形式的な検証アプローチにより、人間が安心して承認できる仕組みを構築しています。\n4. **MCPによる安全性確保**: Model Context Protocol (MCP) を導入し、設定変更などを統一されたデータモデルと自動レビューを通すことで、AIによる操作の安全性と透明性を維持しています。\n\n最終的に「PRの数」自体よりも、AIによってこれまで手が回らなかった細かな改善やクリーンアップが「経済的に実行可能」になったことの意義を強調しています。",
+    "topics": [
+      "AIエージェント",
+      "ソフトウェア開発プロセス",
+      "CI/CD",
+      "MCP (Model Context Protocol)",
+      "エンジニアリングマネジメント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 96
+    },
+    "originalTitle": "Shipping 100+ PRs to production in a week | Irrational Exuberance"
+  }
+}

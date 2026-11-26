@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:36:51.471968+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIペネトレーションテストの教訓：ARTEX攻撃から学ぶ防御戦略",
+    "url": "https://www.aikido.dev/blog/artex-ai-pentesting-defenders",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントによるペンテストツール「ARTEX」の悪用事例に基づき、AI駆動型攻撃のスピードと規模に対抗するための防御側のベストプラクティスを解説している。",
+    "summaryBody": "2026年に注目を集めたオープンソースのAIペンテストフレームワーク「ARTEX」は、公開直後からサイバー犯罪者によって大規模な攻撃に悪用されました。韓国の金融機関や2,000以上のMicrosoft 365テナントが標的となり、FBIも警告を発する事態となりました。ARTEXは新規の脆弱性を発見するのではなく、ハードコードされたパスワードや未認証APIといった「既存の脆弱性」をAIエージェントの自律性と継続性によって、人間を凌駕するスケールで突いてくるのが特徴です。Microsoftの報告では、侵入から特権昇格まで3時間未満という驚異的な速さで実行されたケースもあります。これに対し防御側は、攻撃者が持たない「ソースコードへのアクセス権」を活用した高精度なAIペンテストを開発サイクルに組み込み、脆弱性の発見から修正までの時間を劇的に短縮することが不可欠です。また、オープンソースの攻撃ツールをそのまま自社診断に使う際のリスク（スコープ逸脱やバックドアの混入）についても警鐘を鳴らしています。",
+    "topics": [
+      "ARTEX",
+      "AIペネトレーションテスト",
+      "サイバーセキュリティ",
+      "脆弱性管理",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 88,
+      "annexPotential": 12,
+      "overall": 90
+    },
+    "originalTitle": "What ARTEX attacks tell defenders about AI pentesting"
+  }
+}

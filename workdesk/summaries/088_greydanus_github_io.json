@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:30:47.866080+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PenGPT: 手書き文字とスケッチのための生成トランスフォーマー",
+    "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "大規模なデータセットと単純なトランスフォーマー構造を組み合わせ、わずかなサンプルから未知の筆跡を模倣し、テキストからスケッチを生成するモデル「PenGPT」の解説。",
+    "summaryBody": "Sam Greydanus氏による、ペンの軌跡（ストローク）を直接生成するトランスフォーマーモデル「PenGPT」の開発記録。このプロジェクトはRich Suttonの「苦い教訓（The Bitter Lesson）」を体現しており、計算効率やアーキテクチャの工夫よりも、データの質と量（努力の80%）に注力されています。\n\n主な特徴は以下の通り：\n1. **技術手法**: ペンの動きをグリッド上の8方向とペン上下の状態に簡略化し、BPE（バイトペアエンコーディング）を用いてトークン化。デコーダーのみの単純なトランスフォーマーを採用。\n2. **筆跡模倣**: 600万パラメータのモデルを使用。未学習の筆跡でも、数語のサンプルを入力するだけでそのスタイルを継続して生成可能。スキャン画像からのスタイル抽出にも対応。\n3. **スケッチ生成**: 5400万パラメータのモデルで、SigLIP 2のベクトルを介してテキストプロンプトから描画を実行。学習データにない概念の組み合わせ（例：顔のあるティーポット）も生成できる。\n4. **分析**: モデル内部の注意（Attention）を調査し、特定のヘッドが現在書いている文字に強くフォーカスしていることを解明。一方で、アーキテクチャの複雑化やパラメータの倍増は、データ規模ほど性能に寄与しないことを示唆しています。",
+    "topics": [
+      "PenGPT",
+      "手書き合成",
+      "スケッチ生成",
+      "Transformer",
+      "The Bitter Lesson"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "PenGPT: A Generative Transformer for Handwriting and Sketches"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:16:06.110787+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "WSL ContainersでClaude Codeを隔離し、セキュリティリスクを「物理的」に排除する",
+    "url": "https://zenn.dev/kent_code/articles/bef81d6a0b817c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "WSL Containers（wslc）を活用して、AIエージェントであるClaude Codeを隔離環境で実行し、誤操作やプロンプトインジェクションによる機密情報漏洩を防ぐ具体的な手法を解説。",
+    "summaryBody": "### 概要\nAIエージェント「Claude Code」は強力なファイル・コマンド操作能力を持ちますが、Windowsでは標準のサンドボックスが機能せず、人間のうっかりミスやプロンプトインジェクションへの脆弱性が懸念されます。本記事では、Docker Desktopを使わずにWindows純正の「WSL Containers」を用いて、Claude Codeを物理的に隔離された環境で動かす方法を提案しています。\n\n### 検証された効果\n- **ファイル隔離:** 作業フォルダ外のファイルアクセスや削除の試みを完全に遮断。\n- **ネットワーク制御:** Anthropic公式のファイアウォール設定を使い、許可外のドメインへの通信（機密データの持ち出し等）を阻止。\n- **VS Codeの注意点:** Dev Containers拡張機能経由ではホストのGitトークンが漏洩するリスクがあるため、ターミナル（wslc run）からの直接起動が最も安全であることを特定。\n\n### 実装のポイント\n公式のDockerfileを流用し、PowerShell関数として起動コマンドをラップすることで、利便性を損なわずにセキュアな開発環境を構築可能です。著者は、コミットやプッシュ等の認証が必要な操作はホスト側のGUIツール（Sourcetree等）で行う「運用の使い分け」を推奨しています。",
+    "topics": [
+      "Claude Code",
+      "WSL Containers",
+      "セキュリティ",
+      "AIエージェント",
+      "Windows"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

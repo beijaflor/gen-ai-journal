@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:15:01.051470+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemini 4 Neon を API で叩いて Claude Code・Codex CLI と比べた：65万トークンの超長文、費用、失敗",
+    "url": "https://zenn.dev/canly/articles/40e773759da8f8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Googleの最新モデルGemini 4 NeonをAPIで利用し、Claude Opus 5.5やGPT-6.2 Solと数学、論理、最大65万トークンの超長文読解など8つの課題で徹底比較した実証レポート。",
+    "summaryBody": "2026年11月公開のGemini 4 Neon（gemini-4-neon）を、Claude Opus 5.5およびGPT-6.2 Solと比較検証した記録です。数学・論理パズル、二軸グラフの読み取り、1,400行を超えるHTMLゲーム生成、そして最大65万トークンの超長文コンテキストを用いた情報抽出など、8つの高度なタスクを実施。結果、Neonはコード生成速度（148 tok/s）や超長文処理のコストパフォーマンス（65万トークンの入力で$1.99）において顕著な優位性を示しました。また、思考トークンの仕様や『HIGH』設定時の長考特性、API利用時のHTTP 402エラー発生などの実践的な注意点、プロンプト全文や正解データの生成スクリプトも公開されており、開発者が最新LLMを実戦投入するための貴重なデータとなっています。",
+    "topics": [
+      "Gemini 4 Neon",
+      "Claude Opus 5.5",
+      "GPT-6.2 Sol",
+      "LLMベンチマーク",
+      "Long Context"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 10,
+      "overall": 98
+    }
+  }
+}

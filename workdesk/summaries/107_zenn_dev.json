@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:25:13.898776+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Corpus2Skillに近づけた「階層ナビゲーション型RAG」と、ベクトルDB版RAGを「どの段階で失敗したか」まで比べてみた",
+    "url": "https://zenn.dev/aiforall/articles/133752ce2d97ad",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "エージェントが階層を辿るナビゲーション型RAGとベクトルDB型を比較し、複数文書にまたがる質問への強さと、コスト・速度・評価の難しさを浮き彫りにした実証レポート。",
+    "summaryBody": "Corpus2Skillを参考にした「階層ナビゲーション型RAG」と、従来のベクトルDB型RAGの性能・失敗要因を詳細に比較した検証記事です。130文書・40問のテストにおいて、エージェント型が正答率0.80〜0.85を記録し、ベクトルDB型の0.63を上回りました。特に複数文書をまたぐ回答（Cross-document）において、ベクトルDB型は10%の正答率に留まったのに対し、エージェント型は60-80%と圧倒的な差を見せました。本記事では失敗を「文書到達」「根拠保持」「回答生成」の3段階で分析し、ベクトルDB版の失敗は検索漏れとコンテキスト長制限による欠落が主因であることを明らかにしています。一方で、エージェント型はコストが15倍、応答時間が7倍（約20秒）かかるという実運用上の課題も提示されています。また、LLMによる自動採点が詳細な回答を捏造と誤判定するリスクや、小規模コーパスにおけるCorpus2Skillの高度な工夫（エンティティ索引等）の限定的な効果についても考察されており、技術選定における極めて実用的な知見を提供しています。",
+    "topics": [
+      "RAG",
+      "Corpus2Skill",
+      "Amazon Bedrock",
+      "LLM比較",
+      "階層ナビゲーション"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:27:18.557952+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIが何をしたか、あとから追える？ GitHub CopilotをNew Relic Preflightで観測してみた",
+    "url": "https://qiita.com/seamoooooo/items/e004485d36346655ef36",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "GitHub Copilotデスクトップの操作ログをNew Relic Preflightで可視化し、AIによる調査手順の確認や実行コマンドの監査を可能にする方法の紹介。",
+    "summaryBody": "GitHub Copilotが実行したコマンドや読み取ったファイルを、オープンソースの「New Relic Preflight」を用いて記録・分析する手法を解説しています。AIに任せた調査を人間に引き継ぐ際の手順確認、同じコマンドが繰り返される「スタックループ」の検知、ファイル削除などの「破壊的な操作」のレビューといった実務的なユースケースを紹介。Preflightのインストールから、Copilotデスクトップへのフック設定（preflight.jsonの作成）、ダッシュボードでの確認方法まで、ステップバイステップで説明されています。機密情報の自動マスク機能など、チームでAIエージェントを安全に利用するための実用的な知見がまとまっています。",
+    "topics": [
+      "GitHub Copilot",
+      "New Relic Preflight",
+      "AIエージェント",
+      "オブザーバビリティ",
+      "セキュリティ監査"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 20,
+      "overall": 88
+    }
+  }
+}

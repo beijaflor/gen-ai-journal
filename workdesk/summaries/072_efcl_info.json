@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:34:59.004020+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Projectsを使って、複数のリポジトリにまたがるtextlintとルールのパフォーマンスを改善した",
+    "url": "https://efcl.info/2026/11/24/textlint-performance/",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "textlint本体および主要ルールのリポジトリをClaude Projectsで統合管理し、互換性を維持したまま実行速度を約10分の1に高速化した手法の解説。",
+    "summaryBody": "azu氏による、自然言語校正ツール「textlint」とその周辺エコシステムの劇的なパフォーマンス改善に関する記録です。AIエージェントによるドキュメント生成の増加に伴い、校正の高速化が急務となる中、Claude Projectsを活用して30以上のリポジトリを横断的に管理・修正し、実行時間を約1/10まで削減しました。\n\n主な改善アプローチは以下の通りです：\n1. **計測と可視化**: textlint CLIに`--profile`フラグを導入し、ボトルネックを特定。CIでのパフォーマンス比較を徹底。\n2. **ライブラリの刷新**: 形態素解析を行う「kuromojin」の自前実装への差し替えや、Markdownパーサーの書き直しを実施。\n3. **実装の最適化**: 正規表現の再生成抑制や、V8のガベージコレクション（GC）効率を低下させていたメモリ参照の修正。\n\nClaude Projectsを「計測・調査・仕様策定・実装」のサイクルに組み込むことで、大規模な依存関係を持つプロジェクト群を効率的にリファクタリングし、既存設定との互換性を保ったまま高速化を実現しています。",
+    "topics": [
+      "textlint",
+      "JavaScript",
+      "Performance Optimization",
+      "Claude Projects",
+      "Morphological Analysis"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

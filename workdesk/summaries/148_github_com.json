@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:13:45.317831+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AWS samples: AIエージェント向け仕様書をソースコードから逆生成するワークフロー「reverse-spec-flow」",
+    "url": "https://github.com/aws-samples/sample-reverse-spec-flow",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントを用いて既存のソースコードから根拠付きの仕様書を自動生成し、システムの保守やモダンスタックへの刷新を支援するワークフロー。",
+    "summaryBody": "AWSが公開したこのツールは、Claude CodeやKiroといったAIコーディングエージェントを活用し、ドキュメントのないレガシーコードから「AIフレンドリーな仕様書」を生成するためのワークフローです。最大の特徴は、AIによるハルシネーション（誤情報）を防ぐための厳格な検証プロセスにあります。生成される仕様書の各記述には必ずソースコードの該当箇所（パス：行番号）が引用され、さらに作成者とは別の「検証エージェント」がその整合性をダブルチェックします。コードグラフに基づいた網羅性の確認、IDによる相互参照、技術スタックに依存しない仕様の抽出など、人間だけでなくAIが読み解くことを前提とした設計になっており、仕様駆動開発（SDD）によるシステム刷新や、複雑なシステムの保守を劇的に効率化します。",
+    "topics": [
+      "AI Agents",
+      "Claude Code",
+      "Reverse Engineering",
+      "Modernization",
+      "Software Documentation"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "GitHub - aws-samples/sample-reverse-spec-flow: A workflow that uses an AI coding agent (Claude Code or Kiro) to turn existing source code into AI-friendly specifications. Every statement cites its evidence (path:line) and is checked by a separate verifier agent. Use the specs to reimagine the app through spec-driven development, or to maintain the current system."
+  }
+}

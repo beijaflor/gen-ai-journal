@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:21:55.495083+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "信頼と制御の構築：Google WorkspaceとGoogle Cloudにおける次世代AIエージェントの展開",
+    "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Googleは、WorkspaceとGoogle Cloud全体でAIエージェントを安全にデプロイ・管理するための新インフラ「MCPサーバ」や「Agent Gateway」などの包括的なセキュリティ機能を発表しました。",
+    "summaryBody": "Googleは、AIエージェントが自律的にアクションを実行する時代に対応するため、WorkspaceとGoogle Cloudにまたがる新しいセキュリティモデルとツール群を導入しました。\n\n主な新機能は以下の通りです：\n1. **Workspace MCP（Model Context Protocol）サーバ & CLI**: Gmail、Drive、Docsなどのデータにアクセスするための標準インターフェース。DLP（データ流出防止）チェックやプロンプト注入対策（Model Armor）が組み込まれており、機密性の高い操作には「人による確認（HITL）」を強制します。\n2. **Google Cloud Agent Gateway**: LLMやMCP、Agent2Agent（A2A）トラフィックを検証するプロトコルネイティブなゲートウェイ。Agent Registryに基づく識別情報の検証やIAMポリシーの適用を行います。\n3. **エージェント専用アイデンティティ**: AIエージェントを従来のアプリやユーザーと明確に区別し、個別のクォータ制限やアクセス権限を設定可能です。\n4. **Workspace AI Tools Addendum**: AIツールによるデータのモデル学習や恒久的な保存を禁止する新しい規約。2027年2月からはWorkspace AIツールに対してこれらの新インターフェースの使用が技術的に強制されます。\n\nこれにより、企業は透明性と制御を維持したまま、大規模にAIエージェントを導入することが可能になります。",
+    "topics": [
+      "AIエージェント",
+      "Google Workspace",
+      "Google Cloud",
+      "MCP",
+      "サイバーセキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud"
+  }
+}

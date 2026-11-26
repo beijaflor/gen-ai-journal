@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:21:09.475203+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code を5〜8個並べても迷わないように、自分用のダッシュボードをバイブコーディングで作った",
+    "url": "https://zenn.dev/nexta_/articles/a3ff76a9f98f1c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの複数同時並行セッションによる認知負荷と管理の難しさを解消するため、バイブコーディングを通じて自作の運用監視ダッシュボードを開発した実践記録。",
+    "summaryBody": "VSCode上でClaude Codeのセッションを5〜8個並行して動かす際、「どのパネルが何の作業中か不明」「返事待ちに気づけない」「使用枠の残量が不安」といった課題が発生しました。著者はこれらを解決するため、自身でコードを書かずにClaudeとの対話のみで開発を進める「バイブコーディング」によって専用ダッシュボードを構築。各セッションの内容をHaikuで1行要約する機能、ブラウザ通知と音によるレスポンス待ち通知、使用枠の需要予測グラフ、過去セッションの検索・引き継ぎ台帳などの機能を実装しました。結果としてスイッチングコストが劇的に低下し、AIエージェントを最大限に活用できる環境を整えたプロセスが詳述されています。",
+    "topics": [
+      "Claude Code",
+      "Vibe Coding",
+      "AIエージェント",
+      "生産性向上",
+      "VSCode"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

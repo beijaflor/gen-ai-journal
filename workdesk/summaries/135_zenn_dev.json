@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:40:32.599945+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "pstack 完全ガイド ─AIエージェントに雑なコードを書かせない技術─",
+    "url": "https://zenn.dev/karamage/books/50c18e52e7d19e/viewer/845d0c",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "元Reactコアチーム開発者が作成したAIエージェント用スキル集「pstack」を軸に、AIに高品質なコードを自律的に検証・修正させる「Verification」重視の開発手法を解説するガイド。",
+    "summaryBody": "CursorやClaude CodeといったAIエージェントの出力が「それっぽいだけの質の低いコード（slop）」になってしまう課題を解決するためのフレームワーク『pstack』の解説書です。pstackは、MetaやNetflix等で経験を積んだLauren Tan（poteto）氏が開発したスキル・プレイブック集であり、AIが自律的に成果物を検証する仕組み（Verification）を導入します。本書では「証拠がなければ完了ではない」「書いた人に採点させない」「足す前に引く」といった5つの大原則を掲げ、人間がボトルネックにならない開発環境（ハーネスエンジニアリング）の構築方法を提示しています。AIに頼り切りになるのではなく、検証可能な構造を整えることで、寝ている間に信頼できるプルリクエストを作成させるような高度な自動化を目指します。",
+    "topics": [
+      "pstack",
+      "AIエージェント",
+      "Cursor",
+      "Claude Code",
+      "Verification"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

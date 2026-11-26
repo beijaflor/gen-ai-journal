@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:26:23.628427+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "エンジニア20人の組織を、デザイナー1人と AI で支える仕組み",
+    "url": "https://zenn.dev/rimo/articles/c25919207b1cde",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Rimo社のデザイナー1名が、エンジニア20名の開発速度に対応するため、Claude Codeと独自のデザインシステムを連携させたAIプロトタイピング環境「design-protos」を構築し、設計の自動化と属人化解消を実現した事例。",
+    "summaryBody": "Rimo合同会社のデザイナーが、1人で20名のエンジニアを支えるために構築したAI駆動型プロトタイピング環境「design-protos」の仕組みと知見を解説しています。このシステムは、Claude Codeに本番のデザインシステムやコードを読み込ませ、制約（トークン・コンポーネント縛り）、コンテキスト（現状再現）、自動検証（AIによるデザインレビュー）、フィードバック（ログ記録）という4つの層でAIを制御する「デザインハーネス」という考え方に基づいています。導入の結果、エンジニアやPdM自身がデザイン案を作成可能になり、デザインのボトルネックが解消されました。一方で、AIによる制作量増大に伴うレビューコストの増加や、表面的なUI作成が容易になったことで「なぜ作るか」という本質的な意思決定の重要性がより高まったという、実践的な課題についても詳述されています。",
+    "topics": [
+      "AIデザイン",
+      "Claude Code",
+      "プロトタイピング",
+      "デザインシステム",
+      "組織設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

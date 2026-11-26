@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:16:29.865219+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIペネトレーションテスト基盤「Cairn」が大学への攻撃で見つけたゼロデイについてまとめてみた",
+    "url": "https://piyolog.hatenadiary.jp/entry/2026/11/24/214547",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Amazonの調査により、中国関連の攻撃者がAIエージェント「Cairn」を自律運用させ、医療用AIアプリのゼロデイ脆弱性を自ら発見・悪用して大学サーバーを侵害した実態が明らかになりました。",
+    "summaryBody": "Amazon Threat Intelligenceが公開した報告書に基づき、オープンソースのAIペネトレーションテスト基盤「Cairn」を用いた攻撃事例を解説しています。特筆すべきは、AIエージェントが人間の直接的な指示なしに、Project-MONAIの医療画像AIアプリ「MONAI Label」におけるパストラバーサル脆弱性（CVE-2026-133968）を自力で特定し、root権限でのリバースシェルを確立した点です。攻撃者は簡体字中国語のプロンプトを使用し、東アジアの大学を標的にしていました。AIはRedisやGPUサーバーへの攻撃に失敗しても約16時間にわたり試行錯誤を続けるなど、高度な持続性と適応性を示しました。本事例は、AIが既知の脆弱性利用に留まらず、未知の脆弱性を自律的に発見・悪用する段階に入ったことを示唆しています。",
+    "topics": [
+      "AIセキュリティ",
+      "Cairn",
+      "ゼロデイ脆弱性",
+      "MONAI Label",
+      "ペネトレーションテスト"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    }
+  }
+}

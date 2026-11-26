@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:32:11.247122+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "攻撃者がHugging FaceのAIを悪用してフィッシングページを作成",
+    "url": "https://www.aikido.dev/blog/hugging-face-phishing-pages",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Hugging FaceのAIサイトビルダー「DeepSite」を悪用し、自然言語のプロンプトのみで作成された42件のフィッシングサイトが発見され、AIが攻撃の敷居を下げている実態が明らかになった。",
+    "summaryBody": "Aikido Securityの研究チームは、Hugging Face Spaces上でホストされていた42件のフィッシングおよび資格情報窃取ページを特定しました。これらのサイトはMicrosoft、Google、PayPalなど28の主要ブランドを模倣しており、特筆すべきは、そのうち29件がHugging FaceのAIウェブサイトビルダー「DeepSite」によって構築されていた点です。攻撃者はコードを書く代わりに、自然言語のプロンプトで「Instagramの検証用フィッシングページを作ってほしい」といった指示を与えるだけで、SSL証明書付きの信頼されたドメイン（hf.space）上で動作する詐欺サイトを数十分で公開していました。発見されたサイトの一部は18ヶ月以上も稼働しており、TelegramボットやDiscordウェブフックを通じて盗んだ資格情報を送信していました。報告後、Hugging Faceはこれらのページを削除しましたが、研究者はhf.spaceドメインを他の無料ホスティングと同様に警戒し、組織のログを確認することを推奨しています。",
+    "topics": [
+      "Hugging Face",
+      "フィッシング",
+      "AIセキュリティ",
+      "DeepSite",
+      "サイバー犯罪"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 90
+    },
+    "originalTitle": "Attackers use Hugging Face’s AI to host phishing pages"
+  }
+}

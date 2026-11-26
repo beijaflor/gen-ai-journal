@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:24:42.294244+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）",
+    "url": "https://zenn.dev/happy_elements/articles/27e14ff6754044",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの利用におけるセキュリティリスクを、実行前の権限設定と実行中のOSレベル隔離（サンドボックス）の二層防御で管理するベストプラクティスの解説。",
+    "summaryBody": "Claude Code CLIを安全に運用するための2026年11月時点のガイドです。主なポイントは以下の通り：\n\n- **二層の防御**: ツール呼び出し前に許可・拒否を判定する「Claude Codeの設定」と、実行中のプロセスを制限する「OSレベルの隔離（Bashサンドボックス）」を併用します。\n- **Bashサンドボックス**: macOS(Seatbelt)やLinux(bubblewrap)の機能を利用。有効化することで書き込み先を作業ディレクトリに限定し、ネットワーク通信を許可リスト制に制限できます。ただし、読み取り制限には別途`deny`ルールの設定が必要です。\n- **MCPとプラグインの管理**: MCPサーバーやフックはサンドボックス外で動作するため、信頼性の確認が不可欠です。`.mcp.json`にトークンを直接書かない、不要なプラグインを入れないなどの対策を推奨しています。\n- **実践的設定例**: `.env`や`~/.ssh`へのアクセス拒否、特定のBashコマンドへの確認(`ask`)設定を含む`settings.json`の具体例と、設定が正しく機能しているかダミーファイルで検証する手順が紹介されています。",
+    "topics": [
+      "Claude Code",
+      "AI Security",
+      "Model Context Protocol",
+      "Sandboxing",
+      "LLM Ops"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 90
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:40:46.368555+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "開発者のための実践ガイド ｜ TLA+・TLCによるモデル検査：AI時代の実践・形式検証入門",
+    "url": "https://docs.google.com/presentation/d/1s-ie7b1rD47NUkwSIvdDYCJfrHzWOl-rt1c2hSgeerM/edit?slide=id.p1",
+    "language": "ja",
+    "contentType": "🎓 Learning & Education (学習・教育)",
+    "oneSentenceSummary": "TLA+/TLCを用いた形式検証とAI（PStack）を組み合わせ、従来のテストでは網羅困難な仕様の不備を効率的に発見・検証するための実践ガイド。",
+    "summaryBody": "複雑なビジネスルールや分散システムのバグを未然に防ぐ「モデル検査」の入門資料です。システムをステートマシンとして捉え、TLA+言語で状態遷移と守るべきルール（不変条件）を定義し、検証器TLCで網羅的に探索する手法を解説しています。特に、予約システムの二重予約問題などの「操作順による不具合」を、数万通りの状態から自動で発見するプロセスが示されています。また、AIエージェント向けのスキル集「PStack」を活用し、AIがモデル作成や反例のテストコード化を補助する現代的なワークフローを提案。形式検証の学習コストをAIで補いつつ、仕様の抜けを早期に発見し、堅牢なシステムを構築するための勘所がまとめられています。",
+    "topics": [
+      "TLA+",
+      "モデル検査",
+      "形式検証",
+      "PStack",
+      "ステートマシン"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

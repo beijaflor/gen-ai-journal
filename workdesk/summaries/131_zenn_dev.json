@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:18:41.729584+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み",
+    "url": "https://zenn.dev/codehex/articles/33bc6ee330b880",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "MetaのAIエージェント「Muse」に対し、Webhookをトリガーにしてサイドチャットへ即座にメッセージを届けるOSS「MuseKnock」の設計と実装の詳細を解説した記事。",
+    "summaryBody": "Metaが提供するAIエージェント「Muse」をイベント駆動で動かすためのOSS「MuseKnock」の技術解説です。従来、Museを外部サービスと連携させるには定期実行によるポーリングが一般的でしたが、MuseKnockはCloudflare WorkersとDurable Objectsを活用し、WebhookをリアルタイムにMuseのサイドチャットへ中継します。HonoベースのWorkerで各サービスの署名検証やレート制限を行い、SQLiteを内蔵したDurable Objectsでイベントの順序制御や重複排除、未達時の再送処理を管理しています。また、AIエージェント特有の課題である「無限ループ（メッセージの循環）」を防ぐためのサーキットブレーカー機能や、外部入力によるプロンプトインジェクション対策、さらにはMuse自身にデプロイを任せるセットアップ手順など、実用性と安全性に配慮した設計思想が詳しく述べられています。",
+    "topics": [
+      "Muse",
+      "Cloudflare Workers",
+      "Webhook",
+      "Model Context Protocol",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    }
+  }
+}

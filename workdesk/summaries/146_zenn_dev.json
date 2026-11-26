@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:14:22.732102+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "MCPの記録ツールにおける「追記のみ」設計の罠と改善策",
+    "url": "https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "MCPツールを「追記のみ」で設計すると訂正時にデータが重複し集計ミスを招くため、1日1件の記録には「upsert（置き換え）」方式が最適であるという検証結果。",
+    "summaryBody": "著者による、Claude Codeを用いた生活記録ツールのMCPサーバー設計に関する検証記事です。「追記」と「取得」のみのツールでは、AIが誤った記録を訂正する際に古い行を削除できず、人間向けの注釈は残せてもプログラムによる自動集計で重複が発生します。実験では「追記のみ」「追記＋削除」「置き換え（upsert）」の3パターンを比較。結果、1日1行の記録には「置き換え（upsert）」が最適であると結論付けています。これによりAPI呼び出し回数を削減しつつ、データベースのユニーク制約で整合性を担保できます。シェル権限を持つAIが不足した機能を補うためにスクリプトを自作する挙動についても言及されており、安全なツール設計の重要性を説いています。",
+    "topics": [
+      "MCP (Model Context Protocol)",
+      "Claude Code",
+      "SQLite",
+      "API設計",
+      "データベース"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 90
+    }
+  }
+}

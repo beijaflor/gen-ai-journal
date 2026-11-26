@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:18:09.796214+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TypeScript 7 の型チェックで CI のメモリ使用量を減らす",
+    "url": "https://dev.henry.jp/entry/2026/11/24/120000",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "TypeScript 7のネイティブ型チェッカーにおける並列動作を制御し、メモリ使用量を約3GB削減することでCIランナーのコストを最適化した事例の紹介。",
+    "summaryBody": "TypeScript 7で導入されたGoベースのネイティブ型チェッカーが、並列実行時にメモリを大量に消費する性質に着目し、CI環境におけるリソース最適化を行った記録です。並列数を抑制する `--singleThreaded` 指定により、実行時間は増えるもののメモリ消費を大幅に抑え、CI全体の所要時間に影響を与えずに安価なランナー（16GB RAMから8GB RAM）への移行を実現しました。また、複雑な条件型の排除や `emit` の停止、Node.jsのヒープ制限からGoの `GOMEMLIMIT` への設定移行など、ツールチェインの変化に伴う実用的なTipsが網羅されています。",
+    "topics": [
+      "TypeScript",
+      "CI/CD",
+      "Memory Optimization",
+      "Performance Tuning",
+      "TypeScript 7"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:15:16.311756+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "「コードを書く」から「迷わず判断する」へ——AIエージェント時代の開発ワークフローを自作ツールで再設計した話",
+    "url": "https://zenn.dev/syarihu/articles/ba25f243ca79ed",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "AIエージェントを並列稼働させるオーケストレーター「agent-adjutant」の2ヶ月にわたる改善の軌跡と、実装をAIに任せ人間が判断に集中するためのUI/UX設計の重要性を説いた記事。",
+    "summaryBody": "本記事は、複数のAIエージェント（Claude CodeやCodex等）を並列で動かし、開発ワークフローを効率化する自作ツール「agent-adjutant」の進化を記録した開発記です。リポジトリ全体を管理する「hub」と、各タスクをGit worktree上で実行する「worker」という構成を採用し、人が「何を確認し、何を判断すべきか」を最適化するための試行錯誤が綴られています。主な改善点として、iTerm2のタブ管理からtmuxとWebボード（またはMacアプリ）への移行、情報のノイズを減らし判断を助ける「Gate」機能の設計、AIによるPRの下読み機能などが挙げられます。著者は約440件のPRの多くをAIに任せる「autopilot」運用を実現しつつ、UI/UXに関しては人間が主導して5回もの刷新を行った結果、「依頼→調査→計画→質問」という情報の流れが最もストレスを軽減することを見出しました。最終的に、Rust製のCLI・サーバー・Macアプリとして結実し、人間の役割を「実装」から「高次な意思決定」へとシフトさせるワークフローを提案しています。",
+    "topics": [
+      "AIエージェント",
+      "Rust",
+      "tmux",
+      "MCP",
+      "開発効率化"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    }
+  }
+}

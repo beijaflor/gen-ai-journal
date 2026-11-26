@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:36:10.005575+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "1回のAPI呼び出しでファイルから引用付き回答を取得：Agent RetrievalのManaged IngestionとSearchDocuments",
+    "url": "https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval/",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Google CloudのAgent Retrievalに、ドキュメントや動画の取り込みから検索・引用生成までを自動化するマネージド機能が追加されました。",
+    "summaryBody": "Googleは、RAG（検索拡張生成）パイプラインの構築を劇的に簡素化する「Managed Ingestion」と「SearchDocuments」をAgent Retrieval（旧Vector Search 2.0）のパブリックプレビューとして発表しました。従来、開発者はPDFや動画などのファイルを解析し、チャンク分割、埋め込み、ベクトルDBへの登録といった工程を自前で実装・維持する必要がありましたが、新機能ではCloud Storage上のファイルを指定するだけで、Gemini Embedding 2を利用したインデックス作成が自動化されます。\n\n主な利点は、単一のAPI呼び出しでハイブリッド検索（セマンティック+全文検索）が可能になり、結果にページ番号（ドキュメント）やタイムスタンプ（動画）といった「引用情報」が自動付加される点です。特に動画検索では、視覚情報に加えて音声情報を埋め込むことで、特定のトピックが語られている瞬間を即座に特定できます。リランキング機能（VertexRanker）も統合されており、精度の高い検索結果を基にしたエージェント構築を強力に支援します。",
+    "topics": [
+      "Agent Retrieval",
+      "Vertex AI",
+      "RAG",
+      "Managed Ingestion",
+      "Gemini"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "From Files to Cited Answers in One API Call: Managed Ingestion and SearchDocuments in Agent Retrieval"
+  }
+}

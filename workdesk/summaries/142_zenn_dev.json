@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:15:29.911960+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "コードを全部は読まずにClaude Codeで本番リリースするためにしたこと",
+    "url": "https://zenn.dev/teradox_blog/articles/8ec76cc0d9e2bb",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ゴルフスクールナビのリニューアルにおいて、Claude Codeを活用し「規約によるAI判断の最小化」と「設計・実装の並列化」により、コードを全読せずに高品質な本番リリースを実現した事例。",
+    "summaryBody": "エンジニア1名体制で進めた「ゴルフスクールナビ」のリニューアル開発において、Claude Codeを主力とした開発手法を紹介しています。主なアプローチは3点。1つ目は、AGENTS.mdや.claude/rules/を用いてコーディング規約を厳格化し、AIの判断余地を減らすことで品質を安定させたこと。2つ目は、設計書（spec）の作成と、それに基づきAIがPR作成・CI修正までを自律的に行う実装プロセスを分離し、git worktreeとOrcaを活用して5〜6本を並列稼働させたこと。3つ目は、人間によるレビューを金銭・セキュリティ・基盤に関わるクリティカルな箇所に絞り、残りはAIによる多重レビューとテストコードで担保したことです。AI導入により実装スピードが飛躍的に向上する一方で、仕様の独断やオーバーエンジニアリングといった課題も浮き彫りにしており、AI時代の開発プロセスの先駆的な事例となっています。",
+    "topics": [
+      "Claude Code",
+      "生成AI開発",
+      "Next.js",
+      "LLMエージェント",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}

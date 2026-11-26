@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:33:00.160142+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Code Modeの仕組みとCLI・エージェント・スキルへの応用",
+    "url": "https://muthuishere.medium.com/code-mode-internals-and-adapting-them-for-your-clis-and-agent-skills-3a9ae4c9782f",
+    "language": "en",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeの「Code Mode」の内部実装を分析し、CLIコマンドのプロセス起動コストを削減するために複数の操作を単一のスクリプトで実行するライブラリ「CLI CodeMode」を提案する。",
+    "summaryBody": "この記事では、Claude Codeが採用している「Code Mode」の仕組みを詳しく解説しています。通常、エージェントがCLIを操作する際はコマンドごとにプロセスを起動しますが、Code ModeではREPL環境内でツール定義を動的に読み込み、状態を保持しながら実行することでオーバーヘッドを削減しています。筆者はこのアプローチに着想を得て、CLIに軽量なJavaScript実行環境を組み込む「CLI CodeMode」ライブラリを開発しました。これにより、複数の操作を1つのプログラムとしてまとめて実行でき、通信回数、プロセス数、CPU使用率を劇的に改善できることを実証しています。Go、Rust、Python、TypeScript向けに提供されており、特にコマンド数の多い複雑なCLIツールをAIエージェントに対応させる際の最適化手法として有用です。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "CLI開発",
+      "パフォーマンス最適化",
+      "REPL"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 92
+    },
+    "originalTitle": "Code Mode internals, and adapting them for your CLIs and agent skills"
+  }
+}

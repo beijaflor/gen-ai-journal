@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:27:07.497707+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VS Code 1.148：エージェント専用の Dev Container と Sandbox profiles。「隔離」の3種類を使い分ける",
+    "url": "https://qiita.com/shahin0809/items/05a6c7431ee7e5b6e520",
+    "language": "ja",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "VS Code 1.148で導入された、AIエージェント用の「設定不要なDev Container」と、ホストごとに制限を切り替えられる「Sandbox profiles」の活用法と注意点を解説しています。",
+    "summaryBody": "VS Code 1.148（2026年11月リリース想定の記述）におけるAIエージェント向けの強力な隔離機能について解説した記事です。主な新機能は2つあります。1つ目は、設定ファイルなしでUbuntuコンテナを立ち上げ、エージェントにタスクを「隔離環境で実行（handoff）」させる機能。2つ目は、ネットワークやファイルアクセスの制限設定をプロファイル化し、SSHやWSLなどのリモートホストごとに割り当てられる「Sandbox profiles」です。従来のWorktreeを含めた「3つの隔離」の概念整理に加え、サンドボックス使用時にDockerの隔離が一部緩和されるセキュリティ上のトレードオフや、実験的機能ゆえの挙動の不安定さ（Issue情報）についても実証を交えて詳しく論じています。エージェントに自由な権限を与えつつ、ホスト環境の安全性をどう担保するかという課題に対する具体的な解法を提示しています。",
+    "topics": [
+      "VS Code",
+      "GitHub Copilot",
+      "Dev Container",
+      "AIエージェント",
+      "セキュリティ"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

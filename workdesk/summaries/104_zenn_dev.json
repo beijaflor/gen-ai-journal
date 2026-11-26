@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:26:07.072258+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "モデルの性能が出ないのは AI ゲートウェイのせいかもしれない",
+    "url": "https://zenn.dev/google_cloud_jp/articles/7e29a9acf06557",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIゲートウェイによるプロトコル変換が、思考署名の欠落やキャッシュ失効を引き起こし、LLM本来の性能を損なう実態とその対策を解説。",
+    "summaryBody": "AIゲートウェイ（LiteLLM等）を介して異なるプロバイダーのモデルを利用する際、HTTP 200を返しながらも応答品質や速度が低下する「サイレントな性能劣化」の問題を詳説しています。主な要因として、Gemini等の推論状態を維持するための「思考署名（thoughtSignature）」が変換過程で脱落し、2ターン目以降で思考がリセットされることや、ロール変換の不備によりコンテキストキャッシュ（Prefix Caching）が無効化されることが挙げられます。記事では、プロバイダー純正APIとの挙動比較や、2ターン目以降の思考トークン数・キャッシュヒット率の監視、そして可能な限り変換を挟まない「パススルー構成」の採用といった具体的な対策・切り分け手法を提示しています。",
+    "topics": [
+      "AI Gateway",
+      "Gemini",
+      "LiteLLM",
+      "LLM Performance",
+      "Context Caching"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 98,
+      "annexPotential": 30,
+      "overall": 95
+    }
+  }
+}

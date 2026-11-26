@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:30:31.730779+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Qwenモデルを5,600個のAWS Lambdaで動かす実験：楽しみと80倍の赤字",
+    "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AWS Lambdaを用いてLLMの各レイヤーを数千の関数に分散実行する実験を行い、技術的な面白さと実運用における圧倒的なコスト・パフォーマンスの低さを検証したレポート。",
+    "summaryBody": "AWS Lambdaの並列分散能力を活用し、Qwen 3.5-4Bモデル（H2O-Lightning）をレイヤーごとに分割して推論を実行した技術実証の記録です。3GBのメモリ制限を回避するため、モデルの全32レイヤーを分割し、S3をステート共有の仲介役として5,600個のLambdaをカスケード状に呼び出すアーキテクチャを採用しました。数学的な正当性は証明されましたが、結果として4,000トークンの読み取りに17秒を要し、コストは商用モデル（Gemini Decision 1）の80倍以上となる100万トークンあたり8.40ドルに達しました。LLM推論においてCPU分散処理はGPUの演算密度や経済性に太刀打ちできないという教訓を、具体的な実装と数値で示しています。",
+    "topics": [
+      "AWS Lambda",
+      "LLM 推論",
+      "Qwen",
+      "サーバーレス",
+      "コスト分析"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 2,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Serving Qwen via 5,600 Lambdas for fun and 80x negative profit"
+  }
+}

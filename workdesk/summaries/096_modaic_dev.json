@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:28:22.861394+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レイテンシは嘘をつかない：Jevの正体は（おそらく）Qwen3.5-35B-A3Bである",
+    "url": "https://modaic.dev/blog/latency-doesnt-lie",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Modaicによる調査の結果、TypeSafe社のモデル「Jev」の正体は、レイテンシ特性、トークナイザーの挙動、およびスループットの分析からQwen3.5-35B-A3Bである可能性が極めて高いことが判明した。",
+    "summaryBody": "TypeSafe社が提供するSystem Oneモデル「Jev」の背後にあるアーキテクチャを特定するため、Modaicが詳細なリバースエンジニアリングを実施した。Jevは自己の正体を隠蔽するように訓練されているが、Modaicは「動作（挙動）」に注目。具体的には、入力長に対するレイテンシの推移、特定の政治的トピックへの回答傾向、自己認識プロンプトへの反応、そして各種トークナイザーを用いた相関分析が行われた。\n\n分析の核心は、JevがAPI経由で報告するトークン数よりも、Qwenのトークナイザーで計算したトークン数の方がJevの実際のレイテンシと高い相関（Spearmanのρ = 0.805）を示した点にある。これは、TypeSafeが公式に報告するトークン数が実態と異なり、内部でQwenのトークナイザーを使用していることを強く示唆している。さらに、スループットの比較において、Jevは疎なMoE（Mixture of Experts）モデルであるQwen3.5-35B-A3Bとほぼ一致するパフォーマンスプロファイルを示した。以上の証拠から、Jevは独自の事前学習モデルではなく、Qwenをベースにした高度なファインチューンモデルであると結論付けている。",
+    "topics": [
+      "LLM",
+      "Qwen",
+      "リバースエンジニアリング",
+      "レイテンシ解析",
+      "Mixture of Experts"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 88,
+      "annexPotential": 35,
+      "overall": 92
+    },
+    "originalTitle": "Latency doesn't lie: Jev is (probably) Qwen3.5-35B-A3B!"
+  }
+}

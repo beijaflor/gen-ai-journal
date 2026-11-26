@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:27:32.477545+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "24KBの純アセンブリで構築されたQwen3-0.6B実行用ベアメタルOS",
+    "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Linuxやlibc、C/Rustを一切使わず、x86-64純アセンブリのみで書かれた、LLM（Qwen3-0.6B）を直接実行できる超軽量なベアメタルOS。",
+    "summaryBody": "llm.asmプロジェクトのフェーズ2として公開されたこのリポジトリは、外部OSやライブラリに依存せず、ハードウェア上で直接Qwen3-0.6Bモデルを動作させるベアメタル・オペレーティングシステムです。カーネルサイズはわずか約24KBで、74〜94msという驚異的な速度でコールドブートが完了します。x86-64のロングモード、マルチコア(SMP)対応、AVX2/FMA/F16C命令による高度な最適化、2MBヒュージページによるゼロコピー・メモリ管理などを特徴としています。QEMU KVM環境下では最大136.6 tokens/sの高速な推論を実現しており、シリアル通信やVGA、PS/2キーボードを介したインタラクティブなマルチターン・チャットが可能です。ディスクなしのRAM上での動作に特化しており、ISOイメージからの起動もサポートしています。",
+    "topics": [
+      "Assembly",
+      "Operating Systems",
+      "LLM",
+      "Bare-metal",
+      "x86-64"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 98
+    },
+    "originalTitle": "llm.asm/02-baremetal-os at main · alesha-pro/llm.asm · GitHub"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:21:23.297019+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "PrismMLがTernary Bonsai 2.5 27Bを発表：エージェント的なコーディングとプライベートな知識作業を強化",
+    "url": "https://prismml.com/news/bonsai-2-5-27b",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "PrismMLは、Qwen 3.8 27Bをベースに3値量子化で5.9GBまで軽量化し、ローカル環境での高度なエージェント実行能力と高速推論を実現した新モデルを発表しました。",
+    "summaryBody": "PrismMLは、27Bパラメータ級の推論能力を極めて小さなフットプリントで実現する「Ternary Bonsai 2.5 27B」をリリースしました。Qwen 3.8 27Bをベースに構築された本モデルは、3値（Ternary）量子化技術により、メモリ占有量をわずか5.9GBに抑えつつ、マルチターンのツール利用や複雑なステップのタスク実行能力を大幅に強化しています。\n\n主な特徴は、エージェントワークフローにおける信頼性の向上です。SWE-bench等のベンチマークで前バージョンを大きく上回るスコアを記録し、失敗時の調整能力や一貫性が改善されました。推論速度も極めて高速で、NVIDIA H100で291 tokens/s、RTX 4090でも204 tokens/sを達成しています。モデルはApache 2.0ライセンスで公開され、llama.cppやMLXを通じて、PCやMac、iPhoneなどのローカルデバイス上で機密情報を保持したまま、高度なコーディング支援やデータ分析を実行することが可能です。",
+    "topics": [
+      "Ternary Quantization",
+      "Edge AI",
+      "Agentic Workflow",
+      "Qwen",
+      "Model Compression"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    },
+    "originalTitle": "Introducing Ternary Bonsai 2.5 27B: Powering Agentic Coding and Private Knowledge Work"
+  }
+}

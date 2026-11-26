@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:25:52.191405+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Personal Agent Protocol (Poppy) が解く問題と仕組み",
+    "url": "https://zenn.dev/sierra_japan/articles/0b9ba590232345",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "SierraとMetaが共同開発したPersonal Agent Protocol (Poppy) は、ユーザー、AIエージェント、企業間の安全な連携を可能にする、OAuthベースのオープンなプロトコルです。",
+    "summaryBody": "この記事では、パーソナルAIエージェントと企業を安全につなぐための新プロトコル「Personal Agent Protocol (Poppy)」について解説しています。現在、エージェントは「ユーザーとして完全に振る舞うか、ブロックされるか」の二択という問題を抱えていますが、Poppyは`poppy.json`を介した機能公開と段階的な認可（OAuth）によって、この間に柔軟なアクセスレベルを設定します。技術的には、エージェントの身元を証明する`client_id`としてのURL利用、セッションヘッダー（JWT）による匿名性を維持したユーザー識別、そして重要操作に対する「承認（operations拡張）」などの仕組みを備えています。Shopifyなどの大手も採用を始めており、エージェントが企業から信頼されるインフラを目指しています。",
+    "topics": [
+      "Poppy",
+      "AIエージェント",
+      "OAuth",
+      "セキュリティ",
+      "API設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 92
+    }
+  }
+}

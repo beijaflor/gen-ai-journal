@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:26:38.433999+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "0.3秒で答えるAIは、暗算でつまずく ― Jev・OpenAI・Geminiの判断APIを165問で比べた",
+    "url": "https://zenn.dev/rehabforjapan/articles/decision-api-comparison",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Jev、OpenAI、Geminiの判断専用API3種を165件のテストで比較し、文章読解では横並びな一方で、日付や給与などの計算能力と確率の正確性（較正）に顕著な差があることを検証。",
+    "summaryBody": "Rehab for JAPANのCTOによる、判断専用API（Jev, OpenAI Decisions, Gemini Decisions）の技術比較検証です。51件のシナリオと165問のテストセットを用いた結果、以下の知見が得られました。\n\n### 精度と特性\n- **総合正解率:** Geminiが87.3%で首位。JevとOpenAIは78.2%でした。\n- **得意不得意:** 文章の読み取りや分類では3社とも95%以上の高精度でしたが、給与計算や日付計算でGeminiが優位性を示しました。\n- **暗算の限界:** 3社とも思考トークンを生成せず「暗算」で答える仕組みのため、複雑な計算では正解率が下がります。また、同一リクエスト内の質問間で論理的整合性が崩れるケースも確認されました。\n\n### 運用面の違い\n- **速度・コスト:** Jevが最も高速（148ms）かつ安価であり、単純な分類タスクに適しています。\n- **確率の信頼性:** Jevは確率の高さと正解率が一致する「較正」が良好な一方、OpenAIは自信過剰な誤答（確信度が高いのに間違い）が目立つ傾向にあります。\n\n### 活用の指針\n実務では計算をコード側で事前に行い、APIにはルール適合の判定のみを任せる構成が推奨されます。また、信頼しきい値の設定はモデルごとに個別調整が必要です。",
+    "topics": [
+      "LLM",
+      "Gemini Decisions",
+      "OpenAI Decisions",
+      "Jev",
+      "ベンチマーク"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 92,
+      "annexPotential": 8,
+      "overall": 95
+    }
+  }
+}

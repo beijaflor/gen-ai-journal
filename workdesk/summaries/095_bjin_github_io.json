@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:28:50.002043+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "go/codegolf ベンチマーク：フロンティアモデル vs Googleの2015年コードゴルファー",
+    "url": "https://bjin.github.io/go-codegolf-benchmark/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "2015年にGoogle内部で開催されたコードゴルフ大会の課題を用い、最新のAIモデルが人間の記録にどこまで迫れるかを測定するベンチマークの紹介。",
+    "summaryBody": "このベンチマークは、2015年にGoogle内部で熱狂的に行われていたコードゴルフコンテスト「go/codegolf」の課題32問を使い、最新のAIモデルの能力を測定するものです。8つのプログラミング言語（JS, Python, C++, Haskell, Ruby, Raku, Racket, GolfScript）を対象とし、単に正解するだけでなく、いかに短いバイト数で記述できるかを競います。モデルには実行環境やテストケース、過去の最短記録（ターゲット）が共有され、30分間の制限時間内で改善を繰り返します。最新の結果では、GPT-6.2 AstraがJavaScript、Python、C++の3言語合計スコアで初めて人間の記録を塗り替えましたが、特定の問題では依然として当時のエンジニアによる記録が破られていません。モデルは複素数を用いた幾何学的なアプローチや、数学的な剰余の性質を突いた独創的な最適化を自ら導き出しており、AIが「動作するコードを書く」段階を超えて、極限の最適化を追求できるレベルに達していることを示唆しています。",
+    "topics": [
+      "Code Golf",
+      "LLM Benchmark",
+      "Google",
+      "Programming Optimization",
+      "GPT-6"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 30,
+      "overall": 95
+    },
+    "originalTitle": "go/codegolf benchmark: frontier models vs. Google's 2015 code golfers."
+  }
+}

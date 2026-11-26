@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:24:09.200544+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AIエージェントのMemory設計 ― 会話履歴・業務データ・長期Memoryの使い分け",
+    "url": "https://zenn.dev/taru_neko/articles/ai-agent-memory-architecture-2026",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "AIエージェントにおける短期・長期メモリの役割の違いや、既存DBとの使い分け、情報の更新・セキュリティを含めた実務的な設計指針を解説しています。",
+    "summaryBody": "AIエージェントの「Memory」設計に関する包括的なガイドです。まず、会話の文脈を維持する「短期Memory」と、スレッドを跨いで好みを引き継ぐ「長期Memory」の違いを定義し、LangGraphのCheckpointer（状態保存）とStore（共有情報）を用いた実装例を紹介しています。設計の肝として、既存の業務DBで管理すべきデータとエージェント用メモリを混同しないことや、LLMによる情報の抽出・更新・削除のロジック、さらに「Memory Poisoning」などのセキュリティリスクへの対策を詳述。専用の長期メモリ機構を導入する際の判断基準として、非定型情報の継続的な抽出が必要か、既存の仕組みで代替できないかを評価する重要性を説いています。",
+    "topics": [
+      "AIエージェント",
+      "システム設計",
+      "LangGraph",
+      "LLM",
+      "メモリー管理"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 90
+    }
+  }
+}

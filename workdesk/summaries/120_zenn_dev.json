@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:21:40.773505+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude Code の /ship を図解する：PR作成から監視、修正までを自動化する新スキルの仕組み",
+    "url": "https://zenn.dev/peoplex_blog/articles/claude-code-ship",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude Codeに追加された「/ship」スキルの内部挙動をプロンプトレベルで解析し、PR作成からCI監視、修正対応、マージ直前までの自動化プロセスと安全性への配慮を解説した記事です。",
+    "summaryBody": "PeopleXのエンジニアが、Claude Codeの新機能「/ship」スキルの仕組みを詳細に解説しています。このスキルは、コミット、PR作成、レビュー対応、CIエラーの修正、そしてマージ準備完了の報告までを一つのセッションで一貫して担当します。\n\n主な技術的特徴と利点は以下の通りです：\n- **リソース効率**: Claude自身が常に稼働するのではなく、CLI本体が2分おきにPRを監視。変化（CI失敗や新規コメントなど）があった時のみClaudeを呼び出すため、待機中のトークン消費が極めて少なくなっています。\n- **自律的な修正対応**: 権限を持つユーザーからの指摘やCIの失敗を検知し、自動でコードを修正してpushします。ただし、同一原因でのpushは3回まで、強制pushは禁止といった厳格な制約があります。\n- **安全性**: PRのマージや削除、リポジトリ設定の変更などは行わず、あくまで「マージ直前」の状態までを整えることに特化しています。\n\n記事では既存PRを監視する「/steward」との違いや、PR本文が英語で生成される仕様、特定の設定ファイル（.claude/skills/）によるカスタマイズ性についても触れており、AIエージェントを開発ワークフローに組み込む際の実践的な知見を提供しています。",
+    "topics": [
+      "Claude Code",
+      "AIエージェント",
+      "GitHub",
+      "自動化",
+      "開発プロセス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 92
+    }
+  }
+}

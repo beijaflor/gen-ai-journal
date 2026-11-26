@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:29:03.899500+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AnthropicがMessages APIをPythonからRustへ移行：AIエージェントを活用した大規模システム刷新の舞台裏",
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Anthropicは、Claudeを活用した自動検証ループとプロダクション環境でのシャドウイングを駆使し、Messages APIをPythonからRustへ移行することでCPU使用率を70%削減し、パフォーマンスを大幅に向上させた。",
+    "summaryBody": "Anthropicは、APIトラフィックの1800倍という急激な成長に対応するため、主要な「Messages API」をPythonからRustへ完全に移行しました。このプロジェクトの最大の課題は、常に進化し続ける既存システムとの「等価性（パリティ）」の検証でした。同社は、顧客のプライバシーを保護しつつ、プロンプトの構成やモデル出力を「チェックポイント」と「フィンガープリント」によって比較するシャドウイング・システムを構築しました。開発プロセスにはClaude自身を組み込み、3つの検証ループ（高速なサンドボックスでの修正案作成、実環境での検証、人間からのフィードバックを反映するメモリループ）を回すことで、開発を止めずに移行を完遂しました。結果として、リクエストあたりのCPU使用率を70%削減、最初のトークン生成までの時間（TTFT）を20%短縮することに成功しました。これは、AIエージェントがコード生成だけでなく、複雑なシステムの「検証」においても中心的な役割を果たせることを証明する事例となっています。",
+    "topics": [
+      "Anthropic",
+      "Rust",
+      "API Migration",
+      "AI Agents",
+      "Backend Engineering"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 15,
+      "overall": 95
+    },
+    "originalTitle": "Migrating our Messages API to Rust"
+  }
+}

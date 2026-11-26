@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:25:36.279060+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Agentforce エージェントから外部 MCP サーバー（Asana）のツールを使うための設定ガイド",
+    "url": "https://zenn.dev/hrendoh/articles/agentforce-external-mcp-asana",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "SalesforceのAgentforceエージェントから外部のMCPサーバー（Asana）を呼び出し、ケース情報をもとにタスクを自動起票するための具体的な設定フローを解説しています。",
+    "summaryBody": "この記事は、SalesforceのAgentforce Employeeエージェントと外部MCP（Model Context Protocol）サーバーを連携させ、Asanaでのタスク起票を自動化する手順を詳説したガイドです。主な工程として、Asana側でのMCPアプリ作成、Salesforceにおける外部認証IDプロバイダーと外部ログイン情報の設定、およびMCPサーバーの登録プロセスを網羅しています。特にSummer '26でGAとなった外部MCPサーバー登録機能を活用し、従来の外接サービス（External Services）と比較して、エージェント向けに最適化されたツール定義をそのまま利用できる利点を強調しています。実装面では、Agent Scriptを用いたエージェント定義においてアセットライブラリからツールを追加する際の注意点や、表示中のレコードIDを取得するための変数定義、指示文（Instructions）による挙動制御など、実戦的なノウハウが豊富に盛り込まれています。",
+    "topics": [
+      "Agentforce",
+      "Model Context Protocol (MCP)",
+      "Salesforce",
+      "Asana",
+      "API連携"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 30,
+      "overall": 94
+    }
+  }
+}

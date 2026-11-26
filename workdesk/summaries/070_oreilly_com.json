@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:35:37.335326+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "専門外のタスクをAIエージェントに任せる際の信頼と責任のあり方",
+    "url": "https://www.oreilly.com/radar/trusting-an-agent-beyond-your-expertise/",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "自分の専門知識を超える領域でAIエージェントを使用する際のリスクと信頼の構築について、実体験に基づく判断フレームワークを提示している。",
+    "summaryBody": "著者のMarkus Eisele氏は、自身の知識を超えるLinuxの複雑なネットワークやサービス構成のトラブルシューティングをAIエージェントに任せた経験を基に、AIへの権限譲渡の境界線を考察しています。エージェントはルート権限で問題を鮮やかに解決しましたが、著者は「自分が検証できない変更をどう信頼すべきか」というジレンマに直面しました。\n\n本記事では、この課題に対処するためのフレームワークとして、「タスクへの理解度（Knowledge）」と「ミスによる影響の大きさ（Consequences）」を軸とした2次元のマトリックスを提案しています。理解度が低く影響が大きいタスクでは、人間によるレビューや学習が不可欠であり、AIに任せきりにすることで学習機会が失われる（AI利用グループのテストスコアが低下したという実験結果）リスクについても言及しています。\n\n結論として、AIの能力が向上するほど、人間は「何を学ぶか」を意識的に選択し、エージェントの判断を問い直す能力を維持し続けなければならないと説いています。",
+    "topics": [
+      "AI Agents",
+      "AI Governance",
+      "Risk Management",
+      "Human-AI Interaction",
+      "Software Engineering"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 85,
+      "annexPotential": 15,
+      "overall": 88
+    },
+    "originalTitle": "Trusting an Agent Beyond Your Expertise"
+  }
+}

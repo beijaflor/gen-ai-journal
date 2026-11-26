@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:29:19.407395+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "LLMを活用して9ドルの格安MP3プレーヤー「YP3」にRockboxを移植する",
+    "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "LLM（Claude）を駆使し、ドキュメントのない9ドルの格安MP3プレーヤーに対してリバースエンジニアリングとRockboxの移植をほぼ自動化した技術的記録。",
+    "summaryBody": "この記事は、Aliexpressで販売されている格安MP3プレーヤー「YP3」に対し、LLM（主にClaude 3.5/Opus/Sol）を用いてカスタムファームウェア「Rockbox」を移植したプロジェクトのレポートです。ハードウェアはSmartlink SL6801という未知のSoCと512KBのSRAMという極めて制限された環境ですが、LLMがGhidraと連携してコードを解析し、ドライバやBluetoothスタックまで書き上げました。\n\n主な成果として、メモリの大幅な削減によるRockboxの安定動作、357個もの新規プラグイン（デバイス上で動作する小型LLM『RockGPT』を含む）、そして他のデバイスへの移植を効率化するツールキット『auto-rockbox』の公開が挙げられます。開発者は『肉体を持ったロボット』として物理的な操作を担当し、コード作成の大部分をAIエージェントが担うという、未来的な開発手法の可能性を実証しています。",
+    "topics": [
+      "Rockbox",
+      "LLM",
+      "Reverse Engineering",
+      "Embedded Systems",
+      "Claude"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 3,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 35,
+      "overall": 95
+    },
+    "originalTitle": "Porting Rockbox to an undocumented $9 Aliexpress ‘YP3’ MP3 Player with LLMs"
+  }
+}

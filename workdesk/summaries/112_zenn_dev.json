@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:23:50.274721+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "なぜ、AIコーディング時代にLeanが注目されるのか",
+    "url": "https://zenn.dev/karamage/articles/bf57c47b9e9b9b",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIによるリーマン予想の証明を機に、AI生成物の正当性を機械的に検証する「Lean 4」がソフトウェア開発の信頼性を担保する鍵として注目されています。",
+    "summaryBody": "この記事は、Anthropicの数学者がClaudeと共同でリーマン予想を証明し、それを「Lean」で検証したというニュースを起点に、なぜAI時代に形式検証言語Leanが重要なのかをエンジニア視点で解説しています。AIが人間には不可能な規模のコードや証明を生成する際、人間によるレビューは限界を迎えますが、Leanは極小のカーネルで論理的整合性を機械的に100%保証します。技術的には、依存型を用いた仕様の記述、FBIP方式によるC言語並みの高速性、doブロックによる命令型ライクな記述など、現代的なプログラミング言語としての側面も紹介されています。AWS CedarやRustコードをLeanに変換するAeneasパイプラインなどの実戦的な導入例を挙げ、人間が「仕様」を定義し、AIが「実装と証明」を行い、Leanが「検証」するという、次世代の開発フローを提示しています。",
+    "topics": [
+      "Lean4",
+      "形式検証",
+      "AIコーディング",
+      "定理証明支援系",
+      "Rust"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 4,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 40,
+      "overall": 95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:32:28.820860+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "ソリッドステート・ウェブ・エグゼキューション：AIエージェント向けにウェブアプリを検証可能な操作にコンパイルする技術",
+    "url": "https://protocolis.co/paper/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェント向けに、ウェブサイトのUIをモデル呼び出し不要で検証可能な操作へと即座に変換する革新的なJITコンパイラ「Protocolis」が発表されました。",
+    "summaryBody": "Protocolisは、AIエージェントがウェブサイトを初めて訪れた際に、そのライブUIから直接呼び出し可能な操作を抽出するJIT（ジャストインタイム）コンパイラです。従来のようなモデル呼び出しやサイト専用のアダプター、サイト側の修正を一切必要とせず、ホテル検索の価格フィルターのようなUI要素を自動で特定し、エージェントが利用できる構造化された命令へとコンパイルします。この「ソリッドステート・ウェブ・エグゼキューション」と呼ばれる技術は、実行結果の証拠をページから自動検証する機能も備えています。ベンチマークでは、既存のブラウザツールを大幅に上回る76%のタスク完了率を達成。コスト面でも競合手法より1.9倍から26倍安価であり、小型モデルを用いても高性能なフロンティアモデルを凌駕する安定性を実現しています。",
+    "topics": [
+      "AI Agents",
+      "Web Automation",
+      "JIT Compiler",
+      "Protocolis",
+      "Web Execution"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Solid-State Web Execution: Compiling Web Applications into Verified Operations for AI Agents"
+  }
+}

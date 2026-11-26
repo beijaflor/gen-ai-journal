@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:12:39.135843+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "個人開発 with AI：AIエージェントを最大限に活用するためのワークフローと認知負荷の最適化",
+    "url": "https://zenn.dev/holygrail/scraps/dec6ae85d06b4f",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "Claude CodeやFable等のAIエージェントを駆使し、認知負荷を最小化しながら設計・実装・レビュー・運用を半自動化する高度な個人開発プラクティス。",
+    "summaryBody": "### 概要\nAIエージェント（Claude Code, Fable, Opus等）を活用し、開発者の認知負荷を劇的に減らすための実践的なワークフローが公開されています。単なるツールの利用に留まらず、人間が理解しやすい報告形式の定義や、複数モデルの使い分けによる自動化の極致を目指しています。\n\n### 主要なポイント\n- **認知負荷を減らす報告設計**: `CLAUDE.md`を用いて、AIからの報告を「現在地の可視化（済み/進行中）」「判断依頼の1回1問化」「1ステップずつの操作案内」に最適化し、文脈の再確認コストを削減します。\n- **マルチエージェント戦略**: 高機能モデル（Fable）をオーケストレーターとして設計に充て、実際の実装タスクは子セッション（Opus等）に委任する効率的な分離手法を採用しています。\n- **自作ツールによる拡張**: セッション要約を表示する`status-board`や、PRレビュー対応を自動化する`pr-relay`、不自然な日本語出力を防ぐ`ui-copy-ja`など、AI開発体験を向上させる自作プラグイン群を活用しています。\n- **AI親和性の高いインフラと運用**: 全面的にCloudflareを採用し、自然言語による運用操作や、GA4/DB/ログとAIを接続した計測・改善ループを構築しています。\n- **設計の質を測る指標**: PRの修正やり取りが3往復を超えたら「設計の不備」とみなし、AI任せにせず人間が介入して設計を見直すという独自の基準を設けています。",
+    "topics": [
+      "AIエージェント",
+      "Claude Code",
+      "個人開発",
+      "Cloudflare",
+      "認知負荷"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 95
+    }
+  }
+}

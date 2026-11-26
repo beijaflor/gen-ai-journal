@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:36:36.388729+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "型エラーがAIエージェントの作業時間に占める割合は1%未満：Evil Martiansによる調査",
+    "url": "https://evilmartians.com/chronicles/type-errors-cost-our-coding-agents-under-one-percent-of-their-time",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "静的型付けがAIエージェントの解決率を向上させるという通説を覆し、型エラーの修正は作業時間の1%未満に過ぎないという調査結果をEvil Martiansが発表しました。",
+    "summaryBody": "Evil Martiansは、10種類のプログラミング言語と複数のベンチマーク（SWE-bench Multilingual等）を用いて、AIコーディングエージェントに対する静的型付けの効果を検証しました。調査の結果、型付き言語と動的言語の間でタスク解決率に有意な差はなく、難易度を調整した比較ではどちらも約65%にとどまることが判明しました。エージェントが型エラーの修正に費やす時間は全体の1%未満であり、むしろ型チェックツールの導入によって作業時間が20〜28%増加したり、実行速度が1.4〜2.6倍低下したりする副作用も確認されました。エージェントのボトルネックは型不一致ではなく、コードの読み取り、テストの実行、ロジックの設計、環境構築にあり、AIの性能向上のために言語スタックを移行する（例：JSからTSへ）必要性は現時点では低いと結論づけています。",
+    "topics": [
+      "AIエージェント",
+      "静的型付け",
+      "TypeScript",
+      "ベンチマーク",
+      "ソフトウェア開発効率"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 94
+    },
+    "originalTitle": "Type errors cost our coding agents under 1% of their time—Martian Chronicles, Evil Martians’ team blog"
+  }
+}

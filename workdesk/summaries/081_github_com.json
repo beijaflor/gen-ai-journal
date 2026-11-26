@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:32:44.353976+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "VPとVNPは異なる：OpenAIによる算術的計算量階層の分離証明",
+    "url": "https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIの研究チームが、計算量理論における長年の未解決問題である算術的クラスVPとVNPの分離（VP≠VNP）を証明し、その詳細な論文とLeanによる形式証明を公開した。",
+    "summaryBody": "このリポジトリは、2026年11月23日付のOpenAIによる数学的ブレイクスルーを記録したものである。計算量理論におけるValiantの階層において、P対NP問題の算術版とも言える「VP vs VNP予想」を解決し、これらが異なるクラスであることを証明した。具体的には、任意の体においてVNPファミリーに対し exp(Ω((log n)^1.25)) という境界算術回路サイズの下限を導出している。この結果は、ハミルトンサイクルやパーマネント多項式の計算困難性を裏付けるものであり、さらには数学証明支援言語Leanによる厳密な証明も同梱されており、理論的検証の透明性が極めて高い。",
+    "topics": [
+      "計算量理論",
+      "VP/VNP",
+      "算術回路",
+      "OpenAI",
+      "Lean"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 1,
+      "antiHype": 4,
+      "mainJournal": 98,
+      "annexPotential": 2,
+      "overall": 95
+    },
+    "originalTitle": "VP and VNP are different"
+  }
+}

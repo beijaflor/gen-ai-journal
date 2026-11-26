@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-26T15:14:45.271647+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Copilot Studioのエージェント開発をClaude Codeにどこまで任せられるか試した",
+    "url": "https://zenn.dev/upgradetech/articles/a9a1637d3071c1",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "Claude Codeを活用し、PAC CLIやPower Automateプラグインを組み合わせてMicrosoft Copilot Studioのエージェント開発をどこまで効率化できるかを実証した詳細な技術レポートです。",
+    "summaryBody": "本記事は、コーディングエージェント「Claude Code」を用いて、Microsoft Copilot Studioのエージェント開発を自動化・ファイルベース管理する手法を検証しています。PAC CLI（Power Platform CLI）を使用したエージェントのクローン・プッシュ・プル操作に加え、Power Automateプラグインによるフロー作成、Claude in Chromeによるブラウザ操作を組み合わせることで、開発作業の大部分をAIに任せられることを示しました。特に「CLAUDE.md」を用いたルール定義により、環境への誤書き込みを防ぎつつ、AIが自律的にファイルを編集・同期するプロセスが実用的であると結論付けています。一方で、サインイン、環境選択、最終的な回答品質の妥当性判断といった「人間に残る仕事」も明確に定義されており、AIと協調する開発の現実的なガイドラインとなっています。",
+    "topics": [
+      "Copilot Studio",
+      "Claude Code",
+      "Power Platform",
+      "PAC CLI",
+      "AIエージェント"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 10,
+      "overall": 95
+    }
+  }
+}
