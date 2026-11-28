@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:09:53.557706+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Frostbiteの紹介：AIによってエンドツーエンドで発見・設計・検証された新CPUアーキテクチャ",
+    "url": "https://architectlabs.com/blog/frostbite",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "AIエージェント群がコンパイラ、ISA、RTL設計から検証までを自律的に行い、インタラクションネット理論を応用して従来のCPUを大幅に上回る電力効率を実現した新アーキテクチャ「Frostbite」が発表されました。",
+    "summaryBody": "Architect Labsは、人間による設計の先入観を排除し、AIがゼロから設計・検証した汎用CPUアーキテクチャ「Frostbite」を公開しました。このアーキテクチャは「インタラクションネット」の特性を活用しており、すべての計算ステップを局所化し依存関係を明示化することで、従来のCPUでボトルネックとなっていた複雑なキャッシュ階層やメモリ一貫性プロトコルの問題を解消しています。AIシステムはASL（独自の形式仕様言語）を用いて、ISA、マイクロアーキテクチャ、RTL、そして物理設計であるGDSまでを自律的に反復設計しました。7nmプロセスでの評価では、最新のスーパースカラCPUと比較して、ワットあたり4.59倍、面積あたり8.77倍の性能を達成しています。これは、AIがハードウェア設計のフロンティアを押し広げ、人間には困難な複雑な最適化をクロスレイヤーで実行できることを示唆しています。",
+    "topics": [
+      "CPUアーキテクチャ",
+      "AI駆動設計",
+      "インタラクションネット",
+      "形式検証",
+      "半導体設計"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 98
+    },
+    "originalTitle": "Introducing Frostbite: A new CPU architecture discovered, designed, and verified end-to-end by AI | Architect Labs"
+  }
+}

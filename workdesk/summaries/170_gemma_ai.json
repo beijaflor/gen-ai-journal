@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:11:38.450996+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Gemma 4 モデルのファインチューニング概要 - 公式ドキュメント",
+    "url": "https://gemma.ai/tuning/",
+    "language": "en",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Googleが公開したGemma 4モデルのファインチューニングに関する包括的なガイドで、4つの学習ステージ、メモリ要件、手法の選択基準を詳細に解説しています。",
+    "summaryBody": "GoogleのGemma 4シリーズ（E2Bから31Bまで）を最適化するための公式ドキュメントです。学習プロセスを「継続事前学習」「教師ありファインチューニング(SFT)」「強化学習(RL)」「デプロイ」の4段階で定義し、それぞれの役割を整理しています。技術的な選択肢として、RAG、LoRA、QLoRA、フルファインチューニングの使い分けを提示しており、例えば12BモデルのQLoRAには約11GB、フルチューニングには約80GBのVRAMが必要といった具体的な計算リソースの目安も提供されています。また、Hugging Face TRLやUnslothといった主要なフレームワークのサポート状況や、事前学習済みモデルと指示学習済みモデルのどちらをベースにすべきかの判断基準についても網羅されており、開発者が自身のタスクに最適なトレーニング戦略を立てるためのロードマップとなっています。",
+    "topics": [
+      "Gemma 4",
+      "ファインチューニング",
+      "LoRA / QLoRA",
+      "LLM",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 40,
+      "overall": 92
+    },
+    "originalTitle": "Fine-tune Gemma 4 models - Gemma Docs"
+  }
+}

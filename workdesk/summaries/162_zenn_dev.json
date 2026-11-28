@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:13:48.875483+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け",
+    "url": "https://zenn.dev/nextbeat/articles/b0ccca979da06b",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude Codeにおける/btw、/branch、/fork、/rewindなどのコマンドを、コンテキスト管理や並行作業の観点から整理し、開発効率を最大化する使い分けを解説したガイド。",
+    "summaryBody": "Claude Codeを用いた開発において、作業を中断させないための各種コマンドの使い分けを解説しています。主な内容として、メインの会話履歴を汚さずに軽い質問ができる`/btw`、現在の方針を試行錯誤するために会話を複製する`/branch`、別の作業ディレクトリ（worktree）を作成して裏側で並行してタスクを実行させる`/fork`の違いを明確にしています。また、指示の失敗時に会話やコードを特定の時点へ戻す`/rewind`の挙動や、長時間かかる処理をバックグラウンドへ回す`Ctrl+B`、定期的にCIなどの完了を監視する`/loop`など、実務で役立つTipsがまとめられています。単なるコマンド紹介に留まらず、Gitの操作や作業ディレクトリの競合を考慮した、ツール活用のベストプラクティスが示されています。",
+    "topics": [
+      "Claude Code",
+      "AI Coding",
+      "Developer Experience",
+      "CLI Tools",
+      "Nextbeat"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 30,
+      "overall": 88
+    }
+  }
+}

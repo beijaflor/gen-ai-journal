@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:12:07.671586+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "TenkaCloudSimulator 開発日記：ChatGPTのDotで開発が自律的に続く仕組みをつくる",
+    "url": "https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "ChatGPTの「Dot」とサブエージェントを連携させ、Issueの解決から実装・マージまでを人間を介さず自律的に進めるための開発指示書（YAML）とCI/CDの最適化事例。",
+    "summaryBody": "TenkaCloudSimulatorの開発において、ChatGPTの「Dot」機能とサブエージェントを組み合わせ、自律的に開発を継続させるための仕組みを構築した記録です。AIエージェント同士が効率的にタスクを引き継げるよう、指示書（AGENTS.md）をプロンプトからYAML形式へ変換し、完了条件や並列開発のルールを構造化しました。また、AIの作業リズムを損なわないよう、重いE2EテストやTLA+による形式検証をCIの必須条件から外すなどのワークフロー調整を行い、15分ごとの定期実行で開発が止まらない環境を整えています。実例としてVPCのセキュリティグループ実装などを通じ、トークン制限やコンテキスト断絶といった課題への具体的な回避策を提示しています。",
+    "topics": [
+      "ChatGPT",
+      "AIエージェント",
+      "GitHub Actions",
+      "ソフトウェアテスト",
+      "TLA+"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 88
+    }
+  }
+}

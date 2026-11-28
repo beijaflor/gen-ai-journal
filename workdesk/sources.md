@@ -2,6 +2,31 @@
 
 ## Main List
 
+- [x] 178. https://www.aikido.dev/blog/vulnerability-response-readiness
+- [x] 177. https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6
+- [x] 176. https://architectlabs.com/blog/frostbite
+- [x] 175. https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07
+- [x] 174. https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical
+- [x] 173. https://learn.chatgpt.com/ja-JP/docs/sites/usage-and-cost
+- [x] 172. https://www.techno-edge.net/article/2026/11/26/5819.html
+- [x] 171. https://note.com/assuredjp/n/n6ec5f6544e0c
+- [x] 170. https://gemma.ai/tuning/
+- [x] 169. https://zenn.dev/hlt/articles/c2e3ed8ff9ddb8
+- [x] 168. https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126
+- [x] 167. https://zenn.dev/holy_fox/articles/07d9a0537db3bf
+- [x] 166. https://zenn.dev/wisevine/articles/97b7ba8db70657
+- [x] 165. https://zenn.dev/visionarray/articles/26b316ff128513
+- [x] 164. https://zenn.dev/nooop/articles/00cde2e1a825ad
+- [x] 163. https://zenn.dev/jayt/articles/agent-skills-judgment-extraction
+- [x] 162. https://zenn.dev/nextbeat/articles/b0ccca979da06b
+- [x] 161. https://janlukas.blog/posts/ai-self-hosting
+- [x] 160. https://news.ycombinator.com/item?id=50659532
+- [x] 159. https://micjm.com/blog/openai-is-in-cost-control-mode/
+- [x] 158. https://github.com/deepseek-ai/deepseek-math
+- [x] 157. https://diseasescuredbyai.com/
+- [x] 156. https://techstackups.com/articles/google-workspace-ai-agents-mcp/
+- [x] 155. https://blog.ronbronson.com/forward-deployed-design-as-plumbing
+- [x] 154. https://www.aikido.dev/blog/deep-review-secure-every-commit
 - [x] 153. https://zenn.dev/holygrail/scraps/dec6ae85d06b4f
 - [x] 152. https://dena.com/jp/news/5481/
 - [x] 150. https://note.com/suthio/n/n91e27ebb133d

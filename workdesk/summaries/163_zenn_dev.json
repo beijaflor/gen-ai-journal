@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:13:33.095199+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "人の判断を切り出すAgent Skillsの設計（v7.0.2）",
+    "url": "https://zenn.dev/jayt/articles/agent-skills-judgment-extraction",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "人の主観的な判断を手順や環境から分離し、再利用可能な「コアロジック」と「一般知識」に分けることで、作成者の視点を維持したままAgent Skillsを共有・進化させるための設計指針。",
+    "summaryBody": "### 概要\n\nAIエージェントのスキル開発において、作成者の独自の視点（判断）を環境依存の値や実行手順から分離するための体系的な設計手法が提案されています。従来のスキル開発では、個人の環境や前提が混ざることで共有が困難になったり、一般化しすぎてAIの出力が凡庸になるという課題がありました。\n\n### 核となる概念\n\n1. **ロジックとアプリの分離**: 判断のみを持つ「ロジックスキル」と、実行を担う「アプリケーションスキル」に分けます。\n2. **判断の分類**: 人によって答えが分かれ価値の源泉となる「Core-Logic」と、客観的な「Generic-Logic」に分け、前者は差し替え、後者は集合知として育てます。\n3. **判断ファイルと理由**: 材料、判断定数、未決事項、そして判断の「理由（Why）」を明文化した独立したファイル形式を採用します。\n\n### 期待される効果\n\nこの設計を適用することで、スキルを環境に依存せず共有可能にし、AIの判断根拠を人間が検証・更新し続けられる「知見が溜まる」エコシステムを構築できます。プログラム的な厳密さよりも、人間同士の判断の受け渡しに近い柔軟な連携を志向しています。",
+    "topics": [
+      "Agent Skills",
+      "AIエージェント",
+      "ソフトウェア設計",
+      "ナレッジマネジメント",
+      "Claude Code"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 85,
+      "annexPotential": 95,
+      "overall": 92
+    }
+  }
+}

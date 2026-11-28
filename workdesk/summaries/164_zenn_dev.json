@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:13:13.512697+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた",
+    "url": "https://zenn.dev/nooop/articles/00cde2e1a825ad",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "VRAM 5GBの旧型GPU環境で、llama.cppのMoE機能を活用し35B/26B級モデルを実用的な速度（約15 t/s）で動作させる検証記録。",
+    "summaryBody": "llama.cppのMoE（Mixture of Experts）対応機能を活用し、VRAMがわずか5GBのQuadro P2200環境で大規模なMoEモデルを動作させた検証レポートです。エキスパートの一部をメインメモリ（RAM）に配置することで、VRAM不足を補いつつ高速な推論を実現しています。\n\n検証では「Qwen3.6-35B-A3B」と「gemma-4-26B-A4B」の2種類を使用。64kコンテキスト設定では、Qwenで約17 t/s、Gemmaで約15-17 t/sという、ローカル環境として十分実用的な生成速度を記録しました。200kの長文コンテキスト利用時はVRAM使用量が限界（約5.04GB）に達し速度は低下しますが、それでもQwenで14 t/s程度を維持できることが示されています。32GBのシステムメモリがあれば、これらの30B級モデルをDocker経由で手軽に試用できる構成と手順が公開されています。",
+    "topics": [
+      "llama.cpp",
+      "MoE",
+      "ローカルLLM",
+      "Quadro P2200",
+      "GGUF"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 5,
+      "mainJournal": 90,
+      "annexPotential": 15,
+      "overall": 88
+    }
+  }
+}

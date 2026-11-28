@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:09:19.506820+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "レスポンス・レディネス：次の脆弱性が現れる前に準備すべきこと",
+    "url": "https://www.aikido.dev/blog/vulnerability-response-readiness",
+    "language": "en",
+    "contentType": "🎯 Opinion & Commentary (意見・論評)",
+    "oneSentenceSummary": "脆弱性の公表から悪用までの時間が短縮される中、事前にクラウド資産やコンテナの可視化を済ませ「対応準備（レディネス）」を整える重要性を説く。",
+    "summaryBody": "本記事は、インシデントが発生してからツールを導入するのではなく、平常時から資産の可視化と到達可能性を把握しておく「レスポンス・レディネス」の概念を解説しています。2026年に発生した「nginx2root」や「SSHole」といった脆弱性、およびAIによる攻撃フレームワーク「ARTEX」を例に挙げ、脆弱性公表から数時間で攻撃が始まる現状では、手動の資産調査は手遅れになると指摘。クラウド設定、コンテナ・VMのパッケージ管理、ドメインの露出状況を事前にAikidoのようなプラットフォームに統合しておくことで、影響範囲の特定を数日から数分に短縮し、リスクの高い箇所から優先的に対処できる体制の構築を推奨しています。",
+    "topics": [
+      "脆弱性管理",
+      "インシデント対応",
+      "アタックサーフェス管理 (ASM)",
+      "クラウドセキュリティ",
+      "AIセキュリティ"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 4,
+      "uniqueness": 3,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 85,
+      "annexPotential": 65,
+      "overall": 82
+    },
+    "originalTitle": "Response readiness starts before the next 2shell appears"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:11:51.873933+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "RTX 5070 と Foundry Local でハイブリッド LLM のローカル側を実測：容量・品質と障害時の切り替え",
+    "url": "https://zenn.dev/hlt/articles/c2e3ed8ff9ddb8",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "RTX 5070（12GB）とFoundry Localを用いた実測調査により、14Bモデルの動作限界、タスク別の回答精度、およびクラウド障害時のサーキットブレーカーを含む切り替えロジックの有効性が検証されています。",
+    "summaryBody": "本記事は、RTX 5070(VRAM 12GB)環境にてFoundry Localを用いたハイブリッドLLM構成の実践的な検証結果をまとめたものです。主な知見として、12GBのVRAMにはQwen3-14BやPhi-4(14B)がほぼ上限（使用率96%前後）で収まり、秒間50トークン以上の生成速度が得られることが示されました。精度検証では、タスクごとにローカルモデルを使い分ける「振り分け」の効果が、単一の14Bモデル使用やプロンプトの微調整と同程度に留まることが判明しています。また、クラウド障害時のローカルへの切り替えについては、ストリーミング利用とサーキットブレーカーの導入が、誤判定の防止と待ち時間の短縮に不可欠であることをコードレベルで解説しています。GPU推論における非決定性の実測データや、Windows固有の接続拒否遅延など、実運用における細かなハマりどころについても詳細に記述されています。",
+    "topics": [
+      "RTX 5070",
+      "Foundry Local",
+      "Hybrid LLM",
+      "Benchmark",
+      "LLM運用"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 5,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 96
+    }
+  }
+}

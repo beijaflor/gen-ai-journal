@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:12:22.670007+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "AI Agentを用いたSCP観測日誌ベンチマークの自動作成（と検証）",
+    "url": "https://zenn.dev/holy_fox/articles/07d9a0537db3bf",
+    "language": "ja",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "AIエージェントを活用し、SCP財団の記事を題材とした日本語の状態追跡ベンチマークを自動生成・監査することで、LLMの推論性能とコストパフォーマンスを定量化した取り組み。",
+    "summaryBody": "AIによるベンチマーク作成の信頼性を担保するため、SCP財団の報告書を基にした「SCP観測日誌ベンチマーク（scp-observation-ja）」を構築した事例。既存のベンチマークが抱える「問題の不備」という課題に対し、AIエージェントが記事の異常性規則を構造化データへ変換し、インタプリタによって決定論的に正解を算出する手法を採用。さらに、クロスモデルレビューや盲検再導出による多段の監査プロセスを経て、高品質な100問を厳選している。評価実験では、Gemini 4 Neonが100%の正答率を記録した一方、Inkling-2-miniやClaude Haiku 5.5といった小型モデルが極めて高いコストパフォーマンスを示すなど、実運用におけるモデル選定の有用な指標を提示している。データセットと評価環境はオープンソースとして公開されている。",
+    "topics": [
+      "LLMベンチマーク",
+      "AIエージェント",
+      "SCP財団",
+      "状態追跡",
+      "コストパフォーマンス"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 15,
+      "overall": 96
+    }
+  }
+}

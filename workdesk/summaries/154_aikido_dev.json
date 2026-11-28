@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:16:43.692028+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Aikido Deep Review: すべてのコミットをセキュアにするLLMベースのコードレビュー",
+    "url": "https://www.aikido.dev/blog/deep-review-secure-every-commit",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "Aikido Securityが発表したDeep Reviewは、リポジトリ全体のコンテキストを理解してPRをレビューし、Java4Shellのような複雑な脆弱性も検知可能なLLM駆動のセキュリティツールです。",
+    "summaryBody": "Aikido Securityが導入した「Deep Review」は、LLMを活用してプルリクエスト(PR)やアクティブなブランチのセキュリティ、ロジック、品質を自動レビューする製品です。単なるコードの差分(diff)確認に留まらず、リポジトリ全体の文脈や外部ライブラリとの相互作用を考慮した高度な推論を行います。過去に5年間見逃されていたOpenJDKの「Java4Shell」脆弱性を、PRの段階で正確に検知・修正提案できることを実証しています。開発者の意図を学習する「リポジトリメモリ」機能や、MCP（Model Context Protocol）サーバーを通じたAIエージェント（Claude Code等）との連携もサポートしており、誤検知を減らしながら開発フローに自然に組み込める設計が特徴です。",
+    "topics": [
+      "AIセキュリティ",
+      "LLM",
+      "静的解析",
+      "DevSecOps",
+      "コードレビュー"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 4,
+      "practical": 5,
+      "antiHype": 3,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 88
+    },
+    "originalTitle": "Deep Review: secure every commit"
+  }
+}

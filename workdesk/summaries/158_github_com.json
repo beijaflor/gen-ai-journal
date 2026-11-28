@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:14:56.953653+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "DeepSeekMath: オープン言語モデルにおける数学的推論の限界への挑戦",
+    "url": "https://github.com/deepseek-ai/deepseek-math",
+    "language": "en",
+    "contentType": "🚀 Product Launch (製品発表)",
+    "oneSentenceSummary": "DeepSeek-Mathは、70億パラメータのサイズながらGPT-4に匹敵する数学的推論能力を実現した、商用利用可能なオープンソースの数学特化型言語モデルです。",
+    "summaryBody": "DeepSeekMathは、DeepSeek-Coder-v1.5 7Bを基盤とし、Webから独自に抽出した120Bトークンの数学データを含む計500Bトークンで継続事前学習を行ったモデルです。\n\n主な特徴は以下の通りです：\n\n- **卓越した推論性能**: 難関とされるMATHベンチマークにおいて51.7%を達成し、Gemini-UltraやGPT-4といった巨大なクローズドモデルに迫る性能を7Bという軽量なサイズで実現しています。\n- **新アルゴリズム「GRPO」の導入**: 強化学習（RLHF）の段階で、計算効率が高く数学的推論を最適化するGroup Relative Policy Optimization (GRPO)を採用しました。\n- **反復的なデータ収集**: FastTextを用いた反復プロセスにより、Common Crawlから高品質な数学コンテンツを抽出するパイプラインを構築しました。\n- **多様なモデル公開**: Base、Instruct、RLの3つのバージョンが公開されており、研究・商用の両面で利用可能です。",
+    "topics": [
+      "LLM",
+      "数学的推論",
+      "DeepSeek",
+      "オープンソース",
+      "機械学習"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 5,
+      "uniqueness": 5,
+      "practical": 4,
+      "antiHype": 4,
+      "mainJournal": 95,
+      "annexPotential": 20,
+      "overall": 95
+    },
+    "originalTitle": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
+  }
+}

@@ -1,7 +1,9 @@
 # Paywalled-source review (STEP_02 gate)
 
-2 source(s) need a human decision. For each, mark a decision inline: `keep` / `drop` / `full-text` (you supply the article text) / `annotate` (note the paywall for readers).
+All flagged sources reviewed. Mark a decision inline: `keep` / `drop` / `full-text` (you supply the article text) / `annotate` (note the paywall for readers).
 
+- [x] REVIEWED — decisions applied 2026-11-27 (batch 3).
+  - **160 Economist op-ed** ("Nvidia was right to bring back Jensen Huang," Sarah Guo): hard-blocked (403 to curl AND Playwright; anti-bot "Enable JavaScript and cookies" interstitial; only a BLOCKED stub existed). Per user (chose "HN-thread proxy"): **replaced with the Hacker News discussion** `news.ycombinator.com/item?id=50659532` (40 pts / 37 comments). Economist stub deleted; sources.md #160 URL re-pinned to the HN thread; summary describes the discussion, not Guo's argument. ID 160 retained.
 - [x] REVIEWED — decisions applied 2026-11-27 (batch 2).
   - **Anthropic-IPO cluster (orig. 075 Bloomberg / 076 MSN / 077 Reuters):** all three unfetchable (075 = Bloomberg robot-check block-page; 076 = MSN "Continue reading" teaser; 077 = Reuters anti-bot). Per user ("find another story without block"): dropped 076 & 077, and **replaced 075 with a fetchable source** — `financefeeds.com/anthropic-stock-breaks-below-83-ipo-price-as-debut-rally-fades/` (real, content-grounded summary). ID 075 retained; 076/077 are now ID gaps.
   - **065 & 118:** keep as-is (see inline below).
@@ -9,7 +11,7 @@
 ## A. Paywalled → summarized from a Hacker News thread (NOT the article)
 _The summary describes an HN discussion, not the source article. Decide: keep the HN-proxy summary, drop the source, or supply full text to re-summarize._
 
-- (none)
+- [x] **160** (batch 3) — orig. https://www.economist.com/by-invitation/2026/11/25/nvidia-was-right-to-bring-back-jensen-huang-writes-sarah-guo → **HN-proxy** https://news.ycombinator.com/item?id=50659532  → decision: **keep HN-proxy** (user-chosen; Economist hard-blocked 403 curl+Playwright; summary describes the discussion, not Guo's op-ed)
 
 ## B. Unfetchable — fail-closed BLOCKED stub / dead link
 _No usable content and no proxy. Decide: drop, or supply a corrected URL / full text._

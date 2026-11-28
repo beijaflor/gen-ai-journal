@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:10:19.772099+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Jev で実現する Generative UI",
+    "url": "https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07",
+    "language": "ja",
+    "contentType": "🛠️ Tools & Resources (ツール・リソース)",
+    "oneSentenceSummary": "生成AIが文脈に応じたUIを返すGenerative UIにおいて、Jevを用いて定義済みコンポーネントを「選択」することで品質と型安全性を担保する手法の解説。",
+    "summaryBody": "Generative UI（GenUI）は、AIがテキストだけでなくグラフやフォームなどのUIを動的に提供する概念ですが、プロダクト導入時にはデザインシステムへの適合や振る舞いの制御が課題となります。本資料では、TypeSafe社が開発した「Jev」を活用し、LLMにUIコードを「生成」させるのではなく、アプリ側で用意した候補から「選択」させるアプローチを提案しています。これにより、複雑なプロンプトなしに既存のデザインシステムと整合したUIを構築できます。WorkdayのSanaにおける事例や、json-renderを用いた具体的な実装フローについても紹介されており、実用的なGenUI開発の指針となる内容です。",
+    "topics": [
+      "Generative UI",
+      "Jev",
+      "Frontend",
+      "Design Systems",
+      "LLM"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 90,
+      "annexPotential": 10,
+      "overall": 92
+    }
+  }
+}

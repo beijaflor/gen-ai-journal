@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:14:33.969136+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "OpenAIはコスト削減モードか：Astra 6.2とSol 6.2に見られる推論量減少の分析",
+    "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+    "language": "en",
+    "contentType": "🔬 Research & Analysis (研究・分析)",
+    "oneSentenceSummary": "OpenAIの最新モデルAstra 6.2とSol 6.2において、推論トークン数と出力トークン数が統計的に有意に減少しており、性能よりコスト最適化を優先している可能性が指摘されています。",
+    "summaryBody": "この記事は、OpenAIの最新モデル（Astra 6.2およびSol 6.2）がユーザーから低評価を受けている背景を分析しています。独自のバトルシステム「Agent Duel」のデータに基づくと、これらの新モデルは前世代と比較して、タスクあたりの出力トークン数および推論（Reasoning）トークン数が大幅に減少していることが判明しました。特にSol 6.2の推論トークン減少のp値は0.00013と非常に高く、統計的に極めて有意です。チャート分析の結果、これらのモデルは競合他社と比較して「思考不足」の外れ値となっており、性能の向上よりも運用コストの抑制を意図して調整された可能性が高いと結論付けています。",
+    "topics": [
+      "OpenAI",
+      "LLMベンチマーク",
+      "推論トークン",
+      "コスト最適化",
+      "モデル性能評価"
+    ],
+    "scores": {
+      "signal": 4,
+      "depth": 3,
+      "uniqueness": 4,
+      "practical": 3,
+      "antiHype": 5,
+      "mainJournal": 82,
+      "annexPotential": 18,
+      "overall": 85
+    },
+    "originalTitle": "OpenAI may be in cost control mode"
+  }
+}

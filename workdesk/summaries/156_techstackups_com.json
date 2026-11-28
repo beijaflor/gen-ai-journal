@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:15:48.495179+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Google、AIエージェントにWorkspace MCPサーバーの使用を義務付けへ：Gmail送信不可などの制約も",
+    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "language": "en",
+    "contentType": "📊 Industry News (業界ニュース)",
+    "oneSentenceSummary": "Googleは2027年2月よりAIエージェントによるWorkspaceアクセスを専用のMCPサーバー経由に限定し、データの30日保持制限や機能制限を課す新たな規約を導入します。",
+    "summaryBody": "Googleは、AIエージェントがGmail、Drive、CalendarなどのWorkspaceデータにアクセスする際、公式のMCP（Model Context Protocol）サーバー経由での接続を義務付ける新規定を発表しました。2027年2月1日から適用されるこの規約では、AIエージェントが直接REST APIを叩くことが制限されます。\n\n主なポイントは以下の通りです：\n- **機能制限:** 現在のGmail用MCPサーバーではメールの検索や下書き作成は可能ですが、送信、返信、転送は「パートナー限定」となっており、一般の開発者は利用できません。Driveでもファイルの移動や共有が制限されています。\n- **データ保持の30日ルール:** Workspaceデータから生成されたベクトル埋め込みやメモリインデックス、ユーザープロファイルなどは、30日以内に削除する必要があります。これにより、長期的なメール履歴に基づいた回答などの実装が困難になります。\n- **禁止事項:** 取得したデータを用いたAIモデルのトレーニング、ファインチューニング、蒸留、および競合製品の開発は明示的に禁止されました。\n\nこの変更により、既存のWorkspace連携AIツールを開発している企業は、パートナー申請やシステムの大幅な改修を余儀なくされる可能性があります。",
+    "topics": [
+      "Google Workspace",
+      "MCP",
+      "AI Agent",
+      "API Policy",
+      "Gmail"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 15,
+      "overall": 90
+    },
+    "originalTitle": "Google Will Make AI Agents Use Its Workspace MCP Servers. The Gmail One Can't Send Email"
+  }
+}

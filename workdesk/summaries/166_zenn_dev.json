@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generatedAt": "2026-11-27T05:12:42.298314+00:00",
+    "generatedBy": "gemini-3-flash-preview"
+  },
+  "content": {
+    "title": "Claude CodeとLLM Wikiで全国の自治体の入札参加資格を、一人で回す",
+    "url": "https://zenn.dev/wisevine/articles/97b7ba8db70657",
+    "language": "ja",
+    "contentType": "💡 Tutorial & How-to (チュートリアル)",
+    "oneSentenceSummary": "Claude CodeとLLM Wikiを活用し、自治体ごとに異なる複雑な入札参加資格申請の調査から書類作成までを一人で効率的に運用するワークフローの解説。",
+    "summaryBody": "全国の自治体で様式や申請方法が異なる「入札参加資格申請」業務を、AIエージェントのClaude Codeと構造化されたドキュメント管理手法（LLM-Wiki）を用いて効率化する実戦的なワークフローが紹介されています。完全に自動化するのではなく、調査・要約・TODO抽出・書類のドラフト作成までをAIが担当し、押印や送信などの最終確認を人間が行う「伴走型」の設計が特徴です。具体的には、地方公共団体コードによるフォルダ管理、Python（openpyxl/python-docx/PyMuPDF）による各ファイル形式への入力自動化、GASを用いたURLの死活監視などを組み合わせ、属人性を排除しながら高い正確性を維持する仕組みを構築しています。",
+    "topics": [
+      "Claude Code",
+      "LLM Wiki",
+      "入札参加資格",
+      "業務自動化",
+      "自治体DX"
+    ],
+    "scores": {
+      "signal": 5,
+      "depth": 4,
+      "uniqueness": 5,
+      "practical": 5,
+      "antiHype": 4,
+      "mainJournal": 92,
+      "annexPotential": 25,
+      "overall": 94
+    }
+  }
+}
